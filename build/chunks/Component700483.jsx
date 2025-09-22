@@ -122,7 +122,7 @@ function eo(e) {
     canManageGuildEvent: p
   } = (0, x.XJ)(t), h = (0, l.e7)([z.Z], () => z.Z.getStageInstanceByChannel(t.id), [t.id]), f = (0, l.e7)([_.ZP], () => _.ZP.getGuildScheduledEvent(null == h ? true : h.guild_scheduled_event_id)), {
     suppress: b
-  } = (0, S.Z)(t), y = M.default.getId(), [C] = (0, $.Z)(t), v = V.ZP.isModerator(y, t.id), O = (0, H.B)(t.id), j = p(f), {
+  } = (0, S.Z)(t), y = M.default.getId(), [C] = (0, $.Z)(t), v = V.ZP.isModerator(y, t.id), j = (0, H.B)(t.id), O = p(f), {
     parentAnalyticsLocation: E
   } = (0, u.ZP)(), I = i.useRef(null), P = () => (function(e) {
     let {
@@ -135,7 +135,7 @@ function eo(e) {
     channel: t,
     appContext: d
   });
-  return (v || j) && null != h ? (0, r.jsx)(a.yRy, {
+  return (v || O) && null != h ? (0, r.jsx)(a.yRy, {
     targetElementRef: I,
     renderPopout: e => {
       let {
@@ -178,7 +178,7 @@ function eo(e) {
         popoutOpen: i
       })
     }
-  }) : b && !O || C ? (0, r.jsx)(A.Z, {
+  }) : b && !j || C ? (0, r.jsx)(A.Z, {
     label: en.intl.string(en.t.SMKyio),
     onClick: P
   }) : (0, r.jsx)(A.Z, {
@@ -241,10 +241,10 @@ let eu = Chunk647438.memo(function(e) {
   } = (0, S.Z)(t), m = (0, H.B)(t.id), _ = (0, l.e7)([b.Z], () => null != b.Z.getAwaitingRemoteSessionInfo()), {
     cameraUnavailable: C,
     enabled: v
-  } = (0, O.Z)(), x = (0, E.Z)(t), {
+  } = (0, j.Z)(), x = (0, E.Z)(t), {
     limit: N,
     reachedLimit: A
-  } = (0, j.Z)(t), M = (0, l.e7)([U.default], () => U.default.getCurrentUser()), k = (0, l.e7)([D.Z], () => (0, y.Z)(D.Z)), B = (0, l.e7)([L.Z], () => L.Z.getVoiceChannelId() === t.id, [t.id]), G = (0, l.e7)([d.Z], () => d.Z.getStreamParticipants(t.id)[0], [t.id]), F = (0, W.PK)(t.id), V = N > 0, z = A && !F || null != G && G.user.id !== (null == M ? true : M.id), q = (0, g.u)("AudioDeviceMenu", n, {
+  } = (0, O.Z)(t), M = (0, l.e7)([U.default], () => U.default.getCurrentUser()), k = (0, l.e7)([D.Z], () => (0, y.Z)(D.Z)), B = (0, l.e7)([L.Z], () => L.Z.getVoiceChannelId() === t.id, [t.id]), G = (0, l.e7)([d.Z], () => d.Z.getStreamParticipants(t.id)[0], [t.id]), F = (0, W.PK)(t.id), V = N > 0, z = A && !F || null != G && G.user.id !== (null == M ? true : M.id), q = (0, g.u)("AudioDeviceMenu", n, {
     entrypoint: et.A5.CARET
   }), Y = i.useRef(null), K = i.useRef(null);
   if (null == M) return null;

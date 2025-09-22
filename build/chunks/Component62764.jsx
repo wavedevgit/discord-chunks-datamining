@@ -77,7 +77,7 @@ function H(e, t) {
 function F(e) {
   let {
     channel: t
-  } = e, l = t.isArchivedThread(), a = (0, O.P0)(t), [o, u] = i.useState(false), d = () => {
+  } = e, l = t.isArchivedThread(), a = (0, j.P0)(t), [o, u] = i.useState(false), d = () => {
     u(true), x.Z.resolveFlag(t.id).then(() => {
       u(false)
     })
@@ -118,7 +118,7 @@ function V(e) {
     parentChannelId: s
   } = e, {
     ref: x,
-    width: O
+    width: j
   } = (0, p.ZP)(), [E, k] = i.useState(3), [V, z] = i.useState(!n), [W, q] = (0, h.Z)(false, 2e3), Y = (0, o.e7)([Z.Z], () => Z.Z.getChannel(t), [t]), {
     firstMessage: K
   } = (0, w.cl)(Y), X = (0, o.e7)([I.Z], () => I.Z.hasJoined(t)), {
@@ -127,7 +127,7 @@ function V(e) {
     isLurking: $,
     isGuest: ee,
     isPendingMember: et
-  } = (0, b.Z)(Y), en = (0, j.nw)(Y), er = (0, o.e7)([Z.Z], () => Z.Z.getChannel(s)), ei = (0, A.Bs)(er), el = (0, o.e7)([f.Z], () => f.Z.shouldDisplayPrompt(t) && true === n, [t, n]), ea = i.useCallback(e => {
+  } = (0, b.Z)(Y), en = (0, O.nw)(Y), er = (0, o.e7)([Z.Z], () => Z.Z.getChannel(s)), ei = (0, A.Bs)(er), el = (0, o.e7)([f.Z], () => f.Z.shouldDisplayPrompt(t) && true === n, [t, n]), ea = i.useCallback(e => {
     let t = e[0];
     if (null != t && n) {
       let e = t.intersectionRect,
@@ -147,8 +147,8 @@ function V(e) {
   });
   let [eo, es] = i.useState(true);
   if (i.useEffect(() => {
-      null != O && (k(Math.floor((O - 280) / 58)), es(false))
-    }, [O]), null == Y || null == K) return null;
+      null != j && (k(Math.floor((j - 280) / 58)), es(false))
+    }, [j]), null == Y || null == K) return null;
   let ec = K.reactions.length > 0,
     eu = () => {
       X ? P.Z.leaveThread(Y, "Forum Toolbar") : P.Z.joinThread(Y, "Forum Toolbar")

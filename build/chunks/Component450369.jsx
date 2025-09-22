@@ -88,7 +88,7 @@ let L = 16 / 9,
       ignored: g,
       id: b
     } = t;
-    return (0, r.jsx)(j.Z, {
+    return (0, r.jsx)(O.Z, {
       targetElementRef: h,
       user: o,
       guildId: a,
@@ -130,20 +130,20 @@ let L = 16 / 9,
       id: m,
       blocked: g,
       ignored: y
-    } = t, O = (0, s.Wu)([E.Z], () => E.Z.getAllActiveStreams(), []), {
-      selectedParticipant: j,
+    } = t, j = (0, s.Wu)([E.Z], () => E.Z.getAllActiveStreams(), []), {
+      selectedParticipant: O,
       largeStream: S
     } = (0, s.cj)([b.Z], () => ({
       selectedParticipant: null != l ? b.Z.getSelectedParticipant(l.id) : null,
       largeStream: null != l && b.Z.getStageStreamSize(l.id)
     })), T = i.useCallback((e, t) => {
-      if (e.type === R.fO.STREAM && 0 === O.filter(t => (0, C.V9)(t) === e.id && t.state !== w.jm8.ENDED).length) {
+      if (e.type === R.fO.STREAM && 0 === j.filter(t => (0, C.V9)(t) === e.id && t.state !== w.jm8.ENDED).length) {
         if (!(0, v.p9)(l, Z.Z, I.Z, P.Z, _.Z)[0]) return;
         (0, p.rn)((0, C.my)(e.id), {
           forceMultiple: t.shiftKey
         })
-      }(null == j ? true : j.id) === e.id ? S ? (u.Z.selectParticipant(l.id, null), u.Z.updateStageStreamSize(l.id, false)) : u.Z.updateStageStreamSize(l.id, true) : (u.Z.updateStageStreamSize(l.id, false), u.Z.selectParticipant(l.id, e.id))
-    }, [O, l, j, S]);
+      }(null == O ? true : O.id) === e.id ? S ? (u.Z.selectParticipant(l.id, null), u.Z.updateStageStreamSize(l.id, false)) : u.Z.updateStageStreamSize(l.id, true) : (u.Z.updateStageStreamSize(l.id, false), u.Z.selectParticipant(l.id, e.id))
+    }, [j, l, O, S]);
     return (0, r.jsx)(N.Z, {
       participant: n,
       aspectRatio: L,
@@ -173,7 +173,7 @@ let L = 16 / 9,
     a()(null != _, "Channel cannot be guildless");
     let {
       user: v
-    } = i, x = (0, s.e7)([b.Z], () => b.Z.getParticipant(l.id, i.id), [l.id, i.id]), j = (0, s.e7)([T.ZP], () => T.ZP.isModerator(v.id, l.id), [l.id, v.id]);
+    } = i, x = (0, s.e7)([b.Z], () => b.Z.getParticipant(l.id, i.id), [l.id, i.id]), O = (0, s.e7)([T.ZP], () => T.ZP.isModerator(v.id, l.id), [l.id, v.id]);
     if (null == x || x.type === R.fO.ACTIVITY) return null;
     let E = e => {
         (0, g.h)({
@@ -210,7 +210,7 @@ let L = 16 / 9,
             return;
           case R.fO.USER:
           default:
-            if (E(R.TH.USER), i) return (0, O.D)(t, v, l, {
+            if (E(R.TH.USER), i) return (0, j.D)(t, v, l, {
               context: p
             }, (e, t) => (0, y.o)({
               menuName: e,
@@ -248,7 +248,7 @@ let L = 16 / 9,
       guildId: _,
       user: v,
       width: c,
-      isModerator: j,
+      isModerator: O,
       onContextMenu: I,
       inPopout: p === w.IlC.POPOUT
     }) : (0, r.jsx)(U, {
@@ -258,7 +258,7 @@ let L = 16 / 9,
       guildId: _,
       user: v,
       width: c,
-      isModerator: j,
+      isModerator: O,
       onContextMenu: I,
       inPopout: p === w.IlC.POPOUT
     })

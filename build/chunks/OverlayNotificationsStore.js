@@ -81,14 +81,14 @@ function Y(e, t) {
 }
 let K = 5 * Chunk70956.Z.Millis.SECOND,
   X = 8 * Chunk70956.Z.Millis.SECOND,
-  J = 30 * Chunk70956.Z.Millis.SECOND,
-  Q = Object.freeze({
+  Q = 30 * Chunk70956.Z.Millis.SECOND,
+  q = Object.freeze({
     priority: 0,
     duration: K,
     expirationExternallyManaged: false,
     type: 0
   }),
-  q = [],
+  J = [],
   $ = (e, t, n) => {
     let i = t ? U._1z.TIMED_OUT : U._1z.DISMISSED;
     return setTimeout(() => c.Z.updateNotificationStatus(e, i), null != n ? n : K)
@@ -97,26 +97,26 @@ let K = 5 * Chunk70956.Z.Millis.SECOND,
 function ee(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : U._1z.DISMISSED;
   if (null == e) returnfalse;
-  let n = q.findIndex(t => t.id === e);
+  let n = J.findIndex(t => t.id === e);
   if (false === n) returnfalse;
-  let i = q[n];
-  clearTimeout(i.timerId), q = [...q], t === U._1z.DISMISSED ? q.splice(n, 1) : q[n] = Y(F({}, i), {
+  let i = J[n];
+  clearTimeout(i.timerId), J = [...J], t === U._1z.DISMISSED ? J.splice(n, 1) : J[n] = Y(F({}, i), {
     status: t
   })
 }
 
 function et(e) {
-  let t = q.length;
-  return (q = q.filter(t => 1 !== t.type || t.channelId !== e)).length !== t
+  let t = J.length;
+  return (J = J.filter(t => 1 !== t.type || t.channelId !== e)).length !== t
 }
 
 function en(e) {
-  let t = q.find(t => 2 === t.type && t.channelId === e);
+  let t = J.find(t => 2 === t.type && t.channelId === e);
   return null != t ? t.id : null
 }
 
 function ei(e, t) {
-  let n = F({}, Q, t);
+  let n = F({}, q, t);
   if (2 !== n.priority && !M.default.isInstanceFocused()) return null;
   let i = (0, o.Z)(),
     r = F({
@@ -125,8 +125,8 @@ function ei(e, t) {
       timerId: $(i, n.expirationExternallyManaged, n.duration),
       props: e
     }, n),
-    l = (q = [...q]).findIndex(e => e.priority <= n.priority);
-  return false === l ? q.push(r) : q.splice(l, 0, r), q.length > 10 && clearTimeout(q.pop().timerId), i
+    l = (J = [...J]).findIndex(e => e.priority <= n.priority);
+  return false === l ? J.push(r) : J.splice(l, 0, r), J.length > 10 && clearTimeout(J.pop().timerId), i
 }
 
 function er(e) {
@@ -137,11 +137,11 @@ function er(e) {
   if (!n.includes(C.default.getId())) return ee(i);
   if (null != i) returnfalse;
   let r = I.Z.getChannel(t);
-  if (null == r || !r.isRingable() || "GUILD_RING_START" === e.type && !Z.Z.getCurrentConfig({
+  if (null == r || !r.isRingable() || "GUILD_RING_START" === e.type && !j.Z.getCurrentConfig({
       guildId: e.guildId,
       location: "OverlayStartRinging"
-    }).enabled || T.Z.getStatus() === U.Skl.DND || j.QZ.getSetting()) returnfalse;
-  let l = q.find(e => 1 === e.type && e.channelId === t && e.messageType === U.uaV.CALL);
+    }).enabled || T.Z.getStatus() === U.Skl.DND || Z.QZ.getSetting()) returnfalse;
+  let l = J.find(e => 1 === e.type && e.channelId === t && e.messageType === U.uaV.CALL);
   null != l && ee(l.id), ei((0, p.Z)(r), {
     priority: 1,
     expirationExternallyManaged: true,
@@ -154,7 +154,7 @@ class el extends(i = Chunk442837.ZP.Store) {
     this.waitFor(Chunk237997.default, Chunk592125.Z, Chunk594174.default, Chunk624864.Z)
   }
   getNotifications() {
-    return q
+    return J
   }
 }
 H(el, "displayName", "OverlayNotificationsStore");
@@ -196,7 +196,7 @@ let eo = new el(Chunk570140.Z, !__OVERLAY__ ? {} : {
       locked: t
     } = e;
     if (t) returnfalse;
-    q = q.map(e => e.status === U._1z.ACTIVE ? (clearTimeout(e.timerId), Y(F({}, e), {
+    J = J.map(e => e.status === U._1z.ACTIVE ? (clearTimeout(e.timerId), Y(F({}, e), {
       timerId: $(e.id, e.expirationExternallyManaged)
     })) : e)
   },
@@ -229,7 +229,7 @@ let eo = new el(Chunk570140.Z, !__OVERLAY__ ? {} : {
           expirationExternallyManaged: true,
           channelId: e.id
         });
-        return null != s && $(s, false, J), true
+        return null != s && $(s, false, Q), true
       }(s, o, a);
       if (false !== e) return e
     }
@@ -268,7 +268,7 @@ let eo = new el(Chunk570140.Z, !__OVERLAY__ ? {} : {
       guildId: n,
       ringing: i
     } = e;
-    if (!Z.Z.getCurrentConfig({
+    if (!j.Z.getCurrentConfig({
         guildId: n,
         location: "OverlayStopRinging"
       }).enabled) returnfalse;

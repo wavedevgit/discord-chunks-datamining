@@ -2,7 +2,7 @@
 /** chunk id: 124860, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Cd: () => m,
-  YR: () => p
+  YR: () => x
 }), require("./388685.js"), require("./415506.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -52,11 +52,11 @@ function m(e) {
   let {
     mfaChallenge: h,
     mfaFinish: m,
-    onEarlyClose: x,
-    onClose: p,
+    onEarlyClose: p,
+    onClose: x,
     headerAlignStart: S,
-    width: j = 440
-  } = e, [b, y] = r.useState(null != (n = null == (t = h.methods[0]) ? true : t.type) ? n : "select"), [v, C] = r.useState(b), Z = async e => {
+    width: b = 440
+  } = e, [j, y] = r.useState(null != (n = null == (t = h.methods[0]) ? true : t.type) ? n : "select"), [v, C] = r.useState(j), Z = async e => {
     let {
       mfaType: t,
       data: n
@@ -65,17 +65,17 @@ function m(e) {
       mfaType: t,
       data: n,
       ticket: h.ticket
-    }), null != p && p()
+    }), null != x && x()
   }, w = {
     mfaChallenge: h,
     finish: Z,
     setSlide: y,
-    onClose: x,
+    onClose: p,
     headerAlignStart: S
   };
   return (0, l.jsxs)(i.MyZ, {
-    activeSlide: b,
-    width: j,
+    activeSlide: j,
+    width: b,
     onSlideReady: C,
     children: [(0, l.jsx)(i.Mi4, {
       id: "select",
@@ -107,7 +107,7 @@ function m(e) {
   })
 }
 
-function x(e) {
+function p(e) {
   let {
     mfaChallenge: t,
     finish: n,
@@ -128,8 +128,8 @@ function x(e) {
   })
 }
 
-function p(e, t, n) {
-  (0, i.h7j)(n => (0, l.jsx)(x, f({
+function x(e, t, n) {
+  (0, i.h7j)(n => (0, l.jsx)(p, f({
     finish: t,
     mfaChallenge: e
   }, n)), {

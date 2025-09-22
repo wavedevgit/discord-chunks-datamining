@@ -37,7 +37,7 @@ function x(e) {
       userIsInCall: null != e,
       isUserRinging: null != e && e.type === _.fO.USER && e.ringing
     }
-  }), x = (0, o.e7)([b.Z], () => b.Z.getGuild(n.guild_id)), j = null != x ? (0, g.EB)(x, 32, true) : null, E = !s || u && !m;
+  }), x = (0, o.e7)([b.Z], () => b.Z.getGuild(n.guild_id)), O = null != x ? (0, g.EB)(x, 32, true) : null, E = !s || u && !m;
   return ((0, d.Z)({
     type: a.ImpressionTypes.PAGE,
     name: a.ImpressionNames.RING_TO_GUILD_VC_BANNER_SHOWN,
@@ -56,7 +56,7 @@ function x(e) {
         mask: f.QS.SQUIRCLE,
         width: 24,
         height: 24,
-        children: null == j ? (0, r.jsx)("div", {
+        children: null == O ? (0, r.jsx)("div", {
           className: l()(v.guildIcon, v.guildIconWithoutImage),
           children: (0, r.jsx)("div", {
             className: v.guildAcronym,
@@ -64,7 +64,7 @@ function x(e) {
           })
         }) : (0, r.jsx)("img", {
           alt: null == x ? true : x.name,
-          src: j,
+          src: O,
           className: v.guildIcon
         })
       }), (0, r.jsx)(c.Text, {
@@ -80,7 +80,7 @@ function x(e) {
           }, n.id)
         })
       })]
-    }), (0, r.jsx)(O, {
+    }), (0, r.jsx)(j, {
       channelId: n.id,
       recipientUserId: t.id,
       isUserRinging: m
@@ -88,7 +88,7 @@ function x(e) {
   })
 }
 
-function O(e) {
+function j(e) {
   let {
     channelId: t,
     recipientUserId: n,

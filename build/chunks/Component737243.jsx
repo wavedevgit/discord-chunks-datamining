@@ -27,11 +27,11 @@ let h = Chunk647438.memo(function(e) {
     setPopout: v
   } = e, {
     isInteractionUserBlocked: x,
-    isInteractionUserIgnored: O
+    isInteractionUserIgnored: j
   } = (0, l.cj)([c.Z], () => ({
     isInteractionUserBlocked: c.Z.isBlockedForMessage(h),
     isInteractionUserIgnored: c.Z.isIgnoredForMessage(h)
-  }), [h]), j = (0, l.e7)([s.Z], () => s.Z.getMessageByReference(null == h ? true : h.messageReference)), E = (0, d.wq)(null == (t = h.interaction) ? true : t.user.id, f.id), S = (0, d.Nk)(h.interaction, f, g, v), I = (0, d.NU)(b, v), P = (0, o.t0)(h), Z = (null == P ? true : P.type) === a.B8.APPLICATION_COMMAND ? null == (n = P.target_user) ? true : n.id : true, T = (0, d.wq)(Z, f.id), N = (0, d.JC)(Z, f, _, v), A = (0, d.rY)(C, v), w = (0, d.Xn)(y, v), R = i.useCallback(() => {
+  }), [h]), O = (0, l.e7)([s.Z], () => s.Z.getMessageByReference(null == h ? true : h.messageReference)), E = (0, d.wq)(null == (t = h.interaction) ? true : t.user.id, f.id), S = (0, d.Nk)(h.interaction, f, g, v), I = (0, d.NU)(b, v), P = (0, o.t0)(h), Z = (null == P ? true : P.type) === a.B8.APPLICATION_COMMAND ? null == (n = P.target_user) ? true : n.id : true, T = (0, d.wq)(Z, f.id), N = (0, d.JC)(Z, f, _, v), A = (0, d.rY)(C, v), w = (0, d.Xn)(y, v), R = i.useCallback(() => {
     v({
       interactionUsernameProfile: false,
       interactionAvatarProfile: false,
@@ -47,16 +47,16 @@ let h = Chunk647438.memo(function(e) {
     referencedAvatarProfile: C,
     referencedUsernameProfile: _,
     replyReference: h.messageReference,
-    replyMessage: j,
+    replyMessage: O,
     isReplySpineClickable: false,
     showReplySpine: false
-  }), [f, m, h, C, j, _, v]);
+  }), [f, m, h, C, O, _, v]);
   return (0, r.jsx)(u.Z, {
     message: h,
     channel: f,
     compact: m,
     isInteractionUserBlocked: x,
-    isInteractionUserIgnored: O,
+    isInteractionUserIgnored: j,
     showAvatarPopout: b,
     showUsernamePopout: g,
     showDataPopout: y,

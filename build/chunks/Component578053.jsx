@@ -19,9 +19,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk594174 = require("./594174.js"),
   Chunk434404 = require("./434404.js"),
   Chunk388032 = require("./388032.jsx");
-let x = "NO_CHANNEL";
+let b = "NO_CHANNEL";
 
-function b(e) {
+function x(e) {
   return {
     value: e.id,
     label: (0, c.F6)(e, p.default, g.Z),
@@ -60,20 +60,20 @@ function v(e) {
       let {
         channel: t
       } = e;
-      return b(t)
+      return x(t)
     });
     return e.unshift({
-      value: x,
+      value: b,
       label: h.intl.string(h.t.wGiHkJ)
     }), e
   }, [c]), u = i.useCallback(e => {
-    let t = e === x ? null : e;
+    let t = e === b ? null : e;
     f.Z.updateGuild({
       afkChannelId: t
     })
   }, []);
   return (0, r.jsx)(O, {
-    value: null != a ? a : x,
+    value: null != a ? a : b,
     options: d,
     canManageGuild: t,
     onChange: u
@@ -95,20 +95,20 @@ function _(e) {
       let {
         channel: t
       } = e;
-      return b(t)
+      return x(t)
     });
     return e.unshift({
-      value: x,
+      value: b,
       label: h.intl.string(h.t.ibUhoa)
     }), e
   }, [c]), u = i.useCallback(e => {
-    let t = e === x ? null : e;
+    let t = e === b ? null : e;
     f.Z.updateGuild({
       systemChannelId: t
     })
   }, []);
   return (0, r.jsx)(O, {
-    value: null != a ? a : x,
+    value: null != a ? a : b,
     options: d,
     canManageGuild: t,
     onChange: u

@@ -1,7 +1,7 @@
 /** Chunk was on 62987 **/
 /** chunk id: 201493, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => j
 }), require("./388685.js"), require("./781311.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -23,12 +23,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk295907 = require("./295907.js"),
   Chunk806328 = require("./806328.js");
-let O = e => {
+let j = e => {
   let {
     channel: t,
-    guild: O
+    guild: j
   } = e, {
-    currentCategoryId: j,
+    currentCategoryId: O,
     directoryEntries: E,
     categoryCounts: S,
     allEntriesCount: I,
@@ -54,7 +54,7 @@ let O = e => {
       }, true, true, e)
     })
   }, [t.id]);
-  let Z = i.useMemo(() => null != E ? (0, b.v)(Object.values(E), j) : null, [E, j]),
+  let Z = i.useMemo(() => null != E ? (0, b.v)(Object.values(E), O) : null, [E, O]),
     {
       mostRecentQuery: T,
       searchFetching: N,
@@ -86,10 +86,10 @@ let O = e => {
   }, [t.id]), i.useEffect(() => {
     u.default.track(C.rMx.GUILD_DIRECTORY_CHANNEL_VIEWED, {
       directory_channel_id: t.id,
-      directory_guild_id: O.id,
-      primary_category_id: j
+      directory_guild_id: j.id,
+      primary_category_id: O
     })
-  }, [t.id, O.id, j]);
+  }, [t.id, j.id, O]);
   let L = (0, f.G)(t) ? () => {
       (0, a.ZDy)(async () => {
         let {
@@ -115,10 +115,10 @@ let O = e => {
             }
             return e
           }({}, n), l = l = {
-            directoryGuildName: O.name,
-            directoryGuildId: O.id,
+            directoryGuildName: j.name,
+            directoryGuildId: j.id,
             directoryChannelId: t.id,
-            currentCategoryId: j === _.AR.ALL ? null : j
+            currentCategoryId: O === _.AR.ALL ? null : O
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
@@ -135,7 +135,7 @@ let O = e => {
     U = e => {
       0 !== w.trim().length && e.key === v.vn.ENTER && (d.Rq(t.id, w), u.default.track(C.rMx.GUILD_DIRECTORY_SEARCH, {
         directory_channel_id: t.id,
-        directory_guild_id: O.id
+        directory_guild_id: j.id
       }))
     },
     B = () => {
@@ -150,15 +150,15 @@ let O = e => {
     handleCreateOrAddGuild: L,
     searchResults: A,
     searchFetching: N
-  }) : null == Z && null == j ? (0, r.jsx)("div", {
+  }) : null == Z && null == O ? (0, r.jsx)("div", {
     className: x.pageContainer,
     children: (0, r.jsx)(a.$jN, {
       className: x.spinner
     })
-  }) : (null == Z ? true : Z.length) === 0 && null == j ? (0, r.jsx)("div", {
+  }) : (null == Z ? true : Z.length) === 0 && null == O ? (0, r.jsx)("div", {
     className: x.pageContainer,
     children: (0, r.jsx)(m.Z, {
-      guild: O,
+      guild: j,
       onAddGuild: L
     })
   }) : (0, r.jsx)(g.Z, {
@@ -168,7 +168,7 @@ let O = e => {
     handleSearchKeyPress: U,
     handleClearSearch: B,
     handleCreateOrAddGuild: L,
-    currentCategoryId: j,
+    currentCategoryId: O,
     handleSelectCategory: e => {
       d.Su(t.id, e)
     },

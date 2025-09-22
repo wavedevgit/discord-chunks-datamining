@@ -626,7 +626,7 @@ class ez extends Chunk647438.PureComponent {
       } = this.viewProperties;
       return (0, r.jsxs)(r.Fragment, {
         children: [null != i && i.type !== eD.fO.ACTIVITY && i.user.id !== n ? (0, r.jsx)(ei.Z, {
-          context: (0, eO.Z)(i.type),
+          context: (0, ej.Z)(i.type),
           userId: i.user.id,
           currentWindow: this.inPopout ? null != e ? e : true : window,
           sliderClassName: eU.volumeSlider,
@@ -724,7 +724,7 @@ let eW = function(e) {
     ref: f
   } = (0, x.ZP)(), {
     ref: m
-  } = (0, x.ZP)(), g = (0, j.bp)(), b = (0, L.Z)(), y = (0, u.e7)([eh.Z], () => {
+  } = (0, x.ZP)(), g = (0, O.bp)(), b = (0, L.Z)(), y = (0, u.e7)([eh.Z], () => {
     var e;
     return (null != (e = null == b ? true : b.channelId) ? e : eh.Z.getVoiceChannelId()) === n.id
   }), {
@@ -767,7 +767,7 @@ let eW = function(e) {
     _.ZP.updatedUnsyncedSettings({
       callHeaderHeight: e
     })
-  }, []), en = null != (t = null == V ? true : V.id) ? t : null, er = (0, Z.Z)(en, n.id), ei = (0, u.e7)([S.Z], () => S.Z.getFetchState(), []), el = (0, O.Z)(ei);
+  }, []), en = null != (t = null == V ? true : V.id) ? t : null, er = (0, Z.Z)(en, n.id), ei = (0, u.e7)([S.Z], () => S.Z.getFetchState(), []), el = (0, j.Z)(ei);
   i.useEffect(() => {
     ei === S.O.ERROR && el !== S.O.ERROR && (0, h.showToast)((0, h.createToast)(eL.intl.string(eL.t.AlJyIy), h.ToastType.FAILURE))
   }, [ei, el]);
@@ -781,7 +781,7 @@ let eW = function(e) {
       null != t ? eC.ZP.unblockDisplaySleep(t) : e = true
     }
   }, [y, T]);
-  let em = (0, ej.Z)(n, true),
+  let em = (0, eO.Z)(n, true),
     {
       hasParticipantsPanel: eg
     } = (0, eT.Z)({
@@ -794,7 +794,7 @@ let eW = function(e) {
     e_ = o - eD.oo,
     ev = P.ZP.getEmbeddedActivitiesForChannel(n.id),
     {
-      theme: eO
+      theme: ej
     } = (0, h.TCT)();
   return (0, r.jsx)(w.Gt, {
     value: ey,
@@ -844,7 +844,7 @@ let eW = function(e) {
             forceShowControls: eb,
             awaitingRemoteSessionInfo: $,
             currentChannelActivities: ev,
-            theme: eO
+            theme: ej
           }), !n.isPrivate() && (0, r.jsx)(eA.YR, {}), (0, r.jsx)(eE.H_, {})]
         })
       })

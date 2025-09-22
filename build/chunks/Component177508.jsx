@@ -736,13 +736,11 @@ function eh() {
     }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
       variant: "heading-lg/semibold",
       children: "Legacy Tooltips"
-    }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
-      title: "Color",
-      children: (0, Chunk951288.jsx)(Chunk481060.q4e, {
-        value: module,
-        onChange: exports,
-        options: require
-      })
+    }), (0, Chunk951288.jsx)(Chunk481060.q4e, {
+      label: "Color",
+      value: module,
+      onChange: exports,
+      options: require
     }), (0, Chunk951288.jsxs)("div", {
       style: {
         display: "flex",
@@ -1990,13 +1988,10 @@ function eb() {
           onClear: () => Chunk392711("")
         })]
       })
-    }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
-      title: "Disabled",
-      disabled: true,
-      children: (0, Chunk951288.jsx)(Chunk481060.oil, {
-        placeholder: "Disabled",
-        disabled: true
-      })
+    }), (0, Chunk951288.jsx)(Chunk481060.oil, {
+      label: "Disabled",
+      placeholder: "Disabled",
+      disabled: true
     }), (0, Chunk951288.jsx)(Chunk481060.oil, {
       label: "Error",
       required: true,
@@ -2041,14 +2036,12 @@ function eb() {
           })]
         })]
       })
-    }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
-      title: "Text area",
-      children: (0, Chunk951288.jsx)(Chunk481060.Kx8, {
-        placeholder: "Text area placeholder",
-        showCharacterCount: true,
-        value: require,
-        onChange: Chunk120356
-      })
+    }), (0, Chunk951288.jsx)(Chunk481060.Kx8, {
+      label: "Text area",
+      placeholder: "Text area placeholder",
+      showCharacterCount: true,
+      value: require,
+      onChange: Chunk120356
     })]
   })
 }
@@ -2071,18 +2064,16 @@ function ey(e) {
       className: u,
       children: (0, r.jsxs)(T.Kqy, {
         gap: 16,
-        children: [(0, r.jsx)(T.xJW, {
-          title: "Modal Size",
-          children: (0, r.jsx)(T.q4e, {
-            value: o,
-            onChange: s,
-            options: Object.entries(T.CgR).map(e => {
-              let [t, n] = e;
-              return {
-                label: t,
-                value: n
-              }
-            })
+        children: [(0, r.jsx)(T.q4e, {
+          label: "Modal Size",
+          value: o,
+          onChange: s,
+          options: Object.entries(T.CgR).map(e => {
+            let [t, n] = e;
+            return {
+              label: t,
+              value: n
+            }
           })
         }), (0, r.jsx)(T.hjN, {
           title: "Options",
@@ -2152,22 +2143,20 @@ function eO(e) {
         children: [(0, r.jsxs)(T.Text, {
           variant: "text-md/medium",
           children: ["This is modal level ", a, "."]
-        }), c && (0, r.jsx)(T.xJW, {
-          title: "Stacking Behavior",
-          children: (0, r.jsx)(T.q4e, {
-            value: o,
-            onChange: s,
-            options: [{
-              label: "Replace (default)",
-              value: "replace"
-            }, {
-              label: "Stack",
-              value: "stack"
-            }, {
-              label: "Replace All",
-              value: "replaceAll"
-            }]
-          })
+        }), c && (0, r.jsx)(T.q4e, {
+          label: "Stacking Behavior",
+          value: o,
+          onChange: s,
+          options: [{
+            label: "Replace (default)",
+            value: "replace"
+          }, {
+            label: "Stack",
+            value: "stack"
+          }, {
+            label: "Replace All",
+            value: "replaceAll"
+          }]
         }), (0, r.jsxs)(T.Kqy, {
           gap: 8,
           children: [(0, r.jsxs)(T.Text, {
@@ -2297,25 +2286,23 @@ function eI(e) {
       }) : true,
       children: (0, r.jsxs)(T.Kqy, {
         gap: 16,
-        children: [(0, r.jsx)(T.xJW, {
-          title: "Modal Size",
-          children: (0, r.jsx)(T.q4e, {
-            value: a,
-            onChange: o,
-            options: [{
-              label: "Small",
-              value: "sm"
-            }, {
-              label: "Medium",
-              value: "md"
-            }, {
-              label: "Large",
-              value: "lg"
-            }, {
-              label: "XLarge",
-              value: "xl"
-            }]
-          })
+        children: [(0, r.jsx)(T.q4e, {
+          label: "Modal Size",
+          value: a,
+          onChange: o,
+          options: [{
+            label: "Small",
+            value: "sm"
+          }, {
+            label: "Medium",
+            value: "md"
+          }, {
+            label: "Large",
+            value: "lg"
+          }, {
+            label: "XLarge",
+            value: "xl"
+          }]
         }), (0, r.jsx)(T.oil, {
           label: "Header Title",
           onChange: l,
@@ -2568,13 +2555,11 @@ function eA(e) {
       text: "Submit",
       onClick: a
     }],
-    children: [(0, r.jsx)(T.xJW, {
-      title: "Graphic Type",
-      children: (0, r.jsx)(T.q4e, {
-        value: o,
-        onChange: s,
-        options: d
-      })
+    children: [(0, r.jsx)(T.q4e, {
+      label: "Graphic Type",
+      value: o,
+      onChange: s,
+      options: d
     }), (0, r.jsx)(T.xJW, {
       style: {
         paddingTop: "16px"
@@ -2621,22 +2606,20 @@ function eC(e) {
     }] : []],
     children: (0, r.jsxs)(T.Kqy, {
       gap: 16,
-      children: [c && (0, r.jsx)(T.xJW, {
-        title: "Stacking Behavior",
-        children: (0, r.jsx)(T.q4e, {
-          value: o,
-          onChange: s,
-          options: [{
-            label: "Replace (default)",
-            value: "replace"
-          }, {
-            label: "Stack",
-            value: "stack"
-          }, {
-            label: "Replace All",
-            value: "replaceAll"
-          }]
-        })
+      children: [c && (0, r.jsx)(T.q4e, {
+        label: "Stacking Behavior",
+        value: o,
+        onChange: s,
+        options: [{
+          label: "Replace (default)",
+          value: "replace"
+        }, {
+          label: "Stack",
+          value: "stack"
+        }, {
+          label: "Replace All",
+          value: "replaceAll"
+        }]
       }), (0, r.jsxs)(T.Kqy, {
         gap: 8,
         children: [(0, r.jsxs)(T.Text, {

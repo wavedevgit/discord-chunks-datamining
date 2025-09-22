@@ -130,9 +130,9 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
       guildId: C,
       isTyping: v,
       isMobileOnline: x,
-      premiumSince: O,
-      nameplate: j
-    } = e, E = J(e, ["colorString", "colorStrings", "colorRoleName", "colorRoleId", "isOwner", "nick", "user", "currentUser", "activities", "applicationStream", "status", "channel", "guildId", "isTyping", "isMobileOnline", "premiumSince", "nameplate"]), S = i.useRef(null), [I, P] = i.useState(false), Z = null != O ? new Date(O) : null, N = i.useCallback(e => {
+      premiumSince: j,
+      nameplate: O
+    } = e, E = J(e, ["colorString", "colorStrings", "colorRoleName", "colorRoleId", "isOwner", "nick", "user", "currentUser", "activities", "applicationStream", "status", "channel", "guildId", "isTyping", "isMobileOnline", "premiumSince", "nameplate"]), S = i.useRef(null), [I, P] = i.useState(false), Z = null != j ? new Date(j) : null, N = i.useCallback(e => {
       (0, f.jW)(e, async () => {
         let {
           default: e
@@ -205,7 +205,7 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
           onClickPremiumGuildIcon: w,
           selected: I,
           itemProps: E,
-          nameplate: j,
+          nameplate: O,
           onClick: e => {
             e.shiftKey ? null == A || A() : P(e => !e)
           },
@@ -384,7 +384,7 @@ class el extends Chunk647438.Component {
         groups: n,
         channel: l
       } = this.props, a = n[t];
-      if ((0, O.R)(a)) return (0, i.createElement)(O.Z, Q(X({}, a), {
+      if ((0, j.R)(a)) return (0, i.createElement)(j.Z, Q(X({}, a), {
         key: "section-".concat(t)
       }));
       if (0 === t) {
@@ -483,7 +483,7 @@ class el extends Chunk647438.Component {
             isFirstApplicationOccurrence: t
           }), e)
         }
-        if (a.type === D.so.HIDDEN_CONTENT_INVENTORY) return (0, r.jsx)(j.Z, {}, "content-inventory-hidden-entry")
+        if (a.type === D.so.HIDDEN_CONTENT_INVENTORY) return (0, r.jsx)(O.Z, {}, "content-inventory-hidden-entry")
       }
       return (0, r.jsx)(ei, {
         index: i
@@ -500,7 +500,7 @@ class el extends Chunk647438.Component {
       this.props.updateMaxContentFeedRowSeen(r)
     }, 50)), K(this, "getContentFeedGroup", () => {
       let e = this.props.groups[S.T];
-      if ((0, O.R)(e)) return e
+      if ((0, j.R)(e)) return e
     }), K(this, "hasContentFeed", () => null != this.getContentFeedGroup()), K(this, "getRowHeightComputer", () => {
       let e = this.getContentFeedGroup(),
         {
@@ -598,13 +598,13 @@ function ea(e) {
         })
       }
     })
-  }, [42]), O = i.useCallback(() => new Promise(e => {
+  }, [42]), j = i.useCallback(() => new Promise(e => {
     let t = b.current;
     if (null == t) return e();
     t.scrollToTop({
       callback: () => requestAnimationFrame(() => e())
     })
-  }), []), j = i.useCallback(() => new Promise(e => {
+  }), []), O = i.useCallback(() => new Promise(e => {
     let t = b.current;
     if (null == t) return e();
     t.scrollToBottom({
@@ -616,8 +616,8 @@ function ea(e) {
     id: "members-".concat(t.id),
     setFocus: x,
     isEnabled: o,
-    scrollToStart: O,
-    scrollToEnd: j
+    scrollToStart: j,
+    scrollToEnd: O
   });
   return (0, r.jsx)(v.Gt, {
     value: l,

@@ -32,7 +32,7 @@ function a(e, t, n) {
     id: e,
     icon: p,
     size: n
-  }), h = r.useMemo(() => null != g && g.length > t ? g.slice(0, t) : g, [g, t]), x = null != g && g.length > t ? g.length - t : null, b = null == u ? true : u.slug, j = null != b ? s.EYA.ROLE_SUBSCRIPTION_STORE_PAGE(b) : true, v = null == m || null == (a = m.guild) ? true : a.name, _ = null == m || null == (o = m.role_subscription) ? true : o.subscriber_count, O = !c && null != v && null != p && null != f;
+  }), h = r.useMemo(() => null != g && g.length > t ? g.slice(0, t) : g, [g, t]), b = null != g && g.length > t ? g.length - t : null, x = null == u ? true : u.slug, j = null != x ? s.EYA.ROLE_SUBSCRIPTION_STORE_PAGE(x) : true, v = null == m || null == (a = m.guild) ? true : a.name, _ = null == m || null == (o = m.role_subscription) ? true : o.subscriber_count, O = !c && null != v && null != p && null != f;
   return O ? {
     hasAllImperativeDetails: O,
     isLoading: c,
@@ -43,7 +43,7 @@ function a(e, t, n) {
       storePageUrl: j,
       subscriberCount: _,
       emojisToShow: h,
-      notShownEmojiCount: x
+      notShownEmojiCount: b
     }
   } : {
     hasAllImperativeDetails: O,

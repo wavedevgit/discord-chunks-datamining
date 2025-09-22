@@ -58,7 +58,7 @@ function w(e) {
     channel: o,
     status: u,
     activities: d
-  } = e, p = (0, a.e7)([_.Z], () => null != _.Z.getTypingUsers(o.id)[t.id]), f = (0, a.e7)([C.default], () => C.default.getCurrentUser()), v = (0, a.e7)([b.Z], () => b.Z.isMobileOnline(t.id)), O = (0, a.e7)([y.Z], () => y.Z.getNickname(t.id)), E = (0, h.Z)(t.id), Z = i.useRef(null), N = e => {
+  } = e, p = (0, a.e7)([_.Z], () => null != _.Z.getTypingUsers(o.id)[t.id]), f = (0, a.e7)([C.default], () => C.default.getCurrentUser()), v = (0, a.e7)([b.Z], () => b.Z.isMobileOnline(t.id)), j = (0, a.e7)([y.Z], () => y.Z.getNickname(t.id)), E = (0, h.Z)(t.id), Z = i.useRef(null), N = e => {
     (0, s.jW)(e, async () => {
       let {
         default: e
@@ -81,7 +81,7 @@ function w(e) {
       }
     })
   }, w = () => {
-    let e = "@".concat(j.ZP.getUserTag(t, {
+    let e = "@".concat(O.ZP.getUserTag(t, {
         decoration: "never"
       })),
       n = "<@".concat(t.id, ">");
@@ -137,7 +137,7 @@ function w(e) {
         onContextMenu: N,
         selected: M,
         isMobile: v,
-        nick: O,
+        nick: j,
         nameplate: R,
         onClick: e => {
           e.shiftKey ? null == w || w() : D(e => !e)
@@ -168,7 +168,7 @@ function M(e) {
   } = (0, d.ZP)(u.Z.MEMBER_LIST), {
     listItems: c
   } = (0, a.e7)([y.Z, C.default, b.Z], () => {
-    let e = (0, O.T)(t.recipients, C.default),
+    let e = (0, j.T)(t.recipients, C.default),
       n = {};
     for (let t of e) {
       var r, i, l;

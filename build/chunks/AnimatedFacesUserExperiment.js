@@ -5,7 +5,7 @@ require.d(exports, {
 });
 var Chunk818083 = require("./818083.js"),
   Chunk751823 = require("./751823.js");
-let i = (0, Chunk818083.B)({
+let l = (0, Chunk818083.B)({
   kind: "user",
   id: "2025-07_animated_faces",
   label: "AV survey animated faces",
@@ -27,12 +27,12 @@ function o(e) {
     autoTrackExposure: n = true
   } = e, {
     isInHoldout: r
-  } = l.L.useExperiment({
+  } = i.L.useExperiment({
     location: t
   }, {
     autoTrackExposure: n
   });
-  return i.useExperiment({
+  return l.useExperiment({
     location: t
   }, {
     disable: r,

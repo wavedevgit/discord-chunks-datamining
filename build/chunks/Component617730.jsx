@@ -16,7 +16,7 @@ var Chunk755721 = require("./755721.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk292660 = require("./292660.js");
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,7 +35,7 @@ function g(e) {
   return e
 }
 
-function m(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -55,12 +55,12 @@ function f(e) {
     disableUser: f = false
   } = e;
   if (null == t) return null;
-  let _ = null != t.guild ? (0, o.Qs)(t.guild) : null,
+  let _ = null != t.guild ? (0, a.Qs)(t.guild) : null,
     x = null != t.channel ? (0, s.jD)(t.channel) : null,
     E = null != t.target_application ? new l.ZP(t.target_application) : null,
-    v = f || null == t.inviter ? null : new a.Z(t.inviter),
-    j = !(null != t.approximate_member_count && t.approximate_member_count > c.mx || null != _ && _.features.has(d.oNc.COMMUNITY)) && null != v && (0, c.WT)(t),
-    b = (e => {
+    v = f || null == t.inviter ? null : new o.Z(t.inviter),
+    b = !(null != t.approximate_member_count && t.approximate_member_count > c.mx || null != _ && _.features.has(d.oNc.COMMUNITY)) && null != v && (0, c.WT)(t),
+    j = (e => {
       let {
         state: t
       } = e;
@@ -82,22 +82,22 @@ function f(e) {
   return (0, c.JI)(t) ? (0, r.jsx)(u.Z, {
     invite: t,
     channel: x,
-    isSubmitting: b,
+    isSubmitting: j,
     onAcceptInvite: n
   }) : (0, r.jsxs)("div", {
-    className: p.container,
+    className: g.container,
     children: [(0, r.jsx)(c.GB, {
       application: E,
       guild: _,
-      user: j || (0, c.X7)(t) ? v : null
-    }), (0, c.X7)(t) ? null : (0, r.jsx)(c.jq, m(g({}, I), {
-      showBigUserIcon: j
-    })), (0, r.jsx)(c.UM, m(g({}, I), {
-      showBigUserIcon: j
-    })), (0, r.jsx)(c.V6, g({}, I)), (0, r.jsx)(i.zx, {
+      user: b || (0, c.X7)(t) ? v : null
+    }), (0, c.X7)(t) ? null : (0, r.jsx)(c.jq, p(m({}, I), {
+      showBigUserIcon: b
+    })), (0, r.jsx)(c.UM, p(m({}, I), {
+      showBigUserIcon: b
+    })), (0, r.jsx)(c.V6, m({}, I)), (0, r.jsx)(i.zx, {
       onClick: n,
-      submitting: b,
-      className: p.acceptButton,
+      submitting: j,
+      className: g.acceptButton,
       children: h.intl.string(h.t.ohMvm5)
     })]
   })

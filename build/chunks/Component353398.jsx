@@ -63,7 +63,7 @@ class I extends(r = Chunk442837.ZP.Store) {
     }), E(this, "setError", e => {
       this.error = e, this.emitChange()
     }), E(this, "save", async () => {
-      await b.Z.updateGuildTemplate(_.Z.getProps().guild.id, this.getTemplate().code, this.name, this.description), this.emitChange()
+      await x.Z.updateGuildTemplate(_.Z.getProps().guild.id, this.getTemplate().code, this.name, this.description), this.emitChange()
     })
   }
 }
@@ -121,9 +121,9 @@ function R() {
         !async function() {
           n(true);
           try {
-            await b.Z.loadTemplatesForGuild(e), n(false)
+            await x.Z.loadTemplatesForGuild(e), n(false)
           } catch (e) {
-            S.setError(new x.Hx(e))
+            S.setError(new b.Hx(e))
           }
         }()
       }, [e]), {
@@ -149,7 +149,8 @@ function R() {
     className: Chunk197571.marginTop40
   });
   let o = null != exports && null == exports.getFirstFieldErrorMessage("name") && null == exports.getFirstFieldErrorMessage("description");
-  return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+  return (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+    gap: 20,
     children: [(0, Chunk951288.jsx)(A, {}), (0, Chunk951288.jsx)(L, {
       guild: module,
       guildTemplate: a
@@ -264,31 +265,24 @@ function A() {
       if (!(r || module.length < 1 || P(module))) return Chunk388032.intl.string(Chunk388032.t.IHAlh4)
     }, [module, r]);
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-    children: [(0, Chunk951288.jsx)(Chunk481060.xJW, {
-      className: Chunk197571.marginBottom20,
-      title: Chunk388032.intl.string(Chunk388032.t.z1a9R0),
+    children: [(0, Chunk951288.jsx)(Chunk481060.oil, {
+      label: Chunk388032.intl.string(Chunk388032.t.z1a9R0),
       required: true,
-      error: null == require ? true : require.getFirstFieldErrorMessage("name"),
-      children: (0, Chunk951288.jsx)(Chunk481060.oil, {
-        value: module,
-        onChange: e => S.setName(e),
-        placeholder: Chunk388032.intl.string(Chunk388032.t.bMlpvr),
-        maxLength: 100,
-        onBlur: a,
-        onFocus: Chunk512722,
-        autoFocus: true,
-        error: c
-      })
-    }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
-      className: Chunk197571.marginBottom20,
-      title: Chunk388032.intl.string(Chunk388032.t.GxirWV),
+      error: null != c ? c : null == require ? true : require.getFirstFieldErrorMessage("name"),
+      value: module,
+      onChange: e => S.setName(e),
+      placeholder: Chunk388032.intl.string(Chunk388032.t.bMlpvr),
+      maxLength: 100,
+      onBlur: a,
+      onFocus: Chunk512722,
+      autoFocus: true
+    }), (0, Chunk951288.jsx)(Chunk481060.Kx8, {
+      label: Chunk388032.intl.string(Chunk388032.t.GxirWV),
       error: null == require ? true : require.getFirstFieldErrorMessage("description"),
-      children: (0, Chunk951288.jsx)(Chunk481060.Kx8, {
-        value: exports,
-        onChange: e => S.setDescription(e),
-        placeholder: Chunk388032.intl.string(Chunk388032.t.n1FBXl),
-        maxLength: 120
-      })
+      value: exports,
+      onChange: e => S.setDescription(e),
+      placeholder: Chunk388032.intl.string(Chunk388032.t.n1FBXl),
+      maxLength: 120
     })]
   })
 }
@@ -342,9 +336,9 @@ function k(e) {
   } = e, n = (0, d.e7)([S], () => S.name), [r, s] = l.useState(false), a = async () => {
     S.setError(null), s(true);
     try {
-      await b.Z.createGuildTemplate(t.id, S.name, S.description)
+      await x.Z.createGuildTemplate(t.id, S.name, S.description)
     } catch (e) {
-      S.setError(new x.Hx(e))
+      S.setError(new b.Hx(e))
     }
     s(false)
   };
@@ -364,9 +358,9 @@ function M(e) {
   } = e, [r, s] = l.useState(false), a = async () => {
     S.setError(null), s(true);
     try {
-      await b.Z.syncGuildTemplate(t.id, n.code)
+      await x.Z.syncGuildTemplate(t.id, n.code)
     } catch (e) {
-      S.setError(new x.Hx(e))
+      S.setError(new b.Hx(e))
     }
     s(false)
   };
@@ -389,9 +383,9 @@ function G(e) {
   } = e, [r, s] = l.useState(false), a = async () => {
     S.setError(null);
     try {
-      await b.Z.deleteGuildTemplate(t.id, n.code), S.setName(""), S.setDescription("")
+      await x.Z.deleteGuildTemplate(t.id, n.code), S.setName(""), S.setDescription("")
     } catch (e) {
-      S.setError(new x.Hx(e))
+      S.setError(new b.Hx(e))
     }
     s(false)
   };

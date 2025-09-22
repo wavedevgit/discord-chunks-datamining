@@ -106,64 +106,56 @@ function O() {
             color: "header-secondary",
             children: ["(", C.id, ")"]
           }) : null]
-        }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
-          children: (0, Chunk951288.jsx)(Chunk481060.q4e, {
-            className: Chunk461059.select,
-            options: y,
-            onChange: e => D(e),
-            value: P
-          })
-        }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
-          children: (0, Chunk951288.jsx)("div", {
-            className: Chunk461059.input,
-            children: (0, Chunk951288.jsx)(Chunk481060.oil, {
-              placeholder: "Enter custom input...",
-              value: null != N ? N : "",
-              onChange: D
-            })
+        }), (0, Chunk951288.jsx)(Chunk481060.q4e, {
+          className: Chunk461059.select,
+          options: y,
+          onChange: e => D(e),
+          value: P
+        }), (0, Chunk951288.jsx)("div", {
+          className: Chunk461059.input,
+          children: (0, Chunk951288.jsx)(Chunk481060.oil, {
+            placeholder: "Enter custom input...",
+            value: null != N ? N : "",
+            onChange: D
           })
         })]
       }), (0, Chunk951288.jsxs)("div", {
         className: Chunk461059.toolbar,
-        children: [(0, Chunk951288.jsx)(Chunk481060.xJW, {
-          children: (0, Chunk951288.jsx)(Chunk755721.Gu, {
-            withTransparentBackground: true,
-            className: Chunk461059.theme,
-            orientation: "horizontal",
-            options: [{
-              name: Chunk388032.intl.string(Chunk388032.t.b8Cei4),
-              value: Chunk981631.BRd.DARK
-            }, {
-              name: Chunk388032.intl.string(Chunk388032.t.K2sFfn),
-              value: Chunk981631.BRd.LIGHT
-            }],
-            onChange: e => {
-              (0, u.ZI)({
-                theme: e.value
-              })
-            },
-            value: Chunk120356
-          })
-        }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
-          children: (0, Chunk951288.jsx)(Chunk755721.Gu, {
-            withTransparentBackground: true,
-            className: Chunk461059.theme,
-            orientation: "horizontal",
-            options: [{
-              name: "Upright",
-              value: "upright"
-            }, {
-              name: "Italic",
-              value: "italic"
-            }, {
-              name: "Mono",
-              value: "mono"
-            }],
-            onChange: e => {
-              v(e.value)
-            },
-            value: O
-          })
+        children: [(0, Chunk951288.jsx)(Chunk755721.Gu, {
+          withTransparentBackground: true,
+          className: Chunk461059.theme,
+          orientation: "horizontal",
+          options: [{
+            name: Chunk388032.intl.string(Chunk388032.t.b8Cei4),
+            value: Chunk981631.BRd.DARK
+          }, {
+            name: Chunk388032.intl.string(Chunk388032.t.K2sFfn),
+            value: Chunk981631.BRd.LIGHT
+          }],
+          onChange: e => {
+            (0, u.ZI)({
+              theme: e.value
+            })
+          },
+          value: Chunk120356
+        }), (0, Chunk951288.jsx)(Chunk755721.Gu, {
+          withTransparentBackground: true,
+          className: Chunk461059.theme,
+          orientation: "horizontal",
+          options: [{
+            name: "Upright",
+            value: "upright"
+          }, {
+            name: "Italic",
+            value: "italic"
+          }, {
+            name: "Mono",
+            value: "mono"
+          }],
+          onChange: e => {
+            v(e.value)
+          },
+          value: O
         })]
       }), (0, Chunk951288.jsxs)("div", {
         className: Chunk461059.textGrid,

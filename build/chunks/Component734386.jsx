@@ -38,9 +38,9 @@ var Chunk951288 = require("./951288.js"),
 function R(e) {
   let {
     channel: t
-  } = e, [n, l] = i.useState(false), o = (0, f.ZP)(t, true), R = t.guild_id, M = (0, u.e7)([v.Z], () => null != R ? v.Z.getSortedRoles(R) : true), D = (0, u.e7)([j.default, x.Z], () => {
+  } = e, [n, l] = i.useState(false), o = (0, f.ZP)(t, true), R = t.guild_id, M = (0, u.e7)([v.Z], () => null != R ? v.Z.getSortedRoles(R) : true), D = (0, u.e7)([O.default, x.Z], () => {
     var e;
-    return j.default.getUser(null == (e = x.Z.getGuild(R)) ? true : e.ownerId)
+    return O.default.getUser(null == (e = x.Z.getGuild(R)) ? true : e.ownerId)
   }), k = i.useMemo(() => null != M ? M.filter(e => !(0, C.fI)(e)) : [], [M]), L = i.useMemo(() => s()(k).filter(e => {
     if (null == R) returnfalse;
     let n = E.I0({
@@ -50,11 +50,11 @@ function R(e) {
       context: t
     });
     return c.Db(n, c.$e(T.Plq.ADMINISTRATOR, T.Plq.VIEW_CHANNEL))
-  }).value(), [t, R, k]), U = (0, u.Wu)([j.default], () => {
+  }).value(), [t, R, k]), U = (0, u.Wu)([O.default], () => {
     let e = {};
     for (let n of (null != D && (e[D.id] = D), Object.values(t.permissionOverwrites))) {
       if (n.type !== h.BN.MEMBER || null != e[n.id]) continue;
-      let t = j.default.getUser(n.id);
+      let t = O.default.getUser(n.id);
       null != t && (e[t.id] = t)
     }
     return s()(e).filter(e => {
@@ -68,7 +68,7 @@ function R(e) {
         l = c.e$(i.allow, T.Plq.VIEW_CHANNEL);
       return r || l
     }).value()
-  }, [t, D]), B = O.Z.can(T.Plq.MANAGE_CHANNELS, t) || O.Z.can(T.Plq.MANAGE_ROLES, t), G = i.useCallback(() => l(false), []);
+  }, [t, D]), B = j.Z.can(T.Plq.MANAGE_CHANNELS, t) || j.Z.can(T.Plq.MANAGE_ROLES, t), G = i.useCallback(() => l(false), []);
   return (0, r.jsxs)(P.ZP, {
     channelId: t.id,
     children: [(0, r.jsx)(P.Kq, {

@@ -26,14 +26,14 @@ function g(t) {
     onClose: g,
     onChannelPromptCompleted: x,
     isSlideReady: T
-  } = t, [E, h] = l.useState(""), [I, G] = l.useState(null), [y, D] = l.useState(false), z = (0, m.Dt)(), U = (0, a.e7)([u.Z], () => u.Z.getGuild(n), [n]), N = l.useRef(null);
+  } = t, [E, h] = l.useState(""), [I, G] = l.useState(null), [D, y] = l.useState(false), z = (0, m.Dt)(), U = (0, a.e7)([u.Z], () => u.Z.getGuild(n), [n]), N = l.useRef(null);
   l.useEffect(() => {
     var t;
     T && (null == (t = N.current) || t.focus())
   }, [T]);
-  let j = l.useCallback(async t => {
+  let f = l.useCallback(async t => {
       if (t.preventDefault(), null == U) return;
-      D(true), G(null);
+      y(true), G(null);
       let n = p.ZP.getDefaultChannel(U.id);
       try {
         let t = _.intl.formatToPlainString(_.t.V4lepK, {
@@ -43,15 +43,15 @@ function g(t) {
       } catch (t) {
         G(new c.yZ(t))
       }
-      D(false)
+      y(false)
     }, [U, E, x]),
-    f = (0, i.jsxs)(i.Fragment, {
+    j = (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(r.zxk, {
         variant: "primary",
         text: _.intl.string(_.t.i4jeWV),
-        onClick: j,
+        onClick: f,
         disabled: 0 === E.length,
-        loading: y
+        loading: D
       }), (0, i.jsx)(s.zx, {
         className: L.skipButton,
         look: s.zx.Looks.BLANK,
@@ -89,7 +89,7 @@ function g(t) {
       }), (0, i.jsxs)(r.hzk, {
         className: L.channelPrompt,
         children: [(0, i.jsx)("form", {
-          onSubmit: j,
+          onSubmit: f,
           children: (0, i.jsx)(r.oil, {
             label: _.intl.string(_.t.bY20tb),
             error: null == I ? true : I.getFieldMessage("name"),
@@ -106,10 +106,10 @@ function g(t) {
           children: I.message
         })]
       }), e && (0, i.jsx)(r.mzw, {
-        children: f
+        children: j
       })]
     }),
-    footer: f
+    footer: j
   }
 }
 

@@ -72,9 +72,9 @@ class D extends Chunk647438.PureComponent {
   renderChannelLink(e) {
     let {
       guild: t
-    } = this.props, n = (0, p.F6)(e, E.default, b.Z), r = null != t ? "".concat(n, " / ").concat(t.name) : n, l = null != t ? t.id : Z.ME;
+    } = this.props, n = (0, p.F6)(e, E.default, b.Z), r = null != t ? "".concat(n, " / ").concat(t.name) : n, l = null != t ? t.id : j.ME;
     return (0, i.jsx)(s.rU, {
-      to: Z.Z5c.CHANNEL(l),
+      to: j.Z5c.CHANNEL(l),
       onClick: t => {
         t.stopPropagation(), u.Z.channelListScrollTo(l, e.id)
       },

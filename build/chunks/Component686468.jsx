@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk196979 = require("./196979.js");
 
-function O(e) {
+function j(e) {
   let {
     onClick: t,
     className: n
@@ -48,7 +48,7 @@ function O(e) {
   })
 }
 
-function j(e) {
+function O(e) {
   let {
     channel: t
   } = e, {
@@ -119,12 +119,12 @@ function E(e) {
       }) : null, u ? (0, r.jsx)(p.Z, {
         className: x.eventPrompt,
         guildId: s
-      }) : null, l ? (0, r.jsx)(O, {
+      }) : null, l ? (0, r.jsx)(j, {
         className: a()({
           [x.eventPrompt]: true
         }),
         onClick: n
-      }) : null, (0, r.jsx)(j, {
+      }) : null, (0, r.jsx)(O, {
         channel: t
       })]
     })]

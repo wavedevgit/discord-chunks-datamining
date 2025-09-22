@@ -1,4 +1,4 @@
-/** Chunk was on 73736 **/
+/** Chunk was on 24753 **/
 /** chunk id: 289584, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -15,26 +15,26 @@ var Chunk647438 = require("./647438.js"),
 
 function g(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : null,
-    [g, f] = l.useState(false),
-    [b, m] = l.useState(null),
-    h = l.useMemo(() => u.Z.getStageInstanceByChannel(null == e ? true : e.id), [null == e ? true : e.id]),
-    p = (0, c.J)(e);
+    [g, m] = r.useState(false),
+    [b, x] = r.useState(null),
+    f = r.useMemo(() => u.Z.getStageInstanceByChannel(null == e ? true : e.id), [null == e ? true : e.id]),
+    j = (0, o.J)(e);
   return {
     loading: g,
     error: b,
-    onSave: async l => {
+    onSave: async r => {
       let {
-        topic: c,
+        topic: o,
         privacyLevel: u,
         sendStartNotification: g
-      } = l;
-      if (null != e && "" !== c && null != u) {
-        f(true), m(null), null != n && (r.Z.selectGuild(n), i.default.selectVoiceChannel(e.id));
+      } = r;
+      if (null != e && "" !== o && null != u) {
+        m(true), x(null), null != n && (l.Z.selectGuild(n), i.default.selectVoiceChannel(e.id));
         try {
           let n;
-          null != h ? n = await s.Ef(e, c, u) : (n = await s.HO(e, c, u, null != g && g), p && o.Kw(d.v.LIVE_STAGE_NOTIFICATION_BADGE)), t(n)
+          null != f ? n = await c.Ef(e, o, u) : (n = await c.HO(e, o, u, null != g && g), j && s.Kw(d.v.LIVE_STAGE_NOTIFICATION_BADGE)), t(n)
         } catch (e) {
-          m(new a.Hx(e)), f(false)
+          x(new a.Hx(e)), m(false)
         }
       }
     }

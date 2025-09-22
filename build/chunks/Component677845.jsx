@@ -37,7 +37,7 @@ function S(e) {
     className: Z,
     inCall: T,
     totalNumberOfParticipants: N
-  } = e, A = (0, c.bp)() === j.IlC.POPOUT, w = (0, o.e7)([y.Z], () => y.Z.getGuild(P.guild_id), [P.guild_id]), {
+  } = e, A = (0, c.bp)() === O.IlC.POPOUT, w = (0, o.e7)([y.Z], () => y.Z.getGuild(P.guild_id), [P.guild_id]), {
     dismissedActivityEntryPointTileChannel: R
   } = (0, x.d)(), M = (0, o.e7)([h.Z], () => h.Z.getUserParticipantCount(P.id), [P]), D = (0, b.bt)(P.id, t), k = i.useCallback(() => {
     (0, a.j)(() => {
@@ -89,7 +89,7 @@ function S(e) {
     inPopout: A,
     handleClose: k,
     userParticipantCount: M
-  })) : z.push(e => (0, r.jsx)(O.Z, {
+  })) : z.push(e => (0, r.jsx)(j.Z, {
     width: e,
     channel: P,
     guild: w,

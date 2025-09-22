@@ -1,8 +1,8 @@
 /** Chunk was on 73628 **/
-/** chunk id: 943516, original params: A,e,t (module,exports,require) **/
+/** chunk id: 943516, original params: e,A,t (module,exports,require) **/
 require.d(exports, {
   YP: () => p,
-  ZP: () => b,
+  ZP: () => v,
   aN: () => q
 });
 var Chunk951288 = require("./951288.js");
@@ -26,18 +26,18 @@ function p() {
   }
 }
 
-function m(A) {
-  let e, {
+function m(e) {
+  let A, {
     onRemove: t,
     role: r
-  } = A;
-  return e = null != r ? (0, n.jsxs)(n.Fragment, {
+  } = e;
+  return A = null != r ? (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsx)(s.nn4, {
-      children: f.intl.format(f.t["94dBOT"], {
+      children: g.intl.format(g.t["94dBOT"], {
         color: (0, a.Rf)(r.color)
       })
     }), (0, n.jsx)("div", {
-      className: g.attachedRoleColor,
+      className: f.attachedRoleColor,
       style: {
         backgroundColor: (0, a.Rf)(r.color)
       }
@@ -53,21 +53,21 @@ function m(A) {
         size: 12,
         horizontal: true
       }), (0, n.jsx)(s.P3F, {
-        "aria-label": f.intl.string(f.t.tO2HIy),
+        "aria-label": g.intl.string(g.t.tO2HIy),
         onClick: t,
-        className: g.attachedRoleClose,
+        className: f.attachedRoleClose,
         children: (0, n.jsx)(s.Dio, {
           size: "xs",
           color: "currentColor",
-          className: g.attachedRoleCloseIcon
+          className: f.attachedRoleCloseIcon
         })
       })]
     })]
   }) : (0, n.jsx)(s.$jN, {
     type: s.$jN.Type.PULSING_ELLIPSIS
   }), (0, n.jsx)("div", {
-    className: g.attachedRoleContainer,
-    children: e
+    className: f.attachedRoleContainer,
+    children: A
   })
 }
 
@@ -79,25 +79,25 @@ function q() {
   })
 }
 
-function h(A) {
+function h(e) {
   let {
-    roleName: e
-  } = A;
+    roleName: A
+  } = e;
   return (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsx)(s.Text, {
       variant: "text-md/normal",
       color: "text-muted",
-      children: f.intl.format(f.t.i2x5aW, {
-        roleName: e,
-        emphasisHook: A => (0, n.jsx)(s.Text, {
+      children: g.intl.format(g.t.i2x5aW, {
+        roleName: A,
+        emphasisHook: e => (0, n.jsx)(s.Text, {
           tag: "span",
           variant: "text-md/semibold",
           color: "text-default",
-          children: A
+          children: e
         })
       })
     }), (0, n.jsxs)(s.X6q, {
-      className: g.detachWarningHeading,
+      className: f.detachWarningHeading,
       variant: "text-md/medium",
       color: "text-default",
       children: [(0, n.jsx)(s.I9k, {
@@ -106,13 +106,13 @@ function h(A) {
       }), (0, n.jsx)(s.LZC, {
         horizontal: true,
         size: 8
-      }), f.intl.string(f.t.KWx4HR)]
+      }), g.intl.string(g.t.KWx4HR)]
     }), (0, n.jsx)(s.Text, {
       variant: "text-md/normal",
       color: "text-muted",
-      children: f.intl.string(f.t.hNHNpq)
+      children: g.intl.string(g.t.hNHNpq)
     }), (0, n.jsxs)(s.X6q, {
-      className: g.detachWarningHeading,
+      className: f.detachWarningHeading,
       variant: "text-md/medium",
       color: "text-default",
       children: [(0, n.jsx)(s.XHJ, {
@@ -121,50 +121,50 @@ function h(A) {
       }), (0, n.jsx)(s.LZC, {
         horizontal: true,
         size: 8
-      }), f.intl.string(f.t.WIPKAQ)]
+      }), g.intl.string(g.t.WIPKAQ)]
     }), (0, n.jsx)(s.Text, {
       variant: "text-md/normal",
       color: "text-muted",
-      children: f.intl.string(f.t["40shJS"])
+      children: g.intl.string(g.t["40shJS"])
     })]
   })
 }
 
-function b(A) {
+function v(e) {
   let {
-    newRoleParams: e,
+    newRoleParams: A,
     setNewRoleParams: r,
     guildId: a,
     productId: c,
     listingRoleId: p,
-    error: b
-  } = A, C = (0, i.e7)([d.Z], () => null != p ? d.Z.getRole(a, p) : true);
-  return null === e ? (0, n.jsxs)(s.xJW, {
+    error: v
+  } = e, b = (0, i.e7)([d.Z], () => null != p ? d.Z.getRole(a, p) : true);
+  return null === A ? (0, n.jsxs)(s.xJW, {
     title: (0, n.jsxs)("div", {
-      className: g.warningTitle,
+      className: f.warningTitle,
       children: [(0, n.jsx)(q, {}), (0, n.jsx)(s.LZC, {
         horizontal: true,
         size: 4
-      }), f.intl.string(f.t.ovXIrK)]
+      }), g.intl.string(g.t.ovXIrK)]
     }),
-    error: b,
-    titleClassName: g.roleHeader,
+    error: v,
+    titleClassName: f.roleHeader,
     children: [(0, n.jsx)(s.Text, {
       variant: "text-xs/normal",
       color: "text-muted",
-      children: f.intl.string(f.t.H7coX1)
+      children: g.intl.string(g.t.H7coX1)
     }), (0, n.jsx)(s.LZC, {
       size: 8
     }), (0, n.jsxs)("div", {
-      className: g.reattachRoleRow,
+      className: f.reattachRoleRow,
       children: [(0, n.jsx)(m, {
-        role: C,
+        role: b,
         onRemove: true
       }), (0, n.jsx)(s.LZC, {
         horizontal: true,
         size: 8
       }), (0, n.jsx)(o.zxk, {
-        text: f.intl.string(f.t.KkRpFh),
+        text: g.intl.string(g.t.KkRpFh),
         icon: s.UEU,
         iconPosition: "end",
         variant: "secondary",
@@ -174,74 +174,74 @@ function b(A) {
       })]
     })]
   }) : null != p ? (0, n.jsxs)(s.xJW, {
-    title: f.intl.string(f.t.zIg9t7),
-    error: b,
-    titleClassName: g.roleHeader,
+    title: g.intl.string(g.t.zIg9t7),
+    error: v,
+    titleClassName: f.roleHeader,
     children: [(0, n.jsx)(s.Text, {
       variant: "text-xs/normal",
       color: "text-muted",
-      children: f.intl.string(f.t.OfuEkJ)
+      children: g.intl.string(g.t.OfuEkJ)
     }), (0, n.jsx)(s.LZC, {
       size: 8
     }), (0, n.jsx)(m, {
-      role: C,
+      role: b,
       onRemove: () => {
-        l()(null != c, "productId cannot be null"), l()(null != C, "no role attached"),
-          function(A) {
+        l()(null != c, "productId cannot be null"), l()(null != b, "no role attached"),
+          function(e) {
             let {
-              onConfirm: e,
+              onConfirm: A,
               roleName: r
-            } = A;
+            } = e;
             (0, s.ZDy)(async () => {
               let {
-                default: A
+                default: e
               } = await t.e("73322").then(t.bind(t, 776045));
-              return t => (0, n.jsx)(A, function(A) {
-                for (var e = 1; e < arguments.length; e++) {
-                  var t = null != arguments[e] ? arguments[e] : {},
+              return t => (0, n.jsx)(e, function(e) {
+                for (var A = 1; A < arguments.length; A++) {
+                  var t = null != arguments[A] ? arguments[A] : {},
                     n = Object.keys(t);
-                  "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(t).filter(function(A) {
-                    return Object.getOwnPropertyDescriptor(t, A).enumerable
-                  }))), n.forEach(function(e) {
+                  "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+                    return Object.getOwnPropertyDescriptor(t, e).enumerable
+                  }))), n.forEach(function(A) {
                     var n;
-                    n = t[e], e in A ? Object.defineProperty(A, e, {
+                    n = t[A], A in e ? Object.defineProperty(e, A, {
                       value: n,
                       enumerable: true,
                       configurable: true,
                       writable: true
-                    }) : A[e] = n
+                    }) : e[A] = n
                   })
                 }
-                return A
+                return e
               }({
-                title: f.intl.string(f.t.Y3Hi3d),
+                title: g.intl.string(g.t.Y3Hi3d),
                 body: (0, n.jsx)(h, {
                   roleName: r
                 }),
-                cta: f.intl.string(f.t.VawZV1),
-                closeLabel: f.intl.string(f.t["6y+3Bw"]),
-                onConfirm: e
+                cta: g.intl.string(g.t.VawZV1),
+                closeLabel: g.intl.string(g.t["6y+3Bw"]),
+                onConfirm: A
               }, t))
             })
           }({
-            roleName: C.name,
+            roleName: b.name,
             onConfirm: () => r(null)
           })
       }
     })]
-  }) : (l()(null != e, "newRoleParams cannot be null at this point"), (0, n.jsxs)(s.xJW, {
+  }) : (l()(null != A, "newRoleParams cannot be null at this point"), (0, n.jsxs)(s.xJW, {
     required: true,
-    title: f.intl.string(f.t.xZvFpK),
-    error: b,
-    titleClassName: g.roleHeader,
+    title: g.intl.string(g.t.xZvFpK),
+    error: v,
+    titleClassName: f.roleHeader,
     children: [(0, n.jsx)(s.Text, {
       variant: "text-xs/normal",
       color: "text-muted",
-      children: f.intl.string(f.t.CllC5u)
+      children: g.intl.string(g.t.CllC5u)
     }), (0, n.jsx)(s.LZC, {
       size: 8
     }), (0, n.jsx)(u.Z, {
-      newRoleParams: e,
+      newRoleParams: A,
       setNewRoleParams: r
     })]
   }))

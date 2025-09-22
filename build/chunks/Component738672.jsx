@@ -31,8 +31,8 @@ function d(e) {
     }
   }, [C, v, f]);
   let {
-    preventIdle: O,
-    allowIdle: j
+    preventIdle: j,
+    allowIdle: O
   } = (0, u.Y)("popup");
   return (null == t ? true : t.current) == null ? null : (0, r.jsx)(o.ZP, {
     children: (0, r.jsx)(a.jRF, {
@@ -44,10 +44,10 @@ function d(e) {
       nudgeAlignIntoViewport: h,
       children: () => (0, r.jsx)("div", {
         ref: v,
-        onMouseOver: O,
-        onFocus: O,
-        onBlur: j,
-        onMouseLeave: j,
+        onMouseOver: j,
+        onFocus: j,
+        onBlur: O,
+        onMouseLeave: O,
         children: p({
           hidden: y || m || n,
           onDismiss: d

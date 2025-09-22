@@ -1,7 +1,7 @@
 /** Chunk was on 83942 **/
 /** chunk id: 743582, original params: t,n,i (module,exports,require) **/
 require.d(exports, {
-  default: () => x
+  default: () => m
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,40 +15,40 @@ var Chunk951288 = require("./951288.js"),
   Chunk829857 = require("./829857.js"),
   Chunk388032 = require("./388032.jsx");
 
-function x(t) {
+function m(t) {
   var n, i;
   let {
     transitionState: a,
-    application: x,
-    onClose: m
-  } = t, [h, v] = e.useState(null == x || null == (n = x.team) ? true : n.id), {
+    application: m,
+    onClose: x
+  } = t, [h, v] = e.useState(null == m || null == (n = m.team) ? true : n.id), {
     teams: C
-  } = (0, c.Z)(), f = e.useMemo(() => C.filter(t => t.payout_account_status === p.C.ACTIVE).map(t => ({
+  } = (0, c.Z)(), b = e.useMemo(() => C.filter(t => t.payout_account_status === p.C.ACTIVE).map(t => ({
     label: t.name,
     value: t.id
-  })), [C]), b = (null == x || null == (i = x.team) ? true : i.id) !== h, [j, {
-    loading: Z,
+  })), [C]), f = (null == m || null == (i = m.team) ? true : i.id) !== h, [Z, {
+    loading: j,
     error: k
   }] = (0, u.Z)(o.ZP.transferApplication), y = async () => {
-    s()(null != x, "no application"), s()(null != h, "no team selected"), null != await j({
-      applicationId: x.id,
+    s()(null != m, "no application"), s()(null != h, "no team selected"), null != await Z({
+      applicationId: m.id,
       teamId: h
-    }) && m()
-  }, N = (null == x ? true : x.team) != null;
+    }) && x()
+  }, N = (null == m ? true : m.team) != null;
   return (0, l.jsxs)(r.Modal, {
     transitionState: a,
     title: N ? g.intl.string(g.t["4TveVl"]) : g.intl.string(g.t.feBUAQ),
     subtitle: N ? g.intl.string(g.t.c7HS0t) : g.intl.string(g.t.atZ50N),
-    onClose: m,
+    onClose: x,
     actions: [{
       variant: "secondary",
       text: g.intl.string(g.t["ETE/oK"]),
-      onClick: m
+      onClick: x
     }, {
       variant: "critical-primary",
       text: g.intl.string(g.t.R3BPHx),
-      loading: Z,
-      disabled: !b,
+      loading: j,
+      disabled: !f,
       onClick: y
     }],
     children: [N ? (0, l.jsxs)(d.Wn, {
@@ -63,17 +63,15 @@ function x(t) {
       children: k.message
     }) : null, (0, l.jsx)(d.LZC, {
       size: 16
-    }), (0, l.jsx)(d.xJW, {
-      title: N ? g.intl.string(g.t.xZ6ZLy) : g.intl.string(g.t.bfmKdH),
+    }), (0, l.jsx)(d.q4e, {
+      label: N ? g.intl.string(g.t.xZ6ZLy) : g.intl.string(g.t.bfmKdH),
       required: true,
-      children: (0, l.jsx)(d.q4e, {
-        options: f,
-        placeholder: g.intl.string(g.t.QXf93N),
-        value: h,
-        isDisabled: 0 === f.length,
-        onChange: t => v(t),
-        "aria-label": g.intl.string(g.t.QXf93N)
-      })
+      options: b,
+      placeholder: g.intl.string(g.t.QXf93N),
+      value: h,
+      isDisabled: 0 === b.length,
+      onChange: t => v(t),
+      "aria-label": g.intl.string(g.t.QXf93N)
     })]
   })
 }

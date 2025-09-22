@@ -1,7 +1,7 @@
 /** Chunk was on 27978 **/
 /** chunk id: 39514, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => Z
 }), require("./35282.js"), require("./388685.js"), require("./415506.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -40,7 +40,7 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 Chunk442837.ZP.initialize();
-class Z extends Chunk647438.PureComponent {
+class P extends Chunk647438.PureComponent {
   componentDidMount() {
     let {
       authenticated: e,
@@ -53,7 +53,7 @@ class Z extends Chunk647438.PureComponent {
       authenticated: t,
       isResolved: n
     } = this.props;
-    n || o.Z.wait(() => {
+    n || a.Z.wait(() => {
       this.resolveGiftCode()
     }), t && !e.authenticated && this.handleAuthenticated(), !t && e.authenticated && this.setState({
       currentUser: null
@@ -86,15 +86,15 @@ class Z extends Chunk647438.PureComponent {
     } = this.props, {
       error: r
     } = this.state, i = null != r ? r.code : null;
-    return i === S.evJ.INVALID_GIFT_SELF_REDEMPTION ? C.intl.string(C.t.wa9h7O) : i === S.evJ.INVALID_GIFT_REDEMPTION_OWNED && (null == n ? true : n.productLine) === S.POd.COLLECTIBLES ? C.intl.string(C.t.mdLtb2) : null != t || i === S.evJ.INVALID_GIFT_REDEMPTION_OWNED ? C.intl.format(C.t.PIdmg4, {
-      libraryLink: S.Z5c.APPLICATION_LIBRARY
-    }) : e.isClaimed || i === S.evJ.INVALID_GIFT_REDEMPTION_EXHAUSTED ? C.intl.string(C.t.ilcBeX) : i === S.evJ.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED ? C.intl.string(C.t.ypuSd3) : true
+    return i === y.evJ.INVALID_GIFT_SELF_REDEMPTION ? C.intl.string(C.t.wa9h7O) : i === y.evJ.INVALID_GIFT_REDEMPTION_OWNED && (null == n ? true : n.productLine) === y.POd.COLLECTIBLES ? C.intl.string(C.t.mdLtb2) : null != t || i === y.evJ.INVALID_GIFT_REDEMPTION_OWNED ? C.intl.format(C.t.PIdmg4, {
+      libraryLink: y.Z5c.APPLICATION_LIBRARY
+    }) : e.isClaimed || i === y.evJ.INVALID_GIFT_REDEMPTION_EXHAUSTED ? C.intl.string(C.t.ilcBeX) : i === y.evJ.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED ? C.intl.string(C.t.ypuSd3) : true
   }
   renderSpinner(e) {
-    return (0, r.jsxs)(p.ZP, {
-      children: [(0, r.jsx)(p.Dx, {
+    return (0, r.jsxs)(g.ZP, {
+      children: [(0, r.jsx)(g.Dx, {
         children: e
-      }), (0, r.jsx)(p.Hh, {})]
+      }), (0, r.jsx)(g.Hh, {})]
     })
   }
   renderExpiredInvite() {
@@ -143,25 +143,25 @@ class Z extends Chunk647438.PureComponent {
     let {
       sentVerification: t
     } = this.state;
-    return (0, r.jsxs)(p.ZP, {
-      children: [(0, r.jsx)(p.Ee, {
+    return (0, r.jsxs)(g.ZP, {
+      children: [(0, r.jsx)(g.Ee, {
         src: n(892235),
         className: A.marginBottom8
-      }), (0, r.jsx)(p.Dx, {
+      }), (0, r.jsx)(g.Dx, {
         children: C.intl.format(C.t.ivLUf3, {
           username: e.username
         })
-      }), (0, r.jsx)(p.DK, {
+      }), (0, r.jsx)(g.DK, {
         className: A.marginTop20,
         children: C.intl.string(C.t["8Su18/"])
-      }), (0, r.jsx)(p.zx, {
+      }), (0, r.jsx)(g.zx, {
         disabled: t,
         className: A.marginTop40,
         onClick: this.handleResendVerification,
         children: t ? C.intl.string(C.t.CMa9Rk) : C.intl.string(C.t.lm1UKi)
-      }), (0, r.jsx)(p.zx, {
-        look: p.zx.Looks.LINK,
-        color: p.zx.Colors.LINK,
+      }), (0, r.jsx)(g.zx, {
+        look: g.zx.Looks.LINK,
+        color: g.zx.Colors.LINK,
         onClick: this.refreshUser,
         className: A.marginTop8,
         children: C.intl.string(C.t.Po9eBQ)
@@ -170,18 +170,18 @@ class Z extends Chunk647438.PureComponent {
   }
   renderAuthenticated(e, t) {
     let n = this.getErrorMessage(e);
-    return (0, r.jsxs)(p.ZP, {
+    return (0, r.jsxs)(g.ZP, {
       children: [(0, r.jsx)(N.Z, {
         giftCode: e
-      }), (0, r.jsx)(p.zx, {
+      }), (0, r.jsx)(g.zx, {
         disabled: null != n,
         className: A.marginTop40,
         onClick: this.handleAccept,
         children: C.intl.string(C.t.n6I6k5)
-      }), null != n ? (0, r.jsx)(p.DK, {
+      }), null != n ? (0, r.jsx)(g.DK, {
         className: A.marginTop20,
         children: n
-      }) : (0, r.jsx)(p.i_, {
+      }) : (0, r.jsx)(g.i_, {
         className: A.marginTop20,
         children: C.intl.format(C.t.NYM08v, {
           userTag: I.ZP.getUserTag(t),
@@ -198,8 +198,8 @@ class Z extends Chunk647438.PureComponent {
       giftCode: i,
       isResolved: l,
       isAccepting: s,
-      transitionTo: a,
-      location: o
+      transitionTo: o,
+      location: a
     } = this.props, {
       fetchingUser: c,
       continueOnWeb: u
@@ -247,7 +247,7 @@ class Z extends Chunk647438.PureComponent {
       }))
     }), T(this, "handleLogout", () => {
       let e = this.props.match.params.giftCode;
-      c.Z.logout("gift_code", S.Z5c.GIFT_CODE_LOGIN(e))
+      c.Z.logout("gift_code", y.Z5c.GIFT_CODE_LOGIN(e))
     }), T(this, "handleResendVerification", () => {
       c.Z.verifyResend(), this.setState({
         sentVerification: true
@@ -264,7 +264,7 @@ class Z extends Chunk647438.PureComponent {
           error: null
         }), await u.Z.redeemGiftCode({
           code: n
-        }), e(S.Z5c.APP)
+        }), e(y.Z5c.APP)
       } catch (e) {
         this.setState({
           error: e
@@ -275,24 +275,24 @@ class Z extends Chunk647438.PureComponent {
         transitionTo: e
       } = this.props, t = this.getCode();
       u.Z.resolveGiftCode(t, true, true).then(n => {
-        null != n && null != n.giftCode.promotion && e(S.Z5c.BILLING_PROMOTION_REDEMPTION(t))
+        null != n && null != n.giftCode.promotion && e(y.Z5c.BILLING_PROMOTION_REDEMPTION(t))
       })
     })
   }
 }
-let P = Chunk442837.ZP.connectStores([Chunk82142.Z, Chunk283595.Z, Chunk314897.default, Chunk55563.Z, Chunk896797.Z, Chunk362762.Z], e => {
+let Z = Chunk442837.ZP.connectStores([Chunk82142.Z, Chunk283595.Z, Chunk314897.default, Chunk55563.Z, Chunk896797.Z, Chunk362762.Z], e => {
   let t = e.match.params.giftCode,
     n = x.Z.get(t),
     r = null != n ? v.Z.get(n.skuId) : null;
   return {
     giftCode: n,
     sku: r,
-    libraryApplication: null != r && (null == n ? true : n.entitlementBranches) != null ? j.z2(n.entitlementBranches, r, E.Z) : null,
+    libraryApplication: null != r && (null == n ? true : n.entitlementBranches) != null ? b.z2(n.entitlementBranches, r, E.Z) : null,
     authenticated: f.default.isAuthenticated(),
     defaultRoute: _.Z.defaultRoute,
     isResolved: x.Z.getIsResolved(t),
     isAccepting: x.Z.getIsAccepting(t),
     libraryApplicationsFetched: E.Z.fetched,
-    nativeAppState: g.Z.getState(t)
+    nativeAppState: m.Z.getState(t)
   }
-})(Z)
+})(P)

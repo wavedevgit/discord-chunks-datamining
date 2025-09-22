@@ -17,7 +17,7 @@ function o(e) {
     onClose: d,
     isSlideReady: c,
     headerAlignStart: u
-  } = e, [h, f] = r.useState(false), [g, m] = r.useState(null), [x, p] = r.useState(""), S = r.useRef(null);
+  } = e, [h, f] = r.useState(false), [g, m] = r.useState(null), [p, x] = r.useState(""), S = r.useRef(null);
   return r.useEffect(() => {
     if (c) {
       var e;
@@ -27,7 +27,7 @@ function o(e) {
     onSubmit: e => {
       e.preventDefault(), f(true), n({
         mfaType: "password",
-        data: x
+        data: p
       }).catch(e => {
         var t, n;
         m(null != (n = null == (t = e.body) ? true : t.message) ? n : e.message)
@@ -38,26 +38,24 @@ function o(e) {
     children: [(0, l.jsx)(s.Z.SlideHeader, {
       onClose: d,
       headerAlignStart: u
-    }), (0, l.jsx)(s.Z.SlideContent, {
-      children: (0, l.jsxs)(i.xJW, {
-        title: a.intl.string(a.t["CIGa+/"]),
-        children: [(0, l.jsx)(i.oil, {
-          inputRef: S,
-          onChange: p,
-          value: x,
-          type: "password",
-          autoComplete: "password",
-          spellCheck: "false",
-          disabled: h
-        }), (0, l.jsx)(s.Z.SlideError, {
-          error: g
-        })]
-      })
+    }), (0, l.jsxs)(s.Z.SlideContent, {
+      children: [(0, l.jsx)(i.oil, {
+        label: a.intl.string(a.t["CIGa+/"]),
+        inputRef: S,
+        onChange: x,
+        value: p,
+        type: "password",
+        autoComplete: "password",
+        spellCheck: "false",
+        disabled: h
+      }), (0, l.jsx)(s.Z.SlideError, {
+        error: g
+      })]
     }), (0, l.jsx)(s.Z.SlideFooter, {
       mfaChallenge: t,
       setSlide: o,
       showConfirm: true,
-      disabled: 0 === x.length,
+      disabled: 0 === p.length,
       submitting: h
     })]
   })

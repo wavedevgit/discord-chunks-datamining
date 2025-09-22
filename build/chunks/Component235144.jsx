@@ -2,13 +2,12 @@
 /** chunk id: 235144, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => p
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk538534 = require("./538534.jsx"),
-  Chunk481060 = require("./481060.js"),
   Chunk846027 = require("./846027.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk131951 = require("./131951.js"),
@@ -17,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk197571 = require("./197571.js");
 
-function h() {
+function p() {
   let {
     analyticsLocations: e
   } = (0, Chunk906732.ZP)(), t = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getActiveInputProfile()), {
@@ -25,14 +24,14 @@ function h() {
   } = (0, Chunk321614.c)({
     location: "UserSettingsInputProfile",
     autoTrackExposure: false
-  }), h = Chunk647438.useCallback(t => {
+  }), p = Chunk647438.useCallback(t => {
     let {
       value: n
     } = t;
-    l.Z.setActiveInputProfile(n, {
+    s.Z.setActiveInputProfile(n, {
       analyticsLocations: e
     })
-  }, [module]), m = [{
+  }, [module]), h = [{
     value: Chunk345655._.VOICE_ISOLATION,
     name: Chunk388032.intl.string(Chunk388032.t.cjPbpa),
     desc: Chunk388032.intl.string(Chunk388032.t.CzhvnJ)
@@ -50,14 +49,14 @@ function h() {
     } = e;
     return n.includes(t)
   });
-  return (0, Chunk951288.jsx)(Chunk481060.xJW, {
-    title: Chunk388032.intl.string(Chunk388032.t.LM3U3t),
+  return (0, Chunk951288.jsx)("div", {
     className: Chunk197571.marginBottom20,
     children: (0, Chunk951288.jsx)(Chunk538534.E, {
-      onChange: e => h({
+      label: Chunk388032.intl.string(Chunk388032.t.LM3U3t),
+      onChange: e => p({
         value: e
       }),
-      options: m,
+      options: h,
       value: null != exports ? exports : Chunk345655._.CUSTOM
     })
   })

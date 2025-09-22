@@ -172,7 +172,7 @@ let I = e => {
       }),
       failingDescription: _.intl.formatToPlainString(_.t.jYwM1d, {
         minimumGuildAge: Math.ceil(m.minimumGuildAge / 7),
-        passDate: d()(x.default.extractTimestamp(l)).add(m.minimumGuildAge, "days").format("LL")
+        passDate: d()(b.default.extractTimestamp(l)).add(m.minimumGuildAge, "days").format("LL")
       }),
       checked: null == m ? true : m.age
     }, {
@@ -281,7 +281,7 @@ let I = e => {
       failingName: _.intl.string(_.t.awA3PT),
       description: _.intl.string(_.t.QbBJ7e),
       failingDescription: _.intl.format(_.t.kBXInZ, {
-        onClick: () => b.Z.setSection(v.pNK.SAFETY, v.KsC.SAFETY_PERMISSIONS)
+        onClick: () => x.Z.setSection(v.pNK.SAFETY, v.KsC.SAFETY_PERMISSIONS)
       }),
       checked: null == m ? true : m.protected
     }];

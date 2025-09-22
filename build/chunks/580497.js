@@ -23,8 +23,8 @@ function f(e) {
       let n = null == (t = s().os) ? true : t.family;
       if ("Android" === n || "iOS" === n) {
         let t = d.default.getFingerprint(),
-          n = (0, o.WS)();
-        return i()(null != e, "generateAppPath: guildId cannot be null"), (0, o.ZP)((0, a.z0)(e), {
+          n = (0, a.WS)();
+        return i()(null != e, "generateAppPath: guildId cannot be null"), (0, a.ZP)((0, o.z0)(e), {
           utmSource: "verify_hub_email",
           fingerprint: t,
           attemptId: n
@@ -32,12 +32,12 @@ function f(e) {
       }
       return "discord://"
     }(e),
-    n = (0, o.zS)(t);
-  null != n && p.default.track(m.rMx.DEEP_LINK_CLICKED, {
+    n = (0, a.zS)(t);
+  null != n && g.default.track(p.rMx.DEEP_LINK_CLICKED, {
     fingerprint: (0, c.K)(n.fingerprint),
     attempt_id: n.attemptId,
     source: n.utmSource
-  }), g.Z.launch(t, e => {
+  }), m.Z.launch(t, e => {
     e || (0, u.dL)(h.Z.fallbackRoute)
   })
 }

@@ -81,7 +81,7 @@ function el(e) {
 }
 let ea = "HasBeenInStageChannel",
   eo = e => {
-    (0, j.v)(g.Z.VOICE_CONTROL_TRAY, j.d.STAY_ON_TOP, e), E.hY(et.KJ3.CHANNEL_CALL_POPOUT, e)
+    (0, O.v)(g.Z.VOICE_CONTROL_TRAY, O.d.STAY_ON_TOP, e), E.hY(et.KJ3.CHANNEL_CALL_POPOUT, e)
   };
 
 function es(e) {
@@ -117,13 +117,13 @@ function es(e) {
     }) : null, m ? (0, r.jsx)(A.Z, {
       popoutOpen: l,
       onOpenPopout: () => {
-        (0, j.v)(u, j.d.POPOUT, true), (() => {
+        (0, O.v)(u, O.d.POPOUT, true), (() => {
           let e = t.getGuildId();
           null != e && null != h && (0, I.XU)(e, h), E.hP(t)
         })()
       },
       onClosePopout: () => {
-        (0, j.v)(u, j.d.POPOUT, false), p.Z.wait(() => E.xv(et.KJ3.CHANNEL_CALL_POPOUT))
+        (0, O.v)(u, O.d.POPOUT, false), p.Z.wait(() => E.xv(et.KJ3.CHANNEL_CALL_POPOUT))
       }
     }) : null, v]
   })
@@ -158,12 +158,12 @@ function eu(e) {
     {
       analyticsLocations: x
     } = (0, b.ZP)(g.Z.VOICE_CONTROL_TRAY),
-    O = (0, m.bp)(),
-    j = (0, s.e7)([U.Z], () => U.Z.getVoiceChannelId() === c.id, [c.id]),
+    j = (0, m.bp)(),
+    O = (0, s.e7)([U.Z], () => U.Z.getVoiceChannelId() === c.id, [c.id]),
     E = (0, s.e7)([L.Z], () => L.Z.can(et.Plq.CONNECT, c)),
     S = (0, F.w8)(c.id, V.pV.SPEAKER),
     I = (0, s.e7)([y.Z], () => y.Z.getSelectedParticipant(c.id)),
-    P = f && O !== et.IlC.POPOUT,
+    P = f && j !== et.IlC.POPOUT,
     [Z, A] = i.useState(0),
     {
       isOnStartStageScreen: w
@@ -174,9 +174,9 @@ function eu(e) {
   return w && (M = "0px"), l = w ? (0, r.jsx)(J.Z, {
     channel: c,
     onContinueClick: () => {
-      (0, W.Ku)(false), j || (0, H.TM)(c)
+      (0, W.Ku)(false), O || (0, H.TM)(c)
     }
-  }) : j ? (0, r.jsx)(X.Z, {
+  }) : O ? (0, r.jsx)(X.Z, {
     channel: c,
     onScroll: e => {
       let {
@@ -195,19 +195,19 @@ function eu(e) {
       height: "calc(100% - ".concat(M, ")"),
       paddingTop: M
     },
-    disableGradients: !j || 0 === Z && N.e.TOP,
-    renderBottomCenter: () => j ? (0, r.jsx)(b.Gt, {
+    disableGradients: !O || 0 === Z && N.e.TOP,
+    renderBottomCenter: () => O ? (0, r.jsx)(b.Gt, {
       value: x,
       children: (0, r.jsx)(Q.Z, {
         channel: c,
         isOnStartStageScreen: w
       })
     }) : null,
-    renderBottomRight: () => j ? (0, r.jsx)(b.Gt, {
+    renderBottomRight: () => O ? (0, r.jsx)(b.Gt, {
       value: x,
       children: (0, r.jsx)(es, {
         channel: c,
-        appContext: O,
+        appContext: j,
         popoutOpen: f,
         popoutWindow: p,
         popoutWindowAlwaysOnTop: h,
@@ -255,7 +255,7 @@ function ed(e) {
   } = (0, s.cj)([S.Z], () => ({
     popoutWindow: S.Z.getWindow(et.KJ3.CHANNEL_CALL_POPOUT),
     popoutWindowAlwaysOnTop: S.Z.getIsAlwaysOnTop(et.KJ3.CHANNEL_CALL_POPOUT)
-  })), j = null != p && !p.closed, {
+  })), O = null != p && !p.closed, {
     analyticsLocations: E
   } = (0, b.ZP)(g.Z.STAGE_CHANNEL_CALL), I = (0, m.bp)(), {
     chatOpen: P,
@@ -265,7 +265,7 @@ function ed(e) {
     participantsListOpen: y.Z.getParticipantsListOpen(t.id)
   }), [t.id]), N = (0, s.e7)([k.Z], () => k.Z.getGuild(t.guild_id), [t.guild_id]), {
     hasParticipantsPanel: A
-  } = (0, O.Z)({
+  } = (0, j.Z)({
     location: "StageChannelCall"
   });
   (0, f.ZP)(() => {
@@ -279,7 +279,7 @@ function ed(e) {
   let {
     width: w = 0,
     ref: R
-  } = (0, h.ZP)(), M = w - 550, D = !j || j && I === et.IlC.POPOUT;
+  } = (0, h.ZP)(), M = w - 550, D = !O || O && I === et.IlC.POPOUT;
   return (0, r.jsx)(b.Gt, {
     value: E,
     children: (0, r.jsxs)(C.B2, {
@@ -301,7 +301,7 @@ function ed(e) {
                 showRequestToSpeakSidebar: l,
                 popoutWindow: p,
                 popoutWindowAlwaysOnTop: _,
-                popoutOpen: j,
+                popoutOpen: O,
                 chatOpen: P,
                 idleProps: e
               })

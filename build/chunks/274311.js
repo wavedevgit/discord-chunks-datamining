@@ -1,4 +1,4 @@
-/** Chunk was on 69467 **/
+/** Chunk was on 98878 **/
 /** chunk id: 274311, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Q: () => s,
@@ -16,9 +16,9 @@ function s(e, n) {
 }
 
 function d(e, n) {
-  return (0, i.e7)([r.Z, l.ZP], () => {
-    let t = r.Z.getChannel(e),
-      i = l.ZP.getGuildScheduledEvent(n);
-    return s(t, null == i ? true : i.entity_type)
+  return (0, r.e7)([i.Z, l.ZP], () => {
+    let t = i.Z.getChannel(e),
+      r = l.ZP.getGuildScheduledEvent(n);
+    return s(t, null == r ? true : r.entity_type)
   }, [e, n])
 }

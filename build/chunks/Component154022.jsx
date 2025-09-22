@@ -336,27 +336,21 @@ function ef() {
     (0, h.u1)(e)
   }
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-    children: [(0, Chunk951288.jsxs)(Chunk481060.xJW, {
-      title: Chunk388032.intl.string(Chunk388032.t.uSOPWl),
-      className: Chunk197571.marginTop20,
-      children: [(0, Chunk951288.jsx)(Chunk481060.R94, {
-        type: Chunk481060.R94.Types.DESCRIPTION,
-        className: Chunk197571.marginBottom8,
-        children: Chunk388032.intl.string(Chunk388032.t["86hjzc"])
-      }), (0, Chunk951288.jsx)(Chunk538534.E, {
-        options: [{
-          name: Chunk388032.intl.string(Chunk388032.t.YEOEi4),
-          value: "username"
-        }, {
-          name: Chunk388032.intl.string(Chunk388032.t.mQaro6),
-          value: "dot"
-        }, {
-          name: Chunk388032.intl.string(Chunk388032.t.Ji2EVF),
-          value: "hidden"
-        }],
-        onChange: e => t(e),
-        value: module
-      })]
+    children: [(0, Chunk951288.jsx)(Chunk538534.E, {
+      label: Chunk388032.intl.string(Chunk388032.t.uSOPWl),
+      description: Chunk388032.intl.string(Chunk388032.t["86hjzc"]),
+      options: [{
+        name: Chunk388032.intl.string(Chunk388032.t.YEOEi4),
+        value: "username"
+      }, {
+        name: Chunk388032.intl.string(Chunk388032.t.mQaro6),
+        value: "dot"
+      }, {
+        name: Chunk388032.intl.string(Chunk388032.t.Ji2EVF),
+        value: "hidden"
+      }],
+      onChange: exports,
+      value: module
     }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
       className: Chunk197571.marginTop20
     })]
@@ -396,10 +390,9 @@ function ep() {
     t = Chunk647438.useRef(null);
   (0, Chunk996073.Z)(exports, Chunk526761.rP.SYNC_PROFILE_THEME_WITH_USER_THEME);
   let n = (0, Chunk947889.Z)();
-  return (0, Chunk951288.jsx)(Chunk481060.xJW, {
+  return (0, Chunk951288.jsx)(Chunk481060.hjN, {
     ref: exports,
     title: Chunk388032.intl.string(Chunk388032.t.BT8Bmp),
-    className: o()(Chunk197571.marginTop20, Chunk953752.syncProfileThemeWithUserTheme),
     children: (0, Chunk951288.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.ACCESSIBILITY_PROFILE_COLORS_SYNC_THEMES,
       children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
@@ -410,7 +403,7 @@ function ep() {
             })
           }
         }),
-        className: Chunk197571.marginTop20,
+        className: Chunk197571.marginTop8,
         value: module,
         onChange: Chunk857595.Uv,
         children: Chunk388032.intl.string(Chunk388032.t["sSY+mJ"])
@@ -431,7 +424,7 @@ function eh() {
   let o = Chunk388032.intl.format(Chunk388032.t.GwEVEx, {
     learnMoreLink: Chunk63063.Z.getArticleURL(Chunk981631.BhN.FORCED_COLORS)
   });
-  return (0, Chunk951288.jsx)(Chunk481060.xJW, {
+  return (0, Chunk951288.jsx)(Chunk481060.hjN, {
     title: Chunk388032.intl.string(Chunk388032.t.TYyfOz),
     className: Chunk197571.marginTop20,
     children: (0, Chunk951288.jsx)(Chunk921801.F, {
@@ -471,7 +464,7 @@ function em() {
     E = Chunk647438.useCallback(e => {
       (0, h.Zt)(e ? "reduce" : "no-preference")
     }, []);
-  return (0, Chunk951288.jsxs)(Chunk481060.xJW, {
+  return (0, Chunk951288.jsxs)(Chunk481060.hjN, {
     ref: Chunk419363,
     title: Chunk388032.intl.string(Chunk388032.t.e3TR1d),
     className: o()(Chunk197571.marginTop20, Chunk953752.reducedMotion),
@@ -482,7 +475,7 @@ function em() {
         helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.REDUCED_MOTION)
       })
     }), (0, Chunk951288.jsx)(Chunk755721.$q, {
-      className: o()(Chunk197571.marginTop20, Chunk197571.marginBottom20),
+      className: o()(Chunk197571.marginTop8, Chunk197571.marginBottom20),
       value: Chunk538534,
       shape: Chunk755721.zV.BOX,
       type: Chunk755721.M0.INVERTED,
@@ -526,28 +519,22 @@ function eg() {
     n = Chunk647438.useCallback(e => {
       M.Wp.updateSetting(e)
     }, []);
-  return (0, Chunk951288.jsxs)(Chunk481060.xJW, {
-    className: Chunk197571.marginTop20,
-    title: Chunk388032.intl.string(Chunk388032.t["6NtAuL"]),
-    children: [(0, Chunk951288.jsx)(Chunk481060.R94, {
-      type: Chunk481060.R94.Types.DESCRIPTION,
-      className: Chunk197571.marginBottom8,
-      children: null != exports ? (0, Chunk440849.Z)(exports) : Chunk388032.intl.string(Chunk388032.t.GRa6U1)
-    }), (0, Chunk951288.jsx)(Chunk538534.E, {
-      options: [{
-        name: Chunk388032.intl.string(Chunk388032.t["Xp+X2d"]),
-        value: Chunk611480.yr.ALWAYS_ANIMATE
-      }, {
-        name: Chunk388032.intl.string(Chunk388032.t.IlLT7e),
-        desc: Chunk388032.intl.string(Chunk388032.t.bIW9Tk),
-        value: Chunk611480.yr.ANIMATE_ON_INTERACTION
-      }, {
-        name: Chunk388032.intl.string(Chunk388032.t.IGu8x8),
-        value: Chunk611480.yr.NEVER_ANIMATE
-      }],
-      onChange: e => n(e),
-      value: module
-    })]
+  return (0, Chunk951288.jsx)(Chunk538534.E, {
+    label: Chunk388032.intl.string(Chunk388032.t["6NtAuL"]),
+    description: null != exports ? (0, Chunk440849.Z)(exports) : Chunk388032.intl.string(Chunk388032.t.GRa6U1),
+    options: [{
+      name: Chunk388032.intl.string(Chunk388032.t["Xp+X2d"]),
+      value: Chunk611480.yr.ALWAYS_ANIMATE
+    }, {
+      name: Chunk388032.intl.string(Chunk388032.t.IlLT7e),
+      desc: Chunk388032.intl.string(Chunk388032.t.bIW9Tk),
+      value: Chunk611480.yr.ANIMATE_ON_INTERACTION
+    }, {
+      name: Chunk388032.intl.string(Chunk388032.t.IGu8x8),
+      value: Chunk611480.yr.NEVER_ANIMATE
+    }],
+    onChange: e => n(e),
+    value: module
   })
 }
 
@@ -555,16 +542,14 @@ function eE() {
   let e = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.isSubmitButtonEnabled),
     t = Chunk695346.dN.useSetting(),
     n = Chunk647438.useRef(null);
-  return (0, Chunk996073.Z)(require, Chunk526761.rP.LEGACY_CHAT_INPUT), (0, Chunk951288.jsxs)(Chunk481060.xJW, {
+  return (0, Chunk996073.Z)(require, Chunk526761.rP.LEGACY_CHAT_INPUT), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
     ref: require,
     className: Chunk197571.marginTop20,
-    children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
-      className: Chunk197571.marginBottom8,
-      children: Chunk388032.intl.string(Chunk388032.t.onqU6u)
-    }), (0, Chunk951288.jsx)(Chunk921801.F, {
+    title: Chunk388032.intl.string(Chunk388032.t.onqU6u),
+    children: [(0, Chunk951288.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.ACCESSIBILITY_MESSAGES_SEND_MESSAGE_BUTTON,
       children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
-        className: Chunk197571.marginTop20,
+        className: Chunk197571.marginTop8,
         value: module,
         onChange: Chunk857595.eN,
         children: Chunk388032.intl.string(Chunk388032.t["3Fztn5"])

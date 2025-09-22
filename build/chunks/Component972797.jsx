@@ -1,5 +1,5 @@
 /** Chunk was on 73628 **/
-/** chunk id: 972797, original params: A,e,t (module,exports,require) **/
+/** chunk id: 972797, original params: e,A,t (module,exports,require) **/
 require.d(exports, {
   Z: () => c
 }), require("./388685.js");
@@ -13,19 +13,19 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk750404 = require("./750404.js");
 
-function c(A) {
+function c(e) {
   let {
-    disabled: e = false,
+    disabled: A = false,
     disabledTooltip: t,
     published: l,
     submitting: c = false,
-    onClick: f
-  } = A, g = (0, s.Dt)(), [p, m] = r.useState(l);
+    onClick: g
+  } = e, f = (0, s.Dt)(), [p, m] = r.useState(l);
   return r.useEffect(() => {
-    m(A => A || l)
+    m(e => e || l)
   }, [l]), (0, n.jsxs)("div", {
     className: a()({
-      [u.publishable]: !e && !l,
+      [u.publishable]: !A && !l,
       [u.wasEverPublished]: p
     }, u.outerContainer),
     children: [(0, n.jsxs)("div", {
@@ -37,7 +37,7 @@ function c(A) {
           color: "header-primary",
           children: l ? d.intl.string(d.t.VaaagY) : d.intl.string(d.t.oI8aQU)
         }), (0, n.jsx)(o.Text, {
-          id: g,
+          id: f,
           variant: "text-sm/normal",
           color: "text-default",
           children: l ? d.intl.string(d.t["0r6pbG"]) : d.intl.string(d.t["8MMHYG"])
@@ -47,13 +47,13 @@ function c(A) {
         icon: l ? o.kZF : o.T$Z,
         iconPosition: "end",
         variant: l ? "critical-primary" : "expressive",
-        "aria-describedby": g,
-        "aria-disabled": e,
-        disabled: e,
-        onClick: e ? true : f,
+        "aria-describedby": f,
+        "aria-disabled": A,
+        disabled: A,
+        onClick: A ? true : g,
         loading: c
       })]
-    }), e && (0, n.jsx)(o.Text, {
+    }), A && (0, n.jsx)(o.Text, {
       variant: "text-sm/normal",
       color: "text-muted",
       children: t

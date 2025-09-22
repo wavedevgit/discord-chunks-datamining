@@ -63,7 +63,7 @@ function c(e) {
         color: "text-secondary",
         className: s.description,
         children: c
-      }), f, (0, r.jsx)(u, {
+      }), "function" == typeof f ? f(m) : f, (0, r.jsx)(u, {
         successMessage: p,
         errorMessage: _,
         helperText: d,

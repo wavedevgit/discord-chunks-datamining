@@ -52,12 +52,12 @@ function h(e) {
   let {
     guildId: t,
     triggerType: n
-  } = e, h = i.useMemo(() => () => (0, o.ep)(t, n), [t, n]), [x] = i.useState(h), [b, j] = i.useState(false), {
+  } = e, h = i.useMemo(() => () => (0, o.ep)(t, n), [t, n]), [b] = i.useState(h), [x, j] = i.useState(false), {
     editingRule: v,
     createNewEditingRule: _
   } = (0, d.V)(), {
     getDefaultRuleName: O
-  } = c.I6[n], y = !(0, o.Vb)(v) && (null == v ? true : v.triggerType) === n, [C, N] = i.useState(y ? v : x), E = (0, a.q_F)({
+  } = c.I6[n], y = !(0, o.Vb)(v) && (null == v ? true : v.triggerType) === n, [C, N] = i.useState(y ? v : b), E = (0, a.q_F)({
     opacity: +!y,
     pointerEvents: y ? "none" : "all",
     config: f(p({}, l.config.stiff), {
@@ -70,10 +70,10 @@ function h(e) {
       clamp: true
     }),
     onStart: () => {
-      N(y ? v : x)
+      N(y ? v : b)
     },
     onRest: () => {
-      N(y ? v : x), j(y)
+      N(y ? v : b), j(y)
     }
   });
   return null == v || y ? (0, r.jsxs)("div", {
@@ -86,7 +86,7 @@ function h(e) {
       style: I,
       children: (0, r.jsx)(u.Z, {
         rule: C,
-        persistEdit: b
+        persistEdit: x
       })
     }), (0, r.jsx)(l.animated.div, {
       className: g.animatedNewRuleContainer,

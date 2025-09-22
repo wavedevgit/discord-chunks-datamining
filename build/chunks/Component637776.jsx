@@ -26,32 +26,32 @@ function f(e) {
     redirectGuildId: E
   } = (0, l.e7)([h.Z], () => h.Z.getState());
   i.useEffect(() => {
-    let e = (0, o.Z)(t);
-    a.Z.verify(e), (0, d.e)("verify_hub_email")
+    let e = (0, a.Z)(t);
+    o.Z.verify(e), (0, d.e)("verify_hub_email")
   }, [t]);
   let v = () => {
-    (0, p.Z)(E), f(true)
+    (0, g.Z)(E), f(true)
   };
   return n ? (0, r.jsx)(c.Z, {
-    title: m.intl.string(m.t.csrAMD),
-    subtitle: m.intl.string(m.t["m1+IBg"]),
-    buttonText: m.intl.string(m.t.fIv16O),
-    onButtonClick: () => (0, u.uL)(g.Z5c.CHANNEL(E))
+    title: p.intl.string(p.t.csrAMD),
+    subtitle: p.intl.string(p.t["m1+IBg"]),
+    buttonText: p.intl.string(p.t.fIv16O),
+    onButtonClick: () => (0, u.uL)(m.Z5c.CHANNEL(E))
   }) : _ ? (0, r.jsx)(c.Z, {
-    title: m.intl.string(m.t.dAfGb2),
-    buttonText: m.intl.string(m.t.uJWIj4),
+    title: p.intl.string(p.t.dAfGb2),
+    buttonText: p.intl.string(p.t.uJWIj4),
     onButtonClick: v,
     image: (0, r.jsx)(s.Om, {
-      alt: m.intl.string(m.t.dAfGb2)
+      alt: p.intl.string(p.t.dAfGb2)
     })
   }) : null != x ? (0, r.jsx)(c.Z, {
-    title: m.intl.string(m.t.PCgG39),
-    subtitle: m.intl.string(m.t.tQpeAw),
-    buttonText: m.intl.string(m.t.uJWIj4),
+    title: p.intl.string(p.t.PCgG39),
+    subtitle: p.intl.string(p.t.tQpeAw),
+    buttonText: p.intl.string(p.t.uJWIj4),
     onButtonClick: v
   }) : (0, r.jsx)(c.Z, {
-    title: m.intl.string(m.t["0c8+5u"]),
-    subtitle: m.intl.string(m.t.ULTCBA),
+    title: p.intl.string(p.t["0c8+5u"]),
+    subtitle: p.intl.string(p.t.ULTCBA),
     loading: true
   })
 }

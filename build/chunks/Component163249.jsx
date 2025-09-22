@@ -2,7 +2,7 @@
 /** chunk id: 163249, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => x
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -73,7 +73,7 @@ function h(e) {
   })
 }
 
-function x() {
+function b() {
   let e = Chunk647438.useMemo(() => [{
       backgroundClass: Chunk203552.bannerClubs,
       username: "Wumpus#0000",
@@ -171,7 +171,7 @@ function x() {
   })
 }
 
-function b(e) {
+function x(e) {
   let {
     guild: t,
     everyoneRole: n,
@@ -188,7 +188,7 @@ function b(e) {
       tag: a.RB0.H2,
       children: [(0, r.jsxs)("div", {
         className: p.container,
-        children: [(0, r.jsx)(x, {}), (0, r.jsx)(a.X6q, {
+        children: [(0, r.jsx)(b, {}), (0, r.jsx)(a.X6q, {
           variant: "heading-xl/semibold",
           children: g.intl.string(g.t.ALlnbm)
         }), (0, r.jsx)(a.Text, {

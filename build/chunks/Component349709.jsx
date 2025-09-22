@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk239336 = require("./239336.js");
 
-function b(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var l = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(l);
@@ -115,8 +115,8 @@ function y(e) {
           let {
             isShown: l
           } = t;
-          return (0, n.jsxs)(s.U, h(b({}, e), {
-            className: x.emojiInput,
+          return (0, n.jsxs)(s.U, h(x({}, e), {
+            className: b.emojiInput,
             ref: k,
             children: [(0, n.jsx)(m.Z, {
               active: l,
@@ -130,7 +130,7 @@ function y(e) {
               lineClamp: 1,
               color: T ? "text-default" : "text-muted",
               children: T ? ":".concat(P, ":") : v.intl.string(v.t.QTK0TE)
-            }), T && D && (0, n.jsx)(c.Z, h(b({}, e), {
+            }), T && D && (0, n.jsx)(c.Z, h(x({}, e), {
               onClick: R
             }))]
           }))

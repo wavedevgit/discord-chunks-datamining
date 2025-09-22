@@ -1,14 +1,13 @@
 /** Chunk was on 62987 **/
 /** chunk id: 165540, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => j
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
-  Chunk704215 = require("./704215.js"),
   Chunk755721 = require("./755721.js"),
   Chunk566620 = require("./566620.js"),
   Chunk989573 = require("./989573.js"),
@@ -18,42 +17,37 @@ var Chunk951288 = require("./951288.js"),
   Chunk663924 = require("./663924.jsx"),
   Chunk533379 = require("./533379.js"),
   Chunk562129 = require("./562129.js"),
-  Chunk266454 = require("./266454.js"),
-  Chunk291407 = require("./291407.jsx"),
   Chunk685006 = require("./685006.jsx"),
   Chunk61356 = require("./61356.js"),
   Chunk314734 = require("./314734.js"),
-  Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk124886 = require("./124886.js");
-let S = Chunk647438.forwardRef(function(e, t) {
+let x = Chunk647438.forwardRef(function(e, t) {
     var n, l;
     let {
-      type: d,
-      animateRef: m
-    } = e, g = (0, o.e7)([h.Z], () => h.Z.shouldShowPopup() && h.Z.activeViewType() === d), {
-      Component: _,
-      events: C,
-      play: v
-    } = (0, b.Z)("ChannelAppLauncherButton");
-    i.useImperativeHandle(m, () => ({
+      type: u,
+      animateRef: f
+    } = e, m = (0, o.e7)([p.Z], () => p.Z.shouldShowPopup() && p.Z.activeViewType() === u), {
+      Component: b,
+      events: y,
+      play: x
+    } = (0, g.Z)("ChannelAppLauncherButton");
+    i.useImperativeHandle(f, () => ({
       animate: () => {
-        C.onMouseEnter()
+        y.onMouseEnter()
       }
-    }), [C]);
-    let S = i.useCallback(() => {
-        g ? p.yT(f.ti.DISMISSED) : ((0, y.Q3)(s.z.DESKTOP_APP_LAUNCHER_ONBOARDING, {
-          dismissAction: O.L.TAKE_ACTION
-        }), p.__(f._b.TEXT, d), u.ux()), v()
-      }, [g, d, v]),
-      I = (0, r.jsx)(_, {
+    }), [y]);
+    let j = i.useCallback(() => {
+        m ? d.yT(h.ti.DISMISSED) : (d.__(h._b.TEXT, u), c.ux()), x()
+      }, [m, u, x]),
+      O = (0, r.jsx)(b, {
         size: "refresh_sm",
         color: "currentColor"
       });
     return (0, r.jsx)("div", {
-      className: a()(E.buttonContainer, x.t4),
+      className: a()(v.buttonContainer, _.t4),
       ref: t,
-      children: (0, r.jsx)(c.zx, (n = function(e) {
+      children: (0, r.jsx)(s.zx, (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -71,15 +65,15 @@ let S = Chunk647438.forwardRef(function(e, t) {
         }
         return e
       }({
-        look: c.zx.Looks.BLANK,
-        size: c.zx.Sizes.NONE,
+        look: s.zx.Looks.BLANK,
+        size: s.zx.Sizes.NONE,
         tabIndex: 0,
-        className: a()(E.button, {
-          [E.buttonActive]: g
+        className: a()(v.button, {
+          [v.buttonActive]: m
         }),
-        onClick: S,
-        "aria-label": j.intl.string(j.t.erHFxM),
-        "aria-expanded": g,
+        onClick: j,
+        "aria-label": C.intl.string(C.t.erHFxM),
+        "aria-expanded": m,
         "aria-haspopup": "dialog",
         focusProps: {
           offset: {
@@ -89,9 +83,9 @@ let S = Chunk647438.forwardRef(function(e, t) {
             right: false
           }
         },
-        innerClassName: E.buttonContents
-      }, C), l = l = {
-        children: I
+        innerClassName: v.buttonContents
+      }, y), l = l = {
+        children: O
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -104,34 +98,28 @@ let S = Chunk647438.forwardRef(function(e, t) {
       }), n))
     })
   }),
-  I = Chunk647438.memo(function(e) {
+  j = Chunk647438.memo(function(e) {
     let {
       channel: t,
       type: n,
       animateRef: l,
       entryPointCommandButtonRef: a
-    } = e, s = i.useRef(null), c = (0, g.R)({
+    } = e, s = i.useRef(null), c = (0, m.R)({
       channel: t,
       chatInputType: n
-    }), u = (0, v.Z)({
+    }), d = (0, y.Z)({
       type: n
-    }), p = (0, d.Z)(t), f = (0, o.e7)([h.Z], () => h.Z.appDMChannelsWithFailedLoads().has(t.id)), {
-      visible: b
-    } = (0, C.xL)();
+    }), h = (0, u.Z)(t), g = (0, o.e7)([p.Z], () => p.Z.appDMChannelsWithFailedLoads().has(t.id)), {
+      visible: _
+    } = (0, b.xL)();
     return c ? (0, r.jsxs)("div", {
-      className: E.channelAppLauncher,
-      children: [(0, r.jsx)(_.Z, {
-        channel: t,
-        animationContainerClassName: E.entrypointAnimation,
-        glowClassName: E.animationGlow,
-        trinketsClassName: E.animationTrinkets,
-        children: (0, r.jsx)(S, {
-          type: n,
-          ref: s,
-          animateRef: l
-        })
-      }), u ? (0, r.jsx)(m.Z, {
-        positionTargetRef: p && !f && b ? a : s,
+      className: v.channelAppLauncher,
+      children: [(0, r.jsx)(x, {
+        type: n,
+        ref: s,
+        animateRef: l
+      }), d ? (0, r.jsx)(f.Z, {
+        positionTargetRef: h && !g && _ ? a : s,
         channel: t
       }) : null]
     }) : null

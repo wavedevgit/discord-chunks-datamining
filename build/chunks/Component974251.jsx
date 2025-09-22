@@ -82,7 +82,7 @@ let F = Chunk647438.memo(function(e) {
     editorTextContent: W,
     setValue: q,
     canOnlyUseTextCommands: Y
-  } = e, K = (0, p.bp)(), X = i.useRef(null), Q = i.useRef(null), J = (0, o.e7)([P.Z], () => P.Z.getActivities()), $ = (0, o.e7)([g.Z], () => g.Z.getSettings().clipsEnabled), ee = (0, o.e7)([g.Z], () => g.Z.getLastClipsSession()), et = (0, o.Wu)([g.Z], () => g.Z.getNewClipIds()), en = (0, o.e7)([j.ZP], () => null == j.ZP.getCurrentSidebarChannelId(V.id)), {
+  } = e, K = (0, p.bp)(), X = i.useRef(null), Q = i.useRef(null), J = (0, o.e7)([P.Z], () => P.Z.getActivities()), $ = (0, o.e7)([g.Z], () => g.Z.getSettings().clipsEnabled), ee = (0, o.e7)([g.Z], () => g.Z.getLastClipsSession()), et = (0, o.Wu)([g.Z], () => g.Z.getNewClipIds()), en = (0, o.e7)([O.ZP], () => null == O.ZP.getCurrentSidebarChannelId(V.id)), {
     showClipsHeaderEntrypoint: er
   } = m.NV.useExperiment({
     location: "ChannelAttachButton"
@@ -115,14 +115,14 @@ let F = Chunk647438.memo(function(e) {
   });
   let eg = (0, x.NE)(V),
     eb = (0, x.Xu)(V),
-    ey = !O.dN.useSetting() && !(0, T.isAndroidWeb)() && null != window.ResizeObserver,
+    ey = !j.dN.useSetting() && !(0, T.isAndroidWeb)() && null != window.ResizeObserver,
     e_ = (0, C.UI)(null != V ? V : true),
     eC = (0, h.qB)(),
     ev = (0, v.Us)({
       location: "ChannelAttachButton"
     }),
     ex = null != (l = null == et ? true : et.length) ? l : 0,
-    eO = (0, M.Z)({
+    ej = (0, M.Z)({
       canAttachFiles: ep,
       canStartThreads: eg || eb,
       useSlate: ey,
@@ -136,10 +136,10 @@ let F = Chunk647438.memo(function(e) {
       appContext: K,
       canSendScheduledMessages: ev
     }),
-    ej = (0, f.Z)("ChannelAttachButton");
-  if (0 === eO.length) return null;
+    eO = (0, f.Z)("ChannelAttachButton");
+  if (0 === ej.length) return null;
   let eE = "refresh_sm",
-    eS = ej ? (0, r.jsx)(c.svS, {
+    eS = eO ? (0, r.jsx)(c.svS, {
       size: eE,
       color: "currentColor",
       colorClass: B.attachButtonPlus
@@ -175,7 +175,7 @@ let F = Chunk647438.memo(function(e) {
           case "attachMenu":
             return (0, r.jsx)(R.Z, H(G({}, e), {
               onClose: () => ec(null),
-              options: eO,
+              options: ej,
               channel: V,
               onFileUpload: () => {
                 var e;

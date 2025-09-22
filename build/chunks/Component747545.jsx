@@ -2,15 +2,13 @@
 /** chunk id: 747545, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  S: () => x,
-  Z: () => L
+  S: () => w,
+  Z: () => D
 }), require("./704826.js"), require("./35282.js"), require("./415506.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
   Chunk209739 = require("./209739.js"),
-  l = require.n(Chunk209739),
+  o = require.n(Chunk209739),
   Chunk442837 = require("./442837.js"),
   Chunk846519 = require("./846519.js"),
   Chunk481060 = require("./481060.js"),
@@ -30,19 +28,19 @@ var Chunk951288 = require("./951288.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk612232 = require("./612232.js");
-let N = ">=10.0.22000",
-  R = /\{65E8773D-8F56-11D0-A3B9-00A0C9223196\}/i,
-  P = "{E5323777-F976-4f5b-9B55-B94699C46E44}";
+let A = ">=10.0.22000",
+  C = /\{65E8773D-8F56-11D0-A3B9-00A0C9223196\}/i,
+  N = "{E5323777-F976-4f5b-9B55-B94699C46E44}";
+
+function R() {
+  return !!(0, Chunk358085.isWindows)() && !!Chunk358085.isPlatformEmbedded && o().satisfies(Chunk579806.Z.os.release, A)
+}
+
+function P(e) {
+  return (0, y.getPlatform)() === y.PlatformTypes.WINDOWS ? "ms-settings:camera" + (null != e ? "?cameraId=".concat(encodeURIComponent(e.replace(C, N))) : "") : ""
+}
 
 function w() {
-  return !!(0, Chunk358085.isWindows)() && !!Chunk358085.isPlatformEmbedded && l().satisfies(Chunk579806.Z.os.release, N)
-}
-
-function D(e) {
-  return (0, v.getPlatform)() === v.PlatformTypes.WINDOWS ? "ms-settings:camera" + (null != e ? "?cameraId=".concat(encodeURIComponent(e.replace(R, P))) : "") : ""
-}
-
-function x() {
   let [e, t] = Chunk647438.useState(false), n = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.isMediaFilterSettingLoading());
   return (Chunk647438.useEffect(() => {
     let e = new Chunk846519.V7;
@@ -55,77 +53,68 @@ function x() {
   }) : null
 }
 
-function L(e) {
+function D(e) {
   let {
     hideDeviceSelector: t = false,
     hideDeviceHeader: n = false,
     hideCameraSettingsLink: i = false,
     onLearnMore: a,
-    selectedBackgroundOption: s,
+    selectedBackgroundOption: o,
     onSelectBackgroundOption: l,
-    renderCamera: u,
-    hidePreviewToggle: _ = false,
-    showSmallBackgroundOptions: v = false,
-    onCancelPreview: N
+    renderCamera: d,
+    hidePreviewToggle: y = false,
+    showSmallBackgroundOptions: A = false,
+    onCancelPreview: C
   } = e, {
-    analyticsLocations: R
-  } = (0, p.ZP)(), {
-    id: P
-  } = (0, m.p6)(S.h7.VIDEO_INPUT), x = (0, c.e7)([y.Z], () => y.Z.isVideoAvailable()), L = E.qF.useSetting();
-  return (0, r.jsxs)(r.Fragment, {
-    children: [u(P), y.Z.isEnabled() ? null : (0, r.jsx)(d.Text, {
-      className: C.permissionWarning,
+    analyticsLocations: N
+  } = (0, f.ZP)(), {
+    id: w
+  } = (0, p.p6)(I.h7.VIDEO_INPUT), D = (0, s.e7)([E.Z], () => E.Z.isVideoAvailable()), x = m.qF.useSetting();
+  return (0, r.jsxs)(c.Kqy, {
+    gap: 20,
+    children: [d(w), E.Z.isEnabled() ? null : (0, r.jsx)(c.Text, {
+      className: S.permissionWarning,
       color: "interactive-normal",
       variant: "text-sm/normal",
-      children: A.intl.format(A.t.stagfH, {
-        onEnableClick: () => f.Z.enable(true)
+      children: T.intl.format(T.t.stagfH, {
+        onEnableClick: () => u.Z.enable(true)
       })
-    }), _ ? null : (0, r.jsx)(d.j7V, {
-      className: C.previewToggle,
-      note: A.intl.string(A.t.WNbX4O),
+    }), y ? null : (0, r.jsx)(c.j7V, {
+      className: S.previewToggle,
+      hideBorder: true,
+      note: T.intl.string(T.t.WNbX4O),
       onChange: e => {
-        E.qF.updateSetting(e), O.default.track(I.rMx.UPDATE_USER_SETTINGS_LOCAL, {
+        m.qF.updateSetting(e), b.default.track(O.rMx.UPDATE_USER_SETTINGS_LOCAL, {
           always_preview_video: e
         })
       },
-      value: L,
-      hideBorder: true,
-      children: (0, r.jsx)("div", {
-        className: C.cameraPreviewTitle,
-        children: A.intl.string(A.t["3Ppr1t"])
+      value: x,
+      children: T.intl.string(T.t["3Ppr1t"])
+    }), !t && (0, r.jsx)(h.F, {
+      setting: v.s6.VOICE_AND_VIDEO_VIDEO_CAMERA_PREVIEW,
+      children: (0, r.jsx)(_.j, {
+        label: n ? true : T.intl.string(T.t.FsQ3OT),
+        helperText: !i && R() ? T.intl.format(T.t.aJYgRk, {
+          onCameraSettingsClick: () => {
+            null == C || C(), window.open(P(w)), b.default.track(O.rMx.SYSTEM_CAMERA_SETTINGS_OPENED, {
+              location_stack: N
+            })
+          }
+        }) : true,
+        deviceType: I.h7.VIDEO_INPUT,
+        location: "CameraSettings",
+        isDisabled: !D,
+        showAllDevices: true
       })
-    }), !t && (0, r.jsx)(g.F, {
-      setting: T.s6.VOICE_AND_VIDEO_VIDEO_CAMERA_PREVIEW,
-      children: (0, r.jsxs)(d.xJW, {
-        title: n ? null : A.intl.string(A.t.FsQ3OT),
-        children: [(0, r.jsx)(h.j, {
-          deviceType: S.h7.VIDEO_INPUT,
-          location: "CameraSettings",
-          className: o()(C.selector, {
-            [C.selectorNoHeader]: n
-          }),
-          isDisabled: !x,
-          showAllDevices: true
-        }), !i && w() && (0, r.jsx)(d.R94, {
-          className: C.cameraDeeplink,
-          children: A.intl.format(A.t.aJYgRk, {
-            onCameraSettingsClick: () => {
-              null == N || N(), window.open(D(P)), O.default.track(I.rMx.SYSTEM_CAMERA_SETTINGS_OPENED, {
-                location_stack: R
-              })
-            }
-          })
-        })]
-      })
-    }), (0, r.jsx)(g.F, {
-      setting: T.s6.VOICE_AND_VIDEO_VIDEO_BACKGROUND,
-      children: (0, r.jsx)(b.Z, {
-        className: C.spacingTop24,
+    }), (0, r.jsx)(h.F, {
+      setting: v.s6.VOICE_AND_VIDEO_VIDEO_BACKGROUND,
+      children: (0, r.jsx)(g.Z, {
+        className: S.spacingTop24,
         onLearnMore: a,
-        selectedBackgroundOption: s,
+        selectedBackgroundOption: o,
         onSelectBackgroundOption: l,
-        currentDeviceId: P,
-        smallerBackgroundOptions: v
+        currentDeviceId: w,
+        smallerBackgroundOptions: A
       })
     })]
   })

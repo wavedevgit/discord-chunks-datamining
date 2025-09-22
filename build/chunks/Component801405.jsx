@@ -29,8 +29,8 @@ function C(e) {
     popoutWindow: v,
     currentWindow: x
   } = e, {
-    parentAnalyticsLocation: O
-  } = (0, c.ZP)(), j = n === _.IlC.POPOUT, E = i.useRef(null), {
+    parentAnalyticsLocation: j
+  } = (0, c.ZP)(), O = n === _.IlC.POPOUT, E = i.useRef(null), {
     currentLayout: S,
     mode: I
   } = (0, l.cj)([u.Z], () => {
@@ -51,15 +51,15 @@ function C(e) {
       currentDocument: T,
       rootNode: N
     } = i.useMemo(() => {
-      let e = null != v && j ? v.document : document,
+      let e = null != v && O ? v.document : document,
         t = x.document.getElementById("app-mount");
       return {
         currentWindow: x,
         currentDocument: e,
         rootNode: t
       }
-    }, [v, j, x]),
-    A = C && !j,
+    }, [v, O, x]),
+    A = C && !O,
     w = I === _.WtW.VIDEO && P && !A,
     R = i.useCallback((e, r) => {
       r !== e && (o.Z.updateLayout(t.id, r, n), r === _.AEg.FULL_SCREEN && t.isPrivate() && g.S.dispatch(_.CkL.TEXTAREA_BLUR))
@@ -70,8 +70,8 @@ function C(e) {
       }, T))
     }, [T, R, N]),
     D = i.useCallback(e => () => {
-      null != N && ((0, d.v)(O, d.d.FULL_SCREEN, e !== _.AEg.FULL_SCREEN), e !== _.AEg.FULL_SCREEN ? (Z.current = e, R(e, _.AEg.FULL_SCREEN), (0, y.Dj)(N)) : M(e))
-    }, [R, M, N, O]);
+      null != N && ((0, d.v)(j, d.d.FULL_SCREEN, e !== _.AEg.FULL_SCREEN), e !== _.AEg.FULL_SCREEN ? (Z.current = e, R(e, _.AEg.FULL_SCREEN), (0, y.Dj)(N)) : M(e))
+    }, [R, M, N, j]);
   i.useEffect(() => {
     let e = () => {
       null != N && ((0, y.rB)(N, T) || S !== _.AEg.FULL_SCREEN || D(S)())
@@ -110,15 +110,15 @@ function C(e) {
       }
       return e
     }({
-      video_layout: j ? "popout" : S
+      video_layout: O ? "popout" : S
     }, (0, s.AB)(e.id))), () => {
-      j && (0, b.isMac)() || t(S)
+      O && (0, b.isMac)() || t(S)
     }
-  }, [S, j]), i.useEffect(() => {
+  }, [S, O]), i.useEffect(() => {
     null != N && E.current === _.WtW.VIDEO && I === _.WtW.VOICE && (0, y.Pr)(N, T)
   }, [T, I, E, N]), i.useEffect(() => {
-    !P && j && a.Z.wait(() => p.xv(_.KJ3.CHANNEL_CALL_POPOUT))
-  }, [P, j]), w) ? (0, r.jsx)(h.Z, {
+    !P && O && a.Z.wait(() => p.xv(_.KJ3.CHANNEL_CALL_POPOUT))
+  }, [P, O]), w) ? (0, r.jsx)(h.Z, {
     themeable: false,
     node: N,
     guestWindow: v,

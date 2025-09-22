@@ -150,7 +150,7 @@ function D(e) {
       let {
         isShown: n
       } = t;
-      return (0, i.createElement)(j.Z, R(w({}, e), {
+      return (0, i.createElement)(O.Z, R(w({}, e), {
         buttonRef: l,
         isActive: n,
         count: S,
@@ -160,12 +160,12 @@ function D(e) {
     }
   }, "call-members-popout")), U && !B && G.push((0, r.jsx)(y.Z, {
     className: A.button
-  }, "for-later")), L && G.push((0, r.jsx)(j.Z, {
+  }, "for-later")), L && G.push((0, r.jsx)(O.Z, {
     className: a()(A.button, {
       [A.lastButton]: n
     }),
     onClick: () => d.Z.toggleParticipantsList(t.id, !N)
-  }, "participants-list-button")), D && G.push((0, r.jsx)(O.T, {
+  }, "participants-list-button")), D && G.push((0, r.jsx)(j.T, {
     channelId: t.id,
     className: a()(A.button, {
       [A.lastButton]: N

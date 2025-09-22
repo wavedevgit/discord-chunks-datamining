@@ -184,8 +184,8 @@ function em(e) {
     canPublish: b,
     canReact: y,
     canConfigureJoin: _,
-    canReply: O,
-    canStartThread: j,
+    canReply: j,
+    canStartThread: O,
     canViewThread: A,
     canForward: w,
     isExpanded: R,
@@ -210,14 +210,14 @@ function em(e) {
       author: d
     } = n, p = (0, u.e7)([F.Z], () => F.Z.getGuild(t.guild_id), [t.guild_id]), h = (0, u.e7)([B.default], () => B.default.getId()), g = (0, L.$R)(t), b = (0, L.Gu)(t), {
       firstMessage: y
-    } = (0, u.e7)([C.Z], () => C.Z.getMessage(t.id), [t.id]), _ = U.nc.useSetting(), x = U.Sb.useSetting(), O = (0, u.e7)([V.Z], () => null == t.guild_id || V.Z.canChatInGuild(t.guild_id), [t]), {
-      canManageMessages: j,
+    } = (0, u.e7)([C.Z], () => C.Z.getMessage(t.id), [t.id]), _ = U.nc.useSetting(), x = U.Sb.useSetting(), j = (0, u.e7)([V.Z], () => null == t.guild_id || V.Z.canChatInGuild(t.guild_id), [t]), {
+      canManageMessages: O,
       canAddNewReactions: S
     } = (0, u.cj)([z.Z], () => ({
-      canAddNewReactions: O && z.Z.can(el.Plq.ADD_REACTIONS, t),
+      canAddNewReactions: j && z.Z.can(el.Plq.ADD_REACTIONS, t),
       canManageMessages: z.Z.can(el.Plq.MANAGE_MESSAGES, t)
-    }), [t, O]), I = (0, M.U)(t, n), P = (0, L.NE)(t, n), Z = (0, L.Ek)(n), T = (0, u.e7)([E.Z], () => null != t.guild_id && E.Z.isLurking(t.guild_id), [t]), N = (0, u.e7)([H.ZP], () => null != t.guild_id && H.ZP.isCurrentUserGuest(t.guild_id), [t]), A = d.id === h, w = (j || n.canDeleteOwnMessage(h)) && g && !el.V$x.UNDELETABLE.has(n.type);
-    n.type === el.uaV.AUTO_MODERATION_ACTION && (w = w && j), t.isModeratorReportChannel() && (w = w && n.id !== (null == y ? true : y.id) && !(0, $.Z)(n));
+    }), [t, j]), I = (0, M.U)(t, n), P = (0, L.NE)(t, n), Z = (0, L.Ek)(n), T = (0, u.e7)([E.Z], () => null != t.guild_id && E.Z.isLurking(t.guild_id), [t]), N = (0, u.e7)([H.ZP], () => null != t.guild_id && H.ZP.isCurrentUserGuest(t.guild_id), [t]), A = d.id === h, w = (O || n.canDeleteOwnMessage(h)) && g && !el.V$x.UNDELETABLE.has(n.type);
+    n.type === el.uaV.AUTO_MODERATION_ACTION && (w = w && O), t.isModeratorReportChannel() && (w = w && n.id !== (null == y ? true : y.id) && !(0, $.Z)(n));
     let R = (0, X.a4)(n),
       G = (0, J.Z)(n, t),
       W = !t.isSystemDM() && (0, Q.Z)(n, h) && g && !b,
@@ -225,14 +225,14 @@ function em(e) {
         disableReactionCreates: Y
       } = (0, ee.Z)({
         channel: t,
-        canChat: O,
+        canChat: j,
         renderReactions: _,
         canAddNewReactions: S,
         isLurking: T,
         isGuest: N,
         isActiveChannelOrUnarchivableThread: g
       }),
-      K = t.type === el.d4z.GUILD_ANNOUNCEMENT && null != p && p.features.has(el.oNc.NEWS) && (A || j) && (0, m.Z)(n),
+      K = t.type === el.d4z.GUILD_ANNOUNCEMENT && null != p && p.features.has(el.oNc.NEWS) && (A || O) && (0, m.Z)(n),
       et = t.getGuildId(),
       en = null != et && n.type === el.uaV.USER_JOIN && z.Z.canWithPartialContext(el.Plq.MANAGE_GUILD, {
         guildId: et
@@ -282,10 +282,10 @@ function em(e) {
     eo({
       emojiPicker: !Y
     })
-  }, [Y, eo]), eb = (0, L.$R)(t), e_ = n.hasFlag(el.iLy.CROSSPOSTED), [eC, ev] = (0, g.cv)(w ? [d.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE] : []), ex = eC === d.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE, [eO, ej] = i.useState(false), eE = i.useCallback(() => {
-    ej(true)
+  }, [Y, eo]), eb = (0, L.$R)(t), e_ = n.hasFlag(el.iLy.CROSSPOSTED), [eC, ev] = (0, g.cv)(w ? [d.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE] : []), ex = eC === d.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE, [ej, eO] = i.useState(false), eE = i.useCallback(() => {
+    eO(true)
   }, []), eS = i.useCallback(() => {
-    ej(false)
+    eO(false)
   }, []), eI = i.useCallback((e, t) => {
     ev(ea.L.TAKE_ACTION), (0, en.ts)(e, t)
   }, [ev]), eP = (0, N.Z)(t), eZ = (0, T.Nt)(), eT = eP && eZ && !n.hasPotions(), eN = i.useCallback(e => {
@@ -321,11 +321,11 @@ function em(e) {
         label: n.pinned ? es.intl.string(es.t["Bse+Fx"]) : es.intl.string(es.t["CvQ18/"]),
         icon: p.qQX,
         onClick: e => (0, en.rY)(t, n, e)
-      }, "pin") : null, j && w ? (0, r.jsx)(et.sF, {
+      }, "pin") : null, O && w ? (0, r.jsx)(et.sF, {
         label: es.intl.string(es.t.rBIGBA),
         icon: p.or_,
         onClick: () => (0, en.gK)(t, n)
-      }, "thread") : null, O && h ? (0, r.jsx)(et.sF, {
+      }, "thread") : null, j && h ? (0, r.jsx)(et.sF, {
         label: es.intl.string(es.t["5IEsGx"]),
         icon: p.n$P,
         onClick: e => (0, en.HH)(t, n, e)
@@ -358,7 +358,7 @@ function em(e) {
           })
         }
       }, "add-confetti-potion") : null]
-    }) : null, O && !h ? (0, r.jsx)(et.sF, {
+    }) : null, j && !h ? (0, r.jsx)(et.sF, {
       label: es.intl.string(es.t["5IEsGx"]),
       icon: p.n$P,
       onClick: e => (0, en.HH)(t, n, e)
@@ -372,12 +372,12 @@ function em(e) {
       onClick: () => eI(t, n),
       onTooltipShow: eE,
       onTooltipHide: eS,
-      showNewBadge: !eO && ex
-    }, "forward") : null, j && !w ? (0, r.jsx)(et.sF, {
+      showNewBadge: !ej && ex
+    }, "forward") : null, O && !w ? (0, r.jsx)(et.sF, {
       label: es.intl.string(es.t.rBIGBA),
       icon: p.or_,
       onClick: () => (0, en.gK)(t, n)
-    }, "thread") : null, !j && A ? (0, r.jsx)(et.sF, {
+    }, "thread") : null, !O && A ? (0, r.jsx)(et.sF, {
       label: es.intl.string(es.t["39d0Wl"]),
       icon: p.or_,
       onClick: () => (0, en.qe)(t, n)
@@ -448,7 +448,7 @@ function eg(e) {
   let {
     channel: t,
     message: n
-  } = e, i = (0, u.e7)([O.Z], () => null != O.Z.getMessage(n.id), [n.id]), l = null == n.interaction || null != n.interactionData && (0, j.$s)(n.interactionData);
+  } = e, i = (0, u.e7)([j.Z], () => null != j.Z.getMessage(n.id), [n.id]), l = null == n.interaction || null != n.interactionData && (0, O.$s)(n.interactionData);
   return (0, r.jsxs)(r.Fragment, {
     children: [!i && l && (0, r.jsx)(et.sF, {
       label: es.intl.string(es.t["5911LS"]),

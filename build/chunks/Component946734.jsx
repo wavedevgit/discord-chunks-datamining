@@ -88,15 +88,15 @@ class S {
     })), E(this, "renderMoreAvatars", () => (0, r.jsx)(s.u, {
       asContainer: true,
       tag: "span",
-      text: O.intl.string(O.t.UTjREx),
+      text: j.intl.string(j.t.UTjREx),
       position: "bottom",
       children: (0, r.jsx)(c.P3F, {
-        className: j.moreAvatars,
+        className: O.moreAvatars,
         onClick: this.handleClick,
         children: (0, r.jsx)(c.oFk, {
           size: "xs",
           color: "currentColor",
-          className: j.plusIcon
+          className: O.plusIcon
         })
       })
     }, "more-avatars")), E(this, "handleClick", () => {
@@ -142,15 +142,15 @@ function I(e) {
     C(false)
   }, [C]);
   return 0 === g.getNicknameGuildPairs().length && 0 === l.length ? (0, r.jsx)("div", {
-    className: j.spacer
+    className: O.spacer
   }) : (0, r.jsxs)(p.Gt, {
     value: m,
     children: [(0, r.jsx)(v.iz, {
-      className: j.divider
+      className: O.divider
     }), (0, r.jsx)(c.IGR, {
-      text: O.intl.string(O.t.l1QVfn),
+      text: j.intl.string(j.t.l1QVfn),
       disableColor: true,
-      className: j.akaBadge
+      className: O.akaBadge
     }), l.length > 0 ? (0, r.jsx)(u.ZP, {
       size: 16,
       users: a,
@@ -165,7 +165,7 @@ function I(e) {
           position: "bottom",
           children: (0, r.jsx)("img", {
             alt: "",
-            className: j.avatar,
+            className: O.avatar,
             onClick: g.handleClick,
             src: a.getAvatarURL(o, 16),
             "aria-hidden": true
@@ -175,10 +175,10 @@ function I(e) {
       renderMoreUsers: g.renderMoreAvatars,
       guildId: true,
       max: 3,
-      className: j.avatars
+      className: O.avatars
     }) : null, g.getNicknameGuildPairs().length > 0 ? (0, r.jsx)(h.Z, {
       position: "bottom",
-      className: j.nicknames,
+      className: O.nicknames,
       delay: 0,
       onTooltipShow: x,
       onTooltipHide: E,

@@ -40,20 +40,20 @@ function O(e) {
     data: n
   } = (0, c.IX)(null != t && (0, x.T)(t) ? t.id : true);
   return null == t ? (0, r.jsx)(a.hGI, {
-    className: y.screenArrowIcon,
+    className: S.screenArrowIcon,
     size: "md",
     color: "currentColor"
   }) : (0, x.T)(t) ? (0, r.jsx)(d.Z, {
     game: n,
     pid: t.pid
   }) : null == t.icon || "" === t.icon ? (0, r.jsx)(a.hGI, {
-    className: y.screenArrowIcon,
+    className: S.screenArrowIcon,
     size: "md",
     color: "currentColor"
   }) : (0, r.jsx)("img", {
     src: t.icon,
     alt: "",
-    className: y.sourceIcon
+    className: S.sourceIcon
   })
 }
 

@@ -1,7 +1,7 @@
 /** Chunk was on 62987 **/
 /** chunk id: 912114, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  B: () => j,
+  B: () => O,
   default: () => E
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -43,7 +43,7 @@ function x(e) {
   return e
 }
 
-function O(e, t) {
+function j(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -56,7 +56,7 @@ function O(e, t) {
   }), e
 }
 
-function j(e) {
+function O(e) {
   let {
     channel: t,
     previewIcon: n,
@@ -128,10 +128,10 @@ let E = function(e) {
   };
   return (i.useEffect(() => {
     a(Z !== I || w)
-  }, [Z, I, w, a]), (0, d.ZP)(() => (b.default.track(_.rMx.GDM_EDIT_INTERACTED, O(x({}, M), {
+  }, [Z, I, w, a]), (0, d.ZP)(() => (b.default.track(_.rMx.GDM_EDIT_INTERACTED, j(x({}, M), {
     action: "opened"
   })), () => {
-    b.default.track(_.rMx.GDM_EDIT_INTERACTED, O(x({}, M), {
+    b.default.track(_.rMx.GDM_EDIT_INTERACTED, j(x({}, M), {
       action: "dismissed"
     }))
   })), null == S) ? null : (0, r.jsx)(h.Gt, {
@@ -141,7 +141,7 @@ let E = function(e) {
         e.preventDefault();
         let r = Z !== I,
           i = true !== N;
-        if (b.default.track(_.rMx.GDM_EDIT_INTERACTED, O(x({}, M), {
+        if (b.default.track(_.rMx.GDM_EDIT_INTERACTED, j(x({}, M), {
             action: "saved",
             new_name_set: "" !== Z,
             new_icon_set: (i ? N : null == S ? true : S.icon) != null,
@@ -169,7 +169,7 @@ let E = function(e) {
         transitionState: l,
         children: (0, r.jsxs)("div", {
           className: v.modalContent,
-          children: [(0, r.jsx)(j, {
+          children: [(0, r.jsx)(O, {
             channel: S,
             previewIcon: N,
             onIconChange: e => A(e.imageUri),

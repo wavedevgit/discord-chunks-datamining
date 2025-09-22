@@ -75,7 +75,7 @@ let W = Chunk998502.ZP.getEnableHardwareAcceleration(),
     } = e, s = i.useRef(null), u = (0, p.e7)([A.Z], () => A.Z.isTyping(t.id, a)), h = (0, p.e7)([P.ZP], () => P.ZP.getMember(t.guild_id, a)), g = (0, p.e7)([Z.Z], () => {
       var e;
       return (null == h ? true : h.colorRoleId) != null ? null == (e = Z.Z.getRole(t.guild_id, h.colorRoleId)) ? true : e.name : true
-    }, [t.guild_id, h]), b = (0, p.e7)([w.default], () => w.default.getUser(a)), y = (0, p.e7)([w.default], () => w.default.getCurrentUser()), _ = (null == b ? true : b.id) === (null == y ? true : y.id), C = (0, p.e7)([T.Z, N.Z], () => _ ? N.Z.getStatus() : T.Z.getStatus(a, t.guild_id)), x = (0, p.e7)([T.Z], () => T.Z.isMobileOnline(a)), j = (0, p.e7)([T.Z, N.Z], () => _ ? N.Z.getActivities() : T.Z.getActivities(a, t.guild_id)), R = (0, p.e7)([I.Z], () => I.Z.getAnyStreamForUser(a)), M = (0, c.JA)(a), k = (0, p.e7)([E.Z], () => E.Z.canUserViewChannel(t.id, l, a)), U = (null == b ? true : b.id) != null && b.id === o, F = i.useCallback(e => {
+    }, [t.guild_id, h]), b = (0, p.e7)([w.default], () => w.default.getUser(a)), y = (0, p.e7)([w.default], () => w.default.getCurrentUser()), _ = (null == b ? true : b.id) === (null == y ? true : y.id), C = (0, p.e7)([T.Z, N.Z], () => _ ? N.Z.getStatus() : T.Z.getStatus(a, t.guild_id)), x = (0, p.e7)([T.Z], () => T.Z.isMobileOnline(a)), O = (0, p.e7)([T.Z, N.Z], () => _ ? N.Z.getActivities() : T.Z.getActivities(a, t.guild_id)), R = (0, p.e7)([I.Z], () => I.Z.getAnyStreamForUser(a)), M = (0, c.JA)(a), k = (0, p.e7)([E.Z], () => E.Z.canUserViewChannel(t.id, l, a)), U = (null == b ? true : b.id) != null && b.id === o, F = i.useCallback(e => {
       null != b && (0, f.jW)(e, async () => {
         let {
           default: e
@@ -118,7 +118,7 @@ let W = Chunk998502.ZP.getEnableHardwareAcceleration(),
           object: G.qAy.BOOST_GEM_ICON
         }
       })
-    }, [t.guild_id]), Y = (0, O.K)({
+    }, [t.guild_id]), Y = (0, j.K)({
       user: b,
       guildId: t.guild_id,
       location: "ThreadMembers"
@@ -162,7 +162,7 @@ let W = Chunk998502.ZP.getEnableHardwareAcceleration(),
           currentUser: y,
           nick: null == h ? true : h.nick,
           status: C,
-          activities: j,
+          activities: O,
           colorString: null == h ? true : h.colorString,
           colorStrings: null == h ? true : h.colorStrings,
           colorRoleName: g,
@@ -248,7 +248,7 @@ function Q(e) {
     guild: n
   } = e, l = "members-".concat(t.id), {
     analyticsLocations: o
-  } = (0, y.ZP)(b.Z.MEMBER_LIST), d = (0, j.D)(t.id, n), f = d.filter(e => e.userIds.length > 0).reverse()[0], {
+  } = (0, y.ZP)(b.Z.MEMBER_LIST), d = (0, O.D)(t.id, n), f = d.filter(e => e.userIds.length > 0).reverse()[0], {
     navigator: m,
     listRef: _
   } = function(e, t) {

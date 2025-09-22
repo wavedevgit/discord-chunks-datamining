@@ -1,7 +1,7 @@
 /** Chunk was on 61 **/
 /** chunk id: 785468, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => R
+  Z: () => k
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -28,101 +28,93 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk138324 = require("./138324.js");
 
-function T(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      l = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), l.forEach(function(t) {
-      var l;
-      l = n[t], t in e ? Object.defineProperty(e, t, {
-        value: l,
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = l
+      }) : e[t] = r
     })
   }
   return e
 }
-let Z = e => {
+let T = e => {
   let {
     guildId: t,
     channelType: n,
-    channel: r,
+    channel: l,
     onSelectChannel: i,
     disabled: a,
     entityType: s
-  } = e, o = n === O.d4z.GUILD_STAGE_VOICE, x = (0, y.Q)(r, s), m = (0, f.sR)(t, n);
-  return (0, l.jsxs)(c.xJW, {
-    title: o ? C.intl.string(C.t.S7GjDw) : C.intl.string(C.t["7RYWCA"]),
-    className: S.options,
-    disabled: a,
+  } = e, o = n === C.d4z.GUILD_STAGE_VOICE, x = (0, b.Q)(l, s), g = (0, p.sR)(t, n);
+  return (0, r.jsx)(c.VcW, {
+    label: o ? N.intl.string(N.t.S7GjDw) : N.intl.string(N.t["7RYWCA"]),
     required: true,
-    children: [(0, l.jsx)(c.VcW, {
-      value: null == r ? true : r.id,
-      options: m.map(e => ({
-        value: e.id,
-        label: (0, u.F6)(e, v.default, g.Z, true)
-      })),
-      onChange: e => {
-        let t = m.find(t => t.id === e);
-        i(null != t ? t : true)
-      },
-      renderOptionPrefix: e => ((e, t) => {
-        let n = d.Z.getChannel(e);
-        if (null == n) return null;
-        let r = n.type === O.d4z.GUILD_STAGE_VOICE,
-          i = (0, y.Q)(n, t),
-          a = i ? c.gj8 : c.gjC,
-          s = i ? c.ewx : c.pki;
-        return (0, l.jsx)(r ? s : a, {
-          color: "currentColor",
-          size: "md",
-          className: S.channelOptionIcon
-        })
-      })(null == e ? true : e.value, s),
-      isDisabled: a
-    }), !x && (0, l.jsx)(c.Text, {
-      color: "header-secondary",
-      className: S.channelPrivate,
-      variant: "text-sm/normal",
-      children: C.intl.string(C.t.F3bDaW)
-    })]
+    helperText: x ? true : N.intl.string(N.t.F3bDaW),
+    value: null == l ? true : l.id,
+    options: g.map(e => ({
+      value: e.id,
+      label: (0, u.F6)(e, v.default, m.Z, true)
+    })),
+    onChange: e => {
+      let t = g.find(t => t.id === e);
+      i(null != t ? t : true)
+    },
+    renderOptionPrefix: e => ((e, t) => {
+      let n = d.Z.getChannel(e);
+      if (null == n) return null;
+      let l = n.type === C.d4z.GUILD_STAGE_VOICE,
+        i = (0, b.Q)(n, t),
+        a = i ? c.gj8 : c.gjC,
+        s = i ? c.ewx : c.pki;
+      return (0, r.jsx)(l ? s : a, {
+        color: "currentColor",
+        size: "md",
+        className: P.channelOptionIcon
+      })
+    })(null == e ? true : e.value, s),
+    isDisabled: a
   })
 };
 
-function I(e, t, n, l) {
+function Z(e, t, n, r) {
   return t ? {
     disabled: true,
-    tooltipText: C.intl.string(C.t.yutP5e)
-  } : n ? 0 === l && e !== N.WX.EXTERNAL ? {
+    tooltipText: N.intl.string(N.t.yutP5e)
+  } : n ? 0 === r && e !== E.WX.EXTERNAL ? {
     disabled: true,
-    tooltipText: C.intl.string(C.t["DkY+cH"])
+    tooltipText: N.intl.string(N.t["DkY+cH"])
   } : {
     disabled: false,
     tooltipText: null
   } : {
     disabled: true,
-    tooltipText: C.intl.string(C.t.HeF1kZ)
+    tooltipText: N.intl.string(N.t.HeF1kZ)
   }
 }
-let P = (e, t) => n => {
+let w = (e, t) => n => {
   let {
-    value: l
-  } = n, r = {
-    entityType: l,
+    value: r
+  } = n, l = {
+    entityType: r,
     scheduledEndTime: true
   };
-  if (l === N.WX.EXTERNAL) {
+  if (r === E.WX.EXTERNAL) {
     var i;
-    r.scheduledEndTime = (null != (i = a()(t.scheduledStartTime)) ? i : a()()).add(2, "hour").toISOString()
+    l.scheduledEndTime = (null != (i = a()(t.scheduledStartTime)) ? i : a()()).add(2, "hour").toISOString()
   }
-  e(r)
+  e(l)
 };
 
-function w(e) {
+function I(e) {
   let {
     guildId: t,
     guildEvent: n,
@@ -131,46 +123,43 @@ function w(e) {
   } = e, {
     entityType: o,
     channelId: u
-  } = n, x = (0, s.e7)([d.Z], () => d.Z.getChannel(u), [u]), m = r.useRef(null);
-  r.useEffect(() => {
-    if (a && o === N.WX.EXTERNAL) {
+  } = n, x = (0, s.e7)([d.Z], () => d.Z.getChannel(u), [u]), g = l.useRef(null);
+  l.useEffect(() => {
+    if (a && o === E.WX.EXTERNAL) {
       var e;
-      null == (e = m.current) || e.focus()
+      null == (e = g.current) || e.focus()
     }
   }, [a, o]);
-  let g = e => {
+  let m = e => {
       var t;
       i({
         channelId: null != (t = null == e ? true : e.id) ? t : null
       })
     },
-    v = (0, b.xV)(n),
-    p = (0, b.xC)(o),
-    f = (0, h.xt)(n);
-  return null == o || o === N.WX.NONE ? null : o === N.WX.EXTERNAL ? (0, l.jsx)(c.xJW, {
-    title: C.intl.string(C.t.yx785O),
-    className: S.options,
+    v = (0, y.xV)(n),
+    j = (0, y.xC)(o),
+    p = (0, h.xt)(n);
+  return null == o || o === E.WX.NONE ? null : o === E.WX.EXTERNAL ? (0, r.jsx)(c.oil, {
+    label: N.intl.string(N.t.yx785O),
     required: true,
-    children: (0, l.jsx)(c.oil, {
-      onChange: e => {
-        i({
-          entityMetadata: {
-            location: e
-          }
-        })
-      },
-      placeholder: C.intl.string(C.t.mkCMiY),
-      maxLength: N.gG,
-      value: null != v ? v : "",
-      inputRef: m
-    })
-  }) : null == p ? null : (0, l.jsx)(Z, {
+    onChange: e => {
+      i({
+        entityMetadata: {
+          location: e
+        }
+      })
+    },
+    placeholder: N.intl.string(N.t.mkCMiY),
+    maxLength: E.gG,
+    value: null != v ? v : "",
+    inputRef: g
+  }) : null == j ? null : (0, r.jsx)(T, {
     guildId: t,
-    channelType: p,
-    onSelectChannel: g,
+    channelType: j,
+    onSelectChannel: m,
     channel: x,
     entityType: o,
-    disabled: f
+    disabled: p
   })
 }
 
@@ -179,87 +168,87 @@ function D(e) {
     guildId: t,
     guildEvent: n,
     onChange: i
-  } = e, a = (0, s.e7)([x.Z], () => x.Z.getGuild(t), [t]), u = (0, p.Z)(t, true), d = (0, p.Z)(t, O.d4z.GUILD_VOICE), m = (0, p.Z)(t, O.d4z.GUILD_STAGE_VOICE), g = (0, f.sR)(t, O.d4z.GUILD_VOICE), v = (0, j.q)(a), y = null == a ? true : a.features.has(O.oNc.COMMUNITY), b = (0, h.xt)(n), E = P(i, n), Z = r.useMemo(() => {
-    let e = [T({
-      name: C.intl.string(C.t.BVZqJi),
-      value: N.WX.VOICE,
-      desc: C.intl.string(C.t["EV//4e"]),
+  } = e, a = (0, s.e7)([x.Z], () => x.Z.getGuild(t), [t]), u = (0, j.Z)(t, true), d = (0, j.Z)(t, C.d4z.GUILD_VOICE), g = (0, j.Z)(t, C.d4z.GUILD_STAGE_VOICE), m = (0, p.sR)(t, C.d4z.GUILD_VOICE), v = (0, f.q)(a), b = null == a ? true : a.features.has(C.oNc.COMMUNITY), y = (0, h.xt)(n), O = w(i, n), P = l.useMemo(() => {
+    let e = [S({
+      name: N.intl.string(N.t.BVZqJi),
+      value: E.WX.VOICE,
+      desc: N.intl.string(N.t["EV//4e"]),
       icon: c.gj8
-    }, I(N.WX.VOICE, b, d, g.length)), T({
-      name: C.intl.string(C.t.w7ipb2),
-      value: N.WX.EXTERNAL,
-      desc: C.intl.string(C.t.DYxrHh),
+    }, Z(E.WX.VOICE, y, d, m.length)), S({
+      name: N.intl.string(N.t.w7ipb2),
+      value: E.WX.EXTERNAL,
+      desc: N.intl.string(N.t.DYxrHh),
       icon: c._tJ
-    }, I(N.WX.EXTERNAL, b, u, 0))];
-    return y ? [T({
-      name: C.intl.string(C.t.EErMzM),
-      value: N.WX.STAGE_INSTANCE,
-      desc: C.intl.string(C.t.LgALpq),
+    }, Z(E.WX.EXTERNAL, y, u, 0))];
+    return b ? [S({
+      name: N.intl.string(N.t.EErMzM),
+      value: E.WX.STAGE_INSTANCE,
+      desc: N.intl.string(N.t.LgALpq),
       icon: c.ewx
-    }, I(N.WX.STAGE_INSTANCE, b, m, v.length)), ...e] : e
-  }, [u, d, m, y, g.length, v.length, b]);
-  return (0, l.jsx)(o.Gu, {
+    }, Z(E.WX.STAGE_INSTANCE, y, g, v.length)), ...e] : e
+  }, [u, d, g, b, m.length, v.length, y]);
+  return (0, r.jsx)(o.Gu, {
     value: n.entityType,
-    options: Z,
-    onChange: E,
-    className: S.options
+    options: P,
+    onChange: O
   })
 }
 
-function R(e) {
+function k(e) {
   let {
     guildId: t,
-    guildEvent: r,
+    guildEvent: l,
     validationErrorMessage: i,
     onChange: a,
     isSlideReady: o = false
   } = e, {
     entityType: u
-  } = r, d = (0, s.e7)([x.Z], () => x.Z.getGuild(t), [t]), g = (0, j.q)(d), v = (0, s.e7)([m.Z], () => m.Z.can(O.Plq.MANAGE_CHANNELS, d)), h = null == d ? true : d.features.has(O.oNc.COMMUNITY), p = P(a, r), f = h && u !== N.WX.EXTERNAL && 0 === g.length && v && null != u;
-  return (0, l.jsxs)("div", {
-    className: S.container,
-    children: [(0, l.jsx)(c.X6q, {
-      variant: "heading-xl/semibold",
-      className: S.header,
-      children: C.intl.string(C.t["DC+Qm5"])
-    }), (0, l.jsx)(c.Text, {
-      color: "header-secondary",
-      className: S.text,
-      variant: "text-sm/normal",
-      children: C.intl.string(C.t.IwmXLC)
-    }), (0, l.jsx)(D, {
+  } = l, d = (0, s.e7)([x.Z], () => x.Z.getGuild(t), [t]), m = (0, f.q)(d), v = (0, s.e7)([g.Z], () => g.Z.can(C.Plq.MANAGE_CHANNELS, d)), h = null == d ? true : d.features.has(C.oNc.COMMUNITY), j = w(a, l), p = h && u !== E.WX.EXTERNAL && 0 === m.length && v && null != u;
+  return (0, r.jsxs)("div", {
+    className: P.container,
+    children: [(0, r.jsxs)(c.Kqy, {
+      gap: 4,
+      children: [(0, r.jsx)(c.X6q, {
+        variant: "heading-xl/semibold",
+        children: N.intl.string(N.t["DC+Qm5"])
+      }), (0, r.jsx)(c.Text, {
+        color: "text-secondary",
+        variant: "text-sm/normal",
+        children: N.intl.string(N.t.IwmXLC)
+      })]
+    }), (0, r.jsx)(D, {
       guildId: t,
-      guildEvent: r,
+      guildEvent: l,
       onChange: a
-    }), (0, l.jsx)(w, {
+    }), (0, r.jsx)(I, {
       guildId: t,
-      guildEvent: r,
+      guildEvent: l,
       isFocusReady: o,
       onChange: a
-    }), f ? (0, l.jsx)(E.Z, {
+    }), p ? (0, r.jsx)(O.Z, {
       onClick: () => {
-        p({
-          value: N.WX.STAGE_INSTANCE,
-          name: C.intl.string(C.t.EErMzM)
+        j({
+          value: E.WX.STAGE_INSTANCE,
+          name: N.intl.string(N.t.EErMzM)
         }), (0, c.ZDy)(async () => {
           let {
             default: e
           } = await Promise.all([n.e("33285"), n.e("38697"), n.e("45094"), n.e("12334")]).then(n.bind(n, 218613));
           return n => {
-            var r, i;
-            return (0, l.jsx)(e, (r = T({}, n), i = i = {
-              channelType: O.d4z.GUILD_STAGE_VOICE,
+            var l, i;
+            return (0, r.jsx)(e, (l = S({}, n), i = i = {
+              channelType: C.d4z.GUILD_STAGE_VOICE,
               guildId: t
-            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {
-                var l = Object.getOwnPropertySymbols(e);
-                n.push.apply(n, l)
+                var r = Object.getOwnPropertySymbols(e);
+                n.push.apply(n, r)
               }
               return n
             })(Object(i)).forEach(function(e) {
-              Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
-            }), r))
+              Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(i, e))
+            }), l))
           }
         })
       }

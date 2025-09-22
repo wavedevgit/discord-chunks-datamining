@@ -2,8 +2,8 @@
 /** chunk id: 561779, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  i: () => I
-}), require("./642613.js"), require("./415506.js"), require("./388685.js");
+  i: () => T
+}), require("./642613.js"), require("./953529.js"), require("./415506.js"), require("./388685.js");
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
@@ -14,10 +14,11 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk374470 = require("./374470.js"),
   Chunk793030 = require("./793030.js"),
   Chunk981729 = require("./981729.jsx"),
+  Chunk886025 = require("./886025.jsx"),
   Chunk607070 = require("./607070.js"),
   Chunk89079 = require("./89079.js");
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,20 +27,20 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
 }
 
-function E(e, t) {
+function b(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -50,13 +51,13 @@ function E(e, t) {
   return n
 }
 
-function b(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
+function y(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function y(e, t) {
+function O(e, t) {
   let n = 0;
   for (let r = 0; r < t.length; r++) {
     let i = t[r];
@@ -70,7 +71,7 @@ function y(e, t) {
   return null
 }
 
-function O(e) {
+function v(e) {
   let {
     markers: t,
     initialValue: n,
@@ -85,7 +86,7 @@ function O(e) {
     sortedMarkers: o,
     markerPositions: s
   };
-  let l = y(n, o = t.sort((e, t) => e - t)),
+  let l = O(n, o = t.sort((e, t) => e - t)),
     c = o[0],
     u = o[o.length - 1],
     d = u - c;
@@ -106,17 +107,17 @@ function O(e) {
   }
 }
 
-function v(e, t) {
+function I(e, t) {
   let n = Math.min(Math.max(e.initialValue, e.minValue), e.maxValue);
-  return g({
+  return E({
     value: null != t ? t : n,
     initialValueProp: e.initialValue,
     newClosestIndex: null
-  }, O(e))
+  }, v(e))
 }
-class I extends(r = Chunk647438.PureComponent) {
+class T extends(r = Chunk647438.PureComponent) {
   static getDerivedStateFromProps(e, t) {
-    return e.initialValue !== t.initialValueProp ? b(g({}, v(e, t.value)), {
+    return e.initialValue !== t.initialValueProp ? y(E({}, I(e, t.value)), {
       active: t.active
     }) : null
   }
@@ -140,127 +141,144 @@ class I extends(r = Chunk647438.PureComponent) {
       closestMarkerIndex: l,
       newClosestIndex: c,
       min: d,
-      max: m
+      max: g
     } = this.state, {
-      disabled: E,
-      stickToMarkers: y,
-      className: O,
-      children: v,
-      barStyles: I,
-      fillStyles: S,
-      mini: A,
-      hideBubble: C,
-      defaultValue: N,
-      orientation: R,
-      onValueRender: P,
-      renderMarker: w,
-      getAriaValueText: D,
-      barClassName: x,
-      grabberClassName: L,
-      grabberStyles: j = {},
-      markerPosition: M = 0,
-      "aria-hidden": k,
-      "aria-label": U,
-      "aria-labelledby": G,
-      "aria-describedby": B
-    } = this.props, Z = 0;
-    y ? null != Chunk120356 && (null != c ? Z = Chunk120356[c] : null != Chunk392711 && (Z = Chunk120356[Chunk392711])) : Z = this.scaleValue(exports);
-    let F = "".concat(Z, "%"),
-      V = null != Chunk120356 && null != Chunk647438 ? Chunk120356.map((e, t) => {
+      disabled: b,
+      stickToMarkers: O,
+      className: v,
+      children: I,
+      barStyles: T,
+      fillStyles: A,
+      mini: C,
+      hideBubble: N,
+      defaultValue: R,
+      orientation: P,
+      onValueRender: w,
+      renderMarker: D,
+      getAriaValueText: x,
+      barClassName: L,
+      grabberClassName: j,
+      grabberStyles: M = {},
+      markerPosition: k = 0,
+      "aria-hidden": U,
+      "aria-label": G,
+      "aria-labelledby": B,
+      "aria-describedby": Z,
+      label: F,
+      hideLabel: V,
+      description: H,
+      helperText: Y,
+      errorMessage: W,
+      successMessage: K
+    } = this.props, z = 0;
+    O ? null != Chunk120356 && (null != c ? z = Chunk120356[c] : null != Chunk392711 && (z = Chunk120356[Chunk392711])) : z = this.scaleValue(exports);
+    let q = "".concat(z, "%"),
+      X = null != Chunk120356 && null != Chunk647438 ? Chunk120356.map((e, t) => {
         let n = a[t],
-          r = null != N && N === n,
+          r = null != R && R === n,
           o = this.renderMark(n);
         return (0, i.jsx)("div", {
-          className: s()(h.mark, {
-            [h.defaultValue]: r,
-            [h.markAbove]: 0 === M,
-            [h.markBelow]: 1 === M
+          className: s()(m.mark, {
+            [m.defaultValue]: r,
+            [m.markAbove]: 0 === k,
+            [m.markBelow]: 1 === k
           }),
           style: {
             left: "".concat(e, "%")
           },
-          children: null != w ? w(n) : (0, i.jsxs)(i.Fragment, {
+          children: null != D ? D(n) : (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("div", {
-              className: h.markValue,
+              className: m.markValue,
               children: o
             }), (0, i.jsx)("div", {
-              className: h["markDash".concat(null == o ? "simple" : "")]
+              className: m["markDash".concat(null == o ? "simple" : "")]
             })]
           })
         }, t)
       }) : null,
-      H = null != P ? P(exports) : "".concat(Z.toFixed(0), "%"),
-      Y = null != (e = null == D ? true : D(exports)) ? module : true;
-    return (0, Chunk951288.jsx)(T, {
-      active: require,
-      keyboardFocused: r && Chunk607070.Z.keyboardModeEnabled,
-      children: e => {
-        var a;
-        return (0, i.jsx)(f.tEY, {
-          focusTarget: this.containerRef,
-          ringTarget: this.grabberRef,
-          children: (0, i.jsxs)(u.animated.div, {
-            className: s()(h.slider, O, {
-              [h.hasMarks]: (null != (a = null == V ? true : V.length) ? a : 0) > 0,
-              [h.disabled]: E,
-              [h.mini]: A
-            }),
-            style: null == e ? true : e.sliderStyles,
-            "aria-valuemin": d,
-            "aria-valuemax": m,
-            "aria-valuenow": t,
-            "aria-disabled": E,
-            "aria-orientation": R,
-            "aria-hidden": k,
-            "aria-label": U,
-            "aria-labelledby": G,
-            "aria-describedby": B,
-            "aria-valuetext": Y,
-            role: "slider",
-            tabIndex: 0,
-            onKeyDown: this.handleKeyDown,
-            onMouseDown: this.handleContainerMouseDown,
-            onFocus: () => {
-              this.onFocus()
-            },
-            onBlur: () => {
-              this.onBlur()
-            },
-            onMouseEnter: () => null == e ? true : e.setHovered(true),
-            onMouseLeave: () => null == e ? true : e.setHovered(false),
-            ref: this.containerRef,
-            children: [(0, i.jsx)("div", {
-              className: h.track,
-              children: V
-            }), (0, i.jsx)("div", {
-              className: s()(h.bar, x),
-              style: I,
-              children: (0, i.jsx)("div", {
-                className: h.barFill,
-                style: b(g({}, S), {
-                  width: F
+      Q = null != w ? w(exports) : "".concat(z.toFixed(0), "%"),
+      J = null != (e = null == x ? true : x(exports)) ? module : true;
+    return (0, Chunk951288.jsx)(Chunk886025.N, {
+      label: F,
+      hideLabel: V,
+      description: H,
+      helperText: Y,
+      errorMessage: W,
+      successMessage: K,
+      children: e => (0, i.jsx)(S, {
+        active: n,
+        keyboardFocused: r && h.Z.keyboardModeEnabled,
+        children: a => {
+          var o;
+          return (0, i.jsx)(f.tEY, {
+            focusTarget: this.containerRef,
+            ringTarget: this.grabberRef,
+            children: (0, i.jsxs)(u.animated.div, {
+              className: s()(m.slider, v, {
+                [m.hasMarks]: (null != (o = null == X ? true : X.length) ? o : 0) > 0,
+                [m.disabled]: b,
+                [m.mini]: C
+              }),
+              style: null == a ? true : a.sliderStyles,
+              id: e.controlId,
+              "aria-valuemin": d,
+              "aria-valuemax": g,
+              "aria-valuenow": t,
+              "aria-disabled": b,
+              "aria-orientation": P,
+              "aria-hidden": U,
+              "aria-label": G,
+              "aria-labelledby": B,
+              "aria-describedby": null != Z ? Z : e.describedById,
+              "aria-errormessage": e.errorMessageId,
+              "aria-invalid": null != e.errorMessageId,
+              "aria-valuetext": J,
+              role: "slider",
+              tabIndex: 0,
+              onKeyDown: this.handleKeyDown,
+              onMouseDown: this.handleContainerMouseDown,
+              onFocus: () => {
+                this.onFocus()
+              },
+              onBlur: () => {
+                this.onBlur()
+              },
+              onMouseEnter: () => null == a ? true : a.setHovered(true),
+              onMouseLeave: () => null == a ? true : a.setHovered(false),
+              ref: this.containerRef,
+              children: [(0, i.jsx)("div", {
+                className: m.track,
+                children: X
+              }), (0, i.jsx)("div", {
+                className: s()(m.bar, L),
+                style: T,
+                children: (0, i.jsx)("div", {
+                  className: m.barFill,
+                  style: y(E({}, A), {
+                    width: q
+                  })
                 })
-              })
-            }), v, (0, i.jsx)("div", {
-              className: h.track,
-              children: (0, i.jsx)(_.u, {
-                color: _.u.Colors.GREY,
-                hideOnClick: false,
-                text: C || y ? null : H,
-                forceOpen: n || r && p.Z.keyboardModeEnabled,
-                children: e => (0, i.jsx)("div", b(g({}, e), {
-                  className: s()(h.grabber, L),
-                  style: b(g({}, j), {
-                    left: F
-                  }),
-                  onMouseDown: this.handleMouseDown,
-                  ref: this.grabberRef
-                }))
-              })
-            })]
+              }), I, (0, i.jsx)("div", {
+                className: m.track,
+                children: (0, i.jsx)(_.u, {
+                  color: _.u.Colors.GREY,
+                  hideOnClick: false,
+                  text: N || O ? null : Q,
+                  forceOpen: n || r && h.Z.keyboardModeEnabled,
+                  children: e => (0, i.jsx)("div", y(E({}, e), {
+                    className: s()(m.grabber, j),
+                    style: y(E({}, M), {
+                      left: q
+                    }),
+                    onMouseDown: this.handleMouseDown,
+                    ref: this.grabberRef
+                  }))
+                })
+              })]
+            })
           })
-        })
-      }
+        }
+      })
     })
   }
   reset() {
@@ -301,12 +319,12 @@ class I extends(r = Chunk647438.PureComponent) {
     let u = c - l,
       d = (e.clientX - r) / u,
       f = a[i] + 100 * d;
-    null != (t = this.props.equidistant ? y(f, a) : y(this.unscaleValue(f), o)) && (null == s || s(o[t])), this.setState({
+    null != (t = this.props.equidistant ? O(f, a) : O(this.unscaleValue(f), o)) && (null == s || s(o[t])), this.setState({
       newClosestIndex: t
     })
   }
   constructor(e) {
-    super(e), m(this, "containerRef", a.createRef()), m(this, "grabberRef", a.createRef()), m(this, "moveGrabber", e => {
+    super(e), g(this, "containerRef", a.createRef()), g(this, "grabberRef", a.createRef()), g(this, "moveGrabber", e => {
       let {
         sortedMarkers: t,
         value: n,
@@ -326,7 +344,7 @@ class I extends(r = Chunk647438.PureComponent) {
         l.value = a, l.closestMarkerIndex = i, l.newClosestIndex = i
       } else l.value = c().clamp(n + e, r, i);
       this.setState(l), l.value !== this.state.value && (null == a || a(l.value), null == o || o(l.value))
-    }), m(this, "handleContainerMouseDown", e => {
+    }), g(this, "handleContainerMouseDown", e => {
       let t, {
           disabled: n,
           maxValue: r,
@@ -374,7 +392,7 @@ class I extends(r = Chunk647438.PureComponent) {
         }), this.handleMouseDown(e)
       }
       null != o && o(t), null != a && a(t)
-    }), m(this, "handleKeyDown", e => {
+    }), g(this, "handleKeyDown", e => {
       let {
         disabled: t,
         orientation: n,
@@ -395,7 +413,7 @@ class I extends(r = Chunk647438.PureComponent) {
           a = ["ArrowRight", "ArrowUp"], o = ["ArrowLeft", "ArrowDown"]
       }
       o.includes(i) ? (e.preventDefault(), e.stopPropagation(), this.moveGrabber(-r)) : a.includes(i) && (e.preventDefault(), e.stopPropagation(), this.moveGrabber(r))
-    }), m(this, "handleMouseDown", e => {
+    }), g(this, "handleMouseDown", e => {
       var t, n;
       if (this.props.disabled) return;
       e.stopPropagation();
@@ -409,7 +427,7 @@ class I extends(r = Chunk647438.PureComponent) {
         boundingRect: r.getBoundingClientRect(),
         newClosestIndex: this.state.closestMarkerIndex
       })
-    }), m(this, "handleMouseUp", e => {
+    }), g(this, "handleMouseUp", e => {
       e.stopPropagation(), this.reset();
       let {
         onValueChange: t,
@@ -424,17 +442,17 @@ class I extends(r = Chunk647438.PureComponent) {
         active: false,
         dragStartValue: true
       })
-    }), m(this, "handleMouseMove", e => {
+    }), g(this, "handleMouseMove", e => {
       e.preventDefault(), this.props.stickToMarkers ? this.moveStaggered(e) : this.moveSmoothly(e)
-    }), m(this, "onFocus", () => {
+    }), g(this, "onFocus", () => {
       this.setState({
         focused: true
       })
-    }), m(this, "onBlur", () => {
+    }), g(this, "onBlur", () => {
       this.setState({
         focused: false
       })
-    }), m(this, "moveSmoothly", e => {
+    }), g(this, "moveSmoothly", e => {
       let {
         minValue: t,
         maxValue: n,
@@ -450,15 +468,15 @@ class I extends(r = Chunk647438.PureComponent) {
       null == r || r(c), this.setState({
         value: c
       })
-    }), this.state = g({
+    }), this.state = E({
       active: false,
       focused: false,
       dragStartValue: true
-    }, v(e, e.initialValue))
+    }, I(e, e.initialValue))
   }
 }
 
-function T(e) {
+function S(e) {
   let {
     active: t,
     keyboardFocused: n,
@@ -468,14 +486,14 @@ function T(e) {
     sliderStyles: (0, f.q_F)({
       "--grabber-size": n || t || i ? "20px" : "16px",
       "--bar-size": n || t || i ? "6px" : "4px",
-      config: b(g({}, u.config.stiff), {
+      config: y(E({}, u.config.stiff), {
         duration: 100
       })
     }),
     setHovered: o
   })
 }
-m(I, "defaultProps", {
+g(T, "defaultProps", {
   initialValue: 10,
   minValue: 0,
   maxValue: 100,

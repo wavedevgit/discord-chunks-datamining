@@ -21,13 +21,13 @@ var i, l, Chunk442837 = require("./442837.js"),
 let C = false,
   v = "",
   x = 0,
-  O = [],
-  j = false,
+  j = [],
+  O = false,
   E = new Set,
   S = null;
 
 function I() {
-  v = "", x = 0, O = [], E = new Set, C = false, S = null
+  v = "", x = 0, j = [], E = new Set, C = false, S = null
 }
 
 function P(e) {
@@ -37,7 +37,7 @@ function P(e) {
 function Z() {
   if (!C) returnfalse;
   let e = Chunk592125.Z.getChannel(S);
-  if (0 === v.trim().length) return null != r && r.clearQuery(), O = function(e) {
+  if (0 === v.trim().length) return null != r && r.clearQuery(), j = function(e) {
     let t = b.Z.getFriendIDs(),
       n = y.default.getCurrentUser();
     return (null == n ? true : n.isStaff()) && (t = Array.from(new Set([...t, ...y.default.filter(e => e.isStaff() && e.id !== n.id, false).map(e => e.id)]))), (null == e ? true : e.isPrivate()) && (t = t.filter(t => !e.recipients.includes(t))), t.reduce((e, t) => {
@@ -85,8 +85,8 @@ function Z() {
 
 function T() {
   if (!C) returnfalse;
-  let e = j;
-  return (j = Chunk699516.Z.getFriendCount() > 0) !== module
+  let e = O;
+  return (O = Chunk699516.Z.getFriendCount() > 0) !== module
 }
 
 function N(e, t) {
@@ -116,7 +116,7 @@ function A(e) {
       comparator: r
     })
   }
-  O = n, L.emitChange()
+  j = n, L.emitChange()
 }
 
 function w() {
@@ -141,10 +141,10 @@ class k extends(i = Chunk442837.ZP.Store) {
     this.waitFor(Chunk594174.default, Chunk592125.Z, Chunk699516.Z, Chunk353926.Z, Chunk480294.Z), this.syncWith([Chunk594174.default, Chunk592125.Z], Z), this.syncWith([Chunk699516.Z], T)
   }
   getResults() {
-    return O
+    return j
   }
   hasFriends() {
-    return j
+    return O
   }
   getSelectedUsers() {
     return E
@@ -157,8 +157,8 @@ class k extends(i = Chunk442837.ZP.Store) {
       query: v,
       selectedRow: x,
       selectedUsers: E,
-      results: O,
-      hasFriends: j
+      results: j,
+      hasFriends: O
     }
   }
 }(l = "displayName") in k ? Object.defineProperty(k, l, {

@@ -25,38 +25,38 @@ function f(e) {
     guildTemplate: n,
     onClose: f,
     onBack: g,
-    onHubGuildInfoSet: j,
-    onGuildCreated: _,
+    onHubGuildInfoSet: _,
+    onGuildCreated: j,
     isSlideReady: b,
     hasFooter: L = true,
     isCommunity: N = false
-  } = e, [I, y] = s.useState(m.Z.getGuildNameSuggestion()), [v, Z] = s.useState(null), [S, E] = s.useState(false), [T, O] = s.useState(null), B = !!(null == (t = u.default.getCurrentUser()) ? true : t.isStaff()), [M, k] = s.useState(B), H = (0, d.Dt)(), D = s.useRef(null);
+  } = e, [I, y] = s.useState(m.Z.getGuildNameSuggestion()), [v, Z] = s.useState(null), [E, S] = s.useState(false), [T, O] = s.useState(null), B = !!(null == (t = u.default.getCurrentUser()) ? true : t.isStaff()), [M, k] = s.useState(B), H = (0, d.Dt)(), D = s.useRef(null);
   s.useEffect(() => {
     var e;
     b && (null == (e = D.current) || e.focus())
   }, [b]);
   let G = s.useCallback(async e => {
       if (e.preventDefault(), null != n) {
-        E(true), O(null);
+        S(true), O(null);
         try {
-          if (null != j) j(I, v);
+          if (null != _) _(I, v);
           else {
             let e = await x.Z.createGuildFromTemplate(I, v, n, N, M);
-            a.Z.transitionToGuildSync(e.id), null == _ || _(e.id)
+            a.Z.transitionToGuildSync(e.id), null == j || j(e.id)
           }
         } catch (e) {
           O(e)
         }
-        E(false)
+        S(false)
       }
-    }, [n, j, I, v, N, M, _]),
+    }, [n, _, I, v, N, M, j]),
     w = (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(r.zxk, {
         variant: "primary",
-        text: null != j ? h.intl.string(h.t.PDTjLC) : h.intl.string(h.t.CumH4u),
+        text: null != _ ? h.intl.string(h.t.PDTjLC) : h.intl.string(h.t.CumH4u),
         onClick: G,
         disabled: 0 === I.length,
-        loading: S
+        loading: E
       }), (0, i.jsx)(l.zx, {
         className: p.backButton,
         look: l.zx.Looks.BLANK,
@@ -94,20 +94,15 @@ function f(e) {
           })
         }), (0, i.jsxs)("form", {
           onSubmit: G,
-          children: [(0, i.jsxs)(r.xJW, {
-            className: p.nameInput,
+          children: [(0, i.jsx)(r.oil, {
+            label: h.intl.string(h.t.dBih7e),
+            required: true,
             error: null == T ? true : T.getFirstFieldErrorMessage("name"),
-            children: [(0, i.jsx)(r.vwX, {
-              htmlFor: H,
-              children: h.intl.string(h.t.dBih7e)
-            }), (0, i.jsx)(r.oil, {
-              type: "text",
-              value: I,
-              maxLength: 100,
-              onChange: y,
-              inputRef: D,
-              id: H
-            })]
+            value: I,
+            maxLength: 100,
+            onChange: y,
+            inputRef: D,
+            id: H
           }), B && (0, i.jsx)(r.j7V, {
             hideBorder: true,
             value: M,

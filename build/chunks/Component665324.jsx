@@ -122,7 +122,7 @@ function z(e) {
       children: e => (0, r.jsx)(m.P3F, {
         className: M.boostingIconWrapper,
         onClick: () => {
-          (0, b.f)({
+          (0, x.f)({
             guildId: i,
             location: {
               section: A.jXE.GUILD_SETTINGS_SOUNDBOARD,
@@ -210,7 +210,7 @@ function K(e) {
   let p = i.useMemo(() => l.reduce((e, t) => (e[t.soundId] = new Audio((0, O.Z)(t.soundId)), e), {}), [l]),
     h = 0 === l.length && !s;
 
-  function x(e) {
+  function b(e) {
     var t;
     null == (t = o.current) || t.pause();
     let n = p[e.soundId];
@@ -220,7 +220,7 @@ function K(e) {
       var e;
       null == (e = o.current) || e.pause()
     }, []), s) return (0, r.jsx)(m.$jN, {});
-  let b = B ? (0, r.jsx)(m.zxk, {
+  let x = B ? (0, r.jsx)(m.zxk, {
     variant: "primary",
     text: k.intl.string(k.t["/uNYPD"]),
     onClick: function() {
@@ -244,7 +244,7 @@ function K(e) {
         children: k.intl.string(k.t.BohnsL)
       }), (0, r.jsx)("div", {
         className: M.buttons,
-        children: !h && b
+        children: !h && x
       })]
     }), h ? (0, r.jsxs)(m.ubH, {
       theme: d,
@@ -258,7 +258,7 @@ function K(e) {
         note: k.intl.string(k.t.ZhoSBA),
         noteClassName: M.emptyText,
         children: k.intl.string(k.t.I6P1p6)
-      }), b]
+      }), x]
     }) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(m.$i$, {
         className: M.divider
@@ -290,7 +290,7 @@ function K(e) {
           sound: e,
           isPlaying: false,
           guild: t,
-          onPlaySound: x
+          onPlaySound: b
         }, e.soundId))]
       })]
     })]
@@ -308,13 +308,13 @@ function Y(e) {
     name: u,
     user: f,
     userId: h,
-    emojiId: b,
+    emojiId: x,
     emojiName: _
   } = t, {
     analyticsLocations: O
-  } = (0, x.ZP)(), y = (0, c.e7)([I.default], () => null != f ? f : I.default.getUser(h), [h, f]), {
+  } = (0, b.ZP)(), y = (0, c.e7)([I.default], () => null != f ? f : I.default.getUser(h), [h, f]), {
     canManageGuildExpression: E
-  } = (0, j.XJ)(o), S = i.useMemo(() => E(t), [t, E]), P = null != b || null != _, [w, Z] = i.useState(false), D = (0, C.z)(t, o.id);
+  } = (0, j.XJ)(o), S = i.useMemo(() => E(t), [t, E]), P = null != x || null != _, [w, Z] = i.useState(false), D = (0, C.z)(t, o.id);
   async function A() {
     if (!w) {
       Z(true);
@@ -344,7 +344,7 @@ function Y(e) {
       [M.active]: l
     }),
     children: [P ? (0, r.jsx)(p.Z, {
-      emojiId: b,
+      emojiId: x,
       emojiName: _,
       className: M.emoji
     }) : (0, r.jsx)(m.XBm, {

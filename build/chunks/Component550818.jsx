@@ -25,7 +25,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk491010 = require("./491010.js"),
   Chunk268293 = require("./268293.js");
 
-function j(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -74,7 +74,7 @@ function E(e) {
             className: x.container,
             children: [(0, r.jsx)("img", {
               alt: "",
-              src: O,
+              src: j,
               className: x.preview,
               "aria-hidden": true
             }), (0, r.jsxs)("div", {
@@ -97,7 +97,7 @@ function E(e) {
                 children: [(0, r.jsx)(_.Z, {
                   isBlocked: P,
                   onClick: () => {
-                    E(), (0, f.pQ)(j({
+                    E(), (0, f.pQ)(O({
                       action: P ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
                       analyticsLocations: Z
                     }, T))
@@ -105,7 +105,7 @@ function E(e) {
                 }), (0, r.jsx)(y.Z, {
                   userId: t.id,
                   onClick: () => {
-                    E(), (0, f.pQ)(j({
+                    E(), (0, f.pQ)(O({
                       action: "DONT_SHOW_AGAIN_IGNORED_PROFILE",
                       analyticsLocations: Z
                     }, T))

@@ -41,10 +41,10 @@ function d(e) {
     parentAnalyticsLocation: y
   } = (0, a.ZP)(), _ = t || n || d, C = p ? u.d : u.Z, v = (0, o.Z)(t, n, d, h), {
     events: x,
-    play: O,
-    Component: j
-  } = (0, c.b)(_), E = n || d ? l.v0G : j;
-  return i.useEffect(() => () => O(), [O, _]), (0, r.jsx)(C, function(e) {
+    play: j,
+    Component: O
+  } = (0, c.b)(_), E = n || d ? l.v0G : O;
+  return i.useEffect(() => () => j(), [j, _]), (0, r.jsx)(C, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);

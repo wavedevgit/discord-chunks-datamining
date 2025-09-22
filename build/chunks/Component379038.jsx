@@ -1,7 +1,7 @@
 /** Chunk was on 27919 **/
 /** chunk id: 379038, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => g
+  default: () => p
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -14,34 +14,34 @@ var Chunk951288 = require("./951288.js"),
   Chunk440371 = require("./440371.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function g(e) {
+function p(e) {
   let {
     guildEvent: t,
     recurrenceId: n,
-    transitionState: g,
-    onClose: h
-  } = e, p = (0, d.Z)(n, t.id), j = (0, c.iA)(n, t), f = (0, c.x6)(j, p), [b, v] = l.useState(f), [m, {
+    transitionState: p,
+    onClose: b
+  } = e, x = (0, d.Z)(n, t.id), h = (0, c.iA)(n, t), f = (0, c.x6)(h, x), [j, v] = l.useState(f), [m, {
     loading: D,
     error: O
-  }] = (0, s.Z)(() => {
-    let e = (0, u.Z)(t, n, b, p);
-    return null == O && h(), e
+  }] = (0, u.Z)(() => {
+    let e = (0, s.Z)(t, n, j, x);
+    return null == O && b(), e
   });
   return (0, r.jsxs)(i.Modal, {
-    transitionState: g,
-    title: x.intl.string(x.t.wmVmXF),
+    transitionState: p,
+    title: g.intl.string(g.t.wmVmXF),
     actions: [{
       variant: "secondary",
-      text: x.intl.string(x.t["ETE/oK"]),
-      onClick: h
+      text: g.intl.string(g.t["ETE/oK"]),
+      onClick: b
     }, {
       variant: "primary",
-      text: x.intl.string(x.t.e5VEcH),
+      text: g.intl.string(g.t.e5VEcH),
       onClick: m,
       loading: D,
-      disabled: (0, c.Y4)(b, f)
+      disabled: (0, c.Y4)(j, f)
     }],
-    onClose: h,
+    onClose: b,
     children: [(0, r.jsx)(o.Z, {
       onScheduleChange: e => {
         let {
@@ -53,9 +53,9 @@ function g(e) {
           endDate: n
         })
       },
-      schedule: b,
-      showEndDate: null != b.endDate,
-      requireEndDate: null != b.endDate,
+      schedule: j,
+      showEndDate: null != j.endDate,
+      requireEndDate: null != j.endDate,
       guildId: t.guild_id,
       recurrenceRule: t.recurrence_rule
     }), null != O ? (0, r.jsx)(a.Text, {

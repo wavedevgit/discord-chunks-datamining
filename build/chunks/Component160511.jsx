@@ -21,9 +21,9 @@ function h(e) {
     onClose: f,
     isSlideReady: g,
     headerAlignStart: m
-  } = e, [x, p] = r.useState(false), [S, j] = r.useState(null), [b, y] = r.useState(false), [v, C] = r.useState(null), [Z, w] = r.useState(""), k = r.useRef(null);
+  } = e, [p, x] = r.useState(false), [S, b] = r.useState(null), [j, y] = r.useState(false), [v, C] = r.useState(null), [Z, w] = r.useState(""), k = r.useRef(null);
   r.useEffect(() => {
-    p(true), s.tn.post({
+    x(true), s.tn.post({
       url: d.ANM.LOGIN_SMS_SEND,
       body: {
         ticket: t.ticket
@@ -31,12 +31,12 @@ function h(e) {
       oldFormErrors: true,
       rejectWithError: false
     }).then(e => {
-      j(e.body.phone)
+      b(e.body.phone)
     }).catch(e => {
       var t, n;
       C(null != (n = null == (t = e.body) ? true : t.message) ? n : e.message)
     }).finally(() => {
-      p(false)
+      x(false)
     })
   }, [t.ticket]), r.useEffect(() => {
     if (g) {
@@ -76,11 +76,11 @@ function h(e) {
             value: Z,
             autoComplete: "one-time-code",
             spellCheck: "false",
-            disabled: b
+            disabled: j
           }), (0, l.jsx)(a.zxk, {
             variant: "secondary",
             text: c.intl.string(c.t.ZF29Ly),
-            loading: x,
+            loading: p,
             onClick: () => {
               s.tn.post({
                 url: d.ANM.LOGIN_SMS_SEND,
@@ -90,7 +90,7 @@ function h(e) {
                 oldFormErrors: true,
                 rejectWithError: false
               }).then(e => {
-                j(e.body.phone)
+                b(e.body.phone)
               }).catch(e => {
                 var t;
                 C(e.message || (null == (t = e.body) ? true : t.message))
@@ -106,7 +106,7 @@ function h(e) {
       setSlide: h,
       showConfirm: true,
       disabled: Z.length !== i.Gz,
-      submitting: b
+      submitting: j
     })]
   })
 }

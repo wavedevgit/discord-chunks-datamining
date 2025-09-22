@@ -798,16 +798,16 @@ let ta = (0, Chunk112724.Z)(tl),
       let e = null != o ? R.Z.getParticipants(o) : [],
         t = null != o ? R.Z.getActivityParticipants(o) : [];
       return e.length - t.length > 0
-    }, [o]), x = (0, z.Z)(), O = (0, p.e7)([eV.Z], () => {
+    }, [o]), x = (0, z.Z)(), j = (0, p.e7)([eV.Z], () => {
       var e;
       return (null != (e = null == x ? true : x.channelId) ? e : eV.Z.getVoiceChannelId()) === (null == c ? true : c.id)
-    }), j = (0, p.e7)([I.ZP], () => null != c ? I.ZP.getSelfEmbeddedActivityForChannel(c.id) : null, [c]), P = (0, p.e7)([eF.Z], () => eF.Z.isConnected()), A = (0, S.Z)(P), M = P && false === A;
+    }), O = (0, p.e7)([I.ZP], () => null != c ? I.ZP.getSelfEmbeddedActivityForChannel(c.id) : null, [c]), P = (0, p.e7)([eF.Z], () => eF.Z.isConnected()), A = (0, S.Z)(P), M = P && false === A;
     i.useEffect(() => {
-      O && M && null != j && null != c && b.Z.selectParticipant(c.id, (0, w.gN)({
-        applicationId: j.applicationId,
-        instanceId: j.compositeInstanceId
+      j && M && null != O && null != c && b.Z.selectParticipant(c.id, (0, w.gN)({
+        applicationId: O.applicationId,
+        instanceId: O.compositeInstanceId
       }))
-    }, [M, c, O, j]);
+    }, [M, c, j, O]);
     let D = (0, p.e7)([I.ZP], () => I.ZP.getCurrentEmbeddedActivity()),
       k = (0, p.e7)([I.ZP], () => I.ZP.getActivityPanelMode()),
       L = null != D && !(0, Z.Z)(null == c ? true : c.id) && k === e8.Ez.PANEL,
@@ -864,7 +864,7 @@ let ta = (0, Chunk112724.Z)(tl),
         channel: e,
         inCurrentVoiceChannel: t
       } = eg.current;
-      null != l && null != e && eu && e.id === l && !t && ((0, eO.Cq)(e), a(null))
+      null != l && null != e && eu && e.id === l && !t && ((0, ej.Cq)(e), a(null))
     }, [l, eu]);
     let ey = (0, E.ts)(c),
       e_ = null != c && c.isPrivate(),

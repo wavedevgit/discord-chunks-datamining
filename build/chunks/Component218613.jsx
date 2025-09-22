@@ -98,7 +98,7 @@ function es(e) {
     isNew: t,
     isBeta: n
   } = e, i = null;
-  returntrue === t ? i = (0, r.jsx)(x.IGR, {
+  returntrue === t ? i = (0, r.jsx)(C.IGR, {
     text: ee.intl.string(ee.t.psHMa2),
     className: et.newBadge,
     color: u.Z.BUTTON_OUTLINE_BRAND_BACKGROUND_HOVER
@@ -113,12 +113,12 @@ function el(e) {
     guildId: n,
     channelType: s,
     description: l
-  } = e, [a, o] = i.useState(""), [c, d] = i.useState({}), h = i.useRef(null), u = (0, p.e7)([H.Z], () => H.Z.getGuild(n)), g = s === q.d4z.GUILD_STAGE_VOICE, {
-    roles: C,
+  } = e, [a, o] = i.useState(""), [c, d] = i.useState({}), h = i.useRef(null), u = (0, p.e7)([H.Z], () => H.Z.getGuild(n)), m = s === W.d4z.GUILD_STAGE_VOICE, {
+    roles: x,
     members: N,
     getRichTag: b
-  } = (0, T.Q)(u, null, g ? R.yP : (0, M.CG)(s), a, g), E = S.Z.useSections({
-    roles: C,
+  } = (0, T.Q)(u, null, m ? U.yP : (0, M.CG)(s), a, m), f = S.Z.useSections({
+    roles: x,
     members: N
   });
   return (i.useEffect(() => {
@@ -129,30 +129,30 @@ function el(e) {
     setQuery: o,
     pendingAdditions: c,
     setPendingAdditions: d,
-    roles: C,
+    roles: x,
     members: N,
     getRichTag: b,
-    children: (0, r.jsxs)(x.hzk, {
+    children: (0, r.jsxs)(C.hzk, {
       className: et.addMembersContainer,
-      children: [null != l && "" !== l ? (0, r.jsx)(x.Text, {
+      children: [null != l && "" !== l ? (0, r.jsx)(C.Text, {
         color: "header-secondary",
         className: et.description,
         variant: "text-sm/normal",
         children: l
       }) : null, (0, r.jsx)(S.Z.SearchBox, {
         placeholderText: ee.intl.string(ee.t.iezLLi)
-      }), (0, r.jsx)(x.Text, {
+      }), (0, r.jsx)(C.Text, {
         className: et.searchHelpText,
         variant: "text-xs/normal",
         children: ee.intl.string(ee.t["rwFx8/"])
-      }), (0, r.jsx)(m._2, {
+      }), (0, r.jsx)(g._2, {
         ref: h,
         className: et.membersList,
         sectionHeight: S.Z.SECTION_HEIGHT,
         renderSection: S.Z.renderSection,
         rowHeight: S.Z.ROW_HEIGHT,
         renderRow: S.Z.renderRow,
-        sections: E,
+        sections: f,
         innerAriaOrientation: "vertical",
         innerRole: "listbox"
       })]
@@ -166,9 +166,9 @@ function ea(e) {
     guildId: n
   } = e, s = i.useRef(null), l = i.useMemo(() => ({
     popoutLocation: {
-      page: q.ZY5.CREATE_CHANNEL_MODAL,
-      section: q.jXE.CHANNEL_NAME,
-      object: q.qAy.EMOJI_PICKER_BUTTON
+      page: W.ZY5.CREATE_CHANNEL_MODAL,
+      section: W.jXE.CHANNEL_NAME,
+      object: W.qAy.EMOJI_PICKER_BUTTON
     }
   }), []), a = i.useCallback(e => {
     let {
@@ -177,7 +177,7 @@ function ea(e) {
     return (0, r.jsx)(D.Z, {
       channel: null,
       guildId: n,
-      pickerIntention: J.Hz.CHANNEL_NAME,
+      pickerIntention: Q.Hz.CHANNEL_NAME,
       closePopout: i,
       onNavigateAway: i,
       onSelectEmoji: e => {
@@ -191,17 +191,17 @@ function ea(e) {
       analyticsOverride: l
     })
   }, [l, n, t]);
-  return (0, r.jsx)(x.yRy, {
+  return (0, r.jsx)(C.yRy, {
     targetElementRef: s,
     renderPopout: a,
-    animation: x.yRy.Animation.NONE,
+    animation: C.yRy.Animation.NONE,
     position: "bottom",
     align: "right",
     children: (e, t) => {
       let {
         isShown: n
       } = t;
-      return (0, r.jsx)(A.Z, ei(er({}, e), {
+      return (0, r.jsx)(_.Z, ei(er({}, e), {
         ref: s,
         active: n,
         className: et.emojiButton,
@@ -234,9 +234,9 @@ class eo extends Chunk647438.PureComponent {
     })
   }
   componentDidUpdate(e, t) {
-    !t.isPrivate && this.state.isPrivate && this.state.channelType === q.d4z.GUILD_ANNOUNCEMENT && this.setState({
-      channelType: q.d4z.GUILD_TEXT
-    }), !t.isPrivate && this.state.isPrivate && f.ZP.trackWithMetadata(q.rMx.OPEN_MODAL, {
+    !t.isPrivate && this.state.isPrivate && this.state.channelType === W.d4z.GUILD_ANNOUNCEMENT && this.setState({
+      channelType: W.d4z.GUILD_TEXT
+    }), !t.isPrivate && this.state.isPrivate && O.ZP.trackWithMetadata(W.rMx.OPEN_MODAL, {
       type: "Create Private Channel"
     })
   }
@@ -320,86 +320,73 @@ class eo extends Chunk647438.PureComponent {
       })]
     })
   }
+  getHelperText() {
+    let {
+      cloneChannel: e,
+      channelType: t,
+      guildId: i
+    } = this.props;
+    return null != module ? Chunk388032.intl.format(Chunk388032.t.s2ZzZW, {
+      name: (0, Chunk933557.F6)(module, Chunk594174.default, Chunk699516.Z, true)
+    }) : exports === Chunk981631.d4z.GUILD_FORUM ? Chunk388032.intl.format(Chunk388032.t.tbVWyc, {
+      forumUpsellHook: (e, t) => (0, r.jsx)(C.eee, {
+        onClick: () => (0, C.ZDy)(async () => {
+          let {
+            default: e
+          } = await n.e("18417").then(n.bind(n, 740696));
+          return t => (0, r.jsx)(e, ei(er({}, t), {
+            guildId: i
+          }))
+        }),
+        children: e
+      }, t)
+    }) : true
+  }
   renderName() {
     let e, {
-        cloneChannel: t,
-        guildId: i
+        guildId: t
       } = this.props,
       {
-        errors: s,
-        channelType: l
+        errors: n,
+        channelType: i
       } = this.state;
-    (null == Chunk120356 ? true : Chunk120356.name) != null && (e = (0, Chunk951288.jsx)(Chunk481060.Text, {
-      variant: "text-xs/normal",
-      color: "text-danger",
-      className: Chunk421835.error,
-      children: Chunk120356.name
-    }));
-    let a = l === Chunk981631.d4z.GUILD_CATEGORY,
-      o = Chunk512722 ? Chunk388032.intl.string(Chunk388032.t.OCAkGB) : Chunk388032.intl.string(Chunk388032.t.PVbHDg),
-      c = null != exports ? (0, Chunk951288.jsx)(Chunk481060.R94, {
-        className: Chunk421835.channelNameNote,
-        type: Chunk481060.R94.Types.DESCRIPTION,
-        children: Chunk388032.intl.format(Chunk388032.t.s2ZzZW, {
-          name: (0, Chunk933557.F6)(exports, Chunk594174.default, Chunk699516.Z, true)
+    (null == require ? true : require.name) != null && (e = Array.isArray(require.name) ? require.name.join(", ") : require.name);
+    let s = Chunk647438 === Chunk981631.d4z.GUILD_CATEGORY,
+      l = Chunk120356 ? Chunk388032.intl.string(Chunk388032.t.OCAkGB) : Chunk388032.intl.string(Chunk388032.t.PVbHDg),
+      a = this.getIconComponent();
+    return (0, Chunk951288.jsx)(Chunk481060.oil, {
+      label: l,
+      helperText: this.getHelperText(),
+      error: module,
+      value: this.state.name,
+      onChange: this.handleNameChange,
+      inputRef: this.setInputRef,
+      maxLength: 100,
+      placeholder: function(e) {
+        switch (e) {
+          case W.d4z.GUILD_CATEGORY:
+            return ee.intl.string(ee.t.eTVbt7);
+          case W.d4z.GUILD_FORUM:
+            return ee.intl.string(ee.t["5z1Xam"]);
+          default:
+            return ee.intl.string(ee.t["bw/b8P"])
+        }
+      }(Chunk647438),
+      leading: Chunk120356 ? true : Chunk512722,
+      trailing: {
+        type: "emoji",
+        button: (0, Chunk951288.jsx)(ea, {
+          onEmojiPicked: this.insertEmojiAtPosition,
+          isPrivateChannel: this.state.isPrivate,
+          guildId: exports
         })
-      }) : l === Chunk981631.d4z.GUILD_FORUM ? (0, Chunk951288.jsx)(Chunk481060.R94, {
-        className: Chunk421835.channelNameNote,
-        type: Chunk481060.R94.Types.DESCRIPTION,
-        children: Chunk388032.intl.format(Chunk388032.t.tbVWyc, {
-          forumUpsellHook: (e, t) => (0, r.jsx)(x.eee, {
-            onClick: () => (0, x.ZDy)(async () => {
-              let {
-                default: e
-              } = await n.e("18417").then(n.bind(n, 740696));
-              return t => (0, r.jsx)(e, ei(er({}, t), {
-                guildId: i
-              }))
-            }),
-            children: e
-          }, t)
-        })
-      }) : null,
-      d = this.getIconComponent();
-    return (0, Chunk951288.jsx)(Chunk313201.FG, {
-      children: t => (0, r.jsxs)(x.xJW, {
-        title: o,
-        htmlFor: t,
-        titleClassName: et.sectionTitle,
-        className: et.name,
-        children: [(0, r.jsx)(x.oil, {
-          id: t,
-          value: this.state.name,
-          onChange: this.handleNameChange,
-          inputRef: this.setInputRef,
-          maxLength: 100,
-          placeholder: function(e) {
-            switch (e) {
-              case q.d4z.GUILD_CATEGORY:
-                return ee.intl.string(ee.t.eTVbt7);
-              case q.d4z.GUILD_FORUM:
-                return ee.intl.string(ee.t["5z1Xam"]);
-              default:
-                return ee.intl.string(ee.t["bw/b8P"])
-            }
-          }(l),
-          leading: a ? true : d,
-          trailing: {
-            type: "emoji",
-            button: (0, r.jsx)(ea, {
-              onEmojiPicked: this.insertEmojiAtPosition,
-              isPrivateChannel: this.state.isPrivate,
-              guildId: i
-            })
-          },
-          autoFocus: true,
-          focusProps: {
-            offset: {
-              right: false
-            }
-          }
-        }, t), e, c]
-      })
+      },
+      autoFocus: true,
+      focusProps: {
+        offset: {
+          right: false
+        }
+      }
     })
   }
   renderType() {
@@ -416,131 +403,128 @@ class eo extends Chunk647438.PureComponent {
     } = this.state;
     if (null != module || Chunk512722 === Chunk981631.d4z.GUILD_CATEGORY) return;
     let c = null != exports && exports.length > 0;
-    return (0, Chunk951288.jsx)(Chunk481060.xJW, {
-      className: Chunk421835.type,
-      title: Chunk388032.intl.string(Chunk388032.t["7ZcXGx"]),
-      children: (0, Chunk951288.jsx)(Chunk755721.Gu, {
-        options: function(e) {
+    return (0, Chunk951288.jsx)(Chunk755721.Gu, {
+      label: Chunk388032.intl.string(Chunk388032.t["7ZcXGx"]),
+      options: function(e) {
+        let {
+          isPrivate: t,
+          showStoreChannelOption: n,
+          showAnnouncementChannelOption: i,
+          canCreateStageChannel: s,
+          canCreateMediaChannel: l
+        } = e, a = [{
+          icon: t ? C.W4G : C.VL1,
+          label: ee.intl.string(ee.t.pnuRXF),
+          value: W.d4z.GUILD_TEXT,
+          description: ee.intl.string(ee.t.Hf5Lb2)
+        }];
+        return a.push({
+          icon: t ? C.gjC : C.gj8,
+          label: ee.intl.string(ee.t.Sx55Oj),
+          value: W.d4z.GUILD_VOICE,
+          description: ee.intl.string(ee.t.pqfkoK)
+        }), a.push({
+          icon: t ? C.BUe : C.Mmi,
+          label: ee.intl.string(ee.t.eAVIDw),
+          value: W.d4z.GUILD_FORUM,
+          description: (0, r.jsxs)(C.Text, {
+            variant: "text-sm/normal",
+            color: "header-secondary",
+            className: et.radioLabelDescription,
+            children: [ee.intl.string(ee.t.iZ5pgo), (0, r.jsx)("br", {}), ee.intl.format(ee.t.fjSvsL, {
+              onClick: () => {
+                open(J.V8)
+              }
+            })]
+          })
+        }), l && a.push({
+          icon: t ? C.D7T : C.XBm,
+          label: ee.intl.string(ee.t["6x6fVl"]),
+          value: W.d4z.GUILD_MEDIA,
+          description: (0, r.jsxs)(C.Text, {
+            variant: "text-sm/normal",
+            color: "header-secondary",
+            className: et.radioLabelDescription,
+            children: [ee.intl.string(ee.t.JyCrwc), (0, r.jsx)("br", {}), ee.intl.format(ee.t.fjSvsL, {
+              onClick: () => {
+                open(q.Z.getCreatorSupportArticleURL(W.BhN.MEDIA_CHANNEL))
+              }
+            })]
+          }),
+          isBeta: true
+        }), i && a.push({
+          icon: C.MqZ,
+          iconSize: 24,
+          label: ee.intl.string(ee.t.qr9dEB),
+          value: W.d4z.GUILD_ANNOUNCEMENT,
+          description: ee.intl.string(ee.t.gBkfzs)
+        }), n && a.push({
+          icon: C.lO_,
+          iconSize: 24,
+          label: ee.intl.string(ee.t.SxjkXV),
+          value: W.d4z.GUILD_STORE,
+          description: ee.intl.string(ee.t.nmCPMD)
+        }), s && a.push({
+          icon: C.ewx,
+          iconSize: 24,
+          label: ee.intl.string(ee.t.pNWst7),
+          value: W.d4z.GUILD_STAGE_VOICE,
+          description: ee.intl.string(ee.t.VPAwgo)
+        }), a.map(e => {
           let {
-            isPrivate: t,
-            showStoreChannelOption: n,
-            showAnnouncementChannelOption: i,
-            canCreateStageChannel: s,
-            canCreateMediaChannel: l
-          } = e, a = [{
-            icon: t ? x.W4G : x.VL1,
-            label: ee.intl.string(ee.t.pnuRXF),
-            value: q.d4z.GUILD_TEXT,
-            description: ee.intl.string(ee.t.Hf5Lb2)
-          }];
-          return a.push({
-            icon: t ? x.gjC : x.gj8,
-            label: ee.intl.string(ee.t.Sx55Oj),
-            value: q.d4z.GUILD_VOICE,
-            description: ee.intl.string(ee.t.pqfkoK)
-          }), a.push({
-            icon: t ? x.BUe : x.Mmi,
-            label: ee.intl.string(ee.t.eAVIDw),
-            value: q.d4z.GUILD_FORUM,
-            description: (0, r.jsxs)(x.Text, {
-              variant: "text-sm/normal",
-              color: "header-secondary",
-              className: et.radioLabelDescription,
-              children: [ee.intl.string(ee.t.iZ5pgo), (0, r.jsx)("br", {}), ee.intl.format(ee.t.fjSvsL, {
-                onClick: () => {
-                  open(Q.V8)
-                }
-              })]
-            })
-          }), l && a.push({
-            icon: t ? x.D7T : x.XBm,
-            label: ee.intl.string(ee.t["6x6fVl"]),
-            value: q.d4z.GUILD_MEDIA,
-            description: (0, r.jsxs)(x.Text, {
-              variant: "text-sm/normal",
-              color: "header-secondary",
-              className: et.radioLabelDescription,
-              children: [ee.intl.string(ee.t.JyCrwc), (0, r.jsx)("br", {}), ee.intl.format(ee.t.fjSvsL, {
-                onClick: () => {
-                  open(W.Z.getCreatorSupportArticleURL(q.BhN.MEDIA_CHANNEL))
-                }
+            icon: t,
+            iconSize: n,
+            label: i,
+            value: s,
+            description: l,
+            isNew: a,
+            isBeta: o
+          } = e;
+          return {
+            name: (0, r.jsxs)("div", {
+              className: et.radioItemName,
+              children: [(0, r.jsx)(t, ei(er({}, null != n ? {
+                width: n,
+                height: n,
+                size: "custom"
+              } : {
+                size: "md"
+              }), {
+                color: "currentColor",
+                className: et.icon,
+                colorClass: et.foreground
+              })), (0, r.jsxs)("div", {
+                children: [(0, r.jsxs)(C.Text, {
+                  variant: "text-md/medium",
+                  className: et.radioLabelName,
+                  children: [i, (0, r.jsx)(es, {
+                    isNew: a,
+                    isBeta: o
+                  })]
+                }), "string" == typeof l ? (0, r.jsx)(C.Text, {
+                  variant: "text-sm/normal",
+                  color: "header-secondary",
+                  className: et.radioLabelDescription,
+                  children: l
+                }) : l]
               })]
             }),
-            isBeta: true
-          }), i && a.push({
-            icon: x.MqZ,
-            iconSize: 24,
-            label: ee.intl.string(ee.t.qr9dEB),
-            value: q.d4z.GUILD_ANNOUNCEMENT,
-            description: ee.intl.string(ee.t.gBkfzs)
-          }), n && a.push({
-            icon: x.lO_,
-            iconSize: 24,
-            label: ee.intl.string(ee.t.SxjkXV),
-            value: q.d4z.GUILD_STORE,
-            description: ee.intl.string(ee.t.nmCPMD)
-          }), s && a.push({
-            icon: x.ewx,
-            iconSize: 24,
-            label: ee.intl.string(ee.t.pNWst7),
-            value: q.d4z.GUILD_STAGE_VOICE,
-            description: ee.intl.string(ee.t.VPAwgo)
-          }), a.map(e => {
-            let {
-              icon: t,
-              iconSize: n,
-              label: i,
-              value: s,
-              description: l,
-              isNew: a,
-              isBeta: o
-            } = e;
-            return {
-              name: (0, r.jsxs)("div", {
-                className: et.radioItemName,
-                children: [(0, r.jsx)(t, ei(er({}, null != n ? {
-                  width: n,
-                  height: n,
-                  size: "custom"
-                } : {
-                  size: "md"
-                }), {
-                  color: "currentColor",
-                  className: et.icon,
-                  colorClass: et.foreground
-                })), (0, r.jsxs)("div", {
-                  children: [(0, r.jsxs)(x.Text, {
-                    variant: "text-md/medium",
-                    className: et.radioLabelName,
-                    children: [i, (0, r.jsx)(es, {
-                      isNew: a,
-                      isBeta: o
-                    })]
-                  }), "string" == typeof l ? (0, r.jsx)(x.Text, {
-                    variant: "text-sm/normal",
-                    color: "header-secondary",
-                    className: et.radioLabelDescription,
-                    children: l
-                  }) : l]
-                })]
-              }),
-              value: s,
-              radioBarClassName: et.radioBar,
-              radioItemIconClassName: et.radioBarIcon
-            }
-          })
-        }({
-          isPrivate: o,
-          showStoreChannelOption: require && Chunk392711,
-          showAnnouncementChannelOption: Chunk647438,
-          canCreateStageChannel: Chunk120356,
-          canCreateMediaChannel: l
-        }),
-        value: Chunk512722,
-        size: Chunk755721.l7.NOT_SET,
-        onChange: this.handleTypeChange,
-        itemInfoClassName: Chunk421835.radioBarLabel
-      })
+            value: s,
+            radioBarClassName: et.radioBar,
+            radioItemIconClassName: et.radioBarIcon
+          }
+        })
+      }({
+        isPrivate: o,
+        showStoreChannelOption: require && Chunk392711,
+        showAnnouncementChannelOption: Chunk647438,
+        canCreateStageChannel: Chunk120356,
+        canCreateMediaChannel: l
+      }),
+      value: Chunk512722,
+      size: Chunk755721.l7.NOT_SET,
+      onChange: this.handleTypeChange,
+      itemInfoClassName: Chunk421835.radioBarLabel
     })
   }
   renderStoreOptions() {
@@ -614,19 +598,17 @@ class eo extends Chunk647438.PureComponent {
     if (null != module || exports === Chunk981631.d4z.GUILD_ANNOUNCEMENT) return null;
     let i = exports === Chunk981631.d4z.GUILD_CATEGORY ? Chunk388032.intl.string(Chunk388032.t.lEPAZ2) : Chunk388032.intl.string(Chunk388032.t.aUI70t),
       s = exports === Chunk981631.d4z.GUILD_CATEGORY ? Chunk388032.intl.string(Chunk388032.t["RQUk6+"]) : Chunk388032.intl.string(Chunk388032.t.YguuKi);
-    return (0, Chunk951288.jsx)(Chunk481060.xJW, {
-      children: (0, Chunk951288.jsxs)(Chunk481060.j7V, {
-        hideBorder: true,
-        onChange: this.handlePrivacyChange,
-        value: require,
-        note: Chunk120356,
-        children: [(0, Chunk951288.jsx)(Chunk481060.mBM, {
-          size: "md",
-          color: "currentColor",
-          className: Chunk421835.switchIcon
-        }), Chunk647438]
-      })
-    }, "privacy-switch")
+    return (0, Chunk951288.jsxs)(Chunk481060.j7V, {
+      hideBorder: true,
+      onChange: this.handlePrivacyChange,
+      value: require,
+      note: Chunk120356,
+      children: [(0, Chunk951288.jsx)(Chunk481060.mBM, {
+        size: "md",
+        color: "currentColor",
+        className: Chunk421835.switchIcon
+      }), Chunk647438]
+    })
   }
   renderError(e) {
     let t, {
@@ -649,8 +631,8 @@ class eo extends Chunk647438.PureComponent {
       className: l()(et.createError, {
         [et.addMemberError]: e
       }),
-      children: (0, r.jsx)(x.Wn, {
-        messageType: x.QYI.ERROR,
+      children: (0, r.jsx)(C.Wn, {
+        messageType: C.QYI.ERROR,
         children: t
       })
     })
@@ -735,13 +717,16 @@ class eo extends Chunk647438.PureComponent {
       guildId: t
     } = this.props;
     return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-      children: [this.renderHeader(), (0, Chunk951288.jsxs)(Chunk481060.hzk, {
+      children: [this.renderHeader(), (0, Chunk951288.jsx)(Chunk481060.hzk, {
         className: Chunk421835.modalContent,
-        children: [this.renderType(), this.renderName(), module === Chunk981631.d4z.GUILD_STORE ? this.renderStoreOptions() : null, (0, Chunk951288.jsx)(Chunk636816.Z, {
-          guildId: exports,
-          channelType: module,
-          className: Chunk421835.channelTypeDescription
-        }), module === Chunk981631.d4z.GUILD_STAGE_VOICE ? null : this.renderPrivacyOptions()]
+        children: (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+          gap: 20,
+          children: [this.renderType(), this.renderName(), module === Chunk981631.d4z.GUILD_STORE ? this.renderStoreOptions() : null, (0, Chunk951288.jsx)(Chunk636816.Z, {
+            guildId: exports,
+            channelType: module,
+            className: Chunk421835.channelTypeDescription
+          }), module === Chunk981631.d4z.GUILD_STAGE_VOICE ? null : this.renderPrivacyOptions()]
+        })
       }), this.renderError(), this.renderFooter()]
     })
   }
@@ -828,7 +813,7 @@ class eo extends Chunk647438.PureComponent {
     })
   }
   constructor(e) {
-    super(e), en(this, "headerId", (0, _.hQ)()), en(this, "_input", true), en(this, "setInputRef", e => {
+    super(e), en(this, "headerId", (0, A.hQ)()), en(this, "_input", true), en(this, "setInputRef", e => {
       this._input = e
     }), en(this, "handleNameChange", e => {
       var t, n;
@@ -862,7 +847,7 @@ class eo extends Chunk647438.PureComponent {
       } = e, {
         name: n
       } = this.state;
-      M.xL.has(t) && (n = (0, X.Nj)(n)), t === q.d4z.GUILD_STAGE_VOICE && this.setState({
+      M.xL.has(t) && (n = (0, X.Nj)(n)), t === W.d4z.GUILD_STAGE_VOICE && this.setState({
         isPrivate: false
       }), this.setState({
         channelType: t,
@@ -907,27 +892,27 @@ class eo extends Chunk647438.PureComponent {
       } = this.props, {
         name: u,
         pendingPermissionOverwrites: p,
-        channelType: m,
-        skuId: g,
-        branchId: x,
+        channelType: g,
+        skuId: m,
+        branchId: C,
         isPrivate: N
       } = this.state, b = this.getGuildId();
       if (null != b) {
         if (null != i) t = d().values(i.permissionOverwrites), n = i.bitrate, r = i.userLimit;
-        else if (m === q.d4z.GUILD_ANNOUNCEMENT) t = (0, X.rt)(b);
+        else if (g === W.d4z.GUILD_ANNOUNCEMENT) t = (0, X.rt)(b);
         else {
           if (N) {
-            t = (0, X.oQ)(b, m, [], true);
-            let e = (0, y.Tj)(p, m);
+            t = (0, X.oQ)(b, g, [], true);
+            let e = (0, y.Tj)(p, g);
             e.length > 0 && (t = t.concat(e));
             let n = null != h && l.id === h.id;
-            t.some(e => a.has(e.id)) || o || n || t.push((0, X.jZ)(l.id, m))
+            t.some(e => a.has(e.id)) || o || n || t.push((0, X.jZ)(l.id, g))
           }
-          m === q.d4z.GUILD_STAGE_VOICE && (t = [], Object.values(p).forEach(e => {
+          g === W.d4z.GUILD_STAGE_VOICE && (t = [], Object.values(p).forEach(e => {
             let {
               row: n
             } = e;
-            null != n.id && "" !== n.id && (n.rowType === K.aC.ROLE ? t.push((0, Z.A)(n.id, O.BN.ROLE)) : n.rowType === K.aC.MEMBER && t.push((0, Z.A)(n.id, O.BN.MEMBER)))
+            null != n.id && "" !== n.id && (n.rowType === K.aC.ROLE ? t.push((0, Z.A)(n.id, E.BN.ROLE)) : n.rowType === K.aC.MEMBER && t.push((0, Z.A)(n.id, E.BN.MEMBER)))
           }))
         }
         this.setState({
@@ -935,22 +920,22 @@ class eo extends Chunk647438.PureComponent {
           submitting: true
         });
         try {
-          let e = await C.Z.createChannel({
+          let e = await x.Z.createChannel({
             guildId: b,
-            type: m,
+            type: g,
             name: u,
             permissionOverwrites: t,
             bitrate: n,
             userLimit: r,
-            parentId: m !== q.d4z.GUILD_CATEGORY ? s : null,
-            skuId: g,
-            branchId: x
+            parentId: g !== W.d4z.GUILD_CATEGORY ? s : null,
+            skuId: m,
+            branchId: C
           });
           if (null == e || 201 !== e.status) return void this.setState({
             submitting: false
           });
           let i = e.body;
-          M.xL.has(m) && (0, G.XU)(i.guild_id, i.id), this.setState({
+          M.xL.has(g) && (0, G.XU)(i.guild_id, i.id), this.setState({
             submitting: false
           }), c()
         } catch (e) {
@@ -972,7 +957,7 @@ class eo extends Chunk647438.PureComponent {
       prefillChannelName: r
     } = e;
     this.state = {
-      channelType: null != t ? t : q.d4z.GUILD_TEXT,
+      channelType: null != t ? t : W.d4z.GUILD_TEXT,
       name: null != n ? (0, I.F6)(n, F.default, V.Z) : null != r ? r : "",
       pendingPermissionOverwrites: {},
       isPrivate: false,
@@ -999,32 +984,32 @@ let ec = Chunk647438.forwardRef(function(e, t) {
       a = F.default.getCurrentUser();
     o()(null != a, "CreateChannel: user cannot be undefined");
     let c = null != l && null != l.ownerId ? F.default.getUser(l.ownerId) : null,
-      d = k.Z.can(q.Plq.ADMINISTRATOR, l),
+      d = k.Z.can(W.Plq.ADMINISTRATOR, l),
       h = z.Z.getChannel(s);
     return {
       guild: l,
-      canCreateStoreChannel: null != l && l.features.has(q.oNc.COMMERCE),
-      canCreateAnnouncementChannel: null != l && l.features.has(q.oNc.NEWS),
+      canCreateStoreChannel: null != l && l.features.has(W.oNc.COMMERCE),
+      canCreateAnnouncementChannel: null != l && l.features.has(W.oNc.NEWS),
       user: a,
       owner: c,
       memberRoles: null != (t = null == (e = B.ZP.getMember(i, a.id)) ? true : e.roles) ? t : [],
-      canViewChannels: k.Z.can(q.Plq.VIEW_CHANNEL, l),
-      canConnect: k.Z.can(q.Plq.CONNECT, l),
+      canViewChannels: k.Z.can(W.Plq.VIEW_CHANNEL, l),
+      canConnect: k.Z.can(W.Plq.CONNECT, l),
       isAdmin: d,
       cloneChannel: h,
       channelType: null != (r = null == h ? true : h.type) ? r : n,
-      canManageRoles: k.Z.can(q.Plq.MANAGE_ROLES, l),
-      canManageChannels: k.Z.can(q.Plq.MANAGE_CHANNELS, l)
+      canManageRoles: k.Z.can(W.Plq.MANAGE_ROLES, l),
+      canManageChannels: k.Z.can(W.Plq.MANAGE_CHANNELS, l)
     }
   }), a = (0, p.Wu)([j.Z], () => j.Z.getGuildApplicationIds(i).map(e => j.Z.getApplication(e)).filter(Y.lm)), c = new Set(l.memberRoles), {
     canManageRoles: d,
     canManageChannels: h
-  } = l, u = (0, U.m)(i) && d && h, m = (0, w.Ui)(null == l ? true : l.guild);
+  } = l, u = (0, R.m)(i) && d && h, g = (0, w.Ui)(null == l ? true : l.guild);
   return (0, r.jsx)(eo, ei(er({}, e, l), {
     memberRoleIds: c,
     applications: a,
     canCreateStageChannel: u,
-    canCreateMediaChannel: m,
+    canCreateMediaChannel: g,
     ref: t,
     width: 496
   }))

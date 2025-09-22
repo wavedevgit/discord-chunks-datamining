@@ -47,8 +47,8 @@ function _(e) {
     exitFullScreen: C,
     appContext: v,
     analyticsLocation: x,
-    guildScheduledEvent: O,
-    shouldPrioritizeGroupPlusIcon: j = false,
+    guildScheduledEvent: j,
+    shouldPrioritizeGroupPlusIcon: O = false,
     isRichPresenceInvite: E = false,
     iconClassName: S,
     look: I,
@@ -77,7 +77,7 @@ function _(e) {
     R = null == _ ? true : _.getGuildId(),
     M = (0, a.e7)([p.Z], () => null != R ? p.Z.getGuild(R) : null, [R]),
     D = (0, a.e7)([h.Z], () => null != t ? h.Z.getApplicationActivity(t) : true),
-    k = null == t || j ? o.ejJ : o.gQj,
+    k = null == t || O ? o.ejJ : o.gQj,
     L = null != t ? b.intl.string(b.t["OzOM/v"]) : b.intl.string(b.t["6F9ivr"]);
   return null != D && E ? (0, r.jsx)(m.Z, {
     onClick: () => {
@@ -141,7 +141,7 @@ function _(e) {
           appContext: null != v ? v : A,
           exitFullScreen: C,
           analyticsLocation: x,
-          guildScheduledEvent: O
+          guildScheduledEvent: j
         })
     },
     iconComponent: k,

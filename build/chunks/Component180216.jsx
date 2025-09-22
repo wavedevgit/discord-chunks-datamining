@@ -25,7 +25,7 @@ function b(e) {
   } = e, b = (0, u.C)({
     guildId: t,
     channelId: n
-  }), y = (0, c.GG)(t), _ = (0, c.YB)(t), C = (0, l.e7)([s.Z], () => s.Z.getGuild(t), [t]), v = null == C ? true : C.name, x = (0, l.e7)([o.Z], () => o.Z.getChannel(n)), O = i.useMemo(() => {
+  }), y = (0, c.GG)(t), _ = (0, c.YB)(t), C = (0, l.e7)([s.Z], () => s.Z.getGuild(t), [t]), v = null == C ? true : C.name, x = (0, l.e7)([o.Z], () => o.Z.getChannel(n)), j = i.useMemo(() => {
     let e = {};
     for (let t of y)
       for (let n of t.subscription_listings_ids) e[n] = t.id;
@@ -56,10 +56,10 @@ function b(e) {
       children: null == _ ? true : _.description
     }), (0, r.jsx)(p.Z, {
       guildId: t,
-      children: b.filter(e => null != O[e.id]).map(e => (0, r.jsx)(h.Z, {
+      children: b.filter(e => null != j[e.id]).map(e => (0, r.jsx)(h.Z, {
         guildId: t,
         listingId: e.id,
-        groupListingId: O[e.id],
+        groupListingId: j[e.id],
         analyticsLocation: f.Sbl.ROLE_SUBSCRIPTION_GATED_CHANNEL
       }, e.id))
     })]

@@ -34,30 +34,30 @@ let N = Chunk442837.ZP.connectStores([Chunk55563.Z, Chunk812206.Z, Chunk509545.Z
     sku: n,
     subscriptionPlan: null != r ? (0, _.oE)(r) : null,
     application: c.Z.getApplication(n.applicationId),
-    gifter: g.default.getUser(t.userId)
+    gifter: m.default.getUser(t.userId)
   }
 })(e => {
   let {
     error: t,
     giftCode: n,
     gifter: l,
-    sku: a,
+    sku: o,
     application: c,
-    subscriptionPlan: g
-  } = e, m = null == l ? v.intl.string(v.t.lTGZAg) : v.intl.formatToPlainString(v.t.TjWdPT, {
+    subscriptionPlan: m
+  } = e, p = null == l ? v.intl.string(v.t.lTGZAg) : v.intl.formatToPlainString(v.t.TjWdPT, {
     username: l.username
-  }), f = a.name;
-  return null != g && (f = v.intl.formatToPlainString(g.interval === E.rV.MONTH ? v.t.CTpcCQ : v.t.rgPWGx, {
-    skuName: a.name,
-    intervalCount: g.intervalCount
+  }), f = o.name;
+  return null != m && (f = v.intl.formatToPlainString(m.interval === E.rV.MONTH ? v.t.CTpcCQ : v.t.rgPWGx, {
+    skuName: o.name,
+    intervalCount: m.intervalCount
   })), (0, r.jsxs)(i.Fragment, {
-    children: [null != n.giftStyle ? (0, r.jsx)(p.Z, {
+    children: [null != n.giftStyle ? (0, r.jsx)(g.Z, {
       defaultAnimationState: h.SR.LOOP,
       giftStyle: n.giftStyle,
-      className: j.seasonalIcon
+      className: b.seasonalIcon
     }) : (0, r.jsx)(u.qE, {
       src: null != l ? l.getAvatarURL(true, 100) : null,
-      size: o.EFr.DEPRECATED_SIZE_100,
+      size: a.EFr.DEPRECATED_SIZE_100,
       className: I.marginBottom20
     }), null != t ? (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(u.DK, {
@@ -67,14 +67,14 @@ let N = Chunk442837.ZP.connectStores([Chunk55563.Z, Chunk812206.Z, Chunk509545.Z
       })]
     }) : (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(u.DK, {
-        children: m
+        children: p
       }), (0, r.jsxs)(u.Dx, {
-        className: s()(I.marginTop8, b.flexCenter),
-        children: [a.productLine !== x.POd.COLLECTIBLES && (0, r.jsx)(d.Z, {
+        className: s()(I.marginTop8, j.flexCenter),
+        children: [o.productLine !== x.POd.COLLECTIBLES && (0, r.jsx)(d.Z, {
           size: d.A.MEDIUM,
-          className: j.applicationIcon,
+          className: b.applicationIcon,
           game: c,
-          skuId: a.id
+          skuId: o.id
         }), f]
       })]
     })]

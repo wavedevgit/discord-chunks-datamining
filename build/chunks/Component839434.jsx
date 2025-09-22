@@ -106,12 +106,12 @@ function eo(e) {
     context: f,
     guildId: g,
     voiceState: m
-  } = e, y = (0, q.Z)({
+  } = e, y = (0, J.Z)({
     location: "overlay_voice_widget"
   }), v = (0, a.e7)([B.default], () => B.default.showKeybindIndicators), _ = (0, a.e7)([A.default], () => A.default.getId()), b = (0, a.e7)([z.Z], () => z.Z.isLocalMute(i.id)), E = (0, a.e7)([R.Z], () => R.Z.getCurrentUserActiveStream()), S = (0, a.Wu)([R.Z], () => null != E ? R.Z.getViewerIds(E) : []), x = (0, O.Z)({
     userId: i.id,
     context: f
-  }), j = (0, a.e7)([W.Z], () => W.Z.isPrioritySpeaker(i.id, f)), Z = (0, a.e7)([R.Z], () => null != R.Z.getStreamForUser(i.id, g)), C = l.useMemo(() => null != E && E.ownerId !== i.id && S.includes(i.id), [E, i.id, S]);
+  }), Z = (0, a.e7)([W.Z], () => W.Z.isPrioritySpeaker(i.id, f)), j = (0, a.e7)([R.Z], () => null != R.Z.getStreamForUser(i.id, g)), C = l.useMemo(() => null != E && E.ownerId !== i.id && S.includes(i.id), [E, i.id, S]);
   if (d === $.OYC.ONLY_WHILE_SPEAKING && n && !x) return null;
   let I = i.id === _,
     {
@@ -136,14 +136,14 @@ function eo(e) {
       nick: o,
       speaking: false,
       flipped: t,
-      isStreaming: Z,
+      isStreaming: j,
       iconClassName: s()(en.voiceIcon, {
         [en.locked]: n
       }),
       isWatching: C,
       isOverlay: true,
       size: u,
-      priority: j,
+      priority: Z,
       mute: P || L || b,
       localMute: b,
       serverMute: P || N,
@@ -342,7 +342,7 @@ class es extends(i = Chunk647438.PureComponent) {
     (0, Chunk906037.m3)(this.props, this.shouldDisplay())
   }
   componentDidUpdate(e) {
-    (0, J.CR)(e, this.props, this.shouldDisplay)
+    (0, Q.CR)(e, this.props, this.shouldDisplay)
   }
   shouldDisplay() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : this.props,
@@ -446,7 +446,7 @@ function ea(e) {
         return null == e ? [
           [], false
         ] : e.isGuildStageVoice() ? [w.Z.getMutableParticipants(e.id, N.pV.SPEAKER), w.Z.getParticipantsVersion(e.id)] : [G.ZP.getVoiceStatesForChannel(e), G.ZP.getVoiceStateVersion(e.getGuildId())]
-      }, [], H.Q), t = (0, a.e7)([A.default], () => A.default.getId()), n = (0, q.Z)({
+      }, [], H.Q), t = (0, a.e7)([A.default], () => A.default.getId()), n = (0, J.Z)({
         location: "voice_widget"
       });
       return l.useMemo(() => n ? [...e].sort((e, n) => e.user.id === t ? false : +(n.user.id === t)) : e, [e, t, n])

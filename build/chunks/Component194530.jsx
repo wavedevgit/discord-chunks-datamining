@@ -65,42 +65,37 @@ function _(e) {
       })]
     }), (0, r.jsxs)("form", {
       onSubmit: x,
-      children: [(0, r.jsxs)(o.hzk, {
+      children: [(0, r.jsx)(o.hzk, {
         className: f.content,
-        children: [(0, r.jsx)(o.oil, {
-          label: d.intl.string(d.t.WBqMRU),
-          error: null == P || null == (t = P.password) ? true : t[0],
-          type: "password",
-          value: y,
-          onChange: O,
-          inputRef: D,
-          autoComplete: "current-password",
-          required: true
-        }), (0, r.jsx)(o.xJW, {
-          className: f.newPassword,
-          title: d.intl.string(d.t["8dM4FB"]),
-          error: null != (p = null != (_ = null == P || null == (n = P.new_password) ? true : n[0]) ? _ : A) ? p : true,
-          required: true,
-          children: (0, r.jsx)(o.oil, {
+        children: (0, r.jsxs)(o.Kqy, {
+          gap: 20,
+          children: [(0, r.jsx)(o.oil, {
+            label: d.intl.string(d.t.WBqMRU),
+            error: null == P || null == (t = P.password) ? true : t[0],
+            type: "password",
+            value: y,
+            onChange: O,
+            inputRef: D,
+            autoComplete: "current-password",
+            required: true
+          }), (0, r.jsx)(o.oil, {
+            label: d.intl.string(d.t["8dM4FB"]),
+            error: null != (p = null != (_ = null == P || null == (n = P.new_password) ? true : n[0]) ? _ : A) ? p : true,
             type: "password",
             value: v,
             onChange: I,
             autoComplete: "new-password",
             required: true
-          })
-        }), (0, r.jsx)(o.xJW, {
-          className: f.newPassword,
-          title: d.intl.string(d.t.iQG2KC),
-          error: null != N ? N : true,
-          required: true,
-          children: (0, r.jsx)(o.oil, {
+          }), (0, r.jsx)(o.oil, {
+            label: d.intl.string(d.t.iQG2KC),
+            error: null != N ? N : true,
             type: "password",
             value: T,
             onChange: S,
             autoComplete: "new-password",
             required: true
-          })
-        })]
+          })]
+        })
       }), (0, r.jsxs)(o.mzw, {
         children: [(0, r.jsx)(o.zxk, {
           variant: "primary",

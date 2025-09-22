@@ -127,13 +127,13 @@ function et(e) {
     eg = et.length > 0 && (null == (t = et.first()) ? true : t.isFirstMessageInForumPost(U)),
     eb = (0, s.ts)(U),
     ey = (0, l.e7)([E.Z], () => E.Z.shouldShowTopicsBar() && !ed),
-    e_ = (0, O.P)(U.id),
+    e_ = (0, j.P)(U.id),
     eC = (0, v.z)(U.id, X.zr),
     ev = (0, d.k)(U.id),
     ex = (0, k.Z)(),
-    eO = function(e, t) {
+    ej = function(e, t) {
       if (e.isDM() && null != t)
-        if (t.type === C.pj.STRANGER_DANGER) return (0, r.jsx)(j.M, {
+        if (t.type === C.pj.STRANGER_DANGER) return (0, r.jsx)(O.M, {
           channelId: e.id,
           warningId: t.id,
           senderId: e.getRecipientId()
@@ -150,7 +150,7 @@ function et(e) {
       });
       return null
     }(U, null != (n = null != e_ ? e_ : eC) ? n : ev),
-    ej = U.isForumPost() && !eg ? (0, r.jsx)(m.Z, {
+    eO = U.isForumPost() && !eg ? (0, r.jsx)(m.Z, {
       postId: U.id
     }) : null,
     eE = (0, b.Z)(U.id),
@@ -385,7 +385,7 @@ function et(e) {
     channelStreamMarkup: eP,
     newMessagesBar: i,
     jumpToPresentBar: h,
-    forumPostActionBar: ej,
-    safetyWarningBanner: eO
+    forumPostActionBar: eO,
+    safetyWarningBanner: ej
   }
 }

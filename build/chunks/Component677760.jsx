@@ -1,7 +1,7 @@
 /** Chunk was on 27978 **/
 /** chunk id: 677760, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => w
+  Z: () => L
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -45,7 +45,7 @@ function O(e) {
   return e
 }
 
-function y(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -58,7 +58,7 @@ function y(e, t) {
   }), e
 }
 
-function S() {
+function y() {
   return (0, Chunk951288.jsx)("div", {
     className: Chunk271922.centerFlex,
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {})
@@ -69,18 +69,18 @@ let C = e => {
   if (null == e || null == e.state || t) return 0;
   let n = e.state;
   switch (n) {
-    case b.r2o.RESOLVED:
-    case b.r2o.ACCEPTED:
-    case b.r2o.APP_NOT_OPENED:
-    case b.r2o.APP_OPENED:
-    case b.r2o.ACCEPTING:
-    case b.r2o.APP_OPENING:
+    case j.r2o.RESOLVED:
+    case j.r2o.ACCEPTED:
+    case j.r2o.APP_NOT_OPENED:
+    case j.r2o.APP_OPENED:
+    case j.r2o.ACCEPTING:
+    case j.r2o.APP_OPENING:
       return 1;
-    case b.r2o.EXPIRED:
-    case b.r2o.BANNED:
-    case b.r2o.ERROR:
+    case j.r2o.EXPIRED:
+    case j.r2o.BANNED:
+    case j.r2o.ERROR:
       return 2;
-    case b.r2o.RESOLVING:
+    case j.r2o.RESOLVING:
       return 0;
     default:
       (0, _.vE)(n)
@@ -92,7 +92,7 @@ function A(e) {
     invite: t,
     onAcceptInvite: n
   } = e;
-  return (null == t ? true : t.state) === b.r2o.BANNED ? (0, r.jsx)(c.u, {
+  return (null == t ? true : t.state) === j.r2o.BANNED ? (0, r.jsx)(c.u, {
     text: I.intl.string(I.t["5AkWAQ"]),
     buttonCta: I.intl.string(I.t["8osdkp"]),
     onClick: n
@@ -108,7 +108,7 @@ function T(e) {
     children: t,
     cardChildren: n,
     startAnimHeightPx: s,
-    innerStyle: o
+    innerStyle: a
   } = e;
   let {
     invite: c
@@ -127,10 +127,10 @@ function T(e) {
     }
     return i
   }(e, ["children", "cardChildren", "startAnimHeightPx", "innerStyle"]), [d, h] = i.useState(C(c)), {
-    ref: p,
-    height: g
-  } = (0, u.ZP)(), m = (0, a.q_F)({
-    height: null != g && 0 !== g ? "".concat(g, "px") : "".concat(s, "px"),
+    ref: g,
+    height: m
+  } = (0, u.ZP)(), p = (0, o.q_F)({
+    height: null != m && 0 !== m ? "".concat(m, "px") : "".concat(s, "px"),
     config: l.config.stiff
   });
   return i.useEffect(() => {
@@ -138,34 +138,34 @@ function T(e) {
     e !== d && h(e)
   }, [c, d]), (0, r.jsxs)(l.animated.div, {
     className: N.inviteCard,
-    style: m,
+    style: p,
     children: [(0, r.jsx)(l.animated.div, {
       className: N.inviteChildContainer,
-      style: m,
+      style: p,
       children: (0, r.jsx)("section", {
-        ref: p,
-        className: null == o ? true : o(d),
+        ref: g,
+        className: null == a ? true : a(d),
         children: t(d)
       })
     }), n]
   })
 }
 
-function Z(e) {
+function P(e) {
   let {
     invite: t
   } = e;
-  return null != t && (0, E.JI)(t) ? (0, r.jsx)(T, y(O({
+  return null != t && (0, E.JI)(t) ? (0, r.jsx)(T, S(O({
     startAnimHeightPx: 0,
     innerStyle: () => N.guildInfoInner
   }, e), {
-    children: e => null == t ? null : 1 === e ? (0, r.jsx)(j.X, {
+    children: e => null == t ? null : 1 === e ? (0, r.jsx)(b.X, {
       invite: t
     }) : null
   })) : null
 }
 
-function P(e) {
+function Z(e) {
   let {
     invite: t
   } = e, n = {
@@ -173,23 +173,23 @@ function P(e) {
     2: N.inviteCardInnerError,
     0: N.inviteCardInnerLoading
   };
-  return (0, r.jsx)(T, y(O({
+  return (0, r.jsx)(T, S(O({
     startAnimHeightPx: 200,
     innerStyle: e => n[e]
   }, e), {
     children: n => (n => {
-      if (null == t) return (0, r.jsx)(S, {});
+      if (null == t) return (0, r.jsx)(y, {});
       switch (n) {
         case 1:
-          return (0, r.jsx)(v.Z, y(O({}, e), {
+          return (0, r.jsx)(v.Z, S(O({}, e), {
             invite: t
           }));
         case 2:
-          return (0, r.jsx)(A, y(O({}, e), {
+          return (0, r.jsx)(A, S(O({}, e), {
             invite: t
           }));
         default:
-          return (0, r.jsx)(S, {})
+          return (0, r.jsx)(y, {})
       }
     })(n)
   }))
@@ -210,25 +210,25 @@ function R(e) {
     null != e && (l.backgroundImage = "url(".concat(e, ")"), l.backgroundSize = "cover")
   }
   return (0, r.jsxs)(d.ZP, {
-    theme: b.BRd.DARK,
+    theme: j.BRd.DARK,
     className: N.splashBackground,
     style: l,
     contentClassName: N.centerAuthBoxContent,
-    children: [(0, r.jsx)(P, y(O({}, e), {
+    children: [(0, r.jsx)(Z, S(O({}, e), {
       onAcceptInvite: n
-    })), (0, r.jsx)(Z, O({}, e))]
+    })), (0, r.jsx)(P, O({}, e))]
   })
 }
 
-function w(e) {
+function L(e) {
   let {
     inviteKey: t,
     transitionTo: n
-  } = e, l = (0, s.e7)([g.Z], () => g.Z.getInvite(t));
+  } = e, l = (0, s.e7)([m.Z], () => m.Z.getInvite(t));
   return i.useEffect(() => {
     (0, h.e)("invite_mobile")
   }, []), i.useEffect(() => {
-    null != l && l.state === b.r2o.RESOLVED && m.default.track(b.rMx.INVITE_VIEWED, {
+    null != l && l.state === j.r2o.RESOLVED && p.default.track(j.rMx.INVITE_VIEWED, {
       invite_code: t,
       friends_count: null == l ? true : l.friends_count
     }, {
@@ -239,17 +239,17 @@ function w(e) {
     onAcceptInvite: e => {
       ! function(e, t, n) {
         var r, i, l;
-        null == e || e.preventDefault(), m.default.track(b.rMx.INVITE_APP_OPENED, {
+        null == e || e.preventDefault(), p.default.track(j.rMx.INVITE_APP_OPENED, {
           invite_code: (0, x.jX)(t),
           guild_id: null == n || null == (r = n.guild) ? true : r.id,
           channel_id: null == n || null == (i = n.channel) ? true : i.id,
           inviter_id: null == n || null == (l = n.inviter) ? true : l.id
         });
-        let s = null != n && n.state !== b.r2o.EXPIRED && n.state !== b.r2o.BANNED ? t : true,
-          a = p.default.getFingerprint(),
-          c = null != a ? a : p.default.getId(),
+        let s = null != n && n.state !== j.r2o.EXPIRED && n.state !== j.r2o.BANNED ? t : true,
+          o = g.default.getFingerprint(),
+          c = null != o ? o : g.default.getId(),
           u = null != n && (null == n ? true : n.type) != null ? Number(null == n ? true : n.type) : true;
-        o.ZP.openApp(s, true, c, true, u)
+        a.ZP.openApp(s, true, c, true, u)
       }(e, t, l)
     },
     transitionTo: n

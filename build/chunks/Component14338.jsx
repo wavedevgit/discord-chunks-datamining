@@ -59,9 +59,9 @@ function _(e) {
     newestAnalyticsLocation: C
   } = (0, d.ZP)(), v = (0, u.bp)(), {
     reducedMotion: x
-  } = i.useContext(o.Sfi), O = (0, c.Z)({
+  } = i.useContext(o.Sfi), j = (0, c.Z)({
     userId: l.id
-  }), j = null != l.member ? (0, m.CA)(l.member) : null, E = e => {
+  }), O = null != l.member ? (0, m.CA)(l.member) : null, E = e => {
     (0, s.jW)(e, async () => {
       let {
         default: e
@@ -96,11 +96,11 @@ function _(e) {
         },
         onContextMenu: E,
         children: (0, r.jsx)(o.qEK, {
-          src: null != j ? j : l.user.getAvatarURL(t.guild_id, 24),
+          src: null != O ? O : l.user.getAvatarURL(t.guild_id, 24),
           size: o.EFr.SIZE_24,
           className: a()(g.avatar, f),
           "aria-label": l.userNick,
-          isSpeaking: O && !x.enabled
+          isSpeaking: j && !x.enabled
         })
       }))
     })

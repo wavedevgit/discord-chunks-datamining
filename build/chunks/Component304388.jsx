@@ -75,17 +75,17 @@ let p = Chunk647438.forwardRef(function(e, t) {
   } = e, [_, C] = i.useState(false), {
     isHovered: v,
     setIsHovered: x,
-    onMouseEnter: O,
-    onMouseLeave: j,
+    onMouseEnter: j,
+    onMouseLeave: O,
     cancelTimers: E
   } = (0, o.Z)(200, 300);
 
   function S(e) {
-    "focus" === e.type || _ || O()
+    "focus" === e.type || _ || j()
   }
 
   function I() {
-    _ || j()
+    _ || O()
   }
 
   function P(e) {
@@ -112,7 +112,7 @@ let p = Chunk647438.forwardRef(function(e, t) {
     renderPopout: e => (0, r.jsx)(d, u({
       isHovered: Z,
       onFocus: () => C(true),
-      onMouseEnter: O,
+      onMouseEnter: j,
       onMouseLeave: I,
       renderPopout: n
     }, e)),

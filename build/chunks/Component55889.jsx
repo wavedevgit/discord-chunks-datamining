@@ -67,7 +67,7 @@ let m = Chunk647438.memo(function(e) {
     })),
     placeholder: o.intl.string(o.t.aFO1Iy),
     disableEveryoneRole: true
-  })), (0, r.jsxs)(l.xJW, {
+  })), (0, r.jsxs)("div", {
     children: [m, (0, r.jsx)(l.Text, {
       color: "header-secondary",
       variant: "text-xs/normal",

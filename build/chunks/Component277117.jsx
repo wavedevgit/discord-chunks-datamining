@@ -90,12 +90,12 @@ function w(e) {
         applicationId: e.applicationId,
         channelId: R.id
       })
-    }, e.applicationId)), (0, r.jsx)(O.Z, {
+    }, e.applicationId)), (0, r.jsx)(j.Z, {
       user: t,
       className: A.card
     }), t.isProvisional && (0, r.jsx)(S.Z.Overlay, {
       className: A.card,
-      children: (0, r.jsx)(j.Z, {
+      children: (0, r.jsx)(O.Z, {
         heading: N.intl.string(N.t.Iyka0d),
         headingIcon: (0, r.jsx)(i.Mgn, {
           size: "xxs",
@@ -116,7 +116,7 @@ function w(e) {
       className: A.card
     }), (0, r.jsxs)(S.Z.Overlay, {
       className: A.overlay,
-      children: [!G && (null == w ? true : w.bio) != null && (null == w ? true : w.bio) !== "" && (0, r.jsx)(j.Z, {
+      children: [!G && (null == w ? true : w.bio) != null && (null == w ? true : w.bio) !== "" && (0, r.jsx)(O.Z, {
         heading: N.intl.string(N.t["61W33d"]),
         headingColor: "header-primary",
         children: (0, r.jsx)(b.Z, {
@@ -129,13 +129,13 @@ function w(e) {
         applicationId: H.id,
         commandIds: H.popularApplicationCommandIds,
         channel: R
-      }), B.length > 0 && (0, r.jsx)(j.Z, {
+      }), B.length > 0 && (0, r.jsx)(O.Z, {
         heading: N.intl.string(N.t["Uv/eT0"]),
         headingColor: "header-primary",
         children: (0, r.jsx)(C.Z, {
           applicationIds: B
         })
-      }), (0, r.jsx)(j.Z, {
+      }), (0, r.jsx)(O.Z, {
         heading: t.bot ? N.intl.string(N.t["A//N4u"]) : N.intl.string(N.t.a6XYDw),
         headingColor: "header-primary",
         children: (0, r.jsx)(x.Z, {

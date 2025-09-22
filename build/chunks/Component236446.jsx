@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
-  o = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk388905 = require("./388905.jsx"),
   Chunk362762 = require("./362762.js"),
@@ -35,7 +35,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk160033 = require("./160033.js"),
   Chunk197571 = require("./197571.js");
 
-function w(e, t, n) {
+function L(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -44,12 +44,12 @@ function w(e, t, n) {
   }) : e[t] = n, e
 }
 Chunk442837.ZP.initialize();
-class L extends Chunk647438.PureComponent {
+class w extends Chunk647438.PureComponent {
   componentDidMount() {
     (0, Chunk108427.e)("guildTemplate"), Chunk436620.KO || Chunk954824.Z.launch("discord://" + Chunk981631.Z5c.GUILD_TEMPLATE(this.props.code), () => true)
   }
   componentDidUpdate(e) {
-    this.props.code !== e.code && g.Z.resolveGuildTemplate(this.props.code)
+    this.props.code !== e.code && m.Z.resolveGuildTemplate(this.props.code)
   }
   renderButton(e, t) {
     return T.KO ? (0, r.jsx)(u.zx, {
@@ -94,7 +94,7 @@ class L extends Chunk647438.PureComponent {
     let {
       guildTemplate: e
     } = this.props;
-    return (o()(null != module, "guild template must not be null"), module.state === Chunk260539.Rj.RESOLVING) ? (0, Chunk951288.jsx)(Chunk388905.ZP, {
+    return (a()(null != module, "guild template must not be null"), module.state === Chunk260539.Rj.RESOLVING) ? (0, Chunk951288.jsx)(Chunk388905.ZP, {
       className: Chunk160033.authBox,
       children: (0, Chunk951288.jsx)(Chunk306453.Z, {
         guildTemplate: module
@@ -146,7 +146,7 @@ class L extends Chunk647438.PureComponent {
     }
   }
   constructor(...e) {
-    super(...e), w(this, "handleContinue", () => {
+    super(...e), L(this, "handleContinue", () => {
       let {
         defaultRoute: e,
         transitionTo: t
@@ -161,16 +161,16 @@ function D(e) {
     guildTemplate: (0, c.e7)([h.Z], () => h.Z.getGuildTemplate(e.code)),
     nativeAppState: (0, c.e7)([d.Z], () => d.Z.getState(e.code)),
     authenticated: (0, c.e7)([v.default], () => v.default.isAuthenticated()),
-    defaultRoute: (0, c.e7)([j.Z], () => j.Z.defaultRoute)
+    defaultRoute: (0, c.e7)([b.Z], () => b.Z.defaultRoute)
   };
-  return (0, r.jsx)(L, function(e) {
+  return (0, r.jsx)(w, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
       "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
         return Object.getOwnPropertyDescriptor(n, e).enumerable
       }))), r.forEach(function(t) {
-        w(e, t, n[t])
+        L(e, t, n[t])
       })
     }
     return e
@@ -183,24 +183,24 @@ function k(e) {
   } = e, {
     form: n,
     handleSubmit: i
-  } = (0, p.Z)(t, false);
+  } = (0, g.Z)(t, false);
   E.Z.flowStep(A.MK.ORGANIC_GUILD_TEMPLATES, A.X2.GUILD_CREATE);
   let l = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(u.Dx, {
-      className: P.header,
-      children: Z.intl.string(Z.t.UNFvtL)
+      className: Z.header,
+      children: P.intl.string(P.t.UNFvtL)
     }), n, (0, r.jsx)(u.zx, {
-      className: P.createButton,
+      className: Z.createButton,
       onClick: i,
-      children: Z.intl.string(Z.t.xr59t7)
+      children: P.intl.string(P.t.xr59t7)
     })]
   });
   return (0, r.jsx)(N.Z, {
-    className: P.authBox,
-    children: () => [(0, r.jsx)(m.Z, {
+    className: Z.authBox,
+    children: () => [(0, r.jsx)(p.Z, {
       guildTemplate: t
     }, "template"), (0, r.jsx)("div", {
-      className: P.formContainer,
+      className: Z.formContainer,
       children: l
     }, "contents")]
   })

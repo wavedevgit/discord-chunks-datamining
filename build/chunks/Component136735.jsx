@@ -82,10 +82,10 @@ function L(e) {
     onClose: M,
     guildId: F,
     sticker: Y
-  } = e, q = (0, u.e7)([p.ZP], () => (null == Y ? true : Y.tags) != null ? p.ZP.getCustomEmojiById(Y.tags) : null), G = null != (l = null == (t = b.default.getCurrentUser()) ? true : t.isStaff()) && l ? P.OC : P.Ht, [V, W] = i.useState(null), [X, J] = i.useState(null != (r = null == Y ? true : Y.name) ? r : ""), [H, Q] = i.useState({
+  } = e, q = (0, u.e7)([p.ZP], () => (null == Y ? true : Y.tags) != null ? p.ZP.getCustomEmojiById(Y.tags) : null), G = null != (l = null == (t = x.default.getCurrentUser()) ? true : t.isStaff()) && l ? P.OC : P.Ht, [V, X] = i.useState(null), [W, H] = i.useState(null != (r = null == Y ? true : Y.name) ? r : ""), [J, Q] = i.useState({
     file: null,
     filename: null != (o = (0, O._V)(Y)) ? o : ""
-  }), [$, ee] = i.useState(null == q ? true : q.id), [et, el] = i.useState(null != (Z = null == q ? true : q.name) ? Z : null == Y ? true : Y.tags), [en, ei] = i.useState(null != (R = null == Y ? true : Y.description) ? R : ""), [er, es] = i.useState(false), [ea, eo] = i.useState(null), eu = (0, u.e7)([x.Z], () => x.Z.getGuild(F)), ec = (null == eu ? true : eu.features.has(C.oNc.PARTNERED)) || (null == eu ? true : eu.features.has(C.oNc.VERIFIED)), ed = null != Y, em = ed || (null == H ? true : H.file) != null, ef = 0 === en.length || en.length >= 2 && en.length <= 100, eg = !er && (null == ea ? true : ea.isBlocking) !== true && X.length >= 2 && (null != $ || null != et || (null == Y ? true : Y.tags) != null && (null == Y ? true : Y.tags) !== "") && em && ef, ep = async e => {
+  }), [$, ee] = i.useState(null == q ? true : q.id), [et, el] = i.useState(null != (Z = null == q ? true : q.name) ? Z : null == Y ? true : Y.tags), [en, ei] = i.useState(null != (R = null == Y ? true : Y.description) ? R : ""), [er, es] = i.useState(false), [ea, eo] = i.useState(null), eu = (0, u.e7)([b.Z], () => b.Z.getGuild(F)), ec = (null == eu ? true : eu.features.has(C.oNc.PARTNERED)) || (null == eu ? true : eu.features.has(C.oNc.VERIFIED)), ed = null != Y, em = ed || (null == J ? true : J.file) != null, ef = 0 === en.length || en.length >= 2 && en.length <= 100, eg = !er && (null == ea ? true : ea.isBlocking) !== true && W.length >= 2 && (null != $ || null != et || (null == Y ? true : Y.tags) != null && (null == Y ? true : Y.tags) !== "") && em && ef, ep = async e => {
     var t;
     if (null == e) return;
     let l = null == (t = e.type) ? true : t.split(";")[0];
@@ -110,7 +110,7 @@ function L(e) {
             useKibibytes: true
           })
         }),
-        isBlocking: null == H.file
+        isBlocking: null == J.file
       }), h.default.track(C.rMx.STICKER_UPLOAD_FILE_SIZE_LIMIT_EXCEEDED, {
         size: n.size,
         filetype: n.type
@@ -127,7 +127,7 @@ function L(e) {
       });
       let e = new FileReader;
       e.addEventListener("load", () => {
-        W({
+        X({
           id: (0, a.Z)(),
           formatType: i,
           content: e.result
@@ -135,7 +135,7 @@ function L(e) {
       }), e.readAsText(n)
     } else {
       let e = await (0, w.fD)(n);
-      W({
+      X({
         id: (0, a.Z)(),
         formatType: i,
         content: e
@@ -151,13 +151,13 @@ function L(e) {
     let a = null != (l = null != (t = null != $ ? $ : et) ? t : null == Y ? true : Y.tags) ? l : "";
     try {
       if (es(true), ed) await (0, I.Jf)(F, null != (n = null == Y ? true : Y.id) ? n : "", {
-        name: X,
+        name: W,
         tags: a,
         description: en
       });
       else {
         let e = new FormData;
-        e.append("name", X), e.append("tags", a), e.append("description", en), (null == H ? true : H.file) != null && e.append("file", H.file), s = null != (r = null == (i = H.file) ? true : i.type) ? r : "", h.default.track(C.rMx.STICKER_UPLOAD_STARTED, {
+        e.append("name", W), e.append("tags", a), e.append("description", en), (null == J ? true : J.file) != null && e.append("file", J.file), s = null != (r = null == (i = J.file) ? true : i.type) ? r : "", h.default.track(C.rMx.STICKER_UPLOAD_STARTED, {
           filetype: s
         }), await (0, I.lY)({
           guildId: F,
@@ -212,7 +212,7 @@ function L(e) {
         isBlocking: true
       })
     }, [])
-  }), ex = ec ? k.t.alYXBA : k.t.kpcMfn;
+  }), eb = ec ? k.t.alYXBA : k.t.kpcMfn;
   return (0, n.jsx)("form", {
     onSubmit: ej,
     className: D.form,
@@ -222,7 +222,7 @@ function L(e) {
       size: "lg",
       children: [(0, n.jsx)(f.x, {
         title: k.intl.string(k.t.yxVsBA),
-        subtitle: k.intl.format(ex, {
+        subtitle: k.intl.format(eb, {
           fileSize: (0, y.IC)(P.Ht, {
             useKibibytes: true
           })
@@ -242,11 +242,11 @@ function L(e) {
             className: D.formItemRowChild,
             children: ed ? (0, n.jsx)(g.oil, {
               disabled: true,
-              value: null != (L = null == H ? true : H.filename) ? L : ""
+              value: null != (L = null == J ? true : J.filename) ? L : ""
             }) : (0, n.jsx)(v.Z, {
               buttonText: k.intl.string(k.t.xEnDUV),
               filters: T,
-              filename: null != (U = null == H ? true : H.filename) ? U : "",
+              filename: null != (U = null == J ? true : J.filename) ? U : "",
               placeholder: k.intl.string(k.t.rUYLJy),
               onFileSelect: ep
             })
@@ -259,13 +259,13 @@ function L(e) {
             setEmojiName: el,
             shouldUpdateBothEmojiFields: true
           })]
-        }), (0, n.jsx)(g.xJW, {
-          title: k.intl.string(k.t["0VRh6u"]),
-          required: true,
+        }), (0, n.jsx)("div", {
           className: D.formItem,
           children: (0, n.jsx)(g.oil, {
-            value: X,
-            onChange: J,
+            label: k.intl.string(k.t["0VRh6u"]),
+            required: true,
+            value: W,
+            onChange: H,
             placeholder: k.intl.string(k.t["3fGttb"]),
             maxLength: 30
           })

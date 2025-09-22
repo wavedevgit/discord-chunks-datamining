@@ -4,9 +4,8 @@
 require.d(exports, {
   Z: () => b
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
-var Chunk120356 = require("./120356.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk538534 = require("./538534.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -40,26 +39,21 @@ function b() {
     {
       analyticsLocations: C
     } = (0, Chunk906732.ZP)(Chunk100527.Z.TEXT_AND_IMAGES),
-    N = () => (0, Chunk951288.jsxs)(Chunk481060.xJW, {
-      title: Chunk388032.intl.string(Chunk388032.t.QgwmV1),
-      children: [(0, Chunk951288.jsx)(Chunk481060.R94, {
-        type: Chunk481060.R94.Types.DESCRIPTION,
-        className: Chunk197571.marginBottom8,
-        children: Chunk388032.intl.string(Chunk388032.t.TYnRkZ)
-      }), (0, Chunk951288.jsx)(Chunk538534.E, {
-        options: [{
-          name: Chunk388032.intl.string(Chunk388032.t["KFH/mZ"]),
-          value: Chunk981631.A2N.ON_CLICK
-        }, {
-          name: Chunk388032.intl.string(Chunk388032.t.K5VTBA),
-          value: Chunk981631.A2N.IF_MODERATOR
-        }, {
-          name: Chunk388032.intl.string(Chunk388032.t.Pe1RbG),
-          value: Chunk981631.A2N.ALWAYS
-        }],
-        onChange: e => p.cC.updateSetting(e),
-        value: b
-      })]
+    N = () => (0, Chunk951288.jsx)(Chunk538534.E, {
+      label: Chunk388032.intl.string(Chunk388032.t.QgwmV1),
+      description: Chunk388032.intl.string(Chunk388032.t.TYnRkZ),
+      options: [{
+        name: Chunk388032.intl.string(Chunk388032.t["KFH/mZ"]),
+        value: Chunk981631.A2N.ON_CLICK
+      }, {
+        name: Chunk388032.intl.string(Chunk388032.t.K5VTBA),
+        value: Chunk981631.A2N.IF_MODERATOR
+      }, {
+        name: Chunk388032.intl.string(Chunk388032.t.Pe1RbG),
+        value: Chunk981631.A2N.ALWAYS
+      }],
+      onChange: e => p.cC.updateSetting(e),
+      value: b
     });
   return (0, Chunk951288.jsxs)(Chunk481060.hjN, {
     tag: Chunk481060.RB0.H1,

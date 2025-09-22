@@ -2,7 +2,7 @@
 /** chunk id: 587444, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f,
-  u: () => m
+  u: () => p
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -18,24 +18,24 @@ var Chunk120356 = require("./120356.js"),
   Chunk149715 = require("./149715.js"),
   Chunk197571 = require("./197571.js");
 
-function m(e) {
+function p(e) {
   let {
     text: t,
     buttonCta: i,
     onClick: u
   } = e;
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(o.Ee, {
+    children: [(0, r.jsx)(a.Ee, {
       src: n(689411)
-    }), (0, r.jsx)(o.Dx, {
-      className: l()(g.marginTop20, g.marginBottom8, p.flexCenter),
+    }), (0, r.jsx)(a.Dx, {
+      className: l()(m.marginTop20, m.marginBottom8, g.flexCenter),
       children: d.intl.string(d.t.eL5z0t)
-    }), (0, r.jsx)(o.DK, {
-      className: g.marginBottom40,
+    }), (0, r.jsx)(a.DK, {
+      className: m.marginBottom40,
       children: d.intl.string(d.t["poAv6+"])
-    }), (0, r.jsxs)(a.Zbd, {
+    }), (0, r.jsxs)(o.Zbd, {
       className: h.card,
-      type: a.Zbd.Types.CUSTOM,
+      type: o.Zbd.Types.CUSTOM,
       children: [(0, r.jsx)("img", {
         alt: "",
         className: h.cardAccentLeft,
@@ -49,7 +49,7 @@ function m(e) {
         direction: c.Z.Direction.VERTICAL,
         align: c.Z.Align.STRETCH,
         grow: 0,
-        children: [(0, r.jsx)(a.Text, {
+        children: [(0, r.jsx)(o.Text, {
           tag: "strong",
           className: h.buttonTitle,
           variant: "text-md/normal",
@@ -57,7 +57,7 @@ function m(e) {
             color: s.Z.unsafe_rawColors.PRIMARY_300.css
           },
           children: t
-        }), (0, r.jsx)(o.zx, {
+        }), (0, r.jsx)(a.zx, {
           className: h.button,
           onClick: u,
           children: i
@@ -74,9 +74,9 @@ function f(e) {
     theme: i = u.BRd.DARK,
     onClick: l
   } = e;
-  return (0, r.jsx)(o.ZP, {
+  return (0, r.jsx)(a.ZP, {
     theme: i,
-    children: (0, r.jsx)(m, {
+    children: (0, r.jsx)(p, {
       text: t,
       buttonCta: n,
       onClick: l

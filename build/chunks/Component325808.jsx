@@ -175,17 +175,15 @@ function D() {
       analyticsLocations: e
     })
   }, [module]);
-  return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-    children: [(0, Chunk951288.jsx)(Chunk481060.xJW, {
-      title: Chunk388032.intl.string(Chunk388032.t["pS+K2N"]),
-      className: Chunk197571.marginBottom20,
-      children: (0, Chunk951288.jsx)(Chunk538534.E, {
-        onChange: e => o({
-          value: e
-        }),
-        options: Chunk120356,
-        value: exports
-      })
+  return (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+    gap: 20,
+    children: [(0, Chunk951288.jsx)(Chunk538534.E, {
+      label: Chunk388032.intl.string(Chunk388032.t["pS+K2N"]),
+      onChange: e => o({
+        value: e
+      }),
+      options: Chunk120356,
+      value: exports
     }), exports === Chunk981631.pM4.PUSH_TO_TALK && (0, Chunk951288.jsx)(w, {
       inputMode: exports
     })]

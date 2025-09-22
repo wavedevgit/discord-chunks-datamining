@@ -2,7 +2,7 @@
 /** chunk id: 178387, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  I: () => b
+  I: () => x
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -21,12 +21,12 @@ var Chunk793030 = require("./793030.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk884329 = require("./884329.js");
 
-function b() {
+function x() {
   let {
     analyticsLocations: e
   } = (0, Chunk906732.ZP)(Chunk100527.Z.GUILD_SETTINGS_BOOST_PERKS_PAGE), t = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getProps().guild, []), {
     isGuildAdmin: n,
-    canManageGuild: b
+    canManageGuild: x
   } = (0, Chunk442837.cj)([Chunk496675.Z], () => ({
     isGuildAdmin: null != exports && Chunk496675.Z.can(Chunk981631.Plq.ADMINISTRATOR, exports),
     canManageGuild: null != exports && Chunk496675.Z.can(Chunk981631.Plq.MANAGE_GUILD, exports)
@@ -40,13 +40,13 @@ function b() {
         color: "header-primary",
         children: Chunk388032.intl.string(Chunk388032.t.UKgg5O)
       }), (0, Chunk951288.jsx)(Chunk888125.w, {
-        canManageGuild: b,
+        canManageGuild: x,
         premiumProgressBarEnabled: exports.premiumProgressBarEnabled
       }), (0, Chunk951288.jsx)("div", {
         className: Chunk884329.divider
       }), (0, Chunk951288.jsx)(Chunk92533.A, {
         guild: exports,
-        canManageGuild: b
+        canManageGuild: x
       }), (0, Chunk951288.jsx)("div", {
         className: Chunk884329.divider
       }), j ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
@@ -58,12 +58,12 @@ function b() {
           })]
         }), (0, Chunk951288.jsx)(Chunk249363.A, {
           guild: exports,
-          canManageGuild: b
+          canManageGuild: x
         })]
       }) : (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
         children: [(0, Chunk951288.jsx)(Chunk249363.A, {
           guild: exports,
-          canManageGuild: b
+          canManageGuild: x
         }), require && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
           children: [(0, Chunk951288.jsx)("div", {
             className: Chunk884329.divider

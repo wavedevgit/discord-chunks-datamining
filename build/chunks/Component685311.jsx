@@ -1,7 +1,7 @@
 /** Chunk was on 27978 **/
 /** chunk id: 685311, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => g
 }), require("./35282.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -13,32 +13,32 @@ var Chunk951288 = require("./951288.js"),
   Chunk703656 = require("./703656.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk197571 = require("./197571.js");
-let p = function(e) {
+let g = function(e) {
   let {
     match: t,
     location: n,
     attemptDeepLink: l
-  } = e, [p, g] = i.useState(0);
+  } = e, [g, m] = i.useState(0);
   i.useEffect(() => {
-    a.default.once("connected", () => {
-      g(1)
-    }), a.default.once("disconnected", () => {
-      (0, u.uL)((0, o.M)())
-    }), a.default.connect()
+    o.default.once("connected", () => {
+      m(1)
+    }), o.default.once("disconnected", () => {
+      (0, u.uL)((0, a.M)())
+    }), o.default.connect()
   }, []), i.useEffect(() => {
-    if (0 !== p) return;
-    let e = setTimeout(() => (0, u.uL)((0, o.M)()), 3e3);
+    if (0 !== g) return;
+    let e = setTimeout(() => (0, u.uL)((0, a.M)()), 3e3);
     return () => clearTimeout(e)
-  }, [p]);
-  let m = i.useCallback(async (e, t) => {
+  }, [g]);
+  let p = i.useCallback(async (e, t) => {
     try {
-      g(2), await l(e, t), g(3)
+      m(2), await l(e, t), m(3)
     } catch (e) {
       console.error("Error opening deeplink", e)
     }
   }, [l]);
   if ((0, u.DB)()) return null;
-  switch (p) {
+  switch (g) {
     case 1:
       return (0, r.jsxs)(c.ZP, {
         children: [(0, r.jsx)(c.Dx, {
@@ -48,13 +48,13 @@ let p = function(e) {
           children: d.intl.string(d.t.SXCxyc)
         }), (0, r.jsx)(c.zx, {
           className: h.marginTop40,
-          onClick: () => m(t, n),
+          onClick: () => p(t, n),
           children: d.intl.string(d.t.UQvCf3)
         }), (0, r.jsx)(c.zx, {
           className: s()(h.marginTop8, h.marginCenterHorz),
           color: c.zx.Colors.LINK,
           look: c.zx.Looks.LINK,
-          onClick: () => (0, u.uL)((0, o.M)()),
+          onClick: () => (0, u.uL)((0, a.M)()),
           children: d.intl.string(d.t["2ixEBg"])
         })]
       });

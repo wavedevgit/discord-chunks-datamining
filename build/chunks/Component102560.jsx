@@ -72,17 +72,15 @@ let f = e => {
           h(t)
         },
         className: p.spacing
-      }), (0, r.jsx)(c.xJW, {
-        title: b.intl.string(b.t.buoe19),
-        children: (0, r.jsx)(c.zJl, {
-          className: p.scroller,
-          children: (0, r.jsx)(c.VcW, {
-            maxVisibleItems: 10,
-            multi: true,
-            value: x,
-            onChange: e => v(e),
-            options: O
-          })
+      }), (0, r.jsx)(c.zJl, {
+        className: p.scroller,
+        children: (0, r.jsx)(c.VcW, {
+          label: b.intl.string(b.t.buoe19),
+          maxVisibleItems: 10,
+          multi: true,
+          value: x,
+          onChange: e => v(e),
+          options: O
         })
       }), (0, r.jsx)(c.R94, {
         type: c.R94.Types.DESCRIPTION,

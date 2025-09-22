@@ -153,9 +153,9 @@ let _ = new y(Chunk570140.Z, {
     });
     let v = null != (i = null == C ? true : C.primaryCategoryId) ? i : o.AR.UNCATEGORIZED,
       x = null != (l = _.primaryCategoryId) ? l : o.AR.UNCATEGORIZED,
-      O = Object.assign({}, null == (n = m[b]) ? true : n[v]);
-    null != C && v !== x && delete O[_.guildId], m[b] = u(c({}, m[b]), {
-      [v]: O,
+      j = Object.assign({}, null == (n = m[b]) ? true : n[v]);
+    null != C && v !== x && delete j[_.guildId], m[b] = u(c({}, m[b]), {
+      [v]: j,
       [x]: u(c({}, null == (r = m[b]) ? true : r[x]), {
         [_.guildId]: c({}, C, _)
       })

@@ -37,7 +37,7 @@ function h(e) {
   return e
 }
 
-function x(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -49,7 +49,7 @@ function x(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let b = (0, Chunk663993.Un)({
+let x = (0, Chunk663993.Un)({
   createPromise: () => require.e("4848").then(require.bind(require, 797967)),
   webpackId: 797967
 });
@@ -66,7 +66,7 @@ function v(e) {
     disabled: l = false
   } = e, d = i.useRef(null), [u, m] = i.useState(t);
 
-  function b() {
+  function x() {
     n(u)
   }
 
@@ -115,7 +115,7 @@ function v(e) {
         colorHex: (0, a.Rf)(t)
       })
     });
-  return (0, r.jsxs)("div", x(h({
+  return (0, r.jsxs)("div", b(h({
     className: f.buttonsContainer,
     "aria-label": p.intl.string(p.t.FJjrIy),
     ref: N
@@ -124,7 +124,7 @@ function v(e) {
       className: s()(f.colorSwatch, {
         [f.disabled]: l
       }),
-      children: (0, r.jsxs)(c.P3F, x(h({
+      children: (0, r.jsxs)(c.P3F, b(h({
         onClick: l ? true : function() {
           n(g.p6O)
         },
@@ -148,8 +148,8 @@ function v(e) {
       className: s()(f.colorSwatch, {
         [f.disabled]: l
       }),
-      children: [(0, r.jsxs)(c.P3F, x(h({
-        onClick: l ? true : b,
+      children: [(0, r.jsxs)(c.P3F, b(h({
+        onClick: l ? true : x,
         "aria-disabled": l
       }, S), {
         children: [(0, r.jsx)("div", {
@@ -169,12 +169,12 @@ function v(e) {
         })]
       })), !l && (0, r.jsx)(c.yRy, {
         targetElementRef: d,
-        onRequestOpen: b,
-        renderPopout: e => (0, r.jsx)(c.Z$W, x(h({}, e), {
+        onRequestOpen: x,
+        renderPopout: e => (0, r.jsx)(c.Z$W, b(h({}, e), {
           value: t,
           onChange: v
         })),
-        children: e => (0, r.jsx)(c.P3F, x(h({}, e), {
+        children: e => (0, r.jsx)(c.P3F, b(h({}, e), {
           innerRef: d,
           className: f.dropperIconButton,
           "aria-label": p.intl.string(p.t.Qp04hI),
@@ -205,7 +205,7 @@ function _(e) {
     value: n,
     onChange: i,
     disabled: l
-  }) : (0, r.jsx)(b, {
+  }) : (0, r.jsx)(x, {
     defaultColor: g.p6O,
     colors: g.pmI,
     value: n,

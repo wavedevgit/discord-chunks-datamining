@@ -76,12 +76,12 @@ function Z(e) {
     ban: a,
     hideDiscriminator: c,
     onClose: m
-  } = e, [g, h] = i.useState(false), [x, b] = i.useState(null), {
+  } = e, [g, h] = i.useState(false), [b, x] = i.useState(null), {
     analyticsLocations: j
   } = (0, f.ZP)(), _ = null != (t = null == j ? true : j[0]) ? t : null;
   async function y() {
     if (null != l) {
-      b(null), h(true);
+      x(null), h(true);
       try {
         await d.Z.unbanUser(l.id, s.id), m(), v.default.track(I.rMx.GUILD_BAN_REMOVED, R(w({}, (0, p.hH)(l.id)), {
           target_user_id: s.id,
@@ -89,7 +89,7 @@ function Z(e) {
           location: _
         }))
       } catch (e) {
-        b(new u.Z(e)), h(false)
+        x(new u.Z(e)), h(false)
       }
     }
   }
@@ -121,11 +121,11 @@ function Z(e) {
         variant: "text-xs/medium",
         color: "text-secondary",
         children: null != a.reason && "" !== a.reason ? a.reason : S.intl.string(S.t["t+2Zcn"])
-      }), null != x ? (0, r.jsx)(o.Text, {
+      }), null != b ? (0, r.jsx)(o.Text, {
         className: T.error,
         color: "text-danger",
         variant: "text-sm/normal",
-        children: x.getAnyErrorMessage()
+        children: b.getAnyErrorMessage()
       }) : null]
     }), (0, r.jsx)(o.mzw, {
       className: T.footer,
@@ -206,7 +206,7 @@ let A = Chunk647438.forwardRef(function(e, t) {
     guild: n,
     sortedBans: l,
     bans: s
-  } = e, c = (0, a.e7)([b.Z], () => b.Z.hidePersonalInformation, []), d = i.useCallback(e => {
+  } = e, c = (0, a.e7)([x.Z], () => x.Z.hidePersonalInformation, []), d = i.useCallback(e => {
     var t;
     if (null == s && 0 === e) return 60;
     let n = l[e],
@@ -254,7 +254,7 @@ function L(e) {
     }
     if (!a) try {
       c(true);
-      let [e, n] = (0, x.C)(l), r = e[0];
+      let [e, n] = (0, b.C)(l), r = e[0];
       y.Z.setSearchQuery(l), await d.Z.searchGuildBans(t, r, n), c(false)
     } catch (e) {
       c(false)
@@ -303,11 +303,11 @@ function k() {
   let {
     guild: c,
     searchQuery: u
-  } = (0, Chunk399606.e7)([Chunk999382.Z], () => Chunk999382.Z.getProps(), [], Chunk392711.isEqual), p = null != Chunk479531 && Chunk479531.trim().length > 0, f = (0, Chunk110924.Z)(Chunk367907), h = Chunk367907 !== Chunk906732, [b] = (0, Chunk399606.e7)([Chunk999382.Z], () => Chunk999382.Z.getBans(), [], Chunk136015.Q), v = null != (e = null == Chunk246946 ? true : Chunk246946.size) ? module : 0, O = (0, Chunk410030.ZP)(), y = null != (t = null == Chunk239091 ? true : Chunk239091.id) ? exports : Chunk981631.lds, N = Chunk647438.useRef(null), E = Chunk647438.useCallback(e => null == e || 0 === e.length ? e => null != e : t => {
+  } = (0, Chunk399606.e7)([Chunk999382.Z], () => Chunk999382.Z.getProps(), [], Chunk392711.isEqual), p = null != Chunk479531 && Chunk479531.trim().length > 0, f = (0, Chunk110924.Z)(Chunk367907), h = Chunk367907 !== Chunk906732, [x] = (0, Chunk399606.e7)([Chunk999382.Z], () => Chunk999382.Z.getBans(), [], Chunk136015.Q), v = null != (e = null == Chunk246946 ? true : Chunk246946.size) ? module : 0, O = (0, Chunk410030.ZP)(), y = null != (t = null == Chunk239091 ? true : Chunk239091.id) ? exports : Chunk981631.lds, N = Chunk647438.useRef(null), E = Chunk647438.useCallback(e => null == e || 0 === e.length ? e => null != e : t => {
     if (null == t || 0 === e.trim().length) returnfalse;
     let [
       [n], r
-    ] = (0, x.C)(e);
+    ] = (0, b.C)(e);
     return !!r.includes(t.id) || null != n && !!(t.username.toLowerCase().includes(n.toLowerCase()) || null != t.globalName && t.globalName.toLowerCase().includes(n.toLowerCase()))
   }, []), P = Chunk647438.useCallback((e, t, n) => {
     if (null == e || 0 === n) return [];

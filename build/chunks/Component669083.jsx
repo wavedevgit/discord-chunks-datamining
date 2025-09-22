@@ -1,7 +1,7 @@
 /** Chunk was on 63141 **/
 /** chunk id: 669083, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => Z
+  Z: () => j
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -48,7 +48,7 @@ function x() {
     text_activation_hotkey: null != Chunk951288 ? (0, Chunk13140.BB)(Chunk951288.shortcut) : null
   })
 }
-class j extends Chunk647438.PureComponent {
+class Z extends Chunk647438.PureComponent {
   componentDidMount() {
     Chunk13245.Z.track(Chunk981631.rMx.SETTINGS_PANE_VIEWED, {
       settings_type: "overlay",
@@ -179,63 +179,55 @@ class j extends Chunk647438.PureComponent {
       displayNameMode: t,
       displayUserMode: n
     } = this.props;
-    return (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
-      children: [(0, Chunk951288.jsx)(Chunk481060.xJW, {
-        title: Chunk388032.intl.string(Chunk388032.t.dnvZSk),
-        className: Chunk197571.marginBottom20,
-        children: (0, Chunk951288.jsx)(Chunk755721.Gu, {
-          onChange: this.handleChangeAvatarSizeMode,
-          options: [{
-            value: Chunk981631.ipw.LARGE,
-            name: Chunk388032.intl.string(Chunk388032.t.YcOxtr)
-          }, {
-            value: Chunk981631.ipw.SMALL,
-            name: Chunk388032.intl.string(Chunk388032.t.BKIKq6)
-          }],
-          value: module,
-          size: Chunk755721.l7.SMALL
-        })
-      }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
-        title: Chunk388032.intl.string(Chunk388032.t.J0dpcH),
-        className: Chunk197571.marginBottom20,
-        children: (0, Chunk951288.jsx)(Chunk755721.Gu, {
-          onChange: this.handleChangeDisplayNameMode,
-          options: [{
-            value: Chunk981631.wC$.ALWAYS,
-            name: Chunk388032.intl.string(Chunk388032.t.nBmDra)
-          }, {
-            value: Chunk981631.wC$.ONLY_WHILE_SPEAKING,
-            name: Chunk388032.intl.string(Chunk388032.t["2OvIZW"])
-          }, {
-            value: Chunk981631.wC$.NEVER,
-            name: Chunk388032.intl.string(Chunk388032.t.ekjlPD)
-          }],
-          value: exports,
-          size: Chunk755721.l7.SMALL
-        })
-      }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
-        title: Chunk388032.intl.string(Chunk388032.t.swsWWF),
-        className: Chunk197571.marginBottom20,
-        children: (0, Chunk951288.jsx)(Chunk755721.Gu, {
-          onChange: this.handleChangeDisplayUserMode,
-          options: [{
-            value: Chunk981631.OYC.ALWAYS,
-            name: Chunk388032.intl.string(Chunk388032.t.nBmDra)
-          }, {
-            value: Chunk981631.OYC.ONLY_WHILE_SPEAKING,
-            name: Chunk388032.intl.string(Chunk388032.t["2OvIZW"])
-          }],
-          value: require,
-          size: Chunk755721.l7.SMALL
-        })
+    return (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+      gap: 20,
+      children: [(0, Chunk951288.jsx)(Chunk755721.Gu, {
+        label: Chunk388032.intl.string(Chunk388032.t.dnvZSk),
+        onChange: this.handleChangeAvatarSizeMode,
+        options: [{
+          value: Chunk981631.ipw.LARGE,
+          name: Chunk388032.intl.string(Chunk388032.t.YcOxtr)
+        }, {
+          value: Chunk981631.ipw.SMALL,
+          name: Chunk388032.intl.string(Chunk388032.t.BKIKq6)
+        }],
+        value: module,
+        size: Chunk755721.l7.SMALL
+      }), (0, Chunk951288.jsx)(Chunk755721.Gu, {
+        label: Chunk388032.intl.string(Chunk388032.t.J0dpcH),
+        onChange: this.handleChangeDisplayNameMode,
+        options: [{
+          value: Chunk981631.wC$.ALWAYS,
+          name: Chunk388032.intl.string(Chunk388032.t.nBmDra)
+        }, {
+          value: Chunk981631.wC$.ONLY_WHILE_SPEAKING,
+          name: Chunk388032.intl.string(Chunk388032.t["2OvIZW"])
+        }, {
+          value: Chunk981631.wC$.NEVER,
+          name: Chunk388032.intl.string(Chunk388032.t.ekjlPD)
+        }],
+        value: exports,
+        size: Chunk755721.l7.SMALL
+      }), (0, Chunk951288.jsx)(Chunk755721.Gu, {
+        label: Chunk388032.intl.string(Chunk388032.t.swsWWF),
+        onChange: this.handleChangeDisplayUserMode,
+        options: [{
+          value: Chunk981631.OYC.ALWAYS,
+          name: Chunk388032.intl.string(Chunk388032.t.nBmDra)
+        }, {
+          value: Chunk981631.OYC.ONLY_WHILE_SPEAKING,
+          name: Chunk388032.intl.string(Chunk388032.t["2OvIZW"])
+        }],
+        value: require,
+        size: Chunk755721.l7.SMALL
       })]
     })
   }
   renderDeveloperSettings() {
-    return (0, Chunk951288.jsx)(Chunk481060.xJW, {
-      title: "Crashes",
+    return (0, Chunk951288.jsx)("div", {
       className: Chunk197571.marginBottom20,
       children: (0, Chunk951288.jsx)(Chunk481060.q4e, {
+        label: "Crashes",
         value: true,
         options: [{
           value: true,
@@ -284,7 +276,7 @@ class j extends Chunk647438.PureComponent {
   }
 }
 
-function Z(e) {
+function j(e) {
   let {
     onClose: t
   } = e, {
@@ -306,7 +298,7 @@ function Z(e) {
   })), u = (0, y.Z)({
     location: "Overlay Settings"
   });
-  return (0, i.jsx)(j, {
+  return (0, i.jsx)(Z, {
     onClose: t,
     avatarSizeMode: n,
     displayNameMode: r,

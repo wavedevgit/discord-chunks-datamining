@@ -127,7 +127,7 @@ function E(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: v.ruleTextContainer,
-      children: (0, r.jsx)(x.Z, {
+      children: (0, r.jsx)(b.Z, {
         rule: n,
         onChangeRule: i
       })
@@ -172,14 +172,14 @@ function S(e) {
     saveRule: g
   } = (0, p.w)(), {
     updateRule: h
-  } = (0, m.pH)(t.guildId), [x, b] = i.useState(t.enabled), E = (0, l.throttle)(async (e, n) => {
+  } = (0, m.pH)(t.guildId), [b, x] = i.useState(t.enabled), E = (0, l.throttle)(async (e, n) => {
     if (n.preventDefault(), n.stopPropagation(), !d) {
       let e = O(_({}, t), {
-        enabled: !x
+        enabled: !b
       });
-      b(!x);
+      x(!b);
       let n = await g(e, []);
-      null != n && (h(n), b(n.enabled))
+      null != n && (h(n), x(n.enabled))
     }
   }, 300), S = e => {
     C(e), o(e)
@@ -225,7 +225,7 @@ function S(e) {
       className: v.actionContainer,
       children: [(0, r.jsx)(s.T2, {
         onChange: E,
-        checked: null != x && x
+        checked: null != b && b
       }), !n && (0, r.jsx)(a.ua7, {
         text: j.intl.string(j.t.UKOtz8),
         position: "top",
@@ -285,7 +285,7 @@ function T(e) {
       children: (0, r.jsx)(a.zxk, {
         variant: "primary",
         size: "sm",
-        text: t === b.fX.KEYWORD ? j.intl.string(j.t.CumH4u) : j.intl.string(j.t.oRs6mJ),
+        text: t === x.fX.KEYWORD ? j.intl.string(j.t.CumH4u) : j.intl.string(j.t.oRs6mJ),
         onClick: n
       })
     })]

@@ -1,7 +1,7 @@
 /** Chunk was on 61 **/
 /** chunk id: 377329, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => p
 }), require("./953529.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,73 +19,73 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk492718 = require("./492718.js");
 
-function f(e) {
+function p(e) {
   var t, n;
   let {
-    guildId: f,
-    guildEvent: j,
-    guildEventId: y,
-    error: b
-  } = e, E = r.useMemo(() => (0, x.Gb)(j, f), [j, f]), {
-    channel_id: N,
-    name: O,
-    image: C,
-    description: S
-  } = E, T = (0, i.e7)([c.Z], () => c.Z.getChannel(N), [N]), Z = (0, i.e7)([u.Z], () => u.Z.getGuild(f), [f]), I = (0, m.cS)(E), P = (0, i.e7)([d.default], () => null != j.creatorId ? d.default.getUser(j.creatorId) : d.default.getCurrentUser(), [j.creatorId]), w = (0, i.e7)([o.Z], () => o.Z.isLurking(f), [f]), D = (0, s.KS)(T, Z);
-  return (0, l.jsxs)("div", {
-    className: p.content,
-    children: [(0, l.jsx)(v.Z, {
-      className: p.previewCard,
-      guild: Z,
-      channel: T,
-      location: null != I ? I : true,
-      creator: P,
-      name: O,
-      description: S,
-      imageSource: (n = (0, x.Gb)(j, f, y), null == C && null == n.image ? null : null != C && /^data:/.test(C) ? C : (0, g.Z)(n)),
+    guildId: p,
+    guildEvent: f,
+    guildEventId: b,
+    error: y
+  } = e, O = l.useMemo(() => (0, x.Gb)(f, p), [f, p]), {
+    channel_id: E,
+    name: C,
+    image: N,
+    description: P
+  } = O, S = (0, i.e7)([c.Z], () => c.Z.getChannel(E), [E]), T = (0, i.e7)([u.Z], () => u.Z.getGuild(p), [p]), Z = (0, g.cS)(O), w = (0, i.e7)([d.default], () => null != f.creatorId ? d.default.getUser(f.creatorId) : d.default.getCurrentUser(), [f.creatorId]), I = (0, i.e7)([o.Z], () => o.Z.isLurking(p), [p]), D = (0, s.KS)(S, T);
+  return (0, r.jsxs)("div", {
+    className: j.content,
+    children: [(0, r.jsx)(v.Z, {
+      className: j.previewCard,
+      guild: T,
+      channel: S,
+      location: null != Z ? Z : true,
+      creator: w,
+      name: C,
+      description: P,
+      imageSource: (n = (0, x.Gb)(f, p, b), null == N && null == n.image ? null : null != N && /^data:/.test(N) ? N : (0, m.Z)(n)),
       isActive: false,
-      isUserLurking: w,
+      isUserLurking: I,
       speakers: [],
       speakerCount: 0,
       rsvped: true,
-      guildEvent: E,
-      eventPreview: E
-    }), (0, l.jsxs)("div", {
-      className: p.textContainer,
-      children: [(0, l.jsx)(a.X6q, {
+      guildEvent: O,
+      eventPreview: O
+    }), (0, r.jsxs)("div", {
+      className: j.textContainer,
+      children: [(0, r.jsx)(a.X6q, {
         variant: "heading-xl/semibold",
         children: h.intl.string(h.t.yBsFEx)
-      }), (0, l.jsx)(a.Text, {
-        color: "header-secondary",
+      }), (0, r.jsx)(a.Text, {
+        color: "text-secondary",
         variant: "text-md/normal",
-        className: p.subheader,
+        className: j.subheader,
         children: null != location ? h.intl.string(h.t.KDPFi4) : h.intl.format(h.t.f55NX1, {
-          channelName: null != (t = null == T ? true : T.name) ? t : "",
+          channelName: null != (t = null == S ? true : S.name) ? t : "",
           channelHook: () => {
             var e;
-            return (0, l.jsxs)("div", {
-              className: p.channelName,
-              children: [null != D ? (0, l.jsx)(D, {
+            return (0, r.jsxs)("div", {
+              className: j.channelName,
+              children: [null != D ? (0, r.jsx)(D, {
                 size: "custom",
                 color: "currentColor",
                 width: 20,
                 height: 20,
-                className: p.icon
-              }) : (0, l.jsx)(a._tJ, {
+                className: j.icon
+              }) : (0, r.jsx)(a._tJ, {
                 size: "custom",
                 color: "currentColor",
                 height: 18,
                 width: 18,
-                className: p.locationIcon
-              }), null != (e = null == T ? true : T.name) ? e : I]
+                className: j.locationIcon
+              }), null != (e = null == S ? true : S.name) ? e : Z]
             })
           }
         })
-      }), null != b && (0, l.jsx)(a.Text, {
+      }), null != y && (0, r.jsx)(a.Text, {
         color: "text-danger",
         variant: "text-xs/normal",
-        className: p.subheader,
-        children: b.getAnyErrorMessage()
+        className: j.subheader,
+        children: y.getAnyErrorMessage()
       })]
     })]
   })

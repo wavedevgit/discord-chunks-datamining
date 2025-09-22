@@ -31,20 +31,18 @@ let N = t => {
     } = t;
     return n
   }), [n]);
-  return (0, l.jsx)(u.xJW, {
+  return (0, l.jsx)(u.VcW, {
     required: true,
-    children: (0, l.jsx)(u.VcW, {
-      value: null == e ? true : e.id,
-      options: a.map(t => ({
-        value: t.id,
-        label: (0, s.F6)(t, o.default, j.Z, true)
-      })),
-      onChange: t => {
-        let n = a.find(n => n.id === t);
-        r(null != n ? n : true)
-      },
-      placeholder: E.intl.string(E.t["N+T69/"])
-    })
+    value: null == e ? true : e.id,
+    options: a.map(t => ({
+      value: t.id,
+      label: (0, s.F6)(t, o.default, j.Z, true)
+    })),
+    onChange: t => {
+      let n = a.find(n => n.id === t);
+      r(null != n ? n : true)
+    },
+    placeholder: E.intl.string(E.t["N+T69/"])
   })
 };
 
@@ -57,7 +55,7 @@ function _(t) {
     onEditChannel: j,
     onClose: o,
     transitionState: _
-  } = t, [S, h] = r.useState(n.metadata.channelId), [C, I] = r.useState(null), L = (0, i.e7)([c.Z], () => c.Z.getChannel(S), [S]), g = (0, A.c)(n.type, n, e);
+  } = t, [S, C] = r.useState(n.metadata.channelId), [h, I] = r.useState(null), L = (0, i.e7)([c.Z], () => c.Z.getChannel(S), [S]), g = (0, A.c)(n.type, n, e);
   if (null == g) return null;
   let {
     headerText: T
@@ -87,12 +85,12 @@ function _(t) {
         guildId: s,
         channel: L,
         onSelectChannel: t => {
-          null != t && h(t.id)
+          null != t && C(t.id)
         }
-      }), null != C ? (0, l.jsx)(u.Text, {
+      }), null != h ? (0, l.jsx)(u.Text, {
         color: "text-danger",
         variant: "text-sm/normal",
-        children: C
+        children: h
       }) : (0, l.jsx)(u.Text, {
         color: "text-muted",
         variant: "text-sm/normal",

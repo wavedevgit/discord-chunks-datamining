@@ -54,19 +54,17 @@ class p extends Chunk647438.PureComponent {
         children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-sm/normal",
           children: Chunk388032.intl.string(Chunk388032.t["7vw0h4"])
-        }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
-          title: Chunk388032.intl.string(Chunk388032.t["6Y1t5O"]),
-          children: (0, Chunk951288.jsx)(Chunk481060.q4e, {
-            placeholder: Chunk388032.intl.string(Chunk388032.t.U0kGk5),
-            options: (0, Chunk538211.Z)({
-              isStreamer: module,
-              isEndStream: false,
-              showVibesHoneypot: false
-            }),
-            onChange: this.handleChanged,
-            value: Chunk647438,
-            maxVisibleItems: 4
-          })
+        }), (0, Chunk951288.jsx)(Chunk481060.q4e, {
+          label: Chunk388032.intl.string(Chunk388032.t["6Y1t5O"]),
+          placeholder: Chunk388032.intl.string(Chunk388032.t.U0kGk5),
+          options: (0, Chunk538211.Z)({
+            isStreamer: module,
+            isEndStream: false,
+            showVibesHoneypot: false
+          }),
+          onChange: this.handleChanged,
+          value: Chunk647438,
+          maxVisibleItems: 4
         }), (0, Chunk951288.jsx)("div", {
           className: Chunk236402.art
         })]

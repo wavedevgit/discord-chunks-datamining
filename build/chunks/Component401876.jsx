@@ -1,33 +1,27 @@
-/** Chunk was on 82758 **/
-/** chunk id: 401876, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 27919 **/
+/** chunk id: 401876, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => o
+  Z: () => s
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk481060 = require("./481060.js"),
   Chunk954313 = require("./954313.js"),
-  Chunk388032 = require("./388032.jsx"),
-  Chunk667180 = require("./667180.js");
+  Chunk388032 = require("./388032.jsx");
 
-function o(e) {
+function s(e) {
   let {
     startDate: t,
-    recurrenceRule: r,
-    onRecurrenceChange: o
-  } = e, d = l.useMemo(() => (0, i.zi)(t, r), [r, t]), u = (0, i.P8)(t), x = e => e.toString(), j = (0, n.jsx)("div", {
-    className: c.title,
-    children: a.intl.string(a.t["59TVxM"])
-  });
-  return (0, n.jsx)(s.xJW, {
-    title: j,
+    recurrenceRule: n,
+    onRecurrenceChange: s
+  } = e, d = l.useMemo(() => (0, a.zi)(t, n), [n, t]), c = (0, a.P8)(t), o = e => e.toString();
+  return (0, r.jsx)(i.PhF, {
+    label: u.intl.string(u.t["59TVxM"]),
     required: true,
-    children: (0, n.jsx)(s.PhF, {
-      placeholder: "gaming",
-      options: u,
-      select: o,
-      serialize: x,
-      isSelected: e => null != d && x(e) === x(d)
-    })
+    placeholder: "gaming",
+    options: c,
+    select: s,
+    serialize: o,
+    isSelected: e => null != d && o(e) === o(d)
   })
 }

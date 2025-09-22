@@ -2,7 +2,7 @@
 /** chunk id: 884134, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => en
+  Z: () => er
 }), require("./388685.js"), require("./704826.js"), require("./35282.js"), require("./781311.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -166,6 +166,13 @@ function q(e) {
 }
 
 function X(e) {
+  let t = 10;
+  for (let n of [90, 180, 270])
+    if (Math.abs(e - n) <= t) return n;
+  return e
+}
+
+function Q(e) {
   let {
     gradientAngle: t,
     setGradientAngle: n
@@ -219,7 +226,9 @@ function X(e) {
         minValue: 0,
         maxValue: 360,
         onValueChange: e => {
-          (0, R.fR)(), s(e), n(e)
+          (0, R.fR)();
+          let t = X(e);
+          t !== e || s(e), n(t)
         },
         onValueRender: () => null,
         keyboardStep: 1
@@ -228,7 +237,7 @@ function X(e) {
   })
 }
 
-function Q(e) {
+function J(e) {
   let {
     chassisMixAmount: t,
     setChassisMixAmount: n
@@ -275,7 +284,7 @@ function Q(e) {
   })
 }
 
-function J(e) {
+function $(e) {
   let {
     isCoachmark: t,
     isMobile: n
@@ -338,7 +347,7 @@ function J(e) {
   })
 }
 
-function $(e) {
+function ee(e) {
   let {
     onApply: t,
     disabled: n,
@@ -357,14 +366,14 @@ function $(e) {
   })
 }
 
-function ee(e) {
+function et(e) {
   let {
     onSaveTheme: t,
     canApply: n
   } = e, i = (0, b.m)(j.p9.TIER_2);
   return (0, R.hf)(i, p.Z.CUSTOM_THEMES_EDITOR_COACHMARK), (0, r.jsx)("div", {
     className: U.coachmarkFooterContainer,
-    children: i ? (0, r.jsx)($, {
+    children: i ? (0, r.jsx)(ee, {
       disabled: !n,
       onApply: t,
       fullWidth: true
@@ -380,7 +389,7 @@ function ee(e) {
   })
 }
 
-function et(e) {
+function en(e) {
   var t;
   let {
     onSaveTheme: n,
@@ -403,7 +412,7 @@ function et(e) {
         variant: "secondary",
         onClick: d,
         text: k.intl.string(k.t["13/7kZ"])
-      }), (0, r.jsx)($, {
+      }), (0, r.jsx)(ee, {
         disabled: !i,
         onApply: () => {
           c && T.default.track(x.rMx.CUSTOM_THEME_SHARE_APPLIED, {}), n()
@@ -428,7 +437,7 @@ function et(e) {
   })
 }
 
-function en(e) {
+function er(e) {
   var t;
   let {
     metadata: n,
@@ -499,10 +508,10 @@ function en(e) {
             variant: "text-sm/semibold",
             color: "text-secondary",
             children: k.intl.string(M.default.F1t0c3)
-          }), T.length > 1 && (0, r.jsx)(X, {
+          }), T.length > 1 && (0, r.jsx)(Q, {
             gradientAngle: w,
             setGradientAngle: G
-          }), (0, r.jsx)(Q, {
+          }), (0, r.jsx)(J, {
             chassisMixAmount: A,
             setChassisMixAmount: e => {
               j(e), 0 === T.length && (0, C.lT)(T, B, x)
@@ -510,7 +519,7 @@ function en(e) {
           })]
         }), (0, r.jsxs)("div", {
           className: U.resetButton,
-          children: [(0, r.jsx)(J, {
+          children: [(0, r.jsx)($, {
             isCoachmark: o,
             isMobile: c
           }), (0, r.jsx)(u.zxk, {
@@ -522,10 +531,10 @@ function en(e) {
           })]
         })]
       })
-    }), o ? (0, r.jsx)(ee, {
+    }), o ? (0, r.jsx)(et, {
       onSaveTheme: Y,
       canApply: K
-    }) : (0, r.jsx)(et, {
+    }) : (0, r.jsx)(en, {
       onSaveTheme: Y,
       canApply: K,
       metadata: n

@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk10359 = require("./10359.js"),
   Chunk254477 = require("./254477.js");
 
-function O(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -43,7 +43,7 @@ function O(e) {
   return e
 }
 
-function j(e, t) {
+function O(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -66,13 +66,13 @@ function E(e) {
   i.useEffect(() => {
     null == E || E(null == S ? true : S.current)
   }, [S, E]), i.useEffect(() => {
-    p.default.track(_.rMx.VIEW_HANG_STATUS, O({
+    p.default.track(_.rMx.VIEW_HANG_STATUS, j({
       source: "HangStatusPopout",
       other_user_id: l
     }, (0, g.Z)(n.id)))
   }, [n.guild_id, n.id, l]);
   let T = i.useCallback(() => {
-      !I && P && (c.default.selectVoiceChannel(n.id), p.default.track(_.rMx.HANG_STATUS_CTA_CLICKED, j(O({
+      !I && P && (c.default.selectVoiceChannel(n.id), p.default.track(_.rMx.HANG_STATUS_CTA_CLICKED, O(j({
         source: "HangStatusPopout"
       }, (0, g.Z)(n.id)), {
         other_user_id: l,
@@ -87,7 +87,7 @@ function E(e) {
           if (null == t.details || null == t.emoji) return;
           (0, h._s)(t.details, t.emoji, true)
         } else(0, h.Zx)(e, true);
-        p.default.track(_.rMx.HANG_STATUS_CTA_CLICKED, j(O({
+        p.default.track(_.rMx.HANG_STATUS_CTA_CLICKED, O(j({
           source: "HangStatusPopout"
         }, (0, g.Z)(n.id)), {
           other_user_id: l,
@@ -108,7 +108,7 @@ function E(e) {
       children: (0, f.O8)(t)
     }), I ? (0, r.jsx)(s.ua7, {
       text: Z ? true : C.intl.string(C.t["0LMpW1"]),
-      children: e => (0, r.jsx)("div", j(O({}, e), {
+      children: e => (0, r.jsx)("div", O(j({}, e), {
         children: (0, r.jsx)(s.zxk, {
           size: "sm",
           variant: "secondary",

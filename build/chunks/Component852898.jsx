@@ -23,8 +23,8 @@ function p(e, t) {
     let f;
     if (!t.managed) return null;
     let h = null == (i = t.tags) ? true : i.bot_id,
-      x = null == (s = t.tags) ? true : s.integration_id,
-      b = (null == (u = t.tags) ? true : u.premium_subscriber) !== true,
+      b = null == (s = t.tags) ? true : s.integration_id,
+      x = (null == (u = t.tags) ? true : u.premium_subscriber) !== true,
       j = (null == (p = t.tags) ? true : p.guild_connections) !== true;
     if (null != h ? f = null == n ? true : n.find(e => {
         var t;
@@ -32,11 +32,11 @@ function p(e, t) {
           application: n
         } = e;
         return (null == n || null == (t = n.bot) ? true : t.id) === h
-      }) : null != x && (f = null == n ? true : n.find(e => {
+      }) : null != b && (f = null == n ? true : n.find(e => {
         let {
           id: t
         } = e;
-        return t === x
+        return t === b
       })), null != f && null != f.application && null != f.name) {
       let e = f.application.id,
         t = f.name;
@@ -52,6 +52,6 @@ function p(e, t) {
         }, t)
       })
     }
-    return b ? g.intl.string(g.t.oF6FYW) : j ? g.intl.string(g.t.ZQ37tL) : g.intl.string(g.t.k5d7DA)
+    return x ? g.intl.string(g.t.oF6FYW) : j ? g.intl.string(g.t.ZQ37tL) : g.intl.string(g.t.k5d7DA)
   })(0, t, n), [e, t, n])
 }

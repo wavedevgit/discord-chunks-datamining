@@ -129,7 +129,7 @@ function S(e) {
           })
         })]
       })]
-    }), (0, r.jsx)(b.Z, {
+    }), (0, r.jsx)(x.Z, {
       className: E.preview,
       guild: n,
       memberCount: f,
@@ -187,7 +187,7 @@ function T(e) {
         children: N.intl.string(N.t["4jnzlZ"])
       }), (0, r.jsx)("div", {
         className: E.editableSection,
-        children: (0, r.jsx)(x.Z, {
+        children: (0, r.jsx)(b.Z, {
           guild: t,
           guildMetadata: n
         })
@@ -224,7 +224,7 @@ function P(e) {
       disabled: t,
       tooltipText: t ? N.intl.string(N.t.Xx7XeH) : true
     }
-  }), [n.keywords, n.primaryCategoryId, p]), h = null != s ? s : a, x = i.useMemo(() => n.keywords.map(e => ({
+  }), [n.keywords, n.primaryCategoryId, p]), h = null != s ? s : a, b = i.useMemo(() => n.keywords.map(e => ({
     id: e,
     label: e
   })), [n.keywords]);
@@ -236,7 +236,7 @@ function P(e) {
         label: N.intl.string(N.t["0PJZXl"]),
         description: N.intl.string(N.t.ztiTDA),
         tagsLabel: N.intl.string(N.t["0PJZXl"]),
-        tags: x,
+        tags: b,
         onRemoveTag: g,
         onAddTag: p,
         onAddTagError: m,

@@ -88,15 +88,15 @@ function W(e) {
     className: U.roleMemberList,
     sections: [n.length, l.length],
     renderRow: function(e) {
-      let c, g, b, {
+      let c, g, j, {
           section: v,
           row: y
         } = e,
         N = false;
       switch (v) {
-        case M.m$.ROLES:
+        case D.m$.ROLES:
           var S;
-          b = (g = n[y]).rowType === M.aC.ROLE && (null == (S = g.tags) ? true : S.guild_connections) === null ? (0, i.jsx)(x.Z, {
+          j = (g = n[y]).rowType === D.aC.ROLE && (null == (S = g.tags) ? true : S.guild_connections) === null ? (0, i.jsx)(x.Z, {
             className: U.shield,
             color: g.colorString,
             size: 20
@@ -108,7 +108,7 @@ function W(e) {
           }), c = (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("div", {
               className: U.rowHeight,
-              children: b
+              children: j
             }), (0, i.jsx)(d.Text, {
               variant: "text-sm/normal",
               className: U.rowLabel,
@@ -117,7 +117,7 @@ function W(e) {
             })]
           }), N = g.disabled;
           break;
-        case M.m$.MEMBERS:
+        case D.m$.MEMBERS:
           g = l[y], c = (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(d.qEK, {
               src: g.avatarURL,
@@ -143,20 +143,20 @@ function W(e) {
       }
       if (null == g) return null;
       let O = !N && null == r && null != g.id;
-      return (0, i.jsxs)(j.Z, {
-        justify: j.Z.Justify.BETWEEN,
-        align: j.Z.Align.CENTER,
+      return (0, i.jsxs)(b.Z, {
+        justify: b.Z.Justify.BETWEEN,
+        align: b.Z.Align.CENTER,
         className: U.memberRow,
-        children: [(0, i.jsx)(j.Z, {
-          justify: j.Z.Justify.START,
-          align: j.Z.Align.CENTER,
+        children: [(0, i.jsx)(b.Z, {
+          justify: b.Z.Justify.START,
+          align: b.Z.Align.CENTER,
           className: U.__invalid_memberRowBody,
           children: c
         }), (0, i.jsx)(d.Text, {
           color: "text-muted",
           variant: "text-xs/normal",
           children: P.zB(g.rowType)
-        }), g.rowType !== M.aC.EMPTY_STATE && (0, i.jsx)(o.u, {
+        }), g.rowType !== D.aC.EMPTY_STATE && (0, i.jsx)(o.u, {
           asContainer: true,
           text: null != r ? r : a(g.rowType, g.disabled),
           children: (0, i.jsx)(d.P3F, {
@@ -170,7 +170,7 @@ function W(e) {
                 cancelText: V.intl.string(V.t["ETE/oK"]),
                 onConfirm: () => (function(e, n) {
                   if (t.isGuildStageVoice()) {
-                    let i = (0, C._L)(e, n === M.aC.ROLE ? p.BN.ROLE : p.BN.MEMBER, t);
+                    let i = (0, C._L)(e, n === D.aC.ROLE ? p.BN.ROLE : p.BN.MEMBER, t);
                     (0, C.Os)(i) ? h.Z.clearPermissionOverwrite(t.id, i.id): (0, m.hw)(t.id, [i])
                   } else h.Z.clearPermissionOverwrite(t.id, e)
                 })(e, i)
@@ -195,11 +195,11 @@ function W(e) {
         section: t
       } = e;
       switch (t) {
-        case M.m$.ROLES:
+        case D.m$.ROLES:
           return (0, i.jsx)(X, {
             title: V.intl.string(V.t.LPJmLy)
           }, "roles-title");
-        case M.m$.MEMBERS:
+        case D.m$.MEMBERS:
           return (0, i.jsx)(X, {
             title: V.intl.string(V.t["9Oq93t"])
           }, "members-title")
@@ -241,9 +241,9 @@ function F(e) {
       id: "StageModeratorSettingCard"
     }), (0, i.jsxs)("div", {
       className: U.cardFolder,
-      children: [(0, i.jsxs)(j.Z, {
-        justify: j.Z.Justify.BETWEEN,
-        align: j.Z.Align.CENTER,
+      children: [(0, i.jsxs)(b.Z, {
+        justify: b.Z.Justify.BETWEEN,
+        align: b.Z.Align.CENTER,
         className: U.folderHeader,
         children: [(0, i.jsx)(d.vwX, {
           tag: "h5",
@@ -279,7 +279,7 @@ function z(e) {
     isPrivateGuildChannel: r,
     roles: o,
     members: u
-  } = e, h = (0, a.e7)([Z.Z], () => Z.Z.can(B.Pl.ADMINISTRATOR, t)), g = _.Uu(B.Pl.VIEW_CHANNEL, t), m = _.Uu(B.Pl.ADMINISTRATOR, t);
+  } = e, h = (0, a.e7)([Z.Z], () => Z.Z.can(B.Pl.ADMINISTRATOR, t)), g = I.Uu(B.Pl.VIEW_CHANNEL, t), m = I.Uu(B.Pl.ADMINISTRATOR, t);
   async function p() {
     let e = l.accessPermissions,
       s = R.default.getCurrentUser();
@@ -340,9 +340,9 @@ function z(e) {
           children: V.intl.string(V.t.ZAk4Q0)
         })
       }), r && (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsxs)(j.Z, {
-          justify: j.Z.Justify.BETWEEN,
-          align: j.Z.Align.CENTER,
+        children: [(0, i.jsxs)(b.Z, {
+          justify: b.Z.Justify.BETWEEN,
+          align: b.Z.Align.CENTER,
           className: U.folderHeader,
           children: [(0, i.jsx)(d.vwX, {
             tag: "h5",
@@ -429,7 +429,7 @@ let q = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk496675.Z, Chunk271383.
     isPrivateGuildChannel: u,
     locked: h,
     permissionUpdates: m
-  } = e, [p, f] = l.useState(!_.Uu(B.Pl.SEND_MESSAGES, s));
+  } = e, [p, f] = l.useState(!I.Uu(B.Pl.SEND_MESSAGES, s));
   if (null == s || null == c) return null;
   let x = {
     title: V.intl.string(V.t.BAZMBg),
@@ -441,16 +441,16 @@ let q = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk496675.Z, Chunk271383.
       children: x.title
     }), (0, i.jsx)(d.R94, {
       children: x.subtitle
-    }), null != r && t ? h ? (0, i.jsx)(D.Z, {
+    }), null != r && t ? h ? (0, i.jsx)(M.Z, {
       canSync: false,
       icon: d.DuK,
       noticeText: V.intl.format(V.t.ETJqLi, {
         categoryName: r.name
       })
-    }) : (0, i.jsx)(D.Z, {
+    }) : (0, i.jsx)(M.Z, {
       buttonText: V.intl.string(V.t.NVwuHh),
       canSync: true,
-      icon: (0, d.GSL)(I.Z),
+      icon: (0, d.GSL)(_.Z),
       noticeText: V.intl.format(V.t.OIhm0N, {
         categoryName: r.name
       }),
@@ -466,7 +466,7 @@ let q = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk496675.Z, Chunk271383.
               let {
                 guild_id: e
               } = r, t = H({}, r.permissionOverwrites);
-              null != e && null == t[e] && (t[e] = _.we(e)), await (0, b.u)(s, t[e].deny, t[e].allow) && (0, g.wk)(s.id, {
+              null != e && null == t[e] && (t[e] = I.we(e)), await (0, j.u)(s, t[e].deny, t[e].allow) && (0, g.wk)(s.id, {
                 permissionOverwrites: Object.values(t)
               })
             }

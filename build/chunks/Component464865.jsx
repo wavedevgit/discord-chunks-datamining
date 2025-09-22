@@ -44,17 +44,17 @@ function j(e) {
   }, [N, E]), null == t) ? null : v ? (0, r.jsx)(a.Z, {}) : (0, r.jsxs)(s.hjN, {
     ref: n,
     children: [(0, r.jsxs)(s.vwX, {
-      className: b.title,
-      children: [x.intl.string(x.t["5XZKy8"]), (0, r.jsx)(p.xl, {
+      className: x.title,
+      children: [b.intl.string(b.t["5XZKy8"]), (0, r.jsx)(p.xl, {
         guild: t
       })]
     }), (0, r.jsx)(s.Text, {
       variant: "text-sm/medium",
       color: "text-secondary",
-      className: b.description,
-      children: j ? x.intl.format(x.t["J/v84O"], {
+      className: x.description,
+      children: j ? b.intl.format(b.t["J/v84O"], {
         helpCenterArticle: d.Z.getArticleURL(h.BhN.GUILD_VANITY_URL)
-      }) : x.intl.format(x.t.koklFB, {
+      }) : b.intl.format(b.t.koklFB, {
         helpCenterArticle: d.Z.getArticleURL(h.BhN.GUILD_VANITY_URL)
       })
     }), (0, r.jsx)(f.z, {

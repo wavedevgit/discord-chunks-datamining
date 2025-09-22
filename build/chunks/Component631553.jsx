@@ -2,7 +2,7 @@
 /** chunk id: 631553, original params: e,t,n (module,exports,require) **/
 let i;
 require.d(exports, {
-  Z: () => ej
+  Z: () => eZ
 }), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -256,7 +256,7 @@ class ex extends Chunk647438.Component {
         })
       }
       Chunk998502.ZP.on("REQUEST_OPEN_EXTERNAL_URL", (e, t) => {
-        Y.default.getDisableExternalLinkAlert() || t === W.Z.getLastURL() ? Q.ZP.send("OPEN_EXTERNAL_URL", t) : y.Z.show({
+        Y.default.getDisableExternalLinkAlert() || t === W.Z.getLastURL() ? q.ZP.send("OPEN_EXTERNAL_URL", t) : y.Z.show({
           title: em.intl.string(em.t.WLx4Fx),
           body: em.intl.string(em.t.H8O1TE),
           secondaryConfirmText: em.intl.string(em.t.IwqGhY),
@@ -265,7 +265,7 @@ class ex extends Chunk647438.Component {
           onConfirmSecondary: () => {
             v.Z.disableExternalLinkAlert()
           },
-          onConfirm: () => Q.ZP.send("OPEN_EXTERNAL_URL", t)
+          onConfirm: () => q.ZP.send("OPEN_EXTERNAL_URL", t)
         })
       })
     }
@@ -356,7 +356,7 @@ class ex extends Chunk647438.Component {
   }
 }
 
-function ej() {
+function eZ() {
   var e, t;
   let {
     locked: n,

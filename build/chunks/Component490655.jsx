@@ -71,8 +71,8 @@ let I = Chunk647438.memo(function(e) {
     applicationIntegrations: V,
     applicationBotIds: Y,
     builtInIntegrations: $,
-    customWebhooks: J,
-    followedChannelWebhooks: X
+    customWebhooks: X,
+    followedChannelWebhooks: J
   } = r.useMemo(() => {
     let e = {},
       t = {},
@@ -167,7 +167,7 @@ let I = Chunk647438.memo(function(e) {
       break;
     case N.b4C.CHANNEL_FOLLOWING:
       Q = (0, i.jsx)(y.Z, {
-        followedChannelWebhooks: X,
+        followedChannelWebhooks: J,
         editedWebhook: k,
         selectableWebhookChannels: U,
         canNavigate: K,
@@ -178,7 +178,7 @@ let I = Chunk647438.memo(function(e) {
       Q = (0, i.jsx)(C.Z, {
         guild: l,
         channel: I,
-        customWebhooks: J,
+        customWebhooks: X,
         editedWebhook: k,
         selectableWebhookChannels: function(e) {
           for (var t = 1; t < arguments.length; t++) {
@@ -214,8 +214,8 @@ let I = Chunk647438.memo(function(e) {
         channel: I,
         applicationIntegrations: V,
         builtInIntegrations: $,
-        customWebhooks: J,
-        followedChannelWebhooks: X,
+        customWebhooks: X,
+        followedChannelWebhooks: J,
         isLoadingWebhooks: A || null == l,
         canCreateWebhook: null != H,
         onManageCustomWebhooks: () => {

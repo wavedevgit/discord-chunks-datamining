@@ -24,17 +24,17 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk314734 = require("./314734.js"),
   Chunk409575 = require("./409575.js");
-let O = (0, Chunk879690.U)(() => ({
+let j = (0, Chunk879690.U)(() => ({
     visible: false
   })),
-  j = e => {
+  O = e => {
     (0, s.j)(() => {
-      O.setState({
+      j.setState({
         visible: e
       })
     })
   },
-  E = O;
+  E = j;
 
 function S(e) {
   let {
@@ -59,9 +59,9 @@ function S(e) {
       location: d.Z.APP_DMS_ENTRY_POINT_COMMAND_BUTTON,
       source: g._b.TEXT
     }))
-  }, [c, f]), O = null != v && v.filter(e => e.type === u.yU.CHAT || e.type === u.yU.PRIMARY_ENTRY_POINT).length > 0, E = !a && null != o && true === O;
-  return (i.useEffect(() => (j(E), () => {
-    j(false)
+  }, [c, f]), j = null != v && v.filter(e => e.type === u.yU.CHAT || e.type === u.yU.PRIMARY_ENTRY_POINT).length > 0, E = !a && null != o && true === j;
+  return (i.useEffect(() => (O(E), () => {
+    O(false)
   }), [E]), E) ? (0, r.jsx)(I, {
     context: t,
     application: o,
@@ -96,7 +96,7 @@ function I(e) {
     primaryEntryPointCommand: i,
     application: n,
     showAppLauncherPopup: u
-  }), O = (0, f.J)({
+  }), j = (0, f.J)({
     context: t,
     application: n,
     isEmbeddedApp: m,
@@ -106,13 +106,13 @@ function I(e) {
     channelRecipientUserId: b,
     setIsExecutingLaunchInteraction: y,
     analyticsLocations: C
-  }), j = h ? "critical-primary" : "primary";
+  }), O = h ? "critical-primary" : "primary";
   return (0, r.jsx)("div", {
     className: a()(x.entryPointAppCommandButtonContainer, v.Id),
     children: (0, r.jsx)(c.zxk, {
-      variant: j,
+      variant: O,
       loading: d,
-      onClick: O,
+      onClick: j,
       fullWidth: true,
       buttonRef: o,
       text: p

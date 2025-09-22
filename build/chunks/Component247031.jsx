@@ -196,7 +196,7 @@ class A extends Chunk647438.PureComponent {
   makeFilter(e) {
     if (null == e || 0 === e.length) return e => null != e;
     {
-      let t = RegExp("^".concat(b.Z.escape(e)), "i");
+      let t = RegExp("^".concat(x.Z.escape(e)), "i");
       return n => null != n && (n.id === e || t.test(n.username))
     }
   }
@@ -226,7 +226,7 @@ class A extends Chunk647438.PureComponent {
     Chunk434404.Z.setSearchQuery("")
   }
   constructor(...e) {
-    super(...e), P(this, "getSortedBans", (0, x.oH)((e, t) => {
+    super(...e), P(this, "getSortedBans", (0, b.oH)((e, t) => {
       if (null == e) return [];
       let n = this.makeFilter(t),
         r = [];

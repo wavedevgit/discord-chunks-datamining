@@ -28,8 +28,8 @@ let y = (0, Chunk112724.Z)(e => {
     onSelectParticipant: C,
     onContextMenuParticipant: v,
     onFullscreenParticipant: x,
-    channel: O,
-    hasConnectPermission: j,
+    channel: j,
+    hasConnectPermission: O,
     className: E,
     inCall: S,
     showParticipants: I = true,
@@ -45,26 +45,26 @@ let y = (0, Chunk112724.Z)(e => {
     c.S.dispatch(m.CkL.REMEASURE_TARGET)
   }, [P, Z, R.width, R.height]);
   let M = i.useMemo(() => n.filter(e => e.type !== g.fO.ACTIVITY || !e.participants.some(e => (0, a.J)(e))), [n, y]);
-  return (null == w ? true : w.channelId) === O.id ? (0, r.jsx)(d.Z, {
+  return (null == w ? true : w.channelId) === j.id ? (0, r.jsx)(d.Z, {
     height: Z
-  }) : (null == O ? true : O.isGuildVocal()) && !S ? (0, r.jsx)(u.Z, {
-    channel: O,
+  }) : (null == j ? true : j.isGuildVocal()) && !S ? (0, r.jsx)(u.Z, {
+    channel: j,
     participants: t,
-    hasConnectPermission: j
+    hasConnectPermission: O
   }) : N === m.WtW.VOICE ? (0, r.jsx)(o.Z, {
-    guildId: O.guild_id,
+    guildId: j.guild_id,
     width: P,
     className: b.voiceCallWrapper,
     participants: t,
     onContextMenu: v
   }) : (n = S ? n : t, null == l) ? 0 === n.length ? (0, r.jsx)(f.Z, {
-    channelId: O.id
+    channelId: j.id
   }) : (0, r.jsx)(s.Z, {
     className: b.videoGridWrapper,
     justify: s.Z.Justify.CENTER,
     align: s.Z.Align.CENTER,
     children: (0, r.jsx)(p.Z, {
-      channel: O,
+      channel: j,
       className: b.videoGrid,
       participants: M,
       totalNumberOfParticipants: t.length,
@@ -87,7 +87,7 @@ let y = (0, Chunk112724.Z)(e => {
     width: P,
     layout: _,
     inCall: S,
-    channel: O,
+    channel: j,
     showParticipants: I
   })
 })

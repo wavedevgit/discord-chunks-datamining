@@ -1,7 +1,7 @@
 /** Chunk was on 62987 **/
 /** chunk id: 185413, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => O
+  default: () => j
 }), require("./388685.js"), require("./953529.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -57,7 +57,7 @@ function x(e, t) {
   return i
 }
 
-function O(e) {
+function j(e) {
   var {
     channelId: t
   } = e, n = x(e, ["channelId"]);
@@ -67,13 +67,13 @@ function O(e) {
     h.default.track(y.rMx.OPEN_MODAL, {
       type: "Grant Channel Access"
     })
-  }, []), null == a || null == o) ? null : (0, r.jsx)(j, v({
+  }, []), null == a || null == o) ? null : (0, r.jsx)(O, v({
     guild: o,
     channel: a
   }, n))
 }
 
-function j(e) {
+function O(e) {
   var t, n, {
       guild: l,
       channel: d,
@@ -81,12 +81,12 @@ function j(e) {
       newChannel: h,
       inSettings: y
     } = e,
-    O = x(e, ["guild", "channel", "onClose", "newChannel", "inSettings"]);
-  let [j, E] = i.useState(""), [S, I] = i.useState({}), [P, Z] = i.useState(false), [T, N] = i.useState(null), A = i.useRef(null), {
+    j = x(e, ["guild", "channel", "onClose", "newChannel", "inSettings"]);
+  let [O, E] = i.useState(""), [S, I] = i.useState({}), [P, Z] = i.useState(false), [T, N] = i.useState(null), A = i.useRef(null), {
     roles: w,
     members: R,
     getRichTag: M
-  } = (0, g.Q)(l, d, d.accessPermissions, j), D = m.Z.useSections({
+  } = (0, g.Q)(l, d, d.accessPermissions, O), D = m.Z.useSections({
     roles: w,
     members: R
   }), k = h && 0 === Object.keys(S).length;
@@ -112,14 +112,14 @@ function j(e) {
   let U = (0, u.zi)(d.type) ? o.W4G : o.gjC;
   return (0, r.jsx)(m.Z.Provider, {
     listRef: A,
-    query: j,
+    query: O,
     setQuery: E,
     pendingAdditions: S,
     setPendingAdditions: I,
     roles: w,
     members: R,
     getRichTag: M,
-    children: (0, r.jsx)(a.Modal, (t = v({}, O), n = n = {
+    children: (0, r.jsx)(a.Modal, (t = v({}, j), n = n = {
       title: _.intl.string(_.t.dMJ3Y2),
       onClose: p,
       input: (0, r.jsxs)("div", {

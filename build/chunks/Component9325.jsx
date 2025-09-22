@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk197571 = require("./197571.js");
 
 function E(e, t, n) {
-  e.preventDefault(), p.default.track(m.rMx.GUILD_TEMPLATE_APP_OPENED, {
+  e.preventDefault(), g.default.track(p.rMx.GUILD_TEMPLATE_APP_OPENED, {
     guild_template_code: t,
     guild_template_name: n.name,
     guild_template_description: n.description,
@@ -35,21 +35,21 @@ function E(e, t, n) {
 function v(e) {
   let {
     code: t
-  } = e, n = (0, l.e7)([o.Z], () => o.Z.getGuildTemplate(t));
+  } = e, n = (0, l.e7)([a.Z], () => a.Z.getGuildTemplate(t));
   return (i.useEffect(() => {
     (0, d.e)("guild_template_mobile")
-  }, []), null == n || n.state === f.Rj.RESOLVING) ? (0, r.jsx)(a.ZP, {
+  }, []), null == n || n.state === f.Rj.RESOLVING) ? (0, r.jsx)(o.ZP, {
     children: (0, r.jsx)(s.$jN, {})
-  }) : n.state === f.Rj.RESOLVED ? (0, r.jsxs)(a.ZP, {
+  }) : n.state === f.Rj.RESOLVED ? (0, r.jsxs)(o.ZP, {
     children: [(0, r.jsx)(u.Z, {
       guildTemplate: n,
       tall: true
-    }), (0, r.jsx)(a.zx, {
+    }), (0, r.jsx)(o.zx, {
       onClick: e => E(e, t, n),
       className: x.marginTop20,
       children: _.intl.string(_.t["a3Gl+f"])
     })]
-  }) : (0, r.jsx)(g.Z, {
+  }) : (0, r.jsx)(m.Z, {
     text: _.intl.string(_.t["e/rZ2t"]),
     buttonCta: _.intl.string(_.t.HAvYn5),
     onClick: e => E(e, t, n)

@@ -42,7 +42,7 @@ function x(e) {
   return e
 }
 
-function O(e, t) {
+function j(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -55,13 +55,13 @@ function O(e, t) {
   }), e
 }
 
-function j(e) {
+function O(e) {
   var t, l, p;
   let {
     userId: y,
     channel: _
   } = e, C = i.useRef(null), {
-    analyticsLocations: j
+    analyticsLocations: O
   } = (0, d.ZP)(u.Z.USERNAME), E = (0, o.e7)([g.default], () => g.default.getUser(y)), S = (0, o.e7)([m.ZP], () => null != y ? m.ZP.getMember(_.guild_id, y) : null), I = (0, h.X7)(_.guild_id, null != y ? y : true, null != (t = null == S ? true : S.colorStrings) ? t : null);
 
   function P(e) {
@@ -70,7 +70,7 @@ function j(e) {
       let {
         default: e
       } = await Promise.all([n.e("79695"), n.e("70675")]).then(n.bind(n, 654663));
-      return t => (0, r.jsx)(e, O(x({}, t), {
+      return t => (0, r.jsx)(e, j(x({}, t), {
         user: E,
         guildId: _.guild_id,
         channel: _
@@ -83,7 +83,7 @@ function j(e) {
     className: a()(v.threadCreatorName, v.unknownCreatorName),
     children: Z
   }) : (0, r.jsx)(d.Gt, {
-    value: j,
+    value: O,
     children: (0, r.jsx)(f.Z, {
       targetElementRef: C,
       user: E,
@@ -91,7 +91,7 @@ function j(e) {
       channelId: _.id,
       roleId: null == S ? true : S.colorRoleId,
       clickTrap: true,
-      children: e => (0, r.jsx)(s.P3F, O(x({}, e), {
+      children: e => (0, r.jsx)(s.P3F, j(x({}, e), {
         innerRef: C,
         tag: "span",
         className: v.threadCreatorName,
@@ -123,7 +123,7 @@ function E(e) {
       children: (0, r.jsx)("div", {
         className: v.subtitle,
         children: C.intl.format(C.t.imPXd3, {
-          usernameHook: (e, n) => (0, r.jsx)(j, {
+          usernameHook: (e, n) => (0, r.jsx)(O, {
             userId: t.ownerId,
             channel: t
           }, n)

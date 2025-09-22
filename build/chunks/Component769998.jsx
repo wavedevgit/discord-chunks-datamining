@@ -24,9 +24,9 @@ function f(e) {
     action: n,
     triggerType: f,
     guildId: h,
-    toggled: x,
-    onToggleAction: b
-  } = e, j = e => () => b(e), v = (0, c.c)(n.type, n, f), _ = null == (t = n.metadata) ? true : t.durationSeconds, O = null != _ ? (0, m.L9)(_) : null, y = (0, i.e7)([o.Z, a.Z], () => o.Z.can(u.Plq.MODERATE_MEMBERS, a.Z.getGuild(h)), [h]);
+    toggled: b,
+    onToggleAction: x
+  } = e, j = e => () => x(e), v = (0, c.c)(n.type, n, f), _ = null == (t = n.metadata) ? true : t.durationSeconds, O = null != _ ? (0, m.L9)(_) : null, y = (0, i.e7)([o.Z, a.Z], () => o.Z.can(u.Plq.MODERATE_MEMBERS, a.Z.getGuild(h)), [h]);
   if (null == v) return null;
   let {
     headerText: C,
@@ -51,7 +51,7 @@ function f(e) {
         color: "interactive-normal",
         variant: "text-xs/medium",
         children: N
-      }), x && (0, r.jsxs)(s.Text, {
+      }), b && (0, r.jsxs)(s.Text, {
         color: "interactive-normal",
         variant: "text-xs/medium",
         children: [null === O ? null : f === d.fX.MENTION_SPAM ? g.intl.format(g.t.i3lsKC, {
@@ -92,7 +92,7 @@ function f(e) {
         }({}, e), n = n = {
           children: (0, r.jsx)(l.$q, {
             type: l.M0.INVERTED,
-            value: x,
+            value: b,
             onChange: j(false),
             disabled: !y,
             className: p.__invalid_actionCheckbox

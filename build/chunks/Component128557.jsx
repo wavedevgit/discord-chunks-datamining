@@ -277,7 +277,7 @@ function R(e) {
       completed: U,
       onClick: H
     })
-  }, "message")), (0, j.isWeb)() && J.push((0, r.jsx)(o.Z.div, {
+  }, "message")), (0, O.isWeb)() && J.push((0, r.jsx)(o.Z.div, {
     className: T.cardWrapper,
     style: W ? {
       opacity: Y[J.length]
@@ -302,7 +302,7 @@ function R(e) {
   }, "addapp")));
   let $ = v ? Z.intl.string(Z.t["1ach9P"]) : Z.intl.string(Z.t["ezm+/v"]);
   p && ($ = Z.intl.string(Z.t["gwyU/P"]));
-  let ee = "".concat(O.Z.getArticleURL(I.BhN.GUILD_GETTING_STARTED), "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-new-user&utm_content=--t%3Apm");
+  let ee = "".concat(j.Z.getArticleURL(I.BhN.GUILD_GETTING_STARTED), "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-new-user&utm_content=--t%3Apm");
   return (0, r.jsx)(S.ZP, {
     channelId: t.id,
     children: (0, r.jsx)("div", {

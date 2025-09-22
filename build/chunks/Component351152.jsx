@@ -1,7 +1,7 @@
 /** Chunk was on 46746 **/
 /** chunk id: 351152, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => y
 }), require("./361932.js"), require("./187205.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -51,7 +51,7 @@ function b(e) {
   }) : null
 }
 
-function S(e) {
+function y(e) {
   let {
     onSelectGuild: t
   } = e, n = (0, a.e7)([h.ZP], () => h.ZP.getGuildFolders());

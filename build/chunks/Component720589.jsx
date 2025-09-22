@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk360242 = require("./360242.js");
 
-function S(e, t, n) {
+function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -49,7 +49,7 @@ class O extends Chunk647438.PureComponent {
         let {
           channel: t
         } = e;
-        return "general" === (0, h.F6)(t, y.default, j.Z)
+        return "general" === (0, h.F6)(t, y.default, C.Z)
       }),
       n = null != t ? t : e[0];
     return null != n ? n.channel.id : null
@@ -83,9 +83,9 @@ class O extends Chunk647438.PureComponent {
     } = this.props, {
       channels: t,
       selectedGuildId: n,
-      selectedChannelId: a,
-      errorMessage: i
-    } = this.state, s = Chunk709054.default.keys(module).map(t => {
+      selectedChannelId: r,
+      errorMessage: a
+    } = this.state, i = Chunk709054.default.keys(module).map(t => {
       let {
         guild: n
       } = e[t];
@@ -94,63 +94,58 @@ class O extends Chunk647438.PureComponent {
         label: n.name,
         guild: n
       }
-    }), d = exports.map(e => {
+    }), s = exports.map(e => {
       let {
         channel: t,
         category: n
       } = e;
       return {
         value: t.id,
-        label: (0, h.F6)(t, y.default, j.Z),
+        label: (0, h.F6)(t, y.default, C.Z),
         channel: t,
         category: n
       }
-    }), c = 0 === Chunk442837.length, g = Chunk528963 ? Chunk388032.intl.string(Chunk388032.t["6b6QoK"]) : Chunk388032.intl.string(Chunk388032.t.Z0quyM);
-    return (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
-      children: [(0, Chunk951288.jsx)(Chunk481060.xJW, {
-        className: Chunk360242.bottomMargin,
-        title: Chunk388032.intl.string(Chunk388032.t.xFn72t),
-        children: (0, Chunk951288.jsx)(Chunk481060.VcW, {
-          value: require,
-          options: Chunk442837,
-          isDisabled: Chunk528963,
-          onChange: this.handleGuildSelect,
-          renderOptionPrefix: e => (function(e) {
-            if (null == e) return null;
-            let {
-              guild: t
-            } = e;
-            return (0, l.jsx)(m.Z, {
-              guild: t,
-              size: m.Z.Sizes.MINI
-            })
-          })(e)
-        })
-      }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
-        className: Chunk360242.bottomMargin,
-        title: Chunk388032.intl.string(Chunk388032.t.PDn2fX),
-        children: (0, Chunk951288.jsx)(Chunk481060.VcW, {
-          value: Chunk120356,
-          options: Chunk570140,
-          isDisabled: 0 === Chunk570140.length,
-          onChange: this.handleChannelSelect,
-          renderOptionPrefix: e => (function(e) {
-            if (null == e) return null;
-            let {
-              channel: t
-            } = e, n = (0, u.KS)(t);
-            return null != n && (0, l.jsx)(n, {
-              size: "xs",
-              color: "currentColor",
-              className: Z.icon
-            })
-          })(e)
-        })
+    }), d = 0 === i.length, c = Chunk570140 ? Chunk388032.intl.string(Chunk388032.t["6b6QoK"]) : Chunk388032.intl.string(Chunk388032.t.Z0quyM);
+    return (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+      gap: 16,
+      children: [(0, Chunk951288.jsx)(Chunk481060.VcW, {
+        label: Chunk388032.intl.string(Chunk388032.t.xFn72t),
+        value: require,
+        options: i,
+        isDisabled: Chunk570140,
+        onChange: this.handleGuildSelect,
+        renderOptionPrefix: e => (function(e) {
+          if (null == e) return null;
+          let {
+            guild: t
+          } = e;
+          return (0, l.jsx)(m.Z, {
+            guild: t,
+            size: m.Z.Sizes.MINI
+          })
+        })(e)
+      }), (0, Chunk951288.jsx)(Chunk481060.VcW, {
+        label: Chunk388032.intl.string(Chunk388032.t.PDn2fX),
+        value: Chunk647438,
+        options: Chunk442837,
+        isDisabled: 0 === Chunk442837.length,
+        onChange: this.handleChannelSelect,
+        renderOptionPrefix: e => (function(e) {
+          if (null == e) return null;
+          let {
+            channel: t
+          } = e, n = (0, u.KS)(t);
+          return null != n && (0, l.jsx)(n, {
+            size: "xs",
+            color: "currentColor",
+            className: S.icon
+          })
+        })(e)
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
-        color: Chunk528963 || null != i ? "text-danger" : "text-muted",
+        color: Chunk570140 || null != Chunk120356 ? "text-danger" : "text-muted",
         className: Chunk360242.bottomMargin,
-        children: null != i ? i : Chunk313201
+        children: null != Chunk120356 ? Chunk120356 : Chunk528963
       })]
     })
   }
@@ -229,7 +224,7 @@ class O extends Chunk647438.PureComponent {
     })
   }
   constructor(e) {
-    super(e), S(this, "handleGuildSelect", e => {
+    super(e), N(this, "handleGuildSelect", e => {
       let {
         guilds: t
       } = this.props, {
@@ -240,11 +235,11 @@ class O extends Chunk647438.PureComponent {
         selectedChannelId: r,
         channels: l
       })
-    }), S(this, "handleChannelSelect", e => {
+    }), N(this, "handleChannelSelect", e => {
       this.setState({
         selectedChannelId: e
       })
-    }), S(this, "handleFollow", () => {
+    }), N(this, "handleFollow", () => {
       let {
         channel: e,
         onClose: t
@@ -270,7 +265,7 @@ class O extends Chunk647438.PureComponent {
               "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
                 return Object.getOwnPropertyDescriptor(n, e).enumerable
               }))), l.forEach(function(t) {
-                S(e, t, n[t])
+                N(e, t, n[t])
               })
             }
             return e
@@ -278,10 +273,10 @@ class O extends Chunk647438.PureComponent {
         })
       }).catch(e => {
         e.body.code === v.evJ.TOO_MANY_WEBHOOKS ? this.setState({
-          errorMessage: N.intl.string(N.t["1eZ4aG"]),
+          errorMessage: Z.intl.string(Z.t["1eZ4aG"]),
           submitting: false
         }) : this.setState({
-          errorMessage: N.intl.string(N.t.LgwhuL),
+          errorMessage: Z.intl.string(Z.t.LgwhuL),
           submitting: false
         })
       }))
@@ -306,8 +301,8 @@ class O extends Chunk647438.PureComponent {
 let w = Chunk442837.ZP.connectStores([Chunk430824.Z, Chunk592125.Z, Chunk984933.ZP, Chunk496675.Z, Chunk944486.Z], e => {
   let {
     channel: t
-  } = e, n = b.Z.getGuild(t.guild_id), l = b.Z.getGuildsArray().reduce((e, t) => {
-    let n = x.ZP.getChannels(t.id).SELECTABLE.map(e => e.channel).filter(e => e.type === v.d4z.GUILD_TEXT && f.Z.can(v.Plq.MANAGE_WEBHOOKS, e)).map(e => {
+  } = e, n = f.Z.getGuild(t.guild_id), l = f.Z.getGuildsArray().reduce((e, t) => {
+    let n = b.ZP.getChannels(t.id).SELECTABLE.map(e => e.channel).filter(e => e.type === v.d4z.GUILD_TEXT && x.Z.can(v.Plq.MANAGE_WEBHOOKS, e)).map(e => {
       let t = p.Z.getChannel(e.parent_id);
       return {
         channel: e,
@@ -318,7 +313,7 @@ let w = Chunk442837.ZP.connectStores([Chunk430824.Z, Chunk592125.Z, Chunk984933.
       guild: t,
       channels: n
     }), e
-  }, {}), r = C.Z.getLastChannelFollowingDestination();
+  }, {}), r = j.Z.getLastChannelFollowingDestination();
   return {
     guildToFollow: n,
     channelNameToFollow: t.name,

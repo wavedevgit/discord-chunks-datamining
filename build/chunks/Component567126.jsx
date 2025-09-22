@@ -107,7 +107,7 @@ function H(e) {
     enableGoLiveCaptureCard: l
   } = w.Z.useExperiment({
     location: "GoLive_Source_Select"
-  }), o = y.Z.supports(B.AN.GO_LIVE_HARDWARE), [a, f] = i.useState(null), [h, v] = i.useState(null), [b, C] = i.useState(null), O = null != b && b.length > 0, [Z, I] = i.useState(c.vA.WINDOW), [N, T] = i.useState(false), E = i.useRef(null), A = i.useRef(new u.Xp), M = (0, d.e7)([g.ZP], () => g.ZP.getRunningGames()), L = F((0, d.e7)([j.Z], () => j.Z.quests), M, h), W = i.useMemo(() => null == h ? null : [...h].sort((e, t) => z(t, null == L ? true : L.source.id) - z(e, null == L ? true : L.source.id)), [L, h]);
+  }), o = S.Z.supports(B.AN.GO_LIVE_HARDWARE), [a, f] = i.useState(null), [h, v] = i.useState(null), [b, C] = i.useState(null), O = null != b && b.length > 0, [Z, I] = i.useState(c.vA.WINDOW), [N, T] = i.useState(false), E = i.useRef(null), A = i.useRef(new u.Xp), M = (0, d.e7)([g.ZP], () => g.ZP.getRunningGames()), L = F((0, d.e7)([j.Z], () => j.Z.quests), M, h), W = i.useMemo(() => null == h ? null : [...h].sort((e, t) => z(t, null == L ? true : L.source.id) - z(e, null == L ? true : L.source.id)), [L, h]);
   i.useEffect(() => {
     let e = A.current;
     return (0, P.t)({
@@ -215,7 +215,7 @@ function H(e) {
         let e = E.current;
         null != e && T(!e.isScrolledToTop())
       },
-      children: [Z === c.vA.WINDOW && null != L && (0, r.jsx)(S.Z, {
+      children: [Z === c.vA.WINDOW && null != L && (0, r.jsx)(y.Z, {
         quest: L.quest
       }), (0, r.jsx)(x.Z, {
         layout: x.Z.Layout.WRAP,
@@ -296,7 +296,7 @@ function J(e) {
   i.useEffect(() => {
     let e = d.current,
       t = () => {
-        let e = Object.entries(y.Z.getVideoDevices()).filter(e => {
+        let e = Object.entries(S.Z.getVideoDevices()).filter(e => {
           let [t, n] = e;
           return !n.disabled
         });

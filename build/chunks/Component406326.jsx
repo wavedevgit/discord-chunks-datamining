@@ -58,8 +58,8 @@ function _(e) {
     totalResults: _,
     isIndexing: v,
     isSearching: x,
-    documentsIndexed: O
-  } = e, j = (0, u.UX)({
+    documentsIndexed: j
+  } = e, O = (0, u.UX)({
     location: "SearchHeader"
   }), E = (0, d.nP)({
     isXDMSearch: t.type === f.aib.DMS,
@@ -70,7 +70,7 @@ function _(e) {
   }), I = (0, h.I)(t), {
     totalFilters: P
   } = (0, p.p4)(I, t), Z = i.useMemo(() => {
-    if (t.type === f.aib.DMS && j) {
+    if (t.type === f.aib.DMS && O) {
       var e, n;
       let t = null != (n = null == (e = (0, c.$G)(I).channel_id) ? true : e.length) ? n : 0;
       return t > 0 ? m.intl.format(m.t.A2dqWF, {
@@ -78,7 +78,7 @@ function _(e) {
       }) : m.intl.string(m.t.tc619f)
     }
     return null
-  }, [j, t.type, I]), T = i.useMemo(() => [{
+  }, [O, t.type, I]), T = i.useMemo(() => [{
     label: m.intl.string(m.t.CbaapK),
     value: f.QIO.NEWEST
   }, {
@@ -111,7 +111,7 @@ function _(e) {
         subtitle: Z,
         isIndexing: v,
         isSearching: x,
-        documentsIndexed: O
+        documentsIndexed: j
       })
     }), E || S ? (0, r.jsxs)("div", {
       className: g.searchModeAndFiltersContainer,
@@ -160,7 +160,7 @@ function C(e) {
   } = e;
   return l ? (0, r.jsx)(x, {
     documentsIndexed: a
-  }) : i ? (0, r.jsx)(O, {}) : (0, r.jsx)(j, {
+  }) : i ? (0, r.jsx)(j, {}) : (0, r.jsx)(O, {
     totalResults: t,
     subtitle: n
   })
@@ -201,7 +201,7 @@ function x(e) {
   })
 }
 
-function O() {
+function j() {
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-md/medium",
@@ -211,7 +211,7 @@ function O() {
   })
 }
 
-function j(e) {
+function O(e) {
   let {
     totalResults: t,
     subtitle: n

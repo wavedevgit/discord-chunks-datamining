@@ -21,8 +21,8 @@ var Chunk647438 = require("./647438.js"),
 function h(e) {
   let t, n = (0, c.Ob)(e),
     h = null == e ? true : e.features.has(p.oNc.CREATOR_MONETIZABLE_PROVISIONAL),
-    x = null == e ? true : e.features.has(p.oNc.CREATOR_MONETIZABLE),
-    b = (0, i.e7)([a.default], () => {
+    b = null == e ? true : e.features.has(p.oNc.CREATOR_MONETIZABLE),
+    x = (0, i.e7)([a.default], () => {
       let t = a.default.getCurrentUser();
       return null != e && (0, s.eM)(e, t)
     }),
@@ -59,16 +59,16 @@ function h(e) {
     requestCooldownDuration: S,
     creatorRevenuePolicyUrl: o.Z.getArticleURL(p.BhN.CREATOR_POLICY)
   }));
-  let D = n && b && false === x,
+  let D = n && x && false === b,
     A = n && false === h,
     L = (0, g.f)(),
-    k = I && R && b ? f.intl.format(f.t.wbVIUF, {}) : true;
+    k = I && R && x ? f.intl.format(f.t.wbVIUF, {}) : true;
   return r.useEffect(() => {
     D && N()
   }, [N, D]), {
     resubmittingEnableRequest: v,
     resubmissionError: j,
-    isGuildOwner: b,
+    isGuildOwner: x,
     createEnableRequest: _,
     resubmittedRequest: O,
     eligibilityLoading: y,

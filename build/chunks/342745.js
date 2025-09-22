@@ -14,6 +14,5 @@ module.exports = {
   editor: "editor__4d307",
   backButton: "backButton__4d307",
   closeButton: "closeButton__4d307",
-  backButtonInnner: "backButtonInnner__4d307",
-  guildSelectorContainer: "guildSelectorContainer__4d307"
+  backButtonInnner: "backButtonInnner__4d307"
 }

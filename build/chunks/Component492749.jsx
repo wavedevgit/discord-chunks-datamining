@@ -1,7 +1,7 @@
 /** Chunk was on 79764 **/
 /** chunk id: 492749, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => _
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -99,7 +99,7 @@ function g(e) {
   })
 }
 
-function j(e) {
+function _(e) {
   let t, {
       directoryChannelId: n,
       onClose: l,
@@ -108,13 +108,13 @@ function j(e) {
       directoryGuildName: u,
       availableGuilds: m,
       addedGuilds: p,
-      loading: j
+      loading: _
     } = e,
-    [_, b] = s.useState(0);
-  return t = j ? (0, i.jsx)("div", {
+    [j, b] = s.useState(0);
+  return t = _ ? (0, i.jsx)("div", {
     className: C.emptyContainer,
     children: (0, i.jsx)(o.$jN, {})
-  }) : 0 === _ ? 0 === m.length ? (0, i.jsxs)("div", {
+  }) : 0 === j ? 0 === m.length ? (0, i.jsxs)("div", {
     className: C.emptyContainer,
     children: [(0, i.jsx)("img", {
       src: h,
@@ -165,19 +165,19 @@ function j(e) {
         children: x.intl.string(x.t.pYFZ9v)
       }), (0, i.jsxs)(o.njP, {
         className: C.tabBar,
-        selectedItem: _,
+        selectedItem: j,
         onItemSelect: b,
         type: "top",
         look: "brand",
         children: [(0, i.jsx)(o.njP.Item, {
           className: r()(C.tabBarItem, {
-            [C.selectedTab]: 0 === _
+            [C.selectedTab]: 0 === j
           }),
           id: 0,
           children: x.intl.string(x.t.FTe8HR)
         }), (0, i.jsx)(o.njP.Item, {
           className: r()(C.tabBarItem, {
-            [C.selectedTab]: 1 === _
+            [C.selectedTab]: 1 === j
           }),
           id: 1,
           children: x.intl.string(x.t.epOump)

@@ -49,10 +49,10 @@ let P = function(e, t, n) {
         ((0, v.isMac)() ? N : T) && _.wS && (n.preventDefault(), (0, _.JG)(w.content));
         break;
       case "e":
-        r && !R.isSystemDM() && (0, O.Z)(w, M) && (n.preventDefault(), (0, S.Hd)(R, w));
+        r && !R.isSystemDM() && (0, j.Z)(w, M) && (n.preventDefault(), (0, S.Hd)(R, w));
         break;
       case "p":
-        (r || A) && (0, j.Z)(w, R) && (n.preventDefault(), (0, S.rY)(R, w, n));
+        (r || A) && (0, O.Z)(w, R) && (n.preventDefault(), (0, S.rY)(R, w, n));
         break;
       case "+":
         (r || A) && function(e) {

@@ -1,21 +1,21 @@
-/** Chunk was on 82758 **/
-/** chunk id: 884746, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 24753 **/
+/** chunk id: 884746, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  q: () => a
+  q: () => s
 }), require("./539854.js");
 var Chunk442837 = require("./442837.js"),
   Chunk146085 = require("./146085.js"),
   Chunk984933 = require("./984933.js"),
   Chunk496675 = require("./496675.js");
 
-function a(e) {
+function s(e) {
   var t;
-  let r = null != (t = null == e ? true : e.id) ? t : null;
-  return (0, n.Wu)([s.ZP, i.Z], () => s.ZP.getChannels(r)[s.Zb].reduce((e, t) => {
-    let r = t.channel;
-    return r.isGuildStageVoice() && function(e) {
-      let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : i.Z;
+  let n = null != (t = null == e ? true : e.id) ? t : null;
+  return (0, r.Wu)([i.ZP, a.Z], () => i.ZP.getChannels(n)[i.Zb].reduce((e, t) => {
+    let n = t.channel;
+    return n.isGuildStageVoice() && function(e) {
+      let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : a.Z;
       return !!e.isGuildStageVoice() && t.can(l.yP, e)
-    }(t.channel, i.Z) && e.push(r), e
-  }, []), [r])
+    }(t.channel, a.Z) && e.push(n), e
+  }, []), [n])
 }

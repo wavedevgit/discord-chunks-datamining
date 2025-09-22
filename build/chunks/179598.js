@@ -1,5 +1,5 @@
 /** Chunk was on 73628 **/
-/** chunk id: 179598, original params: A,e,t (module,exports,require) **/
+/** chunk id: 179598, original params: e,A,t (module,exports,require) **/
 module.exports = {
   modalRoot: "modalRoot__7fffd",
   modalHeader: "modalHeader__7fffd",
@@ -7,7 +7,6 @@ module.exports = {
   modalContent: "modalContent__7fffd",
   productFieldsSection: "productFieldsSection__7fffd",
   descriptionArea: "descriptionArea__7fffd",
-  thumbnailLabel: "thumbnailLabel__7fffd",
   productPreview: "productPreview__7fffd",
   previewHeading: "previewHeading__7fffd",
   footerActionButtons: "footerActionButtons__7fffd",

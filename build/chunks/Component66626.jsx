@@ -23,14 +23,14 @@ function m(e) {
     onSubmit: h,
     onClose: p,
     onBack: f
-  } = e, [g, j] = s.useState(false), [_, b] = s.useState(null), L = async () => {
-    j(true);
+  } = e, [g, _] = s.useState(false), [j, b] = s.useState(null), L = async () => {
+    _(true);
     try {
       await h()
     } catch (e) {
       b(new a.Z(e))
     }
-    j(false)
+    _(false)
   };
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)(r.xBx, {
@@ -53,26 +53,21 @@ function m(e) {
     }), (0, i.jsxs)(r.hzk, {
       className: u.createGuild,
       paddingFix: false,
-      children: [(0, i.jsx)(r.xJW, {
-        title: d.intl.string(d.t.FFFAGh),
-        children: (0, i.jsx)(r.Kx8, {
-          value: n,
-          maxLength: 200,
-          placeholder: d.intl.string(d.t.VzuITE),
-          onChange: m,
-          error: null == _ ? true : _.getAnyErrorMessage()
-        })
-      }), (0, i.jsx)(r.xJW, {
-        className: u.formItemSpaced,
-        title: d.intl.string(d.t.Olo8FB),
-        children: (0, i.jsx)(r.q4e, {
-          placeholder: d.intl.string(d.t.XqMe3N),
-          options: (0, c.b7)(t),
-          clearable: false,
-          value: x,
-          onChange: C,
-          maxVisibleItems: 4
-        })
+      children: [(0, i.jsx)(r.Kx8, {
+        label: d.intl.string(d.t.FFFAGh),
+        value: n,
+        maxLength: 200,
+        placeholder: d.intl.string(d.t.VzuITE),
+        onChange: m,
+        error: null == j ? true : j.getAnyErrorMessage()
+      }), (0, i.jsx)(r.q4e, {
+        label: d.intl.string(d.t.Olo8FB),
+        placeholder: d.intl.string(d.t.XqMe3N),
+        options: (0, c.b7)(t),
+        clearable: false,
+        value: x,
+        onChange: C,
+        maxVisibleItems: 4
       })]
     }), (0, i.jsxs)(r.mzw, {
       justify: o.Z.Justify.BETWEEN,

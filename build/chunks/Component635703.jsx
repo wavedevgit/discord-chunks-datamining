@@ -2,7 +2,7 @@
 /** chunk id: 635703, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
   openCreateGuildModal: () => d,
-  updateCreateGuildModal: () => m
+  updateCreateGuildModal: () => p
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -77,7 +77,7 @@ let d = e => {
       modalKey: s.PU
     })
   },
-  m = e => {
+  p = e => {
     let {
       slide: t,
       location: n

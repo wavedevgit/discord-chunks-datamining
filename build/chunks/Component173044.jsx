@@ -26,12 +26,12 @@ function _(e) {
     onClose: v
   } = e, {
     analyticsLocations: j
-  } = (0, o.ZP)(s.Z.GO_LIVE_MODAL_V2), b = (0, d.N)(), S = (0, c.Ng)(), y = (null == b || null == (t = b.subscription_trial) ? true : t.sku_id) === h.Si.TIER_2 || (0, c.Wp)(S, h.Si.TIER_2), C = x.intl.string(p.default["+f+cqq"]);
-  return y && (null != b ? C = (0, f.Rt)({
+  } = (0, o.ZP)(s.Z.GO_LIVE_MODAL_V2), b = (0, d.N)(), y = (0, c.Ng)(), S = (null == b || null == (t = b.subscription_trial) ? true : t.sku_id) === h.Si.TIER_2 || (0, c.Wp)(y, h.Si.TIER_2), C = x.intl.string(p.default["+f+cqq"]);
+  return S && (null != b ? C = (0, f.Rt)({
     intervalType: null == b || null == (n = b.subscription_trial) ? true : n.interval,
     intervalCount: null == b || null == (_ = b.subscription_trial) ? true : _.interval_count
-  }) : null != S && (C = x.intl.formatToPlainString(x.t.bkQ4bG, {
-    percent: S.discount.amount
+  }) : null != y && (C = x.intl.formatToPlainString(x.t.bkQ4bG, {
+    percent: y.discount.amount
   }))), (0, r.jsxs)("div", {
     className: g.root,
     children: [(0, r.jsxs)(l.Text, {

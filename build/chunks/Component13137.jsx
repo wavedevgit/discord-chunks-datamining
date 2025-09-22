@@ -56,32 +56,32 @@ let v = e => s().shuffle(e.map(e => {
 
 function j(e) {
   var t;
-  let n, i, {
+  let n, l, {
       onMount: a,
       onSubmit: j,
       onClose: S,
-      ratingHeader: x,
-      ratingBody: w,
+      ratingHeader: w,
+      ratingBody: x,
       ratingOptions: E,
-      ratingEmojiKind: k,
+      ratingEmojiKind: P,
       initialRating: C = null,
-      categoriesHeader: P,
+      categoriesHeader: k,
       optionsTree: R,
       hideDontShowAgainCheckbox: T,
       impression: N,
-      transitionState: L
+      transitionState: F
     } = e,
-    F = (0, b.Z)(R),
-    [D, I] = l.useState(v(R));
-  l.useEffect(() => {
-    s().isEqual(F, R) || I(v(R))
-  }, [R, F]);
+    D = (0, b.Z)(R),
+    [L, I] = i.useState(v(R));
+  i.useEffect(() => {
+    s().isEqual(D, R) || I(v(R))
+  }, [R, D]);
   let B = (0, f.Dt)(),
-    [M, Z] = l.useState(false),
-    [H, A] = l.useState(C),
-    [V, z] = l.useState(null),
-    [X, Y] = l.useState(null),
-    [K, U] = l.useState("");
+    [M, Z] = i.useState(false),
+    [H, A] = i.useState(C),
+    [V, z] = i.useState(null),
+    [X, Y] = i.useState(null),
+    [K, U] = i.useState("");
   (0, m.ZP)(() => null == a ? true : a()), (0, m.zq)(() => {
     var e;
     j({
@@ -99,7 +99,7 @@ function j(e) {
       className: o()(h.problemInfo, h.ratingSelectorContainer),
       children: (0, r.jsx)(O.Z, {
         ratingOptions: E,
-        emojiKind: k,
+        emojiKind: P,
         selectedRating: H,
         onChangeRating: function(e) {
           A(e), e === g.aZ.GOOD && S()
@@ -122,18 +122,18 @@ function j(e) {
   }), G = false) : H !== g.aZ.GOOD && null == V ? (n = (0, r.jsx)(u.hzk, {
     className: h.__invalid_content,
     children: (0, r.jsx)(u.xJW, {
-      title: P,
+      title: k,
       titleClassName: h.noTitleCase,
       className: o()(h.problemInfo, h.presetList, {
         [h.marginBottom16]: T
       }),
       children: (0, r.jsx)(p.Z, {
-        options: D,
+        options: L,
         onClick: z,
         hideCaret: () => true
       })
     })
-  }), i = () => A(null)) : null != V && null == X ? (n = (0, r.jsx)(u.hzk, {
+  }), l = () => A(null)) : null != V && null == X ? (n = (0, r.jsx)(u.hzk, {
     className: h.__invalid_content,
     children: (0, r.jsx)(u.xJW, {
       title: V.problemsHeader,
@@ -156,30 +156,22 @@ function j(e) {
         }
       })
     })
-  }), i = () => z(null)) : null != V && null != X && (null == (t = V.freeformConfig) ? true : t.value) === X.value && (n = (0, r.jsx)(u.hzk, {
+  }), l = () => z(null)) : null != V && null != X && (null == (t = V.freeformConfig) ? true : t.value) === X.value && (n = (0, r.jsx)(u.hzk, {
     className: h.__invalid_content,
-    children: (0, r.jsxs)(u.xJW, {
-      title: y.intl.string(y.t.h95hcn),
-      titleClassName: h.noTitleCase,
-      className: h.problemInfo,
-      children: [(0, r.jsx)(u.Kx8, {
-        value: K,
-        maxLength: g.iF,
-        onChange: U
-      }), !V.freeformConfig.hideHelpdeskLink && (0, r.jsx)(u.Text, {
-        className: h.helpdeskLink,
-        variant: "text-xs/normal",
-        color: "text-muted",
-        children: y.intl.format(y.t.ybi2tL, {
-          helpdeskURL: _.Z.getSubmitRequestURL()
-        })
-      })]
+    children: (0, r.jsx)(u.Kx8, {
+      label: y.intl.string(y.t.h95hcn),
+      helperText: V.freeformConfig.hideHelpdeskLink ? true : y.intl.format(y.t.ybi2tL, {
+        helpdeskURL: _.Z.getSubmitRequestURL()
+      }),
+      value: K,
+      maxLength: g.iF,
+      onChange: U
     })
-  }), i = () => {
+  }), l = () => {
     U(""), Y(null)
   }, q = true), (0, r.jsxs)(u.Y0X, {
     impression: N,
-    transitionState: L,
+    transitionState: F,
     className: h.modalRoot,
     "aria-labelledby": B,
     parentComponent: "FeedbackModalV2",
@@ -190,12 +182,12 @@ function j(e) {
         id: B,
         variant: "heading-xl/extrabold",
         color: "none",
-        children: x
+        children: w
       }), (0, r.jsx)(u.Text, {
         variant: "text-md/normal",
         color: "none",
         className: h.ratingBody,
-        children: w
+        children: x
       })]
     }), n, G && (0, r.jsxs)(u.mzw, {
       className: h.footer,
@@ -204,7 +196,7 @@ function j(e) {
         variant: "secondary",
         size: "sm",
         text: y.intl.string(y.t["13/7kZ"]),
-        onClick: i
+        onClick: l
       }), q && (0, r.jsx)(u.zxk, {
         variant: "primary",
         size: "sm",

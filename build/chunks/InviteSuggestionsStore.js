@@ -27,11 +27,11 @@ let _ = new Set,
 
 function O(e) {
   let t = new Set,
-    n = null == r || o === N.Iq.EMBEDDED_APPLICATION ? true : r.id,
+    n = null == r || o === j.Iq.EMBEDDED_APPLICATION ? true : r.id,
     l = (0, v.rh)(_, n);
   for (let e of (null == l || f.Z.isBlockedOrIgnored(l.id) || t.add(l.id), m.Z.getUserAffinities())) t.add(e.otherUserId);
   let i = new Set;
-  return o === N.Iq.EMBEDDED_APPLICATION && h.Z.getChannelHistory().map(e => I.Z.getChannel(e)).filter(p.lm).filter(e => e.type === j.d4z.GUILD_TEXT).filter(e => x.Z.can(j.Plq.SEND_MESSAGES, e)).slice(0, 3).forEach(e => i.add(e.id)), (0, v.an)({
+  return o === j.Iq.EMBEDDED_APPLICATION && h.Z.getChannelHistory().map(e => I.Z.getChannel(e)).filter(p.lm).filter(e => e.type === N.d4z.GUILD_TEXT).filter(e => x.Z.can(N.Plq.SEND_MESSAGES, e)).slice(0, 3).forEach(e => i.add(e.id)), (0, v.an)({
     query: e,
     omitUserIds: _,
     suggestedUserIds: t,

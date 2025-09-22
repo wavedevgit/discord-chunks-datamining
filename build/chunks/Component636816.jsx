@@ -20,16 +20,16 @@ function u(e) {
     className: u
   } = e, {
     guildProfile: p,
-    fetchGuildProfile: m,
-    fetchStatus: g
-  } = (0, o.u)(t), x = g !== a.a.FETCHED, C = null != p && s.Y.VISIBLE.has(p.visibility);
+    fetchGuildProfile: g,
+    fetchStatus: m
+  } = (0, o.u)(t), C = m !== a.a.FETCHED, x = null != p && s.Y.VISIBLE.has(p.visibility);
   i.useEffect(() => {
-    m()
-  }, [t, m]);
+    g()
+  }, [t, g]);
   let N = [];
   if (n === d.d4z.GUILD_ANNOUNCEMENT && (N.push(h.intl.format(h.t.tI7KNT, {
       documentationLink: c.Z.getArticleURL(d.BhN.ANNOUNCEMENT_CHANNELS)
-    })), !x && !C)) {
+    })), !C && !x)) {
     let e = h.intl.string(h.t["2Ab4IS"]);
     N.push(e)
   }

@@ -221,7 +221,7 @@ function V(e) {
       modalKey: A.a
     })
   }
-  let V = (0, j.m$)({
+  let V = (0, O.m$)({
     channelId: t.id
   });
   return (0, r.jsxs)("div", {
@@ -267,7 +267,7 @@ function V(e) {
           channel: t
         })]
       })
-    }), (0, r.jsx)(O.Z, {
+    }), (0, r.jsx)(j.Z, {
       channelId: t.id
     })]
   })

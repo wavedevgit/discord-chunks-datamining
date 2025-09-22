@@ -39,7 +39,7 @@ let m = e => {
             color: "text-tertiary",
             children: c.intl.string(c.t.UTE8Cw)
           })]
-        }), null !== n && (0, r.jsx)(u.H, {
+        }), null !== n && (0, r.jsx)(u.H4, {
           error: s.ze.IMAGE_LOAD,
           variant: "text-sm/normal",
           color: "text-danger"

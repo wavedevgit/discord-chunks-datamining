@@ -3,7 +3,7 @@
 require.d(exports, {
   u: () => c
 });
-var r, l, Chunk818083 = require("./818083.js"),
+var r, i, Chunk818083 = require("./818083.js"),
   Chunk751823 = require("./751823.js");
 let a = {
     showRefreshedStreamTaxonomy: false
@@ -33,17 +33,17 @@ let a = {
           })
         }
         return e
-      }({}, a), l = l = {
+      }({}, a), i = i = {
         showRefreshedStreamTaxonomy: true
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
           n.push.apply(n, r)
         }
         return n
-      })(Object(l)).forEach(function(e) {
-        Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(l, e))
+      })(Object(i)).forEach(function(e) {
+        Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
       }), r)
     }]
   });

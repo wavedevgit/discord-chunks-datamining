@@ -148,7 +148,7 @@ let B = (0, Chunk888651.$)(function(e) {
     hangStatusActivity: ef,
     requestToStreamActivity: em,
     showHangStatus: eg
-  } = e, eb = i.useRef(null), [ey, e_] = i.useState(false), [eC, ev] = i.useState(false), [ex, eO] = i.useState(false), ej = eC || ex, eE = (null == em ? true : em.session_id) != null, eS = () => {
+  } = e, eb = i.useRef(null), [ey, e_] = i.useState(false), [eC, ev] = i.useState(false), [ex, ej] = i.useState(false), eO = eC || ex, eE = (null == em ? true : em.session_id) != null, eS = () => {
     e_(!ey)
   }, eI = () => {
     ($ || eg || eE) && (null == ei || ei(p.id))
@@ -183,12 +183,12 @@ let B = (0, Chunk888651.$)(function(e) {
     })
   }, eA = e => ep ? (0, r.jsx)(x.$, k(D({}, e), {
     channel: L,
-    setIsHangStatusInputFocused: eO
-  })) : null != ef ? (0, r.jsx)(O.I, k(D({}, e), {
+    setIsHangStatusInputFocused: ej
+  })) : null != ef ? (0, r.jsx)(j.I, k(D({}, e), {
     hangStatusActivity: ef,
     channel: L,
     userId: p.id
-  })) : null, ew = () => (0, r.jsx)(j.Z, {
+  })) : null, ew = () => (0, r.jsx)(O.Z, {
     userId: p.id,
     channel: L
   }), eR = () => (0, h.dl)() && (0, h.zd)(L.id) ? null : (0, r.jsx)(v.Z, {
@@ -282,14 +282,14 @@ let B = (0, Chunk888651.$)(function(e) {
           })
         }
         let s = () => null;
-        return eg && ej ? s = eA : $ ? s = eR : eE && p.id !== I.default.getId() && (s = ew), (0, r.jsx)(o.yRy, {
+        return eg && eO ? s = eA : $ ? s = eR : eE && p.id !== I.default.getId() && (s = ew), (0, r.jsx)(o.yRy, {
           targetElementRef: eb,
           position: "right",
           renderPopout: s,
           shouldShow: (el || eg && ex) && !ey,
           onRequestClose: eI,
-          align: eg && ej && !ep ? "center" : true,
-          spacing: eg && ej ? 8 : 0,
+          align: eg && eO && !ep ? "center" : true,
+          spacing: eg && eO ? 8 : 0,
           children: () => (0, r.jsx)(S.ZP, k(D({}, n), {
             ref: eb,
             onMouseDown: e.onMouseDown,

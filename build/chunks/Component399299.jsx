@@ -92,7 +92,7 @@ function Y(e) {
   let {
     onChange: t,
     guildId: n
-  } = e, i = (0, o.e7)([S.Z], () => S.Z.getGuild(n));
+  } = e, i = (0, o.e7)([y.Z], () => y.Z.getGuild(n));
   return null == i ? (t(), null) : (0, r.jsx)(c.xJW, {
     title: z.intl.string(z.t.WC3u3t),
     className: H.modalContent,
@@ -169,7 +169,7 @@ function K(e) {
     screen: l
   } = e, d = i.useCallback((e, t) => {
     n(t)
-  }, [n]), u = (0, o.e7)([y.Z], () => y.Z.getUseSystemScreensharePicker() && (0, P.isLinux)());
+  }, [n]), u = (0, o.e7)([S.Z], () => S.Z.getUseSystemScreensharePicker() && (0, P.isLinux)());
   return (0, r.jsx)("div", {
     className: s()(H.modalContent, F.checkboxRow),
     children: (0, r.jsx)(a.$q, {
@@ -220,7 +220,7 @@ function Q(e) {
     sound: p,
     previewDisabled: x,
     onClose: b,
-    onChangeSelectedFPS: S,
+    onChangeSelectedFPS: y,
     onChangeSelectedResolution: w,
     onChangeSelectedPreset: Z,
     onChangeSelectedChannelId: I,
@@ -230,11 +230,11 @@ function Q(e) {
     onChangeSound: B,
     onChangePreviewDisabled: G
   } = e, H = (0, o.e7)([C.Z, j.Z], () => j.Z.getChannel(C.Z.getVoiceChannelId())), Q = (0, o.e7)([T.Z], () => T.Z.GPUDriversOutdated), $ = (0, o.e7)([T.Z], () => T.Z.problematicGPUDriver), ee = (0, o.e7)([O.default], () => O.default.getCurrentUser()), et = (0, R.Z)();
-  null != t && t.id.startsWith("screen") && !y.Z.supportsScreenSoundshare() && (et = z.intl.string(z.t["1b0Gm5"]));
+  null != t && t.id.startsWith("screen") && !S.Z.supportsScreenSoundshare() && (et = z.intl.string(z.t["1b0Gm5"]));
   let en = !!(null == t ? true : t.id.startsWith("camera")),
     er = null != ee && ee.verified && !ee.bot,
     ei = null != H && !(0, u.Yk)(H),
-    el = !(0, o.e7)([y.Z], () => y.Z.getHardwareEncoding());
+    el = !(0, o.e7)([S.Z], () => S.Z.getHardwareEncoding());
   return (0, r.jsxs)(i.Fragment, {
     children: [en ? (0, r.jsx)(A.Z, {
       selectedSource: t,
@@ -288,7 +288,7 @@ function Q(e) {
       selectedResolution: a,
       targetGuildPremiumTier: f,
       onClose: b,
-      onFPSChange: S,
+      onFPSChange: y,
       onResolutionChange: w,
       onPresetChange: Z,
       captureDeviceSelected: en

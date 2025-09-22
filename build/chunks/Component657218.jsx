@@ -117,17 +117,17 @@ function X(e) {
     });
     (0, B.NK)(t)
   }, [t]);
-  return (0, r.jsxs)(j.ZP, {
-    toolbar: (0, r.jsx)(j.ZP.Icon, {
+  return (0, r.jsxs)(O.ZP, {
+    toolbar: (0, r.jsx)(O.ZP.Icon, {
       icon: c.Dio,
       tooltip: V.intl.string(V.t.cpT0Cg),
       onClick: n
     }),
-    children: [(0, r.jsx)(j.ZP.Icon, {
+    children: [(0, r.jsx)(O.ZP.Icon, {
       icon: c.or_,
       disabled: true,
       "aria-label": V.intl.string(V.t["7Xm5QE"])
-    }), (0, r.jsx)(j.ZP.Title, {
+    }), (0, r.jsx)(O.ZP.Title, {
       children: V.intl.string(V.t["4WNcpq"])
     })]
   })
@@ -194,7 +194,7 @@ function Q(e) {
   }(t, f), C = (0, L.vH)(t), {
     isGeneratingAI: v,
     enableAIFeatures: x,
-    getThreadNameInputAccessory: j
+    getThreadNameInputAccessory: O
   } = (0, G.U)({
     parentChannel: t,
     parentMessageId: n,
@@ -294,7 +294,7 @@ function Q(e) {
           fade: true,
           children: (0, r.jsxs)("div", {
             className: z.scrollerInner,
-            children: [(0, r.jsxs)(O.ZP, {
+            children: [(0, r.jsxs)(j.ZP, {
               channelId: "create-thread-null",
               children: [(0, r.jsx)("div", {
                 className: a()(W.iconWrapper, z.iconWrapper),
@@ -310,7 +310,7 @@ function Q(e) {
                 disabled: N,
                 isGeneratingAI: v,
                 enableAIFeatures: x,
-                getThreadNameInputAccessory: j
+                getThreadNameInputAccessory: O
               }), t.type === F.d4z.GUILD_TEXT ? (0, r.jsx)(J, {
                 startedFromMessage: null != n,
                 threadSettings: p,

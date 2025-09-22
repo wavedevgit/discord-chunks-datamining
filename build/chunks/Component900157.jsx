@@ -69,7 +69,7 @@ function N(e) {
     channelViewSource: N = "Split View"
   } = e, A = (0, o.e7)([C.Z], () => C.Z.getChannel(t)), w = (0, o.e7)([x.Z], () => x.Z.getGuild(null == A ? true : A.getGuildId())), R = (0, f.ZP)(A);
   var M = A;
-  let D = (0, o.e7)([O.Z], () => null != M && !a().isEmpty(O.Z.getVoiceStatesForChannel(M.id)));
+  let D = (0, o.e7)([j.Z], () => null != M && !a().isEmpty(j.Z.getVoiceStatesForChannel(M.id)));
   i.useEffect(() => {
     D && null != M && (s.Z.dispatch({
       type: "SIDEBAR_CLOSE",
@@ -89,7 +89,7 @@ function N(e) {
         channelId: A.id
       })
     }, [A, N]), null == A || null == w) return null;
-  let L = (0, r.jsx)(j.Z, {
+  let L = (0, r.jsx)(O.Z, {
     channel: A,
     baseChannelId: l
   });

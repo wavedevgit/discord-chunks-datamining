@@ -26,11 +26,11 @@ function b(e) {
     canManageGuildEvent: C
   } = (0, s.XJ)(_), v = C(y), x = i.useRef(null);
   if (null == y) return null;
-  let O = () => {
+  let j = () => {
       if (null != _ && (0, f.Z)(_)) return void(0, p.lC)(_, b);
       n()
     },
-    j = () => {
+    O = () => {
       h.Z.endEvent(y.id, y.guild_id)
     };
   return v ? (0, r.jsx)(a.yRy, {
@@ -48,7 +48,7 @@ function b(e) {
           children: (0, r.jsx)(a.sNh, {
             id: "end-voice-event",
             color: "danger",
-            action: j,
+            action: O,
             label: g.intl.string(g.t.qaYzPD),
             icon: a.k$p
           })
@@ -65,7 +65,7 @@ function b(e) {
       return (0, r.jsx)(u.Z, {
         buttonRef: x,
         label: g.intl.string(g.t["6vrfgo"]),
-        onClick: O,
+        onClick: j,
         onPopoutClick: t
       })
     }

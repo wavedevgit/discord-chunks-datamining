@@ -26,13 +26,13 @@ function _(e) {
     location: t,
     transitionTo: n = f
   } = e, [l, _] = i.useState("submitting"), x = i.useRef(true);
-  (0, o.ZP)(() => {
+  (0, a.ZP)(() => {
     (0, h.e)("verify_email");
     let e = (0, c.Z)(t);
     if (null == e) return void _("failed");
     (async () => {
       try {
-        let t = await a.Z.verify(e);
+        let t = await o.Z.verify(e);
         _("succeeded"), x.current = t
       } catch (e) {
         _("failed")
@@ -40,30 +40,30 @@ function _(e) {
     })()
   });
   let E = i.useCallback(() => {
-      n(g.Z5c.LOGIN, {
+      n(m.Z5c.LOGIN, {
         source: "verify_email"
       })
     }, [n]),
     v = i.useCallback(() => {
-      p.default.track(g.rMx.VERIFY_ACCOUNT_APP_OPENED, {
+      g.default.track(m.rMx.VERIFY_ACCOUNT_APP_OPENED, {
         verifying_user_id: x.current
       }), (0, d.Z)("verify_email")
     }, []);
   return "failed" === l ? (0, r.jsx)(u.Z, {
-    title: m.intl.string(m.t.PCgG39),
-    subtitle: m.intl.string(m.t.tQpeAw),
-    buttonText: m.intl.string(m.t.dKhVQE),
+    title: p.intl.string(p.t.PCgG39),
+    subtitle: p.intl.string(p.t.tQpeAw),
+    buttonText: p.intl.string(p.t.dKhVQE),
     onButtonClick: E
   }) : "succeeded" === l ? (0, r.jsx)(u.Z, {
-    title: m.intl.string(m.t.dAfGb2),
-    buttonText: m.intl.string(m.t.uJWIj4),
+    title: p.intl.string(p.t.dAfGb2),
+    buttonText: p.intl.string(p.t.uJWIj4),
     onButtonClick: v,
     image: (0, r.jsx)(s.Om, {
-      alt: m.intl.string(m.t.dAfGb2)
+      alt: p.intl.string(p.t.dAfGb2)
     })
   }) : (0, r.jsx)(u.Z, {
-    title: m.intl.string(m.t["0c8+5u"]),
-    subtitle: m.intl.string(m.t.ULTCBA),
+    title: p.intl.string(p.t["0c8+5u"]),
+    subtitle: p.intl.string(p.t.ULTCBA),
     loading: true
   })
 }

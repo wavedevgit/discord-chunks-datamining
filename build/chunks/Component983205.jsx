@@ -11,33 +11,35 @@ var Chunk951288 = require("./951288.js"),
 let s = e => {
   let {
     name: t,
-    onNameChange: n
-  } = e, s = l.useRef(null), u = l.useRef(null), [c, d] = l.useState(false), m = l.useCallback(e => {
+    onNameChange: n,
+    label: s
+  } = e, u = l.useRef(null), c = l.useRef(null), [d, m] = l.useState(false), h = l.useCallback(e => {
     var t;
-    u.current = null == (t = s.current) ? true : t.selectionStart, n(e = (e = e.replace(/\s/g, "_")).length < 2 ? e : a.ZP.sanitizeEmojiName(e))
+    c.current = null == (t = u.current) ? true : t.selectionStart, n(e = (e = e.replace(/\s/g, "_")).length < 2 ? e : a.ZP.sanitizeEmojiName(e))
   }, [n]);
   l.useEffect(() => {
-    if (null != u.current) {
+    if (null != c.current) {
       var e;
-      null == (e = s.current) || e.setSelectionRange(u.current, u.current), u.current = null
+      null == (e = u.current) || e.setSelectionRange(c.current, c.current), c.current = null
     }
   });
-  let h = l.useCallback(() => {
-      d(false)
+  let g = l.useCallback(() => {
+      m(false)
     }, []),
-    g = l.useCallback(() => {
-      d(true)
+    f = l.useCallback(() => {
+      m(true)
     }, []);
   return (0, r.jsx)(i.oil, {
-    inputRef: s,
-    error: c ? "" : true,
+    inputRef: u,
+    error: d ? "" : true,
     minLength: 2,
     value: t,
-    onChange: m,
+    onChange: h,
     placeholder: o.intl.string(o.t.U2JFHR),
     name: "emoji_name",
-    onBlur: h,
-    onFocus: g,
+    onBlur: g,
+    onFocus: f,
+    label: s,
     required: true
   })
 }

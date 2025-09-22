@@ -58,25 +58,25 @@ function x(e) {
         onClick: _,
         className: m.modalCloseButton
       })]
-    }), (0, a.jsxs)(i.hzk, {
+    }), (0, a.jsx)(i.hzk, {
       className: m.content,
-      children: [(0, a.jsx)(i.oil, {
-        label: d.intl.string(d.t["w/qqKC"]),
-        error: null == g || null == (t = g.email) ? true : t[0],
-        type: "email",
-        value: p,
-        onChange: h,
-        inputRef: S
-      }), (0, a.jsx)(i.xJW, {
-        className: m.password,
-        title: d.intl.string(d.t.TmdnJy),
-        error: null == g || null == (n = g.password) ? true : n[0],
-        children: (0, a.jsx)(i.oil, {
+      children: (0, a.jsxs)(i.Kqy, {
+        gap: 20,
+        children: [(0, a.jsx)(i.oil, {
+          label: d.intl.string(d.t["w/qqKC"]),
+          error: null == g || null == (t = g.email) ? true : t[0],
+          type: "email",
+          value: p,
+          onChange: h,
+          inputRef: S
+        }), (0, a.jsx)(i.oil, {
+          label: d.intl.string(d.t.TmdnJy),
+          error: null == g || null == (n = g.password) ? true : n[0],
           type: "password",
           value: A,
           onChange: C
-        })
-      })]
+        })]
+      })
     }), (0, a.jsxs)(i.mzw, {
       children: [(0, a.jsx)(i.zxk, {
         variant: "primary",

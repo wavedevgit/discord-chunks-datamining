@@ -52,10 +52,10 @@ function g(e) {
   let x = i.useCallback(() => {
       null == g || g(), t()
     }, [g, t]),
-    O = i.useCallback(() => {
+    j = i.useCallback(() => {
       null == b || b(), t()
     }, [b, t]),
-    j = i.useRef(null);
+    O = i.useRef(null);
   return i.useEffect(() => {
     let e, t = u.Z.theme,
       r = false;
@@ -63,8 +63,8 @@ function g(e) {
       let [{
         default: i
       }, l] = await Promise.all([Promise.resolve().then(n.t.bind(n, 500923, 23)), (0, a.wj)(t) ? v.dark() : v.light()]);
-      r || null == j.current || (e = i.loadAnimation({
-        container: j.current,
+      r || null == O.current || (e = i.loadAnimation({
+        container: O.current,
         renderer: "svg",
         loop: true,
         autoplay: true,
@@ -82,7 +82,7 @@ function g(e) {
         className: f.body,
         children: [null != v && (0, r.jsx)("div", {
           className: f.animation,
-          ref: j
+          ref: O
         }), (0, r.jsxs)("div", {
           className: f.content,
           children: [(0, r.jsx)("div", {
@@ -100,7 +100,7 @@ function g(e) {
               children: [(0, r.jsx)(o.zx, {
                 className: f.button,
                 color: o.zx.Colors.PRIMARY,
-                onClick: O,
+                onClick: j,
                 children: h.intl.string(h.t.fsBWmZ)
               }), (0, r.jsx)(s.Text, {
                 variant: "text-xs/normal",

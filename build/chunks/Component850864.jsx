@@ -60,7 +60,7 @@ function N(e) {
         })
       }), (0, r.jsx)("div", {
         className: v.section,
-        children: (0, r.jsx)(b.Z, {
+        children: (0, r.jsx)(x.Z, {
           guildId: t.id
         })
       }), (0, r.jsx)("div", {
@@ -120,7 +120,7 @@ function N(e) {
         })]
       }), (0, r.jsxs)("div", {
         className: v.section,
-        children: [(0, r.jsx)(x.Z, {
+        children: [(0, r.jsx)(b.Z, {
           guildId: t.id
         }), (0, r.jsx)(h.Z, {
           guildId: t.id

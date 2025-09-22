@@ -27,18 +27,18 @@ function x(e) {
   let {
     channelId: t,
     warningId: x,
-    senderId: O
-  } = e, j = (0, y.E4)(), E = i.useCallback(() => {
+    senderId: j
+  } = e, O = (0, y.E4)(), E = i.useCallback(() => {
     (0, p.T)(t, [x])
   }, [t, x]), S = (0, b.t)({
     location: C.zr
   }), I = e => {
     o.Z.updateChannelOverrideSettings(null, t, {
       muted: true
-    }, g.ZB.Muted), c.Z.showMuteSuccessToast(O, t), (0, f.qc)({
+    }, g.ZB.Muted), c.Z.showMuteSuccessToast(j, t), (0, f.qc)({
       channelId: t,
       warningId: x,
-      senderId: O,
+      senderId: j,
       warningType: h.pj.LIKELY_ATO,
       cta: e
     }), E()
@@ -47,15 +47,15 @@ function x(e) {
     S && ((0, f.MC)(_.rMx.SAFETY_WARNING_VIEWED, {
       channelId: t,
       warningId: x,
-      senderId: O,
+      senderId: j,
       warningType: h.pj.LIKELY_ATO
     }), s.Z.increment({
       name: l.V.SAFETY_WARNING_VIEW
     }))
-  }, [t, x, O, S]), S) ? (0, r.jsx)(m.Q, {
+  }, [t, x, j, S]), S) ? (0, r.jsx)(m.Q, {
     channelId: t,
     warningId: x,
-    senderId: O,
+    senderId: j,
     warningType: h.pj.LIKELY_ATO,
     header: v.intl.string(v.t.R8UsiI),
     description: v.intl.string(v.t.lI8nQk),
@@ -78,9 +78,9 @@ function x(e) {
               onClose: l,
               channelId: t,
               warningId: x,
-              senderId: O,
+              senderId: j,
               description: v.intl.string(v.t["/uid3t"]),
-              safetyTipRows: j.map((e, t) => (0, r.jsx)(u.q, {
+              safetyTipRows: O.map((e, t) => (0, r.jsx)(u.q, {
                 listType: "numbered",
                 index: t,
                 title: e.title,
@@ -98,7 +98,7 @@ function x(e) {
                 onClick: () => (0, f.qc)({
                   channelId: t,
                   warningId: x,
-                  senderId: O,
+                  senderId: j,
                   warningType: h.pj.LIKELY_ATO,
                   cta: f.NM.USER_MODAL_LEARN_MORE
                 }),
@@ -115,7 +115,7 @@ function x(e) {
         }), (0, f.qc)({
           channelId: t,
           warningId: x,
-          senderId: O,
+          senderId: j,
           warningType: h.pj.LIKELY_ATO,
           cta: f.NM.OPEN_MORE_TIPS
         })

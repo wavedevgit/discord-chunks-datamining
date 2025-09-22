@@ -78,7 +78,7 @@ function A(e) {
   }
 
   function B() {
-    _.default.track(E.rMx.CHANNEL_ATTACH_MENU_USE_APPS_CLICKED), R("/", (0, O.JM)("/"))
+    _.default.track(E.rMx.CHANNEL_ATTACH_MENU_USE_APPS_CLICKED), R("/", (0, j.JM)("/"))
   }
 
   function G() {
@@ -187,32 +187,32 @@ function A(e) {
         })]
       });
       switch (e.type) {
-        case j.r.UPLOAD_A_FILE:
+        case O.r.UPLOAD_A_FILE:
           return (0, r.jsx)(s.sNh, {
             id: "upload-file",
             label: i,
             action: f
           }, "upload-file");
-        case j.r.UPLOAD_TEXT_AS_FILE:
+        case O.r.UPLOAD_TEXT_AS_FILE:
           if ("" === w) return null;
           return (0, r.jsx)(s.sNh, {
             id: "upload-text-as-file",
             label: i,
             action: V
           }, "upload-text-as-file");
-        case j.r.CLIPS:
+        case O.r.CLIPS:
           return (0, r.jsx)(s.sNh, {
             id: "clips",
             label: i,
             action: G
           }, "clips");
-        case j.r.POLL:
+        case O.r.POLL:
           return (0, r.jsx)(s.sNh, {
             id: "poll",
             label: i,
             action: H
           }, "poll");
-        case j.r.INVITE_TO_PLAY_GAME:
+        case O.r.INVITE_TO_PLAY_GAME:
           return (0, r.jsx)(s.sNh, {
             id: "play",
             label: i,
@@ -226,7 +226,7 @@ function A(e) {
               })
             }
           }, "play");
-        case j.r.INVITE_TO_LISTEN:
+        case O.r.INVITE_TO_LISTEN:
           return (0, r.jsx)(s.sNh, {
             id: "listen",
             label: i,
@@ -240,7 +240,7 @@ function A(e) {
               })
             }
           }, "listen");
-        case j.r.INVITE_TO_WATCH:
+        case O.r.INVITE_TO_WATCH:
           return (0, r.jsx)(s.sNh, {
             id: "watch",
             label: i,
@@ -254,26 +254,26 @@ function A(e) {
               })
             }
           }, "watch");
-        case j.r.CREATE_THREAD:
+        case O.r.CREATE_THREAD:
           return (0, r.jsx)(s.sNh, {
             id: "THREAD",
             label: i,
             action: U
           }, "THREAD");
-        case j.r.SLASH_COMMAND:
+        case O.r.SLASH_COMMAND:
           return (0, r.jsx)(s.sNh, {
             id: "SLASH_COMMAND",
             label: i,
             action: B
           }, "SLASH_COMMAND");
-        case j.r.ACTIVITY:
+        case O.r.ACTIVITY:
           return (0, r.jsx)(s.sNh, {
             id: "activity",
             label: i,
             action: F,
             hint: (0, r.jsx)(N, {})
           }, "activity");
-        case j.r.SCHEDULED_MESSAGE:
+        case O.r.SCHEDULED_MESSAGE:
           return (0, r.jsx)(s.sNh, {
             id: "scheduled_message",
             label: i,

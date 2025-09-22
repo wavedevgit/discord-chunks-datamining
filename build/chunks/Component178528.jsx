@@ -245,7 +245,7 @@ function z(e) {
       channelId: t
     } = e;
     return t
-  }), w = (0, o.e7)([Z.Z], () => Z.Z.getVoiceChannelId()), N = (0, o.e7)([S.Z], () => S.Z.getGuildVersion(n)), D = (0, o.e7)([m.Z], () => m.Z.version), k = (0, o.e7)([b.default], () => b.default.getGuildChangeSentinel(n)), R = (0, a.QN)(null == r ? true : r.id), A = (0, c.gM)(null == r ? true : r.id), M = null != (t = null == r ? true : r.features.has(T.oNc.COMMUNITY)) && t, z = (0, o.e7)([j.Z], () => j.Z.getChannelId()), V = (0, o.e7)([x.Z], () => x.Z.desyncedVoiceStatesCount);
+  }), w = (0, o.e7)([j.Z], () => j.Z.getVoiceChannelId()), N = (0, o.e7)([S.Z], () => S.Z.getGuildVersion(n)), D = (0, o.e7)([m.Z], () => m.Z.version), k = (0, o.e7)([b.default], () => b.default.getGuildChangeSentinel(n)), R = (0, a.QN)(null == r ? true : r.id), A = (0, c.gM)(null == r ? true : r.id), M = null != (t = null == r ? true : r.features.has(T.oNc.COMMUNITY)) && t, z = (0, o.e7)([Z.Z], () => Z.Z.getChannelId()), V = (0, o.e7)([x.Z], () => x.Z.desyncedVoiceStatesCount);
   return (0, i.jsx)(L, {
     guildId: n,
     guild: r,

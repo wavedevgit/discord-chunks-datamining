@@ -1,7 +1,7 @@
 /** Chunk was on 62987 **/
 /** chunk id: 408534, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => O
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -26,19 +26,19 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk895634 = require("./895634.js");
 
-function j(e) {
+function O(e) {
   let {
     onClose: t,
     onSelect: n,
-    channel: j,
+    channel: O,
     remoteMode: E,
     onInteraction: S
   } = e, I = (0, a.bp)(), {
     id: P,
     type: Z
-  } = j, T = (0, i.e7)([u.Z], () => u.Z.getGuild(j.guild_id), [j.guild_id]), N = (0, i.e7)([d.Z], () => d.Z.getSelectedParticipant(P)), A = (null == N ? true : N.type) === C.fO.STREAM ? N.stream : null, w = (0, i.e7)([o.Z], () => (null == N ? true : N.type) === C.fO.ACTIVITY ? o.Z.getApplication(N.applicationId) : true), R = (0, h.Z)(P), M = (0, y.Z)(P), D = (0, m.Z)(j, T, null == A ? true : A.ownerId, null == w ? true : w.id), k = (0, p.Z)(P), L = (0, _.Z)(), U = (0, c.$A)(P), B = (0, c.j8)(P), G = (0, b.Z)(A, I), H = (0, g.Z)(w, P), F = (0, f.Z)(), V = (0, s.Z)(j);
+  } = O, T = (0, i.e7)([u.Z], () => u.Z.getGuild(O.guild_id), [O.guild_id]), N = (0, i.e7)([d.Z], () => d.Z.getSelectedParticipant(P)), A = (null == N ? true : N.type) === C.fO.STREAM ? N.stream : null, w = (0, i.e7)([o.Z], () => (null == N ? true : N.type) === C.fO.ACTIVITY ? o.Z.getApplication(N.applicationId) : true), R = (0, h.Z)(P), M = (0, y.Z)(P), D = (0, m.Z)(O, T, null == A ? true : A.ownerId, null == w ? true : w.id), k = (0, p.Z)(P), L = (0, _.Z)(), U = (0, c.$A)(P), B = (0, c.j8)(P), G = (0, b.Z)(A, I), H = (0, g.Z)(w, P), F = (0, f.Z)(), V = (0, s.Z)(O);
   return (0, r.jsxs)(l.v2r, {
-    className: O.menu,
+    className: j.menu,
     onClose: t,
     onSelect: n,
     onInteraction: S,

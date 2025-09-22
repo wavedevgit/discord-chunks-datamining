@@ -1,7 +1,7 @@
 /** Chunk was on 27978 **/
 /** chunk id: 962220, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => m
 });
 var r, i, Chunk39612 = require("./39612.js"),
   Chunk271579 = require("./271579.js"),
@@ -11,8 +11,8 @@ var r, i, Chunk39612 = require("./39612.js"),
   Chunk954824 = require("./954824.js"),
   Chunk751189 = require("./751189.js"),
   Chunk981631 = require("./981631.js");
-let p = "template",
-  g = (r = function(e) {
+let g = "template",
+  m = (r = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -31,21 +31,21 @@ let p = "template",
     return e
   }({}, Chunk751189.Z), i = i = {
     openNativeAppModal(e) {
-      o.Z.openNativeAppModal(e, h.Etm.GUILD_TEMPLATE_BROWSER)
+      a.Z.openNativeAppModal(e, h.Etm.GUILD_TEMPLATE_BROWSER)
     },
     openMobileApp(e, t) {
       if (null != platform.ua && platform.ua.toLowerCase().indexOf("googlebot") > false) return;
       let n = null != e ? (0, l.Oh)(e) : (0, l.Gk)(),
         r = (0, s.WS)(),
         i = (0, s.ZP)(n, {
-          utmSource: p,
+          utmSource: g,
           fingerprint: t,
           attemptId: r
         });
       c.default.track(h.rMx.DEEP_LINK_CLICKED, {
-        fingerprint: (0, a.K)(t),
+        fingerprint: (0, o.K)(t),
         attempt_id: r,
-        source: p,
+        source: g,
         guild_template_code: e
       }), u.Z.launch(i, () => {})
     }

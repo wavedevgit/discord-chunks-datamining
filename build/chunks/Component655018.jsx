@@ -53,7 +53,7 @@ function P(e) {
     k !== (null != (e = null == N ? true : N.status) ? e : "") && "" !== k.trim() ? P(true) : P(false)
   }, [k, null == N ? true : N.status, U, null == N ? true : N.emoji, P]), i.useEffect(() => {
     var e;
-    (null == G || G === O.tN.CUSTOM) && (null == (e = T.current) || e.focus())
+    (null == G || G === j.tN.CUSTOM) && (null == (e = T.current) || e.focus())
   }, [G]), i.useEffect(() => {
     null == Z || Z(null == D ? true : D.current)
   }, [D, Z]);
@@ -110,7 +110,7 @@ function P(e) {
         c = l ? (0, r.jsx)(C.Z, {
           size: 20,
           hangStatusActivity: {
-            type: j.IIU.HANG_STATUS,
+            type: O.IIU.HANG_STATUS,
             state: e
           },
           fallbackVariant: R,
@@ -149,7 +149,7 @@ function P(e) {
           value: k,
           onBlur: J,
           onFocus: $,
-          onChange: e => L(e.substring(0, O.s0)),
+          onChange: e => L(e.substring(0, j.s0)),
           placeholder: E.intl.string(E.t.KPop4u),
           leading: {
             type: "emoji",

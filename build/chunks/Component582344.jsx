@@ -31,13 +31,17 @@ function p() {
       children: [(0, Chunk951288.jsxs)(Chunk481060.hjN, {
         title: "Dismissible Content Overrides",
         tag: "h1",
-        children: [(0, Chunk951288.jsx)(Chunk481060.xJW, {
-          title: "Daily Cap Reached: ".concat(module ? "Yes" : "No"),
-          children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
+        children: [(0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+          gap: 4,
+          children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
             variant: "primary",
             text: "Reset Daily Cap",
             onClick: () => (0, Chunk883904.EG)()
-          })
+          }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+            variant: "text-sm/normal",
+            color: "text-secondary",
+            children: "Daily Cap Reached: ".concat(module ? "Yes" : "No")
+          })]
         }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
           className: Chunk455698.divider
         }), (0, Chunk951288.jsx)(Chunk481060.j7V, {

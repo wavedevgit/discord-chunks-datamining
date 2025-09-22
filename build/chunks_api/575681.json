@@ -1,1 +1,0 @@
-{"id":"575681","type":"experiment","data":{"kind":"user","id":"2023-06_unique_username_live_check_in_settings","label":"Username Livecheck in Settings","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Livecheck enabled","config":{"enabled":true}}]},"fromModule":{"id":"42758"}}

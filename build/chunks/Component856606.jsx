@@ -102,7 +102,7 @@ let Y = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk388610.Z], () => {
 function $(e) {
   let {
     overwrite: t
-  } = e, n = (0, o.e7)([T.Z], () => T.Z.channel), l = (0, o.e7)([_.Z], () => null != n ? _.Z.getGuild(n.getGuildId()) : null), r = (0, o.e7)([I.Z], () => null != l && null != t && t.type === j.BN.ROLE ? I.Z.getRole(l.id, t.id) : true), s = S.D.useExperiment({
+  } = e, n = (0, o.e7)([T.Z], () => T.Z.channel), l = (0, o.e7)([I.Z], () => null != n ? I.Z.getGuild(n.getGuildId()) : null), r = (0, o.e7)([_.Z], () => null != l && null != t && t.type === b.BN.ROLE ? _.Z.getRole(l.id, t.id) : true), s = S.D.useExperiment({
     guildId: null == n ? true : n.guild_id,
     location: "ChannelSettingsPermissions"
   }).enabled, c = N.N.useExperiment({
@@ -115,11 +115,11 @@ function $(e) {
     id: p
   } = n, x = () => {
     var e;
-    if (null == _.Z.getGuild(m)) return "";
-    let n = t.type === j.BN.MEMBER ? A.default.getUser(t.id) : true,
+    if (null == I.Z.getGuild(m)) return "";
+    let n = t.type === b.BN.MEMBER ? A.default.getUser(t.id) : true,
       i = null != (e = null == n ? true : n.username) ? e : "";
     return null != r ? r.name : i
-  }, b = (e, i) => {
+  }, j = (e, i) => {
     if ("boolean" == typeof i) throw Error("Unexpected boolean action");
     let {
       allow: l,
@@ -140,13 +140,13 @@ function $(e) {
       }))(0, g.kY)(n, t.id, l, r);
     else {
       let e;
-      if (t.type === j.BN.MEMBER) {
+      if (t.type === b.BN.MEMBER) {
         let n = A.default.getUser(t.id);
         null != n && (e = U.ZP.getName(n))
-      } else if (t.type === j.BN.ROLE) {
-        let i = _.Z.getGuild(n.getGuildId());
+      } else if (t.type === b.BN.ROLE) {
+        let i = I.Z.getGuild(n.getGuildId());
         if (null != i) {
-          let n = I.Z.getRole(i.id, t.id);
+          let n = _.Z.getRole(i.id, t.id);
           null != n && (e = n.name)
         }
       }
@@ -167,7 +167,7 @@ function $(e) {
       spec: e,
       allow: t.allow,
       deny: t.deny,
-      onChange: b,
+      onChange: j,
       permissionRender: v,
       className: z.permissionsForm,
       inPinPermissionExperiment: s
@@ -239,7 +239,7 @@ function K(e) {
     onClose: r,
     onSelect: a,
     position: c
-  } = e, d = (0, o.e7)([I.Z], () => I.Z.getSortedRoles(t.id)), u = (0, o.Wu)([R.ZP], () => R.ZP.getMemberIds(t.id));
+  } = e, d = (0, o.e7)([_.Z], () => _.Z.getSortedRoles(t.id)), u = (0, o.Wu)([R.ZP], () => R.ZP.getMemberIds(t.id));
   return (0, i.jsx)(y.Z, {
     label: F.intl.string(F.t.lT5Ztr),
     placeholder: F.intl.string(F.t.V2pZRk),
@@ -263,10 +263,10 @@ function K(e) {
     },
     onFilterResults: (e, t) => 0 === t ? d.filter(t => null == l[t.id] && e(t.name)) : s()(u).map(A.default.getUser).filter(L.lm).filter(t => null == l[t.id] && e(t.username.toLowerCase())).sortBy(e => e.username.toLowerCase()).value(),
     onQueryChange: e => {
-      D.Z.requestMembers(t.id, e, 20)
+      M.Z.requestMembers(t.id, e, 20)
     },
     onSelect: e => {
-      null != e && (J(e) ? a(e.id, j.BN.ROLE) : e instanceof w.Z && a(e.id, j.BN.MEMBER))
+      null != e && (J(e) ? a(e.id, b.BN.ROLE) : e instanceof w.Z && a(e.id, b.BN.MEMBER))
     },
     onClose: r,
     position: c
@@ -347,7 +347,7 @@ function ee() {
   null != Chunk392711 && null == Chunk392711[Chunk852860.id] && (Chunk392711[Chunk852860.id] = Chunk700785.we(Chunk852860.id));
   let P = Chunk940639.filter(e => {
       var t;
-      return (null == (t = r[e.id]) ? true : t.type) === j.BN.ROLE
+      return (null == (t = r[e.id]) ? true : t.type) === b.BN.ROLE
     }).map(e => (0, i.jsx)(p.Z, {
       theme: S,
       roleStyle: O,

@@ -77,7 +77,7 @@ function w(e) {
       fetchStartedAt: null == M ? true : M.fetchStartedAt,
       fetchEndedAt: null == M ? true : M.fetchEndedAt,
       isLoaded: null == M ? true : M.isLoaded,
-      children: (0, r.jsxs)(j.Z, {
+      children: (0, r.jsxs)(O.Z, {
         ref: B,
         user: n,
         displayProfile: M,
@@ -113,9 +113,9 @@ function w(e) {
                 displayProfile: M,
                 themeType: P.l.SIDEBAR
               })
-            }), (0, r.jsxs)(j.Z.Overlay, {
+            }), (0, r.jsxs)(O.Z.Overlay, {
               className: N.overlay,
-              children: [(0, r.jsx)(O.Z, {
+              children: [(0, r.jsx)(j.Z, {
                 heading: Z.intl.string(Z.t["61W33d"]),
                 headingColor: "header-primary",
                 children: (0, r.jsx)(v.Z, {
@@ -124,7 +124,7 @@ function w(e) {
                   animateOnHover: true,
                   isHovering: G
                 })
-              }), (0, r.jsx)(O.Z, {
+              }), (0, r.jsx)(j.Z, {
                 heading: Z.intl.string(Z.t["A//N4u"]),
                 headingColor: "header-primary",
                 children: (0, r.jsx)(x.Z, {

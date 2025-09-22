@@ -100,12 +100,12 @@ function D(e) {
             style: W,
             className: R.backdrop
           }), (0, r.jsxs)(a.u2, {
-            children: [(0, r.jsxs)(j.Z, {
+            children: [(0, r.jsxs)(O.Z, {
               children: [(0, r.jsx)(E.Z, {
                 user: n,
                 themeType: A.l.SIDEBAR,
                 shouldShowTooltip: null === z.interactionType
-              }), n.bot ? (0, r.jsx)(O.Z, {
+              }), n.bot ? (0, r.jsx)(j.Z, {
                 user: n
               }) : (0, r.jsx)(S.Z, {
                 type: "banner",

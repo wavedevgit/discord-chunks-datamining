@@ -50,11 +50,11 @@ class u extends(r = Chunk647438.PureComponent) {
             children: module
           })
         }), (0, Chunk951288.jsxs)(Chunk481060.hzk, {
-          children: [f, (0, Chunk951288.jsxs)(Chunk481060.xJW, {
-            title: Chunk388032.intl.string(Chunk388032.t["CIGa+/"]),
+          children: [f, (0, Chunk951288.jsxs)("div", {
             className: Chunk405289.spacing,
             children: [(0, Chunk951288.jsx)(Chunk481060.oil, {
               type: "password",
+              label: Chunk388032.intl.string(Chunk388032.t["CIGa+/"]),
               autoComplete: "current-password",
               autoFocus: true,
               value: d,

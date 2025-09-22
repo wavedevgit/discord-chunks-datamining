@@ -62,13 +62,13 @@ function E(e) {
   let c = i.useMemo(() => l.find(e => (0, u.fI)(e)), [l]);
   s()(null != c, "Guild must have an everyone role");
   let g = i.useMemo(() => l.filter(e => !(0, u.fI)(e)), [l]),
-    p = (0, a.e7)([x.Z], () => x.Z.getSelectedRoleId()),
+    p = (0, a.e7)([b.Z], () => b.Z.getSelectedRoleId()),
     [f, y] = i.useState(g.length > 0);
   i.useEffect(() => {
     y(f || g.length > 0)
   }, [f, g.length]), (0, d.ZP)(() => {
     let e = m.Z.getMemberCount(n.id);
-    null != e && e <= b.cm && o.Z.requestMembers(n.id, "", 0, false)
+    null != e && e <= x.cm && o.Z.requestMembers(n.id, "", 0, false)
   });
   let [N, E] = i.useState(O.ZI.DISPLAY);
   return (i.useEffect(() => {

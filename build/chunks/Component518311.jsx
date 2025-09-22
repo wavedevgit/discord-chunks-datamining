@@ -857,7 +857,7 @@ function e_(e) {
   }), [t, u, c]), h = l.useCallback(() => c ? d ? (0, f.Mr3)(u) : p() : s(e => !e), [c, d, u, p, s]);
   return l.useEffect(() => (r && X.S.subscribe(er.CkL.TOGGLE_DM_CREATE, h), () => {
     X.S.unsubscribe(er.CkL.TOGGLE_DM_CREATE, h)
-  }), [r, h, c]), (0, j.ZP)(() => {
+  }), [r, h, c]), (0, O.ZP)(() => {
     (0, k._)()
   }), {
     showModal: p,
@@ -891,15 +891,15 @@ function eC(e) {
     renderPopout: C,
     toggleVisible: v,
     popoutOpen: x,
-    setPopoutOpen: O,
-    inBornThisNamedExperiment: j
+    setPopoutOpen: j,
+    inBornThisNamedExperiment: O
   } = e_({
     initialPopoutOpen: null != r && r.isGroupDM() && 0 === r.recipients.length,
     channel: r,
     location: g,
     subscribeToGlobalHotkey: m
   }), E = (0, p.e7)([q.default], () => q.default.getUser(null == r ? true : r.getRecipientId()));
-  return null != (t = null == E ? true : E.bot) && t || null != (n = null == E ? true : E.isProvisional) && n ? null : j ? (0, i.jsx)(et.ZP.Icon, {
+  return null != (t = null == E ? true : E.bot) && t || null != (n = null == E ? true : E.isProvisional) && n ? null : O ? (0, i.jsx)(et.ZP.Icon, {
     ref: b,
     onClick: _,
     icon: y,
@@ -915,7 +915,7 @@ function eC(e) {
     nudgeAlignIntoViewport: true,
     autoInvert: true,
     align: h,
-    onRequestClose: () => O(false),
+    onRequestClose: () => j(false),
     animation: f.yRy.Animation.NONE,
     ignoreModalClicks: true,
     clickTrap: true,
@@ -988,11 +988,11 @@ function ev(e) {
 }
 
 function ex(e) {
-  let t = eO(e);
-  return new Set((0, s.chain)(B.Z.getMutablePrivateChannels()).values().filter(e => (0, U.bc)(e.type)).filter(e => eO(e.recipients) === t).map(e => e.id).value())
+  let t = ej(e);
+  return new Set((0, s.chain)(B.Z.getMutablePrivateChannels()).values().filter(e => (0, U.bc)(e.type)).filter(e => ej(e.recipients) === t).map(e => e.id).value())
 }
 
-function eO(e) {
+function ej(e) {
   return JSON.stringify(e.sort())
 }
 eo(eg, "contextType", Chunk40851.ZP)

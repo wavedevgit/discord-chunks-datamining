@@ -80,11 +80,11 @@ class f extends(r = Chunk647438.PureComponent) {
             variant: "text-md/normal",
             className: Chunk914272.spacing,
             children: p
-          }) : null, y, v, (0, Chunk951288.jsxs)(Chunk481060.xJW, {
-            title: this.getLabelText(),
+          }) : null, y, v, (0, Chunk951288.jsxs)("div", {
             className: Chunk914272.spacing,
             children: [(0, Chunk951288.jsx)(Chunk481060.oil, {
               inputRef: this.setRef,
+              label: this.getLabelText(),
               onChange: this.handleCodeChange,
               placeholder: null != (e = this.getPlaceholder()) ? module : true,
               maxLength: null != f ? f : 10,

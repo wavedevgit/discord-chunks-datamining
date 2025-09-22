@@ -1,7 +1,7 @@
 /** Chunk was on 62987 **/
 /** chunk id: 997638, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  ZP: () => j,
+  ZP: () => O,
   cy: () => x,
   iu: () => v
 }), require("./388685.js");
@@ -54,7 +54,7 @@ function C(e, t) {
 }
 var v = ((i = {}).CENTER = "center", i.LEFT = "left", i),
   x = ((l = {}).TOP = "top", l.MIDDLE = "middle", l);
-class O extends Chunk647438.PureComponent {
+class j extends Chunk647438.PureComponent {
   componentDidMount() {
     let {
       uniqueId: e
@@ -130,7 +130,7 @@ class O extends Chunk647438.PureComponent {
     })
   }
 }
-class j extends(r = Chunk647438.PureComponent) {
+class O extends(r = Chunk647438.PureComponent) {
   render() {
     let e = this.props,
       {
@@ -195,7 +195,7 @@ class j extends(r = Chunk647438.PureComponent) {
       } = this.props, s = null != o;
       return (0, a.jsx)(p.f6W, {
         theme: r,
-        children: e => (0, a.jsx)(O, C(_({}, this.props), {
+        children: e => (0, a.jsx)(j, C(_({}, this.props), {
           className: c()({
             [b.bottom]: "bottom" === n,
             [b.contentNarrowNoMedia]: !i && !s,
@@ -216,6 +216,6 @@ class j extends(r = Chunk647438.PureComponent) {
     })
   }
 }
-y(j, "TextAlignments", v), y(j, "defaultProps", {
+y(O, "TextAlignments", v), y(O, "defaultProps", {
   textAlign: "left"
 })

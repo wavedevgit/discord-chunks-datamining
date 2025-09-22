@@ -50,7 +50,7 @@ function b(e) {
       })
     }, [b, n, t.id]), null == b || null == y || !_) return null;
   let x = "user-profile-sidebar-heading-".concat(b.id),
-    O = s.ZP.getName(null, t.id, b);
+    j = s.ZP.getName(null, t.id, b);
   return (0, r.jsx)("aside", {
     "aria-labelledby": x,
     children: (0, r.jsx)(a.y5t, {
@@ -58,7 +58,7 @@ function b(e) {
         children: (0, r.jsx)(a.H, {
           id: x,
           children: m.intl.format(m.t.KRe1Fh, {
-            name: O
+            name: j
           })
         })
       }),

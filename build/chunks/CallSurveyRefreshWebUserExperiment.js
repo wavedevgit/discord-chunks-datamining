@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk818083 = require("./818083.js"),
   Chunk984134 = require("./984134.js");
 
-function i(e) {
+function l(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -50,20 +50,20 @@ let a = {
     treatments: [{
       id: 1,
       label: "Show form-style survey without neutral",
-      config: o(i({}, a), {
+      config: o(l({}, a), {
         showFormStyleSurvey: true,
         hideNeutralOption: true
       })
     }, {
       id: 2,
       label: "Show survey without neutral",
-      config: o(i({}, a), {
+      config: o(l({}, a), {
         hideNeutralOption: true
       })
     }, {
       id: 3,
       label: "Show survey without neutral, and with vibes honeypot",
-      config: o(i({}, a), {
+      config: o(l({}, a), {
         hideNeutralOption: true,
         showVibesHoneypot: true
       })
@@ -76,7 +76,7 @@ function c(e) {
     autoTrackExposure: n = true
   } = e, {
     isInHoldout: r
-  } = l.Y.useExperiment({
+  } = i.Y.useExperiment({
     location: t
   }, {
     autoTrackExposure: n

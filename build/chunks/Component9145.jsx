@@ -149,7 +149,7 @@ function V(e) {
     ey = (0, D.y)();
   if (null == q) return null;
   let e_ = [];
-  null != eh && (e_ = Array.from(eh.embeddedActivity.userIds).map(e => O.default.getUser(e)).filter(e => null != e && true !== e));
+  null != eh && (e_ = Array.from(eh.embeddedActivity.userIds).map(e => j.default.getUser(e)).filter(e => null != e && true !== e));
   let eC = e => {
     var t;
     if (null == e || true === e || e === w.ag) return null;
@@ -244,12 +244,12 @@ function V(e) {
         maxHeight: V,
         resizableNode: ee,
         onResize: e => {
-          j.S.dispatch(U.CkL.MANUAL_IFRAME_RESIZING, {
+          O.S.dispatch(U.CkL.MANUAL_IFRAME_RESIZING, {
             resizing: true
           }), ei(e)
         },
         onResizeEnd: e => {
-          j.S.dispatch(U.CkL.MANUAL_IFRAME_RESIZING, {
+          O.S.dispatch(U.CkL.MANUAL_IFRAME_RESIZING, {
             resizing: false
           }), el(e)
         }

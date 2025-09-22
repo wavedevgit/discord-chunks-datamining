@@ -39,7 +39,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk102865 = require("./102865.js");
 
-function M(e) {
+function D(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null,
     n = arguments.length > 2 ? arguments[2] : true;
   h.ZP.trackWithMetadata(A.rMx.SETTINGS_PANE_VIEWED, {
@@ -51,7 +51,7 @@ function M(e) {
 }
 class k extends Chunk647438.PureComponent {
   componentDidMount() {
-    M(this.props.section, null, this.props.analyticsLocation)
+    D(this.props.section, null, this.props.analyticsLocation)
   }
   componentWillUnmount() {
     Chunk570140.Z.wait(() => (0, Chunk787014.xv)())
@@ -68,7 +68,7 @@ class k extends Chunk647438.PureComponent {
       canManageWebhooks: a,
       canUnlinkChannel: o
     } = this.props;
-    (s || r || a || o) && (i !== A.QZA.CLOSED || i === t) && (r || l !== A.CoT.PERMISSIONS) && (a || o || l !== A.CoT.INTEGRATIONS) ? l !== n && M(l, n): (0, c.xf)()
+    (s || r || a || o) && (i !== A.QZA.CLOSED || i === t) && (r || l !== A.CoT.PERMISSIONS) && (a || o || l !== A.CoT.INTEGRATIONS) ? l !== n && D(l, n): (0, c.xf)()
   }
   render() {
     let {
@@ -81,7 +81,7 @@ class k extends Chunk647438.PureComponent {
       canManageChannels: h,
       canDeleteChannels: f,
       canManageWebhooks: x,
-      canUnlinkChannel: j
+      canUnlinkChannel: b
     } = this.props;
     return null == Chunk647438 ? null : (0, Chunk951288.jsx)(Chunk503089.ZP, {
       theme: module,
@@ -100,20 +100,20 @@ class k extends Chunk647438.PureComponent {
           canUnlinkChannel: h
         } = e, f = (0, m.KS)(t), {
           GUILD_CATEGORY: x
-        } = A.d4z, j = v.Ec.has(t.type), b = t.type === x ? L.intl.string(L.t.ifbXnJ) : j ? t.isForumPost() ? L.intl.string(L.t.nEOg1N) : L.intl.string(L.t.H7vTe3) : L.intl.string(L.t["8D8Rsb"]);
+        } = A.d4z, b = v.Ec.has(t.type), j = t.type === x ? L.intl.string(L.t.ifbXnJ) : b ? t.isForumPost() ? L.intl.string(L.t.nEOg1N) : L.intl.string(L.t.H7vTe3) : L.intl.string(L.t["8D8Rsb"]);
         return [{
           section: u.ID.HEADER,
           label: null != t ? (0, i.jsxs)(i.Fragment, {
             children: [null != f ? (0, i.jsx)(f, {
               size: "xxs",
               color: "currentColor",
-              className: D.channelIcon
+              className: M.channelIcon
             }) : null, (0, g.F6)(t, w.default, E.Z), null != n ? (0, i.jsx)(s.Text, {
               tag: "span",
               variant: "text-xs/semibold",
               color: "header-secondary",
               lineClamp: 1,
-              className: D.category,
+              className: M.category,
               children: (0, g.F6)(n, w.default, E.Z)
             }) : null]
           }) : L.intl.string(L.t.XPDhcX)
@@ -121,9 +121,9 @@ class k extends Chunk647438.PureComponent {
           section: A.CoT.OVERVIEW,
           label: L.intl.string(L.t["/dp6yc"]),
           ariaLabel: L.intl.string(L.t["/dp6yc"]),
-          element: _.Z,
+          element: I.Z,
           notice: {
-            element: _.G,
+            element: I.G,
             stores: [N.Z]
           },
           predicate: () => !t.isModeratorReportChannel()
@@ -135,13 +135,13 @@ class k extends Chunk647438.PureComponent {
             element: P.n,
             stores: [C.Z]
           },
-          predicate: () => l && !j
+          predicate: () => l && !b
         }, {
           section: A.CoT.INSTANT_INVITES,
           label: L.intl.string(L.t["9F90iY"]),
-          element: I.Z,
+          element: _.Z,
           type: u.bT.CUSTOM,
-          predicate: () => t.type !== x && r && !j && !t.isModeratorReportChannel()
+          predicate: () => t.type !== x && r && !b && !t.isModeratorReportChannel()
         }, {
           section: A.CoT.INTEGRATIONS,
           label: L.intl.string(L.t.s69NLC),
@@ -163,8 +163,8 @@ class k extends Chunk647438.PureComponent {
               }), (0, c.xf)()
             })
           },
-          label: b,
-          ariaLabel: b,
+          label: j,
+          ariaLabel: j,
           icon: (0, i.jsx)(s.XHJ, {
             size: "xs",
             color: "currentColor"

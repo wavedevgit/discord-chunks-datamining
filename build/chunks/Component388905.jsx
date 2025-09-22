@@ -187,38 +187,34 @@ let P = e => {
       maxLength: p,
       spellCheck: h,
       name: m,
-      description: E,
-      required: b,
-      onFocus: y,
-      onBlur: O
-    } = e, v = (0, d.Dt)();
-    return (0, r.jsxs)(s.xJW, {
-      title: t,
+      description: g,
+      required: E,
+      onFocus: b,
+      onBlur: y
+    } = e, O = (0, d.Dt)(), v = (0, r.jsx)(s.oil, {
+      name: m,
+      type: c,
+      value: a,
+      inputRef: l,
+      placeholder: i,
+      "aria-label": t,
+      onChange: u,
+      autoComplete: f,
+      autoFocus: _,
+      maxLength: p,
+      spellCheck: h,
+      id: O,
+      onFocus: b,
+      onBlur: y,
+      label: t,
       error: n,
+      required: E,
+      description: g
+    });
+    return null != o ? (0, r.jsx)("div", {
       className: o,
-      required: b,
-      htmlFor: v,
-      children: [(0, r.jsx)(s.oil, {
-        name: m,
-        type: c,
-        value: a,
-        inputRef: l,
-        placeholder: i,
-        "aria-label": t,
-        onChange: u,
-        autoComplete: f,
-        autoFocus: _,
-        maxLength: p,
-        spellCheck: h,
-        id: v,
-        onFocus: y,
-        onBlur: O
-      }), null != E ? (0, r.jsx)(s.R94, {
-        type: s.R94.Types.DESCRIPTION,
-        className: g.description,
-        children: E
-      }) : null]
-    })
+      children: v
+    }) : v
   },
   w = e => {
     let {

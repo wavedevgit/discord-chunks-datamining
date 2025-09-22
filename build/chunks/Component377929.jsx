@@ -66,7 +66,7 @@ function I(e) {
   function o() {
     l(e => !e)
   }
-  let c = j.intl.string(j.t.UKOtz8);
+  let c = O.intl.string(O.t.UKOtz8);
   return (0, r.jsx)(s.yRy, {
     targetElementRef: a,
     shouldShow: n,
@@ -103,21 +103,21 @@ function P(e) {
     onSelect: i
   } = e, l = (0, c.Z)(t), C = (0, f.Z)(t), E = (0, b.Z)(t.id), S = (0, g.Z)(t), I = (0, _.Z)({
     id: t.id,
-    label: j.intl.string(j.t.DQ797u)
+    label: O.intl.string(O.t.DQ797u)
   }), P = (0, u.Z)(t), Z = (0, d.Z)(t), T = (0, p.Z)(t, "Toolbar Overflow"), N = (0, m.Z)(t), A = (0, h.Z)(t), w = (0, y.Z)(t), R = v.vF.useSetting(), M = (0, o.e7)([x.Z], () => !a().isEmpty(x.Z.getVoiceStatesForChannel(t.id)));
   return (0, r.jsxs)(s.v2r, {
     navId: "thread-context",
     onClose: n,
-    "aria-label": j.intl.string(j.t["1NBjqa"]),
+    "aria-label": O.intl.string(O.t["1NBjqa"]),
     onSelect: i,
     children: [(0, r.jsxs)(s.kSQ, {
       children: [T, A]
     }), (0, r.jsxs)(s.kSQ, {
       children: [S, N, E, R && !M ? (0, r.jsx)(s.sNh, {
         id: "open",
-        label: j.intl.string(j.t.bX7EaG),
+        label: O.intl.string(O.t.bX7EaG),
         action: function() {
-          (0, O.ok)(t)
+          (0, j.ok)(t)
         }
       }) : null]
     }), (0, r.jsxs)(s.kSQ, {

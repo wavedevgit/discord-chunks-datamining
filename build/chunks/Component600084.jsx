@@ -73,7 +73,7 @@ function F(e) {
     showingBanner: h
   } = e, _ = (0, d.ZP)(p), {
     type: v
-  } = p, I = (0, l.e7)([O.default], () => p.isPrivate() ? O.default.getUser(p.getRecipientId()) : null), A = j.ZP.useUserTag(I), {
+  } = p, I = (0, l.e7)([j.default], () => p.isPrivate() ? j.default.getUser(p.getRecipientId()) : null), A = O.ZP.useUserTag(I), {
     canManageRoles: R,
     canReadMessageHistory: M
   } = (0, l.cj)([x.Z], () => ({

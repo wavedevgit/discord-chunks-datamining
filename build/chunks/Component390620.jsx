@@ -1,7 +1,7 @@
 /** Chunk was on 2262 **/
 /** chunk id: 390620, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  y: () => x
+  y: () => p
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -53,7 +53,7 @@ function f(e) {
   })
 }
 
-function x(e) {
+function p(e) {
   let {
     emoji: t,
     guildId: n

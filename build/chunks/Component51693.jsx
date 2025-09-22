@@ -18,20 +18,20 @@ function d(e) {
     onClose: c,
     isSlideReady: u,
     headerAlignStart: h
-  } = e, [f, g] = r.useState(false), [m, x] = r.useState(null), [p, S] = r.useState(""), j = r.useRef(null);
+  } = e, [f, g] = r.useState(false), [m, p] = r.useState(null), [x, S] = r.useState(""), b = r.useRef(null);
   return r.useEffect(() => {
     if (u) {
       var e;
-      null == (e = j.current) || e.focus()
+      null == (e = b.current) || e.focus()
     }
   }, [u]), (0, l.jsxs)("form", {
     onSubmit: e => {
-      e.preventDefault(), g(true), x(null), n({
+      e.preventDefault(), g(true), p(null), n({
         mfaType: "totp",
-        data: p
+        data: x
       }).catch(e => {
         var t, n;
-        x(null != (n = null == (t = e.body) ? true : t.message) ? n : e.message)
+        p(null != (n = null == (t = e.body) ? true : t.message) ? n : e.message)
       }).finally(() => {
         g(false)
       })
@@ -39,29 +39,27 @@ function d(e) {
     children: [(0, l.jsx)(a.Z.SlideHeader, {
       onClose: c,
       headerAlignStart: h
-    }), (0, l.jsx)(a.Z.SlideContent, {
+    }), (0, l.jsxs)(a.Z.SlideContent, {
       scrollbarType: "none",
-      children: (0, l.jsxs)(s.xJW, {
-        title: o.intl.string(o.t.HZPBOT),
-        children: [(0, l.jsx)(s.oil, {
-          inputRef: j,
-          onChange: S,
-          placeholder: o.intl.string(o.t.tARzgo),
-          maxLength: i.gH,
-          minLength: i.gH,
-          value: p,
-          autoComplete: "one-time-code",
-          spellCheck: "false",
-          disabled: f
-        }), (0, l.jsx)(a.Z.SlideError, {
-          error: m
-        })]
-      })
+      children: [(0, l.jsx)(s.oil, {
+        label: o.intl.string(o.t.HZPBOT),
+        inputRef: b,
+        onChange: S,
+        placeholder: o.intl.string(o.t.tARzgo),
+        maxLength: i.gH,
+        minLength: i.gH,
+        value: x,
+        autoComplete: "one-time-code",
+        spellCheck: "false",
+        disabled: f
+      }), (0, l.jsx)(a.Z.SlideError, {
+        error: m
+      })]
     }), (0, l.jsx)(a.Z.SlideFooter, {
       mfaChallenge: t,
       setSlide: d,
       showConfirm: true,
-      disabled: p.length !== i.gH,
+      disabled: x.length !== i.gH,
       submitting: f
     })]
   })

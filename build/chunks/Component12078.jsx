@@ -65,21 +65,21 @@ function _(e) {
     forceDefaultColor: false
   });
   return (0, r.jsx)(o.ua7, {
-    text: x.intl.string(x.t.W4Nd7e),
+    text: b.intl.string(b.t.W4Nd7e),
     children: e => (0, r.jsx)(o.P3F, v(j({}, e), {
       "aria-disabled": !n,
       tabIndex: n ? 0 : false,
-      "aria-label": x.intl.string(x.t.W4Nd7e),
+      "aria-label": b.intl.string(b.t.W4Nd7e),
       onClick: n ? i : true,
       style: {
         background: (0, c.dG)(d)
       },
-      className: s()(b.itemContainer, {
-        [b.disabled]: !n
+      className: s()(x.itemContainer, {
+        [x.disabled]: !n
       }),
       children: (0, r.jsx)("div", {
         className: s()({
-          [b.itemSelected]: !l && null == t.brandColorPrimary
+          [x.itemSelected]: !l && null == t.brandColorPrimary
         })
       })
     }))
@@ -103,7 +103,7 @@ function O(e) {
   }, [n]);
   if (!t) return null;
   let p = null != u ? (0, r.jsx)("img", {
-    className: b.uploadedImage,
+    className: x.uploadedImage,
     src: u,
     alt: "",
     "aria-hidden": true
@@ -111,22 +111,22 @@ function O(e) {
     size: "md"
   });
   return (0, r.jsx)("div", {
-    className: b.uploadItemContainer,
+    className: x.uploadItemContainer,
     children: (0, r.jsx)(o.tEY, {
       within: true,
       children: (0, r.jsx)("div", {
-        className: s()(b.uploadItemWrapper, {
-          [b.uploadItemSelected]: c
+        className: s()(x.uploadItemWrapper, {
+          [x.uploadItemSelected]: c
         }),
         children: (0, r.jsxs)("div", {
-          className: s()(b.uploadItem, {
-            [b.disabled]: !a
+          className: s()(x.uploadItem, {
+            [x.disabled]: !a
           }),
           children: [p, (0, r.jsx)("div", {
-            className: b.overlay
+            className: x.overlay
           }), (0, r.jsx)(o.vdY, {
             size: "custom",
-            className: b.overlayIcon,
+            className: x.overlayIcon,
             width: 20,
             height: 20,
             color: "white"
@@ -155,9 +155,9 @@ function y(e) {
     })
   }, [y]), N = i.useCallback(e => (!g || null == n.customBanner) && e === n.brandColorPrimary, [n, g]);
   return (0, r.jsx)(o.hjN, {
-    title: x.intl.string(x.t.BSVog4),
+    title: b.intl.string(b.t.BSVog4),
     children: (0, r.jsxs)("div", {
-      className: b.grid,
+      className: x.grid,
       children: [(0, r.jsx)(_, {
         profile: n,
         canManageGuild: d,
@@ -178,12 +178,12 @@ function y(e) {
             style: {
               background: (0, c.dG)(n)
             },
-            className: s()(b.itemContainer, {
-              [b.disabled]: !d
+            className: s()(x.itemContainer, {
+              [x.disabled]: !d
             }),
             children: (0, r.jsx)("div", {
               className: s()({
-                [b.itemSelected]: N(n)
+                [x.itemSelected]: N(n)
               })
             })
           }))

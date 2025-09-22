@@ -280,53 +280,51 @@ function ee() {
       type: Chunk481060.geA.DESCRIPTION,
       className: Chunk197571.marginBottom20,
       children: Chunk388032.intl.string(Chunk388032.t["0PhAOD"])
-    }), (0, Chunk951288.jsxs)(Chunk481060.xJW, {
-      title: Chunk388032.intl.string(Chunk388032.t.Q0PsXV),
-      children: [(0, Chunk951288.jsx)(Chunk481060.q4e, {
-        className: null != exports ? Chunk197571.marginBottom20 : Chunk197571.marginBottom40,
-        value: exports,
-        onChange: e => {
-          n(e)
-        },
-        options: Chunk120356
-      }), null != exports ? (0, Chunk951288.jsxs)("div", {
-        className: Chunk197571.marginTop20,
-        children: [(0, Chunk951288.jsxs)(Chunk921801.F, {
-          setting: Chunk726985.s6.NOTIFICATIONS_COMMUNITY_IN_APP_ALERTS,
-          children: [(0, Chunk951288.jsx)(Chunk481060.j7V, {
-            className: Chunk197571.marginBottom20,
-            note: Chunk388032.intl.string(Chunk388032.t["z8Td4+"]),
-            value: !module[exports].disableRaidAlertNag,
-            onChange: () => {
-              (0, Chunk675478.PS)(exports, e => {
-                e.disableRaidAlertNag = !e.disableRaidAlertNag
-              }, Chunk675478.fy.INFREQUENT_USER_ACTION)
-            },
-            hideBorder: true,
-            children: Chunk388032.intl.string(Chunk388032.t.u6dc5O)
-          }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
-            className: o()(Chunk197571.marginTop20, Chunk197571.marginBottom40)
-          })]
-        }), (0, Chunk951288.jsxs)(Chunk921801.F, {
-          setting: Chunk726985.s6.NOTIFICATIONS_COMMUNITY_PUSH_NOTIFICATIONS,
-          children: [(0, Chunk951288.jsx)(Chunk481060.j7V, {
-            className: Chunk197571.marginBottom20,
-            note: Chunk388032.intl.string(Chunk388032.t.PyxXs7),
-            value: !module[exports].disableRaidAlertPush,
-            onChange: () => {
-              (0, Chunk675478.PS)(exports, e => {
-                e.disableRaidAlertPush = !e.disableRaidAlertPush
-              }, Chunk675478.fy.INFREQUENT_USER_ACTION)
-            },
-            hideBorder: true,
-            children: Chunk388032.intl.string(Chunk388032.t.P8MG6u)
-          }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
-            className: o()(Chunk197571.marginTop20, Chunk197571.marginBottom40)
-          })]
+    }), (0, Chunk951288.jsx)(Chunk481060.q4e, {
+      label: Chunk388032.intl.string(Chunk388032.t.Q0PsXV),
+      className: null != exports ? Chunk197571.marginBottom20 : Chunk197571.marginBottom40,
+      value: exports,
+      onChange: e => {
+        n(e)
+      },
+      options: Chunk120356
+    }), null != exports ? (0, Chunk951288.jsxs)("div", {
+      className: Chunk197571.marginTop20,
+      children: [(0, Chunk951288.jsxs)(Chunk921801.F, {
+        setting: Chunk726985.s6.NOTIFICATIONS_COMMUNITY_IN_APP_ALERTS,
+        children: [(0, Chunk951288.jsx)(Chunk481060.j7V, {
+          className: Chunk197571.marginBottom20,
+          note: Chunk388032.intl.string(Chunk388032.t["z8Td4+"]),
+          value: !module[exports].disableRaidAlertNag,
+          onChange: () => {
+            (0, Chunk675478.PS)(exports, e => {
+              e.disableRaidAlertNag = !e.disableRaidAlertNag
+            }, Chunk675478.fy.INFREQUENT_USER_ACTION)
+          },
+          hideBorder: true,
+          children: Chunk388032.intl.string(Chunk388032.t.u6dc5O)
+        }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
+          className: o()(Chunk197571.marginTop20, Chunk197571.marginBottom40)
         })]
-      }) : null, null != exports ? null : (0, Chunk951288.jsx)(Chunk481060.$i$, {
-        className: o()(Chunk197571.marginTop20, Chunk197571.marginBottom40)
+      }), (0, Chunk951288.jsxs)(Chunk921801.F, {
+        setting: Chunk726985.s6.NOTIFICATIONS_COMMUNITY_PUSH_NOTIFICATIONS,
+        children: [(0, Chunk951288.jsx)(Chunk481060.j7V, {
+          className: Chunk197571.marginBottom20,
+          note: Chunk388032.intl.string(Chunk388032.t.PyxXs7),
+          value: !module[exports].disableRaidAlertPush,
+          onChange: () => {
+            (0, Chunk675478.PS)(exports, e => {
+              e.disableRaidAlertPush = !e.disableRaidAlertPush
+            }, Chunk675478.fy.INFREQUENT_USER_ACTION)
+          },
+          hideBorder: true,
+          children: Chunk388032.intl.string(Chunk388032.t.P8MG6u)
+        }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
+          className: o()(Chunk197571.marginTop20, Chunk197571.marginBottom40)
+        })]
       })]
+    }) : null, null != exports ? null : (0, Chunk951288.jsx)(Chunk481060.$i$, {
+      className: o()(Chunk197571.marginTop20, Chunk197571.marginBottom40)
     })]
   })
 }
@@ -389,28 +387,21 @@ class et extends Chunk647438.PureComponent {
           onChange: this.handleToggleShowFlash,
           children: Chunk388032.intl.string(Chunk388032.t.xSmFQE)
         })
-      }), (0, Chunk951288.jsx)(ei, {}), (0, Chunk951288.jsx)(ec, {}), (0, Chunk951288.jsx)(el, {}), (0, Chunk951288.jsx)(Chunk921801.F, {
+      }), (0, Chunk951288.jsx)(ei, {}), (0, Chunk951288.jsx)(ec, {}), (0, Chunk951288.jsx)(el, {}), (0, Chunk951288.jsxs)(Chunk921801.F, {
         setting: Chunk726985.s6.NOTIFICATIONS_PUSH_INACTIVE_TIMEOUT,
-        children: (0, Chunk951288.jsxs)(Chunk481060.xJW, {
-          title: Chunk388032.intl.string(Chunk388032.t.TTvjd3),
-          children: [(0, Chunk951288.jsx)(Chunk481060.q4e, {
-            value: exports,
-            onChange: Chunk695346.CM.updateSetting,
-            options: Chunk292556
-          }), (0, Chunk951288.jsx)(Chunk481060.R94, {
-            type: Chunk481060.geA.DESCRIPTION,
-            className: Chunk197571.marginTop8,
-            children: Chunk388032.intl.string(Chunk388032.t.Xytv9P)
-          }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
-            className: o()(Chunk197571.marginTop40, Chunk197571.marginBottom40)
-          })]
-        })
-      }), this.renderTTS(), (0, Chunk951288.jsx)(ee, {}), (0, Chunk951288.jsx)(Chunk481060.xJW, {
-        children: (0, Chunk951288.jsx)($, {
-          disabledSounds: Chunk120356,
-          disableAllSounds: Chunk392711,
-          notifyMessagesInSelectedChannel: Chunk442837
-        })
+        children: [(0, Chunk951288.jsx)(Chunk481060.q4e, {
+          label: Chunk388032.intl.string(Chunk388032.t.TTvjd3),
+          description: Chunk388032.intl.string(Chunk388032.t.Xytv9P),
+          value: exports,
+          onChange: Chunk695346.CM.updateSetting,
+          options: Chunk292556
+        }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
+          className: o()(Chunk197571.marginTop40, Chunk197571.marginBottom40)
+        })]
+      }), this.renderTTS(), (0, Chunk951288.jsx)(ee, {}), (0, Chunk951288.jsx)($, {
+        disabledSounds: Chunk120356,
+        disableAllSounds: Chunk392711,
+        notifyMessagesInSelectedChannel: Chunk442837
       }), (0, Chunk951288.jsx)(Chunk33656.Z, {})]
     })
   }
@@ -433,17 +424,12 @@ class et extends Chunk647438.PureComponent {
       }];
       return (0, r.jsxs)(R.F, {
         setting: Z.s6.NOTIFICATIONS_TEXT_TO_SPEECH,
-        children: [(0, r.jsxs)(f.xJW, {
-          title: H.intl.string(H.t.VIm5MD),
-          children: [(0, r.jsx)(f.R94, {
-            type: f.geA.DESCRIPTION,
-            className: W.marginBottom8,
-            children: H.intl.string(H.t["+4dnAw"])
-          }), (0, r.jsx)(d.E, {
-            options: e,
-            onChange: e => this.handleTTSChange(e),
-            value: this.props.ttsType
-          })]
+        children: [(0, r.jsx)(d.E, {
+          label: H.intl.string(H.t.VIm5MD),
+          description: H.intl.string(H.t["+4dnAw"]),
+          options: e,
+          onChange: this.handleTTSChange,
+          value: this.props.ttsType
         }), (0, r.jsx)(f.$i$, {
           className: o()(W.marginTop40, W.marginBottom40)
         })]
@@ -528,7 +514,7 @@ function ei() {
       })
     }) : null, (0, Chunk951288.jsxs)(Chunk921801.F, {
       setting: Chunk726985.s6.NOTIFICATIONS_NEW_SETTINGS,
-      children: [(0, Chunk951288.jsx)(Chunk481060.xJW, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.hjN, {
         title: "New Notification Settings (Advanced, Staff Only)",
         children: (0, Chunk951288.jsxs)("div", {
           style: {
@@ -624,19 +610,14 @@ function el() {
     location: "webSettings"
   }).enableInAppNotifications ? (0, Chunk951288.jsxs)(Chunk921801.F, {
     setting: Chunk726985.s6.NOTIFICATIONS_REACTIONS,
-    children: [(0, Chunk951288.jsxs)(Chunk481060.xJW, {
-      title: Chunk388032.intl.string(Chunk388032.t.Rq0NFh),
-      children: [(0, Chunk951288.jsx)(Chunk481060.R94, {
-        type: Chunk481060.geA.DESCRIPTION,
-        className: Chunk197571.marginBottom8,
-        children: Chunk388032.intl.string(Chunk388032.t.oWF6eX)
-      }), (0, Chunk951288.jsx)(Chunk538534.E, {
-        options: exports,
-        onChange: e => n({
-          value: e
-        }),
-        value: module
-      })]
+    children: [(0, Chunk951288.jsx)(Chunk538534.E, {
+      label: Chunk388032.intl.string(Chunk388032.t.Rq0NFh),
+      description: Chunk388032.intl.string(Chunk388032.t.oWF6eX),
+      options: exports,
+      onChange: e => n({
+        value: e
+      }),
+      value: module
     }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
       className: o()(Chunk197571.marginTop40, Chunk197571.marginBottom40)
     })]

@@ -95,7 +95,7 @@ function D(e) {
   o.useEffect(() => {
     n(L ? O.F.COMPLETE : P)
   }, [n, P, L]);
-  let [Z, z] = o.useState(null), [W, H] = o.useState(null), [Y, V] = o.useState(false), J = (0, i.e7)([N.Z], () => N.Z.getType() === j.M5.INVITE_UNCLAIMED), q = o.useCallback(e => {
+  let [Z, z] = o.useState(null), [W, H] = o.useState(null), [Y, V] = o.useState(false), q = (0, i.e7)([N.Z], () => N.Z.getType() === j.M5.INVITE_UNCLAIMED), J = o.useCallback(e => {
     H(e), U(O.F.CREATION_INTENT), E.default.track(y.rMx.GUILD_TEMPLATE_SELECTED, {
       template_name: e.label,
       template_code: e.code
@@ -204,7 +204,7 @@ function D(e) {
                 className: G.container,
                 children: (0, a.jsx)(x.Z, {
                   onComplete: () => {
-                    J ? D() : U(O.F.CHOOSE_TEMPLATE)
+                    q ? D() : U(O.F.CHOOSE_TEMPLATE)
                   },
                   onClose: D
                 })
@@ -217,7 +217,7 @@ function D(e) {
                 className: r()(G.container, G.shortFooter),
                 children: (0, a.jsx)(h.Z, {
                   className: G.templates,
-                  onChooseTemplate: q,
+                  onChooseTemplate: J,
                   isNewUser: true
                 })
               })

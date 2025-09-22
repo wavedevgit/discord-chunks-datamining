@@ -106,7 +106,7 @@ let q = (0, Chunk401393.animated)(Chunk481060.eTT),
       messageDisplayCompact: _,
       channelStream: v,
       uploads: x,
-      hasUnreads: j,
+      hasUnreads: O,
       editingMessageId: S,
       fontSize: I,
       keyboardModeEnabled: P,
@@ -134,7 +134,7 @@ let q = (0, Chunk401393.animated)(Chunk481060.eTT),
       messages: g,
       channel: m,
       compact: _,
-      hasUnreads: j,
+      hasUnreads: O,
       focusId: S,
       placeholderHeight: X.totalHeight,
       canLoadMore: null == T,
@@ -214,9 +214,9 @@ let q = (0, Chunk401393.animated)(Chunk481060.eTT),
         var t;
         Q.ref.current = e, eo.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
       }),
-      eu = (0, c.e7)([O.Z], () => {
+      eu = (0, c.e7)([j.Z], () => {
         var e;
-        let t = null == (e = O.Z.settings.appearance) ? true : e.clientThemeSettings;
+        let t = null == (e = j.Z.settings.appearance) ? true : e.clientThemeSettings;
         return (null == t ? true : t.backgroundGradientPresetId) != null || (null == t ? true : t.customUserThemeSettings) != null
       }),
       ed = i.useMemo(() => k ? Y ? F.chatTypingGradientAtBottom : F.chatTypingGradientNotAtBottom : F.chatGradient, [k, Y]),
@@ -277,7 +277,7 @@ let q = (0, Chunk401393.animated)(Chunk481060.eTT),
     let {
       canManageMessages: h,
       permissionVersion: C,
-      canChat: O
+      canChat: j
     } = function(e) {
       let t = e.getGuildId(),
         n = (0, c.e7)([I.Z], () => null == t || I.Z.canChatInGuild(t), [t]),
@@ -344,7 +344,7 @@ let q = (0, Chunk401393.animated)(Chunk481060.eTT),
         }, {
           autoTrackExposure: false
         }),
-        o = null != (n = null == (t = A.default.getUser(j.default.getId())) ? true : t.hasFlag(G.xW$.SPAMMER)) && n,
+        o = null != (n = null == (t = A.default.getUser(O.default.getId())) ? true : t.hasFlag(G.xW$.SPAMMER)) && n,
         s = (0, p.ts)(e),
         u = (0, y.Z)("use_topic_dividers_in_chat"),
         d = (0, c.Wu)([v.Z], () => {
@@ -394,7 +394,7 @@ let q = (0, Chunk401393.animated)(Chunk481060.eTT),
           uploads: (0, c.e7)([N.Z], () => N.Z.getFiles(t.id), [t]),
           unreadCount: (0, c.e7)([T.ZP], () => T.ZP.getUnreadCount(t.id), [t]),
           hasUnreads: null != F,
-          canChat: O,
+          canChat: j,
           editingMessageId: q,
           fontSize: w,
           keyboardModeEnabled: U,

@@ -68,7 +68,7 @@ let y = new Chunk710845.Z("ImageEditor"),
     }), [I, S] = l.useState({
       x: 0,
       y: 0
-    }), P = l.useRef(null), [T, A] = l.useState(1), [M, R] = l.useState(null), [D, k] = l.useState({
+    }), P = l.useRef(null), [T, M] = l.useState(1), [A, R] = l.useState(null), [D, k] = l.useState({
       top: 0,
       bottom: 0,
       left: 0,
@@ -76,7 +76,7 @@ let y = new Chunk710845.Z("ImageEditor"),
     }), [z, G] = l.useState(0), [Z, L] = l.useState({
       x: 0,
       y: 0
-    }), [H, U] = l.useState(false), F = "image/gif" === t.type, B = (0, s.v)(t.type), J = B && !F, [V, W] = l.useState(null), Y = (0, d.h)(null != m ? m : x.dG, 500);
+    }), [U, F] = l.useState(false), H = "image/gif" === t.type, B = (0, s.v)(t.type), V = B && !H, [J, W] = l.useState(null), Y = (0, d.h)(null != m ? m : p.dG, 500);
     l.useEffect(() => {
       (0, g.Z)()
     }, []);
@@ -95,24 +95,24 @@ let y = new Chunk710845.Z("ImageEditor"),
         })
       }, [P, z, D]),
       X = l.useCallback(e => {
-        if (null == M) return;
-        let t = C(M, e, B),
+        if (null == A) return;
+        let t = C(A, e, B),
           {
             x: n,
             y: r
           } = O.current;
-        A(e), k(t), K({
+        M(e), k(t), K({
           x: n,
           y: r
         }), null == Y || Y()
-      }, [M, K, B, Y]),
+      }, [A, K, B, Y]),
       q = l.useCallback(() => {
-        if (null == P.current || null == M) return;
+        if (null == P.current || null == A) return;
         let e = (z + 90) % 360,
           t = -O.current.x,
           n = O.current.y,
-          r = M.height,
-          l = M.width,
+          r = A.height,
+          l = A.width,
           i = C({
             width: r,
             height: l
@@ -124,28 +124,28 @@ let y = new Chunk710845.Z("ImageEditor"),
           width: r,
           height: l
         }), k(i), null == Y || Y()
-      }, [M, z, K, T, B, Y]),
-      Q = l.useCallback(() => {
-        if (null == M) return {};
+      }, [A, z, K, T, B, Y]),
+      $ = l.useCallback(() => {
+        if (null == A) return {};
         let {
           height: e,
           width: t
-        } = N(E(M, z), T);
+        } = N(E(A, z), T);
         return {
           height: e,
           width: t,
           minHeight: e,
           minWidth: t
         }
-      }, [M, z, T]),
-      $ = l.useCallback(e => {
+      }, [A, z, T]),
+      Q = l.useCallback(e => {
         L({
           x: e.clientX - O.current.x,
           y: e.clientY - O.current.y
-        }), U(true)
+        }), F(true)
       }, []);
     l.useEffect(() => {
-      let e = () => U(false);
+      let e = () => F(false);
       return window.addEventListener("mouseup", e), () => window.removeEventListener("mouseup", e)
     }, []);
     let ee = l.useCallback(e => {
@@ -153,18 +153,18 @@ let y = new Chunk710845.Z("ImageEditor"),
         x: t,
         y: n
       } = O.current;
-      H && (e.clientX !== t || e.clientY !== n) && (K({
+      U && (e.clientX !== t || e.clientY !== n) && (K({
         x: t = e.clientX - Z.x,
         y: n = e.clientY - Z.y
       }), null == Y || Y())
-    }, [H, Z, K, Y]);
+    }, [U, Z, K, Y]);
     l.useEffect(() => {
-      if (H) return window.addEventListener("mousemove", ee), () => window.removeEventListener("mousemove", ee)
-    }, [ee, H]);
+      if (U) return window.addEventListener("mousemove", ee), () => window.removeEventListener("mousemove", ee)
+    }, [ee, U]);
     let et = l.useRef(null),
       en = l.useCallback(async () => {
         let e;
-        if (null == P.current || null == M) return;
+        if (null == P.current || null == A) return;
         let r = Date.now(),
           l = P.current,
           a = {
@@ -172,7 +172,7 @@ let y = new Chunk710845.Z("ImageEditor"),
             width: f.eT
           },
           s = null;
-        if (null != et.current && (et.current(), et.current = null), F) try {
+        if (null != et.current && (et.current(), et.current = null), H) try {
           let n = w({
               file: t,
               image: l,
@@ -182,7 +182,7 @@ let y = new Chunk710845.Z("ImageEditor"),
               imageRotation: z,
               resizeWidth: f.eT,
               resizeHeight: f.eT
-            }, M, T),
+            }, A, T),
             {
               result: r,
               cancelFn: i
@@ -193,7 +193,7 @@ let y = new Chunk710845.Z("ImageEditor"),
         } finally {
           var u;
           null == (u = et.current) || u.call(et), et.current = null
-        } else e = J ? n : (0, o.PT)({
+        } else e = V ? n : (0, o.PT)({
           image: l,
           cropDimensions: _,
           cropOriginCoordinates: O.current,
@@ -209,10 +209,10 @@ let y = new Chunk710845.Z("ImageEditor"),
           var e;
           null == (e = et.current) || e.call(et), et.current = null
         }
-      }, [t, z, F, J, i, M, T, n]);
+      }, [t, z, H, V, i, A, T, n]);
     l.useEffect(() => {
       en()
-    }, [en, I, z, M, H, T, V]);
+    }, [en, I, z, A, U, T, J]);
     let er = l.useCallback(() => {
       if (null == P.current) return;
       let e = P.current.naturalWidth,
@@ -222,14 +222,14 @@ let y = new Chunk710845.Z("ImageEditor"),
         height: t
       });
       let n = Math.min(Math.max(e, t) / Math.min(e, t), 4);
-      W(n), A(n), k(C({
+      W(n), M(n), k(C({
         width: e,
         height: t
       }, n, B))
     }, [B]);
     return (0, r.jsxs)("div", {
       className: a()(b.imageEditor, {
-        [b.isDragging]: H
+        [b.isDragging]: U
       }),
       style: {
         "--custom-image-editor-size": "".concat(240, "px")
@@ -245,20 +245,20 @@ let y = new Chunk710845.Z("ImageEditor"),
             })
           },
           style: v({
-            opacity: +(null != M),
+            opacity: +(null != A),
             transform: "translate3d(".concat(O.current.x, "px, ").concat(O.current.y, "px, 0) rotate(").concat(z, "deg)")
-          }, Q()),
+          }, $()),
           className: b.image,
           src: n,
           crossOrigin: "anonymous",
-          alt: p.intl.string(p.t.EYR1FR),
+          alt: x.intl.string(x.t.EYR1FR),
           ref: P,
-          onMouseDown: $,
+          onMouseDown: Q,
           draggable: false
-        }), !J && (0, r.jsx)("div", {
+        }), !V && (0, r.jsx)("div", {
           className: b.overlay,
           style: {
-            opacity: +(null != M),
+            opacity: +(null != A),
             width: _.width,
             height: _.height
           },
@@ -266,21 +266,21 @@ let y = new Chunk710845.Z("ImageEditor"),
             className: b.panHint,
             variant: "text-xs/normal",
             color: "text-primary",
-            children: p.intl.string(p.t.oBPhdH)
+            children: x.intl.string(x.t.oBPhdH)
           })
         })]
-      }), J ? (0, r.jsx)("div", {
+      }), V ? (0, r.jsx)("div", {
         className: b.animatedInfoContainer,
         children: (0, r.jsx)(c.Text, {
           variant: "text-sm/normal",
           color: "text-muted",
-          children: p.intl.string(p.t["5XCxio"])
+          children: x.intl.string(x.t["5XCxio"])
         })
       }) : (0, r.jsxs)("div", {
         className: b.toolsContainer,
         children: [(0, r.jsx)(c.ua7, {
-          text: p.intl.string(p.t["oCs/+P"]),
-          "aria-label": p.intl.string(p.t["oCs/+P"]),
+          text: x.intl.string(x.t["oCs/+P"]),
+          "aria-label": x.intl.string(x.t["oCs/+P"]),
           children: e => {
             var {
               onClick: t
@@ -318,16 +318,16 @@ let y = new Chunk710845.Z("ImageEditor"),
           children: [(0, r.jsx)(c.BlJ, {
             color: c.TVs.colors.ICON_SECONDARY,
             size: "sm"
-          }), null != V && (0, r.jsx)(c.iRW, {
+          }), null != J && (0, r.jsx)(c.iRW, {
             className: b.slider,
-            initialValue: V,
+            initialValue: J,
             minValue: 1,
             maxValue: 4,
             keyboardStep: .025,
             asValueChanges: X,
             equidistant: true,
             hideBubble: true,
-            "aria-label": p.intl.string(p.t["2hPcVF"])
+            "aria-label": x.intl.string(x.t["2hPcVF"])
           }), (0, r.jsx)(c.OyE, {
             color: c.TVs.colors.ICON_SECONDARY,
             size: "sm"

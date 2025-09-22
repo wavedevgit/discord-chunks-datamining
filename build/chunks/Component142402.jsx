@@ -28,11 +28,11 @@ function j(e) {
     isStreamer: t,
     stream: j,
     streamApplication: S,
-    onClose: x,
-    transitionState: w,
+    onClose: w,
+    transitionState: x,
     analyticsData: E
   } = e;
-  l.useEffect(() => {
+  i.useEffect(() => {
     p.default.track(_.rMx.OPEN_MODAL, {
       type: "Stream Problem Report",
       other_user_id: j.ownerId,
@@ -43,7 +43,7 @@ function j(e) {
     })
   }, [j.ownerId, S]);
   let {
-    showRefreshedStreamTaxonomy: k
+    showRefreshedStreamTaxonomy: P
   } = (0, s.u)({
     location: "StreamFeedback"
   }), {
@@ -52,8 +52,8 @@ function j(e) {
     location: "StreamFeedback"
   });
 
-  function P(e) {
-    var t, l, i;
+  function k(e) {
+    var t, i, l;
     let {
       dontShowAgain: s,
       rating: c,
@@ -63,7 +63,7 @@ function j(e) {
         feedbackType: O.nw.STREAM,
         location: "StreamFeedback"
       }), null != c) {
-      if (k) {
+      if (P) {
         let {
           category: n,
           problem: r
@@ -71,7 +71,7 @@ function j(e) {
         (0, f.Z)({
           problem: null != (t = null == r ? true : r.value) ? t : null,
           category: n,
-          variant: null != (l = null == r ? true : r.variant) ? l : null,
+          variant: null != (i = null == r ? true : r.variant) ? i : null,
           stream: j,
           feedback: u,
           streamApplication: S,
@@ -84,7 +84,7 @@ function j(e) {
           problem: t
         } = e;
         (0, f.Z)({
-          problem: null != (i = null == t ? true : t.value) ? i : null,
+          problem: null != (l = null == t ? true : t.value) ? l : null,
           stream: j,
           feedback: u,
           streamApplication: S,
@@ -124,15 +124,15 @@ function j(e) {
     showVibesHoneypot: R
   } = (0, u.X)({
     location: "StreamFeedback"
-  }), T = y.intl.string(y.t["5smP3d"]), N = y.intl.string(y.t["0uxA2d"]), L = y.intl.string(y.t.CqjnLC), F = {
-    impressionName: i.ImpressionNames.STREAM_FEEDBACK_MODAL,
+  }), T = y.intl.string(y.t["5smP3d"]), N = y.intl.string(y.t["0uxA2d"]), F = y.intl.string(y.t.CqjnLC), D = {
+    impressionName: l.ImpressionNames.STREAM_FEEDBACK_MODAL,
     impressionProperties: {
       media_session_id: E.media_session_id,
       rtc_connection_id: E.rtc_connection_id,
       parent_media_session_id: E.parent_media_session_id
     }
   };
-  if (k) {
+  if (P) {
     let e = {
         value: O.tX.CONNECTION,
         label: y.intl.string(h.default.FVhMw8),
@@ -155,7 +155,7 @@ function j(e) {
           label: y.intl.string(y.t["emlT9/"])
         }
       },
-      l = {
+      i = {
         value: O.tX.VIDEO,
         label: y.intl.string(h.default["0WFzPj"]),
         problemsHeader: y.intl.string(y.t["6Y1t5O"]),
@@ -165,7 +165,7 @@ function j(e) {
           label: y.intl.string(y.t["emlT9/"])
         }
       },
-      i = {
+      l = {
         value: O.tX.PEOPLE,
         label: y.intl.string(h.default.Moa3W1),
         problemsHeader: y.intl.string(y.t["6Y1t5O"]),
@@ -188,23 +188,23 @@ function j(e) {
         }
       };
     return (0, r.jsx)(b.Z, {
-      onSubmit: P,
-      onClose: x,
+      onSubmit: k,
+      onClose: w,
       ratingHeader: T,
       ratingEmojiKind: C,
-      ratingBody: t ? N : L,
+      ratingBody: t ? N : F,
       categoriesHeader: y.intl.string(h.default["tq859/"]),
-      optionsTree: [e, n, l, o, i],
-      impression: F,
-      transitionState: w
+      optionsTree: [e, n, i, o, l],
+      impression: D,
+      transitionState: x
     })
   }
   return (0, r.jsx)(m.Z, {
     modalType: "stream",
     header: T,
     ratingEmojiKind: C,
-    impression: F,
-    body: t ? N : L,
+    impression: D,
+    body: t ? N : F,
     problemTitle: y.intl.string(y.t["6Y1t5O"]),
     problems: (0, d.Z)({
       isStreamer: t,
@@ -212,9 +212,9 @@ function j(e) {
       showVibesHoneypot: R
     }),
     freeformNeededProblems: v,
-    onSubmit: P,
-    onClose: x,
-    transitionState: w,
+    onSubmit: k,
+    onClose: w,
+    transitionState: x,
     otherKey: g.kr.OTHER
   })
 }

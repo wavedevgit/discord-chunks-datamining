@@ -46,8 +46,8 @@ function _(e) {
       (0, h.gC)(e)
     }, [v]),
     {
-      unreadCount: O,
-      mentionCount: j
+      unreadCount: j,
+      mentionCount: O
     } = function(e) {
       let t = (0, a.e7)([d.Z], () => !(0, l.isEmpty)(d.Z.getTypingUsers(e)), [e]),
         {
@@ -73,11 +73,11 @@ function _(e) {
   });
   let S = v ? b.intl.string(b.t["5MstTk"]) : b.intl.string(b.t.kkKapK),
     I = [S];
-  j > 0 && I.push(b.intl.formatToPlainString(b.t["3l1GOz"], {
-    mentionCount: j
-  })), O > 0 && I.push(b.intl.string(b.t.x5zAGR));
+  O > 0 && I.push(b.intl.formatToPlainString(b.t["3l1GOz"], {
+    mentionCount: O
+  })), j > 0 && I.push(b.intl.string(b.t.x5zAGR));
   let P = (0, a.e7)([f.ZP], () => f.ZP.getFocusedLayout()),
-    Z = j > 0 ? j : O,
+    Z = O > 0 ? O : j,
     T = Z > 0;
   return (0, r.jsxs)("div", {
     className: y.wrapper,
@@ -109,7 +109,7 @@ function _(e) {
       themeable: true,
       className: n
     }, _)), T ? (0, r.jsx)(s.Z, {
-      hasMentions: j > 0,
+      hasMentions: O > 0,
       truncatedCount: Z > 99 ? "99+" : Z,
       className: y.badge
     }) : null]

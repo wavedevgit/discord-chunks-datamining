@@ -74,7 +74,7 @@ function C(e) {
           uses: l
         })
       }) : null]
-    }), (0, r.jsx)(b.Z, {
+    }), (0, r.jsx)(x.Z, {
       value: n,
       onChange: m,
       error: g,
@@ -99,8 +99,8 @@ function N(e) {
     errorDetails: d
   } = e, {
     analyticsLocations: p
-  } = (0, c.ZP)(), b = (0, u.g1)(t.id, "GuildSettingsBoostPerks"), _ = i.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), b ? (g.Z.close(), (0, m.Z)(t.id, o.Z.GUILD_POWERUPS_GUILD_SETTINGS_VANITY_URL, l.A$)) : (0, x.E6)({
+  } = (0, c.ZP)(), x = (0, u.g1)(t.id, "GuildSettingsBoostPerks"), _ = i.useCallback(e => {
+    e.preventDefault(), e.stopPropagation(), x ? (g.Z.close(), (0, m.Z)(t.id, o.Z.GUILD_POWERUPS_GUILD_SETTINGS_VANITY_URL, l.A$)) : (0, b.E6)({
       guild: t,
       analyticsLocations: p,
       analyticsSection: j.jXE.GUILD_SETTINGS_VANITY_URL,
@@ -108,7 +108,7 @@ function N(e) {
       perks: (0, v.WW)(),
       targetPremiumGuildTier: j.Eu4.TIER_3
     })
-  }, [p, t, b]);
+  }, [p, t, x]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, f.p)(t) ? (0, r.jsx)(C, {
       guild: t,

@@ -32,12 +32,12 @@ function _(e) {
   }, {
     autoTrackExposure: false
   }), {
-    viewerClippingAllowed: O,
-    isAtMaxSavingClipOperations: j
+    viewerClippingAllowed: j,
+    isAtMaxSavingClipOperations: O
   } = (0, l.cj)([s.Z], () => ({
     viewerClippingAllowed: null != v && (s.Z.isViewerClippingAllowedForUser(v.ownerId) || x),
     isAtMaxSavingClipOperations: s.Z.getIsAtMaxSaveClipOperations()
-  })), E = s.Z.getSettings().clipsEnabled, S = (null == v ? true : v.ownerId) === h.default.getId(), I = !E || !(S || O) || j || null == _, P = i.useCallback(e => {
+  })), E = s.Z.getSettings().clipsEnabled, S = (null == v ? true : v.ownerId) === h.default.getId(), I = !E || !(S || j) || O || null == _, P = i.useCallback(e => {
     var t, n;
     return (0, r.jsx)(a.xmR, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -76,7 +76,7 @@ function _(e) {
     },
     disabled: I,
     iconComponent: P,
-    label: null == v ? b.intl.string(b.t.eg5qtb) : S || O ? E ? j ? true : b.intl.string(b.t.U4URzM) : b.intl.string(b.t.wSS1yM) : b.intl.string(b.t.aRifJS),
+    label: null == v ? b.intl.string(b.t.eg5qtb) : S || j ? E ? O ? true : b.intl.string(b.t.U4URzM) : b.intl.string(b.t.wSS1yM) : b.intl.string(b.t.aRifJS),
     grow: false
   })
 }

@@ -2,7 +2,7 @@
 /** chunk id: 590965, original params: e,t,n (module,exports,require) **/
 let r;
 require.d(exports, {
-  Z: () => S
+  Z: () => y
 }), require("./388685.js"), require("./539854.js");
 var i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -40,21 +40,21 @@ function v(e) {
   }
   return e
 }
-let j = Chunk981631.IlC.APP,
-  b = false,
+let b = Chunk981631.IlC.APP,
+  j = false,
   I = false,
   N = [];
 
 function O() {
-  b = true
+  j = true
 }
-class y extends(i = Chunk442837.ZP.Store) {
+class S extends(i = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk430824.Z, Chunk701190.Z, Chunk594174.default)
   }
   isOpen() {
     let e = __OVERLAY__ ? Chunk981631.IlC.OVERLAY : Chunk981631.IlC.APP;
-    return !!(b && N.length > 0 && j === module)
+    return !!(j && N.length > 0 && b === module)
   }
   getProps() {
     return {
@@ -64,12 +64,12 @@ class y extends(i = Chunk442837.ZP.Store) {
     }
   }
 }
-E(y, "displayName", "InviteModalStore");
-let S = new y(Chunk570140.Z, {
+E(S, "displayName", "InviteModalStore");
+let y = new S(Chunk570140.Z, {
   OVERLAY_INITIALIZE: O,
   CONNECTION_OPEN: O,
   CONNECTION_CLOSED: function() {
-    b = false
+    j = false
   },
   INVITE_MODAL_OPEN: function(e) {
     let t = e.invite;
@@ -81,22 +81,22 @@ let S = new y(Chunk570140.Z, {
       } = t;
       if (null == e) returnfalse;
       if ((0, c.bc)(e.type)) {
-        if (null != u.Z.getChannel(e.id)) return (0, o.XU)(_.ME, e.id), f.ZP.focus(), false
+        if (null != u.Z.getChannel(e.id)) return (0, a.XU)(_.ME, e.id), f.ZP.focus(), false
       } else {
         if (null == n) returnfalse;
-        if (null != d.Z.getGuild(n.id) && !(0, a.TY)(t)) {
+        if (null != d.Z.getGuild(n.id) && !(0, o.TY)(t)) {
           let e = function(e) {
-            if ((0, a.W6)(e)) return x.oC.ROLE_SUBSCRIPTIONS;
+            if ((0, o.W6)(e)) return x.oC.ROLE_SUBSCRIPTIONS;
             let {
               channel: t
             } = e;
             if (null != t) {
               let e = u.Z.getChannel(t.id);
-              if (p.Z.can(_.Plq.VIEW_CHANNEL, e)) return t.id
+              if (g.Z.can(_.Plq.VIEW_CHANNEL, e)) return t.id
             }
             return null
           }(t);
-          return (0, o.XU)(n.id, e), f.ZP.focus(), false
+          return (0, a.XU)(n.id, e), f.ZP.focus(), false
         }
       }
     }
@@ -104,7 +104,7 @@ let S = new y(Chunk570140.Z, {
         let [n] = e;
         return n.code === t.code
       })) returnfalse;
-    j = e.context, I = false;
+    b = e.context, I = false;
     let n = function(e) {
       let {
         approximate_member_count: t,
@@ -113,8 +113,8 @@ let S = new y(Chunk570140.Z, {
         state: i,
         target_type: l,
         target_user: s,
-        target_application: a,
-        type: o,
+        target_application: o,
+        type: a,
         channel: c,
         guild: u,
         is_nickname_changeable: d
@@ -125,11 +125,11 @@ let S = new y(Chunk570140.Z, {
         approximate_presence_count: n,
         target_type: l,
         target_user: s,
-        target_application: a,
-        type: o,
+        target_application: o,
+        type: a,
         is_nickname_changeable: d
       };
-      return null != c && (h.channel = v({}, c)), null != u && (h.guild = (0, m.Qs)(u)), null != e.inviter && (h.inviter = v({}, e.inviter)), h
+      return null != c && (h.channel = v({}, c)), null != u && (h.guild = (0, p.Qs)(u)), null != e.inviter && (h.inviter = v({}, e.inviter)), h
     }(t);
     N.push([n, e.resolve])
   },

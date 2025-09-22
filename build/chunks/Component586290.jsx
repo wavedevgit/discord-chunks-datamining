@@ -30,44 +30,44 @@ function b(e) {
   } = e;
   s()(null != t, "Camera capture device cannot be null");
   let o = (0, p.Z)(),
-    [b, S] = (0, m.Ls)(x.h7.AUDIO_INPUT, {
+    [b, y] = (0, m.Ls)(x.h7.AUDIO_INPUT, {
       location: "CaptureDeviceConfig"
     }),
-    y = b.concat(S),
+    S = b.concat(y),
     [C, O] = i.useState(function(e, t, n) {
       var r;
       let i = t.find(t => t.id === e);
       if (null == i) return null;
       let l = a().reduce(n, (e, t) => (0, c.stringSimilarity)(i.name, t.name) > (0, c.stringSimilarity)(i.name, e.name) ? t : e);
       return null != (r = null == l ? true : l.id) ? r : null
-    }(t.id, o, y));
-  return null != C && l(C), (0, r.jsxs)(u.xJW, {
+    }(t.id, o, S));
+  return null != C && l(C), (0, r.jsx)(u.hjN, {
     title: "Capture Device",
     className: v.modalContent,
-    children: [(0, r.jsx)("div", {
-      className: j.marginTop8,
-      children: (0, r.jsxs)(h.Z, {
-        children: [(0, r.jsx)("span", {
-          className: _.ellipsisText,
-          children: t.name
-        }), (0, r.jsx)(d.zx, {
-          className: _.changeButton,
-          color: d.zx.Colors.PRIMARY,
-          size: d.zx.Sizes.SMALL,
-          onClick: n,
-          children: g.intl.string(g.t.GEgsAw)
-        })]
-      })
-    }), (0, r.jsx)(u.xJW, {
-      className: j.marginTop8,
-      title: g.intl.string(g.t.y4ooen),
-      children: (0, r.jsx)(f.j, {
+    children: (0, r.jsxs)(u.Kqy, {
+      gap: 8,
+      children: [(0, r.jsx)("div", {
+        className: j.marginTop8,
+        children: (0, r.jsxs)(h.Z, {
+          children: [(0, r.jsx)("span", {
+            className: _.ellipsisText,
+            children: t.name
+          }), (0, r.jsx)(d.zx, {
+            className: _.changeButton,
+            color: d.zx.Colors.PRIMARY,
+            size: d.zx.Sizes.SMALL,
+            onClick: n,
+            children: g.intl.string(g.t.GEgsAw)
+          })]
+        })
+      }), (0, r.jsx)(f.j, {
+        label: g.intl.string(g.t.y4ooen),
         deviceType: x.h7.AUDIO_INPUT,
         location: "CaptureDeviceConfig",
         className: j.__invalid_marginaTop8,
         selectedDeviceId: C,
         onSelectDevice: e => (O(e), l(e), false)
-      })
-    })]
+      })]
+    })
   })
 }

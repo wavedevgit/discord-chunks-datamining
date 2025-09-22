@@ -29,10 +29,10 @@ function b(e) {
   }, [_]), v = (0, i.e7)([d.Z], () => {
     var e;
     return d.Z.isFetchingProfile(null != (e = null == C ? true : C.id) ? e : m.lds)
-  }), x = (0, o.Z)(v), O = (0, i.e7)([c.Z], () => c.Z.getAppIdForBotUserId(null == C ? true : C.id)), j = (0, i.e7)([d.Z], () => {
+  }), x = (0, o.Z)(v), j = (0, i.e7)([c.Z], () => c.Z.getAppIdForBotUserId(null == C ? true : C.id)), O = (0, i.e7)([d.Z], () => {
     var e;
     return null !== C ? null == (e = d.Z.getUserProfile(null == C ? true : C.id)) ? true : e.application : true
-  }), E = null != O ? O : null == j ? true : j.id;
+  }), E = null != j ? j : null == O ? true : O.id;
   r.useEffect(() => {
     if (null == E) {
       var e;

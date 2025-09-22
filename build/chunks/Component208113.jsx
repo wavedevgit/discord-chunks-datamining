@@ -4,9 +4,8 @@
 require.d(exports, {
   Z: () => h
 }), require("./539854.js");
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
-var Chunk442837 = require("./442837.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk846027 = require("./846027.js"),
   Chunk921801 = require("./921801.js"),
@@ -48,17 +47,15 @@ function h() {
   }));
   return (0, Chunk951288.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_SUBSYSTEM,
-    children: (0, Chunk951288.jsx)(Chunk481060.xJW, {
-      title: Chunk388032.intl.string(Chunk388032.t.wVBHr6),
-      children: (0, Chunk951288.jsx)(Chunk481060.q4e, {
-        className: Chunk197571.marginBottom20,
-        value: module,
-        options: p(exports, require, h),
-        onChange: e => {
-          let t = () => o.Z.setAudioSubsystem(e);
-          (0, c.Z)(f.intl.string(f.t.uY7AcX), f.intl.string(f.t.gBqik5), t)
-        }
-      })
+    children: (0, Chunk951288.jsx)(Chunk481060.q4e, {
+      label: Chunk388032.intl.string(Chunk388032.t.wVBHr6),
+      className: Chunk197571.marginBottom20,
+      value: module,
+      options: p(exports, require, h),
+      onChange: e => {
+        let t = () => o.Z.setAudioSubsystem(e);
+        (0, c.Z)(f.intl.string(f.t.uY7AcX), f.intl.string(f.t.gBqik5), t)
+      }
     })
   })
 }

@@ -1,7 +1,7 @@
 /** Chunk was on 27978 **/
 /** chunk id: 299852, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => b
 }), require("./35282.js"), require("./388685.js");
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -47,7 +47,7 @@ class v extends(r = Chunk647438.PureComponent) {
         body: {
           user: n
         }
-      } = e, r = new p.Z(n);
+      } = e, r = new g.Z(n);
       this.setState({
         success: true,
         busy: false,
@@ -85,7 +85,7 @@ class v extends(r = Chunk647438.PureComponent) {
         className: x.marginTop8,
         color: d.zx.Colors.LINK,
         look: d.zx.Looks.LINK,
-        onClick: () => r(m.Z5c.SETTINGS("notifications", f.vG)),
+        onClick: () => r(p.Z5c.SETTINGS("notifications", f.vG)),
         children: _.intl.string(_.t.YYTira)
       })]
     })
@@ -159,6 +159,6 @@ class v extends(r = Chunk647438.PureComponent) {
 E(v, "defaultProps", {
   transitionTo: e => n.g.location.assign(e)
 });
-let j = Chunk442837.ZP.connectStores([Chunk896797.Z], () => ({
+let b = Chunk442837.ZP.connectStores([Chunk896797.Z], () => ({
   defaultRoute: Chunk896797.Z.defaultRoute
 }))(v)

@@ -182,7 +182,7 @@ function F(e) {
   });
   let {
     showNoResultsAlt: x
-  } = l, O = x ? k.intl.string(k.t["VrK/2d"]) : k.intl.string(k.t.V6nAfH);
+  } = l, j = x ? k.intl.string(k.t["VrK/2d"]) : k.intl.string(k.t.V6nAfH);
   return (0, r.jsxs)(G, {
     children: [(0, r.jsx)("div", {
       className: a()(L.noResultsImage, {
@@ -192,7 +192,7 @@ function F(e) {
       className: a()(L.emptyResultsText, L.noResults, {
         [L.alt]: x
       }),
-      children: O
+      children: j
     })]
   })
 }
@@ -350,13 +350,13 @@ let V = [],
       [et, en] = (0, d.US)(ee),
       er = et === s.z.SEARCH_AUTHOR_TYPE_SEARCH_RESULTS_HINT,
       ei = i.useCallback(() => {
-        let e = "".concat(O.ZP[M.dCx.FILTER_AUTHOR_TYPE].key, " user") + " ";
+        let e = "".concat(j.ZP[M.dCx.FILTER_AUTHOR_TYPE].key, " user") + " ";
         S.Z.appendTextToSearchInput(t, e)
       }, [t]);
     return (0, r.jsxs)("section", {
       className: L.searchResultsWrap,
       "aria-label": k.intl.string(k.t.zkoeq6),
-      children: [(0, r.jsx)(j.Z, {
+      children: [(0, r.jsx)(O.Z, {
         searchContext: t,
         searchMode: x,
         onSearchModeChange: q,
@@ -451,13 +451,13 @@ function W(e) {
   } = (0, T.Z)({
     searchContext: t
   }), {
-    searchMode: O,
-    setSearchMode: j
+    searchMode: j,
+    setSearchMode: O
   } = (0, N.Z)({
     searchContext: t
   }), E = i.useCallback(e => {
     if (c.isSearching) return;
-    j(e);
+    O(e);
     let r = S.Z.getSearchInputText(t),
       i = (0, y.Tm)(t),
       l = w.Z.getSearchResultsQuery(i);
@@ -473,7 +473,7 @@ function W(e) {
       searchMode: e,
       offset: 0
     }))
-  }, [n, c.isSearching, t, j]), I = i.useCallback(e => {
+  }, [n, c.isSearching, t, O]), I = i.useCallback(e => {
     if (c.isSearching) return;
     let r = S.Z.getSearchInputText(t),
       i = (0, y.Tm)(t),
@@ -482,14 +482,14 @@ function W(e) {
       searchContext: t,
       queryString: r,
       selectedPageIndex: e,
-      searchMode: O
+      searchMode: j
     }) : S.Z.fetchMessages({
       searchContext: t,
       queryString: r,
       searchQuery: l,
       offset: e * M.vpv
     }))
-  }, [n, c.isSearching, t, O]), P = (0, o.e7)([w.Z], () => {
+  }, [n, c.isSearching, t, j]), P = (0, o.e7)([w.Z], () => {
     let e = (0, y.Tm)(t);
     return w.Z.getSearchResultsQuery(e)
   }), Z = t.type === M.aib.FAVORITES, A = i.useCallback(e => g.Z.setShowBlockedResults(t, e), [t]), R = i.useDeferredValue(f), k = i.useDeferredValue(c), L = i.useDeferredValue(d);
@@ -506,7 +506,7 @@ function W(e) {
       dismissFeedbackEntrypoint: a,
       onPageChange: I,
       onSearchModeChange: E,
-      searchMode: O,
+      searchMode: j,
       onBlockedResultsClick: A,
       searchResultsQuery: P,
       isFavoritesSearch: Z

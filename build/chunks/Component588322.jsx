@@ -25,10 +25,10 @@ var Chunk951288 = require("./951288.js"),
 function v(e) {
   let {
     channelId: t
-  } = e, v = (0, l.e7)([m.Z], () => m.Z.getChannel(t)), x = (0, l.e7)([m.Z], () => m.Z.getChannel(null == v ? true : v.parent_id)), O = (0, l.e7)([b.Z], () => b.Z.getGuild(null == v ? true : v.getGuildId())), j = (0, s.ZP)(v), E = i.useRef(false);
+  } = e, v = (0, l.e7)([m.Z], () => m.Z.getChannel(t)), x = (0, l.e7)([m.Z], () => m.Z.getChannel(null == v ? true : v.parent_id)), j = (0, l.e7)([b.Z], () => b.Z.getGuild(null == v ? true : v.getGuildId())), O = (0, s.ZP)(v), E = i.useRef(false);
   if (i.useEffect(() => {
       null == v || E.current || (E.current = true, (0, y.lN)(v))
-    }, [v]), null == v || null == O) return null;
+    }, [v]), null == v || null == j) return null;
   let S = (0, r.jsx)(f.Z, {
     channel: v
   });
@@ -42,8 +42,8 @@ function v(e) {
       children: (0, p.ud)({
         channel: v,
         parentChannel: x,
-        channelName: j,
-        guild: O,
+        channelName: O,
+        guild: j,
         inSidebar: true,
         handleContextMenu: function(e) {
           (0, a.jW)(e, async () => {
@@ -92,7 +92,7 @@ function v(e) {
       className: C.chat,
       children: (0, r.jsx)(c.Z, {
         channel: v,
-        guild: O,
+        guild: j,
         chatInputType: u.Ie.SIDEBAR
       }, t)
     })]

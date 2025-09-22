@@ -81,7 +81,7 @@ function k(e) {
       sectionOverallPosition: 0,
       promotionalLabel: null != g ? (0, b.dF)(g.application) : true
     });
-  return null == g || null == h || f ? null : (null != g.id && null != g.image_hash && (n = (0, O.$_)({
+  return null == g || null == h || f ? null : (null != g.id && null != g.image_hash && (n = (0, j.$_)({
     itemId: g.id,
     hash: g.image_hash,
     containerWidth: 584
@@ -122,14 +122,14 @@ let L = Chunk647438.forwardRef(function(e, t) {
     className: y
   } = e, v = (0, d.e7)([f.Z], () => f.Z.useReducedMotion), {
     id: x,
-    guild_id: O
+    guild_id: j
   } = l;
   i.useEffect(() => {
     S.default.track(A.rMx.ACTIVITIES_CENTER_CONTROL_TRAY_BUTTON_HOVERED, {
       channel_id: x,
-      guild_id: O
+      guild_id: j
     })
-  }, [x, O]), i.useEffect(() => {
+  }, [x, j]), i.useEffect(() => {
     o || s()
   }, [s, o]);
   let E = (0, h.bp)(),
@@ -170,7 +170,7 @@ let L = Chunk647438.forwardRef(function(e, t) {
   }, [c, l]), V = G ? p.iWm : p.nG3;
   return (0, r.jsx)(g.Gt, {
     value: M,
-    children: (0, r.jsx)(j.Z, {
+    children: (0, r.jsx)(O.Z, {
       children: (0, r.jsxs)(p.VqE, {
         ref: t,
         "aria-labelledby": D,

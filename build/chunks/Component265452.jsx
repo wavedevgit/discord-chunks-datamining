@@ -92,20 +92,20 @@ function ei(e) {
   } = e;
   return (0, l.jsxs)(h.P3F, {
     "aria-disabled": s,
-    className: $.recipientRow,
+    className: J.recipientRow,
     onClick: r,
     children: [(0, l.jsx)("div", {
-      className: $.recipientAsset,
+      className: J.recipientAsset,
       children: t
     }), (0, l.jsxs)("div", {
-      className: $.recipientLabels,
+      className: J.recipientLabels,
       children: [(0, l.jsx)(h.Text, {
-        className: $.recipientLabel,
+        className: J.recipientLabel,
         variant: "text-md/medium",
         lineClamp: 1,
         children: n
       }), true !== i ? (0, l.jsx)(h.Text, {
-        className: $.recipientSublabel,
+        className: J.recipientSublabel,
         variant: "text-xs/normal",
         color: "text-muted",
         children: i
@@ -115,7 +115,7 @@ function ei(e) {
       displayOnly: true,
       size: 24,
       value: a,
-      className: $.checkbox
+      className: J.checkbox
     })]
   })
 }
@@ -130,7 +130,7 @@ function er(e) {
   } = e, o = F.ZP.useName(n), u = F.ZP.useUserTag(n, {
     decoration: "never"
   }), [d, g] = (0, c.Wu)([U.Z, L.Z], () => [U.Z.getNickname(n.id), L.Z.getStatus(n.id)], [n]), m = i.useCallback(() => r(n.id), [r, n.id]), p = [u];
-  w.ZP.isMember(t.id, n.id) && p.push(J.intl.string(J.t.u1sEf3));
+  w.ZP.isMember(t.id, n.id) && p.push($.intl.string($.t.u1sEf3));
   let I = p.join("\xa0\xa0•\xa0\xa0");
   return (0, l.jsx)(ei, {
     icon: (0, l.jsx)(v.Z, {
@@ -240,7 +240,7 @@ function eo(e) {
     }
   }, [t, n, a, r, o]), m = i.useCallback(() => 48, []);
   return 0 === n.length ? (0, l.jsx)(h.OZU, {
-    children: J.intl.string(J.t.ojoWgY)
+    children: $.intl.string($.t.ojoWgY)
   }) : (0, l.jsx)(d.bG, {
     navigator: c,
     children: (0, l.jsx)(d.SJ, {
@@ -264,7 +264,7 @@ function eo(e) {
             return i
           }(e, ["ref"]);
         return (0, l.jsx)(h.YAO, (t = ee({
-          className: $.recipientList,
+          className: J.recipientList,
           style: {
             "--custom-recipient-row-height": "".concat(48, "px")
           },
@@ -329,7 +329,7 @@ function eu(e) {
     eg = i.useRef(null),
     {
       analyticsLocations: eh
-    } = (0, N.ZP)(j.Z.INSTANT_INVITE_MODAL),
+    } = (0, j.ZP)(N.Z.INSTANT_INVITE_MODAL),
     em = i.useCallback(e => {
       var t;
       null == (t = eg.current) || t.scrollTo({
@@ -355,9 +355,9 @@ function eu(e) {
       var e;
       return null != s ? s : null != (e = A.ZP.getDefaultChannel(r.id, true, Q.Plq.CREATE_INSTANT_INVITE)) ? e : null
     }, [r.id, s]),
-    ej = !(0, c.e7)([k.Z], () => null != ef && k.Z.can(Q.Plq.CREATE_INSTANT_INVITE, ef), [ef]) && !(null == ef ? true : ef.isGuildVocal()),
-    eN = (0, _.Z)(ef),
-    e_ = (null == ef ? true : ef.type) === Q.d4z.GUILD_VOICE && !ej && !eN,
+    eN = !(0, c.e7)([k.Z], () => null != ef && k.Z.can(Q.Plq.CREATE_INSTANT_INVITE, ef), [ef]) && !(null == ef ? true : ef.isGuildVocal()),
+    ej = (0, _.Z)(ef),
+    e_ = (null == ef ? true : ef.type) === Q.d4z.GUILD_VOICE && !eN && !ej,
     {
       enabled: eE
     } = y.o.useExperiment({
@@ -429,7 +429,7 @@ function eu(e) {
       er(true);
       let i = null,
         a = null != (e = P.Z.getStageInstanceByChannel(null == ef ? true : ef.id)) ? e : null;
-      if (ej && null != r.vanityURLCode) i = r.vanityURLCode;
+      if (eN && null != r.vanityURLCode) i = r.vanityURLCode;
       else if ((null == a ? true : a.invite_code) != null) i = a.invite_code;
       else if (null != ef) {
         let e = null != (t = R.Z.getInvite(ef.id, {
@@ -447,7 +447,7 @@ function eu(e) {
         baseCode: i,
         guildScheduledEventId: null == d ? true : d.id
       }))
-    }, [ef, ej, r, et, g, null == d ? true : d.id]),
+    }, [ef, eN, r, et, g, null == d ? true : d.id]),
     eA = i.useCallback(async () => {
       if (ea || ei) return;
       es(true), ed(null);
@@ -505,7 +505,7 @@ function eu(e) {
           })
         });
         if (await Promise.allSettled(n), n.length > 0) {
-          let e = C.length > 1 ? J.intl.string(J.t["4pl/xs"]) : J.intl.string(J.t.sVwWdX);
+          let e = C.length > 1 ? $.intl.string($.t["4pl/xs"]) : $.intl.string($.t.sVwWdX);
           (0, h.showToast)((0, h.createToast)(e, h.ToastType.INVITE))
         }
         e = true
@@ -515,11 +515,11 @@ function eu(e) {
       e && eP()
     }, [ea, ei, es, C, ey, eZ, eh, g, eP]),
     ew = ea || ei;
-  return (0, l.jsx)(N.Gt, {
+  return (0, l.jsx)(j.Gt, {
     value: eh,
     children: (0, l.jsxs)(h.Y0X, {
-      className: a()($.modal, {
-        [$.disabled]: ew
+      className: a()(J.modal, {
+        [J.disabled]: ew
       }),
       transitionState: t,
       impression: {
@@ -531,17 +531,17 @@ function eu(e) {
       },
       parentComponent: "InstantInviteRefreshModal",
       children: [(0, l.jsxs)(h.xBx, {
-        className: $.header,
+        className: J.header,
         children: [(0, l.jsxs)("div", {
-          className: $.titleLine,
+          className: J.titleLine,
           children: [(0, l.jsx)("div", {
-            className: $.title,
+            className: J.title,
             children: (0, l.jsx)(h.X6q, {
               variant: "heading-lg/semibold",
-              children: J.intl.string(J.t.BN75l5)
+              children: $.intl.string($.t.BN75l5)
             })
           }), (0, l.jsx)(h.olH, {
-            className: $.closeButton,
+            className: J.closeButton,
             onClick: eP
           })]
         }), (0, l.jsx)(h.E1j, {
@@ -549,13 +549,13 @@ function eu(e) {
           query: M,
           onChange: em,
           onClear: ep,
-          placeholder: J.intl.string(J.t["5h0QOD"]),
-          "aria-label": J.intl.string(J.t["5h0QOD"]),
+          placeholder: $.intl.string($.t["5h0QOD"]),
+          "aria-label": $.intl.string($.t["5h0QOD"]),
           autoFocus: true
         })]
       }), (0, l.jsx)(h.hzk, {
-        className: a()($.body, {
-          [$.empty]: 0 === ey.length
+        className: a()(J.body, {
+          [J.empty]: 0 === ey.length
         }),
         children: (0, l.jsx)(eo, {
           guild: r,
@@ -567,15 +567,15 @@ function eu(e) {
         })
       }), (0, l.jsxs)(h.mzw, {
         direction: S.Z.Direction.VERTICAL,
-        className: $.footer,
+        className: J.footer,
         children: [(0, l.jsx)(W.f, {
-          className: $.footerContent,
+          className: J.footerContent,
           guild: r,
           channel: null != s ? s : null,
           applicationId: null != f ? f : null,
           getInviteKey: eZ,
           sendInvite: eA,
-          canUseVanityURL: ej,
+          canUseVanityURL: eN,
           disabled: ew,
           hasSelection: C.length > 0,
           options: et,

@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk451964 = require("./451964.js");
 
-function N(e, t, n) {
+function j(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -103,19 +103,19 @@ class E extends Chunk647438.Component {
     })
   }
   constructor(...e) {
-    super(...e), N(this, "state", {
+    super(...e), j(this, "state", {
       sending: false,
       invited: false,
       hovered: false
-    }), N(this, "handleMouseEnter", () => {
+    }), j(this, "handleMouseEnter", () => {
       this.setState({
         hovered: true
       })
-    }), N(this, "handleMouseLeave", () => {
+    }), j(this, "handleMouseLeave", () => {
       this.setState({
         hovered: false
       })
-    }), N(this, "getInviteAnalyticsMetadata", () => {
+    }), j(this, "getInviteAnalyticsMetadata", () => {
       let {
         row: e,
         source: t
@@ -124,7 +124,7 @@ class E extends Chunk647438.Component {
         suggestionData: h.Z.getSelectedInviteMetadata(e),
         source: t
       }
-    }), N(this, "handleClickInvite", () => {
+    }), j(this, "handleClickInvite", () => {
       let {
         user: e,
         channel: t,

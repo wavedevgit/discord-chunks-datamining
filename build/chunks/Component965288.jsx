@@ -100,7 +100,7 @@ let P = Chunk647438.memo(function(e) {
       blocked: c,
       ignored: u,
       rtsState: d
-    } = n, h = d === O.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK, f = d === O.xO.REQUESTED_TO_SPEAK || h;
+    } = n, h = d === j.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK, f = d === j.xO.REQUESTED_TO_SPEAK || h;
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
         className: E.avatarContainer,
@@ -138,7 +138,7 @@ let P = Chunk647438.memo(function(e) {
     } = e, {
       user: o,
       blocked: d
-    } = t, x = l.getGuildId(), O = C.default.getId(), {
+    } = t, x = l.getGuildId(), j = C.default.getId(), {
       newestAnalyticsLocation: P
     } = (0, g.ZP)(m.Z.AUDIENCE_TILE), T = (0, f.bp)(), N = (0, u.e7)([v.ZP], () => {
       var e;
@@ -151,8 +151,8 @@ let P = Chunk647438.memo(function(e) {
         name: c.ImpressionNames.CALL_TILE_CONTEXT_MENU,
         properties: {
           location: "AudienceTile",
-          is_tile_owner: o.id === O,
-          tile_type: j.TH.USER
+          is_tile_owner: o.id === j,
+          tile_type: O.TH.USER
         }
       }), (0, h.jW)(e, async () => {
         let {
@@ -167,13 +167,13 @@ let P = Chunk647438.memo(function(e) {
           showChatItems: false,
           onInteraction: (0, y.u)("GuildChannelUserContextMenu", P, {
             targetUserId: o.id,
-            tileType: j.TH.USER
+            tileType: O.TH.USER
           })
         }))
       }, {
         context: T
       })
-    }, [o, O, T, x, l, P]);
+    }, [o, j, T, x, l, P]);
     return (0, r.jsx)(_.Z, {
       targetElementRef: A,
       user: o,

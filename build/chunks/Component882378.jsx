@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
 let _ = Chunk647438.memo(function(e) {
   let {
     channel: t
-  } = e, _ = (0, u.h)(t.id), C = (0, d.o)(t.id), v = (0, p.M)(t.id), x = (0, a.f9)(), O = (0, l.e7)([f.Z], () => f.Z.hasLayers()), j = i.useCallback(() => C ? b.intl.string(b.t["16QyDg"]) : null != v ? b.intl.string(b.t.kCN9i4) : null, [C, v]), E = i.useMemo(() => (C || null != v) && !x && !O, [C, v, x, O]), [S, I] = i.useState(j());
+  } = e, _ = (0, u.h)(t.id), C = (0, d.o)(t.id), v = (0, p.M)(t.id), x = (0, a.f9)(), j = (0, l.e7)([f.Z], () => f.Z.hasLayers()), O = i.useCallback(() => C ? b.intl.string(b.t["16QyDg"]) : null != v ? b.intl.string(b.t.kCN9i4) : null, [C, v]), E = i.useMemo(() => (C || null != v) && !x && !j, [C, v, x, j]), [S, I] = i.useState(O());
   i.useEffect(() => {
     null != v && null != _ && (o.uvj.announce(b.intl.string(b.t.acsXuL)), setTimeout(() => {
       (0, c.T)(t.id, [v.id])
@@ -46,9 +46,9 @@ let _ = Chunk647438.memo(function(e) {
       viewName: h.pb.SAFETY_TOOLS_BUTTON
     })
   }), i.useEffect(() => {
-    let e = j();
+    let e = O();
     null != e && I(e)
-  }, [C, v, j]);
+  }, [C, v, O]);
   let P = i.useCallback(() => {
     null != v && (0, c.T)(t.id, [v.id]), null != _ && ((0, o.ZDy)(async () => {
       let {

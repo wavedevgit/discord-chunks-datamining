@@ -26,8 +26,8 @@ let h = e => {
     onSelectMaxUses: I,
     isGuestInviteCreationToggleEnabled: x,
     onSetInviteFlags: f
-  } = e, j = (0, s.ZP)(), {
-    maxAgeOptions: N,
+  } = e, N = (0, s.ZP)(), {
+    maxAgeOptions: j,
     maxAge: _,
     maxUses: E,
     temporary: S,
@@ -51,7 +51,7 @@ let h = e => {
       })]
     }), (0, l.jsx)(o.Z, {
       shouldHideTemporaryInviteToggle: h,
-      maxAgeOptions: N,
+      maxAgeOptions: j,
       maxAge: _,
       maxUses: E,
       temporary: S,
@@ -65,7 +65,7 @@ let h = e => {
     }), (0, l.jsx)(a.mzw, {
       className: c.settingsFooter,
       children: (0, l.jsx)(u.Z, {
-        theme: j,
+        theme: N,
         onConfirm: () => {
           m(), t()
         },
