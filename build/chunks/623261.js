@@ -1,0 +1,53 @@
+/** Chunk was on web.js **/
+/** chunk id: 623261, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+
+function r(e) {
+  var t;
+  return "undefined" != typeof window && null != window.navigator && ((null == (t = window.navigator.userAgentData) ? true : t.brands.some(t => e.test(t.brand))) || e.test(window.navigator.userAgent))
+}
+
+function i(e) {
+  var t;
+  return "undefined" != typeof window && null != window.navigator && e.test((null == (t = window.navigator.userAgentData) ? true : t.platform) || window.navigator.platform)
+}
+
+function a(e) {
+  let t = null;
+  return () => (null == t && (t = e()), t)
+}
+require.d(exports, {
+  Dt: () => f,
+  Pf: () => u,
+  V5: () => o,
+  gn: () => c,
+  vU: () => _,
+  zc: () => l
+});
+let o = a(function() {
+    return i(/^Mac/i)
+  }),
+  s = a(function() {
+    return i(/^iPhone/i)
+  }),
+  l = a(function() {
+    return i(/^iPad/i) || o() && navigator.maxTouchPoints > 1
+  }),
+  c = a(function() {
+    return s() || l()
+  });
+a(function() {
+  return o() || c()
+});
+let u = a(function() {
+    return r(/AppleWebKit/i) && !d()
+  }),
+  d = a(function() {
+    return r(/Chrome/i)
+  }),
+  f = a(function() {
+    return r(/Android/i)
+  }),
+  _ = a(function() {
+    return r(/Firefox/i)
+  })

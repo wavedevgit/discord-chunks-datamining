@@ -2,8 +2,9 @@
 /** chunk id: 402453, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
+  A: () => l,
   ZF: () => s,
-  kb: () => l
+  kb: () => c
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js");
@@ -32,6 +33,11 @@ function s() {
 }
 
 function l(e) {
+  var t, n, r;
+  return null != (r = null == (n = s().experiments) || null == (t = n.manaDesktopToggleInputs) ? true : t[e]) && r
+}
+
+function c(e) {
   let {
     children: t,
     value: n

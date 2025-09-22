@@ -2,13 +2,18 @@
 /** chunk id: 784534, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Yf: () => o,
-  d0: () => s
+  WZ: () => f,
+  Yf: () => c,
+  d0: () => u,
+  uR: () => d
 });
 var Chunk436283 = require("./436283.js"),
   Chunk101741 = require("./101741.js"),
+  Chunk70768 = require("./70768.js"),
+  Chunk253231 = require("./253231.js"),
+  Chunk945353 = require("./945353.js"),
   Chunk647438 = require("./647438.js");
-class o {
+class c {
   isDefaultPrevented() {
     return this.nativeEvent.defaultPrevented
   }
@@ -27,8 +32,8 @@ class o {
   }
 }
 
-function s(e) {
-  let t = (0, a.useRef)({
+function u(e) {
+  let t = (0, l.useRef)({
     isFocused: false,
     observer: null
   });
@@ -41,12 +46,12 @@ function s(e) {
   let n = (0, i.i)(t => {
     null == e || e(t)
   });
-  return (0, a.useCallback)(e => {
+  return (0, l.useCallback)(e => {
     if (e.target instanceof HTMLButtonElement || e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement || e.target instanceof HTMLSelectElement) {
       t.current.isFocused = true;
       let r = e.target,
         i = e => {
-          t.current.isFocused = false, r.disabled && n(new o("blur", e)), t.current.observer && (t.current.observer.disconnect(), t.current.observer = null)
+          t.current.isFocused = false, r.disabled && n(new c("blur", e)), t.current.observer && (t.current.observer.disconnect(), t.current.observer = null)
         };
       r.addEventListener("focusout", i, {
         once: true
@@ -68,4 +73,32 @@ function s(e) {
       })
     }
   }, [n])
+}
+let d = false;
+
+function f(e) {
+  for (; e && !(0, a.E)(e);) e = e.parentElement;
+  let t = (0, o.kR)(e),
+    n = t.document.activeElement;
+  if (!n || n === e) return;
+  d = true;
+  let r = false,
+    i = e => {
+      (e.target === n || r) && e.stopImmediatePropagation()
+    },
+    l = t => {
+      (t.target === n || r) && (t.stopImmediatePropagation(), e || r || (r = true, (0, s.A)(n), f()))
+    },
+    c = t => {
+      (t.target === e || r) && t.stopImmediatePropagation()
+    },
+    u = t => {
+      (t.target === e || r) && (t.stopImmediatePropagation(), r || (r = true, (0, s.A)(n), f()))
+    };
+  t.addEventListener("blur", i, true), t.addEventListener("focusout", l, true), t.addEventListener("focusin", u, true), t.addEventListener("focus", c, true);
+  let f = () => {
+      cancelAnimationFrame(_), t.removeEventListener("blur", i, true), t.removeEventListener("focusout", l, true), t.removeEventListener("focusin", u, true), t.removeEventListener("focus", c, true), d = false, r = false
+    },
+    _ = requestAnimationFrame(f);
+  return f
 }
