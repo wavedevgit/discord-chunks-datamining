@@ -2,11 +2,11 @@
 /** chunk id: 865066, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Yz: () => I,
-  hi: () => y,
-  s2: () => O,
-  sU: () => C,
-  wt: () => T
+  Yz: () => T,
+  hi: () => O,
+  s2: () => v,
+  sU: () => N,
+  wt: () => S
 }), require("./415506.js");
 var Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -18,17 +18,18 @@ var Chunk442837 = require("./442837.js"),
   Chunk960048 = require("./960048.js"),
   Chunk998502 = require("./998502.js"),
   Chunk765504 = require("./765504.js"),
+  Chunk517110 = require("./517110.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let h = new Chunk710845.Z("SystemServiceNativeUtils"),
-  m = false;
+let m = new Chunk710845.Z("SystemServiceNativeUtils"),
+  g = false;
 
-function g() {
+function E() {
   var e;
   return !!Chunk358085.isPlatformEmbedded && null != (e = Chunk998502.ZP.IsSystemServiceInstalled()) && module
 }
 
-function E() {
+function b() {
   var e;
   if (!Chunk358085.isPlatformEmbedded) returnfalse;
   let {
@@ -39,7 +40,7 @@ function E() {
   return !!exports && null != (e = Chunk998502.ZP.CanSystemServiceBeInstalled()) && module
 }
 
-function b() {
+function y() {
   var e;
   let {
     enabled: t
@@ -49,50 +50,50 @@ function b() {
   return !!Chunk358085.isPlatformEmbedded && !!exports && null != (e = Chunk998502.ZP.CanSystemServiceBeInstalled()) && module
 }
 
-function y() {
+function O() {
   let e = (0, Chunk442837.e7)([Chunk594190.ZP], () => Chunk594190.ZP.canShowAdminWarning),
-    t = b();
-  return !!Chunk358085.isPlatformEmbedded && module && !g() && exports
-}
-
-function O(e) {
-  return !!c.isPlatformEmbedded && e.canShowAdminWarning && !g() && E()
+    t = y();
+  return !!Chunk358085.isPlatformEmbedded && module && !E() && exports
 }
 
 function v(e) {
-  c.isPlatformEmbedded && (d.ZP.InputEventServiceSetStatusCallback(e => {
-    h.info("Keybinds helper status changed", e)
-  }), d.ZP.InputEventServiceSetAllowed(true), a.Z.dispatch({
-    type: "SYSTEM_SERVICE_INITIALIZE",
-    initialized: true,
-    modules: ["input-service"]
-  }), h.info("System service initialized."), l.default.track(_.rMx.SYSTEM_SERVICE_INITIALIZE_ATTEMPTED, {
-    success: true,
-    source: e,
-    modules: ["input-service"]
-  }))
+  return !!c.isPlatformEmbedded && e.canShowAdminWarning && !E() && b()
 }
-async function I(e) {
-  if (c.isPlatformEmbedded && g()) try {
-    await d.ZP.DoesSystemServiceHaveUpdate() && await d.ZP.UpdateSystemService(), v(e)
+
+function I(e) {
+  c.isPlatformEmbedded && (d.ZP.InputEventServiceSetStatusCallback(t => {
+    "running" === t.state ? (0, _.y)(true) : (0, _.y)(false), "running" === t.state ? (m.info("System service initialized."), l.default.track(p.rMx.SYSTEM_SERVICE_INITIALIZE_ATTEMPTED, {
+      success: true,
+      source: e,
+      modules: ["input-service"]
+    })) : "failure" === t.state && (m.info("System service failed to initialize."), l.default.track(p.rMx.SYSTEM_SERVICE_INITIALIZE_ATTEMPTED, {
+      success: false,
+      source: e,
+      modules: ["input-service"]
+    }))
+  }), d.ZP.InputEventServiceSetAllowed(true))
+}
+async function T(e) {
+  if (c.isPlatformEmbedded && E()) try {
+    await d.ZP.DoesSystemServiceHaveUpdate() && await d.ZP.UpdateSystemService(), I(e)
   } catch (e) {
     throw u.Z.captureMessage("Error during system service initialization", {
       extra: {
         error: e
       }
-    }), h.error("System service initialization failed", e), e
+    }), m.error("System service initialization failed", e), e
   }
 }
 
-function T() {
+function S() {
   Chunk358085.isPlatformEmbedded && (Chunk998502.ZP.InputEventServiceSetAllowed(false), Chunk570140.Z.dispatch({
     type: "SYSTEM_SERVICE_INITIALIZE",
     initialized: false,
     modules: ["input-service"]
-  }), h.info("System service terminated."))
+  }), m.info("System service terminated."))
 }
 
-function S(e) {
+function A(e) {
   if (e instanceof Error) try {
     let t = JSON.parse(e.message);
     if (null == t.error_code || null == t.error_message) return;
@@ -102,26 +103,26 @@ function S(e) {
   }
 }
 
-function A(e, t) {
+function C(e, t) {
   t && (0, i.showToast)(e)
 }
-async function C(e) {
+async function N(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
   if (c.isPlatformEmbedded && d.ZP.CanSystemServiceBeInstalled()) try {
-    await d.ZP.InstallSystemService(), h.info("System service installed."), l.default.track(_.rMx.SYSTEM_SERVICE_INSTALL_ATTEMPTED, {
+    await d.ZP.InstallSystemService(), m.info("System service installed."), l.default.track(p.rMx.SYSTEM_SERVICE_INSTALL_ATTEMPTED, {
       success: true,
       source: e
-    }), A((0, i.createToast)(p.intl.string(p.t.kQnWb2), i.ToastType.SUCCESS), t), v("after-install")
+    }), C((0, i.createToast)(h.intl.string(h.t.kQnWb2), i.ToastType.SUCCESS), t), I("after-install")
   } catch (r) {
-    let n = S(r);
+    let n = A(r);
     if (null == n && r instanceof Error) {
-      A((0, i.createToast)(p.intl.formatToPlainString(p.t.sdKYCA, {
+      C((0, i.createToast)(h.intl.formatToPlainString(h.t.sdKYCA, {
         error: r.message
       }), i.ToastType.FAILURE), t), u.Z.captureMessage("Unknown error during system service installation", {
         extra: {
           error: r
         }
-      }), h.error("System service install failed.", r), l.default.track(_.rMx.SYSTEM_SERVICE_INSTALL_ATTEMPTED, {
+      }), m.error("System service install failed.", r), l.default.track(p.rMx.SYSTEM_SERVICE_INSTALL_ATTEMPTED, {
         success: false,
         source: e,
         error_message: r.message
@@ -129,34 +130,34 @@ async function C(e) {
       return
     }
     if (null == n) {
-      A((0, i.createToast)(p.intl.formatToPlainString(p.t.sdKYCA, {
+      C((0, i.createToast)(h.intl.formatToPlainString(h.t.sdKYCA, {
         error: r
       }), i.ToastType.FAILURE), t), u.Z.captureMessage("Really unknown error during system service installation", {
         extra: {
           error: r
         }
-      }), h.error("System service install failed.", r), l.default.track(_.rMx.SYSTEM_SERVICE_INSTALL_ATTEMPTED, {
+      }), m.error("System service install failed.", r), l.default.track(p.rMx.SYSTEM_SERVICE_INSTALL_ATTEMPTED, {
         success: false,
         source: e,
         error_message: null == r ? true : r.toString()
       });
       return
     }
-    if (l.default.track(_.rMx.SYSTEM_SERVICE_INSTALL_ATTEMPTED, {
+    if (l.default.track(p.rMx.SYSTEM_SERVICE_INSTALL_ATTEMPTED, {
         success: false,
         source: e,
         error_code: n.error_code,
         error_message: n.error_message
-      }), n.error_code === m) {
-      A((0, i.createToast)(p.intl.string(p.t.xu9k8P), i.ToastType.FAILURE), t), h.error("User cancelled system service install.");
+      }), n.error_code === g) {
+      C((0, i.createToast)(h.intl.string(h.t.xu9k8P), i.ToastType.FAILURE), t), m.error("User cancelled system service install.");
       return
     }
-    A((0, i.createToast)(p.intl.formatToPlainString(p.t.sdKYCA, {
+    C((0, i.createToast)(h.intl.formatToPlainString(h.t.sdKYCA, {
       error: n.error_message
     }), i.ToastType.FAILURE), t), u.Z.captureMessage("Error during system service installation", {
       extra: {
         error: n
       }
-    }), h.error("System service install failed.", n)
+    }), m.error("System service install failed.", n)
   }
 }
