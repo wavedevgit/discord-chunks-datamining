@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 562705, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 97571 **/
+/** chunk id: 562705, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => j
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -21,71 +20,70 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx");
-let y = 12096e5;
 
-function O(e) {
+function j(e) {
   let {
     groupName: t,
     targetElementRef: n
-  } = e, i = (0, p.Z)(), s = (0, a.e7)([l.Z], () => l.Z.useReducedMotion), f = (0, u.Z)(e => e.isOpen), _ = (0, a.e7)([d.Z], () => d.Z.getLayers().includes(g.S9g.USER_SETTINGS));
-  return s || null == i || f || _ ? null : (0, r.jsx)(c.Nq, {
-    contentType: o.z.NITRO_TENURE_BADGE_LEVEL_UP,
+  } = e, r = (0, h.Z)(), s = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), m = (0, d.Z)(e => e.isOpen), p = (0, i.e7)([u.Z], () => u.Z.getLayers().includes(b.S9g.USER_SETTINGS));
+  return s || null == r || m || p ? null : (0, a.jsx)(c.Nq, {
+    contentType: l.z.NITRO_TENURE_BADGE_LEVEL_UP,
     timeRecurringConfig: {
-      cooldownDurationMs: y
+      cooldownDurationMs: 12096e5
     },
     groupName: t,
     children: e => {
       let {
         visibleContent: t,
-        markAsDismissed: a
+        markAsDismissed: i
       } = e;
-      return (0, r.jsx)(v, {
-        recentlyLeveledTenureBadge: i,
-        markAsDismissed: a,
+      return (0, a.jsx)(_, {
+        recentlyLeveledTenureBadge: r,
+        markAsDismissed: i,
         targetElementRef: n,
-        shouldShow: t === o.z.NITRO_TENURE_BADGE_LEVEL_UP
+        shouldShow: t === l.z.NITRO_TENURE_BADGE_LEVEL_UP
       })
     }
   })
 }
 
-function v(e) {
+function _(e) {
   var t;
   let {
     recentlyLeveledTenureBadge: n,
-    markAsDismissed: a,
-    targetElementRef: o,
-    shouldShow: l
-  } = e, c = m.Qh.indexOf(n), d = c > 0 ? c - 1 : c, p = (0, h.J)(m.Qh[d], {
+    markAsDismissed: i,
+    targetElementRef: l,
+    shouldShow: o
+  } = e, c = f.Qh.indexOf(n), u = (0, x.J)(f.Qh[c > 0 ? c - 1 : c], {
     ambient: true
-  }), y = (0, i.useCallback)(() => {
-    a(E.L.TAKE_ACTION), u.Z.setState({
+  }), h = (0, r.useCallback)(() => {
+    i(g.L.TAKE_ACTION), d.Z.setState({
       shouldRenderTenureLevelUp: true
-    }), f.S.dispatch(g.CkL.SHOW_ACCOUNT_PROFILE_POPOUT, {})
-  }, [a]), O = (0, i.useCallback)(() => {
-    a(E.L.USER_DISMISS)
-  }, [a]), v = m.vK[n], I = b.intl.formatToPlainString(b.t.ewkaVV, {
-    timeMilestone: null == (t = (0, _.q)(v.id, v.tenureReqNumMonths)) ? true : t.toLocaleLowerCase()
-  }), T = [{
-    text: b.intl.string(b.t.RzWDqa),
+    }), m.S.dispatch(b.CkL.SHOW_ACCOUNT_PROFILE_POPOUT, {})
+  }, [i]), j = (0, r.useCallback)(() => {
+    i(g.L.USER_DISMISS)
+  }, [i]), _ = f.vK[n], y = v.intl.formatToPlainString(v.t.ewkaVV, {
+    timeMilestone: null == (t = (0, p.q)(_.id, _.tenureReqNumMonths)) ? true : t.toLocaleLowerCase()
+  }), C = [{
+    text: v.intl.string(v.t.RzWDqa),
     variant: "primary",
-    onClick: y
+    onClick: h
   }];
-  return (0, r.jsx)(s.J, {
-    targetElementRef: o,
-    onRequestClose: O,
-    shouldShow: l,
+  return (0, a.jsx)(s.J, {
+    targetElementRef: l,
+    onRequestClose: j,
+    shouldShow: o,
     caretConfig: {
       align: "center"
     },
-    graphic: null != p ? {
+    graphic: null != u ? {
       type: "image",
-      src: p,
+      src: u,
       aspectRatio: "6/4"
     } : true,
     size: "lg",
-    title: b.intl.string(b.t.VoDxsb),
-    body: I,
-    actions: T
+    title: v.intl.string(v.t.VoDxsb),
+    body: y,
+    actions: C
   })
 }

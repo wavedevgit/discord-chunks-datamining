@@ -1,4 +1,4 @@
-/** Chunk was on 10017 **/
+/** Chunk was on 97571 **/
 /** chunk id: 729154, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   x: () => x
@@ -24,25 +24,25 @@ let x = e => {
       churnDiscount: c,
       planId: d,
       renewalInvoice: m,
-      renewalInvoiceDetails: h,
+      renewalInvoiceDetails: p,
       errorOnCancel: x,
       errorOnRedeem: b,
       setActiveStep: g,
-      activeStep: j
+      activeStep: v
     } = e, {
-      analyticsLocations: v
-    } = (0, l.ZP)(i.Z.USER_SETTINGS), [_, y] = r.useState(f(j));
+      analyticsLocations: j
+    } = (0, l.ZP)(i.Z.USER_SETTINGS), [_, y] = r.useState(f(v));
     return (0, r.useEffect)(() => {
-      y(f(j))
-    }, [j]), (0, a.jsx)(u.D.Provider, {
+      y(f(v))
+    }, [v]), (0, a.jsx)(u.D.Provider, {
       value: {
         setStep: g,
         premiumType: o,
         onClose: n,
         transitionState: t,
         premiumSubscription: s,
-        analyticsLocations: v,
-        analyticsLocation: p.Sbl.USER_SETTINGS,
+        analyticsLocations: j,
+        analyticsLocation: h.Sbl.USER_SETTINGS,
         confettiCanvas: null,
         churnUserDiscountOffer: c,
         isFetchingChurnDiscountOffer: false,
@@ -51,7 +51,7 @@ let x = e => {
         planId: d,
         paymentsBlocked: false,
         renewalInvoice: m,
-        renewalInvoiceDetails: h,
+        renewalInvoiceDetails: p,
         handleCancellation: () => new Promise((e, t) => {
           setTimeout(() => {
             if (x) return void t();
@@ -82,6 +82,6 @@ let x = e => {
         return (0, a.jsx)(m.w, {});
       case d.R.WHAT_YOU_LOSE:
       default:
-        return (0, a.jsx)(h.n, {})
+        return (0, a.jsx)(p.n, {})
     }
   }

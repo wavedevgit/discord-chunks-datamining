@@ -1,7 +1,7 @@
-/** Chunk was on 10017 **/
+/** Chunk was on 97571 **/
 /** chunk id: 514866, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => v
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -41,7 +41,7 @@ let g = () => {
   })
 };
 
-function j() {
+function v() {
   let e = Chunk594174.default.getCurrentUser(),
     t = null == module ? true : module.isStaff(),
     n = Chunk695346.Rt.useSetting();
@@ -100,7 +100,7 @@ function j() {
         className: i()(Chunk103088.buttonsContainer, Chunk10198.marginBottom20),
         children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
           value: require,
-          onChange: e => h.Rt.updateSetting(e),
+          onChange: e => p.Rt.updateSetting(e),
           hideBorder: true,
           children: "Ignore profile speedbump disabled"
         })

@@ -1,7 +1,7 @@
-/** Chunk was on 33358 **/
+/** Chunk was on 69310 **/
 /** chunk id: 653577, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => _
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,26 +19,26 @@ var Chunk951288 = require("./951288.js"),
   Chunk670080 = require("./670080.js"),
   Chunk602009 = require("./602009.js");
 
-function O(e) {
+function _(e) {
   let {
     channel: t,
     connected: n,
     hovered: l,
-    subtitle: O,
-    onClick: y,
-    enableHangStatus: _,
+    subtitle: _,
+    onClick: O,
+    enableHangStatus: y,
     allowChannelTopic: v
-  } = e, j = (0, a.e7)([u.Z], () => u.Z.getChannelStatus(t)), x = null != j && j.length > 0, C = (0, c.ZP)(t, true), E = (!_ || !!v) && C, S = null != O && O.length > 0;
+  } = e, j = (0, a.e7)([u.Z], () => u.Z.getChannelStatus(t)), x = null != j && j.length > 0, C = (0, c.ZP)(t, true), E = (!y || !!v) && C, S = null != _ && _.length > 0;
   if (i.useEffect(() => {
       x && f.default.track(h.rMx.VOICE_CHANNEL_TOPIC_VIEWED, {
         channel_id: t.id,
         guild_id: t.guild_id
       })
     }, [x, t.id, t.guild_id]), null == t.guild_id) return null;
-  let I = o()(m.statusDiv, n && E ? m.hoverable : null);
+  let P = o()(m.statusDiv, n && E ? m.hoverable : null);
   return x ? (0, r.jsx)(s.P3F, {
-    className: I,
-    onClick: E ? y : true,
+    className: P,
+    onClick: E ? O : true,
     children: (0, r.jsx)(s.Text, {
       variant: "text-xs/medium",
       className: o()(m.statusText, b.markup),
@@ -49,8 +49,8 @@ function O(e) {
       })
     })
   }) : n && E && (!S || l) ? (0, r.jsxs)(s.P3F, {
-    className: I,
-    onClick: y,
+    className: P,
+    onClick: O,
     children: [(0, r.jsx)(s.Text, {
       variant: "text-xs/medium",
       className: m.statusText,
@@ -61,6 +61,6 @@ function O(e) {
       size: "xxs"
     })]
   }) : S ? (0, r.jsx)(d.Z, {
-    children: O
+    children: _
   }) : null
 }

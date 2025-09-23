@@ -1,4 +1,4 @@
-/** Chunk was on 80037 **/
+/** Chunk was on 16820 **/
 /** chunk id: 304745, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   M: () => S
@@ -43,10 +43,10 @@ function S(e) {
   }), L = (0, l.e7)([u.ZP], () => null != u.ZP.getSelfEmbeddedActivityForLocation(u.ZP.getConnectedActivityLocation())), D = !N, U = i.useCallback(e => {
     "focus" !== e.type && M()
   }, [M]), B = (0, c.bp)() === O.IlC.POPOUT, {
-    parentAnalyticsLocation: V,
-    newestAnalyticsLocation: F
-  } = (0, g.ZP)(), H = i.useCallback(() => {
-    (0, y.v)(V, y.d.ACTIVITY), (0, b.Z)({
+    parentAnalyticsLocation: H,
+    newestAnalyticsLocation: V
+  } = (0, g.ZP)(), F = i.useCallback(() => {
+    (0, y.v)(H, y.d.ACTIVITY), (0, b.Z)({
       context: null != t ? {
         type: "channel",
         channel: t
@@ -54,9 +54,9 @@ function S(e) {
         type: "contextless"
       },
       openInPopout: B,
-      analyticsLocation: F
+      analyticsLocation: V
     })
-  }, [t, B, F, V]), G = [];
+  }, [t, B, V, H]), G = [];
   N || G.push(a.z.ACTIVITIES_MINI_SHELF_SPARKLES), (0, h.Z)(t.id) && !N && G.push(a.z.ACTIVITY_GDM_ROCKET_SPARKLE), N || G.push(a.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP);
   let z = i.useRef(false),
     W = i.useRef(null);
@@ -138,7 +138,7 @@ function S(e) {
                       label: D ? true : T,
                       isActivityActive: L,
                       onClick: () => {
-                        H(), (i === a.z.ACTIVITIES_MINI_SHELF_SPARKLES || i === a.z.ACTIVITY_GDM_ROCKET_SPARKLE || i === a.z.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_1_SPARKLES || i === a.z.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_2_SPARKLES || i === a.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP) && l(j.L.TAKE_ACTION), t === a.z.ACTIVITIES_VOICE_LAUNCHER_BADGE && n(j.L.TAKE_ACTION)
+                        F(), (i === a.z.ACTIVITIES_MINI_SHELF_SPARKLES || i === a.z.ACTIVITY_GDM_ROCKET_SPARKLE || i === a.z.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_1_SPARKLES || i === a.z.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_2_SPARKLES || i === a.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP) && l(j.L.TAKE_ACTION), t === a.z.ACTIVITIES_VOICE_LAUNCHER_BADGE && n(j.L.TAKE_ACTION)
                       },
                       onMouseEnter: U,
                       onMouseLeave: R

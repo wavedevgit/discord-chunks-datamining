@@ -1,4 +1,4 @@
-/** Chunk was on 47387 **/
+/** Chunk was on 56785 **/
 /** chunk id: 274459, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -15,18 +15,18 @@ var Chunk951288 = require("./951288.js"),
   Chunk915808 = require("./915808.js");
 let p = 6 * Chunk70956.Z.Millis.SECOND,
   m = 2 * Chunk70956.Z.Millis.SECOND,
-  E = 2 * Chunk70956.Z.Millis.SECOND,
+  _ = 2 * Chunk70956.Z.Millis.SECOND,
   g = e => "scale(".concat(1 - -(e / 120), ") rotate(").concat(e, "deg)");
 
 function b(e) {
   let {
     userId: t,
     voiceChannelEffect: n,
-    onComplete: c
+    onComplete: u
   } = e, {
     emoji: b,
-    sentAt: S
-  } = n, v = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), [O, h] = l.useState(true), y = !v, _ = (0, o.Yzy)(O, {
+    sentAt: v
+  } = n, E = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), [h, y] = i.useState(true), S = !E, O = (0, o.Yzy)(h, {
     from: {
       rotate: false
     },
@@ -36,32 +36,32 @@ function b(e) {
     leave: {
       rotate: false
     },
-    config: i.config.default,
+    config: l.config.default,
     onRest: (e, t) => {
       let {
         phase: n
       } = t;
-      "leave" === n && c()
+      "leave" === n && u()
     }
   });
-  return (l.useEffect(() => {
+  return (i.useEffect(() => {
     let e;
-    return Date.now() - S >= E ? (0, d.H)(t) : e = setTimeout(() => {
-      h(false), y && (0, d.H)(t)
-    }, y ? m : p), () => {
+    return Date.now() - v >= _ ? (0, d.H)(t) : e = setTimeout(() => {
+      y(false), S && (0, d.H)(t)
+    }, S ? m : p), () => {
       null != e && clearTimeout(e)
     }
-  }, [S, t, y]), y) ? null : _((e, t) => {
+  }, [v, t, S]), S) ? null : O((e, t) => {
     var n;
     let {
-      rotate: l
+      rotate: i
     } = e;
-    return t && (0, r.jsx)(i.animated.div, {
+    return t && (0, r.jsx)(l.animated.div, {
       className: f.voiceChannelEffectEmojiContainer,
       style: {
-        transform: l.to(g)
+        transform: i.to(g)
       },
-      children: (0, r.jsx)(u.Z, {
+      children: (0, r.jsx)(c.Z, {
         className: f.voiceChannelEffectEmoji,
         emojiId: b.id,
         emojiName: b.name,

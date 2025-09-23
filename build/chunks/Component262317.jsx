@@ -1,4 +1,4 @@
-/** Chunk was on 80037 **/
+/** Chunk was on 16820 **/
 /** chunk id: 262317, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   XX: () => D,
@@ -118,9 +118,9 @@ let B = (0, Chunk888651.$)(function(e) {
     channel: D,
     mute: U,
     localMute: B,
-    localVideoDisabled: V,
-    deaf: F,
-    video: H,
+    localVideoDisabled: H,
+    deaf: V,
+    video: F,
     embeddedApplication: G,
     serverMute: z,
     serverDeaf: W,
@@ -224,13 +224,13 @@ let B = (0, Chunk888651.$)(function(e) {
             disconnected: X,
             mute: U,
             localMute: B,
-            localVideoDisabled: V,
+            localVideoDisabled: H,
             isStreaming: $,
             isGuest: et,
-            video: H,
+            video: F,
             priority: en,
             ringing: Y,
-            deaf: F,
+            deaf: V,
             nick: q,
             collapsed: l,
             overlap: l,

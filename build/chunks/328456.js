@@ -1,24 +1,14 @@
-/** Chunk was on web.js **/
-/** chunk id: 328456, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 96887 **/
+/** chunk id: 328456, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Rj: () => l,
-  Ws: () => c,
-  bB: () => s
+  Rj: () => o,
+  Ws: () => s,
+  bB: () => l
 }), require("./539854.js"), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk979554 = require("./979554.js"),
   Chunk388032 = require("./388032.jsx");
-
-function o(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-class s {
+class l {
   get firstAvatarDecoration() {
     return this.getFirstItemByType(Chunk979554.Z.AVATAR_DECORATION)
   }
@@ -30,42 +20,49 @@ class s {
   }
   getFirstItemByType(e) {
     var t;
-    let n = (null != (t = this.itemsByTypes.get(e)) ? t : [])[0];
-    if (null != n) return n
+    let r = (null != (t = this.itemsByTypes.get(e)) ? t : [])[0];
+    if (null != r) return r
   }
   sortByTypes(e) {
     return e.reduce((e, t) => {
-      let n = e.get(t.type);
-      return null != n ? n.push(t) : e.set(t.type, [t]), e
+      let r = e.get(t.type);
+      return null != r ? r.push(t) : e.set(t.type, [t]), e
     }, new Map)
   }
   constructor(e) {
-    o(this, "itemsByTypes", true), this.itemsByTypes = this.sortByTypes(e)
+    ! function(e, t, r) {
+      t in e ? Object.defineProperty(e, t, {
+        value: r,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = r
+    }(this, "itemsByTypes", true), this.itemsByTypes = this.sortByTypes(e)
   }
 }
-let l = e => {
+let o = e => {
     let {
       firstProfileEffect: t,
-      firstAvatarDecoration: n,
+      firstAvatarDecoration: r,
       firstNameplate: i
-    } = r.useMemo(() => new s(e.items), [e]);
+    } = a.useMemo(() => new l(e.items), [e]);
     return {
       firstProfileEffect: t,
-      firstAvatarDecoration: n,
+      firstAvatarDecoration: r,
       firstNameplate: i
     }
   },
-  c = e => {
-    let t = a.intl.string(a.t["7v0T9P"]),
-      n = a.intl.string(a.t.wR5wOj),
-      r = a.intl.string(a.t.x5CoXV);
+  s = e => {
+    let t = n.intl.string(n.t["7v0T9P"]),
+      r = n.intl.string(n.t.wR5wOj),
+      a = n.intl.string(n.t.x5CoXV);
     if (null != e.bundledProducts) {
-      var i, o, s;
-      e.bundledProducts.length > 0 && (t = null == (i = e.bundledProducts[0]) ? true : i.name), e.bundledProducts.length > 1 && (n = null == (o = e.bundledProducts[1]) ? true : o.name), e.bundledProducts.length > 2 && (r = null == (s = e.bundledProducts[2]) ? true : s.name)
+      var i, l, o;
+      e.bundledProducts.length > 0 && (t = null == (i = e.bundledProducts[0]) ? true : i.name), e.bundledProducts.length > 1 && (r = null == (l = e.bundledProducts[1]) ? true : l.name), e.bundledProducts.length > 2 && (a = null == (o = e.bundledProducts[2]) ? true : o.name)
     }
     return {
       itemOneName: t,
-      itemTwoName: n,
-      itemThreeName: r
+      itemTwoName: r,
+      itemThreeName: a
     }
   }

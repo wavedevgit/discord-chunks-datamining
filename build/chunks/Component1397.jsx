@@ -1,4 +1,4 @@
-/** Chunk was on 80037 **/
+/** Chunk was on 16820 **/
 /** chunk id: 1397, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => q
@@ -44,7 +44,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk989028 = require("./989028.js");
 
-function H(e, t, n) {
+function F(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -60,7 +60,7 @@ function G(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      H(e, t, n[t])
+      F(e, t, n[t])
     })
   }
   return e
@@ -176,7 +176,7 @@ class W extends Chunk647438.PureComponent {
             children: e => (0, r.jsx)(c.P3F, z(G({
               innerRef: this.upsellTargetRef
             }, e), {
-              className: F.clickableChannelTextArea,
+              className: V.clickableChannelTextArea,
               onClick: this.handleTextAreaClick,
               children: p
             }))
@@ -186,11 +186,11 @@ class W extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), H(this, "state", {
+    super(...e), F(this, "state", {
       submitting: false,
       shouldShowLurkerModeUpsellPopout: false,
       shouldShowLurkerModeSuccessPopout: false
-    }), H(this, "textAreaContainerRef", i.createRef()), H(this, "upsellTargetRef", i.createRef()), H(this, "renderSuccessPopout", e => {
+    }), F(this, "textAreaContainerRef", i.createRef()), F(this, "upsellTargetRef", i.createRef()), F(this, "renderSuccessPopout", e => {
       let {
         closePopout: t
       } = e, {
@@ -200,23 +200,23 @@ class W extends Chunk647438.PureComponent {
         onClose: t,
         guild: n
       })
-    }), H(this, "handleCancelApplication", () => {
+    }), F(this, "handleCancelApplication", () => {
       let {
         guild: e
       } = this.props;
       null != e && (0, c.h7j)(t => (0, r.jsx)(c.ConfirmModal, z(G({
-        header: V.intl.string(V.t.aIz1oa),
-        confirmText: V.intl.string(V.t["cY+Ooa"]),
-        cancelText: V.intl.string(V.t["ETE/oK"]),
+        header: H.intl.string(H.t.aIz1oa),
+        confirmText: H.intl.string(H.t["cY+Ooa"]),
+        cancelText: H.intl.string(H.t["ETE/oK"]),
         onConfirm: () => m.Z.removeGuildJoinRequest(e.id),
         confirmButtonColor: s.Tt.BRAND
       }, t), {
         children: (0, r.jsx)(c.Text, {
           variant: "text-md/normal",
-          children: V.intl.string(V.t["13tjTU"])
+          children: H.intl.string(H.t["13tjTU"])
         })
       })))
-    }), H(this, "handleViewApplicationRejection", () => {
+    }), F(this, "handleViewApplicationRejection", () => {
       let {
         guild: e
       } = this.props;
@@ -228,14 +228,14 @@ class W extends Chunk647438.PureComponent {
           guildId: e.id
         }, n))
       })
-    }), H(this, "handleShowMemberVerification", () => {
+    }), F(this, "handleShowMemberVerification", () => {
       let {
         guild: e
       } = this.props;
       null != e && (0, b.hk)(e.id)
-    }), H(this, "handleClaimAccount", () => {
+    }), F(this, "handleClaimAccount", () => {
       f.j()
-    }), H(this, "handleVerifyPhone", () => {
+    }), F(this, "handleVerifyPhone", () => {
       (0, c.ZDy)(async () => {
         let {
           default: e
@@ -246,29 +246,29 @@ class W extends Chunk647438.PureComponent {
       }, {
         modalKey: B.M
       })
-    }), H(this, "handleResendVerification", () => {
+    }), F(this, "handleResendVerification", () => {
       var e;
       u.Z.verifyResend();
       let t = null == (e = M.default.getCurrentUser()) ? true : e.email;
       null != t && (0, c.h7j)(e => (0, r.jsx)(c.ConfirmModal, z(G({}, e), {
-        header: V.intl.string(V.t.LykQYm),
-        confirmText: V.intl.string(V.t.BddRzc),
+        header: H.intl.string(H.t.LykQYm),
+        confirmText: H.intl.string(H.t.BddRzc),
         confirmButtonColor: s.Tt.BRAND,
         children: (0, r.jsx)(c.Text, {
           variant: "text-md/normal",
-          children: V.intl.format(V.t.azKEPz, {
+          children: H.intl.format(H.t.azKEPz, {
             email: t
           })
         })
       })))
-    }), H(this, "handleTextAreaClick", () => {
+    }), F(this, "handleTextAreaClick", () => {
       let {
         showLurkerModeUpsellPopout: e
       } = this.props;
       this.setState({
         shouldShowLurkerModeUpsellPopout: e
       })
-    }), H(this, "handleJoinServer", async () => {
+    }), F(this, "handleJoinServer", async () => {
       this.setState({
         submitting: true
       });
@@ -282,11 +282,11 @@ class W extends Chunk647438.PureComponent {
           submitting: false
         })
       }
-    }), H(this, "handleGoBack", () => {
+    }), F(this, "handleGoBack", () => {
       this.setState({
         submitting: true
       }), (0, P.s1)().goBack()
-    }), H(this, "handleFollowAnnouncement", () => {
+    }), F(this, "handleFollowAnnouncement", () => {
       let {
         channel: e
       } = this.props;
@@ -298,11 +298,11 @@ class W extends Chunk647438.PureComponent {
           channel: e
         }, n))
       })
-    }), H(this, "closeLurkerModeUpsellPopout", () => {
+    }), F(this, "closeLurkerModeUpsellPopout", () => {
       this.setState({
         shouldShowLurkerModeUpsellPopout: false
       })
-    }), H(this, "renderLurkerModeUpsellPopout", () => {
+    }), F(this, "renderLurkerModeUpsellPopout", () => {
       let {
         guild: e
       } = this.props;
@@ -311,7 +311,7 @@ class W extends Chunk647438.PureComponent {
         guild: e,
         closePopout: this.closeLurkerModeUpsellPopout
       })
-    }), H(this, "renderMemberVerificationSuccessModal", () => {
+    }), F(this, "renderMemberVerificationSuccessModal", () => {
       let {
         guild: e,
         guildJoinRequest: t

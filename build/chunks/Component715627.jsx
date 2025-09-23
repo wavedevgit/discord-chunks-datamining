@@ -1,4 +1,4 @@
-/** Chunk was on 38029 **/
+/** Chunk was on 92446 **/
 /** chunk id: 715627, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -21,22 +21,22 @@ let o = {
       colors: n,
       emojiURL: c,
       numBursts: d,
-      particlesPerBurst: f,
-      offsetXPercentageMax: p,
+      particlesPerBurst: p,
+      offsetXPercentageMax: f,
       offsetXPercentageMin: m,
-      offsetYPercentageMax: g,
-      offsetYPercentageMin: h,
+      offsetYPercentageMax: h,
+      offsetYPercentageMin: g,
       customConfettiCanvas: y,
-      speedValues: b = o,
-      dragCoefficientValue: O = 1.66,
-      onAnimationEnd: v
-    } = t, [P, j] = r.useState(null), {
+      speedValues: O = o,
+      dragCoefficientValue: b = 1.66,
+      onAnimationEnd: j
+    } = t, [v, P] = r.useState(null), {
       confettiCanvas: S
-    } = r.useContext(s.h), x = (0, l.uR)(null != y ? y : S, P), [w, I] = r.useState(false);
+    } = r.useContext(s.h), x = (0, l.uR)(null != y ? y : S, v), [Z, w] = r.useState(false);
     r.useEffect(() => {
-      w && (null == v || v())
+      Z && (null == j || j())
     });
-    let _ = r.useMemo(() => {
+    let I = r.useMemo(() => {
       if (null != c) return [{
         src: c,
         colorize: false
@@ -50,15 +50,15 @@ let o = {
           var l, s;
           let c = arguments.length > 5 && true !== arguments[5] ? arguments[5] : o,
             d = arguments.length > 6 && true !== arguments[6] ? arguments[6] : 1.66,
-            f = u(t.width, 100, n),
-            p = u(t.height, 75, r),
+            p = u(t.width, 100, n),
+            f = u(t.height, 75, r),
             m = u(t.width, 350, e),
-            g = u(t.height, 75, i),
+            h = u(t.height, 75, i),
             {
-              xMin: h,
+              xMin: g,
               xMax: y,
-              yMin: b,
-              yMax: O
+              yMin: O,
+              yMax: b
             } = c;
           return l = function(t) {
             for (var e = 1; e < arguments.length; e++) {
@@ -81,23 +81,23 @@ let o = {
             position: {
               type: "static-random",
               minValue: {
-                x: t.left + f,
-                y: t.top + p
+                x: t.left + p,
+                y: t.top + f
               },
               maxValue: {
                 x: t.left + m,
-                y: t.top + g
+                y: t.top + h
               }
             },
             velocity: {
               type: "static-random",
               minValue: {
-                x: h,
-                y: b
+                x: g,
+                y: O
               },
               maxValue: {
                 x: y,
-                y: O
+                y: b
               }
             },
             size: {
@@ -119,13 +119,13 @@ let o = {
           })(Object(s)).forEach(function(t) {
             Object.defineProperty(l, t, Object.getOwnPropertyDescriptor(s, t))
           }), l
-        }(e.getBoundingClientRect(), p, m, g, h, b, O), null != f ? f : 50), i === t.length - 1 && null != v && I(true)
+        }(e.getBoundingClientRect(), f, m, h, g, O, b), null != p ? p : 50), i === t.length - 1 && null != j && w(true)
       }, 60 * i)), () => {
         for (let e of t) clearTimeout(e)
       }
-    }, [x, e, d, f, p, m, g, h, b, O, v]), (0, i.jsx)(l.Ji, {
-      ref: j,
-      sprites: null != _ ? _ : a.CA,
+    }, [x, e, d, p, f, m, h, g, O, b, j]), (0, i.jsx)(l.Ji, {
+      ref: P,
+      sprites: null != I ? I : a.CA,
       colors: null != n ? n : a.Br,
       spriteWidth: a.Ko,
       spriteHeight: a.Ko

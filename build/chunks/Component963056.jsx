@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 963056, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 97571 **/
+/** chunk id: 963056, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => s
 });
@@ -13,7 +12,7 @@ var Chunk401393 = require("./401393.js"),
 function s(e) {
   let {
     text: t
-  } = e, n = (0, a.Yzy)(t, {
+  } = e, n = (0, i.Yzy)(t, {
     from: {
       opacity: 0,
       transform: "translate3d(0, 107%, 0)"
@@ -27,10 +26,10 @@ function s(e) {
       clamp: true
     }
   });
-  return (0, r.jsx)("div", {
-    className: o.container,
-    children: n((e, t) => (0, r.jsx)(i.animated.div, {
-      className: o.animatedText,
+  return (0, a.jsx)("div", {
+    className: l.container,
+    children: n((e, t) => (0, a.jsx)(r.animated.div, {
+      className: l.animatedText,
       style: e,
       children: t
     }))

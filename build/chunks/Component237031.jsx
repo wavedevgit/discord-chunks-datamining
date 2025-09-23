@@ -1,82 +1,71 @@
-/** Chunk was on web.js **/
-/** chunk id: 237031, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 93886 **/
+/** chunk id: 237031, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  T: () => u,
-  v: () => d
+  T: () => l,
+  v: () => a
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk481060 = require("./481060.js");
-
-function a(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function o(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      a(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function s(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function l(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : s(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-let c = "collectibles shop product details modal",
-  u = e => {
+let o = "collectibles shop product details modal",
+  l = e => {
     let {
       product: t,
-      category: a,
-      shouldCheckoutWithOrbs: s,
-      analyticsSource: u,
-      analyticsLocations: d,
-      returnRef: f,
-      tab: _,
+      category: l,
+      shouldCheckoutWithOrbs: a,
+      analyticsSource: s,
+      analyticsLocations: c,
+      returnRef: u,
+      tab: d,
       variantType: p
     } = e;
     (0, i.ZDy)(async () => {
       let {
         default: e
       } = await n.e("2026").then(n.bind(n, 702370));
-      return n => (0, r.jsx)(e, l(o({}, n), {
-        product: t,
-        category: a,
-        shouldCheckoutWithOrbs: s,
-        analyticsSource: u,
-        analyticsLocations: d,
-        returnRef: f,
-        tab: _,
-        variantType: p
-      }))
+      return n => {
+        var i, o;
+        return (0, r.jsx)(e, (i = function(e) {
+          for (var t = 1; t < arguments.length; t++) {
+            var n = null != arguments[t] ? arguments[t] : {},
+              r = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              return Object.getOwnPropertyDescriptor(n, e).enumerable
+            }))), r.forEach(function(t) {
+              var r;
+              r = n[t], t in e ? Object.defineProperty(e, t, {
+                value: r,
+                enumerable: true,
+                configurable: true,
+                writable: true
+              }) : e[t] = r
+            })
+          }
+          return e
+        }({}, n), o = o = {
+          product: t,
+          category: l,
+          shouldCheckoutWithOrbs: a,
+          analyticsSource: s,
+          analyticsLocations: c,
+          returnRef: u,
+          tab: d,
+          variantType: p
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
+          var n = Object.keys(e);
+          if (Object.getOwnPropertySymbols) {
+            var r = Object.getOwnPropertySymbols(e);
+            n.push.apply(n, r)
+          }
+          return n
+        })(Object(o)).forEach(function(e) {
+          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(o, e))
+        }), i))
+      }
     }, {
-      modalKey: c
+      modalKey: o
     })
   },
-  d = () => {
-    (0, Chunk481060.Mr3)(c)
+  a = () => {
+    (0, Chunk481060.Mr3)(o)
   }

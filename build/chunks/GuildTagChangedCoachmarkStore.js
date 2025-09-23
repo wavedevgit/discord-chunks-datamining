@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 864133, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 97571 **/
+/** chunk id: 864133, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => d
 });
-var r, Chunk442837 = require("./442837.js"),
+var a, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function o(e, t, n) {
+function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -18,33 +17,29 @@ function o(e, t, n) {
 let s = {
     lastSeenInfos: {}
   },
-  l = s;
-
-function c(e) {
-  let {
-    guildId: t,
-    lastSeenInfo: n
-  } = e;
-  l.lastSeenInfos[t] = n
-}
-
-function u() {
-  l = s
-}
-class d extends(r = Chunk442837.ZP.PersistedStore) {
+  o = s;
+class c extends(a = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    l = null != e ? e : s
+    o = null != e ? e : s
   }
   getState() {
-    return l
+    return o
   }
   getGuildLastSeenInfo(e) {
     var t;
-    return null != (t = l.lastSeenInfos[e]) ? t : null
+    return null != (t = o.lastSeenInfos[e]) ? t : null
   }
 }
-o(d, "displayName", "GuildTagChangedCoachmarkStore"), o(d, "persistKey", "GuildTagChangedCoachmarkStore");
-let f = new d(Chunk570140.Z, {
-  GUILD_TAG_CHANGED_COACHMARK_SEEN: c,
-  LOGOUT: u
+l(c, "displayName", "GuildTagChangedCoachmarkStore"), l(c, "persistKey", "GuildTagChangedCoachmarkStore");
+let d = new c(Chunk570140.Z, {
+  GUILD_TAG_CHANGED_COACHMARK_SEEN: function(e) {
+    let {
+      guildId: t,
+      lastSeenInfo: n
+    } = e;
+    o.lastSeenInfos[t] = n
+  },
+  LOGOUT: function() {
+    o = s
+  }
 })

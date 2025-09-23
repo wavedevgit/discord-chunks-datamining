@@ -1,7 +1,7 @@
-/** Chunk was on 10017 **/
+/** Chunk was on 97571 **/
 /** chunk id: 633001, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => ev
+  Z: () => ej
 }), require("./388685.js"), require("./583741.js"), require("./539854.js"), require("./49124.js"), require("./35282.js"), require("./781311.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -91,7 +91,7 @@ let K = {
         width: 100,
         height: 100
       }
-    }, T.Z.getWidgetDefaultSettings(B.Odu.CLICK_ZONE_DEBUG)), {
+    }, O.Z.getWidgetDefaultSettings(B.Odu.CLICK_ZONE_DEBUG)), {
       pinned: true
     }),
     [Chunk981631.Odu.PERFORMANCE_DEBUG]: e => q(W({
@@ -107,7 +107,7 @@ let K = {
         width: "auto",
         height: "auto"
       }
-    }, T.Z.getWidgetDefaultSettings(B.Odu.PERFORMANCE_DEBUG)), {
+    }, O.Z.getWidgetDefaultSettings(B.Odu.PERFORMANCE_DEBUG)), {
       pinned: true
     })
   },
@@ -129,13 +129,13 @@ function X(e) {
     color: u.zx.Colors.LINK,
     size: u.zx.Sizes.MIN,
     onClick: function() {
-      (0, R.JG)(t, () => i(true))
+      (0, k.JG)(t, () => i(true))
     },
     className: V.copyId,
     children: ["Application Id: ", t, " ", n ? z.intl.string(z.t["t5VZ8/"]) : null]
   })
 }
-let $ = Chunk647438.memo(function(e) {
+let J = Chunk647438.memo(function(e) {
     let {
       trackedGame: t
     } = e, n = (0, d.e7)([b.ZP], () => b.ZP.getGameOrTransformedSubgameForPID(t.pid)), r = (0, d.e7)([P.Z], () => P.Z.getGameForPID(t.pid)), i = (0, d.e7)([b.ZP], () => null == n ? null : b.ZP.getGameOverlayStatus(n));
@@ -236,10 +236,10 @@ let $ = Chunk647438.memo(function(e) {
       })]
     })
   }),
-  J = Chunk647438.memo(function(e) {
+  $ = Chunk647438.memo(function(e) {
     let {
       pid: t
-    } = e, n = (0, d.cj)([k.default], () => k.default.getOverlayPIDStatuses()), r = (0, d.cj)([_.default], () => _.default.getTrackedGames()), i = (0, d.e7)([k.default], () => k.default.isInputLocked(t), [t]), l = (0, d.e7)([k.default], () => k.default.DEV_isInputLockedV3(t), [t]), s = (0, d.e7)([k.default], () => k.default.DEV_isInputLocked(t), [t]), o = (0, d.e7)([k.default], () => k.default.isReady(t), [t]);
+    } = e, n = (0, d.cj)([I.default], () => I.default.getOverlayPIDStatuses()), r = (0, d.cj)([_.default], () => _.default.getTrackedGames()), i = (0, d.e7)([I.default], () => I.default.isInputLocked(t), [t]), l = (0, d.e7)([I.default], () => I.default.DEV_isInputLockedV3(t), [t]), s = (0, d.e7)([I.default], () => I.default.DEV_isInputLocked(t), [t]), o = (0, d.e7)([I.default], () => I.default.isReady(t), [t]);
     return (0, a.jsxs)("div", {
       className: V.panelGroup,
       children: [(0, a.jsx)(m.Text, {
@@ -301,14 +301,14 @@ let $ = Chunk647438.memo(function(e) {
   });
 
 function Q(e) {
-  let t, n = (t = Object.values((0, d.Wu)([T.Z], () => T.Z.getWidgetsForLayout(G.$S))), t.find(t => t.type === e));
+  let t, n = (t = Object.values((0, d.Wu)([O.Z], () => O.Z.getWidgetsForLayout(G.$S))), t.find(t => t.type === e));
   return [n, () => {
-    if (null != n)(0, h.E9)(n.id);
+    if (null != n)(0, p.E9)(n.id);
     else {
       let t = K[e];
       if (null == t) return;
       let n = t(G.$S);
-      (0, h.A4)(n)
+      (0, p.A4)(n)
     }
   }]
 }
@@ -386,13 +386,13 @@ function en() {
         return (0, a.jsx)(r.Fragment, {
           children: (0, a.jsx)(m.ua7, {
             position: "left",
-            text: i === v.d5.TRACK_FOCUS ? "Tracked Focus Event" : "Clear Focus Event",
+            text: i === j.d5.TRACK_FOCUS ? "Tracked Focus Event" : "Clear Focus Event",
             children: e => {
               var r;
               return (0, a.jsx)("div", q(W({}, e), {
                 children: (0, a.jsxs)(m.Text, {
                   variant: "text-sm/medium",
-                  color: i === v.d5.TRACK_FOCUS ? "text-default" : "text-danger",
+                  color: i === j.d5.TRACK_FOCUS ? "text-default" : "text-danger",
                   children: [(0, a.jsx)(et, {
                     pid: n,
                     tag: "span"
@@ -492,7 +492,7 @@ let ea = Chunk647438.memo(function(e) {
         variant: "text-sm/normal",
         color: "text-default",
         children: "No tracked game times"
-      }), Object.values(require).map(e => (0, a.jsx)(J, {
+      }), Object.values(require).map(e => (0, a.jsx)($, {
         pid: e.pid
       }, e.pid)), (0, Chunk951288.jsxs)("div", {
         children: [(0, Chunk951288.jsxs)(Chunk481060.Text, {
@@ -524,8 +524,8 @@ let ea = Chunk647438.memo(function(e) {
     })
   }),
   el = Chunk647438.memo(function() {
-    let [e, t] = Q(Chunk981631.Odu.CLICK_ZONE_DEBUG), [n, i] = Q(Chunk981631.Odu.PERFORMANCE_DEBUG), l = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.hasRenderDebugMode(Chunk837268.GO.ClickZones)), s = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.hasRenderDebugMode(Chunk837268.GO.WidgetAreas)), o = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.hasRenderDebugMode(Chunk837268.GO.DisabledGPUBoost)), c = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.hasRenderDebugMode(Chunk837268.GO.ForceGPUBoost)), h = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.hasRenderDebugMode(Chunk837268.GO.OverlayRafManagerForceEnabled)), x = e => {
-      p.Z.setRenderDebugMode(!C.ZP.hasRenderDebugMode(e), e)
+    let [e, t] = Q(Chunk981631.Odu.CLICK_ZONE_DEBUG), [n, i] = Q(Chunk981631.Odu.PERFORMANCE_DEBUG), l = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.hasRenderDebugMode(Chunk837268.GO.ClickZones)), s = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.hasRenderDebugMode(Chunk837268.GO.WidgetAreas)), o = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.hasRenderDebugMode(Chunk837268.GO.DisabledGPUBoost)), c = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.hasRenderDebugMode(Chunk837268.GO.ForceGPUBoost)), p = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.hasRenderDebugMode(Chunk837268.GO.OverlayRafManagerForceEnabled)), x = e => {
+      h.Z.setRenderDebugMode(!C.ZP.hasRenderDebugMode(e), e)
     }, [f, b] = Chunk647438.useState({});
     return Chunk647438.useEffect(() => {
       let e = setInterval(() => {
@@ -540,7 +540,7 @@ let ea = Chunk647438.memo(function(e) {
         children: e => (0, a.jsx)("div", q(W({}, e), {
           children: (0, a.jsx)(u.$q, {
             value: l,
-            onChange: () => void x(v.GO.ClickZones),
+            onChange: () => void x(j.GO.ClickZones),
             size: 18,
             type: u.M0.INVERTED,
             shape: u.zV.BOX,
@@ -558,7 +558,7 @@ let ea = Chunk647438.memo(function(e) {
         children: e => (0, a.jsx)("div", q(W({}, e), {
           children: (0, a.jsx)(u.$q, {
             value: s,
-            onChange: () => void x(v.GO.WidgetAreas),
+            onChange: () => void x(j.GO.WidgetAreas),
             size: 18,
             type: u.M0.INVERTED,
             shape: u.zV.BOX,
@@ -576,7 +576,7 @@ let ea = Chunk647438.memo(function(e) {
         children: e => (0, a.jsx)("div", q(W({}, e), {
           children: (0, a.jsx)(u.$q, {
             value: o,
-            onChange: () => void x(v.GO.DisabledGPUBoost),
+            onChange: () => void x(j.GO.DisabledGPUBoost),
             size: 18,
             type: u.M0.INVERTED,
             shape: u.zV.BOX,
@@ -594,7 +594,7 @@ let ea = Chunk647438.memo(function(e) {
         children: e => (0, a.jsx)("div", q(W({}, e), {
           children: (0, a.jsx)(u.$q, {
             value: c,
-            onChange: () => void x(v.GO.ForceGPUBoost),
+            onChange: () => void x(j.GO.ForceGPUBoost),
             size: 18,
             disabled: o,
             type: u.M0.INVERTED,
@@ -693,7 +693,7 @@ let ea = Chunk647438.memo(function(e) {
               variant: "text-sm/normal",
               color: "text-default",
               children: "No running games"
-            }), Object.values(e).map(e => (0, a.jsx)($, {
+            }), Object.values(e).map(e => (0, a.jsx)(J, {
               trackedGame: e
             }, e.pid))]
           })
@@ -705,7 +705,7 @@ let ea = Chunk647438.memo(function(e) {
     let e = (0, Chunk442837.e7)([Chunk371651.default], () => Chunk371651.default.getForcedRenderMode()),
       [t, n] = Chunk647438.useState(module),
       i = e => {
-        n(e), p.Z.forceRenderMode(e)
+        n(e), h.Z.forceRenderMode(e)
       },
       l = [{
         label: Chunk837268.R5.UNSET,
@@ -740,31 +740,31 @@ let ea = Chunk647438.memo(function(e) {
   ec = {
     native: {
       label: "Native",
-      filter: e => e.type === j.C7.NativeLegacy || e.type === j.C7.NativeOOP
+      filter: e => e.type === v.C7.NativeLegacy || e.type === v.C7.NativeOOP
     },
     render: {
       label: "Render",
-      filter: e => e.type === j.C7.Renderer
+      filter: e => e.type === v.C7.Renderer
     },
     client: {
       label: "Client",
-      filter: e => e.type === j.C7.OOPModule || e.type === j.C7.LegacyModule
+      filter: e => e.type === v.C7.OOPModule || e.type === v.C7.LegacyModule
     }
   };
 
 function ed(e) {
-  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : j.l6.Info;
-  if (t === j.l6.Error) return "var(--text-danger)";
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : v.l6.Info;
+  if (t === v.l6.Error) return "var(--text-danger)";
   switch (e) {
-    case j.C7.NativeLegacy:
+    case v.C7.NativeLegacy:
       return "var(--yellow-500)";
-    case j.C7.NativeOOP:
+    case v.C7.NativeOOP:
       return "var(--green-500)";
-    case j.C7.Renderer:
+    case v.C7.Renderer:
       return "var(--brand-500)";
-    case j.C7.LegacyModule:
+    case v.C7.LegacyModule:
       return "var(--yellow-300)";
-    case j.C7.OOPModule:
+    case v.C7.OOPModule:
       return "var(--green-300)";
     default:
       return "var(--gray-400)"
@@ -804,11 +804,11 @@ let eu = [{
         variant: "text-md/normal",
         color: function(e) {
           switch (e) {
-            case j.l6.Info:
+            case v.l6.Info:
               return "text-primary";
-            case j.l6.Warning:
+            case v.l6.Warning:
               return "text-feedback-warning";
-            case j.l6.Error:
+            case v.l6.Error:
               return "text-danger";
             default:
               return "text-secondary"
@@ -829,31 +829,31 @@ let eu = [{
     let {
       timestamp: t
     } = e;
-    return (0, I.vc)(o()(t), "h:mm:ss.SSS")
+    return (0, w.vc)(o()(t), "h:mm:ss.SSS")
   }
 }];
 
 function em(e) {
   switch (e) {
-    case j.C7.NativeLegacy:
+    case v.C7.NativeLegacy:
       return m.GON;
-    case j.C7.NativeOOP:
+    case v.C7.NativeOOP:
       return m.ljO;
-    case j.C7.Renderer:
+    case v.C7.Renderer:
       return m.n6r;
-    case j.C7.LegacyModule:
+    case v.C7.LegacyModule:
       return m.pzj;
-    case j.C7.OOPModule:
+    case v.C7.OOPModule:
       return m.m3e;
     default:
       return m.pzj
   }
 }
 
-function eh(e) {
+function ep(e) {
   return JSON.stringify(e, (e, t) => true === t ? null : t, 2)
 }
-let ep = ["__webpack_require__", "fn"],
+let eh = ["__webpack_require__", "fn"],
   ex = ["web.js", "web.js.map"],
   ef = [{
     id: "details",
@@ -869,8 +869,8 @@ let ep = ["__webpack_require__", "fn"],
         type: c,
         logType: d,
         nativeId: u,
-        stack: h,
-        data: p,
+        stack: p,
+        data: h,
         timestamp: x
       } = r, f = o()(x), b = em(c);
       return (0, a.jsxs)(m.w0Z, {
@@ -891,7 +891,7 @@ let ep = ["__webpack_require__", "fn"],
             children: [s, " (", c, ")", (0, a.jsx)(m.P3F, {
               tag: "span",
               className: V.copyEventButton,
-              onClick: () => (0, R.JG)(s),
+              onClick: () => (0, k.JG)(s),
               children: (0, a.jsx)(m.TIy, {
                 color: "currentColor",
                 size: "sm"
@@ -901,7 +901,7 @@ let ep = ["__webpack_require__", "fn"],
             icon: m.TIy,
             tooltip: "Copy all properties",
             onClick: () => {
-              (0, R.JG)(eh(r))
+              (0, k.JG)(ep(r))
             }
           }), (0, a.jsx)(g.Z.Icon, {
             icon: m.k$p,
@@ -915,8 +915,8 @@ let ep = ["__webpack_require__", "fn"],
             copyValue: f.toISOString(),
             children: (0, a.jsx)("time", {
               dateTime: f.toISOString(),
-              title: (0, I.vc)(f, "LLLL"),
-              children: (0, I.vc)(f, "L h:mm:ss.SSS")
+              title: (0, w.vc)(f, "LLLL"),
+              children: (0, w.vc)(f, "L h:mm:ss.SSS")
             })
           }), (0, a.jsx)(L.Z9, {
             name: "Log Type",
@@ -932,19 +932,19 @@ let ep = ["__webpack_require__", "fn"],
             })
           }), (0, a.jsx)(L.Z9, {
             name: "Data",
-            copyValue: eh(p),
+            copyValue: ep(h),
             children: (0, a.jsx)("code", {
-              children: eh(p)
+              children: ep(h)
             })
           }), (0, a.jsx)(L.Z9, {
             name: "Stack Trace",
-            copyValue: h,
+            copyValue: p,
             children: (0, a.jsx)("code", {
-              children: h.split("\n").map((e, t) => {
+              children: p.split("\n").map((e, t) => {
                 let n = e.match(/at (.*) \((.*):(\d+):(\d+)\)/);
                 if (null != n) {
                   let [, e, r, i, l] = n, s = r.split(/[\\/]/).pop();
-                  return ep.includes(e.trim()) ? null : (0, a.jsxs)("div", {
+                  return eh.includes(e.trim()) ? null : (0, a.jsxs)("div", {
                     children: [(0, a.jsx)("span", {
                       className: V.stackTraceFunction,
                       children: e.trim()
@@ -985,24 +985,24 @@ function eg() {
   let [e, t] = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.DEV_getOverlayLoggingBreadcrumbs(), [], Chunk136015.Q), {
     ref: n,
     height: i
-  } = (0, Chunk393238.ZP)(), s = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.DEV_isOverlayModuleLoggingEnabled()), [o, c] = Chunk647438.useState(Chunk913527), [h, x] = Chunk647438.useState(Object.keys(ec)), [b, g] = Chunk647438.useState(""), j = Chunk647438.useMemo(() => 0 === exports ? [] : module.filter(e => {
-    for (let t of h) {
+  } = (0, Chunk393238.ZP)(), s = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.DEV_isOverlayModuleLoggingEnabled()), [o, c] = Chunk647438.useState(Chunk913527), [p, x] = Chunk647438.useState(Object.keys(ec)), [b, g] = Chunk647438.useState(""), v = Chunk647438.useMemo(() => 0 === exports ? [] : module.filter(e => {
+    for (let t of p) {
       let {
         filter: n
       } = ec[t];
       if (n(e)) returntrue
     }
     returnfalse
-  }), [module, Chunk765250, exports]), [v, _] = Chunk647438.useState(Chunk427860), [y, E] = Chunk647438.useState(null), N = Chunk647438.useMemo(() => module.find(e => e.key === y), [module, Chunk829907]), O = Chunk647438.useCallback(e => {
+  }), [module, Chunk765250, exports]), [j, _] = Chunk647438.useState(Chunk427860), [y, E] = Chunk647438.useState(null), N = Chunk647438.useMemo(() => module.find(e => e.key === y), [module, Chunk829907]), S = Chunk647438.useCallback(e => {
     _(e)
   }, []), {
-    renderSelectedTab: T
+    renderSelectedTab: O
   } = (0, Chunk621060.ZP)({
     tabs: ef
   }, []);
   (0, Chunk301801.BO)(Chunk594190, Chunk427860, Chunk352527, eb, [module]);
   let P = Chunk647438.useCallback(e => {
-    c(e), p.Z.setModuleLogging(e)
+    c(e), h.Z.setModuleLogging(e)
   }, []);
   Chunk647438.useEffect(() => {
     if (Chunk610394.ZP.DEV_isOverlayModuleLoggingEnabled()) return;
@@ -1013,7 +1013,7 @@ function eg() {
       clearTimeout(module)
     }
   }, []);
-  let [k, I] = Chunk647438.useState(false), w = Chunk647438.useRef(null), Z = Chunk647438.useCallback(() => {
+  let [I, w] = Chunk647438.useState(false), R = Chunk647438.useRef(null), Z = Chunk647438.useCallback(() => {
     (0, Chunk572004.JG)(JSON.stringify(module)), Chunk55935(true)
   }, [module]);
   return Chunk647438.useEffect(() => {
@@ -1043,7 +1043,7 @@ function eg() {
         }), Object.entries(ec).map(e => {
           let [t, n] = e;
           return (0, a.jsx)(m.P3F, {
-            className: l()(V.filter, h.includes(t) && V.activeFilter),
+            className: l()(V.filter, p.includes(t) && V.activeFilter),
             onClick: () => {
               x(e => e.includes(t) ? e.filter(e => e !== t) : [...e, t])
             },
@@ -1097,7 +1097,7 @@ function eg() {
   })
 }
 
-function ej() {
+function ev() {
   return (0, Chunk951288.jsx)(Chunk481060.w0Z, {
     children: (0, Chunk951288.jsxs)("div", {
       className: l()(Chunk866403.panel, Chunk312079.subPanel),
@@ -1106,7 +1106,7 @@ function ej() {
   })
 }
 
-function ev() {
+function ej() {
   let [e, t] = Chunk647438.useState("state");
   return (0, Chunk951288.jsxs)("div", {
     className: l()(Chunk866403.panel, Chunk312079.panel),
@@ -1129,6 +1129,6 @@ function ev() {
           children: "Logging"
         })
       })]
-    }), "state" === module && (0, Chunk951288.jsx)(ej, {}), "logging" === module && (0, Chunk951288.jsx)(eg, {})]
+    }), "state" === module && (0, Chunk951288.jsx)(ev, {}), "logging" === module && (0, Chunk951288.jsx)(eg, {})]
   })
 }

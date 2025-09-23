@@ -1,4 +1,4 @@
-/** Chunk was on 33358 **/
+/** Chunk was on 69310 **/
 /** chunk id: 325257, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => k
@@ -66,7 +66,7 @@ function D(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let L = {
+let M = {
   analyticsSource: {
     page: Chunk981631.ZY5.GUILD_CHANNEL,
     section: Chunk981631.jXE.CHANNEL_LIST,
@@ -74,11 +74,11 @@ let L = {
   }
 };
 
-function M(e, t) {
+function L(e, t) {
   (0, h.jW)(e, async () => {
     let {
       default: e
-    } = await Promise.all([n.e("36599"), n.e("7654"), n.e("58175"), n.e("55616"), n.e("8271"), n.e("15851"), n.e("51453"), n.e("845"), n.e("98039"), n.e("6850"), n.e("58227"), n.e("54408"), n.e("90746"), n.e("71512"), n.e("56534"), n.e("87154"), n.e("33213"), n.e("8209")]).then(n.bind(n, 545135));
+    } = await Promise.all([n.e("36599"), n.e("7654"), n.e("58175"), n.e("55616"), n.e("8271"), n.e("15851"), n.e("51453"), n.e("845"), n.e("98039"), n.e("6850"), n.e("58227"), n.e("54408"), n.e("90746"), n.e("71512"), n.e("22516"), n.e("87154"), n.e("33213"), n.e("8209")]).then(n.bind(n, 545135));
     return n => (0, r.jsx)(e, D(R({}, n), {
       guild: t
     }))
@@ -100,7 +100,7 @@ let k = Chunk647438.memo(function(e) {
     unavailable: q = false,
     badge: X = 0,
     isMentionLowImportance: Q,
-    contextMenu: J = M,
+    contextMenu: J = L,
     draggable: $ = false,
     sorting: ee = false,
     preloadOnClick: et = true,
@@ -138,16 +138,16 @@ let k = Chunk647438.memo(function(e) {
     ef = (0, c.Ie)(null != eo ? eo : Z.lds, null != ea ? 2 : 1),
     [eh, eg] = i.useState(false),
     em = !ee && eh,
-    [eb, eO] = i.useState(false),
-    [ey, e_] = i.useState(false),
-    [ev] = i.useState(() => new d.sW(70, () => e_(true)));
+    [eb, e_] = i.useState(false),
+    [eO, ey] = i.useState(false),
+    [ev] = i.useState(() => new d.sW(70, () => ey(true)));
   i.useEffect(() => () => ev.cancel(), [ev]);
   let ej = i.useCallback(() => {
-      if (null != V) return void(0, O.uL)(V, {
-        state: L
+      if (null != V) return void(0, _.uL)(V, {
+        state: M
       });
-      (0, y.X)(eo, {
-        state: L
+      (0, O.X)(eo, {
+        state: M
       })
     }, [eo, V]),
     ex = i.useCallback(() => {
@@ -165,24 +165,24 @@ let k = Chunk647438.memo(function(e) {
         null == (t = document.querySelector("[aria-owns=folder-items-".concat(ea, "]"))) || t.focus()
       }
     }, [ea]),
-    eI = i.useCallback(e => {
-      if (e) return void ev.delay();
-      ev.cancel(), e_(false)
-    }, [ev]),
     eP = i.useCallback(e => {
+      if (e) return void ev.delay();
+      ev.cancel(), ey(false)
+    }, [ev]),
+    eI = i.useCallback(e => {
       null == G || G(eo, e)
     }, [eo, G]),
     eN = (0, p.dQu)(p.TVs.modules.guildbar.AVATAR_SIZE);
   if (null == H) return null;
-  let ew = ey || eb ? (0, r.jsx)(E.Z, {
+  let ew = eO || eb ? (0, r.jsx)(E.Z, {
       guild: H,
-      show: ey,
+      show: eO,
       active: W,
       onAnimationStart: function() {
-        eO(ey)
+        e_(eO)
       },
       onAnimationRest: function() {
-        ey || eO(false)
+        eO || e_(false)
       }
     }) : (0, r.jsx)(p.LYs, D(R({
       ariaLabel: T.intl.formatToPlainString(T.t["/uzRsr"], {
@@ -200,7 +200,7 @@ let k = Chunk647438.memo(function(e) {
       onMouseDown: ex,
       onContextMenu: eE,
       onKeyDown: eS,
-      icon: (0, _.EB)(H, 2 * eN, em && z, true),
+      icon: (0, y.EB)(H, 2 * eN, em && z, true),
       selected: W || em
     }, ef), {
       "aria-setsize": ei,
@@ -208,7 +208,7 @@ let k = Chunk647438.memo(function(e) {
       "aria-selected": W
     })),
     eZ = ed ? (0, r.jsx)(S.OG, {
-      children: (0, r.jsx)(P.Z, {})
+      children: (0, r.jsx)(I.Z, {})
     }) : (0, r.jsx)(s.animated.div, {
       ref: $ ? e => {
         ep(e)
@@ -217,11 +217,11 @@ let k = Chunk647438.memo(function(e) {
       style: {
         scale: null == er ? 1 : er
       },
-      "data-drop-hovering": ey,
+      "data-drop-hovering": eO,
       className: o()(A.blobContainer, {
         [A.sorting]: ee,
-        [A.wobble]: ey,
-        [A.selected]: ey || W
+        [A.wobble]: eO,
+        [A.selected]: eO || W
       }),
       children: (0, r.jsx)(p.aRk, {
         selected: true,
@@ -232,13 +232,13 @@ let k = Chunk647438.memo(function(e) {
       })
     });
   return (0, r.jsxs)(N.H, {
-    ref: eP,
+    ref: eI,
     children: [(0, r.jsx)(C.Z, {
       hovered: !ed && em,
       selected: !ed && W,
       unread: !ed && K,
       className: A.pill
-    }), (0, r.jsx)(I.Z, {
+    }), (0, r.jsx)(P.Z, {
       guild: H,
       disabled: ee,
       isDragging: ed,
@@ -246,7 +246,7 @@ let k = Chunk647438.memo(function(e) {
     }), $ ? (0, r.jsx)(S.ZP, {
       name: H.name,
       targetNode: U,
-      onDragOverChanged: eI
+      onDragOverChanged: eP
     }) : null]
   })
 })

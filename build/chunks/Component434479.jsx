@@ -1,4 +1,4 @@
-/** Chunk was on 33358 **/
+/** Chunk was on 69310 **/
 /** chunk id: 434479, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   m: () => h
@@ -54,9 +54,9 @@ function h(e) {
       renderIcon: g,
       text: m,
       selected: b,
-      trailing: O,
-      background: y,
-      showUnread: _ = false,
+      trailing: _,
+      background: O,
+      showUnread: y = false,
       ref: v
     } = e,
     j = function(e, t) {
@@ -98,7 +98,7 @@ function h(e) {
       className: l()(u.containerDefault, d.wrapper, {
         [d.modeSelected]: b
       }, i),
-      children: [y, _ ? (0, r.jsx)("div", {
+      children: [O, y ? (0, r.jsx)("div", {
         className: l()(d.unread, d.unreadImportant)
       }) : null, (0, r.jsx)("div", {
         className: l()([d.link, d.basicChannelRowLink, h]),
@@ -111,7 +111,7 @@ function h(e) {
             className: d.name,
             "aria-hidden": true,
             children: m
-          }), O]
+          }), _]
         })
       })]
     }))

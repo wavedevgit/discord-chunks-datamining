@@ -1,5 +1,6 @@
-/** Chunk was on 63962 **/
+/** Chunk was on 66697 **/
 /** chunk id: 334877, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   l: () => l
 });
@@ -8,7 +9,7 @@ var Chunk879690 = require("./879690.js"),
 let l = (0, Chunk879690.U)(e => ({
   canCloseModal: true,
   onUpdateCanCloseModal(t) {
-    (0, i.j)(() => e({
+    (0, a.j)(() => e({
       canCloseModal: t
     }))
   }

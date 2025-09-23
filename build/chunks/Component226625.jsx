@@ -1,56 +1,53 @@
-/** Chunk was on web.js **/
-/** chunk id: 226625, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 97571 **/
+/** chunk id: 226625, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => x
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
-  l = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk401393 = require("./401393.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk607070 = require("./607070.js"),
   Chunk339419 = require("./339419.js");
-let p = 90,
-  h = 20,
-  m = {
-    mass: 10,
-    tension: 550,
-    friction: 140
-  };
+let h = {
+  mass: 10,
+  tension: 550,
+  friction: 140
+};
 
-function g(e) {
+function x(e) {
   let {
     className: t,
     pageMultiplier: n
-  } = e, a = (0, u.e7)([f.Z], () => f.Z.useReducedMotion), [s, g] = i.useState({
+  } = e, i = (0, d.e7)([m.Z], () => m.Z.useReducedMotion), [s, x] = r.useState({
     x: 0,
     y: 0
-  }), E = i.useMemo(() => l().throttle(e => {
-    if (!a) g({
-      x: (window.innerWidth - e.pageX * n) / p,
-      y: (window.innerHeight - e.pageY * n) / p
+  }), f = r.useMemo(() => o().throttle(e => {
+    if (!i) x({
+      x: (window.innerWidth - e.pageX * n) / 90,
+      y: (window.innerHeight - e.pageY * n) / 90
     })
-  }, h), [n, a]);
-  i.useEffect(() => (window.addEventListener("mousemove", E), () => window.removeEventListener("mousemove", E)), [E]);
-  let [b, y] = (0, d.q_F)(() => ({
+  }, 20), [n, i]);
+  r.useEffect(() => (window.addEventListener("mousemove", f), () => window.removeEventListener("mousemove", f)), [f]);
+  let [b, g] = (0, u.q_F)(() => ({
     x: 0,
     y: 0,
-    config: m
+    config: h
   }));
-  return i.useEffect(() => {
-    y({
+  return r.useEffect(() => {
+    g({
       x: s.x,
       y: s.y
     })
-  }, [s.x, s.y, y]), (0, r.jsx)(c.animated.div, {
+  }, [s.x, s.y, g]), (0, a.jsx)(c.animated.div, {
     style: {
       transform: (0, c.to)([b.x, b.y], (e, t) => "translate3d(".concat(e, "px, ").concat(t, "px, 0)"))
     },
-    className: o()(_.background, t)
+    className: l()(p.background, t)
   })
 }

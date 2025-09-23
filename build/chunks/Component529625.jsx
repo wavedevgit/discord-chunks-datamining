@@ -1,4 +1,4 @@
-/** Chunk was on 10017 **/
+/** Chunk was on 97571 **/
 /** chunk id: 529625, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk608934 = require("./608934.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk575043 = require("./575043.js");
-let p = (0, Chunk972959.H)(() => ({
+let h = (0, Chunk972959.H)(() => ({
   isRecording: false,
   isUploading: false,
   isSuccess: false,
@@ -22,10 +22,10 @@ let p = (0, Chunk972959.H)(() => ({
 }));
 
 function x() {
-  let e = p.useField("isRecording"),
-    t = p.useField("isUploading"),
-    n = p.useField("isSuccess"),
-    s = p.useField("errorMessage"),
+  let e = h.useField("isRecording"),
+    t = h.useField("isUploading"),
+    n = h.useField("isSuccess"),
+    s = h.useField("errorMessage"),
     x = Chunk647438.useRef([]),
     f = Chunk647438.useRef(""),
     b = Chunk647438.useCallback(() => {
@@ -41,24 +41,24 @@ function x() {
   let g = Chunk647438.useCallback(async () => {
     let {
       isUploading: e
-    } = p.getState();
+    } = h.getState();
     if (!module) try {
-      p.setState({
+      h.setState({
         isRecording: false,
         isUploading: true,
         errorMessage: null,
         isSuccess: false
-      }), await (0, Chunk729345.E)(Chunk981631.GU0.WEB_APP), p.setState({
+      }), await (0, Chunk729345.E)(Chunk981631.GU0.WEB_APP), h.setState({
         isSuccess: true,
         errorMessage: null
       })
     } catch (t) {
       let e = new Chunk881052.Hx(exports);
-      p.setState({
+      h.setState({
         errorMessage: module.getAnyErrorMessage()
       })
     } finally {
-      p.setState({
+      h.setState({
         isUploading: false
       })
     }
@@ -78,7 +78,7 @@ function x() {
     }), (0, Chunk951288.jsxs)(Chunk481060.hE2, {
       children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
         variant: module ? "critical-primary" : "primary",
-        onClick: () => p.setState({
+        onClick: () => h.setState({
           isRecording: !module
         }),
         text: module ? "Stop Recording" : "Start Recording"

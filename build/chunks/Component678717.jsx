@@ -1,8 +1,9 @@
-/** Chunk was on 10017 **/
+/** Chunk was on 97571 **/
 /** chunk id: 678717, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => eS,
-  useDevToolsTabConfig: () => e_
+  default: () => eO,
+  openDevToolsPopout: () => eE,
+  useDevToolsTabConfig: () => ey
 }), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -13,6 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk347469 = require("./347469.js"),
   Chunk213609 = require("./213609.js"),
+  Chunk722332 = require("./722332.jsx"),
   Chunk213713 = require("./213713.jsx"),
   Chunk665149 = require("./665149.jsx"),
   Chunk611565 = require("./611565.jsx"),
@@ -78,7 +80,7 @@ var Chunk392750 = require("./392750.jsx"),
   Chunk246984 = require("./246984.js"),
   Chunk866403 = require("./866403.js");
 
-function e_() {
+function ey() {
   return Chunk647438.useMemo(() => {
     let e = [{
       id: "analytics",
@@ -111,6 +113,11 @@ function e_() {
       name: "Payment Flow Modals",
       group: Chunk621060.v0.BILLING,
       render: () => (0, Chunk951288.jsx)(Chunk778648.Z, {})
+    }), module.push({
+      id: "shop_keeper",
+      name: "Shop Keeper",
+      group: Chunk621060.v0.BILLING,
+      render: () => (0, Chunk951288.jsx)(Chunk722332.Z, {})
     }), module.push({
       id: "quick_actions",
       name: "Quick Actions",
@@ -331,13 +338,13 @@ function e_() {
   }, [])
 }
 
-function ey(e) {
+function eC(e) {
   let {
     resizableNode: t,
     onResize: n,
     onResizeEnd: r
   } = e, i = (0, d.Z)({
-    minDimension: y.h,
+    minDimension: C.h,
     resizableDomNodeRef: t,
     onElementResize: n,
     onElementResizeEnd: r,
@@ -349,19 +356,34 @@ function ey(e) {
   })
 }
 
-function eC(e) {
+function eE() {
+  (0, Chunk788983.bA)(Chunk981631.KJ3.DEVTOOLS_POPOUT, () => (0, Chunk951288.jsx)(Chunk238246.Z, {
+    windowKey: Chunk981631.KJ3.DEVTOOLS_POPOUT,
+    title: "DevTools",
+    withTitleBar: true,
+    children: (0, Chunk951288.jsx)(eO, {
+      mobile: false,
+      isPopout: true
+    })
+  }), {
+    width: 800,
+    height: 600
+  })
+}
+
+function eN(e) {
   var t;
   let {
     isPopout: n = false
-  } = e, r = e_(), {
+  } = e, r = ey(), {
     TabBar: i,
     renderSelectedTab: l,
     selectedTabId: o
-  } = (0, ex.ZP)({
+  } = (0, ef.ZP)({
     tabs: r,
-    initialSelectedTabId: null != (t = y.Z.lastOpenTabId) ? t : true,
+    initialSelectedTabId: null != (t = C.Z.lastOpenTabId) ? t : true,
     onChangeTab: e => {
-      (0, _.Qh)({
+      (0, y.Qh)({
         lastOpenTabId: e
       })
     }
@@ -372,31 +394,18 @@ function eC(e) {
     properties: {
       panel: o
     }
-  }), (0, a.jsxs)(B.Gk, {
+  }), (0, a.jsxs)(G.Gk, {
     children: [(0, a.jsxs)(h.ZP, {
-      className: ev.headerBar,
+      className: e_.headerBar,
       toolbar: n ? null : (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)(h.ZP.Icon, {
           icon: c.rgF,
           tooltip: "Pop Out",
-          onClick: () => {
-            (0, f.bA)(ef.KJ3.DEVTOOLS_POPOUT, () => (0, a.jsx)(x.Z, {
-              windowKey: ef.KJ3.DEVTOOLS_POPOUT,
-              title: "DevTools",
-              withTitleBar: true,
-              children: (0, a.jsx)(eS, {
-                mobile: false,
-                isPopout: true
-              })
-            }), {
-              width: 800,
-              height: 600
-            })
-          }
+          onClick: eE
         }), (0, a.jsx)(h.ZP.Icon, {
           icon: c.Dio,
-          tooltip: eg.intl.string(eg.t.cpT0Cg),
-          onClick: _.SO
+          tooltip: ev.intl.string(ev.t.cpT0Cg),
+          onClick: y.SO
         })]
       }),
       children: [(0, a.jsx)(h.ZP.Icon, {
@@ -405,17 +414,17 @@ function eC(e) {
       }), (0, a.jsx)(h.ZP.Title, {
         children: "DevTools"
       })]
-    }), (0, a.jsx)(i, {}), l(), (0, a.jsx)(B.Br, {
+    }), (0, a.jsx)(i, {}), l(), (0, a.jsx)(G.Br, {
       className: ej.layerContainer
     })]
   })
 }
 
-function eE() {
+function eT() {
   let e = Chunk647438.useRef(null),
     t = (0, Chunk442837.e7)([Chunk19759.Z], () => Chunk19759.Z.sidebarWidth),
     [n, i] = Chunk647438.useState(null),
-    l = Chunk647438.useCallback(e => (0, _.Qh)({
+    l = Chunk647438.useCallback(e => (0, y.Qh)({
       sidebarWidth: e
     }), []);
   return (Chunk647438.useEffect(() => {
@@ -428,23 +437,23 @@ function eE() {
       width: require
     },
     "data-app-right-panel": true,
-    children: [(0, Chunk951288.jsx)(ey, {
+    children: [(0, Chunk951288.jsx)(eC, {
       resizableNode: module,
       onResize: Chunk120356,
       onResizeEnd: l
     }), (0, Chunk951288.jsx)("div", {
       className: Chunk246984.sidebarContent,
-      children: (0, Chunk951288.jsx)(eC, {})
+      children: (0, Chunk951288.jsx)(eN, {})
     })]
   })
 }
 
-function eN() {
+function eS() {
   return (0, Chunk442837.e7)([Chunk19759.Z], () => Chunk19759.Z.displayTools) ? (0, Chunk951288.jsx)("div", {
     className: l()(Chunk246984.container, Chunk246984.mobileContainerExpanded),
     children: (0, Chunk951288.jsx)("div", {
       className: Chunk246984.sidebarContent,
-      children: (0, Chunk951288.jsx)(eC, {})
+      children: (0, Chunk951288.jsx)(eN, {})
     })
   }) : (0, Chunk951288.jsx)("div", {
     className: Chunk246984.container,
@@ -466,15 +475,15 @@ function eN() {
   })
 }
 
-function eS(e) {
+function eO(e) {
   let {
     mobile: t,
     isPopout: n = false
   } = e;
-  return t ? (0, a.jsx)(eN, {}) : n ? (0, a.jsx)("div", {
+  return t ? (0, a.jsx)(eS, {}) : n ? (0, a.jsx)("div", {
     className: ej.popoutContainer,
-    children: (0, a.jsx)(eC, {
+    children: (0, a.jsx)(eN, {
       isPopout: true
     })
-  }) : (0, a.jsx)(eE, {})
+  }) : (0, a.jsx)(eT, {})
 }

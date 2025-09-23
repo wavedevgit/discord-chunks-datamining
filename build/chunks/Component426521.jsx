@@ -1,4 +1,4 @@
-/** Chunk was on 33358 **/
+/** Chunk was on 69310 **/
 /** chunk id: 426521, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   U: () => G
@@ -58,7 +58,7 @@ function D(e) {
   })
 }
 
-function L(e) {
+function M(e) {
   let {
     item: {
       callout: t
@@ -76,7 +76,7 @@ function L(e) {
   })
 }
 
-function M(e) {
+function L(e) {
   let {
     item: t
   } = e, n = R, i = Z.intl.string(Z.t.SJTHJS);
@@ -137,12 +137,12 @@ let U = Chunk647438.memo(function(e) {
         }, t))
       });
       if (null != l.deeplink) {
-        let t = _.Z.safeParseWithQuery(l.deeplink);
+        let t = y.Z.safeParseWithQuery(l.deeplink);
         if (null == t) return;
         let n = t.hostname,
           r = t.path;
         if (null == n || null == r) return;
-        if (_.Z.isDiscordHostname(n)) {
+        if (y.Z.isDiscordHostname(n)) {
           let t = r.match("^/users/(\\d+)");
           if (null != t && 2 === t.length) {
             var e;
@@ -153,7 +153,7 @@ let U = Chunk647438.memo(function(e) {
             })
           } else await (0, d.Z)(r)
         }
-        O.default.track(w.rMx.NOTIFICATION_CENTER_ACTION, {
+        _.default.track(w.rMx.NOTIFICATION_CENTER_ACTION, {
           action_type: j.ud.CLICKED,
           notification_center_id: l.id,
           item_type: l.type,
@@ -161,9 +161,9 @@ let U = Chunk647438.memo(function(e) {
         })
       }
     }, [l, f, u]), m = null;
-    l.type === j.O7.INCOMING_FRIEND_REQUESTS && null != l.other_user ? m = (0, r.jsx)(P.Z, {
+    l.type === j.O7.INCOMING_FRIEND_REQUESTS && null != l.other_user ? m = (0, r.jsx)(I.Z, {
       userId: l.other_user.id
-    }) : l.type === j.O7.INCOMING_GAME_FRIEND_REQUESTS && null != l.other_user && (m = (0, r.jsx)(P.Z, {
+    }) : l.type === j.O7.INCOMING_GAME_FRIEND_REQUESTS && null != l.other_user && (m = (0, r.jsx)(I.Z, {
       userId: l.other_user.id,
       applicationId: l.applicationId
     }));
@@ -194,11 +194,11 @@ let U = Chunk647438.memo(function(e) {
         onClick: g,
         children: [f ? null : (0, r.jsx)("div", {
           className: T.unread
-        }), (0, r.jsx)(I.U, {
+        }), (0, r.jsx)(P.U, {
           item: l
         }), (0, r.jsxs)("div", {
           className: T.body,
-          children: ["lifecycle_item" === l.type && null != l.item_enum && (0, r.jsx)(M, {
+          children: ["lifecycle_item" === l.type && null != l.item_enum && (0, r.jsx)(L, {
             item: l
           }), (0, r.jsxs)(o.Text, {
             variant: "text-md/normal",
@@ -206,12 +206,12 @@ let U = Chunk647438.memo(function(e) {
             children: ["string" != typeof E ? E : p.Z.parse(E), R]
           }), (null == (t = l.message) ? true : t.content) != null ? (0, r.jsx)(D, {
             item: l
-          }) : null, null != l.callout ? (0, r.jsx)(L, {
+          }) : null, null != l.callout ? (0, r.jsx)(M, {
             item: l
           }) : null, (0, r.jsx)(o.Text, {
             variant: "text-xs/medium",
             color: f ? "text-muted" : "header-secondary",
-            children: (0, x.a3)(y.default.extractTimestamp(l.id))
+            children: (0, x.a3)(O.default.extractTimestamp(l.id))
           }), m]
         })]
       }), b ? null : (0, r.jsx)(N.z, {

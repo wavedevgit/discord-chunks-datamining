@@ -1,7 +1,7 @@
-/** Chunk was on 10017 **/
+/** Chunk was on 97571 **/
 /** chunk id: 18868, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  L: () => p
+  L: () => h
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -42,19 +42,19 @@ let m = () => {
       modalKey: Chunk897842.A
     })
   },
-  h = e => {
+  p = e => {
     e.stopPropagation(), e.preventDefault()
   },
-  p = e => {
+  h = e => {
     let {
       className: t,
       onDrop: n
-    } = e, [i, p] = r.useState(false), x = r.useRef(null), f = r.useCallback(e => {
-      h(e), p(true), (0, s.Mr3)(c.A)
+    } = e, [i, h] = r.useState(false), x = r.useRef(null), f = r.useCallback(e => {
+      p(e), h(true), (0, s.Mr3)(c.A)
     }, []), b = r.useCallback(e => {
-      h(e), p(false)
+      p(e), h(false)
     }, []), g = r.useCallback(async e => {
-      h(e), p(false);
+      p(e), h(false);
       let t = e.dataTransfer;
       if (null == t) return void m();
       let a = await Promise.all(Array.from(t.items).map(e => {

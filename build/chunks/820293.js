@@ -1,5 +1,5 @@
 /** Chunk was on 93886 **/
-/** chunk id: 820293, original params: e,n,t (module,exports,require) **/
+/** chunk id: 820293, original params: e,t,n (module,exports,require) **/
 module.exports = {
   cell: "cell_f70307",
   iconContainer: "iconContainer_f70307",

@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 785184, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 97571 **/
+/** chunk id: 785184, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -13,42 +12,42 @@ var Chunk951288 = require("./951288.js"),
   Chunk40347 = require("./40347.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk478741 = require("./478741.js");
-let f = Chunk647438.lazy(() => require.e("22274").then(require.bind(require, 269792)));
+let m = Chunk647438.lazy(() => require.e("22274").then(require.bind(require, 269792)));
 
-function _() {
+function p() {
   let e = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion),
     t = (0, Chunk7093.Z)(e => e.shouldRenderTenureLevelUp),
     n = (0, Chunk40347.Z)();
-  return module || !exports || null == require ? null : (0, Chunk951288.jsx)(p, {
+  return module || !exports || null == require ? null : (0, Chunk951288.jsx)(h, {
     levelUpData: require
   })
 }
 
-function p(e) {
+function h(e) {
   let {
     levelUpData: t
-  } = e, n = i.useRef(null), a = i.useCallback(() => {
-    l.Z.setState({
+  } = e, n = r.useRef(null), i = r.useCallback(() => {
+    o.Z.setState({
       shouldRenderTenureLevelUp: false
     })
   }, []);
-  return i.useEffect(() => a, [a]), (0, r.jsx)(o.EqS, {
+  return r.useEffect(() => i, [i]), (0, a.jsx)(l.EqS, {
     containerRef: n,
-    children: (0, r.jsxs)("div", {
-      className: d.wrapper,
-      children: [(0, r.jsx)(o.M0o, {
-        className: d.closeButton,
-        tooltip: u.intl.string(u.t.cpT0Cg),
-        color: o.YX$.SECONDARY,
-        size: o.tT7.SIZE_24,
-        icon: (0, r.jsx)(o.Dio, {
+    children: (0, a.jsxs)("div", {
+      className: u.wrapper,
+      children: [(0, a.jsx)(l.M0o, {
+        className: u.closeButton,
+        tooltip: d.intl.string(d.t.cpT0Cg),
+        color: l.YX$.SECONDARY,
+        size: l.tT7.SIZE_24,
+        icon: (0, a.jsx)(l.Dio, {
           size: "xs",
           color: "currentColor"
         }),
-        onClick: a
-      }), (0, r.jsx)(i.Suspense, {
+        onClick: i
+      }), (0, a.jsx)(r.Suspense, {
         fallback: null,
-        children: (0, r.jsx)(f, {
+        children: (0, a.jsx)(m, {
           levelUpData: t
         })
       })]

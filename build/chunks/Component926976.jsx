@@ -1,4 +1,4 @@
-/** Chunk was on 10017 **/
+/** Chunk was on 97571 **/
 /** chunk id: 926976, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => Z
@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk529554 = require("./529554.js"),
   Chunk866403 = require("./866403.js");
-let T = [{
+let O = [{
   key: "event",
   cellClassName: Chunk529554.eventColumn,
   render(e) {
@@ -53,14 +53,14 @@ function P(e) {
     children: t
   } = e;
   return (0, a.jsx)(u.zJl, {
-    className: S.customPropertiesContainer,
+    className: T.customPropertiesContainer,
     children: (0, a.jsx)("dl", {
       children: t
     })
   })
 }
 
-function k(e) {
+function I(e) {
   let {
     name: t,
     children: n,
@@ -72,15 +72,15 @@ function k(e) {
       return () => clearTimeout(e)
     }
   }, [l]), (0, a.jsxs)("div", {
-    className: S.customProperty,
+    className: T.customProperty,
     children: [(0, a.jsx)("dt", {
-      className: S.customPropertiesName,
+      className: T.customPropertiesName,
       children: t
     }), (0, a.jsx)("dd", {
       children: n
     }), (0, a.jsx)(u.P3F, {
       tag: "span",
-      className: S.copyPropertyButton,
+      className: T.copyPropertyButton,
       onClick: () => (0, b.JG)(JSON.stringify(i), () => s(true)),
       children: l ? (0, a.jsx)(u.kmB, {
         color: "currentColor",
@@ -92,8 +92,8 @@ function k(e) {
     })]
   })
 }
-let R = new Set(["client_performance_cpu", "client_performance_memory"]),
-  I = [{
+let k = new Set(["client_performance_cpu", "client_performance_memory"]),
+  w = [{
     id: "details",
     name: "Details",
     group: Chunk621060.v0.NONE,
@@ -107,26 +107,26 @@ let R = new Set(["client_performance_cpu", "client_performance_memory"]),
         },
         onClose: s,
         filteredEvents: c
-      } = e, d = f.default.getUser(i), p = o()(r);
+      } = e, d = f.default.getUser(i), h = o()(r);
       return (0, a.jsxs)("div", {
         "data-mtctest-ignore": "true",
-        children: [(0, a.jsxs)(h.ZP, {
-          className: l()(O.headerBar, S.subPanelHeaderBar),
-          children: [(0, a.jsx)(h.ZP.Icon, {
+        children: [(0, a.jsxs)(p.ZP, {
+          className: l()(S.headerBar, T.subPanelHeaderBar),
+          children: [(0, a.jsx)(p.ZP.Icon, {
             icon: u.IeX,
             tooltip: t
-          }), (0, a.jsxs)(h.ZP.Title, {
-            wrapperClassName: S.headerTitle,
+          }), (0, a.jsxs)(p.ZP.Title, {
+            wrapperClassName: T.headerTitle,
             children: [t, (0, a.jsx)(u.P3F, {
               tag: "span",
-              className: S.copyEventButton,
+              className: T.copyEventButton,
               onClick: () => (0, b.JG)(t),
               children: (0, a.jsx)(u.TIy, {
                 color: "currentColor",
                 size: "sm"
               })
             })]
-          }), (0, a.jsx)(h.ZP.Icon, {
+          }), (0, a.jsx)(p.ZP.Icon, {
             icon: u.TIy,
             tooltip: "Copy all properties",
             onClick: () => {
@@ -154,20 +154,20 @@ let R = new Set(["client_performance_cpu", "client_performance_memory"]),
                 user: null == d ? true : d.id
               }, n), (e, t) => true === t ? null : t, 2))
             }
-          }), (0, a.jsx)(h.ZP.Icon, {
+          }), (0, a.jsx)(p.ZP.Icon, {
             icon: u.k$p,
             tooltip: "Close",
             onClick: s
           })]
         }), (0, a.jsxs)(_.E, {
-          className: S.commonProperties,
+          className: T.commonProperties,
           children: [(0, a.jsx)(_.Z9, {
             name: "Timestamp (local)",
             copyValue: r.toISOString(),
             children: (0, a.jsxs)("time", {
               dateTime: r.toISOString(),
-              title: (0, g.vc)(p, "LLLL"),
-              children: ["(", o().locale(), ") ", (0, g.Y4)(p)]
+              title: (0, g.vc)(h, "LLLL"),
+              children: ["(", o().locale(), ") ", (0, g.Y4)(h)]
             })
           }), null != d && (0, a.jsx)(_.Z9, {
             name: "User",
@@ -184,7 +184,7 @@ let R = new Set(["client_performance_cpu", "client_performance_memory"]),
           })]
         }), (0, a.jsx)(P, {
           children: Object.entries(n).map(e => {
-            let [n, r] = e, i = R.has(n) ? ((e, t, n) => {
+            let [n, r] = e, i = k.has(n) ? ((e, t, n) => {
               let a = e.filter(e => e.event === t);
               if (0 === a.length) return {
                 average: null,
@@ -202,7 +202,7 @@ let R = new Set(["client_performance_cpu", "client_performance_memory"]),
               }
             })(c, t, n) : null;
             return (0, a.jsxs)("div", {
-              children: [(0, a.jsx)(k, {
+              children: [(0, a.jsx)(I, {
                 name: "".concat(n, ":"),
                 copyValue: {
                   [n]: r || null
@@ -210,10 +210,10 @@ let R = new Set(["client_performance_cpu", "client_performance_memory"]),
                 children: null != r ? (0, a.jsx)("code", {
                   children: JSON.stringify(r)
                 }) : (0, a.jsx)("code", {
-                  className: S.emptyProperty,
+                  className: T.emptyProperty,
                   children: "null"
                 })
-              }, n), null !== i && null !== i.average && (0, a.jsx)(k, {
+              }, n), null !== i && null !== i.average && (0, a.jsx)(I, {
                 name: "".concat(n, "_avg:"),
                 copyValue: {
                   [n]: r || null
@@ -228,10 +228,10 @@ let R = new Set(["client_performance_cpu", "client_performance_memory"]),
       })
     }
   }],
-  w = {
+  R = {
     events: {
       label: "Events",
-      filter: e => Object.entries(w).filter(e => {
+      filter: e => Object.entries(R).filter(e => {
         let [t] = e;
         return "events" !== t
       }).map(t => {
@@ -270,24 +270,24 @@ function Z() {
   let e = Chunk647438.useRef(null),
     [t, n] = Chunk647438.useState(""),
     i = (0, Chunk442837.e7)([Chunk120816.Z], () => Chunk120816.Z.loggedEventsVersion),
-    [s, o] = Chunk647438.useState(() => Object.keys(w)),
-    [m, h] = Chunk647438.useState(Chunk120816.Z.loggedEvents),
-    p = Chunk647438.useCallback(e => {
-      h(e)
+    [s, o] = Chunk647438.useState(() => Object.keys(R)),
+    [m, p] = Chunk647438.useState(Chunk120816.Z.loggedEvents),
+    h = Chunk647438.useCallback(e => {
+      p(e)
     }, []);
   (0, Chunk301801.BO)(exports, Chunk120816.Z.loggedEvents, Chunk886118, A, [Chunk120356]);
   let f = Chunk129861.filter(e => {
       for (let t of s)
-        if (w[t].filter(e)) returntrue;
+        if (R[t].filter(e)) returntrue;
       returnfalse
     }),
     [b, g] = Chunk647438.useState(true),
     _ = Chunk594174.find(e => e.key === b),
     {
       TabBar: P,
-      renderSelectedTab: k
+      renderSelectedTab: I
     } = (0, Chunk621060.ZP)({
-      tabs: I
+      tabs: w
     }, []);
   return (0, Chunk951288.jsxs)("div", {
     ref: module,
@@ -311,10 +311,10 @@ function Z() {
         className: Chunk529554.toolbarDivider
       }), (0, Chunk951288.jsx)("div", {
         className: Chunk529554.filters,
-        children: Object.entries(w).map(e => {
+        children: Object.entries(R).map(e => {
           let [t, n] = e;
           return (0, a.jsx)(u.P3F, {
-            className: l()(S.filter, s.includes(t) && S.activeFilter),
+            className: l()(T.filter, s.includes(t) && T.activeFilter),
             onClick: () => {
               o(e => e.includes(t) ? e.filter(e => e !== t) : [...e, t])
             },
@@ -332,7 +332,7 @@ function Z() {
         placeholder: "Search by event name"
       })
     }), (0, Chunk951288.jsx)(Chunk681619.Z, {
-      columns: T,
+      columns: O,
       data: Chunk594174,
       selectedRowKey: Chunk572004,
       onClickRow: e => g(e.key)
@@ -340,7 +340,7 @@ function Z() {
       className: Chunk529554.subPanel,
       minHeight: 100,
       initialHeight: null != module.current ? module.current.clientHeight / 2 : 300,
-      children: [(0, Chunk951288.jsx)(P, {}), k({
+      children: [(0, Chunk951288.jsx)(P, {}), I({
         loggedEvent: Chunk257785,
         onClose: () => Chunk55935(true),
         filteredEvents: Chunk594174

@@ -1,7 +1,7 @@
-/** Chunk was on 10017 **/
+/** Chunk was on 97571 **/
 /** chunk id: 315384, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => p
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,24 +17,24 @@ let u = "/users/@me/debug/consumables/",
     [Chunk317951.D1]: "Confetti Potion"
   };
 
-function h() {
+function p() {
   let e, [t, n] = (0, Chunk647438.useState)([]),
-    [h, p] = (0, Chunk647438.useState)(null),
+    [p, h] = (0, Chunk647438.useState)(null),
     [x, f] = (0, Chunk647438.useState)(false);
   return (0, Chunk647438.useEffect)(() => ((async () => {
     try {
       let e = (await Chunk544891.tn.get(u)).body.entitlements.map(e => c.Z.createFromServer(e));
       require(module)
     } catch (e) {
-      p("Failed to fetch entitlements")
+      h("Failed to fetch entitlements")
     }
   })(), () => {
-    require([]), p(null)
+    require([]), h(null)
   }), []), (0, Chunk951288.jsx)("div", {
     className: Chunk838303.panel,
-    children: null != h ? (0, Chunk951288.jsx)(Chunk481060.Text, {
+    children: null != p ? (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-md/normal",
-      children: h
+      children: p
     }) : 0 === exports.length ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-lg/bold",
@@ -53,7 +53,7 @@ function h() {
               r = new Chunk959546.Z(Chunk951288.body.entitlement);
             require([...exports, Chunk647438])
           } catch (e) {
-            p("Failed to create entitlement")
+            h("Failed to create entitlement")
           } finally {
             f(false)
           }

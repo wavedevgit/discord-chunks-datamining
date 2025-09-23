@@ -1,7 +1,7 @@
-/** Chunk was on 10017 **/
+/** Chunk was on 97571 **/
 /** chunk id: 496025, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => S
 }), require("./388685.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -36,20 +36,20 @@ function N() {
     } = (0, Chunk442837.cj)([Chunk592125.Z, Chunk594174.default, Chunk699516.Z], () => ({
       selectedChannel: Chunk592125.Z.getChannel(require),
       options: exports.map(e => {
-        let t = p.Z.getChannel(e.channelId);
+        let t = h.Z.getChannel(e.channelId);
         return {
           value: e.channelId,
           label: null != t ? (0, m.F6)(t, f.default, x.Z) : e.channelId
         }
       })
     })),
-    j = Chunk647438.useCallback(() => {
+    v = Chunk647438.useCallback(() => {
       var e;
       if (null == l || !l.isPrivate()) return;
       let t = (0, Chunk630388.x9)(null != (e = l.recipientFlags) ? module : 0, Chunk602715.V.DISMISSED_IN_GAME_MESSAGE_NUX);
       Chunk258732.Z.updatePrivateChannelRecipientFlags(l.id, exports)
     }, [l]),
-    v = null != l && !!l.isPrivate() && (0, Chunk630388.yE)(null != (e = l.recipientFlags) ? module : 0, Chunk602715.V.DISMISSED_IN_GAME_MESSAGE_NUX);
+    j = null != l && !!l.isPrivate() && (0, Chunk630388.yE)(null != (e = l.recipientFlags) ? module : 0, Chunk602715.V.DISMISSED_IN_GAME_MESSAGE_NUX);
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-md/semibold",
@@ -64,7 +64,7 @@ function N() {
         onChange: Chunk120356,
         renderOptionPrefix: e => {
           if (null == e) return null;
-          let t = p.Z.getChannel(e.value);
+          let t = h.Z.getChannel(e.value);
           return null == t ? null : (0, a.jsx)(c.qEK, {
             src: (0, u.x)(t),
             "aria-hidden": true,
@@ -83,7 +83,7 @@ function N() {
   })
 }
 
-function S() {
+function T() {
   let e = Chunk647438.useCallback(() => {
     Chunk493683.Z.openPrivateChannel({
       recipientIds: [Chunk37812.I]
@@ -97,14 +97,14 @@ function S() {
   })
 }
 
-function O() {
+function S() {
   let e = (0, Chunk442837.e7)([Chunk432877.ZP], () => Chunk432877.ZP.allByCategory(Chunk432877.zU.MESSAGING), [], Chunk442837.pF).map(e => {
     let [t, n, {
       label: r
     }] = e;
     return (0, a.jsx)(c.j7V, {
       value: n,
-      onChange: e => (0, j.Z)(t, e),
+      onChange: e => (0, v.Z)(t, e),
       hideBorder: true,
       className: C.switch,
       children: r
@@ -116,6 +116,6 @@ function O() {
       className: Chunk462689.divider
     }), (0, Chunk951288.jsx)(N, {}), (0, Chunk951288.jsx)("div", {
       className: Chunk462689.divider
-    }), (0, Chunk951288.jsx)(S, {})]
+    }), (0, Chunk951288.jsx)(T, {})]
   })
 }

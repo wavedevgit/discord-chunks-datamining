@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 383036, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 97571 **/
+/** chunk id: 383036, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
 }), require("./388685.js"), require("./781311.js");
@@ -17,72 +16,60 @@ var Chunk951288 = require("./951288.js"),
   Chunk832149 = require("./832149.jsx"),
   Chunk215023 = require("./215023.js"),
   Chunk958675 = require("./958675.js");
-
-function m(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function g(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      m(e, t, n[t])
-    })
-  }
-  return e
-}
-let E = e => {
-    let [t, n] = i.useState(0);
-    return i.useLayoutEffect(() => {
-      let e = u.Z.getPurchase;
-      return u.Z.getPurchase = e => true, u.Z.emitChange(), n(1), () => {
-        u.Z.getPurchase = e, u.Z.emitChange()
+let f = e => {
+    let [t, n] = r.useState(0);
+    return r.useLayoutEffect(() => {
+      let e = d.Z.getPurchase;
+      return d.Z.getPurchase = e => true, d.Z.emitChange(), n(1), () => {
+        d.Z.getPurchase = e, d.Z.emitChange()
       }
-    }, []), (0, r.jsx)(f.Z, g({}, e), t)
+    }, []), (0, a.jsx)(m.Z, function(e) {
+      for (var t = 1; t < arguments.length; t++) {
+        var n = null != arguments[t] ? arguments[t] : {},
+          a = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(n, e).enumerable
+        }))), a.forEach(function(t) {
+          var a;
+          a = n[t], t in e ? Object.defineProperty(e, t, {
+            value: a,
+            enumerable: true,
+            configurable: true,
+            writable: true
+          }) : e[t] = a
+        })
+      }
+      return e
+    }({}, e), t)
   },
   b = () => {
     let e = (0, Chunk399606.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
       t = (0, Chunk399606.e7)([Chunk597688.Z], () => Chunk597688.Z.categories),
       n = (0, Chunk399606.e7)([Chunk1870.Z], () => Chunk1870.Z.purchases),
-      f = (0, Chunk399606.e7)([Chunk597688.Z], () => Chunk597688.Z.lastSuccessfulFetch),
-      m = exports.size > 0 && require.size > 0 && null != Chunk709999,
+      m = (0, Chunk399606.e7)([Chunk597688.Z], () => Chunk597688.Z.lastSuccessfulFetch),
+      b = exports.size > 0 && require.size > 0 && null != Chunk709999,
       {
         isFetching: g,
-        categories: b
+        categories: v
       } = (0, Chunk223143.ZP)({
         logPerf: false,
         stalePurchasesOK: true,
-        noOp: m
+        noOp: b
       }),
-      y = m ? exports : b,
-      O = m || !g && y.size > 0,
-      [v, I] = Chunk647438.useState(""),
-      [T, S] = Chunk647438.useState(null),
-      [A, C] = Chunk647438.useState(null);
-    Chunk647438.useEffect(() => {
-      if ("" === v.trim() || !O) {
-        S(null), C(null);
+      j = b ? exports : v,
+      _ = b || !g && j.size > 0,
+      [y, C] = Chunk647438.useState(""),
+      [E, N] = Chunk647438.useState(null),
+      [T, S] = Chunk647438.useState(null);
+    return (Chunk647438.useEffect(() => {
+      if ("" === y.trim() || !_) {
+        N(null), S(null);
         return
       }
-      let e = Chunk597688.Z.getProduct(v),
-        t = Chunk597688.Z.getCategoryForProduct(v);
-      null != module && null != exports ? (S(module), C(exports)) : (S(null), C(null))
-    }, [v, O]);
-    let N = () => {
-      null != T && null != module && (0, Chunk832149.Z)({
-        product: T,
-        analyticsLocations: [Chunk100527.Z.COLLECTIBLES_SHOP_CARD]
-      })
-    };
-    return g ? (0, Chunk951288.jsx)(Chunk481060.Text, {
+      let e = Chunk597688.Z.getProduct(y),
+        t = Chunk597688.Z.getCategoryForProduct(y);
+      null != module && null != exports ? (N(module), S(exports)) : (N(null), S(null))
+    }, [y, _]), g) ? (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-md/normal",
       children: "Loading categories and collectibles..."
     }) : null == module ? (0, Chunk951288.jsx)(Chunk481060.Text, {
@@ -91,10 +78,9 @@ let E = e => {
     }) : (0, Chunk951288.jsxs)("div", {
       className: Chunk958675.container,
       children: [(0, Chunk951288.jsxs)("div", {
-        className: Chunk958675.leftPanel,
+        className: Chunk958675.section,
         children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
           variant: "heading-lg/semibold",
-          className: Chunk958675.section,
           children: "Product Configuration"
         }), (0, Chunk951288.jsxs)("div", {
           className: Chunk958675.inputSection,
@@ -103,41 +89,43 @@ let E = e => {
             className: Chunk958675.inputLabel,
             children: "Primary Product SKU ID"
           }), (0, Chunk951288.jsx)(Chunk481060.oil, {
-            value: v,
-            onChange: I,
+            value: y,
+            onChange: C,
             placeholder: "Enter product SKU ID"
-          }), !O && "" !== v.trim() && (0, Chunk951288.jsx)(Chunk481060.Text, {
+          }), !_ && "" !== y.trim() && (0, Chunk951288.jsx)(Chunk481060.Text, {
             variant: "text-sm/normal",
             className: Chunk958675.loadingText,
             children: "Loading products..."
-          }), O && "" !== v.trim() && null == T && (0, Chunk951288.jsx)(Chunk481060.Text, {
+          }), _ && "" !== y.trim() && null == E && (0, Chunk951288.jsx)(Chunk481060.Text, {
             variant: "text-sm/normal",
             className: Chunk958675.errorText,
             children: "Product not found"
-          }), null != T && (0, Chunk951288.jsxs)(Chunk481060.Text, {
+          }), null != E && (0, Chunk951288.jsxs)(Chunk481060.Text, {
             variant: "text-sm/normal",
             className: Chunk958675.successText,
-            children: ["Found: ", T.name]
+            children: ["Found: ", E.name]
           })]
         })]
       }), (0, Chunk951288.jsxs)("div", {
-        className: Chunk958675.rightPanel,
+        className: Chunk958675.section,
         children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
           variant: "heading-lg/semibold",
-          className: Chunk958675.section,
           children: "Product Preview"
-        }), null != T && null != A ? (0, Chunk951288.jsxs)("div", {
-          children: [(0, Chunk951288.jsx)("div", {
-            className: Chunk958675.previewContainer,
-            children: (0, Chunk951288.jsx)(E, {
-              product: T,
-              user: module,
-              category: A,
-              tab: Chunk215023.AW.HOME
-            })
+        }), null != E && null != T ? (0, Chunk951288.jsxs)("div", {
+          className: Chunk958675.previewContainer,
+          children: [(0, Chunk951288.jsx)(f, {
+            product: E,
+            user: module,
+            category: T,
+            tab: Chunk215023.AW.HOME
           }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
             variant: "primary",
-            onClick: N,
+            onClick: () => {
+              null != E && null != module && (0, Chunk832149.Z)({
+                product: E,
+                analyticsLocations: [Chunk100527.Z.COLLECTIBLES_SHOP_CARD]
+              })
+            },
             text: "Show Collectibles Collected Modal"
           })]
         }) : (0, Chunk951288.jsx)("div", {

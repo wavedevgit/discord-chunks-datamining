@@ -1,7 +1,7 @@
-/** Chunk was on 10017 **/
+/** Chunk was on 97571 **/
 /** chunk id: 442954, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => j
 }), require("./642613.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -49,7 +49,7 @@ function g(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let j = {
+let v = {
   CollectiblesExpiryModal: async () => {
     let {
       default: e
@@ -61,8 +61,8 @@ let j = {
       default: e
     } = await require.e("20670").then(require.bind(require, 993018));
     return t => (0, a.jsx)(e, g(b({}, t), {
-      headerText: p.intl.string(p.t.ZLRYGR),
-      confirmButtonText: p.intl.string(p.t.PDTjLC),
+      headerText: h.intl.string(h.t.ZLRYGR),
+      confirmButtonText: h.intl.string(h.t.PDTjLC),
       confirmButtonVariant: "primary"
     }))
   },
@@ -71,11 +71,11 @@ let j = {
       default: e
     } = await require.e("56499").then(require.bind(require, 433570));
     return t => (0, a.jsx)(e, g(b({}, t), {
-      headerText: p.intl.string(p.t.H3Q7U1),
+      headerText: h.intl.string(h.t.H3Q7U1),
       onFormSubmit: () => {},
       onResend: () => {},
       onSuccess: () => {},
-      confirmButtonText: p.intl.string(p.t["13ofGh"]),
+      confirmButtonText: h.intl.string(h.t["13ofGh"]),
       impression: {
         impressionName: i.ImpressionNames.URF_CONFIRM_EMAIL_CODE
       }
@@ -94,7 +94,7 @@ let j = {
       default: e
     } = await Promise.all([require.e("1716"), require.e("48590")]).then(require.bind(require, 746882));
     return t => (0, a.jsx)(e, g(b({}, t), {
-      source: h.L0.NSFW_SERVER
+      source: p.L0.NSFW_SERVER
     }))
   },
   ExistingUserAgeGateUnderage: async () => {
@@ -155,8 +155,8 @@ let j = {
   }
 };
 
-function v() {
-  let e = Chunk647438.useMemo(() => Object.keys(j).map(e => ({
+function j() {
+  let e = Chunk647438.useMemo(() => Object.keys(v).map(e => ({
       label: e,
       value: e
     })).sort((e, t) => e.label.localeCompare(t.label)), []),
@@ -182,7 +182,7 @@ function v() {
           }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
             variant: "primary",
             text: "Open",
-            onClick: () => (0, Chunk481060.ZDy)(j[exports])
+            onClick: () => (0, Chunk481060.ZDy)(v[exports])
           })]
         })]
       }), (0, Chunk951288.jsxs)("section", {

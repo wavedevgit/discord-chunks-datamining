@@ -14,7 +14,7 @@ var Chunk990547 = require("./990547.js"),
   Chunk550385 = require("./550385.js"),
   Chunk799360 = require("./799360.js"),
   Chunk342386 = require("./342386.js"),
-  Chunk507962 = require("./507962.js"),
+  Chunk771934 = require("./771934.js"),
   Chunk684555 = require("./684555.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk525126 = require("./525126.js"),
@@ -36,7 +36,7 @@ function g() {
       "en-GB": Chunk684555.default["f/cLEh"]
     }, Chunk684555.default.CARxAA),
     n = () => {
-      (0, Chunk507962.DI)(Chunk507962.Ln.APPEARANCE_SETTINGS), (0, Chunk550385.XO)(Chunk550385.wh.CUSTOM_THEME, {
+      (0, Chunk771934.DI)(Chunk771934.Ln.APPEARANCE_SETTINGS), (0, Chunk550385.XO)(Chunk550385.wh.CUSTOM_THEME, {
         from: Chunk550385.tE.SETTING
       }), (0, Chunk342386.default)()
     };

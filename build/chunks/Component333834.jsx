@@ -1,4 +1,4 @@
-/** Chunk was on 33358 **/
+/** Chunk was on 69310 **/
 /** chunk id: 333834, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => D
@@ -112,12 +112,12 @@ function D(e) {
     renderMessageGroup: d,
     scrollerClassName: h,
     className: g,
-    listName: P,
+    listName: I,
     ignoreGrouping: N = false
-  } = e, D = (0, _.fJ)(), L = i.useRef(null), M = (0, f.Z)(P, L), {
+  } = e, D = (0, y.fJ)(), M = i.useRef(null), L = (0, f.Z)(I, M), {
     entrypoint: k,
     notificationCenterVariant: U
-  } = (0, y.pN)({
+  } = (0, O.pN)({
     location: "NotificationsInboxSidebarList"
   }), {
     isLoading: G,
@@ -148,24 +148,24 @@ function D(e) {
   i.useEffect(() => {
     function e() {
       var e;
-      null == (e = L.current) || e.scrollPageUp({
+      null == (e = M.current) || e.scrollPageUp({
         animate: true
       })
     }
 
     function t() {
       var e;
-      null == (e = L.current) || e.scrollPageDown({
+      null == (e = M.current) || e.scrollPageDown({
         animate: true
       })
     }
-    return b.S.subscribe(I.CkL.SCROLL_PAGE_DOWN, t), b.S.subscribe(I.CkL.SCROLL_PAGE_UP, e), () => {
-      b.S.unsubscribe(I.CkL.SCROLL_PAGE_DOWN, t), b.S.unsubscribe(I.CkL.SCROLL_PAGE_UP, e)
+    return b.S.subscribe(P.CkL.SCROLL_PAGE_DOWN, t), b.S.subscribe(P.CkL.SCROLL_PAGE_UP, e), () => {
+      b.S.unsubscribe(P.CkL.SCROLL_PAGE_DOWN, t), b.S.unsubscribe(P.CkL.SCROLL_PAGE_UP, e)
     }
   }, []);
   let K = i.useCallback(() => {
       var e;
-      let t = null == (e = L.current) ? true : e.getScrollerState();
+      let t = null == (e = M.current) ? true : e.getScrollerState();
       if (null == t) return;
       let n = .5 * t.offsetHeight;
       t.scrollHeight - (t.scrollTop + t.offsetHeight) <= n && (null == l || l(S.X.USER_SCROLL))
@@ -195,7 +195,7 @@ function D(e) {
         let t = (0, x.bl)(e);
         e.kind === S.fL.MENTION ? r[t].push(e) : e.channelId in i[t] ? i[t][e.channelId].push(e) : i[t][e.channelId] = [e]
       }), s().each(A, t => {
-        [...Object.values(i[t]).map(e => e.reverse()), ...r[t].map(e => [e])].sort((e, t) => O.default.compare(t[0].id, e[0].id)).forEach(n => {
+        [...Object.values(i[t]).map(e => e.reverse()), ...r[t].map(e => [e])].sort((e, t) => _.default.compare(t[0].id, e[0].id)).forEach(n => {
           e[t].push(n)
         })
       })), e
@@ -210,7 +210,7 @@ function D(e) {
           isOpen: H[t],
           toggleOpenedState: () => {
             let e = H[t];
-            z(t), (0, _.RZ)({
+            z(t), (0, y.RZ)({
               section: t,
               enabled: !e,
               viewId: D
@@ -243,7 +243,7 @@ function D(e) {
   let en = i.useCallback(() => {
     var e;
     let t = A.filter(e => H[e]).reduce((e, t) => e + Y[t].length, 0),
-      n = null == (e = L.current) ? true : e.getScrollerState();
+      n = null == (e = M.current) ? true : e.getScrollerState();
     return null == n ? 0 : Math.max(0, Math.ceil(n.offsetHeight / 64) - t)
   }, [H, Y]);
   i.useEffect(() => {
@@ -256,7 +256,7 @@ function D(e) {
       size: e
     })
   }, [en]);
-  return (0, _.vU)({
+  return (0, y.vU)({
     notificationCenterVariant: U,
     entrypoint: k,
     messages: t,
@@ -269,7 +269,7 @@ function D(e) {
     onDoubleClick: Z,
     "aria-label": e["aria-label"],
     children: (0, r.jsx)(c.bG, {
-      navigator: M,
+      navigator: L,
       children: (0, r.jsx)(c.SJ, {
         children: e => {
           var t, n, {
@@ -310,7 +310,7 @@ function D(e) {
           }({
             ref: e => {
               var t;
-              L.current = e, i.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
+              M.current = e, i.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
             },
             className: o()(w.messagesPopout, h),
             onScroll: K,

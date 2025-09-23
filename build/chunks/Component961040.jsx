@@ -1,4 +1,4 @@
-/** Chunk was on 33358 **/
+/** Chunk was on 69310 **/
 /** chunk id: 961040, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -26,16 +26,16 @@ function b(e) {
     targetElementRef: f,
     spacing: b = 0
   } = e, {
-    isOpen: y,
-    setIsOpen: _
+    isOpen: O,
+    setIsOpen: y
   } = (0, p.Z)(), v = i.useCallback(() => {
-    _(false)
-  }, [_]), j = i.useCallback(() => {
-    _(!y)
-  }, [y, _]);
+    y(false)
+  }, [y]), j = i.useCallback(() => {
+    y(!O)
+  }, [O, y]);
   (0, c.ZP)(() => {
     let e = () => {
-      _(false)
+      y(false)
     };
     return s.Z.subscribe("USER_SETTINGS_MODAL_OPEN", e), () => s.Z.unsubscribe("USER_SETTINGS_MODAL_OPEN", e)
   }), i.useEffect(() => (u.S.subscribe(h.CkL.TOGGLE_INBOX, j), () => void u.S.unsubscribe(h.CkL.TOGGLE_INBOX, j)), [j]);
@@ -46,7 +46,7 @@ function b(e) {
   });
   return (0, r.jsx)(a.yRy, {
     targetElementRef: f,
-    shouldShow: y,
+    shouldShow: O,
     align: l,
     animation: x === d.u3.TITLE_BAR_LEFT ? a.yRy.Animation.TRANSLATE : a.yRy.Animation.FADE,
     animationPosition: x === d.u3.TITLE_BAR_LEFT ? "bottom" : "left",
@@ -59,7 +59,7 @@ function b(e) {
         [m.repositionLayerTitlebarPopout]: x === d.u3.TITLE_BAR_LEFT,
         [m.repositionLayerSidebarPopout]: x === d.u3.SERVER_RAIL_TOP
       }),
-      children: (0, r.jsx)(O, {})
+      children: (0, r.jsx)(_, {})
     }),
     children: (e, n) => {
       let {
@@ -70,7 +70,7 @@ function b(e) {
   })
 }
 
-function O() {
+function _() {
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk546373.container,
     children: [(0, Chunk951288.jsx)("div", {

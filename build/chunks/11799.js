@@ -1,4 +1,4 @@
-/** Chunk was on 33358 **/
+/** Chunk was on 69310 **/
 /** chunk id: 11799, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   y6: () => p
@@ -26,9 +26,9 @@ let p = () => {
       isDesktop: p,
       withMentions: f = false,
       initialPageSize: h
-    } = e, g = (0, i.e7)([u.Z], () => u.Z.shouldReload()), m = r.useRef(false), [b, O] = r.useState(false), {
-      initialized: y,
-      loading: _,
+    } = e, g = (0, i.e7)([u.Z], () => u.Z.shouldReload()), m = r.useRef(false), [b, _] = r.useState(false), {
+      initialized: O,
+      loading: y,
       items: v,
       hasMore: j,
       cursor: x,
@@ -48,22 +48,22 @@ let p = () => {
       roleFilter: a.ZP.roleFilter
     }));
     r.useEffect(() => ((0, s.Vk)(true), () => (0, s.Vk)(false)), []), r.useEffect(() => {
-      y && t && (0, l.FT)(d.W.NOTIFICATION_CENTER)
-    }, [t, y]);
-    let I = (0, o.Z)();
+      O && t && (0, l.FT)(d.W.NOTIFICATION_CENTER)
+    }, [t, O]);
+    let P = (0, o.Z)();
     r.useEffect(() => () => {
-      p ? !I() && (C || v.length > 100) && (0, s.jF)() : n && v.length > 100 && (0, s.jF)()
-    }, [n, v, p, I, C]), r.useEffect(() => {
+      p ? !P() && (C || v.length > 100) && (0, s.jF)() : n && v.length > 100 && (0, s.jF)()
+    }, [n, v, p, P, C]), r.useEffect(() => {
       let e = g && t;
-      (!y || e) && (0, s.jk)({
+      (!O || e) && (0, s.jk)({
         limit: null != h ? h : f ? 8 : 20,
         with_mentions: f,
         roles_filter: E,
         everyone_filter: S
       })
-    }, [y, g, t, f, E, S, h]);
-    let P = r.useCallback(async e => {
-      !m.current && y && j && null != x && (e || !C) && (m.current = true, O(true), await (0, s.jk)({
+    }, [O, g, t, f, E, S, h]);
+    let I = r.useCallback(async e => {
+      !m.current && O && j && null != x && (e || !C) && (m.current = true, _(true), await (0, s.jk)({
         after: x,
         with_mentions: f,
         roles_filter: E,
@@ -71,14 +71,14 @@ let p = () => {
         limit: f ? 8 : 20
       }, () => {
         m.current = false
-      }), O(false))
-    }, [y, j, x, C, f, E, S]);
+      }), _(false))
+    }, [O, j, x, C, f, E, S]);
     return {
-      initialized: y,
-      loading: _,
+      initialized: O,
+      loading: y,
       items: v,
       hasMore: j,
-      loadMore: P,
+      loadMore: I,
       loadingMore: b,
       setReadNotifItemToAcked: e => {
         e.acked || (e.acked = true)

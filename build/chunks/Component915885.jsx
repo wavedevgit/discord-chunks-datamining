@@ -1,7 +1,7 @@
-/** Chunk was on 33358 **/
+/** Chunk was on 69310 **/
 /** chunk id: 915885, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => _
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,18 +19,18 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function O(e) {
+function _(e) {
   let {
     guild: t,
     selected: n
-  } = e, O = (0, l.e7)([h.Z], () => h.Z.can(m.Plq.KICK_MEMBERS, t)), y = (0, l.e7)([u.Z], () => u.Z.getSubmittedGuildJoinRequestTotal(t.id)), _ = O && null != y ? y : 0;
+  } = e, _ = (0, l.e7)([h.Z], () => h.Z.can(m.Plq.KICK_MEMBERS, t)), O = (0, l.e7)([u.Z], () => u.Z.getSubmittedGuildJoinRequestTotal(t.id)), y = _ && null != O ? O : 0;
   i.useEffect(() => {
-    O && t.features.has(m.oNc.MEMBER_VERIFICATION_GATE_ENABLED) && t.features.has(m.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL) && c.Z.fetchGuildJoinRequests({
+    _ && t.features.has(m.oNc.MEMBER_VERIFICATION_GATE_ENABLED) && t.features.has(m.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL) && c.Z.fetchGuildJoinRequests({
       guildId: t.id,
       status: d.wB.SUBMITTED,
       limit: p.p
     })
-  }, [O, t]);
+  }, [_, t]);
   let v = i.useCallback(() => {
       (0, g._X)(t.id)
     }, [t.id]),
@@ -47,8 +47,8 @@ function O(e) {
       text: b.intl.string(b.t.oclz3d),
       selected: n,
       onClick: v,
-      trailing: _ > 0 ? (0, r.jsx)(a.mAB, {
-        count: _
+      trailing: y > 0 ? (0, r.jsx)(a.mAB, {
+        count: y
       }) : null
     })
   })

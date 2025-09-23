@@ -1,4 +1,4 @@
-/** Chunk was on 33358 **/
+/** Chunk was on 69310 **/
 /** chunk id: 311352, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => C
@@ -71,7 +71,7 @@ let x = e => {
           position: "top",
           header: (0, r.jsx)("div", {
             className: v.header,
-            children: _.intl.format(_.t["o+srEx"], {
+            children: y.intl.format(y.t["o+srEx"], {
               keybind: t,
               keybindHook: () => (0, r.jsx)("span", {
                 className: v.keybindHintKeys,
@@ -87,7 +87,7 @@ let x = e => {
             variant: "text-sm/normal",
             color: "always-white",
             className: v.bodyText,
-            children: _.intl.format(_.t.DWeRm5, {
+            children: y.intl.format(y.t.DWeRm5, {
               keybindHook: () => (0, r.jsx)("div", {
                 className: v.keyCombo,
                 children: t

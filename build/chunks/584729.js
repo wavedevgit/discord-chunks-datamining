@@ -1,4 +1,4 @@
-/** Chunk was on 47387 **/
+/** Chunk was on 56785 **/
 /** chunk id: 584729, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => o
@@ -9,8 +9,8 @@ var Chunk271383 = require("./271383.js"),
   Chunk388032 = require("./388032.jsx");
 
 function o(e, t, n) {
-  var o, u;
-  if (t.type === i.fO.ACTIVITY) return null != (u = null == n ? true : n.name) ? u : null;
+  var o, c;
+  if (t.type === l.fO.ACTIVITY) return null != (c = null == n ? true : n.name) ? c : null;
   let s = r.ZP.isGuestOrLurker(e.guild_id, null == (o = t.user) ? true : o.id);
-  return l.ZP.getName(e.getGuildId(), e.id, t.user) + (s ? " ".concat(a.intl.string(a.t["pFO/Pj"])) : "")
+  return i.ZP.getName(e.getGuildId(), e.id, t.user) + (s ? " ".concat(a.intl.string(a.t["pFO/Pj"])) : "")
 }

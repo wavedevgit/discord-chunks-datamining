@@ -1,7 +1,7 @@
-/** Chunk was on 33358 **/
+/** Chunk was on 69310 **/
 /** chunk id: 18998, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => O
 }), require("./583741.js"), require("./388685.js"), require("./539854.js");
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -122,7 +122,7 @@ class b extends Chunk647438.Component {
     }
   }
 }
-class O extends(r = Chunk647438.PureComponent) {
+class _ extends(r = Chunk647438.PureComponent) {
   componentDidMount() {
     this.calculateState()
   }
@@ -214,10 +214,10 @@ class O extends(r = Chunk647438.PureComponent) {
     })
   }
 }
-h(O, "contextType", Chunk481060.Sfi), h(O, "defaultProps", {
+h(_, "contextType", Chunk481060.Sfi), h(_, "defaultProps", {
   className: Chunk541094.container,
   reverse: false,
   hide: false,
   animate: true
 });
-let y = O
+let O = _

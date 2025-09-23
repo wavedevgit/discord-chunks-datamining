@@ -1,10 +1,9 @@
-/** Chunk was on web.js **/
-/** chunk id: 959840, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 8850 **/
+/** chunk id: 959840, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  O: () => i
+  O: () => l
 });
-let r = (0, require("./427164.js").le)({
+let n = (0, require("./427164.js").le)({
   name: "2025-09-user-profile-wishlist",
   kind: "user",
   defaultConfig: {
@@ -20,11 +19,11 @@ let r = (0, require("./427164.js").le)({
   }
 });
 
-function i(e) {
+function l(e) {
   let {
     location: t
   } = e;
-  return r.useConfig({
+  return n.useConfig({
     location: t
   }).enabled
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 47387 **/
+/** Chunk was on 56785 **/
 /** chunk id: 655687, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => a
@@ -12,43 +12,43 @@ function a(e) {
     channel: t,
     isReadonly: n = false,
     isCreatingThread: a = false
-  } = e, o = (0, r.ZP)(t, true), u = (0, r.ZP)(t, false);
+  } = e, o = (0, r.ZP)(t, true), c = (0, r.ZP)(t, false);
   return null == t || null == o ? {
-    placeholder: i.intl.string(i.t.MKDeyM),
-    accessibilityLabel: i.intl.string(i.t.MKDeyM)
+    placeholder: l.intl.string(l.t.MKDeyM),
+    accessibilityLabel: l.intl.string(l.t.MKDeyM)
   } : a ? {
-    placeholder: i.intl.string(i.t.YzpScX),
-    accessibilityLabel: i.intl.string(i.t.YzpScX)
+    placeholder: l.intl.string(l.t.YzpScX),
+    accessibilityLabel: l.intl.string(l.t.YzpScX)
   } : n ? {
-    placeholder: i.intl.string(i.t.RRvRp6),
-    accessibilityLabel: i.intl.string(i.t.RRvRp6)
+    placeholder: l.intl.string(l.t.RRvRp6),
+    accessibilityLabel: l.intl.string(l.t.RRvRp6)
   } : t.isForumPost() ? {
-    placeholder: i.intl.formatToPlainString(i.t.Y6qWLS, {
+    placeholder: l.intl.formatToPlainString(l.t.Y6qWLS, {
       channel: o
     }),
-    accessibilityLabel: i.intl.formatToPlainString(i.t.KffKoa, {
-      channel: u
+    accessibilityLabel: l.intl.formatToPlainString(l.t.KffKoa, {
+      channel: c
     })
-  } : l.TPd.THREADS.has(t.type) ? {
-    placeholder: i.intl.formatToPlainString(i.t["8lzR/f"], {
+  } : i.TPd.THREADS.has(t.type) ? {
+    placeholder: l.intl.formatToPlainString(l.t["8lzR/f"], {
       channel: o
     }),
-    accessibilityLabel: i.intl.formatToPlainString(i.t.UZIMWV, {
-      channel: u
+    accessibilityLabel: l.intl.formatToPlainString(l.t.UZIMWV, {
+      channel: c
     })
-  } : t.type === l.d4z.DM ? {
-    placeholder: i.intl.formatToPlainString(i.t["4c+CAw"], {
+  } : t.type === i.d4z.DM ? {
+    placeholder: l.intl.formatToPlainString(l.t["4c+CAw"], {
       channel: o
     }),
-    accessibilityLabel: i.intl.formatToPlainString(i.t.fqOxbW, {
-      channel: u
+    accessibilityLabel: l.intl.formatToPlainString(l.t.fqOxbW, {
+      channel: c
     })
   } : {
-    placeholder: i.intl.formatToPlainString(i.t["8lzR/f"], {
+    placeholder: l.intl.formatToPlainString(l.t["8lzR/f"], {
       channel: o
     }),
-    accessibilityLabel: i.intl.formatToPlainString(i.t.ih7ZSE, {
-      channel: u
+    accessibilityLabel: l.intl.formatToPlainString(l.t.ih7ZSE, {
+      channel: c
     })
   }
 }

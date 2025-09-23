@@ -1,7 +1,7 @@
-/** Chunk was on 38029 **/
+/** Chunk was on 92446 **/
 /** chunk id: 551425, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => v
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -17,13 +17,13 @@ var Chunk979554 = require("./979554.js"),
   Chunk597688 = require("./597688.js"),
   Chunk22267 = require("./22267.jsx"),
   Chunk799940 = require("./799940.js");
-let h = Chunk481060.EFr.SIZE_152,
-  y = (0, Chunk1585.y9)(h),
-  b = t => {
+let g = Chunk481060.EFr.SIZE_152,
+  y = (0, Chunk1585.y9)(g),
+  O = t => {
     var e, n;
     let {
       item: r
-    } = t, a = (0, l.e7)([f.default], () => f.default.getCurrentUser()), {
+    } = t, a = (0, l.e7)([p.default], () => p.default.getCurrentUser()), {
       avatarDecorationSrc: u,
       avatarPlaceholderSrc: c,
       eventHandlers: d
@@ -33,7 +33,7 @@ let h = Chunk481060.EFr.SIZE_152,
       size: y
     });
     return (0, i.jsx)("div", {
-      className: g.avatarDecorationPreview,
+      className: h.avatarDecorationPreview,
       children: (0, i.jsx)(s.qEK, (e = function(t) {
         for (var e = 1; e < arguments.length; e++) {
           var n = null != arguments[e] ? arguments[e] : {},
@@ -55,7 +55,7 @@ let h = Chunk481060.EFr.SIZE_152,
         "aria-label": r.label,
         src: c,
         avatarDecoration: u,
-        size: h
+        size: g
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(t, e) {
         var n = Object.keys(t);
         if (Object.getOwnPropertySymbols) {
@@ -68,55 +68,55 @@ let h = Chunk481060.EFr.SIZE_152,
       }), e))
     })
   },
-  O = t => {
+  b = t => {
     let {
       item: e
     } = t;
     return (0, i.jsx)("div", {
-      className: g.profileEffectPreview,
+      className: h.profileEffectPreview,
       children: (0, i.jsx)(d.Z, {
         isHovering: true,
         profileEffectId: null == e ? true : e.id
       })
     })
   },
-  v = t => {
+  j = t => {
     let {
       item: e
     } = t;
     return (0, i.jsx)("div", {
-      className: g.nameplatePreview,
+      className: h.nameplatePreview,
       children: (0, i.jsx)(m.Z, {
         nameplate: e,
-        className: g.nameplate,
+        className: h.nameplate,
         nameplatePreviewSize: "xlarge",
         isHighlighted: true,
         showPlaceholderUser: true
       })
     })
   },
-  P = t => {
+  v = t => {
     let {
       giftCode: e
-    } = t, n = (0, l.e7)([p.Z], () => p.Z.getProduct(e.skuId)), s = null == n ? true : n.items[0];
+    } = t, n = (0, l.e7)([f.Z], () => f.Z.getProduct(e.skuId)), s = null == n ? true : n.items[0];
     switch (null == s ? true : s.type) {
       case r.Z.AVATAR_DECORATION:
-        return (0, i.jsx)(b, {
-          item: s
-        });
-      case r.Z.PROFILE_EFFECT:
         return (0, i.jsx)(O, {
           item: s
         });
+      case r.Z.PROFILE_EFFECT:
+        return (0, i.jsx)(b, {
+          item: s
+        });
       case r.Z.NAMEPLATE:
-        return (0, i.jsx)(v, {
+        return (0, i.jsx)(j, {
           item: s
         });
       default:
         return null != e.giftStyle ? (0, i.jsx)(c.Z, {
           defaultAnimationState: u.SR.ACTION,
           idleAnimationState: u.SR.LOOP,
-          className: g.giftAnimation,
+          className: h.giftAnimation,
           giftStyle: e.giftStyle
         }) : null
     }

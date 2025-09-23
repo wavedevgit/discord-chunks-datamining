@@ -1,7 +1,7 @@
 /** Chunk was on 37220 **/
 /** chunk id: 225138, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  S: () => X,
+  S: () => B,
   default: () => K
 });
 var Chunk951288 = require("./951288.js");
@@ -55,16 +55,16 @@ function K(e) {
       target: b,
       mediaItem: p,
       shouldHideMediaOptions: O,
-      onSelect: m,
-      onHeightUpdate: y
+      onSelect: y,
+      onHeightUpdate: m
     } = e,
     {
       analyticsLocations: h
     } = (0, c.ZP)([s.Z.MESSAGE_CONTEXT_MENU]),
     v = b,
     j = b.getAttribute("data-type"),
-    E = b.getAttribute("data-id"),
-    S = b.getAttribute("data-name");
+    S = b.getAttribute("data-id"),
+    E = b.getAttribute("data-name");
   if (null != p) o = l = u = p.url;
   else
     for (;
@@ -72,21 +72,21 @@ function K(e) {
   let P = null != (n = null == (t = document.getSelection()) ? true : t.toString()) ? n : "";
   return (0, r.jsx)(c.Gt, {
     value: h,
-    children: X({
+    children: B({
       message: g,
       channel: f,
       mediaItem: p,
       textSelection: P,
       favoriteableType: j,
-      favoriteableId: E,
-      favoriteableName: S,
+      favoriteableId: S,
+      favoriteableName: E,
       itemHref: l,
       itemSrc: o,
       itemSafeSrc: u,
       itemTextContent: d,
       canReport: true,
-      onHeightUpdate: y,
-      onSelect: m,
+      onHeightUpdate: m,
+      onSelect: y,
       onClose: a.Zy,
       navId: "message",
       ariaLabel: z.intl.string(z.t.ChPNkJ),
@@ -95,7 +95,7 @@ function K(e) {
   })
 }
 
-function X(e) {
+function B(e) {
   let {
     message: t,
     channel: n,
@@ -104,32 +104,32 @@ function X(e) {
     favoriteableType: s,
     favoriteableId: c,
     favoriteableName: K,
-    itemHref: X,
-    itemSrc: B,
+    itemHref: B,
+    itemSrc: X,
     itemSafeSrc: W,
     itemTextContent: q,
     canReport: V,
     onHeightUpdate: Q,
-    onSelect: Y,
-    onClose: J,
+    onSelect: J,
+    onClose: Y,
     navId: $,
     ariaLabel: ee,
     shouldHideMediaOptions: et = false
-  } = e, en = (0, d.Z)(a), er = (0, b.Z)(a), ei = (0, N.Z)(t, n), el = (0, v.Z)(t, n), ea = (0, _.Z)(t, n), eo = (0, I.Z)(t, n), es = (0, Z.Z)({
+  } = e, en = (0, d.Z)(a), er = (0, b.Z)(a), ei = (0, A.Z)(t, n), el = (0, v.Z)(t, n), ea = (0, _.Z)(t, n), eo = (0, I.Z)(t, n), es = (0, Z.Z)({
     type: s,
     id: c,
     name: K
-  }), ec = (0, R.Z)(t, n), eu = (0, w.Z)(t, n), ed = (0, A.Z)(t), ef = (0, j.Z)(t, n), eg = (0, E.Z)(t, n), eb = (0, x.Z)(t, n), ep = (0, D.Z)(t, n), eO = (0, P.Z)(t, n), em = (0, C.ZP)(t), ey = (0, C.wY)(t), eh = (0, C.eH)(t), ev = (0, L.Z)(t, n), ej = (0, g.Z)(null != X ? X : B, q, t, {
+  }), ec = (0, R.Z)(t, n), eu = (0, w.Z)(t, n), ed = (0, N.Z)(t), ef = (0, j.Z)(t, n), eg = (0, S.Z)(t, n), eb = (0, D.Z)(t, n), ep = (0, x.Z)(t, n), eO = (0, P.Z)(t, n), ey = (0, C.ZP)(t), em = (0, C.wY)(t), eh = (0, C.eH)(t), ev = (0, L.Z)(t, n), ej = (0, g.Z)(null != B ? B : X, q, t, {
     shouldHideMediaOptions: et
-  }), eE = (0, f.Z)(W, t, {
+  }), eS = (0, f.Z)(W, t, {
     shouldHideMediaOptions: et,
     contentType: null == i ? true : i.contentType,
     originalContentType: null == i ? true : i.originalContentType
-  }), eS = (0, F.Z)(t, i), eP = (0, u.Z)({
+  }), eE = (0, F.Z)(t, i), eP = (0, u.Z)({
     id: t.id,
     label: z.intl.string(z.t.zBoHlZ),
     shiftId: "".concat(t.channel_id, "-").concat(t.id)
-  }), e_ = (0, M.Z)(t, n), eZ = (0, T.Z)(t, n), eT = (0, k.Z)(t, n), ew = (0, m.Z)(a, n.getGuildId()), eI = (0, y.Z)(t), eN = (0, S.Z)(t), eA = (0, G.Z)(t, n), ex = (0, H.Z)(t), eD = (0, h.Z)(t, n), eM = (0, O.Z)({
+  }), e_ = (0, M.Z)(t, n), eZ = (0, T.Z)(t, n), eT = (0, k.Z)(t, n), ew = (0, y.Z)(a, n.getGuildId()), eI = (0, m.Z)(t), eA = (0, E.Z)(t), eN = (0, G.Z)(t, n), eD = (0, H.Z)(t), ex = (0, h.Z)(t, n), eM = (0, O.Z)({
     commandType: o.yU.MESSAGE,
     commandTargetId: t.id,
     channel: n,
@@ -138,23 +138,23 @@ function X(e) {
   }), eC = (0, U.Z)(t), eR = (0, p.Z)(t);
   return (0, r.jsxs)(l.v2r, {
     navId: $,
-    onClose: J,
+    onClose: Y,
     "aria-label": ee,
-    onSelect: Y,
+    onSelect: J,
     children: [(0, r.jsx)(l.kSQ, {
       children: en
     }), (0, r.jsx)(l.kSQ, {
       children: er
     }), (0, r.jsxs)(l.kSQ, {
-      children: ["" === a ? ei : null, el, ed, eD]
+      children: ["" === a ? ei : null, el, ed, ex]
     }), (0, r.jsxs)(l.kSQ, {
       children: [ea, e_, eZ, eT]
     }), (0, r.jsxs)(l.kSQ, {
-      children: [eN, eA, eo, eI, eM, ec, eu, ef, eg, ev, eR, eC]
+      children: [eA, eN, eo, eI, eM, ec, eu, ef, eg, ev, eR, eC]
     }), (0, r.jsxs)(l.kSQ, {
-      children: [ep, eb, eO, V && em, V && eh, ey]
+      children: [ep, eb, eO, V && ey, V && eh, em]
     }), (0, r.jsxs)(l.kSQ, {
-      children: [es, ew, eE, eS, ex]
+      children: [es, ew, eS, eE, eD]
     }), (0, r.jsx)(l.kSQ, {
       children: ej
     }), (0, r.jsx)(l.kSQ, {

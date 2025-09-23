@@ -16,7 +16,7 @@ var Chunk755721 = require("./755721.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk55916 = require("./55916.js");
 
-function m(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,7 +35,7 @@ function m(e) {
   return e
 }
 
-function p(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -90,11 +90,11 @@ function f(e) {
       application: E,
       guild: _,
       user: b || (0, c.X7)(t) ? v : null
-    }), (0, c.X7)(t) ? null : (0, r.jsx)(c.jq, p(m({}, I), {
+    }), (0, c.X7)(t) ? null : (0, r.jsx)(c.jq, m(p({}, I), {
       showBigUserIcon: b
-    })), (0, r.jsx)(c.UM, p(m({}, I), {
+    })), (0, r.jsx)(c.UM, m(p({}, I), {
       showBigUserIcon: b
-    })), (0, r.jsx)(c.V6, m({}, I)), (0, r.jsx)(i.zx, {
+    })), (0, r.jsx)(c.V6, p({}, I)), (0, r.jsx)(i.zx, {
       onClick: n,
       submitting: j,
       className: g.acceptButton,

@@ -1,4 +1,4 @@
-/** Chunk was on 80037 **/
+/** Chunk was on 16820 **/
 /** chunk id: 62764, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => G
@@ -42,7 +42,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk487111 = require("./487111.js"),
   Chunk332103 = require("./332103.js");
 
-function V(e) {
+function H(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -61,7 +61,7 @@ function V(e) {
   return e
 }
 
-function F(e, t) {
+function V(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -74,7 +74,7 @@ function F(e, t) {
   }), e
 }
 
-function H(e) {
+function F(e) {
   let {
     channel: t
   } = e, l = t.isArchivedThread(), a = (0, O.P0)(t), [o, u] = i.useState(false), d = () => {
@@ -230,11 +230,11 @@ function G(e) {
         })]
       }), (0, r.jsxs)("div", {
         className: D.buttons,
-        children: [en ? (0, r.jsx)(H, {
+        children: [en ? (0, r.jsx)(F, {
           channel: Y
         }) : (0, r.jsx)(c.ua7, {
           text: k.intl.string(k.t.F7oeDg),
-          children: e => (0, r.jsx)(c.zxk, F(V({}, e), {
+          children: e => (0, r.jsx)(c.zxk, V(H({}, e), {
             icon: eh,
             size: "sm",
             variant: "secondary",
@@ -243,13 +243,13 @@ function G(e) {
           }))
         }), (0, r.jsx)(c.ua7, {
           text: k.intl.string(k.t.WqhZsr),
-          children: e => W ? (0, r.jsx)(c.zxk, F(V({}, e), {
+          children: e => W ? (0, r.jsx)(c.zxk, V(H({}, e), {
             icon: c.dz2,
             size: "sm",
             variant: "secondary",
             onClick: ed,
             text: k.intl.string(k.t["t5VZ8/"])
-          })) : (0, r.jsx)(c.hU, F(V({}, e), {
+          })) : (0, r.jsx)(c.hU, V(H({}, e), {
             icon: c.xPt,
             size: "sm",
             variant: "secondary",
@@ -258,7 +258,7 @@ function G(e) {
           }))
         }), !n && (0, r.jsx)(c.ua7, {
           text: k.intl.string(k.t.nFP4oa),
-          children: e => (0, r.jsx)(c.hU, F(V({}, e), {
+          children: e => (0, r.jsx)(c.hU, V(H({}, e), {
             icon: c.Za2,
             size: "sm",
             variant: "secondary",

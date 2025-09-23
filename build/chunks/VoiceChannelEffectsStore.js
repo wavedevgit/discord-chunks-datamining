@@ -1,11 +1,11 @@
-/** Chunk was on 47387 **/
+/** Chunk was on 56785 **/
 /** chunk id: 456631, original params: e,t,n (module,exports,require) **/
 let r;
 require.d(exports, {
   H: () => g,
-  Z: () => h
+  Z: () => y
 }), require("./388685.js"), require("./290780.js");
-var l, i, Chunk392711 = require("./392711.js"),
+var i, l, Chunk392711 = require("./392711.js"),
   Chunk442837 = require("./442837.js"),
   Chunk780384 = require("./780384.js"),
   Chunk570140 = require("./570140.js"),
@@ -14,7 +14,7 @@ var l, i, Chunk392711 = require("./392711.js"),
   Chunk354459 = require("./354459.js");
 let p = [],
   m = {},
-  E = [],
+  _ = [],
   g = e => {
     null != e && s.Z.dispatch({
       type: "VOICE_CHANNEL_EFFECT_CLEAR",
@@ -22,12 +22,12 @@ let p = [],
     })
   },
   b = [],
-  S = 10 * Chunk70956.Z.Millis.SECOND,
-  v = (0, Chunk392711.debounce)(() => {
-    let e = (0, Chunk963838.cX)(E);
-    Chunk780384.uv.announce(module, "polite"), E = []
+  v = 10 * Chunk70956.Z.Millis.SECOND,
+  E = (0, Chunk392711.debounce)(() => {
+    let e = (0, Chunk963838.cX)(_);
+    Chunk780384.uv.announce(module, "polite"), _ = []
   }, 500);
-class O extends(l = Chunk442837.ZP.Store) {
+class h extends(i = Chunk442837.ZP.Store) {
   get recentlyUsedEmojis() {
     return p
   }
@@ -40,13 +40,13 @@ class O extends(l = Chunk442837.ZP.Store) {
   getEffectForUserId(e) {
     return m[e]
   }
-}(i = "displayName") in O ? Object.defineProperty(O, i, {
+}(l = "displayName") in h ? Object.defineProperty(h, l, {
   value: "VoiceChannelEffectsStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : O[i] = "VoiceChannelEffectsStore";
-let h = new O(Chunk570140.Z, {
+}) : h[l] = "VoiceChannelEffectsStore";
+let y = new h(Chunk570140.Z, {
   VOICE_CHANNEL_EFFECT_CLEAR: e => {
     let {
       userId: t
@@ -69,17 +69,17 @@ let h = new O(Chunk570140.Z, {
       emoji: t,
       sentAt: Date.now(),
       animationType: r
-    }, E = [...E, {
+    }, _ = [..._, {
       emojiName: t.name,
       userId: n
-    }], v())
+    }], E())
   },
   VOICE_CHANNEL_EFFECT_SENT_LOCAL: () => {
     let e = new Date;
     if ((b = [module, ...b].slice(0, 20)).length >= 20) {
       let t = b[b.length - 1],
         n = module.getTime() - exports.getTime();
-      require < S && (r = new Date(module.getTime() + S - require))
+      require < v && (r = new Date(module.getTime() + v - require))
     }
   },
   VOICE_CHANNEL_EFFECT_UPDATE_TIME_STAMP: e => {

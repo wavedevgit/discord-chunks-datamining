@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 754433, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 8850 **/
+/** chunk id: 754433, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   y: () => u
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk937615 = require("./937615.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -16,19 +15,19 @@ let u = e => {
   let {
     price: {
       amount: t,
-      currency: n
+      currency: r
     },
-    className: i,
+    className: l,
     variant: u = "heading-md/semibold"
-  } = e, d = (0, s.qr)(t, n);
-  return (0, r.jsxs)(o.Text, {
+  } = e, d = (0, o.qr)(t, r);
+  return (0, n.jsxs)(a.Text, {
     variant: u,
-    className: a()(c.striked, i),
-    children: [(0, r.jsx)(o.nn4, {
-      children: l.intl.format(l.t["2CEGlp"], {
+    className: i()(c.striked, l),
+    children: [(0, n.jsx)(a.nn4, {
+      children: s.intl.format(s.t["2CEGlp"], {
         price: d
       })
-    }), (0, r.jsx)("span", {
+    }), (0, n.jsx)("span", {
       "aria-hidden": true,
       children: d
     })]

@@ -1,7 +1,7 @@
-/** Chunk was on 33358 **/
+/** Chunk was on 69310 **/
 /** chunk id: 372564, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => y
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -39,10 +39,10 @@ function b(e) {
   return e
 }
 
-function O(e) {
+function _(e) {
   return e.matches("a") || "highlight" === e.className || e.className.includes("mention")
 }
-class y extends Chunk647438.Component {
+class O extends Chunk647438.Component {
   render() {
     let {
       channel: e
@@ -71,9 +71,9 @@ class y extends Chunk647438.Component {
     super(...e), m(this, "_mouseDown", false), m(this, "_mouseUp", false), m(this, "handleOpenTopic", e => {
       let t = e.target;
       if ((0, a.kK)(t)) {
-        if (O(t)) return;
+        if (_(t)) return;
         let e = t.parentNode;
-        if ((0, a.kK)(e) && O(e)) return
+        if ((0, a.kK)(e) && _(e)) return
       }(0, s.ZDy)(async () => {
         let {
           default: e
@@ -121,4 +121,4 @@ class y extends Chunk647438.Component {
     })
   }
 }
-let _ = y
+let y = O

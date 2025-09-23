@@ -80,7 +80,7 @@ function d(e, t, a) {
   }) : a.isDM() ? (0, i.jW)(e, async () => {
     let {
       default: e
-    } = await Promise.all([n.e("79695"), n.e("90508"), n.e("98783"), n.e("56826"), n.e("43812")]).then(n.bind(n, 131404));
+    } = await Promise.all([n.e("79695"), n.e("90508"), n.e("98783"), n.e("56826"), n.e("36084"), n.e("12688")]).then(n.bind(n, 131404));
     return n => (0, r.jsx)(e, l(o({}, n), {
       user: t,
       channel: a,

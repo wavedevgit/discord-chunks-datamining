@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 755007, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 8850 **/
+/** chunk id: 755007, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => u
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk960919 = require("./960919.jsx"),
   Chunk388032 = require("./388032.jsx"),
@@ -16,18 +15,18 @@ var Chunk120356 = require("./120356.js"),
 function u(e) {
   let {
     orbAmount: t,
-    className: n
+    className: r
   } = e;
-  return (0, r.jsxs)(o.Text, {
+  return (0, n.jsxs)(a.Text, {
     variant: "text-md/semibold",
-    className: a()(c.orbPriceTag, n),
-    children: [(0, r.jsx)(o.nn4, {
-      children: l.intl.format(l.t["a/Y8PD"], {
+    className: i()(c.orbPriceTag, r),
+    children: [(0, n.jsx)(a.nn4, {
+      children: s.intl.format(s.t["a/Y8PD"], {
         orbAmount: t
       })
-    }), (0, r.jsx)(s.Z, {
+    }), (0, n.jsx)(o.Z, {
       shouldUseThemeColor: true
-    }), (0, r.jsx)("span", {
+    }), (0, n.jsx)("span", {
       "aria-hidden": true,
       children: t
     })]

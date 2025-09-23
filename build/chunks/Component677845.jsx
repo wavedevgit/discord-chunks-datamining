@@ -1,4 +1,4 @@
-/** Chunk was on 80037 **/
+/** Chunk was on 16820 **/
 /** chunk id: 677845, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -56,9 +56,9 @@ function S(e) {
   let D = (0, o.e7)([C.Z], () => I.isPrivate() || (0, m.b)(C.Z, w, I), [w, I]),
     U = (null == w ? true : w.afkChannelId) === I.id,
     B = I.userLimit <= 0 || I.userLimit > 1,
-    V = (0, o.e7)([u.ZP], () => u.ZP.getEmbeddedActivitiesForChannel(I.id).length <= 0),
-    F = (0, f.Nj)(s.z.VC_TILE_ACTIVITIES_ENTRY_POINT),
-    H = (0, d.KF)(I.id) !== d.jy.CAN_LAUNCH,
+    H = (0, o.e7)([u.ZP], () => u.ZP.getEmbeddedActivitiesForChannel(I.id).length <= 0),
+    V = (0, f.Nj)(s.z.VC_TILE_ACTIVITIES_ENTRY_POINT),
+    F = (0, d.KF)(I.id) !== d.jy.CAN_LAUNCH,
     G = null != M && M === I.id,
     z = k.map(e => t => (0, r.jsx)(v.ZP, {
       participant: e,
@@ -82,7 +82,7 @@ function S(e) {
     }
   }, {
     trackOnInitialLoad: true
-  }, []), null != w && !U && (!(R >= 2) || !V || H || F || G ? B && 1 === R && D && (V && !H ? z.push(e => (0, r.jsx)(_.h, {
+  }, []), null != w && !U && (!(R >= 2) || !H || F || V || G ? B && 1 === R && D && (H && !F ? z.push(e => (0, r.jsx)(_.h, {
     channel: I,
     guild: w,
     width: e,

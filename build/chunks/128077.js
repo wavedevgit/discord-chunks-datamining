@@ -1,38 +1,18 @@
-/** Chunk was on web.js **/
-/** chunk id: 128077, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 81501 **/
+/** chunk id: 128077, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  f: () => o
+  f: () => l
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk751648 = require("./751648.js"),
   Chunk388032 = require("./388032.jsx");
 
-function o() {
-  let [e, t] = (0, Chunk647438.useState)(""), [n, o] = (0, Chunk647438.useState)([]), [s, l] = (0, Chunk647438.useState)(null), [c, u] = (0, Chunk647438.useState)(false);
-
-  function d(e, t, n) {
-    let r = () => {
-        u(true), l(null)
-      },
-      a = e => {
-        o(e), u(false), null == n || n(e)
-      },
-      s = e => {
-        l(e), u(false)
-      };
-    return (0, i.df)({
-      skuId: e,
-      loadId: t,
-      onRedeemStart: r,
-      onRedeemSucceed: a,
-      onRedeemFail: s
-    })
-  }
+function l() {
+  let [e, t] = (0, Chunk647438.useState)(""), [n, l] = (0, Chunk647438.useState)([]), [c, s] = (0, Chunk647438.useState)(null), [o, d] = (0, Chunk647438.useState)(false);
   return (0, Chunk647438.useEffect)(() => {
-    if (null != s) return void exports(Chunk388032.intl.format(Chunk388032.t["7gHWra"], {
+    if (null != c) return void exports(Chunk388032.intl.format(Chunk388032.t["7gHWra"], {
       amount: "1 orb",
-      errorMessage: s.message
+      errorMessage: c.message
     }));
     if (null != require && require.length > 0) {
       let e = require.map(e => {
@@ -46,11 +26,25 @@ function o() {
       return
     }
     exports("")
-  }, [require, s]), {
+  }, [require, c]), {
     entitlements: require,
-    error: s,
-    isSubmitting: c,
+    error: c,
+    isSubmitting: o,
     responseMessage: module,
-    redeemVirtualCurrency: d
+    redeemVirtualCurrency: function(e, t, n) {
+      return (0, a.df)({
+        skuId: e,
+        loadId: t,
+        onRedeemStart: () => {
+          d(true), s(null)
+        },
+        onRedeemSucceed: e => {
+          l(e), d(false), null == n || n(e)
+        },
+        onRedeemFail: e => {
+          s(e), d(false)
+        }
+      })
+    }
   }
 }

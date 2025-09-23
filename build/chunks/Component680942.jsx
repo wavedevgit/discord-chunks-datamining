@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 680942, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 8850 **/
+/** chunk id: 680942, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => v
 });
@@ -19,90 +18,80 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx");
-
-function E(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function b(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      E(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function y(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function O(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
 let v = e => {
   let {
     product: t,
-    primary: n,
-    selectedVariantIndex: E,
+    primary: r,
+    selectedVariantIndex: v,
     returnRef: y,
-    onSuccess: v,
-    tooltipDelay: I
+    onSuccess: m,
+    tooltipDelay: j
   } = e, {
-    analyticsLocations: T
-  } = (0, l.ZP)(), S = i.useRef(null), A = (0, d.sp)(), C = (0, _.Z)();
-  return (0, f.x6)(t) ? null : (0, r.jsx)(s.ua7, {
-    text: g.intl.string(g.t["JCFN//"]),
-    delay: I,
-    children: e => (0, r.jsx)(s.hU, O(b({}, e), {
-      "aria-label": g.intl.string(g.t["JCFN//"]),
-      buttonRef: S,
-      variant: n ? "primary" : "secondary",
-      icon: s.OgN,
-      size: "md",
-      onClick: e => {
-        e.stopPropagation(), u.default.track(h.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-          collectibles_shop_session_id: null == A ? true : A.sessionId,
-          sku_id: t.skuId,
-          page_section: null == A ? true : A.pageSection,
-          page_category: null == A ? true : A.pageCategory,
-          tile_type: a.Z[t.type],
-          tile_position: String(null == A ? true : A.tilePosition),
-          cta_name: "gift button",
-          page_type: C || "home"
-        }), (0, c.Z)({
-          skuId: (0, p.S)({
-            product: t,
-            selectedVariantIndex: E
-          }),
-          isGift: true,
-          giftingOrigin: m.Wt.SHOP_PAGE,
-          analyticsLocations: T,
-          returnRef: y,
-          variantsReturnStyle: o.v.VARIANTS_GROUP,
-          onClose: null != v ? e => {
-            e && v()
-          } : true
-        })
-      }
-    }))
+    analyticsLocations: P
+  } = (0, s.ZP)(), _ = l.useRef(null), E = (0, d.sp)(), x = (0, f.Z)();
+  return (0, p.x6)(t) ? null : (0, n.jsx)(o.ua7, {
+    text: O.intl.string(O.t["JCFN//"]),
+    delay: j,
+    children: e => {
+      var l, s;
+      return (0, n.jsx)(o.hU, (l = function(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var r = null != arguments[t] ? arguments[t] : {},
+            n = Object.keys(r);
+          "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(r, e).enumerable
+          }))), n.forEach(function(t) {
+            var n;
+            n = r[t], t in e ? Object.defineProperty(e, t, {
+              value: n,
+              enumerable: true,
+              configurable: true,
+              writable: true
+            }) : e[t] = n
+          })
+        }
+        return e
+      }({}, e), s = s = {
+        "aria-label": O.intl.string(O.t["JCFN//"]),
+        buttonRef: _,
+        variant: r ? "primary" : "secondary",
+        icon: o.OgN,
+        size: "md",
+        onClick: e => {
+          e.stopPropagation(), u.default.track(h.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+            collectibles_shop_session_id: null == E ? true : E.sessionId,
+            sku_id: t.skuId,
+            page_section: null == E ? true : E.pageSection,
+            page_category: null == E ? true : E.pageCategory,
+            tile_type: i.Z[t.type],
+            tile_position: String(null == E ? true : E.tilePosition),
+            cta_name: "gift button",
+            page_type: x || "home"
+          }), (0, c.Z)({
+            skuId: (0, b.S)({
+              product: t,
+              selectedVariantIndex: v
+            }),
+            isGift: true,
+            giftingOrigin: g.Wt.SHOP_PAGE,
+            analyticsLocations: P,
+            returnRef: y,
+            variantsReturnStyle: a.v.VARIANTS_GROUP,
+            onClose: null != m ? e => {
+              e && m()
+            } : true
+          })
+        }
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
+        var r = Object.keys(e);
+        if (Object.getOwnPropertySymbols) {
+          var n = Object.getOwnPropertySymbols(e);
+          r.push.apply(r, n)
+        }
+        return r
+      })(Object(s)).forEach(function(e) {
+        Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(s, e))
+      }), l))
+    }
   })
 }

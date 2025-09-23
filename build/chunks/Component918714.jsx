@@ -1,4 +1,4 @@
-/** Chunk was on 10017 **/
+/** Chunk was on 97571 **/
 /** chunk id: 918714, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -35,7 +35,7 @@ function _(e) {
     s(t)
   }, [t]), (0, a.jsxs)(u.y.Provider, {
     value: o,
-    children: [(0, a.jsx)(x.Z, {}), (0, a.jsx)(p.Z, {
+    children: [(0, a.jsx)(x.Z, {}), (0, a.jsx)(h.Z, {
       onSubmit: n,
       disabled: i
     })]
@@ -44,7 +44,7 @@ function _(e) {
 let y = function(e) {
   let {
     onClose: t
-  } = e, [n, u] = r.useState(null), [p, x] = r.useState(true), [y, C] = r.useState(null), [E, N] = r.useState(false), S = r.useCallback(async () => {
+  } = e, [n, u] = r.useState(null), [h, x] = r.useState(true), [y, C] = r.useState(null), [E, N] = r.useState(false), T = r.useCallback(async () => {
     x(true), C(null);
     try {
       var e;
@@ -70,7 +70,7 @@ let y = function(e) {
     } finally {
       x(false)
     }
-  }, [t]), O = r.useCallback(async e => {
+  }, [t]), S = r.useCallback(async e => {
     if (null !== n) {
       N(true);
       try {
@@ -79,49 +79,49 @@ let y = function(e) {
           flow_id: n.flow_context.flow_id,
           data: e
         };
-        await (0, d.Wl)(t), S()
+        await (0, d.Wl)(t), T()
       } catch (e) {
         C(g.intl.string(b.default["+QRSxc"]))
       } finally {
         N(false)
       }
     }
-  }, [n, S]);
+  }, [n, T]);
   (0, l.ZP)(() => {
-    S()
+    T()
   });
-  let T = r.useMemo(() => (null == n ? true : n.task_type) === m.UA.AGE_VERIFICATION, [n]);
+  let O = r.useMemo(() => (null == n ? true : n.task_type) === m.UA.AGE_VERIFICATION, [n]);
   return (0, a.jsxs)("div", {
-    className: j.background,
+    className: v.background,
     children: [(0, a.jsx)("img", {
-      className: j.artwork,
-      src: v,
+      className: v.artwork,
+      src: j,
       alt: ""
-    }), T ? (0, a.jsx)(o.Z, {
+    }), O ? (0, a.jsx)(o.Z, {
       transitionState: i.Dvm.ENTERED,
       entryPoint: s.cU.SAFETY_FLOWS,
       onClose: f.dG,
       onComplete: async () => {
-        await O({
+        await S({
           type: m.rY.Empty
         })
       },
       dismissable: false
     }) : (0, a.jsx)("div", {
-      className: j.safetyFlow,
-      children: p ? (0, a.jsx)(i.$jN, {
+      className: v.safetyFlow,
+      children: h ? (0, a.jsx)(i.$jN, {
         type: i.$jN.Type.SPINNING_CIRCLE
       }) : (0, a.jsx)("div", {
-        className: j.container,
+        className: v.container,
         children: (0, a.jsxs)(i.Kqy, {
           direction: "horizontal",
           justify: "start",
-          className: j.body,
+          className: v.body,
           children: [null !== y && (0, a.jsxs)(i.Kqy, {
             direction: "vertical",
             justify: "space-between",
             align: "center",
-            className: j.interimBody,
+            className: v.interimBody,
             padding: 16,
             children: [(0, a.jsxs)(i.Kqy, {
               direction: "vertical",
@@ -143,19 +143,19 @@ let y = function(e) {
                 variant: "secondary",
                 text: g.intl.string(g.t["2jxGen"]),
                 onClick: () => {
-                  (0, h.R)("safety_flows_modal")
+                  (0, p.R)("safety_flows_modal")
                 }
               }), (0, a.jsx)(i.zxk, {
                 fullWidth: true,
                 text: g.intl.string(g.t["7NqTJi"]),
                 onClick: () => {
-                  S()
+                  T()
                 }
               })]
             })]
           }), null === y && null != n && (0, a.jsx)(_, {
             task: n,
-            handleSubmit: O,
+            handleSubmit: S,
             disabled: E
           })]
         })

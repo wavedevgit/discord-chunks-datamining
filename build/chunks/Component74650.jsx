@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 74650, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 97571 **/
+/** chunk id: 74650, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  U: () => h
+  U: () => x
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -18,54 +17,54 @@ var Chunk442837 = require("./442837.js"),
   Chunk716537 = require("./716537.js"),
   Chunk217379 = require("./217379.js");
 
-function h(e) {
+function x(e) {
   let {
     markAsDismissed: t,
     onCTA: n
-  } = e, h = (0, i.e7)([l.default], () => l.default.getCurrentUser()), m = (0, c.M5)(h, d.p9.TIER_2);
-  return (0, r.jsx)("div", {
-    className: _.popup,
-    children: (0, r.jsxs)("div", {
-      className: _.content,
-      children: [(0, r.jsx)(o.P3F, {
-        className: _.closeIcon,
-        onClick: () => t(u.L.USER_DISMISS),
-        children: (0, r.jsx)(o.Dio, {
+  } = e, x = (0, r.e7)([o.default], () => o.default.getCurrentUser()), f = (0, c.M5)(x, u.p9.TIER_2);
+  return (0, a.jsx)("div", {
+    className: p.popup,
+    children: (0, a.jsxs)("div", {
+      className: p.content,
+      children: [(0, a.jsx)(l.P3F, {
+        className: p.closeIcon,
+        onClick: () => t(d.L.USER_DISMISS),
+        children: (0, a.jsx)(l.Dio, {
           size: "xs"
         })
-      }), (0, r.jsx)("img", {
-        src: p,
+      }), (0, a.jsx)("img", {
+        src: h,
         alt: "",
-        className: _.asset
-      }), (0, r.jsxs)("div", {
-        children: [(0, r.jsx)(o.X6q, {
+        className: p.asset
+      }), (0, a.jsxs)("div", {
+        children: [(0, a.jsx)(l.X6q, {
           variant: "heading-md/semibold",
           color: "text-primary",
-          className: _.title,
-          children: f.intl.string(f.t["PRXV4+"])
-        }), (0, r.jsx)(o.Text, {
+          className: p.title,
+          children: m.intl.string(m.t["PRXV4+"])
+        }), (0, a.jsx)(l.Text, {
           variant: "text-sm/medium",
           color: "text-secondary",
-          children: f.intl.string(f.t.RSHtFx)
+          children: m.intl.string(m.t.RSHtFx)
         })]
-      }), m ? (0, r.jsx)(o.zxk, {
-        text: f.intl.string(f.t.LhcHi4),
+      }), f ? (0, a.jsx)(l.zxk, {
+        text: m.intl.string(m.t.LhcHi4),
         fullWidth: true,
         onClick: () => {
-          t(u.L.TAKE_ACTION), n()
+          t(d.L.TAKE_ACTION), n()
         }
-      }) : (0, r.jsx)(s.Z, {
+      }) : (0, a.jsx)(s.Z, {
         onClick: () => {
-          t(u.L.TAKE_ACTION)
+          t(d.L.TAKE_ACTION)
         },
         showGradient: true,
-        subscriptionTier: d.Si.TIER_2,
-        size: a.zx.Sizes.LARGE,
-        color: a.zx.Colors.CUSTOM,
+        subscriptionTier: u.Si.TIER_2,
+        size: i.zx.Sizes.LARGE,
+        color: i.zx.Colors.CUSTOM,
         textOptions: {
-          textOverride: f.intl.string(f.t.pj0XBA)
+          textOverride: m.intl.string(m.t.pj0XBA)
         },
-        className: _.button
+        className: p.button
       })]
     })
   })

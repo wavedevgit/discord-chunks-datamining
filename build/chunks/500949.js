@@ -1,10 +1,10 @@
-/** Chunk was on 10017 **/
+/** Chunk was on 97571 **/
 /** chunk id: 500949, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   $R: () => q,
   A0: () => et,
   GU: () => Y,
-  H8: () => $,
+  H8: () => J,
   HI: () => X,
   HW: () => B,
   Ib: () => eo,
@@ -12,7 +12,7 @@ require.d(exports, {
   S2: () => H,
   W6: () => ea,
   XM: () => er,
-  YC: () => eh,
+  YC: () => ep,
   YE: () => el,
   h9: () => es,
   iw: () => en,
@@ -22,7 +22,7 @@ require.d(exports, {
   rd: () => ed,
   t4: () => ec,
   uF: () => em,
-  zn: () => J
+  zn: () => $
 }), require("./467055.js"), require("./388685.js"), require("./35282.js"), require("./539854.js");
 var a, r, Chunk647438 = require("./647438.js"),
   Chunk973805 = require("./973805.js"),
@@ -119,7 +119,7 @@ let B = {
     XYZ_D65: Chunk856308.Z
   },
   G = Object.fromEntries(Object.keys(B).map(e => [e, e]));
-Object.values(B).forEach(e => I.Z.register(e));
+Object.values(B).forEach(e => w.Z.register(e));
 let {
   SemanticColors: z
 } = Chunk521904.V, V = z, H = CSS.supports("color", "color(display-p3 1 0 0)") && CSS.supports("color", "color(display-p3 1 0 0 / 1)");
@@ -166,13 +166,13 @@ function Y(e) {
 }
 
 function X(e) {
-  return (0, w.Z)((0, A.Z)(e, l.Z), {
+  return (0, R.Z)((0, A.Z)(e, l.Z), {
     format: "hex"
   })
 }
-var $ = ((a = {}).TOKENS = "Tokens", a.PALETTES = "Palettes", a);
+var J = ((a = {}).TOKENS = "Tokens", a.PALETTES = "Palettes", a);
 
-function J() {
+function $() {
   return function(e, t) {
     let [n, a] = W("".concat(e, "-states"), [t]), [r, l] = W("".concat(e, "-index"), 0), s = n[r], o = i.useCallback(e => {
       a(["function" == typeof e ? e(s) : e, ...n].slice(0, 20)), l(0)
@@ -223,24 +223,24 @@ function er(e) {
   }), u = (0, Z.CD)(c, "black", 1 - i, {
     space: o,
     outputSpace: l.Z
-  }), m = Math.floor(a / 2), h = a - m, p = (0, Z.w6)(d, c, {
+  }), m = Math.floor(a / 2), p = a - m, h = (0, Z.w6)(d, c, {
     steps: m,
     outputSpace: o,
     space: o,
     progression: e => e ** s
   }), x = (0, Z.w6)(u, c, {
-    steps: h,
+    steps: p,
     outputSpace: o,
     space: o,
     progression: e => e ** s
   }), f = [];
   for (let e = 0; e < m; e++) {
-    let t = p(e / m);
+    let t = h(e / m);
     f.push(t)
   }
   f.push(c);
-  for (let e = 1; e < h; e++) {
-    let t = x(1 - e / h);
+  for (let e = 1; e < p; e++) {
+    let t = x(1 - e / p);
     f.push(t)
   }
   return Object.fromEntries(f.map((e, n) => ["".concat(t, "-").concat(n), e]))
@@ -294,7 +294,7 @@ function em(e, t, n) {
   }), n)
 }
 
-function eh(e, t, n) {
+function ep(e, t, n) {
   ei(e, e => F(U({}, e), {
     steps: t
   }), n)

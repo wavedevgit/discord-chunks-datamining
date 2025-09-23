@@ -1,4 +1,4 @@
-/** Chunk was on 33358 **/
+/** Chunk was on 69310 **/
 /** chunk id: 695301, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -21,16 +21,16 @@ let b = Chunk647438.memo(function(e) {
   var t, n;
   let {
     guildNode: b,
-    lowerBadge: O
-  } = e, y = b.id, _ = (0, l.e7)([p.Z], () => p.Z.getGuild(y)), v = (0, a.E)(_), j = (0, l.e7)([f.Z], () => f.Z.isFocused()), x = (0, l.e7)([u.Z], () => u.Z.isUnavailable(y)), C = (0, c.Z)(e => e.guildId), E = (0, h.Z)(y), {
+    lowerBadge: _
+  } = e, O = b.id, y = (0, l.e7)([p.Z], () => p.Z.getGuild(O)), v = (0, a.E)(y), j = (0, l.e7)([f.Z], () => f.Z.isFocused()), x = (0, l.e7)([u.Z], () => u.Z.isUnavailable(O)), C = (0, c.Z)(e => e.guildId), E = (0, h.Z)(O), {
     badge: S,
-    unread: I,
-    isMentionLowImportance: P
+    unread: P,
+    isMentionLowImportance: I
   } = (0, l.cj)([d.default], () => ({
-    badge: d.default.getMentionCount(y),
-    isMentionLowImportance: d.default.getIsMentionLowImportance(y),
-    unread: d.default.hasUnread(y)
-  })), N = (0, s.Ij)(_) && 0 === S, w = i.useMemo(() => null != O ? O : N ? (0, r.jsx)("div", {
+    badge: d.default.getMentionCount(O),
+    isMentionLowImportance: d.default.getIsMentionLowImportance(O),
+    unread: d.default.hasUnread(O)
+  })), N = (0, s.Ij)(y) && 0 === S, w = i.useMemo(() => null != _ ? _ : N ? (0, r.jsx)("div", {
     className: m.pauseBackground,
     children: (0, r.jsx)(o.fpf, {
       size: "custom",
@@ -39,7 +39,7 @@ let b = Chunk647438.memo(function(e) {
       width: 10,
       height: 10
     })
-  }) : null, [O, N]);
+  }) : null, [_, N]);
   return (0, r.jsx)(g.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -58,14 +58,14 @@ let b = Chunk647438.memo(function(e) {
     }
     return e
   }({}, e), n = n = {
-    guild: _,
+    guild: y,
     unavailable: x,
     animatable: j,
-    selected: C === y,
+    selected: C === O,
     badge: S,
-    isMentionLowImportance: P,
+    isMentionLowImportance: I,
     lowerBadge: w,
-    unread: I,
+    unread: P,
     mediaState: E,
     guildJoinRequestStatus: v
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

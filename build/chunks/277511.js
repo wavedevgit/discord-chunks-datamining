@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 277511, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 93886 **/
+/** chunk id: 277511, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
 });
@@ -19,22 +18,22 @@ let c = {
     try {
       var t;
       let n = await r.tn.get({
-        url: l.ANM.USER_WISHLIST(e),
+        url: s.ANM.USER_WISHLIST(e),
         rejectWithError: true
       });
-      (null == (t = n.body) ? true : t.wishlist_items) == null && o.Z.captureMessage("Wishlist items not found in response");
-      let a = s.Z.fromServer(n.body);
+      (null == (t = n.body) ? true : t.wishlist_items) == null && l.Z.captureMessage("Wishlist items not found in response");
+      let o = a.Z.fromServer(n.body);
       i.Z.dispatch({
         type: "WISHLIST_FETCH_SUCCESS",
         wishlistId: e,
-        wishlistData: a
+        wishlistData: o
       })
     } catch (t) {
       i.Z.dispatch({
         type: "WISHLIST_FETCH_FAILURE",
         wishlistId: e,
-        error: new a.Hx(t)
-      }), o.Z.captureException(t)
+        error: new o.Hx(t)
+      }), l.Z.captureException(t)
     }
   },
   addSkuToWishlist(e, t) {

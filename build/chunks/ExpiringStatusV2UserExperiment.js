@@ -1,10 +1,9 @@
-/** Chunk was on web.js **/
-/** chunk id: 440051, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 97571 **/
+/** chunk id: 440051, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Y: () => r
+  Y: () => a
 });
-let r = (0, require("./818083.js").B)({
+let a = (0, require("./818083.js").B)({
   kind: "user",
   id: "2025-01_expiring_status_v2",
   label: "Expiring status Experiment V2",

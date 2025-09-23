@@ -1,7 +1,7 @@
 /** Chunk was on 37786 **/
 /** chunk id: 381507, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => f
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -16,7 +16,7 @@ var Chunk780384 = require("./780384.js"),
   Chunk268685 = require("./268685.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk584683 = require("./584683.js");
-let h = () => {
+let f = () => {
   let e = (0, Chunk105759.Z)(),
     {
       avatarSrc: t,
@@ -26,10 +26,10 @@ let h = () => {
       size: Chunk268685.EF.SIZE_32,
       animateOnHover: true
     }),
-    h = (0, Chunk410030.Fg)(),
-    f = (0, Chunk780384.ap)(h),
+    f = (0, Chunk410030.Fg)(),
+    h = (0, Chunk780384.ap)(f),
     x = Chunk51144.ZP.getName(module),
-    m = f ? Chunk898969.Z : Chunk703614.Z;
+    m = h ? Chunk898969.Z : Chunk703614.Z;
   return null == module ? null : (0, Chunk951288.jsxs)("div", {
     className: Chunk584683.attributionBannerContainer,
     children: [(0, Chunk951288.jsx)("div", {

@@ -1,4 +1,4 @@
-/** Chunk was on 10017 **/
+/** Chunk was on 97571 **/
 /** chunk id: 282003, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   k: () => g
@@ -49,10 +49,10 @@ function b(e, t) {
   }), e
 }
 let g = () => {
-    let [e, t] = Chunk647438.useState(Chunk474936.p9.TIER_0), [n, g] = Chunk647438.useState(Chunk45474.R.WHAT_YOU_LOSE), [v, _] = Chunk647438.useState(null), [y, C] = Chunk647438.useState(Chunk474936.Xh.PREMIUM_MONTH_TIER_0), [E, N] = Chunk647438.useState([]), [S, O] = Chunk647438.useState(() => {
+    let [e, t] = Chunk647438.useState(Chunk474936.p9.TIER_0), [n, g] = Chunk647438.useState(Chunk45474.R.WHAT_YOU_LOSE), [j, _] = Chunk647438.useState(null), [y, C] = Chunk647438.useState(Chunk474936.Xh.PREMIUM_MONTH_TIER_0), [E, N] = Chunk647438.useState([]), [T, S] = Chunk647438.useState(() => {
       let e = new Date;
       return module.setMonth(module.getMonth() + 1), module
-    }), [T, P] = Chunk647438.useState(null), [k, R] = Chunk647438.useState(false), [I, w] = Chunk647438.useState(false), [A, Z] = Chunk647438.useState(false);
+    }), [O, P] = Chunk647438.useState(null), [I, k] = Chunk647438.useState(false), [w, R] = Chunk647438.useState(false), [A, Z] = Chunk647438.useState(false);
     (0, Chunk647438.useEffect)(() => {
       (0, Chunk821849.Y2)()
     }, []), (0, Chunk647438.useEffect)(() => {
@@ -68,7 +68,7 @@ let g = () => {
         case Chunk474936.Xh.PREMIUM_YEAR_TIER_2:
           module.setFullYear(module.getFullYear() + 1)
       }
-      O(module)
+      S(module)
     }, [y]), (0, Chunk647438.useEffect)(() => {
       switch (module) {
         case Chunk474936.p9.TIER_0:
@@ -99,7 +99,7 @@ let g = () => {
           }]), C(Chunk474936.Xh.PREMIUM_MONTH_TIER_2)
       }
     }, [module]), (0, Chunk647438.useEffect)(() => {
-      [Chunk45474.R.CONFIRM_DISCOUNT, Chunk45474.R.DISCOUNT_APPLIED].includes(require) && null === v && _(j()), require === Chunk45474.R.PREVIEW && null === T && P(new Chunk146528.Z({
+      [Chunk45474.R.CONFIRM_DISCOUNT, Chunk45474.R.DISCOUNT_APPLIED].includes(require) && null === j && _(v()), require === Chunk45474.R.PREVIEW && null === O && P(new Chunk146528.Z({
         id: "",
         invoiceItems: [{
           id: "",
@@ -121,25 +121,25 @@ let g = () => {
         tax: 0,
         taxInclusive: true,
         subscriptionPeriodStart: new Date,
-        subscriptionPeriodEnd: S,
+        subscriptionPeriodEnd: T,
         status: Chunk981631.hUK.PAID
-      })), require !== Chunk45474.R.PREVIEW && null !== T && P(null)
-    }, [require, v, S, y, T]);
+      })), require !== Chunk45474.R.PREVIEW && null !== O && P(null)
+    }, [require, j, T, y, O]);
     let D = Chunk647438.useCallback(async () => {
       Z(true), await (0, Chunk481060.ZDy)(async () => t => (0, a.jsx)(u.x, b(f({}, t), {
         onClose: () => {
           t.onClose(), Z(false)
         },
         premiumType: e,
-        churnDiscount: v,
+        churnDiscount: j,
         planId: y,
-        renewalInvoice: T,
+        renewalInvoice: O,
         renewalInvoiceDetails: {
-          intervalType: p.rV.MONTH,
+          intervalType: h.rV.MONTH,
           intervalCount: 1
         },
-        errorOnCancel: k,
-        errorOnRedeem: I,
+        errorOnCancel: I,
+        errorOnRedeem: w,
         setActiveStep: e => {
           g(e), t.onClose()
         },
@@ -152,7 +152,7 @@ let g = () => {
           createdAt: new Date,
           canceledAt: null,
           currentPeriodStart: new Date,
-          currentPeriodEnd: S,
+          currentPeriodEnd: T,
           status: m.O0b.ACTIVE,
           paymentSourceId: null,
           paymentGateway: null,
@@ -164,10 +164,10 @@ let g = () => {
           streakStartedAt: null,
           currency: x.pK.USD,
           pauseEndsAt: null,
-          pauseReason: h.Id.UNKNOWN
+          pauseReason: p.Id.UNKNOWN
         }
       })))
-    }, [module, v, y, T, k, I, require, S]);
+    }, [module, j, y, O, I, w, require, T]);
     return (0, Chunk647438.useEffect)(() => {
       A && D()
     }, [require, A, D]), (0, Chunk951288.jsxs)(Chunk237012.$0, {
@@ -243,26 +243,26 @@ let g = () => {
           })]
         }), (0, Chunk951288.jsx)(Chunk237012.BZ, {
           children: (0, Chunk951288.jsx)(Chunk481060.XZJ, {
-            checked: null !== v,
+            checked: null !== j,
             onChange: () => {
-              if (null === v) return void _(j());
+              if (null === j) return void _(v());
               _(null)
             },
             label: "Churn Discount"
           })
         }), (0, Chunk951288.jsx)(Chunk237012.BZ, {
           children: (0, Chunk951288.jsx)(Chunk481060.XZJ, {
-            checked: I,
+            checked: w,
             onChange: () => {
-              w(!I)
+              R(!w)
             },
             label: "Error on Redeem Offer"
           })
         }), (0, Chunk951288.jsx)(Chunk237012.BZ, {
           children: (0, Chunk951288.jsx)(Chunk481060.XZJ, {
-            checked: k,
+            checked: I,
             onChange: () => {
-              R(!k)
+              k(!I)
             },
             label: "Error on Cancel"
           })
@@ -280,7 +280,7 @@ let g = () => {
       })]
     })
   },
-  j = function() {
+  v = function() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {},
       {
         discount: t = {}

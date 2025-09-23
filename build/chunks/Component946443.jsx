@@ -1,9 +1,9 @@
-/** Chunk was on 33358 **/
+/** Chunk was on 69310 **/
 /** chunk id: 946443, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   QP: () => N,
   ZP: () => S,
-  h6: () => P
+  h6: () => I
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -30,15 +30,15 @@ var Chunk951288 = require("./951288.js"),
   Chunk77902 = require("./77902.js");
 
 function S(e) {
-  var t, n, l, a, y, S, P;
+  var t, n, l, a, O, S, I;
   let {
     onJump: N,
     showTutorial: w,
     setSeenTutorial: Z,
     closePopout: T
   } = e, A = i.useRef(null), [R, D] = (0, j.ZP)(A), {
-    loadState: L,
-    channels: M
+    loadState: M,
+    channels: L
   } = R, {
     maybeLoadMore: k
   } = D, U = (0, u.e7)([h.Z], () => h.Z.messageGroupSpacing);
@@ -63,17 +63,17 @@ function S(e) {
     (a.offsetTop < s || a.offsetTop > s + c) && i.scrollTo({
       to: a.offsetTop
     })
-  }), a = R, y = D, i.useEffect(() => {
+  }), a = R, O = D, i.useEffect(() => {
     let e = () => {
       let e = a.channels.find(e => !e.collapsed);
-      null != e && y.markChannelRead(e)
+      null != e && O.markChannelRead(e)
     };
     return b.S.subscribe(x.CkL.MARK_TOP_INBOX_CHANNEL_READ, e), () => {
       b.S.unsubscribe(x.CkL.MARK_TOP_INBOX_CHANNEL_READ, e)
     }
-  }, [y, a.channels]), S = D, i.useEffect(() => {
+  }, [O, a.channels]), S = D, i.useEffect(() => {
     let e = e => {
-      ((0, O.isMac)() || (0, O.isMacWeb)() ? e.metaKey : e.ctrlKey) && !e.shiftKey && !e.altKey && "z" === e.key && S.undoMarkChannelRead()
+      ((0, _.isMac)() || (0, _.isMacWeb)() ? e.metaKey : e.ctrlKey) && !e.shiftKey && !e.altKey && "z" === e.key && S.undoMarkChannelRead()
     };
     return document.addEventListener("keydown", e), () => {
       document.removeEventListener("keydown", e)
@@ -88,11 +88,11 @@ function S(e) {
     b.S.unsubscribe(x.CkL.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead)
   }));
   let G = (0, g.Z)("unreads", A);
-  if (0 === M.length) {
-    return (0, r.jsx)(_.Z, {
+  if (0 === L.length) {
+    return (0, r.jsx)(y.Z, {
       Icon: d.xx7,
       header: C.intl.string(C.t["6XMM+P"]),
-      tip: (null == (P = s().os) ? true : P.family) === "OS X" ? C.intl.string(C.t.w9uDOT) : C.intl.string(C.t.BiUJCw)
+      tip: (null == (I = s().os) ? true : I.family) === "OS X" ? C.intl.string(C.t.w9uDOT) : C.intl.string(C.t.BiUJCw)
     })
   }
   return (0, r.jsx)(c.bG, {
@@ -140,11 +140,11 @@ function S(e) {
             A.current = e, i.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
           }
         }, l), n = n = {
-          onScroll: L === j.jd.Done ? true : k,
+          onScroll: M === j.jd.Done ? true : k,
           className: o()(E.scroller, "group-spacing-".concat(U)),
-          children: [w ? (0, r.jsx)(I, {
+          children: [w ? (0, r.jsx)(P, {
             setSeenTutorial: Z
-          }) : null, (0, v.Z)(M, D, N), L === j.jd.Done ? null : (0, r.jsx)(d.$jN, {
+          }) : null, (0, v.Z)(L, D, N), M === j.jd.Done ? null : (0, r.jsx)(d.$jN, {
             className: E.spinner
           })]
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -162,7 +162,7 @@ function S(e) {
   })
 }
 
-function I(e) {
+function P(e) {
   let {
     setSeenTutorial: t
   } = e;
@@ -197,7 +197,7 @@ function I(e) {
   })
 }
 
-function P() {
+function I() {
   return (0, Chunk951288.jsx)(Chunk240126.Z, {
     Icon: Chunk481060.xx7,
     disableStars: true,

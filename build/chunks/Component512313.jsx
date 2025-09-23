@@ -1,4 +1,4 @@
-/** Chunk was on 10017 **/
+/** Chunk was on 97571 **/
 /** chunk id: 512313, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -27,9 +27,9 @@ function u(e) {
     setting: t,
     children: n,
     depth: s
-  } = e, [m, h] = r.useState(1 === s), p = r.useCallback(() => {
-    h(!m)
-  }, [m, h]);
+  } = e, [m, p] = r.useState(1 === s), h = r.useCallback(() => {
+    p(!m)
+  }, [m, p]);
   if (0 === n.length) return (0, a.jsx)("div", {
     style: {
       marginLeft: 8 * s
@@ -55,7 +55,7 @@ function u(e) {
     className: c.settingNode,
     children: [(0, a.jsxs)(l.P3F, {
       className: c.headerBar,
-      onClick: p,
+      onClick: h,
       children: [(0, a.jsx)(d, {
         setting: t,
         hasChildren: n.length > 0

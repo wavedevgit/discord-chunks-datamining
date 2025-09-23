@@ -1,4 +1,4 @@
-/** Chunk was on 33358 **/
+/** Chunk was on 69310 **/
 /** chunk id: 620304, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -28,7 +28,7 @@ function j(e) {
     guild: t,
     withMargin: l
   } = e, j = (0, b.Z)(t, "GuildPowerupsProgressBar"), x = (0, m.Z)(t.id), C = i.useCallback(() => {
-    (0, O.Z)(t.id, p.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY)
+    (0, _.Z)(t.id, p.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY)
   }, [t.id]), E = (0, c.e7)([h.Z], () => {
     var e;
     return null != (e = h.Z.getCountForGuild(t.id)) ? e : 0
@@ -37,7 +37,7 @@ function j(e) {
     E !== t.premiumSubscriberCount && (0, f.v)(t.id, t.premiumSubscriberCount)
   }, [t.id, E, t.premiumSubscriberCount]);
   let S = Math.min(E / j * 100, 100),
-    [I, P] = (0, u.q_F)(() => ({
+    [P, I] = (0, u.q_F)(() => ({
       width: E === t.premiumSubscriberCount ? "calc(".concat(S, "% - 4px)") : "0%",
       config: {
         tension: 250,
@@ -46,10 +46,10 @@ function j(e) {
       }
     }), "respect-motion-settings", [E, t.premiumSubscriberCount]);
   i.useEffect(() => {
-    P({
+    I({
       width: "calc(".concat(S, "% - 4px)")
     })
-  }, [S, P]);
+  }, [S, I]);
   let N = E >= j;
   return (0, r.jsx)(u.P3F, {
     "aria-label": true,
@@ -113,7 +113,7 @@ function j(e) {
         className: o()(v.progress, {
           [v.progressLow]: S <= 5
         }),
-        style: I
+        style: P
       }), (0, r.jsxs)("div", {
         className: v.textContainer,
         children: [(0, r.jsxs)("div", {
@@ -121,7 +121,7 @@ function j(e) {
           children: [(0, r.jsx)(s.xvT, {
             className: v.text,
             variant: "text-xs/semibold",
-            children: _.intl.string(y.default.NI6IhY)
+            children: y.intl.string(O.default.NI6IhY)
           }), t.premiumSubscriberCount >= j && (0, r.jsx)(s.xvT, {
             className: v.text,
             variant: "text-xs/semibold",
@@ -132,9 +132,9 @@ function j(e) {
           children: [(0, r.jsx)(s.xvT, {
             className: o()(v.text, v.boostCountText),
             variant: "text-xs/semibold",
-            children: N ? _.intl.formatToPlainString(y.default["Ehpq+/"], {
+            children: N ? y.intl.formatToPlainString(O.default["Ehpq+/"], {
               appliedBoostCount: E
-            }) : _.intl.formatToPlainString(y.default["/rbPDg"], {
+            }) : y.intl.formatToPlainString(O.default["/rbPDg"], {
               appliedBoostCount: E,
               maxBoostCount: j
             })

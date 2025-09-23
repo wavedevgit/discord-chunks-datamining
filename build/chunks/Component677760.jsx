@@ -128,9 +128,9 @@ function T(e) {
     return i
   }(e, ["children", "cardChildren", "startAnimHeightPx", "innerStyle"]), [d, h] = i.useState(C(c)), {
     ref: g,
-    height: m
-  } = (0, u.ZP)(), p = (0, o.q_F)({
-    height: null != m && 0 !== m ? "".concat(m, "px") : "".concat(s, "px"),
+    height: p
+  } = (0, u.ZP)(), m = (0, o.q_F)({
+    height: null != p && 0 !== p ? "".concat(p, "px") : "".concat(s, "px"),
     config: l.config.stiff
   });
   return i.useEffect(() => {
@@ -138,10 +138,10 @@ function T(e) {
     e !== d && h(e)
   }, [c, d]), (0, r.jsxs)(l.animated.div, {
     className: N.inviteCard,
-    style: p,
+    style: m,
     children: [(0, r.jsx)(l.animated.div, {
       className: N.inviteChildContainer,
-      style: p,
+      style: m,
       children: (0, r.jsx)("section", {
         ref: g,
         className: null == a ? true : a(d),
@@ -151,7 +151,7 @@ function T(e) {
   })
 }
 
-function P(e) {
+function Z(e) {
   let {
     invite: t
   } = e;
@@ -165,7 +165,7 @@ function P(e) {
   })) : null
 }
 
-function Z(e) {
+function P(e) {
   let {
     invite: t
   } = e, n = {
@@ -214,9 +214,9 @@ function R(e) {
     className: N.splashBackground,
     style: l,
     contentClassName: N.centerAuthBoxContent,
-    children: [(0, r.jsx)(Z, S(O({}, e), {
+    children: [(0, r.jsx)(P, S(O({}, e), {
       onAcceptInvite: n
-    })), (0, r.jsx)(P, O({}, e))]
+    })), (0, r.jsx)(Z, O({}, e))]
   })
 }
 
@@ -224,11 +224,11 @@ function L(e) {
   let {
     inviteKey: t,
     transitionTo: n
-  } = e, l = (0, s.e7)([m.Z], () => m.Z.getInvite(t));
+  } = e, l = (0, s.e7)([p.Z], () => p.Z.getInvite(t));
   return i.useEffect(() => {
     (0, h.e)("invite_mobile")
   }, []), i.useEffect(() => {
-    null != l && l.state === j.r2o.RESOLVED && p.default.track(j.rMx.INVITE_VIEWED, {
+    null != l && l.state === j.r2o.RESOLVED && m.default.track(j.rMx.INVITE_VIEWED, {
       invite_code: t,
       friends_count: null == l ? true : l.friends_count
     }, {
@@ -239,7 +239,7 @@ function L(e) {
     onAcceptInvite: e => {
       ! function(e, t, n) {
         var r, i, l;
-        null == e || e.preventDefault(), p.default.track(j.rMx.INVITE_APP_OPENED, {
+        null == e || e.preventDefault(), m.default.track(j.rMx.INVITE_APP_OPENED, {
           invite_code: (0, x.jX)(t),
           guild_id: null == n || null == (r = n.guild) ? true : r.id,
           channel_id: null == n || null == (i = n.channel) ? true : i.id,

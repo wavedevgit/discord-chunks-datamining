@@ -1,4 +1,4 @@
-/** Chunk was on 80037 **/
+/** Chunk was on 16820 **/
 /** chunk id: 742603, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => G
@@ -73,7 +73,7 @@ function B(e, t) {
   }), e
 }
 
-function V(e) {
+function H(e) {
   let {
     focusedParticipant: t,
     channel: n
@@ -89,7 +89,7 @@ function V(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   let {
     user: t,
     channel: n,
@@ -111,7 +111,7 @@ function F(e) {
   })
 }
 
-function H(e) {
+function F(e) {
   let t, {
       focusedApplication: n,
       focusedParticipant: i,
@@ -132,7 +132,7 @@ function H(e) {
       variant: "text-md/normal",
       color: "none",
       children: (0, u.Z)(n.name)
-    }), a && (0, r.jsx)(V, {
+    }), a && (0, r.jsx)(H, {
       channel: l,
       focusedParticipant: i
     })]
@@ -143,12 +143,12 @@ function H(e) {
     t = (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(C.ZP.Divider, {
         className: L.divider
-      }), (0, r.jsx)(F, {
+      }), (0, r.jsx)(V, {
         user: e,
         channel: l,
         stream: n,
         color: a ? "header-primary" : "none"
-      }), a && (0, r.jsx)(V, {
+      }), a && (0, r.jsx)(H, {
         channel: l,
         focusedParticipant: i
       })]
@@ -181,7 +181,7 @@ function G(e) {
   let Z = (0, a.e7)([p.Z], () => p.Z.getChannelStatus(t)),
     N = t.isGuildVoice() && c && null != Z && Z.length > 0,
     M = (0, I.ZP)(t),
-    V = N ? (0, r.jsx)(o.ua7, {
+    H = N ? (0, r.jsx)(o.ua7, {
       text: k.intl.string(k.t.Mgpxi4),
       delay: 500,
       position: "bottom",
@@ -190,7 +190,7 @@ function G(e) {
         className: l()(L.channelStatusClickable, {
           [L.hoverable]: M
         }),
-        onClick: M ? F : true,
+        onClick: M ? V : true,
         children: [(0, r.jsx)(o.Text, {
           variant: "text-xs/normal",
           className: l()(L.channelStatus, D.markup, {
@@ -209,7 +209,7 @@ function G(e) {
       }))
     }) : null;
 
-  function F() {
+  function V() {
     (0, o.ZDy)(async () => {
       let {
         default: e
@@ -234,7 +234,7 @@ function G(e) {
         className: l()(e, L.headerBar),
         innerClassName: L.headerBarChildren,
         toolbarClassName: L.toolbar,
-        childrenBottom: V,
+        childrenBottom: H,
         toolbar: (0, r.jsx)(T.Z, {
           channel: t,
           appContext: s,
@@ -261,7 +261,7 @@ function G(e) {
         }), (0, r.jsx)(v.TS, {
           channel: t,
           guild: i
-        }), (0, r.jsx)(H, {
+        }), (0, r.jsx)(F, {
           focusedApplication: E,
           focusedParticipant: g,
           channel: t

@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 253887, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 97571 **/
+/** chunk id: 253887, original params: e,t,n (module,exports,require) **/
 module.exports = {
   variantsPanel: "variantsPanel__5e616",
   variantLabel: "variantLabel__5e616",

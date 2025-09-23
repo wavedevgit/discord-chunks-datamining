@@ -1,7 +1,7 @@
-/** Chunk was on 10017 **/
+/** Chunk was on 97571 **/
 /** chunk id: 912072, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => p
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk551986 = require("./551986.js"),
   Chunk866403 = require("./866403.js");
 
-function h(e) {
+function p(e) {
   let {
     devSettingsCategory: t
   } = e, n = (0, s.e7)([d.ZP], () => d.ZP.allByCategory(t), [t], s.pF), i = r.useMemo(() => n.map(e => {

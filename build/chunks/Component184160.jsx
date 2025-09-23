@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk512722 = require("./512722.js"),
-  l = require.n(Chunk512722),
+  o = require.n(Chunk512722),
   Chunk780384 = require("./780384.js"),
   Chunk755721 = require("./755721.js"),
   Chunk410030 = require("./410030.js"),
@@ -30,30 +30,30 @@ function x(e) {
     startedPaymentFlowWithPaymentSourcesRef: b
   } = (0, u.JL)(), {
     isGift: g
-  } = (0, c.wD)(), L = null != x ? (0, d.Af)(x) : null, y = null != L ? (0, d.gq)(L.planId) : null, S = null != L ? (0, d.Rd)(L.planId) : null, v = (0, _.Kp)({
+  } = (0, c.wD)(), L = null != x ? (0, d.Af)(x) : null, y = null != L ? (0, d.gq)(L.planId) : null, v = null != L ? (0, d.Rd)(L.planId) : null, S = (0, _.Kp)({
     isTrial: false,
     isGift: g,
     selectedSkuId: m,
     startedPaymentFlowWithPaymentSources: b.current
   });
-  return l()(null != S, "Expected premium type"), (0, r.jsx)(C.Z, {
-    premiumType: S,
-    titleText: h.intl.string(h.t["7VcWW1"]),
-    subtitleText: h.intl.format(h.t.Qk34Ii, {
+  return o()(null != v, "Expected premium type"), (0, r.jsx)(C.Z, {
+    premiumType: v,
+    titleText: f.intl.string(f.t["7VcWW1"]),
+    subtitleText: f.intl.format(f.t.Qk34Ii, {
       subscriptionName: y
     }),
     footer: (0, r.jsxs)("div", {
-      className: f.whatYouLoseButtonContainer,
-      children: [(0, r.jsx)(a.zx, {
+      className: h.whatYouLoseButtonContainer,
+      children: [(0, r.jsx)(l.zx, {
         onClick: () => {
-          v ? (j((0, _.nA)(m, x)), t(p.h8.REVIEW)) : t(p.h8.PLAN_SELECT)
+          S ? (j((0, _.nA)(m, x)), t(p.h8.REVIEW)) : t(p.h8.PLAN_SELECT)
         },
-        children: h.intl.string(h.t["3PatS0"])
-      }), (0, r.jsx)(a.zx, {
-        look: a.zx.Looks.LINK,
-        color: (0, o.wj)(i) ? a.zx.Colors.WHITE : a.zx.Colors.PRIMARY,
+        children: f.intl.string(f.t["3PatS0"])
+      }), (0, r.jsx)(l.zx, {
+        look: l.zx.Looks.LINK,
+        color: (0, a.wj)(i) ? l.zx.Colors.WHITE : l.zx.Colors.PRIMARY,
         onClick: n,
-        children: h.intl.string(h.t.h9tkAA)
+        children: f.intl.string(f.t.h9tkAA)
       })]
     }),
     onClose: n,

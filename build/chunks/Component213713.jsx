@@ -1,4 +1,4 @@
-/** Chunk was on 10017 **/
+/** Chunk was on 97571 **/
 /** chunk id: 213713, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => A
@@ -32,14 +32,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk206583 = require("./206583.js"),
   Chunk639488 = require("./639488.js"),
   Chunk866403 = require("./866403.js");
-let I = [{
+let w = [{
   key: "type",
   cellClassName: l()(Chunk639488.cell, Chunk639488.cellType),
   render(e) {
     let {
       type: t
     } = e;
-    return (0, a.jsx)(h.Text, {
+    return (0, a.jsx)(p.Text, {
       variant: "text-md/semibold",
       children: c.s[t]
     })
@@ -52,7 +52,7 @@ let I = [{
       entries: t
     } = e;
     return (0, a.jsx)("div", {
-      children: (0, a.jsx)(h.Text, {
+      children: (0, a.jsx)(p.Text, {
         variant: "text-md/normal",
         children: t.length
       })
@@ -65,24 +65,24 @@ let I = [{
     let {
       type: t
     } = e;
-    return (0, a.jsx)(w, {
+    return (0, a.jsx)(R, {
       type: t
     })
   }
 }];
 
-function w(e) {
+function R(e) {
   var t, n;
   let {
     type: r
   } = e, i = (0, u.e7)([N.Z], () => N.Z.getFilters()), l = null != (n = null == i || null == (t = i.types) ? true : t.has(r)) && n;
-  return (0, a.jsx)(h.XZJ, {
+  return (0, a.jsx)(p.XZJ, {
     checked: l,
     onChange: function() {
-      l ? p.Z.dispatch({
+      l ? h.Z.dispatch({
         type: "CONTENT_INVENTORY_SET_FILTERS",
         filters: true
-      }) : p.Z.dispatch({
+      }) : h.Z.dispatch({
         type: "CONTENT_INVENTORY_SET_FILTERS",
         filters: {
           types: new Set([r])
@@ -112,11 +112,11 @@ function A() {
       var e;
       return (null == (e = Chunk146282.Z.getFeedState(Chunk206583.YN.GLOBAL_FEED)) ? true : module.loading) === true
     }),
-    [w, A] = Chunk647438.useState(""),
+    [R, A] = Chunk647438.useState(""),
     D = (0, Chunk442837.e7)([Chunk77498.Z, Chunk812206.Z], () => {
       var e, t, n;
-      return parseInt(w) > 0 ? w : null != (n = null == (e = Chunk77498.Z.getGameByName(w)) ? true : module.id) ? require : null == (t = Chunk812206.Z.getApplicationByName(w)) ? true : exports.id
-    }, [w]),
+      return parseInt(R) > 0 ? R : null != (n = null == (e = Chunk77498.Z.getGameByName(R)) ? true : module.id) ? require : null == (t = Chunk812206.Z.getApplicationByName(R)) ? true : exports.id
+    }, [R]),
     L = (0, Chunk168524.Z)({
       applicationId: D,
       location: "DevToolsContentInventory",
@@ -139,7 +139,7 @@ function A() {
         children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
           children: "Inventory"
         }), Chunk392711.length > 0 && (0, Chunk951288.jsx)(Chunk681619.Z, {
-          columns: I,
+          columns: w,
           data: Chunk392711
         }), (0, Chunk951288.jsx)(Chunk481060.LZC, {
           size: 8
@@ -209,9 +209,9 @@ function A() {
           placeholder: "App ID or full name",
           onChange: e => (0 === e.length || e.length >= 18) && A(e),
           onKeyDown: e => {
-            "Enter" === e.key && (w === e.currentTarget.value ? null == L || L(e) : A(e.currentTarget.value))
+            "Enter" === e.key && (R === e.currentTarget.value ? null == L || L(e) : A(e.currentTarget.value))
           },
-          error: w.length > 0 && null == L ? "No game profile for ".concat(null != D ? D : w + " - try by id", ".") : true,
+          error: R.length > 0 && null == L ? "No game profile for ".concat(null != D ? D : R + " - try by id", ".") : true,
           successMessage: null != L ? "Game profile found" : true
         }), (0, Chunk951288.jsx)("ul", {
           children: U.map(e => (0, a.jsx)("li", {
@@ -233,7 +233,7 @@ function A() {
           })),
           isSelected: e => e === F,
           select: function(e) {
-            p.Z.dispatch({
+            h.Z.dispatch({
               type: "CONTENT_INVENTORY_FORCE_SHOW_GAME_SHARING",
               gameToShow: e
             })
@@ -248,18 +248,18 @@ function A() {
 let Z = e => {
   let {
     application: t
-  } = e, n = (0, v.Z)({
+  } = e, n = (0, j.Z)({
     applicationId: t.id,
     location: "DevToolsContentInventory",
-    source: j.m1.DevTools
+    source: v.m1.DevTools
   });
-  return (0, a.jsx)(h.P3F, {
+  return (0, a.jsx)(p.P3F, {
     onClick: n,
     style: {
       margin: "2px",
       cursor: "pointer"
     },
-    children: (0, a.jsx)(h.Text, {
+    children: (0, a.jsx)(p.Text, {
       variant: "text-xs/normal",
       color: "text-muted",
       children: t.name

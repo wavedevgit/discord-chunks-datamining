@@ -1,4 +1,4 @@
-/** Chunk was on 33358 **/
+/** Chunk was on 69310 **/
 /** chunk id: 37772, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => B
@@ -77,7 +77,7 @@ let B = Chunk647438.memo(function e(t) {
       channel: l,
       message: s,
       compact: R = false,
-      className: M,
+      className: L,
       onContextMenu: B,
       onClick: V,
       disableInteraction: H = false,
@@ -99,7 +99,7 @@ let B = Chunk647438.memo(function e(t) {
     {
       content: er,
       hasSpoilerEmbeds: ei
-    } = (0, I.Z)(s, {
+    } = (0, P.Z)(s, {
       hideSimpleEmbedContent: Q && J,
       allowList: ee,
       allowHeading: ee,
@@ -110,28 +110,28 @@ let B = Chunk647438.memo(function e(t) {
     eo = (0, a.e7)([g.Z], () => s.hasFlag(D.iLy.HAS_THREAD) && g.Z.getChannel(b.default.castMessageIdAsChannelId(s.id))),
     ea = s.type === D.uaV.THREAD_STARTER_MESSAGE && Y.state === f.Y.LOADED && null != q,
     es = !ea && true === i,
-    ec = (0, P.Z)({
+    ec = (0, I.Z)({
       message: s,
       channel: l,
       enabled: es
     }),
     eu = (0, c.v)(s),
-    ed = (0, O.ro)(s.id, s.channel_id),
+    ed = (0, _.ro)(s.id, s.channel_id),
     ep = (0, p.Z)(s),
     ef = (0, E.iG)(s);
   return ea ? (0, r.jsx)(e, G(U({}, t), {
     message: Y.message,
     channel: q,
     hasThread: false
-  })) : (m.Z.isBlockedForMessage(s) ? i = L.t["+FcYMz"] : m.Z.isIgnoredForMessage(s) ? i = L.t.VFWjc3 : (0, _.DQ)(s) && W && (i = L.t.xfkfTE), true !== i) ? (0, r.jsx)(F, {
-    className: M,
+  })) : (m.Z.isBlockedForMessage(s) ? i = M.t["+FcYMz"] : m.Z.isIgnoredForMessage(s) ? i = M.t.VFWjc3 : (0, y.DQ)(s) && W && (i = M.t.xfkfTE), true !== i) ? (0, r.jsx)(F, {
+    className: L,
     compact: R,
     count: 1,
     collapsedReason: i
   }) : (0, r.jsx)(C.Z, {
     compact: R,
-    className: o()(M, {
-      [k.ephemeral]: (0, y.Pv)(s),
+    className: o()(L, {
+      [k.ephemeral]: (0, O.Pv)(s),
       [k.disableInteraction]: H,
       [k.groupStart]: t.isGroupStart
     }),
@@ -174,7 +174,7 @@ let B = Chunk647438.memo(function e(t) {
     messageRef: ec,
     author: el,
     "aria-labelledby": ef,
-    "aria-roledescription": L.intl.string(L.t.BAB0yM)
+    "aria-roledescription": M.intl.string(M.t.BAB0yM)
   })
 });
 
@@ -191,15 +191,15 @@ function F(e) {
     role: "group",
     childrenMessageContent: (0, r.jsx)(R.Z, {
       compact: i,
-      className: M.blockedSystemMessage,
+      className: L.blockedSystemMessage,
       iconNode: (0, r.jsx)(s.Dio, {
         size: "md",
         color: "currentColor",
-        className: M.blockedIcon
+        className: L.blockedIcon
       }),
       children: (0, r.jsx)("div", {
-        className: M.blockedMessageText,
-        children: L.intl.format(l, {
+        className: L.blockedMessageText,
+        children: M.intl.format(l, {
           count: n
         })
       })

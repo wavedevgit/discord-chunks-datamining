@@ -1,4 +1,4 @@
-/** Chunk was on 47387 **/
+/** Chunk was on 56785 **/
 /** chunk id: 400321, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => a
@@ -13,23 +13,23 @@ function a(e) {
     context: n,
     canvasWidth: a,
     canvasHeight: o,
-    fallbackColor: u,
+    fallbackColor: c,
     outlineColorDark: s,
-    outlineColorLight: c,
+    outlineColorLight: u,
     linesDrawnAt: d,
     deadDrawables: f
   } = e;
   null == d.current[t.id] && (d.current[t.id] = Date.now()), n.lineCap = "round", n.lineJoin = "round";
   let p = t.points.map(e => (0, r.RR)(e, a, o)),
     m = d.current[t.id],
-    E = e => m + e.deltaTime + 1500 >= Date.now(),
-    g = e => m + e.deltaTime <= Date.now() && E(e),
+    _ = e => m + e.deltaTime + 1500 >= Date.now(),
+    g = e => m + e.deltaTime <= Date.now() && _(e),
     b = p.find(g);
   if (null == b) {
-    E(t.points[t.points.length - 1]) || f.push(t);
+    _(t.points[t.points.length - 1]) || f.push(t);
     return
   }
-  let S = (e, t) => {
+  let v = (e, t) => {
       let r = null;
       n.lineWidth = t * window.devicePixelRatio, n.strokeStyle = e, n.beginPath(), n.moveTo(b.x, b.y);
       for (let e = 1; e < p.length; e++) {
@@ -39,10 +39,10 @@ function a(e) {
       return n.stroke(), r
     },
     {
-      fillColor: v,
-      outlineColor: O
-    } = (0, r.bg)(t.userId, s, c, u),
-    h = S(O, 6 + i.q2),
-    y = null != h && g(h);
-  y && (0, l.I)(n, h.x, h.y, O, i.q2), S(v, 6), y && (0, l.T)(n, h.x, h.y, t.userId)
+      fillColor: E,
+      outlineColor: h
+    } = (0, r.bg)(t.userId, s, u, c),
+    y = v(h, 6 + l.q2),
+    S = null != y && g(y);
+  S && (0, i.I)(n, y.x, y.y, h, l.q2), v(E, 6), S && (0, i.T)(n, y.x, y.y, t.userId)
 }

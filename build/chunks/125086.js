@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 125086, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 97571 **/
+/** chunk id: 125086, original params: e,t,n (module,exports,require) **/
 module.exports = {
   userMenuItem: "userMenuItem_d40c56",
   userMenuUsername: "userMenuUsername_d40c56",

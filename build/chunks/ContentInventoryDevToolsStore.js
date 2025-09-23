@@ -1,13 +1,13 @@
-/** Chunk was on 93886 **/
-/** chunk id: 550532, original params: e,n,t (module,exports,require) **/
+/** Chunk was on 64170 **/
+/** chunk id: 550532, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  Z: () => u
 });
-var r, i, Chunk442837 = require("./442837.js"),
+var r, l, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk780106 = require("./780106.js");
 let s = "None";
-class c extends(i = Chunk442837.ZP.Store) {
+class c extends(l = Chunk442837.ZP.Store) {
   getFakeGameToShow() {
     return s
   }
@@ -20,11 +20,11 @@ class c extends(i = Chunk442837.ZP.Store) {
   configurable: true,
   writable: true
 }) : c[r] = "ContentInventoryDevToolsStore";
-let d = new c(Chunk570140.Z, {
+let u = new c(Chunk570140.Z, {
   CONTENT_INVENTORY_FORCE_SHOW_GAME_SHARING: function(e) {
     let {
-      gameToShow: n
+      gameToShow: t
     } = e;
-    s = n
+    s = t
   }
 })

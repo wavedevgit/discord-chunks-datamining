@@ -1,4 +1,4 @@
-/** Chunk was on 10017 **/
+/** Chunk was on 97571 **/
 /** chunk id: 775451, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   V9: () => b,
@@ -28,32 +28,32 @@ let f = {
       ctaOnClick: i,
       anchorPillType: b,
       analyticsPage: g,
-      linkText: j = p.intl.string(p.t.XRdyj4),
-      cardAlignment: v = f.START,
+      linkText: v = h.intl.string(h.t.XRdyj4),
+      cardAlignment: j = f.START,
       className: _
     } = e, {
       balance: y
-    } = (0, c.A)(), [C, E] = r.useState(d.b.DEFAULT), [N, S] = r.useState(false), [O, T] = r.useState(false), P = r.useRef(null), k = r.useCallback(() => {
+    } = (0, c.A)(), [C, E] = r.useState(d.b.DEFAULT), [N, T] = r.useState(false), [S, O] = r.useState(false), P = r.useRef(null), I = r.useCallback(() => {
       let e = !N;
       e && null != g && (0, o.Y)({
         pageType: g,
-        sectionType: h.jXE.ORBS_BALANCE_MENU,
-        ctaObject: h.qAy.OPEN_ORB_BALANCE_MENU_FROM_PILL
-      }), E(e ? d.b.SELECTED : d.b.DEFAULT), S(e)
-    }, [N, g]), R = r.useCallback(() => {
-      N && k()
-    }, [N, k]), I = (0, s.Z)(null, R), w = r.useMemo(() => (0, a.jsx)(u.L, {
+        sectionType: p.jXE.ORBS_BALANCE_MENU,
+        ctaObject: p.qAy.OPEN_ORB_BALANCE_MENU_FROM_PILL
+      }), E(e ? d.b.SELECTED : d.b.DEFAULT), T(e)
+    }, [N, g]), k = r.useCallback(() => {
+      N && I()
+    }, [N, I]), w = (0, s.Z)(null, k), R = r.useMemo(() => (0, a.jsx)(u.L, {
       analyticsPage: g,
       ctaText: n,
       ctaOnClick: () => {
-        k(), i()
+        I(), i()
       },
-      linkText: j
-    }), [g, n, j, k, i]);
+      linkText: v
+    }), [g, n, v, I, i]);
     return (0, a.jsxs)("div", {
       className: l()(x.container, _, {
-        [x.hidden]: O,
-        [x.visible]: !O
+        [x.hidden]: S,
+        [x.visible]: !S
       }),
       children: [(0, a.jsx)(m.y, {
         pillRef: P,
@@ -63,15 +63,15 @@ let f = {
         onMouseDown: e => {
           e.stopPropagation()
         },
-        onClick: k,
+        onClick: I,
         showNotificationBadge: t
       }), N && (0, a.jsx)("div", {
-        className: l()(x.cardContainer, v, {
-          [x.hidden]: O,
-          [x.visible]: !O
+        className: l()(x.cardContainer, j, {
+          [x.hidden]: S,
+          [x.visible]: !S
         }),
-        ref: I,
-        children: w
+        ref: w,
+        children: R
       })]
     })
   };

@@ -1,7 +1,7 @@
-/** Chunk was on 10017 **/
+/** Chunk was on 97571 **/
 /** chunk id: 681140, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => j
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -136,7 +136,7 @@ function g(e) {
             }), null != r && (0, a.jsx)(i.R94, {
               children: r.name
             }), null == r && null != l && (0, a.jsx)(i.R94, {
-              children: (0, o.F6)(l, p.default, h.Z)
+              children: (0, o.F6)(l, h.default, p.Z)
             }), (0, a.jsx)(i.R94, {
               children: " (".concat(t, ")")
             }), null != n && "" !== n && (0, a.jsx)(i.R94, {
@@ -192,7 +192,7 @@ function g(e) {
   })
 }
 
-function j() {
+function v() {
   let e = Chunk647438.useCallback(e => {
       f.setState({
         userId: e,
@@ -243,7 +243,7 @@ function j() {
   })
 }
 
-function v() {
+function j() {
   let e = f.useField("state"),
     t = f.useField("error");
   return (0, Chunk951288.jsxs)(Chunk481060.hjN, {
@@ -254,7 +254,7 @@ function v() {
       type: Chunk481060.geA.DESCRIPTION,
       className: Chunk575043.subtitle,
       children: "Paste a user ID below to get a snapshot of client state for the user. This does not generate any logs."
-    }), (0, Chunk951288.jsx)(j, {}), null != exports && (0, Chunk951288.jsx)(Chunk481060.Text, {
+    }), (0, Chunk951288.jsx)(v, {}), null != exports && (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
       color: "text-feedback-critical",
       className: Chunk575043.statusText,

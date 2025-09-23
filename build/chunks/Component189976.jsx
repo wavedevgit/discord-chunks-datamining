@@ -22,8 +22,8 @@ function p(e, t) {
     }),
     {
       handleTranslate: O,
-      handleRevertTranslation: m,
-      isTranslating: y,
+      handleRevertTranslation: y,
+      isTranslating: m,
       isTranslated: h
     } = function(e) {
       let [t, n] = i.useState(false), r = (0, l.e7)([u.default], () => u.default.locale);
@@ -96,18 +96,18 @@ function p(e, t) {
           disabled: t
         }, i.value)
       }), [e, t, l])
-    }(O, y);
+    }(O, m);
   return null != e.content && "" !== e.content.trim() && (null == p ? true : p.enableAIFeatures) ? h ? (0, r.jsx)(o.sNh, {
     id: "revert-translation",
     label: f.intl.string(f.t.JC9BXl),
     icon: o.os0,
-    action: m,
-    disabled: y
+    action: y,
+    disabled: m
   }) : (0, r.jsx)(o.sNh, {
     id: "translate",
-    label: y ? f.intl.string(f.t.SVKIdX) : f.intl.string(f.t["6epDlZ"]),
+    label: m ? f.intl.string(f.t.SVKIdX) : f.intl.string(f.t["6epDlZ"]),
     action: () => O(),
-    disabled: y,
+    disabled: m,
     children: v
   }) : null
 }

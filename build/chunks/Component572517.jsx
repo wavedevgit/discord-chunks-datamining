@@ -19,17 +19,17 @@ function _() {
   var e, t;
   let n = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion),
     _ = (0, Chunk410030.ZP)(),
-    h = (0, Chunk780384.wj)(_),
-    f = (0, Chunk347896.Z)(),
-    x = null == f ? true : f.planSelectionBanner,
+    f = (0, Chunk780384.wj)(_),
+    h = (0, Chunk347896.Z)(),
+    x = null == h ? true : h.planSelectionBanner,
     {
       claimableRewards: m
     } = (0, Chunk987209.wD)();
   if (null == x || null == m) return null;
-  let j = null == (e = x.getBackgroundImageUrl) ? true : module.call(x, h),
+  let j = null == (e = x.getBackgroundImageUrl) ? true : module.call(x, f),
     b = (0, Chunk717401.Yr)(j),
     g = null == (t = x.gradientConfig) ? true : exports.call(x, {
-      isDarkMode: h,
+      isDarkMode: f,
       isAndroid: false
     }),
     L = (0, Chunk717401.Tl)(g);
@@ -40,7 +40,7 @@ function _() {
       className: Chunk947007.avatar,
       children: (0, Chunk951288.jsx)(Chunk897942.Z, {
         claimableRewards: m,
-        maxRewardImageSrc: x.getImageUrl(h, require),
+        maxRewardImageSrc: x.getImageUrl(f, require),
         size: Chunk481060.EFr.SIZE_40,
         imageScaling: 2
       })

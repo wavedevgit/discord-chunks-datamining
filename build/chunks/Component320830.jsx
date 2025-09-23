@@ -23,7 +23,7 @@ function g(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,7 +35,7 @@ function m(e) {
   }
   return e
 }
-let p = (0, Chunk624138.Mg)(Chunk477690.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
+let m = (0, Chunk624138.Mg)(Chunk477690.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
   f = {
     friction: 10,
     tension: 130
@@ -58,7 +58,7 @@ let p = (0, Chunk624138.Mg)(Chunk477690.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
         this.state.shouldAnimate ? this.animateTo(0, e) : e()
       }
       animateTo(e, t) {
-        o.Z.spring(this.anim, m({
+        o.Z.spring(this.anim, p({
           toValue: e
         }, f)).start(t)
       }
@@ -90,7 +90,7 @@ let p = (0, Chunk624138.Mg)(Chunk477690.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
               } = t;
               return (0, r.jsx)(o.Z.div, {
                 style: this.getAnimatedStyle(n.enabled),
-                children: (0, r.jsx)(e, m({}, this.props))
+                children: (0, r.jsx)(e, p({}, this.props))
               })
             }
           })
@@ -100,7 +100,7 @@ let p = (0, Chunk624138.Mg)(Chunk477690.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
         super(...e), g(this, "timeout", true), g(this, "anim", new o.Z.Value(0)), g(this, "state", {
           shouldAnimate: !a.tq
         }), g(this, "handleResize", () => {
-          let e = window.innerWidth > p;
+          let e = window.innerWidth > m;
           !this.state.shouldAnimate && e && this.anim.setValue(1), this.setState({
             shouldAnimate: e
           })

@@ -1,11 +1,11 @@
-/** Chunk was on 47387 **/
+/** Chunk was on 56785 **/
 /** chunk id: 763624, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => o
 });
 var Chunk818083 = require("./818083.js");
 
-function l(e) {
+function i(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -24,7 +24,7 @@ function l(e) {
   return e
 }
 
-function i(e, t) {
+function l(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -50,13 +50,13 @@ let a = {
     treatments: [{
       id: 1,
       label: "VC Status Icons",
-      config: i(l({}, a), {
+      config: l(i({}, a), {
         enableVCStatusIcons: true
       })
     }, {
       id: 2,
       label: "Request to Stream without Overlay Notification",
-      config: i(l({}, a), {
+      config: l(i({}, a), {
         enableVCStatusIcons: true,
         enableRequestToStream: true,
         enableOpenTIVForPing: true
@@ -64,7 +64,7 @@ let a = {
     }, {
       id: 3,
       label: "Request to Stream with Overlay Notification",
-      config: i(l({}, a), {
+      config: l(i({}, a), {
         enableVCStatusIcons: true,
         enableRequestToStream: true,
         enableOpenTIVForPing: true,

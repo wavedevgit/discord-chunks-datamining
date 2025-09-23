@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 853170, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 43342 **/
+/** chunk id: 853170, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  e: () => s
+  e: () => a
 });
 var Chunk818083 = require("./818083.js"),
   Chunk751823 = require("./751823.js"),
   Chunk875527 = require("./875527.js");
-let o = (0, Chunk818083.B)({
+let l = (0, Chunk818083.B)({
   kind: "user",
   id: "2025-08_audio_context_menu_refresh",
   label: "Audio context menu refresh experiment",
@@ -23,7 +22,7 @@ let o = (0, Chunk818083.B)({
   }]
 });
 
-function s(e) {
+function a(e) {
   let {
     location: t,
     autoTrackExposure: n = true
@@ -33,14 +32,14 @@ function s(e) {
     location: t
   }, {
     autoTrackExposure: n
-  }), s = (0, a.Hu)({
+  }), a = (0, o.Hu)({
     location: t,
     autoTrackExposure: false
   });
-  return o.useExperiment({
+  return l.useExperiment({
     location: t
   }, {
-    disable: r || s,
+    disable: r || a,
     autoTrackExposure: n
   })
 }

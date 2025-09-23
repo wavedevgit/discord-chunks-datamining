@@ -1,12 +1,12 @@
 /** Chunk was on 96887 **/
 /** chunk id: 669636, original params: e,t,r (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => A
+  default: () => D
 }), require("./388685.js"), require("./314940.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  s = require.n(Chunk512722),
+  l = require.n(Chunk512722),
   Chunk401393 = require("./401393.js"),
   Chunk278074 = require("./278074.js"),
   Chunk979554 = require("./979554.js"),
@@ -51,72 +51,72 @@ let S = e => {
       pairedProduct: r,
       itemConsumed: i,
       forCollectedModal: n
-    } = e, [o] = t.items, b = null == r ? true : r.items[0], x = (0, u.e7)([g.default], () => {
-      let e = g.default.getCurrentUser();
-      return s()(null != e, "User cannot be undefined"), e
-    }), S = Object.values(d.a).includes(t.skuId), C = (0, h.ZP)({
+    } = e, [o] = t.items, y = null == r ? true : r.items[0], x = (0, u.e7)([h.default], () => {
+      let e = h.default.getCurrentUser();
+      return l()(null != e, "User cannot be undefined"), e
+    }), S = Object.values(d.a).includes(t.skuId), C = (0, f.ZP)({
       location: "CollectiblesProductPreview"
     });
-    return (0, c.EQ)(t.type).with(l.Z.PROFILE_EFFECT, () => (0, a.jsx)("div", {
-      className: O.profileEffectShopPreview,
+    return (0, s.EQ)(t.type).with(c.Z.PROFILE_EFFECT, () => (0, a.jsx)("div", {
+      className: _.profileEffectShopPreview,
       children: (0, a.jsx)(p.Z, {
         forCollectedModal: true,
         profileEffectId: o.id
       })
-    })).with(l.Z.AVATAR_DECORATION, () => (s()(o.type === l.Z.AVATAR_DECORATION, "ts-match already checked the type"), null != b && b.type === l.Z.AVATAR_DECORATION) ? (0, a.jsxs)("div", {
+    })).with(c.Z.AVATAR_DECORATION, () => (l()(o.type === c.Z.AVATAR_DECORATION, "ts-match already checked the type"), null != y && y.type === c.Z.AVATAR_DECORATION) ? (0, a.jsxs)("div", {
       children: [(0, a.jsx)("div", {
-        className: O.avatarDecorationPairOne,
-        children: (0, a.jsx)(v.R, {
+        className: _.avatarDecorationPairOne,
+        children: (0, a.jsx)(P.R, {
           item: o,
           user: x,
-          avatarSize: f.EFr.SIZE_120,
+          avatarSize: v.EFr.SIZE_120,
           isPurchased: false,
           isHighlighted: true
         })
       }), (0, a.jsx)("div", {
-        className: O.avatarDecorationPairTwo,
-        children: (0, a.jsx)(v.R, {
-          item: b,
-          avatarSize: f.EFr.SIZE_120,
+        className: _.avatarDecorationPairTwo,
+        children: (0, a.jsx)(P.R, {
+          item: y,
+          avatarSize: v.EFr.SIZE_120,
           isPurchased: false
         })
       })]
-    }) : (0, a.jsx)(v.R, {
+    }) : (0, a.jsx)(P.R, {
       item: o,
       user: x,
-      avatarSize: f.EFr.SIZE_120,
+      avatarSize: v.EFr.SIZE_120,
       isPurchased: false,
       isHighlighted: true
-    })).with(l.Z.NAMEPLATE, () => (0, a.jsx)("div", {
-      className: O.nameplate,
-      children: (0, a.jsx)(P.Z, {
+    })).with(c.Z.NAMEPLATE, () => (0, a.jsx)("div", {
+      className: _.nameplate,
+      children: (0, a.jsx)(w.Z, {
         nameplate: o,
         user: x,
         nameplatePreviewSize: "large",
         isHighlighted: true
       })
-    })).with(l.Z.BUNDLE, () => (0, a.jsx)("div", {
-      className: O.bundlePreview,
-      children: (0, a.jsx)(j.d, {
-        containerClassName: O.bundlePreviewContainer,
+    })).with(c.Z.BUNDLE, () => (0, a.jsx)("div", {
+      className: _.bundlePreview,
+      children: (0, a.jsx)(g.d, {
+        containerClassName: _.bundlePreviewContainer,
         product: t,
         user: x,
         isPurchased: false,
         isHighlighted: true,
         forCollectedModal: n
       })
-    })).with(l.Z.EXTERNAL_SKU, () => {
+    })).with(c.Z.EXTERNAL_SKU, () => {
       if (S)
         if (i) return (0, a.jsx)("img", {
-          src: C ? _ : E,
-          alt: y.intl.string(y.t.t0xkSE),
+          src: C ? E : j,
+          alt: b.intl.string(b.t.t0xkSE),
           style: {
             width: "100%"
           }
         });
         else return (0, a.jsx)("img", {
-          src: w,
-          alt: y.intl.string(y.t.g5W1g4)
+          src: O,
+          alt: b.intl.string(b.t.g5W1g4)
         });
       return (0, a.jsx)(m.b, {
         product: t
@@ -127,7 +127,7 @@ let S = e => {
     let {
       reducedMotion: t,
       displayOptions: r
-    } = e, [n, s] = i.useState(false), c = (0, f.q_F)({
+    } = e, [n, l] = i.useState(false), s = (0, v.q_F)({
       from: {
         transform: "translateX(100%)",
         right: "-100%"
@@ -139,8 +139,8 @@ let S = e => {
       config: {
         duration: 1550
       },
-      onRest: () => setTimeout(() => s(true), 100)
-    }), l = (0, f.q_F)({
+      onRest: () => setTimeout(() => l(true), 100)
+    }), c = (0, v.q_F)({
       from: {
         transform: "translateX(100%)",
         right: "-100%"
@@ -153,7 +153,7 @@ let S = e => {
         duration: 1550
       },
       reverse: n
-    }), d = (0, f.q_F)({
+    }), d = (0, v.q_F)({
       from: {
         transform: "translateX(50%)",
         right: "50%",
@@ -171,12 +171,12 @@ let S = e => {
     }, "animate-always");
     return (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsx)(o.animated.div, {
-        className: O.easterEggContainer,
-        style: c,
+        className: _.easterEggContainer,
+        style: s,
         children: (0, a.jsx)(S, x({}, e))
       }), (0, a.jsx)(o.animated.div, {
-        className: O.easterEggContainer,
-        style: t ? d : l,
+        className: _.easterEggContainer,
+        style: t ? d : c,
         children: (0, a.jsx)("img", {
           src: r.getSrc(),
           style: r.style,
@@ -187,9 +187,9 @@ let S = e => {
     })
   };
 
-function A(e) {
+function D(e) {
   var t, r;
-  let i = (0, b.v)(e.product.categorySkuId);
+  let i = (0, y.v)(e.product.categorySkuId);
   return null != i ? (0, a.jsx)(C, (t = x({}, e), r = r = {
     displayOptions: i
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {

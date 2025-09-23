@@ -40,30 +40,30 @@ function _(e) {
     })()
   });
   let E = i.useCallback(() => {
-      n(m.Z5c.LOGIN, {
+      n(p.Z5c.LOGIN, {
         source: "verify_email"
       })
     }, [n]),
     v = i.useCallback(() => {
-      g.default.track(m.rMx.VERIFY_ACCOUNT_APP_OPENED, {
+      g.default.track(p.rMx.VERIFY_ACCOUNT_APP_OPENED, {
         verifying_user_id: x.current
       }), (0, d.Z)("verify_email")
     }, []);
   return "failed" === l ? (0, r.jsx)(u.Z, {
-    title: p.intl.string(p.t.PCgG39),
-    subtitle: p.intl.string(p.t.tQpeAw),
-    buttonText: p.intl.string(p.t.dKhVQE),
+    title: m.intl.string(m.t.PCgG39),
+    subtitle: m.intl.string(m.t.tQpeAw),
+    buttonText: m.intl.string(m.t.dKhVQE),
     onButtonClick: E
   }) : "succeeded" === l ? (0, r.jsx)(u.Z, {
-    title: p.intl.string(p.t.dAfGb2),
-    buttonText: p.intl.string(p.t.uJWIj4),
+    title: m.intl.string(m.t.dAfGb2),
+    buttonText: m.intl.string(m.t.uJWIj4),
     onButtonClick: v,
     image: (0, r.jsx)(s.Om, {
-      alt: p.intl.string(p.t.dAfGb2)
+      alt: m.intl.string(m.t.dAfGb2)
     })
   }) : (0, r.jsx)(u.Z, {
-    title: p.intl.string(p.t["0c8+5u"]),
-    subtitle: p.intl.string(p.t.ULTCBA),
+    title: m.intl.string(m.t["0c8+5u"]),
+    subtitle: m.intl.string(m.t.ULTCBA),
     loading: true
   })
 }

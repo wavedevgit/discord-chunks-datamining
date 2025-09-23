@@ -1,4 +1,4 @@
-/** Chunk was on 33358 **/
+/** Chunk was on 69310 **/
 /** chunk id: 367207, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => v
@@ -28,7 +28,7 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function O(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -41,7 +41,7 @@ function O(e) {
   return e
 }
 
-function y(e, t) {
+function O(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -53,7 +53,7 @@ function y(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class _ extends Chunk317770.Z {
+class y extends Chunk317770.Z {
   _initialize() {
     __OVERLAY__ ? Chunk570140.Z.subscribe("PREMIUM_PAYMENT_MODAL_OPEN", this._handlePremiumPaymentModalOpen) : (Chunk570140.Z.subscribe("PREMIUM_PAYMENT_MODAL_CLOSE", this._handlePremiumPaymentModalClose), Chunk570140.Z.subscribe("MESSAGE_LENGTH_UPSELL", this.handleMessageLengthUpsell), Chunk570140.Z.subscribe("POST_CONNECTION_OPEN", this._maybeFetchPremiumOffer), Chunk570140.Z.subscribe("POST_CONNECTION_OPEN", this._maybeFetchCheckoutRecovery), Chunk570140.Z.subscribe("POST_CONNECTION_OPEN", this._maybeFetchUserAffinities))
   }
@@ -69,7 +69,7 @@ class _ extends Chunk317770.Z {
       let {
         default: e
       } = await n.e("33184").then(n.bind(n, 465836));
-      return n => (0, r.jsx)(e, O({
+      return n => (0, r.jsx)(e, _({
         channel: t,
         content: l
       }, n))
@@ -78,7 +78,7 @@ class _ extends Chunk317770.Z {
   openPremiumPaymentModalInApp(e) {
     if (__OVERLAY__) throw Error("Should not use this function from the overlay, use ModalAPI.openModal instead");
     return new Promise((t, n) => {
-      (0, s.Z)(y(O({}, e), {
+      (0, s.Z)(O(_({}, e), {
         onClose: e => {
           e ? t() : n()
         }
@@ -126,7 +126,7 @@ class _ extends Chunk317770.Z {
       });
       e && (0, c._)()
     }), b(this, "_handlePremiumPaymentModalOpen", e => {
-      (0, s.Z)(y(O({}, e), {
+      (0, s.Z)(O(_({}, e), {
         analyticsLocations: [a.Z.OVERLAY],
         onClose: e => {
           l.Z.dispatch({
@@ -143,4 +143,4 @@ class _ extends Chunk317770.Z {
     })
   }
 }
-let v = new _
+let v = new y

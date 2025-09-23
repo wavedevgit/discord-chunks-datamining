@@ -1,4 +1,4 @@
-/** Chunk was on 10017 **/
+/** Chunk was on 97571 **/
 /** chunk id: 866730, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -25,7 +25,7 @@ let m = e => {
         return "UNKNOWN TYPE:"
     }
   },
-  h = [{
+  p = [{
     key: "events",
     render(e) {
       let {
@@ -35,7 +35,7 @@ let m = e => {
       return "".concat(t, " ").concat(s.z[n])
     }
   }],
-  p = [{
+  h = [{
     key: "candidates",
     render(e) {
       let {
@@ -78,11 +78,11 @@ function x() {
       className: Chunk860191.candidatesTableContainer,
       children: (0, Chunk951288.jsx)(Chunk681619.Z, {
         className: Chunk860191.candidatesTable,
-        columns: p,
+        columns: h,
         data: b
       })
     }), (0, Chunk951288.jsx)("br", {}), (0, Chunk951288.jsx)(Chunk681619.Z, {
-      columns: h,
+      columns: p,
       data: f
     })]
   })

@@ -1,5 +1,5 @@
-/** Chunk was on 60088 **/
-/** chunk id: 819019, original params: o,e,r (module,exports,require) **/
+/** Chunk was on 97571 **/
+/** chunk id: 819019, original params: e,t,n (module,exports,require) **/
 module.exports = {
   body: "body__89307",
   title: "title__89307",

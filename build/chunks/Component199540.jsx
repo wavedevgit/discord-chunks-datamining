@@ -1,4 +1,4 @@
-/** Chunk was on 33358 **/
+/** Chunk was on 69310 **/
 /** chunk id: 199540, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -83,9 +83,9 @@ function b(e) {
     mentionCount: d = 0,
     isMentionLowImportance: g,
     tooltipName: b,
-    folderGroupId: O,
-    folderButtonContent: y,
-    onClick: _,
+    folderGroupId: _,
+    folderButtonContent: O,
+    onClick: y,
     onContextMenu: v,
     onHoverChange: j,
     onKeyDown: x,
@@ -94,7 +94,7 @@ function b(e) {
     },
     "aria-setsize": E,
     "aria-posinset": S
-  } = e, I = function(e, t) {
+  } = e, P = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -108,7 +108,7 @@ function b(e) {
       for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
-  }(e.treeItemProps, ["onFocus"]), [P, N] = i.useState(false), w = i.useCallback(() => {
+  }(e.treeItemProps, ["onFocus"]), [I, N] = i.useState(false), w = i.useCallback(() => {
     a || N(true), null == j || j(true)
   }, [a, j]), Z = i.useCallback(() => {
     a || N(false), null == j || j(false)
@@ -133,7 +133,7 @@ function b(e) {
       return e
     }({
       className: h.folderButton,
-      onClick: _,
+      onClick: y,
       onContextMenu: v,
       onMouseEnter: w,
       onMouseLeave: Z,
@@ -142,12 +142,12 @@ function b(e) {
       focusProps: {
         enabled: false
       }
-    }, I), n = n = {
+    }, P), n = n = {
       role: "treeitem",
       "aria-setsize": E,
       "aria-posinset": S,
       "aria-expanded": o,
-      "aria-owns": O,
+      "aria-owns": _,
       children: [(0, r.jsx)(s.nn4, {
         children: f.intl.formatToPlainString(f.t["90/DwM"], {
           folderName: b,
@@ -163,12 +163,12 @@ function b(e) {
         },
         children: (0, r.jsx)("div", {
           className: h.folderButtonInner,
-          children: null != y ? (0, r.jsx)("div", {
+          children: null != O ? (0, r.jsx)("div", {
             className: h.folderIconWrapper,
-            children: y
+            children: O
           }) : (0, r.jsx)(m, {
             folderNode: l,
-            hovered: P,
+            hovered: I,
             sorting: a
           })
         })

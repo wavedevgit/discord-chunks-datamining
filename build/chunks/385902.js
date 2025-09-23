@@ -1,8 +1,8 @@
-/** Chunk was on 33358 **/
+/** Chunk was on 69310 **/
 /** chunk id: 385902, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  K: () => y,
-  _: () => O
+  K: () => O,
+  _: () => _
 });
 var Chunk647438 = require("./647438.js"),
   Chunk494497 = require("./494497.js"),
@@ -20,7 +20,7 @@ var Chunk647438 = require("./647438.js"),
   Chunk258640 = require("./258640.js"),
   Chunk388032 = require("./388032.jsx");
 
-function O(e, t) {
+function _(e, t) {
   var n;
   let r = (0, l.e7)([o.Z], () => {
       var t;
@@ -29,16 +29,16 @@ function O(e, t) {
     a = (0, l.e7)([s.Z], () => s.Z.getStateForGuild(e)),
     u = null == a ? true : a.allPowerups[i.A$],
     f = (0, d.ZP)(e, u),
-    O = (0, c.q8)(e, t),
-    y = null == u ? true : u.storeRemovalDate,
-    _ = null != (n = null == r ? true : r.has(g.oNc.PARTNERED)) && n,
-    v = O && null != y && !_ && f.type === h.A3.POWERUP_ACTIVATED,
+    _ = (0, c.q8)(e, t),
+    O = null == u ? true : u.storeRemovalDate,
+    y = null != (n = null == r ? true : r.has(g.oNc.PARTNERED)) && n,
+    v = _ && null != O && !y && f.type === h.A3.POWERUP_ACTIVATED,
     j = v ? {
       title: b.intl.formatToPlainString(m.default.mgoPkZ, {
         perkName: null == u ? true : u.title
       }),
       description: b.intl.formatToPlainString(m.default.UT9pkJ, {
-        dateString: (0, p.Z)(y)
+        dateString: (0, p.Z)(O)
       })
     } : null;
   return {
@@ -47,32 +47,32 @@ function O(e, t) {
   }
 }
 
-function y(e, t) {
-  var n, O, y, _;
+function O(e, t) {
+  var n, _, O, y;
   let v = (0, l.e7)([o.Z], () => o.Z.getGuild(e)),
     j = (0, l.e7)([a.Z], () => a.Z.hasLayers()),
-    x = null != (y = (0, u.Z)(e)) && y,
+    x = null != (O = (0, u.Z)(e)) && O,
     C = (0, c.q8)(e, t),
     E = (0, l.e7)([s.Z], () => s.Z.getStateForGuild(e)),
     S = null == E || null == (n = E.allPowerups) ? true : n[i.A$],
-    I = (0, d.ZP)(e, S),
-    P = null == S ? true : S.storeRemovalDate,
-    N = null == E || null == (O = E.allPowerups) ? true : O[i.XW],
+    P = (0, d.ZP)(e, S),
+    I = null == S ? true : S.storeRemovalDate,
+    N = null == E || null == (_ = E.allPowerups) ? true : _[i.XW],
     w = (0, l.e7)([o.Z], () => {
       var t;
       return null == (t = o.Z.getGuild(e)) ? true : t.features
     }),
-    Z = null != (_ = null == w ? true : w.has(g.oNc.PARTNERED)) && _,
+    Z = null != (y = null == w ? true : w.has(g.oNc.PARTNERED)) && y,
     {
       onActivate: T
     } = (0, f._C)(e, N),
-    A = !j && x && C && null != S && !Z && I.type === h.A3.POWERUP_ACTIVATED && null != P && null != N && null != v,
+    A = !j && x && C && null != S && !Z && P.type === h.A3.POWERUP_ACTIVATED && null != I && null != N && null != v,
     R = r.useCallback(e => {
       T(e)
     }, [T]),
     D = r.useMemo(() => {
       if (!A) return null;
-      let e = (0, p.Z)(P),
+      let e = (0, p.Z)(I),
         t = v.premiumTier === g.Eu4.TIER_2 ? b.intl.string(m.default["0uo/LC"]) : true;
       return {
         firstHeader: S.title,
@@ -90,7 +90,7 @@ function y(e, t) {
         primaryButtonText: t,
         onPrimaryClick: null != t ? R : true
       }
-    }, [A, S, P, v, R]);
+    }, [A, S, I, v, R]);
   return {
     shouldShow: A,
     modalConfig: D

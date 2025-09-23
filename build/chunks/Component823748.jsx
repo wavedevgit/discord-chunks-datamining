@@ -201,7 +201,7 @@ class ti extends Chunk647438.PureComponent {
     o()(null != i, "Missing user in Channel.openDMContextMenu"), (0, b.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("79695"), n.e("98783"), n.e("56826"), n.e("55599")]).then(n.bind(n, 131404));
+      } = await Promise.all([n.e("79695"), n.e("98783"), n.e("56826"), n.e("85952")]).then(n.bind(n, 131404));
       return n => (0, r.jsx)(e, tn(tt({}, n), {
         user: i,
         channelSelected: true,

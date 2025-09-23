@@ -1,27 +1,26 @@
-/** Chunk was on web.js **/
-/** chunk id: 27123, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 8850 **/
+/** chunk id: 27123, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  T: () => a,
-  v: () => i
+  T: () => i,
+  v: () => l
 });
 var Chunk981631 = require("./981631.js");
-let i = e => {
-    var t, n, i, a;
+let l = e => {
+    var t, r, l, i;
     let {
-      product: o,
-      isPremiumUser: s
+      product: a,
+      isPremiumUser: o
     } = e;
-    return null != (a = null == (i = o.prices[s ? r.tuJ.PREMIUM_TIER_2 : r.tuJ.DEFAULT]) || null == (n = i.countryPrices) || null == (t = n.prices) ? true : t.slice(0, 2)) ? a : []
+    return null != (i = null == (l = a.prices[o ? n.tuJ.PREMIUM_TIER_2 : n.tuJ.DEFAULT]) || null == (r = l.countryPrices) || null == (t = r.prices) ? true : t.slice(0, 2)) ? i : []
   },
-  a = e => {
+  i = e => {
     var t;
     let {
-      product: n,
-      isPremiumUser: a
+      product: r,
+      isPremiumUser: i
     } = e;
-    return null != (t = i({
-      product: n,
-      isPremiumUser: a
-    }).find(e => e.currency === r.pKx.DISCORD_ORB)) ? t : null
+    return null != (t = l({
+      product: r,
+      isPremiumUser: i
+    }).find(e => e.currency === n.pKx.DISCORD_ORB)) ? t : null
   }

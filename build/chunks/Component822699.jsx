@@ -101,8 +101,8 @@ let el = (0, Chunk320830.Z)(Chunk781428.Z),
   ed = (0, Chunk320830.Z)(Chunk423527.Z),
   eh = (0, Chunk320830.Z)(Chunk264873.Z),
   eg = (0, Chunk320830.Z)(Chunk223543.Z),
-  em = (0, Chunk320830.Z)(Chunk455502.Z),
-  ep = (0, Chunk320830.Z)(Chunk698177.Z),
+  ep = (0, Chunk320830.Z)(Chunk455502.Z),
+  em = (0, Chunk320830.Z)(Chunk698177.Z),
   ef = (0, Chunk320830.Z)(Chunk479495.Z),
   e_ = (0, Chunk320830.Z)(Chunk299852.Z),
   ex = (0, Chunk320830.Z)(Chunk761305.Z),
@@ -123,13 +123,13 @@ class eO extends Chunk647438.PureComponent {
     } = t, o = null != (n = (0, l.parse)(i.search).redirect_to) ? n : null;
     (null == o || "" === o || !(0, a.B)(o) || o.startsWith($.Z5c.ME)) && (o = null);
     let c = null;
-    if (null == r) c = (0, Z.gK)(o);
+    if (null == r) c = (0, P.gK)(o);
     else if ((null == r ? true : r.state) === $.r2o.RESOLVED) {
       let {
         guild: e,
         target_application: t
       } = r;
-      null != t ? null != s && (c = (0, P.xF)(t.id, s, 1024)) : null != e && "string" == typeof e.splash && (c = R.ZP.getGuildSplashURL({
+      null != t ? null != s && (c = (0, Z.xF)(t.id, s, 1024)) : null != e && "string" == typeof e.splash && (c = R.ZP.getGuildSplashURL({
         id: e.id,
         splash: e.splash
       }))
@@ -288,13 +288,13 @@ class eO extends Chunk647438.PureComponent {
         }
       }), (0, Chunk951288.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.VERIFY,
-        render: e => (0, r.jsx)(em, er({}, e))
+        render: e => (0, r.jsx)(ep, er({}, e))
       }), (0, Chunk951288.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.VERIFY_HUB_EMAIL,
         render: e => (0, r.jsx)(eE, er({}, e))
       }), (0, Chunk951288.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.VERIFY_REQUEST,
-        render: e => (0, r.jsx)(ep, er({}, e))
+        render: e => (0, r.jsx)(em, er({}, e))
       }), (0, Chunk951288.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.DISABLE_EMAIL_NOTIFICATIONS,
         render: e => (0, r.jsx)(e_, er({}, e))

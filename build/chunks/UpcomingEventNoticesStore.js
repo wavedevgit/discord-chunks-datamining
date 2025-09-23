@@ -1,16 +1,16 @@
-/** Chunk was on 80037 **/
+/** Chunk was on 79521 **/
 /** chunk id: 835184, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => _
 });
-var r, Chunk442837 = require("./442837.js"),
+var l, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk314897 = require("./314897.js"),
   Chunk924301 = require("./924301.js"),
   Chunk658041 = require("./658041.js"),
   Chunk765305 = require("./765305.js");
 
-function u(e, t, n) {
+function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -22,88 +22,88 @@ function u(e, t, n) {
 function d(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      l = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      u(e, t, n[t])
+    }))), l.forEach(function(t) {
+      c(e, t, n[t])
     })
   }
   return e
 }
-let p = {},
-  h = {};
+let E = {},
+  f = {};
 
-function f(e) {
-  let t = d({}, p);
-  delete t[e], p = t;
-  let n = d({}, h);
-  delete n[e], h = n
+function N(e) {
+  let t = d({}, E);
+  delete t[e], E = t;
+  let n = d({}, f);
+  delete n[e], f = n
 }
-class m extends(r = Chunk442837.ZP.PersistedStore) {
+class g extends(l = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     if (null != e) {
       var t, n;
-      p = null != (t = e.upcomingEventDismissals) ? t : {}, h = null != (n = e.upcomingEventSeenTimestamps) ? n : {}
+      E = null != (t = e.upcomingEventDismissals) ? t : {}, f = null != (n = e.upcomingEventSeenTimestamps) ? n : {}
     }
   }
   getGuildEventNoticeDismissalTime(e) {
-    return p[e]
+    return E[e]
   }
   getAllEventDismissals() {
-    return p
+    return E
   }
   getUpcomingNoticeSeenTime(e) {
-    return h[e]
+    return f[e]
   }
   getAllUpcomingNoticeSeenTimes() {
-    return h
+    return f
   }
   getState() {
     return {
-      upcomingEventDismissals: p,
-      upcomingEventSeenTimestamps: h
+      upcomingEventDismissals: E,
+      upcomingEventSeenTimestamps: f
     }
   }
 }
-u(m, "displayName", "UpcomingEventNoticesStore"), u(m, "persistKey", "UpcomingEventNotices");
-let g = new m(Chunk570140.Z, {
+c(g, "displayName", "UpcomingEventNoticesStore"), c(g, "persistKey", "UpcomingEventNotices");
+let _ = new g(Chunk570140.Z, {
   UPCOMING_GUILD_EVENT_NOTICE_HIDE: function(e) {
     let {
       eventId: t
-    } = e, n = d({}, p);
-    n[t] = Date.now(), p = n
+    } = e, n = d({}, E);
+    n[t] = Date.now(), E = n
   },
   GUILD_SCHEDULED_EVENT_UPDATE: function(e) {
     let {
       guildScheduledEvent: t
     } = e;
-    (t.status === c.p1.CANCELED || t.status === c.p1.COMPLETED) && f(t.id)
+    (t.status === s.p1.CANCELED || t.status === s.p1.COMPLETED) && N(t.id)
   },
   GUILD_SCHEDULED_EVENT_DELETE: function(e) {
     let {
       guildScheduledEvent: t
     } = e;
-    f(t.id)
+    N(t.id)
   },
   GUILD_SCHEDULED_EVENT_USER_ADD: function(e) {
     let {
       userId: t,
       guildEventId: n
     } = e;
-    if (t !== a.default.getId()) return;
-    let r = o.ZP.getGuildScheduledEvent(n);
-    if (null == r || r.status !== c.p1.SCHEDULED || null != p[n]) return;
-    let i = h[n];
-    if ((0, s.M)(r, true, i, false) === c.X_.NEW_EVENT) {
-      let e = d({}, p);
-      e[n] = Date.now(), p = e
+    if (t !== u.default.getId()) return;
+    let l = a.ZP.getGuildScheduledEvent(n);
+    if (null == l || l.status !== s.p1.SCHEDULED || null != E[n]) return;
+    let i = f[n];
+    if ((0, o.M)(l, true, i, false) === s.X_.NEW_EVENT) {
+      let e = d({}, E);
+      e[n] = Date.now(), E = e
     }
   },
   UPCOMING_GUILD_EVENT_NOTICE_SEEN: function(e) {
     let {
       guildEventId: t
-    } = e, n = d({}, h);
-    n[t] = Date.now(), h = n
+    } = e, n = d({}, f);
+    n[t] = Date.now(), f = n
   }
 })

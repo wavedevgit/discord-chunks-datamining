@@ -1,5 +1,5 @@
 /** Chunk was on 73628 **/
-/** chunk id: 587123, original params: e,A,t (module,exports,require) **/
+/** chunk id: 587123, original params: e,t,A (module,exports,require) **/
 require.d(exports, {
   P: () => i,
   W: () => o
@@ -7,36 +7,36 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk828762 = require("./828762.js");
-let a = Chunk647438.createContext(true);
+let l = Chunk647438.createContext(true);
 
 function i() {
-  let e = Chunk647438.useContext(a);
+  let e = Chunk647438.useContext(l);
   if (null == module) throw Error("No GuildProductAttachmentManagerContextProvider found");
   return module
 }
 
 function o(e) {
   var {
-    children: A,
-    guildId: t
-  } = e, r = function(e, A) {
+    children: t,
+    guildId: A
+  } = e, n = function(e, t) {
     if (null == e) return {};
-    var t, n, r = function(e, A) {
+    var A, r, n = function(e, t) {
       if (null == e) return {};
-      var t, n, r = {},
-        l = Object.keys(e);
-      for (n = 0; n < l.length; n++) t = l[n], A.indexOf(t) >= 0 || (r[t] = e[t]);
-      return r
-    }(e, A);
+      var A, r, n = {},
+        a = Object.keys(e);
+      for (r = 0; r < a.length; r++) A = a[r], t.indexOf(A) >= 0 || (n[A] = e[A]);
+      return n
+    }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var l = Object.getOwnPropertySymbols(e);
-      for (n = 0; n < l.length; n++) t = l[n], !(A.indexOf(t) >= 0) && Object.prototype.propertyIsEnumerable.call(e, t) && (r[t] = e[t])
+      var a = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < a.length; r++) A = a[r], !(t.indexOf(A) >= 0) && Object.prototype.propertyIsEnumerable.call(e, A) && (n[A] = e[A])
     }
-    return r
+    return n
   }(e, ["children", "guildId"]);
-  let i = (0, l.Z)(t, r);
-  return (0, n.jsx)(a.Provider, {
+  let i = (0, a.Z)(A, n);
+  return (0, r.jsx)(l.Provider, {
     value: i,
-    children: A
+    children: t
   })
 }

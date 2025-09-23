@@ -1,4 +1,4 @@
-/** Chunk was on 80037 **/
+/** Chunk was on 16820 **/
 /** chunk id: 400023, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => K
@@ -146,7 +146,7 @@ let q = (0, Chunk401393.animated)(Chunk481060.eTT),
       isEditing: null != S,
       keyboardModeEnabled: I,
       hasMoreAfter: g.hasMoreAfter
-    }), $ = (0, c.e7)([_.Z], () => Z.Z.can(V.Plq.READ_MESSAGE_HISTORY, m) ? null : _.Z.getViewingRolesTimestamp(m.getGuildId())), {
+    }), $ = (0, c.e7)([_.Z], () => Z.Z.can(H.Plq.READ_MESSAGE_HISTORY, m) ? null : _.Z.getViewingRolesTimestamp(m.getGuildId())), {
       channelStreamMarkup: ee,
       newMessagesBar: et,
       jumpToPresentBar: en,
@@ -172,7 +172,7 @@ let q = (0, Chunk401393.animated)(Chunk481060.eTT),
           null == (e = J.ref.current) || e.scrollToBottom({
             animate: !f.Z.useReducedMotion
           })
-        } else d.Z.jumpToPresent(m.id, V.AQB)
+        } else d.Z.jumpToPresent(m.id, H.AQB)
       },
       jumpBarClassName: M
     });
@@ -194,13 +194,13 @@ let q = (0, Chunk401393.animated)(Chunk481060.eTT),
           })
         }, [e]);
       (0, w.yp)({
-        event: V.CkL.SCROLLTO_PRESENT,
+        event: H.CkL.SCROLLTO_PRESENT,
         handler: t
       }), (0, w.yp)({
-        event: V.CkL.SCROLL_PAGE_UP,
+        event: H.CkL.SCROLL_PAGE_UP,
         handler: n
       }), (0, w.yp)({
-        event: V.CkL.SCROLL_PAGE_DOWN,
+        event: H.CkL.SCROLL_PAGE_DOWN,
         handler: r
       })
     }(J.ref);
@@ -219,17 +219,17 @@ let q = (0, Chunk401393.animated)(Chunk481060.eTT),
         let t = null == (e = O.Z.settings.appearance) ? true : e.clientThemeSettings;
         return (null == t ? true : t.backgroundGradientPresetId) != null || (null == t ? true : t.customUserThemeSettings) != null
       }),
-      ed = i.useMemo(() => L ? Y ? H.chatTypingGradientAtBottom : H.chatTypingGradientNotAtBottom : H.chatGradient, [L, Y]),
-      ep = i.useMemo(() => L ? Y ? H.typingGradientAtBottom : H.typingGradientNotAtBottom : H.gradientDefault, [L, Y]);
+      ed = i.useMemo(() => L ? Y ? F.chatTypingGradientAtBottom : F.chatTypingGradientNotAtBottom : F.chatGradient, [L, Y]),
+      ep = i.useMemo(() => L ? Y ? F.typingGradientAtBottom : F.typingGradientNotAtBottom : F.gradientDefault, [L, Y]);
     return (0, r.jsxs)(s.bG, {
       navigator: Q,
       children: [null != ei && ei, (0, r.jsxs)("div", {
-        className: a()(H.messagesWrapper, l, "group-spacing-".concat(o)),
+        className: a()(F.messagesWrapper, l, "group-spacing-".concat(o)),
         children: [null == ei && et, (0, r.jsxs)(q, z(G({
           ref: ec,
           customTheme: true,
-          className: a()(p, H.scroller, R && eu ? ep : true),
-          contentClassName: H.scrollerContent,
+          className: a()(p, F.scroller, R && eu ? ep : true),
+          contentClassName: F.scrollerContent,
           onResize: J.handleResize,
           onScroll: J.handleScroll,
           onMouseDown: J.handleMouseDown,
@@ -238,23 +238,23 @@ let q = (0, Chunk401393.animated)(Chunk481060.eTT),
           tabIndex: false,
           role: "group",
           children: [er, (0, r.jsxs)("ol", z(G({
-            className: a()(H.scrollerInner, {
-              [H.scrollerAllowSticky]: m.isModeratorReportChannel()
+            className: a()(F.scrollerInner, {
+              [F.scrollerAllowSticky]: m.isModeratorReportChannel()
             }),
-            "aria-label": F.intl.formatToPlainString(F.t.XarRiI, {
+            "aria-label": V.intl.formatToPlainString(V.t.XarRiI, {
               channelName: m.name
             })
           }, es), {
             children: [(0, r.jsx)("span", {
-              className: H.navigationDescription,
+              className: F.navigationDescription,
               id: "messagesNavigationDescription",
               "aria-hidden": true,
-              children: F.intl.string(F.t.Spb3s7)
+              children: V.intl.string(V.t.Spb3s7)
             }), ee, (0, r.jsx)("div", {
               className: a()({
-                [H.scrollerSpacer]: !N,
-                [H.empty]: 0 === g.length && !g.loadingMore,
-                [H.emptyForum]: 1 === g.length && !g.loadingMore && m.isForumPost() && (null == (t = g.first()) ? true : t.isFirstMessageInForumPost(m))
+                [F.scrollerSpacer]: !N,
+                [F.empty]: 0 === g.length && !g.loadingMore,
+                [F.emptyForum]: 1 === g.length && !g.loadingMore && m.isForumPost() && (null == (t = g.first()) ? true : t.isFirstMessageInForumPost(m))
               })
             })]
           }))]
@@ -285,7 +285,7 @@ let q = (0, Chunk401393.animated)(Chunk481060.eTT),
           canManageMessages: r,
           permissionVersion: i
         } = (0, c.cj)([Z.Z], () => ({
-          canManageMessages: Z.Z.can(V.Plq.MANAGE_MESSAGES, e),
+          canManageMessages: Z.Z.can(H.Plq.MANAGE_MESSAGES, e),
           permissionVersion: null != t ? Z.Z.getGuildVersion(t) : null
         }), [e, t]);
       return {
@@ -327,8 +327,8 @@ let q = (0, Chunk401393.animated)(Chunk481060.eTT),
       }
     }(), {
       messages: B,
-      channelStream: F,
-      oldestUnreadMessageId: H,
+      channelStream: V,
+      oldestUnreadMessageId: F,
       editingMessageId: q
     } = function(e) {
       var t, n;
@@ -344,7 +344,7 @@ let q = (0, Chunk401393.animated)(Chunk481060.eTT),
         }, {
           autoTrackExposure: false
         }),
-        o = null != (n = null == (t = A.default.getUser(j.default.getId())) ? true : t.hasFlag(V.xW$.SPAMMER)) && n,
+        o = null != (n = null == (t = A.default.getUser(j.default.getId())) ? true : t.hasFlag(H.xW$.SPAMMER)) && n,
         s = (0, p.ts)(e),
         u = (0, y.Z)("use_topic_dividers_in_chat"),
         d = (0, c.Wu)([v.Z], () => {
@@ -389,11 +389,11 @@ let q = (0, Chunk401393.animated)(Chunk481060.eTT),
           channel: t,
           messageDisplayCompact: !o && (a || k),
           messages: B,
-          channelStream: F,
+          channelStream: V,
           permissionVersion: _,
           uploads: (0, c.e7)([N.Z], () => N.Z.getFiles(t.id), [t]),
           unreadCount: (0, c.e7)([T.ZP], () => T.ZP.getUnreadCount(t.id), [t]),
-          hasUnreads: null != H,
+          hasUnreads: null != F,
           canChat: O,
           editingMessageId: q,
           fontSize: w,

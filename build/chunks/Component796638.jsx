@@ -1,8 +1,8 @@
-/** Chunk was on 47387 **/
+/** Chunk was on 56785 **/
 /** chunk id: 796638, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ZB: () => b,
-  ZP: () => S,
+  ZP: () => v,
   cF: () => p
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk538925 = require("./538925.js");
 let p = 112,
   m = 16 / 9 * 112 + 8,
-  E = 10 * Chunk70956.Z.Millis.SECOND;
+  _ = 10 * Chunk70956.Z.Millis.SECOND;
 
 function g(e) {
   var t;
@@ -36,27 +36,27 @@ function b(e, t) {
     {
       tileWidth: r,
       tileMinWidth: o,
-      tileMargin: u,
-      limit: c,
+      tileMargin: c,
+      limit: u,
       cropSelfVideo: f,
       version: p
     } = n,
-    [b, S] = l.useState(Date.now());
-  l.useEffect(() => {
+    [b, v] = i.useState(Date.now());
+  i.useEffect(() => {
     let e = setTimeout(() => {
-      S(Date.now())
-    }, E);
+      v(Date.now())
+    }, _);
     return () => {
       clearTimeout(e)
     }
   }, [t]);
-  let v = l.useRef({}),
+  let E = i.useRef({}),
     {
-      visibleParticipants: O,
-      participantTileWidth: h
-    } = l.useMemo(() => {
+      visibleParticipants: h,
+      participantTileWidth: y
+    } = i.useMemo(() => {
       let n = Date.now(),
-        l = (0, i.sortBy)(t, e => (function(e) {
+        i = (0, l.sortBy)(t, e => (function(e) {
           let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : Date.now();
           switch (e.type) {
             case d.fO.ACTIVITY:
@@ -67,63 +67,63 @@ function b(e, t) {
             case d.fO.USER:
               var n;
               let r = "\x06";
-              return e.speaking ? r = "\x03" : t - e.lastSpoke < E ? r = "\x04" : (null == (n = e.voiceState) ? true : n.selfVideo) && (r = "\x05"), "".concat(r).concat(function(e) {
+              return e.speaking ? r = "\x03" : t - e.lastSpoke < _ ? r = "\x04" : (null == (n = e.voiceState) ? true : n.selfVideo) && (r = "\x05"), "".concat(r).concat(function(e) {
                 let t = String(864e13).length;
                 return String(864e13 - e).padStart(t, "0")
               }(e.lastSpoke)).concat((0, a.Z)(e.userNick, e.user))
           }
         })(e, n)),
-        [p, m] = (0, i.partition)(l, d.Io),
+        [p, m] = (0, l.partition)(i, d.Io),
         b = p.findIndex(g),
-        S = null;
-      false !== b && (S = p[b], p.splice(b, 1));
-      let O = null == S || f ? e : e - r - u,
-        h = Math.max(0, Math.min(Math.floor((O - u) / (o + u)), c, t.length)),
-        y = Math.min((O - u) / h - u, r),
-        _ = Math.max(0, h - m.length),
-        j = m.slice(0, h),
-        Z = p.slice(0, _),
-        I = Array(_);
-      if (_ > 0) {
+        v = null;
+      false !== b && (v = p[b], p.splice(b, 1));
+      let h = null == v || f ? e : e - r - c,
+        y = Math.max(0, Math.min(Math.floor((h - c) / (o + c)), u, t.length)),
+        S = Math.min((h - c) / y - c, r),
+        O = Math.max(0, y - m.length),
+        I = m.slice(0, y),
+        w = p.slice(0, O),
+        j = Array(O);
+      if (O > 0) {
         let e = [];
-        for (let t of Z) {
-          let n = v.current[t.id];
-          null != n && n < _ ? I[n] = t : e.push(t)
+        for (let t of w) {
+          let n = E.current[t.id];
+          null != n && n < O ? j[n] = t : e.push(t)
         }
-        for (let t = 0; t < I.length; t++) {
-          if (null != I[t]) continue;
+        for (let t = 0; t < j.length; t++) {
+          if (null != j[t]) continue;
           let n = e.shift();
           if (null == n) break;
-          I[t] = n
+          j[t] = n
         }
       }
-      let w = I.filter(s.lm);
-      v.current = (0, i.keyBy)((0, i.range)(w.length), e => w[e].id);
-      let P = [...j, ...w];
-      return null != S && (f && P.length >= h ? P[Math.max(0, P.length - 1)] = S : P.push(S)), {
+      let C = j.filter(s.lm);
+      E.current = (0, l.keyBy)((0, l.range)(C.length), e => C[e].id);
+      let P = [...I, ...C];
+      return null != v && (f && P.length >= y ? P[Math.max(0, P.length - 1)] = v : P.push(v)), {
         visibleParticipants: P,
-        participantTileWidth: y
+        participantTileWidth: S
       }
-    }, [e, t, b, p, f, c, u, o, r]);
+    }, [e, t, b, p, f, u, c, o, r]);
   return {
-    visibleParticipants: O,
-    participantTileWidth: h
+    visibleParticipants: h,
+    participantTileWidth: y
   }
 }
 
-function S(e) {
+function v(e) {
   let {
     participants: t,
     participantTileWidth: n,
-    selectedParticipantId: l,
-    onDoubleClick: i,
+    selectedParticipantId: i,
+    onDoubleClick: l,
     onContextMenu: a,
     onClick: o,
-    channel: u,
+    channel: c,
     inCall: s,
     popoutWindow: d,
     paused: p = false
-  } = e, E = null != d;
+  } = e, _ = null != d;
   return (0, r.jsx)("div", {
     className: f.root,
     children: t.map(e => {
@@ -134,19 +134,19 @@ function S(e) {
         style: t ? {
           flexShrink: 0
         } : true,
-        children: (0, r.jsx)(c.ZP, {
+        children: (0, r.jsx)(u.ZP, {
           participant: e,
-          selected: l === e.id,
-          channel: u,
+          selected: i === e.id,
+          channel: c,
           className: f.tile,
-          fit: c.BP.COVER,
+          fit: u.BP.COVER,
           onClick: o,
-          onDoubleClick: i,
+          onDoubleClick: l,
           onContextMenu: a,
           width: t ? m : n,
           inCall: s,
           paused: p,
-          inPopout: E
+          inPopout: _
         })
       }, e.id)
     })

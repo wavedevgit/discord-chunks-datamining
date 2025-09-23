@@ -1,4 +1,4 @@
-/** Chunk was on 47387 **/
+/** Chunk was on 56785 **/
 /** chunk id: 90753, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -19,48 +19,48 @@ var Chunk647438 = require("./647438.js"),
 let g = 1e3 / 60;
 
 function b(e, t, n, b) {
-  let S = (0, a.dQu)(i.Z.unsafe_rawColors.BRAND_500).hex(),
-    v = (0, a.dQu)(i.Z.unsafe_rawColors.BLACK_500).hex(),
-    O = (0, a.dQu)(i.Z.unsafe_rawColors.WHITE_500).hex(),
-    h = r.useRef({}),
-    y = r.useRef(new l.Xp),
-    _ = r.useCallback(t => {
-      let n = c.Z.getDrawables(t);
+  let v = (0, a.dQu)(l.Z.unsafe_rawColors.BRAND_500).hex(),
+    E = (0, a.dQu)(l.Z.unsafe_rawColors.BLACK_500).hex(),
+    h = (0, a.dQu)(l.Z.unsafe_rawColors.WHITE_500).hex(),
+    y = r.useRef({}),
+    S = r.useRef(new i.Xp),
+    O = r.useCallback(t => {
+      let n = u.Z.getDrawables(t);
       (0, f.UN)(e),
       function(e) {
         let {
           canvasRef: t,
           drawables: n,
           fallbackColor: r,
-          linesDrawnAt: l,
-          streamerId: i,
+          linesDrawnAt: i,
+          streamerId: l,
           channelId: a,
           outlineColorDark: o,
-          outlineColorLight: c
+          outlineColorLight: u
         } = e;
         if (0 === n.length) return;
         let f = t.current;
         if (null == f) return;
-        let E = f.getContext("2d");
-        if (null == E) return;
+        let _ = f.getContext("2d");
+        if (null == _) return;
         let {
           width: g,
           height: b
-        } = f.getBoundingClientRect(), S = [];
+        } = f.getBoundingClientRect(), v = [];
         n.forEach(e => {
-          if (null == u.Z.getVoiceStateForChannel(a, e.userId)) return void S.push(e);
+          if (null == c.Z.getVoiceStateForChannel(a, e.userId)) return void v.push(e);
           ! function(e) {
             let {
               drawable: t,
               context: n,
               canvasWidth: r,
-              canvasHeight: l,
-              fallbackColor: i,
+              canvasHeight: i,
+              fallbackColor: l,
               outlineColorDark: a,
               outlineColorLight: o,
-              linesDrawnAt: u,
+              linesDrawnAt: c,
               streamerId: s,
-              deadDrawables: c
+              deadDrawables: u
             } = e;
             switch (t.type) {
               case d.W.LINE:
@@ -68,72 +68,72 @@ function b(e, t, n, b) {
                   line: t,
                   context: n,
                   canvasWidth: r,
-                  canvasHeight: l,
-                  fallbackColor: i,
+                  canvasHeight: i,
+                  fallbackColor: l,
                   outlineColorDark: a,
                   outlineColorLight: o,
-                  linesDrawnAt: u,
-                  deadDrawables: c
+                  linesDrawnAt: c,
+                  deadDrawables: u
                 });
               case d.W.EMOJI_HOSE:
                 return (0, p.Z)({
                   emojiHose: t,
                   context: n,
                   canvasWidth: r,
-                  canvasHeight: l,
-                  fallbackColor: i,
+                  canvasHeight: i,
+                  fallbackColor: l,
                   outlineColorDark: a,
                   outlineColorLight: o,
                   streamerId: s,
-                  deadDrawables: c
+                  deadDrawables: u
                 })
             }
           }({
             drawable: e,
-            context: E,
+            context: _,
             canvasWidth: g,
             canvasHeight: b,
             fallbackColor: r,
             outlineColorDark: o,
-            outlineColorLight: c,
-            linesDrawnAt: l,
-            deadDrawables: S,
-            streamerId: i
+            outlineColorLight: u,
+            linesDrawnAt: i,
+            deadDrawables: v,
+            streamerId: l
           })
-        }), S.length > 0 && (0, s.fW)(S, i)
+        }), v.length > 0 && (0, s.fW)(v, l)
       }({
         canvasRef: e,
         drawables: n,
-        fallbackColor: S,
-        linesDrawnAt: h,
+        fallbackColor: v,
+        linesDrawnAt: y,
         streamerId: t,
-        outlineColorDark: v,
-        outlineColorLight: O,
+        outlineColorDark: E,
+        outlineColorLight: h,
         channelId: b
       })
-    }, [e, b, S, v, O]);
+    }, [e, b, v, E, h]);
   r.useEffect(() => {
     let t = new ResizeObserver(() => {
       let t = e.current;
       if (null == t) return;
       let {
         width: r,
-        height: l
+        height: i
       } = t.getBoundingClientRect();
-      t.width = r * window.devicePixelRatio, t.height = l * window.devicePixelRatio, _(n)
+      t.width = r * window.devicePixelRatio, t.height = i * window.devicePixelRatio, O(n)
     });
     return null != e.current && t.observe(e.current), () => t.disconnect()
-  }, [e, _, n]);
-  let j = r.useCallback(() => {
-    let t = c.Z.getDrawables(n),
+  }, [e, O, n]);
+  let I = r.useCallback(() => {
+    let t = u.Z.getDrawables(n),
       r = p.U.getState().particles,
-      l = t.length > 0 || Object.keys(r).length > 0;
-    l && null == y.current._ref && (null == y.current._ref ? (_(n), y.current.start(g, () => _(n))) : l || null == y.current._ref || (y.current.stop(), (0, f.UN)(e)))
-  }, [e, _, n]);
+      i = t.length > 0 || Object.keys(r).length > 0;
+    i && null == S.current._ref && (null == S.current._ref ? (O(n), S.current.start(g, () => O(n))) : i || null == S.current._ref || (S.current.stop(), (0, f.UN)(e)))
+  }, [e, O, n]);
   r.useEffect(() => {
-    let e = y.current;
-    return c.Z.addChangeListener(j), j(), (0, o.vM)(t.getAvatarURL(null, E.Ks)), () => {
-      c.Z.removeChangeListener(j), e.stop()
+    let e = S.current;
+    return u.Z.addChangeListener(I), I(), (0, o.vM)(t.getAvatarURL(null, _.Ks)), () => {
+      u.Z.removeChangeListener(I), e.stop()
     }
   })
 }

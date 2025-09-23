@@ -1,7 +1,7 @@
 /** Chunk was on 2262 **/
 /** chunk id: 390620, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  y: () => p
+  y: () => f
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -17,7 +17,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk74866 = require("./74866.js");
 let g = 6 * Chunk70956.Z.Millis.SECOND;
 
-function f(e) {
+function p(e) {
   let {
     emoji: t,
     guildId: n
@@ -26,23 +26,23 @@ function f(e) {
     return null == (e = u.Z.getGuild(n)) ? true : e.name
   });
   return (0, r.jsxs)("div", {
-    className: i()(h.toast, m.toast),
-    children: [(0, r.jsx)(s.Z, {
+    className: i()(m.toast, h.toast),
+    children: [(0, r.jsx)(o.Z, {
       emojiId: t.id,
       size: "default"
-    }), (0, r.jsx)(o.Text, {
+    }), (0, r.jsx)(s.Text, {
       variant: "text-md/normal",
       color: "text-tertiary",
       children: d.intl.format(d.t.BaxFf3, {
         emojiName: t.name,
-        emojiNameHook: (e, t) => (0, r.jsx)(o.Text, {
+        emojiNameHook: (e, t) => (0, r.jsx)(s.Text, {
           variant: "text-md/semibold",
           color: "text-primary",
           tag: "strong",
           children: e
         }, t),
         guildName: l,
-        guildNameHook: (e, t) => (0, r.jsx)(o.Text, {
+        guildNameHook: (e, t) => (0, r.jsx)(s.Text, {
           variant: "text-md/semibold",
           color: "text-primary",
           tag: "strong",
@@ -53,14 +53,14 @@ function f(e) {
   })
 }
 
-function p(e) {
+function f(e) {
   let {
     emoji: t,
     guildId: n
   } = e;
-  (0, o.showToast)((0, o.createToast)("", o.ToastType.CUSTOM, {
-    position: o.ToastPosition.TOP,
-    component: (0, r.jsx)(f, {
+  (0, s.showToast)((0, s.createToast)("", s.ToastType.CUSTOM, {
+    position: s.ToastPosition.TOP,
+    component: (0, r.jsx)(p, {
       emoji: t,
       guildId: n
     }),

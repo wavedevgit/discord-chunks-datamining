@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 551139, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 93886 **/
+/** chunk id: 551139, original params: e,t,n (module,exports,require) **/
 module.exports = {
   channel: "channel__972a0",
   fullWidth: "fullWidth__972a0",

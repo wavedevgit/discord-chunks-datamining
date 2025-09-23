@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 479766, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 81501 **/
+/** chunk id: 479766, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => l
+  Z: () => s
 });
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function o(e, t, n) {
+function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,7 +14,7 @@ function o(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class s extends(r = Chunk442837.ZP.Store) {
+class c extends(r = Chunk442837.ZP.Store) {
   get redeemError() {
     return this._redeemVirtualCurrencyError
   }
@@ -115,8 +114,8 @@ class s extends(r = Chunk442837.ZP.Store) {
       VIRTUAL_CURRENCY_SET_BALANCE_PILL_OVERLAY: e => {
         this.setBalancePillOverlay(e.balancePillOverlay)
       }
-    }), o(this, "_entitlements", null), o(this, "_redeemingSkuId", null), o(this, "_isRedeemingVirtualCurrency", false), o(this, "_redeemVirtualCurrencyError", null), o(this, "_balance", null), o(this, "_fetchBalanceError", null), o(this, "_isFetchingBalance", false), o(this, "_onboardingModalOpenedPrior", false), o(this, "_balancePillOverlay", false)
+    }), l(this, "_entitlements", null), l(this, "_redeemingSkuId", null), l(this, "_isRedeemingVirtualCurrency", false), l(this, "_redeemVirtualCurrencyError", null), l(this, "_balance", null), l(this, "_fetchBalanceError", null), l(this, "_isFetchingBalance", false), l(this, "_onboardingModalOpenedPrior", false), l(this, "_balancePillOverlay", false)
   }
 }
-o(s, "displayName", "VirtualCurrencyStore");
-let l = new s
+l(c, "displayName", "VirtualCurrencyStore");
+let s = new c

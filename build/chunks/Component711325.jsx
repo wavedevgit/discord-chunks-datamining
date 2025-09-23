@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 711325, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 97571 **/
+/** chunk id: 711325, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => d
 });
 var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
@@ -12,28 +11,28 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk606502 = require("./606502.js");
 
-function u(e) {
+function d(e) {
   let {
     selected: t,
     onSelect: n
-  } = e, u = (0, a.ZP)();
-  return (0, r.jsxs)("div", {
+  } = e, d = (0, i.ZP)();
+  return (0, a.jsxs)("div", {
     className: c.picker,
-    children: [(0, r.jsx)(i.Text, {
+    children: [(0, a.jsx)(r.Text, {
       variant: "text-sm/semibold",
       children: "Preselected Gradient"
-    }), (0, r.jsx)("div", {
+    }), (0, a.jsx)("div", {
       className: c.themes,
       children: s.vs.map(e => {
-        let i = u !== l.BRd.LIGHT ? e.darkBackground : e.lightBackground,
-          a = t === e.name;
-        return (0, r.jsx)(o.S4, {
+        let r = d !== o.BRd.LIGHT ? e.darkBackground : e.lightBackground,
+          i = t === e.name;
+        return (0, a.jsx)(l.S4, {
           onSelect: () => n(e),
           style: {
-            background: i
+            background: r
           },
           name: e.name,
-          isSelected: a
+          isSelected: i
         }, e.name)
       })
     })]

@@ -1,4 +1,4 @@
-/** Chunk was on 33358 **/
+/** Chunk was on 69310 **/
 /** chunk id: 217314, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -23,9 +23,9 @@ function g(e) {
     g = (0, i.e7)([u.default], () => u.default.getUser(t)),
     m = (0, i.e7)([s.Z], () => s.Z.getStatus(t)),
     b = (0, i.e7)([s.Z], () => s.Z.isMobileOnline(t)),
-    O = (0, i.e7)([c.Z], () => c.Z.getNickname(t)),
-    y = d.ZP.useUserTag(g),
-    _ = (0, o.j)({
+    _ = (0, i.e7)([c.Z], () => c.Z.getNickname(t)),
+    O = d.ZP.useUserTag(g),
+    y = (0, o.j)({
       displayNameStyles: null == g ? true : g.displayNameStyles
     }),
     v = (0, a.m$)({
@@ -50,10 +50,10 @@ function g(e) {
       className: null != e.handleClick ? h.cursorPointer : null,
       children: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(l.DY3, {
-          text: y,
+          text: O,
           position: "bottom",
-          className: _,
-          children: null != O ? O : d.ZP.getName(g)
+          className: y,
+          children: null != _ ? _ : d.ZP.getName(g)
         }), v && (0, r.jsx)(l.ua7, {
           text: f.intl.string(f.t.QyZ4TU),
           children: e => {

@@ -1,14 +1,13 @@
-/** Chunk was on web.js **/
-/** chunk id: 330349, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 96887 **/
+/** chunk id: 330349, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  L: () => s,
-  N: () => o
+  L: () => o,
+  N: () => l
 });
 var Chunk884697 = require("./884697.js"),
   Chunk328456 = require("./328456.js");
 
-function a(e) {
+function n(e) {
   let t = new i.bB(e.items);
   return {
     firstProfileEffect: t.firstProfileEffect,
@@ -17,19 +16,19 @@ function a(e) {
   }
 }
 
-function o(e) {
+function l(e) {
   let {
     firstAvatarDecoration: t,
-    firstProfileEffect: n,
-    firstNameplate: r
-  } = a(e), i = null != t && null != n && null == r, o = null != t && null != n && null != r;
-  return i || o
+    firstProfileEffect: r,
+    firstNameplate: a
+  } = n(e);
+  return null != t && null != r && null == a || null != t && null != r && null != a
 }
 
-function s(e) {
-  if (!(0, r.x6)(e)) returnfalse;
+function o(e) {
+  if (!(0, a.x6)(e)) returnfalse;
   let {
     firstNameplate: t
-  } = a(e);
+  } = n(e);
   return null != t
 }

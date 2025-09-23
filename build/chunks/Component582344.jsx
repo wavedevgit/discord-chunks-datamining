@@ -1,7 +1,7 @@
-/** Chunk was on 10017 **/
+/** Chunk was on 97571 **/
 /** chunk id: 582344, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => h
 }), require("./388685.js"), require("./583741.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk775195 = require("./775195.jsx"),
   Chunk752519 = require("./752519.js");
 
-function p() {
+function h() {
   let {
     dailyCapReached: e,
     dailyCapOverridden: t,
@@ -24,7 +24,7 @@ function p() {
     dailyCapReached: Chunk68985.Z.hasUserHitDCCap(),
     dailyCapOverridden: Chunk68985.Z.dailyCapOverridden,
     newUserMinAgeRequiredOverridden: Chunk68985.Z.newUserMinAgeRequiredOverridden
-  })), [p, x] = Chunk647438.useState(""), f = Object.keys(Chunk704215.z).filter(e => e.toLowerCase().includes(p.toLowerCase())).reverse();
+  })), [h, x] = Chunk647438.useState(""), f = Object.keys(Chunk704215.z).filter(e => e.toLowerCase().includes(h.toLowerCase())).reverse();
   return (0, Chunk951288.jsx)(Chunk481060.zJl, {
     children: (0, Chunk951288.jsxs)("div", {
       className: Chunk752519.panelContainer,
@@ -59,7 +59,7 @@ function p() {
         children: [(0, Chunk951288.jsx)("div", {
           className: Chunk752519.searchBarContainer,
           children: (0, Chunk951288.jsx)(Chunk481060.E1j, {
-            query: p,
+            query: h,
             onChange: x,
             onClear: () => x("")
           })

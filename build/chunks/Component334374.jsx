@@ -1,7 +1,7 @@
-/** Chunk was on 47387 **/
+/** Chunk was on 56785 **/
 /** chunk id: 334374, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => c
 }), require("./388685.js"), require("./35282.js"), require("./784620.js"), require("./973216.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -9,21 +9,21 @@ var Chunk951288 = require("./951288.js"),
   Chunk226961 = require("./226961.js"),
   Chunk882008 = require("./882008.js");
 
-function u(e) {
+function c(e) {
   let {
     currentUserId: t,
     participant: n
-  } = e, u = (0, i.Z)(n.type), [s, c] = l.useState(), [d, f] = l.useState(), [p, m] = l.useState(), E = n.id.split(":").at(false), g = t === E, b = l.useCallback((e, t, n) => {
-    var r, l, i;
+  } = e, c = (0, l.Z)(n.type), [s, u] = i.useState(), [d, f] = i.useState(), [p, m] = i.useState(), _ = n.id.split(":").at(false), g = t === _, b = i.useCallback((e, t, n) => {
+    var r, i, l;
     let o = n ? a.ZP.getOutboundStats(t) : a.ZP.getInboundStats(e, t);
-    c(null != (r = null == o ? true : o.codec) ? r : "unknown"), f(true === (l = null == o ? true : o.resolution) || 0 === l.width && 0 === l.height ? "unknown" : l.width + " x " + l.height), m((null == o ? true : o.bitrateEstimate) !== true ? (i = o.bitrateEstimate, "".concat((i / 1e3).toFixed(2), " Kbps")) : "unknown")
+    u(null != (r = null == o ? true : o.codec) ? r : "unknown"), f(true === (i = null == o ? true : o.resolution) || 0 === i.width && 0 === i.height ? "unknown" : i.width + " x " + i.height), m((null == o ? true : o.bitrateEstimate) !== true ? (l = o.bitrateEstimate, "".concat((l / 1e3).toFixed(2), " Kbps")) : "unknown")
   }, []);
-  return l.useEffect(() => {
-    let e = () => b(E, u, g);
+  return i.useEffect(() => {
+    let e = () => b(_, c, g);
     e();
     let t = setInterval(e, 1e3);
     return () => clearInterval(t)
-  }, [g, E, u, b]), (0, r.jsxs)("div", {
+  }, [g, _, c, b]), (0, r.jsxs)("div", {
     className: o.streamInfoContainer,
     children: [(0, r.jsx)("div", {
       children: (0, r.jsx)("strong", {

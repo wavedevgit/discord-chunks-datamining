@@ -49,7 +49,7 @@ class w extends Chunk647438.PureComponent {
     (0, Chunk108427.e)("guildTemplate"), Chunk436620.KO || Chunk954824.Z.launch("discord://" + Chunk981631.Z5c.GUILD_TEMPLATE(this.props.code), () => true)
   }
   componentDidUpdate(e) {
-    this.props.code !== e.code && m.Z.resolveGuildTemplate(this.props.code)
+    this.props.code !== e.code && p.Z.resolveGuildTemplate(this.props.code)
   }
   renderButton(e, t) {
     return T.KO ? (0, r.jsx)(u.zx, {
@@ -187,20 +187,20 @@ function k(e) {
   E.Z.flowStep(A.MK.ORGANIC_GUILD_TEMPLATES, A.X2.GUILD_CREATE);
   let l = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(u.Dx, {
-      className: Z.header,
-      children: P.intl.string(P.t.UNFvtL)
+      className: P.header,
+      children: Z.intl.string(Z.t.UNFvtL)
     }), n, (0, r.jsx)(u.zx, {
-      className: Z.createButton,
+      className: P.createButton,
       onClick: i,
-      children: P.intl.string(P.t.xr59t7)
+      children: Z.intl.string(Z.t.xr59t7)
     })]
   });
   return (0, r.jsx)(N.Z, {
-    className: Z.authBox,
-    children: () => [(0, r.jsx)(p.Z, {
+    className: P.authBox,
+    children: () => [(0, r.jsx)(m.Z, {
       guildTemplate: t
     }, "template"), (0, r.jsx)("div", {
-      className: Z.formContainer,
+      className: P.formContainer,
       children: l
     }, "contents")]
   })

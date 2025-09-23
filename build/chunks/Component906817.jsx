@@ -1,9 +1,9 @@
-/** Chunk was on 33358 **/
+/** Chunk was on 69310 **/
 /** chunk id: 906817, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   EM: () => m,
   WW: () => b,
-  ZP: () => O
+  ZP: () => _
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -53,23 +53,23 @@ function b(e, t) {
     }
   }
 }
-let O = Chunk647438.memo(function(e) {
+let _ = Chunk647438.memo(function(e) {
   let {
     sectionIndex: t,
     guild: n,
     guildChannels: m,
     guildChannelsVersion: b,
-    selectedChannelId: O,
-    disableManageChannels: y
+    selectedChannelId: _,
+    disableManageChannels: O
   } = e, {
-    isFavoritesPerk: _
+    isFavoritesPerk: y
   } = (0, a.z)("ChannelListSection"), v = i.useCallback(() => {
     let e = m.getCategoryFromSection(m.recentsSectionNumber);
     if (null == e) return;
     let t = null,
       r = e.getShownChannelAndThreadIds();
-    null != O && r.includes(O) && (t = (0, s.KY)(m)), (0, s.Uo)(n.id, r, t)
-  }, [n.id, O, m, b]), {
+    null != _ && r.includes(_) && (t = (0, s.KY)(m)), (0, s.Uo)(n.id, r, t)
+  }, [n.id, _, m, b]), {
     density: j
   } = (0, l.TCT)(), x = "compact" === j ? 8 : p.$k;
   switch (t) {
@@ -88,7 +88,7 @@ let O = Chunk647438.memo(function(e) {
       });
     case u.p2:
       return (0, r.jsx)(d.P, {
-        name: _ ? h.intl.string(h.t.mlPMCw) : h.intl.string(h.t.k8fFjo)
+        name: y ? h.intl.string(h.t.mlPMCw) : h.intl.string(h.t.k8fFjo)
       });
     case m.recentsSectionNumber:
       return (0, r.jsx)(d.P, {
@@ -115,7 +115,7 @@ let O = Chunk647438.memo(function(e) {
       return (0, r.jsx)(d.ZP, {
         channel: e.record,
         position: e.position,
-        disableManageChannels: y,
+        disableManageChannels: O,
         children: (0, r.jsx)(c.Z, {
           inlineSpecs: p.MF,
           arrowAlignment: o.cy.TOP,
@@ -130,7 +130,7 @@ let O = Chunk647438.memo(function(e) {
       return (0, r.jsx)(d.ZP, {
         channel: e.record,
         position: e.position,
-        disableManageChannels: y
+        disableManageChannels: O
       })
     }
   }

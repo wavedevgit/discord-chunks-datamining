@@ -1,7 +1,7 @@
-/** Chunk was on 10017 **/
+/** Chunk was on 97571 **/
 /** chunk id: 206878, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  g: () => j
+  g: () => v
 }), require("./388685.js"), require("./35282.js");
 var Chunk647438 = require("./647438.js"),
   Chunk281598 = require("./281598.js");
@@ -55,11 +55,11 @@ let s = new Set([Chunk281598.jE.HERO_BANNER_STATIC, Chunk281598.jE.HERO_LOGO, Ch
     max: 1e6,
     warn: 5e5
   },
-  h = {
+  p = {
     max: 25e4,
     warn: 5e4
   },
-  p = {
+  h = {
     [Chunk281598.aB.PROFILE_EFFECT]: c,
     [Chunk281598.aB.AVATAR_DECORATION]: d,
     [Chunk281598.jE.HERO_BANNER_ANIMATED]: c,
@@ -71,12 +71,12 @@ let s = new Set([Chunk281598.jE.HERO_BANNER_STATIC, Chunk281598.jE.HERO_LOGO, Ch
     [Chunk281598.jE.SHOP_BUTTON_BG_RESTING_LIGHT]: d,
     [Chunk281598.jE.HERO_BANNER_STATIC]: u,
     [Chunk281598.jE.UPSELL_BANNER]: m,
-    [Chunk281598.jE.UPSELL_BANNER_POPOUT]: h,
+    [Chunk281598.jE.UPSELL_BANNER_POPOUT]: p,
     [Chunk281598.jE.MOBILE_BANNER]: m,
-    [Chunk281598.jE.MOBILE_BACKGROUND]: h,
-    [Chunk281598.jE.PDP_BACKGROUND]: h,
-    [Chunk281598.jE.LOGO]: h,
-    [Chunk281598.jE.COACHTIP_AVATAR]: h
+    [Chunk281598.jE.MOBILE_BACKGROUND]: p,
+    [Chunk281598.jE.PDP_BACKGROUND]: p,
+    [Chunk281598.jE.LOGO]: p,
+    [Chunk281598.jE.COACHTIP_AVATAR]: p
   },
   x = async e => {
     let t = Object.values(r.CM),
@@ -99,10 +99,10 @@ let s = new Set([Chunk281598.jE.HERO_BANNER_STATIC, Chunk281598.jE.HERO_LOGO, Ch
       n("Files exceed the recommended size limit - make sure they are optimized!", ["".concat(l, " (max: ").concat(t, ")")])
     } else r > e.warn && a("Files are a tad chonky - are you sure they're optimized?", ["".concat(l)])
   }, g = (e, t, n, a) => {
-    let r = p[e];
+    let r = h[e];
     if (null != r)
       for (let e of t) e.name.endsWith(".txt") || b(r, e, n, a)
-  }, j = () => {
+  }, v = () => {
     let [e, t] = Chunk647438.useState(false), [n, c] = Chunk647438.useState({}), [d, u] = Chunk647438.useState({}), m = Chunk647438.useCallback(function(e) {
       let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [];
       u(n => {
@@ -112,7 +112,7 @@ let s = new Set([Chunk281598.jE.HERO_BANNER_STATIC, Chunk281598.jE.HERO_LOGO, Ch
           [e]: [...r, ...t]
         })
       })
-    }, []), h = Chunk647438.useCallback(function(e) {
+    }, []), p = Chunk647438.useCallback(function(e) {
       let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [];
       c(n => {
         var a;
@@ -121,7 +121,7 @@ let s = new Set([Chunk281598.jE.HERO_BANNER_STATIC, Chunk281598.jE.HERO_LOGO, Ch
           [e]: [...r, ...t]
         })
       })
-    }, []), j = Chunk647438.useCallback(() => {
+    }, []), v = Chunk647438.useCallback(() => {
       exports(false), u({}), c({})
     }, []);
     return {
@@ -145,7 +145,7 @@ let s = new Set([Chunk281598.jE.HERO_BANNER_STATIC, Chunk281598.jE.HERO_LOGO, Ch
             } = e;
             for (let e of t.collectionFiles) {
               let t = (0, r.BU)(e),
-                i = null != t ? p[t] : null;
+                i = null != t ? h[t] : null;
               null != i && b(i, e, n, a)
             }
             f({
@@ -160,7 +160,7 @@ let s = new Set([Chunk281598.jE.HERO_BANNER_STATIC, Chunk281598.jE.HERO_LOGO, Ch
           })({
             files: n,
             addError: m,
-            addWarning: h
+            addWarning: p
           }), (e => {
             let {
               files: t,
@@ -187,7 +187,7 @@ let s = new Set([Chunk281598.jE.HERO_BANNER_STATIC, Chunk281598.jE.HERO_LOGO, Ch
           })({
             files: n,
             addError: m,
-            addWarning: h
+            addWarning: p
           }), (e => {
             let {
               files: t,
@@ -201,7 +201,7 @@ let s = new Set([Chunk281598.jE.HERO_BANNER_STATIC, Chunk281598.jE.HERO_LOGO, Ch
           })({
             files: n,
             addError: m,
-            addWarning: h
+            addWarning: p
           }), (e => {
             let {
               files: t,
@@ -211,12 +211,12 @@ let s = new Set([Chunk281598.jE.HERO_BANNER_STATIC, Chunk281598.jE.HERO_LOGO, Ch
           })({
             files: n,
             addError: m,
-            addWarning: h
+            addWarning: p
           })
         } finally {
           t(true)
         }
-      }, [m, h]),
-      reset: j
+      }, [m, p]),
+      reset: v
     }
   }

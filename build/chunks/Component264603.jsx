@@ -1,4 +1,4 @@
-/** Chunk was on 10017 **/
+/** Chunk was on 97571 **/
 /** chunk id: 264603, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk246992 = require("./246992.js"),
   Chunk866403 = require("./866403.js"),
   Chunk963801 = require("./963801.js");
-let v = [{
+let j = [{
   label: "Unset",
   value: Chunk524437.O_.SLAYER_SDK_RECEIVE_IN_GAME_DMS_UNSET
 }, {
@@ -57,7 +57,7 @@ function _() {
         variant: "text-md/normal",
         children: "Receive DMs In Game"
       }), (0, Chunk951288.jsx)(Chunk481060.PhF, {
-        options: v,
+        options: j,
         isSelected: e => e === t,
         select: Chunk695346.JG.updateSetting,
         popoutLayerContext: Chunk246992.O$,

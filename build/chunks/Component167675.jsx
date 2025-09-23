@@ -1,7 +1,7 @@
-/** Chunk was on 80037 **/
+/** Chunk was on 36084 **/
 /** chunk id: 167675, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => f
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -14,19 +14,19 @@ var Chunk442837 = require("./442837.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx");
 
-function p(e) {
-  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : u.Yn.DEFAULT,
-    [n, p, h] = (0, o.Z)(e, t),
-    f = (0, i.e7)([a.ZP], () => a.ZP.disableHideSelfStreamAndVideoConfirmationAlert);
+function f(e) {
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : s.Yn.DEFAULT,
+    [n, f, p] = (0, u.Z)(e, t),
+    g = (0, i.e7)([o.ZP], () => o.ZP.disableHideSelfStreamAndVideoConfirmationAlert);
   return n ? (0, r.jsx)(l.S89, {
     id: "self-video-hide",
     label: d.intl.string(d.t.MH8ESU),
-    checked: !p,
+    checked: !f,
     action: () => {
-      if (f || p) return h(!p);
+      if (g || f) return p(!f);
       (0, l.h7j)(e => {
         var t, n;
-        return (0, r.jsx)(s.Z, (t = function(e) {
+        return (0, r.jsx)(a.Z, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -45,7 +45,7 @@ function p(e) {
           return e
         }({}, e), n = n = {
           type: c.K.VIDEO,
-          onConfirm: () => h(!p)
+          onConfirm: () => p(!f)
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {

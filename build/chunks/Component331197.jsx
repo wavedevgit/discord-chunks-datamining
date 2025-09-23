@@ -1,4 +1,4 @@
-/** Chunk was on 80037 **/
+/** Chunk was on 16820 **/
 /** chunk id: 331197, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -48,9 +48,9 @@ function j(e) {
   }), [D, U] = (0, h.cv)(L), {
     analyticsLocations: B
   } = (0, u.ZP)(), {
-    isHovered: V,
-    setIsHovered: F,
-    onMouseEnter: H,
+    isHovered: H,
+    setIsHovered: V,
+    onMouseEnter: F,
     onMouseLeave: G
   } = (0, f.Z)(200, 300);
 
@@ -98,19 +98,19 @@ function j(e) {
   }
 
   function W() {
-    (0, d.v)(P, d.d.SOUNDBOARD), E === x.D.SOUNDBOARD ? (null == S || S(true), G()) : (null != E ? (Z(), H()) : Z(), null == S || S(x.D.SOUNDBOARD))
+    (0, d.v)(P, d.d.SOUNDBOARD), E === x.D.SOUNDBOARD ? (null == S || S(true), G()) : (null != E ? (Z(), F()) : Z(), null == S || S(x.D.SOUNDBOARD))
   }
   let q = i.useRef(null);
   return (0, r.jsx)(s.y, {
     targetElementRef: q,
-    shouldShow: V && (E === x.D.SOUNDBOARD || null == E) || E === x.D.SOUNDBOARD,
+    shouldShow: H && (E === x.D.SOUNDBOARD || null == E) || E === x.D.SOUNDBOARD,
     animation: s.y.Animation.FADE,
     animationPosition: "top",
     position: "top",
     align: "center",
     spacing: 16,
     onRequestClose: () => {
-      F(false), null == S || S(true)
+      V(false), null == S || S(true)
     },
     renderPopout: e => {
       let {
@@ -118,7 +118,7 @@ function j(e) {
       } = e;
       return k ? null : (0, r.jsx)(_.Z, {
         children: (0, r.jsx)("div", {
-          onMouseEnter: H,
+          onMouseEnter: F,
           onMouseLeave: G,
           children: (0, r.jsx)(b.Z, {
             guildId: A,
@@ -143,13 +143,13 @@ function j(e) {
       onContextMenu: z,
       onClick: W,
       onMouseEnter: () => {
-        H(), T()
+        F(), T()
       },
       onMouseLeave: () => {
         null == E && (G(), N())
       },
-      isActive: V || E === x.D.SOUNDBOARD,
-      color: V || E === x.D.SOUNDBOARD ? "primaryDark" : true
+      isActive: H || E === x.D.SOUNDBOARD,
+      color: H || E === x.D.SOUNDBOARD ? "primaryDark" : true
     })
   })
 }

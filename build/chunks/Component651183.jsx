@@ -1,7 +1,7 @@
-/** Chunk was on 47387 **/
+/** Chunk was on 56785 **/
 /** chunk id: 651183, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => c
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -10,31 +10,31 @@ var Chunk458725 = require("./458725.js"),
   Chunk42326 = require("./42326.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function u(e) {
+function c(e) {
   let {
     participant: t,
     className: n
-  } = e, u = (0, i.Z)(t);
-  if (null == u) return null;
+  } = e, c = (0, l.Z)(t);
+  if (null == c) return null;
   let s = function(e) {
     switch (e) {
-      case l.u.STREAM_SEND_LOW_FPS:
-      case l.u.STREAM_SEND_HIGH_PACKET_LOSS:
+      case i.u.STREAM_SEND_LOW_FPS:
+      case i.u.STREAM_SEND_HIGH_PACKET_LOSS:
         return o.intl.string(o.t["1f1LHh"]);
-      case l.u.STREAM_BAD_NETWORK_QUALITY:
+      case i.u.STREAM_BAD_NETWORK_QUALITY:
         return o.intl.string(o.t.Ic588P);
-      case l.u.STREAM_SOUNDSHARE_FAILED:
+      case i.u.STREAM_SOUNDSHARE_FAILED:
         return o.intl.string(o.t["9lcycn"]);
-      case l.u.STREAM_VIEW_HIGH_PACKET_LOSS:
-      case l.u.STREAM_VIEW_LOW_FPS:
+      case i.u.STREAM_VIEW_HIGH_PACKET_LOSS:
+      case i.u.STREAM_VIEW_LOW_FPS:
         return o.intl.string(o.t.BcOif3);
       default:
         return
     }
-  }(u);
+  }(c);
   return null != s ? (0, r.jsx)(a.Z, {
     className: n,
     errorMessage: s,
-    avError: u
+    avError: c
   }) : null
 }

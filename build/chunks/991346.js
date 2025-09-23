@@ -105,7 +105,7 @@ function V(e) {
   }, {
     header: "Developer Only",
     divider: true,
-    settings: r ? [M.s6.EXPERIMENTS, M.s6.DEVELOPER_OPTIONS, M.s6.SHOP_KEEPER, M.s6.QUEST_PREVIEW_TOOL_2] : []
+    settings: r ? [M.s6.EXPERIMENTS, M.s6.DEVELOPER_OPTIONS, M.s6.QUEST_PREVIEW_TOOL_2] : []
   }, {
     divider: true,
     settings: [M.s6.LOGOUT]

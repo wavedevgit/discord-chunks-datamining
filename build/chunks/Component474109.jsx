@@ -1,4 +1,4 @@
-/** Chunk was on 33358 **/
+/** Chunk was on 69310 **/
 /** chunk id: 474109, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => v
@@ -19,19 +19,19 @@ var Chunk951288 = require("./951288.js"),
 let m = "app-download-item",
   b = "add-server-item";
 
-function O() {
+function _() {
   returnfalse
 }
 
-function y(e) {
+function O(e) {
   var t;
   let n = s.default.getMutableGuildStates();
   return e === h.x8Z.SERVER_DISCOVERY_BADGE && !d.Z.hasViewed(h.x8Z.SERVER_DISCOVERY_BADGE) || e !== m && e !== b && (null == (t = n[null != e ? e : "null"]) ? true : t.highImportanceMentionCount) > 0
 }
-let _ = (0, Chunk251625.oH)((e, t, n) => ["null", ...t, ...e, b, h.x8Z.E3_SERVER_DISCOVERY_BADGE, m]),
+let y = (0, Chunk251625.oH)((e, t, n) => ["null", ...t, ...e, b, h.x8Z.E3_SERVER_DISCOVERY_BADGE, m]),
   v = Chunk647438.forwardRef(function(e, t) {
     var n, i;
-    let d = (0, l.Wu)([u.ZP, c.Z, s.default], () => _(u.ZP.getGuildFolders(), c.Z.getUnreadPrivateChannelIds(), s.default.getStoreChangeSentinel())),
+    let d = (0, l.Wu)([u.ZP, c.Z, s.default], () => y(u.ZP.getGuildFolders(), c.Z.getUnreadPrivateChannelIds(), s.default.getStoreChangeSentinel())),
       f = (0, l.e7)([p.Z], () => p.Z.isFocused()),
       h = (0, l.e7)([a.Z], () => a.Z.getExpandedFolders());
     return (0, r.jsx)(o.Z, (n = function(e) {
@@ -54,10 +54,10 @@ let _ = (0, Chunk251625.oH)((e, t, n) => ["null", ...t, ...e, b, h.x8Z.E3_SERVER
     }({}, e), i = i = {
       ref: t,
       items: d,
-      isUnread: O,
+      isUnread: _,
       textUnread: g.intl.string(g.t.y2b7CA),
       textMention: g.intl.string(g.t.y2b7CA),
-      isMentioned: y,
+      isMentioned: O,
       animate: f,
       expandedFolders: h
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {

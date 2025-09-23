@@ -1,7 +1,7 @@
 /** Chunk was on 75157 **/
-/** chunk id: 710658, original params: t,e,a (module,exports,require) **/
+/** chunk id: 710658, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  default: () => k
+  default: () => g
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,48 +15,48 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk483187 = require("./483187.js"),
   Chunk811086 = require("./811086.js");
-let k = t => {
+let g = t => {
   let {
     transitionState: e,
-    onClose: a,
-    product: k
+    onClose: n,
+    product: g
   } = t;
-  i.useEffect(() => {
-    d.default.track(p.rMx.OPEN_MODAL, {
+  r.useEffect(() => {
+    u.default.track(c.rMx.OPEN_MODAL, {
       type: "September Marketing Moment 2025 Claim Modal"
     })
   }, []);
-  let g = (0, r.Z)(),
+  let b = (0, a.Z)(),
     {
-      handleUseNow: h,
-      isApplying: m
-    } = (0, o.W)({
-      product: k,
-      onSuccess: a,
-      onError: a
+      handleUseNow: m,
+      isApplying: h
+    } = (0, s.W)({
+      product: g,
+      onSuccess: n,
+      onError: n
     });
-  return (0, n.jsx)(c.I, {
+  return (0, i.jsx)(l.I, {
     gradientColor: "nitro-pink",
-    title: u.intl.string(u.t.qYWlf3),
-    subtitle: u.intl.string(u.t.x01cl5),
+    title: p.intl.string(p.t.qYWlf3),
+    subtitle: p.intl.string(p.t.x01cl5),
     actions: [{
-      text: u.intl.string(u.t["2p2aY2"]),
+      text: p.intl.string(p.t["2p2aY2"]),
       variant: "secondary",
       onClick: () => {
-        a(), (0, s.default)(), null == g || g()
+        n(), (0, o.default)(), null == b || b()
       }
     }, {
-      text: u.intl.string(u.t.MAS7uL),
+      text: p.intl.string(p.t.MAS7uL),
       variant: "primary",
-      onClick: h,
-      loading: m
+      onClick: m,
+      loading: h
     }],
     graphic: {
       type: "video",
-      src: (0, l.rO)() ? b.Z : f.Z,
+      src: (0, d.rO)() ? f.Z : y.Z,
       loop: true
     },
     transitionState: e,
-    onClose: a
+    onClose: n
   })
 }

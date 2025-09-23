@@ -1,4 +1,4 @@
-/** Chunk was on 10017 **/
+/** Chunk was on 97571 **/
 /** chunk id: 903502, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk246992 = require("./246992.js"),
   Chunk531578 = require("./531578.js"),
   Chunk400678 = require("./400678.js");
-let p = [{
+let h = [{
   label: "second(s)",
   value: 1e3
 }, {
@@ -29,7 +29,7 @@ let p = [{
 }];
 
 function x() {
-  let [e, t] = Chunk647438.useState(null), [n, x] = Chunk647438.useState(0), [f, b] = Chunk647438.useState(1e3), [g, j] = Chunk647438.useState(0), v = (0, Chunk442837.e7)([Chunk115470.Z], () => {
+  let [e, t] = Chunk647438.useState(null), [n, x] = Chunk647438.useState(0), [f, b] = Chunk647438.useState(1e3), [g, v] = Chunk647438.useState(0), j = (0, Chunk442837.e7)([Chunk115470.Z], () => {
     var t;
     return null === module ? null : null != (t = Chunk115470.Z.getFeedbackConfig(Chunk531578.nw[module])) ? exports : Chunk178635.R[Chunk531578.nw[module]]
   }), _ = Object.entries(Chunk531578.nw), y = _.slice(_.length / 2).map(e => {
@@ -58,7 +58,7 @@ function x() {
       title: "Override Survey Cooldown",
       className: Chunk400678.formElement,
       tag: Chunk481060.RB0.H3,
-      children: [null != v && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+      children: [null != j && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
         children: [(0, Chunk951288.jsx)(Chunk511010.Z, {
           className: Chunk400678.formDividerTitle,
           children: (0, Chunk951288.jsx)(Chunk481060.Text, {
@@ -67,16 +67,16 @@ function x() {
           })
         }), (0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-sm/normal",
-          children: "".concat(v.cooldown / 1e3, " second(s) or")
+          children: "".concat(j.cooldown / 1e3, " second(s) or")
         }), (0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-sm/normal",
-          children: "".concat(v.cooldown / 6e4, " minute(s) or")
+          children: "".concat(j.cooldown / 6e4, " minute(s) or")
         }), (0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-sm/normal",
-          children: "".concat(v.cooldown / 36e5, " hour(s) or")
+          children: "".concat(j.cooldown / 36e5, " hour(s) or")
         }), (0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-sm/normal",
-          children: "".concat(v.cooldown / 864e5, " day(s)")
+          children: "".concat(j.cooldown / 864e5, " day(s)")
         })]
       }), (0, Chunk951288.jsx)(Chunk511010.Z, {
         className: Chunk400678.formDividerTitle,
@@ -93,7 +93,7 @@ function x() {
           placeholder: "Duration length",
           onChange: e => x(parseFloat(e))
         }), (0, Chunk951288.jsx)(Chunk481060.q4e, {
-          options: p,
+          options: h,
           value: f,
           onChange: e => {
             b(e)
@@ -105,7 +105,7 @@ function x() {
       title: "Override Survey Chance",
       className: Chunk400678.formElement,
       tag: Chunk481060.RB0.H3,
-      children: [null != v && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+      children: [null != j && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
         children: [(0, Chunk951288.jsx)(Chunk511010.Z, {
           className: Chunk400678.formDividerTitle,
           children: (0, Chunk951288.jsx)(Chunk481060.Text, {
@@ -114,7 +114,7 @@ function x() {
           })
         }), (0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-sm/normal",
-          children: "".concat(100 * v.chance, "%")
+          children: "".concat(100 * j.chance, "%")
         })]
       }), (0, Chunk951288.jsx)(Chunk511010.Z, {
         className: Chunk400678.formDividerTitle,
@@ -129,7 +129,7 @@ function x() {
           max: 100,
           value: g.toString(),
           type: "number",
-          onChange: e => j(parseFloat(e))
+          onChange: e => v(parseFloat(e))
         }), (0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-md/normal",
           children: "%"
@@ -140,9 +140,9 @@ function x() {
       children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
         variant: "primary",
         text: "Update",
-        onClick: () => void(null != v && Chunk570140.Z.dispatch({
+        onClick: () => void(null != j && Chunk570140.Z.dispatch({
           type: "FEEDBACK_OVERRIDE_SET",
-          feedbackType: v.feedbackType,
+          feedbackType: j.feedbackType,
           cooldown: require * f,
           chance: g / 100
         })),
@@ -150,9 +150,9 @@ function x() {
       }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
         variant: "primary",
         text: "Clear Override",
-        onClick: () => void(null != v && Chunk570140.Z.dispatch({
+        onClick: () => void(null != j && Chunk570140.Z.dispatch({
           type: "FEEDBACK_OVERRIDE_CLEAR",
-          feedbackType: v.feedbackType
+          feedbackType: j.feedbackType
         })),
         disabled: !C
       })]

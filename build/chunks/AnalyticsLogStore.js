@@ -1,4 +1,4 @@
-/** Chunk was on 10017 **/
+/** Chunk was on 97571 **/
 /** chunk id: 120816, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -11,8 +11,8 @@ var a, r, Chunk772848 = require("./772848.js"),
   Chunk906467 = require("./906467.js");
 let u = 0,
   m = [],
-  h = 0,
-  p = [],
+  p = 0,
+  h = [],
   x = false;
 class f extends(a = Chunk442837.ZP.Store) {
   initialize() {
@@ -22,10 +22,10 @@ class f extends(a = Chunk442837.ZP.Store) {
     return m
   }
   get loggedEventsVersion() {
-    return h
+    return p
   }
   get loggedTriggers() {
-    return p
+    return h
   }
   get trackTriggers() {
     return x
@@ -49,7 +49,7 @@ let b = new f(Chunk570140.Z, {
       properties: n,
       fingerprint: null != a ? (0, l.s)(a) : c.default.getId(),
       timestamp: new Date
-    }), h++, m.length > 500 && (m = m.slice(-Math.floor(250))))
+    }), p++, m.length > 500 && (m = m.slice(-Math.floor(250))))
   },
   TRACK_TRIGGER: function(e) {
     let {
@@ -60,7 +60,7 @@ let b = new f(Chunk570140.Z, {
       location: l,
       previouslyTracked: s
     } = e;
-    d.Z.isDeveloper && x && (p = [...p, {
+    d.Z.isDeveloper && x && (h = [...h, {
       key: (0, i.Z)(),
       experimentId: t,
       descriptor: n,
@@ -69,7 +69,7 @@ let b = new f(Chunk570140.Z, {
       location: l,
       previouslyTracked: s,
       timestamp: new Date
-    }]).length > 500 && p.shift()
+    }]).length > 500 && h.shift()
   },
   SET_TRACK_TRIGGERS: function(e) {
     let {
@@ -78,6 +78,6 @@ let b = new f(Chunk570140.Z, {
     x = t
   },
   ANALYTICS_LOG_CLEAR: function() {
-    m = [], h++, p = []
+    m = [], p++, h = []
   }
 })

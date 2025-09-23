@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 723547, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 97571 **/
+/** chunk id: 723547, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  v: () => l
+  v: () => o
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -11,32 +10,32 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk376499 = require("./376499.js");
 
-function l(e) {
+function o(e) {
   let {
     markAsDismissed: t,
     onCTA: n
   } = e;
-  return (0, r.jsx)("div", {
+  return (0, a.jsx)("div", {
     className: s.popup,
-    children: (0, r.jsxs)("div", {
+    children: (0, a.jsxs)("div", {
       className: s.content,
-      children: [(0, r.jsx)(i.P3F, {
+      children: [(0, a.jsx)(r.P3F, {
         className: s.closeIcon,
-        onClick: () => t(a.L.USER_DISMISS),
-        children: (0, r.jsx)(i.Dio, {
+        onClick: () => t(i.L.USER_DISMISS),
+        children: (0, a.jsx)(r.Dio, {
           size: "xs"
         })
-      }), (0, r.jsx)(i.Text, {
+      }), (0, a.jsx)(r.Text, {
         className: s.description,
         variant: "text-md/normal",
-        children: o.intl.string(o.t["Ny/0ur"])
-      }), (0, r.jsx)(i.zxk, {
+        children: l.intl.string(l.t["Ny/0ur"])
+      }), (0, a.jsx)(r.zxk, {
         variant: "primary",
         size: "sm",
-        text: o.intl.string(o.t.TYo739),
+        text: l.intl.string(l.t.TYo739),
         fullWidth: true,
         onClick: () => {
-          t(a.L.TAKE_ACTION), n()
+          t(i.L.TAKE_ACTION), n()
         }
       })]
     })

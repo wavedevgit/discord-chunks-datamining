@@ -1,37 +1,37 @@
-/** Chunk was on 86383 **/
-/** chunk id: 133853, original params: t,e,i (module,exports,require) **/
+/** Chunk was on 69773 **/
+/** chunk id: 133853, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => h
 }), require("./388685.js");
-var s, Chunk951288 = require("./951288.js"),
+var a, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  r = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk748780 = require("./748780.js"),
   Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js"),
   Chunk816716 = require("./816716.js");
 
-function u(t, e, i) {
-  return e in t ? Object.defineProperty(t, e, {
-    value: i,
+function f(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
     enumerable: true,
     configurable: true,
     writable: true
-  }) : t[e] = i, t
+  }) : e[t] = n, e
 }
-class p extends(s = Chunk647438.Component) {
+class h extends(a = Chunk647438.Component) {
   componentDidMount() {
     this.props.show && this.animate(1)
   }
-  componentDidUpdate(t) {
-    t.show !== this.props.show && this.animate(+!!this.props.show)
+  componentDidUpdate(e) {
+    e.show !== this.props.show && this.animate(+!!this.props.show)
   }
   getAnimatedStyle() {
     let {
-      anim: t
+      anim: e
     } = this, {
-      reducedMotion: e
+      reducedMotion: t
     } = this.context;
     return {
       opacity: module,
@@ -50,18 +50,18 @@ class p extends(s = Chunk647438.Component) {
       href: Chunk981631.Z5c.INDEX,
       target: "_blank",
       rel: "noopener",
-      className: r()(Chunk816716.logo, this.props.className),
+      className: l()(Chunk816716.logo, this.props.className),
       style: this.getAnimatedStyle()
     })
   }
-  constructor(...t) {
-    super(...t), u(this, "anim", new o.Z.Value(0)), u(this, "animate", t => {
-      o.Z.spring(this.anim, {
-        toValue: t,
+  constructor(...e) {
+    super(...e), f(this, "anim", new s.Z.Value(0)), f(this, "animate", e => {
+      s.Z.spring(this.anim, {
+        toValue: e,
         friction: 10,
         tension: 100
       }).start()
     })
   }
 }
-u(p, "contextType", Chunk481060.Sfi)
+f(h, "contextType", Chunk481060.Sfi)

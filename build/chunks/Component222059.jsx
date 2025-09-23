@@ -1,7 +1,7 @@
-/** Chunk was on 33358 **/
+/** Chunk was on 69310 **/
 /** chunk id: 222059, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  u: () => L
+  u: () => M
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -55,21 +55,21 @@ function D(e) {
     badge: f,
     link: h,
     showProgressBadge: b
-  } = e, [O, y] = i.useState(false), [_, v] = i.useState(false), [j, x] = i.useState(null), [C, w] = i.useState(0), D = (0, l.Ie)("home"), L = (0, p.oq)().activePanel === p.wh.APP_ICON, M = () => {
+  } = e, [_, O] = i.useState(false), [y, v] = i.useState(false), [j, x] = i.useState(null), [C, w] = i.useState(0), D = (0, l.Ie)("home"), M = (0, p.oq)().activePanel === p.wh.APP_ICON, L = () => {
     x(null), w(0), clearTimeout(j)
   };
   if (null == d) return null;
   let k = T.intl.string(T.t.YUU0RE);
-  _ && (k = a.K.get(N.wli) ? T.intl.string(T.t.nkq1l5) : T.intl.string(T.t.Be8Q5O));
+  y && (k = a.K.get(N.wli) ? T.intl.string(T.t.nkq1l5) : T.intl.string(T.t.Be8Q5O));
   let U = null;
   !o && b && (U = (0, r.jsx)(c.Z, {
     className: A.downloadProgress,
     determineOwnVisibility: false
   }));
-  let G = o || O || L,
+  let G = o || _ || M,
     B = (0, r.jsx)(s.aRk, {
       selected: true,
-      lowerBadge: f > 0 ? (0, P.Ne)(f) : null,
+      lowerBadge: f > 0 ? (0, I.Ne)(f) : null,
       upperBadge: U,
       lowerBadgeSize: {
         width: (0, s.OVM)(f)
@@ -92,11 +92,11 @@ function D(e) {
         }
         return e
       }({
-        onMouseEnter: () => y(true),
-        onMouseLeave: () => y(false),
+        onMouseEnter: () => O(true),
+        onMouseLeave: () => O(false),
         onClick: () => {
-          if (!__OVERLAY__ && (null != j && clearTimeout(j), x(setTimeout(M, 500)), w(C + 1), 15 === C)) {
-            M();
+          if (!__OVERLAY__ && (null != j && clearTimeout(j), x(setTimeout(L, 500)), w(C + 1), 15 === C)) {
+            L();
             let e = !a.K.get(N.wli);
             a.K.set(N.wli, e), e && a.K.set(Z.O, true), e ? (0, g.GN)("discodo") : (0, g.GN)("user_leave"), v(true), setTimeout(() => {
               v(false)
@@ -139,9 +139,9 @@ function D(e) {
       children: (0, r.jsxs)(S.H, {
         children: [(0, r.jsx)(E.Z, {
           selected: o,
-          hovered: O,
+          hovered: _,
           className: A.pill
-        }), (0, r.jsx)(I.Z, {
+        }), (0, r.jsx)(P.Z, {
           color: s.ua7.Colors.PRIMARY,
           hideOnClick: true,
           text: k,
@@ -153,7 +153,7 @@ function D(e) {
   })
 }
 
-function L() {
+function M() {
   let e = (0, Chunk278464.n)(),
     t = (0, Chunk442837.e7)([Chunk941128.Z, Chunk417363.Z], () => {
       let e = (0, Chunk339149.E)(Chunk941128.Z.activeItems, Chunk417363.Z),

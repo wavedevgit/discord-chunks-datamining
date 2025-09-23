@@ -1,4 +1,4 @@
-/** Chunk was on 80037 **/
+/** Chunk was on 36084 **/
 /** chunk id: 441061, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -12,11 +12,11 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx");
 
 function c(e) {
-  let t = (0, i.e7)([o.Z], () => o.Z.getVoiceParticipantsHidden(e));
+  let t = (0, i.e7)([u.Z], () => u.Z.getVoiceParticipantsHidden(e));
   return (0, r.jsx)(l.S89, {
     id: "no-video-hide",
-    label: s.intl.string(s.t.BL8ss7),
+    label: a.intl.string(a.t.BL8ss7),
     checked: !t,
-    action: () => a.Z.toggleVoiceParticipantsHidden(e, !t)
+    action: () => o.Z.toggleVoiceParticipantsHidden(e, !t)
   })
 }

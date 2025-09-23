@@ -1,26 +1,23 @@
-/** Chunk was on web.js **/
-/** chunk id: 879815, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 93886 **/
+/** chunk id: 879815, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => l
+  Z: () => a
 });
 var Chunk442837 = require("./442837.js"),
   Chunk314897 = require("./314897.js"),
   Chunk131951 = require("./131951.js"),
   Chunk979651 = require("./979651.js");
 
-function s(e) {
-  var t;
-  let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : o.Z,
-    r = arguments.length > 2 && true !== arguments[2] ? arguments[2] : a.Z,
-    s = arguments.length > 3 && true !== arguments[3] ? arguments[3] : i.default,
-    l = null != e ? n.getVoiceState(e.getGuildId(), s.getId()) : null;
-  return {
-    selfDeaf: r.isSelfDeaf(),
-    deaf: null != (t = null == l ? true : l.deaf) && t
-  }
-}
-
-function l(e) {
-  return (0, r.cj)([o.Z, a.Z, i.default], () => s(e, o.Z, a.Z, i.default), [e])
+function a(e) {
+  return (0, r.cj)([l.Z, o.Z, i.default], () => (function(e) {
+    var t;
+    let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : l.Z,
+      r = arguments.length > 2 && true !== arguments[2] ? arguments[2] : o.Z,
+      a = arguments.length > 3 && true !== arguments[3] ? arguments[3] : i.default,
+      s = null != e ? n.getVoiceState(e.getGuildId(), a.getId()) : null;
+    return {
+      selfDeaf: r.isSelfDeaf(),
+      deaf: null != (t = null == s ? true : s.deaf) && t
+    }
+  })(e, l.Z, o.Z, i.default), [e])
 }

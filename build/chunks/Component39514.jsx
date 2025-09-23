@@ -1,7 +1,7 @@
 /** Chunk was on 27978 **/
 /** chunk id: 39514, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => Z
+  Z: () => P
 }), require("./35282.js"), require("./388685.js"), require("./415506.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -40,7 +40,7 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 Chunk442837.ZP.initialize();
-class P extends Chunk647438.PureComponent {
+class Z extends Chunk647438.PureComponent {
   componentDidMount() {
     let {
       authenticated: e,
@@ -280,7 +280,7 @@ class P extends Chunk647438.PureComponent {
     })
   }
 }
-let Z = Chunk442837.ZP.connectStores([Chunk82142.Z, Chunk283595.Z, Chunk314897.default, Chunk55563.Z, Chunk896797.Z, Chunk362762.Z], e => {
+let P = Chunk442837.ZP.connectStores([Chunk82142.Z, Chunk283595.Z, Chunk314897.default, Chunk55563.Z, Chunk896797.Z, Chunk362762.Z], e => {
   let t = e.match.params.giftCode,
     n = x.Z.get(t),
     r = null != n ? v.Z.get(n.skuId) : null;
@@ -293,6 +293,6 @@ let Z = Chunk442837.ZP.connectStores([Chunk82142.Z, Chunk283595.Z, Chunk314897.d
     isResolved: x.Z.getIsResolved(t),
     isAccepting: x.Z.getIsAccepting(t),
     libraryApplicationsFetched: E.Z.fetched,
-    nativeAppState: m.Z.getState(t)
+    nativeAppState: p.Z.getState(t)
   }
-})(P)
+})(Z)

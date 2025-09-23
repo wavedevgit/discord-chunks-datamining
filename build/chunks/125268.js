@@ -1,4 +1,4 @@
-/** Chunk was on 47387 **/
+/** Chunk was on 56785 **/
 /** chunk id: 125268, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   AX: () => s,
@@ -7,10 +7,10 @@ require.d(exports, {
   Df: () => f,
   LT: () => b,
   ZZ: () => p,
-  cV: () => c,
-  fW: () => E,
+  cV: () => u,
+  fW: () => _,
   gr: () => m,
-  oW: () => u
+  oW: () => c
 });
 var Chunk261470 = require("./261470.js"),
   Chunk544891 = require("./544891.js"),
@@ -18,19 +18,19 @@ var Chunk261470 = require("./261470.js"),
   Chunk984063 = require("./984063.js"),
   Chunk981631 = require("./981631.js");
 
-function u(e, t, n, r, l) {
-  i.Z.dispatch({
+function c(e, t, n, r, i) {
+  l.Z.dispatch({
     type: "SHARED_CANVAS_DRAW_LINE_POINT",
     channelId: e,
     userId: n,
     lineId: t,
     streamerId: r,
-    point: l
+    point: i
   })
 }
 
 function s(e, t, n, r) {
-  return l.tn.post({
+  return i.tn.post({
     url: o.ANM.SHARED_CANVAS_LINES(e, n),
     body: {
       line_id: t,
@@ -40,8 +40,8 @@ function s(e, t, n, r) {
   })
 }
 
-function c(e, t, n, r) {
-  i.Z.dispatch({
+function u(e, t, n, r) {
+  l.Z.dispatch({
     type: "SHARED_CANVAS_UPDATE_LINE_POINTS",
     userId: t,
     lineId: e,
@@ -51,7 +51,7 @@ function c(e, t, n, r) {
 }
 
 function d(e, t, n) {
-  return l.tn.post({
+  return i.tn.post({
     url: o.ANM.SHARED_CANVAS_EMOJI_HOSES(e, t),
     body: {
       emoji_hose: n
@@ -61,7 +61,7 @@ function d(e, t, n) {
 }
 
 function f(e, t, n) {
-  l.tn.del({
+  i.tn.del({
     url: o.ANM.SHARED_CANVAS_EMOJI_HOSE(e, t, n),
     backoff: new r.Z,
     rejectWithError: true
@@ -69,7 +69,7 @@ function f(e, t, n) {
 }
 
 function p(e, t) {
-  t.state = a.f.STOP, i.Z.dispatch({
+  t.state = a.f.STOP, l.Z.dispatch({
     type: "SHARED_CANVAS_UPDATE_EMOJI_HOSE",
     emojiHose: t,
     userId: t.userId,
@@ -78,7 +78,7 @@ function p(e, t) {
 }
 
 function m(e, t, n) {
-  i.Z.dispatch({
+  l.Z.dispatch({
     type: "SHARED_CANVAS_UPDATE_EMOJI_HOSE",
     emojiHose: e,
     userId: t,
@@ -86,8 +86,8 @@ function m(e, t, n) {
   })
 }
 
-function E(e, t) {
-  i.Z.dispatch({
+function _(e, t) {
+  l.Z.dispatch({
     type: "SHARED_CANVAS_CLEAR_DRAWABLES",
     drawables: e,
     streamerId: t
@@ -95,7 +95,7 @@ function E(e, t) {
 }
 
 function g(e) {
-  i.Z.dispatch({
+  l.Z.dispatch({
     type: "SHARED_CANVAS_SET_DRAW_MODE",
     drawMode: e
   })

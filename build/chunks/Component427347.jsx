@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 427347, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 97571 **/
+/** chunk id: 427347, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => j
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -21,60 +20,59 @@ var Chunk704215 = require("./704215.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk120289 = require("./120289.js");
-let b = 5;
 
-function y(e) {
+function v(e) {
   let {
     dismissibleContent: t
-  } = e, n = _.Z.useIsEligible(), f = (0, l.Nj)(t), y = n && !f, {
-    analyticsLocations: O
-  } = (0, s.ZP)(o.Z.HOLIDAY_COACHMARK), v = e => {
-    (0, l.Q3)(i.z.HOLIDAY_COACHMARK_HALLOWEEN_2024, {
+  } = e, n = p.Z.useIsEligible(), m = (0, o.Nj)(t), {
+    analyticsLocations: v
+  } = (0, s.ZP)(l.Z.HOLIDAY_COACHMARK), j = e => {
+    (0, o.Q3)(r.z.HOLIDAY_COACHMARK_HALLOWEEN_2024, {
       dismissAction: e
     })
-  }, I = () => {
-    (0, d.openUserSettings)(u.n.NOTIFICATIONS_PANEL, {
-      section: h.oAB.NOTIFICATIONS,
-      analyticsLocations: O
-    }), v(m.L.SECONDARY)
+  }, _ = () => {
+    (0, u.openUserSettings)(d.n.NOTIFICATIONS_PANEL, {
+      section: x.oAB.NOTIFICATIONS,
+      analyticsLocations: v
+    }), j(f.L.SECONDARY)
   };
-  return y ? (0, r.jsx)(c.ZP, {
-    children: (0, r.jsxs)("div", {
-      className: E.wrapper,
-      children: [(0, r.jsxs)("div", {
-        className: E.backgroundWrapper,
-        children: [(0, r.jsx)(p.Z, {
-          className: E.backgroundImage,
-          pageMultiplier: b
-        }), (0, r.jsx)("div", {
-          className: E.backgroundOverlay
+  return n && !m ? (0, a.jsx)(c.ZP, {
+    children: (0, a.jsxs)("div", {
+      className: g.wrapper,
+      children: [(0, a.jsxs)("div", {
+        className: g.backgroundWrapper,
+        children: [(0, a.jsx)(h.Z, {
+          className: g.backgroundImage,
+          pageMultiplier: 5
+        }), (0, a.jsx)("div", {
+          className: g.backgroundOverlay
         })]
-      }), (0, r.jsx)("div", {
-        className: E.heroImage
-      }), (0, r.jsxs)("div", {
-        className: E.content,
-        children: [(0, r.jsxs)("div", {
-          children: [(0, r.jsx)(a.X6q, {
+      }), (0, a.jsx)("div", {
+        className: g.heroImage
+      }), (0, a.jsxs)("div", {
+        className: g.content,
+        children: [(0, a.jsxs)("div", {
+          children: [(0, a.jsx)(i.X6q, {
             variant: "heading-md/bold",
             color: true,
-            className: E.specialText,
-            children: g.intl.string(g.t.zUhr3N)
-          }), (0, r.jsx)(a.Text, {
+            className: g.specialText,
+            children: b.intl.string(b.t.zUhr3N)
+          }), (0, a.jsx)(i.Text, {
             variant: "text-xs/normal",
             color: "always-white",
-            children: g.intl.format(g.t.Xw2XUV, {
-              settingsHook: (e, t) => (0, r.jsx)(a.P3F, {
+            children: b.intl.format(b.t.Xw2XUV, {
+              settingsHook: (e, t) => (0, a.jsx)(i.P3F, {
                 tag: "span",
-                className: E.specialTextLink,
-                onClick: I,
+                className: g.specialTextLink,
+                onClick: _,
                 children: e
               }, t)
             })
           })]
-        }), (0, r.jsx)(a.P3F, {
-          className: E.closeClickable,
-          onClick: () => v(m.L.USER_DISMISS),
-          children: (0, r.jsx)(a.Dio, {
+        }), (0, a.jsx)(i.P3F, {
+          className: g.closeClickable,
+          onClick: () => j(f.L.USER_DISMISS),
+          children: (0, a.jsx)(i.Dio, {
             color: "currentColor",
             size: "xs"
           })
@@ -84,8 +82,8 @@ function y(e) {
   }) : null
 }
 
-function O() {
-  return null == Chunk378364.Z.coachmarkDismissibleContent ? null : (0, Chunk951288.jsx)(y, {
+function j() {
+  return null == Chunk378364.Z.coachmarkDismissibleContent ? null : (0, Chunk951288.jsx)(v, {
     dismissibleContent: Chunk378364.Z.coachmarkDismissibleContent
   })
 }

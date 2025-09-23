@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 663108, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 15066 **/
+/** chunk id: 663108, original params: e,n,r (module,exports,require) **/
 (0, require("./818083.js").B)({
   kind: "user",
   id: "2025-05_virtual_currency_onboarding_experience",

@@ -1,4 +1,4 @@
-/** Chunk was on 33358 **/
+/** Chunk was on 69310 **/
 /** chunk id: 178088, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   k: () => w
@@ -43,38 +43,38 @@ function w(e) {
     spacing: R,
     dialogClassName: D
   } = e, {
-    analyticsLocations: L
-  } = (0, p.ZP)(d.Z.NOTIFICATION_CENTER), [M, k] = i.useState(false), [U, G] = [(0, s.e7)([y.Z], () => {
+    analyticsLocations: M
+  } = (0, p.ZP)(d.Z.NOTIFICATION_CENTER), [L, k] = i.useState(false), [U, G] = [(0, s.e7)([O.Z], () => {
     var e, t;
-    return null != (t = null == (e = y.Z.settings.inbox) ? true : e.currentTab) ? t : c.X.UNREADS
+    return null != (t = null == (e = O.Z.settings.inbox) ? true : e.currentTab) ? t : c.X.UNREADS
   }), i.useCallback(e => {
-    O.hW.updateAsync("inbox", t => {
+    _.hW.updateAsync("inbox", t => {
       if (t.currentTab === e) returnfalse;
       t.currentTab = e
-    }, O.fy.FREQUENT_USER_ACTION)
+    }, _.fy.FREQUENT_USER_ACTION)
   }, [])], {
     showTutorial: B,
     setSeenTutorial: F
   } = function(e) {
-    let t = (0, s.e7)([y.Z], () => {
+    let t = (0, s.e7)([O.Z], () => {
         var e, t;
-        return null != (t = null == (e = y.Z.settings.inbox) ? true : e.viewedTutorial) && t
+        return null != (t = null == (e = O.Z.settings.inbox) ? true : e.viewedTutorial) && t
       }),
       n = i.useCallback(() => {
-        O.hW.updateAsync("inbox", e => {
+        _.hW.updateAsync("inbox", e => {
           e.viewedTutorial = true
-        }, O.fy.INFREQUENT_USER_ACTION)
+        }, _.fy.INFREQUENT_USER_ACTION)
       }, []);
     return {
       showTutorial: !t && e === c.X.UNREADS,
       setSeenTutorial: n
     }
   }(U), V = i.useCallback(() => {
-    k(false), M && (null == n || n())
-  }, [n, M]), H = i.useCallback(() => {
-    k(!M), M ? null == n || n() : null == t || t()
-  }, [n, t, M]);
-  i.useEffect(() => (_.S.subscribe(I.CkL.TOGGLE_INBOX, H), () => void _.S.unsubscribe(I.CkL.TOGGLE_INBOX, H)), [H]);
+    k(false), L && (null == n || n())
+  }, [n, L]), H = i.useCallback(() => {
+    k(!L), L ? null == n || n() : null == t || t()
+  }, [n, t, L]);
+  i.useEffect(() => (y.S.subscribe(P.CkL.TOGGLE_INBOX, H), () => void y.S.unsubscribe(P.CkL.TOGGLE_INBOX, H)), [H]);
   let {
     enabled: z,
     inInbox: W
@@ -95,18 +95,18 @@ function w(e) {
       location: "ForYou"
     });
   return (0, r.jsx)(p.Gt, {
-    value: L,
+    value: M,
     children: (0, r.jsx)(u.yRy, {
       targetElementRef: A,
       animation: u.yRy.Animation.NONE,
       position: Z,
       align: T,
       autoInvert: false,
-      shouldShow: M,
+      shouldShow: L,
       onRequestClose: V,
       renderPopout: function() {
         return (0, r.jsx)(u.VqE, {
-          "aria-label": P.intl.string(P.t.GSmTKC),
+          "aria-label": I.intl.string(I.t.GSmTKC),
           className: D,
           children: (0, r.jsx)("div", {
             className: o()(N.container, {

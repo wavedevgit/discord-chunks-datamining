@@ -1,7 +1,7 @@
-/** Chunk was on 10017 **/
+/** Chunk was on 97571 **/
 /** chunk id: 646466, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  O: () => S
+  O: () => T
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk206878 = require("./206878.js"),
   Chunk329119 = require("./329119.js");
 
-function p(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       a = Object.keys(n);
@@ -53,24 +53,24 @@ let x = [{
       let {
         ShopAssetsPreviewInstructionModal: e
       } = await Promise.resolve().then(require.bind(require, 637443));
-      return t => (0, a.jsx)(e, p({}, t))
+      return t => (0, a.jsx)(e, h({}, t))
     }, {
       modalKey: Chunk637443.g,
       onCloseRequest: () => (0, Chunk481060.Mr3)(Chunk637443.g)
     })
   },
-  j = () => {
+  v = () => {
     (0, Chunk481060.nfh)(Chunk637443.c) ? (0, Chunk481060.Mr3)(Chunk637443.c) : (0, Chunk481060.ZDy)(async () => {
       let {
         ShopPFXPreviewInstructionModal: e
       } = await Promise.resolve().then(require.bind(require, 637443));
-      return t => (0, a.jsx)(e, p({}, t))
+      return t => (0, a.jsx)(e, h({}, t))
     }, {
       modalKey: Chunk637443.c,
       onCloseRequest: () => (0, Chunk481060.Mr3)(Chunk637443.c)
     })
   },
-  v = () => {
+  j = () => {
     let e = (0, Chunk373071.lb)(),
       {
         previewProfileEffectId: t,
@@ -92,7 +92,7 @@ let x = [{
         }), (0, Chunk951288.jsx)(Chunk481060.hU, {
           variant: "icon-only",
           size: "sm",
-          onClick: j,
+          onClick: v,
           icon: Chunk481060.idN,
           "aria-label": "Open PFX preview instructions"
         })]
@@ -148,7 +148,7 @@ let x = [{
       children: [(0, a.jsx)(l.LZC, {
         size: 16
       }), (0, a.jsxs)("div", {
-        className: h.headingContainer,
+        className: p.headingContainer,
         children: [(0, a.jsx)(l.X6q, {
           variant: "heading-lg/bold",
           children: "Uploaded Assets"
@@ -160,7 +160,7 @@ let x = [{
         })]
       }), (0, a.jsx)("ul", {
         children: d.map(e => (0, a.jsxs)("li", {
-          className: h.uploadedFileListItem,
+          className: p.uploadedFileListItem,
           children: [(0, a.jsx)(l.hU, {
             variant: "icon-only",
             size: "sm",
@@ -184,7 +184,7 @@ let x = [{
       children: [(0, a.jsx)(l.LZC, {
         size: 16
       }), (0, a.jsxs)("div", {
-        className: h.headingContainer,
+        className: p.headingContainer,
         children: [(0, a.jsx)(l.X6q, {
           variant: "heading-lg/bold",
           children: "Ignored Files"
@@ -196,7 +196,7 @@ let x = [{
         })]
       }), (0, a.jsx)("ul", {
         children: t.map((e, t) => (0, a.jsx)("li", {
-          className: h.ignoredFileListItem,
+          className: p.ignoredFileListItem,
           children: (0, a.jsx)(l.Text, {
             variant: "text-md/normal",
             children: e
@@ -212,7 +212,7 @@ let x = [{
       validationComplete: n,
       warnings: i,
       errors: s
-    } = (0, Chunk206878.g)(), o = Object.entries(Chunk373071), c = Object.entries(Chunk755721), u = Chunk637443.length > 0, p = Chunk619899.length > 0, x = Chunk647438.useCallback(n => {
+    } = (0, Chunk206878.g)(), o = Object.entries(Chunk373071), c = Object.entries(Chunk755721), u = Chunk637443.length > 0, h = Chunk619899.length > 0, x = Chunk647438.useCallback(n => {
       t(), e(n)
     }, [module, exports]);
     return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
@@ -226,7 +226,7 @@ let x = [{
           children: "".concat(Chunk637443.length, " errors")
         }), (0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-md/normal",
-          color: p ? "text-feedback-warning" : "text-default",
+          color: h ? "text-feedback-warning" : "text-default",
           children: "".concat(Chunk619899.length, " warnings")
         }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
@@ -255,7 +255,7 @@ let x = [{
                 color: "text-danger",
                 children: n
               }), r.length > 0 && (0, a.jsx)("ul", {
-                className: h.validationIssuesList,
+                className: p.validationIssuesList,
                 children: r.map((e, t) => (0, a.jsx)("li", {
                   children: (0, a.jsx)(l.Text, {
                     variant: "text-sm/normal",
@@ -267,7 +267,7 @@ let x = [{
             }, "".concat(n, "-").concat(t))
           })
         })]
-      }), p && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+      }), h && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
         children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
           variant: "heading-lg/bold",
           children: "Warnings"
@@ -283,7 +283,7 @@ let x = [{
                 color: "text-feedback-warning",
                 children: n
               }), r.length > 0 && (0, a.jsx)("ul", {
-                className: h.validationIssuesList,
+                className: p.validationIssuesList,
                 children: r.map((e, t) => (0, a.jsx)("li", {
                   children: (0, a.jsx)(l.Text, {
                     variant: "text-sm/normal",
@@ -307,10 +307,10 @@ let x = [{
       ignoredFilenames: s,
       clearAssets: o,
       clearIgnoredFilenames: m,
-      processAndUpsertAssets: p
+      processAndUpsertAssets: h
     } = (0, Chunk281598.hm)(), x = Chunk647438.useCallback(e => {
-      n(), p(e)
-    }, [p, require]);
+      n(), h(e)
+    }, [h, require]);
     return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsx)(Chunk18868.L, {
         onDrop: x
@@ -332,7 +332,7 @@ let x = [{
           icon: Chunk481060.idN,
           "aria-label": "Open preview instructions"
         })]
-      }), (0, Chunk951288.jsx)(v, {}), (0, Chunk951288.jsx)(_, {}), (0, Chunk951288.jsx)(y, {
+      }), (0, Chunk951288.jsx)(j, {}), (0, Chunk951288.jsx)(_, {}), (0, Chunk951288.jsx)(y, {
         clearAssets: Chunk637443,
         clearIgnoredFiles: Chunk206878
       }), (0, Chunk951288.jsx)(C, {
@@ -341,7 +341,7 @@ let x = [{
       })]
     })
   },
-  S = () => {
+  T = () => {
     let [e, t] = Chunk647438.useState("preview");
     return (0, Chunk951288.jsxs)("div", {
       className: Chunk329119.container,

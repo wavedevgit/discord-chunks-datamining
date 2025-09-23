@@ -1,4 +1,4 @@
-/** Chunk was on 10017 **/
+/** Chunk was on 97571 **/
 /** chunk id: 490007, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk595925 = require("./595925.jsx"),
   Chunk866403 = require("./866403.js"),
   Chunk744769 = require("./744769.js");
-let p = [{
+let h = [{
     id: "virtual-currency",
     name: "Virtual Current (Orb) Components"
   }, {
@@ -41,7 +41,7 @@ function f() {
       look: "brand",
       type: "top",
       orientation: "horizontal",
-      children: p.map(e => (0, a.jsx)(o.njP.Item, {
+      children: h.map(e => (0, a.jsx)(o.njP.Item, {
         id: e.id,
         children: e.name
       }, e.id))

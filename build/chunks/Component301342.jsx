@@ -1,4 +1,4 @@
-/** Chunk was on 33358 **/
+/** Chunk was on 69310 **/
 /** chunk id: 301342, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   P: () => Z,
@@ -50,7 +50,7 @@ function S(e) {
   return e
 }
 
-function I(e, t) {
+function P(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -63,7 +63,7 @@ function I(e, t) {
   }), e
 }
 
-function P(e) {
+function I(e) {
   e.stopPropagation()
 }
 let N = Chunk647438.memo(function(e) {
@@ -77,35 +77,35 @@ let N = Chunk647438.memo(function(e) {
         hideIcon: w,
         children: Z
       } = e,
-      T = (0, s.e7)([_.ZP], () => _.ZP.isChannelMuted(l.getGuildId(), l.id)),
+      T = (0, s.e7)([y.ZP], () => y.ZP.isChannelMuted(l.getGuildId(), l.id)),
       A = (0, s.e7)([b.Z], () => b.Z.isCollapsed(l.id)),
-      R = (0, s.e7)([y.Z], () => y.Z.can(x.Plq.MANAGE_CHANNELS, l));
+      R = (0, s.e7)([O.Z], () => O.Z.can(x.Plq.MANAGE_CHANNELS, l));
     t = null != N ? j > N ? E.containerDragAfter : E.containerDragBefore : E.containerDefault;
     let D = i.useCallback(() => {
         A ? (0, p.mJ)(l.id) : (0, p.c4)(l.id)
       }, [l.id, A]),
-      L = i.useCallback(e => {
+      M = i.useCallback(e => {
         if ("null" !== l.id) {
-          let t = O.Z.getGuild(l.getGuildId());
+          let t = _.Z.getGuild(l.getGuildId());
           null != t && (0, f.jW)(e, async () => {
             let {
               default: e
             } = await Promise.all([n.e("8965"), n.e("14280")]).then(n.bind(n, 139035));
-            return n => (0, r.jsx)(e, I(S({}, n), {
+            return n => (0, r.jsx)(e, P(S({}, n), {
               channel: l,
               guild: t
             }))
           })
         }
       }, [l]),
-      M = i.useCallback(() => {
+      L = i.useCallback(() => {
         let e = l.type === x.d4z.GUILD_CATEGORY ? null : l.type,
           t = l.getGuildId();
         null != t && (0, d.ZDy)(async () => {
           let {
             default: i
           } = await Promise.all([n.e("45094"), n.e("87586")]).then(n.bind(n, 218613));
-          return n => (0, r.jsx)(i, I(S({}, n), {
+          return n => (0, r.jsx)(i, P(S({}, n), {
             channelType: e,
             guildId: t,
             categoryId: "null" !== l.id ? l.id : null
@@ -151,8 +151,8 @@ let N = Chunk647438.memo(function(e) {
               [E.muted]: T,
               [E.clickable]: true
             }),
-            onContextMenu: L,
-            children: [(0, r.jsxs)(d.P3F, I(S({
+            onContextMenu: M,
+            children: [(0, r.jsxs)(d.P3F, P(S({
               innerRef: F,
               className: E.mainContent,
               tabIndex: G
@@ -176,7 +176,7 @@ let N = Chunk647438.memo(function(e) {
                 className: E.icon
               })]
             })), (0, r.jsx)("div", {
-              onClick: P,
+              onClick: I,
               className: E.children,
               children: R && !v ? (0, r.jsx)(d.ua7, {
                 text: C.intl.string(C.t["fUYU+v"]),
@@ -190,7 +190,7 @@ let N = Chunk647438.memo(function(e) {
                     look: u.zx.Looks.BLANK,
                     size: u.zx.Sizes.NONE,
                     className: o()(E.addButton, E.forceVisible),
-                    onClick: M,
+                    onClick: L,
                     onMouseEnter: t,
                     onMouseLeave: n,
                     tabIndex: G,

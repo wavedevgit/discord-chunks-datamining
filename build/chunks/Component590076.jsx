@@ -1,7 +1,7 @@
-/** Chunk was on 47387 **/
+/** Chunk was on 56785 **/
 /** chunk id: 590076, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => _
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,41 +19,41 @@ function m(e) {
   let {
     focused: t,
     channelId: n,
-    streamerId: i,
-    stream: c
-  } = e, m = l.useRef(null), E = (0, o.e7)([s.default], () => s.default.getCurrentUser());
-  a()(null != E, "user cannot be null"), (0, f.Z)(m, E, i, n);
+    streamerId: l,
+    stream: u
+  } = e, m = i.useRef(null), _ = (0, o.e7)([s.default], () => s.default.getCurrentUser());
+  a()(null != _, "user cannot be null"), (0, f.Z)(m, _, l, n);
   let {
     handleClick: g,
     handleMouseDown: b,
-    handleMouseEnter: S,
-    handleMouseMove: v,
-    handleMouseUp: O
+    handleMouseEnter: v,
+    handleMouseMove: E,
+    handleMouseUp: h
   } = (0, d.Z)({
-    user: E,
+    user: _,
     channelId: n,
-    streamerId: i,
-    stream: c,
+    streamerId: l,
+    stream: u,
     focused: t,
     canvas: m.current
   });
-  return (0, r.jsx)(u.Z, {
+  return (0, r.jsx)(c.Z, {
     children: (0, r.jsx)("canvas", {
       ref: m,
       onClick: g,
       onMouseDown: b,
-      onMouseEnter: S,
-      onMouseMove: v,
-      onMouseUp: O,
+      onMouseEnter: v,
+      onMouseMove: E,
+      onMouseUp: h,
       className: p.sharedCanvas
     })
   })
 }
 
-function E(e) {
+function _(e) {
   let {
     isSharedCanvasEnabled: t
-  } = c.Z.useExperiment({
+  } = u.Z.useExperiment({
     guildId: e.guildId,
     location: "d0de1c_1"
   }, {

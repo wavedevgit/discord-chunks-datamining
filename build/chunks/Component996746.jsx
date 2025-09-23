@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 996746, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 97571 **/
+/** chunk id: 996746, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => d
 });
 var Chunk951288 = require("./951288.js"),
   Chunk442837 = require("./442837.js"),
@@ -12,15 +11,15 @@ var Chunk951288 = require("./951288.js"),
   Chunk594174 = require("./594174.js"),
   Chunk51144 = require("./51144.js");
 
-function u(e) {
+function d(e) {
   var t;
   let {
     nameplate: n
-  } = e, u = (0, i.e7)([l.default], () => l.default.getCurrentUser()), d = (0, o.Y)({
+  } = e, d = (0, r.e7)([o.default], () => o.default.getCurrentUser()), u = (0, l.Y)({
     location: "AccountPreview"
-  }), f = null != (t = c.ZP.useName(u)) ? t : "";
-  return (0, r.jsx)(s.m, {
-    username: f,
+  }), m = null != (t = c.ZP.useName(d)) ? t : "";
+  return (0, a.jsx)(s.m, {
+    username: m,
     selfMute: false,
     selfDeaf: false,
     serverMute: false,
@@ -28,8 +27,8 @@ function u(e) {
     suppress: false,
     speaking: false,
     streaming: false,
-    status: a.Sk.ONLINE,
-    currentUser: u,
+    status: i.Sk.ONLINE,
+    currentUser: d,
     activities: [],
     applicationStream: true,
     userTag: "",
@@ -49,6 +48,6 @@ function u(e) {
     isQuestBarEmpty: true,
     hasLoadedQuestBar: true,
     isListenAlongVisible: false,
-    isDisplayNameStylesEnabled: d
+    isDisplayNameStylesEnabled: u
   })
 }

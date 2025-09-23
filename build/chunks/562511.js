@@ -1,9 +1,8 @@
-/** Chunk was on web.js **/
-/** chunk id: 562511, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 93886 **/
+/** chunk id: 562511, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A2: () => g,
-  S3: () => m
+  S3: () => f
 });
 var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
@@ -17,50 +16,46 @@ var Chunk647438 = require("./647438.js"),
   Chunk864133 = require("./864133.js"),
   Chunk981631 = require("./981631.js");
 
-function p(e) {
-  let t = (0, s.FT)(a.C.ADOPT_CLAN_IDENTITY_NOTICE, null != e ? e : _.lds);
-  return (0, i.e7)([c.Z, u.default, l.ZP], () => {
-    var t, n;
-    if (null === e) returnfalse;
-    let r = c.Z.getGuild(e);
-    if (true === r || !(0, d.up)(r) || null == r.profile || null === r.profile.tag) returnfalse;
-    let i = u.default.getCurrentUser();
-    if (true === i || (null == (t = i.primaryGuild) ? true : t.identityGuildId) === r.id && (null == (n = i.primaryGuild) ? true : n.tag) === r.profile.tag) returnfalse;
-    let a = l.ZP.getMember(e, i.id);
-    return null != a && !a.isPending
-  }, [e]) && !t
-}
-
-function h(e) {
-  let t = (0, s.FT)(a.C.ADOPT_CLAN_IDENTITY_NOTICE, null != e ? e : _.lds),
-    n = (0, i.e7)([f.Z], () => null === e ? null : f.Z.getGuildLastSeenInfo(e)),
-    l = (0, i.e7)([u.default], () => {
-      var e;
-      return null == (e = u.default.getCurrentUser()) ? true : e.primaryGuild
-    }),
-    d = (0, i.e7)([c.Z], () => {
+function f(e) {
+  let t = function(e) {
+    let t = (0, a.FT)(o.C.ADOPT_CLAN_IDENTITY_NOTICE, null != e ? e : _.lds);
+    return (0, i.e7)([c.Z, u.default, s.ZP], () => {
       var t, n;
-      return null == (n = c.Z.getGuild(e)) || null == (t = n.profile) ? true : t.tag
-    });
-  if (r.useEffect(() => {
-      t && null === n && null != e && null != d && o.Z.dispatch({
-        type: "GUILD_TAG_CHANGED_COACHMARK_SEEN",
-        guildId: e,
-        lastSeenInfo: {
-          tag: d
-        }
-      })
-    }, [e, d, t, n]), null == d || (null == l ? true : l.identityGuildId) === e && (null == l ? true : l.tag) === d) returnfalse;
-  let p = (null == l ? true : l.identityGuildId) === e && (null == l ? true : l.tag) === null,
-    h = null === n || (null == n ? true : n.tag) === d;
-  return p && !h && t
-}
-
-function m(e) {
-  let t = p(e);
-  return h(e) ? "changed" : t ? "available" : null
+      if (null === e) returnfalse;
+      let r = c.Z.getGuild(e);
+      if (true === r || !(0, d.up)(r) || null == r.profile || null === r.profile.tag) returnfalse;
+      let i = u.default.getCurrentUser();
+      if (true === i || (null == (t = i.primaryGuild) ? true : t.identityGuildId) === r.id && (null == (n = i.primaryGuild) ? true : n.tag) === r.profile.tag) returnfalse;
+      let o = s.ZP.getMember(e, i.id);
+      return null != o && !o.isPending
+    }, [e]) && !t
+  }(e);
+  return ! function(e) {
+    let t = (0, a.FT)(o.C.ADOPT_CLAN_IDENTITY_NOTICE, null != e ? e : _.lds),
+      n = (0, i.e7)([p.Z], () => null === e ? null : p.Z.getGuildLastSeenInfo(e)),
+      s = (0, i.e7)([u.default], () => {
+        var e;
+        return null == (e = u.default.getCurrentUser()) ? true : e.primaryGuild
+      }),
+      d = (0, i.e7)([c.Z], () => {
+        var t, n;
+        return null == (n = c.Z.getGuild(e)) || null == (t = n.profile) ? true : t.tag
+      });
+    if (r.useEffect(() => {
+        t && null === n && null != e && null != d && l.Z.dispatch({
+          type: "GUILD_TAG_CHANGED_COACHMARK_SEEN",
+          guildId: e,
+          lastSeenInfo: {
+            tag: d
+          }
+        })
+      }, [e, d, t, n]), null == d || (null == s ? true : s.identityGuildId) === e && (null == s ? true : s.tag) === d) returnfalse;
+    let f = (null == s ? true : s.identityGuildId) === e && (null == s ? true : s.tag) === null,
+      g = null === n || (null == n ? true : n.tag) === d;
+    return f && !g && t
+  }(e) ? t ? "available" : null : "changed"
 }
 
 function g(e) {
-  return null !== m(e)
+  return null !== f(e)
 }

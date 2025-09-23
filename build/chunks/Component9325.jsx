@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk10198 = require("./10198.js");
 
 function E(e, t, n) {
-  e.preventDefault(), g.default.track(p.rMx.GUILD_TEMPLATE_APP_OPENED, {
+  e.preventDefault(), g.default.track(m.rMx.GUILD_TEMPLATE_APP_OPENED, {
     guild_template_code: t,
     guild_template_name: n.name,
     guild_template_description: n.description,
@@ -49,7 +49,7 @@ function v(e) {
       className: x.marginTop20,
       children: _.intl.string(_.t["a3Gl+f"])
     })]
-  }) : (0, r.jsx)(m.Z, {
+  }) : (0, r.jsx)(p.Z, {
     text: _.intl.string(_.t["e/rZ2t"]),
     buttonCta: _.intl.string(_.t.HAvYn5),
     onClick: e => E(e, t, n)

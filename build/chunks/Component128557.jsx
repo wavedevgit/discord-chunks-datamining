@@ -1,4 +1,4 @@
-/** Chunk was on 80037 **/
+/** Chunk was on 16820 **/
 /** chunk id: 128557, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => M,
@@ -118,9 +118,9 @@ function M(e) {
     guildMessaged: U,
     guildPersonalized: B
   } = (0, f.h_)(l), {
-    handleInvite: V,
-    handleMessage: F,
-    handlePersonalize: H,
+    handleInvite: H,
+    handleMessage: V,
+    handlePersonalize: F,
     handleDownload: G,
     handleAddApplication: z
   } = function(e) {
@@ -253,7 +253,7 @@ function M(e) {
       iconUrl: u.YvY,
       header: Z.intl.string(Z.t.q9n0TU),
       completed: D,
-      onClick: V
+      onClick: H
     })
   }, "invite")), R && Q.push((0, r.jsx)(o.Z.div, {
     className: T.cardWrapper,
@@ -264,7 +264,7 @@ function M(e) {
       iconUrl: u.$_T,
       header: Z.intl.string(Z.t.c5kxPj),
       completed: B,
-      onClick: H
+      onClick: F
     })
   }, "customize")), k && Q.push((0, r.jsx)(o.Z.div, {
     className: T.cardWrapper,
@@ -275,7 +275,7 @@ function M(e) {
       iconUrl: u.qMX,
       header: Z.intl.string(Z.t["SoP7+v"]),
       completed: U,
-      onClick: F
+      onClick: V
     })
   }, "message")), (0, j.isWeb)() && Q.push((0, r.jsx)(o.Z.div, {
     className: T.cardWrapper,

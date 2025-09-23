@@ -1,12 +1,12 @@
 /** Chunk was on 73628 **/
-/** chunk id: 470209, original params: e,A,t (module,exports,require) **/
+/** chunk id: 470209, original params: e,t,A (module,exports,require) **/
 require.d(exports, {
-  Z: () => q
+  Z: () => h
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  l = require.n(Chunk512722),
   Chunk866442 = require("./866442.js"),
   Chunk481060 = require("./481060.js"),
   Chunk313201 = require("./313201.js"),
@@ -16,80 +16,80 @@ var Chunk951288 = require("./951288.js"),
   Chunk874847 = require("./874847.js");
 
 function f(e) {
-  for (var A = 1; A < arguments.length; A++) {
-    var t = null != arguments[A] ? arguments[A] : {},
-      n = Object.keys(t);
-    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(t, e).enumerable
-    }))), n.forEach(function(A) {
-      var n;
-      n = t[A], A in e ? Object.defineProperty(e, A, {
-        value: n,
+  for (var t = 1; t < arguments.length; t++) {
+    var A = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(A);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(A).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(A, e).enumerable
+    }))), r.forEach(function(t) {
+      var r;
+      r = A[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[A] = n
+      }) : e[t] = r
     })
   }
   return e
 }
 
-function p(e, A) {
-  return A = null != A ? A : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(A)) : (function(e, A) {
-    var t = Object.keys(e);
+function p(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+    var A = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var n = Object.getOwnPropertySymbols(e);
-      t.push.apply(t, n)
+      var r = Object.getOwnPropertySymbols(e);
+      A.push.apply(A, r)
     }
-    return t
-  })(Object(A)).forEach(function(t) {
-    Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(A, t))
+    return A
+  })(Object(t)).forEach(function(A) {
+    Object.defineProperty(e, A, Object.getOwnPropertyDescriptor(t, A))
   }), e
 }
 let m = (0, Chunk313201.hQ)();
 
-function q(e) {
+function h(e) {
   let {
-    newRoleParams: A,
-    setNewRoleParams: t
-  } = e, l = r.useRef(null), {
+    newRoleParams: t,
+    setNewRoleParams: A
+  } = e, a = n.useRef(null), {
     name: s,
-    color: q
-  } = A, h = e => t(A => (a()(null != A, "newRoleParams should be defined"), p(f({}, A), {
+    color: h
+  } = t, v = e => A(t => (l()(null != t, "newRoleParams should be defined"), p(f({}, t), {
     color: e
   })));
-  return (0, n.jsxs)("div", {
+  return (0, r.jsxs)("div", {
     className: g.roleInputContainer,
-    children: [(0, n.jsx)(o.oil, {
+    children: [(0, r.jsx)(o.oil, {
       autoFocus: true,
       value: s,
-      onChange: e => t(A => (a()(null != A, "newRoleParams should be defined"), p(f({}, A), {
+      onChange: e => A(t => (l()(null != t, "newRoleParams should be defined"), p(f({}, t), {
         name: e
       }))),
       id: m,
-      placeholder: c.intl.string(c.t.oNauur),
-      maxLength: u.VKK
-    }), (0, n.jsxs)("div", {
+      placeholder: u.intl.string(u.t.oNauur),
+      maxLength: c.VKK
+    }), (0, r.jsxs)("div", {
       className: g.roleColorContainer,
-      children: [(0, n.jsx)(o.nn4, {
-        children: c.intl.format(c.t["Vlq/pK"], {
-          color: (0, i.Rf)(q)
+      children: [(0, r.jsx)(o.nn4, {
+        children: u.intl.format(u.t["Vlq/pK"], {
+          color: (0, i.Rf)(h)
         })
-      }), (0, n.jsx)(o.yRy, {
-        targetElementRef: l,
-        renderPopout: e => (0, n.jsx)(o.Z$W, p(f({}, e), {
-          value: q,
-          onChange: h
+      }), (0, r.jsx)(o.yRy, {
+        targetElementRef: a,
+        renderPopout: e => (0, r.jsx)(o.Z$W, p(f({}, e), {
+          value: h,
+          onChange: v
         })),
-        children: e => (0, n.jsx)(o.hU, p(f({}, e), {
+        children: e => (0, r.jsx)(o.hU, p(f({}, e), {
           variant: "secondary",
           icon: o.ilE,
-          buttonRef: l,
-          "aria-label": c.intl.string(c.t.QLgdlZ)
+          buttonRef: a,
+          "aria-label": u.intl.string(u.t.QLgdlZ)
         }))
       })]
-    }), (0, n.jsx)(d.Z, {
-      role: A
+    }), (0, r.jsx)(d.Z, {
+      role: t
     })]
   })
 }

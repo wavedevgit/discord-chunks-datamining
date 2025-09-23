@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk993365 = require("./993365.js"),
   Chunk482828 = require("./482828.js");
@@ -15,11 +15,11 @@ function d(e) {
   let {
     option: t,
     selected: n,
-    onClick: l,
+    onClick: o,
     disabled: d = false
-  } = e, c = i.useCallback(e => l(t), [l, t]);
-  return (0, r.jsx)(a.P3F, {
-    className: o()(C.item, {
+  } = e, c = i.useCallback(e => o(t), [o, t]);
+  return (0, r.jsx)(l.P3F, {
+    className: a()(C.item, {
       [C.itemSelected]: n,
       [C.disabled]: d
     }),
@@ -43,8 +43,8 @@ function c(e) {
   let {
     options: t,
     value: n,
-    onChange: l,
-    className: a,
+    onChange: o,
+    className: l,
     disabled: s = false
   } = e, c = i.useMemo(() => t.findIndex(e => e.value === n), [t, n]), u = i.useCallback(e => {
     var t;
@@ -52,12 +52,12 @@ function c(e) {
     return (0, r.jsx)(d, {
       selected: i,
       option: e,
-      onClick: l,
+      onClick: o,
       disabled: s
     }, null != (t = e.key) ? t : String(e.value))
-  }, [n, l, s]);
+  }, [n, o, s]);
   return (0, r.jsx)("div", {
-    className: o()(C.container, a, {
+    className: a()(C.container, l, {
       [C.disabledContainer]: s,
       [C.trickSelected]: 0 === c,
       [C.treatSelected]: 1 === c

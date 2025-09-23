@@ -1,4 +1,4 @@
-/** Chunk was on 47387 **/
+/** Chunk was on 56785 **/
 /** chunk id: 6572, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk963838 = require("./963838.js"),
   Chunk37091 = require("./37091.js"),
@@ -16,9 +16,9 @@ var Chunk120356 = require("./120356.js"),
 function d(e) {
   let t, {
       channelId: n,
-      userId: l
+      userId: i
     } = e,
-    [d, f] = (0, a.Wu)([u.Z], () => [u.Z.getWaitingHighFive(n, l), u.Z.getCompletedHighFive(n, l)]);
+    [d, f] = (0, a.Wu)([c.Z], () => [c.Z.getWaitingHighFive(n, i), c.Z.getCompletedHighFive(n, i)]);
   if (null != f) t = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("img", {
       alt: s.intl.string(s.t.W6HwU1),
@@ -27,7 +27,7 @@ function d(e) {
         id: null,
         animated: false
       }),
-      className: i()(c.completeLeft, c.highFive)
+      className: l()(u.completeLeft, u.highFive)
     }), (0, r.jsx)("img", {
       alt: s.intl.string(s.t.W6HwU1),
       src: (0, o._r)({
@@ -35,7 +35,7 @@ function d(e) {
         id: null,
         animated: false
       }),
-      className: i()(c.completeRight, c.highFive)
+      className: l()(u.completeRight, u.highFive)
     })]
   });
   else {
@@ -47,11 +47,11 @@ function d(e) {
         id: null,
         animated: false
       }),
-      className: i()(c.waiting, c.highFive)
+      className: l()(u.waiting, u.highFive)
     })
   }
   return (0, r.jsx)("div", {
-    className: c.root,
+    className: u.root,
     children: t
   })
 }

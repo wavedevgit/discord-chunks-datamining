@@ -1,4 +1,4 @@
-/** Chunk was on 80037 **/
+/** Chunk was on 16820 **/
 /** chunk id: 193910, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => A
@@ -81,11 +81,11 @@ function A(e) {
     C.default.track(E.rMx.CHANNEL_ATTACH_MENU_USE_APPS_CLICKED), M("/", (0, O.JM)("/"))
   }
 
-  function V() {
+  function H() {
     R()
   }
 
-  function F() {
+  function V() {
     (0, h.Q3)(o.z.POLLS_CHAT_INPUT_COACHMARK, {
       dismissAction: S.L.TAKE_ACTION
     }), (0, s.ZDy)(async () => {
@@ -129,7 +129,7 @@ function A(e) {
     })
   }
 
-  function H() {
+  function F() {
     C.default.track(E.rMx.CHANNEL_ATTACH_MENU_START_ACTIVITY_CLICKED, {
       channel_type: t.type,
       channel_id: t.id,
@@ -204,13 +204,13 @@ function A(e) {
           return (0, r.jsx)(s.sNh, {
             id: "clips",
             label: i,
-            action: V
+            action: H
           }, "clips");
         case j.r.POLL:
           return (0, r.jsx)(s.sNh, {
             id: "poll",
             label: i,
-            action: F
+            action: V
           }, "poll");
         case j.r.INVITE_TO_PLAY_GAME:
           return (0, r.jsx)(s.sNh, {
@@ -270,7 +270,7 @@ function A(e) {
           return (0, r.jsx)(s.sNh, {
             id: "activity",
             label: i,
-            action: H,
+            action: F,
             hint: (0, r.jsx)(N, {})
           }, "activity");
         case j.r.SCHEDULED_MESSAGE:

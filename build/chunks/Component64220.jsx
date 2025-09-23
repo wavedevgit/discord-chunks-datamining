@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 64220, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 97571 **/
+/** chunk id: 64220, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => d
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,49 +14,47 @@ function c(e) {
   let {
     markAsDismissed: t
   } = e;
-  i.useEffect(() => {
+  return r.useEffect(() => {
     let e = setTimeout(() => {
-      t(o.L.AUTO_DISMISS)
+      t(l.L.AUTO_DISMISS)
     }, 8e3);
     return () => {
       clearTimeout(e)
     }
-  }, [t]);
-  let n = () => {
-    t(o.L.USER_DISMISS)
-  };
-  return (0, r.jsxs)(a.P3F, {
-    className: l.container,
-    onClick: n,
-    children: [(0, r.jsx)(a.Text, {
+  }, [t]), (0, a.jsxs)(i.P3F, {
+    className: o.container,
+    onClick: () => {
+      t(l.L.USER_DISMISS)
+    },
+    children: [(0, a.jsx)(i.Text, {
       variant: "text-sm/medium",
       color: "always-white",
       children: s.intl.string(s.t.fJNqJi)
-    }), (0, r.jsx)("div", {
-      className: l.pointer
+    }), (0, a.jsx)("div", {
+      className: o.pointer
     })]
   })
 }
 
-function u(e) {
+function d(e) {
   let {
     children: t,
     markAsDismissed: n,
-    targetElementRef: o
-  } = e, [s, l] = i.useState(false);
-  return i.useEffect(() => {
+    targetElementRef: l
+  } = e, [s, o] = r.useState(false);
+  return r.useEffect(() => {
     let e = setTimeout(() => {
-      l(true)
+      o(true)
     }, 1e3);
     return () => {
       clearTimeout(e)
     }
-  }, [l]), (0, r.jsx)(a.yRy, {
-    targetElementRef: o,
+  }, [o]), (0, a.jsx)(i.yRy, {
+    targetElementRef: l,
     position: "top",
     align: "left",
     shouldShow: s,
-    renderPopout: () => (0, r.jsx)(c, {
+    renderPopout: () => (0, a.jsx)(c, {
       markAsDismissed: n
     }),
     children: t

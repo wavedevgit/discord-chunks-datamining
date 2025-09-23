@@ -1,4 +1,4 @@
-/** Chunk was on 33358 **/
+/** Chunk was on 69310 **/
 /** chunk id: 416568, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => ec
@@ -183,11 +183,11 @@ function eo(e) {
     pathname: o
   } = (0, c.TH)(), a = o.startsWith(J.Z5c.GUILD_MEMBER_VERIFICATION_FOR_HUB("")), s = (0, p.Wu)([A.Z, T.ZP], () => A.Z.getGuildIds().filter(e => T.ZP.isCurrentUserGuest(e))), u = i.concat(s), {
     entrypoint: d
-  } = (0, I.pN)({
+  } = (0, P.pN)({
     location: "GuildsBar"
   });
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(H.u, {}), d === I.u3.SERVER_RAIL_TOP && (0, r.jsx)(P.Z, {}), l ? (0, r.jsx)(C.Z, {}) : null, (0, r.jsx)(z.Z, {
+    children: [(0, r.jsx)(H.u, {}), d === P.u3.SERVER_RAIL_TOP && (0, r.jsx)(I.Z, {}), l ? (0, r.jsx)(C.Z, {}) : null, (0, r.jsx)(z.Z, {
       isOnHubVerificationRoute: a
     }), !t && (0, r.jsx)(U.Z, {}), u.map(e => (0, r.jsx)(Q.Z, {
       guildId: e
@@ -234,7 +234,7 @@ function es(e) {
   } = e, [s] = (0, p.Wu)([R.ZP], () => {
     let e = R.ZP.getGuildsTree();
     return [e, e.version]
-  }), d = (0, p.e7)([S.Z], () => S.Z.lurkingGuildIds()), f = i.useMemo(() => n ? [] : d, [d, n]), b = (0, p.e7)([j.Z], () => j.Z.isFullscreenInContext()), [y, x] = i.useState(false), C = i.useCallback(() => x(true), []), E = i.useCallback(() => x(false), []), Z = i.useRef(false), [T] = i.useState(() => new h.V7), A = i.useRef(null), U = i.useRef(null), G = (0, u.OP)(), {
+  }), d = (0, p.e7)([S.Z], () => S.Z.lurkingGuildIds()), f = i.useMemo(() => n ? [] : d, [d, n]), b = (0, p.e7)([j.Z], () => j.Z.isFullscreenInContext()), [O, x] = i.useState(false), C = i.useCallback(() => x(true), []), E = i.useCallback(() => x(false), []), Z = i.useRef(false), [T] = i.useState(() => new h.V7), A = i.useRef(null), U = i.useRef(null), G = (0, u.OP)(), {
     ref: B
   } = G, F = function(e, t) {
     if (null == e) return {};
@@ -272,10 +272,10 @@ function es(e) {
   }), [et]);
   let {
     analyticsLocations: es
-  } = (0, v.ZP)(_.Z.GUILDS_LIST), {
+  } = (0, v.ZP)(y.Z.GUILDS_LIST), {
     pathname: ec
   } = (0, c.TH)(), eu = ei(ec);
-  (0, O.Ng)(() => {
+  (0, _.Ng)(() => {
     if (!Z.current && 0 !== s.size) {
       if (!eu) {
         let {
@@ -306,27 +306,27 @@ function es(e) {
       animate: false
     })
   }, [et]);
-  (0, M.Z)(et.scrollToGuild);
+  (0, L.Z)(et.scrollToGuild);
   let ep = i.useCallback(function e(t, n, i) {
       switch (t.type) {
-        case L.eD.FOLDER:
+        case M.eD.FOLDER:
           return (0, r.jsx)(Y.Z, {
             folderNode: t,
             setNodeRef: et.setNodeRef,
             draggable: true,
-            sorting: y,
+            sorting: O,
             onDragStart: C,
             onDragEnd: E,
             renderChildNode: e,
             "aria-setsize": i,
             "aria-posinset": true !== n ? n + 1 : true
           }, t.id);
-        case L.eD.GUILD:
+        case M.eD.GUILD:
           return (0, r.jsx)(q.Z, {
             guildNode: t,
             setRef: et.setNodeRef,
             draggable: true,
-            sorting: y,
+            sorting: O,
             onDragStart: C,
             onDragEnd: E,
             "aria-setsize": i,
@@ -335,17 +335,17 @@ function es(e) {
         default:
           return null
       }
-    }, [C, E, y, et.setNodeRef]),
+    }, [C, E, O, et.setNodeRef]),
     ef = (0, r.jsx)(V.Z, {
       selected: eu,
       className: ee.discoveryIcon
     }),
     {
       entrypoint: eh
-    } = (0, I.pN)({
+    } = (0, P.pN)({
       location: "GuildsBar"
     }),
-    eg = eh === I.u3.SERVER_RAIL_BOTTOM;
+    eg = eh === P.u3.SERVER_RAIL_BOTTOM;
   return (0, r.jsx)(v.Gt, {
     value: es,
     children: (0, r.jsx)(m.f6W, {
@@ -394,7 +394,7 @@ function es(e) {
                   fullWidth: true
                 }), (0, r.jsx)("div", {
                   className: ee.bottomRailNotifCenterButton,
-                  children: (0, r.jsx)(P.Z, {})
+                  children: (0, r.jsx)(I.Z, {})
                 })]
               })]
             })
@@ -424,7 +424,7 @@ function es(e) {
   })
 }
 let ec = Chunk647438.memo(function(e) {
-  let t = (0, y.Z)("guildsnav");
+  let t = (0, O.Z)("guildsnav");
   return (0, r.jsx)(u.bG, {
     navigator: t,
     children: (0, r.jsx)(es, en({}, e))

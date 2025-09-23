@@ -1,8 +1,8 @@
-/** Chunk was on 33358 **/
+/** Chunk was on 69310 **/
 /** chunk id: 223730, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  K: () => y,
-  y: () => O
+  K: () => O,
+  y: () => _
 });
 var Chunk951288 = require("./951288.js"),
   Chunk442837 = require("./442837.js"),
@@ -41,7 +41,7 @@ function b(e) {
   })
 }
 
-function O(e) {
+function _(e) {
   let {
     onClosePopout: t
   } = e, n = o.G6.useSetting(), a = (0, i.e7)([c.ZP], () => c.ZP.getFlattenedGuildIds()), s = (0, u._o)(), p = a.filter(e => !s.has(e));
@@ -58,7 +58,7 @@ function O(e) {
   })
 }
 
-function y(e) {
+function O(e) {
   let {
     onClosePopout: t
   } = e;

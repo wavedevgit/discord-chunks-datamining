@@ -1,7 +1,7 @@
-/** Chunk was on 33358 **/
+/** Chunk was on 69310 **/
 /** chunk id: 946734, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => P
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -73,14 +73,14 @@ class S {
     channelId: n,
     analyticsLocations: i
   }) {
-    E(this, "userId", true), E(this, "user", true), E(this, "channelId", true), E(this, "analyticsLocations", true), E(this, "generateNicknameGuildPairs", (0, y.oH)(e => {
+    E(this, "userId", true), E(this, "user", true), E(this, "channelId", true), E(this, "analyticsLocations", true), E(this, "generateNicknameGuildPairs", (0, O.oH)(e => {
       var t;
       return o()(m.ZP.getNicknameGuildsMapping(null != (t = null == e ? true : e.id) ? t : this.userId)).toPairs().map(e => {
         let [t, n] = e;
         return [t, n.map(e => {
           var t;
           return null == (t = b.Z.getGuild(e)) ? true : t.name
-        }).filter(_.lm)]
+        }).filter(y.lm)]
       }).filter(t => {
         let [n] = t;
         return n !== (null == e ? true : e.globalName)
@@ -110,7 +110,7 @@ class S {
   }
 }
 
-function I(e) {
+function P(e) {
   let {
     channel: t
   } = e, n = t.getRecipientId(), l = (0, h.gc)(n), o = Array(l.length).fill(null), {
@@ -120,7 +120,7 @@ function I(e) {
       userId: t,
       channelId: n,
       analyticsLocations: r
-    } = e, l = (0, a.e7)([O.default], () => O.default.getUser(t), [t]), [o] = i.useState(() => new S({
+    } = e, l = (0, a.e7)([_.default], () => _.default.getUser(t), [t]), [o] = i.useState(() => new S({
       user: l,
       userId: t,
       channelId: n,
@@ -136,11 +136,11 @@ function I(e) {
     userId: n,
     analyticsLocations: g,
     channelId: t.id
-  }), [y, _] = i.useState(false), j = i.useCallback(() => {
-    _(true)
-  }, [_]), E = i.useCallback(() => {
-    _(false)
-  }, [_]);
+  }), [O, y] = i.useState(false), j = i.useCallback(() => {
+    y(true)
+  }, [y]), E = i.useCallback(() => {
+    y(false)
+  }, [y]);
   return 0 === m.getNicknameGuildPairs().length && 0 === l.length ? (0, r.jsx)("div", {
     className: C.spacer
   }) : (0, r.jsxs)(p.Gt, {
@@ -182,7 +182,7 @@ function I(e) {
       delay: 0,
       onTooltipShow: j,
       onTooltipHide: E,
-      children: m.renderNicknamePairs(!y)
+      children: m.renderNicknamePairs(!O)
     }) : null]
   })
 }

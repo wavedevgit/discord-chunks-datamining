@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 620799, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 97571 **/
+/** chunk id: 620799, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => p
 });
 var Chunk951288 = require("./951288.js"),
   Chunk442837 = require("./442837.js"),
@@ -14,43 +13,41 @@ var Chunk951288 = require("./951288.js"),
   Chunk228168 = require("./228168.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx");
-let _ = "https://cdn.discordapp.com/assets/content/1b55390a202dcca3843b6c9205af0379cfa072f34d8b9217bce04aba4d373e5b.png",
-  p = "https://cdn.discordapp.com/assets/content/fdb6d4e8a2f01f917d2025a8ca58ebd55e4eada92df1d5386f73d91d6acad1f9.png";
 
-function h(e) {
+function p(e) {
   let {
     targetElementRef: t,
     markAsDismissed: n,
-    children: h
-  } = e, m = (0, i.e7)([l.default], () => l.default.getId()), g = (0, i.e7)([o.Z], () => o.Z.useReducedMotion);
-  return (0, r.jsxs)(r.Fragment, {
-    children: [h, (0, r.jsx)(a.J2, {
+    children: p
+  } = e, h = (0, r.e7)([o.default], () => o.default.getId()), x = (0, r.e7)([l.Z], () => l.Z.useReducedMotion);
+  return (0, a.jsxs)(a.Fragment, {
+    children: [p, (0, a.jsx)(i.J2, {
       targetElementRef: t,
-      title: f.intl.string(f.t.gxcsSk),
-      body: f.intl.string(f.t["8L7E5u"]),
+      title: m.intl.string(m.t.gxcsSk),
+      body: m.intl.string(m.t["8L7E5u"]),
       caretConfig: {
         align: "start"
       },
       graphic: {
         type: "image",
-        src: g ? _ : p
+        src: x ? "https://cdn.discordapp.com/assets/content/1b55390a202dcca3843b6c9205af0379cfa072f34d8b9217bce04aba4d373e5b.png" : "https://cdn.discordapp.com/assets/content/fdb6d4e8a2f01f917d2025a8ca58ebd55e4eada92df1d5386f73d91d6acad1f9.png"
       },
       position: "top",
       align: "left",
       gradientColor: "blue",
       size: "md",
       onRequestClose: () => {
-        n(d.L.USER_DISMISS)
+        n(u.L.USER_DISMISS)
       },
       actions: [{
-        text: f.intl.string(f.t.RzWDqa),
+        text: m.intl.string(m.t.RzWDqa),
         variant: "primary",
         onClick: () => {
-          n(d.L.TAKE_ACTION), (0, c.openUserProfileModal)({
-            userId: m,
+          n(u.L.TAKE_ACTION), (0, c.openUserProfileModal)({
+            userId: h,
             sourceAnalyticsLocations: [s.Z.ACCOUNT],
             hideRestrictedProfile: true,
-            section: u.oh.WIDGETS
+            section: d.oh.WIDGETS
           })
         }
       }]

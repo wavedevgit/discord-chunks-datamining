@@ -1,9 +1,8 @@
-/** Chunk was on web.js **/
-/** chunk id: 812055, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 97571 **/
+/** chunk id: 812055, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => T,
-  b: () => I
+  Z: () => C,
+  b: () => y
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -21,66 +20,65 @@ var Chunk951288 = require("./951288.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk668073 = require("./668073.js");
-let b = Chunk70956.Z.Millis.HOUR,
-  y = Chunk70956.Z.Millis.DAY,
-  O = 4 * Chunk70956.Z.Millis.DAY,
-  v = 2;
+let v = Chunk70956.Z.Millis.HOUR,
+  j = Chunk70956.Z.Millis.DAY,
+  _ = 4 * Chunk70956.Z.Millis.DAY;
 
-function I() {
-  let [e, t] = Chunk647438.useState(Date.now()), n = (0, Chunk442837.e7)([Chunk819640.Z], () => Chunk819640.Z.hasLayers()), r = (0, Chunk442837.e7)([Chunk885110.Z], () => Chunk885110.Z.getStatus()), s = Chunk695346.P4.useSetting(), c = (null == Chunk907862 ? true : Chunk907862.value) != null ? Number(Chunk907862.value) : null, _ = Chunk695346.Cr.useSetting(), g = null != Chunk246133 && module - Chunk246133 > y, E = Chunk951288 === Chunk231338.Sk.DND && Chunk388032 && "0" === Chunk70956, {
-    enabled: I
+function y() {
+  let [e, t] = Chunk647438.useState(Date.now()), n = (0, Chunk442837.e7)([Chunk819640.Z], () => Chunk819640.Z.hasLayers()), a = (0, Chunk442837.e7)([Chunk885110.Z], () => Chunk885110.Z.getStatus()), s = Chunk695346.P4.useSetting(), c = (null == Chunk907862 ? true : Chunk907862.value) != null ? Number(Chunk907862.value) : null, p = Chunk695346.Cr.useSetting(), b = Chunk951288 === Chunk231338.Sk.DND && null != Chunk246133 && module - Chunk246133 > j && "0" === Chunk70956, {
+    enabled: g
   } = (0, Chunk809930.a)({
     location: "useDoNotDisturbReminderPopoverDismissibleContent",
-    autoTrackExposure: Chunk668073,
-    disable: !Chunk668073
-  }), T = I && !require;
+    autoTrackExposure: Chunk388032,
+    disable: !Chunk388032
+  });
   return Chunk647438.useEffect(() => {
     if (Chunk951288 === Chunk231338.Sk.DND) {
       exports(Date.now());
-      let e = setInterval(() => exports(Date.now()), b);
+      let e = setInterval(() => exports(Date.now()), v);
       return () => clearInterval(module)
     }
-  }, [Chunk951288]), (0, Chunk243778.bf)(T ? Chunk704215.z.DO_NOT_DISTURB_REMINDER_POPOVER : null, {
-    cooldownDurationMs: O,
-    numTimesToRecur: v
+  }, [Chunk951288]), (0, Chunk243778.bf)(Chunk668073 && !require ? Chunk704215.z.DO_NOT_DISTURB_REMINDER_POPOVER : null, {
+    cooldownDurationMs: _,
+    numTimesToRecur: 2
   }, Chunk921944.R.ACCOUNT_NAME_ZONE, true)
 }
 
-function T(e) {
+function C(e) {
   let {
     targetElementRef: t,
     onDismiss: n,
-    children: i
+    children: r
   } = e, {
-    enabled: a,
-    titleText: o,
-    bodyText: l
-  } = (0, p.a)({
+    enabled: i,
+    titleText: l,
+    bodyText: o
+  } = (0, h.a)({
     location: "popover",
     autoTrackExposure: false
   });
-  return null != t.current && a ? (0, r.jsxs)(r.Fragment, {
-    children: [i, (0, r.jsx)(s.J2, {
+  return null != t.current && i ? (0, a.jsxs)(a.Fragment, {
+    children: [r, (0, a.jsx)(s.J2, {
       targetElementRef: t,
-      title: g.intl.string(o),
-      body: g.intl.string(l),
+      title: b.intl.string(l),
+      body: b.intl.string(o),
       caretConfig: {
         align: "start"
       },
       gradientColor: "purple",
       actions: [{
-        text: g.intl.string(g.t.fwPura),
+        text: b.intl.string(b.t.fwPura),
         onClick: () => {
           (0, c.Z)({
-            nextStatus: m.Sk.ONLINE
-          }), null == n || n(h.L.PRIMARY)
+            nextStatus: f.Sk.ONLINE
+          }), null == n || n(x.L.PRIMARY)
         }
       }],
       graphic: {
         type: "image",
-        src: E
+        src: g
       },
-      onRequestClose: () => null == n ? true : n(h.L.DISMISS)
+      onRequestClose: () => null == n ? true : n(x.L.DISMISS)
     })]
-  }) : i
+  }) : r
 }

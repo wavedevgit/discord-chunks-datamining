@@ -1,7 +1,7 @@
-/** Chunk was on 33358 **/
+/** Chunk was on 69310 **/
 /** chunk id: 654142, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => _
 }), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -48,10 +48,10 @@ function b(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let O = Chunk647438.memo(function(e) {
+let _ = Chunk647438.memo(function(e) {
   var {
     folderNode: t
-  } = e, O = function(e, t) {
+  } = e, _ = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -67,11 +67,11 @@ let O = Chunk647438.memo(function(e) {
     return i
   }(e, ["folderNode"]);
   let {
-    id: y,
-    name: _,
+    id: O,
+    name: y,
     color: v,
     children: j
-  } = t, x = j.map(e => e.id), C = (0, s.Z)(e => e.guildId), E = (0, l.e7)([c.Z], () => c.Z.isFolderExpanded(y)), S = function(e) {
+  } = t, x = j.map(e => e.id), C = (0, s.Z)(e => e.guildId), E = (0, l.e7)([c.Z], () => c.Z.isFolderExpanded(O)), S = function(e) {
     let t = e.children.map(e => {
         let t = e.id,
           n = d.Z.getGuild(t);
@@ -81,8 +81,8 @@ let O = Chunk647438.memo(function(e) {
       r = [];
     for (let e of t)(e.length < n || 0 === r.length) && (r.push(e), n -= e.length);
     return "".concat(r.join(", ")).concat(r.length < t.length ? ", ..." : "")
-  }(t), I = (0, h.Z)(t), {
-    mentionCount: P,
+  }(t), P = (0, h.Z)(t), {
+    mentionCount: I,
     isMentionLowImportance: N,
     unread: w
   } = (0, l.cj)([u.default], () => ({
@@ -90,28 +90,28 @@ let O = Chunk647438.memo(function(e) {
     isMentionLowImportance: x.every(e => u.default.getIsMentionLowImportance(e)),
     unread: x.some(e => u.default.hasUnread(e))
   })), Z = i.useCallback(() => {
-    a.Z.toggleGuildFolderExpand(y)
-  }, [y]), T = i.useCallback(e => {
+    a.Z.toggleGuildFolderExpand(O)
+  }, [O]), T = i.useCallback(e => {
     (0, o.jW)(e, async () => {
       let {
         default: e
       } = await n.e("52590").then(n.bind(n, 205784));
       return t => (0, r.jsx)(e, b(m({}, t), {
-        folderId: y,
-        folderName: _,
+        folderId: O,
+        folderName: y,
         folderColor: v,
-        unread: w || P > 0
+        unread: w || I > 0
       }))
     })
-  }, [y, _, v, w, P]);
-  return (0, r.jsx)(f.Z, b(m({}, O), {
+  }, [O, y, v, w, I]);
+  return (0, r.jsx)(f.Z, b(m({}, _), {
     folderNode: t,
     expanded: E,
     selected: null != C && x.includes(C),
-    mentionCount: P,
+    mentionCount: I,
     isMentionLowImportance: N,
     unread: w,
-    mediaState: I,
+    mediaState: P,
     defaultFolderName: S,
     onExpandCollapse: Z,
     onContextMenu: T

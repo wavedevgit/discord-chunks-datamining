@@ -1,7 +1,7 @@
-/** Chunk was on 47387 **/
+/** Chunk was on 56785 **/
 /** chunk id: 517525, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => L
+  Z: () => k
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk643930 = require("./643930.js");
 
-function I(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,7 +46,7 @@ function I(e) {
   return e
 }
 
-function w(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -59,24 +59,24 @@ function w(e, t) {
   }), e
 }
 let P = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
-  A = {
+  Z = {
     opacity: 0,
     transform: "translate3d(100%, 0, 0)"
   },
-  C = {
+  x = {
     opacity: 1,
     transform: "translate3d(0%, 0, 0)"
   },
-  R = {
+  A = {
     opacity: 0
   },
-  x = {
+  T = {
     opacity: 1
   },
-  N = {
+  R = {
     borderRadius: "".concat(P, "px ").concat(P, "px ").concat(P, "px ").concat(P, "px")
   },
-  T = {
+  N = {
     borderRadius: "0px ".concat(P, "px ").concat(P, "px 0px")
   },
   D = {
@@ -86,141 +86,141 @@ let P = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
     clamp: true
   },
   M = e => {
-    let t, i, {
+    let t, l, {
         participant: o,
-        isUpsellEnabled: u,
+        isUpsellEnabled: c,
         shape: d,
         size: g,
         didTrackUpsellViewed: P,
-        setDidTrackUpsellViewed: A,
-        className: C,
-        premiumIndicator: R,
-        quality: x
+        setDidTrackUpsellViewed: Z,
+        className: x,
+        premiumIndicator: A,
+        quality: T
       } = e,
       {
-        analyticsLocations: N
+        analyticsLocations: R
       } = (0, m.ZP)(),
-      T = null != (0, h.Z)(o);
+      N = null != (0, y.Z)(o);
     try {
-      t = (0, O.nG)(x)
+      t = (0, h.nG)(T)
     } catch (e) {
       t = false
     }
     try {
-      i = (0, O.tR)(x)
+      l = (0, h.tR)(T)
     } catch (e) {
-      i = false
+      l = false
     }
-    let D = t || i,
+    let D = t || l,
       {
         location: M
       } = (0, p.O)(),
-      L = (0, s.e7)([b.default], () => b.default.getCurrentUser()),
-      F = u && !v.ZP.isPremium(L, _.p9.TIER_1) && !v.ZP.canStreamQuality(v.ZP.StreamQuality.MID, L),
-      k = l.useCallback(() => {
+      k = (0, s.e7)([b.default], () => b.default.getCurrentUser()),
+      F = c && !E.ZP.isPremium(k, O.p9.TIER_1) && !E.ZP.canStreamQuality(E.ZP.StreamQuality.MID, k),
+      L = i.useCallback(() => {
         F && D && (0, f.ZDy)(async () => {
           let {
             default: e
           } = await n.e("28479").then(n.bind(n, 78865));
-          return t => (0, r.jsx)(e, w(I({}, t), {
+          return t => (0, r.jsx)(e, C(j({}, t), {
             analyticsSource: M
           }))
         })
       }, [F, D, M]);
-    if (l.useEffect(() => {
-        !P && D && (S.default.track(y.rMx.PREMIUM_UPSELL_VIEWED, {
-          type: _.cd.STREAM_QUALITY_INDICATOR,
+    if (i.useEffect(() => {
+        !P && D && (v.default.track(S.rMx.PREMIUM_UPSELL_VIEWED, {
+          type: O.cd.STREAM_QUALITY_INDICATOR,
           has_premium_stream_fps: t,
-          has_premium_stream_resolution: i,
-          location_stack: N
-        }), A(true))
-      }, [t, i, D, P, A, N]), null == x) return null;
+          has_premium_stream_resolution: l,
+          location_stack: R
+        }), Z(true))
+      }, [t, l, D, P, Z, R]), null == T) return null;
     let V = (0, r.jsx)(f.ua7, {
-      text: T ? j.intl.string(j.t.q8TiVl) : D ? j.intl.string(j.t.IHgpEh) : j.intl.string(j.t.vLb0VV),
+      text: N ? I.intl.string(I.t.q8TiVl) : D ? I.intl.string(I.t.IHgpEh) : I.intl.string(I.t.vLb0VV),
       position: "bottom",
       color: f.ua7.Colors.GREY,
-      children: e => (0, r.jsxs)(f.P3F, w(I({}, e), {
-        onClick: k,
-        className: a()(Z.qualityIndicator, g, E.eE[d], T ? Z.qualityIndicatorLowQuality : Z.qualityIndicatorFullQuality, {
-          [Z.clickable]: F && D
+      children: e => (0, r.jsxs)(f.P3F, C(j({}, e), {
+        onClick: L,
+        className: a()(w.qualityIndicator, g, _.eE[d], N ? w.qualityIndicatorLowQuality : w.qualityIndicatorFullQuality, {
+          [w.clickable]: F && D
         }),
         children: [D ? (0, r.jsx)(f.SrA, {
           size: "md",
           color: "currentColor",
-          className: Z.premiumStreamIcon
+          className: w.premiumStreamIcon
         }) : null, (0, r.jsx)("span", {
-          className: Z.qualityResolution,
-          children: (0, O.ml)(x.maxResolution)
+          className: w.qualityResolution,
+          children: (0, h.ml)(T.maxResolution)
         }), (0, r.jsx)("span", {
-          children: (0, O.bp)(x.maxFrameRate)
+          children: (0, h.bp)(T.maxFrameRate)
         })]
       }))
     });
     return (0, r.jsx)(f.IGR, {
       text: V,
-      className: a()(C, Z.qualityIndicatorBadge, {
-        [Z.qualityIndicatorBadgePremium]: D && R
+      className: a()(x, w.qualityIndicatorBadge, {
+        [w.qualityIndicatorBadgePremium]: D && A
       }),
-      color: c.Z.unsafe_rawColors.PRIMARY_500.css,
-      shape: E.eE[d]
+      color: u.Z.unsafe_rawColors.PRIMARY_500.css,
+      shape: _.eE[d]
     })
   },
-  L = e => {
+  k = e => {
     let {
       participant: t,
       showQuality: n,
-      isUpsellEnabled: i = true,
-      size: u,
+      isUpsellEnabled: l = true,
+      size: c,
       className: s,
-      premiumIndicator: c
-    } = e, [d, p] = l.useState(false), m = (0, O.W3)(t), {
+      premiumIndicator: u
+    } = e, [d, p] = i.useState(false), m = (0, h.W3)(t), {
       reducedMotion: b
-    } = l.useContext(f.Sfi), S = n && null != m;
-    l.useEffect(() => {
+    } = i.useContext(f.Sfi), v = n && null != m;
+    i.useEffect(() => {
       (0, g.Z)(t.stream.ownerId, t.user.getAvatarURL(t.stream.guildId, 80), {
         dispatchWait: true
       })
     }, [t]);
-    let v = (0, f.Yzy)(S, {
+    let E = (0, f.Yzy)(v, {
         enter: {
-          from: b.enabled ? R : A,
-          to: b.enabled ? x : C
+          from: b.enabled ? A : Z,
+          to: b.enabled ? T : x
         },
-        leave: b.enabled ? R : A,
+        leave: b.enabled ? A : Z,
         config: D
       }, "animate-always"),
-      h = (0, f.q_F)({
-        to: S ? T : N,
+      y = (0, f.q_F)({
+        to: v ? N : R,
         config: D
       }, "animate-always");
     return (e => {
       let {
         className: n,
-        popoutProps: l
+        popoutProps: i
       } = e;
-      return (0, r.jsxs)("div", w(I({
-        className: a()(Z.streamQualityIndicator, n)
-      }, l), {
-        children: [v((e, n) => n ? (0, r.jsx)(o.animated.div, {
+      return (0, r.jsxs)("div", C(j({
+        className: a()(w.streamQualityIndicator, n)
+      }, i), {
+        children: [E((e, n) => n ? (0, r.jsx)(o.animated.div, {
           style: e,
           children: (0, r.jsx)(M, {
-            className: Z.liveQualityIndicator,
+            className: w.liveQualityIndicator,
             participant: t,
-            size: u,
+            size: c,
             shape: f.Dv2.ROUND_LEFT,
-            isUpsellEnabled: i,
+            isUpsellEnabled: l,
             didTrackUpsellViewed: d,
             setDidTrackUpsellViewed: p,
-            premiumIndicator: c,
+            premiumIndicator: u,
             quality: m
           })
         }) : null), (0, r.jsx)(o.animated.div, {
-          style: h,
-          className: Z.liveIndicator,
-          children: (0, r.jsx)(E.ZP, {
-            look: E.jZ.RED,
-            size: u,
-            shape: S ? f.Dv2.ROUND_RIGHT : f.Dv2.ROUND
+          style: y,
+          className: w.liveIndicator,
+          children: (0, r.jsx)(_.ZP, {
+            look: _.jZ.RED,
+            size: c,
+            shape: v ? f.Dv2.ROUND_RIGHT : f.Dv2.ROUND
           })
         })]
       }))

@@ -1,4 +1,4 @@
-/** Chunk was on 33358 **/
+/** Chunk was on 69310 **/
 /** chunk id: 603274, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => N
@@ -42,12 +42,12 @@ function S(e, t) {
   })
 }
 
-function I() {
+function P() {
   let e = (0, Chunk442837.Wu)([Chunk853856.Z, Chunk592125.Z], () => Chunk709054.default.keys(Chunk853856.Z.getFavoriteChannels()).map(e => m.Z.getChannel(e)).filter(Chunk823379.lm)),
     t = module.map(e => e.id),
     n = module.filter(e => e.type === j.d4z.GUILD_VOICE),
     i = module.filter(e => e.type === j.d4z.GUILD_STAGE_VOICE).map(e => e.id),
-    l = (0, Chunk442837.Wu)([Chunk938475.ZP], () => a().flatMap(require, e => O.ZP.getVoiceStatesForChannel(e).map(e => {
+    l = (0, Chunk442837.Wu)([Chunk938475.ZP], () => a().flatMap(require, e => _.ZP.getVoiceStatesForChannel(e).map(e => {
       let {
         user: t
       } = e;
@@ -65,7 +65,7 @@ function I() {
       return module
     }),
     E = (0, Chunk442837.Wu)([Chunk199902.Z], () => Chunk199902.Z.getAllApplicationStreams().filter(e => t.includes(e.channelId)).map(e => e.ownerId), [exports]),
-    I = (0, Chunk442837.Wu)([Chunk317381.ZP], () => {
+    P = (0, Chunk442837.Wu)([Chunk317381.ZP], () => {
       let e = Chunk317381.ZP.getEmbeddedActivitiesByChannel(),
         n = [];
       for (let l of exports) {
@@ -74,9 +74,9 @@ function I() {
       }
       return require
     }, [exports]),
-    P = (0, Chunk442837.Wu)([Chunk594174.default], () => I.map(e => b.default.getUser(e)), [I]),
+    I = (0, Chunk442837.Wu)([Chunk594174.default], () => P.map(e => b.default.getUser(e)), [P]),
     N = (0, Chunk442837.Wu)([Chunk594174.default], () => Chunk395530.map(e => b.default.getUser(e)), [Chunk395530]),
-    w = S(Chunk481060.gj8, l.filter(e => !E.includes(e.id) && !I.includes(e.id))),
+    w = S(Chunk481060.gj8, l.filter(e => !E.includes(e.id) && !P.includes(e.id))),
     Z = 0 === Chunk392711.length ? null : (0, Chunk951288.jsxs)("div", {
       className: Chunk102647.row,
       children: [(0, Chunk951288.jsx)(Chunk481060.ewx, {
@@ -100,7 +100,7 @@ function I() {
         })]
       })]
     }),
-    T = S(Chunk481060.hGI, N.filter(e => null != e && !I.includes(e.id))),
+    T = S(Chunk481060.hGI, N.filter(e => null != e && !P.includes(e.id))),
     {
       enabled: A
     } = Chunk456100.c.useExperiment({
@@ -108,13 +108,13 @@ function I() {
     }, {
       autoTrackExposure: true
     }),
-    R = S(A ? Chunk481060.iWm : Chunk481060.nG3, P);
+    R = S(A ? Chunk481060.iWm : Chunk481060.nG3, I);
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [Z, w, T, R]
   })
 }
 
-function P() {
+function I() {
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsx)("div", {
       className: l()(Chunk102647.row, Chunk102647.rowGuildName),
@@ -122,7 +122,7 @@ function P() {
         className: l()(Chunk102647.guildNameText, Chunk102647.guildNameTextLimitedSize),
         children: Chunk388032.intl.string(Chunk388032.t.wMWycn)
       })
-    }), (0, Chunk951288.jsx)(I, {})]
+    }), (0, Chunk951288.jsx)(P, {})]
   })
 }
 
@@ -136,7 +136,7 @@ function N(e) {
     hideOnClick: true,
     spacing: 12,
     position: "right",
-    text: (0, r.jsx)(P, {}),
+    text: (0, r.jsx)(I, {}),
     "aria-label": t,
     tooltipClassName: E.listItemTooltip,
     onTooltipShow: n,

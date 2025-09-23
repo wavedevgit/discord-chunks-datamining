@@ -337,9 +337,9 @@ class Q extends(r = Chunk647438.PureComponent) {
         disableAutofocusOnDefaultForm: u
       } = this.props,
       h = !this.hasError("email") && this.hasError("password");
-    return n = null != r ? (0, i.jsx)(U.Z, {
+    return n = null != r ? (0, i.jsx)(G.Z, {
       invite: r
-    }) : null != l ? (0, i.jsx)(G.Z, {
+    }) : null != l ? (0, i.jsx)(U.Z, {
       giftCode: l
     }) : (0, i.jsxs)("div", {
       className: H.header,

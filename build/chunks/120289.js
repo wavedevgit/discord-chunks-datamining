@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 120289, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 97571 **/
+/** chunk id: 120289, original params: e,t,n (module,exports,require) **/
 module.exports = {
   wrapper: "wrapper_a230e0",
   backgroundWrapper: "backgroundWrapper_a230e0",

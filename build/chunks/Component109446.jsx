@@ -1,4 +1,4 @@
-/** Chunk was on 33358 **/
+/** Chunk was on 69310 **/
 /** chunk id: 109446, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -29,10 +29,10 @@ function x(e) {
     channel: t
   } = e, l = (0, a.Wu)([d.Z, g.ZP, h.Z], () => {
     let e = d.Z.getActiveJoinedRelevantThreadsForParent(t.guild_id, t.id);
-    return o()(d.Z.getActiveJoinedThreadsForParent(t.guild_id, t.id)).values().map(e => e.channel).concat(o().values(d.Z.getActiveUnjoinedThreadsForParent(t.guild_id, t.id))).filter(t => !(t.id in e) && h.Z.can(y.Plq.VIEW_CHANNEL, t)).sort((e, t) => {
+    return o()(d.Z.getActiveJoinedThreadsForParent(t.guild_id, t.id)).values().map(e => e.channel).concat(o().values(d.Z.getActiveUnjoinedThreadsForParent(t.guild_id, t.id))).filter(t => !(t.id in e) && h.Z.can(O.Plq.VIEW_CHANNEL, t)).sort((e, t) => {
       let n = g.ZP.lastMessageId(e.id),
         r = g.ZP.lastMessageId(t.id);
-      return O.default.compare(n, r)
+      return _.default.compare(n, r)
     }).reverse().value()
   }), c = t.isForumLikeChannel() ? 5 : 3;
   return i.useEffect(() => {
@@ -91,7 +91,7 @@ function C(e) {
   return (0, r.jsxs)(s.P3F, {
     className: j.row,
     onClick: e => {
-      (0, f.ok)(t, t.isForumPost() ? e.shiftKey : !e.shiftKey, _.on.POPOUT)
+      (0, f.ok)(t, t.isForumPost() ? e.shiftKey : !e.shiftKey, y.on.POPOUT)
     },
     children: [null == n ? (0, r.jsx)("img", {
       className: j.avatar,

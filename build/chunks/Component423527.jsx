@@ -164,7 +164,7 @@ class eu extends(r = Chunk647438.PureComponent) {
       this.setState({
         isRateLimited: false
       })
-    }))), n && !e.authenticated && ((0, Z.c)(ee.M5.ORGANIC_REGISTERED), this.redirectIfAuthenticated());
+    }))), n && !e.authenticated && ((0, P.c)(ee.M5.ORGANIC_REGISTERED), this.redirectIfAuthenticated());
     let o = Q.EW.FULL;
     r || this.hasError("date_of_birth") ? o = Q.EW.AGE_GATE : this.inGuildOrChannelInviteFlow() && (o = Q.EW.INVITE), i(o)
   }
@@ -193,7 +193,7 @@ class eu extends(r = Chunk647438.PureComponent) {
       giftCode: a,
       onRegister: c,
       usernameSuggestion: u
-    } = this.props, d = null != Chunk120356 ? Chunk120356.code : null, h = null != Chunk593473 ? Chunk593473.skuId : null, g = Chunk882037.MD.getState(), m = (0, Chunk624138.Ew)(Chunk990547) ? null : exports === Chunk990547, f = Chunk188785.a ? await (0, Chunk692483.K)(exports) : exports, _ = Chunk188785.a ? await (0, Chunk692483.K)(require) : require;
+    } = this.props, d = null != Chunk120356 ? Chunk120356.code : null, h = null != Chunk593473 ? Chunk593473.skuId : null, g = Chunk882037.MD.getState(), p = (0, Chunk624138.Ew)(Chunk990547) ? null : exports === Chunk990547, f = Chunk188785.a ? await (0, Chunk692483.K)(exports) : exports, _ = Chunk188785.a ? await (0, Chunk692483.K)(require) : require;
     Chunk585483.S.dispatch(Chunk981631.CkL.WAVE_EMPHASIZE), this.setState({
       registering: true,
       apiErrors: {}
@@ -470,8 +470,8 @@ class eu extends(r = Chunk647438.PureComponent) {
       parsedDateOfBirth: u,
       globalNameFocused: d,
       emailClientError: h,
-      usernameClientError: m,
-      passwordClientError: p,
+      usernameClientError: p,
+      passwordClientError: m,
       dateOfBirthClientError: f,
       registering: _,
       apiErrors: {
@@ -497,11 +497,11 @@ class eu extends(r = Chunk647438.PureComponent) {
           children: en.intl.string(en.t["825cFx"])
         })
       }))
-    }), P = async () => {
+    }), Z = async () => {
       this.setState({
         usernameFocused: true
       }), s.length > 0 && !w.Z.wasRegistrationSuggestionFetched(s) && await L.Z.fetchSuggestionsRegistration(s)
-    }, Z = e => {
+    }, P = e => {
       this.setState({
         username: e.toLocaleLowerCase(),
         usernameClientError: 0 === e.length ? en.intl.string(en.t.EkokLy) : null
@@ -568,15 +568,15 @@ class eu extends(r = Chunk647438.PureComponent) {
         onBlur: () => this.setState({
           usernameFocused: false
         }),
-        onFocus: P,
+        onFocus: Z,
         tabIndex: false,
         children: [(0, i.jsx)(I.II, {
           label: en.intl.string(en.t.TWzdWl),
           className: ei.marginBottom20,
           name: "username",
           value: r,
-          onChange: Z,
-          error: null != m ? m : ec(v),
+          onChange: P,
+          error: null != p ? p : ec(v),
           autoComplete: "off",
           setRef: e => {
             this.usernameRef = e
@@ -593,7 +593,7 @@ class eu extends(r = Chunk647438.PureComponent) {
           password: e,
           passwordClientError: 0 === e.length ? en.intl.string(en.t.EkokLy) : null
         }),
-        error: null != p ? p : ec(j),
+        error: null != m ? m : ec(j),
         type: "password",
         autoComplete: "new-password",
         setRef: e => {
@@ -692,7 +692,7 @@ class eu extends(r = Chunk647438.PureComponent) {
         d = null != s ? (0, a.parse)(s.search) : {};
       null != l ? t = X.Z5c.INVITE_LOGIN(l.code) : null != r ? t = X.Z5c.GIFT_CODE_LOGIN(r.code) : null != i ? t = X.Z5c.GUILD_TEMPLATE_LOGIN(i.code) : null != c ? (t = X.Z5c.LOGIN, d.redirect_to = c) : (t = X.Z5c.LOGIN, "" !== n && (d = {
         email: n
-      })), m.Z.loginReset(), u(t, {
+      })), p.Z.loginReset(), u(t, {
         search: (0, a.stringify)(d),
         source: "register"
       }), null == o || o(e), K.S.dispatch(X.CkL.WAVE_EMPHASIZE)
@@ -781,12 +781,12 @@ class eu extends(r = Chunk647438.PureComponent) {
 }
 
 function ed(e) {
-  let t = (0, d.cj)([F.Z, B.default, f.Z, R.Z, P.Z], () => ({
+  let t = (0, d.cj)([F.Z, B.default, f.Z, R.Z, Z.Z], () => ({
       consentRequired: F.Z.getAuthenticationConsentRequired(),
       authenticated: B.default.isAuthenticated(),
       isUnderage: f.Z.isUnderageAnonymous(),
       country: R.Z.getCountryCode(),
-      hasLoggedInAccounts: P.Z.getHasLoggedInAccounts()
+      hasLoggedInAccounts: Z.Z.getHasLoggedInAccounts()
     })),
     n = (0, d.e7)([w.Z], () => w.Z.registrationUsernameSuggestion()),
     [r, s] = l.useState(Q.EW.FULL);

@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 448697, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 43342 **/
+/** chunk id: 448697, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  R: () => h
+  R: () => f
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,41 +15,39 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk551766 = require("./551766.js");
 
-function p() {
-  let e = (0, Chunk442837.cj)([Chunk709706.Z], () => Chunk709706.Z.getOngoingDownloads()),
-    t = Chunk647438.useRef({});
-  Chunk647438.useEffect(() => {
-    0 === Object.entries(module).length && (exports.current = {}), Object.assign(exports.current, module)
-  }, [module]);
-  let n = Object.values(exports.current),
-    r = require.some(e => {
-      let {
-        downloadedBytes: t
-      } = e;
-      return (null != t ? t : 0) > 0
-    }),
-    o = (0, Chunk392711.sumBy)(require, e => {
-      var t;
-      return null != (t = null == e ? true : e.downloadedBytes) ? t : 0
-    }),
-    l = (0, Chunk392711.sumBy)(require, e => {
-      var t;
-      return null != (t = null == e ? true : e.totalBytes) ? t : 0
-    });
-  return {
-    hasActiveDownloads: Chunk951288,
-    progress: 0 === Chunk481060 ? 0 : Math.floor(Chunk401393 / Chunk481060 * 100)
-  }
-}
-
-function h() {
+function f() {
   let {
     hasActiveDownloads: e,
     progress: t
-  } = p(), {
+  } = function() {
+    let e = (0, Chunk442837.cj)([Chunk709706.Z], () => Chunk709706.Z.getOngoingDownloads()),
+      t = Chunk647438.useRef({});
+    Chunk647438.useEffect(() => {
+      0 === Object.entries(module).length && (exports.current = {}), Object.assign(exports.current, module)
+    }, [module]);
+    let n = Object.values(exports.current),
+      r = require.some(e => {
+        let {
+          downloadedBytes: t
+        } = e;
+        return (null != t ? t : 0) > 0
+      }),
+      l = (0, Chunk392711.sumBy)(require, e => {
+        var t;
+        return null != (t = null == e ? true : e.downloadedBytes) ? t : 0
+      }),
+      s = (0, Chunk392711.sumBy)(require, e => {
+        var t;
+        return null != (t = null == e ? true : e.totalBytes) ? t : 0
+      });
+    return {
+      hasActiveDownloads: Chunk951288,
+      progress: 0 === Chunk481060 ? 0 : Math.floor(Chunk401393 / Chunk481060 * 100)
+    }
+  }(), {
     activeVoice: n
-  } = (0, Chunk378441.o)(), i = null != require, a = module ? Chunk647438 ? "voice-on" : "voice-off" : null;
-  return (0, Chunk481060.Yzy)(Chunk392711, {
+  } = (0, Chunk378441.o)();
+  return (0, Chunk481060.Yzy)(module ? null != require ? "voice-on" : "voice-off" : null, {
     from: {
       opacity: 0,
       translateY: 20
@@ -63,28 +60,28 @@ function h() {
       opacity: 0,
       translateY: 80
     }
-  }, "respect-motion-settings")((e, n) => null != n ? (0, r.jsx)(o.animated.div, {
+  }, "respect-motion-settings")((e, n) => null != n ? (0, r.jsx)(l.animated.div, {
     style: e,
-    className: _.floaterWrapper,
+    className: m.floaterWrapper,
     children: (0, r.jsxs)("div", {
-      className: _.visibleFloater,
+      className: m.visibleFloater,
       children: [(0, r.jsxs)("div", {
-        className: _.progressText,
-        children: [(0, r.jsx)(l.Text, {
+        className: m.progressText,
+        children: [(0, r.jsx)(s.Text, {
           variant: "text-sm/semibold",
           color: "text-primary",
-          children: f.intl.format(f.t["r+uZYW"], {
+          children: p.intl.format(p.t["r+uZYW"], {
             progress: t
           })
-        }), (0, r.jsx)(l.Avr, {
-          text: f.intl.string(f.t["ETE/oK"]),
+        }), (0, r.jsx)(s.Avr, {
+          text: p.intl.string(p.t["ETE/oK"]),
           onClick: d.ge,
           variant: "always-white",
           textVariant: "text-sm/normal"
         })]
-      }), (0, r.jsx)(l.Exd, {
+      }), (0, r.jsx)(s.Exd, {
         percent: t,
-        size: l.Exd.Sizes.XSMALL
+        size: s.Exd.Sizes.XSMALL
       })]
     })
   }) : null)

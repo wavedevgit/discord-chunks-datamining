@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 715495, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 97571 **/
+/** chunk id: 715495, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => _
 }), require("./388685.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -21,91 +20,68 @@ var Chunk951288 = require("./951288.js"),
   Chunk731994 = require("./731994.js"),
   Chunk761804 = require("./761804.js");
 
-function b(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function y(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      a = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      b(e, t, n[t])
+    }))), a.forEach(function(t) {
+      var a;
+      a = n[t], t in e ? Object.defineProperty(e, t, {
+        value: a,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = a
     })
   }
   return e
 }
 
-function O(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function v(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
+function j(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var a = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, a)
+    }
+    return n
+  })(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function I() {
-  var e;
-  let [t, n] = (0, Chunk647438.useState)(false), [a, s] = (0, Chunk647438.useState)(false), [u, p] = (0, Chunk647438.useState)(null), [m, b] = (0, Chunk647438.useState)(320), O = (0, Chunk647438.useRef)(null), I = (0, Chunk647438.useRef)(null), P = (0, Chunk647438.useRef)(null), w = (0, Chunk396821.ZP)(e => e.toolsCache), {
-    setToolsCache: D,
-    removeToolsCache: x
+function _() {
+  var e, t;
+  let [n, i] = (0, Chunk647438.useState)(false), [s, d] = (0, Chunk647438.useState)(false), [h, f] = (0, Chunk647438.useState)(null), _ = (0, Chunk396821.ZP)(e => e.toolsCache), {
+    setToolsCache: T,
+    removeToolsCache: S
   } = (0, Chunk396821.L3)(), {
-    setImgCache: L
-  } = (0, Chunk396821.W_)(), j = (0, Chunk647438.useCallback)(e => {
-    let t = w[e];
-    null != t && p({
+    setImgCache: O
+  } = (0, Chunk396821.W_)(), P = (0, Chunk647438.useCallback)(e => {
+    let t = _[e];
+    null != t && f({
       src: t.url,
       palette: t.palette,
       preview: true
-    }), p(t => null == t ? {
+    }), f(t => null == t ? {
       src: e,
-      palette: f.jD,
+      palette: m.jD,
       preview: true
-    } : v(y({}, t), {
+    } : j(v({}, t), {
       src: e,
       preview: true
     }))
-  }, [w]), M = (0, Chunk647438.useCallback)(e => {
-    p(t => null == t ? null : v(y({}, t), {
+  }, [_]), I = (0, Chunk647438.useCallback)(e => {
+    f(t => null == t ? null : j(v({}, t), {
       palette: e,
       preview: true
     }))
   }, []), k = (0, Chunk647438.useCallback)(e => {
-    x(e)
-  }, [x]), U = (0, Chunk647438.useCallback)(e => {
-    if (null != O.current) {
-      let t = O.current.getBoundingClientRect();
-      b(Math.max(264, Math.min(432, e.clientX - t.left)))
-    }
-  }, []), G = (0, Chunk647438.useCallback)(e => {
-    e.preventDefault(), e.stopPropagation();
-    let t = e => {
-        e.preventDefault(), U(e)
-      },
-      n = () => {
-        null != I.current && (document.removeEventListener("mousemove", I.current), I.current = null), null != P.current && (document.removeEventListener("mouseup", P.current), P.current = null)
-      };
-    I.current = t, P.current = n, document.addEventListener("mousemove", t), document.addEventListener("mouseup", n)
-  }, [U]);
-  return (0, Chunk647438.useEffect)(() => () => {
-    null != I.current && (document.removeEventListener("mousemove", I.current), I.current = null), null != P.current && (document.removeEventListener("mouseup", P.current), P.current = null)
-  }, []), (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+    S(e)
+  }, [S]);
+  return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsxs)("div", {
       className: Chunk761804.controls,
       children: [(0, Chunk951288.jsxs)("div", {
@@ -113,55 +89,32 @@ function I() {
         children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
           size: "sm",
           onClick: () => {
-            Chunk276264(false), require(e => !e)
+            Chunk594174(false), Chunk442837(e => !e)
           },
           variant: "secondary",
           text: "Toggle Themes"
         }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           size: "sm",
           onClick: () => {
-            require(false), Chunk276264(e => !e)
+            Chunk442837(false), Chunk594174(e => !e)
           },
           variant: "secondary",
           text: "Toggle Gradients"
         })]
       }), (0, Chunk951288.jsxs)("div", {
         className: Chunk761804.themePicker,
-        children: [exports && (0, Chunk951288.jsx)(Chunk329013.i, {}), Chunk442837 && (0, Chunk951288.jsx)(Chunk711325.Z, {
-          selected: null == Chunk594174 || null == (e = Chunk594174.palette) ? true : module.name,
+        children: [require && (0, Chunk951288.jsx)(Chunk329013.i, {}), Chunk276264 && (0, Chunk951288.jsx)(Chunk711325.Z, {
+          selected: null == Chunk996746 || null == (e = Chunk996746.palette) ? true : module.name,
           onSelect: e => {
-            (null == u ? true : u.src) != null && D(u.src, u.src, e), M(e)
+            (null == h ? true : h.src) != null && T(h.src, h.src, e), I(e)
           }
         })]
       })]
     }), (0, Chunk951288.jsxs)("div", {
       className: Chunk761804.main,
-      children: [(0, Chunk951288.jsxs)("div", {
-        ref: O,
-        className: Chunk761804.previews,
-        style: {
-          width: "".concat(Chunk852630, "px")
-        },
-        children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
-          variant: "text-sm/semibold",
-          children: "Memberlist"
-        }), (0, Chunk951288.jsx)(C, {
-          nameplate: Chunk594174
-        }), (0, Chunk951288.jsx)(Chunk481060.Text, {
-          variant: "text-sm/semibold",
-          children: "DMs"
-        }), (0, Chunk951288.jsx)(N, {
-          nameplate: Chunk594174
-        }), (0, Chunk951288.jsx)(Chunk481060.Text, {
-          variant: "text-sm/semibold",
-          children: "RTC"
-        }), (0, Chunk951288.jsx)(R, {
-          nameplate: Chunk594174
-        }), (0, Chunk951288.jsx)("div", {
-          className: Chunk761804.resizeHandle,
-          onMouseDown: G
-        })]
-      }), (0, Chunk951288.jsxs)("div", {
+      children: [(0, Chunk951288.jsx)(y, {
+        nameplate: Chunk996746
+      }, null == Chunk996746 || null == (t = Chunk996746.palette) ? true : exports.name), (0, Chunk951288.jsxs)("div", {
         className: Chunk761804.buttons,
         children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-sm/semibold",
@@ -173,29 +126,29 @@ function I() {
           onDrop: async e => {
             let t = URL.createObjectURL(e[0]),
               n = e[0],
-              r = await n.arrayBuffer();
-            L(t, t, (0, _.xh)(r)), D(t, t, f.jD)
+              a = await n.arrayBuffer();
+            O(t, t, (0, p.xh)(a)), T(t, t, m.jD)
           }
         }), (0, Chunk951288.jsx)("div", {
           className: Chunk761804.uploadedArea,
-          children: Object.values(w).map(e => {
+          children: Object.values(_).map(e => {
             let {
               url: t
             } = e;
-            return (0, r.jsx)(T, {
+            return (0, a.jsx)(C, {
               src: t,
-              onSetStatic: j,
+              onSetStatic: P,
               removeAsset: k
             }, t)
           })
-        }), (0, Chunk951288.jsx)(A, {
+        }), (0, Chunk951288.jsx)(N, {
           label: "gradient override",
-          onChange: e => M({
-            name: f._j,
+          onChange: e => I({
+            name: m._j,
             darkBackground: e,
             lightBackground: e
           })
-        }), (0, Chunk951288.jsx)(S, {
+        }), (0, Chunk951288.jsx)(E, {
           label: "set",
           onClick: () => {}
         })]
@@ -204,30 +157,84 @@ function I() {
   })
 }
 
-function T(e) {
+function y(e) {
+  let {
+    nameplate: t
+  } = e, [n, i] = (0, r.useState)(320), s = (0, r.useRef)(null), o = (0, r.useRef)(null), c = (0, r.useRef)(null), d = (0, r.useRef)(document), u = (0, r.useCallback)(e => {
+    if (null != s.current) {
+      let t = s.current.getBoundingClientRect();
+      i(Math.max(264, Math.min(432, e.clientX - t.left)))
+    }
+  }, []), m = (0, r.useCallback)(e => {
+    e.preventDefault(), e.stopPropagation();
+    let t = e.currentTarget.ownerDocument;
+    d.current = t;
+    let n = e => {
+        e.preventDefault(), u(e)
+      },
+      a = () => {
+        null != o.current && (t.removeEventListener("mousemove", o.current), o.current = null), null != c.current && (t.removeEventListener("mouseup", c.current), c.current = null)
+      };
+    o.current = n, c.current = a, t.addEventListener("mousemove", n), t.addEventListener("mouseup", a)
+  }, [u]);
+  return (0, r.useEffect)(() => () => {
+    null != o.current && (d.current.removeEventListener("mousemove", o.current), o.current = null), null != c.current && (d.current.removeEventListener("mouseup", c.current), c.current = null)
+  }, []), (0, a.jsx)(l.zJl, {
+    className: g.previewsContainer,
+    orientation: "horizontal",
+    children: (0, a.jsxs)("div", {
+      ref: s,
+      className: g.previews,
+      style: {
+        width: "".concat(n, "px")
+      },
+      children: [(0, a.jsx)(l.Text, {
+        variant: "text-sm/semibold",
+        children: "Memberlist"
+      }), (0, a.jsx)(T, {
+        nameplate: t
+      }), (0, a.jsx)(l.Text, {
+        variant: "text-sm/semibold",
+        children: "DMs"
+      }), (0, a.jsx)(S, {
+        nameplate: t
+      }), (0, a.jsx)(l.Text, {
+        variant: "text-sm/semibold",
+        children: "RTC"
+      }), (0, a.jsx)(O, {
+        nameplate: t
+      }), (0, a.jsx)("div", {
+        className: g.resizeHandle,
+        onMouseDown: m
+      })]
+    })
+  })
+}
+
+function C(e) {
   let {
     src: t,
     onSetStatic: n,
-    removeAsset: i
+    removeAsset: r
   } = e;
-  return (0, r.jsxs)("div", {
-    className: E.uploaded,
-    children: [(0, r.jsx)(o.P3F, {
-      onClick: () => i(t),
-      className: E.xicon,
-      children: (0, r.jsx)(o.Dio, {
+  return (0, a.jsxs)("div", {
+    className: g.uploaded,
+    children: [(0, a.jsx)(l.P3F, {
+      onClick: () => r(t),
+      className: g.xicon,
+      children: (0, a.jsx)(l.Dio, {
         size: "custom",
         width: 16,
         height: 16,
         name: "x"
       })
-    }), (0, r.jsx)("img", {
-      className: E.uploadedImg,
+    }), (0, a.jsx)("img", {
+      className: g.uploadedImg,
       src: t,
       alt: ""
-    }), (0, r.jsx)("div", {
-      className: E.uploadedControls,
-      children: (0, r.jsx)(o.zxk, {
+    }), (0, a.jsx)("div", {
+      className: g.uploadedControls,
+      children: (0, a.jsx)(l.zxk, {
         onClick: () => n(t),
         size: "sm",
         variant: "secondary",
@@ -237,17 +244,17 @@ function T(e) {
   })
 }
 
-function S(e) {
+function E(e) {
   let {
     label: t,
     onClick: n
   } = e;
-  return (0, r.jsxs)("div", {
-    className: E.flex,
-    children: [(0, r.jsx)(o.Text, {
+  return (0, a.jsxs)("div", {
+    className: g.flex,
+    children: [(0, a.jsx)(l.Text, {
       variant: "text-sm/normal",
       children: "coming soon"
-    }), (0, r.jsx)(o.zxk, {
+    }), (0, a.jsx)(l.zxk, {
       variant: "secondary",
       size: "sm",
       text: t,
@@ -257,53 +264,53 @@ function S(e) {
   })
 }
 
-function A(e) {
+function N(e) {
   let {
     label: t,
     onChange: n
   } = e;
-  return (0, r.jsxs)("div", {
-    className: E.hexInput,
-    children: [(0, r.jsx)(o.Text, {
+  return (0, a.jsxs)("div", {
+    className: g.hexInput,
+    children: [(0, a.jsx)(l.Text, {
       variant: "text-sm/normal",
       children: t
-    }), (0, r.jsx)("input", {
+    }), (0, a.jsx)("input", {
       onChange: e => {
         n(e.target.value)
       },
-      className: E.inputs,
+      className: g.inputs,
       placeholder: "#000000"
     })]
   })
 }
 
-function C(e) {
+function T(e) {
   let {
     nameplate: t
-  } = e, n = (0, a.e7)([u.default], () => u.default.getCurrentUser());
-  return (0, r.jsx)("div", {
-    className: E.preview,
-    children: (0, r.jsxs)("div", {
-      className: E.simArea,
-      children: [(0, r.jsx)(o.Text, {
-        className: E.label,
+  } = e, n = (0, i.e7)([d.default], () => d.default.getCurrentUser());
+  return (0, a.jsx)("div", {
+    className: g.preview,
+    children: (0, a.jsxs)("div", {
+      className: g.simArea,
+      children: [(0, a.jsx)(l.Text, {
+        className: g.label,
         variant: "text-sm/semibold",
         children: "DEFAULT"
-      }), (0, r.jsx)(s.Z, {
+      }), (0, a.jsx)(s.Z, {
         nameplate: t,
         user: n,
         currentUser: n
-      }), (0, r.jsx)(o.Text, {
-        className: E.label,
+      }), (0, a.jsx)(l.Text, {
+        className: g.label,
         variant: "text-sm/semibold",
         children: "FOCUSED"
-      }), (0, r.jsxs)("div", {
-        children: [(0, r.jsx)(s.Z, {
+      }), (0, a.jsxs)("div", {
+        children: [(0, a.jsx)(s.Z, {
           nameplate: t,
           selected: true,
           user: n,
           currentUser: n
-        }), (0, r.jsx)(s.Z, {
+        }), (0, a.jsx)(s.Z, {
           selected: true,
           user: n,
           currentUser: n
@@ -313,29 +320,29 @@ function C(e) {
   })
 }
 
-function N(e) {
+function S(e) {
   let {
     nameplate: t
   } = e;
-  return (0, r.jsx)("div", {
-    className: E.preview,
-    children: (0, r.jsxs)("div", {
-      className: E.simArea,
-      children: [(0, r.jsx)(o.Text, {
-        className: E.label,
+  return (0, a.jsx)("div", {
+    className: g.preview,
+    children: (0, a.jsxs)("div", {
+      className: g.simArea,
+      children: [(0, a.jsx)(l.Text, {
+        className: g.label,
         variant: "text-sm/semibold",
         children: "DEFAULT"
-      }), (0, r.jsx)(m.Z, {
+      }), (0, a.jsx)(f.Z, {
         nameplate: t
-      }), (0, r.jsx)(o.Text, {
-        className: E.label,
+      }), (0, a.jsx)(l.Text, {
+        className: g.label,
         variant: "text-sm/semibold",
         children: "FOCUSED"
-      }), (0, r.jsxs)("div", {
-        children: [(0, r.jsx)(m.Z, {
+      }), (0, a.jsxs)("div", {
+        children: [(0, a.jsx)(f.Z, {
           selected: true,
           nameplate: t
-        }), (0, r.jsx)(m.Z, {
+        }), (0, a.jsx)(f.Z, {
           selected: true
         })]
       })]
@@ -343,15 +350,15 @@ function N(e) {
   })
 }
 
-function R(e) {
+function O(e) {
   let {
     nameplate: t
   } = e;
-  return (0, r.jsx)("div", {
-    className: E.preview,
-    children: (0, r.jsx)("div", {
-      className: E.rtcSim,
-      children: (0, r.jsx)(p.Z, {
+  return (0, a.jsx)("div", {
+    className: g.preview,
+    children: (0, a.jsx)("div", {
+      className: g.rtcSim,
+      children: (0, a.jsx)(h.Z, {
         nameplate: t
       })
     })

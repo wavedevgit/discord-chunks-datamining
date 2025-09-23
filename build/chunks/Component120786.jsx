@@ -1,4 +1,4 @@
-/** Chunk was on 10017 **/
+/** Chunk was on 97571 **/
 /** chunk id: 120786, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   L: () => _
@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk892260 = require("./892260.js"),
   Chunk477154 = require("./477154.js"),
   Chunk387888 = require("./387888.js");
-let v = () => {
+let j = () => {
     let e = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion);
     return (0, Chunk951288.jsx)("div", {
       className: Chunk270469.assetContainer,
@@ -51,15 +51,15 @@ let v = () => {
       linkPreText: s = x.intl.string(x.t["5qZv9P"]),
       linkText: d = x.intl.string(x.t.XRdyj4)
     } = e, u = r.useCallback(() => {
-      null != i && (0, h.Y)({
+      null != i && (0, p.Y)({
         pageType: i,
-        sectionType: p.jXE.ORBS_BALANCE_MENU,
-        ctaObject: p.qAy.ORBS_LEARN_MORE_LINK
+        sectionType: h.jXE.ORBS_BALANCE_MENU,
+        ctaObject: h.qAy.ORBS_LEARN_MORE_LINK
       })
     }, [i]);
     return (0, a.jsxs)("div", {
       className: l()(f.container, b.baseCardOutline),
-      children: [(0, a.jsx)(v, {}), (0, a.jsx)(o.zxk, {
+      children: [(0, a.jsx)(j, {}), (0, a.jsx)(o.zxk, {
         text: t,
         variant: "primary",
         size: "sm",
@@ -74,7 +74,7 @@ let v = () => {
         }), (0, a.jsx)(c.eee, {
           target: "_blank",
           rel: "author",
-          href: m.Z.getArticleURL(p.BhN.ORBS_FAQ),
+          href: m.Z.getArticleURL(h.BhN.ORBS_FAQ),
           className: f.learnMoreLink,
           onClick: u,
           children: d

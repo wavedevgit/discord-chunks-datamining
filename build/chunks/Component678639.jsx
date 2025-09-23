@@ -1,4 +1,4 @@
-/** Chunk was on 10017 **/
+/** Chunk was on 97571 **/
 /** chunk id: 678639, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -48,7 +48,7 @@ let g = [{
       return t.getName()
     }
   }],
-  j = [{
+  v = [{
     id: "local",
     name: "Local Variables",
     group: Chunk621060.v0.NONE,
@@ -81,22 +81,22 @@ let g = [{
     }
   }];
 
-function v(e) {
+function j(e) {
   let {
     store: t,
     initialHeight: n
   } = e, {
     TabBar: r,
     renderSelectedTab: i
-  } = (0, h.ZP)({
-    tabs: j
+  } = (0, p.ZP)({
+    tabs: v
   }, []);
   return (0, a.jsxs)(u.Z, {
     className: x.subPanel,
     minHeight: 100,
     initialHeight: n,
     children: [(0, a.jsx)(r, {}), (0, a.jsxs)(c.ZP, {
-      className: l()(p.headerBar, x.subPanelHeaderBar),
+      className: l()(h.headerBar, x.subPanelHeaderBar),
       children: [(0, a.jsx)(c.ZP.Icon, {
         icon: o.lO_,
         tooltip: t.getName()
@@ -123,7 +123,7 @@ function _() {
       return n.getName().toLowerCase().includes(t.toLowerCase())
     })(e, t)),
     [d, u] = Chunk647438.useState(),
-    h = Chunk120356.find(e => e._dispatchToken === d);
+    p = Chunk120356.find(e => e._dispatchToken === d);
   return (0, Chunk951288.jsxs)("div", {
     ref: module,
     className: l()(Chunk866403.panel, Chunk509510.panel),
@@ -142,7 +142,7 @@ function _() {
       data: Chunk665149,
       selectedRowKey: Chunk428530,
       onClickRow: e => u(e.key)
-    }), null != Chunk621060 && (0, Chunk951288.jsx)(v, {
+    }), null != Chunk621060 && (0, Chunk951288.jsx)(j, {
       store: Chunk621060,
       initialHeight: null != module.current ? module.current.clientHeight / 2 : 300
     })]

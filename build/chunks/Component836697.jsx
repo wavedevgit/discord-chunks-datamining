@@ -1,7 +1,7 @@
-/** Chunk was on 33358 **/
+/** Chunk was on 69310 **/
 /** chunk id: 836697, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => y
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk933154 = require("./933154.js");
 
-function y(e) {
+function O(e) {
   let {
     onActivate: t,
     children: n
@@ -33,17 +33,17 @@ function y(e) {
       t(), null == (l = h.current) || null == (i = l.ref) || null == (r = i.current) || null == (n = r.layerRef) || null == (e = n.current) || e.updatePosition()
     }
   }, [h, d, f, t]), (0, r.jsxs)("div", {
-    className: O.container,
+    className: _.container,
     children: [(0, r.jsx)(o.yRy, {
       ref: h,
       targetElementRef: s,
       shouldShow: d,
       renderPopout: () => (0, r.jsxs)("div", {
-        className: O.popoutContainer,
+        className: _.popoutContainer,
         children: [(0, r.jsxs)("div", {
-          className: O.popoutContent,
+          className: _.popoutContent,
           children: [(0, r.jsxs)("div", {
-            className: O.coachmarkTextContainer,
+            className: _.coachmarkTextContainer,
             children: [(0, r.jsx)(o.X6q, {
               variant: "heading-md/medium",
               children: b.intl.string(b.t["0YV0YG"])
@@ -60,7 +60,7 @@ function y(e) {
             onClick: p
           })]
         }), (0, r.jsx)("div", {
-          className: O.popoutCaretLeft
+          className: _.popoutCaretLeft
         })]
       }),
       position: "right",
@@ -87,7 +87,7 @@ function y(e) {
           }
           return e
         }({}, e), n = n = {
-          className: O.popoutAnchor,
+          className: _.popoutAnchor,
           ref: s
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);
@@ -104,10 +104,10 @@ function y(e) {
   })
 }
 
-function _(e) {
+function y(e) {
   let {
     onActivate: t
-  } = e, [n, _] = i.useState(false), v = (0, l.e7)([d.Z], () => d.Z.getGuildId()), j = (0, l.e7)([u.Z], () => u.Z.hasFetchedRequestToJoinGuilds), x = (0, h.Z)(), C = (0, a.Z)(v), E = i.useMemo(() => {
+  } = e, [n, y] = i.useState(false), v = (0, l.e7)([d.Z], () => d.Z.getGuildId()), j = (0, l.e7)([u.Z], () => u.Z.hasFetchedRequestToJoinGuilds), x = (0, h.Z)(), C = (0, a.Z)(v), E = i.useMemo(() => {
     let e = (0, f.qQ)({
       folderId: p.S.PENDING_JOIN_REQUESTS_FOLDER,
       folderName: b.intl.string(b.t["scsU+v"]),
@@ -122,8 +122,8 @@ function _(e) {
   }, [n, j]);
   let S = null != v && x.includes(v);
   return (i.useEffect(() => {
-    !n && S && C !== v && _(true)
-  }, [n, S, C, v]), 0 === x.length) ? null : (0, r.jsx)(y, {
+    !n && S && C !== v && y(true)
+  }, [n, S, C, v]), 0 === x.length) ? null : (0, r.jsx)(O, {
     onActivate: t,
     children: (0, r.jsx)(g.Z, {
       folderNode: E,
@@ -132,11 +132,11 @@ function _(e) {
       draggable: false,
       sorting: false,
       onExpandCollapse: () => {
-        _(!n), c.ZP.clearCoachmark()
+        y(!n), c.ZP.clearCoachmark()
       },
       folderButtonSize: "icon",
       folderButtonContent: (0, r.jsx)("div", {
-        className: O.pendingFolderButtonIcon,
+        className: _.pendingFolderButtonIcon,
         children: (0, r.jsx)(o.wGF, {
           size: "sm",
           color: "currentColor"

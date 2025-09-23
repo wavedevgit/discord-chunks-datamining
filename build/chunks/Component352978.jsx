@@ -1,4 +1,4 @@
-/** Chunk was on 47387 **/
+/** Chunk was on 56785 **/
 /** chunk id: 352978, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   L: () => p,
@@ -22,58 +22,58 @@ let m = Chunk647438.memo(function(e) {
     videoComponent: a,
     className: p,
     fit: m = "contain",
-    mirror: E = false,
+    mirror: _ = false,
     paused: g = false,
     streamPreviewURL: b,
-    videoSpinnerContext: S,
-    userId: v,
-    streamKey: O
-  } = e, [h, y] = i.useState(true);
-  (0, c.Z)({
+    videoSpinnerContext: v,
+    userId: E,
+    streamKey: h
+  } = e, [y, S] = l.useState(true);
+  (0, u.Z)({
     location: "VideoStream",
-    videoSpinnerContext: S,
-    userId: v,
+    videoSpinnerContext: v,
+    userId: E,
     streamId: t,
-    loading: h,
+    loading: y,
     paused: g
   });
   let {
-    onReady: _
+    onReady: O
   } = (0, s.Z)({
     streamId: t,
-    userId: v,
-    loading: h,
-    videoSpinnerContext: S,
-    streamKey: O,
+    userId: E,
+    loading: y,
+    videoSpinnerContext: v,
+    streamKey: h,
     paused: g
-  }), j = i.useCallback(() => {
-    y(false), _()
-  }, [_]);
-  return (0, l.jsxs)("div", {
+  }), I = l.useCallback(() => {
+    S(false), O()
+  }, [O]);
+  return (0, i.jsxs)("div", {
     className: o()(f.wrapper, r),
-    children: [null != t && (0, l.jsx)(a, {
+    children: [null != t && (0, i.jsx)(a, {
       className: o()(f.video, (0, d.l)(f, "video", m), {
-        [f.mirror]: E
+        [f.mirror]: _
       }, p),
       streamId: t,
       onResize: n,
-      onReady: j,
+      onReady: I,
       paused: g
-    }), g ? null : (0, l.jsx)("div", {
+    }), g ? null : (0, i.jsx)("div", {
       className: o()(f.previewWrapper, {
-        [f.loading]: h
+        [f.loading]: y
       }),
-      children: h && (0, l.jsxs)(i.Fragment, {
-        children: [null != b ? (0, l.jsx)("img", {
+      children: y && (0, i.jsxs)(l.Fragment, {
+        children: [null != b ? (0, i.jsx)("img", {
           src: b,
           alt: "",
           className: f.previewImage
-        }) : (0, l.jsx)("div", {
+        }) : (0, i.jsx)("div", {
           className: f.emptyPreviewWrapper,
-          children: (0, l.jsx)("div", {
+          children: (0, i.jsx)("div", {
             className: f.emptyPreview
           })
-        }), (0, l.jsx)(u.$jN, {
+        }), (0, i.jsx)(c.$jN, {
           className: f.spinner
         })]
       })

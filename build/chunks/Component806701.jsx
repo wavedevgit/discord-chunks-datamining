@@ -1,7 +1,7 @@
 /** Chunk was on 27978 **/
 /** chunk id: 806701, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => m
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -16,7 +16,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk926609 = require("./926609.js"),
   Chunk10198 = require("./10198.js");
 
-function m(e) {
+function p(e) {
   let {
     children: t
   } = e;
@@ -30,7 +30,7 @@ function m(e) {
   })
 }
 
-function p(e) {
+function m(e) {
   let {
     setSlide: t,
     transitionTo: i
@@ -51,15 +51,15 @@ function p(e) {
         variant: "text-sm/normal"
       }), (0, r.jsxs)("ul", {
         className: h.listContainer,
-        children: [(0, r.jsx)(m, {
+        children: [(0, r.jsx)(p, {
           children: d.intl.string(d.t.Gj1Zr6)
-        }), (0, r.jsx)(a.Z, {}), (0, r.jsx)(m, {
+        }), (0, r.jsx)(a.Z, {}), (0, r.jsx)(p, {
           children: d.intl.string(d.t["8C6t3N"])
-        }), (0, r.jsx)(a.Z, {}), (0, r.jsx)(m, {
+        }), (0, r.jsx)(a.Z, {}), (0, r.jsx)(p, {
           children: d.intl.string(d.t.mToZMD)
-        }), (0, r.jsx)(a.Z, {}), (0, r.jsx)(m, {
+        }), (0, r.jsx)(a.Z, {}), (0, r.jsx)(p, {
           children: d.intl.string(d.t.TPEvkZ)
-        }), (0, r.jsx)(a.Z, {}), (0, r.jsx)(m, {
+        }), (0, r.jsx)(a.Z, {}), (0, r.jsx)(p, {
           children: d.intl.string(d.t.H8Y1Li)
         })]
       })]

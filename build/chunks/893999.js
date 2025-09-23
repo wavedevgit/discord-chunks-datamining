@@ -1,68 +1,51 @@
-/** Chunk was on web.js **/
-/** chunk id: 893999, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 90550 **/
+/** chunk id: 893999, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => d
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js");
 let i = new Map,
-  a = new Map,
-  o = new Map;
+  l = new Map,
+  a = new Map;
 
-function s(e) {
+function o(e) {
   return i.has(e) || i.set(e, false), i.get(e)
 }
 
-function l(e) {
-  return !a.has(e)
+function s(e) {
+  return l.has(e) || (l.set(e, new Set), a.set(e, function(e) {
+    let n = n => {
+        c(n.shiftKey, e)
+      },
+      t = n => {
+        c(n.shiftKey, e)
+      },
+      r = n => {
+        c(n.shiftKey, e)
+      },
+      i = () => {
+        c(false, e)
+      };
+    return e.addEventListener("keydown", n), e.addEventListener("keyup", t), e.addEventListener("mousemove", r), e.addEventListener("blur", i), () => {
+      e.removeEventListener("keydown", n), e.removeEventListener("keyup", t), e.removeEventListener("mousemove", r), e.removeEventListener("blur", i)
+    }
+  }(e))), l.get(e)
 }
 
-function c(e) {
-  return l(e) && (a.set(e, new Set), o.set(e, u(e))), a.get(e)
+function c(e, n) {
+  e !== o(n) && (i.set(n, e), s(n).forEach(n => n(e)))
 }
 
-function u(e) {
-  let t = t => {
-      _(t.shiftKey, e)
-    },
-    n = t => {
-      _(t.shiftKey, e)
-    },
-    r = t => {
-      _(t.shiftKey, e)
-    },
-    i = () => {
-      _(false, e)
-    };
-  return e.addEventListener("keydown", t), e.addEventListener("keyup", n), e.addEventListener("mousemove", r), e.addEventListener("blur", i), () => {
-    e.removeEventListener("keydown", t), e.removeEventListener("keyup", n), e.removeEventListener("mousemove", r), e.removeEventListener("blur", i)
-  }
-}
-
-function d(e, t) {
-  c(e).add(t)
-}
-
-function f(e, t) {
-  if (c(e).delete(t), 0 === c(e).size) {
-    var n;
-    null == (n = o.get(e)) || n(), o.delete(e), a.delete(e), i.delete(e)
-  }
-}
-
-function _(e, t) {
-  e !== s(t) && (i.set(t, e), c(t).forEach(t => t(e)))
-}
-
-function p() {
+function d() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : window,
-    [t, n] = Chunk647438.useState(s(module));
+    [n, t] = Chunk647438.useState(o(module));
   return Chunk647438.useEffect(() => {
-    let t = e => {
-      n(e)
+    let n = e => {
+      t(e)
     };
-    return d(module, exports), () => {
-      f(module, exports)
+    return s(module).add(exports), () => {
+      var t;
+      s(module).delete(exports), 0 === s(module).size && (null == (t = a.get(module)) || require(), a.delete(module), l.delete(module), i.delete(module))
     }
   }, [module]), exports
 }

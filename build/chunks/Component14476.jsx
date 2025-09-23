@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk979554 = require("./979554.js"),
   Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
@@ -21,15 +21,15 @@ let x = e => {
   let {
     skuId: t,
     assetId: n,
-    user: l,
+    user: o,
     claimed: x,
     onSelect: m,
     productName: j,
     a11yLabel: b,
     selectedSkuId: g,
     category: L
-  } = e, y = i.useRef(null), S = (0, d.Z)(y), v = (0, _.m)(y), E = !x && (S || v), O = (0, c.ZP)(), I = (0, s.wj)(O), P = {
-    type: a.Z.AVATAR_DECORATION,
+  } = e, y = i.useRef(null), v = (0, d.Z)(y), S = (0, _.m)(y), O = !x && (v || S), E = (0, c.ZP)(), P = (0, s.wj)(E), I = {
+    type: l.Z.AVATAR_DECORATION,
     label: b,
     asset: n
   };
@@ -40,21 +40,21 @@ let x = e => {
       onClick: () => {
         null == t || null == m || x || m(t)
       },
-      className: o()(I ? f.shopCardDark : f.shopCard, {
-        [f.shopCardAnimation]: !x,
-        [I ? f.shopCardDarkHighlighted : f.shopCardHighlighted]: E,
-        [f.shopCardSelected]: g === t
+      className: a()(P ? h.shopCardDark : h.shopCard, {
+        [h.shopCardAnimation]: !x,
+        [P ? h.shopCardDarkHighlighted : h.shopCardHighlighted]: O,
+        [h.shopCardSelected]: g === t
       }),
       children: [(0, r.jsx)("div", {
-        className: o()(f.preview, {
-          [f.previewTrick]: L === u.KN.Trick,
-          [f.previewTreat]: L === u.KN.Treat,
-          [f.shopCardClaimed]: x
+        className: a()(h.preview, {
+          [h.previewTrick]: L === u.KN.Trick,
+          [h.previewTreat]: L === u.KN.Treat,
+          [h.shopCardClaimed]: x
         }),
         children: (0, r.jsx)(p.R, {
-          item: P,
-          user: l,
-          isHighlighted: E,
+          item: I,
+          user: o,
+          isHighlighted: O,
           avatarSize: C.EFr.SIZE_120,
           isPurchased: x
         })
@@ -63,15 +63,15 @@ let x = e => {
         width: 48,
         height: 48,
         color: C.TVs.colors.WHITE,
-        className: f.claimedIcon
+        className: h.claimedIcon
       }), (0, r.jsxs)("div", {
-        className: f.productName,
+        className: h.productName,
         children: [(0, r.jsx)(C.X6q, {
           variant: "text-md/bold",
           children: j
         }), (0, r.jsx)(C.Text, {
           variant: "text-md/normal",
-          children: x ? h.intl.string(h.t["6cfuDg"]) : h.intl.string(h.t.QQsaCQ)
+          children: x ? f.intl.string(f.t["6cfuDg"]) : f.intl.string(f.t.QQsaCQ)
         })]
       })]
     })

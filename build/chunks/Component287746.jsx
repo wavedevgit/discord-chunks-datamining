@@ -1,4 +1,4 @@
-/** Chunk was on 80037 **/
+/** Chunk was on 16820 **/
 /** chunk id: 287746, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => tn
@@ -543,8 +543,8 @@ class te extends Chunk647438.PureComponent {
           shouldRefocus: true
         };
         if (null != n && n.length > 0) {
-          let e = (0, eV.KZ)(n);
-          if ((0, eV.Bf)(e, null == u ? true : u.id)) return (0, eB.G)(d, e), {
+          let e = (0, eH.KZ)(n);
+          if ((0, eH.Bf)(e, null == u ? true : u.id)) return (0, eB.G)(d, e), {
             shouldClear: false,
             shouldRefocus: false
           };
@@ -592,14 +592,14 @@ class te extends Chunk647438.PureComponent {
       var t, n;
       let r = null == (t = this.editorRef) ? true : t.getSlateEditor();
       null != r && (G.Q.select(r, []), r.insertText(e), null == (n = this.editorRef) || n.focus())
-    }), e3(this, "renderAttachButton", (e, t) => (0, r.jsx)(F.Z, {
+    }), e3(this, "renderAttachButton", (e, t) => (0, r.jsx)(V.Z, {
       className: t,
       channel: this.props.channel,
       draftType: eE.d.ChannelMessage,
       editorTextContent: this.state.textValue,
       setValue: this.handleSetValue,
       canOnlyUseTextCommands: e
-    })), e3(this, "renderApplicationCommandIcon", (e, t, n) => (0, r.jsx)(V.Z, {
+    })), e3(this, "renderApplicationCommandIcon", (e, t, n) => (0, r.jsx)(H.Z, {
       className: n,
       command: e,
       section: t,
@@ -702,17 +702,17 @@ class tt extends Chunk647438.PureComponent {
       }),
       U = Chunk993766 && Chunk989573 || Chunk456007,
       B = Chunk752305 ? Chunk667204 : Chunk104919,
-      V = a()({
+      H = a()({
         [Chunk599610.barWithAppLauncherButton]: Chunk450936,
         [Chunk599610.barWithAppsDMsUI]: Chunk993766
       }),
       {
-        enabled: F
+        enabled: V
       } = Chunk163612.Z.getCurrentConfig({
         guildId: null == Chunk827498 ? true : Chunk827498.guild_id,
         location: "ChannelChat"
       }),
-      H = Chunk974251 && null != Chunk541099 && null != Chunk827498 && null != Chunk827498.guild_id;
+      F = Chunk974251 && null != Chunk541099 && null != Chunk827498 && null != Chunk827498.guild_id;
     return (0, Chunk951288.jsx)(Chunk410575.Z, {
       page: (0, Chunk934415.mE)(this.props.channel),
       children: (0, Chunk951288.jsx)(Chunk549006.sW, {
@@ -923,7 +923,7 @@ let tn = Chunk647438.memo(function(e) {
   } = e, {
     placeholder: o,
     accessibilityLabel: s
-  } = (0, eH.Z)({
+  } = (0, eF.Z)({
     channel: t
   }), c = (0, ep.S)(eA.default.getCurrentUser(), t), [u] = (0, J.AB)(null == n ? true : n.id), h = (0, Y.Ux)(null == n ? true : n.id), f = (0, d.e7)([eA.default], () => eA.default.getCurrentUser()), m = (0, d.e7)([eP.ZP], () => {
     var e, t, r;
@@ -957,14 +957,14 @@ let tn = Chunk647438.memo(function(e) {
     D = (0, d.e7)([eT.Z], () => eT.Z.getVoiceChannelId()),
     U = (0, d.e7)([ej.Z], () => ej.Z.getChannel(D)),
     B = (0, d.e7)([eA.default], () => t.type !== eQ.d4z.DM ? null : eA.default.getUser(t.getRecipientId())),
-    V = (0, d.e7)([ec.ZP, ex.default], () => ec.ZP.getUserCombo(ex.default.getId(), t.id)),
-    F = (0, b.iD)(t),
-    H = (0, b.d7)(t),
-    G = F.length > 0 || t.rateLimitPerUser > 0 || null != V || null != H,
+    H = (0, d.e7)([ec.ZP, ex.default], () => ec.ZP.getUserCombo(ex.default.getId(), t.id)),
+    V = (0, b.iD)(t),
+    F = (0, b.d7)(t),
+    G = V.length > 0 || t.rateLimitPerUser > 0 || null != H || null != F,
     q = (0, z.Z)("ChannelChat"),
     {
       showLinkedLobbyApplicationLoadingIndicator: K
-    } = (0, eF.Z)(t.linkedLobby),
+    } = (0, eV.Z)(t.linkedLobby),
     X = (0, W.Z)("ChannelChat");
   return (0, r.jsx)(tt, {
     channel: t,

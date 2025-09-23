@@ -1,7 +1,7 @@
-/** Chunk was on 10017 **/
+/** Chunk was on 97571 **/
 /** chunk id: 87454, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => p
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -13,17 +13,17 @@ var Chunk951288 = require("./951288.js"),
   Chunk972118 = require("./972118.js"),
   Chunk561735 = require("./561735.js"),
   Chunk10198 = require("./10198.js");
-let h = Chunk647438.memo(function(e) {
+let p = Chunk647438.memo(function(e) {
   let {
     className: t,
     content: n,
     onChange: i
   } = e, o = l.z[n], {
     isDismissed: m,
-    handleToggleDismissState: h
+    handleToggleDismissState: p
   } = (0, d.Z)(o), [x, f] = r.useState(false), b = r.useCallback(() => {
-    null == i || i(n), h()
-  }, [i, h, n]), g = r.useCallback(e => {
+    null == i || i(n), p()
+  }, [i, p, n]), g = r.useCallback(e => {
     e.preventDefault(), f(true), navigator.clipboard.writeText(n.toLowerCase())
   }, [n]);
   return (0, a.jsx)(s.j7V, {
@@ -38,7 +38,7 @@ let h = Chunk647438.memo(function(e) {
           variant: "text-md/normal",
           className: u.text,
           children: "".concat(n.toLowerCase(), " (").concat(l.z[n], ")")
-        }), (0, c.qh)(o) && (0, a.jsx)(p, {
+        }), (0, c.qh)(o) && (0, a.jsx)(h, {
           content: o
         })]
       }), (0, a.jsx)(s.hU, {
@@ -52,7 +52,7 @@ let h = Chunk647438.memo(function(e) {
   })
 });
 
-function p(e) {
+function h(e) {
   let {
     content: t
   } = e, n = (0, i.e7)([o.Z], () => {

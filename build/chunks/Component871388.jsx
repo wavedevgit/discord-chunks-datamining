@@ -1,5 +1,5 @@
 /** Chunk was on 73628 **/
-/** chunk id: 871388, original params: e,A,t (module,exports,require) **/
+/** chunk id: 871388, original params: e,t,A (module,exports,require) **/
 require.d(exports, {
   B: () => i
 });
@@ -9,29 +9,29 @@ var Chunk481060 = require("./481060.js"),
   Chunk120651 = require("./120651.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function i(e, A) {
-  let t = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {};
-  (0, l.Z)({
+function i(e, t) {
+  let A = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {};
+  (0, a.Z)({
     title: e,
-    body: "string" == typeof A ? A : a.intl.format(A, function(e) {
-      for (var A = 1; A < arguments.length; A++) {
-        var t = null != arguments[A] ? arguments[A] : {},
-          n = Object.keys(t);
-        "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
-          return Object.getOwnPropertyDescriptor(t, e).enumerable
-        }))), n.forEach(function(A) {
-          var n;
-          n = t[A], A in e ? Object.defineProperty(e, A, {
-            value: n,
+    body: "string" == typeof t ? t : l.intl.format(t, function(e) {
+      for (var t = 1; t < arguments.length; t++) {
+        var A = null != arguments[t] ? arguments[t] : {},
+          r = Object.keys(A);
+        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(A).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(A, e).enumerable
+        }))), r.forEach(function(t) {
+          var r;
+          r = A[t], t in e ? Object.defineProperty(e, t, {
+            value: r,
             enumerable: true,
             configurable: true,
             writable: true
-          }) : e[A] = n
+          }) : e[t] = r
         })
       }
       return e
     }({
-      highlightHook: e => (0, n.jsx)(r.Text, {
+      highlightHook: e => (0, r.jsx)(n.Text, {
         variant: "text-md/normal",
         color: "text-default",
         style: {
@@ -39,8 +39,8 @@ function i(e, A) {
         },
         children: e
       })
-    }, t)),
-    cta: a.intl.string(a.t["NX+WJC"]),
+    }, A)),
+    cta: l.intl.string(l.t["NX+WJC"]),
     onConfirm: () => {}
   })
 }

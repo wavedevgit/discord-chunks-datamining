@@ -1,10 +1,10 @@
-/** Chunk was on web.js **/
-/** chunk id: 664046, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 97571 **/
+/** chunk id: 664046, original params: e,t,n (module,exports,require) **/
 module.exports = {
   row: "row_a35735",
   col: "col_a35735",
   grid: "grid_a35735",
+  customEffectsGrid: "customEffectsGrid_a35735",
   end: "end_a35735",
   section: "section_a35735",
   root: "root_a35735",

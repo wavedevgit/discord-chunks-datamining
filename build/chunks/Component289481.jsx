@@ -1,4 +1,4 @@
-/** Chunk was on 33358 **/
+/** Chunk was on 69310 **/
 /** chunk id: 289481, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => E
@@ -111,7 +111,7 @@ let E = Chunk647438.memo(function(e) {
     return (0, r.jsx)("div", {
       className: x.channel,
       children: (0, r.jsx)(u.y5t, {
-        component: (0, r.jsxs)(O.Z, {
+        component: (0, r.jsxs)(_.Z, {
           channel: a,
           gotoChannel: s,
           mentionCount: t.mentionCount,
@@ -119,13 +119,13 @@ let E = Chunk647438.memo(function(e) {
           channelState: t,
           children: [(0, r.jsx)(b.Z, {
             channel: a
-          }), (0, r.jsx)(I, C({}, e)), "nsfw" === t.type ? null : (0, r.jsx)(P, C({}, e))]
+          }), (0, r.jsx)(P, C({}, e)), "nsfw" === t.type ? null : (0, r.jsx)(I, C({}, e))]
         }),
-        children: t.collapsed ? null : "messages" === t.type ? (0, r.jsx)(_.Z, {
+        children: t.collapsed ? null : "messages" === t.type ? (0, r.jsx)(y.Z, {
           channel: t,
           channelRecord: a,
           gotoChannel: s
-        }) : "forum" === t.type ? (0, r.jsx)(y.Z, {
+        }) : "forum" === t.type ? (0, r.jsx)(O.Z, {
           channel: t,
           channelRecord: a,
           deleteChannel: l
@@ -134,7 +134,7 @@ let E = Chunk647438.memo(function(e) {
     })
   });
 
-function I(e) {
+function P(e) {
   let {
     channel: t,
     markChannelRead: n,
@@ -163,7 +163,7 @@ function I(e) {
   })
 }
 
-function P(e) {
+function I(e) {
   let {
     channel: t,
     toggle: n,

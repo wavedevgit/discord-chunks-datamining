@@ -1,4 +1,4 @@
-/** Chunk was on 33358 **/
+/** Chunk was on 69310 **/
 /** chunk id: 652376, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -22,8 +22,8 @@ function c(e) {
     g = null == (t = (0, l.Z)()) ? true : t.guild_id,
     m = null != g && c.includes(g),
     b = (0, i.e7)([s.Z], () => null != h && s.Z.hasVideo(h), [h]),
-    O = (0, i.e7)([o.Z], () => o.Z.getCurrentUserActiveStream());
-  return u && (d = !b, p = b, f = null != O && null != O.guildId && c.includes(O.guildId)), r.useMemo(() => ({
+    _ = (0, i.e7)([o.Z], () => o.Z.getCurrentUserActiveStream());
+  return u && (d = !b, p = b, f = null != _ && null != _.guildId && c.includes(_.guildId)), r.useMemo(() => ({
     audio: d,
     video: p,
     screenshare: f,

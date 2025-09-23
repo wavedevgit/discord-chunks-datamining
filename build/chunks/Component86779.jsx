@@ -44,23 +44,23 @@ let b = "mweb_handoff_nonce",
       })
     }, [Chunk70956, module]);
     let [C, A] = Chunk647438.useState(null), T = Chunk647438.useCallback(e => {
-      A(e), p.default.track(x.rMx.MOBILE_WEB_HANDOFF_FAILURE, {
+      A(e), m.default.track(x.rMx.MOBILE_WEB_HANDOFF_FAILURE, {
         reason: e,
         fingerprint: (0, s.K)(y)
       }, {
         fingerprint: y
       })
-    }, [A, y]), P = Chunk433517.K.get(b);
-    if ("null" === require && null === C && T("deep_link_failed"), null != require && "null" !== require && null == P && null === C && T("nonce_missing"), Chunk647438.useEffect(() => {
-        if (null != P) {
+    }, [A, y]), Z = Chunk433517.K.get(b);
+    if ("null" === require && null === C && T("deep_link_failed"), null != require && "null" !== require && null == Z && null === C && T("nonce_missing"), Chunk647438.useEffect(() => {
+        if (null != Z) {
           let e = Chunk433517.K.get(j);
           (null == module || Date.now() >= module) && (T("nonce_expired"), S())
         }
-      }, [P, T]), Chunk647438.useEffect(() => {
-        null != require && "null" !== require && null != P && null == C && Chunk544891.tn.post({
+      }, [Z, T]), Chunk647438.useEffect(() => {
+        null != require && "null" !== require && null != Z && null == C && Chunk544891.tn.post({
           url: Chunk981631.ANM.HANDOFF_EXCHANGE,
           body: {
-            key: P,
+            key: Z,
             handoff_token: require
           },
           rejectWithError: true
@@ -78,8 +78,8 @@ let b = "mweb_handoff_nonce",
         }).finally(() => {
           S()
         })
-      }, [require, P, C, y, T]), null == y) return null;
-    let Z = null == C ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+      }, [require, Z, C, y, T]), null == y) return null;
+    let P = null == C ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [Chunk388032.intl.string(Chunk388032.t.uJ1Jsb), (0, Chunk951288.jsx)("br", {}), Chunk388032.intl.string(Chunk388032.t.GHVWAg)]
     }) : O.has(C) ? Chunk388032.intl.string(Chunk388032.t.EPt55u) : N.has(C) ? Chunk388032.intl.string(Chunk388032.t.g87kTk) : true;
     return null != C && O.has(C) ? (0, Chunk951288.jsx)("div", {
@@ -87,13 +87,13 @@ let b = "mweb_handoff_nonce",
       children: (0, Chunk951288.jsx)(Chunk481060.Text, {
         color: "interactive-normal",
         variant: "text-sm/semibold",
-        children: Z
+        children: P
       })
     }) : (0, Chunk951288.jsxs)("div", {
       className: Chunk976914.container,
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-sm/semibold",
-        children: Z
+        children: P
       }), (0, Chunk951288.jsx)(Chunk755721.zx, {
         color: Chunk755721.zx.Colors.BRAND_INVERTED,
         onClick: () => {

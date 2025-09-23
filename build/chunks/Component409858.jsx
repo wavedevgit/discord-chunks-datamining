@@ -1,4 +1,4 @@
-/** Chunk was on 38029 **/
+/** Chunk was on 92446 **/
 /** chunk id: 409858, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   default: () => tn
@@ -65,7 +65,7 @@ let Q = t => {
       openedGift: e
     } = t, {
       createMultipleConfettiAt: n
-    } = r.useContext(j.h);
+    } = r.useContext(P.h);
     return r.useEffect(() => {
       e && n(window.innerWidth / 2, window.innerHeight / 4)
     }, [n, e]), null
@@ -78,8 +78,8 @@ let Q = t => {
     return r.useEffect(() => {
       var t;
       if (e !== V.wZ8.CONFIRM) return;
-      let i = A.Z.getSoundById(n);
-      (0, Z.playGiftSound)(n, null != (t = null == i ? true : i.volume) ? t : 1)
+      let i = C.Z.getSoundById(n);
+      (0, A.playGiftSound)(n, null != (t = null == i ? true : i.volume) ? t : 1)
     }, [e, n]), null
   };
 class tt extends Chunk647438.Component {
@@ -293,18 +293,18 @@ class tt extends Chunk647438.Component {
       transitionState: o,
       useReducedMotion: u,
       onComplete: d,
-      customGiftMessage: f,
-      emojiName: p,
+      customGiftMessage: p,
+      emojiName: f,
       soundId: m,
-      isThemeDark: g
-    } = this.props, h = Chunk594174.default.getUser(Chunk120356.userId), {
+      isThemeDark: h
+    } = this.props, g = Chunk594174.default.getUser(Chunk120356.userId), {
       isCustomGift: y,
-      isCollectiblesGift: b,
-      accepted: O,
-      opened: P,
-      emojiURL: j,
+      isCollectiblesGift: O,
+      accepted: b,
+      opened: v,
+      emojiURL: P,
       isPremiumAppGift: S
-    } = this.state, w = Chunk594174.default.getCurrentUser(), Z = this.step === Chunk981631.wZ8.ERROR, A = (null == Chunk120356 ? true : Chunk120356.userId) != null && null != Chunk703656 && (null == Chunk703656 ? true : Chunk703656.id) != null && Chunk120356.userId === Chunk703656.id;
+    } = this.state, Z = Chunk594174.default.getCurrentUser(), A = this.step === Chunk981631.wZ8.ERROR, C = (null == Chunk120356 ? true : Chunk120356.userId) != null && null != Chunk703656 && (null == Chunk703656 ? true : Chunk703656.id) != null && Chunk120356.userId === Chunk703656.id;
     switch (this.step) {
       case Chunk981631.wZ8.ERROR:
         null == Chunk533307 || Chunk533307(Chunk120356, false);
@@ -312,7 +312,7 @@ class tt extends Chunk647438.Component {
       case Chunk981631.wZ8.SUCCESS:
         null == Chunk533307 || Chunk533307(Chunk120356, true)
     }
-    let C = (0, Chunk164670.K)(module);
+    let T = (0, Chunk164670.K)(module);
     return (0, Chunk951288.jsxs)("div", {
       ref: this.modalRef,
       children: [(0, Chunk951288.jsxs)(Chunk481060.Y0X, {
@@ -450,7 +450,7 @@ class tt extends Chunk647438.Component {
         onClose: t,
         libraryApplication: e
       } = this.props;
-      (0, w.uL)(V.Z5c.APPLICATION_LIBRARY, {
+      (0, Z.uL)(V.Z5c.APPLICATION_LIBRARY, {
         state: {
           applicationId: null != e ? e.id : true
         }
@@ -463,13 +463,13 @@ class tt extends Chunk647438.Component {
 let te = Chunk442837.ZP.connectStores([Chunk283595.Z, Chunk55563.Z, Chunk812206.Z, Chunk82142.Z, Chunk509545.Z, Chunk607070.Z], t => {
     let {
       giftCode: e
-    } = t, n = N.Z.get(e.skuId), i = null != n ? y.Z.getApplication(n.applicationId) : null, r = p.Z.useReducedMotion;
+    } = t, n = k.Z.get(e.skuId), i = null != n ? y.Z.getApplication(n.applicationId) : null, r = f.Z.useReducedMotion;
     return {
       sku: n,
-      libraryApplication: null != n && (null == e ? true : e.entitlementBranches) != null ? (0, D.z2)(e.entitlementBranches, n, T.Z) : null,
+      libraryApplication: null != n && (null == e ? true : e.entitlementBranches) != null ? (0, L.z2)(e.entitlementBranches, n, E.Z) : null,
       application: i,
-      subscriptionPlan: null != e.subscriptionPlanId ? (0, L.oE)(e.subscriptionPlanId) : null,
-      accepting: C.Z.getIsAccepting(e.code),
+      subscriptionPlan: null != e.subscriptionPlanId ? (0, _.oE)(e.subscriptionPlanId) : null,
+      accepting: T.Z.getIsAccepting(e.code),
       useReducedMotion: r
     }
   })(tt),
@@ -480,9 +480,9 @@ let te = Chunk442837.ZP.connectStores([Chunk283595.Z, Chunk55563.Z, Chunk812206.
         customGiftMessage: a,
         emojiName: c,
         soundId: d,
-        onClose: p
+        onClose: f
       } = t,
-      h = function(t, e) {
+      g = function(t, e) {
         if (null == t) return {};
         var n, i, r = function(t, e) {
           if (null == t) return {};
@@ -498,16 +498,16 @@ let te = Chunk442837.ZP.connectStores([Chunk283595.Z, Chunk55563.Z, Chunk812206.
         return r
       }(t, ["channelContext", "code", "customGiftMessage", "emojiName", "soundId", "onClose"]);
     let y = (0, S.Dt)(),
-      b = (0, o.e7)([C.Z], () => C.Z.get(s)),
-      v = (0, f.ZP)(),
+      O = (0, o.e7)([T.Z], () => T.Z.get(s)),
+      j = (0, p.ZP)(),
       {
-        analyticsLocations: j
-      } = (0, g.ZP)(m.Z.GIFT_CODE_MODAL),
+        analyticsLocations: P
+      } = (0, h.ZP)(m.Z.GIFT_CODE_MODAL),
       {
         product: x
-      } = (0, O.T)(null == b ? true : b.skuId),
-      w = (0, U.r)();
-    return null == b ? null : (0, i.jsx)(te, (e = function(t) {
+      } = (0, b.T)(null == O ? true : O.skuId),
+      Z = (0, U.r)();
+    return null == O ? null : (0, i.jsx)(te, (e = function(t) {
       for (var e = 1; e < arguments.length; e++) {
         var n = null != arguments[e] ? arguments[e] : {},
           i = Object.keys(n);
@@ -518,23 +518,23 @@ let te = Chunk442837.ZP.connectStores([Chunk283595.Z, Chunk55563.Z, Chunk812206.
         })
       }
       return t
-    }({}, h), n = n = {
+    }({}, g), n = n = {
       customGiftMessage: a,
       channelContext: l,
-      giftCode: b,
+      giftCode: O,
       headerId: y,
       emojiName: c,
       soundId: d,
-      analyticsLocations: j,
-      isThemeDark: (0, u.wj)(v),
+      analyticsLocations: P,
+      isThemeDark: (0, u.wj)(j),
       onClose: () => {
-        p(), w()
+        f(), Z()
       },
       collectiblesItemType: null == x || null == (r = x.items[0]) ? true : r.type,
       onAccept: null != x ? () => {
-        p(), (0, P.Z)({
+        f(), (0, v.Z)({
           product: x,
-          analyticsLocations: j,
+          analyticsLocations: P,
           purchaseType: K.o8.GIFT
         })
       } : true

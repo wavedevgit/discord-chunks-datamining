@@ -1,56 +1,24 @@
-/** Chunk was on web.js **/
-/** chunk id: 607550, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 12556 **/
+/** chunk id: 607550, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => s
 });
 var Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
-let a = {},
-  o = {
+let c = {},
+  i = {
     data: null,
     status: "not_loaded"
   };
 
-function s(e) {
-  var t, n, r;
-  return null != (r = (t = a)[n = e]) ? r : t[n] = o
+function a(e) {
+  var t;
+  return null != (t = c[e]) ? t : c[e] = i
 }
-
-function l(e) {
-  let {
-    wishlistId: t
-  } = e, n = s(t);
-  n.status = "fetching", n.error = true
-}
-
-function c(e) {
-  let {
-    wishlistId: t,
-    wishlistData: n
-  } = e, r = s(t);
-  r.data = n, r.status = "success", r.error = true
-}
-
-function u(e) {
-  let {
-    wishlistId: t,
-    error: n
-  } = e, r = s(t);
-  r.status = "error", r.error = n
-}
-
-function d(e) {
-  let {} = e
-}
-
-function f(e) {
-  let {} = e
-}
-class _ extends Chunk442837.ZP.Store {
+class l extends Chunk442837.ZP.Store {
   get(e) {
     var t;
-    return null != (t = a[e]) ? t : o
+    return null != (t = c[e]) ? t : i
   }
   getWishlist(e) {
     return this.get(e).data
@@ -60,8 +28,8 @@ class _ extends Chunk442837.ZP.Store {
     return null != (n = null == (t = this.get(e).data) ? true : t.getSkuIds()) ? n : []
   }
   hasSkuId(e, t) {
-    var n, r;
-    return null != (r = null == (n = this.get(e).data) ? true : n.hasSkuId(t)) && r
+    var n, o;
+    return null != (o = null == (n = this.get(e).data) ? true : n.hasSkuId(t)) && o
   }
   getStatus(e) {
     return this.get(e).status
@@ -76,10 +44,31 @@ class _ extends Chunk442837.ZP.Store {
     return this.get(e).error
   }
 }
-let p = new _(Chunk570140.Z, {
-  WISHLIST_FETCH_START: l,
-  WISHLIST_FETCH_SUCCESS: c,
-  WISHLIST_FETCH_FAILURE: u,
-  WISHLIST_ADD_SKU: d,
-  WISHLIST_REMOVE_SKU: f
+let s = new l(Chunk570140.Z, {
+  WISHLIST_FETCH_START: function(e) {
+    let {
+      wishlistId: t
+    } = e, n = a(t);
+    n.status = "fetching", n.error = true
+  },
+  WISHLIST_FETCH_SUCCESS: function(e) {
+    let {
+      wishlistId: t,
+      wishlistData: n
+    } = e, o = a(t);
+    o.data = n, o.status = "success", o.error = true
+  },
+  WISHLIST_FETCH_FAILURE: function(e) {
+    let {
+      wishlistId: t,
+      error: n
+    } = e, o = a(t);
+    o.status = "error", o.error = n
+  },
+  WISHLIST_ADD_SKU: function(e) {
+    let {} = e
+  },
+  WISHLIST_REMOVE_SKU: function(e) {
+    let {} = e
+  }
 })

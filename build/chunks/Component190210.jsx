@@ -1,4 +1,4 @@
-/** Chunk was on 80037 **/
+/** Chunk was on 16820 **/
 /** chunk id: 190210, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => er
@@ -144,7 +144,7 @@ let er = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
   s()(null != D, "chat input type must be set");
   let {
     analyticsLocations: eT
-  } = (0, _.ZP)(C.Z.CHANNEL_TEXT_AREA), eN = (0, H.qz)(t), eA = i.useRef(null), ew = i.useRef(null), eM = i.useRef(null), eR = i.useRef(null);
+  } = (0, _.ZP)(C.Z.CHANNEL_TEXT_AREA), eN = (0, F.qz)(t), eA = i.useRef(null), ew = i.useRef(null), eM = i.useRef(null), eR = i.useRef(null);
   null == eC || eC(ew.current);
   let {
     activeCommand: ek
@@ -159,18 +159,18 @@ let er = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
     isPendingMember: eD,
     disabled: eU,
     canAttachFiles: eB,
-    canEveryoneSendMessages: eV
-  } = (0, H.TE)(k, D, ek, I), eF = !A.dN.useSetting() && !(0, L.isAndroidWeb)() && null != window.ResizeObserver, eH = !eF || !(null == (n = D.commands) ? true : n.enabled) || !G || p !== q.GI, eG = (0, T.Z)(), {
+    canEveryoneSendMessages: eH
+  } = (0, F.TE)(k, D, ek, I), eV = !A.dN.useSetting() && !(0, L.isAndroidWeb)() && null != window.ResizeObserver, eF = !eV || !(null == (n = D.commands) ? true : n.enabled) || !G || p !== q.GI, eG = (0, T.Z)(), {
     fontSize: ez
   } = (0, d.cj)([y.Z], () => ({
     fontSize: y.Z.fontSize,
     isSubmitButtonEnabled: y.Z.isSubmitButtonEnabled
   })), eW = (0, d.e7)([M.Z], () => M.Z.isEnabled()), eq = (0, N.NE)(k);
-  (0, H.hJ)(D, eU);
+  (0, F.hJ)(D, eU);
   let {
     eventEmitter: eY,
     handleEditorSelectionChanged: eK
-  } = (0, H.x2)(ew, p, h), eX = i.useCallback(e => {
+  } = (0, F.x2)(ew, p, h), eX = i.useCallback(e => {
     let t = e => {
         if (e.shouldClear) {
           var t;
@@ -226,17 +226,17 @@ let er = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
   }, [ed, eS, eP, k.id, eZ, eI, eq]), {
     submit: eJ,
     handleSubmit: eQ
-  } = (0, H.bL)(eX, D, ew, eR, k.id), {
+  } = (0, F.bL)(eX, D, ew, eR, k.id), {
     autocompleteRef: e$,
     handleMaybeShowAutocomplete: e0,
     handleHideAutocomplete: e1
-  } = (0, H.jx)(), e2 = i.useCallback(() => {
+  } = (0, F.jx)(), e2 = i.useCallback(() => {
     var e;
     return null == eR || null == (e = eR.current) ? true : e.hide()
   }, []), {
     editorHeight: e3,
     handleResize: e8
-  } = (0, H.oR)(er), {
+  } = (0, F.oR)(er), {
     handleTab: e4,
     handleEnter: e7,
     handleMoveSelection: e6
@@ -256,12 +256,12 @@ let er = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
         return !!(!n && (null == (i = t.current) ? true : i.onMoveSelection(r))) || (null == (l = e.current) ? true : l.onMoveSelection(r)) || false
       }, [n])
     }
-  }(e$, eA, eH), {
+  }(e$, eA, eF), {
     expressionPickerView: e5,
     shouldHideExpressionPicker: e9,
     handleAutocompleteVisibilityChange: te,
     handleOuterClick: tt
-  } = (0, H.iV)(D, eY, ew), tn = (0, H.ae)(ew), tr = (0, H.Sg)(eJ, D, ew), ti = (0, H.O1)({
+  } = (0, F.iV)(D, eY, ew), tn = (0, F.ae)(ew), tr = (0, F.Sg)(eJ, D, ew), ti = (0, F.O1)({
     editorRef: ew,
     disabled: eU,
     textValue: p,
@@ -350,18 +350,18 @@ let er = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
                 children: (0, r.jsx)(f.tEY, {
                   ringTarget: eN,
                   ringClassName: Q.focusRing,
-                  children: (0, r.jsx)(V.Z, {
+                  children: (0, r.jsx)(H.Z, {
                     ref: ew,
                     id: E,
                     focused: G,
-                    useSlate: eF,
+                    useSlate: eV,
                     textValue: p,
                     richValue: h,
                     disabled: eU,
                     placeholder: eg,
                     required: P,
                     accessibilityLabel: Z,
-                    isPreviewing: (eL || eD) && eV,
+                    isPreviewing: (eL || eD) && eH,
                     channel: k,
                     type: B.Ie.CREATE_ANNOUNCEMENT_POST,
                     canPasteFiles: eB,
@@ -408,7 +408,7 @@ let er = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
             className: J.footerPart,
             children: [(0, r.jsx)(ea, {
               channel: k
-            }), (0, r.jsx)(F.Z, {
+            }), (0, r.jsx)(V.Z, {
               type: B.Ie.CREATE_ANNOUNCEMENT_POST,
               disabled: eU,
               channel: k,
@@ -470,7 +470,7 @@ let er = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
           channel: k,
           canMentionRoles: eh,
           canMentionChannels: ef,
-          useNewSlashCommands: eF,
+          useNewSlashCommands: eV,
           canOnlyUseTextCommands: false,
           canSendStickers: true,
           textValue: p,

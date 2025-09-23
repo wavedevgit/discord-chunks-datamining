@@ -1,45 +1,44 @@
-/** Chunk was on web.js **/
-/** chunk id: 427217, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 97571 **/
+/** chunk id: 427217, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => l
+  Z: () => o
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk584973 = require("./584973.jsx"),
   Chunk822143 = require("./822143.js");
 
-function l(e) {
+function o(e) {
   let {
     activity: t,
     className: n,
-    emojiClassName: i,
-    textClassName: l,
+    emojiClassName: r,
+    textClassName: o,
     placeholderText: c,
-    soloEmojiClassName: u,
-    animate: d = true,
-    hideTooltip: f = false,
-    hideEmoji: _ = false,
-    children: p
+    soloEmojiClassName: d,
+    animate: u = true,
+    hideTooltip: m = false,
+    hideEmoji: p = false,
+    children: h
   } = e;
   if (null == t) return null;
   let {
-    emoji: h
-  } = t, m = null != t.state && "" !== t.state ? t.state : c;
-  return (0, r.jsxs)("div", {
-    className: a()(s.__invalid_container, n),
-    children: [_ || null == h ? null : (0, r.jsx)(o.Z, {
-      emoji: h,
-      className: a()(s.emoji, i, null != u ? {
-        [u]: null == m || "" === m
+    emoji: x
+  } = t, f = null != t.state && "" !== t.state ? t.state : c;
+  return (0, a.jsxs)("div", {
+    className: i()(s.__invalid_container, n),
+    children: [p || null == x ? null : (0, a.jsx)(l.Z, {
+      emoji: x,
+      className: i()(s.emoji, r, null != d ? {
+        [d]: null == f || "" === f
       } : null),
-      animate: d,
-      hideTooltip: f
-    }), null != m && m.length > 0 ? (0, r.jsx)("span", {
-      className: l,
-      children: m
-    }) : null, p]
+      animate: u,
+      hideTooltip: m
+    }), null != f && f.length > 0 ? (0, a.jsx)("span", {
+      className: o,
+      children: f
+    }) : null, h]
   })
 }

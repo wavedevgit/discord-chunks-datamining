@@ -1,104 +1,104 @@
-/** Chunk was on 56534 **/
-/** chunk id: 53365, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 31835 **/
+/** chunk id: 53365, original params: t,r,n (module,exports,require) **/
 require.d(exports, {
-  $J: () => I,
-  He: () => s,
-  av: () => p,
-  df: () => E,
-  hY: () => O,
-  oL: () => T,
-  wE: () => d,
+  $J: () => O,
+  He: () => T,
+  av: () => u,
+  df: () => N,
+  hY: () => s,
+  oL: () => R,
+  wE: () => l,
   wZ: () => _,
   yk: () => c,
-  zo: () => u
+  zo: () => A
 });
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
   Chunk728345 = require("./728345.js"),
   Chunk981631 = require("./981631.js"),
   Chunk674563 = require("./674563.js");
-async function s(e) {
-  await n.tn.post({
-    url: o.ANM.CREATOR_MONETIZATION_ENABLE_REQUESTS(e),
+async function T(t) {
+  await i.tn.post({
+    url: E.ANM.CREATOR_MONETIZATION_ENABLE_REQUESTS(t),
     rejectWithError: false
   })
 }
-async function c(e) {
-  return (await n.tn.get({
-    url: o.ANM.CREATOR_MONETIZATION_ELIGIBILITY(e),
+async function c(t) {
+  return (await i.tn.get({
+    url: E.ANM.CREATOR_MONETIZATION_ELIGIBILITY(t),
     rejectWithError: false
   })).body
 }
-async function d(e, t) {
-  await n.tn.post({
-    url: o.ANM.CREATOR_MONETIZATION_ACCEPT_TERMS(e, t),
+async function l(t, r) {
+  await i.tn.post({
+    url: E.ANM.CREATOR_MONETIZATION_ACCEPT_TERMS(t, r),
     rejectWithError: false
   })
 }
-async function u(e) {
-  await n.tn.post({
-    url: o.ANM.CREATOR_MONETIZATION_ACCEPT_TERMS_V2(e),
+async function A(t) {
+  await i.tn.post({
+    url: E.ANM.CREATOR_MONETIZATION_ACCEPT_TERMS_V2(t),
     rejectWithError: false
   })
 }
-async function _(e) {
-  return (await n.tn.get({
-    url: o.ANM.CREATOR_MONETIZATION_MARKETING_ONBOARDING(e),
+async function _(t) {
+  return (await i.tn.get({
+    url: E.ANM.CREATOR_MONETIZATION_MARKETING_ONBOARDING(t),
     rejectWithError: false
   })).body
 }
-async function p(e) {
+async function u(t) {
   try {
-    let t = await n.tn.get({
-      url: o.ANM.CREATOR_MONETIZATION_NAG_ACTIVATE_ELIGIBLITY,
+    let r = await i.tn.get({
+      url: E.ANM.CREATOR_MONETIZATION_NAG_ACTIVATE_ELIGIBLITY,
       query: {
-        nag_guild_ids: e
+        nag_guild_ids: t
       },
       rejectWithError: true
     });
-    i.Z.dispatch({
+    e.Z.dispatch({
       type: "CREATOR_MONETIZATION_NAG_ACTIVATE_ELIGIBLITY_FETCH_SUCCESS",
-      eligibleGuilds: t.body.eligible_guilds
+      eligibleGuilds: r.body.eligible_guilds
     })
-  } catch (e) {}
+  } catch (t) {}
 }
-async function E(e, t) {
-  let r = (await n.tn.post({
-    url: o.ANM.CREATOR_MONETIZATION_OWNERSHIP_TRANSFER_ONBOARD(e),
+async function N(t, r) {
+  let n = (await i.tn.post({
+    url: E.ANM.CREATOR_MONETIZATION_OWNERSHIP_TRANSFER_ONBOARD(t),
     body: {
-      team_id: t
+      team_id: r
     },
     rejectWithError: false
   })).body;
-  return null != r.application && i.Z.dispatch({
+  return null != n.application && e.Z.dispatch({
     type: "APPLICATION_FETCH_SUCCESS",
-    application: r.application
-  }), r
+    application: n.application
+  }), n
 }
 
-function O(e) {
-  return n.tn.post({
-    url: o.ANM.CREATOR_MONETIZATION_ACCEPT_NEW_TERMS(e),
+function s(t) {
+  return i.tn.post({
+    url: E.ANM.CREATOR_MONETIZATION_ACCEPT_NEW_TERMS(t),
     rejectWithError: false
   })
 }
 
-function I(e) {
-  return n.tn.post({
-    url: o.ANM.CREATOR_MONETIZATION_ACCEPT_NEW_TERMS_DEMONETIZED(e),
+function O(t) {
+  return i.tn.post({
+    url: E.ANM.CREATOR_MONETIZATION_ACCEPT_NEW_TERMS_DEMONETIZED(t),
     rejectWithError: false
   })
 }
-async function A(e) {
-  await n.tn.post({
-    url: o.ANM.CREATOR_MONETIZATION_REMOVE_MONETIZATION(e),
+async function I(t) {
+  await i.tn.post({
+    url: E.ANM.CREATOR_MONETIZATION_REMOVE_MONETIZATION(t),
     body: {},
     rejectWithError: false
   })
 }
-async function T(e) {
-  return await A(e), await a.ZP.getApplicationsForGuild(e, {
-    type: l.wW.GUILD_ROLE_SUBSCRIPTIONS,
+async function R(t) {
+  return await I(t), await a.ZP.getApplicationsForGuild(t, {
+    type: o.wW.GUILD_ROLE_SUBSCRIPTIONS,
     includeTeam: true
   })
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 33358 **/
+/** Chunk was on 69310 **/
 /** chunk id: 486311, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -79,7 +79,7 @@ let j = {
         default:
           return (0, r.jsx)("div", {})
       }
-    }, [t, null == x ? true : x.popout]), S = (0, s.s9z)(s.JQI), I = (0, a.e7)([d.Z], () => d.Z.hasLayers()), [P, N] = i.useState(null), w = null == P ? "animation" : "LOOP";
+    }, [t, null == x ? true : x.popout]), S = (0, s.s9z)(s.JQI), P = (0, a.e7)([d.Z], () => d.Z.hasLayers()), [I, N] = i.useState(null), w = null == I ? "animation" : "LOOP";
     i.useEffect(() => {
       (null == x ? true : x.popout) == null && N(null)
     }, [null == x ? true : x.popout]);
@@ -89,7 +89,7 @@ let j = {
       T = i.useRef(null);
     return (0, r.jsx)(s.yRy, {
       targetElementRef: T,
-      shouldShow: (null == x ? true : x.popout) != null && !(S || I),
+      shouldShow: (null == x ? true : x.popout) != null && !(S || P),
       nudgeAlignIntoViewport: true,
       animationPosition: "bottom",
       position: "right",
@@ -98,7 +98,7 @@ let j = {
         var i, a;
         return (0, r.jsx)(u.m, (i = v({}, e), a = a = {
           ref: T,
-          className: _.container,
+          className: y.container,
           id: "skill-trees-".concat(t),
           renderIcon: e => (0, r.jsx)(s.$Eu, {
             size: "md",
@@ -106,10 +106,10 @@ let j = {
             color: "currentColor"
           }),
           background: (null == x ? true : x.popout) != null && (0, r.jsx)("div", {
-            className: _.lottieContainer,
+            className: y.lottieContainer,
             children: (0, r.jsx)(s.kci, {
               nextScene: w,
-              className: _.lottie,
+              className: y.lottie,
               sceneSegments: j,
               importData: () => n.e("50821").then(n.t.bind(n, 548421, 19)),
               onScenePlay: Z,
@@ -120,9 +120,9 @@ let j = {
           }),
           text: (0, r.jsx)("span", {
             className: o()({
-              [_.textImportant]: (null == x ? true : x.showUnread) === true
+              [y.textImportant]: (null == x ? true : x.showUnread) === true
             }),
-            children: y.intl.string(O.default.yv3DJC)
+            children: O.intl.string(_.default.yv3DJC)
           }),
           selected: l,
           onClick: C,

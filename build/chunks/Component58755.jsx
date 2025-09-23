@@ -1,7 +1,7 @@
-/** Chunk was on 10017 **/
+/** Chunk was on 97571 **/
 /** chunk id: 58755, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  P: () => v
+  P: () => j
 }), require("./388685.js"), require("./35282.js"), require("./49124.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -52,7 +52,7 @@ let g = Object.keys(Chunk500949.jQ).map(e => ({
     value: e,
     label: e
   })),
-  j = Array.from(Array.from(Object.keys(Chunk407146.b).reduce((e, t) => {
+  v = Array.from(Array.from(Object.keys(Chunk407146.b).reduce((e, t) => {
     let [n] = t.split(".");
     return e.add(n), e
   }, new Set))).map(e => ({
@@ -60,7 +60,7 @@ let g = Object.keys(Chunk500949.jQ).map(e => ({
     label: e
   }));
 
-function v(e) {
+function j(e) {
   let {
     state: t,
     setState: n
@@ -69,7 +69,7 @@ function v(e) {
   } = t, [l, s] = r.useState(null), o = (0, a.jsxs)("div", {
     className: x.section,
     children: [(0, a.jsx)(u.VcW, {
-      options: j,
+      options: v,
       placeholder: "Select a scale to edit...",
       value: true,
       onChange: e => {
@@ -77,19 +77,19 @@ function v(e) {
         null == a && (a = {
           name: e,
           base: "plum" === e ? c.b["plum.10"].hex : c.b["".concat(e, ".500")].hex,
-          colorSpace: p.jQ.ICTCP,
+          colorSpace: h.jQ.ICTCP,
           showColumnarPalettePreview: false,
           useP3ColorSpace: false,
           darkness: 0,
           lightness: 0,
-          easing: p.iw.LINEAR,
+          easing: h.iw.LINEAR,
           easingStrength: 1,
           steps: 26
         }, n(b(f({}, t), {
           scales: [...t.scales, a]
         })))
       },
-      popoutLayerContext: h.O$
+      popoutLayerContext: p.O$
     }), (0, a.jsx)("ul", {
       className: x.overrides,
       children: i.map(e => (0, a.jsx)("li", {
@@ -126,12 +126,12 @@ function _(e) {
     name: c,
     base: f,
     lightness: b,
-    showColumnarPalettePreview: j,
-    colorSpace: v,
+    showColumnarPalettePreview: v,
+    colorSpace: j,
     easingStrength: _ = 1,
     useP3ColorSpace: y,
     steps: E = 26
-  } = t, N = (0, p.XM)(t), S = (0, p.W6)(N, c);
+  } = t, N = (0, h.XM)(t), T = (0, h.W6)(N, c);
   return (0, a.jsxs)(u.Kqy, {
     gap: 20,
     children: [(0, a.jsxs)("div", {
@@ -152,7 +152,7 @@ function _(e) {
           let e = Object.entries(N).reduce((e, t) => {
             let [n, a] = t;
             return e[n] = {
-              value: (0, i.Z)((0, l.Z)(a, p.HW.sRGB), {
+              value: (0, i.Z)((0, l.Z)(a, h.HW.sRGB), {
                 format: "hex"
               }),
               type: "color"
@@ -171,15 +171,15 @@ function _(e) {
       children: (0, a.jsx)("input", {
         type: "color",
         value: f,
-        onChange: e => (0, p.Ib)(c, e.target.value, n)
+        onChange: e => (0, h.Ib)(c, e.target.value, n)
       })
     }), (0, a.jsx)(u.q4e, {
       label: "Color Space",
       description: "The color space used to generate the palette. Different color spaces will produce different results.",
       options: g,
-      value: v,
-      onChange: e => (0, p.t4)(c, e, n),
-      popoutLayerContext: h.O$
+      value: j,
+      onChange: e => (0, h.t4)(c, e, n),
+      popoutLayerContext: p.O$
     }), (0, a.jsx)(u.iRW, {
       label: "Lighten",
       description: "Decrease the darkness of the darkest color in the palette. Increasing this makes the darker colors in the palette lighter.",
@@ -191,7 +191,7 @@ function _(e) {
       }, (e, t) => t / 10),
       minValue: 0,
       maxValue: 2,
-      onValueChange: e => (0, p.h9)(c, e, n),
+      onValueChange: e => (0, h.h9)(c, e, n),
       onMarkerRender: e => "".concat((100 * e).toFixed(), "%")
     }), (0, a.jsx)(u.iRW, {
       label: "Darken",
@@ -204,7 +204,7 @@ function _(e) {
       }, (e, t) => t / 10),
       minValue: 0,
       maxValue: 2,
-      onValueChange: e => (0, p.YE)(c, e, n),
+      onValueChange: e => (0, h.YE)(c, e, n),
       onMarkerRender: e => "".concat((100 * e).toFixed(), "%")
     }), (0, a.jsx)(u.iRW, {
       label: "Easing Strength",
@@ -213,18 +213,18 @@ function _(e) {
       initialValue: _,
       minValue: 1,
       maxValue: 5,
-      onValueChange: e => (0, p.rd)(c, e, n),
+      onValueChange: e => (0, h.rd)(c, e, n),
       onMarkerRender: e => "".concat(e.toFixed(2))
     }), (0, a.jsx)(u.j7V, {
       note: "Renders the palette preview in a single column, useful for comparing the luminance of each step.",
-      value: j,
-      onChange: e => (0, p.KB)(c, e, n),
+      value: v,
+      onChange: e => (0, h.KB)(c, e, n),
       children: "Show columnar palette preview"
     }), (0, a.jsx)(u.j7V, {
       note: "Renders the palette preview in a single column, useful for comparing the luminance of each step.",
       value: y,
-      disabled: !p.S2,
-      onChange: e => (0, p.uF)(c, e, n),
+      disabled: !h.S2,
+      onChange: e => (0, h.uF)(c, e, n),
       children: "Use P3 Color Space"
     }), (0, a.jsx)(u.iRW, {
       label: "Steps",
@@ -232,36 +232,36 @@ function _(e) {
       helperText: "".concat(E),
       onValueRender: () => null,
       initialValue: E,
-      minValue: (0, p.A0)(c).length,
+      minValue: (0, h.A0)(c).length,
       maxValue: 100,
-      onValueChange: e => (0, p.YC)(c, Math.round(e), n),
+      onValueChange: e => (0, h.YC)(c, Math.round(e), n),
       onMarkerRender: () => null
     }), (0, a.jsx)(u.hjN, {
       title: "Palette Preview",
       children: (0, a.jsx)("div", {
         className: x.paletteOverrides,
-        "data-columnar": j,
+        "data-columnar": v,
         children: Object.entries(N).map((e, n) => {
-          let [r, c] = e, d = (0, p.HI)(c), m = (0, s.Z)((0, o.Z)("black"), c) > 4.5 ? "black" : "white", h = S[r];
+          let [r, c] = e, d = (0, h.HI)(c), m = (0, s.Z)((0, o.Z)("black"), c) > 4.5 ? "black" : "white", p = T[r];
           return (0, a.jsxs)("div", {
             style: {
               backgroundColor: d
             },
             children: [(0, a.jsxs)(u.Text, {
-              variant: j ? "text-sm/medium" : "text-xs/medium",
+              variant: v ? "text-sm/medium" : "text-xs/medium",
               style: {
                 color: m
               },
-              children: [t.name, ".", n + 1, j && null != h ? (0, a.jsx)("strong", {
-                children: " - ".concat(h)
+              children: [t.name, ".", n + 1, v && null != p ? (0, a.jsx)("strong", {
+                children: " - ".concat(p)
               }) : ""]
-            }), j && (0, a.jsxs)(u.Text, {
+            }), v && (0, a.jsxs)(u.Text, {
               variant: "text-xxs/medium",
               style: {
                 opacity: .75,
                 color: m
               },
-              children: [(0, i.Z)((0, l.Z)(c, p.HW.sRGB), {
+              children: [(0, i.Z)((0, l.Z)(c, h.HW.sRGB), {
                 format: "hex"
               }).toUpperCase(), " - ", d]
             })]
@@ -276,7 +276,7 @@ function y(e) {
   let {
     scale: t,
     onRemove: n
-  } = e, s = r.useMemo(() => Object.values((0, p.XM)(t)).map(e => (0, i.Z)((0, l.Z)(e, p.HW.sRGB), {
+  } = e, s = r.useMemo(() => Object.values((0, h.XM)(t)).map(e => (0, i.Z)((0, l.Z)(e, h.HW.sRGB), {
     format: "hex"
   })), [t]);
   return (0, a.jsxs)("li", {

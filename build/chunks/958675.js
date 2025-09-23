@@ -1,12 +1,9 @@
-/** Chunk was on web.js **/
-/** chunk id: 958675, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 97571 **/
+/** chunk id: 958675, original params: e,t,n (module,exports,require) **/
 module.exports = {
   container: "container__85f5c",
-  leftPanel: "leftPanel__85f5c",
-  rightPanel: "rightPanel__85f5c",
-  inputSection: "inputSection__85f5c",
   section: "section__85f5c",
+  inputSection: "inputSection__85f5c",
   inputLabel: "inputLabel__85f5c",
   previewContainer: "previewContainer__85f5c",
   placeholder: "placeholder__85f5c",

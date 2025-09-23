@@ -1,7 +1,7 @@
-/** Chunk was on 10017 **/
+/** Chunk was on 97571 **/
 /** chunk id: 621060, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  ZP: () => v,
+  ZP: () => j,
   Zj: () => b,
   v0: () => f
 }), require("./388685.js");
@@ -37,23 +37,23 @@ let b = ["Experiments", "Dismissible Content", "Events", "Premium", "Quests", "B
     })
   });
 
-function j(e) {
+function v(e) {
   let {
     tabs: t,
     selectedTabId: n,
     onSelectTab: a
   } = e, l = i.useRef(new Map), [s, f] = i.useState(() => new Set), {
     ref: b,
-    width: j
-  } = (0, d.ZP)(), v = i.useRef(null), _ = (0, p.F)(t, a);
+    width: v
+  } = (0, d.ZP)(), j = i.useRef(null), _ = (0, h.F)(t, a);
   i.useEffect(() => {
     var e, a, r, i;
-    if (null == j) return;
+    if (null == v) return;
     let s = new Set,
-      o = null != j ? j : 0;
+      o = null != v ? v : 0;
     for (let c of (o -= null != (a = null == (e = l.current.get(n)) ? true : e.getBoundingClientRect().width) ? a : 0, t)) c.id !== n && (o -= null != (i = null == (r = l.current.get(c.id)) ? true : r.getBoundingClientRect().width) ? i : 0) < 0 && s.add(c.id);
     f(s)
-  }, [t, j, b, n]);
+  }, [t, v, b, n]);
   let y = i.useCallback(e => {
     let {
       closePopout: t
@@ -104,8 +104,8 @@ function j(e) {
     }), (0, r.jsx)("div", {
       className: x.menu,
       children: s.size > 0 && (0, r.jsx)(c.yRy, {
-        targetElementRef: v,
-        layerContext: h.O$,
+        targetElementRef: j,
+        layerContext: p.O$,
         renderPopout: y,
         position: "bottom",
         align: "right",
@@ -131,7 +131,7 @@ function j(e) {
             }
             return e
           }({}, e), n = n = {
-            buttonRef: v,
+            buttonRef: j,
             className: x.overflowChevron,
             size: o.zx.Sizes.ICON,
             look: o.zx.Looks.BLANK,
@@ -156,7 +156,7 @@ function j(e) {
   })
 }
 
-function v(e, t) {
+function j(e, t) {
   var n, a, l;
   let {
     tabs: s,
@@ -164,7 +164,7 @@ function v(e, t) {
     onChangeTab: c
   } = e, [d, u] = i.useState(null != o ? o : null == (n = s[0]) ? true : n.id);
   return {
-    TabBar: i.useCallback(() => (0, r.jsx)(j, {
+    TabBar: i.useCallback(() => (0, r.jsx)(v, {
       tabs: s,
       selectedTabId: d,
       onSelectTab: e => {

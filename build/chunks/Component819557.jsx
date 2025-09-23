@@ -1,4 +1,4 @@
-/** Chunk was on 93886 **/
+/** Chunk was on 90550 **/
 /** chunk id: 819557, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   q: () => c,
@@ -33,12 +33,12 @@ function c(e) {
     color: c,
     listType: d = "icon",
     completed: u = false,
-    index: f
+    index: b
   } = e;
   return (0, r.jsxs)("div", {
     className: o.cell,
     children: [(() => {
-      if ("numbered" === d && null != f)
+      if ("numbered" === d && null != b)
         if (u) return (0, r.jsx)("div", {
           className: o.number,
           children: (0, r.jsx)(a.sV5, {
@@ -50,7 +50,7 @@ function c(e) {
           variant: "heading-md/semibold",
           color: "text-brand",
           className: o.number,
-          children: f + 1
+          children: b + 1
         });
       if (null != n) return (0, r.jsx)("div", {
         className: o.iconContainer,

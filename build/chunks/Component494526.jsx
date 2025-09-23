@@ -32,7 +32,7 @@ var Chunk951288 = require("./951288.js"),
 let Chunk515695 = require("./515695.js"),
   T = new Chunk710845.Z("LoginQRSocket");
 
-function P(e) {
+function Z(e) {
   let {
     text: t = ""
   } = e, [n, l] = i.useState(false);
@@ -67,7 +67,7 @@ function P(e) {
     })
   })
 }
-let Z = e => {
+let P = e => {
   let {
     className: t,
     children: n
@@ -92,14 +92,14 @@ function R(e) {
     case 0:
     case 1:
       return (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(P, {
+        children: [(0, r.jsx)(Z, {
           text: 1 === t.step ? "https://discord.com/ra/".concat(t.fingerprint) : ""
-        }), (0, r.jsx)(p.Dx, {
+        }), (0, r.jsx)(m.Dx, {
           className: C.marginBottom8,
           children: S.intl.string(S.t.UPiHaG)
-        }), null != i ? (0, r.jsx)(Z, {
+        }), null != i ? (0, r.jsx)(P, {
           children: i
-        }) : (0, r.jsx)(p.DK, {
+        }) : (0, r.jsx)(m.DK, {
           children: S.intl.format(S.t["Qq+A6u"], {})
         }), (0, r.jsx)(c.zx, {
           size: c.Ph.LARGE,
@@ -131,10 +131,10 @@ function R(e) {
           size: u.EFr.SIZE_120,
           isMobile: true,
           status: O.Sk.ONLINE
-        }), (0, r.jsx)(p.Dx, {
+        }), (0, r.jsx)(m.Dx, {
           className: C.marginBottom8,
           children: S.intl.string(S.t.apGCUV)
-        }), (0, r.jsx)(p.DK, {
+        }), (0, r.jsx)(m.DK, {
           children: S.intl.format(S.t.Cbl5JC, {
             username: "".concat(j.ZP.getUserTag(e))
           })
@@ -164,19 +164,19 @@ function L(e) {
     state: c,
     rsaKeyPair: d,
     cancel: h,
-    handleFailure: p
+    handleFailure: m
   } = function(e) {
     let [t, n] = i.useState(0), [r, l] = i.useState(false), [o, a] = i.useState({
       step: 0
-    }), [c, u] = i.useState(null), d = (0, g.Z)(), h = i.useMemo(() => new s.Z(1500, 3e4), []), p = (0, m.Z)(() => {
+    }), [c, u] = i.useState(null), d = (0, g.Z)(), h = i.useMemo(() => new s.Z(1500, 3e4), []), m = (0, p.Z)(() => {
       a({
         step: 0
       }), d ? n(e => e + 1) : (T.info("document is not visible, will defer reconnection when document becomes visible."), l(true))
     }), f = i.useCallback(() => {
       T.error("Could not complete QR code login, trying to restart with a new QR code."), a({
         step: 0
-      }), h.pending || h.fail(p)
-    }, [p, h]);
+      }), h.pending || h.fail(m)
+    }, [m, h]);
     return i.useEffect(() => {
       d && r && 0 === o.step && (T.info("reconnecting, now that document is visible"), l(false), n(e => e + 1))
     }, [o, d, r, l]), i.useEffect(() => {
@@ -195,7 +195,7 @@ function L(e) {
         if (null != l) return l;
         throw Error("No key pair set")
       }
-      let m = () => {
+      let p = () => {
         d ? (d = false, r.send(JSON.stringify({
           op: "heartbeat"
         }))) : (i("heartbeat timeout, reconnecting."), r.close(), f())
@@ -259,13 +259,13 @@ function L(e) {
             return
           }
           case "cancel":
-            i("remote auth handshake cancelled."), p();
+            i("remote auth handshake cancelled."), m();
             return;
           case "hello": {
             i("got hello, auth timeout=".concat(l.timeout_ms, "ms"));
             let e = l.heartbeat_interval;
             c = setTimeout(() => {
-              c = null, m(), o = setInterval(m, e)
+              c = null, p(), o = setInterval(p, e)
             }, Math.floor(e * Math.random()));
             return
           }
@@ -286,10 +286,10 @@ function L(e) {
       }, () => {
         i("cleaning up"), r.onopen = () => null, r.onmessage = () => null, r.onclose = () => null, r.onerror = () => null, r.close(1e3), h.cancel(), null != c && clearTimeout(c), null != o && clearInterval(o)
       }
-    }, [p, e, t, h, f]), {
+    }, [m, e, t, h, f]), {
       state: o,
       rsaKeyPair: c,
-      cancel: p,
+      cancel: m,
       handleFailure: f
     }
   }(t), f = function(e) {
@@ -318,12 +318,12 @@ function L(e) {
           r = await (0, b.Pk)(d);
         t(n, r)
       } catch (e) {
-        p()
-      } else p()
+        m()
+      } else m()
     }).catch(() => {
-      p()
+      m()
     })
-  }, [c, t, d, p]), (0, r.jsxs)(r.Fragment, {
+  }, [c, t, d, m]), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: y.verticalSeparator
     }), (0, r.jsx)(u.qBt, {

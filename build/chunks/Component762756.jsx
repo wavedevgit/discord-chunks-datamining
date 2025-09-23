@@ -1,7 +1,7 @@
-/** Chunk was on 10017 **/
+/** Chunk was on 97571 **/
 /** chunk id: 762756, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => v
 }), require("./388685.js");
 var a, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -34,7 +34,7 @@ class g extends(a = Chunk647438.PureComponent) {
       onCaptchaVerify: a
     } = this.props;
     return (0, Chunk951288.jsx)(Chunk951288.Fragment, {
-      children: module.map(e => e === h.PUi.CAPTCHA ? (0, r.jsx)(d.Z, {
+      children: module.map(e => e === p.PUi.CAPTCHA ? (0, r.jsx)(d.Z, {
         onVerify: a,
         theme: n
       }, t) : (0, r.jsx)(c.zxk, {
@@ -137,4 +137,4 @@ f(g, "defaultProps", {
   onCaptchaVerify: Chunk981631.dG4,
   onLogout: Chunk981631.dG4
 });
-let j = g
+let v = g
