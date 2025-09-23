@@ -71,29 +71,30 @@ function G(e) {
     entry: t,
     showCoverImage: false
   }), {
-    appName: O
-  } = (0, h.n)(t), R = (0, I.Z)({
+    appName: O,
+    activity: R
+  } = (0, h.n)(t), w = (0, I.Z)({
     location: "UserProfileRecentActivityCard",
     applicationId: t.extra.application_id,
     source: _.m1.UserProfile,
     sourceUserId: a.id,
     trackEntryPointImpression: true
   }), {
-    analyticsLocations: w
-  } = (0, c.ZP)(), G = (0, N.Z)({
+    analyticsLocations: G
+  } = (0, c.ZP)(), M = (0, N.Z)({
     display: "recent",
     user: a,
     entry: t,
-    analyticsLocations: w
-  }), M = (0, f.Z)({
+    analyticsLocations: G
+  }), L = (0, f.Z)({
     userId: a.id,
-    onAction: G
+    onAction: M
   });
-  return null == R ? (0, s.jsx)("article", {
+  return null == w ? (0, s.jsx)("article", {
     "aria-labelledby": j,
     children: (0, s.jsxs)(P.Z.Overlay, {
       className: i()(A.card, d),
-      ref: M,
+      ref: L,
       children: [n, (0, s.jsx)("div", {
         className: A.body,
         children: (0, s.jsxs)("div", {
@@ -116,10 +117,10 @@ function G(e) {
       })]
     })
   }) : (0, s.jsxs)(Z.Z, {
-    ref: M,
+    ref: L,
     className: d,
     subsection: S.Tb.RECENT_ACTIVITY,
-    onAction: G,
+    onAction: M,
     onClose: m,
     "aria-labelledby": j,
     children: [n, (0, s.jsx)("div", {
@@ -131,18 +132,18 @@ function G(e) {
           size: x.J.SIZE_60,
           className: A.clickableImage,
           onClick: e => {
-            e.stopPropagation(), G({
+            e.stopPropagation(), M({
               action: "PRESS_IMAGE"
-            }), R(e), b !== k.l.MODAL && b !== k.l.MODAL_V2 && (null == m || m())
+            }), w(e), b !== k.l.MODAL && b !== k.l.MODAL_V2 && (null == m || m())
           }
         }), (0, s.jsxs)("div", {
           className: A.details,
           children: [(0, s.jsx)(r.P3F, {
             className: A.clickableText,
             onClick: e => {
-              e.stopPropagation(), G({
+              e.stopPropagation(), M({
                 action: "PRESS_TEXT"
-              }), R(e), b !== k.l.MODAL && b !== k.l.MODAL_V2 && (null == m || m())
+              }), w(e), b !== k.l.MODAL && b !== k.l.MODAL_V2 && (null == m || m())
             },
             children: (0, s.jsx)(C.f, {
               variant: "heading-sm/semibold",
@@ -162,8 +163,9 @@ function G(e) {
       })
     }), (0, s.jsx)(T.Z, {
       applicationId: t.extra.application_id,
-      onAction: G,
-      onClose: m
+      onAction: M,
+      onClose: m,
+      activity: R
     })]
   })
 }

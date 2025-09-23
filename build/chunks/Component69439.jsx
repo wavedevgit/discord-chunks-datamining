@@ -271,6 +271,7 @@ function S(e) {
       variant: "primary",
       onClick: null != es ? es : true,
       text: eo,
+      icon: C.config.features.includes(b.S7.CLOUD_GAMING_ACTIVITY) ? l.v3n : true,
       fullWidth: true
     })
   })) : e_ = (0, r.jsx)("div", {

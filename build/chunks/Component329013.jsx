@@ -2,15 +2,14 @@
 /** chunk id: 329013, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  g: () => G,
-  i: () => k
+  g: () => U,
+  i: () => M
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
   Chunk780384 = require("./780384.js"),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk857595 = require("./857595.js"),
   Chunk607070 = require("./607070.js"),
@@ -38,21 +37,21 @@ var Chunk951288 = require("./951288.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk352334 = require("./352334.js");
-let M = () => {
+let j = () => {
     (0, Chunk266454.Q3)(Chunk704215.z.CLIENT_THEMES_SPARKLE_PREVIEW, {
       dismissAction: Chunk921944.L.PRIMARY,
       forceTrack: true
     }), (0, Chunk550385.XO)(Chunk550385.wh.CLIENT_THEMES), (0, Chunk342386.default)()
   },
-  k = () => {
+  M = () => {
     var e, t;
     let {
       analyticsLocations: n
-    } = (0, Chunk906732.ZP)(Chunk100527.Z.USER_SETTINGS), o = (0, Chunk442837.e7)([Chunk514361.Z], () => Chunk514361.Z.isPreview), s = (null == (t = (0, Chunk639119.N)()) || null == (e = exports.subscription_trial) ? true : module.sku_id) === Chunk474936.Si.TIER_2, u = (0, Chunk104494.Ng)(), d = (0, Chunk104494.Wp)(Chunk857595, Chunk474936.Si.TIER_2), {
-      v2EditorEnabled: E
+    } = (0, Chunk906732.ZP)(Chunk100527.Z.USER_SETTINGS), o = (0, Chunk442837.e7)([Chunk514361.Z], () => Chunk514361.Z.isPreview), s = (null == (t = (0, Chunk639119.N)()) || null == (e = exports.subscription_trial) ? true : module.sku_id) === Chunk474936.Si.TIER_2, c = (0, Chunk104494.Ng)(), u = (0, Chunk104494.Wp)(Chunk857595, Chunk474936.Si.TIER_2), {
+      v2EditorEnabled: g
     } = Chunk803038.Mc.useExperiment({
       location: "UserSettingsAppearanceClientThemes"
-    }), b = () => {
+    }), E = () => {
       if (!Chunk704215 || Chunk780384) return null;
       let e = Chunk607070 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.bkQ4bG, {
         percent: null == Chunk857595 ? true : Chunk857595.discount.amount
@@ -62,7 +61,7 @@ let M = () => {
         children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "secondary",
           text: Chunk388032.intl.string(Chunk388032.t["E+COuL"]),
-          onClick: () => M()
+          onClick: () => j()
         }), (0, Chunk951288.jsx)(Chunk638212.Z, {
           subscriptionTier: Chunk474936.Si.TIER_2,
           defaultTextOverride: module,
@@ -77,7 +76,7 @@ let M = () => {
         children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "secondary",
           text: Chunk388032.intl.string(Chunk388032.t["E+COuL"]),
-          onClick: () => M()
+          onClick: () => j()
         }), (0, Chunk951288.jsx)(Chunk767714.Z, {
           showGradient: false,
           subscriptionTier: Chunk474936.Si.TIER_2,
@@ -94,12 +93,15 @@ let M = () => {
         location_stack: require
       })
     }, [Chunk704215, require]);
-    let A = Chunk780384 && Chunk704215 && (0, Chunk951288.jsxs)("div", {
-        children: [(0, Chunk951288.jsx)(Chunk755721.zx, {
-          className: Chunk352334.previewThemeButtonWide,
-          color: Chunk755721.zx.Colors.PRIMARY,
-          onClick: () => M(),
-          children: Chunk388032.intl.string(Chunk388032.t["E+COuL"])
+    let S = Chunk780384 && Chunk704215 && (0, Chunk951288.jsxs)("div", {
+        children: [(0, Chunk951288.jsx)("div", {
+          className: Chunk352334.previewThemeButton,
+          children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
+            variant: "secondary",
+            fullWidth: true,
+            text: Chunk388032.intl.string(Chunk388032.t["E+COuL"]),
+            onClick: () => j()
+          })
         }), (0, Chunk951288.jsx)("div", {
           className: Chunk352334.premiumTier2Divider
         }), (0, Chunk951288.jsx)(Chunk165583.ZP, {
@@ -107,7 +109,7 @@ let M = () => {
           subscriptionTier: Chunk474936.Si.TIER_2
         })]
       }),
-      N = (() => {
+      C = (() => {
         let e = (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
           children: [(0, Chunk951288.jsx)(Chunk705262.ZP.Gradient, {
             disabled: !Chunk550385 && Chunk704215,
@@ -129,14 +131,14 @@ let M = () => {
         type: Chunk705262.yH.SETTINGS,
         children: [(0, Chunk951288.jsx)(Chunk705262.ZP.Basic, {
           className: Chunk352334.basicThemeSelectors
-        }), (0, Chunk951288.jsx)(U, {}), Chunk550385 && (0, Chunk951288.jsx)(Chunk607270.Z, {}), Chunk210887]
+        }), (0, Chunk951288.jsx)(k, {}), Chunk550385 && (0, Chunk951288.jsx)(Chunk607270.Z, {}), Chunk210887]
       }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
         className: Chunk352334.divider
       })]
     })
   };
 
-function U() {
+function k() {
   let e = (0, Chunk984802.A6)(),
     {
       theme: t,
@@ -160,8 +162,8 @@ function U() {
     })
   })
 }
-let G = () => (0, Chunk442837.e7)([Chunk514361.Z], () => Chunk514361.Z.isPreview) ? null : (0, Chunk951288.jsx)(Chunk481060.zxk, {
+let U = () => (0, Chunk442837.e7)([Chunk514361.Z], () => Chunk514361.Z.isPreview) ? null : (0, Chunk951288.jsx)(Chunk481060.zxk, {
   variant: "primary",
   text: Chunk388032.intl.string(Chunk388032.t.qYXrkZ),
-  onClick: M
+  onClick: j
 })

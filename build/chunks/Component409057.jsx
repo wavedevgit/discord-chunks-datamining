@@ -347,7 +347,8 @@ function z(e) {
       }), et !== Z.l.MODAL && et !== Z.l.MODAL_V2 && ev(), (0, r.jsx)(w.Z, {
         applicationId: null == H ? true : H.id,
         onAction: er,
-        onClose: X
+        onClose: X,
+        activity: i
       }), el && (0, r.jsx)(N.Z, {
         activity: i,
         variant: et === Z.l.MODAL_V2 ? "horizontal" : "vertical"

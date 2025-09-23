@@ -1,4 +1,4 @@
-/** Chunk was on 90648 **/
+/** Chunk was on 11416 **/
 /** chunk id: 745200, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
   Z: () => tx
@@ -271,20 +271,20 @@ var y = h(function() {}),
       }).join("")
     }
   }),
-  D = d(function(e, t) {
+  I = d(function(e, t) {
     function i(e) {}
     t.exports = i, i.prototype.initEvent = function(e, t, i) {
       this.type = e, this.bubbles = t, this.cancelable = i
     }, i.prototype.preventDefault = function() {}
   }),
-  I = d(function(e, t) {
+  D = d(function(e, t) {
     m();
     var i = E(),
       r = T(),
       s = _(),
       a = R(),
       n = k(),
-      l = D(),
+      l = I(),
       o = S(),
       h = b(),
       d = A();
@@ -313,12 +313,12 @@ var y = h(function() {}),
       }) || null
     }, c.getElementsByClassName = a.prototype.getElementsByClassName, c.getElementsByTagName = a.prototype.getElementsByTagName, c.contains = a.prototype.contains, c.removeEventListener = d, c.addEventListener = h, c.dispatchEvent = o
   }),
-  w = d(function(e, t) {
-    t.exports = new(I())
-  }),
   P = d(function(e, t) {
+    t.exports = new(D())
+  }),
+  w = d(function(e, t) {
     var i, r = "undefined" != typeof global ? global : "undefined" != typeof window ? window : {},
-      s = w();
+      s = P();
     "undefined" != typeof document ? i = document : (i = r["__GLOBAL_DOCUMENT_CACHE@4"]) || (i = r["__GLOBAL_DOCUMENT_CACHE@4"] = s), t.exports = i
   });
 
@@ -366,13 +366,13 @@ function O(e, t) {
 var M = c(f()),
   F = c(f()),
   N = c(f()),
-  U = function() {
+  B = function() {
     var e = N.default.performance,
       t = module && module.timing,
       i = exports && exports.navigationStart;
     return Math.round("number" == typeof require && "function" == typeof module.now ? require + module.now() : Date.now())
   },
-  B = function() {
+  U = function() {
     if ("function" == typeof(null == (e = F.default.crypto) ? true : module.getRandomValues)) {
       i = new Uint8Array(32), F.default.crypto.getRandomValues(require);
       for (var e, t, i, r = 0; r < 32; r++) require[r] = require[r] % 16
@@ -385,7 +385,7 @@ var M = c(f()),
       var t = "x" === e ? i[a] : 3 & i[a] | 8;
       return a++, t.toString(16)
     });
-    var n = U(),
+    var n = B(),
       l = null == n ? true : n.toString(16).substring(3);
     return l ? exports.substring(0, 28) + l : exports
   },
@@ -406,7 +406,7 @@ var M = c(f()),
     return [t, e, i]
   };
 
-function q(e) {
+function K(e) {
   return function(e) {
     if (Array.isArray(e)) return x(e)
   }(e) || function(e) {
@@ -415,35 +415,35 @@ function q(e) {
     throw TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
   }()
 }
-var K = function(e) {
+var q = function(e) {
     var t, i, r, s, a, n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 3,
       l = e ? [console, e] : [console],
-      o = (t = console.trace).bind.apply(t, q(l)),
-      h = (i = console.info).bind.apply(i, q(l)),
-      d = (r = console.debug).bind.apply(r, q(l)),
-      u = (s = console.warn).bind.apply(s, q(l)),
-      c = (a = console.error).bind.apply(a, q(l)),
+      o = (t = console.trace).bind.apply(t, K(l)),
+      h = (i = console.info).bind.apply(i, K(l)),
+      d = (r = console.debug).bind.apply(r, K(l)),
+      u = (s = console.warn).bind.apply(s, K(l)),
+      c = (a = console.error).bind.apply(a, K(l)),
       f = n;
     return {
       trace: function() {
         for (var e = arguments.length, t = Array(e), i = 0; i < e; i++) t[i] = arguments[i];
-        if (!(f > 0)) return o.apply(true, q(t))
+        if (!(f > 0)) return o.apply(true, K(t))
       },
       debug: function() {
         for (var e = arguments.length, t = Array(e), i = 0; i < e; i++) t[i] = arguments[i];
-        if (!(f > 1)) return d.apply(true, q(t))
+        if (!(f > 1)) return d.apply(true, K(t))
       },
       info: function() {
         for (var e = arguments.length, t = Array(e), i = 0; i < e; i++) t[i] = arguments[i];
-        if (!(f > 2)) return h.apply(true, q(t))
+        if (!(f > 2)) return h.apply(true, K(t))
       },
       warn: function() {
         for (var e = arguments.length, t = Array(e), i = 0; i < e; i++) t[i] = arguments[i];
-        if (!(f > 3)) return u.apply(true, q(t))
+        if (!(f > 3)) return u.apply(true, K(t))
       },
       error: function() {
         for (var e = arguments.length, t = Array(e), i = 0; i < e; i++) t[i] = arguments[i];
-        if (!(f > 4)) return c.apply(true, q(t))
+        if (!(f > 4)) return c.apply(true, K(t))
       },
       get level() {
         return f
@@ -468,15 +468,15 @@ function Y(e, t) {
   if (!g(e, t)) throw TypeError("Cannot call a class as a function")
 }
 
-function X(e, t) {
+function Q(e, t) {
   for (var i = 0; i < t.length; i++) {
     var r = t[i];
     r.enumerable = r.enumerable || false, r.configurable = true, "value" in r && (r.writable = true), Object.defineProperty(e, r.key, r)
   }
 }
 
-function Q(e, t, i) {
-  return t && X(e.prototype, t), i && X(e, i), e
+function X(e, t, i) {
+  return t && Q(e.prototype, t), i && Q(e, i), e
 }
 
 function z(e, t, i) {
@@ -1058,7 +1058,7 @@ var eg = function(e) {
     function e() {
       Y(this, module), z(this, "_listeners", true)
     }
-    return Q(module, [{
+    return X(module, [{
       key: "on",
       value: function(e, t, i) {
         return t._eventEmitterGuid = t._eventEmitterGuid || ++eL, this._listeners = this._listeners || {}, this._listeners[e] = this._listeners[e] || [], i && (t = t.bind(i)), this._listeners[e].push(t), t
@@ -1104,7 +1104,7 @@ var eg = function(e) {
     }]), module
   }(),
   ek = c(f()),
-  eD = function() {
+  eI = function() {
     function e(t) {
       var i = this;
       Y(this, e), z(this, "_playbackHeartbeatInterval", true), z(this, "_playheadShouldBeProgressing", true), z(this, "pm", true), this.pm = t, this._playbackHeartbeatInterval = null, this._playheadShouldBeProgressing = false, t.on("playing", function() {
@@ -1119,7 +1119,7 @@ var eg = function(e) {
         }), i._playbackHeartbeatInterval = null)
       })
     }
-    return Q(module, [{
+    return X(module, [{
       key: "_startPlaybackHeartbeatInterval",
       value: function() {
         var e = this;
@@ -1134,7 +1134,7 @@ var eg = function(e) {
       }
     }]), module
   }(),
-  eI = function e(t) {
+  eD = function e(t) {
     var i = this;
     Y(this, e), z(this, "viewErrored", true), t.on("viewinit", function() {
       i.viewErrored = false
@@ -1156,11 +1156,11 @@ var eg = function(e) {
       null == (e = t.data) || delete e.player_error_code, null == (i = t.data) || delete i.player_error_message, null == (r = t.data) || delete r.player_error_context, null == (s = t.data) || delete s.player_error_severity, null == (a = t.data) || delete a.player_error_business_exception
     })
   },
-  ew = function() {
+  eP = function() {
     function e(t) {
       Y(this, e), z(this, "_watchTimeTrackerLastCheckedTime", true), z(this, "pm", true), this.pm = t, this._watchTimeTrackerLastCheckedTime = null, t.on("playbackheartbeat", this._updateWatchTime.bind(this)), t.on("playbackheartbeatend", this._clearWatchTimeState.bind(this))
     }
-    return Q(module, [{
+    return X(module, [{
       key: "_updateWatchTime",
       value: function(e, t) {
         var i = t.viewer_time;
@@ -1173,10 +1173,10 @@ var eg = function(e) {
       }
     }]), module
   }(),
-  eP = function() {
+  ew = function() {
     function e(t) {
       var i = this;
-      Y(this, e), z(this, "_playbackTimeTrackerLastPlayheadPosition", true), z(this, "_lastTime", true), z(this, "_isAdPlaying", true), z(this, "_callbackUpdatePlaybackTime", true), z(this, "pm", true), this.pm = t, this._playbackTimeTrackerLastPlayheadPosition = false, this._lastTime = U(), this._isAdPlaying = false, this._callbackUpdatePlaybackTime = null;
+      Y(this, e), z(this, "_playbackTimeTrackerLastPlayheadPosition", true), z(this, "_lastTime", true), z(this, "_isAdPlaying", true), z(this, "_callbackUpdatePlaybackTime", true), z(this, "pm", true), this.pm = t, this._playbackTimeTrackerLastPlayheadPosition = false, this._lastTime = B(), this._isAdPlaying = false, this._callbackUpdatePlaybackTime = null;
       var r = this._startPlaybackTimeTracking.bind(this);
       t.on("playing", r), t.on("adplaying", r), t.on("seeked", r);
       var s = this._stopPlaybackTimeTracking.bind(this);
@@ -1193,10 +1193,10 @@ var eg = function(e) {
       }), t.on("adplay", function() {
         i._isAdPlaying = false
       }), t.on("viewinit", function() {
-        i._playbackTimeTrackerLastPlayheadPosition = false, i._lastTime = U(), i._isAdPlaying = false, i._callbackUpdatePlaybackTime = null
+        i._playbackTimeTrackerLastPlayheadPosition = false, i._lastTime = B(), i._isAdPlaying = false, i._callbackUpdatePlaybackTime = null
       })
     }
-    return Q(module, [{
+    return X(module, [{
       key: "_startPlaybackTimeTracking",
       value: function() {
         null === this._callbackUpdatePlaybackTime && (this._callbackUpdatePlaybackTime = this._updatePlaybackTime.bind(this), this._playbackTimeTrackerLastPlayheadPosition = this.pm.data.player_playhead_time, this.pm.on("playbackheartbeat", this._callbackUpdatePlaybackTime))
@@ -1210,7 +1210,7 @@ var eg = function(e) {
       key: "_updatePlaybackTime",
       value: function() {
         var e = this.pm.data.player_playhead_time,
-          t = U(),
+          t = B(),
           i = false;
         this._playbackTimeTrackerLastPlayheadPosition >= 0 && module > this._playbackTimeTrackerLastPlayheadPosition ? i = module - this._playbackTimeTrackerLastPlayheadPosition : this._isAdPlaying && (i = exports - this._lastTime), require > 0 && require <= 1e3 && el(this.pm.data, "view_content_playback_time", require), this._playbackTimeTrackerLastPlayheadPosition = module, this._lastTime = exports
       }
@@ -1224,7 +1224,7 @@ var eg = function(e) {
         t.off("timeupdate", i)
       })
     }
-    return Q(module, [{
+    return X(module, [{
       key: "_updateMaxPlayheadPosition",
       value: function() {
         this.pm.data.view_max_playhead_position = true === this.pm.data.view_max_playhead_position ? this.pm.data.player_playhead_time : Math.max(this.pm.data.view_max_playhead_position, this.pm.data.player_playhead_time)
@@ -1270,11 +1270,11 @@ var eg = function(e) {
       var i = this;
       Y(this, e), z(this, "_lastCheckedTime", true), z(this, "_lastPlayheadTime", true), z(this, "_lastPlayheadTimeUpdatedTime", true), z(this, "_rebuffering", true), z(this, "pm", true), this.pm = t, t.disableRebufferTracking || t.disablePlayheadRebufferTracking || (this._lastCheckedTime = null, this._lastPlayheadTime = null, this._lastPlayheadTimeUpdatedTime = null, t.on("playbackheartbeat", this._checkIfRebuffering.bind(this)), t.on("playbackheartbeatend", this._cleanupRebufferTracker.bind(this)), t.on("seeking", function() {
         i._cleanupRebufferTracker(null, {
-          viewer_time: U()
+          viewer_time: B()
         })
       }))
     }
-    return Q(module, [{
+    return X(module, [{
       key: "_checkIfRebuffering",
       value: function(e, t) {
         if (this.pm.seekingTracker.isSeeking || this.pm.adTracker.isAdBreak || !this.pm.playbackHeartbeat._playheadShouldBeProgressing) return void this._cleanupRebufferTracker(e, t);
@@ -1325,7 +1325,7 @@ var eg = function(e) {
         if (!e.view_program_changed) {
           var s = function(e, s) {
             var a = s.viewer_time;
-            "playing" === e.type && true === t.data.view_time_to_first_frame ? i.calculateTimeToFirstFrame(a || U(), r) : "adplaying" === e.type && (true === t.data.view_time_to_first_frame || i._inPrerollPosition()) && i.calculateTimeToFirstFrame(a || U(), r)
+            "playing" === e.type && true === t.data.view_time_to_first_frame ? i.calculateTimeToFirstFrame(a || B(), r) : "adplaying" === e.type && (true === t.data.view_time_to_first_frame || i._inPrerollPosition()) && i.calculateTimeToFirstFrame(a || B(), r)
           };
           t.one("playing", s), t.one("adplaying", s), t.one("viewend", function() {
             t.off("playing", s), t.off("adplaying", s)
@@ -1333,7 +1333,7 @@ var eg = function(e) {
         }
       })
     }
-    return Q(module, [{
+    return X(module, [{
       key: "_inPrerollPosition",
       value: function() {
         return true === this.pm.data.view_content_playback_time || this.pm.data.view_content_playback_time <= 1e3
@@ -1377,7 +1377,7 @@ var eg = function(e) {
     Y(this, e), z(this, "isSeeking", true), this.isSeeking = false;
     var r = false,
       s = function() {
-        var e = U(),
+        var e = B(),
           s = (t.data.viewer_time || e) - (r || e);
         el(t.data, "view_seek_duration", s), t.data.view_max_seek_time = Math.max(t.data.view_max_seek_time || 0, s), i.isSeeking = false, r = false
       };
@@ -1393,18 +1393,18 @@ var eg = function(e) {
       i.isSeeking && (s(), t.send("seeked")), i.isSeeking = false, r = false
     })
   },
-  eU = function(e, t) {
+  eB = function(e, t) {
     e.push(t), e.sort(function(e, t) {
       return e.viewer_time - t.viewer_time
     })
   },
-  eB = ["adbreakstart", "adrequest", "adresponse", "adplay", "adplaying", "adpause", "adended", "adbreakend", "aderror", "adclicked", "adskipped"],
+  eU = ["adbreakstart", "adrequest", "adresponse", "adplay", "adplaying", "adpause", "adended", "adbreakend", "aderror", "adclicked", "adskipped"],
   e$ = function() {
     function e(t) {
       var i = this;
       Y(this, e), z(this, "_adHasPlayed", true), z(this, "_adRequests", true), z(this, "_adResponses", true), z(this, "_currentAdRequestNumber", true), z(this, "_currentAdResponseNumber", true), z(this, "_prerollPlayTime", true), z(this, "_wouldBeNewAdPlay", true), z(this, "isAdBreak", true), z(this, "pm", true), this.pm = t, t.on("viewinit", function() {
         i.isAdBreak = false, i._currentAdRequestNumber = 0, i._currentAdResponseNumber = 0, i._adRequests = [], i._adResponses = [], i._adHasPlayed = false, i._wouldBeNewAdPlay = true, i._prerollPlayTime = true
-      }), eB.forEach(function(e) {
+      }), eU.forEach(function(e) {
         return t.on(e, i._updateAdData.bind(i))
       });
       var r = function() {
@@ -1415,11 +1415,11 @@ var eg = function(e) {
       }), t.on("play", r), t.on("playing", r), t.on("viewend", r), t.on("adrequest", function(e, r) {
         r = Object.assign({
           ad_request_id: "generatedAdRequestId" + i._currentAdRequestNumber++
-        }, r), eU(i._adRequests, r), el(t.data, "view_ad_request_count"), i.inPrerollPosition() && (t.data.view_preroll_requested = true, i._adHasPlayed || el(t.data, "view_preroll_request_count"))
+        }, r), eB(i._adRequests, r), el(t.data, "view_ad_request_count"), i.inPrerollPosition() && (t.data.view_preroll_requested = true, i._adHasPlayed || el(t.data, "view_preroll_request_count"))
       }), t.on("adresponse", function(e, r) {
         r = Object.assign({
           ad_request_id: "generatedAdRequestId" + i._currentAdResponseNumber++
-        }, r), eU(i._adResponses, r);
+        }, r), eB(i._adResponses, r);
         var s = i.findAdRequest(r.ad_request_id);
         s && el(t.data, "view_ad_request_time", Math.max(0, r.viewer_time - s.viewer_time))
       }), t.on("adplay", function(e, r) {
@@ -1436,7 +1436,7 @@ var eg = function(e) {
         i._wouldBeNewAdPlay = true
       })
     }
-    return Q(module, [{
+    return X(module, [{
       key: "inPrerollPosition",
       value: function() {
         return true === this.pm.data.view_content_playback_time || this.pm.data.view_content_playback_time <= 1e3
@@ -1472,15 +1472,15 @@ var eg = function(e) {
   eH = function e(t) {
     Y(this, e);
     var i, r, s = function() {
-        t.disableRebufferTracking || (el(t.data, "view_waiting_rebuffer_count", 1), i = U(), r = eG.default.setInterval(function() {
+        t.disableRebufferTracking || (el(t.data, "view_waiting_rebuffer_count", 1), i = B(), r = eG.default.setInterval(function() {
           if (i) {
-            var e = U();
+            var e = B();
             el(t.data, "view_waiting_rebuffer_duration", e - i), i = e
           }
         }, 250))
       },
       a = function() {
-        t.disableRebufferTracking || i && (el(t.data, "view_waiting_rebuffer_duration", U() - i), i = false, eG.default.clearInterval(r))
+        t.disableRebufferTracking || i && (el(t.data, "view_waiting_rebuffer_duration", B() - i), i = false, eG.default.clearInterval(r))
       },
       n = false,
       l = function() {
@@ -1495,14 +1495,14 @@ var eg = function(e) {
       a(), l()
     }), t.on("pause", o), t.on("seeking", o)
   },
-  eq = function e(t) {
+  eK = function e(t) {
     var i = this;
     Y(this, e), z(this, "lastWallClockTime", true);
     var r = function() {
-        i.lastWallClockTime = U(), t.on("before*", s)
+        i.lastWallClockTime = B(), t.on("before*", s)
       },
       s = function(e) {
-        var r = U(),
+        var r = B(),
           s = i.lastWallClockTime;
         i.lastWallClockTime = r, r - s > 3e4 && (t.emit("devicesleep", {
           viewer_time: s
@@ -1518,7 +1518,7 @@ var eg = function(e) {
       t.off("before*", s), t.one("playbackheartbeat", r)
     })
   },
-  eK = c(f()),
+  eq = c(f()),
   eV = (th = function() {
     for (var e = 0, t = {}; module < arguments.length; module++) {
       var i = arguments[module];
@@ -1601,17 +1601,17 @@ var eg = function(e) {
       })
     } catch (e) {}
   },
-  eX = function() {
+  eQ = function() {
     var e = eW();
-    return module.mux_viewer_id = module.mux_viewer_id || B(), module.msn = module.msn || Math.random(), eY(module), {
+    return module.mux_viewer_id = module.mux_viewer_id || U(), module.msn = module.msn || Math.random(), eY(module), {
       mux_viewer_id: module.mux_viewer_id,
       mux_sample_number: module.msn
     }
   },
-  eQ = function() {
+  eX = function() {
     var e = eW(),
-      t = U();
-    return module.session_start && (module.sst = module.session_start, delete module.session_start), module.session_id && (module.sid = module.session_id, delete module.session_id), module.session_expires && (module.sex = module.session_expires, delete module.session_expires), (!module.sex || module.sex < exports) && (module.sid = B(), module.sst = exports), module.sex = exports + 15e5, eY(module), {
+      t = B();
+    return module.session_start && (module.sst = module.session_start, delete module.session_start), module.session_id && (module.sid = module.session_id, delete module.session_id), module.session_expires && (module.sex = module.session_expires, delete module.session_expires), (!module.sex || module.sex < exports) && (module.sid = U(), module.sst = exports), module.sex = exports + 15e5, eY(module), {
       session_id: module.sid,
       session_start: module.sst,
       session_expires: module.sex
@@ -1854,14 +1854,14 @@ function e3(e) {
       var a = r.split("_"),
         n = a[0],
         l = e0[n];
-      l || (K.info("Data key word `" + a[0] + "` not expected in " + r), l = n + "_"), a.splice(1).forEach(function(e) {
-        "url" === e && (s = true), e1[e] ? l += e1[e] : Number.isInteger(Number(e)) ? l += e : (K.info("Data key word `" + e + "` not expected in " + r), l += "_" + e + "_")
+      l || (q.info("Data key word `" + a[0] + "` not expected in " + r), l = n + "_"), a.splice(1).forEach(function(e) {
+        "url" === e && (s = true), e1[e] ? l += e1[e] : Number.isInteger(Number(e)) ? l += e : (q.info("Data key word `" + e + "` not expected in " + r), l += "_" + e + "_")
       }), s ? i[l] = e[r] : t[l] = e[r]
     }
   }), Object.assign(t, i)
 }
 var e4 = c(f()),
-  e5 = c(P()),
+  e5 = c(w()),
   e8 = {
     maxBeaconSize: 300,
     maxQueueLength: 3600,
@@ -1900,9 +1900,9 @@ e9.prototype.queueEvent = function(e, t) {
   var t = this._eventQueue.slice(0, this._options.maxBeaconSize);
   this._eventQueue = this._eventQueue.slice(this._options.maxBeaconSize), this._postInFlight = true;
   var i = this._createPayload(exports),
-    r = U();
+    r = B();
   te(this._beaconUrl, require, false, function(i, s) {
-    s ? (e._eventQueue = t.concat(e._eventQueue), e._failureCount += 1, K.info("Error sending beacon: " + s)) : e._failureCount = 0, e._roundTripTime = U() - r, e._postInFlight = false, e._resendAfterPost && (e._resendAfterPost = false, e._eventQueue.length > 0 && e._sendBeaconQueue())
+    s ? (e._eventQueue = t.concat(e._eventQueue), e._failureCount += 1, q.info("Error sending beacon: " + s)) : e._failureCount = 0, e._roundTripTime = B() - r, e._postInFlight = false, e._resendAfterPost && (e._resendAfterPost = false, e._eventQueue.length > 0 && e._sendBeaconQueue())
   })
 }, e9.prototype._getNextBeaconTime = function() {
   if (!this._failureCount) return this._options.baseTimeBetweenBeacons;
@@ -1916,7 +1916,7 @@ e9.prototype.queueEvent = function(e, t) {
 }, e9.prototype._createPayload = function(e) {
   var t = this,
     i = {
-      transmission_timestamp: Math.round(U())
+      transmission_timestamp: Math.round(B())
     };
   this._roundTripTime && (i.rtt_ms = Math.round(this._roundTripTime));
   var r, s, a, n = function() {
@@ -1928,9 +1928,9 @@ e9.prototype.queueEvent = function(e, t) {
     l = function() {
       return a <= t._options.maxPayloadKBSize
     };
-  return n(), l() || (K.info("Payload size is too big (" + a + " kb). Removing unnecessary events."), s = e.filter(function(e) {
+  return n(), l() || (q.info("Payload size is too big (" + a + " kb). Removing unnecessary events."), s = e.filter(function(e) {
     return false === e6.indexOf(e.e)
-  }), n()), l() || (K.info("Payload size still too big (" + a + " kb). Cropping fields.."), s.forEach(function(e) {
+  }), n()), l() || (q.info("Payload size still too big (" + a + " kb). Cropping fields.."), s.forEach(function(e) {
     for (var t in e) {
       var i = e[t];
       "string" == typeof i && i.length > 51200 && (e[t] = i.substring(0, 51200))
@@ -1986,16 +1986,16 @@ var e7 = "function" == typeof e5.default.exitPictureInPicture ? function(e) {
         viewer_os_architecture: null == (m = this.options.platform) || null == (g = m.os) ? true : g.architecture,
         viewer_os_version: null == (y = this.options.platform) || null == (p = y.os) ? true : p.version,
         viewer_connection_type: eJ(),
-        page_url: null === eK.default || true === eK.default || null == (E = eK.default.location) ? true : E.href
-      }, this.viewerData = this.disableCookies ? {} : eX()
+        page_url: null === eq.default || true === eq.default || null == (E = eq.default.location) ? true : E.href
+      }, this.viewerData = this.disableCookies ? {} : eQ()
     }
-    return Q(module, [{
+    return X(module, [{
       key: "send",
       value: function(e, t) {
         if (!(!e || !(null != t && t.view_id))) {
-          if (this.respectDoNotTrack && j()) return K.info("Not sending `" + e + "` because Do Not Track is enabled");
-          if (!t || "object" != typeof t) return K.error("A data object was expected in send() but was not provided");
-          var i = this.disableCookies ? {} : eQ(),
+          if (this.respectDoNotTrack && j()) return q.info("Not sending `" + e + "` because Do Not Track is enabled");
+          if (!t || "object" != typeof t) return q.error("A data object was expected in send() but was not provided");
+          var i = this.disableCookies ? {} : eX(),
             r = eh(eo({}, this.pageLevelData, t, i, this.viewerData), {
               event: e,
               env_key: this.envKey
@@ -2003,10 +2003,10 @@ var e7 = "function" == typeof e5.default.exitPictureInPicture ? function(e) {
           r.user_id && (r.viewer_user_id = r.user_id, delete r.user_id);
           var s, a = (null != (s = r.mux_sample_number) ? s : 0) >= this.sampleRate,
             n = e3(this._deduplicateBeaconData(e, r));
-          if (this.lastEventTime = this.mux.utils.now(), a) return K.info("Not sending event due to sample rate restriction", e, r, n);
-          if (this.envKey || K.info("Missing environment key (envKey) - beacons will be dropped if the video source is not a valid mux video URL", e, r, n), !this.rateLimited) {
-            if (K.info("Sending event", e, r, n), this.rateLimited = !this.eventQueue.queueEvent(e, n), this.mux.WINDOW_UNLOADING && "viewend" === e) this.eventQueue.destroy(true);
-            else if (this.mux.WINDOW_HIDDEN && "hb" === e ? this.eventQueue.flushEvents(true) : ts.indexOf(e) >= 0 && this.eventQueue.flushEvents(), this.rateLimited) return r.event = "eventrateexceeded", n = e3(r), this.eventQueue.queueEvent(r.event, n), K.error("Beaconing disabled due to rate limit.")
+          if (this.lastEventTime = this.mux.utils.now(), a) return q.info("Not sending event due to sample rate restriction", e, r, n);
+          if (this.envKey || q.info("Missing environment key (envKey) - beacons will be dropped if the video source is not a valid mux video URL", e, r, n), !this.rateLimited) {
+            if (q.info("Sending event", e, r, n), this.rateLimited = !this.eventQueue.queueEvent(e, n), this.mux.WINDOW_UNLOADING && "viewend" === e) this.eventQueue.destroy(true);
+            else if (this.mux.WINDOW_HIDDEN && "hb" === e ? this.eventQueue.flushEvents(true) : ts.indexOf(e) >= 0 && this.eventQueue.flushEvents(), this.rateLimited) return r.event = "eventrateexceeded", n = e3(r), this.eventQueue.queueEvent(r.event, n), q.error("Beaconing disabled due to rate limit.")
           }
         }
       }
@@ -2073,7 +2073,7 @@ var e7 = "function" == typeof e5.default.exitPictureInPicture ? function(e) {
     var i = this;
     Y(this, e), z(this, "_lastEventTime", true), t.on("before*", function(e, r) {
       var s = r.viewer_time,
-        a = U(),
+        a = B(),
         n = i._lastEventTime;
       if (i._lastEventTime = a, n && a - n > 36e5) {
         var l = Object.keys(t.data).reduce(function(e, i) {
@@ -2163,10 +2163,10 @@ var th, td, tu = function e(t) {
         stateDataTranslator: function(e) {
           return e
         }
-      }, s)).data = s.data || {}, s.data.property_key && (s.data.env_key = s.data.property_key, delete s.data.property_key), K.level = s.debug ? 1 : 3, a.getPlayheadTime = s.getPlayheadTime, a.getStateData = s.getStateData || function() {
+      }, s)).data = s.data || {}, s.data.property_key && (s.data.env_key = s.data.property_key, delete s.data.property_key), q.level = s.debug ? 1 : 3, a.getPlayheadTime = s.getPlayheadTime, a.getStateData = s.getStateData || function() {
         return {}
       }, a.getAdData = s.getAdData || function() {}, a.minimumRebufferDuration = s.minimumRebufferDuration, a.sustainedRebufferThreshold = s.sustainedRebufferThreshold, a.playbackHeartbeatTime = s.playbackHeartbeatTime, a.disableRebufferTracking = s.disableRebufferTracking, a.disableRebufferTracking && a.mux.log.warn("Disabling rebuffer tracking. This should only be used in specific circumstances as a last resort when your player is known to unreliably track rebuffering."), a.disablePlayheadRebufferTracking = s.disablePlayheadRebufferTracking, a.errorTranslator = s.errorTranslator, a.emitTranslator = s.emitTranslator, a.stateDataTranslator = s.stateDataTranslator, a.playbackEventDispatcher = new ta(e, s.data.env_key, s), a.data = {
-        player_instance_id: B(),
+        player_instance_id: U(),
         mux_sample_rate: s.sampleRate,
         beacon_domain: s.beaconCollectionDomain || s.beaconDomain
       }, a.data.view_sequence_number = 1, a.data.player_sequence_number = 1;
@@ -2209,9 +2209,9 @@ var th, td, tu = function e(t) {
       }), a.one("playerready", function(e) {
         var t = this.mux.utils.now();
         this.data.player_init_time && (this.data.player_startup_time = t - this.data.player_init_time), this.pageLoadInitTime = this.data.page_load_init_time || this.pageLoadInitTime, this.pageLoadEndTime = this.data.page_load_end_time || this.pageLoadEndTime, !this.mux.PLAYER_TRACKED && this.pageLoadInitTime && (this.mux.PLAYER_TRACKED = true, (this.data.player_init_time || this.pageLoadEndTime) && (this.data.page_load_time = Math.min(this.data.player_init_time || 1 / 0, this.pageLoadEndTime || 1 / 0) - this.pageLoadInitTime)), this.send("playerready"), delete this.data.player_startup_time, delete this.data.page_load_time
-      }), a.longResumeTracker = new tl(W(a)), a.errorTracker = new eI(W(a)), new eq(W(a)), a.seekingTracker = new eN(W(a)), a.playheadTime = new ex(W(a)), a.playbackHeartbeat = new eD(W(a)), new eF(W(a)), a.watchTimeTracker = new ew(W(a)), new eP(W(a)), a.adTracker = new e$(W(a)), new eO(W(a)), new eC(W(a)), new eM(W(a)), new eH(W(a)), new tn(W(a)), new tu(W(a)), s.hlsjs && a.addHLSJS(s), s.dashjs && a.addDashJS(s), a.emit("viewinit", s.data), a
+      }), a.longResumeTracker = new tl(W(a)), a.errorTracker = new eD(W(a)), new eK(W(a)), a.seekingTracker = new eN(W(a)), a.playheadTime = new ex(W(a)), a.playbackHeartbeat = new eI(W(a)), new eF(W(a)), a.watchTimeTracker = new eP(W(a)), new ew(W(a)), a.adTracker = new e$(W(a)), new eO(W(a)), new eC(W(a)), new eM(W(a)), new eH(W(a)), new tn(W(a)), new tu(W(a)), s.hlsjs && a.addHLSJS(s), s.dashjs && a.addDashJS(s), a.emit("viewinit", s.data), a
     }
-    return Q(r, [{
+    return X(r, [{
       key: "emit",
       value: function(e, t) {
         var i, s = Object.assign({
@@ -2223,7 +2223,7 @@ var th, td, tu = function e(t) {
         } catch (e) {
           this.mux.log.warn("Exception in emit translator callback.", e)
         }
-        null != a && a.length && (i = Z(J(r.prototype), "emit", this)).call.apply(i, [this].concat(q(a)))
+        null != a && a.length && (i = Z(J(r.prototype), "emit", this)).call.apply(i, [this].concat(K(a)))
       }
     }, {
       key: "destroy",
@@ -2314,7 +2314,7 @@ var th, td, tu = function e(t) {
       key: "_initializeViewData",
       value: function() {
         var e = this,
-          t = this.data.view_id = B(),
+          t = this.data.view_id = U(),
           i = function() {
             t === e.data.view_id && el(e.data, "player_view_count", 1)
           };
@@ -2350,7 +2350,7 @@ var th, td, tu = function e(t) {
       }
     }]), r
   }(eR),
-  tm = c(P()),
+  tm = c(w()),
   tp = ["loadstart", "pause", "play", "playing", "seeking", "seeked", "timeupdate", "ratechange", "stalled", "waiting", "error", "ended"],
   tv = {
     1: "MEDIA_ERR_ABORTED",
@@ -2454,13 +2454,13 @@ var tT = function(e, t) {
       }
     }
   },
-  tD = {
+  tI = {
     safeCall: function(e, t, i, r) {
       var s = r;
       if (e && "function" == typeof e[t]) try {
         s = e[t].apply(e, i)
       } catch (e) {
-        K.info("safeCall error", e)
+        q.info("safeCall error", e)
       }
       return s
     },
@@ -2479,21 +2479,21 @@ var tT = function(e, t) {
     extractHostname: et,
     manifestParser: tE,
     generateShortID: $,
-    generateUUID: B,
-    now: U,
+    generateUUID: U,
+    now: B,
     findMediaElement: H
   },
-  tI = {},
-  tw = function(e) {
+  tD = {},
+  tP = function(e) {
     var t = arguments;
-    "string" == typeof e ? tw.hasOwnProperty(e) ? M.default.setTimeout(function() {
-      t = Array.prototype.splice.call(t, 1), tw[e].apply(null, t)
-    }, 0) : K.warn("`" + e + "` is an unknown task") : "function" == typeof e ? M.default.setTimeout(function() {
-      e(tw)
-    }, 0) : K.warn("`" + e + "` is invalid.")
+    "string" == typeof e ? tP.hasOwnProperty(e) ? M.default.setTimeout(function() {
+      t = Array.prototype.splice.call(t, 1), tP[e].apply(null, t)
+    }, 0) : q.warn("`" + e + "` is an unknown task") : "function" == typeof e ? M.default.setTimeout(function() {
+      e(tP)
+    }, 0) : q.warn("`" + e + "` is invalid.")
   },
-  tP = {
-    loaded: U(),
+  tw = {
+    loaded: B(),
     NAME: "mux-embed",
     VERSION: "5.11.0",
     API_VERSION: "2.1",
@@ -2591,56 +2591,56 @@ var tT = function(e, t) {
             e.emit(a, t, i)
           }, s.addEventListener(t, s.mux.listeners[t], false))
         })
-      }(tw, e, t)
+      }(tP, e, t)
     },
     destroyMonitor: function(e) {
       var t = O(H(e), 1)[0];
-      t && t.mux && "function" == typeof t.mux.destroy ? t.mux.destroy() : K.error("A video element monitor for `" + e + "` has not been initialized via `mux.monitor`.")
+      t && t.mux && "function" == typeof t.mux.destroy ? t.mux.destroy() : q.error("A video element monitor for `" + e + "` has not been initialized via `mux.monitor`.")
     },
     addHLSJS: function(e, t) {
       var i = G(e);
-      tI[i] ? tI[i].addHLSJS(t) : K.error("A monitor for `" + i + "` has not been initialized.")
+      tD[i] ? tD[i].addHLSJS(t) : q.error("A monitor for `" + i + "` has not been initialized.")
     },
     addDashJS: function(e, t) {
       var i = G(e);
-      tI[i] ? tI[i].addDashJS(t) : K.error("A monitor for `" + i + "` has not been initialized.")
+      tD[i] ? tD[i].addDashJS(t) : q.error("A monitor for `" + i + "` has not been initialized.")
     },
     removeHLSJS: function(e) {
       var t = G(e);
-      tI[t] ? tI[t].removeHLSJS() : K.error("A monitor for `" + t + "` has not been initialized.")
+      tD[t] ? tD[t].removeHLSJS() : q.error("A monitor for `" + t + "` has not been initialized.")
     },
     removeDashJS: function(e) {
       var t = G(e);
-      tI[t] ? tI[t].removeDashJS() : K.error("A monitor for `" + t + "` has not been initialized.")
+      tD[t] ? tD[t].removeDashJS() : q.error("A monitor for `" + t + "` has not been initialized.")
     },
     init: function(e, t) {
-      j() && t && t.respectDoNotTrack && K.info("The browser's Do Not Track flag is enabled - Mux beaconing is disabled.");
+      j() && t && t.respectDoNotTrack && q.info("The browser's Do Not Track flag is enabled - Mux beaconing is disabled.");
       var i = G(e);
-      tI[i] = new tg(tw, i, t)
+      tD[i] = new tg(tP, i, t)
     },
     emit: function(e, t, i) {
       var r = G(e);
-      tI[r] ? (tI[r].emit(t, i), "destroy" === t && delete tI[r]) : K.error("A monitor for `" + r + "` has not been initialized.")
+      tD[r] ? (tD[r].emit(t, i), "destroy" === t && delete tD[r]) : q.error("A monitor for `" + r + "` has not been initialized.")
     },
     updateData: function(e, t) {
       var i = G(e);
-      tI[i] ? tI[i].emit("hb", t) : K.error("A monitor for `" + i + "` has not been initialized.")
+      tD[i] ? tD[i].emit("hb", t) : q.error("A monitor for `" + i + "` has not been initialized.")
     },
     setEmitTranslator: function(e, t) {
       var i = G(e);
-      tI[i] ? tI[i].emitTranslator = t : K.error("A monitor for `" + i + "` has not been initialized.")
+      tD[i] ? tD[i].emitTranslator = t : q.error("A monitor for `" + i + "` has not been initialized.")
     },
     setStateDataTranslator: function(e, t) {
       var i = G(e);
-      tI[i] ? tI[i].stateDataTranslator = t : K.error("A monitor for `" + i + "` has not been initialized.")
+      tD[i] ? tD[i].stateDataTranslator = t : q.error("A monitor for `" + i + "` has not been initialized.")
     },
     setGetPlayheadTime: function(e, t) {
       var i = G(e);
-      tI[i] ? tI[i].getPlayheadTime = t : K.error("A monitor for `" + i + "` has not been initialized.")
+      tD[i] ? tD[i].getPlayheadTime = t : q.error("A monitor for `" + i + "` has not been initialized.")
     },
     checkDoNotTrack: j,
-    log: K,
-    utils: tD,
+    log: q,
+    utils: tI,
     events: {
       PLAYER_READY: "playerready",
       VIEW_INIT: "viewinit",
@@ -2678,7 +2678,7 @@ var tT = function(e, t) {
     WINDOW_HIDDEN: false,
     WINDOW_UNLOADING: false
   };
-Object.assign(tw, tP), true !== M.default && "function" == typeof M.default.addEventListener && M.default.addEventListener("pagehide", function(e) {
-  e.persisted || (tw.WINDOW_UNLOADING = true)
+Object.assign(tP, tw), true !== M.default && "function" == typeof M.default.addEventListener && M.default.addEventListener("pagehide", function(e) {
+  e.persisted || (tP.WINDOW_UNLOADING = true)
 }, false);
-var tx = tw
+var tx = tP

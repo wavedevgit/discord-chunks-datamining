@@ -2,12 +2,11 @@
 /** chunk id: 333859, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  c: () => I
+  c: () => v
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk442837 = require("./442837.js"),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk493773 = require("./493773.js"),
   Chunk100527 = require("./100527.js"),
@@ -24,10 +23,10 @@ var Chunk442837 = require("./442837.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk77247 = require("./77247.js");
-let v = () => {
+let O = () => {
     (0, Chunk550385.XO)(Chunk550385.wh.APP_ICON), (0, Chunk342386.default)()
   },
-  I = () => {
+  v = () => {
     let {
       analyticsLocations: e
     } = (0, Chunk906732.ZP)(Chunk100527.Z.USER_SETTINGS), t = (0, Chunk442837.e7)([Chunk737604.Z], () => Chunk737604.Z.isUpsellPreview);
@@ -41,15 +40,14 @@ let v = () => {
       v2EditorEnabled: n
     } = Chunk803038.Mc.useExperiment({
       location: "UserSettingsAppearanceInAppIcon"
-    }), _ = () => {
+    }), f = () => {
       let e = require ? Chunk77247.tryItOutButtonsV2 : Chunk77247.tryItOutButtons;
       return (0, Chunk951288.jsxs)("div", {
         className: module,
-        children: [(0, Chunk951288.jsx)(Chunk755721.zx, {
-          size: Chunk755721.zx.Sizes.MEDIUM,
-          color: exports ? Chunk755721.zx.Colors.PRIMARY : Chunk755721.zx.Colors.BRAND,
-          onClick: () => v(),
-          children: Chunk388032.intl.string(Chunk388032.t["hb/wEx"])
+        children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
+          variant: exports ? "secondary" : "primary",
+          text: Chunk388032.intl.string(Chunk388032.t["hb/wEx"]),
+          onClick: () => O()
         }), exports ? require ? (0, Chunk951288.jsx)(Chunk638212.Z, {
           subscriptionTier: Chunk474936.Si.TIER_2,
           defaultTextOverride: Chunk388032.intl.string(Chunk388032.t.mr4K7O),

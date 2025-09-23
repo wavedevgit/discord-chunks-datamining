@@ -204,7 +204,8 @@ function A(e) {
           variant: "primary",
           text: Q,
           onClick: k,
-          loading: T
+          loading: T,
+          icon: _.config.features.includes(S.S7.CLOUD_GAMING_ACTIVITY) ? s.v3n : true
         })]
       }), V && !H && (0, r.jsx)(s.zxk, {
         variant: "primary",

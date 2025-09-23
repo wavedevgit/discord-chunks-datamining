@@ -394,8 +394,8 @@ function eP(e) {
     creditCardState: e3,
     setCreditCardState: e4,
     tokenState: e8,
-    setTokenState: e6,
-    isSubmittingCurrentStep: e5,
+    setTokenState: e5,
+    isSubmittingCurrentStep: e6,
     billingAddressState: e7,
     setBillingAddressState: e9,
     setIsSubmittingCurrentStep: te,
@@ -570,7 +570,7 @@ function eP(e) {
         primaryCTA: P.Z.CTAType.CONTINUE,
         primaryType: "submit",
         primaryText: Q.intl.string(Q.t.PDTjLC),
-        primarySubmitting: e5,
+        primarySubmitting: e6,
         primaryDisabled: !tI,
         onPrimary: tL
       });
@@ -580,7 +580,7 @@ function eP(e) {
         te(true);
         try {
           let t = await (0, d.qv)(eE, e);
-          e6({
+          e5({
             token: t
           }), e0(N.h8.ADDRESS)
         } catch (e) {
@@ -617,7 +617,7 @@ function eP(e) {
             primaryCTA: P.Z.CTAType.CONTINUE,
             primaryType: "submit",
             primaryText: Q.intl.string(Q.t.PDTjLC),
-            primarySubmitting: e5,
+            primarySubmitting: e6,
             primaryDisabled: tM,
             onPrimary: () => tj(t)
           })
@@ -881,7 +881,7 @@ function eP(e) {
         onBack: () => e0(p),
         primaryCTA: P.Z.CTAType.CONTINUE,
         primaryText: Q.intl.string(Q.t.PDTjLC),
-        primarySubmitting: e5,
+        primarySubmitting: e6,
         primaryDisabled: !e7.isValid || ts,
         onPrimary: tV
       });

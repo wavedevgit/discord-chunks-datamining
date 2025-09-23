@@ -256,14 +256,14 @@ function ee(e) {
     revealLabel: a,
     hideLabel: o
   } = e, [s, l] = i.useState(false), c = s ? t : n(t);
-  return (0, r.jsxs)(r.Fragment, {
-    children: [c, (0, r.jsx)(d.zx, {
-      look: d.zx.Looks.LINK,
-      size: d.zx.Sizes.MIN,
-      color: d.zx.Colors.LINK,
+  return (0, r.jsxs)("div", {
+    className: Y.textRevealer,
+    children: [c, (0, r.jsx)(f.Avr, {
+      variant: "primary",
+      textVariant: "text-sm/medium",
       "aria-label": s ? o : a,
       onClick: () => l(!s),
-      children: s ? H.intl.string(H.t.fgq1go) : H.intl.string(H.t.dcztdX)
+      text: s ? H.intl.string(H.t.fgq1go) : H.intl.string(H.t.dcztdX)
     })]
   })
 }

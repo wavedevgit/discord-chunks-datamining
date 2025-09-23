@@ -190,6 +190,7 @@ function z(e) {
             loading: I,
             text: A,
             size: "sm",
+            icon: t.config.features.includes(Z.S7.CLOUD_GAMING_ACTIVITY) ? _.v3n : true,
             fullWidth: true
           })
         })]

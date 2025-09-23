@@ -1,23 +1,24 @@
 /** Chunk was on 30019 **/
 /** chunk id: 719498, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  default: () => p
+  default: () => u
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk82659 = require("./82659.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk933557 = require("./933557.js"),
   Chunk925329 = require("./925329.jsx"),
   Chunk296023 = require("./296023.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk865706 = require("./865706.js");
-let p = e => {
+let u = e => {
   let {
     channel: t,
-    application: p,
+    application: u,
     onClose: m,
-    transitionState: u
-  } = e, x = (0, o.w)(t), b = a.useCallback(() => (m(), (0, i.ZDy)(async () => {
+    transitionState: b
+  } = e, j = (0, l.w)(t), x = a.useCallback(() => (m(), (0, c.ZDy)(async () => {
     let {
       default: e
     } = await r.e("31907").then(r.bind(r, 366854));
@@ -42,7 +43,7 @@ let p = e => {
         return e
       }({}, r), i = i = {
         channelId: t.id,
-        application: p
+        application: u
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var r = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -54,61 +55,51 @@ let p = e => {
         Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(i, e))
       }), a))
     }
-  })), [p, t.id, m]), j = (0, c.ZP)(t, true);
-  return (0, n.jsxs)(i.Y0X, {
-    transitionState: u,
-    "aria-label": l.intl.string(l.t.OJknho),
-    parentComponent: "IntegrationsEditLinkedLobbyModal",
-    children: [(0, n.jsx)(i.xBx, {
-      separator: false,
-      children: (0, n.jsx)(i.X6q, {
-        variant: "heading-lg/semibold",
-        children: l.intl.string(l.t.OJknho)
-      })
-    }), (0, n.jsxs)(i.hzk, {
-      className: d.content,
+  })), [u, t.id, m]), O = (0, o.ZP)(t, true);
+  return (0, n.jsx)(i.Modal, {
+    transitionState: b,
+    "aria-label": d.intl.string(d.t.OJknho),
+    onClose: m,
+    title: d.intl.string(d.t.OJknho),
+    actions: [{
+      text: d.intl.string(d.t["ETE/oK"]),
+      onClick: m,
+      variant: "secondary"
+    }, {
+      text: d.intl.string(d.t.LLWaxc),
+      onClick: x,
+      variant: "critical-primary"
+    }],
+    children: (0, n.jsxs)("div", {
+      className: p.content,
       children: [(0, n.jsx)(s.Z, {
-        game: p,
+        game: u,
         size: s.A.XLARGE
       }), (0, n.jsxs)("div", {
-        className: d.metadata,
+        className: p.metadata,
         children: [(0, n.jsxs)("div", {
-          className: d.metadataHeader,
-          children: [(0, n.jsx)(i.Text, {
+          className: p.metadataHeader,
+          children: [(0, n.jsx)(c.Text, {
             variant: "text-md/semibold",
             color: "header-primary",
-            children: p.name
-          }), (0, n.jsx)(i.Text, {
+            children: u.name
+          }), (0, n.jsx)(c.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
-            children: l.intl.format(l.t["0NJZAQ"], {
-              channelName: j
+            children: d.intl.format(d.t["0NJZAQ"], {
+              channelName: O
             })
           })]
-        }), null != x && (0, n.jsxs)(n.Fragment, {
+        }), null != j && (0, n.jsxs)(n.Fragment, {
           children: [(0, n.jsx)("div", {
-            className: d.divider
-          }), (0, n.jsx)(i.Text, {
+            className: p.divider
+          }), (0, n.jsx)(c.Text, {
             variant: "text-xs/normal",
             color: "text-muted",
-            children: x
+            children: j
           })]
         })]
       })]
-    }), (0, n.jsxs)(i.mzw, {
-      children: [(0, n.jsx)(i.zxk, {
-        variant: "critical-primary",
-        text: l.intl.string(l.t.LLWaxc),
-        onClick: b
-      }), (0, n.jsx)("div", {
-        "data-button-hoisted-classname-wrapper": true,
-        className: d.cancelButton,
-        children: (0, n.jsx)(i.zxk, {
-          variant: "secondary",
-          text: l.intl.string(l.t["ETE/oK"]),
-          onClick: m
-        })
-      })]
-    })]
+    })
   })
 }

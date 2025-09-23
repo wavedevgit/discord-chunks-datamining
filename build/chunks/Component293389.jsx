@@ -451,20 +451,20 @@ let H = (0, Chunk251625.oH)(function() {
       showHeader: n = true
     } = e, a = (0, s.Wu)([h.ZP], () => h.ZP.getGamesSeen(false)), {
       runningGame: l,
-      overrideExePaths: d
+      overrideExePaths: c
     } = (0, s.cj)([h.ZP], () => ({
       runningGame: h.ZP.getVisibleGame(),
       overrideExePaths: H(...h.ZP.getOverrides())
     })), {
-      gameHistory: f,
-      robloxSubgameHistory: _
+      gameHistory: d,
+      robloxSubgameHistory: f
     } = i.useMemo(() => a.reduce((e, t) => ((0, b.le)(t) ? e.robloxSubgameHistory.push(t) : e.gameHistory.push(t), e), {
       gameHistory: [],
       robloxSubgameHistory: []
-    }), [a]), p = i.useRef(null);
+    }), [a]), _ = i.useRef(null);
 
-    function g() {
-      return 0 === f.length ? (0, r.jsx)(V, {
+    function p() {
+      return 0 === d.length ? (0, r.jsx)(V, {
         children: (0, r.jsx)(u.OZU, {
           children: C.intl.string(C.t["1yiJws"])
         })
@@ -479,10 +479,10 @@ let H = (0, Chunk251625.oH)(function() {
           children: C.intl.format(C.t.KPA3m5, {
             igdbLink: G
           })
-        }), f.map(e => (0, r.jsx)(Z, {
+        }), d.map(e => (0, r.jsx)(Z, {
           rawGame: e,
-          isOverride: d.has(e.exePath),
-          subgames: e.id === E.eB ? _ : true
+          isOverride: c.has(e.exePath),
+          subgames: e.id === E.eB ? f : true
         }, (0, h.rH)(e)))]
       })
     }
@@ -492,15 +492,15 @@ let H = (0, Chunk251625.oH)(function() {
       className: t,
       children: [null != l ? (0, r.jsx)(Z, {
         rawGame: l,
-        isOverride: d.has(l.exePath),
+        isOverride: c.has(l.exePath),
         nowPlaying: true,
-        subgames: l.id === E.eB ? _ : true
+        subgames: l.id === E.eB ? f : true
       }, (0, h.rH)(l)) : (0, r.jsx)(F, {}), (0, r.jsxs)("div", {
         className: o()(N.nowPlayingAdd, w.marginReset, w.marginTop8, w.marginBottom20),
         children: [(0, r.jsx)("span", {
           children: C.intl.string(C.t.xwhoqK)
         }), (0, r.jsx)(u.yRy, {
-          targetElementRef: p,
+          targetElementRef: _,
           renderPopout: e => {
             let {
               closePopout: t
@@ -511,14 +511,13 @@ let H = (0, Chunk251625.oH)(function() {
           },
           align: "center",
           position: "bottom",
-          children: e => (0, r.jsx)(c.zx, j(x({}, e), {
-            look: c.iL.LINK,
-            size: c.Ph.MIN,
-            color: c.Tt.LINK,
-            buttonRef: p,
-            children: C.intl.string(C.t.GjgdXV)
+          children: e => (0, r.jsx)(u.Avr, j(x({}, e), {
+            buttonRef: _,
+            variant: "primary",
+            textVariant: "text-sm/medium",
+            text: C.intl.string(C.t.GjgdXV)
           }))
         })]
-      }), g()]
+      }), p()]
     })
   }
