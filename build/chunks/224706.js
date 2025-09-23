@@ -48,8 +48,29 @@ function k(e) {
     embedded: a = false,
     source: o,
     locationObject: s,
-    analyticsLocations: c
+    analyticsLocations: c,
+    preferDeepLink: d = false
   } = e;
+  if (d) {
+    let e = u.Z.getApplication(t);
+    if ((null == e ? true : e.deepLinkUri) != null) {
+      let r = "".concat(e.deepLinkUri).concat(w.UWR.GAME_INVITE_FRAGMENT).concat(n);
+      try {
+        if (r.startsWith("http")) {
+          let e = window.open(r, "_blank");
+          (null == e || e.closed || true === e.closed) && (M.warn("Deep link popup was blocked by browser, trying location.href", {
+            applicationId: t
+          }), window.location.href = r)
+        } else window.location.href = r;
+        return Promise.resolve()
+      } catch (e) {
+        M.warn("Failed to open deep link, falling back to desktop launch", {
+          applicationId: t,
+          error: e.message
+        })
+      }
+    }
+  }
   B({
     applicationId: t,
     channelId: r,
@@ -412,16 +433,18 @@ let Z = {
       remotePartyId: f
     });
     try {
-      let e = await N.Z.getJoinSecret(t, n, r, i, a);
+      let e = (0, A.platformPrefersDeepLink)(),
+        l = await N.Z.getJoinSecret(t, n, r, i, a);
       return null == f && k({
         applicationId: r,
-        secret: e,
+        secret: l,
         channelId: i,
         intent: o,
         embedded: s,
         source: c,
         locationObject: u,
-        analyticsLocations: d
+        analyticsLocations: d,
+        preferDeepLink: e
       }), true
     } catch (e) {
       return l.Z.dispatch({

@@ -3,10 +3,10 @@
 "use strict";
 require.r(exports), require.d(exports, {
   PlatformTypes: () => r,
-  getNativePlatform: () => b,
-  getOS: () => y,
-  getPlatform: () => g,
-  getPlatformName: () => E,
+  getNativePlatform: () => v,
+  getOS: () => I,
+  getPlatform: () => y,
+  getPlatformName: () => O,
   isAndroid: () => h,
   isAndroidChrome: () => f,
   isAndroidWeb: () => _,
@@ -15,9 +15,12 @@ require.r(exports), require.d(exports, {
   isLinux: () => c,
   isMac: () => l,
   isMacWeb: () => p,
+  isOculusWeb: () => g,
   isPlatformEmbedded: () => a,
   isWeb: () => d,
-  isWindows: () => s
+  isWindows: () => s,
+  platformPrefersDeepLink: () => E,
+  platformSupportsActivityJoin: () => b
 }), require("./35282.js");
 var r = function(e) {
   return e.WINDOWS = "WINDOWS", e.OSX = "OSX", e.LINUX = "LINUX", e.WEB = "WEB", e
@@ -43,7 +46,7 @@ function u() {
 }
 
 function d() {
-  return "WEB" === g()
+  return "WEB" === y()
 }
 
 function f() {
@@ -69,14 +72,27 @@ function m() {
 }
 
 function g() {
-  return s() ? "WINDOWS" : l() ? "OSX" : c() ? "LINUX" : "WEB"
+  var e;
+  return (null == (e = navigator.userAgent) ? true : module.match(/OculusBrowser/i)) != null
 }
 
 function E() {
-  return o
+  return g()
 }
 
 function b() {
+  return u() || g() || a
+}
+
+function y() {
+  return s() ? "WINDOWS" : l() ? "OSX" : c() ? "LINUX" : "WEB"
+}
+
+function O() {
+  return o
+}
+
+function v() {
   switch (o) {
     case "ios":
     case "android":
@@ -86,7 +102,7 @@ function b() {
   }
 }
 
-function y() {
+function I() {
   let {
     userAgent: e
   } = window.navigator;
