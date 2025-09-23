@@ -114,6 +114,11 @@ let u = {
         label: "Full Width",
         type: "boolean",
         defaultValue: false
+      },
+      minWidth: {
+        label: "Min width",
+        type: "text",
+        defaultValue: ""
       }
     }
   },

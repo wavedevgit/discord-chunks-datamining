@@ -30,8 +30,8 @@ let x = (0, Chunk108843.Z)(function(e) {
   let {
     webBuildOverride: t,
     onSelect: n,
-    onInteraction: s
-  } = e, [u, x] = l.useState(false), D = (0, v.Z)(), N = (0, S.Z)(), _ = (0, O.Z)(), I = (0, y.Z)(), Z = (0, j.Z)(), T = (0, h.Z)(), m = (0, f.Z)(), k = (0, P.Z)(), C = (0, E.Z)(), {
+    onInteraction: c
+  } = e, [u, x] = l.useState(false), D = (0, v.Z)(), N = (0, S.Z)(), _ = (0, f.Z)(), I = (0, y.Z)(), Z = (0, j.Z)(), T = (0, h.Z)(), m = (0, O.Z)(), C = (0, P.Z)(), k = (0, E.Z)(), {
     analyticsLocations: R
   } = (0, d.ZP)(), L = l.useMemo(() => (0, b.j)(), []);
   async function V() {
@@ -45,7 +45,7 @@ let x = (0, Chunk108843.Z)(function(e) {
     let {
       section: t
     } = e;
-    return t !== c.ID.HEADER && t !== c.ID.CUSTOM && t !== c.ID.DIVIDER && "logout" !== t
+    return t !== s.ID.HEADER && t !== s.ID.CUSTOM && t !== s.ID.DIVIDER && "logout" !== t
   }).filter(e => null == e.predicate || e.predicate());
   return (0, a.jsx)(d.Gt, {
     value: R,
@@ -54,14 +54,14 @@ let x = (0, Chunk108843.Z)(function(e) {
       onClose: i.Zy,
       "aria-label": w.intl.string(w.t.opYYHh),
       onSelect: n,
-      onInteraction: s,
+      onInteraction: c,
       children: [B.map(e => {
         var t, n;
         let {
           section: l,
           label: i,
-          onClick: c
-        } = e, s = l.replace(/\W/gi, "_");
+          onClick: s
+        } = e, c = l.replace(/\W/gi, "_");
         return (0, a.jsx)(r.sNh, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -80,10 +80,10 @@ let x = (0, Chunk108843.Z)(function(e) {
           }
           return e
         }({
-          id: s
+          id: c
         }, {
           label: i,
-          action: () => null != c ? c() : function(e, t) {
+          action: () => null != s ? s() : function(e, t) {
             let n = Object.values(A.oAB).filter(t => t === e)[0];
             null != n && o.Z.open(n, true, {
               analyticsLocations: t
@@ -107,7 +107,7 @@ let x = (0, Chunk108843.Z)(function(e) {
               case A.oAB.EXPERIMENTS:
                 return m;
               case A.oAB.DEVELOPER_OPTIONS:
-                return k;
+                return C;
               default:
                 return null
             }
@@ -121,8 +121,8 @@ let x = (0, Chunk108843.Z)(function(e) {
           return n
         })(Object(n)).forEach(function(e) {
           Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-        }), t), s)
-      }), e.user.isStaff() && C, e.user.isStaff() && L.length > 0 ? (0, a.jsx)(r.sNh, {
+        }), t), c)
+      }), e.user.isStaff() && k, e.user.isStaff() && L.length > 0 ? (0, a.jsx)(r.sNh, {
         label: "Build Overrides",
         id: "build_overrides",
         children: (0, a.jsx)(r.kSQ, {

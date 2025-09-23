@@ -1,7 +1,7 @@
 /** Chunk was on 2535 **/
 /** chunk id: 69021, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => O
 }), require("./539854.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -36,7 +36,7 @@ function y(e) {
   return e
 }
 
-function O(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -49,12 +49,12 @@ function O(e, t) {
   }), e
 }
 
-function f() {
+function O() {
   let {
     layoutDebuggingEnabled: e,
     isStaff: t,
     isDeveloper: n,
-    isLoggingGatewayEvents: f,
+    isLoggingGatewayEvents: O,
     isLoggingOverlayEvents: v,
     isLoggingAnalyticsEvents: E,
     isAnalyticsDebuggerEnabled: S,
@@ -92,8 +92,8 @@ function f() {
     maxVerticalSpacing: T
   } = (0, Chunk482215.i)(), {
     setHorizontalSpacing: m,
-    setVerticalSpacing: k
-  } = Chunk482215.i.getState(), C = Chunk695346.zY.useSetting(), R = [];
+    setVerticalSpacing: C
+  } = Chunk482215.i.getState(), k = Chunk695346.zY.useSetting(), R = [];
   return exports && require && (R.push((0, Chunk951288.jsx)(Chunk481060.sNh, {
     id: "overrides",
     label: "Overrides",
@@ -133,9 +133,9 @@ function f() {
     }, "forced-canary"), (0, Chunk951288.jsx)(Chunk481060.S89, {
       id: "always-deliver",
       label: "Ads auto-targeting",
-      checked: C,
+      checked: k,
       action: () => {
-        Chunk695346.zY.updateSetting(!C)
+        Chunk695346.zY.updateSetting(!k)
       }
     }, "always-deliver"), (0, Chunk951288.jsx)(Chunk481060.S89, {
       id: "source-maps",
@@ -201,10 +201,10 @@ function f() {
     children: [(0, Chunk951288.jsx)(Chunk481060.S89, {
       id: "gateway-events",
       label: "Gateway Events",
-      checked: f,
+      checked: O,
       action: () => {
         (0, Chunk179658.y)({
-          logGatewayEvents: !f
+          logGatewayEvents: !O
         })
       }
     }, "gateway-events"), (0, Chunk951288.jsx)(Chunk481060.S89, {
@@ -254,7 +254,7 @@ function f() {
   }, "design-tools")), module && (R.push((0, Chunk951288.jsx)(Chunk481060.II_, {
     id: "horizontal-spacing",
     label: "Horizontal Spacing",
-    control: (e, t) => (0, a.jsx)(r._wy, O(y({}, e), {
+    control: (e, t) => (0, a.jsx)(r._wy, f(y({}, e), {
       ref: t,
       value: _,
       minValue: 0,
@@ -266,12 +266,12 @@ function f() {
   }, "horizontal-spacing")), R.push((0, Chunk951288.jsx)(Chunk481060.II_, {
     id: "vertical-spacing",
     label: "Vertical Spacing",
-    control: (e, t) => (0, a.jsx)(r._wy, O(y({}, e), {
+    control: (e, t) => (0, a.jsx)(r._wy, f(y({}, e), {
       ref: t,
       value: I,
       minValue: 0,
       maxValue: T,
-      onChange: e => k(e),
+      onChange: e => C(e),
       "aria-label": "Horizontal Spacing",
       renderValue: e => "".concat(Math.round(e), "px")
     }))
