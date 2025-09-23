@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  o = require.n(Chunk512722),
   Chunk704215 = require("./704215.js"),
   Chunk605236 = require("./605236.js"),
   Chunk347896 = require("./347896.js"),
@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
 function v(e) {
   let t, {
       handleClose: n,
-      planGroup: o,
+      planGroup: a,
       onSubscriptionConfirmation: v,
       renderPurchaseConfirmation: S,
       postSuccessGuild: O,
@@ -59,7 +59,7 @@ function v(e) {
     {
       confirmationFooter: K,
       maybeOpenMarketingMomentRewardsModal: W
-    } = (0, x.zb)(),
+    } = (0, m.zb)(),
     V = null != K,
     q = (0, d.id)(M, F, Y),
     J = (0, C.Z)(),
@@ -67,7 +67,7 @@ function v(e) {
     Q = (0, d.tK)(null == z ? true : z.skuId),
     $ = (0, b.$)(w, k),
     ee = F && null != z && X;
-  a()(null != M, "Expected plan to selected"), a()(null != T, "Expected selectedSkuId"), a()(null != A, "Step should be set");
+  o()(null != M, "Expected plan to selected"), o()(null != T, "Expected selectedSkuId"), o()(null != A, "Step should be set");
   let et = i.useCallback(() => {
     n(), null == v || v()
   }, [n, v]);
@@ -101,12 +101,12 @@ function v(e) {
     startingPremiumSubscriptionPlanId: N.current,
     planId: M.id,
     onClose: et,
-    isDowngrade: null != I && (0, _.GY)(I, M.id, o),
+    isDowngrade: null != I && (0, _.GY)(I, M.id, a),
     paymentSourceType: $,
     hideClose: V,
     startingFractionalPremiumEndsAt: R.current
   }), (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)(m.C3, {
+    children: [(0, r.jsxs)(x.C3, {
       children: [(0, r.jsx)(g.Z, {}), t]
     }), null != K && K, ee && null != Q && (0, r.jsx)(j.Z, {
       onClose: et,

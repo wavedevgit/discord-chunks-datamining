@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk226690 = require("./226690.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk347896 = require("./347896.js"),
@@ -16,12 +16,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk577806 = require("./577806.js");
 
 function _(e) {
-  var t, n, o, _;
+  var t, n, a, _;
   let {
     defaultCategory: f,
     onCategoryChange: h,
-    className: x
-  } = e, [m, j] = i.useState(f), [b, g] = i.useState(null), L = (0, C.Z)(), y = i.useMemo(() => [{
+    className: m
+  } = e, [x, j] = i.useState(f), [b, g] = i.useState(null), L = (0, C.Z)(), y = i.useMemo(() => [{
     name: u.intl.string(u.t["6Zuiv7"]),
     value: d.KN.Trick,
     key: "Trick",
@@ -43,15 +43,15 @@ function _(e) {
     onMouseLeave: () => g(null)
   }], []), v = i.useCallback(e => {
     j(e.value), h(e.value)
-  }, [h]), S = null == L || null == (n = L.segmentedControlAnimations) || null == (t = n.trick) ? true : t.getAnimationData, O = null == L || null == (_ = L.segmentedControlAnimations) || null == (o = _.treat) ? true : o.getAnimationData;
+  }, [h]), S = null == L || null == (n = L.segmentedControlAnimations) || null == (t = n.trick) ? true : t.getAnimationData, O = null == L || null == (_ = L.segmentedControlAnimations) || null == (a = _.treat) ? true : a.getAnimationData;
   return (0, r.jsxs)("div", {
-    className: a()(p.container, x),
+    className: o()(p.container, m),
     children: [(0, r.jsx)(c.w, {
       options: y,
-      value: m,
+      value: x,
       onChange: v
     }), b === d.KN.Trick && null != S && (0, r.jsx)("div", {
-      className: a()(p.animationOverlay, p.trickAnimation),
+      className: o()(p.animationOverlay, p.trickAnimation),
       children: (0, r.jsx)(l.F, {
         shouldAnimate: true,
         loop: true,
@@ -62,7 +62,7 @@ function _(e) {
         versionKey: +(b === d.KN.Trick)
       })
     }), b === d.KN.Treat && null != O && (0, r.jsx)("div", {
-      className: a()(p.animationOverlay, p.treatAnimation),
+      className: o()(p.animationOverlay, p.treatAnimation),
       children: (0, r.jsx)(l.F, {
         shouldAnimate: true,
         loop: true,

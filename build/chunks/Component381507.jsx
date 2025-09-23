@@ -28,8 +28,8 @@ let f = () => {
     }),
     f = (0, Chunk410030.Fg)(),
     h = (0, Chunk780384.ap)(f),
-    x = Chunk51144.ZP.getName(module),
-    m = h ? Chunk898969.Z : Chunk703614.Z;
+    m = Chunk51144.ZP.getName(module),
+    x = h ? Chunk898969.Z : Chunk703614.Z;
   return null == module ? null : (0, Chunk951288.jsxs)("div", {
     className: Chunk584683.attributionBannerContainer,
     children: [(0, Chunk951288.jsx)("div", {
@@ -60,9 +60,9 @@ let f = () => {
       variant: "text-xs/bold",
       className: Chunk584683.bannerHeader,
       children: Chunk388032.intl.format(Chunk388032.t.oxhCOj, {
-        userName: x
+        userName: m
       })
-    }), (0, Chunk951288.jsx)(m, {
+    }), (0, Chunk951288.jsx)(x, {
       className: Chunk584683.bannerIcon
     })]
   })

@@ -316,6 +316,7 @@ class tt extends Chunk647438.Component {
     return (0, Chunk951288.jsxs)("div", {
       ref: this.modalRef,
       children: [(0, Chunk951288.jsxs)(Chunk481060.Y0X, {
+        "data-migration-pending": true,
         transitionState: Chunk442837,
         size: Chunk481060.CgR.SMALL,
         className: Chunk114644.modal,
@@ -329,9 +330,11 @@ class tt extends Chunk647438.Component {
         }), !Chunk812206 && (0, Chunk951288.jsx)("div", {
           className: Chunk114644.backSplash
         }), !Chunk884697 && (0, Chunk951288.jsx)(Chunk481060.olH, {
+          "data-migration-pending": true,
           onClick: Chunk647438,
           className: Chunk114644.closeButton
         }), (0, Chunk951288.jsxs)(Chunk481060.hzk, {
+          "data-migration-pending": true,
           className: s()({
             [Chunk114644.content]: !Chunk812206,
             [Chunk114644.contentCustomGift]: Chunk812206

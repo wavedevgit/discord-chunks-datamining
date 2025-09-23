@@ -21,13 +21,13 @@ function d(e) {
     enablePremiumBrandRefresh: c
   } = e, {
     isEligible: u
-  } = (0, o.Q1)();
+  } = (0, a.Q1)();
   return c ? (0, r.jsx)(i.P3F, {
     onClick: t,
     style: {
       cursor: "pointer"
     },
-    children: (0, r.jsx)(a.IL, {
+    children: (0, r.jsx)(o.IL, {
       ctaButton: null,
       showPromotionalGiftBanner: d,
       showSeptemberMarketingMomentBanner: u,
@@ -58,7 +58,7 @@ function c(e) {
   let {
     onClick: t,
     isGift: n,
-    priceOptions: o,
+    priceOptions: a,
     enablePremiumBrandRefresh: s
   } = e;
   return s ? (0, r.jsx)(i.P3F, {
@@ -66,12 +66,12 @@ function c(e) {
     style: {
       cursor: "pointer"
     },
-    children: (0, r.jsx)(a.UQ, {
+    children: (0, r.jsx)(o.UQ, {
       className: C.premiumBrandRefreshTier0Card,
       ctaButton: null,
       showYearlyPrice: true,
       isGift: n,
-      priceOptions: o
+      priceOptions: a
     })
   }) : (0, r.jsx)(i.P3F, {
     onClick: t,
@@ -84,7 +84,7 @@ function c(e) {
       showWumpus: true,
       showYearlyPrice: true,
       isGift: n,
-      priceOptions: o
+      priceOptions: a
     })
   })
 }
@@ -93,21 +93,21 @@ let u = function(e) {
     onSelectSku: t,
     isGift: n,
     priceOptions: i,
-    showPromotionalGiftBanner: o,
-    enablePremiumBrandRefresh: a
+    showPromotionalGiftBanner: a,
+    enablePremiumBrandRefresh: o
   } = e;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(d, {
       onClick: () => t(s.Si.TIER_2),
       isGift: n,
       priceOptions: i,
-      showPromotionalGiftBanner: o,
-      enablePremiumBrandRefresh: a
+      showPromotionalGiftBanner: a,
+      enablePremiumBrandRefresh: o
     }), (0, r.jsx)(c, {
       onClick: () => t(s.Si.TIER_0),
       isGift: n,
       priceOptions: i,
-      enablePremiumBrandRefresh: a
+      enablePremiumBrandRefresh: o
     })]
   })
 }

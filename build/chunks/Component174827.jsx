@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  o = require.n(Chunk512722),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
   Chunk975608 = require("./975608.js"),
@@ -44,7 +44,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk649662 = require("./649662.js");
 
 function G(e) {
-  var t, n, o, G;
+  var t, n, a, G;
   let {
     handleStepChange: D,
     initialPlanId: Y,
@@ -63,8 +63,8 @@ function G(e) {
     step: en,
     defaultPlanId: er,
     priceOptions: ei,
-    isPremium: eo,
-    premiumBrandRefreshBackgroundClassName: ea,
+    isPremium: ea,
+    premiumBrandRefreshBackgroundClassName: eo,
     shouldShowSeptemberMarketingMomentBanner: el
   } = (0, P.JL)(), {
     isGift: es,
@@ -74,18 +74,18 @@ function G(e) {
   } = (0, E.wD)(), {
     paymentModalBanner: eu
   } = (0, w.zb)(), ep = (0, _.a5)(et), e_ = (null == (t = (0, p.Z)()) ? true : t.planSelectionBanner) != null, ef = es && ep && null != ec && ec.length > 0 && e_, eh = (0, A.m)($, Q), {
-    newPlans: ex
+    newPlans: em
   } = c.ZP.useExperiment({
     location: "d17fd6_3"
   }, {
     autoTrackExposure: false
-  }), em = (0, l.e7)([L.default], () => L.default.getCurrentUser()), ej = !es && null != ee && ee === B.Si.TIER_2 && null != em && em.hasHadPremium() && X && null == J && (0, c.aQ)(eh), eb = (0, x.N)(V), eg = !es && null != eb && null != ee && B.nG[eb.trial_id].skus.includes(ee), eL = (0, h.Ng)(), ey = null == eL || null == (n = eL.discount) ? true : n.plan_ids.some(e => B.GP[e].skuId === ee), ev = !es && null != eL && null != ee && ey, eS = null != (o = eg || ev) && o, eO = i.useMemo(() => (0, O.V7)({
+  }), ex = (0, l.e7)([L.default], () => L.default.getCurrentUser()), ej = !es && null != ee && ee === B.Si.TIER_2 && null != ex && ex.hasHadPremium() && X && null == J && (0, c.aQ)(eh), eb = (0, m.N)(V), eg = !es && null != eb && null != ee && B.nG[eb.trial_id].skus.includes(ee), eL = (0, h.Ng)(), ey = null == eL || null == (n = eL.discount) ? true : n.plan_ids.some(e => B.GP[e].skuId === ee), ev = !es && null != eL && null != ee && ey, eS = null != (a = eg || ev) && a, eO = i.useMemo(() => (0, O.V7)({
     skuId: ee,
-    isPremium: eo,
-    multiMonthPlans: ej ? ex : [],
+    isPremium: ea,
+    multiMonthPlans: ej ? em : [],
     currentSubscription: J,
     defaultPlanId: er
-  }), [ee, eo, ex, J, ej, er]), eE = ev && eO.includes(B.Xh.PREMIUM_MONTH_TIER_2) ? B.Xh.PREMIUM_MONTH_TIER_2 : eO[0], eP = (0, l.e7)([y.Z], () => y.Z.get(eE)), eI = [{
+  }), [ee, ea, em, J, ej, er]), eE = ev && eO.includes(B.Xh.PREMIUM_MONTH_TIER_2) ? B.Xh.PREMIUM_MONTH_TIER_2 : eO[0], eP = (0, l.e7)([y.Z], () => y.Z.get(eE)), eI = [{
     planId: null == eP ? true : eP.id,
     quantity: 1
   }], [ew, ek] = i.useState(eS), [eM, eT] = (0, u.ED)({
@@ -114,7 +114,7 @@ function G(e) {
     eR = eZ && null == J && !!eS && (null == eM ? true : eM.subscriptionPeriodEnd) == null,
     eF = !es && (null == eP ? true : eP.skuId) === B.Si.TIER_2 && (null == eb ? true : eb.referrer_id) != null,
     eB = null;
-  return (eB = null != eu ? eu : eF ? (0, r.jsx)(j.Z, {}) : (0, r.jsx)(m.Z, {}), eR) ? (0, r.jsx)(M.Z, {}) : (a()(null != en, "Step should be set"), a()(eO.length > 0, "Premium plan options should be set"), (0, r.jsxs)(r.Fragment, {
+  return (eB = null != eu ? eu : eF ? (0, r.jsx)(j.Z, {}) : (0, r.jsx)(x.Z, {}), eR) ? (0, r.jsx)(M.Z, {}) : (o()(null != en, "Step should be set"), o()(eO.length > 0, "Premium plan options should be set"), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(Z.P, {
       giftMessage: ed
     }), !(es && (0, v.pO)(eC)) && (0, r.jsx)(k.Z, {
@@ -149,7 +149,7 @@ function G(e) {
         "data-migration-pending": true,
         justify: d.Z.Justify.BETWEEN,
         align: d.Z.Align.CENTER,
-        className: ea,
+        className: eo,
         children: (0, r.jsx)(b.y, {
           onStepChange: D,
           onBackClick: () => D(I.h8.SKU_SELECT),

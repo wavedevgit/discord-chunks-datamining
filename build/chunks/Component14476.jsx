@@ -1,12 +1,12 @@
 /** Chunk was on 37786 **/
 /** chunk id: 14476, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  c: () => x
+  c: () => m
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk979554 = require("./979554.js"),
   Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
@@ -17,18 +17,18 @@ var Chunk951288 = require("./951288.js"),
   Chunk466679 = require("./466679.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk281377 = require("./281377.js");
-let x = e => {
+let m = e => {
   let {
     skuId: t,
     assetId: n,
-    user: o,
-    claimed: x,
-    onSelect: m,
+    user: a,
+    claimed: m,
+    onSelect: x,
     productName: j,
     a11yLabel: b,
     selectedSkuId: g,
     category: L
-  } = e, y = i.useRef(null), v = (0, d.Z)(y), S = (0, _.m)(y), O = !x && (v || S), E = (0, c.ZP)(), P = (0, s.wj)(E), I = {
+  } = e, y = i.useRef(null), v = (0, d.Z)(y), S = (0, _.m)(y), O = !m && (v || S), E = (0, c.ZP)(), P = (0, s.wj)(E), I = {
     type: l.Z.AVATAR_DECORATION,
     label: b,
     asset: n
@@ -38,27 +38,27 @@ let x = e => {
       ref: y,
       "aria-label": null != j ? j : "",
       onClick: () => {
-        null == t || null == m || x || m(t)
+        null == t || null == x || m || x(t)
       },
-      className: a()(P ? h.shopCardDark : h.shopCard, {
-        [h.shopCardAnimation]: !x,
+      className: o()(P ? h.shopCardDark : h.shopCard, {
+        [h.shopCardAnimation]: !m,
         [P ? h.shopCardDarkHighlighted : h.shopCardHighlighted]: O,
         [h.shopCardSelected]: g === t
       }),
       children: [(0, r.jsx)("div", {
-        className: a()(h.preview, {
+        className: o()(h.preview, {
           [h.previewTrick]: L === u.KN.Trick,
           [h.previewTreat]: L === u.KN.Treat,
-          [h.shopCardClaimed]: x
+          [h.shopCardClaimed]: m
         }),
         children: (0, r.jsx)(p.R, {
           item: I,
-          user: o,
+          user: a,
           isHighlighted: O,
           avatarSize: C.EFr.SIZE_120,
-          isPurchased: x
+          isPurchased: m
         })
-      }), x && (0, r.jsx)(C.dz2, {
+      }), m && (0, r.jsx)(C.dz2, {
         size: "custom",
         width: 48,
         height: 48,
@@ -71,7 +71,7 @@ let x = e => {
           children: j
         }), (0, r.jsx)(C.Text, {
           variant: "text-md/normal",
-          children: x ? f.intl.string(f.t["6cfuDg"]) : f.intl.string(f.t.QQsaCQ)
+          children: m ? f.intl.string(f.t["6cfuDg"]) : f.intl.string(f.t.QQsaCQ)
         })]
       })]
     })

@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  o = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk14476 = require("./14476.jsx"),
@@ -27,13 +27,13 @@ var Chunk951288 = require("./951288.js"),
 function y(e) {
   var t, n;
   let {
-    handleStepChange: o,
+    handleStepChange: a,
     handleClose: y
   } = e, {
     selectedPlan: v,
     selectedSkuId: S,
     step: O
-  } = (0, x.JL)(), {
+  } = (0, m.JL)(), {
     setSelectedGiftingPromotionReward: E,
     selectedGiftingPromotionReward: P,
     claimableRewards: I,
@@ -75,7 +75,7 @@ function y(e) {
     !R && null == P && null != e && null != e && U.some(t => t.skuId === e.skuId) && (E(e), N(e.skuId))
   }, [M, R, P, U, E]), i.useEffect(() => {
     (null == M ? true : M.defaultCategory) == null || R || A(M.defaultCategory)
-  }, [null == M ? true : M.defaultCategory, R]), a()(null != v, "Expected plan to selected"), a()(null != S, "Expected selectedSkuId"), a()(null != O, "Step should be set");
+  }, [null == M ? true : M.defaultCategory, R]), o()(null != v, "Expected plan to selected"), o()(null != S, "Expected selectedSkuId"), o()(null != O, "Step should be set");
   let H = i.useMemo(() => null != Z && (null != I ? I : []).some(e => e.skuId === Z), [Z, I]),
     G = i.useMemo(() => null != P && U.some(e => e.skuId === P.skuId), [U, P]),
     D = i.useMemo(() => 0 === U.length || null == Z || !G || !H, [U, Z, H, G]);
@@ -107,15 +107,16 @@ function y(e) {
     }),
     K = (0, r.jsx)(j.O3, {
       children: (0, r.jsx)(s.mzw, {
+        "data-migration-pending": true,
         className: L.modalFooter,
         children: (0, r.jsx)(p.y, {
           onStepChange: e => {
             null != k && null != P && f.default.track(b.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
               user_id: k.id,
               reward_sku_id: P.skuId
-            }), o(e)
+            }), a(e)
           },
-          onBackClick: () => o(m.h8.PLAN_SELECT),
+          onBackClick: () => a(x.h8.PLAN_SELECT),
           shouldRenderUpdatedPaymentModal: true,
           showBackButton: true,
           planOptions: [v.id],
@@ -126,6 +127,7 @@ function y(e) {
     });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(s.xBx, {
+      "data-migration-pending": true,
       className: L.modalHeader,
       direction: d.Z.Direction.VERTICAL,
       align: d.Z.Align.START,
@@ -140,10 +142,12 @@ function y(e) {
         className: L.headerSubtitle,
         children: g.intl.string(g.t.MhwtRU)
       }), (0, r.jsx)(s.olH, {
+        "data-migration-pending": true,
         className: L.closeButton,
         onClick: y
       })]
     }), (0, r.jsx)(s.hzk, {
+      "data-migration-pending": true,
       children: (0, r.jsxs)(s.Kqy, {
         direction: "vertical",
         justify: "center",
