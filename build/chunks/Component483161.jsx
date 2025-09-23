@@ -1,7 +1,7 @@
 /** Chunk was on 47129 **/
 /** chunk id: 483161, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => N
+  Z: () => j
 });
 var Chunk951288 = require("./951288.js"),
   Chunk657707 = require("./657707.js"),
@@ -21,14 +21,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk89449 = require("./89449.js");
-let S = (0, Chunk509613.x1)(Chunk313789.n.PROFILE_PANE, {
+let N = (0, Chunk509613.x1)(Chunk313789.n.PROFILE_PANE, {
     getLayout: () => [],
     render: Chunk564344.Z
   }),
-  N = (0, Chunk509613.wf)(Chunk313789.n.PROFILE_PANEL, {
+  j = (0, Chunk509613.wf)(Chunk313789.n.PROFILE_PANEL, {
     icon: Chunk657707.tBG,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["vi7f+v"]),
-    getLayout: () => [S],
+    getLayout: () => [N],
     notice: {
       stores: [Chunk778825.Z, Chunk25990.Z],
       element: Chunk398140.Z
@@ -44,7 +44,7 @@ let S = (0, Chunk509613.x1)(Chunk313789.n.PROFILE_PANE, {
       let {
         active: n,
         onClick: s
-      } = e, a = (0, l.e7)([y.default], () => y.default.getCurrentUser()), {
+      } = e, a = (0, l.e7)([O.default], () => O.default.getCurrentUser()), {
         avatarSrc: u,
         avatarDecorationSrc: d
       } = (0, g.Z)({

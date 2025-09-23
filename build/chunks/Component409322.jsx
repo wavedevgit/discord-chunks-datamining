@@ -19,8 +19,8 @@ function u(e) {
     {
       layout: f,
       collapseAfter: g,
-      ContextProvider: O,
-      useCollapsibleTitle: y
+      ContextProvider: y,
+      useCollapsibleTitle: O
     } = u,
     E = f.filter(e => {
       var t, n;
@@ -28,8 +28,8 @@ function u(e) {
     }),
     b = null != g ? E.slice(0, g) : E,
     p = null != g ? E.slice(g) : [],
-    v = null != O ? O : i.Fragment,
-    T = null != (t = null == y ? true : y(c, p.length)) ? t : (n = p.length, c ? a.intl.formatToPlainString(a.t["3SHL+f"], {
+    v = null != y ? y : i.Fragment,
+    T = null != (t = null == O ? true : O(c, p.length)) ? t : (n = p.length, c ? a.intl.formatToPlainString(a.t["3SHL+f"], {
       count: n
     }) : a.intl.formatToPlainString(a.t["8JRFyc"], {
       count: n

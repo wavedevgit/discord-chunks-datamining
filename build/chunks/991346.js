@@ -105,13 +105,13 @@ function V(e) {
   }, {
     header: "Developer Only",
     divider: true,
-    settings: r ? [M.s6.EXPERIMENTS, M.s6.DEVELOPER_OPTIONS, M.s6.SHOP_KEEPER, M.s6.QUEST_PREVIEW_TOOL_2, M.s6.TEMP_DEVELOPER_EDUCATION_SIDEBAR_ITEM] : []
+    settings: r ? [M.s6.EXPERIMENTS, M.s6.DEVELOPER_OPTIONS, M.s6.SHOP_KEEPER, M.s6.QUEST_PREVIEW_TOOL_2] : []
   }, {
     divider: true,
     settings: [M.s6.LOGOUT]
   }, {
     divider: true,
-    settings: [M.s6.SOCIAL_LINKS, M.s6.CLIENT_DEBUG_INFO]
+    settings: [M.s6.SOCIAL_LINKS, M.s6.TEMP_DEVELOPER_EDUCATION_SIDEBAR_ITEM, M.s6.CLIENT_DEBUG_INFO]
   }], a = {
     header: U.intl.string(U.t.SmHCFR),
     divider: true,

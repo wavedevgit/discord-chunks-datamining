@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk313789 = require("./313789.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk453934 = require("./453934.js");
-let y = Chunk647438.createContext(true);
+let O = Chunk647438.createContext(true);
 
 function E(e) {
   let {
@@ -23,18 +23,18 @@ function E(e) {
   } = e, {
     handlePreviewSound: n
   } = function() {
-    let e = i.useContext(y);
+    let e = i.useContext(O);
     if (null == e) throw Error("useSoundPlayback must be used within a SoundPlaybackProvider");
     return e
   }();
   return (0, r.jsx)(o.P3F, {
-    className: O.soundIcon,
+    className: y.soundIcon,
     onClick: e => n(t, e),
     "aria-label": g.intl.string(g.t.Kd4uxM),
     children: (0, r.jsx)(o.gj8, {
       size: "xs",
       color: "currentColor",
-      className: O.icon,
+      className: y.icon,
       "aria-hidden": true
     })
   })
@@ -118,7 +118,7 @@ let b = [{
       useTitle: () => {
         let t = e.useLabel();
         return (0, r.jsxs)("div", {
-          className: O.soundRow,
+          className: y.soundRow,
           children: [(0, r.jsx)("span", {
             children: t
           }), (0, r.jsx)(E, {
@@ -176,7 +176,7 @@ let b = [{
       let o = i.useMemo(() => ({
         handlePreviewSound: l
       }), [l]);
-      return (0, r.jsx)(y.Provider, {
+      return (0, r.jsx)(O.Provider, {
         value: o,
         children: t
       })

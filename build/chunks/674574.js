@@ -1,7 +1,7 @@
 /** Chunk was on 47129 **/
 /** chunk id: 674574, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => y
 });
 var Chunk657707 = require("./657707.js"),
   Chunk509613 = require("./509613.js"),
@@ -16,7 +16,7 @@ var Chunk657707 = require("./657707.js"),
 let g = (0, Chunk509613.x1)(Chunk313789.n.NOTIFICATIONS_PANE, {
     getLayout: () => [Chunk802.Z, Chunk348911.Z, Chunk441302.Z, Chunk736608.Z, Chunk61512.Z]
   }),
-  O = (0, Chunk509613.wf)(Chunk313789.n.NOTIFICATIONS_PANEL, {
+  y = (0, Chunk509613.wf)(Chunk313789.n.NOTIFICATIONS_PANEL, {
     icon: Chunk657707.Dkj,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.HcoRu7),
     getLayout: () => [g],

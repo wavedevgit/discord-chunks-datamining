@@ -1,7 +1,7 @@
 /** Chunk was on 47129 **/
 /** chunk id: 245286, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => O
+  default: () => y
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -16,7 +16,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk885684 = require("./885684.js");
 
-function O(e) {
+function y(e) {
   var t, {
       target: n
     } = e,
@@ -40,7 +40,7 @@ function O(e) {
       node: f,
       directory: g
     } = (0, o.Z)(c.Z, d),
-    O = (t = a.n.ACCOUNT_PANEL, null == g.entry(n) ? t : n);
+    y = (t = a.n.ACCOUNT_PANEL, null == g.entry(n) ? t : n);
   return (0, r.jsx)(l.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -61,13 +61,13 @@ function O(e) {
   }({
     root: f,
     directory: g,
-    sidebarHeader: y,
+    sidebarHeader: O,
     sidebarFooter: u.Z,
-    target: O
+    target: y
   }, i))
 }
 
-function y() {
+function O() {
   let e = (0, Chunk996733.Z7)(),
     t = Chunk839469.R.useField("hasSearchResults"),
     n = Chunk839469.R.useField("searchResults");

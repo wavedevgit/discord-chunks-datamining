@@ -6,7 +6,6 @@ module.exports = {
   rewardTileAsset: "rewardTileAsset__42a46",
   copyContainer: "copyContainer__42a46",
   heading: "heading__42a46",
-  text: "text__42a46",
   codeInputContainer: "codeInputContainer__42a46",
   claimInstructionsCodeInputTitle: "claimInstructionsCodeInputTitle__42a46",
   claimInstructionsText: "claimInstructionsText__42a46"

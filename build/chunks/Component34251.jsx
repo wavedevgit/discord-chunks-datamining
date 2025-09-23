@@ -1,5 +1,5 @@
 /** Chunk was on 76418 **/
-/** chunk id: 34251, original params: e,a,n (module,exports,require) **/
+/** chunk id: 34251, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => i
 });
@@ -9,14 +9,16 @@ var Chunk515108 = require("./515108.jsx");
 
 function i(e) {
   let {
-    quest: a,
-    onClose: n,
-    transitionState: i
-  } = e;
-  return (0, t.jsx)(s.Z, {
+    quest: t,
     onClose: n,
     transitionState: i,
-    quest: a,
-    rewardContent: (0, t.jsx)("div", {})
+    sourceQuestContent: s
+  } = e;
+  return (0, a.jsx)(r.Z, {
+    onClose: n,
+    transitionState: i,
+    quest: t,
+    rewardContent: (0, a.jsx)("div", {}),
+    sourceQuestContent: s
   })
 }

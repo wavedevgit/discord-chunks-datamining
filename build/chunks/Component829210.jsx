@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk503631 = require("./503631.js");
 
-function O(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,7 +34,7 @@ function O(e) {
   return e
 }
 
-function y(e, t) {
+function O(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -83,13 +83,13 @@ function v(e) {
   if (null == t) return null;
   switch (t.type) {
     case c.PU.BADGE_COUNT:
-      return (0, r.jsx)(E, O({}, t));
+      return (0, r.jsx)(E, y({}, t));
     case c.PU.BADGE_NEW:
-      return (0, r.jsx)(b, y(O({}, t), {
+      return (0, r.jsx)(b, O(y({}, t), {
         visibleContent: n
       }));
     case c.PU.STRONGLY_DISCOURAGED_CUSTOM:
-      return (0, r.jsx)(p, y(O({}, t), {
+      return (0, r.jsx)(p, O(y({}, t), {
         visibleContent: n
       }))
   }
@@ -107,42 +107,42 @@ function T(e) {
     useTitle: a,
     trailing: c,
     stronglyDiscouragedCustomTab: f
-  } = t, g = a(), O = i.useMemo(() => t.layout.flatMap(e => e.layout), [t]), y = (null == l ? true : l.key) === t.key, E = () => {
+  } = t, g = a(), y = i.useMemo(() => t.layout.flatMap(e => e.layout), [t]), O = (null == l ? true : l.key) === t.key, E = () => {
     o(t.key), s(false)
   };
   return null != f ? (0, r.jsx)(f, {
-    active: y,
+    active: O,
     onClick: E
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(d.Z, {
       icon: t.icon,
       title: g,
-      active: y,
+      active: O,
       trailing: (0, r.jsx)(v, {
         trailing: c,
         visibleContent: n
       }),
       onClick: E
-    }), y && O.length > 1 && (0, r.jsx)(S, {
-      categories: O
+    }), O && y.length > 1 && (0, r.jsx)(N, {
+      categories: y
     })]
   })
 }
 
-function S(e) {
+function N(e) {
   let {
     categories: t
   } = e, [n, l] = i.useState(0), {
     setShowNavigationMobile: c,
     navigateTo: d
-  } = (0, u.t)(), [f, O] = (0, a.q_F)(() => ({
+  } = (0, u.t)(), [f, y] = (0, a.q_F)(() => ({
     y: 0,
     config: {
       mass: .1,
       friction: 20,
       tension: 300
     }
-  })), y = i.useMemo(() => t.map(e => {
+  })), O = i.useMemo(() => t.map(e => {
     var t;
     return {
       title: null == (t = e.useTitle) ? true : t.call(e),
@@ -163,14 +163,14 @@ function S(e) {
         style: f
       })
     }), (0, r.jsx)("ul", {
-      children: y.map((e, t) => {
+      children: O.map((e, t) => {
         let {
           title: i,
           key: s
         } = e;
         return (0, r.jsx)(a.P3F, {
           onClick: () => {
-            l(t), O({
+            l(t), y({
               y: 36 * t
             }), c(false), d(s)
           },

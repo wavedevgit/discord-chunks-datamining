@@ -1,8 +1,8 @@
 /** Chunk was on 73268 **/
 /** chunk id: 804127, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  G: () => l,
-  u: () => c
+  G: () => c,
+  u: () => l
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk782568 = require("./782568.js"),
@@ -10,87 +10,87 @@ var Chunk647438 = require("./647438.js"),
   Chunk617136 = require("./617136.js"),
   Chunk272008 = require("./272008.js");
 
-function c(e) {
+function l(e) {
   let {
     isClaimingReward: t,
     isFetchingRewardCode: n,
     questContent: a,
     quest: i,
     requiresPlatformSelection: o,
-    rewardCode: c,
-    selectedPlatformType: l,
+    rewardCode: l,
+    selectedPlatformType: c,
     preview: d
-  } = e, [u, f] = r.useState(false), [p, m] = r.useState(false), h = r.useCallback(async (e, t, n) => {
+  } = e, [u, p] = r.useState(false), [f, m] = r.useState(false), C = r.useCallback(async (e, t, n) => {
     try {
-      m(true), await (0, s.QB)(e, t, n), f(false), m(false)
+      m(true), await (0, s.QB)(e, t, n), p(false), m(false)
     } catch (e) {
-      f(true), m(false)
+      p(true), m(false)
     }
-  }, []), C = r.useCallback(e => {
+  }, []), h = r.useCallback(e => {
     try {
       (0, s.pf)(e)
     } catch (e) {
-      f(true)
+      p(true)
     }
   }, []);
   return r.useEffect(() => {
     var e, r;
-    true === d || null != c || u || t || p || n || o || (f(false), (null == (e = i.userStatus) ? true : e.claimedAt) == null && null != l ? h(i.id, l, a) : (null == (r = i.userStatus) ? true : r.claimedAt) != null && C(i.id))
-  }, [h, C, u, t, p, n, a, i, o, c, l, d]), {
-    claimCode: h,
-    fetchCode: C,
+    true === d || null != l || u || t || f || n || o || (p(false), (null == (e = i.userStatus) ? true : e.claimedAt) == null && null != c ? C(i.id, c, a) : (null == (r = i.userStatus) ? true : r.claimedAt) != null && h(i.id))
+  }, [C, h, u, t, f, n, a, i, o, l, c, d]), {
+    claimCode: C,
+    fetchCode: h,
     hasError: u,
-    setHasError: f
+    setHasError: p
   }
 }
 
-function l(e) {
+function c(e) {
   var t;
   let {
     claimCode: n,
     fetchCode: s,
-    hasError: c,
-    onDismiss: l,
+    hasError: l,
+    onDismiss: c,
     quest: d,
     questContent: u,
-    questContentCTA: f = o.jZ.GET_REWARD_CODE,
-    questContentPosition: p,
+    questContentCTA: p = o.jZ.GET_REWARD_CODE,
+    questContentPosition: f,
     requiresPlatformSelection: m,
-    selectedPlatformType: h,
-    redemptionLink: C,
-    sourceQuestContent: v
-  } = e, _ = (0, o.O5)();
+    selectedPlatformType: C,
+    redemptionLink: h,
+    sourceQuestContent: _
+  } = e, g = (0, o.O5)();
   return r.useCallback(() => {
     var e;
-    m && null != h ? (n(d.id, h, u), _({
+    m && null != C ? (n(d.id, C, u), g({
       questId: d.id,
       questContent: u,
-      questContentCTA: f,
-      questContentPosition: p,
-      sourceQuestContent: v
-    })) : c ? (null == (e = d.userStatus) ? true : e.claimedAt) != null ? s(d.id) : null != h && (n(d.id, h, u), _({
+      questContentCTA: p,
+      questContentPosition: f,
+      sourceQuestContent: _
+    })) : l ? (null == (e = d.userStatus) ? true : e.claimedAt) != null ? s(d.id) : null != C && (n(d.id, C, u), g({
       questId: d.id,
       questContent: u,
-      questContentCTA: f,
-      questContentPosition: p,
-      sourceQuestContent: v
-    })) : (null != C && (_({
+      questContentCTA: p,
+      questContentPosition: f,
+      sourceQuestContent: _
+    })) : (null != h && (g({
       questId: d.id,
       questContent: u,
       questContentCTA: o.jZ.REDEEM_REWARD,
-      questContentPosition: p,
-      sourceQuestContent: v
+      questContentPosition: f,
+      sourceQuestContent: _
     }), (0, i.q)({
-      href: C,
+      href: h,
       onConfirm: () => {
-        _({
+        g({
           questId: d.id,
           questContent: u,
           questContentCTA: o.jZ.VISIT_REDEMPTION_LINK,
-          questContentPosition: p,
-          sourceQuestContent: v
-        }), (0, a.Z)(C)
+          questContentPosition: f,
+          sourceQuestContent: _
+        }), (0, a.Z)(h)
       }
-    })), l())
-  }, [n, s, c, l, d.id, null == (t = d.userStatus) ? true : t.claimedAt, u, f, p, m, h, _, C, v])
+    })), c())
+  }, [n, s, l, c, d.id, null == (t = d.userStatus) ? true : t.claimedAt, u, p, f, m, C, g, h, _])
 }

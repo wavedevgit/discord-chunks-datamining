@@ -3,7 +3,7 @@
 require.d(exports, {
   Z: () => f
 });
-var Chunk657707 = require("./657707.js"),
+var Chunk73837 = require("./73837.jsx"),
   Chunk509613 = require("./509613.js"),
   Chunk28682 = require("./28682.js"),
   Chunk313789 = require("./313789.js"),
@@ -16,7 +16,7 @@ let d = (0, Chunk509613.x1)(Chunk313789.n.NITRO_PANE, {
     render: Chunk748717.Z
   }),
   f = (0, Chunk509613.wf)(Chunk313789.n.NITRO_PANEL, {
-    icon: Chunk657707.SrA,
+    icon: Chunk73837.Sr,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.Ipxkoq),
     getLayout: () => [d],
     trailing: {

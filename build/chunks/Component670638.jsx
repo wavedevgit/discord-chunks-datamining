@@ -94,7 +94,7 @@ function L(e) {
     N = [y.jn.QUEST_BAR_V2, y.jn.QUEST_BAR].includes(e.questContent),
     R = (0, p.O5)(),
     P = (0, h.aM)(),
-    w = (0, E.Yj)(e.quest),
+    w = (0, E.ly)(e.quest),
     D = true === e.showShareLink && (0, m.vB)(e.quest.config),
     {
       handleComplete: x,

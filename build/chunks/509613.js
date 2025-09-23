@@ -1,7 +1,7 @@
 /** Chunk was on 47129 **/
 /** chunk id: 509613, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  $l: () => O,
+  $l: () => y,
   CB: () => g,
   Em: () => p,
   J9: () => v,
@@ -114,11 +114,11 @@ function g(e, t) {
   return o(e, r.Jq.ACCORDION, t)
 }
 
-function O(e, t) {
+function y(e, t) {
   return o(e, r.Jq.LIST, t)
 }
 
-function y(e, t, n) {
+function O(e, t, n) {
   return l(i({}, n), {
     key: e,
     type: t
@@ -126,21 +126,21 @@ function y(e, t, n) {
 }
 
 function E(e, t) {
-  return y(e, r.Jq.BUTTON, t)
+  return O(e, r.Jq.BUTTON, t)
 }
 
 function b(e, t) {
-  return y(e, r.Jq.TOGGLE, t)
+  return O(e, r.Jq.TOGGLE, t)
 }
 
 function p(e, t) {
-  return y(e, r.Jq.SELECT, t)
+  return O(e, r.Jq.SELECT, t)
 }
 
 function v(e, t) {
-  return y(e, r.Jq.RADIO, t)
+  return O(e, r.Jq.RADIO, t)
 }
 
 function T(e, t) {
-  return y(e, r.Jq.CUSTOM, t)
+  return O(e, r.Jq.CUSTOM, t)
 }

@@ -1,7 +1,7 @@
 /** Chunk was on 47129 **/
 /** chunk id: 914578, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => v
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -10,13 +10,16 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk782568 = require("./782568.js"),
   Chunk163379 = require("./163379.jsx"),
+  Chunk31336 = require("./31336.js"),
+  Chunk906467 = require("./906467.js"),
   Chunk63063 = require("./63063.js"),
   Chunk604227 = require("./604227.jsx"),
+  Chunk924983 = require("./924983.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk530785 = require("./530785.js");
 
-function y(e) {
+function p(e) {
   let {
     onClose: t
   } = e;
@@ -28,25 +31,32 @@ function y(e) {
     children: (0, r.jsxs)(s.kSQ, {
       children: [(0, r.jsx)(s.sNh, {
         id: "changelog",
-        label: g.intl.string(g.t.LRmNAg),
+        label: E.intl.string(E.t.LRmNAg),
         action: () => (0, u.Z)(true)
       }), (0, r.jsx)(s.sNh, {
         id: "acknowledgements",
-        label: g.intl.string(g.t["0nUKy8"]),
-        action: () => (0, a.Z)(f.EYA.ACKNOWLEDGEMENTS)
+        label: E.intl.string(E.t["0nUKy8"]),
+        action: () => (0, a.Z)(O.EYA.ACKNOWLEDGEMENTS)
       }), (0, r.jsx)(s.sNh, {
         id: "support",
-        label: g.intl.string(g.t["Yl/Rio"]),
-        action: () => (0, a.Z)(c.w)
+        label: E.intl.string(E.t["Yl/Rio"]),
+        action: () => (0, a.Z)(f.w)
       })]
     })
   })
 }
 
-function E() {
-  let e = Chunk647438.useRef(null);
+function v() {
+  let e = Chunk647438.useRef(null),
+    t = Chunk906467.Z.isDeveloper;
   return (0, Chunk951288.jsxs)("div", {
-    children: [(0, Chunk951288.jsx)(Chunk604227.Z, {
+    children: [exports && (0, Chunk951288.jsx)(Chunk481060.P3F, {
+      className: Chunk530785.devToolsEducation,
+      onClick: () => (0, Chunk31336.d8)(),
+      children: (0, Chunk951288.jsx)(Chunk924983.$, {
+        legacy: false
+      })
+    }), (0, Chunk951288.jsx)(Chunk604227.Z, {
       compact: true
     }), (0, Chunk951288.jsxs)("div", {
       className: Chunk530785.links,
@@ -84,7 +94,7 @@ function E() {
           let {
             closePopout: t
           } = e;
-          return (0, r.jsx)(y, {
+          return (0, r.jsx)(p, {
             onClose: t
           })
         },
@@ -110,14 +120,14 @@ function E() {
           }({}, t), l = l = {
             ref: e,
             useDefaultUnderlineStyles: false,
-            className: o()(O.moreButton, {
-              [O.active]: n.isShown
+            className: o()(b.moreButton, {
+              [b.active]: n.isShown
             }),
             children: (0, r.jsx)(s.Text, {
               tag: "span",
               variant: "text-xxs/normal",
               color: "currentColor",
-              children: g.intl.string(g.t.UKOtz8)
+              children: E.intl.string(E.t.UKOtz8)
             })
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
             var n = Object.keys(e);

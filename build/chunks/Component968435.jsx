@@ -1,29 +1,29 @@
-/** Chunk was on 70154 **/
-/** chunk id: 968435, original params: e,n,t (module,exports,require) **/
+/** Chunk was on 76418 **/
+/** chunk id: 968435, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => i
+  Z: () => s
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk70097 = require("./70097.jsx"),
   Chunk475595 = require("./475595.js");
-let i = function(e) {
+let s = function(e) {
   let {
-    quest: n,
-    dimensions: t,
-    className: i
-  } = e, l = (0, r.fh)(n, r.eC.HERO_IMAGE), s = null != t ? (0, r.nK)(t.width, t.height) : true, d = (0, r.f0)(l.url, s);
-  return null != d ? (0, a.jsx)("img", {
-    src: d,
-    alt: n.config.messages.questName,
-    className: i
-  }) : l.isAnimated ? (0, a.jsx)(o.Z, {
-    className: i,
+    quest: t,
+    dimensions: n,
+    className: s
+  } = e, o = (0, i.fh)(t, i.eC.HERO_IMAGE), l = null != n ? (0, i.nK)(n.width, n.height) : true, c = (0, i.f0)(o.url, l);
+  return null != c ? (0, a.jsx)("img", {
+    src: c,
+    alt: t.config.messages.questName,
+    className: s
+  }) : o.isAnimated ? (0, a.jsx)(r.Z, {
+    className: s,
     autoPlay: false,
     loop: false,
     muted: true,
     playsInline: true,
     controls: false,
-    src: l.url
+    src: o.url
   }) : null
 }

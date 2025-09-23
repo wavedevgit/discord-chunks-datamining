@@ -47,34 +47,34 @@ function f(e) {
   var t, n, f;
   let {
     root: g,
-    directory: O,
-    target: y,
+    directory: y,
+    target: O,
     onClose: E,
     sidebarHeader: b,
     sidebarFooter: p
-  } = e, [v, T] = i.useState(true), [S, N] = i.useState(null == (t = O.entry(y)) ? true : t.parentPanel), [j, m] = i.useState(() => O.typedGet(S)), C = i.useCallback(() => P(true), []), [_, P] = i.useState({
-    target: y,
-    targetAccordion: null == (n = O.entry(y)) ? true : n.parentAccordion,
+  } = e, [v, T] = i.useState(true), [N, j] = i.useState(null == (t = y.entry(O)) ? true : t.parentPanel), [S, m] = i.useState(() => y.typedGet(N)), C = i.useCallback(() => P(true), []), [_, P] = i.useState({
+    target: O,
+    targetAccordion: null == (n = y.entry(O)) ? true : n.parentAccordion,
     animateScroll: false,
     complete: C
   }), {
-    navigateWithValidation: I
-  } = (0, s.Cu)(), x = i.useMemo(() => ({
-    currentPanel: O.typedGet(S),
+    navigateWithValidation: x
+  } = (0, s.Cu)(), I = i.useMemo(() => ({
+    currentPanel: y.typedGet(N),
     navigateTo: e => {
-      let t = O.entry(e);
+      let t = y.entry(e);
       if ((null == t ? true : t.parentPanel) == null) return;
       let n = {
         target: e,
         targetAccordion: t.parentAccordion,
         complete: C
       };
-      if (t.parentPanel.key !== (null == S ? true : S.key)) {
+      if (t.parentPanel.key !== (null == N ? true : N.key)) {
         let e = t.parentPanel;
-        I(() => {
+        x(() => {
           P(d(c({}, n), {
             animateScroll: false
-          })), m(e), N(e)
+          })), m(e), j(e)
         })
       } else P(d(c({}, n), {
         animateScroll: true
@@ -83,9 +83,9 @@ function f(e) {
     navTransition: _,
     showNavigationMobile: v,
     setShowNavigationMobile: T
-  }), [O, S, _, v, C, I]);
+  }), [y, N, _, v, C, x]);
   return (0, r.jsx)(a.j.Provider, {
-    value: x,
+    value: I,
     children: (0, r.jsxs)("div", {
       className: u.container,
       children: [(0, r.jsx)(o.P, {
@@ -93,8 +93,8 @@ function f(e) {
         header: b,
         footer: p
       }), (0, r.jsx)(l.Z, {
-        onClose: () => I(E),
-        setting: null != (f = x.currentPanel) ? f : j
+        onClose: () => x(E),
+        setting: null != (f = I.currentPanel) ? f : S
       })]
     })
   })
