@@ -8,8 +8,8 @@ require("./647438.js");
 var Chunk657707 = require("./657707.js"),
   Chunk793030 = require("./793030.js"),
   Chunk692547 = require("./692547.js"),
-  Chunk481060 = require("./481060.js"),
   Chunk921944 = require("./921944.js"),
+  Chunk388032 = require("./388032.jsx"),
   Chunk695610 = require("./695610.js");
 
 function u(e) {
@@ -19,12 +19,17 @@ function u(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: c.container,
-    children: [(0, r.jsx)(a.olH, {
+    children: [(0, r.jsx)("div", {
       className: c.close,
-      innerClassName: c.innerClose,
-      onClick: () => {
-        n(s.L.USER_DISMISS)
-      }
+      children: (0, r.jsx)(o.hU, {
+        variant: "icon-only",
+        size: "md",
+        "aria-label": s.intl.string(s.t.cpT0Cg),
+        onClick: () => {
+          n(a.L.USER_DISMISS)
+        },
+        icon: i.Uz9
+      })
     }), (0, r.jsx)(i.Mgn, {
       color: l.Z.colors.TEXT_FEEDBACK_WARNING,
       className: c.icon

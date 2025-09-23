@@ -21,7 +21,11 @@ function l(e) {
   };
   return (0, r.jsxs)("div", {
     className: s.container,
-    children: [(0, r.jsx)("div", {
+    children: [(0, r.jsx)(a.X6q, {
+      variant: "heading-xl/semibold",
+      color: "header-primary",
+      children: "Quest Preview Tool"
+    }), (0, r.jsx)("div", {
       className: s.controlsBarContainer,
       children: c
     }), (0, r.jsxs)(a.njP, {
@@ -29,7 +33,6 @@ function l(e) {
       look: "brand",
       selectedItem: d,
       onItemSelect: f,
-      className: s.tabBar,
       children: [(0, r.jsx)(a.njP.Item, {
         id: "all",
         children: "All Sections"
