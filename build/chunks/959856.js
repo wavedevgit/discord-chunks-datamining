@@ -155,14 +155,16 @@ class N extends Chunk47770.Z {
   }
   setAudioInputDevice(e) {
     var t, n;
-    this.sourceId = e, this.eachConnection(t => t.setAudioSource(e), T.Yn.DEFAULT), null == (t = this.voiceActivityInput) || t.setSource(e), null == (n = this.loopback) || n.setAudioSource(e)
+    let r = this.sourceId;
+    this.sourceId = e, this.eachConnection(t => t.setAudioSource(e), T.Yn.DEFAULT), null == (t = this.voiceActivityInput) || t.setSource(e), null == (n = this.loopback) || n.setAudioSource(e), this.emit(f.aB.SelectedDeviceChange, T.h7.AUDIO_INPUT, r, e)
   }
   getAudioOutputDevices() {
     return (0, Chunk740197.HS)()
   }
   setAudioOutputDevice(e) {
     var t;
-    this.sinkId = e, this.connections.forEach(t => t.setSinkId(e)), null == (t = this.loopback) || t.setAudioSink(e)
+    let n = this.sinkId;
+    this.sinkId = e, this.connections.forEach(t => t.setSinkId(e)), null == (t = this.loopback) || t.setAudioSink(e), this.emit(f.aB.SelectedDeviceChange, T.h7.AUDIO_OUTPUT, n, e)
   }
   getVideoInputDevices() {
     return (0, Chunk740197.l0)()

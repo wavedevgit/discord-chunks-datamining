@@ -267,7 +267,8 @@ class y extends Chunk47770.Z {
         video_entropy_percentile99: y.count > 0 ? y.percentiles[99] : null,
         duration_encoder_exynos: E(t.encoderBuckets[_.Su.EXYNOS]),
         duration_encoder_qualcomm: E(t.encoderBuckets[_.Su.QUALCOMM]),
-        duration_encoder_mediatek: E(t.encoderBuckets[_.Su.MEDIATEK])
+        duration_encoder_mediatek: E(t.encoderBuckets[_.Su.MEDIATEK]),
+        duration_encoder_wmf_sw: E(t.encoderBuckets[_.Su.WMF_SW])
       }))
     }), module
   }
