@@ -44,7 +44,7 @@ function h(e) {
         className: p.emptyIconFriends
       }), (0, l.jsx)("div", {
         className: p.emptyText,
-        children: m.intl.string(m.t["/5p4g4"])
+        children: f.intl.string(f.t["/5p4g4"])
       })]
     }) : x.map(e => {
       let {
@@ -52,7 +52,7 @@ function h(e) {
         user: i,
         status: r
       } = e;
-      return (0, l.jsx)(f.Z, {
+      return (0, l.jsx)(m.Z, {
         user: i,
         status: r,
         guildId: t,

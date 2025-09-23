@@ -52,7 +52,7 @@ function f(e) {
     onClose: E,
     sidebarHeader: b,
     sidebarFooter: p
-  } = e, [v, T] = i.useState(true), [N, j] = i.useState(null == (t = y.entry(O)) ? true : t.parentPanel), [S, m] = i.useState(() => y.typedGet(N)), C = i.useCallback(() => P(true), []), [_, P] = i.useState({
+  } = e, [v, T] = i.useState(true), [j, N] = i.useState(null == (t = y.entry(O)) ? true : t.parentPanel), [S, m] = i.useState(() => y.typedGet(j)), C = i.useCallback(() => P(true), []), [_, P] = i.useState({
     target: O,
     targetAccordion: null == (n = y.entry(O)) ? true : n.parentAccordion,
     animateScroll: false,
@@ -60,7 +60,7 @@ function f(e) {
   }), {
     navigateWithValidation: x
   } = (0, s.Cu)(), I = i.useMemo(() => ({
-    currentPanel: y.typedGet(N),
+    currentPanel: y.typedGet(j),
     navigateTo: e => {
       let t = y.entry(e);
       if ((null == t ? true : t.parentPanel) == null) return;
@@ -69,12 +69,12 @@ function f(e) {
         targetAccordion: t.parentAccordion,
         complete: C
       };
-      if (t.parentPanel.key !== (null == N ? true : N.key)) {
+      if (t.parentPanel.key !== (null == j ? true : j.key)) {
         let e = t.parentPanel;
         x(() => {
           P(d(c({}, n), {
             animateScroll: false
-          })), m(e), j(e)
+          })), m(e), N(e)
         })
       } else P(d(c({}, n), {
         animateScroll: true
@@ -83,7 +83,7 @@ function f(e) {
     navTransition: _,
     showNavigationMobile: v,
     setShowNavigationMobile: T
-  }), [y, N, _, v, C, x]);
+  }), [y, j, _, v, C, x]);
   return (0, r.jsx)(a.j.Provider, {
     value: I,
     children: (0, r.jsxs)("div", {

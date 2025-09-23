@@ -35,9 +35,9 @@ function I(e) {
     onClose: N
   } = e, {
     trackUserProfileAction: T
-  } = (0, f.KZ)(), E = (0, i.e7)([d.Z], () => d.Z.getGuildId()), A = (0, s.Y)({
+  } = (0, m.KZ)(), E = (0, i.e7)([d.Z], () => d.Z.getGuildId()), A = (0, s.Y)({
     userId: n.id
-  }), S = (0, i.e7)([u.Z], () => u.Z.hidePersonalInformation), C = (0, i.e7)([c.default], () => c.default.locale), w = (0, p.Z)(n.id), _ = (0, m.Z)(n.id);
+  }), S = (0, i.e7)([u.Z], () => u.Z.hidePersonalInformation), C = (0, i.e7)([c.default], () => c.default.locale), w = (0, p.Z)(n.id), _ = (0, f.Z)(n.id);
   return (0, l.jsxs)(r.zJl, {
     fade: true,
     className: Z.scroller,

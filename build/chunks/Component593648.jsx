@@ -2,7 +2,7 @@
 /** chunk id: 593648, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => es
+  Z: () => el
 }), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -41,6 +41,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk45640 = require("./45640.js"),
   Chunk695346 = require("./695346.js"),
   Chunk675478 = require("./675478.js"),
+  Chunk273313 = require("./273313.jsx"),
   Chunk33656 = require("./33656.jsx"),
   Chunk726985 = require("./726985.js"),
   Chunk981631 = require("./981631.js"),
@@ -49,7 +50,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk285746 = require("./285746.js"),
   Chunk10198 = require("./10198.js");
 
-function K(e, t, n) {
+function z(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -58,20 +59,20 @@ function K(e, t, n) {
   }) : e[t] = n, e
 }
 
-function z(e) {
+function q(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      K(e, t, n[t])
+      z(e, t, n[t])
     })
   }
   return e
 }
 
-function q(e, t) {
+function X(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -82,20 +83,20 @@ function q(e, t) {
   return n
 }
 
-function X(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : q(Object(t)).forEach(function(n) {
+function Q(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : X(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function Q(e) {
+function J(e) {
   L.Z.requestPermission(t => {
-    let n = t ? F.$Ab.ENABLED : F.$Ab.BLOCKED;
+    let n = t ? V.$Ab.ENABLED : V.$Ab.BLOCKED;
     p.default.setPermissionsState(n, e)
   })
 }
 
-function J(e) {
+function $(e) {
   let {
     label: t,
     enabled: n,
@@ -105,24 +106,24 @@ function J(e) {
     tooltip: s
   } = e;
   return (0, r.jsx)(f.j7V, {
-    className: Y.soundRow,
+    className: W.soundRow,
     value: n,
     onChange: o,
     disabled: i,
     tooltipNote: s,
     children: (0, r.jsxs)("div", {
-      className: Y.notificationSound,
+      className: W.notificationSound,
       children: [(0, r.jsx)("div", {
-        className: Y.soundName,
+        className: W.soundName,
         children: t
       }), (0, r.jsx)(f.P3F, {
-        className: Y.soundIcon,
+        className: W.soundIcon,
         onClick: a,
-        "aria-label": H.intl.string(H.t.Kd4uxM),
+        "aria-label": Y.intl.string(Y.t.Kd4uxM),
         children: (0, r.jsx)(f.gj8, {
           size: "xs",
           color: "currentColor",
-          className: Y.icon,
+          className: W.icon,
           "aria-hidden": true
         })
       })]
@@ -130,7 +131,7 @@ function J(e) {
   })
 }
 
-function $(e) {
+function ee(e) {
   let {
     disabledSounds: t,
     disableAllSounds: n,
@@ -146,111 +147,111 @@ function $(e) {
     null == (e = s.current) || e.stop()
   });
   let d = [{
-      label: H.intl.string(H.t.pz71xM),
+      label: Y.intl.string(Y.t.pz71xM),
       sound: "message1",
       focusModeDisabled: l
     }, {
-      label: H.intl.string(H.t.hK51Ym),
+      label: Y.intl.string(Y.t.hK51Ym),
       sound: "deafen"
     }, {
-      label: H.intl.string(H.t.XiejaG),
+      label: Y.intl.string(Y.t.XiejaG),
       sound: "undeafen"
     }, {
-      label: H.intl.string(H.t["w4m94+"]),
+      label: Y.intl.string(Y.t["w4m94+"]),
       sound: "mute"
     }, {
-      label: H.intl.string(H.t.YqAjX1),
+      label: Y.intl.string(Y.t.YqAjX1),
       sound: "unmute"
     }, {
-      label: H.intl.string(H.t.JoTq8v),
+      label: Y.intl.string(Y.t.JoTq8v),
       sound: "camera_on"
     }, {
-      label: H.intl.string(H.t["8P6tQ0"]),
+      label: Y.intl.string(Y.t["8P6tQ0"]),
       sound: "camera_off"
     }, {
-      label: H.intl.string(H.t["juL9/P"]),
+      label: Y.intl.string(Y.t["juL9/P"]),
       sound: "disconnect"
     }, {
-      label: H.intl.string(H.t.x98vQk),
+      label: Y.intl.string(Y.t.x98vQk),
       sound: "ptt_start"
     }, {
-      label: H.intl.string(H.t["1HjRqK"]),
+      label: Y.intl.string(Y.t["1HjRqK"]),
       sound: "ptt_stop"
     }, {
-      label: H.intl.string(H.t["9JB1Cg"]),
+      label: Y.intl.string(Y.t["9JB1Cg"]),
       sound: "user_join"
     }, {
-      label: H.intl.string(H.t.KUBBNj),
+      label: Y.intl.string(Y.t.KUBBNj),
       sound: "user_leave"
     }, {
-      label: H.intl.string(H.t.EZjqUV),
+      label: Y.intl.string(Y.t.EZjqUV),
       sound: "user_moved"
     }, {
-      label: H.intl.string(H.t.LnNlQk),
+      label: Y.intl.string(Y.t.LnNlQk),
       sound: "call_calling"
     }, {
-      label: H.intl.string(H.t.XBrJT0),
+      label: Y.intl.string(Y.t.XBrJT0),
       sound: "call_ringing"
     }, {
-      label: H.intl.string(H.t["Nd8P5+"]),
+      label: Y.intl.string(Y.t["Nd8P5+"]),
       sound: "stream_started"
     }, {
-      label: H.intl.string(H.t["9bYj+P"]),
+      label: Y.intl.string(Y.t["9bYj+P"]),
       sound: "stream_ended"
     }, {
-      label: H.intl.string(H.t.KccUIy),
+      label: Y.intl.string(Y.t.KccUIy),
       sound: "stream_user_joined"
     }, {
-      label: H.intl.string(H.t.dsjkiI),
+      label: Y.intl.string(Y.t.dsjkiI),
       sound: "stream_user_left"
     }, {
-      label: H.intl.string(H.t.nFOcf3),
+      label: Y.intl.string(Y.t.nFOcf3),
       sound: "activity_launch"
     }, {
-      label: H.intl.string(H.t["a6lw/v"]),
+      label: Y.intl.string(Y.t["a6lw/v"]),
       sound: "activity_end"
     }, {
-      label: H.intl.string(H.t.KaFxra),
+      label: Y.intl.string(Y.t.KaFxra),
       sound: "activity_user_join"
     }, {
-      label: H.intl.string(H.t.S14z9v),
+      label: Y.intl.string(Y.t.S14z9v),
       sound: "activity_user_left"
     }, {
-      label: H.intl.string(H.t.CP3DCw),
+      label: Y.intl.string(Y.t.CP3DCw),
       sound: "reconnect"
     }],
     _ = null != y.Z.useHolidaySoundpack();
   return (0, r.jsx)(R.F, {
-    setting: Z.s6.NOTIFICATIONS_SOUNDS,
+    setting: F.s6.NOTIFICATIONS_SOUNDS,
     children: (0, r.jsxs)(f.hjN, {
       children: [_ ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(f.vwX, {
-          className: W.marginBottom20,
-          children: H.intl.string(H.t.fgSHf3)
+          className: K.marginBottom20,
+          children: Y.intl.string(Y.t.fgSHf3)
         }), (0, r.jsx)(O.Z, {})]
       }) : null, (0, r.jsx)(f.vwX, {
-        className: o()(W.marginBottom20, W.marginTop20),
-        children: H.intl.string(H.t.MKWyKS)
+        className: o()(K.marginBottom20, K.marginTop20),
+        children: Y.intl.string(Y.t.MKWyKS)
       }), (0, r.jsx)(f.j7V, {
-        note: H.intl.string(H.t["7oXUio"]),
+        note: Y.intl.string(Y.t["7oXUio"]),
         value: a,
         onChange: p.default.setNotifyMessagesInSelectedChannel,
-        children: H.intl.string(H.t.lF5GGR)
+        children: Y.intl.string(Y.t.lF5GGR)
       }), (0, r.jsx)(f.j7V, {
-        note: H.intl.string(H.t["+B0XLC"]),
+        note: Y.intl.string(Y.t["+B0XLC"]),
         value: n,
         onChange: p.default.toggleDisableAllSounds,
-        children: H.intl.string(H.t["2ZhCOT"])
+        children: Y.intl.string(Y.t["2ZhCOT"])
       }), d.map(e => {
         let {
           label: i,
           sound: a,
           focusModeDisabled: o
         } = e;
-        return (0, r.jsx)(J, {
+        return (0, r.jsx)($, {
           label: i,
           disabled: n || true === o,
-          tooltip: o ? H.intl.string(H.t.cIRG0t) : true,
+          tooltip: o ? Y.intl.string(Y.t.cIRG0t) : true,
           onChange: e => u(a, e),
           onPreview: e => c(a, e),
           enabled: !n && !t.includes(a) && true !== o
@@ -260,7 +261,7 @@ function $(e) {
   })
 }
 
-function ee() {
+function et() {
   let e = (0, Chunk442837.e7)([Chunk487419.Z], () => Chunk487419.Z.getGuildAlertSettings()),
     [t, n] = Chunk647438.useState(null),
     a = Chunk709054.default.keys(module).map(t => {
@@ -328,10 +329,10 @@ function ee() {
     })]
   })
 }
-class et extends Chunk647438.PureComponent {
+class en extends Chunk647438.PureComponent {
   handleDesktopChange(e) {
-    let t = e ? F.qrD.ALL : F.qrD.NEVER;
-    t !== F.qrD.NEVER ? Q("UserSettingsModal") : p.default.setDesktopType(t)
+    let t = e ? V.qrD.ALL : V.qrD.NEVER;
+    t !== V.qrD.NEVER ? J("UserSettingsModal") : p.default.setDesktopType(t)
   }
   handleTTSChange(e) {
     let t = e;
@@ -351,12 +352,11 @@ class et extends Chunk647438.PureComponent {
       location: "Messages"
     }).enabled || 0 === exports ? 0 : 1, p = l().range(Chunk668781, 11).map(e => ({
       value: 60 * e,
-      label: 0 === e ? H.intl.string(H.t["0QN7cX"]) : H.intl.formatToPlainString(H.t.iXLF9f, {
+      label: 0 === e ? Y.intl.string(Y.t["0QN7cX"]) : Y.intl.formatToPlainString(Y.t.iXLF9f, {
         minutes: e
       })
     }));
-    return (0, Chunk951288.jsxs)(Chunk481060.hjN, {
-      tag: Chunk481060.RB0.H1,
+    return (0, Chunk951288.jsxs)(Chunk273313.Z, {
       title: Chunk388032.intl.string(Chunk388032.t.HcoRu7),
       children: [(0, Chunk951288.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.NOTIFICATIONS_ENABLE_DESKTOP,
@@ -369,7 +369,7 @@ class et extends Chunk647438.PureComponent {
           tooltipNote: Chunk524437 ? Chunk388032.intl.string(Chunk388032.t.cIRG0t) : true,
           children: Chunk388032.intl.string(Chunk388032.t["/0WClp"])
         })
-      }), (0, Chunk951288.jsx)(er, {}), (0, Chunk951288.jsx)(Chunk921801.F, {
+      }), (0, Chunk951288.jsx)(ei, {}), (0, Chunk951288.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.NOTIFICATIONS_UNREAD_MESSAGE_BADGE,
         children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
           className: Chunk538534 ? Chunk10198.marginBottom20 : Chunk10198.marginBottom40,
@@ -387,7 +387,7 @@ class et extends Chunk647438.PureComponent {
           onChange: this.handleToggleShowFlash,
           children: Chunk388032.intl.string(Chunk388032.t.xSmFQE)
         })
-      }), (0, Chunk951288.jsx)(ei, {}), (0, Chunk951288.jsx)(ec, {}), (0, Chunk951288.jsx)(el, {}), (0, Chunk951288.jsxs)(Chunk921801.F, {
+      }), (0, Chunk951288.jsx)(ea, {}), (0, Chunk951288.jsx)(eu, {}), (0, Chunk951288.jsx)(ec, {}), (0, Chunk951288.jsxs)(Chunk921801.F, {
         setting: Chunk726985.s6.NOTIFICATIONS_PUSH_INACTIVE_TIMEOUT,
         children: [(0, Chunk951288.jsx)(Chunk481060.q4e, {
           label: Chunk388032.intl.string(Chunk388032.t.TTvjd3),
@@ -398,7 +398,7 @@ class et extends Chunk647438.PureComponent {
         }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
           className: o()(Chunk10198.marginTop40, Chunk10198.marginBottom40)
         })]
-      }), this.renderTTS(), (0, Chunk951288.jsx)(ee, {}), (0, Chunk951288.jsx)($, {
+      }), this.renderTTS(), (0, Chunk951288.jsx)(et, {}), (0, Chunk951288.jsx)(ee, {
         disabledSounds: Chunk120356,
         disableAllSounds: Chunk392711,
         notifyMessagesInSelectedChannel: Chunk442837
@@ -406,38 +406,38 @@ class et extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), K(this, "handleToggleShowUnreadBadge", () => {
+    super(...e), z(this, "handleToggleShowUnreadBadge", () => {
       p.default.setDisableUnreadBadge(!this.props.disableUnreadBadge)
-    }), K(this, "handleToggleShowFlash", () => {
+    }), z(this, "handleToggleShowFlash", () => {
       p.default.setTaskbarFlash(!this.props.taskbarFlash)
-    }), K(this, "renderTTS", () => {
+    }), z(this, "renderTTS", () => {
       if (!m.Zh) return null;
       let e = [{
-        name: H.intl.string(H.t.B1AGeH),
-        value: F.PrB.ALL_CHANNELS
+        name: Y.intl.string(Y.t.B1AGeH),
+        value: V.PrB.ALL_CHANNELS
       }, {
-        name: H.intl.string(H.t.uM2rNj),
-        value: F.PrB.SELECTED_CHANNEL
+        name: Y.intl.string(Y.t.uM2rNj),
+        value: V.PrB.SELECTED_CHANNEL
       }, {
-        name: H.intl.string(H.t.DYO5Oj),
-        value: F.PrB.NEVER
+        name: Y.intl.string(Y.t.DYO5Oj),
+        value: V.PrB.NEVER
       }];
       return (0, r.jsxs)(R.F, {
-        setting: Z.s6.NOTIFICATIONS_TEXT_TO_SPEECH,
+        setting: F.s6.NOTIFICATIONS_TEXT_TO_SPEECH,
         children: [(0, r.jsx)(d.E, {
-          label: H.intl.string(H.t.VIm5MD),
-          description: H.intl.string(H.t["+4dnAw"]),
+          label: Y.intl.string(Y.t.VIm5MD),
+          description: Y.intl.string(Y.t["+4dnAw"]),
           options: e,
           onChange: this.handleTTSChange,
           value: this.props.ttsType
         }), (0, r.jsx)(f.$i$, {
-          className: o()(W.marginTop40, W.marginBottom40)
+          className: o()(K.marginTop40, K.marginBottom40)
         })]
       })
     })
   }
 }
-let en = (0, Chunk818083.B)({
+let er = (0, Chunk818083.B)({
   kind: "user",
   id: "2024-01_mention_on_all_messages",
   label: "Mention on all messages",
@@ -453,8 +453,8 @@ let en = (0, Chunk818083.B)({
   }]
 });
 
-function er() {
-  let e = en.useExperiment({
+function ei() {
+  let e = er.useExperiment({
       location: "settings"
     }, {
       autoTrackExposure: false
@@ -466,7 +466,7 @@ function er() {
       className: Chunk10198.marginBottom20,
       value: exports,
       onChange: e => {
-        h.Z.setAccountFlag(V.c.MENTION_ON_ALL_MESSAGES, e)
+        h.Z.setAccountFlag(H.c.MENTION_ON_ALL_MESSAGES, e)
       },
       note: "Increments the mention count when receiving a message in a channel set to 'All Messages'",
       children: "Mention on all messages?"
@@ -474,7 +474,7 @@ function er() {
   }) : null
 }
 
-function ei() {
+function ea() {
   let e = Chunk312400.xT.useExperiment({
       location: "UserSettingsNotifications"
     }, {
@@ -497,7 +497,7 @@ function ei() {
         value: require,
         disabled: Chunk120356 || !require,
         note: Chunk388032.intl.string(Chunk388032.t.frbLrK),
-        onChange: () => ea(Chunk392711),
+        onChange: () => eo(Chunk392711),
         children: Chunk388032.intl.string(Chunk388032.t.z21l8P)
       })
     }) : exports ? (0, Chunk951288.jsx)(Chunk921801.F, {
@@ -508,7 +508,7 @@ function ei() {
         disabled: Chunk120356 || require,
         note: "Turns on the new notification system",
         onChange: e => {
-          h.Z.setAccountFlag(V.c.USE_NEW_NOTIFICATIONS, e)
+          h.Z.setAccountFlag(H.c.USE_NEW_NOTIFICATIONS, e)
         },
         children: Chunk388032.intl.string(Chunk388032.t.z21l8P)
       })
@@ -543,7 +543,7 @@ function ei() {
               hideBorder: true,
               value: require,
               onChange: e => {
-                h.Z.setAccountFlag(V.c.USE_NEW_NOTIFICATIONS, e)
+                h.Z.setAccountFlag(H.c.USE_NEW_NOTIFICATIONS, e)
               },
               children: "Toggle new system on/off"
             })
@@ -555,28 +555,28 @@ function ei() {
     })]
   }) : null
 }
-async function ea(e) {
+async function eo(e) {
   e(true);
   let t = await (0, I.Tn)();
   0 === t.length ? await (0, S.oL)() : _.Z.show({
-    title: H.intl.string(H.t["cY+Ooa"]),
-    body: H.intl.format(H.t["7zTJJS"], {
+    title: Y.intl.string(Y.t["cY+Ooa"]),
+    body: Y.intl.format(Y.t["7zTJJS"], {
       date: new Date(t[t.length - 1].recorded_at)
     }),
-    cancelText: H.intl.string(H.t["ETE/oK"]),
-    confirmText: H.intl.string(H.t.Rm96T0),
+    cancelText: Y.intl.string(Y.t["ETE/oK"]),
+    confirmText: Y.intl.string(Y.t.Rm96T0),
     onConfirm: S.oL
   }), e(false)
 }
 
-function eo(e) {
+function es(e) {
   let t = (0, v.p)();
-  return (0, r.jsx)(et, X(z({}, e), {
+  return (0, r.jsx)(en, Q(q({}, e), {
     focusMode: t
   }))
 }
 
-function es() {
+function el() {
   let e = (0, Chunk442837.cj)([Chunk292959.Z], () => ({
     disableUnreadBadge: Chunk292959.Z.getDisableUnreadBadge(),
     taskbarFlash: Chunk292959.Z.taskbarFlash,
@@ -586,12 +586,12 @@ function es() {
     ttsType: Chunk292959.Z.getTTSType(),
     notifyMessagesInSelectedChannel: Chunk292959.Z.getNotifyMessagesInSelectedChannel()
   }));
-  return (0, Chunk951288.jsx)(eo, X(z({}, module), {
+  return (0, Chunk951288.jsx)(es, Q(q({}, module), {
     afkTimeout: Chunk695346.CM.useSetting()
   }))
 }
 
-function el() {
+function ec() {
   let e = Chunk695346.fz.useSetting(),
     t = [{
       name: Chunk388032.intl.string(Chunk388032.t["9x/Rtb"]),
@@ -624,7 +624,7 @@ function el() {
   }) : null
 }
 
-function ec() {
+function eu() {
   let e = Chunk695346.d8.useSetting(),
     t = Chunk695346.JN.useSetting();
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {

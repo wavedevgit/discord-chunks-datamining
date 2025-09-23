@@ -45,9 +45,9 @@ function C(e) {
     openedAt: M,
     onClose: U,
     sourceAnalyticsLocations: k = []
-  } = e, B = C === P.ME ? true : C, V = (0, m.ZP)(t.id, B), F = u.ZP.getName(B, w, t), G = (0, c.Dt)(), {
+  } = e, B = C === P.ME ? true : C, V = (0, f.ZP)(t.id, B), F = u.ZP.getName(B, w, t), G = (0, c.Dt)(), {
     analyticsLocations: z
-  } = (0, a.ZP)([...k, s.Z.USER_PROFILE_MODAL]), K = (0, f.ZB)({
+  } = (0, a.ZP)([...k, s.Z.USER_PROFILE_MODAL]), K = (0, m.ZB)({
     layout: "MODAL",
     userId: t.id,
     sourceSessionId: R,
@@ -58,7 +58,7 @@ function C(e) {
   }), W = i.useRef(null), Y = (0, o.Z)(W);
   return (0, l.jsx)(a.Gt, {
     value: z,
-    children: (0, l.jsx)(f.Mt, {
+    children: (0, l.jsx)(m.Mt, {
       value: K,
       openedAt: M,
       fetchStartedAt: null == V ? true : V.fetchStartedAt,

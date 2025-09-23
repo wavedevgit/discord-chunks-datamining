@@ -38,7 +38,7 @@ function g(e) {
   return (0, l.jsxs)(r.zJl, {
     fade: true,
     className: v.scroller,
-    children: [(null == g ? true : g.bio) != null && (null == g ? true : g.bio) !== "" && (0, l.jsx)(f.Z, {
+    children: [(null == g ? true : g.bio) != null && (null == g ? true : g.bio) !== "" && (0, l.jsx)(m.Z, {
       userBio: g.bio,
       setLineClamp: false
     }), (null == I ? true : I.popularApplicationCommandIds) != null && null != P && (0, l.jsx)(u.Z, {
@@ -54,7 +54,7 @@ function g(e) {
       scrollIntoView: y === j.Tb.ROLES
     }), (0, l.jsx)(p.Z, {
       heading: x.intl.string(x.t["A//N4u"]),
-      children: (0, l.jsx)(m.Z, {
+      children: (0, l.jsx)(f.Z, {
         userId: n.id,
         guildId: b,
         tooltipDelay: j.vB

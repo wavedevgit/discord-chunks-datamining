@@ -2,7 +2,7 @@
 /** chunk id: 335082, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => v
+  Z: () => I
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -12,6 +12,7 @@ var Chunk524437 = require("./524437.js"),
   Chunk481060 = require("./481060.js"),
   Chunk921801 = require("./921801.js"),
   Chunk695346 = require("./695346.js"),
+  Chunk273313 = require("./273313.jsx"),
   Chunk358085 = require("./358085.js"),
   Chunk940276 = require("./940276.jsx"),
   Chunk981631 = require("./981631.js"),
@@ -20,7 +21,7 @@ var Chunk524437 = require("./524437.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk61545 = require("./61545.js");
 
-function g(e) {
+function E(e) {
   let {
     label: t,
     sublabel: n,
@@ -29,9 +30,9 @@ function g(e) {
     onChange: l
   } = e;
   return (0, r.jsxs)("div", {
-    className: m.settingSwitch,
+    className: g.settingSwitch,
     children: [(0, r.jsxs)("label", {
-      className: m.settingSwitchLabel,
+      className: g.settingSwitchLabel,
       htmlFor: i,
       children: [(0, r.jsx)(s.X6q, {
         variant: "heading-md/semibold",
@@ -49,7 +50,7 @@ function g(e) {
   })
 }
 
-function E() {
+function b() {
   let e = Chunk695346.G6.useSetting(),
     t = Chunk695346.no.useSetting(),
     n = e => {
@@ -112,7 +113,7 @@ function E() {
   })
 }
 
-function b() {
+function y() {
   let e = Chunk695346.cP.useSetting(),
     t = Chunk695346.Ou.useSetting();
   return (0, Chunk951288.jsx)(Chunk921801.F, {
@@ -126,13 +127,13 @@ function b() {
           color: "header-primary",
           children: Chunk388032.intl.string(Chunk893867.default["5rYBAQ"])
         })
-      }), (0, Chunk951288.jsx)(g, {
+      }), (0, Chunk951288.jsx)(E, {
         label: Chunk388032.intl.string(Chunk893867.default.khuuzs),
         sublabel: Chunk388032.intl.string(Chunk893867.default["8EWsJy"]),
         id: "allow-friends-to-join-my-game",
         checked: module,
         onChange: e => c.cP.updateSetting(e)
-      }), (0, Chunk951288.jsx)(g, {
+      }), (0, Chunk951288.jsx)(E, {
         label: Chunk388032.intl.string(Chunk893867.default.Uz5Ipq),
         sublabel: Chunk388032.intl.string(Chunk893867.default.CZI2GR),
         id: "allow-vc-join-without-request",
@@ -143,7 +144,7 @@ function b() {
   })
 }
 
-function y() {
+function O() {
   let e = Chunk695346.G6.useSetting(),
     t = Chunk358085.isPlatformEmbedded ? Chunk388032.intl.string(Chunk893867.default.UQ9RHB) : Chunk388032.intl.string(Chunk388032.t.oKqC4u);
   return (0, Chunk951288.jsx)(Chunk921801.F, {
@@ -158,7 +159,7 @@ function y() {
         })
       }), (0, Chunk951288.jsx)("div", {
         className: Chunk61545.switchContainer,
-        children: (0, Chunk951288.jsx)(g, {
+        children: (0, Chunk951288.jsx)(E, {
           label: Chunk388032.intl.string(Chunk893867.default.WhdCGB),
           sublabel: exports,
           id: "share-my-activity",
@@ -170,7 +171,7 @@ function y() {
   })
 }
 
-function O() {
+function v() {
   return (0, Chunk951288.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.ACTIVITY_PRIVACY_TOS,
     children: (0, Chunk951288.jsx)(Chunk481060.hjN, {
@@ -184,27 +185,19 @@ function O() {
     })
   })
 }
-let v = function(e) {
+let I = function(e) {
   let {
     className: t
   } = e;
-  return (0, r.jsx)(s.hjN, {
+  return (0, r.jsxs)(u.Z, {
     className: t,
-    children: (0, r.jsxs)(s.y5t, {
-      forceLevel: 1,
-      component: (0, r.jsx)(s.X6q, {
-        className: m.formTitle,
-        variant: "heading-xl/semibold",
-        color: "header-primary",
-        children: h.intl.string(h.t.Cq98yM)
-      }),
-      children: [(0, r.jsx)(y, {}), (0, r.jsx)(s.$i$, {
-        className: m.divider
-      }), (0, r.jsx)(E, {}), (0, r.jsx)(s.$i$, {
-        className: m.divider
-      }), (0, r.jsx)(b, {}), (0, r.jsx)(s.$i$, {
-        className: m.divider
-      }), (0, r.jsx)(O, {})]
-    })
+    title: m.intl.string(m.t.Cq98yM),
+    children: [(0, r.jsx)(O, {}), (0, r.jsx)(s.$i$, {
+      className: g.divider
+    }), (0, r.jsx)(b, {}), (0, r.jsx)(s.$i$, {
+      className: g.divider
+    }), (0, r.jsx)(y, {}), (0, r.jsx)(s.$i$, {
+      className: g.divider
+    }), (0, r.jsx)(v, {})]
   })
 }

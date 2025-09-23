@@ -85,7 +85,7 @@ function v(e) {
         children: [(0, r.jsxs)("div", {
           className: b.fixedContent,
           children: [(0, r.jsx)("div", {
-            children: y.map(e => (0, r.jsx)(j, {
+            children: y.map(e => (0, r.jsx)(N, {
               section: e,
               visibleContent: t,
               markAsDismissed: i
@@ -96,7 +96,7 @@ function v(e) {
           fade: true,
           children: [(0, r.jsx)("nav", {
             className: b.nav,
-            children: O.map(e => (0, r.jsx)(j, {
+            children: O.map(e => (0, r.jsx)(N, {
               section: e,
               visibleContent: t,
               markAsDismissed: i
@@ -130,7 +130,7 @@ function T(e) {
   }, s))
 }
 
-function N(e) {
+function j(e) {
   let {
     trailing: t,
     sectionRef: n,
@@ -156,7 +156,7 @@ function N(e) {
   }
 }
 
-function j(e) {
+function N(e) {
   var t;
   let {
     section: n,
@@ -173,7 +173,7 @@ function j(e) {
         variant: "heading-sm/medium",
         color: "text-tertiary",
         children: a
-      }), null != c && (0, r.jsx)(N, {
+      }), null != c && (0, r.jsx)(j, {
         trailing: c,
         sectionRef: s,
         visibleContent: l,

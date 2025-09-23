@@ -1,7 +1,7 @@
 /** Chunk was on 31553 **/
 /** chunk id: 444141, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => f
 });
 var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
@@ -31,7 +31,7 @@ function u(e) {
   return e
 }
 
-function f(e, n) {
+function m(e, n) {
   return n = null != n ? n : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, n) {
     var t = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -44,11 +44,11 @@ function f(e, n) {
   }), e
 }
 
-function m(e) {
+function f(e) {
   let {
     user: n,
     guildId: t,
-    channelId: m,
+    channelId: f,
     displayProfile: p,
     onClose: h
   } = e, {
@@ -65,7 +65,7 @@ function m(e) {
       displayName: o.ZP.getName(true, true, n)
     }),
     action: () => {
-      null == h || h(), (0, a.openUserProfileModal)(f(u({}, v), {
+      null == h || h(), (0, a.openUserProfileModal)(m(u({}, v), {
         showGuildProfile: false,
         sourceAnalyticsLocations: x
       })), g(u({
@@ -77,10 +77,10 @@ function m(e) {
     id: "view-server-profile",
     label: d.intl.string(d.t.DisZzM),
     subtext: d.intl.formatToPlainString(d.t["mn/nW1"], {
-      displayName: o.ZP.getName(t, m, n)
+      displayName: o.ZP.getName(t, f, n)
     }),
     action: () => {
-      null == h || h(), (0, a.openUserProfileModal)(f(u({}, v), {
+      null == h || h(), (0, a.openUserProfileModal)(m(u({}, v), {
         showGuildProfile: true,
         sourceAnalyticsLocations: x
       })), g(u({

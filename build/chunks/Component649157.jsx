@@ -2,7 +2,7 @@
 /** chunk id: 649157, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => y
+  Z: () => O
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -12,13 +12,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk153867 = require("./153867.js"),
   Chunk706454 = require("./706454.js"),
   Chunk313789 = require("./313789.js"),
+  Chunk273313 = require("./273313.jsx"),
   Chunk518596 = require("./518596.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk896643 = require("./896643.js"),
   Chunk444675 = require("./444675.js");
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -27,20 +28,20 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
 }
 
-function E(e, t) {
+function b(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -51,61 +52,60 @@ function E(e, t) {
   return n
 }
 
-function b(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
+function y(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function y() {
+function O() {
   let e = (0, Chunk442837.e7)([Chunk706454.default], () => Chunk706454.default.locale),
-    [t, m] = Chunk647438.useState(module),
-    [E] = Chunk647438.useState(() => (0, Chunk388032.getAvailableLocales)().map(e => {
+    [t, g] = Chunk647438.useState(module),
+    [b] = Chunk647438.useState(() => (0, Chunk388032.getAvailableLocales)().map(e => {
       let t;
       try {
         t = n(621287)("./".concat(e.value, ".png"))
       } catch (e) {
         t = n(1474)
       }
-      return b(g({}, e), {
+      return y(E({}, e), {
         name: (0, r.jsxs)("div", {
-          className: p.option,
+          className: h.option,
           children: [(0, r.jsx)("span", {
-            className: p.localeName,
+            className: h.localeName,
             children: e.name
           }), (0, r.jsx)("span", {
-            className: p.localizedName,
-            children: _.intl.string(e.localizedName)
+            className: h.localizedName,
+            children: p.intl.string(e.localizedName)
           }), (0, r.jsx)("div", {
-            className: p.flag,
+            className: h.flag,
             "aria-hidden": true,
             children: (0, r.jsx)("img", {
               alt: "",
               src: t,
-              className: p.flagImage
+              className: h.flagImage
             })
           })]
         })
       })
     })),
-    y = Chunk647438.useCallback(e => {
+    O = Chunk647438.useCallback(e => {
       let {
         value: t
       } = e;
-      m(t), h.nextTick(() => {
-        l.ZP.updateLocale(t), (0, s.Mr3)(d.USER_SETTINGS_MODAL_KEY) && (0, d.openUserSettings)(u.n.LOCALE_PANEL, {
-          section: f.oAB.LOCALE
+      g(t), m.nextTick(() => {
+        l.ZP.updateLocale(t), (0, s.Mr3)(f.USER_SETTINGS_MODAL_KEY) && (0, f.openUserSettings)(u.n.LOCALE_PANEL, {
+          section: _.oAB.LOCALE
         })
       })
     }, []);
-  return (0, Chunk951288.jsx)(Chunk481060.hjN, {
-    tag: Chunk481060.RB0.H1,
+  return (0, Chunk951288.jsx)(Chunk273313.Z, {
     title: Chunk388032.intl.string(Chunk388032.t.IHMsPj),
     children: (0, Chunk951288.jsx)(Chunk481060.hjN, {
       children: (0, Chunk951288.jsx)(Chunk755721.Gu, {
         label: Chunk388032.intl.string(Chunk388032.t["mx+sp6"]),
-        onChange: y,
-        options: E,
+        onChange: O,
+        options: b,
         value: exports
       })
     })

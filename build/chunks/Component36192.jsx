@@ -2,7 +2,7 @@
 /** chunk id: 36192, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => N
 }), require("./388685.js"), require("./953529.js"), require("./781311.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -23,13 +23,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk460562 = require("./460562.jsx"),
   Chunk823379 = require("./823379.js"),
   Chunk313789 = require("./313789.js"),
+  Chunk10298 = require("./10298.jsx"),
   Chunk947889 = require("./947889.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk792058 = require("./792058.js");
 
-function C() {
+function N() {
   let e, {
       currentSession: t,
       otherSessions: n
@@ -62,7 +63,7 @@ function C() {
       children: [(0, Chunk951288.jsx)(Chunk481060.hjN, {
         title: Chunk388032.intl.string(Chunk388032.t.LLS19v),
         titleClassName: Chunk792058.groupTitle,
-        children: null != exports ? (0, Chunk951288.jsx)(N, {
+        children: null != exports ? (0, Chunk951288.jsx)(R, {
           session: exports,
           current: true
         }) : null
@@ -70,7 +71,7 @@ function C() {
         title: Chunk388032.intl.string(Chunk388032.t.xx1MWV),
         titleClassName: Chunk792058.groupTitle,
         className: Chunk792058.otherSessions,
-        children: [require.map(e => (0, r.jsx)(N, {
+        children: [require.map(e => (0, r.jsx)(R, {
           session: e,
           useChecks: y.size > 0,
           checked: y.has(e.id_hash),
@@ -78,7 +79,7 @@ function C() {
             let n = new Set(y);
             t ? n.add(e.id_hash) : n.delete(e.id_hash), O(n)
           }
-        }, e.id_hash)), (null == o ? true : o.mfaEnabled) ? null : (0, Chunk951288.jsx)(R, {})]
+        }, e.id_hash)), (null == o ? true : o.mfaEnabled) ? null : (0, Chunk951288.jsx)(P, {})]
       })]
     }), require.length > 0 ? (0, Chunk951288.jsxs)(Chunk481060.hjN, {
       title: Chunk823379.size > 0 ? Chunk388032.intl.string(Chunk388032.t.mMEmRE) : Chunk388032.intl.string(Chunk388032.t.Vij32N),
@@ -100,9 +101,8 @@ function C() {
         })
       })]
     }) : null]
-  }), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
-    tag: Chunk481060.RB0.H1,
-    title: Chunk388032.intl.string(Chunk388032.t["+1h0k5"]),
+  }), (0, Chunk951288.jsxs)(Chunk10298.N, {
+    header: Chunk388032.intl.string(Chunk388032.t["+1h0k5"]),
     children: [(0, Chunk951288.jsx)(Chunk481060.R94, {
       type: Chunk481060.geA.DESCRIPTION,
       className: Chunk792058.description,
@@ -139,7 +139,7 @@ function C() {
   }))
 }
 
-function N(e) {
+function R(e) {
   var t, n, i, a, s;
   let {
     session: l,
@@ -150,20 +150,20 @@ function N(e) {
   } = e, g = null != (s = null == (t = l.client_info) ? true : t.location) ? s : null == (n = l.client_info) ? true : n.ip, E = null == (i = l.client_info) ? true : i.platform, {
     text: b,
     icon: O
-  } = P(null == (a = l.client_info) ? true : a.os), v = c ? null : (0, h.p)(l.approx_last_used_time), I = [b, E].filter(y.lm), T = [g, v].filter(y.lm);
+  } = w(null == (a = l.client_info) ? true : a.os), v = c ? null : (0, h.p)(l.approx_last_used_time), I = [b, E].filter(y.lm), T = [g, v].filter(y.lm);
   return (0, r.jsxs)("div", {
-    className: o()(A.session, c ? A.currentSession : null),
+    className: o()(C.session, c ? C.currentSession : null),
     children: [(0, r.jsx)("div", {
-      className: A.sessionIcon,
+      className: C.sessionIcon,
       children: (0, r.jsx)(O, {
         size: "md",
         color: "currentColor"
       })
     }), (0, r.jsxs)("div", {
-      className: A.sessionInfo,
+      className: C.sessionInfo,
       children: [(0, r.jsxs)(d.Text, {
         variant: "eyebrow",
-        className: A.sessionInfoRow,
+        className: C.sessionInfoRow,
         children: [(0, r.jsx)("span", {
           children: I[0]
         }), I.length > 1 && (0, r.jsxs)(r.Fragment, {
@@ -175,7 +175,7 @@ function N(e) {
         })]
       }), (0, r.jsxs)(d.Text, {
         variant: "text-sm/medium",
-        className: A.sessionInfoRow,
+        className: C.sessionInfoRow,
         children: [(0, r.jsx)("span", {
           children: T[0]
         }), T.length > 1 && (0, r.jsxs)(r.Fragment, {
@@ -187,7 +187,7 @@ function N(e) {
         })]
       })]
     }), c ? null : m ? (0, r.jsx)("div", {
-      className: A.sessionCheckbox,
+      className: C.sessionCheckbox,
       children: (0, r.jsx)(u.$q, {
         onChange: (e, t) => {
           null == f || f(t)
@@ -195,11 +195,11 @@ function N(e) {
         value: _
       })
     }) : (0, r.jsx)(d.P3F, {
-      className: A.sessionMoreButton,
+      className: C.sessionMoreButton,
       onClick: e => {
         e.shiftKey ? null == f || f(true) : (0, p.L$)(l.id_hash)
       },
-      "aria-label": S.intl.string(S.t.E4MJNj),
+      "aria-label": A.intl.string(A.t.E4MJNj),
       children: (0, r.jsx)(d.Dio, {
         size: "md",
         color: "currentColor"
@@ -208,7 +208,7 @@ function N(e) {
   }, l.id_hash)
 }
 
-function R() {
+function P() {
   let e = (0, Chunk947889.Z)();
   return (0, Chunk951288.jsxs)("div", {
     className: o()(Chunk792058.session, Chunk792058.legacySession),
@@ -244,13 +244,13 @@ function R() {
   })
 }
 
-function P(e) {
+function w(e) {
   switch (null == e ? true : e.toLowerCase().trim()) {
     case null:
     case true:
     case "":
       return {
-        text: S.intl.string(S.t.cDHCNT), icon: d.pzj
+        text: A.intl.string(A.t.cDHCNT), icon: d.pzj
       };
     case "ios":
     case "android":

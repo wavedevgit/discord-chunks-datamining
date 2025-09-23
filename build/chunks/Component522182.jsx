@@ -1,7 +1,7 @@
 /** Chunk was on 31553 **/
 /** chunk id: 522182, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => m
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -14,7 +14,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk475413 = require("./475413.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function f(e) {
+function m(e) {
   var {
     onClose: n
   } = e, t = function(e, n) {
@@ -33,8 +33,8 @@ function f(e) {
     return i
   }(e, ["onClose"]);
   let {
-    analyticsLocations: f,
-    newestAnalyticsLocation: m
+    analyticsLocations: m,
+    newestAnalyticsLocation: f
   } = (0, o.ZP)(), p = (0, i.e7)([c.Z], () => c.Z.hasSaveablePendingChanges());
   return (0, l.jsx)(d.ef, function(e) {
     for (var n = 1; n < arguments.length; n++) {
@@ -61,9 +61,9 @@ function f(e) {
     onClick: () => {
       if (p) return void a.Z.notifyPendingWidgets();
       (0, s.mK)({
-        analyticsLocations: f,
+        analyticsLocations: m,
         openInLayer: false,
-        analyticsSource: m
+        analyticsSource: f
       }), null == n || n()
     }
   }, t))

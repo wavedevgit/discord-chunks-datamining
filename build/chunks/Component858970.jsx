@@ -69,7 +69,7 @@ function Z(e) {
   }, {
     icon: r.owK,
     description: b.intl.string(C ? b.t.QxrDY2 : b.t.W6fjkZ)
-  }], R = (0, m.ZP)(n.id, S), L = d.ZP.getName(null == R ? true : R.guildId, Z, n), M = b.intl.formatToPlainString(b.t.KRe1Fh, {
+  }], R = (0, f.ZP)(n.id, S), L = d.ZP.getName(null == R ? true : R.guildId, Z, n), M = b.intl.formatToPlainString(b.t.KRe1Fh, {
     name: L
   });
   return (0, l.jsx)(s.Gt, {
@@ -130,7 +130,7 @@ function Z(e) {
                 size: "md",
                 isBlocked: C,
                 onClick: () => {
-                  E(), (0, f.pQ)(O({
+                  E(), (0, m.pQ)(O({
                     action: C ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
                     analyticsLocations: w
                   }, _))
@@ -138,7 +138,7 @@ function Z(e) {
               }), (0, l.jsx)(j.Z, {
                 userId: n.id,
                 onClick: () => {
-                  E(), (0, f.pQ)(O({
+                  E(), (0, m.pQ)(O({
                     action: "DONT_SHOW_AGAIN_IGNORED_PROFILE",
                     analyticsLocations: w
                   }, _))

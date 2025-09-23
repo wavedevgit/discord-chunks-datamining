@@ -123,13 +123,13 @@ function T(e) {
         visibleContent: n
       }),
       onClick: E
-    }), O && y.length > 1 && (0, r.jsx)(N, {
+    }), O && y.length > 1 && (0, r.jsx)(j, {
       categories: y
     })]
   })
 }
 
-function N(e) {
+function j(e) {
   let {
     categories: t
   } = e, [n, l] = i.useState(0), {
