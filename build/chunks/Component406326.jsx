@@ -62,10 +62,8 @@ function _(e) {
   } = e, C = (0, d.UX)({
     location: "SearchHeader"
   }), I = (0, u.nP)({
-    isXDMSearch: t.type === f.aib.DMS,
     location: "SearchHeader"
   }), E = (0, u.KS)({
-    isXDMSearch: t.type === f.aib.DMS,
     location: "SearchHeader"
   }), S = (0, h.I)(t), {
     totalFilters: Z

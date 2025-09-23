@@ -35,38 +35,36 @@ let a = {
 
 function s(e) {
   let {
-    isXDMSearch: t,
-    location: n,
-    autoTrackExposure: r = true
-  } = e, a = (0, i.nd)({
-    location: n,
-    autoTrackExposure: r
+    location: t,
+    autoTrackExposure: n = true
+  } = e, r = (0, i.nd)({
+    location: t,
+    autoTrackExposure: n
   }), {
-    isNoTopFiltersRedesignEnabled: s
+    isNoTopFiltersRedesignEnabled: a
   } = o.useExperiment({
-    location: n
+    location: t
   }, {
-    autoTrackExposure: r,
-    disable: a || t
+    autoTrackExposure: n,
+    disable: r
   });
-  return s
+  return a
 }
 
 function l(e) {
   let {
-    isXDMSearch: t,
-    location: n,
-    autoTrackExposure: r = true
-  } = e, a = (0, i.nd)({
-    location: n,
-    autoTrackExposure: r
+    location: t,
+    autoTrackExposure: n = true
+  } = e, r = (0, i.nd)({
+    location: t,
+    autoTrackExposure: n
   }), {
-    isSuggestTopFiltersRedesignEnabled: s
+    isSuggestTopFiltersRedesignEnabled: a
   } = o.useExperiment({
-    location: n
+    location: t
   }, {
-    autoTrackExposure: r,
-    disable: a || t
+    autoTrackExposure: n,
+    disable: r
   });
-  return s
+  return a
 }

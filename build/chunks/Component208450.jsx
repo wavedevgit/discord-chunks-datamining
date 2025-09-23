@@ -507,11 +507,9 @@ function K(e) {
       return null
     }),
     U = (0, R.nP)({
-      isXDMSearch: t.type === G.aib.DMS,
       location: "Search"
     }),
     F = (0, R.KS)({
-      isXDMSearch: t.type === G.aib.DMS,
       location: "Search"
     }),
     V = U || F,

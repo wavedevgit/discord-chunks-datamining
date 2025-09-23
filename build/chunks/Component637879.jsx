@@ -3,15 +3,15 @@
 "use strict";
 require.d(exports, {
   GM: () => G,
+  HU: () => j,
   Q0: () => N,
   V4: () => B,
   _B: () => C,
   dI: () => L,
   do: () => w,
-  dx: () => j,
   f: () => P,
   mW: () => R
-}), require("./35282.js");
+}), require("./781311.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
@@ -97,7 +97,7 @@ function C(e) {
   })), {
     children: (0, r.jsxs)("div", {
       className: v.item,
-      children: [t, (0, r.jsxs)("div", {
+      children: [t, null == i ? n : (0, r.jsxs)("div", {
         children: [n, i]
       })]
     })
@@ -189,13 +189,15 @@ function D(e) {
     children: i
   } = e;
   return (0, r.jsxs)(r.Fragment, {
-    children: [n && (0, r.jsx)("div", {
+    children: ["top" === n && (0, r.jsx)("div", {
       className: v.divider
     }), (0, r.jsx)("ul", {
       role: "group",
       "aria-labelledby": "".concat(t, "-header"),
       children: i
-    }, t)]
+    }, t), "bottom" === n && (0, r.jsx)("div", {
+      className: v.divider
+    })]
   })
 }
 
@@ -226,10 +228,10 @@ function L(e) {
     rows: s,
     title: l,
     trailingIcon: c
-  } = n.data;
+  } = n.data, u = i > 0, d = 0 === i, f = u ? "top" : d ? "bottom" : null;
   return (0, r.jsxs)(D, {
     title: l,
-    showDivider: i > 0,
+    showDivider: f,
     children: [(0, r.jsx)(x, {
       headerId: l,
       titleText: l,
@@ -255,42 +257,42 @@ function L(e) {
 }
 
 function j(e) {
-  let t = "",
-    n = (0, g.cm)(e.text).map((e, n) => {
-      let i = e.getFullMatch();
-      t += i;
-      let a = y.TNx.test(e.type),
-        o = y.KA4.test(e.type),
-        s = "".concat(e.type, "-").concat(i, "-").concat(n);
-      if (o) switch (e.type) {
-        case y.dCx.ANSWER_USERNAME_FROM:
-        case y.dCx.ANSWER_USERNAME_MENTIONS:
-          return (0, r.jsx)(k, {
-            token: e
-          }, s);
-        case y.dCx.ANSWER_IN:
-          return (0, r.jsx)(U, {
-            token: e
-          }, s);
-        default:
-          return (0, r.jsx)(M, {
-            text: i,
-            className: v.answerPill
-          }, s)
-      }
-      return (0, r.jsx)(M, {
-        text: i,
-        className: a ? v.filterPill : true
-      }, s)
-    });
+  let {
+    value: t
+  } = e, n = "", i = (0, g.ew)(t).map((e, t) => {
+    let i = e.getFullMatch();
+    if (0 === i.trim().length) return null;
+    n += i;
+    let a = y.TNx.test(e.type),
+      o = y.KA4.test(e.type),
+      s = "".concat(e.type, "-").concat(i, "-").concat(t);
+    if (o) switch (e.type) {
+      case y.dCx.ANSWER_USERNAME_FROM:
+      case y.dCx.ANSWER_USERNAME_MENTIONS:
+        return (0, r.jsx)(k, {
+          token: e
+        }, s);
+      case y.dCx.ANSWER_IN:
+        return (0, r.jsx)(U, {
+          token: e
+        }, s);
+      default:
+        return (0, r.jsx)(M, {
+          text: i,
+          className: v.answerPill
+        }, s)
+    }
+    return (0, r.jsx)(M, {
+      text: i,
+      className: a ? v.filterPill : v.nonText
+    }, s)
+  });
   return {
     label: (0, r.jsx)("div", {
-      className: v.historyTextLabel,
-      children: n
+      className: v.autocompletePillContainer,
+      children: i
     }),
-    ariaLabel: O.intl.formatToPlainString(O.t.WoiGra, {
-      suggestion: t
-    })
+    ariaLabel: n
   }
 }
 

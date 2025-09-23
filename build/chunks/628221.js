@@ -3,11 +3,11 @@
 "use strict";
 require.d(exports, {
   Nk: () => u,
-  cm: () => l,
+  ew: () => l,
   fC: () => c,
   lR: () => f,
   lw: () => d
-});
+}), require("./35282.js");
 var Chunk349033 = require("./349033.js"),
   Chunk607802 = require("./607802.js"),
   Chunk532428 = require("./532428.js"),
@@ -15,7 +15,7 @@ var Chunk349033 = require("./349033.js"),
   Chunk388032 = require("./388032.jsx");
 
 function l(e) {
-  return (0, i.kG)(e).map((e, t, n) => (0, i.Fr)(e, n[t + 1]) ? e : new r.WU(e.getFullMatch(), r.Xe))
+  return (0, i.kG)(e).map((e, t, n) => o.TNx.test(e.type) || (0, i.Fr)(e, n[t + 1]) ? e : new r.WU(e.getFullMatch(), r.Xe))
 }
 
 function c(e, t) {
