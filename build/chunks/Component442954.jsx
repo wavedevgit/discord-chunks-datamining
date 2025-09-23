@@ -59,7 +59,7 @@ let j = {
   EmailEnterModal: async () => {
     let {
       default: e
-    } = await require.e("93288").then(require.bind(require, 396410));
+    } = await require.e("20670").then(require.bind(require, 993018));
     return t => (0, a.jsx)(e, g(b({}, t), {
       headerText: p.intl.string(p.t.ZLRYGR),
       confirmButtonText: p.intl.string(p.t.PDTjLC),
@@ -69,7 +69,7 @@ let j = {
   EmailPincodeModal: async () => {
     let {
       default: e
-    } = await require.e("94566").then(require.bind(require, 965072));
+    } = await require.e("56499").then(require.bind(require, 433570));
     return t => (0, a.jsx)(e, g(b({}, t), {
       headerText: p.intl.string(p.t.H3Q7U1),
       onFormSubmit: () => {},

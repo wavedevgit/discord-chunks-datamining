@@ -1,5 +1,5 @@
 /** Chunk was on 27978 **/
-/** chunk id: 881317, original params: e,t,n (module,exports,require) **/
+/** chunk id: 909223, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
 }), require("./388685.js");
@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk63063 = require("./63063.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk848496 = require("./848496.js"),
+  Chunk942970 = require("./942970.js"),
   Chunk10198 = require("./10198.js");
 
 function b(e) {
@@ -73,7 +73,7 @@ let I = {
       t(), (0, o.ZDy)(async () => {
         let {
           default: e
-        } = await n.e("94566").then(n.bind(n, 965072));
+        } = await n.e("56499").then(n.bind(n, 433570));
         return n => (0, r.jsx)(e, j(b({}, n), {
           onFormSubmit: s,
           onResend: t,
@@ -91,7 +91,7 @@ let I = {
       onClick: () => void(0, o.ZDy)(async () => {
         let {
           default: e
-        } = await n.e("93288").then(n.bind(n, 396410));
+        } = await n.e("20670").then(n.bind(n, 993018));
         return t => (0, r.jsx)(e, j(b({}, t), {
           onSuccess: s,
           headerText: x.intl.string(x.t.ZLRYGR),
@@ -140,7 +140,7 @@ let I = {
           supportURL: Chunk63063.Z.getArticleURL(Chunk981631.BhN.COPYRIGHT_AND_IP_POLICY)
         })
       }), (0, Chunk951288.jsx)("div", {
-        className: Chunk848496.container,
+        className: Chunk942970.container,
         children: require.map(e => null == I[e] ? null : (0, r.jsx)(N, {
           title: x.intl.string(I[e]),
           menuType: e

@@ -22,7 +22,7 @@ function s(e, t) {
     action: () => (0, i.ZDy)(async () => {
       let {
         default: t
-      } = await n.e("8653").then(n.bind(n, 928090));
+      } = await n.e("95055").then(n.bind(n, 372355));
       return n => {
         var r, i;
         return (0, l.jsx)(t, (r = function(e) {
