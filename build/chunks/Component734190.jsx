@@ -1,4 +1,4 @@
-/** Chunk was on 11160 **/
+/** Chunk was on 89929 **/
 /** chunk id: 734190, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => M
@@ -143,9 +143,9 @@ function L(e) {
     children: e => (0, r.jsx)("div", R(A({}, e), {
       role: "img",
       "aria-label": "".concat(l, " icon"),
-      className: w.iconContainer,
+      className: Z.iconContainer,
       children: (0, r.jsx)(n, {
-        className: w.icon,
+        className: Z.icon,
         color: "currentColor"
       })
     }))
@@ -169,7 +169,7 @@ let M = Chunk647438.memo(function(e) {
   })), V = (0, s.e7)([g.Z], () => g.Z.isMuted(t.id)), H = (0, j.p)({
     location: "GuildSidebarThreadListEntry"
   }), z = (0, s.e7)([y.default], () => y.default.getUser(t.ownerId)), W = i.useCallback(e => {
-    (0, m.ok)(t, !e.shiftKey, I.on.CHANNEL_LIST)
+    (0, m.ok)(t, !e.shiftKey, P.on.CHANNEL_LIST)
   }, [t]), K = i.useCallback(() => {
     u.Z.preload(t.guild_id, t.id)
   }, [t.guild_id, t.id]), Y = i.useCallback(e => {
@@ -208,8 +208,8 @@ let M = Chunk647438.memo(function(e) {
   });
   return (0, r.jsxs)("li", {
     role: Q,
-    className: o()(Z.containerDefault, {
-      [Z.selected]: l
+    className: o()(w.containerDefault, {
+      [w.selected]: l
     }),
     children: [(0, r.jsx)(D, {
       withGuildIcon: M
@@ -228,31 +228,31 @@ let M = Chunk647438.memo(function(e) {
         right: 4
       },
       children: (0, r.jsxs)("div", {
-        className: o()(Z.iconVisibility, w.wrapper, w.typeThread, {
-          [w.modeSelected]: l,
-          [w.modeMuted]: !l && V,
-          [w.modeUnreadImportant]: !V && !l && G,
-          [w.withGuildIcon]: M,
-          [w.threadsInChannelListQoLExperiment]: H.enabled,
-          [w.withThreadAvatar]: "icon-with-avatar" === H.variant,
-          [w.withThreadIconInBubble]: "icon-in-bubble" === H.variant
+        className: o()(w.iconVisibility, Z.wrapper, Z.typeThread, {
+          [Z.modeSelected]: l,
+          [Z.modeMuted]: !l && V,
+          [Z.modeUnreadImportant]: !V && !l && G,
+          [Z.withGuildIcon]: M,
+          [Z.threadsInChannelListQoLExperiment]: H.enabled,
+          [Z.withThreadAvatar]: "icon-with-avatar" === H.variant,
+          [Z.withThreadIconInBubble]: "icon-in-bubble" === H.variant
         }),
         onMouseDown: K,
         onContextMenu: Y,
         children: [!G || V || l ? null : (0, r.jsx)("div", {
-          className: o()(w.unread, w.unreadImportant)
+          className: o()(Z.unread, Z.unreadImportant)
         }), (0, r.jsx)(c.P3F, R(A({}, J), {
           innerRef: $,
-          className: w.link,
+          className: Z.link,
           onClick: W,
           "aria-label": ee,
           focusProps: {
             enabled: false
           },
           children: (0, r.jsxs)("div", {
-            className: o()(w.linkTop, w.__invalid_threadMainContent),
+            className: o()(Z.linkTop, Z.__invalid_threadMainContent),
             children: ["icon-with-avatar" === H.variant ? (0, r.jsxs)("div", {
-              className: w.threadIconWithAvatar,
+              className: Z.threadIconWithAvatar,
               children: [(0, r.jsx)(L, {
                 thread: t
               }), null == z ? null : (0, r.jsx)(p.Z, {
@@ -262,11 +262,11 @@ let M = Chunk647438.memo(function(e) {
             }) : null, "icon-in-bubble" === H.variant ? (0, r.jsx)(L, {
               thread: t
             }) : null, (0, r.jsx)(h.Z, {
-              className: w.name,
+              className: Z.name,
               "aria-hidden": true,
               children: t.name
             }), (0, r.jsxs)("div", {
-              className: w.children,
+              className: Z.children,
               children: [q > 0 && t.userLimit > 0 ? (0, r.jsx)(C.Z, {
                 userCount: q,
                 video: U,
@@ -284,7 +284,7 @@ let M = Chunk647438.memo(function(e) {
       collapsed: !f,
       collapsedMax: 6,
       voiceStates: k,
-      location: P.Sbl.GUILD_CHANNEL_LIST
+      location: I.Sbl.GUILD_CHANNEL_LIST
     })]
   })
 })

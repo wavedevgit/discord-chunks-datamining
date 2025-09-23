@@ -1,7 +1,7 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 21616 **/
 /** chunk id: 10401, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => C
+  Z: () => _
 }), require("./388685.js");
 var r, Chunk873546 = require("./873546.js"),
   Chunk442837 = require("./442837.js"),
@@ -58,7 +58,7 @@ function y() {
         for (let n of exports.prerequisites) false !== h[require] && (g[module] = false)
     }
 }
-class _ extends(r = Chunk442837.ZP.Store) {
+class C extends(r = Chunk442837.ZP.Store) {
   initialize() {
     y(), this.mustEmitChanges(e => "CONNECTION_OPEN" !== e.type), this.waitFor(Chunk38618.Z)
   }
@@ -79,8 +79,8 @@ class _ extends(r = Chunk442837.ZP.Store) {
     return null != t ? t[e] : null
   }
 }
-u(_, "displayName", "TutorialIndicatorStore");
-let C = new _(Chunk570140.Z, {
+u(C, "displayName", "TutorialIndicatorStore");
+let _ = new C(Chunk570140.Z, {
   CONNECTION_OPEN: function(e) {
     let {
       tutorial: t

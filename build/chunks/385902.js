@@ -1,4 +1,4 @@
-/** Chunk was on 11160 **/
+/** Chunk was on 89929 **/
 /** chunk id: 385902, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   K: () => y,
@@ -55,24 +55,24 @@ function y(e, t) {
     C = (0, c.q8)(e, t),
     E = (0, l.e7)([s.Z], () => s.Z.getStateForGuild(e)),
     S = null == E || null == (n = E.allPowerups) ? true : n[i.A$],
-    P = (0, d.ZP)(e, S),
-    I = null == S ? true : S.storeRemovalDate,
+    I = (0, d.ZP)(e, S),
+    P = null == S ? true : S.storeRemovalDate,
     N = null == E || null == (O = E.allPowerups) ? true : O[i.XW],
-    Z = (0, l.e7)([o.Z], () => {
+    w = (0, l.e7)([o.Z], () => {
       var t;
       return null == (t = o.Z.getGuild(e)) ? true : t.features
     }),
-    w = null != (_ = null == Z ? true : Z.has(g.oNc.PARTNERED)) && _,
+    Z = null != (_ = null == w ? true : w.has(g.oNc.PARTNERED)) && _,
     {
       onActivate: T
     } = (0, f._C)(e, N),
-    A = !j && x && C && null != S && !w && P.type === h.A3.POWERUP_ACTIVATED && null != I && null != N && null != v,
+    A = !j && x && C && null != S && !Z && I.type === h.A3.POWERUP_ACTIVATED && null != P && null != N && null != v,
     R = r.useCallback(e => {
       T(e)
     }, [T]),
     D = r.useMemo(() => {
       if (!A) return null;
-      let e = (0, p.Z)(I),
+      let e = (0, p.Z)(P),
         t = v.premiumTier === g.Eu4.TIER_2 ? b.intl.string(m.default["0uo/LC"]) : true;
       return {
         firstHeader: S.title,
@@ -90,7 +90,7 @@ function y(e, t) {
         primaryButtonText: t,
         onPrimaryClick: null != t ? R : true
       }
-    }, [A, S, I, v, R]);
+    }, [A, S, P, v, R]);
   return {
     shouldShow: A,
     modalConfig: D

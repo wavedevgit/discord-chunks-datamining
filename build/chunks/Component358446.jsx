@@ -1,5 +1,6 @@
 /** Chunk was on 63141 **/
 /** chunk id: 358446, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   K: () => f,
   Z: () => g
@@ -37,7 +38,7 @@ function g(e) {
   } = e, {
     trackView: n,
     trackClick: r
-  } = (0, s.R)(d.n0.KeybindIndicatorsNotification, {
+  } = (0, l.R)(d.n0.KeybindIndicatorsNotification, {
     notif_type: d.n0.KeybindIndicatorsNotification
   });
   return {
@@ -46,13 +47,13 @@ function g(e) {
       className: p.notificationBody,
       children: [(0, i.jsx)("div", {
         className: p.iconContainer,
-        children: (0, i.jsx)(l.S6n, {
+        children: (0, i.jsx)(s.S6n, {
           size: "custom",
           color: "currentColor",
           height: 28,
           width: 28
         })
-      }), (0, i.jsx)(l.Text, {
+      }), (0, i.jsx)(s.Text, {
         variant: "text-sm/normal",
         children: h.intl.string(h.t.EFRNtL)
       })]

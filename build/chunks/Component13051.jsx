@@ -1,7 +1,7 @@
-/** Chunk was on 47463 **/
+/** Chunk was on 58511 **/
 /** chunk id: 13051, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => Z
 }), require("./388685.js"), require("./642613.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -30,7 +30,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk516941 = require("./516941.js"),
   Chunk197571 = require("./197571.js");
 
-function I(e) {
+function P(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -49,12 +49,12 @@ function I(e) {
   return e
 }
 
-function P(e) {
+function Z(e) {
   let t, {
       guild: n,
       integration: l,
       editedIntegration: o,
-      isExpanded: P,
+      isExpanded: Z,
       onToggleExpand: T,
       onDisable: E,
       onEnable: k
@@ -67,15 +67,15 @@ function P(e) {
     M = r.useCallback(() => {
       l.syncing || (0, p.h7j)(e => {
         var t, n;
-        let r = 0 === l.expire_behavior ? S.intl.string(S.t["6kpw4u"]) : S.intl.string(S.t.fQUQIC);
-        return (0, i.jsx)(p.ConfirmModal, (t = I({}, e), n = n = {
-          header: S.intl.string(S.t.emx3lJ),
+        let r = 0 === l.expire_behavior ? w.intl.string(w.t["6kpw4u"]) : w.intl.string(w.t.fQUQIC);
+        return (0, i.jsx)(p.ConfirmModal, (t = P({}, e), n = n = {
+          header: w.intl.string(w.t.emx3lJ),
           confirmText: r,
-          cancelText: S.intl.string(S.t["ETE/oK"]),
+          cancelText: w.intl.string(w.t["ETE/oK"]),
           onConfirm: () => E(l),
           children: (0, i.jsx)(p.Text, {
             variant: "text-md/normal",
-            children: l.type === c.b.YOUTUBE ? S.intl.string(S.t.anKQWV) : S.intl.string(S.t["BW/xtr"])
+            children: l.type === c.b.YOUTUBE ? w.intl.string(w.t.anKQWV) : w.intl.string(w.t["BW/xtr"])
           })
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);
@@ -100,7 +100,7 @@ function P(e) {
       channelURL: H,
       expireBehaviorLabel: G,
       syncLabel: F,
-      subscribersText: K
+      subscribersText: z
     } = r.useMemo(() => {
       var e, t, n, i, r;
       let a = null != (n = null == (t = b.Z.get(l.type)) || null == (e = t.getPlatformUserUrl) ? true : e.call(t, {
@@ -110,14 +110,14 @@ function P(e) {
       switch (l.type) {
         case c.b.YOUTUBE:
           return {
-            serviceName: S.intl.string(S.t.aS6cKy), expireBehaviorLabel: S.intl.string(S.t.A5MiqK), syncLabel: S.intl.string(S.t["7vHKVV"]), subscribersText: S.intl.formatToPlainString(S.t["7lNtcX"], {
+            serviceName: w.intl.string(w.t.aS6cKy), expireBehaviorLabel: w.intl.string(w.t.A5MiqK), syncLabel: w.intl.string(w.t["7vHKVV"]), subscribersText: w.intl.formatToPlainString(w.t["7lNtcX"], {
               subscribers: null != (i = l.subscriber_count) ? i : 0
             }), channelURL: a
           };
         case c.b.TWITCH:
         default:
           return {
-            serviceName: S.intl.string(S.t.q4pBGx), expireBehaviorLabel: S.intl.string(S.t["S/WCrK"]), syncLabel: S.intl.string(S.t["0jbPKy"]), subscribersText: S.intl.formatToPlainString(S.t.RdUTrq, {
+            serviceName: w.intl.string(w.t.q4pBGx), expireBehaviorLabel: w.intl.string(w.t["S/WCrK"]), syncLabel: w.intl.string(w.t["0jbPKy"]), subscribersText: w.intl.formatToPlainString(w.t.RdUTrq, {
               subscribers: null != (r = l.subscriber_count) ? r : 0
             }), channelURL: a
           }
@@ -125,21 +125,21 @@ function P(e) {
     }, [l.account, l.subscriber_count, l.type]),
     q = (0, d.e7)([j.Z], () => null != l.role_id ? j.Z.getRole(n.id, l.role_id) : true),
     {
-      roleLink: z,
+      roleLink: K,
       syncDescriptionText: V
     } = r.useMemo(() => {
       let e;
       e = null != q ? (0, i.jsx)(p.eee, {
         onClick: U,
         children: q.name
-      }) : S.intl.string(S.t.PoWNfX);
+      }) : w.intl.string(w.t.PoWNfX);
       let t = b.Z.get(l.type);
       return {
         roleLink: e,
-        syncDescriptionText: l.revoked && null != t ? S.intl.formatToPlainString(S.t.G16Wjo, {
+        syncDescriptionText: l.revoked && null != t ? w.intl.formatToPlainString(w.t.G16Wjo, {
           user: l.user,
           platformName: t.name
-        }) : S.intl.formatToPlainString(S.t.unl3AA, {
+        }) : w.intl.formatToPlainString(w.t.unl3AA, {
           datetime: s()(l.synced_at).calendar()
         })
       }
@@ -154,9 +154,9 @@ function P(e) {
       (null == o ? true : o.id) === l.id && (null == o ? true : o.enabled) === true && D(false)
     }, [o, l.id]), l.enabled && null != l.user) t = [{
     icon: p.T39,
-    text: R ? S.intl.formatToPlainString(S.t.gcdJ8P, {
+    text: R ? w.intl.formatToPlainString(w.t.gcdJ8P, {
       timestamp: _.default.extractTimestamp(l.id)
-    }) : S.intl.formatToPlainString(S.t.Nu9sam, {
+    }) : w.intl.formatToPlainString(w.t.Nu9sam, {
       user: null != l.user ? new x.Z(l.user).tag : null,
       timestamp: _.default.extractTimestamp(l.id)
     })
@@ -164,26 +164,26 @@ function P(e) {
   else {
     let e = new URL(H);
     t = [{
-      text: S.intl.format(S.t.BegylZ, {
+      text: w.intl.format(w.t.BegylZ, {
         serviceName: W,
         accountUrl: H,
         accountUrlText: e.hostname + e.pathname
       })
     }]
   }
-  let J = (0, i.jsxs)(g.Z, {
-      className: w.header,
+  let X = (0, i.jsxs)(g.Z, {
+      className: S.header,
       align: g.Z.Align.CENTER,
       children: [(0, i.jsx)(C.Z, {
         name: "".concat(l.name),
-        detailsClassName: w.description,
+        detailsClassName: S.description,
         details: t
       }), l.enabled ? (0, i.jsx)(g.Z.Child, {
         shrink: 0,
         grow: 0,
         children: (0, i.jsx)(y.Z, {
-          className: w.expandIcon,
-          expanded: P && !A,
+          className: S.expandIcon,
+          expanded: Z && !A,
           "aria-hidden": true
         })
       }) : (0, i.jsx)(g.Z.Child, {
@@ -194,21 +194,21 @@ function P(e) {
           size: "sm",
           disabled: true,
           icon: p.DuK,
-          "aria-label": S.intl.string(S.t["7sCN8v"])
+          "aria-label": w.intl.string(w.t["7sCN8v"])
         }) : (0, i.jsx)(p.zxk, {
           variant: "primary",
           size: "sm",
           onClick: L,
-          text: S.intl.string(S.t["7sCN8v"])
+          text: w.intl.string(w.t["7sCN8v"])
         })
       })]
     }),
-    X = null;
-  return P && !A && null != o && (X = (0, i.jsxs)(g.Z, {
-    className: w.body,
+    J = null;
+  return Z && !A && null != o && (J = (0, i.jsxs)(g.Z, {
+    className: S.body,
     direction: g.Z.Direction.VERTICAL,
     children: [(0, i.jsx)(p.$i$, {
-      className: w.topDivider
+      className: S.topDivider
     }), function(e) {
       let {
         integration: t,
@@ -222,10 +222,10 @@ function P(e) {
         children: [(0, i.jsxs)(g.Z.Child, {
           basis: "50%",
           children: [(0, i.jsx)(p.vwX, {
-            className: Z.marginBottom8,
-            children: S.intl.string(S.t.eBtNBQ)
+            className: I.marginBottom8,
+            children: w.intl.string(w.t.eBtNBQ)
           }), (0, i.jsx)(p.Text, {
-            className: w.syncedRole,
+            className: S.syncedRole,
             color: "header-primary",
             variant: "text-sm/normal",
             children: a
@@ -233,7 +233,7 @@ function P(e) {
         }), (0, i.jsxs)(g.Z.Child, {
           basis: "50%",
           children: [(0, i.jsx)(p.vwX, {
-            className: Z.marginBottom8,
+            className: I.marginBottom8,
             children: n
           }), (0, i.jsxs)(g.Z, {
             justify: g.Z.Justify.BETWEEN,
@@ -252,12 +252,12 @@ function P(e) {
               size: "sm",
               variant: "primary",
               icon: p.DuK,
-              "aria-label": S.intl.string(S.t.BkuOOz),
+              "aria-label": w.intl.string(w.t.BkuOOz),
               disabled: true
             }) : (0, i.jsx)(p.zxk, {
               size: "sm",
               variant: "primary",
-              text: S.intl.string(S.t.BkuOOz),
+              text: w.intl.string(w.t.BkuOOz),
               disabled: t.revoked,
               onClick: o
             })]
@@ -267,12 +267,12 @@ function P(e) {
     }({
       integration: o,
       labelText: F,
-      subscribersText: K,
+      subscribersText: z,
       descriptionText: V,
-      roleLink: z,
+      roleLink: K,
       onSync: B
     }), (0, i.jsx)(p.$i$, {
-      className: w.midDivider
+      className: S.midDivider
     }), function(e) {
       let {
         integration: t,
@@ -284,17 +284,17 @@ function P(e) {
         children: [(0, i.jsxs)(g.Z.Child, {
           basis: "50%",
           children: [(0, i.jsx)(p.vwX, {
-            className: Z.marginBottom8,
+            className: I.marginBottom8,
             children: n
           }), (0, i.jsx)(p.q4e, {
             placeholder: n,
             value: "".concat(t.expire_behavior),
             options: [{
               value: "0",
-              label: S.intl.string(S.t["6kpw4u"])
+              label: w.intl.string(w.t["6kpw4u"])
             }, {
               value: "1",
-              label: S.intl.string(S.t.fQUQIC)
+              label: w.intl.string(w.t.fQUQIC)
             }],
             isDisabled: t.syncing,
             onChange: e => r(parseInt(e))
@@ -302,15 +302,15 @@ function P(e) {
         }), (0, i.jsxs)(g.Z.Child, {
           basis: "50%",
           children: [(0, i.jsx)(p.vwX, {
-            className: Z.marginBottom8,
-            children: S.intl.string(S.t.uiXMo6)
+            className: I.marginBottom8,
+            children: w.intl.string(w.t.uiXMo6)
           }), (0, i.jsx)(p.q4e, {
-            placeholder: S.intl.string(S.t.uiXMo6),
+            placeholder: w.intl.string(w.t.uiXMo6),
             maxVisibleItems: 5,
             value: "".concat(t.expire_grace_period),
             options: [1, 3, 7, 14, 30].map(e => ({
               value: "".concat(e),
-              label: S.intl.formatToPlainString(S.t.eGjmy8, {
+              label: w.intl.formatToPlainString(w.t.eGjmy8, {
                 days: e
               })
             })),
@@ -342,7 +342,7 @@ function P(e) {
         direction: g.Z.Direction.VERTICAL,
         children: [(0, i.jsx)(u.$q, {
           type: u.M0.INVERTED,
-          className: a()(Z.marginTop20, Z.marginBottom8),
+          className: a()(I.marginTop20, I.marginBottom8),
           value: t.enable_emoticons,
           disabled: t.syncing,
           onChange: e => {
@@ -352,19 +352,19 @@ function P(e) {
             return r(t.checked)
           },
           children: (0, i.jsx)(p.R94, {
-            children: S.intl.string(S.t["7r4OKi"])
+            children: w.intl.string(w.t["7r4OKi"])
           })
         }), (0, i.jsx)(g.Z, {
           wrap: g.Z.Wrap.WRAP,
-          className: w.__invalid_twitchEmojis,
+          className: S.__invalid_twitchEmojis,
           children: n.map((e, t) => (0, i.jsx)(p.ua7, {
             text: e.name,
-            children: t => (0, i.jsx)("img", I({
-              alt: S.intl.formatToPlainString(S.t.n6ZZn5, {
+            children: t => (0, i.jsx)("img", P({
+              alt: w.intl.formatToPlainString(w.t.n6ZZn5, {
                 name: e.name
               }),
               draggable: false,
-              className: a()(w.emoji, "emoji", "jumboable"),
+              className: a()(S.emoji, "emoji", "jumboable"),
               src: O.ZP.getEmojiURL({
                 id: e.id,
                 animated: e.animated,
@@ -383,26 +383,26 @@ function P(e) {
         })
       }
     }) : null, (0, i.jsx)(p.$i$, {
-      className: w.bottomDivider
+      className: S.bottomDivider
     }), (0, i.jsx)(g.Z, {
       children: (0, i.jsx)(p.zxk, {
         size: "sm",
         variant: "critical-secondary",
-        text: S.intl.string(S.t.M6q6eX),
+        text: w.intl.string(w.t.M6q6eX),
         onClick: M
       })
     })]
   })), (0, i.jsx)(p.Zbd, {
     editable: true,
-    className: w.card,
+    className: S.card,
     children: (0, i.jsxs)(g.Z, {
       direction: g.Z.Direction.VERTICAL,
       children: [l.enabled ? (0, i.jsx)(p.P3F, {
-        className: w.expandableHeader,
-        "aria-expanded": P && !A,
+        className: S.expandableHeader,
+        "aria-expanded": Z && !A,
         onClick: T,
-        children: J
-      }) : J, X]
+        children: X
+      }) : X, J]
     })
   })
 }

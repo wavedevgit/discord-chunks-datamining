@@ -1,7 +1,7 @@
-/** Chunk was on 10576 **/
+/** Chunk was on 66201 **/
 /** chunk id: 727381, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => N
+  Z: () => O
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -21,7 +21,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk87819 = require("./87819.js");
 
-function h() {
+function N() {
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk87819.header,
     children: [(0, Chunk951288.jsxs)("div", {
@@ -43,32 +43,32 @@ function h() {
   })
 }
 
-function N(e) {
+function O(e) {
   let {
     userId: t,
     guildId: n,
     location: l,
     className: c,
-    onNavigate: I
-  } = e, N = (0, a.e7)([u.default], () => u.default.getUser(t), [t]), O = (0, a.e7)([o.ZP], () => o.ZP.getMember(n, t), [n, t]);
-  return null == N || null == O ? null : (0, r.jsxs)("div", {
+    onNavigate: m
+  } = e, O = (0, s.e7)([u.default], () => u.default.getUser(t), [t]), h = (0, s.e7)([o.ZP], () => o.ZP.getMember(n, t), [n, t]);
+  return null == O || null == h ? null : (0, r.jsxs)("div", {
     className: i()(g.container, c),
-    children: [(0, r.jsx)(h, {}), (0, r.jsxs)(s.Ttm, {
+    children: [(0, r.jsx)(N, {}), (0, r.jsxs)(a.Ttm, {
       className: g.innerContainer,
       children: [(0, r.jsx)(T.Z, {
-        member: O
-      }), (0, r.jsx)(m.Z, {
+        member: h
+      }), (0, r.jsx)(I.Z, {
         userId: t,
         guildId: n
       }), (0, r.jsx)(A.Z, {
-        member: O,
-        onNavigate: I
+        member: h,
+        onNavigate: m
       }), (0, r.jsx)(d.Z, {
-        member: O
+        member: h
       }), (0, r.jsx)(E.Z, {
-        member: O
+        member: h
       }), (0, r.jsx)(_.Z, {
-        member: O
+        member: h
       })]
     })]
   })

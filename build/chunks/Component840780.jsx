@@ -1,7 +1,7 @@
-/** Chunk was on 11160 **/
+/** Chunk was on 89929 **/
 /** chunk id: 840780, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => eZ
+  Z: () => ew
 }), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -102,7 +102,7 @@ function eS(e) {
   return e
 }
 
-function eP(e, t) {
+function eI(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -114,7 +114,7 @@ function eP(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let eI = (0, Chunk438139.Z)(function(e) {
+let eP = (0, Chunk438139.Z)(function(e) {
   let {
     message: t
   } = e;
@@ -143,7 +143,7 @@ class eN extends Chunk647438.PureComponent {
     })
   }
   renderActions() {
-    return (0, Chunk951288.jsx)(Chunk339144.J, eP(eS({}, this.props), {
+    return (0, Chunk951288.jsx)(Chunk339144.J, eI(eS({}, this.props), {
       inviteButtonRef: this.inviteButtonRef
     }))
   }
@@ -189,7 +189,7 @@ class eN extends Chunk647438.PureComponent {
                 action_type: "invite_to_game",
                 game_id: null != (e = null == c ? true : c.id) ? e : null,
                 application_id: l.application_id
-              }), (0, w.v)(f, w.d.INVITE), eu.default.track(eO.rMx.OPEN_MODAL, {
+              }), (0, Z.v)(f, Z.d.INVITE), eu.default.track(eO.rMx.OPEN_MODAL, {
                 type: "Send Join Invite",
                 application_id: l.application_id,
                 location: a.location
@@ -341,7 +341,7 @@ class eN extends Chunk647438.PureComponent {
           setIsForceShowSharingPopout: s,
           children: (0, Chunk951288.jsxs)("div", {
             className: Chunk800339.info,
-            children: [Chunk907862, null != Chunk647438 && (0, Chunk131704.Qm)(Chunk647438.type) ? Chunk198168 : (0, Chunk951288.jsx)(eI, {
+            children: [Chunk907862, null != Chunk647438 && (0, Chunk131704.Qm)(Chunk647438.type) ? Chunk198168 : (0, Chunk951288.jsx)(eP, {
               timestamps: Chunk442837
             })]
           })
@@ -380,7 +380,7 @@ class eN extends Chunk647438.PureComponent {
           ref: this.accountLinkUpsellTargetRef
         }), (0, Chunk951288.jsxs)("div", {
           className: Chunk800339.info,
-          children: [Chunk647438, (0, Chunk951288.jsx)(eI, {
+          children: [Chunk647438, (0, Chunk951288.jsx)(eP, {
             timestamps: require
           })]
         })]
@@ -436,7 +436,7 @@ class eN extends Chunk647438.PureComponent {
         embeddedActivity: n,
         isActivityPopoutOpen: r
       } = this.props;
-      s()(null != n, "Activity cannot be null during navigation click"), s()(null != t, "Channel cannot be null during navigation click"), b.Z.channelListScrollTo(null != (e = t.guild_id) ? e : eO.ME, t.id), !r && ((0, Q.vd)(t.type) && m.Z.selectParticipant(t.id, (0, Z.gN)({
+      s()(null != n, "Activity cannot be null during navigation click"), s()(null != t, "Channel cannot be null during navigation click"), b.Z.channelListScrollTo(null != (e = t.guild_id) ? e : eO.ME, t.id), !r && ((0, Q.vd)(t.type) && m.Z.selectParticipant(t.id, (0, w.gN)({
         applicationId: n.applicationId,
         instanceId: n.compositeInstanceId
       })), (0, Q.Qm)(t.type) && (0, x.tg)(ey.Ez.PANEL))
@@ -451,7 +451,7 @@ class eN extends Chunk647438.PureComponent {
     })
   }
 }
-let eZ = (0, Chunk730749.Z)(function(e) {
+let ew = (0, Chunk730749.Z)(function(e) {
   var t, {
       guildId: n
     } = e,
@@ -484,8 +484,8 @@ let eZ = (0, Chunk730749.Z)(function(e) {
     [y] = (0, N.Z)([null != (t = null != h && null != h.id ? h.id : null != a && null != a.id ? a.id : null != m ? m.applicationId : null != b ? b.applicationId : true) ? t : ""]),
     x = (0, c.e7)([R.Z], () => R.Z.getFakeGameData()),
     S = (0, c.e7)([C.ZP], () => C.ZP.getCurrentEmbeddedActivity()),
-    Z = (0, E.Z)() && null != S && (0, j.R)(),
-    w = (0, c.e7)([er.Z], () => (0, F.Z)(er.Z) && (0, ep.isWindows)()),
+    w = (0, E.Z)() && null != S && (0, j.R)(),
+    Z = (0, c.e7)([er.Z], () => (0, F.Z)(er.Z) && (0, ep.isWindows)()),
     A = (0, c.e7)([el.Z], () => null != o ? el.Z.findActivity(o, e => e.type === eO.IIU.PLAYING) : null),
     D = null != f && f.ownerId === o && f.state !== eO.jm8.ENDED,
     L = (0, c.e7)([es.default, eo.Z], () => null != d ? (0, T.F6)(d, es.default, eo.Z) : true),
@@ -497,7 +497,7 @@ let eZ = (0, Chunk730749.Z)(function(e) {
       canStartAuthorization: q,
       connectionApp: Q,
       startAuthorization: ed
-    } = (0, I.F)(y),
+    } = (0, P.F)(y),
     {
       isQuestBarEmpty: eh,
       hasLoadedQuestBar: eg
@@ -509,7 +509,7 @@ let eZ = (0, Chunk730749.Z)(function(e) {
     }).enabled,
     {
       parentAnalyticsLocation: eb
-    } = (0, P.ZP)(),
+    } = (0, I.ZP)(),
     ey = (0, _.O)(e => {
       if (e && null != Q) {
         var t;
@@ -519,9 +519,9 @@ let eZ = (0, Chunk730749.Z)(function(e) {
         })
       }
     });
-  return (0, r.jsx)(eN, eP(eS({}, l), {
+  return (0, r.jsx)(eN, eI(eS({}, l), {
     guildId: n,
-    canGoLive: w || Z || true !== x,
+    canGoLive: Z || w || true !== x,
     activity: A,
     embeddedActivity: m,
     frame: b,

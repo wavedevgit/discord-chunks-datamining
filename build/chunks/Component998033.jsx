@@ -1,5 +1,6 @@
 /** Chunk was on 63141 **/
 /** chunk id: 998033, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => O
 });
@@ -23,12 +24,12 @@ var Chunk13245 = require("./13245.js"),
 function O(e, t, n, O) {
   var v;
   let {
-    icon: _,
-    title: b,
+    icon: b,
+    title: _,
     body: E
-  } = (0, l.Xi)(e, t, n), {
-    trackView: S,
-    trackClick: x
+  } = (0, s.Xi)(e, t, n), {
+    trackView: x,
+    trackClick: S
   } = (0, f.R)(m.n0.TextChat, {
     notif_type: m.n0.TextChat,
     notif_user_id: null == (v = t.author) ? true : v.id,
@@ -39,8 +40,8 @@ function O(e, t, n, O) {
     channel_type: e.type
   });
   return {
-    icon: _,
-    title: b,
+    icon: b,
+    title: _,
     body: E,
     renderFooter: e => e ? (0, i.jsx)("div", {
       style: {
@@ -50,16 +51,16 @@ function O(e, t, n, O) {
     }) : null,
     maxBodyLines: 2,
     onNotificationShow: () => {
-      O && (0, a.GN)(c.Ay, c.yk), S()
+      O && (0, a.GN)(c.Ay, c.yk), x()
     },
     onNotificationClick: () => {
       if (o.default.isOverlayOOPEnabledForPid((0, p.getPID)())) {
         let n = (0, p.getPID)();
-        d.default.isInstanceLocked() ? (x("unlock"), r.Z.setInputLocked(false, n)) : (x("jump"), (0, s.uL)(g.Z5c.CHANNEL(e.guild_id, e.id, t.id)), u.isPlatformEmbedded && h.ZP.focus())
-      } else(0, s.uL)(g.Z5c.CHANNEL(e.guild_id, e.id)), x("jump"), d.default.isInstanceLocked() && r.Z.setInstanceLocked(false)
+        d.default.isInstanceLocked() ? (S("unlock"), r.Z.setInputLocked(false, n)) : (S("jump"), (0, l.uL)(g.Z5c.CHANNEL(e.guild_id, e.id, t.id)), u.isPlatformEmbedded && h.ZP.focus())
+      } else(0, l.uL)(g.Z5c.CHANNEL(e.guild_id, e.id)), S("jump"), d.default.isInstanceLocked() && r.Z.setInstanceLocked(false)
     },
     onDismissClick: () => {
-      x("dismiss")
+      S("dismiss")
     }
   }
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 21616 **/
 /** chunk id: 862679, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -23,21 +23,21 @@ let p = function(e) {
     onButtonClick: g,
     imageSrc: b,
     animationSrc: y,
-    secondaryButtonText: _,
-    onSecondaryButtonClick: C,
+    secondaryButtonText: C,
+    onSecondaryButtonClick: _,
     children: v,
     useReducedMotion: x = false
-  } = e, j = (0, a.e7)([u.ZP], () => u.ZP.getState().isMembersOpen);
-  if (l.tq && j) return null;
+  } = e, O = (0, a.e7)([u.ZP], () => u.ZP.getState().isMembersOpen);
+  if (l.tq && O) return null;
   if (null == t) return (0, r.jsx)(r.Fragment, {
     children: i.Children.only(v)
   });
-  let O = null;
-  return null != b ? O = (0, r.jsx)("img", {
+  let j = null;
+  return null != b ? j = (0, r.jsx)("img", {
     alt: "",
     src: b,
     className: d.image
-  }) : null != y && (O = (0, r.jsx)(s.Fmz, {
+  }) : null != y && (j = (0, r.jsx)(s.Fmz, {
     importData: y,
     shouldAnimate: !x,
     className: d.animation
@@ -45,7 +45,7 @@ let p = function(e) {
     className: d.wrapper,
     children: [(0, r.jsxs)("div", {
       className: d.content,
-      children: [O, (0, r.jsxs)("div", {
+      children: [j, (0, r.jsxs)("div", {
         className: d.text,
         children: [(0, r.jsx)(s.X6q, {
           variant: "heading-md/semibold",
@@ -59,14 +59,14 @@ let p = function(e) {
       })]
     }), (0, r.jsxs)("div", {
       className: d.buttonContainer,
-      children: [null != _ && (0, r.jsx)(o.zx, {
+      children: [null != C && (0, r.jsx)(o.zx, {
         className: d.button,
         size: o.zx.Sizes.SMALL,
-        onClick: C,
+        onClick: _,
         look: o.zx.Looks.LINK,
         color: o.zx.Colors.PRIMARY,
         submitting: m,
-        children: _
+        children: C
       }), null != h && (0, r.jsx)(o.zx, {
         className: d.button,
         innerClassName: d.innerButton,

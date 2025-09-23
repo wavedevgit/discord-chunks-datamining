@@ -1,4 +1,4 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 91053 **/
 /** chunk id: 473065, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -20,17 +20,17 @@ function f(e) {
   let {
     channel: t,
     showCallOrActivityPanel: n
-  } = e, f = (0, i.e7)([u.ZP], () => u.ZP.getSection(t.id, null == t ? true : t.isDM())), m = (0, s.ZP)(t.getRecipientId()), g = (0, c.Z)(), b = f === p.ULH.PROFILE && g;
-  return (0, r.jsx)(d.JO, {
-    disabled: !g || n,
-    tooltip: !g || n ? h.intl.string(h.t.YneDgI) : b ? h.intl.string(h.t.niD64e) : h.intl.string(h.t["+FAsHh"]),
+  } = e, f = (0, i.e7)([d.ZP], () => d.ZP.getSection(t.id, null == t ? true : t.isDM())), g = (0, o.ZP)(t.getRecipientId()), m = (0, c.Z)(), b = f === p.ULH.PROFILE && m;
+  return (0, r.jsx)(u.JO, {
+    disabled: !m || n,
+    tooltip: !m || n ? h.intl.string(h.t.YneDgI) : b ? h.intl.string(h.t.niD64e) : h.intl.string(h.t["+FAsHh"]),
     icon: l.z65,
     onClick: () => {
-      (0, o.TY)({
-        displayProfile: m,
+      (0, s.TY)({
+        displayProfile: g,
         isProfileOpen: !b
       }), a.Z.toggleUserProfileSidebarSection()
     },
-    selected: b && g && !n
+    selected: b && m && !n
   })
 }

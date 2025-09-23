@@ -2,20 +2,20 @@
 /** chunk id: 335131, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  B1: () => B,
-  DR: () => D,
-  F$: () => M,
-  Ov: () => F,
-  R2: () => Z,
-  Sm: () => w,
-  fK: () => G,
-  fi: () => V,
-  jr: () => U,
-  mK: () => P,
-  oK: () => x,
-  oc: () => j,
-  p8: () => H,
-  qg: () => k
+  B1: () => Z,
+  DR: () => x,
+  F$: () => k,
+  Ov: () => V,
+  R2: () => F,
+  Sm: () => D,
+  fK: () => B,
+  fi: () => H,
+  jr: () => G,
+  mK: () => w,
+  oK: () => L,
+  oc: () => M,
+  p8: () => Y,
+  qg: () => U
 }), require("./388685.js"), require("./49124.js");
 var Chunk561842 = require("./561842.js"),
   Chunk664081 = require("./664081.js"),
@@ -27,6 +27,7 @@ var Chunk561842 = require("./561842.js"),
   Chunk432877 = require("./432877.js");
 require("./777639.js");
 var Chunk703656 = require("./703656.js"),
+  Chunk706454 = require("./706454.js"),
   Chunk526665 = require("./526665.js"),
   Chunk748147 = require("./748147.js"),
   Chunk1870 = require("./1870.js"),
@@ -43,7 +44,7 @@ var Chunk703656 = require("./703656.js"),
 require("./215023.js");
 var Chunk981631 = require("./981631.js");
 
-function A(e, t, n) {
+function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -52,22 +53,22 @@ function A(e, t, n) {
   }) : e[t] = n, e
 }
 
-function C(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      A(e, t, n[t])
+      C(e, t, n[t])
     })
   }
   return e
 }
 
-function N(e, t) {
+function R(e, t) {
   if (null == e) return {};
-  var n, r, i = R(e, t);
+  var n, r, i = P(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -75,7 +76,7 @@ function N(e, t) {
   return i
 }
 
-function R(e, t) {
+function P(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -83,135 +84,137 @@ function R(e, t) {
   return i
 }
 require("./597688.js"), require("./328347.js"), require("./874703.js"), require("./52030.js");
-let P = e => {
+let w = e => {
     var {
       openInLayer: t = true,
       tab: r
-    } = e, i = N(e, ["openInLayer", "tab"]);
+    } = e, i = R(e, ["openInLayer", "tab"]);
     {
       let {
         default: e
       } = n(342386);
-      w(i), (0, f.yP)("closeUserSettings") && e(), t ? (0, l.jN)(S.S9g.COLLECTIBLES_SHOP) : (0, d.uL)(r ? S.Z5c.COLLECTIBLES_SHOP_WITH_TAB(r) : S.Z5c.COLLECTIBLES_SHOP)
+      D(i), (0, _.yP)("closeUserSettings") && e(), t ? (0, l.jN)(A.S9g.COLLECTIBLES_SHOP) : (0, d.uL)(r ? A.Z5c.COLLECTIBLES_SHOP_WITH_TAB(r) : A.Z5c.COLLECTIBLES_SHOP)
     }
   },
-  w = e => {
-    s.Z.dispatch(C({
+  D = e => {
+    s.Z.dispatch(N({
       type: "COLLECTIBLES_SHOP_OPEN"
     }, e))
   },
-  D = () => {
+  x = () => {
     Chunk570140.Z.dispatch({
       type: "COLLECTIBLES_SHOP_CLOSE"
     }), (0, Chunk37234.xf)()
   },
-  x = e => {
+  L = e => {
     s.Z.dispatch({
       type: "COLLECTIBLES_PRODUCT_DETAILS_OPEN",
       item: e
     })
   },
-  L = (e, t) => !!e == !!t,
-  j = (e, t) => L(null == e ? true : e.noCache, null == t ? true : t.noCache) && L(null == e ? true : e.includeUnpublished, null == t ? true : t.includeUnpublished) && L(null == e ? true : e.includeBundles, null == t ? true : t.includeBundles) && L(null == e ? true : e.includePopularPicks, null == t ? true : t.includePopularPicks) && L(null == e ? true : e.includeDynamicBlocks, null == t ? true : t.includeDynamicBlocks) && L(null == e ? true : e.includeNameplatesOnMobile, null == t ? true : t.includeNameplatesOnMobile) && (null == e ? true : e.countryCode) === (null == t ? true : t.countryCode) && (null == e ? true : e.paymentGateway) === (null == t ? true : t.paymentGateway) && (null == e ? true : e.shopHomeConfig) === (null == t ? true : t.shopHomeConfig) && (null == e ? true : e.skipNumCategories) === (null == t ? true : t.skipNumCategories),
-  M = async (e, t, n) => {
+  j = (e, t) => !!e == !!t,
+  M = (e, t) => j(null == e ? true : e.noCache, null == t ? true : t.noCache) && j(null == e ? true : e.includeUnpublished, null == t ? true : t.includeUnpublished) && j(null == e ? true : e.includeBundles, null == t ? true : t.includeBundles) && j(null == e ? true : e.includePopularPicks, null == t ? true : t.includePopularPicks) && j(null == e ? true : e.includeDynamicBlocks, null == t ? true : t.includeDynamicBlocks) && j(null == e ? true : e.includeNameplatesOnMobile, null == t ? true : t.includeNameplatesOnMobile) && (null == e ? true : e.countryCode) === (null == t ? true : t.countryCode) && (null == e ? true : e.paymentGateway) === (null == t ? true : t.paymentGateway) && (null == e ? true : e.shopHomeConfig) === (null == t ? true : t.shopHomeConfig) && (null == e ? true : e.skipNumCategories) === (null == t ? true : t.skipNumCategories),
+  k = async (e, t, n) => {
     s.Z.dispatch({
       type: "COLLECTIBLES_CATEGORIES_FETCH",
       options: null != e ? e : {}
     });
-    let r = (0, I.nW)(e),
+    let r = (0, T.nW)(e),
       i = u.ZP.get("shop_show_debug_overlay");
-    (null == e ? true : e.logPerf) && (0, v.n)({
+    (null == e ? true : e.logPerf) && (0, I.n)({
       sessionId: null == n ? true : n.sessionId,
-      checkpoint: v.a.CATEGORIES_FETCH_STARTED,
+      checkpoint: I.a.CATEGORIES_FETCH_STARTED,
       tab: null == n ? true : n.tab,
       isFullScreen: null == n ? true : n.isFullScreen,
       unpublishedCategoriesShown: null == e ? true : e.includeUnpublished,
       cacheDisabled: null == e ? true : e.noCache
-    }), i && (0, _.v)("fetchCollectiblesCategories started: ".concat(JSON.stringify(r, null, 2)));
+    }), i && (0, p.v)("fetchCollectiblesCategories started: ".concat(JSON.stringify(r, null, 2)));
     try {
-      let a = (0, h.i)("CollectiblesActionCreators"),
+      let a = (0, m.i)("CollectiblesActionCreators"),
         l = await o.tn.get({
-          url: a ? S.ANM.COLLECTIBLES_CATEGORIES_V2 : S.ANM.COLLECTIBLES_CATEGORIES,
+          url: a ? A.ANM.COLLECTIBLES_CATEGORIES_V2 : A.ANM.COLLECTIBLES_CATEGORIES,
           query: r,
           rejectWithError: true
         });
-      (null == e ? true : e.logPerf) && (0, v.n)({
+      (null == e ? true : e.logPerf) && (0, I.n)({
         sessionId: null == n ? true : n.sessionId,
-        checkpoint: v.a.CATEGORIES_FETCH_COMPLETED,
+        checkpoint: I.a.CATEGORIES_FETCH_COMPLETED,
         tab: null == n ? true : n.tab,
         isFullScreen: null == n ? true : n.isFullScreen,
         unpublishedCategoriesShown: null == e ? true : e.includeUnpublished,
         cacheDisabled: null == e ? true : e.noCache
-      }), i && (0, _.v)("fetchCollectiblesCategories completed ".concat(a ? l.body.categories.length : l.body.length, " categories")), a ? s.Z.dispatch({
+      }), i && (0, p.v)("fetchCollectiblesCategories completed ".concat(a ? l.body.categories.length : l.body.length, " categories")), a ? s.Z.dispatch({
         type: "COLLECTIBLES_CATEGORIES_V2_FETCH_SUCCESS",
-        categories: m.C.fromServer(l.body),
+        categories: g.C.fromServer(l.body),
         noOp: t
       }) : s.Z.dispatch({
         type: "COLLECTIBLES_CATEGORIES_FETCH_SUCCESS",
-        categories: l.body.map(g.Z.fromServer),
+        categories: l.body.map(E.Z.fromServer),
         noOp: t
       })
     } catch (t) {
       let e = new c.Hx(t);
-      (0, T.G)(e), s.Z.dispatch({
+      (0, S.G)(e), s.Z.dispatch({
         type: "COLLECTIBLES_CATEGORIES_FETCH_FAILURE",
         error: e
-      }), i && (0, _.v)("fetchCollectiblesCategories failed: ".concat(e.message))
+      }), i && (0, p.v)("fetchCollectiblesCategories failed: ".concat(e.message))
     }
-  }, k = async e => {
-    if (p.Z.isFetching) return;
+  }, U = async e => {
+    if (h.Z.isFetching) return;
     s.Z.dispatch({
       type: "COLLECTIBLES_PURCHASES_FETCH"
     });
     let t = u.ZP.get("shop_show_debug_overlay");
-    t && (0, _.v)("fetchCollectiblesPurchases started, options: ".concat(JSON.stringify(e, null, 2)));
+    t && (0, p.v)("fetchCollectiblesPurchases started, options: ".concat(JSON.stringify(e, null, 2)));
     try {
       let n = {
-        url: S.ANM.COLLECTIBLES_PURCHASES,
+        url: A.ANM.COLLECTIBLES_PURCHASES,
         rejectWithError: true
       };
       (null == e ? true : e.variantsReturnStyle) === a.v.VARIANTS_GROUP && (n.query = {
         variants_return_style: a.v.VARIANTS_GROUP
-      }), t && (0, _.v)("fetchCollectiblesPurchases request: ".concat(JSON.stringify(n, null, 2)));
+      }), t && (0, p.v)("fetchCollectiblesPurchases request: ".concat(JSON.stringify(n, null, 2)));
       let r = await o.tn.get(n);
-      t && (0, _.v)("fetchCollectiblesPurchases completed with ".concat(r.body.length, " purchases")), s.Z.dispatch({
+      t && (0, p.v)("fetchCollectiblesPurchases completed with ".concat(r.body.length, " purchases")), s.Z.dispatch({
         type: "COLLECTIBLES_PURCHASES_FETCH_SUCCESS",
-        purchases: r.body.map(y.Z.fromServer)
+        purchases: r.body.map(O.Z.fromServer)
       })
     } catch (n) {
       let e = new c.Hx(n);
-      throw (0, T.G)(e), t && (0, _.v)("fetchCollectiblesPurchases failed: ".concat(e.message)), s.Z.dispatch({
+      throw (0, S.G)(e), t && (0, p.v)("fetchCollectiblesPurchases failed: ".concat(e.message)), s.Z.dispatch({
         type: "COLLECTIBLES_PURCHASES_FETCH_FAILURE",
         error: e
       }), e
     }
-  }, U = async (e, t) => {
+  }, G = async (e, t) => {
     s.Z.dispatch({
       type: "COLLECTIBLES_PRODUCT_FETCH",
       skuId: e
     });
     try {
-      let n = {};
+      let n = {
+        locale: f.default.locale
+      };
       (null == t ? true : t.countryCode) !== null && (n.country_code = null == t ? true : t.countryCode), (null == t ? true : t.paymentGateway) !== null && (n.payment_gateway = null == t ? true : t.paymentGateway), (null == t ? true : t.includeBundles) !== null && (n.include_bundles = null == t ? true : t.includeBundles);
       let r = await o.tn.get({
-        url: S.ANM.COLLECTIBLES_PRODUCTS(e),
-        query: n,
-        rejectWithError: true
+        url: A.ANM.COLLECTIBLES_PRODUCTS(e),
+        rejectWithError: true,
+        query: n
       });
       s.Z.dispatch({
         type: "COLLECTIBLES_PRODUCT_FETCH_SUCCESS",
         skuId: e,
-        product: b.Z.fromServer(r.body)
+        product: y.Z.fromServer(r.body)
       })
     } catch (n) {
       let t = new c.Hx(n);
-      (0, T.G)(t), s.Z.dispatch({
+      (0, S.G)(t), s.Z.dispatch({
         type: "COLLECTIBLES_PRODUCT_FETCH_FAILURE",
         skuId: e,
         error: t
       })
     }
-  }, G = async e => {
+  }, B = async e => {
     s.Z.dispatch({
       type: "COLLECTIBLES_CLAIM",
       skuId: e
@@ -219,7 +222,7 @@ let P = e => {
     try {
       var t;
       let n = await o.tn.put({
-        url: S.ANM.COLLECTIBLES_CLAIM,
+        url: A.ANM.COLLECTIBLES_CLAIM,
         body: {
           sku_id: e
         },
@@ -228,7 +231,7 @@ let P = e => {
       s.Z.dispatch({
         type: "COLLECTIBLES_CLAIM_SUCCESS",
         skuId: e,
-        purchases: null == (t = n.body) ? true : t.map(y.Z.fromServer)
+        purchases: null == (t = n.body) ? true : t.map(O.Z.fromServer)
       })
     } catch (n) {
       let t = new c.Hx(n);
@@ -238,10 +241,10 @@ let P = e => {
         error: t
       }), t
     }
-  }, B = async (e, t) => {
+  }, Z = async (e, t) => {
     try {
       return (await o.tn.get({
-        url: S.ANM.COLLECTIBLES_VALID_GIFT_RECIPIENT,
+        url: A.ANM.COLLECTIBLES_VALID_GIFT_RECIPIENT,
         query: {
           sku_id: t,
           recipient_id: e
@@ -249,9 +252,9 @@ let P = e => {
         rejectWithError: true
       })).body.valid
     } catch (e) {
-      return (0, T.G)(new c.Hx(e)), false
+      return (0, S.G)(new c.Hx(e)), false
     }
-  }, Z = async e => {
+  }, F = async e => {
     let {
       release: t = i.P.PROD
     } = e;
@@ -264,29 +267,29 @@ let P = e => {
     t !== i.P.PROD && (n.release = t);
     try {
       let e = await o.tn.get({
-        url: S.ANM.COLLECTIBLES_MARKETING,
+        url: A.ANM.COLLECTIBLES_MARKETING,
         query: n,
         rejectWithError: true
       });
       s.Z.dispatch({
         type: "COLLECTIBLES_MARKETING_FETCH_SUCCESS",
-        marketings: E.s.fromServer(e.body)
+        marketings: b.s.fromServer(e.body)
       })
     } catch (e) {
-      (0, T.G)(new c.Hx(e)), s.Z.dispatch({
+      (0, S.G)(new c.Hx(e)), s.Z.dispatch({
         type: "COLLECTIBLES_MARKETING_FETCH_FAILURE"
       })
     }
-  }, F = async (e, t, n) => {
+  }, V = async (e, t, n) => {
     s.Z.dispatch({
       type: "COLLECTIBLES_SHOP_HOME_FETCH",
       tab: e,
       options: null != t ? t : {}
     });
-    let r = (0, I.nW)(t, e);
-    (null == t ? true : t.logPerf) && (0, v.n)({
+    let r = (0, T.nW)(t, e);
+    (null == t ? true : t.logPerf) && (0, I.n)({
       sessionId: null == n ? true : n.sessionId,
-      checkpoint: v.a.SHOP_HOME_FETCH_STARTED,
+      checkpoint: I.a.SHOP_HOME_FETCH_STARTED,
       tab: null == n ? true : n.tab,
       isFullScreen: null == n ? true : n.isFullScreen,
       unpublishedCategoriesShown: null == t ? true : t.includeUnpublished,
@@ -294,13 +297,13 @@ let P = e => {
     });
     try {
       let i = await o.tn.get({
-        url: S.ANM.COLLECTIBLES_SHOP,
+        url: A.ANM.COLLECTIBLES_SHOP,
         query: r,
         rejectWithError: true
       });
-      (null == t ? true : t.logPerf) && (0, v.n)({
+      (null == t ? true : t.logPerf) && (0, I.n)({
         sessionId: null == n ? true : n.sessionId,
-        checkpoint: v.a.SHOP_HOME_FETCH_COMPLETED,
+        checkpoint: I.a.SHOP_HOME_FETCH_COMPLETED,
         tab: null == n ? true : n.tab,
         isFullScreen: null == n ? true : n.isFullScreen,
         unpublishedCategoriesShown: null == t ? true : t.includeUnpublished,
@@ -308,22 +311,22 @@ let P = e => {
       }), s.Z.dispatch({
         type: "COLLECTIBLES_SHOP_HOME_FETCH_SUCCESS",
         tab: e,
-        shopHome: O.Y.fromServer(i.body)
+        shopHome: v.Y.fromServer(i.body)
       })
     } catch (n) {
       let t = new c.Hx(n);
-      (0, T.G)(t), s.Z.dispatch({
+      (0, S.G)(t), s.Z.dispatch({
         type: "COLLECTIBLES_SHOP_HOME_FETCH_FAILURE",
         tab: e,
         error: t
       })
     }
-  }, V = e => {
+  }, H = e => {
     s.Z.dispatch({
       type: "COLLECTIBLES_SET_SHOP_HOME_CONFIG_OVERRIDE",
       shopHomeConfigOverride: e
     })
-  }, H = e => {
+  }, Y = e => {
     s.Z.dispatch({
       type: "COLLECTIBLES_SKIP_NUM_CATEGORIES",
       skipNumCategories: e

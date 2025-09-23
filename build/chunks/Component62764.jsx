@@ -1,7 +1,7 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 21616 **/
 /** chunk id: 62764, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => V
+  Z: () => G
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -42,7 +42,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk127947 = require("./127947.js"),
   Chunk577650 = require("./577650.js");
 
-function G(e) {
+function F(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -61,7 +61,7 @@ function G(e) {
   return e
 }
 
-function H(e, t) {
+function V(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -74,10 +74,10 @@ function H(e, t) {
   }), e
 }
 
-function F(e) {
+function H(e) {
   let {
     channel: t
-  } = e, l = t.isArchivedThread(), a = (0, j.P0)(t), [o, u] = i.useState(false), d = () => {
+  } = e, l = t.isArchivedThread(), a = (0, O.P0)(t), [o, u] = i.useState(false), d = () => {
     u(true), x.Z.resolveFlag(t.id).then(() => {
       u(false)
     })
@@ -85,7 +85,7 @@ function F(e) {
   return a ? (0, r.jsx)(c.zxk, {
     size: "sm",
     variant: "secondary",
-    text: l ? D.intl.string(k.default["2Y4vkp"]) : D.intl.string(k.default.YIbR4u),
+    text: l ? k.intl.string(L.default["2Y4vkp"]) : k.intl.string(L.default.YIbR4u),
     onClick: () => {
       true === s.K.get(E.F) ? d() : (0, c.ZDy)(async () => {
         let {
@@ -110,7 +110,7 @@ function F(e) {
   }) : null
 }
 
-function V(e) {
+function G(e) {
   let {
     postId: t,
     isFirstMessage: n,
@@ -118,16 +118,16 @@ function V(e) {
     parentChannelId: s
   } = e, {
     ref: x,
-    width: j
-  } = (0, p.ZP)(), [E, k] = i.useState(3), [V, z] = i.useState(!n), [W, q] = (0, h.Z)(false, 2e3), Y = (0, o.e7)([Z.Z], () => Z.Z.getChannel(t), [t]), {
+    width: O
+  } = (0, p.ZP)(), [E, L] = i.useState(3), [G, z] = i.useState(!n), [W, q] = (0, h.Z)(false, 2e3), Y = (0, o.e7)([Z.Z], () => Z.Z.getChannel(t), [t]), {
     firstMessage: K
-  } = (0, w.cl)(Y), X = (0, o.e7)([I.Z], () => I.Z.hasJoined(t)), {
-    disableReactionUpdates: Q,
-    disableReactionCreates: J,
+  } = (0, w.cl)(Y), X = (0, o.e7)([P.Z], () => P.Z.hasJoined(t)), {
+    disableReactionUpdates: J,
+    disableReactionCreates: Q,
     isLurking: $,
     isGuest: ee,
     isPendingMember: et
-  } = (0, b.Z)(Y), en = (0, O.nw)(Y), er = (0, o.e7)([Z.Z], () => Z.Z.getChannel(s)), ei = (0, A.Bs)(er), el = (0, o.e7)([f.Z], () => f.Z.shouldDisplayPrompt(t) && true === n, [t, n]), ea = i.useCallback(e => {
+  } = (0, b.Z)(Y), en = (0, j.nw)(Y), er = (0, o.e7)([Z.Z], () => Z.Z.getChannel(s)), ei = (0, A.Bs)(er), el = (0, o.e7)([f.Z], () => f.Z.shouldDisplayPrompt(t) && true === n, [t, n]), ea = i.useCallback(e => {
     let t = e[0];
     if (null != t && n) {
       let e = t.intersectionRect,
@@ -147,17 +147,17 @@ function V(e) {
   });
   let [eo, es] = i.useState(true);
   if (i.useEffect(() => {
-      null != j && (k(Math.floor((j - 280) / 58)), es(false))
-    }, [j]), null == Y || null == K) return null;
+      null != O && (L(Math.floor((O - 280) / 58)), es(false))
+    }, [O]), null == Y || null == K) return null;
   let ec = K.reactions.length > 0,
     eu = () => {
-      X ? P.Z.leaveThread(Y, "Forum Toolbar") : P.Z.joinThread(Y, "Forum Toolbar")
+      X ? I.Z.leaveThread(Y, "Forum Toolbar") : I.Z.joinThread(Y, "Forum Toolbar")
     },
     ed = () => {
-      (0, R.B)({
+      (0, M.B)({
         postId: Y.id,
         location: {
-          section: M.jXE.CHANNEL_HEADER
+          section: R.jXE.CHANNEL_HEADER
         }
       }), (0, N.JG)((0, T.EO)(Y, er), () => q(true))
     },
@@ -172,21 +172,21 @@ function V(e) {
     eh = X ? c.dz2 : c.Dkj;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: a()(L.container, {
-        [L.header]: V
+      className: a()(D.container, {
+        [D.header]: G
       }),
       ref: x,
       children: [en ? (0, r.jsx)("div", {
-        className: L.reportedMessageActions,
+        className: D.reportedMessageActions,
         children: (0, r.jsx)(S.Z, {
           message: K,
           channel: Y
         })
       }) : (0, r.jsxs)("div", {
-        className: a()(L.reactButtons, {
-          [L.loading]: eo
+        className: a()(D.reactButtons, {
+          [D.loading]: eo
         }),
-        children: [!ec && !J && null != ei && (0, r.jsx)("div", {
+        children: [!ec && !Q && null != ei && (0, r.jsx)("div", {
           className: U.reactions,
           children: (0, r.jsx)(v.le, {
             message: K,
@@ -204,72 +204,72 @@ function V(e) {
             me_burst: false,
             emojiSize: "reaction"
           })
-        }), (0, r.jsx)(C.Z, {
+        }), (0, r.jsx)(_.Z, {
           message: K,
           channel: Y,
           disableReactionCreates: true,
-          disableReactionUpdates: Q,
+          disableReactionUpdates: J,
           isLurking: $,
           isGuest: ee,
           isPendingMember: et,
           maxReactions: E,
-          className: L.reactions,
+          className: D.reactions,
           useChatFontScaling: false,
           isForumToolbar: true,
           forceHideReactionCreates: true
-        }), !J && (0, r.jsx)(y.X, {
+        }), !Q && (0, r.jsx)(y.X, {
           type: g.O.NORMAL,
           message: K,
           channel: Y,
           useChatFontScaling: false,
-          className: a()(B.secondary, L.addReactButton, {
-            [L.hasNoReactions]: !ec
+          className: a()(B.secondary, D.addReactButton, {
+            [D.hasNoReactions]: !ec
           }),
           isForumToolbar: true,
-          children: !ec && D.intl.string(D.t.xpOyTE)
+          children: !ec && k.intl.string(k.t.xpOyTE)
         })]
       }), (0, r.jsxs)("div", {
-        className: L.buttons,
-        children: [en ? (0, r.jsx)(F, {
+        className: D.buttons,
+        children: [en ? (0, r.jsx)(H, {
           channel: Y
         }) : (0, r.jsx)(c.ua7, {
-          text: D.intl.string(D.t.F7oeDg),
-          children: e => (0, r.jsx)(c.zxk, H(G({}, e), {
+          text: k.intl.string(k.t.F7oeDg),
+          children: e => (0, r.jsx)(c.zxk, V(F({}, e), {
             icon: eh,
             size: "sm",
             variant: "secondary",
-            text: X ? D.intl.string(D.t["7OkUzs"]) : D.intl.string(D.t["3aOv+v"]),
+            text: X ? k.intl.string(k.t["7OkUzs"]) : k.intl.string(k.t["3aOv+v"]),
             onClick: eu
           }))
         }), (0, r.jsx)(c.ua7, {
-          text: D.intl.string(D.t.WqhZsr),
-          children: e => W ? (0, r.jsx)(c.zxk, H(G({}, e), {
+          text: k.intl.string(k.t.WqhZsr),
+          children: e => W ? (0, r.jsx)(c.zxk, V(F({}, e), {
             icon: c.dz2,
             size: "sm",
             variant: "secondary",
             onClick: ed,
-            text: D.intl.string(D.t["t5VZ8/"])
-          })) : (0, r.jsx)(c.hU, H(G({}, e), {
+            text: k.intl.string(k.t["t5VZ8/"])
+          })) : (0, r.jsx)(c.hU, V(F({}, e), {
             icon: c.xPt,
             size: "sm",
             variant: "secondary",
             onClick: ed,
-            "aria-label": D.intl.string(D.t.WqhZsr)
+            "aria-label": k.intl.string(k.t.WqhZsr)
           }))
         }), !n && (0, r.jsx)(c.ua7, {
-          text: D.intl.string(D.t.nFP4oa),
-          children: e => (0, r.jsx)(c.hU, H(G({}, e), {
+          text: k.intl.string(k.t.nFP4oa),
+          children: e => (0, r.jsx)(c.hU, V(F({}, e), {
             icon: c.Za2,
             size: "sm",
             variant: "secondary",
             onClick: ep,
-            "aria-label": D.intl.string(D.t.nFP4oa)
+            "aria-label": k.intl.string(k.t.nFP4oa)
           }))
         })]
       })]
     }), el && (0, r.jsx)(m.Z, {
       threadId: t
-    }), (0, r.jsx)(_.Z, {
+    }), (0, r.jsx)(C.Z, {
       channel: Y,
       isLastItem: l
     })]

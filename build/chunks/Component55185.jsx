@@ -1,8 +1,8 @@
-/** Chunk was on 11160 **/
+/** Chunk was on 89929 **/
 /** chunk id: 55185, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  I: () => w,
-  N: () => Z
+  I: () => Z,
+  N: () => w
 }), require("./388685.js");
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -191,7 +191,7 @@ function S(e) {
   })
 }
 
-function P(e) {
+function I(e) {
   let {
     closePopout: t
   } = e, n = d.G6.useSetting(), {
@@ -215,7 +215,7 @@ function P(e) {
   })
 }
 
-function I(e) {
+function P(e) {
   let {
     closePopout: t
   } = e;
@@ -261,9 +261,9 @@ function N(e) {
     })]
   })
 }
-var Z = ((r = {})[r.ActivityNux = 0] = "ActivityNux", r[r.StatusNux = 1] = "StatusNux", r[r.ActivityAndStatusNux = 2] = "ActivityAndStatusNux", r[r.Activity = 3] = "Activity", r[r.Status = 4] = "Status", r[r.ActivityAndStatus = 5] = "ActivityAndStatus", r);
+var w = ((r = {})[r.ActivityNux = 0] = "ActivityNux", r[r.StatusNux = 1] = "StatusNux", r[r.ActivityAndStatusNux = 2] = "ActivityAndStatusNux", r[r.Activity = 3] = "Activity", r[r.Status = 4] = "Status", r[r.ActivityAndStatus = 5] = "ActivityAndStatus", r);
 
-function w(e) {
+function Z(e) {
   let {
     popoutState: t,
     closePopout: n,
@@ -285,11 +285,11 @@ function w(e) {
         closePopout: n
       });
     case 3:
-      return (0, i.jsx)(P, {
+      return (0, i.jsx)(I, {
         closePopout: n
       });
     case 4:
-      return (0, i.jsx)(I, {
+      return (0, i.jsx)(P, {
         closePopout: n
       });
     case 5:

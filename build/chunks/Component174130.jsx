@@ -1,4 +1,4 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 91053 **/
 /** chunk id: 174130, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -20,18 +20,18 @@ function h(e) {
     channel: t
   } = e, {
     isFavoritesPerk: n
-  } = (0, u.z)("ChannelFavoritesHeaderButton"), h = (0, d.Z)(), {
+  } = (0, d.z)("ChannelFavoritesHeaderButton"), h = (0, u.Z)(), {
     notifyFavoriteAdded: f
-  } = (0, c.up)(), m = (0, i.e7)([o.Z], () => o.Z.isFavorite(t.id));
+  } = (0, c.up)(), g = (0, i.e7)([s.Z], () => s.Z.isFavorite(t.id));
   if (!n || h) return null;
-  let g = m ? l.r7p : l.vxU,
-    b = m ? p.intl.string(p.t.Bou7lZ) : p.intl.string(p.t["4wcdEx"]);
+  let m = g ? l.r7p : l.vxU,
+    b = g ? p.intl.string(p.t.Bou7lZ) : p.intl.string(p.t["4wcdEx"]);
   return (0, r.jsx)(a.ZP.Icon, {
-    icon: g,
+    icon: m,
     tooltip: b,
     "aria-label": b,
     onClick: () => {
-      m ? (0, s.oC)(t.id) : (f(), (0, s.kj)(t.id))
+      g ? (0, o.oC)(t.id) : (f(), (0, o.kj)(t.id))
     }
   })
 }

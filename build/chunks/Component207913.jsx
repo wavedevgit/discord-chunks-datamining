@@ -1,4 +1,4 @@
-/** Chunk was on 11160 **/
+/** Chunk was on 89929 **/
 /** chunk id: 207913, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => K
@@ -82,7 +82,7 @@ function V(e) {
     isSelected: a,
     isUnread: s,
     groupedMessages: d
-  } = e, p = n.type === M.d4z.UNKNOWN ? u.VL1 : (0, h.KS)(n, null), m = (0, f.ZP)(n, false), b = (0, c.e7)([Z.Z], () => Z.Z.getGuild(n.getGuildId())), {
+  } = e, p = n.type === M.d4z.UNKNOWN ? u.VL1 : (0, h.KS)(n, null), m = (0, f.ZP)(n, false), b = (0, c.e7)([w.Z], () => w.Z.getGuild(n.getGuildId())), {
     nick: y,
     colorString: _
   } = (0, O.ZP)(t), {
@@ -93,13 +93,13 @@ function V(e) {
     size: u.EFr.SIZE_32,
     guildId: null == b ? true : b.id,
     animateOnHover: true
-  }), S = n.type !== M.d4z.GUILD_ANNOUNCEMENT || null == b, I = (0, v.x)({
+  }), S = n.type !== M.d4z.GUILD_ANNOUNCEMENT || null == b, P = (0, v.x)({
     channel: n,
     message: t,
     user: t.author,
     compact: true,
     isRepliedMessage: true
-  }), w = (0, r.jsx)("div", {
+  }), Z = (0, r.jsx)("div", {
     className: G.usernameTagContainer,
     inert: true,
     children: (0, r.jsx)(j.Z, {
@@ -129,12 +129,12 @@ function V(e) {
           "aria-label": "User Avatar",
           src: x,
           size: u.EFr.SIZE_32,
-          cornerIconUrl: null != b ? (0, P.EB)(b, 24) : true,
+          cornerIconUrl: null != b ? (0, I.EB)(b, 24) : true,
           cornerIconOffsetX: 4,
           cornerIconOffsetY: 3
         }) : (0, r.jsx)(L.E, {
           "aria-label": "Guild Icon",
-          src: (0, P.EB)(b, 32),
+          src: (0, I.EB)(b, 32),
           size: u.EFr.SIZE_32,
           cornerIconUrl: t.author.getAvatarURL(b.id, 24),
           cornerIconOffsetX: 4,
@@ -161,9 +161,9 @@ function V(e) {
                 color: null != _ ? _ : true
               },
               children: (0, r.jsx)(g.Z, {
-                children: w
+                children: Z
               })
-            }), I]
+            }), P]
           }) : (0, r.jsx)(g.Z, {
             children: (0, r.jsx)(u.X6q, {
               variant: "text-md/semibold",
@@ -371,9 +371,9 @@ let K = (0, Chunk647438.memo)(function(e) {
     isUnread: p
   } = e, f = l.message, h = (0, A.fJ)(), {
     params: g
-  } = (0, s.$B)(), m = (0, c.e7)([I.Z], () => {
+  } = (0, s.$B)(), m = (0, c.e7)([P.Z], () => {
     if (null == f) return null;
-    let e = I.Z.getChannel(l.channelId);
+    let e = P.Z.getChannel(l.channelId);
     return null != e ? e : new S.nl({
       id: l.channelId,
       guild_id: l.guildId,
@@ -385,7 +385,7 @@ let K = (0, Chunk647438.memo)(function(e) {
     return e.isMenuOpenForMessage(null != (t = null == f ? true : f.id) ? t : null)
   }), {
     notificationCenterVariant: O
-  } = (0, w.pN)({
+  } = (0, Z.pN)({
     location: "NotificationsInboxMessageUnit"
   }), y = i.useMemo(() => "".concat(null == f ? true : f.author.username, ": ").concat(null == m ? true : m.name), [null == f ? true : f.author.username, null == m ? true : m.name]), _ = null != (t = null == a ? true : a.map(e => e.message).filter(e => null != e)) ? t : [];
   return null == f || null == m ? null : (0, r.jsx)(u.kL8, {
@@ -399,7 +399,7 @@ let K = (0, Chunk647438.memo)(function(e) {
         message: f,
         channel: m,
         isUnread: p,
-        isSidebar: O === w.jP.SIDEBAR,
+        isSidebar: O === Z.jP.SIDEBAR,
         viewId: h
       })
     },

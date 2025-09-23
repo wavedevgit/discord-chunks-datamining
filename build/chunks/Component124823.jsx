@@ -1,4 +1,4 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 91053 **/
 /** chunk id: 124823, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => w
@@ -33,7 +33,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk231688 = require("./231688.js"),
   Chunk892273 = require("./892273.js");
 
-function A(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -57,75 +57,75 @@ function w(e) {
   let {
     user: n,
     channel: w
-  } = e, R = __OVERLAY__ || !(0, d.Z)(n.id), M = (0, g.ZP)(n.id), D = (0, s.ZP)(), k = i.useRef(Date.now()), {
-    analyticsLocations: L
-  } = (0, u.ZP)(c.Z.USER_PROFILE_SIDEBAR), U = (0, f.ZB)({
+  } = e, A = __OVERLAY__ || !(0, u.Z)(n.id), D = (0, m.ZP)(n.id), L = (0, o.ZP)(), M = i.useRef(Date.now()), {
+    analyticsLocations: k
+  } = (0, d.ZP)(c.Z.USER_PROFILE_SIDEBAR), U = (0, f.ZB)({
     layout: "SIDEBAR",
     userId: n.id,
     channelId: w.id
-  }), B = i.useRef(null), G = (0, o.Z)(B), H = e => {
-    (0, b.openUserProfileModal)(A({
-      sourceAnalyticsLocations: L,
+  }), G = i.useRef(null), H = (0, s.Z)(G), F = e => {
+    (0, b.openUserProfileModal)(R({
+      sourceAnalyticsLocations: k,
       hideRestrictedProfile: true
     }, U, e))
   };
-  return (0, r.jsx)(u.Gt, {
-    value: L,
+  return (0, r.jsx)(d.Gt, {
+    value: k,
     children: (0, r.jsx)(f.Mt, {
       value: U,
-      openedAt: k.current,
-      fetchStartedAt: null == M ? true : M.fetchStartedAt,
-      fetchEndedAt: null == M ? true : M.fetchEndedAt,
-      isLoaded: null == M ? true : M.isLoaded,
-      children: (0, r.jsxs)(O.Z, {
-        ref: B,
+      openedAt: M.current,
+      fetchStartedAt: null == D ? true : D.fetchStartedAt,
+      fetchEndedAt: null == D ? true : D.fetchEndedAt,
+      isLoaded: null == D ? true : D.isLoaded,
+      children: (0, r.jsxs)(C.Z, {
+        ref: G,
         user: n,
-        displayProfile: M,
-        themeType: P.l.SIDEBAR,
-        themeOverride: D,
+        displayProfile: D,
+        themeType: Z.l.SIDEBAR,
+        themeOverride: L,
         children: [(0, r.jsxs)(l.u2, {
-          children: [(0, r.jsx)(I.Z, {
-            children: (0, r.jsx)(S.Z, {
+          children: [(0, r.jsx)(S.Z, {
+            children: (0, r.jsx)(E.Z, {
               user: n
             })
           }), (0, r.jsxs)("div", {
             className: T.header,
-            children: [(0, r.jsx)(C.Z, {
+            children: [(0, r.jsx)(O.Z, {
               user: n,
-              displayProfile: M,
-              themeType: P.l.SIDEBAR,
-              animateOnHover: !G
+              displayProfile: D,
+              themeType: Z.l.SIDEBAR,
+              animateOnHover: !H
             }), (0, r.jsx)(y.Z, {
               user: n,
-              displayProfile: M,
+              displayProfile: D,
               channelId: w.id,
-              themeType: P.l.SIDEBAR,
-              onOpenProfile: R ? true : H
+              themeType: Z.l.SIDEBAR,
+              onOpenProfile: A ? true : F
             })]
           }), (0, r.jsxs)("div", {
             className: N.body,
-            children: [(0, r.jsx)(E.Z, {
+            children: [(0, r.jsx)(I.Z, {
               user: n,
               nickname: h.ZP.getName(null, w.id, n),
-              pronouns: null == M ? true : M.pronouns,
-              onOpenProfile: R ? true : H,
+              pronouns: null == D ? true : D.pronouns,
+              onOpenProfile: A ? true : F,
               tags: (0, r.jsx)(_.Z, {
-                displayProfile: M,
-                themeType: P.l.SIDEBAR
+                displayProfile: D,
+                themeType: Z.l.SIDEBAR
               })
-            }), (0, r.jsxs)(O.Z.Overlay, {
+            }), (0, r.jsxs)(C.Z.Overlay, {
               className: N.overlay,
-              children: [(0, r.jsx)(j.Z, {
-                heading: Z.intl.string(Z.t["61W33d"]),
+              children: [(0, r.jsx)(v.Z, {
+                heading: P.intl.string(P.t["61W33d"]),
                 headingColor: "header-primary",
-                children: (0, r.jsx)(v.Z, {
-                  userBio: null == M ? true : M.bio,
+                children: (0, r.jsx)(j.Z, {
+                  userBio: null == D ? true : D.bio,
                   userId: n.id,
                   animateOnHover: true,
-                  isHovering: G
+                  isHovering: H
                 })
-              }), (0, r.jsx)(j.Z, {
-                heading: Z.intl.string(Z.t["A//N4u"]),
+              }), (0, r.jsx)(v.Z, {
+                heading: P.intl.string(P.t["A//N4u"]),
                 headingColor: "header-primary",
                 children: (0, r.jsx)(x.Z, {
                   userId: n.id
@@ -133,21 +133,21 @@ function w(e) {
               })]
             })]
           })]
-        }), !R && (0, r.jsx)("div", {
+        }), !A && (0, r.jsx)("div", {
           className: T.footer,
           children: (0, r.jsx)(a.P3F, {
             onClick: () => {
-              H(), (0, m.pQ)(A({
+              F(), (0, g.pQ)(R({
                 action: "PRESS_VIEW_PROFILE",
-                analyticsLocations: L
+                analyticsLocations: k
               }, U))
             },
             className: T.footerButton,
-            children: Z.intl.string(Z.t["+Xp3ho"])
+            children: P.intl.string(P.t["+Xp3ho"])
           })
-        }), (null == M ? true : M.profileEffect) != null && (0, r.jsx)(p.Z, {
-          profileEffectId: null == M || null == (t = M.profileEffect) ? true : t.id,
-          isHovering: G
+        }), (null == D ? true : D.profileEffect) != null && (0, r.jsx)(p.Z, {
+          profileEffectId: null == D || null == (t = D.profileEffect) ? true : t.id,
+          isHovering: H
         })]
       })
     })

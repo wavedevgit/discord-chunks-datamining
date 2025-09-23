@@ -1,5 +1,6 @@
 /** Chunk was on 63141 **/
 /** chunk id: 348733, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => y
 }), require("./388685.js");
@@ -22,23 +23,23 @@ function y(e) {
   let {
     locked: t,
     keybind: n
-  } = e, l = r.useRef(null), p = (0, a.Wu)([c.Z], () => c.Z.getNotifications()), y = (0, a.e7)([d.default], () => d.default.getNotificationPositionMode());
+  } = e, s = r.useRef(null), p = (0, a.Wu)([c.Z], () => c.Z.getNotifications()), y = (0, a.e7)([d.default], () => d.default.getNotificationPositionMode());
   if ((0, a.e7)([f.Z], () => f.Z.isNotificationDisabled(u.OverlayNotificationDisabledSetting.TEXT_CHAT)) || y === g._vf.DISABLED) return null;
   let v = p.filter(e => !t || e.status !== g._1z.TIMED_OUT),
-    _ = (0, s.groupBy)(v, e => e.type);
+    b = (0, l.groupBy)(v, e => e.type);
   return (0, i.jsx)(h.Z, {
-    contentDomRef: l,
+    contentDomRef: s,
     observeInterval: 200,
     children: (0, i.jsx)("div", {
-      ref: l,
+      ref: s,
       className: o()(m.container, m[y]),
-      children: Object.entries(_).map(e => {
-        let [r, l] = e;
-        return 0 === l.length ? null : (0, i.jsx)(O, {
+      children: Object.entries(b).map(e => {
+        let [r, s] = e;
+        return 0 === s.length ? null : (0, i.jsx)(O, {
           locked: t,
           keybind: n,
           position: y,
-          notification: l[0]
+          notification: s[0]
         }, r)
       })
     })
@@ -50,7 +51,7 @@ function O(e) {
     notification: t,
     position: n,
     keybind: r,
-    locked: l
+    locked: s
   } = e;
   return (0, i.jsx)("div", {
     className: m.notificationGroup,
@@ -59,7 +60,7 @@ function O(e) {
       position: n,
       notification: t,
       keybind: r,
-      locked: l
+      locked: s
     }, t.id)
   })
 }

@@ -9,7 +9,7 @@ require.d(exports, {
   po: () => p,
   s9: () => j,
   yP: () => g
-});
+}), require("./642613.js");
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
   Chunk594174 = require("./594174.js"),
@@ -133,7 +133,7 @@ function _(e) {
   }).then(e => {
     r.Z.dispatch({
       type: "PORTKEY_FETCH_REGIONS_SUCCESS",
-      regions: e.body.map(u.Z)
+      regions: e.body.map(u.Z).sort((e, t) => e.name.localeCompare(t.name))
     })
   })
 }

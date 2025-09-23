@@ -1,4 +1,4 @@
-/** Chunk was on 10576 **/
+/** Chunk was on 66201 **/
 /** chunk id: 776767, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Mn: () => o,
@@ -22,27 +22,27 @@ function u(e) {
     className: c,
     missingNavIcon: E
   } = e;
-  return (0, r.jsxs)(a.P3F, {
+  return (0, r.jsxs)(s.P3F, {
     onClick: u,
-    className: i()(s.modInfoItem, null != u && s.modInfoAction, c),
+    className: i()(a.modInfoItem, null != u && a.modInfoAction, c),
     children: [null != l && (0, r.jsx)("div", {
-      className: s.modInfoItemIcon,
+      className: a.modInfoItemIcon,
       children: l
     }), null != n && (0, r.jsx)("div", {
-      className: s.modInfoItemName,
+      className: a.modInfoItemName,
       children: n
     }), (0, r.jsx)("div", {
-      className: s.modInfoItemDescription,
+      className: a.modInfoItemDescription,
       children: t
     }), null != u && (0, r.jsx)("div", {
-      className: s.modInfoItemActionIcon,
-      children: (0, r.jsx)(a.LJT, {
+      className: a.modInfoItemActionIcon,
+      children: (0, r.jsx)(s.LJT, {
         size: "custom",
         width: o,
         height: o
       })
     }), null == u && null != E && (0, r.jsx)("div", {
-      className: s.modInfoItemActionIcon,
+      className: a.modInfoItemActionIcon,
       children: E
     })]
   })
@@ -53,7 +53,7 @@ function c(e) {
     children: t
   } = e;
   return (0, r.jsx)("div", {
-    className: s.modInfoItemContainer,
+    className: a.modInfoItemContainer,
     children: t
   })
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 11160 **/
+/** Chunk was on 89929 **/
 /** chunk id: 761091, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -31,12 +31,12 @@ function y(e) {
     C = (0, s.PE)(e.id),
     E = (0, o.n2)(e.id),
     S = [],
-    P = e.features.has(O.oNc.HUB),
-    I = e.features.has(O.oNc.COMMUNITY),
+    I = e.features.has(O.oNc.HUB),
+    P = e.features.has(O.oNc.COMMUNITY),
     N = (0, m.l)(!(0, f.r1)(e.id)),
-    Z = e.features.has(O.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY),
-    w = (0, g.Z)(e.id),
+    w = e.features.has(O.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY),
+    Z = (0, g.Z)(e.id),
     T = (0, h.A0)(e.id, "useGuildActionRows"),
     A = e.features.has(O.oNc.GAME_SERVERS);
-  return P && S.push(b.z.GUILD_HUB_HEADER_OPTIONS), !C && v && x && null != j && j.length > 0 ? S.push(b.z.GUILD_NEW_MEMBER_ACTIONS_PROGRESS_BAR) : e.premiumProgressBarEnabled && S.push(b.z.GUILD_PREMIUM_PROGRESS_BAR), !P && v && S.push(b.z.GUILD_HOME), t && S.push(b.z.GUILD_SCHEDULED_EVENTS), !P && I && N && S.push(b.z.CHANNELS_AND_ROLES), y && S.push(b.z.GUILD_ROLE_SUBSCRIPTIONS), _ && S.push(b.z.GUILD_SHOP), (E && (I || Z) || n && e.features.has(O.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL)) && S.push(b.z.GUILD_MOD_DASH_MEMBER_SAFETY), w && S.push(b.z.GUILD_BOOSTS), T && A && S.push(b.z.PORTKEY), S
+  return I && S.push(b.z.GUILD_HUB_HEADER_OPTIONS), !C && v && x && null != j && j.length > 0 ? S.push(b.z.GUILD_NEW_MEMBER_ACTIONS_PROGRESS_BAR) : e.premiumProgressBarEnabled && S.push(b.z.GUILD_PREMIUM_PROGRESS_BAR), !I && v && S.push(b.z.GUILD_HOME), t && S.push(b.z.GUILD_SCHEDULED_EVENTS), !I && P && N && S.push(b.z.CHANNELS_AND_ROLES), y && S.push(b.z.GUILD_ROLE_SUBSCRIPTIONS), _ && S.push(b.z.GUILD_SHOP), (E && (P || w) || n && e.features.has(O.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL)) && S.push(b.z.GUILD_MOD_DASH_MEMBER_SAFETY), Z && S.push(b.z.GUILD_BOOSTS), T && A && S.push(b.z.PORTKEY), S
 }

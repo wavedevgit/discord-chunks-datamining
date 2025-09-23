@@ -61,7 +61,7 @@ function y(e) {
   } = e, {
     pingText: o,
     pingCircleStyle: s
-  } = (0, x.t)(n.pingUrl);
+  } = (0, v.t)(n.pingUrl);
   return null == n ? null : (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)("div", {
       className: a()(_.optionContainer, {
@@ -95,7 +95,7 @@ function O() {
     regionId: t,
     portkeyInstance: l,
     setRegionId: a,
-    name: x,
+    name: v,
     setName: O,
     planId: N,
     setPlanId: P,
@@ -152,7 +152,9 @@ function O() {
           }), (0, Chunk951288.jsx)(Chunk481060.oil, {
             value: Chunk39793,
             onChange: O,
-            placeholder: Chunk388032.intl.string(Chunk401561.default.Kg0Zio)
+            placeholder: Chunk388032.intl.string(Chunk401561.default.Kg0Zio),
+            showCharacterCount: true,
+            maxLength: Chunk473682.gM
           })]
         }), (0, Chunk951288.jsxs)("div", {
           className: Chunk149671.sectionContainer,

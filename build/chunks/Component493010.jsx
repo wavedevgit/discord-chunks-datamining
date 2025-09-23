@@ -1,4 +1,4 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 21616 **/
 /** chunk id: 493010, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => v
@@ -35,9 +35,9 @@ let v = function(e) {
   let x = i.useCallback(() => {
       o.Z.updateChatOpen(t.id, false), m.S.safeDispatch(b.CkL.FOCUS_CHAT_BUTTON)
     }, [t.id]),
-    j = (0, r.jsx)(h.ZP.Icon, {
+    O = (0, r.jsx)(h.ZP.Icon, {
       icon: a.Dio,
-      tooltip: _.intl.string(_.t.cpT0Cg),
+      tooltip: C.intl.string(C.t.cpT0Cg),
       onClick: x
     });
   return (0, r.jsxs)(u.Z, {
@@ -48,16 +48,16 @@ let v = function(e) {
       channel: t,
       draftType: f.d.ChannelMessage
     }), (0, r.jsxs)(h.ZP, {
-      toolbar: j,
-      "aria-label": _.intl.string(_.t.BIYAqa),
+      toolbar: O,
+      "aria-label": C.intl.string(C.t.BIYAqa),
       children: [(0, r.jsx)(h.ZP.ChannelIcon, {
         icon: a.kBi,
-        "aria-label": _.intl.string(_.t.Kx5kCA)
+        "aria-label": C.intl.string(C.t.Kx5kCA)
       }), (0, r.jsx)(h.ZP.Title, {
         children: t.name
       })]
     }), (0, r.jsx)("div", {
-      className: C.chat,
+      className: _.chat,
       children: (0, r.jsx)(c.Z, {
         channel: t,
         guild: n,

@@ -1,4 +1,4 @@
-/** Chunk was on 11160 **/
+/** Chunk was on 89929 **/
 /** chunk id: 486311, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -79,17 +79,17 @@ let j = {
         default:
           return (0, r.jsx)("div", {})
       }
-    }, [t, null == x ? true : x.popout]), S = (0, s.s9z)(s.JQI), P = (0, a.e7)([d.Z], () => d.Z.hasLayers()), [I, N] = i.useState(null), Z = null == I ? "animation" : "LOOP";
+    }, [t, null == x ? true : x.popout]), S = (0, s.s9z)(s.JQI), I = (0, a.e7)([d.Z], () => d.Z.hasLayers()), [P, N] = i.useState(null), w = null == P ? "animation" : "LOOP";
     i.useEffect(() => {
       (null == x ? true : x.popout) == null && N(null)
     }, [null == x ? true : x.popout]);
-    let w = i.useCallback(e => {
+    let Z = i.useCallback(e => {
         N(e)
       }, []),
       T = i.useRef(null);
     return (0, r.jsx)(s.yRy, {
       targetElementRef: T,
-      shouldShow: (null == x ? true : x.popout) != null && !(S || P),
+      shouldShow: (null == x ? true : x.popout) != null && !(S || I),
       nudgeAlignIntoViewport: true,
       animationPosition: "bottom",
       position: "right",
@@ -108,11 +108,11 @@ let j = {
           background: (null == x ? true : x.popout) != null && (0, r.jsx)("div", {
             className: _.lottieContainer,
             children: (0, r.jsx)(s.kci, {
-              nextScene: Z,
+              nextScene: w,
               className: _.lottie,
               sceneSegments: j,
               importData: () => n.e("50821").then(n.t.bind(n, 548421, 19)),
-              onScenePlay: w,
+              onScenePlay: Z,
               rendererSettings: {
                 preserveAspectRatio: "xMidYMid slice"
               }

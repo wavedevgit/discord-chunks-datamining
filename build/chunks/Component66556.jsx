@@ -1,4 +1,4 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 91053 **/
 /** chunk id: 66556, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -16,10 +16,10 @@ var Chunk951288 = require("./951288.js"),
 function p(e) {
   let {
     channel: t
-  } = e, [n, p] = i.useState(false), h = i.useRef(null), f = (0, a.$5)(t), m = i.useCallback(() => {
+  } = e, [n, p] = i.useState(false), h = i.useRef(null), f = (0, a.$5)(t), g = i.useCallback(() => {
     p(false)
-  }, []), g = i.useCallback(() => {
-    n || (0, s.U4)("Popout"), p(!n)
+  }, []), m = i.useCallback(() => {
+    n || (0, o.U4)("Popout"), p(!n)
   }, [n]);
   return (0, r.jsx)(l.yRy, {
     targetElementRef: h,
@@ -28,13 +28,13 @@ function p(e) {
     align: "right",
     autoInvert: false,
     shouldShow: n,
-    onRequestClose: m,
+    onRequestClose: g,
     renderPopout: function() {
       return (0, r.jsx)(l.VqE, {
         children: (0, r.jsx)(c.Z, {
-          className: d.browser,
+          className: u.browser,
           channel: t,
-          onClose: m
+          onClose: g
         })
       })
     },
@@ -44,7 +44,7 @@ function p(e) {
       let {
         isShown: a
       } = t;
-      return (0, r.jsx)(o.JO, (n = function(e) {
+      return (0, r.jsx)(s.JO, (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -63,11 +63,11 @@ function p(e) {
         return e
       }({}, e), i = i = {
         ref: h,
-        className: d.icon,
-        onClick: g,
+        className: u.icon,
+        onClick: m,
         icon: l.or_,
-        "aria-label": u.intl.string(u.t.B2panJ),
-        tooltip: a ? null : u.intl.string(u.t.B2panJ),
+        "aria-label": d.intl.string(d.t.B2panJ),
+        tooltip: a ? null : d.intl.string(d.t.B2panJ),
         disabled: f,
         selected: a
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {

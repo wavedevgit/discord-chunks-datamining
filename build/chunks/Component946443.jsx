@@ -1,9 +1,9 @@
-/** Chunk was on 11160 **/
+/** Chunk was on 89929 **/
 /** chunk id: 946443, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   QP: () => N,
   ZP: () => S,
-  h6: () => I
+  h6: () => P
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -30,11 +30,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk915087 = require("./915087.js");
 
 function S(e) {
-  var t, n, l, a, y, S, I;
+  var t, n, l, a, y, S, P;
   let {
     onJump: N,
-    showTutorial: Z,
-    setSeenTutorial: w,
+    showTutorial: w,
+    setSeenTutorial: Z,
     closePopout: T
   } = e, A = i.useRef(null), [R, D] = (0, j.ZP)(A), {
     loadState: L,
@@ -92,7 +92,7 @@ function S(e) {
     return (0, r.jsx)(_.Z, {
       Icon: d.xx7,
       header: C.intl.string(C.t["6XMM+P"]),
-      tip: (null == (I = s().os) ? true : I.family) === "OS X" ? C.intl.string(C.t.w9uDOT) : C.intl.string(C.t.BiUJCw)
+      tip: (null == (P = s().os) ? true : P.family) === "OS X" ? C.intl.string(C.t.w9uDOT) : C.intl.string(C.t.BiUJCw)
     })
   }
   return (0, r.jsx)(c.bG, {
@@ -142,8 +142,8 @@ function S(e) {
         }, l), n = n = {
           onScroll: L === j.jd.Done ? true : k,
           className: o()(E.scroller, "group-spacing-".concat(U)),
-          children: [Z ? (0, r.jsx)(P, {
-            setSeenTutorial: w
+          children: [w ? (0, r.jsx)(I, {
+            setSeenTutorial: Z
           }) : null, (0, v.Z)(M, D, N), L === j.jd.Done ? null : (0, r.jsx)(d.$jN, {
             className: E.spinner
           })]
@@ -162,7 +162,7 @@ function S(e) {
   })
 }
 
-function P(e) {
+function I(e) {
   let {
     setSeenTutorial: t
   } = e;
@@ -197,7 +197,7 @@ function P(e) {
   })
 }
 
-function I() {
+function P() {
   return (0, Chunk951288.jsx)(Chunk240126.Z, {
     Icon: Chunk481060.xx7,
     disableStars: true,

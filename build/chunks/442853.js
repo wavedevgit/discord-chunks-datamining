@@ -1,4 +1,4 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 91053 **/
 /** chunk id: 442853, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -19,30 +19,30 @@ function f(e) {
   let {
     entries: t,
     channelId: n
-  } = e, f = (0, l.e7)([o.Z], () => o.Z.getChannel(n)), m = null == f ? true : f.guild_id, g = r.useRef(new Set), b = r.useMemo(() => {
+  } = e, f = (0, l.e7)([s.Z], () => s.Z.getChannel(n)), g = null == f ? true : f.guild_id, m = r.useRef(new Set), b = r.useMemo(() => {
     let e = new Set(null == t ? true : t.map(e => e.author_id));
-    return (0, a.E)([...g.current], [...e]) || (g.current = e), g.current
+    return (0, a.E)([...m.current], [...e]) || (m.current = e), m.current
   }, [t]);
   r.useEffect(() => {
-    null != m && Array.from(b).forEach(e => {
-      s.Z.requestMember(m, e)
+    null != g && Array.from(b).forEach(e => {
+      o.Z.requestMember(g, e)
     })
-  }, [b, m]);
+  }, [b, g]);
   let y = (0, l.Wu)([c.ZP], () => {
-      if (null == m) return p;
+      if (null == g) return p;
       let e = [];
-      for (let t of b) c.ZP.isMember(m, t) && e.push(t);
+      for (let t of b) c.ZP.isMember(g, t) && e.push(t);
       return e
-    }, [b, m]),
+    }, [b, g]),
     _ = r.useMemo(() => {
       if (null == f || 0 === y.length) return h;
       let e = new Set;
       for (let t of y) {
-        let n = u.uB({
+        let n = d.uB({
           user: t,
           context: f
         });
-        i.e$(n, d.Pl.VIEW_CHANNEL) && e.add(t)
+        i.e$(n, u.Pl.VIEW_CHANNEL) && e.add(t)
       }
       return e
     }, [y, f]);

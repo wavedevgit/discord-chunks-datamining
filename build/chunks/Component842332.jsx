@@ -1,4 +1,4 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 91053 **/
 /** chunk id: 842332, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   U: () => p
@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk375954 = require("./375954.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-async function d(e) {
+async function u(e) {
   try {
     var t, n;
     let r = await l.tn.post({
@@ -35,9 +35,9 @@ function p(e) {
     updateThreadSettings: l,
     threadSettings: c,
     textAreaState: p
-  } = e, [h, f] = i.useState(false), [m, g] = i.useState(false), {
+  } = e, [h, f] = i.useState(false), [g, m] = i.useState(false), {
     enableAIFeatures: b
-  } = o.C.useExperiment({
+  } = s.C.useExperiment({
     location: "CreateThreadSidebar"
   }), y = i.useCallback(async () => {
     if (b) {
@@ -46,11 +46,11 @@ function p(e) {
         let r = null;
         if (null != n) {
           var e;
-          let i = s.Z.getMessage(t.id, n);
+          let i = o.Z.getMessage(t.id, n);
           r = null != (e = null == i ? true : i.content) ? e : null
         } else p.textValue.trim().length >= 10 && (r = p.textValue);
         if (null != r) {
-          let e = await d(r);
+          let e = await u(r);
           null != e && "" !== e.trim() && l({
             name: e
           })
@@ -61,27 +61,27 @@ function p(e) {
     }
   }, [t.id, n, l, b, p.textValue]);
   i.useEffect(() => {
-    g(false), f(false), t.id === c.parentChannelId && n !== c.parentMessageId && l({
+    m(false), f(false), t.id === c.parentChannelId && n !== c.parentMessageId && l({
       name: ""
     })
   }, [n, l, t.id, c.parentChannelId, c.parentMessageId]), i.useEffect(() => {
-    (null == c.name || "" === c.name.trim()) && !m && b && null != n && (g(true), y())
-  }, [t.id, n, l, c.name, m, b, y]);
+    (null == c.name || "" === c.name.trim()) && !g && b && null != n && (m(true), y())
+  }, [t.id, n, l, c.name, g, b, y]);
   let _ = i.useCallback(function() {
       let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
       if (b) return {
         icon: a.$2U,
         onClick: y,
-        "aria-label": u.intl.string(u.t.ZF2oBg),
+        "aria-label": d.intl.string(d.t.ZF2oBg),
         disabled: e || h || null == n && p.textValue.trim().length < 10,
-        tooltip: u.intl.string(u.t.ZF2oBg),
+        tooltip: d.intl.string(d.t.ZF2oBg),
         loading: h
       }
     }, [b, y, h, n, p.textValue]),
-    C = i.useCallback(function() {
+    O = i.useCallback(function() {
       let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
       return b ? (0, r.jsx)(a.ua7, {
-        text: u.intl.string(u.t.ZF2oBg),
+        text: d.intl.string(d.t.ZF2oBg),
         children: t => {
           var i, l;
           return (0, r.jsx)(a.hU, (i = function(e) {
@@ -105,7 +105,7 @@ function p(e) {
             icon: a.$2U,
             variant: "secondary",
             size: "sm",
-            "aria-label": u.intl.string(u.t.ZF2oBg),
+            "aria-label": d.intl.string(d.t.ZF2oBg),
             onClick: y,
             disabled: e || h || null == n && p.textValue.trim().length < 10,
             loading: h,
@@ -127,7 +127,7 @@ function p(e) {
     isGeneratingAI: h,
     generateAIName: y,
     enableAIFeatures: b,
-    renderAiGenerateButton: C,
+    renderAiGenerateButton: O,
     getThreadNameInputAccessory: _
   }
 }

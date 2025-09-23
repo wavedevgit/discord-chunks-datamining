@@ -1,5 +1,6 @@
 /** Chunk was on 63141 **/
 /** chunk id: 294033, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => a
 });
@@ -13,12 +14,12 @@ function a(e) {
   let {
     keybind: t,
     separator: n = "+",
-    className: l
+    className: s
   } = e;
   return (0, i.jsx)(i.Fragment, {
     children: t.map((e, a) => (0, i.jsxs)(r.Fragment, {
       children: [(0, i.jsx)("span", {
-        className: o()(s.key, l),
+        className: o()(l.key, s),
         children: e
       }), a === t.length - 1 ? true : n]
     }, a))

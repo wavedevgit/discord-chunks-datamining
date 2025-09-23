@@ -1,7 +1,7 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 91053 **/
 /** chunk id: 901434, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => C
+  Z: () => O
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,22 +20,22 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk427538 = require("./427538.js");
 let _ = (e, t) => f.ZP.getName(e.getGuildId(), e.id, t.user),
-  C = function(e) {
+  O = function(e) {
     let {
       participants: t,
       channel: n,
       hasConnectPermission: f
-    } = e, C = (0, u.J)(n.guild_id), v = i.useCallback(() => {
-      C ? (0, c.hk)(n.guild_id, () => o.default.selectVoiceChannel(n.id)) : o.default.selectVoiceChannel(n.id)
-    }, [n.id, n.guild_id, C]), x = t.filter(e => e.type === m.Ui.VOICE), j = 4 === x.length ? 2 : 3, O = (0, l.Wu)([s.Z], () => x.map(e => s.Z.getParticipant(n.id, e.id)).filter(h.lm), [n.id, x]);
+    } = e, O = (0, d.J)(n.guild_id), j = i.useCallback(() => {
+      O ? (0, c.hk)(n.guild_id, () => s.default.selectVoiceChannel(n.id)) : s.default.selectVoiceChannel(n.id)
+    }, [n.id, n.guild_id, O]), x = t.filter(e => e.type === g.Ui.VOICE), v = 4 === x.length ? 2 : 3, C = (0, l.Wu)([o.Z], () => x.map(e => o.Z.getParticipant(n.id, e.id)).filter(h.lm), [n.id, x]);
     return (0, r.jsxs)("div", {
       className: y.container,
       children: [(0, r.jsx)(p.Z, {}), (0, r.jsx)("div", {
         className: y.tiles,
         style: {
-          maxWidth: 168 * j
+          maxWidth: 168 * v
         },
-        children: O.slice(0, 5).map(e => (0, r.jsx)(d.ZP, {
+        children: C.slice(0, 5).map(e => (0, r.jsx)(u.ZP, {
           participant: e,
           channel: n,
           className: y.tile,
@@ -72,10 +72,10 @@ let _ = (e, t) => f.ZP.getName(e.getGuildId(), e.id, t.user),
           children: (0, r.jsx)(a.zxk, {
             variant: "overlay-primary",
             text: f ? b.intl.string(b.t["7vb2cX"]) : b.intl.string(b.t.TVBCKS),
-            onClick: v,
+            onClick: j,
             disabled: !f
           })
-        }), (0, r.jsx)(g.e, {
+        }), (0, r.jsx)(m.e, {
           channel: n
         })]
       })]

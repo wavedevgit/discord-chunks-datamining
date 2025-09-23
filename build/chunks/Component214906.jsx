@@ -1,12 +1,12 @@
-/** Chunk was on 99534 **/
-/** chunk id: 214906, original params: t,n,i (module,exports,require) **/
+/** Chunk was on 46154 **/
+/** chunk id: 214906, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
-  Z: () => Z
+  Z: () => h
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk913527 = require("./913527.js"),
-  r = require.n(Chunk913527),
+  l = require.n(Chunk913527),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk777861 = require("./777861.jsx"),
@@ -15,46 +15,46 @@ var Chunk913527 = require("./913527.js"),
   Chunk776568 = require("./776568.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function Z(t) {
-  let [n, i, l] = (0, a.Wu)([s.Z], () => [s.Z.isMuted(t.id), s.Z.getMuteConfig(t.id), s.Z.hasJoined(t.id)]), Z = (0, o.U)(i);
+function h(t) {
+  let [n, e, a] = (0, r.Wu)([d.Z], () => [d.Z.isMuted(t.id), d.Z.getMuteConfig(t.id), d.Z.hasJoined(t.id)]), h = (0, s.U)(e);
 
   function v(n) {
     u.Z.setNotificationSettings(t, {
       muted: n
     })
   }
-  return l ? n ? (0, e.jsx)(d.sNh, {
+  return a ? n ? (0, i.jsx)(o.sNh, {
     id: "unmute-channel",
-    label: t.isForumPost() ? h.intl.string(h.t["0JQfsL"]) : h.intl.string(h.t["Cq/TzM"]),
-    subtext: Z,
+    label: t.isForumPost() ? f.intl.string(f.t["0JQfsL"]) : f.intl.string(f.t["Cq/TzM"]),
+    subtext: h,
     action: () => v(false)
-  }) : (0, e.jsx)(d.sNh, {
+  }) : (0, i.jsx)(o.sNh, {
     id: "mute-channel",
-    label: t.isForumPost() ? h.intl.string(h.t["nP+YkZ"]) : h.intl.string(h.t.bUUd8v),
+    label: t.isForumPost() ? f.intl.string(f.t["nP+YkZ"]) : f.intl.string(f.t.bUUd8v),
     action: () => v(true),
     children: (0, c.k)().map(n => {
       let {
-        value: i,
-        label: l
+        value: e,
+        label: a
       } = n;
-      return (0, e.jsx)(d.sNh, {
-        id: "".concat(i),
-        label: l,
+      return (0, i.jsx)(o.sNh, {
+        id: "".concat(e),
+        label: a,
         action: () => (function(n) {
-          let i = n > 0 ? r()().add(n, "second").toISOString() : null;
+          let e = n > 0 ? l()().add(n, "second").toISOString() : null;
           u.Z.setNotificationSettings(t, {
             muted: true,
             mute_config: {
               selected_time_window: n,
-              end_time: i
+              end_time: e
             }
           })
-        })(i)
-      }, i)
+        })(e)
+      }, e)
     })
-  }) : (0, e.jsx)(d.sNh, {
+  }) : (0, i.jsx)(o.sNh, {
     id: "mute-disabled",
-    label: t.isForumPost() ? h.intl.string(h.t["nP+YkZ"]) : h.intl.string(h.t.bUUd8v),
+    label: t.isForumPost() ? f.intl.string(f.t["nP+YkZ"]) : f.intl.string(f.t.bUUd8v),
     disabled: true
   })
 }

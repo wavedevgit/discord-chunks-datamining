@@ -1,4 +1,4 @@
-/** Chunk was on 11160 **/
+/** Chunk was on 89929 **/
 /** chunk id: 289481, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => E
@@ -119,7 +119,7 @@ let E = Chunk647438.memo(function(e) {
           channelState: t,
           children: [(0, r.jsx)(b.Z, {
             channel: a
-          }), (0, r.jsx)(P, C({}, e)), "nsfw" === t.type ? null : (0, r.jsx)(I, C({}, e))]
+          }), (0, r.jsx)(I, C({}, e)), "nsfw" === t.type ? null : (0, r.jsx)(P, C({}, e))]
         }),
         children: t.collapsed ? null : "messages" === t.type ? (0, r.jsx)(_.Z, {
           channel: t,
@@ -134,7 +134,7 @@ let E = Chunk647438.memo(function(e) {
     })
   });
 
-function P(e) {
+function I(e) {
   let {
     channel: t,
     markChannelRead: n,
@@ -163,7 +163,7 @@ function P(e) {
   })
 }
 
-function I(e) {
+function P(e) {
   let {
     channel: t,
     toggle: n,

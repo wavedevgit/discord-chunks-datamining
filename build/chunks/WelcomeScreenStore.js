@@ -1,12 +1,12 @@
-/** Chunk was on 10576 **/
+/** Chunk was on 66201 **/
 /** chunk id: 995532, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m,
-  a: () => s
+  Z: () => I,
+  a: () => a
 });
 var r, l, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
-let s = {},
+let a = {},
   o = {},
   u = {},
   c = false,
@@ -25,7 +25,7 @@ function A(e) {
     welcomeScreen: t,
     guildId: n
   } = e;
-  o[n] = null != t ? t : s
+  o[n] = null != t ? t : a
 }
 class T extends(l = Chunk442837.ZP.Store) {
   get(e) {
@@ -52,7 +52,7 @@ class T extends(l = Chunk442837.ZP.Store) {
   configurable: true,
   writable: true
 }) : T[r] = "WelcomeScreenStore";
-let m = new T(Chunk570140.Z, {
+let I = new T(Chunk570140.Z, {
   INVITE_RESOLVE_SUCCESS: _,
   INVITE_ACCEPT_SUCCESS: _,
   WELCOME_SCREEN_SUBMIT_SUCCESS: A,
@@ -84,7 +84,7 @@ let m = new T(Chunk570140.Z, {
       welcomeScreen: t,
       guildId: n
     } = e;
-    o[n] = null != t ? t : s
+    o[n] = null != t ? t : a
   },
   WELCOME_SCREEN_FETCH_FAIL: function() {
     E = false, d = true

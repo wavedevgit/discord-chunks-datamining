@@ -1448,7 +1448,8 @@ let em = "@me",
     QUESTS: e => "/quests/".concat(e),
     ACCOUNT_REVERT: e => "/wasntme/".concat(e),
     POWERUP_STORE: e => "/channels/".concat(e, "/boosts"),
-    CONFERENCE_MODE: "/conference-mode"
+    CONFERENCE_MODE: "/conference-mode",
+    CONFERENCE_MODE_VOICE: (e, t) => "/conference-mode/voice/".concat(e, "/").concat(t)
   }),
   eC = (0, Chunk860911.Ft)(eS),
   eN = (0, Chunk860911.Ft)(eA, [":", "?", "@"]);

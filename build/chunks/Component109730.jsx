@@ -1,7 +1,7 @@
 /** Chunk was on 72920 **/
-/** chunk id: 109730, original params: t,e,l (module,exports,require) **/
+/** chunk id: 109730, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  default: () => f
+  default: () => D
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -24,115 +24,115 @@ var Chunk951288 = require("./951288.js"),
   Chunk764295 = require("./764295.js"),
   Chunk678437 = require("./678437.js");
 
-function U(t) {
+function m(t) {
   return {
     value: t,
     get label() {
-      return (0, O.L9)(t)
+      return (0, M.L9)(t)
     }
   }
 }
-let N = [U(Chunk590433.UK.DURATION_60_SEC), U(Chunk590433.UK.DURATION_5_MIN), U(Chunk590433.UK.DURATION_10_MIN), U(Chunk590433.UK.DURATION_1_HOUR), U(Chunk590433.UK.DURATION_1_DAY), U(Chunk590433.UK.DURATION_1_WEEK)];
+let I = [m(Chunk590433.UK.DURATION_60_SEC), m(Chunk590433.UK.DURATION_5_MIN), m(Chunk590433.UK.DURATION_10_MIN), m(Chunk590433.UK.DURATION_1_HOUR), m(Chunk590433.UK.DURATION_1_DAY), m(Chunk590433.UK.DURATION_1_WEEK)];
 
-function f(t) {
-  var e, l;
+function D(t) {
+  var e, n;
   let {
-    guildId: U,
-    userId: f,
-    anaylticsLocations: v,
+    guildId: m,
+    userId: D,
+    anaylticsLocations: N,
     transitionState: R,
-    onClose: I,
-    modReportId: y
+    onClose: p,
+    modReportId: U
   } = t, {
-    analyticsLocations: D
-  } = (0, d.ZP)(), A = null != (l = null != (e = null == v ? true : v[0]) ? e : null == D ? true : D[0]) ? l : null, j = (0, a.e7)([g.default], () => g.default.getUser(f), [f]), [K, b] = s.useState(O.UK.DURATION_60_SEC), [M, k] = s.useState(""), [P, Z] = s.useState(false), [w, B] = s.useState(false), q = (0, a.e7)([h.Z], () => {
+    analyticsLocations: v
+  } = (0, _.ZP)(), x = null != (n = null != (e = null == N ? true : N[0]) ? e : null == v ? true : v[0]) ? n : null, b = (0, a.e7)([O.default], () => O.default.getUser(D), [D]), [y, j] = r.useState(M.UK.DURATION_60_SEC), [k, P] = r.useState(""), [B, K] = r.useState(false), [L, Z] = r.useState(false), w = (0, a.e7)([T.Z], () => {
     var t;
-    return null == (t = h.Z.getChannel(y)) ? true : t.isArchivedThread()
-  }), L = (0, _.sE)(U, {
-    location: A,
-    targetUserId: f
-  }), W = s.useCallback(async () => {
-    if (null != j) {
-      Z(true);
+    return null == (t = T.Z.getChannel(U)) ? true : t.isArchivedThread()
+  }), F = (0, d.sE)(m, {
+    location: x,
+    targetUserId: D
+  }), H = r.useCallback(async () => {
+    if (null != b) {
+      K(true);
       try {
-        await c.Z.setCommunicationDisabledDuration(U, f, K, M, A, y), w && null != y && T.Z.resolveFlag(y), L(_.jQ.TIMEOUT), (0, o.showToast)((0, o.createToast)(E.intl.formatToPlainString(E.t.O9C3Nj, {
-          user: p.ZP.getName(U, null, j)
-        }), o.ToastType.SUCCESS)), I()
+        await s.Z.setCommunicationDisabledDuration(m, D, y, k, x, U), L && null != U && E.Z.resolveFlag(U), F(d.jQ.TIMEOUT), (0, u.showToast)((0, u.createToast)(f.intl.formatToPlainString(f.t.O9C3Nj, {
+          user: A.ZP.getName(m, null, b)
+        }), u.ToastType.SUCCESS)), p()
       } catch (t) {
-        (0, o.showToast)((0, o.createToast)(E.intl.string(E.t.epyCur), o.ToastType.FAILURE))
+        (0, u.showToast)((0, u.createToast)(f.intl.string(f.t.epyCur), u.ToastType.FAILURE))
       } finally {
-        Z(false)
+        K(false)
       }
     }
-  }, [U, j, f, I, K, M, A, L, y, w]);
-  return ((0, u.ZP)(() => {
-    null != j && x.default.track(m.rMx.OPEN_MODAL, {
-      type: O.Cl,
-      guild_id: U,
-      other_user_id: j.id
+  }, [m, b, D, p, y, k, x, F, U, L]);
+  return ((0, c.ZP)(() => {
+    null != b && g.default.track(S.rMx.OPEN_MODAL, {
+      type: M.Cl,
+      guild_id: m,
+      other_user_id: b.id
     })
-  }), s.useEffect(() => {
-    (null == j || null == U) && I()
-  }, [U, j, I]), null == j || null == U) ? null : (0, n.jsx)(r.Modal, {
+  }), r.useEffect(() => {
+    (null == b || null == m) && p()
+  }, [m, b, p]), null == b || null == m) ? null : (0, l.jsx)(i.Modal, {
     transitionState: R,
-    title: E.intl.formatToPlainString(E.t.OhsOy8, {
-      user: p.ZP.getName(U, null, j)
+    title: f.intl.formatToPlainString(f.t.OhsOy8, {
+      user: A.ZP.getName(m, null, b)
     }),
-    subtitle: E.intl.format(E.t.Ns83GR, {
-      helpdeskArticle: O.cu
+    subtitle: f.intl.format(f.t.Ns83GR, {
+      helpdeskArticle: M.cu
     }),
     actions: [{
-      text: E.intl.string(E.t["ETE/oK"]),
-      onClick: I,
+      text: f.intl.string(f.t["ETE/oK"]),
+      onClick: p,
       variant: "secondary"
     }, {
-      text: E.intl.string(E.t.MlPTIi),
-      onClick: W,
-      loading: P
+      text: f.intl.string(f.t.MlPTIi),
+      onClick: H,
+      loading: B
     }],
-    actionBarInput: null == y || q ? true : (0, n.jsx)(i.$q, {
-      value: w,
+    actionBarInput: null == U || w ? true : (0, l.jsx)(o.$q, {
+      value: L,
       onChange: (t, e) => {
-        B(e)
+        Z(e)
       },
-      children: E.intl.string(C.default["8yIKen"])
+      children: f.intl.string(C.default["8yIKen"])
     }),
-    onClose: I,
-    children: (0, n.jsxs)(o.Kqy, {
+    onClose: p,
+    children: (0, l.jsxs)(u.Kqy, {
       gap: 16,
-      children: [(0, n.jsxs)(o.Kqy, {
+      children: [(0, l.jsxs)(u.Kqy, {
         gap: 8,
-        children: [(0, n.jsx)(o.X6q, {
+        children: [(0, l.jsx)(u.X6q, {
           variant: "heading-sm/semibold",
-          children: E.intl.string(E.t["9XsExs"])
-        }), (0, n.jsx)(i.hE, {
-          buttons: N.map(t => (function(t, e, l) {
+          children: f.intl.string(f.t["9XsExs"])
+        }), (0, l.jsx)(o.hE, {
+          buttons: I.map(t => (function(t, e, n) {
             let {
-              value: s,
+              value: r,
               label: a
             } = t;
             return {
-              content: (0, n.jsx)(o.Text, {
+              content: (0, l.jsx)(u.Text, {
                 variant: "text-sm/semibold",
-                className: e ? S.selectorTextSelected : S.selectorText,
+                className: e ? h.selectorTextSelected : h.selectorText,
                 children: a
               }),
-              className: e ? S.selectorButtonSelected : S.selectorButton,
-              onClick: () => l(s)
+              className: e ? h.selectorButtonSelected : h.selectorButton,
+              onClick: () => n(r)
             }
-          })(t, t.value === K, b))
+          })(t, t.value === y, j))
         })]
-      }), (0, n.jsxs)(o.Kqy, {
+      }), (0, l.jsxs)(u.Kqy, {
         gap: 8,
-        children: [(0, n.jsx)(o.X6q, {
+        children: [(0, l.jsx)(u.X6q, {
           variant: "heading-sm/semibold",
-          children: E.intl.string(E.t.ewHW19)
-        }), (0, n.jsx)(o.Kx8, {
-          value: M,
-          onChange: t => k(t),
-          placeholder: E.intl.string(E.t.GakiHx),
+          children: f.intl.string(f.t.ewHW19)
+        }), (0, l.jsx)(u.Kx8, {
+          value: k,
+          onChange: t => P(t),
+          placeholder: f.intl.string(f.t.GakiHx),
           rows: 4,
-          maxLength: O.GN
+          maxLength: M.GN
         })]
       })]
     })

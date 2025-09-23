@@ -1,7 +1,7 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 89929 **/
 /** chunk id: 217314, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -17,45 +17,45 @@ var Chunk399606 = require("./399606.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk97009 = require("./97009.js");
 
-function m(e) {
+function g(e) {
   let t = e.channel.getRecipientId(),
     n = e.channel.isSystemDM(),
-    m = (0, i.e7)([u.default], () => u.default.getUser(t)),
-    g = (0, i.e7)([s.Z], () => s.Z.getStatus(t)),
+    g = (0, i.e7)([u.default], () => u.default.getUser(t)),
+    m = (0, i.e7)([s.Z], () => s.Z.getStatus(t)),
     b = (0, i.e7)([s.Z], () => s.Z.isMobileOnline(t)),
-    y = (0, i.e7)([c.Z], () => c.Z.getNickname(t)),
-    _ = d.ZP.useUserTag(m),
-    C = (0, a.j)({
-      displayNameStyles: null == m ? true : m.displayNameStyles
+    O = (0, i.e7)([c.Z], () => c.Z.getNickname(t)),
+    y = d.ZP.useUserTag(g),
+    _ = (0, o.j)({
+      displayNameStyles: null == g ? true : g.displayNameStyles
     }),
-    v = (0, o.m$)({
+    v = (0, a.m$)({
       channelId: e.channel.id
     });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.nn4, {
-      children: h.intl.string(h.t.EJRzg4)
-    }), null != m && !n && (0, r.jsx)("div", {
+      children: f.intl.string(f.t.EJRzg4)
+    }), null != g && !n && (0, r.jsx)("div", {
       children: (0, r.jsx)(l.qEK, {
-        status: g,
+        status: m,
         isMobile: b,
-        className: f.avatar,
+        className: h.avatar,
         size: l.EFr.SIZE_20,
-        "aria-label": d.ZP.getName(m),
-        src: m.getAvatarURL(true, 20)
+        "aria-label": d.ZP.getName(g),
+        src: g.getAvatarURL(true, 20)
       })
     }), (0, r.jsx)(p.Z.Title, {
       level: e.level,
       onClick: e.handleClick,
       onContextMenu: e.handleContextMenu,
-      className: null != e.handleClick ? f.cursorPointer : null,
+      className: null != e.handleClick ? h.cursorPointer : null,
       children: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(l.DY3, {
-          text: _,
+          text: y,
           position: "bottom",
-          className: C,
-          children: null != y ? y : d.ZP.getName(m)
+          className: _,
+          children: null != O ? O : d.ZP.getName(g)
         }), v && (0, r.jsx)(l.ua7, {
-          text: h.intl.string(h.t.QyZ4TU),
+          text: f.intl.string(f.t.QyZ4TU),
           children: e => {
             var t, n;
             return (0, r.jsx)(l.tQf, (t = function(e) {
@@ -77,9 +77,9 @@ function m(e) {
               return e
             }({}, e), n = n = {
               size: "xs",
-              "aria-label": h.intl.string(h.t.VHXh8f),
+              "aria-label": f.intl.string(f.t.VHXh8f),
               color: l.TVs.colors.INTERACTIVE_NORMAL,
-              className: f.secureFramesIcon
+              className: h.secureFramesIcon
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {

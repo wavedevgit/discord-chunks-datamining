@@ -1,4 +1,4 @@
-/** Chunk was on 11160 **/
+/** Chunk was on 89929 **/
 /** chunk id: 373274, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   E: () => em,
@@ -182,7 +182,7 @@ class ef extends(r = Chunk647438.PureComponent) {
         channel: o,
         category: a
       } = l;
-      return !!(0, Z.vc)(o.record.type) && (!a.isCollapsed || !a.isMuted) && !o.isMuted && !!t.isItemVisible(r, i, true) && (0, P.d)(o.record)
+      return !!(0, w.vc)(o.record.type) && (!a.isCollapsed || !a.isMuted) && !o.isMuted && !!t.isItemVisible(r, i, true) && (0, I.d)(o.record)
     })
   }
   renderTopUnread() {
@@ -660,7 +660,7 @@ class ef extends(r = Chunk647438.PureComponent) {
             }) : null]
           }, x);
         case el.d4z.GUILD_STAGE_VOICE:
-          var P, I;
+          var I, P;
           return (0, i.jsx)(X.Z, {
             channel: j,
             guild: r,
@@ -668,8 +668,8 @@ class ef extends(r = Chunk647438.PureComponent) {
             selected: a === O.id,
             connected: c === O.id,
             collapsed: O.isCollapsed || b.isCollapsed,
-            voiceStates: null != (P = d[O.id]) ? P : [],
-            speakerVoiceStates: null != (I = f[O.id]) ? I : [],
+            voiceStates: null != (I = d[O.id]) ? I : [],
+            speakerVoiceStates: null != (P = f[O.id]) ? P : [],
             disableManageChannels: p,
             isFavoriteCategory: y
           }, x);
@@ -774,7 +774,7 @@ let eh = e => {
     selectedVoiceChannelId: r
   } = e, o = (0, u.e7)([g.Z], () => g.Z.keyboardModeEnabled), {
     analyticsLocations: a
-  } = (0, b.ZP)(m.Z.GUILD_CHANNEL_LIST), d = (0, u.e7)([w.Z], () => w.Z.getChannel(n)), p = (0, u.e7)([w.Z], () => w.Z.getChannel(r)), f = (0, u.e7)([R.Z], () => R.Z.getGuildId()), O = (0, x.DM)(t), y = l.useRef(null), _ = l.useCallback((e, t) => {
+  } = (0, b.ZP)(m.Z.GUILD_CHANNEL_LIST), d = (0, u.e7)([Z.Z], () => Z.Z.getChannel(n)), p = (0, u.e7)([Z.Z], () => Z.Z.getChannel(r)), f = (0, u.e7)([R.Z], () => R.Z.getGuildId()), O = (0, x.DM)(t), y = l.useRef(null), _ = l.useCallback((e, t) => {
     let n = y.current;
     if (null != n)
       if (el.Xyh.test(t) || (0, eo.AB)(t)) n.scrollToChannel(t, false, 2 * ei.yE, () => {
@@ -806,7 +806,7 @@ let eh = e => {
   l.useEffect(() => {
     null != n && E(n)
   }, [n, E]);
-  let S = (0, I.Z)(t);
+  let S = (0, P.Z)(t);
   return (0, i.jsx)(b.Gt, {
     value: a,
     children: (0, i.jsx)(h.Z, {

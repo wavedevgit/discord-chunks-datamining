@@ -1,4 +1,4 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 21616 **/
 /** chunk id: 663924, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => E
@@ -26,21 +26,21 @@ let x = {
   height: Chunk314734.lv
 };
 
-function j() {
+function O() {
   Chunk499254.yT(Chunk827498.ti.DISMISSED)
 }
 
-function O(e) {
+function j(e) {
   let {
     channel: t,
     closeOnModalOuterClick: n = false,
     parentModalKey: u
   } = e, h = i.useRef(null), {
-    renderWindow: C,
+    renderWindow: _,
     windowDispatch: v
-  } = i.useContext(s.ZP), x = null != u, O = (0, a.Jw)(null != u ? u : ""), E = i.useCallback(e => {
+  } = i.useContext(s.ZP), x = null != u, j = (0, a.Jw)(null != u ? u : ""), E = i.useCallback(e => {
     var t;
-    if (!x && (0, a.$s)() || x && !(O && n) || d.Z.isOpen() || e.defaultPrevented) return;
+    if (!x && (0, a.$s)() || x && !(j && n) || d.Z.isOpen() || e.defaultPrevented) return;
     let {
       target: r
     } = e;
@@ -50,19 +50,19 @@ function O(e) {
       if (r === h.current) return;
       if (r.classList.contains(b.t4) || r.classList.contains(b.Id)) return void e.preventDefault();
       if (r.classList.contains(b.NN)) return;
-      let t = [_.cZ, c.N];
+      let t = [C.cZ, c.N];
       if (r.classList.contains(b.I4) || t.includes(r.id)) return;
       r = r.parentNode
     }
-    j();
+    O();
     let i = null == (t = (0, l.uB)(e)) ? true : t.activeElement;
     (null == i || "BODY" === i.tagName) && p.S.dispatchToLastSubscribed(y.CkL.TEXTAREA_FOCUS)
-  }, [n, O, x]);
-  i.useLayoutEffect(() => (C.addEventListener("mousedown", E), C.addEventListener("contextmenu", E), v.subscribe(y.CkL.POPOUT_CLOSE, j), () => {
-    C.removeEventListener("mousedown", E), C.removeEventListener("contextmenu", E), v.unsubscribe(y.CkL.POPOUT_CLOSE, j)
-  }), [E, C, v]), (0, o.Tbt)(h), i.useEffect(() => {
-    (!x && (0, a.$s)() || x && !O) && j()
-  }, [O, x]);
+  }, [n, j, x]);
+  i.useLayoutEffect(() => (_.addEventListener("mousedown", E), _.addEventListener("contextmenu", E), v.subscribe(y.CkL.POPOUT_CLOSE, O), () => {
+    _.removeEventListener("mousedown", E), _.removeEventListener("contextmenu", E), v.unsubscribe(y.CkL.POPOUT_CLOSE, O)
+  }), [E, _, v]), (0, o.Tbt)(h), i.useEffect(() => {
+    (!x && (0, a.$s)() || x && !j) && O()
+  }, [j, x]);
   let S = (0, g.Z)();
   return (0, r.jsx)(m.Z, {
     ref: h,
@@ -110,8 +110,8 @@ let E = Chunk647438.memo(function(e) {
           className: v.positionContainer,
           role: "dialog",
           style: x,
-          "aria-label": C.intl.string(C.t["3CNGLC"]),
-          children: t && (0, r.jsx)(O, function(e) {
+          "aria-label": _.intl.string(_.t["3CNGLC"]),
+          children: t && (0, r.jsx)(j, function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
                 r = Object.keys(n);

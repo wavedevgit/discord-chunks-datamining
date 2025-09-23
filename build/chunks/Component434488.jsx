@@ -1,4 +1,4 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 21616 **/
 /** chunk id: 434488, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   h: () => Z
@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk348130 = require("./348130.js"),
   Chunk359165 = require("./359165.js");
 
-function I(e) {
+function P(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,7 +47,7 @@ function I(e) {
   return e
 }
 
-function P(e, t) {
+function I(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -111,7 +111,7 @@ function T(e) {
     children: (0, r.jsxs)(x.Z, {
       className: E.root,
       children: [(0, r.jsx)(c.ua7, {
-        text: O.intl.string(O.t.qJvTKS),
+        text: j.intl.string(j.t.qJvTKS),
         children: e => {
           var {
             onClick: i
@@ -130,7 +130,7 @@ function T(e) {
             }
             return i
           }(e, ["onClick"]);
-          return (0, r.jsx)(c.P3F, P(I({}, l), {
+          return (0, r.jsx)(c.P3F, I(P({}, l), {
             className: E.clickableTile,
             onClick: () => {
               null == i || i(), (0, g.Z)({
@@ -156,7 +156,7 @@ function T(e) {
           }))
         }
       }), (0, r.jsx)(c.f6W, {
-        theme: j.BRd.DARK,
+        theme: O.BRd.DARK,
         children: e => (0, r.jsx)(c.P3F, {
           onClick: i,
           className: a()(e, E.shelfButtonCloseButton),
@@ -179,7 +179,7 @@ function N(e) {
     inPopout: o
   } = e;
   i.useEffect(() => {
-    v.default.track(j.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_VIEWED, {
+    v.default.track(O.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_VIEWED, {
       tile_type: "activity invite",
       n_participants: 1
     })
@@ -187,7 +187,7 @@ function N(e) {
   let {
     analyticsLocations: s,
     newestAnalyticsLocation: u
-  } = (0, m.ZP)(f.Z.VC_TILE_ACTIVITY_INVITE), p = (0, _._k)({
+  } = (0, m.ZP)(f.Z.VC_TILE_ACTIVITY_INVITE), p = (0, C._k)({
     location: "single_user_tile"
   }), {
     enabled: h
@@ -201,11 +201,11 @@ function N(e) {
     (0, c.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("7654"), n.e("62292")]).then(n.bind(n, 560114));
-      return n => (0, r.jsx)(e, P(I({}, n), {
+      } = await Promise.all([n.e("7654"), n.e("49049"), n.e("98953")]).then(n.bind(n, 560114));
+      return n => (0, r.jsx)(e, I(P({}, n), {
         guild: l,
         channel: t,
-        source: j.t4x.ACTIVITY_ENTRY_POINT_TILE
+        source: O.t4x.ACTIVITY_ENTRY_POINT_TILE
       }))
     }, {
       contextKey: o ? c.u1M : c.z1l
@@ -224,13 +224,13 @@ function N(e) {
       analyticsLocation: u
     })
   }
-  let C = h ? c.iWm : c.nG3,
+  let _ = h ? c.iWm : c.nG3,
     Z = p.isInCallEntrypointEnabled ? c.oLu : c.iFz;
   return (0, r.jsx)(m.Gt, {
     value: s,
     children: (0, r.jsx)(c.f6W, {
       disableAdaptiveTheme: true,
-      theme: j.BRd.MIDNIGHT,
+      theme: O.BRd.MIDNIGHT,
       children: e => (0, r.jsxs)(x.Z, {
         className: a()(E.root, E.singleUserRoot, e),
         children: [(0, r.jsx)("img", {
@@ -243,12 +243,12 @@ function N(e) {
           children: [(0, r.jsx)(c.zxk, {
             variant: "secondary",
             icon: Z,
-            text: p.isInCallEntrypointEnabled ? O.intl.string(O.t["EE+P0N"]) : O.intl.string(O.t["6Qgren"]),
+            text: p.isInCallEntrypointEnabled ? j.intl.string(j.t["EE+P0N"]) : j.intl.string(j.t["6Qgren"]),
             onClick: b
           }), (0, r.jsx)(c.zxk, {
             variant: "secondary",
-            icon: C,
-            text: O.intl.string(O.t.qnFavb),
+            icon: _,
+            text: j.intl.string(j.t.qnFavb),
             onClick: y
           })]
         })]
@@ -266,7 +266,7 @@ function A(e) {
     userParticipantCount: d
   } = e;
   (0, u.ZP)(() => {
-    v.default.track(j.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_VIEWED, {
+    v.default.track(O.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_VIEWED, {
       tile_type: "activity suggestion",
       n_participants: d
     })
@@ -275,20 +275,20 @@ function A(e) {
       guildId: n.id
     }).slice(0, 3),
     {
-      analyticsLocations: _
+      analyticsLocations: C
     } = (0, m.ZP)(f.Z.VC_TILE_ACTIVITY_SUGGESTION),
     S = i.useMemo(() => ({
       channel: t,
       type: "channel"
     }), [t]);
   return (0, r.jsx)(m.Gt, {
-    value: _,
+    value: C,
     children: (0, r.jsxs)(x.Z, {
       className: E.root,
       children: [s > 300 ? (0, r.jsx)(c.Text, {
         className: E.heading,
         variant: s > 550 ? "text-md/semibold" : "text-sm/semibold",
-        children: O.intl.string(O.t["7BKMcH"])
+        children: j.intl.string(j.t["7BKMcH"])
       }) : null, (0, r.jsx)("div", {
         className: a()(E.activitiesContainer, {
           [E.activitiesContainerSmol]: s <= 300
@@ -303,20 +303,20 @@ function A(e) {
       }), (0, r.jsxs)(c.P3F, {
         className: E.checkboxContainer,
         onClick: function() {
-          v.default.track(j.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_CLOSED, {
+          v.default.track(O.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_CLOSED, {
             tile_type: "activity suggestion",
             close_type: "permanent",
             n_participants: d
           }), (0, y.Q3)(o.z.VC_TILE_ACTIVITIES_ENTRY_POINT)
         },
-        children: [(0, r.jsx)(C.Z, {}), (0, r.jsx)(c.Text, {
+        children: [(0, r.jsx)(_.Z, {}), (0, r.jsx)(c.Text, {
           variant: "text-sm/medium",
-          children: O.intl.string(O.t["5E9SBw"])
+          children: j.intl.string(j.t["5E9SBw"])
         })]
       }), (0, r.jsx)(c.P3F, {
         className: E.closeButtonContainer,
         onClick: function() {
-          v.default.track(j.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_CLOSED, {
+          v.default.track(O.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_CLOSED, {
             tile_type: "activity suggestion",
             close_type: "temporary",
             n_participants: d

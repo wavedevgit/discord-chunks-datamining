@@ -79,7 +79,7 @@ function I(e) {
     (0, l.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("90508"), n.e("99534"), n.e("71350")]).then(n.bind(n, 422200));
+      } = await Promise.all([n.e("90508"), n.e("46154"), n.e("89381")]).then(n.bind(n, 422200));
       return n => (0, r.jsx)(e, O({
         channel: t
       }, n))

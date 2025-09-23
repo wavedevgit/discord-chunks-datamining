@@ -1,7 +1,7 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 91053 **/
 /** chunk id: 102888, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => d
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -10,15 +10,15 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk957717 = require("./957717.js");
-let u = e => {
+let d = e => {
   let {
     guild: t,
-    onAddGuild: u
-  } = e, d = i.useCallback(() => {
+    onAddGuild: d
+  } = e, u = i.useCallback(() => {
     (0, l.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("7654"), n.e("62292")]).then(n.bind(n, 560114));
+      } = await Promise.all([n.e("7654"), n.e("81404")]).then(n.bind(n, 560114));
       return n => {
         var i, l;
         return (0, r.jsx)(e, (i = function(e) {
@@ -40,9 +40,9 @@ let u = e => {
           return e
         }({}, n), l = l = {
           guild: t,
-          source: o.t4x.HUB_DIRECTORY,
+          source: s.t4x.HUB_DIRECTORY,
           analyticsLocation: {
-            section: o.jXE.HUB_WELCOME_CTA
+            section: s.jXE.HUB_WELCOME_CTA
           }
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
           var n = Object.keys(e);
@@ -66,25 +66,25 @@ let u = e => {
     }), (0, r.jsx)(l.X6q, {
       className: c.emptyTitle,
       variant: "heading-xl/semibold",
-      children: s.intl.format(s.t.vyvrpK, {
+      children: o.intl.format(o.t.vyvrpK, {
         guildName: t.name
       })
     }), (0, r.jsx)(l.Text, {
       variant: "text-md/normal",
       className: c.emptySubtitle,
-      children: s.intl.string(s.t.WypE0t)
-    }), null != u ? (0, r.jsx)(a.i, {
+      children: o.intl.string(o.t.WypE0t)
+    }), null != d ? (0, r.jsx)(a.i, {
       className: c.emptyCTA,
       iconUrl: n(362827),
-      header: s.intl.string(s.t.hyK15u),
+      header: o.intl.string(o.t.hyK15u),
       completed: false,
-      onClick: u
+      onClick: d
     }) : null, (0, r.jsx)(a.i, {
       className: c.emptyCTA,
       iconUrl: n(538548),
-      header: s.intl.string(s.t.L4bwJy),
+      header: o.intl.string(o.t.L4bwJy),
       completed: false,
-      onClick: d
+      onClick: u
     })]
   })
 }

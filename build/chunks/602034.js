@@ -1,4 +1,4 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 91053 **/
 /** chunk id: 602034, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b,
@@ -25,21 +25,21 @@ function b(e) {
     parentMessageId: n,
     threadSettings: i,
     privateThreadMode: c,
-    location: u,
+    location: d,
     onThreadCreated: b,
     useDefaultThreadName: y
   } = e, _ = r.useCallback((e, t, n, r) => {
-    a.Z.sendMessage(e.id, d.ZP.parse(e, n), true, {
+    a.Z.sendMessage(e.id, u.ZP.parse(e, n), true, {
       eagerDispatch: false,
-      location: m.dy.THREAD_CREATION,
+      location: g.dy.THREAD_CREATION,
       stickerIds: r,
       attachmentsToUpload: t,
       onAttachmentUploadError: (r, i, a, c) => {
-        var u;
-        (0, s.openUploadError)({
-          title: g.intl.string(g.t.B3vFdX),
-          help: null != (u = null == c ? true : c.message) ? u : g.intl.string(g.t.zMEjJi)
-        }), "" !== n && "" === p.Z.getDraft(e.id, p.d.FirstThreadMessage) && l.Z.saveDraft(e.id, n, p.d.FirstThreadMessage), 0 === h.Z.getUploadCount(e.id, p.d.FirstThreadMessage) && o.Z.setUploads({
+        var d;
+        (0, o.openUploadError)({
+          title: m.intl.string(m.t.B3vFdX),
+          help: null != (d = null == c ? true : c.message) ? d : m.intl.string(m.t.zMEjJi)
+        }), "" !== n && "" === p.Z.getDraft(e.id, p.d.FirstThreadMessage) && l.Z.saveDraft(e.id, n, p.d.FirstThreadMessage), 0 === h.Z.getUploadCount(e.id, p.d.FirstThreadMessage) && s.Z.setUploads({
           channelId: e.id,
           uploads: t,
           draftType: p.d.FirstThreadMessage
@@ -52,7 +52,7 @@ function b(e) {
     parentMessageId: n,
     threadSettings: i,
     privateThreadMode: c,
-    location: u,
+    location: d,
     onThreadCreated: b,
     useDefaultThreadName: y,
     uploadHandler: _
@@ -73,7 +73,7 @@ function _(e) {
   } = e, {
     name: n,
     appliedTags: r
-  } = (0, u.xH)(e => {
+  } = (0, d.xH)(e => {
     let {
       name: t,
       appliedTags: n

@@ -1,4 +1,4 @@
-/** Chunk was on 11160 **/
+/** Chunk was on 89929 **/
 /** chunk id: 695301, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -24,13 +24,13 @@ let b = Chunk647438.memo(function(e) {
     lowerBadge: O
   } = e, y = b.id, _ = (0, l.e7)([p.Z], () => p.Z.getGuild(y)), v = (0, a.E)(_), j = (0, l.e7)([f.Z], () => f.Z.isFocused()), x = (0, l.e7)([u.Z], () => u.Z.isUnavailable(y)), C = (0, c.Z)(e => e.guildId), E = (0, h.Z)(y), {
     badge: S,
-    unread: P,
-    isMentionLowImportance: I
+    unread: I,
+    isMentionLowImportance: P
   } = (0, l.cj)([d.default], () => ({
     badge: d.default.getMentionCount(y),
     isMentionLowImportance: d.default.getIsMentionLowImportance(y),
     unread: d.default.hasUnread(y)
-  })), N = (0, s.Ij)(_) && 0 === S, Z = i.useMemo(() => null != O ? O : N ? (0, r.jsx)("div", {
+  })), N = (0, s.Ij)(_) && 0 === S, w = i.useMemo(() => null != O ? O : N ? (0, r.jsx)("div", {
     className: m.pauseBackground,
     children: (0, r.jsx)(o.fpf, {
       size: "custom",
@@ -63,9 +63,9 @@ let b = Chunk647438.memo(function(e) {
     animatable: j,
     selected: C === y,
     badge: S,
-    isMentionLowImportance: I,
-    lowerBadge: Z,
-    unread: P,
+    isMentionLowImportance: P,
+    lowerBadge: w,
+    unread: I,
     mediaState: E,
     guildJoinRequestStatus: v
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

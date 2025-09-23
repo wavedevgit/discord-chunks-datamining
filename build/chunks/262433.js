@@ -1,4 +1,4 @@
-/** Chunk was on 69634 **/
+/** Chunk was on 47387 **/
 /** chunk id: 262433, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   U: () => E,
@@ -44,8 +44,8 @@ function b(e) {
     context: b,
     canvasWidth: S,
     canvasHeight: v,
-    fallbackColor: h,
-    outlineColorDark: O,
+    fallbackColor: O,
+    outlineColorDark: h,
     outlineColorLight: y,
     streamerId: _,
     deadDrawables: j
@@ -56,7 +56,7 @@ function b(e) {
     w = (0, d.np)(a.y, v),
     {
       outlineColor: P
-    } = (0, d.bg)(a.userId, O, y, h);
+    } = (0, d.bg)(a.userId, h, y, O);
   g(a, e => {
       e.x += e.xSpeed * window.devicePixelRatio, e.y += e.ySpeed * window.devicePixelRatio, e.opacity -= e.opacitySpeed, e.opacity <= 0 && (0, o.j)(() => {
         E.setState(t => (delete t.particles[a.id][e.id], 0 === Object.keys(t.particles[a.id]).length && delete t.particles[a.id], t))

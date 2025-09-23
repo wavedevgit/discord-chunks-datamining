@@ -1,7 +1,7 @@
-/** Chunk was on 11160 **/
+/** Chunk was on 89929 **/
 /** chunk id: 332538, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Wj: () => Z,
+  Wj: () => w,
   ZP: () => N
 }), require("./388685.js"), require("./361932.js"), require("./187205.js");
 var Chunk951288 = require("./951288.js"),
@@ -36,7 +36,7 @@ function N(e) {
     n = (0, o.e7)([O.Z], () => O.Z.getStateForGuild(e)),
     {
       trailing: m,
-      showUnread: I
+      showUnread: P
     } = function(e, t, n) {
       let l = (0, x.Z)(e).available,
         {
@@ -117,7 +117,7 @@ function N(e) {
         if (null != n) return n;
         let r = function(e, t, n) {
           var r, i;
-          let l = null != (i = null == (r = f.Z.getGuild(e)) ? true : r.premiumTier) ? i : P.Eu4.NONE,
+          let l = null != (i = null == (r = f.Z.getGuild(e)) ? true : r.premiumTier) ? i : I.Eu4.NONE,
             o = Array.from(S.Tg.values()).flatMap(r => r.length <= 0 || r.some(e => {
               if (null != t.unlockedPowerups[e]) returntrue;
               let n = S.Rx[e];
@@ -200,27 +200,27 @@ function N(e) {
         }
       }, [t, o, r, O, C, E, b, m, c])
     }(e, n);
-  if (null !== n && (null != m || I || null != N)) return {
+  if (null !== n && (null != m || P || null != N)) return {
     trailing: m,
-    showUnread: I,
+    showUnread: P,
     popout: N
   }
 }
 
-function Z(e) {
+function w(e) {
   let t = (0, o.e7)([O.Z], () => O.Z.getStateForGuild(e)),
     n = N(e);
   i.useEffect(() => {
     (0, m.jd)(e)
   }, [e]), i.useEffect(() => {
     var e;
-    null == n || null == (e = n.popout) || e.markAsDismissed(I.L.AUTO_DISMISS)
+    null == n || null == (e = n.popout) || e.markAsDismissed(P.L.AUTO_DISMISS)
   }, [n]), i.useEffect(() => {
     null != t && g.Oe.forEach(n => {
       let r = S.Cp[n];
       if (null == r || null == t.unlockedPowerups[r]) return;
       let i = S.Q1[n];
-      null != i && (0, p.Qd)(i, e, false, I.L.AUTO_DISMISS)
+      null != i && (0, p.Qd)(i, e, false, P.L.AUTO_DISMISS)
     })
   }, [e, t])
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 21616 **/
 /** chunk id: 248789, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Y: () => y
@@ -53,15 +53,15 @@ function y(e) {
   let {
     channelId: t,
     warningId: y,
-    senderId: _
-  } = e, C = i.useCallback(() => {
+    senderId: C
+  } = e, _ = i.useCallback(() => {
     (0, u.T)(t, [y])
-  }, [t, y]), v = (0, a.e7)([c.Z], () => c.Z.isBlocked(_)), x = i.useMemo(() => ({
+  }, [t, y]), v = (0, a.e7)([c.Z], () => c.Z.isBlocked(C)), x = i.useMemo(() => ({
     channelId: t,
     warningId: y,
-    senderId: _,
+    senderId: C,
     warningType: d.pj.INAPPROPRIATE_CONVERSATION_TIER_2
-  }), [t, y, _]);
+  }), [t, y, C]);
   i.useEffect(() => {
     (0, p.KQ)(b(g({}, x), {
       viewName: p.pb.SAFETY_WARNING_BANNER
@@ -69,23 +69,23 @@ function y(e) {
       name: l.V.SAFETY_WARNING_VIEW
     })
   }, [x]);
-  let j = i.useCallback(e => {
+  let O = i.useCallback(e => {
       (0, p.qc)(b(g({}, x), {
         cta: e
       }))
     }, [x]),
-    O = i.useCallback(() => {
+    j = i.useCallback(() => {
       (0, o.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([n.e("37031"), n.e("89650")]).then(n.bind(n, 611446));
+        } = await Promise.all([n.e("37031"), n.e("89650"), n.e("899")]).then(n.bind(n, 611446));
         return n => {
           let {
             transitionState: i,
             onClose: l
           } = n;
           return (0, r.jsx)(e, {
-            otherUserId: _,
+            otherUserId: C,
             channelId: t,
             warningId: y,
             warningType: d.pj.INAPPROPRIATE_CONVERSATION_TIER_2,
@@ -95,15 +95,15 @@ function y(e) {
         }
       }, {
         modalKey: f.X_
-      }), j(p.NM.USER_BANNER_OPEN_SAFETY_TOOLS)
-    }, [t, _, y, j]),
+      }), O(p.NM.USER_BANNER_OPEN_SAFETY_TOOLS)
+    }, [t, C, y, O]),
     E = i.useCallback(() => {
-      C(), j(p.NM.USER_BANNER_BLOCK_CONFIRM)
-    }, [C, j]),
+      _(), O(p.NM.USER_BANNER_BLOCK_CONFIRM)
+    }, [_, O]),
     S = i.useCallback(() => {
-      C(), j(p.NM.USER_BANNER_BLOCK_AND_REPORT_CONFIRM)
-    }, [C, j]),
-    I = i.useCallback(() => {
+      _(), O(p.NM.USER_BANNER_BLOCK_AND_REPORT_CONFIRM)
+    }, [_, O]),
+    P = i.useCallback(() => {
       (0, o.ZDy)(async () => {
         let {
           default: e
@@ -118,31 +118,31 @@ function y(e) {
             onBlock: E,
             onBlockAndReport: S,
             onCancel: () => {
-              null == l || l(), j(p.NM.USER_BANNER_BLOCK_CANCEL)
+              null == l || l(), O(p.NM.USER_BANNER_BLOCK_CANCEL)
             },
             onClose: l,
-            userId: _,
+            userId: C,
             channelId: t
           })
         }
       })
-    }, [E, S, _, t, j]);
+    }, [E, S, C, t, O]);
   return (0, r.jsx)(h.Q, {
     channelId: t,
     warningId: y,
-    senderId: _,
+    senderId: C,
     warningType: d.pj.INAPPROPRIATE_CONVERSATION_TIER_2,
     header: m.intl.string(m.t.ZzlB5u),
     description: m.intl.string(m.t["D1aU+v"]),
-    onDismiss: C,
+    onDismiss: _,
     buttons: [{
       text: m.intl.string(m.t.Qyu4UF),
       variant: "primary",
-      onClick: O
+      onClick: j
     }, ...v ? [] : [{
       text: m.intl.string(m.t["7q0bNT"]),
       variant: "secondary",
-      onClick: I
+      onClick: P
     }]]
   })
 }

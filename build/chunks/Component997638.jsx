@@ -1,7 +1,7 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 21616 **/
 /** chunk id: 997638, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  ZP: () => O,
+  ZP: () => j,
   cy: () => x,
   iu: () => v
 }), require("./388685.js");
@@ -27,7 +27,7 @@ function y(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -40,7 +40,7 @@ function _(e) {
   return e
 }
 
-function C(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -54,7 +54,7 @@ function C(e, t) {
 }
 var v = ((i = {}).CENTER = "center", i.LEFT = "left", i),
   x = ((l = {}).TOP = "top", l.MIDDLE = "middle", l);
-class j extends Chunk647438.PureComponent {
+class O extends Chunk647438.PureComponent {
   componentDidMount() {
     let {
       uniqueId: e
@@ -130,7 +130,7 @@ class j extends Chunk647438.PureComponent {
     })
   }
 }
-class O extends(r = Chunk647438.PureComponent) {
+class j extends(r = Chunk647438.PureComponent) {
   render() {
     let e = this.props,
       {
@@ -162,7 +162,7 @@ class O extends(r = Chunk647438.PureComponent) {
         return i
       }(module, ["renderMedia", "textAlign", "onComplete", "onSkipAll", "isLongText", "title", "body", "children", "spacing", "forceTheme", "innerRef"]),
       m = "top" === Chunk600164.position || "bottom" === Chunk600164.position ? "center" : "top";
-    return (0, Chunk951288.jsx)(Chunk481060.yRy, C(_({
+    return (0, Chunk951288.jsx)(Chunk481060.yRy, _(C({
       targetElementRef: Chunk626135
     }, Chunk600164), {
       align: Chunk981631,
@@ -195,7 +195,7 @@ class O extends(r = Chunk647438.PureComponent) {
       } = this.props, s = null != o;
       return (0, a.jsx)(p.f6W, {
         theme: r,
-        children: e => (0, a.jsx)(j, C(_({}, this.props), {
+        children: e => (0, a.jsx)(O, _(C({}, this.props), {
           className: c()({
             [b.bottom]: "bottom" === n,
             [b.contentNarrowNoMedia]: !i && !s,
@@ -216,6 +216,6 @@ class O extends(r = Chunk647438.PureComponent) {
     })
   }
 }
-y(O, "TextAlignments", v), y(O, "defaultProps", {
+y(j, "TextAlignments", v), y(j, "defaultProps", {
   textAlign: "left"
 })

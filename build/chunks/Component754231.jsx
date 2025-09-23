@@ -1,4 +1,4 @@
-/** Chunk was on 11160 **/
+/** Chunk was on 89929 **/
 /** chunk id: 754231, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -176,15 +176,15 @@ function S(e) {
   } = e, m = [];
   null != n ? m = Array.from(n.embeddedActivity.userIds) : (0, u.Z)(t) && null != c && (m = c.map(e => e.user.id));
   let S = (0, a.Wu)([h.default], () => m.map(e => h.default.getUser(e)).filter(b.lm)),
-    P = null != n || (0, u.Z)(t),
-    I = i.useMemo(() => {
+    I = null != n || (0, u.Z)(t),
+    P = i.useMemo(() => {
       let e = new Map;
-      return P && null != c && c.forEach(t => {
+      return I && null != c && c.forEach(t => {
         let n = t.member;
         null != n && e.set(t.user.id, n)
       }), e
-    }, [c, P]);
-  return P ? (0, r.jsxs)("div", {
+    }, [c, I]);
+  return I ? (0, r.jsxs)("div", {
     className: y.flexColumn,
     children: [(0, r.jsxs)("div", {
       className: y.flexRow,
@@ -214,7 +214,7 @@ function S(e) {
           renderUser: e => {
             var t;
             if (null == e || e === p.ag) return null;
-            let n = I.get(e.id),
+            let n = P.get(e.id),
               i = null != (t = null == n ? true : n.nick) ? t : O.ZP.getName(e);
             return (0, r.jsx)(s.u, {
               asContainer: true,

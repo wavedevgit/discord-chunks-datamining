@@ -1,4 +1,4 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 21616 **/
 /** chunk id: 705563, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -25,13 +25,13 @@ function y(e) {
     channelId: t,
     showProfile: n = false,
     showTrailingDivider: y = false
-  } = e, _ = d.default.cast(t), {
-    joinRequest: C,
+  } = e, C = d.default.cast(t), {
+    joinRequest: _,
     isModmin: v,
     guildId: x,
-    maxMembers: j
+    maxMembers: O
   } = (0, i.cj)([p.Z, c.Z, u.Z], () => {
-    let e = p.Z.getRequest(_),
+    let e = p.Z.getRequest(C),
       t = c.Z.getGuild(null == e ? true : e.guildId);
     return {
       joinRequest: e,
@@ -39,12 +39,12 @@ function y(e) {
       guildId: null == t ? true : t.id,
       maxMembers: null == t ? true : t.maxMembers
     }
-  }), O = (0, i.e7)([s.Z], () => null != x ? s.Z.getMemberCount(x) : 0), E = null != j && (null != O ? O : 0) >= j, {
+  }), j = (0, i.e7)([s.Z], () => null != x ? s.Z.getMemberCount(x) : 0), E = null != O && (null != j ? j : 0) >= O, {
     approveRequest: S,
-    rejectRequest: I,
-    submitting: P
-  } = (0, f.s)(null == C ? true : C.guildId, null == C ? true : C.userId, null == C ? true : C.joinRequestId);
-  return null != C && C.applicationStatus === h.wB.SUBMITTED && v ? (0, r.jsxs)("div", {
+    rejectRequest: P,
+    submitting: I
+  } = (0, f.s)(null == _ ? true : _.guildId, null == _ ? true : _.userId, null == _ ? true : _.joinRequestId);
+  return null != _ && _.applicationStatus === h.wB.SUBMITTED && v ? (0, r.jsxs)("div", {
     className: b.buttons,
     children: [(0, r.jsx)(l.ua7, {
       text: g.intl.string(g.t.cdPGbG),
@@ -73,7 +73,7 @@ function y(e) {
           size: "sm",
           text: g.intl.string(g.t.BzjDQE)
         }, e), n = n = {
-          loading: P,
+          loading: I,
           onClick: S,
           disabled: E
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -91,13 +91,13 @@ function y(e) {
       variant: "critical-primary",
       size: "sm",
       text: g.intl.string(g.t.hDtbs7),
-      onClick: I,
-      disabled: P || C.applicationStatus !== h.wB.SUBMITTED
+      onClick: P,
+      disabled: I || _.applicationStatus !== h.wB.SUBMITTED
     }), n && (0, r.jsx)(l.zxk, {
       onClick: () => {
         (0, o.openUserProfileModal)({
-          userId: C.userId,
-          guildId: C.guildId
+          userId: _.userId,
+          guildId: _.guildId
         })
       },
       variant: "secondary",

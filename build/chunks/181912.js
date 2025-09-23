@@ -1,5 +1,6 @@
 /** Chunk was on 63141 **/
 /** chunk id: 181912, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => m
 });
@@ -18,7 +19,7 @@ var Chunk26151 = require("./26151.js"),
   Chunk388032 = require("./388032.jsx");
 
 function m(e) {
-  let t = (0, s.F6)(e, u.default, d.Z),
+  let t = (0, l.F6)(e, u.default, d.Z),
     n = g.intl.string(g.t.ssrVzM),
     m = (0, o.x)(e),
     y = (0, c.Z)(e),
@@ -46,7 +47,7 @@ function m(e) {
       if (p.TPd.CALLABLE.has(e.type)) r.Z.callPrivateChannel(e.id);
       else {
         if (e.type !== p.d4z.GUILD_VOICE) return;
-        l.default.selectVoiceChannel(e.id)
+        s.default.selectVoiceChannel(e.id)
       }
       v("join"), r.Z.track(p.rMx.VOICE_CHANNEL_SELECTED, {
         location: "Overlay Notificaiton",

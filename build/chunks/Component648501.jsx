@@ -1,4 +1,4 @@
-/** Chunk was on 11160 **/
+/** Chunk was on 89929 **/
 /** chunk id: 648501, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => N
@@ -36,8 +36,8 @@ function N(e) {
   let {
     channel: n,
     isChannelSelected: N,
-    isChannelCollapsed: Z,
-    voiceStates: w,
+    isChannelCollapsed: w,
+    voiceStates: Z,
     enableConnectedUserLimit: T,
     enableActivities: A,
     isSubscriptionGated: R,
@@ -62,14 +62,14 @@ function N(e) {
     locked: D
   });
   if (L) return (0, r.jsx)(o.IGR, {
-    text: P.intl.string(P.t.y2b7CA),
+    text: I.intl.string(I.t.y2b7CA),
     color: l.Z.unsafe_rawColors.BRAND_260.css,
-    className: I.newChannel
+    className: P.newChannel
   });
   if (!M && k === S.i.ALL_MESSAGES && n.isForumLikeChannel() && null != K && K > 0) return (0, r.jsx)(o.Text, {
     variant: "text-xs/semibold",
     color: "text-brand",
-    children: P.intl.format(P.t.GkAbqa, {
+    children: I.intl.format(I.t.GkAbqa, {
       count: (0, o.NGo)(K)
     })
   });
@@ -78,13 +78,13 @@ function N(e) {
     color: "text-muted",
     children: (0, o.NGo)(Y)
   });
-  let X = null != (t = null == w ? true : w.length) ? t : 0;
+  let X = null != (t = null == Z ? true : Z.length) ? t : 0;
   return null != T && T && W ? (0, r.jsx)(x.Z, {
     userCount: X,
     video: H || z,
     channel: n
-  }) : Z && (0, O.a)(w) && q ? (0, r.jsx)(o.IGR, {
-    text: P.intl.string(P.t.dI3q4u),
+  }) : w && (0, O.a)(Z) && q ? (0, r.jsx)(o.IGR, {
+    text: I.intl.string(I.t.dI3q4u),
     color: l.Z.unsafe_rawColors.RED_400.css
   }) : null != V ? (0, r.jsx)(c.x3, {
     textColor: "text-feedback-positive",

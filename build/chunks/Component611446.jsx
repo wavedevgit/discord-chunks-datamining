@@ -1,8 +1,8 @@
 /** Chunk was on 89650 **/
 /** chunk id: 611446, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  O: () => x,
-  default: () => p
+  O: () => _,
+  default: () => E
 }), require("./388685.js");
 var i, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,25 +15,25 @@ var i, Chunk951288 = require("./951288.js"),
   Chunk486213 = require("./486213.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk767770 = require("./767770.js"),
-  x = ((i = {}).ACTIONS = "ACTIONS", i.SAFETY_TIPS = "SAFETY_TIPS", i.ABOUT_SAFETY_ALERTS = "ABOUT_SAFETY_ALERTS", i);
-let p = t => {
+  _ = ((i = {}).ACTIONS = "ACTIONS", i.SAFETY_TIPS = "SAFETY_TIPS", i.ABOUT_SAFETY_ALERTS = "ABOUT_SAFETY_ALERTS", i);
+let E = t => {
   let {
     onClose: e,
     channelId: n,
     warningId: i,
-    warningType: x,
-    otherUserId: p,
-    transitionState: b
-  } = t, E = null != (0, o.M)(n), [A, h] = r.useState("ACTIONS"), O = r.useCallback(t => {
+    warningType: _,
+    otherUserId: E,
+    transitionState: A
+  } = t, O = null != (0, o.M)(n), [h, g] = r.useState("ACTIONS"), p = r.useCallback(t => {
     (0, c.qc)({
       channelId: n,
       warningId: i,
-      warningType: x,
-      senderId: p,
+      warningType: _,
+      senderId: E,
       cta: t,
-      isNudgeWarning: E
+      isNudgeWarning: O
     })
-  }, [n, i, x, p, E]), g = r.useCallback(t => {
+  }, [n, i, _, E, O]), m = r.useCallback(t => {
     let {
       text: e,
       onClick: n
@@ -44,55 +44,55 @@ let p = t => {
       variant: "secondary",
       textVariant: "text-sm/normal"
     })
-  }, []), m = r.useCallback(() => {
-    switch (A) {
+  }, []), N = r.useCallback(() => {
+    switch (h) {
       case "SAFETY_TIPS":
       case "ABOUT_SAFETY_ALERTS":
-        return (0, s.jsx)(g, {
-          text: _.intl.string(_.t["13/7kZ"]),
-          onClick: () => h("ACTIONS")
+        return (0, s.jsx)(m, {
+          text: S.intl.string(S.t["13/7kZ"]),
+          onClick: () => g("ACTIONS")
         });
       default:
         return null
     }
-  }, [A, g]), N = r.useCallback(() => {
-    switch (A) {
+  }, [h, m]), b = r.useCallback(() => {
+    switch (h) {
       case "SAFETY_TIPS":
-        return _.intl.string(_.t.EtNxi4);
+        return S.intl.string(S.t.EtNxi4);
       case "ABOUT_SAFETY_ALERTS":
-        return _.intl.string(_.t.qI14KC);
+        return S.intl.string(S.t.qI14KC);
       default:
-        return _.intl.string(_.t.MAhAp6)
+        return S.intl.string(S.t.MAhAp6)
     }
-  }, [A]), j = r.useCallback(t => {
-    h(t)
-  }, [h]);
+  }, [h]), j = r.useCallback(t => {
+    g(t)
+  }, [g]);
   return (0, s.jsxs)(l.Y0X, {
     "data-migration-pending": true,
-    transitionState: b,
-    "aria-label": _.intl.string(_.t.eXlt09),
+    transitionState: A,
+    "aria-label": S.intl.string(S.t.eXlt09),
     size: l.CgR.SMALL,
     parentComponent: "SafetyToolsModal",
     children: [(0, s.jsx)(l.xBx, {
       "data-migration-pending": true,
       separator: false,
-      className: S.modalHeader,
+      className: x.modalHeader,
       justify: a.Z.Justify.CENTER,
       children: (0, s.jsx)(l.X6q, {
         variant: "heading-xl/semibold",
-        children: N()
+        children: b()
       })
     }), (0, s.jsx)(l.Ttm, {
       children: (0, s.jsxs)(l.MyZ, {
-        activeSlide: A,
+        activeSlide: h,
         width: 440,
         children: [(0, s.jsx)(l.Mi4, {
           id: "ACTIONS",
           children: (0, s.jsx)(T.Z, {
-            otherUserId: p,
+            otherUserId: E,
             channelId: n,
             warningId: i,
-            warningType: x,
+            warningType: _,
             transitionToSlide: j
           })
         }), (0, s.jsx)(l.Mi4, {
@@ -100,7 +100,7 @@ let p = t => {
           children: (0, s.jsx)(d.Z, {
             channelId: n,
             onClose: () => {
-              e(), O(c.NM.USER_SAFETY_TOOLS_ABOUT_SAFETY_ALERTS_DISMISS)
+              e(), p(c.NM.USER_SAFETY_TOOLS_ABOUT_SAFETY_ALERTS_DISMISS)
             }
           })
         }), (0, s.jsx)(l.Mi4, {
@@ -111,12 +111,12 @@ let p = t => {
     }), (0, s.jsxs)(l.mzw, {
       "data-migration-pending": true,
       justify: a.Z.Justify.BETWEEN,
-      children: [(0, s.jsx)(g, {
-        text: _.intl.string(_.t.cpT0Cg),
+      children: [(0, s.jsx)(m, {
+        text: S.intl.string(S.t.cpT0Cg),
         onClick: () => {
-          e(), O(c.NM.USER_SAFETY_TOOLS_DISMISS)
+          e(), p(c.NM.USER_SAFETY_TOOLS_DISMISS)
         }
-      }), m()]
+      }), N()]
     })]
   })
 }

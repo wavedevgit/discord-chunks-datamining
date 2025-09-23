@@ -1,4 +1,4 @@
-/** Chunk was on 30355 **/
+/** Chunk was on 49902 **/
 /** chunk id: 311044, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -22,45 +22,45 @@ function b(e) {
     user: t,
     guildId: n,
     channelId: b,
-    onClose: j
+    onClose: m
   } = e, {
-    analyticsLocations: y
+    analyticsLocations: v
   } = (0, a.ZP)(), {
-    context: h,
-    trackUserProfileAction: v
-  } = (0, o.KZ)(), {
-    mutualFriends: O,
+    context: y,
+    trackUserProfileAction: O
+  } = (0, s.KZ)(), {
+    mutualFriends: j,
     mutualFriendsCount: x
-  } = (0, c.Z)(t), P = (0, i.Z)();
-  return l.useEffect(() => {
+  } = (0, c.Z)(t), P = (0, l.Z)();
+  return i.useEffect(() => {
     (0, u.Z)(t.id, P)
-  }, [t.id, P]), (0, r.jsx)(g.F, {
+  }, [t.id, P]), (0, r.jsx)(h.F, {
     className: p.scroller,
-    children: null == O ? Array.from({
+    children: null == j ? Array.from({
       length: null != x ? x : 10
     }).map((e, t) => (0, r.jsxs)("div", {
       className: p.friendsLoadingItem,
-      children: [(0, r.jsx)(s.ZT, {
+      children: [(0, r.jsx)(o.ZT, {
         width: 40,
         opacity: .08
-      }), (0, r.jsx)(s.ZT, {
+      }), (0, r.jsx)(o.ZT, {
         width: 135,
         opacity: .08
       })]
-    }, t)) : 0 === O.length ? (0, r.jsx)(m.s_, {}) : O.map(e => {
+    }, t)) : 0 === j.length ? (0, r.jsx)(g.s_, {}) : j.map(e => {
       let {
         key: t,
-        user: l,
-        status: i
+        user: i,
+        status: l
       } = e;
       return (0, r.jsx)(f.Z, {
-        user: l,
-        status: i,
+        user: i,
+        status: l,
         guildId: n,
         channelId: b,
         onSelect: () => {
           var e, t;
-          null == j || j(), v({
+          null == m || m(), O({
             action: "PRESS_MUTUAL_FRIEND"
           }), (0, d.openUserProfileModal)((e = function(e) {
             for (var t = 1; t < arguments.length; t++) {
@@ -79,9 +79,9 @@ function b(e) {
               })
             }
             return e
-          }({}, h), t = t = {
-            userId: l.id,
-            sourceAnalyticsLocations: y
+          }({}, y), t = t = {
+            userId: i.id,
+            sourceAnalyticsLocations: v
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {

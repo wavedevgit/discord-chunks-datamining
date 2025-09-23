@@ -1,4 +1,4 @@
-/** Chunk was on 69634 **/
+/** Chunk was on 47387 **/
 /** chunk id: 462061, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   T: () => T,
@@ -98,13 +98,13 @@ function D(e) {
     ignored: M,
     noVideoRender: L = false,
     pulseSpeakingIndicator: F = false,
-    inOverlayPopout: V = false,
-    paused: k = false
-  } = e, U = y.Z.getVideoComponent(), H = (0, o.e7)([h.default], () => h.default.getId()), {
+    inOverlayPopout: k = false,
+    paused: V = false
+  } = e, U = y.Z.getVideoComponent(), H = (0, o.e7)([O.default], () => O.default.getId()), {
     user: W,
     streamId: Y,
     speaking: z
-  } = t, G = W.id === H, K = (0, Z.ZP)(t), q = (0, o.e7)([_.Z], () => _.Z.isFocused()), B = (0, o.e7)([b.Z], () => b.Z.getWindowFocused(P.KJ3.CHANNEL_CALL_POPOUT)), J = (0, o.e7)([y.Z], () => null != W.id && y.Z.isLocalVideoDisabled(W.id, (0, f.Z)(t.type)), [W.id, t.type]), X = (0, o.e7)([O.ZP], () => O.ZP.isGuestOrLurker(n.guild_id, W.id)), Q = j.ZP.getName(n.getGuildId(), n.id, W) + (X ? " ".concat(C.intl.string(C.t["pFO/Pj"])) : ""), $ = z && (B || q), ee = u < 124 ? N : x, {
+  } = t, G = W.id === H, K = (0, Z.ZP)(t), q = (0, o.e7)([_.Z], () => _.Z.isFocused()), B = (0, o.e7)([b.Z], () => b.Z.getWindowFocused(P.KJ3.CHANNEL_CALL_POPOUT)), X = (0, o.e7)([y.Z], () => null != W.id && y.Z.isLocalVideoDisabled(W.id, (0, f.Z)(t.type)), [W.id, t.type]), J = (0, o.e7)([h.ZP], () => h.ZP.isGuestOrLurker(n.guild_id, W.id)), Q = j.ZP.getName(n.getGuildId(), n.id, W) + (J ? " ".concat(C.intl.string(C.t["pFO/Pj"])) : ""), $ = z && (B || q), ee = u < 124 ? N : x, {
     avatarSrc: et,
     avatarDecorationSrc: en
   } = (0, S.Z)({
@@ -126,7 +126,7 @@ function D(e) {
       user: n
     } = eo.current;
     e.isGuildStageVoice() && !K && (null == t ? true : t.id) === n.id && s.Z.selectParticipant(e.id, null)
-  }, [K]), i && !J && !L && K && !v && null != U && y.Z.supports(A.AN.VIDEO)) ? null != el && null == ei ? (0, r.jsx)(I.Z, {
+  }, [K]), i && !X && !L && K && !v && null != U && y.Z.supports(A.AN.VIDEO)) ? null != el && null == ei ? (0, r.jsx)(I.Z, {
     avError: el,
     userId: t.id,
     width: u,
@@ -140,7 +140,7 @@ function D(e) {
     videoComponent: U,
     fit: w,
     videoSpinnerContext: W.id === H ? c.m.SELF_VIDEO : c.m.REMOTE_VIDEO,
-    paused: k,
+    paused: V,
     userId: W.id
   }, Y) : (0, r.jsx)("div", {
     className: a()(R.content, {

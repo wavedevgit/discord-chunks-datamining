@@ -113,7 +113,7 @@ let Z = Chunk647438.memo(function(e) {
                 onClick: () => (0, c.ZDy)(async () => {
                   let {
                     default: e
-                  } = await Promise.all([t.e("7654"), t.e("62292")]).then(t.bind(t, 560114));
+                  } = await Promise.all([t.e("7654"), t.e("54833")]).then(t.bind(t, 560114));
                   return t => {
                     var r, a;
                     return (0, l.jsx)(e, (r = function(e) {

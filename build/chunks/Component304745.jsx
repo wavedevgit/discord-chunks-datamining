@@ -1,4 +1,4 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 21616 **/
 /** chunk id: 304745, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   M: () => S
@@ -32,21 +32,21 @@ function S(e) {
     channel: t,
     idle: n,
     whichPopoutIsOpen: S,
-    setWhichPopoutIsOpen: I
-  } = e, P = (0, l.e7)([u.ZP], () => u.ZP.isLaunchingActivity()), Z = (0, p.KF)(t.id), T = (0, p.g5)(Z), N = Z !== p.jy.CAN_LAUNCH || P, {
+    setWhichPopoutIsOpen: P
+  } = e, I = (0, l.e7)([u.ZP], () => u.ZP.isLaunchingActivity()), Z = (0, p.KF)(t.id), T = (0, p.g5)(Z), N = Z !== p.jy.CAN_LAUNCH || I, {
     isHovered: A,
     setIsHovered: w,
-    onMouseEnter: R,
-    onMouseLeave: M
-  } = (0, C.Z)(200, 300), D = (0, d.p)({
+    onMouseEnter: M,
+    onMouseLeave: R
+  } = (0, _.Z)(200, 300), k = (0, d.p)({
     surface: s.eR.VOICE_LAUNCHER
-  }), k = (0, l.e7)([u.ZP], () => null != u.ZP.getSelfEmbeddedActivityForLocation(u.ZP.getConnectedActivityLocation())), L = !N, U = i.useCallback(e => {
-    "focus" !== e.type && R()
-  }, [R]), B = (0, c.bp)() === j.IlC.POPOUT, {
-    parentAnalyticsLocation: G,
-    newestAnalyticsLocation: H
-  } = (0, g.ZP)(), F = i.useCallback(() => {
-    (0, y.v)(G, y.d.ACTIVITY), (0, b.Z)({
+  }), L = (0, l.e7)([u.ZP], () => null != u.ZP.getSelfEmbeddedActivityForLocation(u.ZP.getConnectedActivityLocation())), D = !N, U = i.useCallback(e => {
+    "focus" !== e.type && M()
+  }, [M]), B = (0, c.bp)() === O.IlC.POPOUT, {
+    parentAnalyticsLocation: F,
+    newestAnalyticsLocation: V
+  } = (0, g.ZP)(), H = i.useCallback(() => {
+    (0, y.v)(F, y.d.ACTIVITY), (0, b.Z)({
       context: null != t ? {
         type: "channel",
         channel: t
@@ -54,20 +54,20 @@ function S(e) {
         type: "contextless"
       },
       openInPopout: B,
-      analyticsLocation: H
+      analyticsLocation: V
     })
-  }, [t, B, H, G]), V = [];
-  N || V.push(a.z.ACTIVITIES_MINI_SHELF_SPARKLES), (0, h.Z)(t.id) && !N && V.push(a.z.ACTIVITY_GDM_ROCKET_SPARKLE), N || V.push(a.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP);
+  }, [t, B, V, F]), G = [];
+  N || G.push(a.z.ACTIVITIES_MINI_SHELF_SPARKLES), (0, h.Z)(t.id) && !N && G.push(a.z.ACTIVITY_GDM_ROCKET_SPARKLE), N || G.push(a.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP);
   let z = i.useRef(false),
     W = i.useRef(null);
-  return (0, r.jsx)(_.ZP, {
-    contentTypes: V,
+  return (0, r.jsx)(C.ZP, {
+    contentTypes: G,
     children: e => {
       let {
         visibleContent: i,
         markAsDismissed: l
       } = e, s = i === a.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP && !n && !A;
-      return z.current && !s && l(O.L.AUTO_DISMISS), z.current !== s && (z.current = s), (0, r.jsx)(o.yRy, {
+      return z.current && !s && l(j.L.AUTO_DISMISS), z.current !== s && (z.current = s), (0, r.jsx)(o.yRy, {
         targetElementRef: W,
         fixed: true,
         shouldShow: A && (S === x.D.ACTIVITY || null == S),
@@ -77,28 +77,28 @@ function S(e) {
         align: "center",
         spacing: 16,
         onRequestClose: () => {
-          w(false), null == I || I(true)
+          w(false), null == P || P(true)
         },
         renderPopout: e => {
           let {
             closePopout: n,
             setPopoutRef: i
           } = e;
-          return L ? (0, r.jsx)(f.m, {
+          return D ? (0, r.jsx)(f.m, {
             ref: e => {
               null == i || i(e)
             },
             channel: t,
             closePopout: n,
-            onMouseEnter: R,
-            onMouseLeave: M,
+            onMouseEnter: M,
+            onMouseLeave: R,
             isHovered: A,
-            onClick: () => l(O.L.UNKNOWN)
+            onClick: () => l(j.L.UNKNOWN)
           }) : (0, r.jsx)(r.Fragment, {})
         },
-        children: () => (0, r.jsx)(_.Xf, {
+        children: () => (0, r.jsx)(C.Xf, {
           contentType: a.z.ACTIVITIES_VOICE_LAUNCHER_BADGE,
-          latestVersion: D,
+          latestVersion: k,
           children: e => {
             let {
               visibleContent: t,
@@ -135,13 +135,13 @@ function S(e) {
                     children: (0, r.jsx)(v.Z, {
                       disabled: N,
                       "aria-label": T,
-                      label: L ? true : T,
-                      isActivityActive: k,
+                      label: D ? true : T,
+                      isActivityActive: L,
                       onClick: () => {
-                        F(), (i === a.z.ACTIVITIES_MINI_SHELF_SPARKLES || i === a.z.ACTIVITY_GDM_ROCKET_SPARKLE || i === a.z.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_1_SPARKLES || i === a.z.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_2_SPARKLES || i === a.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP) && l(O.L.TAKE_ACTION), t === a.z.ACTIVITIES_VOICE_LAUNCHER_BADGE && n(O.L.TAKE_ACTION)
+                        H(), (i === a.z.ACTIVITIES_MINI_SHELF_SPARKLES || i === a.z.ACTIVITY_GDM_ROCKET_SPARKLE || i === a.z.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_1_SPARKLES || i === a.z.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_2_SPARKLES || i === a.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP) && l(j.L.TAKE_ACTION), t === a.z.ACTIVITIES_VOICE_LAUNCHER_BADGE && n(j.L.TAKE_ACTION)
                       },
                       onMouseEnter: U,
-                      onMouseLeave: M
+                      onMouseLeave: R
                     })
                   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
                     var n = Object.keys(e);

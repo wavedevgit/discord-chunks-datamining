@@ -1,4 +1,4 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 21616 **/
 /** chunk id: 340295, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -22,13 +22,13 @@ let m = function(e) {
     hasConnectPermission: m
   } = e, g = t.filter(p.Io), b = (0, s.J)(n.guild_id), y = i.useCallback(() => {
     b ? (0, o.hk)(n.guild_id, () => a.default.selectVoiceChannel(n.id)) : a.default.selectVoiceChannel(n.id)
-  }, [n.id, n.guild_id, b]), _ = 4 === g.length ? 2 : 3;
+  }, [n.id, n.guild_id, b]), C = 4 === g.length ? 2 : 3;
   return (0, r.jsxs)("div", {
     className: f.container,
     children: [(0, r.jsx)(d.Z, {}), (0, r.jsx)("div", {
       className: f.tiles,
       style: {
-        maxWidth: 168 * _
+        maxWidth: 168 * C
       },
       children: g.slice(0, 5).map(e => (0, r.jsx)(u.ZP, {
         participant: e,

@@ -1,4 +1,4 @@
-/** Chunk was on 69634 **/
+/** Chunk was on 47387 **/
 /** chunk id: 90753, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -21,8 +21,8 @@ let g = 1e3 / 60;
 function b(e, t, n, b) {
   let S = (0, a.dQu)(i.Z.unsafe_rawColors.BRAND_500).hex(),
     v = (0, a.dQu)(i.Z.unsafe_rawColors.BLACK_500).hex(),
-    h = (0, a.dQu)(i.Z.unsafe_rawColors.WHITE_500).hex(),
-    O = r.useRef({}),
+    O = (0, a.dQu)(i.Z.unsafe_rawColors.WHITE_500).hex(),
+    h = r.useRef({}),
     y = r.useRef(new l.Xp),
     _ = r.useCallback(t => {
       let n = c.Z.getDrawables(t);
@@ -105,13 +105,13 @@ function b(e, t, n, b) {
         canvasRef: e,
         drawables: n,
         fallbackColor: S,
-        linesDrawnAt: O,
+        linesDrawnAt: h,
         streamerId: t,
         outlineColorDark: v,
-        outlineColorLight: h,
+        outlineColorLight: O,
         channelId: b
       })
-    }, [e, b, S, v, h]);
+    }, [e, b, S, v, O]);
   r.useEffect(() => {
     let t = new ResizeObserver(() => {
       let t = e.current;

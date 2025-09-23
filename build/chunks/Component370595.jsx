@@ -1,4 +1,4 @@
-/** Chunk was on 10576 **/
+/** Chunk was on 66201 **/
 /** chunk id: 370595, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -21,7 +21,7 @@ function u(e) {
     children: [(0, r.jsx)("div", {
       className: o.headerTitle,
       children: (0, r.jsxs)(l.P3F, {
-        className: s.backButton,
+        className: a.backButton,
         onClick: () => null == t ? true : t(n),
         children: [(0, r.jsx)(l.whL, {
           size: "custom",
@@ -29,13 +29,13 @@ function u(e) {
           height: 20
         }), (0, r.jsx)(l.X6q, {
           variant: "heading-md/semibold",
-          children: a.intl.string(a.t["13/7kZ"])
+          children: s.intl.string(s.t["13/7kZ"])
         })]
       })
     }), (0, r.jsx)(l.M2$, {
       shortcut: "esc",
-      keyClassName: s.keyComboInner,
-      className: s.keyComboContainer
+      keyClassName: a.keyComboInner,
+      className: a.keyComboContainer
     })]
   })
 }

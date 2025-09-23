@@ -1,8 +1,8 @@
 /** Chunk was on 93886 **/
 /** chunk id: 819557, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  q: () => s,
-  z: () => c
+  q: () => c,
+  z: () => s
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -11,7 +11,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk481060 = require("./481060.js"),
   Chunk262441 = require("./262441.js");
 
-function c(e) {
+function s(e) {
   let {
     children: n
   } = e;
@@ -24,39 +24,39 @@ function c(e) {
   })
 }
 
-function s(e) {
+function c(e) {
   let {
     icon: n,
     title: t,
     description: i,
-    iconClassName: c,
-    color: s,
+    iconClassName: s,
+    color: c,
     listType: d = "icon",
     completed: u = false,
-    index: b
+    index: f
   } = e;
   return (0, r.jsxs)("div", {
     className: o.cell,
     children: [(() => {
-      if ("numbered" === d && null != b)
+      if ("numbered" === d && null != f)
         if (u) return (0, r.jsx)("div", {
           className: o.number,
           children: (0, r.jsx)(a.sV5, {
             color: "green",
-            className: l()(o.icon, c)
+            className: l()(o.icon, s)
           })
         });
         else return (0, r.jsx)(a.X6q, {
           variant: "heading-md/semibold",
           color: "text-brand",
           className: o.number,
-          children: b + 1
+          children: f + 1
         });
       if (null != n) return (0, r.jsx)("div", {
         className: o.iconContainer,
         children: (0, r.jsx)(n, {
-          color: null != s ? s : "currentColor",
-          className: l()(o.icon, c)
+          color: null != c ? c : "currentColor",
+          className: l()(o.icon, s)
         })
       })
     })(), (0, r.jsxs)("div", {

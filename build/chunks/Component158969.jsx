@@ -1,4 +1,4 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 21616 **/
 /** chunk id: 158969, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => E
@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk177119 = require("./177119.js"),
   Chunk724913 = require("./724913.js"),
   Chunk430864 = require("./430864.js");
-let O = Chunk647438.memo(function(e) {
+let j = Chunk647438.memo(function(e) {
     let {
       message: t,
       notice: n,
@@ -63,8 +63,8 @@ let O = Chunk647438.memo(function(e) {
             color: "interactive-normal",
             tag: "span",
             className: v.learnMore,
-            children: C.intl.format(C.t.Nd3Gh4, {
-              helpUrl: f.Z.getArticleURL(_.BhN.GUILD_AUTOMOD_BLOCKED_MESSAGE)
+            children: _.intl.format(_.t.Nd3Gh4, {
+              helpUrl: f.Z.getArticleURL(C.BhN.GUILD_AUTOMOD_BLOCKED_MESSAGE)
             })
           })
         })
@@ -79,35 +79,35 @@ let O = Chunk647438.memo(function(e) {
       message: u,
       children: f,
       content: m,
-      onUpdate: _
-    } = e, E = null == (t = u.editedTimestamp) ? true : t.toString(), S = i.useRef(false), I = (0, c.e7)([h.Z], () => h.Z.getMessage(u.id), [u.id]), P = i.useCallback(() => {
-      (null == I ? true : I.isBlockedEdit) ? (0, p.I)(u.id) : d.Z.deleteMessage(u.channel_id, u.id, true)
-    }, [u, I]);
+      onUpdate: C
+    } = e, E = null == (t = u.editedTimestamp) ? true : t.toString(), S = i.useRef(false), P = (0, c.e7)([h.Z], () => h.Z.getMessage(u.id), [u.id]), I = i.useCallback(() => {
+      (null == P ? true : P.isBlockedEdit) ? (0, p.I)(u.id) : d.Z.deleteMessage(u.channel_id, u.id, true)
+    }, [u, P]);
     return i.useLayoutEffect(() => {
-      S.current ? null != _ && _() : S.current = true
-    }, [_, u.content, m, E, f]), (0, r.jsxs)("div", {
+      S.current ? null != C && C() : S.current = true
+    }, [C, u.content, m, E, f]), (0, r.jsxs)("div", {
       id: (0, g.ut)(u),
-      className: a()(l, j.markup, {
+      className: a()(l, O.markup, {
         [x.messageContent]: true,
         [x.markupRtl]: "rtl" === s()(u.content),
-        [v.blockedEdit]: null == I ? true : I.isBlockedEdit,
-        [v.blockedSend]: !(null == I ? true : I.isBlockedEdit)
+        [v.blockedEdit]: null == P ? true : P.isBlockedEdit,
+        [v.blockedSend]: !(null == P ? true : P.isBlockedEdit)
       }),
-      children: [null != f ? f : (0, b.L5)(u, m), (null == I ? true : I.isBlockedEdit) && null != u.timestamp && (0, r.jsxs)(r.Fragment, {
+      children: [null != f ? f : (0, b.L5)(u, m), (null == P ? true : P.isBlockedEdit) && null != u.timestamp && (0, r.jsxs)(r.Fragment, {
         children: [" ", (0, r.jsx)(y.Z, {
           timestamp: u.timestamp,
           isEdited: true,
           isInline: false,
           children: (0, r.jsxs)("span", {
             className: x.edited,
-            children: ["(", C.intl.string(C.t.Z7eEx8), ")"]
+            children: ["(", _.intl.string(_.t.Z7eEx8), ")"]
           })
         })]
-      }), (0, r.jsx)(O, {
-        notice: null != (n = null == I ? true : I.errorMessage) ? n : C.intl.string(C.t.zQ69pq),
+      }), (0, r.jsx)(j, {
+        notice: null != (n = null == P ? true : P.errorMessage) ? n : _.intl.string(_.t.zQ69pq),
         message: u,
         compact: o,
-        onDismiss: P
+        onDismiss: I
       })]
     })
   }, Chunk930282.HR)

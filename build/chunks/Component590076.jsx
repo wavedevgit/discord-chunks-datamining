@@ -1,4 +1,4 @@
-/** Chunk was on 69634 **/
+/** Chunk was on 47387 **/
 /** chunk id: 590076, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => E
@@ -28,7 +28,7 @@ function m(e) {
     handleMouseDown: b,
     handleMouseEnter: S,
     handleMouseMove: v,
-    handleMouseUp: h
+    handleMouseUp: O
   } = (0, d.Z)({
     user: E,
     channelId: n,
@@ -44,7 +44,7 @@ function m(e) {
       onMouseDown: b,
       onMouseEnter: S,
       onMouseMove: v,
-      onMouseUp: h,
+      onMouseUp: O,
       className: p.sharedCanvas
     })
   })

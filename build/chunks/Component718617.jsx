@@ -1,7 +1,7 @@
-/** Chunk was on 10576 **/
+/** Chunk was on 66201 **/
 /** chunk id: 718617, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => N
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -29,29 +29,29 @@ function g(e, t) {
   }
 }
 
-function h(e) {
+function N(e) {
   var t;
   let {
     userId: n,
-    guildId: h,
-    onClose: N,
-    analyticsLocation: O,
+    guildId: N,
+    onClose: O,
+    analyticsLocation: h,
     className: f
-  } = e, p = (0, a.e7)([E.ZP], () => E.ZP.getGuildSidebarState(h), [h]), S = null != (t = null == p ? true : p.details.modViewPanel) ? t : m.k.INFO, R = (0, o.Z)(n), C = null == S ? null : S === m.k.INFO ? "backwards" : "forwards", L = (0, c.Z)(C), {
-    reducedMotion: D
-  } = l.useContext(s.Sfi), U = l.useCallback(e => {
-    null != p && (0, d.r)(h, n, p.baseChannelId, {
+  } = e, R = (0, s.e7)([E.ZP], () => E.ZP.getGuildSidebarState(N), [N]), S = null != (t = null == R ? true : R.details.modViewPanel) ? t : I.k.INFO, p = (0, o.Z)(n), C = null == S ? null : S === I.k.INFO ? "backwards" : "forwards", D = (0, c.Z)(C), {
+    reducedMotion: L
+  } = l.useContext(a.Sfi), U = l.useCallback(e => {
+    null != R && (0, d.r)(N, n, R.baseChannelId, {
       modViewPanel: e
     })
-  }, [p, h, n]), M = l.useMemo(() => ({
-    [I.EkH.CLOSE_MODAL]: {
+  }, [R, N, n]), M = l.useMemo(() => ({
+    [m.EkH.CLOSE_MODAL]: {
       binds: ["esc"],
       comboKeysBindGlobal: true,
-      action: () => S === m.k.INFO ? N() : U(m.k.INFO)
+      action: () => S === I.k.INFO ? O() : U(I.k.INFO)
     }
-  }), [N, S, U]);
+  }), [O, S, U]);
   l.useEffect(() => (u.Z.enable(), u.Z.enableTemp(M), () => u.Z.disableTemp()), [M]);
-  let b = (0, s.Yzy)(S, {
+  let b = (0, a.Yzy)(S, {
     value: 0,
     from: {
       value: 1
@@ -62,7 +62,7 @@ function h(e) {
     leave: {
       value: false
     }
-  }, R !== n ? "animate-never" : "animate-always");
+  }, p !== n ? "animate-never" : "animate-always");
   return (0, r.jsx)(i.animated.div, {
     style: {
       position: "relative",
@@ -71,7 +71,7 @@ function h(e) {
       overflow: "hidden"
     },
     children: b((e, t, l) => {
-      var a, s, o;
+      var s, a, o;
       let {
         key: u
       } = l;
@@ -100,33 +100,33 @@ function h(e) {
           backfaceVisibility: "hidden",
           width: "100%",
           height: "100%"
-        }, D.enabled ? {
-          opacity: null == (a = e.value) ? true : a.to(e => 1 - Math.abs(e))
+        }, L.enabled ? {
+          opacity: null == (s = e.value) ? true : s.to(e => 1 - Math.abs(e))
         } : {
-          left: null == (s = e.value) ? true : s.to(g("left", L)),
-          right: null == (o = e.value) ? true : o.to(g("right", L))
+          left: null == (a = e.value) ? true : a.to(g("left", D)),
+          right: null == (o = e.value) ? true : o.to(g("right", D))
         }),
         children: function(e) {
           switch (e) {
-            case m.k.INFO:
+            case I.k.INFO:
               return (0, r.jsx)(_.Z, {
                 userId: n,
-                guildId: h,
+                guildId: N,
                 onNavigate: U,
                 className: f
               });
-            case m.k.MESSAGE_HISTORY:
+            case I.k.MESSAGE_HISTORY:
               return (0, r.jsx)(A.Z, {
                 userId: n,
-                guildId: h,
-                onNavigate: () => U(m.k.INFO),
+                guildId: N,
+                onNavigate: () => U(I.k.INFO),
                 className: f
               });
-            case m.k.PERMISSIONS:
+            case I.k.PERMISSIONS:
               return (0, r.jsx)(T.Z, {
                 userId: n,
-                guildId: h,
-                onNavigate: () => U(m.k.INFO),
+                guildId: N,
+                onNavigate: () => U(I.k.INFO),
                 className: f
               });
             default:

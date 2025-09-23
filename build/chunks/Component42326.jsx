@@ -1,4 +1,4 @@
-/** Chunk was on 69634 **/
+/** Chunk was on 47387 **/
 /** chunk id: 42326, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -48,19 +48,19 @@ function g(e) {
     }
   }(i);
   null != t && null != b ? g = "".concat(t, " ").concat(b) : null != t && (g = t);
-  let [v] = l.useState(new o.V7), [h, O] = l.useState(false);
+  let [v] = l.useState(new o.V7), [O, h] = l.useState(false);
 
   function y() {
     v.start(250, () => {
-      O(false)
+      h(false)
     })
   }
 
   function _() {
-    v.stop(), O(true)
+    v.stop(), h(true)
   }
   return (0, r.jsx)(u.ua7, {
-    forceOpen: h,
+    forceOpen: O,
     disableTooltipPointerEvents: false,
     text: (0, r.jsx)(f.Z, {
       children: (0, r.jsxs)("div", {

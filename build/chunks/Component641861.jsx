@@ -1,4 +1,4 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 21616 **/
 /** chunk id: 641861, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -35,9 +35,9 @@ function x(e) {
     let e = null;
     return s && null != n.id && (e = p.Z.getParticipant(n.id, t.id)), {
       userIsInCall: null != e,
-      isUserRinging: null != e && e.type === _.fO.USER && e.ringing
+      isUserRinging: null != e && e.type === C.fO.USER && e.ringing
     }
-  }), x = (0, o.e7)([b.Z], () => b.Z.getGuild(n.guild_id)), O = null != x ? (0, g.EB)(x, 32, true) : null, E = !s || u && !m;
+  }), x = (0, o.e7)([b.Z], () => b.Z.getGuild(n.guild_id)), j = null != x ? (0, g.EB)(x, 32, true) : null, E = !s || u && !m;
   return ((0, d.Z)({
     type: a.ImpressionTypes.PAGE,
     name: a.ImpressionNames.RING_TO_GUILD_VC_BANNER_SHOWN,
@@ -56,7 +56,7 @@ function x(e) {
         mask: f.QS.SQUIRCLE,
         width: 24,
         height: 24,
-        children: null == O ? (0, r.jsx)("div", {
+        children: null == j ? (0, r.jsx)("div", {
           className: l()(v.guildIcon, v.guildIconWithoutImage),
           children: (0, r.jsx)("div", {
             className: v.guildAcronym,
@@ -64,14 +64,14 @@ function x(e) {
           })
         }) : (0, r.jsx)("img", {
           alt: null == x ? true : x.name,
-          src: O,
+          src: j,
           className: v.guildIcon
         })
       }), (0, r.jsx)(c.Text, {
         className: v.chatHeaderBarText,
         variant: "text-md/medium",
         color: "header-secondary",
-        children: C.intl.format(C.t.f2tNxM, {
+        children: _.intl.format(_.t.f2tNxM, {
           username: null == t ? true : t.globalName,
           channelName: (0, r.jsx)(c.Text, {
             variant: "text-md/semibold",
@@ -80,7 +80,7 @@ function x(e) {
           }, n.id)
         })
       })]
-    }), (0, r.jsx)(j, {
+    }), (0, r.jsx)(O, {
       channelId: n.id,
       recipientUserId: t.id,
       isUserRinging: m
@@ -88,12 +88,12 @@ function x(e) {
   })
 }
 
-function j(e) {
+function O(e) {
   let {
     channelId: t,
     recipientUserId: n,
     isUserRinging: i
-  } = e, l = i ? C.intl.string(C.t.ygslb2) : C.intl.string(C.t["3Hv9qa"]), a = i ? () => u.Z.stopRinging(t, [n]) : () => {
+  } = e, l = i ? _.intl.string(_.t.ygslb2) : _.intl.string(_.t["3Hv9qa"]), a = i ? () => u.Z.stopRinging(t, [n]) : () => {
     u.Z.ring(t, [n], "dm_banner"), (0, m.Kh)(t)
   };
   return (0, r.jsx)(s.zxk, {

@@ -1,5 +1,6 @@
 /** Chunk was on 63141 **/
 /** chunk id: 649561, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => R
 }), require("./388685.js"), require("./358797.js");
@@ -97,11 +98,11 @@ class T extends Chunk647438.PureComponent {
             onConfirmClick: this.handleReload,
             onDismissClick: this.hideNotification,
             locked: false
-          }), n && null != e ? (0, i.jsxs)(x.ZP, {
+          }), n && null != e ? (0, i.jsxs)(S.ZP, {
             className: I.stackTrace,
-            children: [(0, i.jsx)(x.ZP.Bar, {
+            children: [(0, i.jsx)(S.ZP.Bar, {
               children: "Error Details"
-            }), (0, i.jsx)(x.ZP.Content, {
+            }), (0, i.jsx)(S.ZP.Content, {
               className: I.stackTraceCode,
               children: (0, i.jsx)("code", {
                 className: I.code,
@@ -158,11 +159,11 @@ class k extends Chunk647438.PureComponent {
       error: e,
       info: t
     });
-    let i = (0, _.getPID)(),
-      r = (0, _.getRPCAuthToken)();
+    let i = (0, b.getPID)(),
+      r = (0, b.getRPCAuthToken)();
     (0, f.lW)({
       type: j.BmY.DISPATCH,
-      pid: (0, _.getPID)(),
+      pid: (0, b.getPID)(),
       token: r,
       payloads: [{
         type: "OVERLAY_CRASHED",
@@ -174,7 +175,7 @@ class k extends Chunk647438.PureComponent {
         pid: i
       }]
     }), setImmediate(() => window.addEventListener("click", N));
-    let l = (0, b.V6)(e, E.gl.Hook, {
+    let s = (0, _.V6)(e, E.gl.Hook, {
       extra: t
     });
     p.Z.track(j.rMx.APP_CRASHED, {
@@ -182,7 +183,7 @@ class k extends Chunk647438.PureComponent {
       extra: t,
       error_message: e.message,
       error_stack: e.stack,
-      sentry_issue_id: l,
+      sentry_issue_id: s,
       error_level: "fatal"
     }), D()
   }

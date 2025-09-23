@@ -1,4 +1,4 @@
-/** Chunk was on 69634 **/
+/** Chunk was on 47387 **/
 /** chunk id: 563218, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -32,23 +32,23 @@ function b(e) {
     S = (0, p.Z)(),
     v = (0, i.e7)([c.ZP], () => c.ZP.getActivityPanelMode());
   if (null == S || (0, f.Z)((0, d.p)(S.location)) || v !== m.Ez.PANEL) {
-    var h;
-    t = null != (h = null == b ? true : b.window) ? h : window
+    var O;
+    t = null != (O = null == b ? true : b.window) ? O : window
   } else t = window;
-  let O = l.useRef(null),
+  let h = l.useRef(null),
     y = l.useMemo(() => {
       let e = null;
       return () => {
         null == e && (e = t.requestAnimationFrame(() => {
           var t, r;
-          g(n, null != (r = null == (t = O.current) ? true : t.getBoundingClientRect()) ? r : null), e = null
+          g(n, null != (r = null == (t = h.current) ? true : t.getBoundingClientRect()) ? r : null), e = null
         }))
       }
     }, [n, t]);
   return l.useEffect(() => (t.addEventListener("resize", y), s.S.subscribe(E.CkL.REMEASURE_TARGET, y), () => {
     t.removeEventListener("resize", y), s.S.unsubscribe(E.CkL.REMEASURE_TARGET, y)
   }), [y, t]), l.useLayoutEffect(() => {
-    let e = O.current;
+    let e = h.current;
     if (null == e) return;
     let t = e.ownerDocument.defaultView;
     if (null == t) return;
@@ -58,7 +58,7 @@ function b(e) {
       r.disconnect(), g(n, null)
     }
   }, [n, y]), (0, r.jsx)("div", {
-    ref: O,
+    ref: h,
     style: o,
     className: a
   })

@@ -1,4 +1,4 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 91053 **/
 /** chunk id: 611064, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   R: () => b,
@@ -29,19 +29,19 @@ let y = Chunk647438.memo(function(e) {
       expanded: y,
       expandedCount: _
     } = e,
-    C = (0, l.e7)([u.Z], () => u.Z.hidden),
-    v = i.useCallback(e => {
-      (0, o.jW)(e, async () => {
+    O = (0, l.e7)([d.Z], () => d.Z.hidden),
+    j = i.useCallback(e => {
+      (0, s.jW)(e, async () => {
         let {
           MemberListContentSettingsMenu: e
         } = await Promise.resolve().then(n.bind(n, 703180));
         return () => (0, r.jsx)(e, {
-          closePopout: o.Zy
+          closePopout: s.Zy
         })
       })
     }, []);
-  return (0, r.jsxs)(s.Z, {
-    className: g.membersGroup,
+  return (0, r.jsxs)(o.Z, {
+    className: m.membersGroup,
     children: [(0, r.jsx)(a.nn4, {
       children: f.intl.format(f.t.UaqbkZ, {
         title: p,
@@ -49,27 +49,27 @@ let y = Chunk647438.memo(function(e) {
       })
     }), (0, r.jsxs)(a.P3F, {
       onClick: e => {
-        if (e.currentTarget === e.target || e.currentTarget.contains(e.target)) return C ? (0, c.lY)() : _ > 3 ? b() : (0, h.dG4)()
+        if (e.currentTarget === e.target || e.currentTarget.contains(e.target)) return O ? (0, c.lY)() : _ > 3 ? b() : (0, h.dG4)()
       },
-      onContextMenu: v,
+      onContextMenu: j,
       tag: "span",
       "aria-hidden": true,
-      className: m.headerContainer,
+      className: g.headerContainer,
       children: [(0, r.jsxs)("div", {
-        className: m.header,
+        className: g.header,
         children: [(0, r.jsxs)("span", {
           children: [p, " — ", _]
-        }), (0, r.jsx)(d.Z, {})]
-      }), _ <= 3 && !C ? null : (t = C ? (0, r.jsx)(a.u04, {
-        className: m.toggleExpandIcon
+        }), (0, r.jsx)(u.Z, {})]
+      }), _ <= 3 && !O ? null : (t = O ? (0, r.jsx)(a.u04, {
+        className: g.toggleExpandIcon
       }) : y ? (0, r.jsx)(a.CJ0, {
-        className: m.toggleExpandIcon
+        className: g.toggleExpandIcon
       }) : (0, r.jsx)(a.Fbu, {
-        className: m.toggleExpandIcon
+        className: g.toggleExpandIcon
       }), (0, r.jsx)(a.tEY, {
         children: (0, r.jsx)("div", {
           tabIndex: 0,
-          className: m.toggleExpandIcon,
+          className: g.toggleExpandIcon,
           children: t
         })
       }))]

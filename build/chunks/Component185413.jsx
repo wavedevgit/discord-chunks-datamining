@@ -1,7 +1,7 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 21616 **/
 /** chunk id: 185413, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => j
+  default: () => O
 }), require("./388685.js"), require("./953529.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -57,7 +57,7 @@ function x(e, t) {
   return i
 }
 
-function j(e) {
+function O(e) {
   var {
     channelId: t
   } = e, n = x(e, ["channelId"]);
@@ -67,13 +67,13 @@ function j(e) {
     h.default.track(y.rMx.OPEN_MODAL, {
       type: "Grant Channel Access"
     })
-  }, []), null == a || null == o) ? null : (0, r.jsx)(O, v({
+  }, []), null == a || null == o) ? null : (0, r.jsx)(j, v({
     guild: o,
     channel: a
   }, n))
 }
 
-function O(e) {
+function j(e) {
   var t, n, {
       guild: l,
       channel: d,
@@ -81,16 +81,16 @@ function O(e) {
       newChannel: h,
       inSettings: y
     } = e,
-    j = x(e, ["guild", "channel", "onClose", "newChannel", "inSettings"]);
-  let [O, E] = i.useState(""), [S, I] = i.useState({}), [P, Z] = i.useState(false), [T, N] = i.useState(null), A = i.useRef(null), {
+    O = x(e, ["guild", "channel", "onClose", "newChannel", "inSettings"]);
+  let [j, E] = i.useState(""), [S, P] = i.useState({}), [I, Z] = i.useState(false), [T, N] = i.useState(null), A = i.useRef(null), {
     roles: w,
-    members: R,
-    getRichTag: M
-  } = (0, g.Q)(l, d, d.accessPermissions, O), D = m.Z.useSections({
+    members: M,
+    getRichTag: R
+  } = (0, g.Q)(l, d, d.accessPermissions, j), k = m.Z.useSections({
     roles: w,
-    members: R
-  }), k = h && 0 === Object.keys(S).length;
-  async function L() {
+    members: M
+  }), L = h && 0 === Object.keys(S).length;
+  async function D() {
     if (null == d || 0 === Object.keys(S).length) return void p();
     Z(true);
     try {
@@ -112,39 +112,39 @@ function O(e) {
   let U = (0, u.zi)(d.type) ? o.W4G : o.gjC;
   return (0, r.jsx)(m.Z.Provider, {
     listRef: A,
-    query: O,
+    query: j,
     setQuery: E,
     pendingAdditions: S,
-    setPendingAdditions: I,
+    setPendingAdditions: P,
     roles: w,
-    members: R,
-    getRichTag: M,
-    children: (0, r.jsx)(a.Modal, (t = v({}, j), n = n = {
-      title: _.intl.string(_.t.dMJ3Y2),
+    members: M,
+    getRichTag: R,
+    children: (0, r.jsx)(a.Modal, (t = v({}, O), n = n = {
+      title: C.intl.string(C.t.dMJ3Y2),
       onClose: p,
       input: (0, r.jsxs)("div", {
         children: [(0, r.jsxs)(o.Text, {
-          className: C.channelName,
+          className: _.channelName,
           variant: "text-lg/normal",
           color: "header-secondary",
           children: [(0, r.jsx)(U, {
-            className: C.channelIcon,
+            className: _.channelIcon,
             size: "sm",
             color: "currentColor"
           }), d.name]
         }), d.isGuildStageVoice() && (0, r.jsx)(o.Text, {
           color: "header-secondary",
-          className: C.description,
+          className: _.description,
           variant: "text-sm/normal",
-          children: _.intl.string(_.t.f7VbhI)
+          children: C.intl.string(C.t.f7VbhI)
         }), (0, r.jsx)(m.Z.SearchBox, {
-          placeholderText: _.intl.string(_.t.iezLLi)
+          placeholderText: C.intl.string(C.t.iezLLi)
         }), (0, r.jsx)(o.Text, {
-          className: C.subtext,
+          className: _.subtext,
           variant: "text-xs/normal",
-          children: _.intl.string(_.t["rwFx8/"])
+          children: C.intl.string(C.t["rwFx8/"])
         }), null != T ? (0, r.jsx)(o.Text, {
-          className: C.subtext,
+          className: _.subtext,
           variant: "text-xs/normal",
           color: "text-danger",
           children: T.getAnyErrorMessage()
@@ -156,21 +156,21 @@ function O(e) {
         renderSection: m.Z.renderSection,
         rowHeight: m.Z.ROW_HEIGHT,
         renderRow: m.Z.renderRow,
-        sections: D
+        sections: k
       },
-      actions: k ? [{
+      actions: L ? [{
         variant: "secondary",
-        text: _.intl.string(_.t.u46sxc),
+        text: C.intl.string(C.t.u46sxc),
         onClick: p
       }] : [{
         variant: "secondary",
-        text: _.intl.string(_.t["ETE/oK"]),
+        text: C.intl.string(C.t["ETE/oK"]),
         onClick: p
       }, {
         variant: "primary",
-        text: _.intl.string(_.t.i4jeWV),
-        onClick: L,
-        loading: P
+        text: C.intl.string(C.t.i4jeWV),
+        onClick: D,
+        loading: I
       }]
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);

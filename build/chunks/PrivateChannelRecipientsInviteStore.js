@@ -1,4 +1,4 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 21616 **/
 /** chunk id: 544610, original params: e,t,n (module,exports,require) **/
 let r;
 require.d(exports, {
@@ -18,26 +18,26 @@ var i, l, Chunk442837 = require("./442837.js"),
   Chunk699516 = require("./699516.js"),
   Chunk594174 = require("./594174.js"),
   Chunk981631 = require("./981631.js");
-let C = false,
+let _ = false,
   v = "",
   x = 0,
-  j = [],
-  O = false,
+  O = [],
+  j = false,
   E = new Set,
   S = null;
 
-function I() {
-  v = "", x = 0, j = [], E = new Set, C = false, S = null
+function P() {
+  v = "", x = 0, O = [], E = new Set, _ = false, S = null
 }
 
-function P(e) {
+function I(e) {
   v = e, x = 0, Z()
 }
 
 function Z() {
-  if (!C) returnfalse;
+  if (!_) returnfalse;
   let e = Chunk592125.Z.getChannel(S);
-  if (0 === v.trim().length) return null != r && r.clearQuery(), j = function(e) {
+  if (0 === v.trim().length) return null != r && r.clearQuery(), O = function(e) {
     let t = b.Z.getFriendIDs(),
       n = y.default.getCurrentUser();
     return (null == n ? true : n.isStaff()) && (t = Array.from(new Set([...t, ...y.default.filter(e => e.isStaff() && e.id !== n.id, false).map(e => e.id)]))), (null == e ? true : e.isPrivate()) && (t = t.filter(t => !e.recipients.includes(t))), t.reduce((e, t) => {
@@ -84,13 +84,13 @@ function Z() {
 }
 
 function T() {
-  if (!C) returnfalse;
-  let e = O;
-  return (O = Chunk699516.Z.getFriendCount() > 0) !== module
+  if (!_) returnfalse;
+  let e = j;
+  return (j = Chunk699516.Z.getFriendCount() > 0) !== module
 }
 
 function N(e, t) {
-  if (m.Z.hasConsented(_.pjP.PERSONALIZATION)) {
+  if (m.Z.hasConsented(C.pjP.PERSONALIZATION)) {
     var n, r, i, l;
     let a = null != (i = null == (n = u.Z.getUserAffinity(e.user.id)) ? true : n.communicationProbability) ? i : 0,
       o = null != (l = null == (r = u.Z.getUserAffinity(t.user.id)) ? true : r.communicationProbability) ? l : 0;
@@ -103,7 +103,7 @@ function A(e) {
   let {
     results: t
   } = e;
-  if (!C || "" === v) return;
+  if (!_ || "" === v) return;
   let n = [];
   for (let {
       id: e,
@@ -116,35 +116,35 @@ function A(e) {
       comparator: r
     })
   }
-  j = n, L.emitChange()
+  O = n, D.emitChange()
 }
 
 function w() {
   return null != r && (r.destroy(), r = null), Chunk279779.Z.getUserSearchContext(A, 1e3)
 }
 
-function R(e) {
-  if (e.key !== _.vTt) returnfalse;
-  C = true, T(), r = w(), S = null, P("")
-}
-
 function M(e) {
-  if (e.key !== _.vTt) returnfalse;
-  D()
+  if (e.key !== C.vTt) returnfalse;
+  _ = true, T(), r = w(), S = null, I("")
 }
 
-function D() {
-  null != r && (r.destroy(), r = null), I()
+function R(e) {
+  if (e.key !== C.vTt) returnfalse;
+  k()
 }
-class k extends(i = Chunk442837.ZP.Store) {
+
+function k() {
+  null != r && (r.destroy(), r = null), P()
+}
+class L extends(i = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk594174.default, Chunk592125.Z, Chunk699516.Z, Chunk353926.Z, Chunk480294.Z), this.syncWith([Chunk594174.default, Chunk592125.Z], Z), this.syncWith([Chunk699516.Z], T)
   }
   getResults() {
-    return j
+    return O
   }
   hasFriends() {
-    return O
+    return j
   }
   getSelectedUsers() {
     return E
@@ -157,19 +157,19 @@ class k extends(i = Chunk442837.ZP.Store) {
       query: v,
       selectedRow: x,
       selectedUsers: E,
-      results: j,
-      hasFriends: O
+      results: O,
+      hasFriends: j
     }
   }
-}(l = "displayName") in k ? Object.defineProperty(k, l, {
+}(l = "displayName") in L ? Object.defineProperty(L, l, {
   value: "PrivateChannelRecipientsInviteStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : k[l] = "PrivateChannelRecipientsInviteStore";
-let L = new k(Chunk570140.Z, {
+}) : L[l] = "PrivateChannelRecipientsInviteStore";
+let D = new L(Chunk570140.Z, {
     CONNECTION_OPEN: function() {
-      I()
+      P()
     },
     CHANNEL_SELECT: function(e) {
       let {
@@ -177,19 +177,19 @@ let L = new k(Chunk570140.Z, {
         channelId: n
       } = e;
       if (null != t) returnfalse;
-      let r = C;
-      return I(), C = r, S = n, Z()
+      let r = _;
+      return P(), _ = r, S = n, Z()
     },
-    MODAL_PUSH: R,
-    SHOW_ACTION_SHEET: R,
+    MODAL_PUSH: M,
+    SHOW_ACTION_SHEET: M,
     PRIVATE_CHANNEL_RECIPIENTS_INVITE_OPEN: function(e) {
-      C = true, T(), r = w(), S = e.channelId, P("")
+      _ = true, T(), r = w(), S = e.channelId, I("")
     },
-    MODAL_POP: M,
-    HIDE_ACTION_SHEET: M,
-    PRIVATE_CHANNEL_RECIPIENTS_INVITE_CLOSE: D,
+    MODAL_POP: R,
+    HIDE_ACTION_SHEET: R,
+    PRIVATE_CHANNEL_RECIPIENTS_INVITE_CLOSE: k,
     PRIVATE_CHANNEL_RECIPIENTS_INVITE_QUERY: function(e) {
-      S = e.channelId, P(e.query)
+      S = e.channelId, I(e.query)
     },
     PRIVATE_CHANNEL_RECIPIENTS_INVITE_SELECT: function(e) {
       x = e.row
@@ -207,4 +207,4 @@ let L = new k(Chunk570140.Z, {
       E.delete(t), E = new Set(E)
     }
   }),
-  U = L
+  U = D

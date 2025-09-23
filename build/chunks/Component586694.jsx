@@ -1,4 +1,4 @@
-/** Chunk was on 11160 **/
+/** Chunk was on 89929 **/
 /** chunk id: 586694, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   E: () => b,
@@ -68,10 +68,10 @@ function g(e) {
   } = e, E = {
     width: (0, s.pxk)(n),
     height: (0, s.pxk)(n)
-  }, S = (0, i.useId)(), P = _.size * u.hs, I = null != O && (0, r.jsxs)("svg", {
-    width: P,
-    height: P,
-    viewBox: "0 0 ".concat(P, " ").concat(P),
+  }, S = (0, i.useId)(), I = _.size * u.hs, P = null != O && (0, r.jsxs)("svg", {
+    width: I,
+    height: I,
+    viewBox: "0 0 ".concat(I, " ").concat(I),
     className: p.avatarDecoration,
     "aria-hidden": true,
     children: [(0, r.jsxs)("mask", {
@@ -79,8 +79,8 @@ function g(e) {
       children: [(0, r.jsx)("rect", {
         x: 0,
         y: 0,
-        width: P,
-        height: P,
+        width: I,
+        height: I,
         fill: "white"
       }), null != v && function(e, t) {
         let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : 0,
@@ -113,12 +113,12 @@ function g(e) {
           rx: e.stroke,
           fill: "black"
         })
-      }(_, P, j, x)]
+      }(_, I, j, x)]
     }), (0, r.jsx)("foreignObject", {
       x: 0,
       y: 0,
-      width: P,
-      height: P,
+      width: I,
+      height: I,
       mask: "url(#".concat(S, ")"),
       children: (0, r.jsx)("div", {
         className: p.avatarStack,
@@ -142,7 +142,7 @@ function g(e) {
     onMouseLeave: null != g ? g : true,
     "aria-label": null != C ? C : true,
     "aria-hidden": b,
-    children: [t, I]
+    children: [t, P]
   }) : (0, r.jsxs)("div", {
     className: o()(p.wrapper, m),
     style: E,
@@ -152,7 +152,7 @@ function g(e) {
     role: "img",
     "aria-label": null != C ? C : true,
     "aria-hidden": b,
-    children: [t, I]
+    children: [t, P]
   })
 }
 

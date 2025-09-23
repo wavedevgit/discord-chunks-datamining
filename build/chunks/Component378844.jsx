@@ -1,4 +1,4 @@
-/** Chunk was on 11160 **/
+/** Chunk was on 89929 **/
 /** chunk id: 378844, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   R: () => y,
@@ -50,12 +50,12 @@ let _ = e => {
     notPhoneVerified: x,
     newAccount: C,
     newMember: E
-  } = (0, l.e7)([p.Z], () => p.Z.getCheck(r), [r]), S = 0 === t ? m.intl.string(m.t["6zY8BA"]) : null, P = null, I = null;
-  return (0 === t && (v ? (P = m.intl.string(m.t.IRxUlJ), I = m.intl.string(m.t.fiNVio)) : x ? (P = m.intl.string(m.t.vW8iUF), I = m.intl.string(m.t["50gfOj"])) : j ? (P = m.intl.string(m.t.vdSOp6), I = m.intl.string(m.t.lm1UKi)) : E ? (P = m.intl.formatToPlainString(m.t.v1ktYW, {
+  } = (0, l.e7)([p.Z], () => p.Z.getCheck(r), [r]), S = 0 === t ? m.intl.string(m.t["6zY8BA"]) : null, I = null, P = null;
+  return (0 === t && (v ? (I = m.intl.string(m.t.IRxUlJ), P = m.intl.string(m.t.fiNVio)) : x ? (I = m.intl.string(m.t.vW8iUF), P = m.intl.string(m.t["50gfOj"])) : j ? (I = m.intl.string(m.t.vdSOp6), P = m.intl.string(m.t.lm1UKi)) : E ? (I = m.intl.formatToPlainString(m.t.v1ktYW, {
     min: h.YeM.MEMBER_AGE
-  }), I = m.intl.string(m.t.BddRzc)) : C && (P = m.intl.formatToPlainString(m.t["sncw4+"], {
+  }), P = m.intl.string(m.t.BddRzc)) : C && (I = m.intl.formatToPlainString(m.t["sncw4+"], {
     min: h.YeM.ACCOUNT_AGE
-  }), I = m.intl.string(m.t.BddRzc))), null == S || null == P) ? null : (0, i.jsxs)(a.VqE, {
+  }), P = m.intl.string(m.t.BddRzc))), null == S || null == I) ? null : (0, i.jsxs)(a.VqE, {
     className: b.container,
     "aria-labelledby": _,
     children: [(0, i.jsx)("img", {
@@ -71,15 +71,15 @@ let _ = e => {
       }), (0, i.jsx)(a.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
-        children: P
+        children: I
       }), (0, i.jsxs)("div", {
         className: b.buttonContainer,
-        children: [null != I ? (0, i.jsx)("div", {
+        children: [null != P ? (0, i.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
           className: b.primaryButton,
           children: (0, i.jsx)(a.zxk, {
             variant: "primary",
-            text: I,
+            text: P,
             onClick: () => {
               v ? c.j() : x ? (0, a.ZDy)(async () => {
                 let {

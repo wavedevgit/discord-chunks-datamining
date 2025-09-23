@@ -1,7 +1,7 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 21616 **/
 /** chunk id: 526846, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  m: () => L
+  m: () => D
 }), require("./997841.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -35,10 +35,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk201512 = require("./201512.js");
-let M = Chunk973693.Y.APP_LAUNCHER_IN_VOICE_BANNER,
-  D = "vc-activities-".concat((0, Chunk772848.Z)());
+let R = Chunk973693.Y.APP_LAUNCHER_IN_VOICE_BANNER,
+  k = "vc-activities-".concat((0, Chunk772848.Z)());
 
-function k(e) {
+function L(e) {
   var t;
   let n, {
       channel: l,
@@ -52,16 +52,16 @@ function k(e) {
       let e = (0, d.e7)([E.default], () => E.default.onlyShowPreviewAppCollections) ? s.E.PREVIEW : s.E.ACTIVE;
       return i.useEffect(() => {
         (0, v.XK)({
-          surface: M,
+          surface: R,
           activeState: e
         })
       }, [e]), {
         fetchState: (0, d.e7)([x.Z], () => x.Z.getFetchState({
-          surface: M,
+          surface: R,
           activeState: e
         })),
         voiceBannerCollection: (0, d.e7)([x.Z], () => x.Z.getCollections({
-          surface: M,
+          surface: R,
           activeState: e
         }))[0]
       }
@@ -72,7 +72,7 @@ function k(e) {
       return null == e ? null : e.type === u.C.APPLICATION_BANNER ? e : null
     }, [null == h ? true : h.application_directory_collection_items]),
     {
-      trackItemImpressionRef: C
+      trackItemImpressionRef: _
     } = (0, y.Z)({
       applicationId: null != (t = null == g ? true : g.application.id) ? t : "",
       applicationFlags: null == g ? true : g.application.flags,
@@ -81,15 +81,15 @@ function k(e) {
       sectionOverallPosition: 0,
       promotionalLabel: null != g ? (0, b.dF)(g.application) : true
     });
-  return null == g || null == h || f ? null : (null != g.id && null != g.image_hash && (n = (0, j.$_)({
+  return null == g || null == h || f ? null : (null != g.id && null != g.image_hash && (n = (0, O.$_)({
     itemId: g.id,
     hash: g.image_hash,
     containerWidth: 584
   })), (0, r.jsxs)(p.P3F, {
-    className: R.clickableBanner,
-    innerRef: C,
+    className: M.clickableBanner,
+    innerRef: _,
     onClick: () => {
-      o(), (0, _.Z)({
+      o(), (0, C.Z)({
         context: {
           type: "channel",
           channel: l
@@ -104,13 +104,13 @@ function k(e) {
     children: [(0, r.jsx)("img", {
       alt: g.description,
       src: n,
-      className: R.poster
+      className: M.poster
     }), (0, r.jsx)("div", {
-      className: R.posterDivider
+      className: M.posterDivider
     })]
   }))
 }
-let L = Chunk647438.forwardRef(function(e, t) {
+let D = Chunk647438.forwardRef(function(e, t) {
   var n;
   let {
     channel: l,
@@ -122,37 +122,37 @@ let L = Chunk647438.forwardRef(function(e, t) {
     className: y
   } = e, v = (0, d.e7)([f.Z], () => f.Z.useReducedMotion), {
     id: x,
-    guild_id: j
+    guild_id: O
   } = l;
   i.useEffect(() => {
     S.default.track(A.rMx.ACTIVITIES_CENTER_CONTROL_TRAY_BUTTON_HOVERED, {
       channel_id: x,
-      guild_id: j
+      guild_id: O
     })
-  }, [x, j]), i.useEffect(() => {
+  }, [x, O]), i.useEffect(() => {
     o || s()
   }, [s, o]);
   let E = (0, h.bp)(),
     {
-      analyticsLocations: M,
-      newestAnalyticsLocation: L
+      analyticsLocations: R,
+      newestAnalyticsLocation: D
     } = (0, g.ZP)(m.Z.ACTIVITIES_MINI_SHELF),
     U = E === A.IlC.POPOUT,
     B = (n = l.getGuildId(), (0, Z.Z)({
       guildId: n
     }).slice(0, 5));
   i.useEffect(() => {
-    let e = setTimeout(() => P.ux(), 1e3);
+    let e = setTimeout(() => I.ux(), 1e3);
     return () => clearTimeout(e)
   }, []);
   let {
-    enabled: G
-  } = I.c.useExperiment({
+    enabled: F
+  } = P.c.useExperiment({
     location: "ActivitiesMiniShelf"
   }, {
     autoTrackExposure: true
-  }), H = i.useCallback(() => {
-    (0, _.Z)({
+  }), V = i.useCallback(() => {
+    (0, C.Z)({
       context: null != l ? {
         type: "channel",
         channel: l
@@ -160,48 +160,48 @@ let L = Chunk647438.forwardRef(function(e, t) {
         type: "contextless"
       },
       openInPopout: U,
-      analyticsLocation: L
+      analyticsLocation: D
     }), u(), b()
-  }, [l, L, b, u, U]), F = i.useCallback(e => {
+  }, [l, D, b, u, U]), H = i.useCallback(e => {
     c(), S.default.track(A.rMx.ACTIVITIES_MINI_SHELF_HOVERED, {
       channel_id: l.id,
       guild_id: l.getGuildId()
     })
-  }, [c, l]), V = G ? p.iWm : p.nG3;
+  }, [c, l]), G = F ? p.iWm : p.nG3;
   return (0, r.jsx)(g.Gt, {
-    value: M,
-    children: (0, r.jsx)(O.Z, {
+    value: R,
+    children: (0, r.jsx)(j.Z, {
       children: (0, r.jsxs)(p.VqE, {
         ref: t,
-        "aria-labelledby": D,
+        "aria-labelledby": k,
         className: y,
         children: [(0, r.jsx)(p.y5t, {
           forceLevel: 2,
           children: (0, r.jsx)(p.nn4, {
             children: (0, r.jsx)(p.H, {
-              id: D,
+              id: k,
               children: w.intl.string(w.t["2lnYtL"])
             })
           })
         }), (0, r.jsxs)("div", {
-          className: R.container,
-          onMouseEnter: F,
+          className: M.container,
+          onMouseEnter: H,
           onMouseLeave: u,
           children: [(0, r.jsxs)("div", {
-            className: R.titleContainer,
+            className: M.titleContainer,
             children: [(0, r.jsxs)("div", {
-              className: R.titleLeft,
-              children: [(0, r.jsx)(V, {
+              className: M.titleLeft,
+              children: [(0, r.jsx)(G, {
                 size: "md",
-                className: R.titleLeftIcon,
+                className: M.titleLeftIcon,
                 color: "var(--interactive-active)"
               }), (0, r.jsx)(p.Text, {
                 variant: "eyebrow",
                 children: w.intl.string(w.t.f3Cz29)
               })]
             }), (0, r.jsxs)(p.P3F, {
-              className: R.titleRight,
-              onClick: H,
+              className: M.titleRight,
+              onClick: V,
               children: [(0, r.jsx)(p.Text, {
                 variant: "eyebrow",
                 children: w.intl.string(w.t["K8+z4e"])
@@ -210,17 +210,17 @@ let L = Chunk647438.forwardRef(function(e, t) {
                 width: 12,
                 height: 12,
                 color: "var(--interactive-active)",
-                className: R.titleRightIcon
+                className: M.titleRightIcon
               })]
             })]
-          }), (0, r.jsx)(k, {
+          }), (0, r.jsx)(L, {
             openInPopout: U,
             channel: l,
             onClick: () => {
               b(), s()
             }
           }), (0, r.jsxs)("div", {
-            className: R.activityContainer,
+            className: M.activityContainer,
             children: [B.map(e => (0, r.jsx)(T.Y, {
               context: {
                 channel: l,
@@ -231,16 +231,16 @@ let L = Chunk647438.forwardRef(function(e, t) {
                 s(), b()
               },
               aspectRatio: T.Y.AspectRatio.THIRTEEN_BY_ELEVEN,
-              animatedDivClass: R.activitySuggestion,
-              commandOrigin: C.bB.MINI_SHELF
+              animatedDivClass: M.activitySuggestion,
+              commandOrigin: _.bB.MINI_SHELF
             }, e.application.id)), (0, r.jsx)("div", {
-              className: a()(R.wumpusRocketOuterContainer, {
-                [R.wumpusReducedMotion]: v
+              className: a()(M.wumpusRocketOuterContainer, {
+                [M.wumpusReducedMotion]: v
               }),
               children: (0, r.jsx)("div", {
-                className: R.wumpusRocketInnerContainer,
+                className: M.wumpusRocketInnerContainer,
                 children: (0, r.jsx)(N.Z, {
-                  className: R.wumpusRocket
+                  className: M.wumpusRocket
                 })
               })
             })]

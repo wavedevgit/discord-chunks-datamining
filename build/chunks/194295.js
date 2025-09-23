@@ -1,5 +1,6 @@
 /** Chunk was on 63141 **/
 /** chunk id: 194295, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => h
 });
@@ -44,11 +45,11 @@ function h(e, t, n, h) {
         channelId: e.id,
         type: c.mFx.JOIN,
         activity: h,
-        location: s.default.isInstanceLocked() ? c.Sbl.LOCKED_OVERLAY : c.Sbl.UNLOCKED_OVERLAY
+        location: l.default.isInstanceLocked() ? c.Sbl.LOCKED_OVERLAY : c.Sbl.UNLOCKED_OVERLAY
       }), y("join"), r.Z.updateNotificationStatus(n)
     },
     onCancelClick: (t, n) => {
-      (0, l.In)(e.id, {
+      (0, s.In)(e.id, {
         section: c.jXE.OVERLAY,
         object: c.qAy.ACK_DECLINE_REQUEST_TO_JOIN,
         objectType: c.Qqv.ACK_SEMI_AUTOMATIC

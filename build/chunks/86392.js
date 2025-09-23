@@ -1,7 +1,7 @@
-/** Chunk was on 13599 **/
+/** Chunk was on 49902 **/
 /** chunk id: 86392, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  p: () => u
+  p: () => o
 });
 var Chunk573654 = require("./573654.js");
 
@@ -13,9 +13,9 @@ function i(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-var o = false,
+var l = false,
   a = false,
-  u = function() {
+  o = function() {
     var e;
 
     function t(e) {
@@ -35,11 +35,11 @@ var o = false,
       }, {
         key: "canDrag",
         value: function() {
-          (0, Chunk573654.k)(!o, "You may not call monitor.canDrag() inside your canDrag() implementation. Read more: http://react-dnd.github.io/react-dnd/docs/api/drag-source-monitor");
+          (0, Chunk573654.k)(!l, "You may not call monitor.canDrag() inside your canDrag() implementation. Read more: http://react-dnd.github.io/react-dnd/docs/api/drag-source-monitor");
           try {
-            return o = true, this.internalMonitor.canDragSource(this.sourceId)
+            return l = true, this.internalMonitor.canDragSource(this.sourceId)
           } finally {
-            o = false
+            l = false
           }
         }
       }, {

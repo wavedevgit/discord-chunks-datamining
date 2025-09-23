@@ -1,5 +1,6 @@
 /** Chunk was on 63141 **/
 /** chunk id: 692546, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => E
 }), require("./388685.js");
@@ -38,7 +39,7 @@ function O(e) {
 }
 let v = new Map;
 
-function _(e, t) {
+function b(e, t) {
   if (null == t) v.delete(e), 0 === v.size && (window.removeEventListener("mousemove", O), y = false);
   else {
     let n = v.get(e);
@@ -72,19 +73,19 @@ function _(e, t) {
           } = e;
           return t
         })
-      }), n = e, b || (n.setClickZoneCallback((e, t, n) => {
+      }), n = e, _ || (n.setClickZoneCallback((e, t, n) => {
         let i = v.get(e);
         null != i && (y || (m.x = t, m.y = n), i.instance.click())
-      }), b = true)
+      }), _ = true)
     }
 }
-let b = false;
+let _ = false;
 class E extends(i = Chunk647438.PureComponent) {
   componentDidMount() {
     this.props.observe ? this.observeZone() : this.updateZone()
   }
   componentWillUnmount() {
-    this.interval.stop(), _(this.zone, null)
+    this.interval.stop(), b(this.zone, null)
   }
   componentDidUpdate(e) {
     let {
@@ -105,14 +106,14 @@ class E extends(i = Chunk647438.PureComponent) {
   constructor(...e) {
     super(...e), g(this, "zone", o().uniqueId("ClickArea")), g(this, "interval", new c.Xp), g(this, "updateZone", () => {
       let e = this.props.contentDomRef.current;
-      if ((0, s.kK)(e)) {
+      if ((0, l.kK)(e)) {
         let {
           left: t,
           top: n,
           right: i,
           bottom: r
         } = e.getBoundingClientRect();
-        _(this.zone, {
+        b(this.zone, {
           instance: this,
           zone: {
             name: this.zone,

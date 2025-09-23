@@ -1,4 +1,4 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 21616 **/
 /** chunk id: 698877, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   O: () => s
@@ -39,10 +39,10 @@ function s(e) {
   t = c ? u ? o.intl.string(o.t.S5anIS) : o.intl.string(o.t.q3O3Jy) : s ? o.intl.string(o.t.fjBNo6) : o.intl.string(o.t.uQn9Bw);
   let {
     Component: y,
-    events: _,
-    play: C
+    events: C,
+    play: _
   } = (0, l.P)(c ? "disable" : "enable");
-  return i.useEffect(() => () => C(), [c, C]), (0, r.jsx)(b, function(e) {
+  return i.useEffect(() => () => _(), [c, _]), (0, r.jsx)(b, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -68,10 +68,10 @@ function s(e) {
     isActive: c,
     color: (f ? n = "premiumGradient" : c && (n = "green"), n),
     onMouseEnter: e => {
-      null == p || p(e), _.onMouseEnter()
+      null == p || p(e), C.onMouseEnter()
     },
     onMouseLeave: e => {
-      null == h || h(e), _.onMouseLeave()
+      null == h || h(e), C.onMouseLeave()
     }
   }, g))
 }

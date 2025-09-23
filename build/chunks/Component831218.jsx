@@ -1,4 +1,4 @@
-/** Chunk was on 11160 **/
+/** Chunk was on 89929 **/
 /** chunk id: 831218, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => V
@@ -437,19 +437,19 @@ let V = e => {
     showDMHeader: a,
     listScrollerRef: s,
     createDMCTAButtonVariant: c
-  } = e, f = l.Children.count(o), g = w.Z.getMutablePrivateChannels(), O = (0, I.k1)(g), _ = (0, p.Wu)([A.Z, P.Z, N.Z], () => {
+  } = e, f = l.Children.count(o), g = Z.Z.getMutablePrivateChannels(), O = (0, P.k1)(g), _ = (0, p.Wu)([A.Z, I.Z, N.Z], () => {
     let e = A.Z.getPrivateChannelIds();
-    return (0, I.tU)(e, [P.Z, N.Z])
+    return (0, P.tU)(e, [I.Z, N.Z])
   }, []);
   (0, E.z)(C.R);
   let {
     analyticsLocations: v
-  } = (0, y.ZP)(b.Z.CONTACTS_LIST), j = (0, Z.Ll)(), {
+  } = (0, y.ZP)(b.Z.CONTACTS_LIST), j = (0, w.Ll)(), {
     keyboardModeEnabled: S,
     version: T
-  } = (0, p.cj)([m.Z, w.Z], () => ({
+  } = (0, p.cj)([m.Z, Z.Z], () => ({
     keyboardModeEnabled: m.Z.keyboardModeEnabled,
-    version: null != n ? "".concat(n, ":").concat(w.Z.getPrivateChannelsVersion()) : w.Z.getPrivateChannelsVersion()
+    version: null != n ? "".concat(n, ":").concat(Z.Z.getPrivateChannelsVersion()) : Z.Z.getPrivateChannelsVersion()
   })), R = l.useRef(null), D = null != s ? s : R, L = l.useCallback(e => {
     let t = D.current,
       n = document.querySelector(e);

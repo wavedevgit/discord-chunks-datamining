@@ -1,4 +1,4 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 21616 **/
 /** chunk id: 575464, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -25,15 +25,15 @@ function g(e) {
     row: g,
     hideDiscriminator: b,
     comparator: y,
-    selected: _,
-    checked: C,
+    selected: C,
+    checked: _,
     disabled: v = false,
     inlineUsername: x = true,
-    onClick: j,
-    onMouseEnter: O,
+    onClick: O,
+    onMouseEnter: j,
     "aria-setsize": E,
     "aria-posinset": S
-  } = e, I = (0, o.e7)([h.Z], () => h.Z.getStatus(i.id)), P = (0, a.JA)(String(i.id));
+  } = e, P = (0, o.e7)([h.Z], () => h.Z.getStatus(i.id)), I = (0, a.JA)(String(i.id));
   return (0, r.jsx)(c.P3F, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -57,26 +57,26 @@ function g(e) {
       [m.disabled]: v
     }),
     onClick: () => {
-      null != j && j(i.id)
+      null != O && O(i.id)
     },
     onMouseEnter: () => {
-      null != O && O(g)
+      null != j && j(g)
     }
-  }, P), n = n = {
+  }, I), n = n = {
     role: "option",
-    "aria-selected": C,
+    "aria-selected": _,
     "aria-disabled": v,
     "aria-setsize": E,
     "aria-posinset": S,
     children: (0, r.jsxs)(p.Z, {
       align: p.Z.Align.CENTER,
       className: l()(m.friend, {
-        [m.friendSelected]: _,
+        [m.friendSelected]: C,
         [m.twoRows]: !x
       }),
       children: [(0, r.jsx)(d.Z, {
         user: i,
-        status: I,
+        status: P,
         className: m.avatar
       }), (0, r.jsxs)(p.Z, {
         className: m.match,
@@ -103,7 +103,7 @@ function g(e) {
       }), (0, r.jsx)(s.$q, {
         displayOnly: true,
         size: 22,
-        value: C,
+        value: _,
         disabled: v,
         className: m.checkbox
       })]

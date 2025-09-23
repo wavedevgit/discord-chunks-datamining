@@ -1,4 +1,4 @@
-/** Chunk was on 71350 **/
+/** Chunk was on 89381 **/
 /** chunk id: 422200, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   default: () => E
@@ -30,27 +30,27 @@ let E = (0, Chunk108843.Z)(function(e) {
   let {
     channel: n,
     onSelect: t
-  } = e, a = (0, d.Z)(n), o = (0, h.Z)(n), E = (0, m.Z)(n), P = (0, u.Z)(n), N = (0, O.Z)(n), A = (0, f.Z)(n), R = (0, s.Z)({
+  } = e, o = (0, d.Z)(n), a = (0, h.Z)(n), E = (0, m.Z)(n), N = (0, s.Z)(n), x = (0, Z.Z)(n), C = (0, f.Z)(n), w = (0, c.Z)({
     id: n.id,
-    label: C.intl.string(C.t.DQ797u)
-  }), T = (0, p.Z)(n, "Context Menu"), S = (0, b.Z)(n), I = (0, _.Z)(n), U = (0, y.Z)(n), w = (0, Z.Z)(n.id), D = (0, g.Z)(n), x = (0, j.Z)(n), M = (0, c.l)(n), k = (0, c.P)(n), G = (0, v.Z)(n);
-  return (0, i.jsxs)(r.v2r, {
+    label: P.intl.string(P.t.DQ797u)
+  }), S = (0, b.Z)(n, "Context Menu"), A = (0, O.Z)(n), M = (0, _.Z)(n), T = (0, g.Z)(n), k = (0, v.Z)(n.id), R = (0, p.Z)(n), D = (0, y.Z)(n), U = (0, u.l)(n), I = (0, u.P)(n), G = (0, j.Z)(n);
+  return (0, r.jsxs)(i.v2r, {
     navId: "thread-context",
     onClose: l.Zy,
-    "aria-label": C.intl.string(C.t["1NBjqa"]),
+    "aria-label": P.intl.string(P.t["1NBjqa"]),
     onSelect: t,
-    children: [(0, i.jsxs)(r.kSQ, {
-      children: [o, M]
-    }, "mark-as-read-or-favorite"), (0, i.jsxs)(r.kSQ, {
-      children: [T, D, P, N, U, w, a]
-    }, "thread-actions"), (0, i.jsxs)(r.kSQ, {
-      children: [E, I]
-    }, "notifications"), (0, i.jsx)(r.kSQ, {
-      children: k
-    }), (0, i.jsxs)(r.kSQ, {
-      children: [x, S, A, G]
-    }, "admin-actions"), (0, i.jsx)(r.kSQ, {
-      children: R
+    children: [(0, r.jsxs)(i.kSQ, {
+      children: [a, U]
+    }, "mark-as-read-or-favorite"), (0, r.jsxs)(i.kSQ, {
+      children: [S, R, N, x, T, k, o]
+    }, "thread-actions"), (0, r.jsxs)(i.kSQ, {
+      children: [E, M]
+    }, "notifications"), (0, r.jsx)(i.kSQ, {
+      children: I
+    }), (0, r.jsxs)(i.kSQ, {
+      children: [D, A, C, G]
+    }, "admin-actions"), (0, r.jsx)(i.kSQ, {
+      children: w
     }, "developer-actions")]
   })
 }, [Chunk100527.Z.CONTEXT_MENU, Chunk100527.Z.CHANNEL_LIST_THREAD_MENU])

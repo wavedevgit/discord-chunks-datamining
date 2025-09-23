@@ -1,4 +1,4 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 21616 **/
 /** chunk id: 900902, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -25,7 +25,7 @@ let p = Chunk647438.memo(function(e) {
       author: m,
       repliedMessage: g,
       roleIcon: b
-    } = e, y = (0, u.wq)(t.author.id, n.id), _ = (0, u.XO)(t, n, p, f), C = (0, u.R9)(h, f), v = i.useCallback(() => {
+    } = e, y = (0, u.wq)(t.author.id, n.id), C = (0, u.XO)(t, n, p, f), _ = (0, u.R9)(h, f), v = i.useCallback(() => {
       f({
         usernameProfile: false,
         avatarProfile: false,
@@ -44,8 +44,8 @@ let p = Chunk647438.memo(function(e) {
       renderPopout: c.Z,
       showAvatarPopout: h,
       showUsernamePopout: p,
-      onClickAvatar: C,
-      onClickUsername: _,
+      onClickAvatar: _,
+      onClickUsername: C,
       onContextMenu: y,
       onPopoutRequestClose: v,
       roleIcon: b
@@ -72,13 +72,13 @@ function f(e) {
     avatarProfile: y
   } = i;
   if ((0, l.Z)(d)) return null;
-  let _ = d.id === g;
-  return _ || f || null != o ? (0, r.jsx)(p, {
+  let C = d.id === g;
+  return C || f || null != o ? (0, r.jsx)(p, {
     message: d,
     channel: m,
     compact: f,
     subscribeToGroupId: g,
-    isGroupStart: _,
+    isGroupStart: C,
     groupId: g,
     setPopout: n,
     usernameProfile: b,

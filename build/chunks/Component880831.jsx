@@ -1,4 +1,4 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 21616 **/
 /** chunk id: 880831, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => N,
@@ -42,7 +42,7 @@ function T(e) {
   } = (0, c.cj)([x.Z], () => ({
     isBlocked: x.Z.isBlockedForMessage(n),
     isIgnored: x.Z.isIgnoredForMessage(n)
-  }), [n]), s = (0, b.Uj)(n), d = i.useContext(f.Z), [v, O] = i.useState(false), E = (0, m.p)(), S = i.useCallback(e => {
+  }), [n]), s = (0, b.Uj)(n), d = i.useContext(f.Z), [v, j] = i.useState(false), E = (0, m.p)(), S = i.useCallback(e => {
     "A" !== e.target.nodeName && (p.Z.updateChatOpen(n.channel_id, true), h.Z.jumpToMessage({
       channelId: n.channel_id,
       messageId: n.id,
@@ -56,40 +56,40 @@ function T(e) {
     renderedContent: N,
     trailingIcon: A,
     leadingIcon: w
-  } = (0, y.f)(n, Z, l, o, P.messageContent, {
-    trailingIconClass: P.messageContentTrailingIcon,
-    leadingIconClass: P.messageContentLeadingIcon,
-    iconSize: I.WW
-  }), R = (0, _.cv)(n), M = R.length > 0 ? R.map(e => (0, r.jsx)(C.Z, {
-    className: P.sticker,
+  } = (0, y.f)(n, Z, l, o, I.messageContent, {
+    trailingIconClass: I.messageContentTrailingIcon,
+    leadingIconClass: I.messageContentLeadingIcon,
+    iconSize: P.WW
+  }), M = (0, C.cv)(n), R = M.length > 0 ? M.map(e => (0, r.jsx)(_.Z, {
+    className: I.sticker,
     size: 128,
     sticker: e,
     isInteracting: v
   }, e.id)) : null;
   return (0, r.jsxs)(u.P3F, {
-    className: P.toast,
+    className: I.toast,
     onMouseEnter: () => {
-      O(true)
+      j(true)
     },
     onMouseLeave: () => {
-      O(false)
+      j(false)
     },
     onClick: S,
     children: [(0, r.jsxs)("div", {
-      className: a()(P.messageContentWrapper, {
-        [P.mentioned]: n.mentioned
+      className: a()(I.messageContentWrapper, {
+        [I.mentioned]: n.mentioned
       }),
-      children: [null != M ? null : w, null != (t = null != N ? N : M) ? t : (0, r.jsx)("span", {
+      children: [null != R ? null : w, null != (t = null != N ? N : R) ? t : (0, r.jsx)("span", {
         children: T
-      }), null != M ? null : A]
+      }), null != R ? null : A]
     }), (0, r.jsx)("img", {
       alt: "",
-      src: (null == s ? true : s.guildMemberAvatar) != null && null != d ? (0, j.JM)({
+      src: (null == s ? true : s.guildMemberAvatar) != null && null != d ? (0, O.JM)({
         guildId: d,
         userId: n.author.id,
         avatar: s.guildMemberAvatar
       }) : n.author.getAvatarURL(d, 32),
-      className: P.avatar
+      className: I.avatar
     })]
   })
 }
@@ -143,9 +143,9 @@ function N(e) {
     lingerMs: Z
   }), m = i.useRef({}), [g, b] = i.useState({}), y = i.useCallback((e, t) => {
     null == t ? delete m.current[e] : m.current[e] = t
-  }, []), _ = i.useRef(g);
+  }, []), C = i.useRef(g);
   i.useLayoutEffect(() => {
-    _.current = g
+    C.current = g
   }), i.useLayoutEffect(() => {
     let e = {},
       t = 0;
@@ -153,14 +153,14 @@ function N(e) {
       var n;
       let i = null != (n = m.current[r.id]) ? n : 0;
       e[r.id] = t, t += i + 8
-    }(0, o.isEqual)(e, _.current) || b(e)
+    }(0, o.isEqual)(e, C.current) || b(e)
   }, [f]);
-  let C = f.map(e => ({
+  let _ = f.map(e => ({
       message: e,
       height: m.current[e.id],
       y: g[e.id]
     })),
-    x = (0, u.Yzy)(C, {
+    x = (0, u.Yzy)(_, {
       keys: e => e.message.id,
       from: () => ({
         opacity: 0
@@ -206,7 +206,7 @@ function N(e) {
       },
       children: x((e, t) => (0, r.jsx)(s.animated.div, {
         ref: e => y(t.message.id, null != e ? e.offsetHeight : null),
-        className: P.toastWrapper,
+        className: I.toastWrapper,
         style: e,
         children: (0, r.jsx)(T, {
           message: t.message

@@ -1,4 +1,4 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 21616 **/
 /** chunk id: 459502, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -22,8 +22,8 @@ function g(e) {
   let {
     channelId: t
   } = e, g = (0, i.e7)([s.Z], () => s.Z.getChannel(t), [t]), b = (0, d.sz)(t), y = null != (0, d.qY)(t), {
-    canManageGuildEvent: _
-  } = (0, o.XJ)(g), C = (0, i.cj)([u.ZP], () => b.reduce((e, t) => (e[t.id] = u.ZP.getUserCount(t.id, (0, p.DK)(t)), e), {}));
+    canManageGuildEvent: C
+  } = (0, o.XJ)(g), _ = (0, i.cj)([u.ZP], () => b.reduce((e, t) => (e[t.id] = u.ZP.getUserCount(t.id, (0, p.DK)(t)), e), {}));
   return b.length < 1 || y ? null : (0, r.jsx)(r.Fragment, {
     children: b.map(e => (0, r.jsx)(h.Z, {
       icon: (0, r.jsx)(a.Que, {
@@ -33,14 +33,14 @@ function g(e) {
         width: 20
       }),
       color: l.Z.unsafe_rawColors.GREEN_360.css,
-      title: f.intl.formatToPlainString(_(e) ? f.t["1vGXqK"] : f.t.xMJylZ, {
+      title: f.intl.formatToPlainString(C(e) ? f.t["1vGXqK"] : f.t.xMJylZ, {
         eventName: e.name
       }),
       description: f.intl.formatToPlainString(f.t.PTebCQ, {
         startTime: (0, p.ub)(e.scheduled_start_time).startDateTimeString
       }),
       onClick: () => {
-        _(e) ? (0, a.ZDy)(async () => {
+        C(e) ? (0, a.ZDy)(async () => {
           let {
             default: t
           } = await Promise.all([n.e("84722"), n.e("51885")]).then(n.bind(n, 296864));
@@ -80,7 +80,7 @@ function g(e) {
           eventId: e.id
         })
       },
-      userCount: C[e.id],
+      userCount: _[e.id],
       className: m.eventPrompt
     }, e.id))
   })

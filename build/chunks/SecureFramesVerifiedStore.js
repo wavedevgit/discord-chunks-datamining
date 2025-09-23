@@ -1,4 +1,4 @@
-/** Chunk was on 69634 **/
+/** Chunk was on 47387 **/
 /** chunk id: 98369, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => Z
@@ -19,7 +19,7 @@ let g = new Map,
   S = false,
   v = null;
 
-function h() {
+function O() {
   return Chunk959457.Z.getAllActiveStreamKeys().reduce((e, t) => {
     let {
       ownerId: n
@@ -28,7 +28,7 @@ function h() {
   }, false)
 }
 
-function O() {
+function h() {
   var e;
   let t = null != (e = Chunk19780.Z.getUserIds()) ? module : new Set,
     n = Chunk314897.default.getId(),
@@ -56,8 +56,8 @@ function y(e) {
         a = i !== g.get(e);
       return g.set(e, i), a
     }(t),
-    r = h(),
-    l = O();
+    r = O(),
+    l = h();
   return n || r || l
 }
 
@@ -102,7 +102,7 @@ let Z = new j(Chunk570140.Z, {
     switch (r) {
       case a.Yn.STREAM:
         if (null == t) returnfalse;
-        return b.delete(t), O();
+        return b.delete(t), h();
       case a.Yn.DEFAULT:
         _()
     }
@@ -112,7 +112,7 @@ let Z = new j(Chunk570140.Z, {
       userIds: t
     } = e, n = s.default.getId(), r = t.reduce((e, t) => n === t ? e : !!y({
       userId: t
-    }) || e, false), l = h(), i = O();
+    }) || e, false), l = O(), i = h();
     return r || l || i
   },
   SECURE_FRAMES_TRANSIENT_KEY_CREATE: y,

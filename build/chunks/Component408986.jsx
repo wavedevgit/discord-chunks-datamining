@@ -1,7 +1,7 @@
-/** Chunk was on 30355 **/
+/** Chunk was on 49902 **/
 /** chunk id: 408986, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -15,45 +15,45 @@ var Chunk37234 = require("./37234.js"),
   Chunk661462 = require("./661462.jsx"),
   Chunk443680 = require("./443680.js");
 
-function m(e) {
+function g(e) {
   let {
     user: t,
     onClose: n
   } = e, {
-    trackUserProfileAction: m
-  } = (0, s.KZ)(), {
-    mutualGuilds: g,
+    trackUserProfileAction: g
+  } = (0, o.KZ)(), {
+    mutualGuilds: h,
     isFetching: p
-  } = (0, o.Z)(t);
+  } = (0, s.Z)(t);
   return (0, r.jsx)(d.F, {
     className: f.scroller,
     fade: true,
-    children: null == g && p ? Array.from({
+    children: null == h && p ? Array.from({
       length: 10
     }).map((e, t) => (0, r.jsxs)("div", {
       className: f.guildsLoadingItem,
-      children: [(0, r.jsx)(i.ZT, {
+      children: [(0, r.jsx)(l.ZT, {
         width: 40,
         opacity: .08
-      }), (0, r.jsx)(i.ZT, {
+      }), (0, r.jsx)(l.ZT, {
         width: 135,
         opacity: .08
       })]
-    }, t)) : (null != g || p) && (null == g ? true : g.length) !== 0 ? null == g ? true : g.map(e => {
+    }, t)) : (null != h || p) && (null == h ? true : h.length) !== 0 ? null == h ? true : h.map(e => {
       let {
-        guild: i,
-        nick: s
+        guild: l,
+        nick: o
       } = e;
       return (0, r.jsx)(c.Z, {
         user: t,
-        guild: i,
-        nick: s,
+        guild: l,
+        nick: o,
         onSelect: () => {
-          m({
+          g({
             action: "PRESS_MUTUAL_GUILD"
-          }), (0, a.X)(i.id), n(), (0, l.xf)()
+          }), (0, a.X)(l.id), n(), (0, i.xf)()
         }
-      }, i.id)
+      }, l.id)
     }) : (0, r.jsx)(u.b0, {})
   })
 }

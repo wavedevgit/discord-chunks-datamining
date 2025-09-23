@@ -1,7 +1,7 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 21616 **/
 /** chunk id: 616286, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  T: () => O
+  T: () => j
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -41,7 +41,7 @@ function x(e) {
   }
 }
 
-function j(e) {
+function O(e) {
   let {
     className: t,
     channelId: n
@@ -60,7 +60,7 @@ function j(e) {
   })
 }
 
-function O(e) {
+function j(e) {
   let t;
   var {
     channelId: n,
@@ -70,7 +70,7 @@ function O(e) {
     inPopout: f,
     showRequestToSpeakSidebar: m,
     toggleRequestToSpeakSidebar: y
-  } = e, O = function(e, t) {
+  } = e, j = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -89,7 +89,7 @@ function O(e) {
     parentAnalyticsLocation: E
   } = (0, u.ZP)(), {
     disabled: S
-  } = O, I = i.useRef(null), P = (0, s.e7)([d.Z], () => d.Z.getChatOpen(n), [n]), {
+  } = j, P = i.useRef(null), I = (0, s.e7)([d.Z], () => d.Z.getChatOpen(n), [n]), {
     isShowing: Z,
     unreadCount: T,
     mentionCount: N
@@ -113,41 +113,41 @@ function O(e) {
       mentionCount: n
     }
   }(n), A = i.useCallback(() => {
-    (0, p.v)(E, p.d.CHAT, !P), null == h || h(), !P && m && (null == y || y()), c.Z.updateChatOpen(n, !P)
-  }, [n, P, h, m, y, E]), w = i.useCallback(e => {
+    (0, p.v)(E, p.d.CHAT, !I), null == h || h(), !I && m && (null == y || y()), c.Z.updateChatOpen(n, !I)
+  }, [n, I, h, m, y, E]), w = i.useCallback(e => {
     let {
       className: t
     } = e;
-    return (0, r.jsx)(j, {
+    return (0, r.jsx)(O, {
       className: t,
       channelId: n
     })
-  }, [n]), R = i.useCallback(() => {
+  }, [n]), M = i.useCallback(() => {
     var e;
-    null == (e = I.current) || e.focus()
+    null == (e = P.current) || e.focus()
   }, []);
   (0, g.yp)({
-    event: C.CkL.FOCUS_CHAT_BUTTON,
-    handler: S ? null : R
+    event: _.CkL.FOCUS_CHAT_BUTTON,
+    handler: S ? null : M
   });
-  let [M, D] = i.useState(false), k = i.useCallback(() => {
-    f && D(true)
+  let [R, k] = i.useState(false), L = i.useCallback(() => {
+    f && k(true)
   }, [f]);
   (0, g.yp)({
-    event: C.CkL.SHOW_TEXT_IN_VOICE_POPOUT_COMING_SOON_TIP,
-    handler: k
+    event: _.CkL.SHOW_TEXT_IN_VOICE_POPOUT_COMING_SOON_TIP,
+    handler: L
   }), i.useEffect(() => {
     let e;
-    return M && (e = setTimeout(() => {
-      D(false)
+    return R && (e = setTimeout(() => {
+      k(false)
     }, 3e3)), () => {
       clearTimeout(e)
     }
-  }, [M]);
-  let L = [t = f && S ? v.intl.string(v.t.DPgc5u) : P ? v.intl.string(v.t.nthdxM) : v.intl.string(v.t["5KxXrK"])];
-  return N > 0 && L.push(v.intl.formatToPlainString(v.t["3l1GOz"], {
+  }, [R]);
+  let D = [t = f && S ? v.intl.string(v.t.DPgc5u) : I ? v.intl.string(v.t.nthdxM) : v.intl.string(v.t["5KxXrK"])];
+  return N > 0 && D.push(v.intl.formatToPlainString(v.t["3l1GOz"], {
     mentionCount: N
-  })), T > 0 && L.push(v.intl.string(v.t.x5zAGR)), (0, r.jsx)(_.Z, function(e) {
+  })), T > 0 && D.push(v.intl.string(v.t.x5zAGR)), (0, r.jsx)(C.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -165,15 +165,15 @@ function O(e) {
     }
     return e
   }({
-    buttonRef: I,
+    buttonRef: P,
     onClick: A,
     label: t,
-    "aria-label": L.join(", "),
+    "aria-label": D.join(", "),
     iconComponent: w,
     tooltipPosition: "bottom",
     wrapperClassName: a()(l, null != o && {
       [o]: Z
     }),
-    forceTooltipOpen: M
-  }, O))
+    forceTooltipOpen: R
+  }, j))
 }

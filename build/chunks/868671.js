@@ -1,8 +1,8 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 91053 **/
 /** chunk id: 868671, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   H: () => x,
-  T: () => v
+  T: () => j
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
@@ -22,32 +22,32 @@ var Chunk647438 = require("./647438.js"),
   Chunk809017 = require("./809017.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let v = 0;
+let j = 0;
 
 function x(e) {
   let {
     memberStoreProps: {
       groups: t,
       rows: n,
-      version: v
+      version: j
     },
     channelId: x,
-    guildId: j
-  } = e, [O, E] = r.useState(false), {
-    requestId: S,
-    entries: I,
-    impressionCappedEntryIds: P
-  } = (0, m.Z)(x), Z = (0, i.e7)([p.Z], () => p.Z.hidden), T = (0, i.e7)([c.Z], () => c.Z.isFocused()), N = (0, i.e7)([o.Z], () => o.Z.getChannel(x)), A = (0, i.e7)([s.Z], () => s.Z.getGuild(j), [j]), w = (0, h.E)(A), R = null != w && w && (null == N ? true : N.isForumChannel()) === false, [M, D, k, L] = r.useMemo(() => {
+    guildId: v
+  } = e, [C, I] = r.useState(false), {
+    requestId: E,
+    entries: S,
+    impressionCappedEntryIds: Z
+  } = (0, g.Z)(x), P = (0, i.e7)([p.Z], () => p.Z.hidden), T = (0, i.e7)([c.Z], () => c.Z.isFocused()), N = (0, i.e7)([s.Z], () => s.Z.getChannel(x)), R = (0, i.e7)([o.Z], () => o.Z.getGuild(v), [v]), w = (0, h.E)(R), A = null != w && w && (null == N ? true : N.isForumChannel()) === false, [D, L, M, k] = r.useMemo(() => {
     let e;
-    if (null == I || 0 === I.length || null == S || !R) return [t, n, v];
-    let r = O ? I.length : 3,
-      i = I.slice(0, r);
-    e = Z ? [{
+    if (null == S || 0 === S.length || null == E || !A) return [t, n, j];
+    let r = C ? S.length : 3,
+      i = S.slice(0, r);
+    e = P ? [{
       type: a.so.HIDDEN_CONTENT_INVENTORY
     }] : i.map(e => ({
       type: a.so.CONTENT_INVENTORY,
       entry: e,
-      requestId: S
+      requestId: E
     }));
     let l = {
       id: y.G,
@@ -55,61 +55,61 @@ function x(e) {
       key: y.G,
       count: e.length,
       index: n.length,
-      title: C.intl.string(C.t["6gwSFR"]),
+      title: O.intl.string(O.t["6gwSFR"]),
       onToggleExpand: () => {
-        E(e => {
+        I(e => {
           let t = !e;
-          return u.default.track(_.rMx.MEMBERLIST_CONTENT_FEED_TOGGLED, {
+          return d.default.track(_.rMx.MEMBERLIST_CONTENT_FEED_TOGGLED, {
             channel_id: x,
-            guild_id: j,
+            guild_id: v,
             expanded: t
           }), t
         })
       },
-      expanded: O,
-      expandedCount: I.length,
-      feedHeight: e.map(g.iZ).reduce((e, t) => e + t, 0)
+      expanded: C,
+      expandedCount: S.length,
+      feedHeight: e.map(m.iZ).reduce((e, t) => e + t, 0)
     };
     return [
       [l, ...t],
       [...n, l, ...e], Math.random(), e
     ]
-  }, [x, I, O, t, j, S, n, v, Z, R]), U = r.useRef(0), B = r.useRef(I), G = r.useRef(true), H = r.useRef({
-    impressionCappedEntryIds: P
-  }), F = r.useCallback(e => {
+  }, [x, S, C, t, v, E, n, j, P, A]), U = r.useRef(0), G = r.useRef(S), H = r.useRef(true), F = r.useRef({
+    impressionCappedEntryIds: Z
+  }), B = r.useCallback(e => {
     var t;
-    let n = Math.floor(e / g.YN),
-      r = Math.min(null != (t = null == L ? true : L.length) ? t : 0, n);
+    let n = Math.floor(e / m.YN),
+      r = Math.min(null != (t = null == k ? true : k.length) ? t : 0, n);
     U.current = Math.max(U.current, r)
-  }, [L]);
+  }, [k]);
   return r.useEffect(() => {
-    B.current = I
-  }, [I]), r.useEffect(() => {
-    H.current = {
-      impressionCappedEntryIds: P
+    G.current = S
+  }, [S]), r.useEffect(() => {
+    F.current = {
+      impressionCappedEntryIds: Z
     }
-  }, [P]), r.useEffect(() => (U.current = 0, G.current = Date.now(), () => {
+  }, [Z]), r.useEffect(() => (U.current = 0, H.current = Date.now(), () => {
     var e, t;
-    if (null == S || null == G.current || Date.now() - G.current < 3e3) return;
-    let n = null != (t = null == (e = B.current) ? true : e.map(e => e.id)) ? t : [],
+    if (null == E || null == H.current || Date.now() - H.current < 3e3) return;
+    let n = null != (t = null == (e = G.current) ? true : e.map(e => e.id)) ? t : [],
       r = n.slice(0, U.current);
-    !Z && T && R && ((0, f.e)(_.rMx.RANKING_ITEMS_SEEN_MUST_BE_SAMPLED, {
-      request_id: S,
-      first_shown_at: G.current,
+    !P && T && A && ((0, f.e)(_.rMx.RANKING_ITEMS_SEEN_MUST_BE_SAMPLED, {
+      request_id: E,
+      first_shown_at: H.current,
       item_ids: r,
       surface_type: b.Kd.GUILD_MEMBER_LIST,
       channel_id: x,
-      guild_id: j,
+      guild_id: v,
       all_item_ids: n,
-      impression_capped_item_ids: [...H.current.impressionCappedEntryIds]
-    }), (0, d.wm)("useInjectContentInventoryFeed") && l.Z.dispatch({
+      impression_capped_item_ids: [...F.current.impressionCappedEntryIds]
+    }), (0, u.wm)("useInjectContentInventoryFeed") && l.Z.dispatch({
       type: "CONTENT_INVENTORY_TRACK_ITEM_IMPRESSIONS",
       itemIds: r
     }))
-  }), [S, x, j, Z, T, R]), {
-    groups: M,
-    rows: D,
-    version: k,
-    updateMaxRowSeen: F
+  }), [E, x, v, P, T, A]), {
+    groups: D,
+    rows: L,
+    version: M,
+    updateMaxRowSeen: B
   }
 }

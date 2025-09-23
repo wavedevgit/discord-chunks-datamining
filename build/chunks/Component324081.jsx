@@ -1,7 +1,7 @@
-/** Chunk was on 11160 **/
+/** Chunk was on 89929 **/
 /** chunk id: 324081, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => P
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -28,14 +28,14 @@ var Chunk120356 = require("./120356.js"),
   Chunk594174 = require("./594174.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk888097 = require("./888097.js");
-let P = {
+let I = {
   top: 8,
   bottom: 8,
   left: false,
   right: false
 };
 
-function I(e) {
+function P(e) {
   var t, n;
   let {
     channel: i,
@@ -46,7 +46,7 @@ function I(e) {
     toggleCollapsed: d
   } = e, p = (0, o.JA)("recents-header-".concat(i.id, "-").concat((0, b.Dt)()));
   return (0, r.jsx)(s.tEY, {
-    offset: P,
+    offset: I,
     children: (0, r.jsxs)("div", (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -98,16 +98,16 @@ function N(e) {
     channel: t,
     gotoChannel: n
   } = e;
-  return t.isPrivate() ? (0, r.jsx)(Z, {
+  return t.isPrivate() ? (0, r.jsx)(w, {
     channel: t,
     gotoChannel: n
-  }) : (0, r.jsx)(w, {
+  }) : (0, r.jsx)(Z, {
     channel: t,
     gotoChannel: n
   })
 }
 
-function Z(e) {
+function w(e) {
   let {
     channel: t,
     gotoChannel: n
@@ -124,7 +124,7 @@ function Z(e) {
   })
 }
 
-function w(e) {
+function Z(e) {
   let {
     channel: t,
     gotoChannel: n

@@ -1,4 +1,4 @@
-/** Chunk was on 69634 **/
+/** Chunk was on 47387 **/
 /** chunk id: 364125, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -32,9 +32,9 @@ function d(e) {
       case a.W.EMOJI_HOSE:
         return S[e](t, r, l)
     }
-  }, [m, b, S]), h = r.useCallback(e => {
+  }, [m, b, S]), O = r.useCallback(e => {
     p && null != g && (e.stopPropagation(), E.current = true, v("handleMouseDown", g, e))
-  }, [v, g, p]), O = r.useCallback(e => {
+  }, [v, g, p]), h = r.useCallback(e => {
     p && null != g && (e.stopPropagation(), E.current && v("handleMouseMove", g, e))
   }, [v, g, p]), y = r.useCallback(e => {
     p && null != g && (e.stopPropagation(), E.current = false, v("handleMouseUp", g, e))
@@ -50,9 +50,9 @@ function d(e) {
     handleClick: r.useCallback(e => {
       p && null != g && e.stopPropagation()
     }, [g, p]),
-    handleMouseDown: h,
+    handleMouseDown: O,
     handleMouseEnter: _,
-    handleMouseMove: O,
+    handleMouseMove: h,
     handleMouseUp: y
   }
 }

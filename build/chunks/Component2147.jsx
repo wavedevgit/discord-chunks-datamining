@@ -2,7 +2,7 @@
 /** chunk id: 2147, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  G: () => eA,
+  G: () => eL,
   Z: () => eD
 }), require("./997841.js"), require("./953529.js"), require("./290780.js");
 var Chunk951288 = require("./951288.js"),
@@ -94,7 +94,7 @@ function ef(e) {
   return e
 }
 
-function ex(e, t) {
+function eb(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -106,18 +106,18 @@ function ex(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let eb = (0, Chunk313201.hQ)(),
+let ex = (0, Chunk313201.hQ)(),
   ej = (0, Chunk313201.hQ)(),
   ev = (0, Chunk313201.hQ)(),
   ey = (0, Chunk313201.hQ)(),
   eC = (0, Chunk313201.hQ)(),
   eN = (0, Chunk313201.hQ)(),
   eS = (0, Chunk313201.hQ)(),
-  eO = (0, Chunk313201.hQ)(),
   eE = (0, Chunk313201.hQ)(),
+  eO = (0, Chunk313201.hQ)(),
   ew = (0, Chunk313201.hQ)(),
-  eT = (0, Chunk313201.hQ)(),
-  eZ = (0, Chunk131704.kt)({
+  eZ = (0, Chunk313201.hQ)(),
+  eT = (0, Chunk131704.kt)({
     id: "1",
     type: Chunk981631.d4z.DM
   }),
@@ -140,7 +140,7 @@ let eb = (0, Chunk313201.hQ)(),
     breakingChangeDate: (0, Chunk55935.vc)(o()(Chunk981631.zQD), "LL"),
     helpCenterLink: Chunk63063.Z.getArticleURL(Chunk981631.BhN.SLOWMODE)
   },
-  eA = Chunk442837.ZP.connectStores([Chunk388610.Z], () => {
+  eL = Chunk442837.ZP.connectStores([Chunk388610.Z], () => {
     let {
       channel: e,
       submitting: t
@@ -170,7 +170,7 @@ let eb = (0, Chunk313201.hQ)(),
           videoQualityMode: m,
           defaultReactionEmoji: p,
           availableTags: f,
-          defaultSortOrder: x,
+          defaultSortOrder: b,
           defaultForumLayout: j,
           defaultTagSetting: v
         } = module;
@@ -201,7 +201,7 @@ let eb = (0, Chunk313201.hQ)(),
     }
   })(Chunk852860.Z);
 
-function eL(e) {
+function eA(e) {
   let {
     onEmojiPicked: t,
     channel: n,
@@ -221,23 +221,23 @@ function eL(e) {
           emoji: n,
           willClose: i
         } = e;
-        null != n && n.type === A.B.UNICODE && t(n.surrogates), i && l()
+        null != n && n.type === L.B.UNICODE && t(n.surrogates), i && l()
       },
       showOnlyUnicode: true,
       analyticsOverride: e_
     })
   }, [n, r, t]);
-  return (0, i.jsx)(x.yRy, {
+  return (0, i.jsx)(b.yRy, {
     targetElementRef: s,
     renderPopout: a,
-    animation: x.yRy.Animation.NONE,
+    animation: b.yRy.Animation.NONE,
     position: "bottom",
     align: "right",
     children: (e, t) => {
       let {
         isShown: n
       } = t;
-      return (0, i.jsx)(I.Z, ex(ef({}, e), {
+      return (0, i.jsx)(I.Z, eb(ef({}, e), {
         ref: s,
         active: n,
         className: eg.emojiButton,
@@ -286,36 +286,36 @@ class eM extends Chunk647438.PureComponent {
   }
   renderChannelInfo(e, t) {
     var n, l, r, a, o, h, p;
-    let b, j, {
+    let x, j, {
         canManageChannels: y,
         canSendMessages: C,
         isThreadModerator: N,
-        canManageThread: O,
+        canManageThread: E,
         guild: w,
         isForumPost: R,
         isOwner: _,
         showAdvancedSlowModeSetting: I
       } = this.props,
       P = W.Ec.has(e.type),
-      A = e.isForumLikeChannel(),
-      M = A && (null == (n = e.availableTags) ? true : n.every(e => e.moderated)),
-      V = (null == (l = Q.default.getCurrentUser()) ? true : l.isStaff()) === true,
-      U = W.TK.has(e.type) ? (0, i.jsxs)("div", {
+      L = e.isForumLikeChannel(),
+      M = L && (null == (n = e.availableTags) ? true : n.every(e => e.moderated)),
+      V = (null == (l = Y.default.getCurrentUser()) ? true : l.isStaff()) === true,
+      H = W.TK.has(e.type) ? (0, i.jsxs)("div", {
         children: [(0, i.jsx)(m.N, {
-          label: A ? eh.intl.string(eh.t.yR6Hwc) : eh.intl.string(eh.t.X8jMDg),
-          children: (0, i.jsx)(T.ZP, {
+          label: L ? eh.intl.string(eh.t.yR6Hwc) : eh.intl.string(eh.t.X8jMDg),
+          children: (0, i.jsx)(Z.ZP, {
             className: eg.topicContainer,
             innerClassName: s()(eg.topic, {
               [eg.disabled]: !y
             }),
             characterCountClassName: eg.topicCharacterCount,
-            maxCharacterCount: A ? eo.Z7 : eo.$x,
+            maxCharacterCount: L ? eo.Z7 : eo.$x,
             onChange: this.handleChangeRichTopic,
             placeholder: eh.intl.string(eh.t["71fbmp"]),
-            channel: eZ,
+            channel: eT,
             textValue: this.state.textTopicValue,
             richValue: this.state.richTopicValue,
-            type: A ? E.Ie.FORUM_CHANNEL_GUIDELINES : E.Ie.CHANNEL_TOPIC,
+            type: L ? O.Ie.FORUM_CHANNEL_GUIDELINES : O.Ie.CHANNEL_TOPIC,
             onFocus: () => {
               this.setState({
                 topicFocused: true
@@ -333,22 +333,22 @@ class eM extends Chunk647438.PureComponent {
             disabled: !y,
             showValueWhenDisabled: true
           })
-        }), (0, i.jsx)(x.$i$, {
+        }), (0, i.jsx)(b.$i$, {
           className: s()(em.marginTop40, em.marginBottom40)
         })]
       }) : null,
-      G = A && V ? (0, i.jsxs)("div", {
-        children: [(0, i.jsx)(x.Kx8, {
+      G = L && V ? (0, i.jsxs)("div", {
+        children: [(0, i.jsx)(b.Kx8, {
           label: eh.intl.string(eh.t.qk2jdX),
           placeholder: eh.intl.string(eh.t.DDjD1N),
-          value: L.ZP.translateSurrogatesToInlineEmoji(null != (a = e.template) ? a : ""),
+          value: A.ZP.translateSurrogatesToInlineEmoji(null != (a = e.template) ? a : ""),
           onChange: this.handleChangeTemplate,
           error: this.getError("template"),
           maxLength: ed.Vb,
           disabled: !y,
           autosize: true,
           showCharacterCount: true
-        }), (0, i.jsx)(x.$i$, {
+        }), (0, i.jsx)(b.$i$, {
           className: s()(em.marginTop40, em.marginBottom40)
         })]
       }) : null,
@@ -357,7 +357,7 @@ class eM extends Chunk647438.PureComponent {
           label: eh.intl.string(eh.t["P/y+sr"]),
           description: eh.intl.string(eh.t["/oQQ39"]),
           errorMessage: this.getError("available_tags"),
-          id: eb,
+          id: ex,
           children: (0, i.jsx)(D.Z, {
             channel: e
           })
@@ -367,7 +367,7 @@ class eM extends Chunk647438.PureComponent {
           type: f.M0.INVERTED,
           onChange: (e, t) => this.handleRequireTagChanged(t),
           children: eh.intl.string(eh.t["9g2Zys"])
-        }), (0, i.jsx)(x.$i$, {
+        }), (0, i.jsx)(b.$i$, {
           className: s()(em.marginTop40, em.marginBottom40)
         })]
       }) : null,
@@ -376,24 +376,24 @@ class eM extends Chunk647438.PureComponent {
           className: eg.twoColumnSettings,
           children: [(0, i.jsxs)("div", {
             className: s()(eg.settingsLeft, eg.settingsDefaultReaction),
-            children: [(0, i.jsx)(x.vwX, {
+            children: [(0, i.jsx)(b.vwX, {
               id: ev,
               className: eg.formTitle,
               children: eh.intl.string(eh.t["8ao1+P"])
-            }), (0, i.jsx)(x.R94, {
+            }), (0, i.jsx)(b.R94, {
               id: ej,
-              type: x.R94.Types.DESCRIPTION,
+              type: b.R94.Types.DESCRIPTION,
               className: eg.description,
               children: eh.intl.string(eh.t.SdbF0t)
             }), (0, i.jsxs)("div", {
               className: eg.buttonRow,
-              children: [(0, i.jsx)(x.yRy, {
+              children: [(0, i.jsx)(b.yRy, {
                 targetElementRef: this.defaultReactionButtonRef,
                 renderPopout: this.renderEmojiPicker,
                 position: "right",
-                animation: x.yRy.Animation.NONE,
+                animation: b.yRy.Animation.NONE,
                 align: "center",
-                children: e => (0, i.jsx)(f.zx, ex(ef({}, e), {
+                children: e => (0, i.jsx)(f.zx, eb(ef({}, e), {
                   buttonRef: this.defaultReactionButtonRef,
                   disabled: !y,
                   onClick: t => {
@@ -414,7 +414,7 @@ class eM extends Chunk647438.PureComponent {
           }), (0, i.jsx)(k.Z, {
             reactionEmoji: e.defaultReactionEmoji
           })]
-        }), (0, i.jsx)(x.$i$, {
+        }), (0, i.jsx)(b.$i$, {
           className: s()(em.marginTop40, em.marginBottom40)
         })]
       }) : null,
@@ -423,9 +423,9 @@ class eM extends Chunk647438.PureComponent {
           className: eg.twoColumnSettings,
           children: [(0, i.jsxs)("div", {
             className: s()(eg.settingsLeft, eg.settingsDefaultView),
-            children: [(0, i.jsx)(x.hjN, {
+            children: [(0, i.jsx)(b.hjN, {
               title: eh.intl.string(eh.t.kQvoCw),
-              children: (0, i.jsx)(x.q4e, {
+              children: (0, i.jsx)(b.q4e, {
                 options: [{
                   label: eh.intl.string(eh.t["4HXEZG"]),
                   value: c.X.LIST
@@ -436,9 +436,9 @@ class eM extends Chunk647438.PureComponent {
                 value: null != (o = e.defaultForumLayout) ? o : c.X.LIST,
                 onChange: this.handleChangeDefaultForumLayout
               })
-            }), (0, i.jsx)(x.R94, {
+            }), (0, i.jsx)(b.R94, {
               className: em.marginTop8,
-              type: x.R94.Types.DESCRIPTION,
+              type: b.R94.Types.DESCRIPTION,
               children: eh.intl.string(eh.t.mOSViY)
             })]
           }), e.defaultForumLayout === c.X.GRID ? (0, i.jsx)(er.Z, {
@@ -446,14 +446,14 @@ class eM extends Chunk647438.PureComponent {
           }) : (0, i.jsx)(es.Z, {
             className: eg.defaultImageView
           })]
-        }), (0, i.jsx)(x.$i$, {
+        }), (0, i.jsx)(b.$i$, {
           className: s()(em.marginTop40, em.marginBottom40)
         })]
       }) : null,
-      Y = e.isForumLikeChannel() ? (0, i.jsxs)("div", {
-        children: [(0, i.jsx)(x.hjN, {
+      Q = e.isForumLikeChannel() ? (0, i.jsxs)("div", {
+        children: [(0, i.jsx)(b.hjN, {
           title: eh.intl.string(eh.t.gePre3),
-          children: (0, i.jsx)(x.q4e, {
+          children: (0, i.jsx)(b.q4e, {
             options: [{
               label: eh.intl.string(eh.t.ElZtzs),
               value: u.z.LATEST_ACTIVITY
@@ -464,18 +464,18 @@ class eM extends Chunk647438.PureComponent {
             value: e.getDefaultSortOrder(),
             onChange: this.handleChangeDefaultSortOrder
           })
-        }), (0, i.jsx)(x.R94, {
+        }), (0, i.jsx)(b.R94, {
           className: em.marginTop8,
-          type: x.R94.Types.DESCRIPTION,
+          type: b.R94.Types.DESCRIPTION,
           children: eh.intl.string(eh.t["165cVV"])
-        }), (0, i.jsx)(x.$i$, {
+        }), (0, i.jsx)(b.$i$, {
           className: s()(em.marginTop40, em.marginBottom40)
         })]
       }) : null,
       $ = e.isForumLikeChannel() ? (0, i.jsxs)("div", {
-        children: [(0, i.jsx)(x.hjN, {
+        children: [(0, i.jsx)(b.hjN, {
           title: eh.intl.string(eh.t.Paxaur),
-          children: (0, i.jsx)(x.q4e, {
+          children: (0, i.jsx)(b.q4e, {
             options: [{
               label: eh.intl.string(eh.t.rQ0ctb),
               value: d.z.MATCH_SOME
@@ -486,30 +486,30 @@ class eM extends Chunk647438.PureComponent {
             value: e.getDefaultTagSetting(),
             onChange: this.handleChangeDefaultTagSetting
           })
-        }), (0, i.jsx)(x.R94, {
+        }), (0, i.jsx)(b.R94, {
           className: em.marginTop8,
-          type: x.R94.Types.DESCRIPTION,
+          type: b.R94.Types.DESCRIPTION,
           children: eh.intl.string(eh.t.DqOl8P)
-        }), (0, i.jsx)(x.$i$, {
+        }), (0, i.jsx)(b.$i$, {
           className: s()(em.marginTop40, em.marginBottom40)
         })]
       }) : null,
       J = P ? N : y,
-      K = null == (r = Z.Z.getCurrentConfig({
+      K = null == (r = T.Z.getCurrentConfig({
         guildId: e.guild_id,
         location: "ChannelSettingsOverview"
       })) ? true : r.enabled,
       ee = W.X_.has(e.type) ? (0, i.jsxs)("div", {
-        children: [(0, i.jsx)(x.hjN, {
-          title: A ? eh.intl.string(eh.t.O1c02t) : true,
-          children: (0, i.jsxs)(x.Kqy, {
+        children: [(0, i.jsx)(b.hjN, {
+          title: L ? eh.intl.string(eh.t.O1c02t) : true,
+          children: (0, i.jsxs)(b.Kqy, {
             gap: 20,
             children: [true === I ? (0, i.jsx)(el.Z, {
               label: eh.intl.string(eh.t["tTHx9/"]),
               helperText: this.getSlowmodeHelpText(K),
               channel: e,
               onChange: this.handleChangeSlowmode
-            }) : (0, i.jsx)(x.iRW, {
+            }) : (0, i.jsx)(b.iRW, {
               label: eh.intl.string(eh.t["tTHx9/"]),
               helperText: this.getSlowmodeHelpText(K),
               className: em.marginTop20,
@@ -522,7 +522,7 @@ class eM extends Chunk647438.PureComponent {
               equidistant: true,
               "aria-labelledby": ey,
               "aria-describedby": eC
-            }), A ? (0, i.jsx)(x.iRW, {
+            }), L ? (0, i.jsx)(b.iRW, {
               label: eh.intl.string(eh.t["fkY5+v"]),
               helperText: K ? eh.intl.format(eh.t.nZSuEh, eP) : eh.intl.string(eh.t.kdZU6O),
               initialValue: null != (h = e.defaultThreadRateLimitPerUser) ? h : 0,
@@ -536,37 +536,37 @@ class eM extends Chunk647438.PureComponent {
               "aria-describedby": eC
             }) : null]
           })
-        }), (0, i.jsx)(x.$i$, {
+        }), (0, i.jsx)(b.$i$, {
           className: s()(em.marginTop40, em.marginBottom40)
         })]
       }) : null,
       et = P && null != e.threadMetadata ? (0, i.jsxs)("div", {
         children: [(0, i.jsx)(v.Z, {
           page: ea.ZY5.CHANNEL_SETTINGS,
-          children: (0, i.jsx)(H.Z, {
-            isDisabled: !O,
+          children: (0, i.jsx)(U.Z, {
+            isDisabled: !E,
             autoArchiveDuration: null != (p = e.threadMetadata.autoArchiveDuration) ? p : eu.AX,
             onChange: this.handleAutoArchiveDurationChanged
           })
-        }), (0, i.jsx)(x.R94, {
+        }), (0, i.jsx)(b.R94, {
           className: em.marginTop8,
-          type: x.R94.Types.DESCRIPTION,
+          type: b.R94.Types.DESCRIPTION,
           children: R ? eh.intl.string(eh.t["3aJN9P"]) : eh.intl.string(eh.t.YUXr4e)
         })]
       }) : null,
       ei = e.type === ea.d4z.PRIVATE_THREAD && null != e.threadMetadata ? (0, i.jsx)("div", {
-        children: (0, i.jsx)(x.j7V, {
+        children: (0, i.jsx)(b.j7V, {
           note: eh.intl.string(eh.t.cSyXJi),
           onChange: this.handleInvitableChanged,
           value: e.threadMetadata.invitable,
           hideBorder: true,
-          disabled: !O,
+          disabled: !E,
           children: eh.intl.string(eh.t.s2rpNT)
         })
       }) : null,
       ec = null != w && (0, F.Y2)(w),
       ep = W.ov.has(e.type) ? (0, i.jsx)("div", {
-        children: (0, i.jsx)(x.j7V, {
+        children: (0, i.jsx)(b.j7V, {
           note: eh.intl.string(eh.t["9eUgwc"]),
           onChange: this.handleNSFWChange,
           value: (0, S.qF)(e),
@@ -577,7 +577,7 @@ class eM extends Chunk647438.PureComponent {
         })
       }) : null,
       eN = W.Y0.has(e.type) && null != w && w.features.has(ea.oNc.NEWS) && e.id !== (null == w ? true : w.rulesChannelId) && e.id !== (null == w ? true : w.publicUpdatesChannelId) ? (0, i.jsx)("div", {
-        children: (0, i.jsx)(x.j7V, {
+        children: (0, i.jsx)(b.j7V, {
           note: (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("div", {
               children: eh.intl.format(eh.t.tI7KNT, {
@@ -596,22 +596,22 @@ class eM extends Chunk647438.PureComponent {
         })
       }) : null,
       eS = W.uC.has(e.type) ? (0, i.jsxs)("div", {
-        children: [(0, i.jsx)(x.$i$, {
+        children: [(0, i.jsx)(b.$i$, {
           className: s()(em.marginTop40, em.marginBottom40)
         }), (0, i.jsx)(v.Z, {
           page: ea.ZY5.CHANNEL_SETTINGS,
-          children: (0, i.jsx)(H.Z, {
+          children: (0, i.jsx)(U.Z, {
             isDisabled: !y,
             autoArchiveDuration: (0, B.WD)(e, null),
             onChange: this.handleChangeDefaultAutoArchiveDuration
           })
-        }), (0, i.jsx)(x.R94, {
+        }), (0, i.jsx)(b.R94, {
           className: em.marginTop8,
-          type: x.R94.Types.DESCRIPTION,
+          type: b.R94.Types.DESCRIPTION,
           children: e.isForumLikeChannel() ? eh.intl.string(eh.t.fyXclZ) : eh.intl.string(eh.t.W3Noi4)
         })]
       }) : null,
-      eO = this.props.showChannelSummariesSettings ? (0, i.jsx)(x.j7V, {
+      eE = this.props.showChannelSummariesSettings ? (0, i.jsx)(b.j7V, {
         note: eh.intl.format(eh.t.feJW19, {
           helpdeskArticle: en.Z.getArticleURL(ea.BhN.CONVERSATION_SUMMARIES)
         }),
@@ -621,16 +621,16 @@ class eM extends Chunk647438.PureComponent {
         disabled: !y || !(null == w ? true : w.features.has(ea.oNc.SUMMARIES_ENABLED_BY_USER)),
         children: (0, i.jsxs)("div", {
           className: eg.badgedItem,
-          children: [eh.intl.string(eh.t.id3ozs), (0, i.jsx)(x.IGR, {
+          children: [eh.intl.string(eh.t.id3ozs), (0, i.jsx)(b.IGR, {
             text: eh.intl.string(eh.t.oW0eUV),
             color: g.Z.colors.BG_BRAND.css
           })]
         })
       }) : null,
-      eE = e.isMediaChannel() ? (0, i.jsxs)("div", {
-        children: [(0, i.jsx)(x.$i$, {
+      eO = e.isMediaChannel() ? (0, i.jsxs)("div", {
+        children: [(0, i.jsx)(b.$i$, {
           className: s()(em.marginTop40, em.marginBottom40)
-        }), (0, i.jsx)(x.j7V, {
+        }), (0, i.jsx)(b.j7V, {
           onChange: this.handleShowMediaOptionsToggled,
           value: !e.hasFlag(eo.zZ.HIDE_MEDIA_DOWNLOAD_OPTIONS),
           note: eh.intl.string(eh.t.J4wCc3),
@@ -639,10 +639,10 @@ class eM extends Chunk647438.PureComponent {
           children: eh.intl.string(eh.t.u8LZOj)
         })]
       }) : null;
-    e.type === ea.d4z.GUILD_CATEGORY ? (j = eh.intl.string(eh.t.OCAkGB), b = "category-name") : e.isForumPost() ? (j = eh.intl.string(eh.t.uyVrTE), b = "post-title") : P ? (j = eh.intl.string(eh.t.j3XWjI), b = "thread-name") : (j = eh.intl.string(eh.t.PVbHDg), b = "channel-name");
+    e.type === ea.d4z.GUILD_CATEGORY ? (j = eh.intl.string(eh.t.OCAkGB), x = "category-name") : e.isForumPost() ? (j = eh.intl.string(eh.t.uyVrTE), x = "post-title") : P ? (j = eh.intl.string(eh.t.j3XWjI), x = "thread-name") : (j = eh.intl.string(eh.t.PVbHDg), x = "channel-name");
     let ew = _ ? C : y;
     return (0, i.jsxs)("div", {
-      children: [(0, i.jsx)(x.oil, {
+      children: [(0, i.jsx)(b.oil, {
         label: j,
         fullWidth: true,
         inputRef: this.nameInputRef,
@@ -650,21 +650,21 @@ class eM extends Chunk647438.PureComponent {
         onChange: this.handleChangeName,
         onBlur: this.handleBlurName,
         error: this.getError("name"),
-        name: b,
+        name: x,
         autoFocus: true,
         disabled: !ew,
         maxLength: ea.HN8,
         trailing: ew ? {
           type: "emoji",
-          button: (0, i.jsx)(eL, {
+          button: (0, i.jsx)(eA, {
             onEmojiPicked: this.insertEmojiAtPosition,
             channel: e,
             guildId: null == e ? true : e.guild_id
           })
         } : true
-      }), (0, i.jsx)(x.$i$, {
+      }), (0, i.jsx)(b.$i$, {
         className: s()(em.marginTop40, em.marginBottom40)
-      }), U, G, z, X, ee, et, q, Y, $, ei, ep, eN, eO, eS, eE]
+      }), H, G, z, X, ee, et, q, Q, $, ei, ep, eN, eE, eS, eO]
     })
   }
   renderBitrate(e) {
@@ -680,18 +680,18 @@ class eM extends Chunk647438.PureComponent {
     return (0, i.jsxs)(R.Z, {
       direction: R.Z.Direction.VERTICAL,
       className: em.marginBottom40,
-      children: [(0, i.jsx)(x.vwX, {
+      children: [(0, i.jsx)(b.vwX, {
         id: eN,
         children: eh.intl.string(eh.t.w2d0vb)
-      }), "" !== r && (0, i.jsx)(x.R94, {
+      }), "" !== r && (0, i.jsx)(b.R94, {
         id: eS,
-        type: x.geA.DESCRIPTION,
+        type: b.geA.DESCRIPTION,
         style: {
           color: g.Z.unsafe_rawColors.RED_400.css
         },
         className: em.marginBottom8,
         children: r
-      }), (0, i.jsx)(x.iRW, {
+      }), (0, i.jsx)(b.iRW, {
         initialValue: Math.min(e.bitrate, l),
         onValueChange: this.handleChangeBitrate,
         onValueRender: this.renderBitrate,
@@ -702,10 +702,10 @@ class eM extends Chunk647438.PureComponent {
         keyboardStep: ea.V7H,
         disabled: !n,
         "aria-labelledby": eN,
-        "aria-describedby": null != r && "" !== r ? eS : eO
-      }), l > ea.epw ? (0, i.jsx)(x.R94, {
-        id: eO,
-        type: x.geA.DESCRIPTION,
+        "aria-describedby": null != r && "" !== r ? eS : eE
+      }), l > ea.epw ? (0, i.jsx)(b.R94, {
+        id: eE,
+        type: b.geA.DESCRIPTION,
         children: eh.intl.format(eh.t.SbQJk5, {
           bitrate: ea.epw / 1e3
         })
@@ -737,14 +737,14 @@ class eM extends Chunk647438.PureComponent {
     return (0, i.jsxs)(R.Z, {
       direction: R.Z.Direction.VERTICAL,
       className: em.marginBottom40,
-      children: [(0, i.jsx)(x.FXm, {
+      children: [(0, i.jsx)(b.FXm, {
         label: eh.intl.string(eh.t.jhJEJi),
         onChange: e => this.handleVideoQualityModeChange(e),
         options: l,
         value: null != (t = e.videoQualityMode) ? t : ea.Ucd.AUTO,
         disabled: !n
-      }), (0, i.jsx)(x.R94, {
-        type: x.geA.DESCRIPTION,
+      }), (0, i.jsx)(b.R94, {
+        type: b.geA.DESCRIPTION,
         children: eh.intl.format(eh.t.c5W7Sk, {})
       })]
     })
@@ -764,18 +764,18 @@ class eM extends Chunk647438.PureComponent {
     return (0, i.jsxs)(R.Z, {
       direction: R.Z.Direction.VERTICAL,
       className: em.marginBottom40,
-      children: [(0, i.jsx)(x.vwX, {
-        id: eE,
+      children: [(0, i.jsx)(b.vwX, {
+        id: eO,
         children: eh.intl.string(eh.t["/AoSGB"])
-      }), "" !== n && (0, i.jsx)(x.R94, {
+      }), "" !== n && (0, i.jsx)(b.R94, {
         id: ew,
-        type: x.geA.DESCRIPTION,
+        type: b.geA.DESCRIPTION,
         style: {
           color: g.Z.unsafe_rawColors.RED_400.css
         },
         className: em.marginBottom8,
         children: n
-      }), (0, i.jsx)(x.iRW, {
+      }), (0, i.jsx)(b.iRW, {
         initialValue: Math.min(e.userLimit, l),
         onValueChange: this.handleUserLimitChange,
         onValueRender: this.onRenderUserLimit,
@@ -784,11 +784,11 @@ class eM extends Chunk647438.PureComponent {
         minValue: 0,
         maxValue: l,
         disabled: !t,
-        "aria-labelledby": eE,
-        "aria-describedby": null != n && "" !== n ? ew : eT
-      }), (0, i.jsx)(x.R94, {
-        id: eT,
-        type: x.geA.DESCRIPTION,
+        "aria-labelledby": eO,
+        "aria-describedby": null != n && "" !== n ? ew : eZ
+      }), (0, i.jsx)(b.R94, {
+        id: eZ,
+        type: b.geA.DESCRIPTION,
         children: eh.intl.format(e.isGuildStageVoice() ? eh.t.OqZI8P : eh.t["8yb3JS"], {})
       })]
     })
@@ -812,15 +812,15 @@ class eM extends Chunk647438.PureComponent {
     let a = null != (t = e.rtcRegion) ? t : eI;
     return (0, i.jsxs)(R.Z, {
       direction: R.Z.Direction.VERTICAL,
-      children: [(0, i.jsx)(x.vwX, {
+      children: [(0, i.jsx)(b.vwX, {
         children: eh.intl.string(eh.t.Ms8bX1)
-      }), (0, i.jsx)(x.q4e, {
+      }), (0, i.jsx)(b.q4e, {
         options: s,
         value: a,
         onChange: this.handleRegionChange,
         isDisabled: !l
-      }), (0, i.jsx)(x.R94, {
-        type: x.geA.DESCRIPTION,
+      }), (0, i.jsx)(b.R94, {
+        type: b.geA.DESCRIPTION,
         children: eh.intl.string(eh.t["dbTs+/"])
       })]
     })
@@ -891,7 +891,7 @@ class eM extends Chunk647438.PureComponent {
       } = this.props;
       if (null == t) return null;
       let n = (0, et.mB)(t.flags, eo.zZ.REQUIRE_TAG, e);
-      (0, b.pW)({
+      (0, x.pW)({
         flags: n
       })
     }), ep(this, "handleChangeName", e => {
@@ -900,9 +900,9 @@ class eM extends Chunk647438.PureComponent {
         channel: i
       } = this.props;
       if (null == i) return;
-      i.isThread() ? e = (0, U.Z)(e, false) : ea.TPd.LIMITED_CHANNEL_NAME.has(i.type) && (e = (0, J.Nj)(e));
+      i.isThread() ? e = (0, H.Z)(e, false) : ea.TPd.LIMITED_CHANNEL_NAME.has(i.type) && (e = (0, J.Nj)(e));
       let l = null != (n = null == (t = this.nameInputRef.current) ? true : t.selectionStart) ? n : 0;
-      (0, b.pW)({
+      (0, x.pW)({
         name: e
       }), setTimeout(() => {
         var e;
@@ -914,8 +914,8 @@ class eM extends Chunk647438.PureComponent {
         channelName: t
       } = this.props;
       if ((null == e ? true : e.isThread()) && null != t) {
-        let e = (0, U.Z)(t, true);
-        e !== t && (0, b.pW)({
+        let e = (0, H.Z)(t, true);
+        e !== t && (0, x.pW)({
           name: e
         })
       }
@@ -926,15 +926,15 @@ class eM extends Chunk647438.PureComponent {
         r = null != (n = null == i ? true : i.selectionEnd) ? n : 0,
         s = this.props.channelName,
         a = (null == s ? true : s.substring(0, l)) + e + (null == s ? true : s.substring(r));
-      (0, b.pW)({
+      (0, x.pW)({
         name: a
       }), setTimeout(() => {
         let t = l + e.length;
         null == i || i.focus(), null == i || i.setSelectionRange(t, t)
       }, 0)
     }), ep(this, "handleChangeTopic", e => {
-      (0, b.pW)({
-        topic: L.ZP.translateInlineEmojiToSurrogates(e)
+      (0, x.pW)({
+        topic: A.ZP.translateInlineEmojiToSurrogates(e)
       })
     }), ep(this, "handleChangeRichTopic", (e, t, n) => {
       this.setState({
@@ -942,8 +942,8 @@ class eM extends Chunk647438.PureComponent {
         richTopicValue: n
       }), this.handleChangeTopic(t)
     }), ep(this, "handleChangeTemplate", e => {
-      (0, b.pW)({
-        template: L.ZP.translateInlineEmojiToSurrogates(e)
+      (0, x.pW)({
+        template: A.ZP.translateInlineEmojiToSurrogates(e)
       })
     }), ep(this, "handleChangeDefaultReactionEmoji", e => {
       let t = null == e ? null : (null == e ? true : e.id) != null ? {
@@ -953,7 +953,7 @@ class eM extends Chunk647438.PureComponent {
         emojiId: true,
         emojiName: e.optionallyDiverseSequence
       };
-      (0, b.pW)({
+      (0, x.pW)({
         defaultReactionEmoji: t
       })
     }), ep(this, "handleChangeDefaultForumLayout", e => {
@@ -961,7 +961,7 @@ class eM extends Chunk647438.PureComponent {
         channel: t
       } = this.props;
       if (null == t) return null;
-      (0, b.pW)({
+      (0, x.pW)({
         defaultForumLayout: e
       }), this.props.handleSetDefaultLayout(e)
     }), ep(this, "handleChangeDefaultSortOrder", e => {
@@ -969,7 +969,7 @@ class eM extends Chunk647438.PureComponent {
         channel: t
       } = this.props;
       if (null == t) return null;
-      (0, b.pW)({
+      (0, x.pW)({
         defaultSortOrder: e
       })
     }), ep(this, "handleChangeDefaultTagSetting", e => {
@@ -977,19 +977,19 @@ class eM extends Chunk647438.PureComponent {
         channel: t
       } = this.props;
       if (null == t) return null;
-      (0, b.pW)({
+      (0, x.pW)({
         defaultTagSetting: e
       })
     }), ep(this, "handleChangeBitrate", e => {
-      (0, b.pW)({
+      (0, x.pW)({
         bitrate: 1e3 * Math.round(e / 1e3)
       })
     }), ep(this, "handleUserLimitChange", e => {
-      (0, b.pW)({
+      (0, x.pW)({
         userLimit: Math.round(e)
       })
     }), ep(this, "handleNSFWChange", e => {
-      (0, b.pW)({
+      (0, x.pW)({
         nsfw: e
       })
     }), ep(this, "handleActiveChannelsRemovedChange", e => {
@@ -998,39 +998,39 @@ class eM extends Chunk647438.PureComponent {
       } = this.props;
       if (null == t) return null;
       let n = (0, et.mB)(t.flags, eo.zZ.ACTIVE_CHANNELS_REMOVED, !e);
-      (0, b.pW)({
+      (0, x.pW)({
         flags: n
       })
     }), ep(this, "handleNewsChange", e => {
-      (0, b.pW)({
+      (0, x.pW)({
         type: e ? ea.d4z.GUILD_ANNOUNCEMENT : ea.d4z.GUILD_TEXT
       })
     }), ep(this, "handleChangeSlowmode", e => {
-      (0, b.pW)({
+      (0, x.pW)({
         rateLimitPerUser: e
       })
     }), ep(this, "handleChangeThreadMessageSlowmode", e => {
-      (0, b.pW)({
+      (0, x.pW)({
         defaultThreadRateLimitPerUser: e
       })
     }), ep(this, "handleChangeDefaultAutoArchiveDuration", e => {
-      (0, b.pW)({
+      (0, x.pW)({
         defaultAutoArchiveDuration: e
       })
     }), ep(this, "handleRegionChange", e => {
-      (0, b.pW)({
+      (0, x.pW)({
         rtcRegion: e === eI ? null : e
       })
     }), ep(this, "handleVideoQualityModeChange", e => {
-      (0, b.pW)({
+      (0, x.pW)({
         videoQualityMode: e
       })
     }), ep(this, "handleAutoArchiveDurationChanged", e => {
-      (0, b.pW)({
+      (0, x.pW)({
         autoArchiveDuration: e
       })
     }), ep(this, "handleInvitableChanged", e => {
-      (0, b.pW)({
+      (0, x.pW)({
         invitable: e
       })
     }), ep(this, "handleChannelSummariesToggled", e => {
@@ -1039,7 +1039,7 @@ class eM extends Chunk647438.PureComponent {
       } = this.props;
       if (null == t) return null;
       let n = (0, et.mB)(t.flags, eo.zZ.SUMMARIES_DISABLED, !e);
-      (0, b.pW)({
+      (0, x.pW)({
         flags: n
       })
     }), ep(this, "handleShowMediaOptionsToggled", e => {
@@ -1048,7 +1048,7 @@ class eM extends Chunk647438.PureComponent {
       } = this.props;
       if (null == t) return null;
       let n = (0, et.mB)(t.flags, eo.zZ.HIDE_MEDIA_DOWNLOAD_OPTIONS, !e);
-      (0, b.pW)({
+      (0, x.pW)({
         flags: n
       })
     });
@@ -1077,11 +1077,11 @@ function eD() {
   } = (0, Chunk442837.cj)([Chunk496675.Z], () => ({
     canManageChannels: Chunk496675.Z.can(Chunk981631.Plq.MANAGE_CHANNELS, exports),
     canSendMessages: Chunk496675.Z.can(Chunk981631.Plq.SEND_MESSAGES, exports)
-  })), m = (0, Chunk933557.ZP)(exports), p = Chunk314897.default.getId(), f = (0, Chunk109434.v)(), x = null == exports ? true : exports.id, b = (0, Chunk902840.ts)(exports, false, true), j = Chunk129865.Z.useExperiment({
+  })), m = (0, Chunk933557.ZP)(exports), p = Chunk314897.default.getId(), f = (0, Chunk109434.v)(), b = null == exports ? true : exports.id, x = (0, Chunk902840.ts)(exports, false, true), j = Chunk129865.Z.useExperiment({
     guildId: null == exports ? true : exports.guild_id,
     location: "ChannelSettingsOverview"
   }).enabled, v = Chunk647438.useCallback(e => {
-    null != x && f.getState().setLayoutType(x, e)
+    null != b && f.getState().setLayoutType(b, e)
   }, [Chunk481060, Chunk755721]);
   return (0, Chunk951288.jsx)(eM, {
     errors: module,

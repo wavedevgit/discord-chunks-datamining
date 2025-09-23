@@ -1,4 +1,4 @@
-/** Chunk was on 11160 **/
+/** Chunk was on 89929 **/
 /** chunk id: 416568, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => ec
@@ -183,11 +183,11 @@ function eo(e) {
     pathname: o
   } = (0, c.TH)(), a = o.startsWith(J.Z5c.GUILD_MEMBER_VERIFICATION_FOR_HUB("")), s = (0, p.Wu)([A.Z, T.ZP], () => A.Z.getGuildIds().filter(e => T.ZP.isCurrentUserGuest(e))), u = i.concat(s), {
     entrypoint: d
-  } = (0, P.pN)({
+  } = (0, I.pN)({
     location: "GuildsBar"
   });
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(H.u, {}), d === P.u3.SERVER_RAIL_TOP && (0, r.jsx)(I.Z, {}), l ? (0, r.jsx)(C.Z, {}) : null, (0, r.jsx)(z.Z, {
+    children: [(0, r.jsx)(H.u, {}), d === I.u3.SERVER_RAIL_TOP && (0, r.jsx)(P.Z, {}), l ? (0, r.jsx)(C.Z, {}) : null, (0, r.jsx)(z.Z, {
       isOnHubVerificationRoute: a
     }), !t && (0, r.jsx)(U.Z, {}), u.map(e => (0, r.jsx)(Q.Z, {
       guildId: e
@@ -207,7 +207,7 @@ function ea(e) {
   } = e, [a] = (0, p.Wu)([R.ZP], () => {
     let e = R.ZP.getGuildsTree();
     return [e, e.version]
-  }), s = a.getRoots(), c = (0, p.Wu)([w.Z], () => w.Z.getGeoRestrictedGuilds()).map(e => (0, r.jsx)(F.Z, {
+  }), s = a.getRoots(), c = (0, p.Wu)([Z.Z], () => Z.Z.getGeoRestrictedGuilds()).map(e => (0, r.jsx)(F.Z, {
     id: e.id,
     name: e.name,
     icon: e.icon
@@ -234,7 +234,7 @@ function es(e) {
   } = e, [s] = (0, p.Wu)([R.ZP], () => {
     let e = R.ZP.getGuildsTree();
     return [e, e.version]
-  }), d = (0, p.e7)([S.Z], () => S.Z.lurkingGuildIds()), f = i.useMemo(() => n ? [] : d, [d, n]), b = (0, p.e7)([j.Z], () => j.Z.isFullscreenInContext()), [y, x] = i.useState(false), C = i.useCallback(() => x(true), []), E = i.useCallback(() => x(false), []), w = i.useRef(false), [T] = i.useState(() => new h.V7), A = i.useRef(null), U = i.useRef(null), G = (0, u.OP)(), {
+  }), d = (0, p.e7)([S.Z], () => S.Z.lurkingGuildIds()), f = i.useMemo(() => n ? [] : d, [d, n]), b = (0, p.e7)([j.Z], () => j.Z.isFullscreenInContext()), [y, x] = i.useState(false), C = i.useCallback(() => x(true), []), E = i.useCallback(() => x(false), []), Z = i.useRef(false), [T] = i.useState(() => new h.V7), A = i.useRef(null), U = i.useRef(null), G = (0, u.OP)(), {
     ref: B
   } = G, F = function(e, t) {
     if (null == e) return {};
@@ -276,20 +276,20 @@ function es(e) {
     pathname: ec
   } = (0, c.TH)(), eu = ei(ec);
   (0, O.Ng)(() => {
-    if (!w.current && 0 !== s.size) {
+    if (!Z.current && 0 !== s.size) {
       if (!eu) {
         let {
           scrollTop: e
-        } = Z.Z.getGuildListDimensions();
+        } = w.Z.getGuildListDimensions();
         et.scrollTo({
           to: e,
           animate: false
         })
       }
-      return w.current = true, () => T.stop()
+      return Z.current = true, () => T.stop()
     }
   }), i.useEffect(() => {
-    if (et.setGuildsTree(s), w.current || 0 === s.size) return;
+    if (et.setGuildsTree(s), Z.current || 0 === s.size) return;
     let e = N.Z.getState().guildId;
     et.scrollToGuild(e, false);
     let t = null;
@@ -342,10 +342,10 @@ function es(e) {
     }),
     {
       entrypoint: eh
-    } = (0, P.pN)({
+    } = (0, I.pN)({
       location: "GuildsBar"
     }),
-    eg = eh === P.u3.SERVER_RAIL_BOTTOM;
+    eg = eh === I.u3.SERVER_RAIL_BOTTOM;
   return (0, r.jsx)(v.Gt, {
     value: es,
     children: (0, r.jsx)(m.f6W, {
@@ -394,7 +394,7 @@ function es(e) {
                   fullWidth: true
                 }), (0, r.jsx)("div", {
                   className: ee.bottomRailNotifCenterButton,
-                  children: (0, r.jsx)(I.Z, {})
+                  children: (0, r.jsx)(P.Z, {})
                 })]
               })]
             })

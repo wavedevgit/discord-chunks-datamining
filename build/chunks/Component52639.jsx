@@ -1,4 +1,4 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 91053 **/
 /** chunk id: 52639, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -28,19 +28,19 @@ function _(e) {
   } = e, {
     analyticsLocations: _
   } = (0, l.ZP)(), {
-    context: C
-  } = (0, s.KZ)(), v = (0, i.Z)(), {
+    context: O
+  } = (0, o.KZ)(), j = (0, i.Z)(), {
     mutualFriendsCount: x,
-    mutualFriends: j,
-    mutualGuilds: O
-  } = (0, c.Z)(t), E = !t.bot && null != x && x > 0, S = null != O && O.length > 0;
-  return E || S ? (0, r.jsxs)(m.Z.Overlay, {
+    mutualFriends: v,
+    mutualGuilds: C
+  } = (0, c.Z)(t), I = !t.bot && null != x && x > 0, E = null != C && C.length > 0;
+  return I || E ? (0, r.jsxs)(g.Z.Overlay, {
     className: y.overlay,
-    children: [S && (0, r.jsx)(g.Z, {
+    children: [E && (0, r.jsx)(m.Z, {
       section: "MUTUAL_GUILDS",
       header: b.intl.string(b.t["4lTDZm"]),
       listClassName: y.list,
-      items: O.map(e => {
+      items: C.map(e => {
         let {
           guild: n,
           nick: i
@@ -49,17 +49,17 @@ function _(e) {
           user: t,
           guild: n,
           nick: i,
-          onSelect: () => (0, o.X)(n.id)
+          onSelect: () => (0, s.X)(n.id)
         }, n.id)
       })
-    }), S && E && (0, r.jsx)(p.Z, {
+    }), E && I && (0, r.jsx)(p.Z, {
       className: y.divider
-    }), E && (0, r.jsx)(g.Z, {
+    }), I && (0, r.jsx)(m.Z, {
       section: "MUTUAL_FRIENDS",
       header: b.intl.string(b.t["0mTJ3t"]),
       listClassName: y.list,
-      onExpand: () => (0, u.Z)(t.id, v),
-      items: null == j ? Array.from({
+      onExpand: () => (0, d.Z)(t.id, j),
+      items: null == v ? Array.from({
         length: x
       }).map((e, t) => (0, r.jsxs)("div", {
         className: y.loadingMutualFriend,
@@ -70,7 +70,7 @@ function _(e) {
           width: 135,
           opacity: .08
         })]
-      }, t)) : j.map(e => {
+      }, t)) : v.map(e => {
         let {
           key: t,
           user: i,
@@ -82,7 +82,7 @@ function _(e) {
           channelId: n,
           onSelect: () => {
             var e, t;
-            (0, d.openUserProfileModal)((e = function(e) {
+            (0, u.openUserProfileModal)((e = function(e) {
               for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {},
                   r = Object.keys(n);
@@ -99,7 +99,7 @@ function _(e) {
                 })
               }
               return e
-            }({}, C), t = t = {
+            }({}, O), t = t = {
               userId: i.id,
               sourceAnalyticsLocations: _
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {

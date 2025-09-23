@@ -1,4 +1,4 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 91053 **/
 /** chunk id: 592473, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -18,7 +18,7 @@ function p(e) {
     width: t = 24,
     height: n = 24,
     isBadged: l = false
-  } = e, [a] = i.useState(() => (0, o.Z)());
+  } = e, [a] = i.useState(() => (0, s.Z)());
   return (0, r.jsxs)("svg", {
     width: t,
     height: n,
@@ -39,7 +39,7 @@ function p(e) {
       })
     }), (0, r.jsx)("g", {
       mask: "url(#".concat(a, ")"),
-      children: (0, r.jsx)(s.E0I, {})
+      children: (0, r.jsx)(o.E0I, {})
     })]
   })
 }
@@ -50,11 +50,11 @@ function h(e) {
     numRequestToSpeak: n
   } = e, i = n > 0;
   return (0, r.jsxs)("div", {
-    className: a()(d.raisedHandIcon, t),
+    className: a()(u.raisedHandIcon, t),
     children: [(0, r.jsx)(p, {
       isBadged: i
-    }), i ? (0, r.jsx)(s.Text, {
-      className: d.raisedHandCount,
+    }), i ? (0, r.jsx)(o.Text, {
+      className: u.raisedHandCount,
       variant: "text-xs/semibold",
       children: n > 99 ? "99+" : n
     }) : null]
@@ -67,8 +67,8 @@ function f(e) {
     showRequestToSpeakSidebar: n,
     className: l,
     numRequestToSpeak: a,
-    onClick: o
-  } = e, s = function(e, t) {
+    onClick: s
+  } = e, o = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -83,9 +83,9 @@ function f(e) {
     }
     return i
   }(e, ["toggleRequestToSpeakSidebar", "showRequestToSpeakSidebar", "className", "numRequestToSpeak", "onClick"]);
-  let d = i.useCallback(() => {
-    null == o || o(), t()
-  }, [o, t]);
+  let u = i.useCallback(() => {
+    null == s || s(), t()
+  }, [s, t]);
   return (0, r.jsx)(c.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -104,12 +104,12 @@ function f(e) {
     }
     return e
   }({
-    onClick: d,
-    label: n ? u.intl.string(u.t.gKGz7O) : u.intl.string(u.t.ImQ4dX),
+    onClick: u,
+    label: n ? d.intl.string(d.t.gKGz7O) : d.intl.string(d.t.ImQ4dX),
     className: l,
     iconComponent: () => (0, r.jsx)(h, {
       numRequestToSpeak: a,
       className: l
     })
-  }, s))
+  }, o))
 }

@@ -50,9 +50,9 @@ function j(e) {
         }
         return e
       }({}, e), o = o = {
-        className: a()(v.secondaryButton, x.disableButton),
-        innerClassName: v.buttonInner,
-        wrapperClassName: v.secondaryButton,
+        className: a()(x.secondaryButton, v.disableButton),
+        innerClassName: x.buttonInner,
+        wrapperClassName: x.secondaryButton,
         color: s.Tt.PRIMARY,
         "aria-label": p.intl.string(f.default.TZsu1d),
         onClick: e => {
@@ -83,18 +83,18 @@ function b(e) {
     guildId: s,
     gameInstance: u,
     onClick: g
-  } = e, v = (0, o.e7)([m.Z], () => m.Z.getStateForGuild(s)), b = r.useMemo(() => {
+  } = e, x = (0, o.e7)([m.Z], () => m.Z.getStateForGuild(s)), b = r.useMemo(() => {
     var e;
-    return null == v || null == (e = v.entitlements) ? true : e[u.entitlementId]
-  }, [null == v ? true : v.entitlements, u.entitlementId]), h = (null == b ? true : b.ends_at) != null, _ = null == b || null == (a = b.sku) || null == (l = a.tenant_metadata) || null == (t = l.guild_monetization) || null == (n = t.game_server) ? true : n.boost_price;
+    return null == x || null == (e = x.entitlements) ? true : e[u.entitlementId]
+  }, [null == x ? true : x.entitlements, u.entitlementId]), h = (null == b ? true : b.ends_at) != null, _ = null == b || null == (a = b.sku) || null == (l = a.tenant_metadata) || null == (t = l.guild_monetization) || null == (n = t.game_server) ? true : n.boost_price;
   return null == _ ? null : (0, i.jsxs)(c.P3F, {
-    className: x.game,
+    className: v.game,
     onClick: () => g(u),
     children: [(0, i.jsx)("img", {
-      className: x.image,
+      className: v.image,
       alt: ""
     }), (0, i.jsxs)("div", {
-      className: x.textContainer,
+      className: v.textContainer,
       children: [(0, i.jsx)(c.X6q, {
         variant: "heading-sm/semibold",
         children: u.name

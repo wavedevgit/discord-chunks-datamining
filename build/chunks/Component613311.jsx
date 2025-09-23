@@ -467,7 +467,7 @@ class ep extends Chunk647438.PureComponent {
       null != e && null != t && (0, d.ZDy)(async () => {
         let {
           default: i
-        } = await Promise.all([n.e("7654"), n.e("62292")]).then(n.bind(n, 560114));
+        } = await Promise.all([n.e("7654"), n.e("54833")]).then(n.bind(n, 560114));
         return n => (0, r.jsx)(i, ed(eu({}, n), {
           guild: t,
           channel: e,

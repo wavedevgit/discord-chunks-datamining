@@ -1,9 +1,9 @@
-/** Chunk was on 69634 **/
+/** Chunk was on 47387 **/
 /** chunk id: 456631, original params: e,t,n (module,exports,require) **/
 let r;
 require.d(exports, {
   H: () => g,
-  Z: () => O
+  Z: () => h
 }), require("./388685.js"), require("./290780.js");
 var l, i, Chunk392711 = require("./392711.js"),
   Chunk442837 = require("./442837.js"),
@@ -27,7 +27,7 @@ let p = [],
     let e = (0, Chunk963838.cX)(E);
     Chunk780384.uv.announce(module, "polite"), E = []
   }, 500);
-class h extends(l = Chunk442837.ZP.Store) {
+class O extends(l = Chunk442837.ZP.Store) {
   get recentlyUsedEmojis() {
     return p
   }
@@ -40,13 +40,13 @@ class h extends(l = Chunk442837.ZP.Store) {
   getEffectForUserId(e) {
     return m[e]
   }
-}(i = "displayName") in h ? Object.defineProperty(h, i, {
+}(i = "displayName") in O ? Object.defineProperty(O, i, {
   value: "VoiceChannelEffectsStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : h[i] = "VoiceChannelEffectsStore";
-let O = new h(Chunk570140.Z, {
+}) : O[i] = "VoiceChannelEffectsStore";
+let h = new O(Chunk570140.Z, {
   VOICE_CHANNEL_EFFECT_CLEAR: e => {
     let {
       userId: t

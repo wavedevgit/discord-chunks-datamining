@@ -1,5 +1,5 @@
-/** Chunk was on 62987 **/
-/** chunk id: 42659, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 27304 **/
+/** chunk id: 42659, original params: e,n,t (module,exports,require) **/
 module.exports = {
   stickyContainer: "stickyContainer__57d3f",
   stickyBannerContainer: "stickyBannerContainer__57d3f",

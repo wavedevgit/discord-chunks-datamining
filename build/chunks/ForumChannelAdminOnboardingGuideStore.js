@@ -1,4 +1,4 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 91053 **/
 /** chunk id: 961675, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -14,25 +14,25 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let o = new Set;
-class s extends(r = Chunk442837.ZP.PersistedStore) {
+let s = new Set;
+class o extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    null != e && (o = new Set(e))
+    null != e && (s = new Set(e))
   }
   hasHidden(e) {
-    return o.has(e)
+    return s.has(e)
   }
   getState() {
-    return o
+    return s
   }
 }
-a(s, "displayName", "ForumChannelAdminOnboardingGuideStore"), a(s, "persistKey", "ForumChannelAdminOnboardingGuideStore");
-let c = new s(Chunk570140.Z, {
+a(o, "displayName", "ForumChannelAdminOnboardingGuideStore"), a(o, "persistKey", "ForumChannelAdminOnboardingGuideStore");
+let c = new o(Chunk570140.Z, {
   ADMIN_ONBOARDING_GUIDE_HIDE: function(e) {
     let {
       channelId: t,
       hide: n
     } = e;
-    n ? o.add(t) : o.delete(t)
+    n ? s.add(t) : s.delete(t)
   }
 })

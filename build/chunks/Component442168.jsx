@@ -1,7 +1,7 @@
-/** Chunk was on 69634 **/
+/** Chunk was on 47387 **/
 /** chunk id: 442168, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => O
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -51,13 +51,13 @@ let g = {
     duration: 1e3
   };
 
-function h(e) {
+function O(e) {
   let {
     stream: t,
     inPopout: n
   } = e, {
-    reducedMotion: h
-  } = l.useContext(o.Sf), O = (0, l.useRef)(null), y = d.n.getState().clipsButtonRef, _ = (0, f.V9)(t), j = (0, a.e7)([s.Z], () => s.Z.getActiveAnimation()), Z = (0, a.Wu)([s.Z], () => s.Z.getStreamClipAnimations(_)), I = (0, l.useRef)(true);
+    reducedMotion: O
+  } = l.useContext(o.Sf), h = (0, l.useRef)(null), y = d.n.getState().clipsButtonRef, _ = (0, f.V9)(t), j = (0, a.e7)([s.Z], () => s.Z.getActiveAnimation()), Z = (0, a.Wu)([s.Z], () => s.Z.getStreamClipAnimations(_)), I = (0, l.useRef)(true);
   l.useEffect(() => () => {
     (0, c.Gh)(_)
   }, [_]);
@@ -95,9 +95,9 @@ function h(e) {
         position: "fixed",
         visibility: "hidden",
         opacity: 1
-      }, h.enabled ? w(e) : (() => {
+      }, O.enabled ? w(e) : (() => {
         var e;
-        let t = null == (e = O.current) ? true : e.getBoundingClientRect();
+        let t = null == (e = h.current) ? true : e.getBoundingClientRect();
         return null == t || n ? g : {
           width: t.width,
           height: t.height,
@@ -111,7 +111,7 @@ function h(e) {
       }, w(e))],
       leave: E({
         opacity: 0
-      }, !h.enabled && E({
+      }, !O.enabled && E({
         height: 0,
         width: 0
       }, (() => {
@@ -120,7 +120,7 @@ function h(e) {
           left: I.current.left + 12
         }
       })())),
-      config: h.enabled ? v : S,
+      config: O.enabled ? v : S,
       onRest: (e, t) => {
         null != t.item && null != Z.find(e => e.timestamp === t.item.timestamp) && (0, c.Gh)(_, t.item.timestamp)
       }
@@ -128,7 +128,7 @@ function h(e) {
   return (0, i.useChain)([P, C], [0, .1], 3e3), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: m.hidden,
-      ref: O
+      ref: h
     }), A((e, t) => null != t && (0, r.jsx)(i.animated.div, {
       className: m.whiteFlash,
       style: e

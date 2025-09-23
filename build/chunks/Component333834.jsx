@@ -1,4 +1,4 @@
-/** Chunk was on 11160 **/
+/** Chunk was on 89929 **/
 /** chunk id: 333834, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => D
@@ -32,7 +32,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk809946 = require("./809946.js");
 
-function w(e) {
+function Z(e) {
   e.stopPropagation()
 }
 
@@ -45,8 +45,8 @@ function T(e) {
   return (0, r.jsx)(p.P3F, {
     "aria-expanded": n,
     onClick: i,
-    className: o()(Z.messagesGroupHeaderWrap, {
-      [Z.collapsed]: !n
+    className: o()(w.messagesGroupHeaderWrap, {
+      [w.collapsed]: !n
     }),
     children: (0, r.jsxs)(p.Kqy, {
       gap: 4,
@@ -55,11 +55,11 @@ function T(e) {
       children: [(0, r.jsx)(p.X6q, {
         variant: "text-sm/medium",
         color: "text-secondary",
-        className: Z.messagesGroupHeader,
+        className: w.messagesGroupHeader,
         children: (0, a.capitalize)(N.intl.string(S.Vv[t]).toLowerCase())
       }), (0, r.jsx)(p.CJ0, {
         size: "xxs",
-        className: Z.chevron
+        className: w.chevron
       })]
     })
   })
@@ -112,9 +112,9 @@ function D(e) {
     renderMessageGroup: d,
     scrollerClassName: h,
     className: g,
-    listName: I,
+    listName: P,
     ignoreGrouping: N = false
-  } = e, D = (0, _.fJ)(), L = i.useRef(null), M = (0, f.Z)(I, L), {
+  } = e, D = (0, _.fJ)(), L = i.useRef(null), M = (0, f.Z)(P, L), {
     entrypoint: k,
     notificationCenterVariant: U
   } = (0, y.pN)({
@@ -159,8 +159,8 @@ function D(e) {
         animate: true
       })
     }
-    return b.S.subscribe(P.CkL.SCROLL_PAGE_DOWN, t), b.S.subscribe(P.CkL.SCROLL_PAGE_UP, e), () => {
-      b.S.unsubscribe(P.CkL.SCROLL_PAGE_DOWN, t), b.S.unsubscribe(P.CkL.SCROLL_PAGE_UP, e)
+    return b.S.subscribe(I.CkL.SCROLL_PAGE_DOWN, t), b.S.subscribe(I.CkL.SCROLL_PAGE_UP, e), () => {
+      b.S.unsubscribe(I.CkL.SCROLL_PAGE_DOWN, t), b.S.unsubscribe(I.CkL.SCROLL_PAGE_UP, e)
     }
   }, []);
   let K = i.useCallback(() => {
@@ -264,9 +264,9 @@ function D(e) {
     messagesByCategory: Y,
     viewId: D
   }), (0, r.jsx)("div", {
-    className: o()(g, Z.messagesPopoutWrap),
-    onClick: w,
-    onDoubleClick: w,
+    className: o()(g, w.messagesPopoutWrap),
+    onClick: Z,
+    onDoubleClick: Z,
     "aria-label": e["aria-label"],
     children: (0, r.jsx)(c.bG, {
       navigator: M,
@@ -312,7 +312,7 @@ function D(e) {
               var t;
               L.current = e, i.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
             },
-            className: o()(Z.messagesPopout, h),
+            className: o()(w.messagesPopout, h),
             onScroll: K,
             fade: true
           }, l), n = n = {

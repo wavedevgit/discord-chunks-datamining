@@ -80,38 +80,38 @@ function y(e) {
     })
   }, [r, t]), {
     handleDragStart: S,
-    handleDragReset: O,
-    handleDragComplete: E
+    handleDragReset: E,
+    handleDragComplete: O
   } = (0, h.Z)(t.availableTags, e => {
     (0, d.pW)({
       availableTags: e
     })
   });
   return (0, i.jsxs)("div", {
-    className: b.tags,
+    className: x.tags,
     children: [m ? t.availableTags.map(e => (0, i.jsx)(C, {
       tag: e,
       availableTags: t.availableTags,
       canManageChannels: r,
       onTagClick: N,
-      onDragComplete: E,
-      onDragReset: O,
+      onDragComplete: O,
+      onDragReset: E,
       onDragStart: S
     }, e.id)) : null, m ? (0, i.jsx)(c.P3F, {
       onClick: y,
-      className: s()(b.addTags, {
-        [b.disabled]: !r || u
+      className: s()(x.addTags, {
+        [x.disabled]: !r || u
       }),
       children: (0, i.jsx)(c.qJs, {
         size: "custom",
-        "aria-label": x.intl.string(x.t["/jubeH"]),
+        "aria-label": b.intl.string(b.t["/jubeH"]),
         color: o.Z.unsafe_rawColors.WHITE_500.css,
         width: 20,
         height: 20
       })
     }) : (0, i.jsx)(c.zxk, {
       variant: "primary",
-      text: x.intl.string(x.t["/jubeH"]),
+      text: b.intl.string(b.t["/jubeH"]),
       disabled: !r,
       onClick: y
     })]
@@ -141,9 +141,9 @@ function C(e) {
     onDragReset: c
   });
   return (0, i.jsx)("div", {
-    className: s()(b.container, {
-      [b.dropIndicatorBefore]: null != g && d < g,
-      [b.dropIndicatorAfter]: null != g && d > g
+    className: s()(x.container, {
+      [x.dropIndicatorBefore]: null != g && d < g,
+      [x.dropIndicatorAfter]: null != g && d > g
     }),
     ref: e => {
       h(p(e))
@@ -153,7 +153,7 @@ function C(e) {
     children: (0, i.jsx)(m.Z, {
       tag: t,
       disabled: !l,
-      ariaLabel: x.intl.formatToPlainString(x.t.jhSvBw, {
+      ariaLabel: b.intl.formatToPlainString(b.t.jhSvBw, {
         name: t.name
       }),
       onClick: l ? () => r(t) : true

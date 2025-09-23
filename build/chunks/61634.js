@@ -1,4 +1,4 @@
-/** Chunk was on 11160 **/
+/** Chunk was on 89929 **/
 /** chunk id: 61634, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -39,12 +39,12 @@ function S(e) {
     }).enabled,
     C = n && !r,
     S = (0, c.k5)(e),
-    P = (0, i.Wu)([o.ZP, O.Z], () => o.ZP.getEmbeddedActivitiesForGuild(e).filter(e => !(0, s.BA)([...e.userIds], O.Z.getBlockedOrIgnoredIDs()))),
-    I = (0, a.p)(null == (t = P[0]) ? true : t.location),
-    N = (0, l.NX)(I),
+    I = (0, i.Wu)([o.ZP, O.Z], () => o.ZP.getEmbeddedActivitiesForGuild(e).filter(e => !(0, s.BA)([...e.userIds], O.Z.getBlockedOrIgnoredIDs()))),
+    P = (0, a.p)(null == (t = I[0]) ? true : t.location),
+    N = (0, l.NX)(P),
     {
-      guildHasVoice: Z,
-      guildHasVideo: w,
+      guildHasVoice: w,
+      guildHasVideo: Z,
       selectedVoiceChannelHasVideo: T
     } = (0, i.cj)([y.Z, v.Z, m.Z, b.Z, g.Z], () => {
       var t;
@@ -95,19 +95,19 @@ function S(e) {
         return null != t && b.Z.can(u.gl, t)
       }),
       E = l && null != (r = null == (n = g.Z.getChannel(i)) ? true : n.isGuildStageVoice()) && r,
-      I = !!l && null != f.Z.getActiveStreamForUser(A, e),
+      P = !!l && null != f.Z.getActiveStreamForUser(A, e),
       R = (0, s.aK)(f.Z.getAllApplicationStreams()).some(t => t.guildId === e),
       D = l && T,
       L = (() => {
-        if (N) return P.length > 0;
-        for (let e of P) {
+        if (N) return I.length > 0;
+        for (let e of I) {
           let t = g.Z.getChannel((0, a.p)(e.location));
           if (null != t && (0, p.vd)(t.type)) returntrue
         }
         returnfalse
       })(),
       M = o.ZP.getEmbeddedActivitiesForGuild(e).length > 0;
-    return l ? (c = true, h = (null == S ? true : S.channel_id) === i, m = E, O = D, _ = I, v = M) : (c = Z, h = null != S, m = x, O = w, _ = R, v = L), {
+    return l ? (c = true, h = (null == S ? true : S.channel_id) === i, m = E, O = D, _ = P, v = M) : (c = w, h = null != S, m = x, O = Z, _ = R, v = L), {
       audio: c,
       video: O,
       screenshare: _,
@@ -116,5 +116,5 @@ function S(e) {
       activity: v,
       isCurrentUserConnected: l || E
     }
-  }, [e, C, T, A, N, P, S, Z, w])
+  }, [e, C, T, A, N, I, S, w, Z])
 }

@@ -1,7 +1,7 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 21616 **/
 /** chunk id: 5200, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Y: () => C
+  Y: () => _
 }), require("./388685.js");
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -21,21 +21,21 @@ let b = ["embedded_cover"],
     tension: 800,
     friction: 24
   };
-var _ = ((r = _ || {})[r.THIRTEEN_BY_ELEVEN = 0] = "THIRTEEN_BY_ELEVEN", r[r.SIXTEEN_BY_NINE = 1] = "SIXTEEN_BY_NINE", r);
+var C = ((r = C || {})[r.THIRTEEN_BY_ELEVEN = 0] = "THIRTEEN_BY_ELEVEN", r[r.SIXTEEN_BY_NINE = 1] = "SIXTEEN_BY_NINE", r);
 
-function C(e) {
+function _(e) {
   var t;
   let {
     context: n,
     activityItem: r,
     onClick: a,
-    aspectRatio: _ = 0,
-    animatedDivClass: C,
+    aspectRatio: C = 0,
+    animatedDivClass: _,
     commandOrigin: v
   } = e, {
     onActivityItemSelected: x,
-    imageBackground: j,
-    activityAction: O,
+    imageBackground: O,
+    activityAction: j,
     labelType: E
   } = (0, u.ZP)({
     context: n,
@@ -46,11 +46,11 @@ function C(e) {
     embeddedActivitiesManager: h.Z,
     assetNames: b,
     commandOrigin: v
-  }), [S, I] = l.useState(false), P = l.useCallback(() => {
-    I(true)
-  }, [I]), Z = l.useCallback(() => {
-    I(false)
-  }, [I]), T = l.useMemo(() => (0, i.jsx)("div", {
+  }), [S, P] = l.useState(false), I = l.useCallback(() => {
+    P(true)
+  }, [P]), Z = l.useCallback(() => {
+    P(false)
+  }, [P]), T = l.useMemo(() => (0, i.jsx)("div", {
     className: g.overlayBadge,
     children: (0, i.jsx)("div", {
       className: g.badgeContainer,
@@ -59,7 +59,7 @@ function C(e) {
       })
     })
   }), [E]), N = l.useMemo(() => {
-    switch (O) {
+    switch (j) {
       case u.JS.JOIN:
         return (0, i.jsx)("div", {
           className: g.activityAction,
@@ -88,12 +88,12 @@ function C(e) {
       default:
         return null
     }
-  }, [O]);
+  }, [j]);
   return (0, i.jsx)(c.P3F, {
     onClick: x,
-    onFocus: P,
+    onFocus: I,
     onBlur: Z,
-    onMouseEnter: P,
+    onMouseEnter: I,
     onMouseLeave: Z,
     className: g.activityItemButtonInnerClass,
     children: (0, i.jsx)(c.AMe, {
@@ -111,15 +111,15 @@ function C(e) {
         return (0, i.jsx)(c.f6W, {
           theme: f.BRd.DARK,
           children: e => (0, i.jsxs)(s.animated.div, {
-            className: o()(e, g.activityItem, C, {
-              [g.activityItem_13_11]: 0 === _,
-              [g.activityItem_16_9]: 1 === _
+            className: o()(e, g.activityItem, _, {
+              [g.activityItem_13_11]: 0 === C,
+              [g.activityItem_16_9]: 1 === C
             }),
             style: {
               transform: t.to([0, 1], [1, 1.05]).to(e => "scale(".concat(e, ")"))
             },
             children: [(0, i.jsx)(d.Z, {
-              imageBackground: j,
+              imageBackground: O,
               applicationName: r.application.name,
               imageClassName: g.activitySuggestionImage,
               imageNotFoundClassName: g.brokenImageIconWrapper
@@ -130,4 +130,4 @@ function C(e) {
     })
   })
 }
-C.AspectRatio = _
+_.AspectRatio = C

@@ -1,4 +1,4 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 21616 **/
 /** chunk id: 351248, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk149715 = require("./149715.js"),
   Chunk162130 = require("./162130.js");
 
-function _(e, t, n) {
+function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -28,7 +28,7 @@ function _(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let C = {
+let _ = {
   SCALE_MIN: .7,
   SCALE_MAX: 1,
   DURATION_IN: 300,
@@ -54,8 +54,8 @@ class v extends Chunk647438.PureComponent {
     } = this;
     t.setValue(0), n.setValue(0), o.Z.parallel([o.Z.timing(t, {
       toValue: 1,
-      duration: C.DURATION_IN,
-      easing: C.EASING_IN
+      duration: _.DURATION_IN,
+      easing: _.EASING_IN
     }), o.Z.timing(n, {
       toValue: 1,
       duration: 200
@@ -76,8 +76,8 @@ class v extends Chunk647438.PureComponent {
     }));
     o.Z.sequence([o.Z.timing(t, {
       toValue: 0,
-      duration: C.DURATION_OUT,
-      easing: C.EASING_OUT
+      duration: _.DURATION_OUT,
+      easing: _.EASING_OUT
     }), o.Z.sequence(l), o.Z.timing(i, {
       toValue: 0,
       duration: 125
@@ -91,7 +91,7 @@ class v extends Chunk647438.PureComponent {
       transform: [{
         scale: module.interpolate({
           inputRange: [0, 1],
-          outputRange: [C.SCALE_MIN, C.SCALE_MAX]
+          outputRange: [_.SCALE_MIN, _.SCALE_MAX]
         })
       }],
       opacity: module
@@ -140,7 +140,7 @@ class v extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), _(this, "scaleAnimation", new o.Z.Value(0)), _(this, "spriteAnimation", new o.Z.Value(0)), _(this, "spriteOpacity", new o.Z.Value(0)), _(this, "widthAnimation", new o.Z.Value(0))
+    super(...e), C(this, "scaleAnimation", new o.Z.Value(0)), C(this, "spriteAnimation", new o.Z.Value(0)), C(this, "spriteOpacity", new o.Z.Value(0)), C(this, "widthAnimation", new o.Z.Value(0))
   }
 }
 
@@ -153,7 +153,7 @@ function x(e) {
     onClick: o,
     width: u,
     guildId: b
-  } = e, y = (0, p.ZP)(), _ = (t = n.length, ((0, d.pxk)(d.EFr.SIZE_80) + 16) * t > u ? d.EFr.SIZE_40 : d.EFr.SIZE_80), C = (0, s.e7)([h.Z], () => h.Z.isFocused()), x = n.map(e => {
+  } = e, y = (0, p.ZP)(), C = (t = n.length, ((0, d.pxk)(d.EFr.SIZE_80) + 16) * t > u ? d.EFr.SIZE_40 : d.EFr.SIZE_80), _ = (0, s.e7)([h.Z], () => h.Z.isFocused()), x = n.map(e => {
     var t, n;
     if (e.type !== m.fO.USER) return null;
     let {
@@ -164,12 +164,12 @@ function x(e) {
     } = e;
     return (0, r.jsx)(v, {
       className: g.participant,
-      width: (0, d.pxk)(_),
+      width: (0, d.pxk)(C),
       theme: y,
       children: (0, r.jsx)(f.Z, {
         userId: l.id,
-        src: l.getAvatarURL(b, (0, d.pxk)(_), s && C),
-        size: _,
+        src: l.getAvatarURL(b, (0, d.pxk)(C), s && _),
+        size: C,
         muted: null != (t = null == a ? true : a.isVoiceMuted()) && t,
         deafen: null != (n = null == a ? true : a.isVoiceDeafened()) && n,
         speaking: s,

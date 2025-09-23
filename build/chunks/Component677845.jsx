@@ -1,4 +1,4 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 21616 **/
 /** chunk id: 677845, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -32,41 +32,41 @@ function S(e) {
     participants: t,
     onClick: n,
     onDoubleClick: S,
-    onContextMenu: I,
-    channel: P,
+    onContextMenu: P,
+    channel: I,
     className: Z,
     inCall: T,
     totalNumberOfParticipants: N
-  } = e, A = (0, c.bp)() === O.IlC.POPOUT, w = (0, o.e7)([y.Z], () => y.Z.getGuild(P.guild_id), [P.guild_id]), {
-    dismissedActivityEntryPointTileChannel: R
-  } = (0, x.d)(), M = (0, o.e7)([h.Z], () => h.Z.getUserParticipantCount(P.id), [P]), D = (0, b.bt)(P.id, t), k = i.useCallback(() => {
+  } = e, A = (0, c.bp)() === j.IlC.POPOUT, w = (0, o.e7)([y.Z], () => y.Z.getGuild(I.guild_id), [I.guild_id]), {
+    dismissedActivityEntryPointTileChannel: M
+  } = (0, x.d)(), R = (0, o.e7)([h.Z], () => h.Z.getUserParticipantCount(I.id), [I]), k = (0, b.bt)(I.id, t), L = i.useCallback(() => {
     (0, a.j)(() => {
       x.d.setState({
-        dismissedActivityEntryPointTileChannel: P.id
+        dismissedActivityEntryPointTileChannel: I.id
       })
     })
-  }, [P.id]);
+  }, [I.id]);
   i.useEffect(() => {
-    null != R && P.id !== R && (0, a.j)(() => {
+    null != M && I.id !== M && (0, a.j)(() => {
       x.d.setState({
         dismissedActivityEntryPointTileChannel: null
       })
     })
-  }, [P.id, R]);
-  let L = (0, o.e7)([_.Z], () => P.isPrivate() || (0, m.b)(_.Z, w, P), [w, P]),
-    U = (null == w ? true : w.afkChannelId) === P.id,
-    B = P.userLimit <= 0 || P.userLimit > 1,
-    G = (0, o.e7)([u.ZP], () => u.ZP.getEmbeddedActivitiesForChannel(P.id).length <= 0),
-    H = (0, f.Nj)(s.z.VC_TILE_ACTIVITIES_ENTRY_POINT),
-    F = (0, d.KF)(P.id) !== d.jy.CAN_LAUNCH,
-    V = null != R && R === P.id,
-    z = D.map(e => t => (0, r.jsx)(v.ZP, {
+  }, [I.id, M]);
+  let D = (0, o.e7)([C.Z], () => I.isPrivate() || (0, m.b)(C.Z, w, I), [w, I]),
+    U = (null == w ? true : w.afkChannelId) === I.id,
+    B = I.userLimit <= 0 || I.userLimit > 1,
+    F = (0, o.e7)([u.ZP], () => u.ZP.getEmbeddedActivitiesForChannel(I.id).length <= 0),
+    V = (0, f.Nj)(s.z.VC_TILE_ACTIVITIES_ENTRY_POINT),
+    H = (0, d.KF)(I.id) !== d.jy.CAN_LAUNCH,
+    G = null != M && M === I.id,
+    z = k.map(e => t => (0, r.jsx)(v.ZP, {
       participant: e,
-      channel: P,
+      channel: I,
       className: E.tile,
       onClick: n,
       onDoubleClick: S,
-      onContextMenu: I,
+      onContextMenu: P,
       inCall: T,
       width: t,
       inPopout: A
@@ -76,36 +76,36 @@ function S(e) {
     name: l.ImpressionNames.CHANNEL_CALL_VIDEO_GRID_VIEW,
     properties: {
       total_participants: N,
-      can_invite: L,
+      can_invite: D,
       is_afk_channel: U,
-      channel_user_limit: P.userLimit
+      channel_user_limit: I.userLimit
     }
   }, {
     trackOnInitialLoad: true
-  }, []), null != w && !U && (!(M >= 2) || !G || F || H || V ? B && 1 === M && L && (G && !F ? z.push(e => (0, r.jsx)(C.h, {
-    channel: P,
+  }, []), null != w && !U && (!(R >= 2) || !F || H || V || G ? B && 1 === R && D && (F && !H ? z.push(e => (0, r.jsx)(_.h, {
+    channel: I,
     guild: w,
     width: e,
     inPopout: A,
-    handleClose: k,
-    userParticipantCount: M
-  })) : z.push(e => (0, r.jsx)(j.Z, {
+    handleClose: L,
+    userParticipantCount: R
+  })) : z.push(e => (0, r.jsx)(O.Z, {
     width: e,
-    channel: P,
+    channel: I,
     guild: w,
     inPopout: A
-  }))) : z.push(e => (0, r.jsx)(C.h, {
-    channel: P,
+  }))) : z.push(e => (0, r.jsx)(_.h, {
+    channel: I,
     guild: w,
     width: e,
     inPopout: A,
-    handleClose: k,
-    userParticipantCount: M
+    handleClose: L,
+    userParticipantCount: R
   })));
   let W = i.useCallback(e => {
     var t, n;
-    return null != (n = null == (t = D[e]) ? true : t.id) ? n : "empty-tile"
-  }, [D]);
+    return null != (n = null == (t = k[e]) ? true : t.id) ? n : "empty-tile"
+  }, [k]);
   return (0, r.jsx)(g.Z, {
     className: Z,
     keyExtractor: W,

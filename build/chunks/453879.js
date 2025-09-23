@@ -1,4 +1,4 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 91053 **/
 /** chunk id: 453879, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   v: () => a
@@ -14,16 +14,16 @@ function a(e, t) {
   }];
   let n = [],
     a = (0, r.Lz)(e),
-    o = new Set(a.map(e => e.guildId));
+    s = new Set(a.map(e => e.guildId));
   a.length > 0 && n.push({
     header: l.intl.string(l.t.CbaapK),
     entries: a,
     appendEndCard: false
   });
-  let s = e.filter(e => !o.has(e.guildId));
-  return (s = (0, r.Th)(s)).length > 0 && n.push({
+  let o = e.filter(e => !s.has(e.guildId));
+  return (o = (0, r.Th)(o)).length > 0 && n.push({
     header: l.intl.string(l.t.wxbhER),
-    entries: s,
+    entries: o,
     appendEndCard: true
   }), n
 }

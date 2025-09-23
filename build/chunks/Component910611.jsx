@@ -1,8 +1,8 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 21616 **/
 /** chunk id: 910611, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  TS: () => H,
-  ud: () => L,
+  TS: () => V,
+  ud: () => D,
   v0: () => B
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -38,7 +38,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk97009 = require("./97009.js");
 
-function M(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -57,7 +57,7 @@ function M(e) {
   return e
 }
 
-function D(e, t) {
+function k(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -70,20 +70,20 @@ function D(e, t) {
   }), e
 }
 
-function k(e) {
+function L(e) {
   var t;
   let {
     channel: n,
     children: i
   } = e, l = (0, u.q)(null == (t = n.linkedLobby) ? true : t.application_id), [a, o] = (0, f.US)([s.z.CHANNEL_LINKED_LOBBY_EDUCATION_TOOLTIP], true, true);
   if (null == l) return null;
-  let d = j.ZP.getApplicationIconURL({
+  let d = O.ZP.getApplicationIconURL({
       id: l.id,
       icon: l.icon,
       size: 14
     }),
     [p, h] = a !== s.z.CHANNEL_LINKED_LOBBY_EDUCATION_TOOLTIP ? [w.intl.string(w.t.XJVlf3), true] : [(0, r.jsxs)("div", {
-      className: R.linkedLobbyEducationTooltip,
+      className: M.linkedLobbyEducationTooltip,
       children: [(0, r.jsx)(c.Text, {
         variant: "text-md/semibold",
         color: "header-primary",
@@ -92,42 +92,42 @@ function k(e) {
         variant: "text-sm/medium",
         color: "header-secondary",
         children: w.intl.format(w.t["16agur"], {
-          helpdeskArticle: O.Z.getArticleURL(N.BhN.LINKED_LOBBIES)
+          helpdeskArticle: j.Z.getArticleURL(N.BhN.LINKED_LOBBIES)
         })
       }), (0, r.jsx)(c.P3F, {
-        className: R.linkedLobbyEducationTooltipCloseClickContainer,
+        className: M.linkedLobbyEducationTooltipCloseClickContainer,
         onClick: () => o(A.L.USER_DISMISS),
         children: (0, r.jsx)(c.Dio, {
-          className: R.linkedLobbyEducationTooltipCloseIcon,
+          className: M.linkedLobbyEducationTooltipCloseIcon,
           color: "currentColor"
         })
       })]
     }, 0), w.intl.string(w.t.YIVr4O)];
   return (0, r.jsx)(c.ua7, {
-    tooltipClassName: R.linkedLobbyEducationTooltipWrapper,
+    tooltipClassName: M.linkedLobbyEducationTooltipWrapper,
     position: "bottom",
     align: "left",
     text: p,
     "aria-label": h,
     forceOpen: a === s.z.CHANNEL_LINKED_LOBBY_EDUCATION_TOOLTIP || true,
-    children: e => (0, r.jsxs)("div", D(M({
-      className: R.linkedLobbyTooltip
+    children: e => (0, r.jsxs)("div", k(R({
+      className: M.linkedLobbyTooltip
     }, e), {
       children: [i, (0, r.jsxs)(c.Text, {
-        className: R.linkedLobby,
+        className: M.linkedLobby,
         variant: "text-sm/medium",
         color: "header-primary",
         children: ["•", (0, r.jsx)("img", {
           alt: "",
           src: d,
-          className: R.linkedLobbyApplicationIcon
+          className: M.linkedLobbyApplicationIcon
         }), l.name]
       })]
     }))
   }, a)
 }
 
-function L(e) {
+function D(e) {
   let {
     channel: t,
     channelName: n,
@@ -141,7 +141,7 @@ function L(e) {
     renderFollowButton: g
   } = e, b = (0, h.KS)(t, o), {
     prefix: y,
-    level: _
+    level: C
   } = function(e, t) {
     var n, r;
     switch (e) {
@@ -185,7 +185,7 @@ function L(e) {
   switch (t.type) {
     case N.d4z.DM:
       return (0, r.jsx)(T.Z, {
-        level: _,
+        level: C,
         channel: t,
         handleClick: u,
         handleContextMenu: d
@@ -195,7 +195,7 @@ function L(e) {
       return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(c.nn4, {
           children: w.intl.string(w.t["e5y+go"])
-        }), (0, r.jsx)(I.j, {
+        }), (0, r.jsx)(P.j, {
           channel: t
         }, "channel-".concat(t.id))]
       });
@@ -203,17 +203,17 @@ function L(e) {
     case N.d4z.GUILD_TEXT:
     case N.d4z.GUILD_FORUM:
     case N.d4z.GUILD_MEDIA:
-      return null != t.linkedLobby ? (0, r.jsxs)(k, {
+      return null != t.linkedLobby ? (0, r.jsxs)(L, {
         channel: t,
-        children: [G(b, t.type === N.d4z.GUILD_ANNOUNCEMENT ? w.intl.string(w.t.l1dkSE) : w.intl.string(w.t.Pnajj4)), (0, r.jsx)(Z.Z.Title, {
-          level: _,
+        children: [F(b, t.type === N.d4z.GUILD_ANNOUNCEMENT ? w.intl.string(w.t.l1dkSE) : w.intl.string(w.t.Pnajj4)), (0, r.jsx)(Z.Z.Title, {
+          level: C,
           onContextMenu: d,
           onClick: u,
           children: v
         })]
       }) : (0, r.jsxs)(i.Fragment, {
-        children: [G(b, t.type === N.d4z.GUILD_ANNOUNCEMENT ? w.intl.string(w.t.l1dkSE) : w.intl.string(w.t.Pnajj4)), (0, r.jsx)(Z.Z.Title, {
-          level: _,
+        children: [F(b, t.type === N.d4z.GUILD_ANNOUNCEMENT ? w.intl.string(w.t.l1dkSE) : w.intl.string(w.t.Pnajj4)), (0, r.jsx)(Z.Z.Title, {
+          level: C,
           onContextMenu: d,
           onClick: u,
           children: v
@@ -221,8 +221,8 @@ function L(e) {
       });
     case N.d4z.GUILD_VOICE:
       return (0, r.jsxs)(i.Fragment, {
-        children: [G(b, w.intl.string(w.t.BVZqJi)), (0, r.jsx)(Z.Z.Title, {
-          level: _,
+        children: [F(b, w.intl.string(w.t.BVZqJi)), (0, r.jsx)(Z.Z.Title, {
+          level: C,
           onContextMenu: d,
           onClick: u,
           children: v
@@ -230,8 +230,8 @@ function L(e) {
       });
     case N.d4z.GUILD_STAGE_VOICE:
       return (0, r.jsxs)(i.Fragment, {
-        children: [G(b, w.intl.string(w.t.EErMzM)), (0, r.jsx)(Z.Z.Title, {
-          level: _,
+        children: [F(b, w.intl.string(w.t.EErMzM)), (0, r.jsx)(Z.Z.Title, {
+          level: C,
           onContextMenu: d,
           onClick: u,
           children: v
@@ -240,29 +240,29 @@ function L(e) {
     case N.d4z.ANNOUNCEMENT_THREAD:
     case N.d4z.PUBLIC_THREAD:
     case N.d4z.PRIVATE_THREAD:
-      let j = null;
+      let O = null;
       if (!s && null != l) {
         let e = (0, h.KS)(l, o);
-        j = (0, r.jsxs)(i.Fragment, {
-          children: [G(e, w.intl.string(w.t.Pnajj4)), (0, r.jsx)(Z.Z.Title, {
-            level: _,
+        O = (0, r.jsxs)(i.Fragment, {
+          children: [F(e, w.intl.string(w.t.Pnajj4)), (0, r.jsx)(Z.Z.Title, {
+            level: C,
             onContextMenu: m,
             onClick: f,
-            className: a()(R.parentChannelName, R.cursorPointer),
-            children: (0, p.F6)(l, x.default, C.Z)
+            className: a()(M.parentChannelName, M.cursorPointer),
+            children: (0, p.F6)(l, x.default, _.Z)
           }), (0, r.jsx)(Z.Z.Caret, {})]
         })
       }
-      let O = (null == l ? true : l.type) != null && N.TPd.GUILD_THREADS_ONLY.has(l.type);
+      let j = (null == l ? true : l.type) != null && N.TPd.GUILD_THREADS_ONLY.has(l.type);
       return (0, r.jsxs)(i.Fragment, {
-        children: [j, G(O ? null : b, w.intl.string(w.t["7Xm5QE"])), (0, r.jsx)(Z.Z.Title, {
-          level: _,
+        children: [O, F(j ? null : b, w.intl.string(w.t["7Xm5QE"])), (0, r.jsx)(Z.Z.Title, {
+          level: C,
           onContextMenu: d,
           onClick: u,
           className: a()({
-            [R.cursorPointer]: s,
-            [R.forumPostTitle]: O,
-            [R.forumPostSidebarTitle]: s && O
+            [M.cursorPointer]: s,
+            [M.forumPostTitle]: j,
+            [M.forumPostSidebarTitle]: s && j
           }),
           children: v
         })]
@@ -276,7 +276,7 @@ function L(e) {
           icon: b,
           "aria-hidden": true
         }) : null, (0, r.jsxs)(Z.Z.Title, {
-          level: _,
+          level: C,
           onContextMenu: d,
           onClick: u,
           children: [null != y ? (0, r.jsxs)(c.nn4, {
@@ -294,7 +294,7 @@ let U = e => {
     channel: a
   } = e, s = (0, o.e7)([x.default], () => x.default.getCurrentUser()), c = (0, o.e7)([x.default], () => x.default.getUser(a.getRecipientId())), u = (0, E.G)(), p = (0, o.e7)([y.Z], () => null != c ? y.Z.getUserProfile(c.id) : null), h = null != p && (null != (t = null == p ? true : p.fetchEndedAt) ? t : 0) > 0;
   return (i.useEffect(() => {
-    (null == s ? true : s.isStaff()) && null != c && !c.isStaff() && (0, _.Z)(c.id, c.getAvatarURL(true, 80), {
+    (null == s ? true : s.isStaff()) && null != c && !c.isStaff() && (0, C.Z)(c.id, c.getAvatarURL(true, 80), {
       dispatchWait: true,
       withMutualGuilds: true,
       withMutualFriendsCount: true
@@ -321,7 +321,7 @@ function B(e, t) {
     case N.d4z.GUILD_VOICE:
     case N.d4z.GUILD_STAGE_VOICE:
     case N.d4z.GROUP_DM:
-      return null != t ? (0, r.jsx)(P.Z, {
+      return null != t ? (0, r.jsx)(I.Z, {
         channel: e,
         guild: t
       }, e.id) : null;
@@ -330,7 +330,7 @@ function B(e, t) {
   }
 }
 
-function G(e, t) {
+function F(e, t) {
   return (0, r.jsxs)(r.Fragment, {
     children: [null !== e && (0, r.jsx)(Z.Z.ChannelIcon, {
       icon: e,
@@ -341,7 +341,7 @@ function G(e, t) {
   })
 }
 
-function H(e) {
+function V(e) {
   let {
     guild: t,
     channel: n,
@@ -355,9 +355,9 @@ function H(e) {
     text: t.name,
     targetElementRef: u,
     position: "bottom",
-    children: e => (0, r.jsxs)(c.P3F, D(M({}, e), {
+    children: e => (0, r.jsxs)(c.P3F, k(R({}, e), {
       onClick: d,
-      className: R.guildBreadcrumbContainer,
+      className: M.guildBreadcrumbContainer,
       children: ["left" === l && (0, r.jsx)(Z.Z.Caret, {
         direction: "left"
       }), (0, r.jsx)("div", {
@@ -365,7 +365,7 @@ function H(e) {
         children: (0, r.jsx)(m.Z, {
           guild: t,
           size: m.Z.Sizes.SMALLER,
-          className: R.guildBreadcrumbIcon,
+          className: M.guildBreadcrumbIcon,
           active: true
         })
       }), "right" === l && (0, r.jsx)(Z.Z.Caret, {

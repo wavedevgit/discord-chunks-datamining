@@ -1,7 +1,7 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 91053 **/
 /** chunk id: 64247, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => d
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -12,19 +12,19 @@ var Chunk481060 = require("./481060.js"),
   Chunk723170 = require("./723170.js"),
   Chunk124368 = require("./124368.js");
 
-function u(e) {
+function d(e) {
   let {
     channel: t,
     closePopout: n,
-    onSelect: u,
-    navId: d,
+    onSelect: d,
+    navId: u,
     label: p
-  } = e, h = (0, l.Z)(t, "Notifications Bell"), f = (0, a.Z)(t), m = (0, s.B)(t);
+  } = e, h = (0, l.Z)(t, "Notifications Bell"), f = (0, a.Z)(t), g = (0, o.B)(t);
   return (0, r.jsxs)(i.v2r, {
-    navId: d,
+    navId: u,
     onClose: n,
     "aria-label": p,
-    onSelect: u,
+    onSelect: d,
     children: [(0, r.jsxs)(i.kSQ, {
       children: [t.isForumPost() ? h : null, f]
     }), (0, r.jsx)(i.kSQ, {
@@ -37,10 +37,10 @@ function u(e) {
           group: "thread-notifications",
           id: "".concat(n),
           label: l,
-          action: () => o.Z.setNotificationSettings(t, {
+          action: () => s.Z.setNotificationSettings(t, {
             flags: n
           }),
-          checked: n === m
+          checked: n === g
         }, n)
       })
     })]

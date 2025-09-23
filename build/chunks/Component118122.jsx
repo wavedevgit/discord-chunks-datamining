@@ -1,4 +1,4 @@
-/** Chunk was on 11160 **/
+/** Chunk was on 89929 **/
 /** chunk id: 118122, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => C
@@ -66,8 +66,8 @@ function C(e) {
     disableTooltip: t,
     lastTargetNode: n
   } = e, a = (0, l.Wu)([h.Z], () => h.Z.getGuildsArray()), C = (0, l.e7)([g.default], () => g.default.getCurrentUser()), E = i.useMemo(() => a.some(e => (0, f.eM)(e, C)), [a, C]), S = (0, o.s9z)(e => (0, o.DEQ)(e, y.PU)), {
-    analyticsLocations: P
-  } = (0, s.ZP)(), I = (0, r.jsx)(b.Z, {
+    analyticsLocations: I
+  } = (0, s.ZP)(), P = (0, r.jsx)(b.Z, {
     showPill: false,
     id: "create-join-button",
     onClick: () => {
@@ -79,7 +79,7 @@ function C(e) {
           page: O.Sbl.CREATE_JOIN_GUILD_MODAL,
           section: O.jXE.GUILD_CAP_UPSELL_MODAL
         },
-        analyticsLocations: P
+        analyticsLocations: I
       }) : c.Z.openCreateGuildModal({
         location: "Guild List"
       })
@@ -89,13 +89,13 @@ function C(e) {
     tooltip: _.intl.string(_.t.l5WIbW),
     icon: o.oFk
   });
-  return t ? I : (0, r.jsx)("div", {
+  return t ? P : (0, r.jsx)("div", {
     className: v.tutorialContainer,
     children: (0, r.jsxs)(p.Z, {
       tutorialId: E ? "create-more-servers" : "create-first-server",
       inlineSpecs: j,
       position: "right",
-      children: [I, null != n && (0, r.jsx)(m.ZP, {
+      children: [P, null != n && (0, r.jsx)(m.ZP, {
         name: _.intl.string(_.t["45xjMz"]),
         targetNode: n,
         below: true,

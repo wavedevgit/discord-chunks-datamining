@@ -1,7 +1,7 @@
 /** Chunk was on 61 **/
 /** chunk id: 377329, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => j
 }), require("./953529.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,72 +19,72 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk492718 = require("./492718.js");
 
-function p(e) {
+function j(e) {
   var t, n;
   let {
-    guildId: p,
+    guildId: j,
     guildEvent: f,
     guildEventId: b,
     error: y
-  } = e, O = l.useMemo(() => (0, x.Gb)(f, p), [f, p]), {
+  } = e, O = l.useMemo(() => (0, m.Gb)(f, j), [f, j]), {
     channel_id: E,
-    name: C,
-    image: N,
+    name: N,
+    image: C,
     description: P
-  } = O, S = (0, i.e7)([c.Z], () => c.Z.getChannel(E), [E]), T = (0, i.e7)([u.Z], () => u.Z.getGuild(p), [p]), Z = (0, g.cS)(O), w = (0, i.e7)([d.default], () => null != f.creatorId ? d.default.getUser(f.creatorId) : d.default.getCurrentUser(), [f.creatorId]), I = (0, i.e7)([o.Z], () => o.Z.isLurking(p), [p]), D = (0, s.KS)(S, T);
+  } = O, S = (0, i.e7)([c.Z], () => c.Z.getChannel(E), [E]), I = (0, i.e7)([u.Z], () => u.Z.getGuild(j), [j]), T = (0, x.cS)(O), w = (0, i.e7)([d.default], () => null != f.creatorId ? d.default.getUser(f.creatorId) : d.default.getCurrentUser(), [f.creatorId]), Z = (0, i.e7)([o.Z], () => o.Z.isLurking(j), [j]), k = (0, s.KS)(S, I);
   return (0, r.jsxs)("div", {
-    className: j.content,
-    children: [(0, r.jsx)(v.Z, {
-      className: j.previewCard,
-      guild: T,
+    className: p.content,
+    children: [(0, r.jsx)(h.Z, {
+      className: p.previewCard,
+      guild: I,
       channel: S,
-      location: null != Z ? Z : true,
+      location: null != T ? T : true,
       creator: w,
-      name: C,
+      name: N,
       description: P,
-      imageSource: (n = (0, x.Gb)(f, p, b), null == N && null == n.image ? null : null != N && /^data:/.test(N) ? N : (0, m.Z)(n)),
+      imageSource: (n = (0, m.Gb)(f, j, b), null == C && null == n.image ? null : null != C && /^data:/.test(C) ? C : (0, g.Z)(n)),
       isActive: false,
-      isUserLurking: I,
+      isUserLurking: Z,
       speakers: [],
       speakerCount: 0,
       rsvped: true,
       guildEvent: O,
       eventPreview: O
     }), (0, r.jsxs)("div", {
-      className: j.textContainer,
+      className: p.textContainer,
       children: [(0, r.jsx)(a.X6q, {
         variant: "heading-xl/semibold",
-        children: h.intl.string(h.t.yBsFEx)
+        children: v.intl.string(v.t.yBsFEx)
       }), (0, r.jsx)(a.Text, {
         color: "text-secondary",
         variant: "text-md/normal",
-        className: j.subheader,
-        children: null != location ? h.intl.string(h.t.KDPFi4) : h.intl.format(h.t.f55NX1, {
+        className: p.subheader,
+        children: null != location ? v.intl.string(v.t.KDPFi4) : v.intl.format(v.t.f55NX1, {
           channelName: null != (t = null == S ? true : S.name) ? t : "",
           channelHook: () => {
             var e;
             return (0, r.jsxs)("div", {
-              className: j.channelName,
-              children: [null != D ? (0, r.jsx)(D, {
+              className: p.channelName,
+              children: [null != k ? (0, r.jsx)(k, {
                 size: "custom",
                 color: "currentColor",
                 width: 20,
                 height: 20,
-                className: j.icon
+                className: p.icon
               }) : (0, r.jsx)(a._tJ, {
                 size: "custom",
                 color: "currentColor",
                 height: 18,
                 width: 18,
-                className: j.locationIcon
-              }), null != (e = null == S ? true : S.name) ? e : Z]
+                className: p.locationIcon
+              }), null != (e = null == S ? true : S.name) ? e : T]
             })
           }
         })
       }), null != y && (0, r.jsx)(a.Text, {
         color: "text-danger",
         variant: "text-xs/normal",
-        className: j.subheader,
+        className: p.subheader,
         children: y.getAnyErrorMessage()
       })]
     })]

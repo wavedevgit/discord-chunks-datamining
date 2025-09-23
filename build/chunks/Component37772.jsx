@@ -1,4 +1,4 @@
-/** Chunk was on 11160 **/
+/** Chunk was on 89929 **/
 /** chunk id: 37772, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => B
@@ -99,7 +99,7 @@ let B = Chunk647438.memo(function e(t) {
     {
       content: er,
       hasSpoilerEmbeds: ei
-    } = (0, P.Z)(s, {
+    } = (0, I.Z)(s, {
       hideSimpleEmbedContent: Q && J,
       allowList: ee,
       allowHeading: ee,
@@ -110,7 +110,7 @@ let B = Chunk647438.memo(function e(t) {
     eo = (0, a.e7)([g.Z], () => s.hasFlag(D.iLy.HAS_THREAD) && g.Z.getChannel(b.default.castMessageIdAsChannelId(s.id))),
     ea = s.type === D.uaV.THREAD_STARTER_MESSAGE && Y.state === f.Y.LOADED && null != q,
     es = !ea && true === i,
-    ec = (0, I.Z)({
+    ec = (0, P.Z)({
       message: s,
       channel: l,
       enabled: es
@@ -136,7 +136,7 @@ let B = Chunk647438.memo(function e(t) {
       [k.groupStart]: t.isGroupStart
     }),
     childrenRepliedMessage: (0, A.Z)(s, l, K, Y, R),
-    childrenHeader: (0, Z.Z)(G(U({}, t), {
+    childrenHeader: (0, w.Z)(G(U({}, t), {
       author: el,
       guildId: l.guild_id
     })),
@@ -165,7 +165,7 @@ let B = Chunk647438.memo(function e(t) {
     }),
     childrenExecutedCommand: (0, T.Z)(s, l, R),
     childrenMessageContent: (0, N.Z)(t, er),
-    childrenSystemMessage: (0, w.Z)(t),
+    childrenSystemMessage: (0, Z.Z)(t),
     onContextMenu: B,
     onClick: V,
     hasThread: false !== z && null != eo && s.hasFlag(D.iLy.HAS_THREAD),

@@ -1,5 +1,6 @@
 /** Chunk was on 63141 **/
 /** chunk id: 178528, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => z
 }), require("./388685.js");
@@ -46,7 +47,7 @@ function A(e, t, n) {
   }) : e[t] = n, e
 }
 
-function M(e) {
+function L(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -58,7 +59,7 @@ function M(e) {
   }
   return e
 }
-class L extends Chunk647438.PureComponent {
+class M extends Chunk647438.PureComponent {
   static getDerivedStateFromProps(e) {
     let {
       guild: t
@@ -136,18 +137,18 @@ class L extends Chunk647438.PureComponent {
       {
         onDragStart: r
       } = require,
-      l = function(e, t) {
+      s = function(e, t) {
         if (null == e) return {};
         var n, i, r = function(e, t) {
           if (null == e) return {};
           var n, i, r = {},
-            l = Object.keys(e);
-          for (i = 0; i < l.length; i++) n = l[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
+            s = Object.keys(e);
+          for (i = 0; i < s.length; i++) n = s[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
           return r
         }(e, t);
         if (Object.getOwnPropertySymbols) {
-          var l = Object.getOwnPropertySymbols(e);
-          for (i = 0; i < l.length; i++) n = l[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
+          var s = Object.getOwnPropertySymbols(e);
+          for (i = 0; i < s.length; i++) n = s[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
         }
         return r
       }(require, ["onDragStart"]),
@@ -176,16 +177,16 @@ class L extends Chunk647438.PureComponent {
           targetElementRef: this.settingsIconRef,
           position: "right",
           renderPopout: this.renderSettings,
-          children: e => (0, i.jsx)(P.ZP.Icon, M({
+          children: e => (0, i.jsx)(P.ZP.Icon, L({
             ref: this.settingsIconRef,
-            icon: s.ewm,
+            icon: l.ewm,
             label: k.intl.string(k.t["3D5yo6"])
           }, e))
         })
       }) : null,
       children: [(0, Chunk951288.jsx)("div", {
         className: Chunk613322.channelList,
-        children: null != Chunk442837 ? (0, Chunk951288.jsx)(Chunk680089, (e = M({}, Chunk401393), t = t = {
+        children: null != Chunk442837 ? (0, Chunk951288.jsx)(Chunk680089, (e = L({}, Chunk401393), t = t = {
           guild: Chunk442837,
           disableManageChannels: true,
           onScroll: null != Chunk442837 && null != Chunk442837.banner ? this.handleScroll : null
@@ -212,7 +213,7 @@ class L extends Chunk647438.PureComponent {
   }
   constructor(...e) {
     super(...e), A(this, "settingsIconRef", r.createRef()), A(this, "state", {
-      controller: new l.Controller({
+      controller: new s.Controller({
         value: 1,
         immediate: true
       }),
@@ -232,7 +233,7 @@ function z(e) {
   var t;
   let {
     guildId: n
-  } = e, r = (0, o.e7)([E.Z], () => E.Z.getGuild(n)), l = (0, o.e7)([_.ZP], () => _.ZP.getChannels(n)), s = (0, o.e7)([v.Z], () => v.Z.getCategories(n)), {
+  } = e, r = (0, o.e7)([E.Z], () => E.Z.getGuild(n)), s = (0, o.e7)([b.ZP], () => b.ZP.getChannels(n)), l = (0, o.e7)([v.Z], () => v.Z.getCategories(n)), {
     mutedChannels: d,
     collapseMuted: u
   } = (0, o.cj)([C.ZP], () => ({
@@ -245,12 +246,12 @@ function z(e) {
       channelId: t
     } = e;
     return t
-  }), w = (0, o.e7)([j.Z], () => j.Z.getVoiceChannelId()), N = (0, o.e7)([S.Z], () => S.Z.getGuildVersion(n)), D = (0, o.e7)([m.Z], () => m.Z.version), k = (0, o.e7)([b.default], () => b.default.getGuildChangeSentinel(n)), R = (0, a.QN)(null == r ? true : r.id), A = (0, c.gM)(null == r ? true : r.id), M = null != (t = null == r ? true : r.features.has(T.oNc.COMMUNITY)) && t, z = (0, o.e7)([Z.Z], () => Z.Z.getChannelId()), V = (0, o.e7)([x.Z], () => x.Z.desyncedVoiceStatesCount);
-  return (0, i.jsx)(L, {
+  }), w = (0, o.e7)([j.Z], () => j.Z.getVoiceChannelId()), N = (0, o.e7)([x.Z], () => x.Z.getGuildVersion(n)), D = (0, o.e7)([m.Z], () => m.Z.version), k = (0, o.e7)([_.default], () => _.default.getGuildChangeSentinel(n)), R = (0, a.QN)(null == r ? true : r.id), A = (0, c.gM)(null == r ? true : r.id), L = null != (t = null == r ? true : r.features.has(T.oNc.COMMUNITY)) && t, z = (0, o.e7)([Z.Z], () => Z.Z.getChannelId()), V = (0, o.e7)([S.Z], () => S.Z.desyncedVoiceStatesCount);
+  return (0, i.jsx)(M, {
     guildId: n,
     guild: r,
-    channels: l,
-    categories: s,
+    channels: s,
+    categories: l,
     mutedChannels: d,
     scrollToChannel: f,
     selectedChannelId: P,
@@ -265,7 +266,7 @@ function z(e) {
     categoryCollapseVersion: D,
     embeddedAppsByChannel: R,
     activeEventsByChannel: A,
-    showNewUnreadsBar: M,
+    showNewUnreadsBar: L,
     optInEnabled: false
   })
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 10576 **/
+/** Chunk was on 66201 **/
 /** chunk id: 994463, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk525654 = require("./525654.js"),
-  a = require.n(Chunk525654),
+  s = require.n(Chunk525654),
   Chunk748780 = require("./748780.js"),
   Chunk654339 = require("./654339.js");
 
@@ -39,7 +39,7 @@ class E extends Chunk647438.Component {
       x: e,
       y: t
     } = this.state;
-    "Firefox" !== a().name && (Chunk748780.Z.animate(module, {
+    "Firefox" !== s().name && (Chunk748780.Z.animate(module, {
       loop: true,
       toValueMin: false,
       toValueMax: 95,
@@ -394,8 +394,8 @@ class E extends Chunk647438.Component {
   }
   constructor(...e) {
     super(...e), u(this, "state", {
-      x: new s.Z.Value(0),
-      y: new s.Z.Value(0)
+      x: new a.Z.Value(0),
+      y: new a.Z.Value(0)
     }), u(this, "_isMounted", false), u(this, "shouldLoop", () => this._isMounted)
   }
 }

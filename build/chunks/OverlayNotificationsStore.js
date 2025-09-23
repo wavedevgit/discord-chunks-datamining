@@ -1,10 +1,11 @@
 /** Chunk was on 63141 **/
 /** chunk id: 261435, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => eo
 }), require("./388685.js"), require("./539854.js");
 var i, Chunk512722 = require("./512722.js"),
-  l = require.n(Chunk512722),
+  s = require.n(Chunk512722),
   Chunk772848 = require("./772848.js"),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -81,52 +82,52 @@ function Y(e, t) {
 }
 let K = 5 * Chunk70956.Z.Millis.SECOND,
   X = 8 * Chunk70956.Z.Millis.SECOND,
-  Q = 30 * Chunk70956.Z.Millis.SECOND,
-  q = Object.freeze({
+  J = 30 * Chunk70956.Z.Millis.SECOND,
+  Q = Object.freeze({
     priority: 0,
     duration: K,
     expirationExternallyManaged: false,
     type: 0
   }),
-  J = [],
+  q = [],
   $ = (e, t, n) => {
-    let i = t ? U._1z.TIMED_OUT : U._1z.DISMISSED;
+    let i = t ? W._1z.TIMED_OUT : W._1z.DISMISSED;
     return setTimeout(() => c.Z.updateNotificationStatus(e, i), null != n ? n : K)
   };
 
 function ee(e) {
-  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : U._1z.DISMISSED;
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : W._1z.DISMISSED;
   if (null == e) returnfalse;
-  let n = J.findIndex(t => t.id === e);
+  let n = q.findIndex(t => t.id === e);
   if (false === n) returnfalse;
-  let i = J[n];
-  clearTimeout(i.timerId), J = [...J], t === U._1z.DISMISSED ? J.splice(n, 1) : J[n] = Y(F({}, i), {
+  let i = q[n];
+  clearTimeout(i.timerId), q = [...q], t === W._1z.DISMISSED ? q.splice(n, 1) : q[n] = Y(F({}, i), {
     status: t
   })
 }
 
 function et(e) {
-  let t = J.length;
-  return (J = J.filter(t => 1 !== t.type || t.channelId !== e)).length !== t
+  let t = q.length;
+  return (q = q.filter(t => 1 !== t.type || t.channelId !== e)).length !== t
 }
 
 function en(e) {
-  let t = J.find(t => 2 === t.type && t.channelId === e);
+  let t = q.find(t => 2 === t.type && t.channelId === e);
   return null != t ? t.id : null
 }
 
 function ei(e, t) {
-  let n = F({}, q, t);
-  if (2 !== n.priority && !M.default.isInstanceFocused()) return null;
+  let n = F({}, Q, t);
+  if (2 !== n.priority && !L.default.isInstanceFocused()) return null;
   let i = (0, o.Z)(),
     r = F({
       id: i,
-      status: U._1z.ACTIVE,
+      status: W._1z.ACTIVE,
       timerId: $(i, n.expirationExternallyManaged, n.duration),
       props: e
     }, n),
-    l = (J = [...J]).findIndex(e => e.priority <= n.priority);
-  return false === l ? J.push(r) : J.splice(l, 0, r), J.length > 10 && clearTimeout(J.pop().timerId), i
+    s = (q = [...q]).findIndex(e => e.priority <= n.priority);
+  return false === s ? q.push(r) : q.splice(s, 0, r), q.length > 10 && clearTimeout(q.pop().timerId), i
 }
 
 function er(e) {
@@ -140,25 +141,25 @@ function er(e) {
   if (null == r || !r.isRingable() || "GUILD_RING_START" === e.type && !j.Z.getCurrentConfig({
       guildId: e.guildId,
       location: "OverlayStartRinging"
-    }).enabled || T.Z.getStatus() === U.Skl.DND || Z.QZ.getSetting()) returnfalse;
-  let l = J.find(e => 1 === e.type && e.channelId === t && e.messageType === U.uaV.CALL);
-  null != l && ee(l.id), ei((0, p.Z)(r), {
+    }).enabled || T.Z.getStatus() === W.Skl.DND || Z.QZ.getSetting()) returnfalse;
+  let s = q.find(e => 1 === e.type && e.channelId === t && e.messageType === W.uaV.CALL);
+  null != s && ee(s.id), ei((0, p.Z)(r), {
     priority: 1,
     expirationExternallyManaged: true,
     type: 2,
     channelId: r.id
   })
 }
-class el extends(i = Chunk442837.ZP.Store) {
+class es extends(i = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk237997.default, Chunk592125.Z, Chunk594174.default, Chunk624864.Z)
   }
   getNotifications() {
-    return J
+    return q
   }
 }
-H(el, "displayName", "OverlayNotificationsStore");
-let eo = new el(Chunk570140.Z, !__OVERLAY__ ? {} : {
+H(es, "displayName", "OverlayNotificationsStore");
+let eo = new es(Chunk570140.Z, !__OVERLAY__ ? {} : {
   OVERLAY_UPDATE_NOTIFICATION_STATUS: function(e) {
     let {
       notificationId: t,
@@ -171,7 +172,7 @@ let eo = new el(Chunk570140.Z, !__OVERLAY__ ? {} : {
     let {
       nudges: n
     } = e;
-    if (S.default.hasChangedRenderMode(null != (t = A.default.getFocusedPID()) ? t : (0, V.getPID)())) return;
+    if (x.default.hasChangedRenderMode(null != (t = A.default.getFocusedPID()) ? t : (0, V.getPID)())) return;
     let i = function(e) {
       switch (e.type) {
         case G.nc.OOP_WELCOME:
@@ -196,7 +197,7 @@ let eo = new el(Chunk570140.Z, !__OVERLAY__ ? {} : {
       locked: t
     } = e;
     if (t) returnfalse;
-    J = J.map(e => e.status === U._1z.ACTIVE ? (clearTimeout(e.timerId), Y(F({}, e), {
+    q = q.map(e => e.status === W._1z.ACTIVE ? (clearTimeout(e.timerId), Y(F({}, e), {
       timerId: $(e.id, e.expirationExternallyManaged)
     })) : e)
   },
@@ -205,39 +206,39 @@ let eo = new el(Chunk570140.Z, !__OVERLAY__ ? {} : {
     let {
       channelId: r,
       message: o
-    } = e, s = I.Z.getChannel(r), a = k.default.getUser(null == (t = o.author) ? true : t.id);
-    if (null == s || null == a) returnfalse;
-    if ((null == (n = o.activity) ? true : n.type) === U.mFx.JOIN || (null == (i = o.activity) ? true : i.type) === U.mFx.JOIN_REQUEST) {
-      if (!(0, _.eF)(o, r, true, true)) returnfalse;
+    } = e, l = I.Z.getChannel(r), a = k.default.getUser(null == (t = o.author) ? true : t.id);
+    if (null == l || null == a) returnfalse;
+    if ((null == (n = o.activity) ? true : n.type) === W.mFx.JOIN || (null == (i = o.activity) ? true : i.type) === W.mFx.JOIN_REQUEST) {
+      if (!(0, b.eF)(o, r, true, true)) returnfalse;
       let e = function(e, t, n) {
         let i, r;
-        if (l()(null != t.activity, "received null message activity"), n.id === C.default.getId()) returnfalse;
-        let o = W.Z.getGame();
+        if (s()(null != t.activity, "received null message activity"), n.id === C.default.getId()) returnfalse;
+        let o = U.Z.getGame();
         if (null == o) returnfalse;
         switch (t.activity.type) {
-          case U.mFx.JOIN:
+          case W.mFx.JOIN:
             if (null == (i = w.Z.getApplicationActivity(n.id, o.id)) || null == i.party || i.party.id !== t.activity.party_id) returnfalse;
             r = (0, d.Z)(e, t, n, o, i);
             break;
-          case U.mFx.JOIN_REQUEST:
+          case W.mFx.JOIN_REQUEST:
             if (null == (i = T.Z.getApplicationActivity(o.id)) || null == i.party || i.party.id !== t.activity.party_id) returnfalse;
             r = (0, g.Z)(e, n, o, i)
         }
         if (null == r) returnfalse;
-        let s = ei(r, {
+        let l = ei(r, {
           priority: 2,
           expirationExternallyManaged: true,
           channelId: e.id
         });
-        return null != s && $(s, false, Q), true
-      }(s, o, a);
+        return null != l && $(l, false, J), true
+      }(l, o, a);
       if (false !== e) return e
     }
-    if ((!M.default.isInstanceLocked() || M.default.isPinned(U.Odu.TEXT)) && r === N.Z.getChannelId() || x.Z.isNotificationDisabled(b.OverlayNotificationDisabledSetting.TEXT_CHAT) || D.Z.disableNotifications || !(0, _.eF)(o, r)) returnfalse;
+    if ((!L.default.isInstanceLocked() || L.default.isPinned(W.Odu.TEXT)) && r === N.Z.getChannelId() || S.Z.isNotificationDisabled(_.OverlayNotificationDisabledSetting.TEXT_CHAT) || D.Z.disableNotifications || !(0, b.eF)(o, r)) returnfalse;
     let c = !P.Z.isSoundDisabled(R.Ay);
-    ei((0, m.Z)(s, o, a, c), {
+    ei((0, m.Z)(l, o, a, c), {
       type: 1,
-      channelId: s.id,
+      channelId: l.id,
       messageType: o.type
     })
   },
@@ -280,8 +281,8 @@ let eo = new el(Chunk570140.Z, !__OVERLAY__ ? {} : {
         user: i,
         applicationId: r
       } = e,
-      l = W.Z.getGame();
-    return null != l && l.id === r && (n === U.mFx.JOIN && (t = (0, u.Z)(i, l)), null != t && void ei(t, {
+      s = U.Z.getGame();
+    return null != s && s.id === r && (n === W.mFx.JOIN && (t = (0, u.Z)(i, s)), null != t && void ei(t, {
       priority: 2,
       type: 0
     }))

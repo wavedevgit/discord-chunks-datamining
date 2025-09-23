@@ -1,7 +1,7 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 21616 **/
 /** chunk id: 890977, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  b: () => _
+  b: () => C
 }), require("./49124.js");
 var r, i, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -51,7 +51,7 @@ function y(e) {
     className: s()(m.trinkets, t)
   })
 }
-let _ = e => {
+let C = e => {
   let {
     children: t,
     animationContainerClassName: n,

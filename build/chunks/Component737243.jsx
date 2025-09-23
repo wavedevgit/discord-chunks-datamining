@@ -1,4 +1,4 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 21616 **/
 /** chunk id: 737243, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -22,16 +22,16 @@ let h = Chunk647438.memo(function(e) {
     interactionUsernameProfile: g,
     interactionAvatarProfile: b,
     interactionData: y,
-    referencedUsernameProfile: _,
-    referencedAvatarProfile: C,
+    referencedUsernameProfile: C,
+    referencedAvatarProfile: _,
     setPopout: v
   } = e, {
     isInteractionUserBlocked: x,
-    isInteractionUserIgnored: j
+    isInteractionUserIgnored: O
   } = (0, l.cj)([c.Z], () => ({
     isInteractionUserBlocked: c.Z.isBlockedForMessage(h),
     isInteractionUserIgnored: c.Z.isIgnoredForMessage(h)
-  }), [h]), O = (0, l.e7)([s.Z], () => s.Z.getMessageByReference(null == h ? true : h.messageReference)), E = (0, d.wq)(null == (t = h.interaction) ? true : t.user.id, f.id), S = (0, d.Nk)(h.interaction, f, g, v), I = (0, d.NU)(b, v), P = (0, o.t0)(h), Z = (null == P ? true : P.type) === a.B8.APPLICATION_COMMAND ? null == (n = P.target_user) ? true : n.id : true, T = (0, d.wq)(Z, f.id), N = (0, d.JC)(Z, f, _, v), A = (0, d.rY)(C, v), w = (0, d.Xn)(y, v), R = i.useCallback(() => {
+  }), [h]), j = (0, l.e7)([s.Z], () => s.Z.getMessageByReference(null == h ? true : h.messageReference)), E = (0, d.wq)(null == (t = h.interaction) ? true : t.user.id, f.id), S = (0, d.Nk)(h.interaction, f, g, v), P = (0, d.NU)(b, v), I = (0, o.t0)(h), Z = (null == I ? true : I.type) === a.B8.APPLICATION_COMMAND ? null == (n = I.target_user) ? true : n.id : true, T = (0, d.wq)(Z, f.id), N = (0, d.JC)(Z, f, C, v), A = (0, d.rY)(_, v), w = (0, d.Xn)(y, v), M = i.useCallback(() => {
     v({
       interactionUsernameProfile: false,
       interactionAvatarProfile: false,
@@ -39,38 +39,38 @@ let h = Chunk647438.memo(function(e) {
       referencedUsernameProfile: false,
       referencedAvatarProfile: false
     })
-  }, [v]), M = i.useCallback(() => (0, p.Z)({
+  }, [v]), R = i.useCallback(() => (0, p.Z)({
     message: h,
     channel: f,
     compact: m,
     setPopout: v,
-    referencedAvatarProfile: C,
-    referencedUsernameProfile: _,
+    referencedAvatarProfile: _,
+    referencedUsernameProfile: C,
     replyReference: h.messageReference,
-    replyMessage: O,
+    replyMessage: j,
     isReplySpineClickable: false,
     showReplySpine: false
-  }), [f, m, h, C, O, _, v]);
+  }), [f, m, h, _, j, C, v]);
   return (0, r.jsx)(u.Z, {
     message: h,
     channel: f,
     compact: m,
     isInteractionUserBlocked: x,
-    isInteractionUserIgnored: j,
+    isInteractionUserIgnored: O,
     showAvatarPopout: b,
     showUsernamePopout: g,
     showDataPopout: y,
-    showTargetAvatarPopout: C,
-    showTargetUsernamePopout: _,
-    onClickAvatar: I,
+    showTargetAvatarPopout: _,
+    showTargetUsernamePopout: C,
+    onClickAvatar: P,
     onClickUsername: S,
     onClickCommand: w,
     onUserContextMenu: E,
     onClickTargetAvatar: A,
     onClickTargetUsername: N,
     onTargetUserContextMenu: T,
-    onPopoutRequestClose: R,
-    renderTargetMessage: M
+    onPopoutRequestClose: M,
+    renderTargetMessage: R
   })
 });
 

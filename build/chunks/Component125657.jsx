@@ -1,4 +1,4 @@
-/** Chunk was on 47463 **/
+/** Chunk was on 58511 **/
 /** chunk id: 125657, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -34,7 +34,7 @@ function j(e) {
   r.useEffect(() => {
     null != N && s.Z.requestMembersById(n.id, N)
   }, [n.id, N]);
-  let S = r.useMemo(() => l.$e(_.permissions, ...C.map(e => e.permissions)), [C, _]);
+  let w = r.useMemo(() => l.$e(_.permissions, ...C.map(e => e.permissions)), [C, _]);
   return null == y ? null : (0, i.jsx)(o.Zbd, {
     editable: true,
     className: x.card,
@@ -84,7 +84,7 @@ function j(e) {
             disabledPermissionsHeader: h.intl.string(h.t["/rEZ2t"])
           }) : null]
         })
-      }(y, n, null != (t = null == O ? true : O.roles) ? t : [], S)]
+      }(y, n, null != (t = null == O ? true : O.roles) ? t : [], w)]
     })
   })
 }

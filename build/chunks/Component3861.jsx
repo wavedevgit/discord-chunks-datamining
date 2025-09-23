@@ -1,4 +1,4 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 21616 **/
 /** chunk id: 3861, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -24,51 +24,51 @@ let y = (0, Chunk112724.Z)(e => {
     filteredParticipants: n,
     selectedParticipant: l,
     participantsVersion: y,
-    layout: _,
-    onSelectParticipant: C,
+    layout: C,
+    onSelectParticipant: _,
     onContextMenuParticipant: v,
     onFullscreenParticipant: x,
-    channel: j,
-    hasConnectPermission: O,
+    channel: O,
+    hasConnectPermission: j,
     className: E,
     inCall: S,
-    showParticipants: I = true,
-    width: P,
+    showParticipants: P = true,
+    width: I,
     height: Z,
     idle: T,
     mode: N,
     popoutWindow: A,
     awaitingRemoteSessionInfo: w,
-    callContainerDimensions: R
+    callContainerDimensions: M
   } = e;
   i.useEffect(() => {
     c.S.dispatch(m.CkL.REMEASURE_TARGET)
-  }, [P, Z, R.width, R.height]);
-  let M = i.useMemo(() => n.filter(e => e.type !== g.fO.ACTIVITY || !e.participants.some(e => (0, a.J)(e))), [n, y]);
-  return (null == w ? true : w.channelId) === j.id ? (0, r.jsx)(d.Z, {
+  }, [I, Z, M.width, M.height]);
+  let R = i.useMemo(() => n.filter(e => e.type !== g.fO.ACTIVITY || !e.participants.some(e => (0, a.J)(e))), [n, y]);
+  return (null == w ? true : w.channelId) === O.id ? (0, r.jsx)(d.Z, {
     height: Z
-  }) : (null == j ? true : j.isGuildVocal()) && !S ? (0, r.jsx)(u.Z, {
-    channel: j,
+  }) : (null == O ? true : O.isGuildVocal()) && !S ? (0, r.jsx)(u.Z, {
+    channel: O,
     participants: t,
-    hasConnectPermission: O
+    hasConnectPermission: j
   }) : N === m.WtW.VOICE ? (0, r.jsx)(o.Z, {
-    guildId: j.guild_id,
-    width: P,
+    guildId: O.guild_id,
+    width: I,
     className: b.voiceCallWrapper,
     participants: t,
     onContextMenu: v
   }) : (n = S ? n : t, null == l) ? 0 === n.length ? (0, r.jsx)(f.Z, {
-    channelId: j.id
+    channelId: O.id
   }) : (0, r.jsx)(s.Z, {
     className: b.videoGridWrapper,
     justify: s.Z.Justify.CENTER,
     align: s.Z.Align.CENTER,
     children: (0, r.jsx)(p.Z, {
-      channel: j,
+      channel: O,
       className: b.videoGrid,
-      participants: M,
+      participants: R,
       totalNumberOfParticipants: t.length,
-      onClick: C,
+      onClick: _,
       onDoubleClick: x,
       onContextMenu: v,
       inCall: S
@@ -76,18 +76,18 @@ let y = (0, Chunk112724.Z)(e => {
   }) : (0, r.jsx)(h.Z, {
     onFullscreenParticipant: x,
     onContextMenuParticipant: v,
-    onSelectParticipant: C,
+    onSelectParticipant: _,
     selectedParticipant: l,
-    filteredParticipants: M,
+    filteredParticipants: R,
     participants: t,
     popoutWindow: A,
     className: E,
     idle: T,
     height: Z,
-    width: P,
-    layout: _,
+    width: I,
+    layout: C,
     inCall: S,
-    channel: j,
-    showParticipants: I
+    channel: O,
+    showParticipants: P
   })
 })

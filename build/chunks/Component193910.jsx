@@ -1,4 +1,4 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 21616 **/
 /** chunk id: 193910, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => A
@@ -48,7 +48,7 @@ function N() {
         visibleContent: t
       } = e;
       return t === o.z.ACTIVITIES_CHAT_MENU_NEW_BADGE ? (0, r.jsx)(s.IGR, {
-        text: P.intl.string(P.t.y2b7CA),
+        text: I.intl.string(I.t.y2b7CA),
         color: l.Z.BUTTON_DANGER_BACKGROUND
       }) : null
     }
@@ -64,12 +64,12 @@ function A(e) {
     onSelect: y,
     draftType: A,
     editorTextContent: w,
-    setValue: R,
-    openClips: M
+    setValue: M,
+    openClips: R
   } = e, {
-    analyticsLocations: D,
-    newestAnalyticsLocation: k
-  } = (0, d.ZP)(), L = (0, g.Dt)({
+    analyticsLocations: k,
+    newestAnalyticsLocation: L
+  } = (0, d.ZP)(), D = (0, g.Dt)({
     channel: t
   });
 
@@ -78,14 +78,14 @@ function A(e) {
   }
 
   function B() {
-    _.default.track(E.rMx.CHANNEL_ATTACH_MENU_USE_APPS_CLICKED), R("/", (0, j.JM)("/"))
+    C.default.track(E.rMx.CHANNEL_ATTACH_MENU_USE_APPS_CLICKED), M("/", (0, O.JM)("/"))
   }
 
-  function G() {
-    M()
+  function F() {
+    R()
   }
 
-  function H() {
+  function V() {
     (0, h.Q3)(o.z.POLLS_CHAT_INPUT_COACHMARK, {
       dismissAction: S.L.TAKE_ACTION
     }), (0, s.ZDy)(async () => {
@@ -125,12 +125,12 @@ function A(e) {
         }), i))
       }
     }, {
-      modalKey: I.$z
+      modalKey: P.$z
     })
   }
 
-  function F() {
-    _.default.track(E.rMx.CHANNEL_ATTACH_MENU_START_ACTIVITY_CLICKED, {
+  function H() {
+    C.default.track(E.rMx.CHANNEL_ATTACH_MENU_START_ACTIVITY_CLICKED, {
       channel_type: t.type,
       channel_id: t.id,
       guild_id: t.guild_id
@@ -142,24 +142,24 @@ function A(e) {
         type: "contextless"
       },
       openInPopout: false,
-      analyticsLocation: k
+      analyticsLocation: L
     }), (0, u.w1)({
       guildId: t.guild_id
     })
   }
-  async function V() {
+  async function G() {
     let e = w,
       n = "txt",
       r = "",
       i = w.match(T);
     null != i && (r = i[1], n = i[2], e = i[3], r += i[4]), await (0, x.d5)([(0, v.dp)(new Blob([e], {
       type: "text/plain"
-    }), "message.".concat(n), "text/plain")], t, A), C.S.dispatchToLastSubscribed(E.CkL.CLEAR_TEXT), "" !== r && C.S.dispatchToLastSubscribed(E.CkL.INSERT_TEXT, {
+    }), "message.".concat(n), "text/plain")], t, A), _.S.dispatchToLastSubscribed(E.CkL.CLEAR_TEXT), "" !== r && _.S.dispatchToLastSubscribed(E.CkL.INSERT_TEXT, {
       plainText: r
     })
   }
   return i.useEffect(() => {
-    _.default.track(E.rMx.OPEN_POPOUT, {
+    C.default.track(E.rMx.OPEN_POPOUT, {
       type: "Send Attachment",
       channel_id: t.id,
       guild_id: t.guild_id
@@ -168,7 +168,7 @@ function A(e) {
     onSelect: y,
     navId: "channel-attach",
     onClose: m,
-    "aria-label": P.intl.string(P.t.Xm41aW),
+    "aria-label": I.intl.string(I.t.Xm41aW),
     className: Z.menu,
     children: a.map(function(e) {
       var n;
@@ -187,32 +187,32 @@ function A(e) {
         })]
       });
       switch (e.type) {
-        case O.r.UPLOAD_A_FILE:
+        case j.r.UPLOAD_A_FILE:
           return (0, r.jsx)(s.sNh, {
             id: "upload-file",
             label: i,
             action: f
           }, "upload-file");
-        case O.r.UPLOAD_TEXT_AS_FILE:
+        case j.r.UPLOAD_TEXT_AS_FILE:
           if ("" === w) return null;
           return (0, r.jsx)(s.sNh, {
             id: "upload-text-as-file",
             label: i,
-            action: V
+            action: G
           }, "upload-text-as-file");
-        case O.r.CLIPS:
+        case j.r.CLIPS:
           return (0, r.jsx)(s.sNh, {
             id: "clips",
             label: i,
-            action: G
+            action: F
           }, "clips");
-        case O.r.POLL:
+        case j.r.POLL:
           return (0, r.jsx)(s.sNh, {
             id: "poll",
             label: i,
-            action: H
+            action: V
           }, "poll");
-        case O.r.INVITE_TO_PLAY_GAME:
+        case j.r.INVITE_TO_PLAY_GAME:
           return (0, r.jsx)(s.sNh, {
             id: "play",
             label: i,
@@ -222,11 +222,11 @@ function A(e) {
                 channelId: t.id,
                 type: E.mFx.JOIN,
                 activity: n,
-                location: D[D.length - 1]
+                location: k[k.length - 1]
               })
             }
           }, "play");
-        case O.r.INVITE_TO_LISTEN:
+        case j.r.INVITE_TO_LISTEN:
           return (0, r.jsx)(s.sNh, {
             id: "listen",
             label: i,
@@ -236,11 +236,11 @@ function A(e) {
                 channelId: t.id,
                 type: E.mFx.LISTEN,
                 activity: n,
-                location: D[D.length - 1]
+                location: k[k.length - 1]
               })
             }
           }, "listen");
-        case O.r.INVITE_TO_WATCH:
+        case j.r.INVITE_TO_WATCH:
           return (0, r.jsx)(s.sNh, {
             id: "watch",
             label: i,
@@ -250,37 +250,37 @@ function A(e) {
                 channelId: t.id,
                 type: E.mFx.WATCH,
                 activity: n,
-                location: D[D.length - 1]
+                location: k[k.length - 1]
               })
             }
           }, "watch");
-        case O.r.CREATE_THREAD:
+        case j.r.CREATE_THREAD:
           return (0, r.jsx)(s.sNh, {
             id: "THREAD",
             label: i,
             action: U
           }, "THREAD");
-        case O.r.SLASH_COMMAND:
+        case j.r.SLASH_COMMAND:
           return (0, r.jsx)(s.sNh, {
             id: "SLASH_COMMAND",
             label: i,
             action: B
           }, "SLASH_COMMAND");
-        case O.r.ACTIVITY:
+        case j.r.ACTIVITY:
           return (0, r.jsx)(s.sNh, {
             id: "activity",
             label: i,
-            action: F,
+            action: H,
             hint: (0, r.jsx)(N, {})
           }, "activity");
-        case O.r.SCHEDULED_MESSAGE:
+        case j.r.SCHEDULED_MESSAGE:
           return (0, r.jsx)(s.sNh, {
             id: "scheduled_message",
             label: i,
             action: () => (0, g.$f)({
               channel: t
             }),
-            children: L
+            children: D
           }, "scheduled_message");
         default:
           return null

@@ -1,4 +1,4 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 91053 **/
 /** chunk id: 402130, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk983559 = require("./983559.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,9 +39,9 @@ function g(e) {
 function b(e) {
   let {
     channel: t
-  } = e, [n] = t.recipients, b = (0, l.e7)([o.default], () => o.default.getUser(n)), y = (0, l.e7)([o.default], () => o.default.getCurrentUser()), _ = (0, u.Z)(), [C, v] = (0, c.Z)(n);
+  } = e, [n] = t.recipients, b = (0, l.e7)([s.default], () => s.default.getUser(n)), y = (0, l.e7)([s.default], () => s.default.getCurrentUser()), _ = (0, d.Z)(), [O, j] = (0, c.Z)(n);
   if (i.useEffect(() => {
-      (0, d.Z)(null != b ? b : n, {
+      (0, u.Z)(null != b ? b : n, {
         type: "sidebar",
         withMutualFriendsCount: (null == b ? true : b.bot) !== true,
         withMutualFriends: false,
@@ -50,26 +50,26 @@ function b(e) {
       })
     }, [b, n, t.id]), null == b || null == y || !_) return null;
   let x = "user-profile-sidebar-heading-".concat(b.id),
-    j = s.ZP.getName(null, t.id, b);
+    v = o.ZP.getName(null, t.id, b);
   return (0, r.jsx)("aside", {
     "aria-labelledby": x,
     children: (0, r.jsx)(a.y5t, {
       component: (0, r.jsx)(a.nn4, {
         children: (0, r.jsx)(a.H, {
           id: x,
-          children: m.intl.format(m.t.KRe1Fh, {
-            name: j
+          children: g.intl.format(g.t.KRe1Fh, {
+            name: v
           })
         })
       }),
-      children: C ? (0, r.jsx)(h.Z, g({
+      children: O ? (0, r.jsx)(h.Z, m({
         user: b,
         currentUser: y,
-        onHide: v
-      }, e)) : b.isNonUserBot() ? (0, r.jsx)(p.Z, g({
+        onHide: j
+      }, e)) : b.isNonUserBot() ? (0, r.jsx)(p.Z, m({
         user: b,
         currentUser: y
-      }, e)) : (0, r.jsx)(f.Z, g({
+      }, e)) : (0, r.jsx)(f.Z, m({
         user: b,
         currentUser: y
       }, e))

@@ -1,7 +1,7 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 91053 **/
 /** chunk id: 252132, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => o
+  Z: () => s
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -9,27 +9,27 @@ var Chunk27457 = require("./27457.jsx"),
   Chunk131951 = require("./131951.js"),
   Chunk441997 = require("./441997.js");
 
-function o(e) {
+function s(e) {
   var {
     aspectRatio: t,
     blocked: n,
-    ignored: o,
-    channel: s,
+    ignored: s,
+    channel: o,
     className: c,
-    focused: u,
-    children: d,
+    focused: d,
+    children: u,
     inCall: p,
     inPopout: h,
     noBorder: f,
-    onClick: m,
-    onContextMenu: g,
+    onClick: g,
+    onContextMenu: m,
     onDoubleClick: b,
     onVideoResize: y,
     paused: _,
-    pulseSpeakingIndicator: C,
-    participant: v,
+    pulseSpeakingIndicator: O,
+    participant: j,
     width: x
-  } = e, j = function(e, t) {
+  } = e, v = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -44,7 +44,7 @@ function o(e) {
     }
     return i
   }(e, ["aspectRatio", "blocked", "ignored", "channel", "className", "focused", "children", "inCall", "inPopout", "noBorder", "onClick", "onContextMenu", "onDoubleClick", "onVideoResize", "paused", "pulseSpeakingIndicator", "participant", "width"]);
-  let O = l.Z.getVideoComponent();
+  let C = l.Z.getVideoComponent();
   return (0, r.jsx)("div", {
     style: {
       width: x
@@ -74,23 +74,23 @@ function o(e) {
         return e
       }({
         blocked: n,
-        ignored: o,
-        channel: s,
+        ignored: s,
+        channel: o,
         className: c,
-        focused: u,
+        focused: d,
         inCall: p,
         inPopout: h,
         noBorder: f,
-        onClick: m,
-        onContextMenu: g,
+        onClick: g,
+        onContextMenu: m,
         onDoubleClick: b,
         onVideoResize: y,
-        participant: v,
+        participant: j,
         paused: _,
-        pulseSpeakingIndicator: C,
-        videoComponent: O,
+        pulseSpeakingIndicator: O,
+        videoComponent: C,
         width: x
-      }, j)), d]
+      }, v)), u]
     })
   })
 }

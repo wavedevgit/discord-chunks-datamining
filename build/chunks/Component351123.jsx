@@ -44,7 +44,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk411851 = require("./411851.js");
 
-function H(e) {
+function U(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -85,7 +85,7 @@ function W(e) {
     getRemoveTooltipHint: a
   } = e;
   return (0, i.jsx)(d.aVo, {
-    className: U.roleMemberList,
+    className: H.roleMemberList,
     sections: [n.length, l.length],
     renderRow: function(e) {
       let c, g, j, {
@@ -96,22 +96,22 @@ function W(e) {
       switch (v) {
         case D.m$.ROLES:
           var S;
-          j = (g = n[y]).rowType === D.aC.ROLE && (null == (S = g.tags) ? true : S.guild_connections) === null ? (0, i.jsx)(x.Z, {
-            className: U.shield,
+          j = (g = n[y]).rowType === D.aC.ROLE && (null == (S = g.tags) ? true : S.guild_connections) === null ? (0, i.jsx)(b.Z, {
+            className: H.shield,
             color: g.colorString,
             size: 20
           }) : (0, i.jsx)(d.lZ8, {
             size: "custom",
-            className: U.shield,
+            className: H.shield,
             color: g.colorString,
             height: 20
           }), c = (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("div", {
-              className: U.rowHeight,
+              className: H.rowHeight,
               children: j
             }), (0, i.jsx)(d.Text, {
               variant: "text-sm/normal",
-              className: U.rowLabel,
+              className: H.rowLabel,
               color: g.disabled ? "text-muted" : "text-default",
               children: g.name
             })]
@@ -124,15 +124,15 @@ function W(e) {
               size: d.EFr.SIZE_24,
               "aria-hidden": true
             }), (0, i.jsx)(d.Text, {
-              className: U.rowLabel,
+              className: H.rowLabel,
               variant: "text-sm/normal",
               children: g.name
             }), g.bot && (0, i.jsx)(f.Z, {
               verified: g.verifiedBot,
-              className: U.rowBotTag
+              className: H.rowBotTag
             }), null != g.nickname && (0, i.jsx)(d.Text, {
               color: "text-muted",
-              className: U.rowLabelSubText,
+              className: H.rowLabelSubText,
               variant: "text-sm/normal",
               children: g.username
             })]
@@ -142,15 +142,15 @@ function W(e) {
           g = null
       }
       if (null == g) return null;
-      let O = !N && null == r && null != g.id;
-      return (0, i.jsxs)(b.Z, {
-        justify: b.Z.Justify.BETWEEN,
-        align: b.Z.Align.CENTER,
-        className: U.memberRow,
-        children: [(0, i.jsx)(b.Z, {
-          justify: b.Z.Justify.START,
-          align: b.Z.Align.CENTER,
-          className: U.__invalid_memberRowBody,
+      let E = !N && null == r && null != g.id;
+      return (0, i.jsxs)(x.Z, {
+        justify: x.Z.Justify.BETWEEN,
+        align: x.Z.Align.CENTER,
+        className: H.memberRow,
+        children: [(0, i.jsx)(x.Z, {
+          justify: x.Z.Justify.START,
+          align: x.Z.Align.CENTER,
+          className: H.__invalid_memberRowBody,
           children: c
         }), (0, i.jsx)(d.Text, {
           color: "text-muted",
@@ -162,7 +162,7 @@ function W(e) {
           children: (0, i.jsx)(d.P3F, {
             onClick: () => {
               var e, n, i;
-              return O && null != g && (e = g.id, n = g.name, i = g.rowType, void u.Z.show({
+              return E && null != g && (e = g.id, n = g.name, i = g.rowType, void u.Z.show({
                 title: V.intl.string(V.t.GuPYQE),
                 body: V.intl.format(V.t.xERCnZ, {
                   name: n
@@ -176,13 +176,13 @@ function W(e) {
                 })(e, i)
               }))
             },
-            "aria-disabled": !O,
+            "aria-disabled": !E,
             "aria-label": V.intl.string(V.t.N86XcH),
             children: (0, i.jsx)(d.k$p, {
               size: "md",
               color: "currentColor",
-              className: s()(U.removeIcon, {
-                [U.disabledRemoveIcon]: N || r
+              className: s()(H.removeIcon, {
+                [H.disabledRemoveIcon]: N || r
               })
             })
           })
@@ -214,45 +214,45 @@ function F(e) {
     guild: t,
     channel: l,
     permissionUpdates: r
-  } = e, o = (0, a.e7)([w.Z], () => w.Z.getSortedRoles(t.id)), c = P.RZ(t, o, l, N.yP, r), u = (0, a.e7)([E.ZP], () => P.cR(E.ZP.getMemberIds(t.id), l, t, N.yP, r)), h = (0, C.nG)(l.id);
+  } = e, o = (0, a.e7)([w.Z], () => w.Z.getSortedRoles(t.id)), c = P.RZ(t, o, l, N.yP, r), u = (0, a.e7)([O.ZP], () => P.cR(O.ZP.getMemberIds(t.id), l, t, N.yP, r)), h = (0, C.nG)(l.id);
 
   function g() {
     (0, d.ZDy)(async () => {
       let {
         default: e
       } = await n.e("46786").then(n.bind(n, 388131));
-      return t => (0, i.jsx)(e, G(H({}, t), {
+      return t => (0, i.jsx)(e, G(U({}, t), {
         channelId: l.id
       }))
     })
   }
   return (0, i.jsxs)("div", {
-    className: s()(U.settingCard, U.active),
-    children: [(0, i.jsx)(L.Z, {
+    className: s()(H.settingCard, H.active),
+    children: [(0, i.jsx)(A.Z, {
       label: V.intl.string(V.t.StpcFR),
       description: V.intl.string(V.t.f7VbhI),
       icon: (0, i.jsx)(d.ewx, {
         size: "custom",
         color: "currentColor",
-        className: U.cardIcon,
+        className: H.cardIcon,
         height: 20,
         width: 20
       }),
       id: "StageModeratorSettingCard"
     }), (0, i.jsxs)("div", {
-      className: U.cardFolder,
-      children: [(0, i.jsxs)(b.Z, {
-        justify: b.Z.Justify.BETWEEN,
-        align: b.Z.Align.CENTER,
-        className: U.folderHeader,
+      className: H.cardFolder,
+      children: [(0, i.jsxs)(x.Z, {
+        justify: x.Z.Justify.BETWEEN,
+        align: x.Z.Align.CENTER,
+        className: H.folderHeader,
         children: [(0, i.jsx)(d.vwX, {
           tag: "h5",
-          className: U.folderTitle,
+          className: H.folderTitle,
           children: V.intl.string(V.t["7BWDRU"])
         }), (0, i.jsx)(d.ua7, {
           text: V.intl.string(V.t.arRuER),
           shouldShow: !h,
-          children: e => (0, i.jsx)(d.zxk, G(H({
+          children: e => (0, i.jsx)(d.zxk, G(U({
             variant: "primary",
             size: "sm",
             text: V.intl.string(V.t.dMJ3Y2)
@@ -279,7 +279,7 @@ function z(e) {
     isPrivateGuildChannel: r,
     roles: o,
     members: u
-  } = e, h = (0, a.e7)([Z.Z], () => Z.Z.can(B.Pl.ADMINISTRATOR, t)), g = I.Uu(B.Pl.VIEW_CHANNEL, t), m = I.Uu(B.Pl.ADMINISTRATOR, t);
+  } = e, h = (0, a.e7)([T.Z], () => T.Z.can(B.Pl.ADMINISTRATOR, t)), g = I.Uu(B.Pl.VIEW_CHANNEL, t), m = I.Uu(B.Pl.ADMINISTRATOR, t);
   async function p() {
     let e = l.accessPermissions,
       s = R.default.getCurrentUser();
@@ -287,7 +287,7 @@ function z(e) {
       let {
         ConfirmModal: e
       } = await Promise.resolve().then(n.bind(n, 878678));
-      return n => (0, i.jsx)(e, G(H({}, n), {
+      return n => (0, i.jsx)(e, G(U({}, n), {
         confirmButtonColor: c.Tt.BRAND,
         header: V.intl.string(V.t.ZzdgUl),
         confirmText: V.intl.string(V.t.BddRzc),
@@ -309,15 +309,15 @@ function z(e) {
     formLabel: V.intl.string(V.t.P6eCbG)
   };
   return l.isCategory() ? (f.title = V.intl.string(V.t.lEPAZ2), f.subtitle = V.intl.string(V.t["RQUk6+"]), f.formLabel = V.intl.string(V.t["8VIxJi"])) : l.type === k.d4z.GUILD_VOICE && (f.subtitle = V.intl.string(V.t.cLjvKi)), (0, i.jsxs)("div", {
-    className: s()(U.settingCard, {
-      [U.active]: r
+    className: s()(H.settingCard, {
+      [H.active]: r
     }),
-    children: [(0, i.jsx)(L.Z, {
+    children: [(0, i.jsx)(A.Z, {
       description: f.subtitle,
       icon: (0, i.jsx)(d.mBM, {
         size: "custom",
         color: "currentColor",
-        className: U.cardIcon,
+        className: H.cardIcon,
         height: 20,
         width: 20
       }),
@@ -326,27 +326,27 @@ function z(e) {
       onChange: p,
       value: r
     }), (0, i.jsxs)("div", {
-      className: U.cardFolder,
+      className: H.cardFolder,
       children: [m && (0, i.jsx)("div", {
-        className: U.adminWarning,
+        className: H.adminWarning,
         children: (0, i.jsx)(d.Wn, {
           messageType: d.QYI.WARNING,
           children: V.intl.string(V.t["5f3HIC"])
         })
       }), !g && !m && !r && (0, i.jsx)("div", {
-        className: U.adminWarning,
+        className: H.adminWarning,
         children: (0, i.jsx)(d.Wn, {
           messageType: d.QYI.WARNING,
           children: V.intl.string(V.t.ZAk4Q0)
         })
       }), r && (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsxs)(b.Z, {
-          justify: b.Z.Justify.BETWEEN,
-          align: b.Z.Align.CENTER,
-          className: U.folderHeader,
+        children: [(0, i.jsxs)(x.Z, {
+          justify: x.Z.Justify.BETWEEN,
+          align: x.Z.Align.CENTER,
+          className: H.folderHeader,
           children: [(0, i.jsx)(d.vwX, {
             tag: "h5",
-            className: U.folderTitle,
+            className: H.folderTitle,
             children: f.formLabel
           }), (0, i.jsx)(d.zxk, {
             variant: "primary",
@@ -357,7 +357,7 @@ function z(e) {
                 let {
                   default: e
                 } = await Promise.resolve().then(n.bind(n, 185413));
-                return t => (0, i.jsx)(e, G(H({}, t), {
+                return t => (0, i.jsx)(e, G(U({}, t), {
                   channelId: l.id,
                   inSettings: true
                 }))
@@ -381,9 +381,9 @@ function X(e) {
   } = e;
   return (0, i.jsxs)("div", {
     children: [(0, i.jsx)(d.$i$, {
-      className: U.divider
+      className: H.divider
     }), (0, i.jsx)(d.vwX, {
-      className: s()(U.folderTitle, U.sectionTitle),
+      className: s()(H.folderTitle, H.sectionTitle),
       tag: "h5",
       children: t
     })]
@@ -402,7 +402,7 @@ let q = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk496675.Z, Chunk271383.
     if (null != module) {
       let a = Chunk485386.Z.getSortedRoles(module.id);
       r = Chunk277053.Z.editedPermissionIds.reduce((e, t) => {
-        let n = O.Z.getPermissionOverwrite(t);
+        let n = E.Z.getPermissionOverwrite(t);
         return null != n && (e[t] = n), e
       }, {}), i = Chunk605436.kA(module, Chunk442837, exports, exports.accessPermissions, Chunk120356), l = Chunk605436.cR(require, exports, module, exports.accessPermissions, Chunk120356), s = Chunk605436.Yk(exports, Chunk120356)
     }
@@ -431,16 +431,16 @@ let q = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk496675.Z, Chunk271383.
     permissionUpdates: m
   } = e, [p, f] = l.useState(!I.Uu(B.Pl.SEND_MESSAGES, s));
   if (null == s || null == c) return null;
-  let x = {
+  let b = {
     title: V.intl.string(V.t.BAZMBg),
     subtitle: V.intl.string(V.t.XLrZys)
   };
-  return s.isCategory() && (x.title = V.intl.string(V.t["/uELTk"]), x.subtitle = V.intl.string(V.t["8iAg3d"])), (0, i.jsxs)(i.Fragment, {
+  return s.isCategory() && (b.title = V.intl.string(V.t["/uELTk"]), b.subtitle = V.intl.string(V.t["8iAg3d"])), (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(d.vwX, {
       tag: "h1",
-      children: x.title
+      children: b.title
     }), (0, i.jsx)(d.R94, {
-      children: x.subtitle
+      children: b.subtitle
     }), null != r && t ? h ? (0, i.jsx)(M.Z, {
       canSync: false,
       icon: d.DuK,
@@ -459,13 +459,13 @@ let q = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk496675.Z, Chunk271383.
           let {
             default: e
           } = await Promise.resolve().then(n.bind(n, 170509));
-          return t => (0, i.jsx)(e, G(H({}, t), {
+          return t => (0, i.jsx)(e, G(U({}, t), {
             channel: s,
             category: r,
             onConfirm: async () => {
               let {
                 guild_id: e
-              } = r, t = H({}, r.permissionOverwrites);
+              } = r, t = U({}, r.permissionOverwrites);
               null != e && null == t[e] && (t[e] = I.we(e)), await (0, j.u)(s, t[e].deny, t[e].allow) && (0, g.wk)(s.id, {
                 permissionOverwrites: Object.values(t)
               })
@@ -483,6 +483,6 @@ let q = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk496675.Z, Chunk271383.
       isPrivateGuildChannel: u,
       roles: o,
       members: a
-    }), false, (0, i.jsx)(A.Z, {})]
+    }), false, (0, i.jsx)(L.Z, {})]
   })
 })

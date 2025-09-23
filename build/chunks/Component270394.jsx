@@ -1,4 +1,4 @@
-/** Chunk was on 47463 **/
+/** Chunk was on 58511 **/
 /** chunk id: 270394, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => V
@@ -76,7 +76,7 @@ function F(e, t) {
   }), e
 }
 
-function K(e) {
+function z(e) {
   let {
     isDisabled: t,
     inviter: n,
@@ -88,14 +88,14 @@ function K(e) {
     expiresAt: d,
     onRevokeInvite: u
   } = e;
-  return (0, i.jsxs)(S.Z, {
+  return (0, i.jsxs)(w.Z, {
     className: a()(U.inviteSettingsInviteRow, W.card, {
       [U.inviteDisabledRow]: t
     }),
-    children: [(0, i.jsxs)(S.Z, {
+    children: [(0, i.jsxs)(w.Z, {
       grow: 3,
       basis: 0,
-      align: S.Z.Align.CENTER,
+      align: w.Z.Align.CENTER,
       className: U.text,
       children: [null != n && (0, i.jsx)(y.Z, {
         user: n,
@@ -111,30 +111,30 @@ function K(e) {
           children: (0, C.F6)(l, A.default, k.Z, true)
         })]
       })]
-    }), (0, i.jsx)(S.Z, {
+    }), (0, i.jsx)(w.Z, {
       grow: 3,
       shrink: 1,
       basis: 0,
-      align: S.Z.Align.CENTER,
+      align: w.Z.Align.CENTER,
       className: U.text,
       children: (0, i.jsxs)("div", {
         className: U.inviteSourceContainer,
         children: [o, s]
       })
-    }), (0, i.jsx)(S.Z, {
+    }), (0, i.jsx)(w.Z, {
       grow: 1,
       basis: 0,
-      align: S.Z.Align.CENTER,
+      align: w.Z.Align.CENTER,
       className: U.text,
       children: (0, i.jsx)(g.Text, {
         className: U.uses,
         variant: "text-sm/normal",
         children: c
       })
-    }), (0, i.jsx)(S.Z, {
+    }), (0, i.jsx)(w.Z, {
       grow: 2,
       basis: 0,
-      align: S.Z.Align.CENTER,
+      align: w.Z.Align.CENTER,
       className: a()(U.text, U.countdownColumn),
       children: (0, i.jsx)(g.Text, {
         className: U.countdown,
@@ -156,7 +156,7 @@ function q(e) {
     inviteDisabled: l = false,
     hide: a = false
   } = e, o = n.uses;
-  return n.maxUses > 0 && (o = "".concat(n.uses, "/").concat(n.maxUses)), (0, i.jsx)(K, {
+  return n.maxUses > 0 && (o = "".concat(n.uses, "/").concat(n.maxUses)), (0, i.jsx)(z, {
     isDisabled: l,
     inviter: n.inviter,
     showChannel: r,
@@ -193,7 +193,7 @@ function q(e) {
   })
 }
 
-function z(e) {
+function K(e) {
   let {
     applicationId: t,
     channel: r,
@@ -203,16 +203,16 @@ function z(e) {
     var e;
     return A.default.getUser(null == (e = r.linkedLobby) ? true : e.linked_by)
   }), c = (0, T.Y)(r);
-  return (0, i.jsx)(K, {
+  return (0, i.jsx)(z, {
     isDisabled: a,
     inviter: s,
     showChannel: l,
     channel: r,
     inviteSource: (0, i.jsxs)("div", {
       className: U.linkedChannelJoinSource,
-      children: [(0, i.jsx)(w.Z, {
+      children: [(0, i.jsx)(S.Z, {
         game: o,
-        size: w.A.XXSMALL
+        size: S.A.XXSMALL
       }), (0, i.jsx)(g.Text, {
         className: U.linkedChannelJoinSourceText,
         variant: "text-sm/normal",
@@ -266,8 +266,8 @@ function V(e) {
       type: "channel",
       data: e
     }))], [_, C, h]),
-    w = () => {
-      (0, g.ZDy)(async () => e => (0, i.jsx)(P.default, F(G({}, e), {
+    S = () => {
+      (0, g.ZDy)(async () => e => (0, i.jsx)(Z.default, F(G({}, e), {
         channel: u,
         guild: l,
         source: M.t4x.SETTINGS_INVITE
@@ -276,9 +276,9 @@ function V(e) {
     [T, k] = r.useState(62),
     A = () => {
       let e = {
-        source: Z.Zu.GUILD_SETTINGS
+        source: I.Zu.GUILD_SETTINGS
       };
-      (0, g.ZDy)(async () => t => (0, i.jsx)(I.default, F(G({}, t), {
+      (0, g.ZDy)(async () => t => (0, i.jsx)(P.default, F(G({}, t), {
         guildId: l.id,
         analyticsData: e
       })))
@@ -304,28 +304,28 @@ function V(e) {
             })]
           })
         }, "empty-state");
-        else return (0, i.jsxs)(S.Z, {
-          children: [(0, i.jsx)(S.Z.Child, {
+        else return (0, i.jsxs)(w.Z, {
+          children: [(0, i.jsx)(w.Z.Child, {
             grow: 3,
             basis: 0,
             className: H.marginReset,
             children: (0, i.jsx)(g.vwX, {
               children: B.intl.string(B.t.EgHyKy)
             })
-          }), (0, i.jsx)(S.Z.Child, {
+          }), (0, i.jsx)(w.Z.Child, {
             basis: 0,
             grow: 3,
             className: H.marginReset,
             children: (0, i.jsx)(g.vwX, {
               children: C.length > 0 ? B.intl.string(B.t.l7VISU) : B.intl.string(B.t.LBlFEB)
             })
-          }), (0, i.jsx)(S.Z.Child, {
+          }), (0, i.jsx)(w.Z.Child, {
             grow: 1,
             basis: 0,
             children: (0, i.jsx)(g.vwX, {
               children: B.intl.string(B.t.erWrmJ)
             })
-          }), (0, i.jsx)(S.Z.Child, {
+          }), (0, i.jsx)(w.Z.Child, {
             grow: 2,
             basis: 0,
             children: (0, i.jsx)(g.vwX, {
@@ -352,7 +352,7 @@ function V(e) {
           className: H.marginBottom20,
           type: g.geA.DESCRIPTION,
           children: true === o ? B.intl.format(B.t["97VdNj"], {
-            onCreateInvite: w
+            onCreateInvite: S
           }) : B.intl.string(B.t.WDw38P)
         }), (0, i.jsxs)("div", {
           className: U.inviteDisabledContainer,
@@ -382,7 +382,7 @@ function V(e) {
         hasInvites: _.length > 0,
         setHeight: k,
         onShowDisableInvites: A,
-        onShowInviteModal: w,
+        onShowInviteModal: S,
         hasInviteDisabledPermission: j,
         invitesDisabled: y,
         canCreateInvites: o
@@ -403,7 +403,7 @@ function V(e) {
             }, e.data.code);
           case "channel":
             var r;
-            return (0, i.jsx)(z, {
+            return (0, i.jsx)(K, {
               applicationId: null == (r = e.data.linkedLobby) ? true : r.application_id,
               channel: e.data,
               showChannel: f,

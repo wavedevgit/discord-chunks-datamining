@@ -1,7 +1,7 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 91053 **/
 /** chunk id: 550818, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => I
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -25,7 +25,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk491010 = require("./491010.js"),
   Chunk268293 = require("./268293.js");
 
-function O(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -44,70 +44,70 @@ function O(e) {
   return e
 }
 
-function E(e) {
+function I(e) {
   let {
     user: t,
     channel: n,
-    onHide: E
-  } = e, S = (0, m.ZP)(t.id), I = (0, s.ZP)(), P = (0, a.e7)([d.Z], () => d.Z.isBlocked(t.id)), {
-    analyticsLocations: Z
-  } = (0, u.ZP)(P ? c.Z.BLOCKED_PROFILE_PANEL : c.Z.IGNORED_PROFILE_PANEL), T = (0, h.ZB)({
+    onHide: I
+  } = e, E = (0, g.ZP)(t.id), S = (0, o.ZP)(), Z = (0, a.e7)([u.Z], () => u.Z.isBlocked(t.id)), {
+    analyticsLocations: P
+  } = (0, d.ZP)(Z ? c.Z.BLOCKED_PROFILE_PANEL : c.Z.IGNORED_PROFILE_PANEL), T = (0, h.ZB)({
     layout: "SIDEBAR",
     userId: t.id,
     channelId: n.id
   }), N = i.useRef(null);
-  return (0, r.jsx)(u.Gt, {
-    value: Z,
+  return (0, r.jsx)(d.Gt, {
+    value: P,
     children: (0, r.jsx)(h.Mt, {
       value: T,
-      fetchStartedAt: null == S ? true : S.fetchStartedAt,
-      fetchEndedAt: null == S ? true : S.fetchEndedAt,
-      isLoaded: null == S ? true : S.isLoaded,
+      fetchStartedAt: null == E ? true : E.fetchStartedAt,
+      fetchEndedAt: null == E ? true : E.fetchEndedAt,
+      isLoaded: null == E ? true : E.isLoaded,
       children: (0, r.jsx)(b.Z, {
         ref: N,
         user: t,
-        displayProfile: S,
-        themeType: C.l.SIDEBAR,
-        themeOverride: I,
+        displayProfile: E,
+        themeType: O.l.SIDEBAR,
+        themeOverride: S,
         children: (0, r.jsx)(l.u2, {
           children: (0, r.jsxs)("div", {
             className: x.container,
             children: [(0, r.jsx)("img", {
               alt: "",
-              src: j,
+              src: v,
               className: x.preview,
               "aria-hidden": true
             }), (0, r.jsxs)("div", {
               className: x.body,
               children: [(0, r.jsxs)("div", {
                 className: x.headerContainer,
-                children: [(0, r.jsx)(g.Z, {
+                children: [(0, r.jsx)(m.Z, {
                   user: t
-                }), (0, r.jsx)(o.X6q, {
+                }), (0, r.jsx)(s.X6q, {
                   variant: "heading-lg/bold",
-                  children: v.intl.string(v.t.b33pLC)
-                }), (0, r.jsx)(o.Text, {
+                  children: j.intl.string(j.t.b33pLC)
+                }), (0, r.jsx)(s.Text, {
                   variant: "text-sm/medium",
-                  children: v.intl.format(P ? v.t["8F+WNz"] : v.t["/cZp5u"], {
+                  children: j.intl.format(Z ? j.t["8F+WNz"] : j.t["/cZp5u"], {
                     username: p.ZP.getName(n.guild_id, n.id, t)
                   })
                 })]
-              }), (0, r.jsxs)(o.Kqy, {
+              }), (0, r.jsxs)(s.Kqy, {
                 align: "center",
                 children: [(0, r.jsx)(_.Z, {
-                  isBlocked: P,
+                  isBlocked: Z,
                   onClick: () => {
-                    E(), (0, f.pQ)(O({
-                      action: P ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
-                      analyticsLocations: Z
+                    I(), (0, f.pQ)(C({
+                      action: Z ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
+                      analyticsLocations: P
                     }, T))
                   }
                 }), (0, r.jsx)(y.Z, {
                   userId: t.id,
                   onClick: () => {
-                    E(), (0, f.pQ)(O({
+                    I(), (0, f.pQ)(C({
                       action: "DONT_SHOW_AGAIN_IGNORED_PROFILE",
-                      analyticsLocations: Z
+                      analyticsLocations: P
                     }, T))
                   }
                 })]

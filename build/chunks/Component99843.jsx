@@ -1,7 +1,7 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 89929 **/
 /** chunk id: 99843, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  j: () => _
+  j: () => y
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk782196 = require("./782196.js");
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -48,34 +48,34 @@ function b(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let y = e => {
+let O = e => {
     let {
       channel: t
     } = e;
     return (0, d.m$)({
       channelId: t.id
     }) ? (0, r.jsx)(l.ua7, {
-      text: f.intl.string(f.t.QyZ4TU),
-      children: e => (0, r.jsx)(l.tQf, b(g({}, e), {
+      text: h.intl.string(h.t.QyZ4TU),
+      children: e => (0, r.jsx)(l.tQf, b(m({}, e), {
         size: "xs",
-        "aria-label": f.intl.string(f.t.VHXh8f),
+        "aria-label": h.intl.string(h.t.VHXh8f),
         color: l.TVs.colors.INTERACTIVE_NORMAL
       }))
     }) : null
   },
-  _ = Chunk647438.memo(function(e) {
+  y = Chunk647438.memo(function(e) {
     let {
       channel: t
     } = e, i = t.id, d = (0, s.ZP)(t);
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.ua7, {
-        text: f.intl.string(f.t["5Q9+/P"]),
+        text: h.intl.string(h.t["5Q9+/P"]),
         position: "bottom",
         children: e => {
           var {
             onMouseEnter: s,
-            onClick: y
-          } = e, _ = function(e, t) {
+            onClick: O
+          } = e, y = function(e, t) {
             if (null == e) return {};
             var n, r, i = function(e, t) {
               if (null == e) return {};
@@ -90,16 +90,16 @@ let y = e => {
             }
             return i
           }(e, ["onMouseEnter", "onClick"]);
-          return (0, r.jsxs)(l.P3F, b(g({}, _), {
-            className: m.hoverableContainer,
+          return (0, r.jsxs)(l.P3F, b(m({}, y), {
+            className: g.hoverableContainer,
             onClick: () => {
-              null == y || y(), (0, u.B)(i, o.Z.HEADER_BAR)
+              null == O || O(), (0, u.B)(i, a.Z.HEADER_BAR)
             },
-            onContextMenu: e => (0, a.jW)(e, () => Promise.all([n.e("79695"), n.e("22981")]).then(n.bind(n, 354741)).then(e => {
+            onContextMenu: e => (0, o.jW)(e, () => Promise.all([n.e("79695"), n.e("22981")]).then(n.bind(n, 354741)).then(e => {
               let {
                 default: n
               } = e;
-              return e => (0, r.jsx)(n, b(g({}, e), {
+              return e => (0, r.jsx)(n, b(m({}, e), {
                 channel: t,
                 selected: true
               }))
@@ -108,15 +108,15 @@ let y = e => {
             }),
             onDoubleClick: e => e.stopPropagation(),
             onMouseEnter: () => {
-              null == s || s(), p.default.track(h.rMx.GDM_EDIT_INTERACTED, {
+              null == s || s(), p.default.track(f.rMx.GDM_EDIT_INTERACTED, {
                 channel_id: t.id,
                 action: "entry_point_hovered",
-                location: o.Z.HEADER_BAR
+                location: a.Z.HEADER_BAR
               })
             },
-            "aria-label": f.intl.string(f.t["5Q9+/P"]),
+            "aria-label": h.intl.string(h.t["5Q9+/P"]),
             children: [(0, r.jsx)(c.Z, {
-              className: m.gdmIcon,
+              className: g.gdmIcon,
               "aria-hidden": true,
               channel: t,
               size: l.EFr.SIZE_20,
@@ -127,13 +127,13 @@ let y = e => {
               color: "header-primary",
               children: null != d ? d : ""
             }), (0, r.jsx)(l.vdY, {
-              className: m.editIcon,
+              className: g.editIcon,
               size: "xs",
               color: "currentColor"
             })]
           }))
         }
-      }), (0, r.jsx)(y, {
+      }), (0, r.jsx)(O, {
         channel: t
       })]
     })

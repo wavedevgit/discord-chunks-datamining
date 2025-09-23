@@ -1,16 +1,16 @@
 /** Chunk was on 13599 **/
-/** chunk id: 34069, original params: e,t,n (module,exports,require) **/
+/** chunk id: 34069, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
-  s: () => o
+  s: () => i
 });
 var Chunk647438 = require("./647438.js"),
   Chunk971749 = require("./971749.js");
 
-function o(e, t, n) {
-  var o = (0, r.useMemo)(function() {
-    return new i.O(e, t, n)
-  }, [t, n]);
+function i(t, n, e) {
+  var i = (0, r.useMemo)(function() {
+    return new o.O(t, n, e)
+  }, [n, e]);
   return (0, r.useEffect)(function() {
-    o.spec = e
-  }, [e]), o
+    i.spec = t
+  }, [t]), i
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 10576 **/
+/** Chunk was on 66201 **/
 /** chunk id: 683101, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => T
@@ -55,7 +55,7 @@ class T extends Chunk647438.PureComponent {
       searchOffset: n,
       index: l,
       totalResults: i
-    } = this.props, s = Chunk592125.Z.getChannel(module.channel_id);
+    } = this.props, a = Chunk592125.Z.getChannel(module.channel_id);
     if (null == Chunk239091) return null;
     let d = "search-result-".concat(module.id);
     return (0, Chunk951288.jsx)(Chunk481060.tEY, {
@@ -105,10 +105,10 @@ class T extends Chunk647438.PureComponent {
   constructor(...e) {
     super(...e), d(this, "containerRef", l.createRef()), d(this, "hitRef", l.createRef()), d(this, "handleContextMenu", (e, t) => {
       let l = u.Z.getChannel(t.channel_id);
-      null != l && (e.stopPropagation(), (0, s.jW)(e, async () => {
+      null != l && (e.stopPropagation(), (0, a.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("76676"), n.e("93077"), n.e("69363")]).then(n.bind(n, 858341));
+        } = await Promise.all([n.e("38342"), n.e("93077"), n.e("58627")]).then(n.bind(n, 858341));
         return n => (0, r.jsx)(e, A(_({}, n), {
           message: t,
           channel: l

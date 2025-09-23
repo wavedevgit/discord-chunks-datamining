@@ -1,7 +1,7 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 21616 **/
 /** chunk id: 262317, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  XX: () => L,
+  XX: () => D,
   ZP: () => B,
   ul: () => U
 }), require("./388685.js");
@@ -39,7 +39,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk92024 = require("./92024.js");
 
-function D(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -58,7 +58,7 @@ function D(e) {
   return e
 }
 
-function k(e, t) {
+function L(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -71,12 +71,12 @@ function k(e, t) {
   }), e
 }
 
-function L(e) {
+function D(e) {
   let {
     numUsers: t
   } = e;
   return (0, r.jsx)("div", {
-    className: M.moreContainer,
+    className: R.moreContainer,
     children: (0, r.jsxs)(o.Text, {
       color: "text-muted",
       variant: "text-sm/medium",
@@ -89,19 +89,19 @@ function U(e) {
   let {
     numAudience: t,
     collapsed: n
-  } = e, i = n ? t : R.intl.formatToPlainString(R.t["+v2pNz"], {
+  } = e, i = n ? t : M.intl.formatToPlainString(M.t["+v2pNz"], {
     count: t
   });
   return (0, r.jsxs)("div", {
-    className: a()(M.audienceContainer, {
-      [M.audienceContainerCollapsed]: n
+    className: a()(R.audienceContainer, {
+      [R.audienceContainerCollapsed]: n
     }),
     children: [(0, r.jsx)("div", {
-      className: M.audienceIconContainer,
+      className: R.audienceIconContainer,
       children: (0, r.jsx)(o.VWR, {
         size: "md",
         color: "currentColor",
-        className: M.audienceIcon
+        className: R.audienceIcon
       })
     }), (0, r.jsx)(o.Text, {
       color: "text-muted",
@@ -115,21 +115,21 @@ let B = (0, Chunk888651.$)(function(e) {
   let {
     collapsed: l,
     user: p,
-    channel: L,
+    channel: D,
     mute: U,
     localMute: B,
-    localVideoDisabled: G,
-    deaf: H,
-    video: F,
-    embeddedApplication: V,
+    localVideoDisabled: F,
+    deaf: V,
+    video: H,
+    embeddedApplication: G,
     serverMute: z,
     serverDeaf: W,
     nick: q,
     ringing: Y,
     speaking: K,
     disconnected: X,
-    connectUserDragSource: Q,
-    canDrag: J,
+    connectUserDragSource: J,
+    canDrag: Q,
     isStreaming: $,
     isWatching: ee,
     isGuest: et,
@@ -148,71 +148,71 @@ let B = (0, Chunk888651.$)(function(e) {
     hangStatusActivity: ef,
     requestToStreamActivity: em,
     showHangStatus: eg
-  } = e, eb = i.useRef(null), [ey, e_] = i.useState(false), [eC, ev] = i.useState(false), [ex, ej] = i.useState(false), eO = eC || ex, eE = (null == em ? true : em.session_id) != null, eS = () => {
-    e_(!ey)
-  }, eI = () => {
+  } = e, eb = i.useRef(null), [ey, eC] = i.useState(false), [e_, ev] = i.useState(false), [ex, eO] = i.useState(false), ej = e_ || ex, eE = (null == em ? true : em.session_id) != null, eS = () => {
+    eC(!ey)
+  }, eP = () => {
     ($ || eg || eE) && (null == ei || ei(p.id))
-  }, eP = e => {
+  }, eI = e => {
     e && ea && ev(true)
   }, eZ = e => {
     e && ev(false)
   }, eT = () => {
-    if (!($ && (0, _.p9)(L, N.Z, P.Z, Z.Z, g.Z)[0])) return;
+    if (!($ && (0, C.p9)(D, N.Z, I.Z, Z.Z, g.Z)[0])) return;
     let e = {
       streamType: w.lo.GUILD,
       ownerId: p.id,
-      channelId: L.id,
-      guildId: L.guild_id
+      channelId: D.id,
+      guildId: D.guild_id
     };
-    I.default.getId() !== p.id && u.default.selectVoiceChannel(L.id), ee ? ((0, C.Z)(e), s.Z.selectParticipant(e.channelId, (0, y.V9)(e))) : (0, d.iV)(e), null == ei || ei(p.id)
+    P.default.getId() !== p.id && u.default.selectVoiceChannel(D.id), ee ? ((0, _.Z)(e), s.Z.selectParticipant(e.channelId, (0, y.V9)(e))) : (0, d.iV)(e), null == ei || ei(p.id)
   }, eN = e => {
     (0, c.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("79695"), n.e("98783"), n.e("8982"), n.e("7717"), n.e("52021")]).then(n.bind(n, 757387));
-      return t => (0, r.jsx)(e, k(D({}, t), {
+      } = await Promise.all([n.e("79695"), n.e("98783"), n.e("8982"), n.e("7717"), n.e("96306")]).then(n.bind(n, 757387));
+      return t => (0, r.jsx)(e, L(k({}, t), {
         user: p,
-        guildId: L.guild_id,
-        channel: L,
+        guildId: D.guild_id,
+        channel: D,
         showMediaItems: true,
-        showStageChannelItems: L.isGuildStageVoice(),
+        showStageChannelItems: D.isGuildStageVoice(),
         onInteraction: (0, m.u)("GuildChannelUserContextMenu", f.Z.VOICE_USER, {
           targetUserId: p.id
         })
       }))
     })
-  }, eA = e => ep ? (0, r.jsx)(x.$, k(D({}, e), {
-    channel: L,
-    setIsHangStatusInputFocused: ej
-  })) : null != ef ? (0, r.jsx)(j.I, k(D({}, e), {
+  }, eA = e => ep ? (0, r.jsx)(x.$, L(k({}, e), {
+    channel: D,
+    setIsHangStatusInputFocused: eO
+  })) : null != ef ? (0, r.jsx)(O.I, L(k({}, e), {
     hangStatusActivity: ef,
-    channel: L,
+    channel: D,
     userId: p.id
-  })) : null, ew = () => (0, r.jsx)(O.Z, {
+  })) : null, ew = () => (0, r.jsx)(j.Z, {
     userId: p.id,
-    channel: L
-  }), eR = () => (0, h.dl)() && (0, h.zd)(L.id) ? null : (0, r.jsx)(v.Z, {
+    channel: D
+  }), eM = () => (0, h.dl)() && (0, h.zd)(D.id) ? null : (0, r.jsx)(v.Z, {
     user: p,
-    channel: L,
+    channel: D,
     onWatch: eT,
     previewIsOpen: ea,
     location: ed
-  }), eM = (0, r.jsx)("div", {
-    className: M.draggable,
-    "data-dnd-name": L.name,
+  }), eR = (0, r.jsx)("div", {
+    className: R.draggable,
+    "data-dnd-name": D.name,
     onMouseEnter: ec ? true : () => {
       ($ || eg || eE) && !ey && (null == er || er(p.id))
     },
-    onMouseLeave: ec ? true : eI,
+    onMouseLeave: ec ? true : eP,
     children: (0, r.jsx)(E.Z, {
       clickTrap: (null == p ? true : p.id) === (null == (t = T.default.getCurrentUser()) ? true : t.id) && ey,
       targetElementRef: eb,
       user: p,
-      guildId: L.guild_id,
-      channelId: L.id,
+      guildId: D.guild_id,
+      channelId: D.id,
       newAnalyticsLocations: [f.Z.VOICE_USER],
       shouldShow: ey,
-      onRequestClose: () => e_(false),
+      onRequestClose: () => eC(false),
       children: e => (e => {
         let t = A.al.has(null != eo ? eo : ""),
           n = {
@@ -221,13 +221,13 @@ let B = (0, Chunk888651.$)(function(e) {
             disconnected: X,
             mute: U,
             localMute: B,
-            localVideoDisabled: G,
+            localVideoDisabled: F,
             isStreaming: $,
             isGuest: et,
-            video: F,
+            video: H,
             priority: en,
             ringing: Y,
-            deaf: H,
+            deaf: V,
             nick: q,
             collapsed: l,
             overlap: l,
@@ -236,26 +236,26 @@ let B = (0, Chunk888651.$)(function(e) {
             tabIndex: eu,
             otherClientSessionType: eo,
             voicePlatform: es,
-            embeddedApplication: V,
+            embeddedApplication: G,
             avatarContainerClass: a()({
-              [M.userAvatar]: true
+              [R.userAvatar]: true
             }),
             disabled: ec && !t,
             selected: ey,
             onClick: t ? true : eS,
             onDoubleClick: eT,
             onContextMenu: eN,
-            guildId: L.guild_id,
+            guildId: D.guild_id,
             isSelf: ep,
             application: eh,
-            channelId: L.id,
+            channelId: D.id,
             hangStatusActivity: ef,
             showHangStatus: eg
           };
         if (ec) {
           var i;
           return (0, r.jsx)(o.ua7, {
-            text: null != (i = (0, b.Z)(eo)) ? i : R.intl.string(R.t.IyYqqa),
+            text: null != (i = (0, b.Z)(eo)) ? i : M.intl.string(M.t.IyYqqa),
             children: e => {
               var {
                 onClick: t,
@@ -275,31 +275,31 @@ let B = (0, Chunk888651.$)(function(e) {
                 }
                 return i
               }(e, ["onClick", "onContextMenu"]);
-              return (0, r.jsx)(S.ZP, D({
+              return (0, r.jsx)(S.ZP, k({
                 ref: eb
               }, n, l))
             }
           })
         }
         let s = () => null;
-        return eg && eO ? s = eA : $ ? s = eR : eE && p.id !== I.default.getId() && (s = ew), (0, r.jsx)(o.yRy, {
+        return eg && ej ? s = eA : $ ? s = eM : eE && p.id !== P.default.getId() && (s = ew), (0, r.jsx)(o.yRy, {
           targetElementRef: eb,
           position: "right",
           renderPopout: s,
           shouldShow: (el || eg && ex) && !ey,
-          onRequestClose: eI,
-          align: eg && eO && !ep ? "center" : true,
-          spacing: eg && eO ? 8 : 0,
-          children: () => (0, r.jsx)(S.ZP, k(D({}, n), {
+          onRequestClose: eP,
+          align: eg && ej && !ep ? "center" : true,
+          spacing: eg && ej ? 8 : 0,
+          children: () => (0, r.jsx)(S.ZP, L(k({}, n), {
             ref: eb,
             onMouseDown: e.onMouseDown,
             onKeyDown: e.onKeyDown,
-            handleHoverHangStatus: eP,
+            handleHoverHangStatus: eI,
             handleHoverIcons: eZ
           }))
         })
       })(e)
     })
   });
-  return J ? Q(eM) : eM
+  return Q ? J(eR) : eR
 })

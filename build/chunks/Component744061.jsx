@@ -1,4 +1,4 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 21616 **/
 /** chunk id: 744061, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -23,8 +23,8 @@ function g(e) {
     onConfirm: g,
     onCancel: b,
     channel: y,
-    analyticsType: _,
-    popoutText: C,
+    analyticsType: C,
+    popoutText: _,
     animation: v
   } = e;
   i.useEffect(() => {
@@ -46,16 +46,16 @@ function g(e) {
       }
       return e
     }({
-      type: _
+      type: C
     }, (0, c.v_)(y)))
-  }, [_, y]);
+  }, [C, y]);
   let x = i.useCallback(() => {
       null == g || g(), t()
     }, [g, t]),
-    j = i.useCallback(() => {
+    O = i.useCallback(() => {
       null == b || b(), t()
     }, [b, t]),
-    O = i.useRef(null);
+    j = i.useRef(null);
   return i.useEffect(() => {
     let e, t = u.Z.theme,
       r = false;
@@ -63,8 +63,8 @@ function g(e) {
       let [{
         default: i
       }, l] = await Promise.all([Promise.resolve().then(n.t.bind(n, 500923, 23)), (0, a.wj)(t) ? v.dark() : v.light()]);
-      r || null == O.current || (e = i.loadAnimation({
-        container: O.current,
+      r || null == j.current || (e = i.loadAnimation({
+        container: j.current,
         renderer: "svg",
         loop: true,
         autoplay: true,
@@ -82,7 +82,7 @@ function g(e) {
         className: f.body,
         children: [null != v && (0, r.jsx)("div", {
           className: f.animation,
-          ref: O
+          ref: j
         }), (0, r.jsxs)("div", {
           className: f.content,
           children: [(0, r.jsx)("div", {
@@ -92,7 +92,7 @@ function g(e) {
             id: "content-warning-popout-label",
             className: m.markup,
             variant: "text-sm/normal",
-            children: C.body
+            children: _.body
           }), (0, r.jsxs)("div", {
             className: f.buttonWrapper,
             children: [(0, r.jsxs)("div", {
@@ -100,7 +100,7 @@ function g(e) {
               children: [(0, r.jsx)(o.zx, {
                 className: f.button,
                 color: o.zx.Colors.PRIMARY,
-                onClick: j,
+                onClick: O,
                 children: h.intl.string(h.t.fsBWmZ)
               }), (0, r.jsx)(s.Text, {
                 variant: "text-xs/normal",
@@ -123,7 +123,7 @@ function g(e) {
             })]
           })]
         })]
-      }), null != C.footer && "" !== C.footer ? (0, r.jsxs)("div", {
+      }), null != _.footer && "" !== _.footer ? (0, r.jsxs)("div", {
         className: f.footer,
         children: [(0, r.jsx)(s.d3s, {
           size: "xs",
@@ -131,7 +131,7 @@ function g(e) {
           className: f.icon
         }), (0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
-          children: C.footer
+          children: _.footer
         })]
       }) : null]
     })

@@ -2,12 +2,15 @@
 /** chunk id: 517100, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => D
+  Z: () => k
 });
-var r, Chunk442837 = require("./442837.js"),
+var r, Chunk954955 = require("./954955.js"),
+  a = require.n(Chunk954955),
+  Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk287734 = require("./287734.js"),
   Chunk579806 = require("./579806.js"),
+  Chunk491966 = require("./491966.js"),
   Chunk695346 = require("./695346.js"),
   Chunk70956 = require("./70956.js"),
   Chunk358085 = require("./358085.js"),
@@ -15,7 +18,7 @@ var r, Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk65154 = require("./65154.js");
 
-function p(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -23,47 +26,47 @@ function p(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let h = Date.now(),
-  m = false,
-  g = false,
-  E = false,
+let E = Date.now(),
   b = false,
-  y = false;
+  y = false,
+  O = false,
+  v = false,
+  I = false;
 
-function O() {
-  return E || b || (0, Chunk358085.isAndroid)() && y
+function T() {
+  return O || v || (0, Chunk358085.isAndroid)() && I
 }
 
-function v() {
+function S() {
   let e = Chunk695346.CM.getSetting();
-  0 === module || Date.now() - h > Math.min(module * Chunk70956.Z.Millis.SECOND, Chunk981631.OSm) || O() ? g || Chunk570140.Z.dispatch({
+  0 === module || Date.now() - E > Math.min(module * Chunk70956.Z.Millis.SECOND, Chunk981631.OSm) || T() ? y || Chunk570140.Z.dispatch({
     type: "AFK",
     afk: true
-  }) : g && Chunk570140.Z.dispatch({
+  }) : y && Chunk570140.Z.dispatch({
     type: "AFK",
     afk: false
   })
 }
 
-function I() {
-  Date.now() - h > Chunk981631.OSm || O() ? m || Chunk570140.Z.dispatch({
+function A() {
+  Date.now() - E > Chunk981631.OSm || T() ? b || Chunk570140.Z.dispatch({
     type: "IDLE",
     idle: true,
-    idleSince: h
-  }) : m && Chunk570140.Z.dispatch({
+    idleSince: E
+  }) : b && Chunk570140.Z.dispatch({
     type: "IDLE",
     idle: false
   })
 }
 
-function T() {
-  I(), v()
+function C() {
+  A(), S()
 }
 
-function S() {
+function N() {
   var e;
   let t = e => {
-    h = Math.max(Date.now() - e, h), T(), setTimeout(S, 10 * c.Z.Millis.SECOND)
+    E = Math.max(Date.now() - e, E), C(), setTimeout(N, 10 * f.Z.Millis.SECOND)
   };
   if ((null === Chunk579806.Z || true === Chunk579806.Z || null == (e = Chunk579806.Z.remotePowerMonitor) ? true : module.getSystemIdleTimeMs) != null) {
     let e = Chunk579806.Z.remotePowerMonitor.getSystemIdleTimeMs();
@@ -71,76 +74,97 @@ function S() {
   }
 }
 
-function A(e) {
-  m = e.idle
+function R(e) {
+  u.Z.getConfig({
+    location: "handlePowerEvent"
+  }).power_events ? L({}) : (e && (E = false / 0), C())
+}
+if (!__OVERLAY__) {
+  Chunk358085.isPlatformEmbedded && (null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.remotePowerMonitor) != null ? (N(), Chunk579806.Z.remotePowerMonitor.on("resume", () => {
+    O = false, R(false)
+  }), Chunk579806.Z.remotePowerMonitor.on("suspend", () => {
+    O = true, R(true), Chunk287734.default.disconnect()
+  }), Chunk579806.Z.remotePowerMonitor.on("lock-screen", () => {
+    v = true, R(true)
+  }), Chunk579806.Z.remotePowerMonitor.on("unlock-screen", () => {
+    v = false, R(false)
+  })) : setInterval(C, 30 * Chunk70956.Z.Millis.SECOND);
+  let e = a()(() => {
+    Chunk491966.Z.getConfig({
+      location: "handleGenericInput"
+    }).generic_inputs && L({})
+  }, 500);
+  window.addEventListener("mouseup", module), window.addEventListener("wheel", module), window.addEventListener("keypress", module)
 }
 
-function C(e) {
-  g = e.afk
+function P(e) {
+  b = e.idle
 }
 
-function N(e) {
+function w(e) {
+  y = e.afk
+}
+
+function D(e) {
   let {
     userId: t,
     speakingFlags: n
   } = e;
-  return n !== _.Dg.NONE && t === d.default.getId() && P({}), false
+  return n !== m.Dg.NONE && t === p.default.getId() && L({}), false
 }
 
-function R(e) {
+function x(e) {
   let {
     state: t
   } = e;
-  return y = t === f.$7l.BACKGROUND, h = Date.now(), T(), false
+  return I = t === h.$7l.BACKGROUND, E = Date.now(), C(), false
 }
 
-function P(e) {
+function L(e) {
   let {
     timestamp: t,
     type: n
   } = e, r = "OVERLAY_SET_NOT_IDLE" === n && null != t;
-  return (!r || !(t <= h)) && (h = r ? t : Date.now(), __OVERLAY__ ? a.Z.dispatch({
+  return (!r || !(t <= E)) && (E = r ? t : Date.now(), __OVERLAY__ ? s.Z.dispatch({
     type: "OVERLAY_SET_NOT_IDLE",
-    timestamp: h
-  }) : T(), false)
+    timestamp: E
+  }) : C(), false)
 }
-__OVERLAY__ || (Chunk358085.isPlatformEmbedded && (null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.remotePowerMonitor) != null ? (S(), Chunk579806.Z.remotePowerMonitor.on("resume", () => {
-  E = false, P({})
-}), Chunk579806.Z.remotePowerMonitor.on("suspend", () => {
-  E = true, P({}), Chunk287734.default.disconnect()
-}), Chunk579806.Z.remotePowerMonitor.on("lock-screen", () => {
-  b = true, P({})
-}), Chunk579806.Z.remotePowerMonitor.on("unlock-screen", () => {
-  b = false, P({})
-})) : setInterval(T, 30 * Chunk70956.Z.Millis.SECOND));
-class w extends(r = Chunk442837.ZP.Store) {
+
+function j() {
+  if (!Chunk491966.Z.getConfig({
+      location: "handleSettingsProtoUpdate"
+    }).settings_updates) returnfalse;
+  L({})
+}
+class M extends(r = Chunk442837.ZP.Store) {
   isIdle() {
-    return m
-  }
-  isAFK() {
-    return g
-  }
-  getIdleSince() {
-    return m ? h : null
-  }
-  getSystemSuspended() {
-    return E
-  }
-  getSystemLocked() {
     return b
   }
+  isAFK() {
+    return y
+  }
+  getIdleSince() {
+    return b ? E : null
+  }
+  getSystemSuspended() {
+    return O
+  }
+  getSystemLocked() {
+    return v
+  }
 }
-p(w, "displayName", "IdleStore");
-let D = new w(Chunk570140.Z, {
-  IDLE: A,
-  AFK: C,
-  SPEAKING: N,
-  APP_STATE_UPDATE: R,
-  OVERLAY_SET_NOT_IDLE: P,
-  CHANNEL_SELECT: P,
-  VOICE_CHANNEL_SELECT: P,
-  WINDOW_FOCUS: P,
-  OVERLAY_INITIALIZE: P,
-  OVERLAY_SET_INPUT_LOCKED: P,
-  USER_SETTINGS_PROTO_UPDATE: P
+g(M, "displayName", "IdleStore");
+let k = new M(Chunk570140.Z, {
+  IDLE: P,
+  AFK: w,
+  SPEAKING: D,
+  APP_STATE_UPDATE: x,
+  OVERLAY_SET_NOT_IDLE: L,
+  CHANNEL_SELECT: L,
+  VOICE_CHANNEL_SELECT: L,
+  WINDOW_FOCUS: L,
+  OVERLAY_INITIALIZE: L,
+  OVERLAY_SET_INPUT_LOCKED: L,
+  USER_SETTINGS_PROTO_UPDATE: j
 })

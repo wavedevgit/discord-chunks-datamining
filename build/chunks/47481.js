@@ -1,4 +1,4 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 21616 **/
 /** chunk id: 47481, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -22,12 +22,12 @@ function d(e) {
       selectedSummary: b
     } = e,
     y = [],
-    _ = false,
-    C = null != f ? a.default.extractTimestamp(f) : null,
+    C = false,
+    _ = null != f ? a.default.extractTimestamp(f) : null,
     v = null;
   return h.forEach(e => {
-    var i, x, j;
-    let O, E;
+    var i, x, O;
+    let j, E;
     if (null != g && g.length > 0) {
       let t = a.default.extractTimestamp(e.id);
       for (let e = 0; i = e < (null == g ? true : g.length), i; e++) {
@@ -51,10 +51,10 @@ function d(e) {
       content: S,
       contentKey: S
     }), t = S);
-    let I = y[y.length - 1],
-      P = null,
+    let P = y[y.length - 1],
+      I = null,
       Z = (0, s.DQ)(e);
-    _ = _ || Z;
+    C = C || Z;
     let T = function(e, t, n) {
       if (r.V.NON_COLLAPSIBLE.has(t.type));
       else if (t.blocked) return u.ys_.MESSAGE_GROUP_BLOCKED;
@@ -62,27 +62,27 @@ function d(e) {
       else if ((0, s.P1)(e) && n) return u.ys_.MESSAGE_GROUP_SPAMMER;
       return null
     }(p, e, Z && m);
-    (null !== T && ([P, I] = (E = x = I, null == x || x.type !== T ? (O = {
+    (null !== T && ([I, P] = (E = x = P, null == x || x.type !== T ? (j = {
       type: T,
       content: [],
       key: e.id
-    }, y.push(O)) : E = (O = x).content[O.content.length - 1], [O, E])), f === e.id && null != C) ? (null != I && I.type === u.ys_.DIVIDER ? I.unreadId = e.id : null !== P ? (j = P, e.isFirstMessageInForumPost(p) || j.content.push({
+    }, y.push(j)) : E = (j = x).content[j.content.length - 1], [j, E])), f === e.id && null != _) ? (null != P && P.type === u.ys_.DIVIDER ? P.unreadId = e.id : null !== I ? (O = I, e.isFirstMessageInForumPost(p) || O.content.push({
       type: u.ys_.DIVIDER,
       unreadId: e.id
-    }), j.hasUnread = true) : e.isFirstMessageInForumPost(p) || y.push({
+    }), O.hasUnread = true) : e.isFirstMessageInForumPost(p) || y.push({
       type: u.ys_.DIVIDER,
       unreadId: e.id
-    }), C = null) : null != C && a.default.extractTimestamp(e.id) > C && (e.isFirstMessageInForumPost(p) || y.push({
+    }), _ = null) : null != _ && a.default.extractTimestamp(e.id) > _ && (e.isFirstMessageInForumPost(p) || y.push({
       type: u.ys_.DIVIDER,
       unreadId: e.id
-    }), C = null);
+    }), _ = null);
     let N = (0, c.f)(e, p);
     null != N && y.push({
       type: u.ys_.MESSAGE,
       content: N,
       groupId: N.id
     });
-    let A = (null == I ? true : I.type) === u.ys_.MESSAGE ? d : I;
+    let A = (null == P ? true : P.type) === u.ys_.MESSAGE ? d : P;
     (0, o.J)(p, A, e) && (n = e.id);
     let w = {
       type: e.type === u.uaV.THREAD_STARTER_MESSAGE ? u.ys_.THREAD_STARTER_MESSAGE : u.ys_.MESSAGE,
@@ -91,23 +91,23 @@ function d(e) {
     };
     n === e.id && (d = w);
     let {
-      jumpSequenceId: R,
-      jumpFlash: M,
-      jumpTargetId: D
+      jumpSequenceId: M,
+      jumpFlash: R,
+      jumpTargetId: k
     } = h;
-    M && e.id === D && null != R && (w.flashKey = R), h.jumpTargetId === e.id && (w.jumpTarget = true), null != b && e.id === b.startId && b.count > 1 && y.push({
+    R && e.id === k && null != M && (w.flashKey = M), h.jumpTargetId === e.id && (w.jumpTarget = true), null != b && e.id === b.startId && b.count > 1 && y.push({
       type: u.ys_.DIVIDER,
       content: b.topic,
       contentKey: b.startId,
       isSummaryDivider: true
-    }), null !== P ? (P.content.push(w), w.jumpTarget && (P.hasJumpTarget = true)) : y.push(w), e.isFirstMessageInForumPost(p) && y.push({
+    }), null !== I ? (I.content.push(w), w.jumpTarget && (I.hasJumpTarget = true)) : y.push(w), e.isFirstMessageInForumPost(p) && y.push({
       type: u.ys_.FORUM_POST_ACTION_BAR
     }), null != b && e.id === b.endId && b.count > 1 && y.push({
       type: u.ys_.DIVIDER,
       contentKey: b.endId,
       isSummaryDivider: true
     })
-  }), _ && (0, s.P1)(p) && i.Z.trackExposure({
+  }), C && (0, s.P1)(p) && i.Z.trackExposure({
     location: "416cc9_1"
   }), y
 }

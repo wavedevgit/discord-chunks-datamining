@@ -1,7 +1,7 @@
-/** Chunk was on 97755 **/
+/** Chunk was on 21616 **/
 /** chunk id: 420529, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => y
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -18,7 +18,7 @@ var Chunk399606 = require("./399606.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function N(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,7 +37,7 @@ function N(e) {
   return e
 }
 
-function p(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -50,51 +50,51 @@ function p(e, t) {
   }), e
 }
 
-function O(e) {
-  let t = (0, l.e7)([o.Z], () => o.Z.getChannelId() === e.id),
-    O = (0, d.Z)(),
-    b = (null == O ? true : O.channelId) === e.id,
-    y = (0, c.V)(e) && !e.isPrivate(),
-    P = (0, c.Z)(e),
-    _ = !(0, l.e7)([a.Z], () => a.Z.isInChannel(e.id)) && P || y,
-    v = (0, f.Z)();
-  return b || 0 !== v.length ? b ? (0, r.jsx)(i.sNh, {
-    label: g.intl.string(g.t.PlwgdX),
+function y(e) {
+  let t = (0, i.e7)([s.Z], () => s.Z.getChannelId() === e.id),
+    y = (0, d.Z)(),
+    C = (null == y ? true : y.channelId) === e.id,
+    _ = (0, o.V)(e) && !e.isPrivate(),
+    v = (0, o.Z)(e),
+    x = !(0, i.e7)([c.Z], () => c.Z.isInChannel(e.id)) && v || _,
+    O = (0, p.Z)();
+  return C || 0 !== O.length ? C ? (0, r.jsx)(l.sNh, {
+    label: m.intl.string(m.t.PlwgdX),
     id: "handoff",
     action: () => {
-      (0, s.F)(O)
+      (0, u.F)(y)
     },
-    icon: (0, E.Z)(true),
-    disabled: _
-  }) : v.map(l => {
-    var c, o;
-    return (0, r.jsx)(i.sNh, {
-      id: "transfer-".concat(l.type, "-").concat(l.id),
-      label: (c = l.type, o = t, c === Z.ABu.XBOX ? o ? g.intl.string(g.t["qVE/VF"]) : g.intl.string(g.t.E8euSk) : c === Z.ABu.PLAYSTATION ? o ? g.intl.string(g.t.vzfxmZ) : g.intl.string(g.t.QxEYDg) : c === Z.ABu.PLAYSTATION_STAGING ? o ? g.intl.string(g.t.BDiXtb) : g.intl.string(g.t["bhdB9/"]) : true),
+    icon: (0, h.Z)(true),
+    disabled: x
+  }) : O.map(i => {
+    var o, s;
+    return (0, r.jsx)(l.sNh, {
+      id: "transfer-".concat(i.type, "-").concat(i.id),
+      label: (o = i.type, s = t, o === f.ABu.XBOX ? s ? m.intl.string(m.t["qVE/VF"]) : m.intl.string(m.t.E8euSk) : o === f.ABu.PLAYSTATION ? s ? m.intl.string(m.t.vzfxmZ) : m.intl.string(m.t.QxEYDg) : o === f.ABu.PLAYSTATION_STAGING ? s ? m.intl.string(m.t.BDiXtb) : m.intl.string(m.t["bhdB9/"]) : true),
       action: () => (t => {
-        if (!t.twoWayLink || t.revoked) return void(0, u.Z)({
+        if (!t.twoWayLink || t.revoked) return void(0, a.Z)({
           platformType: t.type,
           location: "Console Transfer Item"
         });
-        t.type === Z.ABu.XBOX ? (0, i.ZDy)(async () => {
+        t.type === f.ABu.XBOX ? (0, l.ZDy)(async () => {
           let {
             default: t
           } = await Promise.all([n.e("17758"), n.e("522")]).then(n.bind(n, 200623));
-          return n => (0, r.jsx)(t, p(N({}, n), {
+          return n => (0, r.jsx)(t, b(g({}, n), {
             channel: e
           }))
-        }) : (t.type === Z.ABu.PLAYSTATION || t.type === Z.ABu.PLAYSTATION_STAGING) && (0, i.ZDy)(async () => {
+        }) : (t.type === f.ABu.PLAYSTATION || t.type === f.ABu.PLAYSTATION_STAGING) && (0, l.ZDy)(async () => {
           let {
-            default: l
+            default: i
           } = await n.e("638").then(n.bind(n, 543974));
-          return n => (0, r.jsx)(l, p(N({}, n), {
+          return n => (0, r.jsx)(i, b(g({}, n), {
             platform: t.type,
             channel: e
           }))
         })
-      })(l),
-      icon: (0, E.Z)(l.type),
-      disabled: _
-    }, l.id)
+      })(i),
+      icon: (0, h.Z)(i.type),
+      disabled: x
+    }, i.id)
   }) : null
 }

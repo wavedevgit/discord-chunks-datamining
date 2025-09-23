@@ -1,7 +1,7 @@
-/** Chunk was on 11160 **/
+/** Chunk was on 89929 **/
 /** chunk id: 178088, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  k: () => Z
+  k: () => w
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -31,13 +31,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk253107 = require("./253107.js");
 
-function Z(e) {
+function w(e) {
   let {
     onOpen: t,
     onClose: n,
     children: l,
-    badgeState: Z,
-    popoutPosition: w,
+    badgeState: w,
+    popoutPosition: Z,
     popoutAlign: T,
     targetElementRef: A,
     spacing: R,
@@ -74,7 +74,7 @@ function Z(e) {
   }, [n, M]), H = i.useCallback(() => {
     k(!M), M ? null == n || n() : null == t || t()
   }, [n, t, M]);
-  i.useEffect(() => (_.S.subscribe(P.CkL.TOGGLE_INBOX, H), () => void _.S.unsubscribe(P.CkL.TOGGLE_INBOX, H)), [H]);
+  i.useEffect(() => (_.S.subscribe(I.CkL.TOGGLE_INBOX, H), () => void _.S.unsubscribe(I.CkL.TOGGLE_INBOX, H)), [H]);
   let {
     enabled: z,
     inInbox: W
@@ -99,14 +99,14 @@ function Z(e) {
     children: (0, r.jsx)(u.yRy, {
       targetElementRef: A,
       animation: u.yRy.Animation.NONE,
-      position: w,
+      position: Z,
       align: T,
       autoInvert: false,
       shouldShow: M,
       onRequestClose: V,
       renderPopout: function() {
         return (0, r.jsx)(u.VqE, {
-          "aria-label": I.intl.string(I.t.GSmTKC),
+          "aria-label": P.intl.string(P.t.GSmTKC),
           className: D,
           children: (0, r.jsx)("div", {
             className: o()(N.container, {
@@ -116,7 +116,7 @@ function Z(e) {
               component: (0, r.jsx)(x.Z, {
                 tab: U,
                 setTab: G,
-                badgeState: Z,
+                badgeState: w,
                 closePopout: V
               }),
               children: U === c.X.FOR_YOU ? (0, r.jsx)(v.ZP, {}) : U === c.X.MENTIONS ? (0, r.jsx)(j.Z, {

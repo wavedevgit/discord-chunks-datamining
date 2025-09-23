@@ -1,4 +1,4 @@
-/** Chunk was on 11160 **/
+/** Chunk was on 89929 **/
 /** chunk id: 653577, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -35,9 +35,9 @@ function O(e) {
         guild_id: t.guild_id
       })
     }, [x, t.id, t.guild_id]), null == t.guild_id) return null;
-  let P = o()(m.statusDiv, n && E ? m.hoverable : null);
+  let I = o()(m.statusDiv, n && E ? m.hoverable : null);
   return x ? (0, r.jsx)(s.P3F, {
-    className: P,
+    className: I,
     onClick: E ? y : true,
     children: (0, r.jsx)(s.Text, {
       variant: "text-xs/medium",
@@ -49,7 +49,7 @@ function O(e) {
       })
     })
   }) : n && E && (!S || l) ? (0, r.jsxs)(s.P3F, {
-    className: P,
+    className: I,
     onClick: y,
     children: [(0, r.jsx)(s.Text, {
       variant: "text-xs/medium",

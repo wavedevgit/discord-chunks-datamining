@@ -1,4 +1,4 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 21616 **/
 /** chunk id: 111248, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -25,21 +25,21 @@ function y(e) {
     onContextMenuParticipant: n,
     height: l,
     channel: y,
-    participants: _,
-    onSelectParticipant: C
+    participants: C,
+    onSelectParticipant: _
   } = e, [v, x] = function() {
     let [e, t] = i.useState(() => s.K.get(b, h.VD2.BOTTOM_RIGHT));
     return [e, i.useCallback(e => {
       s.K.set(b, e), t(e)
     }, [])]
-  }(), j = i.useRef(null), O = null == y.getGuildId() ? 70 : 50, E = (0, o.e7)([d.Z], () => d.Z.pipWidth(f.cL.CAMERA_PREVIEW)), S = _.length, I = E * S + 8 * (S - 1), P = i.useMemo(() => ({
+  }(), O = i.useRef(null), j = null == y.getGuildId() ? 70 : 50, E = (0, o.e7)([d.Z], () => d.Z.pipWidth(f.cL.CAMERA_PREVIEW)), S = C.length, P = E * S + 8 * (S - 1), I = i.useMemo(() => ({
     minWidth: f.Rv[f.cL.CAMERA_PREVIEW] * S + 8 * (S - 1),
     maxWidth: f.$i[f.cL.CAMERA_PREVIEW] * S + 8 * (S - 1)
   }), [S]);
   i.useLayoutEffect(() => {
     var e;
-    null == (e = j.current) || e.ensureIsInPosition()
-  }, [_.length]);
+    null == (e = O.current) || e.ensureIsInPosition()
+  }, [C.length]);
   let Z = i.useCallback(e => {
       let t = 0 === S ? e : (e - 8 * (S - 1)) / S;
       c.d7(t, f.cL.CAMERA_PREVIEW)
@@ -52,20 +52,20 @@ function y(e) {
     children: (0, r.jsx)(u._, {
       position: v,
       id: 0,
-      width: I,
-      ref: j,
+      width: P,
+      ref: O,
       onMove: T,
       onResize: Z,
       maxX: t,
       maxY: l,
-      edgeOffsetTop: O,
+      edgeOffsetTop: j,
       edgeOffsetBottom: 70,
       edgeOffsetLeft: 16,
       edgeOffsetRight: 16,
-      resizeConfig: P,
+      resizeConfig: I,
       children: (0, r.jsx)("div", {
         className: m.tileContainer,
-        children: _.map(e => (0, r.jsx)(p.ZP, {
+        children: C.map(e => (0, r.jsx)(p.ZP, {
           participant: e,
           channel: y,
           onContextMenu: n,
@@ -74,7 +74,7 @@ function y(e) {
           inCall: true,
           inPopout: false,
           width: 160,
-          onClick: C
+          onClick: _
         }, e.id))
       })
     })

@@ -1,4 +1,4 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 21616 **/
 /** chunk id: 561472, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => v
@@ -27,27 +27,27 @@ let v = function(e) {
     style: n,
     channel: v,
     draftType: x
-  } = e, [j, O] = i.useState(true), E = (0, l.e7)([d.Z], () => d.Z.hasLayers()), S = (0, l.e7)([p.Z], () => null != v && p.Z.can(_.Plq.ATTACH_FILES, v), [v]), I = null != (0, l.e7)([o.Z], () => o.Z.getActiveCommand(v.id)), P = v.getGuildId(), Z = x === c.d.FirstThreadMessage, T = (0, a.$5)(v), N = i.useMemo(() => !E && (v.isPrivate() && !v.isManaged() || null != P && !T && S && u.Z.canChatInGuild(P)), [S, T, v, P, E]), A = Z ? _.TPd.GUILD_THREADS_ONLY.has(v.type) ? C.intl.string(C.t.RBBLhI) : C.intl.string(C.t.gUx4en) : j ? C.intl.format(C.t.dYP2FR, {
+  } = e, [O, j] = i.useState(true), E = (0, l.e7)([d.Z], () => d.Z.hasLayers()), S = (0, l.e7)([p.Z], () => null != v && p.Z.can(C.Plq.ATTACH_FILES, v), [v]), P = null != (0, l.e7)([o.Z], () => o.Z.getActiveCommand(v.id)), I = v.getGuildId(), Z = x === c.d.FirstThreadMessage, T = (0, a.$5)(v), N = i.useMemo(() => !E && (v.isPrivate() && !v.isManaged() || null != I && !T && S && u.Z.canChatInGuild(I)), [S, T, v, I, E]), A = Z ? C.TPd.GUILD_THREADS_ONLY.has(v.type) ? _.intl.string(_.t.RBBLhI) : _.intl.string(_.t.gUx4en) : O ? _.intl.format(_.t.dYP2FR, {
     destination: (0, s.F6)(v, f.default, h.Z, true)
-  }) : C.intl.string(C.t.h76ulJ);
-  return I || !N ? null : (0, r.jsx)(b.Z, {
+  }) : _.intl.string(_.t.h76ulJ);
+  return P || !N ? null : (0, r.jsx)(b.Z, {
     className: t,
     style: n,
     title: A,
-    description: Z ? C.intl.string(C.t.lpgkzs) : C.intl.string(C.t.usQh4O),
+    description: Z ? _.intl.string(_.t.lpgkzs) : _.intl.string(_.t.usQh4O),
     icons: y.J6,
     onDrop: e => {
-      if (I) returnfalse;
+      if (P) returnfalse;
       N && null != v && ((0, g.d5)(e, v, x, {
-        requireConfirm: j,
+        requireConfirm: O,
         showLargeMessageDialog: false,
         origin: "drag_drop"
-      }), m.S.dispatchToLastSubscribed(_.CkL.TEXTAREA_FOCUS))
+      }), m.S.dispatchToLastSubscribed(C.CkL.TEXTAREA_FOCUS))
     },
-    onDragClear: () => O(true),
+    onDragClear: () => j(true),
     onDragOver: e => {
-      if (I) returnfalse;
-      Z || e.shiftKey !== j || O(!e.shiftKey)
+      if (P) returnfalse;
+      Z || e.shiftKey !== O || j(!e.shiftKey)
     }
   })
 }

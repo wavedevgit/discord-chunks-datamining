@@ -1,5 +1,6 @@
 /** Chunk was on 63141 **/
 /** chunk id: 711553, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => h
 });
@@ -15,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
 let h = function(e) {
   let t, {
       title: n,
-      header: l,
+      header: s,
       children: h,
       renderSettings: p,
       onDragStart: f
@@ -29,7 +30,7 @@ let h = function(e) {
       dynamicSize: true,
       children: n
     }), (0, i.jsx)(a.ZP.Content, {
-      children: (0, i.jsx)(s.yRy, {
+      children: (0, i.jsx)(l.yRy, {
         targetElementRef: g,
         position: "right",
         renderPopout: null != p ? p : c.dG4,
@@ -54,7 +55,7 @@ let h = function(e) {
             }
             return e
           }({}, e), n = n = {
-            icon: s.ewm,
+            icon: l.ewm,
             label: d.intl.string(d.t["3D5yo6"]),
             ref: g
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -70,7 +71,7 @@ let h = function(e) {
         }
       })
     })]
-  }) : l, (0, i.jsxs)("div", {
+  }) : s, (0, i.jsxs)("div", {
     className: u.sidebar,
     children: [t, (0, i.jsx)("div", {
       className: u.children,

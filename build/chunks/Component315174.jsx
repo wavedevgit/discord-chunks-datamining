@@ -1,4 +1,4 @@
-/** Chunk was on 11160 **/
+/** Chunk was on 89929 **/
 /** chunk id: 315174, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ZP: () => R,
@@ -96,7 +96,7 @@ function S(e) {
   })
 }
 
-function P(e) {
+function I(e) {
   let {
     guild: t,
     controller: n,
@@ -140,7 +140,7 @@ function P(e) {
   })
 }
 
-function I() {
+function P() {
   return (0, Chunk951288.jsx)(Chunk481060.r7p, {
     size: "custom",
     color: "currentColor",
@@ -159,7 +159,7 @@ let N = e => {
   })
 };
 
-function Z(e) {
+function w(e) {
   let {
     guild: t
   } = e;
@@ -171,7 +171,7 @@ function Z(e) {
   })
 }
 
-function w(e) {
+function Z(e) {
   var t;
   let {
     bannerVisible: n,
@@ -187,7 +187,7 @@ function w(e) {
     children: [(0, r.jsx)(y.Z, {
       guild: i,
       isBannerVisible: n
-    }), i.id === v._ && (0, r.jsx)(I, {}), (0, r.jsx)(Z, {
+    }), i.id === v._ && (0, r.jsx)(P, {}), (0, r.jsx)(w, {
       guild: i
     }), null != l && (0, r.jsx)(u.P3F, {
       className: x.headerButton,
@@ -224,7 +224,7 @@ function A(e) {
     b ? (0, u.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("7654"), n.e("62292")]).then(n.bind(n, 560114));
+      } = await Promise.all([n.e("7654"), n.e("54833")]).then(n.bind(n, 560114));
       return t => (0, r.jsx)(e, E(C({}, t), {
         guild: o,
         source: _.t4x.GUILD_HEADER_INVITE_BUTTON
@@ -251,7 +251,7 @@ function A(e) {
         children: [(0, r.jsx)(y.Z, {
           guild: o,
           isBannerVisible: l
-        }), o.id === v._ && (0, r.jsx)(I, {}), (0, r.jsx)(Z, {
+        }), o.id === v._ && (0, r.jsx)(P, {}), (0, r.jsx)(w, {
           guild: o
         })]
       }), (0, r.jsx)("div", {
@@ -289,13 +289,13 @@ let R = Chunk647438.memo(function(e) {
     "aria-expanded": y,
     "aria-controls": v,
     guild: j,
-    guildBanner: I,
+    guildBanner: P,
     animationOverlayHeight: N,
-    children: Z,
+    children: w,
     headerClassName: T,
     communityInfoVisible: R,
     hasSubheader: L
-  } = e, M = j.features.has(_.oNc.ANIMATED_BANNER), k = (0, d.Z)(j), U = !k && (0, O.Z)(j), G = !k && R, B = (0, b.xR)(I) && M && !m, [F, V] = i.useState(false), H = i.useRef(false), z = i.useRef(null), W = null != t ? t : z, K = i.useRef(true), Y = g.QK.getSetting();
+  } = e, M = j.features.has(_.oNc.ANIMATED_BANNER), k = (0, d.Z)(j), U = !k && (0, O.Z)(j), G = !k && R, B = (0, b.xR)(P) && M && !m, [F, V] = i.useState(false), H = i.useRef(false), z = i.useRef(null), W = null != t ? t : z, K = i.useRef(true), Y = g.QK.getSetting();
   i.useEffect(() => {
     if (B && n && !H.current && Y) return V(true), K.current = setTimeout(() => {
       V(false)
@@ -351,20 +351,20 @@ let R = Chunk647438.memo(function(e) {
           children: [(0, r.jsx)("div", {
             className: o()(x.headerContent, x.primaryInfo),
             children: X.isGuildEntrypointEnabled ? (0, r.jsx)(A, E(C({}, Q), {
-              children: Z
-            })) : (0, r.jsx)(w, E(C({}, Q), {
-              children: Z
+              children: w
+            })) : (0, r.jsx)(Z, E(C({}, Q), {
+              children: w
             }))
-          }), U && (0, r.jsx)(P, {
+          }), U && (0, r.jsx)(I, {
             guild: j,
             controller: l,
-            hasBanner: null != I,
+            hasBanner: null != P,
             hasSubheader: null != L && L
           })]
-        }), null != I ? (0, r.jsx)(S, {
+        }), null != P ? (0, r.jsx)(S, {
           guild: j,
           controller: l,
-          guildBanner: I,
+          guildBanner: P,
           animate: F
         }) : null, (0, r.jsx)(D, {
           controller: l

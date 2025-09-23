@@ -1,7 +1,7 @@
-/** Chunk was on 47463 **/
+/** Chunk was on 58511 **/
 /** chunk id: 936726, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => Z
+  Z: () => I
 }), require("./35282.js"), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -45,7 +45,7 @@ function N(e) {
   return e
 }
 
-function S(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -58,7 +58,7 @@ function S(e, t) {
   }), e
 }
 
-function w(e, t) {
+function S(e, t) {
   return null != t && /^data:/.test(t) ? t : (0, h.ov)({
     id: e.id,
     avatar: t,
@@ -66,25 +66,25 @@ function w(e, t) {
   })
 }
 
-function Z(e) {
+function I(e) {
   let {
     id: t,
     webhook: n,
     editedWebhook: l,
     channelOptions: h,
-    isExpanded: Z,
-    isNew: I,
-    errors: P,
+    isExpanded: I,
+    isNew: P,
+    errors: Z,
     onToggleExpand: T
   } = e, [E, k] = r.useState(false), [A] = r.useState(new s.V7);
   r.useEffect(() => () => A.stop(), [A]);
-  let D = r.useMemo(() => w(n, n.avatar), [n]),
+  let D = r.useMemo(() => S(n, n.avatar), [n]),
     R = r.useCallback(() => {
       let e = "".concat((0, o.K0)(false)).concat(O.ANM.WEBHOOK_INTEGRATION(n.id, n.token));
       (0, x.JG)(e)
     }, [n]),
     L = r.useCallback(() => {
-      (0, c.h7j)(e => (0, i.jsx)(c.ConfirmModal, S(N({}, e), {
+      (0, c.h7j)(e => (0, i.jsx)(c.ConfirmModal, w(N({}, e), {
         header: _.intl.formatToPlainString(_.t.QVFjHh, {
           name: n.name
         }),
@@ -130,7 +130,7 @@ function Z(e) {
     })
   });
   let B = null;
-  return Z && null != l && (B = (0, i.jsxs)("div", {
+  return I && null != l && (B = (0, i.jsxs)("div", {
     className: C.body,
     children: [(0, i.jsx)(c.$i$, {
       className: C.topDivider
@@ -148,13 +148,13 @@ function Z(e) {
                 avatar: e
               })
             },
-            makeURL: e => w(n, e),
+            makeURL: e => S(n, e),
             imageClassName: C.avatarUploaderInner,
             showIcon: true
-          }), null != P.avatar && "" !== P.avatar ? (0, i.jsx)(c.Text, {
+          }), null != Z.avatar && "" !== Z.avatar ? (0, i.jsx)(c.Text, {
             color: "text-danger",
             variant: "text-sm/normal",
-            children: P.avatar
+            children: Z.avatar
           }) : null]
         })
       }), (0, i.jsxs)(m.Z, {
@@ -172,7 +172,7 @@ function Z(e) {
                 })
               },
               maxLength: 80,
-              error: P.name
+              error: Z.name
             })
           }), (0, i.jsx)(m.Z.Child, {
             basis: "50%",
@@ -223,7 +223,7 @@ function Z(e) {
               return (0, i.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": true,
                 className: C.copyButton,
-                children: (0, i.jsx)(c.zxk, S(N({
+                children: (0, i.jsx)(c.zxk, w(N({
                   variant: "secondary",
                   size: "sm",
                   text: _.intl.string(_.t.Ae9rUV)
@@ -248,12 +248,12 @@ function Z(e) {
   })), (0, i.jsx)(c.Zbd, {
     editable: true,
     id: t,
-    className: a()(C.card, I ? C.pulse : null),
+    className: a()(C.card, P ? C.pulse : null),
     children: (0, i.jsxs)(m.Z, {
       direction: m.Z.Direction.VERTICAL,
       children: [(0, i.jsx)(c.P3F, {
         className: C.header,
-        "aria-expanded": Z,
+        "aria-expanded": I,
         onClick: T,
         children: (0, i.jsxs)(m.Z, {
           align: m.Z.Align.CENTER,
@@ -263,7 +263,7 @@ function Z(e) {
             details: M
           }), (0, i.jsx)(f.Z, {
             className: C.expandIcon,
-            expanded: Z,
+            expanded: I,
             "aria-hidden": true
           })]
         })

@@ -1,4 +1,4 @@
-/** Chunk was on 11160 **/
+/** Chunk was on 89929 **/
 /** chunk id: 222059, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   u: () => L
@@ -55,8 +55,8 @@ function D(e) {
     badge: f,
     link: h,
     showProgressBadge: b
-  } = e, [O, y] = i.useState(false), [_, v] = i.useState(false), [j, x] = i.useState(null), [C, Z] = i.useState(0), D = (0, l.Ie)("home"), L = (0, p.oq)().activePanel === p.wh.APP_ICON, M = () => {
-    x(null), Z(0), clearTimeout(j)
+  } = e, [O, y] = i.useState(false), [_, v] = i.useState(false), [j, x] = i.useState(null), [C, w] = i.useState(0), D = (0, l.Ie)("home"), L = (0, p.oq)().activePanel === p.wh.APP_ICON, M = () => {
+    x(null), w(0), clearTimeout(j)
   };
   if (null == d) return null;
   let k = T.intl.string(T.t.YUU0RE);
@@ -69,7 +69,7 @@ function D(e) {
   let G = o || O || L,
     B = (0, r.jsx)(s.aRk, {
       selected: true,
-      lowerBadge: f > 0 ? (0, I.Ne)(f) : null,
+      lowerBadge: f > 0 ? (0, P.Ne)(f) : null,
       upperBadge: U,
       lowerBadgeSize: {
         width: (0, s.OVM)(f)
@@ -95,10 +95,10 @@ function D(e) {
         onMouseEnter: () => y(true),
         onMouseLeave: () => y(false),
         onClick: () => {
-          if (!__OVERLAY__ && (null != j && clearTimeout(j), x(setTimeout(M, 500)), Z(C + 1), 15 === C)) {
+          if (!__OVERLAY__ && (null != j && clearTimeout(j), x(setTimeout(M, 500)), w(C + 1), 15 === C)) {
             M();
             let e = !a.K.get(N.wli);
-            a.K.set(N.wli, e), e && a.K.set(w.O, true), e ? (0, g.GN)("discodo") : (0, g.GN)("user_leave"), v(true), setTimeout(() => {
+            a.K.set(N.wli, e), e && a.K.set(Z.O, true), e ? (0, g.GN)("discodo") : (0, g.GN)("user_leave"), v(true), setTimeout(() => {
               v(false)
             }, 1e3)
           }
@@ -141,7 +141,7 @@ function D(e) {
           selected: o,
           hovered: O,
           className: A.pill
-        }), (0, r.jsx)(P.Z, {
+        }), (0, r.jsx)(I.Z, {
           color: s.ua7.Colors.PRIMARY,
           hideOnClick: true,
           text: k,

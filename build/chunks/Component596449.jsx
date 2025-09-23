@@ -1,4 +1,4 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 91053 **/
 /** chunk id: 596449, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -15,8 +15,8 @@ function c(e) {
   let {
     className: t,
     guildId: c
-  } = e, u = (0, a.Z)();
-  return (0, r.jsx)(o.Z, {
+  } = e, d = (0, a.Z)();
+  return (0, r.jsx)(s.Z, {
     className: t,
     icon: (0, r.jsx)(l.Que, {
       size: "custom",
@@ -25,13 +25,13 @@ function c(e) {
       width: 20
     }),
     color: i.Z.unsafe_rawColors.BRAND_500.css,
-    title: s.intl.string(s.t["60lJ0N"]),
-    description: s.intl.string(s.t["EYn7//"]),
+    title: o.intl.string(o.t["60lJ0N"]),
+    description: o.intl.string(o.t["EYn7//"]),
     onClick: function() {
       (0, l.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([n.e("36599"), n.e("60962"), n.e("61"), n.e("21630")]).then(n.bind(n, 779250));
+        } = await Promise.all([n.e("36599"), n.e("61"), n.e("38793")]).then(n.bind(n, 779250));
         return t => {
           var n, i;
           return (0, r.jsx)(e, (n = function(e) {
@@ -64,7 +64,7 @@ function c(e) {
             Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
           }), n))
         }
-      }, u)
+      }, d)
     }
   })
 }

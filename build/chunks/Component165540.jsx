@@ -1,7 +1,7 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 21616 **/
 /** chunk id: 165540, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => O
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -37,15 +37,15 @@ let x = Chunk647438.forwardRef(function(e, t) {
         y.onMouseEnter()
       }
     }), [y]);
-    let j = i.useCallback(() => {
+    let O = i.useCallback(() => {
         m ? d.yT(h.ti.DISMISSED) : (d.__(h._b.TEXT, u), c.ux()), x()
       }, [m, u, x]),
-      O = (0, r.jsx)(b, {
+      j = (0, r.jsx)(b, {
         size: "refresh_sm",
         color: "currentColor"
       });
     return (0, r.jsx)("div", {
-      className: a()(v.buttonContainer, _.t4),
+      className: a()(v.buttonContainer, C.t4),
       ref: t,
       children: (0, r.jsx)(s.zx, (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -71,8 +71,8 @@ let x = Chunk647438.forwardRef(function(e, t) {
         className: a()(v.button, {
           [v.buttonActive]: m
         }),
-        onClick: j,
-        "aria-label": C.intl.string(C.t.erHFxM),
+        onClick: O,
+        "aria-label": _.intl.string(_.t.erHFxM),
         "aria-expanded": m,
         "aria-haspopup": "dialog",
         focusProps: {
@@ -85,7 +85,7 @@ let x = Chunk647438.forwardRef(function(e, t) {
         },
         innerClassName: v.buttonContents
       }, y), l = l = {
-        children: O
+        children: j
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -98,7 +98,7 @@ let x = Chunk647438.forwardRef(function(e, t) {
       }), n))
     })
   }),
-  j = Chunk647438.memo(function(e) {
+  O = Chunk647438.memo(function(e) {
     let {
       channel: t,
       type: n,
@@ -110,7 +110,7 @@ let x = Chunk647438.forwardRef(function(e, t) {
     }), d = (0, y.Z)({
       type: n
     }), h = (0, u.Z)(t), g = (0, o.e7)([p.Z], () => p.Z.appDMChannelsWithFailedLoads().has(t.id)), {
-      visible: _
+      visible: C
     } = (0, b.xL)();
     return c ? (0, r.jsxs)("div", {
       className: v.channelAppLauncher,
@@ -119,7 +119,7 @@ let x = Chunk647438.forwardRef(function(e, t) {
         ref: s,
         animateRef: l
       }), d ? (0, r.jsx)(f.Z, {
-        positionTargetRef: h && !g && _ ? a : s,
+        positionTargetRef: h && !g && C ? a : s,
         channel: t
       }) : null]
     }) : null

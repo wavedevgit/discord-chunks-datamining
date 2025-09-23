@@ -1,4 +1,4 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 91053 **/
 /** chunk id: 643560, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => f
@@ -49,36 +49,36 @@ function f(e) {
   let {
     entry: t,
     onSelect: f,
-    closePopout: m,
-    hideEditButton: g = false
+    closePopout: g,
+    hideEditButton: m = false
   } = e, {
     isEntryAdmin: b,
     canEdit: y,
     canRemove: _
-  } = (0, u.Z)(t), C = (0, o.Z)({
+  } = (0, d.Z)(t), O = (0, s.Z)({
     id: t.guildId,
-    label: d.intl.string(d.t["94lLDw"]),
-    onSuccess: m
+    label: u.intl.string(u.t["94lLDw"]),
+    onSuccess: g
   });
   i.useEffect(() => {
-    y || _ || null != C || (0, a.Zy)()
+    y || _ || null != O || (0, a.Zy)()
   });
-  let v = () => {
+  let j = () => {
     c.kx(t.channelId, t.guildId)
   };
 
   function x() {
-    (0, a.Zy)(), null == m || m()
+    (0, a.Zy)(), null == g || g()
   }
   return (0, r.jsxs)(l.v2r, {
     navId: "guild-entry-context",
     onClose: x,
-    "aria-label": d.intl.string(d.t.HpQykZ),
+    "aria-label": u.intl.string(u.t.HpQykZ),
     onSelect: f,
     children: [(0, r.jsxs)(l.kSQ, {
-      children: [y && !g ? (0, r.jsx)(l.sNh, {
+      children: [y && !m ? (0, r.jsx)(l.sNh, {
         id: "update-entry",
-        label: d.intl.string(d.t.XnuOvL),
+        label: u.intl.string(u.t.XnuOvL),
         action: function() {
           (0, l.ZDy)(async () => {
             let {
@@ -91,17 +91,17 @@ function f(e) {
         }
       }) : null, _ ? (0, r.jsx)(l.sNh, {
         id: "remove-from-hub",
-        label: d.intl.string(d.t.KUxYWF),
+        label: u.intl.string(u.t.KUxYWF),
         action: function() {
           (0, l.h7j)(e => (0, r.jsx)(l.ConfirmModal, h(p({
-            header: d.intl.string(d.t.KUxYWF),
-            confirmText: d.intl.string(d.t.N86XcH),
-            cancelText: d.intl.string(d.t["ETE/oK"]),
-            onConfirm: v
+            header: u.intl.string(u.t.KUxYWF),
+            confirmText: u.intl.string(u.t.N86XcH),
+            cancelText: u.intl.string(u.t["ETE/oK"]),
+            onConfirm: j
           }, e), {
             children: (0, r.jsx)(l.Text, {
               variant: "text-md/normal",
-              children: d.intl.format(d.t["/5y0ub"], {
+              children: u.intl.format(u.t["/5y0ub"], {
                 guildName: t.name
               })
             })
@@ -110,15 +110,15 @@ function f(e) {
         color: "danger"
       }) : null, b ? null : (0, r.jsx)(l.sNh, {
         id: "report-server-listing",
-        label: d.intl.string(d.t.Aen9en),
+        label: u.intl.string(u.t.Aen9en),
         action: function() {
-          null != t && ((0, s.sq)(t), x())
+          null != t && ((0, o.sq)(t), x())
         },
         icon: l.U65,
         color: "danger"
       })]
     }), (0, r.jsx)(l.kSQ, {
-      children: C
+      children: O
     })]
   })
 }

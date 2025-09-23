@@ -1,7 +1,7 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 21616 **/
 /** chunk id: 213652, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => C
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,24 +20,24 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk591868 = require("./591868.js");
 
-function _(e) {
+function C(e) {
   let {
     channel: t
   } = e, {
     parentAnalyticsLocation: n
-  } = (0, o.ZP)(), _ = (0, l.e7)([f.Z], () => f.Z.getSelectedParticipant(t.id)), C = (null == _ ? true : _.type) === g.fO.STREAM, v = (0, l.e7)([p.Z], () => C ? p.Z.getActiveStreamForStreamKey(_.id) : null), {
+  } = (0, o.ZP)(), C = (0, l.e7)([f.Z], () => f.Z.getSelectedParticipant(t.id)), _ = (null == C ? true : C.type) === g.fO.STREAM, v = (0, l.e7)([p.Z], () => _ ? p.Z.getActiveStreamForStreamKey(C.id) : null), {
     ignoreSenderPreference: x
   } = u.Z.useExperiment({
     location: "ActionBarClipsButton"
   }, {
     autoTrackExposure: false
   }), {
-    viewerClippingAllowed: j,
-    isAtMaxSavingClipOperations: O
+    viewerClippingAllowed: O,
+    isAtMaxSavingClipOperations: j
   } = (0, l.cj)([s.Z], () => ({
     viewerClippingAllowed: null != v && (s.Z.isViewerClippingAllowedForUser(v.ownerId) || x),
     isAtMaxSavingClipOperations: s.Z.getIsAtMaxSaveClipOperations()
-  })), E = s.Z.getSettings().clipsEnabled, S = (null == v ? true : v.ownerId) === h.default.getId(), I = !E || !(S || j) || O || null == _, P = i.useCallback(e => {
+  })), E = s.Z.getSettings().clipsEnabled, S = (null == v ? true : v.ownerId) === h.default.getId(), P = !E || !(S || O) || j || null == C, I = i.useCallback(e => {
     var t, n;
     return (0, r.jsx)(a.xmR, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -72,11 +72,11 @@ function _(e) {
   return (0, r.jsx)(d.Z, {
     className: y.actionBarButton,
     onClick: () => {
-      I || ((0, m.v)(n, m.d.CLIP), S ? (0, c.C1)() : (0, c.C1)(_.id))
+      P || ((0, m.v)(n, m.d.CLIP), S ? (0, c.C1)() : (0, c.C1)(C.id))
     },
-    disabled: I,
-    iconComponent: P,
-    label: null == v ? b.intl.string(b.t.eg5qtb) : S || j ? E ? O ? true : b.intl.string(b.t.U4URzM) : b.intl.string(b.t.wSS1yM) : b.intl.string(b.t.aRifJS),
+    disabled: P,
+    iconComponent: I,
+    label: null == v ? b.intl.string(b.t.eg5qtb) : S || O ? E ? j ? true : b.intl.string(b.t.U4URzM) : b.intl.string(b.t.wSS1yM) : b.intl.string(b.t.aRifJS),
     grow: false
   })
 }

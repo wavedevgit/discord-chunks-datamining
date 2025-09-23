@@ -1,4 +1,4 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 91053 **/
 /** chunk id: 57304, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function m(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,7 +35,7 @@ function m(e) {
   return e
 }
 
-function g(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -50,17 +50,17 @@ function g(e, t) {
 let b = function(e) {
   let {
     channel: t
-  } = e, n = (0, c.$5)(t), [b, y] = i.useState(false), _ = (0, l.e7)([u.ZP], () => u.ZP.hasUnreadPins(t.id), [t]), C = (0, s.Aq)(), v = i.useRef(null), x = i.useCallback(() => {
+  } = e, n = (0, c.$5)(t), [b, y] = i.useState(false), _ = (0, l.e7)([d.ZP], () => d.ZP.hasUnreadPins(t.id), [t]), O = (0, o.Aq)(), j = i.useRef(null), x = i.useCallback(() => {
     n || y(e => !e)
   }, [n]);
 
-  function j(e) {
-    (null == e ? true : e.shiftKey) || C.dispatch(h.CkL.POPOUT_CLOSE)
+  function v(e) {
+    (null == e ? true : e.shiftKey) || O.dispatch(h.CkL.POPOUT_CLOSE)
   }
-  return i.useEffect(() => (d.S.subscribe(h.CkL.TOGGLE_CHANNEL_PINS, x), () => {
-    d.S.unsubscribe(h.CkL.TOGGLE_CHANNEL_PINS, x)
+  return i.useEffect(() => (u.S.subscribe(h.CkL.TOGGLE_CHANNEL_PINS, x), () => {
+    u.S.unsubscribe(h.CkL.TOGGLE_CHANNEL_PINS, x)
   }), [x]), (0, r.jsx)(a.yRy, {
-    targetElementRef: v,
+    targetElementRef: j,
     shouldShow: b,
     animation: a.yRy.Animation.NONE,
     position: "bottom",
@@ -69,8 +69,8 @@ let b = function(e) {
     ignoreModalClicks: true,
     onRequestClose: () => y(false),
     renderPopout: function(e) {
-      return (0, r.jsx)(o.Z, g(m({}, e), {
-        onJump: j,
+      return (0, r.jsx)(s.Z, m(g({}, e), {
+        onJump: v,
         channel: t
       }))
     },
@@ -79,8 +79,8 @@ let b = function(e) {
       let {
         isShown: i
       } = t;
-      return (0, r.jsx)(p.JO, g(m({}, e), {
-        ref: v,
+      return (0, r.jsx)(p.JO, m(g({}, e), {
+        ref: j,
         onClick: x,
         tooltip: i ? null : f.intl.string(f.t["mp1N//"]),
         icon: a.qQX,

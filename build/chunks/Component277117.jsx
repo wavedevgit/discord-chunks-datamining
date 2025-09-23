@@ -1,4 +1,4 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 91053 **/
 /** chunk id: 277117, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => w
@@ -40,62 +40,62 @@ function w(e) {
     user: t,
     currentUser: n,
     displayProfile: w,
-    channel: R,
-    isHovering: M,
-    onOpenProfile: D
+    channel: A,
+    isHovering: D,
+    onOpenProfile: L
   } = e, {
-    relationshipType: k,
-    originApplicationId: L
-  } = (0, l.cj)([u.Z], () => ({
-    relationshipType: u.Z.getRelationshipType(t.id),
-    originApplicationId: u.Z.getOriginApplicationId(t.id)
-  })), U = (0, o.vh)(t.id), B = (0, s.Y)({
+    relationshipType: M,
+    originApplicationId: k
+  } = (0, l.cj)([d.Z], () => ({
+    relationshipType: d.Z.getRelationshipType(t.id),
+    originApplicationId: d.Z.getOriginApplicationId(t.id)
+  })), U = (0, s.vh)(t.id), G = (0, o.Y)({
     userId: t.id
-  }), G = (0, l.e7)([d.Z], () => d.Z.hidePersonalInformation), H = (0, l.e7)([h.Z], () => {
+  }), H = (0, l.e7)([u.Z], () => u.Z.hidePersonalInformation), F = (0, l.e7)([h.Z], () => {
     var e;
     return null == (e = h.Z.getUserProfile(t.id)) ? true : e.application
-  }), F = (0, f.b)({
+  }), B = (0, f.b)({
     location: "UserProfileSidebarBody"
   });
   return (0, r.jsxs)("div", {
-    className: A.body,
-    children: [(0, r.jsx)(I.Z, {
+    className: R.body,
+    children: [(0, r.jsx)(S.Z, {
       user: t,
-      nickname: p.ZP.getName(null, R.id, t),
+      nickname: p.ZP.getName(null, A.id, t),
       pronouns: null == w ? true : w.pronouns,
-      onOpenProfile: D,
-      tags: (0, r.jsx)(g.Z, {
+      onOpenProfile: L,
+      tags: (0, r.jsx)(m.Z, {
         displayProfile: w,
         themeType: T.l.SIDEBAR
       }),
       nicknameIcons: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(_.Z, {
           userId: t.id
-        }), !G && (0, r.jsx)(P.Z, {
+        }), !H && (0, r.jsx)(Z.Z, {
           userId: t.id,
-          isHovering: M,
-          onOpenProfile: D
+          isHovering: D,
+          onOpenProfile: L
         })]
       })
-    }), k === Z.OGo.PENDING_INCOMING && (0, r.jsx)(S.Z.Overlay, {
-      children: (0, r.jsx)(v.Z, {
+    }), M === P.OGo.PENDING_INCOMING && (0, r.jsx)(E.Z.Overlay, {
+      children: (0, r.jsx)(j.Z, {
         user: t,
-        channelId: R.id,
-        applicationId: L
+        channelId: A.id,
+        applicationId: k
       })
-    }), U.map(e => (0, r.jsx)(S.Z.Overlay, {
-      children: (0, r.jsx)(v.Z, {
+    }), U.map(e => (0, r.jsx)(E.Z.Overlay, {
+      children: (0, r.jsx)(j.Z, {
         user: t,
         isGameRelationship: true,
         applicationId: e.applicationId,
-        channelId: R.id
+        channelId: A.id
       })
-    }, e.applicationId)), (0, r.jsx)(j.Z, {
+    }, e.applicationId)), (0, r.jsx)(v.Z, {
       user: t,
-      className: A.card
-    }), t.isProvisional && (0, r.jsx)(S.Z.Overlay, {
-      className: A.card,
-      children: (0, r.jsx)(O.Z, {
+      className: R.card
+    }), t.isProvisional && (0, r.jsx)(E.Z.Overlay, {
+      className: R.card,
+      children: (0, r.jsx)(C.Z, {
         heading: N.intl.string(N.t.Iyka0d),
         headingIcon: (0, r.jsx)(i.Mgn, {
           size: "xxs",
@@ -106,36 +106,36 @@ function w(e) {
           userId: t.id
         })
       })
-    }), F ? (0, r.jsx)(E.Z, {
+    }), B ? (0, r.jsx)(I.Z, {
       user: t,
       currentUser: n,
-      onOpenUserProfileModal: D
+      onOpenUserProfileModal: L
     }) : (0, r.jsx)(y.Z, {
       user: t,
       currentUser: n,
-      className: A.card
-    }), (0, r.jsxs)(S.Z.Overlay, {
-      className: A.overlay,
-      children: [!G && (null == w ? true : w.bio) != null && (null == w ? true : w.bio) !== "" && (0, r.jsx)(O.Z, {
+      className: R.card
+    }), (0, r.jsxs)(E.Z.Overlay, {
+      className: R.overlay,
+      children: [!H && (null == w ? true : w.bio) != null && (null == w ? true : w.bio) !== "" && (0, r.jsx)(C.Z, {
         heading: N.intl.string(N.t["61W33d"]),
         headingColor: "header-primary",
         children: (0, r.jsx)(b.Z, {
           userBio: w.bio,
           animateOnHover: true,
-          isHovering: M,
+          isHovering: D,
           userId: t.id
         })
-      }), (null == H ? true : H.popularApplicationCommandIds) != null && (0, r.jsx)(m.Z, {
-        applicationId: H.id,
-        commandIds: H.popularApplicationCommandIds,
-        channel: R
-      }), B.length > 0 && (0, r.jsx)(O.Z, {
+      }), (null == F ? true : F.popularApplicationCommandIds) != null && (0, r.jsx)(g.Z, {
+        applicationId: F.id,
+        commandIds: F.popularApplicationCommandIds,
+        channel: A
+      }), G.length > 0 && (0, r.jsx)(C.Z, {
         heading: N.intl.string(N.t["Uv/eT0"]),
         headingColor: "header-primary",
-        children: (0, r.jsx)(C.Z, {
-          applicationIds: B
+        children: (0, r.jsx)(O.Z, {
+          applicationIds: G
         })
-      }), (0, r.jsx)(O.Z, {
+      }), (0, r.jsx)(C.Z, {
         heading: t.bot ? N.intl.string(N.t["A//N4u"]) : N.intl.string(N.t.a6XYDw),
         headingColor: "header-primary",
         children: (0, r.jsx)(x.Z, {

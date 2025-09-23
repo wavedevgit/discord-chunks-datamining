@@ -1,7 +1,7 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 91053 **/
 /** chunk id: 400251, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => A,
+  Z: () => R,
   m: () => T
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
@@ -29,7 +29,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk777261 = require("./777261.js"),
   Chunk883760 = require("./883760.js");
 
-function I(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -48,7 +48,7 @@ function I(e) {
   return e
 }
 
-function P(e, t) {
+function Z(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -61,7 +61,7 @@ function P(e, t) {
   }), e
 }
 
-function Z(e, t) {
+function P(e, t) {
   if (null == e) return {};
   var n, r, i = function(e, t) {
     if (null == e) return {};
@@ -82,15 +82,15 @@ let T = e => {
   } = e;
   return (0, r.jsxs)(c.P3F, {
     onClick: t,
-    className: E.addEntryCard,
+    className: I.addEntryCard,
     children: [(0, r.jsx)("img", {
       alt: "",
-      src: S
+      src: E
     }), (0, r.jsx)(c.Text, {
       variant: "text-sm/semibold",
       color: "header-primary",
-      className: E.addServerText,
-      children: O.intl.string(O.t.H9jxS0)
+      className: I.addServerText,
+      children: C.intl.string(C.t.H9jxS0)
     })]
   })
 };
@@ -98,67 +98,67 @@ let T = e => {
 function N(e) {
   let {
     entry: t
-  } = e, [l, o] = i.useState(false), s = i.useRef(null), {
-    canEdit: u
-  } = (0, v.Z)(t);
+  } = e, [l, s] = i.useState(false), o = i.useRef(null), {
+    canEdit: d
+  } = (0, j.Z)(t);
   return (0, r.jsx)("div", {
-    className: a()(E.actionButtonsContainer, {
-      [E.forceButtonsShow]: l
+    className: a()(I.actionButtonsContainer, {
+      [I.forceButtonsShow]: l
     }),
     children: (0, r.jsxs)(h.ZP, {
-      children: [u ? (0, r.jsx)(c.ua7, {
-        text: O.intl.string(O.t.XnuOvL),
+      children: [d ? (0, r.jsx)(c.ua7, {
+        text: C.intl.string(C.t.XnuOvL),
         hideOnClick: true,
         children: e => {
           var {
             onClick: i
-          } = e, l = Z(e, ["onClick"]);
-          return (0, r.jsx)(h.zx, P(I({}, l), {
+          } = e, l = P(e, ["onClick"]);
+          return (0, r.jsx)(h.zx, Z(S({}, l), {
             onClick: () => {
               null == i || i(), (0, c.ZDy)(async () => {
                 let {
                   default: e
                 } = await n.e("34191").then(n.bind(n, 303647));
-                return n => (0, r.jsx)(e, P(I({}, n), {
+                return n => (0, r.jsx)(e, Z(S({}, n), {
                   entry: t
                 }))
               })
             },
-            "aria-label": O.intl.string(O.t.XnuOvL),
+            "aria-label": C.intl.string(C.t.XnuOvL),
             children: (0, r.jsx)(c.vdY, {
               size: "xs",
               color: "currentColor",
-              className: E.overflowIcon
+              className: I.overflowIcon
             })
           }))
         }
       }) : null, (0, r.jsx)(x.Z, {
-        targetElementRef: s,
-        onRequestOpen: () => o(true),
-        onRequestClose: () => o(false),
+        targetElementRef: o,
+        onRequestOpen: () => s(true),
+        onRequestClose: () => s(false),
         entry: t,
         hideEditButton: true,
         children: e => {
           var {
             onClick: t
-          } = e, n = Z(e, ["onClick"]);
+          } = e, n = P(e, ["onClick"]);
           return (0, r.jsx)(c.ua7, {
-            text: O.intl.string(O.t.UKOtz8),
+            text: C.intl.string(C.t.UKOtz8),
             hideOnClick: true,
             children: e => {
               var {
                 onClick: i
-              } = e, l = Z(e, ["onClick"]);
-              return (0, r.jsx)(h.zx, P(I({}, n, l), {
-                ref: s,
+              } = e, l = P(e, ["onClick"]);
+              return (0, r.jsx)(h.zx, Z(S({}, n, l), {
+                ref: o,
                 onClick: e => {
                   null == i || i(), t(e)
                 },
-                "aria-label": O.intl.string(O.t.UKOtz8),
+                "aria-label": C.intl.string(C.t.UKOtz8),
                 children: (0, r.jsx)(c.xhG, {
                   size: "md",
                   color: "currentColor",
-                  className: E.overflowIcon
+                  className: I.overflowIcon
                 })
               }))
             }
@@ -168,61 +168,61 @@ function N(e) {
     })
   })
 }
-let A = e => {
+let R = e => {
   var t;
   let {
     entry: l
-  } = e, [a, h] = i.useState(false), v = null != (0, o.e7)([y.Z], () => y.Z.getGuild(l.guildId)), x = async () => {
+  } = e, [a, h] = i.useState(false), j = null != (0, s.e7)([y.Z], () => y.Z.getGuild(l.guildId)), x = async () => {
     h(true);
     try {
-      v ? (0, b.X)(l.guildId) : await d.Z.joinGuild(l.guildId, {
-        source: j.vtS.DIRECTORY_ENTRY
+      j ? (0, b.X)(l.guildId) : await u.Z.joinGuild(l.guildId, {
+        source: v.vtS.DIRECTORY_ENTRY
       })
     } finally {
       h(false)
     }
-  }, S = _.ZP.getGuildSplashURL({
+  }, E = _.ZP.getGuildSplashURL({
     id: l.guildId,
     splash: l.splash,
-    size: 300 * (0, g.x_)()
-  }), Z = null != (t = _.ZP.getGuildIconURL({
+    size: 300 * (0, m.x_)()
+  }), P = null != (t = _.ZP.getGuildIconURL({
     id: l.guildId,
     icon: l.icon,
     size: 40
-  })) ? t : true, T = O.intl.string(O.t.VJlc0d);
-  return v && (T = O.intl.string(O.t.cqWE2d)), (0, r.jsxs)("div", {
-    className: E.card,
+  })) ? t : true, T = C.intl.string(C.t.VJlc0d);
+  return j && (T = C.intl.string(C.t.cqWE2d)), (0, r.jsxs)("div", {
+    className: I.card,
     onContextMenu: e => {
-      (0, u.jW)(e, async () => {
+      (0, d.jW)(e, async () => {
         let {
           default: e
         } = await Promise.resolve().then(n.bind(n, 643560));
-        return t => (0, r.jsx)(e, P(I({}, t), {
+        return t => (0, r.jsx)(e, Z(S({}, t), {
           entry: l
         }))
       })
     },
     children: [(0, r.jsxs)("div", {
-      className: E.cardHeader,
+      className: I.cardHeader,
       children: [(0, r.jsx)("div", {
-        className: E.splash,
-        children: null != S && (0, r.jsx)("img", {
-          src: S,
+        className: I.splash,
+        children: null != E && (0, r.jsx)("img", {
+          src: E,
           alt: "",
-          className: E.splashImage
+          className: I.splashImage
         })
       }), (0, r.jsx)("div", {
-        className: E.guildIcon,
+        className: I.guildIcon,
         children: (0, r.jsx)(p.ZP, {
           mask: p.ZP.Masks.SQUIRCLE,
           width: 48,
           height: 48,
           children: (0, r.jsx)("div", {
-            className: E.iconMask,
+            className: I.iconMask,
             children: (0, r.jsx)(f.Z, {
-              className: E.icon,
-              iconSrc: Z,
-              guild: (0, C.e)(l),
+              className: I.icon,
+              iconSrc: P,
+              guild: (0, O.e)(l),
               size: f.Z.Sizes.MEDIUM,
               active: true
             })
@@ -230,53 +230,53 @@ let A = e => {
         })
       })]
     }), (0, r.jsxs)("div", {
-      className: E.guildInfo,
+      className: I.guildInfo,
       children: [(0, r.jsxs)("div", {
-        className: E.title,
-        children: [(0, r.jsx)(m.Z, {
-          className: E.guildBadge,
+        className: I.title,
+        children: [(0, r.jsx)(g.Z, {
+          className: I.guildBadge,
           guild: l,
           tooltipColor: c.ua7.Colors.PRIMARY
         }), (0, r.jsx)(c.Text, {
-          className: E.guildName,
+          className: I.guildName,
           variant: "heading-md/semibold",
           color: "header-primary",
           children: l.name
         })]
       }), (0, r.jsx)(c.Text, {
-        className: E.description,
+        className: I.description,
         variant: "text-sm/normal",
         color: "header-secondary",
         children: l.description
       }), (0, r.jsxs)("div", {
-        className: E.memberInfo,
+        className: I.memberInfo,
         children: [null != l.approximatePresenceCount && (0, r.jsxs)("div", {
-          className: E.memberCount,
+          className: I.memberCount,
           children: [(0, r.jsx)("div", {
-            className: E.dotOnline
+            className: I.dotOnline
           }), (0, r.jsx)(c.Text, {
             variant: "text-xs/normal",
             color: "header-secondary",
-            children: O.intl.format(O.t["LC+S+v"], {
+            children: C.intl.format(C.t["LC+S+v"], {
               membersOnline: l.approximatePresenceCount
             })
           })]
         }), null != l.approximateMemberCount && (0, r.jsxs)("div", {
-          className: E.memberCount,
+          className: I.memberCount,
           children: [(0, r.jsx)("div", {
-            className: E.dotOffline
+            className: I.dotOffline
           }), (0, r.jsx)(c.Text, {
             variant: "text-xs/normal",
             color: "header-secondary",
-            children: O.intl.format(O.t.zRl6XV, {
+            children: C.intl.format(C.t.zRl6XV, {
               count: l.approximateMemberCount
             })
           })]
         })]
-      }), (0, r.jsx)(s.zx, {
+      }), (0, r.jsx)(o.zx, {
         submitting: a,
-        className: E.joinButton,
-        color: v ? s.zx.Colors.PRIMARY : s.zx.Colors.GREEN,
+        className: I.joinButton,
+        color: j ? o.zx.Colors.PRIMARY : o.zx.Colors.GREEN,
         onClick: x,
         children: T
       })]

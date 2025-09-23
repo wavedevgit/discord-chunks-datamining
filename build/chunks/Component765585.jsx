@@ -1,4 +1,4 @@
-/** Chunk was on 11160 **/
+/** Chunk was on 89929 **/
 /** chunk id: 765585, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -31,11 +31,11 @@ let b = Chunk647438.forwardRef(function(e, t) {
     className: C,
     inlineArt: E = false,
     isPremiumFeature: S = false,
-    shouldUseHorizontalButtons: P = false,
-    showGIFTag: I = false,
+    shouldUseHorizontalButtons: I = false,
+    showGIFTag: P = false,
     dismissibleContent: N,
-    position: Z = "top",
-    align: w = "center",
+    position: w = "top",
+    align: Z = "center",
     art: T,
     isPremiumEarlyAccess: A = false,
     maxWidth: R = 280,
@@ -45,7 +45,7 @@ let b = Chunk647438.forwardRef(function(e, t) {
     dismissIcon: k,
     onDismissIconClick: U,
     tryItButtonColor: G
-  } = e, B = P ? a.zx.Sizes.LARGE : a.zx.Sizes.MAX, [F, V] = i.useState(false), {
+  } = e, B = I ? a.zx.Sizes.LARGE : a.zx.Sizes.MAX, [F, V] = i.useState(false), {
     ref: H,
     width: z
   } = (0, c.ZP)();
@@ -78,7 +78,7 @@ let b = Chunk647438.forwardRef(function(e, t) {
         children: k
       }), (0, r.jsxs)("div", {
         className: o()(b, E ? m.artInline : m.artAbsolute),
-        children: [I && (0, r.jsx)(f.Z, {
+        children: [P && (0, r.jsx)(f.Z, {
           className: m.gifTag
         }), T]
       }), (0, r.jsxs)("div", {
@@ -111,7 +111,7 @@ let b = Chunk647438.forwardRef(function(e, t) {
         }) : n]
       }), (0, r.jsx)("div", {
         ref: H,
-        className: F || !P ? m.buttonContainerVertical : m.buttonContainerHorizontal,
+        className: F || !I ? m.buttonContainerVertical : m.buttonContainerHorizontal,
         children: null != j ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(a.zx, {
             className: m.button,
@@ -142,10 +142,10 @@ let b = Chunk647438.forwardRef(function(e, t) {
         })
       }), (0, r.jsx)("div", {
         className: o()(m.pointer, L, {
-          [m.bottomPointer]: "top" === Z,
-          [m.centerLeftPointer]: "right" === Z && "center" === w,
-          [m.topLeftPointer]: "right" === Z && "top" === w,
-          [m.bottomLeftPointer]: "right" === Z && "bottom" === w
+          [m.bottomPointer]: "top" === w,
+          [m.centerLeftPointer]: "right" === w && "center" === Z,
+          [m.topLeftPointer]: "right" === w && "top" === Z,
+          [m.bottomLeftPointer]: "right" === w && "bottom" === Z
         })
       })]
     })

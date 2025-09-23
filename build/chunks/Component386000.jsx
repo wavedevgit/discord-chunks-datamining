@@ -1,4 +1,4 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 21616 **/
 /** chunk id: 386000, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -39,12 +39,12 @@ function d(e) {
   }(e, ["selfMute", "serverMute", "suppress", "centerButton", "awaitingRemote", "onMouseEnter", "onMouseLeave", "onClick"]);
   let {
     parentAnalyticsLocation: y
-  } = (0, a.ZP)(), _ = t || n || d, C = p ? u.d : u.Z, v = (0, o.Z)(t, n, d, h), {
+  } = (0, a.ZP)(), C = t || n || d, _ = p ? u.d : u.Z, v = (0, o.Z)(t, n, d, h), {
     events: x,
-    play: j,
-    Component: O
-  } = (0, c.b)(_), E = n || d ? l.v0G : O;
-  return i.useEffect(() => () => j(), [j, _]), (0, r.jsx)(C, function(e) {
+    play: O,
+    Component: j
+  } = (0, c.b)(C), E = n || d ? l.v0G : j;
+  return i.useEffect(() => () => O(), [O, C]), (0, r.jsx)(_, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -64,8 +64,8 @@ function d(e) {
   }({
     iconComponent: E,
     isTrayButton: true,
-    caretColor: _ ? "red" : "primaryDark",
-    color: _ ? "red" : true,
+    caretColor: C ? "red" : "primaryDark",
+    color: C ? "red" : true,
     label: v,
     onMouseEnter: e => {
       null == f || f(e), x.onMouseEnter()

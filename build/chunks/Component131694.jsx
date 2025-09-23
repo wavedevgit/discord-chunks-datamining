@@ -1,7 +1,7 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 91053 **/
 /** chunk id: 131694, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => g
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -46,25 +46,25 @@ function f(e, t) {
   }), e
 }
 
-function m(e) {
+function g(e) {
   let {
     channel: t
-  } = e, n = (0, s.B)(t), [m, g] = i.useState(false), b = i.useRef(null);
+  } = e, n = (0, o.B)(t), [g, m] = i.useState(false), b = i.useRef(null);
   i.useEffect(() => {
-    let e = () => g(true);
-    return o.S.subscribe(d.CkL.OPEN_THREAD_NOTIFICATION_SETTINGS, e), () => {
-      o.S.unsubscribe(d.CkL.OPEN_THREAD_NOTIFICATION_SETTINGS, e)
+    let e = () => m(true);
+    return s.S.subscribe(u.CkL.OPEN_THREAD_NOTIFICATION_SETTINGS, e), () => {
+      s.S.unsubscribe(u.CkL.OPEN_THREAD_NOTIFICATION_SETTINGS, e)
     }
   }, []);
   let y = p.intl.string(p.t.h850Sk);
   return (0, r.jsx)(l.yRy, {
     targetElementRef: b,
-    shouldShow: m,
+    shouldShow: g,
     animation: l.yRy.Animation.NONE,
     position: "bottom",
     align: "right",
     autoInvert: false,
-    onRequestClose: () => g(false),
+    onRequestClose: () => m(false),
     renderPopout: e => (0, r.jsx)(c.Z, f(h({}, e), {
       channel: t,
       navId: "thread-context",
@@ -76,9 +76,9 @@ function m(e) {
       } = t;
       return (0, r.jsx)(a.ZP.Icon, f(h({}, e), {
         ref: b,
-        onClick: () => g(e => !e),
+        onClick: () => m(e => !e),
         tooltip: i ? null : y,
-        icon: n === u.iN.NO_MESSAGES ? l.owu : l.Dkj,
+        icon: n === d.iN.NO_MESSAGES ? l.owu : l.Dkj,
         "aria-label": y,
         selected: i
       }))

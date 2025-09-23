@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk693587 = require("./693587.js"),
   Chunk741252 = require("./741252.jsx"),
   Chunk473682 = require("./473682.js");
-let [x, j] = (0, Chunk975104.Z)();
+let [v, j] = (0, Chunk975104.Z)();
 
 function b(e) {
   var n, t, d, j, b, h, _;
@@ -26,7 +26,7 @@ function b(e) {
     guildId: C,
     initialPortkeyInstance: y,
     initialPortkeyGame: O,
-    stepConfig: N = v.T9,
+    stepConfig: N = x.T9,
     children: P,
     onClose: S,
     analyticsLocation: w
@@ -54,7 +54,7 @@ function b(e) {
       if (null != D) return Object.values(null != (e = null == k ? true : k.catalog) ? e : {}).find(e => e.id === D)
     }, [null == k ? true : k.catalog, D]),
     [z, F] = r.useState(y),
-    [A, L] = r.useState(null != (d = null == O || null == (n = O.plans[0]) ? true : n.id) ? d : null == y ? true : y.planId),
+    [L, A] = r.useState(null != (d = null == O || null == (n = O.plans[0]) ? true : n.id) ? d : null == y ? true : y.planId),
     V = function(e, n, t, i) {
       var r, a, o, s, c, d, u, m;
       let g = (0, l.e7)([f.Z], () => {
@@ -63,23 +63,23 @@ function b(e) {
         }),
         p = null != (u = null == n || null == (r = n.plans.find(e => e.id === t)) ? true : r.cost) ? u : 0;
       return null == i ? p : p - (null != (m = null == g || null == (d = g[i.entitlementId]) || null == (c = d.sku) || null == (s = c.tenant_metadata) || null == (o = s.guild_monetization) || null == (a = o.game_server) ? true : a.boost_price) ? m : 0)
-    }(C, M, A, z),
+    }(C, M, L, z),
     U = r.useCallback((e, n) => {
       var t;
-      B(null == e ? true : e.id), L(null != n ? n : null == e || null == (t = e.plans[0]) ? true : t.id)
+      B(null == e ? true : e.id), A(null != n ? n : null == e || null == (t = e.plans[0]) ? true : t.id)
     }, []),
     K = r.useCallback(e => {
       var n, t, i;
       F(e);
       let r = null == k || null == (i = k.entitlements) || null == (t = i[e.entitlementId]) || null == (n = t.sku) ? true : n.product_id;
-      null != r && B(r), L(e.planId), X(e.name), Q(e.regionId)
+      null != r && B(r), A(e.planId), X(e.name), Q(e.regionId)
     }, [null == k ? true : k.entitlements]),
     [W, H] = r.useState(),
     [q, X] = r.useState(null != (j = null == y ? true : y.name) ? j : ""),
     [Y, Q] = r.useState(null != (b = null == y ? true : y.regionId) ? b : ""),
     [$, J] = r.useState(false),
     ee = r.useCallback(() => {
-      0 !== V && null != E && null != M && null != A && (G < V ? (0, o.u)({
+      0 !== V && null != E && null != M && null != L && (G < V ? (0, o.u)({
         analyticsLocation: w,
         numberOfBoostsToAdd: V - G,
         analyticsLocations: I,
@@ -89,14 +89,14 @@ function b(e) {
           J(e)
         },
         onSubscribeComplete: () => {
-          (0, g.NE)(E.id, A, q, Y).then(() => {
+          (0, g.NE)(E.id, L, q, Y).then(() => {
             S(), (0, p.Z)(E.id, M)
           })
         }
-      }) : (0, g.NE)(E.id, A, q, Y).then(() => {
+      }) : (0, g.NE)(E.id, L, q, Y).then(() => {
         S(), (0, p.Z)(E.id, M)
       }))
-    }, [I, E, G, A, w, M, q, Y, S, V]),
+    }, [I, E, G, L, w, M, q, Y, S, V]),
     en = r.useCallback(e => {
       switch (e.type) {
         case "close":
@@ -115,7 +115,7 @@ function b(e) {
     ei = r.useCallback(() => {
       null != R && en(R.onNext)
     }, [R, en]);
-  return (0, i.jsx)(x.Provider, {
+  return (0, i.jsx)(v.Provider, {
     value: {
       guildId: C,
       step: T,
@@ -134,8 +134,8 @@ function b(e) {
       regionId: Y,
       setRegionId: Q,
       planCost: V,
-      planId: A,
-      setPlanId: L,
+      planId: L,
+      setPlanId: A,
       footerNode: W,
       setFooterNode: H,
       availableBoostCount: G

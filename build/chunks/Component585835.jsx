@@ -1,4 +1,4 @@
-/** Chunk was on 47463 **/
+/** Chunk was on 58511 **/
 /** chunk id: 585835, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -30,25 +30,25 @@ function y(e) {
     imageSrc: _,
     iconBackgroundColor: C,
     iconClassName: N,
-    iconWrapperClassName: S,
-    details: w,
-    integration: Z,
-    buttonText: I,
-    buttonDisabled: P,
+    iconWrapperClassName: w,
+    details: S,
+    integration: I,
+    buttonText: P,
+    buttonDisabled: Z,
     hasNextSection: T,
     onButtonClick: E,
     guildId: k,
     isScrolling: A,
     canShowMigrationTooltip: D,
     trailing: R
-  } = e, [L, M] = r.useState(false), B = D && !A && !L && true !== k && null != Z, U = r.useRef(null), W = r.useRef(null), H = null == I || null == E ? null : T ? (0, i.jsxs)(d.Kqy, {
+  } = e, [L, M] = r.useState(false), B = D && !A && !L && true !== k && null != I, U = r.useRef(null), W = r.useRef(null), H = null == P || null == E ? null : T ? (0, i.jsxs)(d.Kqy, {
     direction: "horizontal",
     fullWidth: false,
     align: "center",
     ref: W,
     children: [(0, i.jsx)(d.Text, {
       variant: "text-sm/normal",
-      children: I
+      children: P
     }), T ? (0, i.jsx)(d.Fbu, {
       size: "custom",
       color: "currentColor",
@@ -59,9 +59,9 @@ function y(e) {
   }) : (0, i.jsx)(d.zxk, {
     size: "sm",
     buttonRef: U,
-    disabled: P,
+    disabled: Z,
     onClick: E,
-    text: I
+    text: P
   });
   r.useEffect(() => {
     var e, t;
@@ -83,7 +83,7 @@ function y(e) {
       }
       return e
     }({}, (0, u.hH)(k)), t = t = {
-      application_id: null == Z ? true : Z.application.id,
+      application_id: null == I ? true : I.application.id,
       location: "overview"
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
       var n = Object.keys(e);
@@ -95,13 +95,13 @@ function y(e) {
     })(Object(t)).forEach(function(n) {
       Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e))
-  }, [k, null == Z ? true : Z.application.id, B]);
+  }, [k, null == I ? true : I.application.id, B]);
   let G = B && (null != W.current || null != U.current) ? (0, i.jsx)(c.J2, {
       targetElementRef: T ? W : U,
       title: j.intl.string(j.t.ufFDiI),
       body: j.intl.string(j.t.TyMJwM),
       onRequestClose: () => {
-        M(true), h.Z.dismissOverviewTooltip(k, Z.integration)
+        M(true), h.Z.dismissOverviewTooltip(k, I.integration)
       },
       position: "bottom",
       align: "center",
@@ -111,11 +111,11 @@ function y(e) {
     }) : null,
     F = (0, s.Wu)([m.Z], () => {
       var e;
-      return null != Z && null != k && null != (e = m.Z.getApplicationEntitlementsForGuild(Z.application.id, k)) ? e : []
+      return null != I && null != k && null != (e = m.Z.getApplicationEntitlementsForGuild(I.application.id, k)) ? e : []
     }),
-    K = (0, p.LD)(k, true),
-    q = (null == Z ? true : Z.application) != null && Object.keys(null != (l = null == (n = K.result) || null == (t = n.sections[Z.application.id]) ? true : t.commands) ? l : {}).length > 0,
-    z = (0, i.jsxs)(d.Kqy, {
+    z = (0, p.LD)(k, true),
+    q = (null == I ? true : I.application) != null && Object.keys(null != (l = null == (n = z.result) || null == (t = n.sections[I.application.id]) ? true : t.commands) ? l : {}).length > 0,
+    K = (0, i.jsxs)(d.Kqy, {
       direction: "horizontal",
       align: "center",
       children: [(0, i.jsx)(f.Z, {
@@ -124,8 +124,8 @@ function y(e) {
         imageSrc: _,
         iconBackgroundColor: C,
         iconClassName: N,
-        iconWrapperClassName: S,
-        details: w,
+        iconWrapperClassName: w,
+        details: S,
         isPremium: F.length > 0,
         children: function(e, t) {
           var n, r;
@@ -159,21 +159,21 @@ function y(e) {
               items: l
             })
           })
-        }(Z, q)
+        }(I, q)
       }), G, H, R]
     });
   return T ? (0, i.jsx)(d.P3F, {
     onClick: () => {
-      D && null != k && null != Z && h.Z.dismissOverviewTooltip(k, Z.integration), null == E || E()
+      D && null != k && null != I && h.Z.dismissOverviewTooltip(k, I.integration), null == E || E()
     },
     children: (0, i.jsx)(d.Zbd, {
       editable: true,
       className: a()(v.card, v.clickable),
-      children: z
+      children: K
     })
   }) : (0, i.jsx)(d.Zbd, {
     editable: true,
     className: v.card,
-    children: z
+    children: K
   })
 }

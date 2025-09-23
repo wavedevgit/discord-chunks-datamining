@@ -1,4 +1,4 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 91053 **/
 /** chunk id: 703180, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   MemberListContentSettingsMenu: () => p,
@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function d(e) {
+function u(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,31 +34,31 @@ function d(e) {
 let p = e => {
     let {
       closePopout: t
-    } = e, i = (0, l.e7)([s.Z], () => s.Z.hidden);
+    } = e, i = (0, l.e7)([o.Z], () => o.Z.hidden);
     return (0, r.jsx)(a.v2r, {
       onSelect: () => {},
       navId: "member-list-settings-menu",
       onClose: null != t ? t : c.dG4,
-      "aria-label": u.intl.string(u.t.w2jvOT),
+      "aria-label": d.intl.string(d.t.w2jvOT),
       children: (0, r.jsxs)(a.kSQ, {
         children: [(0, r.jsx)(a.sNh, {
           id: "about",
-          label: u.intl.string(u.t.pWLGnJ),
+          label: d.intl.string(d.t.pWLGnJ),
           icon: a.d3s,
           action: () => {
             (0, a.ZDy)(async () => {
               let {
                 default: e
               } = await n.e("71517").then(n.bind(n, 549505));
-              return t => (0, r.jsx)(e, d({}, t))
+              return t => (0, r.jsx)(e, u({}, t))
             }), null == t || t()
           }
         }), (0, r.jsx)(a.S89, {
           id: "hide",
-          label: u.intl.string(u.t.AhNYub),
+          label: d.intl.string(d.t.AhNYub),
           checked: i,
           action: () => {
-            (0, o.lY)(), null == t || t()
+            (0, s.lY)(), null == t || t()
           }
         })]
       })
@@ -81,7 +81,7 @@ let p = e => {
       },
       children: t => {
         var n, i;
-        return (0, r.jsx)(a.P3F, (n = d({}, t), i = i = {
+        return (0, r.jsx)(a.P3F, (n = u({}, t), i = i = {
           innerRef: e,
           onClick: e => {
             e.stopPropagation(), t.onClick(e)

@@ -1,12 +1,12 @@
-/** Chunk was on 11424 **/
-/** chunk id: 405701, original params: t,e,i (module,exports,require) **/
+/** Chunk was on 95546 **/
+/** chunk id: 405701, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => y
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk913527 = require("./913527.js"),
-  o = require.n(Chunk913527),
+  l = require.n(Chunk913527),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk11769 = require("./11769.js"),
@@ -19,109 +19,109 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk799567 = require("./799567.js");
 
-function O(t) {
-  let e, {
-      isEnabled: i,
-      rateLimitPerUser: r,
-      isBypassSlowmode: l,
-      slowmodeCooldownGuess: u
-    } = t,
-    [p, O] = s.useState(false);
-  s.useEffect(() => {
-    function t() {
-      O(true), setTimeout(() => {
-        O(false)
+function v(e) {
+  let t, {
+      isEnabled: n,
+      rateLimitPerUser: o,
+      isBypassSlowmode: s,
+      slowmodeCooldownGuess: d
+    } = e,
+    [b, v] = i.useState(false);
+  i.useEffect(() => {
+    function e() {
+      v(true), setTimeout(() => {
+        v(false)
       }, 1e3)
     }
-    return h.S.subscribe(f.CkL.EMPHASIZE_SLOWMODE_COOLDOWN, t), () => {
-      h.S.unsubscribe(f.CkL.EMPHASIZE_SLOWMODE_COOLDOWN, t)
+    return f.S.subscribe(O.CkL.EMPHASIZE_SLOWMODE_COOLDOWN, e), () => {
+      f.S.unsubscribe(O.CkL.EMPHASIZE_SLOWMODE_COOLDOWN, e)
     }
   }, []);
-  let b = (0, c.Z)("SlowmodeIndicator");
-  if (!i) return null;
-  let S = (0, d.k)(r);
-  if (!l && u > 0) {
-    let t = o().duration(u);
-    if (u > g.Z.Millis.HOUR) {
-      let i = "".concat(t.minutes()).padStart(2, "0"),
-        n = "".concat(t.seconds()).padStart(2, "0");
-      e = "".concat(t.hours(), ":").concat(i, ":").concat(n)
+  let y = (0, u.Z)("SlowmodeIndicator");
+  if (!n) return null;
+  let h = (0, c.k)(o);
+  if (!s && d > 0) {
+    let e = l().duration(d);
+    if (d > p.Z.Millis.HOUR) {
+      let n = "".concat(e.minutes()).padStart(2, "0"),
+        r = "".concat(e.seconds()).padStart(2, "0");
+      t = "".concat(e.hours(), ":").concat(n, ":").concat(r)
     } else {
-      let i = "".concat(t.seconds()).padStart(2, "0");
-      e = "".concat(t.minutes(), ":").concat(i)
+      let n = "".concat(e.seconds()).padStart(2, "0");
+      t = "".concat(e.minutes(), ":").concat(n)
     }
-  } else e = l ? b ? m.intl.string(m.t["8+NidX"]) : m.intl.string(m.t.SSzXvb) : m.intl.string(m.t.Icu3bW);
-  let y = b ? (0, n.jsxs)(a.Text, {
-    className: v.cooldownText,
+  } else t = s ? y ? m.intl.string(m.t["8+NidX"]) : m.intl.string(m.t.SSzXvb) : m.intl.string(m.t.Icu3bW);
+  let j = y ? (0, r.jsxs)(a.Text, {
+    className: g.cooldownText,
     variant: "text-xs/medium",
-    color: p ? "text-danger" : "text-muted",
+    color: b ? "text-danger" : "text-muted",
     tabularNumbers: true,
-    children: [(0, n.jsx)(a.ANZ, {
+    children: [(0, r.jsx)(a.ANZ, {
       size: "xxs",
       color: "currentColor",
-      className: v.slowModeIcon
-    }), e]
-  }) : (0, n.jsxs)(a.Text, {
-    className: v.cooldownText,
+      className: g.slowModeIcon
+    }), t]
+  }) : (0, r.jsxs)(a.Text, {
+    className: g.cooldownText,
     variant: "text-sm/medium",
-    color: p ? "text-danger" : "text-muted",
+    color: b ? "text-danger" : "text-muted",
     tabularNumbers: true,
-    children: [e, (0, n.jsx)(a.ANZ, {
+    children: [t, (0, r.jsx)(a.ANZ, {
       size: "xs",
       color: "currentColor",
-      className: v.slowModeIcon
+      className: g.slowModeIcon
     })]
   });
-  return (0, n.jsx)(a.ua7, {
-    text: S,
-    children: t => {
-      var e, i;
-      return (0, n.jsx)("div", (e = function(t) {
-        for (var e = 1; e < arguments.length; e++) {
-          var i = null != arguments[e] ? arguments[e] : {},
-            n = Object.keys(i);
-          "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(i).filter(function(t) {
-            return Object.getOwnPropertyDescriptor(i, t).enumerable
-          }))), n.forEach(function(e) {
-            var n;
-            n = i[e], e in t ? Object.defineProperty(t, e, {
-              value: n,
+  return (0, r.jsx)(a.ua7, {
+    text: h,
+    children: e => {
+      var t, n;
+      return (0, r.jsx)("div", (t = function(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var n = null != arguments[t] ? arguments[t] : {},
+            r = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(n, e).enumerable
+          }))), r.forEach(function(t) {
+            var r;
+            r = n[t], t in e ? Object.defineProperty(e, t, {
+              value: r,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : t[e] = n
+            }) : e[t] = r
           })
         }
-        return t
+        return e
       }({
-        className: v.cooldownWrapper
-      }, t), i = i = {
-        children: y
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(i)) : (function(t, e) {
-        var i = Object.keys(t);
+        className: g.cooldownWrapper
+      }, e), n = n = {
+        children: j
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+        var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(t);
-          i.push.apply(i, n)
+          var r = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, r)
         }
-        return i
-      })(Object(i)).forEach(function(t) {
-        Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(i, t))
-      }), e))
+        return n
+      })(Object(n)).forEach(function(e) {
+        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+      }), t))
     }
   })
 }
 
-function b(t) {
+function y(e) {
   let {
-    channel: e,
-    isThreadCreation: i = false
-  } = t, s = (0, l.e7)([u.Z], () => u.Z.getSlowmodeCooldownGuess(e.id, i ? u.S.CreateThread : u.S.SendMessage)), r = (0, p.w)(e, i ? u.S.CreateThread : u.S.SendMessage), {
-    rateLimitPerUser: o
-  } = e;
-  return (0, n.jsx)(O, {
-    isEnabled: o > 0,
-    rateLimitPerUser: o,
-    isBypassSlowmode: r,
-    slowmodeCooldownGuess: s
+    channel: t,
+    isThreadCreation: n = false
+  } = e, i = (0, s.e7)([d.Z], () => d.Z.getSlowmodeCooldownGuess(t.id, n ? d.S.CreateThread : d.S.SendMessage)), o = (0, b.w)(t, n ? d.S.CreateThread : d.S.SendMessage), {
+    rateLimitPerUser: l
+  } = t;
+  return (0, r.jsx)(v, {
+    isEnabled: l > 0,
+    rateLimitPerUser: l,
+    isBypassSlowmode: o,
+    slowmodeCooldownGuess: i
   })
 }

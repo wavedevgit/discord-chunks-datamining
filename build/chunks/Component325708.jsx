@@ -1,4 +1,4 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 21616 **/
 /** chunk id: 325708, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y,
@@ -62,46 +62,46 @@ function y(e) {
       case 5:
         return "callParticipantsSidebarWidth"
     }
-  }(t), [_, C] = l.useState(h.ZP[y]), v = l.useCallback(e => {
+  }(t), [C, _] = l.useState(h.ZP[y]), v = l.useCallback(e => {
     d.ZP.updatedUnsyncedSettings({
       [y]: e
     })
-  }, [y]), x = 5 === t ? f.at : f.Co, j = (0, f.WL)({
+  }, [y]), x = 5 === t ? f.at : f.Co, O = (0, f.WL)({
     maxWidth: n,
     minWidth: x
-  }), O = (0, u.dQu)(c.Z.modules.chat.RESIZE_HANDLE_WIDTH), E = (0, s.clamp)(_, x, n), S = j ? E : E + O;
+  }), j = (0, u.dQu)(c.Z.modules.chat.RESIZE_HANDLE_WIDTH), E = (0, s.clamp)(C, x, n), S = O ? E : E + j;
   l.useEffect(() => {
-    null == r || r(E, j)
-  }, [E, r, j]);
-  let I = null != p ? p : l.Fragment;
+    null == r || r(E, O)
+  }, [E, r, O]);
+  let P = null != p ? p : l.Fragment;
   return (0, i.jsxs)(i.Fragment, {
-    children: [!j && (0, i.jsx)("div", {
+    children: [!O && (0, i.jsx)("div", {
       style: {
         minWidth: S
       }
-    }), (0, i.jsx)(I, {
+    }), (0, i.jsx)(P, {
       children: (0, i.jsxs)("div", {
         className: o()(m.chatLayerWrapper, {
           [m.hidden]: false
         }),
         children: [(0, i.jsx)("div", {
           className: o()(m.chatTarget, {
-            [m.floating]: j,
-            [m.notFloating]: !j
+            [m.floating]: O,
+            [m.notFloating]: !O
           }),
           style: {
             width: S
           }
-        }), !j && (0, i.jsx)(b, {
+        }), !O && (0, i.jsx)(b, {
           minWidth: x,
           maxWidth: n,
           resizableNode: g,
-          onResize: C,
+          onResize: _,
           onResizeEnd: v
         }), (0, i.jsx)("div", {
           ref: g,
           className: o()(m.container, {
-            [m.floating]: j
+            [m.floating]: O
           }),
           style: {
             width: E

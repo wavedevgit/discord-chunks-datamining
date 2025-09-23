@@ -1,4 +1,4 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 21616 **/
 /** chunk id: 486622, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   m: () => b
@@ -24,23 +24,23 @@ function b(e) {
     onAcceptSuccess: n,
     onRejectSuccess: i,
     onError: b
-  } = e, y = (0, f.Z)(), [_, C] = r.useState(false), [v, x] = r.useState(false), [j, O] = r.useState(false), [E, S] = r.useState(false), [I, P] = r.useState(false), Z = _ || v || j, T = r.useCallback(async e => {
+  } = e, y = (0, f.Z)(), [C, _] = r.useState(false), [v, x] = r.useState(false), [O, j] = r.useState(false), [E, S] = r.useState(false), [P, I] = r.useState(false), Z = C || v || O, T = r.useCallback(async e => {
     if (!Z) {
-      C(true);
+      _(true);
       try {
         await (0, p.e4)(e), S(true), null == n || n()
       } catch (t) {
         let e = new a.Hx(t);
         null == b || b(e)
       } finally {
-        C(false)
+        _(false)
       }
     }
   }, [Z, n, b]), N = r.useCallback(async e => {
     if (!Z) {
       x(true);
       try {
-        await (0, p.gN)(e), P(true), null == i || i()
+        await (0, p.gN)(e), I(true), null == i || i()
       } catch (t) {
         let e = new a.Hx(t);
         null == b || b(e)
@@ -54,7 +54,7 @@ function b(e) {
     let t = l()(e, m.t$);
     try {
       for (let e of t) await (0, p.r_)(e);
-      P(true), null == i || i()
+      I(true), null == i || i()
     } catch (t) {
       let e = new a.Hx(t);
       null == b || b(e)
@@ -64,14 +64,14 @@ function b(e) {
   }, [Z, i, b]), w = r.useCallback(async e => {
     if (Z) return;
     if (null != t && null == s.Z.getMutualGuilds(t.id)) {
-      O(true);
+      j(true);
       try {
         await (0, c.Z)(t.id, t.getAvatarURL(true, 80), {
           withMutualGuilds: true,
           withMutualFriendsCount: true
         })
       } catch (e) {} finally {
-        O(false)
+        j(false)
       }
     }
     let n = async () => {
@@ -98,7 +98,7 @@ function b(e) {
         })
       }
     })
-  }, [T, Z, t]), R = r.useCallback((e, t, n) => {
+  }, [T, Z, t]), M = r.useCallback((e, t, n) => {
     let r = (r, i) => {
         i && u.kJ.updateSetting(r), r && null != t && (0, o.zd)(t), T(e.id), d.default.track(g.rMx.MESSAGE_REQUEST_ACTION, {
           action: m.cl.ACCEPT_HAM_CONFIRMATION_PROMPT,
@@ -123,11 +123,11 @@ function b(e) {
     acceptMessageRequest: y ? w : T,
     rejectMessageRequest: N,
     rejectAll: A,
-    markAsNotSpam: R,
-    isAcceptLoading: _,
+    markAsNotSpam: M,
+    isAcceptLoading: C,
     isRejectLoading: v,
-    isUserProfileLoading: j,
+    isUserProfileLoading: O,
     isOptimisticAccepted: E,
-    isOptimisticRejected: I
+    isOptimisticRejected: P
   }
 }

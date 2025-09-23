@@ -1,4 +1,4 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 91053 **/
 /** chunk id: 900157, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => N
@@ -30,7 +30,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk952899 = require("./952899.js");
 
-function Z(e) {
+function P(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -67,42 +67,42 @@ function N(e) {
     channelId: t,
     baseChannelId: l,
     channelViewSource: N = "Split View"
-  } = e, A = (0, o.e7)([C.Z], () => C.Z.getChannel(t)), w = (0, o.e7)([x.Z], () => x.Z.getGuild(null == A ? true : A.getGuildId())), R = (0, f.ZP)(A);
-  var M = A;
-  let D = (0, o.e7)([j.Z], () => null != M && !a().isEmpty(j.Z.getVoiceStatesForChannel(M.id)));
+  } = e, R = (0, s.e7)([O.Z], () => O.Z.getChannel(t)), w = (0, s.e7)([x.Z], () => x.Z.getGuild(null == R ? true : R.getGuildId())), A = (0, f.ZP)(R);
+  var D = R;
+  let L = (0, s.e7)([v.Z], () => null != D && !a().isEmpty(v.Z.getVoiceStatesForChannel(D.id)));
   i.useEffect(() => {
-    D && null != M && (s.Z.dispatch({
+    L && null != D && (o.Z.dispatch({
       type: "SIDEBAR_CLOSE",
-      baseChannelId: M.parent_id
-    }), (0, _.ad)(M, {
-      source: E.on.VOICE_AUTO_OPEN
+      baseChannelId: D.parent_id
+    }), (0, _.ad)(D, {
+      source: I.on.VOICE_AUTO_OPEN
     }))
-  }, [D, M]);
-  let k = i.useRef(false);
+  }, [L, D]);
+  let M = i.useRef(false);
   if (i.useEffect(() => {
-      if (null == A || k.current) return;
-      k.current = true;
-      let e = (0, p.K)(C.Z.getChannel(A.id), true);
-      (0, d.yw)(S.rMx.CHANNEL_OPENED, T(Z({}, e, (0, d.$H)(A.id)), {
+      if (null == R || M.current) return;
+      M.current = true;
+      let e = (0, p.K)(O.Z.getChannel(R.id), true);
+      (0, u.yw)(E.rMx.CHANNEL_OPENED, T(P({}, e, (0, u.$H)(R.id)), {
         channel_view: N
-      })), (0, h.a)(S.rMx.CHANNEL_OPENED_CLICKSTREAM, {
-        channelId: A.id
+      })), (0, h.a)(E.rMx.CHANNEL_OPENED_CLICKSTREAM, {
+        channelId: R.id
       })
-    }, [A, N]), null == A || null == w) return null;
-  let L = (0, r.jsx)(O.Z, {
-    channel: A,
+    }, [R, N]), null == R || null == w) return null;
+  let k = (0, r.jsx)(C.Z, {
+    channel: R,
     baseChannelId: l
   });
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(u.Z, {
-      channel: A,
-      draftType: v.d.ChannelMessage
+    children: [(0, r.jsx)(d.Z, {
+      channel: R,
+      draftType: j.d.ChannelMessage
     }), (0, r.jsx)(b.ZP, {
-      toolbar: L,
-      "aria-label": I.intl.string(I.t.Pwe8tL),
+      toolbar: k,
+      "aria-label": S.intl.string(S.t.Pwe8tL),
       children: (0, y.ud)({
-        channel: A,
-        channelName: R,
+        channel: R,
+        channelName: A,
         guild: w,
         inSidebar: true,
         handleContextMenu: function(e) {
@@ -110,21 +110,21 @@ function N(e) {
             let {
               default: e
             } = await n.e("40157").then(n.bind(n, 422200));
-            return t => (0, r.jsx)(e, T(Z({}, t), {
-              channel: A
+            return t => (0, r.jsx)(e, T(P({}, t), {
+              channel: R
             }))
           })
         },
         handleClick: function() {
-          null != A && (0, _.Kh)(A.id)
+          null != R && (0, _.Kh)(R.id)
         }
       })
     }), (0, r.jsx)("div", {
-      className: P.chat,
-      children: (0, r.jsx)(m.Z, {
-        channel: A,
+      className: Z.chat,
+      children: (0, r.jsx)(g.Z, {
+        channel: R,
         guild: w,
-        chatInputType: g.Ie.SIDEBAR
+        chatInputType: m.Ie.SIDEBAR
       }, t)
     })]
   })

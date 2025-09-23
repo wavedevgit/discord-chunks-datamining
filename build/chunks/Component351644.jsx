@@ -1,4 +1,4 @@
-/** Chunk was on 47463 **/
+/** Chunk was on 58511 **/
 /** chunk id: 351644, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => W
@@ -70,14 +70,14 @@ function W(e) {
     channel: H,
     applicationIntegrations: G,
     builtInIntegrations: F,
-    customWebhooks: K,
+    customWebhooks: z,
     followedChannelWebhooks: q,
-    isLoadingWebhooks: z,
+    isLoadingWebhooks: K,
     canCreateWebhook: V,
     onManageBuiltIn: Y,
     onManageCustomWebhooks: $,
-    onManageFollowedChannels: J,
-    onManageApplication: X,
+    onManageFollowedChannels: X,
+    onManageApplication: J,
     onManageLobbiesLinked: Q
   } = e, ee = (0, m.ZP)(), [et, en] = r.useState(""), {
     isFetchingConnections: ei,
@@ -147,22 +147,22 @@ function W(e) {
       return null != l.user ? a.push({
         icon: u.T39,
         text: A.intl.formatToPlainString(A.t.Nu9sam, {
-          timestamp: w.default.extractTimestamp(l.id),
-          user: Z.ZP.getUserTag(l.user)
+          timestamp: S.default.extractTimestamp(l.id),
+          user: I.ZP.getUserTag(l.user)
         })
       }) : a.push({
         icon: u.T39,
         text: A.intl.formatToPlainString(A.t.gcdJ8P, {
-          timestamp: w.default.extractTimestamp(l.id)
+          timestamp: S.default.extractTimestamp(l.id)
         })
-      }), (0, i.jsx)(P.Z, {
+      }), (0, i.jsx)(Z.Z, {
         name: r.name,
         imageSrc: null != (t = r.getIconURL(48)) ? t : N.pK["0"],
         integration: e,
         buttonText: A.intl.string(A.t["Z/qRnJ"]),
         hasNextSection: true,
         onButtonClick: () => {
-          X(r.id), C.default.track(E.rMx.APP_MANAGE_CTA_CLICKED, {
+          J(r.id), C.default.track(E.rMx.APP_MANAGE_CTA_CLICKED, {
             application_id: r.id,
             guild_id: null == W ? true : W.id,
             is_admin: null != W ? _.Z.can(E.Plq.ADMINISTRATOR, W) : true
@@ -174,7 +174,7 @@ function W(e) {
         canShowMigrationTooltip: n
       }, "integration-".concat(l.id))
     }),
-    eS = (0, i.jsx)("div", {
+    ew = (0, i.jsx)("div", {
       className: D.footerImage
     });
   0 === eN.length && ea && (eN = function(e, t, n) {
@@ -230,15 +230,15 @@ function W(e) {
         })
       });
     return t > 0 ? l : a
-  }(ee, ef, null == W ? true : W.id), eS = null);
-  let ew = S.Z.getArticleURL(E.BhN.INTEGRATIONS),
-    eZ = null != H ? A.t.YV0vh4 : A.t.FnZEJi,
-    eI = [];
+  }(ee, ef, null == W ? true : W.id), ew = null);
+  let eS = w.Z.getArticleURL(E.BhN.INTEGRATIONS),
+    eI = null != H ? A.t.YV0vh4 : A.t.FnZEJi,
+    eP = [];
   if (el) {
     let e, t, r, a, o;
-    eI.push((n = K.length, n > 0 ? t = (0, i.jsx)(u.LJT, {
+    eP.push((n = z.length, n > 0 ? t = (0, i.jsx)(u.LJT, {
       size: "xs"
-    }) : e = A.intl.string(A.t.lOQqJC), (0, i.jsx)(P.Z, {
+    }) : e = A.intl.string(A.t.lOQqJC), (0, i.jsx)(Z.Z, {
       name: A.intl.string(A.t.xOg4SE),
       icon: u.tYf,
       buttonText: e,
@@ -251,9 +251,9 @@ function W(e) {
           count: n
         })
       }]
-    }, "webhooks"))), (null == H ? true : H.type) === E.d4z.GUILD_VOICE || (null == H ? true : H.type) != null && E.TPd.GUILD_THREADS_ONLY.has(H.type) || eI.push((l = q.length, l > 0 ? (o = (0, i.jsx)(u.LJT, {
+    }, "webhooks"))), (null == H ? true : H.type) === E.d4z.GUILD_VOICE || (null == H ? true : H.type) != null && E.TPd.GUILD_THREADS_ONLY.has(H.type) || eP.push((l = q.length, l > 0 ? (o = (0, i.jsx)(u.LJT, {
       size: "xs"
-    }), a = J) : (r = A.intl.string(A.t["ZwSt+f"]), a = () => open(S.Z.getArticleURL(E.BhN.CHANNEL_FOLLOWING))), (0, i.jsx)(P.Z, {
+    }), a = X) : (r = A.intl.string(A.t["ZwSt+f"]), a = () => open(w.Z.getArticleURL(E.BhN.CHANNEL_FOLLOWING))), (0, i.jsx)(Z.Z, {
       name: A.intl.string(A.t.OrV60t),
       icon: u.AsW,
       buttonText: r,
@@ -267,7 +267,7 @@ function W(e) {
       }]
     }, "channels-followed")))
   }
-  null == H && ec.length > 0 && eI.push((o = ec.length, (0, i.jsx)(P.Z, {
+  null == H && ec.length > 0 && eP.push((o = ec.length, (0, i.jsx)(Z.Z, {
     name: A.intl.string(A.t.tqtDXF),
     icon: u.DuK,
     trailing: (0, i.jsx)(u.LJT, {
@@ -280,7 +280,7 @@ function W(e) {
         count: o
       })
     }]
-  }, "channels-syncing"))), eb && eI.push(function(e, t, n) {
+  }, "channels-syncing"))), eb && eP.push(function(e, t, n) {
     let r, l, a, o, s = b.Z.get(E.ABu.TWITCH);
     return e > 0 ? (o = (0, i.jsx)(u.LJT, {
       size: "xs"
@@ -289,7 +289,7 @@ function W(e) {
     }), a = () => n(E.ABu.TWITCH)) : (r = A.intl.string(A.t.bkvGkp), l = A.intl.string(A.t.Qq3X2N), a = () => (0, f.Z)({
       platformType: E.ABu.TWITCH,
       location: "Integration Settings"
-    })), (0, i.jsx)(P.Z, {
+    })), (0, i.jsx)(Z.Z, {
       name: A.intl.string(A.t.q4pBGx),
       icon: s.icon.whiteSVG,
       iconBackgroundColor: s.color,
@@ -302,7 +302,7 @@ function W(e) {
         text: l
       }]
     }, "integrations-twitch")
-  }(ed, ep, Y)), eg && eI.push(function(e, t, n) {
+  }(ed, ep, Y)), eg && eP.push(function(e, t, n) {
     let r, l, a, o, s = b.Z.get(E.ABu.YOUTUBE);
     return e > 0 ? (o = (0, i.jsx)(u.LJT, {
       size: "xs"
@@ -311,7 +311,7 @@ function W(e) {
     }), a = () => n(E.ABu.YOUTUBE)) : (r = A.intl.string(A.t.xEyQ3d), l = A.intl.string(A.t.T0ivgY), a = () => (0, f.Z)({
       platformType: E.ABu.YOUTUBE,
       location: "Integration Settings"
-    })), (0, i.jsx)(P.Z, {
+    })), (0, i.jsx)(Z.Z, {
       name: A.intl.string(A.t.aS6cKy),
       icon: s.icon.whiteSVG,
       iconBackgroundColor: s.color,
@@ -325,28 +325,28 @@ function W(e) {
       }]
     }, "integrations-youtube")
   }(eu, em, Y));
-  let eP = null != H && eo && null != es;
+  let eZ = null != H && eo && null != es;
   return (0, i.jsxs)(u.hjN, {
-    className: a()(null != eS ? D.footerPlaceholder : null),
+    className: a()(null != ew ? D.footerPlaceholder : null),
     children: [(0, i.jsx)(u.R94, {
       type: u.geA.DESCRIPTION,
-      children: A.intl.format(eZ, {
-        helpdeskArticle: ew
+      children: A.intl.format(eI, {
+        helpdeskArticle: eS
       })
     }), (0, i.jsx)(u.$i$, {
       className: D.divider
-    }), z || ei || null == W ? (0, i.jsx)(u.$jN, {
+    }), K || ei || null == W ? (0, i.jsx)(u.$jN, {
       className: D.__invalid_spinner,
       type: u.$jN.Type.SPINNING_CIRCLE
     }) : (0, i.jsxs)(i.Fragment, {
-      children: [eI, eP && (0, i.jsxs)(i.Fragment, {
-        children: [eI.length > 0 ? (0, i.jsx)(u.$i$, {
+      children: [eP, eZ && (0, i.jsxs)(i.Fragment, {
+        children: [eP.length > 0 ? (0, i.jsx)(u.$i$, {
           className: D.divider
         }) : null, (0, i.jsx)(u.X6q, {
           variant: "heading-md/semibold",
           className: D.sectionHeader,
           children: A.intl.string(A.t.oAvIAg)
-        }), (0, i.jsx)(I.t, {
+        }), (0, i.jsx)(P.t, {
           channel: H,
           application: es,
           showApplicationImage: true,
@@ -358,7 +358,7 @@ function W(e) {
           })
         })]
       }), ea ? (0, i.jsxs)(i.Fragment, {
-        children: [eI.length > 0 || eP ? (0, i.jsx)(u.$i$, {
+        children: [eP.length > 0 || eZ ? (0, i.jsx)(u.$i$, {
           className: D.divider
         }) : null, (0, i.jsx)(u.X6q, {
           variant: "heading-md/semibold",
@@ -368,7 +368,7 @@ function W(e) {
           query: et,
           setQuery: en
         }) : null, eN]
-      }) : null, eS]
+      }) : null, ew]
     })]
   })
 }

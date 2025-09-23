@@ -1,9 +1,9 @@
-/** Chunk was on 64679 **/
-/** chunk id: 87432, original params: t,i,n (module,exports,require) **/
+/** Chunk was on 62856 **/
+/** chunk id: 87432, original params: t,i,E (module,exports,require) **/
 require.d(exports, {
-  Z: () => l
+  Z: () => n
 });
-let l = (0, require("./818083.js").B)({
+let n = (0, require("./818083.js").B)({
   kind: "guild",
   id: "2025-09_project_turbo",
   label: "Project Turbo",

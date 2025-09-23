@@ -1,5 +1,6 @@
 /** Chunk was on 63141 **/
 /** chunk id: 669083, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => j
 }), require("./388685.js");
@@ -24,7 +25,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk476828 = require("./476828.js"),
   Chunk197571 = require("./197571.js");
 
-function S(e, t, n) {
+function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -33,7 +34,7 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function x() {
+function S() {
   let e = Chunk237997.default.getNotificationPositionMode(),
     t = module !== Chunk981631._vf.DISABLED,
     n = Chunk556296.ZP.getOverlayKeybind(),
@@ -57,7 +58,7 @@ class Z extends Chunk647438.PureComponent {
     })
   }
   handleChangeNotificationPositionMode(e, t) {
-    a.Z.setNotificationPositionMode(t), x()
+    a.Z.setNotificationPositionMode(t), S()
   }
   handleChangeAvatarSizeMode(e) {
     let {
@@ -143,7 +144,7 @@ class Z extends Chunk647438.PureComponent {
       notificationPositionMode: e,
       shouldShowKeybindIndicators: t,
       showKeybindIndicators: n,
-      shouldShowInviteNotification: l
+      shouldShowInviteNotification: s
     } = this.props, o = !Chunk624864.Z.isNotificationDisabled(Chunk486016.OverlayNotificationDisabledSetting.TEXT_CHAT), c = module !== Chunk981631._vf.DISABLED;
     return (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
       children: [(0, Chunk951288.jsx)(Chunk481060.xJW, {
@@ -261,15 +262,15 @@ class Z extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), S(this, "state", {
+    super(...e), x(this, "state", {
       selectedSection: "GENERAL"
-    }), S(this, "handleSelectSection", e => {
+    }), x(this, "handleSelectSection", e => {
       this.setState({
         selectedSection: e
       })
-    }), S(this, "handleToggleTextChatNotifications", () => {
-      a.Z.setNotificationDisabledSetting(m.OverlayNotificationDisabledSetting.TEXT_CHAT, !this.props.textChatDisabled), x()
-    }), S(this, "handleToggleInviteNotification", () => {
+    }), x(this, "handleToggleTextChatNotifications", () => {
+      a.Z.setNotificationDisabledSetting(m.OverlayNotificationDisabledSetting.TEXT_CHAT, !this.props.textChatDisabled), S()
+    }), x(this, "handleToggleInviteNotification", () => {
       let e = this.props.shouldShowInviteNotification;
       a.Z.setNotificationDisabledSetting(m.OverlayNotificationDisabledSetting.GAME_ACTIVITY, !e)
     })
@@ -283,11 +284,11 @@ function j(e) {
     avatarSizeMode: n,
     displayNameMode: r,
     displayUserMode: o,
-    notificationPositionMode: s,
+    notificationPositionMode: l,
     textChatDisabled: a,
     shouldShowKeybindIndicators: c,
     shouldShowInviteNotification: d
-  } = (0, l.cj)([p.default, O.Z], () => ({
+  } = (0, s.cj)([p.default, O.Z], () => ({
     avatarSizeMode: p.default.getAvatarSizeMode(),
     displayNameMode: p.default.getDisplayNameMode(),
     displayUserMode: p.default.getDisplayUserMode(),
@@ -303,7 +304,7 @@ function j(e) {
     avatarSizeMode: n,
     displayNameMode: r,
     displayUserMode: o,
-    notificationPositionMode: s,
+    notificationPositionMode: l,
     textChatDisabled: a,
     shouldShowKeybindIndicators: c,
     showKeybindIndicators: u,

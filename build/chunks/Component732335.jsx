@@ -20,13 +20,13 @@ function u(e) {
     hideLabel: u,
     channel: h,
     onChange: g
-  } = e, [m, p] = l.useState(null), f = h.rateLimitPerUser, x = l.useMemo(() => {
+  } = e, [m, p] = l.useState(null), f = h.rateLimitPerUser, b = l.useMemo(() => {
     let e = [...null != m ? m : o.BiE];
     return e.includes(f) || e.unshift(f), e.map(e => ({
       label: (0, a.A)(e, false),
       value: e
     }))
-  }, [m, f]), b = l.useCallback(e => {
+  }, [m, f]), x = l.useCallback(e => {
     g(e), p(null)
   }, [g]), j = l.useCallback(e => {
     if ("" === e) return void p(null);
@@ -47,9 +47,9 @@ function u(e) {
     helperText: n,
     className: d.marginBottom8,
     value: f,
-    onChange: b,
+    onChange: x,
     onSearchChange: j,
-    options: x,
+    options: b,
     onBlur: v,
     placeholder: c.intl.string(c.t.dBqQu7)
   })

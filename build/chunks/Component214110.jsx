@@ -1,4 +1,4 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 21616 **/
 /** chunk id: 214110, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -22,11 +22,11 @@ function g(e) {
     channel: t,
     user: n,
     guild: g
-  } = e, b = (0, i.e7)([p.default, u.Z, d.Z], () => null != n && null != g && (0, o.F)(g.id, n.id, [p.default, u.Z, d.Z])), [y, _] = (0, s.ZP)(null == n ? true : n.id, t.guild_id), C = (0, i.e7)([c.ZP], () => null != g && null != n && null != c.ZP.getMember(g.id, n.id));
-  if (!b || !C) return null;
+  } = e, b = (0, i.e7)([p.default, u.Z, d.Z], () => null != n && null != g && (0, o.F)(g.id, n.id, [p.default, u.Z, d.Z])), [y, C] = (0, s.ZP)(null == n ? true : n.id, t.guild_id), _ = (0, i.e7)([c.ZP], () => null != g && null != n && null != c.ZP.getMember(g.id, n.id));
+  if (!b || !_) return null;
   let v = "timeout-user-".concat(null == n ? true : n.id);
   return (0, r.jsx)(h.Z, {
-    text: _ ? m.intl.string(f.default["6uMZbm"]) : m.intl.string(f.default["Sgg/uL"]),
+    text: C ? m.intl.string(f.default["6uMZbm"]) : m.intl.string(f.default["Sgg/uL"]),
     icon: l.T39,
     onClick: () => {
       null != n && (0, a.z)({
@@ -35,6 +35,6 @@ function g(e) {
         modReportId: t.id
       })
     },
-    disabled: _
+    disabled: C
   }, v)
 }

@@ -1,7 +1,7 @@
 /** Chunk was on 7654 **/
 /** chunk id: 666258, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  f: () => B
+  f: () => F
 }), require("./388685.js"), require("./997841.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -52,7 +52,7 @@ function A(e) {
   return e
 }
 
-function w(e, t) {
+function M(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -64,7 +64,7 @@ function w(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let M = e => {
+let w = e => {
     let {
       inviteIcon: t,
       channelIcon: n,
@@ -100,13 +100,13 @@ let M = e => {
       color: "header-muted",
       lineClamp: 1,
       children: [i, t.name].join("\xa0\xa0•\xa0\xa0")
-    }), a = (0, I.KS)(n, t), s = (0, l.jsx)(j.Ft, {
+    }), a = (0, x.KS)(n, t), s = (0, l.jsx)(N.Ft, {
       guildId: t.id,
       guildName: t.name,
       guildIcon: t.icon,
       iconSize: 40
     });
-    return (0, l.jsx)(M, {
+    return (0, l.jsx)(w, {
       inviteIcon: s,
       channelIcon: null == a ? null : (0, l.jsx)(a, {
         className: Z.inviteTargetIcon,
@@ -116,14 +116,14 @@ let M = e => {
       subheading: r
     })
   },
-  D = e => {
+  k = e => {
     let t, {
         guild: n
       } = e,
       {
         guildProfile: r,
         fetchGuildProfile: a
-      } = (0, N.u)(n.id);
+      } = (0, j.u)(n.id);
     i.useEffect(() => {
       a()
     }, [a]), t = null === r ? null : (0, l.jsxs)("div", {
@@ -152,19 +152,19 @@ let M = e => {
         })]
       })]
     });
-    let s = (0, l.jsx)(j.Ft, {
+    let s = (0, l.jsx)(N.Ft, {
       guildId: n.id,
       guildName: n.name,
       guildIcon: n.icon,
       iconSize: 40
     });
-    return (0, l.jsx)(M, {
+    return (0, l.jsx)(w, {
       inviteIcon: s,
       heading: n.name,
       subheading: t
     })
   },
-  k = e => {
+  D = e => {
     let {
       applicationId: t
     } = e, [n] = (0, v.Z)([t]);
@@ -183,30 +183,30 @@ let M = e => {
         size: f.A.MEDIUM,
         className: Z.inviteIcon
       });
-    return (0, l.jsx)(M, {
+    return (0, l.jsx)(w, {
       inviteIcon: a,
       heading: i,
       subheading: r
     })
   };
 
-function L(e) {
+function V(e) {
   let {
     guild: t,
     channel: n,
     applicationId: i
   } = e;
-  return null != i ? (0, l.jsx)(k, {
+  return null != i ? (0, l.jsx)(D, {
     applicationId: i
   }) : null != n ? (0, l.jsx)(R, {
     guild: t,
     channel: n
-  }) : (0, l.jsx)(D, {
+  }) : (0, l.jsx)(k, {
     guild: t
   })
 }
 
-function U(e) {
+function L(e) {
   let {
     className: t,
     children: n
@@ -217,7 +217,7 @@ function U(e) {
   })
 }
 
-function V(e) {
+function U(e) {
   let t, n, {
     className: i,
     children: r,
@@ -228,7 +228,7 @@ function V(e) {
     htmlFor: s
   }) : null != o ? (t = h.P3F, n = {
     onClick: o
-  }) : (t = "div", n = {}), (0, l.jsx)(t, w(A({
+  }) : (t = "div", n = {}), (0, l.jsx)(t, M(A({
     className: Z.advancedOption
   }, n), {
     children: (0, l.jsx)("div", {
@@ -238,66 +238,66 @@ function V(e) {
   }))
 }
 
-function B(e) {
+function F(e) {
   let {
     className: t,
     guild: r,
     channel: s,
     applicationId: p,
     getInviteKey: v,
-    sendInvite: I,
+    sendInvite: x,
     canUseVanityURL: f,
-    disabled: N,
-    hasSelection: j,
+    disabled: j,
+    hasSelection: N,
     options: S,
-    setOptions: M,
+    setOptions: w,
     isApplicationBypassAllowed: R,
-    isGuestInviteAllowed: D,
-    isTemporaryInviteAllowed: k,
-    setError: B,
-    analyticsLocation: F
-  } = e, [z, G] = i.useState(false), [q, H] = i.useState(false), W = i.useRef(null), [K] = (0, d.Wu)([_.Z], () => [_.Z.hideInstantInvites]), Y = (0, x.Dt)(), X = (0, x.Dt)(), Q = (0, x.Dt)(), $ = i.useMemo(() => f && null != r.vanityURLCode ? (0, y.Z)(r.vanityURLCode, false) : null, [r, f]), J = i.useCallback(async () => {
+    isGuestInviteAllowed: k,
+    isTemporaryInviteAllowed: D,
+    setError: F,
+    analyticsLocation: B
+  } = e, [z, G] = i.useState(false), [H, q] = i.useState(false), Y = i.useRef(null), [W] = (0, d.Wu)([_.Z], () => [_.Z.hideInstantInvites]), K = (0, I.Dt)(), X = (0, I.Dt)(), Q = (0, I.Dt)(), $ = i.useMemo(() => f && null != r.vanityURLCode ? (0, O.Z)(r.vanityURLCode, false) : null, [r, f]), J = i.useCallback(async () => {
     var e, t;
-    if (N) return;
-    null !== W.current && clearTimeout(W.current);
+    if (j) return;
+    null !== Y.current && clearTimeout(Y.current);
     let n = await v();
     o()(null != n, "Invite key could not be determined.");
-    let l = (0, y.Z)(n);
+    let l = (0, O.Z)(n);
     return (0, b.JG)(l, () => {
-      G(true), W.current = setTimeout(() => {
-        G(false), W.current = null
+      G(true), Y.current = setTimeout(() => {
+        G(false), Y.current = null
       }, 1e3)
     }, e => {
-      B(e)
+      F(e)
     }), E.default.track(C.rMx.COPY_INSTANT_INVITE, {
       server: r.id,
       channel: null != (e = null == s ? true : s.id) ? e : null,
       channel_type: null != (t = null == s ? true : s.type) ? t : null,
-      location: F,
+      location: B,
       code: n,
       application_id: p
     }), () => {
-      null !== W.current && clearTimeout(W.current)
+      null !== Y.current && clearTimeout(Y.current)
     }
-  }, [N, v, r, s, F, p, B]), ee = i.useCallback(e => {
-    M({
+  }, [j, v, r, s, B, p, F]), ee = i.useCallback(e => {
+    w({
       max_age: e
     })
-  }, [M]), et = i.useCallback(e => {
-    M({
+  }, [w]), et = i.useCallback(e => {
+    w({
       max_uses: e
     })
-  }, [M]), en = i.useCallback(e => {
-    S.flags === e ? M({
+  }, [w]), en = i.useCallback(e => {
+    S.flags === e ? w({
       flags: true
-    }) : M({
+    }) : w({
       flags: e
     })
-  }, [S, M]), el = i.useCallback(e => {
-    M({
+  }, [S, w]), el = i.useCallback(e => {
+    w({
       temporary: e
     })
-  }, [M]), ei = i.useCallback(e => {
+  }, [w]), ei = i.useCallback(e => {
     var t;
     let i = null == (t = e.currentTarget) ? true : t.getBoundingClientRect(),
       {
@@ -308,49 +308,49 @@ function B(e) {
       let {
         default: e
       } = await n.e("84212").then(n.bind(n, 593851));
-      return t => (0, l.jsx)(e, w(A({}, t), {
+      return t => (0, l.jsx)(e, M(A({}, t), {
         initialOptions: S,
         onChangeMaxAge: ee,
         onChangeMaxUses: et
       }))
     })
   }, [S, ee, et]), er = function(e) {
-    let t = T.H.find(t => {
+    let t = y.H.find(t => {
         let {
           value: n
         } = t;
         return n === e.max_age
       }),
-      n = T.p.find(t => {
+      n = y.p.find(t => {
         let {
           value: n
         } = t;
         return n === e.max_uses
       });
-    return null == t || null == n ? null : t.value === O.ZP.INVITE_OPTIONS_FOREVER.value && n.value === O.ZP.INVITE_OPTIONS_UNLIMITED.value ? P.intl.string(P.t["5u4A6e"]) : t.value !== O.ZP.INVITE_OPTIONS_FOREVER.value && n.value !== O.ZP.INVITE_OPTIONS_UNLIMITED.value ? P.intl.formatToPlainString(P.t["Z5Vt5+"], {
+    return null == t || null == n ? null : t.value === T.ZP.INVITE_OPTIONS_FOREVER.value && n.value === T.ZP.INVITE_OPTIONS_UNLIMITED.value ? P.intl.string(P.t["5u4A6e"]) : t.value !== T.ZP.INVITE_OPTIONS_FOREVER.value && n.value !== T.ZP.INVITE_OPTIONS_UNLIMITED.value ? P.intl.formatToPlainString(P.t["Z5Vt5+"], {
       maxAge: t.label,
       maxUses: n.label
-    }) : n.value === O.ZP.INVITE_OPTIONS_UNLIMITED.value && t.value !== O.ZP.INVITE_OPTIONS_FOREVER.value ? t.label : n.value !== O.ZP.INVITE_OPTIONS_UNLIMITED.value && t.value === O.ZP.INVITE_OPTIONS_FOREVER.value ? n.label : null
+    }) : n.value === T.ZP.INVITE_OPTIONS_UNLIMITED.value && t.value !== T.ZP.INVITE_OPTIONS_FOREVER.value ? t.label : n.value !== T.ZP.INVITE_OPTIONS_UNLIMITED.value && t.value === T.ZP.INVITE_OPTIONS_FOREVER.value ? n.label : null
   }(S);
   return (0, l.jsxs)("div", {
     className: a()(t, Z.footer),
     children: [(0, l.jsxs)("div", {
       className: Z.guildRow,
-      children: [(0, l.jsx)(L, {
+      children: [(0, l.jsx)(V, {
         guild: r,
         channel: s,
         applicationId: p
       }), (0, l.jsx)(h.ua7, {
         position: "top",
         text: P.intl.string(P.t["4QuV7O"]),
-        children: e => (0, l.jsx)(h.P3F, w(A({
+        children: e => (0, l.jsx)(h.P3F, M(A({
           className: a()(Z.settingsButton, {
-            [Z.settingsOpen]: q
+            [Z.settingsOpen]: H
           })
         }, e), {
           onClick: () => {
             var t;
-            null == e || null == (t = e.onClick) || t.call(e), H(e => !e)
+            null == e || null == (t = e.onClick) || t.call(e), q(e => !e)
           },
           children: (0, l.jsx)(h.ewm, {
             size: "refresh_sm",
@@ -358,8 +358,8 @@ function B(e) {
           })
         }))
       })]
-    }), q && (0, l.jsxs)(U, {
-      children: [(0, l.jsxs)(V, {
+    }), H && (0, l.jsxs)(L, {
+      children: [(0, l.jsxs)(U, {
         onClick: ei,
         children: [(0, l.jsxs)("div", {
           className: Z.advancedOptionContent,
@@ -369,7 +369,7 @@ function B(e) {
           }), (0, l.jsx)(h.ua7, {
             position: "top",
             text: P.intl.string(P.t.efLzgY),
-            children: e => (0, l.jsx)(h.idN, w(A({}, e), {
+            children: e => (0, l.jsx)(h.idN, M(A({}, e), {
               size: "xs",
               color: c.Z.colors.INTERACTIVE_NORMAL
             }))
@@ -385,8 +385,8 @@ function B(e) {
             color: c.Z.colors.INTERACTIVE_NORMAL
           })]
         })]
-      }), R && (0, l.jsxs)(V, {
-        htmlFor: Y,
+      }), R && (0, l.jsxs)(U, {
+        htmlFor: K,
         children: [(0, l.jsxs)("div", {
           className: Z.advancedOptionContent,
           children: [(0, l.jsx)(h.X6q, {
@@ -395,17 +395,17 @@ function B(e) {
           }), (0, l.jsx)(h.ua7, {
             position: "top",
             text: P.intl.string(P.t["jvd/LC"]),
-            children: e => (0, l.jsx)(h.idN, w(A({}, e), {
+            children: e => (0, l.jsx)(h.idN, M(A({}, e), {
               size: "xs",
               color: c.Z.colors.INTERACTIVE_NORMAL
             }))
           })]
         }), (0, l.jsx)(g.T2, {
-          id: Y,
+          id: K,
           checked: S.flags === u.$.IS_APPLICATION_BYPASS,
           onChange: () => en(u.$.IS_APPLICATION_BYPASS)
         })]
-      }), D && (0, l.jsxs)(V, {
+      }), k && (0, l.jsxs)(U, {
         htmlFor: X,
         children: [(0, l.jsxs)("div", {
           className: Z.advancedOptionContent,
@@ -415,7 +415,7 @@ function B(e) {
           }), (0, l.jsx)(h.ua7, {
             position: "top",
             text: P.intl.string(P.t.pBOevb),
-            children: e => (0, l.jsx)(h.idN, w(A({}, e), {
+            children: e => (0, l.jsx)(h.idN, M(A({}, e), {
               size: "xs",
               color: c.Z.colors.INTERACTIVE_NORMAL
             }))
@@ -425,7 +425,7 @@ function B(e) {
           checked: S.flags === u.$.IS_GUEST_INVITE,
           onChange: () => en(u.$.IS_GUEST_INVITE)
         })]
-      }), k && (0, l.jsxs)(V, {
+      }), D && (0, l.jsxs)(U, {
         htmlFor: Q,
         children: [(0, l.jsxs)("div", {
           className: Z.advancedOptionContent,
@@ -435,7 +435,7 @@ function B(e) {
           }), (0, l.jsx)(h.ua7, {
             position: "top",
             text: P.intl.string(P.t.cl1HNT),
-            children: e => (0, l.jsx)(h.idN, w(A({}, e), {
+            children: e => (0, l.jsx)(h.idN, M(A({}, e), {
               size: "xs",
               color: c.Z.colors.INTERACTIVE_NORMAL
             }))
@@ -451,8 +451,8 @@ function B(e) {
       children: [(0, l.jsx)(h.ua7, {
         position: "top",
         text: $,
-        shouldShow: null !== $ && !K,
-        children: e => (0, l.jsx)(g.zx, w(A({
+        shouldShow: null !== $ && !W,
+        children: e => (0, l.jsx)(g.zx, M(A({
           className: Z.button,
           innerClassName: Z.buttonInner,
           color: g.zx.Colors.PRIMARY
@@ -461,7 +461,7 @@ function B(e) {
             var t;
             null == e || null == (t = e.onClick) || t.call(e), J()
           },
-          disabled: N,
+          disabled: j,
           children: z ? (0, l.jsxs)(l.Fragment, {
             children: [(0, l.jsx)(h.dz2, {
               size: "xs",
@@ -481,8 +481,8 @@ function B(e) {
       }), (0, l.jsxs)(g.zx, {
         className: Z.button,
         innerClassName: Z.buttonInner,
-        onClick: () => I(),
-        disabled: !j || N,
+        onClick: () => x(),
+        disabled: !N || j,
         children: [(0, l.jsx)("span", {
           children: P.intl.string(P.t.BcAABg)
         }), (0, l.jsx)(h.Uuj, {

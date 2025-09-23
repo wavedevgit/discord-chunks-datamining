@@ -87,37 +87,37 @@ function f(e) {
     children: c,
     isDragging: d,
     selectedItem: f,
-    onItemSelect: x,
-    itemType: b,
+    onItemSelect: b,
+    itemType: x,
     locked: j,
     lockTooltip: v,
     showContextMenu: y,
     theme: C,
     roleStyle: N,
     onContextMenu: S,
-    "aria-label": O
-  } = e, E = (0, h._f)(s.id, r, null == r ? true : r.colorStrings);
+    "aria-label": E
+  } = e, O = (0, h._f)(s.id, r, null == r ? true : r.colorStrings);
   return d ? (0, i.jsx)("div", {
     className: g.dragged
   }) : (0, i.jsx)(o.njP.Item, {
     className: g.role,
     id: l,
     selectedItem: f,
-    onItemSelect: x,
-    itemType: b,
-    "aria-label": null != v ? "".concat(O, ", ").concat(v) : O,
+    onItemSelect: b,
+    itemType: x,
+    "aria-label": null != v ? "".concat(E, ", ").concat(v) : E,
     onContextMenu: S,
     children: (0, i.jsxs)("div", {
       className: g.roleContent,
       children: ["dot" === N ? (0, i.jsx)(o.FhE, {
         color: null != t ? t : true,
-        colors: E,
+        colors: O,
         className: g.roleDot,
         background: false,
         tooltip: false
       }) : (0, i.jsx)(o.xko, {
         color: null != t ? t : null,
-        colors: E,
+        colors: O,
         className: g.roleCircle
       }), function() {
         if (!j) return null;

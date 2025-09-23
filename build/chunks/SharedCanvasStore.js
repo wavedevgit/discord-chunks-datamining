@@ -1,7 +1,7 @@
-/** Chunk was on 69634 **/
+/** Chunk was on 47387 **/
 /** chunk id: 673125, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => h
 }), require("./539854.js"), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -48,7 +48,7 @@ function v(e) {
     r.src = n, E[e] = r
   }
 }
-class h extends(r = Chunk442837.ZP.Store) {
+class O extends(r = Chunk442837.ZP.Store) {
   get visibleOverlayCanvas() {
     return b
   }
@@ -65,8 +65,8 @@ class h extends(r = Chunk442837.ZP.Store) {
     return S
   }
 }
-f(h, "displayName", "SharedCanvasStore");
-let O = new h(Chunk570140.Z, {
+f(O, "displayName", "SharedCanvasStore");
+let h = new O(Chunk570140.Z, {
   SHARED_CANVAS_UPDATE_LINE_POINTS: function(e) {
     let {
       lineId: t,

@@ -25,13 +25,13 @@ let _ = new Set,
     numChannels: 0
   };
 
-function O(e) {
+function T(e) {
   let t = new Set,
-    n = null == r || o === j.Iq.EMBEDDED_APPLICATION ? true : r.id,
+    n = null == r || o === N.Iq.EMBEDDED_APPLICATION ? true : r.id,
     l = (0, v.rh)(_, n);
   for (let e of (null == l || f.Z.isBlockedOrIgnored(l.id) || t.add(l.id), m.Z.getUserAffinities())) t.add(e.otherUserId);
   let i = new Set;
-  return o === j.Iq.EMBEDDED_APPLICATION && h.Z.getChannelHistory().map(e => I.Z.getChannel(e)).filter(p.lm).filter(e => e.type === N.d4z.GUILD_TEXT).filter(e => x.Z.can(N.Plq.SEND_MESSAGES, e)).slice(0, 3).forEach(e => i.add(e.id)), (0, v.an)({
+  return o === N.Iq.EMBEDDED_APPLICATION && h.Z.getChannelHistory().map(e => x.Z.getChannel(e)).filter(p.lm).filter(e => e.type === j.d4z.GUILD_TEXT).filter(e => I.Z.can(j.Plq.SEND_MESSAGES, e)).slice(0, 3).forEach(e => i.add(e.id)), (0, v.an)({
     query: e,
     omitUserIds: _,
     suggestedUserIds: t,
@@ -42,14 +42,14 @@ function O(e) {
   })
 }
 
-function y(e) {
+function O(e) {
   E = e, S = new Map, e.forEach((e, t) => {
     S.set(e, {
       index: t
     })
   })
 }
-class T extends(u = Chunk442837.ZP.Store) {
+class y extends(u = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk699516.Z, Chunk752048.Z)
   }
@@ -73,13 +73,13 @@ class T extends(u = Chunk442837.ZP.Store) {
       isFiltered: i
     }
   }
-}(d = "displayName") in T ? Object.defineProperty(T, d, {
+}(d = "displayName") in y ? Object.defineProperty(y, d, {
   value: "InviteSuggestionsStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : T[d] = "InviteSuggestionsStore";
-let C = new T(Chunk570140.Z, {
+}) : y[d] = "InviteSuggestionsStore";
+let C = new y(Chunk570140.Z, {
   LOAD_INVITE_SUGGESTIONS: function(e) {
     let {
       omitUserIds: t,
@@ -96,8 +96,8 @@ let C = new T(Chunk570140.Z, {
     let {
       rows: g,
       counts: h
-    } = O("");
-    y(g), b = h, l = E.length
+    } = T("");
+    O(g), b = h, l = E.length
   },
   INVITE_SUGGESTIONS_SEARCH: function(e) {
     let {
@@ -106,7 +106,7 @@ let C = new T(Chunk570140.Z, {
     i = "" !== t;
     let {
       rows: n
-    } = O(t);
-    n.sort((e, t) => null != e.score && null != t.score ? e.score - t.score : 0), y(n)
+    } = T(t);
+    n.sort((e, t) => null != e.score && null != t.score ? e.score - t.score : 0), O(n)
   }
 })

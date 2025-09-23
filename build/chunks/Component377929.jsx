@@ -1,7 +1,7 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 91053 **/
 /** chunk id: 377929, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => S
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk488131 = require("./488131.js"),
   Chunk388032 = require("./388032.jsx");
 
-function E(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -45,7 +45,7 @@ function E(e) {
   return e
 }
 
-function S(e, t) {
+function E(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -58,25 +58,25 @@ function S(e, t) {
   }), e
 }
 
-function I(e) {
+function S(e) {
   let {
     channel: t
   } = e, [n, l] = i.useState(false), a = i.useRef(null);
 
-  function o() {
+  function s() {
     l(e => !e)
   }
-  let c = O.intl.string(O.t.UKOtz8);
-  return (0, r.jsx)(s.yRy, {
+  let c = C.intl.string(C.t.UKOtz8);
+  return (0, r.jsx)(o.yRy, {
     targetElementRef: a,
     shouldShow: n,
-    animation: s.yRy.Animation.NONE,
+    animation: o.yRy.Animation.NONE,
     position: "bottom",
     align: "right",
     autoInvert: false,
     onRequestClose: () => l(false),
     renderPopout: function(e) {
-      return (0, r.jsx)(P, S(E({}, e), {
+      return (0, r.jsx)(Z, E(I({}, e), {
         channel: t
       }))
     },
@@ -84,11 +84,11 @@ function I(e) {
       let {
         isShown: n
       } = t;
-      return (0, r.jsx)(C.ZP.Icon, S(E({}, e), {
+      return (0, r.jsx)(O.ZP.Icon, E(I({}, e), {
         ref: a,
-        onClick: o,
+        onClick: s,
         tooltip: n ? null : c,
-        icon: s.xhG,
+        icon: o.xhG,
         "aria-label": c,
         selected: n
       }))
@@ -96,34 +96,34 @@ function I(e) {
   })
 }
 
-function P(e) {
+function Z(e) {
   let {
     channel: t,
     closePopout: n,
     onSelect: i
-  } = e, l = (0, c.Z)(t), C = (0, f.Z)(t), E = (0, b.Z)(t.id), S = (0, g.Z)(t), I = (0, _.Z)({
+  } = e, l = (0, c.Z)(t), O = (0, f.Z)(t), I = (0, b.Z)(t.id), E = (0, m.Z)(t), S = (0, _.Z)({
     id: t.id,
-    label: O.intl.string(O.t.DQ797u)
-  }), P = (0, u.Z)(t), Z = (0, d.Z)(t), T = (0, p.Z)(t, "Toolbar Overflow"), N = (0, m.Z)(t), A = (0, h.Z)(t), w = (0, y.Z)(t), R = v.vF.useSetting(), M = (0, o.e7)([x.Z], () => !a().isEmpty(x.Z.getVoiceStatesForChannel(t.id)));
-  return (0, r.jsxs)(s.v2r, {
+    label: C.intl.string(C.t.DQ797u)
+  }), Z = (0, d.Z)(t), P = (0, u.Z)(t), T = (0, p.Z)(t, "Toolbar Overflow"), N = (0, g.Z)(t), R = (0, h.Z)(t), w = (0, y.Z)(t), A = j.vF.useSetting(), D = (0, s.e7)([x.Z], () => !a().isEmpty(x.Z.getVoiceStatesForChannel(t.id)));
+  return (0, r.jsxs)(o.v2r, {
     navId: "thread-context",
     onClose: n,
-    "aria-label": O.intl.string(O.t["1NBjqa"]),
+    "aria-label": C.intl.string(C.t["1NBjqa"]),
     onSelect: i,
-    children: [(0, r.jsxs)(s.kSQ, {
-      children: [T, A]
-    }), (0, r.jsxs)(s.kSQ, {
-      children: [S, N, E, R && !M ? (0, r.jsx)(s.sNh, {
+    children: [(0, r.jsxs)(o.kSQ, {
+      children: [T, R]
+    }), (0, r.jsxs)(o.kSQ, {
+      children: [E, N, I, A && !D ? (0, r.jsx)(o.sNh, {
         id: "open",
-        label: O.intl.string(O.t.bX7EaG),
+        label: C.intl.string(C.t.bX7EaG),
         action: function() {
-          (0, j.ok)(t)
+          (0, v.ok)(t)
         }
       }) : null]
-    }), (0, r.jsxs)(s.kSQ, {
-      children: [w, l, C, Z]
-    }), (0, r.jsxs)(s.kSQ, {
-      children: [P, I]
+    }), (0, r.jsxs)(o.kSQ, {
+      children: [w, l, O, P]
+    }), (0, r.jsxs)(o.kSQ, {
+      children: [Z, S]
     })]
   })
 }

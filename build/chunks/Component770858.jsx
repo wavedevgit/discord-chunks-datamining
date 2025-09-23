@@ -1,4 +1,4 @@
-/** Chunk was on 11160 **/
+/** Chunk was on 89929 **/
 /** chunk id: 770858, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -37,13 +37,13 @@ function E(e) {
     selectedOverride: p = false,
     popoutProps: h,
     ref: O
-  } = e, j = (0, l.Ie)("notifications-inbox"), [E, S] = i.useState(false), P = (0, m.D)(), I = p || P, {
+  } = e, j = (0, l.Ie)("notifications-inbox"), [E, S] = i.useState(false), I = (0, m.D)(), P = p || I, {
     notificationCenterVariant: N
   } = (0, g.pN)({
     location: "NotificationsInboxButtonInner"
   }), {
-    badge: Z,
-    badgeDimensions: w,
+    badge: w,
+    badgeDimensions: Z,
     unreadChannelsCount: T
   } = function(e) {
     let {
@@ -77,22 +77,22 @@ function E(e) {
       unreadChannelsCount: n.length,
       badgeDimensions: o
     }
-  }(I), A = N === g.jP.LEGACY ? a.xx7 : a.Dkj, R = (0, o.e7)([f.Z], () => f.Z.getChannelId()), D = i.useMemo(() => {
+  }(P), A = N === g.jP.LEGACY ? a.xx7 : a.Dkj, R = (0, o.e7)([f.Z], () => f.Z.getChannelId()), D = i.useMemo(() => {
     if (N === g.jP.SIDEBAR) return v.Z5c.CHANNEL(v.STv, R)
   }, [N, R]);
   return (0, r.jsxs)(u.H, {
     ref: O,
     children: [(0, r.jsx)(c.Z, {
-      selected: I && N === g.jP.SIDEBAR,
+      selected: P && N === g.jP.SIDEBAR,
       hovered: E && N === g.jP.SIDEBAR,
       unread: T > 0,
       className: x.pill,
       disabled: N === g.jP.LEGACY
     }), (0, r.jsx)(y.Z, {
       children: (0, r.jsx)(a.aRk, {
-        selected: I || E,
-        lowerBadge: Z,
-        lowerBadgeSize: w,
+        selected: P || E,
+        lowerBadge: w,
+        lowerBadgeSize: Z,
         children: (0, r.jsx)(a.LYs, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -113,7 +113,7 @@ function E(e) {
         }({}, j, h), n = n = {
           onClick: d,
           to: D,
-          selected: I || E,
+          selected: P || E,
           onMouseEnter: () => S(true),
           onMouseLeave: () => S(false),
           children: (0, r.jsx)(A, {

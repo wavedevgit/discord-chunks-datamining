@@ -1,4 +1,4 @@
-/** Chunk was on 11160 **/
+/** Chunk was on 89929 **/
 /** chunk id: 11799, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   y6: () => p
@@ -50,10 +50,10 @@ let p = () => {
     r.useEffect(() => ((0, s.Vk)(true), () => (0, s.Vk)(false)), []), r.useEffect(() => {
       y && t && (0, l.FT)(d.W.NOTIFICATION_CENTER)
     }, [t, y]);
-    let P = (0, o.Z)();
+    let I = (0, o.Z)();
     r.useEffect(() => () => {
-      p ? !P() && (C || v.length > 100) && (0, s.jF)() : n && v.length > 100 && (0, s.jF)()
-    }, [n, v, p, P, C]), r.useEffect(() => {
+      p ? !I() && (C || v.length > 100) && (0, s.jF)() : n && v.length > 100 && (0, s.jF)()
+    }, [n, v, p, I, C]), r.useEffect(() => {
       let e = g && t;
       (!y || e) && (0, s.jk)({
         limit: null != h ? h : f ? 8 : 20,
@@ -62,7 +62,7 @@ let p = () => {
         everyone_filter: S
       })
     }, [y, g, t, f, E, S, h]);
-    let I = r.useCallback(async e => {
+    let P = r.useCallback(async e => {
       !m.current && y && j && null != x && (e || !C) && (m.current = true, O(true), await (0, s.jk)({
         after: x,
         with_mentions: f,
@@ -78,7 +78,7 @@ let p = () => {
       loading: _,
       items: v,
       hasMore: j,
-      loadMore: I,
+      loadMore: P,
       loadingMore: b,
       setReadNotifItemToAcked: e => {
         e.acked || (e.acked = true)

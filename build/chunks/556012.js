@@ -1,4 +1,4 @@
-/** Chunk was on 79381 **/
+/** Chunk was on 93375 **/
 /** chunk id: 556012, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   c: () => E
@@ -33,7 +33,7 @@ let f = function(e) {
 };
 
 function E(e, t, n) {
-  var E, g, d, O;
+  var E, g, d, S;
   return (e => {
     switch (e) {
       case o.jj.BLOCK_MESSAGE:
@@ -84,7 +84,7 @@ function E(e, t, n) {
         }
       }
     })(e, t)) ? d : null,
-    icon: null != (O = (e => {
+    icon: null != (S = (e => {
       switch (e) {
         case o.jj.BLOCK_MESSAGE:
           return r.k$p;
@@ -95,7 +95,7 @@ function E(e, t, n) {
         case o.jj.QUARANTINE_USER:
           return r.ics
       }
-    })(e)) ? O : r.k$p,
+    })(e)) ? S : r.k$p,
     isEditable: e !== o.jj.QUARANTINE_USER
   } : null
 }

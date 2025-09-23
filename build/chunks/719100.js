@@ -1,7 +1,7 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 91053 **/
 /** chunk id: 719100, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => o
 });
 var Chunk314897 = require("./314897.js"),
   Chunk565799 = require("./565799.js"),
@@ -9,8 +9,8 @@ var Chunk314897 = require("./314897.js"),
   Chunk88751 = require("./88751.js"),
   Chunk427679 = require("./427679.js");
 
-function s(e) {
-  if (!e.isGuildStageVoice() || !o.Z.isLive(e.id)) returnfalse;
+function o(e) {
+  if (!e.isGuildStageVoice() || !s.Z.isLive(e.id)) returnfalse;
   let t = r.default.getId();
   return !!a.ZP.isModerator(t, e.id) && !!a.ZP.isSpeaker(t, e.id) && (null == i.Z.getMutableParticipants(e.id).find(n => n.user.id !== t && a.ZP.isModerator(n.user.id, e.id)) || null == i.Z.getMutableParticipants(e.id, l.pV.SPEAKER).find(n => n.user.id !== t && a.ZP.isModerator(n.user.id, e.id)))
 }

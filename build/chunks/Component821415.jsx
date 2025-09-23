@@ -1,7 +1,7 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 21616 **/
 /** chunk id: 821415, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => O
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -50,7 +50,7 @@ function x(e) {
     }
     g(2)
   }
-  if (b && (t = C.intl.string(_.default.qRXatr)), n.type === y.IIU.PLAYING) {
+  if (b && (t = _.intl.string(C.default.qRXatr)), n.type === y.IIU.PLAYING) {
     let e = null == u ? true : u.getIconURL(46);
     return (0, r.jsxs)("div", {
       className: v.activityRow,
@@ -68,7 +68,7 @@ function x(e) {
           children: [(0, r.jsx)(s.Text, {
             variant: "text-sm/medium",
             color: "text-tertiary",
-            children: C.intl.string(C.t.BMTj29)
+            children: _.intl.string(_.t.BMTj29)
           }), (0, r.jsx)(s.Text, {
             variant: "text-md/medium",
             children: n.name
@@ -79,7 +79,7 @@ function x(e) {
         disabled: b || 2 === m,
         fullWidth: true,
         size: "sm",
-        text: 2 === m ? C.intl.string(_.default["8HU1Mz"]) : C.intl.string(_.default.DKHheX),
+        text: 2 === m ? _.intl.string(C.default["8HU1Mz"]) : _.intl.string(C.default.DKHheX),
         onClick: x
       }), null != t && (0, r.jsx)(s.Text, {
         className: v.disabledReason,
@@ -91,7 +91,7 @@ function x(e) {
   }
 }
 
-function j(e) {
+function O(e) {
   let {
     userId: t,
     channel: n

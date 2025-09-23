@@ -1,4 +1,4 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 21616 **/
 /** chunk id: 748855, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   L: () => d
@@ -21,13 +21,13 @@ function d(e) {
     clearStatus: p,
     isFavorited: h,
     onFavoriteClick: f
-  } = e, [m, g] = i.useState(false), b = m && l, y = null != f, _ = i.useCallback(() => {
+  } = e, [m, g] = i.useState(false), b = m && l, y = null != f, C = i.useCallback(() => {
     b ? null == p || p() : d()
-  }, [b, p, d]), C = i.useCallback(e => {
+  }, [b, p, d]), _ = i.useCallback(e => {
     e.stopPropagation(), null == f || f()
   }, [f]);
   return (0, r.jsxs)(s.P3F, {
-    onClick: _,
+    onClick: C,
     onMouseEnter: () => {
       g(true)
     },
@@ -45,7 +45,7 @@ function d(e) {
       className: c.closeIcon,
       color: m ? o.Z.colors.ICON_PRIMARY : o.Z.colors.ICON_SECONDARY
     }) : m && y && (0, r.jsx)(s.P3F, {
-      onClick: C,
+      onClick: _,
       children: (0, r.jsx)(s.r7p, {
         className: c.closeIcon,
         color: h ? o.Z.colors.ICON_FEEDBACK_WARNING : true

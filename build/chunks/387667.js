@@ -1,4 +1,4 @@
-/** Chunk was on 10576 **/
+/** Chunk was on 66201 **/
 /** chunk id: 387667, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Pw: () => E,
@@ -55,7 +55,7 @@ function c(e) {
   else if (e <= o.rsA.GUILD_MEMBER_VERIFICATION_UPDATE) return o.KFR.GUILD_MEMBER_VERIFICATION;
   else if (e <= o.rsA.GUILD_PROFILE_UPDATE) return o.KFR.GUILD_PROFILE;
   else if (e <= o.rsA.GUILD_MIGRATE_PIN_PERMISSION) return o.KFR.GUILD;
-  return a.Z.captureMessage("Unknown target type for: ".concat(e)), o.KFR.UNKNOWN
+  return s.Z.captureMessage("Unknown target type for: ".concat(e)), o.KFR.UNKNOWN
 }
 
 function E(e) {
@@ -150,8 +150,8 @@ class d {
 }
 class _ extends Chunk81825.Z {
   constructor(e) {
-    var t, n, r, i, a, o;
-    super(), u(this, "id", true), u(this, "actionType", true), u(this, "action", true), u(this, "targetType", true), u(this, "targetId", true), u(this, "target", true), u(this, "userId", true), u(this, "changes", true), u(this, "timestampStart", true), u(this, "timestampEnd", true), u(this, "user", true), u(this, "options", true), this.id = e.id, this.action = e.action, this.actionType = E(this.action), this.targetId = e.targetId, this.timestampStart = null != (t = e.timestampStart) ? t : l()(s.default.extractTimestamp(this.id)), this.timestampEnd = null != (n = e.timestampEnd) ? n : this.timestampStart, this.userId = e.userId, this.changes = null != (r = e.changes) ? r : [], this.targetType = c(this.action), this.options = null != (i = e.options) ? i : {}, this.target = null != (a = e.target) ? a : e.id, this.user = null != (o = e.user) ? o : null
+    var t, n, r, i, s, o;
+    super(), u(this, "id", true), u(this, "actionType", true), u(this, "action", true), u(this, "targetType", true), u(this, "targetId", true), u(this, "target", true), u(this, "userId", true), u(this, "changes", true), u(this, "timestampStart", true), u(this, "timestampEnd", true), u(this, "user", true), u(this, "options", true), this.id = e.id, this.action = e.action, this.actionType = E(this.action), this.targetId = e.targetId, this.timestampStart = null != (t = e.timestampStart) ? t : l()(a.default.extractTimestamp(this.id)), this.timestampEnd = null != (n = e.timestampEnd) ? n : this.timestampStart, this.userId = e.userId, this.changes = null != (r = e.changes) ? r : [], this.targetType = c(this.action), this.options = null != (i = e.options) ? i : {}, this.target = null != (s = e.target) ? s : e.id, this.user = null != (o = e.user) ? o : null
   }
 }
 let A = _

@@ -1,4 +1,4 @@
-/** Chunk was on 11160 **/
+/** Chunk was on 89929 **/
 /** chunk id: 325257, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => k
@@ -78,7 +78,7 @@ function M(e, t) {
   (0, h.jW)(e, async () => {
     let {
       default: e
-    } = await Promise.all([n.e("36599"), n.e("60962"), n.e("58175"), n.e("55616"), n.e("8271"), n.e("15851"), n.e("51453"), n.e("7654"), n.e("845"), n.e("47463"), n.e("6850"), n.e("58227"), n.e("54408"), n.e("90746"), n.e("8106"), n.e("56534"), n.e("87154"), n.e("33213"), n.e("73709")]).then(n.bind(n, 545135));
+    } = await Promise.all([n.e("36599"), n.e("7654"), n.e("58175"), n.e("55616"), n.e("8271"), n.e("15851"), n.e("51453"), n.e("845"), n.e("58511"), n.e("6850"), n.e("58227"), n.e("54408"), n.e("90746"), n.e("21376"), n.e("56534"), n.e("87154"), n.e("33213"), n.e("73709")]).then(n.bind(n, 545135));
     return n => (0, r.jsx)(e, D(R({}, n), {
       guild: t
     }))
@@ -111,8 +111,8 @@ let k = Chunk647438.memo(function(e) {
   } = e, {
     id: eo,
     parentId: ea
-  } = U, es = null != (t = e.upperBadge) ? t : q ? (0, Z.Ny)() : null != Y ? (0, Z.Or)(Y) : true, ec = null != (n = e.lowerBadge) ? n : true;
-  null == ec && X > 0 ? ec = null != (l = (0, Z.Ne)(X, Q ? m.Z.BACKGROUND_ACCENT : m.Z.STATUS_DANGER)) ? l : true : null == ec && null != en && (ec = null != (h = (0, Z.jt)({
+  } = U, es = null != (t = e.upperBadge) ? t : q ? (0, w.Ny)() : null != Y ? (0, w.Or)(Y) : true, ec = null != (n = e.lowerBadge) ? n : true;
+  null == ec && X > 0 ? ec = null != (l = (0, w.Ne)(X, Q ? m.Z.BACKGROUND_ACCENT : m.Z.STATUS_DANGER)) ? l : true : null == ec && null != en && (ec = null != (h = (0, w.jt)({
     guildJoinRequestStatus: en
   })) ? h : true);
   let eu = null != (k = e.lowerBadgeSize) ? k : {
@@ -135,7 +135,7 @@ let k = Chunk647438.memo(function(e) {
         dragging: e.isDragging()
       })
     }),
-    ef = (0, c.Ie)(null != eo ? eo : w.lds, null != ea ? 2 : 1),
+    ef = (0, c.Ie)(null != eo ? eo : Z.lds, null != ea ? 2 : 1),
     [eh, eg] = i.useState(false),
     em = !ee && eh,
     [eb, eO] = i.useState(false),
@@ -165,16 +165,16 @@ let k = Chunk647438.memo(function(e) {
         null == (t = document.querySelector("[aria-owns=folder-items-".concat(ea, "]"))) || t.focus()
       }
     }, [ea]),
-    eP = i.useCallback(e => {
+    eI = i.useCallback(e => {
       if (e) return void ev.delay();
       ev.cancel(), e_(false)
     }, [ev]),
-    eI = i.useCallback(e => {
+    eP = i.useCallback(e => {
       null == G || G(eo, e)
     }, [eo, G]),
     eN = (0, p.dQu)(p.TVs.modules.guildbar.AVATAR_SIZE);
   if (null == H) return null;
-  let eZ = ey || eb ? (0, r.jsx)(E.Z, {
+  let ew = ey || eb ? (0, r.jsx)(E.Z, {
       guild: H,
       show: ey,
       active: W,
@@ -207,8 +207,8 @@ let k = Chunk647438.memo(function(e) {
       "aria-posinset": el,
       "aria-selected": W
     })),
-    ew = ed ? (0, r.jsx)(S.OG, {
-      children: (0, r.jsx)(I.Z, {})
+    eZ = ed ? (0, r.jsx)(S.OG, {
+      children: (0, r.jsx)(P.Z, {})
     }) : (0, r.jsx)(s.animated.div, {
       ref: $ ? e => {
         ep(e)
@@ -228,25 +228,25 @@ let k = Chunk647438.memo(function(e) {
         upperBadge: es,
         lowerBadge: ec,
         lowerBadgeSize: eu,
-        children: eZ
+        children: ew
       })
     });
   return (0, r.jsxs)(N.H, {
-    ref: eI,
+    ref: eP,
     children: [(0, r.jsx)(C.Z, {
       hovered: !ed && em,
       selected: !ed && W,
       unread: !ed && K,
       className: A.pill
-    }), (0, r.jsx)(P.Z, {
+    }), (0, r.jsx)(I.Z, {
       guild: H,
       disabled: ee,
       isDragging: ed,
-      children: ew
+      children: eZ
     }), $ ? (0, r.jsx)(S.ZP, {
       name: H.name,
       targetNode: U,
-      onDragOverChanged: eP
+      onDragOverChanged: eI
     }) : null]
   })
 })

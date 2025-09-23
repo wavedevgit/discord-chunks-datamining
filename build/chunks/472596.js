@@ -1,11 +1,11 @@
-/** Chunk was on 10576 **/
+/** Chunk was on 66201 **/
 /** chunk id: 472596, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   RE: () => d,
   RN: () => A,
-  po: () => m,
+  po: () => I,
   vN: () => _,
-  xb: () => I,
+  xb: () => m,
   zq: () => T
 });
 var r, Chunk647438 = require("./647438.js"),
@@ -22,7 +22,7 @@ let d = (e, t) => {
     userId: r,
     colorRoleId: l
   } = e;
-  (0, s.openUserProfileModal)({
+  (0, a.openUserProfileModal)({
     userId: r,
     guildId: n,
     sourceAnalyticsLocations: t,
@@ -33,12 +33,12 @@ let d = (e, t) => {
 function _(e, t, n, r) {
   let {
     analyticsLocations: i
-  } = (0, a.ZP)();
+  } = (0, s.ZP)();
   return l.useCallback(l => {
     if (null == e) return;
-    let a = c.default.getUser(e.userId);
-    null != a && (l.stopPropagation(), (0, E.nm)(l, {
-      user: a,
+    let s = c.default.getUser(e.userId);
+    null != s && (l.stopPropagation(), (0, E.nm)(l, {
+      user: s,
       guildId: e.guildId,
       analyticsLocations: null != n ? [n] : i,
       onCloseContextMenu: r,
@@ -50,7 +50,7 @@ function _(e, t, n, r) {
 function A(e, t, n) {
   let {
     analyticsLocations: r
-  } = (0, a.ZP)();
+  } = (0, s.ZP)();
   return l.useCallback(l => {
     if (null == e) return;
     let i = c.default.getUser(e.userId);
@@ -72,8 +72,8 @@ function T(e) {
     return null == n || null == e.highestRoleId ? null : null != (t = o.Z.getRole(n.id, e.highestRoleId)) ? t : null
   }, [e])
 }
-var m = ((r = {})[r.LOADING = 0] = "LOADING", r[r.SUCCESS_STILL_INDEXING = 1] = "SUCCESS_STILL_INDEXING", r[r.SUCCESS_EMPTY = 2] = "SUCCESS_EMPTY", r[r.SUCCESS_FULL = 3] = "SUCCESS_FULL", r);
+var I = ((r = {})[r.LOADING = 0] = "LOADING", r[r.SUCCESS_STILL_INDEXING = 1] = "SUCCESS_STILL_INDEXING", r[r.SUCCESS_EMPTY = 2] = "SUCCESS_EMPTY", r[r.SUCCESS_FULL = 3] = "SUCCESS_FULL", r);
 
-function I(e, t, n) {
+function m(e, t, n) {
   return t ? 0 : e ? 1 : n <= 0 ? 2 : 3
 }

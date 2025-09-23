@@ -1,4 +1,4 @@
-/** Chunk was on 11160 **/
+/** Chunk was on 89929 **/
 /** chunk id: 620304, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -37,7 +37,7 @@ function j(e) {
     E !== t.premiumSubscriberCount && (0, f.v)(t.id, t.premiumSubscriberCount)
   }, [t.id, E, t.premiumSubscriberCount]);
   let S = Math.min(E / j * 100, 100),
-    [P, I] = (0, u.q_F)(() => ({
+    [I, P] = (0, u.q_F)(() => ({
       width: E === t.premiumSubscriberCount ? "calc(".concat(S, "% - 4px)") : "0%",
       config: {
         tension: 250,
@@ -46,10 +46,10 @@ function j(e) {
       }
     }), "respect-motion-settings", [E, t.premiumSubscriberCount]);
   i.useEffect(() => {
-    I({
+    P({
       width: "calc(".concat(S, "% - 4px)")
     })
-  }, [S, I]);
+  }, [S, P]);
   let N = E >= j;
   return (0, r.jsx)(u.P3F, {
     "aria-label": true,
@@ -113,7 +113,7 @@ function j(e) {
         className: o()(v.progress, {
           [v.progressLow]: S <= 5
         }),
-        style: P
+        style: I
       }), (0, r.jsxs)("div", {
         className: v.textContainer,
         children: [(0, r.jsxs)("div", {

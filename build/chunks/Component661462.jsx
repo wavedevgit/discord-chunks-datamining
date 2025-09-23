@@ -1,8 +1,8 @@
-/** Chunk was on 30355 **/
+/** Chunk was on 49902 **/
 /** chunk id: 661462, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  F: () => y,
-  Z: () => v
+  F: () => v,
+  Z: () => O
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -37,7 +37,7 @@ function b(e) {
   return e
 }
 
-function j(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -50,108 +50,108 @@ function j(e, t) {
   }), e
 }
 
-function y(e) {
+function v(e) {
   var {
     children: t,
     className: n,
-    scrollerRef: l
-  } = e, i = function(e, t) {
+    scrollerRef: i
+  } = e, l = function(e, t) {
     if (null == e) return {};
-    var n, r, l = function(e, t) {
+    var n, r, i = function(e, t) {
       if (null == e) return {};
-      var n, r, l = {},
-        i = Object.keys(e);
-      for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
-      return l
+      var n, r, i = {},
+        l = Object.keys(e);
+      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+      return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
+      var l = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
-    return l
+    return i
   }(e, ["children", "className", "scrollerRef"]);
-  return (0, r.jsx)(s.Ttm, j(b({
-    ref: l,
+  return (0, r.jsx)(o.Ttm, m(b({
+    ref: i,
     className: a()(p.tabPanelScroller, n),
     fade: true
-  }, i), {
+  }, l), {
     children: t
   }))
 }
 
-function h(e) {
+function y(e) {
   let {
     user: t,
     currentUser: n,
-    section: l,
-    subsection: i,
+    section: i,
+    subsection: l,
     displayProfile: a,
-    guildId: s,
-    channelId: o,
+    guildId: o,
+    channelId: s,
     onClose: p
   } = e;
-  return l === g.oh.ACTIVITY ? (0, r.jsx)(c.Z, {
+  return i === h.oh.ACTIVITY ? (0, r.jsx)(c.Z, {
     user: t,
     currentUser: n,
     displayProfile: a,
-    guildId: s,
-    channelId: o,
-    subsection: i,
+    guildId: o,
+    channelId: s,
+    subsection: l,
     onClose: p
-  }) : l === g.oh.MUTUAL_FRIENDS ? (0, r.jsx)(u.Z, {
+  }) : i === h.oh.MUTUAL_FRIENDS ? (0, r.jsx)(u.Z, {
     user: t,
-    guildId: s,
-    channelId: o,
+    guildId: o,
+    channelId: s,
     onClose: p
-  }) : l === g.oh.MUTUAL_GUILDS ? (0, r.jsx)(d.Z, {
+  }) : i === h.oh.MUTUAL_GUILDS ? (0, r.jsx)(d.Z, {
     user: t,
     onClose: p
-  }) : l === g.oh.WIDGETS ? (0, r.jsx)(f.C, {
+  }) : i === h.oh.WIDGETS ? (0, r.jsx)(f.C, {
     user: t,
-    guildId: s,
-    channelId: o
-  }) : l === g.oh.WISHLIST ? (0, r.jsx)(m.Z, {}) : null
+    guildId: o,
+    channelId: s
+  }) : i === h.oh.WISHLIST ? (0, r.jsx)(g.Z, {}) : null
 }
 
-function v(e) {
+function O(e) {
   var t;
   let {
     user: n,
-    currentUser: i,
+    currentUser: l,
     displayProfile: a,
     guildId: c,
     channelId: u,
     items: d,
     initialSection: f,
-    initialSubsection: m,
-    onClose: g
+    initialSubsection: g,
+    onClose: h
   } = e, {
-    trackUserProfileAction: y
-  } = (0, o.KZ)(), [{
-    section: v,
-    subsection: O,
+    trackUserProfileAction: v
+  } = (0, s.KZ)(), [{
+    section: O,
+    subsection: j,
     text: x
-  }, P] = l.useState(j(b({}, null != (t = d.find(e => {
+  }, P] = i.useState(m(b({}, null != (t = d.find(e => {
     let {
       section: t
     } = e;
     return t === f
   })) ? t : d[0]), {
-    subsection: m
+    subsection: g
   }));
   return (0, r.jsxs)("div", {
     className: p.container,
-    children: [(0, r.jsx)(s.Ttm, {
+    children: [(0, r.jsx)(o.Ttm, {
       orientation: "horizontal",
       className: p.tabListScroller,
       fade: true,
       paddingFix: false,
-      children: (0, r.jsx)(s.njP, {
+      children: (0, r.jsx)(o.njP, {
         type: "top",
         look: "custom",
-        selectedItem: v,
+        selectedItem: O,
         onItemSelect: e => {
-          y({
+          v({
             action: "PRESS_SECTION",
             section: e
           }), P(t => {
@@ -159,26 +159,26 @@ function v(e) {
             return null != (n = d.find(t => t.section === e)) ? n : t
           })
         },
-        children: d.map(e => (0, r.jsx)(s.njP.Item, {
+        children: d.map(e => (0, r.jsx)(o.njP.Item, {
           className: p.tabBarItem,
           id: e.section,
           "aria-label": e.text,
           children: e.text
         }, e.section))
       })
-    }), (0, r.jsx)(s.njP.Panel, {
-      id: v,
+    }), (0, r.jsx)(o.njP.Panel, {
+      id: O,
       "aria-label": x,
       className: p.tabBarPanel,
-      children: (0, r.jsx)(h, {
+      children: (0, r.jsx)(y, {
         user: n,
-        currentUser: i,
+        currentUser: l,
         displayProfile: a,
         guildId: c,
         channelId: u,
-        section: v,
-        subsection: O,
-        onClose: g
+        section: O,
+        subsection: j,
+        onClose: h
       })
     })]
   })

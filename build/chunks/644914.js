@@ -1,8 +1,8 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 21616 **/
 /** chunk id: 644914, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  TE: () => _,
-  h_: () => C
+  TE: () => C,
+  h_: () => _
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
@@ -21,7 +21,7 @@ var Chunk647438 = require("./647438.js"),
   Chunk709054 = require("./709054.js"),
   Chunk981631 = require("./981631.js");
 
-function _(e, t) {
+function C(e, t) {
   return (0, a.cj)([g.Z], () => ({
     canInvite: (0, o.b)(g.Z, t, e),
     canManageGuild: null != t && g.Z.can(y.Plq.MANAGE_GUILD, t),
@@ -30,7 +30,7 @@ function _(e, t) {
   }), [t, e])
 }
 
-function C(e) {
+function _(e) {
   return {
     guildPopulated: function(e) {
       let t = (0, a.e7)([u.Z], () => u.Z.getChannel(null == e ? true : e.systemChannelId)),

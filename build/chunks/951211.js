@@ -1,4 +1,4 @@
-/** Chunk was on 62987 **/
+/** Chunk was on 21616 **/
 /** chunk id: 951211, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h,
@@ -26,8 +26,8 @@ function h(e) {
     newClipsCount: g,
     canPostPolls: b,
     canLaunchActivities: y,
-    appContext: _,
-    canSendScheduledMessages: C
+    appContext: C,
+    canSendScheduledMessages: _
   } = e, v = [];
   return t && (v.push({
     type: "UPLOAD_A_FILE",
@@ -37,7 +37,7 @@ function h(e) {
     type: "UPLOAD_TEXT_AS_FILE",
     icon: i.xD0,
     display: d.intl.string(d.t["G9s+EB"])
-  })), h && t && _ !== u.IlC.POPOUT && v.push({
+  })), h && t && C !== u.IlC.POPOUT && v.push({
     type: "CLIPS",
     icon: i.AlX,
     display: d.intl.string(d.t.o034cn),
@@ -85,7 +85,7 @@ function h(e) {
       }),
       activity: e
     }))
-  }), C && v.push({
+  }), _ && v.push({
     type: "SCHEDULED_MESSAGE",
     icon: i.T39,
     display: d.intl.string(d.t["3+ii4O"])

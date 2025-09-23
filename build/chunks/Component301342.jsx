@@ -1,9 +1,9 @@
-/** Chunk was on 11160 **/
+/** Chunk was on 89929 **/
 /** chunk id: 301342, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  P: () => w,
+  P: () => Z,
   Qo: () => T,
-  ZP: () => Z,
+  ZP: () => w,
   kw: () => R,
   rj: () => A
 });
@@ -50,7 +50,7 @@ function S(e) {
   return e
 }
 
-function P(e, t) {
+function I(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -63,7 +63,7 @@ function P(e, t) {
   }), e
 }
 
-function I(e) {
+function P(e) {
   e.stopPropagation()
 }
 let N = Chunk647438.memo(function(e) {
@@ -74,8 +74,8 @@ let N = Chunk647438.memo(function(e) {
         disableManageChannels: v,
         position: j,
         sortingPosition: N,
-        hideIcon: Z,
-        children: w
+        hideIcon: w,
+        children: Z
       } = e,
       T = (0, s.e7)([_.ZP], () => _.ZP.isChannelMuted(l.getGuildId(), l.id)),
       A = (0, s.e7)([b.Z], () => b.Z.isCollapsed(l.id)),
@@ -91,7 +91,7 @@ let N = Chunk647438.memo(function(e) {
             let {
               default: e
             } = await Promise.all([n.e("8965"), n.e("14280")]).then(n.bind(n, 139035));
-            return n => (0, r.jsx)(e, P(S({}, n), {
+            return n => (0, r.jsx)(e, I(S({}, n), {
               channel: l,
               guild: t
             }))
@@ -105,7 +105,7 @@ let N = Chunk647438.memo(function(e) {
           let {
             default: i
           } = await Promise.all([n.e("45094"), n.e("67133")]).then(n.bind(n, 218613));
-          return n => (0, r.jsx)(i, P(S({}, n), {
+          return n => (0, r.jsx)(i, I(S({}, n), {
             channelType: e,
             guildId: t,
             categoryId: "null" !== l.id ? l.id : null
@@ -152,7 +152,7 @@ let N = Chunk647438.memo(function(e) {
               [E.clickable]: true
             }),
             onContextMenu: L,
-            children: [(0, r.jsxs)(d.P3F, P(S({
+            children: [(0, r.jsxs)(d.P3F, I(S({
               innerRef: F,
               className: E.mainContent,
               tabIndex: G
@@ -170,13 +170,13 @@ let N = Chunk647438.memo(function(e) {
                 children: (0, r.jsx)(m.Z, {
                   children: l.name
                 })
-              }), Z ? null : (0, r.jsx)(d.CJ0, {
+              }), w ? null : (0, r.jsx)(d.CJ0, {
                 size: "md",
                 color: "currentColor",
                 className: E.icon
               })]
             })), (0, r.jsx)("div", {
-              onClick: I,
+              onClick: P,
               className: E.children,
               children: R && !v ? (0, r.jsx)(d.ua7, {
                 text: C.intl.string(C.t["fUYU+v"]),
@@ -212,12 +212,12 @@ let N = Chunk647438.memo(function(e) {
               }) : null
             })]
           })
-        }), w]
+        }), Z]
       });
     return null != h && null != c ? h(c(H)) : H
   }),
-  Z = (0, Chunk146773.B)(N),
-  w = Chunk647438.memo(function(e) {
+  w = (0, Chunk146773.B)(N),
+  Z = Chunk647438.memo(function(e) {
     let {
       name: t,
       onDismiss: n,

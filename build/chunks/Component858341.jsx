@@ -1,7 +1,7 @@
-/** Chunk was on 69363 **/
-/** chunk id: 858341, original params: e,n,t (module,exports,require) **/
+/** Chunk was on 58627 **/
+/** chunk id: 858341, original params: n,e,t (module,exports,require) **/
 require.d(exports, {
-  default: () => k
+  default: () => Z
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -18,52 +18,52 @@ var Chunk374470 = require("./374470.js"),
   Chunk536639 = require("./536639.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function k(e) {
-  var n;
-  let t, k, Z, {
+function Z(n) {
+  var e;
+  let t, Z, _, {
       channel: f,
-      message: E,
+      message: x,
       target: S,
-      attachment: j,
-      onSelect: v
-    } = e,
-    x = S;
-  if (null != j) k = t = j.url;
+      attachment: m,
+      onSelect: j
+    } = n,
+    v = S;
+  if (null != m) Z = t = m.url;
   else
     for (;
-      (0, r.kK)(x);)(0, r.kK)(x, HTMLImageElement) && null != x.src && (k = x.src), (0, r.kK)(x, HTMLAnchorElement) && null != x.href && (t = x.href, Z = x.textContent), x = x.parentNode;
-  let M = null == (n = document.getSelection()) ? true : n.toString(),
-    O = (0, c.Z)(M),
-    R = (0, d.Z)(M),
-    T = (0, _.Z)(E, f),
-    m = (0, p.Z)(E, f),
-    b = (0, u.Z)(E, f),
-    C = (0, h.Z)(E, f),
-    N = (0, a.Z)(null != t ? t : k, Z),
-    Q = (0, o.Z)({
-      id: E.id,
-      label: g.intl.string(g.t.zBoHlZ),
-      shiftId: "".concat(E.channel_id, "-").concat(E.id)
+      (0, s.kK)(v);)(0, s.kK)(v, HTMLImageElement) && null != v.src && (Z = v.src), (0, s.kK)(v, HTMLAnchorElement) && null != v.href && (t = v.href, _ = v.textContent), v = v.parentNode;
+  let b = null == (e = document.getSelection()) ? true : e.toString(),
+    C = (0, a.Z)(b),
+    Q = (0, d.Z)(b),
+    w = (0, g.Z)(x, f),
+    T = (0, p.Z)(x, f),
+    B = (0, u.Z)(x, f),
+    H = (0, h.Z)(x, f),
+    I = (0, o.Z)(null != t ? t : Z, _),
+    K = (0, r.Z)({
+      id: x.id,
+      label: k.intl.string(k.t.zBoHlZ),
+      shiftId: "".concat(x.channel_id, "-").concat(x.id)
     }),
-    w = (0, o.Z)({
-      id: E.author.id,
-      label: g.intl.string(g.t.Muw4ws)
+    M = (0, r.Z)({
+      id: x.author.id,
+      label: k.intl.string(k.t.Muw4ws)
     });
-  return (0, l.jsxs)(s.v2r, {
+  return (0, l.jsxs)(i.v2r, {
     navId: "message",
-    onClose: i.Zy,
-    "aria-label": g.intl.string(g.t.ChPNkJ),
-    onSelect: v,
-    children: [(0, l.jsx)(s.kSQ, {
-      children: O
-    }), (0, l.jsx)(s.kSQ, {
-      children: R
-    }), (0, l.jsxs)(s.kSQ, {
-      children: [T, m, b, C]
-    }), (0, l.jsx)(s.kSQ, {
-      children: N
-    }), (0, l.jsxs)(s.kSQ, {
-      children: [Q, w]
+    onClose: c.Zy,
+    "aria-label": k.intl.string(k.t.ChPNkJ),
+    onSelect: j,
+    children: [(0, l.jsx)(i.kSQ, {
+      children: C
+    }), (0, l.jsx)(i.kSQ, {
+      children: Q
+    }), (0, l.jsxs)(i.kSQ, {
+      children: [w, T, B, H]
+    }), (0, l.jsx)(i.kSQ, {
+      children: I
+    }), (0, l.jsxs)(i.kSQ, {
+      children: [K, M]
     })]
   })
 }

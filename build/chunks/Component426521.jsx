@@ -1,4 +1,4 @@
-/** Chunk was on 11160 **/
+/** Chunk was on 89929 **/
 /** chunk id: 426521, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   U: () => G
@@ -79,8 +79,8 @@ function L(e) {
 function M(e) {
   let {
     item: t
-  } = e, n = R, i = w.intl.string(w.t.SJTHJS);
-  return t.completed && (n = A, i = w.intl.string(w.t.f6RTAA)), (0, r.jsxs)("div", {
+  } = e, n = R, i = Z.intl.string(Z.t.SJTHJS);
+  return t.completed && (n = A, i = Z.intl.string(Z.t.f6RTAA)), (0, r.jsxs)("div", {
     className: T.lifecycleContainer,
     children: [(0, r.jsx)("img", {
       className: T.checkbox,
@@ -153,7 +153,7 @@ let U = Chunk647438.memo(function(e) {
             })
           } else await (0, d.Z)(r)
         }
-        O.default.track(Z.rMx.NOTIFICATION_CENTER_ACTION, {
+        O.default.track(w.rMx.NOTIFICATION_CENTER_ACTION, {
           action_type: j.ud.CLICKED,
           notification_center_id: l.id,
           item_type: l.type,
@@ -161,9 +161,9 @@ let U = Chunk647438.memo(function(e) {
         })
       }
     }, [l, f, u]), m = null;
-    l.type === j.O7.INCOMING_FRIEND_REQUESTS && null != l.other_user ? m = (0, r.jsx)(I.Z, {
+    l.type === j.O7.INCOMING_FRIEND_REQUESTS && null != l.other_user ? m = (0, r.jsx)(P.Z, {
       userId: l.other_user.id
-    }) : l.type === j.O7.INCOMING_GAME_FRIEND_REQUESTS && null != l.other_user && (m = (0, r.jsx)(I.Z, {
+    }) : l.type === j.O7.INCOMING_GAME_FRIEND_REQUESTS && null != l.other_user && (m = (0, r.jsx)(P.Z, {
       userId: l.other_user.id,
       applicationId: l.applicationId
     }));
@@ -175,12 +175,12 @@ let U = Chunk647438.memo(function(e) {
         })
       }),
       {
-        emoji_id: w,
+        emoji_id: Z,
         emoji_name: A
       } = l,
-      R = null != w || null != A ? (0, r.jsx)(a.Z, {
+      R = null != Z || null != A ? (0, r.jsx)(a.Z, {
         className: T.emoji,
-        emojiId: w,
+        emojiId: Z,
         emojiName: A
       }) : null;
     return (0, r.jsxs)("div", {
@@ -194,7 +194,7 @@ let U = Chunk647438.memo(function(e) {
         onClick: g,
         children: [f ? null : (0, r.jsx)("div", {
           className: T.unread
-        }), (0, r.jsx)(P.U, {
+        }), (0, r.jsx)(I.U, {
           item: l
         }), (0, r.jsxs)("div", {
           className: T.body,
