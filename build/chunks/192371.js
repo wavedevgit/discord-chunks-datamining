@@ -1,12 +1,12 @@
-/** Chunk was on 44799 **/
-/** chunk id: 192371, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 85683 **/
+/** chunk id: 192371, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => i
+  Z: () => r
 });
 var Chunk706454 = require("./706454.js");
 
-function i(e) {
-  return new Date(e).toLocaleDateString(r.default.locale, {
+function r(e) {
+  return new Date(e).toLocaleDateString(a.default.locale, {
     month: "2-digit",
     day: "2-digit"
   })

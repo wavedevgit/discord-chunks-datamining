@@ -2,8 +2,8 @@
 /** chunk id: 748610, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => b
-}), require("./388685.js"), require("./781311.js"), require("./415506.js");
+  Z: () => g
+}), require("./388685.js"), require("./781311.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
   Chunk570140 = require("./570140.js"),
@@ -46,15 +46,7 @@ function h(e) {
 function m(e) {
   return e === f.I_8 ? null : e
 }
-
-function g() {
-  returnfalse
-}
-
-function E() {
-  returntrue
-}
-let b = {
+let g = {
   fetchTabMessages: function(e) {
     let {
       searchContext: t,
@@ -193,110 +185,11 @@ let b = {
       id: e
     })
   },
-  addNativeSearchHistoryItem: function(e, t) {
-    if (!g() || e.type !== f.aib.DMS && e.type !== f.aib.GUILD) return;
-    let n = (0, l.Tm)(e);
-    a.Z.dispatch({
-      type: "SEARCH_HISTORY_NATIVE_ADD_ITEM",
-      id: n,
-      item: t
-    })
-  },
-  removeNativeSearchHistoryItem: function(e, t) {
-    if (!g()) return;
-    let n = (0, l.Tm)(e);
-    a.Z.dispatch({
-      type: "SEARCH_HISTORY_NATIVE_REMOVE_ITEM",
-      id: n,
-      item: t
-    })
-  },
-  clearNativeSearchHistory: function(e) {
-    if (!g()) return;
-    let t = (0, l.Tm)(e);
-    a.Z.dispatch({
-      type: "SEARCH_HISTORY_NATIVE_CLEAR_ITEMS",
-      id: t
-    })
-  },
-  addWebSearchHistoryItem: function(e, t) {
-    if (!E()) return;
-    let n = (0, l.Tm)(e);
-    a.Z.dispatch({
-      type: "SEARCH_HISTORY_WEB_ADD_ITEM",
-      id: n,
-      query: t
-    })
-  },
-  removeWebSearchHistoryItem: function(e, t) {
-    if (!E()) return;
-    let n = (0, l.Tm)(e);
-    a.Z.dispatch({
-      type: "SEARCH_HISTORY_WEB_REMOVE_ITEM",
-      id: n,
-      query: t
-    })
-  },
-  clearWebSearchHistory: function(e) {
-    if (!E()) return;
-    let t = (0, l.Tm)(e);
-    a.Z.dispatch({
-      type: "SEARCH_HISTORY_WEB_CLEAR_ITEMS",
-      id: t
-    })
-  },
   initializeAutocomplete: function(e) {
     a.Z.dispatch({
       type: "SEARCH_AUTOCOMPLETE_INITIALIZE",
       searchContext: e
     })
-  },
-  setShowBlockedResults: function(e, t) {
-    let n = (0, l.Tm)(e);
-    a.Z.dispatch({
-      type: "SEARCH_SET_SHOW_BLOCKED_RESULTS",
-      id: n,
-      showBlocked: t
-    })
-  },
-  setShowNoResultsAlt: function(e) {
-    let t = (0, l.Tm)(e);
-    a.Z.dispatch({
-      type: "SEARCH_SET_SHOW_NO_RESULTS_ALT",
-      id: t
-    })
-  },
-  updateSearchResultsQuery: function(e, t, n, r) {
-    let i = (0, l.Tm)(e);
-    a.Z.dispatch({
-      type: "SEARCH_RESULTS_QUERY_UPDATE",
-      id: i,
-      queryString: t,
-      query: n,
-      offset: r
-    })
-  },
-  ensureSearchState: function(e) {
-    let t = (0, l.Tm)(e);
-    a.Z.wait(() => a.Z.dispatch({
-      type: "SEARCH_ENSURE_SEARCH_STATE",
-      id: t
-    }))
-  },
-  setSearchState: function(e, t) {
-    let n = (0, l.Tm)(e);
-    a.Z.dispatch({
-      type: "SEARCH_EDITOR_STATE_CHANGE",
-      id: n,
-      editorState: t
-    })
-  },
-  clearSearchState: function(e) {
-    let t = (0, l.Tm)(e);
-    a.Z.wait(() => a.Z.dispatch({
-      type: "SEARCH_EDITOR_STATE_CLEAR",
-      id: t
-    }))
   },
   updateAutocompleteQuery: function(e) {
     let {

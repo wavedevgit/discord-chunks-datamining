@@ -1299,6 +1299,7 @@ let em = "@me",
     SAFETY_FLOWS_RESEND_VERIFICATION_CODE: "/safety-flows/resend/email/reverification/pincode",
     VOICE_FILTERS_CATALOG: "/voice-filters/catalog",
     APEX_EXPERIMENTS_METADATA: "/apex/experiments/metadata",
+    APEX_EXPERIMENTS: "/apex/experiments",
     GUILD_MIGRATE_PIN_PERMISSION: e => "/guilds/".concat(e, "/migrate-pin-permission")
   }),
   eA = Object.freeze({

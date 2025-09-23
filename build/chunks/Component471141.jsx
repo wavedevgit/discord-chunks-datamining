@@ -2,86 +2,85 @@
 /** chunk id: 471141, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  j: () => p
+  j: () => _
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
-  Chunk497039 = require("./497039.jsx"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk770102 = require("./770102.jsx"),
   Chunk534542 = require("./534542.jsx"),
   Chunk873686 = require("./873686.js");
 
-function p(e) {
+function _(e) {
   let {
     value: t,
     disabled: n = false,
     hideBorder: a = false,
-    tooltipNote: p,
-    onChange: h,
-    className: m,
-    style: g,
-    note: E,
-    children: b,
-    disabledText: y,
-    containerRef: O
-  } = e, v = i.useRef(null), I = i.useRef(null), T = i.useId(), S = (0, r.jsx)(l.T, {
-    id: T,
+    tooltipNote: _,
+    onChange: p,
+    className: h,
+    style: m,
+    note: g,
+    children: E,
+    disabledText: b,
+    containerRef: y
+  } = e, O = i.useRef(null), v = i.useRef(null), I = i.useId(), T = (0, r.jsx)(c.T2P, {
+    id: I,
     checked: t,
-    onChange: h,
+    onChange: p,
     disabled: n,
     focusProps: {
       enabled: false
     },
-    innerRef: v
+    innerRef: O
   });
   return (0, r.jsxs)("div", {
-    ref: O,
-    style: g,
-    className: o()(_.container, m, {
-      [_.disabled]: n
+    ref: y,
+    style: m,
+    className: o()(f.container, h, {
+      [f.disabled]: n
     }),
     children: [(0, r.jsx)(s.tEY, {
       within: true,
       offset: false,
-      focusTarget: v,
-      ringTarget: I,
+      focusTarget: O,
+      ringTarget: v,
       children: (0, r.jsxs)("div", {
-        className: _.labelRow,
-        ref: I,
+        className: f.labelRow,
+        ref: v,
         children: [(0, r.jsx)("label", {
-          htmlFor: T,
-          className: _.title,
-          children: b
+          htmlFor: I,
+          className: f.title,
+          children: E
         }), (0, r.jsx)("div", {
-          className: _.control,
-          children: null != p ? (0, r.jsx)(c.u, {
+          className: f.control,
+          children: null != _ ? (0, r.jsx)(l.u, {
             asContainer: true,
-            text: p,
-            children: S
-          }) : S
+            text: _,
+            children: T
+          }) : T
         })]
       })
-    }), null != E && (0, r.jsx)("div", {
-      className: _.note,
-      children: (0, r.jsx)(f.R, {
+    }), null != g && (0, r.jsx)("div", {
+      className: f.note,
+      children: (0, r.jsx)(d.R, {
         disabled: n,
-        type: f.g.DESCRIPTION,
-        children: E
+        type: d.g.DESCRIPTION,
+        children: g
       })
-    }), n && null != y && (0, r.jsx)("div", {
-      className: _.disabledText,
-      children: (0, r.jsx)(u.Text, {
+    }), n && null != b && (0, r.jsx)("div", {
+      className: f.disabledText,
+      children: (0, r.jsx)(c.Text, {
         variant: "text-sm/normal",
         color: "text-feedback-critical",
-        children: y
+        children: b
       })
-    }), !a && (0, r.jsx)(d.$, {
-      className: _.dividerDefault
+    }), !a && (0, r.jsx)(u.$, {
+      className: f.dividerDefault
     })]
   })
 }

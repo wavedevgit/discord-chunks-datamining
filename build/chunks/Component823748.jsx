@@ -587,7 +587,7 @@ class tl extends Chunk647438.PureComponent {
             channel: e
           }, "pins")), s.push((0, r.jsx)(eo.Z, {
             channel: e,
-            tooltip: e9.intl.string(e9.t.Xjlbvr),
+            tooltip: e6.intl.string(e6.t.Xjlbvr),
             location: "ChannelHeaderToolbar-DM-AddFriendsButton"
           }, "invite")), s.push((0, r.jsx)(eu.Z, {
             channel: e,
@@ -602,7 +602,7 @@ class tl extends Chunk647438.PureComponent {
             }, "calls")), s.push((0, r.jsx)(en.Z, {
               channel: e
             }, "pins")), !e.isManaged()) {
-            let t = e9.intl.string(e9.t.Xjlbvr);
+            let t = e6.intl.string(e6.t.Xjlbvr);
             s.push((0, r.jsx)(eo.Z, {
               channel: e,
               tooltip: t,
@@ -717,7 +717,7 @@ class tl extends Chunk647438.PureComponent {
             channel: t
           }, n))
         }),
-        children: e9.intl.string(e9.t["3aOv+v"])
+        children: e6.intl.string(e6.t["3aOv+v"])
       }) : null
     }), tt(this, "renderHeaderBar", () => {
       let {
@@ -755,7 +755,7 @@ class tl extends Chunk647438.PureComponent {
             }),
             transparent: _,
             hidden: d,
-            "aria-label": e9.intl.string(e9.t.BIYAqa),
+            "aria-label": e6.intl.string(e6.t.BIYAqa),
             children: [p && (0, r.jsx)(ea.TS, {
               channel: e,
               guild: i,
@@ -777,7 +777,7 @@ class tl extends Chunk647438.PureComponent {
               look: g.zx.Looks.FILLED,
               color: g.zx.Colors.PRIMARY,
               size: g.zx.Sizes.MIN,
-              children: e9.intl.string(e9.t.k5WiPT)
+              children: e6.intl.string(e6.t.k5WiPT)
             }) : (0, ea.v0)(e, i)]
           }, "header-".concat(e.id))
         }), (0, r.jsx)(em.Z, {
@@ -845,7 +845,7 @@ let ta = (0, Chunk112724.Z)(tl),
     }), i.useEffect(() => {
       var e, t, n;
       let r = (0, eb.s1)();
-      if ((null == r || null == (e = r.location) ? true : e.state) === e6.Df) {
+      if ((null == r || null == (e = r.location) ? true : e.state) === e9.Df) {
         let {
           channelId: e
         } = null != (n = (0, eh.Qj)(null == r || null == (t = r.location) ? true : t.pathname)) ? n : {};

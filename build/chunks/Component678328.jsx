@@ -1,12 +1,13 @@
-/** Chunk was on 39159 **/
-/** chunk id: 678328, original params: e,n,t (module,exports,require) **/
+/** Chunk was on 60728 **/
+/** chunk id: 678328, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Y: () => j,
+  Z: () => p
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  r = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk494620 = require("./494620.jsx"),
   Chunk748745 = require("./748745.jsx"),
@@ -18,19 +19,31 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk555574 = require("./555574.js");
 
-function v() {
+function j() {
+  return (0, Chunk951288.jsx)(Chunk494620.Z, {
+    className: Chunk555574.maxInstancesWarning,
+    children: (0, Chunk951288.jsx)(Chunk481060.Text, {
+      variant: "text-sm/medium",
+      children: Chunk388032.intl.formatToPlainString(Chunk440589.default.kUNv8P, {
+        maxInstances: Chunk473682.zI
+      })
+    })
+  })
+}
+
+function p() {
   let {
     guildId: e,
-    portkeyGames: n,
-    instances: t,
-    setPortkeyInstance: l,
-    setCurrentGame: v,
-    onNext: j
-  } = (0, Chunk183369.aj)(), b = Chunk647438.useCallback(e => {
-    v(e), j()
-  }, [v, j]), h = Chunk647438.useCallback(e => {
-    l(e), j()
-  }, [Chunk120356, j]), _ = require.length >= Chunk473682.zI, C = require.length > 0;
+    portkeyGames: t,
+    instances: n,
+    setPortkeyInstance: i,
+    setCurrentGame: o,
+    onNext: p
+  } = (0, Chunk183369.aj)(), x = Chunk647438.useCallback(e => {
+    o(e), p()
+  }, [Chunk494620, p]), y = Chunk647438.useCallback(e => {
+    i(e), p()
+  }, [Chunk120356, p]), h = require.length >= Chunk473682.zI, O = require.length > 0;
   return 0 === Object.values(exports).length ? (0, Chunk951288.jsx)("div", {
     className: Chunk555574.loadingContainer,
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {
@@ -46,41 +59,33 @@ function v() {
         variant: "text-sm/medium",
         children: Chunk388032.intl.string(Chunk440589.default.hkWuWF)
       })]
-    }), C && (0, Chunk951288.jsxs)("div", {
+    }), O && (0, Chunk951288.jsxs)("div", {
       className: Chunk555574.gameSection,
       children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
         variant: "heading-md/semibold",
         children: Chunk388032.intl.string(Chunk440589.default.wzC4ws)
       }), (0, Chunk951288.jsx)("div", {
         className: Chunk555574.gameInstanceContainer,
-        children: require.map((n, t) => (0, i.jsx)(c.Z, {
+        children: require.map((t, n) => (0, l.jsx)(c.Z, {
           guildId: e,
-          gameInstance: n,
-          onClick: h
-        }, "instance-".concat(n.id, "-").concat(t)))
-      }), _ && (0, Chunk951288.jsx)(Chunk494620.Z, {
-        className: Chunk555574.maxInstancesWarning,
-        children: (0, Chunk951288.jsx)(Chunk481060.Text, {
-          variant: "text-sm/medium",
-          children: Chunk388032.intl.formatToPlainString(Chunk440589.default.kUNv8P, {
-            maxInstances: Chunk473682.zI
-          })
-        })
-      })]
+          gameInstance: t,
+          onClick: y
+        }, "instance-".concat(t.id, "-").concat(n)))
+      }), h && (0, Chunk951288.jsx)(j, {})]
     }), (0, Chunk951288.jsxs)("div", {
-      className: a()(Chunk555574.gameSection, {
-        [Chunk555574.disabled]: _
+      className: r()(Chunk555574.gameSection, {
+        [Chunk555574.disabled]: h
       }),
-      children: [C && (0, Chunk951288.jsx)(Chunk481060.X6q, {
+      children: [O && (0, Chunk951288.jsx)(Chunk481060.X6q, {
         variant: "heading-md/semibold",
         children: Chunk388032.intl.string(Chunk440589.default.l4UdiY)
       }), (0, Chunk951288.jsx)("div", {
         className: Chunk555574.gameContainer,
-        children: Object.values(exports).map((e, n) => (0, i.jsx)(d.Z, {
+        children: Object.values(exports).map((e, t) => (0, l.jsx)(u.Z, {
           game: e,
-          disabled: _,
-          onClick: b
-        }, "game-".concat(e.id, "-").concat(n)))
+          disabled: h,
+          onClick: x
+        }, "game-".concat(e.id, "-").concat(t)))
       })]
     }), (0, Chunk951288.jsxs)(Chunk422663.ok, {
       step: Chunk473682.Vb.SELECT_GAME,

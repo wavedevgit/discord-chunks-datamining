@@ -6,7 +6,7 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk497039 = require("./497039.jsx");
+  Chunk793030 = require("./793030.js");
 let o = {
   title: "VoidSwitch",
   stories: [{
@@ -16,7 +16,7 @@ let o = {
       let {
         disabled: t
       } = e, [n, o] = i.useState(false);
-      return (0, r.jsx)(a.T, {
+      return (0, r.jsx)(a.T2P, {
         onChange: o,
         disabled: t,
         checked: n

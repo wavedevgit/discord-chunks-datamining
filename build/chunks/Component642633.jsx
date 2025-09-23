@@ -1,4 +1,4 @@
-/** Chunk was on 39159 **/
+/** Chunk was on 25710 **/
 /** chunk id: 642633, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -42,20 +42,20 @@ function d() {
       }), null != require && (0, Chunk951288.jsx)("div", {
         className: Chunk233019.statsGrid,
         children: require.specifications.map((e, n) => {
-          var a;
-          return (0, i.jsxs)(r.Fragment, {
-            children: [(0, i.jsxs)("div", {
+          var l;
+          return (0, r.jsxs)(i.Fragment, {
+            children: [(0, r.jsxs)("div", {
               className: c.statItem,
-              children: [(0, i.jsx)(l.X6q, {
+              children: [(0, r.jsx)(a.X6q, {
                 variant: "heading-sm/semibold",
                 color: "text-primary",
                 children: e.title
-              }), (0, i.jsx)(l.xvT, {
+              }), (0, r.jsx)(a.xvT, {
                 variant: "text-sm/medium",
                 color: "text-tertiary",
                 children: e.description
               })]
-            }), n !== (null != (a = null == t ? true : t.specifications.length) ? a : 0) - 1 && (0, i.jsx)("div", {
+            }), n !== (null != (l = null == t ? true : t.specifications.length) ? l : 0) - 1 && (0, r.jsx)("div", {
               className: c.divider
             })]
           }, n)

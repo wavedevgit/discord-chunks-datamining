@@ -156,7 +156,7 @@ let ew = (0, Chunk608787.Un)({
     renderLoader: eL
   }),
   eV = (0, Chunk608787.Un)({
-    createPromise: () => require.e("85683").then(require.bind(require, 15133)),
+    createPromise: () => Promise.all([require.e("60728"), require.e("85683")]).then(require.bind(require, 15133)),
     webpackId: 15133,
     name: "PortkeyPage",
     renderLoader: eL

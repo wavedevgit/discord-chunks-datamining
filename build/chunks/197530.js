@@ -1,9 +1,11 @@
 /** Chunk was on 85683 **/
-/** chunk id: 197530, original params: e,t,n (module,exports,require) **/
+/** chunk id: 197530, original params: e,n,t (module,exports,require) **/
 module.exports = {
   container: "container_c18b09",
   heading: "heading_c18b09",
+  maxInstancesWarning: "maxInstancesWarning_c18b09",
   gameContainerWrapper: "gameContainerWrapper_c18b09",
+  disabled: "disabled_c18b09",
   gameContainer: "gameContainer_c18b09",
   game: "game_c18b09",
   image: "image_c18b09",
