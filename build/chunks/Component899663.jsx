@@ -38,15 +38,16 @@ function h(e) {
   })), o = (0, s.cj)([u.Z], () => ({
     enabled: u.Z.useForcedColors,
     rawValue: u.Z.systemForcedColors
-  })), c = (0, s.e7)([u.Z], () => u.Z.isHighContrastModeEnabled), f = (0, s.e7)([u.Z], () => u.Z.alwaysShowLinkDecorations), h = i.useMemo(() => ({
+  })), c = (0, s.e7)([u.Z], () => u.Z.isHighContrastModeEnabled), f = (0, s.e7)([u.Z], () => u.Z.alwaysShowLinkDecorations), h = (0, s.e7)([u.Z], () => u.Z.keyboardModeEnabled), m = i.useMemo(() => ({
     reducedMotion: n,
     prefersCrossfades: false,
     forcedColors: o,
     alwaysShowLinkDecorations: f,
-    highContrastModeEnabled: c
-  }), [n, o, f, c]);
+    highContrastModeEnabled: c,
+    keyboardModeEnabled: h
+  }), [n, o, f, c, h]);
   return i.useEffect(() => ((0, a.waitForAllDefaultIntlMessagesLoaded)().then(() => (0, d.d1)()), _.intl.onLocaleChange(() => (0, d.d1)()), window.addEventListener("keydown", p), () => window.removeEventListener("keydown", p)), []), (0, r.jsx)(l.Sfi.Provider, {
-    value: h,
+    value: m,
     children: t
   })
 }

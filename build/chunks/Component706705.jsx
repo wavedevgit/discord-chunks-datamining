@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk933767 = require("./933767.js");
+  Chunk368910 = require("./368910.js");
 
 function s() {
   let [e, t] = Chunk647438.useState(false), [s, l] = Chunk647438.useState(20), [c, u] = Chunk647438.useState(80);

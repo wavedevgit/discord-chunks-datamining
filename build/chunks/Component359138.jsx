@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk747545 = require("./747545.jsx"),
   Chunk131951 = require("./131951.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk745343 = require("./745343.js");
+  Chunk491776 = require("./491776.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -60,9 +60,9 @@ function g() {
     [n, d] = Chunk647438.useState(false),
     _ = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.isVideoAvailable());
   return require ? (0, Chunk951288.jsx)("div", {
-    className: Chunk745343.cameraWrapper,
+    className: Chunk491776.cameraWrapper,
     children: (0, Chunk951288.jsxs)("div", {
-      className: Chunk745343.camera,
+      className: Chunk491776.camera,
       children: [(0, Chunk951288.jsx)(module, {
         deviceId: exports,
         width: h,
@@ -71,7 +71,7 @@ function g() {
       }), (0, Chunk951288.jsx)(Chunk747545.S, {})]
     })
   }) : (0, Chunk951288.jsx)("div", {
-    className: Chunk745343.cameraWrapper,
+    className: Chunk491776.cameraWrapper,
     children: (0, Chunk951288.jsx)(Chunk481060.ua7, {
       text: _ ? null : Chunk388032.intl.string(Chunk388032.t["8jSzSU"]),
       children: e => (0, r.jsx)(o.zxk, p(f({

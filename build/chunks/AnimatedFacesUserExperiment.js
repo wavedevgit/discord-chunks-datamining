@@ -1,11 +1,11 @@
-/** Chunk was on 74732 **/
+/** Chunk was on 28023 **/
 /** chunk id: 328171, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  R: () => o
+  R: () => l
 });
 var Chunk818083 = require("./818083.js"),
   Chunk751823 = require("./751823.js");
-let l = (0, Chunk818083.B)({
+let i = (0, Chunk818083.B)({
   kind: "user",
   id: "2025-07_animated_faces",
   label: "AV survey animated faces",
@@ -21,21 +21,21 @@ let l = (0, Chunk818083.B)({
   }]
 });
 
-function o(e) {
+function l(e) {
   let {
     location: t,
     autoTrackExposure: n = true
   } = e, {
-    isInHoldout: r
-  } = i.L.useExperiment({
+    isInHoldout: o
+  } = r.L.useExperiment({
     location: t
   }, {
     autoTrackExposure: n
   });
-  return l.useExperiment({
+  return i.useExperiment({
     location: t
   }, {
-    disable: r,
+    disable: o,
     autoTrackExposure: n
   })
 }

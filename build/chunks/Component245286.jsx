@@ -14,7 +14,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk920952 = require("./920952.js"),
   Chunk839469 = require("./839469.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk942408 = require("./942408.js");
+  Chunk885684 = require("./885684.js");
 
 function O(e) {
   var t, {
@@ -78,7 +78,7 @@ function y() {
       onChange: Chunk996733.yN,
       onClear: () => (0, Chunk996733.yN)("")
     }), exports && 0 === require.length && (0, Chunk951288.jsxs)("div", {
-      className: Chunk942408.emptySearchResultsContainer,
+      className: Chunk885684.emptySearchResultsContainer,
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-sm/semibold",
         color: "text-primary",

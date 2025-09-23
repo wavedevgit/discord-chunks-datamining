@@ -18,7 +18,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk791359 = require("./791359.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk708567 = require("./708567.js");
+  Chunk321286 = require("./321286.js");
 
 function _() {
   let {
@@ -29,13 +29,13 @@ function _() {
     children: (0, Chunk951288.jsx)(Chunk410575.Z, {
       section: Chunk981631.jXE.ACTIVE_NOW_COLUMN,
       children: (0, Chunk951288.jsx)("aside", {
-        className: Chunk708567.container,
+        className: Chunk321286.container,
         "aria-labelledby": require,
         children: (0, Chunk951288.jsxs)(Chunk481060.Ttm, {
-          className: Chunk708567.scroller,
+          className: Chunk321286.scroller,
           children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
             variant: "heading-lg/semibold",
-            className: Chunk708567.header,
+            className: Chunk321286.header,
             id: require,
             children: Chunk388032.intl.string(Chunk388032.t.F4Zgg4)
           }), (0, Chunk951288.jsx)(Chunk243778.ZP, {

@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk861509 = require("./861509.js");
+  Chunk724315 = require("./724315.js");
 
 function h() {
   let e = (0, Chunk266454.zu)(Chunk704215.z.SEPTEMBER_2025_MARKETING_MOMENT_NITRO_TAB_BADGE);
@@ -22,20 +22,20 @@ function h() {
       type: "September 2025 Marketing Moment Nitro Tab Badge"
     })
   }, []), module) ? (0, Chunk951288.jsxs)("div", {
-    className: a()(Chunk861509.premiumTrialBadge, Chunk861509.premiumTrialAcknowledgedBadge, {}),
+    className: a()(Chunk724315.premiumTrialBadge, Chunk724315.premiumTrialAcknowledgedBadge, {}),
     children: [(0, Chunk951288.jsx)(Chunk481060.T39, {
       size: "custom",
       width: 14,
       height: 14,
       color: "currentColor",
-      className: Chunk861509.clockIcon
+      className: Chunk724315.clockIcon
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "eyebrow",
       color: "text-secondary",
       children: Chunk388032.intl.string(Chunk388032.t.OS9KPj)
     })]
   }) : (0, Chunk951288.jsx)("div", {
-    className: a()(Chunk861509.premiumTrialBadge, Chunk861509.backgroundGradient),
+    className: a()(Chunk724315.premiumTrialBadge, Chunk724315.backgroundGradient),
     children: (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "eyebrow",
       color: "always-white",

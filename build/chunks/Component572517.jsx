@@ -1,4 +1,4 @@
-/** Chunk was on 84071 **/
+/** Chunk was on 37786 **/
 /** chunk id: 572517, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   c: () => _
@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk347896 = require("./347896.js"),
   Chunk717401 = require("./717401.js"),
   Chunk897942 = require("./897942.jsx"),
-  Chunk432483 = require("./432483.js");
+  Chunk947007 = require("./947007.js");
 
 function _() {
   var e, t;
@@ -34,10 +34,10 @@ function _() {
     }),
     L = (0, Chunk717401.Tl)(g);
   return (0, Chunk951288.jsxs)("div", {
-    className: Chunk432483.promotionalFooterBanner,
+    className: Chunk947007.promotionalFooterBanner,
     style: null != b ? b : L,
     children: [(0, Chunk951288.jsx)("div", {
-      className: Chunk432483.avatar,
+      className: Chunk947007.avatar,
       children: (0, Chunk951288.jsx)(Chunk897942.Z, {
         claimableRewards: m,
         maxRewardImageSrc: x.getImageUrl(h, require),
@@ -46,7 +46,7 @@ function _() {
       })
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-md/medium",
-      className: Chunk432483.bannerText,
+      className: Chunk947007.bannerText,
       color: "always-white",
       children: x.desktopBannerText(m.length)
     })]

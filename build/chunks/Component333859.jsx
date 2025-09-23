@@ -23,7 +23,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk980676 = require("./980676.js");
+  Chunk77247 = require("./77247.js");
 let v = () => {
     (0, Chunk550385.XO)(Chunk550385.wh.APP_ICON), (0, Chunk342386.default)()
   },
@@ -42,7 +42,7 @@ let v = () => {
     } = Chunk803038.Mc.useExperiment({
       location: "UserSettingsAppearanceInAppIcon"
     }), _ = () => {
-      let e = require ? Chunk980676.tryItOutButtonsV2 : Chunk980676.tryItOutButtons;
+      let e = require ? Chunk77247.tryItOutButtonsV2 : Chunk77247.tryItOutButtons;
       return (0, Chunk951288.jsxs)("div", {
         className: module,
         children: [(0, Chunk951288.jsx)(Chunk755721.zx, {
@@ -59,7 +59,7 @@ let v = () => {
           },
           fullWidth: true
         }) : (0, Chunk951288.jsx)(Chunk767714.Z, {
-          className: Chunk980676.tryItOutButton,
+          className: Chunk77247.tryItOutButton,
           showGradient: false,
           subscriptionTier: Chunk474936.Si.TIER_2,
           textOptions: {
@@ -69,12 +69,12 @@ let v = () => {
       })
     };
     return (0, Chunk951288.jsxs)("div", {
-      className: Chunk980676.selectionGroup,
+      className: Chunk77247.selectionGroup,
       children: [(0, Chunk951288.jsx)(Chunk539873.Z, {
         disabled: exports,
         renderCTAButtons: Chunk550385
       }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
-        className: Chunk980676.divider
+        className: Chunk77247.divider
       })]
     })
   }

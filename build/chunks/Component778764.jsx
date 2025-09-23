@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk755733 = require("./755733.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk421156 = require("./421156.js");
+  Chunk830445 = require("./830445.js");
 
 function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -255,13 +255,13 @@ function N() {
   let [n, a] = Chunk647438.useState(false);
   return (0, Chunk951288.jsxs)(Chunk481060.hjN, {
     title: Chunk388032.intl.string(Chunk388032.t.y7SXYW),
-    className: Chunk421156.settings,
+    className: Chunk830445.settings,
     children: [(0, Chunk951288.jsx)(Chunk481060.R94, {
       type: Chunk481060.R94.Types.DESCRIPTION,
-      className: Chunk421156.description,
+      className: Chunk830445.description,
       children: Chunk388032.intl.string(Chunk388032.t.TMukAA)
     }), module.length > 0 && (0, Chunk951288.jsx)("div", {
-      className: Chunk421156.credentialList,
+      className: Chunk830445.credentialList,
       children: module.map(e => (0, r.jsxs)("div", {
         className: O.credentialItem,
         children: [(0, r.jsx)(l.Text, {

@@ -123,7 +123,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk46140 = require("./46140.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk25874 = require("./25874.js");
+  Chunk490579 = require("./490579.js");
 
 function ti(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -244,7 +244,7 @@ function tv(e) {
     setHighlightBadge: T
   } = tO(), S = (0, ea.A)(f);
   return null == s ? null : (0, r.jsx)(E.Z, {
-    object: e6.qAy.AVATAR,
+    object: e5.qAy.AVATAR,
     children: (0, r.jsx)(eh.Z, {
       user: s,
       targetElementRef: h,
@@ -296,7 +296,7 @@ function tv(e) {
           src: s.getAvatarURL(true, O - 4, false),
           avatarDecoration: b,
           "aria-label": s.username,
-          status: a ? e6.Skl.STREAMING : l,
+          status: a ? e5.Skl.STREAMING : l,
           isSpeaking: n,
           className: tr.avatar
         }), (0, r.jsx)("div", {
@@ -365,7 +365,7 @@ class tI extends Chunk647438.PureComponent {
         activities: exports,
         applicationStream: require,
         voiceChannel: Chunk392711 ? l : true,
-        textClassName: Chunk25874.activityStatusText,
+        textClassName: Chunk490579.activityStatusText,
         hideTooltip: true
       })
     });
@@ -373,15 +373,15 @@ class tI extends Chunk647438.PureComponent {
       let {
         type: t
       } = e;
-      return t === e6.IIU.CUSTOM_STATUS
+      return t === e5.IIU.CUSTOM_STATUS
     });
     return null != Chunk374470 ? (0, Chunk951288.jsx)(Chunk570928.Z, {
       hoverText: o,
       forceHover: module,
       children: (0, Chunk951288.jsx)(Chunk427217.Z, {
         activity: Chunk374470,
-        emojiClassName: Chunk25874.emoji,
-        className: Chunk25874.customStatus
+        emojiClassName: Chunk490579.emoji,
+        className: Chunk490579.customStatus
       })
     }) : null != Chunk120356 && Chunk120356 !== Chunk981631.Skl.UNKNOWN && Chunk647438.hasUniqueUsername() ? (0, Chunk951288.jsx)(Chunk570928.Z, {
       hoverText: o,
@@ -537,16 +537,16 @@ class tI extends Chunk647438.PureComponent {
         suppress: t,
         selfMute: n
       } = this.props;
-      (0, G.Z)(e, t, e6.jXE.ACCOUNT_PANEL), (0, B.v)(C.Z.ACCOUNT, B.d.MIC, n)
+      (0, G.Z)(e, t, e5.jXE.ACCOUNT_PANEL), (0, B.v)(C.Z.ACCOUNT, B.d.MIC, n)
     }), ti(this, "handleToggleSelfDeaf", () => {
       let {
         serverDeaf: e,
         selfDeaf: t
       } = this.props;
-      (0, U.Z)(e, e6.jXE.ACCOUNT_PANEL), (0, B.v)(C.Z.ACCOUNT, B.d.DEAFEN, !t)
+      (0, U.Z)(e, e5.jXE.ACCOUNT_PANEL), (0, B.v)(C.Z.ACCOUNT, B.d.DEAFEN, !t)
     }), ti(this, "handleOpenAccountSettings", () => {
       this.dismissTooltips(), eB.Z.isConnected() ? (0, eb.openUserSettings)(eg.n.VOICE_AND_VIDEO_PANEL, {
-        section: e6.oAB.VOICE
+        section: e5.oAB.VOICE
       }) : (0, eb.openUserSettings)()
     }), ti(this, "handleOpenSettingsContextMenu", e => {
       let {
@@ -638,7 +638,7 @@ class tI extends Chunk647438.PureComponent {
       (0, ez.JG)(e0.ZP.getUserTag(e, {
         decoration: "never",
         identifiable: "always"
-      })), eW.default.track(e6.rMx.TEXT_COPIED, {
+      })), eW.default.track(e5.rMx.TEXT_COPIED, {
         type: "User Tag"
       });
       let r = {
@@ -691,7 +691,7 @@ class tI extends Chunk647438.PureComponent {
       return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
           className: tr.panelTitleContainer,
-          children: (0, r.jsx)(e5.Z, {
+          children: (0, r.jsx)(e6.Z, {
             className: o()({
               [tr.withDisplayNameStyles]: i
             }),
@@ -824,7 +824,7 @@ function tA() {
           let {
             type: t
           } = e;
-          return t === e6.IIU.STREAMING
+          return t === e5.IIU.STREAMING
         }),
         status: Chunk885110.Z.getStatus()
       }
@@ -1091,7 +1091,7 @@ function tN(e) {
       $(false)
     }, []);
   (0, eq.yp)({
-    event: e6.CkL.OPEN_VOICE_FILTER_POPOUT,
+    event: e5.CkL.OPEN_VOICE_FILTER_POPOUT,
     handler: () => {
       $(true)
     }

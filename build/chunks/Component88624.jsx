@@ -17,7 +17,7 @@ var Chunk512722 = require("./512722.js"),
   Chunk594174 = require("./594174.js"),
   Chunk843200 = require("./843200.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk133365 = require("./133365.js");
+  Chunk367844 = require("./367844.js");
 
 function m() {
   let {
@@ -38,10 +38,10 @@ function m() {
   }
   return (0, Chunk951288.jsxs)(Chunk481060.y5t, {
     component: (0, Chunk951288.jsxs)("div", {
-      className: Chunk133365.intro,
+      className: Chunk367844.intro,
       children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
         variant: "heading-xxl/semibold",
-        className: Chunk133365.introHeader,
+        className: Chunk367844.introHeader,
         children: Chunk512722()
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-lg/normal",
@@ -49,7 +49,7 @@ function m() {
       })]
     }),
     children: [(0, Chunk951288.jsx)(Chunk843200.Z, {
-      className: Chunk133365.verificationNotice,
+      className: Chunk367844.verificationNotice,
       unclaimedNotice: Chunk388032.intl.string(Chunk388032.t.vZU8Ki),
       unverifiedNotice: Chunk388032.intl.string(Chunk388032.t.T7TYEB)
     }), (0, Chunk951288.jsx)(Chunk644744.Z, {

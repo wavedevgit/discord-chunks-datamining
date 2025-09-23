@@ -1,42 +1,43 @@
-/** Chunk was on 49902 **/
-/** chunk id: 476098, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 50445 **/
+/** chunk id: 476098, original params: e,n,t (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  p: () => l
+  p: () => o
 });
 var Chunk573654 = require("./573654.js"),
   Chunk647438 = require("./647438.js");
 
-function l(e) {
-  var t = {};
-  return Object.keys(e).forEach(function(n) {
-    var l = e[n];
-    if (n.endsWith("Ref")) t[n] = e[n];
+function o(e) {
+  var n = {};
+  return Object.keys(e).forEach(function(t) {
+    var o = e[t];
+    if (t.endsWith("Ref")) n[t] = e[t];
     else {
-      var o = function() {
-        var e, t, n, o = arguments.length > 0 && true !== arguments[0] ? arguments[0] : null,
-          s = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null;
-        if (!(0, i.isValidElement)(o)) return l(o, s), o;
-        if ("string" != typeof o.type) {
-          var c = o.type.displayName || o.type.name || "the component";
-          throw Error("Only native element nodes can now be passed to React DnD connectors." + "You can either wrap ".concat(c, " into a <div>, or turn it into a ") + "drag source or a drop target itself.")
+      var c = function() {
+        var e, n, t, c = arguments.length > 0 && true !== arguments[0] ? arguments[0] : null,
+          l = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null;
+        if (!(0, i.isValidElement)(c)) return o(c, l), c;
+        if ("string" != typeof c.type) {
+          var s = c.type.displayName || c.type.name || "the component";
+          throw Error("Only native element nodes can now be passed to React DnD connectors." + "You can either wrap ".concat(s, " into a <div>, or turn it into a ") + "drag source or a drop target itself.")
         }
-        return e = o, t = s ? function(e) {
-          return l(e, s)
-        } : l, n = e.ref, ((0, r.k)("string" != typeof n, "Cannot connect React DnD to an element with an existing string ref. Please convert it to use a callback ref instead, or wrap it into a <span> or <div>. Read more: https://reactjs.org/docs/refs-and-the-dom.html#callback-refs"), n) ? (0, i.cloneElement)(e, {
+        return e = c, n = l ? function(e) {
+          return o(e, l)
+        } : o, t = e.ref, ((0, r.k)("string" != typeof t, "Cannot connect React DnD to an element with an existing string ref. Please convert it to use a callback ref instead, or wrap it into a <span> or <div>. Read more: https://reactjs.org/docs/refs-and-the-dom.html#callback-refs"), t) ? (0, i.cloneElement)(e, {
           ref: function(e) {
-            a(n, e), a(t, e)
+            a(t, e), a(n, e)
           }
         }) : (0, i.cloneElement)(e, {
-          ref: t
+          ref: n
         })
       };
-      t[n] = function() {
-        return o
+      n[t] = function() {
+        return c
       }
     }
-  }), t
+  }), n
 }
 
-function a(e, t) {
-  "function" == typeof e ? e(t) : e.current = t
+function a(e, n) {
+  "function" == typeof e ? e(n) : e.current = n
 }

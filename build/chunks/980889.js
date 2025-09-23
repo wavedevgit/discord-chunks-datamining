@@ -3,7 +3,7 @@
 "use strict";
 var Chunk884805 = require("./884805.js"),
   Chunk468790 = require("./468790.js"),
-  Chunk829575 = require("./829575.js"),
+  Chunk525320 = require("./525320.js"),
   u = require("./394370.js")("species"),
   s = Array;
 module.exports = function(t) {

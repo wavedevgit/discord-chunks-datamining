@@ -13,9 +13,9 @@ var Chunk990547 = require("./990547.js"),
   Chunk213609 = require("./213609.js"),
   Chunk550385 = require("./550385.js"),
   Chunk507962 = require("./507962.js"),
-  Chunk119475 = require("./119475.js"),
+  Chunk684555 = require("./684555.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk574876 = require("./574876.js"),
+  Chunk945455 = require("./945455.js"),
   Chunk758335 = require("./758335.js");
 
 function h() {
@@ -35,29 +35,29 @@ function h() {
     })
   };
   return (0, Chunk951288.jsxs)("div", {
-    className: Chunk574876.container,
+    className: Chunk945455.container,
     children: [(0, Chunk951288.jsxs)("div", {
-      className: Chunk574876.topContent,
+      className: Chunk945455.topContent,
       children: [(0, Chunk951288.jsx)("img", {
         src: Chunk758335.Z,
-        className: Chunk574876.bannerImage,
+        className: Chunk945455.bannerImage,
         alt: ""
       }), (0, Chunk951288.jsxs)("div", {
-        className: Chunk574876.textContent,
+        className: Chunk945455.textContent,
         children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-md/semibold",
           color: "text-primary",
-          children: Chunk388032.intl.string(Chunk119475.default.XP4jzM)
+          children: Chunk388032.intl.string(Chunk684555.default.XP4jzM)
         }), (0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-sm/medium",
           color: "text-tertiary",
-          children: Chunk388032.intl.string(Chunk119475.default.MJYvmJ)
+          children: Chunk388032.intl.string(Chunk684555.default.MJYvmJ)
         })]
       })]
     }), (0, Chunk951288.jsx)(Chunk159691.zxk, {
       variant: "secondary",
       size: "sm",
-      text: Chunk388032.intl.string(Chunk119475.default.eGxkmp),
+      text: Chunk388032.intl.string(Chunk684555.default.eGxkmp),
       onClick: exports,
       fullWidth: true
     })]

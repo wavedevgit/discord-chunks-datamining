@@ -1,4 +1,4 @@
-/** Chunk was on 76349 **/
+/** Chunk was on 10017 **/
 /** chunk id: 698901, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -7,7 +7,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk536442 = require("./536442.js"),
-  Chunk983380 = require("./983380.js");
+  Chunk924510 = require("./924510.js");
 
 function o(e) {
   let {
@@ -37,9 +37,9 @@ function c() {
   return (0, Chunk951288.jsxs)(Chunk481060.hjN, {
     title: "Hotspots",
     tag: Chunk481060.RB0.H1,
-    className: Chunk983380.hotspotsSection,
+    className: Chunk924510.hotspotsSection,
     children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
-      className: Chunk983380.helpText,
+      className: Chunk924510.helpText,
       tag: "p",
       variant: "text-sm/normal",
       children: 'All the "hotspots" in app, and their current status. Use the select menu to override them on or off.'

@@ -1,4 +1,4 @@
-/** Chunk was on 21376 **/
+/** Chunk was on 71512 **/
 /** chunk id: 145499, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -30,7 +30,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk535396 = require("./535396.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk486217 = require("./486217.js");
+  Chunk663494 = require("./663494.js");
 
 function P(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -72,9 +72,9 @@ let w = e => {
     })
   },
   R = () => (0, Chunk951288.jsx)("div", {
-    className: Chunk486217.placeholderCard,
+    className: Chunk663494.placeholderCard,
     children: (0, Chunk951288.jsx)("img", {
-      className: Chunk486217.placeholderImg,
+      className: Chunk663494.placeholderImg,
       alt: Chunk388032.intl.string(Chunk388032.t.wl4ntL),
       src: require("./872732.js")
     })
@@ -102,7 +102,7 @@ let w = e => {
           (0, c.ZDy)(async () => {
             let {
               default: e
-            } = await Promise.all([n.e("93626"), n.e("34765")]).then(n.bind(n, 136735));
+            } = await Promise.all([n.e("93626"), n.e("72997")]).then(n.bind(n, 136735));
             return n => (0, r.jsx)(e, P({
               guildId: t
             }, n))

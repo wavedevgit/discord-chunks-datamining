@@ -48,9 +48,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk611480 = require("./611480.js"),
   Chunk653477 = require("./653477.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk693450 = require("./693450.js"),
-  Chunk953752 = require("./953752.js"),
-  Chunk197571 = require("./197571.js"),
+  Chunk62222 = require("./62222.js"),
+  Chunk133991 = require("./133991.js"),
+  Chunk10198 = require("./10198.js"),
   Chunk328756 = require("./328756.js");
 
 function Q(e, t, n) {
@@ -189,16 +189,16 @@ function es() {
     });
   return (0, Chunk951288.jsx)(Chunk481060.Rny, {
     children: (0, Chunk951288.jsxs)(Chunk481060.Zbd, {
-      className: Chunk953752.preview,
+      className: Chunk133991.preview,
       "aria-hidden": true,
       children: [(0, Chunk951288.jsxs)("div", {
-        className: Chunk953752.previewHeader,
+        className: Chunk133991.previewHeader,
         children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           size: "sm",
           text: Chunk388032.intl.string(Chunk388032.t["2RHHg4"])
         }), (0, Chunk951288.jsx)("div", {
-          className: Chunk953752.previewAvatars,
+          className: Chunk133991.previewAvatars,
           children: [Chunk981631.Skl.ONLINE, Chunk981631.Skl.DND, Chunk981631.Skl.IDLE].map(e => (0, r.jsx)(_.Xo$, {
             "aria-label": W.intl.string(W.t.lqaIxM),
             src: X,
@@ -207,7 +207,7 @@ function es() {
           }, e))
         })]
       }), (0, Chunk951288.jsx)("div", {
-        className: Chunk953752.previewMessage,
+        className: Chunk133991.previewMessage,
         children: (0, Chunk951288.jsx)(Chunk753206.Z, {
           compact: module,
           author: ee(J({}, (0, Chunk739566.ZH)(exports)), {
@@ -261,15 +261,15 @@ function ec() {
     desaturateUserColors: Chunk607070.Z.desaturateUserColors
   }));
   return (0, Chunk951288.jsxs)(Chunk481060.hjN, {
-    className: Chunk197571.marginTop20,
+    className: Chunk10198.marginTop20,
     children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
       id: et,
-      className: Chunk197571.marginBottom8,
+      className: Chunk10198.marginBottom8,
       children: Chunk388032.intl.string(Chunk388032.t["5PWWCQ"])
     }), (0, Chunk951288.jsx)(Chunk481060.R94, {
       id: en,
       type: Chunk481060.R94.Types.DESCRIPTION,
-      className: Chunk197571.marginBottom20,
+      className: Chunk10198.marginBottom20,
       children: Chunk388032.intl.string(Chunk388032.t["0PbE/P"])
     }), (0, Chunk951288.jsx)(Chunk481060.iRW, {
       "aria-labelledby": et,
@@ -286,7 +286,7 @@ function ec() {
       setting: Chunk726985.s6.ACCESSIBILITY_SATURATION_CUSTOM_COLOR,
       children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
         hideBorder: true,
-        className: o()(Chunk197571.marginTop20, Chunk197571.marginBottom20),
+        className: o()(Chunk10198.marginTop20, Chunk10198.marginBottom20),
         value: exports,
         onChange: Chunk857595.f1,
         note: Chunk388032.intl.string(Chunk388032.t.nlAOER),
@@ -303,7 +303,7 @@ function eu() {
     (0, Chunk857595.gs)(!module)
   }
   return (0, Chunk951288.jsx)("div", {
-    className: Chunk197571.marginTop20,
+    className: Chunk10198.marginTop20,
     children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
       note: Chunk388032.intl.string(Chunk388032.t["72i5GB"]),
       value: module,
@@ -319,7 +319,7 @@ function ed() {
     return null == (e = Chunk607070.Z.enableCustomCursor) || module
   });
   return (0, Chunk951288.jsx)("div", {
-    className: Chunk197571.marginTop20,
+    className: Chunk10198.marginTop20,
     children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
       note: Chunk388032.intl.string(Chunk388032.t.nNZ1T0),
       value: module,
@@ -352,7 +352,7 @@ function ef() {
       onChange: exports,
       value: module
     }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
-      className: Chunk197571.marginTop20
+      className: Chunk10198.marginTop20
     })]
   })
 }
@@ -369,18 +369,18 @@ function e_() {
     })
   }
   return (0, Chunk951288.jsx)("div", {
-    className: Chunk197571.marginTop20,
+    className: Chunk10198.marginTop20,
     children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
       value: module,
       onChange: require,
-      note: Chunk388032.intl.format(Chunk693450.default.L8U56u, {
+      note: Chunk388032.intl.format(Chunk62222.default.L8U56u, {
         onClickOpenModal() {
           (0, Chunk829716.I)({
             analyticsLocations: exports
           })
         }
       }),
-      children: Chunk388032.intl.string(Chunk693450.default["2gFUEx"])
+      children: Chunk388032.intl.string(Chunk62222.default["2gFUEx"])
     })
   })
 }
@@ -403,7 +403,7 @@ function ep() {
             })
           }
         }),
-        className: Chunk197571.marginTop8,
+        className: Chunk10198.marginTop8,
         value: module,
         onChange: Chunk857595.Uv,
         children: Chunk388032.intl.string(Chunk388032.t["sSY+mJ"])
@@ -426,7 +426,7 @@ function eh() {
   });
   return (0, Chunk951288.jsx)(Chunk481060.hjN, {
     title: Chunk388032.intl.string(Chunk388032.t.TYyfOz),
-    className: Chunk197571.marginTop20,
+    className: Chunk10198.marginTop20,
     children: (0, Chunk951288.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.ACCESSIBILITY_CONTRAST_SYNC_FORCED_COLORS,
       children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
@@ -467,15 +467,15 @@ function em() {
   return (0, Chunk951288.jsxs)(Chunk481060.hjN, {
     ref: Chunk419363,
     title: Chunk388032.intl.string(Chunk388032.t.e3TR1d),
-    className: o()(Chunk197571.marginTop20, Chunk953752.reducedMotion),
+    className: o()(Chunk10198.marginTop20, Chunk133991.reducedMotion),
     children: [(0, Chunk951288.jsx)(Chunk481060.R94, {
       type: Chunk481060.R94.Types.DESCRIPTION,
-      className: Chunk197571.marginBottom8,
+      className: Chunk10198.marginBottom8,
       children: Chunk388032.intl.format(Chunk388032.t["2l9U2t"], {
         helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.REDUCED_MOTION)
       })
     }), (0, Chunk951288.jsx)(Chunk755721.$q, {
-      className: o()(Chunk197571.marginTop8, Chunk197571.marginBottom20),
+      className: o()(Chunk10198.marginTop8, Chunk10198.marginBottom20),
       value: Chunk538534,
       shape: Chunk755721.zV.BOX,
       type: Chunk755721.M0.INVERTED,
@@ -494,7 +494,7 @@ function em() {
     }), (0, Chunk951288.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.ACCESSIBILITY_REDUCED_MOTION_AUTO_PLAY_GIFS,
       children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
-        className: Chunk197571.marginBottom20,
+        className: Chunk10198.marginBottom20,
         value: module,
         note: null != l ? (0, Chunk440849.Z)(l) : true,
         onChange: Chunk695346.QK.updateSetting,
@@ -503,7 +503,7 @@ function em() {
     }), (0, Chunk951288.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.ACCESSIBILITY_REDUCED_MOTION_PLAY_ANIMATED_EMOJI,
       children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
-        className: Chunk197571.marginBottom20,
+        className: Chunk10198.marginBottom20,
         value: exports,
         note: null != Chunk704215 ? (0, Chunk440849.Z)(Chunk704215) : true,
         onChange: Chunk695346.Yk.updateSetting,
@@ -544,12 +544,12 @@ function eE() {
     n = Chunk647438.useRef(null);
   return (0, Chunk996073.Z)(require, Chunk526761.rP.LEGACY_CHAT_INPUT), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
     ref: require,
-    className: Chunk197571.marginTop20,
+    className: Chunk10198.marginTop20,
     title: Chunk388032.intl.string(Chunk388032.t.onqU6u),
     children: [(0, Chunk951288.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.ACCESSIBILITY_MESSAGES_SEND_MESSAGE_BUTTON,
       children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
-        className: Chunk197571.marginTop8,
+        className: Chunk10198.marginTop8,
         value: module,
         onChange: Chunk857595.eN,
         children: Chunk388032.intl.string(Chunk388032.t["3Fztn5"])
@@ -557,7 +557,7 @@ function eE() {
     }), (0, Chunk951288.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.ACCESSIBILITY_MESSAGES_LEGACY_CHAT_INPUT,
       children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
-        className: Chunk197571.marginTop8,
+        className: Chunk10198.marginTop8,
         value: exports,
         note: Chunk388032.intl.string(Chunk388032.t.Q7wgHR),
         onChange: e => {
@@ -592,14 +592,14 @@ function eb() {
     children: [(0, Chunk951288.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.ACCESSIBILITY_TEXT_TO_SPEECH,
       children: (0, Chunk951288.jsxs)("div", {
-        className: Chunk197571.marginTop20,
+        className: Chunk10198.marginTop20,
         children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
-          className: Chunk197571.marginBottom8,
+          className: Chunk10198.marginBottom8,
           children: Chunk388032.intl.string(Chunk388032.t.VpSKeH)
         }), (0, Chunk951288.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.ACCESSIBILITY_TEXT_TO_SPEECH_TTS_COMMAND,
           children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
-            className: Chunk197571.marginTop20,
+            className: Chunk10198.marginTop20,
             value: module,
             onChange: Chunk695346.OW.updateSetting,
             children: Chunk388032.intl.string(Chunk388032.t.qvTIwc)
@@ -609,13 +609,13 @@ function eb() {
     }), (0, Chunk951288.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.ACCESSIBILITY_TEXT_TO_SPEECH_RATE,
       children: (0, Chunk951288.jsxs)("div", {
-        className: Chunk197571.marginTop20,
+        className: Chunk10198.marginTop20,
         children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
           id: er,
-          className: Chunk197571.marginBottom20,
+          className: Chunk10198.marginBottom20,
           children: Chunk388032.intl.string(Chunk388032.t.lsW5Eh)
         }), (0, Chunk951288.jsx)("div", {
-          className: Chunk953752.ttsPreviewWrapper,
+          className: Chunk133991.ttsPreviewWrapper,
           children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
             icon: require ? Chunk481060.fpf : Chunk481060.o1U,
             text: Chunk388032.intl.string(Chunk388032.t.hymc8v),

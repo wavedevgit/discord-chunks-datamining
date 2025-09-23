@@ -102,9 +102,9 @@ var Chunk990547 = require("./990547.js"),
   Chunk46140 = require("./46140.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk693450 = require("./693450.js"),
-  Chunk345909 = require("./345909.js"),
-  Chunk202323 = require("./202323.js");
+  Chunk62222 = require("./62222.js"),
+  Chunk412297 = require("./412297.js"),
+  Chunk756464 = require("./756464.js");
 
 function eY(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -191,8 +191,8 @@ let eq = () => {
       paymentsBlocked: e3,
       isEligibleForQuests: e4,
       isStricterMessageRequestsEnabled: e8,
-      hasLibraryApplication: e5,
-      hasTOTPEnabled: e6,
+      hasLibraryApplication: e6,
+      hasTOTPEnabled: e5,
       developerMode: e7,
       isAdultUser: e9,
       hasSecureFramesVerifiedUserIds: te,
@@ -278,13 +278,13 @@ let eq = () => {
         searchableTitles: [eZ.intl.string(eZ.t.cDgKtb)],
         section: eU.oAB.ACCOUNT,
         parent: eM.s6.ACCOUNT_MULTI_FACTOR_AUTHENTICATION,
-        predicate: () => !e6
+        predicate: () => !e5
       },
       [eM.s6.ACCOUNT_REMOVE_2FA]: {
         searchableTitles: [eZ.intl.string(eZ.t["D+aE7u"])],
         section: eU.oAB.ACCOUNT,
         parent: eM.s6.ACCOUNT_MULTI_FACTOR_AUTHENTICATION,
-        predicate: () => e6
+        predicate: () => e5
       },
       [eM.s6.ACCOUNT_VIEW_BACKUP_CODES]: {
         searchableTitles: [eZ.intl.string(eZ.t.fZSi1N)],
@@ -1567,7 +1567,7 @@ let eq = () => {
         section: eU.oAB.ADVANCED,
         searchableTitles: [eZ.intl.string(eZ.t.fi3UQE)],
         parent: eM.s6.SETTINGS_ADVANCED,
-        predicate: () => e5
+        predicate: () => e6
       },
       [eM.s6.SETTINGS_ADVANCED_APPLICATION_TEST_MODE]: {
         section: eU.oAB.ADVANCED,

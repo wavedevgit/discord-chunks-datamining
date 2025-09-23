@@ -45,7 +45,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk674563 = require("./674563.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk179598 = require("./179598.js");
+  Chunk707449 = require("./707449.js");
 
 function E(e) {
   for (var A = 1; A < arguments.length; A++) {
@@ -187,8 +187,8 @@ function ee(e) {
     {
       changes: e0,
       hasUnsavedChanges: e1,
-      canSaveForDraft: e3,
-      canSaveForPublished: e9,
+      canSaveForDraft: e9,
+      canSaveForPublished: e3,
       canPublishOrUnpublish: e6
     } = r.useMemo(() => (0, y.fG)({
       guildProductListing: ed,
@@ -450,18 +450,18 @@ function ee(e) {
           children: ec ? (0, n.jsx)(g.zxk, {
             variant: "secondary",
             text: L.intl.string(L.t.XYBEaW),
-            disabled: !e9,
+            disabled: !e3,
             loading: eL,
             onClick: () => {
-              o()(e9, "cannot save changes for published product without adding all fields"), e$("update_publish"), e2(e0)
+              o()(e3, "cannot save changes for published product without adding all fields"), e$("update_publish"), e2(e0)
             }
           }) : (0, n.jsx)(g.zxk, {
             variant: "secondary",
             text: L.intl.string(L.t.ZCjwoa),
-            disabled: !e3,
+            disabled: !e9,
             loading: eL,
             onClick: () => {
-              o()(e3, "cannot save changes without name or price tier"), e$("draft"), e2(e0)
+              o()(e9, "cannot save changes without name or price tier"), e$("draft"), e2(e0)
             }
           })
         })]

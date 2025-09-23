@@ -10,8 +10,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk624138 = require("./624138.js"),
   Chunk786089 = require("./786089.jsx"),
-  Chunk818923 = require("./818923.js"),
-  Chunk52461 = require("./52461.js");
+  Chunk674455 = require("./674455.js"),
+  Chunk51179 = require("./51179.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -108,7 +108,7 @@ let h = e => {
     }
   },
   g = () => (0, Chunk951288.jsx)(Chunk481060.X6q, {
-    className: Chunk52461.trophyCaseHeading,
+    className: Chunk51179.trophyCaseHeading,
     variant: "heading-md/semibold",
     children: "Trophy Case Card"
   }),

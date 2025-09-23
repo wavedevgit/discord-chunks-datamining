@@ -85,7 +85,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk215023 = require("./215023.js"),
   Chunk290511 = require("./290511.js"),
   Chunk186901 = require("./186901.js"),
-  Chunk981028 = require("./981028.js");
+  Chunk861218 = require("./861218.js");
 
 function eZ(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -110,7 +110,7 @@ let ew = (0, Chunk608787.Un)({
     webpackId: 267161
   }),
   eL = () => (0, Chunk951288.jsx)("div", {
-    className: Chunk981028.loader,
+    className: Chunk861218.loader,
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {})
   }),
   eR = (0, Chunk608787.Un)({
@@ -416,11 +416,11 @@ let e1 = e => (0, r.jsx)(v.Z, eZ({}, e)),
     })
   };
 
-function e6(e) {
+function e2(e) {
   document.body.style.setProperty("--custom-guild-sidebar-width", "".concat(e, "px"))
 }
 
-function e2(e) {
+function e6(e) {
   let {
     hasNotice: t,
     sidebarTheme: n,
@@ -445,7 +445,7 @@ function e2(e) {
     if (m) {
       var e;
       let t = parseInt(null != (e = f.K.get(eI.nT)) ? e : "");
-      Number.isNaN(t) && (t = eI.qO), t = Math.min(Math.max(t, eI.li), eI.zx), !m && t <= eI.p8 && (t = eI.qO), e6(t);
+      Number.isNaN(t) && (t = eI.qO), t = Math.min(Math.max(t, eI.li), eI.zx), !m && t <= eI.p8 && (t = eI.qO), e2(t);
       let n = e => {
         e.metaKey && "b" === e.key && P.useAppSidebarState.setState(e => ({
           isOpen: !e.isOpen
@@ -456,23 +456,23 @@ function e2(e) {
       }
     }
   }, [m]), i.useLayoutEffect(() => {
-    if (E) e6(eI.p8);
+    if (E) e2(eI.p8);
     else {
       var e;
       let t = parseInt(null != (e = f.K.get(eI.nT)) ? e : "");
-      Number.isNaN(t) && (t = eI.qO), e6(t)
+      Number.isNaN(t) && (t = eI.qO), e2(t)
     }
   }, [E]);
   let y = i.useRef(null),
     v = i.useCallback((e, t) => {
       var n;
-      e6(e);
+      e2(e);
       let r = t < eI.li / 3;
       t <= eI.li ? document.body.classList.add(eA.draggingMin) : document.body.classList.remove(eA.draggingMin), t >= eI.zx ? document.body.classList.add(eA.draggingMax) : document.body.classList.remove(eA.draggingMax);
       let i = t - e;
       null == (n = y.current) || n.style.setProperty("--custom-overdrag", "".concat(1 + Math.min(Math.abs(i / eI.p8), .25))), m && (P.useAppSidebarState.setState({
         isOpen: !r
-      }), r && e6(eI.p8))
+      }), r && e2(eI.p8))
     }, [m]),
     I = i.useCallback(() => {
       document.body.classList.add(eA.dragging)
@@ -499,7 +499,7 @@ function e2(e) {
       }))
     }, []);
   if (i.useLayoutEffect(() => {
-      E && e6(eI.p8)
+      E && e2(eI.p8)
     }, [E]), l) return null;
   let j = {
     className: a()(eA.sidebarList, {
@@ -588,15 +588,15 @@ function e7() {
     v = (0, Chunk442837.e7)([Chunk358221.Z], () => Chunk358221.Z.isFullscreenInContext()),
     S = (0, Chunk442837.e7)([Chunk591472.Z], () => Chunk591472.Z.isFrameActive());
   return (0, Chunk951288.jsx)("div", {
-    className: Chunk981028.container,
+    className: Chunk861218.container,
     children: (0, Chunk951288.jsx)(Chunk372900.Z.Provider, {
       value: (null == Chunk904245 ? true : Chunk904245.params.guildId) === Chunk981631.ME || null == Chunk904245 ? true : Chunk904245.params.guildId,
       children: (0, Chunk951288.jsxs)("div", {
-        className: Chunk981028.base,
+        className: Chunk861218.base,
         "data-fullscreen": Chunk244317,
         children: [!Chunk244317 && (0, Chunk951288.jsx)(ew, {}), Chunk873546.tq ? null : (0, Chunk951288.jsx)(Chunk256638.Z, {}), (0, Chunk951288.jsxs)("div", {
-          className: Chunk981028.content,
-          children: [(0, Chunk951288.jsx)(Chunk626421.Z, {}), (0, Chunk951288.jsx)(e2, {
+          className: Chunk861218.content,
+          children: [(0, Chunk951288.jsx)(Chunk626421.Z, {}), (0, Chunk951288.jsx)(e6, {
             isOnFullScreenCollectiblesShopRoute: Chunk608787,
             isSidebarOpen: Chunk433517,
             hasNotice: exports,
@@ -604,7 +604,7 @@ function e7() {
             hideChannelList: Chunk711237,
             hideSidebar: !Chunk433517 || Chunk608787
           }), (0, Chunk951288.jsx)("div", {
-            className: Chunk981028.page,
+            className: Chunk861218.page,
             "data-collapsed": !!Chunk347469 && Chunk169382,
             children: (0, Chunk951288.jsxs)(Chunk290297.Z.Provider, {
               value: Chunk532835,

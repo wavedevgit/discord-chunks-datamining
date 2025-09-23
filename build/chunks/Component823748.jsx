@@ -1,4 +1,4 @@
-/** Chunk was on 91053 **/
+/** Chunk was on 63962 **/
 /** chunk id: 823748, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => ts
@@ -82,7 +82,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk657218 = require("./657218.jsx"),
   Chunk407908 = require("./407908.jsx"),
   Chunk66556 = require("./66556.jsx"),
-  Chunk131694 = require("./131694.jsx"),
+  Chunk739830 = require("./739830.jsx"),
   Chunk377929 = require("./377929.jsx"),
   Chunk900157 = require("./900157.jsx"),
   Chunk108427 = require("./108427.js"),
@@ -118,7 +118,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk440493 = require("./440493.js"),
   Chunk157925 = require("./157925.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk97009 = require("./97009.js");
+  Chunk161655 = require("./161655.js");
 
 function tt(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -155,10 +155,10 @@ function tr(e, t) {
   }), e
 }
 let ti = (0, Chunk663993.Un)({
-  createPromise: () => Promise.all([require.e("22173"), require.e("9456")]).then(require.bind(require, 346975)),
+  createPromise: () => Promise.all([require.e("22173"), require.e("76892")]).then(require.bind(require, 346975)),
   webpackId: 346975,
   renderLoader: () => (0, Chunk951288.jsx)("div", {
-    className: Chunk97009.loader,
+    className: Chunk161655.loader,
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {})
   }),
   name: "ForumChannel"
@@ -179,7 +179,7 @@ class tl extends Chunk647438.PureComponent {
     o()(null != t, "Missing channel in Channel.openChannelContextMenu"), o()(null != i, "Missing guild in Channel.openChannelContextMenu"), (0, y.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("24783"), n.e("41815")]).then(n.bind(n, 439635));
+      } = await Promise.all([n.e("24783"), n.e("63384")]).then(n.bind(n, 439635));
       return n => (0, r.jsx)(e, tr(tn({}, n), {
         channel: t,
         guild: i
@@ -202,7 +202,7 @@ class tl extends Chunk647438.PureComponent {
     o()(null != i, "Missing user in Channel.openDMContextMenu"), (0, y.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("79695"), n.e("98783"), n.e("56826"), n.e("31899")]).then(n.bind(n, 131404));
+      } = await Promise.all([n.e("79695"), n.e("98783"), n.e("56826"), n.e("55599")]).then(n.bind(n, 131404));
       return n => (0, r.jsx)(e, tr(tn({}, n), {
         user: i,
         channelSelected: true,
@@ -425,7 +425,7 @@ class tl extends Chunk647438.PureComponent {
           style: {
             width: Chunk981631.$Y6
           },
-          className: Chunk97009.guildSidebar,
+          className: Chunk161655.guildSidebar,
           children: (0, Chunk951288.jsx)(Chunk613464.Z, {
             guildId: module,
             userId: exports,
@@ -471,20 +471,20 @@ class tl extends Chunk647438.PureComponent {
         subsection: null != require ? require : true
       }), (0, Chunk951288.jsxs)("div", {
         "data-has-border": module.type !== Chunk981631.d4z.GUILD_VOICE,
-        className: a()(Chunk97009.chat, {
-          [Chunk97009.threadSidebarOpen]: Chunk952265 || Chunk755721,
-          [Chunk97009.threadSidebarFloating]: Chunk952265 && Chunk442837
+        className: a()(Chunk161655.chat, {
+          [Chunk161655.threadSidebarOpen]: Chunk952265 || Chunk755721,
+          [Chunk161655.threadSidebarFloating]: Chunk952265 && Chunk442837
         }),
         children: [Chunk481060 ? (0, Chunk951288.jsx)(Chunk561472.Z, {
           style: {
             right: Chunk952265 ? Chunk843611 : true
           },
-          className: Chunk97009.uploadArea,
+          className: Chunk161655.uploadArea,
           channel: module,
           draftType: Chunk703558.d.ChannelMessage
         }) : null, Chunk704215 || d ? null : this.renderHeaderBar(), this.renderCall(), this.renderEmbeddedActivityPanel(), (0, Chunk951288.jsxs)("div", {
-          className: a()(Chunk97009.content, {
-            [Chunk97009.noChat]: Chunk120356 === Chunk981631.AEg.NO_CHAT
+          className: a()(Chunk161655.content, {
+            [Chunk161655.noChat]: Chunk120356 === Chunk981631.AEg.NO_CHAT
           }),
           children: [this.renderChat(), this.renderSidebar()]
         })]
@@ -587,7 +587,7 @@ class tl extends Chunk647438.PureComponent {
             channel: e
           }, "pins")), s.push((0, r.jsx)(eo.Z, {
             channel: e,
-            tooltip: e5.intl.string(e5.t.Xjlbvr),
+            tooltip: e9.intl.string(e9.t.Xjlbvr),
             location: "ChannelHeaderToolbar-DM-AddFriendsButton"
           }, "invite")), s.push((0, r.jsx)(eu.Z, {
             channel: e,
@@ -602,7 +602,7 @@ class tl extends Chunk647438.PureComponent {
             }, "calls")), s.push((0, r.jsx)(en.Z, {
               channel: e
             }, "pins")), !e.isManaged()) {
-            let t = e5.intl.string(e5.t.Xjlbvr);
+            let t = e9.intl.string(e9.t.Xjlbvr);
             s.push((0, r.jsx)(eo.Z, {
               channel: e,
               tooltip: t,
@@ -717,7 +717,7 @@ class tl extends Chunk647438.PureComponent {
             channel: t
           }, n))
         }),
-        children: e5.intl.string(e5.t["3aOv+v"])
+        children: e9.intl.string(e9.t["3aOv+v"])
       }) : null
     }), tt(this, "renderHeaderBar", () => {
       let {
@@ -755,7 +755,7 @@ class tl extends Chunk647438.PureComponent {
             }),
             transparent: _,
             hidden: d,
-            "aria-label": e5.intl.string(e5.t.BIYAqa),
+            "aria-label": e9.intl.string(e9.t.BIYAqa),
             children: [p && (0, r.jsx)(ea.TS, {
               channel: e,
               guild: i,
@@ -777,7 +777,7 @@ class tl extends Chunk647438.PureComponent {
               look: g.zx.Looks.FILLED,
               color: g.zx.Colors.PRIMARY,
               size: g.zx.Sizes.MIN,
-              children: e5.intl.string(e5.t.k5WiPT)
+              children: e9.intl.string(e9.t.k5WiPT)
             }) : (0, ea.v0)(e, i)]
           }, "header-".concat(e.id))
         }), (0, r.jsx)(em.Z, {
@@ -845,7 +845,7 @@ let ta = (0, Chunk112724.Z)(tl),
     }), i.useEffect(() => {
       var e, t, n;
       let r = (0, eb.s1)();
-      if ((null == r || null == (e = r.location) ? true : e.state) === e9.Df) {
+      if ((null == r || null == (e = r.location) ? true : e.state) === e6.Df) {
         let {
           channelId: e
         } = null != (n = (0, eh.Qj)(null == r || null == (t = r.location) ? true : t.pathname)) ? n : {};
