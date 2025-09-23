@@ -2,7 +2,7 @@
 /** chunk id: 345953, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => V
+  Z: () => H
 }), require("./388685.js"), require("./642613.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -203,14 +203,22 @@ function Z(e) {
   } = e;
   n !== f.default.getId() && M(t, n, d.Z.isLocalSoundboardMuted(n))
 }
-class F extends Chunk147913.Z {
+
+function F(e) {
+  let {} = e;
+  g.hW.updateAsync("audioContextSettings", e => {
+    e.user = {}, e.stream = {}
+  }, g.fy.INFREQUENT_USER_ACTION)
+}
+class V extends Chunk147913.Z {
   constructor(...e) {
     super(...e), b(this, "actions", {
       POST_CONNECTION_OPEN: D,
       AUDIO_SET_LOCAL_VOLUME: G,
       AUDIO_TOGGLE_LOCAL_MUTE: B,
-      AUDIO_TOGGLE_LOCAL_SOUNDBOARD_MUTE: Z
+      AUDIO_TOGGLE_LOCAL_SOUNDBOARD_MUTE: Z,
+      MEDIA_ENGINE_RESET_SETTINGS: F
     })
   }
 }
-let V = new F
+let H = new V

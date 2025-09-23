@@ -3,7 +3,7 @@
 "use strict";
 let r, i, a, o, s, l, c;
 require.d(exports, {
-  Z: () => rw
+  Z: () => rD
 }), require("./388685.js"), require("./953529.js"), require("./457542.js"), require("./539854.js"), require("./642613.js"), require("./49124.js"), require("./337869.js");
 var u, Chunk512722 = require("./512722.js"),
   f = require.n(Chunk512722),
@@ -708,7 +708,7 @@ function tK() {
       })
     })
   }), eK.on(Chunk46973.aB.VoiceQueueMetrics, e => {
-    let t = rP(e);
+    let t = rw(e);
     null !== t && er.default.track(eb.rMx.VOICE_QUEUE_METRICS, t)
   }), eK.setOnVideoContainerResized((e, t, n) => {
     v.Z.wait(() => v.Z.dispatch({
@@ -1798,6 +1798,18 @@ function rb(e) {
 
 function ry(e) {
   let {
+    overrides: t
+  } = e;
+  if (__OVERLAY__) returnfalse;
+  ez = Object.values(eT.Yn).reduce((e, n) => {
+    let r = n,
+      i = eY();
+    return e[r] = p().merge(i, t[r]), e
+  }, {}), y.K.set(ew, ez), t3()
+}
+
+function rO(e) {
+  let {
     state: t
   } = e, n = D.Z.isEnabled();
   if (t === eb.$7l.BACKGROUND && e6 && !n) ti = true, tB(false);
@@ -1808,24 +1820,24 @@ function ry(e) {
   returntrue
 }
 
-function rO(e) {
+function rv(e) {
   eK.eachConnection(t => t.setBitRate(e.bitrate))
 }
 
-function rv() {
+function rI() {
   if (!e6 && null == a || null != Chunk19780.Z.getRTCConnectionId()) returnfalse;
   tB(false, null)
 }
 
-function rI() {
+function rT() {
   return !!tb && (tb = false, true)
 }
 
-function rT(e) {
+function rS(e) {
   eK.eachConnection(t => t.applyVideoQualityMode(e.mode))
 }
 
-function rS(e) {
+function rA(e) {
   let {
     settings: t
   } = e;
@@ -1834,18 +1846,18 @@ function rS(e) {
   })
 }
 
-function rA() {
+function rC() {
   ty = true
 }
 
-function rC() {
+function rN() {
   ty = false
 }
 
-function rN(e) {
+function rR(e) {
   tR = e.enabled
 }
-class rR extends(u = Chunk442837.ZP.Store) {
+class rP extends(u = Chunk442837.ZP.Store) {
   initialize() {
     tK(), t0(), n7(), nE(), tC = {
       [Chunk65154.AN.VIDEO]: eK.supports(Chunk65154.AN.VIDEO),
@@ -2305,7 +2317,7 @@ class rR extends(u = Chunk442837.ZP.Store) {
   }
 }
 
-function rP(e) {
+function rw(e) {
   if (null == e.taskMetrics || 0 === e.taskMetrics.length || 1 === e.taskMetrics.length) return null;
   let t = {
     metrics_period_ms: e.periodMs,
@@ -2325,8 +2337,8 @@ function rP(e) {
       t["delayed_task_".concat(e, "_name")] = n.name, t["delayed_task_".concat(e, "_longest_queue_time_ns")] = n.longestQueueTimeNs
     } return t.full_task_report = JSON.stringify(n), t
 }
-eA(rR, "displayName", "MediaEngineStore");
-let rw = r = new rR(Chunk570140.Z, {
+eA(rP, "displayName", "MediaEngineStore");
+let rD = r = new rP(Chunk570140.Z, {
   VOICE_CHANNEL_SELECT: rs,
   VOICE_STATE_UPDATES: nc,
   CONNECTION_OPEN: ni,
@@ -2385,21 +2397,22 @@ let rw = r = new rR(Chunk570140.Z, {
   OVERLAY_INITIALIZE: na,
   MEDIA_ENGINE_SET_OPEN_H264: rE,
   MEDIA_ENGINE_SET_HARDWARE_ENCODING: nW,
-  APP_STATE_UPDATE: ry,
-  SET_CHANNEL_BITRATE: rO,
+  APP_STATE_UPDATE: rO,
+  SET_CHANNEL_BITRATE: rv,
   SET_VAD_PERMISSION: n3,
   SET_NATIVE_PERMISSION: n4,
-  SET_CHANNEL_VIDEO_QUALITY_MODE: rT,
+  SET_CHANNEL_VIDEO_QUALITY_MODE: rS,
   MEDIA_ENGINE_SET_AEC_DUMP: rb,
-  CHANNEL_DELETE: rv,
-  MEDIA_ENGINE_NOISE_CANCELLATION_ERROR_RESET: rI,
-  MEDIA_ENGINE_APPLY_MEDIA_FILTER_SETTINGS: rS,
-  MEDIA_ENGINE_APPLY_MEDIA_FILTER_SETTINGS_START: rA,
-  MEDIA_ENGINE_APPLY_MEDIA_FILTER_SETTINGS_ERROR: rC,
+  MEDIA_ENGINE_RESET_SETTINGS: ry,
+  CHANNEL_DELETE: rI,
+  MEDIA_ENGINE_NOISE_CANCELLATION_ERROR_RESET: rT,
+  MEDIA_ENGINE_APPLY_MEDIA_FILTER_SETTINGS: rA,
+  MEDIA_ENGINE_APPLY_MEDIA_FILTER_SETTINGS_START: rC,
+  MEDIA_ENGINE_APPLY_MEDIA_FILTER_SETTINGS_ERROR: rN,
   USER_SETTINGS_PROTO_UPDATE: n_,
   CLIPS_INIT: r_,
   CLIPS_SETTINGS_UPDATE: rp,
-  MEDIA_ENGINE_SET_ENABLE_HARDWARE_MUTE_NOTICE: rN,
+  MEDIA_ENGINE_SET_ENABLE_HARDWARE_MUTE_NOTICE: rR,
   VOICE_FILTER_REQUEST_SWITCH: re,
   VOICE_FILTER_LOOPBACK_TOGGLE: n9,
   VOICE_FILTER_APPLIED: rn,

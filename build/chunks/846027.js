@@ -510,5 +510,11 @@ let S = {
         type: "AUDIO_SET_NOISE_CANCELLATION_ENABLE_STATS",
         enabled: e
       })
+    },
+    resetMediaEngineSettings(e) {
+      r.Z.dispatch({
+        type: "MEDIA_ENGINE_RESET_SETTINGS",
+        overrides: e
+      })
     }
   }

@@ -8,7 +8,7 @@ let i = {
     hasStoreChangeListeners: true
   },
   AudioSettingsManager: {
-    actions: ["POST_CONNECTION_OPEN", "AUDIO_SET_LOCAL_VOLUME", "AUDIO_TOGGLE_LOCAL_MUTE", "AUDIO_TOGGLE_LOCAL_SOUNDBOARD_MUTE"],
+    actions: ["POST_CONNECTION_OPEN", "AUDIO_SET_LOCAL_VOLUME", "AUDIO_TOGGLE_LOCAL_MUTE", "AUDIO_TOGGLE_LOCAL_SOUNDBOARD_MUTE", "MEDIA_ENGINE_RESET_SETTINGS"],
     inlineRequire: () => require("./345953.js").Z
   },
   AutoUpdateManager: {
@@ -50,6 +50,10 @@ let i = {
   CommunicationDisabledManager: {
     inlineRequire: () => require("./202107.js").Z,
     loadAfterConnectionOpen: true
+  },
+  ConferenceModeManager: {
+    actions: ["VOICE_CHANNEL_SELECT"],
+    inlineRequire: () => require("./571984.js").Z
   },
   ContentProtectionManager: {
     inlineRequire: () => require("./725140.js").Z,
