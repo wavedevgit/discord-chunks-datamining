@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-/** chunk id: 378975, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 368451, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
   Z: () => T
@@ -16,8 +16,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk739754 = require("./739754.jsx"),
   Chunk970184 = require("./970184.jsx"),
   Chunk280501 = require("./280501.js"),
-  Chunk388032 = require("./388032.jsx"),
-  Chunk623734 = require("./623734.js");
+  Chunk292419 = require("./292419.js"),
+  Chunk219879 = require("./219879.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -142,12 +142,11 @@ function T(e) {
     type: t,
     options: n,
     id: a,
-    placeholder: s,
-    maxValues: u,
-    minValues: g,
-    disabled: b
-  } = e, T = i.useMemo(() => n.filter(e => e.default).map(e => e.value), [n]), S = (0, _.CJ)();
-  l()(null != S, "SelectActionComponent must be rendered inside a ComponentStateContext");
+    maxValues: s,
+    minValues: u,
+    disabled: g
+  } = e, b = (0, h.Wo)(e), T = i.useMemo(() => n.filter(e => e.default).map(e => e.value), [n]), S = (0, _.CJ)();
+  l()(null != S, "StringSelectActionComponent must be rendered inside a ComponentStateContext");
   let {
     state: A,
     executeStateUpdate: C,
@@ -157,7 +156,7 @@ function T(e) {
   } = S.useComponentState(e, T.length > 0 ? {
     type: t,
     values: T
-  } : true), w = null != S.modal, D = u > 1, x = N === p.gH.LOADING, [L, j] = i.useState(false), [M, k] = i.useState(() => new Set(n.filter(e => e.default).map(e => e.value))), [U, G] = i.useState(M), B = i.useMemo(() => n.some(e => null != e.emoji), [n]);
+  } : true), w = null != S.modal, D = s > 1, x = N === p.gH.LOADING, [L, j] = i.useState(false), [M, k] = i.useState(() => new Set(n.filter(e => e.default).map(e => e.value))), [U, G] = i.useState(M), B = i.useMemo(() => n.some(e => null != e.emoji), [n]);
   i.useEffect(() => {
     if ((null == A ? true : A.type) === d.re.STRING_SELECT) {
       let e = new Set(A.values);
@@ -177,7 +176,7 @@ function T(e) {
     !L && (M.size === U.size && Array.from(U).every(e => M.has(e)) || Z())
   }, [L, M, U, Z]);
   let F = c.UNb;
-  D ? F = c.gzz : 0 === g && (F = c.s6k);
+  D ? F = c.gzz : 0 === u && (F = c.s6k);
   let V = (0, c.cYr)({
     value: M,
     onChange: e => k(e),
@@ -188,21 +187,21 @@ function T(e) {
       className: m.container,
       children: (0, r.jsx)(c.PhF, E({
         isProcessing: x,
-        isDisabled: b || N === p.gH.DISABLED || R,
+        isDisabled: g || N === p.gH.DISABLED || R,
         className: o()(m.select, {
           [m.inModal]: w
         }),
         options: n.map(e => y(E({}, e), {
-          disabled: D && !M.has(e.value) && M.size === u
+          disabled: D && !M.has(e.value) && M.size === s
         })),
-        placeholder: null != s ? s : h.intl.string(h.t.Otr6W1),
+        placeholder: b,
         onClose: () => j(false),
         onOpen: () => j(true),
         maxVisibleItems: 5,
         closeOnSelect: !D,
         optionClassName: m.selectOption,
         renderOptionLabel: e => (0, r.jsx)(O, y(E({}, e), {
-          isDisabled: D && !M.has(e.value) && M.size === u,
+          isDisabled: D && !M.has(e.value) && M.size === s,
           isOffset: B
         })),
         renderOptionValue: e => D ? (0, r.jsx)(I, {

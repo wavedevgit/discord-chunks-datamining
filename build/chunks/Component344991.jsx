@@ -16,9 +16,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk739754 = require("./739754.jsx"),
   Chunk970184 = require("./970184.jsx"),
   Chunk280501 = require("./280501.js"),
-  Chunk388032 = require("./388032.jsx"),
+  Chunk292419 = require("./292419.js"),
   Chunk28517 = require("./28517.js"),
-  Chunk623734 = require("./623734.js");
+  Chunk219879 = require("./219879.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -86,10 +86,9 @@ function I(e) {
     defaultValues: g
   } = e, {
     type: b,
-    placeholder: v,
-    maxValues: I,
-    disabled: T
-  } = t, [S, A] = i.useState(false), [C, N] = i.useState(false), [R, P] = i.useState(new Map(null == g ? true : g.map(e => [e.value, e]))), [w, D] = i.useState(new Set(R.keys())), [x, L] = i.useState(() => (null != g ? g : []).map(e => e.value)), [j, M] = i.useState(0);
+    maxValues: v,
+    disabled: I
+  } = t, T = (0, p.Wo)(t), [S, A] = i.useState(false), [C, N] = i.useState(false), [R, P] = i.useState(new Map(null == g ? true : g.map(e => [e.value, e]))), [w, D] = i.useState(new Set(R.keys())), [x, L] = i.useState(() => (null != g ? g : []).map(e => e.value)), [j, M] = i.useState(0);
   i.useEffect(() => {
     let e = (null != g ? g : []).map(e => e.value);
     if (e.every(e => x.includes(e)) && x.every(t => e.includes(t))) return;
@@ -108,7 +107,7 @@ function I(e) {
   } = k.useComponentState(t, R.size > 0 ? {
     type: b,
     selectedOptions: Array.from(R.values())
-  } : true), V = null != k.modal, H = I > 1, Y = B === _.gH.LOADING;
+  } : true), V = null != k.modal, H = v > 1, Y = B === _.gH.LOADING;
   i.useEffect(() => {
     if ((null == U ? true : U.type) === u.re.USER_SELECT || (null == U ? true : U.type) === u.re.ROLE_SELECT || (null == U ? true : U.type) === u.re.MENTIONABLE_SELECT || (null == U ? true : U.type) === u.re.CHANNEL_SELECT) {
       let e = new Map(U.selectedOptions.map(e => [e.value, e]));
@@ -145,12 +144,12 @@ function I(e) {
     Q = 0 === R.size || S,
     J = {
       isProcessing: Y,
-      isDisabled: T || B === _.gH.DISABLED || Z,
+      isDisabled: I || B === _.gH.DISABLED || Z,
       wrapperClassName: o()(h.select, {
         [h.inModal]: V
       }),
       options: q,
-      placeholder: Q ? null != v ? v : p.intl.string(p.t.Otr6W1) : true,
+      placeholder: Q ? T : true,
       onClose: () => A(false),
       onOpen: () => A(true),
       onBlur: () => N(false),
