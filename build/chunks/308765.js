@@ -52,7 +52,7 @@ let i = {
     loadAfterConnectionOpen: true
   },
   ConferenceModeManager: {
-    actions: ["VOICE_CHANNEL_SELECT"],
+    actions: ["VOICE_CHANNEL_SELECT", "VOICE_STATE_UPDATES"],
     inlineRequire: () => require("./571984.js").Z
   },
   ContentProtectionManager: {

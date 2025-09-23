@@ -4,7 +4,7 @@
 let r;
 require.d(exports, {
   Cq: () => eH,
-  ZP: () => e6,
+  ZP: () => e5,
   gF: () => eg,
   k1: () => eY,
   mB: () => eV
@@ -389,7 +389,7 @@ let e8 = (0, Chunk251625.oH)((e, t, n) => {
       recipients: a
     }
   }),
-  e6 = {
+  e5 = {
     queryFriends(e) {
       let {
         query: t,

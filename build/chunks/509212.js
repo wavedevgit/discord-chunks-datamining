@@ -738,11 +738,11 @@ function e8(e) {
   return (e4(e) || ek(e)) && e.config.features.includes(M.S7.START_QUEST_CTA)
 }
 
-function e6(e) {
-  return e5(e.targetSeconds - e.progressSeconds)
+function e5(e) {
+  return e6(e.targetSeconds - e.progressSeconds)
 }
 
-function e5(e) {
+function e6(e) {
   return {
     minutes: Math.max(0, Math.floor(e / 60)),
     seconds: Math.max(0, Math.floor(e % 60))
@@ -750,7 +750,7 @@ function e5(e) {
 }
 
 function e7(e) {
-  let t = e6(e);
+  let t = e5(e);
   return e9(t.minutes, t.seconds)
 }
 
