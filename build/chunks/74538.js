@@ -48,7 +48,7 @@ require.d(exports, {
   if: () => ez,
   jP: () => er,
   jp: () => eA,
-  k5: () => e5,
+  k5: () => e6,
   lY: () => eI,
   m3: () => eC,
   nd: () => eN,
@@ -1492,12 +1492,12 @@ function e8(e) {
   return null != e && null == F(e) && null != e4(e)
 }
 
-function e5(e) {
+function e6(e) {
   let t = null != e ? F(e) : null;
   return null != t ? e_(t.planId) : null
 }
 
-function e6(e) {
+function e5(e) {
   if (null != e) {
     let t = F(e);
     if (null != t) return et(t.planId)
@@ -1745,8 +1745,8 @@ let tB = Object.freeze({
   getPremiumPlanItem: F,
   getGuildBoostPlanItem: e4,
   isBoostOnlySubscription: e8,
-  getPremiumSkuIdForSubscription: e5,
-  getPremiumTypeFromSubscription: e6,
+  getPremiumSkuIdForSubscription: e6,
+  getPremiumTypeFromSubscription: e5,
   getPremiumTypeFromSubscriptionRenewalMutations: e7,
   getPremiumGradientColor: e9,
   getUnactivatedFractionalPremiumHours: tk,

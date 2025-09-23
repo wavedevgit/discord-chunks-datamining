@@ -340,7 +340,7 @@ function C(e) {
           }), {
             label: c,
             ariaLabel: u
-          } = (0, d.V4)(i), p = o === y.dCx.FILTER_FROM || o === y.dCx.FILTER_MENTIONS ? (0, r.jsx)(d.mW, {
+          } = (0, d.Nk)(i), p = o === y.dCx.FILTER_FROM || o === y.dCx.FILTER_MENTIONS ? (0, r.jsx)(d.mW, {
             searchTokenType: o,
             answer: null == (t = i.user) ? true : t.username
           }) : true, h = e => {
@@ -399,10 +399,7 @@ function C(e) {
             modeType: r,
             result: n,
             group: i
-          }), o = (0, d.GM)({
-            result: n,
-            group: i
-          }), {
+          }), o = (0, d.uB)(n), {
             label: s,
             ariaLabel: l
           } = (0, d.V4)(n), c = t => {

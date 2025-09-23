@@ -326,16 +326,27 @@ class W extends Chunk647438.PureComponent {
       })
     }), F(this, "onBlur", e => {
       this.handleBlur()
-    }), F(this, "handleReturn", e => {
-      var t;
+    }), F(this, "handleOption", () => {
       let {
-        shiftKey: n
-      } = e;
-      e.preventDefault();
-      let r = this.getPopoutRef();
-      return null != (t = null != r && r.selectOption({
+        current: e
+      } = this._searchPopoutRef;
+      return null != e && (false === e.state.selectedIndex && e.shouldShowSearchInSelectedChannel() ? e.handleSearchInChannel({
         searchAutocompleteSelectAction: U.ZW.KEY_PRESS
-      })) && t || ((0, S.X$)() && n ? this.search({
+      }) : e.selectOption({
+        searchAutocompleteSelectAction: U.ZW.KEY_PRESS
+      }))
+    }), F(this, "handleRedesignOption", () => {
+      let {
+        current: e
+      } = this._searchFiltersRedesignPopoutRef;
+      return null != e && e.selectOption({
+        searchAutocompleteSelectAction: U.ZW.KEY_PRESS
+      })
+    }), F(this, "handleReturn", e => {
+      let {
+        shiftKey: t
+      } = e;
+      return e.preventDefault(), (this.props.isSearchFiltersRedesignEnabled ? this.handleRedesignOption() : this.handleOption()) || ((0, S.X$)() && t ? this.search({
         searchEverywhere: true
       }) : this.search()), "handled"
     }), F(this, "handleBeforeInput", e => {

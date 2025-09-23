@@ -191,8 +191,8 @@ let eq = () => {
       paymentsBlocked: e3,
       isEligibleForQuests: e4,
       isStricterMessageRequestsEnabled: e8,
-      hasLibraryApplication: e5,
-      hasTOTPEnabled: e6,
+      hasLibraryApplication: e6,
+      hasTOTPEnabled: e5,
       developerMode: e7,
       isAdultUser: e9,
       hasSecureFramesVerifiedUserIds: te,
@@ -278,13 +278,13 @@ let eq = () => {
         searchableTitles: [eZ.intl.string(eZ.t.cDgKtb)],
         section: eU.oAB.ACCOUNT,
         parent: eM.s6.ACCOUNT_MULTI_FACTOR_AUTHENTICATION,
-        predicate: () => !e6
+        predicate: () => !e5
       },
       [eM.s6.ACCOUNT_REMOVE_2FA]: {
         searchableTitles: [eZ.intl.string(eZ.t["D+aE7u"])],
         section: eU.oAB.ACCOUNT,
         parent: eM.s6.ACCOUNT_MULTI_FACTOR_AUTHENTICATION,
-        predicate: () => e6
+        predicate: () => e5
       },
       [eM.s6.ACCOUNT_VIEW_BACKUP_CODES]: {
         searchableTitles: [eZ.intl.string(eZ.t.fZSi1N)],
@@ -1567,7 +1567,7 @@ let eq = () => {
         section: eU.oAB.ADVANCED,
         searchableTitles: [eZ.intl.string(eZ.t.fi3UQE)],
         parent: eM.s6.SETTINGS_ADVANCED,
-        predicate: () => e5
+        predicate: () => e6
       },
       [eM.s6.SETTINGS_ADVANCED_APPLICATION_TEST_MODE]: {
         section: eU.oAB.ADVANCED,
