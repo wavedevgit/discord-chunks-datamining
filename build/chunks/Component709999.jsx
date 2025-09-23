@@ -300,33 +300,33 @@ function eA(e) {
     isPartiallyOwnedBundle: g,
     isDisabled: b,
     discount: v
-  } = e, I = (0, w.sp)(), T = (0, L.rN)(t), [R, x] = (0, _.Wu)([D.Z], () => [D.Z.isClaiming === t.skuId, null != D.Z.isClaiming && D.Z.isClaiming !== t.skuId]), M = (0, L.XM)(i, d, false), k = (0, L.ne)({
+  } = e, I = (0, w.sp)(), T = (0, L.rN)(t), [R, x] = (0, _.Wu)([D.Z], () => [D.Z.isClaiming === t.skuId, null != D.Z.isClaiming && D.Z.isClaiming !== t.skuId]), M = (0, L.XM)(i, d, false), k = (0, L.Vw)(i, d, false), U = (0, L.ne)({
     product: i,
     isPartiallyOwnedBundle: g,
     isPurchased: m
   }), {
-    enabled: U
+    enabled: B
   } = (0, S.WX)({
     location: "collectibles_shop_tall_card"
   }), {
-    handleUseNow: B,
-    isApplying: V
+    handleUseNow: V,
+    isApplying: H
   } = (0, j.W)({
     product: i
-  }), H = c(E.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON), W = (0, ee.Iw)(t), K = null != W, {
-    displayPrices: z,
-    checkoutEligiblePrices: q,
-    isOrbExclusive: X,
-    shouldCheckoutWithOrbs: Q,
-    hasSufficientOrbs: $
+  }), W = c(E.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON), K = (0, ee.Iw)(t), z = null != K, {
+    displayPrices: q,
+    checkoutEligiblePrices: X,
+    isOrbExclusive: Q,
+    shouldCheckoutWithOrbs: $,
+    hasSufficientOrbs: et
   } = (0, ea.Ip)({
     product: t,
     isPremiumUser: d,
     tab: n,
-    hasDiscountOffer: K
+    hasDiscountOffer: z
   });
-  if (0 === z.length) return null;
-  let et = () => (0, r.jsx)("div", {
+  if (0 === q.length) return null;
+  let en = () => (0, r.jsx)("div", {
       className: ef.hoverUpsellContainer,
       children: (0, r.jsx)(O.Z, {
         fullWidth: true,
@@ -339,7 +339,7 @@ function eA(e) {
         subscriptionTier: eu.Si.TIER_2
       })
     }),
-    en = () => b ? (0, r.jsx)(h.Text, {
+    er = () => b ? (0, r.jsx)(h.Text, {
       tag: "div",
       variant: "heading-md/semibold",
       color: "header-muted",
@@ -352,12 +352,12 @@ function eA(e) {
       variant: "text-md/semibold",
       className: ef.priceTag,
       children: ed.intl.string(ed.t.rt69oq)
-    }) : U ? (0, r.jsx)(Y.e, {
-      displayPrices: z,
+    }) : B ? (0, r.jsx)(Y.e, {
+      displayPrices: q,
       isPremiumUser: d,
       discount: v,
-      hasSufficientOrbs: $,
-      discountOfferAmount: W
+      hasSufficientOrbs: et,
+      discountOfferAmount: K
     }) : (0, r.jsx)(F.Z, {
       product: i,
       discount: v,
@@ -366,14 +366,14 @@ function eA(e) {
       hideStrikethroughPrice: true,
       nitroIconType: "default",
       nitroIconSize: "md",
-      discountOfferAmount: W
+      discountOfferAmount: K
     }),
-    er = () => p || l.tq || X || !k || n === el.AW.ORBS ? null : T ? (0, r.jsx)(h.hU, {
+    ei = () => p || l.tq || Q || !U || n === el.AW.ORBS || (0, L.iP)(null == k ? true : k.currency) ? null : T ? (0, r.jsx)(h.hU, {
       variant: "primary",
       "aria-label": ed.intl.string(ed.t.SKNnqq),
       icon: h.tEF,
       onClick: e => {
-        e.stopPropagation(), H(e)
+        e.stopPropagation(), W(e)
       }
     }) : (0, r.jsx)(w.k0, {
       newValue: {
@@ -387,15 +387,15 @@ function eA(e) {
         tooltipDelay: eb
       })
     }),
-    ei = () => (0, r.jsx)(h.zxk, {
+    es = () => (0, r.jsx)(h.zxk, {
       variant: "primary",
       onClick: e => {
-        e.stopPropagation(), H(e)
+        e.stopPropagation(), W(e)
       },
       text: ed.intl.string(ed.t.FdGl5O),
       fullWidth: true
     }),
-    es = () => {
+    e_ = () => {
       let e = () => {
           N.default.track(ec.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
             collectibles_shop_session_id: null == I ? true : I.sessionId,
@@ -418,8 +418,8 @@ function eA(e) {
             variantsReturnStyle: f.v.VARIANTS_GROUP
           })
         },
-        i = K ? ed.intl.formatToPlainString(ed.t["5U5RBw"], {
-          discountOfferAmount: W
+        i = z ? ed.intl.formatToPlainString(ed.t["5U5RBw"], {
+          discountOfferAmount: K
         }) : ed.intl.formatToPlainString(ed.t["cNSL/v"], {
           price: M
         });
@@ -432,7 +432,7 @@ function eA(e) {
         fullWidth: true
       })
     },
-    e_ = () => {
+    ep = () => {
       let e = () => {
         N.default.track(ec.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
           collectibles_shop_session_id: null == I ? true : I.sessionId,
@@ -470,7 +470,7 @@ function eA(e) {
       return (0, r.jsx)(h.zxk, {
         variant: "primary",
         text: ed.intl.format(ed.t.kAgx5O, {
-          orbPrice: q[0].amount,
+          orbPrice: X[0].amount,
           orbIconHook: () => (0, r.jsx)(A.Z, {
             className: ef.orbIconAligned
           })
@@ -479,12 +479,12 @@ function eA(e) {
           t.stopPropagation(), e()
         },
         "aria-label": ed.intl.formatToPlainString(ed.t["fNG/09"], {
-          orbPrice: q[0].amount
+          orbPrice: X[0].amount
         }),
         fullWidth: true
       })
     },
-    ep = () => {
+    eh = () => {
       let e = async () => {
         N.default.track(ec.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
           collectibles_shop_session_id: null == I ? true : I.sessionId,
@@ -516,44 +516,44 @@ function eA(e) {
         fullWidth: true
       })
     },
-    eh = () => (0, r.jsx)(h.zxk, {
-      variant: "primary",
-      onClick: e => {
-        e.stopPropagation(), B()
-      },
-      loading: V,
-      text: ed.intl.string(ed.t.MAS7uL),
-      fullWidth: true
-    }),
     em = () => (0, r.jsx)(h.zxk, {
       variant: "primary",
       onClick: e => {
-        e.stopPropagation(), H(e)
+        e.stopPropagation(), V()
+      },
+      loading: H,
+      text: ed.intl.string(ed.t.MAS7uL),
+      fullWidth: true
+    }),
+    eg = () => (0, r.jsx)(h.zxk, {
+      variant: "primary",
+      onClick: e => {
+        e.stopPropagation(), W(e)
       },
       text: ed.intl.string(ed.t.GpnHfH),
       fullWidth: true
     }),
-    eg = () => {
-      if (p && !d && !T) return et();
-      if (!k || b) return ei();
-      if (m) return eh();
-      if (p) return ep();
-      if (Q)
-        if ($) return e_();
-        else return ei();
-      return n === el.AW.ORBS ? em() : es()
+    eE = () => {
+      if (p && !d && !T) return en();
+      if (!U || b) return es();
+      if (m) return em();
+      if (p) return eh();
+      if ($)
+        if (et) return ep();
+        else return es();
+      return n === el.AW.ORBS ? eg() : e_()
     };
   return (0, r.jsxs)("div", {
     className: ef.detailsWrapper,
     children: [(0, r.jsx)("div", {
       className: ef.innerBlur,
-      children: en()
+      children: er()
     }), (0, r.jsx)("div", {
       className: ef.innerHover,
       children: (0, r.jsxs)(h.hE2, {
         wrap: false,
         fullWidth: true,
-        children: [eg(), er()]
+        children: [eE(), ei()]
       })
     })]
   })

@@ -8,7 +8,7 @@ require.d(exports, {
   G1: () => g,
   IC: () => H,
   OT: () => W,
-  Qf: () => en,
+  Qf: () => er,
   Vw: () => b,
   WW: () => z,
   XM: () => y,
@@ -16,20 +16,21 @@ require.d(exports, {
   Y: () => Z,
   Yq: () => K,
   bl: () => U,
-  eu: () => X,
+  eu: () => Q,
   f_: () => T,
   gc: () => O,
-  hC: () => et,
+  hC: () => en,
   iC: () => L,
+  iP: () => X,
   jT: () => G,
-  jm: () => ee,
+  jm: () => et,
   mO: () => F,
-  ne: () => $,
+  ne: () => ee,
   qS: () => E,
   ql: () => I,
   rN: () => A,
   uV: () => w,
-  x0: () => Q,
+  x0: () => J,
   x6: () => q,
   yn: () => k
 }), require("./539854.js"), require("./388685.js"), require("./642613.js");
@@ -216,12 +217,13 @@ let g = e => (null == e ? true : e.premiumType) != null,
     return null != t && new Date().getTime() < t
   },
   q = e => (null == e ? true : e.type) === i.Z.BUNDLE,
-  X = (e, t, n) => {
+  X = e => !!e && !f.w2V.has(e),
+  Q = (e, t, n) => {
     if (q(e)) return v(e);
     let r = I(e, t ? n ? f.tuJ.MOBILE : f.tuJ.DEFAULT : n ? f.tuJ.MOBILE_PREMIUM_TIER_2 : f.tuJ.PREMIUM_TIER_2);
     return null == r ? true : r.amount
   },
-  Q = (e, t) => {
+  J = (e, t) => {
     let n = [];
     for (let r of e) {
       let e = r.heroRanking;
@@ -231,16 +233,16 @@ let g = e => (null == e ? true : e.premiumType) != null,
           if (null != e && !q(e) && (n.push(r), n.length >= d.K8)) return n
         }
     }
-    return J(n)
+    return $(n)
   },
-  J = e => {
+  $ = e => {
     if (e.length < d.K8) {
       let t = d.HU.slice(0, d.K8 - e.length);
       return e.concat(t)
     }
     return e
   },
-  $ = e => {
+  ee = e => {
     let {
       product: t,
       isPartiallyOwnedBundle: n,
@@ -248,7 +250,7 @@ let g = e => (null == e ? true : e.premiumType) != null,
     } = e;
     return !n && !(d.Vt.ORB_PROFILE_BADGE === (null == t ? true : t.skuId) && r)
   },
-  ee = (e, t) => {
+  et = (e, t) => {
     switch (e) {
       case i.Z.AVATAR_DECORATION:
         return "avatar decoration";
@@ -268,13 +270,13 @@ let g = e => (null == e ? true : e.premiumType) != null,
         return "unknown"
     }
   },
-  et = (e, t) => e.sort((e, n) => {
+  en = (e, t) => e.sort((e, n) => {
     var r, i;
     let a = b(e, t, false),
       o = b(n, t, false);
     return (null != (r = null == a ? true : a.amount) ? r : 0) - (null != (i = null == o ? true : o.amount) ? i : 0)
   }),
-  en = (e, t) => {
+  er = (e, t) => {
     if (0 === t.length || 0 === e.length) return e;
     let n = t.map(e => e.discountId);
     return e.sort((e, t) => {

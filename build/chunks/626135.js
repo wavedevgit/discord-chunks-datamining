@@ -349,6 +349,10 @@ let Z = {
   [Chunk981631.rMx.ACTIVITY_PANEL_SDK_LINK_VIEWED]: {
     throttlePeriod: j,
     throttleKeys: e => [e.application_id]
+  },
+  [Chunk981631.rMx.LIBDISCORE_SLOW_TIMERS]: {
+    throttlePeriod: L,
+    throttleKeys: () => []
   }
 };
 
