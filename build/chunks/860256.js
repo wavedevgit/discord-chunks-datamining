@@ -27,7 +27,7 @@ class s {
   }
   hasTransparency() {
     if (4 !== this.img.ctype && 6 !== this.img.ctype) returnfalse;
-    let e = new Uint8Array(i().toRGBA8(this.img));
+    let e = new Uint8Array(i().toRGBA8(this.img)[0]);
     for (let t = 3; exports < module.length; t += 4)
       if (module[exports] < 255) returntrue;
     returnfalse
