@@ -1,4 +1,4 @@
-/** Chunk was on 28023 **/
+/** Chunk was on 96888 **/
 /** chunk id: 988645, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => v
@@ -7,188 +7,129 @@ var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk990547 = require("./990547.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk347935 = require("./347935.js"),
   Chunk957115 = require("./957115.js"),
   Chunk328171 = require("./328171.js"),
-  Chunk891802 = require("./891802.js"),
-  Chunk332664 = require("./332664.jsx"),
   Chunk13137 = require("./13137.jsx"),
-  Chunk774378 = require("./774378.js"),
   Chunk882542 = require("./882542.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
   Chunk531578 = require("./531578.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk178167 = require("./178167.js");
-let h = [Chunk774378.b.OTHER];
 
 function v(e) {
   let {
     onClose: t,
     transitionState: v,
-    analyticsData: y
+    analyticsData: _
   } = e, {
-    showVibesHoneypot: j
-  } = (0, c.X)({
+    surveyEmojiKind: m
+  } = (0, o.R)({
     location: "VoiceCallFeedback"
-  }), {
-    showRefreshedCallTaxonomy: w
-  } = (0, l.D)({
-    location: "VoiceCallFeedback"
-  }), {
-    surveyEmojiKind: x
-  } = (0, s.R)({
-    location: "VoiceCallFeedback"
-  });
-
-  function C(e) {
-    var t, r, l, s;
-    let {
-      dontShowAgain: c,
-      rating: u,
-      feedback: d
-    } = e;
-    if (c && (0, a.Uv)({
-        feedbackType: _.nw.VOICE,
+  }), E = f.intl.string(f.t.Ss6tlZ), p = f.intl.string(f.t.tLi4cX), g = {
+    impressionName: l.ImpressionNames.VOICE_FEEDBACK_MODAL,
+    impressionProperties: {
+      rtc_connection_id: _.rtc_connection_id,
+      media_session_id: _.media_session_id
+    }
+  }, h = {
+    value: b.tX.CONNECTION,
+    label: f.intl.string(O.default.FVhMw8),
+    problemsHeader: f.intl.string(f.t.FJmoxM),
+    problemOptions: (0, r.Z1)(),
+    freeformConfig: {
+      value: b.T_.FREEFORM,
+      label: f.intl.string(f.t["emlT9/"])
+    }
+  }, S = {
+    value: b.tX.AUDIO,
+    label: f.intl.string(O.default.PL2l6O),
+    problemsHeader: f.intl.string(f.t.FJmoxM),
+    problemOptions: (0, r.w9)({
+      isMobile: false
+    }),
+    freeformConfig: {
+      value: b.b9.FREEFORM,
+      label: f.intl.string(f.t["emlT9/"])
+    }
+  }, N = {
+    value: b.tX.VIDEO,
+    label: f.intl.string(O.default["0WFzPj"]),
+    problemsHeader: f.intl.string(f.t.FJmoxM),
+    problemOptions: (0, r.NX)(),
+    freeformConfig: {
+      value: b.ct.FREEFORM,
+      label: f.intl.string(f.t["emlT9/"])
+    }
+  }, j = {
+    value: b.tX.PEOPLE,
+    label: f.intl.string(O.default.Moa3W1),
+    problemsHeader: f.intl.string(f.t.FJmoxM),
+    problemOptions: (0, r.hP)(),
+    freeformConfig: {
+      value: b.s_.FREEFORM,
+      label: f.intl.string(f.t["emlT9/"])
+    }
+  };
+  return (0, a.jsx)(s.Z, {
+    onMount: () => {
+      c.default.track(d.rMx.OPEN_MODAL, {
+        type: "voice",
+        source: "Feedback Modal"
+      })
+    },
+    onSubmit: function(e) {
+      var t, l;
+      let {
+        dontShowAgain: o,
+        rating: s,
+        feedback: c,
+        category: O,
+        problem: v
+      } = e;
+      o && (0, r.Uv)({
+        feedbackType: b.nw.VOICE,
         location: "VoiceCallFeedbackModal"
-      }), null != u) {
-      if (w) {
-        let {
-          category: n,
-          problem: o
-        } = e;
-        (0, p.Z)(f.rMx.CALL_REPORT_PROBLEM, {
-          rating: u,
-          category: n,
-          reasonDescription: null != (t = null == o ? true : o.value) ? t : null,
-          variant: null != (r = null == o ? true : o.variant) ? r : null,
-          feedback: d,
-          analyticsData: y
-        })
-      } else {
-        let {
-          problem: t
-        } = e;
-        (0, p.Z)(f.rMx.CALL_REPORT_PROBLEM, {
-          rating: u,
-          reasonCode: null != (l = null == t ? true : t.code) ? l : null,
-          reasonDescription: null != (s = null == t ? true : t.value) ? s : null,
-          feedback: d,
-          analyticsData: y
-        })
-      }
-      null != e.problem && (0, i.ZDy)(async () => {
+      }), null != s && ((0, u.Z)(d.rMx.CALL_REPORT_PROBLEM, {
+        rating: s,
+        category: O,
+        reasonDescription: null != (t = null == v ? true : v.value) ? t : null,
+        variant: null != (l = null == v ? true : v.variant) ? l : null,
+        feedback: c,
+        analyticsData: _
+      }), null != v && (0, i.ZDy)(async () => {
         let {
           default: e
         } = await n.e("14466").then(n.bind(n, 729328));
-        return t => (0, o.jsx)(e, function(e) {
+        return t => (0, a.jsx)(e, function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
-              o = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (o = o.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              a = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
               return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), o.forEach(function(t) {
-              var o;
-              o = n[t], t in e ? Object.defineProperty(e, t, {
-                value: o,
+            }))), a.forEach(function(t) {
+              var a;
+              a = n[t], t in e ? Object.defineProperty(e, t, {
+                value: a,
                 enumerable: true,
                 configurable: true,
                 writable: true
-              }) : e[t] = o
+              }) : e[t] = a
             })
           }
           return e
         }({
-          body: O.intl.string(O.t["d9+vQ0"])
+          body: f.intl.string(f.t["d9+vQ0"])
         }, t))
-      })
-    }
-  }
-  let E = O.intl.string(O.t.Ss6tlZ),
-    P = O.intl.string(O.t.tLi4cX),
-    S = {
-      impressionName: r.ImpressionNames.VOICE_FEEDBACK_MODAL,
-      impressionProperties: {
-        rtc_connection_id: y.rtc_connection_id,
-        media_session_id: y.media_session_id
-      }
-    };
-  if (w) {
-    let e = {
-        value: _.tX.CONNECTION,
-        label: O.intl.string(g.default.FVhMw8),
-        problemsHeader: O.intl.string(O.t.FJmoxM),
-        problemOptions: (0, a.Z1)(),
-        freeformConfig: {
-          value: _.T_.FREEFORM,
-          label: O.intl.string(O.t["emlT9/"])
-        }
-      },
-      n = {
-        value: _.tX.AUDIO,
-        label: O.intl.string(g.default.PL2l6O),
-        problemsHeader: O.intl.string(O.t.FJmoxM),
-        problemOptions: (0, a.w9)({
-          isMobile: false
-        }),
-        freeformConfig: {
-          value: _.b9.FREEFORM,
-          label: O.intl.string(O.t["emlT9/"])
-        }
-      },
-      r = {
-        value: _.tX.VIDEO,
-        label: O.intl.string(g.default["0WFzPj"]),
-        problemsHeader: O.intl.string(O.t.FJmoxM),
-        problemOptions: (0, a.NX)(),
-        freeformConfig: {
-          value: _.ct.FREEFORM,
-          label: O.intl.string(O.t["emlT9/"])
-        }
-      },
-      i = {
-        value: _.tX.PEOPLE,
-        label: O.intl.string(g.default.Moa3W1),
-        problemsHeader: O.intl.string(O.t.FJmoxM),
-        problemOptions: (0, a.hP)(),
-        freeformConfig: {
-          value: _.s_.FREEFORM,
-          label: O.intl.string(O.t["emlT9/"])
-        }
-      };
-    return (0, o.jsx)(d.Z, {
-      onMount: () => {
-        m.default.track(f.rMx.OPEN_MODAL, {
-          type: "voice",
-          source: "Feedback Modal"
-        })
-      },
-      onSubmit: C,
-      onClose: t,
-      ratingHeader: E,
-      ratingEmojiKind: x,
-      ratingBody: P,
-      categoriesHeader: O.intl.string(g.default["tq859/"]),
-      optionsTree: [e, n, r, i],
-      impression: S,
-      transitionState: v
-    })
-  }
-  return (0, o.jsx)(u.Z, {
-    modalType: "voice",
-    header: E,
-    ratingEmojiKind: x,
-    body: P,
-    impression: S,
-    problemTitle: O.intl.string(O.t.FJmoxM),
-    problems: (0, b.Z)({
-      isMobile: false,
-      showVibesHoneypot: j
-    }),
-    freeformNeededProblems: h,
-    onSubmit: C,
+      }))
+    },
     onClose: t,
-    transitionState: v,
-    otherKey: b.b.OTHER
+    ratingHeader: E,
+    ratingEmojiKind: m,
+    ratingBody: p,
+    categoriesHeader: f.intl.string(O.default["tq859/"]),
+    optionsTree: [h, S, N, j],
+    impression: g,
+    transitionState: v
   })
 }

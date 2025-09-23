@@ -1,5 +1,5 @@
-/** Chunk was on 72777 **/
-/** chunk id: 875169, original params: e,t,o (module,exports,require) **/
+/** Chunk was on 96888 **/
+/** chunk id: 875169, original params: e,t,n (module,exports,require) **/
 module.exports = {
   ratingSelector: "ratingSelector__5c58b",
   textLabels: "textLabels__5c58b",

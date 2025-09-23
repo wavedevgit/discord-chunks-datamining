@@ -1,60 +1,60 @@
-/** Chunk was on 31615 **/
-/** chunk id: 882542, original params: e,t,o (module,exports,require) **/
+/** Chunk was on 96888 **/
+/** chunk id: 882542, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => c
+  Z: () => r
 });
 var Chunk311473 = require("./311473.js"),
   Chunk131951 = require("./131951.js"),
   Chunk626135 = require("./626135.js");
-async function c(e, t) {
+async function r(e, t) {
   let {
-    rating: o,
-    category: c,
-    reasonCode: l,
-    reasonDescription: r,
-    variant: _,
-    feedback: s,
+    rating: n,
+    category: r,
+    reasonCode: o,
+    reasonDescription: s,
+    variant: u,
+    feedback: c,
     analyticsData: d
-  } = t, u = n.Z.getSettings(), b = n.Z.getInputDeviceId(), m = n.Z.getInputDevices()[b], p = n.Z.getOutputDeviceId(), v = n.Z.getOutputDevices()[p], g = n.Z.getVideoDeviceId(), h = n.Z.getVideoDevices()[g], f = n.Z.getNoiseCancellation(), y = n.Z.getMediaEngine().getAudioSubsystem(), O = n.Z.getMediaEngine().getAudioLayer(), C = await i.Z.getKrispModel();
-  a.default.track(e, function(e) {
+  } = t, b = l.Z.getSettings(), f = l.Z.getInputDeviceId(), O = l.Z.getInputDevices()[f], v = l.Z.getOutputDeviceId(), _ = l.Z.getOutputDevices()[v], m = l.Z.getVideoDeviceId(), E = l.Z.getVideoDevices()[m], p = l.Z.getNoiseCancellation(), g = l.Z.getMediaEngine().getAudioSubsystem(), h = l.Z.getMediaEngine().getAudioLayer(), S = await a.Z.getKrispModel();
+  i.default.track(e, function(e) {
     for (var t = 1; t < arguments.length; t++) {
-      var o = null != arguments[t] ? arguments[t] : {},
-        i = Object.keys(o);
-      "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(o).filter(function(e) {
-        return Object.getOwnPropertyDescriptor(o, e).enumerable
-      }))), i.forEach(function(t) {
-        var i;
-        i = o[t], t in e ? Object.defineProperty(e, t, {
-          value: i,
+      var n = null != arguments[t] ? arguments[t] : {},
+        a = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        return Object.getOwnPropertyDescriptor(n, e).enumerable
+      }))), a.forEach(function(t) {
+        var a;
+        a = n[t], t in e ? Object.defineProperty(e, t, {
+          value: a,
           enumerable: true,
           configurable: true,
           writable: true
-        }) : e[t] = i
+        }) : e[t] = a
       })
     }
     return e
   }({
-    rating: null != o ? o : "no response",
-    category: c,
-    reason_code: l,
-    reason_description: r,
-    reason_variant: _,
-    feedback: s,
-    audio_input_mode: u.mode,
-    automatic_audio_input_sensitivity_enabled: u.modeOptions.autoThreshold,
-    audio_input_sensitivity: u.modeOptions.threshold,
-    vad_use_advanced_voice_activity: u.modeOptions.vadUseKrisp,
-    echo_cancellation_enabled: u.echoCancellation,
-    noise_suppression_enabled: u.noiseSuppression,
-    automatic_gain_control_enabled: u.automaticGainControl,
-    voice_output_volume: u.outputVolume,
-    noise_cancellation_enabled: f,
-    input_device_name: null == m ? true : m.name,
-    output_device_name: null == v ? true : v.name,
-    video_device_name: null == h ? true : h.name,
-    audio_subsystem: y,
-    audio_layer: O,
-    automatic_audio_subsystem: u.automaticAudioSubsystem,
-    krisp_nc_model: C
+    rating: null != n ? n : "no response",
+    category: r,
+    reason_code: o,
+    reason_description: s,
+    reason_variant: u,
+    feedback: c,
+    audio_input_mode: b.mode,
+    automatic_audio_input_sensitivity_enabled: b.modeOptions.autoThreshold,
+    audio_input_sensitivity: b.modeOptions.threshold,
+    vad_use_advanced_voice_activity: b.modeOptions.vadUseKrisp,
+    echo_cancellation_enabled: b.echoCancellation,
+    noise_suppression_enabled: b.noiseSuppression,
+    automatic_gain_control_enabled: b.automaticGainControl,
+    voice_output_volume: b.outputVolume,
+    noise_cancellation_enabled: p,
+    input_device_name: null == O ? true : O.name,
+    output_device_name: null == _ ? true : _.name,
+    video_device_name: null == E ? true : E.name,
+    audio_subsystem: g,
+    audio_layer: h,
+    automatic_audio_subsystem: b.automaticAudioSubsystem,
+    krisp_nc_model: S
   }, d))
 }

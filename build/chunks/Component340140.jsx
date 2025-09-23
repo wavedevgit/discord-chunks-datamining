@@ -1,7 +1,7 @@
 /** Chunk was on 18912 **/
 /** chunk id: 340140, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  default: () => g
+  default: () => p
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -23,7 +23,7 @@ function f(t, e, n) {
     writable: true
   }) : t[e] = n, t
 }
-class p extends Chunk647438.PureComponent {
+class g extends Chunk647438.PureComponent {
   render() {
     let {
       isStreamer: t,
@@ -59,8 +59,7 @@ class p extends Chunk647438.PureComponent {
           placeholder: Chunk388032.intl.string(Chunk388032.t.U0kGk5),
           options: (0, Chunk538211.Z)({
             isStreamer: module,
-            isEndStream: false,
-            showVibesHoneypot: false
+            isEndStream: false
           }),
           onChange: this.handleChanged,
           value: Chunk647438,
@@ -132,4 +131,4 @@ class p extends Chunk647438.PureComponent {
     })
   }
 }
-let g = p
+let p = g

@@ -1,15 +1,14 @@
 /** Chunk was on 30042 **/
 /** chunk id: 326279, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Gl: () => l,
-  Wz: () => o,
-  mo: () => a,
-  oI: () => r
+  Gl: () => o,
+  Wz: () => l,
+  mo: () => i
 });
 var Chunk570140 = require("./570140.js");
 
-function a(e, t, n) {
-  i.Z.dispatch({
+function i(e, t, n) {
+  a.Z.dispatch({
     type: "CONNECTED_DEVICE_SWITCH",
     displayName: e,
     connectedDevicePreference: t,
@@ -17,22 +16,16 @@ function a(e, t, n) {
   })
 }
 
-function o(e) {
-  i.Z.dispatch({
+function l(e) {
+  a.Z.dispatch({
     type: "CONNECTED_DEVICE_DONT_SWITCH",
     displayName: e
   })
 }
 
-function l(e) {
-  i.Z.dispatch({
+function o(e) {
+  a.Z.dispatch({
     type: "CONNECTED_DEVICE_IGNORE",
     displayName: e
-  })
-}
-
-function r() {
-  Chunk570140.Z.dispatch({
-    type: "CONNECTED_DEVICE_NEVER_SHOW_MODAL"
   })
 }

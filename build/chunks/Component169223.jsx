@@ -88,7 +88,7 @@ class I extends Chunk178635.Z {
         (0, a.ZDy)(async () => {
           let {
             default: e
-          } = await Promise.all([n.e("26860"), n.e("47672"), n.e("28023")]).then(n.bind(n, 988645));
+          } = await Promise.all([n.e("26860"), n.e("96888")]).then(n.bind(n, 988645));
           return n => (0, r.jsx)(e, v(y({}, n), {
             analyticsData: t
           }))

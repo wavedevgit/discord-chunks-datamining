@@ -47,9 +47,9 @@ function L(e) {
     onClose: y,
     impression: U,
     freeformDescription: k
-  } = e, Z = (0, o.Z)(I), [B, G] = l.useState(false), [w, H] = l.useState(P), [J, z] = l.useState(null), [K, Y] = l.useState(d().shuffle(I)), [Q, V] = l.useState(""), X = (0, O.Dt)(), q = (0, v.Z)(w), W = (0, v.Z)(B), ee = (0, v.Z)(J), et = (0, v.Z)(F), en = (0, v.Z)(Q), ea = null;
-  return null == w ? ea = "RATING" : w !== m.aZ.GOOD && null == J ? ea = "PROBLEM" : null != J && M.includes(J.value) && (ea = "FREEFORM"), l.useEffect(() => {
-    d().isEqual(Z, I) || Y((0, S.Bi)(I, C))
+  } = e, Z = (0, o.Z)(I), [B, G] = l.useState(false), [H, w] = l.useState(P), [J, z] = l.useState(null), [Y, K] = l.useState(d().shuffle(I)), [Q, V] = l.useState(""), X = (0, O.Dt)(), q = (0, v.Z)(H), W = (0, v.Z)(B), ee = (0, v.Z)(J), et = (0, v.Z)(F), en = (0, v.Z)(Q), ea = null;
+  return null == H ? ea = "RATING" : H !== m.aZ.GOOD && null == J ? ea = "PROBLEM" : null != J && M.includes(J.value) && (ea = "FREEFORM"), l.useEffect(() => {
+    d().isEqual(Z, I) || K((0, S.Bi)(I, C))
   }, [I, Z, C]), (0, c.ZP)(() => (N.default.track(_.rMx.OPEN_MODAL, {
     type: n,
     source: "Feedback Modal"
@@ -86,9 +86,9 @@ function L(e) {
         ratingOptions: T,
         emojiKind: x,
         textLabels: j,
-        selectedRating: w,
+        selectedRating: H,
         onChangeRating: function(e) {
-          H(e), e === m.aZ.GOOD && y()
+          w(e), e === m.aZ.GOOD && y()
         }
       })
     }), "PROBLEM" === ea && (0, a.jsx)(b.hzk, {
@@ -99,7 +99,7 @@ function L(e) {
           [R.marginBottom16]: A
         }),
         children: (0, a.jsx)(f.Z, {
-          options: K,
+          options: Y,
           onClick: function(e) {
             z(e), M.includes(e.value) || y()
           },
@@ -145,7 +145,7 @@ function L(e) {
           size: "sm",
           text: p.intl.string(p.t["13/7kZ"]),
           onClick: () => {
-            "FREEFORM" === ea ? (z(null), V("")) : H(null)
+            "FREEFORM" === ea ? (z(null), V("")) : w(null)
           }
         }), (0, a.jsx)(b.zxk, {
           variant: "primary",
