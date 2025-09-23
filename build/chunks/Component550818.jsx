@@ -50,16 +50,16 @@ function I(e) {
     channel: n,
     onHide: I
   } = e, E = (0, g.ZP)(t.id), S = (0, o.ZP)(), Z = (0, a.e7)([u.Z], () => u.Z.isBlocked(t.id)), {
-    analyticsLocations: P
-  } = (0, d.ZP)(Z ? c.Z.BLOCKED_PROFILE_PANEL : c.Z.IGNORED_PROFILE_PANEL), T = (0, h.ZB)({
+    analyticsLocations: T
+  } = (0, d.ZP)(Z ? c.Z.BLOCKED_PROFILE_PANEL : c.Z.IGNORED_PROFILE_PANEL), P = (0, h.ZB)({
     layout: "SIDEBAR",
     userId: t.id,
     channelId: n.id
   }), N = i.useRef(null);
   return (0, r.jsx)(d.Gt, {
-    value: P,
+    value: T,
     children: (0, r.jsx)(h.Mt, {
-      value: T,
+      value: P,
       fetchStartedAt: null == E ? true : E.fetchStartedAt,
       fetchEndedAt: null == E ? true : E.fetchEndedAt,
       isLoaded: null == E ? true : E.isLoaded,
@@ -99,16 +99,16 @@ function I(e) {
                   onClick: () => {
                     I(), (0, f.pQ)(C({
                       action: Z ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
-                      analyticsLocations: P
-                    }, T))
+                      analyticsLocations: T
+                    }, P))
                   }
                 }), (0, r.jsx)(y.Z, {
                   userId: t.id,
                   onClick: () => {
                     I(), (0, f.pQ)(C({
                       action: "DONT_SHOW_AGAIN_IGNORED_PROFILE",
-                      analyticsLocations: P
-                    }, T))
+                      analyticsLocations: T
+                    }, P))
                   }
                 })]
               })]

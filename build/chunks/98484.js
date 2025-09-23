@@ -9,6 +9,5 @@ module.exports = {
   title: "title__44df5",
   button: "button__44df5",
   buttonContainer: "buttonContainer__44df5",
-  innerButton: "innerButton__44df5",
   countdown: "countdown__44df5"
 }

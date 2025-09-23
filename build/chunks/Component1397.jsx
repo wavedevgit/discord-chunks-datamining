@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk512722 = require("./512722.js"),
   a = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
-  Chunk755721 = require("./755721.js"),
+  Chunk693789 = require("./693789.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk893776 = require("./893776.js"),
   Chunk528963 = require("./528963.js"),
@@ -106,81 +106,81 @@ class W extends Chunk647438.PureComponent {
       notEmailVerified: l,
       newMember: a,
       memberDeadline: o,
-      newAccount: u,
-      accountDeadline: d,
-      theme: p,
-      children: h,
-      canSendMessages: f,
-      channelFollowingUsersSeen: m,
-      showLurkerModeUpsellPopout: g,
-      showMemberVerificationModal: b,
-      useReducedMotion: C,
-      isStaff: _,
-      guildJoinRequest: v,
-      showLinkedLobbyApplicationLoadingIndicator: x,
-      requiredLinkedLobbyApplication: O
+      newAccount: s,
+      accountDeadline: u,
+      theme: d,
+      children: p,
+      canSendMessages: h,
+      channelFollowingUsersSeen: f,
+      showLurkerModeUpsellPopout: m,
+      showMemberVerificationModal: g,
+      useReducedMotion: b,
+      isStaff: C,
+      guildJoinRequest: _,
+      showLinkedLobbyApplicationLoadingIndicator: v,
+      requiredLinkedLobbyApplication: x
     } = this.props, {
-      shouldShowLurkerModeUpsellPopout: j,
-      shouldShowLurkerModeSuccessPopout: E
-    } = this.state, S = {
-      theme: Chunk749210,
-      useReducedMotion: Chunk983736
+      shouldShowLurkerModeUpsellPopout: O,
+      shouldShowLurkerModeSuccessPopout: j
+    } = this.state, E = {
+      theme: Chunk528963,
+      useReducedMotion: Chunk305325
     };
-    if (module && !Chunk391650) {
-      if (Chunk144114.message = Chunk388032.intl.string(Chunk388032.t.Hl0Mqq), null != Chunk693546 && Chunk693546 >= 1e3) {
-        let e = 1e3 * Math.floor(Chunk693546 / 1e3);
-        Chunk144114.subtitle = Chunk388032.intl.formatToPlainString(Chunk388032.t.C5bgrK, {
+    if (module && !Chunk607070) {
+      if (Chunk33154.message = Chunk388032.intl.string(Chunk388032.t.Hl0Mqq), null != Chunk391650 && Chunk391650 >= 1e3) {
+        let e = 1e3 * Math.floor(Chunk391650 / 1e3);
+        Chunk33154.subtitle = Chunk388032.intl.formatToPlainString(Chunk388032.t.C5bgrK, {
           count: module.toLocaleString()
         })
       }
-      Chunk144114.buttonText = Chunk388032.intl.string(Chunk388032.t["3aOv+v"]), Chunk144114.onButtonClick = this.handleFollowAnnouncement, exports && (Chunk144114.onSecondaryButtonClick = this.handleJoinServer, Chunk144114.secondaryButtonText = Chunk388032.intl.string(Chunk388032.t["RLch7+"]))
-    } else if (require) Chunk144114.message = Chunk388032.intl.string(Chunk388032.t["Eg3/c3"]), Chunk144114.buttonText = Chunk388032.intl.string(Chunk388032.t.fiNVio), Chunk144114.onButtonClick = Chunk305325 ? this.handleShowMemberVerification : this.handleClaimAccount;
-    else if (Chunk305325) switch (null == Chunk270801 ? true : Chunk270801.applicationStatus) {
+      Chunk33154.buttonText = Chunk388032.intl.string(Chunk388032.t["3aOv+v"]), Chunk33154.onButtonClick = this.handleFollowAnnouncement, exports && (Chunk33154.onSecondaryButtonClick = this.handleJoinServer, Chunk33154.secondaryButtonText = Chunk388032.intl.string(Chunk388032.t["RLch7+"]))
+    } else if (require) Chunk33154.message = Chunk388032.intl.string(Chunk388032.t["Eg3/c3"]), Chunk33154.buttonText = Chunk388032.intl.string(Chunk388032.t.fiNVio), Chunk33154.onButtonClick = Chunk881952 ? this.handleShowMemberVerification : this.handleClaimAccount;
+    else if (Chunk881952) switch (null == Chunk937111 ? true : Chunk937111.applicationStatus) {
         case Chunk246364.wB.SUBMITTED:
-          Chunk144114.message = Chunk388032.intl.string(Chunk388032.t["5iLvS0"]), Chunk144114.subtitle = Chunk388032.intl.string(Chunk388032.t.FdsK4u), Chunk144114.buttonText = Chunk388032.intl.string(Chunk388032.t.mqtdmZ), Chunk144114.onButtonClick = this.handleCancelApplication;
+          Chunk33154.message = Chunk388032.intl.string(Chunk388032.t["5iLvS0"]), Chunk33154.subtitle = Chunk388032.intl.string(Chunk388032.t.FdsK4u), Chunk33154.buttonText = Chunk388032.intl.string(Chunk388032.t.mqtdmZ), Chunk33154.onButtonClick = this.handleCancelApplication;
           break;
         case Chunk246364.wB.REJECTED:
-          Chunk144114.message = Chunk388032.intl.string(Chunk388032.t.lk30cX), Chunk144114.buttonText = Chunk388032.intl.string(Chunk388032.t["8RrsHh"]), Chunk144114.onButtonClick = this.handleViewApplicationRejection;
+          Chunk33154.message = Chunk388032.intl.string(Chunk388032.t.lk30cX), Chunk33154.buttonText = Chunk388032.intl.string(Chunk388032.t["8RrsHh"]), Chunk33154.onButtonClick = this.handleViewApplicationRejection;
           break;
         default:
-          Chunk144114.message = Chunk388032.intl.string(Chunk388032.t.rEBKvr), Chunk144114.buttonText = Chunk388032.intl.string(Chunk388032.t["r8/DT0"]), Chunk144114.buttonColor = Chunk755721.Tt.BRAND, Chunk144114.onButtonClick = this.handleShowMemberVerification
-      } else if (Chunk652730 || null == Chunk41776) Chunk647438 && !Chunk937111 ? (Chunk144114.message = Chunk388032.intl.string(Chunk388032.t["2dThMD"]), Chunk144114.buttonText = Chunk388032.intl.string(Chunk388032.t["50gfOj"]), Chunk144114.onButtonClick = this.handleVerifyPhone) : Chunk512722 ? (Chunk144114.message = Chunk388032.intl.string(Chunk388032.t.FkGPS0), Chunk144114.buttonText = Chunk388032.intl.string(Chunk388032.t.lm1UKi), Chunk144114.onButtonClick = this.handleResendVerification) : a ? (Chunk144114.message = Chunk388032.intl.formatToPlainString(Chunk388032.t.IH7RMD, {
+          Chunk33154.message = Chunk388032.intl.string(Chunk388032.t.rEBKvr), Chunk33154.buttonText = Chunk388032.intl.string(Chunk388032.t["r8/DT0"]), Chunk33154.buttonVariant = "primary", Chunk33154.onButtonClick = this.handleShowMemberVerification
+      } else if (Chunk270801 || null == Chunk652730) Chunk647438 && !Chunk983736 ? (Chunk33154.message = Chunk388032.intl.string(Chunk388032.t["2dThMD"]), Chunk33154.buttonText = Chunk388032.intl.string(Chunk388032.t["50gfOj"]), Chunk33154.onButtonClick = this.handleVerifyPhone) : Chunk512722 ? (Chunk33154.message = Chunk388032.intl.string(Chunk388032.t.FkGPS0), Chunk33154.buttonText = Chunk388032.intl.string(Chunk388032.t.lm1UKi), Chunk33154.onButtonClick = this.handleResendVerification) : a ? (Chunk33154.message = Chunk388032.intl.formatToPlainString(Chunk388032.t.IH7RMD, {
         min: Chunk981631.YeM.MEMBER_AGE
-      }), Chunk144114.countdown = Chunk442837) : Chunk893776 && (Chunk144114.message = Chunk388032.intl.formatToPlainString(Chunk388032.t["2JA2GB"], {
+      }), Chunk33154.countdown = Chunk442837) : Chunk693789 && (Chunk33154.message = Chunk388032.intl.formatToPlainString(Chunk388032.t["2JA2GB"], {
         min: Chunk981631.YeM.ACCOUNT_AGE
-      }), Chunk144114.countdown = Chunk528963);
+      }), Chunk33154.countdown = Chunk893776);
       else {
-        var P;
-        Chunk144114.imageSrc = null != (P = Chunk41776.getIconURL(Chunk701488.Si.SMALL)) ? Chunk703656 : true, Chunk144114.message = Chunk388032.intl.format(Chunk388032.t.EvDn1N, {
-          name: Chunk41776.name
-        }), null != Chunk41776.connectionEntrypointUrl && (Chunk144114.buttonText = Chunk388032.intl.string(Chunk388032.t.S0W8Z2), Chunk144114.onButtonClick = () => {
-          window.open(Chunk41776.connectionEntrypointUrl, "_blank")
+        var S;
+        Chunk33154.imageSrc = null != (S = Chunk652730.getIconURL(Chunk701488.Si.SMALL)) ? Chunk144114 : true, Chunk33154.message = Chunk388032.intl.format(Chunk388032.t.EvDn1N, {
+          name: Chunk652730.name
+        }), null != Chunk652730.connectionEntrypointUrl && (Chunk33154.buttonText = Chunk388032.intl.string(Chunk388032.t.S0W8Z2), Chunk33154.onButtonClick = () => {
+          window.open(Chunk652730.connectionEntrypointUrl, "_blank")
         })
       } return (0, Chunk951288.jsx)(Chunk481060.yRy, {
       targetElementRef: this.textAreaContainerRef,
       position: "top",
       align: "left",
-      shouldShow: Chunk33154,
+      shouldShow: Chunk657352,
       onRequestClose: () => this.setState({
         shouldShowLurkerModeSuccessPopout: false
       }),
       renderPopout: this.renderSuccessPopout,
-      children: e => (0, r.jsx)(L.Z, z(G({}, S), {
+      children: e => (0, r.jsx)(L.Z, z(G({}, E), {
         children: (0, r.jsxs)("div", {
           ref: this.textAreaContainerRef,
-          children: [this.renderMemberVerificationSuccessModal(), g ? (0, r.jsx)(c.yRy, {
+          children: [this.renderMemberVerificationSuccessModal(), m ? (0, r.jsx)(c.yRy, {
             targetElementRef: this.upsellTargetRef,
             renderPopout: this.renderLurkerModeUpsellPopout,
-            shouldShow: j,
+            shouldShow: O,
             position: "top",
             children: e => (0, r.jsx)(c.P3F, z(G({
               innerRef: this.upsellTargetRef
             }, e), {
               className: V.clickableChannelTextArea,
               onClick: this.handleTextAreaClick,
-              children: h
+              children: p
             }))
-          }) : h]
+          }) : p]
         })
       }))
     })
@@ -209,7 +209,7 @@ class W extends Chunk647438.PureComponent {
         confirmText: F.intl.string(F.t["cY+Ooa"]),
         cancelText: F.intl.string(F.t["ETE/oK"]),
         onConfirm: () => m.Z.removeGuildJoinRequest(e.id),
-        confirmButtonColor: s.zx.Colors.BRAND
+        confirmButtonColor: s.Tt.BRAND
       }, t), {
         children: (0, r.jsx)(c.Text, {
           variant: "text-md/normal",
@@ -253,7 +253,7 @@ class W extends Chunk647438.PureComponent {
       null != t && (0, c.h7j)(e => (0, r.jsx)(c.ConfirmModal, z(G({}, e), {
         header: F.intl.string(F.t.LykQYm),
         confirmText: F.intl.string(F.t.BddRzc),
-        confirmButtonColor: s.zx.Colors.BRAND,
+        confirmButtonColor: s.Tt.BRAND,
         children: (0, r.jsx)(c.Text, {
           variant: "text-md/normal",
           children: F.intl.format(F.t.azKEPz, {

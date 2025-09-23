@@ -31,7 +31,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk285421 = require("./285421.js");
 
-function T(e) {
+function P(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -73,8 +73,8 @@ let R = Chunk647438.memo(function(e) {
     });
     return (0, r.jsxs)(g.ZP, {
       toolbar: i,
-      className: a()(P.headerContainer, {
-        [P.chatOpen]: n
+      className: a()(T.headerContainer, {
+        [T.chatOpen]: n
       }),
       children: [(0, r.jsx)(g.ZP.Icon, {
         icon: d.V9,
@@ -123,7 +123,7 @@ let R = Chunk647438.memo(function(e) {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("98783"), n.e("8982"), n.e("7717"), n.e("19848")]).then(n.bind(n, 757387));
-        return t => (0, r.jsx)(e, N(T({}, t), {
+        return t => (0, r.jsx)(e, N(P({}, t), {
           user: a.user,
           guildId: I,
           channel: l,
@@ -132,7 +132,7 @@ let R = Chunk647438.memo(function(e) {
       })
     };
     return (0, r.jsxs)("div", {
-      className: P.participantRowContainer,
+      className: T.participantRowContainer,
       children: [(0, r.jsx)(b.Z, {
         targetElementRef: g,
         user: a.user,
@@ -143,24 +143,24 @@ let R = Chunk647438.memo(function(e) {
         clickTrap: true,
         children: e => {
           var t;
-          return (0, r.jsxs)(d.P3F, N(T({
+          return (0, r.jsxs)(d.P3F, N(P({
             innerRef: g,
-            className: P.participantMemberContainer,
+            className: T.participantMemberContainer,
             onContextMenu: k
           }, e), {
             children: [(0, r.jsx)(p.Z, {
               size: d.EFr.SIZE_40,
-              className: P.participantAvatar,
+              className: T.participantAvatar,
               user: a.user,
               isMobile: E,
               status: S
             }), (0, r.jsxs)("div", {
-              className: P.participantTextContainer,
+              className: T.participantTextContainer,
               children: [(0, r.jsx)(d.PUh, {
                 name: a.userNick,
                 colorString: null != (t = null == R ? true : R.colorString) ? t : null,
                 colorStrings: w,
-                className: P.participantName
+                className: T.participantName
               }), (0, r.jsx)(d.Text, {
                 variant: "text-xs/normal",
                 color: "header-secondary",
@@ -170,10 +170,10 @@ let R = Chunk647438.memo(function(e) {
           }))
         }
       }), (0, r.jsxs)("div", {
-        className: P.buttonContainer,
+        className: T.buttonContainer,
         children: [(0, r.jsx)(d.ua7, {
           text: D ? Z.intl.string(Z.t.h9rsTU) : Z.intl.string(Z.t.f0T7hI),
-          children: e => (0, r.jsx)("div", N(T({}, e), {
+          children: e => (0, r.jsx)("div", N(P({}, e), {
             children: (0, r.jsx)(d.hU, {
               onClick: L,
               disabled: D || _,
@@ -184,7 +184,7 @@ let R = Chunk647438.memo(function(e) {
           }))
         }), (0, r.jsx)(d.ua7, {
           text: Z.intl.string(Z.t.moABMz),
-          children: e => (0, r.jsx)("div", N(T({}, e), {
+          children: e => (0, r.jsx)("div", N(P({}, e), {
             children: (0, r.jsx)(d.hU, {
               "aria-label": Z.intl.string(Z.t.moABMz),
               onClick: M,
@@ -201,7 +201,7 @@ let R = Chunk647438.memo(function(e) {
       channel: t
     } = e, [n, i] = (0, I.h)(t.id);
     return (0, r.jsx)(d.j7V, {
-      className: P.toggle,
+      className: T.toggle,
       onChange: i,
       value: n,
       children: Z.intl.string(Z.t.GYCh0d)
@@ -231,14 +231,14 @@ function L(e) {
     chatOpen: i
   } = e, l = (0, x.Fd)(t.id), s = [+!!(0, c.e7)([_.Z], () => _.Z.can(S.Pl.MANAGE_CHANNELS, t) || _.Z.can(S.Pl.MANAGE_ROLES, t)), Math.max(1, l.length)];
   return (0, r.jsxs)("div", {
-    className: a()(P.container, {
-      [P.chatOpen]: i
+    className: a()(T.container, {
+      [T.chatOpen]: i
     }),
     children: [(0, r.jsx)(R, {
       toggleRequestToSpeakSidebar: n,
       chatOpen: i
     }), (0, r.jsx)(d.aVo, {
-      className: P.contentContainer,
+      className: T.contentContainer,
       sections: s,
       sectionHeight: function(e) {
         return 40 * (1 === e)
@@ -280,7 +280,7 @@ function L(e) {
           section: t
         } = e;
         return 1 === t ? (0, r.jsx)(d.Text, {
-          className: P.listTitle,
+          className: T.listTitle,
           variant: "text-xs/bold",
           color: "header-secondary",
           children: l.length > 0 ? Z.intl.formatToPlainString(Z.t["5z7q5e"], {

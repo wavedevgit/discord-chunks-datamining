@@ -134,7 +134,7 @@ function L(e) {
                 themeType: R.l.SIDEBAR,
                 disableToolbar: n.bot
               })]
-            }), (0, r.jsx)(P.Z, {
+            }), (0, r.jsx)(T.Z, {
               user: n,
               currentUser: f,
               displayProfile: k,
@@ -151,7 +151,7 @@ function L(e) {
                   })
                 }
               })
-            }), (0, r.jsx)(T.Z, {
+            }), (0, r.jsx)(P.Z, {
               user: n,
               channelId: w.id
             })]

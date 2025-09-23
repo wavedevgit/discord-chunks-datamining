@@ -164,7 +164,7 @@ function ed(e) {
     E = (0, B.w8)(c.id, z.pV.SPEAKER),
     S = (0, o.e7)([y.Z], () => y.Z.getSelectedParticipant(c.id)),
     Z = f && v !== et.IlC.POPOUT,
-    [P, R] = i.useState(0),
+    [T, R] = i.useState(0),
     {
       isOnStartStageScreen: w
     } = (0, W.ZP)();
@@ -195,7 +195,7 @@ function ed(e) {
       height: "calc(100% - ".concat(D, ")"),
       paddingTop: D
     },
-    disableGradients: !C || 0 === P && N.e.TOP,
+    disableGradients: !C || 0 === T && N.e.TOP,
     renderBottomCenter: () => C ? (0, r.jsx)(b.Gt, {
       value: x,
       children: (0, r.jsx)(X.Z, {
@@ -220,7 +220,7 @@ function ed(e) {
       channel: c
     }),
     renderChatToasts: () => !A || _ || Z ? null : (0, r.jsx)(O.ZP, {
-      children: (0, r.jsx)(T.Z, {
+      children: (0, r.jsx)(P.Z, {
         className: a()(ei.chatToasts, {
           [ei.rtsSidebarOpen]: u
         }),
@@ -259,7 +259,7 @@ function eu(e) {
     analyticsLocations: I
   } = (0, b.ZP)(m.Z.STAGE_CHANNEL_CALL), S = (0, g.bp)(), {
     chatOpen: Z,
-    participantsListOpen: T
+    participantsListOpen: P
   } = (0, o.cj)([y.Z], () => ({
     chatOpen: y.Z.getChatOpen(t.id),
     participantsListOpen: y.Z.getParticipantsListOpen(t.id)
@@ -291,9 +291,9 @@ function eu(e) {
           children: e => (0, r.jsx)("div", {
             className: a()(ei.callContainer, e, {
               [ei.sidebarVisible]: l,
-              [ei.sidebarOrChatVisible]: l || Z || T
+              [ei.sidebarOrChatVisible]: l || Z || P
             }),
-            children: (0, r.jsx)(P.ZP, {
+            children: (0, r.jsx)(T.ZP, {
               timeout: 2e3,
               children: e => (0, r.jsx)(ed, {
                 channel: t,
@@ -317,7 +317,7 @@ function eu(e) {
             channel: t,
             guild: N,
             maxWidth: D
-          }), T && R && L && (0, r.jsx)(x.Z, {
+          }), P && R && L && (0, r.jsx)(x.Z, {
             channel: t,
             maxWidth: D
           })]

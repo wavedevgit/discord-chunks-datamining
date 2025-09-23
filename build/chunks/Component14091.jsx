@@ -214,22 +214,22 @@ let z = [],
       onBlockedResultsClick: I,
       searchResultsQuery: S,
       isFavoritesSearch: Z
-    } = e, P = i.useRef(null), T = i.useCallback(() => {
+    } = e, T = i.useRef(null), P = i.useCallback(() => {
       E.Z.cleanUpSearchState(t)
     }, [t]);
-    i.useEffect(() => (g.S.subscribe(D.CkL.SEARCH_RESULTS_CLOSE, T), () => {
-      g.S.unsubscribe(D.CkL.SEARCH_RESULTS_CLOSE, T)
-    }), [T]);
+    i.useEffect(() => (g.S.subscribe(D.CkL.SEARCH_RESULTS_CLOSE, P), () => {
+      g.S.unsubscribe(D.CkL.SEARCH_RESULTS_CLOSE, P)
+    }), [P]);
     let N = i.useRef(n.showBlockedResults);
     i.useEffect(() => {
       if (N.current !== n.showBlockedResults) {
         N.current = n.showBlockedResults;
-        let e = P.current;
+        let e = T.current;
         null != e && e.scrollToBottom()
       }
     }, [n.showBlockedResults]);
     let L = i.useCallback((e, t, n) => {
-        let r = P.current;
+        let r = T.current;
         if (null == r) return;
         let i = r.getScrollerState().scrollTop - e;
         r.scrollTo({
@@ -365,7 +365,7 @@ let z = [],
         isIndexing: n.isHistoricalIndexing,
         documentsIndexed: n.documentsIndexed
       }), (0, r.jsxs)(c.Den, {
-        ref: P,
+        ref: T,
         className: k.scroller,
         children: [X && !n.isSearching && (0, r.jsx)(c.Wn, {
           className: k.paginationLimitHeader,
@@ -448,7 +448,7 @@ function W(e) {
     renderedMessages: f,
     ignoreCount: g,
     blockCount: y
-  } = (0, T.Z)({
+  } = (0, P.Z)({
     searchContext: t
   }), {
     searchMode: x,
@@ -492,7 +492,7 @@ function W(e) {
   }, [n, c.isSearching, t, x]), Z = (0, s.e7)([w.Z], () => {
     let e = (0, b.Tm)(t);
     return w.Z.getSearchResultsQuery(e)
-  }), P = t.type === D.aib.FAVORITES, R = i.useCallback(e => I.Z.setShowBlockedResults(t, e), [t]), A = i.useDeferredValue(f), M = i.useDeferredValue(c), k = i.useDeferredValue(u);
+  }), T = t.type === D.aib.FAVORITES, R = i.useCallback(e => I.Z.setShowBlockedResults(t, e), [t]), A = i.useDeferredValue(f), M = i.useDeferredValue(c), k = i.useDeferredValue(u);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(V, {
       searchContext: t,
@@ -509,7 +509,7 @@ function W(e) {
       searchMode: x,
       onBlockedResultsClick: R,
       searchResultsQuery: Z,
-      isFavoritesSearch: P
+      isFavoritesSearch: T
     }), (0, r.jsx)(G, {
       searchContext: t,
       searchRequestAnalyticsId: k,
@@ -528,7 +528,7 @@ function Y(e) {
   let {
     guildId: t,
     channelId: n
-  } = e, i = (0, P.H)({
+  } = e, i = (0, T.H)({
     guildId: t,
     channelId: n
   });

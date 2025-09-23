@@ -77,8 +77,8 @@ function _(e) {
     mentionCount: C
   })), v > 0 && S.push(b.intl.string(b.t.x5zAGR));
   let Z = (0, a.e7)([f.ZP], () => f.ZP.getFocusedLayout()),
-    P = C > 0 ? C : v,
-    T = P > 0;
+    T = C > 0 ? C : v,
+    P = T > 0;
   return (0, r.jsxs)("div", {
     className: y.wrapper,
     children: [(0, r.jsx)(c.d, function(e) {
@@ -108,9 +108,9 @@ function _(e) {
       iconComponent: Z === g.MI.NO_CHAT ? s.sXD : s.hic,
       themeable: true,
       className: n
-    }, _)), T ? (0, r.jsx)(o.Z, {
+    }, _)), P ? (0, r.jsx)(o.Z, {
       hasMentions: C > 0,
-      truncatedCount: P > 99 ? "99+" : P,
+      truncatedCount: T > 99 ? "99+" : T,
       className: y.badge
     }) : null]
   })

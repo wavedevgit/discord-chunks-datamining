@@ -273,16 +273,16 @@ function U(e) {
     quest: c,
     sourceQuestContent: u,
     impressionRef: d
-  } = e, f = (0, h.O5)(), _ = i.useRef(null), p = (null == t ? true : t.current) != null, g = p ? t : _, E = p ? "right" : "top", b = p ? "bottom" : true, y = () => {
+  } = e, f = (0, h.O5)(), _ = i.useRef(null), p = (null == t ? true : t.current) != null, m = p ? t : _, g = p ? "right" : "top", E = p ? "bottom" : true, b = () => {
     null == s || s(), f({
       questId: c.id,
-      questContent: m.jn.SPONSORED_QUEST_SHEET,
+      questContent: u,
       questContentCTA: h.jZ.SPONSORED_QUEST_SHEET,
       sourceQuestContent: u
     })
   };
   return (0, r.jsx)(o.yRy, {
-    targetElementRef: g,
+    targetElementRef: m,
     renderPopout: e => {
       let {
         closePopout: t
@@ -295,10 +295,10 @@ function U(e) {
         impressionRef: d
       })
     },
-    onRequestOpen: y,
+    onRequestOpen: b,
     onRequestClose: l,
-    position: E,
-    align: b,
+    position: g,
+    align: E,
     spacing: N,
     children: e => a(e, _)
   })

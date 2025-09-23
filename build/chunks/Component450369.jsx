@@ -136,9 +136,9 @@ let k = 16 / 9,
     } = (0, o.cj)([b.Z], () => ({
       selectedParticipant: null != l ? b.Z.getSelectedParticipant(l.id) : null,
       largeStream: null != l && b.Z.getStageStreamSize(l.id)
-    })), T = i.useCallback((e, t) => {
+    })), P = i.useCallback((e, t) => {
       if (e.type === A.fO.STREAM && 0 === v.filter(t => (0, O.V9)(t) === e.id && t.state !== w.jm8.ENDED).length) {
-        if (!(0, j.p9)(l, P.Z, S.Z, Z.Z, _.Z)[0]) return;
+        if (!(0, j.p9)(l, T.Z, S.Z, Z.Z, _.Z)[0]) return;
         (0, p.rn)((0, O.my)(e.id), {
           forceMultiple: t.shiftKey
         })
@@ -154,7 +154,7 @@ let k = 16 / 9,
       className: D.tile,
       inCall: true,
       inPopout: h,
-      onClick: T,
+      onClick: P,
       onContextMenu: u,
       pulseSpeakingIndicator: !f.enabled,
       width: a,
@@ -173,7 +173,7 @@ let k = 16 / 9,
     a()(null != _, "Channel cannot be guildless");
     let {
       user: j
-    } = i, x = (0, o.e7)([b.Z], () => b.Z.getParticipant(l.id, i.id), [l.id, i.id]), C = (0, o.e7)([T.ZP], () => T.ZP.isModerator(j.id, l.id), [l.id, j.id]);
+    } = i, x = (0, o.e7)([b.Z], () => b.Z.getParticipant(l.id, i.id), [l.id, i.id]), C = (0, o.e7)([P.ZP], () => P.ZP.isModerator(j.id, l.id), [l.id, j.id]);
     if (null == x || x.type === A.fO.ACTIVITY) return null;
     let I = e => {
         (0, m.h)({

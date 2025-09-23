@@ -2,7 +2,7 @@
 /** chunk id: 400251, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => R,
-  m: () => T
+  m: () => P
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -61,7 +61,7 @@ function Z(e, t) {
   }), e
 }
 
-function P(e, t) {
+function T(e, t) {
   if (null == e) return {};
   var n, r, i = function(e, t) {
     if (null == e) return {};
@@ -76,7 +76,7 @@ function P(e, t) {
   }
   return i
 }
-let T = e => {
+let P = e => {
   let {
     onClick: t
   } = e;
@@ -112,7 +112,7 @@ function N(e) {
         children: e => {
           var {
             onClick: i
-          } = e, l = P(e, ["onClick"]);
+          } = e, l = T(e, ["onClick"]);
           return (0, r.jsx)(h.zx, Z(S({}, l), {
             onClick: () => {
               null == i || i(), (0, c.ZDy)(async () => {
@@ -141,14 +141,14 @@ function N(e) {
         children: e => {
           var {
             onClick: t
-          } = e, n = P(e, ["onClick"]);
+          } = e, n = T(e, ["onClick"]);
           return (0, r.jsx)(c.ua7, {
             text: C.intl.string(C.t.UKOtz8),
             hideOnClick: true,
             children: e => {
               var {
                 onClick: i
-              } = e, l = P(e, ["onClick"]);
+              } = e, l = T(e, ["onClick"]);
               return (0, r.jsx)(h.zx, Z(S({}, n, l), {
                 ref: o,
                 onClick: e => {
@@ -185,12 +185,12 @@ let R = e => {
     id: l.guildId,
     splash: l.splash,
     size: 300 * (0, m.x_)()
-  }), P = null != (t = _.ZP.getGuildIconURL({
+  }), T = null != (t = _.ZP.getGuildIconURL({
     id: l.guildId,
     icon: l.icon,
     size: 40
-  })) ? t : true, T = C.intl.string(C.t.VJlc0d);
-  return j && (T = C.intl.string(C.t.cqWE2d)), (0, r.jsxs)("div", {
+  })) ? t : true, P = C.intl.string(C.t.VJlc0d);
+  return j && (P = C.intl.string(C.t.cqWE2d)), (0, r.jsxs)("div", {
     className: I.card,
     onContextMenu: e => {
       (0, d.jW)(e, async () => {
@@ -221,7 +221,7 @@ let R = e => {
             className: I.iconMask,
             children: (0, r.jsx)(f.Z, {
               className: I.icon,
-              iconSrc: P,
+              iconSrc: T,
               guild: (0, O.e)(l),
               size: f.Z.Sizes.MEDIUM,
               active: true
@@ -278,7 +278,7 @@ let R = e => {
         className: I.joinButton,
         color: j ? o.zx.Colors.PRIMARY : o.zx.Colors.GREEN,
         onClick: x,
-        children: T
+        children: P
       })]
     }), (0, r.jsx)(N, {
       entry: l

@@ -54,9 +54,9 @@ let v = e => {
       }, true, true, e)
     })
   }, [t.id]);
-  let P = i.useMemo(() => null != I ? (0, b.v)(Object.values(I), C) : null, [I, C]),
+  let T = i.useMemo(() => null != I ? (0, b.v)(Object.values(I), C) : null, [I, C]),
     {
-      mostRecentQuery: T,
+      mostRecentQuery: P,
       searchFetching: N,
       searchResults: R
     } = (0, l.cj)([p.Z], () => {
@@ -70,10 +70,10 @@ let v = e => {
         searchResults: p.Z.getSearchResults(t.id, e)
       }
     }),
-    [w, A] = i.useState(T),
-    D = "" !== T,
+    [w, A] = i.useState(P),
+    D = "" !== P,
     L = {
-      mostRecentQuery: T
+      mostRecentQuery: P
     },
     M = i.useRef(L);
   i.useEffect(() => {
@@ -144,18 +144,18 @@ let v = e => {
   return D ? (0, r.jsx)(y.Z, {
     searchQuery: w,
     setSearchQuery: A,
-    mostRecentQuery: T,
+    mostRecentQuery: P,
     handleSearchKeyPress: U,
     handleClearSearch: G,
     handleCreateOrAddGuild: k,
     searchResults: R,
     searchFetching: N
-  }) : null == P && null == C ? (0, r.jsx)("div", {
+  }) : null == T && null == C ? (0, r.jsx)("div", {
     className: x.pageContainer,
     children: (0, r.jsx)(a.$jN, {
       className: x.spinner
     })
-  }) : (null == P ? true : P.length) === 0 && null == C ? (0, r.jsx)("div", {
+  }) : (null == T ? true : T.length) === 0 && null == C ? (0, r.jsx)("div", {
     className: x.pageContainer,
     children: (0, r.jsx)(g.Z, {
       guild: v,
@@ -172,7 +172,7 @@ let v = e => {
     handleSelectCategory: e => {
       u.Su(t.id, e)
     },
-    directoryEntries: P,
+    directoryEntries: T,
     categoryCounts: E,
     allEntriesCount: S,
     isLoading: Z

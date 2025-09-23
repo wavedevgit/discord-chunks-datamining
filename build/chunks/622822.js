@@ -5,6 +5,7 @@ require.d(exports, {
   $5: () => X,
   I8: () => Y,
   Kt: () => k,
+  Lj: () => C,
   RW: () => H,
   Y3: () => q,
   Yt: () => R,
@@ -18,7 +19,7 @@ require.d(exports, {
   kH: () => U,
   qF: () => W,
   zd: () => F
-}), require("./953529.js");
+}), require("./388685.js"), require("./953529.js");
 var Chunk442837 = require("./442837.js"),
   Chunk480916 = require("./480916.js"),
   Chunk453679 = require("./453679.js"),
@@ -84,7 +85,7 @@ function T(e) {
 }
 let S = new Date("06/16/2020"),
   A = [Chunk981631.V_K.AGE_RESTRICTED, Chunk981631.V_K.EXPLICIT],
-  C = [Chunk723359.L0.NSFW_SERVER, Chunk723359.L0.NSFW_SERVER_INVITE, Chunk723359.L0.NSFW_SERVER_INVITE_EMBED];
+  C = new Set([Chunk723359.L0.NSFW_SERVER, Chunk723359.L0.NSFW_SERVER_INVITE, Chunk723359.L0.NSFW_SERVER_INVITE_EMBED]);
 
 function N() {
   let e = Chunk594174.default.getCurrentUser();
@@ -243,7 +244,7 @@ let B = () => {
 function Y(e, t, n) {
   if (P(e)) return void(0, m.mN)(g.L0.ACCESS_LARGE_GUILD_UNDERAGE);
   if (Z(e)) {
-    let e = null != n && C.includes(n) ? n : g.L0.NSFW_SERVER;
+    let e = null != n && C.has(n) ? n : g.L0.NSFW_SERVER;
     (0, m.mN)(e);
     return
   }
@@ -278,7 +279,7 @@ function q(e) {
   return null != h && ((0, l.Tz)({
     guildId: p,
     location: "age-gate-utils"
-  }) && (0, c.Y2)(h) && a || L(h) && a)
+  }) && (0, c.Y2)(h) && u || L(h) && a)
 }
 
 function X(e) {
@@ -299,7 +300,7 @@ function X(e) {
     h = (0, r.e7)([f.Z], () => f.Z.getGuild(null == e ? true : e.guild_id)),
     m = u && t,
     g = !(n && !i) || m;
-  return null != e && (!!e.isNSFW() && !!g || null != h && (!!(p && (0, c.Y2)(h)) && !!t || !!a && !!t))
+  return null != e && (!!e.isNSFW() && !!g || null != h && (!!(p && (0, c.Y2)(h)) && !!g || !!a && !!t))
 }
 
 function Q() {

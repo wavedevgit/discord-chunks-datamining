@@ -72,10 +72,10 @@ let W = Chunk998502.ZP.getEnableHardwareAcceleration(),
       sectionId: l,
       userId: a,
       guildOwnerId: s
-    } = e, o = i.useRef(null), d = (0, p.e7)([R.Z], () => R.Z.isTyping(t.id, a)), h = (0, p.e7)([Z.ZP], () => Z.ZP.getMember(t.guild_id, a)), m = (0, p.e7)([P.Z], () => {
+    } = e, o = i.useRef(null), d = (0, p.e7)([R.Z], () => R.Z.isTyping(t.id, a)), h = (0, p.e7)([Z.ZP], () => Z.ZP.getMember(t.guild_id, a)), m = (0, p.e7)([T.Z], () => {
       var e;
-      return (null == h ? true : h.colorRoleId) != null ? null == (e = P.Z.getRole(t.guild_id, h.colorRoleId)) ? true : e.name : true
-    }, [t.guild_id, h]), b = (0, p.e7)([w.default], () => w.default.getUser(a)), y = (0, p.e7)([w.default], () => w.default.getCurrentUser()), _ = (null == b ? true : b.id) === (null == y ? true : y.id), O = (0, p.e7)([T.Z, N.Z], () => _ ? N.Z.getStatus() : T.Z.getStatus(a, t.guild_id)), x = (0, p.e7)([T.Z], () => T.Z.isMobileOnline(a)), C = (0, p.e7)([T.Z, N.Z], () => _ ? N.Z.getActivities() : T.Z.getActivities(a, t.guild_id)), A = (0, p.e7)([S.Z], () => S.Z.getAnyStreamForUser(a)), D = (0, c.JA)(a), M = (0, p.e7)([I.Z], () => I.Z.canUserViewChannel(t.id, l, a)), U = (null == b ? true : b.id) != null && b.id === s, B = i.useCallback(e => {
+      return (null == h ? true : h.colorRoleId) != null ? null == (e = T.Z.getRole(t.guild_id, h.colorRoleId)) ? true : e.name : true
+    }, [t.guild_id, h]), b = (0, p.e7)([w.default], () => w.default.getUser(a)), y = (0, p.e7)([w.default], () => w.default.getCurrentUser()), _ = (null == b ? true : b.id) === (null == y ? true : y.id), O = (0, p.e7)([P.Z, N.Z], () => _ ? N.Z.getStatus() : P.Z.getStatus(a, t.guild_id)), x = (0, p.e7)([P.Z], () => P.Z.isMobileOnline(a)), C = (0, p.e7)([P.Z, N.Z], () => _ ? N.Z.getActivities() : P.Z.getActivities(a, t.guild_id)), A = (0, p.e7)([S.Z], () => S.Z.getAnyStreamForUser(a)), D = (0, c.JA)(a), M = (0, p.e7)([I.Z], () => I.Z.canUserViewChannel(t.id, l, a)), U = (null == b ? true : b.id) != null && b.id === s, B = i.useCallback(e => {
       null != b && (0, f.jW)(e, async () => {
         let {
           default: e

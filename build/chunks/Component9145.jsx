@@ -54,7 +54,7 @@ function z(e) {
     maxHeight: z,
     connectedLocation: V,
     renderExternalHeader: W
-  } = e, Y = (0, N.Z)(), q = (0, s.Wu)([S.ZP], () => S.ZP.getEmbeddedActivitiesForLocation(V), [V]), K = (0, T.p)(V), Q = (0, s.e7)([O.Z], () => O.Z.getChannel(K)), X = (0, Z.gb)(q), J = (0, Z.uF)(X), $ = i.useCallback(() => {
+  } = e, Y = (0, N.Z)(), q = (0, s.Wu)([S.ZP], () => S.ZP.getEmbeddedActivitiesForLocation(V), [V]), K = (0, P.p)(V), Q = (0, s.e7)([O.Z], () => O.Z.getChannel(K)), X = (0, Z.gb)(q), J = (0, Z.uF)(X), $ = i.useCallback(() => {
     (0, E.tg)(k.Ez.PIP)
   }, []), ee = i.useRef(null), et = (0, s.e7)([S.ZP], () => S.ZP.getFocusedLayout()), en = et !== k.MI.NO_CHAT, [er, ei] = i.useState(null != (n = null != (t = m.ZP.activityPanelHeight) ? t : z) ? n : null), el = i.useCallback(e => {
     u.ZP.updatedUnsyncedSettings({
@@ -78,7 +78,7 @@ function z(e) {
   let ec = es.width / Math.max(es.height, 1) < k.I0,
     ed = 0,
     eu = 0,
-    ep = (0, P.Z)(null == Y ? true : Y.id);
+    ep = (0, T.Z)(null == Y ? true : Y.id);
   if (!ep) {
     let e = es.width,
       t = es.height;

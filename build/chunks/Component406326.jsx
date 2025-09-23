@@ -67,7 +67,7 @@ function _(e) {
     location: "SearchHeader"
   }), S = (0, h.I)(t), {
     totalFilters: Z
-  } = (0, p.p4)(S, t), P = i.useMemo(() => {
+  } = (0, p.p4)(S, t), T = i.useMemo(() => {
     if (t.type === f.aib.DMS && C) {
       var e, n;
       let t = null != (n = null == (e = (0, c.$G)(S).channel_id) ? true : e.length) ? n : 0;
@@ -76,7 +76,7 @@ function _(e) {
       }) : g.intl.string(g.t.tc619f)
     }
     return null
-  }, [C, t.type, S]), T = i.useMemo(() => [{
+  }, [C, t.type, S]), P = i.useMemo(() => [{
     label: g.intl.string(g.t.CbaapK),
     value: f.QIO.NEWEST
   }, {
@@ -99,14 +99,14 @@ function _(e) {
   }) : g.intl.string(g.t.UdhTtr), [Z]);
   return (0, r.jsxs)("header", {
     className: a()(m.searchHeader, {
-      [m.searchHeaderWithSubtitle]: null != P
+      [m.searchHeaderWithSubtitle]: null != T
     }),
     children: [(0, r.jsx)("div", {
       className: m.totalResults,
       role: "status",
       children: (0, r.jsx)(O, {
         totalResults: _,
-        subtitle: P,
+        subtitle: T,
         isIndexing: j,
         isSearching: x,
         documentsIndexed: v
@@ -114,7 +114,7 @@ function _(e) {
     }), I || E ? (0, r.jsxs)("div", {
       className: m.searchModeAndFiltersContainer,
       children: [(0, r.jsx)(s.q4e, {
-        options: T,
+        options: P,
         value: l,
         onChange: o,
         popoutWidth: 130,
