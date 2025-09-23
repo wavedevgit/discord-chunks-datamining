@@ -92,17 +92,25 @@ let x = 16,
     let {
       hangStatusActivity: t,
       iconClassName: n,
-      isSelf: i
-    } = e;
-    return i && null == t ? (0, r.jsx)(s.u, {
-      text: S.intl.string(S.t.qstQub),
+      isSelf: i,
+      onAddHangStatusClicked: a
+    } = e, s = e => {
+      e.stopPropagation(), null == a || a()
+    };
+    return i && null == t ? (0, r.jsx)(l.P3F, {
+      onClick: s,
+      className: A.icons,
       children: (0, r.jsx)(l.svS, {
         className: o()(A.icon, n)
       })
-    }, "add-status") : (0, r.jsx)(g.Z, {
-      size: x,
-      hangStatusActivity: t,
-      className: o()(A.icon, n)
+    }) : (0, r.jsx)(l.P3F, {
+      onClick: s,
+      className: A.icons,
+      children: (0, r.jsx)(g.Z, {
+        size: x,
+        hangStatusActivity: t,
+        className: o()(A.icon, n)
+      })
     })
   },
   j = e => {
@@ -145,17 +153,18 @@ function M(e) {
     showHangStatus: Z,
     isSelf: F,
     handleHoverHangStatus: V,
-    handleHoverIcons: H
+    handleHoverIcons: H,
+    onAddHangStatusClicked: Y
   } = e, {
-    enabled: Y
+    enabled: W
   } = u.c.getCurrentConfig({
     location: "VoiceUserIcons"
   }, {
     autoTrackExposure: true
   });
   if (h || O) return null;
-  let W = [],
-    K = B({
+  let K = [],
+    z = B({
       iconClassName: N,
       mute: n,
       localMute: i,
@@ -163,7 +172,7 @@ function M(e) {
       deaf: f,
       serverDeaf: p
     });
-  m && (a ? W.push((0, r.jsx)(s.u, {
+  m && (a ? K.push((0, r.jsx)(s.u, {
     text: S.intl.string(S.t["PXMZ//"]),
     children: (0, r.jsx)(l.Amn, {
       size: "md",
@@ -171,56 +180,56 @@ function M(e) {
       className: o()(A.icon, N),
       colorClass: A.strikethrough
     })
-  }, "video")) : W.push((0, r.jsx)(s.u, {
+  }, "video")) : K.push((0, r.jsx)(s.u, {
     text: S.intl.string(S.t.FlNoSU),
     children: (0, r.jsx)(l.Odl, {
       size: "md",
       color: "currentColor",
       className: o()(A.icon, N)
     })
-  }, "video"))), k && W.push((0, r.jsx)(s.u, {
+  }, "video"))), k && K.push((0, r.jsx)(s.u, {
     text: S.intl.string(S.t.HFwRpq),
     children: (0, r.jsx)(l.Mgn, {
       className: o()(A.icon, N),
       color: l.TVs.colors.STATUS_WARNING_BACKGROUND
     })
   }, "disconnected"));
-  let z = Y ? l.iWm : l.nG3;
-  null != R && W.push((0, r.jsx)(s.u, {
+  let q = W ? l.iWm : l.nG3;
+  null != R && K.push((0, r.jsx)(s.u, {
     text: (0, d.Z)(R.name),
-    children: (0, r.jsx)(z, {
+    children: (0, r.jsx)(q, {
       size: "md",
       color: "currentColor",
       className: o()(A.icon, N)
     })
-  }, "activity")), P === T.YE.XBOX || w === I.wR.XBOX ? W.push((0, r.jsx)(b.Z, {
+  }, "activity")), P === T.YE.XBOX || w === I.wR.XBOX ? K.push((0, r.jsx)(b.Z, {
     className: o()(A.icon, N)
-  }, "xbox")) : (P === T.YE.PLAYSTATION || w === I.wR.PLAYSTATION) && W.push((0, r.jsx)(E.Z, {
+  }, "xbox")) : (P === T.YE.PLAYSTATION || w === I.wR.PLAYSTATION) && K.push((0, r.jsx)(E.Z, {
     className: o()(A.icon, N)
-  }, "playstation")), C && W.push((0, r.jsx)(s.u, {
+  }, "playstation")), C && K.push((0, r.jsx)(s.u, {
     text: S.intl.string(S.t.JH1SJy),
     children: (0, r.jsx)(l.tEF, {
       size: "xs",
       color: "currentColor",
       className: o()(A.icon, N)
     })
-  }, "watch")), g && W.push((0, r.jsx)(_.ZP, {
+  }, "watch")), g && K.push((0, r.jsx)(_.ZP, {
     size: _.ZP.Sizes.SMALL
   }, "stream"));
-  let q = null != D && !(0, y.yE)(D.flags, v.udG.EMBEDDED),
-    X = null == U && q;
-  return 0 !== W.length || 0 !== K.length || Z || X ? (0, r.jsxs)("div", {
+  let X = null != D && !(0, y.yE)(D.flags, v.udG.EMBEDDED),
+    Q = null == U && X;
+  return 0 !== K.length || 0 !== z.length || Z || Q ? (0, r.jsxs)("div", {
     className: o()(A.icons, t),
     children: [(0, r.jsxs)("div", {
       className: A.iconGroup,
       onMouseEnter: () => null == H ? true : H(true),
       onMouseLeave: () => null == H ? true : H(false),
-      children: [K, W]
-    }), Z || X ? (0, r.jsx)("div", {
+      children: [z, K]
+    }), Z || Q ? (0, r.jsx)("div", {
       className: A.iconGroup,
       onMouseEnter: () => null == V ? true : V(true),
       onMouseLeave: () => null == V ? true : V(false),
-      children: X ? (0, r.jsx)(G, {
+      children: Q ? (0, r.jsx)(G, {
         application: D,
         iconClassName: N,
         guildId: x,
@@ -229,7 +238,8 @@ function M(e) {
       }, "".concat(M.id, "-game")) : (0, r.jsx)(L, {
         hangStatusActivity: U,
         iconClassName: N,
-        isSelf: F
+        isSelf: F,
+        onAddHangStatusClicked: Y
       })
     }) : null]
   }) : null

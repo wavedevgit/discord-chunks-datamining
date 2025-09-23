@@ -1,7 +1,7 @@
 /** Chunk was on 80037 **/
 /** chunk id: 748855, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  L: () => d
+  L: () => p
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -9,46 +9,47 @@ var Chunk951288 = require("./951288.js"),
   a = require.n(Chunk120356),
   Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
+  Chunk388032 = require("./388032.jsx"),
   Chunk103198 = require("./103198.js"),
   Chunk515527 = require("./515527.js");
 
-function d(e) {
+function p(e) {
   let {
     label: t,
     icon: n,
     isSelected: l = false,
-    setStatus: d,
-    clearStatus: p,
-    isFavorited: h,
-    onFavoriteClick: f
-  } = e, [m, g] = i.useState(false), b = m && l, y = null != f, C = i.useCallback(() => {
-    b ? null == p || p() : d()
-  }, [b, p, d]), _ = i.useCallback(e => {
-    e.stopPropagation(), null == f || f()
-  }, [f]);
+    setStatus: p,
+    clearStatus: h,
+    isFavorited: f,
+    onFavoriteClick: m
+  } = e, [g, b] = i.useState(false), y = g && l, C = y ? c.intl.string(c.t.S90Fub) : t, _ = null != m, v = i.useCallback(() => {
+    y ? null == h || h() : p()
+  }, [y, h, p]), x = i.useCallback(e => {
+    e.stopPropagation(), null == m || m()
+  }, [m]);
   return (0, r.jsxs)(s.P3F, {
-    onClick: C,
+    onClick: v,
     onMouseEnter: () => {
-      g(true)
+      b(true)
     },
     onMouseLeave: () => {
-      g(false)
+      b(false)
     },
-    className: a()(u.item, u.labelContainer, c.container, {
-      [c.isSelected]: l
+    className: a()(d.item, d.labelContainer, u.container, {
+      [u.isSelected]: l
     }),
     children: [n, (0, r.jsx)(s.Text, {
       variant: "text-md/normal",
-      className: c.itemText,
-      children: t
+      className: u.itemText,
+      children: C
     }), l ? (0, r.jsx)(s.k$p, {
-      className: c.closeIcon,
-      color: m ? o.Z.colors.ICON_PRIMARY : o.Z.colors.ICON_SECONDARY
-    }) : m && y && (0, r.jsx)(s.P3F, {
-      onClick: _,
+      className: u.closeIcon,
+      color: g ? o.Z.colors.ICON_PRIMARY : o.Z.colors.ICON_SECONDARY
+    }) : g && _ && (0, r.jsx)(s.P3F, {
+      onClick: x,
       children: (0, r.jsx)(s.r7p, {
-        className: c.closeIcon,
-        color: h ? o.Z.colors.ICON_FEEDBACK_WARNING : true
+        className: u.closeIcon,
+        color: f ? o.Z.colors.ICON_FEEDBACK_WARNING : true
       })
     })]
   })

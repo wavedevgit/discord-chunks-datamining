@@ -148,15 +148,18 @@ let B = (0, Chunk888651.$)(function(e) {
     hangStatusActivity: ef,
     requestToStreamActivity: em,
     showHangStatus: eg
-  } = e, eb = i.useRef(null), [ey, eC] = i.useState(false), [e_, ev] = i.useState(false), [ex, eO] = i.useState(false), ej = e_ || ex, eE = (null == em ? true : em.session_id) != null, eS = () => {
+  } = e, eb = i.useRef(null), [ey, eC] = i.useState(false), [e_, ev] = i.useState(false), [ex, eO] = i.useState(false), [ej, eE] = i.useState(false), eS = ex || ej, eP = e_ || eS, eI = (null == em ? true : em.session_id) != null, eZ = () => {
     eC(!ey)
-  }, eP = () => {
-    ($ || eg || eE) && (null == ei || ei(p.id))
-  }, eI = e => {
+  }, eT = (e, t) => {
+    let n = new Set(["system:click_outside", "user:escape", "user:explicit"]);
+    ej && null != t && n.has(t) && eE(false), eN()
+  }, eN = () => {
+    ($ || eg || eI) && (null == ei || ei(p.id))
+  }, eA = e => {
     e && ea && ev(true)
-  }, eZ = e => {
+  }, ew = e => {
     e && ev(false)
-  }, eT = () => {
+  }, eM = () => {
     if (!($ && (0, C.p9)(D, N.Z, I.Z, Z.Z, g.Z)[0])) return;
     let e = {
       streamType: w.lo.GUILD,
@@ -165,7 +168,7 @@ let B = (0, Chunk888651.$)(function(e) {
       guildId: D.guild_id
     };
     P.default.getId() !== p.id && u.default.selectVoiceChannel(D.id), ee ? ((0, _.Z)(e), s.Z.selectParticipant(e.channelId, (0, y.V9)(e))) : (0, d.iV)(e), null == ei || ei(p.id)
-  }, eN = e => {
+  }, eR = e => {
     (0, c.jW)(e, async () => {
       let {
         default: e
@@ -181,29 +184,29 @@ let B = (0, Chunk888651.$)(function(e) {
         })
       }))
     })
-  }, eA = e => ep ? (0, r.jsx)(x.$, L(k({}, e), {
+  }, ek = e => ep ? (0, r.jsx)(x.$, L(k({}, e), {
     channel: D,
     setIsHangStatusInputFocused: eO
   })) : null != ef ? (0, r.jsx)(O.I, L(k({}, e), {
     hangStatusActivity: ef,
     channel: D,
     userId: p.id
-  })) : null, ew = () => (0, r.jsx)(j.Z, {
+  })) : null, eL = () => (0, r.jsx)(j.Z, {
     userId: p.id,
     channel: D
-  }), eM = () => (0, h.dl)() && (0, h.zd)(D.id) ? null : (0, r.jsx)(v.Z, {
+  }), eD = () => (0, h.dl)() && (0, h.zd)(D.id) ? null : (0, r.jsx)(v.Z, {
     user: p,
     channel: D,
-    onWatch: eT,
+    onWatch: eM,
     previewIsOpen: ea,
     location: ed
-  }), eR = (0, r.jsx)("div", {
+  }), eU = (0, r.jsx)("div", {
     className: R.draggable,
     "data-dnd-name": D.name,
     onMouseEnter: ec ? true : () => {
-      ($ || eg || eE) && !ey && (null == er || er(p.id))
+      ($ || eg || eI) && !ey && (null == er || er(p.id))
     },
-    onMouseLeave: ec ? true : eP,
+    onMouseLeave: ec ? true : eN,
     children: (0, r.jsx)(E.Z, {
       clickTrap: (null == p ? true : p.id) === (null == (t = T.default.getCurrentUser()) ? true : t.id) && ey,
       targetElementRef: eb,
@@ -242,9 +245,9 @@ let B = (0, Chunk888651.$)(function(e) {
             }),
             disabled: ec && !t,
             selected: ey,
-            onClick: t ? true : eS,
-            onDoubleClick: eT,
-            onContextMenu: eN,
+            onClick: t ? true : eZ,
+            onDoubleClick: eM,
+            onContextMenu: eR,
             guildId: D.guild_id,
             isSelf: ep,
             application: eh,
@@ -282,24 +285,25 @@ let B = (0, Chunk888651.$)(function(e) {
           })
         }
         let s = () => null;
-        return eg && ej ? s = eA : $ ? s = eM : eE && p.id !== P.default.getId() && (s = ew), (0, r.jsx)(o.yRy, {
+        return eg && eP ? s = ek : $ ? s = eD : eI && p.id !== P.default.getId() && (s = eL), (0, r.jsx)(o.yRy, {
           targetElementRef: eb,
           position: "right",
           renderPopout: s,
-          shouldShow: (el || eg && ex) && !ey,
-          onRequestClose: eP,
-          align: eg && ej && !ep ? "center" : true,
-          spacing: eg && ej ? 8 : 0,
+          shouldShow: (el || eg && eS) && !ey,
+          onRequestClose: eT,
+          align: eg && eP && !ep ? "center" : true,
+          spacing: eg && eP ? 8 : 0,
           children: () => (0, r.jsx)(S.ZP, L(k({}, n), {
             ref: eb,
             onMouseDown: e.onMouseDown,
             onKeyDown: e.onKeyDown,
-            handleHoverHangStatus: eI,
-            handleHoverIcons: eZ
+            handleHoverHangStatus: eA,
+            handleHoverIcons: ew,
+            onAddHangStatusClicked: () => eE(true)
           }))
         })
       })(e)
     })
   });
-  return Q ? J(eR) : eR
+  return Q ? J(eU) : eU
 })
