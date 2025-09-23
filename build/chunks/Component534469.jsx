@@ -153,7 +153,7 @@ function en(e) {
       [X.systemMessage]: true,
       [X.groupStart]: true
     }),
-    childrenHeader: (0, V.Z)({
+    childrenHeader: (0, F.Z)({
       messageProps: e,
       setPopout: m,
       messagePopouts: f,
@@ -192,7 +192,7 @@ function er(e) {
     handleFocus: D,
     handleBlur: B
   } = (0, M.bb)(S), {
-    popouts: F,
+    popouts: V,
     selected: G,
     setPopout: J
   } = (0, k.Z)(o.id, q.d$), et = x.RS.useSetting(), en = x.NA.useSetting(), er = (0, u.e7)([_.Z], () => _.Z.getMessageByReference(j)), ei = (0, m.A)((null != (n = o.editedTimestamp) ? n : o.timestamp).valueOf()), {
@@ -203,7 +203,7 @@ function er(e) {
     groupId: C,
     message: o,
     defaultValue: G,
-    popouts: F
+    popouts: V
   }), es = (0, u.e7)([p.Z], () => p.Z.keyboardModeEnabled), ec = G || es && N, eu = ec || eo, {
     content: ed,
     hasSpoilerEmbeds: ep
@@ -245,16 +245,16 @@ function er(e) {
       onBlur: B,
       childrenRepliedMessage: o.type === Y.uaV.REPLY && (0, z.Z)($(Q({}, e), {
         setPopout: J,
-        referencedUsernameProfile: F.referencedUsernameProfile,
-        referencedAvatarProfile: F.referencedAvatarProfile,
+        referencedUsernameProfile: V.referencedUsernameProfile,
+        referencedAvatarProfile: V.referencedAvatarProfile,
         replyReference: j,
         replyMessage: er,
         isReplySpineClickable: true
       })),
-      childrenHeader: (0, V.Z)({
+      childrenHeader: (0, F.Z)({
         messageProps: e,
         setPopout: J,
-        messagePopouts: F,
+        messagePopouts: V,
         replyReference: j,
         author: ef,
         repliedMessage: er,
@@ -361,8 +361,8 @@ let ei = Chunk647438.memo(function(e) {
       previewLinkTarget: true
     }),
     eB = (0, R.Z)(I, et, eN),
-    eF = (0, T.ZP)(v),
-    eV = (0, u.e7)([C.Z], () => C.Z.getPendingReply(et)),
+    eV = (0, T.ZP)(v),
+    eF = (0, u.e7)([C.Z], () => C.Z.getPendingReply(et)),
     eH = function(e) {
       let t = i.useRef(e);
       return i.useEffect(() => {
@@ -371,7 +371,7 @@ let ei = Chunk647438.memo(function(e) {
     }(ei),
     eG = (0, f.p9)({
       guildId: J.guild_id,
-      roleId: eF.iconRoleId
+      roleId: eV.iconRoleId
     }),
     ez = (0, w.iG)(v, el),
     eW = (0, w.Gx)(v),
@@ -419,7 +419,7 @@ let ei = Chunk647438.memo(function(e) {
             [X.systemMessage]: (0, Z.Z)(v),
             [X.groupStart]: !ea && (eQ || v.type === Y.uaV.REPLY),
             [X.selected]: eA,
-            [X.replying]: (null == eV ? true : eV.message.id) === v.id,
+            [X.replying]: (null == eF ? true : eF.message.id) === v.id,
             [X.interactionSending]: v.isCommandType() && v.state === Y.yb.SENDING,
             [X.automodMessage]: eX,
             [X.editing]: eT,
@@ -436,12 +436,12 @@ let ei = Chunk647438.memo(function(e) {
             isReplySpineClickable: true
           })),
           childrenExecutedCommand: (0, G.Z)(e, eb, em),
-          childrenHeader: ea ? true : (0, V.Z)({
+          childrenHeader: ea ? true : (0, F.Z)({
             messageProps: e,
             setPopout: eb,
             messagePopouts: em,
             replyReference: eo,
-            author: eF,
+            author: eV,
             repliedMessage: ef,
             roleIcon: eG
           }),
@@ -453,7 +453,7 @@ let ei = Chunk647438.memo(function(e) {
             isAutomodBlockedMessage: eX,
             forceAddReactions: v.type === Y.uaV.EMOJI_ADDED
           }),
-          childrenButtons: ex || eE ? (0, F.Z)({
+          childrenButtons: ex || eE ? (0, V.Z)({
             buttonProps: e,
             setPopout: eb,
             messagePopouts: em,
@@ -471,7 +471,7 @@ let ei = Chunk647438.memo(function(e) {
             var t, n;
             eY.current = e, eK.current = null != (n = null == e || null == (t = e.ownerDocument) ? true : t.defaultView) ? n : window
           },
-          author: eF
+          author: eV
         }))]
       })
     });

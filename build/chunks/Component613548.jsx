@@ -119,26 +119,26 @@ function k(e) {
     inInbox: B
   } = b.Z.useExperiment({
     location: "ChannelCallHeaderToolbar"
-  }), F = [];
-  return C && F.push((0, r.jsx)(R, {
+  }), V = [];
+  return C && V.push((0, r.jsx)(R, {
     channelId: s,
     guildId: t.guild_id
-  }, "current-speaker")), F.push((0, r.jsx)(m.Z, {
+  }, "current-speaker")), V.push((0, r.jsx)(m.Z, {
     className: A.button,
     channelId: s
-  }, "clips-enabled-indicator")), (null == E ? true : E.type) === T.fO.STREAM && (F.push((0, r.jsx)(_.Z, {
+  }, "clips-enabled-indicator")), (null == E ? true : E.type) === T.fO.STREAM && (V.push((0, r.jsx)(_.Z, {
     className: A.button,
     participant: E
-  }, "warning")), F.push((0, r.jsx)(g.Z, {
+  }, "warning")), V.push((0, r.jsx)(g.Z, {
     size: f.ZP.Sizes.LARGE,
     className: A.button,
     participant: E,
     showQuality: true,
     premiumIndicator: false
-  }, "live-indicator"))), (null == E ? true : E.type) === T.fO.USER && F.push((0, r.jsx)(v.Z, {
+  }, "live-indicator"))), (null == E ? true : E.type) === T.fO.USER && V.push((0, r.jsx)(v.Z, {
     className: A.button,
     userId: E.id
-  }, "video-warning")), C && !L && F.push((0, r.jsx)(u.yRy, {
+  }, "video-warning")), C && !L && V.push((0, r.jsx)(u.yRy, {
     targetElementRef: l,
     position: "bottom",
     renderPopout: () => (0, r.jsx)(x.Z, {
@@ -158,14 +158,14 @@ function k(e) {
         className: A.button
       }))
     }
-  }, "call-members-popout")), U && !B && F.push((0, r.jsx)(y.Z, {
+  }, "call-members-popout")), U && !B && V.push((0, r.jsx)(y.Z, {
     className: A.button
-  }, "for-later")), D && F.push((0, r.jsx)(j.Z, {
+  }, "for-later")), D && V.push((0, r.jsx)(j.Z, {
     className: a()(A.button, {
       [A.lastButton]: n
     }),
     onClick: () => d.Z.toggleParticipantsList(t.id, !N)
-  }, "participants-list-button")), k && F.push((0, r.jsx)(O.T, {
+  }, "participants-list-button")), k && V.push((0, r.jsx)(O.T, {
     channelId: t.id,
     className: a()(A.button, {
       [A.lastButton]: N
@@ -173,6 +173,6 @@ function k(e) {
     disabled: n
   }, "chat-spacer")), (0, r.jsx)(h.Gt, {
     value: o,
-    children: F
+    children: V
   })
 }

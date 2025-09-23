@@ -42,7 +42,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk487111 = require("./487111.js"),
   Chunk332103 = require("./332103.js");
 
-function F(e) {
+function V(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -61,7 +61,7 @@ function F(e) {
   return e
 }
 
-function V(e, t) {
+function F(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -234,7 +234,7 @@ function G(e) {
           channel: Y
         }) : (0, r.jsx)(c.ua7, {
           text: k.intl.string(k.t.F7oeDg),
-          children: e => (0, r.jsx)(c.zxk, V(F({}, e), {
+          children: e => (0, r.jsx)(c.zxk, F(V({}, e), {
             icon: eh,
             size: "sm",
             variant: "secondary",
@@ -243,13 +243,13 @@ function G(e) {
           }))
         }), (0, r.jsx)(c.ua7, {
           text: k.intl.string(k.t.WqhZsr),
-          children: e => W ? (0, r.jsx)(c.zxk, V(F({}, e), {
+          children: e => W ? (0, r.jsx)(c.zxk, F(V({}, e), {
             icon: c.dz2,
             size: "sm",
             variant: "secondary",
             onClick: ed,
             text: k.intl.string(k.t["t5VZ8/"])
-          })) : (0, r.jsx)(c.hU, V(F({}, e), {
+          })) : (0, r.jsx)(c.hU, F(V({}, e), {
             icon: c.xPt,
             size: "sm",
             variant: "secondary",
@@ -258,7 +258,7 @@ function G(e) {
           }))
         }), !n && (0, r.jsx)(c.ua7, {
           text: k.intl.string(k.t.nFP4oa),
-          children: e => (0, r.jsx)(c.hU, V(F({}, e), {
+          children: e => (0, r.jsx)(c.hU, F(V({}, e), {
             icon: c.Za2,
             size: "sm",
             variant: "secondary",

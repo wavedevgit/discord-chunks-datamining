@@ -46,7 +46,7 @@ let L = Chunk647438.memo(e => {
     channel: P,
     sessionId: I,
     nick: k
-  } = e, L = x.id, D = (0, o.e7)([j.default], () => j.default.getId() === L, [L]), [U, B, F] = (0, o.Wu)([S.Z], () => D ? [!S.Z.isSupported() || S.Z.isSelfMute() || S.Z.isSelfMutedTemporarily(), S.Z.isSelfDeaf(), false] : [!S.Z.isSupported() || S.Z.isLocalMute(L), false, S.Z.isLocalVideoDisabled(L)], [D, L]), V = (0, o.e7)([T.Z], () => T.Z.isPrioritySpeaker(L)), H = (0, c.Z)({
+  } = e, L = x.id, D = (0, o.e7)([j.default], () => j.default.getId() === L, [L]), [U, B, V] = (0, o.Wu)([S.Z], () => D ? [!S.Z.isSupported() || S.Z.isSelfMute() || S.Z.isSelfMutedTemporarily(), S.Z.isSelfDeaf(), false] : [!S.Z.isSupported() || S.Z.isLocalMute(L), false, S.Z.isLocalVideoDisabled(L)], [D, L]), F = (0, o.e7)([T.Z], () => T.Z.isPrioritySpeaker(L)), H = (0, c.Z)({
     userId: L,
     checkSoundSharing: true
   }), G = (0, o.e7)([E.ZP], () => E.ZP.isGuestOrLurker(P.guild_id, L)), z = (0, o.e7)([h.Z], () => h.Z.getGuildRingingUsers(P.id).has(L)), W = (0, o.e7)([u.ZP], () => u.ZP.getEmbeddedActivitiesForChannel(P.id).find(e => {
@@ -95,12 +95,12 @@ let L = Chunk647438.memo(e => {
       otherClientSessionType: null == Q || null == (t = Q.clientInfo) ? true : t.os,
       voicePlatform: ee,
       localMute: U && !D,
-      localVideoDisabled: F,
+      localVideoDisabled: V,
       mute: a || U,
       deaf: s || B,
       speaking: H,
       ringing: z,
-      priority: V,
+      priority: F,
       embeddedApplication: q[0],
       isStreaming: null != X && X.channelId === P.id,
       isWatching: null != J && J.state !== M.jm8.ENDED,
@@ -159,7 +159,7 @@ let D = [],
       }), Array.from(e)
     });
     (0, p.Z)(B);
-    let F = (() => {
+    let V = (() => {
       if (null == T || 0 === T.length) return null;
       let e = u && T.length > d + 1 ? T.slice(0, d) : T,
         t = h.Z.getGuildRingingUsers(l.id),
@@ -198,12 +198,12 @@ let D = [],
         numUsers: T.length - d
       })), i
     })();
-    return null == F && null == C ? null : (0, r.jsxs)(x.eJ, {
+    return null == V && null == C ? null : (0, r.jsxs)(x.eJ, {
       className: a()(y, k.list, {
         [k.collapsed]: u,
         [k.withGuildIcon]: b
       }),
       collapsed: u,
-      children: [F, C]
+      children: [V, C]
     })
   }
