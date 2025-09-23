@@ -1,13 +1,13 @@
-/** Chunk was on 86478 **/
+/** Chunk was on 76349 **/
 /** chunk id: 744993, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   EC: () => x,
-  NE: () => v,
+  NE: () => j,
   TN: () => b,
   _k: () => _,
   g$: () => f,
   po: () => p,
-  s9: () => j,
+  s9: () => v,
   yP: () => g
 }), require("./642613.js");
 var Chunk544891 = require("./544891.js"),
@@ -102,7 +102,7 @@ function g(e, t) {
   })
 }
 
-function v(e, t, n, r) {
+function j(e, t, n, r) {
   return a.tn.post({
     url: h.ANM.GUILD_POWERUP_TOGGLE(e, t),
     body: {
@@ -114,7 +114,7 @@ function v(e, t, n, r) {
   })
 }
 
-function j(e, t, n) {
+function v(e, t, n) {
   return a.tn.del({
     url: h.ANM.GUILD_POWERUP_TOGGLE(e, t),
     query: {

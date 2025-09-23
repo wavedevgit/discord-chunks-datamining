@@ -1,26 +1,26 @@
 /** Chunk was on 51868 **/
-/** chunk id: 807693, original params: e,n,t (module,exports,require) **/
+/** chunk id: 807693, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => c
+  Z: () => s
 });
-var r, i, Chunk442837 = require("./442837.js"),
+var n, l, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
-let l = {};
-class o extends(i = Chunk442837.ZP.Store) {
+let c = {};
+class i extends(l = Chunk442837.ZP.Store) {
   getEULA(e) {
-    return l[e]
+    return c[e]
   }
-}(r = "displayName") in o ? Object.defineProperty(o, r, {
+}(n = "displayName") in i ? Object.defineProperty(i, n, {
   value: "EULAStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : o[r] = "EULAStore";
-let c = new o(Chunk570140.Z, {
+}) : i[n] = "EULAStore";
+let s = new i(Chunk570140.Z, {
   EULA_FETCH_SUCCESS: function(e) {
     let {
-      eula: n
+      eula: t
     } = e;
-    l[n.id] = n
+    c[t.id] = t
   }
 })

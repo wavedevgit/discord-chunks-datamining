@@ -105,6 +105,8 @@ function O(e) {
         }), await (0, f.Z)({
           userId: t.id,
           content: n.trim(),
+          openChannel: true,
+          whenReady: true,
           location: E
         }), null == _ || _(), {
           shouldClear: true,

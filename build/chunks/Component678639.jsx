@@ -1,4 +1,4 @@
-/** Chunk was on 86478 **/
+/** Chunk was on 76349 **/
 /** chunk id: 678639, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -48,7 +48,7 @@ let g = [{
       return t.getName()
     }
   }],
-  v = [{
+  j = [{
     id: "local",
     name: "Local Variables",
     group: Chunk621060.v0.NONE,
@@ -81,7 +81,7 @@ let g = [{
     }
   }];
 
-function j(e) {
+function v(e) {
   let {
     store: t,
     initialHeight: n
@@ -89,7 +89,7 @@ function j(e) {
     TabBar: r,
     renderSelectedTab: i
   } = (0, h.ZP)({
-    tabs: v
+    tabs: j
   }, []);
   return (0, a.jsxs)(u.Z, {
     className: x.subPanel,
@@ -142,7 +142,7 @@ function _() {
       data: Chunk665149,
       selectedRowKey: Chunk428530,
       onClickRow: e => u(e.key)
-    }), null != Chunk621060 && (0, Chunk951288.jsx)(j, {
+    }), null != Chunk621060 && (0, Chunk951288.jsx)(v, {
       store: Chunk621060,
       initialHeight: null != module.current ? module.current.clientHeight / 2 : 300
     })]

@@ -1,7 +1,7 @@
-/** Chunk was on 86478 **/
+/** Chunk was on 76349 **/
 /** chunk id: 916790, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => A
+  Z: () => Z
 }), require("./35282.js"), require("./388685.js"), require("./49124.js"), require("./975844.js"), require("./781311.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -66,7 +66,7 @@ function k(e) {
     })
   })
 }
-let w = [{
+let R = [{
   id: "action",
   name: "Action",
   group: Chunk621060.v0.NONE,
@@ -82,8 +82,8 @@ let w = [{
           name: "Created at",
           children: (0, a.jsx)("time", {
             dateTime: null == (t = n.createdAt) ? true : t.toISOString(),
-            title: (0, v.vc)(r, "LLLL"),
-            children: (0, v.Y4)(r)
+            title: (0, j.vc)(r, "LLLL"),
+            children: (0, j.Y4)(r)
           })
         }), (0, a.jsxs)(_.Z9, {
           name: "Total Time",
@@ -91,7 +91,7 @@ let w = [{
         })]
       }), (0, a.jsx)(m.zJl, {
         className: S.inspectorContainer,
-        children: (0, a.jsx)(j.Z, {
+        children: (0, a.jsx)(v.Z, {
           data: n.action
         })
       })]
@@ -111,18 +111,18 @@ let w = [{
   }
 }];
 
-function R(e) {
+function I(e) {
   let {
     actionLog: t,
     initialHeight: n
-  } = e, i = r.useMemo(() => t.error ? [...w, {
+  } = e, i = r.useMemo(() => t.error ? [...R, {
     id: "error",
     name: (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsx)(b.Z, {
         className: S.errorIcon
       }), "Error"]
     }),
-    group: N.v0.NONE,
+    group: E.v0.NONE,
     render(e) {
       let {
         actionLog: t
@@ -141,16 +141,16 @@ function R(e) {
           })
         }), (0, a.jsx)(m.zJl, {
           className: S.inspectorContainer,
-          children: (0, a.jsx)(j.Z, {
+          children: (0, a.jsx)(v.Z, {
             data: t.error
           })
         })]
       })
     }
-  }] : w, [t]), {
+  }] : R, [t]), {
     TabBar: s,
     renderSelectedTab: o
-  } = (0, N.ZP)({
+  } = (0, E.ZP)({
     tabs: i
   }, [i]);
   return (0, a.jsxs)(y.Z, {
@@ -173,7 +173,7 @@ function R(e) {
           var e;
           let n = JSON.stringify(Object.keys(e = t.action).reduce((t, n) => {
             var a;
-            return t[n] = (a = e[n], E.Jn9.test(a) ? "REDACTED" : a), t
+            return t[n] = (a = e[n], N.Jn9.test(a) ? "REDACTED" : a), t
           }, {}), null, 2);
           (0, g.JG)(n, () => (0, m.showToast)({
             id: "copy-action-log-name",
@@ -187,7 +187,7 @@ function R(e) {
     })]
   })
 }
-let I = [{
+let w = [{
     key: "action",
     cellClassName: Chunk687278.actionColumn,
     render(e) {
@@ -219,7 +219,7 @@ let I = [{
       return c()(t.createdAt).format("HH:mm:ss.SSS")
     }
   }],
-  Z = {
+  A = {
     searchType: Chunk886118.S.REGEX,
     searchStringGenerator: e => {
       let {
@@ -230,7 +230,7 @@ let I = [{
     throttleMs: 100
   };
 
-function A() {
+function Z() {
   let e = Chunk647438.useRef(null),
     [t, n] = Chunk647438.useState(""),
     i = function(e) {
@@ -250,16 +250,16 @@ function A() {
     [c, u] = Chunk647438.useState(Chunk913527),
     [p, x] = Chunk647438.useState(Chunk913527),
     [b, g] = Chunk647438.useState(false),
-    [v, j] = Chunk647438.useState(),
+    [j, v] = Chunk647438.useState(),
     _ = Chunk647438.useCallback(e => {
       x(e)
     }, []);
-  (0, Chunk301801.BO)(exports, Chunk4912 ? c : Chunk913527, Chunk257785, Z);
+  (0, Chunk301801.BO)(exports, Chunk4912 ? c : Chunk913527, Chunk257785, A);
   let y = Chunk647438.useCallback(e => {
       u(o), g(e)
     }, [Chunk913527]),
-    N = exports.trim().length > 0,
-    E = Chunk647438.useMemo(() => Chunk621060 ? Chunk665149 : Chunk4912 ? c : Chunk913527, [Chunk913527, Chunk665149, Chunk621060, Chunk4912, c]),
+    E = exports.trim().length > 0,
+    N = Chunk647438.useMemo(() => Chunk621060 ? Chunk665149 : Chunk4912 ? c : Chunk913527, [Chunk913527, Chunk665149, Chunk621060, Chunk4912, c]),
     T = Chunk4912 ? "Enable Event Tracking" : "Pause Event Tracking";
   return (0, Chunk951288.jsxs)("div", {
     ref: module,
@@ -283,11 +283,11 @@ function A() {
         placeholder: "Search by action name"
       })]
     }), (0, Chunk951288.jsx)(Chunk681619.Z, {
-      columns: I,
+      columns: w,
       data: Chunk981631,
       selectedRowKey: null == Chunk55935 ? true : Chunk55935.id.toString(),
-      onClickRow: e => j(e.actionLog)
-    }), null != Chunk55935 && (0, Chunk951288.jsx)(R, {
+      onClickRow: e => v(e.actionLog)
+    }), null != Chunk55935 && (0, Chunk951288.jsx)(I, {
       actionLog: Chunk55935,
       initialHeight: null != module.current ? module.current.clientHeight / 2 : 300
     })]

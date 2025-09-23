@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 976845, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 93964 **/
+/** chunk id: 976845, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  ZP: () => O
+  ZP: () => j
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -12,114 +11,104 @@ var Chunk951288 = require("./951288.js"),
   Chunk410030 = require("./410030.js"),
   Chunk647917 = require("./647917.js");
 
-function u(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function d(e) {
+function s(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      u(e, t, n[t])
+    var r = null != arguments[t] ? arguments[t] : {},
+      n = Object.keys(r);
+    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(r, e).enumerable
+    }))), n.forEach(function(t) {
+      var n;
+      n = r[t], t in e ? Object.defineProperty(e, t, {
+        value: n,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = n
     })
   }
   return e
 }
 
-function f(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function _(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+function b(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+    var r = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var n = Object.getOwnPropertySymbols(e);
+      r.push.apply(r, n)
+    }
+    return r
+  })(Object(t)).forEach(function(r) {
+    Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
   }), e
 }
 
-function p(e, t) {
+function f(e, t) {
   if (null == e) return {};
-  var n, r, i = h(e, t);
+  var r, n, o = function(e, t) {
+    if (null == e) return {};
+    var r, n, o = {},
+      l = Object.keys(e);
+    for (n = 0; n < l.length; n++) r = l[n], t.indexOf(r) >= 0 || (o[r] = e[r]);
+    return o
+  }(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var l = Object.getOwnPropertySymbols(e);
+    for (n = 0; n < l.length; n++) r = l[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r])
   }
-  return i
+  return o
 }
-
-function h(e, t) {
-  if (null == e) return {};
-  var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-  return i
-}
-let m = {
+let O = {
     width: 60,
     height: 60
   },
-  g = 3e3,
-  E = e => {
+  p = e => {
     let {
       currentAnimationType: t,
-      animationTypeRef: n,
-      onSetAnimationDurationMS: r,
-      play: a,
-      getDuration: o
-    } = e, s = o(), l = null != s ? 1e3 * s : g;
-    (0, i.useEffect)(() => {
-      null !== t && t !== n.current && (n.current = t, a())
-    }, [t, a, n]), (0, i.useEffect)(() => {
-      r(l)
-    }, [r, l])
-  },
-  b = e => {
-    var {
-      currentAnimationType: t
-    } = e, n = p(e, ["currentAnimationType"]);
-    let i = (0, o.D)(null != t ? t : "earn"),
-      {
-        Component: a
-      } = i;
-    return E(d({
-      currentAnimationType: t
-    }, n, p(i, ["Component"]))), (0, r.jsx)(a, _(d({}, m), {
-      size: "custom",
-      className: c.orbsLottie,
-      useLottieDefaultColors: true
-    }))
+      animationTypeRef: r,
+      onSetAnimationDurationMS: n,
+      play: l,
+      getDuration: u
+    } = e, a = u(), c = null != a ? 1e3 * a : 3e3;
+    (0, o.useEffect)(() => {
+      null !== t && t !== r.current && (r.current = t, l())
+    }, [t, l, r]), (0, o.useEffect)(() => {
+      n(c)
+    }, [n, c])
   },
   y = e => {
     var {
       currentAnimationType: t
-    } = e, n = p(e, ["currentAnimationType"]);
-    let i = (0, a.v)(null != t ? t : "earn"),
+    } = e, r = f(e, ["currentAnimationType"]);
+    let o = (0, u.D)(null != t ? t : "earn"),
       {
-        Component: o
-      } = i;
-    return E(d({
+        Component: l
+      } = o;
+    return p(s({
       currentAnimationType: t
-    }, n, p(i, ["Component"]))), (0, r.jsx)(o, _(d({}, m), {
+    }, r, f(o, ["Component"]))), (0, n.jsx)(l, b(s({}, O), {
       size: "custom",
-      className: c.orbsLottie,
+      className: i.orbsLottie,
       useLottieDefaultColors: true
     }))
   },
-  O = e => {
-    let t = (0, l.ZP)();
-    return (0, s.ap)(t) ? (0, r.jsx)(y, d({}, e)) : (0, r.jsx)(b, d({}, e))
+  g = e => {
+    var {
+      currentAnimationType: t
+    } = e, r = f(e, ["currentAnimationType"]);
+    let o = (0, l.v)(null != t ? t : "earn"),
+      {
+        Component: u
+      } = o;
+    return p(s({
+      currentAnimationType: t
+    }, r, f(o, ["Component"]))), (0, n.jsx)(u, b(s({}, O), {
+      size: "custom",
+      className: i.orbsLottie,
+      useLottieDefaultColors: true
+    }))
+  },
+  j = e => {
+    let t = (0, c.ZP)();
+    return (0, a.ap)(t) ? (0, n.jsx)(g, s({}, e)) : (0, n.jsx)(y, s({}, e))
   }

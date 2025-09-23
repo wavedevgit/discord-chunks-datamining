@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 962915, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 76349 **/
+/** chunk id: 729154, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  x: () => h
+  x: () => x
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,73 +15,73 @@ var Chunk951288 = require("./951288.js"),
   Chunk881493 = require("./881493.jsx"),
   Chunk407965 = require("./407965.jsx"),
   Chunk981631 = require("./981631.js");
-let h = e => {
+let x = e => {
     let {
       transitionState: t,
       onClose: n,
       premiumSubscription: s,
-      premiumType: l,
+      premiumType: o,
       churnDiscount: c,
-      planId: u,
-      renewalInvoice: f,
-      renewalInvoiceDetails: _,
-      errorOnCancel: h,
-      errorOnRedeem: g,
-      setActiveStep: E,
-      activeStep: b
+      planId: d,
+      renewalInvoice: m,
+      renewalInvoiceDetails: h,
+      errorOnCancel: x,
+      errorOnRedeem: b,
+      setActiveStep: g,
+      activeStep: j
     } = e, {
-      analyticsLocations: y
-    } = (0, o.ZP)(a.Z.USER_SETTINGS), [O, v] = i.useState(m(b));
-    return (0, i.useEffect)(() => {
-      v(m(b))
-    }, [b]), (0, r.jsx)(d.D.Provider, {
+      analyticsLocations: v
+    } = (0, l.ZP)(i.Z.USER_SETTINGS), [_, y] = r.useState(f(j));
+    return (0, r.useEffect)(() => {
+      y(f(j))
+    }, [j]), (0, a.jsx)(u.D.Provider, {
       value: {
-        setStep: E,
-        premiumType: l,
+        setStep: g,
+        premiumType: o,
         onClose: n,
         transitionState: t,
         premiumSubscription: s,
-        analyticsLocations: y,
+        analyticsLocations: v,
         analyticsLocation: p.Sbl.USER_SETTINGS,
         confettiCanvas: null,
         churnUserDiscountOffer: c,
         isFetchingChurnDiscountOffer: false,
         fullPrice: "$9.99",
         discountedPrice: "$4.99",
-        planId: u,
+        planId: d,
         paymentsBlocked: false,
-        renewalInvoice: f,
-        renewalInvoiceDetails: _,
+        renewalInvoice: m,
+        renewalInvoiceDetails: h,
         handleCancellation: () => new Promise((e, t) => {
           setTimeout(() => {
-            if (h) return void t();
+            if (x) return void t();
             e()
           }, 1e3)
         }),
         applyOffer: () => new Promise((e, t) => {
           setTimeout(() => {
-            if (g) return void t();
+            if (b) return void t();
             e()
           }, 1e3)
         }),
         pauseDuration: null,
         setPauseDuration: () => {}
       },
-      children: O
+      children: _
     })
   },
-  m = e => {
+  f = e => {
     switch (e) {
-      case u.R.DISCOUNT_APPLIED:
-        return (0, r.jsx)(c.i, {});
-      case u.R.CONFIRM_DISCOUNT:
-        return (0, r.jsx)(l.U, {});
-      case u.R.CONFIRM:
-        return (0, r.jsx)(s.G, {});
-      case u.R.PREVIEW:
-        return (0, r.jsx)(f.w, {});
-      case u.R.WHAT_YOU_LOSE:
+      case d.R.DISCOUNT_APPLIED:
+        return (0, a.jsx)(c.i, {});
+      case d.R.CONFIRM_DISCOUNT:
+        return (0, a.jsx)(o.U, {});
+      case d.R.CONFIRM:
+        return (0, a.jsx)(s.G, {});
+      case d.R.PREVIEW:
+        return (0, a.jsx)(m.w, {});
+      case d.R.WHAT_YOU_LOSE:
       default:
-        return (0, r.jsx)(_.n, {})
+        return (0, a.jsx)(h.n, {})
     }
   }

@@ -1,4 +1,4 @@
-/** Chunk was on 86478 **/
+/** Chunk was on 76349 **/
 /** chunk id: 611565, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -94,16 +94,16 @@ function b() {
     hasPreloaded: Chunk787879.Z.hasPreloaded,
     hasMoreToLoad: Chunk787879.Z.hasMoreToLoad,
     isLoadingComplete: Chunk787879.Z.isLoadingComplete
-  })), v = (0, Chunk399606.e7)([Chunk787879.Z], () => Chunk787879.Z.currentRequestAnalyticsPayload), j = (0, Chunk399606.cj)([Chunk787879.Z], () => Chunk787879.Z.getChannelInfoMap()), _ = (0, Chunk399606.cj)([Chunk592125.Z], () => {
+  })), j = (0, Chunk399606.e7)([Chunk787879.Z], () => Chunk787879.Z.currentRequestAnalyticsPayload), v = (0, Chunk399606.cj)([Chunk787879.Z], () => Chunk787879.Z.getChannelInfoMap()), _ = (0, Chunk399606.cj)([Chunk592125.Z], () => {
     let e = {};
-    return Object.entries(j).forEach(t => {
+    return Object.entries(v).forEach(t => {
       let [n] = t, a = d.Z.getChannel(n);
       e[n] = null != a ? a : null
     }), module
   }), y = (0, Chunk399606.cj)([Chunk592125.Z], () => exports.reduce((e, t) => {
     let n = d.Z.getChannel(t);
     return e[t] = null != n ? n : null, e
-  }, {})), C = (0, Chunk399606.e7)([Chunk787879.Z], () => Chunk787879.Z.getInboxMessages()), N = (0, Chunk399606.e7)([Chunk787879.Z], () => Chunk787879.Z.getDevOverrides().navOnClick);
+  }, {})), C = (0, Chunk399606.e7)([Chunk787879.Z], () => Chunk787879.Z.getInboxMessages()), E = (0, Chunk399606.e7)([Chunk787879.Z], () => Chunk787879.Z.getDevOverrides().navOnClick);
   return (0, Chunk951288.jsx)("div", {
     className: Chunk451429.panel,
     children: (0, Chunk951288.jsxs)(Chunk481060.zJl, {
@@ -129,7 +129,7 @@ function b() {
           children: [(0, Chunk951288.jsx)("div", {
             children: "Nav On Click"
           }), (0, Chunk951288.jsx)(Chunk481060.XZJ, {
-            checked: N,
+            checked: E,
             onChange: e => {
               o.Z.dispatch({
                 type: "NOTIFICATIONS_INBOX_SET_DEV_OVERRIDES",
@@ -175,17 +175,17 @@ function b() {
         }), (0, Chunk951288.jsxs)("div", {
           children: ["Is Loading Complete: ", g ? "✅" : "❌"]
         }), (0, Chunk951288.jsxs)("div", {
-          children: ["Last Loading Trigger: ", null == v ? true : v.loadingTrigger]
+          children: ["Last Loading Trigger: ", null == j ? true : j.loadingTrigger]
         })]
       }), (0, Chunk951288.jsxs)("div", {
         children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
           variant: "heading-lg/semibold",
           children: "Channel Info Map"
         }), (0, Chunk951288.jsxs)("div", {
-          children: ["Total Channels: ", Object.keys(j).length]
+          children: ["Total Channels: ", Object.keys(v).length]
         }), (0, Chunk951288.jsx)(Chunk681619.Z, {
           columns: f,
-          data: Object.entries(j).map(e => {
+          data: Object.entries(v).map(e => {
             var t, n;
             let [a, r] = e;
             return {

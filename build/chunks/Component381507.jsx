@@ -1,4 +1,4 @@
-/** Chunk was on 54400 **/
+/** Chunk was on 84071 **/
 /** chunk id: 381507, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -28,7 +28,7 @@ let h = () => {
     }),
     h = (0, Chunk410030.Fg)(),
     f = (0, Chunk780384.ap)(h),
-    _ = Chunk51144.ZP.getName(module),
+    x = Chunk51144.ZP.getName(module),
     m = f ? Chunk898969.Z : Chunk703614.Z;
   return null == module ? null : (0, Chunk951288.jsxs)("div", {
     className: Chunk908780.attributionBannerContainer,
@@ -60,7 +60,7 @@ let h = () => {
       variant: "text-xs/bold",
       className: Chunk908780.bannerHeader,
       children: Chunk388032.intl.format(Chunk388032.t.oxhCOj, {
-        userName: _
+        userName: x
       })
     }), (0, Chunk951288.jsx)(m, {
       className: Chunk908780.bannerIcon

@@ -1,7 +1,7 @@
-/** Chunk was on 86478 **/
+/** Chunk was on 76349 **/
 /** chunk id: 604776, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  D: () => v,
+  D: () => j,
   Z: () => _
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -26,7 +26,7 @@ let g = {
     [Chunk981631.kNB.REVERSE_TRIAL]: "Reverse Trial",
     [Chunk981631.kNB.FRACTIONAL_PREMIUM_GIVEBACK]: "Giveback"
   },
-  v = e => {
+  j = e => {
     var t;
     let {
       entitlement: n,
@@ -40,7 +40,7 @@ let g = {
         children: ["ID: ", n.id, " "]
       }), !r && (0, a.jsxs)(c.Text, {
         variant: "text-md/normal",
-        children: ["SKU: ", null == (t = j.find(e => e.value === n.skuId)) ? true : t.label]
+        children: ["SKU: ", null == (t = v.find(e => e.value === n.skuId)) ? true : t.label]
       }), null != n.startsAt && null != n.endsAt && (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsxs)(c.Text, {
           variant: "text-md/normal",
@@ -65,7 +65,7 @@ let g = {
       })]
     })
   },
-  j = [{
+  v = [{
     label: "1 hour",
     value: Chunk314794.a.PREMIUM_TIER_2_1_HOUR
   }, {
@@ -79,8 +79,8 @@ let g = {
 function _() {
   let [e, t] = Chunk647438.useState(false), [n, i] = Chunk647438.useState(Chunk314794.a.PREMIUM_TIER_2_1_HOUR), [u, g] = Chunk647438.useState([]), [_, y] = Chunk647438.useState([]), {
     refreshEntitlementList: C,
-    grantFractionalPremium: N,
-    deleteFractionalPremium: E,
+    grantFractionalPremium: E,
+    deleteFractionalPremium: N,
     triggerNextEntitlementFulfillment: S,
     entitlements: O,
     loading: T
@@ -143,13 +143,13 @@ function _() {
         }), (0, Chunk951288.jsx)(Chunk481060.PhF, {
           serialize: e => e,
           isSelected: e => e === n,
-          options: j,
+          options: v,
           select: Chunk120356,
           popoutLayerContext: Chunk246992.O$
         }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Grant Fractional Nitro",
-          onClick: () => N(require)
+          onClick: () => E(require)
         })]
       }), (0, Chunk951288.jsxs)("section", {
         className: Chunk696450.section,
@@ -178,7 +178,7 @@ function _() {
               size: Chunk755721.zx.Sizes.TINY,
               color: Chunk755721.zx.Colors.RED,
               look: Chunk755721.zx.Looks.OUTLINED,
-              onClick: () => E(),
+              onClick: () => N(),
               children: "Delete all"
             }), (0, Chunk951288.jsx)(Chunk755721.zx, {
               disabled: T,
@@ -202,10 +202,10 @@ function _() {
             variant: "text-md/bold",
             children: "Active premium"
           }), (0, Chunk951288.jsx)("div", {
-            children: Chunk55935.map(e => (0, a.jsx)(v, {
+            children: Chunk55935.map(e => (0, a.jsx)(j, {
               entitlement: e,
               active: true,
-              onDelete: () => E(e.id)
+              onDelete: () => N(e.id)
             }, e.id))
           })]
         }), _.length > 0 && (0, Chunk951288.jsxs)("div", {
@@ -216,7 +216,7 @@ function _() {
             variant: "text-md/bold",
             children: "Unconsumed Fractional Premium"
           }), (0, Chunk951288.jsx)("div", {
-            children: _.map(e => (0, a.jsx)(v, {
+            children: _.map(e => (0, a.jsx)(j, {
               entitlement: e
             }, e.id))
           })]

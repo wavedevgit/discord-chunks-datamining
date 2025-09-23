@@ -606,11 +606,12 @@ function ef(e) {
       value: $.bk.DISABLED,
       userId: F.default.getId()
     }), s && f.default.disconnect()
-  }, c = e => {
+  }, c = (e, t) => {
     f.default.selectVoiceChannel(e), (0, $.Ws)(ei.Odu.QUICK_ACTIONS, {
       type: $.Qu.CALL_BUTTON,
       value: $.bk.ENABLED,
-      userId: F.default.getId()
+      userId: F.default.getId(),
+      secondaryValue: t
     })
   }, [p, h] = r.useTransition(), m = e => t => {
     h(() => {

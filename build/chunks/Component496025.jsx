@@ -1,4 +1,4 @@
-/** Chunk was on 86478 **/
+/** Chunk was on 76349 **/
 /** chunk id: 496025, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk165432 = require("./165432.js"),
   Chunk451429 = require("./451429.js");
 
-function E() {
+function N() {
   var e;
   let t = (0, Chunk442837.Wu)([Chunk55589.Z], () => Chunk55589.Z.getSortedChannels()[1]),
     [n, i] = Chunk647438.useState(exports.length > 0 ? exports[0].channelId : true),
@@ -43,13 +43,13 @@ function E() {
         }
       })
     })),
-    v = Chunk647438.useCallback(() => {
+    j = Chunk647438.useCallback(() => {
       var e;
       if (null == l || !l.isPrivate()) return;
       let t = (0, Chunk630388.x9)(null != (e = l.recipientFlags) ? module : 0, Chunk602715.V.DISMISSED_IN_GAME_MESSAGE_NUX);
       Chunk258732.Z.updatePrivateChannelRecipientFlags(l.id, exports)
     }, [l]),
-    j = null != l && !!l.isPrivate() && (0, Chunk630388.yE)(null != (e = l.recipientFlags) ? module : 0, Chunk602715.V.DISMISSED_IN_GAME_MESSAGE_NUX);
+    v = null != l && !!l.isPrivate() && (0, Chunk630388.yE)(null != (e = l.recipientFlags) ? module : 0, Chunk602715.V.DISMISSED_IN_GAME_MESSAGE_NUX);
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-md/semibold",
@@ -104,7 +104,7 @@ function O() {
     }] = e;
     return (0, a.jsx)(c.j7V, {
       value: n,
-      onChange: e => (0, v.Z)(t, e),
+      onChange: e => (0, j.Z)(t, e),
       hideBorder: true,
       className: C.switch,
       children: r
@@ -114,7 +114,7 @@ function O() {
     className: l()(Chunk451429.panel, Chunk165432.panel),
     children: [module, (0, Chunk951288.jsx)("div", {
       className: Chunk165432.divider
-    }), (0, Chunk951288.jsx)(E, {}), (0, Chunk951288.jsx)("div", {
+    }), (0, Chunk951288.jsx)(N, {}), (0, Chunk951288.jsx)("div", {
       className: Chunk165432.divider
     }), (0, Chunk951288.jsx)(S, {})]
   })

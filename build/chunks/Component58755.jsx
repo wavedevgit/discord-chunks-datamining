@@ -1,7 +1,7 @@
-/** Chunk was on 86478 **/
+/** Chunk was on 76349 **/
 /** chunk id: 58755, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  P: () => j
+  P: () => v
 }), require("./388685.js"), require("./35282.js"), require("./49124.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -52,7 +52,7 @@ let g = Object.keys(Chunk500949.jQ).map(e => ({
     value: e,
     label: e
   })),
-  v = Array.from(Array.from(Object.keys(Chunk407146.b).reduce((e, t) => {
+  j = Array.from(Array.from(Object.keys(Chunk407146.b).reduce((e, t) => {
     let [n] = t.split(".");
     return e.add(n), e
   }, new Set))).map(e => ({
@@ -60,7 +60,7 @@ let g = Object.keys(Chunk500949.jQ).map(e => ({
     label: e
   }));
 
-function j(e) {
+function v(e) {
   let {
     state: t,
     setState: n
@@ -69,7 +69,7 @@ function j(e) {
   } = t, [l, s] = r.useState(null), o = (0, a.jsxs)("div", {
     className: x.section,
     children: [(0, a.jsx)(u.VcW, {
-      options: v,
+      options: j,
       placeholder: "Select a scale to edit...",
       value: true,
       onChange: e => {
@@ -126,12 +126,12 @@ function _(e) {
     name: c,
     base: f,
     lightness: b,
-    showColumnarPalettePreview: v,
-    colorSpace: j,
+    showColumnarPalettePreview: j,
+    colorSpace: v,
     easingStrength: _ = 1,
     useP3ColorSpace: y,
-    steps: N = 26
-  } = t, E = (0, p.XM)(t), S = (0, p.W6)(E, c);
+    steps: E = 26
+  } = t, N = (0, p.XM)(t), S = (0, p.W6)(N, c);
   return (0, a.jsxs)(u.Kqy, {
     gap: 20,
     children: [(0, a.jsxs)("div", {
@@ -149,7 +149,7 @@ function _(e) {
         children: c
       }), (0, a.jsx)(u.P3F, {
         onClick: function() {
-          let e = Object.entries(E).reduce((e, t) => {
+          let e = Object.entries(N).reduce((e, t) => {
             let [n, a] = t;
             return e[n] = {
               value: (0, i.Z)((0, l.Z)(a, p.HW.sRGB), {
@@ -177,7 +177,7 @@ function _(e) {
       label: "Color Space",
       description: "The color space used to generate the palette. Different color spaces will produce different results.",
       options: g,
-      value: j,
+      value: v,
       onChange: e => (0, p.t4)(c, e, n),
       popoutLayerContext: h.O$
     }), (0, a.jsx)(u.iRW, {
@@ -217,7 +217,7 @@ function _(e) {
       onMarkerRender: e => "".concat(e.toFixed(2))
     }), (0, a.jsx)(u.j7V, {
       note: "Renders the palette preview in a single column, useful for comparing the luminance of each step.",
-      value: v,
+      value: j,
       onChange: e => (0, p.KB)(c, e, n),
       children: "Show columnar palette preview"
     }), (0, a.jsx)(u.j7V, {
@@ -229,9 +229,9 @@ function _(e) {
     }), (0, a.jsx)(u.iRW, {
       label: "Steps",
       description: "Adjust the number of steps in the palette.",
-      helperText: "".concat(N),
+      helperText: "".concat(E),
       onValueRender: () => null,
-      initialValue: N,
+      initialValue: E,
       minValue: (0, p.A0)(c).length,
       maxValue: 100,
       onValueChange: e => (0, p.YC)(c, Math.round(e), n),
@@ -240,22 +240,22 @@ function _(e) {
       title: "Palette Preview",
       children: (0, a.jsx)("div", {
         className: x.paletteOverrides,
-        "data-columnar": v,
-        children: Object.entries(E).map((e, n) => {
+        "data-columnar": j,
+        children: Object.entries(N).map((e, n) => {
           let [r, c] = e, d = (0, p.HI)(c), m = (0, s.Z)((0, o.Z)("black"), c) > 4.5 ? "black" : "white", h = S[r];
           return (0, a.jsxs)("div", {
             style: {
               backgroundColor: d
             },
             children: [(0, a.jsxs)(u.Text, {
-              variant: v ? "text-sm/medium" : "text-xs/medium",
+              variant: j ? "text-sm/medium" : "text-xs/medium",
               style: {
                 color: m
               },
-              children: [t.name, ".", n + 1, v && null != h ? (0, a.jsx)("strong", {
+              children: [t.name, ".", n + 1, j && null != h ? (0, a.jsx)("strong", {
                 children: " - ".concat(h)
               }) : ""]
-            }), v && (0, a.jsxs)(u.Text, {
+            }), j && (0, a.jsxs)(u.Text, {
               variant: "text-xxs/medium",
               style: {
                 opacity: .75,

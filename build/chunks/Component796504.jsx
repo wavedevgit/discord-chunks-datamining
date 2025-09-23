@@ -1,7 +1,7 @@
 /** Chunk was on 51868 **/
-/** chunk id: 796504, original params: e,n,t (module,exports,require) **/
+/** chunk id: 796504, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  default: () => p
+  default: () => f
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -14,38 +14,38 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk908932 = require("./908932.js");
 
-function p(e) {
-  var n;
+function f(e) {
+  var t;
   let {
-    eulaId: t,
-    transitionState: p,
-    onClose: f
-  } = e, h = (0, a.e7)([d.Z], () => d.Z.getEULA(t));
-  i.useEffect(() => {
-    (0, l.N)(t)
-  }, [t]);
-  let S = null != (n = null == h ? true : h.name) ? n : u.intl.string(u.t.ZTNur6),
-    j = null != h ? (0, r.jsx)(c.Z, {
-      children: h.content,
-      className: E.markdown
-    }) : (0, r.jsx)(s.$jN, {
-      className: E.spinner
+    eulaId: r,
+    transitionState: f,
+    onClose: h
+  } = e, g = (0, a.e7)([u.Z], () => u.Z.getEULA(r));
+  l.useEffect(() => {
+    (0, c.N)(r)
+  }, [r]);
+  let b = null != (t = null == g ? true : g.name) ? t : d.intl.string(d.t.ZTNur6),
+    m = null != g ? (0, n.jsx)(s.Z, {
+      children: g.content,
+      className: p.markdown
+    }) : (0, n.jsx)(o.$jN, {
+      className: p.spinner
     });
-  return (0, r.jsxs)(s.Y0X, {
-    transitionState: p,
-    size: s.CgR.SMALL,
-    "aria-label": S,
+  return (0, n.jsxs)(o.Y0X, {
+    transitionState: f,
+    size: o.CgR.SMALL,
+    "aria-label": b,
     parentComponent: "EULA",
-    children: [(0, r.jsxs)(s.xBx, {
-      justify: o.Z.Justify.BETWEEN,
-      children: [(0, r.jsx)(s.X6q, {
+    children: [(0, n.jsxs)(o.xBx, {
+      justify: i.Z.Justify.BETWEEN,
+      children: [(0, n.jsx)(o.X6q, {
         variant: "heading-lg/semibold",
-        children: S
-      }), (0, r.jsx)(s.olH, {
-        onClick: f
+        children: b
+      }), (0, n.jsx)(o.olH, {
+        onClick: h
       })]
-    }), (0, r.jsx)(s.hzk, {
-      children: j
+    }), (0, n.jsx)(o.hzk, {
+      children: m
     })]
   })
 }

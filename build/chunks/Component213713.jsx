@@ -1,7 +1,7 @@
-/** Chunk was on 86478 **/
+/** Chunk was on 76349 **/
 /** chunk id: 213713, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => Z
+  Z: () => A
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -32,7 +32,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk206583 = require("./206583.js"),
   Chunk680027 = require("./680027.js"),
   Chunk451429 = require("./451429.js");
-let R = [{
+let I = [{
   key: "type",
   cellClassName: l()(Chunk680027.cell, Chunk680027.cellType),
   render(e) {
@@ -65,17 +65,17 @@ let R = [{
     let {
       type: t
     } = e;
-    return (0, a.jsx)(I, {
+    return (0, a.jsx)(w, {
       type: t
     })
   }
 }];
 
-function I(e) {
+function w(e) {
   var t, n;
   let {
     type: r
-  } = e, i = (0, u.e7)([E.Z], () => E.Z.getFilters()), l = null != (n = null == i || null == (t = i.types) ? true : t.has(r)) && n;
+  } = e, i = (0, u.e7)([N.Z], () => N.Z.getFilters()), l = null != (n = null == i || null == (t = i.types) ? true : t.has(r)) && n;
   return (0, a.jsx)(h.XZJ, {
     checked: l,
     onChange: function() {
@@ -92,7 +92,7 @@ function I(e) {
   })
 }
 
-function Z() {
+function A() {
   var e, t;
   let n = (0, Chunk442837.e7)([Chunk146282.Z], () => Chunk146282.Z.getFeed(Chunk206583.YN.GLOBAL_FEED)),
     i = (0, Chunk442837.e7)([Chunk146282.Z], () => Chunk146282.Z.getDebugImpressionCappingDisabled()),
@@ -112,11 +112,11 @@ function Z() {
       var e;
       return (null == (e = Chunk146282.Z.getFeedState(Chunk206583.YN.GLOBAL_FEED)) ? true : module.loading) === true
     }),
-    [I, Z] = Chunk647438.useState(""),
+    [w, A] = Chunk647438.useState(""),
     D = (0, Chunk442837.e7)([Chunk77498.Z, Chunk812206.Z], () => {
       var e, t, n;
-      return parseInt(I) > 0 ? I : null != (n = null == (e = Chunk77498.Z.getGameByName(I)) ? true : module.id) ? require : null == (t = Chunk812206.Z.getApplicationByName(I)) ? true : exports.id
-    }, [I]),
+      return parseInt(w) > 0 ? w : null != (n = null == (e = Chunk77498.Z.getGameByName(w)) ? true : module.id) ? require : null == (t = Chunk812206.Z.getApplicationByName(w)) ? true : exports.id
+    }, [w]),
     L = (0, Chunk168524.Z)({
       applicationId: D,
       location: "DevToolsContentInventory",
@@ -139,7 +139,7 @@ function Z() {
         children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
           children: "Inventory"
         }), Chunk392711.length > 0 && (0, Chunk951288.jsx)(Chunk681619.Z, {
-          columns: R,
+          columns: I,
           data: Chunk392711
         }), (0, Chunk951288.jsx)(Chunk481060.LZC, {
           size: 8
@@ -207,15 +207,15 @@ function Z() {
           children: "Game Profile"
         }), (0, Chunk951288.jsx)(Chunk481060.oil, {
           placeholder: "App ID or full name",
-          onChange: e => (0 === e.length || e.length >= 18) && Z(e),
+          onChange: e => (0 === e.length || e.length >= 18) && A(e),
           onKeyDown: e => {
-            "Enter" === e.key && (I === e.currentTarget.value ? null == L || L(e) : Z(e.currentTarget.value))
+            "Enter" === e.key && (w === e.currentTarget.value ? null == L || L(e) : A(e.currentTarget.value))
           },
-          error: I.length > 0 && null == L ? "No game profile for ".concat(null != D ? D : I + " - try by id", ".") : true,
+          error: w.length > 0 && null == L ? "No game profile for ".concat(null != D ? D : w + " - try by id", ".") : true,
           successMessage: null != L ? "Game profile found" : true
         }), (0, Chunk951288.jsx)("ul", {
           children: U.map(e => (0, a.jsx)("li", {
-            children: (0, a.jsx)(A, {
+            children: (0, a.jsx)(Z, {
               application: e
             })
           }, "follow-game-".concat(e.id)))
@@ -245,13 +245,13 @@ function Z() {
     })
   })
 }
-let A = e => {
+let Z = e => {
   let {
     application: t
-  } = e, n = (0, j.Z)({
+  } = e, n = (0, v.Z)({
     applicationId: t.id,
     location: "DevToolsContentInventory",
-    source: v.m1.DevTools
+    source: j.m1.DevTools
   });
   return (0, a.jsx)(h.P3F, {
     onClick: n,

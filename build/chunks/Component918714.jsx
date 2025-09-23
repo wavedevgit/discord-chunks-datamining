@@ -1,4 +1,4 @@
-/** Chunk was on 86478 **/
+/** Chunk was on 76349 **/
 /** chunk id: 918714, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -44,7 +44,7 @@ function _(e) {
 let y = function(e) {
   let {
     onClose: t
-  } = e, [n, u] = r.useState(null), [p, x] = r.useState(true), [y, C] = r.useState(null), [N, E] = r.useState(false), S = r.useCallback(async () => {
+  } = e, [n, u] = r.useState(null), [p, x] = r.useState(true), [y, C] = r.useState(null), [E, N] = r.useState(false), S = r.useCallback(async () => {
     x(true), C(null);
     try {
       var e;
@@ -72,7 +72,7 @@ let y = function(e) {
     }
   }, [t]), O = r.useCallback(async e => {
     if (null !== n) {
-      E(true);
+      N(true);
       try {
         let t = {
           task_id: n.task_id,
@@ -83,7 +83,7 @@ let y = function(e) {
       } catch (e) {
         C(g.intl.string(b.default["+QRSxc"]))
       } finally {
-        E(false)
+        N(false)
       }
     }
   }, [n, S]);
@@ -92,10 +92,10 @@ let y = function(e) {
   });
   let T = r.useMemo(() => (null == n ? true : n.task_type) === m.UA.AGE_VERIFICATION, [n]);
   return (0, a.jsxs)("div", {
-    className: v.background,
+    className: j.background,
     children: [(0, a.jsx)("img", {
-      className: v.artwork,
-      src: j,
+      className: j.artwork,
+      src: v,
       alt: ""
     }), T ? (0, a.jsx)(o.Z, {
       transitionState: i.Dvm.ENTERED,
@@ -108,20 +108,20 @@ let y = function(e) {
       },
       dismissable: false
     }) : (0, a.jsx)("div", {
-      className: v.safetyFlow,
+      className: j.safetyFlow,
       children: p ? (0, a.jsx)(i.$jN, {
         type: i.$jN.Type.SPINNING_CIRCLE
       }) : (0, a.jsx)("div", {
-        className: v.container,
+        className: j.container,
         children: (0, a.jsxs)(i.Kqy, {
           direction: "horizontal",
           justify: "start",
-          className: v.body,
+          className: j.body,
           children: [null !== y && (0, a.jsxs)(i.Kqy, {
             direction: "vertical",
             justify: "space-between",
             align: "center",
-            className: v.interimBody,
+            className: j.interimBody,
             padding: 16,
             children: [(0, a.jsxs)(i.Kqy, {
               direction: "vertical",
@@ -156,7 +156,7 @@ let y = function(e) {
           }), null === y && null != n && (0, a.jsx)(_, {
             task: n,
             handleSubmit: O,
-            disabled: N
+            disabled: E
           })]
         })
       })

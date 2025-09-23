@@ -1,34 +1,34 @@
-/** Chunk was on 54400 **/
+/** Chunk was on 84071 **/
 /** chunk id: 699758, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   KN: () => l,
-  ZP: () => s,
-  mo: () => a
+  ZP: () => a,
+  mo: () => o
 }), require("./388685.js"), require("./539854.js");
 var r, Chunk647438 = require("./647438.js"),
   l = ((r = {})[r.Trick = 0] = "Trick", r[r.Treat = 1] = "Treat", r);
-let a = 2;
+let o = 2;
 
-function s(e, t, n) {
+function a(e, t, n) {
   let r = i.useRef(Math.random());
   return i.useMemo(() => {
     if (null == e || 0 === e.length) return null;
     if (null == t || 0 === t.length) {
       let t = null != n && e.some(e => e.skuId === n.skuId) ? n : e[0];
       return {
-        defaultCategory: Math.floor(r.current * a),
+        defaultCategory: Math.floor(r.current * o),
         defaultHighlightedReward: t
       }
     }
     let i = [],
       l = new Map,
-      s = new Map;
+      a = new Map;
     for (let n of t)
-      if (n.variants.length >= a)
-        for (let t = 0; t < a; t++) {
+      if (n.variants.length >= o)
+        for (let t = 0; t < o; t++) {
           let r = t,
-            a = n.variants[t];
-          e.some(e => e.skuId === a.skuId) && (s.set(a.skuId, r), l.has(r) || (i.push(r), l.set(r, function(e, t) {
+            o = n.variants[t];
+          e.some(e => e.skuId === o.skuId) && (a.set(o.skuId, r), l.has(r) || (i.push(r), l.set(r, function(e, t) {
             return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {
@@ -56,22 +56,22 @@ function s(e, t, n) {
               })
             }
             return e
-          }({}, a), {
+          }({}, o), {
             name: n.name
           }))))
         }
     if (0 === i.length) return null;
     if (null != n) {
-      let e = s.get(n.skuId);
+      let e = a.get(n.skuId);
       if (null != e) return {
         defaultCategory: e,
         defaultHighlightedReward: n
       }
     }
-    let o = i[Math.floor(r.current * i.length)];
+    let s = i[Math.floor(r.current * i.length)];
     return {
-      defaultCategory: o,
-      defaultHighlightedReward: l.get(o)
+      defaultCategory: s,
+      defaultHighlightedReward: l.get(s)
     }
   }, [e, t, n])
 }

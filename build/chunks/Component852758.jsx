@@ -1,4 +1,4 @@
-/** Chunk was on 86478 **/
+/** Chunk was on 76349 **/
 /** chunk id: 852758, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk815660 = require("./815660.js"),
   Chunk388032 = require("./388032.jsx");
 
-function E(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       a = Object.keys(n);
@@ -74,12 +74,12 @@ function O() {
       verification_types: O
     }
   }, {}, [O.toString()]);
-  let w = () => {
+  let R = () => {
     (0, Chunk809206.FD)(), (0, Chunk481060.ZDy)(async () => {
       let {
         default: e
       } = await require.e("35401").then(require.bind(require, 284549));
-      return t => (0, a.jsx)(e, E({}, t))
+      return t => (0, a.jsx)(e, N({}, t))
     }, {
       modalKey: Chunk308569.F0,
       Layer: Chunk429142.ZP
@@ -92,15 +92,15 @@ function O() {
       let {
         default: e
       } = await Promise.resolve().then(require.bind(require, 468026));
-      return t => (0, a.jsx)(e, S(E({}, t), {
-        title: N.intl.string(N.t.KLnLIC),
-        body: N.intl.string(N.t.XGbCq6),
-        confirmText: N.intl.string(N.t["3oK4q6"])
+      return t => (0, a.jsx)(e, S(N({}, t), {
+        title: E.intl.string(E.t.KLnLIC),
+        body: E.intl.string(E.t.XGbCq6),
+        confirmText: E.intl.string(E.t["3oK4q6"])
       }))
     }, {
       modalKey: Chunk308569.HR,
       Layer: Chunk429142.ZP,
-      onCloseCallback: w
+      onCloseCallback: R
     })
   }, [O, k]), (0, Chunk951288.jsx)(Chunk762756.Z, {
     types: O,
@@ -119,11 +119,11 @@ function O() {
     },
     theme: exports,
     onClick: e => {
-      e === y.PUi.EMAIL_OR_PHONE || e === y.PUi.EMAIL || e === y.PUi.REVERIFY_EMAIL ? w() : (0, o.ZDy)(async () => {
+      e === y.PUi.EMAIL_OR_PHONE || e === y.PUi.EMAIL || e === y.PUi.REVERIFY_EMAIL ? R() : (0, o.ZDy)(async () => {
         let {
           default: e
         } = await Promise.resolve().then(n.bind(n, 607018));
-        return t => (0, a.jsx)(e, E({
+        return t => (0, a.jsx)(e, N({
           layerContext: x.mK,
           reason: f.L.USER_ACTION_REQUIRED
         }, t))
@@ -138,15 +138,15 @@ function O() {
           ConfirmModal: e,
           Text: t
         } = await Promise.resolve().then(require.bind(require, 481060));
-        return n => (0, a.jsx)(e, S(E({
-          header: N.intl.string(N.t["2jxGen"]),
-          confirmText: N.intl.string(N.t["2jxGen"]),
-          cancelText: N.intl.string(N.t["ETE/oK"]),
+        return n => (0, a.jsx)(e, S(N({
+          header: E.intl.string(E.t["2jxGen"]),
+          confirmText: E.intl.string(E.t["2jxGen"]),
+          cancelText: E.intl.string(E.t["ETE/oK"]),
           onConfirm: () => c.Z.logout("verification")
         }, n), {
           children: (0, a.jsx)(t, {
             variant: "text-md/normal",
-            children: N.intl.string(N.t.SUnWBA)
+            children: E.intl.string(E.t.SUnWBA)
           })
         }))
       }, {

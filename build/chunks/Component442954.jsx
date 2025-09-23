@@ -1,7 +1,7 @@
-/** Chunk was on 86478 **/
+/** Chunk was on 76349 **/
 /** chunk id: 442954, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => v
 }), require("./642613.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -49,7 +49,7 @@ function g(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let v = {
+let j = {
   CollectiblesExpiryModal: async () => {
     let {
       default: e
@@ -155,8 +155,8 @@ let v = {
   }
 };
 
-function j() {
-  let e = Chunk647438.useMemo(() => Object.keys(v).map(e => ({
+function v() {
+  let e = Chunk647438.useMemo(() => Object.keys(j).map(e => ({
       label: e,
       value: e
     })).sort((e, t) => e.label.localeCompare(t.label)), []),
@@ -182,7 +182,7 @@ function j() {
           }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
             variant: "primary",
             text: "Open",
-            onClick: () => (0, Chunk481060.ZDy)(v[exports])
+            onClick: () => (0, Chunk481060.ZDy)(j[exports])
           })]
         })]
       }), (0, Chunk951288.jsxs)("section", {

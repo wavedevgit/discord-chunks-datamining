@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 963071, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 76349 **/
+/** chunk id: 963071, original params: e,t,n (module,exports,require) **/
 module.exports = {
   markdown: "markdown_d285a6",
   blockquote: "blockquote_d285a6",

@@ -1,4 +1,4 @@
-/** Chunk was on 86478 **/
+/** Chunk was on 76349 **/
 /** chunk id: 596768, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => T
@@ -72,58 +72,58 @@ let S = [{
       } = e, u = d()(s);
       return (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsxs)(x.ZP, {
-          className: l()(E.headerBar, N.subPanelHeaderBar),
+          className: l()(N.headerBar, E.subPanelHeaderBar),
           children: [(0, a.jsx)(x.ZP.Icon, {
             icon: h.IeX,
             tooltip: t
           }), (0, a.jsx)(x.ZP.Title, {
             children: t
           })]
-        }), (0, a.jsxs)(v.E, {
-          className: N.commonProperties,
-          children: [(0, a.jsx)(v.Z9, {
+        }), (0, a.jsxs)(j.E, {
+          className: E.commonProperties,
+          children: [(0, a.jsx)(j.Z9, {
             name: "Timestamp (local)",
             children: (0, a.jsx)("time", {
               dateTime: s.toISOString(),
               title: (0, f.vc)(u, "LLLL"),
               children: (0, f.Y4)(u)
             })
-          }), "guild" === n.type && (0, a.jsx)(v.Z9, {
+          }), "guild" === n.type && (0, a.jsx)(j.Z9, {
             name: "Guild ID",
             children: (0, a.jsx)("code", {
               children: n.guildId
             })
-          }), (0, a.jsx)(v.Z9, {
+          }), (0, a.jsx)(j.Z9, {
             name: "Bucket",
             children: (0, a.jsx)("code", {
               children: n.bucket
             })
-          }), (0, a.jsx)(v.Z9, {
+          }), (0, a.jsx)(j.Z9, {
             name: "Revision",
             children: (0, a.jsx)("code", {
               children: n.revision
             })
-          }), (0, a.jsx)(v.Z9, {
+          }), (0, a.jsx)(j.Z9, {
             name: "Override",
-            children: (0, a.jsx)(v.wl, {
+            children: (0, a.jsx)(j.wl, {
               value: n.override
             })
-          }), (0, a.jsx)(v.Z9, {
+          }), (0, a.jsx)(j.Z9, {
             name: "Exposure type",
             children: (0, a.jsx)("code", {
               children: r
             })
-          }), (0, a.jsx)(v.Z9, {
+          }), (0, a.jsx)(j.Z9, {
             name: "Excluded",
-            children: (0, a.jsx)(v.wl, {
+            children: (0, a.jsx)(j.wl, {
               value: i
             })
-          }), (0, a.jsx)(v.Z9, {
+          }), (0, a.jsx)(j.Z9, {
             name: "Previously tracked",
-            children: (0, a.jsx)(v.wl, {
+            children: (0, a.jsx)(j.wl, {
               value: c
             })
-          }), (0, a.jsx)(v.Z9, {
+          }), (0, a.jsx)(j.Z9, {
             name: "Location",
             children: (0, a.jsx)("code", {
               children: o
@@ -137,7 +137,7 @@ let S = [{
 function T() {
   let [e, t] = Chunk647438.useState(""), n = Chunk647438.useRef(null), i = (0, Chunk442837.Wu)([Chunk120816.Z], () => Chunk120816.Z.loggedTriggers), s = Chunk647438.useMemo(() => Chunk120356.filter(t => 0 === e.length || o()(e, t.experimentId)).sort((e, t) => t.timestamp.getTime() - e.timestamp.getTime()), [Chunk120356, module]), [c, d] = Chunk647438.useState(true), x = Chunk658722.find(e => e.key === c), {
     TabBar: f,
-    renderSelectedTab: v
+    renderSelectedTab: j
   } = (0, Chunk621060.ZP)({
     tabs: O
   }, []), T = (0, Chunk442837.e7)([Chunk120816.Z], () => Chunk120816.Z.trackTriggers), P = Chunk647438.useCallback(e => {

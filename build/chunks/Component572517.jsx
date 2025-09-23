@@ -1,7 +1,7 @@
-/** Chunk was on 54400 **/
+/** Chunk was on 84071 **/
 /** chunk id: 572517, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  c: () => x
+  c: () => _
 });
 var Chunk951288 = require("./951288.js"),
   Chunk442837 = require("./442837.js"),
@@ -15,32 +15,32 @@ var Chunk951288 = require("./951288.js"),
   Chunk897942 = require("./897942.jsx"),
   Chunk432483 = require("./432483.js");
 
-function x() {
+function _() {
   var e, t;
   let n = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion),
-    x = (0, Chunk410030.ZP)(),
-    h = (0, Chunk780384.wj)(x),
+    _ = (0, Chunk410030.ZP)(),
+    h = (0, Chunk780384.wj)(_),
     f = (0, Chunk347896.Z)(),
-    _ = null == f ? true : f.planSelectionBanner,
+    x = null == f ? true : f.planSelectionBanner,
     {
       claimableRewards: m
     } = (0, Chunk987209.wD)();
-  if (null == _ || null == m) return null;
-  let j = null == (e = _.getBackgroundImageUrl) ? true : module.call(_, h),
-    g = (0, Chunk717401.Yr)(j),
-    b = null == (t = _.gradientConfig) ? true : exports.call(_, {
+  if (null == x || null == m) return null;
+  let j = null == (e = x.getBackgroundImageUrl) ? true : module.call(x, h),
+    b = (0, Chunk717401.Yr)(j),
+    g = null == (t = x.gradientConfig) ? true : exports.call(x, {
       isDarkMode: h,
       isAndroid: false
     }),
-    L = (0, Chunk717401.Tl)(b);
+    L = (0, Chunk717401.Tl)(g);
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk432483.promotionalFooterBanner,
-    style: null != g ? g : L,
+    style: null != b ? b : L,
     children: [(0, Chunk951288.jsx)("div", {
       className: Chunk432483.avatar,
       children: (0, Chunk951288.jsx)(Chunk897942.Z, {
         claimableRewards: m,
-        maxRewardImageSrc: _.getImageUrl(h, require),
+        maxRewardImageSrc: x.getImageUrl(h, require),
         size: Chunk481060.EFr.SIZE_40,
         imageScaling: 2
       })
@@ -48,7 +48,7 @@ function x() {
       variant: "text-md/medium",
       className: Chunk432483.bannerText,
       color: "always-white",
-      children: _.desktopBannerText(m.length)
+      children: x.desktopBannerText(m.length)
     })]
   })
 }

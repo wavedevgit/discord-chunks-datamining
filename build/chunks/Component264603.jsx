@@ -1,4 +1,4 @@
-/** Chunk was on 86478 **/
+/** Chunk was on 76349 **/
 /** chunk id: 264603, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk246992 = require("./246992.js"),
   Chunk451429 = require("./451429.js"),
   Chunk441900 = require("./441900.js");
-let j = [{
+let v = [{
   label: "Unset",
   value: Chunk524437.O_.SLAYER_SDK_RECEIVE_IN_GAME_DMS_UNSET
 }, {
@@ -46,7 +46,7 @@ function _() {
     }),
     {
       canStartAuthorization: C,
-      startAuthorization: N
+      startAuthorization: E
     } = (0, Chunk20471.F)(_);
   return (0, Chunk951288.jsxs)("div", {
     ref: module,
@@ -57,7 +57,7 @@ function _() {
         variant: "text-md/normal",
         children: "Receive DMs In Game"
       }), (0, Chunk951288.jsx)(Chunk481060.PhF, {
-        options: j,
+        options: v,
         isSelected: e => e === t,
         select: Chunk695346.JG.updateSetting,
         popoutLayerContext: Chunk246992.O$,
@@ -86,7 +86,7 @@ function _() {
         }).join(", ")]
       }) : null, (0, Chunk951288.jsx)(Chunk481060.zxk, {
         disabled: !C,
-        onClick: N,
+        onClick: E,
         variant: "primary",
         text: "Start Authorization"
       })]

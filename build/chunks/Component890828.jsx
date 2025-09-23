@@ -269,7 +269,7 @@ function z(e) {
       hasQuery: false,
       query: t,
       currentVoiceChannel: n,
-      onSelect: r,
+      onSelect: e => r(e, "recent channel"),
       scrollable: false
     }), u.length > 0 && (0, i.jsx)(V, {
       sectionHeader: T.intl.string(T.t["0lvb9P"]),
@@ -277,7 +277,7 @@ function z(e) {
       hasQuery: false,
       query: t,
       currentVoiceChannel: n,
-      onSelect: r,
+      onSelect: e => r(e, "friend channel"),
       scrollable: false
     })]
   }) : (0, i.jsx)(M, {
@@ -308,8 +308,8 @@ function W(e) {
   let m = r.useCallback(e => {
       "Escape" === e.key && o()
     }, [o]),
-    g = r.useCallback(e => {
-      u(e), o()
+    g = r.useCallback((e, t) => {
+      u(e, t), o()
     }, [u, o]);
   r.useEffect(() => (document.addEventListener("keydown", m, true), () => {
     document.removeEventListener("keydown", m, true)
@@ -374,7 +374,7 @@ function W(e) {
       hasQuery: y,
       query: d,
       currentVoiceChannel: l,
-      onSelect: g
+      onSelect: e => g(e, "search channel")
     }) : (0, i.jsx)(z, {
       searchQuery: d,
       currentVoiceChannel: l,

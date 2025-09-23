@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 284829, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 69432 **/
+/** chunk id: 284829, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
-  U: () => O
+  U: () => y
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,64 +21,64 @@ var Chunk951288 = require("./951288.js"),
   Chunk997892 = require("./997892.js"),
   Chunk234286 = require("./234286.js"),
   Chunk288541 = require("./288541.js");
-let O = () => {
+let y = () => {
   let {
-    transitionState: e,
-    onClose: t,
-    premiumType: n,
-    premiumSubscription: O,
-    setStep: v,
-    applyOffer: I,
-    churnUserDiscountOffer: T,
-    discountedPrice: S,
-    fullPrice: A
-  } = (0, Chunk594135.a)(), [C, N] = (0, Chunk647438.useState)(false), [R, P] = (0, Chunk647438.useState)(false), {
-    enabled: w
+    transitionState: t,
+    onClose: n,
+    premiumType: e,
+    premiumSubscription: y,
+    setStep: S,
+    applyOffer: _,
+    churnUserDiscountOffer: D,
+    discountedPrice: E,
+    fullPrice: N
+  } = (0, Chunk594135.a)(), [j, T] = (0, Chunk647438.useState)(false), [b, A] = (0, Chunk647438.useState)(false), {
+    enabled: O
   } = Chunk219673.b.useConfig({
     location: "ConfirmDiscountStep"
-  }), D = async () => {
-    if (null === T) return void P(true);
-    N(true), P(false);
+  }), I = async () => {
+    if (null === D) return void A(true);
+    T(true), A(false);
     try {
-      await I(), v(Chunk45474.R.DISCOUNT_APPLIED)
-    } catch (e) {
-      P(true), N(false)
+      await _(), S(Chunk45474.R.DISCOUNT_APPLIED)
+    } catch (t) {
+      A(true), T(false)
     }
   };
-  if (null === T || null === S) return (0, Chunk951288.jsx)("div", {
+  if (null === D || null === E) return (0, Chunk951288.jsx)("div", {
     className: Chunk950728.spinnerContainer,
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {})
   });
-  let x = require === Chunk474936.p9.TIER_2,
-    L = [{
+  let R = require === Chunk474936.p9.TIER_2,
+    k = [{
       text: Chunk388032.intl.string(Chunk388032.t.zl7LZm),
       onClick: () => exports(),
       variant: "secondary",
-      disabled: C
+      disabled: j
     }, {
       text: Chunk388032.intl.string(Chunk388032.t.CKSuZG),
-      onClick: () => D(),
+      onClick: () => I(),
       variant: "primary",
       icon: Chunk481060.SrA,
-      loading: C,
-      disabled: C
+      loading: j,
+      disabled: j
     }];
   return (0, Chunk951288.jsxs)(Chunk667202.I, {
     graphic: {
       type: "image",
-      src: x ? w ? Chunk288541.Z : Chunk234286 : Chunk997892
+      src: R ? O ? Chunk288541.Z : Chunk234286 : Chunk997892
     },
-    gradientColor: x ? "nitro-pink" : "nitro-green",
+    gradientColor: R ? "nitro-pink" : "nitro-green",
     transitionState: module,
-    title: O.status === Chunk981631.O0b.CANCELED ? Chunk388032.intl.string(Chunk388032.t["2Otztr"]) : "".concat(Chunk388032.intl.format(Chunk388032.t.q9Vxu7, {
-      percent: T.discount.amount
+    title: y.status === Chunk981631.O0b.CANCELED ? Chunk388032.intl.string(Chunk388032.t["2Otztr"]) : "".concat(Chunk388032.intl.format(Chunk388032.t.q9Vxu7, {
+      percent: D.discount.amount
     })),
-    actions: L,
+    actions: k,
     onClose: async () => exports(),
     children: [(0, Chunk951288.jsx)("div", {
       className: Chunk950728.offerDetailContainer,
       children: (0, Chunk951288.jsx)(Chunk10508.o, {
-        userDiscountOffer: T,
+        userDiscountOffer: D,
         offerState: Chunk10508.w.CONFIRMING
       })
     }), (0, Chunk951288.jsx)("div", {
@@ -87,21 +86,21 @@ let O = () => {
       children: (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-xs/medium",
         color: "text-secondary",
-        children: O.status === Chunk981631.O0b.CANCELED ? Chunk388032.intl.format(Chunk388032.t.mY3ysL, {
-          discountedPrice: S,
-          billingPeriod: (0, Chunk74538.JP)(T.discount.user_usage_limit_interval),
-          numMonths: T.discount.user_usage_limit,
-          fullPrice: A,
+        children: y.status === Chunk981631.O0b.CANCELED ? Chunk388032.intl.format(Chunk388032.t.mY3ysL, {
+          discountedPrice: E,
+          billingPeriod: (0, Chunk74538.JP)(D.discount.user_usage_limit_interval),
+          numMonths: D.discount.user_usage_limit,
+          fullPrice: N,
           paidURL: Chunk63063.Z.getArticleURL(Chunk981631.BhN.PAID_TERMS)
         }) : Chunk388032.intl.format(Chunk388032.t.hrGTjI, {
-          discountedPrice: S,
-          billingPeriod: (0, Chunk74538.JP)(T.discount.user_usage_limit_interval),
-          numMonths: T.discount.user_usage_limit,
-          fullPrice: A,
+          discountedPrice: E,
+          billingPeriod: (0, Chunk74538.JP)(D.discount.user_usage_limit_interval),
+          numMonths: D.discount.user_usage_limit,
+          fullPrice: N,
           helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.PAID_TERMS)
         })
       })
-    }), R ? (0, Chunk951288.jsx)(Chunk434333.k, {
+    }), b ? (0, Chunk951288.jsx)(Chunk434333.k, {
       children: Chunk388032.intl.string(Chunk388032.t["5mlOCQ"])
     }) : null]
   })

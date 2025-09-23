@@ -1,7 +1,7 @@
-/** Chunk was on 86478 **/
+/** Chunk was on 76349 **/
 /** chunk id: 958328, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => v
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -21,7 +21,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk989295 = require("./989295.js"),
   Chunk451429 = require("./451429.js");
 
-function v(e) {
+function j(e) {
   let {
     title: t,
     can: n
@@ -43,32 +43,32 @@ function v(e) {
   })
 }
 
-function j() {
+function v() {
   let e = (0, Chunk442837.e7)([Chunk944486.Z], () => Chunk944486.Z.getChannelId()),
     t = (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId()),
     n = (0, Chunk442837.e7)([Chunk592125.Z], () => Chunk592125.Z.getChannel(module)),
     r = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuild(exports)),
-    j = (0, Chunk442837.e7)([Chunk496675.Z], () => Chunk496675.Z.computePermissions(require)),
+    v = (0, Chunk442837.e7)([Chunk496675.Z], () => Chunk496675.Z.computePermissions(require)),
     _ = (0, Chunk442837.e7)([Chunk496675.Z], () => Chunk496675.Z.computePermissions(Chunk120356)),
     y = (0, Chunk933557.ZP)(require, true),
     C = null != require ? (0, Chunk71080.IG)(require, false) : null,
-    N = null != Chunk120356 ? Chunk233608.Z.getGuildPermissionSpecMap(Chunk120356) : null,
-    E = Object.values(null != C ? C : {}).map(e => {
+    E = null != Chunk120356 ? Chunk233608.Z.getGuildPermissionSpecMap(Chunk120356) : null,
+    N = Object.values(null != C ? C : {}).map(e => {
       let {
         title: t,
         flag: n
-      } = e, r = l.e$(j, n);
-      return (0, a.jsx)(v, {
+      } = e, r = l.e$(v, n);
+      return (0, a.jsx)(j, {
         title: t,
         can: r
       }, t)
     }),
-    S = Object.values(null != N ? N : {}).map(e => {
+    S = Object.values(null != E ? E : {}).map(e => {
       let {
         title: t,
         flag: n
       } = e, r = l.e$(_, n);
-      return (0, a.jsx)(v, {
+      return (0, a.jsx)(j, {
         title: t,
         can: r
       }, t)
@@ -82,7 +82,7 @@ function j() {
         children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
           variant: "heading-md/semibold",
           children: null != y ? "Permissions in ".concat(y) : "No channel selected"
-        }), E]
+        }), N]
       }), (0, Chunk951288.jsxs)("section", {
         className: Chunk989295.section,
         children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {

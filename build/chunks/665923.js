@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 665923, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 76349 **/
+/** chunk id: 665923, original params: e,t,n (module,exports,require) **/
 module.exports = {
   baseCardOutline: "baseCardOutline__1ab14"
 }

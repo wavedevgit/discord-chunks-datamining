@@ -1,12 +1,12 @@
-/** Chunk was on 54400 **/
+/** Chunk was on 84071 **/
 /** chunk id: 14476, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  c: () => _
+  c: () => x
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk979554 = require("./979554.js"),
   Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
@@ -17,20 +17,20 @@ var Chunk951288 = require("./951288.js"),
   Chunk466679 = require("./466679.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk632939 = require("./632939.js");
-let _ = e => {
+let x = e => {
   let {
     skuId: t,
     assetId: n,
     user: l,
-    claimed: _,
+    claimed: x,
     onSelect: m,
     productName: j,
-    a11yLabel: g,
-    selectedSkuId: b,
+    a11yLabel: b,
+    selectedSkuId: g,
     category: L
-  } = e, y = i.useRef(null), S = (0, d.Z)(y), v = (0, x.m)(y), E = !_ && (S || v), O = (0, c.ZP)(), P = (0, o.wj)(O), k = {
-    type: s.Z.AVATAR_DECORATION,
-    label: g,
+  } = e, y = i.useRef(null), S = (0, d.Z)(y), v = (0, _.m)(y), E = !x && (S || v), O = (0, c.ZP)(), I = (0, s.wj)(O), P = {
+    type: a.Z.AVATAR_DECORATION,
+    label: b,
     asset: n
   };
   return (0, r.jsx)(C.tEY, {
@@ -38,27 +38,27 @@ let _ = e => {
       ref: y,
       "aria-label": null != j ? j : "",
       onClick: () => {
-        null == t || null == m || _ || m(t)
+        null == t || null == m || x || m(t)
       },
-      className: a()(P ? f.shopCardDark : f.shopCard, {
-        [f.shopCardAnimation]: !_,
-        [P ? f.shopCardDarkHighlighted : f.shopCardHighlighted]: E,
-        [f.shopCardSelected]: b === t
+      className: o()(I ? f.shopCardDark : f.shopCard, {
+        [f.shopCardAnimation]: !x,
+        [I ? f.shopCardDarkHighlighted : f.shopCardHighlighted]: E,
+        [f.shopCardSelected]: g === t
       }),
       children: [(0, r.jsx)("div", {
-        className: a()(f.preview, {
+        className: o()(f.preview, {
           [f.previewTrick]: L === u.KN.Trick,
           [f.previewTreat]: L === u.KN.Treat,
-          [f.shopCardClaimed]: _
+          [f.shopCardClaimed]: x
         }),
         children: (0, r.jsx)(p.R, {
-          item: k,
+          item: P,
           user: l,
           isHighlighted: E,
           avatarSize: C.EFr.SIZE_120,
-          isPurchased: _
+          isPurchased: x
         })
-      }), _ && (0, r.jsx)(C.dz2, {
+      }), x && (0, r.jsx)(C.dz2, {
         size: "custom",
         width: 48,
         height: 48,
@@ -71,7 +71,7 @@ let _ = e => {
           children: j
         }), (0, r.jsx)(C.Text, {
           variant: "text-md/normal",
-          children: _ ? h.intl.string(h.t["6cfuDg"]) : h.intl.string(h.t.QQsaCQ)
+          children: x ? h.intl.string(h.t["6cfuDg"]) : h.intl.string(h.t.QQsaCQ)
         })]
       })]
     })

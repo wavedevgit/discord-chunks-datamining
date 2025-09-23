@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 647917, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 76349 **/
+/** chunk id: 647917, original params: e,t,n (module,exports,require) **/
 module.exports = {
   clickable: "clickable_a3e8db",
   disabled: "disabled_a3e8db",

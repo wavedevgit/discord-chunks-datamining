@@ -1,4 +1,4 @@
-/** Chunk was on 86478 **/
+/** Chunk was on 76349 **/
 /** chunk id: 544245, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -35,7 +35,7 @@ function p() {
     f = h.useField("isUploading"),
     b = h.useField("isSuccess"),
     g = h.useField("errorMessage"),
-    v = Chunk647438.useCallback(async () => {
+    j = Chunk647438.useCallback(async () => {
       let {
         includeFrecency: e,
         includeFriends: t,
@@ -120,7 +120,7 @@ function p() {
       isUploading: f,
       isSuccess: b,
       errorMessage: g,
-      onClick: v,
+      onClick: j,
       title: "Upload Snapshot Logs"
     })]
   })

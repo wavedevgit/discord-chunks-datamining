@@ -1,7 +1,7 @@
-/** Chunk was on 86478 **/
+/** Chunk was on 76349 **/
 /** chunk id: 206878, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  g: () => v
+  g: () => j
 }), require("./388685.js"), require("./35282.js");
 var Chunk647438 = require("./647438.js"),
   Chunk281598 = require("./281598.js");
@@ -102,7 +102,7 @@ let s = new Set([Chunk281598.jE.HERO_BANNER_STATIC, Chunk281598.jE.HERO_LOGO, Ch
     let r = p[e];
     if (null != r)
       for (let e of t) e.name.endsWith(".txt") || b(r, e, n, a)
-  }, v = () => {
+  }, j = () => {
     let [e, t] = Chunk647438.useState(false), [n, c] = Chunk647438.useState({}), [d, u] = Chunk647438.useState({}), m = Chunk647438.useCallback(function(e) {
       let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [];
       u(n => {
@@ -121,7 +121,7 @@ let s = new Set([Chunk281598.jE.HERO_BANNER_STATIC, Chunk281598.jE.HERO_LOGO, Ch
           [e]: [...r, ...t]
         })
       })
-    }, []), v = Chunk647438.useCallback(() => {
+    }, []), j = Chunk647438.useCallback(() => {
       exports(false), u({}), c({})
     }, []);
     return {
@@ -217,6 +217,6 @@ let s = new Set([Chunk281598.jE.HERO_BANNER_STATIC, Chunk281598.jE.HERO_LOGO, Ch
           t(true)
         }
       }, [m, h]),
-      reset: v
+      reset: j
     }
   }

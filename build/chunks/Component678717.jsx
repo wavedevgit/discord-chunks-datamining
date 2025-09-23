@@ -1,8 +1,8 @@
-/** Chunk was on 86478 **/
+/** Chunk was on 76349 **/
 /** chunk id: 678717, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => eE,
-  useDevToolsTabConfig: () => ej
+  default: () => eS,
+  useDevToolsTabConfig: () => e_
 }), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -70,6 +70,7 @@ var Chunk392750 = require("./392750.jsx"),
   Chunk260950 = require("./260950.jsx"),
   Chunk63954 = require("./63954.jsx"),
   Chunk569157 = require("./569157.jsx"),
+  Chunk490007 = require("./490007.jsx"),
   Chunk621060 = require("./621060.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk46140 = require("./46140.js"),
@@ -77,7 +78,7 @@ var Chunk392750 = require("./392750.jsx"),
   Chunk552883 = require("./552883.js"),
   Chunk451429 = require("./451429.js");
 
-function ej() {
+function e_() {
   return Chunk647438.useMemo(() => {
     let e = [{
       id: "analytics",
@@ -314,6 +315,11 @@ function ej() {
       name: "Virtual Currency Config",
       group: Chunk621060.v0.QUESTS,
       render: () => (0, Chunk951288.jsx)(Chunk581302.Z, {})
+    }), module.push({
+      id: "Revenue Storybook",
+      name: "Revenue Storybook",
+      group: Chunk621060.v0.BILLING,
+      render: () => (0, Chunk951288.jsx)(Chunk490007.Z, {})
     }), (0, Chunk36243.X)({
       location: Chunk46140.dr.QUEST_PREVIEW_TOOL
     }) && module.push({
@@ -325,7 +331,7 @@ function ej() {
   }, [])
 }
 
-function e_(e) {
+function ey(e) {
   let {
     resizableNode: t,
     onResize: n,
@@ -339,19 +345,19 @@ function e_(e) {
   });
   return (0, a.jsx)("div", {
     onMouseDown: i,
-    className: eg.resizeHandle
+    className: ej.resizeHandle
   })
 }
 
-function ey(e) {
+function eC(e) {
   var t;
   let {
     isPopout: n = false
-  } = e, r = ej(), {
+  } = e, r = e_(), {
     TabBar: i,
     renderSelectedTab: l,
     selectedTabId: o
-  } = (0, ep.ZP)({
+  } = (0, ex.ZP)({
     tabs: r,
     initialSelectedTabId: null != (t = y.Z.lastOpenTabId) ? t : true,
     onChangeTab: e => {
@@ -366,7 +372,7 @@ function ey(e) {
     properties: {
       panel: o
     }
-  }), (0, a.jsxs)(G.Gk, {
+  }), (0, a.jsxs)(B.Gk, {
     children: [(0, a.jsxs)(h.ZP, {
       className: ev.headerBar,
       toolbar: n ? null : (0, a.jsxs)(a.Fragment, {
@@ -374,11 +380,11 @@ function ey(e) {
           icon: c.rgF,
           tooltip: "Pop Out",
           onClick: () => {
-            (0, f.bA)(ex.KJ3.DEVTOOLS_POPOUT, () => (0, a.jsx)(x.Z, {
-              windowKey: ex.KJ3.DEVTOOLS_POPOUT,
+            (0, f.bA)(ef.KJ3.DEVTOOLS_POPOUT, () => (0, a.jsx)(x.Z, {
+              windowKey: ef.KJ3.DEVTOOLS_POPOUT,
               title: "DevTools",
               withTitleBar: true,
-              children: (0, a.jsx)(eE, {
+              children: (0, a.jsx)(eS, {
                 mobile: false,
                 isPopout: true
               })
@@ -389,7 +395,7 @@ function ey(e) {
           }
         }), (0, a.jsx)(h.ZP.Icon, {
           icon: c.Dio,
-          tooltip: eb.intl.string(eb.t.cpT0Cg),
+          tooltip: eg.intl.string(eg.t.cpT0Cg),
           onClick: _.SO
         })]
       }),
@@ -399,13 +405,13 @@ function ey(e) {
       }), (0, a.jsx)(h.ZP.Title, {
         children: "DevTools"
       })]
-    }), (0, a.jsx)(i, {}), l(), (0, a.jsx)(G.Br, {
-      className: eg.layerContainer
+    }), (0, a.jsx)(i, {}), l(), (0, a.jsx)(B.Br, {
+      className: ej.layerContainer
     })]
   })
 }
 
-function eC() {
+function eE() {
   let e = Chunk647438.useRef(null),
     t = (0, Chunk442837.e7)([Chunk19759.Z], () => Chunk19759.Z.sidebarWidth),
     [n, i] = Chunk647438.useState(null),
@@ -422,13 +428,13 @@ function eC() {
       width: require
     },
     "data-app-right-panel": true,
-    children: [(0, Chunk951288.jsx)(e_, {
+    children: [(0, Chunk951288.jsx)(ey, {
       resizableNode: module,
       onResize: Chunk120356,
       onResizeEnd: l
     }), (0, Chunk951288.jsx)("div", {
       className: Chunk552883.sidebarContent,
-      children: (0, Chunk951288.jsx)(ey, {})
+      children: (0, Chunk951288.jsx)(eC, {})
     })]
   })
 }
@@ -438,7 +444,7 @@ function eN() {
     className: l()(Chunk552883.container, Chunk552883.mobileContainerExpanded),
     children: (0, Chunk951288.jsx)("div", {
       className: Chunk552883.sidebarContent,
-      children: (0, Chunk951288.jsx)(ey, {})
+      children: (0, Chunk951288.jsx)(eC, {})
     })
   }) : (0, Chunk951288.jsx)("div", {
     className: Chunk552883.container,
@@ -460,15 +466,15 @@ function eN() {
   })
 }
 
-function eE(e) {
+function eS(e) {
   let {
     mobile: t,
     isPopout: n = false
   } = e;
   return t ? (0, a.jsx)(eN, {}) : n ? (0, a.jsx)("div", {
-    className: eg.popoutContainer,
-    children: (0, a.jsx)(ey, {
+    className: ej.popoutContainer,
+    children: (0, a.jsx)(eC, {
       isPopout: true
     })
-  }) : (0, a.jsx)(eC, {})
+  }) : (0, a.jsx)(eE, {})
 }

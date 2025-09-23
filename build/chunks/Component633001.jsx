@@ -1,7 +1,7 @@
-/** Chunk was on 86478 **/
+/** Chunk was on 76349 **/
 /** chunk id: 633001, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => ej
+  Z: () => ev
 }), require("./388685.js"), require("./583741.js"), require("./539854.js"), require("./49124.js"), require("./35282.js"), require("./781311.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -66,7 +66,7 @@ function W(e) {
   return e
 }
 
-function K(e, t) {
+function q(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -78,9 +78,9 @@ function K(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let q = {
-    [Chunk981631.Odu.CLICK_ZONE_DEBUG]: e => K(W({
-      type: G.Odu.CLICK_ZONE_DEBUG,
+let K = {
+    [Chunk981631.Odu.CLICK_ZONE_DEBUG]: e => q(W({
+      type: B.Odu.CLICK_ZONE_DEBUG,
       id: (0, c.Z)(),
       layoutId: e,
       anchor: {
@@ -91,11 +91,11 @@ let q = {
         width: 100,
         height: 100
       }
-    }, T.Z.getWidgetDefaultSettings(G.Odu.CLICK_ZONE_DEBUG)), {
+    }, T.Z.getWidgetDefaultSettings(B.Odu.CLICK_ZONE_DEBUG)), {
       pinned: true
     }),
-    [Chunk981631.Odu.PERFORMANCE_DEBUG]: e => K(W({
-      type: G.Odu.PERFORMANCE_DEBUG,
+    [Chunk981631.Odu.PERFORMANCE_DEBUG]: e => q(W({
+      type: B.Odu.PERFORMANCE_DEBUG,
       id: (0, c.Z)(),
       layoutId: e,
       anchor: {
@@ -107,7 +107,7 @@ let q = {
         width: "auto",
         height: "auto"
       }
-    }, T.Z.getWidgetDefaultSettings(G.Odu.PERFORMANCE_DEBUG)), {
+    }, T.Z.getWidgetDefaultSettings(B.Odu.PERFORMANCE_DEBUG)), {
       pinned: true
     })
   },
@@ -129,13 +129,13 @@ function X(e) {
     color: u.zx.Colors.LINK,
     size: u.zx.Sizes.MIN,
     onClick: function() {
-      (0, w.JG)(t, () => i(true))
+      (0, R.JG)(t, () => i(true))
     },
     className: V.copyId,
     children: ["Application Id: ", t, " ", n ? z.intl.string(z.t["t5VZ8/"]) : null]
   })
 }
-let J = Chunk647438.memo(function(e) {
+let $ = Chunk647438.memo(function(e) {
     let {
       trackedGame: t
     } = e, n = (0, d.e7)([b.ZP], () => b.ZP.getGameOrTransformedSubgameForPID(t.pid)), r = (0, d.e7)([P.Z], () => P.Z.getGameForPID(t.pid)), i = (0, d.e7)([b.ZP], () => null == n ? null : b.ZP.getGameOverlayStatus(n));
@@ -236,7 +236,7 @@ let J = Chunk647438.memo(function(e) {
       })]
     })
   }),
-  $ = Chunk647438.memo(function(e) {
+  J = Chunk647438.memo(function(e) {
     let {
       pid: t
     } = e, n = (0, d.cj)([k.default], () => k.default.getOverlayPIDStatuses()), r = (0, d.cj)([_.default], () => _.default.getTrackedGames()), i = (0, d.e7)([k.default], () => k.default.isInputLocked(t), [t]), l = (0, d.e7)([k.default], () => k.default.DEV_isInputLockedV3(t), [t]), s = (0, d.e7)([k.default], () => k.default.DEV_isInputLocked(t), [t]), o = (0, d.e7)([k.default], () => k.default.isReady(t), [t]);
@@ -301,13 +301,13 @@ let J = Chunk647438.memo(function(e) {
   });
 
 function Q(e) {
-  let t, n = (t = Object.values((0, d.Wu)([T.Z], () => T.Z.getWidgetsForLayout(B.$S))), t.find(t => t.type === e));
+  let t, n = (t = Object.values((0, d.Wu)([T.Z], () => T.Z.getWidgetsForLayout(G.$S))), t.find(t => t.type === e));
   return [n, () => {
     if (null != n)(0, h.E9)(n.id);
     else {
-      let t = q[e];
+      let t = K[e];
       if (null == t) return;
-      let n = t(B.$S);
+      let n = t(G.$S);
       (0, h.A4)(n)
     }
   }]
@@ -341,7 +341,7 @@ let et = Chunk647438.memo(function(e) {
     let a = null == (e = _.default.getTrackedGameByPid(t)) ? true : e.gameName;
     return null != a ? (Y[t] = a, a) : null != (n = Y[t]) ? n : "Unknown"
   }, [t]);
-  return (0, a.jsx)(m.Text, K(W({}, n), {
+  return (0, a.jsx)(m.Text, q(W({}, n), {
     variant: "text-md/semibold",
     color: "text-primary",
     children: r
@@ -386,13 +386,13 @@ function en() {
         return (0, a.jsx)(r.Fragment, {
           children: (0, a.jsx)(m.ua7, {
             position: "left",
-            text: i === j.d5.TRACK_FOCUS ? "Tracked Focus Event" : "Clear Focus Event",
+            text: i === v.d5.TRACK_FOCUS ? "Tracked Focus Event" : "Clear Focus Event",
             children: e => {
               var r;
-              return (0, a.jsx)("div", K(W({}, e), {
+              return (0, a.jsx)("div", q(W({}, e), {
                 children: (0, a.jsxs)(m.Text, {
                   variant: "text-sm/medium",
-                  color: i === j.d5.TRACK_FOCUS ? "text-default" : "text-danger",
+                  color: i === v.d5.TRACK_FOCUS ? "text-default" : "text-danger",
                   children: [(0, a.jsx)(et, {
                     pid: n,
                     tag: "span"
@@ -449,7 +449,7 @@ let ea = Chunk647438.memo(function(e) {
     }, +Chunk70956.Z.Millis.SECOND), () => clearInterval(Chunk120356.current)), []), (0, Chunk951288.jsx)(Chunk481060.ua7, {
       position: "left",
       text: "The most recent screen types we've logged, indexed by pid",
-      children: n => (0, a.jsx)("div", K(W({}, n), {
+      children: n => (0, a.jsx)("div", q(W({}, n), {
         children: (0, a.jsxs)(m.zJl, {
           className: l()(V.panelGroup, V.scroller),
           children: [0 === Object.keys(e).length && (0, a.jsx)(m.Text, {
@@ -492,7 +492,7 @@ let ea = Chunk647438.memo(function(e) {
         variant: "text-sm/normal",
         color: "text-default",
         children: "No tracked game times"
-      }), Object.values(require).map(e => (0, a.jsx)($, {
+      }), Object.values(require).map(e => (0, a.jsx)(J, {
         pid: e.pid
       }, e.pid)), (0, Chunk951288.jsxs)("div", {
         children: [(0, Chunk951288.jsxs)(Chunk481060.Text, {
@@ -537,10 +537,10 @@ let ea = Chunk647438.memo(function(e) {
       children: [(0, Chunk951288.jsx)(Chunk481060.ua7, {
         position: "left",
         text: "Enables a red border around click zones to help with debugging.",
-        children: e => (0, a.jsx)("div", K(W({}, e), {
+        children: e => (0, a.jsx)("div", q(W({}, e), {
           children: (0, a.jsx)(u.$q, {
             value: l,
-            onChange: () => void x(j.GO.ClickZones),
+            onChange: () => void x(v.GO.ClickZones),
             size: 18,
             type: u.M0.INVERTED,
             shape: u.zV.BOX,
@@ -555,10 +555,10 @@ let ea = Chunk647438.memo(function(e) {
       }), (0, Chunk951288.jsx)(Chunk481060.ua7, {
         position: "left",
         text: "Enables a border around any widgets that are rendered on screen that are pinned (even if they are hidden). Blue = pinned widgets, Gray = unpinned widgets",
-        children: e => (0, a.jsx)("div", K(W({}, e), {
+        children: e => (0, a.jsx)("div", q(W({}, e), {
           children: (0, a.jsx)(u.$q, {
             value: s,
-            onChange: () => void x(j.GO.WidgetAreas),
+            onChange: () => void x(v.GO.WidgetAreas),
             size: 18,
             type: u.M0.INVERTED,
             shape: u.zV.BOX,
@@ -573,10 +573,10 @@ let ea = Chunk647438.memo(function(e) {
       }), (0, Chunk951288.jsx)(Chunk481060.ua7, {
         position: "left",
         text: "Disables GPU Boost, which can help with performance when games compete for GPU resources.",
-        children: e => (0, a.jsx)("div", K(W({}, e), {
+        children: e => (0, a.jsx)("div", q(W({}, e), {
           children: (0, a.jsx)(u.$q, {
             value: o,
-            onChange: () => void x(j.GO.DisabledGPUBoost),
+            onChange: () => void x(v.GO.DisabledGPUBoost),
             size: 18,
             type: u.M0.INVERTED,
             shape: u.zV.BOX,
@@ -591,10 +591,10 @@ let ea = Chunk647438.memo(function(e) {
       }), (0, Chunk951288.jsx)(Chunk481060.ua7, {
         position: "left",
         text: "Forces GPU Boost, which can help with performance when games compete for GPU resources.",
-        children: e => (0, a.jsx)("div", K(W({}, e), {
+        children: e => (0, a.jsx)("div", q(W({}, e), {
           children: (0, a.jsx)(u.$q, {
             value: c,
-            onChange: () => void x(j.GO.ForceGPUBoost),
+            onChange: () => void x(v.GO.ForceGPUBoost),
             size: 18,
             disabled: o,
             type: u.M0.INVERTED,
@@ -610,7 +610,7 @@ let ea = Chunk647438.memo(function(e) {
       }), (0, Chunk951288.jsx)(Chunk481060.ua7, {
         position: "left",
         text: "Creates a widget that has a clickzone inside of it, which will show/hide every few seconds.",
-        children: n => (0, a.jsx)("div", K(W({}, n), {
+        children: n => (0, a.jsx)("div", q(W({}, n), {
           children: (0, a.jsx)(u.$q, {
             value: null != e,
             onChange: () => t(),
@@ -628,7 +628,7 @@ let ea = Chunk647438.memo(function(e) {
       }), (0, Chunk951288.jsx)(Chunk481060.ua7, {
         position: "left",
         text: "Creates a widget that shows the overlay's window performance metrics.",
-        children: e => (0, a.jsx)("div", K(W({}, e), {
+        children: e => (0, a.jsx)("div", q(W({}, e), {
           children: (0, a.jsx)(u.$q, {
             value: null != n,
             onChange: () => i(),
@@ -665,7 +665,7 @@ let ea = Chunk647438.memo(function(e) {
       children: [exports.length > 0 && (0, Chunk951288.jsx)(Chunk481060.ua7, {
         position: "left",
         text: "Games that are running but not tracked by the overlay",
-        children: e => (0, a.jsx)("div", K(W({}, e), {
+        children: e => (0, a.jsx)("div", q(W({}, e), {
           children: (0, a.jsxs)("div", {
             className: V.panelGroup,
             children: [(0, a.jsx)(m.Text, {
@@ -686,14 +686,14 @@ let ea = Chunk647438.memo(function(e) {
       }), (0, Chunk951288.jsx)(Chunk481060.ua7, {
         position: "left",
         text: "The current running games process information",
-        children: t => (0, a.jsx)("div", K(W({}, t), {
+        children: t => (0, a.jsx)("div", q(W({}, t), {
           children: (0, a.jsxs)("div", {
             className: V.panelGroup,
             children: [0 === Object.keys(e).length && (0, a.jsx)(m.Text, {
               variant: "text-sm/normal",
               color: "text-default",
               children: "No running games"
-            }), Object.values(e).map(e => (0, a.jsx)(J, {
+            }), Object.values(e).map(e => (0, a.jsx)($, {
               trackedGame: e
             }, e.pid))]
           })
@@ -719,13 +719,13 @@ let ea = Chunk647438.memo(function(e) {
       }, {
         label: Chunk837268.R5.OUT_OF_PROCESS_V3_LIMITED_INTERACTION,
         value: Chunk837268.R5.OUT_OF_PROCESS_V3_LIMITED_INTERACTION
-      }].map(t => K(W({}, t), {
+      }].map(t => q(W({}, t), {
         label: "".concat(t.label, " ").concat(e === t.value ? "(current)" : "")
       }));
     return (0, Chunk951288.jsx)(Chunk481060.ua7, {
       position: "left",
       text: "Override the overlay render mode",
-      children: e => (0, a.jsx)("div", K(W({}, e), {
+      children: e => (0, a.jsx)("div", q(W({}, e), {
         className: V.panelGroup,
         children: (0, a.jsx)(m.PhF, {
           serialize: e => e,
@@ -740,31 +740,31 @@ let ea = Chunk647438.memo(function(e) {
   ec = {
     native: {
       label: "Native",
-      filter: e => e.type === v.C7.NativeLegacy || e.type === v.C7.NativeOOP
+      filter: e => e.type === j.C7.NativeLegacy || e.type === j.C7.NativeOOP
     },
     render: {
       label: "Render",
-      filter: e => e.type === v.C7.Renderer
+      filter: e => e.type === j.C7.Renderer
     },
     client: {
       label: "Client",
-      filter: e => e.type === v.C7.OOPModule || e.type === v.C7.LegacyModule
+      filter: e => e.type === j.C7.OOPModule || e.type === j.C7.LegacyModule
     }
   };
 
 function ed(e) {
-  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : v.l6.Info;
-  if (t === v.l6.Error) return "var(--text-danger)";
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : j.l6.Info;
+  if (t === j.l6.Error) return "var(--text-danger)";
   switch (e) {
-    case v.C7.NativeLegacy:
+    case j.C7.NativeLegacy:
       return "var(--yellow-500)";
-    case v.C7.NativeOOP:
+    case j.C7.NativeOOP:
       return "var(--green-500)";
-    case v.C7.Renderer:
+    case j.C7.Renderer:
       return "var(--brand-500)";
-    case v.C7.LegacyModule:
+    case j.C7.LegacyModule:
       return "var(--yellow-300)";
-    case v.C7.OOPModule:
+    case j.C7.OOPModule:
       return "var(--green-300)";
     default:
       return "var(--gray-400)"
@@ -804,11 +804,11 @@ let eu = [{
         variant: "text-md/normal",
         color: function(e) {
           switch (e) {
-            case v.l6.Info:
+            case j.l6.Info:
               return "text-primary";
-            case v.l6.Warning:
+            case j.l6.Warning:
               return "text-feedback-warning";
-            case v.l6.Error:
+            case j.l6.Error:
               return "text-danger";
             default:
               return "text-secondary"
@@ -829,21 +829,21 @@ let eu = [{
     let {
       timestamp: t
     } = e;
-    return (0, R.vc)(o()(t), "h:mm:ss.SSS")
+    return (0, I.vc)(o()(t), "h:mm:ss.SSS")
   }
 }];
 
 function em(e) {
   switch (e) {
-    case v.C7.NativeLegacy:
+    case j.C7.NativeLegacy:
       return m.GON;
-    case v.C7.NativeOOP:
+    case j.C7.NativeOOP:
       return m.ljO;
-    case v.C7.Renderer:
+    case j.C7.Renderer:
       return m.n6r;
-    case v.C7.LegacyModule:
+    case j.C7.LegacyModule:
       return m.pzj;
-    case v.C7.OOPModule:
+    case j.C7.OOPModule:
       return m.m3e;
     default:
       return m.pzj
@@ -891,7 +891,7 @@ let ep = ["__webpack_require__", "fn"],
             children: [s, " (", c, ")", (0, a.jsx)(m.P3F, {
               tag: "span",
               className: V.copyEventButton,
-              onClick: () => (0, w.JG)(s),
+              onClick: () => (0, R.JG)(s),
               children: (0, a.jsx)(m.TIy, {
                 color: "currentColor",
                 size: "sm"
@@ -901,7 +901,7 @@ let ep = ["__webpack_require__", "fn"],
             icon: m.TIy,
             tooltip: "Copy all properties",
             onClick: () => {
-              (0, w.JG)(eh(r))
+              (0, R.JG)(eh(r))
             }
           }), (0, a.jsx)(g.Z.Icon, {
             icon: m.k$p,
@@ -915,8 +915,8 @@ let ep = ["__webpack_require__", "fn"],
             copyValue: f.toISOString(),
             children: (0, a.jsx)("time", {
               dateTime: f.toISOString(),
-              title: (0, R.vc)(f, "LLLL"),
-              children: (0, R.vc)(f, "L h:mm:ss.SSS")
+              title: (0, I.vc)(f, "LLLL"),
+              children: (0, I.vc)(f, "L h:mm:ss.SSS")
             })
           }), (0, a.jsx)(L.Z9, {
             name: "Log Type",
@@ -985,7 +985,7 @@ function eg() {
   let [e, t] = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.DEV_getOverlayLoggingBreadcrumbs(), [], Chunk136015.Q), {
     ref: n,
     height: i
-  } = (0, Chunk393238.ZP)(), s = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.DEV_isOverlayModuleLoggingEnabled()), [o, c] = Chunk647438.useState(Chunk913527), [h, x] = Chunk647438.useState(Object.keys(ec)), [b, g] = Chunk647438.useState(""), v = Chunk647438.useMemo(() => 0 === exports ? [] : module.filter(e => {
+  } = (0, Chunk393238.ZP)(), s = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.DEV_isOverlayModuleLoggingEnabled()), [o, c] = Chunk647438.useState(Chunk913527), [h, x] = Chunk647438.useState(Object.keys(ec)), [b, g] = Chunk647438.useState(""), j = Chunk647438.useMemo(() => 0 === exports ? [] : module.filter(e => {
     for (let t of h) {
       let {
         filter: n
@@ -993,7 +993,7 @@ function eg() {
       if (n(e)) returntrue
     }
     returnfalse
-  }), [module, Chunk765250, exports]), [j, _] = Chunk647438.useState(Chunk427860), [y, N] = Chunk647438.useState(null), E = Chunk647438.useMemo(() => module.find(e => e.key === y), [module, Chunk829907]), O = Chunk647438.useCallback(e => {
+  }), [module, Chunk765250, exports]), [v, _] = Chunk647438.useState(Chunk427860), [y, E] = Chunk647438.useState(null), N = Chunk647438.useMemo(() => module.find(e => e.key === y), [module, Chunk829907]), O = Chunk647438.useCallback(e => {
     _(e)
   }, []), {
     renderSelectedTab: T
@@ -1013,7 +1013,7 @@ function eg() {
       clearTimeout(module)
     }
   }, []);
-  let [k, R] = Chunk647438.useState(false), I = Chunk647438.useRef(null), A = Chunk647438.useCallback(() => {
+  let [k, I] = Chunk647438.useState(false), w = Chunk647438.useRef(null), Z = Chunk647438.useCallback(() => {
     (0, Chunk572004.JG)(JSON.stringify(module)), Chunk55935(true)
   }, [module]);
   return Chunk647438.useEffect(() => {
@@ -1083,7 +1083,7 @@ function eg() {
         columns: eu,
         data: Chunk837268,
         selectedRowKey: null != Chunk829907 ? Chunk829907 : true,
-        onClickRow: e => N(e.key)
+        onClickRow: e => E(e.key)
       })
     }), null != Chunk886118 && (0, Chunk951288.jsx)(Chunk484036.Z, {
       className: l()(Chunk454741.panelGroup, Chunk454741.subPanel),
@@ -1097,7 +1097,7 @@ function eg() {
   })
 }
 
-function ev() {
+function ej() {
   return (0, Chunk951288.jsx)(Chunk481060.w0Z, {
     children: (0, Chunk951288.jsxs)("div", {
       className: l()(Chunk451429.panel, Chunk454741.subPanel),
@@ -1106,7 +1106,7 @@ function ev() {
   })
 }
 
-function ej() {
+function ev() {
   let [e, t] = Chunk647438.useState("state");
   return (0, Chunk951288.jsxs)("div", {
     className: l()(Chunk451429.panel, Chunk454741.panel),
@@ -1129,6 +1129,6 @@ function ej() {
           children: "Logging"
         })
       })]
-    }), "state" === module && (0, Chunk951288.jsx)(ev, {}), "logging" === module && (0, Chunk951288.jsx)(eg, {})]
+    }), "state" === module && (0, Chunk951288.jsx)(ej, {}), "logging" === module && (0, Chunk951288.jsx)(eg, {})]
   })
 }
