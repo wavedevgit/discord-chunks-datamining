@@ -79,12 +79,12 @@ function R(e) {
       className: C.buttons,
       children: [(0, r.jsx)(b.Z, {
         user: t,
-        className: C.button,
-        closePopout: L
+        closePopout: L,
+        fullWidth: true
       }), (0, r.jsx)(y.Z, {
         user: t,
         guildId: null == P ? true : P.id,
-        className: C.button
+        fullWidth: true
       })]
     }), (0, r.jsx)(v.Z, {
       user: t,

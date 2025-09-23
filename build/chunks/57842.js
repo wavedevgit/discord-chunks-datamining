@@ -2,6 +2,5 @@
 /** chunk id: 57842, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 module.exports = {
-  buttons: "buttons_bc38cd",
-  button: "button_bc38cd"
+  buttons: "buttons_bc38cd"
 }
