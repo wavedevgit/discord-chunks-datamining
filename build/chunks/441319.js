@@ -45,19 +45,18 @@ function w() {
 }
 
 function D() {
-  let e = arguments.length > 0 && true !== arguments[0] && arguments[0],
-    t = module ? [{
-      id: Chunk997945.Ru.TRICK,
-      iconSource: Chunk487483,
-      isPremium: true,
-      name: Chunk388032.intl.string(Chunk388032.t["6Zuiv7"])
-    }, {
-      id: Chunk997945.Ru.TREAT,
-      iconSource: Chunk936684,
-      isPremium: true,
-      name: Chunk388032.intl.string(Chunk388032.t["2UeOlZ"])
-    }] : [];
-  return [{
+  let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
+  return [...module ? [{
+    id: Chunk997945.Ru.TRICK,
+    iconSource: Chunk487483,
+    isPremium: true,
+    name: Chunk388032.intl.string(Chunk388032.t["6Zuiv7"])
+  }, {
+    id: Chunk997945.Ru.TREAT,
+    iconSource: Chunk936684,
+    isPremium: true,
+    name: Chunk388032.intl.string(Chunk388032.t["2UeOlZ"])
+  }] : [], {
     id: Chunk997945.Ru.BRAND_DARK,
     iconSource: Chunk760260,
     name: Chunk388032.intl.string(Chunk388032.t.gZEUBg),
@@ -167,7 +166,7 @@ function D() {
     iconSource: Chunk273593,
     isPremium: true,
     name: Chunk388032.intl.string(Chunk388032.t.MWRYqq)
-  }, ...exports]
+  }]
 }
 
 function x() {
