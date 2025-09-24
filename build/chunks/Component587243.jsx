@@ -173,13 +173,13 @@ function _(e) {
     status: p.Skl.DND,
     currentStatus: e,
     description: _(p.Skl.DND)
-  }), T = v({
+  }), S = v({
     status: p.Skl.INVISIBLE,
     currentStatus: e,
     description: _(p.Skl.INVISIBLE)
   });
   return (0, a.jsxs)(a.Fragment, {
-    children: [C, (0, a.jsx)(i.Clw, {}, "menu-separator-statuses"), E, N, T, u || d ? (0, a.jsxs)(a.Fragment, {
+    children: [C, (0, a.jsx)(i.Clw, {}, "menu-separator-statuses"), E, N, S, u || d ? (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsx)(i.Clw, {}, "menu-separator-statuses"), (0, a.jsx)(i.sNh, {
         id: "quiet-mode",
         "aria-label": "focus mode",

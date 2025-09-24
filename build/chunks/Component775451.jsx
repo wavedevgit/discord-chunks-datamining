@@ -33,13 +33,13 @@ let f = {
       className: _
     } = e, {
       balance: y
-    } = (0, c.A)(), [C, E] = r.useState(d.b.DEFAULT), [N, T] = r.useState(false), [S, O] = r.useState(false), P = r.useRef(null), I = r.useCallback(() => {
+    } = (0, c.A)(), [C, E] = r.useState(d.b.DEFAULT), [N, S] = r.useState(false), [T, O] = r.useState(false), P = r.useRef(null), I = r.useCallback(() => {
       let e = !N;
       e && null != g && (0, o.Y)({
         pageType: g,
         sectionType: p.jXE.ORBS_BALANCE_MENU,
         ctaObject: p.qAy.OPEN_ORB_BALANCE_MENU_FROM_PILL
-      }), E(e ? d.b.SELECTED : d.b.DEFAULT), T(e)
+      }), E(e ? d.b.SELECTED : d.b.DEFAULT), S(e)
     }, [N, g]), k = r.useCallback(() => {
       N && I()
     }, [N, I]), w = (0, s.Z)(null, k), R = r.useMemo(() => (0, a.jsx)(u.L, {
@@ -52,8 +52,8 @@ let f = {
     }), [g, n, v, I, i]);
     return (0, a.jsxs)("div", {
       className: l()(x.container, _, {
-        [x.hidden]: S,
-        [x.visible]: !S
+        [x.hidden]: T,
+        [x.visible]: !T
       }),
       children: [(0, a.jsx)(m.y, {
         pillRef: P,
@@ -67,8 +67,8 @@ let f = {
         showNotificationBadge: t
       }), N && (0, a.jsx)("div", {
         className: l()(x.cardContainer, j, {
-          [x.hidden]: S,
-          [x.visible]: !S
+          [x.hidden]: T,
+          [x.visible]: !T
         }),
         ref: w,
         children: R

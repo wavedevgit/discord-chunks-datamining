@@ -66,7 +66,7 @@ function E() {
         color: "text-feedback-info",
         className: Chunk306197.labelSpacing,
         children: "Payment-method-specific components and views may not appear for you unless your browser is supported for that payment method and they have been configured on your browser."
-      }), (0, Chunk951288.jsx)(T, {}), (0, Chunk951288.jsx)(k, {}), (0, Chunk951288.jsx)(M, {})]
+      }), (0, Chunk951288.jsx)(S, {}), (0, Chunk951288.jsx)(k, {}), (0, Chunk951288.jsx)(M, {})]
     })
   })
 }
@@ -99,19 +99,19 @@ function N() {
   })
 }
 
-function T() {
+function S() {
   return (0, Chunk951288.jsxs)(Chunk237012.$0, {
     children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
       variant: "heading-xl/semibold",
       children: "Payment Request Components - Google Pay"
     }), (0, Chunk951288.jsx)(Chunk237012.E_, {
       label: "Google Pay - Default View",
-      children: (0, Chunk951288.jsx)(S, {
+      children: (0, Chunk951288.jsx)(T, {
         paymentRequestWallet: "googlePay"
       })
     }), (0, Chunk951288.jsx)(Chunk237012.E_, {
       label: "Google Pay - Connector View",
-      children: (0, Chunk951288.jsx)(S, {
+      children: (0, Chunk951288.jsx)(T, {
         paymentRequestWallet: "googlePay",
         renderConnectorView: true
       })
@@ -125,12 +125,12 @@ function T() {
       children: "Payment Request Components - Apple Pay"
     }), (0, Chunk951288.jsx)(Chunk237012.E_, {
       label: "Apple Pay - Default View",
-      children: (0, Chunk951288.jsx)(S, {
+      children: (0, Chunk951288.jsx)(T, {
         paymentRequestWallet: "applePay"
       })
     }), (0, Chunk951288.jsx)(Chunk237012.E_, {
       label: "Apple Pay - Connector View",
-      children: (0, Chunk951288.jsx)(S, {
+      children: (0, Chunk951288.jsx)(T, {
         renderConnectorView: true,
         paymentRequestWallet: "applePay"
       })
@@ -143,7 +143,7 @@ function T() {
   })
 }
 
-function S(e) {
+function T(e) {
   let t = r.useRef(null),
     n = {
       paymentLabel: v.intl.string(v.t.ZURqX1),
@@ -196,7 +196,7 @@ function P(e) {
       onPrimary: () => void(null != n.current && n.current.show()),
       onBack: () => {}
     }),
-    children: (0, a.jsx)(S, {
+    children: (0, a.jsx)(T, {
       renderConnectorView: true,
       renderStepBody: true,
       paymentRequestWallet: t,

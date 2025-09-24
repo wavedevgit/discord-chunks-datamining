@@ -30,7 +30,7 @@ let C = function(e) {
     onClose: C,
     onComplete: E,
     dismissable: N
-  } = e, [T, S] = r.useState(l.z.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), O = r.useRef(T), [P, I] = (0, c.US)([T], true, true), k = r.useMemo(() => (0, i.Z)(), []), w = r.useRef(false);
+  } = e, [S, T] = r.useState(l.z.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), O = r.useRef(S), [P, I] = (0, c.US)([S], true, true), k = r.useMemo(() => (0, i.Z)(), []), w = r.useRef(false);
   r.useEffect(() => {
     O.current = P
   }, [P]);
@@ -40,7 +40,7 @@ let C = function(e) {
   } = (0, b.Z)(() => {
     null == E || E(), C()
   }, () => {
-    S(l.z.AGE_VERIFICATION_SURVEY_MODAL_CLOSE)
+    T(l.z.AGE_VERIFICATION_SURVEY_MODAL_CLOSE)
   });
   return r.useLayoutEffect(() => () => {
     if (w.current) return;

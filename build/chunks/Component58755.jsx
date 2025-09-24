@@ -131,7 +131,7 @@ function _(e) {
     easingStrength: _ = 1,
     useP3ColorSpace: y,
     steps: E = 26
-  } = t, N = (0, h.XM)(t), T = (0, h.W6)(N, c);
+  } = t, N = (0, h.XM)(t), S = (0, h.W6)(N, c);
   return (0, a.jsxs)(u.Kqy, {
     gap: 20,
     children: [(0, a.jsxs)("div", {
@@ -242,7 +242,7 @@ function _(e) {
         className: x.paletteOverrides,
         "data-columnar": v,
         children: Object.entries(N).map((e, n) => {
-          let [r, c] = e, d = (0, h.HI)(c), m = (0, s.Z)((0, o.Z)("black"), c) > 4.5 ? "black" : "white", p = T[r];
+          let [r, c] = e, d = (0, h.HI)(c), m = (0, s.Z)((0, o.Z)("black"), c) > 4.5 ? "black" : "white", p = S[r];
           return (0, a.jsxs)("div", {
             style: {
               backgroundColor: d

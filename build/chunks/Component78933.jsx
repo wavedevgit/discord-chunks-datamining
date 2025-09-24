@@ -120,10 +120,10 @@ function el(e) {
       analyticsLocations: eu
     }),
     eN = (0, H.I5)(t),
-    eT = (0, h.p)({
+    eS = (0, h.p)({
       location: "UserProfileAccountPopout"
     }),
-    eS = (0, C.b)({
+    eT = (0, C.b)({
       location: "UserProfileAccountPopout"
     }),
     eO = r.useRef(null),
@@ -170,7 +170,7 @@ function el(e) {
               user: t,
               displayProfile: ed,
               themeType: et.l.POPOUT
-            }), (0, a.jsx)(T.Z, {
+            }), (0, a.jsx)(S.Z, {
               user: t,
               displayProfile: ed,
               themeType: et.l.POPOUT,
@@ -180,7 +180,7 @@ function el(e) {
               user: t,
               themeType: et.l.POPOUT,
               onCloseProfile: n,
-              prompt: eT ? eI : null
+              prompt: eS ? eI : null
             })]
           }), (0, a.jsxs)(c.Ttm, {
             className: ea.body,
@@ -193,7 +193,7 @@ function el(e) {
               nickname: V.ZP.getName(null, null, t),
               onOpenProfile: ec ? true : eR,
               pronouns: null == ed ? true : ed.pronouns,
-              tags: (0, a.jsx)(S.Z, {
+              tags: (0, a.jsx)(T.Z, {
                 displayProfile: ed,
                 themeType: et.l.POPOUT,
                 onClose: n,
@@ -223,7 +223,7 @@ function el(e) {
             }), (0, a.jsx)(P.Z, {
               isPremiumUser: eN,
               onInteraction: n
-            }), eS ? (0, a.jsx)(w.Z, {
+            }), eT ? (0, a.jsx)(w.Z, {
               user: t,
               currentUser: t,
               onOpenUserProfileModal: eR,

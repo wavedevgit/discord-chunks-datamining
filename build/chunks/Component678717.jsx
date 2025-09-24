@@ -420,7 +420,7 @@ function eN(e) {
   })
 }
 
-function eT() {
+function eS() {
   let e = Chunk647438.useRef(null),
     t = (0, Chunk442837.e7)([Chunk19759.Z], () => Chunk19759.Z.sidebarWidth),
     [n, i] = Chunk647438.useState(null),
@@ -448,7 +448,7 @@ function eT() {
   })
 }
 
-function eS() {
+function eT() {
   return (0, Chunk442837.e7)([Chunk19759.Z], () => Chunk19759.Z.displayTools) ? (0, Chunk951288.jsx)("div", {
     className: l()(Chunk552883.container, Chunk552883.mobileContainerExpanded),
     children: (0, Chunk951288.jsx)("div", {
@@ -480,10 +480,10 @@ function eO(e) {
     mobile: t,
     isPopout: n = false
   } = e;
-  return t ? (0, a.jsx)(eS, {}) : n ? (0, a.jsx)("div", {
+  return t ? (0, a.jsx)(eT, {}) : n ? (0, a.jsx)("div", {
     className: ej.popoutContainer,
     children: (0, a.jsx)(eN, {
       isPopout: true
     })
-  }) : (0, a.jsx)(eT, {})
+  }) : (0, a.jsx)(eS, {})
 }

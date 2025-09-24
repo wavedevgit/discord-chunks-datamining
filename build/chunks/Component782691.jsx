@@ -64,7 +64,7 @@ let C = {
       effect: t
     } = e, {
       upsertConfig: n
-    } = (0, x.n6)(), i = (0, o.e7)([h.default], () => h.default.getCurrentUser()), [N, T] = r.useState(true), S = r.useRef(null), [O, P] = r.useState(false), [I, k] = r.useState(false), [w, R] = r.useState([]), [A, Z] = r.useState(C), D = r.useRef([]), [L, M] = r.useState(t.name), U = L.toLowerCase().replace(/\s+/g, "_"), F = r.useMemo(() => ({
+    } = (0, x.n6)(), i = (0, o.e7)([h.default], () => h.default.getCurrentUser()), [N, S] = r.useState(true), T = r.useRef(null), [O, P] = r.useState(false), [I, k] = r.useState(false), [w, R] = r.useState([]), [A, Z] = r.useState(C), D = r.useRef([]), [L, M] = r.useState(t.name), U = L.toLowerCase().replace(/\s+/g, "_"), F = r.useMemo(() => ({
       id: E,
       skuId: E,
       title: E,
@@ -192,7 +192,7 @@ let C = {
             children: [(0, a.jsxs)(c.zx, {
               color: c.Tt.GREEN,
               children: ["Upload Animated Layer", (0, a.jsx)(m.Z, {
-                ref: S,
+                ref: T,
                 onChange: e => {
                   let t = B(e);
                   null != t && (0, f.i0)(t, async e => {
@@ -211,21 +211,21 @@ let C = {
             children: [(0, a.jsxs)(c.zx, {
               color: c.Tt.GREEN,
               children: ["Upload thumbnail.png", (0, a.jsx)(m.Z, {
-                ref: S,
+                ref: T,
                 onChange: e => G(f.cq.THUMBNAIL, e),
                 multiple: false
               })]
             }), (0, a.jsxs)(c.zx, {
               color: c.Tt.GREEN,
               children: ["Upload static.png", (0, a.jsx)(m.Z, {
-                ref: S,
+                ref: T,
                 onChange: e => G(f.cq.STATIC, e),
                 multiple: false
               })]
             }), (0, a.jsxs)(c.zx, {
               color: c.Tt.GREEN,
               children: ["Upload reduced_motion.png", (0, a.jsx)(m.Z, {
-                ref: S,
+                ref: T,
                 onChange: e => G(f.cq.REDUCED_MOTION, e),
                 multiple: false
               })]
@@ -238,7 +238,7 @@ let C = {
                 variant: "primary",
                 text: "Replay Animation",
                 onClick: () => {
-                  T(false), setTimeout(() => T(true), 100)
+                  S(false), setTimeout(() => S(true), 100)
                 }
               })
             })
@@ -472,7 +472,7 @@ let C = {
                   color: "always-white",
                   children: "Add Alternative"
                 }), (0, a.jsx)(m.Z, {
-                  ref: S,
+                  ref: T,
                   onChange: e => ((e, t) => {
                     let n = B(e);
                     null != n && (0, f.i0)(n, e => {
