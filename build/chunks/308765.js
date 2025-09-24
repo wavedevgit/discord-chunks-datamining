@@ -202,6 +202,10 @@ let i = {
     inlineRequire: () => require("./645644.js").Z,
     neverLoadBeforeConnectionOpen: true
   },
+  OverlayWidgetPinManager: {
+    actions: ["OVERLAY_UPDATE_OVERLAY_STATE", "LAYOUT_SET_PINNED"],
+    inlineRequire: () => require("./264770.js").Z
+  },
   OverlayWindowRAFManager: {
     actions: ["OVERLAY_UPDATE_OVERLAY_METHOD", "WINDOW_FOCUS", "WINDOW_VISIBILITY_CHANGE", "OVERLAY_RENDER_DEBUG_MODE"],
     inlineRequire: () => require("./556809.js").Z,
