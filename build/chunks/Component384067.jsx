@@ -2,12 +2,12 @@
 /** chunk id: 384067, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => C
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk622535 = require("./622535.js"),
   Chunk481060 = require("./481060.js"),
   Chunk63063 = require("./63063.js"),
@@ -17,13 +17,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk310582 = require("./310582.js");
-let _ = e => {
+let C = e => {
   var t, n, a;
   let {
-    wideBannerBlock: _,
-    handleTransition: C,
+    wideBannerBlock: C,
+    handleTransition: _,
     tab: m
-  } = e, b = null == (t = u.Z.getCategoryByStoreListingId(_.categoryStoreListingId)) ? true : t.skuId, E = l.useRef(null), S = l.useRef(null), [O, v] = l.useState();
+  } = e, b = null == (t = u.Z.getCategoryByStoreListingId(C.categoryStoreListingId)) ? true : t.skuId, E = l.useRef(null), S = l.useRef(null), [x, v] = l.useState();
   l.useEffect(() => {
     let e = S.current;
     if (null == e) return;
@@ -34,67 +34,67 @@ let _ = e => {
       e.onload = null
     }
   }, []);
-  let x = null != b ? b : "",
+  let O = null != b ? b : "",
     {
       handleCardVisibilityChange: T
-    } = (0, d.E)(x, "home", "marketing wide banner"),
-    y = _.bannerUrl;
+    } = (0, d.E)(O, "home", "marketing wide banner"),
+    y = C.bannerUrl;
   if (null == y) return null;
   let L = m === g.AW.ORBS;
-  return (0, r.jsx)(i.$, {
+  return (0, r.jsx)(s.$, {
     innerRef: E,
     onChange: T,
     threshold: 0,
     children: (0, r.jsxs)("div", {
       ref: E,
-      className: s()(h.row, h.between, h.bannerBlockContainer, h.centeredSection, {
+      className: i()(h.row, h.between, h.bannerBlockContainer, h.centeredSection, {
         [h.extraRounded]: L
       }),
       children: [(0, r.jsx)("div", {
-        className: s()(h.wideBannerBackgroundImg, {
+        className: i()(h.wideBannerBackgroundImg, {
           [h.extraRounded]: L
         }),
         children: (0, r.jsx)("img", {
           ref: S,
           src: y,
-          alt: _.title,
-          className: s()(h.wideBannerArt, {
+          alt: C.title,
+          className: i()(h.wideBannerArt, {
             [h.wideBannerArtOrbs]: L
           }),
           style: {
-            height: null != O ? "".concat(O, "px") : "auto"
+            height: null != x ? "".concat(x, "px") : "auto"
           }
         })
       }), (0, r.jsx)("div", {
         className: h.wideBannerContentContainer,
         style: {
-          maxHeight: null != O ? "".concat(O, "px") : "auto"
+          maxHeight: null != x ? "".concat(x, "px") : "auto"
         },
         children: (0, r.jsxs)("div", {
           className: h.wideBannerTextContainer,
           children: [(0, r.jsx)(o.X6q, {
             style: {
-              color: null != (n = _.bannerTextColor) ? n : "var(--header-primary)"
+              color: null != (n = C.bannerTextColor) ? n : "var(--header-primary)"
             },
             className: L ? h.wideBannerOrbsHeading : true,
             variant: L ? "heading-xl/bold" : "heading-lg/semibold",
-            children: _.title
+            children: C.title
           }), (0, r.jsx)(o.Text, {
             style: {
-              color: null != (a = _.bannerTextColor) ? a : "var(--text-muted)"
+              color: null != (a = C.bannerTextColor) ? a : "var(--text-muted)"
             },
             lineClamp: 2,
             variant: L ? "text-md/medium" : "text-sm/medium",
             children: L ? f.intl.format(f.t.SFFP7O, {
               helpdeskArticle: c.Z.getArticleURL(p.BhN.VIRTUAL_CURRENCY_LEARN_MORE)
-            }) : _.body
+            }) : C.body
           })]
         })
-      }), true !== _.disableCta && (0, r.jsx)("div", {
+      }), true !== C.disableCta && (0, r.jsx)("div", {
         className: h.wideBannerBlockButton,
         children: (0, r.jsx)(o.zxk, {
           variant: "overlay-primary",
-          onClick: () => C("shop wide banner", x),
+          onClick: () => _("shop wide banner", O),
           text: f.intl.string(f.t.jVcuVV)
         })
       })]

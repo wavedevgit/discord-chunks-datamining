@@ -23,7 +23,7 @@ let g = ["1366494385738354769", "1385035256125591633"],
     return (0, r.jsx)("div", {
       className: a()(d.col2, d.centeredSection),
       children: null == n ? true : n.subblocks.map((e, n) => {
-        if (e.type === s.O.CATEGORY) {
+        if (e.type === i.O.CATEGORY) {
           let l = null != e.unpublishedAt ? u.intl.string(u.t["h/uBCQ"]) : g.includes(e.categoryStoreListingId) ? u.intl.string(u.t["soka7+"]) : true;
           return (0, r.jsx)(o.k0, {
             newValue: {
@@ -48,14 +48,14 @@ let g = ["1366494385738354769", "1385035256125591633"],
       handleTransition: t,
       categories: n
     } = e;
-    if (null == n || n.length < 2) return i.Z.captureMessage("Collectible Featured Block requires at least 2 categories"), null;
-    let [l, s] = n, g = (null == l ? true : l.unpublishedAt) != null ? u.intl.string(u.t["h/uBCQ"]) : true;
+    if (null == n || n.length < 2) return s.Z.captureMessage("Collectible Featured Block requires at least 2 categories"), null;
+    let [l, i] = n, g = (null == l ? true : l.unpublishedAt) != null ? u.intl.string(u.t["h/uBCQ"]) : true;
     return (0, r.jsx)("div", {
       className: a()(d.col2, d.centeredSection),
       children: (0, r.jsxs)(o.k0, {
         newValue: {
           categoryPosition: 1,
-          pageCategory: null != l ? l.name : null == s ? true : s.name,
+          pageCategory: null != l ? l.name : null == i ? true : i.name,
           pageSection: "featured_block",
           tilePosition: +(null == l)
         },
@@ -63,8 +63,8 @@ let g = ["1366494385738354769", "1385035256125591633"],
           category: l,
           badgeText: g,
           handleTransition: t
-        }), null != s && (0, r.jsx)(c.q, {
-          category: s,
+        }), null != i && (0, r.jsx)(c.q, {
+          category: i,
           badgeText: u.intl.string(u.t["o/oRJC"]),
           handleTransition: t
         })]
@@ -76,7 +76,7 @@ let g = ["1366494385738354769", "1385035256125591633"],
       isLoading: t,
       handleTransition: n,
       categories: l,
-      featuredBlockRecord: s
+      featuredBlockRecord: i
     } = e;
     return t ? (0, r.jsxs)("div", {
       className: a()(d.col2, d.centeredSection),
@@ -91,8 +91,8 @@ let g = ["1366494385738354769", "1385035256125591633"],
           className: d.skeletonBody
         })
       })]
-    }) : null != s ? (0, r.jsx)(p, {
-      featuredBlockRecord: s,
+    }) : null != i ? (0, r.jsx)(p, {
+      featuredBlockRecord: i,
       handleTransition: n,
       isLoading: false
     }) : (0, r.jsx)(f, {

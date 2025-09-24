@@ -175,7 +175,7 @@ function L(e) {
       action: k
     }), [k, e.quest.id, null == n ? true : n.id]),
     J = i.useCallback(() => {
-      (0, c.uL)(S.Z5c.SETTINGS_QUEST_PREVIEW_TOOL_2(e.quest.id))
+      (0, c.uL)(S.Z5c.QUEST_PREVIEW_TOOL_2(e.quest.id))
     }, [e.quest.id]),
     $ = e.shouldShowDisclosure && e.quest.id !== T.V6,
     {

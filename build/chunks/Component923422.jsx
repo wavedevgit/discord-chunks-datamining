@@ -1,20 +1,22 @@
 /** Chunk was on 2535 **/
 /** chunk id: 923422, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => x
+  default: () => N
 }), require("./388685.js"), require("./704826.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk481060 = require("./481060.js"),
   Chunk239091 = require("./239091.js"),
-  Chunk230711 = require("./230711.js"),
   Chunk493544 = require("./493544.jsx"),
   Chunk108843 = require("./108843.jsx"),
   Chunk100527 = require("./100527.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk386506 = require("./386506.js"),
   Chunk366953 = require("./366953.js"),
+  Chunk313789 = require("./313789.js"),
+  Chunk526665 = require("./526665.js"),
   Chunk991346 = require("./991346.js"),
+  Chunk518596 = require("./518596.jsx"),
   Chunk606669 = require("./606669.jsx"),
   Chunk53432 = require("./53432.jsx"),
   Chunk74869 = require("./74869.jsx"),
@@ -26,42 +28,44 @@ var Chunk951288 = require("./951288.js"),
   Chunk69021 = require("./69021.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let x = (0, Chunk108843.Z)(function(e) {
+let N = (0, Chunk108843.Z)(function(e) {
   let {
     webBuildOverride: t,
     onSelect: n,
-    onInteraction: c
-  } = e, [u, x] = l.useState(false), D = (0, v.Z)(), N = (0, S.Z)(), _ = (0, f.Z)(), I = (0, y.Z)(), Z = (0, j.Z)(), T = (0, h.Z)(), m = (0, O.Z)(), C = (0, P.Z)(), k = (0, E.Z)(), {
-    analyticsLocations: R
-  } = (0, d.ZP)(), L = l.useMemo(() => (0, b.j)(), []);
+    onInteraction: s
+  } = e, [c, N] = l.useState(false), _ = (0, S.Z)(), I = (0, j.Z)(), C = (0, v.Z)(), T = (0, f.Z)(), Z = (0, A.Z)(), m = (0, P.Z)(), k = (0, E.Z)(), R = (0, w.Z)(), L = (0, h.Z)(), {
+    analyticsLocations: B
+  } = (0, u.ZP)(), M = l.useMemo(() => (0, g.j)(), []);
   async function V() {
     try {
-      x(true), await (0, g.bF)(), window.location.reload(true)
+      N(true), await (0, d.bF)(), window.location.reload(true)
     } catch (e) {
-      x(false)
+      N(false)
     }
   }
-  let B = (0, p.VO)().filter(e => {
-    let {
-      section: t
-    } = e;
-    return t !== s.ID.HEADER && t !== s.ID.CUSTOM && t !== s.ID.DIVIDER && "logout" !== t
-  }).filter(e => null == e.predicate || e.predicate());
-  return (0, a.jsx)(d.Gt, {
-    value: R,
+  let G = (0, p.wy)("UserSettingsCogContextMenu"),
+    U = (0, O.getWebUserSettingsByUserSettingsSections)(),
+    z = (0, y.VO)().filter(e => {
+      let {
+        section: t
+      } = e;
+      return t !== o.ID.HEADER && t !== o.ID.CUSTOM && t !== o.ID.DIVIDER && "logout" !== t
+    }).filter(e => (null == e.predicate || e.predicate()) && (!G || null != U[e.section]));
+  return (0, a.jsx)(u.Gt, {
+    value: B,
     children: (0, a.jsxs)(r.v2r, {
       navId: "user-settings-cog",
       onClose: i.Zy,
-      "aria-label": w.intl.string(w.t.opYYHh),
+      "aria-label": D.intl.string(D.t.opYYHh),
       onSelect: n,
-      onInteraction: c,
-      children: [B.map(e => {
+      onInteraction: s,
+      children: [z.map(e => {
         var t, n;
         let {
           section: l,
           label: i,
-          onClick: s
-        } = e, c = l.replace(/\W/gi, "_");
+          onClick: o
+        } = e, s = l.replace(/\W/gi, "_");
         return (0, a.jsx)(r.sNh, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -80,34 +84,38 @@ let x = (0, Chunk108843.Z)(function(e) {
           }
           return e
         }({
-          id: c
+          id: s
         }, {
           label: i,
-          action: () => null != s ? s() : function(e, t) {
-            let n = Object.values(A.oAB).filter(t => t === e)[0];
-            null != n && o.Z.open(n, true, {
-              analyticsLocations: t
-            })
-          }(l, R)
+          action: () => {
+            var e;
+            return null != o ? o() : function(e, t, n) {
+              let a = Object.values(x.oAB).filter(e => e === t)[0];
+              null != a && (0, O.openUserSettings)(e, {
+                section: a,
+                analyticsLocations: n
+              })
+            }(null != (e = U[l]) ? e : b.n.ACCOUNT_PANEL, l, B)
+          }
         }), n = n = {
           children: (e => {
             switch (e) {
-              case A.oAB.GAMES:
-                return D;
-              case A.oAB.STREAMER_MODE:
-                return N;
-              case A.oAB.APPEARANCE:
+              case x.oAB.GAMES:
                 return _;
-              case A.oAB.ACCESSIBILITY:
+              case x.oAB.STREAMER_MODE:
                 return I;
-              case A.oAB.VOICE:
-                return Z;
-              case A.oAB.TEXT:
-                return T;
-              case A.oAB.EXPERIMENTS:
-                return m;
-              case A.oAB.DEVELOPER_OPTIONS:
+              case x.oAB.APPEARANCE:
                 return C;
+              case x.oAB.ACCESSIBILITY:
+                return T;
+              case x.oAB.VOICE:
+                return Z;
+              case x.oAB.TEXT:
+                return m;
+              case x.oAB.EXPERIMENTS:
+                return k;
+              case x.oAB.DEVELOPER_OPTIONS:
+                return R;
               default:
                 return null
             }
@@ -121,26 +129,26 @@ let x = (0, Chunk108843.Z)(function(e) {
           return n
         })(Object(n)).forEach(function(e) {
           Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-        }), t), c)
-      }), e.user.isStaff() && k, e.user.isStaff() && L.length > 0 ? (0, a.jsx)(r.sNh, {
+        }), t), s)
+      }), e.user.isStaff() && L, e.user.isStaff() && M.length > 0 ? (0, a.jsx)(r.sNh, {
         label: "Build Overrides",
         id: "build_overrides",
         children: (0, a.jsx)(r.kSQ, {
-          children: L.map(e => (0, a.jsx)(r.k5B, {
+          children: M.map(e => (0, a.jsx)(r.k5B, {
             id: "input-".concat(e.payload),
             group: "build_overrides",
             label: e.id,
             checked: (null == t ? true : t.id) === e.id,
             action: async () => {
-              (null == t ? true : t.id) !== e.id && 200 === (await (0, g.f0)(e.payload)).status && window.location.reload(true)
+              (null == t ? true : t.id) !== e.id && 200 === (await (0, d.f0)(e.payload)).status && window.location.reload(true)
             }
           }, "input-".concat(e.payload)))
         })
       }) : null, null != t ? (0, a.jsx)(r.kSQ, {
         children: (0, a.jsx)(r.sNh, {
           id: "clear-build-override",
-          disabled: u,
-          label: w.intl.string(w.t["/Nz9ra"]),
+          disabled: c,
+          label: D.intl.string(D.t["/Nz9ra"]),
           action: V,
           color: "danger"
         })

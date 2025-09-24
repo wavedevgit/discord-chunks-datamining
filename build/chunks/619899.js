@@ -2,8 +2,9 @@
 /** chunk id: 619899, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
+  Cr: () => N,
   N9: () => y,
-  O1: () => N,
+  O1: () => R,
   St: () => C,
   ex: () => I,
   xq: () => O,
@@ -259,6 +260,17 @@ let y = (0, Chunk879690.U)(e => ({
     }, [e, t, n, i])
   },
   N = e => {
+    let {
+      previewEnabled: t,
+      previewAvatarDecorationId: n
+    } = y(), i = y(e => e.avatarDecorationAssets);
+    return r.useMemo(() => {
+      if (null == e || e.type !== o.Z.AVATAR_DECORATION || 0 === e.items.length) return e;
+      let r = A(t, i, n);
+      return null == r ? e : S(e, r)
+    }, [e, t, n, i])
+  },
+  R = e => {
     let {
       previewEnabled: t,
       previewAvatarDecorationId: n

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => h
-}), require("./388685.js"), require("./781311.js");
+}), require("./388685.js"), require("./290780.js"), require("./781311.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
@@ -17,48 +17,55 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk982538 = require("./982538.js");
 let h = function(e) {
+  var t, n, h;
   let {
-    questId: t,
-    setQuestId: n,
-    quest: h,
-    refreshQuest: m
-  } = e, [g, E] = i.useState(false), [b, y] = i.useState(false), O = i.useRef(null), v = (0, a.Wu)([u.Z], () => [...u.Z.quests.values()]), I = (0, a.e7)([u.Z], () => null != t ? u.Z.getFetchQuestPreviewError(t) : null, [t]), T = (0, a.e7)([u.Z], () => null != t && u.Z.isFetchingQuestPreview(t), [t]), S = i.useMemo(() => v.map(e => {
-    var t, n, r;
-    return {
-      label: "".concat(null != (r = null == (n = e.config) || null == (t = n.messages) ? true : t.questName) ? r : e.id, " (").concat(e.id, ")"),
-      value: e.id
-    }
-  }), [v]), A = i.useCallback(async () => {
-    if (null != t) {
-      E(true);
+    questId: m,
+    setQuestId: g,
+    quest: E,
+    refreshQuest: b
+  } = e, [y, O] = i.useState(false), [v, I] = i.useState(false), T = i.useRef(null), S = (0, a.Wu)([u.Z], () => [...u.Z.quests.values()]), A = (0, a.e7)([u.Z], () => null != m ? u.Z.getFetchQuestPreviewError(m) : null, [m]), C = (0, a.e7)([u.Z], () => null != m && u.Z.isFetchingQuestPreview(m), [m]), N = i.useMemo(() => {
+    let e = S.map(e => {
+      var t, n, r;
+      return {
+        label: "".concat(null != (r = null == (n = e.config) || null == (t = n.messages) ? true : t.questName) ? r : e.id, " (").concat(e.id, ")"),
+        value: e.id
+      }
+    });
+    return null == m || e.some(e => e.value === m) || e.unshift({
+      label: m,
+      value: m
+    }), e
+  }, [S, m]), R = i.useCallback(async () => {
+    if (null != m) {
+      O(true);
       try {
-        await (0, c.Wf)(t, 1)
+        await (0, c.Wf)(m, 1)
       } finally {
-        E(false)
+        O(false)
       }
     }
-  }, [t, E]), C = i.useCallback(async () => {
-    if (null != t) {
-      E(true);
+  }, [m, O]), P = i.useCallback(async () => {
+    if (null != m) {
+      O(true);
       try {
-        await (0, c.eT)(t)
+        await (0, c.eT)(m)
       } finally {
-        E(false)
+        O(false)
       }
     }
-  }, [t, E]), N = i.useCallback(async () => {
-    if (null != t) {
-      E(true);
+  }, [m, O]), w = i.useCallback(async () => {
+    if (null != m) {
+      O(true);
       try {
         let e = Math.random();
-        await (0, c.Wf)(t, e)
+        await (0, c.Wf)(m, e)
       } finally {
-        E(false)
+        O(false)
       }
     }
-  }, [t, E]), R = i.useCallback(e => {
-    (0, l.Ew)(e) || null == n || n(e)
-  }, [n]);
+  }, [m, O]), D = i.useCallback(e => {
+    (0, l.Ew)(e) || null == g || g(e)
+  }, [g]);
   return (0, r.jsxs)("div", {
     className: p.controlBar,
     children: [(0, r.jsx)("div", {
@@ -69,9 +76,9 @@ let h = function(e) {
             className: p.questInput,
             children: [(0, r.jsx)(o.VcW, {
               "aria-label": "Quest ID",
-              options: S,
-              value: t,
-              onChange: R,
+              options: N,
+              value: m,
+              onChange: D,
               placeholder: "Select or enter Quest ID",
               clearable: true,
               filter: (e, t) => {
@@ -82,41 +89,41 @@ let h = function(e) {
                   value: t.trim()
                 }] : n
               }
-            }), (0, r.jsx)(o.hU, {
-              onClick: m,
+            }, "".concat(m, "-").concat(null != (h = null == E || null == (n = E.config) || null == (t = n.messages) ? true : t.questName) ? h : "")), (0, r.jsx)(o.hU, {
+              onClick: b,
               "aria-label": _.intl.string(_.t.wzzjk5),
               icon: o.DuK,
-              loading: T
+              loading: C
             })]
           })
         })
       })
-    }), null != t && null != h && (0, r.jsx)("div", {
+    }), null != m && null != E && (0, r.jsx)("div", {
       className: p.controlsSection,
       children: (0, r.jsxs)(o.hE2, {
         className: p.controlButtons,
         children: [(0, r.jsx)(o.zxk, {
-          onClick: A,
-          disabled: g,
-          loading: g,
+          onClick: R,
+          disabled: y,
+          loading: y,
           variant: "secondary",
           text: "Complete Quest"
         }), (0, r.jsx)(o.zxk, {
-          onClick: C,
-          disabled: g,
-          loading: g,
+          onClick: P,
+          disabled: y,
+          loading: y,
           variant: "secondary",
           text: "Reset Quest"
         }), (0, r.jsx)(o.zxk, {
-          onClick: N,
-          disabled: g,
-          loading: g,
+          onClick: w,
+          disabled: y,
+          loading: y,
           variant: "secondary",
           text: "Random Progress"
         }), (0, r.jsx)(o.yRy, {
-          targetElementRef: O,
-          shouldShow: b,
-          onRequestClose: () => y(false),
+          targetElementRef: T,
+          shouldShow: v,
+          onRequestClose: () => I(false),
           position: "bottom",
           align: "center",
           renderPopout: () => (0, r.jsx)("div", {
@@ -124,22 +131,22 @@ let h = function(e) {
             children: (0, r.jsx)("div", {
               className: p.copyInput,
               children: (0, r.jsx)(s.Z, {
-                value: f.$w.SETTINGS_QUEST_PREVIEW_TOOL_2(t),
+                value: f.$w.QUEST_PREVIEW_TOOL_2(m),
                 text: "Copy link"
               })
             })
           }),
           children: () => (0, r.jsx)(o.hU, {
-            buttonRef: O,
-            onClick: () => y(!b),
+            buttonRef: T,
+            onClick: () => I(!v),
             "aria-label": "Share quest link",
             icon: o.TIy,
             variant: "secondary"
           })
         })]
       })
-    }), null != I ? (0, r.jsx)(d.W, {
-      error: I
-    }) : null, T ? (0, r.jsx)(o.$jN, {}) : null]
+    }), null != A ? (0, r.jsx)(d.W, {
+      error: A
+    }) : null, C ? (0, r.jsx)(o.$jN, {}) : null]
   })
 }

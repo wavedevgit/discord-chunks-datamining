@@ -1,8 +1,8 @@
 /** Chunk was on 93886 **/
 /** chunk id: 422202, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  P: () => a,
-  _: () => l
+  P: () => l,
+  _: () => a
 });
 var Chunk818083 = require("./818083.js"),
   Chunk751823 = require("./751823.js");
@@ -22,13 +22,13 @@ let o = (0, Chunk818083.B)({
   }]
 });
 
-function l(e) {
+function a(e) {
   let {
     location: t,
     autoTrackExposure: n = true
   } = e, {
-    isInHoldout: r
-  } = i.L.getCurrentConfig({
+    isInHoldout: i
+  } = r.L.getCurrentConfig({
     location: t
   }, {
     autoTrackExposure: n
@@ -36,18 +36,18 @@ function l(e) {
   return o.getCurrentConfig({
     location: t
   }, {
-    disable: r,
+    disable: i,
     autoTrackExposure: n
   })
 }
 
-function a(e) {
+function l(e) {
   let {
     location: t,
     autoTrackExposure: n = true
   } = e, {
-    isInHoldout: r
-  } = i.L.useExperiment({
+    isInHoldout: i
+  } = r.L.useExperiment({
     location: t
   }, {
     autoTrackExposure: n
@@ -55,7 +55,7 @@ function a(e) {
   return o.useExperiment({
     location: t
   }, {
-    disable: r,
+    disable: i,
     autoTrackExposure: n
   })
 }

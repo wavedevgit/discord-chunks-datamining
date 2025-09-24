@@ -2,9 +2,9 @@
 /** chunk id: 452081, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   z: () => c
-});
+}), require("./35282.js");
 var Chunk647438 = require("./647438.js"),
-  Chunk703656 = require("./703656.js"),
+  Chunk843611 = require("./843611.js"),
   Chunk823379 = require("./823379.js"),
   Chunk113434 = require("./113434.js"),
   Chunk220068 = require("./220068.js"),
@@ -13,10 +13,12 @@ var Chunk647438 = require("./647438.js"),
 function c(e) {
   let {
     withClaimedQuestsTab: t = true
-  } = e, n = o.Z.useField("tab"), c = r.useCallback(e => {
-    (0, i.dL)("#"), o.Z.setState({
-      tab: e
-    })
+  } = e, n = o.Z.useField("tab"), c = (0, i.TH)(), u = (0, a.aV)();
+  r.useEffect(() => {
+    o.Z.getState().initializeFromUrl(c.search, u)
+  }, [c.search, u]);
+  let d = r.useCallback(e => {
+    o.Z.getState().setTab(e)
   }, []);
   return {
     tabs: r.useMemo(() => [{
@@ -25,8 +27,11 @@ function c(e) {
     }, t ? {
       id: a.e5.CLAIMED,
       label: s.intl.string(s.t.zyNYND)
-    } : null].filter(l.lm), [t]),
+    } : null, u ? {
+      id: a.e5.PREVIEW_TOOL,
+      label: s.intl.string(s.t.BDUDam)
+    } : null].filter(l.lm), [t, u]),
     selectedTab: n,
-    onSelectTab: c
+    onSelectTab: d
   }
 }

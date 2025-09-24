@@ -1,41 +1,41 @@
 /** Chunk was on 60728 **/
 /** chunk id: 567225, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => c
+  Z: () => u
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk401561 = require("./401561.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk720534 = require("./720534.js");
 
-function c(e) {
+function u(e) {
   let {
     className: t,
     game: n,
-    onClick: i,
-    imageClassName: c,
+    onClick: a,
+    imageClassName: u,
     disabled: d = false
   } = e;
   return (0, l.jsxs)(r.P3F, {
     "aria-disabled": d,
-    className: a()(u.game, {
-      [u.disabled]: d
+    className: i()(c.game, {
+      [c.disabled]: d
     }, t),
-    onClick: d ? true : () => i(n),
+    onClick: d ? true : () => a(n),
     children: [(0, l.jsx)("img", {
-      className: a()(u.image, c),
+      className: i()(c.image, u),
       alt: ""
     }), (0, l.jsxs)("div", {
-      className: u.textContainer,
+      className: c.textContainer,
       children: [(0, l.jsx)(r.X6q, {
         variant: "heading-sm/semibold",
         children: n.name
       }), (0, l.jsxs)("div", {
-        className: u.boostContainer,
+        className: c.boostContainer,
         children: [(0, l.jsx)(r.$Eu, {
           size: "sm",
           color: r.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK

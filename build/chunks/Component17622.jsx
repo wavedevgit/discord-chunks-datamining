@@ -22,13 +22,13 @@ function d(e) {
       let {
         Icon: t,
         className: o
-      } = (0, c.t)(e.perkIcon, false);
+      } = (0, s.t)(e.perkIcon, false);
       return (0, n.jsxs)("div", {
         className: l.perkContainer,
         children: [(0, n.jsx)(t, {
           color: "currentColor",
           className: a()(l.perkIcon, o)
-        }), (0, n.jsx)(s.xvT, {
+        }), (0, n.jsx)(c.xvT, {
           className: l.perkText,
           color: "text-default",
           variant: "text-sm/medium",

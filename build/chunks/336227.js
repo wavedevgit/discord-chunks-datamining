@@ -22,22 +22,22 @@ function l(e) {
   };
   return n.useMemo(() => {
     let n = [],
-      d = (0, s.d5)();
+      d = (0, c.d5)();
     return t && n.push({
       perkIcon: a.Ro.EMOJI,
-      description: i.intl.formatToPlainString(c.default.NXvV09, {
+      description: i.intl.formatToPlainString(s.default.NXvV09, {
         totalEmojis: e.features.total_emoji_slots,
         additionalEmojis: e.features.additional_emoji_slots
       })
     }), o && n.push({
       perkIcon: a.Ro.STICKER,
-      description: i.intl.formatToPlainString(c.default.ZEvvPz, {
+      description: i.intl.formatToPlainString(s.default.ZEvvPz, {
         totalStickers: e.features.total_sticker_slots,
         additionalStickers: e.features.additional_sticker_slots
       })
     }), l && n.push({
       perkIcon: a.Ro.SOUNDBOARD,
-      description: i.intl.formatToPlainString(c.default["s9u/Ex"], {
+      description: i.intl.formatToPlainString(s.default["s9u/Ex"], {
         totalSoundboards: e.features.total_sound_slots,
         additionalSoundboards: e.features.additional_sound_slots
       })

@@ -1325,7 +1325,8 @@ function eW(e) {
     r = V(R.Xh.PREMIUM_MONTH_TIER_2, false, false, true, false).currency
   } catch (e) {}
   let i = (0, A.T4)(0, r, {
-    maximumFractionDigits: 0
+    maximumFractionDigits: 0,
+    minimumFractionDigits: 0
   });
   switch (t) {
     case R.rV.DAY:

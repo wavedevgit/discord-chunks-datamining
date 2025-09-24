@@ -1,7 +1,7 @@
 /** Chunk was on 204 **/
 /** chunk id: 680942, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => m
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,19 +18,19 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx");
-let y = e => {
+let m = e => {
   let {
     product: t,
     primary: r,
-    selectedVariantIndex: y,
-    returnRef: v,
-    onSuccess: O,
+    selectedVariantIndex: m,
+    returnRef: O,
+    onSuccess: v,
     tooltipDelay: j
   } = e, {
     analyticsLocations: P
   } = (0, s.ZP)(), _ = l.useRef(null), E = (0, d.sp)(), x = (0, f.Z)();
   return (0, p.x6)(t) ? null : (0, n.jsx)(o.ua7, {
-    text: m.intl.string(m.t["JCFN//"]),
+    text: y.intl.string(y.t["JCFN//"]),
     delay: j,
     children: e => {
       var l, s;
@@ -52,13 +52,13 @@ let y = e => {
         }
         return e
       }({}, e), s = s = {
-        "aria-label": m.intl.string(m.t["JCFN//"]),
+        "aria-label": y.intl.string(y.t["JCFN//"]),
         buttonRef: _,
         variant: r ? "primary" : "secondary",
         icon: o.OgN,
         size: "md",
         onClick: e => {
-          e.stopPropagation(), u.default.track(b.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+          e.stopPropagation(), u.default.track(h.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
             collectibles_shop_session_id: null == E ? true : E.sessionId,
             sku_id: t.skuId,
             page_section: null == E ? true : E.pageSection,
@@ -68,17 +68,17 @@ let y = e => {
             cta_name: "gift button",
             page_type: x || "home"
           }), (0, c.Z)({
-            skuId: (0, h.S)({
+            skuId: (0, b.S)({
               product: t,
-              selectedVariantIndex: y
+              selectedVariantIndex: m
             }),
             isGift: true,
             giftingOrigin: g.Wt.SHOP_PAGE,
             analyticsLocations: P,
-            returnRef: v,
+            returnRef: O,
             variantsReturnStyle: a.v.VARIANTS_GROUP,
-            onClose: null != O ? e => {
-              e && O()
+            onClose: null != v ? e => {
+              e && v()
             } : true
           })
         }

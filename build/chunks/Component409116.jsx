@@ -31,42 +31,42 @@ let p = e => {
     nitroIconType: l,
     nitroIconSize: p = "md",
     className: f,
-    discountOfferAmount: h,
-    discount: b = s.f_,
+    discountOfferAmount: b,
+    discount: h = s.f_,
     variant: g = "heading-md/semibold"
-  } = e, m = null != h, y = (0, o.qr)(t, r), v = b !== s.f_ && b.discountPercentage >= 5 && !m ? (0, n.jsxs)(n.Fragment, {
+  } = e, y = null != b, m = (0, o.qr)(t, r), O = h !== s.f_ && h.discountPercentage >= 5 && !y ? (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsx)(a.nn4, {
       children: c.intl.format(c.t.niC6DA, {
-        price: y,
-        discountPercentage: b.discountPercentage
+        price: m,
+        discountPercentage: h.discountPercentage
       })
     }), (0, n.jsx)("span", {
       "aria-hidden": true,
-      children: y
+      children: m
     }), (0, n.jsxs)(a.Text, {
       variant: g,
       color: "text-feedback-positive",
       className: u.discount,
       "aria-hidden": true,
-      children: ["(-", b.discountPercentage, "%)"]
+      children: ["(-", h.discountPercentage, "%)"]
     })]
   }) : (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsx)(a.nn4, {
       children: c.intl.format(c.t["6C36MD"], {
-        price: y
+        price: m
       })
     }), (0, n.jsx)("span", {
       "aria-hidden": true,
       className: i()({
-        [u.priceStrikethrough]: m
+        [u.priceStrikethrough]: y
       }, f),
-      children: y
+      children: m
     })]
   });
   return (0, n.jsxs)(a.Text, {
     variant: g,
     className: i()({
-      [u.discountBackgroundColor]: m
+      [u.discountBackgroundColor]: y
     }, u.container, f),
     children: ["tooltip" === l ? (0, n.jsx)(a.ua7, {
       text: c.intl.string(c.t.MPFyJy),
@@ -113,17 +113,17 @@ let p = e => {
       size: p,
       color: "currentColor",
       className: u.nitroIcon
-    }) : null, v, m && (0, n.jsxs)(a.X6q, {
+    }) : null, O, y && (0, n.jsxs)(a.X6q, {
       variant: "heading-md/semibold",
       className: u.discountPill,
       children: [(0, n.jsx)(a.nn4, {
         children: c.intl.format(c.t.rItDb2, {
-          discountOfferAmount: h
+          discountOfferAmount: b
         })
       }), (0, n.jsx)("span", {
         "aria-hidden": true,
         children: c.intl.formatToPlainString(c.t.AYcXGR, {
-          discountOfferAmount: h
+          discountOfferAmount: b
         })
       })]
     })]

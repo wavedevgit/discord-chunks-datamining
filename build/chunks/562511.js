@@ -18,40 +18,40 @@ var Chunk647438 = require("./647438.js"),
 
 function f(e) {
   let t = function(e) {
-    let t = (0, a.FT)(o.C.ADOPT_CLAN_IDENTITY_NOTICE, null != e ? e : _.lds);
-    return (0, i.e7)([c.Z, u.default, s.ZP], () => {
+    let t = (0, l.FT)(o.C.ADOPT_CLAN_IDENTITY_NOTICE, null != e ? e : p.lds);
+    return (0, r.e7)([c.Z, d.default, s.ZP], () => {
       var t, n;
       if (null === e) returnfalse;
-      let r = c.Z.getGuild(e);
-      if (true === r || !(0, d.up)(r) || null == r.profile || null === r.profile.tag) returnfalse;
-      let i = u.default.getCurrentUser();
-      if (true === i || (null == (t = i.primaryGuild) ? true : t.identityGuildId) === r.id && (null == (n = i.primaryGuild) ? true : n.tag) === r.profile.tag) returnfalse;
-      let o = s.ZP.getMember(e, i.id);
+      let i = c.Z.getGuild(e);
+      if (true === i || !(0, u.up)(i) || null == i.profile || null === i.profile.tag) returnfalse;
+      let r = d.default.getCurrentUser();
+      if (true === r || (null == (t = r.primaryGuild) ? true : t.identityGuildId) === i.id && (null == (n = r.primaryGuild) ? true : n.tag) === i.profile.tag) returnfalse;
+      let o = s.ZP.getMember(e, r.id);
       return null != o && !o.isPending
     }, [e]) && !t
   }(e);
   return ! function(e) {
-    let t = (0, a.FT)(o.C.ADOPT_CLAN_IDENTITY_NOTICE, null != e ? e : _.lds),
-      n = (0, i.e7)([p.Z], () => null === e ? null : p.Z.getGuildLastSeenInfo(e)),
-      s = (0, i.e7)([u.default], () => {
+    let t = (0, l.FT)(o.C.ADOPT_CLAN_IDENTITY_NOTICE, null != e ? e : p.lds),
+      n = (0, r.e7)([_.Z], () => null === e ? null : _.Z.getGuildLastSeenInfo(e)),
+      s = (0, r.e7)([d.default], () => {
         var e;
-        return null == (e = u.default.getCurrentUser()) ? true : e.primaryGuild
+        return null == (e = d.default.getCurrentUser()) ? true : e.primaryGuild
       }),
-      d = (0, i.e7)([c.Z], () => {
+      u = (0, r.e7)([c.Z], () => {
         var t, n;
         return null == (n = c.Z.getGuild(e)) || null == (t = n.profile) ? true : t.tag
       });
-    if (r.useEffect(() => {
-        t && null === n && null != e && null != d && l.Z.dispatch({
+    if (i.useEffect(() => {
+        t && null === n && null != e && null != u && a.Z.dispatch({
           type: "GUILD_TAG_CHANGED_COACHMARK_SEEN",
           guildId: e,
           lastSeenInfo: {
-            tag: d
+            tag: u
           }
         })
-      }, [e, d, t, n]), null == d || (null == s ? true : s.identityGuildId) === e && (null == s ? true : s.tag) === d) returnfalse;
+      }, [e, u, t, n]), null == u || (null == s ? true : s.identityGuildId) === e && (null == s ? true : s.tag) === u) returnfalse;
     let f = (null == s ? true : s.identityGuildId) === e && (null == s ? true : s.tag) === null,
-      v = null === n || (null == n ? true : n.tag) === d;
+      v = null === n || (null == n ? true : n.tag) === u;
     return f && !v && t
   }(e) ? t ? "available" : null : "changed"
 }

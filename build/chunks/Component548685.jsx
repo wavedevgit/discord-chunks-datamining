@@ -2,12 +2,12 @@
 /** chunk id: 548685, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => I
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk782568 = require("./782568.js"),
@@ -19,8 +19,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk74538 = require("./74538.js"),
   Chunk381585 = require("./381585.jsx"),
   Chunk597688 = require("./597688.js"),
+  Chunk128922 = require("./128922.js"),
   Chunk38900 = require("./38900.jsx"),
   Chunk709999 = require("./709999.jsx"),
+  Chunk653126 = require("./653126.jsx"),
   Chunk328626 = require("./328626.js"),
   Chunk849275 = require("./849275.js"),
   Chunk619899 = require("./619899.js"),
@@ -29,49 +31,51 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk345213 = require("./345213.js"),
   Chunk310582 = require("./310582.js");
-let j = e => {
+let I = e => {
   var t;
   let {
     isLoading: n,
     title: a,
-    sortedSkuIds: j,
-    numVisibleItems: k,
-    hasSorting: I,
+    sortedSkuIds: I,
+    numVisibleItems: P,
+    hasSorting: A,
     prioritizeUserDiscounts: B,
     tab: N,
-    buttonContainerClassName: A
-  } = e, P = (0, i.e7)([d.default], () => d.default.getCurrentUser()), R = h.ZP.canUseCollectibles(P), Z = (0, v.G)("FeedBlock"), {
-    sortType: w,
+    buttonContainerClassName: R
+  } = e, Z = (0, s.e7)([d.default], () => d.default.getCurrentUser()), w = h.ZP.canUseCollectibles(Z), F = (0, T.G)("FeedBlock"), {
+    sortType: H,
     setSortType: M,
-    sortedItems: F,
-    sortOptions: H,
-    shuffleProducts: D,
-    showRecommendationOption: W
-  } = (0, S.Z)(j, R, B), U = (0, O.St)(F), V = (0, i.e7)([u.Z], () => u.Z.useReducedMotion), z = (0, i.e7)([g.Z], () => g.Z.isFocused()), G = !V && z, {
-    animationPhase: q,
-    startAnimation: K
-  } = (0, E.y)(), Y = (0, _.sp)(), X = null != (t = null == Y ? true : Y.sessionId) ? t : "", Q = l.useRef(null), J = l.useCallback(e => {
-    K({
+    sortedItems: D,
+    sortOptions: W,
+    shuffleProducts: U,
+    showRecommendationOption: V
+  } = (0, v.Z)(I, w, B), z = (0, O.St)(D), G = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), q = (0, s.e7)([g.Z], () => g.Z.isFocused()), K = !G && q, {
+    animationPhase: Y,
+    startAnimation: X
+  } = (0, x.y)(), Q = (0, C.sp)(), J = null != (t = null == Q ? true : Q.sessionId) ? t : "", $ = l.useRef(null), ee = l.useCallback(e => {
+    X({
       isShuffling: false,
       onOutroComplete: () => M(e)
-    }), p.default.track(x.rMx.COLLECTIBLES_SHOP_FEED_SORT_CHANGED, {
-      page_session_id: X,
+    }), p.default.track(y.rMx.COLLECTIBLES_SHOP_FEED_SORT_CHANGED, {
+      page_session_id: J,
       sort_type: e
     })
-  }, [K, M, X]);
-  return null == P ? null : (0, r.jsxs)("div", {
-    className: s()(L.popularPicksSection, L.centeredSection),
+  }, [X, M, J]), et = m.Z.useConfig({
+    location: "FeedBlock"
+  }).showCardsV2;
+  return null == Z ? null : (0, r.jsxs)("div", {
+    className: i()(k.popularPicksSection, k.centeredSection),
     children: [(0, r.jsxs)("div", {
-      className: L.blockHeader,
+      className: k.blockHeader,
       children: [(0, r.jsxs)("div", {
-        className: L.headerLeft,
+        className: k.headerLeft,
         children: [(0, r.jsx)(o.X6q, {
           variant: "heading-lg/semibold",
           children: a
-        }), W && (0, r.jsx)(o.ua7, {
-          text: T.intl.string(T.t["3taPdn"]),
+        }), V && (0, r.jsx)(o.ua7, {
+          text: L.intl.string(L.t["3taPdn"]),
           position: "top",
-          "aria-label": T.intl.string(T.t["3taPdn"]),
+          "aria-label": L.intl.string(L.t["3taPdn"]),
           children: e => {
             var t, n;
             return (0, r.jsx)(o.P3F, (t = function(e) {
@@ -92,8 +96,8 @@ let j = e => {
               }
               return e
             }({}, e), n = n = {
-              onClick: () => (0, c.Z)(f.Z.getArticleURL(x.BhN.DATA_USED_FOR_RECOMMENDED)),
-              className: L.informationIcon,
+              onClick: () => (0, c.Z)(f.Z.getArticleURL(y.BhN.DATA_USED_FOR_RECOMMENDED)),
+              className: k.informationIcon,
               children: (0, r.jsx)(o.d3s, {
                 size: "sm"
               })
@@ -109,66 +113,71 @@ let j = e => {
             }), t))
           }
         })]
-      }), I ? (0, r.jsxs)("div", {
-        className: s()(L.headerRight, {
-          [y.shopTakeOver]: Z
+      }), A ? (0, r.jsxs)("div", {
+        className: i()(k.headerRight, {
+          [j.shopTakeOver]: F
         }),
         children: [(0, r.jsx)(o.Text, {
           variant: "text-md/medium",
-          children: T.intl.string(T.t.uaX709)
+          children: L.intl.string(L.t.uaX709)
         }), (0, r.jsx)("div", {
-          className: A,
+          className: R,
           children: (0, r.jsx)(o.PhF, {
-            options: H,
-            select: J,
-            className: L.sortSelect,
-            popoutClassName: s()({
-              [y.shopTakeOver]: Z
+            options: W,
+            select: ee,
+            className: k.sortSelect,
+            popoutClassName: i()({
+              [j.shopTakeOver]: F
             }),
-            isSelected: e => e === w,
+            isSelected: e => e === H,
             serialize: e => e
           })
         }), (0, r.jsx)("div", {
-          className: A,
+          className: R,
           children: (0, r.jsx)(o.zxk, {
             variant: "secondary",
-            text: T.intl.string(T.t.X3tnc3),
-            buttonRef: Q,
+            text: L.intl.string(L.t.X3tnc3),
+            buttonRef: $,
             onClick: () => {
-              K({
+              X({
                 isShuffling: true,
-                onOutroComplete: D,
-                returnRef: Q
-              }), p.default.track(x.rMx.COLLECTIBLES_SHOP_FEED_SHUFFLE_CLICKED, {
-                page_session_id: X
+                onOutroComplete: U,
+                returnRef: $
+              }), p.default.track(y.rMx.COLLECTIBLES_SHOP_FEED_SHUFFLE_CLICKED, {
+                page_session_id: J
               })
             },
-            disabled: q !== E.g.MOUNTED && q !== E.g.FINISHED
+            disabled: Y !== x.g.MOUNTED && Y !== x.g.FINISHED
           })
         })]
       }) : null]
     }), (0, r.jsx)("div", {
-      className: L.feed,
+      className: k.feed,
       children: n ? (0, r.jsx)(r.Fragment, {
-        children: [...Array(12)].map((e, t) => (0, r.jsx)(m.K, {}, t + 1))
-      }) : U.slice(0, k).map((e, t) => {
-        let n, l = C.Z.getCategoryForProduct(e.skuId);
+        children: [...Array(12)].map((e, t) => (0, r.jsx)(b.K, {}, t + 1))
+      }) : z.slice(0, P).map((e, t) => {
+        let n, l = _.Z.getCategoryForProduct(e.skuId);
         if (null == e || null == l) return null;
-        if (G)
-          if (q === E.g.SHUFFLE_OUT) return (0, r.jsx)("div", {
-            className: L.shuffleOutro
+        if (K)
+          if (Y === x.g.SHUFFLE_OUT) return (0, r.jsx)("div", {
+            className: k.shuffleOutro
           }, "".concat(e.skuId, "-").concat(t));
-          else q === E.g.SORT_OUT ? n = L.sortChangedOutro : q === E.g.SHUFFLE_IN ? n = L.shuffleIntro : q === E.g.SORT_IN && (n = L.sortChangedIntro);
-        return (0, r.jsx)(_.k0, {
+          else Y === x.g.SORT_OUT ? n = k.sortChangedOutro : Y === x.g.SHUFFLE_IN ? n = k.shuffleIntro : Y === x.g.SORT_IN && (n = k.sortChangedIntro);
+        return (0, r.jsx)(C.k0, {
           newValue: {
             tilePosition: t,
             pageSection: "popular picks",
             categoryPosition: 2
           },
-          children: (0, r.jsx)(b.Z, {
+          children: et ? (0, r.jsx)(S.Z, {
+            skuId: null == e ? true : e.skuId,
+            config: {
+              tab: N
+            }
+          }) : (0, r.jsx)(E.Z, {
             product: e,
             category: l,
-            user: P,
+            user: Z,
             tab: N,
             className: n
           })

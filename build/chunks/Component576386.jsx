@@ -1,8 +1,8 @@
-/** Chunk was on 1604 **/
+/** Chunk was on 87965 **/
 /** chunk id: 576386, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -25,13 +25,13 @@ let v = e => {
       section: c,
       canUsePremiumCollectibles: p,
       isSelected: v,
-      onClick: b
-    } = e, g = (0, i.useRef)(null), f = (0, s.Z)(g);
+      onClick: g
+    } = e, b = (0, i.useRef)(null), f = (0, s.Z)(b);
     return (0, n.jsxs)(o.P3F, {
-      innerRef: g,
+      innerRef: b,
       "aria-label": null != (t = a.label) ? t : m.intl.string(m.t.x5CoXV),
       className: h.nameplateItem,
-      onClick: b,
+      onClick: g,
       children: [(0, n.jsx)(u.Z, {
         nameplate: a,
         user: r,
@@ -49,7 +49,7 @@ let v = e => {
       })]
     })
   },
-  b = e => {
+  g = e => {
     let {
       currentUser: t,
       selectedNameplate: r,

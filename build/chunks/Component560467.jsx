@@ -31,23 +31,23 @@ function C(e) {
   } = e;
   return null == n ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: l()(b.optionContainer, i),
+      className: l()(v.optionContainer, i),
       children: [(0, r.jsx)("span", {
         children: n.name
       }), (0, r.jsxs)("div", {
-        className: b.labelContainer,
+        className: v.labelContainer,
         children: [(0, r.jsx)(c.$Eu, {
           size: "xs",
           color: c.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK
         }), (0, r.jsx)(c.Text, {
           variant: "text-xs/medium",
-          children: v.intl.format(j.default.FrRqub, {
+          children: b.intl.format(j.default.FrRqub, {
             boostCount: n.cost
           })
         })]
       })]
     }), !t && (0, r.jsx)("div", {
-      className: b.optionSpacer
+      className: v.optionSpacer
     })]
   })
 }
@@ -64,18 +64,18 @@ function N(e) {
   } = (0, _.t)(n.pingUrl);
   return null == n ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: l()(b.optionContainer, {
-        [b.disabled]: i
+      className: l()(v.optionContainer, {
+        [v.disabled]: i
       }, a),
       children: [(0, r.jsx)("span", {
         children: n.name
       }), (0, r.jsx)("div", {
-        className: b.labelContainer,
+        className: v.labelContainer,
         children: i ? (0, r.jsx)("span", {
-          children: v.intl.string(j.default["1eK9GR"])
+          children: b.intl.string(j.default["1eK9GR"])
         }) : (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)("div", {
-            className: l()(b.pingCircle, s)
+            className: l()(v.pingCircle, s)
           }), (0, r.jsx)(c.Text, {
             variant: "text-xs/medium",
             children: o
@@ -83,7 +83,7 @@ function N(e) {
         })
       })]
     }), !t && (0, r.jsx)("div", {
-      className: b.optionSpacer
+      className: v.optionSpacer
     })]
   })
 }
@@ -207,7 +207,7 @@ function O() {
                 region: e[0].value,
                 selected: e[0].value.id === t,
                 disabled: null != (n = e[0].disabled) && n,
-                className: b.value
+                className: v.value
               })
             }
           })]
@@ -231,7 +231,7 @@ function O() {
               return (0, r.jsx)(C, {
                 plan: null == (n = e[0]) ? true : n.value,
                 selected: (null == (i = e[0]) || null == (t = i.value) ? true : t.id) === y,
-                className: b.value
+                className: v.value
               })
             },
             renderOptionLabel: e => (0, r.jsx)(C, {

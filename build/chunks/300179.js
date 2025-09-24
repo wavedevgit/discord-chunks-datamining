@@ -1,5 +1,6 @@
-/** Chunk was on 11222 **/
-/** chunk id: 300179, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 87965 **/
+/** chunk id: 300179, original params: e,t,r (module,exports,require) **/
+"use strict";
 module.exports = {
   shopCard: "shopCard_c3d04b",
   shopCardDark: "shopCardDark_c3d04b shopCard_c3d04b",

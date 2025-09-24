@@ -1,8 +1,8 @@
-/** Chunk was on 1604 **/
+/** Chunk was on 87965 **/
 /** chunk id: 653079, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
@@ -18,18 +18,18 @@ var Chunk951288 = require("./951288.js"),
   Chunk74538 = require("./74538.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk763740 = require("./763740.js");
-let b = e => {
+let g = e => {
   let {
     user: t,
     guildId: r,
     selectedNameplate: i
-  } = e, b = (0, l.e7)([_.Z], () => _.Z.getPendingGlobalName()), {
-    product: g,
+  } = e, g = (0, l.e7)([_.Z], () => _.Z.getPendingGlobalName()), {
+    product: b,
     purchase: f
-  } = (0, c.Z)(null == i ? true : i.skuId), x = (0, p.kd)(g), y = m.ZP.canUseCollectibles(t), C = (0, s.qS)(f), w = (0, s.G1)(g), P = !y && C, O = null == f || P;
+  } = (0, c.Z)(null == i ? true : i.skuId), x = (0, p.kd)(b), C = m.ZP.canUseCollectibles(t), w = (0, s.qS)(f), P = (0, s.G1)(b), I = !C && w, y = null == f || I;
   return (0, n.jsxs)("div", {
     className: a()(v.previewBorder, {
-      [v.upsell]: null != i && O
+      [v.upsell]: null != i && y
     }),
     children: [(0, n.jsx)("div", {
       className: v.previewBox,
@@ -45,7 +45,7 @@ let b = e => {
           user: t,
           guildId: r,
           nameplate: i,
-          pendingGlobalName: b,
+          pendingGlobalName: g,
           isHighlighted: true
         }), (0, n.jsx)(d.d, {
           width: 124,
@@ -60,9 +60,9 @@ let b = e => {
       children: [(0, n.jsx)(o.Text, {
         variant: "text-sm/semibold",
         children: x
-      }), O && (0, n.jsx)(o.Text, {
+      }), y && (0, n.jsx)(o.Text, {
         variant: "text-sm/normal",
-        children: P ? h.intl.string(h.t.nD78oa) : w && y ? h.intl.string(h.t.hmyYKy) : w ? h.intl.string(h.t.JY1i0t) : h.intl.string(h.t.fEGjVV)
+        children: I ? h.intl.string(h.t.nD78oa) : P && C ? h.intl.string(h.t.hmyYKy) : P ? h.intl.string(h.t.JY1i0t) : h.intl.string(h.t.fEGjVV)
       })]
     })]
   })

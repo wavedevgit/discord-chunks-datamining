@@ -1,5 +1,6 @@
-/** Chunk was on 11222 **/
-/** chunk id: 890088, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 87965 **/
+/** chunk id: 890088, original params: e,t,r (module,exports,require) **/
+"use strict";
 module.exports = {
   wishlistButton: "wishlistButton__979b1",
   withHover: "withHover__979b1",

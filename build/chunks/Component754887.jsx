@@ -17,9 +17,9 @@ function c(e) {
       description: u,
       powerups: p,
       footerInfoText: f,
-      footerAction: v
+      footerAction: m
     } = e,
-    j = function(e, t) {
+    v = function(e, t) {
       if (null == e) return {};
       var r, n, o = function(e, t) {
         if (null == e) return {};
@@ -34,8 +34,8 @@ function c(e) {
       }
       return o
     }(e, ["guildId", "title", "description", "powerups", "footerInfoText", "footerAction"]);
-  let x = (0, i.Z)(c),
-    b = null != f && f.length > 0 ? (0, n.jsx)("div", {
+  let j = (0, i.Z)(c),
+    x = null != f && f.length > 0 ? (0, n.jsx)("div", {
       className: l.footerInfoContainer,
       children: (0, n.jsx)(a.Text, {
         variant: "text-sm/medium",
@@ -62,15 +62,15 @@ function c(e) {
   }({
     title: d,
     subtitle: u,
-    actionBarInput: b,
-    actions: null != v ? [v] : []
-  }, j), r = r = {
+    actionBarInput: x,
+    actions: null != m ? [m] : []
+  }, v), r = r = {
     children: (0, n.jsx)("div", {
       className: l.perkCardsContainer,
       children: p.map(e => (0, n.jsx)(s.Z, {
         guildId: c,
         powerup: e,
-        canUseBoosts: null != x && x
+        canUseBoosts: null != j && j
       }, e.skuId))
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
