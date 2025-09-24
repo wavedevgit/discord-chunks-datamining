@@ -2,27 +2,28 @@
 /** chunk id: 70621, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  w: () => l
+  w: () => c
 });
 var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk497505 = require("./497505.js"),
   Chunk415104 = require("./415104.jsx"),
+  Chunk388032 = require("./388032.jsx"),
   Chunk818923 = require("./818923.js");
-let l = e => {
+let c = e => {
   let {
     quest: t
   } = e;
   return (0, r.jsx)("div", {
-    className: s.previewBackground,
+    className: l.previewBackground,
     children: (0, r.jsxs)("div", {
-      className: s.previewCard,
+      className: l.previewCard,
       children: [(0, r.jsx)(i.X6q, {
-        className: s.heading,
+        className: l.heading,
         variant: "heading-md/semibold",
-        children: "Home Card"
+        children: s.intl.string(s.t.Mko3j4)
       }), (0, r.jsx)(o.Z, {
-        className: s.questTile,
+        className: l.questTile,
         quest: t,
         questContent: a.jn.QUEST_HOME_DESKTOP,
         contentPosition: 0,

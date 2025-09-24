@@ -1,10 +1,10 @@
 /** Chunk was on 204 **/
-/** chunk id: 959840, original params: e,t,r (module,exports,require) **/
+/** chunk id: 567400, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  O: () => l
+  Y: () => l
 });
 let n = (0, require("./427164.js").le)({
-  name: "2025-09-user-profile-wishlist",
+  name: "2025-09-user-profile-wishlist-editing",
   kind: "user",
   defaultConfig: {
     enabled: false

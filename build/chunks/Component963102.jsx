@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk607070 = require("./607070.js"),
   Chunk984370 = require("./984370.jsx"),
   Chunk110560 = require("./110560.jsx"),
-  Chunk959840 = require("./959840.js"),
+  Chunk567400 = require("./567400.js"),
   Chunk892001 = require("./892001.js"),
   Chunk507808 = require("./507808.js"),
   Chunk825102 = require("./825102.js"),
@@ -154,7 +154,7 @@ function R(e) {
     enabled: w
   } = (0, E.WX)({
     location: "collectibles_shop_header_bar"
-  }), F = (0, _.O)({
+  }), F = (0, _.Y)({
     location: "CollectiblesShopHeaderBar"
   }), H = [{
     tab: j.AW.HOME,

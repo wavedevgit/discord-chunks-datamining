@@ -29,21 +29,21 @@ let p = (0, Chunk647438.createContext)({
       analyticsLocations: i,
       onCheckoutSuccess: f,
       children: b
-    } = e, h = (0, a.e7)([c.default], () => u.ZP.canUseCollectibles(c.default.getCurrentUser())), {
-      product: g
+    } = e, g = (0, a.e7)([c.default], () => u.ZP.canUseCollectibles(c.default.getCurrentUser())), {
+      product: h
     } = (0, o.T)(t), y = (0, l.useMemo)(() => {
-      if (null == g) return null;
+      if (null == h) return null;
       let e = (0, s.T)({
-          product: g,
-          isPremiumUser: h
+          product: h,
+          isPremiumUser: g
         }),
         t = null !== e ? e.amount : null;
       return {
         orbPrice: e,
         orbPriceAmount: t,
-        product: g
+        product: h
       }
-    }, [g, h]), {
+    }, [h, g]), {
       redeemVirtualCurrency: m,
       isSubmitting: O,
       error: v

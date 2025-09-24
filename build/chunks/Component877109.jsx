@@ -41,7 +41,9 @@ let h = function(e) {
     setQuestId: a
   } = p(t), l = (0, o.e7)([c.Z], () => null != n ? c.Z.getQuest(n) : true, [n]);
   i.useEffect(() => {
-    null != n && (0, s.MG)(n)
+    null != n && (0, s.MG)(n).then(() => {
+      (0, s.T0)(n)
+    })
   }, [n]);
   let _ = () => {
       null != n && (0, s.MG)(n)

@@ -86,13 +86,13 @@ let j = s()(e => {
       minimal: P
     } = e, {
       isPurchased: _
-    } = (0, h.L)(r), E = (0, c.JA)("shop-variants-group-".concat(t.storeListingId, "-").concat(i)), {
+    } = (0, g.L)(r), E = (0, c.JA)("shop-variants-group-".concat(t.storeListingId, "-").concat(i)), {
       onFocus: x
     } = E, C = v(E, ["onFocus"]), S = l.useCallback(e => {
       e.preventDefault(), e.stopPropagation(), (0, b.$)(t, i), x()
     }, [x, t, i]);
     return (0, n.jsx)(p.ua7, {
-      text: g.intl.string(g.t["6cfuDg"]),
+      text: h.intl.string(h.t["6cfuDg"]),
       "aria-label": false,
       shouldShow: !P && _,
       children: e => (0, n.jsx)(p.P3F, O(m({}, C), {
@@ -144,7 +144,7 @@ let j = s()(e => {
       setIsHoveringOnSwitch: s,
       minimal: d,
       selectedVariantIndex: b,
-      alternativeBackgroundColor: h
+      alternativeBackgroundColor: g
     } = e, j = o.previewingVariantIndex, _ = null == (t = l.variants) ? true : t[b], E = null !== j ? null == (r = l.variants) ? true : r[j] : true, x = (0, f.Z)("shop-variants-group-".concat(l.storeListingId), u.hy.HORIZONTAL);
     if (null == _) return null;
     let C = null != E ? E.variantLabel : null == _ ? true : _.variantLabel;
@@ -161,7 +161,7 @@ let j = s()(e => {
           }, c), {
             className: a()(y.variantsPanel, i, {
               [y.minimalState]: d,
-              [y.alternativeColor]: h
+              [y.alternativeColor]: g
             }),
             onMouseEnter: () => null == s ? true : s(true),
             onMouseLeave: () => null == s ? true : s(false),
@@ -184,7 +184,7 @@ let j = s()(e => {
               variant: "text-xs/medium",
               color: "text-secondary",
               className: y.variantLabel,
-              children: d ? g.intl.string(g.t.wbgaj4) : C
+              children: d ? h.intl.string(h.t.wbgaj4) : C
             })]
           }))
         }

@@ -2,34 +2,35 @@
 /** chunk id: 176168, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => d
+  Z: () => f
 });
 var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk210724 = require("./210724.jsx"),
   Chunk130653 = require("./130653.jsx"),
   Chunk78826 = require("./78826.jsx"),
+  Chunk388032 = require("./388032.jsx"),
   Chunk818923 = require("./818923.js"),
   Chunk805832 = require("./805832.js"),
   Chunk981028 = require("./981028.js");
-let d = function(e) {
+let f = function(e) {
   let {
     quest: t
   } = e;
   return (0, r.jsx)("div", {
-    className: l.previewBackground,
+    className: c.previewBackground,
     children: (0, r.jsxs)("div", {
-      className: c.barCard,
+      className: u.barCard,
       children: [(0, r.jsx)(i.X6q, {
-        className: c.barHeading,
+        className: u.barHeading,
         variant: "heading-md/semibold",
-        children: "Quest Bar"
+        children: l.intl.string(l.t.dCHFNT)
       }), (0, r.jsx)("div", {
-        className: c.fixedBarContainer,
+        className: u.fixedBarContainer,
         children: (0, r.jsx)("div", {
-          className: c.fixedBarWrapper,
+          className: u.fixedBarWrapper,
           children: (0, r.jsx)("div", {
-            className: u.panels,
+            className: d.panels,
             children: (0, r.jsx)(o.Z, {
               children: (0, r.jsx)(s.p, {
                 source: "preview",

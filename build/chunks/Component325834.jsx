@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk233971 = require("./233971.js");
 
-function g(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -84,7 +84,7 @@ let O = e => {
       text: b.intl.string(b.t["6cfuDg"]),
       "aria-label": false,
       shouldShow: P,
-      children: e => (0, n.jsx)(c.P3F, y(g({}, x), {
+      children: e => (0, n.jsx)(c.P3F, y(h({}, x), {
         tag: "li",
         onMouseEnter: () => {
           var t;
@@ -106,10 +106,10 @@ let O = e => {
         onKeyDown: e => {
           e.key === s.R8.ENTER && C(e)
         },
-        className: h.thumbnailVariant,
+        className: g.thumbnailVariant,
         children: (0, n.jsxs)("div", {
-          className: a()(h.thumbnailImage, {
-            [h.selected]: i === O
+          className: a()(g.thumbnailImage, {
+            [g.selected]: i === O
           }),
           style: {
             zIndex: u - i
@@ -117,12 +117,12 @@ let O = e => {
           children: [null != S && "" !== S && (0, n.jsx)("img", {
             src: S,
             alt: r.variantLabel,
-            className: h.thumbnailImg,
+            className: g.thumbnailImg,
             onError: e => {
               e.target.style.display = "none"
             }
           }), P ? (0, n.jsx)("div", {
-            className: h.purchasedIndicator,
+            className: g.purchasedIndicator,
             children: (0, n.jsx)(c.kSu, {
               color: "var(--text-primary)"
             })
@@ -149,14 +149,14 @@ let O = e => {
           var {
             ref: t
           } = e, r = m(e, ["ref"]);
-          return (0, n.jsxs)("div", y(g({
+          return (0, n.jsxs)("div", y(h({
             ref: t
           }, r), {
-            className: a()(h.variantsPanel, i, {}),
+            className: a()(g.variantsPanel, i, {}),
             onMouseEnter: () => null == p ? true : p(true),
             onMouseLeave: () => null == p ? true : p(false),
             children: [null != l.variants && l.variants.length > 0 && (0, n.jsx)("ol", {
-              className: h.variantsList,
+              className: g.variantsList,
               children: l.variants.map((e, t) => (0, n.jsx)(O, {
                 variantGroupProduct: l,
                 variant: e,
@@ -169,7 +169,7 @@ let O = e => {
             }), (0, n.jsx)(c.Text, {
               variant: "text-xs/medium",
               color: "text-secondary",
-              className: h.variantLabel,
+              className: g.variantLabel,
               children: _
             })]
           }))

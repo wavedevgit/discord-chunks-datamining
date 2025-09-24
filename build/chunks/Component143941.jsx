@@ -22,10 +22,10 @@ let y = e => {
       message: t
     } = e;
     return (0, n.jsxs)("div", {
-      className: g.toast,
+      className: h.toast,
       children: [(0, n.jsx)(s.kSu, {
         size: "refresh_sm",
-        className: h.toastIcon,
+        className: g.toastIcon,
         color: s.TVs.colors.STATUS_POSITIVE
       }), (0, n.jsx)(s.Text, {
         color: "text-default",
@@ -39,8 +39,8 @@ let y = e => {
       skuId: t,
       iconSize: r = 20,
       className: i,
-      enableHoverEffect: g = false
-    } = e, [m, O] = (0, u.US)([o.z.WISHLIST_NUX_TOOLTIP_AND_MODAL], true, true), v = m === o.z.WISHLIST_NUX_TOOLTIP_AND_MODAL, j = (0, p.n)("123", t), P = l.useRef(null), _ = (0, c.Z)(P), E = j ? s.h_8 : s.Pzh, x = j || _ ? h.wishlistedOrHoveredIconColor : h.normalIconColor, C = l.useCallback(e => {
+      enableHoverEffect: h = false
+    } = e, [m, O] = (0, u.US)([o.z.WISHLIST_NUX_TOOLTIP_AND_MODAL], true, true), v = m === o.z.WISHLIST_NUX_TOOLTIP_AND_MODAL, j = (0, p.n)("123", t), P = l.useRef(null), _ = (0, c.Z)(P), E = j ? s.h_8 : s.Pzh, x = j || _ ? g.wishlistedOrHoveredIconColor : g.normalIconColor, C = l.useCallback(e => {
       e.stopPropagation(), j ? (d.Z.removeSkuFromWishlist("123", t), (0, s.showToast)((0, s.createToast)("", s.ToastType.CUSTOM, {
         component: (0, n.jsx)(y, {
           message: b.intl.string(b.t.DSXOiI)
@@ -82,7 +82,7 @@ let y = e => {
           }
           return e
         }({}, e), l = l = {
-          className: a()(h.wishlistButton, g && h.withHover, i),
+          className: a()(g.wishlistButton, h && g.withHover, i),
           innerRef: P,
           onClick: C,
           "aria-label": S,

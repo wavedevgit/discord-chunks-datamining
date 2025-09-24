@@ -117,13 +117,13 @@ let S = Chunk647438.memo(function(e) {
       var e;
       null == (e = u.current) || e.call(u)
     }), m
-  }(t, y.$S), p = (0, g.getPID)(), m = (0, r.e7)([h.default], () => h.default.isInputLocked(p), [p]);
+  }(t, y.$S), p = (0, r.e7)([h.default], () => h.default.isFocusedPidInputLocked());
   return l ? (0, a.jsxs)(u.Z, {
     themeOverride: x.BRd.MIDNIGHT,
     withTitleBar: n,
     windowKey: t,
     title: "Discord Overlay",
-    hideModals: m,
+    hideModals: p,
     children: [(0, a.jsx)(C.Z, {}), (0, a.jsx)(_.Co, {})]
   }) : null
 })

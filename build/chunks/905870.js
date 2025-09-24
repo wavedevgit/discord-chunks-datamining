@@ -22,8 +22,8 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 let f = 15 * Chunk70956.Z.Millis.MINUTE,
-  _ = 1310720,
-  p = 1835008,
+  _ = 3145728,
+  p = 5242880,
   h = 4096,
   m = 12,
   g = true,

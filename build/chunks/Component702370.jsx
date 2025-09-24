@@ -34,7 +34,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk678135 = require("./678135.jsx"),
   Chunk876917 = require("./876917.jsx"),
   Chunk643879 = require("./643879.js"),
-  Chunk959840 = require("./959840.js"),
+  Chunk567400 = require("./567400.js"),
   Chunk484459 = require("./484459.js"),
   Chunk825102 = require("./825102.js"),
   Chunk275388 = require("./275388.jsx"),
@@ -707,7 +707,7 @@ let eZ = e => {
     } = (0, C.ZP)([...p, j.Z.COLLECTIBLES_SHOP_DETAILS_MODAL]);
     (0, ei.u9)(E.skuId);
     let S = (0, e_.kc)(o),
-      y = (0, R.O)({
+      y = (0, R.Y)({
         location: "CollectiblesShopProductDetailsModal"
       }),
       {

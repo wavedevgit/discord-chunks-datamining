@@ -7,6 +7,6 @@ require.d(exports, {
 var Chunk358085 = require("./358085.js"),
   Chunk998502 = require("./998502.js");
 
-function a(e) {
-  r.isPlatformEmbedded ? i.ZP.focus(e) : window.focus()
+function a(e, t) {
+  r.isPlatformEmbedded ? i.ZP.focus(e, t) : window.focus()
 }
