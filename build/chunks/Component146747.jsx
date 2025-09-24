@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk707435 = require("./707435.js"),
   Chunk197571 = require("./197571.js");
 
-function f(e) {
+function x(e) {
   for (var r = 1; r < arguments.length; r++) {
     var t = null != arguments[r] ? arguments[r] : {},
       n = Object.keys(t);
@@ -37,7 +37,7 @@ function f(e) {
   }
   return e
 }
-let g = "premium-guild-subscription-upsell-modal-header";
+let f = "premium-guild-subscription-upsell-modal-header";
 
 function y(e) {
   let {
@@ -46,16 +46,16 @@ function y(e) {
     image: o
   } = e;
   return (0, n.jsxs)("div", {
-    className: h.header,
+    className: g.header,
     children: [(0, n.jsx)(s.X6q, {
       variant: "heading-xl/semibold",
-      id: g,
+      id: f,
       color: "header-primary",
-      className: x.marginBottom8,
+      className: h.marginBottom8,
       children: r
     }), (0, n.jsx)(s.Text, {
       variant: "text-md/normal",
-      className: h.subtitleText,
+      className: g.subtitleText,
       children: t
     }), o]
   })
@@ -64,33 +64,34 @@ let O = e => {
     let {
       onClose: r,
       perks: t,
-      perkIntro: o = m.intl.string(m.t.Dr3Goa),
-      headerProps: c
+      perkIntro: o = b.intl.string(b.t.Dr3Goa),
+      headerProps: i
     } = e;
     return (0, n.jsxs)("div", {
-      className: h.wrapper,
+      className: g.wrapper,
       children: [(0, n.jsx)(s.olH, {
-        className: h.closeButton,
+        "data-migration-pending": true,
+        className: g.closeButton,
         onClick: () => {
           r()
         }
       }), (0, n.jsx)(k, {
-        headerProps: c,
+        headerProps: i,
         perkIntro: o
       }), (0, n.jsx)("div", {
-        className: h.perks,
+        className: g.perks,
         children: t.map((e, r) => {
           let {
             icon: t,
             iconClassName: o,
             description: s,
-            color: c
+            color: i
           } = e;
           return (0, n.jsx)(u.Z, {
             icon: t,
             iconClassName: o,
             description: s,
-            color: c
+            color: i
           }, r)
         })
       })]
@@ -99,17 +100,17 @@ let O = e => {
   k = e => {
     let {
       headerProps: r,
-      perkIntro: c
+      perkIntro: i
     } = e;
     return (0, n.jsxs)(o.Fragment, {
-      children: [null != r ? (0, n.jsx)(y, f({}, r)) : (0, n.jsx)("img", {
-        className: h.heroImage,
+      children: [null != r ? (0, n.jsx)(y, x({}, r)) : (0, n.jsx)("img", {
+        className: g.heroImage,
         src: t(438471),
-        alt: m.intl.string(m.t.PkcaAA)
+        alt: b.intl.string(b.t.PkcaAA)
       }), (0, n.jsx)(s.Text, {
         variant: "text-md/normal",
-        className: h.heading,
-        children: c
+        className: g.heading,
+        children: i
       })]
     })
   },
@@ -118,24 +119,25 @@ let O = e => {
       guild: r,
       targetBoostedGuildTier: t,
       onClose: o,
-      analyticsSourceLocation: c
-    } = e, i = {
-      section: b.jXE.PREMIUM_GUILD_UPSELL_MODAL,
-      object: b.qAy.BUTTON_CTA,
+      analyticsSourceLocation: i
+    } = e, a = {
+      section: j.jXE.PREMIUM_GUILD_UPSELL_MODAL,
+      object: j.qAy.BUTTON_CTA,
       objectType: null != t ? (0, d.ge)(t) : null
     };
     return (0, n.jsxs)(s.mzw, {
-      className: h.footer,
+      className: g.footer,
+      "data-migration-pending": true,
       children: [(0, n.jsx)(s.zxk, {
         variant: "secondary",
         size: "sm",
-        text: m.intl.string(m.t.cpT0Cg),
+        text: b.intl.string(b.t.cpT0Cg),
         onClick: () => {
           o()
         }
-      }), (0, n.jsx)(j.Z, {
-        analyticsLocation: i,
-        analyticsSourceLocation: c,
+      }), (0, n.jsx)(m.Z, {
+        analyticsLocation: a,
+        analyticsSourceLocation: i,
         guild: r,
         targetBoostedGuildTier: t,
         onClose: () => {
@@ -150,12 +152,12 @@ function v(e) {
       analyticsSourceLocation: o,
       guild: u,
       targetBoostedGuildTier: d,
-      perks: j,
-      perkIntro: b,
-      headerProps: m,
-      onClose: h
+      perks: m,
+      perkIntro: j,
+      headerProps: b,
+      onClose: g
     } = e,
-    x = function(e, r) {
+    h = function(e, r) {
       if (null == e) return {};
       var t, n, o = function(e, r) {
         if (null == e) return {};
@@ -172,28 +174,29 @@ function v(e) {
     }(e, ["analyticsSourceLocation", "guild", "targetBoostedGuildTier", "perks", "perkIntro", "headerProps", "onClose"]);
   let {
     analyticsLocations: y
-  } = (0, i.ZP)(c.Z.ACTIVITY_DIRECTORY);
-  return (0, n.jsx)(i.Gt, {
+  } = (0, a.ZP)(i.Z.ACTIVITY_DIRECTORY);
+  return (0, n.jsx)(a.Gt, {
     value: y,
-    children: (0, n.jsx)(a.PaymentContextProvider, {
+    children: (0, n.jsx)(c.PaymentContextProvider, {
       activeSubscription: null,
       stepConfigs: [],
       skuIDs: [],
-      children: (0, n.jsx)(s.Y0X, (r = f({}, x), t = t = {
-        "aria-labelledby": g,
+      children: (0, n.jsx)(s.Y0X, (r = x({}, h), t = t = {
+        "aria-labelledby": f,
+        "data-migration-pending": true,
         parentComponent: "GuildBoostingUpsellModal",
         children: (0, n.jsx)(p.Z, {
           hideBreadcrumbs: true,
           body: (0, n.jsx)(O, {
-            onClose: h,
-            perks: j,
-            perkIntro: b,
-            headerProps: m
+            onClose: g,
+            perks: m,
+            perkIntro: j,
+            headerProps: b
           }),
           footer: (0, n.jsx)(_, {
             guild: u,
             targetBoostedGuildTier: d,
-            onClose: h,
+            onClose: g,
             analyticsSourceLocation: o
           }),
           steps: [l.h8.PREMIUM_GUILD_UPSELL],

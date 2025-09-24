@@ -38,7 +38,7 @@ let d = e => {
         restrictionsLoading: a
       } = d(n);
     return {
-      shouldHideGuildPurchaseEntryPoints: !((null == n ? true : n.features.has(u.oNc.CREATOR_MONETIZABLE)) || (null == n ? true : n.features.has(u.oNc.CREATOR_MONETIZABLE_PROVISIONAL))) || (a ? null == (t = null == n ? true : n.features.has(u.oNc.CREATOR_MONETIZABLE_RESTRICTED)) || t : (0, c.uq)(r)),
+      shouldHideGuildPurchaseEntryPoints: !((null == n ? true : n.features.has(u.oNc.CREATOR_MONETIZABLE)) || (null == n ? true : n.features.has(u.oNc.CREATOR_MONETIZABLE_PROVISIONAL)) || (null == n ? true : n.features.has(u.oNc.SOCIAL_LAYER_STOREFRONT))) || (a ? null == (t = null == n ? true : n.features.has(u.oNc.CREATOR_MONETIZABLE_RESTRICTED)) || t : (0, c.uq)(r)),
       restrictionsLoading: a
     }
   },
