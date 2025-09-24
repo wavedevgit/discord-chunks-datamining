@@ -1,7 +1,7 @@
 /** Chunk was on 11222 **/
 /** chunk id: 633001, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => ej
+  Z: () => e_
 }), require("./388685.js"), require("./583741.js"), require("./539854.js"), require("./49124.js"), require("./35282.js"), require("./781311.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -1096,17 +1096,46 @@ function eg() {
     })]
   })
 }
+let ev = Chunk647438.memo(function() {
+  let e = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.DEV_isStateDebuggingEnabled()),
+    t = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.DEV_getDebuggingState());
+  return (0, Chunk951288.jsxs)("div", {
+    className: Chunk454741.panelGroup,
+    children: [(0, Chunk951288.jsx)("div", {
+      className: Chunk454741.panelHeader,
+      children: (0, Chunk951288.jsx)(Chunk755721.$q, {
+        value: module,
+        onChange: () => Chunk13245.Z.setStateDebugging(!module),
+        size: 18,
+        type: Chunk755721.M0.INVERTED,
+        shape: Chunk755721.zV.BOX,
+        children: (0, Chunk951288.jsx)(Chunk481060.Text, {
+          tag: "span",
+          variant: "text-md/normal",
+          color: "text-muted",
+          children: "Poll Native Module State"
+        })
+      })
+    }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+      variant: "text-sm/normal",
+      color: "text-secondary",
+      children: (0, Chunk951288.jsx)("pre", {
+        children: JSON.stringify(exports, true, 2)
+      })
+    })]
+  })
+});
 
-function ev() {
+function ej() {
   return (0, Chunk951288.jsx)(Chunk481060.w0Z, {
     children: (0, Chunk951288.jsxs)("div", {
       className: l()(Chunk451429.panel, Chunk454741.subPanel),
-      children: [(0, Chunk951288.jsx)(el, {}), (0, Chunk951288.jsx)(eo, {}), (0, Chunk951288.jsx)(es, {}), (0, Chunk951288.jsx)(ei, {}), (0, Chunk951288.jsx)(en, {}), (0, Chunk951288.jsx)(er, {})]
+      children: [(0, Chunk951288.jsx)(el, {}), (0, Chunk951288.jsx)(eo, {}), (0, Chunk951288.jsx)(es, {}), (0, Chunk951288.jsx)(ei, {}), (0, Chunk951288.jsx)(en, {}), (0, Chunk951288.jsx)(er, {}), (0, Chunk951288.jsx)(ev, {})]
     })
   })
 }
 
-function ej() {
+function e_() {
   let [e, t] = Chunk647438.useState("state");
   return (0, Chunk951288.jsxs)("div", {
     className: l()(Chunk451429.panel, Chunk454741.panel),
@@ -1129,6 +1158,6 @@ function ej() {
           children: "Logging"
         })
       })]
-    }), "state" === module && (0, Chunk951288.jsx)(ev, {}), "logging" === module && (0, Chunk951288.jsx)(eg, {})]
+    }), "state" === module && (0, Chunk951288.jsx)(ej, {}), "logging" === module && (0, Chunk951288.jsx)(eg, {})]
   })
 }
