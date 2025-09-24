@@ -35,6 +35,7 @@ require.d(exports, {
   uA: () => eO,
   vf: () => eB,
   z: () => eg,
+  z1: () => eW,
   z6: () => eA,
   zB: () => eV
 }), require("./388685.js"), require("./642613.js"), require("./539854.js"), require("./953529.js"), require("./314940.js");
@@ -868,4 +869,12 @@ let eH = () => (0, Chunk442837.Wu)([Chunk569984.Z], () => [...Chunk569984.Z.ques
       }),
       t = eH();
     return module && exports
+  },
+  eW = e => {
+    var t;
+    let n = (null == e ? true : e.userStatus) != null && (0, A.zE)(e.userStatus, R.jn.ACTIVITY_PANEL),
+      r = eu(null != e ? e : null),
+      i = (null == e || null == (t = e.userStatus) ? true : t.claimedAt) != null,
+      a = (0, c.e7)([N.Z], () => null != N.Z.questEnrollmentBlockedUntil, []);
+    return !n && !r && !i && !a
   }

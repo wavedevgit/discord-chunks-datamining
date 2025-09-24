@@ -11,12 +11,12 @@ var Chunk442837 = require("./442837.js"),
   Chunk705262 = require("./705262.jsx"),
   Chunk569984 = require("./569984.js"),
   Chunk564034 = require("./564034.jsx"),
+  Chunk649424 = require("./649424.jsx"),
   Chunk176168 = require("./176168.jsx"),
   Chunk234086 = require("./234086.jsx"),
   Chunk17057 = require("./17057.jsx"),
   Chunk70621 = require("./70621.jsx"),
   Chunk429080 = require("./429080.jsx"),
-  Chunk675720 = require("./675720.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk726927 = require("./726927.js");
 
@@ -37,8 +37,8 @@ function m() {
     value: "members_list",
     label: Chunk388032.intl.string(Chunk388032.t.QbGtHB)
   }, {
-    value: "trophy_case",
-    label: Chunk388032.intl.string(Chunk388032.t.dQ3vgI)
+    value: "activity_panel",
+    label: Chunk388032.intl.string(Chunk388032.t.HWICen)
   }]
 }
 let g = e => {
@@ -50,27 +50,27 @@ let g = e => {
   let m = e => null == n || 0 === n.length || n.includes(e);
   return (0, r.jsxs)(r.Fragment, {
     children: [m("home_card") && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(d.w, {
+      children: [(0, r.jsx)(f.w, {
         quest: p
       }), (0, r.jsx)(s.i, {})]
     }), m("quest_bar") && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(l.Z, {
+      children: [(0, r.jsx)(c.Z, {
         quest: p
       }), (0, r.jsx)(s.i, {})]
     }), m("share_embed") && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(u.Z, {
+      children: [(0, r.jsx)(d.Z, {
         questId: p.id
       }), (0, r.jsx)(s.i, {})]
     }), m("channel_call_header") && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(c.i, {
+      children: [(0, r.jsx)(u.i, {
         quest: p
       }), (0, r.jsx)(s.i, {})]
     }), m("members_list") && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(f.Z, {
+      children: [(0, r.jsx)(_.Z, {
         quest: p
       }), (0, r.jsx)(s.i, {})]
-    }), m("trophy_case") && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(_.Z, {
+    }), m("activity_panel") && (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(l.Z, {
         quest: p
       }), (0, r.jsx)(s.i, {})]
     }), (0, r.jsx)("div", {

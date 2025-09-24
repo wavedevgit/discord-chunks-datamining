@@ -30,7 +30,7 @@ function f() {
   return {
     title: Chunk388032.intl.format(Chunk388032.t.S5uhCA, {
       keybind: m,
-      keybindHook: (e, t) => (0, i.jsx)(u.Z, {
+      keybindHook: (e, t) => (0, i.jsx)(u.t, {
         keybind: m.split("+")
       }, t)
     }),

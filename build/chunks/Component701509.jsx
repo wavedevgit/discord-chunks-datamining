@@ -57,7 +57,7 @@ function S(t) {
     verifyAgreementButtonText: V,
     verifyGateDescription: Y,
     verifyTitle: W
-  } = (0, v.a1)(n), q = (0, v.$5)(o), B = v.Lj.has(n), K = null != S ? s()().diff(S, "years") : null;
+  } = (0, v.a1)(n), B = (0, v.$5)(o), q = v.Lj.has(n), K = null != S ? s()().diff(S, "years") : null;
 
   function Q() {
     if (n === O.L0.NSFW_SERVER_INVITE_EMBED) return (0, T.qV)(n), Promise.resolve();
@@ -123,7 +123,7 @@ function S(t) {
       onClick: Q,
       variant: "secondary"
     }, {
-      text: V,
+      text: null != V ? V : N.intl.string(N.t["5B+npK"]),
       onClick: te
     }],
     trackingProps: {
@@ -132,9 +132,9 @@ function S(t) {
       },
       impressionType: c.ImpressionTypes.MODAL
     }
-  }, tn)) : (null == a ? true : a.nsfwAllowed) === false && (q || B) && !F ? (0, l.jsx)(f.I, x({
-    title: N.intl.string(B ? N.t["H0SG/v"] : N.t.NEabBQ),
-    subtitle: N.intl.format(B ? N.t["6++3cX"] : N.t["2kHZen"], {
+  }, tn)) : (null == a ? true : a.nsfwAllowed) === false && (B || q) && !F ? (0, l.jsx)(f.I, x({
+    title: N.intl.string(q ? N.t["H0SG/v"] : N.t.NEabBQ),
+    subtitle: N.intl.format(q ? N.t["6++3cX"] : N.t["2kHZen"], {
       helpURL: b.Z.getArticleURL(R.BhN.AGE_GATE)
     }),
     actions: [{

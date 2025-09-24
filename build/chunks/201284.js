@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 201284, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 1272 **/
+/** chunk id: 201284, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => r
 });

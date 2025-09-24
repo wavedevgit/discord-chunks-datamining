@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 786089, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 1272 **/
+/** chunk id: 786089, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => P
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk979554 = require("./979554.js"),
   Chunk887003 = require("./887003.js"),
   Chunk442837 = require("./442837.js"),
@@ -29,171 +28,160 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk199679 = require("./199679.js");
-
-function N(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function R(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      N(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function P(e, t) {
-  if (null == e) return {};
-  var n, r, i = w(e, t);
-  if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
-  }
-  return i
-}
-
-function w(e, t) {
-  if (null == e) return {};
-  var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-  return i
-}
-
-function D(e) {
-  var t, n, a, N, w, D;
+let P = (0, Chunk647438.memo)(function(e) {
+  var t, n, l, P, j, x;
   let {
-    quest: x
-  } = e, [L, j] = (0, i.useState)(false), [M, k] = (0, i.useState)(24), [U, G] = (0, i.useState)(false), B = (0, i.useRef)(null), Z = (0, i.useRef)(null), F = (0, i.useRef)(null), V = (0, c.e7)([m.default], () => m.default.getCurrentUser()), {
-    ref: H,
-    height: Y = 0
-  } = (0, f.ZP)(), W = (0, _.ZP)(), K = (0, b.B6)(null == (t = x.userStatus) ? true : t.claimedAt, {
+    quest: A
+  } = e, [Z, w] = (0, i.useState)(false), [L, R] = (0, i.useState)(24), [D, k] = (0, i.useState)(false), M = (0, i.useRef)(null), U = (0, i.useRef)(null), G = (0, i.useRef)(null), B = (0, c.e7)([m.default], () => m.default.getCurrentUser()), {
+    ref: V,
+    height: H = 0
+  } = (0, p.ZP)(), F = (0, f.ZP)(), z = (0, O.B6)(null == (t = A.userStatus) ? true : t.claimedAt, {
     month: "numeric",
     day: "numeric"
-  }), z = null != (w = null == (n = x.userStatus) ? true : n.claimedTier) ? w : 0, q = x.config.rewards[z], X = (null == q ? true : q.type) === l.w.FRACTIONAL_PREMIUM, Q = (null == q ? true : q.type) === l.w.COLLECTIBLE, J = (null == q ? true : q.type) === l.w.VIRTUAL_CURRENCY, $ = null == q || null == (N = q.collectibleProduct) || null == (a = N.items) ? true : a[0], ee = (null == $ ? true : $.type) === s.Z.AVATAR_DECORATION ? $ : null;
-  (0, f.PM)(B, e => {
+  }), W = null != (j = null == (n = A.userStatus) ? true : n.claimedTier) ? j : 0, Y = A.config.rewards[W], K = (null == Y ? true : Y.type) === s.w.FRACTIONAL_PREMIUM, q = (null == Y ? true : Y.type) === s.w.COLLECTIBLE, Q = (null == Y ? true : Y.type) === s.w.VIRTUAL_CURRENCY, X = null == Y || null == (P = Y.collectibleProduct) || null == (l = P.items) ? true : l[0], J = (null == X ? true : X.type) === o.Z.AVATAR_DECORATION ? X : null;
+  (0, p.PM)(M, e => {
     let {
       height: t
     } = e;
-    if (!Q || null == t || null == Z.current || null == B.current || null == F.current) return;
-    let n = B.current.getBoundingClientRect(),
-      r = Z.current.getBoundingClientRect(),
-      i = F.current.getBoundingClientRect();
-    k((r.top - n.top - i.height) / 2)
+    if (!q || null == t || null == U.current || null == M.current || null == G.current) return;
+    let n = M.current.getBoundingClientRect(),
+      r = U.current.getBoundingClientRect(),
+      i = G.current.getBoundingClientRect();
+    R((r.top - n.top - i.height) / 2)
   });
-  let et = (0, u.wj)(W),
-    en = (0, i.useMemo)(() => null != x.config.cosponsorMetadata, [x]),
-    er = (0, i.useMemo)(() => (0, O.fh)(x, O.eC.REWARD), [x]),
-    ei = L ? Y + 8 : 0,
-    ea = (0, E.mH)(y.jn.TROPHY_CASE_CARD),
+  let $ = (0, u.wj)(F),
+    ee = (0, i.useMemo)(() => null != A.config.cosponsorMetadata, [A]),
+    et = (0, i.useMemo)(() => (0, y.fh)(A, y.eC.REWARD), [A]),
+    en = Z ? H + 8 : 0,
+    er = (0, _.mH)(E.jn.TROPHY_CASE_CARD),
     {
-      content_position: eo,
-      row_index: es
-    } = ea,
-    el = P(ea, ["content_position", "row_index"]),
-    ec = () => {
-      j(true), g.default.track(S.rMx.QUEST_HOVER, R({
-        quest_id: x.id
-      }, el))
+      content_position: ei,
+      row_index: el
+    } = er,
+    ea = function(e, t) {
+      if (null == e) return {};
+      var n, r, i = function(e, t) {
+        if (null == e) return {};
+        var n, r, i = {},
+          l = Object.keys(e);
+        for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+        return i
+      }(e, t);
+      if (Object.getOwnPropertySymbols) {
+        var l = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+      }
+      return i
+    }(er, ["content_position", "row_index"]),
+    eo = () => {
+      w(true), b.default.track(C.rMx.QUEST_HOVER, function(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var n = null != arguments[t] ? arguments[t] : {},
+            r = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(n, e).enumerable
+          }))), r.forEach(function(t) {
+            var r;
+            r = n[t], t in e ? Object.defineProperty(e, t, {
+              value: r,
+              enumerable: true,
+              configurable: true,
+              writable: true
+            }) : e[t] = r
+          })
+        }
+        return e
+      }({
+        quest_id: A.id
+      }, ea))
     },
-    eu = () => j(false),
-    ed = e => {
-      G(true), g.default.track(S.rMx.QUEST_ASSET_LOADING_FAILURE, {
+    es = () => w(false),
+    ec = e => {
+      k(true), b.default.track(C.rMx.QUEST_ASSET_LOADING_FAILURE, {
         source: e,
         asset_id: e,
-        quest_id: x.id
+        quest_id: A.id
       })
     };
-  return null == q || U ? null : (0, r.jsx)(d.tEY, {
+  return null == Y || D ? null : (0, r.jsx)(d.tEY, {
     children: (0, r.jsxs)("div", {
-      ref: B,
+      ref: M,
       tabIndex: 0,
-      onFocus: ec,
-      onBlur: eu,
-      onMouseEnter: ec,
-      onMouseLeave: eu,
-      className: o()(C.container, {
-        [C.hovered]: L
+      onFocus: eo,
+      onBlur: es,
+      onMouseEnter: eo,
+      onMouseLeave: es,
+      className: a()(N.container, {
+        [N.hovered]: Z
       }),
-      children: [null != V && Q && null != ee && (0, r.jsx)("div", {
-        ref: F,
-        className: C.decoWrapper,
+      children: [null != B && q && null != J && (0, r.jsx)("div", {
+        ref: G,
+        className: N.decoWrapper,
         style: {
-          top: M
+          top: L
         },
-        children: (0, r.jsx)(p.Z, {
-          avatarDecorationOverride: ee,
-          user: V,
+        children: (0, r.jsx)(h.Z, {
+          avatarDecorationOverride: J,
+          user: B,
           guildId: null
         })
-      }), X ? (0, r.jsx)(v.Z, {
-        className: C.image
-      }) : J ? (0, r.jsx)(I.Z, {
-        className: C.image
-      }) : er.isAnimated ? (0, r.jsx)(h.Z, {
-        className: C.assetBlurred,
+      }), K ? (0, r.jsx)(v.Z, {
+        className: N.image
+      }) : Q ? (0, r.jsx)(I.Z, {
+        className: N.image
+      }) : et.isAnimated ? (0, r.jsx)(g.Z, {
+        className: N.assetBlurred,
         autoPlay: false,
         children: (0, r.jsx)("source", {
-          src: er.url,
-          type: null != (D = er.mimetype) ? D : true,
-          onError: () => ed(er.url)
+          src: et.url,
+          type: null != (x = et.mimetype) ? x : true,
+          onError: () => ec(et.url)
         })
       }) : (0, r.jsx)("img", {
-        className: C.image,
-        src: er.url,
-        alt: x.config.messages.questName,
-        onError: () => ed(er.url)
+        className: N.image,
+        src: et.url,
+        alt: A.config.messages.questName,
+        onError: () => ec(et.url)
       }), (0, r.jsx)("div", {
-        className: o()(C.overlay, {
-          [C.darkThemeGradient]: et,
-          [C.lightThemeGradient]: !et
+        className: a()(N.overlay, {
+          [N.darkThemeGradient]: $,
+          [N.lightThemeGradient]: !$
         })
       }), (0, r.jsx)("div", {
-        ref: Z,
-        className: C.logoContainer,
+        ref: U,
+        className: N.logoContainer,
         style: {
-          transform: "translateY(-".concat(ei, "px)")
+          transform: "translateY(-".concat(en, "px)")
         },
-        children: (0, r.jsx)(T.ZP, {
-          logotypeClassName: o()(C.logo, {
-            [C.logoWithCosponsor]: en
+        children: (0, r.jsx)(S.ZP, {
+          logotypeClassName: a()(N.logo, {
+            [N.logoWithCosponsor]: ee
           }),
-          quest: x,
+          quest: A,
           withGameTile: false
         })
       }), (0, r.jsxs)("div", {
-        ref: H,
-        className: C.details,
+        ref: V,
+        className: N.details,
         children: [(0, r.jsx)(d.X6q, {
-          className: C.title,
+          className: N.title,
           variant: "heading-md/semibold",
           color: "always-white",
-          children: A.intl.format(A.t.EAYZAg, {
-            questName: x.config.messages.questName
+          children: T.intl.format(T.t.EAYZAg, {
+            questName: A.config.messages.questName
           })
         }), (0, r.jsx)(d.Text, {
           variant: "text-sm/medium",
-          color: et ? "text-muted" : "always-white",
+          color: $ ? "text-muted" : "always-white",
           style: {
-            opacity: et ? 1 : .75
+            opacity: $ ? 1 : .75
           },
-          children: A.intl.format(A.t.kXVcV1, {
-            reward: q.name,
-            claimedDate: K
+          children: T.intl.format(T.t.kXVcV1, {
+            reward: Y.name,
+            claimedDate: z
           })
         })]
       })]
     })
   })
-}
-let x = (0, Chunk647438.memo)(D)
+})

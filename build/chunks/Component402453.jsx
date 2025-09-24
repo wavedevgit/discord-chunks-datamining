@@ -34,8 +34,8 @@ function s() {
 }
 
 function l(e) {
-  var t, n, r;
-  return null != (r = null == (n = s().experiments) || null == (t = n.manaDesktopToggleInputs) ? true : t[e]) && r
+  var t, n;
+  return (null != (n = null == (t = s().experiments) ? true : t.enabledExperiments) ? n : []).includes("mana-toggle-inputs")
 }
 
 function c(e) {

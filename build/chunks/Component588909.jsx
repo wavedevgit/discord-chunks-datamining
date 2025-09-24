@@ -152,7 +152,9 @@ function N(e, t) {
     icon: P,
     title: T,
     body: _,
-    hint: () => (0, y.Q)((0, O.P)(), x.t["z8/sgI"], x.intl.string(x.t.jZkzVF), true),
+    hint: () => (0, y.Q)((0, O.P)(), x.t["z8/sgI"], x.intl.string(x.t.jZkzVF), {
+      highlightAdminWarningIfElevated: true
+    }),
     confirmText: N ? true : x.intl.string(x.t.TxyTbm),
     onConfirmClick: N ? true : () => {
       c("unlock"), a.Z.setInputLocked(false, (0, h.getPID)()), N || (0, d.Q3)(r.z.OVERLAY_OOP_WELCOME_NUX)
