@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk110924 = require("./110924.js"),
   Chunk607070 = require("./607070.js"),
-  Chunk963302 = require("./963302.js"),
+  Chunk284298 = require("./284298.js"),
   Chunk797614 = require("./797614.js"),
   Chunk819640 = require("./819640.js"),
   Chunk617136 = require("./617136.js"),
@@ -55,7 +55,7 @@ function k(e) {
 
 function U() {
   return Chunk647438.useEffect(() => {
-    Chunk963302.j.trigger()
+    Chunk284298.j.trigger()
   }, []), null
 }
 

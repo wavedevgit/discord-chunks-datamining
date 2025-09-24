@@ -204,8 +204,8 @@ function tp(e) {
         } = t;
         null != r && a(r), null == (n = e.current) || n.call(e)
       };
-      return eX.S.subscribe(e9.CkL.SHOW_ACCOUNT_PROFILE_POPOUT, t), () => {
-        eX.S.unsubscribe(e9.CkL.SHOW_ACCOUNT_PROFILE_POPOUT, t)
+      return eX.S.subscribe(e7.CkL.SHOW_ACCOUNT_PROFILE_POPOUT, t), () => {
+        eX.S.unsubscribe(e7.CkL.SHOW_ACCOUNT_PROFILE_POPOUT, t)
       }
     }), {
       updateOpenPopoutRef: t,
@@ -214,7 +214,7 @@ function tp(e) {
     }
   }(), O = (0, ei.A)(m);
   return null == s ? null : (0, a.jsx)(g.Z, {
-    object: e9.qAy.AVATAR,
+    object: e7.qAy.AVATAR,
     children: (0, a.jsx)(ex.Z, {
       user: s,
       targetElementRef: j,
@@ -266,7 +266,7 @@ function tp(e) {
           src: s.getAvatarURL(h ? p : true, E - 4, false),
           avatarDecoration: y,
           "aria-label": s.username,
-          status: i ? e9.Skl.STREAMING : o,
+          status: i ? e7.Skl.STREAMING : o,
           isSpeaking: n,
           className: ti.avatar
         }), (0, a.jsx)("div", {
@@ -343,7 +343,7 @@ class th extends Chunk647438.PureComponent {
       let {
         type: t
       } = e;
-      return t === e9.IIU.CUSTOM_STATUS
+      return t === e7.IIU.CUSTOM_STATUS
     });
     return null != Chunk374470 ? (0, Chunk951288.jsx)(Chunk570928.Z, {
       hoverText: l,
@@ -505,16 +505,16 @@ class th extends Chunk647438.PureComponent {
         suppress: t,
         selfMute: n
       } = this.props;
-      (0, F.Z)(e, t, e9.jXE.ACCOUNT_PANEL), (0, B.v)(S.Z.ACCOUNT, B.d.MIC, n)
+      (0, F.Z)(e, t, e7.jXE.ACCOUNT_PANEL), (0, B.v)(S.Z.ACCOUNT, B.d.MIC, n)
     }), tl(this, "handleToggleSelfDeaf", () => {
       let {
         serverDeaf: e,
         selfDeaf: t
       } = this.props;
-      (0, U.Z)(e, e9.jXE.ACCOUNT_PANEL), (0, B.v)(S.Z.ACCOUNT, B.d.DEAFEN, !t)
+      (0, U.Z)(e, e7.jXE.ACCOUNT_PANEL), (0, B.v)(S.Z.ACCOUNT, B.d.DEAFEN, !t)
     }), tl(this, "handleOpenAccountSettings", () => {
       this.dismissTooltips(), eF.Z.isConnected() ? (0, ev.openUserSettings)(eb.n.VOICE_AND_VIDEO_PANEL, {
-        section: e9.oAB.VOICE
+        section: e7.oAB.VOICE
       }) : (0, ev.openUserSettings)()
     }), tl(this, "handleOpenSettingsContextMenu", e => {
       let {
@@ -606,7 +606,7 @@ class th extends Chunk647438.PureComponent {
       (0, eK.JG)(e1.ZP.getUserTag(e, {
         decoration: "never",
         identifiable: "always"
-      })), eW.default.track(e9.rMx.TEXT_COPIED, {
+      })), eW.default.track(e7.rMx.TEXT_COPIED, {
         type: "User Tag"
       });
       let a = {
@@ -658,7 +658,7 @@ class th extends Chunk647438.PureComponent {
       return null == t ? null : (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)("div", {
           className: ti.panelTitleContainer,
-          children: (0, a.jsx)(e7.Z, {
+          children: (0, a.jsx)(e9.Z, {
             className: l()({
               [ti.withDisplayNameStyles]: n && null != e
             }),
@@ -794,7 +794,7 @@ function tb() {
           let {
             type: t
           } = e;
-          return t === e9.IIU.STREAMING
+          return t === e7.IIU.STREAMING
         }),
         status: Chunk885110.Z.getStatus()
       }
@@ -1070,7 +1070,7 @@ function tv(e) {
       Q(false)
     }, []);
   (0, eY.yp)({
-    event: e9.CkL.OPEN_VOICE_FILTER_POPOUT,
+    event: e7.CkL.OPEN_VOICE_FILTER_POPOUT,
     handler: () => {
       Q(true)
     }

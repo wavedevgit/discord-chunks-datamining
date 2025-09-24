@@ -496,8 +496,8 @@ function eN(e) {
     observePostVisibilityAnalytics: es,
     isShowingSearchResult: e_
   }), e3 = i.useRef(null), {
-    updateMasonryListScrollerRef: e8,
-    getItemKey: e6,
+    updateMasonryListScrollerRef: e6,
+    getItemKey: e8,
     renderGridSection: e1,
     renderGridItem: e9,
     getGridSectionHeight: e4,
@@ -701,14 +701,14 @@ function eN(e) {
           children: (0, r.jsx)(p.GMG, eb({
             ref: e => {
               var t;
-              ta.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null, e8(e)
+              ta.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null, e6(e)
             },
             itemGutter: 16,
             padding: 24,
             className: ep.grid,
             columns: eZ,
             sections: eH,
-            getItemKey: e6,
+            getItemKey: e8,
             getSectionHeight: e4,
             getItemHeight: tr,
             renderSection: e1,

@@ -9,11 +9,11 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
-  Chunk34415 = require("./34415.js"),
   Chunk512722 = require("./512722.js"),
-  u = require.n(Chunk512722),
+  c = require.n(Chunk512722),
   Chunk799899 = require("./799899.js"),
   Chunk731965 = require("./731965.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk490173 = require("./490173.jsx"),
@@ -126,7 +126,7 @@ class z extends(r = Chunk647438.Component) {
       clientThemesCSS: e,
       guestWindow: t
     } = this.props, n = exports.document, r = false, i = require.head;
-    u()(null != Chunk951288, "Window document ".concat(r ? "body" : "head", " was null"));
+    c()(null != Chunk951288, "Window document ".concat(r ? "body" : "head", " was null"));
     let a = Chunk951288.querySelector("style[".concat(Chunk168551.PQ, "]"));
     if (null != Chunk647438) {
       Chunk647438.textContent = module;
@@ -155,9 +155,9 @@ class z extends(r = Chunk647438.Component) {
       windowKey: r,
       isFullScreen: a,
       withTitleBar: o,
-      guestWindow: c,
-      clientThemesClassName: u,
-      contentClassName: f,
+      guestWindow: l,
+      clientThemesClassName: c,
+      contentClassName: d,
       themeOverride: _,
       hideModals: m = false
     } = this.props;
@@ -176,7 +176,7 @@ class z extends(r = Chunk647438.Component) {
             containerRef: this.rootRef,
             children: [(0, Chunk951288.jsx)(q, {
               guestWindow: Chunk512722,
-              className: u,
+              className: c,
               children: (0, Chunk951288.jsxs)(Chunk607070, {
                 children: [(0, Chunk951288.jsx)(Chunk686546.Co, {}), (0, Chunk951288.jsx)(Chunk40851.Wu, {
                   appContext: Chunk981631.IlC.POPOUT,
@@ -196,7 +196,7 @@ class z extends(r = Chunk647438.Component) {
                   })
                 })]
               })
-            }), (0, Chunk951288.jsx)(Chunk34415.OU, {})]
+            }), (0, Chunk951288.jsx)(Chunk793030.OUJ, {})]
           })
         })
       }, exports)
@@ -229,15 +229,15 @@ let q = Chunk647438.forwardRef(function(e, t) {
       children: o
     } = e, {
       lang: l,
-      style: c,
+      style: u,
       className: d
     } = (0, L.vP)();
     return a.useEffect(() => {
       let e = n.document.documentElement;
-      u()(null != e, "Window document element was null"), e.setAttribute("style", c)
-    }, [n, c]), a.useEffect(() => {
+      c()(null != e, "Window document element was null"), e.setAttribute("style", u)
+    }, [n, u]), a.useEffect(() => {
       let e = n.document.documentElement;
-      u()(null != e, "Window document element was null"), e.setAttribute("lang", l)
+      c()(null != e, "Window document element was null"), e.setAttribute("lang", l)
     }, [n, l]), (0, i.jsx)("div", {
       "data-popout-root": true,
       ref: t,
@@ -255,7 +255,7 @@ let q = Chunk647438.forwardRef(function(e, t) {
       focused: G.Z.getWindowFocused(e.windowKey),
       isFullScreen: G.Z.isWindowFullScreen(e.windowKey)
     }));
-    u()(null != n, "Missing guestWindow reference");
+    c()(null != n, "Missing guestWindow reference");
     let {
       forcedColors: o,
       connectedEmbeddedActivity: s
@@ -267,7 +267,7 @@ let q = Chunk647438.forwardRef(function(e, t) {
     let {
       analyticsLocations: l
     } = (0, I.ZP)(v.Z.POPOUT_WINDOW), {
-      clientThemesClassName: c,
+      clientThemesClassName: u,
       clientThemesCSS: d
     } = (0, T.ZP)();
     return null == n ? null : (0, i.jsx)(p.Sle, {
@@ -281,7 +281,7 @@ let q = Chunk647438.forwardRef(function(e, t) {
           isFullScreen: a,
           forcedColors: o,
           connectedEmbeddedActivity: s,
-          clientThemesClassName: c,
+          clientThemesClassName: u,
           clientThemesCSS: d
         }))
       })

@@ -8,8 +8,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
-  Chunk34415 = require("./34415.js"),
   Chunk873546 = require("./873546.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk335854 = require("./335854.js"),
   Chunk481060 = require("./481060.js"),
@@ -84,7 +84,7 @@ let q = (0, Chunk663993.Un)({
     let {
       children: t,
       skipsSettingDefaultPageTitle: n
-    } = e, a = (0, G.getPlatform)(), u = l.tq || l.Em, m = (0, c.e7)([E.Z], () => E.Z.useForcedColors ? "yes" : "no"), M = i.useRef(document.body), k = "".concat(m);
+    } = e, a = (0, G.getPlatform)(), u = s.tq || s.Em, m = (0, c.e7)([E.Z], () => E.Z.useForcedColors ? "yes" : "no"), M = i.useRef(document.body), k = "".concat(m);
     return (0, N.G)(), (0, P.G)("AppSkeleton"), (0, r.jsx)(j.w, {
       children: (0, r.jsxs)(b.Z, {
         children: [(0, r.jsx)(Z.Z, {
@@ -93,7 +93,7 @@ let q = (0, Chunk663993.Un)({
           children: (0, r.jsx)(V.Z, {
             children: (0, r.jsxs)(d.JcV, {
               containerRef: M,
-              children: [(0, r.jsx)(Y.Co, {}), (0, r.jsx)(H.ZP, {}), (0, r.jsx)(s.OU, {}), (0, r.jsx)(g.Wu, {
+              children: [(0, r.jsx)(Y.Co, {}), (0, r.jsx)(H.ZP, {}), (0, r.jsx)(l.OUJ, {}), (0, r.jsx)(g.Wu, {
                 appContext: K.IlC.APP,
                 renderWindow: window,
                 children: (0, r.jsxs)(w.yP, {
@@ -124,7 +124,7 @@ let q = (0, Chunk663993.Un)({
                     })]
                   }), false]
                 })
-              }), (0, r.jsx)(s.OU, {})]
+              }), (0, r.jsx)(l.OUJ, {})]
             })
           })
         })]

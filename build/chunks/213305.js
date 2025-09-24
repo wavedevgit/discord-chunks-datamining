@@ -15,5 +15,6 @@ let r = require("./647438.js").createContext({
     rawValue: "none"
   },
   alwaysShowLinkDecorations: false,
-  highContrastModeEnabled: false
+  highContrastModeEnabled: false,
+  keyboardModeEnabled: true
 })
