@@ -100,7 +100,7 @@ async function d(e) {
     }
     let h = e.size > 0 ? p.size / e.size : 1,
       m = 1 - h;
-    if (m < l) return s.verbose("[WebP] Insufficient savings: ".concat(Math.round(100 * m), "% < ").concat(100 * l, "%")), i("insufficient_savings", p.size);
+    if (m < l) return s.verbose("[WebP] Insufficient savings: ".concat(Math.round(100 * m), "% < ").concat(100 * l, "% (").concat(e.size, " -> ").concat(p.size, " bytes)")), i("insufficient_savings", p.size);
     let g = e.name.lastIndexOf("."),
       E = false === g ? e.name : e.name.substring(0, g),
       b = new File([p], "".concat(E, ".webp"), {

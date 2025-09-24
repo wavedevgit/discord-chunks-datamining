@@ -45,8 +45,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk921944 = require("./921944.js"),
   Chunk959517 = require("./959517.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk5874 = require("./5874.js"),
-  Chunk10198 = require("./10198.js");
+  Chunk226518 = require("./226518.js"),
+  Chunk197571 = require("./197571.js");
 
 function W(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -126,15 +126,15 @@ let X = "cozy",
     }))]
   },
   en = () => (0, Chunk951288.jsxs)("div", {
-    className: Chunk5874.themeTitle,
+    className: Chunk226518.themeTitle,
     children: [(0, Chunk951288.jsxs)("div", {
-      className: Chunk5874.themeTitleContainer,
+      className: Chunk226518.themeTitleContainer,
       children: [(0, Chunk951288.jsx)("div", {
-        className: Chunk5874.title,
+        className: Chunk226518.title,
         children: Chunk388032.intl.string(Chunk388032.t["0EzVsr"])
       }), (0, Chunk951288.jsx)(Chunk481060.R94, {
         type: Chunk481060.R94.Types.DESCRIPTION,
-        className: Chunk5874.subtext,
+        className: Chunk226518.subtext,
         children: Chunk388032.intl.string(Chunk388032.t.PV3dGR)
       })]
     }), (0, Chunk951288.jsx)(Chunk329013.g, {})]
@@ -152,17 +152,17 @@ let X = "cozy",
 class ei extends Chunk647438.Component {
   renderZoomSlider() {
     return Chunk358085.isPlatformEmbedded ? (0, Chunk951288.jsxs)("div", {
-      className: Chunk10198.marginTop20,
+      className: Chunk197571.marginTop20,
       children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
         id: J,
-        className: o()(Chunk5874.title, Chunk10198.marginBottom8),
+        className: o()(Chunk226518.title, Chunk197571.marginBottom8),
         children: Chunk388032.intl.string(Chunk388032.t.i19n5O)
       }), (0, Chunk951288.jsx)(Chunk481060.R94, {
         type: Chunk481060.geA.DESCRIPTION,
-        className: Chunk5874.subtext,
+        className: Chunk226518.subtext,
         children: Chunk388032.intl.string(Chunk388032.t.ip0uSU)
       }), (0, Chunk951288.jsx)(Chunk481060.iRW, {
-        className: o()(Chunk10198.marginTop20, Chunk10198.marginBottom4),
+        className: o()(Chunk197571.marginTop20, Chunk197571.marginBottom4),
         initialValue: this.props.zoom,
         defaultValue: Chunk981631.yqN.ZOOM_DEFAULT,
         markers: Chunk981631.yqN.ZOOM_SCALES,
@@ -180,7 +180,7 @@ class ei extends Chunk647438.Component {
   }
   renderFontScaleSlider() {
     return (0, Chunk951288.jsx)("div", {
-      className: Chunk10198.marginTop20,
+      className: Chunk197571.marginTop20,
       children: (0, Chunk951288.jsx)(Chunk481060.iRW, {
         label: Chunk388032.intl.string(Chunk388032.t.qPOqoK),
         description: Chunk388032.intl.string(Chunk388032.t.XrtbPj),
@@ -201,7 +201,7 @@ class ei extends Chunk647438.Component {
       messageGroupSpacing: t
     } = this.props;
     return (0, Chunk951288.jsx)("div", {
-      className: Chunk5874.messageGroupingSpacing,
+      className: Chunk226518.messageGroupingSpacing,
       children: (0, Chunk951288.jsx)(Chunk481060.iRW, {
         label: Chunk388032.intl.string(Chunk388032.t.Q6lKkp),
         description: Chunk388032.intl.string(Chunk388032.t.p7eUra),
@@ -226,7 +226,7 @@ class ei extends Chunk647438.Component {
     } = this.props, a = (0, Chunk780384.wj)(exports) ? this.darkMessages : this.lightMessages;
     return (0, Chunk951288.jsx)(Chunk481060.Rny, {
       children: (0, Chunk951288.jsx)(Chunk481060.Zbd, {
-        className: o()(Chunk5874.preview, Chunk10198.marginBottom40, module ? Chunk5874.compactPreview : true, "group-spacing-".concat(null != require ? require : module ? Chunk959517.c8 : Chunk959517.pq)),
+        className: o()(Chunk226518.preview, Chunk197571.marginBottom40, module ? Chunk226518.compactPreview : true, "group-spacing-".concat(null != require ? require : module ? Chunk959517.c8 : Chunk959517.pq)),
         outline: true,
         "aria-hidden": true,
         children: Chunk120356.map((t, n) => (0, r.jsx)(A.Z, {
@@ -245,24 +245,24 @@ class ei extends Chunk647438.Component {
       useForcedColors: e
     } = this.props;
     return module ? (0, Chunk951288.jsx)(Chunk481060.xJW, {
-      className: o()(Chunk10198.marginTop8, Chunk10198.marginBottom40),
+      className: o()(Chunk197571.marginTop8, Chunk197571.marginBottom40),
       title: (0, Chunk951288.jsx)("div", {
-        className: Chunk5874.themeTitle,
+        className: Chunk226518.themeTitle,
         children: (0, Chunk951288.jsx)("div", {
-          className: Chunk5874.title,
+          className: Chunk226518.title,
           children: Chunk388032.intl.string(Chunk388032.t.Ksh3io)
         })
       }),
       children: (0, Chunk951288.jsx)(Chunk481060.R94, {
         type: Chunk481060.R94.Types.DEFAULT,
-        className: Chunk5874.forcedColorsWarning,
+        className: Chunk226518.forcedColorsWarning,
         children: (0, Chunk627845.b)() ? (0, Chunk951288.jsx)(er, {}) : Chunk388032.intl.string(Chunk388032.t.AUMSZG)
       })
     }) : (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
       gap: 24,
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-lg/medium",
-        className: Chunk5874.title,
+        className: Chunk226518.title,
         children: Chunk388032.intl.string(Chunk388032.t.Ksh3io)
       }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
         title: (0, Chunk951288.jsx)(en, {}),
@@ -346,7 +346,7 @@ class ei extends Chunk647438.Component {
         }),
         value: module
       }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
-        className: Chunk5874.divider
+        className: Chunk226518.divider
       })]
     }), o = (0, Chunk951288.jsxs)(Chunk921801.F, {
       setting: Chunk726985.s6.APPEARANCE_MESSAGE_DISPLAY_COMPACT,
@@ -357,11 +357,11 @@ class ei extends Chunk647438.Component {
         },
         children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-lg/medium",
-          className: Chunk5874.title,
+          className: Chunk226518.title,
           children: Chunk388032.intl.string(Chunk388032.t["2ed/sL"])
         }), (0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-sm/normal",
-          className: Chunk5874.subtext,
+          className: Chunk226518.subtext,
           children: Chunk388032.intl.string(Chunk388032.t.u9N6Qk)
         })]
       }), (0, Chunk951288.jsx)(Chunk481060.FXm, {
@@ -379,7 +379,7 @@ class ei extends Chunk647438.Component {
         }),
         value: this.props.messageDisplayCompact ? Q : X
       }), this.props.messageDisplayCompact && (0, Chunk951288.jsx)(Chunk481060.j7V, {
-        className: Chunk5874.compactModeToggle,
+        className: Chunk226518.compactModeToggle,
         hideBorder: true,
         value: !this.props.displayCompactAvatars,
         onChange: e => this.handleDisplayCompactAvatarsChanged(!e),
@@ -388,23 +388,23 @@ class ei extends Chunk647438.Component {
           children: Chunk388032.intl.string(Chunk388032.t["//vhWl"])
         })
       }), this.renderMessageGroupSpacingSlider(), (0, Chunk951288.jsx)(Chunk481060.$i$, {
-        className: Chunk5874.divider
+        className: Chunk226518.divider
       })]
     }), s = (0, Chunk951288.jsxs)(Chunk921801.F, {
       setting: Chunk726985.s6.APPEARANCE_SCALING_SPACING,
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-lg/medium",
-        className: Chunk5874.title,
+        className: Chunk226518.title,
         children: Chunk388032.intl.string(Chunk388032.t["0Yh+ZW"])
       }), this.renderFontScaleSlider(), this.renderZoomSlider(), (0, Chunk951288.jsx)(Chunk481060.$i$, {
-        className: Chunk5874.divider
+        className: Chunk226518.divider
       })]
     }), l = (0, Chunk951288.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.APPEARANCE_TIMESTAMP_HOUR_CYCLE,
       children: this.renderTimestampHourCycle()
     }), u = (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-md/normal",
-      className: Chunk5874.a11yCallout,
+      className: Chunk226518.a11yCallout,
       children: (0, Chunk951288.jsx)(er, {})
     });
     return (0, Chunk951288.jsxs)(Chunk273313.Z, {

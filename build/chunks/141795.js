@@ -11,9 +11,9 @@ var Chunk392711 = require("./392711.js"),
   Chunk544891 = require("./544891.js"),
   Chunk710845 = require("./710845.js"),
   Chunk432877 = require("./432877.js"),
-  Chunk893601 = require("./893601.js"),
   Chunk630755 = require("./630755.js"),
   Chunk171638 = require("./171638.js"),
+  Chunk928405 = require("./928405.js"),
   Chunk719755 = require("./719755.js"),
   Chunk481981 = require("./481981.js"),
   Chunk740492 = require("./740492.js"),
@@ -284,14 +284,14 @@ class k extends Chunk476326.ZP {
     this.item.platform !== Chunk476326.ow.WEB || (null == (e = this.item.compressionMetadata) ? true : module.earlyClipboardCompressionAttempted) || await this.maybeConvertToWebP();
     let a = await D.getUploadPayload(this),
       s = (0, Chunk983544.F)(this.item.target),
-      c = (0, Chunk171638.G)({
+      d = (0, Chunk171638.G)({
         location: "CloudUpload.upload"
       });
     if (null == Chunk261470.filename || "" === Chunk261470.filename) {
       w.error("File does not have a filename.", JSON.stringify(Chunk261470)), this.handleError(Chunk981631.evJ.INVALID_FILE_ASSET);
       return
     }
-    if (Chunk893601.useDetectedFileSize && 0 === this.currentSize && null != this.item.file) try {
+    if (Chunk928405.useDetectedFileSize && 0 === this.currentSize && null != this.item.file) try {
       let e = await (0, Chunk630755.M)(this.item.file);
       module > 0 && (this.currentSize = module)
     } catch (e) {
@@ -384,13 +384,14 @@ class k extends Chunk476326.ZP {
   }
   async maybeConvertToWebP() {
     var e, t;
-    let n;
-    if (!(0, Chunk893601.U)({
-        location: "CloudUpload.maybeConvertToWebP"
-      }).enabled) return;
+    let n, r = (0, Chunk928405.n)({
+      location: "CloudUpload.maybeConvertToWebP"
+    });
+    if (!Chunk392711.enabled) return void w.warn("webp conversion skipped for ".concat(this.id, ": not enabled"));
     if (null == this.item.file) return void w.warn("webp conversion skipped for ".concat(this.id, ": no file"));
+    if (null != Chunk392711.maxFileSizeBytes && this.preCompressionSize > Chunk392711.maxFileSizeBytes) return void w.warn("webp conversion skipped for ".concat(this.id, ": too big"));
     if (this._aborted) return;
-    let r = performance.now();
+    let i = performance.now();
     try {
       if (n = await (0, Chunk125186.lG)(this.item.file), this._aborted) return;
       if (require.success) this.item.file = (0, Chunk125186.ub)(require), this.currentSize = this.item.file.size, this.uploadAnalytics.convertedMimeType = "image/webp", null != require.hashTimeMs && (this.uploadAnalytics.timing.hashTimeMs = require.hashTimeMs), w.log("webp conversion worked for ".concat(this.id, ": ").concat(require.sizeBefore, " -> ").concat(require.sizeAfter, " bytes (").concat(require.compressionRatio.toFixed(2), "x)"));
@@ -401,7 +402,7 @@ class k extends Chunk476326.ZP {
     } catch (e) {
       this.uploadAnalytics.conversionFailureReason = "unknown_error", w.warn("webp conversion failed for ".concat(this.id, ":"), module)
     }
-    this.uploadAnalytics.timing.compressTimeMs = null != (t = null == require ? true : require.compressTimeMs) ? exports : Math.round(performance.now() - Chunk392711)
+    this.uploadAnalytics.timing.compressTimeMs = null != (t = null == require ? true : require.compressTimeMs) ? exports : Math.round(performance.now() - i)
   }
   handleError(e) {
     this.setStatus("ERROR"), this.error = e, this.trackUploadFinished("ERROR");

@@ -1,7 +1,7 @@
 /** Chunk was on 47129 **/
 /** chunk id: 404975, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  P: () => v
+  P: () => T
 }), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,9 +17,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk829210 = require("./829210.jsx"),
   Chunk854014 = require("./854014.jsx"),
   Chunk921944 = require("./921944.js"),
-  Chunk565184 = require("./565184.js");
+  Chunk388032 = require("./388032.jsx"),
+  Chunk845435 = require("./845435.js");
 
-function p(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,14 +39,15 @@ function p(e) {
   return e
 }
 
-function v(e) {
+function T(e) {
   let {
     root: t,
     header: n,
-    footer: l
+    footer: l,
+    onClose: a
   } = e, {
-    showNavigationMobile: a
-  } = (0, f.t)(), c = i.useMemo(() => {
+    showNavigationMobile: c
+  } = (0, f.t)(), y = i.useMemo(() => {
     let e = [];
     return t.layout.forEach(t => {
       let {
@@ -63,7 +65,7 @@ function v(e) {
         }
       })
     }), e
-  }, [t.layout]), [y, O] = i.useMemo(() => {
+  }, [t.layout]), [O, E] = i.useMemo(() => {
     let e = [],
       n = [];
     return t.layout.forEach(t => {
@@ -71,32 +73,41 @@ function v(e) {
     }), [e, n]
   }, [t.layout]);
   return (0, r.jsx)(d.ZP, {
-    contentTypes: c,
+    contentTypes: y,
     children: e => {
       let {
         visibleContent: t,
         markAsDismissed: i
       } = e;
       return (0, r.jsxs)("div", {
-        className: o()(b.sidebar, {
-          [b.mobile]: s.tq,
-          [b.mobileNavigationOpen]: a
+        className: o()(p.sidebar, {
+          [p.mobile]: s.tq,
+          [p.mobileNavigationOpen]: c
         }),
         children: [(0, r.jsxs)("div", {
-          className: b.fixedContent,
-          children: [(0, r.jsx)("div", {
-            children: y.map(e => (0, r.jsx)(N, {
+          className: p.fixedContent,
+          children: [s.tq && (0, r.jsx)("div", {
+            className: p.mobileCloseButton,
+            children: (0, r.jsx)(u.hU, {
+              icon: u.Uz9,
+              onClick: a,
+              variant: "icon-only",
+              size: "sm",
+              "aria-label": b.intl.string(b.t.cpT0Cg)
+            })
+          }), (0, r.jsx)("div", {
+            children: O.map(e => (0, r.jsx)(N, {
               section: e,
               visibleContent: t,
               markAsDismissed: i
             }, e.key))
           }), null != n && (0, r.jsx)(n, {})]
         }), (0, r.jsxs)(u.zJl, {
-          className: b.navScroller,
+          className: p.navScroller,
           fade: true,
           children: [(0, r.jsx)("nav", {
-            className: b.nav,
-            children: O.map(e => (0, r.jsx)(N, {
+            className: p.nav,
+            children: E.map(e => (0, r.jsx)(N, {
               section: e,
               visibleContent: t,
               markAsDismissed: i
@@ -108,7 +119,7 @@ function v(e) {
   })
 }
 
-function T(e) {
+function j(e) {
   let {
     dismissibleContentType: t,
     targetElementRef: n,
@@ -122,7 +133,7 @@ function T(e) {
   let g = i.useCallback(e => {
     o("user:explicit" === e ? E.L.USER_DISMISS : E.L.AUTO_DISMISS)
   }, [o]);
-  return (0, r.jsx)(a.Z, p({
+  return (0, r.jsx)(a.Z, v({
     targetElementRef: n,
     shouldShow: u && l === t,
     scrollBehavior: "close",
@@ -130,7 +141,7 @@ function T(e) {
   }, s))
 }
 
-function j(e) {
+function m(e) {
   let {
     trailing: t,
     sectionRef: n,
@@ -139,7 +150,7 @@ function j(e) {
   } = e;
   if (t.type === g.PU.POPOVER) {
     var o, s;
-    return (0, r.jsx)(T, (o = p({}, t), s = s = {
+    return (0, r.jsx)(j, (o = v({}, t), s = s = {
       targetElementRef: n,
       visibleContent: i,
       markAsDismissed: l
@@ -164,16 +175,16 @@ function N(e) {
     markAsDismissed: o
   } = e, s = i.useRef(null), a = null == (t = n.useLabel) ? true : t.call(n), c = n.trailing;
   return (0, r.jsxs)("ul", {
-    className: b.section,
+    className: p.section,
     children: [null != a && (0, r.jsxs)("div", {
-      className: b.sectionLabel,
+      className: p.sectionLabel,
       ref: s,
       children: [(0, r.jsx)(u.X6q, {
-        className: b.label,
+        className: p.label,
         variant: "heading-sm/medium",
         color: "text-tertiary",
         children: a
-      }), null != c && (0, r.jsx)(j, {
+      }), null != c && (0, r.jsx)(m, {
         trailing: c,
         sectionRef: s,
         visibleContent: l,

@@ -43,8 +43,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk856651 = require("./856651.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk465631 = require("./465631.js"),
-  Chunk10198 = require("./10198.js");
+  Chunk11049 = require("./11049.js"),
+  Chunk197571 = require("./197571.js");
 
 function H(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -462,11 +462,11 @@ function X() {
       dismissAction: Chunk921944.L.AUTO
     })
   }, []), (0, Chunk951288.jsxs)("div", {
-    className: Chunk465631.connectContainer,
+    className: Chunk11049.connectContainer,
     children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
       variant: "heading-md/bold",
       color: "interactive-active",
-      className: Chunk465631.connectHeader,
+      className: Chunk11049.connectHeader,
       children: Chunk388032.intl.string(Chunk388032.t.ZeDrUV)
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-xs/normal",
@@ -498,7 +498,7 @@ function J() {
   }
   let t = (0, Chunk122021.fq)();
   return (0, Chunk951288.jsxs)("div", {
-    className: Chunk465631.connectionsContainer,
+    className: Chunk11049.connectionsContainer,
     children: [exports.slice(0, 10).map(e => (0, r.jsx)(h.Z, {
       type: e.type,
       className: F.__invalid_accountButton,

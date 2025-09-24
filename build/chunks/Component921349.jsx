@@ -29,7 +29,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk98650 = require("./98650.js"),
   Chunk237617 = require("./237617.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk786614 = require("./786614.js");
+  Chunk361421 = require("./361421.js");
 
 function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -340,8 +340,8 @@ let B = Chunk647438.forwardRef(function(e, t) {
   let e4 = _ ? z : K,
     e8 = i.useRef(null),
     {
-      focusPreviousItem: e6,
-      focusNextItem: e5
+      focusPreviousItem: e5,
+      focusNextItem: e6
     } = V(e8, eS, eG);
   return (0, r.jsxs)(u.bG, {
     navigator: eQ,
@@ -521,8 +521,8 @@ let B = Chunk647438.forwardRef(function(e, t) {
           let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
           e0(e, t)
         },
-        focusNextItem: e5,
-        focusPreviousItem: e6,
+        focusNextItem: e6,
+        focusPreviousItem: e5,
         renderCustomPill: el,
         customPillContainerClassName: ec
       })

@@ -19,13 +19,13 @@ var Chunk120356 = require("./120356.js"),
   Chunk908474 = require("./908474.jsx"),
   Chunk467014 = require("./467014.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk152540 = require("./152540.js");
+  Chunk87819 = require("./87819.js");
 
 function N() {
   return (0, Chunk951288.jsxs)("div", {
-    className: Chunk152540.header,
+    className: Chunk87819.header,
     children: [(0, Chunk951288.jsxs)("div", {
-      className: Chunk152540.headerTitle,
+      className: Chunk87819.headerTitle,
       children: [(0, Chunk951288.jsx)(Chunk777288.Z, {
         width: 16,
         height: 16
@@ -36,8 +36,8 @@ function N() {
     }), (0, Chunk951288.jsx)("div", {
       children: (0, Chunk951288.jsx)(Chunk481060.M2$, {
         shortcut: "esc",
-        keyClassName: Chunk152540.keyComboInner,
-        className: Chunk152540.keyComboContainer
+        keyClassName: Chunk87819.keyComboInner,
+        className: Chunk87819.keyComboContainer
       })
     })]
   })

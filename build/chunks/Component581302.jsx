@@ -1,4 +1,4 @@
-/** Chunk was on 97571 **/
+/** Chunk was on 25460 **/
 /** chunk id: 581302, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -12,7 +12,7 @@ var Chunk693789 = require("./693789.jsx"),
   Chunk52647 = require("./52647.js"),
   Chunk237012 = require("./237012.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk103663 = require("./103663.js");
+  Chunk906406 = require("./906406.js");
 let m = function() {
   let {
     resetOnboardingExperience: e,
@@ -20,7 +20,7 @@ let m = function() {
   } = (0, Chunk52647.Z)();
   return (0, Chunk951288.jsx)(Chunk789164.h, {
     title: "Virtual Currency Configuration",
-    className: Chunk103663.container,
+    className: Chunk906406.container,
     children: (0, Chunk951288.jsxs)(Chunk237012.E_, {
       label: "Reset Onboarding State",
       direction: "vertical",

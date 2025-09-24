@@ -1,4 +1,4 @@
-/** Chunk was on 97571 **/
+/** Chunk was on 25460 **/
 /** chunk id: 512313, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -9,7 +9,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk991346 = require("./991346.js"),
   Chunk259580 = require("./259580.jsx"),
-  Chunk808396 = require("./808396.js");
+  Chunk547481 = require("./547481.js");
 
 function d(e) {
   let {
@@ -97,12 +97,12 @@ function m() {
     module.children = exports, Chunk647438.push(...exports)
   }
   return (0, Chunk951288.jsxs)(Chunk481060.zJl, {
-    className: Chunk808396.root,
+    className: Chunk547481.root,
     children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
       variant: "heading-lg/bold",
       children: "Settings Tree"
     }), (0, Chunk951288.jsx)("div", {
-      className: Chunk808396.tree,
+      className: Chunk547481.tree,
       children: exports.sort((e, t) => e.setting.localeCompare(t.setting)).map(e => (0, a.jsx)(u, {
         setting: e.setting,
         children: e.children,

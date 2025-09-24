@@ -1,4 +1,4 @@
-/** Chunk was on 71512 **/
+/** Chunk was on 21376 **/
 /** chunk id: 922112, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk8426 = require("./8426.js"),
   Chunk969632 = require("./969632.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk359449 = require("./359449.js");
+  Chunk197530 = require("./197530.js");
 
 function h(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -93,7 +93,7 @@ let x = function(e) {
     A = i.useCallback(() => (0, a.ZDy)(async () => {
       let {
         default: e
-      } = await n.e("76396").then(n.bind(n, 462499));
+      } = await n.e("84725").then(n.bind(n, 462499));
       return n => (0, r.jsx)(e, b(h({}, n), {
         guildId: t,
         resourceChannel: l,

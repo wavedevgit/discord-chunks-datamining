@@ -1,0 +1,20 @@
+/** Chunk was on 37690 **/
+/** chunk id: 18827, original params: e,t,n (module,exports,require) **/
+module.exports = {
+  widgetContainer: "widgetContainer__0ea1a",
+  header: "header__0ea1a",
+  appIcon: "appIcon__0ea1a",
+  appIconPlaceholder: "appIconPlaceholder__0ea1a",
+  container: "container__0ea1a",
+  textPlaceholder: "textPlaceholder__0ea1a",
+  textWithImage: "textWithImage__0ea1a",
+  heroSection: "heroSection__0ea1a",
+  heroBody: "heroBody__0ea1a",
+  heroImagePlaceholder: "heroImagePlaceholder__0ea1a",
+  heroImageContainer: "heroImageContainer__0ea1a",
+  heroImage: "heroImage__0ea1a",
+  grid: "grid__0ea1a",
+  image: "image__0ea1a",
+  imagePlaceholder: "imagePlaceholder__0ea1a",
+  socialProof: "socialProof__0ea1a"
+}

@@ -1,4 +1,4 @@
-/** Chunk was on 76892 **/
+/** Chunk was on 9456 **/
 /** chunk id: 749913, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -59,7 +59,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk176505 = require("./176505.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk470581 = require("./470581.js");
+  Chunk153846 = require("./153846.js");
 
 function ea(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -410,7 +410,7 @@ let ec = Chunk647438.memo(function(e) {
     });
     let T = i.useCallback(async e => {
         let n = e.clipboardData.files[0];
-        null != n && n.type.startsWith("image/") && (e.preventDefault(), await (0, B.d5)([n], t, k.d.FirstThreadMessage, {
+        null != n && n.type.startsWith("image/") && (e.preventDefault(), await (0, B.d)([n], t, k.d.FirstThreadMessage, {
           origin: "clipboard"
         }), j.getState().setFormOpenFromUserAction())
       }, [t, j]),
@@ -630,7 +630,7 @@ let em = Chunk647438.memo(function(e) {
             }),
             onChange: y,
             onSubmit: T,
-            promptToUpload: B.d5,
+            promptToUpload: B.d,
             disabled: a,
             onKeyDown: e => {
               ("ArrowUp" === e.key || "ArrowDown" === e.key) && e.stopPropagation(), b && "Escape" === e.key && !j.getState().submitting && (null == s || s.blur(), j.getState().setFormOpen(false), j.getState().setTitleFocused(false), j.getState().setBodyFocused(false), j.getState().setPreviewing(false))
@@ -646,7 +646,7 @@ let em = Chunk647438.memo(function(e) {
 
 function eg() {
   return (0, Chunk951288.jsx)("div", {
-    className: Chunk470581.previewModeIndicator,
+    className: Chunk153846.previewModeIndicator,
     children: (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
       color: "interactive-normal",

@@ -1,4 +1,4 @@
-/** Chunk was on 16820 **/
+/** Chunk was on 88806 **/
 /** chunk id: 190210, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => er
@@ -51,8 +51,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk224837 = require("./224837.js"),
   Chunk200299 = require("./200299.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk310069 = require("./310069.js"),
-  Chunk744114 = require("./744114.js");
+  Chunk593514 = require("./593514.js"),
+  Chunk564355 = require("./564355.js");
 
 function $(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -585,7 +585,7 @@ function ea(e) {
     color: "transparent",
     look: "blank",
     onChange: e => {
-      (0, D.d5)(e.currentTarget.files, t, w.d.ChannelMessage, {
+      (0, D.d)(e.currentTarget.files, t, w.d.ChannelMessage, {
         requireConfirm: true,
         origin: "file_picker"
       }), e.currentTarget.value = null

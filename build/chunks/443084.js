@@ -1,0 +1,3 @@
+/** Chunk was on 12055 **/
+/** chunk id: 443084, original params: e (module,exports,require) **/
+module.exports = JSON.parse('{"klSpfn":"Einstellungen bearbeiten","NzUuLC":["+",[1,"count"],"\xa0",[6,"count",{"one":["Nachricht"],"other":["Nachrichten"]},0,"cardinal"]],"O+racX":"Es gibt keine Benachrichtigungen.","5H2Jd3":"Alle anzeigen","Ko8NGh":"Lesezeichen anzeigen","dcpdhI":"W\xe4hle eine Nachricht aus, um dorthin zu springen.","VAK+h4":"Willkommen in deinem Benachrichtigungszentrum!"}')

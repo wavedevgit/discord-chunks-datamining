@@ -23,8 +23,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk51144 = require("./51144.js"),
   Chunk513547 = require("./513547.jsx"),
   Chunk65154 = require("./65154.js"),
-  Chunk593235 = require("./593235.js"),
-  Chunk10198 = require("./10198.js");
+  Chunk966117 = require("./966117.js"),
+  Chunk197571 = require("./197571.js");
 let C = {
   [Chunk65154.Z.NO_OVERRIDE]: "None",
   [Chunk65154.Z.LOW]: "Low Quality Stream",
@@ -59,12 +59,12 @@ function Z(e) {
     title: F,
     showUserInfo: N = false,
     showSimulcastOverride: I = false
-  } = e, [k, B] = a.useState("0"), w = (0, s.e7)([y.Z], () => N ? y.Z.getGuildId() : null), A = (0, s.e7)([v.default], () => N && null != Z ? v.default.getUser(Z) : null), O = (0, s.e7)([h.ZP], () => N && null != w && null != Z ? h.ZP.getNick(w, Z) : null);
+  } = e, [k, B] = a.useState("0"), w = (0, s.e7)([y.Z], () => N ? y.Z.getGuildId() : null), A = (0, s.e7)([v.default], () => N && null != Z ? v.default.getUser(Z) : null), T = (0, s.e7)([h.ZP], () => N && null != w && null != Z ? h.ZP.getNick(w, Z) : null);
   if (null == t || N && null == Z || 0 === t.length) return (0, r.jsx)(c.$jN, {
     type: c.$jN.Type.SPINNING_CIRCLE
   });
-  let T = F;
-  N && null != A && (T = "".concat(F, " — ").concat(null != O ? O : E.ZP.getName(A)));
+  let O = F;
+  N && null != A && (O = "".concat(F, " — ").concat(null != T ? T : E.ZP.getName(A)));
   let L = t.map((e, t) => (0, r.jsx)(c.njP.Item, {
       id: t.toString(),
       children: function(e) {
@@ -127,7 +127,7 @@ function Z(e) {
     });
   return (0, r.jsxs)(c.hjN, {
     tag: c.RB0.H2,
-    title: T,
+    title: O,
     children: [(0, r.jsx)(c.njP, {
       type: "top",
       look: "brand",

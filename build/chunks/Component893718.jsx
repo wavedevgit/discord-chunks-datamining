@@ -76,7 +76,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk761652 = require("./761652.js"),
   Chunk957825 = require("./957825.js"),
-  Chunk744114 = require("./744114.js");
+  Chunk564355 = require("./564355.js");
 
 function ed(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -139,7 +139,7 @@ function eE(e, t, a, o, s) {
       c(false), (0, p.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([n.e("57804"), n.e("90508"), n.e("22173"), n.e("95546"), n.e("57354")]).then(n.bind(n, 273602));
+        } = await Promise.all([n.e("57804"), n.e("90508"), n.e("22173"), n.e("95546"), n.e("74575")]).then(n.bind(n, 273602));
         return t => (0, r.jsx)(e, ep(ef({}, t), {
           threadId: s,
           attachments: O,
@@ -458,8 +458,8 @@ function eD(e, t) {
     isLurking: e3,
     isPendingMember: e4,
     disabled: e8,
-    canAttachFiles: e6,
-    canCreateThreads: e5,
+    canAttachFiles: e5,
+    canCreateThreads: e6,
     canEveryoneSendMessages: e7
   } = eN(M, k, e1, x), e9 = k.toolbarType === X.OW.STATIC, te = !U.dN.useSetting() && !(0, z.isAndroidWeb)() && null != window.ResizeObserver, tt = !te || !(null == (n = k.commands) ? true : n.enabled) || !G || f !== el.GI, tn = (0, w.Z)(), {
     fontSize: tr
@@ -510,7 +510,7 @@ function eD(e, t) {
   let tP = null != Y,
     tw = e8 && !((e3 || e4) && e7) || tc && (null == (s = k.submit) ? true : s.useDisabledStylesOnSubmit),
     tD = null;
-  null != e1 ? tD = null == V ? true : V(e1, e2, eu.attachButton) : (!e8 || e5) && (tD = null == Z ? true : Z(tP, eu.attachButton));
+  null != e1 ? tD = null == V ? true : V(e1, e2, eu.attachButton) : (!e8 || e6) && (tD = null == Z ? true : Z(tP, eu.attachButton));
   let tx = te && null != h && !e8 && k.showCharacterCount && null == e1,
     tL = te && !__OVERLAY__ && null != h && null == e1 && k.toolbarType !== X.OW.NONE && !e8,
     tj = (0, ee.c)({
@@ -580,7 +580,7 @@ function eD(e, t) {
           }), k.hideAttachmentArea ? null : (0, r.jsx)(en.Z, {
             channelId: M.id,
             type: k,
-            canAttachFiles: e6
+            canAttachFiles: e5
           }), (0, r.jsxs)("div", {
             className: o()(eu.inner, {
               [eu.innerDisabled]: tw,
@@ -607,7 +607,7 @@ function eD(e, t) {
                 isPreviewing: (e3 || e4) && e7,
                 channel: M,
                 type: k,
-                canPasteFiles: e6,
+                canPasteFiles: e5,
                 uploadPromptCharacterCount: es.en1,
                 maxCharacterCount: null != eg ? eg : tn,
                 allowNewLines: ex,

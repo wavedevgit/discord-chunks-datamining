@@ -1,4 +1,4 @@
-/** Chunk was on 16820 **/
+/** Chunk was on 88806 **/
 /** chunk id: 193910, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => A
@@ -29,7 +29,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk921944 = require("./921944.js"),
   Chunk489887 = require("./489887.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk878066 = require("./878066.js");
+  Chunk749723 = require("./749723.js");
 let T = RegExp("(.*)```(\\w+)\\n(.*)```(.*)", "s");
 
 function N() {
@@ -147,12 +147,13 @@ function A(e) {
       guildId: t.guild_id
     })
   }
-  async function G() {
+
+  function G() {
     let e = w,
       n = "txt",
       r = "",
       i = w.match(T);
-    null != i && (r = i[1], n = i[2], e = i[3], r += i[4]), await (0, x.d5)([(0, v.dp)(new Blob([e], {
+    null != i && (r = i[1], n = i[2], e = i[3], r += i[4]), (0, x.d)([(0, v.dp)(new Blob([e], {
       type: "text/plain"
     }), "message.".concat(n), "text/plain")], t, A), _.S.dispatchToLastSubscribed(E.CkL.CLEAR_TEXT), "" !== r && _.S.dispatchToLastSubscribed(E.CkL.INSERT_TEXT, {
       plainText: r

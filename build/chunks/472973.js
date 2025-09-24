@@ -1,3 +1,0 @@
-/** Chunk was on 81942 **/
-/** chunk id: 472973, original params: a (module,exports,require) **/
-module.exports = JSON.parse('{"o/An3t":[[1,"username"],"から",[1,"applicationName"],"の配信をリクエストされました"],"DKHheX":"配信をリクエスト","8qq+Hx":[[1,"applicationName"],"の配信をリクエスト"],"s7bMT0":[[1,"username"],"が",[1,"applicationName"],"の配信をリクエストしています"],"7pndSk":["誰かに",[1,"applicationName"],"の配信をリクエストしました"],"P0wwmJ":"すでに配信中","u4QmWl":"リクエストの期限が切れました","qRXatr":"ボイスチャンネルにいません","43zohI":"ゲームが起動されていません","fac+eH":"権限なし","8HU1Mz":"リクエストが送信されました","5+172d":"配信する","nAyuPj":"配信リクエスト","d/qbCw":[[1,"username"],"さんから配信をリクエストされました"],"8B3U5O":"他のユーザーに配信をリクエストしました","UGbmBg":"配信する","jTbTAA":[[8,"$b",[[1,"username"]]],"さんが、あなたが",[8,"$b",[[1,"game"]]],"をプレイする様子を視聴したいそうです。"]}')

@@ -1,4 +1,4 @@
-/** Chunk was on 16820 **/
+/** Chunk was on 88806 **/
 /** chunk id: 561472, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => v
@@ -38,7 +38,7 @@ let v = function(e) {
     icons: y.J6,
     onDrop: e => {
       if (P) returnfalse;
-      N && null != v && ((0, g.d5)(e, v, x, {
+      N && null != v && ((0, g.d)(e, v, x, {
         requireConfirm: O,
         showLargeMessageDialog: false,
         origin: "drag_drop"

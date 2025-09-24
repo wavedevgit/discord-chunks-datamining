@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk670362 = require("./670362.jsx"),
   Chunk46140 = require("./46140.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk793384 = require("./793384.js");
+  Chunk477813 = require("./477813.js");
 let p = ["reward", "task"],
   f = function(e) {
     let {

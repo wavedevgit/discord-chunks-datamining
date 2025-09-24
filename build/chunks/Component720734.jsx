@@ -1,4 +1,4 @@
-/** Chunk was on 97571 **/
+/** Chunk was on 25460 **/
 /** chunk id: 720734, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => tg,
@@ -125,7 +125,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk46140 = require("./46140.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk490579 = require("./490579.js");
+  Chunk25874 = require("./25874.js");
 
 function ts(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -336,7 +336,7 @@ class tx extends Chunk647438.PureComponent {
         activities: exports,
         applicationStream: require,
         voiceChannel: Chunk392711 ? o : true,
-        textClassName: Chunk490579.activityStatusText,
+        textClassName: Chunk25874.activityStatusText,
         hideTooltip: true
       })
     });
@@ -351,8 +351,8 @@ class tx extends Chunk647438.PureComponent {
       forceHover: module,
       children: (0, Chunk951288.jsx)(Chunk427217.Z, {
         activity: Chunk374470,
-        emojiClassName: Chunk490579.emoji,
-        className: Chunk490579.customStatus
+        emojiClassName: Chunk25874.emoji,
+        className: Chunk25874.customStatus
       })
     }) : null != Chunk120356 && Chunk120356 !== Chunk981631.Skl.UNKNOWN && Chunk647438.hasUniqueUsername() ? (0, Chunk951288.jsx)(Chunk570928.Z, {
       hoverText: l,
@@ -755,12 +755,12 @@ function tf(e) {
 function tb(e) {
   let {
     shouldShowDeviceChangedNotifications: t
-  } = (0, e2.P)({
+  } = (0, e6.P)({
     location: "Account.useDeviceChangedTooltip",
     autoTrackExposure: false
   }), n = (0, d.e7)([eB.Z], () => null != eB.Z.getChannelId()), a = (0, ea.Fh)(e), i = r.useRef(new m.V7), [l, s] = r.useState(false);
   r.useEffect(() => {
-    n && a && ((0, e2._)({
+    n && a && ((0, e6._)({
       location: "Account.useDeviceChangedTooltip (exposure tracking)",
       autoTrackExposure: true
     }), t && (s(true), i.current.start(tp, () => {
@@ -953,7 +953,7 @@ function tv(e) {
     x = r.useRef(null),
     {
       showRefreshedAudioContextMenu: b
-    } = (0, e6.e)({
+    } = (0, e2.e)({
       location: "SettingsCogButton"
     }),
     g = !b && (m || p),
@@ -1100,7 +1100,7 @@ function tj(e) {
     } = (0, ea.p6)(tr.h7.AUDIO_INPUT),
     {
       showRefreshedAudioContextMenu: ec
-    } = (0, e6.e)({
+    } = (0, e2.e)({
       location: "MicrophoneButton"
     }),
     {
@@ -1390,7 +1390,7 @@ function t_(e) {
     name: _
   } = (0, ea.p6)(tr.h7.AUDIO_OUTPUT), {
     showRefreshedAudioContextMenu: y
-  } = (0, e6.e)({
+  } = (0, e2.e)({
     location: "HeadphonesButton"
   }), C = (0, Z.Z)(t, n, i), {
     analyticsLocations: E

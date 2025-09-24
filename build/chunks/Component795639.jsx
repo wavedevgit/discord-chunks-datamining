@@ -1,4 +1,4 @@
-/** Chunk was on 76892 **/
+/** Chunk was on 9456 **/
 /** chunk id: 795639, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -25,9 +25,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk470623 = require("./470623.jsx"),
   Chunk983200 = require("./983200.js"),
   Chunk127654 = require("./127654.js"),
-  Chunk124252 = require("./124252.js"),
+  Chunk809639 = require("./809639.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk770290 = require("./770290.js");
+  Chunk272210 = require("./272210.js");
 let S = [{
     name: "Media Post Thumbnail",
     extensions: ["jpg", "jpeg", "png", "gif", "webp"]
@@ -83,7 +83,7 @@ let I = e => {
       height: 86 * e
     }
   }, [j]), R = i.useCallback(e => {
-    null != C && h.Z.remove(a.id, C.id, f.Ie.CREATE_FORUM_POST.drafts.type), (0, y.d5)(e.currentTarget.files, a, f.Ie.CREATE_FORUM_POST.drafts.type, {
+    null != C && h.Z.remove(a.id, C.id, f.Ie.CREATE_FORUM_POST.drafts.type), (0, y.d)(e.currentTarget.files, a, f.Ie.CREATE_FORUM_POST.drafts.type, {
       requireConfirm: true,
       isThumbnail: true,
       origin: "file_picker"

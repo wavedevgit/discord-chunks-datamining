@@ -46,7 +46,6 @@ let s = Chunk442837.ZP.connectStores([Chunk226961.ZP], e => {
     userId: i,
     videoStreams: c,
     title: o.intl.string(o.t.SJmZam),
-    showUserInfo: true,
-    showSimulcastOverride: true
+    showUserInfo: true
   })
 })

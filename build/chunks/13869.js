@@ -1,3 +1,0 @@
-/** Chunk was on 9618 **/
-/** chunk id: 13869, original params: s (module,exports,require) **/
-module.exports = JSON.parse('{"bFbsV1":"Add meg az e-mail-c\xedmedet","RRBNpq":"K\xf6vetkező","v0H5Tk":"Bet\xf6lt\xe9s...","Ks6opq":"Ind\xedt\xe1s","GDsHl5":"Friss\xedt\xe9s","dSkE/P":"Korcsoport hiteles\xedt\xe9se","HC4IiY":"E-mail-c\xedm hiteles\xedt\xe9se","o4D6fn":"Friss\xedt\xe9s","wq2RDg":"Hiteles\xedt\xe9s","Qm6K/v":"E-mail-c\xedm hiteles\xedt\xe9se"}')

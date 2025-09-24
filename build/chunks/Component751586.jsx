@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk70621 = require("./70621.jsx"),
   Chunk429080 = require("./429080.jsx"),
   Chunk675720 = require("./675720.jsx"),
-  Chunk806212 = require("./806212.js");
+  Chunk726927 = require("./726927.js");
 let h = [{
     value: "quest_bar",
     label: "Quest Bar"

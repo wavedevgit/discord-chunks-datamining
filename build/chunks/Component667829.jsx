@@ -33,7 +33,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk925994 = require("./925994.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk744114 = require("./744114.js");
+  Chunk564355 = require("./564355.js");
 
 function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -239,9 +239,9 @@ class G extends Chunk647438.Component {
       popup: Z
     } = this.state, F = {
       channel: Chunk911969,
-      className: o()(Chunk30465, Chunk744114.textArea, {
-        [Chunk744114.textAreaSlate]: Chunk998698,
-        [Chunk744114.textAreaDisabled]: u || B
+      className: o()(Chunk30465, Chunk564355.textArea, {
+        [Chunk564355.textAreaSlate]: Chunk998698,
+        [Chunk564355.textAreaDisabled]: u || B
       }),
       id: Chunk330122,
       placeholder: this.getPlaceholder(),
@@ -264,10 +264,10 @@ class G extends Chunk647438.Component {
       onKeyDown: Chunk430742,
       onSubmit: Chunk531643,
       textAreaPaddingClassName: o()({
-        [Chunk744114.textAreaForPostCreation]: Chunk476326 === Chunk541716.Ie.CREATE_FORUM_POST,
-        [Chunk744114.textAreaCustomGift]: Chunk476326 === Chunk541716.Ie.CUSTOM_GIFT,
-        [Chunk744114.textAreaForUserProfile]: Chunk476326 === Chunk541716.Ie.USER_PROFILE,
-        [Chunk744114.textAreaForOverlayInlineReply]: Chunk476326 === Chunk541716.Ie.OVERLAY_INLINE_REPLY
+        [Chunk564355.textAreaForPostCreation]: Chunk476326 === Chunk541716.Ie.CREATE_FORUM_POST,
+        [Chunk564355.textAreaCustomGift]: Chunk476326 === Chunk541716.Ie.CUSTOM_GIFT,
+        [Chunk564355.textAreaForUserProfile]: Chunk476326 === Chunk541716.Ie.USER_PROFILE,
+        [Chunk564355.textAreaForOverlayInlineReply]: Chunk476326 === Chunk541716.Ie.OVERLAY_INLINE_REPLY
       }),
       spellcheckEnabled: Chunk710845,
       useNewSlashCommands: Chunk117530,
@@ -388,33 +388,35 @@ class G extends Chunk647438.Component {
         _ = null != (r = null != d ? d : f) ? r : a,
         b = (0, A._K)(i, this._getEditorWindow()) ? a : _;
       if (null == l || !b.isPrivate() && !o || b.isPrivate() && b.isManaged()) returnfalse;
-      let O = async (e, t) => {
-        var n, r;
-        let i = E.Z.getActiveCommand(b.id);
-        if (null == i) return await l(e, b, u.drafts.type, {
-          requireConfirm: true,
-          showLargeMessageDialog: t,
-          origin: "clipboard"
-        });
-        let a = null != (n = u.drafts.commandType) ? n : u.drafts.type,
-          o = null,
-          s = E.Z.getActiveOption(b.id);
-        null != (o = (null == s ? true : s.type) === m.jw.ATTACHMENT ? s : null == (r = i.options) ? true : r.find(e => {
-          if (e.type === m.jw.ATTACHMENT) return null == y.Z.getUpload(b.id, e.name, a)
-        })) && p.Z.setFile({
-          channelId: b.id,
-          id: o.name,
-          draftType: a,
-          file: {
+      let O = (e, t) => {
+          var n, r;
+          let i = E.Z.getActiveCommand(b.id);
+          if (null == i) return l(e, b, u.drafts.type, {
+            requireConfirm: true,
+            showLargeMessageDialog: t,
+            origin: "clipboard"
+          });
+          let a = null != (n = u.drafts.commandType) ? n : u.drafts.type,
+            o = null,
+            s = E.Z.getActiveOption(b.id);
+          null != (o = (null == s ? true : s.type) === m.jw.ATTACHMENT ? s : null == (r = i.options) ? true : r.find(e => {
+            if (e.type === m.jw.ATTACHMENT) return null == y.Z.getUpload(b.id, e.name, a)
+          })) && p.Z.setFile({
+            channelId: b.id,
             id: o.name,
-            platform: g.ow.WEB,
-            file: e[0]
-          }
-        })
-      }, v = null != s ? s : c, {
-        files: I,
-        errors: T
-      } = B(e.clipboardData, u.uploadLongMessages ? v : null);
+            draftType: a,
+            file: {
+              id: o.name,
+              platform: g.ow.WEB,
+              file: e[0]
+            }
+          })
+        },
+        v = null != s ? s : c,
+        {
+          files: I,
+          errors: T
+        } = B(e.clipboardData, u.uploadLongMessages ? v : null);
       return (k("onPaste", [...e.clipboardData.items].map(e => {
         if ("file" !== e.kind) return {
           kind: e.kind,

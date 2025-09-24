@@ -9,7 +9,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk404975 = require("./404975.jsx"),
   Chunk924052 = require("./924052.jsx"),
   Chunk59662 = require("./59662.js"),
-  Chunk4640 = require("./4640.js");
+  Chunk990757 = require("./990757.js");
 
 function c(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -52,7 +52,7 @@ function f(e) {
     onClose: E,
     sidebarHeader: b,
     sidebarFooter: p
-  } = e, [v, T] = i.useState(true), [j, N] = i.useState(null == (t = y.entry(O)) ? true : t.parentPanel), [S, m] = i.useState(() => y.typedGet(j)), C = i.useCallback(() => P(true), []), [_, P] = i.useState({
+  } = e, [v, T] = i.useState(true), [j, m] = i.useState(null == (t = y.entry(O)) ? true : t.parentPanel), [N, S] = i.useState(() => y.typedGet(j)), C = i.useCallback(() => P(true), []), [_, P] = i.useState({
     target: O,
     targetAccordion: null == (n = y.entry(O)) ? true : n.parentAccordion,
     animateScroll: false,
@@ -74,7 +74,7 @@ function f(e) {
         x(() => {
           P(d(c({}, n), {
             animateScroll: false
-          })), m(e), N(e)
+          })), S(e), m(e)
         })
       } else P(d(c({}, n), {
         animateScroll: true
@@ -83,7 +83,7 @@ function f(e) {
     navTransition: _,
     showNavigationMobile: v,
     setShowNavigationMobile: T
-  }), [y, j, _, v, C, x]);
+  }), [y, j, _, v, C, x]), A = () => x(E);
   return (0, r.jsx)(a.j.Provider, {
     value: I,
     children: (0, r.jsxs)("div", {
@@ -91,10 +91,11 @@ function f(e) {
       children: [(0, r.jsx)(o.P, {
         root: g,
         header: b,
-        footer: p
+        footer: p,
+        onClose: A
       }), (0, r.jsx)(l.Z, {
-        onClose: () => x(E),
-        setting: null != (f = I.currentPanel) ? f : S
+        onClose: A,
+        setting: null != (f = I.currentPanel) ? f : N
       })]
     })
   })

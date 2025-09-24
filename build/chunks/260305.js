@@ -8,5 +8,5 @@ var r, Chunk796075 = require("./796075.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk355336 = require("./355336.jsx"),
-  Chunk247679 = require("./247679.js");
-let c = (0, Chunk355336.$)(o()(Chunk247679.auto, Chunk247679.disableScrollAnchor), null != (r = window.ResizeObserver) ? r : Chunk796075.d)
+  Chunk901259 = require("./901259.js");
+let c = (0, Chunk355336.$)(o()(Chunk901259.auto, Chunk901259.disableScrollAnchor), null != (r = window.ResizeObserver) ? r : Chunk796075.d)

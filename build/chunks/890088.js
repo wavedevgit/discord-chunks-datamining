@@ -1,0 +1,10 @@
+/** Chunk was on 38549 **/
+/** chunk id: 890088, original params: e,t,r (module,exports,require) **/
+"use strict";
+module.exports = {
+  wishlistButton: "wishlistButton__979b1",
+  withHover: "withHover__979b1",
+  normalIconColor: "normalIconColor__979b1",
+  wishlistedOrHoveredIconColor: "wishlistedOrHoveredIconColor__979b1",
+  toastIcon: "toastIcon__979b1"
+}
