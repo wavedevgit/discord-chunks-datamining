@@ -19,15 +19,16 @@ var Chunk951288 = require("./951288.js"),
   Chunk828843 = require("./828843.js");
 
 function p(e) {
+  var n;
   let {
-    guildId: n
+    guildId: t
   } = e;
   r.useEffect(() => {
-    (0, d.EC)(n)
-  }, [n]);
-  let t = (0, l.Z)(n),
-    p = (0, o.e7)([u.Z], () => u.Z.getStateForGuild(n)),
-    j = r.useMemo(() => (null == p ? true : p.instances) == null ? [] : Object.values(p.instances), [null == p ? true : p.instances]);
+    (0, d.EC)(t)
+  }, [t]);
+  let p = (0, l.Z)(t),
+    j = (0, o.e7)([u.Z], () => u.Z.getStateForGuild(t)),
+    v = Object.values(null != (n = null == j ? true : j.instances) ? n : {});
   return (0, a.jsxs)("div", {
     className: x.container,
     children: [(0, a.jsxs)(c.ZP, {
@@ -41,22 +42,22 @@ function p(e) {
       })]
     }), (0, a.jsxs)("div", {
       className: x.contentContainer,
-      children: [(null == p ? true : p.instances) != null ? (0, a.jsx)(s.zJl, {
+      children: [(null == j ? true : j.instances) != null ? (0, a.jsx)(s.zJl, {
         className: x.gameContainerWrapper,
         children: (0, a.jsx)("div", {
           className: x.gameContainer,
-          children: j.map((e, t) => (0, a.jsx)(b.Z, {
-            guildId: n,
+          children: v.map((e, n) => (0, a.jsx)(b.Z, {
+            guildId: t,
             instance: e
-          }, "".concat(e.gameId, "-").concat(t)))
+          }, "".concat(e.gameId, "-").concat(n)))
         })
       }) : (0, a.jsx)("div", {
         className: x.spinnerContainer,
         children: (0, a.jsx)(s.$jN, {
           type: s.RAz.SPINNING_CIRCLE
         })
-      }), t && (0, a.jsx)(m.Z, {
-        guildId: n
+      }), p && (0, a.jsx)(m.Z, {
+        guildId: t
       })]
     })]
   })

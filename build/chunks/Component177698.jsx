@@ -62,21 +62,21 @@ let O = (0, Chunk703912.Z)(e => {
     codeChallenge: y,
     codeChallengeMethod: v,
     state: I,
-    guildId: C,
-    channelId: S,
+    guildId: S,
+    channelId: C,
     prompt: T,
     disableGuildSelect: N,
     disclosures: P,
     integrationType: j,
     pid: x,
     signal: A
-  } = e, Z = "OAuth2Authorize_".concat(n, "_").concat(C, "_").concat(S), w = null != j ? null == u ? true : u.get(j) : true, L = null != (t = null == w ? true : w.application) ? t : a.Z.getApplication(n);
+  } = e, Z = "OAuth2Authorize_".concat(n, "_").concat(S, "_").concat(C), w = null != j ? null == u ? true : u.get(j) : true, L = null != (t = null == w ? true : w.application) ? t : a.Z.getApplication(n);
   return new Promise((e, t) => {
     let a = (0, h.jU)(x),
       w = i.z1l;
     null != L && null != (0, l.ZP)({
       application: L,
-      channelId: S
+      channelId: C
     }) ? w = i.u1M : a.context === g.IlC.POPOUT && (w = i.u1M);
     let R = false,
       D = l => {
@@ -136,8 +136,8 @@ let O = (0, Chunk703912.Z)(e => {
       codeChallengeMethod: v,
       state: I,
       permissions: f,
-      guildId: C,
-      channelId: S,
+      guildId: S,
+      channelId: C,
       prompt: T,
       disableGuildSelect: "boolean" == typeof N ? N : "true" === N,
       integrationType: j,

@@ -1,7 +1,7 @@
 /** Chunk was on 49902 **/
 /** chunk id: 128156, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => A
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -31,41 +31,41 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk158069 = require("./158069.js");
 
-function E(e) {
+function A(e) {
   let {
     user: t,
     currentUser: n,
-    displayProfile: E,
+    displayProfile: A,
     guildId: N,
     channelId: k,
     subsection: T,
-    onClose: D
+    onClose: Z
   } = e, {
-    voiceActivityStatusEnabled: Z
+    voiceActivityStatusEnabled: D
   } = (0, o.U)({
     location: "UserProfileModalV2Activity"
   }), _ = (0, h.b)({
     location: "UserProfileModalV2Activity"
   }), R = (0, c.P6)("UserProfileModalV2Activity"), {
-    live: M,
-    recent: U,
-    stream: L
+    live: L,
+    recent: M,
+    stream: U
   } = (0, p.Z)(t.id), {
-    voiceChannel: G,
-    voiceActivity: F
-  } = (0, b.Z)({
+    voiceChannel: F,
+    voiceActivity: G
+  } = (0, m.Z)({
     userId: t.id,
     guildId: N
   }), B = (0, i.e7)([s.Z], () => s.Z.isFetchingUserOutbox(t.id)), W = t.id === n.id, z = (0, i.e7)([f.Z, d.Z], () => {
     let e = W ? f.Z.getStatus() : d.Z.getStatus(t.id);
     return e === l.Skl.OFFLINE || e === l.Skl.INVISIBLE
-  }), H = M.length > 0 || null != L, Y = Z && null == L && null == F && null != G, q = !z && (H || Y), V = U.length > 0, K = M.some(e => (0, a.Z)(e));
+  }), H = L.length > 0 || null != U, Y = D && null == U && null == G && null != F, q = !z && (H || Y), V = M.length > 0, K = L.some(e => (0, a.Z)(e));
   if (!q && !V && B) return (0, r.jsx)("div", {
-    className: A.cards,
+    className: E.cards,
     children: Array.from({
       length: 8
     }).map((e, t) => (0, r.jsxs)("div", {
-      className: A.loadingItem,
+      className: E.loadingItem,
       children: [(0, r.jsx)(u.ZT, {
         width: 60,
         opacity: .08
@@ -78,60 +78,60 @@ function E(e) {
   if (!q && !V && !B) {
     var J;
     return W ? (0, r.jsx)(x.Uf, {
-      onClose: D
+      onClose: Z
     }) : (0, r.jsx)(x.P9, {
       user: t,
-      guildId: null != (J = null == E ? true : E.guildId) ? J : N,
+      guildId: null != (J = null == A ? true : A.guildId) ? J : N,
       channelId: k,
-      onClose: D
+      onClose: Z
     })
   }
   return (0, r.jsxs)(S.F, {
-    className: A.scroller,
+    className: E.scroller,
     fade: true,
     children: [(() => {
       let e = W && R && !K;
       return q ? (0, r.jsx)(P.Z, {
         heading: C.intl.string(C.t.J6STd3),
         children: (0, r.jsxs)("ul", {
-          className: A.cards,
+          className: E.cards,
           children: [e && (0, r.jsx)("li", {
-            children: (0, r.jsx)(m.Z, {
+            children: (0, r.jsx)(v.Z, {
               variant: "horizontal"
             })
           }), !_ && Y && (0, r.jsx)("li", {
-            children: (0, r.jsx)(j.Z, {
-              user: t,
-              currentUser: n,
-              voiceChannel: G,
-              onClose: D
-            })
-          }), null != L && (0, r.jsx)("li", {
             children: (0, r.jsx)(O.Z, {
               user: t,
               currentUser: n,
-              stream: L,
-              onClose: D
+              voiceChannel: F,
+              onClose: Z
             })
-          }), M.map((e, i) => (0, r.jsx)("li", {
-            children: (0, r.jsx)(v.Z, {
-              user: t,
-              currentUser: n,
-              activity: e,
-              onClose: D
-            })
-          }, "live-".concat(i))), _ && Y && (0, r.jsx)("li", {
+          }), null != U && (0, r.jsx)("li", {
             children: (0, r.jsx)(j.Z, {
               user: t,
               currentUser: n,
-              voiceChannel: G,
-              onClose: D
+              stream: U,
+              onClose: Z
+            })
+          }), L.map((e, i) => (0, r.jsx)("li", {
+            children: (0, r.jsx)(b.Z, {
+              user: t,
+              currentUser: n,
+              activity: e,
+              onClose: Z
+            })
+          }, "live-".concat(i))), _ && Y && (0, r.jsx)("li", {
+            children: (0, r.jsx)(O.Z, {
+              user: t,
+              currentUser: n,
+              voiceChannel: F,
+              onClose: Z
             })
           })]
         })
       }) : e ? (0, r.jsx)(P.Z, {
         heading: C.intl.string(C.t.J6STd3),
-        children: (0, r.jsx)(m.Z, {
+        children: (0, r.jsx)(v.Z, {
           variant: "horizontal"
         })
       }) : null
@@ -145,12 +145,12 @@ function E(e) {
       }) : true,
       scrollIntoView: T === I.Tb.RECENT_ACTIVITY,
       children: (0, r.jsx)("ul", {
-        className: A.cards,
-        children: U.map(e => (0, r.jsx)("li", {
+        className: E.cards,
+        children: M.map(e => (0, r.jsx)("li", {
           children: (0, r.jsx)(y.Z, {
             user: t,
             entry: e,
-            onClose: D
+            onClose: Z
           })
         }, e.id))
       })

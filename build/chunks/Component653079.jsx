@@ -1,4 +1,4 @@
-/** Chunk was on 38549 **/
+/** Chunk was on 1604 **/
 /** chunk id: 653079, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -24,12 +24,12 @@ let b = e => {
     guildId: r,
     selectedNameplate: i
   } = e, b = (0, l.e7)([_.Z], () => _.Z.getPendingGlobalName()), {
-    product: f,
-    purchase: g
-  } = (0, c.Z)(null == i ? true : i.skuId), y = (0, p.kd)(f), x = m.ZP.canUseCollectibles(t), C = (0, s.qS)(g), w = (0, s.G1)(f), P = !x && C, I = null == g || P;
+    product: g,
+    purchase: f
+  } = (0, c.Z)(null == i ? true : i.skuId), x = (0, p.kd)(g), y = m.ZP.canUseCollectibles(t), C = (0, s.qS)(f), w = (0, s.G1)(g), P = !y && C, O = null == f || P;
   return (0, n.jsxs)("div", {
     className: a()(v.previewBorder, {
-      [v.upsell]: null != i && I
+      [v.upsell]: null != i && O
     }),
     children: [(0, n.jsx)("div", {
       className: v.previewBox,
@@ -59,10 +59,10 @@ let b = e => {
       className: v.previewDescription,
       children: [(0, n.jsx)(o.Text, {
         variant: "text-sm/semibold",
-        children: y
-      }), I && (0, n.jsx)(o.Text, {
+        children: x
+      }), O && (0, n.jsx)(o.Text, {
         variant: "text-sm/normal",
-        children: P ? h.intl.string(h.t.nD78oa) : w && x ? h.intl.string(h.t.hmyYKy) : w ? h.intl.string(h.t.JY1i0t) : h.intl.string(h.t.fEGjVV)
+        children: P ? h.intl.string(h.t.nD78oa) : w && y ? h.intl.string(h.t.hmyYKy) : w ? h.intl.string(h.t.JY1i0t) : h.intl.string(h.t.fEGjVV)
       })]
     })]
   })

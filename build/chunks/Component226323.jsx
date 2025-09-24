@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk720711 = require("./720711.js");
 
-function S(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -145,7 +145,7 @@ function j(e) {
       let {
         default: e
       } = await Promise.all([n.e("79695"), n.e("98783"), n.e("8982"), n.e("7717"), n.e("52021")]).then(n.bind(n, 757387));
-      return t => (0, r.jsx)(e, T(S({}, t), {
+      return t => (0, r.jsx)(e, T(C({}, t), {
         user: j,
         guildId: k,
         channel: O,
@@ -158,7 +158,7 @@ function j(e) {
       let {
         default: e
       } = await Promise.all([n.e("79695"), n.e("69220")]).then(n.bind(n, 881351));
-      return t => (0, r.jsx)(e, T(S({}, t), {
+      return t => (0, r.jsx)(e, T(C({}, t), {
         user: j,
         showMediaItems: true,
         onInteraction: (0, m.u)("UserGenericContextMenu", f.Z.RTC_PANEL, {
@@ -176,27 +176,27 @@ function j(e) {
     clickTrap: true,
     children: e => (0, r.jsx)(s.ua7, {
       text: H,
-      children: t => (0, r.jsx)(s.P3F, T(S({}, t, e), {
+      children: t => (0, r.jsx)(s.P3F, T(C({}, t, e), {
         innerRef: d,
         onClick: t => {
           e.onClick(t), (0, g.v)(p, g.d.VOICE_USER)
         },
-        className: C.avatarContainer,
+        className: S.avatarContainer,
         onContextMenu: F,
         focusProps: N,
         children: (0, r.jsx)(b.Z, {
           shakeLocation: v.oZ.VOICE_USER,
           isShaking: D,
           children: (0, r.jsx)("div", {
-            className: a()(C.avatar, {
-              [C.speaking]: D
+            className: a()(S.avatar, {
+              [S.speaking]: D
             }),
             style: {
               backgroundImage: "url(".concat(M, ")")
             },
             children: null != G ? (0, r.jsx)(G, {
-              className: a()(C.avatarIconOverlay, {
-                [C.avatarIconRed]: B
+              className: a()(S.avatarIconOverlay, {
+                [S.avatarIconRed]: B
               }),
               color: "currentColor",
               size: "xs"
@@ -249,11 +249,11 @@ function x(e) {
     focusProps: N
   }), y = b && c ? t : m;
   return y.length <= 0 ? null : (0, r.jsx)(s.zJl, {
-    className: a()(C.scroller, l),
+    className: a()(S.scroller, l),
     fade: true,
     children: (0, r.jsxs)("div", {
       ref: h,
-      className: a()(C.voiceUsers, !c && C.collapsed),
+      className: a()(S.voiceUsers, !c && S.collapsed),
       role: "group",
       "aria-label": I.intl.string(I.t["/ZgaVV"]),
       children: [y.map(e => {

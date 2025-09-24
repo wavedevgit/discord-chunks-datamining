@@ -1,4 +1,4 @@
-/** Chunk was on 37690 **/
+/** Chunk was on 73696 **/
 /** chunk id: 403239, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   q: () => d
@@ -51,7 +51,7 @@ function d(e) {
   }, [h]);
   let [{
     dragSourcePosition: x
-  }, P] = (0, a.L)({
+  }, _] = (0, a.L)({
     accept: "WIDGET",
     canDrop: () => !p,
     collect: e => {
@@ -85,7 +85,7 @@ function d(e) {
   return null == g || p ? {
     isDragging: false,
     dragSourcePosition: null
-  } : (v(n), P(t), {
+  } : (v(n), _(t), {
     isDragging: O && (null == y ? true : y.widgetType) === f.type,
     dragSourcePosition: x
   })

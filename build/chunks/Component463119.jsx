@@ -127,11 +127,11 @@ let w = e => {
           analyticsLocations: E
         })
       }, [_, E, o, v, c]),
-      C = T.Z5c.COLLECTIBLES_SHOP;
+      S = T.Z5c.COLLECTIBLES_SHOP;
     return (0, r.jsxs)(r.Fragment, {
       children: [y && (0, r.jsx)(L, {}), (0, r.jsx)(u.Qj, A(x({
         selected: t,
-        route: C,
+        route: S,
         icon: null != a ? a : s.EOn,
         text: P.intl.string(P.t.pWG4zc),
         locationState: n
@@ -182,8 +182,8 @@ let w = e => {
     var l, c, u, f, h, g, m, b, O, E, y, v, {
         displayOptions: I
       } = e,
-      C = Z(e, ["displayOptions"]);
-    let S = (0, a.e7)([p.Z], () => p.Z.useReducedMotion),
+      S = Z(e, ["displayOptions"]);
+    let C = (0, a.e7)([p.Z], () => p.Z.useReducedMotion),
       [T, N] = i.useState(0),
       [L, D] = i.useState(false),
       M = (0, d.ZP)(),
@@ -200,7 +200,7 @@ let w = e => {
       text: (0, r.jsx)(k, {
         displayOptions: I,
         assetId: I.assetIds[T],
-        reducedMotion: S
+        reducedMotion: C
       }),
       tooltipClassName: j.marketingBadgeTooltip,
       position: "right",
@@ -210,7 +210,7 @@ let w = e => {
       "aria-label": "string" == typeof V ? V : P.intl.string(P.t.rSXaxc),
       children: e => (0, r.jsxs)(R, A(x(A(x({
         className: null != I.entryPointClassName ? (0, _.l)(j, I.entryPointClassName) : true
-      }, C), {
+      }, S), {
         icon: I.entryPointIcon
       }), e), {
         onMouseEnter: () => G(e.onMouseEnter),
@@ -316,17 +316,17 @@ let w = e => {
       listItemRef: l
     };
     if (null != a) switch (a.type) {
-      case C.k2.TOOLTIP:
+      case S.k2.TOOLTIP:
         return (0, r.jsx)(U, A(x({}, s), {
           displayOptions: a
         }));
-      case C.k2.COACHTIP:
+      case S.k2.COACHTIP:
         return (0, r.jsx)(M, A(x({}, s), {
           displayOptions: a
         }));
-      case C.k2.BADGE:
+      case S.k2.BADGE:
         return (0, r.jsx)(D, x({}, s));
-      case C.k2.COACHMARK:
+      case S.k2.COACHMARK:
         return (0, r.jsx)(G, A(x({
           dismissContent: o
         }, s), {

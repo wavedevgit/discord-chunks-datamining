@@ -1,4 +1,4 @@
-/** Chunk was on 37690 **/
+/** Chunk was on 73696 **/
 /** chunk id: 860717, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => Z
@@ -54,7 +54,7 @@ function x(e, t) {
   }), e
 }
 
-function P(e) {
+function _(e) {
   let {
     component: t
   } = e;
@@ -78,17 +78,17 @@ function P(e) {
         }
         return i
       }(t, ["body"]);
-      return (0, r.jsx)(E, x(h({}, i), {
+      return (0, r.jsx)(I, x(h({}, i), {
         body: w(n)
       }));
     case "GRID":
-      return (0, r.jsx)(I, {
+      return (0, r.jsx)(E, {
         children: w(t.children)
       });
     case "FIELD":
       return (0, r.jsx)(S, {
-        value: _(t.value),
-        name: _(t.name)
+        value: P(t.value),
+        name: P(t.name)
       });
     case "TEXT":
       return (0, r.jsx)(T, h({}, t));
@@ -101,17 +101,17 @@ function P(e) {
   }
 }
 
-function _(e, t) {
-  return (0, r.jsx)(P, {
+function P(e, t) {
+  return (0, r.jsx)(_, {
     component: e
   }, t)
 }
 
 function w(e) {
-  return e.map((e, t) => _(e, t))
+  return e.map((e, t) => P(e, t))
 }
 
-function E(e) {
+function I(e) {
   let {
     title: t,
     body: n,
@@ -146,7 +146,7 @@ function E(e) {
   })
 }
 
-function I(e) {
+function E(e) {
   let {
     children: t
   } = e;
@@ -389,7 +389,7 @@ function Z(e) {
       value: e,
       children: (0, r.jsx)(R, {
         widget: l,
-        children: (0, r.jsx)(P, {
+        children: (0, r.jsx)(_, {
           component: O
         })
       })

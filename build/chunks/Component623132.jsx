@@ -1,4 +1,4 @@
-/** Chunk was on 37690 **/
+/** Chunk was on 73696 **/
 /** chunk id: 623132, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => k
@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk932366 = require("./932366.js"),
   Chunk776385 = require("./776385.js");
 
-function E(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,7 +46,7 @@ function E(e) {
   return e
 }
 
-function I(e, t) {
+function E(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -86,9 +86,9 @@ function S(e) {
     sourceUserId: n,
     trackEntryPointImpression: true
   });
-  return null == a ? (0, r.jsx)(s.X6q, I(E({}, o), {
+  return null == a ? (0, r.jsx)(s.X6q, E(I({}, o), {
     children: i
-  })) : (0, r.jsx)(s.X6q, I(E({}, o), {
+  })) : (0, r.jsx)(s.X6q, E(I({}, o), {
     children: (0, r.jsx)(s.P3F, {
       onClick: a,
       className: w.clickableText,
@@ -106,7 +106,7 @@ function T(e) {
   } = e;
   return (0, r.jsx)(s.nn4, {
     id: o,
-    children: P.intl.format(P.t.TM0XDQ, {
+    children: _.intl.format(_.t.TM0XDQ, {
       name: p.ZP.getName(n, i, t)
     })
   })
@@ -160,7 +160,7 @@ function A(e) {
     applicationId: f
   } = e, g = (0, u.Dt)(), p = (0, u.Dt)(), {
     trackUserProfileEditAction: O
-  } = (0, b.KZ)(), [y, j] = i.useState("idle"), [v, h] = i.useState(null != t ? t : ""), x = i.useRef(null), _ = i.useRef(null), E = P.intl.string(P.t.xKSfBQ), I = null != t && "" !== t.trim(), S = i.useCallback(() => {
+  } = (0, b.KZ)(), [y, j] = i.useState("idle"), [v, h] = i.useState(null != t ? t : ""), x = i.useRef(null), P = i.useRef(null), I = _.intl.string(_.t.xKSfBQ), E = null != t && "" !== t.trim(), S = i.useCallback(() => {
     O({
       action: "PRESS_ADD_COMMENTARY",
       widgetEdited: d
@@ -188,11 +188,11 @@ function A(e) {
     children: [(0, r.jsx)(s.nn4, {
       tag: "label",
       htmlFor: g,
-      children: P.intl.string(P.t.JxKXeX)
+      children: _.intl.string(_.t.JxKXeX)
     }), (0, r.jsx)(s.Kx8, {
       id: g,
       value: v,
-      placeholder: E,
+      placeholder: I,
       onChange: A,
       onBlur: N,
       rows: 3,
@@ -203,7 +203,7 @@ function A(e) {
       maxLength: l.rN
     })]
   }) : (0, r.jsxs)("div", {
-    ref: _,
+    ref: P,
     role: "group",
     "aria-labelledby": p,
     onClick: S,
@@ -218,16 +218,16 @@ function A(e) {
       channelId: c,
       id: p
     }), (0, r.jsx)(D, {
-      text: null != t ? t : E,
-      className: a()(w.editableCommentText, !I && w.placeholder)
+      text: null != t ? t : I,
+      className: a()(w.editableCommentText, !E && w.placeholder)
     }), (0, r.jsx)(s.P3F, {
       innerRef: x,
-      "aria-label": P.intl.string(P.t.ppb9MD),
+      "aria-label": _.intl.string(_.t.ppb9MD),
       onClick: e => {
         e.stopPropagation(), S()
       },
       focusProps: {
-        ringTarget: _
+        ringTarget: P
       }
     })]
   })
@@ -242,7 +242,7 @@ function k(e) {
     widgetType: a,
     disableInteraction: l = false
   } = e, {
-    gameName: u = P.intl.string(P.t.GIWFlJ),
+    gameName: u = _.intl.string(_.t.GIWFlJ),
     imageSrc: d,
     applicationId: f,
     comment: p,
@@ -254,7 +254,7 @@ function k(e) {
   return (0, O.kO)(f) ? (0, r.jsx)(j.i, {}) : (0, r.jsxs)("div", {
     className: w.card,
     children: [(0, r.jsx)(y.Z, {
-      className: null == d || l ? true : _.hoverActiveEffect,
+      className: null == d || l ? true : P.hoverActiveEffect,
       imageSrc: d,
       gameName: u,
       applicationId: f,
@@ -263,9 +263,9 @@ function k(e) {
       hideTooltip: true
     }), (0, r.jsxs)("div", {
       className: w.details,
-      children: [l ? (0, r.jsx)(s.X6q, I(E({}, m), {
+      children: [l ? (0, r.jsx)(s.X6q, E(I({}, m), {
         children: u
-      })) : (0, r.jsx)(S, E({
+      })) : (0, r.jsx)(S, I({
         applicationId: f,
         userId: t.id,
         gameName: u

@@ -382,9 +382,9 @@ class eb extends Chunk647438.PureComponent {
       this.handleCloseSubscribeTooltip(), this.handleCloseTemplateDirtyTooltip(), this.handleCloseStudentHubPrivacySettingsTooltip()
     }), ed(this, "handleCloseStudentHubPrivacySettingsTooltip", () => {
       var e;
-      let t = (0, C.zu)(u.z.STUDENT_HUB_PRIVACY_SETTINGS_TOOLTIP),
+      let t = (0, S.zu)(u.z.STUDENT_HUB_PRIVACY_SETTINGS_TOOLTIP),
         n = null == (e = this.props.guild) ? true : e.features.has(el.oNc.HUB);
-      !t && n && (0, C.Q3)(u.z.STUDENT_HUB_PRIVACY_SETTINGS_TOOLTIP, {
+      !t && n && (0, S.Q3)(u.z.STUDENT_HUB_PRIVACY_SETTINGS_TOOLTIP, {
         dismissAction: eo.L.AUTO
       })
     }), ed(this, "handleCloseSubscribeTooltip", () => {
@@ -475,7 +475,7 @@ function e_(e) {
     selectedChannelId: a
   } = e, o = (0, c.e7)([z.Z], () => z.Z.getGuild(n));
   (0, b.J_)(n);
-  let d = (0, S.Z)(n),
+  let d = (0, C.Z)(n),
     p = (0, c.e7)([V.Z], () => V.Z.getGuildDimensions(n).scrollTo),
     h = (0, c.e7)([q.Z], () => q.Z.getChannelId()),
     g = (0, c.e7)([Y.Z], () => Y.Z.can(el.Plq.MANAGE_GUILD, o)),
@@ -497,9 +497,9 @@ function e_(e) {
     isPopoutOpen: eO
   } = (0, T.y)(), eE = null != (t = null == o ? true : o.features.has(el.oNc.COMMUNITY)) && t, ey = X.ZP.isNewUser(x), ev = M && !ey;
   (0, N.Z)(o);
-  let eI = (0, C.Nj)(u.z.PREMIUM_TUTORIAL_SERVER_MENU_TOOLTIP),
-    eC = (0, R.Z)(n),
-    eS = (0, P.Z)(n),
+  let eI = (0, S.Nj)(u.z.PREMIUM_TUTORIAL_SERVER_MENU_TOOLTIP),
+    eS = (0, R.Z)(n),
+    eC = (0, P.Z)(n),
     eT = (0, c.e7)([q.Z], () => q.Z.getChannelId()),
     eN = (0, c.e7)([K.Z], () => K.Z.desyncedVoiceStatesCount),
     eP = (0, k.Z)(n);
@@ -526,8 +526,8 @@ function e_(e) {
     showRoleSubscriptionUpsell: eu,
     showHubPrivacySettingsTooltip: ed,
     showNewUnreadsBar: eE,
-    showMediaChannelUpsell: eC,
-    showTierTemplatesUpsell: eS,
+    showMediaChannelUpsell: eS,
+    showTierTemplatesUpsell: eC,
     isHeaderPopoutOpen: eO,
     enableStudyGroup: w,
     isGuildHeaderDismissibleTooltipShown: et,

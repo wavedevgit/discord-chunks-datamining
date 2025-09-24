@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk188784 = require("./188784.js");
 
-function S(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -64,7 +64,7 @@ let N = [],
       className: n
     } = e;
     return (0, r.jsx)(u.IGR, {
-      className: a()(C.tag, n),
+      className: a()(S.tag, n),
       text: t
     })
   },
@@ -77,23 +77,23 @@ let N = [],
       wideStyle: o
     } = e;
     return (0, r.jsxs)("div", {
-      className: a()(C.featureCard, {
-        [C.wideStyle]: o
+      className: a()(S.featureCard, {
+        [S.wideStyle]: o
       }),
       children: [null != l ? (0, r.jsx)(P, {
         tagText: l,
-        className: C.featureCardTag
+        className: S.featureCardTag
       }) : null, (0, r.jsx)("img", {
         alt: "",
-        className: a()(C.featureCardImg, {
-          [C.wideStyle]: o
+        className: a()(S.featureCardImg, {
+          [S.wideStyle]: o
         }),
         src: i
       }), (0, r.jsxs)("div", {
-        className: C.featureCardTextGroup,
+        className: S.featureCardTextGroup,
         children: [(0, r.jsx)(u.X6q, {
           variant: "heading-md/bold",
-          className: C.featureCardTextHeader,
+          className: S.featureCardTextHeader,
           children: t
         }), (0, r.jsx)(u.Text, {
           variant: "text-md/normal",
@@ -145,7 +145,7 @@ function x(e) {
               type: "text/vtt"
             }),
             i = URL.createObjectURL(r);
-          return T(S({}, e), {
+          return T(C({}, e), {
             src: i
           })
         });
@@ -187,27 +187,27 @@ function x(e) {
     }
   }, [x, k]), (0, r.jsx)(u.Y0X, {
     "data-migration-pending": true,
-    className: a()(C.root, C.largeBorderRadius, t),
+    className: a()(S.root, S.largeBorderRadius, t),
     transitionState: B,
     "aria-labelledby": V,
     parentComponent: "PremiumAnnouncementModalVariant1",
     children: (0, r.jsxs)(s.$, {
       color: "nitro-pink",
       children: [(0, r.jsx)("div", {
-        className: C.closeButtonContainer,
+        className: S.closeButtonContainer,
         children: (0, r.jsx)(c.PZ7, {
           "data-migration-pending": true,
           onClick: async () => await G()
         })
       }), null == A ? true : A(), (0, r.jsxs)(u.hzk, {
         "data-migration-pending": true,
-        className: C.content,
+        className: S.content,
         children: [(0, r.jsx)(u.X6q, {
           variant: "display-md",
-          className: a()(C.headerText, w),
+          className: a()(S.headerText, w),
           children: Z
         }), "video" === l.type ? (0, r.jsx)(g.Z, {
-          className: a()(C.video, P),
+          className: a()(S.video, P),
           autoPlay: !F,
           loop: true,
           muted: true,
@@ -241,7 +241,7 @@ function x(e) {
             }, e.locale)
           })
         }) : "embed" === l.type ? (0, r.jsx)(p.BC, {
-          className: a()(C.video, P),
+          className: a()(S.video, P),
           allowFullScreen: false,
           href: l.href,
           thumbnail: l.thumbnail,
@@ -259,26 +259,26 @@ function x(e) {
           }
         }) : "image" === l.type ? (0, r.jsx)("img", {
           alt: "",
-          className: a()(C.video, P),
+          className: a()(S.video, P),
           src: l.src
         }) : null, (0, r.jsxs)(u.Text, {
           variant: "text-md/normal",
           color: "text-secondary",
-          className: C.subHeader,
+          className: S.subHeader,
           children: [L, null == R ? true : R()]
         }), null != U && "" !== U && (0, r.jsx)(u.X6q, {
           variant: "heading-lg/semibold",
-          className: C.bodyText,
+          className: S.bodyText,
           children: U
         }), D.length > 0 && (0, r.jsx)("div", {
-          className: a()(C.featureCardGroup, {
-            [C.wideStyle]: H
+          className: a()(S.featureCardGroup, {
+            [S.wideStyle]: H
           }),
-          children: D.map((e, t) => (0, r.jsx)(j, T(S({}, e), {
+          children: D.map((e, t) => (0, r.jsx)(j, T(C({}, e), {
             wideStyle: H
           }), "".concat(e.header, "_").concat(t)))
         }), (0, r.jsx)("div", {
-          className: C.buttonContainer,
+          className: S.buttonContainer,
           children: M()
         })]
       })]

@@ -84,7 +84,7 @@ let K = e => {
       el = (0, O.M5)(en, F.p9.TIER_2),
       {
         enabled: ea
-      } = C.b.useConfig({
+      } = S.b.useConfig({
         location: "NitroTabButton"
       }),
       eo = (0, l.JA)("nitro"),
@@ -102,10 +102,10 @@ let K = e => {
       }),
       em = (0, B.V)(),
       eb = (0, Z.eW)(),
-      e_ = S.ZP.useExperiment({
+      e_ = C.ZP.useExperiment({
         location: "NitroTabButton"
       }),
-      eO = (0, V.Kn)() && e_.cohort === S.xI.Control,
+      eO = (0, V.Kn)() && e_.cohort === C.xI.Control,
       eE = ea && null != eu && null != er && er.status === z.O0b.CANCELED,
       {
         fractionalState: ey,
@@ -114,7 +114,7 @@ let K = e => {
       } = (0, d.Z)({
         forceFetch: true
       }),
-      [eC, eS] = (0, g.bf)(ey !== F.a$.NONE ? o.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL : null, {
+      [eS, eC] = (0, g.bf)(ey !== F.a$.NONE ? o.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL : null, {
         showAfterTimestamp: ev.valueOf(),
         cooldownDurationMs: 0
       }),
@@ -135,7 +135,7 @@ let K = e => {
         selected: X
       })) return null;
     let eR = () => {
-      eC === o.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL && eS(W.L.TAKE_ACTION), _.default.track(z.rMx.NITRO_TAB_VISITED, {
+      eS === o.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL && eC(W.L.TAKE_ACTION), _.default.track(z.rMx.NITRO_TAB_VISITED, {
         badge_decorator: E,
         has_premium: ei
       }), null != eA && eZ(W.L.USER_DISMISS)
@@ -180,7 +180,7 @@ let K = e => {
       trialOffer: es,
       isTabSelected: X
     }), E = 4);
-    eb && e_.cohort !== S.xI.Control && (n = (0, r.jsx)(D._y, {
+    eb && e_.cohort !== C.xI.Control && (n = (0, r.jsx)(D._y, {
       isTabSelected: X,
       badgeCopy: Y.intl.string(Y.t.RDE0SU),
       offerExpiresAt: null
@@ -228,7 +228,7 @@ let K = e => {
     })(Object(Q)).forEach(function(e) {
       Object.defineProperty(q, e, Object.getOwnPropertyDescriptor(Q, e))
     }), q));
-    return eb && e_.cohort === S.xI.Static ? (0, r.jsx)(w.X, {
+    return eb && e_.cohort === C.xI.Static ? (0, r.jsx)(w.X, {
       children: eD
     }) : eO ? (0, r.jsx)(k.C, {
       children: eD

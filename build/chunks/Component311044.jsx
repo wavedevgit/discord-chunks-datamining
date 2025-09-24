@@ -1,7 +1,7 @@
 /** Chunk was on 49902 **/
 /** chunk id: 311044, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => m
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,26 +17,26 @@ var Chunk951288 = require("./951288.js"),
   Chunk661462 = require("./661462.jsx"),
   Chunk443680 = require("./443680.js");
 
-function b(e) {
+function m(e) {
   let {
     user: t,
     guildId: n,
-    channelId: b,
-    onClose: m
+    channelId: m,
+    onClose: v
   } = e, {
-    analyticsLocations: v
+    analyticsLocations: b
   } = (0, a.ZP)(), {
     context: y,
-    trackUserProfileAction: O
+    trackUserProfileAction: j
   } = (0, s.KZ)(), {
-    mutualFriends: j,
+    mutualFriends: O,
     mutualFriendsCount: x
   } = (0, c.Z)(t), P = (0, l.Z)();
   return i.useEffect(() => {
     (0, u.Z)(t.id, P)
   }, [t.id, P]), (0, r.jsx)(h.F, {
     className: p.scroller,
-    children: null == j ? Array.from({
+    children: null == O ? Array.from({
       length: null != x ? x : 10
     }).map((e, t) => (0, r.jsxs)("div", {
       className: p.friendsLoadingItem,
@@ -47,7 +47,7 @@ function b(e) {
         width: 135,
         opacity: .08
       })]
-    }, t)) : 0 === j.length ? (0, r.jsx)(g.s_, {}) : j.map(e => {
+    }, t)) : 0 === O.length ? (0, r.jsx)(g.s_, {}) : O.map(e => {
       let {
         key: t,
         user: i,
@@ -57,10 +57,10 @@ function b(e) {
         user: i,
         status: l,
         guildId: n,
-        channelId: b,
+        channelId: m,
         onSelect: () => {
           var e, t;
-          null == m || m(), O({
+          null == v || v(), j({
             action: "PRESS_MUTUAL_FRIEND"
           }), (0, d.openUserProfileModal)((e = function(e) {
             for (var t = 1; t < arguments.length; t++) {
@@ -81,7 +81,7 @@ function b(e) {
             return e
           }({}, y), t = t = {
             userId: i.id,
-            sourceAnalyticsLocations: v
+            sourceAnalyticsLocations: b
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {

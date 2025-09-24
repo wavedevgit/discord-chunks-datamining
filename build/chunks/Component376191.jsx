@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 376191, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => C
+  Z: () => S
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -51,13 +51,13 @@ let v = e => {
   },
   I = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk481060.qEK;
 
-function C(e) {
+function S(e) {
   var t;
   let {
     channel: n,
     otherUser: c,
     active: f
-  } = e, m = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), _ = (0, i.e7)([h.Z], () => null == c ? null : h.Z.getNickname(c.id)), C = !m && f, S = (0, b.c)(n), {
+  } = e, m = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), _ = (0, i.e7)([h.Z], () => null == c ? null : h.Z.getNickname(c.id)), S = !m && f, C = (0, b.c)(n), {
     avatarDecorationSrc: T
   } = (0, d.Z)({
     user: c,
@@ -67,7 +67,7 @@ function C(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(I, {
       className: y.avatar,
-      src: (0, p.x)(n, 40, C),
+      src: (0, p.x)(n, 40, S),
       avatarDecoration: T,
       size: l.EFr.SIZE_40,
       "aria-label": null != (t = null == c ? true : c.username) ? t : E.intl.string(E.t["30mdIy"])
@@ -86,7 +86,7 @@ function C(e) {
           className: y.timestampWithPreview,
           color: "text-muted",
           variant: "text-xs/normal",
-          children: S
+          children: C
         })]
       }), (0, r.jsx)(s.Z, {
         hoverText: (0, r.jsx)(O.Z, {

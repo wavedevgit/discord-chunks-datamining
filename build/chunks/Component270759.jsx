@@ -132,7 +132,7 @@ let Z = function(e) {
       className: x.nowPlayingColumn,
       children: (0, r.jsx)(_.Z, {})
     });
-  return w === N.pJs.ADD_FRIEND ? V = (0, r.jsx)(C.Z, {}) : w === N.pJs.YOU ? B ? V = (0, r.jsx)(T.Z, {}) : (V = (0, r.jsx)(c.Ttm, {
+  return w === N.pJs.ADD_FRIEND ? V = (0, r.jsx)(S.Z, {}) : w === N.pJs.YOU ? B ? V = (0, r.jsx)(T.Z, {}) : (V = (0, r.jsx)(c.Ttm, {
     className: x.nowPlayingFullWidth,
     children: (0, r.jsx)("div", {
       style: {
@@ -140,7 +140,7 @@ let Z = function(e) {
       },
       children: (0, r.jsx)(_.Z, {})
     })
-  }), H = null) : V = (0, r.jsx)(S.Z, {
+  }), H = null) : V = (0, r.jsx)(C.Z, {
     titleId: U
   }), (0, r.jsxs)("main", {
     className: x.container,

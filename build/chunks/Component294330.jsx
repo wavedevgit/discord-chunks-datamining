@@ -92,9 +92,9 @@ function N(e) {
     if (R) return T;
     switch (L) {
       case y.BRd.DARK:
-        return C;
+        return S;
       case y.BRd.LIGHT:
-        return S
+        return C
     }
   }, [t.discoverySplash, t.id, R, L]), k = i.useMemo(() => _.ZP.getGuildIconURL({
     id: t.id,

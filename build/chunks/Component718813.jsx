@@ -32,7 +32,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function C(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -45,7 +45,7 @@ function C(e) {
   return e
 }
 
-function S(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -136,9 +136,9 @@ class D extends(r = Chunk647438.PureComponent) {
       opacity: t,
       scale: n
     } = this.state;
-    s.Z.parallel([s.Z.spring(t, C({
+    s.Z.parallel([s.Z.spring(t, S({
       toValue: 1
-    }, L)), s.Z.spring(n, C({
+    }, L)), s.Z.spring(n, S({
       toValue: 1
     }, L))]).start(() => this.animateComplete(e))
   }
@@ -148,9 +148,9 @@ class D extends(r = Chunk647438.PureComponent) {
       opacity: t,
       scale: n
     } = this.state;
-    O.S.dispatch(E.CkL.LAYER_POP_START), s.Z.parallel([s.Z.spring(t, C({
+    O.S.dispatch(E.CkL.LAYER_POP_START), s.Z.parallel([s.Z.spring(t, S({
       toValue: 0
-    }, L)), s.Z.spring(n, C({
+    }, L)), s.Z.spring(n, S({
       toValue: 1.1
     }, L))]).start(() => {
       e(), O.S.dispatch(E.CkL.LAYER_POP_COMPLETE)
@@ -162,9 +162,9 @@ class D extends(r = Chunk647438.PureComponent) {
       opacity: e,
       scale: t
     } = this.state;
-    Chunk748780.Z.parallel([Chunk748780.Z.spring(module, C({
+    Chunk748780.Z.parallel([Chunk748780.Z.spring(module, S({
       toValue: 0
-    }, L)), Chunk748780.Z.spring(exports, C({
+    }, L)), Chunk748780.Z.spring(exports, S({
       toValue: .93
     }, L))]).start(() => this.animateComplete())
   }
@@ -195,7 +195,7 @@ class D extends(r = Chunk647438.PureComponent) {
         for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
       }
       return i
-    }(exports, ["name", "mode", "children", "baseLayer"]), u = r === w, p = module || Chunk215569 ? this.getAnimatedStyle() : null, f = !Chunk215569 && !Chunk120356, h = (0, Chunk951288.jsx)(Chunk748780.Z.div, S(C({
+    }(exports, ["name", "mode", "children", "baseLayer"]), u = r === w, p = module || Chunk215569 ? this.getAnimatedStyle() : null, f = !Chunk215569 && !Chunk120356, h = (0, Chunk951288.jsx)(Chunk748780.Z.div, C(S({
       ref: e => this.containerRef.current = null != e ? e.componentRef : true,
       "data-layer": null != require ? require : "base",
       "aria-hidden": Chunk215569,
@@ -314,7 +314,7 @@ function M(e) {
   let t = (0, b.Ll)(),
     n = (0, c.e7)([_.Z], () => _.Z.getLayers()),
     r = (0, m.QP)(e => e.fullScreenLayers.length > 0);
-  return (0, i.jsx)(k, S(C({}, e), {
+  return (0, i.jsx)(k, C(S({}, e), {
     sidebarTheme: t,
     layers: n,
     hasFullScreenLayer: r

@@ -1,6 +1,5 @@
-/** Chunk was on 38549 **/
-/** chunk id: 239051, original params: e,t,r (module,exports,require) **/
-"use strict";
+/** Chunk was on 11222 **/
+/** chunk id: 239051, original params: e,t,n (module,exports,require) **/
 module.exports = {
   container: "container__8a8e7",
   discount: "discount__8a8e7",

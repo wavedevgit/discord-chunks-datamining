@@ -1,7 +1,7 @@
-/** Chunk was on 93886 **/
-/** chunk id: 277511, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 18539 **/
+/** chunk id: 277511, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => c
+  Z: () => l
 });
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
@@ -9,7 +9,7 @@ var Chunk544891 = require("./544891.js"),
   Chunk960048 = require("./960048.js"),
   Chunk22494 = require("./22494.js"),
   Chunk981631 = require("./981631.js");
-let c = {
+let l = {
   async fetchWishlist(e) {
     i.Z.dispatch({
       type: "WISHLIST_FETCH_START",
@@ -17,12 +17,12 @@ let c = {
     });
     try {
       var t;
-      let n = await r.tn.get({
-        url: s.ANM.USER_WISHLIST(e),
+      let r = await n.tn.get({
+        url: c.ANM.USER_WISHLIST(e),
         rejectWithError: true
       });
-      (null == (t = n.body) ? true : t.wishlist_items) == null && l.Z.captureMessage("Wishlist items not found in response");
-      let o = a.Z.fromServer(n.body);
+      (null == (t = r.body) ? true : t.wishlist_items) == null && s.Z.captureMessage("Wishlist items not found in response");
+      let o = u.Z.fromServer(r.body);
       i.Z.dispatch({
         type: "WISHLIST_FETCH_SUCCESS",
         wishlistId: e,
@@ -33,7 +33,7 @@ let c = {
         type: "WISHLIST_FETCH_FAILURE",
         wishlistId: e,
         error: new o.Hx(t)
-      }), l.Z.captureException(t)
+      }), s.Z.captureException(t)
     }
   },
   addSkuToWishlist(e, t) {

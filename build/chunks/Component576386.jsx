@@ -1,4 +1,4 @@
-/** Chunk was on 38549 **/
+/** Chunk was on 1604 **/
 /** chunk id: 576386, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -26,9 +26,9 @@ let v = e => {
       canUsePremiumCollectibles: p,
       isSelected: v,
       onClick: b
-    } = e, f = (0, i.useRef)(null), g = (0, s.Z)(f);
+    } = e, g = (0, i.useRef)(null), f = (0, s.Z)(g);
     return (0, n.jsxs)(o.P3F, {
-      innerRef: f,
+      innerRef: g,
       "aria-label": null != (t = a.label) ? t : m.intl.string(m.t.x5CoXV),
       className: h.nameplateItem,
       onClick: b,
@@ -36,7 +36,7 @@ let v = e => {
         nameplate: a,
         user: r,
         showPlaceholderUser: true,
-        isHighlighted: g
+        isHighlighted: f
       }), (0, n.jsx)("div", {
         className: l()(h.nameplateItemOverlay, {
           [h.selected]: v

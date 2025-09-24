@@ -1,4 +1,4 @@
-/** Chunk was on 37690 **/
+/** Chunk was on 73696 **/
 /** chunk id: 190862, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => v
@@ -91,18 +91,18 @@ let j = e => {
       v = (0, o.e7)([a.default], () => a.default.getId() === n.id),
       h = v && !i && g,
       x = (0, l.mR)(f),
-      P = (0, l.Hy)(f, {
+      _ = (0, l.Hy)(f, {
         isCurrentUser: v
       }),
-      _ = (0, l.kQ)(f);
+      P = (0, l.kQ)(f);
     return (0, r.jsx)(j, O({
       widget: f,
       user: n,
       disableInteraction: i,
       headerTitle: x,
-      headerSubtitle: P,
+      headerSubtitle: _,
       headerActionButtons: v ? [(0, r.jsx)(u.Z, {
-        disabled: _,
+        disabled: P,
         widgetType: f.type,
         widget: f
       }, "".concat(f.type, "-browse-games-popout"))] : true,

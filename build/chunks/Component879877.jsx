@@ -1,4 +1,4 @@
-/** Chunk was on 37690 **/
+/** Chunk was on 73696 **/
 /** chunk id: 879877, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -27,16 +27,16 @@ function O(e) {
     applicationId: s,
     className: u,
     disableInteraction: O = false
-  } = e, x = null != (t = null == n ? true : n.filter(e => null != (0, p.zK)(e))) ? t : [], P = x.length > 0, _ = l.qH, w = o && !O && (0, f.M8)(c) && x.length < _, {
-    trackUserProfileAction: E
-  } = (0, d.KZ)(), I = (0, i.useRef)(new Map), S = (0, i.useRef)(null), T = (0, i.useRef)(null), [D, N] = (0, i.useState)(0), [A, k] = (0, i.useState)(false), C = h(S, T, x, I, N);
+  } = e, x = null != (t = null == n ? true : n.filter(e => null != (0, p.zK)(e))) ? t : [], _ = x.length > 0, P = l.qH, w = o && !O && (0, f.M8)(c) && x.length < P, {
+    trackUserProfileAction: I
+  } = (0, d.KZ)(), E = (0, i.useRef)(new Map), S = (0, i.useRef)(null), T = (0, i.useRef)(null), [D, N] = (0, i.useState)(0), [A, k] = (0, i.useState)(false), C = h(S, T, x, E, N);
   if ((0, i.useEffect)(() => (C(), window.addEventListener("resize", C), () => {
       window.removeEventListener("resize", C)
-    }), [C, null == x ? true : x.join("")]), !P && !w) return null;
+    }), [C, null == x ? true : x.join("")]), !_ && !w) return null;
   let R = A ? x : x.slice(0, x.length - D);
   return (0, r.jsxs)("div", {
     className: a()(m.tagListContainer, u),
-    children: [P && (0, r.jsxs)(r.Fragment, {
+    children: [_ && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("ul", {
         className: m.tagList,
         "aria-label": b.intl.string(b.t.EfjTi4),
@@ -46,20 +46,20 @@ function O(e) {
           applicationId: s,
           widgetType: c,
           ref: t => {
-            null != t && I.current.set(e, t)
+            null != t && E.current.set(e, t)
           },
           disableInteraction: O
         }, e))
       }), D > 0 && (A ? (0, r.jsx)(v, {
         onClick: () => {
-          k(false), E({
+          k(false), I({
             action: "COLLAPSE_GAME_TAGS"
           })
         }
       }) : (0, r.jsx)(j, {
         numHidden: D,
         onClick: () => {
-          k(true), E({
+          k(true), I({
             action: "EXPAND_GAME_TAGS"
           })
         },

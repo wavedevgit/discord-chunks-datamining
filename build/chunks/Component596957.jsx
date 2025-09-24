@@ -133,7 +133,7 @@ let R = function(e) {
           isFocused: R
         }), t);
       case T.pJs.SUGGESTIONS:
-        return (0, r.jsx)(C.Z, x(j({}, n), {
+        return (0, r.jsx)(S.Z, x(j({}, n), {
           isFocused: R
         }), t);
       case T.pJs.ONLINE:
@@ -173,7 +173,7 @@ let R = function(e) {
       }
     }, [F, Z]),
     K = i.useMemo(() => F.filter(e => e.type === T.OGo.PENDING_INCOMING).length, [F]),
-    q = Z === T.pJs.PENDING && K > 0 && K >= S.yf,
+    q = Z === T.pJs.PENDING && K > 0 && K >= C.yf,
     Q = i.useCallback(e => {
       e.stopPropagation(), c.Z.confirmClearPendingRelationships(K)
     }, [K]),
@@ -248,7 +248,7 @@ let R = function(e) {
         renderRow: G,
         renderSection: X,
         sectionFilter: Z,
-        isVirtualizedList: D >= S.nG,
+        isVirtualizedList: D >= C.nG,
         hasSearchQuery: J,
         footer: H && !$ ? (0, r.jsx)(a.zx, {
           look: a.zx.Looks.LINK,

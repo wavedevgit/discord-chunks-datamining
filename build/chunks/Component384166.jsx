@@ -1,7 +1,7 @@
 /** Chunk was on 49902 **/
 /** chunk id: 384166, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => O
 }), require("./388685.js"), require("./361932.js"), require("./187205.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,15 +22,15 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk461671 = require("./461671.js");
 
-function j(e) {
+function O(e) {
   let {
     className: t
   } = e, {
     trackUserProfileEditSaved: n
-  } = (0, f.KZ)(), [l, j] = i.useState(false), x = (0, s.Wu)([p.Z], () => {
+  } = (0, f.KZ)(), [l, O] = i.useState(false), x = (0, s.Wu)([p.Z], () => {
     var e;
     return null != (e = p.Z.getSaveablePendingWidgets()) ? e : []
-  }), P = (0, s.Wu)([p.Z], () => p.Z.getChangedWidgets()), S = (0, s.Wu)([p.Z], () => p.Z.getRemovedWidgets()), I = (0, s.e7)([p.Z], () => p.Z.hasSaveablePendingChanges()), w = (0, s.e7)([p.Z], () => p.Z.isSubmitting), C = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), A = (0, c.Yzy)(I, {
+  }), P = (0, s.Wu)([p.Z], () => p.Z.getChangedWidgets()), S = (0, s.Wu)([p.Z], () => p.Z.getRemovedWidgets()), I = (0, s.e7)([p.Z], () => p.Z.hasSaveablePendingChanges()), w = (0, s.e7)([p.Z], () => p.Z.isSubmitting), C = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), E = (0, c.Yzy)(I, {
     from: {
       opacity: 0,
       y: 80 * !C
@@ -48,19 +48,19 @@ function j(e) {
     let e = null;
 
     function t() {
-      j(true), e = setTimeout(() => j(false), 500)
+      O(true), e = setTimeout(() => O(false), 500)
     }
-    return d.S.subscribe(v.CkL.EMPHASIZE_NOTICE, t), () => {
-      d.S.unsubscribe(v.CkL.EMPHASIZE_NOTICE, t), null !== e && clearTimeout(e)
+    return d.S.subscribe(b.CkL.EMPHASIZE_NOTICE, t), () => {
+      d.S.unsubscribe(b.CkL.EMPHASIZE_NOTICE, t), null !== e && clearTimeout(e)
     }
   }, []), i.useEffect(() => {
     I && c.uvj.announce(y.intl.string(y.t["0Y/qkJ"]))
   }, [I]);
-  let E = i.useCallback(async () => {
+  let A = i.useCallback(async () => {
       try {
         await h.Z.savePendingWidgets(x)
       } catch (e) {
-        (0, b.L$)(m.qb.WIDGET_SAVE_FAILURE);
+        (0, m.L$)(v.qb.WIDGET_SAVE_FAILURE);
         return
       }
       for (let e of P) {
@@ -84,21 +84,21 @@ function j(e) {
     N = i.useCallback(() => {
       h.Z.clearPendingWidgets()
     }, []);
-  return A((e, n) => n ? (0, r.jsx)(o.animated.div, {
+  return E((e, n) => n ? (0, r.jsx)(o.animated.div, {
     className: t,
     style: e,
     children: (0, r.jsxs)("section", {
-      className: a()(O.content, {
-        [O.emphasized]: l
+      className: a()(j.content, {
+        [j.emphasized]: l
       }),
       "aria-label": y.intl.string(y.t["odDw+/"]),
       children: [(0, r.jsx)(c.Text, {
         variant: "text-md/medium",
         color: "text-primary",
-        className: O.message,
+        className: j.message,
         children: y.intl.string(y.t["/lQiX1"])
       }), (0, r.jsxs)("div", {
-        className: O.actions,
+        className: j.actions,
         children: [(0, r.jsx)(c.zxk, {
           size: "sm",
           variant: "secondary",
@@ -109,7 +109,7 @@ function j(e) {
           size: "sm",
           variant: "primary",
           text: y.intl.string(y.t.R3BPHx),
-          onClick: E,
+          onClick: A,
           loading: w,
           disabled: !I || w
         })]

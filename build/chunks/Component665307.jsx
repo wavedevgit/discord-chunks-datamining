@@ -174,7 +174,7 @@ let L = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
             }),
             libraryApplication: e.libraryApplication
           })]
-        }), (0, S.Je)(e.libraryApplication) ? (0, i.jsx)(b.Z, {
+        }), (0, C.Je)(e.libraryApplication) ? (0, i.jsx)(b.Z, {
           analyticsListSort: (r = t.sortKey, a = t.sortDirection, "".concat(D[r], " ").concat(a === P.sHY.ASCENDING ? "ASC" : "DESC")),
           analyticsListIndex: n,
           source: P.Sbl.APPLICATION_LIBRARY,
@@ -427,7 +427,7 @@ class G extends(r = Chunk647438.PureComponent) {
 }
 
 function B(e) {
-  let t = l.useContext(C.AnalyticsContext),
+  let t = l.useContext(S.AnalyticsContext),
     n = (0, s.TH)(),
     {
       applicationViewItems: r,

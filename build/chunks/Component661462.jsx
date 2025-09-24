@@ -1,8 +1,8 @@
 /** Chunk was on 49902 **/
 /** chunk id: 661462, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  F: () => v,
-  Z: () => O
+  F: () => b,
+  Z: () => j
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk228168 = require("./228168.js"),
   Chunk883101 = require("./883101.js");
 
-function b(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,7 +37,7 @@ function b(e) {
   return e
 }
 
-function m(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -50,7 +50,7 @@ function m(e, t) {
   }), e
 }
 
-function v(e) {
+function b(e) {
   var {
     children: t,
     className: n,
@@ -70,7 +70,7 @@ function v(e) {
     }
     return i
   }(e, ["children", "className", "scrollerRef"]);
-  return (0, r.jsx)(o.Ttm, m(b({
+  return (0, r.jsx)(o.Ttm, v(m({
     ref: i,
     className: a()(p.tabPanelScroller, n),
     fade: true
@@ -113,7 +113,7 @@ function y(e) {
   }) : i === h.oh.WISHLIST ? (0, r.jsx)(g.Z, {}) : null
 }
 
-function O(e) {
+function j(e) {
   var t;
   let {
     user: n,
@@ -126,12 +126,12 @@ function O(e) {
     initialSubsection: g,
     onClose: h
   } = e, {
-    trackUserProfileAction: v
+    trackUserProfileAction: b
   } = (0, s.KZ)(), [{
-    section: O,
-    subsection: j,
+    section: j,
+    subsection: O,
     text: x
-  }, P] = i.useState(m(b({}, null != (t = d.find(e => {
+  }, P] = i.useState(v(m({}, null != (t = d.find(e => {
     let {
       section: t
     } = e;
@@ -149,9 +149,9 @@ function O(e) {
       children: (0, r.jsx)(o.njP, {
         type: "top",
         look: "custom",
-        selectedItem: O,
+        selectedItem: j,
         onItemSelect: e => {
-          v({
+          b({
             action: "PRESS_SECTION",
             section: e
           }), P(t => {
@@ -167,7 +167,7 @@ function O(e) {
         }, e.section))
       })
     }), (0, r.jsx)(o.njP.Panel, {
-      id: O,
+      id: j,
       "aria-label": x,
       className: p.tabBarPanel,
       children: (0, r.jsx)(y, {
@@ -176,8 +176,8 @@ function O(e) {
         displayProfile: a,
         guildId: c,
         channelId: u,
-        section: O,
-        subsection: j,
+        section: j,
+        subsection: O,
         onClose: h
       })
     })]

@@ -30,8 +30,8 @@ function E(e) {
   } = e, y = (0, b.L)(), {
     voiceChannels: v,
     currentActivities: I,
-    partiedMembers: C,
-    applicationStreams: S,
+    partiedMembers: S,
+    applicationStreams: C,
     guildContext: T
   } = t, N = [], P = e => {
     let {
@@ -70,7 +70,7 @@ function E(e) {
         P(t);
         break
       }
-    } return S.length > 0 && y && S.forEach(e => {
+    } return C.length > 0 && y && C.forEach(e => {
     let {
       stream: t,
       streamUser: n,
@@ -86,7 +86,7 @@ function E(e) {
       }
     }, "application-stream-".concat(t.ownerId)))
   }), I.forEach((e, t) => {
-    var n, i, l, g, b, y, S, N, j;
+    var n, i, l, g, b, y, C, N, j;
     let {
       activity: x,
       game: A,
@@ -130,7 +130,7 @@ function E(e) {
       }, "streaming-".concat(null != (b = x.session_id) ? b : t)))
     } else(0, s.Z)(x) ? P((0, r.jsx)(m.Z.SpotifySection, {
       activity: x,
-      isSolo: 1 === C.length,
+      isSolo: 1 === S.length,
       partySize: {
         knownSize: Z.length,
         unknownSize: 0,
@@ -142,7 +142,7 @@ function E(e) {
       activity: x,
       getAssetImage: h.xF,
       user: w
-    }, "rich-presence-".concat(null != (S = x.session_id) ? S : t, "-").concat(w.id))) : (0, c.Z)(x) && P((0, r.jsx)(m.Z.XboxSection, {
+    }, "rich-presence-".concat(null != (C = x.session_id) ? C : t, "-").concat(w.id))) : (0, c.Z)(x) && P((0, r.jsx)(m.Z.XboxSection, {
       title: A.name
     }, "xbox-".concat(null != (N = x.session_id) ? N : t)));
     null != E && null != A && (0, d._D)(x, E) && (null == E.userStatus || !(0, d.zE)(E.userStatus, p.jn.ACTIVITY_PANEL)) && P((0, r.jsx)(f.Z, {

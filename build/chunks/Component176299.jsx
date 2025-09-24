@@ -241,7 +241,7 @@ let ew = (0, Chunk608787.Un)({
           guildId: l
         });
       case eN.oC.REPORT_TO_MOD:
-        return (0, r.jsx)(S.Z, {});
+        return (0, r.jsx)(C.Z, {});
       default:
         (0, eb.vE)(a)
     }
@@ -256,7 +256,7 @@ let ew = (0, Chunk608787.Un)({
         inputSkuId: e
       }, i.id)
     }
-    return (0, r.jsx)(S.Z, {})
+    return (0, r.jsx)(C.Z, {})
   },
   eF = Chunk647438.memo(function() {
     let {
@@ -438,7 +438,7 @@ function e6(e) {
   }), b.R6.trackExposure({
     location: u
   });
-  let g = (0, p.e7)([C.Z], () => C.Z.isFullscreenInContext()),
+  let g = (0, p.e7)([S.Z], () => S.Z.isFullscreenInContext()),
     m = (0, A.T)("ChannelSidebar"),
     E = (0, P.useAppSidebarState)(e => !e.isOpen) && m;
   i.useLayoutEffect(() => {
@@ -477,7 +477,7 @@ function e6(e) {
     I = i.useCallback(() => {
       document.body.classList.add(eA.dragging)
     }, []),
-    S = i.useCallback(e => {
+    C = i.useCallback(e => {
       var t;
       document.body.classList.remove(eA.dragging), document.body.classList.remove(eA.draggingMin), document.body.classList.remove(eA.draggingMax), document.body.classList.remove(eA.collapsing), null == (t = y.current) || t.style.setProperty("--custom-overdrag", "0px"), f.K.set(eI.nT, e), em.default.track(eT.rMx.CHANNEL_SIDEBAR_RESIZED, {
         width: e
@@ -489,7 +489,7 @@ function e6(e) {
       resizableDomNodeRef: y,
       onElementResize: v,
       onElementResizeStart: I,
-      onElementResizeEnd: S,
+      onElementResizeEnd: C,
       orientation: O.y.HORIZONTAL_RIGHT,
       throttleDuration: 0
     }),
@@ -586,7 +586,7 @@ function e7() {
     O = (0, Chunk540059.T)("AppView"),
     E = (0, Chunk267161.useAppSidebarState)(e => !e.isOpen),
     v = (0, Chunk442837.e7)([Chunk358221.Z], () => Chunk358221.Z.isFullscreenInContext()),
-    S = (0, Chunk442837.e7)([Chunk591472.Z], () => Chunk591472.Z.isFrameActive());
+    C = (0, Chunk442837.e7)([Chunk591472.Z], () => Chunk591472.Z.isFrameActive());
   return (0, Chunk951288.jsx)("div", {
     className: Chunk981028.container,
     children: (0, Chunk951288.jsx)(Chunk372900.Z.Provider, {

@@ -45,13 +45,13 @@ function u(e) {
     }, [o, e]);
   (0, c.qU)(f);
   let h = (0, c.kN)(f),
-    [p, b] = r.useState([]),
-    m = (t = f.map(e => l.Z.isFetching(e)), r.useMemo(() => t.join("\x1f"), [t]));
+    [p, m] = r.useState([]),
+    v = (t = f.map(e => l.Z.isFetching(e)), r.useMemo(() => t.join("\x1f"), [t]));
   return r.useEffect(() => {
     let t = f.filter(e => l.Z.noDataAvailable(e));
     t.length > 0 && u(t, e)
-  }, [m, f, e, u, h]), r.useEffect(() => {
-    b(f.map(e => {
+  }, [v, f, e, u, h]), r.useEffect(() => {
+    m(f.map(e => {
       let t = h[e];
       return {
         applicationId: e,

@@ -33,8 +33,8 @@ function _(e) {
     hasClips: y,
     hasNewClips: v,
     lastClipsSession: I,
-    remindersEnabled: C,
-    hasAnyClipAnimations: S
+    remindersEnabled: S,
+    hasAnyClipAnimations: C
   } = (0, l.cj)([p.Z], () => ({
     hasClips: p.Z.hasClips(),
     hasNewClips: p.Z.getNewClipIds().length > 0,
@@ -73,8 +73,8 @@ function _(e) {
       modalKey: m.Qr
     })
   }
-  return (i.useEffect(() => (S ? x() : A(), () => A()), [S, x, A]), E && O && y) ? (0, r.jsxs)(r.Fragment, {
-    children: [null != N && t && C && T && !(0, a.$sL)() && !j && (0, r.jsx)(g.Z, {
+  return (i.useEffect(() => (C ? x() : A(), () => A()), [C, x, A]), E && O && y) ? (0, r.jsxs)(r.Fragment, {
+    children: [null != N && t && S && T && !(0, a.$sL)() && !j && (0, r.jsx)(g.Z, {
       clipIconRef: N,
       lastClipsSession: I,
       onOpenClipsGallery: Z

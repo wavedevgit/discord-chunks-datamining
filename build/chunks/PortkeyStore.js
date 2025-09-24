@@ -2,12 +2,13 @@
 /** chunk id: 693587, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => g
+  Z: () => T
 });
 var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js");
+  Chunk570140 = require("./570140.js"),
+  Chunk101805 = require("./101805.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -16,20 +17,20 @@ function o(e, t, n) {
   }) : e[t] = n, e
 }
 
-function s(e) {
+function l(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
 }
 
-function l(e, t) {
+function c(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -40,47 +41,34 @@ function l(e, t) {
   return n
 }
 
-function c(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : l(Object(t)).forEach(function(n) {
+function u(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : c(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let u = {};
+let d = {};
 
-function d() {
-  u = {}
-}
-
-function f(e) {
-  return null == u[e] && (u[e] = {
-    catalog: {},
-    instances: {},
-    entitlements: {}
-  }), u[e]
+function f() {
+  d = {}
 }
 
 function _(e) {
-  let {
-    guildId: t,
-    catalog: n
-  } = e;
-  u = c(s({}, u), {
-    [t]: c(s({}, f(t)), {
-      catalog: n,
-      hasFetchedCatalog: true
-    })
-  })
+  return null == d[e] && (d[e] = {
+    catalog: {},
+    instances: {},
+    entitlements: {}
+  }), d[e]
 }
 
 function p(e) {
   let {
     guildId: t,
-    instances: n
+    catalog: n
   } = e;
-  u = c(s({}, u), {
-    [t]: c(s({}, f(t)), {
-      instances: n,
-      hasFetchedInstances: true
+  d = u(l({}, d), {
+    [t]: u(l({}, _(t)), {
+      catalog: n,
+      hasFetchedCatalog: true
     })
   })
 }
@@ -88,38 +76,108 @@ function p(e) {
 function h(e) {
   let {
     guildId: t,
-    unlockedGameServers: n
-  } = e, r = Object.values(n).reduce((e, t) => {
+    instances: n
+  } = e;
+  d = u(l({}, d), {
+    [t]: u(l({}, _(t)), {
+      instances: n,
+      hasFetchedInstances: true
+    })
+  })
+}
+
+function m(e, t) {
+  return Object.values(t).reduce((e, t) => {
     var n, r, i, a, o;
     return e + (null != (o = null == (a = t.sku) || null == (i = a.tenant_metadata) || null == (r = i.guild_monetization) || null == (n = r.game_server) ? true : n.boost_price) ? o : 0)
-  }, 0);
-  u = c(s({}, u), {
-    [t]: c(s({}, f(t)), {
+  }, 0)
+}
+
+function g(e) {
+  let {
+    guildId: t,
+    unlockedGameServers: n
+  } = e, r = m(t, n);
+  d = u(l({}, d), {
+    [t]: u(l({}, _(t)), {
       entitlements: n,
       appliedBoosts: r
     })
   })
 }
-class m extends(r = Chunk442837.ZP.Store) {
+
+function E(e) {
+  let {
+    guildId: t,
+    gameServer: n
+  } = e, r = _(t);
+  r.instances[n.id] = (0, o.Z)(n), d = u(l({}, d), {
+    [t]: l({}, r)
+  })
+}
+
+function b(e) {
+  let {
+    guildId: t,
+    gameServerId: n
+  } = e, r = _(t);
+  delete r.instances[n], d = u(l({}, d), {
+    [t]: l({}, r)
+  })
+}
+
+function y(e) {
+  let {
+    guildId: t,
+    entitlements: n
+  } = e, r = _(t);
+  n.forEach(e => {
+    r.entitlements[e.id] = e
+  }), v(t, r)
+}
+
+function O(e) {
+  let {
+    guildId: t,
+    entitlements: n
+  } = e, r = _(t);
+  n.forEach(e => {
+    delete r.entitlements[e.id]
+  }), v(t, r)
+}
+
+function v(e, t) {
+  let n = m(e, t.entitlements);
+  d = u(l({}, d), {
+    [e]: u(l({}, t), {
+      appliedBoosts: n
+    })
+  })
+}
+class I extends(r = Chunk442837.ZP.Store) {
   getState() {
-    return u
+    return d
   }
   getStateForGuild(e) {
-    return null != e ? u[e] : true
+    return null != e ? d[e] : true
   }
   hasFetchedCatalog(e) {
     var t;
-    return null != e && (null == (t = u[e]) ? true : t.hasFetchedCatalog) === true
+    return null != e && (null == (t = d[e]) ? true : t.hasFetchedCatalog) === true
   }
   hasFetchedInstances(e) {
     var t;
-    return null != e && (null == (t = u[e]) ? true : t.hasFetchedInstances) === true
+    return null != e && (null == (t = d[e]) ? true : t.hasFetchedInstances) === true
   }
 }
-o(m, "displayName", "PortkeyStore");
-let g = new m(Chunk570140.Z, {
-  LOGOUT: d,
-  PORTKEY_FETCH_CATALOG_SUCCESS: _,
-  PORTKEY_FETCH_INSTANCES_SUCCESS: p,
-  GUILD_BOOST_ENTITLEMENTS_FETCH_SUCCESS: h
+s(I, "displayName", "PortkeyStore");
+let T = new I(Chunk570140.Z, {
+  LOGOUT: f,
+  PORTKEY_FETCH_CATALOG_SUCCESS: p,
+  PORTKEY_FETCH_INSTANCES_SUCCESS: h,
+  GUILD_BOOST_ENTITLEMENTS_FETCH_SUCCESS: g,
+  GAME_SERVER_CREATE: E,
+  GAME_SERVER_DELETE: b,
+  GUILD_POWERUP_ENTITLEMENTS_CREATE: y,
+  GUILD_POWERUP_ENTITLEMENTS_DELETE: O
 })

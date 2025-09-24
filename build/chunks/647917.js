@@ -1,4 +1,4 @@
-/** Chunk was on 25460 **/
+/** Chunk was on 13025 **/
 /** chunk id: 647917, original params: e,t,n (module,exports,require) **/
 module.exports = {
   clickable: "clickable_a3e8db",

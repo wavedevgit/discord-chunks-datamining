@@ -1,7 +1,7 @@
 /** Chunk was on 49902 **/
 /** chunk id: 299560, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => O
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk229870 = require("./229870.js");
-let O = {
+let j = {
   [Chunk296009.l.FAVORITE_GAMES]: {
     placeholder: {
       variant: "details",
@@ -55,14 +55,14 @@ let O = {
     },
     getAriaLabel: e => {
       var t, n;
-      return v.intl.formatToPlainString(v.t.KfGahI, {
+      return b.intl.formatToPlainString(b.t.KfGahI, {
         applicationName: null != (n = null == (t = c.Z.getApplication(e.applicationId)) ? true : t.name) ? n : ""
       })
     }
   }
 };
 
-function j(e) {
+function O(e) {
   let {
     widgetType: t,
     onAddWidget: n,
@@ -70,9 +70,9 @@ function j(e) {
     loading: c = false,
     trackUserProfileEditAction: u
   } = e, {
-    placeholder: v,
-    getAriaLabel: j
-  } = O[t], x = "small" === l, P = (0, d.SM)().data, S = i.useMemo(() => {
+    placeholder: b,
+    getAriaLabel: O
+  } = j[t], x = "small" === l, P = (0, d.SM)().data, S = i.useMemo(() => {
     switch (t) {
       case o.l.CURRENT_GAMES:
       case o.l.FAVORITE_GAMES:
@@ -94,18 +94,18 @@ function j(e) {
     c || null == S || ((0, h.qH)(t, S), u({
       action: "WIDGET_ADDED",
       widgetEdited: t
-    }), (0, p.L$)(m.qb.WIDGET_ADDED), null == n || n())
+    }), (0, p.L$)(v.qb.WIDGET_ADDED), null == n || n())
   }, [c, t, S, u, n]);
   return null == S ? null : (0, r.jsxs)(s.P3F, {
     className: a()(y.addButtonContainer, x && y.sizeSmall, c && y.loading),
     onClick: I,
-    "aria-label": j(S),
+    "aria-label": O(S),
     "aria-busy": c,
-    children: ["details" === v.variant ? (0, r.jsx)(b.i, {
-      applicationId: v.applicationId,
+    children: ["details" === b.variant ? (0, r.jsx)(m.i, {
+      applicationId: b.applicationId,
       size: l
-    }) : (0, r.jsx)(b.c, {
-      applicationIds: v.applicationIds,
+    }) : (0, r.jsx)(m.c, {
+      applicationIds: b.applicationIds,
       size: l
     }), (0, r.jsxs)("div", {
       className: y.overlay,

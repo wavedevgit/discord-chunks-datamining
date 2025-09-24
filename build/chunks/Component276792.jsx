@@ -56,15 +56,15 @@ function E(e) {
   var t, n, E, y;
   let v, {
       content: I,
-      renderModalProps: C,
-      analyticsLocations: S,
+      renderModalProps: S,
+      analyticsLocations: C,
       analyticsLocation: T,
       isLightTheme: N
     } = e,
     P = "AnnouncementModalVariant1_".concat(l.z[Number(I.dismissKey)]),
     {
       onClose: j
-    } = C,
+    } = S,
     x = null != (y = null == (t = I.button) ? true : t.copy) ? y : m.intl.string(m.t.YScQSE),
     A = (null == (n = I.button) ? true : n.buttonAction) === a.Wc.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button";
   switch (null == (E = I.button) ? true : E.buttonAction) {
@@ -76,7 +76,7 @@ function E(e) {
     case a.Wc.OPEN_TIER_1_PAYMENT_MODAL:
       v = () => (0, c.Z)({
         subscriptionTier: h.Si.TIER_1,
-        analyticsLocations: S,
+        analyticsLocations: C,
         analyticsObject: O(_({}, T), {
           object: g.qAy.BUTTON_CTA,
           objectType: g.Qqv.TIER_1
@@ -91,7 +91,7 @@ function E(e) {
     default:
       v = () => (0, c.Z)({
         subscriptionTier: h.Si.TIER_2,
-        analyticsLocations: S,
+        analyticsLocations: C,
         analyticsObject: O(_({}, T), {
           object: g.qAy.BUTTON_CTA,
           objectType: g.Qqv.TIER_2
@@ -125,7 +125,7 @@ function E(e) {
     className: b.modalTopPill
   }) : true;
   return {
-    renderModalProps: C,
+    renderModalProps: S,
     header: I.header,
     modalTopExtra: L,
     subHeader: I.subheader,

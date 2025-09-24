@@ -121,7 +121,7 @@ function A(e) {
   }), B = (0, f.tP)(_), V = (null == (t = _.userStatus) ? true : t.enrolledAt) != null, H = (null == (n = _.userStatus) ? true : n.completedAt) != null, F = (null == (l = _.userStatus) ? true : l.claimedAt) != null, z = (null == _ ? true : _.userStatus) != null && (0, d.zE)(_.userStatus, g.jn.ACTIVITY_PANEL), W = (0, f.Rf)(_), Y = (0, m.DD)({
     quest: _,
     taskDetails: W,
-    location: S.dr.ACTIVITY_PANEL,
+    location: C.dr.ACTIVITY_PANEL,
     questContent: g.jn.ACTIVITY_PANEL,
     sourceQuestContent: g.jn.ACTIVITY_PANEL
   }), K = (0, d.Rt)(_), q = (0, m.CR)({
@@ -182,12 +182,12 @@ function A(e) {
           children: Y
         })
       })]
-    }), V && !H && (0, r.jsx)(C.Z, {
+    }), V && !H && (0, r.jsx)(S.Z, {
       autoplay: Z,
       className: P.rewardTileWithInstructions,
       quest: _,
       questContent: g.jn.ACTIVITY_PANEL,
-      location: S.dr.ACTIVITY_PANEL,
+      location: C.dr.ACTIVITY_PANEL,
       taskDetails: W,
       sourceQuestContent: g.jn.ACTIVITY_PANEL
     }), (0, r.jsxs)("div", {
@@ -205,7 +205,7 @@ function A(e) {
           text: Q,
           onClick: k,
           loading: T,
-          icon: _.config.features.includes(S.S7.CLOUD_GAMING_ACTIVITY) ? s.v3n : true
+          icon: _.config.features.includes(C.S7.CLOUD_GAMING_ACTIVITY) ? s.v3n : true
         })]
       }), V && !H && (0, r.jsx)(s.zxk, {
         variant: "primary",

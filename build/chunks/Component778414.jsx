@@ -2,7 +2,7 @@
 /** chunk id: 778414, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   C: () => R,
-  Z: () => D
+  Z: () => Z
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -68,18 +68,18 @@ function T(e, t) {
   return i
 }
 
-function D(e) {
+function Z(e) {
   var {
     widget: t
   } = e, n = T(e, ["widget"]);
-  return t instanceof h.q ? (0, r.jsx)(j.Z, k({
+  return t instanceof h.q ? (0, r.jsx)(O.Z, k({
     widget: t
   }, n)) : t instanceof p.zy ? (0, r.jsx)(S.Z, k({
     widget: t
   }, n)) : null
 }
 
-function Z() {
+function D() {
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk830202.ukTeenDisclaimer,
     children: [(0, Chunk951288.jsx)(Chunk481060.d3s, {
@@ -98,22 +98,22 @@ function _(e) {
     user: t,
     guildId: n,
     channelId: l
-  } = e, a = (0, O.Z)(t.id), s = (0, o.e7)([f.default], () => f.default.getId() === t.id), m = (() => {
+  } = e, a = (0, j.Z)(t.id), s = (0, o.e7)([f.default], () => f.default.getId() === t.id), v = (() => {
     let [e, t] = (0, o.Wu)([g.Z], () => [g.Z.ipCountryCode, g.Z.ipCountryCodeRequest]), n = (0, u.U)();
     return i.useEffect(() => {
       null == e && null == t && n && (0, c.GE)()
     }, [e, t, n]), "GB" === e && n
-  })(), j = 0 === a.length && s, P = i.useMemo(() => a.filter(p.Wc), [a]), S = i.useMemo(() => a.filter(e => e instanceof h.q), [a]);
-  (0, y.ZP)(P), (0, b.J)(s, P);
+  })(), O = 0 === a.length && s, P = i.useMemo(() => a.filter(p.Wc), [a]), S = i.useMemo(() => a.filter(e => e instanceof h.q), [a]);
+  (0, y.ZP)(P), (0, m.J)(s, P);
   var I = t.id;
-  (0, v.s)(S);
+  (0, b.s)(S);
   let {
     data: w
-  } = (0, d.O)(I), E = i.useRef(w);
-  return (E.current = w, i.useEffect(() => {
-    null !== E.current && (0, o.Xf)(A.McO.USER_APPLICATION_IDENTITIES(I))
-  }, [I]), j) ? (0, r.jsx)(C.Z, {}) : (0, r.jsxs)(r.Fragment, {
-    children: [s && m && (0, r.jsx)(Z, {}), a.map((e, i) => (0, r.jsx)(D, {
+  } = (0, d.O)(I), A = i.useRef(w);
+  return (A.current = w, i.useEffect(() => {
+    null !== A.current && (0, o.Xf)(E.McO.USER_APPLICATION_IDENTITIES(I))
+  }, [I]), O) ? (0, r.jsx)(C.Z, {}) : (0, r.jsxs)(r.Fragment, {
+    children: [s && v && (0, r.jsx)(D, {}), a.map((e, i) => (0, r.jsx)(Z, {
       widget: e,
       user: t,
       guildId: n,
@@ -128,7 +128,7 @@ function R(e) {
     user: t
   } = e, n = T(e, ["user"]);
   let l = i.useRef(null);
-  (0, m.r)({
+  (0, v.r)({
     container: l.current
   });
   let o = (0, I.h)(t.id);

@@ -1,4 +1,4 @@
-/** Chunk was on 37690 **/
+/** Chunk was on 73696 **/
 /** chunk id: 750312, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -30,18 +30,18 @@ function j(e) {
     index: j,
     trailingContent: h,
     headerTitle: x,
-    headerSubtitle: P,
-    headerActionButtons: _
-  } = e, w = (0, u.Dt)(), E = (0, c.e7)([d.default], () => d.default.getId() === t), I = i.useRef(null), S = i.useRef(null), {
+    headerSubtitle: _,
+    headerActionButtons: P
+  } = e, w = (0, u.Dt)(), I = (0, c.e7)([d.default], () => d.default.getId() === t), E = i.useRef(null), S = i.useRef(null), {
     trackUserProfileAction: T
   } = (0, f.KZ)(), D = (0, p.Z)({
     widgetType: n.type,
     onAction: T
-  }), N = E && null != j && !s, {
+  }), N = I && null != j && !s, {
     isDragging: A,
     dragSourcePosition: k
   } = (0, g.q)({
-    dropRef: I,
+    dropRef: E,
     dragRef: S,
     userId: t,
     widget: n,
@@ -49,7 +49,7 @@ function j(e) {
     disableInteraction: !N
   }), [C, R] = i.useState(false);
   return (0, r.jsx)(v, {
-    ref: I,
+    ref: E,
     disableInteraction: !N,
     onMouseEnter: () => R(true),
     onMouseLeave: () => R(false),
@@ -71,8 +71,8 @@ function j(e) {
         userId: t,
         headingId: w,
         title: x,
-        subtitle: P,
-        actionButtons: _,
+        subtitle: _,
+        actionButtons: P,
         widget: n,
         disableInteraction: s
       }), (0, r.jsxs)(l.y5t, {

@@ -44,7 +44,7 @@ function P(e) {
   if (i.useEffect(() => {
       s.jg()
     }, []), i.useEffect(() => {
-      D && !l.tq && (0, d.M)(t, S.oC.ROLE_SUBSCRIPTIONS)
+      D && !l.tq && (0, d.M)(t, C.oC.ROLE_SUBSCRIPTIONS)
     }, [t, D]), l.tq && D) {
     let e = null == n ? v.J.NOT_GUILD_MEMBER : v.J.GUILD_NOT_ELIGIBLE;
     return (0, r.jsx)(v.z, {
@@ -63,7 +63,7 @@ function P(e) {
         children: T.intl.string(T.t["KzCF//"])
       })]
     }), (0, r.jsx)("div", {
-      id: C.v
+      id: S.v
     }), (0, r.jsx)("div", {
       className: N.content,
       children: j ? (0, r.jsx)(o.u2D, {

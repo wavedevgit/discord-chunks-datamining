@@ -55,7 +55,7 @@ function w(e) {
 }
 
 function L(e, t) {
-  null != e && C.default.track(A.rMx.EXTERNAL_DYNAMIC_LINK_RECEIVED, {
+  null != e && S.default.track(A.rMx.EXTERNAL_DYNAMIC_LINK_RECEIVED, {
     invite_code: null,
     has_auth_token: null,
     is_backgrounded: null,
@@ -129,7 +129,7 @@ let R = {
             let {
               giftCode: l
             } = i;
-            N.ZP.focus(), C.default.track(A.rMx.OPEN_MODAL, {
+            N.ZP.focus(), S.default.track(A.rMx.OPEN_MODAL, {
               type: "gift_accept",
               location: A.SaU
             }), (0, a.ZDy)(async () => {
@@ -234,7 +234,7 @@ let R = {
               try {
                 var r, i;
                 let l = f.ZP.getCurrentEmbeddedActivity();
-                if ((null == l ? true : l.applicationId) === e) return void C.default.track(A.rMx.ACTIVITY_DEEP_LINK_RECEIVED, {
+                if ((null == l ? true : l.applicationId) === e) return void S.default.track(A.rMx.ACTIVITY_DEEP_LINK_RECEIVED, {
                   application_id: e,
                   success: false,
                   failure_reason: "activity_already_running",
@@ -242,7 +242,7 @@ let R = {
                 });
                 let a = await b.ZP.fetchApplication(e),
                   o = null == a || null == (r = a.bot) ? true : r.id;
-                if (null == o) return void C.default.track(A.rMx.ACTIVITY_DEEP_LINK_RECEIVED, {
+                if (null == o) return void S.default.track(A.rMx.ACTIVITY_DEEP_LINK_RECEIVED, {
                   application_id: e,
                   success: false,
                   failure_reason: "no_bot_user",
@@ -262,14 +262,14 @@ let R = {
                   analyticsLocations: [m.Z.DEEPLINK],
                   customId: p,
                   referrerId: d
-                }), C.default.track(A.rMx.ACTIVITY_DEEP_LINK_RECEIVED, {
+                }), S.default.track(A.rMx.ACTIVITY_DEEP_LINK_RECEIVED, {
                   application_id: e,
                   success: true,
                   failure_reason: null,
                   attempt_id: n
                 })
               } catch (t) {
-                C.default.track(A.rMx.ACTIVITY_DEEP_LINK_RECEIVED, {
+                S.default.track(A.rMx.ACTIVITY_DEEP_LINK_RECEIVED, {
                   application_id: e,
                   success: false,
                   failure_reason: "launch_failed",
@@ -320,7 +320,7 @@ let R = {
         if ((null == e ? true : e.status) === 400) throw new P.Z({
           errorCode: A.lTL.BAD_REQUEST_FOR_PROVIDER
         }, "Bad request for provider");
-        throw S.S.dispatch(A.CkL.CONNECTIONS_CALLBACK_ERROR), e
+        throw C.S.dispatch(A.CkL.CONNECTIONS_CALLBACK_ERROR), e
       }
     }
   },

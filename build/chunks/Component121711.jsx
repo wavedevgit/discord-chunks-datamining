@@ -162,7 +162,7 @@ function es(e) {
     children: (0, r.jsxs)(T.Z, {
       onScroll: n,
       ref: o,
-      children: [(0, r.jsx)(S.a, {
+      children: [(0, r.jsx)(C.a, {
         selectedTabId: a,
         handleTransition: l,
         tabs: c,

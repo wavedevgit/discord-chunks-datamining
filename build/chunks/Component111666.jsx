@@ -43,7 +43,7 @@ function I(e) {
   return e
 }
 
-function C(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -56,10 +56,10 @@ function C(e, t) {
   }), e
 }
 
-function S(e) {
+function C(e) {
   let {
     className: t
-  } = e, n = (0, a.e7)([g.Z], () => g.Z.getPendingCount() > 0), b = (0, o.dQu)(o.TVs.modules.chat.INPUT_ICON_SIZE), S = function() {
+  } = e, n = (0, a.e7)([g.Z], () => g.Z.getPendingCount() > 0), b = (0, o.dQu)(o.TVs.modules.chat.INPUT_ICON_SIZE), C = function() {
     let [e, t] = i.useState(null), {
       showActivityTicker: n
     } = (0, O.Z)(), r = i.useRef({}), l = i.useRef(null);
@@ -120,7 +120,7 @@ function S(e) {
         s.Z.unsubscribe("PRESENCE_UPDATES", a), s.Z.unsubscribe("VOICE_STATE_UPDATES", o), null != l.current && (window.clearTimeout(l.current), l.current = null)
       }
     }, [n]), e
-  }(), T = i.useRef(null), N = (0, o.Yzy)(S, {
+  }(), T = i.useRef(null), N = (0, o.Yzy)(C, {
     keys: e => {
       var t, n, r;
       return null != e ? null != e.voiceChannel ? "".concat(e.user.id, "-voice-").concat(e.voiceChannel.id) : "".concat(e.user.id, "-").concat(null == (t = e.activity) ? true : t.state, ":").concat(null == (n = e.activity) ? true : n.details, ":").concat(null == (r = e.activity) ? true : r.name) : "none"
@@ -152,7 +152,7 @@ function S(e) {
         userId: t.user.id,
         children: n => {
           var i;
-          return (0, r.jsxs)(l.animated.div, C(I({
+          return (0, r.jsxs)(l.animated.div, S(I({
             ref: T,
             className: v.activityWrapper,
             style: e
@@ -175,7 +175,7 @@ function S(e) {
     }), (0, r.jsx)(_.Or, {
       popoutPosition: "bottom",
       popoutAlign: "left",
-      children: (e, i, l, a) => (0, r.jsx)(d.JO, C(I({}, l), {
+      children: (e, i, l, a) => (0, r.jsx)(d.JO, S(I({}, l), {
         ref: a,
         className: t,
         onClick: e,
@@ -198,7 +198,7 @@ function T(e) {
   } = (0, b.Cq)({
     location: "friends-button"
   });
-  return n ? (0, r.jsx)(S, {
+  return n ? (0, r.jsx)(C, {
     className: t
   }) : null
 }

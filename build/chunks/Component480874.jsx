@@ -135,7 +135,7 @@ function N() {
         }({
           className: T.list,
           innerRole: l,
-          innerAriaLabel: S.intl.string(S.t.e7GWjY),
+          innerAriaLabel: C.intl.string(C.t.e7GWjY),
           ref: t => {
             var n;
             e.current = t, i.current = null != (n = null == t ? true : t.getScrollerNode()) ? n : null

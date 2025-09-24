@@ -1704,6 +1704,18 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id
     guildId: e.guild_id,
     entitlements: e.entitlements
   })
+}), Y(["GAME_SERVER_CREATE"], (e, t) => {
+  q({
+    type: t,
+    guildId: e.guild_id,
+    gameServer: e.game_server
+  })
+}), Y(["GAME_SERVER_DELETE"], (e, t) => {
+  q({
+    type: t,
+    guildId: e.guild_id,
+    gameServerId: e.game_server_id
+  })
 }), Y(["GUILD_APPLIED_BOOSTS_UPDATE"], (e, t) => {
   q({
     type: t,

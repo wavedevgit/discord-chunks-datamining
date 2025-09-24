@@ -154,7 +154,7 @@ class P {
         layoutMode: n
       } = e;
       if (0 === this.rpcServer.subscriptions.length) return;
-      let r = n !== C.cE.FOCUSED;
+      let r = n !== S.cE.FOCUSED;
       this.rpcServer.dispatchToSubscriptions(I.zMe.ACTIVITY_PIP_MODE_UPDATE, e => e.socket.application.id === t, {
         is_pip_mode: r
       }), this.rpcServer.dispatchToSubscriptions(I.zMe.ACTIVITY_LAYOUT_MODE_UPDATE, e => e.socket.application.id === t, {
@@ -166,8 +166,8 @@ class P {
         layoutMode: n
       } = e;
       if (0 === this.rpcServer.subscriptions.length) return;
-      let r = n === S.U.PIP ? C.cE.PIP : C.cE.FOCUSED,
-        i = r !== C.cE.FOCUSED;
+      let r = n === C.U.PIP ? S.cE.PIP : S.cE.FOCUSED,
+        i = r !== S.cE.FOCUSED;
       this.rpcServer.dispatchToSubscriptions(I.zMe.ACTIVITY_PIP_MODE_UPDATE, e => e.socket.application.id === t, {
         is_pip_mode: i
       }), this.rpcServer.dispatchToSubscriptions(I.zMe.ACTIVITY_LAYOUT_MODE_UPDATE, e => e.socket.application.id === t, {

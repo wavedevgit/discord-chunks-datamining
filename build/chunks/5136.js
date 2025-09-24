@@ -33,8 +33,8 @@ function a(e) {
       u = f.y,
       h = u - l.top,
       p = l.bottom - u,
-      b = 0;
-    h >= 0 && h < n ? b = -a * Math.pow(1 - h / n, o) : p >= 0 && p < n && (b = a * Math.pow(1 - p / n, o)), 0 !== b && (t.scrollTop += b * i)
+      m = 0;
+    h >= 0 && h < n ? m = -a * Math.pow(1 - h / n, o) : p >= 0 && p < n && (m = a * Math.pow(1 - p / n, o)), 0 !== m && (t.scrollTop += m * i)
   }), () => {
     null !== s.current && cancelAnimationFrame(s.current), s.current = null, c.current = 0
   }), [t, d, f, n, a, o, g])

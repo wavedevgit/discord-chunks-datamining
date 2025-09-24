@@ -240,7 +240,7 @@ function eQ(e) {
     disabled: l
   } = e, o = i.useRef(null), {
     parentAnalyticsLocation: s
-  } = (0, A.ZP)(), c = (0, eo.Z)(), d = (0, ec.Z)(t), p = (0, u.e7)([C.ZP], () => null != C.ZP.getSelfEmbeddedActivityForLocation(C.ZP.getConnectedActivityLocation())), h = (0, X.Z)(t), {
+  } = (0, A.ZP)(), c = (0, eo.Z)(), d = (0, ec.Z)(t), p = (0, u.e7)([S.ZP], () => null != S.ZP.getSelfEmbeddedActivityForLocation(S.ZP.getConnectedActivityLocation())), h = (0, X.Z)(t), {
     reachedLimit: _,
     limit: O
   } = (0, es.Z)(t), E = i.useCallback(() => {
@@ -252,7 +252,7 @@ function eQ(e) {
       b.Z.setVideoEnabled(e), e && (0, q.uL)(eR.Z5c.CHANNEL(null != (n = t.getGuildId()) ? n : eR.ME, t.id))
     };
     (0, R.v)(s, R.d.CAMERA, e), e ? (0, eh.Z)(n, y) : n()
-  }, [t, y, s]), S = p || n || h, {
+  }, [t, y, s]), C = p || n || h, {
     Component: T,
     play: N,
     events: P
@@ -276,7 +276,7 @@ function eQ(e) {
       let d = (0, r.jsx)(T, {
         size: "md",
         className: a()(eG.buttonIcon, {
-          [eG.withText]: !S
+          [eG.withText]: !C
         }),
         color: "currentColor"
       });
@@ -333,7 +333,7 @@ function eQ(e) {
               wrapperClassName: eG.button,
               fullWidth: true,
               focusProps: eW,
-              children: S ? d : (0, r.jsxs)(U.Z, {
+              children: C ? d : (0, r.jsxs)(U.Z, {
                 align: U.Z.Align.CENTER,
                 children: [d, eU.intl.string(eU.t.FlNoSU)]
               })
@@ -354,8 +354,8 @@ function eX(e) {
     newestAnalyticsLocation: o
   } = (0, A.ZP)(), s = i === eR.IlC.POPOUT, c = (0, N.KF)(t.id), p = (0, N.g5)(c), {
     userInActivity: f
-  } = (0, u.cj)([C.ZP], () => ({
-    userInActivity: null != C.ZP.getSelfEmbeddedActivityForChannel(t.id)
+  } = (0, u.cj)([S.ZP], () => ({
+    userInActivity: null != S.ZP.getSelfEmbeddedActivityForChannel(t.id)
   })), h = (0, T.p)({
     surface: v.eR.VOICE_LAUNCHER,
     skipFetchingShelf: true
@@ -435,19 +435,19 @@ function eJ(e) {
       parentAnalyticsLocation: d,
       analyticsLocations: f
     } = (0, A.ZP)(),
-    h = (0, u.e7)([eS.default], () => eS.default.getCurrentUser()),
+    h = (0, u.e7)([eC.default], () => eC.default.getCurrentUser()),
     b = (0, u.Wu)([em.Z], () => em.Z.getAllActiveStreams()),
     _ = (0, ec.Z)(n),
     O = n.getGuildId(),
-    E = (0, u.cj)([C.ZP], () => null != C.ZP.getSelfEmbeddedActivityForChannel(n.id)),
+    E = (0, u.cj)([S.ZP], () => null != S.ZP.getSelfEmbeddedActivityForChannel(n.id)),
     y = (0, X.Z)(n),
     v = i.useCallback(() => {
       (0, ef.Z)(O, n.id, f)
     }, [O, n.id, f]),
     I = b.find(e => e.ownerId === (null == h ? true : h.id)),
-    S = (0, eu.E)(n, h, b);
+    C = (0, eu.E)(n, h, b);
   t = null == I ? l ? v : ep.Z : () => (0, z.Z)(I);
-  let T = null != I || S.length > 0,
+  let T = null != I || C.length > 0,
     N = _ ? eU.intl.string(eU.t.fjBNo6) : eU.intl.string(eU.t.uQn9Bw),
     P = E || o || y,
     j = null != I,
@@ -778,7 +778,7 @@ function e0(e) {
 let e1 = (0, Chunk730749.Z)(function(e) {
   let t = (0, V.Z)(),
     n = (0, u.e7)([B.Z], () => B.Z.getAwaitingRemoteSessionInfo()),
-    l = (0, u.e7)([eS.default], () => eS.default.getCurrentUser()),
+    l = (0, u.e7)([eC.default], () => eC.default.getCurrentUser()),
     a = (0, u.cj)([eI.Z], () => null != t ? {
       channelId: t.channelId,
       rtcConnectionQuality: eR.IE4.FINE,
@@ -810,7 +810,7 @@ let e1 = (0, Chunk730749.Z)(function(e) {
     E = (0, u.e7)([K.Z], () => K.Z.isViewingRoles(d)),
     y = (0, u.e7)([ev.Z], () => E && !ev.Z.can(eR.Plq.VIEW_CHANNEL, c), [E, c]),
     v = ea.Fg.useSetting(),
-    [I, C, T] = (0, u.Wu)([eN.ZP, $.Z], () => (null == c ? true : c.isGuildStageVoice()) ? [$.Z.getMutableParticipants(c.id, ee.pV.SPEAKER), $.Z.getParticipantsVersion(c.id), null] : [null, null, null != c ? eN.ZP.getVoiceStatesForChannel(c) : null], [c]),
+    [I, S, T] = (0, u.Wu)([eN.ZP, $.Z], () => (null == c ? true : c.isGuildStageVoice()) ? [$.Z.getMutableParticipants(c.id, ee.pV.SPEAKER), $.Z.getParticipantsVersion(c.id), null] : [null, null, null != c ? eN.ZP.getVoiceStatesForChannel(c) : null], [c]),
     N = i.useMemo(() => {
       var e, t;
       return null != (t = null != (e = null == I ? true : I.map(e => {
@@ -825,7 +825,7 @@ let e1 = (0, Chunk730749.Z)(function(e) {
           voiceState: r
         }
       })) ? e : T) ? t : []
-    }, [I, C, T]),
+    }, [I, S, T]),
     [j, Z] = i.useState(false),
     w = (0, M.Z)("RTCConnection");
   i.useEffect(() => {
@@ -833,7 +833,7 @@ let e1 = (0, Chunk730749.Z)(function(e) {
   }, [E, y, Z]);
   let {
     analyticsLocations: L
-  } = (0, A.ZP)(x.Z.RTC_PANEL), R = (0, S.Z)(null != d ? d : eR.lds, null == c ? true : c.id), D = (0, P.Z)(null == c ? true : c.id);
+  } = (0, A.ZP)(x.Z.RTC_PANEL), R = (0, C.Z)(null != d ? d : eR.lds, null == c ? true : c.id), D = (0, P.Z)(null == c ? true : c.id);
   return (0, r.jsx)(A.Gt, {
     value: L,
     children: (0, r.jsxs)("div", {

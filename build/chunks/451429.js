@@ -1,5 +1,5 @@
-/** Chunk was on 25460 **/
-/** chunk id: 451429, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 13368 **/
+/** chunk id: 451429, original params: e,n,t (module,exports,require) **/
 module.exports = {
   panel: "panel_fe7ab2",
   header: "header_fe7ab2",

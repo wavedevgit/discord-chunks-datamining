@@ -63,7 +63,7 @@ function T(e) {
     }) : true,
     U = null;
   null != D && k ? (t = D.name, U = (0, r.jsx)("img", {
-    className: S.appIcon,
+    className: C.appIcon,
     alt: I.intl.string(I.t.X4IxWF),
     src: M,
     "aria-hidden": true,
@@ -76,7 +76,7 @@ function T(e) {
     guild: A,
     size: R,
     active: true,
-    className: S.guildIcon
+    className: C.guildIcon
   }), t = A.name) : null != j && (j.isDM() || j.isGroupDM()) ? (t = I.intl.string(I.t.YUU0RE), U = (0, r.jsx)(c.gw7, {
     size: L
   })) : N.pathname.startsWith(y.Z5c.GLOBAL_DISCOVERY) ? (t = I.intl.string(I.t["4nEZLi"]), U = (0, r.jsx)(c.Jmo, {
@@ -87,7 +87,7 @@ function T(e) {
     size: L
   })) : N.pathname.startsWith(y.Z5c.FRIENDS) ? (t = I.intl.string(I.t.TdEu5e), U = (0, r.jsx)(c.iFz, {
     size: L
-  })) : N.pathname.startsWith(y.Z5c.FAMILY_CENTER) && (t = I.intl.string(C.default.RZqaJi), U = (0, r.jsx)(c.BFJ, {
+  })) : N.pathname.startsWith(y.Z5c.FAMILY_CENTER) && (t = I.intl.string(S.default.RZqaJi), U = (0, r.jsx)(c.BFJ, {
     size: L
   }));
   let G = i.useCallback(e => {
@@ -97,7 +97,7 @@ function T(e) {
   return null == B || "" === B ? null : (0, r.jsx)(c.ua7, {
     shouldShow: l,
     "aria-label": I.intl.string(I.t["7P/+q6"]),
-    tooltipContentClassName: S.navigationTooltip,
+    tooltipContentClassName: C.navigationTooltip,
     text: (0, r.jsxs)(r.Fragment, {
       children: [I.intl.string(I.t["7P/+q6"]), (0, r.jsx)(c.M2$, {
         shortcut: ["mod", "k"]
@@ -123,8 +123,8 @@ function T(e) {
         }
         return e
       }({
-        className: a()(S.title, {
-          [S.fastTravel]: l
+        className: a()(C.title, {
+          [C.fastTravel]: l
         })
       }, e, T), n = n = {
         onClick: l ? G : true,
@@ -133,7 +133,7 @@ function T(e) {
           lineClamp: 1,
           children: B
         }), l && (0, r.jsx)(c.Fbu, {
-          className: S.fastTravelChevron,
+          className: C.fastTravelChevron,
           size: "xs"
         })]
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
