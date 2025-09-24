@@ -100,27 +100,28 @@ function O() {
     planId: y,
     setPlanId: S,
     planCost: P,
-    error: E
+    stepLoading: E,
+    error: w
   } = (0, Chunk183369.aj)();
   Chunk647438.useEffect(() => {
     (0, Chunk744993._k)(module)
   }, [module]);
-  let w = (0, Chunk442837.e7)([Chunk590383.Z], () => Chunk590383.Z.getRegions()),
-    T = Chunk647438.useMemo(() => {
+  let T = (0, Chunk442837.e7)([Chunk590383.Z], () => Chunk590383.Z.getRegions()),
+    I = Chunk647438.useMemo(() => {
       var e;
-      return null != (e = w.map(e => ({
+      return null != (e = T.map(e => ({
         value: e,
         label: e.name
       }))) ? module : []
-    }, [w]),
-    I = Chunk647438.useMemo(() => {
+    }, [T]),
+    R = Chunk647438.useMemo(() => {
       var e;
       return null != (e = null == exports ? true : exports.plans.map(e => ({
         value: e,
         label: e.name
       }))) ? module : []
     }, [exports]),
-    R = (0, Chunk210682.Z)();
+    k = (0, Chunk210682.Z)();
   return null == exports ? (0, Chunk951288.jsx)("div", {
     className: Chunk149671.spinnerContainer,
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {
@@ -155,7 +156,8 @@ function O() {
             onChange: O,
             placeholder: Chunk388032.intl.string(Chunk401561.default.Kg0Zio),
             showCharacterCount: true,
-            maxLength: Chunk473682.gM
+            maxLength: Chunk473682.gM,
+            disabled: E
           })]
         }), (0, Chunk951288.jsxs)("div", {
           className: Chunk149671.sectionContainer,
@@ -189,7 +191,8 @@ function O() {
           }), (0, Chunk951288.jsx)(Chunk481060.PhF, {
             serialize: e => e.id,
             isSelected: e => e.id === t,
-            options: T,
+            isDisabled: E,
+            options: I,
             optionClassName: Chunk149671.option,
             select: e => l(e.id),
             placeholder: Chunk388032.intl.string(Chunk401561.default["op6/kZ"]),
@@ -222,7 +225,8 @@ function O() {
           }), (0, Chunk951288.jsx)(Chunk481060.PhF, {
             serialize: e => e.id,
             isSelected: e => e.id === y,
-            options: I,
+            isDisabled: E,
+            options: R,
             optionClassName: Chunk149671.option,
             select: e => S(e.id),
             placeholder: Chunk388032.intl.string(Chunk401561.default["4QOSPj"]),
@@ -261,15 +265,15 @@ function O() {
         termsOfServiceUrl: "https://google.com/terms-of-service",
         helpCenterUrl: "https://google.com/help-center"
       })
-    }), null != E && (0, Chunk951288.jsx)(Chunk481060.Text, {
+    }), null != w && (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-xs/medium",
       color: "text-danger",
-      children: E
+      children: w
     }), (0, Chunk951288.jsxs)(Chunk422663.ok, {
       step: Chunk473682.Vb.SERVER_SETTINGS,
       className: Chunk149671.footerContainer,
       children: [(0, Chunk951288.jsx)(Chunk422663.VS, {}), (0, Chunk951288.jsx)(Chunk422663.oh, {
-        disabled: !R
+        disabled: !k
       })]
     })]
   })

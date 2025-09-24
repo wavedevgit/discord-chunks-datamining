@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk438957 = require("./438957.js");
 
 function m(e, t) {
-  (0, a.ZDy)(async () => {
+  (0, i.ZDy)(async () => {
     let {
       default: m
     } = await n.e("13965").then(n.bind(n, 666083));
@@ -51,11 +51,11 @@ function m(e, t) {
       button: (0, l.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: u.button,
-        children: (0, l.jsx)(a.zxk, {
+        children: (0, l.jsx)(i.zxk, {
           variant: "primary",
           text: c.intl.string(o.default.AS3n8v),
           onClick: () => {
-            (0, i.uL)(r.Z5c.CHANNEL(e, s.oC.PORTKEY)), n.onClose()
+            (0, a.uL)(r.Z5c.CHANNEL(e, s.oC.PORTKEY)), n.onClose()
           }
         })
       })

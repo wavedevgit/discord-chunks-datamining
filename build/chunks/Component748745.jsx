@@ -23,16 +23,16 @@ function p(e) {
   let {
     guildId: t,
     gameInstance: n,
-    cost: a
+    cost: i
   } = e;
   return (0, l.jsx)(c.ua7, {
     "aria-label": b.intl.string(g.default.TZsu1d),
     text: (0, l.jsx)(d.Po, {
-      cost: a
+      cost: i
     }),
     children: e => {
-      var i, s;
-      return (0, l.jsx)(o.zx, (i = function(e) {
+      var a, s;
+      return (0, l.jsx)(o.zx, (a = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             l = Object.keys(n);
@@ -59,11 +59,11 @@ function p(e) {
           e.stopPropagation(), (0, v.Q)(t, n)
         },
         children: (0, l.jsx)(d.RD, {
-          cost: a,
+          cost: i,
           isActive: true,
           compact: true
         })
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var l = Object.getOwnPropertySymbols(e);
@@ -71,22 +71,22 @@ function p(e) {
         }
         return n
       })(Object(s)).forEach(function(e) {
-        Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(s, e))
-      }), i))
+        Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(s, e))
+      }), a))
     }
   })
 }
 
 function x(e) {
-  var t, n, i, r;
+  var t, n, a, r;
   let {
     guildId: o,
     gameInstance: d,
     onClick: v
-  } = e, f = (0, s.e7)([m.Z], () => m.Z.getStateForGuild(o)), x = a.useMemo(() => {
+  } = e, f = (0, s.e7)([m.Z], () => m.Z.getStateForGuild(o)), x = i.useMemo(() => {
     var e;
     return null == f || null == (e = f.entitlements) ? true : e[d.entitlementId]
-  }, [null == f ? true : f.entitlements, d.entitlementId]), y = (null == x ? true : x.ends_at) != null, h = null == x || null == (r = x.sku) || null == (i = r.tenant_metadata) || null == (n = i.guild_monetization) || null == (t = n.game_server) ? true : t.boost_price;
+  }, [null == f ? true : f.entitlements, d.entitlementId]), y = (null == x ? true : x.ends_at) != null, h = null == x || null == (r = x.sku) || null == (a = r.tenant_metadata) || null == (n = a.guild_monetization) || null == (t = n.game_server) ? true : t.boost_price;
   return null == h ? null : (0, l.jsxs)(c.P3F, {
     className: j.game,
     onClick: () => v(d),
