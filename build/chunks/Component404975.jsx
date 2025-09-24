@@ -96,7 +96,7 @@ function T(e) {
               "aria-label": b.intl.string(b.t.cpT0Cg)
             })
           }), (0, r.jsx)("div", {
-            children: O.map(e => (0, r.jsx)(N, {
+            children: O.map(e => (0, r.jsx)(m, {
               section: e,
               visibleContent: t,
               markAsDismissed: i
@@ -107,7 +107,7 @@ function T(e) {
           fade: true,
           children: [(0, r.jsx)("nav", {
             className: p.nav,
-            children: E.map(e => (0, r.jsx)(N, {
+            children: E.map(e => (0, r.jsx)(m, {
               section: e,
               visibleContent: t,
               markAsDismissed: i
@@ -141,7 +141,7 @@ function j(e) {
   }, s))
 }
 
-function m(e) {
+function N(e) {
   let {
     trailing: t,
     sectionRef: n,
@@ -167,7 +167,7 @@ function m(e) {
   }
 }
 
-function N(e) {
+function m(e) {
   var t;
   let {
     section: n,
@@ -184,7 +184,7 @@ function N(e) {
         variant: "heading-sm/medium",
         color: "text-tertiary",
         children: a
-      }), null != c && (0, r.jsx)(m, {
+      }), null != c && (0, r.jsx)(N, {
         trailing: c,
         sectionRef: s,
         visibleContent: l,
