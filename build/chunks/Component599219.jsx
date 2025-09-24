@@ -87,15 +87,15 @@ function D(e) {
     {
       onClose: D
     } = s,
-    [L, k] = o.useState(false),
-    w = (0, i.e7)([b.default], () => b.default.getCurrentUser()),
-    M = null != w && null == w.nsfwAllowed,
+    [L, w] = o.useState(false),
+    k = (0, i.e7)([b.default], () => b.default.getCurrentUser()),
+    M = null != k && null == k.nsfwAllowed,
     [P, U] = o.useState(M ? O.F.AGE_GATE : O.F.CHOOSE_TEMPLATE),
-    [R, B] = o.useState(null);
+    [R, Z] = o.useState(null);
   o.useEffect(() => {
     n(L ? O.F.COMPLETE : P)
   }, [n, P, L]);
-  let [Z, z] = o.useState(null), [W, H] = o.useState(null), [Y, V] = o.useState(false), q = (0, i.e7)([N.Z], () => N.Z.getType() === j.M5.INVITE_UNCLAIMED), J = o.useCallback(e => {
+  let [B, z] = o.useState(null), [W, H] = o.useState(null), [Y, V] = o.useState(false), q = (0, i.e7)([N.Z], () => N.Z.getType() === j.M5.INVITE_UNCLAIMED), J = o.useCallback(e => {
     H(e), U(O.F.CREATION_INTENT), E.default.track(y.rMx.GUILD_TEMPLATE_SELECTED, {
       template_name: e.label,
       template_code: e.code
@@ -119,7 +119,7 @@ function D(e) {
     titleClassName: G.customizeGuildTitle,
     hasFooter: false,
     onGuildCreated: e => {
-      z(e), (null == W ? true : W.id) === v.l.CREATE ? U(O.F.CHANNEL_PROMPT) : k(true)
+      z(e), (null == W ? true : W.id) === v.l.CREATE ? U(O.F.CHANNEL_PROMPT) : w(true)
     },
     onBack: () => {
       U(O.F.CREATION_INTENT)
@@ -130,10 +130,10 @@ function D(e) {
     content: ee,
     footer: et
   } = (0, p.F)({
-    createdGuildId: Z,
+    createdGuildId: B,
     hasFooter: false,
     onChannelPromptCompleted: () => {
-      k(true)
+      w(true)
     },
     isSlideReady: R === O.F.CHANNEL_PROMPT
   }), {
@@ -195,7 +195,7 @@ function D(e) {
           className: G.slidesContainer,
           children: (0, a.jsxs)(c.MyZ, {
             activeSlide: P,
-            onSlideReady: e => B(e),
+            onSlideReady: e => Z(e),
             centered: false,
             width: er,
             children: [(0, a.jsx)(c.Mi4, {

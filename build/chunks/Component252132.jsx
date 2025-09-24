@@ -28,8 +28,8 @@ function s(e) {
     paused: _,
     pulseSpeakingIndicator: O,
     participant: j,
-    width: x
-  } = e, v = function(e, t) {
+    width: v
+  } = e, x = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -47,7 +47,7 @@ function s(e) {
   let C = l.Z.getVideoComponent();
   return (0, r.jsx)("div", {
     style: {
-      width: x
+      width: v
     },
     className: a.spaceBetweenTiles,
     children: (0, r.jsxs)("div", {
@@ -89,8 +89,8 @@ function s(e) {
         paused: _,
         pulseSpeakingIndicator: O,
         videoComponent: C,
-        width: x
-      }, v)), u]
+        width: v
+      }, x)), u]
     })
   })
 }

@@ -7,6 +7,5 @@ module.exports = {
   title: "title__1f657",
   subtitle: "subtitle__1f657",
   optionHeader: "optionHeader__1f657",
-  footer: "footer__1f657",
-  backButton: "backButton__1f657"
+  footer: "footer__1f657"
 }

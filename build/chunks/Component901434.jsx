@@ -27,13 +27,13 @@ let _ = (e, t) => f.ZP.getName(e.getGuildId(), e.id, t.user),
       hasConnectPermission: f
     } = e, O = (0, d.J)(n.guild_id), j = i.useCallback(() => {
       O ? (0, c.hk)(n.guild_id, () => s.default.selectVoiceChannel(n.id)) : s.default.selectVoiceChannel(n.id)
-    }, [n.id, n.guild_id, O]), x = t.filter(e => e.type === g.Ui.VOICE), v = 4 === x.length ? 2 : 3, C = (0, l.Wu)([o.Z], () => x.map(e => o.Z.getParticipant(n.id, e.id)).filter(h.lm), [n.id, x]);
+    }, [n.id, n.guild_id, O]), v = t.filter(e => e.type === g.Ui.VOICE), x = 4 === v.length ? 2 : 3, C = (0, l.Wu)([o.Z], () => v.map(e => o.Z.getParticipant(n.id, e.id)).filter(h.lm), [n.id, v]);
     return (0, r.jsxs)("div", {
       className: y.container,
       children: [(0, r.jsx)(p.Z, {}), (0, r.jsx)("div", {
         className: y.tiles,
         style: {
-          maxWidth: 168 * v
+          maxWidth: 168 * x
         },
         children: C.slice(0, 5).map(e => (0, r.jsx)(u.ZP, {
           participant: e,
@@ -54,15 +54,15 @@ let _ = (e, t) => f.ZP.getName(e.getGuildId(), e.id, t.user),
           tag: "div",
           color: "header-secondary",
           variant: "heading-lg/normal",
-          children: 0 === x.length ? b.intl.string(b.t.FUVhyM) : 1 === x.length ? b.intl.formatToPlainString(b.t.EQwZlJ, {
-            a: _(n, x[0])
-          }) : 2 === x.length ? b.intl.formatToPlainString(b.t.zBcKoK, {
-            a: _(n, x[0]),
-            b: _(n, x[1])
-          }) : x.length > 2 ? b.intl.formatToPlainString(b.t["3AqFaG"], {
-            a: _(n, x[0]),
-            b: _(n, x[1]),
-            n: x.length - 2
+          children: 0 === v.length ? b.intl.string(b.t.FUVhyM) : 1 === v.length ? b.intl.formatToPlainString(b.t.EQwZlJ, {
+            a: _(n, v[0])
+          }) : 2 === v.length ? b.intl.formatToPlainString(b.t.zBcKoK, {
+            a: _(n, v[0]),
+            b: _(n, v[1])
+          }) : v.length > 2 ? b.intl.formatToPlainString(b.t["3AqFaG"], {
+            a: _(n, v[0]),
+            b: _(n, v[1]),
+            n: v.length - 2
           }) : true
         })
       }), (0, r.jsxs)("div", {

@@ -58,8 +58,8 @@ function _(e) {
   } = e, _ = i.useRef(null), {
     newestAnalyticsLocation: O
   } = (0, u.ZP)(), j = (0, d.bp)(), {
-    reducedMotion: x
-  } = i.useContext(s.Sfi), v = (0, c.Z)({
+    reducedMotion: v
+  } = i.useContext(s.Sfi), x = (0, c.Z)({
     userId: l.id
   }), C = null != l.member ? (0, g.CA)(l.member) : null, I = e => {
     (0, o.jW)(e, async () => {
@@ -100,7 +100,7 @@ function _(e) {
           size: s.EFr.SIZE_24,
           className: a()(m.avatar, f),
           "aria-label": l.userNick,
-          isSpeaking: v && !x.enabled
+          isSpeaking: x && !v.enabled
         })
       }))
     })

@@ -129,10 +129,10 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
       channel: _,
       guildId: O,
       isTyping: j,
-      isMobileOnline: x,
-      premiumSince: v,
+      isMobileOnline: v,
+      premiumSince: x,
       nameplate: C
-    } = e, I = J(e, ["colorString", "colorStrings", "colorRoleName", "colorRoleId", "isOwner", "nick", "user", "currentUser", "activities", "applicationStream", "status", "channel", "guildId", "isTyping", "isMobileOnline", "premiumSince", "nameplate"]), E = i.useRef(null), [S, Z] = i.useState(false), T = null != v ? new Date(v) : null, N = i.useCallback(e => {
+    } = e, I = J(e, ["colorString", "colorStrings", "colorRoleName", "colorRoleId", "isOwner", "nick", "user", "currentUser", "activities", "applicationStream", "status", "channel", "guildId", "isTyping", "isMobileOnline", "premiumSince", "nameplate"]), E = i.useRef(null), [S, Z] = i.useState(false), T = null != x ? new Date(x) : null, N = i.useCallback(e => {
       (0, f.jW)(e, async () => {
         let {
           default: e
@@ -201,7 +201,7 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
           isTyping: j,
           channel: _,
           guildId: O,
-          isMobile: x,
+          isMobile: v,
           onClickPremiumGuildIcon: w,
           selected: S,
           itemProps: I,
@@ -384,7 +384,7 @@ class el extends Chunk647438.Component {
         groups: n,
         channel: l
       } = this.props, a = n[t];
-      if ((0, v.R)(a)) return (0, i.createElement)(v.Z, X(Q({}, a), {
+      if ((0, x.R)(a)) return (0, i.createElement)(x.Z, X(Q({}, a), {
         key: "section-".concat(t)
       }));
       if (0 === t) {
@@ -500,7 +500,7 @@ class el extends Chunk647438.Component {
       this.props.updateMaxContentFeedRowSeen(r)
     }, 50)), K(this, "getContentFeedGroup", () => {
       let e = this.props.groups[E.T];
-      if ((0, v.R)(e)) return e
+      if ((0, x.R)(e)) return e
     }), K(this, "hasContentFeed", () => null != this.getContentFeedGroup()), K(this, "getRowHeightComputer", () => {
       let e = this.getContentFeedGroup(),
         {
@@ -580,7 +580,7 @@ function ea(e) {
     memberStoreProps: o,
     channelId: t.id,
     guildId: t.guild_id
-  }), b = i.useRef(null), O = (0, h.UBm)("lg") + (0, h.UBm)("xxs"), x = i.useCallback((e, t) => {
+  }), b = i.useRef(null), O = (0, h.UBm)("lg") + (0, h.UBm)("xxs"), v = i.useCallback((e, t) => {
     let n = b.current;
     if (null == n) return;
     let r = parseInt(t, 10),
@@ -598,7 +598,7 @@ function ea(e) {
         })
       }
     })
-  }, [42]), v = i.useCallback(() => new Promise(e => {
+  }, [42]), x = i.useCallback(() => new Promise(e => {
     let t = b.current;
     if (null == t) return e();
     t.scrollToTop({
@@ -614,9 +614,9 @@ function ea(e) {
     })
   }), []), I = (0, d.ZP)({
     id: "members-".concat(t.id),
-    setFocus: x,
+    setFocus: v,
     isEnabled: s,
-    scrollToStart: v,
+    scrollToStart: x,
     scrollToEnd: C
   });
   return (0, r.jsx)(j.Gt, {

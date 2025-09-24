@@ -90,7 +90,7 @@ function L(e) {
       isLoaded: null == k ? true : k.isLoaded,
       children: (0, r.jsx)(b.NJ, {
         value: V,
-        children: (0, r.jsxs)(x.Z, {
+        children: (0, r.jsxs)(v.Z, {
           ref: B,
           user: n,
           displayProfile: k,
@@ -105,7 +105,7 @@ function L(e) {
                 user: n,
                 themeType: R.l.SIDEBAR,
                 shouldShowTooltip: null === V.interactionType
-              }), n.bot ? (0, r.jsx)(v.Z, {
+              }), n.bot ? (0, r.jsx)(x.Z, {
                 user: n
               }) : (0, r.jsx)(E.Z, {
                 type: "banner",

@@ -27,9 +27,9 @@ function O(e) {
     appContext: n,
     popoutOpen: O,
     popoutWindow: j,
-    currentWindow: x
+    currentWindow: v
   } = e, {
-    parentAnalyticsLocation: v
+    parentAnalyticsLocation: x
   } = (0, c.ZP)(), C = n === _.IlC.POPOUT, I = i.useRef(null), {
     currentLayout: E,
     mode: S
@@ -52,13 +52,13 @@ function O(e) {
       rootNode: N
     } = i.useMemo(() => {
       let e = null != j && C ? j.document : document,
-        t = x.document.getElementById("app-mount");
+        t = v.document.getElementById("app-mount");
       return {
-        currentWindow: x,
+        currentWindow: v,
         currentDocument: e,
         rootNode: t
       }
-    }, [j, C, x]),
+    }, [j, C, v]),
     R = O && !C,
     w = S === _.WtW.VIDEO && Z && !R,
     A = i.useCallback((e, r) => {
@@ -70,8 +70,8 @@ function O(e) {
       }, P))
     }, [P, A, N]),
     L = i.useCallback(e => () => {
-      null != N && ((0, u.v)(v, u.d.FULL_SCREEN, e !== _.AEg.FULL_SCREEN), e !== _.AEg.FULL_SCREEN ? (T.current = e, A(e, _.AEg.FULL_SCREEN), (0, y.Dj)(N)) : D(e))
-    }, [A, D, N, v]);
+      null != N && ((0, u.v)(x, u.d.FULL_SCREEN, e !== _.AEg.FULL_SCREEN), e !== _.AEg.FULL_SCREEN ? (T.current = e, A(e, _.AEg.FULL_SCREEN), (0, y.Dj)(N)) : D(e))
+    }, [A, D, N, x]);
   i.useEffect(() => {
     let e = () => {
       null != N && ((0, y.rB)(N, P) || E !== _.AEg.FULL_SCREEN || L(E)())

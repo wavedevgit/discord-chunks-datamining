@@ -800,16 +800,16 @@ let tl = (0, Chunk112724.Z)(ti),
       let e = null != s ? w.Z.getParticipants(s) : [],
         t = null != s ? w.Z.getActivityParticipants(s) : [];
       return e.length - t.length > 0
-    }, [s]), x = (0, z.Z)(), v = (0, p.e7)([eB.Z], () => {
+    }, [s]), v = (0, z.Z)(), x = (0, p.e7)([eB.Z], () => {
       var e;
-      return (null != (e = null == x ? true : x.channelId) ? e : eB.Z.getVoiceChannelId()) === (null == c ? true : c.id)
+      return (null != (e = null == v ? true : v.channelId) ? e : eB.Z.getVoiceChannelId()) === (null == c ? true : c.id)
     }), S = (0, p.e7)([E.ZP], () => null != c ? E.ZP.getSelfEmbeddedActivityForChannel(c.id) : null, [c]), N = (0, p.e7)([eF.Z], () => eF.Z.isConnected()), A = (0, I.Z)(N), D = N && false === A;
     i.useEffect(() => {
-      v && D && null != S && null != c && m.Z.selectParticipant(c.id, (0, R.gN)({
+      x && D && null != S && null != c && m.Z.selectParticipant(c.id, (0, R.gN)({
         applicationId: S.applicationId,
         instanceId: S.compositeInstanceId
       }))
-    }, [D, c, v, S]);
+    }, [D, c, x, S]);
     let L = (0, p.e7)([E.ZP], () => E.ZP.getCurrentEmbeddedActivity()),
       M = (0, p.e7)([E.ZP], () => E.ZP.getActivityPanelMode()),
       k = null != L && !(0, Z.Z)(null == c ? true : c.id) && M === e8.Ez.PANEL,
@@ -866,7 +866,7 @@ let tl = (0, Chunk112724.Z)(ti),
         channel: e,
         inCurrentVoiceChannel: t
       } = eb.current;
-      null != l && null != e && ed && e.id === l && !t && ((0, ex.Cq)(e), a(null))
+      null != l && null != e && ed && e.id === l && !t && ((0, ev.Cq)(e), a(null))
     }, [l, ed]);
     let ey = (0, C.ts)(c),
       e_ = null != c && c.isPrivate(),
@@ -879,7 +879,7 @@ let tl = (0, Chunk112724.Z)(ti),
         dismissAction: e3.L.AUTO
       })
     }, [null == c ? true : c.id, ej, e_, eO]);
-    let ev = (0, f.f9)();
+    let ex = (0, f.f9)();
     return (0, r.jsx)(tl, tn(tt({
       guildId: null == c ? true : c.guild_id,
       channelId: s,
@@ -891,7 +891,7 @@ let tl = (0, Chunk112724.Z)(ti),
       layout: K,
       needSubscriptionToAccess: O,
       isLurking: Y,
-      hasModalOpen: ev,
+      hasModalOpen: ex,
       section: et,
       channelSidebarState: en,
       guildSidebarState: ei,

@@ -1,7 +1,7 @@
 /** Chunk was on 91053 **/
 /** chunk id: 201493, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => x
 }), require("./388685.js"), require("./781311.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -23,10 +23,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk295907 = require("./295907.js"),
   Chunk806328 = require("./806328.js");
-let v = e => {
+let x = e => {
   let {
     channel: t,
-    guild: v
+    guild: x
   } = e, {
     currentCategoryId: C,
     directoryEntries: I,
@@ -86,10 +86,10 @@ let v = e => {
   }, [t.id]), i.useEffect(() => {
     d.default.track(O.rMx.GUILD_DIRECTORY_CHANNEL_VIEWED, {
       directory_channel_id: t.id,
-      directory_guild_id: v.id,
+      directory_guild_id: x.id,
       primary_category_id: C
     })
-  }, [t.id, v.id, C]);
+  }, [t.id, x.id, C]);
   let k = (0, f.G)(t) ? () => {
       (0, a.ZDy)(async () => {
         let {
@@ -115,8 +115,8 @@ let v = e => {
             }
             return e
           }({}, n), l = l = {
-            directoryGuildName: v.name,
-            directoryGuildId: v.id,
+            directoryGuildName: x.name,
+            directoryGuildId: x.id,
             directoryChannelId: t.id,
             currentCategoryId: C === _.AR.ALL ? null : C
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
@@ -135,7 +135,7 @@ let v = e => {
     U = e => {
       0 !== w.trim().length && e.key === j.vn.ENTER && (u.Rq(t.id, w), d.default.track(O.rMx.GUILD_DIRECTORY_SEARCH, {
         directory_channel_id: t.id,
-        directory_guild_id: v.id
+        directory_guild_id: x.id
       }))
     },
     G = () => {
@@ -151,14 +151,14 @@ let v = e => {
     searchResults: R,
     searchFetching: N
   }) : null == T && null == C ? (0, r.jsx)("div", {
-    className: x.pageContainer,
+    className: v.pageContainer,
     children: (0, r.jsx)(a.$jN, {
-      className: x.spinner
+      className: v.spinner
     })
   }) : (null == T ? true : T.length) === 0 && null == C ? (0, r.jsx)("div", {
-    className: x.pageContainer,
+    className: v.pageContainer,
     children: (0, r.jsx)(g.Z, {
-      guild: v,
+      guild: x,
       onAddGuild: k
     })
   }) : (0, r.jsx)(m.Z, {

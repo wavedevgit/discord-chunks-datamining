@@ -1,12 +1,11 @@
 /** Chunk was on 79764 **/
 /** chunk id: 996453, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  G: () => f,
+  G: () => h,
   Z: () => g
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk749210 = require("./749210.js"),
   Chunk820160 = require("./820160.jsx"),
@@ -19,114 +18,113 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk960780 = require("./960780.js");
 
-function f(e) {
+function h(e) {
   var t;
   let {
     guildTemplate: n,
-    onClose: f,
+    onClose: h,
     onBack: g,
-    onHubGuildInfoSet: _,
+    onHubGuildInfoSet: f,
     onGuildCreated: j,
-    isSlideReady: b,
-    hasFooter: L = true,
-    isCommunity: N = false
-  } = e, [I, y] = s.useState(m.Z.getGuildNameSuggestion()), [v, Z] = s.useState(null), [E, S] = s.useState(false), [T, O] = s.useState(null), B = !!(null == (t = u.default.getCurrentUser()) ? true : t.isStaff()), [M, k] = s.useState(B), H = (0, d.Dt)(), D = s.useRef(null);
+    isSlideReady: _,
+    hasFooter: b = true,
+    isCommunity: L = false
+  } = e, [v, I] = s.useState(u.Z.getGuildNameSuggestion()), [N, y] = s.useState(null), [Z, O] = s.useState(false), [T, E] = s.useState(null), S = !!(null == (t = d.default.getCurrentUser()) ? true : t.isStaff()), [M, H] = s.useState(S), G = (0, c.Dt)(), k = s.useRef(null);
   s.useEffect(() => {
     var e;
-    b && (null == (e = D.current) || e.focus())
-  }, [b]);
-  let G = s.useCallback(async e => {
+    _ && (null == (e = k.current) || e.focus())
+  }, [_]);
+  let D = s.useCallback(async e => {
       if (e.preventDefault(), null != n) {
-        S(true), O(null);
+        O(true), E(null);
         try {
-          if (null != _) _(I, v);
+          if (null != f) f(v, N);
           else {
-            let e = await x.Z.createGuildFromTemplate(I, v, n, N, M);
-            a.Z.transitionToGuildSync(e.id), null == j || j(e.id)
+            let e = await m.Z.createGuildFromTemplate(v, N, n, L, M);
+            r.Z.transitionToGuildSync(e.id), null == j || j(e.id)
           }
         } catch (e) {
-          O(e)
+          E(e)
         }
-        S(false)
+        O(false)
       }
-    }, [n, _, I, v, N, M, j]),
+    }, [n, f, v, N, L, M, j]),
     w = (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsx)(r.zxk, {
+      children: [(0, i.jsx)(l.zxk, {
         variant: "primary",
-        text: null != _ ? h.intl.string(h.t.PDTjLC) : h.intl.string(h.t.CumH4u),
-        onClick: G,
-        disabled: 0 === I.length,
-        loading: E
-      }), (0, i.jsx)(l.zx, {
-        className: p.backButton,
-        look: l.zx.Looks.BLANK,
-        size: l.zx.Sizes.MIN,
-        onClick: g,
-        children: h.intl.string(h.t["13/7kZ"])
+        text: null != f ? C.intl.string(C.t.PDTjLC) : C.intl.string(C.t.CumH4u),
+        onClick: D,
+        disabled: 0 === v.length,
+        loading: Z
+      }), (0, i.jsx)(l.Avr, {
+        size: "sm",
+        variant: "secondary",
+        text: C.intl.string(C.t["13/7kZ"]),
+        onClick: g
       })]
     });
   return {
     content: (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsxs)(r.xBx, {
-        direction: c.Z.Direction.VERTICAL,
+      children: [(0, i.jsxs)(l.xBx, {
+        direction: o.Z.Direction.VERTICAL,
         className: p.header,
         separator: false,
-        children: [(0, i.jsx)(r.X6q, {
+        children: [(0, i.jsx)(l.X6q, {
           className: p.title,
           variant: "heading-xl/semibold",
-          children: h.intl.string(h.t["2H6Nio"])
-        }), (0, i.jsx)(r.Text, {
+          children: C.intl.string(C.t["2H6Nio"])
+        }), (0, i.jsx)(l.Text, {
           className: p.subtitle,
           color: "header-secondary",
           variant: "text-md/normal",
-          children: h.intl.string(h.t.AAfVqa)
-        }), null != f && (0, i.jsx)(r.olH, {
+          children: C.intl.string(C.t.AAfVqa)
+        }), null != h && (0, i.jsx)(l.olH, {
           className: p.closeButton,
-          onClick: f
+          onClick: h
         })]
-      }), (0, i.jsxs)(r.hzk, {
+      }), (0, i.jsxs)(l.hzk, {
         className: p.createGuild,
         children: [(0, i.jsx)("div", {
           className: p.uploadIcon,
-          children: (0, i.jsx)(o.Z, {
-            icon: v,
-            onChange: Z
+          children: (0, i.jsx)(a.Z, {
+            icon: N,
+            onChange: y
           })
         }), (0, i.jsxs)("form", {
-          onSubmit: G,
-          children: [(0, i.jsx)(r.oil, {
-            label: h.intl.string(h.t.dBih7e),
+          onSubmit: D,
+          children: [(0, i.jsx)(l.oil, {
+            label: C.intl.string(C.t.dBih7e),
             required: true,
             error: null == T ? true : T.getFirstFieldErrorMessage("name"),
-            value: I,
+            value: v,
             maxLength: 100,
-            onChange: y,
-            inputRef: D,
-            id: H
-          }), B && (0, i.jsx)(r.j7V, {
+            onChange: I,
+            inputRef: k,
+            id: G
+          }), S && (0, i.jsx)(l.j7V, {
             hideBorder: true,
             value: M,
-            onChange: e => k(e),
-            note: h.intl.string(h.t.edQ5vb),
+            onChange: e => H(e),
+            note: C.intl.string(C.t.edQ5vb),
             className: p.formItemSpaced,
-            children: (0, i.jsx)(r.vwX, {
+            children: (0, i.jsx)(l.vwX, {
               children: "Staff Only"
             })
-          }), (0, i.jsx)(r.Text, {
+          }), (0, i.jsx)(l.Text, {
             variant: "text-xs/normal",
             color: "text-muted",
             className: p.guidelines,
-            children: h.intl.format(h.t["2bprX1"], {
-              guidelinesURL: C.EYA.GUIDELINES
+            children: C.intl.format(C.t["2bprX1"], {
+              guidelinesURL: x.EYA.GUIDELINES
             })
           })]
-        }), null == T || T.hasFieldErrors() ? null : (0, i.jsx)(r.Text, {
+        }), null == T || T.hasFieldErrors() ? null : (0, i.jsx)(l.Text, {
           variant: "text-xs/normal",
           color: "text-danger",
           children: T.message
         })]
-      }), L && (0, i.jsx)(r.mzw, {
-        justify: c.Z.Justify.BETWEEN,
+      }), b && (0, i.jsx)(l.mzw, {
+        className: p.footer,
         children: w
       })]
     }),
@@ -137,6 +135,6 @@ function f(e) {
 function g(e) {
   let {
     content: t
-  } = f(e);
+  } = h(e);
   return t
 }

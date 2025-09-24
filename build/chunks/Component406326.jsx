@@ -57,8 +57,8 @@ function _(e) {
     onSearchModeChange: o,
     totalResults: _,
     isIndexing: j,
-    isSearching: x,
-    documentsIndexed: v
+    isSearching: v,
+    documentsIndexed: x
   } = e, C = (0, d.UX)({
     location: "SearchHeader"
   }), I = (0, u.nP)({
@@ -108,8 +108,8 @@ function _(e) {
         totalResults: _,
         subtitle: T,
         isIndexing: j,
-        isSearching: x,
-        documentsIndexed: v
+        isSearching: v,
+        documentsIndexed: x
       })
     }), I || E ? (0, r.jsxs)("div", {
       className: m.searchModeAndFiltersContainer,
@@ -156,9 +156,9 @@ function O(e) {
     isIndexing: l,
     documentsIndexed: a
   } = e;
-  return l ? (0, r.jsx)(x, {
+  return l ? (0, r.jsx)(v, {
     documentsIndexed: a
-  }) : i ? (0, r.jsx)(v, {}) : (0, r.jsx)(C, {
+  }) : i ? (0, r.jsx)(x, {}) : (0, r.jsx)(C, {
     totalResults: t,
     subtitle: n
   })
@@ -175,7 +175,7 @@ function j() {
   })
 }
 
-function x(e) {
+function v(e) {
   let {
     documentsIndexed: t
   } = e;
@@ -199,7 +199,7 @@ function x(e) {
   })
 }
 
-function v() {
+function x() {
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-md/medium",

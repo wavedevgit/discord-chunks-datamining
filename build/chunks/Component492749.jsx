@@ -1,7 +1,7 @@
 /** Chunk was on 79764 **/
 /** chunk id: 492749, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => j
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk36705 = require("./36705.js"),
   Chunk216019 = require("./216019.js");
 
-function f(e) {
+function g(e) {
   let {
     guild: t,
     onClick: n
@@ -36,12 +36,12 @@ function f(e) {
       children: t.name
     }), (0, i.jsx)("img", {
       alt: "",
-      src: p
+      src: h
     })]
   })
 }
 
-function g(e) {
+function f(e) {
   let {
     directoryChannelId: t,
     guild: n
@@ -99,7 +99,7 @@ function g(e) {
   })
 }
 
-function _(e) {
+function j(e) {
   let t, {
       directoryChannelId: n,
       onClose: l,
@@ -107,17 +107,17 @@ function _(e) {
       handleChooseCreate: d,
       directoryGuildName: u,
       availableGuilds: m,
-      addedGuilds: p,
-      loading: _
+      addedGuilds: h,
+      loading: j
     } = e,
-    [j, b] = s.useState(0);
-  return t = _ ? (0, i.jsx)("div", {
+    [_, b] = s.useState(0);
+  return t = j ? (0, i.jsx)("div", {
     className: C.emptyContainer,
     children: (0, i.jsx)(o.$jN, {})
-  }) : 0 === j ? 0 === m.length ? (0, i.jsxs)("div", {
+  }) : 0 === _ ? 0 === m.length ? (0, i.jsxs)("div", {
     className: C.emptyContainer,
     children: [(0, i.jsx)("img", {
-      src: h,
+      src: p,
       alt: "",
       className: C.emptyImage
     }), (0, i.jsx)(o.Text, {
@@ -126,13 +126,13 @@ function _(e) {
       variant: "text-md/normal",
       children: x.intl.string(x.t.liuEhY)
     })]
-  }) : m.map(e => (0, i.jsx)(f, {
+  }) : m.map(e => (0, i.jsx)(g, {
     guild: e,
     onClick: () => a(e)
-  }, e.id)) : 0 === p.length ? (0, i.jsxs)("div", {
+  }, e.id)) : 0 === h.length ? (0, i.jsxs)("div", {
     className: C.emptyContainer,
     children: [(0, i.jsx)("img", {
-      src: h,
+      src: p,
       alt: "",
       className: C.emptyImage
     }), (0, i.jsx)(o.Text, {
@@ -141,7 +141,7 @@ function _(e) {
       variant: "text-md/normal",
       children: x.intl.string(x.t.WJLuKC)
     })]
-  }) : p.map(e => (0, i.jsx)(g, {
+  }) : h.map(e => (0, i.jsx)(f, {
     directoryChannelId: n,
     guild: e
   }, e.id)), (0, i.jsxs)(i.Fragment, {
@@ -165,19 +165,19 @@ function _(e) {
         children: x.intl.string(x.t.pYFZ9v)
       }), (0, i.jsxs)(o.njP, {
         className: C.tabBar,
-        selectedItem: j,
+        selectedItem: _,
         onItemSelect: b,
         type: "top",
         look: "brand",
         children: [(0, i.jsx)(o.njP.Item, {
           className: r()(C.tabBarItem, {
-            [C.selectedTab]: 0 === j
+            [C.selectedTab]: 0 === _
           }),
           id: 0,
           children: x.intl.string(x.t.FTe8HR)
         }), (0, i.jsx)(o.njP.Item, {
           className: r()(C.tabBarItem, {
-            [C.selectedTab]: 1 === j
+            [C.selectedTab]: 1 === _
           }),
           id: 1,
           children: x.intl.string(x.t.epOump)

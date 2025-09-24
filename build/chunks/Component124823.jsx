@@ -115,7 +115,7 @@ function w(e) {
               })
             }), (0, r.jsxs)(C.Z.Overlay, {
               className: N.overlay,
-              children: [(0, r.jsx)(v.Z, {
+              children: [(0, r.jsx)(x.Z, {
                 heading: T.intl.string(T.t["61W33d"]),
                 headingColor: "header-primary",
                 children: (0, r.jsx)(j.Z, {
@@ -124,10 +124,10 @@ function w(e) {
                   animateOnHover: true,
                   isHovering: H
                 })
-              }), (0, r.jsx)(v.Z, {
+              }), (0, r.jsx)(x.Z, {
                 heading: T.intl.string(T.t["A//N4u"]),
                 headingColor: "header-primary",
-                children: (0, r.jsx)(x.Z, {
+                children: (0, r.jsx)(v.Z, {
                   userId: n.id
                 })
               })]

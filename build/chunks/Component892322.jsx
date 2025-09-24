@@ -1,13 +1,12 @@
 /** Chunk was on 79764 **/
 /** chunk id: 892322, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => m
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk512722 = require("./512722.js"),
   l = require.n(Chunk512722),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk600164 = require("./600164.jsx"),
   Chunk565138 = require("./565138.jsx"),
@@ -15,59 +14,59 @@ var Chunk512722 = require("./512722.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk475608 = require("./475608.js");
 
-function x(e) {
+function m(e) {
   let {
     directoryGuildName: t,
     guildToAdd: n,
     isExistingGuildFlow: s,
-    onClose: x
+    onClose: m
   } = e;
   return l()(null != n, "Missing guild in Hub add guild confirmation"), (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsxs)(a.xBx, {
-      direction: o.Z.Direction.VERTICAL,
-      className: m.header,
+    children: [(0, i.jsxs)(r.xBx, {
+      direction: a.Z.Direction.VERTICAL,
+      className: u.header,
       separator: false,
-      children: [null != x && (0, i.jsx)(a.olH, {
-        className: m.closeButton,
-        onClick: x
-      }), (0, i.jsx)(c.Z, {
+      children: [null != m && (0, i.jsx)(r.olH, {
+        className: u.closeButton,
+        onClick: m
+      }), (0, i.jsx)(o.Z, {
         guild: n,
-        size: c.Z.Sizes.XLARGE,
+        size: o.Z.Sizes.XLARGE,
         active: true
-      }), (0, i.jsx)(a.X6q, {
-        className: m.title,
+      }), (0, i.jsx)(r.X6q, {
+        className: u.title,
         variant: "heading-xl/semibold",
-        children: u.intl.string(u.t.CueiPT)
-      }), (0, i.jsx)(a.Text, {
-        className: m.__invalid_subtitle,
+        children: d.intl.string(d.t.CueiPT)
+      }), (0, i.jsx)(r.Text, {
+        className: u.__invalid_subtitle,
         color: "header-secondary",
         variant: "text-md/normal",
-        children: s ? u.intl.formatToPlainString(u.t.R7Pqn5, {
+        children: s ? d.intl.formatToPlainString(d.t.R7Pqn5, {
           guildName: t
-        }) : u.intl.formatToPlainString(u.t.eIxPSk, {
+        }) : d.intl.formatToPlainString(d.t.eIxPSk, {
           guildName: t
         })
       })]
-    }), (0, i.jsx)(a.mzw, {
-      className: m.buttonRow,
-      children: s ? (0, i.jsx)(r.zx, {
-        className: m.addConfirmButton,
-        color: r.zx.Colors.BRAND,
-        onClick: x,
-        children: u.intl.string(u.t["X0WK+/"])
+    }), (0, i.jsx)(r.mzw, {
+      className: u.buttonRow,
+      children: s ? (0, i.jsx)(r.zxk, {
+        text: d.intl.string(d.t["X0WK+/"]),
+        fullWidth: true,
+        variant: "primary",
+        onClick: m
       }) : (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(r.zx, {
-          className: m.createSecondaryButton,
-          color: r.zx.Colors.PRIMARY,
-          onClick: x,
-          children: u.intl.string(u.t["X/VABg"])
-        }), (0, i.jsx)(r.zx, {
-          className: m.createConfirmButton,
-          color: r.zx.Colors.BRAND,
+        children: [(0, i.jsx)(r.zxk, {
+          fullWidth: true,
+          text: d.intl.string(d.t["X/VABg"]),
+          variant: "secondary",
+          onClick: m
+        }), (0, i.jsx)(r.zxk, {
+          fullWidth: true,
+          variant: "primary",
           onClick: () => {
-            (0, d.XU)(n.id), null == x || x()
+            (0, c.XU)(n.id), null == m || m()
           },
-          children: u.intl.string(u.t.DymAQk)
+          text: d.intl.string(d.t.DymAQk)
         })]
       })
     })]

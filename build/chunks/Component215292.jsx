@@ -26,25 +26,25 @@ function g(t) {
     onClose: g,
     onChannelPromptCompleted: x,
     isSlideReady: T
-  } = t, [E, h] = l.useState(""), [I, G] = l.useState(null), [D, y] = l.useState(false), z = (0, m.Dt)(), U = (0, a.e7)([u.Z], () => u.Z.getGuild(n), [n]), N = l.useRef(null);
+  } = t, [E, h] = l.useState(""), [I, G] = l.useState(null), [D, y] = l.useState(false), U = (0, m.Dt)(), z = (0, a.e7)([u.Z], () => u.Z.getGuild(n), [n]), N = l.useRef(null);
   l.useEffect(() => {
     var t;
     T && (null == (t = N.current) || t.focus())
   }, [T]);
   let f = l.useCallback(async t => {
-      if (t.preventDefault(), null == U) return;
+      if (t.preventDefault(), null == z) return;
       y(true), G(null);
-      let n = p.ZP.getDefaultChannel(U.id);
+      let n = p.ZP.getDefaultChannel(z.id);
       try {
         let t = _.intl.formatToPlainString(_.t.V4lepK, {
           topic: E
         });
-        await d.Z.createTextChannel(U.id, E, null == n ? true : n.parent_id, t), x()
+        await d.Z.createTextChannel(z.id, E, null == n ? true : n.parent_id, t), x()
       } catch (t) {
         G(new c.yZ(t))
       }
       y(false)
-    }, [U, E, x]),
+    }, [z, E, x]),
     j = (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(r.zxk, {
         variant: "primary",
@@ -66,13 +66,13 @@ function g(t) {
         className: L.header,
         direction: o.Z.Direction.VERTICAL,
         separator: false,
-        children: [null != U && (0, i.jsx)(C.Z, {
-          guild: U
+        children: [null != z && (0, i.jsx)(C.Z, {
+          guild: z
         }), (0, i.jsx)(r.Text, {
           className: L.guildName,
           color: "header-primary",
           variant: "text-sm/semibold",
-          children: null == U ? true : U.name
+          children: null == z ? true : z.name
         }), (0, i.jsx)(r.X6q, {
           className: L.title,
           variant: "heading-sm/semibold",
@@ -95,7 +95,7 @@ function g(t) {
             error: null == I ? true : I.getFieldMessage("name"),
             type: "text",
             value: E,
-            id: z,
+            id: U,
             onChange: h,
             placeholder: _.intl.string(_.t.xGOYAw),
             inputRef: N

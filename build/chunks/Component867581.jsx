@@ -18,9 +18,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk604509 = require("./604509.js"),
   Chunk216019 = require("./216019.js"),
   Chunk286359 = require("./286359.js");
-let b = "hTKzmak",
-  S = (r = window.GLOBAL_ENV.INVITE_HOST, o = "", null == r && (r = location.host, o = Chunk981631.Z5c.INVITE("")), "".concat(location.protocol, "//").concat(r).concat(o, "/")),
-  O = [b, "".concat(S).concat(b), "".concat(S).concat("wumpus-friends")],
+let S = "hTKzmak",
+  O = (r = window.GLOBAL_ENV.INVITE_HOST, o = "", null == r && (r = location.host, o = Chunk981631.Z5c.INVITE("")), "".concat(location.protocol, "//").concat(r).concat(o, "/")),
+  b = [S, "".concat(O).concat(S), "".concat(O).concat("wumpus-friends")],
   E = e => {
     let {
       onClick: t
@@ -124,7 +124,7 @@ function C(e) {
           error: T,
           value: o,
           onChange: d,
-          placeholder: "".concat(S).concat(b),
+          placeholder: "".concat(O).concat(S),
           inputRef: x
         })
       }), (0, l.jsx)(s.Text, {
@@ -133,7 +133,7 @@ function C(e) {
         children: f.intl.string(f.t.Bnq46O)
       }), (0, l.jsx)("div", {
         className: I.sampleLinks,
-        children: O.map(e => (0, l.jsx)(s.P3F, {
+        children: b.map(e => (0, l.jsx)(s.P3F, {
           className: I.sampleLink,
           onClick: () => d(e),
           children: e

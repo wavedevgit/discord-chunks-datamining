@@ -1,7 +1,7 @@
 /** Chunk was on 79764 **/
 /** chunk id: 533202, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => g
+  default: () => f
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,32 +19,32 @@ var Chunk951288 = require("./951288.js"),
   Chunk75666 = require("./75666.js"),
   Chunk248494 = require("./248494.js");
 
-function g(e) {
+function f(e) {
   let {
     directoryChannelId: t,
     transitionState: n,
-    initialSlide: g = p.VX.CHOOSE_GUILD,
-    onClose: _,
-    directoryGuildName: j,
+    initialSlide: f = h.VX.CHOOSE_GUILD,
+    onClose: j,
+    directoryGuildName: _,
     directoryGuildId: b,
     currentCategoryId: L
-  } = e, [N, I] = s.useState(g), [y, v] = s.useState(null), [Z, E] = s.useState(null), [S, T] = s.useState(null), [O, B] = s.useState(null), [M, k] = s.useState(null), [H, D] = s.useState(""), [G, w] = s.useState(null != L ? L : p.AR.UNCATEGORIZED), [U, R] = s.useState(false), {
+  } = e, [v, I] = s.useState(f), [N, y] = s.useState(null), [Z, O] = s.useState(null), [T, E] = s.useState(null), [S, M] = s.useState(null), [H, G] = s.useState(null), [k, D] = s.useState(""), [w, U] = s.useState(null != L ? L : h.AR.UNCATEGORIZED), [B, R] = s.useState(false), {
     availableGuilds: A,
     addedGuilds: P,
     loading: V
   } = (0, u.Z)(b, t);
   s.useEffect(() => {
-    I(g)
-  }, [I, g]);
-  let z = async () => {
-    let e = M;
-    if (!U) {
-      if (null == S || null == Z) return;
-      let t = await a.Z.createGuildFromTemplate(S, O, Z);
-      k(e = (0, c.R)(t))
+    I(f)
+  }, [I, f]);
+  let X = async () => {
+    let e = H;
+    if (!B) {
+      if (null == T || null == Z) return;
+      let t = await a.Z.createGuildFromTemplate(T, S, Z);
+      G(e = (0, c.R)(t))
     }
-    null != e && (await d.bF(t, e.id, H, G), I(p.VX.CONFIRMATION))
-  }, X = {
+    null != e && (await d.bF(t, e.id, k, w), I(h.VX.CONFIRMATION))
+  }, F = {
     impression_group: l.ImpressionGroups.DIRECTORY_GUILD_ADD_FLOW
   };
   return (0, i.jsx)("div", {
@@ -53,77 +53,77 @@ function g(e) {
       disableTrack: true,
       parentComponent: "CreateOrAddGuildModal",
       children: (0, i.jsx)("div", {
-        className: f.container,
+        className: g.container,
         children: (0, i.jsxs)(r.MyZ, {
-          activeSlide: N,
+          activeSlide: v,
           width: 440,
-          onSlideReady: e => v(e),
+          onSlideReady: e => y(e),
           children: [(0, i.jsx)(r.Mi4, {
-            id: p.VX.CHOOSE_GUILD,
+            id: h.VX.CHOOSE_GUILD,
             impressionName: l.ImpressionNames.HUB_EXISTING_GUILD_CHOOSE,
-            impressionProperties: X,
+            impressionProperties: F,
             children: (0, i.jsx)(m.Z, {
               directoryChannelId: t,
-              directoryGuildName: j,
+              directoryGuildName: _,
               onGuildChosen: e => {
-                R(true), I(p.VX.CUSTOMIZE_EXISTING_GUILD), k(e)
+                R(true), I(h.VX.CUSTOMIZE_EXISTING_GUILD), G(e)
               },
               handleChooseCreate: () => {
-                R(false), I(p.VX.GUILD_TEMPLATES)
+                R(false), I(h.VX.GUILD_TEMPLATES)
               },
-              onClose: _,
+              onClose: j,
               availableGuilds: A,
               addedGuilds: P,
               loading: V
             })
           }), (0, i.jsx)(r.Mi4, {
-            id: p.VX.GUILD_TEMPLATES,
+            id: h.VX.GUILD_TEMPLATES,
             impressionName: l.ImpressionNames.HUB_CREATE_GUILD_TEMPLATE,
-            impressionProperties: X,
-            children: (0, i.jsx)(h.Z, {
-              directoryGuildName: j,
+            impressionProperties: F,
+            children: (0, i.jsx)(p.Z, {
+              directoryGuildName: _,
               onChooseTemplate: e => {
-                R(false), I(p.VX.CUSTOMIZE_NEW_GUILD), E(e)
+                R(false), I(h.VX.CUSTOMIZE_NEW_GUILD), O(e)
               },
-              onClose: _,
-              onBack: () => I(p.VX.CHOOSE_GUILD)
+              onClose: j,
+              onBack: () => I(h.VX.CHOOSE_GUILD)
             })
           }), (0, i.jsx)(r.Mi4, {
-            id: p.VX.CUSTOMIZE_NEW_GUILD,
+            id: h.VX.CUSTOMIZE_NEW_GUILD,
             impressionName: l.ImpressionNames.HUB_CREATE_GUILD_CUSTOMIZE,
-            impressionProperties: X,
+            impressionProperties: F,
             children: (0, i.jsx)(o.Z, {
               guildTemplate: Z,
               onHubGuildInfoSet: (e, t) => {
-                T(e), B(t), I(p.VX.CUSTOMIZE_EXISTING_GUILD)
+                E(e), M(t), I(h.VX.CUSTOMIZE_EXISTING_GUILD)
               },
-              onClose: _,
-              onBack: () => I(p.VX.GUILD_TEMPLATES),
-              isSlideReady: y === p.VX.CUSTOMIZE_NEW_GUILD
+              onClose: j,
+              onBack: () => I(h.VX.GUILD_TEMPLATES),
+              isSlideReady: N === h.VX.CUSTOMIZE_NEW_GUILD
             })
           }), (0, i.jsx)(r.Mi4, {
-            id: p.VX.CUSTOMIZE_EXISTING_GUILD,
+            id: h.VX.CUSTOMIZE_EXISTING_GUILD,
             impressionName: l.ImpressionNames.HUB_EXISTING_GUILD_CUSTOMIZE,
-            impressionProperties: X,
+            impressionProperties: F,
             children: (0, i.jsx)(x.Z, {
               directoryChannelId: t,
-              description: H,
+              description: k,
               onDescriptionChange: D,
-              categoryId: G,
-              onCategoryIdChange: w,
-              onSubmit: z,
-              onBack: () => I(U ? p.VX.CHOOSE_GUILD : p.VX.CUSTOMIZE_NEW_GUILD),
-              onClose: _
+              categoryId: w,
+              onCategoryIdChange: U,
+              onSubmit: X,
+              onBack: () => I(B ? h.VX.CHOOSE_GUILD : h.VX.CUSTOMIZE_NEW_GUILD),
+              onClose: j
             })
           }), (0, i.jsx)(r.Mi4, {
-            id: p.VX.CONFIRMATION,
+            id: h.VX.CONFIRMATION,
             impressionName: l.ImpressionNames.DIRECTORY_ADD_GUILD_CONFIRMATION,
-            impressionProperties: X,
+            impressionProperties: F,
             children: (0, i.jsx)(C.Z, {
-              directoryGuildName: j,
-              guildToAdd: M,
-              isExistingGuildFlow: U,
-              onClose: _
+              directoryGuildName: _,
+              guildToAdd: H,
+              isExistingGuildFlow: B,
+              onClose: j
             })
           })]
         })

@@ -118,14 +118,14 @@ let E = Chunk647438.forwardRef(function(e, t) {
       }, [e]), t.current
     }(),
     [D, L] = o.useState(E ? 0 : false),
-    k = o.useMemo(b, []),
-    w = {
+    w = o.useMemo(b, []),
+    k = {
       onPopulated: _,
-      sortedInputs: k
+      sortedInputs: w
     },
-    M = o.useRef(w);
+    M = o.useRef(k);
   o.useEffect(() => {
-    M.current = w
+    M.current = k
   }), o.useEffect(() => {
     let {
       onPopulated: e,
@@ -140,7 +140,7 @@ let E = Chunk647438.forwardRef(function(e, t) {
   for (let e = 0; e < 3; e++) {
     let {
       type: t
-    } = k[e];
+    } = w[e];
     switch (t) {
       case "day":
         P.push({

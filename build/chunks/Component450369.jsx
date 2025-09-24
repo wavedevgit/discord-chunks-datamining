@@ -130,24 +130,24 @@ let k = 16 / 9,
       id: g,
       blocked: m,
       ignored: y
-    } = t, v = (0, o.Wu)([I.Z], () => I.Z.getAllActiveStreams(), []), {
+    } = t, x = (0, o.Wu)([I.Z], () => I.Z.getAllActiveStreams(), []), {
       selectedParticipant: C,
       largeStream: E
     } = (0, o.cj)([b.Z], () => ({
       selectedParticipant: null != l ? b.Z.getSelectedParticipant(l.id) : null,
       largeStream: null != l && b.Z.getStageStreamSize(l.id)
     })), P = i.useCallback((e, t) => {
-      if (e.type === A.fO.STREAM && 0 === v.filter(t => (0, O.V9)(t) === e.id && t.state !== w.jm8.ENDED).length) {
+      if (e.type === A.fO.STREAM && 0 === x.filter(t => (0, O.V9)(t) === e.id && t.state !== w.jm8.ENDED).length) {
         if (!(0, j.p9)(l, T.Z, S.Z, Z.Z, _.Z)[0]) return;
         (0, p.rn)((0, O.my)(e.id), {
           forceMultiple: t.shiftKey
         })
       }(null == C ? true : C.id) === e.id ? E ? (d.Z.selectParticipant(l.id, null), d.Z.updateStageStreamSize(l.id, false)) : d.Z.updateStageStreamSize(l.id, true) : (d.Z.updateStageStreamSize(l.id, false), d.Z.selectParticipant(l.id, e.id))
-    }, [v, l, C, E]);
+    }, [x, l, C, E]);
     return (0, r.jsx)(N.Z, {
       participant: n,
       aspectRatio: k,
-      fit: n.type === A.fO.USER ? x.L.COVER : true,
+      fit: n.type === A.fO.USER ? v.L.COVER : true,
       blocked: m,
       ignored: y,
       channel: l,
@@ -173,8 +173,8 @@ let k = 16 / 9,
     a()(null != _, "Channel cannot be guildless");
     let {
       user: j
-    } = i, x = (0, o.e7)([b.Z], () => b.Z.getParticipant(l.id, i.id), [l.id, i.id]), C = (0, o.e7)([P.ZP], () => P.ZP.isModerator(j.id, l.id), [l.id, j.id]);
-    if (null == x || x.type === A.fO.ACTIVITY) return null;
+    } = i, v = (0, o.e7)([b.Z], () => b.Z.getParticipant(l.id, i.id), [l.id, i.id]), C = (0, o.e7)([P.ZP], () => P.ZP.isModerator(j.id, l.id), [l.id, j.id]);
+    if (null == v || v.type === A.fO.ACTIVITY) return null;
     let I = e => {
         (0, m.h)({
           type: s.ImpressionTypes.MENU,
@@ -210,7 +210,7 @@ let k = 16 / 9,
             return;
           case A.fO.USER:
           default:
-            if (I(A.TH.USER), i) return (0, v.D)(t, j, l, {
+            if (I(A.TH.USER), i) return (0, x.D)(t, j, l, {
               context: p
             }, (e, t) => (0, y.o)({
               menuName: e,
@@ -241,9 +241,9 @@ let k = 16 / 9,
             })
         }
       };
-    return x.type !== A.fO.USER || (null == (t = x.voiceState) ? true : t.selfVideo) ? (0, r.jsx)(G, {
+    return v.type !== A.fO.USER || (null == (t = v.voiceState) ? true : t.selfVideo) ? (0, r.jsx)(G, {
       stageParticipant: i,
-      rtcParticipant: x,
+      rtcParticipant: v,
       channel: l,
       guildId: _,
       user: j,
@@ -253,7 +253,7 @@ let k = 16 / 9,
       inPopout: p === w.IlC.POPOUT
     }) : (0, r.jsx)(U, {
       stageParticipant: i,
-      rtcParticipant: x,
+      rtcParticipant: v,
       channel: l,
       guildId: _,
       user: j,

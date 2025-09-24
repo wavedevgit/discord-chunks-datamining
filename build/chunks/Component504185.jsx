@@ -103,7 +103,7 @@ function eo(e) {
     popoutOpen: l,
     popoutWindow: a,
     currentWindow: O
-  }), x = n === et.IlC.POPOUT && G.isPlatformEmbedded && H.ZP.supportsFeature(et.eRX.POPOUT_WINDOWS);
+  }), v = n === et.IlC.POPOUT && G.isPlatformEmbedded && H.ZP.supportsFeature(et.eRX.POPOUT_WINDOWS);
   return (0, r.jsxs)(r.Fragment, {
     children: [m ? (0, r.jsx)(A.Z, {
       context: (0, _.Z)(c.type),
@@ -111,7 +111,7 @@ function eo(e) {
       currentWindow: O,
       sliderClassName: ei.volumeSlider,
       location: d
-    }) : null, x ? (0, r.jsx)(w.Z, {
+    }) : null, v ? (0, r.jsx)(w.Z, {
       popoutWindowAlwaysOnTop: s,
       onToggleStayOnTop: es
     }) : null, g ? (0, r.jsx)(R.Z, {
@@ -156,14 +156,14 @@ function ed(e) {
       idleProps: j
     } = e,
     {
-      analyticsLocations: x
+      analyticsLocations: v
     } = (0, b.ZP)(m.Z.VOICE_CONTROL_TRAY),
-    v = (0, g.bp)(),
+    x = (0, g.bp)(),
     C = (0, o.e7)([U.Z], () => U.Z.getVoiceChannelId() === c.id, [c.id]),
     I = (0, o.e7)([k.Z], () => k.Z.can(et.Plq.CONNECT, c)),
     E = (0, B.w8)(c.id, z.pV.SPEAKER),
     S = (0, o.e7)([y.Z], () => y.Z.getSelectedParticipant(c.id)),
-    Z = f && v !== et.IlC.POPOUT,
+    Z = f && x !== et.IlC.POPOUT,
     [T, R] = i.useState(0),
     {
       isOnStartStageScreen: w
@@ -197,17 +197,17 @@ function ed(e) {
     },
     disableGradients: !C || 0 === T && N.e.TOP,
     renderBottomCenter: () => C ? (0, r.jsx)(b.Gt, {
-      value: x,
+      value: v,
       children: (0, r.jsx)(X.Z, {
         channel: c,
         isOnStartStageScreen: w
       })
     }) : null,
     renderBottomRight: () => C ? (0, r.jsx)(b.Gt, {
-      value: x,
+      value: v,
       children: (0, r.jsx)(eo, {
         channel: c,
-        appContext: v,
+        appContext: x,
         popoutOpen: f,
         popoutWindow: p,
         popoutWindowAlwaysOnTop: h,
@@ -265,7 +265,7 @@ function eu(e) {
     participantsListOpen: y.Z.getParticipantsListOpen(t.id)
   }), [t.id]), N = (0, o.e7)([M.Z], () => M.Z.getGuild(t.guild_id), [t.guild_id]), {
     hasParticipantsPanel: R
-  } = (0, v.Z)({
+  } = (0, x.Z)({
     location: "StageChannelCall"
   });
   (0, f.ZP)(() => {
@@ -317,7 +317,7 @@ function eu(e) {
             channel: t,
             guild: N,
             maxWidth: D
-          }), P && R && L && (0, r.jsx)(x.Z, {
+          }), P && R && L && (0, r.jsx)(v.Z, {
             channel: t,
             maxWidth: D
           })]

@@ -41,12 +41,12 @@ function _(e) {
   }(e, ["channelId", "className"]);
   let O = i.useRef(null),
     j = (0, a.e7)([f.ZP], () => f.ZP.getFocusedLayout() === g.MI.RESIZABLE),
-    x = i.useCallback(() => {
+    v = i.useCallback(() => {
       let e = j ? g.MI.NO_CHAT : g.MI.RESIZABLE;
       (0, h.gC)(e)
     }, [j]),
     {
-      unreadCount: v,
+      unreadCount: x,
       mentionCount: C
     } = function(e) {
       let t = (0, a.e7)([u.Z], () => !(0, l.isEmpty)(u.Z.getTypingUsers(e)), [e]),
@@ -75,9 +75,9 @@ function _(e) {
     S = [E];
   C > 0 && S.push(b.intl.formatToPlainString(b.t["3l1GOz"], {
     mentionCount: C
-  })), v > 0 && S.push(b.intl.string(b.t.x5zAGR));
+  })), x > 0 && S.push(b.intl.string(b.t.x5zAGR));
   let Z = (0, a.e7)([f.ZP], () => f.ZP.getFocusedLayout()),
-    T = C > 0 ? C : v,
+    T = C > 0 ? C : x,
     P = T > 0;
   return (0, r.jsxs)("div", {
     className: y.wrapper,
@@ -101,7 +101,7 @@ function _(e) {
     }({
       isTrayButton: true,
       buttonRef: O,
-      onClick: x,
+      onClick: v,
       label: E,
       "aria-label": S.join(", "),
       tooltipPosition: "top",
