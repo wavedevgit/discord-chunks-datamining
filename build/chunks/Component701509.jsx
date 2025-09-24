@@ -132,7 +132,7 @@ function S(t) {
       },
       impressionType: c.ImpressionTypes.MODAL
     }
-  }, tn)) : (null == a ? true : a.nsfwAllowed) === false && q && !F ? (0, l.jsx)(f.I, x({
+  }, tn)) : (null == a ? true : a.nsfwAllowed) === false && (q || B) && !F ? (0, l.jsx)(f.I, x({
     title: N.intl.string(B ? N.t["H0SG/v"] : N.t.NEabBQ),
     subtitle: N.intl.format(B ? N.t["6++3cX"] : N.t["2kHZen"], {
       helpURL: b.Z.getArticleURL(R.BhN.AGE_GATE)
