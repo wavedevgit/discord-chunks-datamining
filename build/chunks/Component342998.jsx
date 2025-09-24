@@ -51,14 +51,20 @@ let y = (0, Chunk879690.U)(e => ({
     };
     i.useEffect(() => () => {
       D && (w(g.L.USER_DISMISS), C(null))
-    }, [D, w, C]), (0, _.Z)({
+    }, [D, w, C]);
+    let [L, j] = i.useState(false);
+    i.useEffect(() => {
+      D && !L && j(true)
+    }, [D, L]), (0, _.Z)({
       name: o.ImpressionNames.CLOUD_PLAY_CTA,
       type: o.ImpressionTypes.VIEW,
       properties: {
         location_stack: v
       }
-    });
-    let L = () => {
+    }, {
+      disableTrack: !L
+    }, [L]);
+    let M = () => {
       w(g.L.USER_DISMISS), C(null)
     };
     return (0, r.jsx)(l.J2, {
@@ -80,7 +86,7 @@ let y = (0, Chunk879690.U)(e => ({
         text: E.intl.string(E.t["jaYS/v"]),
         onClick: x
       }],
-      onRequestClose: L
+      onRequestClose: M
     })
   },
   v = e => {
