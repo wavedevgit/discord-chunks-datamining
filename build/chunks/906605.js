@@ -50,7 +50,7 @@ function h() {
 function m(e, t) {
   var n;
   let i = null == (n = a.Z.getChannel(o.Z.getVoiceChannelId())) ? true : n.guild_id;
-  if (null == e || null == i) return void b(t);
+  if (null == e || null == i) return void b(false, t);
   r.Z.dispatch({
     type: "UPDATE_HANG_STATUS",
     status: e,
@@ -63,7 +63,7 @@ function m(e, t) {
 }
 
 function g(e, t, n) {
-  if ("" === e || null == t) return void b(n);
+  if ("" === e || null == t) return void b(false, n);
   r.Z.dispatch({
     type: "UPDATE_HANG_STATUS_CUSTOM",
     emoji: t,
@@ -79,7 +79,7 @@ function g(e, t, n) {
 }
 
 function E(e, t) {
-  if (null == e) return void b(t);
+  if (null == e) return void b(false, t);
   r.Z.dispatch({
     type: "UPDATE_HANG_STATUS_GAME_ACTIVITY",
     applicationId: e,
@@ -90,10 +90,10 @@ function E(e, t) {
   }, h()))
 }
 
-function b(e) {
+function b(e, t) {
   r.Z.dispatch({
     type: "CLEAR_HANG_STATUS",
-    saveAsDefault: e
+    saveAsDefault: t
   }), s.default.track(f.rMx.CLEAR_HANG_STATUS, p({
     manual_update: !!e
   }, h()))

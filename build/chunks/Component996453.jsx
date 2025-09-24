@@ -1,8 +1,8 @@
 /** Chunk was on 79764 **/
 /** chunk id: 996453, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  G: () => h,
-  Z: () => g
+  G: () => p,
+  Z: () => f
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,113 +18,113 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk960780 = require("./960780.js");
 
-function h(e) {
+function p(e) {
   var t;
   let {
     guildTemplate: n,
-    onClose: h,
-    onBack: g,
-    onHubGuildInfoSet: f,
-    onGuildCreated: j,
+    onClose: p,
+    onBack: f,
+    onHubGuildInfoSet: j,
+    onGuildCreated: h,
     isSlideReady: _,
     hasFooter: b = true,
     isCommunity: L = false
-  } = e, [v, I] = s.useState(u.Z.getGuildNameSuggestion()), [N, y] = s.useState(null), [Z, O] = s.useState(false), [T, E] = s.useState(null), S = !!(null == (t = d.default.getCurrentUser()) ? true : t.isStaff()), [M, H] = s.useState(S), G = (0, c.Dt)(), k = s.useRef(null);
-  s.useEffect(() => {
+  } = e, [I, v] = l.useState(u.Z.getGuildNameSuggestion()), [y, Z] = l.useState(null), [O, S] = l.useState(false), [N, T] = l.useState(null), E = !!(null == (t = d.default.getCurrentUser()) ? true : t.isStaff()), [M, G] = l.useState(E), H = (0, c.Dt)(), U = l.useRef(null);
+  l.useEffect(() => {
     var e;
-    _ && (null == (e = k.current) || e.focus())
+    _ && (null == (e = U.current) || e.focus())
   }, [_]);
-  let D = s.useCallback(async e => {
+  let D = l.useCallback(async e => {
       if (e.preventDefault(), null != n) {
-        O(true), E(null);
+        S(true), T(null);
         try {
-          if (null != f) f(v, N);
+          if (null != j) j(I, y);
           else {
-            let e = await m.Z.createGuildFromTemplate(v, N, n, L, M);
-            r.Z.transitionToGuildSync(e.id), null == j || j(e.id)
+            let e = await m.Z.createGuildFromTemplate(I, y, n, L, M);
+            r.Z.transitionToGuildSync(e.id), null == h || h(e.id)
           }
         } catch (e) {
-          E(e)
+          T(e)
         }
-        O(false)
+        S(false)
       }
-    }, [n, f, v, N, L, M, j]),
+    }, [n, j, I, y, L, M, h]),
     w = (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsx)(l.zxk, {
+      children: [(0, i.jsx)(s.zxk, {
         variant: "primary",
-        text: null != f ? C.intl.string(C.t.PDTjLC) : C.intl.string(C.t.CumH4u),
+        text: null != j ? C.intl.string(C.t.PDTjLC) : C.intl.string(C.t.CumH4u),
         onClick: D,
-        disabled: 0 === v.length,
-        loading: Z
-      }), (0, i.jsx)(l.Avr, {
+        disabled: 0 === I.length,
+        loading: O
+      }), (0, i.jsx)(s.Avr, {
         size: "sm",
         variant: "secondary",
         text: C.intl.string(C.t["13/7kZ"]),
-        onClick: g
+        onClick: f
       })]
     });
   return {
     content: (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsxs)(l.xBx, {
+      children: [(0, i.jsxs)(s.xBx, {
         direction: o.Z.Direction.VERTICAL,
-        className: p.header,
+        className: g.header,
         separator: false,
-        children: [(0, i.jsx)(l.X6q, {
-          className: p.title,
+        children: [(0, i.jsx)(s.X6q, {
+          className: g.title,
           variant: "heading-xl/semibold",
           children: C.intl.string(C.t["2H6Nio"])
-        }), (0, i.jsx)(l.Text, {
-          className: p.subtitle,
+        }), (0, i.jsx)(s.Text, {
+          className: g.subtitle,
           color: "header-secondary",
           variant: "text-md/normal",
           children: C.intl.string(C.t.AAfVqa)
-        }), null != h && (0, i.jsx)(l.olH, {
-          className: p.closeButton,
-          onClick: h
+        }), null != p && (0, i.jsx)(s.olH, {
+          className: g.closeButton,
+          onClick: p
         })]
-      }), (0, i.jsxs)(l.hzk, {
-        className: p.createGuild,
+      }), (0, i.jsxs)(s.hzk, {
+        className: g.createGuild,
         children: [(0, i.jsx)("div", {
-          className: p.uploadIcon,
+          className: g.uploadIcon,
           children: (0, i.jsx)(a.Z, {
-            icon: N,
-            onChange: y
+            icon: y,
+            onChange: Z
           })
         }), (0, i.jsxs)("form", {
           onSubmit: D,
-          children: [(0, i.jsx)(l.oil, {
+          children: [(0, i.jsx)(s.oil, {
             label: C.intl.string(C.t.dBih7e),
             required: true,
-            error: null == T ? true : T.getFirstFieldErrorMessage("name"),
-            value: v,
+            error: null == N ? true : N.getFirstFieldErrorMessage("name"),
+            value: I,
             maxLength: 100,
-            onChange: I,
-            inputRef: k,
-            id: G
-          }), S && (0, i.jsx)(l.j7V, {
+            onChange: v,
+            inputRef: U,
+            id: H
+          }), E && (0, i.jsx)(s.j7V, {
             hideBorder: true,
             value: M,
-            onChange: e => H(e),
+            onChange: e => G(e),
             note: C.intl.string(C.t.edQ5vb),
-            className: p.formItemSpaced,
-            children: (0, i.jsx)(l.vwX, {
+            className: g.formItemSpaced,
+            children: (0, i.jsx)(s.vwX, {
               children: "Staff Only"
             })
-          }), (0, i.jsx)(l.Text, {
+          }), (0, i.jsx)(s.Text, {
             variant: "text-xs/normal",
             color: "text-muted",
-            className: p.guidelines,
+            className: g.guidelines,
             children: C.intl.format(C.t["2bprX1"], {
               guidelinesURL: x.EYA.GUIDELINES
             })
           })]
-        }), null == T || T.hasFieldErrors() ? null : (0, i.jsx)(l.Text, {
+        }), null == N || N.hasFieldErrors() ? null : (0, i.jsx)(s.Text, {
           variant: "text-xs/normal",
           color: "text-danger",
-          children: T.message
+          children: N.message
         })]
-      }), b && (0, i.jsx)(l.mzw, {
-        className: p.footer,
+      }), b && (0, i.jsx)(s.mzw, {
+        className: g.footer,
         children: w
       })]
     }),
@@ -132,9 +132,9 @@ function h(e) {
   }
 }
 
-function g(e) {
+function f(e) {
   let {
     content: t
-  } = h(e);
+  } = p(e);
   return t
 }

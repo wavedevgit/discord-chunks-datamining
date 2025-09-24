@@ -1,15 +1,18 @@
 /** Chunk was on 79764 **/
 /** chunk id: 492749, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => L
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   r = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
+  Chunk369585 = require("./369585.jsx"),
+  Chunk103866 = require("./103866.jsx"),
+  Chunk213734 = require("./213734.jsx"),
+  Chunk37148 = require("./37148.jsx"),
   Chunk481060 = require("./481060.js"),
-  Chunk600164 = require("./600164.jsx"),
   Chunk565138 = require("./565138.jsx"),
   Chunk273387 = require("./273387.js"),
   Chunk16853 = require("./16853.jsx"),
@@ -18,20 +21,20 @@ var Chunk951288 = require("./951288.js"),
   Chunk36705 = require("./36705.js"),
   Chunk216019 = require("./216019.js");
 
-function g(e) {
+function _(e) {
   let {
     guild: t,
     onClick: n
   } = e;
-  return (0, i.jsxs)(o.P3F, {
-    className: C.clickableGuildRow,
+  return (0, i.jsxs)(m.P3F, {
+    className: f.clickableGuildRow,
     onClick: n,
-    children: [(0, i.jsx)(d.Z, {
+    children: [(0, i.jsx)(x.Z, {
       guild: t,
-      size: d.Z.Sizes.MEDIUM,
+      size: x.Z.Sizes.MEDIUM,
       active: true
-    }), (0, i.jsx)(o.Text, {
-      className: C.guildName,
+    }), (0, i.jsx)(m.Text, {
+      className: f.guildName,
       variant: "text-md/semibold",
       children: t.name
     }), (0, i.jsx)("img", {
@@ -41,27 +44,27 @@ function g(e) {
   })
 }
 
-function f(e) {
+function b(e) {
   let {
     directoryChannelId: t,
     guild: n
-  } = e, l = (0, a.e7)([u.Z], () => u.Z.getDirectoryEntry(t, n.id)), r = s.useRef(null);
+  } = e, s = (0, a.e7)([C.Z], () => C.Z.getDirectoryEntry(t, n.id)), r = l.useRef(null);
   return (0, i.jsxs)("div", {
-    className: C.guildRow,
-    children: [(0, i.jsx)(d.Z, {
+    className: f.guildRow,
+    children: [(0, i.jsx)(x.Z, {
       guild: n,
-      size: d.Z.Sizes.MEDIUM,
+      size: x.Z.Sizes.MEDIUM,
       active: true
-    }), (0, i.jsx)(o.Text, {
-      className: C.guildName,
+    }), (0, i.jsx)(m.Text, {
+      className: f.guildName,
       variant: "text-md/normal",
       children: n.name
-    }), (0, i.jsx)(m.Z, {
-      entry: l,
+    }), (0, i.jsx)(g.Z, {
+      entry: s,
       targetElementRef: r,
       children: e => {
         var t, n;
-        return (0, i.jsx)(o.xhG, (t = function(e) {
+        return (0, i.jsx)(m.xhG, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               i = Object.keys(n);
@@ -83,7 +86,7 @@ function f(e) {
           size: "md",
           color: "currentColor"
         }, e), n = n = {
-          className: C.overflowIcon
+          className: f.overflowIcon
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -99,108 +102,96 @@ function f(e) {
   })
 }
 
-function j(e) {
+function L(e) {
   let t, {
       directoryChannelId: n,
-      onClose: l,
-      onGuildChosen: a,
-      handleChooseCreate: d,
-      directoryGuildName: u,
-      availableGuilds: m,
-      addedGuilds: h,
-      loading: j
+      onGuildChosen: s,
+      handleChooseCreate: a,
+      directoryGuildName: x,
+      availableGuilds: C,
+      addedGuilds: g,
+      loading: h
     } = e,
-    [_, b] = s.useState(0);
-  return t = j ? (0, i.jsx)("div", {
-    className: C.emptyContainer,
-    children: (0, i.jsx)(o.$jN, {})
-  }) : 0 === _ ? 0 === m.length ? (0, i.jsxs)("div", {
-    className: C.emptyContainer,
+    [L, I] = l.useState(0);
+  return t = h ? (0, i.jsx)("div", {
+    className: f.emptyContainer,
+    children: (0, i.jsx)(m.$jN, {})
+  }) : 0 === L ? 0 === C.length ? (0, i.jsxs)("div", {
+    className: f.emptyContainer,
     children: [(0, i.jsx)("img", {
-      src: p,
+      src: j,
       alt: "",
-      className: C.emptyImage
-    }), (0, i.jsx)(o.Text, {
-      className: C.emptyText,
+      className: f.emptyImage
+    }), (0, i.jsx)(m.Text, {
+      className: f.emptyText,
       color: "header-secondary",
       variant: "text-md/normal",
-      children: x.intl.string(x.t.liuEhY)
+      children: p.intl.string(p.t.liuEhY)
     })]
-  }) : m.map(e => (0, i.jsx)(g, {
+  }) : C.map(e => (0, i.jsx)(_, {
     guild: e,
-    onClick: () => a(e)
-  }, e.id)) : 0 === h.length ? (0, i.jsxs)("div", {
-    className: C.emptyContainer,
+    onClick: () => s(e)
+  }, e.id)) : 0 === g.length ? (0, i.jsxs)("div", {
+    className: f.emptyContainer,
     children: [(0, i.jsx)("img", {
-      src: p,
+      src: j,
       alt: "",
-      className: C.emptyImage
-    }), (0, i.jsx)(o.Text, {
-      className: C.emptyText,
+      className: f.emptyImage
+    }), (0, i.jsx)(m.Text, {
+      className: f.emptyText,
       color: "header-secondary",
       variant: "text-md/normal",
-      children: x.intl.string(x.t.WJLuKC)
+      children: p.intl.string(p.t.WJLuKC)
     })]
-  }) : h.map(e => (0, i.jsx)(f, {
+  }) : g.map(e => (0, i.jsx)(b, {
     directoryChannelId: n,
     guild: e
   }, e.id)), (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsxs)(o.xBx, {
-      direction: c.Z.Direction.VERTICAL,
-      className: C.header,
-      separator: false,
-      children: [null != l && (0, i.jsx)(o.olH, {
-        className: C.closeButton,
-        onClick: l
-      }), (0, i.jsx)(o.X6q, {
-        className: C.title,
-        variant: "heading-xl/semibold",
-        children: x.intl.format(x.t["9SKJdH"], {
-          guildName: u
-        })
-      }), (0, i.jsx)(o.Text, {
-        className: C.subtitle,
-        color: "header-secondary",
-        variant: "text-md/normal",
-        children: x.intl.string(x.t.pYFZ9v)
-      }), (0, i.jsxs)(o.njP, {
-        className: C.tabBar,
-        selectedItem: _,
-        onItemSelect: b,
+    children: [(0, i.jsx)(u.x, {
+      title: p.intl.formatToPlainString(p.t["9SKJdH"], {
+        guildName: x
+      }),
+      subtitle: p.intl.string(p.t.pYFZ9v)
+    }), (0, i.jsx)(c.f, {
+      controls: (0, i.jsxs)(m.njP, {
+        className: f.tabBar,
+        selectedItem: L,
+        onItemSelect: I,
         type: "top",
         look: "brand",
-        children: [(0, i.jsx)(o.njP.Item, {
-          className: r()(C.tabBarItem, {
-            [C.selectedTab]: 0 === _
+        children: [(0, i.jsx)(m.njP.Item, {
+          className: r()(f.tabBarItem, {
+            [f.selectedTab]: 0 === L
           }),
           id: 0,
-          children: x.intl.string(x.t.FTe8HR)
-        }), (0, i.jsx)(o.njP.Item, {
-          className: r()(C.tabBarItem, {
-            [C.selectedTab]: 1 === _
+          children: p.intl.string(p.t.FTe8HR)
+        }), (0, i.jsx)(m.njP.Item, {
+          className: r()(f.tabBarItem, {
+            [f.selectedTab]: 1 === L
           }),
           id: 1,
-          children: x.intl.string(x.t.epOump)
+          children: p.intl.string(p.t.epOump)
         })]
-      })]
-    }), (0, i.jsx)(o.hzk, {
-      className: C.guildList,
-      paddingFix: false,
-      children: t
-    }), (0, i.jsxs)(o.mzw, {
-      className: C.footer,
-      children: [(0, i.jsx)(o.X6q, {
-        variant: "heading-lg/semibold",
-        className: C.footerTitle,
-        children: x.intl.string(x.t.pgCZRE)
-      }), (0, i.jsx)("div", {
-        "data-button-hoisted-classname-wrapper": true,
-        className: C.footerButton,
-        children: (0, i.jsx)(o.zxk, {
-          variant: "secondary",
-          text: x.intl.string(x.t.WqJbLi),
-          onClick: d
+      }),
+      children: (0, i.jsx)(m.Ttm, {
+        className: f.scroller,
+        children: (0, i.jsx)("div", {
+          className: f.guildList,
+          children: t
         })
+      })
+    }), (0, i.jsxs)(d.m, {
+      children: [(0, i.jsx)(m.X6q, {
+        variant: "heading-lg/semibold",
+        className: f.footerTitle,
+        children: p.intl.string(p.t.pgCZRE)
+      }), (0, i.jsx)(o.G, {
+        actionsFullWidth: true,
+        actions: [{
+          variant: "secondary",
+          text: p.intl.string(p.t.WqJbLi),
+          onClick: a
+        }]
       })]
     })]
   })

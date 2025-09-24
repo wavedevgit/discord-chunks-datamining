@@ -1,87 +1,71 @@
 /** Chunk was on 79764 **/
 /** chunk id: 66626, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => m
 }), require("./953529.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk369585 = require("./369585.jsx"),
+  Chunk103866 = require("./103866.jsx"),
+  Chunk37148 = require("./37148.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk479531 = require("./479531.js"),
-  Chunk600164 = require("./600164.jsx"),
   Chunk75666 = require("./75666.js"),
-  Chunk388032 = require("./388032.jsx"),
-  Chunk960780 = require("./960780.js");
+  Chunk388032 = require("./388032.jsx");
 
-function u(e) {
+function m(e) {
   let {
     directoryChannelId: t,
     description: n,
-    onDescriptionChange: u,
-    categoryId: m,
-    onCategoryIdChange: x,
-    onSubmit: C,
-    onClose: p,
-    onBack: h
-  } = e, [g, f] = s.useState(false), [j, _] = s.useState(null), b = async () => {
-    f(true);
+    onDescriptionChange: m,
+    categoryId: x,
+    onCategoryIdChange: C,
+    onSubmit: g,
+    onBack: p
+  } = e, [f, j] = l.useState(false), [h, _] = l.useState(null), b = async () => {
+    j(true);
     try {
-      await C()
+      await g()
     } catch (e) {
-      _(new r.Z(e))
+      _(new c.Z(e))
     }
-    f(false)
+    j(false)
   };
   return (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsxs)(l.xBx, {
-      direction: a.Z.Direction.VERTICAL,
-      className: d.header,
-      separator: false,
-      children: [(0, i.jsx)(l.X6q, {
-        className: d.title,
-        variant: "heading-xl/semibold",
-        children: c.intl.string(c.t["5bQcoa"])
-      }), (0, i.jsx)(l.Text, {
-        className: d.subtitle,
-        color: "header-secondary",
-        variant: "text-md/normal",
-        children: c.intl.string(c.t.Ie60WV)
-      }), null != p && (0, i.jsx)(l.olH, {
-        className: d.closeButton,
-        onClick: p
-      })]
-    }), (0, i.jsxs)(l.hzk, {
-      className: d.createGuild,
-      paddingFix: false,
-      children: [(0, i.jsx)(l.Kx8, {
-        label: c.intl.string(c.t.FFFAGh),
+    children: [(0, i.jsx)(a.x, {
+      title: u.intl.string(u.t["5bQcoa"]),
+      subtitle: u.intl.string(u.t.Ie60WV)
+    }), (0, i.jsxs)(r.f, {
+      children: [(0, i.jsx)(o.Kx8, {
+        label: u.intl.string(u.t.FFFAGh),
         value: n,
         maxLength: 200,
-        placeholder: c.intl.string(c.t.VzuITE),
-        onChange: u,
-        error: null == j ? true : j.getAnyErrorMessage()
-      }), (0, i.jsx)(l.q4e, {
-        label: c.intl.string(c.t.Olo8FB),
-        placeholder: c.intl.string(c.t.XqMe3N),
-        options: (0, o.b7)(t),
+        placeholder: u.intl.string(u.t.VzuITE),
+        onChange: m,
+        error: null == h ? true : h.getAnyErrorMessage()
+      }), (0, i.jsx)(o.q4e, {
+        label: u.intl.string(u.t.Olo8FB),
+        placeholder: u.intl.string(u.t.XqMe3N),
+        options: (0, d.b7)(t),
         clearable: false,
-        value: m,
-        onChange: x,
+        value: x,
+        onChange: C,
         maxVisibleItems: 4
       })]
-    }), (0, i.jsxs)(l.mzw, {
-      className: d.footer,
-      children: [(0, i.jsx)(l.zxk, {
-        variant: "primary",
-        text: c.intl.string(c.t.H9jxS0),
-        onClick: b,
-        loading: g,
-        disabled: "" === n || m === o.AR.UNCATEGORIZED
-      }), (0, i.jsx)(l.Avr, {
+    }), (0, i.jsx)(s.G, {
+      leading: (0, i.jsx)(o.Avr, {
         size: "sm",
         variant: "secondary",
-        text: c.intl.string(c.t["13/7kZ"]),
-        onClick: h
-      })]
+        text: u.intl.string(u.t["13/7kZ"]),
+        onClick: p
+      }),
+      actions: [{
+        variant: "primary",
+        text: u.intl.string(u.t.H9jxS0),
+        onClick: b,
+        loading: f,
+        disabled: "" === n || x === d.AR.UNCATEGORIZED
+      }]
     })]
   })
 }

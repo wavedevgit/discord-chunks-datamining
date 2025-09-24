@@ -13,63 +13,70 @@ let a = (0, Chunk818083.B)({
   defaultConfig: {
     enableHangStatus: false,
     setDefaultStatus: false,
-    allowChannelTopic: false,
-    defaultStatusVariant: "original"
+    allowChannelTopic: true,
+    allowPermanentClear: false,
+    defaultStatusVariant: "twemoji"
   },
   commonTriggerPoint: Chunk987338.$P.VOICE_CALL,
   treatments: [{
     id: 1,
-    label: "enable hang statuses with no default",
-    config: {
-      enableHangStatus: true,
-      setDefaultStatus: false,
-      allowChannelTopic: false,
-      defaultStatusVariant: "original"
-    }
-  }, {
-    id: 2,
-    label: "enable hang statuses with default",
-    config: {
-      enableHangStatus: true,
-      setDefaultStatus: true,
-      allowChannelTopic: false,
-      defaultStatusVariant: "original"
-    }
-  }, {
-    id: 3,
-    label: "enable hang statuses with channel topic",
-    config: {
-      enableHangStatus: true,
-      setDefaultStatus: false,
-      allowChannelTopic: true,
-      defaultStatusVariant: "original"
-    }
-  }, {
-    id: 4,
-    label: "illocon hang statuses with channel topic",
+    label: "Enable Hang Status with illocons - chilling default",
     config: {
       enableHangStatus: true,
       setDefaultStatus: true,
       allowChannelTopic: true,
+      allowPermanentClear: false,
       defaultStatusVariant: "illocons"
     }
   }, {
-    id: 5,
-    label: "grey icon hang statuses with channel topic",
+    id: 2,
+    label: "Enable Hang Status with Twemoji - chilling default",
     config: {
       enableHangStatus: true,
       setDefaultStatus: true,
       allowChannelTopic: true,
-      defaultStatusVariant: "icons"
+      allowPermanentClear: false,
+      defaultStatusVariant: "twemoji"
+    }
+  }, {
+    id: 3,
+    label: "Enable Hang Status with Twemoji - neutral default",
+    config: {
+      enableHangStatus: true,
+      setDefaultStatus: true,
+      allowChannelTopic: true,
+      allowPermanentClear: false,
+      defaultStatusVariant: "twemoji"
+    }
+  }, {
+    id: 4,
+    label: "Enable Hang Status with Twemoji - neutral default, allow clearing statuses",
+    config: {
+      enableHangStatus: true,
+      setDefaultStatus: true,
+      allowChannelTopic: true,
+      allowPermanentClear: true,
+      defaultStatusVariant: "twemoji"
+    }
+  }, {
+    id: 5,
+    label: "Enable Hang Status with Twemoji - no default, allow clearing statuses",
+    config: {
+      enableHangStatus: true,
+      setDefaultStatus: false,
+      allowChannelTopic: true,
+      allowPermanentClear: true,
+      defaultStatusVariant: "twemoji"
     }
   }, {
     id: 6,
-    label: "twemoji hang statuses with channel topic",
+    label: "Enable Hang Status with original icons - chilling default",
     config: {
       enableHangStatus: true,
       setDefaultStatus: true,
       allowChannelTopic: true,
-      defaultStatusVariant: "twemoji"
+      allowPermanentClear: false,
+      defaultStatusVariant: "original"
     }
   }]
 })

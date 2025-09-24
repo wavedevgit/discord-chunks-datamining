@@ -16,21 +16,21 @@ function a(e) {
     onClick: a,
     autoFocus: o
   } = e;
-  return (0, i.jsx)(s.tEY, {
+  return (0, i.jsx)(l.tEY, {
     children: (0, i.jsxs)("button", {
-      className: l.container,
+      className: s.container,
       onClick: a,
       autoFocus: o,
       children: [(0, i.jsx)("img", {
-        className: l.icon,
+        className: s.icon,
         alt: "",
         src: t
-      }), (0, i.jsx)(s.Text, {
-        className: l.text,
+      }), (0, i.jsx)(l.Text, {
+        className: s.text,
         variant: "text-md/bold",
         children: n
       }), (0, i.jsx)("img", {
-        className: l.arrow,
+        className: s.arrow,
         alt: "",
         src: r
       })]

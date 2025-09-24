@@ -13,7 +13,7 @@ var Chunk647438 = require("./647438.js"),
   Chunk273387 = require("./273387.js"),
   Chunk981631 = require("./981631.js");
 let m = (e, t) => {
-  let [n, m] = i.useState(false), x = (0, s.e7)([d.Z], () => d.Z.getAdminGuildEntryIds(t)), C = (0, s.Wu)([o.ZP, r.Z, a.Z], () => {
+  let [n, m] = i.useState(false), x = (0, l.e7)([d.Z], () => d.Z.getAdminGuildEntryIds(t)), C = (0, l.Wu)([o.ZP, r.Z, a.Z], () => {
     let t = o.ZP.getFlattenedGuildIds(),
       n = [];
     return t.forEach(t => {
@@ -21,7 +21,7 @@ let m = (e, t) => {
       null != i && a.Z.can(u.Plq.ADMINISTRATOR, i) && i.id !== e && n.push(i)
     }), n
   }, [e]);
-  return (0, l.ZP)(() => {
+  return (0, s.ZP)(() => {
     (async () => {
       m(true), await c._Q(t, C.map(e => e.id)), m(false)
     })()

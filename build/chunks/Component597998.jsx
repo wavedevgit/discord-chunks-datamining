@@ -100,7 +100,7 @@ let x = 16,
     return i && null == t ? (0, r.jsx)(l.P3F, {
       onClick: s,
       className: A.icons,
-      children: (0, r.jsx)(l.svS, {
+      children: (0, r.jsx)(l.EO4, {
         className: o()(A.icon, n)
       })
     }) : (0, r.jsx)(l.P3F, {
