@@ -30,7 +30,7 @@ function E(e) {
   return (0, r.jsx)(o.P3F, {
     className: y.soundIcon,
     onClick: e => n(t, e),
-    "aria-label": g.intl.string(g.t.Kd4uxM),
+    "aria-label": f.intl.string(f.t.Kd4uxM),
     children: (0, r.jsx)(o.gj8, {
       size: "xs",
       color: "currentColor",
@@ -114,7 +114,7 @@ let b = [{
     useLabel: () => Chunk388032.intl.string(Chunk388032.t.CP3DCw),
     sound: "reconnect"
   }].map(e => ({
-    node: (0, u.qs)("".concat(f.n.SOUNDS_LIST_ITEM_PREFIX).concat(e.sound), {
+    node: (0, u.qs)("".concat(g.n.SOUNDS_LIST_ITEM_PREFIX).concat(e.sound), {
       useTitle: () => {
         let t = e.useLabel();
         return (0, r.jsxs)("div", {
@@ -158,9 +158,9 @@ let b = [{
   }),
   T = (0, Chunk509613.$l)(Chunk313789.n.NOTIFICATION_SOUNDS_LIST, {
     collapseAfter: 4,
-    useCollapsibleTitle: (e, t) => e ? g.intl.formatToPlainString(g.t["0JYT9/"], {
+    useCollapsibleTitle: (e, t) => e ? f.intl.formatToPlainString(f.t["0JYT9/"], {
       count: t
-    }) : g.intl.formatToPlainString(g.t.ji1uNj, {
+    }) : f.intl.formatToPlainString(f.t.ji1uNj, {
       count: t
     }),
     ContextProvider: function(e) {

@@ -16,13 +16,13 @@ let u = Chunk647438.memo(function(e) {
     useTitle: n,
     layout: u,
     useSubtitle: c
-  } = t, [d, f] = i.useState(false), {
-    navTransition: g
+  } = t, [d, g] = i.useState(false), {
+    navTransition: f
   } = (0, l.t)();
   i.useEffect(() => {
     var e;
-    (null == g || null == (e = g.targetAccordion) ? true : e.key) === t.key && f(true)
-  }, [null == g ? true : g.targetAccordion, t.key]);
+    (null == f || null == (e = f.targetAccordion) ? true : e.key) === t.key && g(true)
+  }, [null == f ? true : f.targetAccordion, t.key]);
   let y = null == n ? true : n(d),
     O = null == c ? true : c();
   return (0, r.jsx)("div", {
@@ -31,7 +31,7 @@ let u = Chunk647438.memo(function(e) {
       title: y,
       subtitle: O,
       isOpen: d,
-      setIsOpen: f,
+      setIsOpen: g,
       children: u.map(e => (0, r.jsx)(o.Z, {
         node: e
       }, e.key))

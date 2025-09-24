@@ -156,6 +156,12 @@ class U extends(r = Chunk442837.ZP.Store) {
   shouldOpenWithoutBackstack() {
     return O
   }
+  getAnalyticsLocation() {
+    return I
+  }
+  getAnalyticsLocations() {
+    return T
+  }
   getProps() {
     return {
       submitting: f === Chunk981631.QZA.SUBMITTING,

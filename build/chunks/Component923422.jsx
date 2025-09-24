@@ -50,7 +50,7 @@ let N = (0, Chunk108843.Z)(function(e) {
         section: t
       } = e;
       return t !== o.ID.HEADER && t !== o.ID.CUSTOM && t !== o.ID.DIVIDER && "logout" !== t
-    }).filter(e => (null == e.predicate || e.predicate()) && (!G || null != U[e.section]));
+    }).filter(e => (null == e.predicate || e.predicate()) && (!G || null != U.get(e.section)));
   return (0, a.jsx)(u.Gt, {
     value: B,
     children: (0, a.jsxs)(r.v2r, {
@@ -95,7 +95,7 @@ let N = (0, Chunk108843.Z)(function(e) {
                 section: a,
                 analyticsLocations: n
               })
-            }(null != (e = U[l]) ? e : b.n.ACCOUNT_PANEL, l, B)
+            }(null != (e = U.get(l)) ? e : b.n.ACCOUNT_PANEL, l, B)
           }
         }), n = n = {
           children: (e => {

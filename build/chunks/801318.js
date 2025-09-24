@@ -62,10 +62,10 @@ function u(e, t, n) {
                 if (i()(c, e.toLowerCase())) returntrue;
               return "string" == typeof a && i()(c, a.toLowerCase())
             }(e, t, c, n) || u,
-            f = false;
+            g = false;
           if ((0, o.Lk)(e))
-            for (let t of e.layout) f = l(t, c, d) || f;
-          return !c && (d || f) && r.add(e.key), d || f
+            for (let t of e.layout) g = l(t, c, d) || g;
+          return !c && (d || g) && r.add(e.key), d || g
         };
       return l(e), r
     }(e, null != t ? t : "", n),

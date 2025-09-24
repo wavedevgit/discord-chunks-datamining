@@ -12,10 +12,11 @@ function o(e) {
       root: o,
       directory: s,
       target: a,
-      sidebarHeader: u,
-      sidebarFooter: c
+      onPanelChange: u,
+      sidebarHeader: c,
+      sidebarFooter: d
     } = e,
-    d = function(e, t) {
+    g = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -29,7 +30,7 @@ function o(e) {
         for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
       }
       return i
-    }(e, ["root", "directory", "target", "sidebarHeader", "sidebarFooter"]);
+    }(e, ["root", "directory", "target", "onPanelChange", "sidebarHeader", "sidebarFooter"]);
   return (0, r.jsx)(i.A, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -47,14 +48,15 @@ function o(e) {
       })
     }
     return e
-  }({}, d), n = n = {
+  }({}, g), n = n = {
     children: (0, r.jsx)(l.Z, {
-      onClose: d.onClose,
+      onClose: g.onClose,
       root: o,
       directory: s,
       target: a,
-      sidebarHeader: u,
-      sidebarFooter: c
+      onPanelChange: u,
+      sidebarHeader: c,
+      sidebarFooter: d
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);

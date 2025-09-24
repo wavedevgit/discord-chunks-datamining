@@ -62,7 +62,7 @@ function b(e) {
     badgeComponent: n,
     visibleContent: i
   } = e, l = null != i && t.includes(i), o = null != n ? (0, r.jsx)(n, {}) : (0, r.jsx)(a.IGR, {
-    text: f.intl.string(f.t.y2b7CA)
+    text: g.intl.string(g.t.y2b7CA)
   });
   return l ? o : null
 }
@@ -106,36 +106,36 @@ function T(e) {
   } = (0, u.t)(), {
     useTitle: a,
     trailing: c,
-    stronglyDiscouragedCustomTab: f
-  } = t, g = a(), y = i.useMemo(() => t.layout.flatMap(e => e.layout), [t]), O = (null == l ? true : l.key) === t.key, E = () => {
+    stronglyDiscouragedCustomTab: g
+  } = t, f = a(), y = i.useMemo(() => t.layout.flatMap(e => e.layout), [t]), O = (null == l ? true : l.key) === t.key, E = () => {
     o(t.key), s(false)
   };
-  return null != f ? (0, r.jsx)(f, {
+  return null != g ? (0, r.jsx)(g, {
     active: O,
     onClick: E
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(d.Z, {
       icon: t.icon,
-      title: g,
+      title: f,
       active: O,
       trailing: (0, r.jsx)(v, {
         trailing: c,
         visibleContent: n
       }),
       onClick: E
-    }), O && y.length > 1 && (0, r.jsx)(j, {
+    }), O && y.length > 1 && (0, r.jsx)(S, {
       categories: y
     })]
   })
 }
 
-function j(e) {
+function S(e) {
   let {
     categories: t
   } = e, [n, l] = i.useState(0), {
     setShowNavigationMobile: c,
     navigateTo: d
-  } = (0, u.t)(), [f, y] = (0, a.q_F)(() => ({
+  } = (0, u.t)(), [g, y] = (0, a.q_F)(() => ({
     y: 0,
     config: {
       mass: .1,
@@ -155,12 +155,12 @@ function j(e) {
     return null != t
   }), [t]);
   return (0, r.jsxs)("div", {
-    className: g.subnav,
+    className: f.subnav,
     children: [(0, r.jsx)("div", {
-      className: g.track,
+      className: f.track,
       children: (0, r.jsx)(s.animated.div, {
-        className: g.thumb,
-        style: f
+        className: f.thumb,
+        style: g
       })
     }), (0, r.jsx)("ul", {
       children: O.map((e, t) => {
@@ -176,7 +176,7 @@ function j(e) {
           },
           tag: "li",
           className: o()({
-            [g.active]: t === n
+            [f.active]: t === n
           }),
           children: i
         }, s)

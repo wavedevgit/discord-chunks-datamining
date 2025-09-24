@@ -17,17 +17,17 @@ function u(e) {
     } = e,
     [c, d] = i.useState(false),
     {
-      layout: f,
-      collapseAfter: g,
+      layout: g,
+      collapseAfter: f,
       ContextProvider: y,
       useCollapsibleTitle: O
     } = u,
-    E = f.filter(e => {
+    E = g.filter(e => {
       var t, n;
       return null == (n = null == (t = e.usePredicate) ? true : t.call(e)) || n
     }),
-    b = null != g ? E.slice(0, g) : E,
-    p = null != g ? E.slice(g) : [],
+    b = null != f ? E.slice(0, f) : E,
+    p = null != f ? E.slice(f) : [],
     v = null != y ? y : i.Fragment,
     T = null != (t = null == O ? true : O(c, p.length)) ? t : (n = p.length, c ? a.intl.formatToPlainString(a.t["3SHL+f"], {
       count: n

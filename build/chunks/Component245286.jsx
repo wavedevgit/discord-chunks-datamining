@@ -1,26 +1,44 @@
 /** Chunk was on 47129 **/
 /** chunk id: 245286, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => y
+  default: () => T
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
-var Chunk481060 = require("./481060.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk493773 = require("./493773.js"),
   Chunk82084 = require("./82084.jsx"),
   Chunk131051 = require("./131051.js"),
+  Chunk663389 = require("./663389.js"),
+  Chunk88658 = require("./88658.js"),
   Chunk996733 = require("./996733.js"),
   Chunk313789 = require("./313789.js"),
   Chunk914578 = require("./914578.jsx"),
   Chunk920952 = require("./920952.js"),
   Chunk839469 = require("./839469.js"),
+  Chunk518596 = require("./518596.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk942408 = require("./942408.js");
 
-function y(e) {
+function v(e) {
+  let {
+    destinationPanel: t,
+    originPanel: n
+  } = e;
+  (0, c.QB)({
+    destinationPane: t,
+    originPane: n,
+    subsection: u.Z.getSubsection(),
+    source: u.Z.getAnalyticsLocation(),
+    locationStack: u.Z.getAnalyticsLocations()
+  })
+}
+
+function T(e) {
   var t, {
       target: n
     } = e,
-    i = function(e, t) {
+    l = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -35,13 +53,20 @@ function y(e) {
       }
       return i
     }(e, ["target"]);
-  let d = (0, s.Z7)(),
+  let c = (0, d.Z7)(),
     {
-      node: f,
-      directory: g
-    } = (0, o.Z)(c.Z, d),
-    y = (t = a.n.ACCOUNT_PANEL, null == g.entry(n) ? t : n);
-  return (0, r.jsx)(l.Z, function(e) {
+      node: O,
+      directory: b
+    } = (0, a.Z)(y.Z, c),
+    p = (t = g.n.ACCOUNT_PANEL, null == b.entry(n) ? t : n),
+    T = i.useRef(null);
+  return (0, o.ZP)(() => {
+    let e = u.Z.getSection();
+    null != e && (v({
+      destinationPanel: e,
+      originPanel: null
+    }), T.current = e)
+  }), (0, r.jsx)(s.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -59,15 +84,22 @@ function y(e) {
     }
     return e
   }({
-    root: f,
-    directory: g,
-    sidebarHeader: O,
-    sidebarFooter: u.Z,
-    target: y
-  }, i))
+    root: O,
+    directory: b,
+    sidebarHeader: S,
+    sidebarFooter: f.Z,
+    onPanelChange: e => {
+      let t = (0, E.getUserSettingsSectionsByWebUserSettings)().get(e);
+      null != t && (v({
+        destinationPanel: t,
+        originPanel: T.current
+      }), T.current = t)
+    },
+    target: p
+  }, l))
 }
 
-function O() {
+function S() {
   let e = (0, Chunk996733.Z7)(),
     t = Chunk839469.R.useField("hasSearchResults"),
     n = Chunk839469.R.useField("searchResults");

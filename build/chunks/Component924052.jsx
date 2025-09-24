@@ -20,7 +20,7 @@ function u(e) {
       var t;
       return e.showNotice() && !(null == (t = e.canCloseEarly) ? true : t.call(e))
     })) && t), n.current = l.$x
-  }, []), f = i.useCallback(e => {
+  }, []), g = i.useCallback(e => {
     if (u) {
       o.S.dispatch(s.CkL.SHAKE_APP, {
         duration: 300,
@@ -29,13 +29,13 @@ function u(e) {
       return
     }
     e()
-  }, [u]), g = i.useMemo(() => ({
-    navigateWithValidation: f,
+  }, [u]), f = i.useMemo(() => ({
+    navigateWithValidation: g,
     showNotice: u,
     handleStoreUpdate: d
-  }), [f, u, d]);
+  }), [g, u, d]);
   return (0, r.jsx)(a.Provider, {
-    value: g,
+    value: f,
     children: t
   })
 }

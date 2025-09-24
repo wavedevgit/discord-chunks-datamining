@@ -2,7 +2,7 @@
 /** chunk id: 509613, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   $l: () => y,
-  CB: () => g,
+  CB: () => f,
   Em: () => p,
   J9: () => v,
   ON: () => T,
@@ -34,7 +34,7 @@ require.d(exports, {
     return t
   },
   ax: () => E,
-  k4: () => f,
+  k4: () => g,
   m7: () => u,
   qs: () => b,
   so: () => s,
@@ -106,11 +106,11 @@ function d(e, t) {
   return o(e, r.Jq.PANE, t)
 }
 
-function f(e, t) {
+function g(e, t) {
   return o(e, r.Jq.CATEGORY, t)
 }
 
-function g(e, t) {
+function f(e, t) {
   return o(e, r.Jq.ACCORDION, t)
 }
 

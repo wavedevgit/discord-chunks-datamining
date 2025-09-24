@@ -47,17 +47,17 @@ function T(e) {
     onClose: a
   } = e, {
     showNavigationMobile: c
-  } = (0, f.t)(), y = i.useMemo(() => {
+  } = (0, g.t)(), y = i.useMemo(() => {
     let e = [];
     return t.layout.forEach(t => {
       let {
         trailing: n,
         layout: r
       } = t;
-      null != n && n.type === g.PU.POPOVER && e.push(n.dismissibleContentType), r.forEach(t => {
-        if (t.type === g.Jq.PANEL && null != t.trailing) switch (t.trailing.type) {
-          case g.PU.BADGE_NEW:
-          case g.PU.STRONGLY_DISCOURAGED_CUSTOM:
+      null != n && n.type === f.PU.POPOVER && e.push(n.dismissibleContentType), r.forEach(t => {
+        if (t.type === f.Jq.PANEL && null != t.trailing) switch (t.trailing.type) {
+          case f.PU.BADGE_NEW:
+          case f.PU.STRONGLY_DISCOURAGED_CUSTOM:
             var n;
             null == (n = t.trailing.dismissibleContentTypes) || n.forEach(t => {
               e.push(t)
@@ -96,7 +96,7 @@ function T(e) {
               "aria-label": b.intl.string(b.t.cpT0Cg)
             })
           }), (0, r.jsx)("div", {
-            children: O.map(e => (0, r.jsx)(m, {
+            children: O.map(e => (0, r.jsx)(N, {
               section: e,
               visibleContent: t,
               markAsDismissed: i
@@ -107,7 +107,7 @@ function T(e) {
           fade: true,
           children: [(0, r.jsx)("nav", {
             className: p.nav,
-            children: E.map(e => (0, r.jsx)(m, {
+            children: E.map(e => (0, r.jsx)(N, {
               section: e,
               visibleContent: t,
               markAsDismissed: i
@@ -119,38 +119,38 @@ function T(e) {
   })
 }
 
-function j(e) {
+function S(e) {
   let {
     dismissibleContentType: t,
     targetElementRef: n,
     visibleContent: l,
     markAsDismissed: o,
     props: s
-  } = e, [u, d] = i.useState(false), f = i.useRef(null);
-  (0, c.ZP)(() => (f.current = setTimeout(() => d(true), 250), () => {
-    clearTimeout(f.current), o(E.L.AUTO_DISMISS)
+  } = e, [u, d] = i.useState(false), g = i.useRef(null);
+  (0, c.ZP)(() => (g.current = setTimeout(() => d(true), 250), () => {
+    clearTimeout(g.current), o(E.L.AUTO_DISMISS)
   }));
-  let g = i.useCallback(e => {
+  let f = i.useCallback(e => {
     o("user:explicit" === e ? E.L.USER_DISMISS : E.L.AUTO_DISMISS)
   }, [o]);
   return (0, r.jsx)(a.Z, v({
     targetElementRef: n,
     shouldShow: u && l === t,
     scrollBehavior: "close",
-    onRequestClose: g
+    onRequestClose: f
   }, s))
 }
 
-function N(e) {
+function j(e) {
   let {
     trailing: t,
     sectionRef: n,
     visibleContent: i,
     markAsDismissed: l
   } = e;
-  if (t.type === g.PU.POPOVER) {
+  if (t.type === f.PU.POPOVER) {
     var o, s;
-    return (0, r.jsx)(j, (o = v({}, t), s = s = {
+    return (0, r.jsx)(S, (o = v({}, t), s = s = {
       targetElementRef: n,
       visibleContent: i,
       markAsDismissed: l
@@ -167,7 +167,7 @@ function N(e) {
   }
 }
 
-function m(e) {
+function N(e) {
   var t;
   let {
     section: n,
@@ -184,17 +184,17 @@ function m(e) {
         variant: "heading-sm/medium",
         color: "text-tertiary",
         children: a
-      }), null != c && (0, r.jsx)(N, {
+      }), null != c && (0, r.jsx)(j, {
         trailing: c,
         sectionRef: s,
         visibleContent: l,
         markAsDismissed: o
       })]
     }), n.layout.map(e => (0, r.jsxs)("li", {
-      children: [e.type === g.Jq.PANEL && (0, r.jsx)(y.Z, {
+      children: [e.type === f.Jq.PANEL && (0, r.jsx)(y.Z, {
         node: e,
         visibleContent: l
-      }), e.type === g.Jq.SIDEBAR_ITEM && ("render" in e ? (0, r.jsx)(O.Z, {
+      }), e.type === f.Jq.SIDEBAR_ITEM && ("render" in e ? (0, r.jsx)(O.Z, {
         render: e.render
       }) : (0, r.jsx)(O.Z, {
         icon: e.icon,

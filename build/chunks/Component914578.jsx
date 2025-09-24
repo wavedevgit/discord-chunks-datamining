@@ -40,7 +40,7 @@ function p(e) {
       }), (0, r.jsx)(s.sNh, {
         id: "support",
         label: E.intl.string(E.t["Yl/Rio"]),
-        action: () => (0, a.Z)(f.w)
+        action: () => (0, a.Z)(g.w)
       })]
     })
   })

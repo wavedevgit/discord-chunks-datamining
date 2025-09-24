@@ -1,7 +1,7 @@
 /** Chunk was on 47129 **/
 /** chunk id: 466802, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => g
 });
 var Chunk73837 = require("./73837.jsx"),
   Chunk509613 = require("./509613.js"),
@@ -15,7 +15,7 @@ let d = (0, Chunk509613.x1)(Chunk313789.n.NITRO_PANE, {
     getLayout: () => [],
     render: Chunk748717.Z
   }),
-  f = (0, Chunk509613.wf)(Chunk313789.n.NITRO_PANEL, {
+  g = (0, Chunk509613.wf)(Chunk313789.n.NITRO_PANEL, {
     icon: Chunk73837.Sr,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.Ipxkoq),
     getLayout: () => [d],

@@ -1,7 +1,7 @@
 /** Chunk was on 47129 **/
 /** chunk id: 79808, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => f
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -43,23 +43,24 @@ function d(e, t) {
   }), e
 }
 
-function f(e) {
-  var t, n, f;
+function g(e) {
+  var t, n, g;
   let {
-    root: g,
+    root: f,
     directory: y,
     target: O,
     onClose: E,
     sidebarHeader: b,
-    sidebarFooter: p
-  } = e, [v, T] = i.useState(true), [j, N] = i.useState(null == (t = y.entry(O)) ? true : t.parentPanel), [m, S] = i.useState(() => y.typedGet(j)), C = i.useCallback(() => P(true), []), [_, P] = i.useState({
+    sidebarFooter: p,
+    onPanelChange: v
+  } = e, [T, S] = i.useState(true), [j, N] = i.useState(null == (t = y.entry(O)) ? true : t.parentPanel), [m, C] = i.useState(() => y.typedGet(j)), _ = i.useCallback(() => x(true), []), [P, x] = i.useState({
     target: O,
     targetAccordion: null == (n = y.entry(O)) ? true : n.parentAccordion,
     animateScroll: false,
-    complete: C
+    complete: _
   }), {
-    navigateWithValidation: x
-  } = (0, s.Cu)(), I = i.useMemo(() => ({
+    navigateWithValidation: I
+  } = (0, s.Cu)(), A = i.useMemo(() => ({
     currentPanel: y.typedGet(j),
     navigateTo: e => {
       let t = y.entry(e);
@@ -67,42 +68,42 @@ function f(e) {
       let n = {
         target: e,
         targetAccordion: t.parentAccordion,
-        complete: C
+        complete: _
       };
       if (t.parentPanel.key !== (null == j ? true : j.key)) {
         let e = t.parentPanel;
-        x(() => {
-          P(d(c({}, n), {
+        I(() => {
+          x(d(c({}, n), {
             animateScroll: false
-          })), S(e), N(e)
+          })), C(e), N(e), null == v || v(e.key)
         })
-      } else P(d(c({}, n), {
+      } else x(d(c({}, n), {
         animateScroll: true
       }))
     },
-    navTransition: _,
-    showNavigationMobile: v,
-    setShowNavigationMobile: T
-  }), [y, j, _, v, C, x]), A = () => x(E);
+    navTransition: P,
+    showNavigationMobile: T,
+    setShowNavigationMobile: S
+  }), [y, j, P, T, _, I, v]), h = () => I(E);
   return (0, r.jsx)(a.j.Provider, {
-    value: I,
+    value: A,
     children: (0, r.jsxs)("div", {
       className: u.container,
       children: [(0, r.jsx)(o.P, {
-        root: g,
+        root: f,
         header: b,
         footer: p,
-        onClose: A
+        onClose: h
       }), (0, r.jsx)(l.Z, {
-        onClose: A,
-        setting: null != (f = I.currentPanel) ? f : m
+        onClose: h,
+        setting: null != (g = A.currentPanel) ? g : m
       })]
     })
   })
 }
 
-function g(e) {
+function f(e) {
   return (0, r.jsx)(s.Ri, {
-    children: (0, r.jsx)(f, c({}, e))
+    children: (0, r.jsx)(g, c({}, e))
   })
 }

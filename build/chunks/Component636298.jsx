@@ -38,13 +38,13 @@ function O(e) {
     setShowNavigationMobile: i
   } = (0, c.t)();
   return (0, r.jsxs)("div", {
-    className: g.contentHeader,
+    className: f.contentHeader,
     children: [(0, r.jsxs)("div", {
-      className: g.contentHeaderLeft,
+      className: f.contentHeaderLeft,
       children: [s.tq && (0, r.jsx)(y, {
         icon: u.yFM,
         onClick: () => i(true),
-        label: f.intl.string(f.t["13/7kZ"])
+        label: g.intl.string(g.t["13/7kZ"])
       }), (0, r.jsx)(u.X6q, {
         variant: "heading-md/medium",
         color: "header-secondary",
@@ -53,7 +53,7 @@ function O(e) {
     }), (0, r.jsx)(y, {
       icon: u.Uz9,
       onClick: n,
-      label: f.intl.string(f.t.cpT0Cg)
+      label: g.intl.string(g.t.cpT0Cg)
     })]
   })
 }
@@ -65,15 +65,15 @@ let E = Chunk647438.memo(function(e) {
     showNavigationMobile: l
   } = (0, c.t)();
   return (0, r.jsxs)("div", {
-    className: o()(g.content, {
-      [g.mobile]: s.tq,
-      [g.mobileNavigationOpen]: l
+    className: o()(f.content, {
+      [f.mobile]: s.tq,
+      [f.mobileNavigationOpen]: l
     }),
     children: [(0, r.jsx)(O, {
       title: i,
       onClose: t
     }), (0, r.jsx)("div", {
-      className: g.contentBody,
+      className: f.contentBody,
       children: null != n && (0, r.jsx)(d.Z, {
         node: n
       })

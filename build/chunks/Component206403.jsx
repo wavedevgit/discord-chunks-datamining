@@ -18,14 +18,14 @@ function u(e) {
     title: u,
     secondaryTitle: c,
     description: d,
-    compact: f = false,
-    onClick: g
+    compact: g = false,
+    onClick: f
   } = e;
   return (0, r.jsxs)(s.P3F, {
     className: l()(a.baseControlItem, {
-      [a.compact]: f
+      [a.compact]: g
     }),
-    onClick: g,
+    onClick: f,
     children: [null != t && (0, r.jsx)("div", {
       className: a.baseControlItemLeadingElement,
       children: t

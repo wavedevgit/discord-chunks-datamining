@@ -36,11 +36,11 @@ function E(e) {
         node: t
       });
     case i.Jq.LIST:
-      return (0, r.jsx)(g.Z, {
+      return (0, r.jsx)(f.Z, {
         node: t
       });
     case i.Jq.CATEGORY:
-      return (0, r.jsx)(f.Z, {
+      return (0, r.jsx)(g.Z, {
         node: t
       });
     case i.Jq.ACCORDION:
