@@ -192,15 +192,13 @@ function D(e) {
     children: i
   } = e;
   return (0, r.jsxs)(r.Fragment, {
-    children: ["top" === n && (0, r.jsx)("div", {
+    children: [n && (0, r.jsx)("div", {
       className: v.divider
     }), (0, r.jsx)("ul", {
       role: "group",
       "aria-labelledby": "".concat(t, "-header"),
       children: i
-    }, t), "bottom" === n && (0, r.jsx)("div", {
-      className: v.divider
-    })]
+    }, t)]
   })
 }
 
@@ -231,10 +229,10 @@ function L(e) {
     rows: s,
     title: l,
     trailingIcon: c
-  } = n.data, u = i > 0, d = 0 === i, f = u ? "top" : d ? "bottom" : null;
+  } = n.data;
   return (0, r.jsxs)(D, {
     title: l,
-    showDivider: f,
+    showDivider: i > 0,
     children: [(0, r.jsx)(x, {
       headerId: l,
       titleText: l,

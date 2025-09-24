@@ -110,7 +110,7 @@ let C = Chunk647438.forwardRef(function(e, t) {
       m(c + e)
     };
     return i.useEffect(() => {
-      u(false)
+      o.mode.type === I.Sap.FILTER ? u(0) : u(false)
     }, [o.mode.type]), i.useImperativeHandle(t, () => ({
       selectedIndex: c,
       focusNextOption: () => {

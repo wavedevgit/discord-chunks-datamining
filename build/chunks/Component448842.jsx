@@ -174,7 +174,7 @@ function C(e) {
               o = (0, l.X3)(n);
             C({
               query: "".concat(null != (t = null == a ? true : a.key) ? t : i.toString(), " ").concat(o),
-              performSearch: false,
+              performSearch: true,
               replace: false
             })
           },
@@ -415,7 +415,7 @@ function C(e) {
               autocompleteCount: e
             }), C({
               query: a,
-              performSearch: false,
+              performSearch: true,
               replace: false
             })
           };
@@ -439,7 +439,7 @@ function C(e) {
         }
       });
       return {
-        items: [...t, M]
+        items: [...t]
       }
     }
   })[P.type])(), U = i.useMemo(() => {
