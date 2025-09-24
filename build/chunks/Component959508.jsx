@@ -42,8 +42,8 @@ function C(e) {
     onPromptDragStart: P,
     onPromptDragReset: w
   } = e, R = (0, a.e7)([h.Z], () => h.Z.editedDefaultChannelIds), {
-    drag: Z,
-    dragSourcePosition: D,
+    drag: D,
+    dragSourcePosition: Z,
     drop: A,
     setIsDraggable: L
   } = (0, u.Z)({
@@ -56,7 +56,7 @@ function C(e) {
   }), k = (0, a.cj)([x.Z], () => {
     var e;
     return null != (e = x.Z.errors[j]) ? e : y
-  }), [M, G] = i.useState(false), [U, B] = i.useState(false), F = null != (t = k.options) ? t : k.optionErrors.filter(f.lm)[0], H = k.config, z = l.options.length >= v.fY, V = (0, g.kl)(n.id, Array.from(R), [l]).length - R.size, W = i.useRef(null), K = i.useRef(j);
+  }), [G, M] = i.useState(false), [U, B] = i.useState(false), F = null != (t = k.options) ? t : k.optionErrors.filter(f.lm)[0], H = k.config, z = l.options.length >= v.fY, V = (0, g.kl)(n.id, Array.from(R), [l]).length - R.size, W = i.useRef(null), K = i.useRef(j);
   return (i.useEffect(() => {
     K.current = j
   }), i.useLayoutEffect(() => {
@@ -66,19 +66,19 @@ function C(e) {
         null == (e = W.current) || e.focus()
       }
     }, 0)
-  }, [m]), M) ? (0, r.jsx)(d.tEY, {
+  }, [m]), G) ? (0, r.jsx)(d.tEY, {
     children: (0, r.jsxs)("div", {
       tabIndex: 0,
       onFocus: () => B(true),
       onBlur: () => B(false),
       onMouseLeave: () => B(false),
       className: s()(O.container, {
-        [O.dropIndicatorBefore]: null != D && j < D,
-        [O.dropIndicatorAfter]: null != D && j > D,
+        [O.dropIndicatorBefore]: null != Z && j < Z,
+        [O.dropIndicatorAfter]: null != Z && j > Z,
         [O.containerFocused]: U
       }),
       ref: e => {
-        Z(A(e))
+        D(A(e))
       },
       children: [(0, r.jsx)("div", {
         className: O.dragContainer,
@@ -101,7 +101,7 @@ function C(e) {
         children: l.title
       }), (0, r.jsx)(d.P3F, {
         className: O.collapseButton,
-        onClick: () => G(false),
+        onClick: () => M(false),
         children: (0, r.jsx)(p.Z, {
           direction: p.Z.Directions.DOWN,
           height: 16,
@@ -128,12 +128,12 @@ function C(e) {
       onFocus: () => B(true),
       onBlur: () => B(false),
       className: s()(O.container, {
-        [O.dropIndicatorBefore]: null != D && j < D,
-        [O.dropIndicatorAfter]: null != D && j > D,
+        [O.dropIndicatorBefore]: null != Z && j < Z,
+        [O.dropIndicatorAfter]: null != Z && j > Z,
         [O.containerFocused]: U
       }),
       ref: e => {
-        Z(A(e))
+        D(A(e))
       },
       children: [(0, r.jsx)("div", {
         className: O.dragContainer,
@@ -213,7 +213,7 @@ function C(e) {
           }) : null]
         }), (0, r.jsx)(d.P3F, {
           className: O.collapseButton,
-          onClick: () => G(true),
+          onClick: () => M(true),
           children: (0, r.jsx)(p.Z, {
             direction: p.Z.Directions.UP,
             height: 16,

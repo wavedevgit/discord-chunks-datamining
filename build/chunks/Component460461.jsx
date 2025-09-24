@@ -78,12 +78,12 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
       canManageGuild: R
     } = (0, Chunk442837.cj)([Chunk496675.Z], () => ({
       canManageGuild: Chunk496675.Z.can(Chunk981631.Plq.MANAGE_GUILD, Chunk852860)
-    })), Z = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.isGuildMetadataLoaded()), D = (0, Chunk442837.e7)([Chunk999382.Z], () => null != Chunk852860 ? Chunk999382.Z.getMetadata() : null), A = (0, Chunk442837.e7)([Chunk999382.Z], () => null != Chunk852860 && (null == D ? true : D.isPublished) ? Chunk999382.Z.getSlug() : null), [L, k] = Chunk647438.useState([true]), [M, G] = Chunk647438.useState(true), [U, B] = Chunk647438.useState([false]), [F, H] = Chunk647438.useState([""]);
+    })), D = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.isGuildMetadataLoaded()), Z = (0, Chunk442837.e7)([Chunk999382.Z], () => null != Chunk852860 ? Chunk999382.Z.getMetadata() : null), A = (0, Chunk442837.e7)([Chunk999382.Z], () => null != Chunk852860 && (null == Z ? true : Z.isPublished) ? Chunk999382.Z.getSlug() : null), [L, k] = Chunk647438.useState([true]), [G, M] = Chunk647438.useState(true), [U, B] = Chunk647438.useState([false]), [F, H] = Chunk647438.useState([""]);
     Chunk647438.useEffect(() => {
-      if (null !== D) {
+      if (null !== Z) {
         let e = [],
           t = [];
-        D.socialLinks.forEach((n, r) => {
+        Z.socialLinks.forEach((n, r) => {
           if ("" !== n) {
             let i = (e => {
               try {
@@ -99,11 +99,11 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
             })(n);
             null !== i ? (t[r] = i, e[r] = true) : e[r] = false
           } else e[r] = true
-        }), H(exports), k(module), G(module.every(e => true === e))
+        }), H(exports), k(module), M(module.every(e => true === e))
       }
-    }, [D]);
+    }, [Z]);
     let z = (0, Chunk442837.e7)([Chunk999382.Z], () => null != Chunk852860 ? Chunk999382.Z.getErrors() : null);
-    if (null == Chunk852860 || null == D) return null;
+    if (null == Chunk852860 || null == Z) return null;
     let V = e => {
         v.Z.updateGuild({
           discoverySplash: e
@@ -113,26 +113,26 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
         let t = () => {
           (0, g.W1)(d.id, e), e ? (0, g.Vv)({
             guildId: d.id,
-            primaryCategoryId: D.primaryCategoryId,
-            keywords: D.keywords,
-            emojiDiscoverabilityEnabled: D.emojiDiscoverabilityEnabled,
-            partnerActionedTimestamp: D.partnerActionedTimestamp,
-            partnerApplicationTimestamp: D.partnerApplicationTimestamp,
+            primaryCategoryId: Z.primaryCategoryId,
+            keywords: Z.keywords,
+            emojiDiscoverabilityEnabled: Z.emojiDiscoverabilityEnabled,
+            partnerActionedTimestamp: Z.partnerActionedTimestamp,
+            partnerApplicationTimestamp: Z.partnerApplicationTimestamp,
             isPublished: true,
-            reasonsToJoin: D.reasonsToJoin,
-            socialLinks: D.socialLinks,
-            about: D.about
+            reasonsToJoin: Z.reasonsToJoin,
+            socialLinks: Z.socialLinks,
+            about: Z.about
           }) : (0, g.Vv)({
             guildId: d.id,
-            primaryCategoryId: D.primaryCategoryId,
-            keywords: D.keywords,
-            emojiDiscoverabilityEnabled: D.emojiDiscoverabilityEnabled,
-            partnerActionedTimestamp: D.partnerActionedTimestamp,
-            partnerApplicationTimestamp: D.partnerApplicationTimestamp,
+            primaryCategoryId: Z.primaryCategoryId,
+            keywords: Z.keywords,
+            emojiDiscoverabilityEnabled: Z.emojiDiscoverabilityEnabled,
+            partnerActionedTimestamp: Z.partnerActionedTimestamp,
+            partnerApplicationTimestamp: Z.partnerApplicationTimestamp,
             isPublished: false,
-            reasonsToJoin: D.reasonsToJoin,
-            socialLinks: D.socialLinks,
-            about: D.about
+            reasonsToJoin: Z.reasonsToJoin,
+            socialLinks: Z.socialLinks,
+            about: Z.about
           }), v.Z.saveGuild(d.id, {
             discoverySplash: d.discoverySplash,
             description: d.description
@@ -160,16 +160,16 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
           completed: null !== Chunk852860.description && "" !== Chunk852860.description
         }, {
           description: Chunk388032.intl.string(Chunk388032.t.m3b3WF),
-          completed: null !== D.about && D.about.length >= 300 && D.about.length <= 2400
+          completed: null !== Z.about && Z.about.length >= 300 && Z.about.length <= 2400
         }, {
           description: Chunk388032.intl.string(Chunk388032.t.qpx5MD),
-          completed: null !== D.reasonsToJoin && D.reasonsToJoin.every(e => (e => {
+          completed: null !== Z.reasonsToJoin && Z.reasonsToJoin.every(e => (e => {
             let {
               reason: t = "",
               emoji_name: n = ""
             } = e;
             return (null === t || "" === t) && null === n
-          })(e) || K(e)) && D.reasonsToJoin.filter(K).length >= 2
+          })(e) || K(e)) && Z.reasonsToJoin.filter(K).length >= 2
         }]
       }],
       q = (e, t) => {
@@ -206,7 +206,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                       learnMoreURL: Chunk63063.Z.getArticleURL(Chunk981631.BhN.SERVER_WEB_PAGES)
                     })]
                   }), (() => {
-                    if (!D.isPublished || null == A) return;
+                    if (!Z.isPublished || null == A) return;
                     let e = T + A;
                     return (0, Chunk951288.jsxs)(Chunk481060.hjN, {
                       className: Chunk539981.noDividerFormSection,
@@ -241,7 +241,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                         })]
                       }), (0, Chunk951288.jsx)(Chunk718157.E, {
                         guildId: Chunk852860.id,
-                        guildMetadata: D,
+                        guildMetadata: Z,
                         isDisabled: !R
                       }), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
                         className: Chunk539981.noDividerFormSection,
@@ -250,7 +250,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                           children: Chunk388032.intl.string(Chunk388032.t.oOPlPD)
                         }), (0, Chunk951288.jsx)(Chunk450474.Z, {
                           guild: Chunk852860,
-                          guildMetadata: D,
+                          guildMetadata: Z,
                           disabled: !R
                         })]
                       }), (null == z ? true : z.category) != null ? (0, Chunk951288.jsx)(Chunk481060.Text, {
@@ -326,11 +326,11 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                   }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
                     className: Chunk539981.divider
                   }), (() => {
-                    if (null == D) return null;
-                    let e = 0 === D.reasonsToJoin.length ? [, , , , ].fill({
+                    if (null == Z) return null;
+                    let e = 0 === Z.reasonsToJoin.length ? [, , , , ].fill({
                       reason: "",
                       emoji_name: null
-                    }) : D.reasonsToJoin;
+                    }) : Z.reasonsToJoin;
                     return (0, Chunk951288.jsxs)(Chunk481060.hjN, {
                       children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
                         className: Chunk539981.formTitle,
@@ -367,7 +367,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                       }), (0, Chunk951288.jsx)(Chunk481060.Kx8, {
                         showCharacterCount: true,
                         rows: 10,
-                        value: D.about,
+                        value: Z.about,
                         placeholder: Chunk388032.intl.string(Chunk388032.t.TduTbm),
                         onChange: e => {
                           (0, g.mA)(d.id, e)
@@ -375,8 +375,8 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                         minLength: 300,
                         maxLength: 2400,
                         disabled: !R,
-                        defaultDirty: (null == (e = D.about) ? true : module.length) > 0
-                      }, "text-area-".concat(Z))]
+                        defaultDirty: (null == (e = Z.about) ? true : module.length) > 0
+                      }, "text-area-".concat(D))]
                     }), (null == z ? true : z.about) != null ? (0, Chunk951288.jsx)(Chunk481060.Text, {
                       color: "text-danger",
                       variant: "text-sm/normal",
@@ -392,7 +392,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                       className: Chunk539981.description,
                       type: Chunk481060.geA.DESCRIPTION,
                       children: Chunk388032.intl.string(Chunk388032.t.d3kA9f)
-                    }), D.socialLinks.map((e, t) => {
+                    }), Z.socialLinks.map((e, t) => {
                       let n = F[t],
                         i = Object.values(N.z).find(e => e.presentation === n),
                         l = null != i ? "".concat(i.baseUrl) : true;
@@ -403,7 +403,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                         onMouseOut: () => q(t, false),
                         onBlur: () => q(t, false),
                         children: [(0, r.jsx)(o.q4e, {
-                          className: D.isPublished ? S.socialLinksDropdownMax : S.socialLinksDropdownMin,
+                          className: Z.isPublished ? S.socialLinksDropdownMax : S.socialLinksDropdownMin,
                           options: (e => {
                             let t = Object.entries(N.z).filter(e => !F.includes(e[1].presentation)).map(e => ({
                               label: e[1].presentation,
@@ -417,16 +417,16 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                           placeholder: I.intl.string(I.t.xSALIC),
                           value: F[t],
                           onChange: e => ((e, t) => {
-                            let n = [...D.socialLinks],
+                            let n = [...Z.socialLinks],
                               r = [...F],
                               i = [...L];
-                            r[t] = e, n[t] = N.z[e].baseUrl, i[t] = true, k(i), H(r), G(i.every(e => true === e)), (0, g.t$)(d.id, n)
+                            r[t] = e, n[t] = N.z[e].baseUrl, i[t] = true, k(i), H(r), M(i.every(e => true === e)), (0, g.t$)(d.id, n)
                           })(e, t),
                           isDisabled: !R
                         }), (0, r.jsx)(o.oil, {
                           value: e.replace(null != l ? l : "", ""),
                           onChange: e => ((e, t) => {
-                            let n = [...D.socialLinks],
+                            let n = [...Z.socialLinks],
                               r = n[t],
                               i = e;
                             0 === r.length && i.length > 1 && false === RegExp("^https?:").test(i) && (i = "https://" + i), /\.(zip|exe|pdf|dmg|msi|apk|rar|7z|tar|gz|iso|docx?|xlsx?|pptx?|mp4|mp3)$/i.test(i) || (n[t] = i, (0, g.t$)(d.id, n))
@@ -446,7 +446,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                               n.splice(e, 1), k(n);
                               let r = [...F];
                               r.splice(e, 1), H(r);
-                              let i = [...D.socialLinks];
+                              let i = [...Z.socialLinks];
                               i.splice(e, 1), (0, g.t$)(d.id, i)
                             })(t)
                           } : true
@@ -461,14 +461,14 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                       size: "sm",
                       text: Chunk388032.intl.string(Chunk388032.t.QvovjY),
                       onClick: () => {
-                        if (D.socialLinks.length < 9) {
-                          let e = [...D.socialLinks];
+                        if (Z.socialLinks.length < 9) {
+                          let e = [...Z.socialLinks];
                           (0, Chunk456268.t$)(Chunk852860.id, module.concat("")), H(F.concat(""))
                         }
                       },
-                      disabled: !R || D.socialLinks.length >= 9
+                      disabled: !R || Z.socialLinks.length >= 9
                     })]
-                  }), D.isPublished && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+                  }), Z.isPublished && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
                     children: [(0, Chunk951288.jsx)(Chunk481060.$i$, {
                       className: Chunk539981.divider
                     }), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
@@ -492,14 +492,14 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                     variant: "text-sm/normal",
                     children: z.is_published
                   }) : null]
-                }), !D.isPublished && (0, Chunk951288.jsx)("div", {
+                }), !Z.isPublished && (0, Chunk951288.jsx)("div", {
                   className: Chunk539981.checklist,
                   children: (0, Chunk951288.jsx)(Chunk970061.Z, {
                     title: Chunk388032.intl.string(Chunk388032.t["2kCyn5"]),
                     children: Y,
                     buttonLabel: Chunk388032.intl.string(Chunk388032.t.tVK6S0),
                     buttonCallback: () => W(true),
-                    disabled: !R || !M
+                    disabled: !R || !G
                   })
                 })]
               })

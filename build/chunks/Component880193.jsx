@@ -35,7 +35,7 @@ function _(e) {
     imageCTA: P,
     imageAriaLabel: w,
     setFilename: R
-  } = (0, f.Z)(_), Z = i.useMemo(() => {
+  } = (0, f.Z)(_), D = i.useMemo(() => {
     var e;
     return null != (e = null == t ? true : t.map(e => ({
       value: e,
@@ -43,13 +43,13 @@ function _(e) {
     }))) ? e : []
   }, [t]);
 
-  function D(e, t) {
+  function Z(e, t) {
     null != t && R(t.name), T(e)
   }
   let A = (0, m.mY)(),
     L = (0, a.Dt)(),
     k = (0, a.Dt)(),
-    M = (0, a.Dt)();
+    G = (0, a.Dt)();
   return (0, r.jsxs)(h.Z, {
     title: x.intl.string(x.t.iHU439),
     intiallyExpanded: true,
@@ -76,7 +76,7 @@ function _(e) {
           titleId: k,
           disabled: A,
           children: (0, r.jsx)(s.q4e, {
-            options: Z,
+            options: D,
             isDisabled: A || null == t,
             placeholder: x.intl.string(x.t["88XZDg"]),
             value: C,
@@ -90,14 +90,14 @@ function _(e) {
       size: 24
     }), (0, r.jsx)(s.hjN, {
       title: x.intl.string(x.t["1w2WcX"]),
-      titleId: M,
+      titleId: G,
       disabled: A,
       children: (0, r.jsx)(s.Kx8, {
         placeholder: x.intl.string(x.t.p7Jr4O),
         value: E,
         autosize: true,
         onChange: I,
-        "aria-labelledby": M,
+        "aria-labelledby": G,
         disabled: A
       })
     }), (0, r.jsx)(s.LZC, {
@@ -114,7 +114,7 @@ function _(e) {
           disabled: A,
           children: x.intl.string(x.t["0iUofH"])
         }), (0, r.jsx)(o.Z, {
-          onChange: D,
+          onChange: Z,
           "aria-label": w,
           disabled: A,
           text: P,
@@ -129,7 +129,7 @@ function _(e) {
         hideSize: true,
         className: v.iconUploader,
         imageClassName: v.tierSymbolUploaderInner,
-        onChange: D,
+        onChange: Z,
         "aria-label": w,
         disabled: A
       })]

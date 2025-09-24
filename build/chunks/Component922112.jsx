@@ -81,10 +81,10 @@ let x = function(e) {
       onDragComplete: j,
       onDragReset: _
     }),
-    Z = i.useCallback(e => {
+    D = i.useCallback(e => {
       (0, m.XG)(l.channelId, e)
     }, [l.channelId]),
-    D = i.useCallback((e, n) => {
+    Z = i.useCallback((e, n) => {
       let r = g.Z.getSettings();
       null != r && ((0, m.XG)(l.channelId, e), (0, m.oo)(t, r).then(() => {
         (0, m.mM)(t, e.channelId, n)
@@ -97,11 +97,11 @@ let x = function(e) {
       return n => (0, r.jsx)(e, b(h({}, n), {
         guildId: t,
         resourceChannel: l,
-        onSave: Z,
+        onSave: D,
         onDelete: () => (0, m.Hz)(l.channelId),
-        onIconUpload: D
+        onIconUpload: Z
       }))
-    }), [t, l, Z, D]);
+    }), [t, l, D, Z]);
   return null == N ? null : (0, r.jsxs)("div", {
     className: f.resourceChannelContainer,
     children: [(0, r.jsxs)("div", {

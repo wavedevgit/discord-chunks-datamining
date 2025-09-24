@@ -91,21 +91,21 @@ let w = Chunk647438.forwardRef((e, t) => {
       guildId: _,
       guild: w,
       onChannelContextMenu: R,
-      onContentClick: Z,
-      onHeaderClick: D,
+      onContentClick: D,
+      onHeaderClick: Z,
       onTargetContextMenu: A,
       onUserContextMenu: L,
       theme: k
     } = e,
-    M = i.useRef(null),
-    G = function() {
+    G = i.useRef(null),
+    M = function() {
       let {
         changes: e
       } = l;
       return (l.actionType !== N.vB8.DELETE || l.action === N.rsA.MEMBER_BAN_ADD || l.action === N.rsA.MEMBER_KICK || l.action === N.rsA.MEMBER_PRUNE) && null != e && e.some(e => !(0, C.xO)(l, e))
     }(),
     U = I.headerDefault;
-  f ? U = I.headerExpanded : G && (U = I.headerClickable);
+  f ? U = I.headerExpanded : M && (U = I.headerClickable);
   let B = l.timestampStart.calendar(),
     F = l.timestampEnd.calendar();
   n = B === F ? (0, r.jsx)(d.Text, {
@@ -117,7 +117,7 @@ let w = Chunk647438.forwardRef((e, t) => {
     variant: "text-sm/normal",
     children: [B, "—", F]
   });
-  let H = G ? D : N.dG4;
+  let H = M ? Z : N.dG4;
   return (0, r.jsx)(a.mh, {
     id: l.id,
     children: e => (0, r.jsxs)("div", {
@@ -141,14 +141,14 @@ let w = Chunk647438.forwardRef((e, t) => {
             }
           } = l;
           if (null != e && null != t) return (0, r.jsx)(p.Z, {
-            targetElementRef: M,
+            targetElementRef: G,
             user: e,
             guildId: _,
             newAnalyticsLocations: [m.Z.AVATAR],
             children: e => {
               var t;
               return (0, r.jsx)(d.qEK, T(S({}, e), {
-                ref: M,
+                ref: G,
                 onClick: t => {
                   t.stopPropagation(), e.onClick(t)
                 },
@@ -219,7 +219,7 @@ let w = Chunk647438.forwardRef((e, t) => {
               }) : null
             }()
           }), n]
-        }), G ? (0, r.jsx)(j.Z, {
+        }), M ? (0, r.jsx)(j.Z, {
           className: I.expand,
           foreground: I.expandForeground,
           expanded: f,
@@ -230,7 +230,7 @@ let w = Chunk647438.forwardRef((e, t) => {
       }) : null, f && null != w ? (0, r.jsx)(C.tP, {
         log: l,
         guild: w,
-        onContentClick: Z
+        onContentClick: D
       }) : null]
     })
   })

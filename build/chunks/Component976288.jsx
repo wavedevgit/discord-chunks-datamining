@@ -2,7 +2,7 @@
 /** chunk id: 976288, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  d: () => D
+  d: () => Z
 }), require("./953529.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -334,13 +334,13 @@ function R(e) {
   })
 }
 
-function Z() {
+function D() {
   return (0, Chunk951288.jsx)("div", {
     className: Chunk912440.divider
   })
 }
 
-function D(e) {
+function Z(e) {
   let {
     requireTerms: t,
     rules: n,
@@ -368,22 +368,22 @@ function D(e) {
     children: [(0, r.jsx)(S, {
       guild: o,
       requireDescription: c
-    }), (0, r.jsx)(Z, {}), (0, r.jsx)(T, {
+    }), (0, r.jsx)(D, {}), (0, r.jsx)(T, {
       guild: o,
       guildMetadata: a,
       requirePrimaryCategory: c,
       error: l.discovery_splash
-    }), (0, r.jsx)(Z, {}), (0, r.jsx)(P, {
+    }), (0, r.jsx)(D, {}), (0, r.jsx)(P, {
       guildId: o.id,
       guildMetadata: a,
       requireTag: c,
       error: l.keywords
-    }), (0, r.jsx)(Z, {}), (0, r.jsx)(w, {
+    }), (0, r.jsx)(D, {}), (0, r.jsx)(w, {
       guild: o,
       guildMetadata: a
-    }), (0, r.jsx)(Z, {}), (0, r.jsx)(R, {
+    }), (0, r.jsx)(D, {}), (0, r.jsx)(R, {
       preferredLocale: o.preferredLocale
-    }), (0, r.jsx)(Z, {}), (0, r.jsx)("div", {
+    }), (0, r.jsx)(D, {}), (0, r.jsx)("div", {
       children: (0, r.jsx)(_.A, {
         requireTerms: t,
         rules: n

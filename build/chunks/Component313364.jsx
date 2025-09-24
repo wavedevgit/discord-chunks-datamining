@@ -39,7 +39,7 @@ function R(e) {
     guildId: t
   } = e, n = (0, a.e7)([b.Z], () => b.Z.getGuild(t)), {
     analyticsLocations: l
-  } = (0, d.ZP)(c.Z.GUILD_SETTINGS_MEMBERS_PAGE), R = (0, u.m)(t), Z = (0, a.e7)([h.ZP], () => h.ZP.getGuildSidebarState(t), [t]), D = i.useCallback(() => {
+  } = (0, d.ZP)(c.Z.GUILD_SETTINGS_MEMBERS_PAGE), R = (0, u.m)(t), D = (0, a.e7)([h.ZP], () => h.ZP.getGuildSidebarState(t), [t]), Z = i.useCallback(() => {
     p.Z.closeGuildSidebar(t)
   }, [t]), A = false == !!(null == n ? true : n.features.has(S.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), L = (0, a.e7)([x.Z], () => x.Z.getEstimatedMemberSearchCountByGuildId(t), [t]), k = i.useCallback(e => {
     null != e && (0, f.openUserProfileModal)({
@@ -47,9 +47,9 @@ function R(e) {
       guildId: e.guildId,
       sourceAnalyticsLocations: l
     })
-  }, [l]), M = i.useRef(null), G = i.useCallback(() => {
+  }, [l]), G = i.useRef(null), M = i.useCallback(() => {
     var e;
-    null == (e = M.current) || e.resetSearchText()
+    null == (e = G.current) || e.resetSearchText()
   }, []);
   if (null == n) return null;
   let U = (0, y.xb)(false, false, L);
@@ -84,13 +84,13 @@ function R(e) {
                     className: P.mainTableContainer,
                     children: [(0, r.jsx)(E.Z, {
                       guild: n,
-                      ref: M
+                      ref: G
                     }), (0, r.jsx)(C.Z, {
                       guild: n,
                       searchState: U,
                       compact: true,
                       onSelectRow: k,
-                      onResetForNewMembers: G
+                      onResetForNewMembers: M
                     }), U !== y.po.SUCCESS_STILL_INDEXING && (0, r.jsx)(N.Z, {
                       guildId: n.id
                     })]
@@ -119,19 +119,19 @@ function R(e) {
           })
         })
       })
-    }), R && null != Z && (0, r.jsxs)(r.Fragment, {
+    }), R && null != D && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(o.ZMr, {
         isVisible: true,
-        onClick: D
+        onClick: Z
       }), (0, r.jsx)("div", {
         className: P.modViewSidebarContainer,
         style: {
           width: S.$Y6
         },
         children: (0, r.jsx)(m.Z, {
-          userId: Z.details.userId,
-          guildId: Z.details.guildId,
-          onClose: D
+          userId: D.details.userId,
+          guildId: D.details.guildId,
+          onClose: Z
         })
       })]
     })]

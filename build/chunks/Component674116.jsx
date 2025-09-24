@@ -2,7 +2,7 @@
 /** chunk id: 674116, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => A
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -10,7 +10,6 @@ var Chunk481060 = require("./481060.js"),
   Chunk921801 = require("./921801.js"),
   Chunk825655 = require("./825655.jsx"),
   Chunk63063 = require("./63063.js"),
-  Chunk321614 = require("./321614.js"),
   Chunk603963 = require("./603963.jsx"),
   Chunk738486 = require("./738486.jsx"),
   Chunk429789 = require("./429789.jsx"),
@@ -28,12 +27,10 @@ var Chunk481060 = require("./481060.js"),
   Chunk726985 = require("./726985.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let A = "".concat(Chunk63063.Z.getArticleURL(Chunk981631.BhN.VOICE_VIDEO_TROUBLESHOOTING), "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-voice-video&utm_content=--t%3Apm");
+let S = "".concat(Chunk63063.Z.getArticleURL(Chunk981631.BhN.VOICE_VIDEO_TROUBLESHOOTING), "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-voice-video&utm_content=--t%3Apm");
 
-function C() {
-  return (0, Chunk321614.c)({
-    location: "UserSettingsVoiceV2"
-  }), (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+function A() {
+  return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsxs)(Chunk603963.Z, {
       webSetting: Chunk726985.s6.VOICE_AND_VIDEO_VOICE,
       children: [(0, Chunk951288.jsx)(Chunk825655.Z, {
@@ -50,7 +47,7 @@ function C() {
           children: [(0, Chunk951288.jsx)(Chunk823087.Z, {}), (0, Chunk951288.jsx)(Chunk481060.R94, {
             type: Chunk481060.R94.Types.DESCRIPTION,
             children: Chunk388032.intl.format(Chunk388032.t["V+B3FB"], {
-              guideURL: A
+              guideURL: S
             })
           })]
         })]

@@ -111,7 +111,7 @@ let w = e => {
     });
     let e = await (0, u.$)(C.E07.DEVELOPER_PORTAL_TEAMS);
     (0, o.Z)(e)
-  }, [t, s, d, w]), Z = i.useCallback(e => s ? (0, r.jsx)(m.Z, {
+  }, [t, s, d, w]), D = i.useCallback(e => s ? (0, r.jsx)(m.Z, {
     onClick: R,
     children: e
   }) : e, [R, s]);
@@ -127,7 +127,7 @@ let w = e => {
         className: S.description,
         disabled: !s,
         children: I.intl.format(I.t["5mfqpa"], {
-          onCreateTeamHook: Z
+          onCreateTeamHook: D
         })
       }), w ? (0, r.jsx)(P, {
         guild: t,

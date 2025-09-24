@@ -2,7 +2,7 @@
 /** chunk id: 530198, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => Z
+  Z: () => D
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -640,7 +640,7 @@ function R(e) {
   })
 }
 
-function Z(e) {
+function D(e) {
   let t, {
       configurationItems: n,
       onConfigurationChange: i,

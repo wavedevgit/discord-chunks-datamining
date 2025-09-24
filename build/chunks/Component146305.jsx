@@ -160,9 +160,9 @@ let e_ = {
         };
       case ef.pNK.ROLES:
         return {
-          section: ef.pNK.ROLES, impressionName: i.ImpressionNames.GUILD_SETTINGS_ROLES, label: eb.intl.string(eb.t.LPJmLy), element: G.Z, type: o.bT.MINIMAL, ariaLabel: eb.intl.string(eb.t.KXcECw), notice: {
+          section: ef.pNK.ROLES, impressionName: i.ImpressionNames.GUILD_SETTINGS_ROLES, label: eb.intl.string(eb.t.LPJmLy), element: M.Z, type: o.bT.MINIMAL, ariaLabel: eb.intl.string(eb.t.KXcECw), notice: {
             stores: [P.Z],
-            element: G._
+            element: M._
           }, predicate: () => t.canManageRoles, icon: t.pinPermissionMigrationAvailable ? (0, r.jsx)("div", {
             className: ex.redDot
           }) : true
@@ -228,7 +228,7 @@ let e_ = {
         };
       case ef.pNK.AUDIT_LOG:
         return {
-          section: ef.pNK.AUDIT_LOG, impressionName: i.ImpressionNames.GUILD_SETTINGS_AUDIT_LOG, label: eb.intl.string(eb.t.SPWLyc), element: Z.Z, type: o.bT.CUSTOM, predicate: () => t.canViewAuditLog
+          section: ef.pNK.AUDIT_LOG, impressionName: i.ImpressionNames.GUILD_SETTINGS_AUDIT_LOG, label: eb.intl.string(eb.t.SPWLyc), element: D.Z, type: o.bT.CUSTOM, predicate: () => t.canViewAuditLog
         };
       case ef.pNK.BANS:
         return {
@@ -251,8 +251,8 @@ let e_ = {
       case ef.pNK.ONBOARDING:
         return {
           section: ef.pNK.ONBOARDING, label: eb.intl.string(eb.t.LdxCKy), element: X.Z, ariaLabel: eb.intl.string(eb.t.LdxCKy), newIndicatorDismissibleContentTypes: t.onboardingEnabled ? null : [l.z.COMMUNITY_ONBOARDING_NEW_BADGE], notice: {
-            stores: [A.Z, D.Z],
-            element: M.Z
+            stores: [A.Z, Z.Z],
+            element: G.Z
           }, predicate: () => (0, f.wC)(t.guild.id), decoration: function(e, t) {
             if (p.Z.getEnabled(e)) return eb.intl.string(eb.t.pPSmxs).toUpperCase();
             if ((0, k.C)(e)) return eb.intl.string(eb.t.HDF4o6).toUpperCase();

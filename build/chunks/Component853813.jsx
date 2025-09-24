@@ -49,8 +49,8 @@ function I(e) {
     null == P && l(null)
   }, [P, l]);
   let R = (0, a.e7)([m.Z], () => m.Z.getHighestRole(T), [T]),
-    Z = (0, a.e7)([m.Z], () => !m.Z.isRoleHigher(T, R, P)),
-    D = i.useRef(null),
+    D = (0, a.e7)([m.Z], () => !m.Z.isRoleHigher(T, R, P)),
+    Z = i.useRef(null),
     A = (0, a.e7)([b.Z], () => b.Z.getProps().integrations),
     L = {
       role: P,
@@ -99,7 +99,7 @@ function I(e) {
       t = (0, r.jsx)(v.ZP, {
         guild: T,
         role: P,
-        locked: Z,
+        locked: D,
         highestRole: R,
         setSelectedSection: S
       });
@@ -108,7 +108,7 @@ function I(e) {
       t = (0, r.jsx)(O.ZP, {
         guild: T,
         role: P,
-        locked: Z,
+        locked: D,
         setSelectedSection: S,
         initialSearchQuery: w
       });
@@ -117,7 +117,7 @@ function I(e) {
       t = (0, r.jsx)(j.Z, {
         guild: T,
         role: P,
-        locked: Z,
+        locked: D,
         setSelectedSection: S,
         integrations: null != A ? A : true
       });
@@ -126,7 +126,7 @@ function I(e) {
       t = (0, r.jsx)(_.ZP, {
         guild: T,
         role: P,
-        locked: Z,
+        locked: D,
         setSelectedSection: S
       });
       break;
@@ -142,9 +142,9 @@ function I(e) {
       setSelectedSection: S
     }), (0, r.jsx)("div", {
       className: E.contentContainer,
-      ref: D,
+      ref: Z,
       children: (0, r.jsx)(o.JcV, {
-        containerRef: D,
+        containerRef: Z,
         children: t
       })
     })]

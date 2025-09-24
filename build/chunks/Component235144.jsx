@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk846027 = require("./846027.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk131951 = require("./131951.js"),
-  Chunk321614 = require("./321614.js"),
+  Chunk846071 = require("./846071.js"),
   Chunk345655 = require("./345655.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk197571 = require("./197571.js");
@@ -21,9 +21,8 @@ function p() {
     analyticsLocations: e
   } = (0, Chunk906732.ZP)(), t = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getActiveInputProfile()), {
     enabledInputProfiles: n
-  } = (0, Chunk321614.c)({
-    location: "UserSettingsInputProfile",
-    autoTrackExposure: false
+  } = (0, Chunk846071.G)({
+    location: "UserSettingsInputProfile"
   }), p = Chunk647438.useCallback(t => {
     let {
       value: n

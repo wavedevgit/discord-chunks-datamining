@@ -143,7 +143,7 @@ let I = e => {
     })]
   });
   let R = T ? _.t["WH+1Y2"] : _.t.a4MYDA,
-    Z = [{
+    D = [{
       name: _.intl.string(_.t.yvk9p6),
       failingName: _.intl.string(_.t["IY/UT0"]),
       description: _.intl.string(_.t.hSLSMz),
@@ -298,8 +298,8 @@ let I = e => {
           width: 40
         }), o]
       })
-    })(), Z.filter(e => !c || null == e.checked || !e.checked).map((e, t) => (0, r.jsxs)(i.Fragment, {
-      children: [(0, r.jsx)(N, y({}, e)), t < Z.length - 1 ? (0, r.jsx)("hr", {
+    })(), D.filter(e => !c || null == e.checked || !e.checked).map((e, t) => (0, r.jsxs)(i.Fragment, {
+      children: [(0, r.jsx)(N, y({}, e)), t < D.length - 1 ? (0, r.jsx)("hr", {
         className: O.separator
       }) : null]
     }, "".concat(e.name)))]

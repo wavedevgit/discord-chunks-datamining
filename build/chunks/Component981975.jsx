@@ -94,16 +94,16 @@ function P(e) {
     headerRef: w
   } = (0, x.Z)(0), {
     scrolledToTop: R,
-    handleScroll: Z
-  } = (0, v.V)(), D = (0, c.e7)([f.Z], () => {
+    handleScroll: D
+  } = (0, v.V)(), Z = (0, c.e7)([f.Z], () => {
     var e;
     return null == (e = f.Z.getRoleMemberCount(t.id)) ? true : e[n.id]
   }, [n.id, t.id]), A = (0, c.Wu)([b.Z], () => {
     var e;
     return null != (e = b.Z.getEditedRoleConnectionConfigurationsMap().get(n.id)) ? e : []
-  }), L = A.length > 1 ? g.O1.OR : g.O1.AND, k = i.useMemo(() => L === g.O1.OR ? A.flat() : null != A && A.length > 0 ? A[0] : [], [L, A]), M = i.useMemo(() => new Set(k.map(e => e.connectionType)), [k]);
+  }), L = A.length > 1 ? g.O1.OR : g.O1.AND, k = i.useMemo(() => L === g.O1.OR ? A.flat() : null != A && A.length > 0 ? A[0] : [], [L, A]), G = i.useMemo(() => new Set(k.map(e => e.connectionType)), [k]);
 
-  function G(e) {
+  function M(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : true,
       r = [...k];
     r.push({
@@ -118,10 +118,10 @@ function P(e) {
   function U() {
     m.Z.dispatch({
       type: "CONNECTIONS_GRID_MODAL_SHOW",
-      onComplete: e => G(e),
-      excludedPlatformTypes: M,
+      onComplete: e => M(e),
+      excludedPlatformTypes: G,
       integrations: o,
-      onCompleteApplication: e => G(y.Kt, e)
+      onCompleteApplication: e => M(y.Kt, e)
     })
   }
   let B = null;
@@ -246,7 +246,7 @@ function P(e) {
     style: {
       scrollPaddingTop: P
     },
-    onScroll: Z,
+    onScroll: D,
     children: (0, r.jsxs)("div", {
       className: E.contentWidth,
       children: [(0, r.jsx)("div", {
@@ -260,7 +260,7 @@ function P(e) {
           selectedSection: _.ZI.VERIFICATIONS,
           setSelectedSection: a
         })
-      }), (null != D ? D : 0) > 0 ? (0, r.jsxs)("div", {
+      }), (null != Z ? Z : 0) > 0 ? (0, r.jsxs)("div", {
         className: N.warningContainer,
         children: [(0, r.jsx)(u.Mgn, {
           size: "custom",

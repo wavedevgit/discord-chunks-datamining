@@ -38,11 +38,11 @@ function C(e) {
     guild: S,
     subsection: T
   } = (0, l.cj)([o.Z], () => o.Z.getProps()), P = null != (n = null != (t = null == S ? true : S.id) ? t : C) ? n : _.lds, w = null != E, [R] = (0, g.RD)(P), {
-    rulesByTriggerType: Z
-  } = (0, g.pH)(P), D = {
+    rulesByTriggerType: D
+  } = (0, g.pH)(P), Z = {
     [p.vh.MEMBERS]: O.intl.string(O.t.sx4E5u),
     [p.vh.CONTENT]: O.intl.string(O.t.fphZb2)
-  }, A = i.useMemo(() => Object.values(null != Z ? Z : {}).flat().filter(d.lm), [Z]), L = {
+  }, A = i.useMemo(() => Object.values(null != D ? D : {}).flat().filter(d.lm), [D]), L = {
     isInEditMode: w,
     setEditingRule: I
   }, k = i.useRef(L);
@@ -55,7 +55,7 @@ function C(e) {
     } = k.current;
     e && t(null)
   }, [P]);
-  let M = i.useCallback((e, t) => {
+  let G = i.useCallback((e, t) => {
       if (null != e) {
         var n, r;
         return null != (r = null == (n = A.find(t => {
@@ -67,13 +67,13 @@ function C(e) {
       }
       return null != t ? p.I6[t].getDefaultRuleName() : null
     }, [A]),
-    G = i.useMemo(() => {
+    M = i.useMemo(() => {
       var e, t;
-      return M(null != (e = null == E ? true : E.id) ? e : null, null != (t = null == E ? true : E.triggerType) ? t : null)
-    }, [M, E]);
+      return G(null != (e = null == E ? true : E.id) ? e : null, null != (t = null == E ? true : E.triggerType) ? t : null)
+    }, [G, E]);
   i.useEffect(() => {
-    N(w, (0, j.af)(G))
-  }, [N, w, G]);
+    N(w, (0, j.af)(M))
+  }, [N, w, M]);
   let U = (0, p.Z6)(P);
   return (0, r.jsxs)(a.hjN, {
     title: O.intl.string(O.t.uRelg4),
@@ -121,13 +121,13 @@ function C(e) {
     }), R ? (0, r.jsx)(f.Z, {}) : Object.entries(U).map(e => {
       let [t, n] = e;
       if (0 === n.length) return (0, r.jsx)(i.Fragment, {}, t);
-      let l = null != D[t] ? (0, r.jsx)(a.hjN, {
+      let l = null != Z[t] ? (0, r.jsx)(a.hjN, {
         tag: "h3",
         className: y.categoryHeader,
         children: (0, r.jsx)(a.Text, {
           variant: "text-lg/normal",
           color: "header-primary",
-          children: D[t]
+          children: Z[t]
         })
       }) : null;
       return (0, r.jsxs)("div", {
@@ -138,7 +138,7 @@ function C(e) {
             return (0, r.jsx)(x.Z, {
               guildId: P,
               triggerType: e,
-              rules: null != (t = Z[e]) ? t : [],
+              rules: null != (t = D[e]) ? t : [],
               initWithEdit: T === _.KsC.AUTOMOD_MENTION_SPAM && e === v.fX.MENTION_SPAM
             }, e)
           })

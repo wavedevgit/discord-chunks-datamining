@@ -35,7 +35,6 @@ function x(e) {
           variant: "heading-xl/semibold",
           children: u.intl.string(u.t.CueiPT)
         }), (0, i.jsx)(o.Text, {
-          className: m.__invalid_subtitle,
           color: "header-secondary",
           variant: "text-md/normal",
           children: l ? u.intl.formatToPlainString(u.t.R7Pqn5, {

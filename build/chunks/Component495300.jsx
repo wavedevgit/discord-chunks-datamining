@@ -2,7 +2,7 @@
 /** chunk id: 495300, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => Z
+  Z: () => D
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -35,14 +35,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk885541 = require("./885541.js");
 
-function Z() {
+function D() {
   let e = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuildId());
-  return null == module ? null : (0, Chunk951288.jsx)(D, {
+  return null == module ? null : (0, Chunk951288.jsx)(Z, {
     guildId: module
   })
 }
 
-function D(e) {
+function Z(e) {
   let t, {
       guildId: n
     } = e,
@@ -52,7 +52,7 @@ function D(e) {
       return null != e && !_.Z.isEducationUpsellDismissed(e)
     }),
     v = (0, y.Z)(n),
-    Z = !v && f;
+    D = !v && f;
   switch (i.useEffect(() => {
       (0, m.Q3)(o.z.COMMUNITY_ONBOARDING_NEW_BADGE)
     }, []), l) {
@@ -88,7 +88,7 @@ function D(e) {
   }
   return (0, r.jsxs)("div", {
     className: s()(R.onboardingContainer, {
-      [R.upsellOnTop]: Z
+      [R.upsellOnTop]: D
     }),
     children: [!v && l !== O.PG.LANDING && (0, r.jsx)(A, {
       setOnboardingStep: b.$K,

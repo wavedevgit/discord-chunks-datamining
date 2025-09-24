@@ -51,14 +51,14 @@ let S = new Set,
   P = false,
   w = false,
   R = [],
-  Z = [],
-  D = false,
+  D = [],
+  Z = false,
   A = new Set,
   L = new Map,
   k = new Map,
-  M = new Map;
+  G = new Map;
 
-function G() {
+function M() {
   return null == r || null == R ? [] : Chunk990492.ZP.calculatePositionDeltas({
     oldOrdering: Chunk485386.Z.getSortedRoles(r.id),
     newOrdering: R,
@@ -78,7 +78,7 @@ function U(e) {
 
 function B() {
   let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];
-  r = Chunk999382.Z.getProps().guild, P = false, w = false, l = true, S.clear(), M.clear(), T = Chunk981631.QZA.OPEN, Z = [...R = null != r ? [...Chunk485386.Z.getSortedRoles(r.id)] : []], F(null == r ? true : r.id, Z), D = false, module && (k.clear(), L.forEach((e, t) => {
+  r = Chunk999382.Z.getProps().guild, P = false, w = false, l = true, S.clear(), G.clear(), T = Chunk981631.QZA.OPEN, D = [...R = null != r ? [...Chunk485386.Z.getSortedRoles(r.id)] : []], F(null == r ? true : r.id, D), Z = false, module && (k.clear(), L.forEach((e, t) => {
     k.set(t, [...e])
   }))
 }
@@ -113,7 +113,7 @@ function F(e, t) {
         tertiary_color: null != (a = t.colors.tertiary_color) ? a : null
       }
     }
-    M.set(t.id, {
+    G.set(t.id, {
       currentStyle: n,
       styleColors: i
     })
@@ -121,15 +121,15 @@ function F(e, t) {
 }
 let H = c().debounce(() => {
   let e = false;
-  w && ((w = G().length > 0) || (e = true)), [...S].forEach(t => {
+  w && ((w = M().length > 0) || (e = true)), [...S].forEach(t => {
     var n;
-    c().isEqual(V(t), (n = t, Z.find(e => {
+    c().isEqual(V(t), (n = t, D.find(e => {
       let {
         id: t
       } = e;
       return t === n
     }))) && (S.delete(t), e = true)
-  }), 0 === S.size && (P = false), D && c().isEqual(L, k) && (e = true, D = false), module && Y.emitChange()
+  }), 0 === S.size && (P = false), Z && c().isEqual(L, k) && (e = true, Z = false), module && Y.emitChange()
 }, 500);
 
 function z(e, t) {
@@ -167,10 +167,10 @@ function W(e) {
   }), 0 === S.size && (P = false);
   let i = new Map;
   S.forEach(e => {
-    let t = M.get(e);
+    let t = G.get(e);
     null != t && i.set(e, t)
-  }), M.clear(), F(t, n), i.forEach((e, t) => {
-    M.set(t, e)
+  }), G.clear(), F(t, n), i.forEach((e, t) => {
+    G.set(t, e)
   }), w = false, R = [...n]
 }
 class K extends(s = Chunk442837.ZP.Store) {
@@ -178,10 +178,10 @@ class K extends(s = Chunk442837.ZP.Store) {
     this.waitFor(Chunk999382.Z, Chunk561654.Z, Chunk485386.Z)
   }
   hasChanges() {
-    return P || w || D
+    return P || w || Z
   }
   getRoleStyleData(e) {
-    return M.get(e)
+    return G.get(e)
   }
   get errorMessage() {
     return l
@@ -190,7 +190,7 @@ class K extends(s = Chunk442837.ZP.Store) {
     return w
   }
   get hasRoleConfigurationChanges() {
-    return D
+    return Z
   }
   get guild() {
     return r
@@ -208,7 +208,7 @@ class K extends(s = Chunk442837.ZP.Store) {
     return T
   }
   getSortDeltas() {
-    return G()
+    return M()
   }
   showNotice() {
     return this.hasChanges()
@@ -290,12 +290,12 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
         color: n
       } = e, r = 0 === n ? null : (0, u.Rf)(n), i = V(t);
       if (null == i) returnfalse;
-      let l = M.get(t);
+      let l = G.get(t);
       return null != l && (l.currentStyle = "solid", l.styleColors.solid = {
         primary_color: n,
         secondary_color: null,
         tertiary_color: null
-      }, M.set(t, E({}, l)), z(i, {
+      }, G.set(t, E({}, l)), z(i, {
         color: n,
         colorString: r,
         colors: {
@@ -318,8 +318,8 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
       } = e, i = V(t);
       if (null == i) returnfalse;
       let l = (0, h.DX)(n),
-        s = M.get(t);
-      return null != s && (s.styleColors[r] = n, s.currentStyle = r, M.set(t, E({}, s)), z(i, {
+        s = G.get(t);
+      return null != s && (s.styleColors[r] = n, s.currentStyle = r, G.set(t, E({}, s)), z(i, {
         color: n.primary_color,
         colors: n,
         colorString: l.primaryColor,
@@ -365,9 +365,9 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
         currentStyle: r
       } = e, i = V(n);
       if (null == i) returnfalse;
-      let l = M.get(n);
+      let l = G.get(n);
       if (null == l) returnfalse;
-      M.set(n, {
+      G.set(n, {
         currentStyle: r,
         styleColors: l.styleColors
       });
@@ -396,15 +396,15 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
         roleConnectionConfigurations: n
       } = e, r = V(t);
       if (null == r) returnfalse;
-      D = true, A.add(r.id), k.set(r.id, n), H()
+      Z = true, A.add(r.id), k.set(r.id, n), H()
     },
     GUILD_SETTINGS_CLOSE: function() {
-      r = null, Z = R = [], L.clear(), S.clear(), M.clear(), k.clear(), A = new Set, P = false, w = false, D = false, T = Chunk981631.QZA.CLOSED
+      r = null, D = R = [], L.clear(), S.clear(), G.clear(), k.clear(), A = new Set, P = false, w = false, Z = false, T = Chunk981631.QZA.CLOSED
     },
     GUILD_ROLE_CREATE: W,
     GUILD_ROLE_UPDATE: W,
     GUILD_ROLE_DELETE: function(e) {
-      return A.has(e.roleId) && (A.delete(e.roleId), L.delete(e.roleId), k.delete(e.roleId), D = false), W(e)
+      return A.has(e.roleId) && (A.delete(e.roleId), L.delete(e.roleId), k.delete(e.roleId), Z = false), W(e)
     },
     GUILD_SETTINGS_ROLES_SUBMITTING: function() {
       T = Chunk981631.QZA.SUBMITTING

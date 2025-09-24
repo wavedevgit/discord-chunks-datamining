@@ -98,7 +98,7 @@ function w() {
         className: Chunk197571.marginBottom20,
         type: Chunk481060.geA.DESCRIPTION,
         children: Chunk388032.intl.format(Chunk388032.t.c0m8bG, {})
-      }), (0, Chunk951288.jsx)(Z, {}), (0, Chunk951288.jsx)(Chunk481060.$i$, {
+      }), (0, Chunk951288.jsx)(D, {}), (0, Chunk951288.jsx)(Chunk481060.$i$, {
         className: Chunk86477.divider
       }), (0, Chunk951288.jsx)(R, {})]
     })
@@ -163,7 +163,7 @@ function R() {
   })
 }
 
-function Z() {
+function D() {
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk86477.descriptionBox,
     children: [(0, Chunk951288.jsxs)("div", {
@@ -230,7 +230,7 @@ function Z() {
   })
 }
 
-function D(e) {
+function Z(e) {
   let {
     cancel: t,
     confirm: n
@@ -309,12 +309,12 @@ function L(e) {
       children: y.intl.string(y.t.aWsjtL)
     }), (0, i.jsxs)("div", {
       className: a()(N.marginTop20, C.buttonContainer),
-      children: [n.isDirty && (0, i.jsx)(M, {
+      children: [n.isDirty && (0, i.jsx)(G, {
         guild: t,
         guildTemplate: n
       }), (0, i.jsxs)("div", {
         className: C.rightButtonContainer,
-        children: [(0, i.jsx)(G, {
+        children: [(0, i.jsx)(M, {
           guild: t,
           guildTemplate: n
         }), (0, i.jsx)(U, {
@@ -351,7 +351,7 @@ function k(e) {
   })
 }
 
-function M(e) {
+function G(e) {
   let {
     guild: t,
     guildTemplate: n
@@ -376,7 +376,7 @@ function M(e) {
   })
 }
 
-function G(e) {
+function M(e) {
   let {
     guild: t,
     guildTemplate: n
@@ -398,7 +398,7 @@ function G(e) {
         text: y.intl.string(y.t["cN/RFB"]),
         onClick: () => s(true)
       })
-    }), r ? (0, i.jsx)(D, {
+    }), r ? (0, i.jsx)(Z, {
       confirm: a,
       cancel: () => s(false)
     }) : null]

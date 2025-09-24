@@ -2,11 +2,9 @@
 /** chunk id: 787517, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  R: () => o
+  G: () => r
 });
-var Chunk818083 = require("./818083.js"),
-  Chunk984134 = require("./984134.js");
-let a = (0, Chunk818083.B)({
+let r = (0, require("./818083.js").B)({
   kind: "user",
   id: "2025-04_wgc24h2api",
   label: "Windows Graphics Capture 24H2 API",
@@ -26,21 +24,4 @@ let a = (0, Chunk818083.B)({
       enabled: true
     }
   }]
-});
-
-function o(e) {
-  let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
-    {
-      isInHoldout: n
-    } = i.Y.getCurrentConfig({
-      location: e
-    }, {
-      autoTrackExposure: t
-    });
-  return a.getCurrentConfig({
-    location: e
-  }, {
-    disable: n,
-    autoTrackExposure: t
-  })
-}
+})

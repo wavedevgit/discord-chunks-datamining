@@ -2,7 +2,7 @@
 /** chunk id: 266665, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => Z
+  Z: () => D
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -81,8 +81,8 @@ function R(e) {
     N = (0, O.T)(c, g, m),
     I = (0, x.fI)(m),
     R = null == N && !I,
-    Z = (null == (t = m.tags) ? true : t.guild_connections) !== true,
-    D = (0, b._f)(c.id, m, m.colorStrings),
+    D = (null == (t = m.tags) ? true : t.guild_connections) !== true,
+    Z = (0, b._f)(c.id, m, m.colorStrings),
     [, A] = (0, a.c)({
       type: w,
       item: () => (v(m.id), {
@@ -113,19 +113,19 @@ function R(e) {
         roleId: m.id
       })
     }),
-    M = null != (i = m.colorString) ? i : E.Pbq;
-  return l = Z ? (0, r.jsx)(f.Z, {
+    G = null != (i = m.colorString) ? i : E.Pbq;
+  return l = D ? (0, r.jsx)(f.Z, {
     size: 12,
     color: m.colorString,
     className: S.verifiedRoleIcon
   }) : "dot" === C ? (0, r.jsx)(d.FhE, {
-    color: M,
-    colors: D,
+    color: G,
+    colors: Z,
     background: false,
     tooltip: false
   }) : (0, r.jsx)(d.xko, {
-    color: M,
-    colors: D
+    color: G,
+    colors: Z
   }), (0, r.jsxs)(d.njP.Item, {
     className: s()(S.row, {
       [S.dragBefore]: null !== L && j < L,
@@ -163,7 +163,7 @@ function R(e) {
   })
 }
 
-function Z(e) {
+function D(e) {
   let {
     guild: t,
     currentRoleId: n,
@@ -174,8 +174,8 @@ function Z(e) {
     handleScroll: E
   } = (0, C.V)(), {
     handleDragStart: w,
-    handleDragReset: Z,
-    handleDragComplete: D
+    handleDragReset: D,
+    handleDragComplete: Z
   } = (0, y.Z)(o), A = i.useRef(null), L = i.useCallback(e => {
     var t, n;
     let r = o.findIndex(t => t.id === e);
@@ -246,8 +246,8 @@ function Z(e) {
             onClick: () => l(e.id),
             currentPosition: i,
             onDragStart: w,
-            onDragReset: Z,
-            onDragComplete: D,
+            onDragReset: D,
+            onDragComplete: Z,
             roleStyle: f
           }, e.id))
         })

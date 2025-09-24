@@ -41,7 +41,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk180208 = require("./180208.js");
 
-function G(e) {
+function M(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -96,7 +96,7 @@ function H(e) {
     children: t
   } = e;
   return (0, r.jsx)(m.X6q, {
-    className: M.tableHeader,
+    className: G.tableHeader,
     variant: "heading-sm/semibold",
     color: "header-secondary",
     children: t
@@ -120,7 +120,7 @@ function z(e) {
         currentBoostLevel: t
       }),
       children: e => (0, r.jsx)(m.P3F, {
-        className: M.boostingIconWrapper,
+        className: G.boostingIconWrapper,
         onClick: () => {
           (0, x.f)({
             guildId: i,
@@ -131,7 +131,7 @@ function z(e) {
           })
         },
         tabIndex: false,
-        children: (0, r.jsx)(S.Z, G({}, e))
+        children: (0, r.jsx)(S.Z, M({}, e))
       })
     }), k.intl.format(k.t.HHCdvb, {
       slots: n,
@@ -165,10 +165,10 @@ let V = e => {
     }, [c]), g = i.useCallback(() => {
       c.start(200, () => o(false))
     }, [c]);
-    return (0, r.jsx)(m.yRy, U(G({
+    return (0, r.jsx)(m.yRy, U(M({
       shouldShow: a,
       renderPopout: e => (0, r.jsx)(m.VqE, {
-        className: M.browserUnsupportedDialog,
+        className: G.browserUnsupportedDialog,
         onMouseEnter: u,
         onMouseLeave: g,
         children: t(e)
@@ -186,7 +186,7 @@ let V = e => {
         color: "header-secondary",
         children: Chunk388032.intl.format(Chunk388032.t.bGXPVl, {})
       }),
-      renderPopoutChildren: t => (0, r.jsx)(u.zx, U(G({}, t), {
+      renderPopoutChildren: t => (0, r.jsx)(u.zx, U(M({}, t), {
         disabled: true,
         buttonRef: e,
         children: k.intl.string(k.t["/uNYPD"])
@@ -228,7 +228,7 @@ function K(e) {
         let {
           default: e
         } = await n.e("56035").then(n.bind(n, 758961));
-        return n => (0, r.jsx)(e, U(G({}, n), {
+        return n => (0, r.jsx)(e, U(M({}, n), {
           guildId: t.id
         }))
       })
@@ -238,17 +238,17 @@ function K(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       children: [(0, r.jsx)(m.Text, {
-        className: M.helpText,
+        className: G.helpText,
         variant: "text-sm/normal",
         color: "header-secondary",
         children: k.intl.string(k.t.BohnsL)
       }), (0, r.jsx)("div", {
-        className: M.buttons,
+        className: G.buttons,
         children: !h && x
       })]
     }), h ? (0, r.jsxs)(m.ubH, {
       theme: d,
-      className: M.empty,
+      className: G.empty,
       children: [(0, r.jsx)(m.oxh, {
         darkSrc: n(458601),
         lightSrc: n(673557),
@@ -256,14 +256,14 @@ function K(e) {
         height: 212
       }), (0, r.jsx)(m.OZU, {
         note: k.intl.string(k.t.ZhoSBA),
-        noteClassName: M.emptyText,
+        noteClassName: G.emptyText,
         children: k.intl.string(k.t.I6P1p6)
       }), x]
     }) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(m.$i$, {
-        className: M.divider
+        className: G.divider
       }), (0, r.jsx)(m.X6q, {
-        className: M.tableTitle,
+        className: G.tableTitle,
         variant: "heading-md/bold",
         color: "header-primary",
         children: (0, r.jsx)(z, {
@@ -271,14 +271,14 @@ function K(e) {
           currentTier: u,
           availableSounds: g
         })
-      }), (0, r.jsx)(D.Z, {
+      }), (0, r.jsx)(Z.Z, {
         guild: t,
         numSounds: l.length,
         isOutOfSlots: 0 === g
       }), (0, r.jsxs)("div", {
-        className: M.soundTable,
+        className: G.soundTable,
         children: [(0, r.jsxs)("div", {
-          className: M.tableHeaders,
+          className: G.tableHeaders,
           children: [(0, r.jsx)(H, {
             children: k.intl.string(k.t.sMOuub)
           }), (0, r.jsx)(H, {
@@ -314,14 +314,14 @@ function Y(e) {
     analyticsLocations: O
   } = (0, b.ZP)(), y = (0, c.e7)([I.default], () => null != f ? f : I.default.getUser(h), [h, f]), {
     canManageGuildExpression: E
-  } = (0, j.XJ)(o), S = i.useMemo(() => E(t), [t, E]), P = null != x || null != _, [w, Z] = i.useState(false), D = (0, C.z)(t, o.id);
+  } = (0, j.XJ)(o), S = i.useMemo(() => E(t), [t, E]), P = null != x || null != _, [w, D] = i.useState(false), Z = (0, C.z)(t, o.id);
   async function A() {
     if (!w) {
-      Z(true);
+      D(true);
       try {
         await (0, v.AA)(o.id, d)
       } catch (e) {
-        Z(false)
+        D(false)
       }
     }
   }
@@ -340,39 +340,39 @@ function Y(e) {
     }, [y, o.id, O]),
     B = R.ZP.useUserTag(y);
   return (0, r.jsxs)("div", {
-    className: s()(M.row, {
-      [M.active]: l
+    className: s()(G.row, {
+      [G.active]: l
     }),
     children: [P ? (0, r.jsx)(p.Z, {
       emojiId: x,
       emojiName: _,
-      className: M.emoji
+      className: G.emoji
     }) : (0, r.jsx)(m.XBm, {
       size: "md",
       color: "currentColor",
-      className: M.emoji
+      className: G.emoji
     }), (0, r.jsx)(m.P3F, {
       onClick: () => {
         w || a(t)
       },
-      onContextMenu: D,
-      className: M.soundName,
+      onContextMenu: Z,
+      className: G.soundName,
       children: (0, r.jsxs)(m.Text, {
         variant: "text-sm/normal",
-        className: M.soundName,
+        className: G.soundName,
         children: [u, " ", (0, r.jsx)(m.gj8, {
           size: "md",
           color: "currentColor",
-          className: M.soundPreviewIcon
+          className: G.soundPreviewIcon
         })]
       })
     }), null != y && (0, r.jsxs)(m.P3F, {
-      className: M.uploader,
+      className: G.uploader,
       onClick: L,
       children: [(0, r.jsx)(m.qEK, {
         "aria-label": B,
         size: m.EFr.SIZE_24,
-        className: M.uploaderAvatar,
+        className: G.uploaderAvatar,
         src: (0, T.ov)(y, false, 24)
       }), (0, r.jsx)(m.Text, {
         variant: "text-sm/normal",
@@ -380,15 +380,15 @@ function Y(e) {
         children: B
       })]
     }), S ? (0, r.jsxs)("div", {
-      className: M.soundEditContainer,
+      className: G.soundEditContainer,
       children: [(0, r.jsx)(m.P3F, {
-        className: M.soundUpdate,
+        className: G.soundUpdate,
         onClick: function(e) {
           e.stopPropagation(), (0, m.ZDy)(async () => {
             let {
               default: e
             } = await n.e("56035").then(n.bind(n, 758961));
-            return n => (0, r.jsx)(e, U(G({}, n), {
+            return n => (0, r.jsx)(e, U(M({}, n), {
               guildId: o.id,
               existingSound: t
             }))
@@ -398,12 +398,12 @@ function Y(e) {
         children: (0, r.jsx)(m.vdY, {
           size: "xs",
           color: "currentColor",
-          className: M.soundEditIcon
+          className: G.soundEditIcon
         })
       }), (0, r.jsx)(m.P3F, {
-        className: M.soundRemove,
+        className: G.soundRemove,
         onClick: function(e) {
-          e.stopPropagation(), (0, m.h7j)(e => (0, r.jsx)(m.ConfirmModal, U(G({
+          e.stopPropagation(), (0, m.h7j)(e => (0, r.jsx)(m.ConfirmModal, U(M({
             header: k.intl.formatToPlainString(k.t["PR/VbG"], {
               soundName: u
             }),
@@ -423,7 +423,7 @@ function Y(e) {
         children: (0, r.jsx)(m.Dio, {
           size: "md",
           color: "currentColor",
-          className: M.soundEditIcon
+          className: G.soundEditIcon
         })
       })]
     }) : null]

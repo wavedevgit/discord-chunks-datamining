@@ -35,7 +35,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk810688 = require("./810688.js"),
   Chunk297827 = require("./297827.js");
 
-function Z(e) {
+function D(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -54,7 +54,7 @@ function Z(e) {
   return e
 }
 
-function D(e, t) {
+function Z(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -103,7 +103,7 @@ function L(e) {
       } = e;
       if (0 === b.length) return (0, r.jsx)(k, {}, "empty-role");
       let o = b[l];
-      return (0, r.jsx)(M, {
+      return (0, r.jsx)(G, {
         role: o,
         guild: n,
         highestRole: p,
@@ -144,7 +144,7 @@ function k() {
   })
 }
 
-function M(e) {
+function G(e) {
   var t, l, c;
   let {
     role: d,
@@ -159,13 +159,13 @@ function M(e) {
     disableDrag: N,
     setEditRoleId: I,
     setSelectedSection: T
-  } = e, L = (0, E.T)(g, f, d), k = null != L, [M, U] = i.useState(false), B = i.useMemo(() => ({
+  } = e, L = (0, E.T)(g, f, d), k = null != L, [G, U] = i.useState(false), B = i.useMemo(() => ({
     type: A,
     item: () => (_(d.id), {
       id: d.id,
       position: x
     }),
-    canDrag: () => M && !k,
+    canDrag: () => G && !k,
     collect: e => ({
       isDragging: e.isDragging()
     }),
@@ -174,7 +174,7 @@ function M(e) {
       if (null == n) return void O();
       y(n.roleId)
     }
-  }), [d, _, O, y, k, M, x]), [{
+  }), [d, _, O, y, k, G, x]), [{
     isDragging: F
   }, H] = (0, a.c)(B), z = i.useMemo(() => ({
     accept: A,
@@ -197,7 +197,7 @@ function M(e) {
       let {
         default: e
       } = await Promise.resolve().then(n.bind(n, 741247));
-      return t => (0, r.jsx)(e, D(Z({}, t), {
+      return t => (0, r.jsx)(e, Z(D({}, t), {
         role: d,
         guild: g
       }))
@@ -249,7 +249,7 @@ function M(e) {
         className: w.roleFlowerStar,
         color: d.colorString,
         size: 24
-      }) : (0, r.jsx)(G, {
+      }) : (0, r.jsx)(M, {
         guildId: g.id,
         role: d,
         size: 24,
@@ -273,7 +273,7 @@ function M(e) {
         count: "".concat(v)
       }),
       position: "right",
-      children: e => (0, r.jsxs)(u.P3F, D(Z({}, e), {
+      children: e => (0, r.jsxs)(u.P3F, Z(D({}, e), {
         className: s()(w.memberCountContainer, R.memberSpacing),
         onClick: X,
         children: [(0, r.jsx)(u.Text, {
@@ -292,7 +292,7 @@ function M(e) {
       className: s()(w.buttonsContainer, R.buttonsSpacing),
       children: [(0, r.jsx)(u.ua7, {
         text: k ? P.intl.string(P.t["HO/oXl"]) : P.intl.string(P.t.bt75u7),
-        children: e => (0, r.jsx)(u.hU, D(Z({}, e), {
+        children: e => (0, r.jsx)(u.hU, Z(D({}, e), {
           variant: "secondary",
           "aria-label": k ? P.intl.string(P.t["HO/oXl"]) : P.intl.string(P.t.bt75u7),
           icon: k ? u.tEF : u.vdY,
@@ -301,7 +301,7 @@ function M(e) {
       }), (0, r.jsx)(u.ua7, {
         text: P.intl.string(P.t.UKOtz8),
         shouldShow: Y,
-        children: e => (0, r.jsx)(u.hU, D(Z({}, e), {
+        children: e => (0, r.jsx)(u.hU, Z(D({}, e), {
           variant: "secondary",
           "aria-label": P.intl.string(P.t.UKOtz8),
           icon: u.xhG,
@@ -313,7 +313,7 @@ function M(e) {
   })
 }
 
-function G(e) {
+function M(e) {
   var t, n, i, l;
   let {
     guildId: a,
@@ -331,7 +331,7 @@ function G(e) {
     roleId: o.id,
     size: c
   });
-  if (null != O) return (0, r.jsx)(f.Z, D(Z({}, O), {
+  if (null != O) return (0, r.jsx)(f.Z, Z(D({}, O), {
     className: g,
     enableTooltip: m
   }));

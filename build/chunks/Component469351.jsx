@@ -39,11 +39,11 @@ function w(e) {
     hasValidApplication: n
   } = e, {
     listingsLoaded: w
-  } = (0, y.eD)(t), R = (0, s.e7)([v.Z], () => v.Z.getGuild(t)), Z = (0, s.e7)([_.default], () => _.default.getCurrentUser()), D = null != R && (0, x.eM)(R, Z), {
+  } = (0, y.eD)(t), R = (0, s.e7)([v.Z], () => v.Z.getGuild(t)), D = (0, s.e7)([_.default], () => _.default.getCurrentUser()), Z = null != R && (0, x.eM)(R, D), {
     loading: A
   } = (0, c.H)(t), [L, k] = i.useState(n ? "manage_listings" : "payment");
   (0, m.P)(R);
-  let M = i.useCallback(() => {
+  let G = i.useCallback(() => {
     if (null == R) return;
     let e = j.Z.getEveryoneRole(R);
     p.Z.close();
@@ -59,7 +59,7 @@ function w(e) {
   }, [R]);
   if (!w || A) return (0, r.jsx)(o.$jN, {});
   if (null == R) return null;
-  let G = (0, r.jsxs)(r.Fragment, {
+  let M = (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(o.vwX, {
         tag: o.RB0.H1,
         children: T.intl.string(T.t.X6h2g4)
@@ -88,7 +88,7 @@ function w(e) {
         disabledTooltip: T.intl.string(T.t.NVDuUV),
         disabled: !n,
         children: T.intl.string(T.t.wlZ1mp)
-      }), D ? (0, r.jsx)(o.njP.Item, {
+      }), Z ? (0, r.jsx)(o.njP.Item, {
         id: "payment",
         className: P.tabBarItem,
         children: T.intl.string(T.t.YBrFe3)
@@ -97,7 +97,7 @@ function w(e) {
         children: (0, r.jsx)(a.zxk, {
           text: T.intl.string(T.t.vM81yc),
           variant: "secondary",
-          onClick: M,
+          onClick: G,
           size: "sm"
         })
       }) : null]
@@ -115,7 +115,7 @@ function w(e) {
     }) : (0, r.jsx)(o.$jN, {});
   return (0, r.jsxs)(d.AL, {
     guildId: t,
-    children: [G, (0, r.jsx)(g.Z, {
+    children: [M, (0, r.jsx)(g.Z, {
       guild: R
     }), (0, r.jsx)("div", {
       className: P.tabBarContainer,

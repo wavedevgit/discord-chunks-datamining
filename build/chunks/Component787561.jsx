@@ -2,7 +2,7 @@
 /** chunk id: 787561, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  X: () => D,
+  X: () => Z,
   Z: () => k
 }), require("./953529.js"), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
@@ -65,8 +65,8 @@ function R(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let Z = "dismissedCommunityFeaturesUpsell",
-  D = () => {
+let D = "dismissedCommunityFeaturesUpsell",
+  Z = () => {
     let e, {
         guild: t,
         submitting: n,
@@ -101,7 +101,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
       discoveryEnabled: t,
       onboardingEnabled: n,
       guild: l
-    } = e, [s, a] = i.useState(true === d.K.get(Z)), g = (0, o.e7)([x.Z], () => {
+    } = e, [s, a] = i.useState(true === d.K.get(D)), g = (0, o.e7)([x.Z], () => {
       var e;
       return null != (e = x.Z.getMemberCount(l.id)) ? e : 0
     }), [f, b] = i.useState(false);
@@ -151,7 +151,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
         size: u.zx.Sizes.NONE,
         className: T.upsellClose,
         onClick: () => {
-          d.K.set(Z, true), a(true)
+          d.K.set(D, true), a(true)
         },
         children: (0, r.jsx)(m.Dio, {
           size: "md",
@@ -216,7 +216,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
       })),
       l = (0, Chunk442837.e7)([Chunk984933.ZP], () => null != module ? Chunk984933.ZP.getChannels(module.id) : null),
       c = Chunk647438.useMemo(Chunk929834.jb, []),
-      u = true !== Chunk433517.K.get(Z);
+      u = true !== Chunk433517.K.get(D);
     if (null == module) return null;
     let g = [];
     null != Chunk120356 && Chunk120356[Chunk984933.sH].forEach(e => {

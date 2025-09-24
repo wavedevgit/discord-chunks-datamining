@@ -63,16 +63,16 @@ let _ = function(e) {
     onDragStart: T,
     onDragComplete: P,
     onDragReset: w
-  } = e, R = (0, a.e7)([p.Z], () => p.Z.getChannel(N.channelId)), Z = (0, a.e7)([f.Z], () => f.Z.getGuild(C)), {
-    customEmoji: D,
+  } = e, R = (0, a.e7)([p.Z], () => p.Z.getChannel(N.channelId)), D = (0, a.e7)([f.Z], () => f.Z.getGuild(C)), {
+    customEmoji: Z,
     unicodeEmoji: A
-  } = (0, u.Z)(null == (t = N.emoji) ? true : t.id, null == (l = N.emoji) ? true : l.name), L = null == N.emoji || null != D || null != A, k = h.ZP.getNewMemberActionIconURL({
+  } = (0, u.Z)(null == (t = N.emoji) ? true : t.id, null == (l = N.emoji) ? true : l.name), L = null == N.emoji || null != Z || null != A, k = h.ZP.getNewMemberActionIconURL({
     channelId: N.channelId,
     icon: N.icon
-  }), M = null;
-  null != R && (0, m.kb)(R) ? L || (M = b.intl.string(b.t.wAkIZW)) : M = b.intl.string(b.t.CbTEKC);
+  }), G = null;
+  null != R && (0, m.kb)(R) ? L || (G = b.intl.string(b.t.wAkIZW)) : G = b.intl.string(b.t.CbTEKC);
   let {
-    drag: G,
+    drag: M,
     dragSourcePosition: U,
     drop: B,
     setIsDraggable: F
@@ -96,7 +96,7 @@ let _ = function(e) {
       }))
     })
   }, [C, N, E, I, S]);
-  if (null == R || null == Z) return null;
+  if (null == R || null == D) return null;
   let z = null != (y = (0, c.KS)(R)) ? y : o.VL1;
   return (0, r.jsxs)("div", {
     className: x.actionItemContainer,
@@ -104,10 +104,10 @@ let _ = function(e) {
       className: s()(x.actionItem, {
         [x.dropIndicatorBefore]: null != U && E < U,
         [x.dropIndicatorAfter]: null != U && E > U,
-        [x.actionItemError]: null != M
+        [x.actionItemError]: null != G
       }),
       ref: e => {
-        G(B(e))
+        M(B(e))
       },
       children: [(0, r.jsx)("div", {
         className: x.dragContainer,
@@ -159,10 +159,10 @@ let _ = function(e) {
           "aria-label": b.intl.string(b.t.bt75u7)
         }))
       })]
-    }), null != M && (0, r.jsx)(o.Text, {
+    }), null != G && (0, r.jsx)(o.Text, {
       variant: "text-xs/medium",
       color: "text-danger",
-      children: M
+      children: G
     })]
   })
 }

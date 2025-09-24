@@ -2,7 +2,7 @@
 /** chunk id: 145499, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => D
+  Z: () => Z
 }), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -79,7 +79,7 @@ let w = e => {
       src: require("./872732.js")
     })
   }),
-  Z = e => {
+  D = e => {
     let {
       guild: t
     } = e, {
@@ -114,7 +114,7 @@ let w = e => {
       disabled: !l
     })
   },
-  D = e => {
+  Z = e => {
     let {
       guild: t
     } = e, {
@@ -124,11 +124,11 @@ let w = e => {
       return null != (e = _.Z.getStickersByGuildId(t.id)) ? e : []
     }, [t]), {
       analyticsLocations: j
-    } = (0, m.ZP)(), D = (0, b.Z)(t.id), A = t.features.has(E.oNc.MORE_STICKERS) ? E.Eu4.TIER_3 : t.premiumTier, L = t.features.has(E.oNc.MORE_STICKERS) ? E.oCV[E.Eu4.TIER_3] : D, k = (0, x.Z)(t.id);
+    } = (0, m.ZP)(), Z = (0, b.Z)(t.id), A = t.features.has(E.oNc.MORE_STICKERS) ? E.Eu4.TIER_3 : t.premiumTier, L = t.features.has(E.oNc.MORE_STICKERS) ? E.oCV[E.Eu4.TIER_3] : Z, k = (0, x.Z)(t.id);
     if (i.useEffect(() => {
         window.dispatchEvent(new Event("resize"))
       }, [u]), l) return (0, r.jsx)(c.$jN, {});
-    let M = [{
+    let G = [{
       tier: E.Eu4.NONE,
       title: (0, r.jsx)(w, {
         guildStickers: u,
@@ -162,7 +162,7 @@ let w = e => {
       })
     }];
     return (0, r.jsx)(C.Z, {
-      tiers: M,
+      tiers: G,
       renderTier: e => {
         var i;
         let l, a, {
@@ -176,28 +176,28 @@ let w = e => {
             canCreateExpressions: C,
             canManageGuildExpression: w
           } = (0, f.Gw)(t),
-          M = _[O - 1],
-          G = null != M ? (0, v.A3)(M.tier) : 0,
+          G = _[O - 1],
+          M = null != G ? (0, v.A3)(G.tier) : 0,
           U = (0, v.A3)(x.tier, t),
           B = (0, v.ig)(x.tier),
-          F = u.slice(G, U),
+          F = u.slice(M, U),
           H = F.length > 0,
           z = A < x.tier,
           V = (i = u.length, i < (0, v.A3)(E.Eu4.NONE) ? E.Eu4.NONE : i < (0, v.A3)(E.Eu4.TIER_1) ? E.Eu4.TIER_1 : i < (0, v.A3)(E.Eu4.TIER_2) ? E.Eu4.TIER_2 : i < (0, v.A3)(E.Eu4.TIER_3) || null != t && t.features.has(E.oNc.MORE_STICKERS) && i < d.D.MAX_STICKER_SLOTS ? E.Eu4.TIER_3 : E.Eu4.NONE),
           W = C && !z && V === x.tier && U !== F.length,
           K = W || F.length > 0,
-          Y = U - G,
+          Y = U - M,
           q = n(872732),
           X = B - F.length,
           Q = W ? Math.min(5 - (F.length + 0) % 5, X) : 0,
           J = [];
         for (let e = 0; e < Q; e++) J.push((0, r.jsx)(R, {}, "placeholder-".concat(e)));
-        let $ = t.premiumTier < x.tier && D >= E.oCV[x.tier],
+        let $ = t.premiumTier < x.tier && Z >= E.oCV[x.tier],
           ee = S.intl.string(S.t.dtFw5e),
           et = () => {
             var e, n;
             let r;
-            return e = Math.max(1, E.oCV[x.tier] - D), n = x.tier, r = null, void(n === E.Eu4.TIER_1 ? r = E.Qqv.TIER_1 : n === E.Eu4.TIER_2 ? r = E.Qqv.TIER_2 : n === E.Eu4.TIER_3 && (r = E.Qqv.TIER_3), (0, p.Z)({
+            return e = Math.max(1, E.oCV[x.tier] - Z), n = x.tier, r = null, void(n === E.Eu4.TIER_1 ? r = E.Qqv.TIER_1 : n === E.Eu4.TIER_2 ? r = E.Qqv.TIER_2 : n === E.Eu4.TIER_3 && (r = E.Qqv.TIER_3), (0, p.Z)({
               analyticsLocations: j,
               analyticsLocation: {
                 page: E.ZY5.GUILD_SETTINGS,
@@ -228,7 +228,7 @@ let w = e => {
             object: E.qAy.BOOST_UPSELL_NEXT_LEVEL_HEADER,
             objectType: (0, v.ge)(x.tier)
           }
-        }) : W && (a = (0, r.jsx)(Z, {
+        }) : W && (a = (0, r.jsx)(D, {
           guild: t
         })), (0, r.jsxs)(N.Z, {
           subscriptionCount: L,
