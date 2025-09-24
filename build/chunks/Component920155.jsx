@@ -9,9 +9,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk401393 = require("./401393.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk930295 = require("./930295.jsx"),
-  Chunk681803 = require("./681803.jsx"),
   Chunk304789 = require("./304789.jsx"),
   Chunk819640 = require("./819640.js"),
   Chunk945909 = require("./945909.js"),
@@ -92,7 +92,7 @@ function A(e) {
     gradientColor: C,
     onPositionChange: N,
     scrollBehavior: R = "sticky"
-  } = e, [P, w] = i.useState(h), [D, x] = i.useState(b), L = i.useRef(b), j = (0, l.e7)([f.Z], () => f.Z.getLayers()), M = null != (t = j[j.length - 1]) ? t : "base", k = i.useMemo(() => {
+  } = e, [P, w] = i.useState(h), [D, x] = i.useState(b), L = i.useRef(b), j = (0, c.e7)([f.Z], () => f.Z.getLayers()), M = null != (t = j[j.length - 1]) ? t : "base", k = i.useMemo(() => {
     var e;
     return null == a.current || (null == (e = a.current.closest("[data-layer]")) ? true : e.getAttribute("data-layer")) === M
   }, [a, M]);
@@ -111,10 +111,10 @@ function A(e) {
       var {
         setPopoutRef: t,
         position: i
-      } = e, l = O(e, ["setPopoutRef", "position"]);
+      } = e, c = O(e, ["setPopoutRef", "position"]);
       return null != i && i !== L.current && (L.current = i, x(i), null == N || N(i)), G((e, i) => {
         if (!i) return null;
-        let c = (0, r.jsx)(u.V, y(E({}, l), {
+        let u = (0, r.jsx)(l.VqE, y(E({}, c), {
           setDialogRef: t,
           modal: false,
           className: o()(null != C ? m.popoverContentWithGradient : m.popover, {
@@ -130,12 +130,12 @@ function A(e) {
             offsetBottom: .4,
             color: C,
             className: m.popoverGradientWrapper,
-            children: c
-          }) : c
+            children: u
+          }) : u
         })
       })
     };
-  return (0, r.jsx)(c.H, {
+  return (0, r.jsx)(u.H, {
     targetElementRef: a,
     shouldShow: P,
     onRequestClose: g,

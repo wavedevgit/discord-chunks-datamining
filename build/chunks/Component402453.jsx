@@ -23,7 +23,8 @@ let a = {
     },
     theme: "light",
     saturation: .5,
-    defaultLayerContext: true
+    defaultLayerContext: true,
+    trackImpression: true
   },
   o = Chunk647438.createContext(a);
 
