@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  c = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk870246 = require("./870246.js"),
   Chunk639777 = require("./639777.js"),
@@ -39,8 +39,8 @@ function _(e) {
       }
       return r
     }(e, ["guildId", "powerup", "onClose"]);
-  let [j, g] = r.useState(true), v = (0, d.ZP)(a, _), x = v.type === b.A3.TIER_OVERRIDE_ACTIVATED, y = (0, l.Z)(a), C = null == v.sourceEntitlement || !y;
-  return (0, i.$)(a, _, i.w.DETAIL), (0, n.jsxs)(s.Y0X, (t = function(e) {
+  let [j, g] = r.useState(true), v = (0, d.ZP)(a, _), x = v.type === b.A3.TIER_OVERRIDE_ACTIVATED, h = (0, l.Z)(a), y = null == v.sourceEntitlement || !h;
+  return (0, i.$)(a, _, i.w.DETAIL), (0, n.jsxs)(c.Y0X, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var o = null != arguments[t] ? arguments[t] : {},
         n = Object.keys(o);
@@ -60,10 +60,10 @@ function _(e) {
   }({
     "data-migration-pending": true,
     className: f.modal,
-    size: s.CgR.DYNAMIC
+    size: c.CgR.DYNAMIC
   }, k), o = o = {
     parentComponent: "GuildPowerupLevelModal",
-    children: [(0, n.jsxs)(s.hzk, {
+    children: [(0, n.jsxs)(c.hzk, {
       "data-migration-pending": true,
       className: f.modalContentContainer,
       scrollbarType: "none",
@@ -73,33 +73,32 @@ function _(e) {
         className: f.boostImage
       }), (0, n.jsxs)("div", {
         className: f.contentContainer,
-        children: [(0, n.jsx)(s.X6q, {
+        children: [(0, n.jsx)(c.X6q, {
           variant: "heading-xl/extrabold",
           children: _.title
         }), (0, n.jsx)(u.Z, {
           powerup: _
-        }), null != j && (0, n.jsx)(s.Text, {
+        }), null != j && (0, n.jsx)(c.Text, {
           color: "status-danger",
           variant: "text-sm/semibold",
           children: j
         }), (0, n.jsxs)("div", {
-          className: c()(f.footer, {
-            [f.disabled]: C
+          className: s()(f.footer, {
+            [f.disabled]: y
           }),
-          children: [!x && y && (0, n.jsx)(p.ZP, {
+          children: [!x && h && (0, n.jsx)(p.Z, {
             guildId: a,
             powerup: _,
             onError: g,
-            grow: false,
-            compact: !C
-          }), (0, n.jsx)(s.zxk, {
-            variant: C ? "secondary" : "primary",
+            fullWidth: false
+          }), (0, n.jsx)(c.zxk, {
+            variant: y ? "secondary" : "primary",
             onClick: O,
             text: m.intl.string(m.t.cpT0Cg)
           })]
         })]
       })]
-    }), (0, n.jsx)(s.olH, {
+    }), (0, n.jsx)(c.olH, {
       "data-migration-pending": true,
       className: f.close,
       onClick: O

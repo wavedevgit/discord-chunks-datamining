@@ -1,15 +1,11 @@
 /** Chunk was on 51727 **/
 /** chunk id: 880419, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Po: () => O,
-  RD: () => _,
-  ZP: () => v
+  P: () => h,
+  Z: () => m
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk762762 = require("./762762.js"),
   Chunk973772 = require("./973772.js"),
@@ -19,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk362320 = require("./362320.js");
 
-function m(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,93 +34,55 @@ function m(e) {
   return e
 }
 
-function b(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
-    }
-    return n
-  })(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-
-function _(e) {
-  let {
-    cost: t,
-    isActive: n,
-    compact: i,
-    iconSize: l
-  } = e, o = null != l ? l : "sm", a = n ? (0, r.jsx)(s.mTd, {
-    size: o,
-    color: "currentColor"
-  }) : (0, r.jsx)(s.$Eu, {
-    size: o,
-    color: "currentColor"
-  }), c = h.intl.string(n ? f.default.TZsu1d : f.default.gSxlHR);
-  return (0, r.jsxs)(r.Fragment, {
-    children: [!i && c, !i && (0, r.jsx)("span", {
-      className: g.dot,
-      children: "•"
-    }), a, (0, r.jsx)("span", {
-      children: t
-    })]
-  })
-}
-
-function O(e) {
+function h(e) {
   let {
     cost: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: g.tooltipContainer,
-    children: [(0, r.jsx)(s.Text, {
+    className: p.tooltipContainer,
+    children: [(0, r.jsx)(l.Text, {
       variant: "text-xs/semibold",
-      children: h.intl.string(f.default.TZsu1d)
-    }), (0, r.jsx)(s.Text, {
+      children: d.intl.string(u.default.TZsu1d)
+    }), (0, r.jsx)(l.Text, {
       variant: "text-xs/medium",
-      children: h.intl.formatToPlainString(f.default["5HQUzM"], {
+      children: d.intl.formatToPlainString(u.default["5HQUzM"], {
         boostCount: t
       })
     })]
   })
 }
 
-function y(e) {
+function g(e) {
   let {
     guildId: t,
     powerup: n
-  } = e, i = (0, u.ZP)(t, n);
-  if (i.type === p.A3.LEVEL_ACTIVATED) {
-    var l, o;
+  } = e, i = (0, a.ZP)(t, n);
+  if (i.type === c.A3.LEVEL_ACTIVATED) {
+    var o, s;
     return (0, r.jsxs)("div", {
-      className: g.tooltipContainer,
-      children: [(0, r.jsx)(s.Text, {
+      className: p.tooltipContainer,
+      children: [(0, r.jsx)(l.Text, {
         variant: "text-xs/semibold",
-        children: h.intl.string(f.default["9oYuvb"])
-      }), (0, r.jsx)(s.Text, {
+        children: d.intl.string(u.default["9oYuvb"])
+      }), (0, r.jsx)(l.Text, {
         variant: "text-xs/medium",
-        children: h.intl.formatToPlainString(f.default.WRRYUV, {
-          perkName: null != (o = null == (l = i.sourcePowerup) ? true : l.title) ? o : h.intl.string(h.t.BfF6EB)
+        children: d.intl.formatToPlainString(u.default.WRRYUV, {
+          perkName: null != (s = null == (o = i.sourcePowerup) ? true : o.title) ? s : d.intl.string(d.t.BfF6EB)
         })
       })]
     })
   }
-  if (i.type === p.A3.POWERUP_ACTIVATED) return (0, r.jsx)(O, {
+  if (i.type === c.A3.POWERUP_ACTIVATED) return (0, r.jsx)(h, {
     cost: n.cost
   })
 }
 
-function v(e) {
+function m(e) {
   var {
     guildId: t,
     powerup: n,
-    compact: l,
-    iconSize: O,
-    onError: v
-  } = e, j = function(e, t) {
+    onError: p
+  } = e, h = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -138,43 +96,55 @@ function v(e) {
       for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
-  }(e, ["guildId", "powerup", "compact", "iconSize", "onError"]);
+  }(e, ["guildId", "powerup", "onError"]);
   let {
-    onActivate: x,
-    isLoading: C,
-    error: E,
-    onShowDeactivate: S
-  } = (0, d.ZP)(t, n), P = (0, u.ZP)(t, n).type !== p.A3.INACTIVE, {
-    disabled: I,
-    reason: N
-  } = (0, c.Z)(t, n, P);
-  return i.useEffect(() => {
-    null == v || v(E)
-  }, [E, v]), (0, r.jsx)(s.ua7, {
+    onActivate: m,
+    isLoading: b,
+    error: _,
+    onShowDeactivate: O
+  } = (0, s.ZP)(t, n), y = (0, a.ZP)(t, n).type !== c.A3.INACTIVE, {
+    disabled: v,
+    reason: j
+  } = (0, o.Z)(t, n, y);
+  i.useEffect(() => {
+    null == p || p(_)
+  }, [_, p]);
+  let x = "".concat(n.cost);
+  return y || (x += " \xb7 ".concat(d.intl.string(u.default.gSxlHR))), (0, r.jsx)(l.ua7, {
     delay: 100,
-    "aria-label": null != N ? N : P ? h.intl.string(f.default.TZsu1d) : true,
-    text: null != N ? N : P ? (0, r.jsx)(y, {
+    "aria-label": null != j ? j : y ? d.intl.string(u.default.TZsu1d) : true,
+    text: null != j ? j : y ? (0, r.jsx)(g, {
       guildId: t,
       powerup: n
     }) : true,
-    children: e => (0, r.jsx)(a.zx, b(m(b(m({}, e), {
-      className: g.secondaryButton,
-      innerClassName: g.buttonInner,
-      wrapperClassName: o()(g.secondaryButton, {
-        [g.buttonWrapper]: true === j.grow
-      }),
-      color: P ? a.Tt.PRIMARY : a.Tt.BRAND,
-      "aria-label": h.intl.string(P ? f.default.TZsu1d : f.default.gSxlHR),
-      disabled: I,
-      onClick: P ? S : x,
-      submitting: C
-    }), j), {
-      children: (0, r.jsx)(_, {
-        cost: n.cost,
-        isActive: P,
-        compact: l,
-        iconSize: O
-      })
-    }))
+    children: e => {
+      var t, n;
+      return (0, r.jsx)(l.zxk, f((t = f({}, e), n = n = {
+        minWidth: 0,
+        variant: y ? "secondary" : "primary",
+        "aria-label": y ? d.intl.string(u.default.TZsu1d) : d.intl.string(u.default.gSxlHR),
+        text: x,
+        icon: y ? {
+          type: "icon",
+          asset: l.mTd
+        } : {
+          type: "icon",
+          asset: l.$Eu
+        },
+        iconPosition: "start",
+        disabled: v,
+        onClick: y ? O : m,
+        loading: b
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+        var n = Object.keys(e);
+        if (Object.getOwnPropertySymbols) {
+          var r = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, r)
+        }
+        return n
+      })(Object(n)).forEach(function(e) {
+        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+      }), t), h))
+    }
   })
 }

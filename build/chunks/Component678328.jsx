@@ -36,13 +36,13 @@ function p() {
     guildId: e,
     portkeyGames: t,
     instances: n,
-    setPortkeyInstance: i,
+    setPortkeyInstance: a,
     setCurrentGame: o,
     onNext: p
   } = (0, Chunk183369.aj)(), x = Chunk647438.useCallback(e => {
     o(e), p()
   }, [Chunk494620, p]), y = Chunk647438.useCallback(e => {
-    i(e), p()
+    a(e), p()
   }, [Chunk120356, p]), h = require.length >= Chunk473682.zI, O = require.length > 0;
   return 0 === Object.values(exports).length ? (0, Chunk951288.jsx)("div", {
     className: Chunk782991.loadingContainer,
@@ -66,7 +66,7 @@ function p() {
         children: Chunk388032.intl.string(Chunk401561.default.wzC4ws)
       }), (0, Chunk951288.jsx)("div", {
         className: Chunk782991.gameInstanceContainer,
-        children: require.map((t, n) => (0, l.jsx)(c.Z, {
+        children: require.map((t, n) => (0, l.jsx)(u.Z, {
           guildId: e,
           gameInstance: t,
           onClick: y
@@ -81,7 +81,7 @@ function p() {
         children: Chunk388032.intl.string(Chunk401561.default.l4UdiY)
       }), (0, Chunk951288.jsx)("div", {
         className: Chunk782991.gameContainer,
-        children: Object.values(exports).map((e, t) => (0, l.jsx)(u.Z, {
+        children: Object.values(exports).map((e, t) => (0, l.jsx)(c.Z, {
           game: e,
           disabled: h,
           onClick: x

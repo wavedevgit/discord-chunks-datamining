@@ -12,52 +12,52 @@ var Chunk120356 = require("./120356.js"),
 function i(e, t) {
   if (t) return {
     Icon: a.dz2,
-    className: s.unlocked
+    className: c.unlocked
   };
   switch (e) {
-    case c.Ro.EMOJI:
+    case s.Ro.EMOJI:
       return {
-        Icon: a.EO4, className: r()(s.icon, s.emoji)
+        Icon: a.EO4, className: r()(c.icon, c.emoji)
       };
-    case c.Ro.AUDIO:
+    case s.Ro.AUDIO:
       return {
-        Icon: a.VWR, className: r()(s.icon, s.audio)
+        Icon: a.VWR, className: r()(c.icon, c.audio)
       };
-    case c.Ro.ANIMATED:
+    case s.Ro.ANIMATED:
       return {
-        Icon: a.OUq, className: r()(s.icon, s.animated)
+        Icon: a.OUq, className: r()(c.icon, c.animated)
       };
-    case c.Ro.CUSTOMIZATION:
+    case s.Ro.CUSTOMIZATION:
       return {
-        Icon: a.Ka2, className: r()(s.icon, s.customization)
+        Icon: a.Ka2, className: r()(c.icon, c.customization)
       };
-    case c.Ro.UPLOAD:
+    case s.Ro.UPLOAD:
       return {
-        Icon: a.rG2, className: r()(s.icon, s.upload)
+        Icon: a.rG2, className: r()(c.icon, c.upload)
       };
-    case c.Ro.VANITY:
+    case s.Ro.VANITY:
       return {
-        Icon: a.r7p, className: r()(s.icon, s.vanity)
+        Icon: a.r7p, className: r()(c.icon, c.vanity)
       };
-    case c.Ro.STREAM:
+    case s.Ro.STREAM:
       return {
-        Icon: a.hGI, className: r()(s.icon, s.stream)
+        Icon: a.hGI, className: r()(c.icon, c.stream)
       };
-    case c.Ro.STICKER:
+    case s.Ro.STICKER:
       return {
-        Icon: a.SlE, className: r()(s.icon, s.sticker)
+        Icon: a.SlE, className: r()(c.icon, c.sticker)
       };
-    case c.Ro.CUSTOM_ROLE_ICON:
+    case s.Ro.CUSTOM_ROLE_ICON:
       return {
-        Icon: a.lZ8, className: r()(s.icon, s.customRoleIcon)
+        Icon: a.lZ8, className: r()(c.icon, c.customRoleIcon)
       };
-    case c.Ro.STAGE_VIDEO:
+    case s.Ro.STAGE_VIDEO:
       return {
-        Icon: a.ewx, className: r()(s.icon, s.stage)
+        Icon: a.ewx, className: r()(c.icon, c.stage)
       };
-    case c.Ro.SOUNDBOARD:
+    case s.Ro.SOUNDBOARD:
       return {
-        Icon: a.KY1, className: r()(s.icon, s.soundboard)
+        Icon: a.KY1, className: r()(c.icon, c.soundboard)
       }
   }
   throw Error("Unexpected perk icon ".concat(e))

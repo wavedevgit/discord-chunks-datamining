@@ -8,6 +8,5 @@ module.exports = {
   container: "container__8fcbd",
   contentContainer: "contentContainer__8fcbd",
   description: "description__8fcbd",
-  button: "button__8fcbd",
   image: "image__8fcbd"
 }

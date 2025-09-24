@@ -1,7 +1,7 @@
 /** Chunk was on 60728 **/
 /** chunk id: 741252, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => d
 });
 var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
@@ -10,15 +10,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk176505 = require("./176505.js"),
   Chunk401561 = require("./401561.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk477487 = require("./477487.js"),
   Chunk438957 = require("./438957.js");
 
-function m(e, t) {
-  (0, a.ZDy)(async () => {
+function d(e, t) {
+  (0, i.ZDy)(async () => {
     let {
-      default: m
+      default: d
     } = await n.e("13965").then(n.bind(n, 666083));
-    return n => (0, l.jsx)(m, function(e) {
+    return n => (0, l.jsx)(d, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           l = Object.keys(n);
@@ -36,26 +35,25 @@ function m(e, t) {
       }
       return e
     }({
-      title: c.intl.string(o.default.hcBOZW),
-      description: c.intl.formatToPlainString(o.default.KCgZMj, {
+      title: u.intl.string(o.default.hcBOZW),
+      description: u.intl.formatToPlainString(o.default.KCgZMj, {
         provider: "Portkey"
       }),
       image: (0, l.jsx)("div", {
-        className: d.imageContainer,
+        className: c.imageContainer,
         children: (0, l.jsx)("img", {
-          className: d.image,
+          className: c.image,
           alt: "",
           src: t.imageUrl
         })
       }),
       button: (0, l.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
-        className: u.button,
-        children: (0, l.jsx)(a.zxk, {
+        children: (0, l.jsx)(i.zxk, {
           variant: "primary",
-          text: c.intl.string(o.default.AS3n8v),
+          text: u.intl.string(o.default.AS3n8v),
           onClick: () => {
-            (0, i.uL)(r.Z5c.CHANNEL(e, s.oC.PORTKEY)), n.onClose()
+            (0, a.uL)(r.Z5c.CHANNEL(e, s.oC.PORTKEY)), n.onClose()
           }
         })
       })

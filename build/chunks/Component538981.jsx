@@ -62,7 +62,12 @@ let b = 3,
     } catch (e) {
       s.Z.dispatch({
         type: "MARKETING_CAMPAIGN_ELIGIBILITY_FETCH_FAILED"
-      }), d.Z.captureException(e)
+      });
+      try {
+        d.Z.captureException(e)
+      } catch (e) {
+        d.Z.captureMessage("Sentry Utils Capture Exception Failed along Marketing Campaign Eligibility Fetch Path")
+      }
     }
   };
 
