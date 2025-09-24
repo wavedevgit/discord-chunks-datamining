@@ -2,11 +2,11 @@
 /** chunk id: 162461, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
+  EB: () => l,
   me: () => s,
   nP: () => f,
   sA: () => c,
-  wm: () => u,
-  zO: () => l
+  wm: () => u
 });
 var Chunk818083 = require("./818083.js"),
   Chunk518929 = require("./518929.js"),
@@ -51,13 +51,17 @@ let o = (0, Chunk818083.B)({
   }),
   l = (0, Chunk818083.B)({
     kind: "user",
-    id: "2025-05_hotwheels_user_affinity_v2",
+    id: "2025-09_hotwheels_nvidia_boost",
     label: "Next iteration of the activity feed ranking model.",
     commonTriggerPoint: Chunk987338.$P.CONNECTION_OPEN,
     defaultConfig: {},
     treatments: [{
-      id: 14,
-      label: "ML model V3 - User Affinity V2",
+      id: 16,
+      label: "ML model V3 - Nvidia small boost",
+      config: {}
+    }, {
+      id: 17,
+      label: "ML model V3 - Nvidia big boost",
       config: {}
     }]
   });
