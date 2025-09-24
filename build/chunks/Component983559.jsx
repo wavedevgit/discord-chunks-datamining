@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk401393 = require("./401393.js"),
-  Chunk597312 = require("./597312.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk481060 = require("./481060.js"),
   Chunk727637 = require("./727637.js"),
   Chunk410030 = require("./410030.js"),
@@ -99,7 +99,7 @@ function L(e) {
           children: [null != V.interactionType && (0, r.jsx)(l.animated.div, {
             style: W,
             className: A.backdrop
-          }), (0, r.jsxs)(a.u2, {
+          }), (0, r.jsxs)(a.u2D, {
             children: [(0, r.jsxs)(C.Z, {
               children: [(0, r.jsx)(I.Z, {
                 user: n,

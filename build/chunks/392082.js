@@ -16,7 +16,7 @@ module.exports = {
   permission: "permission__50a54",
   permissionCheckmark: "permissionCheckmark__50a54",
   disclosureIcon: "disclosureIcon__50a54",
-  infoBox: "infoBox__50a54",
+  deleteModalBody: "deleteModalBody__50a54",
   warningContainer: "warningContainer__50a54",
   warningOuterContainer: "warningOuterContainer__50a54",
   warningIcon: "warningIcon__50a54",

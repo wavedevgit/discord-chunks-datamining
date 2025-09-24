@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
-  Chunk147479 = require("./147479.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk493773 = require("./493773.js"),
   Chunk959338 = require("./959338.js");
 
@@ -289,7 +289,7 @@ let d = Chunk647438.memo(Chunk647438.forwardRef((e, t) => {
     }
   }, [X, d]), J = i.useMemo(() => ({
     height: H
-  }), [H]), $ = A ? s.xV : s.h2;
+  }), [H]), $ = A ? s.xVE : s.h21;
   return (0, r.jsxs)($, {
     fade: C,
     className: o()(c.scroller, S),

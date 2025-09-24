@@ -8,13 +8,13 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk657707 = require("./657707.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk756715 = require("./756715.jsx"),
   Chunk104140 = require("./104140.jsx"),
   Chunk830447 = require("./830447.jsx"),
   Chunk828214 = require("./828214.js"),
   Chunk327496 = require("./327496.jsx"),
   Chunk235874 = require("./235874.jsx"),
-  Chunk21340 = require("./21340.js"),
   Chunk417153 = require("./417153.js"),
   Chunk981729 = require("./981729.jsx"),
   Chunk159691 = require("./159691.js"),
@@ -123,26 +123,26 @@ function j(e) {
   var t;
   let {
     config: n
-  } = e, l = D.useField("selectedCollection"), c = D.useField("selectedStory"), {
-    collection: d,
+  } = e, c = D.useField("selectedCollection"), u = D.useField("selectedStory"), {
+    collection: f,
     group: m,
     story: E
   } = i.useMemo(() => {
     var e;
-    let t = null != l ? n.collections.find(e => e.id === l) : n.collections[0];
+    let t = null != c ? n.collections.find(e => e.id === c) : n.collections[0];
     if (null == t) return {
       collection: null,
       group: null,
       story: null
     };
-    let r = t.groups.find(e => e.stories.some(e => e.id === c)),
-      i = null != (e = null == r ? true : r.stories.find(e => e.id === c)) ? e : null;
+    let r = t.groups.find(e => e.stories.some(e => e.id === u)),
+      i = null != (e = null == r ? true : r.stories.find(e => e.id === u)) ? e : null;
     return {
       collection: t,
       group: r,
       story: i
     }
-  }, [l, c, n.collections]), b = e => {
+  }, [c, u, n.collections]), b = e => {
     D.setState({
       selectedCollection: e,
       selectedStory: null
@@ -151,7 +151,7 @@ function j(e) {
     D.setState({
       selectedStory: e
     })
-  }, S = null != (t = null == d ? true : d.name) ? t : "Design System", A = null == E ? true : E.name, N = () => {
+  }, S = null != (t = null == f ? true : f.name) ? t : "Design System", A = null == E ? true : E.name, N = () => {
     let e = "dev://mana/".concat(null == E ? true : E.id);
     (0, O.JG)(e, () => (0, _.CF)({
       id: "playground-link-copied",
@@ -163,15 +163,15 @@ function j(e) {
     className: C.root,
     children: [(0, r.jsx)("div", {
       className: C.group,
-      children: n.collections.map(e => (0, r.jsx)(s.a, {
+      children: n.collections.map(e => (0, r.jsx)(l.a, {
         children: (0, r.jsx)(p.u, {
           position: "right",
           text: "".concat(e.name, " Design System"),
           children: t => {
             var i;
-            return (0, r.jsx)(u.L, w(R({}, t), {
+            return (0, r.jsx)(d.L, w(R({}, t), {
               name: e.name,
-              selected: (null != l ? l : null == (i = n.collections[0]) ? true : i.id) === e.id,
+              selected: (null != c ? c : null == (i = n.collections[0]) ? true : i.id) === e.id,
               onClick: () => b(e.id)
             }))
           }
@@ -193,7 +193,7 @@ function j(e) {
           children: [(0, r.jsx)(g.ZP.Divider, {
             className: C.headerDivider
           }), (0, r.jsx)(g.ZP.Title, {
-            children: (0, r.jsx)(o.Anchor, {
+            children: (0, r.jsx)(s.Anchor, {
               href: E.docs,
               children: "Docs"
             })
@@ -210,12 +210,12 @@ function j(e) {
         })]
       }), (0, r.jsxs)("div", {
         className: C.page,
-        children: [(0, r.jsx)(f.zJ, {
+        children: [(0, r.jsx)(o.zJl, {
           fade: true,
           className: C.sidebar,
-          children: null != d ? (0, r.jsx)(v.N, {
-            groups: d.groups,
-            selectedStory: c,
+          children: null != f ? (0, r.jsx)(v.N, {
+            groups: f.groups,
+            selectedStory: u,
             onStorySelect: y
           }) : null
         }), (0, r.jsx)("div", {

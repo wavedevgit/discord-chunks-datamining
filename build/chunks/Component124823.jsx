@@ -5,7 +5,7 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk597312 = require("./597312.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk481060 = require("./481060.js"),
   Chunk727637 = require("./727637.js"),
   Chunk410030 = require("./410030.js"),
@@ -83,7 +83,7 @@ function w(e) {
         displayProfile: D,
         themeType: Z.l.SIDEBAR,
         themeOverride: L,
-        children: [(0, r.jsxs)(l.u2, {
+        children: [(0, r.jsxs)(l.u2D, {
           children: [(0, r.jsx)(S.Z, {
             children: (0, r.jsx)(E.Z, {
               user: n

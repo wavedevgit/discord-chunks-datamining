@@ -1,11 +1,10 @@
 /** Chunk was on 44799 **/
 /** chunk id: 460608, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => x
 }), require("./642613.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk597312 = require("./597312.js"),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk179360 = require("./179360.js"),
@@ -19,41 +18,41 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk240379 = require("./240379.js");
 
-function _(e) {
+function x(e) {
   let {
     guildId: t
-  } = e, n = (0, a.Wu)([u.Z], () => {
+  } = e, n = (0, l.Wu)([c.Z], () => {
     var e;
-    return null != (e = u.Z.getAppliedGuildBoostsForGuild(t)) ? e : []
-  }, [t]), _ = i.useMemo(() => n.sort((e, t) => m.default.extractTimestamp(e.id) < m.default.extractTimestamp(t.id) ? 1 : false), [n]), b = (0, a.Wu)([p.ZP], () => {
+    return null != (e = c.Z.getAppliedGuildBoostsForGuild(t)) ? e : []
+  }, [t]), x = i.useMemo(() => n.sort((e, t) => f.default.extractTimestamp(e.id) < f.default.extractTimestamp(t.id) ? 1 : false), [n]), _ = (0, l.Wu)([d.ZP], () => {
     let e = new Set;
-    return _.forEach(n => {
-      null == p.ZP.getMember(t, n.userId) && e.add(n.userId)
+    return x.forEach(n => {
+      null == d.ZP.getMember(t, n.userId) && e.add(n.userId)
     }), Array.from(e)
-  }, [t, _]);
+  }, [t, x]);
   i.useEffect(() => {
-    b.length > 0 && b.forEach(e => d.Z.requestMember(t, e))
-  }, [t, b]);
-  let h = i.useMemo(() => b.length > 0 ? {
-    [t]: b
-  } : {}, [t, b]);
-  (0, c.$)(h, "GuildPowerupsRecentActivity");
-  let j = (0, a.e7)([f.Z], () => {
+    _.length > 0 && _.forEach(e => u.Z.requestMember(t, e))
+  }, [t, _]);
+  let b = i.useMemo(() => _.length > 0 ? {
+    [t]: _
+  } : {}, [t, _]);
+  (0, s.$)(b, "GuildPowerupsRecentActivity");
+  let h = (0, l.e7)([p.Z], () => {
     var e;
-    return null == (e = f.Z.getGuild(t)) ? true : e.premiumSubscriberCount
+    return null == (e = p.Z.getGuild(t)) ? true : e.premiumSubscriberCount
   });
   return (i.useEffect(() => {
-    j !== n.length && (0, s.C0)(t)
-  }, [t, j, n.length]), 0 === _.length) ? null : (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(l.X6q, {
-      className: x.header,
+    h !== n.length && (0, a.C0)(t)
+  }, [t, h, n.length]), 0 === x.length) ? null : (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(o.X6q, {
+      className: v.header,
       variant: "eyebrow",
       color: "text-secondary",
-      children: v.intl.string(v.t.yM9Krq)
-    }), (0, r.jsx)(o.zJ, {
-      className: x.container,
+      children: g.intl.string(g.t.yM9Krq)
+    }), (0, r.jsx)(o.zJl, {
+      className: v.container,
       fade: true,
-      children: _.map((e, t) => (0, r.jsx)(g.Z, {
+      children: x.map((e, t) => (0, r.jsx)(m.Z, {
         boost: e
       }, "boost-activity-".concat(t)))
     })]

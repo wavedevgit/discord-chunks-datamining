@@ -133,8 +133,8 @@ class Q extends Chunk647438.PureComponent {
           className: Chunk343396.accountWarningBodyText,
           children: Chunk388032.intl.string(Chunk388032.t.NAzplJ)
         }), (0, Chunk951288.jsx)(Chunk418632.Z, {
-          size: Chunk755721.Ph.SMALL,
-          color: Chunk755721.zx.Colors.PRIMARY
+          size: "sm",
+          variant: "secondary"
         })]
       });
       return (0, Chunk951288.jsx)(Chunk481060.ToO, {

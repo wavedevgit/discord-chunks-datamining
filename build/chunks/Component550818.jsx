@@ -5,7 +5,7 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk597312 = require("./597312.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk410030 = require("./410030.js"),
@@ -69,7 +69,7 @@ function I(e) {
         displayProfile: E,
         themeType: O.l.SIDEBAR,
         themeOverride: S,
-        children: (0, r.jsx)(l.u2, {
+        children: (0, r.jsx)(l.u2D, {
           children: (0, r.jsxs)("div", {
             className: v.container,
             children: [(0, r.jsx)("img", {

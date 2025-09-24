@@ -63,34 +63,22 @@ function g(e) {
   }
 
   function y() {
-    return h ? E ? (0, r.jsx)(u.Z.Child, {
-      grow: 0,
-      shrink: 0,
-      children: (0, r.jsx)(f.Z, {})
-    }) : (0, r.jsx)(c.zxk, {
+    return h ? E ? (0, r.jsx)(f.Z, {}) : (0, r.jsx)(c.zxk, {
       variant: "primary",
       text: _.intl.string(_.t.ydw5nZ),
       onClick: I
-    }) : (0, r.jsx)(u.Z.Child, {
-      grow: 0,
-      shrink: 0,
-      children: (0, r.jsx)(c.zxk, {
-        variant: "primary",
-        text: _.intl.string(_.t.fiNVio),
-        onClick: v
-      })
+    }) : (0, r.jsx)(c.zxk, {
+      variant: "primary",
+      text: _.intl.string(_.t.fiNVio),
+      onClick: v
     })
   }
 
   function O() {
-    return h && E ? (0, r.jsx)(u.Z.Child, {
-      grow: 0,
-      shrink: 0,
-      children: (0, r.jsx)(c.zxk, {
-        variant: "secondary",
-        text: _.intl.string(_.t.Vm8akJ),
-        onClick: I
-      })
+    return h && E ? (0, r.jsx)(c.zxk, {
+      variant: "secondary",
+      text: _.intl.string(_.t.Vm8akJ),
+      onClick: I
     }) : null
   }
 
@@ -123,8 +111,7 @@ function g(e) {
         children: [(0, r.jsx)(c.Text, {
           variant: "text-sm/normal",
           children: b()
-        }), (0, r.jsxs)(u.Z, {
-          justify: u.Z.Justify.CENTER,
+        }), (0, r.jsxs)("div", {
           className: p.content,
           children: [y(), O()]
         })]
