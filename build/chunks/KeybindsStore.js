@@ -6,7 +6,7 @@ require.d(exports, {
   Ek: () => D,
   I1: () => k,
   ZP: () => ev
-}), require("./415506.js"), require("./388685.js"), require("./539854.js"), require("./704826.js"), require("./35282.js");
+}), require("./388685.js"), require("./539854.js"), require("./704826.js"), require("./35282.js");
 var i, Chunk348327 = require("./348327.js"),
   o = require.n(Chunk348327),
   Chunk392711 = require("./392711.js"),
@@ -104,7 +104,7 @@ let L = "1001",
     var i, a;
     let o = (0, b.pz)(false).get("Backquote"),
       s = (0, b.pz)(true).get("Backquote");
-    w.log(e.message, {
+    w.log(e, {
       tags: {
         backquoteKey: null != o ? o : "unknown",
         nativeBackquoteKey: null != s ? s : "unknown",
@@ -112,7 +112,6 @@ let L = "1001",
         nativeBackquoteCode: "".concat(null == (a = (0, b.T_)(null != s ? s : "`")) ? true : a.keyCode)
       },
       extra: N({
-        stack: e.stack,
         keyCombo: t,
         combo: n,
         layoutMapBacktick: o,
@@ -129,23 +128,23 @@ function G(e) {
   let n = (0, y.Kd)(e),
     r = (0, b.T_)("`"),
     i = null != (t = null == r ? true : r.keyCode) ? t : (0, y.UR)("`");
-  return k(n) ? n : null == i ? (U(Error("Unable to get backtick code for overlay default keybind"), e, n, {
+  return k(n) ? n : null == i ? (U("Unable to get backtick code for overlay default keybind", e, n, {
     rawBacktickShape: r
-  }), null) : (U(Error("Default overlay keybind is unsupported"), e, n, {
+  }), null) : (U("Default overlay keybind is unsupported", e, n, {
     rawBacktickCode: i
   }), [...n, [S.Mo.KEYBOARD_KEY, i, (0, y.dU)()]])
 }
 let B = () => {
     let e = x();
-    "shift" === module && (U(Error("Default overlay keybind is only shift"), module, null), e = "shift+`");
+    "shift" === module && (U("Default overlay keybind is only shift", module, null), e = "shift+`");
     let t = G(module);
     if (null == exports) return M([], false);
     if (k(exports)) return M(exports, true);
     let n = (0, Chunk13140.UR)("shift"),
       r = (0, Chunk378799.T_)("`");
-    return 0 === exports.length ? U(Error("Default overlay keybind combo is empty"), module, exports) : null == require ? U(Error("Unable to get shift code"), module, exports, {
+    return 0 === exports.length ? U("Default overlay keybind combo is empty", module, exports) : null == require ? U("Unable to get shift code", module, exports, {
       shiftCode: require
-    }) : null == r && U(Error("Unable to get backtick code"), module, exports), M(exports, false)
+    }) : null == r && U("Unable to get backtick code", module, exports), M(exports, false)
   },
   Z = {},
   F = {},

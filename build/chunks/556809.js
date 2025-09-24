@@ -63,7 +63,7 @@ let m = new Chunk710845.Z("OverlayWindowRAFManager"),
         return v(r, e), r
       }
     } catch (e) {
-      m.error("RAF redirect failed, falling back to original", e), (0, c.D1)(e, _.ZP.getOverlayMethod((0, s.getPID)()))
+      m.error("RAF redirect failed, falling back to original. Cause:", e), (0, c.D1)(e, _.ZP.getOverlayMethod((0, s.getPID)()))
     }
     return E = "None", g(e)
   };
