@@ -276,7 +276,8 @@ function G(e) {
       iconClassName: p,
       tooltipClassName: er,
       voiceChannel: l,
-      hangStatus: Z
+      hangStatus: Z,
+      userId: null == t ? true : t.id
     });
   return (0, r.jsxs)("div", {
     className: er,

@@ -93,20 +93,22 @@ let x = 16,
       hangStatusActivity: t,
       iconClassName: n,
       isSelf: i,
-      onAddHangStatusClicked: a
-    } = e, s = e => {
+      onAddHangStatusClicked: a,
+      userId: s
+    } = e, c = e => {
       e.stopPropagation(), null == a || a()
     };
     return i && null == t ? (0, r.jsx)(l.P3F, {
-      onClick: s,
+      onClick: c,
       className: A.icons,
       children: (0, r.jsx)(l.EO4, {
         className: o()(A.icon, n)
       })
     }) : (0, r.jsx)(l.P3F, {
-      onClick: s,
+      onClick: c,
       className: A.icons,
       children: (0, r.jsx)(g.Z, {
+        userId: s,
         size: x,
         hangStatusActivity: t,
         className: o()(A.icon, n)
@@ -236,6 +238,7 @@ function M(e) {
         channelId: j,
         userId: M.id
       }, "".concat(M.id, "-game")) : (0, r.jsx)(L, {
+        userId: M.id,
         hangStatusActivity: U,
         iconClassName: N,
         isSelf: F,

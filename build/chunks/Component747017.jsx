@@ -105,7 +105,8 @@ function v(e) {
       iconClassName: T,
       tooltipClassName: k,
       voiceChannel: v,
-      hangStatus: D
+      hangStatus: D,
+      userId: null == t ? true : t.id
     });
   return (0, r.jsxs)("div", {
     className: k,
