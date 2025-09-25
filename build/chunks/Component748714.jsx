@@ -118,13 +118,13 @@ let _ = e => {
     } = e, {
       skusById: l
     } = (0, f.Z)({
-      applicationId: (0, h.N)(r),
+      applicationId: (0, g.N)(r),
       skuIDs: [r],
       isGift: false,
       currentPaymentSourceId: null,
       excludeSKUPurchasePreviews: true
     }), a = l[r];
-    return true === a ? (0, n.jsx)(g.aO, {
+    return true === a ? (0, n.jsx)(h.aO, {
       children: (0, n.jsx)(i.$jN, {
         type: i.$jN.Type.PULSING_ELLIPSIS,
         className: v.purchaseDetailsSpinner

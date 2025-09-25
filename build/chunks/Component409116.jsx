@@ -32,23 +32,23 @@ let p = e => {
     nitroIconSize: p = "md",
     className: f,
     discountOfferAmount: b,
-    discount: g = s.f_,
-    variant: h = "heading-md/semibold"
-  } = e, y = null != b, m = (0, o.qr)(t, r), O = g !== s.f_ && g.discountPercentage >= 5 && !y ? (0, n.jsxs)(n.Fragment, {
+    discount: h = s.f_,
+    variant: g = "heading-md/semibold"
+  } = e, y = null != b, m = (0, o.qr)(t, r), O = h !== s.f_ && h.discountPercentage >= 5 && !y ? (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsx)(a.nn4, {
       children: c.intl.format(c.t.niC6DA, {
         price: m,
-        discountPercentage: g.discountPercentage
+        discountPercentage: h.discountPercentage
       })
     }), (0, n.jsx)("span", {
       "aria-hidden": true,
       children: m
     }), (0, n.jsxs)(a.Text, {
-      variant: h,
+      variant: g,
       color: "text-feedback-positive",
       className: u.discount,
       "aria-hidden": true,
-      children: ["(-", g.discountPercentage, "%)"]
+      children: ["(-", h.discountPercentage, "%)"]
     })]
   }) : (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsx)(a.nn4, {
@@ -64,7 +64,7 @@ let p = e => {
     })]
   });
   return (0, n.jsxs)(a.Text, {
-    variant: h,
+    variant: g,
     className: i()({
       [u.discountBackgroundColor]: y
     }, u.container, f),

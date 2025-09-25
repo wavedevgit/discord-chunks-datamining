@@ -1209,7 +1209,9 @@ let e_ = Chunk647438.memo(function() {
   ey = Chunk647438.memo(function() {
     let e = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.DEV_isStateDebuggingEnabled()),
       t = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.DEV_getDebuggingState());
-    return (0, Chunk951288.jsxs)("div", {
+    return Chunk647438.useEffect(() => (Chunk13245.Z.setStateDebugging(true), () => {
+      Chunk13245.Z.setStateDebugging(false)
+    }), []), (0, Chunk951288.jsxs)("div", {
       className: Chunk454741.panelGroup,
       children: [(0, Chunk951288.jsx)("div", {
         className: Chunk454741.panelHeader,

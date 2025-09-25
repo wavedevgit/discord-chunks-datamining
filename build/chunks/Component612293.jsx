@@ -42,7 +42,7 @@ function O(e) {
     initialSelectedNameplate: E
   } = e, k = (0, a.e7)([b.ZP], () => null != O && null != c ? b.ZP.getMember(O, c.id) : null), A = null != k ? null == k || null == (t = k.collectibles) ? true : t.nameplate : null == c || null == (r = c.collectibles) ? true : r.nameplate, {
     pendingNameplate: T
-  } = (0, g.Zx)(c, O), [N, Z] = (0, i.useState)(() => {
+  } = (0, g.Zx)(c, O), [B, N] = (0, i.useState)(() => {
     var e;
     return null != E ? E : true !== T ? T : null == A ? null : null != (e = (0, u.Y)(f, _).find(e => {
       let {
@@ -51,9 +51,9 @@ function O(e) {
       return t === A.skuId
     })) ? e : null
   }), {
-    product: B,
+    product: Z,
     purchase: L
-  } = (0, p.Z)(null == N ? true : N.skuId), D = C.ZP.canUseCollectibles(c), M = true === T ? (null == N ? true : N.skuId) === (null == A ? true : A.skuId) : (null == N ? true : N.skuId) === (null == T ? true : T.skuId), U = (0, i.useCallback)(e => {
+  } = (0, p.Z)(null == B ? true : B.skuId), D = C.ZP.canUseCollectibles(c), M = true === T ? (null == B ? true : B.skuId) === (null == A ? true : A.skuId) : (null == B ? true : B.skuId) === (null == T ? true : T.skuId), U = (0, i.useCallback)(e => {
     I(), (0, d.mK)({
       analyticsLocations: x,
       analyticsSource: s.Z.EDIT_NAMEPLATE_MODAL,
@@ -79,28 +79,28 @@ function O(e) {
       scrollbarType: "none",
       children: [(0, n.jsx)(P.Z, {
         currentUser: c,
-        selectedNameplate: N,
+        selectedNameplate: B,
         guildId: O,
-        onSelect: Z,
+        onSelect: N,
         onOpenShop: U
       }), (0, n.jsx)(w.Z, {
         user: c,
         guildId: O,
-        selectedNameplate: N
+        selectedNameplate: B
       })]
     }), (0, n.jsxs)(l.mzw, {
       "data-migration-pending": true,
       className: S.modalFooter,
-      children: [null != L && (!(0, u.qS)(L) || D) || null === N ? (0, n.jsx)(l.zxk, {
+      children: [null != L && (!(0, u.qS)(L) || D) || null === B ? (0, n.jsx)(l.zxk, {
         variant: "primary",
         text: j.intl.string(j.t.Jh8fJy),
         onClick: () => {
-          null != O ? (0, m.RH)(N) : (0, o.Rx)(N), I()
+          null != O ? (0, m.RH)(B) : (0, o.Rx)(B), I()
         },
         disabled: M
-      }) : null == L && (D || !(0, u.G1)(B)) ? (0, n.jsx)(l.zxk, {
+      }) : null == L && (D || !(0, u.G1)(Z)) ? (0, n.jsx)(l.zxk, {
         variant: "primary",
-        onClick: () => U(null == B ? true : B.skuId),
+        onClick: () => U(null == Z ? true : Z.skuId),
         text: j.intl.string(j.t.fYfGgI)
       }) : (0, n.jsx)(v.Z, {
         subscriptionTier: y.Si.TIER_2,
@@ -108,8 +108,8 @@ function O(e) {
         textOptions: {
           textOverride: C.ZP.isPremium(c) ? j.intl.string(j.t.KXLX7u) : D ? j.intl.string(j.t.mr4K7O) : j.intl.string(j.t.pj0XBA)
         }
-      }), !D && (0, u.G1)(B) ? (0, n.jsx)(h.Z, {
-        product: B,
+      }), !D && (0, u.G1)(Z) ? (0, n.jsx)(h.Z, {
+        product: Z,
         onClose: I
       }) : (0, n.jsx)(l.zxk, {
         variant: "secondary",

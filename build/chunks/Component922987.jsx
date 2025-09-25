@@ -207,7 +207,7 @@ let I = {
     let A = null != (t = S.current) ? t : C,
       R = null != x ? x.orbPriceAmount : null;
     return (0, n.jsxs)(n.Fragment, {
-      children: [(0, n.jsx)(g.Z, {}), (0, n.jsxs)(h.C3, {
+      children: [(0, n.jsx)(h.Z, {}), (0, n.jsxs)(g.C3, {
         children: [(0, n.jsxs)(i.Kqy, {
           direction: "vertical",
           gap: 8,
@@ -221,7 +221,7 @@ let I = {
           orbPriceAmount: R,
           orbBalance: A
         })]
-      }), (0, n.jsx)(h.O3, {
+      }), (0, n.jsx)(g.O3, {
         children: (0, n.jsx)(j.f9, {
           orbPriceAmount: R,
           orbBalance: A,

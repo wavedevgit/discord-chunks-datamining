@@ -21,8 +21,8 @@ function d(e) {
     discount: p,
     className: f,
     discountOfferAmount: b,
-    hideStrikethroughPrice: g = false,
-    nitroIconType: h,
+    hideStrikethroughPrice: h = false,
+    nitroIconType: g,
     nitroIconSize: y = "md"
   } = e, m = (0, a.ql)(l, c.tuJ.DEFAULT);
   if (null == m) return null;
@@ -65,7 +65,7 @@ function d(e) {
     j = d && null != O;
   return (0, n.jsxs)("div", {
     className: i()(u.priceTagsContainer, f),
-    children: [g ? null : (0, n.jsx)(o.y, {
+    children: [h ? null : (0, n.jsx)(o.y, {
       price: v,
       className: u.price
     }), (0, n.jsx)(s.F, {
@@ -74,7 +74,7 @@ function d(e) {
       className: i()({
         [u.price]: null == b
       }),
-      nitroIconType: j ? h : true,
+      nitroIconType: j ? g : true,
       nitroIconSize: y,
       discountOfferAmount: b
     })]
