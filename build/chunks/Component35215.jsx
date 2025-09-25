@@ -299,6 +299,7 @@ function G(e) {
   };
   return (0, r.jsx)(s.yRy, {
     targetElementRef: b,
+    clickTrap: true,
     renderPopout: e => {
       let {
         closePopout: t
