@@ -17,9 +17,9 @@ var Chunk442837 = require("./442837.js"),
 function p(e) {
   var t, n;
   let p = null == e ? true : e.guild_id,
-    b = (0, r.e7)([c.Z], () => null == p || c.Z.canChatInGuild(p), [p]),
+    b = (0, r.e7)([a.Z], () => null == p || a.Z.canChatInGuild(p), [p]),
     O = (0, r.e7)([l.Z], () => null != p && l.Z.isLurking(p), [p]),
-    m = (0, r.e7)([a.ZP], () => null != p && a.ZP.isCurrentUserGuest(p), [p]),
+    m = (0, r.e7)([c.ZP], () => null != p && c.ZP.isCurrentUserGuest(p), [p]),
     g = (0, r.e7)([u.Z], () => b && u.Z.can(f.Plq.ADD_REACTIONS, e), [b, e]),
     v = (0, i.ux)(p),
     [, y] = (0, o.AB)(p),

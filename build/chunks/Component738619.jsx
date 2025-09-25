@@ -2,15 +2,15 @@
 /** chunk id: 738619, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ZP: () => U,
-  d7: () => R,
-  iD: () => M
+  d7: () => M,
+  iD: () => R
 }), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  c = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
@@ -34,7 +34,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk3771 = require("./3771.js");
 
-function T(e, t, n) {
+function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -50,7 +50,7 @@ function D(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      N(e, t, n[t])
     })
   }
   return e
@@ -96,9 +96,9 @@ class k extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), T(this, "state", {
+    super(...e), N(this, "state", {
       fadeIn: false
-    }), T(this, "timeout", null), T(this, "handleDismissInviteEducation", () => {
+    }), N(this, "timeout", null), N(this, "handleDismissInviteEducation", () => {
       let {
         activity: e
       } = this.props;
@@ -113,15 +113,15 @@ function A(e) {
     isFocused: n,
     typingUsers: o,
     className: s,
-    channel: a,
-    isThreadCreation: c,
+    channel: c,
+    isThreadCreation: a,
     renderDots: u,
     poggermodeEnabled: f,
     isComboing: p,
     isInTextChannel: b
   } = e, {
     rateLimitPerUser: m
-  } = a, v = i.useRef(null), y = i.useRef(null), [h, j] = i.useState(false);
+  } = c, v = i.useRef(null), y = i.useRef(null), [h, j] = i.useState(false);
   if (i.useLayoutEffect(() => {
       if (null != v.current && null != y.current && b) {
         let e = () => {
@@ -142,64 +142,64 @@ function A(e) {
     activity: t,
     isFocused: n
   }) : null;
-  let [S, Z, x] = o, I = "";
-  1 === o.length ? I = C.intl.format(C.t.lJ9sZW, {
+  let [S, Z, I] = o, P = "";
+  1 === o.length ? P = C.intl.format(C.t.lJ9sZW, {
     a: S
-  }) : 2 === o.length ? I = C.intl.format(C.t.rB0CUV, {
+  }) : 2 === o.length ? P = C.intl.format(C.t.rB0CUV, {
     a: S,
     b: Z
-  }) : 3 === o.length ? I = C.intl.format(C.t.StKTho, {
+  }) : 3 === o.length ? P = C.intl.format(C.t.StKTho, {
     a: S,
     b: Z,
-    c: x
-  }) : o.length > 3 && (I = C.intl.format(C.t.Q8lUnJ, {}));
-  let P = h && o.length > 0 && o.length <= 3 ? C.intl.format(C.t["qD/0qa"], {}) : I;
+    c: I
+  }) : o.length > 3 && (P = C.intl.format(C.t.Q8lUnJ, {}));
+  let x = h && o.length > 0 && o.length <= 3 ? C.intl.format(C.t["qD/0qa"], {}) : P;
   return (0, r.jsxs)("div", {
-    className: l()(N.typing, {
+    className: l()(T.typing, {
       "stop-animation": !n,
-      [N.isComboing]: f && p,
-      [N.inTextChannel]: b
+      [T.isComboing]: f && p,
+      [T.inTextChannel]: b
     }, s),
     children: [(0, r.jsxs)("div", {
-      className: N.typingDots,
+      className: T.typingDots,
       ref: v,
       children: [o.length > 0 && false !== u && (0, r.jsx)(d.bbz, {
-        className: N.ellipsis,
+        className: T.ellipsis,
         dotRadius: 3.5,
         themed: true
       }), (0, r.jsx)("span", {
-        className: N.text,
+        className: T.text,
         "aria-live": "polite",
         "aria-atomic": true,
-        children: P
+        children: x
       }), (0, r.jsx)("span", {
-        className: N.text,
+        className: T.text,
         style: {
           position: "absolute",
           visibility: "hidden"
         },
         "aria-hidden": true,
         ref: y,
-        children: I
+        children: P
       })]
     }), (0, r.jsx)(O.Z, {
-      channel: a,
-      isThreadCreation: c
+      channel: c,
+      isThreadCreation: a
     }), f && p && (0, r.jsx)(g.Z, {
-      channelId: a.id
+      channelId: c.id
     })]
   })
 }
 
-function M(e) {
-  let t = (0, c.e7)([S.Z], () => S.Z.getTypingUsers(e.id)),
-    n = (0, c.e7)([Z.default], () => Z.default.getCurrentUser());
-  return a()(t).keys().filter(e => e !== (null == n ? true : n.id)).reject(e => h.Z.isBlockedOrIgnored(e)).map(e => Z.default.getUser(e)).filter(P.lm).map(t => w.ZP.getName(e.guild_id, e.id, t)).value()
+function R(e) {
+  let t = (0, a.e7)([S.Z], () => S.Z.getTypingUsers(e.id)),
+    n = (0, a.e7)([Z.default], () => Z.default.getCurrentUser());
+  return c()(t).keys().filter(e => e !== (null == n ? true : n.id)).reject(e => h.Z.isBlockedOrIgnored(e)).map(e => Z.default.getUser(e)).filter(x.lm).map(t => w.ZP.getName(e.guild_id, e.id, t)).value()
 }
 
-function R(e) {
-  let t = (0, c.e7)([j.Z], () => j.Z.findActivity(e => null != e.application_id));
-  return (0, c.e7)([v.Z, b.Z, h.Z], () => (0, p.Z)(e, t, v.Z, b.Z, h.Z)) ? t : null
+function M(e) {
+  let t = (0, a.e7)([j.Z], () => j.Z.findActivity(e => null != e.application_id));
+  return (0, a.e7)([v.Z, b.Z, h.Z], () => (0, p.Z)(e, t, v.Z, b.Z, h.Z)) ? t : null
 }
 
 function U(e) {
@@ -222,14 +222,14 @@ function U(e) {
       }
       return i
     }(e, ["channel", "isThreadCreation"]);
-  let s = (0, c.e7)([m.ZP, y.default], () => m.ZP.getUserCombo(y.default.getId(), i.id)),
-    a = M(i),
+  let s = (0, a.e7)([m.ZP, y.default], () => m.ZP.getUserCombo(y.default.getId(), i.id)),
+    c = R(i),
     f = (t = D({}, l), n = n = {
       baseTextColor: (0, d.dQu)(u.Z.colors.INTERACTIVE_NORMAL).hex(),
       activeTextColor: (0, d.dQu)(u.Z.colors.INTERACTIVE_NORMAL).hex(),
-      activityInviteEducationActivity: R(i),
-      typingUsers: o ? [] : a,
-      isFocused: (0, c.e7)([x.Z], () => x.Z.isFocused()),
+      activityInviteEducationActivity: M(i),
+      typingUsers: o ? [] : c,
+      isFocused: (0, a.e7)([I.Z], () => I.Z.isFocused()),
       guildId: i.guild_id,
       isComboing: null != s,
       channel: i,

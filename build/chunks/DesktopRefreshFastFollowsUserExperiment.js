@@ -2,12 +2,11 @@
 /** chunk id: 591146, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  CL: () => o,
-  Ml: () => a,
-  VM: () => s
+  CL: () => a,
+  Ml: () => i,
+  VM: () => o
 });
-var Chunk338390 = require("./338390.js");
-let i = (0, require("./818083.js").B)({
+let r = (0, require("./818083.js").B)({
   kind: "user",
   id: "2025-04_desktop_refresh_fast_follows",
   label: "Desktop Refresh Fast Follows",
@@ -59,21 +58,18 @@ let i = (0, require("./818083.js").B)({
   }]
 });
 
-function a(e) {
-  let t = (0, r.Z)(e);
-  return i.useExperiment({
-    location: e
-  }).largerGuildIcons && !t
+function i(e) {
+  returnfalse
 }
 
-function o(e) {
-  return i.useExperiment({
+function a(e) {
+  return r.useExperiment({
     location: e
   }).darkerGuildListBackground
 }
 
-function s(e) {
-  return i.useExperiment({
+function o(e) {
+  return r.useExperiment({
     location: e
   }).distinctBorders
 }

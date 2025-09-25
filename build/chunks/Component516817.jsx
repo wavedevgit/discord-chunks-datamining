@@ -27,7 +27,8 @@ function _(e) {
     m.current || null != t || (m.current = true)
   }, [t]), null == t) ? null : (0, r.jsx)("div", {
     className: o()(f.container, {
-      [f.fadeIn]: m.current
+      [f.fadeIn]: m.current,
+      [f.fitInAccount]: c === d.i.ACCOUNT
     }),
     style: {
       background: _.background

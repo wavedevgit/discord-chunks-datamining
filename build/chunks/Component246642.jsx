@@ -23,13 +23,13 @@ function u(e) {
     color: d
   } = (0, l.yz)(u);
   return (0, r.jsxs)("div", {
-    className: c.container,
+    className: a.container,
     children: [(0, r.jsx)(i.Text, {
       variant: "text-xs/normal",
-      children: a.intl.string(a.t.Jr2519)
+      children: c.intl.string(c.t.Jr2519)
     }), (0, r.jsx)(i.Exd, {
       foregroundColor: (0, o.Lq)(d),
-      className: c.progress,
+      className: a.progress,
       size: i.Exd.Sizes.LARGE,
       percent: 100 * (0, l.nc)(n),
       animate: true

@@ -2,7 +2,7 @@
 /** chunk id: 746106, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  w: () => D
+  w: () => w
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -14,7 +14,6 @@ var Chunk951288 = require("./951288.js"),
   Chunk607070 = require("./607070.js"),
   Chunk299363 = require("./299363.js"),
   Chunk793903 = require("./793903.js"),
-  Chunk338390 = require("./338390.js"),
   Chunk803038 = require("./803038.js"),
   Chunk950796 = require("./950796.jsx"),
   Chunk392358 = require("./392358.js"),
@@ -33,24 +32,24 @@ var Chunk951288 = require("./951288.js"),
   Chunk892071 = require("./892071.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function w(e, t, n) {
+function P(e, t, n) {
   let r = i.useContext(f.Z),
     o = i.useCallback(() => ({
       i18n: {
-        SPINNER_LOADING_LABEL: P.intl.string(P.t.ZTNur6),
-        BUTTON_LOADING_STARTED_LABEL: P.intl.string(P.t.pfChQk),
-        BUTTON_LOADING_FINISHED_LABEL: P.intl.string(P.t.SVPara),
-        CLOSE_BUTTON_LABEL: P.intl.string(P.t.cpT0Cg),
-        PLAY_BUTTON_LABEL: P.intl.string(P.t.RscU7O),
-        PAUSE_BUTTON_LABEL: P.intl.string(P.t.ZcgDJS),
-        NEW: P.intl.string(P.t.y2b7CA),
-        BETA: P.intl.string(P.t.oW0eUV),
-        EARLY_ACCESS: P.intl.string(P.t.EYxi0t),
-        BILLING_TRIAL_FREE_TRIAL_TEXT: P.intl.string(P.t.IBYG5e)
+        SPINNER_LOADING_LABEL: R.intl.string(R.t.ZTNur6),
+        BUTTON_LOADING_STARTED_LABEL: R.intl.string(R.t.pfChQk),
+        BUTTON_LOADING_FINISHED_LABEL: R.intl.string(R.t.SVPara),
+        CLOSE_BUTTON_LABEL: R.intl.string(R.t.cpT0Cg),
+        PLAY_BUTTON_LABEL: R.intl.string(R.t.RscU7O),
+        PAUSE_BUTTON_LABEL: R.intl.string(R.t.ZcgDJS),
+        NEW: R.intl.string(R.t.y2b7CA),
+        BETA: R.intl.string(R.t.oW0eUV),
+        EARLY_ACCESS: R.intl.string(R.t.EYxi0t),
+        BILLING_TRIAL_FREE_TRIAL_TEXT: R.intl.string(R.t.IBYG5e)
       },
       theme: e,
       saturation: t,
-      defaultLayerContext: y.nz,
+      defaultLayerContext: b.nz,
       experiments: {
         enabledExperiments: n
       },
@@ -60,38 +59,38 @@ function w(e, t, n) {
   return i.useLayoutEffect(() => {
     function e() {
       l(o)
-    }(0, a.waitForAllDefaultIntlMessagesLoaded)().then(e), P.intl.onLocaleChange(e)
+    }(0, a.waitForAllDefaultIntlMessagesLoaded)().then(e), R.intl.onLocaleChange(e)
   }, [o]), s
 }
 
-function D(e) {
+function w(e) {
   let {
     windowKey: t,
     themeOverride: n,
     children: a
-  } = e, o = null != t, [f] = i.useState(() => C.ZP.getEnableHardwareAcceleration()), {
-    locale: y,
-    theme: P,
-    focused: D,
-    currentWindow: x,
-    fontScale: L,
-    fontScaleClass: j,
-    keyboardModeEnabled: M,
-    saturation: k,
-    desaturateUserColors: U,
-    useForcedColors: G,
-    systemForcedColors: B,
-    useReducedMotion: Z,
-    alwaysShowLinkDecorations: F,
-    confettiMode: V,
-    highContrastMode: H
-  } = (0, l.cj)([T.default, u.Z, S.Z, A.Z, O.Z, v.Z], () => {
+  } = e, o = null != t, [f] = i.useState(() => A.ZP.getEnableHardwareAcceleration()), {
+    locale: b,
+    theme: R,
+    focused: w,
+    currentWindow: D,
+    fontScale: x,
+    fontScaleClass: L,
+    keyboardModeEnabled: j,
+    saturation: M,
+    desaturateUserColors: k,
+    useForcedColors: U,
+    systemForcedColors: G,
+    useReducedMotion: B,
+    alwaysShowLinkDecorations: Z,
+    confettiMode: F,
+    highContrastMode: V
+  } = (0, l.cj)([I.default, u.Z, T.Z, S.Z, y.Z, O.Z], () => {
     var e;
     return {
-      locale: T.default.locale,
-      theme: null != n ? n : S.Z.theme,
-      focused: o ? O.Z.getWindowFocused(t) : A.Z.isFocused(),
-      currentWindow: o && null != (e = O.Z.getWindow(t)) ? e : window,
+      locale: I.default.locale,
+      theme: null != n ? n : T.Z.theme,
+      focused: o ? y.Z.getWindowFocused(t) : S.Z.isFocused(),
+      currentWindow: o && null != (e = y.Z.getWindow(t)) ? e : window,
       fontScale: u.Z.fontScale,
       fontScaleClass: u.Z.fontScaleClass,
       keyboardModeEnabled: u.Z.keyboardModeEnabled,
@@ -102,67 +101,65 @@ function D(e) {
       useReducedMotion: u.Z.useReducedMotion,
       alwaysShowLinkDecorations: u.Z.alwaysShowLinkDecorations,
       highContrastMode: u.Z.isHighContrastModeEnabled,
-      confettiMode: v.Z.confettiMode
+      confettiMode: O.Z.confettiMode
     }
-  }), Y = d.U.useExperiment({
+  }), H = d.U.useExperiment({
     location: "RootThemeContextProvider"
   }, {
     autoTrackExposure: true
-  }).enabled, W = (0, m.Z)(x, __OVERLAY__ || D), K = 0;
-  1 !== k && (K = (0, c.OdO)(K, c.bgu.REDUCE_SATURATION_ENABLED));
-  let z = (0, N.A)(),
-    q = (0, g.Ml)("RootThemeContextProvider"),
-    X = (0, g.CL)("RootThemeContextProvider"),
-    Q = (0, g.VM)("RootThemeContextProvider"),
-    J = (0, E.U)("RootThemeContextProvider"),
-    $ = (0, b.A)("RootThemeContextProvider"),
-    ee = p.Mc.useExperiment({
+  }).enabled, Y = (0, h.Z)(D, __OVERLAY__ || w), W = 0;
+  1 !== M && (W = (0, c.OdO)(W, c.bgu.REDUCE_SATURATION_ENABLED));
+  let K = (0, C.A)(),
+    z = (0, m.Ml)("RootThemeContextProvider"),
+    q = (0, m.CL)("RootThemeContextProvider"),
+    X = (0, m.VM)("RootThemeContextProvider"),
+    Q = (0, g.U)("RootThemeContextProvider"),
+    J = (0, E.A)("RootThemeContextProvider"),
+    $ = _.Mc.useExperiment({
       location: "RootThemeContextProvider"
     }).enabled,
-    et = (0, _.Z)("RootThemeContextProvider"),
-    en = (0, I.$)({
+    ee = (0, v.$)({
       location: "RootThemeContextProvider"
     }),
-    er = (0, h.On)({
+    et = (0, p.On)({
       isPopoutWindow: o,
-      isSearchDesktopTopLevelEnabled: en
+      isSearchDesktopTopLevelEnabled: ee
     }),
-    ei = w(P, k, i.useMemo(() => {
+    en = P(R, M, i.useMemo(() => {
       let e = [];
-      return q && e.push("refresh-fast-follow-avatars"), X && e.push("refresh-fast-follow-guild-bg"), Q && e.push("refresh-fast-follow-distinct-borders"), J && e.push("mana-text-inputs"), $ && e.push("mana-toggle-inputs"), e
-    }, [q, X, Q, J, $]));
+      return z && e.push("refresh-fast-follow-avatars"), q && e.push("refresh-fast-follow-guild-bg"), X && e.push("refresh-fast-follow-distinct-borders"), Q && e.push("mana-text-inputs"), J && e.push("mana-toggle-inputs"), e
+    }, [z, q, X, Q, J]));
   return (0, r.jsx)(c.kb5, {
-    value: ei,
+    value: en,
     children: (0, r.jsx)(c.wMY, {
-      theme: P,
-      flags: K,
-      saturation: k,
-      density: z,
-      children: (0, r.jsx)(R.cE, {
-        lang: y,
-        theme: P,
-        density: z,
-        focused: D,
-        fontScale: L,
-        fontScaleClass: j,
-        keyboardModeEnabled: M,
-        mouseMode: W,
-        saturation: k,
-        desaturateUserColors: U,
-        useForcedColors: G,
-        systemForcedColors: B,
-        useReducedMotion: Z,
-        alwaysShowLinkDecorations: F,
+      theme: R,
+      flags: W,
+      saturation: M,
+      density: K,
+      children: (0, r.jsx)(N.cE, {
+        lang: b,
+        theme: R,
+        density: K,
+        focused: w,
+        fontScale: x,
+        fontScaleClass: L,
+        keyboardModeEnabled: j,
+        mouseMode: Y,
+        saturation: M,
+        desaturateUserColors: k,
+        useForcedColors: U,
+        systemForcedColors: G,
+        useReducedMotion: B,
+        alwaysShowLinkDecorations: Z,
         hardwareAccelerationEnabled: f,
-        highContrastMode: Y && H,
+        highContrastMode: H && V,
         isPopoutWindow: o,
-        rootClassName: s()(er, {
-          "confetti-mode": V,
-          "refresh-fast-follow-avatars": q && !et,
-          "refresh-fast-follow-guild-bg": X,
-          "refresh-fast-follow-distinct-borders": Q,
-          "client-theme-color-picker": ee,
-          "align-chat-input": et
+        rootClassName: s()(et, {
+          "confetti-mode": F,
+          "refresh-fast-follow-avatars": z,
+          "refresh-fast-follow-guild-bg": q,
+          "refresh-fast-follow-distinct-borders": X,
+          "client-theme-color-picker": $
         }),
         children: a
       })
