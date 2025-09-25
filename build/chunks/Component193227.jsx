@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
   Chunk434650 = require("./434650.js"),
@@ -33,10 +33,10 @@ function y(e) {
     products: t,
     header: n,
     category: l
-  } = e, a = (0, s.e7)([u.default], () => u.default.getCurrentUser()), i = (0, v.St)(t), c = g.Z.useConfig({
+  } = e, i = (0, s.e7)([u.default], () => u.default.getCurrentUser()), a = (0, x.St)(t), c = g.Z.useConfig({
     location: "Products"
   }).showCardsV2;
-  return null == a || 0 === t.length ? null : (0, r.jsxs)("div", {
+  return null == i || 0 === t.length ? null : (0, r.jsxs)("div", {
     children: [null != n ? (0, r.jsx)(o.Text, {
       className: T.itemTypeTitle,
       color: "header-secondary",
@@ -46,19 +46,16 @@ function y(e) {
       size: 24
     }), (0, r.jsx)("div", {
       className: T.cardsContainer,
-      children: i.map((e, t) => (0, r.jsx)(d.k0, {
+      children: a.map((e, t) => (0, r.jsx)(d.k0, {
         newValue: {
           tilePosition: t
         },
         children: c ? (0, r.jsx)(E.Z, {
-          skuId: e.skuId,
-          config: {
-            tab: O.AW.CATALOG
-          }
+          skuId: e.skuId
         }, e.skuId) : (0, r.jsx)(b.Z, {
           category: l,
           product: e,
-          user: a,
+          user: i,
           tab: O.AW.CATALOG
         }, e.skuId)
       }, e.skuId))
@@ -80,8 +77,8 @@ function j(e) {
   let {
     category: t,
     isFullScreen: n
-  } = e, [a, i] = l.useState(false), s = (0, c.O)(e => {
-    i(e)
+  } = e, [i, a] = l.useState(false), s = (0, c.O)(e => {
+    a(e)
   }, n ? .13 : .15);
   return (0, r.jsxs)("div", {
     className: T.categoryWrapper,
@@ -98,19 +95,19 @@ function k(e) {
   var t;
   let {
     sortedCategories: n,
-    setCategoryRef: a,
+    setCategoryRef: i,
     isFullScreen: s,
     currentPage: c,
     handlePageChange: u
   } = e, g = (0, d.sp)(), f = (0, S.R)(), h = null != (t = null == g ? true : g.sessionId) ? t : "", {
     noCache: _,
     includeUnpublished: b
-  } = (0, x.Z)(), E = l.useMemo(() => n.filter(e => null == e.unpublishedAt || e.unpublishedAt > new Date).filter(e => {
+  } = (0, v.Z)(), E = l.useMemo(() => n.filter(e => null == e.unpublishedAt || e.unpublishedAt > new Date).filter(e => {
     let {
       products: t
     } = e;
     return t.length > 0
-  }), [n]), v = l.useMemo(() => {
+  }), [n]), x = l.useMemo(() => {
     let e = (c - 1) * O.kN;
     return E.slice(e, e + O.kN)
   }, [E, c]);
@@ -124,7 +121,7 @@ function k(e) {
       cacheDisabled: _
     })
   }, []), l.useEffect(() => {
-    f || 0 === v.length || (0, C.n)({
+    f || 0 === x.length || (0, C.n)({
       sessionId: h,
       checkpoint: C.a.SHOP_RENDERED,
       tab: O.AW.CATALOG,
@@ -132,14 +129,14 @@ function k(e) {
       unpublishedCategoriesShown: b,
       cacheDisabled: _
     })
-  }, [h, s, b, _, f, v.length]);
+  }, [h, s, b, _, f, x.length]);
   let y = (0, p.FF)("CollectiblesBrowse");
   return f ? (0, r.jsx)(m.Z, {}) : (0, r.jsxs)("div", {
-    className: i()(T.categories, {
+    className: a()(T.categories, {
       [T.categoriesNoFilter]: !y
     }),
-    children: [v.map((e, t) => (0, r.jsx)("div", {
-      ref: t => a(e.skuId, t),
+    children: [x.map((e, t) => (0, r.jsx)("div", {
+      ref: t => i(e.skuId, t),
       children: (0, r.jsx)(d.k0, {
         newValue: {
           categoryPosition: t

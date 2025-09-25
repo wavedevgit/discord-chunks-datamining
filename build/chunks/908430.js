@@ -22,7 +22,7 @@ function s() {
       if (t <= 0) l.push(e.discountId);
       else {
         let r = setTimeout(() => {
-          a.Z.dispatch({
+          i.Z.dispatch({
             type: "COLLECTIBLES_USER_DISCOUNTS_EXPIRED",
             discountIds: [e.discountId]
           }), n.delete(e.discountId)

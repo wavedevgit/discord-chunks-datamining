@@ -2,15 +2,15 @@
 /** chunk id: 166350, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  NR: () => a,
+  NR: () => i,
   Ob: () => o,
-  ZI: () => i,
+  ZI: () => a,
   m1: () => c,
   uc: () => s
 });
 var Chunk987170 = require("./987170.js"),
   Chunk987338 = require("./987338.js");
-let a = (0, Chunk987170.Z)({
+let i = (0, Chunk987170.Z)({
     kind: "user",
     id: "2024-07_ctp_collectibles_shop_open_vanilla",
     label: "CTP collectibles shop open - A/A test - Vanilla",
@@ -26,7 +26,7 @@ let a = (0, Chunk987170.Z)({
       }
     }]
   }),
-  i = (0, Chunk987170.Z)({
+  a = (0, Chunk987170.Z)({
     kind: "user",
     id: "2024-07_ctp_collectibles_shop_open_filters",
     label: "CTP collectibles shop open - A/A test - Filters",

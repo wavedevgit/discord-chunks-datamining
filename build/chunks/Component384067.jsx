@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk622535 = require("./622535.js"),
   Chunk481060 = require("./481060.js"),
   Chunk63063 = require("./63063.js"),
@@ -18,17 +18,17 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk310582 = require("./310582.js");
 let C = e => {
-  var t, n, a;
+  var t, n, i;
   let {
     wideBannerBlock: C,
     handleTransition: _,
     tab: m
-  } = e, b = null == (t = u.Z.getCategoryByStoreListingId(C.categoryStoreListingId)) ? true : t.skuId, E = l.useRef(null), S = l.useRef(null), [x, v] = l.useState();
+  } = e, b = null == (t = u.Z.getCategoryByStoreListingId(C.categoryStoreListingId)) ? true : t.skuId, E = l.useRef(null), S = l.useRef(null), [v, x] = l.useState();
   l.useEffect(() => {
     let e = S.current;
     if (null == e) return;
     let t = () => {
-      e.naturalWidth > 0 && e.naturalHeight > 0 && v(1080 * (e.naturalHeight / e.naturalWidth))
+      e.naturalWidth > 0 && e.naturalHeight > 0 && x(1080 * (e.naturalHeight / e.naturalWidth))
     };
     return e.complete ? t() : e.onload = t, () => {
       e.onload = null
@@ -47,28 +47,28 @@ let C = e => {
     threshold: 0,
     children: (0, r.jsxs)("div", {
       ref: E,
-      className: i()(h.row, h.between, h.bannerBlockContainer, h.centeredSection, {
+      className: a()(h.row, h.between, h.bannerBlockContainer, h.centeredSection, {
         [h.extraRounded]: L
       }),
       children: [(0, r.jsx)("div", {
-        className: i()(h.wideBannerBackgroundImg, {
+        className: a()(h.wideBannerBackgroundImg, {
           [h.extraRounded]: L
         }),
         children: (0, r.jsx)("img", {
           ref: S,
           src: y,
           alt: C.title,
-          className: i()(h.wideBannerArt, {
+          className: a()(h.wideBannerArt, {
             [h.wideBannerArtOrbs]: L
           }),
           style: {
-            height: null != x ? "".concat(x, "px") : "auto"
+            height: null != v ? "".concat(v, "px") : "auto"
           }
         })
       }), (0, r.jsx)("div", {
         className: h.wideBannerContentContainer,
         style: {
-          maxHeight: null != x ? "".concat(x, "px") : "auto"
+          maxHeight: null != v ? "".concat(v, "px") : "auto"
         },
         children: (0, r.jsxs)("div", {
           className: h.wideBannerTextContainer,
@@ -81,7 +81,7 @@ let C = e => {
             children: C.title
           }), (0, r.jsx)(o.Text, {
             style: {
-              color: null != (a = C.bannerTextColor) ? a : "var(--text-muted)"
+              color: null != (i = C.bannerTextColor) ? i : "var(--text-muted)"
             },
             lineClamp: 2,
             variant: L ? "text-md/medium" : "text-sm/medium",

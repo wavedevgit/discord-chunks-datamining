@@ -12,10 +12,10 @@ var Chunk481060 = require("./481060.js"),
 let s = e => {
   let {
     product: t
-  } = e, n = (0, a.To)(t);
+  } = e, n = (0, i.To)(t);
   return (0, r.jsx)(l.Text, {
     variant: "text-lg/bold",
-    className: i.productName,
+    className: a.productName,
     children: n
   })
 }

@@ -22,13 +22,13 @@ let g = {
   p = (e, t) => {
     let {
       enabled: n
-    } = (0, i.WX)({
+    } = (0, a.WX)({
       location: "useShopViewTransition"
-    }), a = (0, s.FF)("CollectiblesBrowse"), {
+    }), i = (0, s.FF)("CollectiblesBrowse"), {
       setItemTypeFilter: p,
       reset: f,
       setCurrentTab: h
-    } = (0, o.S)(), C = r.useMemo(() => e !== u.AW.ORBS || n ? (0, u.RE)(e) && a ? u.AW.CATALOG : e : u.AW.HOME, [e, n, a]), [_, m] = r.useState(C), [b, E] = r.useState(u.f7.VISIBLE);
+    } = (0, o.S)(), C = r.useMemo(() => e !== u.AW.ORBS || n ? (0, u.RE)(e) && i ? u.AW.CATALOG : e : u.AW.HOME, [e, n, i]), [_, m] = r.useState(C), [b, E] = r.useState(u.f7.VISIBLE);
     r.useEffect(() => {
       h(_)
     }, [_, h]), r.useEffect(() => {
@@ -36,7 +36,7 @@ let g = {
     }, [C]);
     let {
       clearError: S
-    } = (0, c.a)(), x = (0, l.k6)(), v = r.useCallback(async (e, n) => {
+    } = (0, c.a)(), v = (0, l.k6)(), x = r.useCallback(async (e, n) => {
       if (S(), e === u.AW.CATALOG) f();
       else if ((0, u.RE)(e) && e !== _) {
         let t = g[e];
@@ -47,14 +47,14 @@ let g = {
         let e;
         E(u.f7.OUT), await (e = 1.1 * u.lb, new Promise(t => setTimeout(t, e)))
       }
-      let r = a && ![u.AW.HOME, u.AW.ORBS].includes(e) ? u.AW.CATALOG : e;
-      m(r), n && E(u.f7.IN), t || x.push(d.Z5c.COLLECTIBLES_SHOP_WITH_TAB(r), {
+      let r = i && ![u.AW.HOME, u.AW.ORBS].includes(e) ? u.AW.CATALOG : e;
+      m(r), n && E(u.f7.IN), t || v.push(d.Z5c.COLLECTIBLES_SHOP_WITH_TAB(r), {
         shallow: true
       }), E(u.f7.VISIBLE)
-    }, [x, t, a, p, f, _, S]);
+    }, [v, t, i, p, f, _, S]);
     return {
       selectedTab: _,
       transitionState: b,
-      transitionToTab: v
+      transitionToTab: x
     }
   }

@@ -110,7 +110,9 @@ function y(e) {
     user: t,
     guildId: o,
     channelId: s
-  }) : i === h.oh.WISHLIST ? (0, r.jsx)(g.Z, {}) : null
+  }) : i === h.oh.WISHLIST ? (0, r.jsx)(g.Z, {
+    profileOwner: t
+  }) : null
 }
 
 function j(e) {

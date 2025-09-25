@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
   Chunk594174 = require("./594174.js"),
@@ -31,23 +31,23 @@ function T(e) {
   var t;
   let {
     isFetchingCategories: n,
-    isFullScreen: a,
+    isFullScreen: i,
     scrollerRef: T,
     tab: y
   } = e, L = (0, d.sp)(), j = null != (t = null == L ? true : L.sessionId) ? t : "", {
     noCache: k,
     includeUnpublished: I
   } = (0, S.Z)(), P = (0, s.e7)([c.default], () => c.default.getCurrentUser()), {
-    skus: B,
+    skus: N,
     currentPage: A,
-    totalCount: N,
+    totalCount: B,
     isFetchingResults: R
-  } = (0, C.a)(), Z = (0, s.Wu)([g.Z], () => g.Z.getProductsBySkus(B)), w = l.useCallback(() => {
+  } = (0, C.a)(), Z = (0, s.Wu)([g.Z], () => g.Z.getProductsBySkus(N)), w = l.useCallback(() => {
     var e;
     null == T || null == (e = T.current) || e.scrollToTop({
       animate: true
     })
-  }, [T]), F = null == B ? true : B.join("");
+  }, [T]), F = null == N ? true : N.join("");
   l.useEffect(() => {
     w()
   }, [F, w]);
@@ -58,11 +58,11 @@ function T(e) {
       sessionId: j,
       checkpoint: _.a.SHOP_RENDERED,
       tab: y,
-      isFullScreen: a,
+      isFullScreen: i,
       unpublishedCategoriesShown: I,
       cacheDisabled: k
     })
-  }, [j, a, I, k, n, y]);
+  }, [j, i, I, k, n, y]);
   let D = l.useRef(null),
     {
       setQueryPageSize: W,
@@ -83,7 +83,7 @@ function T(e) {
     if (null != D.current) return e.observe(D.current), () => e.disconnect()
   }, [W]);
   let Y = l.useCallback(e => {
-      u.default.track(v.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+      u.default.track(x.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
         collectibles_shop_session_id: null == L ? true : L.sessionId,
         page_section: null == L ? true : L.pageSection,
         page_category: null == L ? true : L.pageCategory,
@@ -98,11 +98,11 @@ function T(e) {
     }).showCardsV2;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: i()({
+      className: a()({
         [O.productsEmpty]: K
       }),
-      children: [K && (0, r.jsx)(x.Z, {}), (0, r.jsxs)("div", {
-        className: i()(O.products, {
+      children: [K && (0, r.jsx)(v.Z, {}), (0, r.jsxs)("div", {
+        className: a()(O.products, {
           [O.loadIn]: z
         }),
         ref: D,
@@ -113,10 +113,7 @@ function T(e) {
               tilePosition: t
             },
             children: X ? (0, r.jsx)(E.Z, {
-              skuId: e.skuId,
-              config: {
-                tab: y
-              }
+              skuId: e.skuId
             }, e.skuId) : (0, r.jsx)(b.Z, {
               product: e,
               user: P,
@@ -126,12 +123,12 @@ function T(e) {
           }, e.skuId)
         })]
       })]
-    }), N > V && (0, r.jsx)("div", {
+    }), B > V && (0, r.jsx)("div", {
       className: O.paginationContainer,
       children: (0, r.jsx)("div", {
         children: (0, r.jsx)(o.DsT, {
           currentPage: A,
-          totalCount: N,
+          totalCount: B,
           pageSize: V,
           onPageChange: Y,
           disablePaginationGap: true

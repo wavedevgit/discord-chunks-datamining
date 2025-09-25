@@ -30,14 +30,14 @@ function g(e) {
   } = e, {
     setSelectedSkuId: a,
     activeSubscription: o,
-    startedPaymentFlowWithPaymentSourcesRef: d,
+    startedPaymentFlowWithPaymentSourcesRef: C,
     setSelectedPlanId: x,
     priceOptions: j,
     defaultPlanId: g
   } = (0, p.JL)(), {
     isGift: L,
     claimableRewards: y
-  } = (0, u.wD)(), v = L && null != y && y.length > 0, S = (0, C.N)(i), O = (0, l.Nx)(), E = (0, s.ZP)({
+  } = (0, u.wD)(), v = L && null != y && y.length > 0, S = (0, d.N)(i), O = (0, l.Nx)(), E = (0, s.ZP)({
     location: "PremiumPaymentSelect"
   });
   return (0, r.jsx)(b, {
@@ -51,12 +51,12 @@ function g(e) {
         userTrialOffer: o,
         setSelectedPlanId: l,
         startedPaymentFlowWithPaymentSources: s,
-        defaultPlanId: C
+        defaultPlanId: d
       } = e;
       r(n);
-      let d = _.h8.PLAN_SELECT,
+      let C = _.h8.PLAN_SELECT,
         u = (0, c.k5)(t);
-      u !== m.Si.TIER_1 && u !== m.Si.TIER_2 || n !== m.Si.TIER_0 || a || (d = _.h8.WHAT_YOU_LOSE);
+      u !== m.Si.TIER_1 && u !== m.Si.TIER_2 || n !== m.Si.TIER_0 || a || (C = _.h8.WHAT_YOU_LOSE);
       let p = (0, h.T)({
           userTrialOffer: o,
           isGift: a,
@@ -68,7 +68,7 @@ function g(e) {
           selectedSkuId: n,
           startedPaymentFlowWithPaymentSources: s
         });
-      d !== _.h8.WHAT_YOU_LOSE && x && (d = _.h8.REVIEW, l((0, f.nA)(n, t, C))), i(d, {
+      C !== _.h8.WHAT_YOU_LOSE && x && (C = _.h8.REVIEW, l((0, f.nA)(n, t, d))), i(C, {
         analyticsDataOverride: {
           sku_id: n
         }
@@ -80,7 +80,7 @@ function g(e) {
       handleStepChange: t,
       isGift: L,
       userTrialOffer: S,
-      startedPaymentFlowWithPaymentSources: d.current,
+      startedPaymentFlowWithPaymentSources: C.current,
       setSelectedPlanId: x,
       defaultPlanId: g
     }),
@@ -100,7 +100,7 @@ function b(e) {
     isGift: i,
     inOfferExperience: l,
     priceOptions: s,
-    showPromotionalGiftBanner: C,
+    showPromotionalGiftBanner: d,
     enablePremiumBrandRefresh: u
   } = e, p = u ? (0, r.jsx)(o.X6q, {
     variant: "heading-lg/bold",
@@ -128,11 +128,11 @@ function b(e) {
         [j.modalPadding]: l && !u,
         [j.premiumBrandRefreshContent]: u
       }),
-      children: (0, r.jsx)(d.Z, {
+      children: (0, r.jsx)(C.Z, {
         onSelectSku: e => t((0, c.Wz)(e)),
         isGift: i,
         priceOptions: s,
-        showPromotionalGiftBanner: C,
+        showPromotionalGiftBanner: d,
         enablePremiumBrandRefresh: u
       })
     })]

@@ -28,21 +28,21 @@ let m = e => {
     a11yLabel: g,
     selectedSkuId: b,
     category: L
-  } = e, y = i.useRef(null), v = (0, d.Z)(y), S = (0, _.m)(y), O = !m && (v || S), E = (0, c.ZP)(), P = (0, s.wj)(E), I = {
+  } = e, y = i.useRef(null), v = (0, C.Z)(y), S = (0, _.m)(y), O = !m && (v || S), E = (0, c.ZP)(), I = (0, s.wj)(E), P = {
     type: l.Z.AVATAR_DECORATION,
     label: g,
     asset: n
   };
-  return (0, r.jsx)(C.tEY, {
-    children: (0, r.jsxs)(C.kL8, {
+  return (0, r.jsx)(d.tEY, {
+    children: (0, r.jsxs)(d.kL8, {
       ref: y,
       "aria-label": null != j ? j : "",
       onClick: () => {
         null == t || null == x || m || x(t)
       },
-      className: o()(P ? h.shopCardDark : h.shopCard, {
+      className: o()(I ? h.shopCardDark : h.shopCard, {
         [h.shopCardAnimation]: !m,
-        [P ? h.shopCardDarkHighlighted : h.shopCardHighlighted]: O,
+        [I ? h.shopCardDarkHighlighted : h.shopCardHighlighted]: O,
         [h.shopCardSelected]: b === t
       }),
       children: [(0, r.jsx)("div", {
@@ -52,24 +52,24 @@ let m = e => {
           [h.shopCardClaimed]: m
         }),
         children: (0, r.jsx)(p.R, {
-          item: I,
+          item: P,
           user: a,
           isHighlighted: O,
-          avatarSize: C.EFr.SIZE_120,
+          avatarSize: d.EFr.SIZE_120,
           isPurchased: m
         })
-      }), m && (0, r.jsx)(C.dz2, {
+      }), m && (0, r.jsx)(d.dz2, {
         size: "custom",
         width: 48,
         height: 48,
-        color: C.TVs.colors.WHITE,
+        color: d.TVs.colors.WHITE,
         className: h.claimedIcon
       }), (0, r.jsxs)("div", {
         className: h.productName,
-        children: [(0, r.jsx)(C.X6q, {
+        children: [(0, r.jsx)(d.X6q, {
           variant: "text-md/bold",
           children: j
-        }), (0, r.jsx)(C.Text, {
+        }), (0, r.jsx)(d.Text, {
           variant: "text-md/normal",
           children: m ? f.intl.string(f.t["6cfuDg"]) : f.intl.string(f.t.QQsaCQ)
         })]

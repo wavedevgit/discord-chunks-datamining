@@ -180,7 +180,18 @@ function j(e) {
         }), Q()]
       });
       let e = null != B ? (0, O.T4)(B.amount, B.currency) : true;
-      return (0, r.jsxs)("div", {
+      return j === C.Wt.USER_PROFILE_WISHLIST ? (0, r.jsxs)("div", {
+        className: R.bodyColumnRight,
+        children: [(0, r.jsx)(g.s, {
+          giftRecipient: D
+        }), Q(), null != e && null != U && (0, r.jsx)(u.Z, {
+          skuId: U,
+          price: e,
+          className: R.giftPreview,
+          isSelected: true,
+          shouldDisplayHeader: true
+        })]
+      }) : (0, r.jsxs)("div", {
         className: R.bodyColumnRight,
         children: [(0, r.jsx)(d.Z, {
           selectedSkuId: U,

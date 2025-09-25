@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk782568 = require("./782568.js"),
@@ -35,12 +35,12 @@ let I = e => {
   var t;
   let {
     isLoading: n,
-    title: a,
+    title: i,
     sortedSkuIds: I,
     numVisibleItems: P,
-    hasSorting: B,
+    hasSorting: N,
     prioritizeUserDiscounts: A,
-    tab: N,
+    tab: B,
     buttonContainerClassName: R
   } = e, Z = (0, s.e7)([d.default], () => d.default.getCurrentUser()), w = h.ZP.canUseCollectibles(Z), F = (0, T.G)("FeedBlock"), {
     sortType: M,
@@ -49,10 +49,10 @@ let I = e => {
     sortOptions: W,
     shuffleProducts: U,
     showRecommendationOption: V
-  } = (0, v.Z)(I, w, A), z = (0, O.St)(D), G = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), q = (0, s.e7)([g.Z], () => g.Z.isFocused()), K = !G && q, {
+  } = (0, x.Z)(I, w, A), z = (0, O.St)(D), G = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), q = (0, s.e7)([g.Z], () => g.Z.isFocused()), K = !G && q, {
     animationPhase: Y,
     startAnimation: X
-  } = (0, x.y)(), Q = (0, C.sp)(), J = null != (t = null == Q ? true : Q.sessionId) ? t : "", $ = l.useRef(null), ee = l.useCallback(e => {
+  } = (0, v.y)(), Q = (0, C.sp)(), J = null != (t = null == Q ? true : Q.sessionId) ? t : "", $ = l.useRef(null), ee = l.useCallback(e => {
     X({
       isShuffling: false,
       onOutroComplete: () => H(e)
@@ -64,14 +64,14 @@ let I = e => {
     location: "FeedBlock"
   }).showCardsV2;
   return null == Z ? null : (0, r.jsxs)("div", {
-    className: i()(k.popularPicksSection, k.centeredSection),
+    className: a()(k.popularPicksSection, k.centeredSection),
     children: [(0, r.jsxs)("div", {
       className: k.blockHeader,
       children: [(0, r.jsxs)("div", {
         className: k.headerLeft,
         children: [(0, r.jsx)(o.X6q, {
           variant: "heading-lg/semibold",
-          children: a
+          children: i
         }), V && (0, r.jsx)(o.ua7, {
           text: L.intl.string(L.t["3taPdn"]),
           position: "top",
@@ -113,8 +113,8 @@ let I = e => {
             }), t))
           }
         })]
-      }), B ? (0, r.jsxs)("div", {
-        className: i()(k.headerRight, {
+      }), N ? (0, r.jsxs)("div", {
+        className: a()(k.headerRight, {
           [j.shopTakeOver]: F
         }),
         children: [(0, r.jsx)(o.Text, {
@@ -126,7 +126,7 @@ let I = e => {
             options: W,
             select: ee,
             className: k.sortSelect,
-            popoutClassName: i()({
+            popoutClassName: a()({
               [j.shopTakeOver]: F
             }),
             isSelected: e => e === M,
@@ -147,7 +147,7 @@ let I = e => {
                 page_session_id: J
               })
             },
-            disabled: Y !== x.g.MOUNTED && Y !== x.g.FINISHED
+            disabled: Y !== v.g.MOUNTED && Y !== v.g.FINISHED
           })
         })]
       }) : null]
@@ -159,10 +159,10 @@ let I = e => {
         let n, l = _.Z.getCategoryForProduct(e.skuId);
         if (null == e || null == l) return null;
         if (K)
-          if (Y === x.g.SHUFFLE_OUT) return (0, r.jsx)("div", {
+          if (Y === v.g.SHUFFLE_OUT) return (0, r.jsx)("div", {
             className: k.shuffleOutro
           }, "".concat(e.skuId, "-").concat(t));
-          else Y === x.g.SORT_OUT ? n = k.sortChangedOutro : Y === x.g.SHUFFLE_IN ? n = k.shuffleIntro : Y === x.g.SORT_IN && (n = k.sortChangedIntro);
+          else Y === v.g.SORT_OUT ? n = k.sortChangedOutro : Y === v.g.SHUFFLE_IN ? n = k.shuffleIntro : Y === v.g.SORT_IN && (n = k.sortChangedIntro);
         return (0, r.jsx)(C.k0, {
           newValue: {
             tilePosition: t,
@@ -170,15 +170,12 @@ let I = e => {
             categoryPosition: 2
           },
           children: et ? (0, r.jsx)(S.Z, {
-            skuId: null == e ? true : e.skuId,
-            config: {
-              tab: N
-            }
+            skuId: null == e ? true : e.skuId
           }) : (0, r.jsx)(E.Z, {
             product: e,
             category: l,
             user: Z,
-            tab: N,
+            tab: B,
             className: n
           })
         }, null == e ? true : e.skuId)

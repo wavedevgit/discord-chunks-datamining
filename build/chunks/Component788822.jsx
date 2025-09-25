@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk180650 = require("./180650.js"),
   Chunk622535 = require("./622535.js"),
   Chunk481060 = require("./481060.js"),
@@ -20,12 +20,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk310582 = require("./310582.js");
 let m = e => {
-  var t, n, a, m;
+  var t, n, i, m;
   let b, {
     category: E,
     subblock: S,
-    badgeText: x,
-    handleTransition: v
+    badgeText: v,
+    handleTransition: x
   } = e;
   null != S && (b = null == (t = g.Z.getCategoryByStoreListingId(null == S ? true : S.categoryStoreListingId)) ? true : t.skuId);
   let O = null != (n = null != b ? b : null == E ? true : E.skuId) ? n : "",
@@ -49,7 +49,7 @@ let m = e => {
         backgroundImage: "url(".concat(y, ")")
       },
       onClick: () => {
-        v("shop marketing tile", O), u.default.track(h.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+        x("shop marketing tile", O), u.default.track(h.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
           collectibles_shop_session_id: null == P ? true : P.sessionId,
           sku_id: O,
           page_type: "home",
@@ -60,19 +60,19 @@ let m = e => {
           cta_name: null
         })
       },
-      children: [null != x && (0, r.jsx)(c.IGR, {
+      children: [null != v && (0, r.jsx)(c.IGR, {
         disableColor: true,
-        text: x,
+        text: v,
         className: _.featuredBlockBadge
       }), (0, r.jsxs)("div", {
         className: _.featuredBlockTextContainer,
         children: [null != k && (0, r.jsx)(c.X6q, {
           lineClamp: 2,
-          className: i()(_.featuredBlockTitleText, {
+          className: a()(_.featuredBlockTitleText, {
             [_.featuredBlockTitleTextNameplate]: j
           }),
           style: {
-            color: null != (a = null == S ? true : S.bannerTextColor) ? a : "white"
+            color: null != (i = null == S ? true : S.bannerTextColor) ? i : "white"
           },
           variant: "heading-xl/semibold",
           children: k
@@ -91,7 +91,7 @@ let m = e => {
           variant: "overlay-primary",
           text: C.intl.string(C.t.jVcuVV),
           onClick: e => {
-            v("shop marketing take me there button", O), e.stopPropagation(), u.default.track(h.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+            x("shop marketing take me there button", O), e.stopPropagation(), u.default.track(h.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
               collectibles_shop_session_id: null == P ? true : P.sessionId,
               sku_id: O,
               page_type: "home",

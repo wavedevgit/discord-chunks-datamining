@@ -12,12 +12,12 @@ var Chunk481060 = require("./481060.js"),
   Chunk474936 = require("./474936.js"),
   Chunk402450 = require("./402450.js");
 
-function d(e) {
+function C(e) {
   let {
     onClick: t,
     isGift: n,
     priceOptions: s,
-    showPromotionalGiftBanner: d,
+    showPromotionalGiftBanner: C,
     enablePremiumBrandRefresh: c
   } = e, {
     isEligible: u
@@ -29,7 +29,7 @@ function d(e) {
     },
     children: (0, r.jsx)(o.IL, {
       ctaButton: null,
-      showPromotionalGiftBanner: d,
+      showPromotionalGiftBanner: C,
       showSeptemberMarketingMomentBanner: u,
       showYearlyPrice: true,
       isGift: n,
@@ -42,10 +42,10 @@ function d(e) {
       cursor: "pointer"
     },
     children: (0, r.jsx)(l.wp, {
-      className: C.tier2MarketingCard,
+      className: d.tier2MarketingCard,
       ctaButton: null,
-      showWumpus: !d,
-      showPromotionalGiftBanner: d,
+      showWumpus: !C,
+      showPromotionalGiftBanner: C,
       showYearlyPrice: true,
       isGift: n,
       isModal: true,
@@ -67,7 +67,7 @@ function c(e) {
       cursor: "pointer"
     },
     children: (0, r.jsx)(o.UQ, {
-      className: C.premiumBrandRefreshTier0Card,
+      className: d.premiumBrandRefreshTier0Card,
       ctaButton: null,
       showYearlyPrice: true,
       isGift: n,
@@ -79,7 +79,7 @@ function c(e) {
       cursor: "pointer"
     },
     children: (0, r.jsx)(l.Gq, {
-      className: C.tier0MarketingCard,
+      className: d.tier0MarketingCard,
       ctaButton: null,
       showWumpus: true,
       showYearlyPrice: true,
@@ -97,7 +97,7 @@ let u = function(e) {
     enablePremiumBrandRefresh: o
   } = e;
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(d, {
+    children: [(0, r.jsx)(C, {
       onClick: () => t(s.Si.TIER_2),
       isGift: n,
       priceOptions: i,

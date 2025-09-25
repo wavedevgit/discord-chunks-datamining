@@ -2,7 +2,7 @@
 /** chunk id: 264481, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   P9: () => I,
-  Uf: () => C,
+  Uf: () => E,
   b0: () => S,
   s_: () => P
 }), require("./388685.js");
@@ -122,7 +122,7 @@ function w() {
   })
 }
 
-function C(e) {
+function E(e) {
   let {
     onClose: t
   } = e, l = (0, u.P6)("UserProfileModalV2EmptyActivityCurrentUser"), o = i.useCallback(() => {

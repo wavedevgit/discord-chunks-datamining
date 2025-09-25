@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk594174 = require("./594174.js"),
@@ -23,11 +23,11 @@ let C = e => {
     shelf: t,
     handleTransition: n,
     tab: l
-  } = e, C = (0, i.e7)([o.default], () => o.default.getCurrentUser()), _ = d.Z.useConfig({
+  } = e, C = (0, a.e7)([o.default], () => o.default.getCurrentUser()), _ = d.Z.useConfig({
     location: "ShelfBlock"
   }).showCardsV2;
   return null == C ? null : (0, r.jsxs)("div", {
-    className: a()(h.shelfBlockContainer, h.centeredSection),
+    className: i()(h.shelfBlockContainer, h.centeredSection),
     children: [(0, r.jsxs)("div", {
       className: h.blockHeader,
       children: [(0, r.jsx)(s.X6q, {
@@ -44,22 +44,19 @@ let C = e => {
       className: h.feed,
       children: (0, r.jsx)(r.Fragment, {
         children: t.rankedSkuIds.map((e, n) => {
-          let a = u.Z.getCategoryForProduct(e),
-            i = u.Z.getProduct(e);
-          return null == a || null == i ? null : (0, r.jsx)(c.k0, {
+          let i = u.Z.getCategoryForProduct(e),
+            a = u.Z.getProduct(e);
+          return null == i || null == a ? null : (0, r.jsx)(c.k0, {
             newValue: {
               tilePosition: n,
               pageSection: t.name,
               categoryPosition: 2
             },
             children: _ ? (0, r.jsx)(p.Z, {
-              skuId: e,
-              config: {
-                tab: l
-              }
+              skuId: e
             }, e) : (0, r.jsx)(g.Z, {
-              product: i,
-              category: a,
+              product: a,
+              category: i,
               user: C,
               tab: l
             }, e)

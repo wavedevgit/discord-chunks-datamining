@@ -2,7 +2,7 @@
 /** chunk id: 655283, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  MG: () => a,
+  MG: () => i,
   xh: () => l
 });
 let r = (0, require("./427164.js").le)({
@@ -30,7 +30,7 @@ let r = (0, require("./427164.js").le)({
   l = e => r.useConfig({
     location: e
   }).showSeeMoreText,
-  a = e => {
+  i = e => {
     let t = r.useConfig({
         location: e
       }).showShopTheCollectionText,

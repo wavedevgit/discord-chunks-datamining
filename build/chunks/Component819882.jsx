@@ -2,7 +2,7 @@
 /** chunk id: 819882, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => E
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -13,6 +13,7 @@ var Chunk873546 = require("./873546.js"),
   Chunk594174 = require("./594174.js"),
   Chunk74538 = require("./74538.js"),
   Chunk381585 = require("./381585.jsx"),
+  Chunk994587 = require("./994587.jsx"),
   Chunk884697 = require("./884697.js"),
   Chunk724994 = require("./724994.js"),
   Chunk680942 = require("./680942.jsx"),
@@ -21,39 +22,38 @@ var Chunk873546 = require("./873546.js"),
   Chunk956472 = require("./956472.js"),
   Chunk215023 = require("./215023.js"),
   Chunk388032 = require("./388032.jsx");
-let b = e => {
+let E = e => {
   let {
     product: t,
     selectedVariantIndex: n,
-    config: b,
     cardRef: E
-  } = e, S = (0, a.e7)([o.default], () => o.default.getCurrentUser()), x = c.ZP.canUseCollectibles(S), v = (0, u.sp)(), {
-    isPurchased: O,
-    isPartiallyOwnedBundle: T
-  } = (0, g.L)(t), y = (0, d.rN)(t), L = (0, d.G1)(t), j = (0, d.ne)({
+  } = e, S = (0, d.Nd)(), v = null == S ? true : S.tab, x = (0, i.e7)([o.default], () => o.default.getCurrentUser()), O = c.ZP.canUseCollectibles(x), T = (0, u.sp)(), {
+    isPurchased: y,
+    isPartiallyOwnedBundle: L
+  } = (0, p.L)(t), j = (0, g.rN)(t), k = (0, g.G1)(t), I = (0, g.ne)({
     product: t,
-    isPartiallyOwnedBundle: T,
-    isPurchased: O
-  }), k = (0, h.Iw)(t), {
-    isOrbExclusive: I
-  } = (0, C.Ip)({
+    isPartiallyOwnedBundle: L,
+    isPurchased: y
+  }), P = (0, C.Iw)(t), {
+    isOrbExclusive: N
+  } = (0, _.Ip)({
     product: t,
-    isPremiumUser: x,
-    tab: b.tab,
-    hasDiscountOffer: null != k
-  }), P = (0, f.J7)(t, b, s.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON);
-  return L || l.tq || I || !j || b.tab === _.AW.ORBS ? null : y ? (0, r.jsx)(i.hU, {
+    isPremiumUser: O,
+    tab: v,
+    hasDiscountOffer: null != P
+  }), A = (0, h.J7)(t, s.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON);
+  return k || l.tq || N || !I || v === m.AW.ORBS ? null : j ? (0, r.jsx)(a.hU, {
     variant: "primary",
-    "aria-label": m.intl.string(m.t.SKNnqq),
-    icon: i.tEF,
+    "aria-label": b.intl.string(b.t.SKNnqq),
+    icon: a.tEF,
     onClick: e => {
-      e.stopPropagation(), P(e)
+      e.stopPropagation(), A(e)
     }
   }) : (0, r.jsx)(u.k0, {
     newValue: {
-      pageCategory: b.tab === _.AW.HOME || null == v ? true : v.pageCategory
+      pageCategory: v === m.AW.HOME || null == T ? true : T.pageCategory
     },
-    children: (0, r.jsx)(p.Z, {
+    children: (0, r.jsx)(f.Z, {
       primary: true,
       product: t,
       selectedVariantIndex: n,

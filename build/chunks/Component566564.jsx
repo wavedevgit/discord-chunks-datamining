@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk685816 = require("./685816.js"),
   Chunk481060 = require("./481060.js"),
   Chunk702486 = require("./702486.js"),
@@ -34,13 +34,13 @@ let k = e => {
     var t;
     let {
       handleTransition: n,
-      numVisibleItems: a,
+      numVisibleItems: i,
       isFetchingCategories: o,
       tab: c,
       isFullScreen: u
     } = e, {
       noCache: h,
-      includeUnpublished: v
+      includeUnpublished: x
     } = (0, C.Z)(), [y, k] = l.useState(false), I = (0, d.sp)(), P = null != (t = null == I ? true : I.sessionId) ? t : "";
     l.useEffect(() => {
       (0, p.n)({
@@ -48,18 +48,18 @@ let k = e => {
         checkpoint: p.a.SHOP_MOUNTED,
         tab: c,
         isFullScreen: u,
-        unpublishedCategoriesShown: v,
+        unpublishedCategoriesShown: x,
         cacheDisabled: h
       })
     }, [c]);
     let {
-      isFetchingShopHome: B,
+      isFetchingShopHome: N,
       fetchShopHomeError: A,
-      shopBlocks: N,
+      shopBlocks: B,
       refreshShopHome: R
     } = (0, g.E)(c, {
       noCache: h,
-      includeUnpublished: v,
+      includeUnpublished: x,
       includeBundles: true,
       logPerf: true
     }, {
@@ -70,44 +70,44 @@ let k = e => {
       R()
     }, [R]);
     return (l.useEffect(() => {
-      null != A || B || 0 === N.length || (0, p.n)({
+      null != A || N || 0 === B.length || (0, p.n)({
         sessionId: P,
         checkpoint: p.a.SHOP_RENDERED,
         tab: c,
         isFullScreen: u,
-        unpublishedCategoriesShown: v,
+        unpublishedCategoriesShown: x,
         cacheDisabled: h
       })
-    }, [A, B, N.length, v, h, P, c, u]), null != A) ? (0, r.jsx)(f.Z, {
+    }, [A, N, B.length, x, h, P, c, u]), null != A) ? (0, r.jsx)(f.Z, {
       onRetry: Z,
       errorOrigin: f.i.SHOP_PAGE,
       errorMessage: A.message
-    }) : B || 0 === N.length ? (0, r.jsxs)("div", {
-      className: i()(j.loadingContainer, j.feedContent),
+    }) : N || 0 === B.length ? (0, r.jsxs)("div", {
+      className: a()(j.loadingContainer, j.feedContent),
       children: [(0, r.jsx)(E.Z, {
-        isLoading: B,
+        isLoading: N,
         handleTransition: n,
         tab: c
       }), (0, r.jsx)(m.Z, {
-        isLoading: B,
+        isLoading: N,
         handleTransition: n,
         categories: []
       }), (0, r.jsx)(b.Z, {
-        isLoading: B,
+        isLoading: N,
         title: c === T.AW.ORBS ? L.intl.string(L.t.dFgeub) : L.intl.string(L.t.NSv5KS),
-        numVisibleItems: a,
+        numVisibleItems: i,
         hasSorting: c === T.AW.HOME,
         tab: c
       })]
     }) : (0, r.jsx)(r.Fragment, {
-      children: N.map((e, t) => ((e, t, l) => {
+      children: B.map((e, t) => ((e, t, l) => {
         if (null == e) return null;
         let d = null,
           g = false;
         switch (e.type) {
           case s.z.HERO:
             d = (0, r.jsx)(E.Z, {
-              isLoading: B,
+              isLoading: N,
               handleTransition: n,
               heroBlock: e,
               tab: c
@@ -115,7 +115,7 @@ let k = e => {
             break;
           case s.z.FEATURED:
             d = (0, r.jsx)(m.Z, {
-              isLoading: B,
+              isLoading: N,
               handleTransition: n,
               featuredBlockRecord: e
             }, l);
@@ -124,8 +124,8 @@ let k = e => {
             let p = e.sortedSkuIds;
             d = (0, r.jsx)(b.Z, {
               title: c === T.AW.ORBS ? L.intl.string(L.t.dFgeub) : L.intl.string(L.t.NSv5KS),
-              isLoading: B || o,
-              numVisibleItems: a,
+              isLoading: N || o,
+              numVisibleItems: i,
               sortedSkuIds: p,
               buttonContainerClassName: (null == t ? true : t.type) === s.z.IMMERSIVE_BANNER ? j.feedblockInteractiveBackground : true,
               hasSorting: c === T.AW.HOME,
@@ -141,7 +141,7 @@ let k = e => {
             }, l);
             break;
           case s.z.SHELF:
-            d = (0, r.jsx)(x.Z, {
+            d = (0, r.jsx)(v.Z, {
               handleTransition: n,
               shelf: e,
               tab: c
@@ -164,23 +164,23 @@ let k = e => {
             return null
         }
         return (0, r.jsx)("div", {
-          className: i()(j.blockContainer, j.feedContent, {
+          className: a()(j.blockContainer, j.feedContent, {
             [j.skipPadding]: 0 === l || g
           }),
           children: d
         }, l)
-      })(e, t > 0 ? N[t - 1] : null, t))
+      })(e, t > 0 ? B[t - 1] : null, t))
     })
   },
   I = e => {
     let {
       isFullScreen: t,
       handleTransition: n,
-      tab: a,
-      transitionState: i
+      tab: i,
+      transitionState: a
     } = e, s = l.useRef(null), {
       handleScroll: g
-    } = (0, c.z)(s, a), p = (0, h.R)(), f = (0, d.sp)(), [C, _] = l.useState(T.IV), [m, b] = l.useState(false);
+    } = (0, c.z)(s, i), p = (0, h.R)(), f = (0, d.sp)(), [C, _] = l.useState(T.IV), [m, b] = l.useState(false);
     return l.useEffect(() => {
       if (null != s.current) {
         let e = () => {
@@ -205,9 +205,9 @@ let k = e => {
             handleTransition: n,
             numVisibleItems: C,
             isFetchingCategories: p,
-            tab: a,
+            tab: i,
             isFullScreen: t
-          }), a !== T.AW.CATALOG && C >= 36 && (0, r.jsxs)("div", {
+          }), i !== T.AW.CATALOG && C >= 36 && (0, r.jsxs)("div", {
             className: j.endOfFeed,
             children: [(0, r.jsx)(o.X6q, {
               variant: "heading-md/semibold",
@@ -218,8 +218,8 @@ let k = e => {
               onClick: () => {
                 n("shop all button", true, true), u.default.track(y.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                   collectibles_shop_session_id: null == f ? true : f.sessionId,
-                  page_type: a,
-                  page_category: a === T.AW.HOME || null == f ? true : f.pageCategory,
+                  page_type: i,
+                  page_category: i === T.AW.HOME || null == f ? true : f.pageCategory,
                   cta_name: "browse the shop button"
                 })
               },
@@ -227,15 +227,15 @@ let k = e => {
             })]
           })]
         }), !t && (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(v.Z, {
+          children: [(0, r.jsx)(x.Z, {
             peaking: m,
-            transitioning: i === T.f7.OUT
-          }), (0, r.jsx)(v.Z, {
+            transitioning: a === T.f7.OUT
+          }), (0, r.jsx)(x.Z, {
             style: {
               left: 1850
             },
             peaking: m,
-            transitioning: i === T.f7.OUT
+            transitioning: a === T.f7.OUT
           })]
         })]
       })

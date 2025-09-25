@@ -48,8 +48,8 @@ function A(e) {
     location: "UserProfileModalV2Activity"
   }), R = (0, c.P6)("UserProfileModalV2Activity"), {
     live: L,
-    recent: M,
-    stream: U
+    recent: U,
+    stream: M
   } = (0, p.Z)(t.id), {
     voiceChannel: F,
     voiceActivity: G
@@ -59,13 +59,13 @@ function A(e) {
   }), B = (0, i.e7)([s.Z], () => s.Z.isFetchingUserOutbox(t.id)), W = t.id === n.id, z = (0, i.e7)([f.Z, d.Z], () => {
     let e = W ? f.Z.getStatus() : d.Z.getStatus(t.id);
     return e === l.Skl.OFFLINE || e === l.Skl.INVISIBLE
-  }), H = L.length > 0 || null != U, Y = D && null == U && null == G && null != F, q = !z && (H || Y), V = M.length > 0, K = L.some(e => (0, a.Z)(e));
+  }), H = L.length > 0 || null != M, Y = D && null == M && null == G && null != F, q = !z && (H || Y), V = U.length > 0, K = L.some(e => (0, a.Z)(e));
   if (!q && !V && B) return (0, r.jsx)("div", {
-    className: E.cards,
+    className: C.cards,
     children: Array.from({
       length: 8
     }).map((e, t) => (0, r.jsxs)("div", {
-      className: E.loadingItem,
+      className: C.loadingItem,
       children: [(0, r.jsx)(u.ZT, {
         width: 60,
         opacity: .08
@@ -87,14 +87,14 @@ function A(e) {
     })
   }
   return (0, r.jsxs)(S.F, {
-    className: E.scroller,
+    className: C.scroller,
     fade: true,
     children: [(() => {
       let e = W && R && !K;
       return q ? (0, r.jsx)(P.Z, {
-        heading: C.intl.string(C.t.J6STd3),
+        heading: E.intl.string(E.t.J6STd3),
         children: (0, r.jsxs)("ul", {
-          className: E.cards,
+          className: C.cards,
           children: [e && (0, r.jsx)("li", {
             children: (0, r.jsx)(v.Z, {
               variant: "horizontal"
@@ -106,11 +106,11 @@ function A(e) {
               voiceChannel: F,
               onClose: Z
             })
-          }), null != U && (0, r.jsx)("li", {
+          }), null != M && (0, r.jsx)("li", {
             children: (0, r.jsx)(j.Z, {
               user: t,
               currentUser: n,
-              stream: U,
+              stream: M,
               onClose: Z
             })
           }), L.map((e, i) => (0, r.jsx)("li", {
@@ -130,14 +130,14 @@ function A(e) {
           })]
         })
       }) : e ? (0, r.jsx)(P.Z, {
-        heading: C.intl.string(C.t.J6STd3),
+        heading: E.intl.string(E.t.J6STd3),
         children: (0, r.jsx)(v.Z, {
           variant: "horizontal"
         })
       }) : null
     })(), V ? (0, r.jsx)(P.Z, {
-      heading: C.intl.string(C.t.jzgEoK),
-      introText: W ? C.intl.format(C.t["4bk9Ag"], {
+      heading: E.intl.string(E.t.jzgEoK),
+      introText: W ? E.intl.format(E.t["4bk9Ag"], {
         learnMoreHook: (e, t) => (0, r.jsx)(l.eee, {
           href: g.Z.getArticleURL(w.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e
@@ -145,8 +145,8 @@ function A(e) {
       }) : true,
       scrollIntoView: T === I.Tb.RECENT_ACTIVITY,
       children: (0, r.jsx)("ul", {
-        className: E.cards,
-        children: M.map(e => (0, r.jsx)("li", {
+        className: C.cards,
+        children: U.map(e => (0, r.jsx)("li", {
           children: (0, r.jsx)(y.Z, {
             user: t,
             entry: e,

@@ -8,19 +8,22 @@ require("./647438.js");
 var Chunk602733 = require("./602733.js"),
   Chunk319396 = require("./319396.jsx");
 
-function a() {
+function a(e) {
   let {
-    wishlist: e,
-    isFetching: t,
-    error: n
-  } = (0, Chunk602733.k)("123");
-  return exports ? (0, Chunk951288.jsx)("div", {
+    profileOwner: t
+  } = e, {
+    wishlist: n,
+    isFetching: a,
+    error: o
+  } = (0, i.k)("123");
+  return a ? (0, r.jsx)("div", {
     children: "Loading wishlist"
-  }) : null != require ? (0, Chunk951288.jsx)("div", {
+  }) : null != o ? (0, r.jsx)("div", {
     children: "Error loading wishlist"
-  }) : null == module || 0 === module.items.length ? (0, Chunk951288.jsx)("div", {
+  }) : null == n || 0 === n.items.length ? (0, r.jsx)("div", {
     children: "Empty State"
-  }) : (0, Chunk951288.jsx)(Chunk319396.Z, {
-    items: module.items
+  }) : (0, r.jsx)(l.Z, {
+    items: n.items,
+    profileOwner: t
   })
 }

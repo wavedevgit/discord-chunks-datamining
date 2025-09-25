@@ -2,12 +2,12 @@
 /** chunk id: 838819, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  default: () => F
+  default: () => M
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk772848 = require("./772848.js"),
   Chunk399606 = require("./399606.js"),
   Chunk952265 = require("./952265.js"),
@@ -21,6 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk594174 = require("./594174.js"),
   Chunk381585 = require("./381585.jsx"),
   Chunk597688 = require("./597688.js"),
+  Chunk994587 = require("./994587.jsx"),
   Chunk780475 = require("./780475.js"),
   Chunk223143 = require("./223143.js"),
   Chunk298228 = require("./298228.js"),
@@ -38,129 +39,132 @@ var Chunk951288 = require("./951288.js"),
   Chunk295907 = require("./295907.js"),
   Chunk887353 = require("./887353.js"),
   Chunk345213 = require("./345213.js");
-let w = e => {
+let F = e => {
     let {
       children: t,
       shouldAddEventListener: n,
       onClose: r
-    } = e, a = (0, c.f9)();
+    } = e, i = (0, c.f9)();
     return l.useEffect(() => {
-      if (!n || a) return;
+      if (!n || i) return;
       let e = e => {
-        e.key === N.mR.Escape && r()
+        e.key === R.mR.Escape && r()
       };
       return window.addEventListener("keydown", e), () => window.removeEventListener("keydown", e)
-    }, [n, a, r]), t
+    }, [n, i, r]), t
   },
-  F = function(e) {
+  M = function(e) {
     let {
       isFullScreen: t = true,
-      tab: n = B.AW.HOME
+      tab: n = A.AW.HOME
     } = e;
-    (0, h.z)(f.f), (0, v.f)();
-    let a = (0, g.Z)((0, s.Z)()),
+    (0, h.z)(f.f), (0, O.f)();
+    let i = (0, g.Z)((0, s.Z)()),
       c = (0, o.e7)([_.default], () => _.default.getCurrentUser()),
-      N = (0, P.G)("CollectiblesShop"),
+      R = (0, N.G)("CollectiblesShop"),
       {
-        onClose: F
-      } = (0, k.Db)(),
+        onClose: M
+      } = (0, I.Db)(),
       {
-        currentTab: M,
-        hasFilters: H
-      } = (0, T.S)(),
-      D = l.useMemo(() => n === B.AW.HOME && M && H() ? M : n, [n, M, H]),
+        currentTab: H,
+        hasFilters: D
+      } = (0, y.S)(),
+      W = l.useMemo(() => n === A.AW.HOME && H && D() ? H : n, [n, H, D]),
       {
-        categories: W,
-        refreshCategories: U
-      } = (0, S.ZP)({
+        categories: U,
+        refreshCategories: V
+      } = (0, v.ZP)({
         logPerf: true
       }, {
-        sessionId: a,
-        tab: D,
+        sessionId: i,
+        tab: W,
         isFullScreen: t
       }),
-      V = (0, x.O)(W),
-      [z, G] = l.useState(),
-      q = (0, o.e7)([b.Z], () => {
+      z = (0, x.O)(U),
+      [G, q] = l.useState(),
+      K = (0, o.e7)([b.Z], () => {
         var e;
-        return null == (e = b.Z.getCategory(z)) ? true : e.name
+        return null == (e = b.Z.getCategory(G)) ? true : e.name
       }),
-      [K, Y] = l.useState();
-    (0, L.Kp)();
-    let X = l.useCallback((e, t) => {
-        Y(e), G(t)
+      [Y, X] = l.useState();
+    (0, j.Kp)();
+    let Q = l.useCallback((e, t) => {
+        X(e), q(t)
       }, []),
       {
-        selectedTab: Q,
-        transitionState: J,
-        transitionToTab: $
-      } = (0, O.B)(D, t);
-    (0, E.q3)(a, Q, q, J, K), (0, E.EB)(Q, c);
+        selectedTab: J,
+        transitionState: $,
+        transitionToTab: ee
+      } = (0, T.B)(W, t);
+    (0, S.q3)(i, J, K, $, Y), (0, S.EB)(J, c);
     let {
-      dismissShopButtonDC: ee
-    } = (0, I.Z)();
+      dismissShopButtonDC: et
+    } = (0, P.Z)();
     l.useEffect(() => {
-      ee()
-    }, [ee]), l.useEffect(() => {
-      t || (0, d.Y)(A.Z5c.COLLECTIBLES_SHOP)
+      et()
+    }, [et]), l.useEffect(() => {
+      t || (0, d.Y)(B.Z5c.COLLECTIBLES_SHOP)
     }, [t]);
-    let et = (0, o.e7)([C.Z], () => C.Z.getLayers().includes(A.S9g.COLLECTIBLES_SHOP)),
-      en = l.useRef(null),
-      er = l.useRef(null);
-    (0, u.Tbt)(en);
+    let en = (0, o.e7)([C.Z], () => C.Z.getLayers().includes(B.S9g.COLLECTIBLES_SHOP)),
+      er = l.useRef(null),
+      el = l.useRef(null);
+    (0, u.Tbt)(er);
     let {
-      setFullScreenOpen: el,
+      setFullScreenOpen: ei,
       fullScreenOpen: ea
-    } = (0, T.S)();
+    } = (0, y.S)();
     l.useEffect(() => {
-      if (t) return el(true), () => el(false);
+      if (t) return ei(true), () => ei(false);
       if (!t) {
         var e;
-        null == (e = er.current) || e.focus()
+        null == (e = el.current) || e.focus()
       }
-    }, [t, el]);
+    }, [t, ei]);
     let {
-      analyticsLocations: ei
-    } = (0, E.MV)(Q);
+      analyticsLocations: es
+    } = (0, S.MV)(J);
     return ea && !t ? null : (0, r.jsx)(p.Gt, {
-      value: ei,
+      value: es,
       children: (0, r.jsx)(m.k0, {
         newValue: {
-          sessionId: a,
-          pageCategory: q,
-          pageSize: B.kN
+          sessionId: i,
+          pageCategory: K,
+          pageSize: A.kN
         },
-        children: (0, r.jsx)(w, {
-          onClose: F,
-          shouldAddEventListener: t && !et,
-          children: (0, r.jsxs)("div", {
-            className: i()(R.shop, {
-              [Z.shopTakeOver]: N
-            }),
-            ref: t ? en : er,
-            tabIndex: false,
-            children: [(0, r.jsx)(j.I, {
-              isFullScreen: t,
-              isLayer: et,
-              onClose: F,
-              handleTransition: $,
-              selectedTab: Q
-            }), (0, r.jsx)("div", {
-              className: i()(R.shopViewWrapper, {
-                [R.visible]: J === B.f7.VISIBLE,
-                [R.in]: J === B.f7.IN,
-                [R.out]: J === B.f7.OUT
+        children: (0, r.jsx)(E.ni, {
+          tab: J,
+          children: (0, r.jsx)(F, {
+            onClose: M,
+            shouldAddEventListener: t && !en,
+            children: (0, r.jsxs)("div", {
+              className: a()(Z.shop, {
+                [w.shopTakeOver]: R
               }),
-              children: (0, r.jsx)(y.Z, {
-                tab: Q,
+              ref: t ? er : el,
+              tabIndex: false,
+              children: [(0, r.jsx)(k.I, {
                 isFullScreen: t,
-                refreshCategories: U,
-                transitionToTab: $,
-                transitionState: J,
-                sortedCategories: V,
-                updateAnalyticsState: X
-              })
-            })]
+                isLayer: en,
+                onClose: M,
+                handleTransition: ee,
+                selectedTab: J
+              }), (0, r.jsx)("div", {
+                className: a()(Z.shopViewWrapper, {
+                  [Z.visible]: $ === A.f7.VISIBLE,
+                  [Z.in]: $ === A.f7.IN,
+                  [Z.out]: $ === A.f7.OUT
+                }),
+                children: (0, r.jsx)(L.Z, {
+                  tab: J,
+                  isFullScreen: t,
+                  refreshCategories: V,
+                  transitionToTab: ee,
+                  transitionState: $,
+                  sortedCategories: z,
+                  updateAnalyticsState: Q
+                })
+              })]
+            })
           })
         })
       })

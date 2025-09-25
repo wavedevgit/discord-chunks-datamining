@@ -33,10 +33,10 @@ function v(e) {
       renderPurchaseConfirmation: S,
       postSuccessGuild: O,
       followupSKUInfo: E,
-      continueSessionToInitialStep: P
+      continueSessionToInitialStep: I
     } = e,
     {
-      activeSubscription: I,
+      activeSubscription: P,
       paymentSources: w,
       paymentSourceId: k,
       selectedPlan: M,
@@ -53,20 +53,20 @@ function v(e) {
       hasSentMessage: H,
       isSendingMessage: G,
       sendGiftMessage: D,
-      claimableRewards: Y,
-      selectedGiftingPromotionReward: z
+      claimableRewards: z,
+      selectedGiftingPromotionReward: Y
     } = (0, f.wD)(),
     {
       confirmationFooter: K,
       maybeOpenMarketingMomentRewardsModal: W
     } = (0, m.zb)(),
     V = null != K,
-    q = (0, d.id)(M, F, Y),
-    J = (0, C.Z)(),
-    X = (0, d.a5)(M),
-    Q = (0, d.tK)(null == z ? true : z.skuId),
+    q = (0, C.id)(M, F, z),
+    J = (0, d.Z)(),
+    X = (0, C.a5)(M),
+    Q = (0, C.tK)(null == Y ? true : Y.skuId),
     $ = (0, g.$)(w, k),
-    ee = F && null != z && X;
+    ee = F && null != Y && X;
   o()(null != M, "Expected plan to selected"), o()(null != T, "Expected selectedSkuId"), o()(null != A, "Step should be set");
   let et = i.useCallback(() => {
     n(), null == v || v()
@@ -86,7 +86,7 @@ function v(e) {
     null != J && null != J.reminderNotice && q && (0, s.wH)(l.z.GIFTING_PROMOTION_REMINDER, J.dismissibleContentVersion, {
       dismissAction: y.L.INDIRECT_ACTION
     })
-  }, [J, q]), t = null != S ? S(M, et, Z) : null != P ? (0, r.jsx)(c.VY, {}) : F ? (0, r.jsx)(c.TB, {
+  }, [J, q]), t = null != S ? S(M, et, Z) : null != I ? (0, r.jsx)(c.VY, {}) : F ? (0, r.jsx)(c.TB, {
     planId: M.id,
     onClose: et
   }) : N.current === M.id ? (0, r.jsx)(c.ZP, {
@@ -101,7 +101,7 @@ function v(e) {
     startingPremiumSubscriptionPlanId: N.current,
     planId: M.id,
     onClose: et,
-    isDowngrade: null != I && (0, _.GY)(I, M.id, a),
+    isDowngrade: null != P && (0, _.GY)(P, M.id, a),
     paymentSourceType: $,
     hideClose: V,
     startingFractionalPremiumEndsAt: R.current
@@ -111,7 +111,7 @@ function v(e) {
     }), null != K && K, ee && null != Q && (0, r.jsx)(j.Z, {
       onClose: et,
       selectedPromotionalDecoPurchaseRecord: Q,
-      selectedGiftingPromotionReward: z
+      selectedGiftingPromotionReward: Y
     })]
   })
 }

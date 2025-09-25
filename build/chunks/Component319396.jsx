@@ -13,23 +13,27 @@ var Chunk541699 = require("./541699.js"),
 function s(e) {
   let {
     item: t,
-    user: n
+    user: n,
+    profileOwner: l
   } = e;
   return (0, i.Q)(t) ? (0, r.jsx)(a.Z, {
     item: t,
-    user: n
+    user: n,
+    profileOwner: l
   }) : null
 }
 
 function c(e) {
   let {
-    items: t
-  } = e, n = l.default.getCurrentUser();
-  return null == n ? null : (0, r.jsx)("div", {
+    items: t,
+    profileOwner: n
+  } = e, i = l.default.getCurrentUser();
+  return null == i ? null : (0, r.jsx)("div", {
     className: o.grid,
     children: t.map(e => (0, r.jsx)(s, {
       item: e,
-      user: n
+      user: i,
+      profileOwner: n
     }, e.skuId))
   })
 }

@@ -111,8 +111,8 @@ function _(e) {
     data: w
   } = (0, d.O)(I), A = i.useRef(w);
   return (A.current = w, i.useEffect(() => {
-    null !== A.current && (0, o.Xf)(E.McO.USER_APPLICATION_IDENTITIES(I))
-  }, [I]), O) ? (0, r.jsx)(C.Z, {}) : (0, r.jsxs)(r.Fragment, {
+    null !== A.current && (0, o.Xf)(C.McO.USER_APPLICATION_IDENTITIES(I))
+  }, [I]), O) ? (0, r.jsx)(E.Z, {}) : (0, r.jsxs)(r.Fragment, {
     children: [s && v && (0, r.jsx)(D, {}), a.map((e, i) => (0, r.jsx)(Z, {
       widget: e,
       user: t,

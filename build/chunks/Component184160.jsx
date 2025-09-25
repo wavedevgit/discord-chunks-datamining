@@ -30,13 +30,13 @@ function m(e) {
     startedPaymentFlowWithPaymentSourcesRef: g
   } = (0, u.JL)(), {
     isGift: b
-  } = (0, c.wD)(), L = null != m ? (0, d.Af)(m) : null, y = null != L ? (0, d.gq)(L.planId) : null, v = null != L ? (0, d.Rd)(L.planId) : null, S = (0, _.Kp)({
+  } = (0, c.wD)(), L = null != m ? (0, C.Af)(m) : null, y = null != L ? (0, C.gq)(L.planId) : null, v = null != L ? (0, C.Rd)(L.planId) : null, S = (0, _.Kp)({
     isTrial: false,
     isGift: b,
     selectedSkuId: x,
     startedPaymentFlowWithPaymentSources: g.current
   });
-  return a()(null != v, "Expected premium type"), (0, r.jsx)(C.Z, {
+  return a()(null != v, "Expected premium type"), (0, r.jsx)(d.Z, {
     premiumType: v,
     titleText: f.intl.string(f.t["7VcWW1"]),
     subtitleText: f.intl.format(f.t.Qk34Ii, {

@@ -30,10 +30,10 @@ function O(e) {
   } = (0, f.KZ)(), [l, O] = i.useState(false), x = (0, s.Wu)([p.Z], () => {
     var e;
     return null != (e = p.Z.getSaveablePendingWidgets()) ? e : []
-  }), P = (0, s.Wu)([p.Z], () => p.Z.getChangedWidgets()), S = (0, s.Wu)([p.Z], () => p.Z.getRemovedWidgets()), I = (0, s.e7)([p.Z], () => p.Z.hasSaveablePendingChanges()), w = (0, s.e7)([p.Z], () => p.Z.isSubmitting), C = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), E = (0, c.Yzy)(I, {
+  }), P = (0, s.Wu)([p.Z], () => p.Z.getChangedWidgets()), S = (0, s.Wu)([p.Z], () => p.Z.getRemovedWidgets()), I = (0, s.e7)([p.Z], () => p.Z.hasSaveablePendingChanges()), w = (0, s.e7)([p.Z], () => p.Z.isSubmitting), E = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), C = (0, c.Yzy)(I, {
     from: {
       opacity: 0,
-      y: 80 * !C
+      y: 80 * !E
     },
     enter: {
       opacity: 1,
@@ -41,7 +41,7 @@ function O(e) {
     },
     leave: {
       opacity: 0,
-      y: 80 * !C
+      y: 80 * !E
     }
   });
   i.useEffect(() => {
@@ -84,7 +84,7 @@ function O(e) {
     N = i.useCallback(() => {
       h.Z.clearPendingWidgets()
     }, []);
-  return E((e, n) => n ? (0, r.jsx)(o.animated.div, {
+  return C((e, n) => n ? (0, r.jsx)(o.animated.div, {
     className: t,
     style: e,
     children: (0, r.jsxs)("section", {
