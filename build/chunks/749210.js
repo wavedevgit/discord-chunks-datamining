@@ -501,9 +501,15 @@ let F = {
   },
   nsfwReturnToSafety(e) {
     let t = (0, c._I)(e);
-    if (null == e || t) return void(0, h.uL)(N.Z5c.FRIENDS);
+    if (null == e || t) return void(0, h.uL)(N.Z5c.FRIENDS, {
+      navigationReplace: false,
+      openChannel: true
+    });
     let n = E.ZP.getDefaultChannel(e);
-    null == n || (0, c.Y3)(n) ? (0, h.uL)(N.Z5c.FRIENDS) : (0, h.uL)(N.Z5c.CHANNEL(e, n.id))
+    null == n || (0, c.Y3)(n) ? (0, h.uL)(N.Z5c.FRIENDS, {
+      navigationReplace: false,
+      openChannel: true
+    }) : (0, h.uL)(N.Z5c.CHANNEL(e, n.id))
   },
   escapeToDefaultChannel(e) {
     let t = E.ZP.getDefaultChannel(e);
