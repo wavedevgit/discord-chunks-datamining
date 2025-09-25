@@ -2,7 +2,7 @@
 /** chunk id: 909123, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => E
+  Z: () => g
 }), require("./388685.js");
 var Chunk179360 = require("./179360.js"),
   Chunk147913 = require("./147913.js"),
@@ -12,13 +12,12 @@ var Chunk179360 = require("./179360.js"),
   Chunk634952 = require("./634952.js"),
   Chunk713081 = require("./713081.js"),
   Chunk905128 = require("./905128.js"),
-  Chunk901005 = require("./901005.js"),
   Chunk158638 = require("./158638.js"),
   Chunk639777 = require("./639777.js"),
   Chunk981631 = require("./981631.js"),
   Chunk647086 = require("./647086.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,7 +25,7 @@ function m(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class g extends Chunk147913.Z {
+class m extends Chunk147913.Z {
   handleSelectedGuildChange() {
     let e = Chunk914010.Z.getGuildId();
     if (null == module || module === Chunk647086._ || module === Chunk981631.I_8) return;
@@ -35,9 +34,6 @@ class g extends Chunk147913.Z {
       guildId: exports.id,
       location: "GuildPowerupsManager"
     }), Chunk634952.Lz.trackExposure({
-      guildId: exports.id,
-      location: "GuildPowerupsManager"
-    }), Chunk901005.G.trackExposure({
       guildId: exports.id,
       location: "GuildPowerupsManager"
     }), (0, Chunk639777.D)(Chunk496675.Z, exports) && (Chunk905128.Z.shouldFetchCatalogForGuild(module) && (0, Chunk713081.Sn)(module), Chunk905128.Z.shouldFetchPowerupsForGuild(module) && (0, Chunk713081.BN)(module)))
@@ -55,14 +51,14 @@ class g extends Chunk147913.Z {
     this.refreshGuildPowerups(t)
   }
   refreshGuildPowerups(e) {
-    true === (0, _.D)(o.Z, a.Z.getGuild(e)) && ((0, c.BN)(e), (0, r.C0)(e))
+    true === (0, f.D)(o.Z, a.Z.getGuild(e)) && ((0, c.BN)(e), (0, r.C0)(e))
   }
   constructor(...e) {
-    super(...e), m(this, "stores", new Map().set(s.Z, this.handleSelectedGuildChange)), m(this, "actions", {
+    super(...e), h(this, "stores", new Map().set(s.Z, this.handleSelectedGuildChange)), h(this, "actions", {
       GUILD_POWERUP_ENTITLEMENTS_CREATE: this.handleEntitlementUpdate.bind(this),
       GUILD_POWERUP_ENTITLEMENTS_DELETE: this.handleEntitlementUpdate.bind(this),
       GUILD_APPLIED_BOOSTS_UPDATE: this.handleAppliedBoostUpdate.bind(this)
     })
   }
 }
-let E = new g
+let g = new m

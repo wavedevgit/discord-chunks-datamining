@@ -2,10 +2,10 @@
 /** chunk id: 72897, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Fh: () => S,
-  Ls: () => T,
-  p6: () => I,
-  rX: () => O
+  Fh: () => A,
+  Ls: () => S,
+  p6: () => T,
+  rX: () => v
 }), require("./704826.js"), require("./35282.js"), require("./413496.js"), require("./433524.js");
 var Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
@@ -13,13 +13,14 @@ var Chunk647438 = require("./647438.js"),
   Chunk211266 = require("./211266.js"),
   Chunk110924 = require("./110924.js"),
   Chunk131951 = require("./131951.js"),
+  Chunk823379 = require("./823379.js"),
   Chunk358085 = require("./358085.js"),
   Chunk145016 = require("./145016.js"),
   Chunk568001 = require("./568001.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx");
 
-function p(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -28,20 +29,20 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
 }
 
-function m(e, t) {
+function g(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -52,39 +53,39 @@ function m(e, t) {
   return n
 }
 
-function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function E(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function E(e) {
+function b(e) {
   return ({
-    [f.h7.AUDIO_INPUT]: {
+    [_.h7.AUDIO_INPUT]: {
       getRawDevices: e => e.getInputDevices(),
-      getAllDeviceIdsSortedByFrecency: e => e.getDeviceIdsSortedByFrecency(f.h7.AUDIO_INPUT),
+      getAllDeviceIdsSortedByFrecency: e => e.getDeviceIdsSortedByFrecency(_.h7.AUDIO_INPUT),
       getCurrentDeviceId: e => e.getInputDeviceId(),
       getSelectedDeviceId: e => e.getSettings().inputDeviceId,
-      getNoDevicesMessage: () => _.intl.string(_.t["/QIjDA"])
+      getNoDevicesMessage: () => p.intl.string(p.t["/QIjDA"])
     },
-    [f.h7.AUDIO_OUTPUT]: {
+    [_.h7.AUDIO_OUTPUT]: {
       getRawDevices: e => e.getOutputDevices(),
-      getAllDeviceIdsSortedByFrecency: e => e.getDeviceIdsSortedByFrecency(f.h7.AUDIO_OUTPUT),
+      getAllDeviceIdsSortedByFrecency: e => e.getDeviceIdsSortedByFrecency(_.h7.AUDIO_OUTPUT),
       getCurrentDeviceId: e => e.getOutputDeviceId(),
       getSelectedDeviceId: e => e.getSettings().outputDeviceId,
-      getNoDevicesMessage: () => _.intl.string(_.t.xlUg0t)
+      getNoDevicesMessage: () => p.intl.string(p.t.xlUg0t)
     },
-    [f.h7.VIDEO_INPUT]: {
+    [_.h7.VIDEO_INPUT]: {
       getRawDevices: e => e.getVideoDevices(),
-      getAllDeviceIdsSortedByFrecency: e => e.getDeviceIdsSortedByFrecency(f.h7.VIDEO_INPUT),
+      getAllDeviceIdsSortedByFrecency: e => e.getDeviceIdsSortedByFrecency(_.h7.VIDEO_INPUT),
       getCurrentDeviceId: e => e.getVideoDeviceId(),
       getSelectedDeviceId: e => e.getSettings().videoDeviceId,
-      getNoDevicesMessage: () => _.intl.string(_.t.WKWARU)
+      getNoDevicesMessage: () => p.intl.string(p.t.WKWARU)
     }
   })[e]
 }
 
-function b() {
+function y() {
   let {
     showDeviceSelectionImprovements: e
   } = (0, Chunk568001.M)({
@@ -93,67 +94,67 @@ function b() {
   return module ? (0, Chunk358085.isWindows)() ? Chunk388032.intl.string(Chunk388032.t.n4dQ2d) : (0, Chunk358085.isMac)() ? Chunk388032.intl.string(Chunk388032.t.aYrsiI) : Chunk388032.intl.string(Chunk388032.t.Q3YKwc) : Chunk388032.intl.string(Chunk388032.t.bBvAEB)
 }
 
-function y(e, t) {
+function O(e, t) {
   let {
     getNoDevicesMessage: n
-  } = E(e);
-  return t.disabled ? n() : t.name.replace(f.fU, b())
-}
-
-function O(e) {
-  var t;
-  return null == (t = new RegExp("^(?<prefix>".concat(b(), ") \\((?<subName>.+)\\)$")).exec(e)) ? true : t.groups
+  } = b(e);
+  return t.disabled ? n() : t.name.replace(_.fU, y())
 }
 
 function v(e) {
+  var t;
+  return null == (t = new RegExp("^(?<prefix>".concat(y(), ") \\((?<subName>.+)\\)$")).exec(e)) ? true : t.groups
+}
+
+function I(e) {
   let {
     getRawDevices: t
-  } = E(e), n = (0, a.e7)([l.Z], () => t(l.Z));
+  } = b(e), n = (0, a.e7)([l.Z], () => t(l.Z));
   return (0, r.useMemo)(() => {
-    let t = h({}, n),
-      r = t[f.w5];
-    return null != r && (t[f.w5] = g(h({}, r), {
-      name: y(e, r)
+    let t = m({}, n),
+      r = t[_.w5];
+    return null != r && (t[_.w5] = E(m({}, r), {
+      name: O(e, r)
     })), t
   }, [e, n])
 }
 
-function I(e) {
-  let t = v(e),
+function T(e) {
+  let t = I(e),
     {
       getCurrentDeviceId: n
-    } = E(e);
+    } = b(e);
   return t[(0, a.e7)([l.Z], () => n(l.Z))]
 }
 
-function T(e, t) {
+function S(e, t) {
   let {
     location: n
   } = t, {
     showDeviceSelectionImprovements: s
-  } = (0, d.V)({
+  } = (0, f.V)({
     location: n
-  }), l = v(e), {
-    getAllDeviceIdsSortedByFrecency: c
-  } = E(e), _ = (0, o.Z)((0, a.Wu)([u.Z], () => c(u.Z))), {
-    id: p
-  } = I(e);
+  }), l = I(e), {
+    getAllDeviceIdsSortedByFrecency: u
+  } = b(e), p = (0, o.Z)((0, a.Wu)([d.Z], () => u(d.Z))), {
+    id: h
+  } = T(e);
   return (0, r.useMemo)(() => {
-    let t = e => e.map(e => l[e]),
+    let t = e => e.map(e => l[e]).filter(c.lm),
       n = Object.keys(l),
-      r = s && e !== f.h7.VIDEO_INPUT ? [f.w5] : [],
-      a = (0, i.intersection)(_, n),
-      o = (0, i.difference)(n, _);
-    return (null == a ? true : a.length) === 0 ? [(0, i.union)(r, [p], a, o), []].map(t) : [(0, i.union)(r, [p], a), (0, i.difference)(o, r, [p])].map(t)
-  }, [l, e, _, p, s])
+      r = s && e !== _.h7.VIDEO_INPUT ? [_.w5] : [],
+      a = (0, i.intersection)(p, n),
+      o = (0, i.difference)(n, p);
+    return (null == a ? true : a.length) === 0 ? [(0, i.union)(r, [h], a, o), []].map(t) : [(0, i.union)(r, [h], a), (0, i.difference)(o, r, [h])].map(t)
+  }, [l, e, p, h, s])
 }
 
-function S(e) {
+function A(e) {
   var t, n;
   let {
     getCurrentDeviceId: r,
     getSelectedDeviceId: i
-  } = E(e), {
+  } = b(e), {
     resolvedId: o,
     selectedId: c
   } = (0, a.cj)([l.Z], () => ({

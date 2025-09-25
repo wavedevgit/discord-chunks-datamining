@@ -1,21 +1,21 @@
 /** Chunk was on 90746 **/
 /** chunk id: 141006, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Eg: () => i,
+  Eg: () => s,
   SK: () => r,
-  tl: () => s
+  tl: () => i
 });
 let r = {
     primary_color: 0xa9c9ff,
     secondary_color: 0xffbbec,
     tertiary_color: 0xffc3a0
   },
-  i = {
+  s = {
     primary_color: 0x9e6bff,
     secondary_color: 0x9fc1ff,
     tertiary_color: null
   },
-  s = [{
+  i = [{
     start: 0xaa3b3b,
     end: 0xff4848,
     name: "fire"

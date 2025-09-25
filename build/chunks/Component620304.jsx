@@ -27,7 +27,7 @@ function j(e) {
   let {
     guild: t,
     withMargin: l
-  } = e, j = (0, b.Z)(t, "GuildPowerupsProgressBar"), x = (0, m.Z)(t.id), C = i.useCallback(() => {
+  } = e, j = (0, b.Z)(t), x = (0, m.Z)(t.id), C = i.useCallback(() => {
     (0, _.Z)(t.id, p.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY)
   }, [t.id]), E = (0, c.e7)([h.Z], () => {
     var e;
