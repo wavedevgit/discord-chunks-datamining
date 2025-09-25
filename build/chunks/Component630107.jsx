@@ -76,7 +76,7 @@ function v(a) {
         children: [(0, s.jsx)("div", {
           className: L.gameTile,
           children: (0, s.jsx)("img", {
-            src: "".concat(k.tD).concat(c, "/dark/").concat(v.value.assets.gameTile),
+            src: "".concat(k.HO).concat(c, "/dark/").concat(v.value.assets.gameTile),
             alt: "",
             className: L.gameTileImg
           })

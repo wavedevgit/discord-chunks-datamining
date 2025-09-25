@@ -2,27 +2,28 @@
 /** chunk id: 46140, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Dp: () => b,
-  Jp: () => A,
-  Lv: () => T,
-  NH: () => g,
+  Dp: () => y,
+  HO: () => g,
+  Jp: () => C,
+  Lv: () => S,
+  NH: () => E,
   Ot: () => d,
   R4: () => _,
   S7: () => Chunk670081.S,
-  Ts: () => E,
-  V6: () => O,
-  V_: () => y,
-  XJ: () => N,
+  Ts: () => b,
+  V6: () => v,
+  V_: () => O,
+  XJ: () => R,
   XZ: () => f,
   a_: () => Chunk438954.a,
   cd: () => p,
   dr: () => u,
-  l$: () => I,
+  l$: () => T,
   tD: () => m,
-  tt: () => S,
-  v6: () => v,
-  vy: () => R,
-  yq: () => C
+  tt: () => A,
+  v6: () => I,
+  vy: () => P,
+  yq: () => N
 }), require("./388685.js");
 var Chunk754700 = require("./754700.js"),
   Chunk758846 = require("./758846.js"),
@@ -49,30 +50,31 @@ var p = function(e) {
   return e.CONSOLE = "CONSOLE", e.DESKTOP = "DESKTOP", e
 }({});
 let h = (0, Chunk544891.K0)(),
-  m = false !== h.indexOf("localhost") || false !== h.indexOf("127.0.0.1") ? "".concat(h, "/_cdn_storage/quests/") : "https://cdn.discordapp.com/quests/";
-var g = function(e) {
+  m = false !== h.indexOf("localhost") || false !== h.indexOf("127.0.0.1") ? "".concat(h, "/_cdn_storage/") : "https://cdn.discordapp.com/",
+  g = m + "quests/";
+var E = function(e) {
   return e.COLLAPSED = "collapsed", e.EXPANDED = "expanded", e.CLOSED = "closed", e.SOFT_DISMISSED = "soft-dismissed", e.RESET_TO_PREVIOUS = "reset-to-previous", e
 }({});
-let E = "545364944258990091",
-  b = "{reward_code}";
-var y = function(e) {
+let b = "545364944258990091",
+  y = "{reward_code}";
+var O = function(e) {
   return e.EXCLUDED_QUEST = "excluded_quest", e.UNKNOWN_QUEST = "unknown_quest", e.NOT_SHAREABLE_QUEST = "not_shareable_quest", e
 }({});
-let O = "1333839522189938740",
-  v = new Set([Chunk497505.Ok.DESKTOP_ACCOUNT_PANEL_AREA, Chunk497505.Ok.MOBILE_HOME_DOCK_AREA]),
-  I = new Set([Chunk754700.X.STREAM_ON_DESKTOP, Chunk754700.X.PLAY_ON_DESKTOP, Chunk754700.X.PLAY_ON_XBOX, Chunk754700.X.PLAY_ON_PLAYSTATION, Chunk754700.X.PLAY_ON_DESKTOP_V2]),
+let v = "1333839522189938740",
+  I = new Set([Chunk497505.Ok.DESKTOP_ACCOUNT_PANEL_AREA, Chunk497505.Ok.MOBILE_HOME_DOCK_AREA]),
   T = new Set([Chunk754700.X.STREAM_ON_DESKTOP, Chunk754700.X.PLAY_ON_DESKTOP, Chunk754700.X.PLAY_ON_XBOX, Chunk754700.X.PLAY_ON_PLAYSTATION, Chunk754700.X.PLAY_ON_DESKTOP_V2]),
   S = new Set([Chunk754700.X.STREAM_ON_DESKTOP, Chunk754700.X.PLAY_ON_DESKTOP, Chunk754700.X.PLAY_ON_XBOX, Chunk754700.X.PLAY_ON_PLAYSTATION, Chunk754700.X.PLAY_ON_DESKTOP_V2]),
-  A = {
+  A = new Set([Chunk754700.X.STREAM_ON_DESKTOP, Chunk754700.X.PLAY_ON_DESKTOP, Chunk754700.X.PLAY_ON_XBOX, Chunk754700.X.PLAY_ON_PLAYSTATION, Chunk754700.X.PLAY_ON_DESKTOP_V2]),
+  C = {
     is_targeted: false
   };
-var C = function(e) {
+var N = function(e) {
     return e.SUGGESTED = "suggested", e.MOST_RECENT = "most_recent", e.EXPIRING_SOON = "expiring_soon", e.RECENTLY_ENROLLED = "recently_enrolled", e
   }({}),
-  N = function(e) {
+  R = function(e) {
     return e.REWARD_VIRTUAL_CURRENCY = "reward_virtual_currency", e.REWARD_COLLECTIBLE = "reward_collectible", e.REWARD_IN_GAME = "reward_in_game", e.TASK_VIDEO = "task_video", e.TASK_PLAY = "task_play", e
   }({});
-let R = [{
+let P = [{
   group: "task",
   filter: "task_play"
 }, {
