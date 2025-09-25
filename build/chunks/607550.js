@@ -6,19 +6,19 @@ require.d(exports, {
 var Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 let o = {},
-  s = {
+  s = () => ({
     data: null,
     status: "not_loaded"
-  };
+  });
 
 function u(e) {
   var t;
-  return null != (t = o[e]) ? t : o[e] = s
+  return null != (t = o[e]) ? t : o[e] = s()
 }
 class c extends Chunk442837.ZP.Store {
   get(e) {
     var t;
-    return null != (t = o[e]) ? t : s
+    return null != (t = o[e]) ? t : s()
   }
   getWishlist(e) {
     return this.get(e).data
