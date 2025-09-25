@@ -24,8 +24,8 @@ var Chunk442837 = require("./442837.js"),
   Chunk480916 = require("./480916.js"),
   Chunk453679 = require("./453679.js"),
   Chunk81643 = require("./81643.js"),
-  Chunk974814 = require("./974814.js"),
   Chunk500496 = require("./500496.js"),
+  Chunk128064 = require("./128064.js"),
   Chunk601964 = require("./601964.js"),
   Chunk592125 = require("./592125.js"),
   Chunk731290 = require("./731290.js"),
@@ -128,18 +128,14 @@ function j(e) {
 }
 
 function M() {
-  let e = (0, Chunk974814.H1)({
-      location: "age-gate-utils"
-    }),
+  let e = (0, Chunk128064.c_)("age-gate-utils"),
     t = (0, Chunk453679.u)("age-gate-utils"),
     n = (0, Chunk81643.sf)();
   return (module || exports) && require
 }
 
 function k() {
-  let e = (0, Chunk974814.s8)({
-      location: "age-gate-utils"
-    }),
+  let e = (0, Chunk128064.pY)("age-gate-utils"),
     t = (0, Chunk81643.L5)(),
     n = (0, Chunk453679.z)("age-gate-utils");
   return (module || require) && exports
@@ -243,7 +239,7 @@ let B = () => {
   Z = e => {
     if (!B() || null == e) returnfalse;
     let t = f.Z.getGuild(e);
-    return null != t && (0, c.Y2)(t) && (0, l.Tz)({
+    return null != t && (0, c.Y2)(t) && (0, s.Tz)({
       guildId: e,
       location: "age-gate-utils"
     })
@@ -279,15 +275,13 @@ function q(e) {
   if (null == e) returnfalse;
   let n = d.Z.didAgree(e.guild_id),
     r = (null == (t = _.default.getCurrentUser()) ? true : t.nsfwAllowed) === false,
-    i = (0, s.H1)({
-      location: "age-gate-utils"
-    }),
+    i = (0, l.c_)("age-gate-utils"),
     a = (0, o.sf)(),
     u = !(n && !r) || a && i;
   if (e.isNSFW() && u) returntrue;
   let p = e.guild_id,
     h = f.Z.getGuild(p);
-  return null != h && ((0, l.Tz)({
+  return null != h && ((0, s.Tz)({
     guildId: p,
     location: "age-gate-utils"
   }) && (0, c.Y2)(h) && u || L(h) && a)
@@ -301,10 +295,8 @@ function X(e) {
       return (null == (e = _.default.getCurrentUser()) ? true : e.nsfwAllowed) === false
     }),
     a = j(null == e ? true : e.guild_id),
-    u = (0, s.s8)({
-      location: "age-gate-utils"
-    }),
-    p = (0, l.j0)({
+    u = (0, l.pY)("age-gate-utils"),
+    p = (0, s.j0)({
       guildId: null == e ? true : e.guild_id,
       location: "age-gate-utils"
     }),
