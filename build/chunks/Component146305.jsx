@@ -47,13 +47,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk730910 = require("./730910.jsx"),
   Chunk103576 = require("./103576.js"),
   Chunk475013 = require("./475013.jsx"),
+  Chunk17699 = require("./17699.jsx"),
   Chunk213956 = require("./213956.jsx"),
+  Chunk450377 = require("./450377.jsx"),
   Chunk702478 = require("./702478.jsx"),
-  Chunk247031 = require("./247031.jsx"),
   Chunk29605 = require("./29605.jsx"),
   Chunk324330 = require("./324330.jsx"),
   Chunk651780 = require("./651780.jsx"),
-  Chunk279542 = require("./279542.jsx"),
   Chunk665324 = require("./665324.jsx"),
   Chunk208150 = require("./208150.jsx"),
   Chunk353398 = require("./353398.jsx"),
@@ -169,7 +169,7 @@ let e_ = {
         };
       case ef.pNK.EMOJI:
         return {
-          section: ef.pNK.EMOJI, impressionName: i.ImpressionNames.GUILD_SETTINGS_EMOJI, label: ex.intl.string(ex.t.sMOuub), element: q.ZP, predicate: () => t.canManageGuildExpressions
+          section: ef.pNK.EMOJI, impressionName: i.ImpressionNames.GUILD_SETTINGS_EMOJI, label: ex.intl.string(ex.t.sMOuub), element: X.ZP, predicate: () => t.canManageGuildExpressions
         };
       case ef.pNK.STICKERS:
         return {
@@ -213,11 +213,11 @@ let e_ = {
         };
       case ef.pNK.SAFETY:
         return {
-          section: ef.pNK.SAFETY, impressionName: i.ImpressionNames.GUILD_SETTINGS_SAFETY, label: ex.intl.string(ex.t["suhY+f"]), ariaLabel: ex.intl.string(ex.t["suhY+f"]), element: W.Z, newIndicatorDismissibleContentTypes: [l.z.COMMUNITY_GUILD_SETTINGS_SAFETY], predicate: () => t.canManageGuild && t.guild.features.has(ef.oNc.COMMUNITY)
+          section: ef.pNK.SAFETY, impressionName: i.ImpressionNames.GUILD_SETTINGS_SAFETY, label: ex.intl.string(ex.t["suhY+f"]), ariaLabel: ex.intl.string(ex.t["suhY+f"]), element: K.Z, newIndicatorDismissibleContentTypes: [l.z.COMMUNITY_GUILD_SETTINGS_SAFETY], predicate: () => t.canManageGuild && t.guild.features.has(ef.oNc.COMMUNITY)
         };
       case ef.pNK.MODERATION:
         return {
-          section: ef.pNK.MODERATION, impressionName: i.ImpressionNames.GUILD_SETTINGS_MODERATION, label: ex.intl.string(ex.t["suhY+f"]), element: J.ZP, predicate: () => t.canManageGuild && !t.guild.features.has(ef.oNc.COMMUNITY)
+          section: ef.pNK.MODERATION, impressionName: i.ImpressionNames.GUILD_SETTINGS_MODERATION, label: ex.intl.string(ex.t["suhY+f"]), element: Y.ZP, predicate: () => t.canManageGuild && !t.guild.features.has(ef.oNc.COMMUNITY)
         };
       case ef.pNK.GUILD_AUTOMOD:
         return {
@@ -232,7 +232,7 @@ let e_ = {
         };
       case ef.pNK.BANS:
         return {
-          section: ef.pNK.BANS, impressionName: i.ImpressionNames.GUILD_SETTINGS_BANS, label: ex.intl.string(ex.t.ZbeITU), element: Y.Z, predicate: () => t.canManageBans
+          section: ef.pNK.BANS, impressionName: i.ImpressionNames.GUILD_SETTINGS_BANS, label: ex.intl.string(ex.t.ZbeITU), element: W.Z, predicate: () => t.canManageBans
         };
       case ef.pNK.COMMUNITY:
         let eE = ex.intl.string(ex.t.ElKTeX);
@@ -266,7 +266,7 @@ let e_ = {
         };
       case ef.pNK.ANALYTICS:
         return {
-          section: ef.pNK.ANALYTICS, impressionName: i.ImpressionNames.GUILD_SETTINGS_ANALYTICS, label: ex.intl.string(ex.t["0wWfUF"]), ariaLabel: ex.intl.string(ex.t["0wWfUF"]), element: K.Z, predicate: () => eN
+          section: ef.pNK.ANALYTICS, impressionName: i.ImpressionNames.GUILD_SETTINGS_ANALYTICS, label: ex.intl.string(ex.t["0wWfUF"]), ariaLabel: ex.intl.string(ex.t["0wWfUF"]), element: q.Z, predicate: () => eN
         };
       case ef.pNK.DISCOVERY_LANDING_PAGE:
         return {
@@ -306,7 +306,7 @@ let e_ = {
         };
       case ef.pNK.GUILD_PREMIUM:
         return {
-          section: ef.pNK.GUILD_PREMIUM, impressionName: i.ImpressionNames.GUILD_SETTINGS_BOOST_STATUS, label: ex.intl.string(ex.t["8+VX4+"]), ariaLabel: ex.intl.string(ex.t["8+VX4+"]), element: Q.Z, className: eb.serverBoostTabItem, icon: (0, r.jsx)(s.$Eu, {
+          section: ef.pNK.GUILD_PREMIUM, impressionName: i.ImpressionNames.GUILD_SETTINGS_BOOST_STATUS, label: ex.intl.string(ex.t["8+VX4+"]), ariaLabel: ex.intl.string(ex.t["8+VX4+"]), element: J.Z, className: eb.serverBoostTabItem, icon: (0, r.jsx)(s.$Eu, {
             color: s.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
             size: "sm",
             className: eb.icon
@@ -314,8 +314,8 @@ let e_ = {
         };
       case ef.pNK.MEMBERS:
         return {
-          section: ef.pNK.MEMBERS, impressionName: i.ImpressionNames.GUILD_SETTINGS_MEMBERS, label: (0, r.jsx)(X.$r, {}), ariaLabel: ex.intl.string(ex.t["9Oq93t"]), element: X.ZP, type: o.bT.CUSTOM, predicate: () => t.canAccessMembersPage, onClick: () => {
-            (0, X.JA)()
+          section: ef.pNK.MEMBERS, impressionName: i.ImpressionNames.GUILD_SETTINGS_MEMBERS, label: (0, r.jsx)(Q.$r, {}), ariaLabel: ex.intl.string(ex.t["9Oq93t"]), element: Q.ZP, type: o.bT.CUSTOM, predicate: () => t.canAccessMembersPage, onClick: () => {
+            (0, Q.JA)()
           }
         };
       case ef.pNK.DELETE:

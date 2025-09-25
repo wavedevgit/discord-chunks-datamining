@@ -9,11 +9,11 @@ require.d(exports, {
 });
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
-  Chunk987707 = require("./987707.js"),
+  Chunk233857 = require("./233857.js"),
   Chunk981631 = require("./981631.js");
 
 function a() {
-  return Chunk987707.Z.isLoading || Chunk987707.Z.isLoadingNextPage
+  return Chunk233857.Z.isLoading || Chunk233857.Z.isLoadingNextPage
 }
 
 function o(e, t) {
