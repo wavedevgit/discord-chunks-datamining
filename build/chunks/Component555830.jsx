@@ -2,11 +2,10 @@
 /** chunk id: 555830, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => g
+  Z: () => m
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk626135 = require("./626135.js"),
   Chunk483517 = require("./483517.jsx"),
@@ -14,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk110453 = require("./110453.js");
 
-function f(e, t, n) {
+function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -23,20 +22,20 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      d(e, t, n[t])
     })
   }
   return e
 }
 
-function p(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -47,83 +46,81 @@ function p(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+function p(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let m = new Set;
+let h = new Set;
 
-function g(e) {
+function m(e) {
   var t;
   let {
-    activity: f,
-    variant: p = "vertical"
-  } = e, [g, E] = i.useState(false), b = "vertical" === p, y = i.useCallback(e => {
+    activity: d,
+    variant: _ = "vertical"
+  } = e, [m, g] = i.useState(false), E = "vertical" === _, b = i.useCallback(e => {
     var t, n;
-    e.stopPropagation(), s.default.track(c.rMx.USER_PROFILE_REPORT_GAME_DETECTION, {
+    e.stopPropagation(), o.default.track(l.rMx.USER_PROFILE_REPORT_GAME_DETECTION, {
       game_detected: true,
       game_detection_correct: true,
-      application_id: null != (t = f.application_id) ? t : null
-    }), (null != f.application_id || "" !== f.name) && m.add(null != (n = f.application_id) ? n : f.name), E(true)
-  }, [f.application_id, f.name]), O = i.useCallback(e => {
+      application_id: null != (t = d.application_id) ? t : null
+    }), (null != d.application_id || "" !== d.name) && h.add(null != (n = d.application_id) ? n : d.name), g(true)
+  }, [d.application_id, d.name]), y = i.useCallback(e => {
     var t;
-    e.stopPropagation(), s.default.track(c.rMx.USER_PROFILE_REPORT_GAME_DETECTION, {
+    e.stopPropagation(), o.default.track(l.rMx.USER_PROFILE_REPORT_GAME_DETECTION, {
       game_detected: true,
       game_detection_correct: false,
-      application_id: null != (t = f.application_id) ? t : null
-    }), (0, o.ZDy)(async () => {
+      application_id: null != (t = d.application_id) ? t : null
+    }), (0, a.ZDy)(async () => {
       let {
         default: e
       } = await n.e("82077").then(n.bind(n, 953848));
-      return t => (0, r.jsx)(e, h(_({}, t), {
-        detectedActivity: f,
+      return t => (0, r.jsx)(e, p(f({}, t), {
+        detectedActivity: d,
         onSubmitted: () => {
-          if (null != f.application_id || "" !== f.name) {
+          if (null != d.application_id || "" !== d.name) {
             var e;
-            m.add(null != (e = f.application_id) ? e : f.name)
+            h.add(null != (e = d.application_id) ? e : d.name)
           }
-          E(true)
+          g(true)
         }
       }))
     })
-  }, [f]);
-  return g ? (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(l.Z, {}), (0, r.jsx)("div", {
-      className: d.container,
-      children: (0, r.jsx)(o.Text, {
+  }, [d]);
+  return m ? (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(s.Z, {}), (0, r.jsx)("div", {
+      className: u.container,
+      children: (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
-        className: d.thankYouText,
-        children: u.intl.string(u.t.X0TrNT)
+        className: u.thankYouText,
+        children: c.intl.string(c.t.X0TrNT)
       })
     })]
-  }) : m.has(null != (t = f.application_id) ? t : f.name) ? null : (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(l.Z, {}), (0, r.jsx)("div", {
-      className: d.container,
+  }) : h.has(null != (t = d.application_id) ? t : d.name) ? null : (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(s.Z, {}), (0, r.jsx)("div", {
+      className: u.container,
       children: (0, r.jsxs)("div", {
-        className: b ? d.contentVertical : d.contentHorizontal,
-        children: [(0, r.jsx)(o.Text, {
+        className: E ? u.contentVertical : u.contentHorizontal,
+        children: [(0, r.jsx)(a.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
-          className: d.prompt,
-          children: u.intl.string(u.t["9g7v6e"])
+          className: u.prompt,
+          children: c.intl.string(c.t["9g7v6e"])
         }), (0, r.jsxs)("div", {
-          className: b ? d.buttonsVertical : d.buttonsHorizontal,
-          children: [(0, r.jsx)(a.zx, {
-            size: a.zx.Sizes.SMALL,
-            look: a.zx.Looks.FILLED,
-            color: a.zx.Colors.PRIMARY,
+          className: E ? u.buttonsVertical : u.buttonsHorizontal,
+          children: [(0, r.jsx)(a.zxk, {
+            text: c.intl.string(c.t.p89ACg),
+            size: "sm",
+            variant: "secondary",
+            onClick: b,
+            fullWidth: E
+          }), (0, r.jsx)(a.zxk, {
+            text: c.intl.string(c.t.gm1Ven),
+            size: "sm",
+            variant: "secondary",
             onClick: y,
-            className: b ? d.buttonVertical : d.buttonHorizontal,
-            children: u.intl.string(u.t.p89ACg)
-          }), (0, r.jsx)(a.zx, {
-            size: a.zx.Sizes.SMALL,
-            look: a.zx.Looks.FILLED,
-            color: a.zx.Colors.PRIMARY,
-            onClick: O,
-            className: b ? d.buttonVertical : d.buttonHorizontal,
-            children: u.intl.string(u.t.gm1Ven)
+            fullWidth: E
           })]
         })]
       })

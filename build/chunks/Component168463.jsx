@@ -105,13 +105,13 @@ function m(e) {
           size: "sm",
           variant: "secondary",
           onClick: g,
-          fullWidth: true
+          fullWidth: m
         }), (0, r.jsx)(a.zxk, {
           text: c.intl.string(c.t.gm1Ven),
           size: "sm",
           variant: "secondary",
           onClick: E,
-          fullWidth: true
+          fullWidth: m
         })]
       })]
     })

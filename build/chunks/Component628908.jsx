@@ -1,176 +1,126 @@
 /** Chunk was on 92229 **/
-/** chunk id: 628908, original params: e,t,n (module,exports,require) **/
+/** chunk id: 628908, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  default: () => _
+  default: () => y
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  o = require.n(Chunk512722),
+  i = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk570140 = require("./570140.js"),
-  Chunk816814 = require("./816814.js"),
   Chunk23645 = require("./23645.js"),
   Chunk600164 = require("./600164.jsx"),
   Chunk454585 = require("./454585.js"),
-  Chunk144114 = require("./144114.js"),
-  Chunk607018 = require("./607018.jsx"),
   Chunk325067 = require("./325067.js"),
   Chunk594174 = require("./594174.js"),
-  Chunk981631 = require("./981631.js"),
-  Chunk815660 = require("./815660.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk255063 = require("./255063.js");
 
-function y(e, t, n) {
+function x(e, t, r) {
   return t in e ? Object.defineProperty(e, t, {
-    value: n,
+    value: r,
     enumerable: true,
     configurable: true,
     writable: true
-  }) : e[t] = n, e
+  }) : e[t] = r, e
 }
-
-function P(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      y(e, t, n[t])
-    })
-  }
-  return e
-}
-let M = e => {
-  var t, n, {
+let j = e => {
+  var t, r, {
       label: s,
-      text: i,
-      children: o
+      text: o,
+      children: i
     } = e,
-    l = function(e, t) {
+    a = function(e, t) {
       if (null == e) return {};
-      var n, r, s = function(e, t) {
+      var r, n, s = function(e, t) {
         if (null == e) return {};
-        var n, r, s = {},
-          i = Object.keys(e);
-        for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (s[n] = e[n]);
+        var r, n, s = {},
+          o = Object.keys(e);
+        for (n = 0; n < o.length; n++) r = o[n], t.indexOf(r) >= 0 || (s[r] = e[r]);
         return s
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var i = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (s[n] = e[n])
+        var o = Object.getOwnPropertySymbols(e);
+        for (n = 0; n < o.length; n++) r = o[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (s[r] = e[r])
       }
       return s
     }(e, ["label", "text", "children"]);
-  return (0, r.jsxs)(u.Z, (t = P({
-    direction: u.Z.Direction.VERTICAL
-  }, l), n = n = {
-    children: [(0, r.jsx)(c.vwX, {
+  return (0, n.jsxs)(h.Z, (t = function(e) {
+    for (var t = 1; t < arguments.length; t++) {
+      var r = null != arguments[t] ? arguments[t] : {},
+        n = Object.keys(r);
+      "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+        return Object.getOwnPropertyDescriptor(r, e).enumerable
+      }))), n.forEach(function(t) {
+        x(e, t, r[t])
+      })
+    }
+    return e
+  }({
+    direction: h.Z.Direction.VERTICAL
+  }, a), r = r = {
+    children: [(0, n.jsx)(l.vwX, {
       tag: "h2",
       children: s
-    }), null != i ? (0, r.jsx)(c.Text, {
+    }), null != o ? (0, n.jsx)(l.Text, {
       variant: "text-md/normal",
-      className: O.sectionBody,
-      children: i
-    }) : null, (0, r.jsx)(u.Z.Child, {
-      wrap: true,
+      className: b.sectionBody,
       children: o
+    }) : null, (0, n.jsx)(h.Z.Child, {
+      wrap: true,
+      children: i
     })]
-  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-    var n = Object.keys(e);
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
+    var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
+      var n = Object.getOwnPropertySymbols(e);
+      r.push.apply(r, n)
     }
-    return n
-  })(Object(n)).forEach(function(e) {
-    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+    return r
+  })(Object(r)).forEach(function(e) {
+    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
   }), t))
 };
-class k extends Chunk647438.PureComponent {
-  renderSMSSection() {
-    let {
-      currentUser: e
-    } = this.props, t = null != this.props.currentUser.phone, n = module.hasFlag(Chunk981631.xW$.MFA_SMS), s = module.hasFlag(Chunk981631.xW$.PARTNER) || module.hasFlag(Chunk981631.xW$.STAFF);
-    return exports ? (0, Chunk951288.jsxs)(M, {
-      label: Chunk388032.intl.string(Chunk388032.t.DZQe29),
-      text: Chunk388032.intl.string(Chunk388032.t.fspJ4O),
-      children: [(0, Chunk951288.jsxs)(Chunk481060.Text, {
-        variant: "text-md/normal",
-        className: Chunk255063.sectionBody,
-        children: [(0, Chunk951288.jsx)("strong", {
-          className: Chunk255063.phoneNumber,
-          children: Chunk388032.intl.format(Chunk388032.t.PXVoEB, {
-            phoneNumber: module.phone
-          })
-        }), (0, Chunk951288.jsx)(Chunk755721.zx, {
-          look: Chunk755721.zx.Looks.LINK,
-          color: Chunk755721.zx.Colors.LINK,
-          size: Chunk755721.zx.Sizes.MIN,
-          className: Chunk255063.linkButton,
-          onClick: this.handleChangePhoneNumber,
-          children: Chunk388032.intl.string(Chunk388032.t.Ulqq6O)
-        })]
-      }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
-        variant: "active",
-        size: "sm",
-        text: Chunk647438 ? Chunk388032.intl.string(Chunk388032.t.Sq6Q1t) : require ? Chunk388032.intl.string(Chunk388032.t.kSbHTE) : Chunk388032.intl.string(Chunk388032.t.DZQe29),
-        onClick: this.handleEnableSMS,
-        disabled: require || Chunk647438
-      })]
-    }) : (0, Chunk951288.jsx)(M, {
-      label: Chunk388032.intl.string(Chunk388032.t.DZQe29),
-      text: Chunk388032.intl.string(Chunk388032.t.fspJ4O),
-      children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
-        variant: "active",
-        size: "sm",
-        text: Chunk647438 ? Chunk388032.intl.string(Chunk388032.t.Sq6Q1t) : Chunk388032.intl.string(Chunk388032.t["O5qS/v"]),
-        onClick: this.handleEnableSMS,
-        disabled: Chunk647438
-      })
-    })
-  }
+class g extends Chunk647438.PureComponent {
   renderBackupCodesSection(e) {
-    return (0, r.jsx)(M, {
-      label: C.intl.string(C.t.qZZUy8),
+    return (0, n.jsx)(j, {
+      label: f.intl.string(f.t.qZZUy8),
       text: e,
-      children: (0, r.jsx)(p.Z, {
+      children: (0, n.jsx)(d.Z, {
         fileContents: this.getDownloadFileContents,
         contentType: "text/plain",
         fileName: "discord_backup_codes.txt",
-        onDownload: () => d.Z.dispatch({
+        onDownload: () => c.Z.dispatch({
           type: "MFA_SEEN_BACKUP_CODE_PROMPT"
         }),
-        children: (0, r.jsx)(c.zxk, {
+        children: (0, n.jsx)(l.zxk, {
           variant: "active",
           size: "sm",
-          text: C.intl.string(C.t.qZZUy8)
+          text: f.intl.string(f.t.qZZUy8)
         })
       })
     })
   }
   renderHeader(e, t) {
-    return (0, r.jsxs)(c.xBx, {
+    return (0, n.jsxs)(l.xBx, {
       separator: false,
-      children: [(0, r.jsxs)(u.Z.Child, {
+      children: [(0, n.jsxs)(h.Z.Child, {
         grow: 1,
         shrink: 1,
-        children: [(0, r.jsx)(c.X6q, {
+        children: [(0, n.jsx)(l.X6q, {
           variant: "heading-lg/semibold",
-          className: O.header,
-          children: m.Z.parse(e)
-        }), (0, r.jsx)(c.Text, {
+          className: b.header,
+          children: p.Z.parse(e)
+        }), (0, n.jsx)(l.Text, {
           variant: "text-xs/normal",
-          className: O.subHeader,
+          className: b.subHeader,
           children: t
         })]
-      }), (0, r.jsx)(u.Z.Child, {
+      }), (0, n.jsx)(h.Z.Child, {
         grow: 0,
-        children: (0, r.jsx)(c.olH, {
+        children: (0, n.jsx)(l.olH, {
           onClick: this.handleCloseModal
         })
       })]
@@ -180,20 +130,20 @@ class k extends Chunk647438.PureComponent {
     let {
       onClose: t
     } = this.props;
-    return (0, r.jsx)(c.sYh, {
+    return (0, n.jsx)(l.sYh, {
       dismissable: true,
-      header: C.intl.string(C.t.mwVXnJ),
-      confirmText: C.intl.string(C.t.MwSEo6),
-      cancelText: C.intl.string(C.t["ETE/oK"]),
+      header: f.intl.string(f.t.mwVXnJ),
+      confirmText: f.intl.string(f.t.MwSEo6),
+      cancelText: f.intl.string(f.t["ETE/oK"]),
       onCancel: () => this.setState({
         showConfirmModal: false
       }),
       onConfirm: () => {
-        d.Z.dispatch({
+        c.Z.dispatch({
           type: "MFA_SEEN_BACKUP_CODE_PROMPT"
         }), t()
       },
-      children: (0, r.jsx)(c.Text, {
+      children: (0, n.jsx)(l.Text, {
         variant: "text-md/normal",
         color: "text-default",
         children: e
@@ -216,11 +166,9 @@ class k extends Chunk647438.PureComponent {
       transitionState: module,
       className: Chunk255063.modal,
       parentComponent: "MFAEnableSuccess",
-      children: [this.renderHeader(Chunk388032.intl.string(Chunk388032.t["681MPT"]), Chunk388032.intl.format(Chunk388032.t.pQioMz, {})), (0, Chunk951288.jsxs)(Chunk481060.hzk, {
+      children: [this.renderHeader(Chunk388032.intl.string(Chunk388032.t["681MPT"]), Chunk388032.intl.format(Chunk388032.t["/Nhi8f"], {})), (0, Chunk951288.jsx)(Chunk481060.hzk, {
         className: Chunk255063.modalInner,
-        children: [this.renderSMSSection(), (0, Chunk951288.jsx)(Chunk481060.$i$, {
-          className: Chunk255063.divider
-        }), this.renderBackupCodesSection(Chunk388032.intl.format(Chunk388032.t.M0Dogo, {}))]
+        children: this.renderBackupCodesSection(Chunk388032.intl.format(Chunk388032.t.M0Dogo, {}))
       }), exports && this.renderConfirmModal(Chunk388032.intl.string(Chunk388032.t.WJFPHB))]
     })
   }
@@ -234,24 +182,16 @@ class k extends Chunk647438.PureComponent {
       transitionState: module,
       className: Chunk255063.modal,
       parentComponent: "MFAEnableSuccess",
-      children: [this.renderHeader(Chunk388032.intl.string(Chunk388032.t.x6ielJ), Chunk388032.intl.format(Chunk388032.t.Xb5JGh, {})), (0, Chunk951288.jsx)(Chunk481060.hzk, {
+      children: [this.renderHeader(Chunk388032.intl.string(Chunk388032.t.x6ielJ), Chunk388032.intl.format(Chunk388032.t["/Nhi8f"], {})), (0, Chunk951288.jsx)(Chunk481060.hzk, {
         className: Chunk255063.modalInner,
         children: this.renderBackupCodesSection(Chunk388032.intl.format(Chunk388032.t.p59QLS, {}))
       }), exports && this.renderConfirmModal(Chunk388032.intl.string(Chunk388032.t.aoNIXF))]
     })
   }
-  openPhoneVerificationModal() {
-    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
-    (0, Chunk481060.h7j)(t => (0, r.jsx)(x.default, P({
-      reason: b.L.MFA_PHONE_UPDATE
-    }, t, e)), {
-      modalKey: Chunk815660.M
-    })
-  }
   constructor(...e) {
-    super(...e), y(this, "state", {
+    super(...e), x(this, "state", {
       showConfirmModal: false
-    }), y(this, "handleCloseModal", () => {
+    }), x(this, "handleCloseModal", () => {
       let {
         onClose: e,
         hasSeenBackupPrompt: t
@@ -259,35 +199,26 @@ class k extends Chunk647438.PureComponent {
       t ? null == e || e() : this.setState({
         showConfirmModal: true
       })
-    }), y(this, "getDownloadFileContents", () => {
+    }), x(this, "getDownloadFileContents", () => {
       let e = this.props.backupCodes.map(e => {
           let {
             consumed: t,
-            code: n
+            code: r
           } = e;
-          return "* ".concat(n.substr(0, 4), "-").concat(n.substr(4), " ").concat(t ? "(".concat(C.intl.string(C.t["ycME+/"]), ")") : "")
+          return "* ".concat(r.substr(0, 4), "-").concat(r.substr(4), " ").concat(t ? "(".concat(f.intl.string(f.t["ycME+/"]), ")") : "")
         }).join("\r\n"),
-        t = C.intl.formatToPlainString(C.t.uYWwh4, {
+        t = f.intl.formatToPlainString(f.t.uYWwh4, {
           email: this.props.currentUser.email
         });
       return "".concat(t, "\r\n\r\n").concat(e)
-    }), y(this, "handleChangePhoneNumber", () => {
-      this.openPhoneVerificationModal()
-    }), y(this, "handleEnableSMS", () => {
-      let {
-        currentUser: e
-      } = this.props;
-      null == e.phone ? this.openPhoneVerificationModal({
-        onAddedPhone: h.Z.enableSMS
-      }) : h.Z.enableSMS()
     })
   }
 }
-let _ = Chunk442837.ZP.connectStores([Chunk594174.default, Chunk325067.Z], () => {
+let y = Chunk442837.ZP.connectStores([Chunk594174.default, Chunk325067.Z], () => {
   let e = Chunk594174.default.getCurrentUser();
-  return o()(null != module, "MFAEnableSuccess: currentUser cannot be undefined"), {
+  return i()(null != module, "MFAEnableSuccess: currentUser cannot be undefined"), {
     currentUser: module,
     backupCodes: Chunk325067.Z.getBackupCodes(),
     hasSeenBackupPrompt: Chunk325067.Z.hasSeenBackupPrompt
   }
-})(k)
+})(g)
