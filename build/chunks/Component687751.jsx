@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 687751, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => E
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -10,15 +10,17 @@ var Chunk481060 = require("./481060.js"),
   Chunk317770 = require("./317770.js"),
   Chunk81643 = require("./81643.js"),
   Chunk681678 = require("./681678.js"),
+  Chunk601964 = require("./601964.js"),
   Chunk944486 = require("./944486.js"),
   Chunk914010 = require("./914010.js"),
   Chunk622822 = require("./622822.js"),
+  Chunk165540 = require("./165540.js"),
   Chunk920644 = require("./920644.jsx"),
   Chunk723359 = require("./723359.js"),
   Chunk981631 = require("./981631.js"),
   Chunk484710 = require("./484710.js");
 
-function m(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,7 +38,7 @@ function m(e) {
   }
   return e
 }
-class b extends Chunk317770.Z {
+class O extends Chunk317770.Z {
   _initialize() {
     Chunk570140.Z.subscribe("CONNECTION_OPEN", this.handleConnectionOpen), Chunk570140.Z.subscribe("CHANNEL_SELECT", this.handleChannelSelect), Chunk570140.Z.subscribe("AGE_GATE_MODAL_OPEN", this.handleAgeGateModalOpen), Chunk570140.Z.subscribe("AGE_GATE_MODAL_CLOSE", this.handleAgeGateModalClose), Chunk570140.Z.subscribe("AGE_GATE_SUCCESS_MODAL_OPEN", this.handleAgeGateSuccess), Chunk570140.Z.subscribe("AGE_GATE_FAILURE_MODAL_OPEN", this.handleAgeGateFailure), Chunk570140.Z.subscribe("GUILD_UPDATE", this.handleGuildUpdate)
   }
@@ -48,7 +50,7 @@ class b extends Chunk317770.Z {
       guildId: t,
       channelId: n
     } = e;
-    (0, d.I8)(t, n)
+    (0, p.I8)(t, n)
   }
   handleConnectionOpen() {
     let e = Chunk914010.Z.getGuildId(),
@@ -63,12 +65,12 @@ class b extends Chunk317770.Z {
       let {
         default: e
       } = await Promise.all([n.e("1716"), n.e("83737")]).then(n.bind(n, 701509));
-      return n => (0, r.jsx)(e, m({
+      return n => (0, r.jsx)(e, _({
         source: t
       }, n))
     }, {
-      modalKey: f.dG,
-      onCloseRequest: h.dG4,
+      modalKey: g.dG,
+      onCloseRequest: m.dG4,
       backdropStyle: (0, o.bj)(t) ? i.fCB.LIGHTBOX : true
     })
   }
@@ -79,7 +81,7 @@ class b extends Chunk317770.Z {
     let {
       underageMessage: t
     } = e;
-    (0, i.oav)(f.dG, e => (0, r.jsx)(p.default, m({
+    (0, i.oav)(g.dG, e => (0, r.jsx)(h.default, _({
       underageMessage: t
     }, e)))
   }
@@ -89,8 +91,8 @@ class b extends Chunk317770.Z {
   handleGuildUpdate(e) {
     let {
       guild: t
-    } = e, n = u.Z.getGuildId();
-    if (null != n && t.id === n && t.owner_configured_content_level === h.V_K.AGE_RESTRICTED) return void(0, d.I8)(t.id, null)
+    } = e, n = d.Z.getGuildId();
+    if (null != n && t.id === n && (t.owner_configured_content_level === m.V_K.AGE_RESTRICTED || (0, f.X)("age_gate_manager") && c.Ov.has(t.nsfw_level))) return void(0, p.I8)(t.id, null)
   }
 }
-let _ = new b
+let E = new O

@@ -2,24 +2,27 @@
 /** chunk id: 601964, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Cx: () => c,
-  EB: () => u,
-  VI: () => l,
-  Y2: () => g,
-  eM: () => f,
-  gM: () => d,
-  kH: () => m,
-  lV: () => h,
-  yn: () => _,
-  zN: () => p
+  Cx: () => d,
+  EB: () => f,
+  Ov: () => u,
+  VI: () => c,
+  Y2: () => b,
+  eM: () => p,
+  gM: () => _,
+  kH: () => E,
+  lV: () => g,
+  yn: () => h,
+  zN: () => m
 }), require("./388685.js");
 var Chunk311929 = require("./311929.js"),
+  Chunk165540 = require("./165540.js"),
   Chunk768581 = require("./768581.js"),
   Chunk709054 = require("./709054.js"),
   Chunk624138 = require("./624138.js"),
   Chunk981631 = require("./981631.js");
-let l = "Guild",
-  c = Object.freeze({
+let c = "Guild",
+  u = new Set([Chunk981631.V_K.EXPLICIT, Chunk981631.V_K.AGE_RESTRICTED]),
+  d = Object.freeze({
     mfaLevel: Chunk981631.BpS.NONE,
     preferredLocale: "en-US",
     afkTimeout: 0,
@@ -58,10 +61,10 @@ let l = "Guild",
     moderatorReporting: null
   });
 
-function u(e, t) {
+function f(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
     r = arguments.length > 3 && true !== arguments[3] && arguments[3];
-  return i.ZP.getGuildIconURL({
+  return a.ZP.getGuildIconURL({
     id: e.id,
     size: t,
     icon: e.icon,
@@ -70,31 +73,32 @@ function u(e, t) {
   })
 }
 
-function d(e) {
-  return (0, o.Zg)(e.name)
+function _(e) {
+  return (0, s.Zg)(e.name)
 }
 
-function f(e, t) {
+function p(e, t) {
   let n = "string" == typeof t ? t : null != t ? t.id : null;
   return e.ownerId === n
 }
 
-function _(e, t) {
-  return (!!t.mfaEnabled || e.mfaLevel !== s.BpS.ELEVATED) && f(e, t)
+function h(e, t) {
+  return (!!t.mfaEnabled || e.mfaLevel !== l.BpS.ELEVATED) && p(e, t)
 }
 
-function p(e) {
+function m(e) {
   return null == e.joinedAt
 }
 
-function h(e) {
-  return a.default.castGuildIdAsEveryoneGuildRoleId(e.id)
+function g(e) {
+  return o.default.castGuildIdAsEveryoneGuildRoleId(e.id)
 }
 
-function m(e, t) {
+function E(e, t) {
   return (0, r.t8)(e, "joinedAt", "string" == typeof t ? new Date(t) : t)
 }
 
-function g(e) {
-  return null != e && (e.ownerConfiguredContentLevel === s.V_K.EXPLICIT || e.ownerConfiguredContentLevel === s.V_K.AGE_RESTRICTED)
+function b(e) {
+  var t;
+  return null != e && ((0, i.X)("guild_record") ? u.has(e.nsfwLevel) : u.has(null != (t = e.ownerConfiguredContentLevel) ? t : l.V_K.DEFAULT))
 }
