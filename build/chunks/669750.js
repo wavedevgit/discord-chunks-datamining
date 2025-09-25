@@ -54,14 +54,16 @@ class h extends Chunk147913.Z {
       let s = o.Z.getChannel(t);
       if (null == s || s.type !== _.d4z.GUILD_VOICE || !(0, i.wQ)(s, true) || null != u.Z.getCurrentHangStatus()) return;
       let p = u.Z.getCurrentDefaultStatus();
-      if ((null == p ? true : p.expiresAt) != null && (null == p ? true : p.expiresAt) >= Date.now()) {
+      if (null != p) {
         if (p.status === f.tN.CUSTOM && null != p.customHangStatus) {
           let {
             status: e,
             emoji: t
           } = p.customHangStatus;
-          if (null != t && !(0, d.K)(t, s)) return;
-          (0, l._s)(e, t)
+          if (null != t && !(0, d.K)(t, s)) {
+            a && (0, l.Zx)(f.tN.CHILLING);
+            return
+          }(0, l._s)(e, t)
         } else if (null != p.status) return void(0, l.Zx)(p.status);
         return
       }

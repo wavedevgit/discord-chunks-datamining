@@ -8,16 +8,17 @@ require("./647438.js");
 var Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk179658 = require("./179658.js"),
-  Chunk230711 = require("./230711.js"),
   Chunk482215 = require("./482215.jsx"),
   Chunk906467 = require("./906467.js"),
   Chunk857192 = require("./857192.js"),
   Chunk594174 = require("./594174.js"),
   Chunk695346 = require("./695346.js"),
+  Chunk313789 = require("./313789.js"),
+  Chunk518596 = require("./518596.jsx"),
   Chunk726985 = require("./726985.js"),
   Chunk981631 = require("./981631.js");
 
-function y(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       a = Object.keys(n);
@@ -36,7 +37,7 @@ function y(e) {
   return e
 }
 
-function O(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -55,17 +56,17 @@ function f() {
     isStaff: t,
     isDeveloper: n,
     isLoggingGatewayEvents: f,
-    isLoggingOverlayEvents: v,
-    isLoggingAnalyticsEvents: E,
-    isAnalyticsDebuggerEnabled: S,
+    isLoggingOverlayEvents: S,
+    isLoggingAnalyticsEvents: v,
+    isAnalyticsDebuggerEnabled: P,
     isTracingRequests: h,
     isForcedCanary: j,
-    isSourceMapsEnabled: P,
-    isIdleStatusIndicatorEnabled: A,
+    isSourceMapsEnabled: A,
+    isIdleStatusIndicatorEnabled: N,
     isAxeEnabled: w,
-    preventPopoutClose: x,
+    preventPopoutClose: _,
     onlyShowPreviewAppCollections: D,
-    disableAppCollectionsCache: N
+    disableAppCollectionsCache: x
   } = (0, Chunk442837.cj)([Chunk857192.default, Chunk594174.default, Chunk906467.Z], () => {
     var e;
     return {
@@ -86,31 +87,40 @@ function f() {
       disableAppCollectionsCache: Chunk857192.default.disableAppCollectionsCache
     }
   }), {
-    horizontalSpacing: _,
-    verticalSpacing: I,
+    horizontalSpacing: I,
+    verticalSpacing: T,
     maxHorizontalSpacing: C,
-    maxVerticalSpacing: T
+    maxVerticalSpacing: L
   } = (0, Chunk482215.i)(), {
-    setHorizontalSpacing: Z,
+    setHorizontalSpacing: R,
     setVerticalSpacing: m
-  } = Chunk482215.i.getState(), k = Chunk695346.zY.useSetting(), R = [];
-  return exports && require && (R.push((0, Chunk951288.jsx)(Chunk481060.sNh, {
+  } = Chunk482215.i.getState(), k = Chunk695346.zY.useSetting(), Z = [];
+  return exports && require && (Z.push((0, Chunk951288.jsx)(Chunk481060.sNh, {
     id: "overrides",
     label: "Overrides",
     action: () => {
-      Chunk230711.Z.open(Chunk981631.oAB.DEVELOPER_OPTIONS, Chunk726985.s6.DEVELOPER_OPTIONS_OVERRIDES_TAB)
+      (0, Chunk518596.openUserSettings)(Chunk313789.n.DEVELOPER_OPTIONS_PANEL, {
+        section: Chunk981631.oAB.DEVELOPER_OPTIONS,
+        subsection: Chunk726985.s6.DEVELOPER_OPTIONS_OVERRIDES_TAB
+      })
     }
-  }, "overrides")), R.push((0, Chunk951288.jsx)(Chunk481060.sNh, {
+  }, "overrides")), Z.push((0, Chunk951288.jsx)(Chunk481060.sNh, {
     id: "manual-triggers",
     label: "Manual Triggers",
     action: () => {
-      Chunk230711.Z.open(Chunk981631.oAB.DEVELOPER_OPTIONS, Chunk726985.s6.DEVELOPER_OPTIONS_MANUAL_TRIGGERS_TAB)
+      (0, Chunk518596.openUserSettings)(Chunk313789.n.DEVELOPER_OPTIONS_PANEL, {
+        section: Chunk981631.oAB.DEVELOPER_OPTIONS,
+        subsection: Chunk726985.s6.DEVELOPER_OPTIONS_MANUAL_TRIGGERS_TAB
+      })
     }
-  }, "manual-triggers")), R.push((0, Chunk951288.jsxs)(Chunk481060.sNh, {
+  }, "manual-triggers")), Z.push((0, Chunk951288.jsxs)(Chunk481060.sNh, {
     id: "developer-flags",
     label: "Developer Flags",
     action: () => {
-      Chunk230711.Z.open(Chunk981631.oAB.DEVELOPER_OPTIONS, Chunk726985.s6.DEVELOPER_OPTIONS_FLAGS_TAB)
+      (0, Chunk518596.openUserSettings)(Chunk313789.n.DEVELOPER_OPTIONS_PANEL, {
+        section: Chunk981631.oAB.DEVELOPER_OPTIONS,
+        subsection: Chunk726985.s6.DEVELOPER_OPTIONS_FLAGS_TAB
+      })
     },
     children: [(0, Chunk951288.jsx)(Chunk481060.S89, {
       id: "tracing-requests",
@@ -140,19 +150,19 @@ function f() {
     }, "always-deliver"), (0, Chunk951288.jsx)(Chunk481060.S89, {
       id: "source-maps",
       label: "Source Maps",
-      checked: P,
+      checked: A,
       action: () => {
         (0, Chunk179658.y)({
-          sourceMapsEnabled: !P
+          sourceMapsEnabled: !A
         })
       }
     }, "source-maps"), (0, Chunk951288.jsx)(Chunk481060.S89, {
       id: "idle-status",
       label: "Idle Status Indicator",
-      checked: A,
+      checked: N,
       action: () => {
         (0, Chunk179658.y)({
-          idleStatusIndicatorEnabled: !A
+          idleStatusIndicatorEnabled: !N
         })
       }
     }, "idle-status"), (0, Chunk951288.jsx)(Chunk481060.S89, {
@@ -167,10 +177,10 @@ function f() {
     }, "accessibility-auditing"), (0, Chunk951288.jsx)(Chunk481060.S89, {
       id: "prevent-popout-close",
       label: "Prevent Popouts From Closing",
-      checked: x,
+      checked: _,
       action: () => {
         (0, Chunk179658.y)({
-          preventPopoutClose: !x
+          preventPopoutClose: !_
         })
       }
     }, "prevent-popout-close"), (0, Chunk951288.jsx)(Chunk481060.S89, {
@@ -185,18 +195,21 @@ function f() {
     }, "preview-collections"), (0, Chunk951288.jsx)(Chunk481060.S89, {
       id: "disable-collections-cache",
       label: "Disable Collections Cache",
-      checked: N,
+      checked: x,
       action: () => {
         (0, Chunk179658.y)({
-          disableAppCollectionsCache: !N
+          disableAppCollectionsCache: !x
         })
       }
     }, "disable-collections-cache")]
-  }, "developer-flags")), R.push((0, Chunk951288.jsxs)(Chunk481060.sNh, {
+  }, "developer-flags")), Z.push((0, Chunk951288.jsxs)(Chunk481060.sNh, {
     id: "logging",
     label: "Logging",
     action: () => {
-      Chunk230711.Z.open(Chunk981631.oAB.DEVELOPER_OPTIONS, Chunk726985.s6.DEVELOPER_OPTIONS_LOGGING_TAB)
+      (0, Chunk518596.openUserSettings)(Chunk313789.n.DEVELOPER_OPTIONS_PANEL, {
+        section: Chunk981631.oAB.DEVELOPER_OPTIONS,
+        subsection: Chunk726985.s6.DEVELOPER_OPTIONS_LOGGING_TAB
+      })
     },
     children: [(0, Chunk951288.jsx)(Chunk481060.S89, {
       id: "gateway-events",
@@ -210,36 +223,39 @@ function f() {
     }, "gateway-events"), (0, Chunk951288.jsx)(Chunk481060.S89, {
       id: "overlay-events",
       label: "Overlay RPC Events",
-      checked: v,
+      checked: S,
       action: () => {
         (0, Chunk179658.y)({
-          logOverlayEvents: !v
+          logOverlayEvents: !S
         })
       }
     }, "overlay-events"), (0, Chunk951288.jsx)(Chunk481060.S89, {
       id: "analytics-events",
       label: "Analytics Events",
-      checked: E,
+      checked: v,
       action: () => {
         (0, Chunk179658.y)({
-          logAnalyticsEvents: !E
+          logAnalyticsEvents: !v
         })
       }
     }, "analytics-events"), (0, Chunk951288.jsx)(Chunk481060.S89, {
       id: "analytics-debugger",
       label: "Analytics Debugger",
-      checked: S,
+      checked: P,
       action: () => {
         (0, Chunk179658.y)({
-          analyticsDebuggerEnabled: !S
+          analyticsDebuggerEnabled: !P
         })
       }
     }, "analytics-debugger")]
-  }, "logging")), R.push((0, Chunk951288.jsx)(Chunk481060.sNh, {
+  }, "logging")), Z.push((0, Chunk951288.jsx)(Chunk481060.sNh, {
     id: "design-tools",
     label: "Design Tools",
     action: () => {
-      Chunk230711.Z.open(Chunk981631.oAB.DEVELOPER_OPTIONS, Chunk726985.s6.DEVELOPER_OPTIONS_DESIGN_TOOLS_TAB)
+      (0, Chunk518596.openUserSettings)(Chunk313789.n.DEVELOPER_OPTIONS_PANEL, {
+        section: Chunk981631.oAB.DEVELOPER_OPTIONS,
+        subsection: Chunk726985.s6.DEVELOPER_OPTIONS_DESIGN_TOOLS_TAB
+      })
     },
     children: (0, Chunk951288.jsx)(Chunk481060.S89, {
       id: "layout-debugging",
@@ -251,29 +267,29 @@ function f() {
         })
       }
     }, "layout-debugging")
-  }, "design-tools")), module && (R.push((0, Chunk951288.jsx)(Chunk481060.II_, {
+  }, "design-tools")), module && (Z.push((0, Chunk951288.jsx)(Chunk481060.II_, {
     id: "horizontal-spacing",
     label: "Horizontal Spacing",
-    control: (e, t) => (0, a.jsx)(r._wy, O(y({}, e), {
-      ref: t,
-      value: _,
-      minValue: 0,
-      maxValue: C,
-      onChange: e => Z(e),
-      renderValue: e => "".concat(Math.round(e), "px"),
-      "aria-label": "Horizontal Spacing"
-    }))
-  }, "horizontal-spacing")), R.push((0, Chunk951288.jsx)(Chunk481060.II_, {
-    id: "vertical-spacing",
-    label: "Vertical Spacing",
-    control: (e, t) => (0, a.jsx)(r._wy, O(y({}, e), {
+    control: (e, t) => (0, a.jsx)(r._wy, y(E({}, e), {
       ref: t,
       value: I,
       minValue: 0,
-      maxValue: T,
+      maxValue: C,
+      onChange: e => R(e),
+      renderValue: e => "".concat(Math.round(e), "px"),
+      "aria-label": "Horizontal Spacing"
+    }))
+  }, "horizontal-spacing")), Z.push((0, Chunk951288.jsx)(Chunk481060.II_, {
+    id: "vertical-spacing",
+    label: "Vertical Spacing",
+    control: (e, t) => (0, a.jsx)(r._wy, y(E({}, e), {
+      ref: t,
+      value: T,
+      minValue: 0,
+      maxValue: L,
       onChange: e => m(e),
       "aria-label": "Horizontal Spacing",
       renderValue: e => "".concat(Math.round(e), "px")
     }))
-  }, "vertical-spacing")))), 0 === R.length ? null : R
+  }, "vertical-spacing")))), 0 === Z.length ? null : Z
 }
