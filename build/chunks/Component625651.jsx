@@ -72,10 +72,10 @@ function _(e) {
     m = I(e, ["size", "title", "body", "warningText", "error", "isLoading", "onDeactivate"]);
   return (0, r.jsxs)(c.Modal, (t = y({}, m), n = n = {
     size: o,
-    title: k.intl.formatToPlainString(v.default.iEBw1N, {
+    title: k.intl.formatToPlainString(x.default.iEBw1N, {
       perk: a
     }),
-    subtitle: k.intl.formatToPlainString(v.default["7o0K+/"], {
+    subtitle: k.intl.formatToPlainString(x.default["7o0K+/"], {
       perk: a
     }),
     actions: [{
@@ -84,7 +84,7 @@ function _(e) {
       onClick: m.onClose
     }, {
       variant: "critical-primary",
-      text: k.intl.string(v.default.PYPdl5),
+      text: k.intl.string(x.default.PYPdl5),
       loading: d,
       onClick: f
     }],
@@ -93,7 +93,7 @@ function _(e) {
       children: [(0, r.jsx)(s.Text, {
         color: "text-danger",
         variant: "eyebrow",
-        children: k.intl.string(v.default.OVt5CA)
+        children: k.intl.string(x.default.OVt5CA)
       }), (0, r.jsx)(s.Text, {
         className: j.warningText,
         tag: "span",
@@ -127,7 +127,7 @@ function h(e) {
     onDeactivate: h,
     error: T,
     isLoading: w
-  } = (0, O.ZP)(t, n), {
+  } = (0, v.ZP)(t, n), {
     onClose: S
   } = c, E = o.useCallback(e => {
     h(e).then(() => {
@@ -149,10 +149,10 @@ function h(e) {
       let e;
       switch (t.skuId) {
         case a.If:
-          e = g > 0 ? k.intl.formatToPlainString(v.default["4jSvr6"], {
+          e = g > 0 ? k.intl.formatToPlainString(x.default["4jSvr6"], {
             perk: t.title,
             memberCount: g
-          }) : k.intl.formatToPlainString(v.default.cavtEh, {
+          }) : k.intl.formatToPlainString(x.default.cavtEh, {
             perk: t.title
           });
           break;
@@ -160,19 +160,19 @@ function h(e) {
           e = m ? (0, r.jsx)(s.Text, {
             color: "text-danger",
             variant: "text-sm/semibold",
-            children: k.intl.string(v.default.hN75yc)
+            children: k.intl.string(x.default.hN75yc)
           }) : (0, r.jsx)(s.Text, {
             color: "text-danger",
             variant: "text-sm/semibold",
-            children: k.intl.string(v.default.Du91RU)
+            children: k.intl.string(x.default.Du91RU)
           });
           break;
         case a.MB:
         case a.Vk:
-          e = k.intl.string(v.default.Vf2ZcX);
+          e = k.intl.string(x.default.Vf2ZcX);
           break;
         default:
-          e = k.intl.formatToPlainString(v.default["4jSvr6"], {
+          e = k.intl.formatToPlainString(x.default["4jSvr6"], {
             perk: t.title,
             memberCount: n
           })
@@ -181,21 +181,21 @@ function h(e) {
         children: [e, (0, r.jsx)(s.Text, {
           color: "text-danger",
           variant: "text-sm/semibold",
-          children: p ? k.intl.string(v.default.TkNA7e) : k.intl.string(v.default.M4XL5u)
+          children: p ? k.intl.string(x.default.TkNA7e) : k.intl.string(x.default.M4XL5u)
         })]
       })), e
     }, [t, g, n, m, p])
   }(t, n);
   return (0, m.$)(t, n, m.w.DEACTIVATE), (0, r.jsx)(_, y({
-    size: n.type === x.Us.LEVEL ? "md" : "sm",
+    size: n.type === O.Us.LEVEL ? "md" : "sm",
     title: n.title,
     body: (() => {
       switch (n.type) {
-        case x.Us.LEVEL:
+        case O.Us.LEVEL:
           return (0, r.jsx)(g.Z, {
             powerup: n
           });
-        case x.Us.PERK:
+        case O.Us.PERK:
           return (0, r.jsx)(p.m, {
             className: j.image,
             powerup: n

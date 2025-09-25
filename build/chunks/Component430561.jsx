@@ -121,7 +121,7 @@ function D(e) {
   });
   return a ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(g.Z, {
-      className: O.titleWrapper,
+      className: O.titleWrapperWithHint,
       children: (0, r.jsx)(c.P3F, {
         className: O.titleWrapperClickable,
         onClick: () => {
@@ -200,14 +200,16 @@ function j(e) {
   return (0, r.jsx)(c.ua7, {
     text: i,
     "aria-label": i,
-    children: e => (0, r.jsx)(c.P3F, S(I({}, e), {
-      className: o()(O.button, n && O.active),
-      onClick: () => {
-        a || (0, u.xh)(t)
-      },
-      children: (0, r.jsx)(c.k5M, {
-        size: "xxs",
-        color: n ? l.Z.colors.BG_BRAND : l.Z.colors.INTERACTIVE_ACTIVE
+    children: e => (0, r.jsx)("div", S(I({}, e), {
+      children: (0, r.jsx)(c.P3F, {
+        className: o()(O.button, n && O.active),
+        onClick: () => {
+          a || (0, u.xh)(t)
+        },
+        children: (0, r.jsx)(c.k5M, {
+          size: "xxs",
+          color: n ? l.Z.colors.BG_BRAND : l.Z.colors.INTERACTIVE_ACTIVE
+        })
       })
     }))
   })

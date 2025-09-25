@@ -152,7 +152,7 @@ let b = [{
   version: 13,
   run(e) {
     let t = false;
-    return o.K.get("hidePremiumPromo") && g(e, i.z.NAGBAR_NOTICE_PREMIUM_PROMO) && (t = true), o.K.get("hidePremiumTier2TrialEnding") && g(e, i.z.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING) && (t = true), o.K.get("hidePremiumReactivateNotice") && g(e, i.z.NAGBAR_NOTICE_PREMIUM_REACTIVATE) && (t = true), m(e, c.v6.INVITE_SPLASH_GUILD_HEADER_TOOLTIP, i.z.GUILD_HEADER_INVITE_SPLASH) && (t = true), t
+    return o.K.get("hidePremiumPromo") && g(e, i.z.NAGBAR_NOTICE_PREMIUM_PROMO) && (t = true), o.K.get("hidePremiumTier2TrialEnding") && g(e, i.z.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING) && (t = true), o.K.get("hidePremiumReactivateNotice") && g(e, i.z.NAGBAR_NOTICE_PREMIUM_REACTIVATE) && (t = true), t
   },
   cleanup() {
     Chunk433517.K.remove("hidePremiumPromo"), Chunk433517.K.remove("hidePremiumTier2TrialEnding"), Chunk433517.K.remove("hidePremiumReactivateNotice")

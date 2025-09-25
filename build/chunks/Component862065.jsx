@@ -1,20 +1,21 @@
 /** Chunk was on 88856 **/
 /** chunk id: 862065, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => l
-});
+  default: () => u
+}), require("./388685.js"), require("./457542.js");
 var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk625651 = require("./625651.jsx"),
   Chunk744993 = require("./744993.js"),
   Chunk440589 = require("./440589.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk593997 = require("./593997.js");
 
-function l(e) {
+function u(e) {
   var {
     guildId: t,
     gameInstance: n
-  } = e, l = function(e, t) {
+  } = e, u = function(e, t) {
     if (null == e) return {};
     var n, r, o = function(e, t) {
       if (null == e) return {};
@@ -29,7 +30,8 @@ function l(e) {
     }
     return o
   }(e, ["guildId", "gameInstance"]);
-  return (0, r.jsx)(o.f, function(e) {
+  let [d, f] = o.useState(false), [m, b] = o.useState(true);
+  return (0, r.jsx)(a.f, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -50,19 +52,25 @@ function l(e) {
     size: "sm",
     title: n.name,
     body: (0, r.jsx)("div", {
-      className: s.imageContainer,
+      className: l.imageContainer,
       children: (0, r.jsx)("img", {
         alt: "",
         src: "",
-        className: s.image
+        className: l.image
       })
     }),
-    warningText: c.intl.string(i.default.oHNuWl),
-    isLoading: false,
+    warningText: s.intl.string(c.default.oHNuWl),
+    isLoading: d,
+    error: m,
     onDeactivate: () => {
-      (0, a.s9)(t, n.planId, n.entitlementId).then(() => {
-        l.onClose()
+      b(true), f(true), (0, i.s9)(t, n.planId, n.entitlementId).then(() => {
+        u.onClose()
+      }).catch(e => {
+        var t;
+        b(null != (t = e.body.message) ? t : e.message)
+      }).finally(() => {
+        f(false)
       })
     }
-  }, l))
+  }, u))
 }

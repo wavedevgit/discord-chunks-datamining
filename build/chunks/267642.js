@@ -4,30 +4,29 @@
 require.d(exports, {
   A3: () => S,
   FZ: () => T,
-  Hl: () => J,
+  Hl: () => Q,
   Je: () => N,
   Jh: () => L,
-  KK: () => K,
+  KK: () => W,
   Oe: () => I,
-  Qi: () => V,
+  Qi: () => F,
   Ro: () => O,
-  _k: () => B,
+  _k: () => G,
   _p: () => D,
-  aq: () => U,
+  aq: () => k,
   cP: () => R,
   e9: () => w,
-  ee: () => q,
-  f2: () => M,
-  gZ: () => F,
+  ee: () => z,
+  gZ: () => Z,
   ge: () => x,
   ig: () => A,
-  nL: () => Y,
+  nL: () => H,
   nW: () => P,
   tb: () => j,
-  tl: () => z,
-  vx: () => k,
-  y4: () => W,
-  yw: () => H
+  tl: () => K,
+  vx: () => M,
+  y4: () => Y,
+  yw: () => V
 }), require("./583741.js"), require("./415506.js"), require("./388685.js"), require("./642613.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711);
@@ -66,7 +65,7 @@ let v = [Chunk981631.Eu4.NONE, Chunk981631.Eu4.TIER_1, Chunk981631.Eu4.TIER_2, C
   I = v.slice().reverse(),
   T = e => {
     var t;
-    return e === g.Eu4.NONE ? g.Eu4.TIER_1 : null == (t = Z.find(t => t.tier === e)) ? true : t.nextTier
+    return e === g.Eu4.NONE ? g.Eu4.TIER_1 : null == (t = B.find(t => t.tier === e)) ? true : t.nextTier
   },
   S = (e, t) => null != t && t.features.has(g.oNc.MORE_STICKERS) && e === g.Eu4.TIER_3 ? a.D.MAX_STICKER_SLOTS : b.$8[e],
   A = e => b.pH[e],
@@ -283,27 +282,23 @@ function j(e, t) {
   return null == t || null != e && e >= t
 }
 
-function M(e, t) {
-  return j(e.premiumTier, t)
-}
-
-function k(e) {
+function M(e) {
   return i().values(e).filter(e => e.isAvailable())
 }
 
-function U(e) {
+function k(e) {
   let {
     fractionalState: t
   } = e, n = d.Z.getPremiumTypeSubscription();
   u.Z.hasFetched || u.Z.isFetching || (0, o.X8)();
-  let r = k(u.Z.boostSlots),
+  let r = M(u.Z.boostSlots),
     i = null == n ? true : n.isPausedOrPausePending,
     a = r.length > 0;
   if (i && t === b.a$.NONE && !a) return y.intl.string(y.t.mOWsFx);
   let {
     numAvailableGuildBoostSlots: s,
     numCanceledGuildBoostSlots: l
-  } = Object.values(u.Z.boostSlots).reduce((e, t) => (z(t) && e.numCanceledGuildBoostSlots++, t.isAvailable() && e.numAvailableGuildBoostSlots++, e), {
+  } = Object.values(u.Z.boostSlots).reduce((e, t) => (K(t) && e.numCanceledGuildBoostSlots++, t.isAvailable() && e.numAvailableGuildBoostSlots++, e), {
     numAvailableGuildBoostSlots: 0,
     numCanceledGuildBoostSlots: 0
   });
@@ -316,11 +311,11 @@ function U(e) {
   return h.uV(n.additionalPlans) > c ? y.intl.string(y.t.x25mZW) : y.intl.string(y.t["W/bb8f"])
 }
 
-function G(e) {
+function U(e) {
   return e.sort((e, t) => null != e.endsAt && null != t.endsAt ? e.endsAt.getTime() - t.endsAt.getTime() : false)
 }
 
-function B(e, t) {
+function G(e, t) {
   var n;
   if ((null == (n = c.Z.getGuild(t)) ? true : n.features.has(g.oNc.PREMIUM_TIER_3_OVERRIDE)) === true) return 0;
   let r = L(t),
@@ -328,7 +323,7 @@ function B(e, t) {
     a = e.filter(e => null != e.endsAt);
   return i - (e.length - a.length)
 }
-let Z = [{
+let B = [{
   tier: Chunk981631.Eu4.TIER_3,
   amount: Chunk981631.oCV[Chunk981631.Eu4.TIER_3],
   nextTier: null
@@ -342,10 +337,10 @@ let Z = [{
   nextTier: Chunk981631.Eu4.TIER_2
 }];
 
-function F(e, t) {
-  let n = B(e, t);
+function Z(e, t) {
+  let n = G(e, t);
   if (n > 0) {
-    let r = G(e).filter(e => null != e.endsAt),
+    let r = U(e).filter(e => null != e.endsAt),
       i = r.length - n;
     i < 0 && m.Z.addBreadcrumb({
       category: "premium",
@@ -362,7 +357,7 @@ function F(e, t) {
   return null
 }
 
-function V(e, t) {
+function F(e, t) {
   let n = A(t),
     r = v.indexOf(t);
   if (false === r) return 0;
@@ -372,56 +367,56 @@ function V(e, t) {
   return Math.max(0, n - e.slice(a, o).length)
 }
 
-function H(e, t, n) {
-  return false === v.indexOf(n) ? 0 : Math.max(0, Y(e) - t.length)
+function V(e, t, n) {
+  return false === v.indexOf(n) ? 0 : Math.max(0, H(e) - t.length)
 }
 
-function Y(e) {
+function H(e) {
   var t, n;
   let r = b.XB + (null != (n = null == (t = e.premiumFeatures) ? true : t.additionalSoundSlots) ? n : 0);
   return Math.max(e.features.has(g.oNc.MORE_SOUNDBOARD) ? b.w1 : b.XB, r)
 }
 
-function W(e) {
+function Y(e) {
   var t, n;
   let r = E.xD + (null != (n = null == (t = e.premiumFeatures) ? true : t.additionalEmojiSlots) ? n : 0);
   return Math.max(e.features.has(g.oNc.MORE_EMOJI) ? E.IE : E.xD, r)
 }
 
-function K(e, t) {
+function W(e, t) {
   let n = (0, s.I)(e.id).available;
   return Math.max(0, g.oCV[t] - n)
 }
 
-function z(e) {
+function K(e) {
   var t;
   return (null == (t = e.subscription) ? true : t.status) === g.O0b.CANCELED || e.canceled
 }
 
-function q(e) {
+function z(e) {
   var t;
   return null != (t = I.find(t => e >= g.oCV[t])) ? t : g.Eu4.NONE
 }
 
-function X(e) {
+function q(e) {
   var t;
   return null != (t = v.find(t => e < g.oCV[t])) ? t : g.Eu4.TIER_3
 }
-let Q = {
+let X = {
   [Chunk981631.Eu4.NONE]: 0,
   [Chunk981631.Eu4.TIER_1]: 1 / 3,
   [Chunk981631.Eu4.TIER_2]: 2 / 3,
   [Chunk981631.Eu4.TIER_3]: 1
 };
 
-function J(e) {
+function Q(e) {
   let t = (0, l.I)(e.id),
-    n = q(t),
-    r = X(t),
+    n = z(t),
+    r = q(t),
     i = g.oCV[n],
     a = (t - i) / (g.oCV[r] - i),
-    o = Q[n],
-    s = Q[r];
+    o = X[n],
+    s = X[r];
   return {
     fillFactor: n === g.Eu4.TIER_3 ? 1 : a * (s - o) + o,
     totalAvailableBoostsCount: t
