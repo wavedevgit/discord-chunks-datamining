@@ -23,26 +23,26 @@ let C = e => {
   let {
     transitionState: t,
     onClose: n
-  } = e, C = (0, r.useRef)((0, h.sf)()).current, {
-    selectedDestinations: M,
-    messageText: y,
-    canSend: x,
-    setSend: w,
-    updateMessage: S,
+  } = e, C = (0, l.useRef)((0, p.sf)()).current, {
+    selectedDestinations: y,
+    messageText: x,
+    canSend: M,
+    setSend: S,
+    updateMessage: w,
     updateChannel: E
-  } = (0, o.o)(C), [I, O] = r.useState(false), {
+  } = (0, s.o)(C), [I, O] = l.useState(false), {
     colors: j,
     chassisMixAmount: k,
     gradientAngle: v
-  } = (0, f.Ig)(), P = (0, l.e7)([c.Z], () => c.Z.theme), W = (0, r.useMemo)(() => ({
+  } = (0, f.Ig)(), P = (0, r.e7)([c.Z], () => c.Z.theme), T = (0, l.useMemo)(() => ({
     colors: j.map(e => e.replace("#", "")),
     gradient_angle: v,
     base_mix: k,
-    base_theme: (0, p.h)(P)
-  }), [j, v, k, P]), T = r.useMemo(() => (0, d.kt)({
+    base_theme: (0, b.h)(P)
+  }), [j, v, k, P]), D = l.useMemo(() => (0, d.kt)({
     id: "1",
-    type: s.d.DM
-  }), []), D = r.useMemo(() => (0, i.e5)(function(e) {
+    type: o.d.DM
+  }), []), R = l.useMemo(() => (0, i.e5)(function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         a = Object.keys(n);
@@ -60,23 +60,23 @@ let C = e => {
     }
     return e
   }({}, (0, u.ZP)({
-    channelId: T.id,
+    channelId: D.id,
     content: ""
-  }))), [T]);
-  (0, r.useEffect)(() => {
-    S(D), E(T), O(true)
-  }, [D, T, S, E]);
-  let L = r.useCallback(async () => {
-    if (!x()) return Promise.reject();
-    await (0, g.O)(M, W, y), _.default.track(m.rMx.CUSTOM_THEME_SHARED, {
-      num_destinations: M.length
+  }))), [D]);
+  (0, l.useEffect)(() => {
+    w(R), E(D), O(true)
+  }, [R, D, w, E]);
+  let Z = l.useCallback(async () => {
+    if (!M()) return Promise.reject();
+    await (0, g.O)(y, T, x), _.default.track(m.rMx.CUSTOM_THEME_SHARED, {
+      num_destinations: y.length
     }), await n()
-  }, [W, M, y, x, n]);
-  return ((0, r.useEffect)(() => {
-    w(L)
-  }, [L, w]), I) ? (0, a.jsx)(h.fm.Provider, {
+  }, [T, y, x, M, n]);
+  return ((0, l.useEffect)(() => {
+    S(Z)
+  }, [Z, S]), I) ? (0, a.jsx)(p.fm.Provider, {
     value: C,
-    children: (0, a.jsx)(b._, {
+    children: (0, a.jsx)(h._, {
       transitionState: t,
       onClose: n
     })

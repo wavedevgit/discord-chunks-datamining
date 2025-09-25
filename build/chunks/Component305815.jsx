@@ -60,7 +60,7 @@ function b(e) {
     }), (0, a.jsx)(s.zxk, {
       variant: "secondary",
       size: "sm",
-      text: N.intl.string(N.t.MAS7uL),
+      text: m ? N.intl.string(N.t.hjaYYm) : N.intl.string(N.t.MAS7uL),
       loading: "applying" === o,
       disabled: "claimed" !== o || m,
       onClick: i,
@@ -78,7 +78,7 @@ function T(e) {
     preview: x,
     location: N,
     sourceQuestContent: y
-  } = e, T = r.useMemo(() => (0, f.xn)(s.config), [s]), A = (0, l.e7)([p.default], () => p.default.getCurrentUser()), [w, P] = function(e) {
+  } = e, T = r.useMemo(() => (0, C.xn)(s.config), [s]), A = (0, l.e7)([p.default], () => p.default.getCurrentUser()), [w, P] = function(e) {
     let {
       product: n,
       isFetching: t
@@ -87,7 +87,7 @@ function T(e) {
       let e = n.items.find(e => e.type === i.Z.AVATAR_DECORATION);
       return null != e ? e : null
     }, [n, t]), l = async () => {
-      if (null == a) return C.Z.addBreadcrumb({
+      if (null == a) return g.Z.addBreadcrumb({
         message: "Error saving avatar decoration; it is null"
       }), false;
       (0, o.cV)(a);
@@ -99,7 +99,7 @@ function T(e) {
     return [a, l]
   }(null != (t = null == T ? true : T.skuId) ? t : null), E = (null == (n = s.userStatus) ? true : n.claimedAt) != null, k = !x && !E, [D, R] = r.useState(k ? "loading" : "claimed");
   r.useEffect(() => {
-    k && (0, g.QB)(s.id, h.y$.CROSS_PLATFORM, N).then(() => R("claimed")).catch(() => R("error"))
+    k && (0, f.QB)(s.id, h.y$.CROSS_PLATFORM, N).then(() => R("claimed")).catch(() => R("error"))
   }, [s, N, k]);
   let L = true === x && null === w && (null == T ? true : T.skuId) !== "",
     M = null == w && true !== x,

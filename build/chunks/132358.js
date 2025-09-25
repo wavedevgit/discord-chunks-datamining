@@ -1,14 +1,6 @@
 /** Chunk was on 67261 **/
 /** chunk id: 132358, original params: e,t,n (module,exports,require) **/
 module.exports = {
-  modal: "modal__62280",
-  header: "header__62280",
-  titleLine: "titleLine__62280",
-  title: "title__62280",
-  closeButton: "closeButton__62280",
-  footerWithMessage: "footerWithMessage__62280",
-  footerWarningWrapper: "footerWarningWrapper__62280",
-  footerButtons: "footerButtons__62280",
   destinationRow: "destinationRow__62280",
   disabled: "disabled__62280",
   identity: "identity__62280",
@@ -24,7 +16,6 @@ module.exports = {
   noResults: "noResults__62280",
   noResultsImg: "noResultsImg__62280",
   actions: "actions__62280",
-  sendWithMessage: "sendWithMessage__62280",
   messageInput: "messageInput__62280",
-  forwardPreviewWrapper: "forwardPreviewWrapper__62280"
+  slowmodeWarning: "slowmodeWarning__62280"
 }

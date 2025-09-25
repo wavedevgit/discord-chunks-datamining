@@ -17,7 +17,7 @@ let m = {
     async sendForward(e, t, n) {
       let a = c.Z.getChannel(t),
         l = c.Z.getChannel(e.channel_id),
-        m = (null == n ? true : n.isICYMIGameContentForwarding) ? i.KF : null == l ? true : l.guild_id;
+        m = (null == n ? true : n.isICYMIGameContentForwarding) ? s.KF : null == l ? true : l.guild_id;
       if (null == l && null == m) throw Error("Unable to find original channel for message");
       if (null == a) throw Error("Unable to find destination channel for message");
       let g = o.ZP.parse(a, ""),
@@ -31,11 +31,11 @@ let m = {
             embed_indices: n.onlyEmbedIndices
           } : true
         };
-      await s.Z.sendMessage(a.id, g, false, {
+      await i.Z.sendMessage(a.id, g, false, {
         messageReference: f,
         location: h.dy.FORWARDING,
         eagerDispatch: false
-      }), (null == n ? true : n.withMessage) == null || (0, d.pU)(a, u.Z) || await s.Z.sendMessage(a.id, o.ZP.parse(a, n.withMessage), false, {
+      }), (null == n ? true : n.withMessage) == null || (0, d.pU)(a, u.Z) || await i.Z.sendMessage(a.id, o.ZP.parse(a, n.withMessage), false, {
         location: h.dy.FORWARDING
       })
     },

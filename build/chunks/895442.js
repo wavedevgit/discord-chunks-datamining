@@ -8,10 +8,10 @@ var Chunk592125 = require("./592125.js"),
   Chunk594174 = require("./594174.js"),
   Chunk981631 = require("./981631.js");
 
-function i(e) {
+function s(e) {
   if (!e.isPrivate()) {
     let t = l.Z.getGuild(e.guild_id);
-    return null != t && t.features.has(s.oNc.INTERNAL_EMPLOYEE_ONLY)
+    return null != t && t.features.has(i.oNc.INTERNAL_EMPLOYEE_ONLY)
   }
   return e.recipients.every(e => {
     let t = r.default.getUser(e);
@@ -23,8 +23,8 @@ function o(e, t) {
   var n;
   if (!(null == (n = r.default.getCurrentUser()) ? true : n.isStaff())) returnfalse;
   let l = a.Z.getChannel(e.channel_id);
-  return null != l && !!i(l) && t.some(e => {
+  return null != l && !!s(l) && t.some(e => {
     let t = a.Z.getChannel(e);
-    return !(null == t || t.isPrivate()) && !i(t)
+    return !(null == t || t.isPrivate()) && !s(t)
   })
 }

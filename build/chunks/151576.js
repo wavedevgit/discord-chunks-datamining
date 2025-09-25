@@ -2,7 +2,6 @@
 /** chunk id: 151576, original params: e,t,n (module,exports,require) **/
 module.exports = {
   forwardPreview: "forwardPreview__68334",
-  quote: "quote__68334",
   contentWrapper: "contentWrapper__68334",
   attachmentRow: "attachmentRow__68334",
   forwardPreviewMessage: "forwardPreviewMessage__68334",

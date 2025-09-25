@@ -27,7 +27,7 @@ let u = () => {
   (0, Chunk647438.useEffect)(() => {
     f(require)
   }, [f, require]);
-  let p = (0, Chunk647438.useCallback)(t => {
+  let b = (0, Chunk647438.useCallback)(t => {
       let n = e.findIndex(e => {
         let {
           type: n,
@@ -42,7 +42,7 @@ let u = () => {
       }
       d([...e, t])
     }, [module, d]),
-    h = module.length >= exports;
+    p = module.length >= exports;
   return (0, Chunk951288.jsx)(Chunk757853.F, {
     paddingBottom: 16,
     paddingTop: 16,
@@ -50,9 +50,9 @@ let u = () => {
     rowMode: Chunk757853.G.TOGGLE,
     message: u,
     originChannel: c,
-    handleToggleDestination: p,
+    handleToggleDestination: b,
     selectedDestinations: module,
-    disableSelection: h,
+    disableSelection: p,
     rowClassName: Chunk924585.rowContainer
   })
 }

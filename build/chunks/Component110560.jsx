@@ -112,7 +112,8 @@ function F(e) {
       return n => (0, r.jsx)(e, G(k({}, n), {
         quest: t,
         preview: o,
-        sourceQuestContent: c
+        sourceQuestContent: c,
+        questContentPosition: a
       }))
     }
     let {

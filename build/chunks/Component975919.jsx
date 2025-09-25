@@ -20,8 +20,8 @@ let d = e => {
     send: d,
     sending: _,
     canSend: f
-  } = (0, o.C$)();
-  return (0, a.jsx)(r.Modal, {
+  } = (0, s.C$)();
+  return (0, a.jsx)(l.Modal, {
     title: c.intl.string(u.default.zgFs8P),
     actions: [{
       variant: "primary",
@@ -32,8 +32,8 @@ let d = e => {
     }],
     transitionState: t,
     onClose: n,
-    input: (0, a.jsx)(l.K, {}),
+    input: (0, a.jsx)(r.K, {}),
     actionBarInput: (0, a.jsx)(i.J, {}),
-    children: (0, a.jsx)(s.d, {})
+    children: (0, a.jsx)(o.d, {})
   })
 }

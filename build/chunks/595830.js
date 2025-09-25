@@ -4,7 +4,7 @@ require.d(exports, {
   O: () => _
 }), require("./415506.js"), require("./388685.js");
 var Chunk991637 = require("./991637.js"),
-  r = require.n(Chunk991637),
+  l = require.n(Chunk991637),
   Chunk904245 = require("./904245.js"),
   Chunk957730 = require("./957730.js"),
   Chunk987509 = require("./987509.js"),
@@ -14,13 +14,13 @@ var Chunk991637 = require("./991637.js"),
 let d = async (e, t, n) => {
   let a = i.Z.getChannel(n);
   if (null == a) throw Error("Unable to find destination channel for message");
-  let r = s.ZP.parse(a, t);
-  return o.Z.sendMessage(a.id, r, false, {
+  let l = o.ZP.parse(a, t);
+  return s.Z.sendMessage(a.id, l, false, {
     location: c.dy.SHARE_CUSTOM_THEME,
     eagerDispatch: false,
     sharedCustomTheme: e
   })
 }, _ = async (e, t, n) => {
-  let a = (await Promise.all(e.map(l.qx))).filter(u.lm);
-  return r()(a.map(async e => d(t, n, e)))
+  let a = (await Promise.all(e.map(r.qx))).filter(u.lm);
+  return l()(a.map(async e => d(t, n, e)))
 }

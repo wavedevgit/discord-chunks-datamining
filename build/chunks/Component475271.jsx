@@ -61,7 +61,7 @@ let c = {
         captchaSessionId: u,
         options: p
       } = e;
-    return new Promise((e, f) => {
+    return new Promise((e, m) => {
       (0, a.ZDy)(async () => {
         let {
           default: a
@@ -75,7 +75,7 @@ let c = {
           captchaService: d,
           sitekey: c,
           onReject: e => {
-            e === o.CaptchaError.CANCEL ? f(new o.CaptchaCancelError) : f(Error("cancel captcha"))
+            e === o.CaptchaError.CANCEL ? m(new o.CaptchaCancelError) : m(Error("cancel captcha"))
           }
         }, t, p, n))
       }, {

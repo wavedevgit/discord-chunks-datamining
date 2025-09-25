@@ -49,8 +49,8 @@ function W(e) {
     rewardCode: a,
     hasTieredRewardCodes: o,
     sourceQuestContent: s
-  } = e, i = (0, d.wj)((0, h.ZP)()), u = (0, I.n)({
-    location: k.dr.REWARD_CODE_MODAL,
+  } = e, i = (0, d.wj)((0, h.ZP)()), u = (0, N.n)({
+    location: Z.dr.REWARD_CODE_MODAL,
     questConfig: n.config
   }).enabled, m = (0, p.dQu)(c.Z.colors.INTERACTIVE_NORMAL).hex(), f = u ? m : n.config.colors.primary, b = {
     border: "1px solid ".concat(f),
@@ -79,7 +79,7 @@ function W(e) {
   }), {
     hasError: v,
     isLoading: y
-  } = (0, Z.d7)();
+  } = (0, k.d7)();
   return (0, r.jsxs)("div", {
     style: b,
     className: B.rewardTile,
@@ -98,8 +98,8 @@ function W(e) {
           [B.rewardTileAssetLoading]: y || v
         }),
         quest: n,
-        questContent: N.jn.QUEST_BAR_V2,
-        location: k.dr.REWARD_CODE_MODAL,
+        questContent: I.jn.QUEST_BAR_V2,
+        location: Z.dr.REWARD_CODE_MODAL,
         sourceQuestContent: s
       })]
     }), (0, r.jsxs)("div", {
@@ -127,7 +127,7 @@ function Q(e) {
   let t = (0, i.e7)([P.Z], () => P.Z.getQuest(e.questId));
   return (null == t && null != e.previewQuest && (t = e.previewQuest), null != t) ? (0, r.jsx)(q.A, {
     questOrQuests: t,
-    questContent: N.jn.REWARD_MODAL,
+    questContent: I.jn.REWARD_MODAL,
     sourceQuestContent: e.sourceQuestContent,
     children: n => {
       var a, o;
@@ -176,11 +176,11 @@ function U(e) {
     questContentPosition: d,
     impressionRef: h,
     preview: O,
-    sourceQuestContent: I
+    sourceQuestContent: N
   } = e, q = (0, f.Z)(() => {
     var e;
     return (null == (e = l.userStatus) ? true : e.claimedAt) != null
-  }), D = E.r.build(l.config).rewardPlatforms, Q = D.length > 1, [U, z] = a.useState(Q ? null : D[0]), H = a.useRef(new s.qA), F = a.useRef(null), [Y, X] = a.useState(null), $ = (0, i.e7)([w.Z], () => w.Z.useReducedMotion), G = (0, i.e7)([j.Z], () => j.Z.hidePersonalInformation), {
+  }), D = E.r.build(l.config).rewardPlatforms, Q = D.length > 1, [U, z] = a.useState(Q ? null : D[0]), H = a.useRef(new s.qA), F = a.useRef(null), [$, Y] = a.useState(null), X = (0, i.e7)([w.Z], () => w.Z.useReducedMotion), G = (0, i.e7)([j.Z], () => j.Z.hidePersonalInformation), {
     questStoreRewardCode: J,
     isFetchingRewardCode: V,
     isClaimingReward: K
@@ -195,7 +195,7 @@ function U(e) {
     fetchCode: eo,
     hasError: el,
     setHasError: es
-  } = (0, R.u)({
+  } = (0, R.uL)({
     isClaimingReward: K,
     isFetchingRewardCode: V,
     quest: l,
@@ -281,23 +281,23 @@ function U(e) {
       renderOptionLabel: e => {
         let t = function(e) {
           switch (e) {
-            case N.y$.CROSS_PLATFORM:
+            case I.y$.CROSS_PLATFORM:
               return (0, r.jsx)(p.Che, {
                 className: B.platformSelectionOptionIcon
               });
-            case N.y$.PC:
+            case I.y$.PC:
               return (0, r.jsx)(p.pzj, {
                 className: B.platformSelectionOptionIcon
               });
-            case N.y$.PLAYSTATION:
+            case I.y$.PLAYSTATION:
               return (0, r.jsx)(p.Tsp, {
                 className: B.platformSelectionOptionIcon
               });
-            case N.y$.SWITCH:
+            case I.y$.SWITCH:
               return (0, r.jsx)(p.aPH, {
                 className: B.platformSelectionOptionIcon
               });
-            case N.y$.XBOX:
+            case I.y$.XBOX:
               return (0, r.jsx)(p.Mko, {
                 className: B.platformSelectionOptionIcon
               })
@@ -327,7 +327,7 @@ function U(e) {
           questContent: c,
           questContentPosition: d,
           questContentCTA: S.jZ.COPY_REWARD_CODE,
-          sourceQuestContent: I
+          sourceQuestContent: N
         })
       }
     })
@@ -343,8 +343,8 @@ function U(e) {
       quest: l,
       idx: 0
     }), [et, l, null == en ? true : en.tier]),
-    ew = a.useMemo(() => (null == eh ? true : eh.redemptionLink) == null || "" === eh.redemptionLink ? null : (null == en ? true : en.code) == null || "" === en.code ? eh.redemptionLink : eh.redemptionLink.replace(k.Dp, encodeURIComponent(en.code)), [eh, en]),
-    eC = (0, R.G)({
+    ew = a.useMemo(() => (null == eh ? true : eh.redemptionLink) == null || "" === eh.redemptionLink ? null : (null == en ? true : en.code) == null || "" === en.code ? eh.redemptionLink : eh.redemptionLink.replace(Z.Dp, encodeURIComponent(en.code)), [eh, en]),
+    eC = (0, R.G$)({
       claimCode: ea,
       fetchCode: eo,
       hasError: ei,
@@ -355,19 +355,19 @@ function U(e) {
       requiresPlatformSelection: er,
       selectedPlatformType: U,
       redemptionLink: ew,
-      sourceQuestContent: I
+      sourceQuestContent: N
     }),
     ev = er && K,
     ey = !ev && (er && null == U || ef),
     ex = null != ew && "" !== ew,
     ej = M.intl.string(M.t["23SS+/"]);
   er ? ej = M.intl.string(M.t.SLZMi4) : !er && ei ? ej = M.intl.string(M.t.gNJHHh) : ex && (ej = M.intl.string(M.t["+zx47e"]));
-  let e_ = !$ && null != en && !q && !ei,
+  let e_ = !X && null != en && !q && !ei,
     eO = null != eb && et,
     eS = (0, A.Gd)(l.id);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.O_, {
-      ref: X,
+      ref: Y,
       className: B.confettiCanvas,
       environment: H.current
     }), (0, r.jsx)("div", {
@@ -385,14 +385,14 @@ function U(e) {
             "data-migration-pending": true,
             className: B.closeButton,
             onClick: () => o()
-          }), !eO && (0, r.jsx)(Z.p, {
-            source: k.dr.REWARD_CODE_MODAL,
+          }), !eO && (0, r.jsx)(k.p, {
+            source: Z.dr.REWARD_CODE_MODAL,
             questId: l.id,
             children: (0, r.jsx)(W, {
               quest: l,
               rewardCode: en,
               hasTieredRewardCodes: et,
-              sourceQuestContent: I
+              sourceQuestContent: N
             })
           }), (0, r.jsxs)("div", {
             className: B.modalContent,
@@ -432,7 +432,7 @@ function U(e) {
       })
     }), e_ && (0, r.jsx)(v.Z, {
       confettiTarget: F.current,
-      confettiCanvas: Y,
+      confettiCanvas: $,
       sprites: L.CA,
       colors: L.Br
     })]

@@ -1,7 +1,7 @@
 /** Chunk was on 67261 **/
 /** chunk id: 518027, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  J: () => p
+  J: () => b
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -14,31 +14,31 @@ var Chunk951288 = require("./951288.js"),
   Chunk135102 = require("./135102.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk337269 = require("./337269.js");
-let p = () => {
+let b = () => {
   let {
     message: e,
     channel: t,
     updateMessageText: n
-  } = (0, Chunk135102.C$)(), p = (0, Chunk442837.e7)([Chunk703558.Z], () => Chunk703558.Z.getDraft(module.channel_id, Chunk703558.d.ChannelMessage)), [h, b] = Chunk647438.useState(() => (0, Chunk752305.eK)(p)), {
+  } = (0, Chunk135102.C$)(), b = (0, Chunk442837.e7)([Chunk703558.Z], () => Chunk703558.Z.getDraft(module.channel_id, Chunk703558.d.ChannelMessage)), [p, h] = Chunk647438.useState(() => (0, Chunk752305.eK)(b)), {
     textValue: g,
     richValue: m
-  } = h;
+  } = p;
   (0, Chunk647438.useEffect)(() => {
     require(g)
   }, [require, g]);
   let C = Chunk647438.useCallback((t, n, a) => {
-      b({
+      h({
         textValue: n,
         richValue: a
-      }), s.Z.saveDraft(e.channel_id, n, c.d.ChannelMessage)
+      }), o.Z.saveDraft(e.channel_id, n, c.d.ChannelMessage)
     }, [module]),
-    [M, y] = Chunk647438.useState(false),
-    x = Chunk647438.useCallback(() => y(true), []),
-    w = Chunk647438.useCallback(() => y(false), []);
+    [y, x] = Chunk647438.useState(false),
+    M = Chunk647438.useCallback(() => x(true), []),
+    S = Chunk647438.useCallback(() => x(false), []);
   (0, Chunk647438.useEffect)(() => () => {
     Chunk430742.Z.clearDraft(module.channel_id, Chunk703558.d.ChannelMessage)
   }, [module]);
-  let S = async () => ({
+  let w = async () => ({
     shouldClear: true,
     shouldRefocus: false
   });
@@ -50,10 +50,10 @@ let p = () => {
     textValue: g,
     richValue: m,
     type: Chunk541716.Ie.SHARE_CUSTOM_CLIENT_THEME_INPUT,
-    onBlur: w,
-    onFocus: x,
-    focused: M,
-    onSubmit: S,
+    onBlur: S,
+    onFocus: M,
+    focused: y,
+    onSubmit: w,
     parentModalKey: Chunk135102.tj,
     autoCompletePosition: "bottom",
     emojiPickerCloseOnModalOuterClick: true,
