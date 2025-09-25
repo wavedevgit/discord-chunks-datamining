@@ -1,4 +1,4 @@
-/** Chunk was on 21376 **/
+/** Chunk was on 64523 **/
 /** chunk id: 81509, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -20,7 +20,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk980989 = require("./980989.js");
 
-function b(e) {
+function x(e) {
   let {
     subscribers: t
   } = e;
@@ -46,7 +46,7 @@ function b(e) {
   })
 }
 
-function x(e) {
+function b(e) {
   let {
     guildName: t,
     guildIcon: n,
@@ -69,7 +69,7 @@ function x(e) {
         variant: "heading-lg/semibold",
         color: "header-primary",
         children: t
-      }), null != l && (0, r.jsx)(b, {
+      }), null != l && (0, r.jsx)(x, {
         subscribers: l
       })]
     })]
@@ -178,13 +178,13 @@ function _(e) {
     guildName: g,
     guildAvatarUrl: p,
     subscriberCount: f,
-    emojisToShow: b,
+    emojisToShow: x,
     notShownEmojiCount: _,
     storePageUrl: O
   } = o.details;
   return (0, r.jsxs)("div", {
     className: h.guildCard,
-    children: [(0, r.jsx)(x, {
+    children: [(0, r.jsx)(b, {
       guildIcon: u,
       guildName: g,
       guildAvatarUrl: p,
@@ -194,7 +194,7 @@ function _(e) {
       quoteAttribution: l,
       quoteAttributionTitle: a
     }), (0, r.jsx)(v, {
-      emojisToShow: b,
+      emojisToShow: x,
       notShownEmojiCount: _,
       storePageUrl: O
     })]

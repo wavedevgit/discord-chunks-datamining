@@ -1,4 +1,4 @@
-/** Chunk was on 21376 **/
+/** Chunk was on 64523 **/
 /** chunk id: 372444, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -49,10 +49,10 @@ function p(e) {
     headerColor: f,
     buttonProps: h
   } = e, {
-    analyticsLocations: b
+    analyticsLocations: x
   } = (0, c.ZP)(o.Z.GUILD_BOOSTING_UPSELL_BANNER);
   return (0, r.jsx)(c.Gt, {
-    value: b,
+    value: x,
     children: (0, r.jsxs)("div", {
       className: l()(m.banner, u),
       children: [(0, r.jsx)("img", {

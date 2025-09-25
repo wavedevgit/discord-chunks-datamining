@@ -1,4 +1,4 @@
-/** Chunk was on 21376 **/
+/** Chunk was on 64523 **/
 /** chunk id: 220685, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -34,12 +34,12 @@ let C = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
       guild: l,
       canEnable: a
     } = e, c = (0, v.YB)(l.id), {
-      loading: b,
+      loading: x,
       updateSubscriptionsSettings: j
     } = (0, v.QV)(), [I, S] = i.useState(l.features.has(_.oNc.CREATOR_STORE_PAGE)), [T, P] = i.useState(null != (t = null == c ? true : c.store_page_primary_color) ? t : E), [w, R] = i.useState(null == c ? true : c.store_page_trailer_url), D = null == w || null != w.match(N), [Z, A] = i.useState(null != (n = null == c ? true : c.store_page_show_subscriber_count) && n), L = i.useRef(null == c ? true : c.store_page_slug).current, k = I !== l.features.has(_.oNc.CREATOR_STORE_PAGE) || (null == c ? true : c.store_page_primary_color) == null && T !== E || (null == c ? true : c.store_page_primary_color) != null && T !== (null == c ? true : c.store_page_primary_color) || w !== (null == c ? true : c.store_page_trailer_url) || null != Z && Z !== (null == c ? true : c.store_page_show_subscriber_count), G = async () => {
       o()(null != c, "Settings must be defined");
       let e = {};
-      I !== l.features.has(_.oNc.CREATOR_STORE_PAGE) && (e.store_page_enabled = I), ((null == c ? true : c.store_page_primary_color) == null && T !== E || (null == c ? true : c.store_page_primary_color) != null && T !== (null == c ? true : c.store_page_primary_color)) && (e.store_page_primary_color = T), w !== (null == c ? true : c.store_page_trailer_url) && (e.store_page_trailer_url = w), Z !== (null == c ? true : c.store_page_show_subscriber_count) && (e.store_page_show_subscriber_count = Z), Object.keys(e).length > 0 && (await j(l.id, e), "store_page_enabled" in e && x.default.track(_.rMx.GUILD_ROLE_SUBSCRIPTION_STORE_PAGE_TOGGLED, function(e) {
+      I !== l.features.has(_.oNc.CREATOR_STORE_PAGE) && (e.store_page_enabled = I), ((null == c ? true : c.store_page_primary_color) == null && T !== E || (null == c ? true : c.store_page_primary_color) != null && T !== (null == c ? true : c.store_page_primary_color)) && (e.store_page_primary_color = T), w !== (null == c ? true : c.store_page_trailer_url) && (e.store_page_trailer_url = w), Z !== (null == c ? true : c.store_page_show_subscriber_count) && (e.store_page_show_subscriber_count = Z), Object.keys(e).length > 0 && (await j(l.id, e), "store_page_enabled" in e && b.default.track(_.rMx.GUILD_ROLE_SUBSCRIPTION_STORE_PAGE_TOGGLED, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -187,7 +187,7 @@ let C = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
         className: y.contentRegion,
         children: k && (0, r.jsx)(u.oXn, {
           children: (0, r.jsx)(g.Z, {
-            submitting: b,
+            submitting: x,
             onReset: () => {
               var e, t;
               S(l.features.has(_.oNc.CREATOR_STORE_PAGE)), P(null != (e = null == c ? true : c.store_page_primary_color) ? e : E), R(null == c ? true : c.store_page_trailer_url), A(null != (t = null == c ? true : c.store_page_show_subscriber_count) && t)

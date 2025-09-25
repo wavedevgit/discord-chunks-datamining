@@ -1,4 +1,4 @@
-/** Chunk was on 21376 **/
+/** Chunk was on 64523 **/
 /** chunk id: 853714, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -139,7 +139,7 @@ let G = Chunk647438.forwardRef((e, t) => {
       switch (t.targetType) {
         case T.KFR.CHANNEL:
         case T.KFR.CHANNEL_OVERWRITE:
-          let i = x.Z.getChannel(t.targetId),
+          let i = b.Z.getChannel(t.targetId),
             s = j.Z.getGuild(l);
           if (null != i && null != s) return (0, m.jW)(e, async () => {
             let {
@@ -395,7 +395,7 @@ class U extends Chunk647438.PureComponent {
       }, null != (n = e.key) ? n : t)
     }), Z(this, "renderUserQuickSelectItem", (e, t) => {
       var n;
-      if (e.user instanceof b.Z) {
+      if (e.user instanceof x.Z) {
         let t = e.user;
         return (0, r.jsxs)(d.lo1, {
           value: t.id,
@@ -456,7 +456,7 @@ class U extends Chunk647438.PureComponent {
           valueLabel: P.intl.string(P.t.an9Ry8),
           value: null
         },
-        m = [u, ...a].map(e => e instanceof b.Z ? function(e) {
+        m = [u, ...a].map(e => e instanceof x.Z ? function(e) {
           return {
             label: e.username,
             value: e.id,

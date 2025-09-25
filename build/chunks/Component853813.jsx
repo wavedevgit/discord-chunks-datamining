@@ -1,4 +1,4 @@
-/** Chunk was on 21376 **/
+/** Chunk was on 64523 **/
 /** chunk id: 853813, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -17,8 +17,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk626135 = require("./626135.js"),
   Chunk823379 = require("./823379.js"),
   Chunk243730 = require("./243730.js"),
-  Chunk946724 = require("./946724.js"),
   Chunk999382 = require("./999382.js"),
+  Chunk103576 = require("./103576.js"),
   Chunk130341 = require("./130341.js"),
   Chunk981975 = require("./981975.jsx"),
   Chunk660962 = require("./660962.jsx"),
@@ -36,14 +36,14 @@ function I(e) {
       selectedSection: I,
       setSelectedSection: S
     } = e,
-    T = (0, a.e7)([h.Z], () => h.Z.guild, []);
+    T = (0, a.e7)([x.Z], () => x.Z.guild, []);
   s()(null != T, "guildId cannot be null here");
   let {
     role: P,
     permissionSearchQuery: w
-  } = (0, a.cj)([h.Z], () => ({
-    role: h.Z.getRole(n),
-    permissionSearchQuery: h.Z.getPermissionSearchQuery()
+  } = (0, a.cj)([x.Z], () => ({
+    role: x.Z.getRole(n),
+    permissionSearchQuery: x.Z.getPermissionSearchQuery()
   }), [n]);
   i.useEffect(() => {
     null == P && l(null)
@@ -51,7 +51,7 @@ function I(e) {
   let R = (0, a.e7)([m.Z], () => m.Z.getHighestRole(T), [T]),
     D = (0, a.e7)([m.Z], () => !m.Z.isRoleHigher(T, R, P)),
     Z = i.useRef(null),
-    A = (0, a.e7)([b.Z], () => b.Z.getProps().integrations),
+    A = (0, a.e7)([h.Z], () => h.Z.getProps().integrations),
     L = {
       role: P,
       editRoleId: n
@@ -64,7 +64,7 @@ function I(e) {
       let {
         role: n,
         editRoleId: r
-      } = k.current, i = (0, x.UT)(I), l = null != (t = null == (e = f.Z.getRoleMemberCount(T.id)) ? true : e[r]) ? t : 0;
+      } = k.current, i = (0, b.UT)(I), l = null != (t = null == (e = f.Z.getRoleMemberCount(T.id)) ? true : e[r]) ? t : 0;
       g.default.track(N.rMx.ROLE_PAGE_VIEWED, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},

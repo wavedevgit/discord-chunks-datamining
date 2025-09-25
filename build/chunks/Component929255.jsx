@@ -100,8 +100,8 @@ let y = e => {
     sortedCategories: y,
     setCategoryRef: L
   } = e, j = (0, d.FF)("CollectiblesBrowse"), k = l.useRef(null), I = (0, g.S)(e => e.hasDefaultFilters()), P = (0, u.sp)(), {
-    handlePageChange: A,
-    currentPage: B
+    handlePageChange: B,
+    currentPage: A
   } = (0, m.h)({
     scrollerRef: T,
     sortedCategories: y
@@ -114,8 +114,8 @@ let y = e => {
       page_size: null == P ? true : P.pageSize,
       cta_name: "catalog page ".concat(e),
       page_type: "catalog"
-    }), A(e)
-  }, [P, A]), R = l.useRef(null);
+    }), B(e)
+  }, [P, B]), R = l.useRef(null);
   return l.useEffect(() => {
     if (!n || !a) return;
     let e = e => {
@@ -192,13 +192,13 @@ let y = e => {
         tab: h
       }, h) : (0, r.jsx)(u.k0, {
         newValue: {
-          pageIndex: B
+          pageIndex: A
         },
         children: (0, r.jsx)(f.Z, {
           isFullScreen: t,
           sortedCategories: y,
           setCategoryRef: L,
-          currentPage: B,
+          currentPage: A,
           handlePageChange: N
         })
       })]

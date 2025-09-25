@@ -1,4 +1,4 @@
-/** Chunk was on 21376 **/
+/** Chunk was on 64523 **/
 /** chunk id: 399829, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -91,7 +91,7 @@ class R extends Chunk647438.Component {
     let s = {
         numRequired: 0,
         y: 0,
-        key: b.x
+        key: x.x
       },
       a = e.map(e => {
         var n;
@@ -102,7 +102,7 @@ class R extends Chunk647438.Component {
           key: e.tier
         }
       });
-    return (0, r.jsx)(b.Z, {
+    return (0, r.jsx)(x.Z, {
       currentTier: l,
       className: i > 0 ? I.progressWithSubscriptions : I.progress,
       progress: i,

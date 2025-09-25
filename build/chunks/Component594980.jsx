@@ -1,4 +1,4 @@
-/** Chunk was on 21376 **/
+/** Chunk was on 64523 **/
 /** chunk id: 594980, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -24,21 +24,21 @@ function h(e) {
     canManageGuild: n,
     buttonClassName: h
   } = e, {
-    analyticsLocations: b
-  } = (0, s.ZP)(), x = t.features.has(m.oNc.INVITE_SPLASH), j = n && x, v = i.useCallback(e => {
+    analyticsLocations: x
+  } = (0, s.ZP)(), b = t.features.has(m.oNc.INVITE_SPLASH), j = n && b, v = i.useCallback(e => {
     c.Z.updateGuild({
       splash: e
     })
   }, []), _ = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), (0, u.E6)({
       guild: t,
-      analyticsLocations: b,
+      analyticsLocations: x,
       analyticsSection: m.jXE.GUILD_INVITE_BACKGROUND,
       analyticsObject: m.qAy.BUTTON_CTA,
       perks: (0, g.o9)()
     })
-  }, [b, t]);
-  return x ? (0, r.jsxs)(l.zx, {
+  }, [x, t]);
+  return b ? (0, r.jsxs)(l.zx, {
     disabled: !j,
     color: l.Tt.BRAND,
     className: h,

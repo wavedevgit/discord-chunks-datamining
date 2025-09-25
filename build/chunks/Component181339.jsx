@@ -1,4 +1,4 @@
-/** Chunk was on 21376 **/
+/** Chunk was on 64523 **/
 /** chunk id: 181339, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -36,16 +36,16 @@ function I(e) {
     isExpanded: n,
     selectedChannelId: l,
     className: a
-  } = e, h = (0, g.BT)(t), x = (0, p.Z)(t), [j, v] = i.useState(x), _ = (0, o.e7)([b.Z], () => b.Z.getChannel(l), [l]), O = (0, u.ZP)(_), I = async () => {
+  } = e, h = (0, g.BT)(t), b = (0, p.Z)(t), [j, v] = i.useState(b), _ = (0, o.e7)([x.Z], () => x.Z.getChannel(l), [l]), O = (0, u.ZP)(_), I = async () => {
     v(!j);
     try {
       var e;
-      await (0, m.f6)(t, !x);
+      await (0, m.f6)(t, !b);
       let n = null != (e = null != l ? l : t.safetyAlertsChannelId) ? e : null;
       if (null != n) {
         let e = {
           raid_alert_type: f.wR.JOIN_RAID,
-          enabled: !x,
+          enabled: !b,
           raid_alert_channel_id: n,
           guild_id: t.id,
           channel_id: n
@@ -53,7 +53,7 @@ function I(e) {
         (0, d.yw)(C.rMx.GUILD_RAID_ALERTS_SETUP, e)
       }
     } catch (e) {
-      (0, c.showToast)((0, c.createToast)(N.intl.string(N.t["46Rs3t"]), c.ToastType.FAILURE)), v(!x)
+      (0, c.showToast)((0, c.createToast)(N.intl.string(N.t["46Rs3t"]), c.ToastType.FAILURE)), v(!b)
     }
   };
   return (0, r.jsxs)("div", {
@@ -92,8 +92,8 @@ function S(e) {
     selectedChannelId: i,
     setSelectedChannelId: l,
     className: m
-  } = e, g = null != (t = n.safetyAlertsChannelId) ? t : null, h = (0, o.Wu)([x.ZP, _.default, v.Z, j.Z], () => {
-    let e = x.ZP.getChannels(n.id)[x.sH].filter(e => {
+  } = e, g = null != (t = n.safetyAlertsChannelId) ? t : null, h = (0, o.Wu)([b.ZP, _.default, v.Z, j.Z], () => {
+    let e = b.ZP.getChannels(n.id)[b.sH].filter(e => {
       let {
         channel: t
       } = e;
@@ -108,7 +108,7 @@ function S(e) {
       }
     });
     return null != g ? e : [...e]
-  }, [n.id, g]), b = async e => {
+  }, [n.id, g]), x = async e => {
     l(e);
     try {
       if (e !== g && (await O.Z.saveGuild(n.id, {
@@ -140,7 +140,7 @@ function S(e) {
       }), (0, r.jsx)(c.VcW, {
         wrapperClassName: E.bringToFront,
         options: h,
-        onChange: b,
+        onChange: x,
         value: i,
         maxVisibleItems: 5
       }), (0, r.jsx)(c.Text, {

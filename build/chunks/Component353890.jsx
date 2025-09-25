@@ -1,8 +1,8 @@
-/** Chunk was on 21376 **/
+/** Chunk was on 64523 **/
 /** chunk id: 353890, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => x
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -20,7 +20,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk628682 = require("./628682.js");
 
-function b(e) {
+function x(e) {
   let {
     guild: t,
     scrollToQuestions: n
@@ -35,14 +35,14 @@ function b(e) {
       })
     }), (0, r.jsxs)("div", {
       className: h.channelList,
-      children: [(0, r.jsx)(v, {}), 0 === l.length && (0, r.jsx)(x, {}), (0, r.jsx)(j, {
+      children: [(0, r.jsx)(v, {}), 0 === l.length && (0, r.jsx)(b, {}), (0, r.jsx)(j, {
         channels: l
       })]
     })]
   })
 }
 
-function x() {
+function b() {
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk628682.emptyState,
     children: [(0, Chunk951288.jsx)("div", {

@@ -1,4 +1,4 @@
-/** Chunk was on 21376 **/
+/** Chunk was on 64523 **/
 /** chunk id: 67152, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -208,7 +208,7 @@ let C = e => {
               return (0, r.jsxs)(r.Fragment, {
                 children: [null != s ? _.intl.formatToPlainString(_.t.I6YOjY, {
                   payoutDate: s
-                }) : _.intl.string(_.t.G5ATX1), (0, r.jsx)(b.Z, {
+                }) : _.intl.string(_.t.G5ATX1), (0, r.jsx)(x.Z, {
                   className: O.statusScheduledIcon
                 })]
               });
@@ -229,7 +229,7 @@ let C = e => {
                 })]
               });
               return (0, r.jsxs)(r.Fragment, {
-                children: [_.intl.string(_.t.OtZ5k5), (0, r.jsx)(x.Z, {
+                children: [_.intl.string(_.t.OtZ5k5), (0, r.jsx)(b.Z, {
                   className: O.statusDeferredIcon
                 })]
               })
@@ -246,7 +246,7 @@ let C = e => {
               return (0, r.jsxs)(r.Fragment, {
                 children: [null != s ? _.intl.formatToPlainString(_.t.I6YOjY, {
                   payoutDate: s
-                }) : _.intl.string(_.t.ubdQTk), (0, r.jsx)(b.Z, {
+                }) : _.intl.string(_.t.ubdQTk), (0, r.jsx)(x.Z, {
                   className: O.statusScheduledIcon
                 })]
               });

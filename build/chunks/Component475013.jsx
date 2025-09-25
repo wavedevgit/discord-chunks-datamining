@@ -1,4 +1,4 @@
-/** Chunk was on 21376 **/
+/** Chunk was on 64523 **/
 /** chunk id: 475013, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -17,9 +17,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk650774 = require("./650774.js"),
   Chunk823379 = require("./823379.js"),
   Chunk434404 = require("./434404.js"),
-  Chunk764260 = require("./764260.js"),
-  Chunk946724 = require("./946724.js"),
   Chunk999382 = require("./999382.js"),
+  Chunk84058 = require("./84058.js"),
+  Chunk103576 = require("./103576.js"),
   Chunk130341 = require("./130341.js"),
   Chunk853813 = require("./853813.jsx"),
   Chunk163249 = require("./163249.jsx"),
@@ -33,18 +33,18 @@ function C(e) {
 let N = () => {
   let {
     guild: e
-  } = (0, Chunk442837.cj)([Chunk999382.Z], () => Chunk999382.Z.getProps()), t = (0, Chunk442837.e7)([Chunk946724.Z], () => Chunk946724.Z.formState), n = (0, Chunk442837.e7)([Chunk946724.Z], () => Chunk946724.Z.errorMessage);
+  } = (0, Chunk442837.cj)([Chunk999382.Z], () => Chunk999382.Z.getProps()), t = (0, Chunk442837.e7)([Chunk103576.Z], () => Chunk103576.Z.formState), n = (0, Chunk442837.e7)([Chunk103576.Z], () => Chunk103576.Z.errorMessage);
   return (0, Chunk951288.jsx)(Chunk852860.Z, {
     errorMessage: require,
     onSave: () => {
       if (null == module) return;
       let {
         id: t
-      } = module, n = Chunk946724.Z.editedRoleIds.map(e => h.Z.getRole(e)).filter(Chunk823379.lm), r = Chunk946724.Z.getSortDeltas(), i = null, l = null;
-      Chunk946724.Z.hasRoleConfigurationChanges && (l = Chunk946724.Z.editedRoleIdsForConfigurations, i = Chunk946724.Z.getEditedRoleConnectionConfigurationsMap()), (0, Chunk764260.Gf)(exports, require, Chunk951288, Chunk512722, Chunk647438)
+      } = module, n = Chunk103576.Z.editedRoleIds.map(e => x.Z.getRole(e)).filter(Chunk823379.lm), r = Chunk103576.Z.getSortDeltas(), i = null, l = null;
+      Chunk103576.Z.hasRoleConfigurationChanges && (l = Chunk103576.Z.editedRoleIdsForConfigurations, i = Chunk103576.Z.getEditedRoleConnectionConfigurationsMap()), (0, Chunk84058.Gf)(exports, require, Chunk951288, Chunk512722, Chunk647438)
     },
     submitting: exports === Chunk981631.QZA.SUBMITTING,
-    onReset: Chunk764260.S1
+    onReset: Chunk84058.S1
   })
 };
 
@@ -54,21 +54,21 @@ function E(e) {
   } = e, {
     guild: n,
     roles: l
-  } = (0, a.cj)([h.Z], () => ({
-    guild: h.Z.guild,
-    roles: h.Z.roles
+  } = (0, a.cj)([x.Z], () => ({
+    guild: x.Z.guild,
+    roles: x.Z.roles
   }), []);
   s()(null != n, "Guild cannot be null here");
   let c = i.useMemo(() => l.find(e => (0, u.fI)(e)), [l]);
   s()(null != c, "Guild must have an everyone role");
   let g = i.useMemo(() => l.filter(e => !(0, u.fI)(e)), [l]),
-    p = (0, a.e7)([b.Z], () => b.Z.getSelectedRoleId()),
-    [f, y] = i.useState(g.length > 0);
+    p = (0, a.e7)([f.Z], () => f.Z.getSelectedRoleId()),
+    [h, y] = i.useState(g.length > 0);
   i.useEffect(() => {
-    y(f || g.length > 0)
-  }, [f, g.length]), (0, d.ZP)(() => {
+    y(h || g.length > 0)
+  }, [h, g.length]), (0, d.ZP)(() => {
     let e = m.Z.getMemberCount(n.id);
-    null != e && e <= x.cm && o.Z.requestMembers(n.id, "", 0, false)
+    null != e && e <= b.cm && o.Z.requestMembers(n.id, "", 0, false)
   });
   let [N, E] = i.useState(O.ZI.DISPLAY);
   return (i.useEffect(() => {
@@ -78,7 +78,7 @@ function E(e) {
     setEditRoleId: C,
     selectedSection: N,
     setSelectedSection: E
-  }) : f ? (0, r.jsx)(_.Z, {
+  }) : h ? (0, r.jsx)(_.Z, {
     setEditRoleId: C,
     guild: n,
     everyoneRole: c,

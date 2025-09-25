@@ -1,4 +1,4 @@
-/** Chunk was on 21376 **/
+/** Chunk was on 64523 **/
 /** chunk id: 237245, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk699553 = require("./699553.js"),
   Chunk434404 = require("./434404.js"),
   Chunk999382 = require("./999382.js"),
-  Chunk654351 = require("./654351.js"),
+  Chunk490597 = require("./490597.js"),
   Chunk658666 = require("./658666.js"),
   Chunk384632 = require("./384632.js"),
   Chunk386885 = require("./386885.js"),
@@ -63,7 +63,7 @@ function E(e) {
   let {
     pendingState: l,
     dirtyState: h,
-    originalGuild: x,
+    originalGuild: b,
     settingsGuild: E,
     settingsMetadata: I,
     settingsProfile: S
@@ -144,7 +144,7 @@ function E(e) {
       } = l, r = n.map(e => e.value.trim()).filter(e => "" !== e);
       k(async () => {
         if (h.verificationDirty && await U(t, r, e), h.guildDirty) {
-          (0, b.UA)(E, x);
+          (0, x.UA)(E, b);
           let e = new Set(E.features);
           e.add(_.oNc.DISCOVERABLE), e.delete(_.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL), await G({
             features: e,
@@ -162,7 +162,7 @@ function E(e) {
         }
       })
     }
-  }, [l, k, E, h, G, U, S, M, x, I]), F = i.useCallback(() => {
+  }, [l, k, E, h, G, U, S, M, b, I]), F = i.useCallback(() => {
     var e;
     if (l.joinType === j.A.INVITE || l.joinType === j.A.DISCOVERABLE) {
       let {

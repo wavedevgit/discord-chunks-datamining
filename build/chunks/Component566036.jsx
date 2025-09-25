@@ -1,4 +1,4 @@
-/** Chunk was on 21376 **/
+/** Chunk was on 64523 **/
 /** chunk id: 566036, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -43,7 +43,7 @@ function h(e) {
   })
 }
 
-function b(e) {
+function x(e) {
   let {
     gameApplicationIds: t,
     onRemoveGame: n,
@@ -59,14 +59,14 @@ function b(e) {
     }, e))
   })
 }
-let x = [];
+let b = [];
 
 function j(e) {
   var t;
   let {
     profile: n,
     canManageGuild: l
-  } = e, o = n.id, d = null != (t = null == n ? true : n.gameApplicationIds) ? t : x, f = i.useCallback(e => {
+  } = e, o = n.id, d = null != (t = null == n ? true : n.gameApplicationIds) ? t : b, f = i.useCallback(e => {
     c.Z.updateGuildProfile(o, {
       gameApplicationIds: e
     })
@@ -92,7 +92,7 @@ function j(e) {
         gameApplicationIds: d,
         handleChange: f,
         disabled: !l
-      }), (0, r.jsx)(b, {
+      }), (0, r.jsx)(x, {
         gameApplicationIds: _,
         onRemoveGame: j,
         disabled: !l

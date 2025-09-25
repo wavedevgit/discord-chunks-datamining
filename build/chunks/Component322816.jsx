@@ -1,4 +1,4 @@
-/** Chunk was on 21376 **/
+/** Chunk was on 64523 **/
 /** chunk id: 322816, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk626135 = require("./626135.js"),
   Chunk233608 = require("./233608.js"),
   Chunk700785 = require("./700785.js"),
-  Chunk764260 = require("./764260.js"),
+  Chunk84058 = require("./84058.js"),
   Chunk631969 = require("./631969.jsx"),
   Chunk95242 = require("./95242.js"),
   Chunk420966 = require("./420966.jsx"),
@@ -94,7 +94,7 @@ function T(e) {
         children: (0, r.jsx)(c.Avr, {
           variant: "primary",
           textVariant: "text-sm/semibold",
-          onClick: () => (0, b.TY)(n.id),
+          onClick: () => (0, x.TY)(n.id),
           disabled: a.fS(n.permissions, h.Hn) || p || l,
           text: C.intl.string(C.t["UYq7+P"])
         })
@@ -115,7 +115,7 @@ function P(e) {
   }).enabled;
   if (0 === i.length) return (0, r.jsxs)("div", {
     className: N.noResultsContainer,
-    children: [(0, r.jsx)(x.Z, {
+    children: [(0, r.jsx)(b.Z, {
       className: N.noResults
     }), (0, r.jsx)(c.Text, {
       variant: "text-sm/normal",
@@ -143,7 +143,7 @@ function P(e) {
       locked: l,
       onChange: (e, t) => {
         if ("string" == typeof t) throw Error("Unexpected string `allow`");
-        (0, b.lO)(n.id, e, t)
+        (0, x.lO)(n.id, e, t)
       },
       permissionRender: o,
       inPinPermissionExperiment: s
@@ -167,8 +167,8 @@ function w(e) {
     headerHeight: g,
     headerRef: h
   } = (0, j.Z)(0), {
-    scrolledToTop: b,
-    handleScroll: x
+    scrolledToTop: x,
+    handleScroll: b
   } = (0, v.V)(), T = i.useRef(false);
   return i.useEffect(() => {
     T.current || "" === d.trimStart() || (p.default.track(y.rMx.SEARCH_STARTED, {
@@ -179,12 +179,12 @@ function w(e) {
     style: {
       scrollPaddingTop: g
     },
-    onScroll: x,
+    onScroll: b,
     children: (0, r.jsxs)("div", {
       className: E.contentWidth,
       children: [(0, r.jsxs)("div", {
         className: s()(E.header, E.stickyHeader, {
-          [E.stickyHeaderElevated]: !b
+          [E.stickyHeaderElevated]: !x
         }),
         ref: h,
         children: [(0, r.jsx)(v.Z, {

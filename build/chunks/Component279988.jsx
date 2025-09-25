@@ -1,4 +1,4 @@
-/** Chunk was on 21376 **/
+/** Chunk was on 64523 **/
 /** chunk id: 279988, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -24,8 +24,8 @@ let g = function(e) {
     isDropHovered: p,
     onDrop: f,
     onEdit: h,
-    onRemove: b,
-    canRemove: x,
+    onRemove: x,
+    canRemove: b,
     title: j,
     actionsLocation: v,
     fieldStyle: _
@@ -37,9 +37,9 @@ let g = function(e) {
     isDropHovered: p,
     onDrop: f,
     onEdit: h,
-    onRemove: b,
+    onRemove: x,
     title: j,
-    canRemove: x,
+    canRemove: b,
     actionsLocation: v,
     fieldStyle: _,
     children: [(0, r.jsx)(c.EK, {

@@ -1,4 +1,4 @@
-/** Chunk was on 21376 **/
+/** Chunk was on 64523 **/
 /** chunk id: 29605, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -149,7 +149,7 @@ let Y = d().throttle(Chunk80932.OQ, 1e3),
             onBlur: () => {
               if (c === n.name) return;
               let e = Z.ZP.sanitizeEmojiName(c);
-              e !== n.name && (0, b.dv)({
+              e !== n.name && (0, x.dv)({
                 guildId: t,
                 emojiId: n.id,
                 name: e
@@ -179,10 +179,10 @@ let Y = d().throttle(Chunk80932.OQ, 1e3),
           color: "currentColor",
           className: z.editEmojiRolesIcon
         })
-      }), !a && (0, r.jsx)(x.Z, {
+      }), !a && (0, r.jsx)(b.Z, {
         className: z.emojiRemove,
         onClick: () => {
-          (0, b.RE)(t, n.id).catch(e => {
+          (0, x.RE)(t, n.id).catch(e => {
             let {
               status: t
             } = e;
@@ -373,13 +373,13 @@ let Y = d().throttle(Chunk80932.OQ, 1e3),
       {
         revision: u,
         emojis: h,
-        autoOpen: b
+        autoOpen: x
       } = (0, Chunk442837.cj)([Chunk471613.Z], () => ({
         revision: Chunk471613.Z.getEmojiRevision(exports.id),
         emojis: Chunk471613.Z.getEmojis(exports.id),
         autoOpen: Chunk471613.Z.getEmojiFileInputAutoOpen()
       })),
-      x = (0, Chunk110924.Z)(Chunk6383),
+      b = (0, Chunk110924.Z)(Chunk6383),
       [j, S] = Chunk647438.useState(false),
       [D, Z] = Chunk647438.useState(false),
       A = Chunk647438.useRef(null),

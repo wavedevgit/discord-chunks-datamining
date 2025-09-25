@@ -51,7 +51,7 @@ function E(e) {
     }
   }, [N, R, I]);
   i.useEffect(() => {
-    n(360606)
+    n(145260)
   }, []);
   let x = i.useCallback(() => {
       (null == T ? true : T.id) != null && (c.Z.open(T.id, m.pNK.INTEGRATIONS), s.Z.setSection(m.b4C.APPLICATION, I), null == v || v())

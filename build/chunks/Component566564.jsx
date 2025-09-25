@@ -53,8 +53,8 @@ let k = e => {
       })
     }, [c]);
     let {
-      isFetchingShopHome: A,
-      fetchShopHomeError: B,
+      isFetchingShopHome: B,
+      fetchShopHomeError: A,
       shopBlocks: N,
       refreshShopHome: R
     } = (0, g.E)(c, {
@@ -70,7 +70,7 @@ let k = e => {
       R()
     }, [R]);
     return (l.useEffect(() => {
-      null != B || A || 0 === N.length || (0, p.n)({
+      null != A || B || 0 === N.length || (0, p.n)({
         sessionId: P,
         checkpoint: p.a.SHOP_RENDERED,
         tab: c,
@@ -78,22 +78,22 @@ let k = e => {
         unpublishedCategoriesShown: v,
         cacheDisabled: h
       })
-    }, [B, A, N.length, v, h, P, c, u]), null != B) ? (0, r.jsx)(f.Z, {
+    }, [A, B, N.length, v, h, P, c, u]), null != A) ? (0, r.jsx)(f.Z, {
       onRetry: Z,
       errorOrigin: f.i.SHOP_PAGE,
-      errorMessage: B.message
-    }) : A || 0 === N.length ? (0, r.jsxs)("div", {
+      errorMessage: A.message
+    }) : B || 0 === N.length ? (0, r.jsxs)("div", {
       className: i()(j.loadingContainer, j.feedContent),
       children: [(0, r.jsx)(E.Z, {
-        isLoading: A,
+        isLoading: B,
         handleTransition: n,
         tab: c
       }), (0, r.jsx)(m.Z, {
-        isLoading: A,
+        isLoading: B,
         handleTransition: n,
         categories: []
       }), (0, r.jsx)(b.Z, {
-        isLoading: A,
+        isLoading: B,
         title: c === T.AW.ORBS ? L.intl.string(L.t.dFgeub) : L.intl.string(L.t.NSv5KS),
         numVisibleItems: a,
         hasSorting: c === T.AW.HOME,
@@ -107,7 +107,7 @@ let k = e => {
         switch (e.type) {
           case s.z.HERO:
             d = (0, r.jsx)(E.Z, {
-              isLoading: A,
+              isLoading: B,
               handleTransition: n,
               heroBlock: e,
               tab: c
@@ -115,7 +115,7 @@ let k = e => {
             break;
           case s.z.FEATURED:
             d = (0, r.jsx)(m.Z, {
-              isLoading: A,
+              isLoading: B,
               handleTransition: n,
               featuredBlockRecord: e
             }, l);
@@ -124,7 +124,7 @@ let k = e => {
             let p = e.sortedSkuIds;
             d = (0, r.jsx)(b.Z, {
               title: c === T.AW.ORBS ? L.intl.string(L.t.dFgeub) : L.intl.string(L.t.NSv5KS),
-              isLoading: A || o,
+              isLoading: B || o,
               numVisibleItems: a,
               sortedSkuIds: p,
               buttonContainerClassName: (null == t ? true : t.type) === s.z.IMMERSIVE_BANNER ? j.feedblockInteractiveBackground : true,

@@ -1,4 +1,4 @@
-/** Chunk was on 21376 **/
+/** Chunk was on 64523 **/
 /** chunk id: 966301, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -29,12 +29,12 @@ function O(e) {
   let {
     guildId: t,
     prompts: n
-  } = e, a = (0, l.e7)([m.Z], () => m.Z.editedDefaultChannelIds), [c, u] = (0, d.dF)(t, n, [...a]), g = c.length, p = c.length + u.length, f = g / p * 100, h = Math.max(Math.ceil(85 * p / 100) - g, 0), [b, x] = i.useState(false), j = b ? s.CJ0 : s.u04;
+  } = e, a = (0, l.e7)([m.Z], () => m.Z.editedDefaultChannelIds), [c, u] = (0, d.dF)(t, n, [...a]), g = c.length, p = c.length + u.length, f = g / p * 100, h = Math.max(Math.ceil(85 * p / 100) - g, 0), [x, b] = i.useState(false), j = x ? s.CJ0 : s.u04;
   return (0, r.jsxs)("div", {
     className: _.channelCoverage,
     children: [(0, r.jsxs)(s.P3F, {
       className: _.coverageHeader,
-      onClick: () => x(!b),
+      onClick: () => b(!x),
       children: [(0, r.jsxs)("div", {
         className: _.warningTextContainer,
         children: [f <= 85 && (0, r.jsx)(s.Mgn, {
@@ -61,7 +61,7 @@ function O(e) {
           className: _.caret
         })]
       })]
-    }), b ? (0, r.jsxs)("div", {
+    }), x ? (0, r.jsxs)("div", {
       className: _.channelCoverageDetails,
       children: [(0, r.jsx)(s.Text, {
         variant: "text-xs/semibold",
@@ -154,7 +154,7 @@ function C(e) {
       className: _.links,
       children: [(0, r.jsx)(s.eee, {
         target: "_blank",
-        href: x.EYA.GUILD_ONBOARDING_EXAMPLES,
+        href: b.EYA.GUILD_ONBOARDING_EXAMPLES,
         children: (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "text-link",
@@ -179,7 +179,7 @@ function C(e) {
       prompts: o
     }), (0, r.jsx)("div", {
       className: _.prompts,
-      children: a ? (0, r.jsx)(s.$jN, {}) : (0, r.jsx)(b.Z, {
+      children: a ? (0, r.jsx)(s.$jN, {}) : (0, r.jsx)(x.Z, {
         postjoinOnly: d,
         guildId: t.id
       })

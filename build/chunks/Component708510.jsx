@@ -1,4 +1,4 @@
-/** Chunk was on 21376 **/
+/** Chunk was on 64523 **/
 /** chunk id: 708510, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -15,8 +15,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk63063 = require("./63063.js"),
   Chunk500496 = require("./500496.js"),
   Chunk999382 = require("./999382.js"),
-  Chunk209054 = require("./209054.js"),
-  Chunk96788 = require("./96788.js"),
+  Chunk432774 = require("./432774.js"),
+  Chunk682255 = require("./682255.js"),
   Chunk217472 = require("./217472.js"),
   Chunk202905 = require("./202905.jsx"),
   Chunk44867 = require("./44867.jsx"),
@@ -45,11 +45,11 @@ function E(e) {
         rules: t.termRules
       });
     case O.A.APPLY:
-      return (0, r.jsx)(b.r, {
+      return (0, r.jsx)(x.r, {
         pendingFields: t.pendingVerificationFields
       });
     case O.A.DISCOVERABLE:
-      return (0, r.jsx)(x.c, {
+      return (0, r.jsx)(b.c, {
         fetchDiscoveryData: l,
         settingsView: t.settingsView,
         requireTerms: t.requireTerms,

@@ -1,4 +1,4 @@
-/** Chunk was on 21376 **/
+/** Chunk was on 64523 **/
 /** chunk id: 998164, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -49,7 +49,7 @@ function f(e, t) {
 }
 let h = [];
 
-function b() {
+function x() {
   return (0, Chunk951288.jsx)("div", {
     className: Chunk197530.actionItemContainer,
     children: (0, Chunk951288.jsxs)("div", {
@@ -74,7 +74,7 @@ function b() {
   })
 }
 
-function x(e) {
+function b(e) {
   let {
     guildId: t,
     onAddAction: l
@@ -138,7 +138,7 @@ let j = function(e) {
       onDragStart: O,
       onDragReset: y,
       onDragComplete: C
-    }, e.channelId)), (0, r.jsx)(b, {}), n.length < o.O9 && (0, r.jsx)(x, {
+    }, e.channelId)), (0, r.jsx)(x, {}), n.length < o.O9 && (0, r.jsx)(b, {
       guildId: t,
       onAddAction: s
     })]

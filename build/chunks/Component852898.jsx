@@ -1,4 +1,4 @@
-/** Chunk was on 21376 **/
+/** Chunk was on 64523 **/
 /** chunk id: 852898, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -23,8 +23,8 @@ function p(e, t) {
     let f;
     if (!t.managed) return null;
     let h = null == (i = t.tags) ? true : i.bot_id,
-      b = null == (s = t.tags) ? true : s.integration_id,
-      x = (null == (u = t.tags) ? true : u.premium_subscriber) !== true,
+      x = null == (s = t.tags) ? true : s.integration_id,
+      b = (null == (u = t.tags) ? true : u.premium_subscriber) !== true,
       j = (null == (p = t.tags) ? true : p.guild_connections) !== true;
     if (null != h ? f = null == n ? true : n.find(e => {
         var t;
@@ -32,11 +32,11 @@ function p(e, t) {
           application: n
         } = e;
         return (null == n || null == (t = n.bot) ? true : t.id) === h
-      }) : null != b && (f = null == n ? true : n.find(e => {
+      }) : null != x && (f = null == n ? true : n.find(e => {
         let {
           id: t
         } = e;
-        return t === b
+        return t === x
       })), null != f && null != f.application && null != f.name) {
       let e = f.application.id,
         t = f.name;
@@ -52,6 +52,6 @@ function p(e, t) {
         }, t)
       })
     }
-    return x ? g.intl.string(g.t.oF6FYW) : j ? g.intl.string(g.t.ZQ37tL) : g.intl.string(g.t.k5d7DA)
+    return b ? g.intl.string(g.t.oF6FYW) : j ? g.intl.string(g.t.ZQ37tL) : g.intl.string(g.t.k5d7DA)
   })(0, t, n), [e, t, n])
 }

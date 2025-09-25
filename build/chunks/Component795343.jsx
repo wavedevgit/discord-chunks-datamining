@@ -38,21 +38,21 @@ function T(e) {
     noCache: k,
     includeUnpublished: I
   } = (0, S.Z)(), P = (0, s.e7)([c.default], () => c.default.getCurrentUser()), {
-    skus: A,
-    currentPage: B,
+    skus: B,
+    currentPage: A,
     totalCount: N,
     isFetchingResults: R
-  } = (0, C.a)(), Z = (0, s.Wu)([g.Z], () => g.Z.getProductsBySkus(A)), w = l.useCallback(() => {
+  } = (0, C.a)(), Z = (0, s.Wu)([g.Z], () => g.Z.getProductsBySkus(B)), w = l.useCallback(() => {
     var e;
     null == T || null == (e = T.current) || e.scrollToTop({
       animate: true
     })
-  }, [T]), F = null == A ? true : A.join("");
+  }, [T]), F = null == B ? true : B.join("");
   l.useEffect(() => {
     w()
   }, [F, w]);
-  let H = (0, f.a)(),
-    M = l.useMemo(() => H(Z), [H, Z]);
+  let M = (0, f.a)(),
+    H = l.useMemo(() => M(Z), [M, Z]);
   l.useEffect(() => {
     n || (0, _.n)({
       sessionId: j,
@@ -73,9 +73,9 @@ function T(e) {
     q = n || R || null == P;
   l.useEffect(() => {
     if (q) return void G(false);
-    M.length > 0 && G(true)
-  }, [q, M.length]);
-  let K = V > 0 && !q && 0 === M.length;
+    H.length > 0 && G(true)
+  }, [q, H.length]);
+  let K = V > 0 && !q && 0 === H.length;
   l.useEffect(() => {
     let e = new ResizeObserver(() => {
       null != D.current && W(Math.floor(5 * getComputedStyle(D.current).gridTemplateColumns.split(/\s+/).length))
@@ -106,7 +106,7 @@ function T(e) {
           [O.loadIn]: z
         }),
         ref: D,
-        children: [q && [...Array(V)].map((e, t) => (0, r.jsx)(m.K, {}, t)), !q && M.map((e, t) => {
+        children: [q && [...Array(V)].map((e, t) => (0, r.jsx)(m.K, {}, t)), !q && H.map((e, t) => {
           let n = g.Z.getCategory(e.categorySkuId);
           return null == n ? null : (0, r.jsx)(d.k0, {
             newValue: {
@@ -130,7 +130,7 @@ function T(e) {
       className: O.paginationContainer,
       children: (0, r.jsx)("div", {
         children: (0, r.jsx)(o.DsT, {
-          currentPage: B,
+          currentPage: A,
           totalCount: N,
           pageSize: V,
           onPageChange: Y,

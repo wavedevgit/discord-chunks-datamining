@@ -1,4 +1,4 @@
-/** Chunk was on 21376 **/
+/** Chunk was on 64523 **/
 /** chunk id: 729311, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -37,10 +37,10 @@ var Chunk951288 = require("./951288.js"),
 function w(e) {
   let {
     guild: t
-  } = e, a = (0, l.e7)([d.Z], () => d.Z.getEnabled(t.id)), f = (0, l.e7)([p.Z], () => p.Z.hasFetched(t.id)), h = (0, y.Z)(t), b = (0, l.e7)([v.Z], () => v.Z.editedDefaultChannelIds), x = h.filter(e => !b.has(e.id)), [_, O] = i.useState(false);
+  } = e, a = (0, l.e7)([d.Z], () => d.Z.getEnabled(t.id)), f = (0, l.e7)([p.Z], () => p.Z.hasFetched(t.id)), h = (0, y.Z)(t), x = (0, l.e7)([v.Z], () => v.Z.editedDefaultChannelIds), b = h.filter(e => !x.has(e.id)), [_, O] = i.useState(false);
   return (i.useEffect(() => {
     f || a || (0, g.S)(t.id)
-  }, [t.id, f, a]), _ || 0 === x.length) ? null : (0, r.jsxs)("div", {
+  }, [t.id, f, a]), _ || 0 === b.length) ? null : (0, r.jsxs)("div", {
     className: T.recommendations,
     children: [(0, r.jsx)(s.Text, {
       variant: "text-md/medium",
@@ -68,7 +68,7 @@ function w(e) {
       })]
     }), (0, r.jsx)("div", {
       className: T.recommendedChannels,
-      children: x.map((e, i) => (0, r.jsxs)(r.Fragment, {
+      children: b.map((e, i) => (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)("div", {
           className: T.channelRow,
           children: [(0, r.jsxs)("div", {
@@ -151,7 +151,7 @@ function w(e) {
               })
             }
           })]
-        }), i < x.length - 1 ? (0, r.jsx)("div", {
+        }), i < b.length - 1 ? (0, r.jsx)("div", {
           className: T.separator
         }) : null]
       }))
@@ -164,7 +164,7 @@ function w(e) {
 function R(e) {
   let {
     saveOnClose: t = false
-  } = e, n = (0, l.e7)([x.Z], () => x.Z.getGuild()), a = (0, l.e7)([d.Z], () => d.Z.isLoading()), o = (0, l.e7)([h.ZP], () => h.ZP.getChannels(null == n ? true : n.id)), c = (0, l.e7)([f.Z], () => f.Z.getCategories(null == n ? true : n.id)), u = (0, l.e7)([O.Z], () => O.Z.advancedMode), m = i.useRef(null), [g, p] = i.useState(false), v = i.useRef(n);
+  } = e, n = (0, l.e7)([b.Z], () => b.Z.getGuild()), a = (0, l.e7)([d.Z], () => d.Z.isLoading()), o = (0, l.e7)([h.ZP], () => h.ZP.getChannels(null == n ? true : n.id)), c = (0, l.e7)([f.Z], () => f.Z.getCategories(null == n ? true : n.id)), u = (0, l.e7)([O.Z], () => O.Z.advancedMode), m = i.useRef(null), [g, p] = i.useState(false), v = i.useRef(n);
   return (i.useEffect(() => {
     v.current = n
   }), i.useEffect(() => {
@@ -187,8 +187,8 @@ function R(e) {
       children: [(0, r.jsx)(s.P3F, {
         className: T.collapseButton,
         onClick: () => p(e => !e),
-        children: (0, r.jsx)(b.Z, {
-          direction: g ? b.Z.Directions.DOWN : b.Z.Directions.UP,
+        children: (0, r.jsx)(x.Z, {
+          direction: g ? x.Z.Directions.DOWN : x.Z.Directions.UP,
           height: 16,
           width: 16
         })

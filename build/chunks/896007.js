@@ -1,4 +1,4 @@
-/** Chunk was on 21376 **/
+/** Chunk was on 64523 **/
 /** chunk id: 896007, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -24,8 +24,8 @@ function f(e) {
     guild: c,
     canManageGuild: f,
     canViewAuditLog: h,
-    canManageRoles: b,
-    canManageBans: x,
+    canManageRoles: x,
+    canManageBans: b,
     canAccessMembersPage: j,
     canViewGuildAnalytics: v,
     isOwner: _,
@@ -77,7 +77,7 @@ function f(e) {
   }), E.push({
     section: g,
     label: u.intl.string(u.t.m6lkGx)
-  }), E.push(m(d.pNK.EMOJI, N)), E.push(m(d.pNK.STICKERS, N)), E.push(m(d.pNK.SOUNDBOARD, N))), (f || b || j || O) && (E.push({
+  }), E.push(m(d.pNK.EMOJI, N)), E.push(m(d.pNK.STICKERS, N)), E.push(m(d.pNK.SOUNDBOARD, N))), (f || x || j || O) && (E.push({
     section: p
   }), E.push({
     section: g,
@@ -89,7 +89,7 @@ function f(e) {
     label: u.intl.string(u.t.wF3KJy)
   }), E.push(m(d.pNK.INTEGRATIONS, N)), E.push(m(d.pNK.APP_DIRECTORY, N));
   let I = !c.features.has(d.oNc.COMMUNITY) && ((0, l.Nb)(c.id) || (0, l.ze)(c.id));
-  (f || h || x || I) && (E.push({
+  (f || h || b || I) && (E.push({
     section: p
   }), E.push({
     section: g,

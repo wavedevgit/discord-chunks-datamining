@@ -1,4 +1,4 @@
-/** Chunk was on 21376 **/
+/** Chunk was on 64523 **/
 /** chunk id: 795691, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -27,11 +27,11 @@ function d(e) {
       h(false)
     })
   }, [t, g]);
-  let b = i.useMemo(() => null == p ? [] : Object.keys(p).filter(e => !n.includes(e)).sort((e, t) => p[t].score - p[e].score), [p, n]),
-    x = i.useCallback(e => {
+  let x = i.useMemo(() => null == p ? [] : Object.keys(p).filter(e => !n.includes(e)).sort((e, t) => p[t].score - p[e].score), [p, n]),
+    b = i.useCallback(e => {
       n.includes(e) ? d(n.filter(t => t !== e)) : d([...n, e])
     }, [d, n]);
-  return f && null == p ? (0, r.jsx)(l.$jN, {}) : null == b || 0 === b.length ? null : (0, r.jsxs)(r.Fragment, {
+  return f && null == p ? (0, r.jsx)(l.$jN, {}) : null == x || 0 === x.length ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: c.separator
     }), (0, r.jsxs)("div", {
@@ -42,10 +42,10 @@ function d(e) {
         children: o.intl.string(o.t.bFGpub)
       }), (0, r.jsx)("div", {
         className: c.gamesList,
-        children: b.map(e => (0, r.jsx)(a.Z, {
+        children: x.map(e => (0, r.jsx)(a.Z, {
           applicationId: e,
           selected: false,
-          onClick: x,
+          onClick: b,
           disabled: u
         }, e))
       })]

@@ -38,29 +38,29 @@ let I = e => {
     title: a,
     sortedSkuIds: I,
     numVisibleItems: P,
-    hasSorting: A,
-    prioritizeUserDiscounts: B,
+    hasSorting: B,
+    prioritizeUserDiscounts: A,
     tab: N,
     buttonContainerClassName: R
   } = e, Z = (0, s.e7)([d.default], () => d.default.getCurrentUser()), w = h.ZP.canUseCollectibles(Z), F = (0, T.G)("FeedBlock"), {
-    sortType: H,
-    setSortType: M,
+    sortType: M,
+    setSortType: H,
     sortedItems: D,
     sortOptions: W,
     shuffleProducts: U,
     showRecommendationOption: V
-  } = (0, v.Z)(I, w, B), z = (0, O.St)(D), G = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), q = (0, s.e7)([g.Z], () => g.Z.isFocused()), K = !G && q, {
+  } = (0, v.Z)(I, w, A), z = (0, O.St)(D), G = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), q = (0, s.e7)([g.Z], () => g.Z.isFocused()), K = !G && q, {
     animationPhase: Y,
     startAnimation: X
   } = (0, x.y)(), Q = (0, C.sp)(), J = null != (t = null == Q ? true : Q.sessionId) ? t : "", $ = l.useRef(null), ee = l.useCallback(e => {
     X({
       isShuffling: false,
-      onOutroComplete: () => M(e)
+      onOutroComplete: () => H(e)
     }), p.default.track(y.rMx.COLLECTIBLES_SHOP_FEED_SORT_CHANGED, {
       page_session_id: J,
       sort_type: e
     })
-  }, [X, M, J]), et = m.Z.useConfig({
+  }, [X, H, J]), et = m.Z.useConfig({
     location: "FeedBlock"
   }).showCardsV2;
   return null == Z ? null : (0, r.jsxs)("div", {
@@ -113,7 +113,7 @@ let I = e => {
             }), t))
           }
         })]
-      }), A ? (0, r.jsxs)("div", {
+      }), B ? (0, r.jsxs)("div", {
         className: i()(k.headerRight, {
           [j.shopTakeOver]: F
         }),
@@ -129,7 +129,7 @@ let I = e => {
             popoutClassName: i()({
               [j.shopTakeOver]: F
             }),
-            isSelected: e => e === H,
+            isSelected: e => e === M,
             serialize: e => e
           })
         }), (0, r.jsx)("div", {

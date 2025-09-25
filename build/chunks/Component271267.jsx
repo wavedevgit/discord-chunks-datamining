@@ -1,9 +1,9 @@
-/** Chunk was on 21376 **/
+/** Chunk was on 64523 **/
 /** chunk id: 271267, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
   Q: () => p,
-  Z: () => x
+  Z: () => b
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -121,7 +121,7 @@ function h(e) {
   })
 }
 
-function b(e) {
+function x(e) {
   let {
     guild: t,
     monetizationEligibility: n
@@ -146,7 +146,7 @@ function b(e) {
   })
 }
 
-function x(e) {
+function b(e) {
   let {
     guild: t,
     monetizationEligibility: n
@@ -171,7 +171,7 @@ function x(e) {
         children: d.intl.string(d.t["41wkMT"])
       }), (0, r.jsx)(s.LZC, {
         size: 24
-      }), (0, r.jsx)(b, {
+      }), (0, r.jsx)(x, {
         guild: t,
         monetizationEligibility: n
       })]

@@ -1,4 +1,4 @@
-/** Chunk was on 21376 **/
+/** Chunk was on 64523 **/
 /** chunk id: 976983, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -21,7 +21,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk900492 = require("./900492.js");
 
-function b(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -40,7 +40,7 @@ function b(e) {
   return e
 }
 
-function x(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -92,7 +92,7 @@ function j(e) {
       let {
         default: e
       } = await n.e("1862").then(n.bind(n, 801001));
-      return t => (0, r.jsx)(e, x(b({}, t), {
+      return t => (0, r.jsx)(e, b(x({}, t), {
         guild: j,
         prompt: v,
         option: y,
@@ -163,7 +163,7 @@ function v(e) {
       let {
         default: e
       } = await n.e("1862").then(n.bind(n, 801001));
-      return n => (0, r.jsx)(e, x(b({}, n), {
+      return n => (0, r.jsx)(e, b(x({}, n), {
         guild: t,
         prompt: i,
         onSave: e => (0, g.Kk)(t, i.id, {

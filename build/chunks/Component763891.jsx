@@ -44,14 +44,14 @@ function N(e) {
     scrollerRef: R,
     tab: Z
   } = e, w = (0, g.sp)(), F = null != (t = null == w ? true : w.sessionId) ? t : "", {
-    noCache: H,
-    includeUnpublished: M
+    noCache: M,
+    includeUnpublished: H
   } = (0, S.Z)(), D = (0, i.e7)([u.default], () => u.default.getCurrentUser()), W = (0, i.e7)([p.Z], () => p.Z.productsWithVariantsAsGroup), [U, V] = l.useState(1), z = (0, c.Fg)(), G = (0, s.ap)(z), [q, K, Y] = l.useMemo(() => {
     switch (Z) {
       case x.AW.AVATAR_DECORATIONS:
         return [O.intl.string(O.t.dRZYND), G ? k.Z : j.Z, a.Z.AVATAR_DECORATION];
       case x.AW.PROFILE_EFFECTS:
-        return [O.intl.string(O.t["1cNjt7"]), G ? B.Z : A.Z, a.Z.PROFILE_EFFECT];
+        return [O.intl.string(O.t["1cNjt7"]), G ? A.Z : B.Z, a.Z.PROFILE_EFFECT];
       case x.AW.NAMEPLATES:
         return [O.intl.string(O.t.V68Fq6), G ? P.Z : I.Z, a.Z.NAMEPLATE];
       case x.AW.BUNDLES:
@@ -67,8 +67,8 @@ function N(e) {
       checkpoint: _.a.SHOP_MOUNTED,
       tab: Z,
       isFullScreen: N,
-      unpublishedCategoriesShown: M,
-      cacheDisabled: H
+      unpublishedCategoriesShown: H,
+      cacheDisabled: M
     })
   }, []), l.useEffect(() => {
     n || (0, _.n)({
@@ -76,10 +76,10 @@ function N(e) {
       checkpoint: _.a.SHOP_RENDERED,
       tab: Z,
       isFullScreen: N,
-      unpublishedCategoriesShown: M,
-      cacheDisabled: H
+      unpublishedCategoriesShown: H,
+      cacheDisabled: M
     })
-  }, [F, N, M, H, n, Z]);
+  }, [F, N, H, M, n, Z]);
   let $ = f.Z.useConfig({
     location: "CollectiblesFilterableShop"
   }).showCardsV2;

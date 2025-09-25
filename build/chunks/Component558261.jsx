@@ -63,7 +63,7 @@ let P = e => {
       fullWidth: true
     })
   },
-  A = e => {
+  B = e => {
     let {
       isClaimPremiumProductDisabled: t
     } = e;
@@ -79,7 +79,7 @@ let P = e => {
       })
     })
   },
-  B = e => {
+  A = e => {
     let {
       handlePreviewButtonClick: t
     } = e;
@@ -211,8 +211,8 @@ let P = e => {
       isPurchased: d
     }), k = (0, O.Iw)(t), I = null != k, {
       shouldCheckoutWithOrbs: F,
-      hasSufficientOrbs: H,
-      checkoutEligiblePrices: M
+      hasSufficientOrbs: M,
+      checkoutEligiblePrices: H
     } = (0, T.Ip)({
       product: t,
       isPremiumUser: u,
@@ -226,7 +226,7 @@ let P = e => {
     } = (0, b.W)({
       product: t
     });
-    return !h || u || v ? !j || y ? (0, r.jsx)(B, {
+    return !h || u || v ? !j || y ? (0, r.jsx)(A, {
       handlePreviewButtonClick: U
     }) : d ? (0, r.jsx)(N, {
       handleUseNow: G,
@@ -238,14 +238,14 @@ let P = e => {
       tab: l.tab,
       analyticsLocations: W,
       analyticsContext: D
-    }) : F && H ? (0, r.jsx)(Z, {
+    }) : F && M ? (0, r.jsx)(Z, {
       product: t,
       tab: l.tab,
-      checkoutEligiblePrices: M,
+      checkoutEligiblePrices: H,
       analyticsLocations: W,
       analyticsContext: D,
       selectedVariantIndex: i
-    }) : F && !H ? (0, r.jsx)(B, {
+    }) : F && !M ? (0, r.jsx)(A, {
       handlePreviewButtonClick: U
     }) : l.tab === L.AW.ORBS ? (0, r.jsx)(w, {
       handlePreviewButtonClick: U
@@ -256,7 +256,7 @@ let P = e => {
       selectedVariantIndex: i,
       hasDiscountOffer: I,
       discountOfferAmount: k
-    }) : (0, r.jsx)(A, {
+    }) : (0, r.jsx)(B, {
       isClaimPremiumProductDisabled: z
     })
   }

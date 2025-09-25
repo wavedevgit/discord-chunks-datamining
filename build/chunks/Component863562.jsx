@@ -1,4 +1,4 @@
-/** Chunk was on 21376 **/
+/** Chunk was on 64523 **/
 /** chunk id: 863562, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -22,7 +22,7 @@ let f = e => {
     isDisabled: l,
     sticker: f,
     canManageSticker: h
-  } = e, [b, x] = i.useState(false), [j, v] = (0, c.Z)(null, 4e3), _ = () => {
+  } = e, [x, b] = i.useState(false), [j, v] = (0, c.Z)(null, 4e3), _ = () => {
     (0, a.ZDy)(async () => {
       let {
         default: e
@@ -50,11 +50,11 @@ let f = e => {
       }, t))
     })
   }, O = async () => {
-    v(null), x(true);
+    v(null), b(true);
     try {
       await (0, u.Um)(f)
     } catch (e) {
-      v(e.body.message), x(false)
+      v(e.body.message), b(false)
     }
   }, y = d.ZP.useUserTag(f.user);
   return (0, r.jsx)(a.ua7, {
@@ -67,7 +67,7 @@ let f = e => {
       }),
       children: [(0, r.jsxs)("div", {
         className: s()(p.content, {
-          [p.contentRemoving]: b
+          [p.contentRemoving]: x
         }),
         children: [(0, r.jsx)(m.Z, {
           className: p.sticker,
@@ -113,7 +113,7 @@ let f = e => {
             })
           })]
         }) : null]
-      }), b && (0, r.jsx)(a.$jN, {
+      }), x && (0, r.jsx)(a.$jN, {
         className: p.spinner
       })]
     })

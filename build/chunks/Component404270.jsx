@@ -1,8 +1,8 @@
-/** Chunk was on 21376 **/
+/** Chunk was on 64523 **/
 /** chunk id: 404270, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => b
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -20,15 +20,15 @@ var Chunk120356 = require("./120356.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk723116 = require("./723116.js");
-let x = e => {
+let b = e => {
   var t;
   let {
     className: n
-  } = e, i = (0, s.e7)([c.default], () => c.default.getCurrentUser()), x = (0, s.e7)([o.default], () => o.default.locale), j = (0, s.e7)([u.Z], () => u.Z.getPremiumTypeSubscription()), v = (0, s.e7)([d.Z], () => null != j ? d.Z.get(j.planId) : true), _ = null != (t = (0, s.e7)([d.Z], () => null != v ? d.Z.getForSkuAndInterval((0, g.Wz)(f.Si.GUILD), v.interval, v.intervalCount) : true)) ? t : f.GP[f.Xh.PREMIUM_MONTH_GUILD];
+  } = e, i = (0, s.e7)([c.default], () => c.default.getCurrentUser()), b = (0, s.e7)([o.default], () => o.default.locale), j = (0, s.e7)([u.Z], () => u.Z.getPremiumTypeSubscription()), v = (0, s.e7)([d.Z], () => null != j ? d.Z.get(j.planId) : true), _ = null != (t = (0, s.e7)([d.Z], () => null != v ? d.Z.getForSkuAndInterval((0, g.Wz)(f.Si.GUILD), v.interval, v.intervalCount) : true)) ? t : f.GP[f.Xh.PREMIUM_MONTH_GUILD];
   return (0, r.jsxs)("div", {
-    className: l()(b.wrapper, n),
+    className: l()(x.wrapper, n),
     children: [(0, r.jsx)(a.X6q, {
-      className: b.heading,
+      className: x.heading,
       variant: "heading-xl/semibold",
       children: h.intl.string(h.t["3x1PFB"])
     }), (0, r.jsx)(a.Text, {
@@ -45,7 +45,7 @@ let x = e => {
           price: c,
           originalPrice: d,
           originalPriceHook: (e, t) => (0, r.jsx)("span", {
-            className: b.originalPrice,
+            className: x.originalPrice,
             children: e
           }, t),
           freeSubscriptionCount: f.cb,
@@ -54,7 +54,7 @@ let x = e => {
           price: c,
           originalPrice: d,
           originalPriceHook: (e, t) => (0, r.jsx)("span", {
-            className: b.originalPrice,
+            className: x.originalPrice,
             children: e
           }, t),
           discountPercent: (0, m.T3)(n, f.Rr / 100)
@@ -63,7 +63,7 @@ let x = e => {
         })
       }({
         currentUser: i,
-        locale: x,
+        locale: b,
         guildBoostingPlanId: _.id,
         interval: _.interval,
         intervalCount: _.intervalCount

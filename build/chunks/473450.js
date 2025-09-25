@@ -1,5 +1,6 @@
-/** Chunk was on 58121 **/
+/** Chunk was on 64523 **/
 /** chunk id: 473450, original params: e,t,n (module,exports,require) **/
+"use strict";
 module.exports = {
   upsellHeader: "upsellHeader_d9161f",
   islands: "islands_d9161f",

@@ -17,8 +17,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk933557 = require("./933557.js"),
   Chunk313201 = require("./313201.js"),
   Chunk434404 = require("./434404.js"),
-  Chunk764260 = require("./764260.js"),
   Chunk999382 = require("./999382.js"),
+  Chunk84058 = require("./84058.js"),
   Chunk422559 = require("./422559.js"),
   Chunk210887 = require("./210887.js"),
   Chunk984933 = require("./984933.js"),
@@ -566,7 +566,7 @@ let K = e => {
     }, []);
     let {
       guild: a
-    } = (0, o.cj)([b.Z], () => b.Z.getProps()), c = (0, o.e7)([N.Z], () => N.Z.theme), [d, u] = n.useState(false), [m, g] = n.useState(!y.$X.some(e => w.oz(e, a))), [C, O] = n.useState(y.b4), [T, A] = n.useState(y.b4), [D] = n.useState(null == a ? true : a.defaultMessageNotifications), [k] = n.useState(null == a ? true : a.verificationLevel), [G] = n.useState(null == a ? true : a.explicitContentFilter), [Z] = n.useState(m), q = (0, o.e7)([_.Z], () => null != a ? _.Z.getEveryoneRole(a) : true), H = (0, o.e7)([j.ZP], () => null != a ? j.ZP.getChannels(a.id) : null), z = (0, h.Dt)(), {
+    } = (0, o.cj)([v.Z], () => v.Z.getProps()), c = (0, o.e7)([N.Z], () => N.Z.theme), [d, u] = n.useState(false), [m, g] = n.useState(!y.$X.some(e => w.oz(e, a))), [C, O] = n.useState(y.b4), [T, A] = n.useState(y.b4), [D] = n.useState(null == a ? true : a.defaultMessageNotifications), [k] = n.useState(null == a ? true : a.verificationLevel), [G] = n.useState(null == a ? true : a.explicitContentFilter), [Z] = n.useState(m), q = (0, o.e7)([_.Z], () => null != a ? _.Z.getEveryoneRole(a) : true), H = (0, o.e7)([j.ZP], () => null != a ? j.ZP.getChannels(a.id) : null), z = (0, h.Dt)(), {
       enabled: V
     } = (0, x.D2)(null != (t = null == a ? true : a.id) ? t : L.lds);
     if (null == a) return null;
@@ -594,7 +594,7 @@ let K = e => {
           i = U(B({}, q), {
             permissions: t
           });
-        t !== q.permissions && await (0, v.Gf)(a.id, [i]), f.Z.updateGuild({
+        t !== q.permissions && await (0, b.Gf)(a.id, [i]), f.Z.updateGuild({
           features: e,
           rulesChannelId: C,
           publicUpdatesChannelId: T

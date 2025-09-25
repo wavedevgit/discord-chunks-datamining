@@ -1,4 +1,4 @@
-/** Chunk was on 21376 **/
+/** Chunk was on 64523 **/
 /** chunk id: 509026, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -51,13 +51,13 @@ function p(e, t) {
 function f(e) {
   let {
     guild: t
-  } = e, f = (0, i.e7)([s.Z], () => s.Z.isUploadingEmoji()), h = (0, u.Z)(t.id), b = (0, d.Z)(t) - h.length, x = (0, c.mY)();
+  } = e, f = (0, i.e7)([s.Z], () => s.Z.isUploadingEmoji()), h = (0, u.Z)(t.id), x = (0, d.Z)(t) - h.length, b = (0, c.mY)();
   return (0, r.jsxs)(l.hjN, {
     title: m.intl.string(m.t.LDT0Q0),
-    disabled: x,
+    disabled: b,
     children: [(0, r.jsx)(l.R94, {
       type: l.R94.Types.DESCRIPTION,
-      disabled: x,
+      disabled: b,
       children: m.intl.format(m.t.H9Jxp6, {
         maxSlots: (0, d.Z)(t)
       })
@@ -76,7 +76,7 @@ function f(e) {
           }))
         })
       },
-      disabled: x || f || 0 === b,
+      disabled: b || f || 0 === x,
       size: "md",
       variant: "primary",
       text: m.intl.string(m.t.AuPtoq),
@@ -101,7 +101,7 @@ function f(e) {
           }))
         })
       },
-      editingDisabled: x
+      editingDisabled: b
     })]
   })
 }

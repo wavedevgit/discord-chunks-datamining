@@ -1,4 +1,4 @@
-/** Chunk was on 21376 **/
+/** Chunk was on 64523 **/
 /** chunk id: 665324, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -122,7 +122,7 @@ function z(e) {
       children: e => (0, r.jsx)(m.P3F, {
         className: G.boostingIconWrapper,
         onClick: () => {
-          (0, x.f)({
+          (0, b.f)({
             guildId: i,
             location: {
               section: A.jXE.GUILD_SETTINGS_SOUNDBOARD,
@@ -210,7 +210,7 @@ function K(e) {
   let p = i.useMemo(() => l.reduce((e, t) => (e[t.soundId] = new Audio((0, O.Z)(t.soundId)), e), {}), [l]),
     h = 0 === l.length && !s;
 
-  function b(e) {
+  function x(e) {
     var t;
     null == (t = o.current) || t.pause();
     let n = p[e.soundId];
@@ -220,7 +220,7 @@ function K(e) {
       var e;
       null == (e = o.current) || e.pause()
     }, []), s) return (0, r.jsx)(m.$jN, {});
-  let x = B ? (0, r.jsx)(m.zxk, {
+  let b = B ? (0, r.jsx)(m.zxk, {
     variant: "primary",
     text: k.intl.string(k.t["/uNYPD"]),
     onClick: function() {
@@ -244,7 +244,7 @@ function K(e) {
         children: k.intl.string(k.t.BohnsL)
       }), (0, r.jsx)("div", {
         className: G.buttons,
-        children: !h && x
+        children: !h && b
       })]
     }), h ? (0, r.jsxs)(m.ubH, {
       theme: d,
@@ -258,7 +258,7 @@ function K(e) {
         note: k.intl.string(k.t.ZhoSBA),
         noteClassName: G.emptyText,
         children: k.intl.string(k.t.I6P1p6)
-      }), x]
+      }), b]
     }) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(m.$i$, {
         className: G.divider
@@ -290,7 +290,7 @@ function K(e) {
           sound: e,
           isPlaying: false,
           guild: t,
-          onPlaySound: b
+          onPlaySound: x
         }, e.soundId))]
       })]
     })]
@@ -308,13 +308,13 @@ function Y(e) {
     name: u,
     user: f,
     userId: h,
-    emojiId: x,
+    emojiId: b,
     emojiName: _
   } = t, {
     analyticsLocations: O
-  } = (0, b.ZP)(), y = (0, c.e7)([I.default], () => null != f ? f : I.default.getUser(h), [h, f]), {
+  } = (0, x.ZP)(), y = (0, c.e7)([I.default], () => null != f ? f : I.default.getUser(h), [h, f]), {
     canManageGuildExpression: E
-  } = (0, j.XJ)(o), S = i.useMemo(() => E(t), [t, E]), P = null != x || null != _, [w, D] = i.useState(false), Z = (0, C.z)(t, o.id);
+  } = (0, j.XJ)(o), S = i.useMemo(() => E(t), [t, E]), P = null != b || null != _, [w, D] = i.useState(false), Z = (0, C.z)(t, o.id);
   async function A() {
     if (!w) {
       D(true);
@@ -344,7 +344,7 @@ function Y(e) {
       [G.active]: l
     }),
     children: [P ? (0, r.jsx)(p.Z, {
-      emojiId: x,
+      emojiId: b,
       emojiName: _,
       className: G.emoji
     }) : (0, r.jsx)(m.XBm, {
