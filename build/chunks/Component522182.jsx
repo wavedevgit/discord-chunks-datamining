@@ -34,8 +34,8 @@ function m(e) {
   }(e, ["onClose"]);
   let {
     analyticsLocations: m,
-    newestAnalyticsLocation: f
-  } = (0, o.ZP)(), p = (0, i.e7)([c.Z], () => c.Z.hasSaveablePendingChanges());
+    newestAnalyticsLocation: p
+  } = (0, o.ZP)(), f = (0, i.e7)([c.Z], () => c.Z.hasSaveablePendingChanges());
   return (0, l.jsx)(d.ef, function(e) {
     for (var n = 1; n < arguments.length; n++) {
       var t = null != arguments[n] ? arguments[n] : {},
@@ -59,11 +59,11 @@ function m(e) {
     tooltipText: u.intl.string(u.t.b2d0Nz),
     themeColor: "secondary",
     onClick: () => {
-      if (p) return void a.Z.notifyPendingWidgets();
+      if (f) return void a.Z.notifyPendingWidgets();
       (0, s.mK)({
         analyticsLocations: m,
         openInLayer: false,
-        analyticsSource: f
+        analyticsSource: p
       }), null == n || n()
     }
   }, t))

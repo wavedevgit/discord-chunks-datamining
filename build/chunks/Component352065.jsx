@@ -84,13 +84,16 @@ function b(e) {
       impressionType: null != (t = null == y ? true : y.impressionType) ? t : l.ImpressionTypes.MODAL,
       children: (0, r.jsx)(c.y5t, {
         forceLevel: 1,
-        children: (0, r.jsx)(s.animated.div, {
-          "data-mana-component": "layer-modal",
-          className: o()(p.container, _.modal),
-          style: T,
-          children: (0, r.jsx)("div", {
-            className: _.modalContent,
-            children: O
+        children: (0, r.jsx)("div", {
+          className: _.outerContainer,
+          children: (0, r.jsx)(s.animated.div, {
+            "data-mana-component": "layer-modal",
+            className: o()(p.container, _.modal),
+            style: T,
+            children: (0, r.jsx)("div", {
+              className: _.modalContent,
+              children: O
+            })
           })
         })
       })

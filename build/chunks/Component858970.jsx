@@ -1,7 +1,7 @@
 /** Chunk was on 31553 **/
 /** chunk id: 858970, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => Z
+  Z: () => I
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk442837 = require("./442837.js"),
@@ -42,12 +42,12 @@ function O(e) {
   return e
 }
 
-function Z(e) {
+function I(e) {
   let {
     user: n,
     guildId: t,
-    channelId: Z,
-    messageId: I,
+    channelId: I,
+    messageId: Z,
     roleId: P,
     transitionState: N,
     openedAt: T,
@@ -60,8 +60,8 @@ function Z(e) {
     userId: n.id,
     showGuildProfile: true,
     guildId: S,
-    channelId: Z,
-    messageId: I,
+    channelId: I,
+    messageId: Z,
     roleId: P
   }), D = [{
     icon: r.owK,
@@ -69,7 +69,7 @@ function Z(e) {
   }, {
     icon: r.owK,
     description: b.intl.string(C ? b.t.QxrDY2 : b.t.W6fjkZ)
-  }], R = (0, f.ZP)(n.id, S), L = d.ZP.getName(null == R ? true : R.guildId, Z, n), M = b.intl.formatToPlainString(b.t.KRe1Fh, {
+  }], R = (0, p.ZP)(n.id, S), L = d.ZP.getName(null == R ? true : R.guildId, I, n), M = b.intl.formatToPlainString(b.t.KRe1Fh, {
     name: L
   });
   return (0, l.jsx)(s.Gt, {
@@ -94,7 +94,7 @@ function Z(e) {
             className: y.background
           }), (0, l.jsxs)("div", {
             className: y.content,
-            children: [(0, l.jsx)(p.Z, {
+            children: [(0, l.jsx)(f.Z, {
               user: n,
               guildId: S
             }), (0, l.jsxs)("div", {

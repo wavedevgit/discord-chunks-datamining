@@ -47,14 +47,14 @@ function C(e) {
     transitionState: U,
     openedAt: k,
     onClose: B,
-    sourceAnalyticsLocations: V = []
-  } = e, F = C === T.ME ? true : C, G = (0, u.ZP)(n.id, F), z = c.ZP.getName(F, w, n), K = (0, a.Dt)(), {
+    sourceAnalyticsLocations: F = []
+  } = e, V = C === T.ME ? true : C, G = (0, u.ZP)(n.id, V), z = c.ZP.getName(V, w, n), K = (0, a.Dt)(), {
     analyticsLocations: W
-  } = (0, s.ZP)([...V, o.Z.USER_PROFILE_MODAL]), Y = (0, d.ZB)({
+  } = (0, s.ZP)([...F, o.Z.USER_PROFILE_MODAL]), Y = (0, d.ZB)({
     layout: "MODAL",
     userId: n.id,
     sourceSessionId: R,
-    guildId: F,
+    guildId: V,
     channelId: w,
     messageId: _,
     roleId: D
@@ -90,11 +90,11 @@ function C(e) {
             children: [(0, l.jsx)(y.Z, {
               children: (0, l.jsx)(g.Z, {
                 user: n,
-                guildId: F,
+                guildId: V,
                 onCloseProfile: B
               })
             }), (0, l.jsxs)("div", {
-              children: [(0, l.jsx)(p.Z, {
+              children: [(0, l.jsx)(f.Z, {
                 user: n,
                 displayProfile: G,
                 themeType: E.l.MODAL
@@ -103,10 +103,10 @@ function C(e) {
                 children: [(0, l.jsx)(m.Z, {
                   user: n,
                   displayProfile: G,
-                  guildId: F,
+                  guildId: V,
                   channelId: w,
                   themeType: E.l.MODAL
-                }), (0, l.jsx)(Z.Z, {
+                }), (0, l.jsx)(I.Z, {
                   user: n,
                   themeType: E.l.MODAL,
                   hasEntered: U === i.Dvm.ENTERED,
@@ -126,7 +126,7 @@ function C(e) {
                     tooltipContainerClassName: S.messageIconButton
                   }), (0, l.jsx)(b.Z, {
                     user: n,
-                    guildId: F
+                    guildId: V
                   }), (0, l.jsx)(v.Z, {
                     user: n
                   })]
@@ -144,16 +144,16 @@ function C(e) {
                   size: "sm",
                   userId: n.id
                 }),
-                tags: (0, l.jsx)(f.Z, {
+                tags: (0, l.jsx)(p.Z, {
                   displayProfile: G,
                   themeType: E.l.MODAL,
                   onClose: B
                 })
-              }), (0, l.jsx)(I.Z, {
+              }), (0, l.jsx)(Z.Z, {
                 user: n,
                 currentUser: t,
                 displayProfile: G,
-                guildId: F,
+                guildId: V,
                 items: H,
                 initialSection: null != L ? L : N.oh.BOT_INFO,
                 initialSubsection: M,

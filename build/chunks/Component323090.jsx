@@ -30,8 +30,8 @@ function g(e) {
     subsection: y,
     onClose: O
   } = e, {
-    trackUserProfileAction: Z
-  } = (0, c.KZ)(), I = (0, i.e7)([d.Z], () => {
+    trackUserProfileAction: I
+  } = (0, c.KZ)(), Z = (0, i.e7)([d.Z], () => {
     var e;
     return null == (e = d.Z.getUserProfile(n.id)) ? true : e.application
   }), P = (0, i.e7)([s.Z, a.Z], () => s.Z.getChannel(a.Z.getChannelId()));
@@ -41,9 +41,9 @@ function g(e) {
     children: [(null == g ? true : g.bio) != null && (null == g ? true : g.bio) !== "" && (0, l.jsx)(m.Z, {
       userBio: g.bio,
       setLineClamp: false
-    }), (null == I ? true : I.popularApplicationCommandIds) != null && null != P && (0, l.jsx)(u.Z, {
-      applicationId: I.id,
-      commandIds: I.popularApplicationCommandIds,
+    }), (null == Z ? true : Z.popularApplicationCommandIds) != null && null != P && (0, l.jsx)(u.Z, {
+      applicationId: Z.id,
+      commandIds: Z.popularApplicationCommandIds,
       channel: P,
       guildId: b,
       onClick: O
@@ -52,21 +52,21 @@ function g(e) {
       currentUser: t,
       guildId: g.guildId,
       scrollIntoView: y === j.Tb.ROLES
-    }), (0, l.jsx)(p.Z, {
+    }), (0, l.jsx)(f.Z, {
       heading: x.intl.string(x.t["A//N4u"]),
-      children: (0, l.jsx)(f.Z, {
+      children: (0, l.jsx)(p.Z, {
         userId: n.id,
         guildId: b,
         tooltipDelay: j.vB
       })
-    }), (0, l.jsx)(p.Z, {
+    }), (0, l.jsx)(f.Z, {
       heading: x.intl.string(x.t["mQKv+v"]),
       scrollIntoView: y === j.Tb.NOTE,
       children: (0, l.jsx)(o.Z, {
         userId: n.id,
         className: v.note,
         autoFocus: y === j.Tb.NOTE,
-        onUpdate: () => Z({
+        onUpdate: () => I({
           action: "SET_NOTE"
         })
       })

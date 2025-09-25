@@ -1,7 +1,7 @@
 /** Chunk was on 31553 **/
 /** chunk id: 384816, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => Z
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -26,28 +26,28 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk438160 = require("./438160.js");
 
-function I(e) {
+function Z(e) {
   let {
     user: n,
     currentUser: t,
-    displayProfile: I,
+    displayProfile: Z,
     subsection: P,
     onClose: N
   } = e, {
     trackUserProfileAction: T
   } = (0, m.KZ)(), E = (0, i.e7)([d.Z], () => d.Z.getGuildId()), A = (0, s.Y)({
     userId: n.id
-  }), S = (0, i.e7)([u.Z], () => u.Z.hidePersonalInformation), C = (0, i.e7)([c.default], () => c.default.locale), w = (0, p.Z)(n.id), _ = (0, f.Z)(n.id);
+  }), S = (0, i.e7)([u.Z], () => u.Z.hidePersonalInformation), C = (0, i.e7)([c.default], () => c.default.locale), w = (0, f.Z)(n.id), _ = (0, p.Z)(n.id);
   return (0, l.jsxs)(r.zJl, {
     fade: true,
-    className: Z.scroller,
-    children: [(null == I ? true : I.bio) != null && (null == I ? true : I.bio) !== "" && !S && (0, l.jsx)(h.Z, {
-      userBio: I.bio,
+    className: I.scroller,
+    children: [(null == Z ? true : Z.bio) != null && (null == Z ? true : Z.bio) !== "" && !S && (0, l.jsx)(h.Z, {
+      userBio: Z.bio,
       setLineClamp: false
-    }), (null == I ? true : I.guildId) != null && (0, l.jsx)(b.Z, {
+    }), (null == Z ? true : Z.guildId) != null && (0, l.jsx)(b.Z, {
       user: n,
       currentUser: t,
-      guildId: I.guildId,
+      guildId: Z.guildId,
       scrollIntoView: P === y.Tb.ROLES
     }), n.isProvisional && (0, l.jsx)(g.Z, {
       heading: O.intl.string(O.t.Iyka0d),
@@ -68,7 +68,7 @@ function I(e) {
       heading: O.intl.string(O.t.a6XYDw),
       children: (0, l.jsx)(v.Z, {
         userId: n.id,
-        guildId: null == I ? true : I.guildId,
+        guildId: null == Z ? true : Z.guildId,
         tooltipDelay: y.vB
       })
     }), w.length > 0 && (0, l.jsx)(g.Z, {
@@ -76,14 +76,14 @@ function I(e) {
       scrollIntoView: P === y.Tb.CONNECTIONS,
       children: (0, l.jsx)(j.ZP, {
         connectedAccounts: w,
-        className: Z.connections,
+        className: I.connections,
         userId: n.id,
         locale: C
       })
     }), _.length > 0 && (0, l.jsx)(g.Z, {
       heading: O.intl.string(O.t.PHjkRE),
       children: _.map(e => (0, l.jsx)(j.tH, {
-        className: Z.appsConnections,
+        className: I.appsConnections,
         applicationRoleConnection: e,
         locale: C,
         onApplicationClicked: () => {
@@ -98,7 +98,7 @@ function I(e) {
       scrollIntoView: P === y.Tb.NOTE,
       children: (0, l.jsx)(o.Z, {
         userId: n.id,
-        className: Z.note,
+        className: I.note,
         autoFocus: P === y.Tb.NOTE,
         onUpdate: () => T({
           action: "SET_NOTE"

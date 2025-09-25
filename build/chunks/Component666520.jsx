@@ -1,7 +1,7 @@
 /** Chunk was on 31553 **/
 /** chunk id: 666520, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => p
 }), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -14,16 +14,16 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk460211 = require("./460211.js");
 
-function f(e) {
+function p(e) {
   let {
     autoFocus: n = false,
     className: t,
-    userId: f,
-    onUpdate: p
+    userId: p,
+    onUpdate: f
   } = e, h = (0, r.e7)([c.Z], () => c.Z.hidePersonalInformation), {
     loading: j,
     note: x
-  } = (0, a.Z)(f), v = i.useRef(null);
+  } = (0, a.Z)(p), v = i.useRef(null);
   return (i.useEffect(() => {
     if (!n || h) return;
     let e = v.current;
@@ -38,7 +38,7 @@ function f(e) {
       "aria-label": u.intl.string(u.t.PbMNh4),
       onBlur: e => {
         let n = e.currentTarget.value;
-        (null != x ? x : "") !== n && (null == p || p(), s.Z.updateNote(f, n))
+        (null != x ? x : "") !== n && (null == f || f(), s.Z.updateNote(p, n))
       },
       onKeyPress: e => {
         if (13 === e.which)

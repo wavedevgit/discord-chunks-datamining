@@ -1,7 +1,7 @@
 /** Chunk was on 31553 **/
 /** chunk id: 768111, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => p
 }), require("./539854.js");
 var Chunk46841 = require("./46841.js"),
   Chunk477448 = require("./477448.js"),
@@ -14,21 +14,21 @@ var Chunk46841 = require("./46841.js"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx");
 
-function f(e) {
+function p(e) {
   let {
     user: n,
     currentUser: t
   } = e, {
-    mutualFriendsCount: f,
-    mutualGuilds: p
-  } = (0, s.Z)(n), h = null == p ? true : p.length, j = (0, o.Z)(n), x = (0, i.Z)({
+    mutualFriendsCount: p,
+    mutualGuilds: f
+  } = (0, s.Z)(n), h = null == f ? true : f.length, j = (0, o.Z)(n), x = (0, i.Z)({
     location: "useUserProfileModalV2TabBarItems"
   }), v = (0, r.Z)({
     location: "useUserProfileModalV2TabBarItems"
   }), g = (0, a.Z)(n.id), b = (0, l.S)({
     location: "useUserProfileModalV2TabBarItems"
-  }), y = [], O = n.id === (null == t ? true : t.id), Z = g.length > 0;
-  return (O && x || Z && v) && y.push({
+  }), y = [], O = n.id === (null == t ? true : t.id), I = g.length > 0;
+  return (O && x || I && v) && y.push({
     text: m.intl.string(m.t.laViw8),
     section: u.oh.WIDGETS,
     subsection: true
@@ -41,7 +41,7 @@ function f(e) {
     section: u.oh.WISHLIST,
     subsection: true
   }), n.id !== (null == t ? true : t.id) && j && (y.push({
-    text: (0, c.Z)(f),
+    text: (0, c.Z)(p),
     section: u.oh.MUTUAL_FRIENDS,
     subsection: true
   }), y.push({

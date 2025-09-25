@@ -72,9 +72,16 @@ let C = Chunk647438.forwardRef(function(e, t) {
       resultsState: o,
       onSelectedIndexChanged: s,
       selectedChannel: l
-    } = e, [c, u] = i.useState(false), d = e => {
+    } = e, [c, d] = i.useState(false), f = e => {
       e.stopPropagation(), e.preventDefault()
-    }, f = i.useCallback(e => {
+    }, _ = i.useCallback(e => {
+      d(e), s(e);
+      let t = document.getElementById("".concat(a, "-").concat(e));
+      null != t && t.scrollIntoView({
+        block: "nearest",
+        inline: "nearest"
+      })
+    }, [a, s]), p = i.useCallback(e => {
       let {
         query: t,
         performSearch: n,
@@ -85,50 +92,50 @@ let C = Chunk647438.forwardRef(function(e, t) {
         performSearch: n,
         replace: r,
         resultsState: o
-      }), u(false)
-    }, [o]), {
-      items: _,
-      itemsData: p
+      }), _(false)
+    }, [o, _]), {
+      items: h,
+      itemsData: m
     } = (0, b.Z)({
       resultsState: o,
       searchContext: n,
       selectedChannel: l,
-      setSearchQuery: f
-    }), h = e => {
+      setSearchQuery: p
+    }), g = e => {
       let {
         newSelectedIndex: t,
         searchAutocompleteSelectAction: n
       } = e, r = t;
-      return null == r && (r = c), !(r < 0) && !(r > p.length - 1) && (p[r].data.onSelect({
+      return null == r && (r = c), !(r < 0) && !(r > m.length - 1) && (m[r].data.onSelect({
         searchAutocompleteSelectAction: n,
         selectedIndex: r
       }), true)
-    }, m = e => {
+    }, y = e => {
       let t = e;
-      t > p.length - 1 ? t = 0 : t < 0 && (t = p.length - 1), u(t), s(t)
-    }, g = e => {
-      m(c + e)
+      t > m.length - 1 ? t = 0 : t < 0 && (t = m.length - 1), _(t)
+    }, O = e => {
+      y(c + e)
     };
     return i.useEffect(() => {
-      o.mode.type === I.Sap.FILTER ? u(0) : u(false)
-    }, [o.mode.type]), i.useImperativeHandle(t, () => ({
+      o.mode.type === I.Sap.FILTER ? _(0) : _(false)
+    }, [o.mode.type, _]), i.useImperativeHandle(t, () => ({
       selectedIndex: c,
       focusNextOption: () => {
-        g(1)
+        O(1)
       },
       focusPreviousOption: () => {
-        g(false)
+        O(false)
       },
-      selectOption: h
-    })), (0, r.jsx)("div", {
-      onMouseDown: d,
+      selectOption: g
+    })), (0, r.jsx)(u.u2D, {
+      onMouseDown: f,
       role: "listbox",
       id: a,
       tabIndex: false,
       "aria-activedescendant": "".concat(a, "-").concat(c),
       className: T.container,
       children: (0, r.jsx)(A, {
-        items: _,
+        items: h,
         navId: a,
         selectedIndex: c
       })
@@ -174,7 +181,7 @@ let C = Chunk647438.forwardRef(function(e, t) {
       focusNextOption: () => {},
       focusPreviousOption: () => {},
       selectOption: () => {}
-    })), (0, r.jsx)("div", {
+    })), (0, r.jsx)(u.u2D, {
       onMouseDown: d,
       role: "listbox",
       id: n,

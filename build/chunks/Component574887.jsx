@@ -1,7 +1,7 @@
 /** Chunk was on 31553 **/
 /** chunk id: 574887, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => Z
+  Z: () => I
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -60,7 +60,7 @@ function O(e) {
     account: t,
     locale: i,
     userId: r
-  } = e, o = null != (n = t.metadata) ? n : {}, p = (0, u.FI)(o[x.PC.CREATED_AT], i), O = a.Z.get((0, d.rR)(t.type));
+  } = e, o = null != (n = t.metadata) ? n : {}, f = (0, u.FI)(o[x.PC.CREATED_AT], i), O = a.Z.get((0, d.rR)(t.type));
   return (0, l.jsxs)("li", {
     className: g.connection,
     children: [(0, l.jsx)(s.ua7, {
@@ -113,16 +113,16 @@ function O(e) {
                   className: g.accountNameText,
                   children: t.name
                 }))
-              }), (0, l.jsx)(f.Z, {
+              }), (0, l.jsx)(p.Z, {
                 className: g.platformUrlIcon,
-                direction: f.Z.Directions.RIGHT
+                direction: p.Z.Directions.RIGHT
               })]
             })
           })
-        })(), null != p && (0, l.jsx)(s.Text, {
+        })(), null != f && (0, l.jsx)(s.Text, {
           variant: "text-xs/normal",
           children: v.intl.format(v.t["9rfonp"], {
-            date: p
+            date: f
           })
         })]
       }), (0, l.jsx)("div", {
@@ -133,12 +133,12 @@ function O(e) {
   })
 }
 
-function Z(e) {
+function I(e) {
   let {
     connections: n,
     userId: t,
     className: i
-  } = e, s = (0, o.e7)([p.default], () => p.default.locale);
+  } = e, s = (0, o.e7)([f.default], () => f.default.locale);
   return 0 === n.length ? null : (0, l.jsx)("ul", {
     className: r()(g.container, i),
     children: n.map(e => (0, l.jsx)(O, {

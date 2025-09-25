@@ -185,7 +185,7 @@ function k(e) {
     locale: o,
     onApplicationClicked: l,
     selectedGuildId: r
-  } = e, d = (0, x.rm)(n, true, o), u = () => {
+  } = e, d = (0, x.rm)(n, o), u = () => {
     null == l || l(), (0, p.transitionToGlobalDiscovery)({
       tab: y.GlobalDiscoveryTab.APPS,
       applicationId: n.application.id,

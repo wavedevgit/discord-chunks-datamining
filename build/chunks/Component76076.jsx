@@ -50,10 +50,10 @@ let j = {
       type: i
     } = e;
     return (0, l.jsxs)("div", {
-      className: o()(h.toast, p.toast),
+      className: o()(h.toast, f.toast),
       "data-type": i,
       children: [(0, l.jsx)("div", {
-        className: p.toastIcon,
+        className: f.toastIcon,
         children: t
       }), (0, l.jsx)(c.Text, {
         color: "header-primary",
@@ -66,11 +66,11 @@ let j = {
     let {
       className: n,
       onAutoHide: t
-    } = e, r = (0, u.be)(), m = (0, a.e7)([d.Z], () => d.Z.useReducedMotion), [f, h] = i.useState(false), [v, g] = i.useState(null);
+    } = e, r = (0, u.be)(), m = (0, a.e7)([d.Z], () => d.Z.useReducedMotion), [p, h] = i.useState(false), [v, g] = i.useState(null);
     i.useEffect(() => {
       null !== r ? (h(true), g(j[r]), c.uvj.announce(j[r].message)) : h(false)
     }, [r]);
-    let b = (0, c.Yzy)(f, {
+    let b = (0, c.Yzy)(p, {
       from: {
         transform: m ? "translateY(0)" : "translateY(-12px)",
         opacity: 0
@@ -91,15 +91,15 @@ let j = {
       }
     }, "animate-always");
     return i.useEffect(() => {
-      if (f) {
+      if (p) {
         let e = setTimeout(() => {
           null == t || t()
         }, 2e3);
         return () => clearTimeout(e)
       }
-    }, [f, t]), (0, l.jsx)(l.Fragment, {
+    }, [p, t]), (0, l.jsx)(l.Fragment, {
       children: b((e, t) => t && null !== v && (0, l.jsx)(s.animated.div, {
-        className: o()(n, p.toastContainer),
+        className: o()(n, f.toastContainer),
         style: e,
         children: (0, l.jsx)(x, function(e) {
           for (var n = 1; n < arguments.length; n++) {

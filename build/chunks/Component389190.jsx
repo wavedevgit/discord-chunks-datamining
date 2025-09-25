@@ -33,18 +33,18 @@ function h(e) {
   return i.useEffect(() => {
     (0, d.Z)(n.id, y)
   }, [n.id, y]), (0, l.jsx)(r.zJl, {
-    className: p.listScroller,
+    className: f.listScroller,
     fade: true,
     children: null == x ? (0, l.jsx)("div", {
-      className: p.empty,
+      className: f.empty,
       children: (0, l.jsx)(r.$jN, {})
     }) : 0 === x.length ? (0, l.jsxs)("div", {
-      className: p.empty,
+      className: f.empty,
       children: [(0, l.jsx)("div", {
-        className: p.emptyIconFriends
+        className: f.emptyIconFriends
       }), (0, l.jsx)("div", {
-        className: p.emptyText,
-        children: f.intl.string(f.t["/5p4g4"])
+        className: f.emptyText,
+        children: p.intl.string(p.t["/5p4g4"])
       })]
     }) : x.map(e => {
       let {

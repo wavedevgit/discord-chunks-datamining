@@ -1,7 +1,7 @@
 /** Chunk was on 31553 **/
 /** chunk id: 444141, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => p
 });
 var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
@@ -44,12 +44,12 @@ function m(e, n) {
   }), e
 }
 
-function f(e) {
+function p(e) {
   let {
     user: n,
     guildId: t,
-    channelId: f,
-    displayProfile: p,
+    channelId: p,
+    displayProfile: f,
     onClose: h
   } = e, {
     analyticsLocations: j,
@@ -58,7 +58,7 @@ function f(e) {
     context: v,
     trackUserProfileAction: g
   } = (0, s.KZ)(), b = (0, c.ZP)(n.id, t);
-  return (null == b ? true : b.guildId) == null || null == v ? null : (null == p ? true : p.guildId) != null ? (0, l.jsx)(i.sNh, {
+  return (null == b ? true : b.guildId) == null || null == v ? null : (null == f ? true : f.guildId) != null ? (0, l.jsx)(i.sNh, {
     id: "view-main-profile",
     label: d.intl.string(d.t.GISTtb),
     subtext: d.intl.formatToPlainString(d.t["mn/nW1"], {
@@ -77,7 +77,7 @@ function f(e) {
     id: "view-server-profile",
     label: d.intl.string(d.t.DisZzM),
     subtext: d.intl.formatToPlainString(d.t["mn/nW1"], {
-      displayName: o.ZP.getName(t, f, n)
+      displayName: o.ZP.getName(t, p, n)
     }),
     action: () => {
       null == h || h(), (0, a.openUserProfileModal)(m(u({}, v), {

@@ -37,7 +37,7 @@ function b(e) {
     currentUser: r,
     guildId: s,
     onClose: c
-  }) : n === j.oh.MUTUAL_FRIENDS ? (0, l.jsx)(p.Z, {
+  }) : n === j.oh.MUTUAL_FRIENDS ? (0, l.jsx)(f.Z, {
     user: i,
     guildId: s,
     channelId: a,
@@ -54,7 +54,7 @@ function b(e) {
     guildId: s,
     subsection: t,
     onClose: c
-  }) : (0, l.jsx)(f.Z, {
+  }) : (0, l.jsx)(p.Z, {
     user: i,
     currentUser: r,
     displayProfile: o,
@@ -68,14 +68,14 @@ function y(e) {
   let {
     user: u,
     currentUser: m,
-    displayProfile: f,
-    guildId: p,
+    displayProfile: p,
+    guildId: f,
     items: h,
     initialSection: y = j.oh.USER_INFO,
     initialSubsection: O,
-    onClose: Z
+    onClose: I
   } = e, {
-    trackUserProfileAction: I
+    trackUserProfileAction: Z
   } = (0, c.KZ)(), P = (0, r.e7)([a.Z], () => a.Z.hidePersonalInformation), [{
     section: N,
     subsection: T
@@ -95,14 +95,14 @@ function y(e) {
     })
   }, [h, N]);
   let A = i.useCallback(e => {
-    I({
+    Z({
       action: "PRESS_SECTION",
       section: e
     }), E({
       section: e,
       subsection: true
     })
-  }, [I, E]);
+  }, [Z, E]);
   return P ? (0, l.jsx)("div", {
     className: g.container,
     children: (0, l.jsxs)("div", {
@@ -142,9 +142,9 @@ function y(e) {
       subsection: T,
       user: u,
       currentUser: m,
-      displayProfile: f,
-      guildId: p,
-      onClose: Z
+      displayProfile: p,
+      guildId: f,
+      onClose: I
     })]
   })
 }

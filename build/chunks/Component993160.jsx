@@ -36,12 +36,12 @@ function h(e) {
     onClose: g
   }), {
     gameFriends: O,
-    hasOutgoingPendingGameFriends: Z,
-    hasIncomingPendingGameFriends: I
-  } = (0, f.H)({
+    hasOutgoingPendingGameFriends: I,
+    hasIncomingPendingGameFriends: Z
+  } = (0, p.H)({
     userId: n.id
-  }), P = O.length > 0 || Z || I;
-  return v === p.OGo.BLOCKED ? null : n.id === t.id ? (0, l.jsxs)(l.Fragment, {
+  }), P = O.length > 0 || I || Z;
+  return v === f.OGo.BLOCKED ? null : n.id === t.id ? (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsx)(a.Z, {
       user: n,
       guildId: h,
@@ -68,7 +68,7 @@ function h(e) {
       viewProfileItem: y,
       themeColor: "secondary"
     })]
-  }) : v === p.OGo.PENDING_INCOMING ? (0, l.jsxs)(l.Fragment, {
+  }) : v === f.OGo.PENDING_INCOMING ? (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsx)(c.Z, {
       type: "text",
       userId: n.id,
@@ -81,7 +81,7 @@ function h(e) {
       guildId: h,
       themeColor: "secondary"
     })]
-  }) : v === p.OGo.FRIEND || v === p.OGo.PENDING_OUTGOING ? (0, l.jsxs)(l.Fragment, {
+  }) : v === f.OGo.FRIEND || v === f.OGo.PENDING_OUTGOING ? (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsx)(c.Z, {
       type: "text",
       userId: n.id,
@@ -102,7 +102,7 @@ function h(e) {
       viewProfileItem: y,
       themeColor: "secondary"
     })]
-  }) : v === p.OGo.NONE && P ? (0, l.jsxs)(l.Fragment, {
+  }) : v === f.OGo.NONE && P ? (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsx)(c.Z, {
       type: "text",
       userId: n.id,
@@ -117,8 +117,8 @@ function h(e) {
       tooltipPosition: "top",
       tooltipAlign: "center",
       shouldShowTooltip: true,
-      hasIncomingPendingGameFriends: I,
-      hasOutgoingPendingGameFriends: Z
+      hasIncomingPendingGameFriends: Z,
+      hasOutgoingPendingGameFriends: I
     }), (0, l.jsx)(d.Z, {
       type: "icon",
       user: n,

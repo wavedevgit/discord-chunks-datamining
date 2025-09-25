@@ -10,5 +10,7 @@ module.exports = {
   accountNameText: "accountNameText__9bfb9",
   platformUrlAnchor: "platformUrlAnchor__9bfb9",
   platformUrlIcon: "platformUrlIcon__9bfb9",
-  metadata: "metadata__9bfb9"
+  metadata: "metadata__9bfb9",
+  connectedAppRoleAccountClickable: "connectedAppRoleAccountClickable__9bfb9",
+  connectedAppRoleAccountPoweredBy: "connectedAppRoleAccountPoweredBy__9bfb9"
 }

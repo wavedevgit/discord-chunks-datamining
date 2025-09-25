@@ -1,7 +1,7 @@
 /** Chunk was on 31553 **/
 /** chunk id: 116906, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => Z
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -26,11 +26,11 @@ var Chunk442837 = require("./442837.js"),
   Chunk847540 = require("./847540.js"),
   Chunk883172 = require("./883172.js");
 
-function I(e) {
+function Z(e) {
   let {
     user: n,
     currentUser: t,
-    guildId: I,
+    guildId: Z,
     subsection: P,
     onClose: N
   } = e, {
@@ -46,9 +46,9 @@ function I(e) {
   } = (0, m.Z)(n.id), {
     voiceChannel: w,
     voiceActivity: _
-  } = (0, f.Z)({
+  } = (0, p.Z)({
     userId: n.id,
-    guildId: I
+    guildId: Z
   }), D = (0, i.e7)([s.Z], () => s.Z.isFetchingUserOutbox(n.id)), R = n.id === t.id, L = (0, i.e7)([c.Z, a.Z], () => {
     let e = R ? c.Z.getStatus() : a.Z.getStatus(n.id);
     return e === r.Skl.OFFLINE || e === r.Skl.INVISIBLE
@@ -56,7 +56,7 @@ function I(e) {
   return k || B || !D ? (0, l.jsxs)(r.zJl, {
     className: O.scroller,
     fade: true,
-    children: [k ? (0, l.jsx)(p.Z, {
+    children: [k ? (0, l.jsx)(f.Z, {
       "aria-label": y.intl.string(y.t.J6STd3),
       children: (0, l.jsxs)("ul", {
         className: O.activityList,
@@ -83,7 +83,7 @@ function I(e) {
           })
         }, "live-".concat(i)))]
       })
-    }) : null, B ? (0, l.jsx)(p.Z, {
+    }) : null, B ? (0, l.jsx)(f.Z, {
       heading: y.intl.string(y.t.M0zgnZ),
       introText: R ? y.intl.format(y.t["4bk9Ag"], {
         learnMoreHook: (e, n) => (0, l.jsx)(r.eee, {
@@ -104,7 +104,7 @@ function I(e) {
       })
     }) : null]
   }) : (0, l.jsx)("div", {
-    className: Z.empty,
+    className: I.empty,
     children: (0, l.jsx)(r.$jN, {})
   })
 }
