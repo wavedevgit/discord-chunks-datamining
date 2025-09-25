@@ -4,7 +4,8 @@
 require.d(exports, {
   aY: () => c,
   bN: () => l,
-  hX: () => s
+  hX: () => s,
+  mR: () => u
 }), require("./704826.js"), require("./35282.js"), require("./413496.js"), require("./433524.js");
 var Chunk688619 = require("./688619.js"),
   i = require.n(Chunk688619),
@@ -43,4 +44,10 @@ function c() {
     effectId: exports,
     colors: module
   }
+}
+
+function u(e) {
+  if (null == e) returnfalse;
+  let t = e.replace(RegExp("[^\\p{L}]", "gu"), "");
+  return RegExp("\\P{Script=Latin}", "u").test(t)
 }

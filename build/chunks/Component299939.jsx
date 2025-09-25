@@ -16,7 +16,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk679101 = require("./679101.js");
 
-function m(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -48,13 +48,13 @@ function g(e) {
     icon: o.$2U,
     text: p.intl.string(u.default.NOGFdn)
   }), j = (0, r.jsxs)("div", {
-    className: f.subscriberButtonContainer,
+    className: m.subscriberButtonContainer,
     children: [x, (0, r.jsx)(o.ua7, {
       text: p.intl.string(u.default.cVTpnp),
       shouldShow: !h,
       children: e => {
         var n, l;
-        return (0, r.jsx)(o.zxk, (n = m({}, e), l = l = {
+        return (0, r.jsx)(o.zxk, (n = f({}, e), l = l = {
           onClick: t,
           disabled: !h,
           text: p.intl.string(p.t["1Qm829"]),
@@ -74,19 +74,19 @@ function g(e) {
       }
     })]
   }), _ = (0, r.jsxs)("div", {
-    className: f.upsell,
+    className: m.upsell,
     children: [(0, r.jsxs)("div", {
-      className: f.descriptionContainer,
+      className: m.descriptionContainer,
       children: [(0, r.jsx)(o.ua7, {
         text: p.intl.string(p.t["5AFxuL"]),
-        children: e => (0, r.jsx)(o.SrA, m({
+        children: e => (0, r.jsx)(o.SrA, f({
           size: "md",
           color: o.TVs.colors.ICON_PRIMARY
         }, e))
       }), (0, r.jsx)(o.Text, {
         variant: "text-md/medium",
         color: "text-default",
-        className: f.description,
+        className: m.description,
         children: p.intl.format(u.default.PWf0xc, {
           onClickNitro: () => {
             s.default.track(c.rMx.DISPLAY_NAME_STYLES_NITRO_CLICKED), (0, l.$)(g)
@@ -94,7 +94,7 @@ function g(e) {
         })
       })]
     }), (0, r.jsxs)("div", {
-      className: f.buttonContainer,
+      className: m.buttonContainer,
       children: [x, (0, r.jsx)(a.Z, {
         premiumModalAnalyticsLocation: {
           section: c.jXE.DISPLAY_NAME_STYLES_MODAL_FOOTER,
@@ -106,7 +106,7 @@ function g(e) {
   });
   return (0, r.jsx)(o.mzw, {
     "data-migration-pending": true,
-    className: f.footer,
+    className: m.footer,
     children: b ? j : _
   })
 }

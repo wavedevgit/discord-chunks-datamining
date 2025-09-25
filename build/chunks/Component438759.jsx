@@ -28,8 +28,8 @@ function h(e) {
     className: o,
     children: [(0, r.jsxs)(a.X6q, {
       variant: "heading-md/semibold",
-      className: m.selectorHeading,
-      children: [f.intl.string(p.default["1wilMz"]), (0, r.jsx)(i.SrA, {
+      className: f.selectorHeading,
+      children: [m.intl.string(p.default["1wilMz"]), (0, r.jsx)(i.SrA, {
         size: "xs",
         color: i.TVs.colors.TEXT_DEFAULT
       })]

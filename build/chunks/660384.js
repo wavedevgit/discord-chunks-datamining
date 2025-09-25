@@ -3,7 +3,7 @@
 require.d(exports, {
   Z: () => a
 });
-var Chunk401393 = require("./401393.js");
+var Chunk6383 = require("./6383.js");
 class a {
   handleScroll(e) {
     this.top.set(e.currentTarget.scrollTop)
@@ -19,6 +19,6 @@ class a {
         configurable: true,
         writable: true
       }) : e[t] = n
-    }(this, "top", new Chunk401393.SpringValue(0))
+    }(this, "top", new Chunk6383.SpringValue(0))
   }
 }

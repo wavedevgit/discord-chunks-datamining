@@ -70,7 +70,7 @@ function B(e) {
     subscriptionTier: u,
     onClose: _,
     trialId: j,
-    trialFooterMessageOverride: g,
+    trialFooterMessageOverride: b,
     reviewWarningMessage: L,
     openInvoiceId: y,
     onSubscriptionConfirmation: v,
@@ -100,7 +100,7 @@ function B(e) {
   } = (0, h.wD)(), Y = H && (0, f.pO)(D) && U === x.h8.PLAN_SELECT;
   return (0, r.jsx)(S.Z, {
     isConfirmationStep: U === x.h8.CONFIRM && null == F && null == O,
-    children: (0, r.jsx)(b.PaymentModal, {
+    children: (0, r.jsx)(g.PaymentModal, {
       analyticsLocations: B,
       analyticsLocation: t,
       analyticsObject: n,
@@ -114,7 +114,7 @@ function B(e) {
       onClose: _,
       trialId: j,
       isGift: H,
-      trialFooterMessageOverride: g,
+      trialFooterMessageOverride: b,
       reviewWarningMessage: L,
       planGroup: A.Y1,
       openInvoiceId: y,
@@ -154,7 +154,7 @@ function U(e) {
     skuId: s,
     referralTrialOfferId: o
   }), _ = (0, P.Fv)(p), f = (0, u.id)(C, d, c);
-  return (0, r.jsx)(g.J, (t = R({}, e), n = n = {
+  return (0, r.jsx)(b.J, (t = R({}, e), n = n = {
     breadcrumbSteps: F,
     onReturn: () => {
       let e = Object.values(l),
@@ -176,7 +176,7 @@ function U(e) {
 }
 let H = [{
   key: null,
-  renderStep: e => (0, r.jsx)(b.I, R({}, e))
+  renderStep: e => (0, r.jsx)(g.I, R({}, e))
 }, {
   key: Chunk409813.h8.SKU_SELECT,
   renderStep: e => (0, r.jsx)(w.q, R({}, e)),
@@ -245,8 +245,8 @@ function G(e) {
       giftingOrigin: p,
       giftMessage: f,
       giftRecipient: x,
-      giftStyle: b,
-      isGift: g,
+      giftStyle: g,
+      isGift: b,
       loadId: L,
       paymentModalBanner: y,
       referralCode: v,
@@ -260,7 +260,7 @@ function G(e) {
       activeSubscription: null != e.subscription ? e.subscription : t,
       stepConfigs: H,
       skuIDs: [...A.YQ],
-      isGift: g,
+      isGift: b,
       defaultPlanId: null != n ? n : u,
       referralCode: v,
       wasTier2PremiumBeforePurchase: e.wasTier2PremiumBeforePurchase,
@@ -269,10 +269,10 @@ function G(e) {
         maybeOpenMarketingMomentRewardsModal: o,
         paymentModalBanner: y,
         children: (0, r.jsx)(h.KB, {
-          isGift: g,
+          isGift: b,
           giftRecipient: null == x ? true : x,
           giftMessage: f,
-          giftStyle: b,
+          giftStyle: g,
           giftingOrigin: p,
           children: (0, r.jsx)(B, R({}, e))
         })

@@ -155,6 +155,7 @@ let w = e => {
     return (0, f.Rt)(t) ? (0, r.jsx)(a.zxk, {
       fullWidth: true,
       variant: "primary",
+      icon: t.config.features.includes(y.S7.CLOUD_GAMING_ACTIVITY) ? a.v3n : true,
       onClick: i,
       size: "sm",
       text: n

@@ -25,12 +25,12 @@ let m = e => {
     claimed: m,
     onSelect: x,
     productName: j,
-    a11yLabel: b,
-    selectedSkuId: g,
+    a11yLabel: g,
+    selectedSkuId: b,
     category: L
   } = e, y = i.useRef(null), v = (0, d.Z)(y), S = (0, _.m)(y), O = !m && (v || S), E = (0, c.ZP)(), P = (0, s.wj)(E), I = {
     type: l.Z.AVATAR_DECORATION,
-    label: b,
+    label: g,
     asset: n
   };
   return (0, r.jsx)(C.tEY, {
@@ -43,7 +43,7 @@ let m = e => {
       className: o()(P ? h.shopCardDark : h.shopCard, {
         [h.shopCardAnimation]: !m,
         [P ? h.shopCardDarkHighlighted : h.shopCardHighlighted]: O,
-        [h.shopCardSelected]: g === t
+        [h.shopCardSelected]: b === t
       }),
       children: [(0, r.jsx)("div", {
         className: o()(h.preview, {

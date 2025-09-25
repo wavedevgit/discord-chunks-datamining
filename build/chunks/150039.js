@@ -96,7 +96,7 @@ function m(e, t) {
 function g(e, t) {
   let {
     enabled: n
-  } = s.s9.useConfig({
+  } = s.wL.useConfig({
     location: "useGuildMemberOrUserPendingDisplayNameStyles"
   }), r = (0, i.e7)([f.ZP], () => true === t || null == e ? null : f.ZP.getMember(t, e.id)), {
     pendingUserDisplayNameStyles: a,

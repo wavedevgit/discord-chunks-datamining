@@ -41,13 +41,13 @@ function h(e) {
     children: [(0, r.jsxs)(a.X6q, {
       variant: "heading-md/semibold",
       className: g.selectorHeading,
-      children: [f.intl.string(p.default["JOpi7+"]), (0, r.jsx)(i.SrA, {
+      children: [m.intl.string(p.default["JOpi7+"]), (0, r.jsx)(i.SrA, {
         size: "xs",
         color: i.TVs.colors.TEXT_DEFAULT
       })]
     }), (0, r.jsx)(s.default, {
-      className: m.colorPicker,
-      colorContainerClassName: m.colorPickerContainer,
+      className: f.colorPicker,
+      colorContainerClassName: f.colorPickerContainer,
       defaultColor: b,
       colors: _ ? d.vK : d.gD,
       value: n[0],
@@ -55,7 +55,7 @@ function h(e) {
       onChange: S,
       onChangeGradientColors: C,
       isGradient: _,
-      gradientButtonClassName: m.gradientPicker,
+      gradientButtonClassName: f.gradientPicker,
       gradientDegrees: 90,
       allowBlackCustomColor: true,
       customPickerPosition: "top"

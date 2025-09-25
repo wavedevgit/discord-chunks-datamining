@@ -4,7 +4,7 @@
 require.d(exports, {
   JH: () => s,
   fN: () => o,
-  s9: () => l
+  wL: () => l
 });
 var Chunk818083 = require("./818083.js"),
   Chunk427164 = require("./427164.js"),
@@ -58,7 +58,7 @@ let o = (0, Chunk818083.B)({
     }]
   }),
   l = (0, Chunk427164.le)({
-    name: "2025-09-display-name-styles-per-server",
+    name: "2025-09-display-name-styles-ga",
     kind: "user",
     defaultConfig: {
       enabled: false

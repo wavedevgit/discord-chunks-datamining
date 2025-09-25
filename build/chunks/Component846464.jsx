@@ -1,7 +1,7 @@
 /** Chunk was on 84071 **/
 /** chunk id: 846464, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  q: () => b
+  q: () => g
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -22,7 +22,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk360026 = require("./360026.js");
 
-function b(e) {
+function g(e) {
   let {
     handleStepChange: t,
     handleClose: n,
@@ -33,14 +33,14 @@ function b(e) {
     startedPaymentFlowWithPaymentSourcesRef: d,
     setSelectedPlanId: x,
     priceOptions: j,
-    defaultPlanId: b
+    defaultPlanId: g
   } = (0, p.JL)(), {
     isGift: L,
     claimableRewards: y
   } = (0, u.wD)(), v = L && null != y && y.length > 0, S = (0, C.N)(i), O = (0, l.Nx)(), E = (0, s.ZP)({
     location: "PremiumPaymentSelect"
   });
-  return (0, r.jsx)(g, {
+  return (0, r.jsx)(b, {
     selectSku: e => (function(e) {
       let {
         activeSubscription: t,
@@ -82,7 +82,7 @@ function b(e) {
       userTrialOffer: S,
       startedPaymentFlowWithPaymentSources: d.current,
       setSelectedPlanId: x,
-      defaultPlanId: b
+      defaultPlanId: g
     }),
     onClose: n,
     isGift: L,
@@ -93,7 +93,7 @@ function b(e) {
   })
 }
 
-function g(e) {
+function b(e) {
   let {
     selectSku: t,
     onClose: n,

@@ -236,10 +236,19 @@ function S(e) {
       className: O.ctaInner,
       children: [L.render(), y.intl.string(y.t.nPThNT)]
     })
-  }) : q || Q && C.config.features.includes(b.S7.START_QUEST_CTA) ? (0, r.jsx)("div", {
+  }) : q ? (0, r.jsx)("div", {
     className: O.button,
     children: (0, r.jsx)(o.zxk, {
       variant: "primary",
+      onClick: null != es ? es : true,
+      text: eo,
+      fullWidth: true
+    })
+  }) : (0, f.Rt)(C) ? (0, r.jsx)("div", {
+    className: O.button,
+    children: (0, r.jsx)(o.zxk, {
+      variant: "primary",
+      icon: C.config.features.includes(b.S7.CLOUD_GAMING_ACTIVITY) ? l.v3n : true,
       onClick: null != es ? es : true,
       text: eo,
       fullWidth: true

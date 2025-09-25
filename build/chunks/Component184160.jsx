@@ -27,14 +27,14 @@ function m(e) {
     activeSubscription: m,
     selectedSkuId: x,
     setSelectedPlanId: j,
-    startedPaymentFlowWithPaymentSourcesRef: b
+    startedPaymentFlowWithPaymentSourcesRef: g
   } = (0, u.JL)(), {
-    isGift: g
+    isGift: b
   } = (0, c.wD)(), L = null != m ? (0, d.Af)(m) : null, y = null != L ? (0, d.gq)(L.planId) : null, v = null != L ? (0, d.Rd)(L.planId) : null, S = (0, _.Kp)({
     isTrial: false,
-    isGift: g,
+    isGift: b,
     selectedSkuId: x,
-    startedPaymentFlowWithPaymentSources: b.current
+    startedPaymentFlowWithPaymentSources: g.current
   });
   return a()(null != v, "Expected premium type"), (0, r.jsx)(C.Z, {
     premiumType: v,
@@ -45,11 +45,13 @@ function m(e) {
     footer: (0, r.jsxs)("div", {
       className: h.whatYouLoseButtonContainer,
       children: [(0, r.jsx)(l.zx, {
+        "data-migration-pending": true,
         onClick: () => {
           S ? (j((0, _.nA)(x, m)), t(p.h8.REVIEW)) : t(p.h8.PLAN_SELECT)
         },
         children: f.intl.string(f.t["3PatS0"])
       }), (0, r.jsx)(l.zx, {
+        "data-migration-pending": true,
         look: l.zx.Looks.LINK,
         color: (0, o.wj)(i) ? l.zx.Colors.WHITE : l.zx.Colors.PRIMARY,
         onClick: n,

@@ -27,7 +27,7 @@ function p(e) {
     guild: g
   } = e, E = null != n ? n : p, b = (0, i.e7)([c.Z], () => c.Z.can(d.Plq.CHANGE_NICKNAME, g) || c.Z.can(d.Plq.MANAGE_NICKNAMES, g)), {
     enabled: y
-  } = o.s9.useConfig({
+  } = o.wL.useConfig({
     location: "NicknameSection"
   });
 

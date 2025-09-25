@@ -111,7 +111,7 @@ function y(e) {
         className: L.modalFooter,
         children: (0, r.jsx)(p.y, {
           onStepChange: e => {
-            null != k && null != P && f.default.track(b.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
+            null != k && null != P && f.default.track(g.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
               user_id: k.id,
               reward_sku_id: P.skuId
             }), a(e)
@@ -135,12 +135,12 @@ function y(e) {
       children: [(0, r.jsx)(s.X6q, {
         variant: "heading-lg/bold",
         color: "header-primary",
-        children: g.intl.string(g.t["3JCuX1"])
+        children: b.intl.string(b.t["3JCuX1"])
       }), (0, r.jsx)(s.Text, {
         variant: "text-md/normal",
         color: "text-secondary",
         className: L.headerSubtitle,
-        children: g.intl.string(g.t.MhwtRU)
+        children: b.intl.string(b.t.MhwtRU)
       }), (0, r.jsx)(s.olH, {
         "data-migration-pending": true,
         className: L.closeButton,
