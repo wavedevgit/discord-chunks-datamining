@@ -1,4 +1,4 @@
-/** Chunk was on 60611 **/
+/** Chunk was on 27087 **/
 /** chunk id: 832321, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -65,7 +65,7 @@ function m(e) {
     })(Object(r)).forEach(function(t) {
       Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
     }), e))
-  }, [n, t, g, p]), x = i.useMemo(() => {
+  }, [n, t, g, p]), b = i.useMemo(() => {
     var e;
     let t = null == h || null == (e = h.emojis) ? true : e[0];
     return null != t ? {
@@ -79,7 +79,7 @@ function m(e) {
     sourceType: o.w6.GUILD,
     expressionSourceApplication: null,
     expressionSourceGuild: h,
-    node: x,
+    node: b,
     closePopout: u.dG,
     nonce: f.current,
     demoMode: true

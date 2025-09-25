@@ -1,4 +1,4 @@
-/** Chunk was on 60611 **/
+/** Chunk was on 27087 **/
 /** chunk id: 603784, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -209,7 +209,7 @@ let w = Chunk647438.forwardRef((e, t) => {
                     children: e
                   }, t),
                   count: i.count,
-                  channel: null == i.channel || "string" == typeof i.channel ? i.channel : (0, g.F6)(i.channel, b.default, x.Z, true),
+                  channel: null == i.channel || "string" == typeof i.channel ? i.channel : (0, g.F6)(i.channel, x.default, b.Z, true),
                   channelHook: (e, t) => (0, r.jsx)("span", {
                     onContextMenu: R,
                     children: e

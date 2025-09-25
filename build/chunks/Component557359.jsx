@@ -1,8 +1,8 @@
-/** Chunk was on 60611 **/
+/** Chunk was on 27087 **/
 /** chunk id: 557359, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => x
+  A: () => b
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,17 +19,17 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk58801 = require("./58801.js");
 
-function x(e) {
+function b(e) {
   let {
     requireTerms: t,
     rules: n
-  } = e, l = (0, o.e7)([m.Z], () => m.Z.getProps().guild), x = null == l ? true : l.id, b = i.useCallback(e => {
-    if (null == x || null == n) return null;
-    g.Z.setPendingInviteRules(x, e, [...n])
-  }, [x, n]), j = i.useCallback(e => {
-    if (null == x) return null;
-    g.Z.setPendingInviteRules(x, t, e)
-  }, [x, t]);
+  } = e, l = (0, o.e7)([m.Z], () => m.Z.getProps().guild), b = null == l ? true : l.id, x = i.useCallback(e => {
+    if (null == b || null == n) return null;
+    g.Z.setPendingInviteRules(b, e, [...n])
+  }, [b, n]), j = i.useCallback(e => {
+    if (null == b) return null;
+    g.Z.setPendingInviteRules(b, t, e)
+  }, [b, t]);
   return null == l ? null : null == n ? (0, r.jsx)(d.$jN, {}) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: h.headerContainer,
@@ -47,7 +47,7 @@ function x(e) {
           children: f.intl.string(f.t.SzpUBA)
         })]
       }), (0, r.jsx)(c.T2, {
-        onChange: b,
+        onChange: x,
         checked: t
       })]
     }), t && (0, r.jsx)(p.c, {

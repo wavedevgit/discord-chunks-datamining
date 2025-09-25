@@ -157,7 +157,7 @@ let eL = (0, Chunk608787.Un)({
     renderLoader: eR
   }),
   eH = (0, Chunk608787.Un)({
-    createPromise: () => Promise.all([require.e("55616"), require.e("44799")]).then(require.bind(require, 393357)),
+    createPromise: () => Promise.all([require.e("76692"), require.e("44799")]).then(require.bind(require, 393357)),
     webpackId: 393357,
     name: "GuildPowerupsPage",
     renderLoader: eR

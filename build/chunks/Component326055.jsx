@@ -1,4 +1,4 @@
-/** Chunk was on 20572 **/
+/** Chunk was on 33384 **/
 /** chunk id: 326055, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => j
@@ -28,37 +28,37 @@ function j(e) {
     } = e,
     x = function(e, t) {
       if (null == e) return {};
-      var n, r, o = function(e, t) {
+      var n, r, a = function(e, t) {
         if (null == e) return {};
-        var n, r, o = {},
-          a = Object.keys(e);
-        for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
-        return o
+        var n, r, a = {},
+          o = Object.keys(e);
+        for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (a[n] = e[n]);
+        return a
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var a = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
+        var o = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n])
       }
-      return o
+      return a
     }(e, ["guildId", "powerup"]);
-  let [k, y] = o.useState(true), O = o.useMemo(() => {
+  let [k, y] = a.useState(true), O = a.useMemo(() => {
     switch (v.skuId) {
-      case a.IN:
+      case o.IN:
         return (0, r.jsx)(m.E, {
           guildId: j
         });
-      case a.If:
+      case o.If:
         return (0, r.jsx)(m.Z, {});
-      case a.A$:
-        return (0, r.jsx)(_.Z, {});
+      case o.A$:
+        return (0, r.jsx)(b.Z, {});
       default:
         return
     }
   }, [v, j]);
   (0, c.$)(j, v, c.w.DETAIL);
   let w = (0, d.Z)(j),
-    S = b.Rx[v.skuId],
-    P = null != S ? b.Cp[S] : null,
+    S = _.Rx[v.skuId],
+    P = null != S ? _.Cp[S] : null,
     E = (0, s.e7)([i.Z], () => i.Z.getStateForGuild(j)),
     N = null != P ? null == E ? true : E.allPowerups[P] : null;
   return (0, r.jsxs)(l.Y0X, (t = function(e) {

@@ -1,4 +1,4 @@
-/** Chunk was on 60611 **/
+/** Chunk was on 27087 **/
 /** chunk id: 103576, original params: e,t,n (module,exports,require) **/
 "use strict";
 let r, i, l;
@@ -86,7 +86,7 @@ function B() {
 function F(e, t) {
   t.forEach(t => {
     let n = "solid",
-      r = (0, x.zI)(e, t);
+      r = (0, b.zI)(e, t);
     null != t.colors && r && (null != t.colors.tertiary_color ? n = "holographic" : null != t.colors.secondary_color && (n = "gradient"));
     let i = {
       solid: {
@@ -154,7 +154,7 @@ function W(e) {
     guildId: t
   } = e;
   if (null == (r = O.Z.getProps().guild) || t !== r.id || T === y.QZA.SUBMITTING) returnfalse;
-  let n = [...b.Z.getSortedRoles(r.id)];
+  let n = [...x.Z.getSortedRoles(r.id)];
   S.forEach(e => {
     let t = V(e),
       r = false;

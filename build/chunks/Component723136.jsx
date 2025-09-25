@@ -1,4 +1,4 @@
-/** Chunk was on 60611 **/
+/** Chunk was on 27087 **/
 /** chunk id: 723136, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -25,15 +25,15 @@ async function f(e, t) {
 function h(e) {
   let {
     guild: t
-  } = e, n = (0, l.e7)([c.Z], () => null != t && c.Z.can(u.Plq.MANAGE_GUILD, t), [t]), d = t.features.has(u.oNc.REPORT_TO_MOD_PILOT), [h, x] = i.useState((0, o.Z)(t) && d), b = i.useCallback(async e => {
-    x(e), await f(t, e)
+  } = e, n = (0, l.e7)([c.Z], () => null != t && c.Z.can(u.Plq.MANAGE_GUILD, t), [t]), d = t.features.has(u.oNc.REPORT_TO_MOD_PILOT), [h, b] = i.useState((0, o.Z)(t) && d), x = i.useCallback(async e => {
+    b(e), await f(t, e)
   }, [t]);
   return d && n ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: p.setupContainer,
       children: (0, r.jsx)(s.j7V, {
         value: h,
-        onChange: b,
+        onChange: x,
         className: p.switchItem,
         disabled: !n,
         hideBorder: true,

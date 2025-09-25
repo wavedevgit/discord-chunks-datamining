@@ -1,6 +1,5 @@
-/** Chunk was on 60611 **/
+/** Chunk was on 58121 **/
 /** chunk id: 881338, original params: e,t,n (module,exports,require) **/
-"use strict";
 module.exports = {
   userContainer: "userContainer__3e7e2",
   quotes: "quotes__3e7e2",

@@ -1,4 +1,4 @@
-/** Chunk was on 60611 **/
+/** Chunk was on 27087 **/
 /** chunk id: 532804, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -22,8 +22,8 @@ function f(e) {
   let {
     changeTitle: f,
     value: h,
-    options: x,
-    className: b,
+    options: b,
+    className: x,
     onChange: j
   } = e, [v, _] = i.useState(h), [O, y] = i.useState(false), [C, N] = i.useState(false), E = i.useRef(null);
   i.useEffect(() => {
@@ -31,7 +31,7 @@ function f(e) {
   }, [h]), i.useEffect(() => () => {
     clearTimeout(E.current)
   }, []);
-  let I = x.find(e => e.value === v);
+  let I = b.find(e => e.value === v);
   return (0, r.jsx)(u.Z, {
     title: O ? f : null != (t = null == I ? true : I.title) ? t : f,
     description: O ? "(".concat(null != (n = null == I ? true : I.title) ? n : g.intl.string(g.t.PoWNfX), ")") : null != (l = null == I ? true : I.description) ? l : "",
@@ -43,8 +43,8 @@ function f(e) {
       children: g.intl.string(g.t.GEgsAw)
     }),
     loading: C,
-    className: b,
-    children: x.map((e, t) => (0, r.jsx)(m.Z, {
+    className: x,
+    children: b.map((e, t) => (0, r.jsx)(m.Z, {
       title: e.title,
       description: e.description,
       highlightColor: e.highlightColor,

@@ -1,4 +1,4 @@
-/** Chunk was on 60611 **/
+/** Chunk was on 27087 **/
 /** chunk id: 594278, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -21,7 +21,7 @@ let g = function(e) {
     paginationCaretClassName: l,
     intervalBetweenAutomaticItemRotations: g,
     renderItem: p
-  } = e, f = i.useMemo(() => new a.Xp, []), [h, x] = i.useState(d.n.LEFT), [b, j] = i.useState(0), [v, _] = i.useState(false), [O, y] = i.useState(false), C = i.useCallback((e, t) => {
+  } = e, f = i.useMemo(() => new a.Xp, []), [h, b] = i.useState(d.n.LEFT), [x, j] = i.useState(0), [v, _] = i.useState(false), [O, y] = i.useState(false), C = i.useCallback((e, t) => {
     j(n => {
       let r = n + t;
       return r < 0 ? r = e.length - 1 : r > e.length - 1 && (r = 0), r
@@ -40,7 +40,7 @@ let g = function(e) {
     children: [(0, r.jsx)(o.P3F, {
       className: s()(m.carouselCaret, l),
       onClick: E,
-      onMouseEnter: () => x(d.n.RIGHT),
+      onMouseEnter: () => b(d.n.RIGHT),
       ignoreKeyPress: O,
       children: (0, r.jsx)(c.Z, {
         direction: c.Z.Directions.LEFT,
@@ -49,16 +49,16 @@ let g = function(e) {
         "aria-label": u.intl.string(u.t.FAmEgo)
       })
     }), (0, r.jsx)(d.Z, {
-      step: b,
+      step: x,
       direction: h,
       onAnimationStart: () => y(true),
       onAnimationEnd: () => y(false),
       className: s()(m.carousel, n),
-      children: p(t[b])
+      children: p(t[x])
     }), (0, r.jsx)(o.P3F, {
       className: s()(m.carouselCaret, l),
       onClick: N,
-      onMouseEnter: () => x(d.n.LEFT),
+      onMouseEnter: () => b(d.n.LEFT),
       ignoreKeyPress: O,
       children: (0, r.jsx)(c.Z, {
         direction: c.Z.Directions.RIGHT,

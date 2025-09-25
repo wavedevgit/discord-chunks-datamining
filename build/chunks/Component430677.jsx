@@ -1,4 +1,4 @@
-/** Chunk was on 60611 **/
+/** Chunk was on 27087 **/
 /** chunk id: 430677, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -70,7 +70,7 @@ let _ = function(e) {
     channelId: N.channelId,
     icon: N.icon
   }), G = null;
-  null != R && (0, m.kb)(R) ? L || (G = x.intl.string(x.t.wAkIZW)) : G = x.intl.string(x.t.CbTEKC);
+  null != R && (0, m.kb)(R) ? L || (G = b.intl.string(b.t.wAkIZW)) : G = b.intl.string(b.t.CbTEKC);
   let {
     drag: M,
     dragSourcePosition: U,
@@ -99,37 +99,37 @@ let _ = function(e) {
   if (null == R || null == D) return null;
   let z = null != (y = (0, c.KS)(R)) ? y : o.VL1;
   return (0, r.jsxs)("div", {
-    className: b.actionItemContainer,
+    className: x.actionItemContainer,
     children: [(0, r.jsxs)("div", {
-      className: s()(b.actionItem, {
-        [b.dropIndicatorBefore]: null != U && E < U,
-        [b.dropIndicatorAfter]: null != U && E > U,
-        [b.actionItemError]: null != G
+      className: s()(x.actionItem, {
+        [x.dropIndicatorBefore]: null != U && E < U,
+        [x.dropIndicatorAfter]: null != U && E > U,
+        [x.actionItemError]: null != G
       }),
       ref: e => {
         M(B(e))
       },
       children: [(0, r.jsx)("div", {
-        className: b.dragContainer,
+        className: x.dragContainer,
         onMouseEnter: () => F(true),
         onMouseLeave: () => F(false),
         children: (0, r.jsx)(o.Vni, {
           size: "xs",
           color: "currentColor",
-          className: b.dragIcon
+          className: x.dragIcon
         })
       }), null != k ? (0, r.jsx)("div", {
-        className: b.iconWrapper,
+        className: x.iconWrapper,
         children: (0, r.jsx)("img", {
           src: k,
-          className: b.icon,
+          className: x.icon,
           width: 48,
           height: 48,
           alt: "",
           "aria-hidden": true
         })
       }) : (0, r.jsx)("div", {
-        className: b.actionItemEmojiWrapper,
+        className: x.actionItemEmojiWrapper,
         children: (0, r.jsx)(g.Z, {
           emojiId: null == (_ = N.emoji) ? true : _.id,
           emojiName: null == (O = N.emoji) ? true : O.name,
@@ -137,7 +137,7 @@ let _ = function(e) {
           defaultComponent: (0, r.jsx)(z, {})
         })
       }), (0, r.jsxs)("div", {
-        className: b.actionItemText,
+        className: x.actionItemText,
         children: [(0, r.jsx)(o.Text, {
           variant: "text-md/semibold",
           color: "header-primary",
@@ -145,18 +145,18 @@ let _ = function(e) {
         }), (0, r.jsx)(o.Text, {
           variant: "text-xs/medium",
           color: "header-secondary",
-          children: x.intl.format(x.t.Ngk8Nj, {
+          children: b.intl.format(b.t.Ngk8Nj, {
             channelName: R.name
           })
         })]
       }), (0, r.jsx)(o.ua7, {
-        text: x.intl.string(x.t.bt75u7),
+        text: b.intl.string(b.t.bt75u7),
         children: e => (0, r.jsx)(o.hU, v(j({}, e), {
           icon: o.vdY,
           size: "sm",
           variant: "primary",
           onClick: H,
-          "aria-label": x.intl.string(x.t.bt75u7)
+          "aria-label": b.intl.string(b.t.bt75u7)
         }))
       })]
     }), null != G && (0, r.jsx)(o.Text, {

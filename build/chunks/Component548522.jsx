@@ -1,4 +1,4 @@
-/** Chunk was on 60611 **/
+/** Chunk was on 27087 **/
 /** chunk id: 548522, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -22,16 +22,16 @@ function f(e) {
   let {
     guild: n,
     formFields: c
-  } = e, [f, x] = i.useState(c);
-  i.useEffect(() => x(c), [c]);
-  let b = null != (t = (0, a.A)({
+  } = e, [f, b] = i.useState(c);
+  i.useEffect(() => b(c), [c]);
+  let x = null != (t = (0, a.A)({
       guildId: n.id
     })) ? t : 0,
     [j, v] = i.useState(null),
     _ = i.useMemo(() => null == f ? true : f.some(e => (0, s.J)(e)), [f]),
     O = i.useMemo(() => f.length === m.nx, [f]),
     y = i.useCallback(e => {
-      u.Z.setPendingMemberVerificationRules(n.id, e), x(e), null != j && v(null)
+      u.Z.setPendingMemberVerificationRules(n.id, e), b(e), null != j && v(null)
     }, [j, n.id]),
     C = i.useCallback(e => {
       y([...f, e])
@@ -47,7 +47,7 @@ function f(e) {
     I = i.useCallback((e, t, n) => {
       let r = f.indexOf(e),
         i = [...f];
-      null != t && t !== r && (i.splice(r, 1), i.splice(t, 0, e), x(i)), n ? (y(i), null !== j && v(null)) : j !== t && v(t)
+      null != t && t !== r && (i.splice(r, 1), i.splice(t, 0, e), b(i)), n ? (y(i), null !== j && v(null)) : j !== t && v(t)
     }, [j, f, y]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.X6q, {
@@ -64,7 +64,7 @@ function f(e) {
       guild: n,
       index: f.indexOf(e),
       isDragEnabled: f.length > 1,
-      submittedGuildJoinRequestsCount: b,
+      submittedGuildJoinRequestsCount: x,
       removeFormField: N,
       updateFormField: E,
       updateFormFieldOrder: I,

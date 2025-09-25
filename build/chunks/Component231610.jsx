@@ -1,4 +1,4 @@
-/** Chunk was on 60611 **/
+/** Chunk was on 27087 **/
 /** chunk id: 231610, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -22,7 +22,7 @@ function f() {
   let {
     editStateId: e,
     guildId: t
-  } = (0, Chunk727843.N)(), [, f] = Chunk290348.p9(module, exports), [h, x] = Chunk290348.Ek(module, exports), b = Chunk290348.qs(module, exports);
+  } = (0, Chunk727843.N)(), [, f] = Chunk290348.p9(module, exports), [h, b] = Chunk290348.Ek(module, exports), x = Chunk290348.qs(module, exports);
 
   function j() {
     (0, Chunk481060.ZDy)(async () => {
@@ -83,7 +83,7 @@ function f() {
         disabled: v,
         children: (0, Chunk951288.jsx)(Chunk619326.Z, {
           value: h,
-          onChange: x,
+          onChange: b,
           disabled: v
         })
       }), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
@@ -98,7 +98,7 @@ function f() {
           direction: "horizontal",
           gap: 16,
           children: [(0, Chunk951288.jsx)(Chunk553204.Z, {
-            role: b,
+            role: x,
             "aria-label": Chunk388032.intl.string(Chunk388032.t.mD1oGB),
             onClick: j,
             disabled: v
@@ -115,12 +115,12 @@ function f() {
           "aria-hidden": true,
           children: [(0, Chunk951288.jsx)(Chunk893729.Z, {
             guildId: exports,
-            role: b,
+            role: x,
             className: Chunk510569.messageContainer,
             theme: "light"
           }), (0, Chunk951288.jsx)(Chunk893729.Z, {
             guildId: exports,
-            role: b,
+            role: x,
             className: Chunk510569.messageContainer,
             theme: "dark"
           })]

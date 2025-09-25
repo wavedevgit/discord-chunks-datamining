@@ -1,4 +1,4 @@
-/** Chunk was on 60611 **/
+/** Chunk was on 27087 **/
 /** chunk id: 806742, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk359449 = require("./359449.js");
 
-function x(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,7 +38,7 @@ function x(e) {
   return e
 }
 
-function b(e, t) {
+function x(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -60,7 +60,7 @@ let j = function(e) {
     let {
       default: e
     } = await n.e("36371").then(n.bind(n, 893626));
-    return n => (0, r.jsx)(e, b(x({}, n), {
+    return n => (0, r.jsx)(e, x(b({}, n), {
       guildId: t,
       welcomeMessage: l,
       onSave: e => (0, m._N)(e)
@@ -82,7 +82,7 @@ let j = function(e) {
       }
     }), (0, r.jsx)(o.ua7, {
       text: f.intl.string(f.t.bt75u7),
-      children: e => (0, r.jsxs)("div", b(x({}, e), {
+      children: e => (0, r.jsxs)("div", x(b({}, e), {
         className: s()(h.actionItemEditButton, h.editWelcomeButton),
         children: [(0, r.jsx)(o.vdY, {
           size: "md",

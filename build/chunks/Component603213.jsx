@@ -1,4 +1,4 @@
-/** Chunk was on 20572 **/
+/** Chunk was on 33384 **/
 /** chunk id: 603213, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   q: () => u
@@ -16,7 +16,7 @@ function u(e) {
   let {
     powerup: t
   } = e;
-  return t.skuId === o.A$ ? (0, r.jsx)(a.xvT, {
+  return t.skuId === a.A$ ? (0, r.jsx)(o.xvT, {
     className: d.learnMore,
     variant: "text-sm/medium",
     children: c.intl.format(i.default.fXE30d, {

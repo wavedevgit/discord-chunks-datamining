@@ -1,4 +1,4 @@
-/** Chunk was on 60611 **/
+/** Chunk was on 27087 **/
 /** chunk id: 256569, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -77,8 +77,8 @@ function h(e) {
     tagErrors: u = {},
     placeholder: p,
     className: h,
-    maxTags: x
-  } = e, b = i.useRef(null), j = i.useRef(null), v = i.useRef(null), _ = (0, m.V)(n), {
+    maxTags: b
+  } = e, x = i.useRef(null), j = i.useRef(null), v = i.useRef(null), _ = (0, m.V)(n), {
     handlePasteEvent: O,
     handleInputChange: y,
     handleKeyDown: C,
@@ -91,7 +91,7 @@ function h(e) {
     handleInputBlurEvent: w
   } = (0, m.Q)(_, {
     scrollerRef: v,
-    mainInputRef: b,
+    mainInputRef: x,
     mainContainerRef: j
   }), {
     state: {
@@ -102,7 +102,7 @@ function h(e) {
     }
   } = _, L = (0, o.Z)(D), [k, G] = i.useState(false), M = i.useCallback(() => {
     var e;
-    G(false), P(), null == (e = b.current) || e.focus({
+    G(false), P(), null == (e = x.current) || e.focus({
       preventScroll: true
     })
   }, [P]);
@@ -119,9 +119,9 @@ function h(e) {
       if (t) {
         var n;
         let t = Z.includes(D[e]);
-        null == (n = b.current) || n.focus(), t ? T(e) : (S(e), setImmediate(() => {
+        null == (n = x.current) || n.focus(), t ? T(e) : (S(e), setImmediate(() => {
           var e;
-          null == (e = b.current) || e.blur(), setTimeout(() => {
+          null == (e = x.current) || e.blur(), setTimeout(() => {
             var e;
             return null == (e = j.current) ? true : e.focus()
           }, 16)
@@ -150,7 +150,7 @@ function h(e) {
         className: s()(g.mainTextInput, {
           [g.isEditingOtherNodes]: k
         }),
-        ref: b,
+        ref: x,
         onChange: y,
         onKeyDownCapture: C,
         onPaste: O,
@@ -158,11 +158,11 @@ function h(e) {
         placeholder: 0 === D.length ? p : true,
         value: R
       })]
-    }), null != x && (0, r.jsxs)(a.Text, {
+    }), null != b && (0, r.jsxs)(a.Text, {
       variant: "text-xs/normal",
       color: "text-muted",
       className: g.maxTags,
-      children: [null != (t = null == D ? true : D.length) ? t : 0, "/", x]
+      children: [null != (t = null == D ? true : D.length) ? t : 0, "/", b]
     })]
   })
 }

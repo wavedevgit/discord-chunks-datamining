@@ -1,4 +1,4 @@
-/** Chunk was on 60611 **/
+/** Chunk was on 27087 **/
 /** chunk id: 137158, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk866234 = require("./866234.js");
 
-function x(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,7 +38,7 @@ function x(e) {
   return e
 }
 
-function b(e) {
+function x(e) {
   let {
     type: t
   } = e, n = i.useMemo(() => {
@@ -98,7 +98,7 @@ function j(e) {
         tag: "h3",
         className: h.compactTitle,
         children: t
-      }), (0, r.jsx)(b, {
+      }), (0, r.jsx)(x, {
         type: l.field_type
       })]
     })
@@ -115,7 +115,7 @@ function _(e) {
     fieldStyle: g
   } = e, f = (0, a.debounce)(async (e, t, n) => {
     await d(e, t, n)
-  }), b = i.useRef(null), [, _] = (0, o.c)({
+  }), x = i.useRef(null), [, _] = (0, o.c)({
     type: v,
     item: {
       index: t,
@@ -130,7 +130,7 @@ function _(e) {
       var r;
       let {
         index: i
-      } = e, l = null == (r = b.current) ? true : r.getBoundingClientRect(), s = n.getClientOffset();
+      } = e, l = null == (r = x.current) ? true : r.getBoundingClientRect(), s = n.getClientOffset();
       if (null == l || null == s) return;
       let a = (l.bottom - l.top) / 2,
         o = s.y - l.top;
@@ -140,10 +140,10 @@ function _(e) {
       f(e.field, t, true)
     }
   });
-  return i.useLayoutEffect(() => (_(O(b)), () => {
+  return i.useLayoutEffect(() => (_(O(x)), () => {
     O(null), _(null)
   }), [_, O]), (0, r.jsxs)("div", {
-    ref: b,
+    ref: x,
     "data-dnd-name": "field-".concat(t),
     className: s()(h.dragContainer, {
       [h.dropHovered]: l
@@ -157,7 +157,7 @@ function _(e) {
         className: h.dragIcon,
         color: u.Z.unsafe_rawColors.PRIMARY_400.css
       })
-    }), (0, r.jsx)(j, x({}, e))]
+    }), (0, r.jsx)(j, b({}, e))]
   })
 }
 
@@ -168,7 +168,7 @@ function O(e) {
     }),
     children: [(0, r.jsx)("div", {
       className: h.spacingContainer,
-      children: e.isDragEnabled ? (0, r.jsx)(_, x({}, e)) : (0, r.jsx)(j, x({}, e))
+      children: e.isDragEnabled ? (0, r.jsx)(_, b({}, e)) : (0, r.jsx)(j, b({}, e))
     }), "side" === e.actionsLocation && (0, r.jsxs)("div", {
       className: s()(h.actionButtonsContainer, {
         [h.compact]: e.fieldStyle === p.it.COMPACT,

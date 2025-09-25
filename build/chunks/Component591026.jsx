@@ -1,8 +1,8 @@
-/** Chunk was on 60611 **/
+/** Chunk was on 27087 **/
 /** chunk id: 591026, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => b
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -49,12 +49,12 @@ function h(e, t) {
   }), e
 }
 
-function x(e) {
+function b(e) {
   var t, n;
   let {
-    rule: x,
-    onChangeRule: b
-  } = e, [j, v] = i.useState(null == (t = x.triggerMetadata) ? true : t.mentionTotalLimit), _ = (0, a.a)(x.guildId, false);
+    rule: b,
+    onChangeRule: x
+  } = e, [j, v] = i.useState(null == (t = b.triggerMetadata) ? true : t.mentionTotalLimit), _ = (0, a.a)(b.guildId, false);
   return (0, r.jsxs)("div", {
     className: p.cardContentsContainer,
     children: [(0, r.jsxs)(d.Z, {
@@ -85,8 +85,8 @@ function x(e) {
           children: (0, r.jsx)(s.FiK, {
             value: j,
             onChange: e => {
-              v(e), b(h(f({}, x), {
-                triggerMetadata: h(f({}, x.triggerMetadata), {
+              v(e), x(h(f({}, b), {
+                triggerMetadata: h(f({}, b.triggerMetadata), {
                   mentionTotalLimit: e
                 })
               }))
@@ -119,10 +119,10 @@ function x(e) {
         }), (0, r.jsx)("div", {
           children: (0, r.jsx)(l.$q, {
             type: l.M0.INVERTED,
-            value: null == (n = x.triggerMetadata) ? true : n.mentionRaidProtectionEnabled,
+            value: null == (n = b.triggerMetadata) ? true : n.mentionRaidProtectionEnabled,
             onChange: (e, t) => {
-              b(h(f({}, x), {
-                triggerMetadata: h(f({}, x.triggerMetadata), {
+              x(h(f({}, b), {
+                triggerMetadata: h(f({}, b.triggerMetadata), {
                   mentionRaidProtectionEnabled: t
                 })
               }))
@@ -137,8 +137,8 @@ function x(e) {
       step: 2,
       header: g.intl.string(g.t["18TOiY"]),
       children: (0, r.jsx)(o.Z, {
-        rule: x,
-        onChangeRule: b
+        rule: b,
+        onChangeRule: x
       })
     }), (0, r.jsx)(u.Z, {
       type: u.Z.Type.CROSS
@@ -146,8 +146,8 @@ function x(e) {
       step: 3,
       header: g.intl.string(g.t.eq3gjo),
       children: (0, r.jsx)(c.Z, {
-        rule: x,
-        onChangeRule: b
+        rule: b,
+        onChangeRule: x
       })
     })]
   })

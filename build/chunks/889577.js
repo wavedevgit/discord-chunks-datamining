@@ -22,7 +22,12 @@ class i {
       maxHeight: this.desktopMaxHeight
     }
   }
+  toMobileStyles() {
+    if (null != this.mobileMaxHeight) return {
+      maxHeight: this.mobileMaxHeight
+    }
+  }
   constructor(e) {
-    r(this, "desktopMaxHeight", true), this.desktopMaxHeight = e.desktop_max_height
+    r(this, "desktopMaxHeight", true), r(this, "mobileMaxHeight", true), this.desktopMaxHeight = e.desktop_max_height, this.mobileMaxHeight = e.mobile_max_height
   }
 }

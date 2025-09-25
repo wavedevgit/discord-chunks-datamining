@@ -1,4 +1,4 @@
-/** Chunk was on 60611 **/
+/** Chunk was on 27087 **/
 /** chunk id: 202905, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -65,7 +65,7 @@ function _(e) {
       }))
     }, [null == n ? true : n.id, E]),
     T = i.useCallback(() => {
-      g.Z.setSection(x.pNK.PROFILE)
+      g.Z.setSection(b.pNK.PROFILE)
     }, []);
   if (null == n) return null;
   let P = null != t ? t : null == y ? true : y.formFields;
@@ -73,13 +73,13 @@ function _(e) {
     children: [(0, r.jsx)(s.X6q, {
       variant: "heading-md/semibold",
       color: "header-primary",
-      children: b.intl.string(b.t.AHJddH)
+      children: x.intl.string(x.t.AHJddH)
     }), (0, r.jsx)(s.xvT, {
       tag: "p",
       variant: "text-sm/medium",
       color: "text-secondary",
       className: j.applicationBody,
-      children: b.intl.string(b.t.Z7TCtb)
+      children: x.intl.string(x.t.Z7TCtb)
     }), (0, r.jsx)(h.c, {
       guildId: n.id
     }), (0, r.jsx)("div", {
@@ -99,15 +99,15 @@ function _(e) {
           value: E,
           hideBorder: true,
           disabled: N,
-          children: b.intl.string(b.t["N/0239"])
+          children: x.intl.string(x.t["N/0239"])
         }), (0, r.jsx)(s.xvT, {
           variant: "text-sm/normal",
           color: "text-secondary",
-          children: b.intl.string(b.t["3TSZYG"])
+          children: x.intl.string(x.t["3TSZYG"])
         }), N && (0, r.jsx)(s.xvT, {
           variant: "text-xs/normal",
           color: "text-muted",
-          children: b.intl.format(b.t.Bk0VOj, {
+          children: x.intl.format(x.t.Bk0VOj, {
             profileLink: (e, t) => (0, r.jsx)(c.eee, {
               onClick: T,
               children: e
@@ -127,7 +127,7 @@ function _(e) {
               className: j.previewButton,
               size: o.zx.Sizes.SMALL,
               fullWidth: true,
-              children: b.intl.string(b.t["7XdMW1"])
+              children: x.intl.string(x.t["7XdMW1"])
             }),
             disableGuildNameClick: true
           })]

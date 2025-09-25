@@ -1,4 +1,4 @@
-/** Chunk was on 60611 **/
+/** Chunk was on 27087 **/
 /** chunk id: 150689, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -18,22 +18,22 @@ function c(e) {
     everyoneRole: c,
     otherRoles: d,
     setSelectedSection: u
-  } = e, [m, g] = i.useState(""), [p, f] = i.useState(o.Cl), h = m.trim(), x = i.useMemo(() => d.filter(e => (0, l.uo)(e, h)), [d, h]), b = i.useCallback(() => (0, r.jsx)(a.Z, {
+  } = e, [m, g] = i.useState(""), [p, f] = i.useState(o.Cl), h = m.trim(), b = i.useMemo(() => d.filter(e => (0, l.uo)(e, h)), [d, h]), x = i.useCallback(() => (0, r.jsx)(a.Z, {
     guild: n,
     everyoneRole: c,
-    filteredRoles: x,
+    filteredRoles: b,
     setEditRoleId: t,
     query: m,
     setQuery: g,
     setHeaderHeight: f
-  }, "header"), [n, c, x, t, m]);
+  }, "header"), [n, c, b, t, m]);
   return (0, r.jsx)(s.Z, {
     setEditRoleId: t,
     guild: n,
     everyoneRole: c,
     otherRoles: d,
     setSelectedSection: u,
-    renderHeader: b,
+    renderHeader: x,
     headerHeight: p,
     query: m
   })

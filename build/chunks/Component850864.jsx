@@ -1,4 +1,4 @@
-/** Chunk was on 60611 **/
+/** Chunk was on 27087 **/
 /** chunk id: 850864, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -60,7 +60,7 @@ function N(e) {
         })
       }), (0, r.jsx)("div", {
         className: v.section,
-        children: (0, r.jsx)(b.Z, {
+        children: (0, r.jsx)(x.Z, {
           guildId: t.id
         })
       }), (0, r.jsx)("div", {
@@ -120,7 +120,7 @@ function N(e) {
         })]
       }), (0, r.jsxs)("div", {
         className: v.section,
-        children: [(0, r.jsx)(x.Z, {
+        children: [(0, r.jsx)(b.Z, {
           guildId: t.id
         }), (0, r.jsx)(h.Z, {
           guildId: t.id

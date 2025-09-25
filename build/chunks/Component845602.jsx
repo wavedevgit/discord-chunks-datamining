@@ -1,4 +1,4 @@
-/** Chunk was on 20572 **/
+/** Chunk was on 33384 **/
 /** chunk id: 845602, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   E: () => k,
@@ -12,9 +12,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk957537 = require("./957537.js"),
   Chunk839008 = require("./839008.js"),
   Chunk797967 = require("./797967.jsx"),
-  Chunk755641 = require("./755641.jsx"),
-  Chunk742409 = require("./742409.jsx"),
-  Chunk369509 = require("./369509.jsx"),
+  Chunk353857 = require("./353857.jsx"),
+  Chunk978088 = require("./978088.jsx"),
+  Chunk9377 = require("./9377.jsx"),
   Chunk101017 = require("./101017.js"),
   Chunk606318 = require("./606318.js"),
   Chunk141006 = require("./141006.js"),
@@ -34,7 +34,7 @@ function x() {
       tertiary_color: null
     }
   }), {
-    gradientStyle: a,
+    gradientStyle: o,
     gradientClassname: c
   } = (0, Chunk481060.Icv)({
     colorStrings: (0, Chunk606318.DX)(exports),
@@ -46,7 +46,7 @@ function x() {
     className: Chunk947018.container,
     children: [(0, Chunk951288.jsx)("div", {
       className: Chunk947018.messageContainer,
-      children: (0, Chunk951288.jsx)(Chunk742409.l, {
+      children: (0, Chunk951288.jsx)(Chunk978088.l, {
         avatar: Chunk957537.Z,
         username: "Cherry",
         usernameStyle: Chunk120356,
@@ -59,7 +59,7 @@ function x() {
       value: exports.primary_color,
       secondaryValue: null != (e = exports.secondary_color) ? module : true,
       onChange: e => {
-        var r, o;
+        var r, a;
         return n((r = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -77,17 +77,17 @@ function x() {
             })
           }
           return e
-        }({}, t), o = o = {
+        }({}, t), a = a = {
           primary_color: e
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e);
             n.push.apply(n, r)
           }
           return n
-        })(Object(o)).forEach(function(e) {
-          Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(o, e))
+        })(Object(a)).forEach(function(e) {
+          Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(a, e))
         }), r))
       },
       onChangeGradientColors: e => n({
@@ -103,7 +103,7 @@ function x() {
 function k(e) {
   let {
     guildId: t
-  } = e, [n, a] = o.useState(C.x_.HEART), s = (0, g.Z)(), l = o.useMemo(() => ({
+  } = e, [n, o] = a.useState(C.x_.HEART), s = (0, g.Z)(), l = a.useMemo(() => ({
     unlockedBadges: s.unlockedBadges.slice(0, 10),
     lockedBadges: []
   }), [s]);
@@ -126,7 +126,7 @@ function k(e) {
       })
     }), (0, r.jsx)(u.g, {
       selectedBadge: n,
-      onBadgeClicked: a,
+      onBadgeClicked: o,
       badgeCollection: l
     })]
   })

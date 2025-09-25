@@ -1,4 +1,4 @@
-/** Chunk was on 60611 **/
+/** Chunk was on 27087 **/
 /** chunk id: 822693, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -18,8 +18,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk800223 = require("./800223.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let x = "NO_CHANNEL",
-  b = Chunk149765.$e(Chunk981631.Plq.VIEW_CHANNEL, Chunk981631.Plq.CREATE_INSTANT_INVITE);
+let b = "NO_CHANNEL",
+  x = Chunk149765.$e(Chunk981631.Plq.VIEW_CHANNEL, Chunk981631.Plq.CREATE_INSTANT_INVITE);
 
 function j(e) {
   let {
@@ -38,7 +38,7 @@ function j(e) {
       let {
         channel: t
       } = e;
-      return t.id === l || d.Z.can(b, t)
+      return t.id === l || d.Z.can(x, t)
     }).map(e => {
       let {
         channel: t
@@ -49,11 +49,11 @@ function j(e) {
       }
     });
     return e.unshift({
-      value: x,
+      value: b,
       label: h.intl.string(h.t.u197b2)
     }), e
   }, [v, t, l]), O = i.useCallback(e => {
-    j ? (0, p.c)(t, n, e !== x ? e : null) : g.Z.updateEmbed(t, n, e !== x ? e : null)
+    j ? (0, p.c)(t, n, e !== b ? e : null) : g.Z.updateEmbed(t, n, e !== b ? e : null)
   }, [t, n, j]);
   return (0, r.jsx)(a.q4e, {
     options: _,

@@ -1,4 +1,4 @@
-/** Chunk was on 60611 **/
+/** Chunk was on 27087 **/
 /** chunk id: 870472, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -136,7 +136,7 @@ function c(e, t) {
         }
       })
     }, [u]),
-    x = r.useCallback(e => {
+    b = r.useCallback(e => {
       u(t => {
         let {
           tags: n,
@@ -152,7 +152,7 @@ function c(e, t) {
         }
       })
     }, [u]),
-    b = r.useCallback(function(e) {
+    x = r.useCallback(function(e) {
       let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
       u(n => {
         let {
@@ -297,8 +297,8 @@ function c(e, t) {
     }, [y, O, C, j, l]),
     handleRemoveTag: f,
     handleTagChangeEvent: h,
-    handleSelectTag: x,
-    handleUnselectTag: b,
+    handleSelectTag: b,
+    handleUnselectTag: x,
     handleResetTagSelections: j,
     handleInputBlurEvent: N
   }

@@ -1,8 +1,8 @@
-/** Chunk was on 60611 **/
+/** Chunk was on 27087 **/
 /** chunk id: 399614, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => b
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -48,19 +48,19 @@ function f(e, t) {
   }), e
 }
 let h = [],
-  x = function(e) {
+  b = function(e) {
     let {
       guildId: t
-    } = e, x = (0, l.Wu)([d.Z], () => {
+    } = e, b = (0, l.Wu)([d.Z], () => {
       var e;
       return null != (e = d.Z.getSettings().resourceChannels) ? e : h
-    }), b = i.useMemo(() => x.map(e => f(p({}, e), {
+    }), x = i.useMemo(() => b.map(e => f(p({}, e), {
       id: e.channelId
-    })), [x]), {
+    })), [b]), {
       handleDragStart: j,
       handleDragReset: v,
       handleDragComplete: _
-    } = (0, a.Z)(b, c.lq), O = i.useCallback((e, n) => {
+    } = (0, a.Z)(x, c.lq), O = i.useCallback((e, n) => {
       let r = d.Z.getSettings();
       null != r && ((0, c.r2)(e), (0, c.oo)(t, r).then(() => {
         (0, c.mM)(t, e.channelId, n)
@@ -79,14 +79,14 @@ let h = [],
     }, [t, O]);
     return (0, r.jsxs)("div", {
       className: g.editResources,
-      children: [x.map((e, n) => (0, r.jsx)(u.Z, {
+      children: [b.map((e, n) => (0, r.jsx)(u.Z, {
         guildId: t,
         resourceChannel: e,
         index: n,
         onDragStart: j,
         onDragReset: v,
         onDragComplete: _
-      }, e.channelId)), x.length < o.x3 && (0, r.jsxs)(s.P3F, {
+      }, e.channelId)), b.length < o.x3 && (0, r.jsxs)(s.P3F, {
         className: g.addActionItem,
         onClick: y,
         children: [(0, r.jsx)(s.oFk, {

@@ -1,4 +1,4 @@
-/** Chunk was on 60611 **/
+/** Chunk was on 27087 **/
 /** chunk id: 906512, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -83,9 +83,9 @@ let C = [{
       body: s
     } = e;
     return (0, r.jsxs)("div", {
-      className: x.featureCard,
+      className: b.featureCard,
       children: [(0, r.jsx)("div", {
-        className: x.featureIcon,
+        className: b.featureIcon,
         children: (0, r.jsx)(t, {
           color: null != n ? n : "currentColor",
           width: i,
@@ -94,7 +94,7 @@ let C = [{
         })
       }), (0, r.jsx)(c.X6q, {
         variant: "heading-md/semibold",
-        className: x.featureHeader,
+        className: b.featureHeader,
         children: l
       }), (0, r.jsx)(c.Text, {
         color: "header-secondary",
@@ -116,12 +116,12 @@ let C = [{
       top: o[1] + i[1]
     };
     return (0, r.jsxs)("div", {
-      className: s()(x.guildDetails, {
-        [x.faded]: l
+      className: s()(b.guildDetails, {
+        [b.faded]: l
       }),
       style: d,
       children: [(0, r.jsx)("div", {
-        className: x.guildIcon,
+        className: b.guildIcon,
         children: (0, r.jsx)("img", {
           alt: "",
           src: t,
@@ -147,9 +147,9 @@ let C = [{
       u.Z.open()
     };
     return (0, r.jsxs)("div", {
-      className: x.container,
+      className: b.container,
       children: [(0, r.jsxs)("div", {
-        className: x.banner,
+        className: b.banner,
         ref: e => O(e),
         children: [C.map(e => {
           var t, i;
@@ -167,13 +167,13 @@ let C = [{
           }), t), e.name)
         }), (0, r.jsx)("img", {
           alt: "",
-          src: b,
-          className: x.image,
+          src: x,
+          className: b.image,
           width: 256
         }), (0, r.jsx)("img", {
           alt: "",
           src: j,
-          className: x.sparkles
+          className: b.sparkles
         })]
       }), (0, r.jsx)(c.X6q, {
         variant: "heading-xl/semibold",
@@ -181,7 +181,7 @@ let C = [{
       }), (0, r.jsx)(c.Text, {
         color: "header-secondary",
         variant: "text-md/normal",
-        className: x.body,
+        className: b.body,
         children: h.intl.format(h.t["52EgsL"], {
           helpdeskArticle: g.Z.getArticleURL(p.BhN.FRIEND_COMMUNITY_DISCOVERABLE_GUILD_TYPES)
         })
@@ -190,7 +190,7 @@ let C = [{
         "aria-label": I ? true : h.intl.string(h.t["pjG+T0"]),
         children: e => (0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
-          className: x.button,
+          className: b.button,
           children: (0, r.jsx)(c.zxk, y({
             variant: "primary",
             text: h.intl.string(h.t.LhlgY2),
@@ -199,27 +199,27 @@ let C = [{
           }, e))
         })
       }), (0, r.jsx)("hr", {
-        className: x.separator
+        className: b.separator
       }), (0, r.jsx)(c.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
         children: h.intl.string(h.t.OzLWLC)
       }), (0, r.jsx)(c.Text, {
         color: "header-secondary",
-        className: x.body,
+        className: b.body,
         variant: "text-sm/normal",
         children: h.intl.format(h.t.rjhrqK, {
           helpdeskArticle: g.Z.getArticleURL(p.BhN.GUILD_COMMUNITY_FEATURE)
         })
       }), (0, r.jsx)("div", {
-        className: x.features,
+        className: b.features,
         children: [{
           icon: c.IeX,
           color: o.Z.unsafe_rawColors.GREEN_360.css,
           header: h.intl.string(h.t.oVQF29),
           body: h.intl.format(h.t.A6G7am, {
             featureHook: (e, t) => (0, r.jsx)("strong", {
-              className: x.featuredText,
+              className: b.featuredText,
               children: e
             }, t)
           })
@@ -234,11 +234,11 @@ let C = [{
               children: e => (0, r.jsx)(c.d3s, y({
                 size: "xs",
                 color: "currentColor",
-                className: x.infoIcon
+                className: b.infoIcon
               }, e))
             }),
             featureHook: (e, t) => (0, r.jsx)("strong", {
-              className: x.featuredText,
+              className: b.featuredText,
               children: e
             }, t)
           })

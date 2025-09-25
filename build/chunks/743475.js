@@ -1,9 +1,9 @@
-/** Chunk was on 60611 **/
+/** Chunk was on 27087 **/
 /** chunk id: 743475, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
   BG: () => f,
-  DO: () => x,
+  DO: () => b,
   pt: () => h
 }), require("./388685.js");
 var Chunk570140 = require("./570140.js"),
@@ -31,13 +31,13 @@ function h(e) {
     channelId: e
   })
 }
-async function x(e) {
+async function b(e) {
   let t = Array.from(d.Z.editedDefaultChannelIds).filter(e => null != o.Z.getChannel(e)),
     n = m.Z.advancedMode,
     [f, h] = (0, a.d9)(e.id, [...t]),
-    x = (0, a.kl)(e.id, t, m.Z.editedOnboardingPrompts),
-    b = (0, a.kl)(e.id, t, m.Z.editedOnboardingPrompts, a.V7);
-  if (s.Z.getEnabled(e.id) && (!n && (h.length < g.md || f.length < g.X) || n && (x.length < g.md || b.length < g.X))) return void i.Z.show({
+    b = (0, a.kl)(e.id, t, m.Z.editedOnboardingPrompts),
+    x = (0, a.kl)(e.id, t, m.Z.editedOnboardingPrompts, a.V7);
+  if (s.Z.getEnabled(e.id) && (!n && (h.length < g.md || f.length < g.X) || n && (b.length < g.md || x.length < g.X))) return void i.Z.show({
     title: p.intl.string(p.t.iLdiqa),
     body: p.intl.string(p.t.JOT74e)
   });

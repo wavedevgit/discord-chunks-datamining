@@ -1,4 +1,4 @@
-/** Chunk was on 60611 **/
+/** Chunk was on 27087 **/
 /** chunk id: 969632, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -40,11 +40,11 @@ let m = {
   f = false,
   h = {};
 
-function x() {
+function b() {
   g = null, p = Object.assign({}, m), f = false, g = Chunk999382.Z.getGuildId(), p = l().cloneDeep(Object.assign({}, Chunk563534.Z.getSettings(g)))
 }
 
-function b(e, t) {
+function x(e, t) {
   if (null == p.newMemberActions) returnfalse;
   let n = p.newMemberActions.findIndex(t => t.channelId === e);
   if (n < 0) returnfalse;
@@ -104,9 +104,9 @@ class _ extends(r = Chunk442837.ZP.PersistedStore) {
 }
 d(_, "displayName", "GuildSettingsOnboardingHomeSettingsStore"), d(_, "persistKey", "GuildSettingsOnboardingHomeSettingsStore");
 let O = new _(Chunk570140.Z, {
-  GUILD_SETTINGS_INIT: x,
-  GUILD_SETTINGS_SET_SECTION: x,
-  GUILD_SETTINGS_ONBOARDING_HOME_SETTINGS_RESET: x,
+  GUILD_SETTINGS_INIT: b,
+  GUILD_SETTINGS_SET_SECTION: b,
+  GUILD_SETTINGS_ONBOARDING_HOME_SETTINGS_RESET: b,
   GUILD_HOME_SETTINGS_FETCH_SUCCESS: function() {
     p = l().cloneDeep(Object.assign({}, Chunk563534.Z.getSettings(g)))
   },
@@ -119,7 +119,7 @@ let O = new _(Chunk570140.Z, {
     let {
       action: t
     } = e;
-    return b(t.channelId, t)
+    return x(t.channelId, t)
   },
   GUILD_RESOURCE_CHANNEL_UPDATE_SUCCESS: function(e) {
     let {
@@ -145,7 +145,7 @@ let O = new _(Chunk570140.Z, {
       channelId: t,
       action: n
     } = e;
-    return b(t, n)
+    return x(t, n)
   },
   GUILD_SETTINGS_ONBOARDING_ADD_NEW_MEMBER_ACTION: function(e) {
     var t;

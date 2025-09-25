@@ -1,4 +1,4 @@
-/** Chunk was on 60611 **/
+/** Chunk was on 27087 **/
 /** chunk id: 489028, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -61,7 +61,7 @@ function P(e) {
   } = (0, j.JH)(), f = (0, v.mY)(), h = i.useMemo(() => n.map(e => ({
     label: e.name,
     value: e.id
-  })), [n]), x = async () => {
+  })), [n]), b = async () => {
     await u(t, o, N.wW.GUILD_ROLE_SUBSCRIPTIONS) && (p(t.id), (0, _.B)({
       title: I.intl.string(I.t["AP/2qa"]),
       body: I.intl.string(I.t.kHMgaG)
@@ -80,7 +80,7 @@ function P(e) {
         "aria-label": I.intl.string(I.t.QXf93N)
       }), (0, r.jsx)(s.zxk, {
         text: I.intl.string(I.t["9HU3ZW"]),
-        onClick: x,
+        onClick: b,
         loading: m,
         disabled: null == o || f || !l
       })]
@@ -94,7 +94,7 @@ function P(e) {
 let w = e => {
   let {
     guild: t
-  } = e, n = (0, l.e7)([h.default], () => h.default.getCurrentUser()), s = (0, f.eM)(t, n), d = (0, c.Ob)(t), j = (0, l.e7)([x.Z], () => x.Z.isFocused()), {
+  } = e, n = (0, l.e7)([h.default], () => h.default.getCurrentUser()), s = (0, f.eM)(t, n), d = (0, c.Ob)(t), j = (0, l.e7)([b.Z], () => b.Z.isFocused()), {
     teams: v,
     loading: _
   } = (0, p.Z)({
@@ -103,7 +103,7 @@ let w = e => {
     var t;
     return e.payout_account_status !== E.C.BLOCKED && (0, g.Z)(null != (t = null == n ? true : n.id) ? t : C.lds, e)
   }), [v, n]), w = N.length > 0, R = i.useCallback(async () => {
-    b.default.track(C.rMx.GUILD_ROLE_SUBSCRIPTION_TEAM_SETUP_CLICKED, {
+    x.default.track(C.rMx.GUILD_ROLE_SUBSCRIPTION_TEAM_SETUP_CLICKED, {
       is_onboarding_v2: d,
       has_eligible_team: w,
       guild_id: t.id,

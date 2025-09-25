@@ -1,4 +1,4 @@
-/** Chunk was on 60611 **/
+/** Chunk was on 27087 **/
 /** chunk id: 558324, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -20,9 +20,9 @@ let o = e => {
       maxTaxLength: p,
       maxTags: f,
       disabled: h,
-      placeholder: x
+      placeholder: b
     } = e,
-    b = function(e, t) {
+    x = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -81,14 +81,14 @@ let o = e => {
       items: o,
       onRemove: u
     }
-  }, b), n = n = {
+  }, x), n = n = {
     value: j,
     onKeyDown: O,
     onChange: v,
     maxLength: p,
     disabled: h,
     onBlur: _,
-    placeholder: x
+    placeholder: b
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {

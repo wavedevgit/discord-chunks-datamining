@@ -1,4 +1,4 @@
-/** Chunk was on 60611 **/
+/** Chunk was on 27087 **/
 /** chunk id: 970061, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -44,7 +44,7 @@ function g(e) {
     buttonLabel: l,
     buttonCallback: s,
     disabled: o
-  } = e, [g, p] = i.useState(false), f = n.flatMap(e => e.items.map(e => e.completed)), h = f.filter(e => e).length / f.length, x = (0, c.q_F)({
+  } = e, [g, p] = i.useState(false), f = n.flatMap(e => e.items.map(e => e.completed)), h = f.filter(e => e).length / f.length, b = (0, c.q_F)({
     width: "".concat(100 * h, "%")
   });
   return (0, r.jsxs)("div", {
@@ -64,7 +64,7 @@ function g(e) {
       className: u.progressBarOuter,
       children: (0, r.jsx)(a.animated.div, {
         className: u.progressBarInner,
-        style: x
+        style: b
       })
     }), !g && n.map((e, t) => {
       let {

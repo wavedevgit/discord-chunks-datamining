@@ -1,4 +1,4 @@
-/** Chunk was on 60611 **/
+/** Chunk was on 27087 **/
 /** chunk id: 700833, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -53,8 +53,8 @@ function p(e) {
     dropHoveredIndex: t,
     formField: p,
     guild: f,
-    index: x,
-    isDragEnabled: b,
+    index: b,
+    isDragEnabled: x,
     submittedGuildJoinRequestsCount: j,
     removeFormField: v,
     updateFormField: _,
@@ -63,15 +63,15 @@ function p(e) {
     actionsLocation: C,
     fieldStyle: N
   } = e, E = async () => {
-    await v(x)
+    await v(b)
   }, I = async e => {
-    await _(x, e)
+    await _(b, e)
   }, S = async (e, t, n) => {
     await O(e, t, n)
-  }, T = (0, i.uniqueId)(), P = t === x, w = {
+  }, T = (0, i.uniqueId)(), P = t === b, w = {
     key: T,
-    index: x,
-    isDragEnabled: b,
+    index: b,
+    isDragEnabled: x,
     isDropHovered: P,
     onEdit: () => {
       0 === j ? h(p, I, f) : (0, l.ZDy)(async () => {

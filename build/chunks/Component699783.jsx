@@ -1,7 +1,7 @@
-/** Chunk was on 41128 **/
-/** chunk id: 699783, original params: t,a,e (module,exports,require) **/
+/** Chunk was on 63498 **/
+/** chunk id: 699783, original params: t,e,a (module,exports,require) **/
 require.d(exports, {
-  default: () => b
+  default: () => g
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,40 +16,40 @@ var Chunk951288 = require("./951288.js"),
   Chunk134612 = require("./134612.js"),
   Chunk388032 = require("./388032.jsx");
 
-function b(t) {
+function g(t) {
   let {
-    userId: a,
-    channelId: e,
-    transitionState: b,
-    onBlock: h,
+    userId: e,
+    channelId: a,
+    transitionState: g,
+    onBlock: b,
     onBlockAndReport: f,
-    onClose: g,
-    onCancel: m
-  } = t, v = (0, d.q)(e), w = l.useCallback(() => {
-    r.Z.blockUser(a, {
+    onClose: h,
+    onCancel: v
+  } = t, Z = (0, d.q)(a), m = n.useCallback(() => {
+    i.Z.blockUser(e, {
       location: p.zr
     }).then(() => {
-      c.Z.showBlockSuccessToast(a, e)
+      u.Z.showBlockSuccessToast(e, a)
     })
-  }, [a, e]), x = l.useCallback(() => {
-    w(), h(), g()
-  }, [w, h, g]), z = l.useCallback(() => {
-    w(), (0, o.wk)(v), f(), g()
-  }, [v, w, f, g]), P = l.useCallback(() => (null == m || m(), null == g || g(), Promise.resolve()), [m, g]), S = (0, n.e7)([u.default], () => u.default.getUser(a)), U = k.ZP.useName(S);
-  return (0, s.jsx)(i.Modal, {
-    transitionState: b,
-    onClose: P,
+  }, [e, a]), w = n.useCallback(() => {
+    m(), b(), h()
+  }, [m, b, h]), x = n.useCallback(() => {
+    m(), (0, o.wk)(Z), f(), h()
+  }, [Z, m, f, h]), M = n.useCallback(() => (null == v || v(), null == h || h(), Promise.resolve()), [v, h]), U = (0, l.e7)([c.default], () => c.default.getUser(e)), z = k.ZP.useName(U);
+  return (0, s.jsx)(r.Modal, {
+    transitionState: g,
+    onClose: M,
     title: C.intl.formatToPlainString(C.t.x5pOn5, {
-      name: U
+      name: z
     }),
     subtitle: C.intl.string(C.t.aedksr),
     actions: [{
       text: C.intl.string(C.t["3pzuj4"]),
-      onClick: z,
+      onClick: x,
       variant: "secondary"
     }, {
       text: C.intl.string(C.t.MzsUsr),
-      onClick: x,
+      onClick: w,
       variant: "primary"
     }]
   })

@@ -1,4 +1,4 @@
-/** Chunk was on 60611 **/
+/** Chunk was on 27087 **/
 /** chunk id: 614439, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -284,7 +284,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                           })]
                         }), (0, Chunk951288.jsx)(Chunk208567.Z, {
                           image: Chunk852860.discoverySplash,
-                          makeURL: e => b.ZP.getGuildDiscoverySplashURL({
+                          makeURL: e => x.ZP.getGuildDiscoverySplashURL({
                             id: d.id,
                             splash: e,
                             size: 512 * (0, p.x_)()

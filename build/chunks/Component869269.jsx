@@ -1,4 +1,4 @@
-/** Chunk was on 60611 **/
+/** Chunk was on 27087 **/
 /** chunk id: 869269, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -40,15 +40,15 @@ function j(e) {
     return null == v ? true : v.filter(t => !e.includes(t))
   }, [j, N, v]), T = null == E, P = null != (t = null == E ? true : E.published) && t, w = null != (n = null == E ? true : E.archived) && n;
   return (0, r.jsxs)("div", {
-    className: b.body,
+    className: x.body,
     children: [null != O && (0, r.jsx)(d.Z, {
       children: O.getAnyErrorMessage()
     }), !P && !I && !w && (0, r.jsxs)("div", {
-      className: b.publishListing,
+      className: x.publishListing,
       children: [(0, r.jsxs)("div", {
         children: [(0, r.jsx)(s.X6q, {
           variant: "heading-md/semibold",
-          className: b.publishListingInfoHeader,
+          className: x.publishListingInfoHeader,
           children: h.intl.string(h.t.WOlcS0)
         }), (0, r.jsx)(s.R94, {
           type: s.R94.Types.DESCRIPTION,
@@ -56,7 +56,7 @@ function j(e) {
         })]
       }), (0, r.jsx)(s.ua7, {
         shouldShow: T,
-        tooltipClassName: x.autoWidth,
+        tooltipClassName: b.autoWidth,
         text: h.intl.string(h.t.v7lRIi),
         children: e => {
           var t, n;

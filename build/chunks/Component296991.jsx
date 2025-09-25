@@ -1,4 +1,4 @@
-/** Chunk was on 60611 **/
+/** Chunk was on 27087 **/
 /** chunk id: 296991, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -68,8 +68,8 @@ function I(e) {
     onKeyDown: o,
     onClear: u,
     onRuleReorder: h,
-    isDropHovered: x,
-    focused: b,
+    isDropHovered: b,
+    focused: x,
     onFocus: j,
     previewEnabled: _,
     isDragEnabled: C,
@@ -111,7 +111,7 @@ function I(e) {
   return (0, r.jsx)("div", {
     ref: I,
     className: s()(y.draggableInputContainer, {
-      [y.dragging]: x
+      [y.dragging]: b
     }),
     "data-dnd-name": A,
     children: (0, r.jsxs)("div", {
@@ -125,7 +125,7 @@ function I(e) {
           richValue: P,
           channel: n,
           placeholder: O.intl.string(O.t["BRkD4+"]),
-          focused: b,
+          focused: x,
           onChange: (e, n, r) => {
             let i = N ? t.value : n;
             i.length > v.fn && (i = i.slice(0, v.fn)), n !== i && (n = i, r = (0, p.JM)(i)), a(n), w({
@@ -171,7 +171,7 @@ function S(e) {
     setRules: n,
     guild: l,
     disabled: s
-  } = e, a = l.rulesChannelId, c = l.features.has(_.oNc.PREVIEW_ENABLED), d = (0, u.e7)([h.Z], () => null != a ? h.Z.getChannel(a) : null), g = (0, u.e7)([x.ZP], () => x.ZP.getDefaultChannel(l.id)), [p, f] = i.useState(null), [E, S] = i.useState(null), T = i.useCallback(e => {
+  } = e, a = l.rulesChannelId, c = l.features.has(_.oNc.PREVIEW_ENABLED), d = (0, u.e7)([h.Z], () => null != a ? h.Z.getChannel(a) : null), g = (0, u.e7)([b.ZP], () => b.ZP.getDefaultChannel(l.id)), [p, f] = i.useState(null), [E, S] = i.useState(null), T = i.useCallback(e => {
     if (!s && t.length !== v.X2)
       if (null != e && "" === t[t.length - 1].value) {
         let r = [...t];
@@ -248,7 +248,7 @@ function S(e) {
         isDragEnabled: !s && t.length > 1,
         disabled: s
       }, e.id))
-    }), !D && (0, r.jsx)(b.A, {
+    }), !D && (0, r.jsx)(x.A, {
       text: O.intl.string(O.t.Cq5Jub),
       onClick: P,
       disabled: s

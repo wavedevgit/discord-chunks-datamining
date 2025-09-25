@@ -1,4 +1,4 @@
-/** Chunk was on 60611 **/
+/** Chunk was on 27087 **/
 /** chunk id: 442182, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -95,7 +95,7 @@ function D(e) {
     [l]: [t.id]
   }), [l, t.id]);
 
-  function x(e) {
+  function b(e) {
     if (e.stopPropagation(), !u) {
       if (e.shiftKey) return void R(t, l, a);
       let n = v.Z.getRole(a);
@@ -126,7 +126,7 @@ function D(e) {
     }
   }
 
-  function b(e) {
+  function x(e) {
     let i = h.default.getUser(t.id);
     null != i && (0, d.jW)(e, async () => {
       let {
@@ -150,7 +150,7 @@ function D(e) {
       children: e => (0, r.jsxs)(c.P3F, w(P({}, e), {
         innerRef: g,
         className: S.memberRow,
-        onContextMenu: b,
+        onContextMenu: x,
         children: [(0, r.jsx)(C.Z, {
           className: S.memberDetails,
           avatarURL: t.avatarURL,
@@ -167,7 +167,7 @@ function D(e) {
               className: s()(S.removeButton, {
                 [S.removeButtonDisabled]: u
               }),
-              onClick: x,
+              onClick: b,
               children: (0, r.jsx)(c.k$p, {
                 size: "xs",
                 color: "currentColor"
@@ -224,7 +224,7 @@ function A(e) {
   } = (0, p.ZP)(g.Z.MEMBER_LIST), f = i.useMemo(() => l.trim().toLowerCase(), [l]);
   (0, _.rY)(t, f);
   let h = i.useMemo(() => d.filter(e => (0, _.eg)(f, e)), [d, f]),
-    x = i.useMemo(() => h.sort((e, t) => e.name.localeCompare(t.name)), [h]);
+    b = i.useMemo(() => h.sort((e, t) => e.name.localeCompare(t.name)), [h]);
   return (0, r.jsx)(p.Gt, {
     value: m,
     children: (0, r.jsx)(c._2F, {
@@ -244,11 +244,11 @@ function A(e) {
         let {
           row: i
         } = e;
-        if (0 === x.length) return (0, r.jsx)(Z, {
+        if (0 === b.length) return (0, r.jsx)(Z, {
           handleAddClick: u,
           locked: a
         }, "empty");
-        let l = x[i];
+        let l = b[i];
         return (0, r.jsx)(D, {
           member: l,
           guildId: t,
@@ -298,11 +298,11 @@ function k(e) {
   } = (0, O.Z)(0), {
     scrolledToTop: f,
     handleScroll: h
-  } = (0, y.V)(), j = l.managed || o, v = (0, _.e)(t.id, l.id), C = (0, a.e7)([b.Z], () => {
+  } = (0, y.V)(), j = l.managed || o, v = (0, _.e)(t.id, l.id), C = (0, a.e7)([x.Z], () => {
     var e, n;
-    return null != (n = null == (e = b.Z.getRoleMemberCount(t.id)) ? true : e[l.id]) ? n : 0
+    return null != (n = null == (e = x.Z.getRoleMemberCount(t.id)) ? true : e[l.id]) ? n : 0
   }) > v.length, R = () => {
-    x.default.track(E.rMx.OPEN_MODAL, {
+    b.default.track(E.rMx.OPEN_MODAL, {
       type: "Add Role Members",
       location_page: "Role Settings",
       location_section: "Members"

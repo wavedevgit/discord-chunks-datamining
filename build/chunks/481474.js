@@ -1,6 +1,5 @@
-/** Chunk was on 60611 **/
+/** Chunk was on 50893 **/
 /** chunk id: 481474, original params: e,t,n (module,exports,require) **/
-"use strict";
 module.exports = {
   availabilityIndicator: "availabilityIndicator__40463",
   icon: "icon__40463",
