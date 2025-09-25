@@ -156,7 +156,7 @@ function eE(e) {
             visibleContent: t,
             markAsDismissed: n
           } = e;
-          if (t === d.z.TRIAL_NUX_STREAM_COACH_MARK) return E(true), (0, r.jsx)(H.h, {
+          if (t === d.z.TRIAL_NUX_STREAM_COACH_MARK) return E(true), (0, r.jsx)(V.h, {
             buttonRef: b,
             dismissed: false,
             onDismiss: () => {
@@ -450,7 +450,7 @@ let eT = function(e) {
     canGoLive: R
   } = (0, u.cj)([er.Z], () => ({
     canGoLive: (0, M.Z)(er.Z)
-  })), k = (0, A.Z)(), L = (0, u.e7)([N.Z], () => null != N.Z.getAwaitingRemoteSessionInfo()), B = null != k, H = (0, u.e7)([ei.Z], () => {
+  })), k = (0, A.Z)(), L = (0, u.e7)([N.Z], () => null != N.Z.getAwaitingRemoteSessionInfo()), B = null != k, V = (0, u.e7)([ei.Z], () => {
     var e;
     return (null != (e = null == k ? true : k.channelId) ? e : ei.Z.getVoiceChannelId()) === n.id
   }), F = (0, u.e7)([C.ZP], () => C.ZP.getCurrentEmbeddedActivity()), {
@@ -465,7 +465,7 @@ let eT = function(e) {
     showRefreshedAudioContextMenu: J
   } = (0, U.e)({
     location: v.Z.VOICE_CONTROL_TRAY
-  }), et = (0, V.Z)(n), en = i.useRef(null), eu = i.useRef(null), ep = Y ? e => {
+  }), et = (0, H.Z)(n), en = i.useRef(null), eu = i.useRef(null), ep = Y ? e => {
     (0, f.jW)(e, () => Promise.resolve(() => (0, r.jsx)(j.default, {
       onClose: f.Zy,
       renderInputDevices: true,
@@ -478,7 +478,7 @@ let eT = function(e) {
       onInteraction: eZ("AudioDeviceMenu")
     })))
   } : true;
-  return H ? (0, r.jsx)(x.Gt, {
+  return V ? (0, r.jsx)(x.Gt, {
     value: q,
     children: (0, r.jsxs)(b.Z, {
       section: eb.jXE.VOICE_CONTROL_TRAY,

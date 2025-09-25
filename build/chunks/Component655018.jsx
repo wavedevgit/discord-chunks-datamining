@@ -45,26 +45,26 @@ function A(e) {
   } = g.n.useExperiment({
     guildId: o.guild_id,
     location: "HangStatusPicker"
-  }), B = (0, y.V)(D), H = i.useRef(null), [V, F] = i.useState(null != (n = null == R ? true : R.status) ? n : ""), [G, z] = i.useState(null != (l = null == R ? true : R.emoji) ? l : null), W = (0, u.e7)([b.Z], () => b.Z.getCurrentHangStatus()), q = L.length > 0, Y = null == V || "" === V.trim(), K = (0, v.Z)(o), X = V.trim().length > 0 && V.trim() !== (null == R || null == (t = R.status) ? true : t.trim()) || null != G && !s()(G, null == R ? true : R.emoji), [J, Q] = i.useState(false);
+  }), B = (0, y.V)(D), V = i.useRef(null), [H, F] = i.useState(null != (n = null == R ? true : R.status) ? n : ""), [G, z] = i.useState(null != (l = null == R ? true : R.emoji) ? l : null), W = (0, u.e7)([b.Z], () => b.Z.getCurrentHangStatus()), q = L.length > 0, Y = null == H || "" === H.trim(), K = (0, v.Z)(o), X = H.trim().length > 0 && H.trim() !== (null == R || null == (t = R.status) ? true : t.trim()) || null != G && !s()(G, null == R ? true : R.emoji), [J, Q] = i.useState(false);
   i.useEffect(() => {
-    V.trim().length > 0 && J && Q(false), null == G && J && Q(false)
-  }, [V, G, J]), i.useEffect(() => {
+    H.trim().length > 0 && J && Q(false), null == G && J && Q(false)
+  }, [H, G, J]), i.useEffect(() => {
     if (null != G) {
       var e;
       null == (e = M.current) || e.focus()
     }
   }, [G]), i.useEffect(() => {
     var e;
-    V !== (null != (e = null == R ? true : R.status) ? e : "") && "" !== V.trim() ? A(true) : A(false)
-  }, [V, null == R ? true : R.status, G, null == R ? true : R.emoji, A]), i.useEffect(() => {
+    H !== (null != (e = null == R ? true : R.status) ? e : "") && "" !== H.trim() ? A(true) : A(false)
+  }, [H, null == R ? true : R.status, G, null == R ? true : R.emoji, A]), i.useEffect(() => {
     var e;
     (null == W || W === P.tN.CUSTOM) && (null == (e = M.current) || e.focus())
   }, [W]), i.useEffect(() => {
-    null == w || w(null == H ? true : H.current)
-  }, [H, w]);
+    null == w || w(null == V ? true : V.current)
+  }, [V, w]);
   let $ = i.useCallback(e => {
-      e !== W && ((0, m.Zx)(e, true), null != G && z(null), "" !== V.trim() && F(""))
-    }, [W, G, V]),
+      e !== W && ((0, m.Zx)(e, true), null != G && z(null), "" !== H.trim() && F(""))
+    }, [W, G, H]),
     ee = i.useCallback((e, t) => {
       let {
         emoji: n,
@@ -74,15 +74,15 @@ function A(e) {
     }, [null == R ? true : R.emoji, null == R ? true : R.status]),
     et = i.useCallback(e => {
       var t;
-      null == e || null == (t = e.preventDefault) || t.call(e), null != G && 0 === V.trim().length && Q(true), Y || ee({
-        status: V,
+      null == e || null == (t = e.preventDefault) || t.call(e), null != G && 0 === H.trim().length && Q(true), Y || ee({
+        status: H,
         emoji: null != G ? G : {
           id: null,
           name: "\uD83D\uDCAD",
           animated: false
         }
       }, true)
-    }, [V, G, ee, Y]),
+    }, [H, G, ee, Y]),
     en = i.useCallback(() => {
       let e = null,
         t = null;
@@ -105,8 +105,8 @@ function A(e) {
     }, [A]),
     ei = i.useCallback(() => {
       var e;
-      V !== (null != (e = null == R ? true : R.status) ? e : "") && "" !== V.trim() ? A(true) : A(false)
-    }, [A, V, null == R ? true : R.status]),
+      H !== (null != (e = null == R ? true : R.status) ? e : "") && "" !== H.trim() ? A(true) : A(false)
+    }, [A, H, null == R ? true : R.status]),
     el = i.useCallback((e, t, n) => {
       var i;
       let l = (0, _.Z)(e),
@@ -139,7 +139,7 @@ function A(e) {
       }, "".concat(n, "-").concat(t))
     }, [D, ee, $, B, null == R ? true : R.emoji, null == R ? true : R.status, W, L, U]);
   return (0, r.jsxs)("div", {
-    ref: H,
+    ref: V,
     role: "menu",
     id: "hang-status-picker",
     tabIndex: false,
@@ -152,7 +152,7 @@ function A(e) {
         className: a()(N.item, T.input),
         children: [(0, r.jsx)(d.oil, {
           inputRef: M,
-          value: V,
+          value: H,
           onBlur: er,
           onFocus: ei,
           onChange: e => F(e.substring(0, P.s0)),

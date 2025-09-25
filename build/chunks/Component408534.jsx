@@ -36,7 +36,7 @@ function j(e) {
   } = e, P = (0, a.bp)(), {
     id: I,
     type: Z
-  } = j, T = (0, i.e7)([u.Z], () => u.Z.getGuild(j.guild_id), [j.guild_id]), N = (0, i.e7)([d.Z], () => d.Z.getSelectedParticipant(I)), A = (null == N ? true : N.type) === _.fO.STREAM ? N.stream : null, w = (0, i.e7)([o.Z], () => (null == N ? true : N.type) === _.fO.ACTIVITY ? o.Z.getApplication(N.applicationId) : true), M = (0, h.Z)(I), R = (0, y.Z)(I), k = (0, m.Z)(j, T, null == A ? true : A.ownerId, null == w ? true : w.id), L = (0, p.Z)(I), D = (0, C.Z)(), U = (0, c.$A)(I), B = (0, c.j8)(I), H = (0, b.Z)(A, P), V = (0, g.Z)(w, I), F = (0, f.Z)(), G = (0, s.Z)(j);
+  } = j, T = (0, i.e7)([u.Z], () => u.Z.getGuild(j.guild_id), [j.guild_id]), N = (0, i.e7)([d.Z], () => d.Z.getSelectedParticipant(I)), A = (null == N ? true : N.type) === _.fO.STREAM ? N.stream : null, w = (0, i.e7)([o.Z], () => (null == N ? true : N.type) === _.fO.ACTIVITY ? o.Z.getApplication(N.applicationId) : true), M = (0, h.Z)(I), R = (0, y.Z)(I), k = (0, m.Z)(j, T, null == A ? true : A.ownerId, null == w ? true : w.id), L = (0, p.Z)(I), D = (0, C.Z)(), U = (0, c.$A)(I), B = (0, c.j8)(I), V = (0, b.Z)(A, P), H = (0, g.Z)(w, I), F = (0, f.Z)(), G = (0, s.Z)(j);
   return (0, r.jsxs)(l.v2r, {
     className: O.menu,
     onClose: t,
@@ -53,7 +53,7 @@ function j(e) {
     }), (0, r.jsx)(l.kSQ, {
       children: D
     }), (0, r.jsxs)(l.kSQ, {
-      children: [null != A ? H : null, null != w ? V : null]
+      children: [null != A ? V : null, null != w ? H : null]
     })]
   })
 }

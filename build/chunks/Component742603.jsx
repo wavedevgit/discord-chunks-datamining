@@ -73,7 +73,7 @@ function B(e, t) {
   }), e
 }
 
-function H(e) {
+function V(e) {
   let {
     focusedParticipant: t,
     channel: n
@@ -89,7 +89,7 @@ function H(e) {
   })
 }
 
-function V(e) {
+function H(e) {
   let {
     user: t,
     channel: n,
@@ -132,7 +132,7 @@ function F(e) {
       variant: "text-md/normal",
       color: "none",
       children: (0, u.Z)(n.name)
-    }), a && (0, r.jsx)(H, {
+    }), a && (0, r.jsx)(V, {
       channel: l,
       focusedParticipant: i
     })]
@@ -143,12 +143,12 @@ function F(e) {
     t = (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(C.ZP.Divider, {
         className: L.divider
-      }), (0, r.jsx)(V, {
+      }), (0, r.jsx)(H, {
         user: e,
         channel: l,
         stream: n,
         color: a ? "header-primary" : "none"
-      }), a && (0, r.jsx)(H, {
+      }), a && (0, r.jsx)(V, {
         channel: l,
         focusedParticipant: i
       })]
@@ -181,7 +181,7 @@ function G(e) {
   let Z = (0, a.e7)([p.Z], () => p.Z.getChannelStatus(t)),
     N = t.isGuildVoice() && c && null != Z && Z.length > 0,
     M = (0, I.ZP)(t),
-    H = N ? (0, r.jsx)(o.ua7, {
+    V = N ? (0, r.jsx)(o.ua7, {
       text: k.intl.string(k.t.Mgpxi4),
       delay: 500,
       position: "bottom",
@@ -190,7 +190,7 @@ function G(e) {
         className: l()(L.channelStatusClickable, {
           [L.hoverable]: M
         }),
-        onClick: M ? V : true,
+        onClick: M ? H : true,
         children: [(0, r.jsx)(o.Text, {
           variant: "text-xs/normal",
           className: l()(L.channelStatus, D.markup, {
@@ -209,7 +209,7 @@ function G(e) {
       }))
     }) : null;
 
-  function V() {
+  function H() {
     (0, o.ZDy)(async () => {
       let {
         default: e
@@ -234,7 +234,7 @@ function G(e) {
         className: l()(e, L.headerBar),
         innerClassName: L.headerBarChildren,
         toolbarClassName: L.toolbar,
-        childrenBottom: H,
+        childrenBottom: V,
         toolbar: (0, r.jsx)(T.Z, {
           channel: t,
           appContext: s,
