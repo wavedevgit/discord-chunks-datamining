@@ -45,8 +45,10 @@ function v(e) {
       guildId: n
     })
   }, [S, D, n]), j = (0, i.useCallback)(() => {
-    null != n ? (0, f.N_)(null) : (0, s.NI)(null), _.default.track(g.rMx.DISPLAY_NAME_STYLES_REMOVED)
-  }, [n]);
+    (0, s.NI)(null), _.default.track(g.rMx.DISPLAY_NAME_STYLES_REMOVED)
+  }, []), M = (0, i.useCallback)(() => {
+    (0, f.N_)(null)
+  }, []);
   return I || R ? (0, r.jsx)(m.Z, {
     title: b.intl.string(y.default["86GtGB"]),
     titleIcon: x ? (0, r.jsx)(o.IGR, {
@@ -63,11 +65,16 @@ function v(e) {
         size: "sm",
         text: b.intl.string(y.default.vJqrIi),
         onClick: L
-      }), R && (0, r.jsx)(o.zxk, {
+      }), null == n && R && (0, r.jsx)(o.zxk, {
         variant: "secondary",
         size: "sm",
         text: b.intl.string(y.default.ymq8WV),
         onClick: j
+      }), null != n && R && (0, r.jsx)(o.zxk, {
+        variant: "secondary",
+        size: "sm",
+        text: b.intl.string(y.default["j/KRxc"]),
+        onClick: M
       })]
     })
   }) : null

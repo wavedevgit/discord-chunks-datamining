@@ -112,7 +112,7 @@ function g(e, t) {
     guildErrors: c.Z.getErrors().displayNameStyles
   })), d = null == e ? true : e.displayNameStyles, p = null == r ? true : r.displayNameStyles;
   return null != t && n && (null != p || null != l) ? {
-    currentDisplayNameStyles: p,
+    currentDisplayNameStyles: null != p ? p : d,
     pendingDisplayNameStyles: l,
     pendingErrors: u
   } : {
