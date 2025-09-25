@@ -80,11 +80,11 @@ let N = 10,
       children: [(0, r.jsxs)("div", {
         className: v.headerContent,
         children: [(0, r.jsx)(s.Text, {
-          variant: "text-xs/semibold",
+          variant: "text-sm/semibold",
           color: "text-primary",
           children: O.intl.string(O.t["D+DkEB"])
         }), (0, r.jsx)(s.Text, {
-          variant: "text-xs/normal",
+          variant: "text-sm/normal",
           color: "text-tertiary",
           children: O.intl.format(O.t.JhwFc3, {
             count: t
@@ -318,6 +318,7 @@ function G(e) {
     position: y,
     align: O,
     spacing: R,
+    scrollBehavior: "close",
     children: e => a(e, g)
   })
 }
