@@ -15,18 +15,18 @@ var Chunk951288 = require("./951288.js"),
 let h = e => {
     let {
       setImage: t
-    } = e, [n, s] = l.useState(null);
+    } = e, [n, s] = i.useState(null);
     return (0, r.jsx)("div", {
       className: d.emptyState,
       children: (0, r.jsxs)("div", {
         className: d.dropZone,
-        children: [(0, r.jsx)(i.FmF, {
+        children: [(0, r.jsx)(l.FmF, {
           size: "lg",
-          color: i.TVs.colors.HEADER_MUTED,
+          color: l.TVs.colors.HEADER_MUTED,
           className: d.imagePlusIcon
         }), (0, r.jsxs)("div", {
           className: d.textContainer,
-          children: [(0, r.jsx)(i.Text, {
+          children: [(0, r.jsx)(l.Text, {
             variant: "text-md/medium",
             children: c.intl.format(c.t["Ks2/3d"], {
               selectFileHook: (e, n) => (0, r.jsx)(m, {
@@ -34,7 +34,7 @@ let h = e => {
                 setUserImage: t
               }, n)
             })
-          }), (0, r.jsx)(i.Text, {
+          }), (0, r.jsx)(l.Text, {
             variant: "text-xs/normal",
             color: "text-tertiary",
             children: c.intl.string(c.t.UTE8Cw)
@@ -55,7 +55,7 @@ let h = e => {
       setUserImage: t,
       translatedContent: n
     } = e;
-    return (0, r.jsx)(i.P3F, {
+    return (0, r.jsx)(l.P3F, {
       focusProps: {
         within: true
       },

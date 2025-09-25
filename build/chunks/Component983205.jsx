@@ -13,23 +13,23 @@ let o = e => {
     name: t,
     onNameChange: n,
     label: o
-  } = e, u = l.useRef(null), c = l.useRef(null), [d, h] = l.useState(false), m = l.useCallback(e => {
+  } = e, u = i.useRef(null), c = i.useRef(null), [d, h] = i.useState(false), m = i.useCallback(e => {
     var t;
     c.current = null == (t = u.current) ? true : t.selectionStart, n(e = (e = e.replace(/\s/g, "_")).length < 2 ? e : a.ZP.sanitizeEmojiName(e))
   }, [n]);
-  l.useEffect(() => {
+  i.useEffect(() => {
     if (null != c.current) {
       var e;
       null == (e = u.current) || e.setSelectionRange(c.current, c.current), c.current = null
     }
   });
-  let g = l.useCallback(() => {
+  let g = i.useCallback(() => {
       h(false)
     }, []),
-    p = l.useCallback(() => {
+    p = i.useCallback(() => {
       h(true)
     }, []);
-  return (0, r.jsx)(i.oil, {
+  return (0, r.jsx)(l.oil, {
     inputRef: u,
     error: d ? "" : true,
     minLength: 2,

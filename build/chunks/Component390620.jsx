@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk596454 = require("./596454.jsx"),
@@ -21,12 +21,12 @@ function p(e) {
   let {
     emoji: t,
     guildId: n
-  } = e, l = (0, a.e7)([u.Z], () => {
+  } = e, i = (0, a.e7)([u.Z], () => {
     var e;
     return null == (e = u.Z.getGuild(n)) ? true : e.name
   });
   return (0, r.jsxs)("div", {
-    className: i()(m.toast, h.toast),
+    className: l()(m.toast, h.toast),
     children: [(0, r.jsx)(o.Z, {
       emojiId: t.id,
       size: "default"
@@ -41,7 +41,7 @@ function p(e) {
           tag: "strong",
           children: e
         }, t),
-        guildName: l,
+        guildName: i,
         guildNameHook: (e, t) => (0, r.jsx)(s.Text, {
           variant: "text-md/semibold",
           color: "text-primary",

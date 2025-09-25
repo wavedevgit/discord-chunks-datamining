@@ -38,16 +38,18 @@ let o = e => {
   } : null != o ? {
     userImage: o
   } : {});
-  return (0, r.jsx)(l.Y0X, {
+  return (0, r.jsx)(i.Y0X, {
+    "data-migration-pending": true,
     transitionState: t,
-    size: l.CgR.DYNAMIC,
+    size: i.CgR.DYNAMIC,
     fullscreenOnMobile: false,
     className: a.modalRoot,
     parentComponent: "Modal",
-    children: (0, r.jsx)(l.hzk, {
+    children: (0, r.jsx)(i.hzk, {
+      "data-migration-pending": true,
       scrollbarType: "none",
       className: a.modalContent,
-      children: (0, r.jsx)(i.I, s({}, c))
+      children: (0, r.jsx)(l.I, s({}, c))
     })
   })
 }
