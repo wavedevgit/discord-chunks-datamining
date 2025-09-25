@@ -1,3 +1,0 @@
-/** Chunk was on 27181 **/
-/** chunk id: 738775, original params: e (module,exports,require) **/
-module.exports = JSON.parse('{"klSpfn":"Rediger indstillinger","NzUuLC":["+",[1,"count"]," ",[6,"count",{"one":["besked"],"other":["beskeder"]},0,"cardinal"]],"O+racX":"Der er ingen meddelelser.","5H2Jd3":"Vis alle","Ko8NGh":"Vis bogm\xe6rker","dcpdhI":"V\xe6lg en besked for at g\xe5 til den.","VAK+h4":"Velkommen til dit meddelelsescenter!"}')

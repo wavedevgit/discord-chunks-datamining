@@ -1,4 +1,4 @@
-/** Chunk was on 88806 **/
+/** Chunk was on 16820 **/
 /** chunk id: 406534, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => et
@@ -182,7 +182,7 @@ function et(e) {
       }, "forum-post-action-bar-".concat(U.id));
       if (e.type === K.ys_.MESSAGE_GROUP_BLOCKED || e.type === K.ys_.MESSAGE_GROUP_IGNORED || e.type === K.ys_.MESSAGE_GROUP_SPAMMER) {
         let t;
-        return t = e.type === K.ys_.MESSAGE_GROUP_BLOCKED ? J.t["+FcYMz"] : e.type === K.ys_.MESSAGE_GROUP_IGNORED ? J.t.VFWjc3 : J.t.xfkfTE, (0, r.jsx)(V.Z, {
+        return t = e.type === K.ys_.MESSAGE_GROUP_BLOCKED ? J.t["+FcYMz"] : e.type === K.ys_.MESSAGE_GROUP_IGNORED ? J.t.VFWjc3 : J.t.xfkfTE, (0, r.jsx)(F.Z, {
           unreadId: Y.j1,
           messages: e,
           channel: U,
@@ -288,7 +288,7 @@ function et(e) {
             color: "currentColor",
             children: n
           });
-          i = (0, r.jsx)(F.G5, {
+          i = (0, r.jsx)(V.G5, {
             scrollManager: eo,
             content: e,
             channel: U
@@ -327,13 +327,13 @@ function et(e) {
               children: n
             })
           });
-          i = (0, r.jsx)(F.LE, {
+          i = (0, r.jsx)(V.LE, {
             content: e,
             channelId: U.id
           })
         }
       }
-    } else ex.includes(q.E.NEW_MESSAGES) && (i = (0, r.jsx)(F.LE, {
+    } else ex.includes(q.E.NEW_MESSAGES) && (i = (0, r.jsx)(V.LE, {
       content: J.intl.format(e, {
         count: en,
         timestamp: l
@@ -341,10 +341,10 @@ function et(e) {
       channelId: U.id
     }))
   }
-  if (null == i && (0, s.Lp)(U) && ey && ex.includes(q.E.SUMMARIES) && (i = (0, r.jsx)(F.BO, {
+  if (null == i && (0, s.Lp)(U) && ey && ex.includes(q.E.SUMMARIES) && (i = (0, r.jsx)(V.BO, {
       channel: U,
       scrollManager: eo
-    })), et.error) h = (0, r.jsx)(F.Rp, {
+    })), et.error) h = (0, r.jsx)(V.Rp, {
     loading: et.loadingMore,
     onClick: () => {
       var e;
@@ -360,10 +360,10 @@ function et(e) {
     let {
       jumpReturnTargetId: e
     } = et;
-    h = et.loadingMore && et.jumpedToPresent ? (0, r.jsx)(F.DR, {
+    h = et.loadingMore && et.jumpedToPresent ? (0, r.jsx)(V.DR, {
       className: ep
-    }) : null != e ? (0, r.jsx)(F.DR, {
-      type: F.A7.REPLY,
+    }) : null != e ? (0, r.jsx)(V.DR, {
+      type: V.A7.REPLY,
       onClick: () => {
         o.Z.jumpToMessage({
           channelId: U.id,
@@ -372,7 +372,7 @@ function et(e) {
         })
       },
       className: ep
-    }) : (0, r.jsx)(F.DR, {
+    }) : (0, r.jsx)(V.DR, {
       onClick: () => (function(e) {
         o.Z.jumpToPresent(e.id, K.AQB);
         let t = T.Z.getChannelId();

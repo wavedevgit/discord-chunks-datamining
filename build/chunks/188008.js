@@ -1,0 +1,3 @@
+/** Chunk was on 6581 **/
+/** chunk id: 188008, original params: s (module,exports,require) **/
+module.exports = JSON.parse('{"bFbsV1":"あなたのメールアドレスを入力","RRBNpq":"次へ","v0H5Tk":"読み込み中…","Ks6opq":"開始","GDsHl5":"更新","dSkE/P":"年齢層を認証","HC4IiY":"メールアドレスを認証してください","o4D6fn":"更新","wq2RDg":"認証","Qm6K/v":"メールアドレスを認証してください"}')

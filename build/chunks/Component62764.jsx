@@ -1,4 +1,4 @@
-/** Chunk was on 88806 **/
+/** Chunk was on 16820 **/
 /** chunk id: 62764, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => G
@@ -37,12 +37,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk228392 = require("./228392.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk764295 = require("./764295.js"),
-  Chunk319720 = require("./319720.js"),
-  Chunk127947 = require("./127947.js"),
-  Chunk577650 = require("./577650.js");
+  Chunk304726 = require("./304726.js"),
+  Chunk243777 = require("./243777.js"),
+  Chunk487111 = require("./487111.js"),
+  Chunk332103 = require("./332103.js");
 
-function V(e) {
+function F(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -74,7 +74,7 @@ function H(e, t) {
   }), e
 }
 
-function F(e) {
+function V(e) {
   let {
     channel: t
   } = e, l = t.isArchivedThread(), a = (0, O.P0)(t), [o, u] = i.useState(false), d = () => {
@@ -230,11 +230,11 @@ function G(e) {
         })]
       }), (0, r.jsxs)("div", {
         className: D.buttons,
-        children: [en ? (0, r.jsx)(F, {
+        children: [en ? (0, r.jsx)(V, {
           channel: Y
         }) : (0, r.jsx)(c.ua7, {
           text: k.intl.string(k.t.F7oeDg),
-          children: e => (0, r.jsx)(c.zxk, H(V({}, e), {
+          children: e => (0, r.jsx)(c.zxk, H(F({}, e), {
             icon: eh,
             size: "sm",
             variant: "secondary",
@@ -243,13 +243,13 @@ function G(e) {
           }))
         }), (0, r.jsx)(c.ua7, {
           text: k.intl.string(k.t.WqhZsr),
-          children: e => W ? (0, r.jsx)(c.zxk, H(V({}, e), {
+          children: e => W ? (0, r.jsx)(c.zxk, H(F({}, e), {
             icon: c.dz2,
             size: "sm",
             variant: "secondary",
             onClick: ed,
             text: k.intl.string(k.t["t5VZ8/"])
-          })) : (0, r.jsx)(c.hU, H(V({}, e), {
+          })) : (0, r.jsx)(c.hU, H(F({}, e), {
             icon: c.xPt,
             size: "sm",
             variant: "secondary",
@@ -258,7 +258,7 @@ function G(e) {
           }))
         }), !n && (0, r.jsx)(c.ua7, {
           text: k.intl.string(k.t.nFP4oa),
-          children: e => (0, r.jsx)(c.hU, H(V({}, e), {
+          children: e => (0, r.jsx)(c.hU, H(F({}, e), {
             icon: c.Za2,
             size: "sm",
             variant: "secondary",

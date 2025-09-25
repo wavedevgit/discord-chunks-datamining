@@ -1,4 +1,4 @@
-/** Chunk was on 88806 **/
+/** Chunk was on 16820 **/
 /** chunk id: 190210, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => er
@@ -51,8 +51,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk224837 = require("./224837.js"),
   Chunk200299 = require("./200299.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk593514 = require("./593514.js"),
-  Chunk564355 = require("./564355.js");
+  Chunk310069 = require("./310069.js"),
+  Chunk744114 = require("./744114.js");
 
 function $(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -144,7 +144,7 @@ let er = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
   s()(null != D, "chat input type must be set");
   let {
     analyticsLocations: eT
-  } = (0, _.ZP)(C.Z.CHANNEL_TEXT_AREA), eN = (0, F.qz)(t), eA = i.useRef(null), ew = i.useRef(null), eM = i.useRef(null), eR = i.useRef(null);
+  } = (0, _.ZP)(C.Z.CHANNEL_TEXT_AREA), eN = (0, V.qz)(t), eA = i.useRef(null), ew = i.useRef(null), eM = i.useRef(null), eR = i.useRef(null);
   null == eC || eC(ew.current);
   let {
     activeCommand: ek
@@ -159,18 +159,18 @@ let er = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
     isPendingMember: eD,
     disabled: eU,
     canAttachFiles: eB,
-    canEveryoneSendMessages: eV
-  } = (0, F.TE)(k, D, ek, I), eH = !A.dN.useSetting() && !(0, L.isAndroidWeb)() && null != window.ResizeObserver, eF = !eH || !(null == (n = D.commands) ? true : n.enabled) || !G || p !== q.GI, eG = (0, T.Z)(), {
+    canEveryoneSendMessages: eF
+  } = (0, V.TE)(k, D, ek, I), eH = !A.dN.useSetting() && !(0, L.isAndroidWeb)() && null != window.ResizeObserver, eV = !eH || !(null == (n = D.commands) ? true : n.enabled) || !G || p !== q.GI, eG = (0, T.Z)(), {
     fontSize: ez
   } = (0, d.cj)([y.Z], () => ({
     fontSize: y.Z.fontSize,
     isSubmitButtonEnabled: y.Z.isSubmitButtonEnabled
   })), eW = (0, d.e7)([M.Z], () => M.Z.isEnabled()), eq = (0, N.NE)(k);
-  (0, F.hJ)(D, eU);
+  (0, V.hJ)(D, eU);
   let {
     eventEmitter: eY,
     handleEditorSelectionChanged: eK
-  } = (0, F.x2)(ew, p, h), eX = i.useCallback(e => {
+  } = (0, V.x2)(ew, p, h), eX = i.useCallback(e => {
     let t = e => {
         if (e.shouldClear) {
           var t;
@@ -226,17 +226,17 @@ let er = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
   }, [ed, eS, eP, k.id, eZ, eI, eq]), {
     submit: eJ,
     handleSubmit: eQ
-  } = (0, F.bL)(eX, D, ew, eR, k.id), {
+  } = (0, V.bL)(eX, D, ew, eR, k.id), {
     autocompleteRef: e$,
     handleMaybeShowAutocomplete: e0,
     handleHideAutocomplete: e1
-  } = (0, F.jx)(), e2 = i.useCallback(() => {
+  } = (0, V.jx)(), e2 = i.useCallback(() => {
     var e;
     return null == eR || null == (e = eR.current) ? true : e.hide()
   }, []), {
     editorHeight: e3,
     handleResize: e8
-  } = (0, F.oR)(er), {
+  } = (0, V.oR)(er), {
     handleTab: e4,
     handleEnter: e7,
     handleMoveSelection: e6
@@ -256,12 +256,12 @@ let er = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
         return !!(!n && (null == (i = t.current) ? true : i.onMoveSelection(r))) || (null == (l = e.current) ? true : l.onMoveSelection(r)) || false
       }, [n])
     }
-  }(e$, eA, eF), {
+  }(e$, eA, eV), {
     expressionPickerView: e5,
     shouldHideExpressionPicker: e9,
     handleAutocompleteVisibilityChange: te,
     handleOuterClick: tt
-  } = (0, F.iV)(D, eY, ew), tn = (0, F.ae)(ew), tr = (0, F.Sg)(eJ, D, ew), ti = (0, F.O1)({
+  } = (0, V.iV)(D, eY, ew), tn = (0, V.ae)(ew), tr = (0, V.Sg)(eJ, D, ew), ti = (0, V.O1)({
     editorRef: ew,
     disabled: eU,
     textValue: p,
@@ -350,7 +350,7 @@ let er = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
                 children: (0, r.jsx)(f.tEY, {
                   ringTarget: eN,
                   ringClassName: Q.focusRing,
-                  children: (0, r.jsx)(V.Z, {
+                  children: (0, r.jsx)(F.Z, {
                     ref: ew,
                     id: E,
                     focused: G,
@@ -361,7 +361,7 @@ let er = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
                     placeholder: eg,
                     required: P,
                     accessibilityLabel: Z,
-                    isPreviewing: (eL || eD) && eV,
+                    isPreviewing: (eL || eD) && eF,
                     channel: k,
                     type: B.Ie.CREATE_ANNOUNCEMENT_POST,
                     canPasteFiles: eB,

@@ -1,7 +1,7 @@
-/** Chunk was on 88806 **/
+/** Chunk was on 16820 **/
 /** chunk id: 600084, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => F
+  Z: () => V
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -40,8 +40,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk176505 = require("./176505.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk963392 = require("./963392.js"),
-  Chunk197571 = require("./197571.js");
+  Chunk40036 = require("./40036.js"),
+  Chunk10198 = require("./10198.js");
 
 function H(e) {
   let {
@@ -66,7 +66,7 @@ function H(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   var t, n;
   let {
     channel: p,
@@ -80,7 +80,7 @@ function F(e) {
     canManageRoles: x.Z.can(L.Plq.MANAGE_ROLES, p),
     canReadMessageHistory: x.Z.can(L.Plq.READ_MESSAGE_HISTORY, p)
   })), k = (0, l.e7)([b.Z], () => v === L.d4z.DM ? b.Z.getMutualGuilds(p.getRecipientId()) : null, [p, v]), {
-    systemDMRedesignEnabled: F
+    systemDMRedesignEnabled: V
   } = g.Z.useExperiment({
     location: "bf1a4f_1"
   }, {
@@ -100,7 +100,7 @@ function F(e) {
       }))
     }, [k, v, p, P]), i.useEffect(() => {
       (null == P ? true : P.bot) && W === _.M.NOT_FETCHED && s.Z.fetch()
-    }, [null == P ? true : P.bot, W]), p.isSystemDM()) return F ? (0, r.jsx)(w.Z, {
+    }, [null == P ? true : P.bot, W]), p.isSystemDM()) return V ? (0, r.jsx)(w.Z, {
     channel: p
   }) : (0, r.jsx)(N.Z, {
     channel: p,
@@ -132,7 +132,7 @@ function F(e) {
       user: P,
       children: [null != P && !P.isProvisional && (0, r.jsx)(a.X6q, {
         variant: "heading-xl/medium",
-        className: V.marginBottom20,
+        className: F.marginBottom20,
         children: A
       }), U.intl.format(U.t["Qvg+6+"], {
         username: C

@@ -15,8 +15,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk368003 = require("./368003.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk204699 = require("./204699.js"),
-  Chunk197571 = require("./197571.js");
+  Chunk642477 = require("./642477.js"),
+  Chunk10198 = require("./10198.js");
 
 function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -36,9 +36,9 @@ let j = e => (0, r.jsx)("div", {
     [Chunk981631.gkr.HOUSE_3]: require("./497494.js")
   },
   y = {
-    [Chunk981631.gkr.HOUSE_1]: Chunk204699.quizResultLogoWrapperHouse1,
-    [Chunk981631.gkr.HOUSE_2]: Chunk204699.quizResultLogoWrapperHouse2,
-    [Chunk981631.gkr.HOUSE_3]: Chunk204699.quizResultLogoWrapperHouse3
+    [Chunk981631.gkr.HOUSE_1]: Chunk642477.quizResultLogoWrapperHouse1,
+    [Chunk981631.gkr.HOUSE_2]: Chunk642477.quizResultLogoWrapperHouse2,
+    [Chunk981631.gkr.HOUSE_3]: Chunk642477.quizResultLogoWrapperHouse3
   };
 class S extends Chunk647438.Component {
   getSelectedHouseID() {
@@ -56,7 +56,7 @@ class S extends Chunk647438.Component {
     return (0, Chunk951288.jsx)(Chunk57875.Z, {
       children: (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
         children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
-          className: Chunk204699.quizResultHeading,
+          className: Chunk642477.quizResultHeading,
           variant: "heading-xl/semibold",
           children: Chunk388032.intl.string(Chunk388032.t["8A8ry8"])
         }), (0, Chunk951288.jsx)(Chunk481060.Text, {
@@ -80,18 +80,18 @@ class S extends Chunk647438.Component {
     return (0, Chunk951288.jsx)(Chunk57875.Z, {
       children: (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
         children: [(0, Chunk951288.jsx)("div", {
-          className: o()(Chunk204699.quizResultLogoWrapper, y[module], Chunk197571.marginBottom20),
+          className: o()(Chunk642477.quizResultLogoWrapper, y[module], Chunk10198.marginBottom20),
           children: (0, Chunk951288.jsx)("img", {
             alt: exports,
-            className: Chunk204699.quizResultLogo,
+            className: Chunk642477.quizResultLogo,
             src: f[module]
           })
         }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
-          className: Chunk204699.quizResultHeading,
+          className: Chunk642477.quizResultHeading,
           variant: "heading-xl/semibold",
           children: exports
         }), (0, Chunk951288.jsx)(Chunk481060.Text, {
-          className: Chunk204699.quizResultBody,
+          className: Chunk642477.quizResultBody,
           variant: "text-sm/normal",
           children: {
             [Chunk981631.gkr.HOUSE_1]: Chunk388032.intl.string(Chunk388032.t["hNL/nJ"]),
@@ -135,7 +135,7 @@ class S extends Chunk647438.Component {
   renderNewsletterWarning() {
     return (0, Chunk951288.jsx)(Chunk57875.Z, {
       children: (0, Chunk951288.jsx)(Chunk481060.Text, {
-        className: Chunk204699.nameFormPreface,
+        className: Chunk642477.nameFormPreface,
         variant: "text-md/normal",
         children: Chunk388032.intl.string(Chunk388032.t["3kUvgo"])
       })
@@ -204,7 +204,7 @@ class S extends Chunk647438.Component {
           children: this.renderHeaderCopy()
         })
       }), (0, Chunk951288.jsx)("div", {
-        className: Chunk204699.outerContentWrapper,
+        className: Chunk642477.outerContentWrapper,
         children: (0, Chunk951288.jsx)(Chunk215569.W, {
           component: j,
           children: this.renderContent()

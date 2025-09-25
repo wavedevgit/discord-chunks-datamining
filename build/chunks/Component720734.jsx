@@ -1,4 +1,4 @@
-/** Chunk was on 11222 **/
+/** Chunk was on 35078 **/
 /** chunk id: 720734, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => tb,
@@ -124,7 +124,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk46140 = require("./46140.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk25874 = require("./25874.js");
+  Chunk490579 = require("./490579.js");
 
 function tl(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -204,8 +204,8 @@ function tp(e) {
         } = t;
         null != r && a(r), null == (n = e.current) || n.call(e)
       };
-      return eX.S.subscribe(e7.CkL.SHOW_ACCOUNT_PROFILE_POPOUT, t), () => {
-        eX.S.unsubscribe(e7.CkL.SHOW_ACCOUNT_PROFILE_POPOUT, t)
+      return eX.S.subscribe(e9.CkL.SHOW_ACCOUNT_PROFILE_POPOUT, t), () => {
+        eX.S.unsubscribe(e9.CkL.SHOW_ACCOUNT_PROFILE_POPOUT, t)
       }
     }), {
       updateOpenPopoutRef: t,
@@ -214,7 +214,7 @@ function tp(e) {
     }
   }(), O = (0, ei.A)(m);
   return null == s ? null : (0, a.jsx)(g.Z, {
-    object: e7.qAy.AVATAR,
+    object: e9.qAy.AVATAR,
     children: (0, a.jsx)(ex.Z, {
       user: s,
       targetElementRef: j,
@@ -266,7 +266,7 @@ function tp(e) {
           src: s.getAvatarURL(h ? p : true, E - 4, false),
           avatarDecoration: y,
           "aria-label": s.username,
-          status: i ? e7.Skl.STREAMING : o,
+          status: i ? e9.Skl.STREAMING : o,
           isSpeaking: n,
           className: ti.avatar
         }), (0, a.jsx)("div", {
@@ -335,7 +335,7 @@ class th extends Chunk647438.PureComponent {
         activities: exports,
         applicationStream: require,
         voiceChannel: Chunk392711 ? o : true,
-        textClassName: Chunk25874.activityStatusText,
+        textClassName: Chunk490579.activityStatusText,
         hideTooltip: true
       })
     });
@@ -343,15 +343,15 @@ class th extends Chunk647438.PureComponent {
       let {
         type: t
       } = e;
-      return t === e7.IIU.CUSTOM_STATUS
+      return t === e9.IIU.CUSTOM_STATUS
     });
     return null != Chunk374470 ? (0, Chunk951288.jsx)(Chunk570928.Z, {
       hoverText: l,
       forceHover: module,
       children: (0, Chunk951288.jsx)(Chunk427217.Z, {
         activity: Chunk374470,
-        emojiClassName: Chunk25874.emoji,
-        className: Chunk25874.customStatus
+        emojiClassName: Chunk490579.emoji,
+        className: Chunk490579.customStatus
       })
     }) : null != Chunk120356 && Chunk120356 !== Chunk981631.Skl.UNKNOWN && Chunk647438.hasUniqueUsername() ? (0, Chunk951288.jsx)(Chunk570928.Z, {
       hoverText: l,
@@ -505,16 +505,16 @@ class th extends Chunk647438.PureComponent {
         suppress: t,
         selfMute: n
       } = this.props;
-      (0, F.Z)(e, t, e7.jXE.ACCOUNT_PANEL), (0, B.v)(T.Z.ACCOUNT, B.d.MIC, n)
+      (0, F.Z)(e, t, e9.jXE.ACCOUNT_PANEL), (0, B.v)(T.Z.ACCOUNT, B.d.MIC, n)
     }), tl(this, "handleToggleSelfDeaf", () => {
       let {
         serverDeaf: e,
         selfDeaf: t
       } = this.props;
-      (0, U.Z)(e, e7.jXE.ACCOUNT_PANEL), (0, B.v)(T.Z.ACCOUNT, B.d.DEAFEN, !t)
+      (0, U.Z)(e, e9.jXE.ACCOUNT_PANEL), (0, B.v)(T.Z.ACCOUNT, B.d.DEAFEN, !t)
     }), tl(this, "handleOpenAccountSettings", () => {
       this.dismissTooltips(), eF.Z.isConnected() ? (0, ev.openUserSettings)(eb.n.VOICE_AND_VIDEO_PANEL, {
-        section: e7.oAB.VOICE
+        section: e9.oAB.VOICE
       }) : (0, ev.openUserSettings)()
     }), tl(this, "handleOpenSettingsContextMenu", e => {
       let {
@@ -606,7 +606,7 @@ class th extends Chunk647438.PureComponent {
       (0, eK.JG)(e1.ZP.getUserTag(e, {
         decoration: "never",
         identifiable: "always"
-      })), eW.default.track(e7.rMx.TEXT_COPIED, {
+      })), eW.default.track(e9.rMx.TEXT_COPIED, {
         type: "User Tag"
       });
       let a = {
@@ -658,7 +658,7 @@ class th extends Chunk647438.PureComponent {
       return null == t ? null : (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)("div", {
           className: ti.panelTitleContainer,
-          children: (0, a.jsx)(e9.Z, {
+          children: (0, a.jsx)(e7.Z, {
             className: l()({
               [ti.withDisplayNameStyles]: n && null != e
             }),
@@ -794,7 +794,7 @@ function tb() {
           let {
             type: t
           } = e;
-          return t === e7.IIU.STREAMING
+          return t === e9.IIU.STREAMING
         }),
         status: Chunk885110.Z.getStatus()
       }
@@ -950,7 +950,7 @@ function tg(e) {
     x = r.useRef(null),
     {
       showRefreshedAudioContextMenu: b
-    } = (0, e3.e)({
+    } = (0, e4.e)({
       location: "SettingsCogButton"
     }),
     g = !b && (m || p),
@@ -1070,7 +1070,7 @@ function tv(e) {
       Q(false)
     }, []);
   (0, eY.yp)({
-    event: e7.CkL.OPEN_VOICE_FILTER_POPOUT,
+    event: e9.CkL.OPEN_VOICE_FILTER_POPOUT,
     handler: () => {
       Q(true)
     }
@@ -1097,7 +1097,7 @@ function tv(e) {
     } = (0, en.p6)(ta.h7.AUDIO_INPUT),
     {
       showRefreshedAudioContextMenu: ed
-    } = (0, e3.e)({
+    } = (0, e4.e)({
       location: "MicrophoneButton"
     }),
     {
@@ -1387,7 +1387,7 @@ function tj(e) {
     name: _
   } = (0, en.p6)(ta.h7.AUDIO_OUTPUT), {
     showRefreshedAudioContextMenu: y
-  } = (0, e3.e)({
+  } = (0, e4.e)({
     location: "HeadphonesButton"
   }), C = (0, Z.Z)(t, n, i), {
     analyticsLocations: E

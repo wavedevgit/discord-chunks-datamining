@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk667105 = require("./667105.jsx"),
   Chunk46140 = require("./46140.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk924304 = require("./924304.js");
+  Chunk179844 = require("./179844.js");
 let v = [{
   value: Chunk46140.cd.DESKTOP,
   get label() {

@@ -1,4 +1,4 @@
-/** Chunk was on 88806 **/
+/** Chunk was on 16820 **/
 /** chunk id: 128557, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => M,
@@ -31,7 +31,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk231873 = require("./231873.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk183334 = require("./183334.js");
+  Chunk797553 = require("./797553.js");
 
 function N(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -118,9 +118,9 @@ function M(e) {
     guildMessaged: U,
     guildPersonalized: B
   } = (0, f.h_)(l), {
-    handleInvite: V,
+    handleInvite: F,
     handleMessage: H,
-    handlePersonalize: F,
+    handlePersonalize: V,
     handleDownload: G,
     handleAddApplication: z
   } = function(e) {
@@ -131,7 +131,7 @@ function M(e) {
         }), null != e && (0, u.ZDy)(async () => {
           let {
             default: t
-          } = await Promise.all([n.e("7654"), n.e("49049"), n.e("98953")]).then(n.bind(n, 560114));
+          } = await Promise.all([n.e("7654"), n.e("49049"), n.e("48731")]).then(n.bind(n, 560114));
           return n => (0, r.jsx)(t, A(N({}, n), {
             guild: e,
             source: P.t4x.CHANNEL_WELCOME,
@@ -253,7 +253,7 @@ function M(e) {
       iconUrl: u.YvY,
       header: Z.intl.string(Z.t.q9n0TU),
       completed: D,
-      onClick: V
+      onClick: F
     })
   }, "invite")), R && Q.push((0, r.jsx)(o.Z.div, {
     className: T.cardWrapper,
@@ -264,7 +264,7 @@ function M(e) {
       iconUrl: u.$_T,
       header: Z.intl.string(Z.t.c5kxPj),
       completed: B,
-      onClick: F
+      onClick: V
     })
   }, "customize")), k && Q.push((0, r.jsx)(o.Z.div, {
     className: T.cardWrapper,

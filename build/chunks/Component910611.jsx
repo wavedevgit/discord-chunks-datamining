@@ -1,4 +1,4 @@
-/** Chunk was on 88806 **/
+/** Chunk was on 16820 **/
 /** chunk id: 910611, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   TS: () => H,
@@ -36,7 +36,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk97009 = require("./97009.js");
+  Chunk161655 = require("./161655.js");
 
 function R(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -205,14 +205,14 @@ function D(e) {
     case N.d4z.GUILD_MEDIA:
       return null != t.linkedLobby ? (0, r.jsxs)(L, {
         channel: t,
-        children: [V(b, t.type === N.d4z.GUILD_ANNOUNCEMENT ? w.intl.string(w.t.l1dkSE) : w.intl.string(w.t.Pnajj4)), (0, r.jsx)(Z.Z.Title, {
+        children: [F(b, t.type === N.d4z.GUILD_ANNOUNCEMENT ? w.intl.string(w.t.l1dkSE) : w.intl.string(w.t.Pnajj4)), (0, r.jsx)(Z.Z.Title, {
           level: C,
           onContextMenu: d,
           onClick: u,
           children: v
         })]
       }) : (0, r.jsxs)(i.Fragment, {
-        children: [V(b, t.type === N.d4z.GUILD_ANNOUNCEMENT ? w.intl.string(w.t.l1dkSE) : w.intl.string(w.t.Pnajj4)), (0, r.jsx)(Z.Z.Title, {
+        children: [F(b, t.type === N.d4z.GUILD_ANNOUNCEMENT ? w.intl.string(w.t.l1dkSE) : w.intl.string(w.t.Pnajj4)), (0, r.jsx)(Z.Z.Title, {
           level: C,
           onContextMenu: d,
           onClick: u,
@@ -221,7 +221,7 @@ function D(e) {
       });
     case N.d4z.GUILD_VOICE:
       return (0, r.jsxs)(i.Fragment, {
-        children: [V(b, w.intl.string(w.t.BVZqJi)), (0, r.jsx)(Z.Z.Title, {
+        children: [F(b, w.intl.string(w.t.BVZqJi)), (0, r.jsx)(Z.Z.Title, {
           level: C,
           onContextMenu: d,
           onClick: u,
@@ -230,7 +230,7 @@ function D(e) {
       });
     case N.d4z.GUILD_STAGE_VOICE:
       return (0, r.jsxs)(i.Fragment, {
-        children: [V(b, w.intl.string(w.t.EErMzM)), (0, r.jsx)(Z.Z.Title, {
+        children: [F(b, w.intl.string(w.t.EErMzM)), (0, r.jsx)(Z.Z.Title, {
           level: C,
           onContextMenu: d,
           onClick: u,
@@ -244,7 +244,7 @@ function D(e) {
       if (!s && null != l) {
         let e = (0, h.KS)(l, o);
         O = (0, r.jsxs)(i.Fragment, {
-          children: [V(e, w.intl.string(w.t.Pnajj4)), (0, r.jsx)(Z.Z.Title, {
+          children: [F(e, w.intl.string(w.t.Pnajj4)), (0, r.jsx)(Z.Z.Title, {
             level: C,
             onContextMenu: m,
             onClick: f,
@@ -255,7 +255,7 @@ function D(e) {
       }
       let j = (null == l ? true : l.type) != null && N.TPd.GUILD_THREADS_ONLY.has(l.type);
       return (0, r.jsxs)(i.Fragment, {
-        children: [O, V(j ? null : b, w.intl.string(w.t["7Xm5QE"])), (0, r.jsx)(Z.Z.Title, {
+        children: [O, F(j ? null : b, w.intl.string(w.t["7Xm5QE"])), (0, r.jsx)(Z.Z.Title, {
           level: C,
           onContextMenu: d,
           onClick: u,
@@ -330,7 +330,7 @@ function B(e, t) {
   }
 }
 
-function V(e, t) {
+function F(e, t) {
   return (0, r.jsxs)(r.Fragment, {
     children: [null !== e && (0, r.jsx)(Z.Z.ChannelIcon, {
       icon: e,

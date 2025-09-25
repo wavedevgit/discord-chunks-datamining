@@ -1,4 +1,4 @@
-/** Chunk was on 88806 **/
+/** Chunk was on 16820 **/
 /** chunk id: 207055, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => U
@@ -36,7 +36,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk262317 = require("./262317.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk524484 = require("./524484.js"),
-  Chunk968080 = require("./968080.js");
+  Chunk106252 = require("./106252.js");
 let L = Chunk647438.memo(e => {
   var t, n, i, l;
   let {
@@ -46,7 +46,7 @@ let L = Chunk647438.memo(e => {
     channel: P,
     sessionId: I,
     nick: k
-  } = e, L = x.id, D = (0, o.e7)([j.default], () => j.default.getId() === L, [L]), [U, B, V] = (0, o.Wu)([S.Z], () => D ? [!S.Z.isSupported() || S.Z.isSelfMute() || S.Z.isSelfMutedTemporarily(), S.Z.isSelfDeaf(), false] : [!S.Z.isSupported() || S.Z.isLocalMute(L), false, S.Z.isLocalVideoDisabled(L)], [D, L]), H = (0, o.e7)([T.Z], () => T.Z.isPrioritySpeaker(L)), F = (0, c.Z)({
+  } = e, L = x.id, D = (0, o.e7)([j.default], () => j.default.getId() === L, [L]), [U, B, F] = (0, o.Wu)([S.Z], () => D ? [!S.Z.isSupported() || S.Z.isSelfMute() || S.Z.isSelfMutedTemporarily(), S.Z.isSelfDeaf(), false] : [!S.Z.isSupported() || S.Z.isLocalMute(L), false, S.Z.isLocalVideoDisabled(L)], [D, L]), H = (0, o.e7)([T.Z], () => T.Z.isPrioritySpeaker(L)), V = (0, c.Z)({
     userId: L,
     checkSoundSharing: true
   }), G = (0, o.e7)([E.ZP], () => E.ZP.isGuestOrLurker(P.guild_id, L)), z = (0, o.e7)([h.Z], () => h.Z.getGuildRingingUsers(P.id).has(L)), W = (0, o.e7)([u.ZP], () => u.ZP.getEmbeddedActivitiesForChannel(P.id).find(e => {
@@ -70,7 +70,7 @@ let L = Chunk647438.memo(e => {
   });
   return (0, r.jsx)(y.Z, {
     shakeLocation: R.oZ.VOICE_USER,
-    isShaking: F,
+    isShaking: V,
     children: (0, r.jsx)(w.ZP, (i = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -95,10 +95,10 @@ let L = Chunk647438.memo(e => {
       otherClientSessionType: null == Q || null == (t = Q.clientInfo) ? true : t.os,
       voicePlatform: ee,
       localMute: U && !D,
-      localVideoDisabled: V,
+      localVideoDisabled: F,
       mute: a || U,
       deaf: s || B,
-      speaking: F,
+      speaking: V,
       ringing: z,
       priority: H,
       embeddedApplication: q[0],
@@ -159,7 +159,7 @@ let D = [],
       }), Array.from(e)
     });
     (0, p.Z)(B);
-    let V = (() => {
+    let F = (() => {
       if (null == T || 0 === T.length) return null;
       let e = u && T.length > d + 1 ? T.slice(0, d) : T,
         t = h.Z.getGuildRingingUsers(l.id),
@@ -198,12 +198,12 @@ let D = [],
         numUsers: T.length - d
       })), i
     })();
-    return null == V && null == C ? null : (0, r.jsxs)(x.eJ, {
+    return null == F && null == C ? null : (0, r.jsxs)(x.eJ, {
       className: a()(y, k.list, {
         [k.collapsed]: u,
         [k.withGuildIcon]: b
       }),
       collapsed: u,
-      children: [V, C]
+      children: [F, C]
     })
   }

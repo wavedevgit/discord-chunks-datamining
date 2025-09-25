@@ -13,7 +13,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk481060 = require("./481060.js"),
   Chunk493773 = require("./493773.js"),
   Chunk921944 = require("./921944.js"),
-  Chunk706371 = require("./706371.js");
+  Chunk12614 = require("./12614.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -60,8 +60,8 @@ var h = function(e) {
     return e[e.ADJACENT = 0] = "ADJACENT", e[e.STACKED = 1] = "STACKED", e
   }({});
 let g = Object.freeze({
-    brand: Chunk706371.colorBrand,
-    primary: Chunk706371.colorPrimary
+    brand: Chunk12614.colorBrand,
+    primary: Chunk12614.colorPrimary
   }),
   E = Object.freeze({
     brand: "always-white",

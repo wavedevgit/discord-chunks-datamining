@@ -1,9 +1,0 @@
-/** Chunk was on 49235 **/
-/** chunk id: 229870, original params: e,n,t (module,exports,require) **/
-module.exports = {
-  addButtonContainer: "addButtonContainer__4a011",
-  sizeSmall: "sizeSmall__4a011",
-  overlay: "overlay__4a011",
-  addButton: "addButton__4a011",
-  loading: "loading__4a011"
-}

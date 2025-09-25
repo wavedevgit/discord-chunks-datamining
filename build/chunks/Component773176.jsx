@@ -1,4 +1,4 @@
-/** Chunk was on 88806 **/
+/** Chunk was on 16820 **/
 /** chunk id: 773176, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => eC
@@ -63,7 +63,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk921944 = require("./921944.js"),
   Chunk185923 = require("./185923.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk785727 = require("./785727.js");
+  Chunk271425 = require("./271425.js");
 
 function eu(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -189,7 +189,7 @@ function em(e) {
     canViewThread: A,
     canForward: w,
     isExpanded: M,
-    showMoreUtilities: V,
+    showMoreUtilities: F,
     showEmojiPicker: Y,
     showMessageBookmarksActions: K,
     isMessageBookmark: ei,
@@ -208,7 +208,7 @@ function em(e) {
       isFocused: s
     } = e, {
       author: d
-    } = n, p = (0, u.e7)([F.Z], () => F.Z.getGuild(t.guild_id), [t.guild_id]), h = (0, u.e7)([B.default], () => B.default.getId()), g = (0, D.$R)(t), b = (0, D.Gu)(t), {
+    } = n, p = (0, u.e7)([V.Z], () => V.Z.getGuild(t.guild_id), [t.guild_id]), h = (0, u.e7)([B.default], () => B.default.getId()), g = (0, D.$R)(t), b = (0, D.Gu)(t), {
       firstMessage: y
     } = (0, u.e7)([_.Z], () => _.Z.getMessage(t.id), [t.id]), C = U.nc.useSetting(), x = U.Sb.useSetting(), O = (0, u.e7)([G.Z], () => null == t.guild_id || G.Z.canChatInGuild(t.guild_id), [t]), {
       canManageMessages: j,
@@ -219,7 +219,7 @@ function em(e) {
     }), [t, O]), P = (0, R.U)(t, n), I = (0, D.NE)(t, n), Z = (0, D.Ek)(n), T = (0, u.e7)([E.Z], () => null != t.guild_id && E.Z.isLurking(t.guild_id), [t]), N = (0, u.e7)([H.ZP], () => null != t.guild_id && H.ZP.isCurrentUserGuest(t.guild_id), [t]), A = d.id === h, w = (j || n.canDeleteOwnMessage(h)) && g && !el.V$x.UNDELETABLE.has(n.type);
     n.type === el.uaV.AUTO_MODERATION_ACTION && (w = w && j), t.isModeratorReportChannel() && (w = w && n.id !== (null == y ? true : y.id) && !(0, $.Z)(n));
     let M = (0, X.a4)(n),
-      V = (0, Q.Z)(n, t),
+      F = (0, Q.Z)(n, t),
       W = !t.isSystemDM() && (0, J.Z)(n, h) && g && !b,
       {
         disableReactionCreates: Y
@@ -249,7 +249,7 @@ function em(e) {
     return {
       channel: t,
       message: n,
-      canPin: V,
+      canPin: F,
       canEdit: W,
       canDelete: w,
       canReport: M,
@@ -272,13 +272,13 @@ function em(e) {
       isFocused: s
     }
   }(e), ep = i.useRef(null), em = i.useCallback(() => {
-    V || W.default.track(el.rMx.MESSAGE_POPOUT_MENU_OPENED_DESKTOP, {
+    F || W.default.track(el.rMx.MESSAGE_POPOUT_MENU_OPENED_DESKTOP, {
       message_id: n.id,
       channel: n.channel_id
     }), eo({
-      moreUtilities: !V
+      moreUtilities: !F
     })
-  }, [V, eo, n]), eg = i.useCallback(() => {
+  }, [F, eo, n]), eg = i.useCallback(() => {
     eo({
       emojiPicker: !Y
     })
@@ -407,7 +407,7 @@ function em(e) {
           updatePosition: i
         })
       },
-      shouldShow: V,
+      shouldShow: F,
       onRequestClose: em,
       position: "left",
       align: "top",
@@ -524,7 +524,7 @@ let eC = Chunk647438.memo(function(e) {
     message: n,
     isHeader: i,
     isReply: l
-  } = e, o = (0, u.e7)([V.Z], () => V.Z.isEditing(t.id, n.id), [t.id, n.id]), s = function(e) {
+  } = e, o = (0, u.e7)([F.Z], () => F.Z.isEditing(t.id, n.id), [t.id, n.id]), s = function(e) {
     let {
       channel: t,
       message: n

@@ -1,4 +1,4 @@
-/** Chunk was on 88806 **/
+/** Chunk was on 16820 **/
 /** chunk id: 526846, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   m: () => D
@@ -34,7 +34,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk558317 = require("./558317.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk201512 = require("./201512.js");
+  Chunk915062 = require("./915062.js");
 let R = Chunk973693.Y.APP_LAUNCHER_IN_VOICE_BANNER,
   k = "vc-activities-".concat((0, Chunk772848.Z)());
 
@@ -146,7 +146,7 @@ let D = Chunk647438.forwardRef(function(e, t) {
     return () => clearTimeout(e)
   }, []);
   let {
-    enabled: V
+    enabled: F
   } = P.c.useExperiment({
     location: "ActivitiesMiniShelf"
   }, {
@@ -162,12 +162,12 @@ let D = Chunk647438.forwardRef(function(e, t) {
       openInPopout: U,
       analyticsLocation: D
     }), u(), b()
-  }, [l, D, b, u, U]), F = i.useCallback(e => {
+  }, [l, D, b, u, U]), V = i.useCallback(e => {
     c(), S.default.track(A.rMx.ACTIVITIES_MINI_SHELF_HOVERED, {
       channel_id: l.id,
       guild_id: l.getGuildId()
     })
-  }, [c, l]), G = V ? p.iWm : p.nG3;
+  }, [c, l]), G = F ? p.iWm : p.nG3;
   return (0, r.jsx)(g.Gt, {
     value: R,
     children: (0, r.jsx)(j.Z, {
@@ -185,7 +185,7 @@ let D = Chunk647438.forwardRef(function(e, t) {
           })
         }), (0, r.jsxs)("div", {
           className: M.container,
-          onMouseEnter: F,
+          onMouseEnter: V,
           onMouseLeave: u,
           children: [(0, r.jsxs)("div", {
             className: M.titleContainer,

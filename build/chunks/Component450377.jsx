@@ -1,4 +1,4 @@
-/** Chunk was on 64523 **/
+/** Chunk was on 60611 **/
 /** chunk id: 450377, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -31,7 +31,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk181339 = require("./181339.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk776853 = require("./776853.js");
+  Chunk984734 = require("./984734.js");
 
 function T(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -276,7 +276,7 @@ function L() {
   return null == module ? null : require ? (0, Chunk951288.jsx)(Chunk497321.Z, {}) : (0, Chunk951288.jsxs)(Chunk481060.hjN, {
     title: Chunk388032.intl.string(Chunk388032.t["suhY+f"]),
     tag: Chunk481060.RB0.H1,
-    titleClassName: Chunk776853.headerContainer,
+    titleClassName: Chunk984734.headerContainer,
     children: [(0, Chunk951288.jsx)(Chunk723136.z, {
       guild: module
     }), (0, Chunk951288.jsx)(Z, {
@@ -289,9 +289,9 @@ function L() {
     }), (0, Chunk951288.jsx)(R, {
       guild: module
     }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
-      className: Chunk776853.divider
+      className: Chunk984734.divider
     }), (0, Chunk951288.jsx)("div", {
-      className: Chunk776853.setupContainer,
+      className: Chunk984734.setupContainer,
       children: (0, Chunk951288.jsx)(Chunk181339.w, {
         guild: module
       })

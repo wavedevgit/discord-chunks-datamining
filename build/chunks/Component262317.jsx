@@ -1,4 +1,4 @@
-/** Chunk was on 88806 **/
+/** Chunk was on 16820 **/
 /** chunk id: 262317, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   XX: () => D,
@@ -37,7 +37,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk927923 = require("./927923.js"),
   Chunk70722 = require("./70722.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk92024 = require("./92024.js");
+  Chunk2628 = require("./2628.js");
 
 function k(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -118,9 +118,9 @@ let B = (0, Chunk888651.$)(function(e) {
     channel: D,
     mute: U,
     localMute: B,
-    localVideoDisabled: V,
+    localVideoDisabled: F,
     deaf: H,
-    video: F,
+    video: V,
     embeddedApplication: G,
     serverMute: z,
     serverDeaf: W,
@@ -172,7 +172,7 @@ let B = (0, Chunk888651.$)(function(e) {
     (0, c.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("79695"), n.e("98783"), n.e("8982"), n.e("7717"), n.e("96306")]).then(n.bind(n, 757387));
+      } = await Promise.all([n.e("79695"), n.e("98783"), n.e("8982"), n.e("7717"), n.e("87157")]).then(n.bind(n, 757387));
       return t => (0, r.jsx)(e, L(k({}, t), {
         user: p,
         guildId: D.guild_id,
@@ -224,10 +224,10 @@ let B = (0, Chunk888651.$)(function(e) {
             disconnected: X,
             mute: U,
             localMute: B,
-            localVideoDisabled: V,
+            localVideoDisabled: F,
             isStreaming: $,
             isGuest: et,
-            video: F,
+            video: V,
             priority: en,
             ringing: Y,
             deaf: H,

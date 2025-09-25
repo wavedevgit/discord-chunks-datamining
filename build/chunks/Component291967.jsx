@@ -1,22 +1,22 @@
-/** Chunk was on 41023 **/
-/** chunk id: 291967, original params: e,n,t (module,exports,require) **/
+/** Chunk was on 73268 **/
+/** chunk id: 291967, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => l
+  Z: () => o
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk158040 = require("./158040.jsx"),
-  Chunk979611 = require("./979611.js");
+  Chunk29321 = require("./29321.js");
 
-function l(e) {
+function o(e) {
   let {
-    rewardName: n,
-    children: t
+    rewardName: t,
+    children: n
   } = e;
-  return (0, a.jsxs)("div", {
+  return (0, r.jsxs)("div", {
     className: i.container,
-    children: [(0, a.jsx)(r.T, {
-      rewardName: n
-    }), t]
+    children: [(0, r.jsx)(a.T, {
+      rewardName: t
+    }), n]
   })
 }

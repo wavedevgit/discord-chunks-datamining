@@ -1,0 +1,3 @@
+/** Chunk was on 28027 **/
+/** chunk id: 670782, original params: o (module,exports,require) **/
+module.exports = JSON.parse('{"klSpfn":"Uredi postavke","NzUuLC":["+",[1,"count"]," ",[6,"count",{"one":["poruka"],"few":["poruke"],"other":["poruka"]},0,"cardinal"]],"O+racX":"Nema obavijesti.","5H2Jd3":"Prikaži sve","Ko8NGh":"Prikaži knjižne oznake","dcpdhI":"Odaberi poruku na koju želiš skočiti.","VAK+h4":"Dobro došao/la u svoj centar za obavijesti!"}')

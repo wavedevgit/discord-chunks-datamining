@@ -1,4 +1,4 @@
-/** Chunk was on 92912 **/
+/** Chunk was on 73268 **/
 /** chunk id: 475271, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
   default: () => c
@@ -10,7 +10,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk353250 = require("./353250.js"),
   Chunk234888 = require("./234888.js");
 
-function i(e) {
+function l(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -30,7 +30,7 @@ function i(e) {
 }
 let c = {
   showCaptcha: function(e, t) {
-    let l = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {},
+    let o = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {},
       {
         sitekey: c,
         captchaService: d,
@@ -40,16 +40,16 @@ let c = {
       let {
         default: e
       } = await n.e("12192").then(n.bind(n, 718742));
-      return n => (0, r.jsx)(e, i({
+      return n => (0, r.jsx)(e, l({
         onCaptchaVerify: (e, n) => t({
           captcha_key: e,
           captcha_rqtoken: n
         }),
         captchaService: d,
         sitekey: c
-      }, l, u, n))
+      }, o, u, n))
     }, {
-      Layer: o.ZP,
+      Layer: i.ZP,
       modalKey: s.A
     })
   },
@@ -61,12 +61,12 @@ let c = {
         captchaSessionId: u,
         options: p
       } = e;
-    return new Promise((e, m) => {
+    return new Promise((e, f) => {
       (0, a.ZDy)(async () => {
         let {
           default: a
         } = await n.e("12192").then(n.bind(n, 718742));
-        return n => (0, r.jsx)(a, i({
+        return n => (0, r.jsx)(a, l({
           onCaptchaVerify: (t, n) => e({
             captcha_key: t,
             captcha_rqtoken: n,
@@ -75,11 +75,11 @@ let c = {
           captchaService: d,
           sitekey: c,
           onReject: e => {
-            e === l.CaptchaError.CANCEL ? m(new l.CaptchaCancelError) : m(Error("cancel captcha"))
+            e === o.CaptchaError.CANCEL ? f(new o.CaptchaCancelError) : f(Error("cancel captcha"))
           }
         }, t, p, n))
       }, {
-        Layer: o.ZP,
+        Layer: i.ZP,
         modalKey: s.A
       })
     })

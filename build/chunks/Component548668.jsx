@@ -16,7 +16,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk231338 = require("./231338.js"),
   Chunk436620 = require("./436620.js"),
   Chunk330711 = require("./330711.js"),
-  Chunk10416 = require("./10416.js");
+  Chunk273868 = require("./273868.js");
 
 function k(e, t, a) {
   return t in e ? Object.defineProperty(e, t, {
@@ -275,19 +275,19 @@ class f extends(r = Chunk647438.PureComponent) {
       onChange: this.handleVisibility,
       children: (0, Chunk951288.jsxs)("footer", {
         ref: this.ref,
-        className: o()((0, Chunk982905.l)(Chunk10416, "footer", module), r),
+        className: o()((0, Chunk982905.l)(Chunk273868, "footer", module), r),
         style: exports,
         children: [Chunk120356 ? (0, Chunk951288.jsx)(O, {
           colorVariant: module,
           animate: Chunk213919
         }) : null, (0, Chunk951288.jsxs)("div", {
-          className: Chunk10416.footerContent,
+          className: Chunk273868.footerContent,
           children: [(0, Chunk951288.jsxs)("div", {
-            className: Chunk10416.navigation,
+            className: Chunk273868.navigation,
             children: [(0, Chunk951288.jsx)("div", {
-              className: Chunk10416.logoWrap,
+              className: Chunk273868.logoWrap,
               children: (0, Chunk951288.jsx)(n, {
-                className: Chunk10416.logo,
+                className: Chunk273868.logo,
                 href: Chunk231338.am.INDEX,
                 eventName: g,
                 data: {
@@ -300,16 +300,16 @@ class f extends(r = Chunk647438.PureComponent) {
               })
             }), Chunk436620]
           }), (0, Chunk951288.jsx)("div", {
-            className: Chunk10416.separator
+            className: Chunk273868.separator
           }), (0, Chunk951288.jsxs)("div", {
-            className: Chunk10416.joinDiscord,
+            className: Chunk273868.joinDiscord,
             children: [(0, Chunk951288.jsxs)("div", {
-              className: Chunk10416.stats,
+              className: Chunk273868.stats,
               children: [(0, Chunk951288.jsx)("h2", {
-                className: Chunk10416.readyToJoin,
+                className: Chunk273868.readyToJoin,
                 children: Chunk330711.Z.Messages.FOOTER_READY_TO_TRY_DISCORD
               }), (0, Chunk951288.jsx)("h3", {
-                className: Chunk10416.joinOtherPlayers,
+                className: Chunk273868.joinOtherPlayers,
                 children: Chunk330711.Z.Messages.FOOTER_JOIN_OVER_PLAYERS_TODAY.format({
                   num: Chunk231338.vS
                 })

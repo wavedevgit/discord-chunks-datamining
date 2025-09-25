@@ -202,7 +202,8 @@ class b {
     try {
       let e = this._dependencyGraph.overallOrder();
       return this._orderedCallbackTokens = module, module
-    } catch (e) {
+    } catch (t) {
+      let e = exports;
       if (null != module.cyclePath) {
         let t = module.cyclePath.map(e => "".concat(this._dependencyGraph.getNodeData(e).name, "(").concat(e, ")"));
         throw Error("Dependency Cycle Found: ".concat(exports.join(" -> ")))

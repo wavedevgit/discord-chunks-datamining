@@ -1,4 +1,4 @@
-/** Chunk was on 88806 **/
+/** Chunk was on 16820 **/
 /** chunk id: 430371, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => I
@@ -22,8 +22,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk796638 = require("./796638.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk354459 = require("./354459.js"),
-  Chunk394024 = require("./394024.js"),
-  Chunk597843 = require("./597843.js");
+  Chunk450906 = require("./450906.js"),
+  Chunk74246 = require("./74246.js");
 
 function j(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -76,10 +76,10 @@ function I(e) {
       width: D,
       height: U,
       layout: B,
-      idle: V
+      idle: F
     } = e,
     H = null != A,
-    F = h.Z.getVideoComponent(),
+    V = h.Z.getVideoComponent(),
     G = p.default.getId(),
     [z, W] = i.useState(null),
     q = (0, c.Z)(z),
@@ -200,7 +200,7 @@ function I(e) {
                   noBorder: ed >= D || eu >= U,
                   channel: M,
                   className: x.focusedVideo,
-                  videoComponent: F,
+                  videoComponent: V,
                   width: D,
                   participant: t,
                   onClick: l,
@@ -215,7 +215,7 @@ function I(e) {
           })
         }), el ? (0, r.jsx)(o.animated.div, {
           className: a()(O.actionRow, {
-            [O.idle]: V
+            [O.idle]: F
           }),
           style: {
             bottom: eC.value

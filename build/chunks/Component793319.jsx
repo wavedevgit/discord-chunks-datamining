@@ -1,4 +1,4 @@
-/** Chunk was on 88806 **/
+/** Chunk was on 16820 **/
 /** chunk id: 793319, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   NZ: () => eE,
@@ -76,7 +76,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk354459 = require("./354459.js"),
   Chunk921944 = require("./921944.js"),
-  Chunk32312 = require("./32312.js");
+  Chunk817675 = require("./817675.js");
 
 function ev() {
   return (ev = Object.assign || function(e) {
@@ -156,7 +156,7 @@ function eE(e) {
             visibleContent: t,
             markAsDismissed: n
           } = e;
-          if (t === d.z.TRIAL_NUX_STREAM_COACH_MARK) return E(true), (0, r.jsx)(V.h, {
+          if (t === d.z.TRIAL_NUX_STREAM_COACH_MARK) return E(true), (0, r.jsx)(F.h, {
             buttonRef: b,
             dismissed: false,
             onDismiss: () => {
@@ -165,7 +165,7 @@ function eE(e) {
           })
         }
       })
-    })(), (0, r.jsx)(F.Z, {
+    })(), (0, r.jsx)(V.Z, {
       children: (0, r.jsx)(p.yRy, {
         targetElementRef: C,
         renderPopout: e => {
@@ -450,10 +450,10 @@ let eT = function(e) {
     canGoLive: R
   } = (0, u.cj)([er.Z], () => ({
     canGoLive: (0, M.Z)(er.Z)
-  })), k = (0, A.Z)(), L = (0, u.e7)([N.Z], () => null != N.Z.getAwaitingRemoteSessionInfo()), B = null != k, V = (0, u.e7)([ei.Z], () => {
+  })), k = (0, A.Z)(), L = (0, u.e7)([N.Z], () => null != N.Z.getAwaitingRemoteSessionInfo()), B = null != k, F = (0, u.e7)([ei.Z], () => {
     var e;
     return (null != (e = null == k ? true : k.channelId) ? e : ei.Z.getVoiceChannelId()) === n.id
-  }), F = (0, u.e7)([C.ZP], () => C.ZP.getCurrentEmbeddedActivity()), {
+  }), V = (0, u.e7)([C.ZP], () => C.ZP.getCurrentEmbeddedActivity()), {
     reachedLimit: z,
     limit: W
   } = (0, eo.Z)(n), {
@@ -478,7 +478,7 @@ let eT = function(e) {
       onInteraction: eZ("AudioDeviceMenu")
     })))
   } : true;
-  return V ? (0, r.jsx)(x.Gt, {
+  return F ? (0, r.jsx)(x.Gt, {
     value: q,
     children: (0, r.jsxs)(b.Z, {
       section: eb.jXE.VOICE_CONTROL_TRAY,
@@ -615,7 +615,7 @@ let eT = function(e) {
             remoteMode: B
           })]
         }), (0, r.jsx)(eP, {
-          connectedEmbeddedActivity: F,
+          connectedEmbeddedActivity: V,
           currentUser: y,
           channel: n,
           onDisconnectCall: o

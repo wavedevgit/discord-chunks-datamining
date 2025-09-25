@@ -47,8 +47,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk468788 = require("./468788.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk728495 = require("./728495.js"),
-  Chunk197571 = require("./197571.js");
+  Chunk285746 = require("./285746.js"),
+  Chunk10198 = require("./10198.js");
 
 function z(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -275,26 +275,26 @@ function et() {
     setting: Chunk726985.s6.NOTIFICATIONS_COMMUNITY_ACTIVITY_ALERTS,
     children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
       variant: "heading-lg/semibold",
-      className: Chunk197571.marginBottom20,
+      className: Chunk10198.marginBottom20,
       children: Chunk388032.intl.string(Chunk388032.t.D9yVAA)
     }), (0, Chunk951288.jsx)(Chunk481060.R94, {
       type: Chunk481060.geA.DESCRIPTION,
-      className: Chunk197571.marginBottom20,
+      className: Chunk10198.marginBottom20,
       children: Chunk388032.intl.string(Chunk388032.t["0PhAOD"])
     }), (0, Chunk951288.jsx)(Chunk481060.q4e, {
       label: Chunk388032.intl.string(Chunk388032.t.Q0PsXV),
-      className: null != exports ? Chunk197571.marginBottom20 : Chunk197571.marginBottom40,
+      className: null != exports ? Chunk10198.marginBottom20 : Chunk10198.marginBottom40,
       value: exports,
       onChange: e => {
         n(e)
       },
       options: Chunk120356
     }), null != exports ? (0, Chunk951288.jsxs)("div", {
-      className: Chunk197571.marginTop20,
+      className: Chunk10198.marginTop20,
       children: [(0, Chunk951288.jsxs)(Chunk921801.F, {
         setting: Chunk726985.s6.NOTIFICATIONS_COMMUNITY_IN_APP_ALERTS,
         children: [(0, Chunk951288.jsx)(Chunk481060.j7V, {
-          className: Chunk197571.marginBottom20,
+          className: Chunk10198.marginBottom20,
           note: Chunk388032.intl.string(Chunk388032.t["z8Td4+"]),
           value: !module[exports].disableRaidAlertNag,
           onChange: () => {
@@ -305,12 +305,12 @@ function et() {
           hideBorder: true,
           children: Chunk388032.intl.string(Chunk388032.t.u6dc5O)
         }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
-          className: o()(Chunk197571.marginTop20, Chunk197571.marginBottom40)
+          className: o()(Chunk10198.marginTop20, Chunk10198.marginBottom40)
         })]
       }), (0, Chunk951288.jsxs)(Chunk921801.F, {
         setting: Chunk726985.s6.NOTIFICATIONS_COMMUNITY_PUSH_NOTIFICATIONS,
         children: [(0, Chunk951288.jsx)(Chunk481060.j7V, {
-          className: Chunk197571.marginBottom20,
+          className: Chunk10198.marginBottom20,
           note: Chunk388032.intl.string(Chunk388032.t.PyxXs7),
           value: !module[exports].disableRaidAlertPush,
           onChange: () => {
@@ -321,11 +321,11 @@ function et() {
           hideBorder: true,
           children: Chunk388032.intl.string(Chunk388032.t.P8MG6u)
         }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
-          className: o()(Chunk197571.marginTop20, Chunk197571.marginBottom40)
+          className: o()(Chunk10198.marginTop20, Chunk10198.marginBottom40)
         })]
       })]
     }) : null, null != exports ? null : (0, Chunk951288.jsx)(Chunk481060.$i$, {
-      className: o()(Chunk197571.marginTop20, Chunk197571.marginBottom40)
+      className: o()(Chunk10198.marginTop20, Chunk10198.marginBottom40)
     })]
   })
 }
@@ -361,7 +361,7 @@ class en extends Chunk647438.PureComponent {
       children: [(0, Chunk951288.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.NOTIFICATIONS_ENABLE_DESKTOP,
         children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
-          className: Chunk197571.marginBottom20,
+          className: Chunk10198.marginBottom20,
           value: module !== Chunk981631.qrD.NEVER && !Chunk524437,
           onChange: this.handleDesktopChange,
           note: Chunk388032.intl.string(Chunk388032.t.wF9ih4),
@@ -372,7 +372,7 @@ class en extends Chunk647438.PureComponent {
       }), (0, Chunk951288.jsx)(ei, {}), (0, Chunk951288.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.NOTIFICATIONS_UNREAD_MESSAGE_BADGE,
         children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
-          className: Chunk538534 ? Chunk197571.marginBottom20 : Chunk197571.marginBottom40,
+          className: Chunk538534 ? Chunk10198.marginBottom20 : Chunk10198.marginBottom40,
           value: !require,
           note: Chunk388032.intl.string(Chunk388032.t["9K4qwc"]),
           onChange: this.handleToggleShowUnreadBadge,
@@ -381,7 +381,7 @@ class en extends Chunk647438.PureComponent {
       }), (0, Chunk951288.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.NOTIFICATIONS_ENABLE_TASKBAR_FLASHING,
         children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
-          className: Chunk197571.marginBottom40,
+          className: Chunk10198.marginBottom40,
           value: Chunk647438,
           note: Chunk388032.intl.string(Chunk388032.t["bd4j4+"]),
           onChange: this.handleToggleShowFlash,
@@ -396,7 +396,7 @@ class en extends Chunk647438.PureComponent {
           onChange: Chunk695346.CM.updateSetting,
           options: Chunk292556
         }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
-          className: o()(Chunk197571.marginTop40, Chunk197571.marginBottom40)
+          className: o()(Chunk10198.marginTop40, Chunk10198.marginBottom40)
         })]
       }), this.renderTTS(), (0, Chunk951288.jsx)(et, {}), (0, Chunk951288.jsx)(ee, {
         disabledSounds: Chunk120356,
@@ -463,7 +463,7 @@ function ei() {
   return module ? (0, Chunk951288.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.NOTIFICATIONS_MENTION_ON_ALL_MESSAGES,
     children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
-      className: Chunk197571.marginBottom20,
+      className: Chunk10198.marginBottom20,
       value: exports,
       onChange: e => {
         h.Z.setAccountFlag(H.c.MENTION_ON_ALL_MESSAGES, e)
@@ -493,7 +493,7 @@ function ea() {
     children: [require ? (0, Chunk951288.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.NOTIFICATIONS_UNREAD_SETTINGS,
       children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
-        className: Chunk197571.marginBottom40,
+        className: Chunk10198.marginBottom40,
         value: require,
         disabled: Chunk120356 || !require,
         note: Chunk388032.intl.string(Chunk388032.t.frbLrK),
@@ -503,7 +503,7 @@ function ea() {
     }) : exports ? (0, Chunk951288.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.NOTIFICATIONS_UNREAD_SETTINGS,
       children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
-        className: Chunk197571.marginBottom40,
+        className: Chunk10198.marginBottom40,
         value: require,
         disabled: Chunk120356 || require,
         note: "Turns on the new notification system",
@@ -550,7 +550,7 @@ function ea() {
           })]
         })
       }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
-        className: o()(Chunk197571.marginTop40, Chunk197571.marginBottom40)
+        className: o()(Chunk10198.marginTop40, Chunk10198.marginBottom40)
       })]
     })]
   }) : null
@@ -619,7 +619,7 @@ function ec() {
       }),
       value: module
     }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
-      className: o()(Chunk197571.marginTop40, Chunk197571.marginBottom40)
+      className: o()(Chunk10198.marginTop40, Chunk10198.marginBottom40)
     })]
   }) : null
 }
@@ -635,7 +635,7 @@ function eu() {
         onChange: Chunk210176.I,
         note: Chunk388032.intl.string(Chunk388032.t.rngMNz),
         children: (0, Chunk951288.jsxs)(Chunk481060.vwX, {
-          className: Chunk728495.titleWithBeta,
+          className: Chunk285746.titleWithBeta,
           children: [Chunk388032.intl.string(Chunk388032.t.wtk08f), (0, Chunk951288.jsx)(Chunk688465.Z, {})]
         })
       })

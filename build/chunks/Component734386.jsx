@@ -1,4 +1,4 @@
-/** Chunk was on 88806 **/
+/** Chunk was on 16820 **/
 /** chunk id: 734386, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => M
@@ -32,8 +32,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk318374 = require("./318374.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk338518 = require("./338518.js"),
-  Chunk430864 = require("./430864.js");
+  Chunk73288 = require("./73288.js"),
+  Chunk602009 = require("./602009.js");
 
 function M(e) {
   let {
@@ -68,7 +68,7 @@ function M(e) {
         l = c.e$(i.allow, T.Plq.VIEW_CHANNEL);
       return r || l
     }).value()
-  }, [t, k]), B = O.Z.can(T.Plq.MANAGE_CHANNELS, t) || O.Z.can(T.Plq.MANAGE_ROLES, t), V = i.useCallback(() => l(false), []);
+  }, [t, k]), B = O.Z.can(T.Plq.MANAGE_CHANNELS, t) || O.Z.can(T.Plq.MANAGE_ROLES, t), F = i.useCallback(() => l(false), []);
   return (0, r.jsxs)(I.ZP, {
     channelId: t.id,
     children: [(0, r.jsx)(I.Kq, {
@@ -179,7 +179,7 @@ function M(e) {
           }
           return e
         }({}, e), i = i = {
-          onClose: () => (V(), e.onClose()),
+          onClose: () => (F(), e.onClose()),
           channelId: t.id
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
           var n = Object.keys(e);
