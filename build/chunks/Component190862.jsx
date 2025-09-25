@@ -1,7 +1,7 @@
 /** Chunk was on 53714 **/
 /** chunk id: 190862, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => h
 });
 var Chunk951288 = require("./951288.js"),
   Chunk296009 = require("./296009.js"),
@@ -42,13 +42,13 @@ function y(e, t) {
   var n, r, i = function(e, t) {
     if (null == e) return {};
     var n, r, i = {},
-      o = Object.keys(e);
-    for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+      a = Object.keys(e);
+    for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
     return i
   }(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -77,7 +77,7 @@ let j = e => {
         return null
     }
   },
-  v = e => {
+  h = e => {
     var {
       widget: t,
       user: n,
@@ -88,11 +88,11 @@ let j = e => {
         shouldShowSuggestions: g,
         handleDismissSuggestions: p
       } = (0, s.h)(f),
-      v = (0, o.e7)([a.default], () => a.default.getId() === n.id),
-      h = v && !i && g,
+      h = (0, a.e7)([o.default], () => o.default.getId() === n.id),
+      v = h && !i && g,
       x = (0, l.mR)(f),
       _ = (0, l.Hy)(f, {
-        isCurrentUser: v
+        isCurrentUser: h
       }),
       P = (0, l.kQ)(f);
     return (0, r.jsx)(j, O({
@@ -101,12 +101,12 @@ let j = e => {
       disableInteraction: i,
       headerTitle: x,
       headerSubtitle: _,
-      headerActionButtons: v ? [(0, r.jsx)(u.Z, {
+      headerActionButtons: h ? [(0, r.jsx)(u.Z, {
         disabled: P,
         widgetType: f.type,
         widget: f
       }, "".concat(f.type, "-browse-games-popout"))] : true,
-      trailingContent: h && (0, r.jsx)(b.Z, {
+      trailingContent: v && (0, r.jsx)(b.Z, {
         userId: n.id,
         widgetType: f.type,
         onDismiss: p,

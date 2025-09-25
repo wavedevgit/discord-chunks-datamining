@@ -15,9 +15,9 @@ function l(e) {
     channelId: l,
     className: c,
     visuallyHideLabel: s
-  } = e, u = (0, o.Z)(t);
+  } = e, u = (0, a.Z)(t);
   return u.length > 0 ? (0, r.jsx)(i.Z, {
-    label: a.intl.formatToPlainString(a.t.ujhJdH, {
+    label: o.intl.formatToPlainString(o.t.ujhJdH, {
       numFriends: u.length
     }),
     className: c,

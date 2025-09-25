@@ -5,25 +5,25 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
-let o = new Map,
-  a = new Set;
+let a = new Map,
+  o = new Set;
 class l extends Chunk442837.ZP.Store {
   getUserIdentities(e) {
     var t;
-    return null != (t = o.get(e)) ? t : null
+    return null != (t = a.get(e)) ? t : null
   }
   isFetchingUser(e) {
-    return a.has(e)
+    return o.has(e)
   }
 }
 let c = new l(Chunk570140.Z, {
   USER_APPLICATION_IDENTITY_FETCH_USER_START: function(e) {
-    a.add(e.userId)
+    o.add(e.userId)
   },
   USER_APPLICATION_IDENTITY_FETCH_USER_SUCCESS: function(e) {
-    a.delete(e.userId), o.set(e.userId, e.identities)
+    o.delete(e.userId), a.set(e.userId, e.identities)
   },
   USER_APPLICATION_IDENTITY_FETCH_USER_FAILURE: function(e) {
-    a.delete(e.userId)
+    o.delete(e.userId)
   }
 })

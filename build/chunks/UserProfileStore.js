@@ -256,7 +256,8 @@ function Q(e) {
         name: et.name
       } : null,
       badges: er,
-      widgets: null == (_ = z.widgets) ? true : _.map(Z).filter(h.lm)
+      widgets: null == (_ = z.widgets) ? true : _.map(Z).filter(h.lm),
+      wishlistSettings: z.wishlist_settings
     }), (null == (E = z.user_profile) || null == (g = E.profile_effect) ? true : g.expires_at) != null) {
     let e = new o.V7;
     x.set(z.user.id, e), H(z.user.id)
@@ -526,6 +527,14 @@ class eh extends Chunk750041.Z {
   getWidgets(e) {
     var t;
     return null == (t = w.get(e)) ? true : t.widgets
+  }
+  getWishlistIds(e) {
+    let t = w.get(e);
+    return (null == t ? true : t.wishlistSettings) != null ? Object.keys(t.wishlistSettings) : []
+  }
+  getFirstWishlistId(e) {
+    let t = this.getWishlistIds(e);
+    return t.length > 0 ? t[0] : null
   }
   takeSnapshot() {
     let e = Chunk314897.default.getId(),

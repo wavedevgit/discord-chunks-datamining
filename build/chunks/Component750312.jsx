@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -24,80 +24,82 @@ function j(e) {
   let {
     userId: t,
     widget: n,
-    children: o,
+    children: a,
     disableInteraction: s,
     className: O,
     index: j,
-    trailingContent: h,
+    trailingContent: v,
     headerTitle: x,
     headerSubtitle: _,
-    headerActionButtons: P
-  } = e, w = (0, u.Dt)(), I = (0, c.e7)([d.default], () => d.default.getId() === t), E = i.useRef(null), S = i.useRef(null), {
-    trackUserProfileAction: T
-  } = (0, f.KZ)(), D = (0, p.Z)({
+    headerActionButtons: P,
+    dragHandleAdditionalMenuItems: w
+  } = e, I = (0, u.Dt)(), E = (0, c.e7)([d.default], () => d.default.getId() === t), S = i.useRef(null), T = i.useRef(null), {
+    trackUserProfileAction: D
+  } = (0, f.KZ)(), N = (0, p.Z)({
     widgetType: n.type,
-    onAction: T
-  }), N = I && null != j && !s, {
-    isDragging: A,
-    dragSourcePosition: k
+    onAction: D
+  }), A = E && null != j && !s, {
+    isDragging: k,
+    dragSourcePosition: C
   } = (0, g.q)({
-    dropRef: E,
-    dragRef: S,
+    dropRef: S,
+    dragRef: T,
     userId: t,
     widget: n,
     index: j,
-    disableInteraction: !N
-  }), [C, R] = i.useState(false);
-  return (0, r.jsx)(v, {
-    ref: E,
-    disableInteraction: !N,
-    onMouseEnter: () => R(true),
-    onMouseLeave: () => R(false),
-    dragSourcePosition: k,
+    disableInteraction: !A
+  }), [R, Z] = i.useState(false);
+  return (0, r.jsx)(h, {
+    ref: S,
+    disableInteraction: !A,
+    onMouseEnter: () => Z(true),
+    onMouseLeave: () => Z(false),
+    dragSourcePosition: C,
     index: null != j ? j : 0,
     children: (0, r.jsxs)("section", {
-      ref: D,
-      className: a()(y.container, O, {
-        [y.isDragging]: A
+      ref: N,
+      className: o()(y.container, O, {
+        [y.isDragging]: k
       }),
-      "aria-labelledby": w,
-      children: [N && (0, r.jsx)(b.Z, {
-        buttonRef: S,
+      "aria-labelledby": I,
+      children: [A && (0, r.jsx)(b.Z, {
+        buttonRef: T,
         widget: n,
-        className: a()(y.dragHandleButton, {
-          [y.opacity]: C || A
-        })
+        className: o()(y.dragHandleButton, {
+          [y.opacity]: R || k
+        }),
+        additionalMenuItems: w
       }), (0, r.jsx)(m.Z, {
         userId: t,
-        headingId: w,
+        headingId: I,
         title: x,
         subtitle: _,
         actionButtons: P,
         widget: n,
         disableInteraction: s
       }), (0, r.jsxs)(l.y5t, {
-        children: [o, h]
+        children: [a, v]
       })]
     })
   })
 }
-let v = e => {
+let h = e => {
   let {
     ref: t,
     children: n,
     disableInteraction: i,
-    onMouseEnter: o,
+    onMouseEnter: a,
     onMouseLeave: l,
     dragSourcePosition: c,
     index: u
   } = e, d = (0, s.zPA)() && null != c, f = d && u < c, g = d && u > c;
   return i ? n : (0, r.jsx)("div", {
     ref: t,
-    className: a()(y.dragAndDropHitbox, {
+    className: o()(y.dragAndDropHitbox, {
       [y.dropIndicatorBefore]: f,
       [y.dropIndicatorAfter]: g
     }),
-    onMouseEnter: o,
+    onMouseEnter: a,
     onMouseLeave: l,
     "aria-label": O.intl.formatToPlainString(O.t.YLczh4, {
       positionNumber: u + 1

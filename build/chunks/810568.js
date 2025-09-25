@@ -20,7 +20,7 @@ var Chunk772848 = require("./772848.js"),
     return e[e.FollowGame = 0] = "FollowGame", e[e.UnfollowGame = 1] = "UnfollowGame", e[e.ClickMessageUser = 2] = "ClickMessageUser", e[e.SendMessageUser = 3] = "SendMessageUser", e[e.JoinVC = 4] = "JoinVC", e[e.WatchStream = 5] = "WatchStream", e[e.ClickSimilarGame = 6] = "ClickSimilarGame", e[e.WebsiteLink = 7] = "WebsiteLink", e[e.XLink = 8] = "XLink", e[e.YouTubeLink = 9] = "YouTubeLink", e[e.ShowMore = 10] = "ShowMore", e[e.ShowLess = 11] = "ShowLess", e[e.JoinOfficialServer = 12] = "JoinOfficialServer", e[e.ClickImage = 13] = "ClickImage", e
   }({}),
   c = function(e) {
-    return e.ActivityCard = "activity_card", e.ActivityCardContextMenu = "activity_card_context_menu", e.UserProfile = "user_profile", e.UserProfileCardContextMenu = "user_profile_card_context_menu", e.SimilarGames = "similar_games", e.DevTools = "dev_tools", e.Embed = "embed", e.RtcPanel = "rtc_panel", e.FriendsActivityFeed = "friends_activity_feed", e.GuildProfile = "guild_profile", e.MiniGameProfile = "mini_game_profile", e.GameMention = "game_mention", e.GameSheet = "game_sheet", e
+    return e.ActivityCard = "activity_card", e.ActivityCardContextMenu = "activity_card_context_menu", e.UserProfile = "user_profile", e.UserProfileCardContextMenu = "user_profile_card_context_menu", e.SimilarGames = "similar_games", e.DevTools = "dev_tools", e.Embed = "embed", e.RtcPanel = "rtc_panel", e.FriendsActivityFeed = "friends_activity_feed", e.GuildProfile = "guild_profile", e.MiniGameProfile = "mini_game_profile", e.GameMention = "game_mention", e.GameSheet = "game_sheet", e.ApplicationWidget = "application_widget", e
   }({}),
   u = function(e) {
     return e.FullProfile = "full_profile", e.MiniProfile = "mini_profile", e

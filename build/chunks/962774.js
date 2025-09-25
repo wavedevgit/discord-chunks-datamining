@@ -1,11 +1,12 @@
 /** Chunk was on 35078 **/
 /** chunk id: 962774, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Y9: () => r,
-  kd: () => l,
-  qE: () => o
+  Y9: () => i,
+  kd: () => s,
+  qE: () => c
 }), require("./388685.js");
-let a = [{
+var Chunk660815 = require("./660815.js");
+let r = [{
     id: "1",
     name: "Portkey #1",
     cost: 3,
@@ -48,7 +49,7 @@ let a = [{
       description: "GB"
     }]
   }],
-  r = [{
+  i = [{
     id: "1",
     name: "Test #1",
     countryCode: "US",
@@ -70,33 +71,33 @@ let a = [{
     pingUrl: "bhs1.shockbyte.host/ping"
   }];
 
-function i(e, t) {
+function l(e, t) {
   return {
     id: e,
     name: t,
     imageUrl: "",
     developer: "Portkey Developer",
-    plans: a,
-    regions: r,
-    baseCost: Math.min(...a.map(e => e.cost))
+    plans: r,
+    regions: i,
+    baseCost: Math.min(...r.map(e => e.cost))
   }
 }
-let l = [i("1", "Portkey Test #1"), i("2", "Portkey Test #2"), i("3", "Portkey Test #3"), i("4", "Portkey Test #4"), i("5", "Portkey Test #5"), i("6", "Portkey Test #6"), i("7", "Portkey Test #7"), i("8", "Portkey Test #8"), i("9", "Portkey Test #9"), i("10", "Portkey Test #10"), i("11", "Portkey Test #11"), i("12", "Portkey Test #12")],
-  s = ["Launch Minecraft.", 'Click "Multiplayer".', 'Click "Add Server".', "Paste the server's IP address, found below."],
-  o = [{
+let s = [l("1", "Portkey Test #1"), l("2", "Portkey Test #2"), l("3", "Portkey Test #3"), l("4", "Portkey Test #4"), l("5", "Portkey Test #5"), l("6", "Portkey Test #6"), l("7", "Portkey Test #7"), l("8", "Portkey Test #8"), l("9", "Portkey Test #9"), l("10", "Portkey Test #10"), l("11", "Portkey Test #11"), l("12", "Portkey Test #12")],
+  o = ["Launch Minecraft.", 'Click "Multiplayer".', 'Click "Add Server".', "Paste the server's IP address, found below."],
+  c = [{
     id: "1",
     gameId: "1",
     name: "Portkey Test #1",
     port: "25565",
     regionId: "us-east",
     regionName: "US East",
-    planId: a[1].id,
-    planName: a[1].name,
+    planId: r[1].id,
+    planName: r[1].name,
     onlineConnectionsCount: 0,
     maxConnectionsCount: 10,
-    status: "online",
+    status: Chunk660815.V.ONLINE,
     serverIP: "127.0.0.1",
-    instructions: s,
+    instructions: o,
     gameServerPanelUrl: "https://google.com",
     entitlementId: "1"
   }, {
@@ -106,13 +107,13 @@ let l = [i("1", "Portkey Test #1"), i("2", "Portkey Test #2"), i("3", "Portkey T
     port: "25565",
     regionId: "us-east",
     regionName: "US East",
-    planId: a[1].id,
-    planName: a[1].name,
+    planId: r[1].id,
+    planName: r[1].name,
     onlineConnectionsCount: 0,
     maxConnectionsCount: 10,
-    status: "online",
+    status: Chunk660815.V.ONLINE,
     serverIP: "127.0.0.1",
-    instructions: s,
+    instructions: o,
     gameServerPanelUrl: "https://google.com",
     entitlementId: "2"
   }, {
@@ -122,13 +123,13 @@ let l = [i("1", "Portkey Test #1"), i("2", "Portkey Test #2"), i("3", "Portkey T
     port: "25565",
     regionId: "us-east",
     regionName: "US East",
-    planId: a[1].id,
-    planName: a[1].name,
+    planId: r[1].id,
+    planName: r[1].name,
     onlineConnectionsCount: 0,
     maxConnectionsCount: 10,
-    status: "online",
+    status: Chunk660815.V.ONLINE,
     serverIP: "127.0.0.1",
-    instructions: s,
+    instructions: o,
     gameServerPanelUrl: "https://google.com",
     entitlementId: "3"
   }, {
@@ -138,13 +139,13 @@ let l = [i("1", "Portkey Test #1"), i("2", "Portkey Test #2"), i("3", "Portkey T
     port: "25565",
     regionId: "us-east",
     regionName: "US East",
-    planId: a[1].id,
-    planName: a[1].name,
+    planId: r[1].id,
+    planName: r[1].name,
     onlineConnectionsCount: 0,
     maxConnectionsCount: 10,
-    status: "online",
+    status: Chunk660815.V.ONLINE,
     serverIP: "127.0.0.1",
-    instructions: s,
+    instructions: o,
     gameServerPanelUrl: "https://google.com",
     entitlementId: "4"
   }, {
@@ -154,13 +155,13 @@ let l = [i("1", "Portkey Test #1"), i("2", "Portkey Test #2"), i("3", "Portkey T
     port: "25565",
     regionId: "us-east",
     regionName: "US East",
-    planId: a[1].id,
-    planName: a[1].name,
+    planId: r[1].id,
+    planName: r[1].name,
     onlineConnectionsCount: 0,
     maxConnectionsCount: 10,
-    status: "online",
+    status: Chunk660815.V.ONLINE,
     serverIP: "127.0.0.1",
-    instructions: s,
+    instructions: o,
     gameServerPanelUrl: "https://google.com",
     entitlementId: "5"
   }, {
@@ -170,13 +171,13 @@ let l = [i("1", "Portkey Test #1"), i("2", "Portkey Test #2"), i("3", "Portkey T
     port: "25565",
     regionId: "us-east",
     regionName: "US East",
-    planId: a[1].id,
-    planName: a[1].name,
+    planId: r[1].id,
+    planName: r[1].name,
     onlineConnectionsCount: 0,
     maxConnectionsCount: 10,
-    status: "online",
+    status: Chunk660815.V.ONLINE,
     serverIP: "127.0.0.1",
-    instructions: s,
+    instructions: o,
     gameServerPanelUrl: "https://google.com",
     entitlementId: "6"
   }]

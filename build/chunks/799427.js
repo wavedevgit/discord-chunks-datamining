@@ -1,8 +1,9 @@
 /** Chunk was on 85683 **/
 /** chunk id: 799427, original params: e,n,t (module,exports,require) **/
-module.exports = {
+require.r(module.exports = {
   card: "card_acb40e",
   serverHeader: "serverHeader_acb40e",
+  gameIcon: "gameIcon_acb40e",
   gameImage: "gameImage_acb40e",
   serverInfo: "serverInfo_acb40e",
   serverDetails: "serverDetails_acb40e",
@@ -12,6 +13,13 @@ module.exports = {
   copyButton: "copyButton_acb40e",
   statusContainer: "statusContainer_acb40e",
   statusIndicator: "statusIndicator_acb40e",
+  starting: "starting_acb40e",
+  startup_failed: "startup_failed_acb40e",
+  offline: "offline_acb40e",
+  online: "online_acb40e",
+  deleted: "deleted_acb40e",
+  missing_stock: "missing_stock_acb40e",
+  sleeping: "sleeping_acb40e",
   serverActions: "serverActions_acb40e",
   overflowMenu: "overflowMenu_acb40e"
-}
+})

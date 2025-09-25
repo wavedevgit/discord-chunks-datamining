@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk239091 = require("./239091.js"),
   Chunk726521 = require("./726521.js"),
@@ -17,7 +17,7 @@ function f(e) {
   let {
     widget: t,
     userId: n,
-    className: o,
+    className: a,
     menuItems: f
   } = e, g = i.useRef(null), p = () => {
     (0, s.G1)(n, t)
@@ -71,7 +71,7 @@ function f(e) {
       }({}, e), n = n = {
         innerRef: g,
         "aria-label": u.intl.string(u.t.xpSHSk),
-        className: a()(d.button, o),
+        className: o()(d.button, a),
         children: (0, r.jsx)(l.xhG, {
           size: "sm",
           color: "currentColor"

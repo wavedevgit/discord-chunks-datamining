@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk79116 = require("./79116.js"),
   Chunk481060 = require("./481060.js"),
   Chunk239091 = require("./239091.js"),
@@ -56,20 +56,20 @@ let j = e => {
       children: n
     } = e, {
       isDragging: i
-    } = (0, a.f)(e => ({
+    } = (0, o.f)(e => ({
       isDragging: e.isDragging()
     }));
     return (0, r.jsx)(l.ua7, {
       "aria-label": b.intl.formatToPlainString(b.t.HWNJJC, {
         widgetTitle: t
       }),
-      text: (0, r.jsx)(v, {}),
+      text: (0, r.jsx)(h, {}),
       position: "top",
       shouldShow: true !== i,
       children: n
     })
   },
-  v = () => (0, Chunk951288.jsxs)("div", {
+  h = () => (0, Chunk951288.jsxs)("div", {
     className: Chunk640962.dragClickTooltipText,
     children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
@@ -87,16 +87,17 @@ let j = e => {
       })
     })]
   }),
-  h = e => {
+  v = e => {
     let {
       children: t,
       widget: i,
-      targetRef: o
+      targetRef: a,
+      additionalMenuItems: o
     } = e, {
-      trackUserProfileEditAction: a
-    } = (0, d.KZ)(), s = e => {
+      trackUserProfileEditAction: s
+    } = (0, d.KZ)(), m = e => {
       if (e.shiftKey) {
-        (0, f.y8)(i.type), a({
+        (0, f.y8)(i.type), s({
           action: "WIDGET_REMOVED",
           widgetEdited: i.type
         }), (0, g.L$)(p.qb.WIDGET_REMOVED);
@@ -108,14 +109,14 @@ let j = e => {
         return t => (0, r.jsx)(e, y(O({}, t), {
           userId: u.default.getId(),
           widget: i,
-          trackUserProfileEditAction: a
+          trackUserProfileEditAction: s
         }))
       }, {
         stackingBehavior: "stack"
       })
     };
     return (0, r.jsx)(l.yRy, {
-      targetElementRef: o,
+      targetElementRef: a,
       align: "top",
       position: "right",
       disablePointerEvents: false,
@@ -130,14 +131,14 @@ let j = e => {
           },
           onSelect: () => {},
           "aria-label": b.intl.string(b.t.xpSHSk),
-          children: (0, r.jsx)(l.kSQ, {
-            children: (0, r.jsx)(l.sNh, {
+          children: (0, r.jsxs)(l.kSQ, {
+            children: [o, (0, r.jsx)(l.sNh, {
               id: "remove-widget",
               label: b.intl.string(b.t.Mm07YW),
-              action: s,
+              action: m,
               color: "danger",
               icon: l.XHJ
-            })
+            })]
           })
         })
       },
@@ -148,26 +149,28 @@ let j = e => {
     let {
       widget: t,
       className: n,
-      buttonRef: i
-    } = e, a = (0, f.mR)(t), c = (0, s.Dt)();
+      buttonRef: i,
+      additionalMenuItems: o
+    } = e, c = (0, f.mR)(t), u = (0, s.Dt)();
     return (0, r.jsx)(j, {
-      widgetTitle: a,
-      children: e => (0, r.jsx)(h, {
+      widgetTitle: c,
+      children: e => (0, r.jsx)(v, {
         targetRef: i,
         widget: t,
+        additionalMenuItems: o,
         children: t => (0, r.jsxs)(l.P3F, y(O({
           innerRef: i,
-          className: o()(m.dragHandleButton, n),
-          "data-dnd-name": a,
+          className: a()(m.dragHandleButton, n),
+          "data-dnd-name": c,
           "aria-label": b.intl.formatToPlainString(b.t.HWNJJC, {
-            widgetTitle: a
+            widgetTitle: c
           }),
-          "aria-describedby": c
+          "aria-describedby": u
         }, e, t), {
           children: [(0, r.jsx)(l.Vni, {
             size: "sm"
           }), (0, r.jsx)(l.nn4, {
-            id: c,
+            id: u,
             children: b.intl.string(b.t.bsuqFh)
           })]
         }))

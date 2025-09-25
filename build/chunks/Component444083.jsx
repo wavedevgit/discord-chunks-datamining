@@ -44,7 +44,7 @@ function g(e) {
       return (0, a.jsx)(i.v2r, {
         navId: "portkey-popout-context-menu",
         onClose: () => {
-          (0, o.Zy)(), r()
+          (0, s.Zy)(), r()
         },
         "aria-label": u.intl.string(d.default.xCq1DA),
         onSelect: true,
@@ -63,7 +63,7 @@ function g(e) {
                 guildId: n,
                 stepConfig: m,
                 initialPortkeyInstance: t,
-                analyticsLocation: s.Z.PORTKEY_OVERVIEW
+                analyticsLocation: o.Z.PORTKEY_OVERVIEW
               })
             }
           })]
