@@ -80,7 +80,7 @@ let _ = e => {
     } = e, [C, S] = (0, u.US)([o.z.WISHLIST_NUX_TOOLTIP_AND_MODAL], true, true), I = C === o.z.WISHLIST_NUX_TOOLTIP_AND_MODAL, A = b.default.getCurrentUser(), w = null != A ? d.Z.getFirstWishlistId(A.id) : null, T = (0, f.n)(w, t.skuId), R = l.useRef(null), [N, L] = l.useState(null), k = null !== N ? N : T, D = (0, c.Z)(R), M = k ? s.h_8 : s.Pzh, Z = k || D ? O.wishlistedOrHoveredIconColor : O.normalIconColor, {
       isPurchased: U
     } = (0, g.L)(t), B = (0, h.fp)(t) || (0, h.x6)(t) || (0, h.G1)(t), F = l.useCallback(async e => {
-      if (e.stopPropagation(), k && null != w) {
+      if (e.stopPropagation(), e.currentTarget.blur(), k && null != w) {
         L(false);
         try {
           await p.Z.removeSkuFromWishlist(w, t.skuId), L(null), (0, s.showToast)((0, s.createToast)("", s.ToastType.CUSTOM, {
