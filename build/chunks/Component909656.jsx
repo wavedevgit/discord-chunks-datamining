@@ -90,7 +90,7 @@ function L(e) {
   } = e, {
     ref: o,
     width: c
-  } = (0, h.ZP)(), d = (0, b.Z)(A), u = i.useMemo(() => d.map(e => D(R({}, e), {
+  } = (0, h.ZP)(), d = (0, x.Z)(A), u = i.useMemo(() => d.map(e => D(R({}, e), {
     icon: function() {
       let {
         icon: t
@@ -138,7 +138,7 @@ function k(e) {
   } = (0, E.Z)(n.id), a = (0, y.YB)(n.id), c = i.useCallback(() => {
     var e;
     return (null == a || null == (e = a.cover_image_asset) ? true : e.application_id) == null ? null : (0, _._W)(a.cover_image_asset.application_id, a.cover_image_asset, Z)
-  }, [a]), [m, h] = i.useState(s), [b, O] = i.useState(null != (t = null == a ? true : a.description) ? t : ""), [A, k] = i.useState(c), [G, M] = i.useState(null == a ? true : a.store_page_guild_products_default_sort), [U, B] = i.useState(null == a ? true : a.server_shop_tab_order), {
+  }, [a]), [m, h] = i.useState(s), [x, O] = i.useState(null != (t = null == a ? true : a.description) ? t : ""), [A, k] = i.useState(c), [G, M] = i.useState(null == a ? true : a.store_page_guild_products_default_sort), [U, B] = i.useState(null == a ? true : a.server_shop_tab_order), {
     loading: F,
     error: H,
     updateSubscriptionsSettings: z
@@ -146,16 +146,16 @@ function k(e) {
     imageCTA: V,
     imageAriaLabel: W,
     setFilename: K
-  } = (0, N.Z)(null == a ? true : a.cover_image_asset), Y = (0, x.Dt)(), q = (0, x.Dt)(), X = (0, x.Dt)();
+  } = (0, N.Z)(null == a ? true : a.cover_image_asset), Y = (0, b.Dt)(), q = (0, b.Dt)(), X = (0, b.Dt)();
 
   function Q(e, t) {
     o()(null != e, "Null value not allowed"), null != t && K(t.name), k(e)
   }
   let J = i.useMemo(() => {
       var e;
-      return null != b && b !== (null != (e = null == a ? true : a.description) ? e : "") || (null == A ? true : A.startsWith("data:")) === true || m !== s || (null == a ? true : a.store_page_guild_products_default_sort) !== G || (null == a ? true : a.server_shop_tab_order) !== U
-    }, [A, s, b, a, m, G, U]),
-    $ = null != b && "" !== b && null != A;
+      return null != x && x !== (null != (e = null == a ? true : a.description) ? e : "") || (null == A ? true : A.startsWith("data:")) === true || m !== s || (null == a ? true : a.store_page_guild_products_default_sort) !== G || (null == a ? true : a.server_shop_tab_order) !== U
+    }, [A, s, x, a, m, G, U]),
+    $ = null != x && "" !== x && null != A;
   i.useEffect(() => {
     var e;
     (null == a || null == (e = a.cover_image_asset) ? true : e.application_id) != null && k((0, _._W)(a.cover_image_asset.application_id, a.cover_image_asset, Z))
@@ -216,7 +216,7 @@ function k(e) {
       children: (0, r.jsx)(p.Kx8, {
         placeholder: l ? P.intl.string(P.t.SD6LRU) : P.intl.string(P.t["aVhW/f"]),
         maxLength: 1500,
-        value: b,
+        value: x,
         autosize: true,
         onChange: O,
         "aria-labelledby": q,
@@ -307,7 +307,7 @@ function k(e) {
           onSave: () => {
             o()(null != a, "Settings must be defined");
             let e = {};
-            b !== a.description && (e.description = b), null != A && A.startsWith("data:") && (e.cover_image = A), m !== s && (e.full_server_gate = m === S.e3.ALL_CHANNELS), G !== a.store_page_guild_products_default_sort && (e.store_page_guild_products_default_sort = G), U !== a.server_shop_tab_order && (e.server_shop_tab_order = U), d().isEmpty(e) || z(n.id, e)
+            x !== a.description && (e.description = x), null != A && A.startsWith("data:") && (e.cover_image = A), m !== s && (e.full_server_gate = m === S.e3.ALL_CHANNELS), G !== a.store_page_guild_products_default_sort && (e.store_page_guild_products_default_sort = G), U !== a.server_shop_tab_order && (e.server_shop_tab_order = U), d().isEmpty(e) || z(n.id, e)
           },
           saveButtonTooltip: $ ? true : P.intl.string(P.t["6HRvio"])
         })

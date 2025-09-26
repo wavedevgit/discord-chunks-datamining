@@ -20,7 +20,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk31441 = require("./31441.js");
 
-function x(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -145,7 +145,7 @@ class C extends(r = Chunk647438.Component) {
       u = null != c && e.key === c.key,
       g = e.key === a[0].key,
       p = this.getTierDisabled(e);
-    l = g ? b.tierFirst : p ? b.tierInProgress : u ? b.tierCurrent : d ? b.tierAccomplished : b.tierInProgress;
+    l = g ? x.tierFirst : p ? x.tierInProgress : u ? x.tierCurrent : d ? x.tierAccomplished : x.tierInProgress;
     let f = e.y - (g ? 0 : _ / 2),
       h = this.state.tierMarkerActive >= t,
       j = !g && u && h;
@@ -170,7 +170,7 @@ class C extends(r = Chunk647438.Component) {
               "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
                 return Object.getOwnPropertyDescriptor(n, e).enumerable
               }))), r.forEach(function(t) {
-                x(e, t, n[t])
+                b(e, t, n[t])
               })
             }
             return e
@@ -183,7 +183,7 @@ class C extends(r = Chunk647438.Component) {
             children: j && (0, i.jsx)(m.dz2, {
               size: "md",
               color: "currentColor",
-              className: b.currentTierIcon
+              className: x.currentTierIcon
             })
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
             var n = Object.keys(e);
@@ -228,7 +228,7 @@ class C extends(r = Chunk647438.Component) {
     return (0, i.jsxs)("g", {
       mask: "url(#".concat(this.tierMarkerMaskId, ")"),
       children: [(0, i.jsx)("rect", {
-        className: b.background,
+        className: x.background,
         height: e,
         fill: "currentColor"
       }), (0, i.jsx)(m.AMe, {
@@ -243,7 +243,7 @@ class C extends(r = Chunk647438.Component) {
         onChange: this.handleForegroundFrame,
         onRest: r ? true : this.handleFinishedInitialAnimation,
         children: e => (0, i.jsx)(o.animated.rect, {
-          className: b.foreground,
+          className: x.foreground,
           height: e.height.interpolate(e => Math.max(0, e)),
           onMouseEnter: this.handleForegroundMouseEnter,
           onMouseLeave: this.handleForegroundMouseLeave,
@@ -278,27 +278,27 @@ class C extends(r = Chunk647438.Component) {
     })
   }
   constructor(...e) {
-    super(...e), x(this, "state", {
+    super(...e), b(this, "state", {
       showForegroundTooltip: false,
       foregroundTooltipY: 0,
       tierMarkerActive: 0,
       finishedInitialAnimation: false
-    }), x(this, "foregroundTooltipElementRef", l.createRef()), x(this, "tierMarkerMaskId", (0, c.Z)()), x(this, "handleForegroundMouseEnter", e => {
+    }), b(this, "foregroundTooltipElementRef", l.createRef()), b(this, "tierMarkerMaskId", (0, c.Z)()), b(this, "handleForegroundMouseEnter", e => {
       this.setState({
         showForegroundTooltip: true
       }), this.handleForegroundMouseMove(e)
-    }), x(this, "handleForegroundMouseMove", e => {
+    }), b(this, "handleForegroundMouseMove", e => {
       if (!(0, d.kK)(e.target)) return;
       let t = e.target.getBoundingClientRect(),
         n = e.clientY - t.top;
       n !== this.state.foregroundTooltipY && this.setState({
         foregroundTooltipY: n
       })
-    }), x(this, "handleForegroundMouseLeave", () => {
+    }), b(this, "handleForegroundMouseLeave", () => {
       this.setState({
         showForegroundTooltip: false
       })
-    }), x(this, "handleForegroundFrame", e => {
+    }), b(this, "handleForegroundFrame", e => {
       let {
         height: t
       } = e, {
@@ -318,14 +318,14 @@ class C extends(r = Chunk647438.Component) {
           return
         }
       }
-    }), x(this, "handleFinishedInitialAnimation", () => {
+    }), b(this, "handleFinishedInitialAnimation", () => {
       this.setState({
         finishedInitialAnimation: true
       })
     })
   }
 }
-x(C, "defaultProps", {
+b(C, "defaultProps", {
   initialAnimationDelay: 0
 });
 let N = C

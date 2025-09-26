@@ -2,7 +2,7 @@
 /** chunk id: 813922, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => x
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -49,8 +49,8 @@ function h(e, t) {
   }), e
 }
 
-function b(e) {
-  var t, n, b, x, j, v;
+function x(e) {
+  var t, n, x, b, j, v;
   let {
     rule: _,
     onChangeRule: O
@@ -79,10 +79,10 @@ function b(e) {
       }), (0, r.jsx)(a.Z, {
         rule: _,
         onChangeRule: O,
-        collapsed: (null == _ || null == (n = _.triggerMetadata) ? true : n.regexPatterns) == null || (null == _ || null == (b = _.triggerMetadata) ? true : b.regexPatterns.length) === 0
+        collapsed: (null == _ || null == (n = _.triggerMetadata) ? true : n.regexPatterns) == null || (null == _ || null == (x = _.triggerMetadata) ? true : x.regexPatterns.length) === 0
       }), (0, r.jsx)(l.Z, {
         onChange: C,
-        initialValue: null == (x = _.triggerMetadata) ? true : x.allowList,
+        initialValue: null == (b = _.triggerMetadata) ? true : b.allowList,
         maxWordCount: m.n4,
         collapsed: (null == (j = _.triggerMetadata) ? true : j.allowList) == null || (null == (v = _.triggerMetadata) ? true : v.allowList.length) === 0
       })]

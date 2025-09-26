@@ -39,7 +39,7 @@ function w(e) {
     hasValidApplication: n
   } = e, {
     listingsLoaded: w
-  } = (0, y.eD)(t), R = (0, s.e7)([v.Z], () => v.Z.getGuild(t)), D = (0, s.e7)([_.default], () => _.default.getCurrentUser()), Z = null != R && (0, x.eM)(R, D), {
+  } = (0, y.eD)(t), R = (0, s.e7)([v.Z], () => v.Z.getGuild(t)), D = (0, s.e7)([_.default], () => _.default.getCurrentUser()), Z = null != R && (0, b.eM)(R, D), {
     loading: A
   } = (0, c.H)(t), [L, k] = i.useState(n ? "manage_listings" : "payment");
   (0, m.P)(R);
@@ -55,7 +55,7 @@ function w(e) {
       roles: t,
       initialTab: "guild_products",
       returnToSection: I.pNK.GUILD_PRODUCTS
-    }), (0, b.uL)(I.Z5c.CHANNEL(R.id, S.oC.GUILD_SHOP))
+    }), (0, x.uL)(I.Z5c.CHANNEL(R.id, S.oC.GUILD_SHOP))
   }, [R]);
   if (!w || A) return (0, r.jsx)(o.$jN, {});
   if (null == R) return null;

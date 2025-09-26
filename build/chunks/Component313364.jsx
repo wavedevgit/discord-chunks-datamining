@@ -37,11 +37,11 @@ var Chunk951288 = require("./951288.js"),
 function R(e) {
   let {
     guildId: t
-  } = e, n = (0, a.e7)([b.Z], () => b.Z.getGuild(t)), {
+  } = e, n = (0, a.e7)([x.Z], () => x.Z.getGuild(t)), {
     analyticsLocations: l
   } = (0, d.ZP)(c.Z.GUILD_SETTINGS_MEMBERS_PAGE), R = (0, u.m)(t), D = (0, a.e7)([h.ZP], () => h.ZP.getGuildSidebarState(t), [t]), Z = i.useCallback(() => {
     p.Z.closeGuildSidebar(t)
-  }, [t]), A = false == !!(null == n ? true : n.features.has(S.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), L = (0, a.e7)([x.Z], () => x.Z.getEstimatedMemberSearchCountByGuildId(t), [t]), k = i.useCallback(e => {
+  }, [t]), A = false == !!(null == n ? true : n.features.has(S.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), L = (0, a.e7)([b.Z], () => b.Z.getEstimatedMemberSearchCountByGuildId(t), [t]), k = i.useCallback(e => {
     null != e && (0, f.openUserProfileModal)({
       userId: e.userId,
       guildId: e.guildId,

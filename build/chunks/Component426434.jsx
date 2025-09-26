@@ -2,7 +2,7 @@
 /** chunk id: 426434, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => x
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -20,16 +20,16 @@ var Chunk392711 = require("./392711.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk824804 = require("./824804.js");
 
-function b(e) {
+function x(e) {
   let t, {
       guild: n
     } = e,
-    b = n.mfaLevel,
-    x = (0, l.e7)([d.Z], () => null != n && d.Z.can(p.Plq.MANAGE_GUILD, n), [n]),
+    x = n.mfaLevel,
+    b = (0, l.e7)([d.Z], () => null != n && d.Z.can(p.Plq.MANAGE_GUILD, n), [n]),
     j = (0, l.e7)([u.default], () => u.default.getCurrentUser()),
     v = (0, c.eM)(n, j),
     _ = null == j ? true : j.mfaEnabled,
-    O = b === p.BpS.ELEVATED,
+    O = x === p.BpS.ELEVATED,
     y = v && _,
     C = (0, i.throttle)(async e => {
       y && await m.Z.updateMFALevel({
@@ -38,7 +38,7 @@ function b(e) {
         isEnabled: !e
       })
     }, 1e3);
-  if (!x) return null;
+  if (!b) return null;
   y || (t = v ? f.intl.format(f.t.nFwNyc, {
     settingsHook: () => (0, o.openUserSettings)(a.n.ACCOUNT_PANEL, {
       section: p.oAB.ACCOUNT

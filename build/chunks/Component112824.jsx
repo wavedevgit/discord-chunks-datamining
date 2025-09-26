@@ -2,7 +2,7 @@
 /** chunk id: 112824, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  R: () => x,
+  R: () => b,
   Z: () => j
 });
 var Chunk951288 = require("./951288.js");
@@ -39,7 +39,7 @@ function h(e) {
   return e
 }
 
-function b(e, t) {
+function x(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -52,15 +52,15 @@ function b(e, t) {
   }), e
 }
 
-function x(e) {
+function b(e) {
   return g.$X.filter(t => (null == e ? true : e.id) !== m._ && u.oz(t, e))
 }
 
 function j(e) {
   let {
     guild: t
-  } = e, i = (0, a.e7)([c.Z], () => c.Z.getEveryoneRole(t)), u = x(t), m = u.length > 0, j = g.$X.some(e => !d.Z.can(e, t, null, {
-    [i.id]: b(h({}, i), {
+  } = e, i = (0, a.e7)([c.Z], () => c.Z.getEveryoneRole(t)), u = b(t), m = u.length > 0, j = g.$X.some(e => !d.Z.can(e, t, null, {
+    [i.id]: x(h({}, i), {
       permissions: s.Od(i.permissions, e)
     })
   })), v = (0, r.jsxs)(r.Fragment, {
@@ -95,7 +95,7 @@ function j(e) {
   });
   return m ? j ? (0, r.jsx)(o.ua7, {
     text: p.intl.string(p.t["E5v/a2"]),
-    children: e => (0, r.jsx)("div", b(h({
+    children: e => (0, r.jsx)("div", x(h({
       className: l()(f.simpleItemWrapper, f.disabled)
     }, e), {
       children: v

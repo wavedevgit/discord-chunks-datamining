@@ -284,7 +284,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                           })]
                         }), (0, Chunk951288.jsx)(Chunk208567.Z, {
                           image: Chunk852860.discoverySplash,
-                          makeURL: e => x.ZP.getGuildDiscoverySplashURL({
+                          makeURL: e => b.ZP.getGuildDiscoverySplashURL({
                             id: d.id,
                             splash: e,
                             size: 512 * (0, p.x_)()

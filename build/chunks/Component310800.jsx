@@ -19,25 +19,25 @@ var Chunk159691 = require("./159691.js"),
   Chunk391181 = require("./391181.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk82917 = require("./82917.js");
-let b = "guild-product-listings-header";
+let x = "guild-product-listings-header";
 
-function x(e) {
+function b(e) {
   let {
     guildId: t,
     handleCreateOrEditProduct: i
   } = e, m = (0, d.ue)(t, {
     publishedOnly: false
   }), {
-    shouldRestrictUpdatingCreatorMonetizationSettings: x
+    shouldRestrictUpdatingCreatorMonetizationSettings: b
   } = (0, a.gX)(t), j = m.length > 0;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.vwX, {
       className: h.productListingsHeader,
-      id: b,
+      id: x,
       children: j ? f.intl.string(f.t.RwuStb) : f.intl.string(f.t.WKMcMT)
     }), j ? (0, r.jsx)("ul", {
       className: h.productListings,
-      "aria-labelledby": b,
+      "aria-labelledby": x,
       children: m.map(e => (0, r.jsx)("li", {
         children: (0, r.jsx)(p.Z, {
           guildId: t,
@@ -88,7 +88,7 @@ function x(e) {
             productId: e.id
           }),
           onReportProduct: () => {},
-          disabled: x
+          disabled: b
         })
       }, e.id))
     }) : (0, r.jsx)(s.Z, {
@@ -115,7 +115,7 @@ function j(e) {
       disabled: n
     }), (0, r.jsx)(l.LZC, {
       size: 24
-    }), (0, r.jsx)(x, {
+    }), (0, r.jsx)(b, {
       guildId: t,
       handleCreateOrEditProduct: s
     })]

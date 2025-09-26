@@ -29,7 +29,7 @@ function g() {
     submitting: p,
     errors: f,
     hasChanges: h
-  } = (0, Chunk442837.cj)([Chunk999382.Z], () => Chunk999382.Z.getProps()), b = Chunk647438.useMemo(() => null != require ? (0, Chunk196961.i)(null == require ? true : require.code) : (0, Chunk203377.LG)(f), [f, require]), x = Chunk647438.useCallback(async () => {
+  } = (0, Chunk442837.cj)([Chunk999382.Z], () => Chunk999382.Z.getProps()), x = Chunk647438.useMemo(() => null != require ? (0, Chunk196961.i)(null == require ? true : require.code) : (0, Chunk203377.LG)(f), [f, require]), b = Chunk647438.useCallback(async () => {
     if (null != g && (exports && await (0, Chunk736617.en)(g.id, module, {
         throwErr: true
       }), h)) {
@@ -47,8 +47,8 @@ function g() {
   }, [g]);
   return (0, Chunk951288.jsx)(Chunk852860.Z, {
     submitting: p,
-    errorMessage: b,
-    onSave: x,
+    errorMessage: x,
+    onSave: b,
     onReset: j
   })
 }

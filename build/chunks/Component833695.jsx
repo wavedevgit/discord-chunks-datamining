@@ -42,30 +42,30 @@ function v(e) {
     children: [(0, r.jsx)(c.Z, {
       revenue: v.metrics.revenue,
       revenueTrend: v.metrics.revenuePctChange,
-      summaryMetricLabel: x.intl.string(x.t.R3PCmZ),
+      summaryMetricLabel: b.intl.string(b.t.R3PCmZ),
       summaryMetricValue: null != (n = v.metrics.paymentsCount) ? n : "-",
       summaryMetricTrend: null != (a = v.metrics.paymentsCountChange) ? a : 0,
       summaryMetricTrendIsPercent: false,
-      children: (0, r.jsx)(b.Z, {
+      children: (0, r.jsx)(x.Z, {
         guildId: f,
         earningsData: v
       })
     }), (0, r.jsx)(l.hjN, {
-      title: x.intl.string(x.t["+5Rmho"]),
+      title: b.intl.string(b.t["+5Rmho"]),
       children: (0, r.jsx)(o.Z, {
         ListingIdLabel: j,
         payoutsByPeriod: v.payoutsByPeriod,
         team: null == (t = v.application) ? true : t.team
       })
     }), (0, r.jsx)(l.hjN, {
-      title: x.intl.string(x.t.O8cDAA),
+      title: b.intl.string(b.t.O8cDAA),
       disabled: _,
       children: (0, r.jsx)(m.Z, {
         guildId: f,
         application: v.application
       })
     }), (0, r.jsx)(l.hjN, {
-      title: x.intl.string(x.t["0n7R2d"]),
+      title: b.intl.string(b.t["0n7R2d"]),
       children: (0, r.jsx)(g.Z, {
         guildId: f,
         allPeriods: v.payoutsByPeriod

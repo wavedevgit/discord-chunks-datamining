@@ -132,7 +132,7 @@ function A(e) {
         });
         else if (Z === y.PG.HOME_SETTINGS) {
           let e = j.Z.getSettings();
-          await (0, x.oo)(t.id, e)
+          await (0, b.oo)(t.id, e)
         }
       } catch (e) {
         returnfalse
@@ -143,13 +143,13 @@ function A(e) {
         step: y.PG[Z],
         back: false,
         skip: !L
-      })), (0, b.Nb)((0, y.lg)(Z)), await q() && (0, b.IG)(f, Z)
+      })), (0, x.Nb)((0, y.lg)(Z)), await q() && (0, x.IG)(f, Z)
     }, Q = async () => {
       g.default.track(T.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, D(R({}, (0, m.hH)(f)), {
         step: y.PG[Z],
         back: true,
         skip: false
-      })), await q() && (0, b.Wy)(f, Z)
+      })), await q() && (0, x.Wy)(f, Z)
     }, J = null;
   M && (Z === y.PG.SAFETY_CHECK ? J = (0, r.jsx)(N.j7, {}) : Z === y.PG.DEFAULT_CHANNELS ? J = (0, r.jsx)(N.Io, {}) : Z === y.PG.CUSTOMIZATION_QUESTIONS ? J = (0, r.jsx)(N.cZ, {}) : Z === y.PG.HOME_SETTINGS && (J = (0, r.jsx)(N.g6, {})));
   let $ = (0, r.jsx)("div", {

@@ -24,8 +24,8 @@ let g = function(e) {
     isDropHovered: p,
     onDrop: f,
     onEdit: h,
-    onRemove: b,
-    canRemove: x,
+    onRemove: x,
+    canRemove: b,
     title: j,
     actionsLocation: v,
     fieldStyle: _
@@ -37,9 +37,9 @@ let g = function(e) {
     isDropHovered: p,
     onDrop: f,
     onEdit: h,
-    onRemove: b,
+    onRemove: x,
     title: j,
-    canRemove: x,
+    canRemove: b,
     actionsLocation: v,
     fieldStyle: _,
     children: [(0, r.jsx)(c.EK, {

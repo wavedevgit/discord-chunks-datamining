@@ -2,9 +2,9 @@
 /** chunk id: 974513, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  O4: () => b,
+  O4: () => x,
   OA: () => h,
-  Wu: () => x
+  Wu: () => b
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -55,7 +55,7 @@ function h(e, t) {
   return [(0, l.Wu)([u.Z], () => (0, c.kl)(e, t, u.Z.editedOnboardingPrompts, c.V7)), n]
 }
 
-function b(e) {
+function x(e) {
   let t = (0, l.e7)([o.Z], () => o.Z.isAdvancedMode(e)),
     [n, r] = function(e) {
       let t = (0, l.Wu)([o.Z], () => (0, c.kl)(e, o.Z.getDefaultChannelIds(e), o.Z.getOnboardingPrompts(e)));
@@ -64,7 +64,7 @@ function b(e) {
   return !!t && r.length >= m.md && n.length >= m.X
 }
 
-function x(e) {
+function b(e) {
   let {
     guildId: t,
     className: n

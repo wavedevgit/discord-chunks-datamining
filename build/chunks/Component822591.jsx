@@ -101,17 +101,17 @@ let D = "dismissedCommunityFeaturesUpsell",
       discoveryEnabled: t,
       onboardingEnabled: n,
       guild: l
-    } = e, [s, a] = i.useState(true === d.K.get(D)), g = (0, o.e7)([x.Z], () => {
+    } = e, [s, a] = i.useState(true === d.K.get(D)), g = (0, o.e7)([b.Z], () => {
       var e;
-      return null != (e = x.Z.getMemberCount(l.id)) ? e : 0
-    }), [f, b] = i.useState(false);
+      return null != (e = b.Z.getMemberCount(l.id)) ? e : 0
+    }), [f, x] = i.useState(false);
     (0, p.ZP)(() => {
       c.tn.get({
         url: I.ANM.GUILD_ADMIN_SERVER_ELIGIBILITY(l.id),
         rejectWithError: true
       }).then(e => {
-        b(e.body.eligible_for_admin_server)
-      }).catch(() => b(false))
+        x(e.body.eligible_for_admin_server)
+      }).catch(() => x(false))
     });
     let v = (0, o.e7)([j.Z], () => j.Z.getGuild("942897714956472401")),
       _ = l.features.has(I.oNc.COMMUNITY) && g >= 1e3 && f && null == v;
@@ -242,7 +242,7 @@ let D = "dismissedCommunityFeaturesUpsell",
           description: e
         })
       },
-      x = () => {
+      b = () => {
         module.features.has(Chunk981631.oNc.DISCOVERABLE) && module.features.has(Chunk981631.oNc.PARTNERED) ? (0, Chunk481060.h7j)(e => (0, r.jsx)(m.ConfirmModal, R(w({}, e), {
           header: S.intl.string(S.t.iBnVHR),
           confirmText: S.intl.string(S.t["cY+Ooa"]),
@@ -425,7 +425,7 @@ let D = "dismissedCommunityFeaturesUpsell",
             variant: "critical-primary",
             size: "sm",
             text: S.intl.string(S.t.c1BmbG),
-            onClick: x,
+            onClick: b,
             disabled: !n
           }, e))
         })]

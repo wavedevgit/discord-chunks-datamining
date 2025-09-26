@@ -60,7 +60,7 @@ function C(e) {
   let {
     guild: t,
     channel: i
-  } = e, l = (0, b.Mf)(i.id);
+  } = e, l = (0, x.Mf)(i.id);
   return "null" === i.id ? (0, r.jsx)("div", {
     className: s()(_.categoryRow, _.uncategorized),
     children: (0, r.jsx)(c.Text, {
@@ -132,7 +132,7 @@ let N = Chunk647438.memo(function() {
       isFirstChannel: f,
       isLastChannel: C,
       tooltipDirection: I = "right"
-    } = e, S = (0, b.Mf)(t.id, i.id), T = (0, b.t4)(t.id, i.id), P = (0, b.EH)(t.id, i.id), w = (0, b.lL)(l.id, i.id), R = null != (0, x.Z)(l).find(e => e.id === t.id), D = (0, g.mn)(t.id), Z = e => {
+    } = e, S = (0, x.Mf)(t.id, i.id), T = (0, x.t4)(t.id, i.id), P = (0, x.EH)(t.id, i.id), w = (0, x.lL)(l.id, i.id), R = null != (0, b.Z)(l).find(e => e.id === t.id), D = (0, g.mn)(t.id), Z = e => {
       if (!T) return e.stopPropagation(), (0, m.s)(l.id, t.id) ? (0, h.pt)(t.id) : (0, c.ZDy)(async () => {
         let {
           default: e

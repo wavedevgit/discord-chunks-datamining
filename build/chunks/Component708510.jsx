@@ -45,11 +45,11 @@ function E(e) {
         rules: t.termRules
       });
     case O.A.APPLY:
-      return (0, r.jsx)(b.r, {
+      return (0, r.jsx)(x.r, {
         pendingFields: t.pendingVerificationFields
       });
     case O.A.DISCOVERABLE:
-      return (0, r.jsx)(x.c, {
+      return (0, r.jsx)(b.c, {
         fetchDiscoveryData: l,
         settingsView: t.settingsView,
         requireTerms: t.requireTerms,

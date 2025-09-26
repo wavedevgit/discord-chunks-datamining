@@ -83,7 +83,7 @@ function S(e) {
       forceTrack: true
     })
   }, [t]);
-  let n = (0, b.vc)(o()(O.zQD), "LL"),
+  let n = (0, x.vc)(o()(O.zQD), "LL"),
     l = t.features.has(O.oNc.PIN_PERMISSION_MIGRATION_COMPLETE) ? (0, r.jsx)(d.Text, {
       variant: "text-sm/normal",
       children: N.intl.format(N.t.Vg2oTE, {
@@ -142,7 +142,7 @@ function T(e) {
       color: "header-secondary",
       variant: "text-sm/normal",
       children: N.intl.format(N.t.xkC3YW, {
-        articleURL: x.Z.getArticleURL(O.BhN.PERMISSIONS_TUTORIAL)
+        articleURL: b.Z.getArticleURL(O.BhN.PERMISSIONS_TUTORIAL)
       })
     }), (0, r.jsx)("div", {
       className: E.rolesTable,

@@ -80,7 +80,7 @@ function q(e) {
     selectedStyle: i,
     disabled: l,
     shouldShowUpsell: a
-  } = e, o = (0, P.F)(U.intl.string(U.t.Mi9KbW)), d = (0, f.ZP)(), h = (0, v.oC)(n, t), x = {
+  } = e, o = (0, P.F)(U.intl.string(U.t.Mi9KbW)), d = (0, f.ZP)(), h = (0, v.oC)(n, t), b = {
     dark: {
       src: z,
       name: t.name
@@ -137,7 +137,7 @@ function q(e) {
                 },
                 message: o,
                 preview: true,
-                roleIcon: null != h ? h : (0, m.ap)(d) ? x.light : x.dark,
+                roleIcon: null != h ? h : (0, m.ap)(d) ? b.light : b.dark,
                 isGroupStart: true,
                 disableInteraction: true,
                 previewGuildId: n
@@ -166,7 +166,7 @@ function q(e) {
         })]
       }), (0, r.jsx)(g.zxk, {
         onClick: function() {
-          (0, C.Z)(n, b.Z.GUILD_POWERUPS_GUILD_SETTINGS_ROLE_EDIT), (0, p.xf)()
+          (0, C.Z)(n, x.Z.GUILD_POWERUPS_GUILD_SETTINGS_ROLE_EDIT), (0, p.xf)()
         },
         variant: "expressive",
         icon: g.$Eu,
@@ -336,9 +336,9 @@ function ee(e) {
     setSelectedSection: l
   } = e, a = (0, y.yH)(t.id, n), o = (0, d.e7)([T.Z], () => T.Z.getRoleStyleData(n.id)), c = !a, u = null != o && a ? o.currentStyle : T.g.SOLID, m = (0, E.fI)(n), p = i || m, f = (0, d.e7)([I.Z], () => I.Z.canImpersonateRole(t, n)), {
     headerHeight: h,
-    headerRef: b
+    headerRef: x
   } = (0, w.Z)(0), {
-    scrolledToTop: x,
+    scrolledToTop: b,
     handleScroll: j
   } = (0, D.V)();
   return (0, r.jsx)(g.yWw, {
@@ -351,9 +351,9 @@ function ee(e) {
       className: H.contentWidth,
       children: [(0, r.jsx)("div", {
         className: s()(H.header, H.stickyHeader, {
-          [H.stickyHeaderElevated]: !x
+          [H.stickyHeaderElevated]: !b
         }),
-        ref: b,
+        ref: x,
         children: (0, r.jsx)(D.Z, {
           guild: t,
           role: n,

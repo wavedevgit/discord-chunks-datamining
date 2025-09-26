@@ -83,9 +83,9 @@ let C = [{
       body: s
     } = e;
     return (0, r.jsxs)("div", {
-      className: b.featureCard,
+      className: x.featureCard,
       children: [(0, r.jsx)("div", {
-        className: b.featureIcon,
+        className: x.featureIcon,
         children: (0, r.jsx)(t, {
           color: null != n ? n : "currentColor",
           width: i,
@@ -94,7 +94,7 @@ let C = [{
         })
       }), (0, r.jsx)(c.X6q, {
         variant: "heading-md/semibold",
-        className: b.featureHeader,
+        className: x.featureHeader,
         children: l
       }), (0, r.jsx)(c.Text, {
         color: "header-secondary",
@@ -116,12 +116,12 @@ let C = [{
       top: o[1] + i[1]
     };
     return (0, r.jsxs)("div", {
-      className: s()(b.guildDetails, {
-        [b.faded]: l
+      className: s()(x.guildDetails, {
+        [x.faded]: l
       }),
       style: d,
       children: [(0, r.jsx)("div", {
-        className: b.guildIcon,
+        className: x.guildIcon,
         children: (0, r.jsx)("img", {
           alt: "",
           src: t,
@@ -147,9 +147,9 @@ let C = [{
       u.Z.open()
     };
     return (0, r.jsxs)("div", {
-      className: b.container,
+      className: x.container,
       children: [(0, r.jsxs)("div", {
-        className: b.banner,
+        className: x.banner,
         ref: e => O(e),
         children: [C.map(e => {
           var t, i;
@@ -167,13 +167,13 @@ let C = [{
           }), t), e.name)
         }), (0, r.jsx)("img", {
           alt: "",
-          src: x,
-          className: b.image,
+          src: b,
+          className: x.image,
           width: 256
         }), (0, r.jsx)("img", {
           alt: "",
           src: j,
-          className: b.sparkles
+          className: x.sparkles
         })]
       }), (0, r.jsx)(c.X6q, {
         variant: "heading-xl/semibold",
@@ -181,7 +181,7 @@ let C = [{
       }), (0, r.jsx)(c.Text, {
         color: "header-secondary",
         variant: "text-md/normal",
-        className: b.body,
+        className: x.body,
         children: h.intl.format(h.t["52EgsL"], {
           helpdeskArticle: g.Z.getArticleURL(p.BhN.FRIEND_COMMUNITY_DISCOVERABLE_GUILD_TYPES)
         })
@@ -190,7 +190,7 @@ let C = [{
         "aria-label": I ? true : h.intl.string(h.t["pjG+T0"]),
         children: e => (0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
-          className: b.button,
+          className: x.button,
           children: (0, r.jsx)(c.zxk, y({
             variant: "primary",
             text: h.intl.string(h.t.LhlgY2),
@@ -199,27 +199,27 @@ let C = [{
           }, e))
         })
       }), (0, r.jsx)("hr", {
-        className: b.separator
+        className: x.separator
       }), (0, r.jsx)(c.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
         children: h.intl.string(h.t.OzLWLC)
       }), (0, r.jsx)(c.Text, {
         color: "header-secondary",
-        className: b.body,
+        className: x.body,
         variant: "text-sm/normal",
         children: h.intl.format(h.t.rjhrqK, {
           helpdeskArticle: g.Z.getArticleURL(p.BhN.GUILD_COMMUNITY_FEATURE)
         })
       }), (0, r.jsx)("div", {
-        className: b.features,
+        className: x.features,
         children: [{
           icon: c.IeX,
           color: o.Z.unsafe_rawColors.GREEN_360.css,
           header: h.intl.string(h.t.oVQF29),
           body: h.intl.format(h.t.A6G7am, {
             featureHook: (e, t) => (0, r.jsx)("strong", {
-              className: b.featuredText,
+              className: x.featuredText,
               children: e
             }, t)
           })
@@ -234,11 +234,11 @@ let C = [{
               children: e => (0, r.jsx)(c.d3s, y({
                 size: "xs",
                 color: "currentColor",
-                className: b.infoIcon
+                className: x.infoIcon
               }, e))
             }),
             featureHook: (e, t) => (0, r.jsx)("strong", {
-              className: b.featuredText,
+              className: x.featuredText,
               children: e
             }, t)
           })

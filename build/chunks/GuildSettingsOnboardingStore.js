@@ -17,7 +17,7 @@ var r, i, Chunk442837 = require("./442837.js"),
   Chunk84658 = require("./84658.js"),
   Chunk142961 = require("./142961.js"),
   Chunk981631 = require("./981631.js");
-let x = new Set,
+let b = new Set,
   j = Chunk84658.PG.LANDING,
   v = null;
 
@@ -26,14 +26,14 @@ function _(e) {
     subsection: t
   } = e;
   if (c.Z.getGuildId() === v) returnfalse;
-  j = t === b.KsC.SERVER_GUIDE ? f.PG.HOME_SETTINGS : f.PG.LANDING, v = c.Z.getGuildId()
+  j = t === x.KsC.SERVER_GUIDE ? f.PG.HOME_SETTINGS : f.PG.LANDING, v = c.Z.getGuildId()
 }
 class O extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk45966.Z, Chunk889369.Z, Chunk208665.Z, Chunk969632.Z, Chunk392885.Z), this.syncWith([Chunk45966.Z, Chunk889369.Z, Chunk208665.Z, Chunk969632.Z, Chunk392885.Z], () => true)
   }
   isEducationUpsellDismissed(e) {
-    return x.has(e)
+    return b.has(e)
   }
   getCurrentPage() {
     return j
@@ -80,6 +80,6 @@ let y = new O(Chunk570140.Z, {
     let {
       upsellType: t
     } = e;
-    x.add(t)
+    b.add(t)
   }
 })

@@ -91,7 +91,7 @@ function Z(e) {
       [R.upsellOnTop]: D
     }),
     children: [!_ && l !== y.PG.LANDING && (0, r.jsx)(A, {
-      setOnboardingStep: x.$K,
+      setOnboardingStep: b.$K,
       page: l,
       homeSettingsEnabled: true
     }), _ && l !== y.PG.LANDING && (0, r.jsx)("div", {
@@ -106,7 +106,7 @@ function Z(e) {
               intensity: u.$x
             }), p.S.dispatch(P.CkL.EMPHASIZE_NOTICE);
             return
-          }(0, v.NB)(), (0, b.BG)(), (0, j.bj)(), (0, x.$K)(y.PG.LANDING)
+          }(0, v.NB)(), (0, x.BG)(), (0, j.bj)(), (0, b.$K)(y.PG.LANDING)
         },
         children: [(0, r.jsx)(g.Z, {
           className: R.arrow,

@@ -135,7 +135,7 @@ function C(e) {
         children: [l, (0, r.jsx)(r.Fragment, {
           children: n.map(e => {
             var t;
-            return (0, r.jsx)(x.Z, {
+            return (0, r.jsx)(b.Z, {
               guildId: P,
               triggerType: e,
               rules: null != (t = D[e]) ? t : [],
@@ -148,7 +148,7 @@ function C(e) {
       guild: S,
       withDivider: false,
       className: y.explicitContentFilterSection
-    }), (0, r.jsx)(b.Z, {
+    }), (0, r.jsx)(x.Z, {
       guildId: P,
       existingRules: A
     }), w && (0, r.jsx)("div", {

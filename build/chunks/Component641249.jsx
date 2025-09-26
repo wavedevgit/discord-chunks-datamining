@@ -20,7 +20,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk605041 = require("./605041.js");
 
-function b(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,7 +39,7 @@ function b(e) {
   return e
 }
 
-function x(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -89,7 +89,7 @@ function j() {
           let {
             default: t
           } = await n.e("59128").then(n.bind(n, 28564));
-          return n => (0, r.jsx)(t, x(b({}, n), {
+          return n => (0, r.jsx)(t, b(x({}, n), {
             onConfirmDelete: () => {
               I(e.id), n.onClose()
             }
@@ -104,7 +104,7 @@ function j() {
           let {
             EmojiAddModal: e
           } = await require.e("21112").then(require.bind(require, 301160));
-          return n => (0, r.jsx)(e, x(b({}, n), {
+          return n => (0, r.jsx)(e, b(x({}, n), {
             guildId: t,
             initialTierEmojiIds: j,
             onSubmit: E,

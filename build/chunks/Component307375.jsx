@@ -22,7 +22,7 @@ function f(e) {
     activeType: t,
     onTypePicked: n,
     guild: l
-  } = e, f = l.features.has(m.oNc.COMMUNITY), h = (0, a.e7)([c.Z], () => c.Z.can(m.Plq.ADMINISTRATOR, l)), b = i.useMemo(() => {
+  } = e, f = l.features.has(m.oNc.COMMUNITY), h = (0, a.e7)([c.Z], () => c.Z.can(m.Plq.ADMINISTRATOR, l)), x = i.useMemo(() => {
     let e = t === u.A.DISCOVERABLE && !h,
       n = f && (t === u.A.DISCOVERABLE || h);
     return [{
@@ -65,7 +65,7 @@ function f(e) {
       onItemSelect: n,
       orientation: "horizontal",
       className: p.joinOptions,
-      children: b.map(e => {
+      children: x.map(e => {
         let n = e.id === t;
         return (0, r.jsx)(o.njP.Item, {
           id: e.id,

@@ -124,7 +124,7 @@ let w = e => {
       return null != (e = _.Z.getStickersByGuildId(t.id)) ? e : []
     }, [t]), {
       analyticsLocations: j
-    } = (0, m.ZP)(), Z = (0, b.Z)(t.id), A = t.features.has(E.oNc.MORE_STICKERS) ? E.Eu4.TIER_3 : t.premiumTier, L = t.features.has(E.oNc.MORE_STICKERS) ? E.oCV[E.Eu4.TIER_3] : Z, k = (0, x.Z)(t.id);
+    } = (0, m.ZP)(), Z = (0, x.Z)(t.id), A = t.features.has(E.oNc.MORE_STICKERS) ? E.Eu4.TIER_3 : t.premiumTier, L = t.features.has(E.oNc.MORE_STICKERS) ? E.oCV[E.Eu4.TIER_3] : Z, k = (0, b.Z)(t.id);
     if (i.useEffect(() => {
         window.dispatchEvent(new Event("resize"))
       }, [u]), l) return (0, r.jsx)(c.$jN, {});
@@ -167,8 +167,8 @@ let w = e => {
         var i;
         let l, a, {
             isAnimatedTo: m,
-            onSetRef: b,
-            tier: x,
+            onSetRef: x,
+            tier: b,
             tiers: _,
             tierIndex: O
           } = e,
@@ -178,13 +178,13 @@ let w = e => {
           } = (0, f.Gw)(t),
           G = _[O - 1],
           M = null != G ? (0, v.A3)(G.tier) : 0,
-          U = (0, v.A3)(x.tier, t),
-          B = (0, v.ig)(x.tier),
+          U = (0, v.A3)(b.tier, t),
+          B = (0, v.ig)(b.tier),
           F = u.slice(M, U),
           H = F.length > 0,
-          z = A < x.tier,
+          z = A < b.tier,
           V = (i = u.length, i < (0, v.A3)(E.Eu4.NONE) ? E.Eu4.NONE : i < (0, v.A3)(E.Eu4.TIER_1) ? E.Eu4.TIER_1 : i < (0, v.A3)(E.Eu4.TIER_2) ? E.Eu4.TIER_2 : i < (0, v.A3)(E.Eu4.TIER_3) || null != t && t.features.has(E.oNc.MORE_STICKERS) && i < d.D.MAX_STICKER_SLOTS ? E.Eu4.TIER_3 : E.Eu4.NONE),
-          W = C && !z && V === x.tier && U !== F.length,
+          W = C && !z && V === b.tier && U !== F.length,
           K = W || F.length > 0,
           Y = U - M,
           q = n(872732),
@@ -192,12 +192,12 @@ let w = e => {
           Q = W ? Math.min(5 - (F.length + 0) % 5, X) : 0,
           J = [];
         for (let e = 0; e < Q; e++) J.push((0, r.jsx)(R, {}, "placeholder-".concat(e)));
-        let $ = t.premiumTier < x.tier && Z >= E.oCV[x.tier],
+        let $ = t.premiumTier < b.tier && Z >= E.oCV[b.tier],
           ee = S.intl.string(S.t.dtFw5e),
           et = () => {
             var e, n;
             let r;
-            return e = Math.max(1, E.oCV[x.tier] - Z), n = x.tier, r = null, void(n === E.Eu4.TIER_1 ? r = E.Qqv.TIER_1 : n === E.Eu4.TIER_2 ? r = E.Qqv.TIER_2 : n === E.Eu4.TIER_3 && (r = E.Qqv.TIER_3), (0, p.Z)({
+            return e = Math.max(1, E.oCV[b.tier] - Z), n = b.tier, r = null, void(n === E.Eu4.TIER_1 ? r = E.Qqv.TIER_1 : n === E.Eu4.TIER_2 ? r = E.Qqv.TIER_2 : n === E.Eu4.TIER_3 && (r = E.Qqv.TIER_3), (0, p.Z)({
               analyticsLocations: j,
               analyticsLocation: {
                 page: E.ZY5.GUILD_SETTINGS,
@@ -211,9 +211,9 @@ let w = e => {
           },
           en = false;
         $ && (k ? (et = () => {
-          let e = I.Cp[x.tier];
+          let e = I.Cp[b.tier];
           null != e && (0, h.H6)(t.id, e)
-        }, ee = S.intl.string(S.t.g7lkra), t.premiumTier + 1 !== x.tier && (en = true, l = S.intl.string(S.t.mTMkY2))) : (en = true, l = S.intl.string(S.t.hwPEJS)));
+        }, ee = S.intl.string(S.t.g7lkra), t.premiumTier + 1 !== b.tier && (en = true, l = S.intl.string(S.t.mTMkY2))) : (en = true, l = S.intl.string(S.t.hwPEJS)));
         let er = V === O + 1 && V > A,
           ei = W || er || O > A;
         return er ? a = (0, r.jsx)(g.Z, {
@@ -226,14 +226,14 @@ let w = e => {
             page: E.ZY5.GUILD_SETTINGS,
             section: E.jXE.GUILD_SETTINGS_STICKERS,
             object: E.qAy.BOOST_UPSELL_NEXT_LEVEL_HEADER,
-            objectType: (0, v.ge)(x.tier)
+            objectType: (0, v.ge)(b.tier)
           }
         }) : W && (a = (0, r.jsx)(D, {
           guild: t
         })), (0, r.jsxs)(N.Z, {
           subscriptionCount: L,
-          tier: x,
-          onSetRef: b,
+          tier: b,
+          onSetRef: x,
           isAnimatedTo: m,
           hasBottomMargin: O !== _.length - 1,
           withCardBody: !K,
@@ -264,7 +264,7 @@ let w = e => {
               className: T.unlockTierCtaHeading,
               variant: "text-md/normal",
               color: "header-secondary",
-              children: x.tier === E.Eu4.TIER_1 ? S.intl.formatToPlainString(S.t.psMYu7, {
+              children: b.tier === E.Eu4.TIER_1 ? S.intl.formatToPlainString(S.t.psMYu7, {
                 numAdditional: Y
               }) : S.intl.formatToPlainString(S.t.bLykER, {
                 numAdditional: Y,
@@ -295,7 +295,7 @@ let w = e => {
               }
             })]
           })]
-        }, x.tier)
+        }, b.tier)
       }
     })
   }

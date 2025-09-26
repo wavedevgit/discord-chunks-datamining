@@ -58,11 +58,11 @@ function h(e) {
     return i
   }(e, ["enabled", "imageClassName", "iconWrapperClassName"]);
   let h = (0, o.ZP)(),
-    b = (0, s.wj)(h) ? p : f,
-    x = {
+    x = (0, s.wj)(h) ? p : f,
+    b = {
       height: 18,
       width: 18,
-      color: (0, c.Lq)(b)
+      color: (0, c.Lq)(x)
     };
   return (0, r.jsx)(d.Z, g({
     className: l()({
@@ -74,9 +74,9 @@ function h(e) {
     }),
     icon: null != u.image && "" !== u.image ? (0, r.jsx)(a.vdY, g({
       size: "custom"
-    }, x)) : (0, r.jsx)(a.FmF, g({
+    }, b)) : (0, r.jsx)(a.FmF, g({
       size: "custom"
-    }, x)),
+    }, b)),
     iconClassName: l()(m.avatarUploadIcon, m.hideDefaultIcon),
     iconWrapperClassName: i,
     showIcon: true,

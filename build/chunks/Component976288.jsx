@@ -129,7 +129,7 @@ function S(e) {
           })
         })]
       })]
-    }), (0, r.jsx)(b.Z, {
+    }), (0, r.jsx)(x.Z, {
       className: E.preview,
       guild: n,
       memberCount: f,
@@ -224,7 +224,7 @@ function P(e) {
       disabled: t,
       tooltipText: t ? N.intl.string(N.t.Xx7XeH) : true
     }
-  }), [n.keywords, n.primaryCategoryId, p]), b = null != s ? s : a, x = i.useMemo(() => n.keywords.map(e => ({
+  }), [n.keywords, n.primaryCategoryId, p]), x = null != s ? s : a, b = i.useMemo(() => n.keywords.map(e => ({
     id: e,
     label: e
   })), [n.keywords]);
@@ -236,18 +236,18 @@ function P(e) {
         label: N.intl.string(N.t["0PJZXl"]),
         description: N.intl.string(N.t.ztiTDA),
         tagsLabel: N.intl.string(N.t["0PJZXl"]),
-        tags: x,
+        tags: b,
         onRemoveTag: g,
         onAddTag: p,
         onAddTagError: m,
         maxTags: y.G7,
         maxTaxLength: y._0,
         placeholder: n.keywords.length < 1 ? N.intl.string(N.t.EL4Lho) : true
-      }), null != b ? (0, r.jsx)(o.Text, {
+      }), null != x ? (0, r.jsx)(o.Text, {
         color: "text-danger",
         variant: "text-sm/normal",
         className: E.error,
-        children: b
+        children: x
       }) : null]
     }), f.length > 0 ? (0, r.jsxs)("div", {
       children: [(0, r.jsx)(o.X6q, {
@@ -294,7 +294,7 @@ function w(e) {
         children: l ? N.intl.string(N.t.XnrNLi) : N.intl.string(N.t.bHbZLC)
       })]
     }), (0, r.jsx)("div", {
-      children: (0, r.jsx)(x.k, {
+      children: (0, r.jsx)(b.k, {
         guild: t,
         discoverableGuild: null
       })

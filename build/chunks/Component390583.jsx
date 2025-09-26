@@ -54,7 +54,7 @@ function f() {
     guildId: t
   } = (0, Chunk727843.N)(), [n, f] = Chunk290348.UE(module), h = Chunk647438.useMemo(() => new Set(require.map(e => e.ref_id)), [require]);
 
-  function b(e, t) {
+  function x(e, t) {
     let {
       channelId: r,
       description: i,
@@ -70,7 +70,7 @@ function f() {
     };
     null != t ? a[t] = o : a.push(o), f(a)
   }
-  let x = (0, Chunk723047.mY)();
+  let b = (0, Chunk723047.mY)();
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsx)(Chunk861345.p, {
       benefits: require,
@@ -79,7 +79,7 @@ function f() {
           guildId: t,
           omitChannelIds: h,
           initialData: n[e],
-          onSave: t => b(t, e),
+          onSave: t => x(t, e),
           onDelete: () => (function(e) {
             let t = [...n];
             t.splice(e, 1), f(t)
@@ -99,10 +99,10 @@ function f() {
         (0, Chunk481060.h7j)(e => (0, r.jsx)(c.x3, p(g({}, e), {
           guildId: t,
           omitChannelIds: h,
-          onSave: e => b(e)
+          onSave: e => x(e)
         })))
       },
-      disabled: x,
+      disabled: b,
       children: Chunk388032.intl.string(Chunk388032.t.PLSCUl)
     })]
   })

@@ -2,7 +2,7 @@
 /** chunk id: 194774, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  h: () => b
+  h: () => x
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,11 +19,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk308212 = require("./308212.js");
 
-function b(e) {
+function x(e) {
   let {
     guild: t,
     canManageGuild: n
-  } = e, b = t.features.has(m.oNc.INVITE_SPLASH), x = n && b, {
+  } = e, x = t.features.has(m.oNc.INVITE_SPLASH), b = n && x, {
     analyticsLocations: j
   } = (0, s.ZP)(), v = i.useCallback(e => {
     d.Z.updateGuild({
@@ -43,14 +43,14 @@ function b(e) {
       id: t.id,
       splash: e
     }) : null,
-    disabled: !x,
+    disabled: !b,
     onChange: v,
     hint: f.intl.string(f.t.uPvxqK),
-    enabled: x,
+    enabled: b,
     maxFileSizeBytes: p.B,
     onFileSizeError: () => (0, a.Z)(p.B)
   });
-  return b ? O : (0, r.jsx)(l.P3F, {
+  return x ? O : (0, r.jsx)(l.P3F, {
     "aria-hidden": true,
     tabIndex: false,
     className: h.upsell,

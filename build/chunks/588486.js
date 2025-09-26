@@ -16,7 +16,7 @@ var Chunk230367 = require("./230367.js"),
     return e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.USER = 1] = "USER", e
   }({}),
   d = function(e) {
-    return e[e.SURFACE_UNSPECIFIED = 0] = "SURFACE_UNSPECIFIED", e[e.API = 1] = "API", e[e.APP = 2] = "APP", e[e.DEVELOPER_PORTAL = 3] = "DEVELOPER_PORTAL", e[e.ADMIN_PANEL = 4] = "ADMIN_PANEL", e
+    return e[e.SURFACE_UNSPECIFIED = 0] = "SURFACE_UNSPECIFIED", e[e.API = 1] = "API", e[e.APP = 2] = "APP", e[e.DEVELOPER_PORTAL = 3] = "DEVELOPER_PORTAL", e[e.ADMIN_PANEL = 4] = "ADMIN_PANEL", e[e.ADS_BUDGET_AB = 5] = "ADS_BUDGET_AB", e
   }({}),
   f = function(e) {
     return e[e.ENABLED = 0] = "ENABLED", e[e.DISABLED = 1] = "DISABLED", e

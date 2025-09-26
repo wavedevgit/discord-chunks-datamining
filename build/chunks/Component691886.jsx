@@ -33,18 +33,18 @@ function v(e) {
     className: l
   } = e;
   return (0, r.jsxs)("div", {
-    className: s()(x.label, l),
+    className: s()(b.label, l),
     children: [t, (0, r.jsxs)("div", {
-      className: x.labelText,
+      className: b.labelText,
       children: [(0, r.jsx)(o.Text, {
         variant: "text-md/normal",
         color: "none",
-        className: x.labelTitle,
+        className: b.labelTitle,
         children: n
       }), null != i && "" !== i ? (0, r.jsx)(o.Text, {
         variant: "text-xs/semibold",
         color: "text-muted",
-        className: x.labelSubtitle,
+        className: b.labelSubtitle,
         children: i
       }) : null]
     })]
@@ -74,7 +74,7 @@ function O(e) {
     o = null != l ? (0, c.F6)(l, p.default, g.Z) : true;
   return (0, r.jsx)(v, {
     icon: null != s && (0, r.jsx)(s, {
-      className: x.labelIcon
+      className: b.labelIcon
     }),
     title: a,
     subtitle: o
@@ -96,9 +96,9 @@ function C(e) {
     value: l,
     initialChannelId: s,
     omitChannelIds: d,
-    "aria-labelledby": x,
+    "aria-labelledby": b,
     onChange: v
-  } = e, _ = b.intl.string(b.t.d7YJMD), O = (0, a.e7)([m.Z], () => m.Z.getCategories(t), [t]), C = (0, f.m7)(null != l ? l : h.lds), N = i.useMemo(() => {
+  } = e, _ = x.intl.string(x.t.d7YJMD), O = (0, a.e7)([m.Z], () => m.Z.getCategories(t), [t]), C = (0, f.m7)(null != l ? l : h.lds), N = i.useMemo(() => {
     let e = [{
         value: null,
         label: _
@@ -118,7 +118,7 @@ function C(e) {
     }), e
   }, [_, l, C, O, d, s]);
   return (0, r.jsx)(o.PhF, {
-    placeholder: b.intl.string(b.t.r2pts7),
+    placeholder: x.intl.string(x.t.r2pts7),
     options: N,
     select: function(e) {
       null == e ? (0, o.ZDy)(async () => {
@@ -167,6 +167,6 @@ function C(e) {
       let [t] = e;
       return y(t)
     },
-    "aria-labelledby": x
+    "aria-labelledby": b
   })
 }

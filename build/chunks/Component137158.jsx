@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk31829 = require("./31829.js");
 
-function b(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,7 +38,7 @@ function b(e) {
   return e
 }
 
-function x(e) {
+function b(e) {
   let {
     type: t
   } = e, n = i.useMemo(() => {
@@ -98,7 +98,7 @@ function j(e) {
         tag: "h3",
         className: h.compactTitle,
         children: t
-      }), (0, r.jsx)(x, {
+      }), (0, r.jsx)(b, {
         type: l.field_type
       })]
     })
@@ -115,7 +115,7 @@ function _(e) {
     fieldStyle: g
   } = e, f = (0, a.debounce)(async (e, t, n) => {
     await d(e, t, n)
-  }), x = i.useRef(null), [, _] = (0, o.c)({
+  }), b = i.useRef(null), [, _] = (0, o.c)({
     type: v,
     item: {
       index: t,
@@ -130,7 +130,7 @@ function _(e) {
       var r;
       let {
         index: i
-      } = e, l = null == (r = x.current) ? true : r.getBoundingClientRect(), s = n.getClientOffset();
+      } = e, l = null == (r = b.current) ? true : r.getBoundingClientRect(), s = n.getClientOffset();
       if (null == l || null == s) return;
       let a = (l.bottom - l.top) / 2,
         o = s.y - l.top;
@@ -140,10 +140,10 @@ function _(e) {
       f(e.field, t, true)
     }
   });
-  return i.useLayoutEffect(() => (_(O(x)), () => {
+  return i.useLayoutEffect(() => (_(O(b)), () => {
     O(null), _(null)
   }), [_, O]), (0, r.jsxs)("div", {
-    ref: x,
+    ref: b,
     "data-dnd-name": "field-".concat(t),
     className: s()(h.dragContainer, {
       [h.dropHovered]: l
@@ -157,7 +157,7 @@ function _(e) {
         className: h.dragIcon,
         color: u.Z.unsafe_rawColors.PRIMARY_400.css
       })
-    }), (0, r.jsx)(j, b({}, e))]
+    }), (0, r.jsx)(j, x({}, e))]
   })
 }
 
@@ -168,7 +168,7 @@ function O(e) {
     }),
     children: [(0, r.jsx)("div", {
       className: h.spacingContainer,
-      children: e.isDragEnabled ? (0, r.jsx)(_, b({}, e)) : (0, r.jsx)(j, b({}, e))
+      children: e.isDragEnabled ? (0, r.jsx)(_, x({}, e)) : (0, r.jsx)(j, x({}, e))
     }), "side" === e.actionsLocation && (0, r.jsxs)("div", {
       className: s()(h.actionButtonsContainer, {
         [h.compact]: e.fieldStyle === p.it.COMPACT,

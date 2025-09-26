@@ -214,7 +214,7 @@ function A(e) {
   let {
     guild: t,
     mfaLevel: n
-  } = e, l = (0, o.e7)([h.Z], () => null != t && h.Z.can(E.Plq.MANAGE_GUILD, t), [t]), s = (0, o.e7)([x.default], () => x.default.getCurrentUser()), {
+  } = e, l = (0, o.e7)([h.Z], () => null != t && h.Z.can(E.Plq.MANAGE_GUILD, t), [t]), s = (0, o.e7)([b.default], () => b.default.getCurrentUser()), {
     isGuildOwnerWithMFA: d,
     showMFAUserTooltip: u
   } = i.useMemo(() => null == s ? {
@@ -223,7 +223,7 @@ function A(e) {
   } : {
     isGuildOwnerWithMFA: (0, f.yn)(t, s),
     showMFAUserTooltip: !s.mfaEnabled && (0, f.eM)(t, s)
-  }, [s, t]), m = n === E.BpS.ELEVATED, b = (0, a.throttle)(async e => {
+  }, [s, t]), m = n === E.BpS.ELEVATED, x = (0, a.throttle)(async e => {
     d && (u || await _.Z.updateMFALevel({
       guildId: t.id,
       level: e ? E.BpS.ELEVATED : E.BpS.NONE,
@@ -237,7 +237,7 @@ function A(e) {
       className: S.setupContainer,
       children: [(0, r.jsx)(c.j7V, {
         value: m,
-        onChange: b,
+        onChange: x,
         className: S.switchItem,
         disabled: !d,
         hideBorder: true,
