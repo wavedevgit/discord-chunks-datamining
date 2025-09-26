@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-/** chunk id: 479498, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 783390, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
   k: () => b
@@ -8,10 +8,10 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
-  Chunk442837 = require("./442837.js"),
-  Chunk607070 = require("./607070.js"),
-  Chunk451478 = require("./451478.js"),
-  Chunk630317 = require("./630317.js");
+  Chunk150677 = require("./150677.js"),
+  Chunk213305 = require("./213305.js"),
+  Chunk402453 = require("./402453.jsx"),
+  Chunk7034 = require("./7034.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -82,12 +82,12 @@ class E extends(r = Chunk647438.PureComponent) {
     } = this.props, [l, {
       default: c
     }] = await Promise.all([module(), Promise.resolve().then(require.t.bind(require, 500923, 23))]);
-    null != this.animationRef && (this.animation = Chunk607070.loadAnimation({
+    null != this.animationRef && (this.animation = Chunk213305.loadAnimation({
       container: this.animationRef,
       renderer: "svg",
       loop: true,
       autoplay: true,
-      animationData: Chunk442837,
+      animationData: Chunk150677,
       rendererSettings: s
     }), this.animation.addEventListener("loopComplete", this.handleLoopComplete), this.animation.addEventListener("complete", this.handleComplete), this.animation.addEventListener("enterFrame", this.handleEnterFrame), this.playScene(exports), (r && !Chunk647438 || Chunk951288 || Chunk120356) && this.animation.pause())
   }
@@ -126,7 +126,7 @@ class E extends(r = Chunk647438.PureComponent) {
   render() {
     return (0, Chunk951288.jsx)("div", {
       ref: this.handleSetRef,
-      className: s()(this.props.className, Chunk630317.wrapper)
+      className: s()(this.props.className, Chunk7034.wrapper)
     })
   }
   constructor(...e) {
@@ -160,15 +160,20 @@ f(E, "defaultProps", {
   pause: false
 });
 let b = e => {
-  var {
-    componentRef: t,
-    ignoreReducedMotion: n = false
-  } = e, r = m(e, ["componentRef", "ignoreReducedMotion"]);
-  let a = (0, l.e7)([u.Z], () => u.Z.isFocused()),
-    o = (0, l.e7)([c.Z], () => c.Z.useReducedMotion);
-  return (0, i.jsx)(E, h(_({}, r), {
-    isWindowFocused: a,
-    useReducedMotion: o && !n,
-    ref: t
+  var t, {
+      componentRef: n,
+      ignoreReducedMotion: r = false
+    } = e,
+    o = m(e, ["componentRef", "ignoreReducedMotion"]);
+  let {
+    isWindowFocused: s
+  } = (0, u.ZF)(), d = (0, l.C)(), {
+    reducedMotion: f
+  } = a.useContext(c.S), p = f.enabled && !r, g = h(_({}, o), {
+    isWindowFocused: null != (t = null == s ? true : s()) ? t : d,
+    useReducedMotion: p
+  });
+  return (0, i.jsx)(E, h(_({}, g), {
+    ref: n
   }))
 }

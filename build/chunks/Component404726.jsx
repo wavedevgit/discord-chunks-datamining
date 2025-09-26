@@ -2,120 +2,110 @@
 /** chunk id: 404726, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  v: () => u
+  v: () => d
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk943239 = require("./943239.js"),
   Chunk995803 = require("./995803.js"),
+  Chunk150677 = require("./150677.js"),
   Chunk213305 = require("./213305.js"),
   Chunk402453 = require("./402453.jsx"),
   Chunk405404 = require("./405404.js");
 
-function u(e) {
+function d(e) {
+  var t, n, a;
   let {
-    buffer: t,
-    autoplay: n = true,
-    className: a,
-    fit: l,
-    alignment: u,
-    style: _,
-    eventTargetRef: p,
-    artboard: h,
-    withReducedMotion: m = "halt",
-    ref: g,
-    artboardProperties: E,
-    dataBinding: b,
-    touchScrollEnabled: y = true,
-    dynamicDataBinding: O,
-    listenOnDocumentBody: v,
-    eventCapture: I
-  } = e, T = i.useContext(s.S), S = d(), [A, C] = i.useState(true), N = i.useRef(null), {
-    rive: R,
-    RiveComponent: P
+    buffer: d,
+    autoplay: _ = true,
+    className: p,
+    fit: h,
+    alignment: m,
+    style: g,
+    eventTargetRef: E,
+    artboard: b,
+    withReducedMotion: y = "halt",
+    ref: O,
+    artboardProperties: v,
+    dataBinding: I,
+    touchScrollEnabled: T = true,
+    dynamicDataBinding: S,
+    listenOnDocumentBody: A,
+    eventCapture: C
+  } = e, N = i.useContext(l.S), R = (0, s.C)(), P = null != (a = null == (t = (n = (0, c.ZF)()).isWindowFocused) ? true : t.call(n)) ? a : R, [w, D] = i.useState(true), x = i.useRef(null), {
+    rive: L,
+    RiveComponent: j
   } = (0, o.useRive)({
-    eventTarget: null == p ? true : p.current,
-    buffer: t,
-    autoplay: n,
-    stateMachines: A,
-    artboard: h,
+    eventTarget: null == E ? true : E.current,
+    buffer: d,
+    autoplay: _,
+    stateMachines: w,
+    artboard: b,
     useOffscreenRenderer: true,
     layout: new o.Layout({
-      fit: null != l ? c.M[l] : o.Fit.Cover,
-      alignment: null != u ? c.Y[u] : o.Alignment.Center
+      fit: null != h ? u.M[h] : o.Fit.Cover,
+      alignment: null != m ? u.Y[m] : o.Alignment.Center
     }),
-    isTouchScrollEnabled: y,
-    listenOnDocumentBody: v,
-    eventCapture: I
+    isTouchScrollEnabled: T,
+    listenOnDocumentBody: A,
+    eventCapture: C
   });
-  i.useImperativeHandle(g, () => ({
-    play: () => null == R ? true : R.play(),
-    pause: () => null == R ? true : R.pause(),
-    stop: () => null == R ? true : R.stop()
-  }), [R]), f({
-    rive: R,
-    artboard: h,
-    artboardProperties: E,
-    dataBinding: b,
-    dynamicDataBinding: O
+  i.useImperativeHandle(O, () => ({
+    play: () => null == L ? true : L.play(),
+    pause: () => null == L ? true : L.pause(),
+    stop: () => null == L ? true : L.stop()
+  }), [L]), f({
+    rive: L,
+    artboard: b,
+    artboardProperties: v,
+    dataBinding: I,
+    dynamicDataBinding: S
   }), i.useEffect(() => {
-    if (null != R && "short-loop" === m && T.reducedMotion.enabled) {
+    if (null != L && "short-loop" === y && N.reducedMotion.enabled) {
       let e = () => {
-          R.isPlaying && (N.current = setTimeout(() => {
-            R.pause()
+          L.isPlaying && (x.current = setTimeout(() => {
+            L.pause()
           }, 5e3))
         },
         t = () => {
-          clearTimeout(N.current)
+          clearTimeout(x.current)
         };
-      return R.on(o.EventType.Play, e), R.on(o.EventType.Pause, t), R.on(o.EventType.Stop, t), () => {
-        R.off(o.EventType.Play, e), R.off(o.EventType.Pause, t), R.off(o.EventType.Stop, t)
+      return L.on(o.EventType.Play, e), L.on(o.EventType.Pause, t), L.on(o.EventType.Stop, t), () => {
+        L.off(o.EventType.Play, e), L.off(o.EventType.Pause, t), L.off(o.EventType.Stop, t)
       }
     }
-  }, [R, m, T.reducedMotion.enabled]), i.useLayoutEffect(() => {
-    null != R && "layout" === l && (R.resizeDrawingSurfaceToCanvas(), setTimeout(() => {
-      R.resizeDrawingSurfaceToCanvas()
+  }, [L, y, N.reducedMotion.enabled]), i.useLayoutEffect(() => {
+    null != L && "layout" === h && (L.resizeDrawingSurfaceToCanvas(), setTimeout(() => {
+      L.resizeDrawingSurfaceToCanvas()
     }, 100))
-  }, [R, l]), i.useEffect(() => {
-    null != R && null == A && (C(R.stateMachineNames), R.reset({
-      stateMachines: R.stateMachineNames,
-      autoplay: n,
-      artboard: h,
+  }, [L, h]), i.useEffect(() => {
+    null != L && null == w && (D(L.stateMachineNames), L.reset({
+      stateMachines: L.stateMachineNames,
+      autoplay: _,
+      artboard: b,
       autoBind: true
-    }), R.setupRiveListeners())
-  }, [R, n, A, h]);
-  let w = i.useRef(0);
+    }), L.setupRiveListeners())
+  }, [L, _, w, b]);
+  let M = i.useRef(0);
   i.useEffect(() => {
-    if (null == R) return;
-    R.play();
+    if (null == L) return;
+    L.play();
     let e = t => {
-      null != t.data && "number" == typeof t.data && (w.current = t.data, t.data > 0 && ("halt" === m && T.reducedMotion.enabled && R.isPlaying && R.pause(), R.off(o.EventType.Advance, e)))
+      null != t.data && "number" == typeof t.data && (M.current = t.data, t.data > 0 && ("halt" === y && N.reducedMotion.enabled && L.isPlaying && L.pause(), L.off(o.EventType.Advance, e)))
     };
-    return R.on(o.EventType.Advance, e), () => {
-      R.off(o.EventType.Advance, e)
+    return L.on(o.EventType.Advance, e), () => {
+      L.off(o.EventType.Advance, e)
     }
-  }, [R, T.reducedMotion.enabled, m]);
-  let D = i.useRef(false);
+  }, [L, N.reducedMotion.enabled, y]);
+  let k = i.useRef(false);
   return i.useEffect(() => {
-    if (null != R) return !S && D.current && R.isPlaying && w.current > 0 ? R.pause() : S && !R.isPlaying && D.current && R.play(), () => {
-      null != R && S && (D.current = null != R.frameRequestId)
+    if (null != L) return !P && k.current && L.isPlaying && M.current > 0 ? L.pause() : P && !L.isPlaying && k.current && L.play(), () => {
+      null != L && P && (k.current = null != L.frameRequestId)
     }
-  }, [R, S]), (0, r.jsx)(P, {
-    className: a,
-    style: _
+  }, [L, P]), (0, r.jsx)(j, {
+    className: p,
+    style: g
   })
-}
-
-function d() {
-  let e = window,
-    [t, n] = Chunk647438.useState(module.document.hasFocus());
-  return Chunk647438.useEffect(() => {
-    let t = () => require(true),
-      r = () => require(false);
-    return module.addEventListener("focus", exports), module.addEventListener("blur", Chunk951288), () => {
-      module.removeEventListener("focus", exports), module.removeEventListener("blur", Chunk951288)
-    }
-  }, [module]), exports
 }
 
 function f(e) {
@@ -124,15 +114,15 @@ function f(e) {
     artboard: n,
     artboardProperties: r,
     dataBinding: a,
-    dynamicDataBinding: c
-  } = e, u = null != c ? c : a, d = (0, o.useViewModel)(t);
+    dynamicDataBinding: s
+  } = e, u = null != s ? s : a, d = (0, o.useViewModel)(t);
   (0, o.useViewModelInstance)(d);
   let {
     theme: f,
     saturation: _
-  } = (0, l.ZF)(), {
+  } = (0, c.ZF)(), {
     highContrastModeEnabled: p
-  } = i.useContext(s.S), h = i.useRef(null);
+  } = i.useContext(l.S), h = i.useRef(null);
   i.useEffect(() => {
     if (null == t || null == t.viewModelInstance || null == u) return;
     let e = r[null != n ? n : ""];

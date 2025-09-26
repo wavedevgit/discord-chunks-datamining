@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-/** chunk id: 226690, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 775030, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
   F: () => u
@@ -53,35 +53,36 @@ class u extends(r = Chunk647438.Component) {
   }
   constructor(...e) {
     super(...e), s(this, "animationRef", a.createRef()), s(this, "animation", true), s(this, "delayTimeout", new o.V7), s(this, "loadAnimation", async () => {
+      var e;
       let {
-        importData: e,
-        loop: t,
-        autoplay: r,
-        delay: i,
-        renderer: a,
-        rendererSettings: o,
-        shouldAnimate: s
+        importData: t,
+        loop: r,
+        autoplay: i,
+        delay: a,
+        renderer: o,
+        rendererSettings: s,
+        shouldAnimate: c
       } = this.props;
       null != this.animation && this.animation.destroy();
-      let [c, {
-        default: u
-      }] = await Promise.all([e(), Promise.resolve().then(n.t.bind(n, 500923, 23))]);
+      let [u, {
+        default: d
+      }] = await Promise.all([t(), Promise.resolve().then(n.t.bind(n, 500923, 23))]);
       if (null == this.animationRef.current) return;
-      let d = "object" == typeof c && "default" in c && "string" == typeof c.default ? {
-        path: c.default
+      let f = "object" == typeof u && "default" in u && "string" == typeof u.default ? {
+        path: u.default
       } : {
-        animationData: c
+        animationData: u
       };
-      this.animation = u.loadAnimation(l({
+      this.animation = d.loadAnimation(l({
         container: this.animationRef.current,
-        renderer: a,
-        loop: t,
-        autoplay: r && null == i && s,
-        rendererSettings: o
-      }, d)), null != i ? this.delayTimeout.start(i, () => {
+        renderer: o,
+        loop: r,
+        autoplay: i && null == a && c,
+        rendererSettings: s
+      }, f)), null != a ? this.delayTimeout.start(a, () => {
         var e;
         null == (e = this.animation) || e.play()
-      }) : this.playOrPauseAnimation(), this.animation.addEventListener("complete", this.handleComplete)
+      }) : this.playOrPauseAnimation(), null == (e = this.animation) || e.addEventListener("complete", this.handleComplete)
     }), s(this, "handleComplete", () => {
       let {
         onComplete: e

@@ -32,9 +32,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk892071 = require("./892071.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function P(e, t, n) {
-  let r = i.useContext(f.Z),
-    o = i.useCallback(() => ({
+function P(e, t, n, r) {
+  let o = i.useContext(f.Z),
+    s = i.useCallback(() => ({
       i18n: {
         SPINNER_LOADING_LABEL: R.intl.string(R.t.ZTNur6),
         BUTTON_LOADING_STARTED_LABEL: R.intl.string(R.t.pfChQk),
@@ -53,14 +53,15 @@ function P(e, t, n) {
       experiments: {
         enabledExperiments: n
       },
-      trackImpression: r
-    }), [e, t, n, r]),
-    [s, l] = i.useState(o);
+      trackImpression: o,
+      isWindowFocused: () => r
+    }), [e, t, n, o, r]),
+    [l, c] = i.useState(s);
   return i.useLayoutEffect(() => {
     function e() {
-      l(o)
+      c(s)
     }(0, a.waitForAllDefaultIntlMessagesLoaded)().then(e), R.intl.onLocaleChange(e)
-  }, [o]), s
+  }, [s]), l
 }
 
 function w(e) {
@@ -128,7 +129,7 @@ function w(e) {
     en = P(R, M, i.useMemo(() => {
       let e = [];
       return z && e.push("refresh-fast-follow-avatars"), q && e.push("refresh-fast-follow-guild-bg"), X && e.push("refresh-fast-follow-distinct-borders"), Q && e.push("mana-text-inputs"), J && e.push("mana-toggle-inputs"), e
-    }, [z, q, X, Q, J]));
+    }, [z, q, X, Q, J]), w);
   return (0, r.jsx)(c.kb5, {
     value: en,
     children: (0, r.jsx)(c.wMY, {
