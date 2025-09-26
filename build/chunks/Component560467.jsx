@@ -99,8 +99,8 @@ function O() {
     setName: O,
     planId: y,
     setPlanId: S,
-    planCost: P,
-    stepLoading: E,
+    planCost: E,
+    stepLoading: P,
     error: w
   } = (0, Chunk183369.aj)();
   Chunk647438.useEffect(() => {
@@ -121,7 +121,7 @@ function O() {
         label: e.name
       }))) ? module : []
     }, [exports]),
-    k = (0, Chunk210682.Z)();
+    G = (0, Chunk210682.Z)();
   return null == exports ? (0, Chunk951288.jsx)("div", {
     className: Chunk149671.spinnerContainer,
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {
@@ -129,10 +129,7 @@ function O() {
     })
   }) : (0, Chunk951288.jsxs)("div", {
     className: Chunk149671.container,
-    children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
-      variant: "heading-lg/semibold",
-      children: Chunk388032.intl.string(Chunk401561.default.Eonh9P)
-    }), (0, Chunk951288.jsxs)("div", {
+    children: [(0, Chunk951288.jsxs)("div", {
       className: Chunk149671.contentContainer,
       children: [(0, Chunk951288.jsxs)("div", {
         className: Chunk149671.settingsContainer,
@@ -157,7 +154,7 @@ function O() {
             placeholder: Chunk388032.intl.string(Chunk401561.default.Kg0Zio),
             showCharacterCount: true,
             maxLength: Chunk473682.gM,
-            disabled: E
+            disabled: P
           })]
         }), (0, Chunk951288.jsxs)("div", {
           className: Chunk149671.sectionContainer,
@@ -191,7 +188,7 @@ function O() {
           }), (0, Chunk951288.jsx)(Chunk481060.PhF, {
             serialize: e => e.id,
             isSelected: e => e.id === t,
-            isDisabled: E,
+            isDisabled: P,
             options: I,
             optionClassName: Chunk149671.option,
             select: e => a(e.id),
@@ -225,7 +222,7 @@ function O() {
           }), (0, Chunk951288.jsx)(Chunk481060.PhF, {
             serialize: e => e.id,
             isSelected: e => e.id === y,
-            isDisabled: E,
+            isDisabled: P,
             options: R,
             optionClassName: Chunk149671.option,
             select: e => S(e.id),
@@ -248,14 +245,14 @@ function O() {
         className: Chunk149671.gameDetailsContainer,
         children: (0, Chunk951288.jsx)(Chunk642633.Z, {})
       })]
-    }), null != Chunk120356 && 0 !== P && (0, Chunk951288.jsx)(Chunk494620.Z, {
+    }), null != Chunk120356 && 0 !== E && (0, Chunk951288.jsx)(Chunk494620.Z, {
       className: Chunk149671.infoBox,
       children: (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-xs/medium",
-        children: P < 0 ? Chunk388032.intl.format(Chunk401561.default.H8rHQU, {
-          boostCount: Math.abs(P)
+        children: E < 0 ? Chunk388032.intl.format(Chunk401561.default.H8rHQU, {
+          boostCount: Math.abs(E)
         }) : Chunk388032.intl.format(Chunk401561.default.h4ZvmJ, {
-          boostCount: P
+          boostCount: E
         })
       })
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
@@ -273,7 +270,7 @@ function O() {
       step: Chunk473682.Vb.SERVER_SETTINGS,
       className: Chunk149671.footerContainer,
       children: [(0, Chunk951288.jsx)(Chunk422663.VS, {}), (0, Chunk951288.jsx)(Chunk422663.oh, {
-        disabled: !k
+        disabled: !G
       })]
     })]
   })

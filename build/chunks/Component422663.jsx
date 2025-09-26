@@ -3,7 +3,7 @@
 require.d(exports, {
   VS: () => j,
   oh: () => p,
-  ok: () => x
+  ok: () => y
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -18,7 +18,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk946410 = require("./946410.js");
 
-function g(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       l = Object.keys(n);
@@ -37,11 +37,11 @@ function g(e) {
   return e
 }
 
-function f(e) {
+function b(e) {
   let {
     onNext: t
   } = (0, c.aj)();
-  return (0, l.jsx)(u.zxk, g({
+  return (0, l.jsx)(u.zxk, f({
     variant: "primary",
     text: m.intl.string(m.t["3PatS0"]),
     onClick: t,
@@ -50,7 +50,7 @@ function f(e) {
   }, e))
 }
 
-function b(e) {
+function g(e) {
   let {
     onNext: t,
     stepLoading: n,
@@ -58,7 +58,7 @@ function b(e) {
     availableBoostCount: a,
     planCost: r
   } = (0, c.aj)(), s = r > 0 && a < r, o = r > 0 ? null != i ? m.intl.string(d.default["1fogMj"]) : s ? m.intl.string(d.default.MPNPJS) : m.intl.string(d.default.ShxV5e) : m.intl.string(m.t.K344S0);
-  return (0, l.jsx)(u.zxk, g({
+  return (0, l.jsx)(u.zxk, f({
     variant: s || r > 0 ? "expressive" : "primary",
     text: o,
     onClick: t,
@@ -75,9 +75,9 @@ function p(e) {
   } = (0, c.aj)(), i = null == n || null == (t = n.onNext) ? true : t.type;
   switch (i) {
     case "go-to-step":
-      return (0, l.jsx)(f, g({}, e));
+      return (0, l.jsx)(b, f({}, e));
     case "save":
-      return (0, l.jsx)(b, g({}, e));
+      return (0, l.jsx)(g, f({}, e));
     default:
       s()(null != i, "Invalid stepType ".concat(i))
   }
@@ -97,7 +97,7 @@ function j(e) {
     case "close":
       a = m.intl.string(m.t.cpT0Cg)
   }
-  return s()(null != a, "Invalid stepType ".concat(d)), (0, l.jsx)(u.zxk, (n = g({}, e), i = i = {
+  return s()(null != a, "Invalid stepType ".concat(d)), (0, l.jsx)(u.zxk, (n = f({}, e), i = i = {
     variant: "secondary",
     text: a,
     onClick: r,
@@ -115,7 +115,7 @@ function j(e) {
   }), n))
 }
 
-function x(e) {
+function y(e) {
   let {
     step: t,
     className: n,

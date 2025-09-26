@@ -39,27 +39,18 @@ function j() {
     setPortkeyInstance: a,
     setCurrentGame: o,
     onNext: j
-  } = (0, Chunk183369.aj)(), x = Chunk647438.useCallback(e => {
+  } = (0, Chunk183369.aj)(), y = Chunk647438.useCallback(e => {
     o(e), j()
-  }, [Chunk494620, j]), y = Chunk647438.useCallback(e => {
+  }, [Chunk494620, j]), x = Chunk647438.useCallback(e => {
     a(e), j()
-  }, [Chunk120356, j]), h = require.length >= Chunk473682.zI, O = require.length > 0;
+  }, [Chunk120356, j]), O = require.length >= Chunk473682.zI, h = require.length > 0;
   return 0 === Object.values(exports).length ? (0, Chunk951288.jsx)("div", {
     className: Chunk782991.loadingContainer,
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {
       type: Chunk481060.RAz.SPINNING_CIRCLE
     })
   }) : (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-    children: [(0, Chunk951288.jsxs)("div", {
-      className: Chunk782991.headingContainer,
-      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
-        variant: "heading-lg/semibold",
-        children: Chunk388032.intl.string(Chunk401561.default.DG1SHB)
-      }), (0, Chunk951288.jsx)(Chunk481060.Text, {
-        variant: "text-sm/medium",
-        children: Chunk388032.intl.string(Chunk401561.default.hkWuWF)
-      })]
-    }), O && (0, Chunk951288.jsxs)("div", {
+    children: [h && (0, Chunk951288.jsxs)("div", {
       className: Chunk782991.gameSection,
       children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
         variant: "heading-md/semibold",
@@ -69,22 +60,22 @@ function j() {
         children: require.map((t, n) => (0, l.jsx)(u.Z, {
           guildId: e,
           gameInstance: t,
-          onClick: y
+          onClick: x
         }, "instance-".concat(t.id, "-").concat(n)))
-      }), h && (0, Chunk951288.jsx)(p, {})]
+      }), O && (0, Chunk951288.jsx)(p, {})]
     }), (0, Chunk951288.jsxs)("div", {
       className: r()(Chunk782991.gameSection, {
-        [Chunk782991.disabled]: h
+        [Chunk782991.disabled]: O
       }),
-      children: [O && (0, Chunk951288.jsx)(Chunk481060.X6q, {
+      children: [h && (0, Chunk951288.jsx)(Chunk481060.X6q, {
         variant: "heading-md/semibold",
         children: Chunk388032.intl.string(Chunk401561.default.l4UdiY)
       }), (0, Chunk951288.jsx)("div", {
         className: Chunk782991.gameContainer,
         children: Object.values(exports).map((e, t) => (0, l.jsx)(c.Z, {
           game: e,
-          disabled: h,
-          onClick: x
+          disabled: O,
+          onClick: y
         }, "game-".concat(e.id, "-").concat(t)))
       })]
     }), (0, Chunk951288.jsxs)(Chunk422663.ok, {

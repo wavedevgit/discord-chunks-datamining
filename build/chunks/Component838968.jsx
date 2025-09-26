@@ -2,7 +2,7 @@
 /** chunk id: 838968, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   N4: () => j,
-  P2: () => m,
+  P2: () => g,
   Q9: () => v,
   aB: () => _,
   c: () => p,
@@ -21,12 +21,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk237522 = require("./237522.js");
 
-function m(e) {
+function g(e) {
   let {
     text: n
   } = e;
   return (0, a.jsxs)("div", {
-    className: g.inline,
+    className: m.inline,
     children: [(0, a.jsx)(o.owK, {
       size: "xs",
       color: o.TVs.colors.STATUS_POSITIVE
@@ -43,7 +43,7 @@ function f(e) {
     dateString: n
   } = e;
   return (0, a.jsxs)("div", {
-    className: g.inline,
+    className: m.inline,
     children: [(0, a.jsx)(o.Mgn, {
       size: "xs",
       color: o.TVs.colors.STATUS_WARNING
@@ -62,7 +62,7 @@ function p(e) {
     removingAt: n
   } = e;
   return (0, a.jsxs)("div", {
-    className: g.rollbackInline,
+    className: m.rollbackInline,
     children: [(0, a.jsx)(o.Mgn, {
       size: "xs",
       color: o.TVs.colors.STATUS_WARNING
@@ -82,16 +82,16 @@ function x(e) {
     costDecorator: t,
     status: r,
     className: i
-  } = e, c = true !== n ? g.labelContainer : g.labelContainerEnd;
+  } = e, c = true !== n ? m.labelContainer : m.labelContainerEnd;
   return (0, a.jsxs)("div", {
     className: s()(c, i),
     children: [true !== n && (0, a.jsxs)("div", {
-      className: s()(g.inline, g.inlineBoost),
+      className: s()(m.inline, m.inlineBoost),
       children: [(0, a.jsx)(o.$Eu, {
         size: "sm",
         color: o.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK
       }), (0, a.jsx)(o.Text, {
-        className: g.price,
+        className: m.price,
         tag: "div",
         variant: "heading-md/semibold",
         color: "text-secondary",
@@ -104,7 +104,7 @@ function x(e) {
       dateString: r.expiringAt
     }), (null == r ? true : r.type) === "removing" && (0, a.jsx)(p, {
       removingAt: r.removingAt
-    }), (null == r ? true : r.type) === "active" && (0, a.jsx)(m, {
+    }), (null == r ? true : r.type) === "active" && (0, a.jsx)(g, {
       text: r.statusText
     })]
   })
@@ -115,7 +115,7 @@ function j(e) {
     children: n
   } = e;
   return (0, a.jsx)("div", {
-    className: g.buttonContainer,
+    className: m.buttonContainer,
     children: n
   })
 }
@@ -128,10 +128,10 @@ function v(e) {
     footer: i
   } = e;
   return (0, a.jsxs)("div", {
-    className: g.contentContainer,
+    className: m.contentContainer,
     children: [(0, a.jsxs)("div", {
       children: [(0, a.jsx)("div", {
-        className: g.headerContainer,
+        className: m.headerContainer,
         children: (0, a.jsx)(o.X6q, {
           color: t,
           variant: "heading-md/bold",
@@ -149,30 +149,30 @@ let _ = Chunk647438.forwardRef(function(e, n) {
     isWarning: l,
     badge: d,
     canRollback: u,
-    onClick: m,
+    onClick: g,
     onMouseOver: f,
     onMouseLeave: p,
     children: x
   } = e;
   return (0, a.jsx)("div", {
-    className: s()(g.parentContainer, {
-      [g.rollbackInactive]: u && !i
+    className: s()(m.parentContainer, {
+      [m.rollbackInactive]: u && !i
     }),
     ref: n,
     children: (0, a.jsxs)(o.kL8, {
       "aria-label": r,
-      onClick: m,
+      onClick: g,
       onMouseOver: f,
       onMouseLeave: p,
-      className: s()(g.container, {
-        [g.active]: i,
-        [g.warning]: l || u && i
+      className: s()(m.container, {
+        [m.active]: i,
+        [m.warning]: l || u && i
       }, t),
       children: [x, "new" === d && (0, a.jsx)(o.IGR, {
-        className: g.new,
+        className: m.new,
         text: b.intl.string(b.t.y2b7CA)
       }), "beta" === d && (0, a.jsx)(o.IGR, {
-        className: g.new,
+        className: m.new,
         text: b.intl.string(b.t.oW0eUV),
         color: c.Z.BG_BRAND
       })]

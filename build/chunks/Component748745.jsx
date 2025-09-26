@@ -1,7 +1,7 @@
 /** Chunk was on 60728 **/
 /** chunk id: 748745, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk961820 = require("./961820.js");
 
-function f(e) {
+function b(e) {
   let {
     guildId: t,
     gameInstance: n,
@@ -30,7 +30,7 @@ function f(e) {
     children: e => {
       var a, s;
       return (0, l.jsx)("div", {
-        className: g.disableButton,
+        className: f.disableButton,
         children: (0, l.jsx)(r.zxk, (a = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -75,37 +75,37 @@ function f(e) {
   })
 }
 
-function b(e) {
+function g(e) {
   var t, n, o, d;
   let {
-    guildId: b,
+    guildId: g,
     gameInstance: p,
     onClick: j
-  } = e, x = (0, a.e7)([u.Z], () => u.Z.getStateForGuild(b)), y = i.useMemo(() => {
+  } = e, y = (0, a.e7)([u.Z], () => u.Z.getStateForGuild(g)), x = i.useMemo(() => {
     var e;
-    return null == x || null == (e = x.entitlements) ? true : e[p.entitlementId]
-  }, [null == x ? true : x.entitlements, p.entitlementId]), h = (null == y ? true : y.ends_at) != null, O = null == y || null == (d = y.sku) || null == (o = d.tenant_metadata) || null == (n = o.guild_monetization) || null == (t = n.game_server) ? true : t.boost_price, P = (0, c.Z)(p.gameId, "icon");
-  return null == O ? null : (0, l.jsxs)(r.P3F, {
-    className: g.game,
+    return null == y || null == (e = y.entitlements) ? true : e[p.entitlementId]
+  }, [null == y ? true : y.entitlements, p.entitlementId]), O = (null == x ? true : x.ends_at) != null, h = null == x || null == (d = x.sku) || null == (o = d.tenant_metadata) || null == (n = o.guild_monetization) || null == (t = n.game_server) ? true : t.boost_price, P = (0, c.Z)(p.gameId, "icon");
+  return null == h ? null : (0, l.jsxs)(r.P3F, {
+    className: f.game,
     onClick: () => j(p),
     children: [(0, l.jsx)("img", {
-      className: g.image,
+      className: f.image,
       alt: "",
       src: P
     }), (0, l.jsxs)("div", {
-      className: g.textContainer,
+      className: f.textContainer,
       children: [(0, l.jsx)(r.X6q, {
         variant: "heading-sm/semibold",
         children: p.name
-      }), h ? (0, l.jsx)(s.rL, {
-        dateString: y.ends_at
+      }), O ? (0, l.jsx)(s.rL, {
+        dateString: x.ends_at
       }) : (0, l.jsx)(s.P2, {
         text: v.intl.string(m.default.FFLkm5)
       })]
-    }), (0, l.jsx)(f, {
-      guildId: b,
+    }), (0, l.jsx)(b, {
+      guildId: g,
       gameInstance: p,
-      cost: O
+      cost: h
     })]
   })
 }

@@ -37,25 +37,28 @@ function I(t) {
     analyticsObject: r
   } = t;
   return (0, c.ZP)(() => {
-    O.default.track(h.rMx.GIFT_CATEGORY_SELECT_MODAL_OPENED, {
+    j.default.track(h.rMx.GIFT_CATEGORY_SELECT_MODAL_OPENED, {
       location: r,
       location_stack: e
     })
   }), (0, a.jsxs)(a.Fragment, {
     children: [(0, a.jsx)(S, {}), (0, a.jsxs)(s.Y0X, {
+      "data-migration-pending": true,
       size: s.CgR.DYNAMIC,
       transitionState: n,
       className: E.modalRoot,
       parentComponent: "GiftCategorySelectModal",
       children: [(0, a.jsxs)(s.xBx, {
+        "data-migration-pending": true,
         className: E.header,
         separator: false,
         children: [(0, a.jsx)(s.vwX, {
           tag: s.RB0.H4,
           children: x.intl.string(x.t.YBGjsr)
         }), (0, a.jsx)(s.olH, {
+          "data-migration-pending": true,
           onClick: () => {
-            O.default.track(h.rMx.MODAL_DISMISSED, {
+            j.default.track(h.rMx.MODAL_DISMISSED, {
               type: h.jXE.GIFT_CATEGORY_SELECT_MODAL,
               location_object: h.qAy.BUTTON_CTA
             }), i()
@@ -63,6 +66,7 @@ function I(t) {
           className: E.cursorPointer
         })]
       }), (0, a.jsx)(s.hzk, {
+        "data-migration-pending": true,
         className: E.modalContent,
         children: (0, a.jsx)(v, {
           analyticsLocations: e,
@@ -83,23 +87,23 @@ function v(t) {
     onClose: i
   } = t, {
     showBothNitroSkusInCategorySelect: c
-  } = y.G.useExperiment({
+  } = m.G.useExperiment({
     location: "gift-button"
   }, {
     autoTrackExposure: false
   }), {
-    analyticsLocations: _
-  } = (0, u.ZP)(l.Z.GIFT_CATEGORY_SELECT_MODAL), d = t => {
+    analyticsLocations: d
+  } = (0, u.ZP)(l.Z.GIFT_CATEGORY_SELECT_MODAL), p = t => {
     t && i()
-  }, p = t => {
+  }, _ = t => {
     var a, i;
     let o = h.Qqv.NITRO_SKU_SELECTION;
-    t === b.Si.TIER_2 ? o = h.Qqv.NITRO_STANDARD : t === b.Si.TIER_0 && (o = h.Qqv.NITRO_BASIC), (0, m.Z)({
+    t === b.Si.TIER_2 ? o = h.Qqv.NITRO_STANDARD : t === b.Si.TIER_0 && (o = h.Qqv.NITRO_BASIC), (0, O.Z)({
       isGift: true,
       giftRecipient: e,
       giftingOrigin: b.Wt.DM_CHANNEL,
       initialPlanId: null,
-      analyticsLocations: _,
+      analyticsLocations: d,
       subscriptionTier: t,
       analyticsObject: (a = function(t) {
         for (var e = 1; e < arguments.length; e++) {
@@ -132,12 +136,12 @@ function v(t) {
       })(Object(i)).forEach(function(t) {
         Object.defineProperty(a, t, Object.getOwnPropertyDescriptor(i, t))
       }), a),
-      onClose: d
+      onClose: p
     })
   };
   return (0, a.jsxs)(a.Fragment, {
     children: [(0, a.jsx)(s.P3F, {
-      onClick: () => p(c ? b.Si.TIER_2 : true),
+      onClick: () => _(c ? b.Si.TIER_2 : true),
       children: (0, a.jsxs)("div", {
         className: o()(E.categoryButton, E.nitroButton),
         children: [(0, a.jsx)(s.Text, {
@@ -150,7 +154,7 @@ function v(t) {
         })]
       })
     }), c && (0, a.jsx)(s.P3F, {
-      onClick: () => p(b.Si.TIER_0),
+      onClick: () => _(b.Si.TIER_0),
       children: (0, a.jsxs)("div", {
         className: o()(E.nitroBasicButton, E.categoryButton),
         children: [(0, a.jsx)(s.Text, {
@@ -164,13 +168,13 @@ function v(t) {
       })
     }), (0, a.jsx)(s.P3F, {
       onClick: () => {
-        (0, g.Z)({
+        (0, y.Z)({
           isGift: true,
           giftingOrigin: b.Wt.DM_CHANNEL,
-          analyticsLocations: _,
+          analyticsLocations: d,
           analyticsObject: n,
           giftRecipient: e,
-          onClose: d,
+          onClose: p,
           variantsReturnStyle: r.v.VARIANTS_GROUP
         })
       },
@@ -194,9 +198,9 @@ function N(t) {
     imageType: e
   } = t, {
     avatarPlaceholderSrc: n
-  } = (0, p.Z)({
-    size: (0, _.y9)(s.EFr.SIZE_80)
-  }), i = (0, d.Z)("a_c3cffc19e9784f7d0b005eecdf1b566e", s.EFr.SIZE_80, false);
+  } = (0, _.Z)({
+    size: (0, d.y9)(s.EFr.SIZE_80)
+  }), i = (0, p.Z)("a_c3cffc19e9784f7d0b005eecdf1b566e", s.EFr.SIZE_80, false);
   return 0 === e || 1 === e ? (0, a.jsx)("div", {
     className: E.wumpusImageContainer,
     children: (0, a.jsx)(s.Eep, {

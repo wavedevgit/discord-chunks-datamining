@@ -1,7 +1,6 @@
 /** Chunk was on 85683 **/
 /** chunk id: 782991, original params: e,n,t (module,exports,require) **/
 module.exports = {
-  headingContainer: "headingContainer_b54cfd",
   gameSection: "gameSection_b54cfd",
   disabled: "disabled_b54cfd",
   gameInstanceContainer: "gameInstanceContainer_b54cfd",

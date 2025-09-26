@@ -20,7 +20,7 @@ var a, r, Chunk951288 = require("./951288.js"),
   Chunk401561 = require("./401561.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk134977 = require("./134977.js");
-let O = (a = function(e) {
+let h = (a = function(e) {
   for (var n = 1; n < arguments.length; n++) {
     var t = null != arguments[n] ? arguments[n] : {},
       a = Object.keys(t);
@@ -55,9 +55,9 @@ function y(e) {
     guildId: n
   } = e;
   s.useEffect(() => {
-    (0, g.po)(n)
+    (0, m.po)(n)
   }, [n]);
-  let t = (0, d.e7)([m.Z], () => m.Z.getStateForGuild(n)),
+  let t = (0, d.e7)([g.Z], () => g.Z.getStateForGuild(n)),
     {
       catalog: a,
       instances: r
@@ -70,35 +70,35 @@ function y(e) {
     }, [null == t ? true : t.catalog, null == t ? true : t.instances]),
     o = r.length >= j.zI;
   return 0 === a.length ? (0, i.jsx)("div", {
-    className: h.container,
+    className: O.container,
     children: (0, i.jsx)(u.$jN, {
       type: u.RAz.SPINNING_CIRCLE,
-      className: h.spinner
+      className: O.spinner
     })
   }) : (0, i.jsxs)("div", {
-    className: h.container,
+    className: O.container,
     children: [(0, i.jsx)(l.X6q, {
-      className: h.heading,
+      className: O.heading,
       variant: "heading-md/semibold",
       children: _.intl.string(v.default.jeYp1t)
     }), o && (0, i.jsx)("div", {
-      className: h.maxInstancesWarning,
+      className: O.maxInstancesWarning,
       children: (0, i.jsx)(p.Y, {})
     }), (0, i.jsx)(l.zJl, {
-      className: c()(h.gameContainerWrapper, {
-        [h.disabled]: o
+      className: c()(O.gameContainerWrapper, {
+        [O.disabled]: o
       }),
       children: (0, i.jsx)("div", {
-        className: h.gameContainer,
+        className: O.gameContainer,
         children: a.map((e, t) => (0, i.jsx)(f.Z, {
           game: e,
           onClick: () => (0, x.Z)({
             guildId: n,
-            stepConfig: O,
+            stepConfig: h,
             initialPortkeyGame: e,
             analyticsLocation: b.Z.PORTKEY_OVERVIEW
           }),
-          imageClassName: h.image,
+          imageClassName: O.image,
           disabled: o
         }, "sidebar-game-".concat(t, "-").concat(e.id)))
       })

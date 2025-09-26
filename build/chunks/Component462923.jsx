@@ -30,15 +30,15 @@ function I(e) {
   let {
     guildId: n,
     instance: t
-  } = e, i = (0, j.Z)(t), I = "Portkey", [N, P] = (0, u.US)([l.z.GAME_SERVER_HOSTING_PORTKEY_TOS]), w = N !== l.z.GAME_SERVER_HOSTING_PORTKEY_TOS, S = (0, c.e7)([g.Z], () => g.Z.getDetectableGame(t.gameId)), T = r.useCallback(() => {
+  } = e, i = (0, j.Z)(t), I = "Portkey", [N, P] = (0, u.US)([l.z.GAME_SERVER_HOSTING_PORTKEY_TOS]), w = N !== l.z.GAME_SERVER_HOSTING_PORTKEY_TOS, S = (0, c.e7)([m.Z], () => m.Z.getDetectableGame(t.gameId)), T = r.useCallback(() => {
     w ? (0, v.Z)(n, t) : (0, _.Z)({
       provider: I,
       onAccept: () => {
-        P(h.L.TAKE_ACTION), (0, v.Z)(n, t)
+        P(O.L.TAKE_ACTION), (0, v.Z)(n, t)
       }
     })
   }, [t, w, P, n]), E = r.useCallback(() => {
-    (0, m.JG)(i), (0, d.showToast)((0, d.createToast)(y.intl.string(y.t["+5kSoa"]), d.ToastType.SUCCESS))
+    (0, g.JG)(i), (0, d.showToast)((0, d.createToast)(y.intl.string(y.t["+5kSoa"]), d.ToastType.SUCCESS))
   }, [i]), k = (0, f.Z)(n), Z = (0, x.Z)(t.gameId, "cover");
   return (0, a.jsxs)("div", {
     className: C.card,
@@ -67,7 +67,7 @@ function I(e) {
           className: C.detailItem,
           children: [(0, a.jsx)(d.Text, {
             variant: "text-xs/semibold",
-            children: y.intl.string(O.default.X0IaiI)
+            children: y.intl.string(h.default.X0IaiI)
           }), (0, a.jsx)(d.Text, {
             variant: "text-sm/medium",
             children: "".concat(t.onlineConnectionsCount, " / ").concat(t.maxConnectionsCount)
@@ -76,7 +76,7 @@ function I(e) {
           className: C.detailItem,
           children: [(0, a.jsx)(d.Text, {
             variant: "text-xs/semibold",
-            children: y.intl.string(O.default["9pw/yM"])
+            children: y.intl.string(h.default["9pw/yM"])
           }), (0, a.jsx)("div", {
             className: C.serverIpContainer,
             children: w ? (0, a.jsxs)(a.Fragment, {
@@ -96,18 +96,18 @@ function I(e) {
                 (0, _.Z)({
                   provider: I,
                   onAccept: () => {
-                    P(h.L.TAKE_ACTION), (0, v.Z)(n, t)
+                    P(O.L.TAKE_ACTION), (0, v.Z)(n, t)
                   }
                 })
               },
-              children: y.intl.string(O.default.UwXK29)
+              children: y.intl.string(h.default.UwXK29)
             })
           })]
         }), (0, a.jsxs)("div", {
           className: C.detailItem,
           children: [(0, a.jsx)(d.Text, {
             variant: "text-xs/semibold",
-            children: y.intl.string(O.default.MQQIu7)
+            children: y.intl.string(h.default.MQQIu7)
           }), (0, a.jsxs)("div", {
             className: C.statusContainer,
             children: [(0, a.jsx)("span", {
@@ -117,21 +117,21 @@ function I(e) {
               children: function(e) {
                 switch (e) {
                   case o.V.STARTING:
-                    return y.intl.string(O.default["7XF8pK"]);
+                    return y.intl.string(h.default["7XF8pK"]);
                   case o.V.STARTUP_FAILED:
-                    return y.intl.string(O.default["C/096+"]);
+                    return y.intl.string(h.default["C/096+"]);
                   case o.V.OFFLINE:
-                    return y.intl.string(O.default.Bz9gcH);
+                    return y.intl.string(h.default.Bz9gcH);
                   case o.V.ONLINE:
-                    return y.intl.string(O.default["7q4iGR"]);
+                    return y.intl.string(h.default["7q4iGR"]);
                   case o.V.DELETED:
-                    return y.intl.string(O.default["UvP/1N"]);
+                    return y.intl.string(h.default["UvP/1N"]);
                   case o.V.MISSING_STOCK:
-                    return y.intl.string(O.default.ssC3cX);
+                    return y.intl.string(h.default.ssC3cX);
                   case o.V.SLEEPING:
-                    return y.intl.string(O.default.PS8AMT);
+                    return y.intl.string(h.default.PS8AMT);
                   default:
-                    return y.intl.string(O.default.Bz9gcH)
+                    return y.intl.string(h.default.Bz9gcH)
                 }
               }(t.status)
             })]
@@ -140,7 +140,7 @@ function I(e) {
           className: C.detailItem,
           children: [(0, a.jsx)(d.Text, {
             variant: "text-xs/semibold",
-            children: y.intl.string(O.default.fqrxlJ)
+            children: y.intl.string(h.default.fqrxlJ)
           }), (0, a.jsx)(d.Text, {
             variant: "text-sm/medium",
             children: t.regionName
@@ -151,12 +151,12 @@ function I(e) {
       className: C.serverActions,
       children: [(0, a.jsx)(d.zxk, {
         fullWidth: true,
-        text: y.intl.string(O.default["0TMXHh"]),
+        text: y.intl.string(h.default["0TMXHh"]),
         onClick: T,
         variant: "primary"
       }), k && null != t.gameServerPanelUrl && (0, a.jsx)(d.zxk, {
         fullWidth: true,
-        text: y.intl.string(O.default["jO3u+/"]),
+        text: y.intl.string(h.default["jO3u+/"]),
         onClick: () => {
           window.open(t.gameServerPanelUrl, "_blank")
         },

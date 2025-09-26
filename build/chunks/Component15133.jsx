@@ -51,7 +51,7 @@ function j(e) {
         className: x.gameContainerWrapper,
         children: (0, a.jsx)("div", {
           className: x.gameContainer,
-          children: _.map((e, n) => (0, a.jsx)(g.Z, {
+          children: _.map((e, n) => (0, a.jsx)(m.Z, {
             guildId: t,
             instance: e
           }, "".concat(e.gameId, "-").concat(n)))
@@ -61,7 +61,7 @@ function j(e) {
         children: (0, a.jsx)(o.$jN, {
           type: o.RAz.SPINNING_CIRCLE
         })
-      }), j && (0, a.jsx)(m.Z, {
+      }), j && (0, a.jsx)(g.Z, {
         guildId: t
       })]
     })]
