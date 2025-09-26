@@ -55,9 +55,9 @@ function y(e) {
     guildId: n
   } = e;
   s.useEffect(() => {
-    (0, m.po)(n)
+    (0, g.po)(n)
   }, [n]);
-  let t = (0, d.e7)([g.Z], () => g.Z.getStateForGuild(n)),
+  let t = (0, d.e7)([m.Z], () => m.Z.getStateForGuild(n)),
     {
       catalog: a,
       instances: r

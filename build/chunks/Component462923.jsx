@@ -30,7 +30,7 @@ function I(e) {
   let {
     guildId: n,
     instance: t
-  } = e, i = (0, j.Z)(t), I = "Portkey", [N, P] = (0, u.US)([l.z.GAME_SERVER_HOSTING_PORTKEY_TOS]), w = N !== l.z.GAME_SERVER_HOSTING_PORTKEY_TOS, S = (0, c.e7)([m.Z], () => m.Z.getDetectableGame(t.gameId)), T = r.useCallback(() => {
+  } = e, i = (0, j.Z)(t), I = "Portkey", [N, P] = (0, u.US)([l.z.GAME_SERVER_HOSTING_PORTKEY_TOS]), w = N !== l.z.GAME_SERVER_HOSTING_PORTKEY_TOS, S = (0, c.e7)([g.Z], () => g.Z.getDetectableGame(t.gameId)), T = r.useCallback(() => {
     w ? (0, v.Z)(n, t) : (0, _.Z)({
       provider: I,
       onAccept: () => {
@@ -38,7 +38,7 @@ function I(e) {
       }
     })
   }, [t, w, P, n]), E = r.useCallback(() => {
-    (0, g.JG)(i), (0, d.showToast)((0, d.createToast)(y.intl.string(y.t["+5kSoa"]), d.ToastType.SUCCESS))
+    (0, m.JG)(i), (0, d.showToast)((0, d.createToast)(y.intl.string(y.t["+5kSoa"]), d.ToastType.SUCCESS))
   }, [i]), k = (0, f.Z)(n), Z = (0, x.Z)(t.gameId, "cover");
   return (0, a.jsxs)("div", {
     className: C.card,

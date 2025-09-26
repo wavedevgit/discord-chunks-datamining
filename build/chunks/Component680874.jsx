@@ -4,7 +4,7 @@
 let r;
 require.d(exports, {
   l: () => E
-});
+}), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk58654 = require("./58654.js"),
@@ -81,8 +81,10 @@ let p = 1,
       p = e => {
         _.current = e, "function" == typeof t ? t(_.current) : null != t && (t.current = e)
       },
-      h = a.useMemo(() => b(_.current, u.rows, u.value), [u.rows, u.value]);
-    return (0, i.jsx)(s.tEY, {
+      [h, m] = a.useState(() => b(_.current, u.rows, u.value));
+    return a.useLayoutEffect(() => {
+      m(b(_.current, u.rows, u.value))
+    }, [u.rows, u.value]), (0, i.jsx)(s.tEY, {
       children: (0, i.jsx)("textarea", d(c({}, u), {
         ref: p,
         style: d(c({}, n), {

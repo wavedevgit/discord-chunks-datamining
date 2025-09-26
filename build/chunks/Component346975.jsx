@@ -997,14 +997,14 @@ function eM(e) {
             className: ep.keyboardShortcut
           }), (0, r.jsx)(p.Text, {
             variant: "text-xs/normal",
-            color: "text-default",
+            color: "text-secondary",
             children: "+"
           }), (0, r.jsx)(p.M2$, {
             shortcut: "ENTER",
             className: ep.keyboardShortcut
           }), (0, r.jsx)(p.Text, {
             variant: "text-xs/normal",
-            color: "text-default",
+            color: "text-secondary",
             children: ex.intl.string(ex.t.ZvJ0ys)
           })]
         }) : (0, r.jsxs)("div", {
@@ -1017,7 +1017,7 @@ function eM(e) {
             className: ep.warnIcon
           }), (0, r.jsx)(p.Text, {
             variant: "text-xs/normal",
-            color: "text-default",
+            color: "text-secondary",
             children: ex.intl.string(ex.t.iyzwnJ)
           })]
         }) : null]

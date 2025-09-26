@@ -2,7 +2,7 @@
 /** chunk id: 500132, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  C: () => p
+  C: () => m
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -50,7 +50,25 @@ function d(e, t) {
   }), e
 }
 
-function f(e) {
+function f(e, t) {
+  if (null == e) return {};
+  var n, r, i = _(e, t);
+  if (Object.getOwnPropertySymbols) {
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+  }
+  return i
+}
+
+function _(e, t) {
+  if (null == e) return {};
+  var n, r, i = {},
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+  return i
+}
+
+function p(e) {
   let {
     size: t
   } = e, n = "small" === t ? "0 0 20 20" : "0 0 24 24", i = "small" === t ? 10 : 12, a = "small" === t ? 10 : 12, o = "small" === t ? 10 : 12, l = "small" === t ? 5 : 6;
@@ -82,7 +100,7 @@ function f(e) {
   })
 }
 
-function _(e) {
+function h(e) {
   let {
     desc: t,
     disabled: n,
@@ -95,7 +113,7 @@ function _(e) {
     className: s.item,
     value: String(u),
     isDisabled: n,
-    children: [(0, r.jsx)(f, {
+    children: [(0, r.jsx)(p, {
       size: c
     }), null != o && (0, r.jsx)(o, {
       className: s.radioItemIcon,
@@ -116,32 +134,36 @@ function _(e) {
   })
 }
 
-function p(e) {
-  let {
+function m(e) {
+  var {
     defaultValue: t,
     onChange: n,
     options: a,
-    label: l,
-    value: u,
-    size: f = "medium",
-    disabled: p = false,
-    "aria-labelledby": h
-  } = e, m = true === u ? false : a.findIndex(e => e.value === u), g = true === t ? false : a.findIndex(e => e.value === t), E = {
-    onChange: e => {
-      null != n && n(a[Number(e)].value)
-    }
-  };
-  return true !== u && m >= 0 ? E.value = String(m) : true === u && true !== t && g >= 0 && (E.defaultValue = String(g)), (0, r.jsx)(o.N, {
-    label: l,
-    children: (0, r.jsx)(i.Ee, d(c({
+    value: l,
+    size: u = "medium",
+    disabled: _ = false,
+    "aria-labelledby": p
+  } = e, m = f(e, ["defaultValue", "onChange", "options", "value", "size", "disabled", "aria-labelledby"]);
+  let g = true === l ? false : a.findIndex(e => e.value === l),
+    E = true === t ? false : a.findIndex(e => e.value === t),
+    b = {
+      onChange: e => {
+        null != n && n(a[Number(e)].value)
+      }
+    };
+  return true !== l && g >= 0 ? b.value = String(g) : true === l && true !== t && E >= 0 && (b.defaultValue = String(E)), (0, r.jsx)(o.N, d(c({}, m), {
+    children: e => (0, r.jsx)(i.Ee, d(c({
+      id: e.controlId,
       className: s.group,
-      isDisabled: p,
-      "aria-labelledby": h
-    }, E), {
-      children: a.map((e, t) => (0, r.jsx)(_, c({
+      isDisabled: _,
+      "aria-labelledby": null != p ? p : e.labelId,
+      "aria-describedby": e.describedById,
+      "aria-errormessage": e.errorMessageId
+    }, b), {
+      children: a.map((e, t) => (0, r.jsx)(h, c({
         index: t,
-        size: f
+        size: u
       }, e), String(e.value)))
     }))
-  })
+  }))
 }

@@ -1,7 +1,7 @@
 /** Chunk was on 85683 **/
 /** chunk id: 444083, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => m
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk401561 = require("./401561.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk587983 = require("./587983.js");
-let m = {
+let g = {
   steps: {
     [Chunk473682.Vb.SERVER_SETTINGS]: {
       onBack: {
@@ -26,7 +26,7 @@ let m = {
   }
 };
 
-function g(e) {
+function m(e) {
   let {
     guildId: n,
     instance: t
@@ -61,7 +61,7 @@ function g(e) {
             action: () => {
               (0, c.Z)({
                 guildId: n,
-                stepConfig: m,
+                stepConfig: g,
                 initialPortkeyInstance: t,
                 analyticsLocation: o.Z.PORTKEY_OVERVIEW
               })

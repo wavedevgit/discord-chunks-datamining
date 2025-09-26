@@ -7,7 +7,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk525769 = require("./525769.js"),
   Chunk693789 = require("./693789.jsx"),
-  Chunk19217 = require("./19217.jsx"),
+  Chunk886025 = require("./886025.jsx"),
   Chunk82659 = require("./82659.jsx"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -246,7 +246,8 @@ function k(e) {
         inputRef: _
       }), (0, r.jsx)(u.LZC, {
         size: 26
-      }), (0, r.jsxs)(o.C, {
+      }), (0, r.jsxs)(o.N, {
+        role: "group",
         label: v.intl.string(v.t.oMBfeX),
         children: [I.map((e, n) => (0, r.jsx)(O.Z, {
           answer: e,

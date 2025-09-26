@@ -100,7 +100,7 @@ function T(e) {
   }(null != (t = null == T ? true : T.skuId) ? t : null), E = (null == (n = s.userStatus) ? true : n.claimedAt) != null, k = !x && !E, [D, R] = r.useState(k ? "loading" : "claimed");
   r.useEffect(() => {
     k && (0, f.QB)(s.id, h.y$.CROSS_PLATFORM, N).then(() => R("claimed")).catch(() => R("error"))
-  }, [s, N, k]);
+  }, [s.id, N, k]);
   let L = true === x && null === w && (null == T ? true : T.skuId) !== "",
     M = null == w && true !== x,
     Z = null == A || M || L || "loading" === D,
