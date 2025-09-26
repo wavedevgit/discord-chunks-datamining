@@ -13,10 +13,10 @@ var Chunk512722 = require("./512722.js"),
   o = require.n(Chunk392711),
   Chunk570140 = require("./570140.js"),
   Chunk430742 = require("./430742.js"),
-  Chunk40851 = require("./40851.jsx"),
   Chunk367907 = require("./367907.js"),
   Chunk727429 = require("./727429.js"),
   Chunk927723 = require("./927723.jsx"),
+  Chunk728285 = require("./728285.jsx"),
   Chunk982168 = require("./982168.js"),
   Chunk703656 = require("./703656.js"),
   Chunk359110 = require("./359110.js"),
@@ -30,8 +30,8 @@ var Chunk512722 = require("./512722.js"),
   Chunk176505 = require("./176505.js");
 
 function T(e, t, n) {
-  if (!(0, _.WF)(e.id)) return void(0, f.V)();
-  c.UI.dispatch(v.CkL.POPOUT_CLOSE);
+  if (!(0, _.WF)(e.id)) return void(0, d.V)();
+  f.UI.dispatch(v.CkL.POPOUT_CLOSE);
   let r = !o().isEmpty(b.Z.getVoiceStatesForChannel(e.id));
   if (t || !m.vF.getSetting() || __OVERLAY__ || r) {
     s.Z.dispatch({
@@ -44,7 +44,7 @@ function T(e, t, n) {
   }
   i()(null != e.parent_id, "all threads must have parents");
   let a = E.Z.getChannelId();
-  e.parent_id === a || (0, I.ME)(a) || (0, h.Kh)(e.parent_id), (0, p.uL)(v.Z5c.CHANNEL_THREAD_VIEW((0, d.e)(e), (0, I.ME)(a) ? I.oC.GUILD_HOME : e.parent_id, e.id), e.isForumPost() ? {
+  e.parent_id === a || (0, I.ME)(a) || (0, h.Kh)(e.parent_id), (0, p.uL)(v.Z5c.CHANNEL_THREAD_VIEW((0, u.e)(e), (0, I.ME)(a) ? I.oC.GUILD_HOME : e.parent_id, e.id), e.isForumPost() ? {
     source: O.on.FORUM
   } : true), setTimeout(() => {
     y.S.dispatch(v.CkL.FOCUS_CHANNEL_TEXT_AREA, {
@@ -54,11 +54,11 @@ function T(e, t, n) {
 }
 
 function S(e, t, n) {
-  if (i()(!e.isForumLikeChannel(), "cannot open thread creation sidebar in forums"), i()(!__OVERLAY__, "Cannot create threads in the overlay."), (0, u.yw)(v.rMx.THREAD_CREATION_STARTED, {
+  if (i()(!e.isForumLikeChannel(), "cannot open thread creation sidebar in forums"), i()(!__OVERLAY__, "Cannot create threads in the overlay."), (0, c.yw)(v.rMx.THREAD_CREATION_STARTED, {
       location: n,
       channel_id: e.id,
       guild_id: e.guild_id
-    }), c.UI.dispatch(v.CkL.POPOUT_CLOSE), E.Z.getChannelId() !== e.id && (0, h.Kh)(e.id), "" === g.Z.getDraft(e.id, g.d.FirstThreadMessage)) {
+    }), f.UI.dispatch(v.CkL.POPOUT_CLOSE), E.Z.getChannelId() !== e.id && (0, h.Kh)(e.id), "" === g.Z.getDraft(e.id, g.d.FirstThreadMessage)) {
     let t = g.Z.getDraft(e.id, g.d.ChannelMessage);
     l.Z.saveDraft(e.id, "", g.d.ChannelMessage), l.Z.saveDraft(e.id, t, g.d.FirstThreadMessage)
   }

@@ -7,8 +7,8 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk481060 = require("./481060.js"),
-  Chunk549879 = require("./549879.jsx"),
   Chunk906732 = require("./906732.jsx"),
+  Chunk887413 = require("./887413.jsx"),
   Chunk313789 = require("./313789.js"),
   Chunk518596 = require("./518596.jsx"),
   Chunk981631 = require("./981631.js"),
@@ -18,7 +18,7 @@ var Chunk481060 = require("./481060.js"),
 function f(e) {
   let {
     analyticsLocations: t
-  } = (0, o.ZP)();
+  } = (0, a.ZP)();
   return (0, r.jsx)(i.sNh, {
     id: "video-settings",
     label: d.intl.string(d.t.LKzQSE),
@@ -27,7 +27,7 @@ function f(e) {
         section: c.oAB.VOICE,
         subsection: u.gP,
         analyticsLocations: t
-      }), (0, a.i)(e)
+      }), (0, o.i)(e)
     },
     icon: i.ewm
   })

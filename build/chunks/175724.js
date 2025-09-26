@@ -7,8 +7,8 @@ require.d(exports, {
 var Chunk475179 = require("./475179.js"),
   Chunk904245 = require("./904245.js"),
   Chunk45114 = require("./45114.js"),
-  Chunk40851 = require("./40851.jsx"),
   Chunk358221 = require("./358221.js"),
+  Chunk728285 = require("./728285.jsx"),
   Chunk623292 = require("./623292.js"),
   Chunk807092 = require("./807092.js"),
   Chunk6025 = require("./6025.js"),
@@ -35,7 +35,7 @@ let A = {
     if (T.S.hasSubscribers(S.CkL.CALL_DECLINE)) return T.S.dispatch(S.CkL.CALL_DECLINE), false;
     if (v.Z.close()) returnfalse;
     if (T.S.hasSubscribers(S.CkL.MEDIA_MODAL_CLOSE)) return T.S.dispatch(S.CkL.MEDIA_MODAL_CLOSE), false;
-    let t = (0, o.AN)(e);
+    let t = (0, s.AN)(e);
     if (null == t ? true : t.hasSubscribers(S.CkL.POPOUT_CLOSE)) return t.dispatch(S.CkL.POPOUT_CLOSE), false;
     if (T.S.hasSubscribers(S.CkL.CLOSE_GIF_PICKER)) return T.S.dispatch(S.CkL.CLOSE_GIF_PICKER), false;
     if (T.S.hasSubscribers(S.CkL.MODAL_CLOSE)) return T.S.dispatch(S.CkL.MODAL_CLOSE), false;
@@ -50,7 +50,7 @@ let A = {
     if (null != i && (null == l ? true : l.type) === d.tI.CREATE_THREAD) return u.Z.closeChannelSidebar(i), false;
     let f = N(i),
       _ = N(c);
-    return null == i || f || _ || null == l ? null != i && !f && s.Z.getChatOpen(i) ? r.Z.updateChatOpen(i, false) : T.S.dispatch(S.CkL.SCROLLTO_PRESENT) : u.Z.closeChannelSidebar(i), false
+    return null == i || f || _ || null == l ? null != i && !f && o.Z.getChatOpen(i) ? r.Z.updateChatOpen(i, false) : T.S.dispatch(S.CkL.SCROLLTO_PRESENT) : u.Z.closeChannelSidebar(i), false
   }
 };
 

@@ -12,13 +12,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk53281 = require("./53281.jsx"),
   Chunk110924 = require("./110924.js"),
-  Chunk40851 = require("./40851.jsx"),
   Chunk595519 = require("./595519.js"),
   Chunk924557 = require("./924557.js"),
   Chunk435064 = require("./435064.js"),
   Chunk712114 = require("./712114.jsx"),
   Chunk266454 = require("./266454.js"),
   Chunk536442 = require("./536442.js"),
+  Chunk728285 = require("./728285.jsx"),
   Chunk79390 = require("./79390.js"),
   Chunk216789 = require("./216789.js"),
   Chunk665906 = require("./665906.js"),
@@ -81,13 +81,13 @@ let H = Chunk647438.memo(function(e) {
     editorTextContent: z,
     setValue: W,
     canOnlyUseTextCommands: q
-  } = e, Y = (0, p.bp)(), K = i.useRef(null), X = i.useRef(null), J = (0, o.e7)([P.Z], () => P.Z.getActivities()), Q = (0, o.e7)([m.Z], () => m.Z.getSettings().clipsEnabled), $ = (0, o.e7)([m.Z], () => m.Z.getLastClipsSession()), ee = (0, o.Wu)([m.Z], () => m.Z.getNewClipIds()), et = (0, o.e7)([O.ZP], () => null == O.ZP.getCurrentSidebarChannelId(V.id)), {
+  } = e, Y = (0, y.bp)(), K = i.useRef(null), X = i.useRef(null), J = (0, o.e7)([P.Z], () => P.Z.getActivities()), Q = (0, o.e7)([f.Z], () => f.Z.getSettings().clipsEnabled), $ = (0, o.e7)([f.Z], () => f.Z.getLastClipsSession()), ee = (0, o.Wu)([f.Z], () => f.Z.getNewClipIds()), et = (0, o.e7)([O.ZP], () => null == O.ZP.getCurrentSidebarChannelId(V.id)), {
     showClipsHeaderEntrypoint: en
-  } = f.NV.useExperiment({
+  } = h.NV.useExperiment({
     location: "ChannelAttachButton"
   }, {
     autoTrackExposure: false
-  }), er = (0, o.e7)([y.qc], () => y.qc.hasHotspot(y.v6.CLIPS_CHANNEL_ATTACH_REMINDER)), ei = (0, c.s9z)(e => (0, c.DEQ)(e, k.Qr)), el = (0, o.e7)([j.Z], () => j.Z.hasLayers()), ea = (0, o.e7)([m.Z], () => m.Z.hasClips()), [eo, es] = i.useState(null), ec = (0, f.Go)() && (Q || ea), eu = V.isPrivate(), ed = (0, o.e7)([S.Z], () => eu || S.Z.can(R.Plq.ATTACH_FILES, V) && S.Z.can(R.Plq.SEND_MESSAGES, V)), ep = (0, d.Z)($);
+  }), er = (0, o.e7)([b.qc], () => b.qc.hasHotspot(b.v6.CLIPS_CHANNEL_ATTACH_REMINDER)), ei = (0, c.s9z)(e => (0, c.DEQ)(e, k.Qr)), el = (0, o.e7)([j.Z], () => j.Z.hasLayers()), ea = (0, o.e7)([f.Z], () => f.Z.hasClips()), [eo, es] = i.useState(null), ec = (0, h.Go)() && (Q || ea), eu = V.isPrivate(), ed = (0, o.e7)([S.Z], () => eu || S.Z.can(R.Plq.ATTACH_FILES, V) && S.Z.can(R.Plq.SEND_MESSAGES, V)), ep = (0, d.Z)($);
   (null == ep ? true : ep.newClipIds.length) !== (null == $ ? true : $.newClipIds.length) && (null != (t = null == $ ? true : $.newClipIds.length) ? t : 0) > 0 && null == eo && er && et && !ei && !en && !el && es("recentClips");
   let eh = (0, o.e7)([E.Z], () => E.Z.hasCurrentUserSentMessageSinceAppStart());
 
@@ -116,7 +116,7 @@ let H = Chunk647438.memo(function(e) {
     eg = (0, v.Xu)(V),
     eb = !x.dN.useSetting() && !(0, Z.isAndroidWeb)() && null != window.ResizeObserver,
     ey = (0, C.UI)(null != V ? V : true),
-    eC = (0, h.qB)(),
+    eC = (0, p.qB)(),
     e_ = (0, _.Us)({
       location: "ChannelAttachButton"
     }),
@@ -149,19 +149,19 @@ let H = Chunk647438.memo(function(e) {
       position: "top",
       positionKey: null != eo ? eo : "null",
       onRequestOpen: () => {
-        eh && (0, b.Q3)(s.z.ACTIVITIES_CHAT_BUTTON_NUX_V2, {
+        eh && (0, g.Q3)(s.z.ACTIVITIES_CHAT_BUTTON_NUX_V2, {
           dismissAction: L.L.TAKE_ACTION
         }), es("attachMenu")
       },
       onRequestClose: () => {
-        (0, c.$sL)() || (eh && (0, b.Q3)(s.z.ACTIVITIES_CHAT_MENU_NEW_BADGE, {
+        (0, c.$sL)() || (eh && (0, g.Q3)(s.z.ACTIVITIES_CHAT_MENU_NEW_BADGE, {
           dismissAction: L.L.TAKE_ACTION
         }), es(null))
       },
       renderPopout: e => {
         switch (eo) {
           case "recentClips":
-            return (0, r.jsx)(g.Z, F(B({}, e), {
+            return (0, r.jsx)(m.Z, F(B({}, e), {
               onOpenClips: ef,
               lastClipsSession: $
             }));

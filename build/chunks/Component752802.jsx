@@ -14,12 +14,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk239091 = require("./239091.js"),
   Chunk765250 = require("./765250.js"),
   Chunk872810 = require("./872810.js"),
-  Chunk40851 = require("./40851.jsx"),
   Chunk414910 = require("./414910.js"),
   Chunk194082 = require("./194082.jsx"),
   Chunk569545 = require("./569545.js"),
   Chunk871118 = require("./871118.jsx"),
   Chunk172751 = require("./172751.jsx"),
+  Chunk728285 = require("./728285.jsx"),
   Chunk352978 = require("./352978.jsx"),
   Chunk833519 = require("./833519.jsx"),
   Chunk839662 = require("./839662.js"),
@@ -96,7 +96,7 @@ function L(e) {
       return (0, i.jsx)(u.P3F, R(A({}, r), {
         className: D.controlAction,
         onClick: e => {
-          null == n || n(), (0, h.g)((0, y.V9)(t.stream), false), e.stopPropagation(), (0, w.Ws)(_.Odu.GO_LIVE, {
+          null == n || n(), (0, h.g)((0, g.V9)(t.stream), false), e.stopPropagation(), (0, w.Ws)(_.Odu.GO_LIVE, {
             type: w.Qu.SCREEN_SHARE,
             value: w.bk.DISABLED,
             userId: t.user.id
@@ -115,7 +115,7 @@ function M(e) {
   let {
     participant: t
   } = e, n = t.user.id, l = (0, a.e7)([I.Z], () => {
-    let e = (0, m.Z)(t.type);
+    let e = (0, f.Z)(t.type);
     return I.Z.isLocalMute(t.user.id, e)
   }, [t]), o = (0, a.e7)([j.default], () => j.default.getId()), {
     hasVideo: d
@@ -173,7 +173,7 @@ function z(e) {
     hasActiveStream: t,
     participant: n,
     onEnablePin: r
-  } = e, l = (0, f.bp)(), s = n.user, c = (0, a.e7)([C.default], () => {
+  } = e, l = (0, E.bp)(), s = n.user, c = (0, a.e7)([C.default], () => {
     var e;
     return null != (e = C.default.getUser(s.id)) ? e : s
   }, [s]), d = t ? P.intl.string(P.t.tLxK4u) : P.intl.string(P.t.E5RDnJ), {
@@ -222,7 +222,7 @@ function z(e) {
             color: "always-white",
             className: D.controlUserName,
             children: Z.ZP.getName(n.stream.guildId, n.stream.channelId, s)
-          }), (0, i.jsx)(E.ZP, {
+          }), (0, i.jsx)(O.ZP, {
             primaryGuild: c.primaryGuild,
             userId: c.id,
             containerClassName: D.guildTag,
@@ -272,11 +272,11 @@ let U = new Set([Chunk981631.jm8.ENDED, Chunk981631.jm8.FAILED, Chunk981631.jm8.
       locked: r,
       widgetId: l,
       pinned: o
-    } = e, s = (0, a.e7)([x.Z], () => x.Z.getActiveStreamForUser(t.user.id, t.stream.guildId), [t.user.id, t.stream.guildId]), c = (0, f.bp)(), d = null != s && U.has(s.state), h = null != s, m = (0, T.yA)(t.stream), y = (0, T.xN)(t.stream);
+    } = e, s = (0, a.e7)([x.Z], () => x.Z.getActiveStreamForUser(t.user.id, t.stream.guildId), [t.user.id, t.stream.guildId]), c = (0, E.bp)(), d = null != s && U.has(s.state), h = null != s, f = (0, T.yA)(t.stream), g = (0, T.xN)(t.stream);
     return !h && r || d ? null : (0, i.jsxs)("div", {
       className: D.tile,
-      children: [h && !r && (0, i.jsx)(g.ZP, {
-        size: g.ZP.Sizes.SMALL,
+      children: [h && !r && (0, i.jsx)(m.ZP, {
+        size: m.ZP.Sizes.SMALL,
         className: D.liveIndicator
       }), h ? (0, i.jsx)("div", {
         className: D.streamTile,
@@ -288,12 +288,12 @@ let U = new Set([Chunk981631.jm8.ENDED, Chunk981631.jm8.FAILED, Chunk981631.jm8.
           onContextMenu: V(t, c),
           className: D.streamTile,
           style: {
-            transform: "scale(".concat(m, ")")
+            transform: "scale(".concat(f, ")")
           },
           children: (0, i.jsx)(S.Z, {
             participant: t,
             width: n,
-            fit: null != y ? y : v.L.CONTAIN,
+            fit: null != g ? g : v.L.CONTAIN,
             inPopout: true,
             focused: !r,
             selected: false,
@@ -303,7 +303,7 @@ let U = new Set([Chunk981631.jm8.ENDED, Chunk981631.jm8.FAILED, Chunk981631.jm8.
         })
       }) : (0, i.jsx)("div", {
         className: D.streamPreview,
-        children: (0, i.jsx)(O.Z, {
+        children: (0, i.jsx)(y.Z, {
           noText: true,
           className: D.absoluteFill,
           stream: t.stream

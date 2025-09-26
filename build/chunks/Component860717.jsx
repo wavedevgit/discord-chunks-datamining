@@ -424,7 +424,7 @@ function M(e) {
         }
       }]
     }];
-  return (0, r.jsx)(x.Z, E(I({}, e), {
+  return (0, r.jsxs)(x.Z, E(I({}, e), {
     userId: l.id,
     widget: u,
     className: a()(d, w.widgetContainer),
@@ -435,7 +435,7 @@ function M(e) {
       icon: s.iWm,
       action: v
     }) : null,
-    children: (0, r.jsx)(B.Provider, {
+    children: [(0, r.jsx)(B.Provider, {
       value: e,
       children: (0, r.jsx)(H, {
         widget: u,
@@ -443,6 +443,15 @@ function M(e) {
           component: D
         })
       })
-    })
+    }), null == O ? (0, r.jsxs)("div", {
+      className: w.stillSyncing,
+      children: [(0, r.jsx)(s.wGF, {
+        size: "xxs"
+      }), (0, r.jsx)(s.Text, {
+        variant: "text-sm/medium",
+        color: "text-secondary",
+        children: P.intl.string(P.t.z5K4Ul)
+      })]
+    }) : null]
   }))
 }

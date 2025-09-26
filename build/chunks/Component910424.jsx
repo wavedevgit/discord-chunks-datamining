@@ -11,9 +11,9 @@ var Chunk442837 = require("./442837.js"),
   Chunk572691 = require("./572691.js"),
   Chunk287734 = require("./287734.js"),
   Chunk872810 = require("./872810.js"),
-  Chunk40851 = require("./40851.jsx"),
   Chunk595816 = require("./595816.js"),
   Chunk102172 = require("./102172.js"),
+  Chunk728285 = require("./728285.jsx"),
   Chunk199902 = require("./199902.js"),
   Chunk592125 = require("./592125.js"),
   Chunk585483 = require("./585483.js"),
@@ -66,7 +66,7 @@ function O(e) {
     onAction: g
   } = e, {
     defaultWatchMultipleStreams: b
-  } = (0, u.P)({
+  } = (0, c.P)({
     location: "WatchStreamButton"
   }), {
     activeStream: O,
@@ -79,13 +79,13 @@ function O(e) {
       } = e;
       return t !== n.ownerId
     }).length > 0
-  })), I = (0, i.e7)([_.Z], () => _.Z.getChannel(null == n ? true : n.channelId)), [T, S] = (0, d.wq)(I), A = (0, c.Aq)(), C = null != O && null != n && O.state !== h.jm8.ENDED && O.ownerId === n.ownerId, N = e => {
+  })), I = (0, i.e7)([_.Z], () => _.Z.getChannel(null == n ? true : n.channelId)), [T, S] = (0, u.wq)(I), A = (0, d.Aq)(), C = null != O && null != n && O.state !== h.jm8.ENDED && O.ownerId === n.ownerId, N = e => {
     null != n && (null == g || g(), s.default.selectVoiceChannel(n.channelId), C || (0, l.iV)(n, {
       forceMultiple: e
     }), A.dispatch(h.CkL.POPOUT_CLOSE), p.S.dispatch(h.CkL.MODAL_CLOSE), o.Z.popAll())
   };
   if (null == n) return null;
-  let R = (0, d.P9)(S);
+  let R = (0, u.P9)(S);
   return t ? R = m.intl.string(m.t.XvBdeX) : C && (R = m.intl.string(m.t.JH1SJy)), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.zxk, {
       size: "sm",

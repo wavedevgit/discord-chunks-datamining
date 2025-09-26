@@ -18,7 +18,6 @@ var Chunk951288 = require("./951288.js"),
   Chunk114250 = require("./114250.jsx"),
   Chunk735246 = require("./735246.jsx"),
   Chunk315263 = require("./315263.js"),
-  Chunk40851 = require("./40851.jsx"),
   Chunk607070 = require("./607070.js"),
   Chunk899663 = require("./899663.jsx"),
   Chunk793903 = require("./793903.js"),
@@ -35,6 +34,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk314910 = require("./314910.jsx"),
   Chunk84615 = require("./84615.jsx"),
   Chunk429142 = require("./429142.js"),
+  Chunk728285 = require("./728285.jsx"),
   Chunk813744 = require("./813744.jsx"),
   Chunk746106 = require("./746106.jsx"),
   Chunk526665 = require("./526665.js"),
@@ -84,42 +84,42 @@ let q = (0, Chunk663993.Un)({
     let {
       children: t,
       skipsSettingDefaultPageTitle: n
-    } = e, a = (0, G.getPlatform)(), u = s.tq || s.Em, m = (0, c.e7)([E.Z], () => E.Z.useForcedColors ? "yes" : "no"), M = i.useRef(document.body), k = "".concat(m);
-    return (0, N.G)(), (0, P.G)("AppSkeleton"), (0, r.jsx)(j.w, {
-      children: (0, r.jsxs)(b.Z, {
+    } = e, a = (0, G.getPlatform)(), u = s.tq || s.Em, m = (0, c.e7)([g.Z], () => g.Z.useForcedColors ? "yes" : "no"), M = i.useRef(document.body), k = "".concat(m);
+    return (0, C.G)(), (0, R.G)("AppSkeleton"), (0, r.jsx)(j.w, {
+      children: (0, r.jsxs)(E.Z, {
         children: [(0, r.jsx)(Z.Z, {
           skipsSettingDefaultPageTitle: n
         }), (0, r.jsx)(h.T, {
           children: (0, r.jsx)(V.Z, {
             children: (0, r.jsxs)(d.JcV, {
               containerRef: M,
-              children: [(0, r.jsx)(Y.Co, {}), (0, r.jsx)(H.ZP, {}), (0, r.jsx)(l.OUJ, {}), (0, r.jsx)(g.Wu, {
+              children: [(0, r.jsx)(Y.Co, {}), (0, r.jsx)(H.ZP, {}), (0, r.jsx)(l.OUJ, {}), (0, r.jsx)(x.Wu, {
                 appContext: K.IlC.APP,
                 renderWindow: window,
-                children: (0, r.jsxs)(w.yP, {
+                children: (0, r.jsxs)(P.yP, {
                   children: [null != a ? (0, r.jsx)(Q, {}) : null, (0, r.jsxs)("div", {
                     className: o()(z.appAsidePanelWrapper, u && z.mobileAppAsidePanelWrapper),
-                    children: [(0, r.jsx)(C.K, {}), (0, r.jsx)("div", {
+                    children: [(0, r.jsx)(A.K, {}), (0, r.jsx)("div", {
                       className: z.notAppAsidePanel,
                       "data-app-not-dev-tools": true,
-                      children: (0, r.jsx)(A.m, {
-                        children: (0, r.jsx)(x.OR, {
-                          children: (0, r.jsx)(y.Z.Provider, {
-                            value: O.Z,
-                            children: (0, r.jsxs)(S.p, {
+                      children: (0, r.jsx)(S.m, {
+                        children: (0, r.jsx)(D.OR, {
+                          children: (0, r.jsx)(b.Z.Provider, {
+                            value: y.Z,
+                            children: (0, r.jsxs)(T.p, {
                               children: [(0, r.jsx)("div", {
                                 className: o()(u ? z.mobileApp : z.app),
                                 children: t
-                              }), (0, r.jsx)(f.Z, {}), (0, r.jsx)(I.Z, {}), (0, r.jsx)(_.Z, {}), (0, r.jsx)(d.nKe, {}), (0, r.jsx)(p.Z, {}), (0, r.jsx)(D.Ox, {}), (0, r.jsx)(w.Un, {}), (0, r.jsx)(x.ot, {}), (0, r.jsx)(d.Ixi, {
+                              }), (0, r.jsx)(f.Z, {}), (0, r.jsx)(v.Z, {}), (0, r.jsx)(_.Z, {}), (0, r.jsx)(d.nKe, {}), (0, r.jsx)(p.Z, {}), (0, r.jsx)(w.Ox, {}), (0, r.jsx)(P.Un, {}), (0, r.jsx)(D.ot, {}), (0, r.jsx)(d.Ixi, {
                                 appContext: K.IlC.APP
-                              }), (0, r.jsx)(v.Z, {}), (0, r.jsx)(L.Z, {}), (0, r.jsx)(q, {}), (0, r.jsx)(X, {})]
+                              }), (0, r.jsx)(O.Z, {}), (0, r.jsx)(L.Z, {}), (0, r.jsx)(q, {}), (0, r.jsx)(X, {})]
                             })
                           })
                         })
                       })
-                    }), (0, r.jsx)(T.Z, {}), (0, r.jsx)(F.Z, {
+                    }), (0, r.jsx)(I.Z, {}), (0, r.jsx)(F.Z, {
                       mobile: u
-                    }), (0, r.jsx)(R.Z, {
+                    }), (0, r.jsx)(N.Z, {
                       mobile: u
                     })]
                   }), false]

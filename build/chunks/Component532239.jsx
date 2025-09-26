@@ -6,8 +6,8 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk481060 = require("./481060.js"),
-  Chunk40851 = require("./40851.jsx"),
   Chunk340541 = require("./340541.js"),
+  Chunk728285 = require("./728285.jsx"),
   Chunk493754 = require("./493754.jsx"),
   Chunk496675 = require("./496675.js"),
   Chunk981631 = require("./981631.js"),
@@ -18,7 +18,7 @@ function d(e, t, n, d) {
       streamUserId: n,
       channel: e,
       applicationId: d,
-      appContext: (0, l.bp)()
+      appContext: (0, a.bp)()
     },
     h = () => {
       null != t && e.type === c.d4z.GUILD_VOICE && (0, o.W)(function(e) {
@@ -42,7 +42,7 @@ function d(e, t, n, d) {
         guild: t
       }, p))
     },
-    f = (0, a._k)({
+    f = (0, l._k)({
       location: "more_settings_invite_item"
     }),
     m = f.isInCallEntrypointEnabled ? i.oLu : i.ejJ;

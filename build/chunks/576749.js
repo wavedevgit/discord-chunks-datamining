@@ -4,12 +4,12 @@ require.d(exports, {
   Z: () => o
 });
 var Chunk481060 = require("./481060.js"),
-  Chunk40851 = require("./40851.jsx"),
+  Chunk728285 = require("./728285.jsx"),
   Chunk334877 = require("./334877.js"),
   Chunk981631 = require("./981631.js");
 let s = "guild-event-modal",
   o = () => {
-    let e = (0, Chunk40851.bp)() === Chunk981631.IlC.POPOUT ? Chunk481060.u1M : Chunk481060.z1l;
+    let e = (0, Chunk728285.bp)() === Chunk981631.IlC.POPOUT ? Chunk481060.u1M : Chunk481060.z1l;
     return {
       modalKey: s,
       contextKey: module,

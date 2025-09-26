@@ -7,9 +7,9 @@ require.d(exports, {
 var Chunk647438 = require("./647438.js"),
   Chunk836560 = require("./836560.js"),
   Chunk327432 = require("./327432.js"),
-  Chunk40851 = require("./40851.jsx"),
   Chunk213459 = require("./213459.js"),
   Chunk998698 = require("./998698.js"),
+  Chunk728285 = require("./728285.jsx"),
   Chunk695346 = require("./695346.js"),
   Chunk752305 = require("./752305.js"),
   Chunk86724 = require("./86724.js"),
@@ -68,7 +68,7 @@ function N(e, t) {
 }
 
 function R(e) {
-  let t = r.useContext(o.ZP),
+  let t = r.useContext(l.ZP),
     n = c.R$.useSetting(),
     [i] = r.useState(() => {
       let r = (0, a.Jh)();
@@ -83,8 +83,8 @@ function R(e) {
     });
   return r.useEffect(() => {
     let e = () => i.onChange();
-    return l.Z.addChangeListener(e), s.ZP.addChangeListener(e), () => {
-      l.Z.removeChangeListener(e), s.ZP.removeChangeListener(e)
+    return s.Z.addChangeListener(e), o.ZP.addChangeListener(e), () => {
+      s.Z.removeChangeListener(e), o.ZP.removeChangeListener(e)
     }
   }, [i]), r.useEffect(() => {
     i.previewMarkdown !== n && (i.previewMarkdown = n, i.onChange())

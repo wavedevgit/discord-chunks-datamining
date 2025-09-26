@@ -7,8 +7,8 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk481060 = require("./481060.js"),
-  Chunk40851 = require("./40851.jsx"),
   Chunk906732 = require("./906732.jsx"),
+  Chunk728285 = require("./728285.jsx"),
   Chunk785717 = require("./785717.jsx"),
   Chunk892001 = require("./892001.js"),
   Chunk981631 = require("./981631.js"),
@@ -62,9 +62,9 @@ function h(e) {
   } = e, p = _(e, ["label", "onAction", "icon"]);
   let {
     analyticsLocations: h
-  } = (0, o.ZP)(), {
+  } = (0, a.ZP)(), {
     context: m
-  } = (0, s.KZ)(), g = (0, a.Aq)(), E = (0, a.bp)();
+  } = (0, s.KZ)(), g = (0, o.Aq)(), E = (0, o.bp)();
   return (0, r.jsx)(i.sNh, {
     id: "user-profile",
     label: null != t ? t : u.intl.string(u.t.LYju5O),

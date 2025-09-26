@@ -11,13 +11,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk26151 = require("./26151.js"),
   Chunk287734 = require("./287734.js"),
-  Chunk40851 = require("./40851.jsx"),
   Chunk607070 = require("./607070.js"),
   Chunk451576 = require("./451576.js"),
   Chunk358221 = require("./358221.js"),
   Chunk266454 = require("./266454.js"),
   Chunk243778 = require("./243778.jsx"),
   Chunk590293 = require("./590293.js"),
+  Chunk728285 = require("./728285.jsx"),
   Chunk560688 = require("./560688.jsx"),
   Chunk173507 = require("./173507.jsx"),
   Chunk523746 = require("./523746.js"),
@@ -63,11 +63,11 @@ class A extends Chunk647438.PureComponent {
     let u = Chunk907862.isManaged(),
       p = null,
       h = false;
-    return Chunk287734 ? (h = true, p = Chunk388032.intl.string(Chunk388032.t.izMR7u), e = Chunk481060.ua7.Colors.RED) : Chunk131951.Z.supports(Chunk65154.AN.VIDEO) ? Chunk704215 ? (p = Chunk388032.intl.string(Chunk388032.t.PHzjvb), e = Chunk481060.ua7.Colors.RED, h = true) : Chunk647438 && Chunk26151 === Chunk981631.WtW.VIDEO ? (t = this.handleJoinVideoCall, p = Chunk40851 ? Chunk388032.intl.string(Chunk388032.t.S0W8Z2) : Chunk388032.intl.string(Chunk388032.t.W68MhI)) : (t = this.handleStartVideoCall, p = Chunk40851 ? Chunk388032.intl.string(Chunk388032.t.S0W8Z2) : Chunk388032.intl.string(Chunk388032.t.oCqlGB)) : (h = true, t = this.handleBrowserNotSupported, p = Chunk388032.intl.string(Chunk388032.t.UVpg3d)), (0, Chunk951288.jsx)(Chunk665149.ZP.Icon, {
+    return Chunk287734 ? (h = true, p = Chunk388032.intl.string(Chunk388032.t.izMR7u), e = Chunk481060.ua7.Colors.RED) : Chunk131951.Z.supports(Chunk65154.AN.VIDEO) ? Chunk704215 ? (p = Chunk388032.intl.string(Chunk388032.t.PHzjvb), e = Chunk481060.ua7.Colors.RED, h = true) : Chunk647438 && Chunk26151 === Chunk981631.WtW.VIDEO ? (t = this.handleJoinVideoCall, p = Chunk607070 ? Chunk388032.intl.string(Chunk388032.t.S0W8Z2) : Chunk388032.intl.string(Chunk388032.t.W68MhI)) : (t = this.handleStartVideoCall, p = Chunk607070 ? Chunk388032.intl.string(Chunk388032.t.S0W8Z2) : Chunk388032.intl.string(Chunk388032.t.oCqlGB)) : (h = true, t = this.handleBrowserNotSupported, p = Chunk388032.intl.string(Chunk388032.t.UVpg3d)), (0, Chunk951288.jsx)(Chunk665149.ZP.Icon, {
       icon: Chunk481060.Odl,
       onClick: exports,
-      disabled: Chunk451576 || Chunk442837,
-      tooltip: Chunk607070,
+      disabled: Chunk358221 || Chunk442837,
+      tooltip: Chunk451576,
       tooltipColor: module
     })
   }
@@ -84,18 +84,18 @@ class A extends Chunk647438.PureComponent {
     if (require) return null;
     let h = Chunk287734.isManaged(),
       f = false;
-    Chunk607070 ? (f = true, e = Chunk388032.intl.string(Chunk388032.t.izMR7u), t = Chunk481060.ua7.Colors.RED) : Chunk442837 ? (e = Chunk451576 ? Chunk388032.intl.string(Chunk388032.t.LW2Gho) : Chunk388032.intl.string(Chunk388032.t.rF7lNz), t = Chunk481060.ua7.Colors.RED, f = true) : Chunk26151 ? (e = Chunk388032.intl.string(Chunk388032.t.PHzjvb), t = Chunk481060.ua7.Colors.RED, f = true) : e = Chunk647438 ? Chunk451576 ? Chunk388032.intl.string(Chunk388032.t.S0W8Z2) : Chunk388032.intl.string(Chunk388032.t.fdEeb2) : Chunk451576 ? Chunk388032.intl.string(Chunk388032.t.S0W8Z2) : Chunk388032.intl.string(Chunk388032.t.focH1t);
-    let g = (0, Chunk951288.jsx)(Chunk665149.ZP.Icon, {
+    Chunk451576 ? (f = true, e = Chunk388032.intl.string(Chunk388032.t.izMR7u), t = Chunk481060.ua7.Colors.RED) : Chunk442837 ? (e = Chunk358221 ? Chunk388032.intl.string(Chunk388032.t.LW2Gho) : Chunk388032.intl.string(Chunk388032.t.rF7lNz), t = Chunk481060.ua7.Colors.RED, f = true) : Chunk26151 ? (e = Chunk388032.intl.string(Chunk388032.t.PHzjvb), t = Chunk481060.ua7.Colors.RED, f = true) : e = Chunk647438 ? Chunk358221 ? Chunk388032.intl.string(Chunk388032.t.S0W8Z2) : Chunk388032.intl.string(Chunk388032.t.fdEeb2) : Chunk358221 ? Chunk388032.intl.string(Chunk388032.t.S0W8Z2) : Chunk388032.intl.string(Chunk388032.t.focH1t);
+    let m = (0, Chunk951288.jsx)(Chunk665149.ZP.Icon, {
       ref: this.iconRef,
       icon: Chunk481060.Csw,
       onClick: this.handleVoiceClick,
-      disabled: Chunk358221,
+      disabled: Chunk266454,
       tooltip: module,
       tooltipColor: exports
     });
     return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-      children: [Chunk266454, (0, Chunk951288.jsx)(Chunk243778.ZP, {
-        contentTypes: Chunk40851,
+      children: [Chunk590293, (0, Chunk951288.jsx)(Chunk243778.ZP, {
+        contentTypes: Chunk607070,
         children: e => {
           let {
             visibleContent: t,
@@ -139,7 +139,7 @@ class A extends Chunk647438.PureComponent {
         callActive: n,
         dismissibleContentTypes: r
       } = this.props;
-      if (r.includes(a.z.ACTIVITY_GDM_CALL_TOOLTIP) && (0, g.Q3)(a.z.ACTIVITY_GDM_CALL_TOOLTIP, {
+      if (r.includes(a.z.ACTIVITY_GDM_CALL_TOOLTIP) && (0, f.Q3)(a.z.ACTIVITY_GDM_CALL_TOOLTIP, {
           dismissAction: P.L.AUTO
         }), t);
       else if (n) return this.handleJoinCall(false);
@@ -161,26 +161,26 @@ function D(e) {
   var t;
   let {
     channel: n
-  } = e, i = (0, b.Z)(), s = (0, l.e7)([f.Z], () => f.Z.getMode(n.id)), o = (0, l.e7)([I.Z], () => I.Z.isInChannel(n.id)), c = (0, l.e7)([p.Z], () => p.Z.useReducedMotion), {
+  } = e, i = (0, m.Z)(), s = (0, l.e7)([h.Z], () => h.Z.getMode(n.id)), o = (0, l.e7)([I.Z], () => I.Z.isInChannel(n.id)), c = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), {
     callActive: d,
-    callUnavailable: g
+    callUnavailable: f
   } = (0, l.cj)([O.Z], () => ({
     callActive: O.Z.isCallActive(n.id),
     callUnavailable: O.Z.isCallUnavailable(n.id)
-  })), m = n.getRecipientId(), {
+  })), g = n.getRecipientId(), {
     notFriend: y,
     isBlocked: _
   } = (0, l.cj)([x.Z], () => ({
-    notFriend: n.type === Z.d4z.DM && null != m && !x.Z.isFriend(m),
-    isBlocked: n.type === Z.d4z.DM && null != m && x.Z.isBlocked(m)
-  })), v = (0, l.e7)([C.default], () => C.default.getUser(m)), E = (0, u.bp)(), S = [], T = (0, h.Z)(n.id), P = (0, l.e7)([j.Z], () => j.Z.hasLayers());
+    notFriend: n.type === Z.d4z.DM && null != g && !x.Z.isFriend(g),
+    isBlocked: n.type === Z.d4z.DM && null != g && x.Z.isBlocked(g)
+  })), v = (0, l.e7)([C.default], () => C.default.getUser(g)), E = (0, b.bp)(), S = [], T = (0, p.Z)(n.id), P = (0, l.e7)([j.Z], () => j.Z.hasLayers());
   return (T && !P && S.push(a.z.ACTIVITY_GDM_CALL_TOOLTIP), i || (null == v ? true : v.bot)) ? null : (0, r.jsx)(A, {
     channel: n,
     mode: s,
     inCall: o,
     callActive: d,
     isProvisional: null != (t = null == v ? true : v.isProvisional) && t,
-    callUnavailable: g,
+    callUnavailable: f,
     notFriend: y,
     isBlocked: _,
     appContext: E,

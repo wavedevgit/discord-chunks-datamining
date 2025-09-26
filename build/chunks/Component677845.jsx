@@ -9,13 +9,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk731965 = require("./731965.js"),
   Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
-  Chunk40851 = require("./40851.jsx"),
   Chunk317381 = require("./317381.js"),
   Chunk374065 = require("./374065.js"),
   Chunk213609 = require("./213609.js"),
   Chunk358221 = require("./358221.js"),
   Chunk266454 = require("./266454.js"),
   Chunk159300 = require("./159300.js"),
+  Chunk728285 = require("./728285.jsx"),
   Chunk800329 = require("./800329.jsx"),
   Chunk470956 = require("./470956.js"),
   Chunk430824 = require("./430824.js"),
@@ -37,9 +37,9 @@ function S(e) {
     className: Z,
     inCall: T,
     totalNumberOfParticipants: N
-  } = e, A = (0, c.bp)() === j.IlC.POPOUT, w = (0, o.e7)([y.Z], () => y.Z.getGuild(I.guild_id), [I.guild_id]), {
+  } = e, A = (0, m.bp)() === j.IlC.POPOUT, w = (0, o.e7)([y.Z], () => y.Z.getGuild(I.guild_id), [I.guild_id]), {
     dismissedActivityEntryPointTileChannel: M
-  } = (0, x.d)(), R = (0, o.e7)([h.Z], () => h.Z.getUserParticipantCount(I.id), [I]), k = (0, b.bt)(I.id, t), L = i.useCallback(() => {
+  } = (0, x.d)(), R = (0, o.e7)([p.Z], () => p.Z.getUserParticipantCount(I.id), [I]), k = (0, b.bt)(I.id, t), L = i.useCallback(() => {
     (0, a.j)(() => {
       x.d.setState({
         dismissedActivityEntryPointTileChannel: I.id
@@ -53,12 +53,12 @@ function S(e) {
       })
     })
   }, [I.id, M]);
-  let D = (0, o.e7)([C.Z], () => I.isPrivate() || (0, m.b)(C.Z, w, I), [w, I]),
+  let D = (0, o.e7)([C.Z], () => I.isPrivate() || (0, f.b)(C.Z, w, I), [w, I]),
     U = (null == w ? true : w.afkChannelId) === I.id,
     B = I.userLimit <= 0 || I.userLimit > 1,
-    F = (0, o.e7)([u.ZP], () => u.ZP.getEmbeddedActivitiesForChannel(I.id).length <= 0),
-    H = (0, f.Nj)(s.z.VC_TILE_ACTIVITIES_ENTRY_POINT),
-    V = (0, d.KF)(I.id) !== d.jy.CAN_LAUNCH,
+    F = (0, o.e7)([c.ZP], () => c.ZP.getEmbeddedActivitiesForChannel(I.id).length <= 0),
+    H = (0, h.Nj)(s.z.VC_TILE_ACTIVITIES_ENTRY_POINT),
+    V = (0, u.KF)(I.id) !== u.jy.CAN_LAUNCH,
     G = null != M && M === I.id,
     z = k.map(e => t => (0, r.jsx)(v.ZP, {
       participant: e,
@@ -71,7 +71,7 @@ function S(e) {
       width: t,
       inPopout: A
     }, e.id));
-  (0, p.Z)({
+  (0, d.Z)({
     type: l.ImpressionTypes.VIEW,
     name: l.ImpressionNames.CHANNEL_CALL_VIDEO_GRID_VIEW,
     properties: {

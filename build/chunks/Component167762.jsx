@@ -16,7 +16,6 @@ var i, Chunk951288 = require("./951288.js"),
   Chunk239091 = require("./239091.js"),
   Chunk194359 = require("./194359.js"),
   Chunk434650 = require("./434650.js"),
-  Chunk549879 = require("./549879.jsx"),
   Chunk724757 = require("./724757.js"),
   Chunk620662 = require("./620662.js"),
   Chunk420660 = require("./420660.js"),
@@ -28,6 +27,7 @@ var i, Chunk951288 = require("./951288.js"),
   Chunk554300 = require("./554300.jsx"),
   Chunk558602 = require("./558602.js"),
   Chunk567409 = require("./567409.js"),
+  Chunk887413 = require("./887413.jsx"),
   Chunk373662 = require("./373662.jsx"),
   Chunk850020 = require("./850020.js"),
   Chunk886118 = require("./886118.js"),
@@ -102,9 +102,9 @@ let B = Chunk647438.memo(e => {
     user: t,
     activities: i = [],
     gameProfileEntry: s,
-    index: m,
-    closeParentPopout: E,
-    isSuggestion: j,
+    index: h,
+    closeParentPopout: _,
+    isSuggestion: I,
     relationshipType: Z,
     appContext: w,
     nickname: T,
@@ -119,9 +119,9 @@ let B = Chunk647438.memo(e => {
     size: J,
     animateOnHover: true,
     guildId: null
-  }), Y = (0, a.JA)("".concat(m)), [B, X] = l.useState(false), [$, ee] = l.useState({}), et = i.filter(e => e.type === q.IIU.PLAYING && (0, y.Z)(e, q.xjy.JOIN)), en = (0, o.Wu)([R.Z], () => R.Z.getActivities().filter(e => e.type === q.IIU.PLAYING && (0, y.Z)(e, q.xjy.JOIN))), {
+  }), Y = (0, a.JA)("".concat(h)), [B, X] = l.useState(false), [$, ee] = l.useState({}), et = i.filter(e => e.type === q.IIU.PLAYING && (0, m.Z)(e, q.xjy.JOIN)), en = (0, o.Wu)([R.Z], () => R.Z.getActivities().filter(e => e.type === q.IIU.PLAYING && (0, m.Z)(e, q.xjy.JOIN))), {
     voiceChannel: ei
-  } = (0, b.Z)({
+  } = (0, N.Z)({
     userId: t.id
   }), er = (0, C.K)({
     user: t
@@ -134,7 +134,7 @@ let B = Chunk647438.memo(e => {
     let e = D.Z.getStatus(t.id),
       n = x.Z.getAnyStreamForUser(t.id),
       r = D.Z.isMobileOnline(t.id),
-      l = (0, O.Z)(i) ? q.Skl.STREAMING : e;
+      l = (0, y.Z)(i) ? q.Skl.STREAMING : e;
     return {
       status: e,
       applicationStream: n,
@@ -153,21 +153,21 @@ let B = Chunk647438.memo(e => {
         t = Q(V({}, s), {
           traits: e.slice(0, 3)
         });
-      return (0, r.jsx)(_.Gk, {
-        location: _.Gt.FRIENDS_POPOUT,
+      return (0, r.jsx)(v.Gk, {
+        location: v.Gt.FRIENDS_POPOUT,
         className: z.badgesContainer,
         children: K.map((e, n) => (0, r.jsx)(e, {
           entry: t
         }, n))
       })
     }
-    if (!(0, N.Z)({
+    if (!(0, O.Z)({
         activities: i,
         status: el,
         applicationStream: es,
         voiceChannel: ei
       })) return null;
-    let e = !(0, I.Z)({
+    let e = !(0, S.Z)({
       activity: null == i ? true : i.find(e => {
         let {
           type: t
@@ -176,7 +176,7 @@ let B = Chunk647438.memo(e => {
       }),
       user: t
     });
-    return (0, r.jsx)(v.Z, {
+    return (0, r.jsx)(b.Z, {
       location: "FriendsPopout",
       user: t,
       activities: i,
@@ -197,10 +197,10 @@ let B = Chunk647438.memo(e => {
       }))
     })
   }, [t, w, G]), em = l.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), null == G || G("open_direct_message", t.id), (0, h.i)(w, true), d.Z.openPrivateChannel({
+    e.preventDefault(), e.stopPropagation(), null == G || G("open_direct_message", t.id), (0, j.i)(w, true), d.Z.openPrivateChannel({
       recipientIds: t.id
-    }), null != E && E()
-  }, [t.id, E, w, G]), ey = l.useCallback(e => {
+    }), null != _ && _()
+  }, [t.id, _, w, G]), ey = l.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), null == G || G("send_friend_request", t.id), f.Z.addRelationship({
       userId: t.id,
       context: {
@@ -255,7 +255,7 @@ let B = Chunk647438.memo(e => {
       return (0, r.jsxs)("div", {
         className: z.row,
         ref: ed,
-        children: [(0, r.jsx)(S.Z, V({
+        children: [(0, r.jsx)(E.Z, V({
           innerClassName: z.rowInner,
           onContextMenu: eh,
           onMouseEnter: ep,
@@ -310,7 +310,7 @@ let B = Chunk647438.memo(e => {
                 location: "friends-popout"
               }), null == G || G("cancel_friend_request", t.id)
             }
-          }) : j ? (0, r.jsx)(P.sF, {
+          }) : I ? (0, r.jsx)(P.sF, {
             label: W.intl.string(W.t.w5uwoK),
             icon: c.oLu,
             onClick: ey
@@ -371,9 +371,9 @@ let ee = Chunk647438.memo(function(e) {
     renderHeader: d,
     onAction: f,
     onFriendVisible: g,
-    autoFocus: h = false,
+    autoFocus: m = false,
     appContext: y = q.IlC.APP
-  } = e, [O, N] = l.useState([3, 0]), b = l.useRef(null), v = (0, m.Z)("friends-popout", b), _ = function() {
+  } = e, [O, N] = l.useState([3, 0]), b = l.useRef(null), v = (0, h.Z)("friends-popout", b), E = function() {
     let e = (0, o.Wu)([G.Z, U.default, D.Z], () => {
         let e = [];
         for (let [t, n] of G.Z.getMutableRelationships().entries()) {
@@ -421,7 +421,7 @@ let ee = Chunk647438.memo(function(e) {
       n = function() {
         let e = (0, o.e7)([R.Z], () => R.Z.getPrimaryActivity()),
           t = null == e ? true : e.application_id,
-          n = (0, j.N)(t);
+          n = (0, I.N)(t);
         return (0, o.cj)([G.Z, U.default, D.Z, F.Z], () => {
           let i = (null == e ? true : e.name) != null && null != t,
             r = {
@@ -503,8 +503,8 @@ let ee = Chunk647438.memo(function(e) {
       setSearchQuery: n,
       clearSearch: m
     }
-  }(_), {
-    searchQuery: I,
+  }(E), {
+    searchQuery: j,
     setSearchQuery: P,
     clearSearch: C
   } = S, Z = H(S, ["searchQuery", "setSearchQuery", "clearSearch"]), w = l.useCallback(e => {
@@ -545,7 +545,7 @@ let ee = Chunk647438.memo(function(e) {
         n = W.intl.string(W.t.fyA119), i = Z.friendRequests.length;
         break;
       case 1:
-        n = _.currentActivityName, i = Z.sameActivity.length;
+        n = E.currentActivityName, i = Z.sameActivity.length;
         break;
       case 3:
         n = W.intl.string(W.t.qm9dSk), i = Z.suggestions.length;
@@ -561,7 +561,7 @@ let ee = Chunk647438.memo(function(e) {
     }
     let l = (3 === t || 0 === t) && i > 3,
       s = O.includes(t);
-    return (0, r.jsxs)(E.Z, {
+    return (0, r.jsxs)(_.Z, {
       className: z.section,
       children: [(0, r.jsx)(c.nn4, {
         children: W.intl.format(W.t.UaqbkZ, {
@@ -583,7 +583,7 @@ let ee = Chunk647438.memo(function(e) {
         }) : null]
       })]
     })
-  }, [_.currentActivityName, Z.friendRequests.length, Z.sameActivity.length, Z.suggestions.length, Z.activities.length, Z.online.length, Z.offline.length, O, w]), Y = l.useCallback(e => {
+  }, [E.currentActivityName, Z.friendRequests.length, Z.sameActivity.length, Z.suggestions.length, Z.activities.length, Z.online.length, Z.offline.length, O, w]), Y = l.useCallback(e => {
     let t;
     return null == (t = 0 === e.section ? Z.friendRequests[e.row] : 1 === e.section ? Z.sameActivity[e.row] : 3 === e.section ? Z.suggestions[e.row] : 2 === e.section ? Z.activities[e.row] : 4 === e.section ? Z.online[e.row] : Z.offline[e.row]) || null == t.user ? null : (0, r.jsx)(B, Q(V({}, t), {
       index: e.row,
@@ -634,11 +634,11 @@ let ee = Chunk647438.memo(function(e) {
     }), (0, r.jsx)("div", {
       className: z.searchContainer,
       children: (0, r.jsx)(c.E1j, {
-        query: I,
+        query: j,
         onChange: A,
         onClear: x,
         placeholder: W.intl.string(W.t["5h0QOD"]),
-        autoFocus: h
+        autoFocus: m
       })
     }), et ? (0, r.jsx)("div", {
       className: z.emptyStateContainer,

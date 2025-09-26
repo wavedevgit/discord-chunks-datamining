@@ -10,7 +10,7 @@ var Chunk951288 = require("./951288.js"),
   o = require.n(Chunk120356),
   Chunk755712 = require("./755712.js"),
   Chunk239091 = require("./239091.js"),
-  Chunk40851 = require("./40851.jsx"),
+  Chunk728285 = require("./728285.jsx"),
   Chunk358085 = require("./358085.js"),
   Chunk960048 = require("./960048.js"),
   Chunk752305 = require("./752305.js"),
@@ -369,7 +369,7 @@ class P extends Chunk647438.PureComponent {
       children: [this.state.showPlaceholder ? (0, Chunk951288.jsx)("div", {
         className: o()(Chunk115488.placeholder, require),
         "aria-hidden": true,
-        children: Chunk40851
+        children: Chunk728285
       }) : null, (0, Chunk951288.jsx)(Chunk755712.mH, {
         editor: exports,
         value: [...this.state.initialValue],
@@ -390,7 +390,7 @@ class P extends Chunk647438.PureComponent {
           autoFocus: Chunk239091 && false !== Chunk120356,
           autoCorrect: "off",
           "data-can-focus": false !== Chunk120356,
-          "aria-label": Chunk40851,
+          "aria-label": Chunk728285,
           "aria-multiline": true
         }))
       })]

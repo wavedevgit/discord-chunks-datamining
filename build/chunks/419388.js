@@ -10,8 +10,8 @@ var Chunk647438 = require("./647438.js"),
   Chunk925549 = require("./925549.js"),
   Chunk904245 = require("./904245.js"),
   Chunk45114 = require("./45114.js"),
-  Chunk40851 = require("./40851.jsx"),
   Chunk607070 = require("./607070.js"),
+  Chunk728285 = require("./728285.jsx"),
   Chunk703656 = require("./703656.js"),
   Chunk479313 = require("./479313.js"),
   Chunk796974 = require("./796974.js"),
@@ -391,7 +391,7 @@ class O {
       r = arguments.length > 2 ? arguments[2] : true;
     null == (t = this.ref.current) || t.scrollTo({
       to: e,
-      animate: !d.Z.useReducedMotion && n,
+      animate: !u.Z.useReducedMotion && n,
       callback: r
     }), this.isPinned() ? this.updateStoreDimensions() : this.updateStoreDimensionsDebounced()
   }
@@ -453,9 +453,9 @@ class O {
     if (null == this.ref.current) return;
     if (e === this.props.channel.id) return void this.scrollTo(0);
     let r = this.getElementFromMessageId(e);
-    this.isJumping() || !t || null == n || d.Z.useReducedMotion || (m.default.extractTimestamp(e) > n ? this.scrollTo(0) : this.scrollTo(Number.MAX_SAFE_INTEGER)), this.pinned = false, this.jumping = true;
+    this.isJumping() || !t || null == n || u.Z.useReducedMotion || (m.default.extractTimestamp(e) > n ? this.scrollTo(0) : this.scrollTo(Number.MAX_SAFE_INTEGER)), this.pinned = false, this.jumping = true;
     let i = () => {
-      this.jumping = false, (0, a.kK)(r) && d.Z.keyboardModeEnabled && r.focus({
+      this.jumping = false, (0, a.kK)(r) && u.Z.keyboardModeEnabled && r.focus({
         preventScroll: true
       }), this.scrollCounter = 0, this.handleScroll(), this._scrollCompleteCallbacks.forEach(e => e())
     };
@@ -576,11 +576,11 @@ function j(e) {
     placeholderHeight: o,
     canLoadMore: s = true,
     handleScrollToBottom: c,
-    handleScrollFromBottom: d,
+    handleScrollFromBottom: u,
     additionalMessagePadding: p = 0
   } = e, {
     windowId: h
-  } = r.useContext(u.ZP), [f] = r.useState(() => new O({
+  } = r.useContext(d.ZP), [f] = r.useState(() => new O({
     messages: t,
     channel: n,
     compact: i,
@@ -590,7 +590,7 @@ function j(e) {
     canLoadMore: s,
     windowId: h,
     handleScrollToBottom: c,
-    handleScrollFromBottom: d,
+    handleScrollFromBottom: u,
     additionalMessagePadding: p
   }));
   return f.getSnapshotBeforeUpdate(a), r.useLayoutEffect(() => f.mergePropsAndUpdate({
@@ -603,7 +603,7 @@ function j(e) {
     canLoadMore: s,
     windowId: h,
     handleScrollToBottom: c,
-    handleScrollFromBottom: d,
+    handleScrollFromBottom: u,
     additionalMessagePadding: p
   })), r.useLayoutEffect(() => () => f.cleanup(), [f]), f
 }

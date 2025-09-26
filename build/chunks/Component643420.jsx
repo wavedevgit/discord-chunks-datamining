@@ -7,9 +7,9 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk238651 = require("./238651.js"),
-  Chunk40851 = require("./40851.jsx"),
   Chunk745510 = require("./745510.jsx"),
   Chunk661637 = require("./661637.js"),
+  Chunk728285 = require("./728285.jsx"),
   Chunk146128 = require("./146128.jsx"),
   Chunk981631 = require("./981631.js");
 
@@ -110,11 +110,11 @@ let h = 1e3 / 60,
 function y(e) {
   let {
     children: t
-  } = e, [n, l] = i.useState(false), d = (0, o.bp)(), [_, y] = i.useState(null), {
+  } = e, [n, s] = i.useState(false), d = (0, l.bp)(), [_, y] = i.useState(null), {
     confettiCanvas: O
-  } = i.useContext(s.h), v = (0, a.uR)(O, _), I = i.useMemo(() => ({
-    triggerAnimation: () => l(true),
-    untriggerAnimation: () => l(false)
+  } = i.useContext(o.h), v = (0, a.uR)(O, _), I = i.useMemo(() => ({
+    triggerAnimation: () => s(true),
+    untriggerAnimation: () => s(false)
   }), []), T = i.useCallback(() => {
     let e = null == O ? true : O.getCanvas();
     if (null == e) return;
