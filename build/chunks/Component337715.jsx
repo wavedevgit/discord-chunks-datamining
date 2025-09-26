@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
 let d = e => {
   let {
     cohort: t
-  } = e, n = t === a.TO.COHORT_1 ? l.intl.string(l.t.GVrMQE) : l.intl.string(l.t.JKWTSk);
+  } = e, n = t === a.TO.COHORT_1 ? l.intl.string(l.t.GVrMQE) : l.intl.string(l.t.JKWTSk), d = (0, a.h3)();
   return (0, r.jsxs)(i.$1m, {
     className: c.container,
     color: "nitro-pink",
@@ -26,11 +26,11 @@ let d = e => {
         color: "header-primary",
         className: c.wordmark,
         children: l.intl.string(l.t.Ipxkoq)
-      }), (0, r.jsx)(i.Text, {
+      }), d > 0 && (0, r.jsx)(i.Text, {
         variant: "text-sm/medium",
         color: "text-secondary",
         children: l.intl.format(l.t["4mljX1"], {
-          days: (0, a.h3)()
+          days: d
         })
       })]
     }), (0, r.jsxs)("div", {

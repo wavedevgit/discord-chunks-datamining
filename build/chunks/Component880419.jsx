@@ -1,14 +1,14 @@
 /** Chunk was on 51727 **/
 /** chunk id: 880419, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Po: () => O,
-  ZP: () => v
+  Po: () => b,
+  ZP: () => O
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
-  Chunk755721 = require("./755721.js"),
+  Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk762762 = require("./762762.js"),
   Chunk973772 = require("./973772.js"),
@@ -37,43 +37,7 @@ function m(e) {
   return e
 }
 
-function b(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
-    }
-    return n
-  })(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-
-function _(e) {
-  let {
-    cost: t,
-    isActive: n,
-    compact: i,
-    iconSize: l
-  } = e, o = null != l ? l : "sm", a = n ? (0, r.jsx)(s.mTd, {
-    size: o,
-    color: "currentColor"
-  }) : (0, r.jsx)(s.$Eu, {
-    size: o,
-    color: "currentColor"
-  }), c = h.intl.string(n ? f.default.TZsu1d : f.default.gSxlHR);
-  return (0, r.jsxs)(r.Fragment, {
-    children: [!i && c, !i && (0, r.jsx)("span", {
-      className: g.dot,
-      children: "•"
-    }), a, (0, r.jsx)("span", {
-      children: t
-    })]
-  })
-}
-
-function O(e) {
+function b(e) {
   let {
     cost: t
   } = e;
@@ -91,7 +55,7 @@ function O(e) {
   })
 }
 
-function y(e) {
+function _(e) {
   let {
     guildId: t,
     powerup: n
@@ -111,34 +75,22 @@ function y(e) {
       })]
     })
   }
-  if (i.type === p.A3.POWERUP_ACTIVATED) return (0, r.jsx)(O, {
+  if (i.type === p.A3.POWERUP_ACTIVATED) return (0, r.jsx)(b, {
     cost: n.cost
   })
 }
 
-function v(e) {
-  var {
+function O(e) {
+  let {
     guildId: t,
     powerup: n,
     compact: l,
-    iconSize: O,
-    onError: v
-  } = e, j = function(e, t) {
-    if (null == e) return {};
-    var n, r, i = function(e, t) {
-      if (null == e) return {};
-      var n, r, i = {},
-        l = Object.keys(e);
-      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-      return i
-    }(e, t);
-    if (Object.getOwnPropertySymbols) {
-      var l = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
-    }
-    return i
-  }(e, ["guildId", "powerup", "compact", "iconSize", "onError"]);
-  let {
+    iconSize: b,
+    size: O,
+    grow: y,
+    className: v,
+    onError: j
+  } = e, {
     onActivate: x,
     isLoading: C,
     error: E,
@@ -148,32 +100,79 @@ function v(e) {
     reason: N
   } = (0, c.Z)(t, n, P);
   return i.useEffect(() => {
-    null == v || v(E)
-  }, [E, v]), (0, r.jsx)(s.ua7, {
+    null == j || j(E)
+  }, [E, j]), (0, r.jsx)(s.ua7, {
     delay: 100,
     "aria-label": null != N ? N : P ? h.intl.string(f.default.TZsu1d) : true,
-    text: null != N ? N : P ? (0, r.jsx)(y, {
+    text: null != N ? N : P ? (0, r.jsx)(_, {
       guildId: t,
       powerup: n
     }) : true,
-    children: e => (0, r.jsx)(a.zx, b(m(b(m({}, e), {
-      className: g.secondaryButton,
-      innerClassName: g.buttonInner,
-      wrapperClassName: o()(g.secondaryButton, {
-        [g.buttonWrapper]: true === j.grow
-      }),
-      color: P ? a.Tt.PRIMARY : a.Tt.BRAND,
-      "aria-label": h.intl.string(P ? f.default.TZsu1d : f.default.gSxlHR),
-      disabled: I,
-      onClick: P ? S : x,
-      submitting: C
-    }), j), {
-      children: (0, r.jsx)(_, {
-        cost: n.cost,
-        isActive: P,
-        compact: l,
-        iconSize: O
-      })
-    }))
+    children: e => {
+      var t, i;
+      return (0, r.jsx)("div", (t = m({}, e), i = i = {
+        className: o()(g.secondaryButton, {
+          [g.buttonWrapper]: y,
+          [g.noGrow]: !y
+        }, v),
+        children: (() => {
+          let {
+            text: e,
+            icon: t
+          } = function(e) {
+            let {
+              cost: t,
+              isActive: n,
+              compact: i,
+              iconSize: l
+            } = e, o = null != l ? l : "sm", a = n ? s.mTd : s.$Eu;
+            return i ? {
+              text: t.toString(),
+              icon: a
+            } : {
+              text: h.intl.format(n ? f.default.uzQpQU : f.default.ad2Mfn, {
+                boostCount: t,
+                dotHook: () => (0, r.jsx)("span", {
+                  className: g.dot,
+                  children: "•"
+                }),
+                boostIconHook: () => (0, r.jsx)(a, {
+                  size: o,
+                  color: "currentColor",
+                  className: g.boostIcon
+                })
+              })
+            }
+          }({
+            cost: n.cost,
+            isActive: P,
+            compact: l,
+            iconSize: b
+          });
+          return (0, r.jsx)(a.zxk, m({
+            variant: P ? "secondary" : "primary",
+            "aria-label": h.intl.string(P ? f.default.TZsu1d : f.default.gSxlHR),
+            disabled: I,
+            onClick: P ? S : x,
+            loading: C,
+            fullWidth: y,
+            size: null != O ? O : l ? "md" : true,
+            text: e,
+            minWidth: 0
+          }, l ? {
+            icon: t
+          } : {}))
+        })()
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+        var n = Object.keys(e);
+        if (Object.getOwnPropertySymbols) {
+          var r = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, r)
+        }
+        return n
+      })(Object(i)).forEach(function(e) {
+        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(i, e))
+      }), t))
+    }
   })
 }

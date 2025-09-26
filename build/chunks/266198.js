@@ -62,7 +62,7 @@ function T() {
 }
 
 function S() {
-  return "production" !== window.GLOBAL_ENV.PROJECT_ENV || 3 >= T()
+  return "production" !== window.GLOBAL_ENV.PROJECT_ENV || 4 >= T()
 }
 async function A() {
   var e, t;

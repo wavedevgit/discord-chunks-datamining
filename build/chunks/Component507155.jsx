@@ -26,16 +26,15 @@ function x(e) {
   } = e, [x, b] = o.useState(false), g = (0, c.ZP)(r, a), O = (0, m._)(a, g, false), y = (0, c.UP)(g), {
     disabled: C
   } = (0, l.Z)(r, a, y), {
-    onShowDeactivate: h,
-    onActivate: P
-  } = (0, f.ZP)(r, a), k = !t || C, _ = y && !k, w = (0, n.jsxs)(n.Fragment, {
+    onActivate: h
+  } = (0, f.ZP)(r, a), P = !t || C, k = y && !P, _ = (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsx)("div", {
       className: i()(j.perkCardImage, {
         [j.active]: y
       }),
       children: (0, n.jsx)(u.m, {
         powerup: a,
-        isHovering: !k && x
+        isHovering: !P && x
       })
     }), (0, n.jsxs)("div", {
       className: j.footerContainer,
@@ -44,7 +43,7 @@ function x(e) {
         children: [(0, n.jsx)("div", {
           children: (0, n.jsx)(s.Text, {
             variant: "text-sm/medium",
-            color: (y || x) && !k ? "text-primary" : "text-secondary",
+            color: (y || x) && !P ? "text-primary" : "text-secondary",
             children: a.description
           })
         }), (0, n.jsxs)("div", {
@@ -69,35 +68,34 @@ function x(e) {
             })]
           })]
         })]
-      }), _ && (0, n.jsx)(p.ZP, {
+      }), k && (0, n.jsx)(p.ZP, {
         compact: true,
         iconSize: "md",
         guildId: r,
         powerup: a,
-        onClick: h,
         className: j.toggleButton
       })]
     })]
   });
   return y ? (0, n.jsx)("div", {
     className: i()(j.perkCard, j.activeCard, {
-      [j.disabled]: k
+      [j.disabled]: P
     }),
     onMouseEnter: () => b(true),
     onMouseLeave: () => b(false),
-    children: w
+    children: _
   }) : (0, n.jsx)(s.P3F, {
     className: i()(j.perkCard, {
-      [j.disabled]: k
+      [j.disabled]: P
     }),
     onMouseEnter: () => b(true),
     onMouseLeave: () => b(false),
-    "aria-disabled": k,
+    "aria-disabled": P,
     onClick: e => {
-      e.stopPropagation(), k || null == P || P(e, {
+      e.stopPropagation(), P || null == h || h(e, {
         shouldCloseAllModals: false
       })
     },
-    children: w
+    children: _
   })
 }
