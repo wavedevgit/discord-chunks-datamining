@@ -228,7 +228,7 @@ let eb = e => {
       }
       return l
     }(e, ["tab", "product", "onMount", "shopBlockType"]);
-    let s = (0, f.e7)([T.Z], () => T.Z.purchases),
+    let s = (0, f.e7)([R.Z], () => R.Z.purchases),
       c = (0, N.o)(r, s),
       u = (0, $.W)(r, c),
       d = l.useRef(null),
@@ -274,7 +274,7 @@ function ev(e) {
     isPartiallyOwnedBundle: y,
     isDisabled: O,
     discount: P
-  } = e, _ = (0, R.sp)(), E = (0, L.rN)(t), [A, N] = (0, f.Wu)([T.Z], () => [T.Z.isClaiming === t.skuId, null != T.Z.isClaiming && T.Z.isClaiming !== t.skuId]), D = (0, L.XM)(l, d, false), M = (0, L.Vw)(l, d, false), Z = (0, L.ne)({
+  } = e, _ = (0, T.sp)(), E = (0, L.rN)(t), [A, N] = (0, f.Wu)([R.Z], () => [R.Z.isClaiming === t.skuId, null != R.Z.isClaiming && R.Z.isClaiming !== t.skuId]), D = (0, L.XM)(l, d, false), M = (0, L.Vw)(l, d, false), Z = (0, L.ne)({
     product: l,
     isPartiallyOwnedBundle: y,
     isPurchased: g
@@ -500,7 +500,7 @@ function ev(e) {
           onClick: e => {
             e.stopPropagation(), Y(e)
           }
-        }) : (0, n.jsx)(R.k0, {
+        }) : (0, n.jsx)(T.k0, {
           newValue: {
             pageCategory: r === es.AW.HOME || null == _ ? true : _.pageCategory
           },
@@ -532,8 +532,8 @@ let ej = Chunk647438.memo(function(e) {
       className: S,
       shopBlockType: w
     } = e, {
-      analyticsLocations: T
-    } = (0, O.ZP)([m.Z.COLLECTIBLES_SHOP_CARD]), N = (0, R.sp)(), k = (0, eo.G)("CollectiblesShopTallCard"), Z = null != w && w === d.z.HERO && k ? es.Ch.THUMBNAIL : es.Ch.DEFAULT, U = (0, _.Y)({
+      analyticsLocations: R
+    } = (0, O.ZP)([m.Z.COLLECTIBLES_SHOP_CARD]), N = (0, T.sp)(), k = (0, eo.G)("CollectiblesShopTallCard"), Z = null != w && w === d.z.HERO && k ? es.Ch.THUMBNAIL : es.Ch.DEFAULT, U = (0, _.Y)({
       location: "CollectiblesShopTallCard"
     }), F = (0, g.Z)(p), V = (0, et.m)(p), G = F || V, q = (0, el.To)(t), J = (0, f.e7)([y.Z], () => y.Z.useReducedMotion), Q = A.ZP.canUseCollectibles(r), $ = l.useMemo(() => (0, L.BH)(t, Q), [t, Q]), ee = (0, L.G1)(t), er = (0, f.e7)([E.Z], () => (0, h.wjy)(E.Z.theme)), en = (0, L.Yq)(t.skuId), ea = i.skuId === c.T.ANIME_V3 && (0, L.WW)(t.skuId), {
       isPurchased: eu,
@@ -583,13 +583,13 @@ let ej = Chunk647438.memo(function(e) {
         product: t,
         category: i,
         shouldCheckoutWithOrbs: n,
-        analyticsLocations: T,
+        analyticsLocations: R,
         analyticsSource: e,
         returnRef: eE,
         tab: s,
         variantType: Z
       })
-    }, [t, i, s, T, N, Z]), eI = eS(m.Z.COLLECTIBLES_SHOP_CARD);
+    }, [t, i, s, R, N, Z]), eI = eS(m.Z.COLLECTIBLES_SHOP_CARD);
     if (0 === ex.length || (0, L.x6)(t) && null != $ && $.discountPercentage < 0) return null;
     let eA = a()(ep.badge, {
       [ep.badgeLeftAligned]: U
@@ -723,7 +723,7 @@ let ej = Chunk647438.memo(function(e) {
             selectedProduct: b,
             selectedVariantIndex: j,
             cardRef: p,
-            analyticsLocations: T,
+            analyticsLocations: R,
             isPremiumUser: Q,
             isPremiumProduct: ee,
             isPartiallyOwnedBundle: eg,

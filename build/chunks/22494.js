@@ -1,14 +1,14 @@
 /** Chunk was on 18539 **/
 /** chunk id: 22494, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => c
+  Z: () => u
 });
 var Chunk81825 = require("./81825.js"),
   Chunk523080 = require("./523080.js"),
   Chunk541699 = require("./541699.js"),
   Chunk981631 = require("./981631.js");
 
-function u(e, t, r) {
+function c(e, t, r) {
   return t in e ? Object.defineProperty(e, t, {
     value: r,
     enumerable: true,
@@ -16,13 +16,13 @@ function u(e, t, r) {
     writable: true
   }) : e[t] = r, e
 }
-class c extends Chunk81825.Z {
+class u extends Chunk81825.Z {
   static fromServer(e) {
     var t, r, {
         user_id: n,
-        wishlist_items: l
+        wishlist_items: a
       } = e,
-      a = function(e, t) {
+      l = function(e, t) {
         if (null == e) return {};
         var r, n, i = function(e, t) {
           if (null == e) return {};
@@ -37,21 +37,21 @@ class c extends Chunk81825.Z {
         }
         return i
       }(e, ["user_id", "wishlist_items"]);
-    let f = l.map(e => e.sku_product_line === s.POd.COLLECTIBLES ? o.Z.fromServer(e) : i.Z.fromServer(e));
-    return new c((t = function(e) {
+    let d = a.map(e => e.sku_product_line === s.POd.COLLECTIBLES ? o.Z.fromServer(e) : i.Z.fromServer(e));
+    return new u((t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var r = null != arguments[t] ? arguments[t] : {},
           n = Object.keys(r);
         "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
           return Object.getOwnPropertyDescriptor(r, e).enumerable
         }))), n.forEach(function(t) {
-          u(e, t, r[t])
+          c(e, t, r[t])
         })
       }
       return e
-    }({}, a), r = r = {
+    }({}, l), r = r = {
       userId: n,
-      items: f
+      items: d
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
       var r = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -70,6 +70,6 @@ class c extends Chunk81825.Z {
     return this.items.some(t => t.skuId === e)
   }
   constructor(e) {
-    super(), u(this, "id", true), u(this, "userId", true), u(this, "items", true), this.id = e.id, this.userId = e.userId, this.items = e.items
+    super(), c(this, "id", true), c(this, "userId", true), c(this, "items", true), this.id = e.id, this.userId = e.userId, this.items = e.items
   }
 }

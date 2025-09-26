@@ -39,8 +39,8 @@ function x(e) {
     {
       analyticsLocations: _
     } = (0, r.ZP)(I),
-    [T, D] = i.useState(null != (n = S.initialStep) ? n : Object.keys(S.steps)[0]),
-    E = (0, m.Td)(O, true),
+    [T, E] = i.useState(null != (n = S.initialStep) ? n : Object.keys(S.steps)[0]),
+    D = (0, m.Td)(O, true),
     z = S.steps[T],
     [G, B] = i.useState(null == k ? true : k.id);
   i.useEffect(() => {
@@ -68,14 +68,14 @@ function x(e) {
     M(e);
     let i = null == N || null == (l = N.entitlements) || null == (n = l[e.entitlementId]) || null == (t = n.sku) ? true : t.product_id;
     null != i && B(i), q(e.planId), Q(e.name), J(e.regionId)
-  }, [null == N ? true : N.entitlements]), [W, Y] = i.useState(), [$, Q] = i.useState(null != (j = null == P ? true : P.name) ? j : ""), [H, J] = i.useState(null != (x = null == P ? true : P.regionId) ? x : ""), [ee, et] = i.useState(false), en = i.useCallback(() => {
+  }, [null == N ? true : N.entitlements]), [Y, W] = i.useState(), [$, Q] = i.useState(null != (j = null == P ? true : P.name) ? j : ""), [H, J] = i.useState(null != (x = null == P ? true : P.regionId) ? x : ""), [ee, et] = i.useState(false), en = i.useCallback(() => {
     if (R(true), 0 === X || null == Z || null == L || null == V) return;
     let e = () => {
       et(true);
       let e = new Promise(e => {
         setTimeout(() => e(true), b.cF)
       });
-      Promise.all([(0, v.NE)(Z.id, V, $, H), e]).then(() => {
+      Promise.all([null != A ? (0, v.EY)(Z.id, A.entitlementId, V, $) : (0, v.NE)(Z.id, V, $, H), e]).then(() => {
         C(), (0, g.Z)(Z.id, L)
       }).catch(e => {
         var t, n;
@@ -84,9 +84,9 @@ function x(e) {
         et(false)
       })
     };
-    E < X ? (0, s.u)({
+    D < X ? (0, s.u)({
       analyticsLocation: I,
-      numberOfBoostsToAdd: X - E,
+      numberOfBoostsToAdd: X - D,
       analyticsLocations: _,
       guild: Z,
       intent: o.P.PERK,
@@ -95,13 +95,13 @@ function x(e) {
       },
       onSubscribeComplete: e
     }) : e()
-  }, [_, Z, E, V, I, L, $, H, C, X]), el = i.useCallback(e => {
+  }, [_, Z, D, V, I, L, $, H, C, X, A]), el = i.useCallback(e => {
     switch (e.type) {
       case "close":
         C();
         break;
       case "go-to-step":
-        D(e.step);
+        E(e.step);
         break;
       case "save":
         en()
@@ -132,9 +132,9 @@ function x(e) {
       planCost: X,
       planId: V,
       setPlanId: q,
-      footerNode: W,
-      setFooterNode: Y,
-      availableBoostCount: E,
+      footerNode: Y,
+      setFooterNode: W,
+      availableBoostCount: D,
       error: F
     },
     children: w

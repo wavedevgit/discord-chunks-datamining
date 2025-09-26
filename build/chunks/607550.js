@@ -4,21 +4,22 @@ require.d(exports, {
   Z: () => l
 });
 var Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js");
-let o = {},
-  s = () => ({
+  Chunk570140 = require("./570140.js"),
+  Chunk960048 = require("./960048.js");
+let s = {},
+  c = () => ({
     data: null,
     status: "not_loaded"
   });
 
 function u(e) {
   var t;
-  return null != (t = o[e]) ? t : o[e] = s()
+  return null != (t = s[e]) ? t : s[e] = c()
 }
-class c extends Chunk442837.ZP.Store {
+class a extends Chunk442837.ZP.Store {
   get(e) {
     var t;
-    return null != (t = o[e]) ? t : s()
+    return null != (t = s[e]) ? t : c()
   }
   getWishlist(e) {
     return this.get(e).data
@@ -44,7 +45,7 @@ class c extends Chunk442837.ZP.Store {
     return this.get(e).error
   }
 }
-let l = new c(Chunk570140.Z, {
+let l = new a(Chunk570140.Z, {
   WISHLIST_FETCH_START: function(e) {
     let {
       wishlistId: t
@@ -65,10 +66,30 @@ let l = new c(Chunk570140.Z, {
     } = e, n = u(t);
     n.status = "error", n.error = r
   },
-  WISHLIST_ADD_SKU: function(e) {
-    let {} = e
+  WISHLIST_ADD_SKU_SUCCESS: function(e) {
+    let {
+      wishlistId: t,
+      wishlistData: r
+    } = e, n = u(t);
+    n.data = r, n.status = "success", n.error = true
   },
-  WISHLIST_REMOVE_SKU: function(e) {
-    let {} = e
+  WISHLIST_ADD_SKU_FAILURE: function(e) {
+    let {
+      error: t
+    } = e;
+    o.Z.captureException(t)
+  },
+  WISHLIST_REMOVE_SKU_SUCCESS: function(e) {
+    let {
+      wishlistId: t,
+      wishlistData: r
+    } = e, n = u(t);
+    n.data = r, n.status = "success", n.error = true
+  },
+  WISHLIST_REMOVE_SKU_FAILURE: function(e) {
+    let {
+      error: t
+    } = e;
+    o.Z.captureException(t)
   }
 })

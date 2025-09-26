@@ -2,13 +2,14 @@
 /** chunk id: 744993, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   EC: () => x,
+  EY: () => _,
   NE: () => j,
   TN: () => g,
-  _k: () => y,
+  _k: () => C,
   g$: () => b,
   iX: () => f,
   po: () => h,
-  s9: () => _,
+  s9: () => y,
   yP: () => v
 }), require("./642613.js");
 var Chunk544891 = require("./544891.js"),
@@ -133,7 +134,19 @@ function j(e, t, n, r) {
   })
 }
 
-function _(e, t, n) {
+function _(e, t, n, r) {
+  return a.tn.patch({
+    url: p.ANM.GUILD_POWERUP_UPDATE(e, t),
+    body: {
+      game_server_name: r,
+      sku_id: n
+    },
+    rejectWithError: true,
+    oldFormErrors: true
+  })
+}
+
+function y(e, t, n) {
   return a.tn.del({
     url: p.ANM.GUILD_POWERUP_TOGGLE(e, t),
     query: {
@@ -144,7 +157,7 @@ function _(e, t, n) {
   })
 }
 
-function y(e) {
+function C(e) {
   return a.tn.get({
     url: p.ANM.GAME_SERVER_REGIONS(e),
     rejectWithError: true,

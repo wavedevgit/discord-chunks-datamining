@@ -1,7 +1,7 @@
 /** Chunk was on 18539 **/
 /** chunk id: 277511, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => l
+  Z: () => a
 });
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
@@ -9,7 +9,7 @@ var Chunk544891 = require("./544891.js"),
   Chunk960048 = require("./960048.js"),
   Chunk22494 = require("./22494.js"),
   Chunk981631 = require("./981631.js");
-let l = {
+let a = {
   async fetchWishlist(e) {
     i.Z.dispatch({
       type: "WISHLIST_FETCH_START",
@@ -18,11 +18,11 @@ let l = {
     try {
       var t;
       let r = await n.tn.get({
-        url: c.ANM.USER_WISHLIST(e),
+        url: u.ANM.USER_WISHLIST(e),
         rejectWithError: true
       });
       (null == (t = r.body) ? true : t.wishlist_items) == null && s.Z.captureMessage("Wishlist items not found in response");
-      let o = u.Z.fromServer(r.body);
+      let o = c.Z.fromServer(r.body);
       i.Z.dispatch({
         type: "WISHLIST_FETCH_SUCCESS",
         wishlistId: e,
@@ -36,18 +36,50 @@ let l = {
       }), s.Z.captureException(t)
     }
   },
-  addSkuToWishlist(e, t) {
-    i.Z.dispatch({
-      type: "WISHLIST_ADD_SKU",
-      wishlistId: e,
-      skuId: t
-    })
+  async addSkuToWishlist(e) {
+    try {
+      let t = await n.tn.post({
+          url: u.ANM.USER_WISHLIST_ITEMS,
+          body: {
+            sku_id: e
+          },
+          rejectWithError: true
+        }),
+        r = c.Z.fromServer(t.body);
+      i.Z.dispatch({
+        type: "WISHLIST_ADD_SKU_SUCCESS",
+        wishlistId: r.id,
+        skuId: e,
+        wishlistData: r
+      })
+    } catch (t) {
+      throw i.Z.dispatch({
+        type: "WISHLIST_ADD_SKU_FAILURE",
+        skuId: e,
+        error: new o.Hx(t)
+      }), t
+    }
   },
-  removeSkuFromWishlist(e, t) {
-    i.Z.dispatch({
-      type: "WISHLIST_REMOVE_SKU",
-      wishlistId: e,
-      skuId: t
-    })
+  async removeSkuFromWishlist(e, t) {
+    try {
+      let r = await n.tn.del({
+          url: u.ANM.USER_WISHLIST_ITEM(e, t),
+          rejectWithError: true
+        }),
+        o = c.Z.fromServer(r.body);
+      i.Z.dispatch({
+        type: "WISHLIST_REMOVE_SKU_SUCCESS",
+        wishlistId: e,
+        skuId: t,
+        wishlistData: o
+      })
+    } catch (r) {
+      throw i.Z.dispatch({
+        type: "WISHLIST_REMOVE_SKU_FAILURE",
+        wishlistId: e,
+        skuId: t,
+        error: new o.Hx(r)
+      }), r
+    }
   }
 }

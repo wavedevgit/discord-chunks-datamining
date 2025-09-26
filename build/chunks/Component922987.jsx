@@ -157,7 +157,7 @@ let I = {
       }, [Chunk481060, Chunk45572, exports])
     }
   },
-  R = e => {
+  T = e => {
     let {
       handleClose: t,
       handleStepChange: r
@@ -170,7 +170,7 @@ let I = {
       onClose: t
     }) : null
   },
-  T = e => {
+  R = e => {
     var t;
     let {
       handleClose: r
@@ -205,7 +205,7 @@ let I = {
       type: i.$jN.Type.WANDERING_CUBES
     });
     let A = null != (t = S.current) ? t : C,
-      R = null != x ? x.orbPriceAmount : null;
+      T = null != x ? x.orbPriceAmount : null;
     return (0, n.jsxs)(n.Fragment, {
       children: [(0, n.jsx)(h.Z, {}), (0, n.jsxs)(g.C3, {
         children: [(0, n.jsxs)(i.Kqy, {
@@ -218,12 +218,12 @@ let I = {
           })]
         }), (0, n.jsx)(j.A3, {
           skuId: y,
-          orbPriceAmount: R,
+          orbPriceAmount: T,
           orbBalance: A
         })]
       }), (0, n.jsx)(g.O3, {
         children: (0, n.jsx)(j.f9, {
-          orbPriceAmount: R,
+          orbPriceAmount: T,
           orbBalance: A,
           isSubmitting: _,
           onClickCheckout: I
@@ -233,10 +233,10 @@ let I = {
   },
   N = [{
     key: null,
-    renderStep: e => (0, n.jsx)(R, x({}, e))
+    renderStep: e => (0, n.jsx)(T, x({}, e))
   }, {
     key: Chunk409813.h8.REVIEW,
-    renderStep: e => (0, n.jsx)(T, x({}, e)),
+    renderStep: e => (0, n.jsx)(R, x({}, e)),
     options: {
       useBreadcrumbLabel: () => Chunk388032.intl.string(Chunk388032.t.QBnNHh)
     }
