@@ -48,8 +48,8 @@ function N(e) {
   }), _ = (0, h.b)({
     location: "UserProfileModalV2Activity"
   }), R = (0, c.P6)("UserProfileModalV2Activity"), {
-    live: L,
-    recent: U,
+    live: U,
+    recent: L,
     stream: M
   } = (0, p.Z)(t.id), {
     voiceChannel: F,
@@ -60,7 +60,7 @@ function N(e) {
   }), B = (0, i.e7)([o.Z], () => o.Z.isFetchingUserOutbox(t.id)), W = t.id === r.id, z = (0, i.e7)([f.Z, d.Z], () => {
     let e = W ? f.Z.getStatus() : d.Z.getStatus(t.id);
     return e === l.Skl.OFFLINE || e === l.Skl.INVISIBLE
-  }), H = L.length > 0 || null != M, Y = D && null == M && null == G && null != F, q = !z && (H || Y), V = U.length > 0, K = L.some(e => (0, a.Z)(e));
+  }), H = U.length > 0 || null != M, Y = D && null == M && null == G && null != F, q = !z && (H || Y), V = L.length > 0, K = U.some(e => (0, a.Z)(e));
   if (!q && !V && B) return (0, n.jsx)("div", {
     className: C.cards,
     children: Array.from({
@@ -97,7 +97,7 @@ function N(e) {
         children: (0, n.jsxs)("ul", {
           className: C.cards,
           children: [e && (0, n.jsx)("li", {
-            children: (0, n.jsx)(b.Z, {
+            children: (0, n.jsx)(v.Z, {
               variant: "horizontal"
             })
           }), !_ && Y && (0, n.jsx)("li", {
@@ -114,8 +114,8 @@ function N(e) {
               stream: M,
               onClose: Z
             })
-          }), L.map((e, i) => (0, n.jsx)("li", {
-            children: (0, n.jsx)(v.Z, {
+          }), U.map((e, i) => (0, n.jsx)("li", {
+            children: (0, n.jsx)(b.Z, {
               user: t,
               currentUser: r,
               activity: e,
@@ -132,7 +132,7 @@ function N(e) {
         })
       }) : e ? (0, n.jsx)(P.Z, {
         heading: E.intl.string(E.t.J6STd3),
-        children: (0, n.jsx)(b.Z, {
+        children: (0, n.jsx)(v.Z, {
           variant: "horizontal"
         })
       }) : null
@@ -147,7 +147,7 @@ function N(e) {
       scrollIntoView: k === w.Tb.RECENT_ACTIVITY,
       children: (0, n.jsx)("ul", {
         className: C.cards,
-        children: U.map(e => (0, n.jsx)("li", {
+        children: L.map(e => (0, n.jsx)("li", {
           children: (0, n.jsx)(y.Z, {
             user: t,
             entry: e,

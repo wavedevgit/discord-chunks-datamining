@@ -13,6 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk335131 = require("./335131.js"),
   Chunk602733 = require("./602733.js"),
+  Chunk594174 = require("./594174.js"),
   Chunk621853 = require("./621853.js"),
   Chunk661462 = require("./661462.jsx"),
   Chunk319396 = require("./319396.jsx"),
@@ -23,63 +24,66 @@ function b(e) {
   let {
     profileOwner: t
   } = e, {
-    defaultWishlistId: r
-  } = (0, l.cj)([f.Z], () => ({
-    defaultWishlistId: f.Z.getFirstWishlistId(t.id)
+    defaultWishlistId: r,
+    currentUser: b
+  } = (0, l.cj)([g.Z, f.default], () => ({
+    defaultWishlistId: g.Z.getFirstWishlistId(t.id),
+    currentUser: f.default.getCurrentUser()
   })), {
-    analyticsLocations: b
-  } = (0, c.ZP)(), {
-    wishlist: v,
-    error: y
-  } = (0, d.k)(r), j = i.useCallback(() => {
+    analyticsLocations: y
+  } = (0, c.ZP)(), j = (null == b ? true : b.id) === t.id, {
+    wishlist: O,
+    error: x
+  } = (0, d.k)(r), P = i.useCallback(() => {
     (0, a.pT)(), (0, u.mK)({
-      analyticsLocations: b,
+      analyticsLocations: y,
       analyticsSource: o.Z.USER_PROFILE_WISHLIST,
       openInLayer: false
     })
-  }, [b]);
-  return null != y ? null : null == v || 0 === v.items.length ? (0, n.jsx)(g.F, {
+  }, [y]);
+  return null != x ? null : null == O || 0 === O.items.length ? (0, n.jsx)(h.F, {
     fade: true,
     children: (0, n.jsxs)("div", {
-      className: m.emptyStateContainer,
+      className: v.emptyStateContainer,
       children: [(0, n.jsxs)("div", {
-        className: m.emptyStateText,
+        className: v.emptyStateText,
         children: [(0, n.jsx)(s.X6q, {
           variant: "heading-md/medium",
           color: "header-primary",
-          children: p.intl.string(p.t.HGnLLS)
+          children: m.intl.string(m.t.HGnLLS)
         }), (0, n.jsx)(s.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
-          children: p.intl.string(p.t["/X1ny8"])
+          children: m.intl.string(m.t["/X1ny8"])
         })]
-      }), (0, n.jsx)(s.zxk, {
+      }), j && (0, n.jsx)(s.zxk, {
         variant: "primary",
         icon: s.EOn,
-        text: p.intl.string(p.t.ZbS4QE),
-        onClick: j
+        text: m.intl.string(m.t.ZbS4QE),
+        onClick: P
       })]
     })
-  }) : (0, n.jsxs)(g.F, {
+  }) : (0, n.jsxs)(h.F, {
     fade: true,
     children: [(0, n.jsxs)("div", {
-      className: m.headerRow,
+      className: v.headerRow,
       children: [(0, n.jsx)(s.Text, {
         variant: "text-sm/normal",
         color: "text-secondary",
-        children: p.intl.format(p.t.r6Y1Li, {
-          count: v.items.length
+        children: m.intl.format(m.t.r6Y1Li, {
+          count: O.items.length
         })
-      }), (0, n.jsx)(s.zxk, {
+      }), j && (0, n.jsx)(s.zxk, {
         variant: "secondary",
         size: "sm",
         icon: s.qJs,
-        text: p.intl.string(p.t.SDUwMz),
-        onClick: j
+        text: m.intl.string(m.t.SDUwMz),
+        onClick: P
       })]
-    }), (0, n.jsx)(h.Z, {
-      items: v.items,
-      profileOwner: t
+    }), (0, n.jsx)(p.Z, {
+      items: O.items,
+      profileOwner: t,
+      canEdit: j
     })]
   })
 }

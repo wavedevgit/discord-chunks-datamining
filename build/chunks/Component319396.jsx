@@ -18,32 +18,36 @@ function u(e) {
     item: t,
     user: r,
     profileOwner: i,
-    wishlistId: a
+    wishlistId: a,
+    canEdit: s
   } = e;
   return (0, l.Q)(t) ? (0, n.jsx)(o.Z, {
     item: t,
     user: r,
     profileOwner: i,
-    wishlistId: a
+    wishlistId: a,
+    canEdit: s
   }) : null
 }
 
 function d(e) {
   let {
     items: t,
-    profileOwner: r
-  } = e, l = a.default.getCurrentUser(), {
-    defaultWishlistId: o
+    profileOwner: r,
+    canEdit: l
+  } = e, o = a.default.getCurrentUser(), {
+    defaultWishlistId: d
   } = (0, i.cj)([s.Z], () => ({
     defaultWishlistId: s.Z.getFirstWishlistId(r.id)
   }));
-  return null == l || null == o ? null : (0, n.jsx)("div", {
+  return null == o || null == d ? null : (0, n.jsx)("div", {
     className: c.grid,
     children: t.map(e => (0, n.jsx)(u, {
       item: e,
-      user: l,
+      user: o,
       profileOwner: r,
-      wishlistId: o
+      wishlistId: d,
+      canEdit: l
     }, e.skuId))
   })
 }

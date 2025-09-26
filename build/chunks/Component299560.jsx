@@ -56,7 +56,7 @@ let j = {
     },
     getAriaLabel: e => {
       var t, r;
-      return v.intl.formatToPlainString(v.t.KfGahI, {
+      return b.intl.formatToPlainString(b.t.KfGahI, {
         applicationName: null != (r = null == (t = c.Z.getApplication(e.applicationId)) ? true : t.name) ? r : ""
       })
     }
@@ -71,7 +71,7 @@ function O(e) {
     loading: c = false,
     trackUserProfileEditAction: u
   } = e, {
-    placeholder: v,
+    placeholder: b,
     getAriaLabel: O
   } = j[t], x = "small" === l, P = (0, d.SM)().data, S = i.useMemo(() => {
     switch (t) {
@@ -95,18 +95,18 @@ function O(e) {
     c || null == S || ((0, h.qH)(t, S), u({
       action: "WIDGET_ADDED",
       widgetEdited: t
-    }), (0, p.L$)(b.qb.WIDGET_ADDED), null == r || r())
+    }), (0, p.L$)(v.qb.WIDGET_ADDED), null == r || r())
   }, [c, t, S, u, r]);
   return null == S ? null : (0, n.jsxs)(o.P3F, {
     className: a()(y.addButtonContainer, x && y.sizeSmall, c && y.loading),
     onClick: w,
     "aria-label": O(S),
     "aria-busy": c,
-    children: ["details" === v.variant ? (0, n.jsx)(m.i, {
-      applicationId: v.applicationId,
+    children: ["details" === b.variant ? (0, n.jsx)(m.i, {
+      applicationId: b.applicationId,
       size: l
     }) : (0, n.jsx)(m.c, {
-      applicationIds: v.applicationIds,
+      applicationIds: b.applicationIds,
       size: l
     }), (0, n.jsxs)("div", {
       className: y.overlay,

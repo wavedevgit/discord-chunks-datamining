@@ -50,7 +50,7 @@ function O(e) {
     guildId: x
   });
   return (0, n.jsxs)(a.P3F, {
-    focusProps: I === b.l.MODAL_V2 ? {
+    focusProps: I === v.l.MODAL_V2 ? {
       offset: {
         top: 4,
         right: 4,
@@ -61,7 +61,7 @@ function O(e) {
         right: 8
       }
     },
-    className: v.row,
+    className: b.row,
     onClick: S,
     onContextMenu: e => {
       (0, s.jW)(e, async () => {
@@ -109,13 +109,13 @@ function O(e) {
       status: E ? m.Skl.UNKNOWN : O,
       statusBackdropColor: E ? true : (0, a.QFD)(w),
       isMobile: N,
-      className: v.avatar
+      className: b.avatar
     }), (0, n.jsxs)("div", {
-      className: v.details,
+      className: b.details,
       children: [(0, n.jsx)(o.Z, {
         user: t,
-        className: v.tag,
-        discriminatorClass: v.discriminator
+        className: b.tag,
+        discriminatorClass: b.discriminator
       }), (0, n.jsx)(d.Z, {
         user: t,
         activities: C,

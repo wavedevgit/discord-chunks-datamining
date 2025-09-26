@@ -51,8 +51,8 @@ function O(e) {
     function t() {
       O(true), e = setTimeout(() => O(false), 500)
     }
-    return d.S.subscribe(v.CkL.EMPHASIZE_NOTICE, t), () => {
-      d.S.unsubscribe(v.CkL.EMPHASIZE_NOTICE, t), null !== e && clearTimeout(e)
+    return d.S.subscribe(b.CkL.EMPHASIZE_NOTICE, t), () => {
+      d.S.unsubscribe(b.CkL.EMPHASIZE_NOTICE, t), null !== e && clearTimeout(e)
     }
   }, []), i.useEffect(() => {
     w && c.uvj.announce(y.intl.string(y.t["0Y/qkJ"]))
@@ -61,7 +61,7 @@ function O(e) {
       try {
         await h.Z.savePendingWidgets(x)
       } catch (e) {
-        (0, m.L$)(b.qb.WIDGET_SAVE_FAILURE);
+        (0, m.L$)(v.qb.WIDGET_SAVE_FAILURE);
         return
       }
       for (let e of P) {

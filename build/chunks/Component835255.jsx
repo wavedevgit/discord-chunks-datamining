@@ -2,7 +2,7 @@
 /** chunk id: 835255, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => v
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,19 +19,20 @@ var Chunk951288 = require("./951288.js"),
   Chunk474936 = require("./474936.js"),
   Chunk232644 = require("./232644.js");
 
-function b(e) {
+function v(e) {
   let {
     item: t,
     user: r,
-    profileOwner: b,
-    wishlistId: v
-  } = e, y = i.useRef(null), j = (0, o.Z)(y), O = t.collectiblesItem, {
-    analyticsLocations: x
-  } = (0, c.ZP)(), P = O.type === l.Z.PROFILE_EFFECT ? O.title : O.label;
+    profileOwner: v,
+    wishlistId: b,
+    canEdit: y
+  } = e, j = i.useRef(null), O = (0, o.Z)(j), x = t.collectiblesItem, {
+    analyticsLocations: P
+  } = (0, c.ZP)(), S = x.type === l.Z.PROFILE_EFFECT ? x.title : x.label;
   return (0, n.jsxs)("div", {
     className: m.container,
     children: [(0, n.jsx)(s.ua7, {
-      text: P,
+      text: S,
       children: e => {
         var i, o;
         return (0, n.jsx)(s.P3F, (i = function(e) {
@@ -53,28 +54,28 @@ function b(e) {
           return e
         }({}, e), o = o = {
           className: m.card,
-          innerRef: y,
+          innerRef: j,
           onClick: () => {
             (0, f.Z)({
               skuId: t.skuId,
               isGift: true,
               giftingOrigin: p.Wt.USER_PROFILE_WISHLIST,
-              analyticsLocations: x,
-              giftRecipient: b,
+              analyticsLocations: P,
+              giftRecipient: v,
               variantsReturnStyle: a.v.VARIANTS_GROUP
             })
           },
-          "aria-label": P,
+          "aria-label": S,
           children: (0, n.jsx)("div", {
             className: m.cardPreview,
             children: (() => {
-              switch (O.type) {
+              switch (x.type) {
                 case l.Z.PROFILE_EFFECT:
                   return (0, n.jsx)("div", {
                     className: m.profileEffectPreview,
                     children: (0, n.jsx)(g.Z, {
-                      profileEffectId: O.id,
-                      isHovering: j,
+                      profileEffectId: x.id,
+                      isHovering: O,
                       isPurchased: false,
                       removeSetHeight: true
                     })
@@ -83,9 +84,9 @@ function b(e) {
                   return (0, n.jsx)("div", {
                     className: m.avatarDecorationPreview,
                     children: (0, n.jsx)(u.R, {
-                      item: O,
+                      item: x,
                       user: r,
-                      isHighlighted: j,
+                      isHighlighted: O,
                       isPurchased: false,
                       avatarSize: s.EFr.SIZE_80
                     })
@@ -97,8 +98,8 @@ function b(e) {
                       className: m.nameplateTopLeft,
                       children: (0, n.jsx)(d.Z, {
                         user: r,
-                        nameplate: O,
-                        isHighlighted: j,
+                        nameplate: x,
+                        isHighlighted: O,
                         showPlaceholderUser: true,
                         showStatus: true,
                         isPurchased: false,
@@ -109,8 +110,8 @@ function b(e) {
                       className: m.nameplateBottomRight,
                       children: (0, n.jsx)(d.Z, {
                         user: r,
-                        nameplate: O,
-                        isHighlighted: j,
+                        nameplate: x,
+                        isHighlighted: O,
                         showPlaceholderUser: true,
                         showStatus: true,
                         isPurchased: false,
@@ -135,10 +136,10 @@ function b(e) {
           Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(o, e))
         }), i))
       }
-    }), (0, n.jsx)(h.Z, {
+    }), y && (0, n.jsx)(h.Z, {
       iconSize: "sm",
       item: t,
-      wishlistId: v,
+      wishlistId: b,
       className: m.removeItemButton
     })]
   })

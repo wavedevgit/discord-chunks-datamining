@@ -79,19 +79,19 @@ function p(e) {
     userId: l,
     className: p,
     hideTooltip: m = false
-  } = e, b = (0, c.Z)({
+  } = e, v = (0, c.Z)({
     location: "GameCover",
     applicationId: i,
     source: o.m1.UserProfile,
     sourceUserId: l,
     trackEntryPointImpression: true
-  }), v = null != r ? r : u.intl.string(u.t.GIWFlJ), y = u.intl.formatToPlainString(u.t["8QLQBw"], {
-    gameName: v
+  }), b = null != r ? r : u.intl.string(u.t.GIWFlJ), y = u.intl.formatToPlainString(u.t["8QLQBw"], {
+    gameName: b
   }), j = e => m ? e() : (0, n.jsx)(s.ua7, {
-    text: v,
+    text: b,
     children: t => e(t)
   });
-  return j(null == b ? e => (0, n.jsx)("div", g(f({
+  return j(null == v ? e => (0, n.jsx)("div", g(f({
     className: p
   }, e), {
     children: (0, n.jsx)(h, {
@@ -99,7 +99,7 @@ function p(e) {
       gameName: r
     })
   })) : e => (0, n.jsx)(s.P3F, g(f({}, e), {
-    onClick: b,
+    onClick: v,
     "aria-label": y,
     className: a()(d.clickable, p),
     children: (0, n.jsx)(h, {
