@@ -193,6 +193,7 @@ function U(e) {
     location: "QuestsCardFooter"
   });
   return o ? (0, r.jsx)(c.gtL, x(w({}, a), {
+    "data-migration-pending": true,
     wrapperClassName: R.ctaButtonWrapper,
     color: l.Tt.BRAND,
     disabled: null == i.onClick,

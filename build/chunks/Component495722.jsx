@@ -219,6 +219,7 @@ function z(e) {
         style: x
       }), (null == P ? true : P.shineWipe) && (0, r.jsx)(_.ZX5, {
         className: H.shine,
+        "data-migration-pending": true,
         shineSize: _.rHe.DEFAULT,
         shinePaused: !M || k
       })]
