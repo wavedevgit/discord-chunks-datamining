@@ -87,17 +87,9 @@ function R(e) {
   }, []), i.useEffect(() => {
     z.trim().length > 0 && ee && et(false), null == q && ee && et(false)
   }, [z, q, ee]), i.useEffect(() => {
-    if (null != q) {
-      var e;
-      null == (e = L.current) || e.focus()
-    }
-  }, [q]), i.useEffect(() => {
     var e;
     z !== (null != (e = null == D ? true : D.status) ? e : "") && "" !== z.trim() ? R(true) : R(false)
   }, [z, null == D ? true : D.status, q, null == D ? true : D.emoji, R]), i.useEffect(() => {
-    var e;
-    (null == K || K === I.tN.CUSTOM) && (null == (e = L.current) || e.focus())
-  }, [K]), i.useEffect(() => {
     null == k || k(null == G ? true : G.current)
   }, [G, k]);
   let er = i.useCallback(e => {
@@ -111,15 +103,15 @@ function R(e) {
       s()(n, null == D ? true : D.emoji) && r === (null == D ? true : D.status) || ((0, m._s)(e.status, e.emoji, true), Y(t ? null : e.emoji), W(t ? "" : e.status))
     }, [null == D ? true : D.emoji, null == D ? true : D.status]),
     el = i.useCallback(e => {
-      var t;
-      null == e || null == (t = e.preventDefault) || t.call(e), null != q && 0 === z.trim().length && et(true), J || ei({
+      var t, n;
+      null == e || null == (t = e.preventDefault) || t.call(e), null != q && 0 === z.trim().length && et(true), J || (ei({
         status: z,
         emoji: null != q ? q : {
           id: null,
           name: "\uD83D\uDCAD",
           animated: false
         }
-      }, true)
+      }, true), null == (n = L.current) || n.blur())
     }, [z, q, ei, J]),
     ea = i.useCallback(() => {
       let e = null,
