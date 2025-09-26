@@ -497,7 +497,9 @@ let ew = (0, Chunk730749.Z)(function(e) {
       canStartAuthorization: q,
       connectionApp: Q,
       startAuthorization: ed
-    } = (0, I.F)(O),
+    } = (0, I.FG)(O, {
+      allowedFlows: [I.ro.RPC]
+    }),
     {
       isQuestBarEmpty: eh,
       hasLoadedQuestBar: eg

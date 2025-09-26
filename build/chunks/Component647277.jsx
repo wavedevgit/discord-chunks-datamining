@@ -149,7 +149,7 @@ let T = e => {
       className: t
     } = e, {
       referralSentUsers: n
-    } = (0, p.G)(), i = (0, o.e7)([_.Z], () => _.Z.getRecipientStatus()), l = (0, o.e7)([_.Z], () => _.Z.getHasEligibleFriends()), c = i.size === p.Q && i.values().every(e => e === f.Fe.REDEEMED), d = i.size === p.Q, b = () => false === l ? g.intl.format(g.t["zWhX/f"], {
+    } = (0, p.G)(), i = (0, o.e7)([_.Z], () => _.Z.getRecipientStatus()), l = (0, o.e7)([_.Z], () => _.Z.getHasEligibleFriends()), c = i.size === p.Q && [...i.values()].every(e => e === f.Fe.REDEEMED), d = i.size === p.Q, b = () => false === l ? g.intl.format(g.t["zWhX/f"], {
       helpdeskArticle: u.Z.getArticleURL(m.BhN.REFERRAL_PROGRAM)
     }) : n.length === p.Q ? true === c ? g.intl.format(g.t["1aEjsL"], {
       helpdeskArticle: u.Z.getArticleURL(m.BhN.REFERRAL_PROGRAM)

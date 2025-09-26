@@ -25,5 +25,10 @@ let c = new l(Chunk570140.Z, {
   },
   USER_APPLICATION_IDENTITY_FETCH_USER_FAILURE: function(e) {
     a.delete(e.userId)
+  },
+  USER_APPLICATION_IDENTITY_REMOVE: function(e) {
+    let t = o.get(e.user_id);
+    if (null == t) returnfalse;
+    o.set(e.user_id, t.filter(t => t.application_id !== e.application_id))
   }
 })

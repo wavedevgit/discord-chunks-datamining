@@ -2,9 +2,9 @@
 /** chunk id: 833858, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  O8: () => y,
-  V: () => E,
-  tV: () => b
+  O8: () => S,
+  V: () => I,
+  tV: () => T
 });
 var Chunk970683 = require("./970683.js"),
   Chunk797156 = require("./797156.js"),
@@ -18,7 +18,46 @@ var Chunk970683 = require("./970683.js"),
   Chunk558532 = require("./558532.js"),
   Chunk346554 = require("./346554.js"),
   Chunk444305 = require("./444305.js");
-let h = () => ({
+
+function h(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function m(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      h(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function g(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function E(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+let b = () => ({
     [Chunk505905.tN.CHILLING]: {
       title: Chunk388032.intl.string(Chunk388032.t["vkpn7+"]),
       icon: Chunk857042
@@ -40,7 +79,7 @@ let h = () => ({
       icon: Chunk444305
     }
   }),
-  m = () => ({
+  y = () => ({
     [Chunk505905.tN.BRB]: {
       title: Chunk388032.intl.string(Chunk388032.t.fFTJTE),
       icon: Chunk136779
@@ -62,7 +101,7 @@ let h = () => ({
       icon: Chunk970683.Nl
     }
   }),
-  g = () => ({
+  O = () => ({
     [Chunk505905.tN.BRB]: {
       title: Chunk388032.intl.string(Chunk388032.t.fFTJTE),
       emoji: {
@@ -99,28 +138,39 @@ let h = () => ({
       }
     }
   }),
-  E = e => {
+  v = () => E(m({}, O()), {
+    [Chunk505905.tN.CHILLING]: {
+      title: Chunk388032.intl.string(Chunk388032.t.IeolFR),
+      emoji: {
+        id: true,
+        name: "\uD83D\uDCAD"
+      }
+    }
+  }),
+  I = e => {
     switch (e) {
       case "original":
       default:
-        return h();
+        return b();
       case "illocons":
-        return m();
+        return y();
       case "twemoji":
-        return g()
+        return O();
+      case "twemojimild":
+        return v()
     }
   },
-  b = function(e, t) {
+  T = function(e, t) {
     let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : "original";
     if ((null == t ? true : t.type) !== o.IIU.HANG_STATUS || (null == t ? true : t.state) == null) return null;
     let r = (0, i.F)(e, t.state),
       s = r[0];
     if (s === a.tN.CUSTOM) return null;
-    let l = E(r.length > 1 ? r[1] : n);
+    let l = I(r.length > 1 ? r[1] : n);
     return s in l ? l[s] : null
   },
-  y = function(e, t) {
+  S = function(e, t) {
     var n;
     let r = arguments.length > 2 && true !== arguments[2] ? arguments[2] : "original";
-    return (null == t ? true : t.type) !== o.IIU.HANG_STATUS || (null == t ? true : t.state) == null ? null : (0, i.F)(e, t.state)[0] === a.tN.CUSTOM ? null == t ? true : t.details : null == (n = b(e, t, r)) ? true : n.title
+    return (null == t ? true : t.type) !== o.IIU.HANG_STATUS || (null == t ? true : t.state) == null ? null : (0, i.F)(e, t.state)[0] === a.tN.CUSTOM ? null == t ? true : t.details : null == (n = T(e, t, r)) ? true : n.title
   }

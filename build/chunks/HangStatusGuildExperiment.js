@@ -46,7 +46,7 @@ let a = (0, Chunk818083.B)({
       setDefaultStatus: true,
       allowChannelTopic: true,
       allowPermanentClear: false,
-      defaultStatusVariant: "twemoji"
+      defaultStatusVariant: "twemojimild"
     }
   }, {
     id: 4,
@@ -56,7 +56,7 @@ let a = (0, Chunk818083.B)({
       setDefaultStatus: true,
       allowChannelTopic: true,
       allowPermanentClear: true,
-      defaultStatusVariant: "twemoji"
+      defaultStatusVariant: "twemojimild"
     }
   }, {
     id: 5,

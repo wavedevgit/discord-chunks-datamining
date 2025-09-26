@@ -29,11 +29,11 @@ function O(e) {
     disableInteraction: O = false
   } = e, x = null != (t = null == n ? true : n.filter(e => null != (0, p.zK)(e))) ? t : [], _ = x.length > 0, P = l.qH, w = o && !O && (0, f.M8)(c) && x.length < P, {
     trackUserProfileAction: I
-  } = (0, d.KZ)(), E = (0, i.useRef)(new Map), S = (0, i.useRef)(null), T = (0, i.useRef)(null), [D, N] = (0, i.useState)(0), [C, A] = (0, i.useState)(false), k = v(S, T, x, E, N);
+  } = (0, d.KZ)(), E = (0, i.useRef)(new Map), S = (0, i.useRef)(null), T = (0, i.useRef)(null), [D, N] = (0, i.useState)(0), [A, C] = (0, i.useState)(false), k = v(S, T, x, E, N);
   if ((0, i.useEffect)(() => (k(), window.addEventListener("resize", k), () => {
       window.removeEventListener("resize", k)
     }), [k, null == x ? true : x.join("")]), !_ && !w) return null;
-  let R = C ? x : x.slice(0, x.length - D);
+  let R = A ? x : x.slice(0, x.length - D);
   return (0, r.jsxs)("div", {
     className: a()(m.tagListContainer, u),
     children: [_ && (0, r.jsxs)(r.Fragment, {
@@ -50,16 +50,16 @@ function O(e) {
           },
           disableInteraction: O
         }, e))
-      }), D > 0 && (C ? (0, r.jsx)(h, {
+      }), D > 0 && (A ? (0, r.jsx)(h, {
         onClick: () => {
-          A(false), I({
+          C(false), I({
             action: "COLLAPSE_GAME_TAGS"
           })
         }
       }) : (0, r.jsx)(j, {
         numHidden: D,
         onClick: () => {
-          A(true), I({
+          C(true), I({
             action: "EXPAND_GAME_TAGS"
           })
         },

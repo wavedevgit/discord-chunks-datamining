@@ -38,8 +38,8 @@ function j(e) {
   } = (0, f.KZ)(), N = (0, p.Z)({
     widgetType: n.type,
     onAction: D
-  }), C = E && null != j && !s, {
-    isDragging: A,
+  }), A = E && null != j && !s, {
+    isDragging: C,
     dragSourcePosition: k
   } = (0, g.q)({
     dropRef: S,
@@ -47,11 +47,11 @@ function j(e) {
     userId: t,
     widget: n,
     index: j,
-    disableInteraction: !C
+    disableInteraction: !A
   }), [R, Z] = i.useState(false);
   return (0, r.jsx)(h, {
     ref: S,
-    disableInteraction: !C,
+    disableInteraction: !A,
     onMouseEnter: () => Z(true),
     onMouseLeave: () => Z(false),
     dragSourcePosition: k,
@@ -59,14 +59,14 @@ function j(e) {
     children: (0, r.jsxs)("section", {
       ref: N,
       className: a()(y.container, O, {
-        [y.isDragging]: A
+        [y.isDragging]: C
       }),
       "aria-labelledby": I,
-      children: [C && (0, r.jsx)(b.Z, {
+      children: [A && (0, r.jsx)(b.Z, {
         buttonRef: T,
         widget: n,
         className: a()(y.dragHandleButton, {
-          [y.opacity]: R || A
+          [y.opacity]: R || C
         }),
         additionalMenuItems: w
       }), (0, r.jsx)(m.Z, {

@@ -41,7 +41,7 @@ async function f(e, t, r) {
     } = n(371651),
     E = null != (f = null == g ? true : g.getMostRecentOverlayRenderMethod()) ? f : true,
     b = null != E ? l.gl[E] : true;
-  s.default.track(c.rMx.OVERLAY_TOGGLED, {
+  __OVERLAY__ && (b = l.gl[l.gl.Hook]), s.default.track(c.rMx.OVERLAY_TOGGLED, {
     enabled: e,
     setting_type: d(t),
     client_setting_type: t,

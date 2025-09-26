@@ -62,8 +62,8 @@ async function g(e, t) {
     O = i.ZP.getRunningGames().find(e => e.name === (null == y ? true : y.name)),
     v = (null == O ? true : O.pid) != null ? o.default.getTrackedGameByPid(null == O ? true : O.pid) : null,
     I = null != (p = null == v ? true : v.source) ? p : null,
-    T = null != (g = null != (m = null == v ? true : v.overlayMethod) ? m : o.default.getRenderMethod(null == O ? true : O.pid)) ? g : null;
-  switch (t = h({}, {
+    T = null != (g = null != (m = null == v ? true : v.overlayMethod) ? m : o.default.getRenderMethod(null == O ? true : O.pid)) ? g : null,
+    S = {
       overlay_game_source: I,
       overlay_game_name: null != y ? y.name : "Unknown Game",
       overlay_app_id: null != y ? y.id : null,
@@ -72,7 +72,8 @@ async function g(e, t) {
       overlay_game_elevated: null == O ? true : O.elevated,
       input_service_initialized: i.ZP.isInputServiceInitialized(),
       hardware_display_count: null != (E = await (null === r.Z || true === r.Z || null == (l = r.Z.hardware) || null == (n = l.getDisplayCount) ? true : n.call(l))) ? E : null
-    }, t), e) {
+    };
+  switch (__OVERLAY__ && (S.overlay_render_method = a.gl[a.gl.Hook]), t = h({}, S, t), e) {
     case _.rMx.VOICE_CHANNEL_SELECTED:
     case _.rMx.SETTINGS_PANE_VIEWED:
     case _.rMx.GUILD_VIEWED:

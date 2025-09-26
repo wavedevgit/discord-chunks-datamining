@@ -27,8 +27,8 @@ let d = Chunk647438.forwardRef(function(e, t) {
     tooltipClassName: h,
     onMouseEnter: g,
     onMouseLeave: j,
-    "aria-label": S,
-    "aria-checked": E,
+    "aria-label": E,
+    "aria-checked": S,
     role: N,
     tooltipColor: x,
     tooltipForceOpen: P,
@@ -46,7 +46,7 @@ let d = Chunk647438.forwardRef(function(e, t) {
   return (0, r.jsx)(s.ua7, {
     tooltipClassName: h,
     text: n,
-    "aria-label": S,
+    "aria-label": E,
     color: x,
     tooltipContentClassName: C,
     forceOpen: P,
@@ -58,7 +58,7 @@ let d = Chunk647438.forwardRef(function(e, t) {
           onMouseEnter: m,
           onMouseLeave: h
         } = e,
-        S = function(e, t) {
+        E = function(e, t) {
           if (null == e) return {};
           var n, r, l = function(e, t) {
             if (null == e) return {};
@@ -90,7 +90,7 @@ let d = Chunk647438.forwardRef(function(e, t) {
           })
         }
         return e
-      }({}, S), s = s = {
+      }({}, E), s = s = {
         buttonRef: t,
         look: o.zx.Looks.BLANK,
         size: o.zx.Sizes.NONE,
@@ -116,7 +116,7 @@ let d = Chunk647438.forwardRef(function(e, t) {
         },
         onContextMenu: i,
         role: N,
-        "aria-checked": E,
+        "aria-checked": S,
         focusProps: {
           offset: {
             left: false,

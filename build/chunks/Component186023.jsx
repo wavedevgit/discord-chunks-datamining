@@ -28,11 +28,11 @@ let h = e => {
     emailToken: j,
     isAuthenticated: y = true
   } = e, O = (0, c.Dt)(), {
-    nodes: I,
-    root_node_id: C,
+    nodes: C,
+    root_node_id: I,
     success_node_id: Z,
     fail_node_id: S
-  } = n, [T, P] = i.useState(C), [N, E] = i.useState(true), [k, w] = i.useState(true), [R, D] = i.useState([]), [A, M] = i.useState(true), [B, L] = i.useState(true), U = (0, _.PO)("in_app_report_modal");
+  } = n, [T, P] = i.useState(I), [N, E] = i.useState(true), [k, w] = i.useState(true), [R, D] = i.useState([]), [A, M] = i.useState(true), [B, L] = i.useState(true), U = (0, _.PO)("in_app_report_modal");
   (0, o.ZP)(() => {
     U && (0, u.k0)()
   });
@@ -40,7 +40,7 @@ let h = e => {
       var n, r, i;
       let {
         destination: a
-      } = e, [, o] = a, c = I[o];
+      } = e, [, o] = a, c = C[o];
       if (true === c) return void d.Z.increment({
         name: l.V.IN_APP_REPORT_NAVIGATE_TO_NONEXISTENT_NODE
       });
@@ -79,7 +79,7 @@ let h = e => {
           message_id: e,
           content_type: t.name,
           report_sub_type: c.report_type,
-          current_node: I[T].id,
+          current_node: C[T].id,
           next_node: c.id
         })
       }
@@ -89,44 +89,44 @@ let h = e => {
       var r;
       let i = y ? await (0, p.ZD)(n, t, [...R, e]) : await (0, p.fw)(n, t, [...R, e], j),
         l = null == i || null == (r = i.body) ? true : r.report_id;
-      null != l && M(l), L(I[e.nodeRef].report_type), null == x || x(l)
+      null != l && M(l), L(C[e.nodeRef].report_type), null == x || x(l)
     }, z = () => {
       var e, n;
       if (R.length < 1) return;
       let r = [...R],
         i = r.pop(),
-        l = null != (n = null == i ? true : i.nodeRef) ? n : C;
+        l = null != (n = null == i ? true : i.nodeRef) ? n : I;
       if (t.name === m.b.MESSAGE || t.name === m.b.FIRST_DM) {
         let e = t.record.id;
         s.ZP.trackWithMetadata(f.rMx.IAR_NAVIGATE, {
           message_id: e,
           content_type: t.name,
-          report_sub_type: I[l].report_type,
-          current_node: I[T].id,
-          next_node: I[l].id
+          report_sub_type: C[l].report_type,
+          current_node: C[T].id,
+          next_node: C[l].id
         })
       }
       E(null == i || null == (e = i.multiSelect) ? true : e.state), w(null == i ? true : i.textInput), P(l), D(r), null == v || v("..")
     }, F = i.useMemo(() => {
       let e = [],
         t = [];
-      for (let l in I) {
+      for (let l in C) {
         var n, r, i;
-        let a = I[l];
-        if (a.id !== Z && a.id !== S && a.id !== C) {
+        let a = C[l];
+        if (a.id !== Z && a.id !== S && a.id !== I) {
           if (a.key.endsWith("_SUBMIT") || (null == (n = a.button) ? true : n.type) === "submit") {
             t.push(a);
             continue
           }
           if (e.push(a), (null == (r = a.button) ? true : r.type) === "next") {
             let t = null == (i = a.button) ? true : i.target,
-              n = e.indexOf(I[t]);
-            false !== n && (e.splice(n, 1), e.push(I[t]))
+              n = e.indexOf(C[t]);
+            false !== n && (e.splice(n, 1), e.push(C[t]))
           }
         }
       }
-      return [I[C], ...e, ...t, I[Z], I[S]]
-    }, [I, C, S, Z]);
+      return [C[I], ...e, ...t, C[Z], C[S]]
+    }, [C, I, S, Z]);
   return (0, r.jsx)(a.Y0X, {
     "data-migration-pending": true,
     transitionState: h.transitionState,

@@ -163,7 +163,9 @@ let D = Chunk647438.memo(function(e) {
         startAuthorization: es,
         hasAlreadyLinked: ec,
         connectionApp: eu
-      } = (0, b.F)(K),
+      } = (0, b.FG)(K, {
+        allowedFlows: [b.ro.RPC]
+      }),
       ed = P.Z.useConfig({
         location: "ActivityActions"
       }).enabled,

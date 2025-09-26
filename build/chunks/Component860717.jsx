@@ -87,11 +87,11 @@ function T(e) {
         }
         return i
       }(t, ["body"]);
-      return (0, r.jsx)(C, E(I({}, i), {
+      return (0, r.jsx)(A, E(I({}, i), {
         body: N(n)
       }));
     case "GRID":
-      return (0, r.jsx)(A, {
+      return (0, r.jsx)(C, {
         children: N(t.children)
       });
     case "FIELD":
@@ -120,7 +120,7 @@ function N(e) {
   return e.map((e, t) => D(e, t))
 }
 
-function C(e) {
+function A(e) {
   let {
     title: t,
     body: n,
@@ -158,7 +158,7 @@ function C(e) {
   })
 }
 
-function A(e) {
+function C(e) {
   let {
     children: t
   } = e;

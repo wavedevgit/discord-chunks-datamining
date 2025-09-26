@@ -76,52 +76,52 @@ function ee(e) {
   return e
 }
 async function et(e) {
-  var t, n, r, i;
+  var t, n, r, i, l;
   let {
-    runningGame: l,
-    game: a,
-    detectionMethod: o,
-    overlayStatus: s,
-    overlayMethod: d,
-    sharedGuildIds: p,
-    voiceChannelId: f,
-    voiceChannelType: h,
-    voiceChannelBitrate: g,
-    voiceChannelGuildId: m
-  } = e, b = await (0, x.hj)(l.pid), {
-    gameName: _,
-    gameId: y,
-    exe: v,
-    distributor: I
-  } = (0, O.G8)(l), S = (0, P.NW)("ChatAutoAnalytics", false), C = s.enabledLegacy || S && s.enabledOOP, j = T.v.legacyEnabled || S && T.v.oopEnabled, Z = s.source;
+    runningGame: a,
+    game: o,
+    detectionMethod: s,
+    overlayStatus: d,
+    overlayMethod: p,
+    sharedGuildIds: f,
+    voiceChannelId: h,
+    voiceChannelType: g,
+    voiceChannelBitrate: m,
+    voiceChannelGuildId: b
+  } = e, _ = await (0, x.hj)(a.pid), {
+    gameName: y,
+    gameId: v,
+    exe: I,
+    distributor: S
+  } = (0, O.G8)(a), C = (0, P.NW)("ChatAutoAnalytics", false), j = d.enabledLegacy || C && d.enabledOOP, Z = T.v.legacyEnabled || C && T.v.oopEnabled, L = d.source;
   q.default.track(J.rMx.LAUNCH_GAME, {
-    game: _,
-    game_id: y,
-    verified: null != a && (0, O.vp)(v, null == a ? true : a.executables),
-    elevated: l.elevated,
-    is_launcher: null != (r = null == l ? true : l.isLauncher) && r,
+    game: y,
+    game_id: v,
+    verified: null != o && (0, O.vp)(I, null == o ? true : o.executables),
+    elevated: a.elevated,
+    is_launcher: null != (r = null == a ? true : a.isLauncher) && r,
     game_platform: J.M7m.DESKTOP,
-    detection_method: o,
-    distributor: I,
-    is_overlay_enabled: j,
-    is_overlay_game_enabled: C,
-    is_overlay_game_source: Z,
-    fullscreen_type: null != b ? c.Jx[b] : c.Jx.UNKNOWN.toString(),
+    detection_method: s,
+    distributor: S,
+    is_overlay_enabled: Z,
+    is_overlay_game_enabled: j,
+    is_overlay_game_source: L,
+    fullscreen_type: null != _ ? c.Jx[_] : c.Jx.UNKNOWN.toString(),
     hardware_display_count: null != (i = await (null === u.Z || true === u.Z || null == (n = u.Z.hardware) || null == (t = n.getDisplayCount) ? true : t.call(n))) ? i : null,
-    overlay_method: N.gl[d],
+    overlay_method: null != (l = N.gl[p]) ? l : __OVERLAY__ ? N.gl[N.gl.Hook] : null,
     activity_status_enabled: w.G6.getSetting(),
-    activity_status_shared_guilds: p,
+    activity_status_shared_guilds: f,
     current_user_status: H.Z.getStatus(),
-    game_detection_enabled: (0, E.ik)(l),
-    executable_path: v,
-    voice_channel_id: f,
-    voice_channel_type: h,
-    voice_channel_bitrate: g,
-    voice_channel_guild_id: m,
-    distributor_game_id: l.sku,
-    hidden_by_distributor: l.hidden,
-    game_metadata: (0, A.sD)(l)
-  }), null != v && E.ZP.addExecutableTrackedByAnalytics(v)
+    game_detection_enabled: (0, E.ik)(a),
+    executable_path: I,
+    voice_channel_id: h,
+    voice_channel_type: g,
+    voice_channel_bitrate: m,
+    voice_channel_guild_id: b,
+    distributor_game_id: a.sku,
+    hidden_by_distributor: a.hidden,
+    game_metadata: (0, A.sD)(a)
+  }), null != I && E.ZP.addExecutableTrackedByAnalytics(I)
 }
 class en extends Chunk647438.PureComponent {
   componentDidUpdate(e) {

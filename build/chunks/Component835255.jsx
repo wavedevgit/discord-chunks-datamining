@@ -25,9 +25,9 @@ function b(e) {
     user: r,
     profileOwner: b,
     wishlistId: v
-  } = e, y = i.useRef(null), O = (0, o.Z)(y), j = t.collectiblesItem, {
+  } = e, y = i.useRef(null), j = (0, o.Z)(y), O = t.collectiblesItem, {
     analyticsLocations: x
-  } = (0, c.ZP)(), P = j.type === l.Z.PROFILE_EFFECT ? j.title : j.label;
+  } = (0, c.ZP)(), P = O.type === l.Z.PROFILE_EFFECT ? O.title : O.label;
   return (0, n.jsxs)("div", {
     className: m.container,
     children: [(0, n.jsx)(s.ua7, {
@@ -68,13 +68,13 @@ function b(e) {
           children: (0, n.jsx)("div", {
             className: m.cardPreview,
             children: (() => {
-              switch (j.type) {
+              switch (O.type) {
                 case l.Z.PROFILE_EFFECT:
                   return (0, n.jsx)("div", {
                     className: m.profileEffectPreview,
                     children: (0, n.jsx)(g.Z, {
-                      profileEffectId: j.id,
-                      isHovering: O,
+                      profileEffectId: O.id,
+                      isHovering: j,
                       isPurchased: false,
                       removeSetHeight: true
                     })
@@ -83,9 +83,9 @@ function b(e) {
                   return (0, n.jsx)("div", {
                     className: m.avatarDecorationPreview,
                     children: (0, n.jsx)(u.R, {
-                      item: j,
+                      item: O,
                       user: r,
-                      isHighlighted: O,
+                      isHighlighted: j,
                       isPurchased: false,
                       avatarSize: s.EFr.SIZE_80
                     })
@@ -97,8 +97,8 @@ function b(e) {
                       className: m.nameplateTopLeft,
                       children: (0, n.jsx)(d.Z, {
                         user: r,
-                        nameplate: j,
-                        isHighlighted: O,
+                        nameplate: O,
+                        isHighlighted: j,
                         showPlaceholderUser: true,
                         showStatus: true,
                         isPurchased: false,
@@ -109,8 +109,8 @@ function b(e) {
                       className: m.nameplateBottomRight,
                       children: (0, n.jsx)(d.Z, {
                         user: r,
-                        nameplate: j,
-                        isHighlighted: O,
+                        nameplate: O,
+                        isHighlighted: j,
                         showPlaceholderUser: true,
                         showStatus: true,
                         isPurchased: false,

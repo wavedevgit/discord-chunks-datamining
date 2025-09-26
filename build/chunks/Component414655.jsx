@@ -31,7 +31,7 @@ function b(e) {
   } = (0, c.ZP)(), {
     wishlist: v,
     error: y
-  } = (0, d.k)(r), O = i.useCallback(() => {
+  } = (0, d.k)(r), j = i.useCallback(() => {
     (0, a.pT)(), (0, u.mK)({
       analyticsLocations: b,
       analyticsSource: o.Z.USER_PROFILE_WISHLIST,
@@ -40,8 +40,25 @@ function b(e) {
   }, [b]);
   return null != y ? null : null == v || 0 === v.items.length ? (0, n.jsx)(g.F, {
     fade: true,
-    children: (0, n.jsx)("div", {
-      children: "Empty State"
+    children: (0, n.jsxs)("div", {
+      className: m.emptyStateContainer,
+      children: [(0, n.jsxs)("div", {
+        className: m.emptyStateText,
+        children: [(0, n.jsx)(s.X6q, {
+          variant: "heading-md/medium",
+          color: "header-primary",
+          children: p.intl.string(p.t.HGnLLS)
+        }), (0, n.jsx)(s.Text, {
+          variant: "text-sm/normal",
+          color: "header-secondary",
+          children: p.intl.string(p.t["/X1ny8"])
+        })]
+      }), (0, n.jsx)(s.zxk, {
+        variant: "primary",
+        icon: s.EOn,
+        text: p.intl.string(p.t.ZbS4QE),
+        onClick: j
+      })]
     })
   }) : (0, n.jsxs)(g.F, {
     fade: true,
@@ -58,7 +75,7 @@ function b(e) {
         size: "sm",
         icon: s.qJs,
         text: p.intl.string(p.t.SDUwMz),
-        onClick: O
+        onClick: j
       })]
     }), (0, n.jsx)(h.Z, {
       items: v.items,

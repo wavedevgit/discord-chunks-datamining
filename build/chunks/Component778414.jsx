@@ -73,7 +73,7 @@ function Z(e) {
   var {
     widget: t
   } = e, r = k(e, ["widget"]);
-  return t instanceof h.q ? (0, n.jsx)(j.Z, T({
+  return t instanceof h.q ? (0, n.jsx)(O.Z, T({
     widget: t
   }, r)) : t instanceof p.zy ? (0, n.jsx)(S.Z, T({
     widget: t
@@ -99,21 +99,21 @@ function _(e) {
     user: t,
     guildId: r,
     channelId: l
-  } = e, a = (0, O.Z)(t.id), o = (0, s.e7)([f.default], () => f.default.getId() === t.id), b = (() => {
+  } = e, a = (0, j.Z)(t.id), o = (0, s.e7)([f.default], () => f.default.getId() === t.id), b = (() => {
     let [e, t] = (0, s.Wu)([g.Z], () => [g.Z.ipCountryCode, g.Z.ipCountryCodeRequest]), r = (0, u.U)();
     return i.useEffect(() => {
       null == e && null == t && r && (0, c.GE)()
     }, [e, t, r]), "GB" === e && r
-  })(), j = 0 === a.length && o, P = i.useMemo(() => a.filter(p.Wc), [a]), S = i.useMemo(() => a.filter(e => e instanceof h.q), [a]);
+  })(), O = 0 === a.length && o, P = i.useMemo(() => a.filter(p.Wc), [a]), S = i.useMemo(() => a.filter(e => e instanceof h.q), [a]);
   (0, y.ZP)(P), (0, m.J)(o, P);
   var w = t.id;
   (0, v.s)(S);
   let {
     data: I
-  } = (0, d.O)(w), A = i.useRef(I);
-  return (A.current = I, i.useEffect(() => {
-    null !== A.current && (0, s.Xf)(C.McO.USER_APPLICATION_IDENTITIES(w))
-  }, [w]), j) ? (0, n.jsx)(E.Z, {}) : (0, n.jsxs)(n.Fragment, {
+  } = (0, d.O)(w), N = i.useRef(I);
+  return (N.current = I, i.useEffect(() => {
+    null !== N.current && (0, s.Xf)(C.McO.USER_APPLICATION_IDENTITIES(w))
+  }, [w]), O) ? (0, n.jsx)(E.Z, {}) : (0, n.jsxs)(n.Fragment, {
     children: [o && b && (0, n.jsx)(D, {}), a.map((e, i) => (0, n.jsx)(Z, {
       widget: e,
       user: t,
@@ -136,8 +136,8 @@ function R(e) {
   return (0, n.jsxs)(I.F, {
     "data-scroller": true,
     scrollerRef: l,
-    className: a()(N.scroller, {
-      [N.hasToolbar]: s
+    className: a()(A.scroller, {
+      [A.hasToolbar]: s
     }),
     fade: true,
     children: [(0, n.jsx)(P.Z, {
