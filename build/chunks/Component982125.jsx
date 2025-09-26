@@ -23,13 +23,14 @@ function d(e) {
     displayOnly: p,
     label: h,
     labeledBy: m,
-    labelSize: g = "medium"
-  } = e, E = i.useRef(null), b = i.useRef(null), y = true !== t ? t : b, O = null != h && "" !== h;
+    labelSize: g = "medium",
+    value: E
+  } = e, b = i.useRef(null), y = i.useRef(null), O = true !== t ? t : y, v = null != h && "" !== h;
   return (0, r.jsx)(s.tE, {
-    focusTarget: y,
-    ringTarget: E,
+    focusTarget: O,
+    ringTarget: b,
     children: (0, r.jsx)(a.XZ, {
-      inputRef: y,
+      inputRef: O,
       "aria-hidden": p || true,
       "aria-labelledby": m,
       isSelected: n,
@@ -39,9 +40,10 @@ function d(e) {
       isReadOnly: p,
       "data-mana-component": "checkbox",
       className: u.checkboxWrapper,
+      value: E,
       children: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
-          ref: E,
+          ref: b,
           className: u.checkbox,
           style: {
             width: 24,
@@ -52,7 +54,7 @@ function d(e) {
             "aria-hidden": true,
             color: "currentColor"
           })
-        }), O && (0, r.jsx)(o._, {
+        }), v && (0, r.jsx)(o._, {
           className: u.label,
           children: (0, r.jsx)(c.x, {
             variant: "small" === g ? "text-sm/normal" : "text-md/normal",

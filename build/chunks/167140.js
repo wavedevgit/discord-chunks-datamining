@@ -4,6 +4,7 @@
 require.d(exports, {
   PS: () => o,
   Q3: () => c,
+  W0: () => h,
   tL: () => l
 });
 var Chunk647438 = require("./647438.js");
@@ -125,4 +126,22 @@ function _(e) {
 
 function p(e, t) {
   return e === t || !!e && !!t && e.isInvalid === t.isInvalid && e.validationErrors.length === t.validationErrors.length && e.validationErrors.every((e, n) => e === t.validationErrors[n]) && Object.entries(e.validationDetails).every(([e, n]) => t.validationDetails[e] === n)
+}
+
+function h(...e) {
+  let t = new Set,
+    n = false,
+    r = {
+      ...i
+    };
+  for (let i of e) {
+    var a, o;
+    for (let e of i.validationErrors) t.add(e);
+    for (let e in n || (n = i.isInvalid), r)(a = r)[o = e] || (a[o] = i.validationDetails[e])
+  }
+  return r.valid = !n, {
+    isInvalid: n,
+    validationErrors: [...t],
+    validationDetails: r
+  }
 }
