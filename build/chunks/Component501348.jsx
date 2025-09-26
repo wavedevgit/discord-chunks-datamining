@@ -2,7 +2,7 @@
 /** chunk id: 501348, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => eo
+  Z: () => el
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -21,7 +21,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk627845 = require("./627845.jsx"),
   Chunk368763 = require("./368763.js"),
   Chunk514361 = require("./514361.js"),
+  Chunk93262 = require("./93262.js"),
   Chunk803038 = require("./803038.js"),
+  Chunk990924 = require("./990924.js"),
   Chunk313201 = require("./313201.js"),
   Chunk266454 = require("./266454.js"),
   Chunk786761 = require("./786761.js"),
@@ -48,7 +50,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk226518 = require("./226518.js"),
   Chunk197571 = require("./197571.js");
 
-function W(e, t, n) {
+function z(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -57,20 +59,20 @@ function W(e, t, n) {
   }) : e[t] = n, e
 }
 
-function K(e) {
+function q(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      W(e, t, n[t])
+      z(e, t, n[t])
     })
   }
   return e
 }
 
-function z(e, t) {
+function X(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -81,51 +83,51 @@ function z(e, t) {
   return n
 }
 
-function q(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : z(Object(t)).forEach(function(n) {
+function Q(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : X(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let X = "cozy",
-  Q = "compact",
-  J = (0, Chunk313201.hQ)(),
-  $ = (0, Chunk313201.hQ)(),
-  ee = "1337",
-  et = e => {
+let J = "cozy",
+  $ = "compact",
+  ee = (0, Chunk313201.hQ)(),
+  et = (0, Chunk313201.hQ)(),
+  en = "1337",
+  er = e => {
     let t = 0;
-    return [(0, I.e5)(q(K({}, (0, T.ZP)({
-      channelId: ee,
-      content: V.intl.string(V.t.oZxkEh)
+    return [(0, S.e5)(Q(q({}, (0, A.ZP)({
+      channelId: en,
+      content: Y.intl.string(Y.t.oZxkEh)
     })), {
-      state: B.yb.SENT,
+      state: F.yb.SENT,
       id: "".concat(t++)
-    })), (0, I.e5)(q(K({}, (0, T.ZP)({
-      channelId: ee,
-      content: (0, u.wj)(e) ? V.intl.string(V.t["WGb/v7"]) : V.intl.string(V.t["62m4m5"])
+    })), (0, S.e5)(Q(q({}, (0, A.ZP)({
+      channelId: en,
+      content: (0, u.wj)(e) ? Y.intl.string(Y.t["WGb/v7"]) : Y.intl.string(Y.t["62m4m5"])
     })), {
-      state: B.yb.SENT,
+      state: F.yb.SENT,
       id: "".concat(t++)
-    })), (0, I.e5)(q(K({}, (0, T.ZP)({
-      channelId: ee,
-      content: V.intl.string(V.t.a0Byo6)
+    })), (0, S.e5)(Q(q({}, (0, A.ZP)({
+      channelId: en,
+      content: Y.intl.string(Y.t.a0Byo6)
     })), {
-      state: B.yb.SENT,
+      state: F.yb.SENT,
       id: "".concat(t++)
-    })), (0, I.e5)(q(K({}, (0, T.ZP)({
-      channelId: ee,
-      content: V.intl.string(V.t.bmwEWF)
+    })), (0, S.e5)(Q(q({}, (0, A.ZP)({
+      channelId: en,
+      content: Y.intl.string(Y.t.bmwEWF)
     })), {
-      state: B.yb.SENT,
+      state: F.yb.SENT,
       id: "".concat(t++)
-    })), (0, I.e5)(q(K({}, (0, T.ZP)({
-      channelId: ee,
-      content: V.intl.string(V.t.hK9QW1)
+    })), (0, S.e5)(Q(q({}, (0, A.ZP)({
+      channelId: en,
+      content: Y.intl.string(Y.t.hK9QW1)
     })), {
-      state: B.yb.SENT,
+      state: F.yb.SENT,
       id: "".concat(t)
     }))]
   },
-  en = () => (0, Chunk951288.jsxs)("div", {
+  ei = () => (0, Chunk951288.jsxs)("div", {
     className: Chunk226518.themeTitle,
     children: [(0, Chunk951288.jsxs)("div", {
       className: Chunk226518.themeTitleContainer,
@@ -139,7 +141,7 @@ let X = "cozy",
       })]
     }), (0, Chunk951288.jsx)(Chunk329013.g, {})]
   }),
-  er = () => {
+  ea = () => {
     let e = (0, Chunk947889.Z)();
     return Chunk388032.intl.format(Chunk388032.t.Jae48P, {
       onClick: () => {
@@ -149,12 +151,12 @@ let X = "cozy",
       }
     })
   };
-class ei extends Chunk647438.Component {
+class eo extends Chunk647438.Component {
   renderZoomSlider() {
     return Chunk358085.isPlatformEmbedded ? (0, Chunk951288.jsxs)("div", {
       className: Chunk197571.marginTop20,
       children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
-        id: J,
+        id: ee,
         className: o()(Chunk226518.title, Chunk197571.marginBottom8),
         children: Chunk388032.intl.string(Chunk388032.t.i19n5O)
       }), (0, Chunk951288.jsx)(Chunk481060.R94, {
@@ -169,7 +171,7 @@ class ei extends Chunk647438.Component {
         stickToMarkers: true,
         onValueChange: this.handleZoomChange,
         onValueRender: this.handleSliderRender,
-        "aria-labelledby": J
+        "aria-labelledby": ee
       }), (0, Chunk951288.jsx)(Chunk481060.R94, {
         type: Chunk481060.R94.Types.DESCRIPTION,
         children: Chunk388032.intl.format(Chunk388032.t.OMkSUl, {
@@ -213,7 +215,7 @@ class ei extends Chunk647438.Component {
         onValueRender: this.handleSliderRenderPX,
         onMarkerRender: this.handleSliderRenderPX,
         getAriaValueText: this.handleSliderValueText,
-        "aria-labelledby": $
+        "aria-labelledby": et
       })
     })
   }
@@ -229,12 +231,12 @@ class ei extends Chunk647438.Component {
         className: o()(Chunk226518.preview, Chunk197571.marginBottom40, module ? Chunk226518.compactPreview : true, "group-spacing-".concat(null != require ? require : module ? Chunk959517.c8 : Chunk959517.pq)),
         outline: true,
         "aria-hidden": true,
-        children: Chunk120356.map((t, n) => (0, r.jsx)(A.Z, {
-          author: (0, S.ZH)(t),
+        children: Chunk120356.map((t, n) => (0, r.jsx)(N.Z, {
+          author: (0, C.ZH)(t),
           message: t,
           compact: e,
           isGroupStart: n % 2 == 0,
-          className: 0 === n ? H.firstMessage : true,
+          className: 0 === n ? W.firstMessage : true,
           hideSimpleEmbedContent: i
         }, t.id))
       })
@@ -256,7 +258,7 @@ class ei extends Chunk647438.Component {
       children: (0, Chunk951288.jsx)(Chunk481060.R94, {
         type: Chunk481060.R94.Types.DEFAULT,
         className: Chunk226518.forcedColorsWarning,
-        children: (0, Chunk627845.b)() ? (0, Chunk951288.jsx)(er, {}) : Chunk388032.intl.string(Chunk388032.t.AUMSZG)
+        children: (0, Chunk627845.b)() ? (0, Chunk951288.jsx)(ea, {}) : Chunk388032.intl.string(Chunk388032.t.AUMSZG)
       })
     }) : (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
       gap: 24,
@@ -265,7 +267,7 @@ class ei extends Chunk647438.Component {
         className: Chunk226518.title,
         children: Chunk388032.intl.string(Chunk388032.t.Ksh3io)
       }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
-        title: (0, Chunk951288.jsx)(en, {}),
+        title: (0, Chunk951288.jsx)(ei, {}),
         children: (0, Chunk951288.jsx)(Chunk329013.i, {})
       })]
     })
@@ -286,7 +288,7 @@ class ei extends Chunk647438.Component {
         name: Chunk388032.intl.string(Chunk388032.t["+o/sOj"]),
         value: Chunk524437.hg.H23
       }],
-      onChange: e => x.hg.updateSetting(e),
+      onChange: e => j.hg.updateSetting(e),
       value: module
     })
   }
@@ -297,7 +299,7 @@ class ei extends Chunk647438.Component {
     return "".concat(e.toFixed(0), "px")
   }
   handleSliderValueText(e) {
-    return V.intl.formatToPlainString(V.t["0hpvOT"], {
+    return Y.intl.formatToPlainString(Y.t["0hpvOT"], {
       value: e
     })
   }
@@ -369,15 +371,15 @@ class ei extends Chunk647438.Component {
         description: Chunk388032.intl.string(Chunk388032.t.QntEEB),
         options: [{
           name: Chunk388032.intl.string(Chunk388032.t.Jqj4cX),
-          value: X
+          value: J
         }, {
           name: Chunk388032.intl.string(Chunk388032.t["1JNcPT"]),
-          value: Q
+          value: $
         }],
         onChange: e => this.handleMessageDisplayModeChange({
           value: e
         }),
-        value: this.props.messageDisplayCompact ? Q : X
+        value: this.props.messageDisplayCompact ? $ : J
       }), this.props.messageDisplayCompact && (0, Chunk951288.jsx)(Chunk481060.j7V, {
         className: Chunk226518.compactModeToggle,
         hideBorder: true,
@@ -405,7 +407,7 @@ class ei extends Chunk647438.Component {
     }), u = (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-md/normal",
       className: Chunk226518.a11yCallout,
-      children: (0, Chunk951288.jsx)(er, {})
+      children: (0, Chunk951288.jsx)(ea, {})
     });
     return (0, Chunk951288.jsxs)(Chunk273313.Z, {
       title: Chunk388032.intl.string(Chunk388032.t["iHH+k5"]),
@@ -413,35 +415,35 @@ class ei extends Chunk647438.Component {
     })
   }
   constructor(...e) {
-    super(...e), W(this, "darkMessages", et(B.BRd.DARK)), W(this, "lightMessages", et(B.BRd.LIGHT)), W(this, "handleDisplayCompactAvatarsChanged", e => {
+    super(...e), z(this, "darkMessages", er(F.BRd.DARK)), z(this, "lightMessages", er(F.BRd.LIGHT)), z(this, "handleDisplayCompactAvatarsChanged", e => {
       f.ZP.updatedUnsyncedSettings({
         displayCompactAvatars: e
       })
-    }), W(this, "handleDesktopRefreshEnabledChanged", e => {
+    }), z(this, "handleDesktopRefreshEnabledChanged", e => {
       f.ZP.updatedUnsyncedSettings({
         disableVisualRefresh: !e
       })
-    }), W(this, "handleMessageDisplayModeChange", e => {
+    }), z(this, "handleMessageDisplayModeChange", e => {
       let {
         value: t
       } = e;
-      x.jU.updateSetting(t === Q), (0, h.ZZ)()
-    }), W(this, "handleUIDensityChange", e => {
+      j.jU.updateSetting(t === $), (0, h.ZZ)()
+    }), z(this, "handleUIDensityChange", e => {
       let {
         value: t
       } = e;
-      t !== c.Pi.UNSET_UI_DENSITY && x.YC.updateSetting(t)
+      t !== c.Pi.UNSET_UI_DENSITY && j.YC.updateSetting(t)
     })
   }
 }
-let ea = e => {
-  (0, v.zu)(e) || (0, v.Q3)(e, {
-    dismissAction: Z.L.AUTO,
+let es = e => {
+  (0, T.zu)(e) || (0, T.Q3)(e, {
+    dismissAction: V.L.AUTO,
     forceTrack: true
   })
 };
 
-function eo() {
+function el() {
   let e = Chunk695346.jU.useSetting(),
     t = Chunk695346.RS.useSetting(),
     n = Chunk695346.NA.useSetting(),
@@ -451,14 +453,17 @@ function eo() {
     u = Chunk803038.Mc.useExperiment({
       location: "UserSettingsAppearance"
     }).enabled,
-    d = (0, Chunk368763.T)("UserSettingsAppearance");
+    d = Chunk990924.y.useConfig({
+      location: "UserSettingsAppearance"
+    }).enabled,
+    f = (0, Chunk368763.T)("UserSettingsAppearance");
   (0, Chunk493773.ZP)(() => {
-    ea(Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE), ea(Chunk704215.z.DEKSTOP_CUSTOM_APP_ICON_BADGE), ea(Chunk704215.z.DEKSTOP_CUSTOM_APP_ICON_COACHMARK)
+    es(Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE), es(Chunk704215.z.DEKSTOP_CUSTOM_APP_ICON_BADGE), es(Chunk704215.z.DEKSTOP_CUSTOM_APP_ICON_COACHMARK), Chunk481060 && (0, Chunk93262.w)()
   }), Chunk647438.useEffect(() => {
-    Chunk780384 && ea(Chunk704215.z.CLIENT_THEMES_APPEARANCE_SETTINGS_NEW_BADGE), Chunk481060 && ea(Chunk704215.z.HALLOWEEN_APP_ICONS_APPEARANCE_SETTINGS_WEB_BADGE)
-  }, [Chunk780384, Chunk481060]);
-  let f = (0, Chunk984802.A6)(),
-    p = (0, Chunk442837.cj)([Chunk210887.Z, Chunk740492.ZP, Chunk607070.Z, Chunk594174.default, Chunk514361.Z], () => {
+    Chunk780384 && es(Chunk704215.z.CLIENT_THEMES_APPEARANCE_SETTINGS_NEW_BADGE), Chunk153867 && es(Chunk704215.z.HALLOWEEN_APP_ICONS_APPEARANCE_SETTINGS_WEB_BADGE)
+  }, [Chunk780384, Chunk153867]);
+  let p = (0, Chunk984802.A6)(),
+    h = (0, Chunk442837.cj)([Chunk210887.Z, Chunk740492.ZP, Chunk607070.Z, Chunk594174.default, Chunk514361.Z], () => {
       var e, t;
       return {
         theme: Chunk210887.Z.theme,
@@ -472,12 +477,12 @@ function eo() {
         gradientPreset: Chunk514361.Z.gradientPreset
       }
     });
-  return (0, Chunk951288.jsx)(ei, K({
+  return (0, Chunk951288.jsx)(eo, q({
     messageDisplayCompact: module,
     hideSimpleEmbedContent: exports && require,
     clientTheme: Chunk120356,
     timestampHourCycle: o,
     density: Chunk524437,
-    darkSidebar: Chunk153867
-  }, Chunk714338))
+    darkSidebar: Chunk714338
+  }, Chunk857595))
 }

@@ -88,19 +88,19 @@ function X(e) {
     entry: t,
     currentUserActivity: n,
     idx: l
-  } = e, a = (0, c.e7)([k.default], () => k.default.getUser(t.author_id)), [s, u] = r.useState("unsent"), [f, y] = r.useState(false);
+  } = e, a = (0, c.e7)([k.default], () => k.default.getUser(t.author_id)), [s, u] = r.useState("unsent"), [f, O] = r.useState(false);
   r.useEffect(() => {
     if ("sent" === s) {
-      let e = setTimeout(() => y(true), 2e3);
+      let e = setTimeout(() => O(true), 2e3);
       return () => clearTimeout(e)
     }
   }, [s]);
-  let O = null != n && (0, E.Z)(n, H.xjy.JOIN),
-    v = async e => {
+  let y = null != n && (0, v.Z)(n, H.xjy.JOIN),
+    E = async e => {
       if (null != a && "unsent" === s) {
         e.stopPropagation();
         try {
-          if (u("sending"), O) await h.Z.sendActivityInviteUser({
+          if (u("sending"), y) await h.Z.sendActivityInviteUser({
             type: H.mFx.JOIN,
             userId: a.id,
             activity: n,
@@ -150,7 +150,7 @@ function X(e) {
         value: W.bk.CHAT,
         userId: a.id
       })
-    }, b = O ? Y.intl.string(Y.t["3fRyS0"]) : Y.intl.string(Y.t.XHxDIS), j = O ? (0, i.jsx)(p.ejJ, {
+    }, b = y ? Y.intl.string(Y.t["3fRyS0"]) : Y.intl.string(Y.t.XHxDIS), j = y ? (0, i.jsx)(p.ejJ, {
       color: "currentColor",
       size: "sm"
     }) : (0, i.jsx)(p.Uuj, {
@@ -162,7 +162,7 @@ function X(e) {
     "aria-label": b,
     children: e => (0, i.jsx)(d.zx, K(Q({}, e), {
       submitting: "sending" === s,
-      onClick: f ? S : v,
+      onClick: f ? S : E,
       className: B.inviteButton,
       wrapperClassName: B.inviteButtonWrapper,
       innerClassName: B.inviteButtonInner,
@@ -187,7 +187,7 @@ function q(e) {
     entry: n,
     currentUserActivity: l
   } = e, o = (0, c.e7)([k.default], () => k.default.getUser(n.author_id)), a = null != (t = null == l ? true : l.application_id) ? t : n.extra.application_id, s = (0, c.e7)([A.Z], () => null != o ? A.Z.getApplicationActivity(o.id, a) : null, [a, o]), [u, f] = r.useState("unsent");
-  if (!(null != s && (0, E.Z)(s, H.xjy.JOIN))) return null;
+  if (!(null != s && (0, v.Z)(s, H.xjy.JOIN))) return null;
   let m = async e => {
     if (null != o && "unsent" === u) {
       e.stopPropagation();
@@ -248,7 +248,7 @@ function J(e) {
   }, [l]);
   return null == l ? null : (0, i.jsxs)("div", {
     className: B.row,
-    children: [(0, i.jsx)(y.Z, {
+    children: [(0, i.jsx)(O.Z, {
       className: B.avatar,
       user: l,
       isMobile: a,
@@ -339,7 +339,7 @@ function et(e) {
     maxUserShowCount: n,
     userAffinityThresholdV2: i = .0029
   } = e, l = (0, j.Z)(t, "useLiveActivityRows");
-  (0, O.ZP)(() => {
+  (0, y.ZP)(() => {
     (0, w._)()
   });
   let o = (0, c.e7)([D.Z], () => null == t ? null : D.Z.getApplicationActivity(t), [t]),
@@ -381,7 +381,7 @@ function et(e) {
         }(N.Z.getUserAffinity(t), i, n)
       })
     }, [t, i]);
-  return (0, O.ZP)(() => (C.L(), () => C.v())), {
+  return (0, y.ZP)(() => (C.L(), () => C.v())), {
     entries: r.useMemo(() => {
       let e = l.filter(e => !d.some(t => t.activityUser.id === e.author_id)),
         t = [...d.map(e => (function(e) {
@@ -423,7 +423,7 @@ function ei(e) {
     activity: t,
     currentUser: n,
     showInviteButton: r = true
-  } = e, l = null != t && (0, E.Z)(t, H.xjy.JOIN), o = (0, v.q)(null == t ? true : t.application_id), a = null != o && (0, V.yE)(o.flags, H.udG.EMBEDDED);
+  } = e, l = null != t && (0, v.Z)(t, H.xjy.JOIN), o = (0, E.q)(null == t ? true : t.application_id), a = null != o && (0, V.yE)(o.flags, H.udG.EMBEDDED);
   return null == t || null == n ? null : (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(T.Z, {
       className: B.activityCard,
@@ -450,7 +450,7 @@ function er(e) {
   let {
     locked: t
   } = e, n = (0, G.II)(), r = null == n ? true : n.id, l = null == n ? true : n.altId, o = (0, j.Z)(r, "ActivityWidget"), a = (0, c.e7)([k.default], () => k.default.getCurrentUser()), s = null != l ? l : r, u = (0, c.e7)([D.Z], () => null == s ? null : D.Z.getApplicationActivity(s), [s]);
-  (0, O.ZP)(() => (C.L(), () => C.v()));
+  (0, y.ZP)(() => (C.L(), () => C.v()));
   let d = et({
     gamingId: s,
     userAffinityThresholdV2: .00145,

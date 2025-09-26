@@ -52,7 +52,7 @@ function Y(e) {
   let {
     applicationId: n,
     channelId: t
-  } = e, a = (0, c.e7)([f.Z], () => f.Z.getApplication(n)), Y = (0, c.e7)([W.ZP], () => W.ZP.getSelfEmbeddedActivities().get(n)), J = (0, c.e7)([w.Z], () => w.Z.getChannel(t)), V = g.Sb.useSetting(), q = (0, c.Wu)([j.ZP], () => {
+  } = e, a = (0, c.e7)([f.Z], () => f.Z.getApplication(n)), Y = (0, c.e7)([W.ZP], () => W.ZP.getSelfEmbeddedActivities().get(n)), J = (0, c.e7)([O.Z], () => O.Z.getChannel(t)), V = g.Sb.useSetting(), q = (0, c.Wu)([j.ZP], () => {
     var e;
     return null == J || null == Y ? [] : Array.from(null != (e = Y.userIds) ? e : []).map(e => j.ZP.getMember(J.guild_id, e))
   }, [Y, J]), X = r.useMemo(() => {
@@ -77,13 +77,13 @@ function Y(e) {
     }, e.id)
   }, [X]), Q = null == Y ? true : Y.userIds, ee = (0, c.Wu)([k.default], () => Array.from(null != Q ? Q : []).map(e => k.default.getUser(e)).filter(e => null != e), [Q]), en = r.useCallback(() => {
     let e = (0, A.getPID)();
-    d.Z.setInputLocked(!h.ZP.isInputLocked(e), e)
+    d.Z.setInputLocked(!b.ZP.isInputLocked(e), e)
   }, []), et = (0, E.P)(), {
     canStayOnTop: eo,
     popoutWindowAlwaysOnTop: er,
     handleStayOnTop: ea
   } = function() {
-    let e = (0, c.e7)([b.Z], () => b.Z.getIsAlwaysOnTop(F.KJ3.ACTIVITY_POPOUT)),
+    let e = (0, c.e7)([h.Z], () => h.Z.getIsAlwaysOnTop(F.KJ3.ACTIVITY_POPOUT)),
       n = r.useCallback(e => {
         v.hY(F.KJ3.ACTIVITY_POPOUT, e)
       }, []);
@@ -101,7 +101,7 @@ function Y(e) {
       popoutWindow: e,
       currentDocument: n,
       rootNode: t
-    } = (0, D.Z)(), [o, a] = r.useState(false), i = r.useCallback(() => {
+    } = (0, R.Z)(), [o, a] = r.useState(false), i = r.useCallback(() => {
       null != t && o && (a(false), (0, S.Pr)(t, n))
     }, [t, n, o]), c = r.useCallback(() => {
       null != t && (o ? i() : (a(true), (0, S.Dj)(t)))
@@ -174,10 +174,10 @@ function Y(e) {
             onClick: en,
             iconComponent: _.epB,
             label: H.intl.string(H.t.mseZsL)
-          }) : null, eo ? (0, o.jsx)(O.Z, {
+          }) : null, eo ? (0, o.jsx)(N.Z, {
             popoutWindowAlwaysOnTop: er,
             onToggleStayOnTop: ea
-          }) : null, ei ? (0, o.jsx)(N.Z, {
+          }) : null, ei ? (0, o.jsx)(w.Z, {
             popoutOpen: true,
             onOpenPopout: () => {},
             onClosePopout: () => {
@@ -199,7 +199,7 @@ function Y(e) {
                 closePopout: n
               } = e;
               return (0, o.jsx)(C.Z, {
-                children: (0, o.jsx)(R.Z, {
+                children: (0, o.jsx)(D.Z, {
                   application: a,
                   channelId: t,
                   onClose: n

@@ -80,7 +80,7 @@ function C(e) {
     widgetHeight: ee,
     containerRef: et,
     containerMinMaxSizes: en
-  } = (0, v.Bz)({
+  } = (0, E.Bz)({
     tileCount: K,
     padding: P,
     borderWidth: D,
@@ -106,7 +106,7 @@ function C(e) {
     },
     locked: _
   };
-  (0, v.Dl)({
+  (0, E.Dl)({
     id: w,
     streamParticipants: Y,
     layout: z,
@@ -114,10 +114,10 @@ function C(e) {
   });
   let er = null == H || 0 === B.size && _ || 0 === K && !_;
   return (r.useEffect(() => {
-    a.Z.setGpuBoostRequested(y.zS.OVERLAY_VIDEO_STREAM_RENDERING, !er)
+    a.Z.setGpuBoostRequested(O.zS.OVERLAY_VIDEO_STREAM_RENDERING, !er)
   }, [er]), (0, s.ZP)(() => () => {
-    a.Z.setGpuBoostRequested(y.zS.OVERLAY_VIDEO_STREAM_RENDERING, false)
-  }), (er || !k) && _) ? null : er && !_ ? V ? _ ? null : (0, i.jsx)(O.E, {
+    a.Z.setGpuBoostRequested(O.zS.OVERLAY_VIDEO_STREAM_RENDERING, false)
+  }), (er || !k) && _) ? null : er && !_ ? V ? _ ? null : (0, i.jsx)(y.E, {
     emptyText: x.intl.string(x.t["T6+rX1"]),
     icon: o.hGI,
     absolute: true
@@ -127,7 +127,7 @@ function C(e) {
       opacity: A
     },
     ref: et,
-    children: (0, i.jsx)(E.Z, {
+    children: (0, i.jsx)(v.Z, {
       widgetId: w,
       tileWidth: q,
       tileHeight: J,

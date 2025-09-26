@@ -13,8 +13,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk246946 = require("./246946.js"),
   Chunk5192 = require("./5192.js"),
   Chunk74538 = require("./74538.js"),
-  Chunk461133 = require("./461133.js"),
   Chunk209698 = require("./209698.js"),
+  Chunk612600 = require("./612600.js"),
   Chunk648052 = require("./648052.jsx"),
   Chunk537006 = require("./537006.jsx"),
   Chunk483424 = require("./483424.jsx"),
@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk502762 = require("./502762.jsx"),
   Chunk530 = require("./530.jsx"),
   Chunk827313 = require("./827313.jsx"),
-  Chunk252748 = require("./252748.jsx"),
+  Chunk350207 = require("./350207.jsx"),
   Chunk420654 = require("./420654.jsx"),
   Chunk116854 = require("./116854.jsx"),
   Chunk166584 = require("./166584.jsx"),
@@ -53,9 +53,9 @@ function j(e) {
   } = (0, i.cj)([l.Z], () => ({
     relationshipType: l.Z.getRelationshipType(t.id),
     originApplicationId: l.Z.getOriginApplicationId(t.id)
-  })), H = (0, o.vh)(t.id), Y = (0, i.e7)([c.Z], () => c.Z.hidePersonalInformation), W = (0, _.b)({
+  })), H = (0, o.vh)(t.id), Y = (0, i.e7)([c.Z], () => c.Z.hidePersonalInformation), W = (0, f.b)({
     location: "UserProfilePopoutBody"
-  }), K = t.id === n.id, z = (0, f.P)({
+  }), K = t.id === n.id, z = (0, _.Z)({
     location: "UserProfilePopoutBody"
   }), q = (null == j ? true : j.widgets) != null && j.widgets.length > 0, X = z && q, Q = (0, d.I5)(n);
   return (0, r.jsxs)(a.Ttm, {
@@ -125,7 +125,7 @@ function j(e) {
       hidePersonalInformation: Y,
       onClose: B
     }), X && (0, r.jsx)(S.Z, {
-      widgets: null == j ? true : j.gameWidgets,
+      widgets: null == j ? true : j.widgets,
       onClick: () => {
         null == U || U({
           section: P.oh.WIDGETS

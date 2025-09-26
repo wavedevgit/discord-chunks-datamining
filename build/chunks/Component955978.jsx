@@ -1,7 +1,7 @@
 /** Chunk was on 50751 **/
 /** chunk id: 955978, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => O
 });
 var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
@@ -18,22 +18,22 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk439419 = require("./439419.js");
 
-function y(e, t, n) {
-  var y;
-  let O = d.default.getUser(e);
-  if (null == O) return null;
-  let E = c.Z.getCurrentlySelectedChannelId(),
-    v = u.Z.getChannel(E),
+function O(e, t, n) {
+  var O;
+  let y = d.default.getUser(e);
+  if (null == y) return null;
+  let v = c.Z.getCurrentlySelectedChannelId(),
+    E = u.Z.getChannel(v),
     S = o.Z.getApplication(t),
     b = a.ZP.getRunningGames().find(e => e.id === t),
-    x = null != (y = null == b ? true : b.name) ? y : null == S ? true : S.name,
-    j = (0, p.oY)(null == v ? true : v.guild_id, null == v ? true : v.id, O),
+    x = null != (O = null == b ? true : b.name) ? O : null == S ? true : S.name,
+    j = (0, p.oY)(null == E ? true : E.guild_id, null == E ? true : E.id, y),
     I = (0, i.jsxs)("div", {
       className: g.nowPlayingNotification,
       children: [(0, i.jsx)("div", {
         className: g.nowPlayingNotificationIcon,
         children: (0, i.jsx)(l.Z, {
-          user: O,
+          user: y,
           "aria-hidden": true,
           size: r.EFr.SIZE_24
         })
@@ -44,7 +44,7 @@ function y(e, t, n) {
           color: "interactive-normal",
           className: g.bodyText,
           children: m.intl.format(m.t["q7/rgo"], {
-            username: null != j ? j : O.username,
+            username: null != j ? j : y.username,
             gameName: x,
             gameIcon: () => null != S || null != b ? (0, i.jsx)(s.Z, {
               game: S,
@@ -61,7 +61,7 @@ function y(e, t, n) {
       trackClick: Z
     } = (0, h.R)(f.n0.NowPlayingNotification, {
       notif_type: f.n0.NowPlayingNotification,
-      notif_user_id: O.id,
+      notif_user_id: y.id,
       activity_type: n.type,
       activity_name: null != x ? x : n.name
     });

@@ -74,20 +74,20 @@ function N(e, t) {
   let {
     trackView: u,
     trackClick: c
-  } = (0, O.R)(E.n0.WelcomeNudge, {
-    notif_type: E.n0.WelcomeNudge,
-    secondary_notif_types: t.map(e => E.nc[e.type])
+  } = (0, y.R)(v.n0.WelcomeNudge, {
+    notif_type: v.n0.WelcomeNudge,
+    secondary_notif_types: t.map(e => v.nc[e.type])
   }), b = {};
   for (let r of t) switch (r.type) {
-    case E.nc.WELCOME: {
+    case v.nc.WELCOME: {
       let t = (null == e ? true : e.altId) != null ? p.Z.getApplicationActivity(e.altId) : (null == e ? true : e.id) != null ? p.Z.getApplicationActivity(e.id) : null;
-      null != t && (0, s.Z)(t, v.xjy.JOIN) && (b.cancelText = x.intl.string(x.t["6F9ivr"]), b.onCancelClick = (e, n) => {
-        c("unlock"), a.Z.updateNotificationStatus(n), a.Z.setInputLocked(false, (0, h.getPID)()), (0, o.h7)(t, false, v.IlC.POPOUT)
+      null != t && (0, s.Z)(t, E.xjy.JOIN) && (b.cancelText = x.intl.string(x.t["6F9ivr"]), b.onCancelClick = (e, n) => {
+        c("unlock"), a.Z.updateNotificationStatus(n), a.Z.setInputLocked(false, (0, h.getPID)()), (0, o.h7)(t, false, E.IlC.POPOUT)
       });
       break
     }
-    case E.nc.GO_LIVE_VOICE:
-    case E.nc.GO_LIVE_NON_VOICE: {
+    case v.nc.GO_LIVE_VOICE:
+    case v.nc.GO_LIVE_NON_VOICE: {
       let {
         oneClickGoLiveEnabled: e,
         useStreamCtaCopy: t
@@ -102,11 +102,11 @@ function N(e, t) {
           };
         (0, g.N)({
           pid: (0, h.getPID)(),
-          analyticsLocation: v.Sbl.OVERLAY_NUDGE,
+          analyticsLocation: E.Sbl.OVERLAY_NUDGE,
           allowOneClickGoLive: true,
           onBeforeShowModal: n,
           onOneClickGoLive: i,
-          appContext: v.IlC.POPOUT
+          appContext: E.IlC.POPOUT
         })
       } : (e, t) => {
         c("go-live-modal"), a.Z.updateNotificationStatus(t), a.Z.setInputLocked(false, (0, h.getPID)()), (0, l.ZD)(async () => {
@@ -116,9 +116,9 @@ function N(e, t) {
           return t => (0, i.jsx)(e, Z(C({}, t), {
             selectSource: false,
             sourcePID: (0, h.getPID)(),
-            guildId: r.type === E.nc.GO_LIVE_VOICE ? r.voiceGuild.id : true,
-            selectGuild: r.type === E.nc.GO_LIVE_NON_VOICE,
-            analyticsLocation: v.Sbl.OVERLAY_NUDGE
+            guildId: r.type === v.nc.GO_LIVE_VOICE ? r.voiceGuild.id : true,
+            selectGuild: r.type === v.nc.GO_LIVE_NON_VOICE,
+            analyticsLocation: E.Sbl.OVERLAY_NUDGE
           }))
         }, {
           contextKey: S.u1
@@ -126,13 +126,13 @@ function N(e, t) {
       };
       break
     }
-    case E.nc.CONTENT_INVENTORY:
+    case v.nc.CONTENT_INVENTORY:
       (0, f.Rb)("welcomeNotification").allowActivityWidget && (b.renderFooter = () => (0, i.jsx)(m.lX, {
         gamingId: null == e ? true : e.id,
         maxUserShowCount: 5,
         className: I.container
       }), b.onNotificationShow = () => {
-        a.Z.track(v.rMx.OVERLAY_GAME_INVITE_NOTIFICATION_SHOWN, {
+        a.Z.track(E.rMx.OVERLAY_GAME_INVITE_NOTIFICATION_SHOWN, {
           user_ids: r.entries.map(e => e.author_id),
           entry_ids: r.entries.map(e => e.id)
         })
@@ -152,7 +152,7 @@ function N(e, t) {
     icon: P,
     title: T,
     body: _,
-    hint: () => (0, y.Q)((0, O.P)(), x.t["z8/sgI"], x.intl.string(x.t.jZkzVF), {
+    hint: () => (0, O.Q)((0, y.P)(), x.t["z8/sgI"], x.intl.string(x.t.jZkzVF), {
       highlightAdminWarningIfElevated: true
     }),
     confirmText: N ? true : x.intl.string(x.t.TxyTbm),

@@ -173,7 +173,7 @@ function z(e) {
     hasActiveStream: t,
     participant: n,
     onEnablePin: r
-  } = e, l = (0, E.bp)(), s = n.user, c = (0, a.e7)([C.default], () => {
+  } = e, l = (0, v.bp)(), s = n.user, c = (0, a.e7)([C.default], () => {
     var e;
     return null != (e = C.default.getUser(s.id)) ? e : s
   }, [s]), d = t ? P.intl.string(P.t.tLxK4u) : P.intl.string(P.t.E5RDnJ), {
@@ -222,7 +222,7 @@ function z(e) {
             color: "always-white",
             className: D.controlUserName,
             children: Z.ZP.getName(n.stream.guildId, n.stream.channelId, s)
-          }), (0, i.jsx)(O.ZP, {
+          }), (0, i.jsx)(y.ZP, {
             primaryGuild: c.primaryGuild,
             userId: c.id,
             containerClassName: D.guildTag,
@@ -272,7 +272,7 @@ let U = new Set([Chunk981631.jm8.ENDED, Chunk981631.jm8.FAILED, Chunk981631.jm8.
       locked: r,
       widgetId: l,
       pinned: o
-    } = e, s = (0, a.e7)([x.Z], () => x.Z.getActiveStreamForUser(t.user.id, t.stream.guildId), [t.user.id, t.stream.guildId]), c = (0, E.bp)(), d = null != s && U.has(s.state), h = null != s, f = (0, T.yA)(t.stream), g = (0, T.xN)(t.stream);
+    } = e, s = (0, a.e7)([x.Z], () => x.Z.getActiveStreamForUser(t.user.id, t.stream.guildId), [t.user.id, t.stream.guildId]), c = (0, v.bp)(), d = null != s && U.has(s.state), h = null != s, f = (0, T.yA)(t.stream), g = (0, T.xN)(t.stream);
     return !h && r || d ? null : (0, i.jsxs)("div", {
       className: D.tile,
       children: [h && !r && (0, i.jsx)(m.ZP, {
@@ -293,7 +293,7 @@ let U = new Set([Chunk981631.jm8.ENDED, Chunk981631.jm8.FAILED, Chunk981631.jm8.
           children: (0, i.jsx)(S.Z, {
             participant: t,
             width: n,
-            fit: null != g ? g : v.L.CONTAIN,
+            fit: null != g ? g : E.L.CONTAIN,
             inPopout: true,
             focused: !r,
             selected: false,
@@ -303,7 +303,7 @@ let U = new Set([Chunk981631.jm8.ENDED, Chunk981631.jm8.FAILED, Chunk981631.jm8.
         })
       }) : (0, i.jsx)("div", {
         className: D.streamPreview,
-        children: (0, i.jsx)(y.Z, {
+        children: (0, i.jsx)(O.Z, {
           noText: true,
           className: D.absoluteFill,
           stream: t.stream

@@ -22,9 +22,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk300284 = require("./300284.js"),
   Chunk680295 = require("./680295.jsx"),
   Chunk785717 = require("./785717.jsx"),
-  Chunk461133 = require("./461133.js"),
   Chunk209698 = require("./209698.js"),
   Chunk687158 = require("./687158.js"),
+  Chunk612600 = require("./612600.js"),
   Chunk892001 = require("./892001.js"),
   Chunk899007 = require("./899007.jsx"),
   Chunk648052 = require("./648052.jsx"),
@@ -37,7 +37,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk530 = require("./530.jsx"),
   Chunk309494 = require("./309494.jsx"),
   Chunk4517 = require("./4517.jsx"),
-  Chunk252748 = require("./252748.jsx"),
+  Chunk350207 = require("./350207.jsx"),
   Chunk420654 = require("./420654.jsx"),
   Chunk785184 = require("./785184.jsx"),
   Chunk695346 = require("./695346.js"),
@@ -86,7 +86,7 @@ function el(e) {
     setPopoutRef: el,
     highlightBadge: es,
     openedAt: eo
-  } = e, ec = __OVERLAY__, ed = (0, E.ZP)(t.id), {
+  } = e, ec = __OVERLAY__, ed = (0, C.ZP)(t.id), {
     analyticsLocations: eu
   } = (0, p.ZP)(m.Z.USER_PROFILE_ACCOUNT_POPOUT), em = (0, _.ZB)({
     layout: "ACCOUNT_POPOUT",
@@ -123,7 +123,7 @@ function el(e) {
     eS = (0, h.p)({
       location: "UserProfileAccountPopout"
     }),
-    eT = (0, C.b)({
+    eT = (0, y.b)({
       location: "UserProfileAccountPopout"
     }),
     eO = r.useRef(null),
@@ -141,7 +141,7 @@ function el(e) {
         sourceAnalyticsLocations: eu
       }, em, e))
     },
-    eA = (0, y.P)({
+    eA = (0, E.Z)({
       location: "UserProfileAccountPopout"
     }),
     eZ = (null == ed ? true : ed.widgets) != null && ed.widgets.length > 0,
@@ -214,7 +214,7 @@ function el(e) {
               hidePersonalInformation: ev,
               onClose: n
             }), eA && eZ && (0, a.jsx)(L.Z, {
-              widgets: ed.gameWidgets,
+              widgets: ed.widgets,
               onClick: () => {
                 n(), eR({
                   section: ee.oh.WIDGETS

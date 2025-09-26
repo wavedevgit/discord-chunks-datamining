@@ -525,12 +525,12 @@ let er = Chunk647438.memo(function(e) {
     })
   }),
   es = Chunk647438.memo(function() {
-    let [e, t] = ee(Chunk981631.Odu.CLICK_ZONE_DEBUG), [n, i] = ee(Chunk981631.Odu.PERFORMANCE_DEBUG), l = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.hasRenderDebugMode(Chunk837268.GO.ClickZones)), s = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.hasRenderDebugMode(Chunk837268.GO.WidgetAreas)), o = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.hasRenderDebugMode(Chunk837268.GO.DisabledGPUBoost)), c = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.hasRenderDebugMode(Chunk837268.GO.ForceGPUBoost)), p = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.hasRenderDebugMode(Chunk837268.GO.OverlayRafManagerForceEnabled)), x = e => {
+    let [e, t] = ee(Chunk981631.Odu.CLICK_ZONE_DEBUG), [n, i] = ee(Chunk981631.Odu.PERFORMANCE_DEBUG), l = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.hasRenderDebugMode(Chunk837268.GO.ClickZones)), s = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.hasRenderDebugMode(Chunk837268.GO.WidgetAreas)), o = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.hasRenderDebugMode(Chunk837268.GO.WindowContainer)), c = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.hasRenderDebugMode(Chunk837268.GO.DisabledGPUBoost)), p = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.hasRenderDebugMode(Chunk837268.GO.ForceGPUBoost)), x = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.hasRenderDebugMode(Chunk837268.GO.OverlayRafManagerForceEnabled)), f = e => {
       h.Z.setRenderDebugMode(!E.ZP.hasRenderDebugMode(e), e)
-    }, [f, g] = Chunk647438.useState({});
+    }, [g, b] = Chunk647438.useState({});
     return Chunk647438.useEffect(() => {
       let e = setInterval(() => {
-        Chunk600164({})
+        Chunk594190({})
       }, 200);
       return () => clearInterval(module)
     }, []), (0, Chunk951288.jsxs)("div", {
@@ -541,7 +541,7 @@ let er = Chunk647438.memo(function(e) {
         children: e => (0, a.jsx)("div", K(q({}, e), {
           children: (0, a.jsx)(u.$q, {
             value: l,
-            onChange: () => void x(_.GO.ClickZones),
+            onChange: () => void f(_.GO.ClickZones),
             size: 18,
             type: u.M0.INVERTED,
             shape: u.zV.BOX,
@@ -559,7 +559,7 @@ let er = Chunk647438.memo(function(e) {
         children: e => (0, a.jsx)("div", K(q({}, e), {
           children: (0, a.jsx)(u.$q, {
             value: s,
-            onChange: () => void x(_.GO.WidgetAreas),
+            onChange: () => void f(_.GO.WidgetAreas),
             size: 18,
             type: u.M0.INVERTED,
             shape: u.zV.BOX,
@@ -573,11 +573,29 @@ let er = Chunk647438.memo(function(e) {
         }))
       }), (0, Chunk951288.jsx)(Chunk481060.ua7, {
         position: "left",
-        text: "Disables GPU Boost, which can help with performance when games compete for GPU resources.",
+        text: "Enables a border the overlay window",
         children: e => (0, a.jsx)("div", K(q({}, e), {
           children: (0, a.jsx)(u.$q, {
             value: o,
-            onChange: () => void x(_.GO.DisabledGPUBoost),
+            onChange: () => void f(_.GO.WindowContainer),
+            size: 18,
+            type: u.M0.INVERTED,
+            shape: u.zV.BOX,
+            children: (0, a.jsx)(m.Text, {
+              tag: "span",
+              variant: "text-md/normal",
+              color: "text-muted",
+              children: "Enable Window Container Debug Mode"
+            })
+          })
+        }))
+      }), (0, Chunk951288.jsx)(Chunk481060.ua7, {
+        position: "left",
+        text: "Disables GPU Boost, which can help with performance when games compete for GPU resources.",
+        children: e => (0, a.jsx)("div", K(q({}, e), {
+          children: (0, a.jsx)(u.$q, {
+            value: c,
+            onChange: () => void f(_.GO.DisabledGPUBoost),
             size: 18,
             type: u.M0.INVERTED,
             shape: u.zV.BOX,
@@ -594,10 +612,10 @@ let er = Chunk647438.memo(function(e) {
         text: "Forces GPU Boost, which can help with performance when games compete for GPU resources.",
         children: e => (0, a.jsx)("div", K(q({}, e), {
           children: (0, a.jsx)(u.$q, {
-            value: c,
-            onChange: () => void x(_.GO.ForceGPUBoost),
+            value: p,
+            onChange: () => void f(_.GO.ForceGPUBoost),
             size: 18,
-            disabled: o,
+            disabled: c,
             type: u.M0.INVERTED,
             shape: u.zV.BOX,
             children: (0, a.jsx)(m.Text, {
@@ -645,8 +663,8 @@ let er = Chunk647438.memo(function(e) {
           })
         }))
       }), (0, Chunk951288.jsx)(Chunk755721.$q, {
-        value: Chunk765250,
-        onChange: () => void Chunk593472(Chunk837268.GO.OverlayRafManagerForceEnabled),
+        value: Chunk593472,
+        onChange: () => void Chunk393238(Chunk837268.GO.OverlayRafManagerForceEnabled),
         size: 18,
         type: Chunk755721.M0.INVERTED,
         shape: Chunk755721.zV.BOX,

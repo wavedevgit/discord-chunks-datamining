@@ -15,8 +15,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk680295 = require("./680295.jsx"),
   Chunk785717 = require("./785717.jsx"),
   Chunk221292 = require("./221292.js"),
-  Chunk461133 = require("./461133.js"),
   Chunk687158 = require("./687158.js"),
+  Chunk612600 = require("./612600.js"),
   Chunk510659 = require("./510659.jsx"),
   Chunk892001 = require("./892001.js"),
   Chunk899007 = require("./899007.jsx"),
@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk481932 = require("./481932.jsx"),
   Chunk664794 = require("./664794.jsx"),
   Chunk4517 = require("./4517.jsx"),
-  Chunk252748 = require("./252748.jsx"),
+  Chunk350207 = require("./350207.jsx"),
   Chunk277117 = require("./277117.jsx"),
   Chunk52639 = require("./52639.jsx"),
   Chunk228168 = require("./228168.js"),
@@ -61,7 +61,7 @@ function L(e) {
     user: n,
     currentUser: f,
     channel: w
-  } = e, L = __OVERLAY__, k = (0, m.ZP)(n.id), U = (0, c.ZP)(), G = i.useRef(Date.now()), {
+  } = e, L = __OVERLAY__, k = (0, g.ZP)(n.id), U = (0, c.ZP)(), G = i.useRef(Date.now()), {
     analyticsLocations: H
   } = (0, u.ZP)(d.Z.USER_PROFILE_SIDEBAR), F = (0, h.ZB)({
     layout: "SIDEBAR",
@@ -77,7 +77,7 @@ function L(e) {
       sourceAnalyticsLocations: H,
       hideRestrictedProfile: true
     }, F, e))
-  }, q = (0, g.P)({
+  }, q = (0, m.Z)({
     location: "UserProfileSidebar"
   }), K = (null == k ? true : k.widgets) != null && k.widgets.length > 0;
   return (0, r.jsx)(u.Gt, {
@@ -144,7 +144,7 @@ function L(e) {
             }), q && K && (0, r.jsx)("div", {
               className: A.widgetBreadcrumb,
               children: (0, r.jsx)(Z.Z, {
-                widgets: k.gameWidgets,
+                widgets: k.widgets,
                 onClick: () => {
                   null == Y || Y({
                     section: N.oh.WIDGETS

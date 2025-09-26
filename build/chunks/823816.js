@@ -1,11 +1,12 @@
-/** Chunk was on 31553 **/
-/** chunk id: 823816, original params: e,n,t (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 823816, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   m: () => o
 });
 var Chunk427164 = require("./427164.js"),
   Chunk438379 = require("./438379.js");
-let r = (0, Chunk427164.le)({
+let a = (0, Chunk427164.le)({
   name: "2025-09-user-profile-application-widgets-viewing",
   kind: "user",
   defaultConfig: {
@@ -23,13 +24,13 @@ let r = (0, Chunk427164.le)({
 
 function o(e) {
   let {
-    location: n,
-    autoTrackExposure: t = true
-  } = e, l = (0, i.J)({
-    location: n,
-    autoTrackExposure: t
-  }), o = r.useConfig({
-    location: n
+    location: t,
+    autoTrackExposure: n = true
+  } = e, r = (0, i.J)({
+    location: t,
+    autoTrackExposure: n
+  }), o = a.useConfig({
+    location: t
   }).enabled;
-  return !l && o
+  return !r && o
 }

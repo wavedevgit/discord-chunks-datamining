@@ -17,5 +17,5 @@ function a(e) {
         for (let e of t) r.add(e);
       return [...r]
     }, [t, e]);
-  (0, i.Z)(r)
+  return (0, i.Z)(r)
 }

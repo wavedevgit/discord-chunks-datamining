@@ -2,14 +2,20 @@
 /** chunk id: 693091, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  AS: () => o,
-  S4: () => s,
-  X4: () => _
+  AS: () => _,
+  S4: () => p,
+  X4: () => y
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
-  Chunk481060 = require("./481060.js");
+  Chunk481060 = require("./481060.js"),
+  Chunk710845 = require("./710845.js"),
+  Chunk522474 = require("./522474.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk451478 = require("./451478.js"),
+  Chunk830917 = require("./830917.js"),
+  Chunk501787 = require("./501787.js");
 
-function a(e, t, n) {
+function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -17,7 +23,8 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class o {
+let f = new Chunk710845.Z("NotificationLayoutManager");
+class _ {
   updateState(e, t) {
     this.items = e;
     let n = this.locked !== t;
@@ -26,11 +33,8 @@ class o {
   initialize(e) {
     if (null == this.resizeObserver) {
       for (let [, {
-          element: n
-        }] of(this.resizeObserver = new e.ResizeObserver(this.handleResize), this.listeners)) {
-        var t;
-        null == (t = this.resizeObserver) || t.observe(n)
-      }
+          element: t
+        }] of(this.resizeObserver = new e.ResizeObserver(this.handleResize), this.listeners)) this.resizeObserver.observe(t);
       this.queueCompute()
     }
   }
@@ -52,7 +56,7 @@ class o {
       let {
         offsetHeight: a
       } = Chunk481060.element;
-      (Chunk481060.top !== exports || Chunk481060.height !== a || Chunk481060.index !== require) && (e = true), Chunk481060.top = exports, Chunk481060.height = a, Chunk481060.index = require, 0 === exports && (this.matchHeight !== a && (e = true), this.matchHeight = a), t += a + 8, require++
+      (Chunk481060.top !== exports || Chunk481060.height !== Chunk710845 || Chunk481060.index !== require) && (e = true), Chunk481060.top = exports, Chunk481060.height = Chunk710845, Chunk481060.index = require, 0 === exports && (this.matchHeight !== Chunk710845 && (e = true), this.matchHeight = Chunk710845), t += Chunk710845 + 8, require++
     }
     module && this.broadcastLayoutUpdates()
   }
@@ -88,36 +92,36 @@ class o {
     return this.listeners.get(e)
   }
   constructor(e) {
-    a(this, "resizeObserver", true), a(this, "listeners", new Map), a(this, "queuedCompute", false), a(this, "items", []), a(this, "matchHeight", 0), a(this, "locked", true), a(this, "handleResize", e => {
+    d(this, "resizeObserver", true), d(this, "listeners", new Map), d(this, "queuedCompute", false), d(this, "items", []), d(this, "matchHeight", 0), d(this, "locked", true), d(this, "handleResize", e => {
       this.computeLayout()
     }), this.locked = e
   }
 }
-let s = Chunk647438.createContext(new o(true));
+let p = Chunk647438.createContext(new _(true));
 
-function l(e, t) {
+function h(e, t) {
   return t && e > 4 ? 0 : t ? Math.min(1 - e / 4, 1) : 1
 }
 
-function c(e, t) {
+function m(e, t) {
   return t ? Math.min(1 - e / 4, 1) : 1
 }
 
-function u(e, t, n) {
+function g(e, t, n) {
   return t && 0 !== e ? 20 * Math.max(e / 5, 0) : n
 }
 
-function d(e, t) {
+function E(e, t) {
   return t && e > 0 ? 0 : 1
 }
-let f = {
+let b = {
   mass: .8,
   friction: 25,
   tension: 320
 };
 
-function _(e, t, n) {
-  let [a, o] = (0, i.q_F)(() => ({
+function y(e, t, n) {
+  let [a, d] = (0, i.q_F)(() => ({
     from: {
       opacity: 0,
       scale: 1,
@@ -125,54 +129,68 @@ function _(e, t, n) {
       height: 0,
       contentOpacity: 1
     }
-  }), true, []), _ = r.useRef(o), p = r.useContext(s), h = r.useMemo(() => {
+  }), true, []), _ = r.useRef(d), y = r.useContext(p), O = r.useMemo(() => {
     let t = false;
     return n => {
-      null == n ? p.unsubscribe(e) : p.subscribe(e, n, e => {
+      null == n ? y.unsubscribe(e) : y.subscribe(e, n, n => {
+        var r;
         let {
-          locked: n,
-          matchHeight: r,
-          height: i,
-          top: a,
-          index: o
-        } = e, {
-          current: s
-        } = _, p = {
-          opacity: l(o, n),
-          scale: c(o, n),
-          transform: u(o, n, a),
-          contentOpacity: d(o, n),
-          height: n ? r : i
+          locked: i,
+          matchHeight: a,
+          height: d,
+          top: p,
+          index: y
+        } = n;
+        if (null == (r = s.default.getCurrentUser()) ? true : r.isStaff()) {
+          let t = o.Z.getWindow(u.$J),
+            n = null != t ? l.Z.windowSize((0, c.ZY)(t)) : true;
+          f.info("Notification layout update", {
+            id: e,
+            locked: i,
+            matchHeight: a,
+            height: d,
+            top: p,
+            index: y
+          }, n)
+        }
+        let {
+          current: O
+        } = _, v = {
+          opacity: h(y, i),
+          scale: m(y, i),
+          transform: g(y, i, p),
+          contentOpacity: E(y, i),
+          height: i ? a : d
         };
-        s({
+        O({
           from: t ? true : {
             opacity: 0,
             scale: 1.1,
-            transform: -((n ? r : i) * 1),
+            transform: -((i ? a : d) * 1),
             contentOpacity: 1,
-            height: n ? r : i
+            height: i ? a : d
           },
-          to: p,
-          config: f
+          to: v,
+          config: b
         }), t = true
       })
     }
-  }, [e, p]);
+  }, [e, y]);
   return r.useLayoutEffect(() => {
     if (t === i.pJH.YEETED) {
-      let t = p.getLayoutSpecs(e);
+      let t = y.getLayoutSpecs(e);
       if (null == t) return void n();
       _.current({
         to: {
           scale: .8,
           opacity: 0,
-          transform: u(t.index, p.locked, t.top) + (p.locked ? 0 : t.height / 2)
+          transform: g(t.index, y.locked, t.top) + (y.locked ? 0 : t.height / 2)
         },
-        config: f
+        config: b
       }), setTimeout(n, 300)
     }
-  }, [t, n, e, p]), {
-    ref: h,
+  }, [t, n, e, y]), {
+    ref: O,
     springs: a
   }
 }

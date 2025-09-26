@@ -80,7 +80,7 @@ let j = {
       children: Chunk388032.intl.string(Chunk388032.t.UPvOiY)
     }),
     renderButtons: e => (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsx)(y.ls, {
+      children: [(0, i.jsx)(O.ls, {
         onClick: t => {
           (0, p.js)(e) && (0, r.jW)(t, async () => {
             let {
@@ -91,7 +91,7 @@ let j = {
             }))
           })
         }
-      }), (0, i.jsx)(y.RT, {
+      }), (0, i.jsx)(O.RT, {
         id: e.id,
         pinned: e.pinned
       })]
@@ -112,8 +112,8 @@ let j = {
         id: n.id,
         locked: l,
         pinned: n.pinned,
-        widget: v.Odu.VOICE_V3,
-        maxDisplayedVoiceStates: null != (t = n.meta.voiceStatesMaxShown) ? t : E.At,
+        widget: E.Odu.VOICE_V3,
+        maxDisplayedVoiceStates: null != (t = n.meta.voiceStatesMaxShown) ? t : v.At,
         isPreviewingInGame: false,
         showEmpty: o
       }) : null
@@ -122,7 +122,7 @@ let j = {
       children: Chunk388032.intl.string(Chunk388032.t.nFv3GR)
     }),
     renderButtons: e => (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsx)(y.ls, {
+      children: [(0, i.jsx)(O.ls, {
         onClick: e => {
           (0, r.jW)(e, async () => {
             let {
@@ -131,7 +131,7 @@ let j = {
             return t => (0, i.jsx)(e, b({}, t))
           })
         }
-      }), (0, i.jsx)(y.RT, {
+      }), (0, i.jsx)(O.RT, {
         id: e.id,
         pinned: e.pinned
       })]
@@ -153,7 +153,7 @@ let j = {
       children: "Click Zone Tester"
     }),
     renderButtons: e => (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsx)(y.ls, {
+      children: [(0, i.jsx)(O.ls, {
         onClick: e => {
           (0, r.jW)(e, async () => {
             let {
@@ -162,7 +162,7 @@ let j = {
             return t => (0, i.jsx)(e, b({}, t))
           })
         }
-      }), (0, i.jsx)(y.RT, {
+      }), (0, i.jsx)(O.RT, {
         id: e.id,
         pinned: e.pinned
       })]
@@ -185,7 +185,7 @@ let j = {
     renderTitle: () => (0, Chunk951288.jsx)(Chunk430561.PI, {
       children: "Overlay Performance"
     }),
-    renderButtons: e => (0, i.jsx)(y.RT, {
+    renderButtons: e => (0, i.jsx)(O.RT, {
       id: e.id,
       pinned: e.pinned
     })
@@ -221,14 +221,14 @@ let j = {
         showEmpty: u
       }) : null
     },
-    renderTitle: e => (0, i.jsx)(y.XM, {
+    renderTitle: e => (0, i.jsx)(O.XM, {
       widgetId: e.id,
       children: S.intl.string(S.t["386XRk"])
     }),
     renderButtons(e) {
       var t;
       return (0, p.ZL)(e) ? (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(y.ls, {
+        children: [(0, i.jsx)(O.ls, {
           onClick: t => {
             (0, p.ZL)(e) && (0, r.jW)(t, async () => {
               let {
@@ -239,10 +239,10 @@ let j = {
               }))
             })
           }
-        }), (0, i.jsx)(y.GY, {
+        }), (0, i.jsx)(O.GY, {
           widgetId: e.id,
           showAllStreams: null == (t = e.meta.showAllStreams) || t
-        }), (0, i.jsx)(y.RT, {
+        }), (0, i.jsx)(O.RT, {
           id: e.id,
           pinned: e.pinned
         })]
@@ -267,7 +267,7 @@ let j = {
         showEmpty: n,
         widget: r
       } = e;
-      return (0, i.jsx)(O.Z, {
+      return (0, i.jsx)(y.Z, {
         pinned: r.pinned,
         locked: t,
         showEmpty: n
@@ -277,7 +277,7 @@ let j = {
       children: Chunk388032.intl.string(Chunk388032.t.gnKWdX)
     }),
     renderButtons: e => (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsx)(y.ls, {
+      children: [(0, i.jsx)(O.ls, {
         onClick: e => {
           (0, r.jW)(e, async () => {
             let {
@@ -286,7 +286,7 @@ let j = {
             return t => (0, i.jsx)(e, b({}, t))
           })
         }
-      }), (0, i.jsx)(y.RT, {
+      }), (0, i.jsx)(O.RT, {
         id: e.id,
         pinned: e.pinned
       })]

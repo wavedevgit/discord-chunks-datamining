@@ -49,8 +49,8 @@ function d(e, t, n) {
   if (!f && !m) return e;
   let g = u(a, r),
     {
-      verticalRatio: y,
-      horizontalRatio: O
+      verticalRatio: O,
+      horizontalRatio: y
     } = c({
       width: e.width,
       height: e.height,
@@ -59,13 +59,13 @@ function d(e, t, n) {
       tileCount: h,
       isVertical: s
     }),
-    E = e.width - i,
-    v = e.height - i,
+    v = e.width - i,
+    E = e.height - i,
     S = d - i,
     b = p - i;
-  return s ? (b -= g, v -= g) : (S -= g, E -= g), f && m && (e.width > e.height ? v = l(E = S, y) : E = o(v = b, O), f = E > S, m = v > b), f && (v = l(E = S, y)), m && (E = o(v = b, O)), s ? v += u(a, r) : E += u(a, r), {
-    width: E + i,
-    height: v + i
+  return s ? (b -= g, E -= g) : (S -= g, v -= g), f && m && (e.width > e.height ? E = l(v = S, O) : v = o(E = b, y), f = v > S, m = E > b), f && (E = l(v = S, O)), m && (v = o(E = b, y)), s ? E += u(a, r) : v += u(a, r), {
+    width: v + i,
+    height: E + i
   }
 }
 

@@ -32,8 +32,8 @@ function S(e, t, n, S) {
   } = (0, a.Xi)(e, t, n), {
     trackView: C,
     trackClick: Z
-  } = (0, y.R)(O.n0.TextChat, {
-    notif_type: O.n0.TextChat,
+  } = (0, O.R)(y.n0.TextChat, {
+    notif_type: y.n0.TextChat,
     notif_user_id: null == (b = t.author) ? true : b.id,
     message_id: t.id,
     message_type: t.type,
@@ -49,7 +49,7 @@ function S(e, t, n, S) {
       formatInline: true,
       hideSimpleEmbedContent: false
     }).content : I,
-    hint: (e, t) => e && !t ? null : (0, g.Q)((0, y.P)(), v.t.ykjOAA, v.intl.string(v.t.jZkzVF)),
+    hint: (e, t) => e && !t ? null : (0, g.Q)((0, O.P)(), E.t.ykjOAA, E.intl.string(E.t.jZkzVF)),
     maxBodyLines: 2,
     renderFooter: (n, r, l) => n && !l ? (0, i.jsx)(m.Z, {
       id: r,
@@ -63,10 +63,10 @@ function S(e, t, n, S) {
     onNotificationClick: () => {
       let n = (0, h.getPID)();
       (0, l.In)(e.id, {
-        section: E.jXE.OVERLAY,
-        object: E.qAy.ACK_TEXT_CHAT_NOTIFICATION,
-        objectType: E.Qqv.ACK_SEMI_AUTOMATIC
-      }, true, true, t.id), f.ZP.isInputLocked(n) ? (Z("unlock"), r.Z.setInputLocked(false, n)) : (Z("jump"), (0, s.uL)(E.Z5c.CHANNEL(e.guild_id, e.id, t.id)), d.isPlatformEmbedded && p.ZP.focus())
+        section: v.jXE.OVERLAY,
+        object: v.qAy.ACK_TEXT_CHAT_NOTIFICATION,
+        objectType: v.Qqv.ACK_SEMI_AUTOMATIC
+      }, true, true, t.id), f.ZP.isInputLocked(n) ? (Z("unlock"), r.Z.setInputLocked(false, n)) : (Z("jump"), (0, s.uL)(v.Z5c.CHANNEL(e.guild_id, e.id, t.id)), d.isPlatformEmbedded && p.ZP.focus())
     },
     onDismissClick: () => {
       Z("dismiss")

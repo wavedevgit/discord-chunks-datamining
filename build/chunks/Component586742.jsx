@@ -73,7 +73,7 @@ let R = Chunk647438.memo(function(e) {
       channel: r,
       context: l
     } = e, o = null == (t = n.user) ? true : t.id;
-    return (0, a.e7)([O.Z], () => null != n.user && null != l && null != r && O.Z.isLocalVideoDisabled(o, l), [o, n.user, l, r]) ? null : (0, i.jsx)(m.ZP, D({}, e))
+    return (0, a.e7)([y.Z], () => null != n.user && null != l && null != r && y.Z.isLocalVideoDisabled(o, l), [o, n.user, l, r]) ? null : (0, i.jsx)(m.ZP, D({}, e))
   }),
   k = Chunk647438.memo(function(e) {
     let {
@@ -112,7 +112,7 @@ let R = Chunk647438.memo(function(e) {
     })), [l]);
     r.useEffect(() => {
       d && (0, b.zi)(N.Odu.VIDEO, {
-        locked: v.default.isInstanceLocked(),
+        locked: E.default.isInstanceLocked(),
         shownUserIds: Array.from(f),
         liveUserIds: Array.from(f),
         contentInventoryIds: []
@@ -162,18 +162,18 @@ let R = Chunk647438.memo(function(e) {
         isPreviewingInGame: false
       }, g)
     }, [a, u, g]);
-    let y = r.useMemo(() => ({
+    let O = r.useMemo(() => ({
         opacity: u.opacity
       }), [u.opacity]),
-      O = r.useMemo(() => o()({
+      y = r.useMemo(() => o()({
         [P.videoList]: true,
         [P.vertical]: !m,
         [P.hidden]: !g && a
       }), [m, g, a]);
     return 0 !== n.length || a ? null == c ? null : (0, i.jsx)("div", {
       ref: f,
-      className: O,
-      style: y,
+      className: y,
+      style: O,
       children: (0, i.jsx)(k, {
         context: t,
         participants: n,
@@ -220,13 +220,13 @@ let R = Chunk647438.memo(function(e) {
 
 function V(e) {
   var t, n, l, o;
-  let s = (0, a.e7)([E.Z, y.Z], () => y.Z.getChannel(E.Z.getVoiceChannelId())),
+  let s = (0, a.e7)([v.Z, O.Z], () => O.Z.getChannel(v.Z.getVoiceChannelId())),
     u = 2 * e.padding + 2 * e.borderWidth,
     h = null == s ? true : s.id,
-    [m, O] = (0, a.e7)([p.Z], () => null == h ? [
+    [m, y] = (0, a.e7)([p.Z], () => null == h ? [
       [], 0
     ] : [p.Z.getVideoParticipants(h), p.Z.getParticipantsVersion(h)], [h], S.Q),
-    v = "boolean" != typeof e.widget.meta.horizontal || e.widget.meta.horizontal,
+    E = "boolean" != typeof e.widget.meta.horizontal || e.widget.meta.horizontal,
     {
       width: b = e.width - u,
       height: x = e.height - u,
@@ -235,13 +235,13 @@ function V(e) {
     {
       participantTileWidth: C,
       visibleParticipants: Z
-    } = (0, g.ZB)(v ? b : x, m, {
+    } = (0, g.ZB)(E ? b : x, m, {
       tileWidth: w.vZ,
       tileMinWidth: w.mo,
       tileMargin: w.F$,
       limit: 8,
       cropSelfVideo: true,
-      version: O
+      version: y
     }),
     N = (0, a.e7)([f.Z], () => f.Z.getWindowState(w.$J)),
     T = {
@@ -315,15 +315,15 @@ function V(e) {
       })
     }, [t])
   }({
-    horizontal: v,
+    horizontal: E,
     widget: e.widget,
     widgetLayoutSpecs: T
   }), (0, i.jsx)(L, A(D({}, e), {
     channel: s,
     participants: Z,
-    participantsVersion: O,
-    width: v ? C : null != b ? b : e.width,
-    height: v ? null != x ? x : e.height : C,
+    participantsVersion: y,
+    width: E ? C : null != b ? b : e.width,
+    height: E ? null != x ? x : e.height : C,
     containerRef: I
   }))
 }

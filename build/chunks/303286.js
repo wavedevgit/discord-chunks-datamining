@@ -22,8 +22,8 @@ function m(e) {
     m = (0, o.x)(e),
     g = (0, c.Z)(e),
     {
-      trackView: y,
-      trackClick: O
+      trackView: O,
+      trackClick: y
     } = (0, d.R)(p.n0.IncomingCall, {
       notif_type: p.n0.IncomingCall,
       notif_user_id: g,
@@ -38,10 +38,10 @@ function m(e) {
     confirmText: f.intl.string(f.t["0D/6R0"]),
     cancelText: f.intl.string(f.t.BVN4pK),
     onNotificationShow: () => {
-      y()
+      O()
     },
     onConfirmClick: (t, n) => {
-      if (O("join"), h.TPd.CALLABLE.has(e.type)) i.Z.call(e.id, false, false);
+      if (y("join"), h.TPd.CALLABLE.has(e.type)) i.Z.call(e.id, false, false);
       else {
         if (e.type !== h.d4z.GUILD_VOICE) return;
         l.default.selectVoiceChannel(e.id)
@@ -54,10 +54,10 @@ function m(e) {
       })
     },
     onCancelClick: () => {
-      O("decline"), i.Z.stopRinging(e.id)
+      y("decline"), i.Z.stopRinging(e.id)
     },
     onDismissClick: () => {
-      O("dismiss")
+      y("dismiss")
     }
   }
 }

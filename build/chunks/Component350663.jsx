@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk339882 = require("./339882.js");
 
-function E(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -39,7 +39,7 @@ function E(e) {
   return e
 }
 
-function v(e, t) {
+function E(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -80,10 +80,10 @@ let S = {
     })), T = (0, u.Z)(n), _ = (0, u.Z)(x), P = b === g.C5.VERTICAL, D = x || _ !== x || T !== n, A = r.useMemo(() => {
       let e = 0,
         t = 0;
-      return P ? N.map((t, n) => v(E({}, t), {
+      return P ? N.map((t, n) => E(v({}, t), {
         y: (e += t.height + (n > 0 ? w : 0)) - t.height,
         x: 0
-      })) : N.map((e, n) => v(E({}, e), {
+      })) : N.map((e, n) => E(v({}, e), {
         x: (t += e.width + (n > 0 ? w : 0)) - e.width,
         y: 0
       }))
@@ -130,7 +130,7 @@ let S = {
       trail: 100 * !D
     }, D ? "animate-never" : "respect-motion-settings"), M = (0, p.ee)(() => new Set(I.map(e => e.user.id)), [I, C]), V = (0, p.ee)(() => new Set(I.filter(e => j.has((0, c.V9)(e.stream))).map(e => e.user.id)), [I, j, C]);
     return r.useEffect(() => {
-      0 !== M.size && (0, p.zi)(y.Odu.GO_LIVE, {
+      0 !== M.size && (0, p.zi)(O.Odu.GO_LIVE, {
         locked: d.default.isInstanceLocked(),
         shownUserIds: Array.from(M),
         liveUserIds: Array.from(V),
@@ -138,9 +138,9 @@ let S = {
       })
     }, [M, V]), (0, i.jsx)("div", {
       className: o()({
-        [O.gridContainer]: true,
-        [O.vertical]: P,
-        [O.horizontal]: !P
+        [y.gridContainer]: true,
+        [y.vertical]: P,
+        [y.horizontal]: !P
       }),
       style: P ? {
         height: R
@@ -148,7 +148,7 @@ let S = {
         width: k
       },
       children: L((e, t, r, o) => (0, i.jsx)(a.animated.div, {
-        className: O.gridItem,
+        className: y.gridItem,
         style: Object.assign({}, e, {
           width: n,
           height: l,
@@ -163,7 +163,7 @@ let S = {
             pinned: o
           } = e;
           return (0, i.jsx)("div", {
-            className: O.tileContainer,
+            className: y.tileContainer,
             children: (0, i.jsx)(h.Z, {
               participant: t,
               width: n,
