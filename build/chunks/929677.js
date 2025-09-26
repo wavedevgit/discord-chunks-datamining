@@ -1,5 +1,6 @@
-/** Chunk was on 49902 **/
-/** chunk id: 929677, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 74477 **/
+/** chunk id: 929677, original params: e,t,r (module,exports,require) **/
+"use strict";
 require.d(exports, {
   O: () => u
 });
@@ -16,8 +17,8 @@ let c = {
         userId: e
       });
       try {
-        let n = await i.tn.get({
-          url: s.ANM.USER_APPLICATION_IDENTITIES(e),
+        let r = await i.tn.get({
+          url: o.ANM.USER_APPLICATION_IDENTITIES(e),
           query: {
             with_profiles: true
           },
@@ -27,7 +28,7 @@ let c = {
         l.Z.dispatch({
           type: "USER_APPLICATION_IDENTITY_FETCH_USER_SUCCESS",
           userId: e,
-          identities: n.body.identities
+          identities: r.body.identities
         })
       } catch (t) {
         throw l.Z.dispatch({
@@ -38,8 +39,8 @@ let c = {
     }
   },
   u = (0, Chunk442837.Kb)(Chunk380221.Z, {
-    queryId: e => s.McO.USER_APPLICATION_IDENTITIES(e),
-    get: e => o.Z.getUserIdentities(e),
+    queryId: e => o.McO.USER_APPLICATION_IDENTITIES(e),
+    get: e => s.Z.getUserIdentities(e),
     load: (e, t) => c.fetchUserApplicationIdentitiesWithProfiles(t, e),
     useStateHook: Chunk442837.e7
   })

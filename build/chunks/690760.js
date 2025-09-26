@@ -1,5 +1,6 @@
-/** Chunk was on 49902 **/
-/** chunk id: 690760, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 74477 **/
+/** chunk id: 690760, original params: e,t,r (module,exports,require) **/
+"use strict";
 require.d(exports, {
   s: () => a
 }), require("./388685.js");
@@ -9,12 +10,12 @@ var Chunk647438 = require("./647438.js"),
 
 function a(e) {
   let t = (0, l.SM)().data,
-    n = r.useMemo(() => {
-      let n = new Set;
-      for (let t of e) n.add(t.applicationId);
+    r = n.useMemo(() => {
+      let r = new Set;
+      for (let t of e) r.add(t.applicationId);
       if (null != t)
-        for (let e of t) n.add(e);
-      return [...n]
+        for (let e of t) r.add(e);
+      return [...r]
     }, [t, e]);
-  (0, i.Z)(n)
+  (0, i.Z)(r)
 }

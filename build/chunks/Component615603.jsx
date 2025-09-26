@@ -9,7 +9,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
-  Chunk755721 = require("./755721.js"),
+  Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk607070 = require("./607070.js"),
   Chunk975298 = require("./975298.js"),
@@ -108,28 +108,30 @@ function D(e) {
         shouldShow: h,
         text: m,
         "aria-label": m.toString(),
-        children: e => (0, r.jsx)(l.zx, w(R({}, e), {
+        children: e => (0, r.jsx)("div", {
           className: C.unappliedGuildBoostSlotCta,
-          color: l.zx.Colors.PRIMARY,
-          look: l.zx.Looks.LINK,
-          onClick: () => a(t),
-          size: l.zx.Sizes.NONE,
-          disabled: h,
-          children: A.intl.string(A.t.twFU3d)
-        }))
+          children: (0, r.jsx)(l.Avr, w(R({}, e), {
+            variant: "primary",
+            text: A.intl.string(A.t.twFU3d),
+            onClick: () => a(t),
+            disabled: h,
+            size: "sm"
+          }))
+        })
       }), p && (0, r.jsx)(f.Z, {
         shouldShow: h,
         text: m,
         "aria-label": m.toString(),
-        children: e => (0, r.jsx)(l.zx, w(R({}, e), {
+        children: e => (0, r.jsx)("div", {
           className: C.unappliedGuildBoostSlotCta,
-          color: l.zx.Colors.PRIMARY,
-          look: l.zx.Looks.LINK,
-          onClick: () => o(t),
-          size: l.zx.Sizes.NONE,
-          disabled: h,
-          children: A.intl.string(A.t["2glQNj"])
-        }))
+          children: (0, r.jsx)(l.Avr, w(R({}, e), {
+            variant: "primary",
+            text: A.intl.string(A.t["2glQNj"]),
+            onClick: () => o(t),
+            disabled: h,
+            size: "sm"
+          }))
+        })
       })]
     })]
   }, t.id)

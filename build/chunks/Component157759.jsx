@@ -1,4 +1,4 @@
-/** Chunk was on 40276 **/
+/** Chunk was on 9273 **/
 /** chunk id: 157759, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -45,7 +45,7 @@ let b = e => {
       e = true
     }
   }, [j, t.id]);
-  let C = i.useCallback(() => {
+  let I = i.useCallback(() => {
       v(false), o.ZP.trackWithMetadata(g.rMx.IAR_REMOVE_APP_BUTTON_CLICKED, {
         guild_id: j,
         application_id: t.id,
@@ -57,19 +57,19 @@ let b = e => {
         })
       })
     }, [t.id, j, y, n]),
-    I = (0, l.e7)([m.Z, _.Z], () => {
+    C = (0, l.e7)([m.Z, _.Z], () => {
       let e = _.Z.getGuild(j);
       if (null == e) returnfalse;
       let n = m.Z.can(g.Plq.MANAGE_GUILD, e),
         r = null == t.bot || m.Z.canManageUser(g.Plq.MANAGE_GUILD, t.bot.id, e);
       return n && r
     });
-  return null != t && null != j && b && I ? (0, r.jsx)(d.JZ, {
+  return null != t && null != j && b && C ? (0, r.jsx)(d.JZ, {
     title: f.intl.string(f.t["WV/CsL"]),
     description: f.intl.string(f.t["FlcC+/"]),
     buttonText: x ? f.intl.string(f.t.aCJlq6) : f.intl.string(f.t["6I1F3t"]),
     buttonDisabled: !x,
-    onButtonPress: C,
+    onButtonPress: I,
     buttonVariant: x ? "critical-primary" : "secondary"
   }) : null
 }

@@ -1,5 +1,5 @@
-/** Chunk was on 49235 **/
-/** chunk id: 220566, original params: e,n,t (module,exports,require) **/
+/** Chunk was on 1272 **/
+/** chunk id: 220566, original params: e,t,n (module,exports,require) **/
 module.exports = {
   root: "root_fdf9c0",
   background: "background_fdf9c0",

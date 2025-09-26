@@ -1,9 +1,10 @@
 /** Chunk was on 31553 **/
 /** chunk id: 768111, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => f
 }), require("./539854.js");
-var Chunk46841 = require("./46841.js"),
+var Chunk621853 = require("./621853.js"),
+  Chunk46841 = require("./46841.js"),
   Chunk477448 = require("./477448.js"),
   Chunk612600 = require("./612600.js"),
   Chunk585305 = require("./585305.js"),
@@ -14,39 +15,39 @@ var Chunk46841 = require("./46841.js"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx");
 
-function p(e) {
+function f(e) {
   let {
     user: n,
     currentUser: t
   } = e, {
-    mutualFriendsCount: p,
-    mutualGuilds: f
-  } = (0, s.Z)(n), h = null == f ? true : f.length, j = (0, o.Z)(n), x = (0, i.Z)({
+    mutualFriendsCount: f,
+    mutualGuilds: h
+  } = (0, a.Z)(n), j = null == h ? true : h.length, x = (0, s.Z)(n), v = (0, r.Z)({
     location: "useUserProfileModalV2TabBarItems"
-  }), v = (0, r.Z)({
+  }), g = (0, o.Z)({
     location: "useUserProfileModalV2TabBarItems"
-  }), g = (0, a.Z)(n.id), b = (0, l.S)({
+  }), b = (0, c.Z)(n.id), y = (0, i.S)({
     location: "useUserProfileModalV2TabBarItems"
-  }), y = [], O = n.id === (null == t ? true : t.id), I = g.length > 0;
-  return (O && x || I && v) && y.push({
-    text: m.intl.string(m.t.laViw8),
-    section: u.oh.WIDGETS,
+  }), O = [], I = n.id === (null == t ? true : t.id), Z = null != l.Z.getFirstWishlistId(n.id), P = b.length > 0;
+  return (I && v || P && g) && O.push({
+    text: p.intl.string(p.t.laViw8),
+    section: m.oh.WIDGETS,
     subsection: true
-  }), y.push({
-    text: m.intl.string(m.t.chq59f),
-    section: u.oh.ACTIVITY,
+  }), O.push({
+    text: p.intl.string(p.t.chq59f),
+    section: m.oh.ACTIVITY,
     subsection: true
-  }), b && y.push({
-    text: m.intl.string(m.t["7lZ31N"]),
-    section: u.oh.WISHLIST,
+  }), y && (Z || I) && O.push({
+    text: p.intl.string(p.t["7lZ31N"]),
+    section: m.oh.WISHLIST,
     subsection: true
-  }), n.id !== (null == t ? true : t.id) && j && (y.push({
-    text: (0, c.Z)(p),
-    section: u.oh.MUTUAL_FRIENDS,
+  }), n.id !== (null == t ? true : t.id) && x && (O.push({
+    text: (0, d.Z)(f),
+    section: m.oh.MUTUAL_FRIENDS,
     subsection: true
-  }), y.push({
-    text: (0, d.Z)(h),
-    section: u.oh.MUTUAL_GUILDS,
+  }), O.push({
+    text: (0, u.Z)(j),
+    section: m.oh.MUTUAL_GUILDS,
     subsection: true
-  })), y
+  })), O
 }

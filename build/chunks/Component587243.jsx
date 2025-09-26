@@ -1,4 +1,4 @@
-/** Chunk was on 11222 **/
+/** Chunk was on 14626 **/
 /** chunk id: 587243, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   F: () => j,
@@ -37,9 +37,9 @@ let f = [{
     duration: true,
     label: () => Chunk388032.intl.string(Chunk388032.t["46dqJS"])
   }],
-  b = "forever";
+  g = "forever";
 
-function g(e, t) {
+function b(e, t) {
   return e.getFullYear() === t.getFullYear() && e.getMonth() === t.getMonth() && e.getDate() === t.getDate()
 }
 
@@ -67,7 +67,7 @@ function v(e) {
           durationMillis: r
         }),
         dontCloseOnAction: true
-      }, null != r ? r : b)
+      }, null != r ? r : g)
     })
   });
   return (0, a.jsx)(i.sNh, {
@@ -109,10 +109,10 @@ function v(e) {
 function j(e) {
   if (null == e || "0" === e) return;
   let t = new Date(Number(e)),
-    n = g(t, new Date),
+    n = b(t, new Date),
     a = new Date;
   a.setDate(a.getDate() + 1);
-  let r = g(t, a);
+  let r = b(t, a);
   return n ? h.intl.formatToPlainString(h.t.ZxxHIC, {
     timeString: h.intl.data.formatTime(t, {
       format: "short"
@@ -136,7 +136,7 @@ function _(e) {
     location: "UserProfileAccountPopout"
   }), n = c.Cr.useSetting(), d = (0, s.p)(), u = o.e.useExperiment({
     location: "UserProfileAccountPopout"
-  }).allowQuietMode || d, m = c.fv.useSetting(), g = e === p.Skl.DND, _ = a => {
+  }).allowQuietMode || d, m = c.fv.useSetting(), b = e === p.Skl.DND, _ = a => {
     let r = j(n);
     if (e === a && null != r) return r;
     switch (a) {
@@ -160,7 +160,7 @@ function _(e) {
           (0, s.oW)(true, n)
         },
         dontCloseOnAction: true
-      }, null != n ? n : b)
+      }, null != n ? n : g)
     })
   }), C = v({
     status: p.Skl.ONLINE,
@@ -194,8 +194,8 @@ function _(e) {
           }), (0, a.jsxs)("div", {
             className: x.focusModeTitle,
             children: [h.intl.string(h.t.gJRnwM), (0, a.jsx)(i.IGR, {
-              text: d ? h.intl.string(h.t.ApAu9f) : g ? h.intl.string(h.t.gH3Fra) : h.intl.string(h.t["64pl8/"]),
-              color: d ? r.Z.BRAND_500 : g ? r.Z.RED_400 : r.Z.PRIMARY_500
+              text: d ? h.intl.string(h.t.ApAu9f) : b ? h.intl.string(h.t.gH3Fra) : h.intl.string(h.t["64pl8/"]),
+              color: d ? r.Z.BRAND_500 : b ? r.Z.RED_400 : r.Z.PRIMARY_500
             })]
           }), (0, a.jsx)("div", {
             className: x.description,

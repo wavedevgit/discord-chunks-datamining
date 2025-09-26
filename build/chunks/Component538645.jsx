@@ -1,4 +1,4 @@
-/** Chunk was on 11222 **/
+/** Chunk was on 14626 **/
 /** chunk id: 538645, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => v
@@ -17,8 +17,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk373071 = require("./373071.js"),
   Chunk782691 = require("./782691.jsx"),
   Chunk558270 = require("./558270.js");
-let b = "Make sure you're only uploading text files!",
-  g = e => {
+let g = "Make sure you're only uploading text files!",
+  b = e => {
     var t, n, r;
     let {
       effect: i,
@@ -65,9 +65,9 @@ function v() {
       return e.config.title.toLowerCase().includes(t) || e.config.description.toLowerCase().includes(t)
     }), [_, j]),
     E = Chunk647438.useCallback((e, n) => {
-      if (null == n || !e.type.startsWith("text/")) return (0, u.Eo)(b);
+      if (null == n || !e.type.startsWith("text/")) return (0, u.Eo)(g);
       let [a, r] = n.split(",");
-      if (!a.includes("text/plain")) return (0, u.Eo)(b);
+      if (!a.includes("text/plain")) return (0, u.Eo)(g);
       let i = JSON.parse(atob(r));
       i.id = (0, s.Z)(), t(i), (0, u.XA)("Profile Effect (maybe??) imported!")
     }, [exports]),
@@ -89,7 +89,7 @@ function v() {
           })
         }), (0, Chunk951288.jsx)("div", {
           className: Chunk558270.customEffectsGrid,
-          children: Object.values(module).map(e => (0, a.jsx)(g, {
+          children: Object.values(module).map(e => (0, a.jsx)(b, {
             effect: e,
             onClick: e => {
               i(e)

@@ -1,4 +1,4 @@
-/** Chunk was on 11222 **/
+/** Chunk was on 14626 **/
 /** chunk id: 918714, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -66,7 +66,7 @@ let y = function(e) {
         }
       })
     } catch (e) {
-      C(g.intl.string(b.default["/f++3t"]))
+      C(b.intl.string(g.default["/f++3t"]))
     } finally {
       x(false)
     }
@@ -81,7 +81,7 @@ let y = function(e) {
         };
         await (0, d.Wl)(t), S()
       } catch (e) {
-        C(g.intl.string(b.default["+QRSxc"]))
+        C(b.intl.string(g.default["+QRSxc"]))
       } finally {
         N(false)
       }
@@ -128,11 +128,11 @@ let y = function(e) {
               gap: 4,
               children: [(0, a.jsx)(i.X6q, {
                 variant: "heading-xl/semibold",
-                children: g.intl.string(g.t.c6kn6O)
+                children: b.intl.string(b.t.c6kn6O)
               }), (0, a.jsx)(i.Text, {
                 variant: "text-md/normal",
                 color: "text-muted",
-                children: g.intl.string(g.t.ZUEGFh)
+                children: b.intl.string(b.t.ZUEGFh)
               })]
             }), (0, a.jsxs)(i.Kqy, {
               direction: "horizontal",
@@ -141,13 +141,13 @@ let y = function(e) {
               children: [(0, a.jsx)(i.zxk, {
                 fullWidth: true,
                 variant: "secondary",
-                text: g.intl.string(g.t["2jxGen"]),
+                text: b.intl.string(b.t["2jxGen"]),
                 onClick: () => {
                   (0, p.R)("safety_flows_modal")
                 }
               }), (0, a.jsx)(i.zxk, {
                 fullWidth: true,
-                text: g.intl.string(g.t["7NqTJi"]),
+                text: b.intl.string(b.t["7NqTJi"]),
                 onClick: () => {
                   S()
                 }

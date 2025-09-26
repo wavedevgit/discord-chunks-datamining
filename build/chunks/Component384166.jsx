@@ -1,7 +1,8 @@
-/** Chunk was on 49902 **/
-/** chunk id: 384166, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 74477 **/
+/** chunk id: 384166, original params: e,t,r (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  Z: () => O
+  Z: () => j
 }), require("./388685.js"), require("./361932.js"), require("./187205.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,15 +23,15 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk461671 = require("./461671.js");
 
-function O(e) {
+function j(e) {
   let {
     className: t
   } = e, {
-    trackUserProfileEditSaved: n
-  } = (0, f.KZ)(), [l, O] = i.useState(false), x = (0, s.Wu)([p.Z], () => {
+    trackUserProfileEditSaved: r
+  } = (0, f.KZ)(), [l, j] = i.useState(false), x = (0, o.Wu)([p.Z], () => {
     var e;
     return null != (e = p.Z.getSaveablePendingWidgets()) ? e : []
-  }), P = (0, s.Wu)([p.Z], () => p.Z.getChangedWidgets()), S = (0, s.Wu)([p.Z], () => p.Z.getRemovedWidgets()), I = (0, s.e7)([p.Z], () => p.Z.hasSaveablePendingChanges()), w = (0, s.e7)([p.Z], () => p.Z.isSubmitting), E = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), C = (0, c.Yzy)(I, {
+  }), P = (0, o.Wu)([p.Z], () => p.Z.getChangedWidgets()), S = (0, o.Wu)([p.Z], () => p.Z.getRemovedWidgets()), w = (0, o.e7)([p.Z], () => p.Z.hasSaveablePendingChanges()), I = (0, o.e7)([p.Z], () => p.Z.isSubmitting), E = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), C = (0, c.Yzy)(w, {
     from: {
       opacity: 0,
       y: 80 * !E
@@ -48,19 +49,19 @@ function O(e) {
     let e = null;
 
     function t() {
-      O(true), e = setTimeout(() => O(false), 500)
+      j(true), e = setTimeout(() => j(false), 500)
     }
-    return d.S.subscribe(b.CkL.EMPHASIZE_NOTICE, t), () => {
-      d.S.unsubscribe(b.CkL.EMPHASIZE_NOTICE, t), null !== e && clearTimeout(e)
+    return d.S.subscribe(v.CkL.EMPHASIZE_NOTICE, t), () => {
+      d.S.unsubscribe(v.CkL.EMPHASIZE_NOTICE, t), null !== e && clearTimeout(e)
     }
   }, []), i.useEffect(() => {
-    I && c.uvj.announce(y.intl.string(y.t["0Y/qkJ"]))
-  }, [I]);
+    w && c.uvj.announce(y.intl.string(y.t["0Y/qkJ"]))
+  }, [w]);
   let A = i.useCallback(async () => {
       try {
         await h.Z.savePendingWidgets(x)
       } catch (e) {
-        (0, m.L$)(v.qb.WIDGET_SAVE_FAILURE);
+        (0, m.L$)(b.qb.WIDGET_SAVE_FAILURE);
         return
       }
       for (let e of P) {
@@ -72,46 +73,46 @@ function O(e) {
           var t;
           return null != (t = e.tags) ? t : []
         }).map(e => e.toString()), t.numCharactersCommentary = e.games.reduce((e, t) => {
-          var n, r;
-          return e + (null != (r = null == (n = t.comment) ? true : n.length) ? r : 0)
-        }, 0)), n(t)
+          var r, n;
+          return e + (null != (n = null == (r = t.comment) ? true : r.length) ? n : 0)
+        }, 0)), r(t)
       }
-      for (let e of S) n({
+      for (let e of S) r({
         widgetEdited: e.type,
         isWidgetRemoved: true
       })
-    }, [x, P, S, n]),
+    }, [x, P, S, r]),
     N = i.useCallback(() => {
       h.Z.clearPendingWidgets()
     }, []);
-  return C((e, n) => n ? (0, r.jsx)(o.animated.div, {
+  return C((e, r) => r ? (0, n.jsx)(s.animated.div, {
     className: t,
     style: e,
-    children: (0, r.jsxs)("section", {
-      className: a()(j.content, {
-        [j.emphasized]: l
+    children: (0, n.jsxs)("section", {
+      className: a()(O.content, {
+        [O.emphasized]: l
       }),
       "aria-label": y.intl.string(y.t["odDw+/"]),
-      children: [(0, r.jsx)(c.Text, {
+      children: [(0, n.jsx)(c.Text, {
         variant: "text-md/medium",
         color: "text-primary",
-        className: j.message,
+        className: O.message,
         children: y.intl.string(y.t["/lQiX1"])
-      }), (0, r.jsxs)("div", {
-        className: j.actions,
-        children: [(0, r.jsx)(c.zxk, {
+      }), (0, n.jsxs)("div", {
+        className: O.actions,
+        children: [(0, n.jsx)(c.zxk, {
           size: "sm",
           variant: "secondary",
           text: y.intl.string(y.t.yBZMsb),
           onClick: N,
-          disabled: !I || w
-        }), (0, r.jsx)(c.zxk, {
+          disabled: !w || I
+        }), (0, n.jsx)(c.zxk, {
           size: "sm",
           variant: "primary",
           text: y.intl.string(y.t.R3BPHx),
           onClick: A,
-          loading: w,
-          disabled: !I || w
+          loading: I,
+          disabled: !w || I
         })]
       })]
     })

@@ -21,8 +21,8 @@ function d(e) {
     discount: p,
     className: f,
     discountOfferAmount: b,
-    hideStrikethroughPrice: h = false,
-    nitroIconType: g,
+    hideStrikethroughPrice: g = false,
+    nitroIconType: h,
     nitroIconSize: y = "md"
   } = e, m = (0, a.ql)(l, c.tuJ.DEFAULT);
   if (null == m) return null;
@@ -32,8 +32,8 @@ function d(e) {
       price: m
     })
   });
-  let O = (0, a.ql)(l, c.tuJ.PREMIUM_TIER_2),
-    v = (0, a.x6)(l) && d ? (t = function(e) {
+  let v = (0, a.ql)(l, c.tuJ.PREMIUM_TIER_2),
+    O = (0, a.x6)(l) && d ? (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var r = null != arguments[t] ? arguments[t] : {},
           n = Object.keys(r);
@@ -62,19 +62,19 @@ function d(e) {
     })(Object(r)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
     }), t) : m,
-    j = d && null != O;
+    j = d && null != v;
   return (0, n.jsxs)("div", {
     className: i()(u.priceTagsContainer, f),
-    children: [h ? null : (0, n.jsx)(o.y, {
-      price: v,
+    children: [g ? null : (0, n.jsx)(o.y, {
+      price: O,
       className: u.price
     }), (0, n.jsx)(s.F, {
-      price: j ? O : v,
+      price: j ? v : O,
       discount: p,
       className: i()({
         [u.price]: null == b
       }),
-      nitroIconType: j ? g : true,
+      nitroIconType: j ? h : true,
       nitroIconSize: y,
       discountOfferAmount: b
     })]

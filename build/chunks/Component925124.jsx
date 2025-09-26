@@ -1,4 +1,4 @@
-/** Chunk was on 11222 **/
+/** Chunk was on 14626 **/
 /** chunk id: 925124, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => k
@@ -93,7 +93,7 @@ function P(e) {
     offer: m,
     offerOptions: p,
     forceRefetch: f
-  } = e, [b, g] = r.useState(false), [y, C] = r.useState(false), [E, S] = r.useState(false), [T, O] = r.useState(false);
+  } = e, [g, b] = r.useState(false), [y, C] = r.useState(false), [E, S] = r.useState(false), [T, O] = r.useState(false);
   r.useEffect(() => {
     E && O(true);
     let e = setTimeout(() => {
@@ -158,9 +158,9 @@ function P(e) {
       }
     };
   r.useEffect(() => {
-    if (b) {
+    if (g) {
       let e = setTimeout(() => {
-        g(false)
+        b(false)
       }, 3e3);
       return () => {
         clearTimeout(e)
@@ -174,7 +174,7 @@ function P(e) {
         clearTimeout(e)
       }
     }
-  }, [b, y]);
+  }, [g, y]);
   let B = "Active";
   return D && (B = "Acked"), L && (B = "Expired"), (0, a.jsxs)("div", {
     className: l()(_.card, M ? _.gradientWrapperTier0 : _.gradientWrapperTier2),
@@ -188,13 +188,13 @@ function P(e) {
     }), (0, a.jsxs)(c.P3F, {
       className: l()(_.row, _.idRow),
       onClick: () => {
-        (0, h.JG)(P, () => g(true))
+        (0, h.JG)(P, () => b(true))
       },
       children: [(0, a.jsxs)(c.Text, {
         variant: "eyebrow",
         color: "always-white",
         children: ["Offer: ", P]
-      }), b ? (0, a.jsx)(c.dz2, {
+      }), g ? (0, a.jsx)(c.dz2, {
         size: "md",
         color: "currentColor",
         className: _.icon
@@ -303,16 +303,16 @@ function I(e) {
     offer: i,
     offerOptions: o,
     forceRefetch: u
-  } = e, [m, p] = r.useState(false), [x, f] = r.useState(false), [b, g] = r.useState(false), [j, y] = r.useState(false);
+  } = e, [m, p] = r.useState(false), [x, f] = r.useState(false), [g, b] = r.useState(false), [j, y] = r.useState(false);
   r.useEffect(() => {
-    b && y(true);
+    g && y(true);
     let e = setTimeout(() => {
       y(false)
     }, 500);
     return () => {
       clearTimeout(e)
     }
-  }, [b]);
+  }, [g]);
   let {
     id: C,
     expires_at: E,
@@ -325,14 +325,14 @@ function I(e) {
     } = e;
     return t === T
   })) ? true : t.label) ? n : "Unknown", I = null != E, k = null != E && new Date(E).getTime() < Date.now(), w = async () => {
-    g(true), I ? await R({
+    b(true), I ? await R({
       expiresAt: null
-    }) : await (0, d.ab)(true, i), u(), g(false)
+    }) : await (0, d.ab)(true, i), u(), b(false)
   }, R = async e => {
     let {
       expiresAt: t
     } = e;
-    g(true);
+    b(true);
     try {
       await s.tn.patch({
         url: v.ANM.UPDATE_USER_OFFER(C, "discount"),
@@ -342,7 +342,7 @@ function I(e) {
         rejectWithError: true
       })
     } finally {
-      u(), g(false)
+      u(), b(false)
     }
   };
   r.useEffect(() => {
@@ -374,7 +374,7 @@ function I(e) {
         children: P
       }), (0, a.jsx)(c.P3F, {
         onClick: async () => {
-          g(true), await N(C, "discount"), u(), g(false)
+          b(true), await N(C, "discount"), u(), b(false)
         },
         children: (0, a.jsx)(c.XHJ, {
           size: "md",
@@ -460,7 +460,7 @@ function I(e) {
       })]
     }), (0, a.jsx)("div", {
       className: l()(_.loadingContainer, {
-        [_.isLoading]: b || j
+        [_.isLoading]: g || j
       }),
       children: (0, a.jsx)(c.$jN, {})
     })]

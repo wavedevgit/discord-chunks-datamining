@@ -1,7 +1,7 @@
-/** Chunk was on 11222 **/
+/** Chunk was on 14626 **/
 /** chunk id: 722332, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => b
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk383036 = require("./383036.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk440543 = require("./440543.js");
-let b = e => {
+let g = e => {
     let {
       setTab: t
     } = e, n = (0, o.e7)([m.Z], () => m.Z.getWindowOpen(x.KJ3.DEVTOOLS_POPOUT));
@@ -78,7 +78,7 @@ let b = e => {
       })]
     })
   },
-  g = () => {
+  b = () => {
     let [e, t] = Chunk647438.useState(0);
     return (0, Chunk951288.jsxs)(Chunk793030.zJl, {
       className: Chunk440543.wrapper,
@@ -101,7 +101,7 @@ let b = e => {
           case 3:
             return (0, Chunk951288.jsx)(Chunk383036.Z, {});
           default:
-            return (0, Chunk951288.jsx)(b, {
+            return (0, Chunk951288.jsx)(g, {
               setTab: exports
             })
         }

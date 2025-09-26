@@ -1,4 +1,4 @@
-/** Chunk was on 73696 **/
+/** Chunk was on 51678 **/
 /** chunk id: 977416, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk313201 = require("./313201.js"),
@@ -59,21 +59,21 @@ function y(e) {
     var n, r, i = function(e, t) {
       if (null == e) return {};
       var n, r, i = {},
-        a = Object.keys(e);
-      for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+        o = Object.keys(e);
+      for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
       return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var a = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+      var o = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
   }(e, ["gameName", "onClick"]);
-  let a = null != t ? t : g.intl.string(g.t.GIWFlJ),
+  let o = null != t ? t : g.intl.string(g.t.GIWFlJ),
     c = g.intl.formatToPlainString(g.t["3mb1s7"], {
-      game: a
+      game: o
     }),
-    f = (0, o.e7)([s.Z], () => s.Z.suggestedFetchIsLoading);
+    f = (0, a.e7)([s.Z], () => s.Z.suggestedFetchIsLoading);
   return (0, u.kO)(i.applicationId) || f ? (0, r.jsx)("div", {
     className: p.loadingCover
   }) : (0, r.jsx)(l.ua7, {
@@ -101,11 +101,11 @@ function j(e) {
     userId: t,
     games: n,
     onDismiss: i,
-    onClick: o,
+    onClick: a,
     className: s
   } = e, u = (0, c.Dt)();
   return (0, r.jsxs)("aside", {
-    className: a()(b.container, s),
+    className: o()(b.container, s),
     "aria-labelledby": u,
     children: [(0, r.jsxs)("div", {
       className: b.header,
@@ -129,14 +129,14 @@ function j(e) {
         let {
           applicationId: n,
           gameName: i,
-          imageSrc: a
+          imageSrc: o
         } = e;
         return (0, r.jsx)(y, {
-          onClick: () => o(n, i, a),
+          onClick: () => a(n, i, o),
           userId: t,
           applicationId: n,
           gameName: i,
-          imageSrc: a
+          imageSrc: o
         })
       }
     })]

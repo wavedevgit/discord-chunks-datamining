@@ -1,4 +1,4 @@
-/** Chunk was on 11222 **/
+/** Chunk was on 14626 **/
 /** chunk id: 431282, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   V4: () => p,
@@ -65,10 +65,10 @@ function p(e) {
     sublabel: h,
     trailing: x,
     renderSubmenu: f
-  } = e, b = null != n, g = (0, s.Q1)({
+  } = e, g = null != n, b = (0, s.Q1)({
     action: t,
     onClick: n
-  }), [v, j] = r.useState(false), _ = r.useRef(null), y = null != f, C = y && b, E = {
+  }), [v, j] = r.useState(false), _ = r.useRef(null), y = null != f, C = y && g, E = {
     offset: {
       top: false,
       left: false,
@@ -106,7 +106,7 @@ function p(e) {
     return t = C ? (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsx)(l.P3F, {
         className: c.menuItemContent,
-        onClick: g,
+        onClick: b,
         focusProps: {
           offset: u(d({}, E.offset), {
             right: 0
@@ -138,7 +138,7 @@ function p(e) {
       })]
     })) : (0, a.jsx)(l.P3F, {
       className: c.menuItemContent,
-      onClick: g,
+      onClick: b,
       focusProps: E,
       children: T()
     }), (0, a.jsx)("div", {

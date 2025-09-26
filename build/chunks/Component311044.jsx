@@ -1,5 +1,6 @@
-/** Chunk was on 49902 **/
-/** chunk id: 311044, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 74477 **/
+/** chunk id: 311044, original params: e,t,r (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => m
 });
@@ -20,77 +21,77 @@ var Chunk951288 = require("./951288.js"),
 function m(e) {
   let {
     user: t,
-    guildId: n,
+    guildId: r,
     channelId: m,
-    onClose: v
+    onClose: b
   } = e, {
-    analyticsLocations: b
+    analyticsLocations: v
   } = (0, a.ZP)(), {
     context: y,
-    trackUserProfileAction: j
-  } = (0, s.KZ)(), {
-    mutualFriends: O,
+    trackUserProfileAction: O
+  } = (0, o.KZ)(), {
+    mutualFriends: j,
     mutualFriendsCount: x
   } = (0, c.Z)(t), P = (0, l.Z)();
   return i.useEffect(() => {
     (0, u.Z)(t.id, P)
-  }, [t.id, P]), (0, r.jsx)(h.F, {
+  }, [t.id, P]), (0, n.jsx)(h.F, {
     className: p.scroller,
-    children: null == O ? Array.from({
+    children: null == j ? Array.from({
       length: null != x ? x : 10
-    }).map((e, t) => (0, r.jsxs)("div", {
+    }).map((e, t) => (0, n.jsxs)("div", {
       className: p.friendsLoadingItem,
-      children: [(0, r.jsx)(o.ZT, {
+      children: [(0, n.jsx)(s.ZT, {
         width: 40,
         opacity: .08
-      }), (0, r.jsx)(o.ZT, {
+      }), (0, n.jsx)(s.ZT, {
         width: 135,
         opacity: .08
       })]
-    }, t)) : 0 === O.length ? (0, r.jsx)(g.s_, {}) : O.map(e => {
+    }, t)) : 0 === j.length ? (0, n.jsx)(g.s_, {}) : j.map(e => {
       let {
         key: t,
         user: i,
         status: l
       } = e;
-      return (0, r.jsx)(f.Z, {
+      return (0, n.jsx)(f.Z, {
         user: i,
         status: l,
-        guildId: n,
+        guildId: r,
         channelId: m,
         onSelect: () => {
           var e, t;
-          null == v || v(), j({
+          null == b || b(), O({
             action: "PRESS_MUTUAL_FRIEND"
           }), (0, d.openUserProfileModal)((e = function(e) {
             for (var t = 1; t < arguments.length; t++) {
-              var n = null != arguments[t] ? arguments[t] : {},
-                r = Object.keys(n);
-              "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                return Object.getOwnPropertyDescriptor(n, e).enumerable
-              }))), r.forEach(function(t) {
-                var r;
-                r = n[t], t in e ? Object.defineProperty(e, t, {
-                  value: r,
+              var r = null != arguments[t] ? arguments[t] : {},
+                n = Object.keys(r);
+              "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+                return Object.getOwnPropertyDescriptor(r, e).enumerable
+              }))), n.forEach(function(t) {
+                var n;
+                n = r[t], t in e ? Object.defineProperty(e, t, {
+                  value: n,
                   enumerable: true,
                   configurable: true,
                   writable: true
-                }) : e[t] = r
+                }) : e[t] = n
               })
             }
             return e
           }({}, y), t = t = {
             userId: i.id,
-            sourceAnalyticsLocations: b
+            sourceAnalyticsLocations: v
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-            var n = Object.keys(e);
+            var r = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
-              var r = Object.getOwnPropertySymbols(e);
-              n.push.apply(n, r)
+              var n = Object.getOwnPropertySymbols(e);
+              r.push.apply(r, n)
             }
-            return n
-          })(Object(t)).forEach(function(n) {
-            Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+            return r
+          })(Object(t)).forEach(function(r) {
+            Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
           }), e))
         }
       }, t)

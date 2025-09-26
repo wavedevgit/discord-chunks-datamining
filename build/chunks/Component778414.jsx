@@ -1,5 +1,6 @@
-/** Chunk was on 49902 **/
-/** chunk id: 778414, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 74477 **/
+/** chunk id: 778414, original params: e,t,r (module,exports,require) **/
+"use strict";
 require.d(exports, {
   C: () => R,
   Z: () => Z
@@ -33,37 +34,37 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk830202 = require("./830202.js");
 
-function k(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
+    var r = null != arguments[t] ? arguments[t] : {},
+      n = Object.keys(r);
+    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(r, e).enumerable
+    }))), n.forEach(function(t) {
+      var n;
+      n = r[t], t in e ? Object.defineProperty(e, t, {
+        value: n,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = r
+      }) : e[t] = n
     })
   }
   return e
 }
 
-function T(e, t) {
+function k(e, t) {
   if (null == e) return {};
-  var n, r, i = function(e, t) {
+  var r, n, i = function(e, t) {
     if (null == e) return {};
-    var n, r, i = {},
+    var r, n, i = {},
       l = Object.keys(e);
-    for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    for (n = 0; n < l.length; n++) r = l[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
     return i
   }(e, t);
   if (Object.getOwnPropertySymbols) {
     var l = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    for (n = 0; n < l.length; n++) r = l[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
   }
   return i
 }
@@ -71,12 +72,12 @@ function T(e, t) {
 function Z(e) {
   var {
     widget: t
-  } = e, n = T(e, ["widget"]);
-  return t instanceof h.q ? (0, r.jsx)(O.Z, k({
+  } = e, r = k(e, ["widget"]);
+  return t instanceof h.q ? (0, n.jsx)(j.Z, T({
     widget: t
-  }, n)) : t instanceof p.zy ? (0, r.jsx)(S.Z, k({
+  }, r)) : t instanceof p.zy ? (0, n.jsx)(S.Z, T({
     widget: t
-  }, n)) : null
+  }, r)) : null
 }
 
 function D() {
@@ -96,53 +97,53 @@ function D() {
 function _(e) {
   let {
     user: t,
-    guildId: n,
+    guildId: r,
     channelId: l
-  } = e, a = (0, j.Z)(t.id), s = (0, o.e7)([f.default], () => f.default.getId() === t.id), v = (() => {
-    let [e, t] = (0, o.Wu)([g.Z], () => [g.Z.ipCountryCode, g.Z.ipCountryCodeRequest]), n = (0, u.U)();
+  } = e, a = (0, O.Z)(t.id), o = (0, s.e7)([f.default], () => f.default.getId() === t.id), b = (() => {
+    let [e, t] = (0, s.Wu)([g.Z], () => [g.Z.ipCountryCode, g.Z.ipCountryCodeRequest]), r = (0, u.U)();
     return i.useEffect(() => {
-      null == e && null == t && n && (0, c.GE)()
-    }, [e, t, n]), "GB" === e && n
-  })(), O = 0 === a.length && s, P = i.useMemo(() => a.filter(p.Wc), [a]), S = i.useMemo(() => a.filter(e => e instanceof h.q), [a]);
-  (0, y.ZP)(P), (0, m.J)(s, P);
-  var I = t.id;
-  (0, b.s)(S);
+      null == e && null == t && r && (0, c.GE)()
+    }, [e, t, r]), "GB" === e && r
+  })(), j = 0 === a.length && o, P = i.useMemo(() => a.filter(p.Wc), [a]), S = i.useMemo(() => a.filter(e => e instanceof h.q), [a]);
+  (0, y.ZP)(P), (0, m.J)(o, P);
+  var w = t.id;
+  (0, v.s)(S);
   let {
-    data: w
-  } = (0, d.O)(I), A = i.useRef(w);
-  return (A.current = w, i.useEffect(() => {
-    null !== A.current && (0, o.Xf)(C.McO.USER_APPLICATION_IDENTITIES(I))
-  }, [I]), O) ? (0, r.jsx)(E.Z, {}) : (0, r.jsxs)(r.Fragment, {
-    children: [s && v && (0, r.jsx)(D, {}), a.map((e, i) => (0, r.jsx)(Z, {
+    data: I
+  } = (0, d.O)(w), A = i.useRef(I);
+  return (A.current = I, i.useEffect(() => {
+    null !== A.current && (0, s.Xf)(C.McO.USER_APPLICATION_IDENTITIES(w))
+  }, [w]), j) ? (0, n.jsx)(E.Z, {}) : (0, n.jsxs)(n.Fragment, {
+    children: [o && b && (0, n.jsx)(D, {}), a.map((e, i) => (0, n.jsx)(Z, {
       widget: e,
       user: t,
-      guildId: n,
+      guildId: r,
       channelId: l,
       index: i
-    }, e.type)), s && (0, r.jsx)(x.Z, {})]
+    }, e.type)), o && (0, n.jsx)(x.Z, {})]
   })
 }
 
 function R(e) {
   var {
     user: t
-  } = e, n = T(e, ["user"]);
+  } = e, r = k(e, ["user"]);
   let l = i.useRef(null);
-  (0, v.r)({
+  (0, b.r)({
     container: l.current
   });
-  let o = (0, I.h)(t.id);
-  return (0, r.jsxs)(w.F, {
+  let s = (0, w.h)(t.id);
+  return (0, n.jsxs)(I.F, {
     "data-scroller": true,
     scrollerRef: l,
     className: a()(N.scroller, {
-      [N.hasToolbar]: o
+      [N.hasToolbar]: s
     }),
     fade: true,
-    children: [(0, r.jsx)(P.Z, {
+    children: [(0, n.jsx)(P.Z, {
       scrollerRef: l
-    }), (0, r.jsx)(_, k({
+    }), (0, n.jsx)(_, T({
       user: t
-    }, n))]
+    }, r))]
   })
 }

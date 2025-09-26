@@ -1,5 +1,6 @@
-/** Chunk was on 49902 **/
-/** chunk id: 810473, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 74477 **/
+/** chunk id: 810473, original params: e,t,r (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => d
 }), require("./388685.js");
@@ -15,7 +16,7 @@ var Chunk647438 = require("./647438.js"),
 function d() {
   let e = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
     t = (0, Chunk517157.Z)(null == module ? true : module.id),
-    n = (0, Chunk172416.U)({
+    r = (0, Chunk172416.U)({
       location: "useAvailableWidgetTypes"
     }),
     d = (0, Chunk880421.k)({
@@ -23,6 +24,6 @@ function d() {
     });
   return Chunk647438.useMemo(() => {
     let e = new Set(exports.map(e => e.type));
-    return Object.values(Chunk296009.l).filter(t => (t !== i.l.APPLICATION || !!d) && (!o.Ki.includes(t) || !!n) && !e.has(t))
+    return Object.values(Chunk296009.l).filter(t => (t !== i.l.APPLICATION || !!d) && (!s.Ki.includes(t) || !!r) && !e.has(t))
   }, [exports, require, d])
 }

@@ -1,8 +1,8 @@
 /** Chunk was on 1272 **/
 /** chunk id: 49230, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  $: () => h,
-  h: () => g
+  $: () => f,
+  h: () => h
 }), require("./388685.js");
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
@@ -12,20 +12,17 @@ var Chunk512722 = require("./512722.js"),
   Chunk545511 = require("./545511.js"),
   Chunk131951 = require("./131951.js"),
   Chunk747071 = require("./747071.js");
-let d = null;
-try {
-  d = (0, Chunk304809.N)()
-} catch (e) {}
-let p = new Map;
-async function f(e) {
-  let t = p.get(e);
+let d = new Map;
+async function p(e) {
+  let t = d.get(e);
   if (null != t) return t;
   let n = await (await fetch(e)).arrayBuffer(),
-    r = await (null == d ? true : d.decodeAudioData(n));
-  return null != r && p.set(e, r), r
+    r = (0, a.N)(),
+    i = await (null == r ? true : r.decodeAudioData(n));
+  return null != i && d.set(e, i), i
 }
 
-function h(e) {
+function f(e) {
   let {
     soundKey: t,
     soundURL: n,
@@ -33,7 +30,7 @@ function h(e) {
     reportSoundStartedPlaying: a
   } = e;
   return new Promise(async e => {
-    let o = await f(n);
+    let o = await p(n);
     null == o && e(), c.Z.getMediaEngine().eachConnection(n => {
       n.context === l.Yn.DEFAULT && (a(), i()(null != o, "audioBuffer cannot be null here"), n.startSamplesLocalPlayback(t, o, r, () => {
         e()
@@ -42,7 +39,7 @@ function h(e) {
   })
 }
 
-function g(e, t) {
+function h(e, t) {
   let {
     soundKey: n,
     soundURL: r,

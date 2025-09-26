@@ -1,4 +1,4 @@
-/** Chunk was on 11222 **/
+/** Chunk was on 14626 **/
 /** chunk id: 58755, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   P: () => j
@@ -36,7 +36,7 @@ function f(e) {
   return e
 }
 
-function b(e, t) {
+function g(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -48,7 +48,7 @@ function b(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let g = Object.keys(Chunk500949.jQ).map(e => ({
+let b = Object.keys(Chunk500949.jQ).map(e => ({
     value: e,
     label: e
   })),
@@ -85,7 +85,7 @@ function j(e) {
           easing: h.iw.LINEAR,
           easingStrength: 1,
           steps: 26
-        }, n(b(f({}, t), {
+        }, n(g(f({}, t), {
           scales: [...t.scales, a]
         })))
       },
@@ -100,7 +100,7 @@ function j(e) {
           },
           children: (0, a.jsx)(y, {
             scale: e,
-            onRemove: () => n(b(f({}, t), {
+            onRemove: () => n(g(f({}, t), {
               scales: t.scales.filter(t => t.name !== e.name)
             }))
           })
@@ -125,7 +125,7 @@ function _(e) {
   } = e, {
     name: c,
     base: f,
-    lightness: b,
+    lightness: g,
     showColumnarPalettePreview: v,
     colorSpace: j,
     easingStrength: _ = 1,
@@ -176,7 +176,7 @@ function _(e) {
     }), (0, a.jsx)(u.q4e, {
       label: "Color Space",
       description: "The color space used to generate the palette. Different color spaces will produce different results.",
-      options: g,
+      options: b,
       value: j,
       onChange: e => (0, h.t4)(c, e, n),
       popoutLayerContext: p.O$
@@ -184,7 +184,7 @@ function _(e) {
       label: "Lighten",
       description: "Decrease the darkness of the darkest color in the palette. Increasing this makes the darker colors in the palette lighter.",
       onValueRender: () => null,
-      initialValue: b,
+      initialValue: g,
       stickToMarkers: true,
       markers: Array.from({
         length: 21

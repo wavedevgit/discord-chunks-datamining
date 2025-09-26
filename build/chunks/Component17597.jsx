@@ -1,4 +1,4 @@
-/** Chunk was on 11222 **/
+/** Chunk was on 14626 **/
 /** chunk id: 17597, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => C
@@ -37,7 +37,7 @@ let C = function(e) {
   let {
     loading: R,
     ageVerificationMethods: A
-  } = (0, b.Z)(() => {
+  } = (0, g.Z)(() => {
     null == E || E(), C()
   }, () => {
     T(l.z.AGE_VERIFICATION_SURVEY_MODAL_CLOSE)
@@ -63,7 +63,7 @@ let C = function(e) {
     title: j.intl.string(j.t.JHNunp),
     subtitle: j.intl.format(v.default.RpMIT0, {
       handleOnHelpUrlHook: () => {
-        h.Z.openUrl(p.Z.getArticleURL(g.BhN.TIGGER_PAWTECT_LEARN_MORE)), (0, x.x3)(k, x.d_.EXPRESSIVE_PRIMARY, x.sU.LEARN_MORE)
+        h.Z.openUrl(p.Z.getArticleURL(b.BhN.TIGGER_PAWTECT_LEARN_MORE)), (0, x.x3)(k, x.d_.EXPRESSIVE_PRIMARY, x.sU.LEARN_MORE)
       }
     }),
     actionBarInput: (0, a.jsx)(o.Avr, {

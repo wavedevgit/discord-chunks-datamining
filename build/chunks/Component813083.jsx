@@ -24,7 +24,7 @@ let f = e => {
   if (null == t.unpublishedAt) return null;
   let b = (0, u.OT)(t.unpublishedAt);
 
-  function h(e) {
+  function g(e) {
     return (0, l.jsx)(s.IGR, {
       disableColor: true,
       text: e,
@@ -38,11 +38,11 @@ let f = e => {
       }
     })
   }
-  return (0, i.EQ)([r, b > 1]).with(["card", true], () => null != p && p === a.z.HERO ? h(d.intl.formatToPlainString(d.t.Io7ozs, {
+  return (0, i.EQ)([r, b > 1]).with(["card", true], () => null != p && p === a.z.HERO ? g(d.intl.formatToPlainString(d.t.Io7ozs, {
     days: b
-  })) : null).with(["banner", true], () => h(d.intl.formatToPlainString(d.t["8gsP5O"], {
+  })) : null).with(["banner", true], () => g(d.intl.formatToPlainString(d.t["8gsP5O"], {
     days: b
-  }))).with(["modal", true], () => h(d.intl.formatToPlainString(d.t.Io7ozs, {
+  }))).with(["modal", true], () => g(d.intl.formatToPlainString(d.t.Io7ozs, {
     days: b
-  }))).otherwise(() => h(d.intl.string(d.t.Bc13HB)))
+  }))).otherwise(() => g(d.intl.string(d.t.Bc13HB)))
 }

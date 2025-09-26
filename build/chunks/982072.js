@@ -1,20 +1,20 @@
-/** Chunk was on 73696 **/
+/** Chunk was on 51678 **/
 /** chunk id: 982072, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => a
+  Z: () => o
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk434650 = require("./434650.js");
 
-function a(e) {
+function o(e) {
   let {
     widgetType: t,
     onAction: n
-  } = e, [a, o] = (0, r.useState)(false), l = (0, r.useCallback)(e => {
+  } = e, [o, a] = (0, r.useState)(false), l = (0, r.useCallback)(e => {
     e && (n({
       action: "VIEW_WIDGET",
       widgetType: t
-    }), o(true))
+    }), a(true))
   }, [n, t]);
-  return (0, i.O)(l, true, !a)
+  return (0, i.O)(l, true, !o)
 }

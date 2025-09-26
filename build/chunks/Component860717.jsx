@@ -1,4 +1,4 @@
-/** Chunk was on 73696 **/
+/** Chunk was on 51678 **/
 /** chunk id: 860717, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => M
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk681715 = require("./681715.js"),
   Chunk481060 = require("./481060.js"),
@@ -77,25 +77,25 @@ function T(e) {
         var n, r, i = function(e, t) {
           if (null == e) return {};
           var n, r, i = {},
-            a = Object.keys(e);
-          for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+            o = Object.keys(e);
+          for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
           return i
         }(e, t);
         if (Object.getOwnPropertySymbols) {
-          var a = Object.getOwnPropertySymbols(e);
-          for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+          var o = Object.getOwnPropertySymbols(e);
+          for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
         }
         return i
       }(t, ["body"]);
-      return (0, r.jsx)(A, E(I({}, i), {
+      return (0, r.jsx)(C, E(I({}, i), {
         body: N(n)
       }));
     case "GRID":
-      return (0, r.jsx)(k, {
+      return (0, r.jsx)(A, {
         children: N(t.children)
       });
     case "FIELD":
-      return (0, r.jsx)(C, {
+      return (0, r.jsx)(k, {
         value: D(t.value),
         name: D(t.name)
       });
@@ -120,7 +120,7 @@ function N(e) {
   return e.map((e, t) => D(e, t))
 }
 
-function A(e) {
+function C(e) {
   let {
     title: t,
     body: n,
@@ -158,7 +158,7 @@ function A(e) {
   })
 }
 
-function k(e) {
+function A(e) {
   let {
     children: t
   } = e;
@@ -168,7 +168,7 @@ function k(e) {
   })
 }
 
-function C(e) {
+function k(e) {
   let {
     name: t,
     value: n
@@ -181,13 +181,13 @@ function C(e) {
 function R(e) {
   let {
     content: t
-  } = e, n = i.useId(), a = (0, b._)();
+  } = e, n = i.useId(), o = (0, b._)();
   return null != t ? (0, r.jsx)(O.Z, {
     type: u.re.TEXT_DISPLAY,
     id: n,
     content: t
   }) : (0, r.jsx)("div", {
-    className: o()(w.textPlaceholder, a.className)
+    className: a()(w.textPlaceholder, o.className)
   })
 }
 
@@ -196,8 +196,8 @@ function Z(e) {
     content: t,
     image: n,
     imagePosition: i
-  } = e, a = (0, b._)(), l = S(n) ? (0, r.jsx)("div", {
-    className: o()(w.image, a.className),
+  } = e, o = (0, b._)(), l = S(n) ? (0, r.jsx)("div", {
+    className: a()(w.image, o.className),
     children: (0, r.jsx)(j.ZP, {
       src: n.proxyUrl,
       alt: "",
@@ -206,7 +206,7 @@ function Z(e) {
       responsive: true
     })
   }) : (0, r.jsx)("div", {
-    className: o()(w.imagePlaceholder, a.className)
+    className: a()(w.imagePlaceholder, o.className)
   });
   return (0, r.jsxs)("div", {
     className: w.textWithImage,
@@ -220,10 +220,10 @@ function L(e) {
   let {
     size: t = "small",
     divider: n = false
-  } = e, a = i.useId();
+  } = e, o = i.useId();
   return (0, r.jsx)(m.Z, {
     type: u.re.SEPARATOR,
-    id: a,
+    id: o,
     divider: n,
     spacing: "large" === t ? u.US.LARGE : u.US.SMALL
   })
@@ -278,7 +278,7 @@ function H(e) {
 }
 
 function M(e) {
-  var t, i, a;
+  var t, i, o;
   let {
     user: l,
     widget: u,
@@ -322,7 +322,7 @@ function M(e) {
       asContainer: true,
       text: P.intl.string(P.t.ajHoOj),
       children: (0, r.jsx)(s.P3F, {
-        className: o()(w.header, w.headerClickable),
+        className: a()(w.header, w.headerClickable),
         onClick: v,
         "aria-label": P.intl.string(P.t.ajHoOj),
         children: _
@@ -330,7 +330,7 @@ function M(e) {
     }),
     D = [{
       type: "HERO",
-      title: null == O || null == (a = O.profile) ? true : a.username,
+      title: null == O || null == (o = O.profile) ? true : o.username,
       image: (null == j ? true : j.featured_played_character_image) != null ? (0, y.ym)(j.featured_played_character_image) : true,
       body: [{
         type: "TEXT_WITH_IMAGE",
@@ -427,7 +427,7 @@ function M(e) {
   return (0, r.jsx)(x.Z, E(I({}, e), {
     userId: l.id,
     widget: u,
-    className: o()(d, w.widgetContainer),
+    className: a()(d, w.widgetContainer),
     headerTitle: S,
     dragHandleAdditionalMenuItems: null != p ? (0, r.jsx)(s.sNh, {
       id: "view-game-profile",

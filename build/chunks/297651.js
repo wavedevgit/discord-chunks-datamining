@@ -18,11 +18,11 @@ function p(e, t) {
     p = (0, o.sp)(),
     f = (0, l.e7)([s.Z], () => s.Z.getProduct(e)),
     b = (0, u.x)(),
-    h = a.ZP.canUseCollectibles(b),
-    g = n.useRef(null),
+    g = a.ZP.canUseCollectibles(b),
+    h = n.useRef(null),
     y = n.useCallback(() => {
-      let n = null != f ? (0, c.Vw)(f, h, false) : null,
-        l = null != f ? (0, c.eu)(f, h, false) : true;
+      let n = null != f ? (0, c.Vw)(f, g, false) : null,
+        l = null != f ? (0, c.eu)(f, g, false) : true;
       i.default.track(d.rMx.COLLECTIBLES_TILE_IMPRESSION, {
         collectibles_shop_session_id: null == p ? true : p.sessionId,
         sku_id: e,
@@ -36,14 +36,14 @@ function p(e, t) {
         type: r,
         category_position: null == p ? true : p.categoryPosition
       })
-    }, [null == p ? true : p.sessionId, null == p ? true : p.categoryPosition, null == p ? true : p.pageCategory, null == p ? true : p.pageSection, null == p ? true : p.tilePosition, h, t, f, e, r]),
+    }, [null == p ? true : p.sessionId, null == p ? true : p.categoryPosition, null == p ? true : p.pageCategory, null == p ? true : p.pageSection, null == p ? true : p.tilePosition, g, t, f, e, r]),
     m = n.useCallback(e => {
-      e ? null === g.current && (g.current = setTimeout(() => {
-        y(), g.current = null
-      }, 1e3)) : null !== g.current && (clearTimeout(g.current), g.current = null)
+      e ? null === h.current && (h.current = setTimeout(() => {
+        y(), h.current = null
+      }, 1e3)) : null !== h.current && (clearTimeout(h.current), h.current = null)
     }, [y]);
   return n.useEffect(() => () => {
-    null !== g.current && (clearTimeout(g.current), g.current = null)
+    null !== h.current && (clearTimeout(h.current), h.current = null)
   }, []), {
     handleCardVisibilityChange: m
   }

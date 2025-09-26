@@ -1,8 +1,8 @@
-/** Chunk was on 18539 **/
+/** Chunk was on 84957 **/
 /** chunk id: 541699, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Q: () => a,
-  Z: () => l
+  Q: () => u,
+  Z: () => c
 }), require("./415506.js");
 var Chunk979554 = require("./979554.js"),
   Chunk922347 = require("./922347.js"),
@@ -10,10 +10,10 @@ var Chunk979554 = require("./979554.js"),
   Chunk212161 = require("./212161.js"),
   Chunk523080 = require("./523080.js"),
   Chunk981631 = require("./981631.js");
-let a = e => e instanceof l;
-class l extends Chunk523080.Z {
+let u = e => e instanceof c;
+class c extends Chunk523080.Z {
   static fromServer(e) {
-    return new l(e)
+    return new c(e)
   }
   constructor(e) {
     super(e),
@@ -24,15 +24,15 @@ class l extends Chunk523080.Z {
           configurable: true,
           writable: true
         }) : e[t] = r
-      }(this, "collectiblesItem", true), this.skuProductLine = u.POd.COLLECTIBLES;
+      }(this, "collectiblesItem", true), this.skuProductLine = a.POd.COLLECTIBLES;
     let t = (e => {
       switch (e.type) {
         case n.Z.AVATAR_DECORATION:
           return i.Z.fromServer(e);
         case n.Z.PROFILE_EFFECT:
-          return s.Z.fromServer(e);
-        case n.Z.NAMEPLATE:
           return o.Z.fromServer(e);
+        case n.Z.NAMEPLATE:
+          return s.Z.fromServer(e);
         default:
           return null
       }

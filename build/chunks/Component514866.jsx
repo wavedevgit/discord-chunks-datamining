@@ -1,4 +1,4 @@
-/** Chunk was on 11222 **/
+/** Chunk was on 14626 **/
 /** chunk id: 514866, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => v
@@ -19,7 +19,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk594174 = require("./594174.js"),
   Chunk517269 = require("./517269.js"),
   Chunk197571 = require("./197571.js");
-let g = () => {
+let b = () => {
   Promise.all([require.e("52030"), require.e("1286")]).then(require.bind(require, 24031)).then(e => {
     let {
       openMFAModal: t
@@ -56,7 +56,7 @@ function v() {
       children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
         variant: "primary",
         text: "Launch MFA",
-        onClick: g
+        onClick: b
       })
     }), (0, Chunk951288.jsx)("div", {
       className: i()(Chunk517269.buttonsContainer, Chunk197571.marginBottom20),

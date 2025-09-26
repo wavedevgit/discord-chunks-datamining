@@ -1,4 +1,4 @@
-/** Chunk was on 73696 **/
+/** Chunk was on 51678 **/
 /** chunk id: 533815, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk785717 = require("./785717.jsx"),
   Chunk86419 = require("./86419.js"),
@@ -22,17 +22,17 @@ function d(e) {
   } = e, {
     trackUserProfileEditAction: f
   } = (0, l.KZ)(), g = () => {
-    (0, c.$b)(n, t.applicationId), o.uvj.announce(s.intl.string(s.t["08HmMj"])), f({
+    (0, c.$b)(n, t.applicationId), a.uvj.announce(s.intl.string(s.t["08HmMj"])), f({
       action: "GAME_REMOVED",
       gameId: t.applicationId,
       widgetEdited: n
     })
   };
-  return (0, r.jsx)(o.ua7, {
+  return (0, r.jsx)(a.ua7, {
     text: s.intl.string(s.t.HUvyDQ),
     children: e => {
       var t, n;
-      return (0, r.jsx)(o.P3F, (t = function(e) {
+      return (0, r.jsx)(a.P3F, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -52,11 +52,11 @@ function d(e) {
       }({}, e), n = n = {
         onClick: g,
         "aria-label": s.intl.string(s.t.HUvyDQ),
-        className: a()(d, u.clickable),
-        children: (0, r.jsx)(o.XHJ, {
+        className: o()(d, u.clickable),
+        children: (0, r.jsx)(a.XHJ, {
           size: i,
           className: u.icon,
-          color: o.TVs.colors.STATUS_DANGER
+          color: a.TVs.colors.STATUS_DANGER
         })
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);

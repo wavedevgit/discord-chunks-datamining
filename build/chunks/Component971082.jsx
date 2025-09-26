@@ -1,4 +1,4 @@
-/** Chunk was on 73696 **/
+/** Chunk was on 51678 **/
 /** chunk id: 971082, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk313201 = require("./313201.js"),
   Chunk318374 = require("./318374.jsx"),
@@ -17,26 +17,26 @@ function u(e) {
     label: t,
     visuallyHideLabel: n = false,
     className: i,
-    size: u = o.EFr.SIZE_16,
+    size: u = a.EFr.SIZE_16,
     maxUsers: d = 4
   } = e, f = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
       var n, r, i = {},
-        a = Object.keys(e);
-      for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+        o = Object.keys(e);
+      for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
       return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var a = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+      var o = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
   }(e, ["label", "visuallyHideLabel", "className", "size", "maxUsers"]);
   let g = (0, l.Dt)();
   return (0, r.jsxs)("div", {
-    className: a()(i, s.container),
+    className: o()(i, s.container),
     children: [(0, r.jsx)(c.Z, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -59,10 +59,10 @@ function u(e) {
       overflowCountClassName: s.overflowButton,
       size: u,
       maxUsers: d
-    }, f)), n ? (0, r.jsx)(o.nn4, {
+    }, f)), n ? (0, r.jsx)(a.nn4, {
       id: g,
       children: t
-    }) : (0, r.jsx)(o.Text, {
+    }) : (0, r.jsx)(a.Text, {
       variant: "text-xs/normal",
       color: "text-secondary",
       id: g,

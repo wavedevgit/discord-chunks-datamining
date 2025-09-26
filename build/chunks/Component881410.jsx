@@ -1,4 +1,4 @@
-/** Chunk was on 73696 **/
+/** Chunk was on 51678 **/
 /** chunk id: 881410, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -37,12 +37,12 @@ function g(e) {
     disabled: t,
     widgetType: n,
     widget: g
-  } = e, [p] = (0, o.ynZ)(), [b, m] = i.useState(""), O = i.useRef(null), y = i.useRef(""), j = i.useMemo(() => new Set(g.games.map(e => e.applicationId)), [g.games]), {
+  } = e, [p] = (0, a.ynZ)(), [b, m] = i.useState(""), O = i.useRef(null), y = i.useRef(""), j = i.useMemo(() => new Set(g.games.map(e => e.applicationId)), [g.games]), {
     trackUserProfileEditAction: h
   } = (0, c.KZ)(), v = i.useCallback(e => {
     (0, s.ES)(n, {
       applicationId: e
-    }), o.uvj.announce(u.intl.string(u.t.q0U3DA)), h({
+    }), a.uvj.announce(u.intl.string(u.t.q0U3DA)), h({
       action: "GAME_ADDED",
       gameId: e,
       widgetEdited: n
@@ -52,8 +52,8 @@ function g(e) {
     matchSorterOptions: _
   } = (0, l.h)(), P = i.useCallback(e => {
     var t, n;
-    return "" === e.trim() ? x : (0, a.Lu)(x, e, (t = f({}, _), n = n = {
-      threshold: a.Lu.rankings.CONTAINS
+    return "" === e.trim() ? x : (0, o.Lu)(x, e, (t = f({}, _), n = n = {
+      threshold: o.Lu.rankings.CONTAINS
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -75,7 +75,7 @@ function g(e) {
     searchTerm: b.trim(),
     surveyUrl: "https://discord.sjc1.qualtrics.com/jfe/form/SV_0TIqLrxbsfJYS4C"
   }) : u.intl.string(u.t.QwSXv7), [b]);
-  return (0, r.jsx)(o.yRy, {
+  return (0, r.jsx)(a.yRy, {
     targetElementRef: O,
     position: "bottom",
     align: "center",
@@ -97,7 +97,7 @@ function g(e) {
       let {
         closePopout: t
       } = e;
-      return (0, r.jsx)(o.DBG, {
+      return (0, r.jsx)(a.DBG, {
         className: d.gameSearchCombobox,
         placeholder: u.intl.string(u.t["5h0QOD"]),
         autoFocus: true,
@@ -110,11 +110,11 @@ function g(e) {
         emptyStateText: I,
         emptyStateHeader: "",
         onQueryChange: w,
-        children: e => P(e).map(e => (0, r.jsx)(o.lo1, {
+        children: e => P(e).map(e => (0, r.jsx)(a.lo1, {
           disabled: j.has(e.value),
           value: String(e.value),
-          children: (0, r.jsx)(o.lo1.Label, {
-            children: (0, r.jsx)(o.Text, {
+          children: (0, r.jsx)(a.lo1.Label, {
+            children: (0, r.jsx)(a.Text, {
               variant: "text-md/medium",
               color: "header-secondary",
               children: e.label
@@ -125,10 +125,10 @@ function g(e) {
     },
     children: e => (0, r.jsx)("div", {
       ref: O,
-      children: (0, r.jsx)(o.zxk, f({
+      children: (0, r.jsx)(a.zxk, f({
         variant: "secondary",
         size: "sm",
-        icon: o.qJs,
+        icon: a.qJs,
         text: u.intl.string(u.t.SgTOtb),
         disabled: t
       }, e))

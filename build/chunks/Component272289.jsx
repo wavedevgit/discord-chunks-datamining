@@ -1,4 +1,4 @@
-/** Chunk was on 73696 **/
+/** Chunk was on 51678 **/
 /** chunk id: 272289, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => s
@@ -18,13 +18,13 @@ function s(e) {
     var n, r, i = function(e, t) {
       if (null == e) return {};
       var n, r, i = {},
-        a = Object.keys(e);
-      for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+        o = Object.keys(e);
+      for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
       return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var a = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+      var o = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
   }(e, ["widgetType"]);
@@ -33,8 +33,8 @@ function s(e) {
     onAddGame: u
   } = (0, l.K)(t), {
     trackUserProfileEditAction: d
-  } = (0, a.KZ)(), f = i.useCallback((e, n, r) => {
-    u(e), (0, o.ES)(t, {
+  } = (0, o.KZ)(), f = i.useCallback((e, n, r) => {
+    u(e), (0, a.ES)(t, {
       applicationId: e,
       gameName: n,
       imageSrc: r
