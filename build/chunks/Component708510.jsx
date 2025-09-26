@@ -78,9 +78,10 @@ function I(e) {
   }, [t]), m = n === y.V_K.AGE_RESTRICTED && a !== y.V_K.AGE_RESTRICTED;
   return (0, r.jsx)(s.hjN, {
     children: (0, r.jsx)(s.j7V, {
+      hideBorder: true,
+      className: N.contentLevelSetting,
       onChange: c,
       value: o,
-      hideBorder: true,
       disabled: m,
       note: C.intl.format(C.t["iyQQ6+"], {
         helpArticleLink: u.Z.getArticleURL(y.BhN.NSFW_SERVER_AGE_RESTRICTION)
@@ -98,10 +99,10 @@ function S(e) {
     guildId: t,
     location: "guild-settings"
   }) || n ? null : (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)("div", {
-      className: N.divider
-    }), (0, r.jsx)(I, {
+    children: [(0, r.jsx)(I, {
       guildId: t
+    }), (0, r.jsx)("div", {
+      className: N.divider
     })]
   })
 }
@@ -125,6 +126,8 @@ function T() {
       color: "header-primary",
       variant: "heading-lg/semibold",
       children: Chunk388032.intl.string(Chunk388032.t.YJlvBA)
+    }), null != module && (0, Chunk951288.jsx)(S, {
+      guildId: module.id
     }), (0, Chunk951288.jsx)(Chunk307375.h, {
       onTypePicked: require,
       activeType: Chunk456268,
@@ -135,8 +138,6 @@ function T() {
       children: (0, Chunk951288.jsx)(E, {
         pendingState: exports
       })
-    }), null != module && (0, Chunk951288.jsx)(S, {
-      guildId: module.id
     })]
   })
 }
