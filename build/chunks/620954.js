@@ -2,8 +2,8 @@
 /** chunk id: 620954, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  P: () => h,
-  R: () => p
+  P: () => m,
+  R: () => h
 }), require("./35282.js");
 var Chunk13245 = require("./13245.js"),
   Chunk556296 = require("./556296.js"),
@@ -52,13 +52,20 @@ function _(e, t) {
   }), e
 }
 
-function p(e, t) {
+function p() {
+  return Chunk237997.default.isLocked((0, Chunk145597.getPID)()) ? Chunk981631.Sbl.LOCKED_OVERLAY : Chunk981631.Sbl.UNLOCKED_OVERLAY
+}
+
+function h(e, t) {
   return {
     trackView() {
-      r.Z.track(c.rMx.NOTIFICATION_VIEWED, t), r.Z.notificationEvent(e, l.bv.Viewed)
+      let n = p();
+      r.Z.track(c.rMx.NOTIFICATION_VIEWED, _(d({}, t), {
+        location: n
+      })), r.Z.notificationEvent(e, l.bv.Viewed)
     },
     trackClick(n) {
-      let i = a.default.isLocked((0, s.getPID)()) ? c.Sbl.LOCKED_OVERLAY : c.Sbl.UNLOCKED_OVERLAY;
+      let i = p();
       r.Z.track(c.rMx.NOTIFICATION_CLICKED, _(d({}, t), {
         location: i,
         action_type: n
@@ -67,7 +74,7 @@ function p(e, t) {
   }
 }
 
-function h() {
+function m() {
   let e = Chunk556296.ZP.getOverlayKeybind();
   return null != module ? (0, Chunk13140.BB)(module.shortcut, true).split(" + ") : ["???"]
 }
