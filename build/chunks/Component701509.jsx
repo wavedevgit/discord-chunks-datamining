@@ -53,7 +53,7 @@ function S(t) {
   let {
     transitionState: e,
     source: n
-  } = t, a = (0, u.e7)([h.default], () => h.default.getCurrentUser()), o = (0, u.e7)([y.Z, _.Z], () => _.Z.getChannel(y.Z.getChannelId())), [S, k] = r.useState(null), [j, I] = r.useState(null), [w, P] = r.useState(false), [D, L] = r.useState(0), U = r.useRef(null), M = r.useRef(null), F = n === O.L0.FAMILY_CENTER, Z = (0, v.Kt)() && !F, {
+  } = t, a = (0, u.e7)([h.default], () => h.default.getCurrentUser()), o = (0, u.e7)([y.Z, _.Z], () => _.Z.getChannel(y.Z.getChannelId())), [S, k] = r.useState(null), [j, I] = r.useState(null), [w, D] = r.useState(false), [P, L] = r.useState(0), U = r.useRef(null), M = r.useRef(null), F = n === O.L0.FAMILY_CENTER, Z = (0, v.Kt)() && !F, {
     verifyAgreementButtonText: V,
     verifyGateDescription: Y,
     verifyTitle: W
@@ -67,12 +67,12 @@ function S(t) {
   async function H() {
     i()(null != S, "Cannot submit null birthday.");
     try {
-      return I(null), P(true), await (0, g.Av)(S, n)
+      return I(null), D(true), await (0, g.Av)(S, n)
     } catch (e) {
       if (null != e.body && null != e.body.date_of_birth)(0, T.C8)(n, e.body.date_of_birth);
       else {
         var t;
-        (null == e || null == (t = e.body) ? true : t.username) != null ? I(N.intl.string(N.t["TGg/2t"])) : I(null == e ? true : e.body.message), P(false)
+        (null == e || null == (t = e.body) ? true : t.username) != null ? I(N.intl.string(N.t["TGg/2t"])) : I(null == e ? true : e.body.message), D(false)
       }
     }
   }
@@ -138,7 +138,7 @@ function S(t) {
       helpURL: b.Z.getArticleURL(R.BhN.AGE_GATE)
     }),
     actions: [{
-      text: N.intl.string(N.t.f3Pet7),
+      text: N.intl.string(N.t["/g10LC"]),
       onClick: Q,
       variant: "secondary"
     }],
@@ -148,7 +148,7 @@ function S(t) {
       },
       impressionType: c.ImpressionTypes.MODAL
     }
-  }, tn)) : 0 === D ? function() {
+  }, tn)) : 0 === P ? function() {
     var t, e;
     let r = (() => {
         switch (n) {
