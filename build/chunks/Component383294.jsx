@@ -7,7 +7,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
-  Chunk786920 = require("./786920.js"),
+  Chunk488290 = require("./488290.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk110924 = require("./110924.js"),
@@ -60,7 +60,7 @@ function x() {
       friction: 26
     }
   });
-  return (0, Chunk951288.jsxs)(Chunk786920.animated.div, {
+  return (0, Chunk951288.jsxs)(Chunk488290.animated.div, {
     className: Chunk378658.videoLayers,
     style: Chunk960919,
     children: [!Chunk120356 && (0, Chunk951288.jsx)("div", {
