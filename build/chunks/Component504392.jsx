@@ -43,7 +43,7 @@ function L(e) {
     powerupListingId: o
   } = e, L = (0, m.A0)(t, "GuildPowerupsOverview");
   i.useEffect(() => {
-    L && ((0, f.EC)(t), (0, f.po)(t))
+    L && (0, f.po)(t)
   }, [t, L]), i.useEffect(() => {
     (0, v.Sn)(t), (0, v.BN)(t)
   }, [t]), (0, y.Wj)(t);

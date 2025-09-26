@@ -3,7 +3,7 @@
 "use strict";
 let r;
 require.d(exports, {
-  ZP: () => eP,
+  ZP: () => ew,
   i6: () => R
 }), require("./388685.js"), require("./539854.js");
 var i, Chunk442837 = require("./442837.js"),
@@ -153,7 +153,7 @@ function J(e) {
     customId: F.customId,
     inviterUserId: null == B ? true : B.inviterUserId,
     proxyTicket: F.proxyTicket
-  }), ey({
+  }), eO({
     channelId: null != y ? y : null,
     applicationId: d
   }));
@@ -200,7 +200,7 @@ function et(e) {
   } = e;
   L.clear(), x.clear(), M.clear(), j.clear(), t.forEach(e => $(e));
   let n = c.default.getId();
-  for (let e of Array.from(D.values())) eR.getEmbeddedActivitiesForLocation(e.location).some(t => t.applicationId === e.applicationId && t.launchId === e.launchId && t.userIds.has(n)) || ee(e)
+  for (let e of Array.from(D.values())) eP.getEmbeddedActivitiesForLocation(e.location).some(t => t.applicationId === e.applicationId && t.launchId === e.launchId && t.userIds.has(n)) || ee(e)
 }
 
 function en(e) {
@@ -291,7 +291,7 @@ function ea(e) {
     o.Z.dispatch({
       type: "ACTIVITY_POPOUT_WINDOW_OPEN"
     })
-  })) : z = R !== d.Z.getChannelId() || (0, y.Z)(R) ? v.Ez.PIP : v.Ez.PANEL, K.set(eA(l.id, i), Date.now())
+  })) : z = R !== d.Z.getChannelId() || (0, y.Z)(R) ? v.Ez.PIP : v.Ez.PANEL, K.set(eC(l.id, i), Date.now())
 }
 
 function eo(e) {
@@ -445,7 +445,7 @@ function eb(e) {
     applicationId: t,
     channelId: n
   } = e;
-  ey({
+  eO({
     applicationId: t,
     channelId: n
   }), G.delete(t)
@@ -456,10 +456,21 @@ function ey(e) {
     applicationId: t,
     channelId: n
   } = e;
-  U.delete(k(n, t))
+  eO({
+    applicationId: t,
+    channelId: n
+  }), G.delete(t)
 }
 
 function eO(e) {
+  let {
+    applicationId: t,
+    channelId: n
+  } = e;
+  U.delete(k(n, t))
+}
+
+function ev(e) {
   let {
     applicationId: t,
     lockState: n,
@@ -469,21 +480,21 @@ function eO(e) {
   null == n ? F.delete(t) : F.set(t, n), null === r ? V.delete(t) : true !== r && V.set(t, r), null === i ? H.delete(t) : true !== i && H.set(t, i)
 }
 
-function ev(e) {
+function eI(e) {
   let {
     activityPanelMode: t
   } = e;
   z = t
 }
 
-function eI(e) {
+function eT(e) {
   let {
     focusedActivityLayout: t
   } = e;
   q = t
 }
 
-function eT(e) {
+function eS(e) {
   let {
     applicationId: t,
     layoutMode: n
@@ -491,7 +502,7 @@ function eT(e) {
   Y.set(t, n)
 }
 
-function eS(e) {
+function eA(e) {
   let {
     channelId: t
   } = e;
@@ -500,17 +511,17 @@ function eS(e) {
   null != n && n !== t && z === v.Ez.PANEL && (z = v.Ez.PIP)
 }
 
-function eA(e, t) {
+function eC(e, t) {
   return "".concat(e, ":").concat(t)
 }
 
-function eC(e) {
+function eN(e) {
   let {
     key: t
   } = e;
   t === I.KJ3.ACTIVITY_POPOUT && (z = v.Ez.PIP)
 }
-class eN extends(i = Chunk442837.ZP.PersistedStore) {
+class eR extends(i = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     var t;
     let n = new Set(null != (t = null == e ? true : e.everLaunchedActivities) ? t : []);
@@ -552,7 +563,7 @@ class eN extends(i = Chunk442837.ZP.PersistedStore) {
     return L
   }
   getEmbeddedActivityDurationMs(e, t) {
-    let n = K.get(eA(e, t));
+    let n = K.get(eC(e, t));
     return null == n ? null : Date.now() - n
   }
   isLaunchingActivity() {
@@ -634,7 +645,7 @@ class eN extends(i = Chunk442837.ZP.PersistedStore) {
     return X
   }
 }
-T(eN, "displayName", "EmbeddedActivitiesStore"), T(eN, "persistKey", "EmbeddedActivities"), T(eN, "migrations", [e => C(S({}, e), {
+T(eR, "displayName", "EmbeddedActivitiesStore"), T(eR, "persistKey", "EmbeddedActivities"), T(eR, "migrations", [e => C(S({}, e), {
   seenFeaturedActivities: [],
   shouldShowNewActivityIndicator: false
 }), e => (delete e.seenFeaturedActivities, S({}, e)), e => (delete e.seenActivities, S({}, e)), e => (delete e.currentFreeActivity, delete e.lastFreeActivityRotationTimestampMs, delete e.freePeriodActivities, delete e.shouldShowFreeActivityIndicator, S({}, e)), e => C(S({}, e), {
@@ -651,8 +662,8 @@ T(eN, "displayName", "EmbeddedActivitiesStore"), T(eN, "persistKey", "EmbeddedAc
 }), e => (delete e.surfacesToShowNewActivityIndicator, C(S({}, e), {
   dateRangesForSurfaces: {}
 }))]);
-let eR = new eN(Chunk570140.Z, {
-    ACTIVITY_LAYOUT_MODE_UPDATE: eT,
+let eP = new eR(Chunk570140.Z, {
+    ACTIVITY_LAYOUT_MODE_UPDATE: eS,
     CONNECTION_OPEN_SUPPLEMENTAL: et,
     GUILD_CREATE: en,
     CHANNEL_DELETE: er,
@@ -662,6 +673,7 @@ let eR = new eN(Chunk570140.Z, {
     EMBEDDED_ACTIVITY_SET_PROXY_TICKET_REFRESHING: eg,
     EMBEDDED_ACTIVITY_LAUNCH_SUCCESS: eE,
     EMBEDDED_ACTIVITY_LAUNCH_FAIL: eb,
+    EMBEDDED_ACTIVITY_LAUNCH_CANCEL: ey,
     EMBEDDED_ACTIVITY_CLOSE: eo,
     EMBEDDED_ACTIVITY_UPDATE_POPOUT_WINDOW_LAYOUT: es,
     EMBEDDED_ACTIVITY_UPDATE_V2: ei,
@@ -670,10 +682,10 @@ let eR = new eN(Chunk570140.Z, {
     EMBEDDED_ACTIVITY_FETCH_SHELF: eu,
     EMBEDDED_ACTIVITY_FETCH_SHELF_SUCCESS: e_,
     EMBEDDED_ACTIVITY_FETCH_SHELF_FAIL: ed,
-    EMBEDDED_ACTIVITY_SET_ORIENTATION_LOCK_STATE: eO,
-    EMBEDDED_ACTIVITY_SET_PANEL_MODE: ev,
-    EMBEDDED_ACTIVITY_SET_FOCUSED_LAYOUT: eI,
-    CHANNEL_SELECT: eS,
-    POPOUT_WINDOW_CLOSE: eC
+    EMBEDDED_ACTIVITY_SET_ORIENTATION_LOCK_STATE: ev,
+    EMBEDDED_ACTIVITY_SET_PANEL_MODE: eI,
+    EMBEDDED_ACTIVITY_SET_FOCUSED_LAYOUT: eT,
+    CHANNEL_SELECT: eA,
+    POPOUT_WINDOW_CLOSE: eN
   }),
-  eP = eR
+  ew = eP
