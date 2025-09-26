@@ -14,6 +14,7 @@ module.exports = {
   heroImagePlaceholder: "heroImagePlaceholder__0ea1a",
   heroImageContainer: "heroImageContainer__0ea1a",
   heroImage: "heroImage__0ea1a",
+  heroTitle: "heroTitle__0ea1a",
   grid: "grid__0ea1a",
   image: "image__0ea1a",
   imagePlaceholder: "imagePlaceholder__0ea1a",
