@@ -22,17 +22,16 @@ var Chunk951288 = require("./951288.js"),
 function v(e) {
   let {
     item: t,
-    user: r,
-    profileOwner: v,
-    wishlistId: b,
-    canEdit: y
-  } = e, j = i.useRef(null), O = (0, o.Z)(j), x = t.collectiblesItem, {
-    analyticsLocations: P
-  } = (0, c.ZP)(), S = x.type === l.Z.PROFILE_EFFECT ? x.title : x.label;
+    profileOwner: r,
+    wishlistId: v,
+    canEdit: b
+  } = e, y = i.useRef(null), j = (0, o.Z)(y), O = t.collectiblesItem, {
+    analyticsLocations: x
+  } = (0, c.ZP)();
   return (0, n.jsxs)("div", {
     className: m.container,
     children: [(0, n.jsx)(s.ua7, {
-      text: S,
+      text: t.skuName,
       children: e => {
         var i, o;
         return (0, n.jsx)(s.P3F, (i = function(e) {
@@ -54,28 +53,28 @@ function v(e) {
           return e
         }({}, e), o = o = {
           className: m.card,
-          innerRef: j,
+          innerRef: y,
           onClick: () => {
             (0, f.Z)({
               skuId: t.skuId,
               isGift: true,
               giftingOrigin: p.Wt.USER_PROFILE_WISHLIST,
-              analyticsLocations: P,
-              giftRecipient: v,
+              analyticsLocations: x,
+              giftRecipient: r,
               variantsReturnStyle: a.v.VARIANTS_GROUP
             })
           },
-          "aria-label": S,
+          "aria-label": t.skuName,
           children: (0, n.jsx)("div", {
             className: m.cardPreview,
             children: (() => {
-              switch (x.type) {
+              switch (O.type) {
                 case l.Z.PROFILE_EFFECT:
                   return (0, n.jsx)("div", {
                     className: m.profileEffectPreview,
                     children: (0, n.jsx)(g.Z, {
-                      profileEffectId: x.id,
-                      isHovering: O,
+                      profileEffectId: O.id,
+                      isHovering: j,
                       isPurchased: false,
                       removeSetHeight: true
                     })
@@ -84,9 +83,9 @@ function v(e) {
                   return (0, n.jsx)("div", {
                     className: m.avatarDecorationPreview,
                     children: (0, n.jsx)(u.R, {
-                      item: x,
+                      item: O,
                       user: r,
-                      isHighlighted: O,
+                      isHighlighted: j,
                       isPurchased: false,
                       avatarSize: s.EFr.SIZE_80
                     })
@@ -98,8 +97,8 @@ function v(e) {
                       className: m.nameplateTopLeft,
                       children: (0, n.jsx)(d.Z, {
                         user: r,
-                        nameplate: x,
-                        isHighlighted: O,
+                        nameplate: O,
+                        isHighlighted: j,
                         showPlaceholderUser: true,
                         showStatus: true,
                         isPurchased: false,
@@ -110,8 +109,8 @@ function v(e) {
                       className: m.nameplateBottomRight,
                       children: (0, n.jsx)(d.Z, {
                         user: r,
-                        nameplate: x,
-                        isHighlighted: O,
+                        nameplate: O,
+                        isHighlighted: j,
                         showPlaceholderUser: true,
                         showStatus: true,
                         isPurchased: false,
@@ -136,10 +135,10 @@ function v(e) {
           Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(o, e))
         }), i))
       }
-    }), y && (0, n.jsx)(h.Z, {
+    }), b && (0, n.jsx)(h.Z, {
       iconSize: "sm",
       item: t,
-      wishlistId: b,
+      wishlistId: v,
       className: m.removeItemButton
     })]
   })

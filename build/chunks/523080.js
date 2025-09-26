@@ -17,7 +17,8 @@ class s extends Chunk81825.Z {
   static fromServer(e) {
     var t, r, {
       sku_id: n,
-      sku_product_line: o
+      sku_product_line: o,
+      sku_name: l
     } = e;
     return new s((t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -44,9 +45,10 @@ class s extends Chunk81825.Z {
         for (n = 0; n < s.length; n++) r = s[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
       }
       return i
-    }(e, ["sku_id", "sku_product_line"])), r = r = {
+    }(e, ["sku_id", "sku_product_line", "sku_name"])), r = r = {
       sku_id: n,
-      sku_product_line: o
+      sku_product_line: o,
+      sku_name: l
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
       var r = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -59,6 +61,6 @@ class s extends Chunk81825.Z {
     }), t))
   }
   constructor(e) {
-    super(), i(this, "skuId", true), i(this, "skuProductLine", true), this.skuId = e.sku_id, this.skuProductLine = e.sku_product_line
+    super(), i(this, "skuId", true), i(this, "skuProductLine", true), i(this, "skuName", true), this.skuId = e.sku_id, this.skuProductLine = e.sku_product_line, this.skuName = e.sku_name
   }
 }

@@ -34,7 +34,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk830202 = require("./830202.js");
 
-function T(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -53,7 +53,7 @@ function T(e) {
   return e
 }
 
-function k(e, t) {
+function T(e, t) {
   if (null == e) return {};
   var r, n, i = function(e, t) {
     if (null == e) return {};
@@ -72,10 +72,10 @@ function k(e, t) {
 function Z(e) {
   var {
     widget: t
-  } = e, r = k(e, ["widget"]);
-  return t instanceof h.q ? (0, n.jsx)(O.Z, T({
+  } = e, r = T(e, ["widget"]);
+  return t instanceof h.q ? (0, n.jsx)(O.Z, k({
     widget: t
-  }, r)) : t instanceof p.zy ? (0, n.jsx)(S.Z, T({
+  }, r)) : t instanceof p.zy ? (0, n.jsx)(S.Z, k({
     widget: t
   }, r)) : null
 }
@@ -127,7 +127,7 @@ function _(e) {
 function R(e) {
   var {
     user: t
-  } = e, r = k(e, ["user"]);
+  } = e, r = T(e, ["user"]);
   let l = i.useRef(null);
   (0, v.r)({
     container: l.current
@@ -142,7 +142,7 @@ function R(e) {
     fade: true,
     children: [(0, n.jsx)(P.Z, {
       scrollerRef: l
-    }), (0, n.jsx)(_, T({
+    }), (0, n.jsx)(_, k({
       user: t
     }, r))]
   })

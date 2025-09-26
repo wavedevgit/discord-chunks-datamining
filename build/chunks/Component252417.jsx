@@ -40,13 +40,13 @@ function O(e) {
     activities: h.Z.getActivities(t.id),
     isMobileOnline: h.Z.isMobileOnline(t.id)
   })), A = (0, g.Z)(t.id), {
-    voiceActivityStatusEnabled: T
+    voiceActivityStatusEnabled: k
   } = (0, c.a)({
     location: "UserProfileMutualFriendRow"
   }), {
-    voiceChannel: k
+    voiceChannel: T
   } = (0, u.Z)({
-    userId: T ? t.id : true,
+    userId: k ? t.id : true,
     guildId: x
   });
   return (0, n.jsxs)(a.P3F, {
@@ -120,7 +120,7 @@ function O(e) {
         user: t,
         activities: C,
         applicationStream: A,
-        voiceChannel: k
+        voiceChannel: T
       })]
     })]
   })

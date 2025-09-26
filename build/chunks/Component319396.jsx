@@ -16,17 +16,15 @@ var Chunk442837 = require("./442837.js"),
 function u(e) {
   let {
     item: t,
-    user: r,
-    profileOwner: i,
-    wishlistId: a,
-    canEdit: s
+    profileOwner: r,
+    wishlistId: i,
+    canEdit: a
   } = e;
   return (0, l.Q)(t) ? (0, n.jsx)(o.Z, {
     item: t,
-    user: r,
-    profileOwner: i,
-    wishlistId: a,
-    canEdit: s
+    profileOwner: r,
+    wishlistId: i,
+    canEdit: a
   }) : null
 }
 
@@ -44,7 +42,6 @@ function d(e) {
     className: c.grid,
     children: t.map(e => (0, n.jsx)(u, {
       item: e,
-      user: o,
       profileOwner: r,
       wishlistId: d,
       canEdit: l

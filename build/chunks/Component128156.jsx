@@ -38,8 +38,8 @@ function N(e) {
     currentUser: r,
     displayProfile: N,
     guildId: A,
-    channelId: T,
-    subsection: k,
+    channelId: k,
+    subsection: T,
     onClose: Z
   } = e, {
     voiceActivityStatusEnabled: D
@@ -83,7 +83,7 @@ function N(e) {
     }) : (0, n.jsx)(x.P9, {
       user: t,
       guildId: null != (J = null == N ? true : N.guildId) ? J : A,
-      channelId: T,
+      channelId: k,
       onClose: Z
     })
   }
@@ -144,7 +144,7 @@ function N(e) {
           children: e
         }, t)
       }) : true,
-      scrollIntoView: k === w.Tb.RECENT_ACTIVITY,
+      scrollIntoView: T === w.Tb.RECENT_ACTIVITY,
       children: (0, n.jsx)("ul", {
         className: C.cards,
         children: L.map(e => (0, n.jsx)("li", {
