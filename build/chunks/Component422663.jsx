@@ -1,8 +1,8 @@
 /** Chunk was on 60728 **/
 /** chunk id: 422663, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  VS: () => p,
-  oh: () => j,
+  VS: () => j,
+  oh: () => p,
   ok: () => x
 });
 var Chunk951288 = require("./951288.js");
@@ -18,7 +18,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk698339 = require("./698339.js");
 
-function g(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       l = Object.keys(n);
@@ -37,11 +37,11 @@ function g(e) {
   return e
 }
 
-function b(e) {
+function g(e) {
   let {
     onNext: t
   } = (0, u.aj)();
-  return (0, l.jsx)(c.zxk, g({
+  return (0, l.jsx)(c.zxk, f({
     variant: "primary",
     text: m.intl.string(m.t["3PatS0"]),
     onClick: t,
@@ -50,7 +50,7 @@ function b(e) {
   }, e))
 }
 
-function f(e) {
+function b(e) {
   let {
     onNext: t,
     stepLoading: n,
@@ -58,7 +58,7 @@ function f(e) {
     availableBoostCount: a,
     planCost: r
   } = (0, u.aj)(), s = r > 0 && a < r, o = r > 0 ? null != i ? m.intl.string(d.default["1fogMj"]) : s ? m.intl.string(d.default.MPNPJS) : m.intl.string(d.default.ShxV5e) : m.intl.string(m.t.K344S0);
-  return (0, l.jsx)(c.zxk, g({
+  return (0, l.jsx)(c.zxk, f({
     variant: s || r > 0 ? "expressive" : "primary",
     text: o,
     onClick: t,
@@ -68,22 +68,22 @@ function f(e) {
   }, e))
 }
 
-function j(e) {
+function p(e) {
   var t;
   let {
     stepAction: n
   } = (0, u.aj)(), i = null == n || null == (t = n.onNext) ? true : t.type;
   switch (i) {
     case "go-to-step":
-      return (0, l.jsx)(b, g({}, e));
+      return (0, l.jsx)(g, f({}, e));
     case "save":
-      return (0, l.jsx)(f, g({}, e));
+      return (0, l.jsx)(b, f({}, e));
     default:
       s()(null != i, "Invalid stepType ".concat(i))
   }
 }
 
-function p(e) {
+function j(e) {
   var t, n, i;
   let a, {
       onBack: r,
@@ -97,7 +97,7 @@ function p(e) {
     case "close":
       a = m.intl.string(m.t.cpT0Cg)
   }
-  return s()(null != a, "Invalid stepType ".concat(d)), (0, l.jsx)(c.zxk, (n = g({}, e), i = i = {
+  return s()(null != a, "Invalid stepType ".concat(d)), (0, l.jsx)(c.zxk, (n = f({}, e), i = i = {
     variant: "secondary",
     text: a,
     onClick: r,

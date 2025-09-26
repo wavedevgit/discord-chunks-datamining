@@ -353,7 +353,8 @@ function Y(e) {
     size: r = f.IXf,
     bot: i,
     botIconFirst: a,
-    fallbackAvatar: o = true
+    fallbackAvatar: o = true,
+    keepAspectRatio: s
   } = e;
   if (null != i && a) {
     let e = R(i, false, r);
@@ -366,7 +367,8 @@ function Y(e) {
     hash: n,
     size: r,
     canAnimate: false,
-    canWebP: false
+    canWebP: false,
+    keepAspectRatio: s
   });
   if (null != i) {
     let e = R(i, false, r);

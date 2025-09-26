@@ -1,7 +1,7 @@
 /** Chunk was on 95546 **/
 /** chunk id: 405701, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => h
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -25,21 +25,21 @@ function g(e) {
       isBypassSlowmode: s,
       slowmodeCooldownGuess: u
     } = e,
-    [p, g] = i.useState(false);
+    [f, g] = i.useState(false);
   if (i.useEffect(() => {
       function e() {
         g(true), setTimeout(() => {
           g(false)
         }, 1e3)
       }
-      return d.S.subscribe(b.CkL.EMPHASIZE_SLOWMODE_COOLDOWN, e), () => {
-        d.S.unsubscribe(b.CkL.EMPHASIZE_SLOWMODE_COOLDOWN, e)
+      return d.S.subscribe(O.CkL.EMPHASIZE_SLOWMODE_COOLDOWN, e), () => {
+        d.S.unsubscribe(O.CkL.EMPHASIZE_SLOWMODE_COOLDOWN, e)
       }
     }, []), !n) return null;
-  let v = (0, a.k)(o);
+  let h = (0, a.k)(o);
   if (!s && u > 0) {
     let e = l().duration(u);
-    if (u > f.Z.Millis.HOUR) {
+    if (u > p.Z.Millis.HOUR) {
       let n = "".concat(e.minutes()).padStart(2, "0"),
         r = "".concat(e.seconds()).padStart(2, "0");
       t = "".concat(e.hours(), ":").concat(n, ":").concat(r)
@@ -47,20 +47,20 @@ function g(e) {
       let n = "".concat(e.seconds()).padStart(2, "0");
       t = "".concat(e.minutes(), ":").concat(n)
     }
-  } else t = s ? O.intl.string(O.t["8+NidX"]) : O.intl.string(O.t.Icu3bW);
-  let y = (0, r.jsxs)(c.Text, {
-    className: m.cooldownText,
+  } else t = s ? b.intl.string(b.t["8+NidX"]) : b.intl.string(b.t.Icu3bW);
+  let m = (0, r.jsxs)(c.Text, {
+    className: y.cooldownText,
     variant: "text-xs/medium",
-    color: p ? "text-danger" : "text-muted",
+    color: f ? "text-danger" : "text-muted",
     tabularNumbers: true,
     children: [(0, r.jsx)(c.ANZ, {
       size: "xxs",
       color: "currentColor",
-      className: m.slowModeIcon
+      className: y.slowModeIcon
     }), t]
   });
   return (0, r.jsx)(c.ua7, {
-    text: v,
+    text: h,
     children: e => {
       var t, n;
       return (0, r.jsx)("div", (t = function(e) {
@@ -81,9 +81,9 @@ function g(e) {
         }
         return e
       }({
-        className: m.cooldownWrapper
+        className: y.cooldownWrapper
       }, e), n = n = {
-        children: y
+        children: m
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -98,11 +98,11 @@ function g(e) {
   })
 }
 
-function v(e) {
+function h(e) {
   let {
     channel: t,
     isThreadCreation: n = false
-  } = e, i = (0, s.e7)([u.Z], () => u.Z.getSlowmodeCooldownGuess(t.id, n ? u.S.CreateThread : u.S.SendMessage)), o = (0, p.w)(t, n ? u.S.CreateThread : u.S.SendMessage), {
+  } = e, i = (0, s.e7)([u.Z], () => u.Z.getSlowmodeCooldownGuess(t.id, n ? u.S.CreateThread : u.S.SendMessage)), o = (0, f.w)(t, n ? u.S.CreateThread : u.S.SendMessage), {
     rateLimitPerUser: l
   } = t;
   return (0, r.jsx)(g, {

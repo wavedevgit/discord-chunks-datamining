@@ -36,7 +36,7 @@ let E = "GameStoreReportedGames",
   A = null;
 
 function C(e) {
-  var t, n, r, i, a, o, s, l, c;
+  var t, n, r, i, a, o, s, l, c, u;
   return {
     id: e.id,
     name: e.name,
@@ -49,12 +49,13 @@ function C(e) {
     supportsOutOfProcessOverlay: _.ZP.supportsOutOfProcessOverlay(e.overlay_methods),
     themes: null != (s = e.themes) ? s : [],
     icon: null != (l = e.icon_hash) ? l : true,
-    thirdPartySkus: null != (c = e.third_party_skus) ? c : []
+    thirdPartySkus: null != (c = e.third_party_skus) ? c : [],
+    cover_image_hash: null != (u = e.cover_image_hash) ? u : true
   }
 }
 
 function N(e) {
-  var t, n;
+  var t, n, r;
   return {
     id: e.id,
     name: e.name,
@@ -67,7 +68,8 @@ function N(e) {
     supportsOutOfProcessOverlay: e.supportsOutOfProcessOverlay,
     themes: null != (t = e.themes) ? t : [],
     icon: e.icon,
-    thirdPartySkus: null != (n = e.thirdPartySkus) ? n : []
+    thirdPartySkus: null != (n = e.thirdPartySkus) ? n : [],
+    cover_image_hash: null != (r = e.cover_image_hash) ? r : true
   }
 }
 

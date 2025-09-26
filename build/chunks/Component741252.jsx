@@ -1,24 +1,17 @@
 /** Chunk was on 60728 **/
 /** chunk id: 741252, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => a
 });
 var Chunk951288 = require("./951288.js"),
-  Chunk481060 = require("./481060.js"),
-  Chunk703656 = require("./703656.js"),
-  Chunk981631 = require("./981631.js"),
-  Chunk176505 = require("./176505.js"),
-  Chunk440589 = require("./440589.js"),
-  Chunk388032 = require("./388032.jsx"),
-  Chunk500254 = require("./500254.js"),
-  Chunk765109 = require("./765109.js");
+  Chunk481060 = require("./481060.js");
 
-function m(e, t) {
+function a(e, t) {
   (0, i.ZDy)(async () => {
     let {
-      default: m
-    } = await n.e("13965").then(n.bind(n, 666083));
-    return n => (0, l.jsx)(m, function(e) {
+      default: i
+    } = await n.e("61268").then(n.bind(n, 37208));
+    return n => (0, l.jsx)(i, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           l = Object.keys(n);
@@ -36,29 +29,8 @@ function m(e, t) {
       }
       return e
     }({
-      title: c.intl.string(o.default.hcBOZW),
-      description: c.intl.formatToPlainString(o.default.KCgZMj, {
-        provider: "Portkey"
-      }),
-      image: (0, l.jsx)("div", {
-        className: d.imageContainer,
-        children: (0, l.jsx)("img", {
-          className: d.image,
-          alt: "",
-          src: t.imageUrl
-        })
-      }),
-      button: (0, l.jsx)("div", {
-        "data-button-hoisted-classname-wrapper": true,
-        className: u.button,
-        children: (0, l.jsx)(i.zxk, {
-          variant: "primary",
-          text: c.intl.string(o.default.AS3n8v),
-          onClick: () => {
-            (0, a.uL)(r.Z5c.CHANNEL(e, s.oC.PORTKEY)), n.onClose()
-          }
-        })
-      })
+      portkeyGame: t,
+      guildId: e
     }, n))
   })
 }

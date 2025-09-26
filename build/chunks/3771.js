@@ -1,4 +1,4 @@
-/** Chunk was on 57354 **/
+/** Chunk was on 44576 **/
 /** chunk id: 3771, original params: e,t,i (module,exports,require) **/
 module.exports = {
   base: "base_b88801",
@@ -7,7 +7,6 @@ module.exports = {
   typingDots: "typingDots_b88801",
   inTextChannel: "inTextChannel_b88801",
   typing: "typing_b88801 base_b88801",
-  isComboing: "isComboing_b88801",
   activityInviteEducation: "activityInviteEducation_b88801 base_b88801",
   activityInviteEducationFadeIn: "activityInviteEducationFadeIn_b88801",
   activityInviteEducationArrow: "activityInviteEducationArrow_b88801"

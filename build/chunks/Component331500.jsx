@@ -91,7 +91,6 @@ function y(e) {
       children: (0, i.jsx)("div", {
         className: h.gameContainer,
         children: a.map((e, t) => (0, i.jsx)(f.Z, {
-          className: h.game,
           game: e,
           onClick: () => (0, x.Z)({
             guildId: n,

@@ -377,7 +377,6 @@ function Y(e) {
         onClick: () => o(null),
         text: C.intl.string(C.t.fUdMeH)
       }), (0, r.jsx)(U, {
-        className: N.__invalid_backgroundOptionBlurred,
         selected: a === v.f7,
         icon: l.yMH,
         onClick: () => o(v.f7),

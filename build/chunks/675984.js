@@ -6,7 +6,8 @@ require.d(exports, {
 var Chunk962774 = require("./962774.js");
 
 function r(e) {
-  let t = e.skus.map(e => {
+  var t, n, r, i;
+  let l = e.skus.map(e => {
       let t = e.tenant_metadata.plan_features.map(e => ({
         title: e.title,
         description: e.description
@@ -18,14 +19,15 @@ function r(e) {
         specifications: t
       }
     }).sort((e, t) => t.cost - e.cost),
-    n = t.length > 0 ? Math.min(...t.map(e => e.cost)) : 0;
+    s = l.length > 0 ? Math.min(...l.map(e => e.cost)) : 0;
   return {
     id: e.id,
     name: e.name,
+    gameId: null != (i = null == (r = e.tenant_metadata) || null == (n = r.guild_monetization) || null == (t = n.game_server) ? true : t.game_application_id) ? i : "",
     imageUrl: "",
     developer: "Game Server Provider",
-    plans: t,
+    plans: l,
     regions: a.Y9,
-    baseCost: n
+    baseCost: s
   }
 }

@@ -1,23 +1,24 @@
-/** Chunk was on 25710 **/
+/** Chunk was on 62266 **/
 /** chunk id: 642633, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  Z: () => u
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk793030 = require("./793030.js"),
   Chunk183369 = require("./183369.jsx"),
+  Chunk943970 = require("./943970.js"),
   Chunk440589 = require("./440589.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk233019 = require("./233019.js");
 
-function d() {
+function u() {
   let {
     currentGame: e,
     planId: n
-  } = (0, Chunk183369.aj)();
+  } = (0, Chunk183369.aj)(), t = (0, Chunk943970.Z)(null == module ? true : module.gameId, "cover");
   if (null == module) return null;
-  let t = null == module ? true : module.plans.find(e => e.id === n);
+  let u = null == module ? true : module.plans.find(e => e.id === n);
   return (0, Chunk951288.jsx)("div", {
     className: Chunk233019.container,
     children: (0, Chunk951288.jsxs)("div", {
@@ -25,6 +26,7 @@ function d() {
       children: [(0, Chunk951288.jsxs)("div", {
         className: Chunk233019.headerContainer,
         children: [(0, Chunk951288.jsx)("img", {
+          src: null != require ? require : "",
           className: Chunk233019.image,
           alt: module.name
         }), (0, Chunk951288.jsxs)("div", {
@@ -36,27 +38,27 @@ function d() {
           }), (0, Chunk951288.jsx)(Chunk793030.xvT, {
             variant: "text-md/medium",
             color: "text-secondary",
-            children: null == require ? true : require.name
+            children: null == u ? true : u.name
           })]
         })]
-      }), null != require && (0, Chunk951288.jsx)("div", {
+      }), null != u && (0, Chunk951288.jsx)("div", {
         className: Chunk233019.statsGrid,
-        children: require.specifications.map((e, n) => {
-          var l;
+        children: u.specifications.map((e, n) => {
+          var t;
           return (0, r.jsxs)(i.Fragment, {
             children: [(0, r.jsxs)("div", {
-              className: c.statItem,
-              children: [(0, r.jsx)(a.X6q, {
+              className: d.statItem,
+              children: [(0, r.jsx)(l.X6q, {
                 variant: "heading-sm/semibold",
                 color: "text-primary",
                 children: e.title
-              }), (0, r.jsx)(a.xvT, {
+              }), (0, r.jsx)(l.xvT, {
                 variant: "text-sm/medium",
                 color: "text-tertiary",
                 children: e.description
               })]
-            }), n !== (null != (l = null == t ? true : t.specifications.length) ? l : 0) - 1 && (0, r.jsx)("div", {
-              className: c.divider
+            }), n !== (null != (t = null == u ? true : u.specifications.length) ? t : 0) - 1 && (0, r.jsx)("div", {
+              className: d.divider
             })]
           }, n)
         })

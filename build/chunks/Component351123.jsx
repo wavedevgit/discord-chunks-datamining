@@ -214,7 +214,7 @@ function F(e) {
     guild: t,
     channel: l,
     permissionUpdates: r
-  } = e, o = (0, a.e7)([w.Z], () => w.Z.getSortedRoles(t.id)), c = P.RZ(t, o, l, N.yP, r), u = (0, a.e7)([O.ZP], () => P.cR(O.ZP.getMemberIds(t.id), l, t, N.yP, r)), h = (0, C.nG)(l.id);
+  } = e, o = (0, a.e7)([Z.Z], () => Z.Z.getSortedRoles(t.id)), c = P.RZ(t, o, l, N.yP, r), u = (0, a.e7)([O.ZP], () => P.cR(O.ZP.getMemberIds(t.id), l, t, N.yP, r)), h = (0, C.nG)(l.id);
 
   function g() {
     (0, d.ZDy)(async () => {
@@ -228,7 +228,7 @@ function F(e) {
   }
   return (0, i.jsxs)("div", {
     className: s()(H.settingCard, H.active),
-    children: [(0, i.jsx)(A.Z, {
+    children: [(0, i.jsx)(L.Z, {
       label: V.intl.string(V.t.StpcFR),
       description: V.intl.string(V.t.f7VbhI),
       icon: (0, i.jsx)(d.ewx, {
@@ -312,7 +312,7 @@ function z(e) {
     className: s()(H.settingCard, {
       [H.active]: r
     }),
-    children: [(0, i.jsx)(A.Z, {
+    children: [(0, i.jsx)(L.Z, {
       description: f.subtitle,
       icon: (0, i.jsx)(d.mBM, {
         size: "custom",
@@ -483,6 +483,6 @@ let q = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk496675.Z, Chunk271383.
       isPrivateGuildChannel: u,
       roles: o,
       members: a
-    }), false, (0, i.jsx)(L.Z, {})]
+    }), false, (0, i.jsx)(A.Z, {})]
   })
 })

@@ -1,7 +1,7 @@
-/** Chunk was on 13965 **/
+/** Chunk was on 61268 **/
 /** chunk id: 666083, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => d
+  default: () => p
 }), require("./953529.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -13,37 +13,37 @@ var Chunk951288 = require("./951288.js"),
   Chunk372654 = require("./372654.js"),
   Chunk500254 = require("./500254.js");
 
-function d(e) {
+function p(e) {
   var t, n, {
-      title: d,
-      description: f,
+      title: p,
+      description: d,
       image: b,
-      button: O
+      button: m
     } = e,
-    j = function(e, t) {
+    g = function(e, t) {
       if (null == e) return {};
-      var n, r, o = function(e, t) {
+      var n, r, a = function(e, t) {
         if (null == e) return {};
-        var n, r, o = {},
-          a = Object.keys(e);
-        for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
-        return o
+        var n, r, a = {},
+          o = Object.keys(e);
+        for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (a[n] = e[n]);
+        return a
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var a = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
+        var o = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n])
       }
-      return o
+      return a
     }(e, ["title", "description", "image", "button"]);
-  let m = (0, i.e7)([s.Z], () => s.Z.useReducedMotion),
-    g = o.useRef(null),
-    y = o.useRef(new a.qA),
-    [h, v] = o.useState(null);
+  let O = (0, i.e7)([l.Z], () => l.Z.useReducedMotion),
+    y = a.useRef(null),
+    j = a.useRef(new o.qA),
+    [v, h] = a.useState(null);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(a.O_, {
-      ref: v,
-      className: p.confettiCanvas,
-      environment: y.current
+    children: [(0, r.jsx)(o.O_, {
+      ref: h,
+      className: f.confettiCanvas,
+      environment: j.current
     }), (0, r.jsxs)(c.Y0X, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -63,37 +63,37 @@ function d(e) {
       return e
     }({
       "data-migration-pending": true,
-      className: p.modal,
+      className: f.modal,
       size: c.CgR.DYNAMIC
-    }, j), n = n = {
+    }, g), n = n = {
       parentComponent: "GuildPowerupActivateModal",
       children: [(0, r.jsx)(c.hzk, {
         "data-migration-pending": true,
-        className: p.modalContentContainer,
+        className: f.modalContentContainer,
         scrollbarType: "none",
         children: (0, r.jsxs)("div", {
-          className: p.container,
-          ref: g,
+          className: f.container,
+          ref: y,
           children: [b, (0, r.jsxs)("div", {
-            className: p.contentContainer,
+            className: f.contentContainer,
             children: [(0, r.jsx)(c.X6q, {
               variant: "heading-xl/extrabold",
-              children: d
+              children: p
             }), (0, r.jsx)(c.Text, {
               tag: "span",
-              className: p.description,
+              className: f.description,
               variant: "text-sm/normal",
-              children: f
-            }), O]
+              children: d
+            }), m]
           })]
         })
       }), (0, r.jsx)(c.olH, {
         "data-migration-pending": true,
-        className: p.close,
-        onClick: j.onClose
-      }), !m && (0, r.jsx)(l.Z, {
-        confettiTarget: g.current,
-        confettiCanvas: h,
+        className: f.close,
+        onClick: g.onClose
+      }), !O && (0, r.jsx)(s.Z, {
+        confettiTarget: y.current,
+        confettiCanvas: v,
         sprites: (0, u.vK)()
       })]
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

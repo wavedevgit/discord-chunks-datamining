@@ -1,5 +1,5 @@
-/** Chunk was on 33203 **/
-/** chunk id: 225161, original params: e,n,t (module,exports,require) **/
+/** Chunk was on 37384 **/
+/** chunk id: 225161, original params: e,t,n (module,exports,require) **/
 module.exports = {
   drawerSizingWrapper: "drawerSizingWrapper__9c62c",
   contentWrapper: "contentWrapper__9c62c",

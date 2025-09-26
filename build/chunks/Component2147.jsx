@@ -2,7 +2,7 @@
 /** chunk id: 2147, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  G: () => eL,
+  G: () => eA,
   Z: () => eD
 }), require("./997841.js"), require("./953529.js"), require("./290780.js");
 var Chunk951288 = require("./951288.js"),
@@ -115,8 +115,8 @@ let ex = (0, Chunk313201.hQ)(),
   eS = (0, Chunk313201.hQ)(),
   eE = (0, Chunk313201.hQ)(),
   eO = (0, Chunk313201.hQ)(),
-  ew = (0, Chunk313201.hQ)(),
   eZ = (0, Chunk313201.hQ)(),
+  ew = (0, Chunk313201.hQ)(),
   eT = (0, Chunk131704.kt)({
     id: "1",
     type: Chunk981631.d4z.DM
@@ -140,7 +140,7 @@ let ex = (0, Chunk313201.hQ)(),
     breakingChangeDate: (0, Chunk55935.vc)(o()(Chunk981631.zQD), "LL"),
     helpCenterLink: Chunk63063.Z.getArticleURL(Chunk981631.BhN.SLOWMODE)
   },
-  eL = Chunk442837.ZP.connectStores([Chunk388610.Z], () => {
+  eA = Chunk442837.ZP.connectStores([Chunk388610.Z], () => {
     let {
       channel: e,
       submitting: t
@@ -201,7 +201,7 @@ let ex = (0, Chunk313201.hQ)(),
     }
   })(Chunk852860.Z);
 
-function eA(e) {
+function eL(e) {
   let {
     onEmojiPicked: t,
     channel: n,
@@ -221,7 +221,7 @@ function eA(e) {
           emoji: n,
           willClose: i
         } = e;
-        null != n && n.type === L.B.UNICODE && t(n.surrogates), i && l()
+        null != n && n.type === A.B.UNICODE && t(n.surrogates), i && l()
       },
       showOnlyUnicode: true,
       analyticsOverride: e_
@@ -263,7 +263,7 @@ class eM extends Chunk647438.PureComponent {
     let r = null != (i = null == (t = this.props.channel) ? true : t.topic) ? i : "";
     (null != (l = null == (n = e.channel) ? true : n.topic) ? l : "") !== r && r !== this.state.textTopicValue && this.setState({
       textTopicValue: r,
-      richTopicValue: (0, w.JM)(r)
+      richTopicValue: (0, Z.JM)(r)
     })
   }
   getError(e) {
@@ -291,31 +291,31 @@ class eM extends Chunk647438.PureComponent {
         canSendMessages: C,
         isThreadModerator: N,
         canManageThread: E,
-        guild: w,
+        guild: Z,
         isForumPost: R,
         isOwner: _,
         showAdvancedSlowModeSetting: I
       } = this.props,
       P = W.Ec.has(e.type),
-      L = e.isForumLikeChannel(),
-      M = L && (null == (n = e.availableTags) ? true : n.every(e => e.moderated)),
+      A = e.isForumLikeChannel(),
+      M = A && (null == (n = e.availableTags) ? true : n.every(e => e.moderated)),
       V = (null == (l = Y.default.getCurrentUser()) ? true : l.isStaff()) === true,
       H = W.TK.has(e.type) ? (0, i.jsxs)("div", {
         children: [(0, i.jsx)(m.N, {
-          label: L ? eh.intl.string(eh.t.yR6Hwc) : eh.intl.string(eh.t.X8jMDg),
-          children: (0, i.jsx)(Z.ZP, {
+          label: A ? eh.intl.string(eh.t.yR6Hwc) : eh.intl.string(eh.t.X8jMDg),
+          children: (0, i.jsx)(w.ZP, {
             className: eg.topicContainer,
             innerClassName: s()(eg.topic, {
               [eg.disabled]: !y
             }),
             characterCountClassName: eg.topicCharacterCount,
-            maxCharacterCount: L ? eo.Z7 : eo.$x,
+            maxCharacterCount: A ? eo.Z7 : eo.$x,
             onChange: this.handleChangeRichTopic,
             placeholder: eh.intl.string(eh.t["71fbmp"]),
             channel: eT,
             textValue: this.state.textTopicValue,
             richValue: this.state.richTopicValue,
-            type: L ? O.Ie.FORUM_CHANNEL_GUIDELINES : O.Ie.CHANNEL_TOPIC,
+            type: A ? O.Ie.FORUM_CHANNEL_GUIDELINES : O.Ie.CHANNEL_TOPIC,
             onFocus: () => {
               this.setState({
                 topicFocused: true
@@ -337,11 +337,11 @@ class eM extends Chunk647438.PureComponent {
           className: s()(em.marginTop40, em.marginBottom40)
         })]
       }) : null,
-      G = L && V ? (0, i.jsxs)("div", {
+      G = A && V ? (0, i.jsxs)("div", {
         children: [(0, i.jsx)(b.Kx8, {
           label: eh.intl.string(eh.t.qk2jdX),
           placeholder: eh.intl.string(eh.t.DDjD1N),
-          value: A.ZP.translateSurrogatesToInlineEmoji(null != (a = e.template) ? a : ""),
+          value: L.ZP.translateSurrogatesToInlineEmoji(null != (a = e.template) ? a : ""),
           onChange: this.handleChangeTemplate,
           error: this.getError("template"),
           maxLength: ed.Vb,
@@ -385,30 +385,27 @@ class eM extends Chunk647438.PureComponent {
               type: b.R94.Types.DESCRIPTION,
               className: eg.description,
               children: eh.intl.string(eh.t.SdbF0t)
-            }), (0, i.jsxs)("div", {
-              className: eg.buttonRow,
+            }), (0, i.jsxs)(b.hE2, {
+              align: "center",
               children: [(0, i.jsx)(b.yRy, {
                 targetElementRef: this.defaultReactionButtonRef,
                 renderPopout: this.renderEmojiPicker,
                 position: "right",
                 animation: b.yRy.Animation.NONE,
                 align: "center",
-                children: e => (0, i.jsx)(f.zx, eb(ef({}, e), {
+                children: e => (0, i.jsx)(b.zxk, eb(ef({}, e), {
                   buttonRef: this.defaultReactionButtonRef,
+                  text: eh.intl.string(eh.t["59QgaG"]),
                   disabled: !y,
                   onClick: t => {
                     var n;
                     null == (n = e.onClick) || n.call(e, t)
-                  },
-                  children: eh.intl.string(eh.t["59QgaG"])
+                  }
                 }))
-              }), null != e.defaultReactionEmoji ? (0, i.jsx)(f.zx, {
-                className: eg.removeButton,
+              }), null != e.defaultReactionEmoji ? (0, i.jsx)(b.Avr, {
+                text: eh.intl.string(eh.t.N86XcH),
                 onClick: () => this.handleChangeDefaultReactionEmoji(null),
-                size: f.zx.Sizes.MIN,
-                look: f.zx.Looks.LINK,
-                color: f.zx.Colors.RED,
-                children: eh.intl.string(eh.t.N86XcH)
+                variant: "critical"
               }) : null]
             })]
           }), (0, i.jsx)(k.Z, {
@@ -501,7 +498,7 @@ class eM extends Chunk647438.PureComponent {
       })) ? true : r.enabled,
       ee = W.X_.has(e.type) ? (0, i.jsxs)("div", {
         children: [(0, i.jsx)(b.hjN, {
-          title: L ? eh.intl.string(eh.t.O1c02t) : true,
+          title: A ? eh.intl.string(eh.t.O1c02t) : true,
           children: (0, i.jsxs)(b.Kqy, {
             gap: 20,
             children: [true === I ? (0, i.jsx)(el.Z, {
@@ -522,7 +519,7 @@ class eM extends Chunk647438.PureComponent {
               equidistant: true,
               "aria-labelledby": ey,
               "aria-describedby": eC
-            }), L ? (0, i.jsx)(b.iRW, {
+            }), A ? (0, i.jsx)(b.iRW, {
               label: eh.intl.string(eh.t["fkY5+v"]),
               helperText: K ? eh.intl.format(eh.t.nZSuEh, eP) : eh.intl.string(eh.t.kdZU6O),
               initialValue: null != (h = e.defaultThreadRateLimitPerUser) ? h : 0,
@@ -564,7 +561,7 @@ class eM extends Chunk647438.PureComponent {
           children: eh.intl.string(eh.t.s2rpNT)
         })
       }) : null,
-      ec = null != w && (0, F.Y2)(w),
+      ec = null != Z && (0, F.Y2)(Z),
       ep = W.ov.has(e.type) ? (0, i.jsx)("div", {
         children: (0, i.jsx)(b.j7V, {
           note: eh.intl.string(eh.t["9eUgwc"]),
@@ -576,7 +573,7 @@ class eM extends Chunk647438.PureComponent {
           children: eh.intl.string(eh.t.Es25YW)
         })
       }) : null,
-      eN = W.Y0.has(e.type) && null != w && w.features.has(ea.oNc.NEWS) && e.id !== (null == w ? true : w.rulesChannelId) && e.id !== (null == w ? true : w.publicUpdatesChannelId) ? (0, i.jsx)("div", {
+      eN = W.Y0.has(e.type) && null != Z && Z.features.has(ea.oNc.NEWS) && e.id !== (null == Z ? true : Z.rulesChannelId) && e.id !== (null == Z ? true : Z.publicUpdatesChannelId) ? (0, i.jsx)("div", {
         children: (0, i.jsx)(b.j7V, {
           note: (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("div", {
@@ -616,9 +613,9 @@ class eM extends Chunk647438.PureComponent {
           helpdeskArticle: en.Z.getArticleURL(ea.BhN.CONVERSATION_SUMMARIES)
         }),
         onChange: this.handleChannelSummariesToggled,
-        value: !e.hasFlag(eo.zZ.SUMMARIES_DISABLED) && (null == w ? true : w.features.has(ea.oNc.SUMMARIES_ENABLED_BY_USER)),
+        value: !e.hasFlag(eo.zZ.SUMMARIES_DISABLED) && (null == Z ? true : Z.features.has(ea.oNc.SUMMARIES_ENABLED_BY_USER)),
         hideBorder: true,
-        disabled: !y || !(null == w ? true : w.features.has(ea.oNc.SUMMARIES_ENABLED_BY_USER)),
+        disabled: !y || !(null == Z ? true : Z.features.has(ea.oNc.SUMMARIES_ENABLED_BY_USER)),
         children: (0, i.jsxs)("div", {
           className: eg.badgedItem,
           children: [eh.intl.string(eh.t.id3ozs), (0, i.jsx)(b.IGR, {
@@ -640,7 +637,7 @@ class eM extends Chunk647438.PureComponent {
         })]
       }) : null;
     e.type === ea.d4z.GUILD_CATEGORY ? (j = eh.intl.string(eh.t.OCAkGB), x = "category-name") : e.isForumPost() ? (j = eh.intl.string(eh.t.uyVrTE), x = "post-title") : P ? (j = eh.intl.string(eh.t.j3XWjI), x = "thread-name") : (j = eh.intl.string(eh.t.PVbHDg), x = "channel-name");
-    let ew = _ ? C : y;
+    let eZ = _ ? C : y;
     return (0, i.jsxs)("div", {
       children: [(0, i.jsx)(b.oil, {
         label: j,
@@ -652,11 +649,11 @@ class eM extends Chunk647438.PureComponent {
         error: this.getError("name"),
         name: x,
         autoFocus: true,
-        disabled: !ew,
+        disabled: !eZ,
         maxLength: ea.HN8,
-        trailing: ew ? {
+        trailing: eZ ? {
           type: "emoji",
-          button: (0, i.jsx)(eA, {
+          button: (0, i.jsx)(eL, {
             onEmojiPicked: this.insertEmojiAtPosition,
             channel: e,
             guildId: null == e ? true : e.guild_id
@@ -768,7 +765,7 @@ class eM extends Chunk647438.PureComponent {
         id: eO,
         children: eh.intl.string(eh.t["/AoSGB"])
       }), "" !== n && (0, i.jsx)(b.R94, {
-        id: ew,
+        id: eZ,
         type: b.geA.DESCRIPTION,
         style: {
           color: g.Z.unsafe_rawColors.RED_400.css
@@ -785,9 +782,9 @@ class eM extends Chunk647438.PureComponent {
         maxValue: l,
         disabled: !t,
         "aria-labelledby": eO,
-        "aria-describedby": null != n && "" !== n ? ew : eZ
+        "aria-describedby": null != n && "" !== n ? eZ : ew
       }), (0, i.jsx)(b.R94, {
-        id: eZ,
+        id: ew,
         type: b.geA.DESCRIPTION,
         children: eh.intl.format(e.isGuildStageVoice() ? eh.t.OqZI8P : eh.t["8yb3JS"], {})
       })]
@@ -934,7 +931,7 @@ class eM extends Chunk647438.PureComponent {
       }, 0)
     }), ep(this, "handleChangeTopic", e => {
       (0, x.pW)({
-        topic: A.ZP.translateInlineEmojiToSurrogates(e)
+        topic: L.ZP.translateInlineEmojiToSurrogates(e)
       })
     }), ep(this, "handleChangeRichTopic", (e, t, n) => {
       this.setState({
@@ -943,7 +940,7 @@ class eM extends Chunk647438.PureComponent {
       }), this.handleChangeTopic(t)
     }), ep(this, "handleChangeTemplate", e => {
       (0, x.pW)({
-        template: A.ZP.translateInlineEmojiToSurrogates(e)
+        template: L.ZP.translateInlineEmojiToSurrogates(e)
       })
     }), ep(this, "handleChangeDefaultReactionEmoji", e => {
       let t = null == e ? null : (null == e ? true : e.id) != null ? {
@@ -1055,7 +1052,7 @@ class eM extends Chunk647438.PureComponent {
     let r = null != (n = null == (t = this.props.channel) ? true : t.topic) ? n : "";
     this.state = {
       textTopicValue: r,
-      richTopicValue: (0, w.JM)(r),
+      richTopicValue: (0, Z.JM)(r),
       topicFocused: false,
       updateNameInputCursorPosition: false
     }

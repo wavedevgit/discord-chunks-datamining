@@ -1,4 +1,4 @@
-/** Chunk was on 25710 **/
+/** Chunk was on 62266 **/
 /** chunk id: 560467, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk681715 = require("./681715.js"),
   Chunk481060 = require("./481060.js"),
@@ -31,7 +31,7 @@ function C(e) {
   } = e;
   return null == n ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: l()(v.optionContainer, i),
+      className: a()(v.optionContainer, i),
       children: [(0, r.jsx)("span", {
         children: n.name
       }), (0, r.jsxs)("div", {
@@ -57,16 +57,16 @@ function N(e) {
     region: n,
     selected: t,
     disabled: i,
-    className: a
+    className: l
   } = e, {
     pingText: o,
     pingCircleStyle: s
   } = (0, _.t)(n.pingUrl);
   return null == n ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: l()(v.optionContainer, {
+      className: a()(v.optionContainer, {
         [v.disabled]: i
-      }, a),
+      }, l),
       children: [(0, r.jsx)("span", {
         children: n.name
       }), (0, r.jsx)("div", {
@@ -75,7 +75,7 @@ function N(e) {
           children: b.intl.string(j.default["1eK9GR"])
         }) : (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)("div", {
-            className: l()(v.pingCircle, s)
+            className: a()(v.pingCircle, s)
           }), (0, r.jsx)(c.Text, {
             variant: "text-xs/medium",
             children: o
@@ -93,8 +93,8 @@ function O() {
     guildId: e,
     currentGame: n,
     regionId: t,
-    portkeyInstance: a,
-    setRegionId: l,
+    portkeyInstance: l,
+    setRegionId: a,
     name: _,
     setName: O,
     planId: y,
@@ -194,7 +194,7 @@ function O() {
             isDisabled: E,
             options: I,
             optionClassName: Chunk557787.option,
-            select: e => l(e.id),
+            select: e => a(e.id),
             placeholder: Chunk388032.intl.string(Chunk440589.default["op6/kZ"]),
             renderOptionLabel: e => {
               var n;

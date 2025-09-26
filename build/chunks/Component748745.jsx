@@ -1,7 +1,7 @@
 /** Chunk was on 60728 **/
 /** chunk id: 748745, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => y
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -13,13 +13,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk838968 = require("./838968.jsx"),
   Chunk880419 = require("./880419.jsx"),
   Chunk693587 = require("./693587.js"),
+  Chunk943970 = require("./943970.js"),
   Chunk967647 = require("./967647.jsx"),
   Chunk258640 = require("./258640.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk123879 = require("./123879.js"),
   Chunk958751 = require("./958751.js");
 
-function p(e) {
+function x(e) {
   let {
     guildId: t,
     gameInstance: n,
@@ -50,13 +51,13 @@ function p(e) {
         }
         return e
       }({}, e), s = s = {
-        className: r()(f.secondaryButton, j.disableButton),
-        innerClassName: f.buttonInner,
-        wrapperClassName: f.secondaryButton,
+        className: r()(p.secondaryButton, j.disableButton),
+        innerClassName: p.buttonInner,
+        wrapperClassName: p.secondaryButton,
         color: o.Tt.PRIMARY,
         "aria-label": b.intl.string(g.default.TZsu1d),
         onClick: e => {
-          e.stopPropagation(), (0, v.Q)(t, n)
+          e.stopPropagation(), (0, f.Q)(t, n)
         },
         children: (0, l.jsx)(d.RD, {
           cost: i,
@@ -77,36 +78,37 @@ function p(e) {
   })
 }
 
-function x(e) {
+function y(e) {
   var t, n, a, r;
   let {
     guildId: o,
     gameInstance: d,
-    onClick: v
-  } = e, f = (0, s.e7)([m.Z], () => m.Z.getStateForGuild(o)), x = i.useMemo(() => {
+    onClick: f
+  } = e, p = (0, s.e7)([m.Z], () => m.Z.getStateForGuild(o)), y = i.useMemo(() => {
     var e;
-    return null == f || null == (e = f.entitlements) ? true : e[d.entitlementId]
-  }, [null == f ? true : f.entitlements, d.entitlementId]), y = (null == x ? true : x.ends_at) != null, h = null == x || null == (r = x.sku) || null == (a = r.tenant_metadata) || null == (n = a.guild_monetization) || null == (t = n.game_server) ? true : t.boost_price;
-  return null == h ? null : (0, l.jsxs)(c.P3F, {
+    return null == p || null == (e = p.entitlements) ? true : e[d.entitlementId]
+  }, [null == p ? true : p.entitlements, d.entitlementId]), h = (null == y ? true : y.ends_at) != null, O = null == y || null == (r = y.sku) || null == (a = r.tenant_metadata) || null == (n = a.guild_monetization) || null == (t = n.game_server) ? true : t.boost_price, P = (0, v.Z)(d.gameId, "icon");
+  return null == O ? null : (0, l.jsxs)(c.P3F, {
     className: j.game,
-    onClick: () => v(d),
+    onClick: () => f(d),
     children: [(0, l.jsx)("img", {
       className: j.image,
-      alt: ""
+      alt: "",
+      src: P
     }), (0, l.jsxs)("div", {
       className: j.textContainer,
       children: [(0, l.jsx)(c.X6q, {
         variant: "heading-sm/semibold",
         children: d.name
-      }), y ? (0, l.jsx)(u.rL, {
-        dateString: x.ends_at
+      }), h ? (0, l.jsx)(u.rL, {
+        dateString: y.ends_at
       }) : (0, l.jsx)(u.P2, {
         text: b.intl.string(g.default.FFLkm5)
       })]
-    }), (0, l.jsx)(p, {
+    }), (0, l.jsx)(x, {
       guildId: o,
       gameInstance: d,
-      cost: h
+      cost: O
     })]
   })
 }

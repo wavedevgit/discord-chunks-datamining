@@ -42,7 +42,7 @@ var Chunk951288 = require("./951288.js"),
 function D(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null,
     n = arguments.length > 2 ? arguments[2] : true;
-  h.ZP.trackWithMetadata(L.rMx.SETTINGS_PANE_VIEWED, {
+  h.ZP.trackWithMetadata(A.rMx.SETTINGS_PANE_VIEWED, {
     settings_type: "channel",
     origin_pane: t,
     destination_pane: e,
@@ -68,7 +68,7 @@ class k extends Chunk647438.PureComponent {
       canManageWebhooks: a,
       canUnlinkChannel: o
     } = this.props;
-    (s || r || a || o) && (i !== L.QZA.CLOSED || i === t) && (r || l !== L.CoT.PERMISSIONS) && (a || o || l !== L.CoT.INTEGRATIONS) ? l !== n && D(l, n): (0, c.xf)()
+    (s || r || a || o) && (i !== A.QZA.CLOSED || i === t) && (r || l !== A.CoT.PERMISSIONS) && (a || o || l !== A.CoT.INTEGRATIONS) ? l !== n && D(l, n): (0, c.xf)()
   }
   render() {
     let {
@@ -100,7 +100,7 @@ class k extends Chunk647438.PureComponent {
           canUnlinkChannel: h
         } = e, f = (0, m.KS)(t), {
           GUILD_CATEGORY: b
-        } = L.d4z, x = v.Ec.has(t.type), j = t.type === b ? A.intl.string(A.t.ifbXnJ) : x ? t.isForumPost() ? A.intl.string(A.t.nEOg1N) : A.intl.string(A.t.H7vTe3) : A.intl.string(A.t["8D8Rsb"]);
+        } = A.d4z, x = v.Ec.has(t.type), j = t.type === b ? L.intl.string(L.t.ifbXnJ) : x ? t.isForumPost() ? L.intl.string(L.t.nEOg1N) : L.intl.string(L.t.H7vTe3) : L.intl.string(L.t["8D8Rsb"]);
         return [{
           section: u.ID.HEADER,
           label: null != t ? (0, i.jsxs)(i.Fragment, {
@@ -108,19 +108,19 @@ class k extends Chunk647438.PureComponent {
               size: "xxs",
               color: "currentColor",
               className: M.channelIcon
-            }) : null, (0, g.F6)(t, w.default, O.Z), null != n ? (0, i.jsx)(s.Text, {
+            }) : null, (0, g.F6)(t, Z.default, O.Z), null != n ? (0, i.jsx)(s.Text, {
               tag: "span",
               variant: "text-xs/semibold",
               color: "header-secondary",
               lineClamp: 1,
               className: M.category,
-              children: (0, g.F6)(n, w.default, O.Z)
+              children: (0, g.F6)(n, Z.default, O.Z)
             }) : null]
-          }) : A.intl.string(A.t.XPDhcX)
+          }) : L.intl.string(L.t.XPDhcX)
         }, {
-          section: L.CoT.OVERVIEW,
-          label: A.intl.string(A.t["/dp6yc"]),
-          ariaLabel: A.intl.string(A.t["/dp6yc"]),
+          section: A.CoT.OVERVIEW,
+          label: L.intl.string(L.t["/dp6yc"]),
+          ariaLabel: L.intl.string(L.t["/dp6yc"]),
           element: I.Z,
           notice: {
             element: I.G,
@@ -128,8 +128,8 @@ class k extends Chunk647438.PureComponent {
           },
           predicate: () => !t.isModeratorReportChannel()
         }, {
-          section: L.CoT.PERMISSIONS,
-          label: A.intl.string(A.t.xrmhRU),
+          section: A.CoT.PERMISSIONS,
+          label: L.intl.string(L.t.xrmhRU),
           element: p.Z,
           notice: {
             element: P.n,
@@ -137,15 +137,15 @@ class k extends Chunk647438.PureComponent {
           },
           predicate: () => l && !x
         }, {
-          section: L.CoT.INSTANT_INVITES,
-          label: A.intl.string(A.t["9F90iY"]),
+          section: A.CoT.INSTANT_INVITES,
+          label: L.intl.string(L.t["9F90iY"]),
           element: _.Z,
           type: u.bT.CUSTOM,
           predicate: () => t.type !== b && r && !x && !t.isModeratorReportChannel()
         }, {
-          section: L.CoT.INTEGRATIONS,
-          label: A.intl.string(A.t.s69NLC),
-          ariaLabel: A.intl.string(A.t.s69NLC),
+          section: A.CoT.INTEGRATIONS,
+          label: L.intl.string(L.t.s69NLC),
+          ariaLabel: L.intl.string(L.t.s69NLC),
           element: R.Z,
           notice: {
             stores: [y.Z],
@@ -155,10 +155,10 @@ class k extends Chunk647438.PureComponent {
         }, {
           section: u.ID.DIVIDER
         }, {
-          section: L.CoT.DELETE,
+          section: A.CoT.DELETE,
           onClick() {
             (0, T.w)(t, function() {
-              Z.S.subscribeOnce(L.CkL.LAYER_POP_COMPLETE, () => {
+              w.S.subscribeOnce(A.CkL.LAYER_POP_COMPLETE, () => {
                 (0, o.zz)(t.id)
               }), (0, c.xf)()
             })

@@ -91,7 +91,7 @@ let Q = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk388610.Z], () => {
     onSave() {
       if (null == module) return;
       let t = Chunk277053.Z.editedPermissionIds.reduce((e, t) => {
-        let n = Z.Z.getPermissionOverwrite(t);
+        let n = w.Z.getPermissionOverwrite(t);
         return null != n && e.push(n), e
       }, []);
       (0, Chunk741361.hw)(module.id, exports)
@@ -102,7 +102,7 @@ let Q = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk388610.Z], () => {
 function $(e) {
   let {
     overwrite: t
-  } = e, n = (0, o.e7)([Z.Z], () => Z.Z.channel), l = (0, o.e7)([I.Z], () => null != n ? I.Z.getGuild(n.getGuildId()) : null), r = (0, o.e7)([_.Z], () => null != l && null != t && t.type === x.BN.ROLE ? _.Z.getRole(l.id, t.id) : true), s = S.D.useExperiment({
+  } = e, n = (0, o.e7)([w.Z], () => w.Z.channel), l = (0, o.e7)([I.Z], () => null != n ? I.Z.getGuild(n.getGuildId()) : null), r = (0, o.e7)([_.Z], () => null != l && null != t && t.type === x.BN.ROLE ? _.Z.getRole(l.id, t.id) : true), s = S.D.useExperiment({
     guildId: null == n ? true : n.guild_id,
     location: "ChannelSettingsPermissions"
   }).enabled, c = N.N.useExperiment({
@@ -116,7 +116,7 @@ function $(e) {
   } = n, b = () => {
     var e;
     if (null == I.Z.getGuild(m)) return "";
-    let n = t.type === x.BN.MEMBER ? L.default.getUser(t.id) : true,
+    let n = t.type === x.BN.MEMBER ? A.default.getUser(t.id) : true,
       i = null != (e = null == n ? true : n.username) ? e : "";
     return null != r ? r.name : i
   }, j = (e, i) => {
@@ -141,7 +141,7 @@ function $(e) {
     else {
       let e;
       if (t.type === x.BN.MEMBER) {
-        let n = L.default.getUser(t.id);
+        let n = A.default.getUser(t.id);
         null != n && (e = H.ZP.getName(n))
       } else if (t.type === x.BN.ROLE) {
         let i = I.Z.getGuild(n.getGuildId());
@@ -155,9 +155,9 @@ function $(e) {
   }, v = e => {
     let t = P.Z.can(W.Plq.ADMINISTRATOR, l) || P.Z.can(W.Plq.MANAGE_ROLES, n, true, true, true);
     return n.isGuildStageVoice() && E.xS.has(e) ? F.intl.string(F.t.bTS5lZ) : !((!a.fS(e, W.Plq.MANAGE_ROLES) || t) && (null == e || P.Z.can(e, l) || t)) && F.intl.string(F.t.nOtPMD)
-  }, y = t.id === m, O = n.isForumLikeChannel() && a.e$(t.deny, W.Plq.SEND_MESSAGES), w = a.e$(t.deny, W.Plq.SEND_MESSAGES), T = a.e$(t.deny, W.Plq.READ_MESSAGE_HISTORY), R = B.Z.generateChannelPermissionSpec(m, n, y, {
+  }, y = t.id === m, O = n.isForumLikeChannel() && a.e$(t.deny, W.Plq.SEND_MESSAGES), Z = a.e$(t.deny, W.Plq.SEND_MESSAGES), T = a.e$(t.deny, W.Plq.READ_MESSAGE_HISTORY), R = B.Z.generateChannelPermissionSpec(m, n, y, {
     createPostsDisabled: O,
-    sendMessagesDisabled: w,
+    sendMessagesDisabled: Z,
     readMessageHistoryDisabled: T,
     inGameMentionsExperiment: c
   });
@@ -255,18 +255,18 @@ function K(e) {
           children: e.name
         })
       }
-      if (e instanceof w.Z) return (0, i.jsx)(Y, {
+      if (e instanceof Z.Z) return (0, i.jsx)(Y, {
         guildId: t.id,
         channelId: n.id,
         user: e
       })
     },
-    onFilterResults: (e, t) => 0 === t ? d.filter(t => null == l[t.id] && e(t.name)) : s()(u).map(L.default.getUser).filter(A.lm).filter(t => null == l[t.id] && e(t.username.toLowerCase())).sortBy(e => e.username.toLowerCase()).value(),
+    onFilterResults: (e, t) => 0 === t ? d.filter(t => null == l[t.id] && e(t.name)) : s()(u).map(A.default.getUser).filter(L.lm).filter(t => null == l[t.id] && e(t.username.toLowerCase())).sortBy(e => e.username.toLowerCase()).value(),
     onQueryChange: e => {
       M.Z.requestMembers(t.id, e, 20)
     },
     onSelect: e => {
-      null != e && (J(e) ? a(e.id, x.BN.ROLE) : e instanceof w.Z && a(e.id, x.BN.MEMBER))
+      null != e && (J(e) ? a(e.id, x.BN.ROLE) : e instanceof Z.Z && a(e.id, x.BN.MEMBER))
     },
     onClose: r,
     position: c
@@ -295,7 +295,7 @@ function ee() {
     N = (0, Chunk188857.Z)(Chunk144991, Chunk392711),
     S = (0, Chunk410030.ZP)(),
     E = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.roleStyle),
-    w = Chunk647438.useCallback((e, l) => {
+    Z = Chunk647438.useCallback((e, l) => {
       if (null == t) return null;
       (0, m.jW)(e, async () => {
         let {
@@ -356,14 +356,14 @@ function ee() {
       guild: b,
       color: e.colorString,
       "aria-label": e.name,
-      onContextMenu: t => w(t, {
+      onContextMenu: t => Z(t, {
         id: e.id,
         name: e.name,
         role: e
       }),
       children: e.name
     }, "".concat(a, "-").concat(e.id))),
-    L = s()(Chunk627050).sortBy(e => e.username.toLowerCase()).map(e => {
+    A = s()(Chunk627050).sortBy(e => e.username.toLowerCase()).map(e => {
       let t = e.getAvatarURL(b.id, 24);
       return (0, i.jsx)(p.Z, {
         id: e.id,
@@ -373,7 +373,7 @@ function ee() {
         "aria-label": H.ZP.getUserTag(e, {
           decoration: "never"
         }),
-        onContextMenu: t => w(t, {
+        onContextMenu: t => Z(t, {
           id: e.id,
           name: e.username
         }),

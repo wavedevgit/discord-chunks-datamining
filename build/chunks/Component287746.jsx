@@ -1,4 +1,4 @@
-/** Chunk was on 16820 **/
+/** Chunk was on 37384 **/
 /** chunk id: 287746, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => tt
@@ -782,7 +782,6 @@ class te extends Chunk647438.PureComponent {
                     children: Chunk752305
                   }), (0, Chunk951288.jsx)(Chunk738619.ZP, {
                     channel: require,
-                    poggermodeEnabled: Chunk857595,
                     isInTextChannel: true
                   })]
                 }), (0, Chunk951288.jsx)(Chunk549006.kw, {})]

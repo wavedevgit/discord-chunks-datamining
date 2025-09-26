@@ -1,21 +1,22 @@
 /** Chunk was on 88856 **/
 /** chunk id: 862065, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => u
+  default: () => d
 }), require("./388685.js"), require("./457542.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk625651 = require("./625651.jsx"),
   Chunk744993 = require("./744993.js"),
+  Chunk943970 = require("./943970.js"),
   Chunk440589 = require("./440589.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk593997 = require("./593997.js");
 
-function u(e) {
+function d(e) {
   var {
     guildId: t,
     gameInstance: n
-  } = e, u = function(e, t) {
+  } = e, d = function(e, t) {
     if (null == e) return {};
     var n, r, o = function(e, t) {
       if (null == e) return {};
@@ -30,7 +31,7 @@ function u(e) {
     }
     return o
   }(e, ["guildId", "gameInstance"]);
-  let [d, f] = o.useState(false), [m, b] = o.useState(true);
+  let [f, m] = o.useState(false), [b, p] = o.useState(true), g = (0, c.Z)(n.gameId, "cover");
   return (0, r.jsx)(a.f, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -52,25 +53,25 @@ function u(e) {
     size: "sm",
     title: n.name,
     body: (0, r.jsx)("div", {
-      className: l.imageContainer,
+      className: u.imageContainer,
       children: (0, r.jsx)("img", {
         alt: "",
-        src: "",
-        className: l.image
+        src: null != g ? g : "",
+        className: u.image
       })
     }),
-    warningText: s.intl.string(c.default.oHNuWl),
-    isLoading: d,
-    error: m,
+    warningText: l.intl.string(s.default.oHNuWl),
+    isLoading: f,
+    error: b,
     onDeactivate: () => {
-      b(true), f(true), (0, i.s9)(t, n.planId, n.entitlementId).then(() => {
-        u.onClose()
+      p(true), m(true), (0, i.s9)(t, n.planId, n.entitlementId).then(() => {
+        d.onClose()
       }).catch(e => {
         var t;
-        b(null != (t = e.body.message) ? t : e.message)
+        p(null != (t = e.body.message) ? t : e.message)
       }).finally(() => {
-        f(false)
+        m(false)
       })
     }
-  }, u))
+  }, d))
 }

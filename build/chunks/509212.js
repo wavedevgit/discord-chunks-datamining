@@ -1023,7 +1023,7 @@ function tk(e) {
 function tU(e, t) {
   let n = new Map;
   for (let [r, i] of e)
-    if (!eG(i)) {
+    if (!(eG(i) || eZ(i, M.S7.NON_GAMING_PLAY_QUEST))) {
       for (let e of tk(i))
         if (t.has(e)) {
           n.set(r, i);

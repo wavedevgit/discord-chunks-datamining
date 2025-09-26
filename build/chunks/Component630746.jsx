@@ -1,4 +1,4 @@
-/** Chunk was on 25710 **/
+/** Chunk was on 62266 **/
 /** chunk id: 630746, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   default: () => g
@@ -69,7 +69,7 @@ function p(e) {
           activeSlide: n,
           children: [(0, r.jsx)(i.Mi4, {
             id: c.Vb.SELECT_GAME,
-            children: (0, r.jsx)(l.Z, {})
+            children: (0, r.jsx)(a.Z, {})
           }, c.Vb.SELECT_GAME), (0, r.jsx)(i.Mi4, {
             id: c.Vb.SERVER_SETTINGS,
             children: (0, r.jsx)(o.Z, {})
@@ -88,8 +88,8 @@ function p(e) {
 function g(e) {
   let {
     analyticsLocations: n
-  } = (0, a.ZP)();
-  return (0, r.jsx)(a.Gt, {
+  } = (0, l.ZP)();
+  return (0, r.jsx)(l.Gt, {
     value: n,
     children: (0, r.jsx)(s.KO, m(u({}, e), {
       children: (0, r.jsx)(p, u({}, e))
