@@ -21,7 +21,7 @@ function _(e) {
     defaultCategory: f,
     onCategoryChange: h,
     className: m
-  } = e, [x, j] = i.useState(f), [g, b] = i.useState(null), L = (0, d.Z)(), y = i.useMemo(() => [{
+  } = e, [x, g] = i.useState(f), [j, b] = i.useState(null), L = (0, d.Z)(), y = i.useMemo(() => [{
     name: u.intl.string(u.t["6Zuiv7"]),
     value: C.KN.Trick,
     key: "Trick",
@@ -42,7 +42,7 @@ function _(e) {
     onMouseEnter: () => b(C.KN.Treat),
     onMouseLeave: () => b(null)
   }], []), v = i.useCallback(e => {
-    j(e.value), h(e.value)
+    g(e.value), h(e.value)
   }, [h]), S = null == L || null == (n = L.segmentedControlAnimations) || null == (t = n.trick) ? true : t.getAnimationData, O = null == L || null == (_ = L.segmentedControlAnimations) || null == (a = _.treat) ? true : a.getAnimationData;
   return (0, r.jsxs)("div", {
     className: o()(p.container, m),
@@ -50,7 +50,7 @@ function _(e) {
       options: y,
       value: x,
       onChange: v
-    }), g === C.KN.Trick && null != S && (0, r.jsx)("div", {
+    }), j === C.KN.Trick && null != S && (0, r.jsx)("div", {
       className: o()(p.animationOverlay, p.trickAnimation),
       children: (0, r.jsx)(l.F, {
         shouldAnimate: true,
@@ -59,9 +59,9 @@ function _(e) {
         className: p.lottieAnimation,
         importData: S,
         renderer: l.F.Renderers.SVG,
-        versionKey: +(g === C.KN.Trick)
+        versionKey: +(j === C.KN.Trick)
       })
-    }), g === C.KN.Treat && null != O && (0, r.jsx)("div", {
+    }), j === C.KN.Treat && null != O && (0, r.jsx)("div", {
       className: o()(p.animationOverlay, p.treatAnimation),
       children: (0, r.jsx)(l.F, {
         shouldAnimate: true,
@@ -70,7 +70,7 @@ function _(e) {
         className: p.lottieAnimation,
         importData: O,
         renderer: l.F.Renderers.SVG,
-        versionKey: +(g === C.KN.Treat)
+        versionKey: +(j === C.KN.Treat)
       })
     })]
   })

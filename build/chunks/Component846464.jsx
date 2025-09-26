@@ -1,7 +1,7 @@
 /** Chunk was on 84071 **/
 /** chunk id: 846464, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  q: () => g
+  q: () => j
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -22,7 +22,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk360026 = require("./360026.js");
 
-function g(e) {
+function j(e) {
   let {
     handleStepChange: t,
     handleClose: n,
@@ -32,8 +32,8 @@ function g(e) {
     activeSubscription: o,
     startedPaymentFlowWithPaymentSourcesRef: C,
     setSelectedPlanId: x,
-    priceOptions: j,
-    defaultPlanId: g
+    priceOptions: g,
+    defaultPlanId: j
   } = (0, p.JL)(), {
     isGift: L,
     claimableRewards: y
@@ -82,12 +82,12 @@ function g(e) {
       userTrialOffer: S,
       startedPaymentFlowWithPaymentSources: C.current,
       setSelectedPlanId: x,
-      defaultPlanId: g
+      defaultPlanId: j
     }),
     onClose: n,
     isGift: L,
     inOfferExperience: O,
-    priceOptions: j,
+    priceOptions: g,
     showPromotionalGiftBanner: v,
     enablePremiumBrandRefresh: E
   })
@@ -112,21 +112,22 @@ function b(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(o.xBx, {
       "data-migration-pending": true,
-      className: a()(j.skuSelectModalHeader, {
-        [j.premiumBrandRefreshHeader]: u
+      className: a()(g.skuSelectModalHeader, {
+        [g.premiumBrandRefreshHeader]: u
       }),
       separator: false,
       children: [p, (0, r.jsx)(o.olH, {
-        className: j.close,
-        innerClassName: j.closeInner,
+        "data-migration-pending": true,
+        className: g.close,
+        innerClassName: g.closeInner,
         onClick: n
       })]
     }), (0, r.jsx)(o.hzk, {
       "data-migration-pending": true,
-      className: a()(j.skuSelectModalContent, {
-        [j.modalSize]: !u,
-        [j.modalPadding]: l && !u,
-        [j.premiumBrandRefreshContent]: u
+      className: a()(g.skuSelectModalContent, {
+        [g.modalSize]: !u,
+        [g.modalPadding]: l && !u,
+        [g.premiumBrandRefreshContent]: u
       }),
       children: (0, r.jsx)(C.Z, {
         onSelectSku: e => t((0, c.Wz)(e)),

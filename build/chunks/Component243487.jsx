@@ -210,12 +210,12 @@ function z(e, t) {
     o = i.useMemo(() => new Map(a.map(e => [e.user.id, e])), [a]),
     l = (0, s.e7)([b.default], () => b.default.getId());
   return [o, (0, s.Wu)([T.Z, O.Z, v.Z, p.Z], () => {
-    let n = Array.from(a.map(e => {
+    let n = Array.from(new Set(a.map(e => {
       let {
         user: t
       } = e;
       return t.id
-    }));
+    })));
     if (t === j.Og || n.length <= t) return n;
     let r = new Map;
     for (let t of n) {

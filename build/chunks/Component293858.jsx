@@ -65,7 +65,7 @@ function v(e) {
     J = (0, d.Z)(),
     X = (0, C.a5)(M),
     Q = (0, C.tK)(null == Y ? true : Y.skuId),
-    $ = (0, g.$)(w, k),
+    $ = (0, j.$)(w, k),
     ee = F && null != Y && X;
   o()(null != M, "Expected plan to selected"), o()(null != T, "Expected selectedSkuId"), o()(null != A, "Step should be set");
   let et = i.useCallback(() => {
@@ -108,7 +108,7 @@ function v(e) {
   }), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(x.C3, {
       children: [(0, r.jsx)(b.Z, {}), t]
-    }), null != K && K, ee && null != Q && (0, r.jsx)(j.Z, {
+    }), null != K && K, ee && null != Q && (0, r.jsx)(g.Z, {
       onClose: et,
       selectedPromotionalDecoPurchaseRecord: Q,
       selectedGiftingPromotionReward: Y

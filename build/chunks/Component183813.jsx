@@ -105,13 +105,13 @@ function y(e) {
         category: T
       }, e.skuId)
     }),
-    K = (0, r.jsx)(j.O3, {
+    K = (0, r.jsx)(g.O3, {
       children: (0, r.jsx)(s.mzw, {
         "data-migration-pending": true,
         className: L.modalFooter,
         children: (0, r.jsx)(p.y, {
           onStepChange: e => {
-            null != k && null != I && f.default.track(g.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
+            null != k && null != I && f.default.track(j.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
               user_id: k.id,
               reward_sku_id: I.skuId
             }), a(e)

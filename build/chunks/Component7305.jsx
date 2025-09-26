@@ -69,7 +69,7 @@ function B(e) {
     initialPlanId: c,
     subscriptionTier: u,
     onClose: _,
-    trialId: j,
+    trialId: g,
     trialFooterMessageOverride: b,
     reviewWarningMessage: L,
     openInvoiceId: y,
@@ -100,7 +100,7 @@ function B(e) {
   } = (0, h.wD)(), z = H && (0, f.pO)(D) && U === x.h8.PLAN_SELECT;
   return (0, r.jsx)(S.Z, {
     isConfirmationStep: U === x.h8.CONFIRM && null == F && null == O,
-    children: (0, r.jsx)(g.PaymentModal, {
+    children: (0, r.jsx)(j.PaymentModal, {
       analyticsLocations: B,
       analyticsLocation: t,
       analyticsObject: n,
@@ -112,7 +112,7 @@ function B(e) {
       giftMessage: G,
       subscriptionTier: u,
       onClose: _,
-      trialId: j,
+      trialId: g,
       isGift: H,
       trialFooterMessageOverride: b,
       reviewWarningMessage: L,
@@ -176,7 +176,7 @@ function U(e) {
 }
 let H = [{
   key: null,
-  renderStep: e => (0, r.jsx)(g.I, R({}, e))
+  renderStep: e => (0, r.jsx)(j.I, R({}, e))
 }, {
   key: Chunk409813.h8.SKU_SELECT,
   renderStep: e => (0, r.jsx)(w.q, R({}, e)),
@@ -245,7 +245,7 @@ function G(e) {
       giftingOrigin: p,
       giftMessage: f,
       giftRecipient: x,
-      giftStyle: g,
+      giftStyle: j,
       isGift: b,
       loadId: L,
       paymentModalBanner: y,
@@ -264,7 +264,7 @@ function G(e) {
       defaultPlanId: null != n ? n : u,
       referralCode: v,
       wasTier2PremiumBeforePurchase: e.wasTier2PremiumBeforePurchase,
-      children: (0, r.jsx)(j.c1, {
+      children: (0, r.jsx)(g.c1, {
         confirmationFooter: l,
         maybeOpenMarketingMomentRewardsModal: o,
         paymentModalBanner: y,
@@ -272,7 +272,7 @@ function G(e) {
           isGift: b,
           giftRecipient: null == x ? true : x,
           giftMessage: f,
-          giftStyle: g,
+          giftStyle: j,
           giftingOrigin: p,
           children: (0, r.jsx)(B, R({}, e))
         })
