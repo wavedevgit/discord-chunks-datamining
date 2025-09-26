@@ -10,7 +10,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk626135 = require("./626135.js"),
   Chunk292352 = require("./292352.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk412297 = require("./412297.js"),
+  Chunk345909 = require("./345909.js"),
   Chunk388032 = require("./388032.jsx");
 
 function u(e, t, n) {
@@ -40,7 +40,7 @@ function f() {
     (0, Chunk481060.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([require.e("56970"), require.e("90688")]).then(require.bind(require, 978305));
+      } = await Promise.all([require.e("33888"), require.e("90688")]).then(require.bind(require, 978305));
       return t => (0, r.jsx)(e, d({}, t))
     }), Chunk626135.default.track(Chunk981631.rMx.FAMILY_CENTER_ACTION, {
       action: Chunk292352.YC.ShowQRCodeModal
@@ -49,7 +49,7 @@ function f() {
   return (0, Chunk951288.jsx)(Chunk481060.zxk, {
     icon: Chunk481060.IkH,
     variant: "primary",
-    text: Chunk388032.intl.string(Chunk412297.default.Ta9byc),
+    text: Chunk388032.intl.string(Chunk345909.default.Ta9byc),
     onClick: module
   })
 }

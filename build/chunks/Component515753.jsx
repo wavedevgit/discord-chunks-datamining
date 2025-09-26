@@ -59,7 +59,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk998502 = require("./998502.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk551139 = require("./551139.js");
+  Chunk800525 = require("./800525.js");
 
 function er(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -159,17 +159,17 @@ let ea = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chun
   ec = () => (0, Chunk951288.jsx)(Chunk481060.r7p, {
     size: "xs",
     color: "currentColor",
-    className: Chunk551139.favoriteIcon
+    className: Chunk800525.favoriteIcon
   }),
   eu = () => (0, Chunk951288.jsx)(Chunk481060.kZF, {
     size: "xs",
     color: "currentColor",
-    className: Chunk551139.favoriteIcon
+    className: Chunk800525.favoriteIcon
   }),
   ed = () => (0, Chunk951288.jsx)(Chunk481060.t6m, {
     size: "xs",
     color: "currentColor",
-    className: Chunk551139.favoriteIcon
+    className: Chunk800525.favoriteIcon
   }),
   ep = e => {
     var {
@@ -304,7 +304,7 @@ function ef(e) {
     }) : (0, y.jW)(e, async () => {
       let {
         default: e
-      } = i ? await Promise.all([n.e("90508"), n.e("56167")]).then(n.bind(n, 416951)) : await Promise.all([n.e("79695"), n.e("90508"), n.e("98783"), n.e("56826"), n.e("36084"), n.e("90477")]).then(n.bind(n, 131404));
+      } = i ? await Promise.all([n.e("90508"), n.e("56167")]).then(n.bind(n, 416951)) : await Promise.all([n.e("79695"), n.e("90508"), n.e("98783"), n.e("56826"), n.e("36084"), n.e("92998")]).then(n.bind(n, 131404));
       return n => (0, r.jsx)(e, el(er({}, n), {
         user: p,
         channel: t,

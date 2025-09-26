@@ -1,4 +1,4 @@
-/** Chunk was on 27087 **/
+/** Chunk was on 49236 **/
 /** chunk id: 29605, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   o = require.n(Chunk512722),
   Chunk392711 = require("./392711.js"),
   d = require.n(Chunk392711),
-  Chunk6383 = require("./6383.js"),
+  Chunk786920 = require("./786920.js"),
   Chunk772848 = require("./772848.js"),
   Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
@@ -47,8 +47,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk185923 = require("./185923.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk52116 = require("./52116.js"),
-  Chunk504401 = require("./504401.js");
+  Chunk878341 = require("./878341.js"),
+  Chunk620842 = require("./620842.js");
 
 function W(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -332,10 +332,10 @@ let Y = d().throttle(Chunk80932.OQ, 1e3),
   ee = () => (0, Chunk951288.jsxs)("div", {
     children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
       tag: Chunk481060.RB0.H2,
-      className: Chunk52116.emojiUploadUploadRequirementsHeading,
+      className: Chunk878341.emojiUploadUploadRequirementsHeading,
       children: Chunk388032.intl.string(Chunk388032.t.jrXfy8)
     }), (0, Chunk951288.jsxs)("ul", {
-      className: Chunk52116.emojiUploadUploadRequirementsList,
+      className: Chunk878341.emojiUploadUploadRequirementsList,
       children: [(0, Chunk951288.jsx)("li", {
         children: (0, Chunk951288.jsx)(Chunk481060.R94, {
           type: Chunk481060.geA.DESCRIPTION,
@@ -379,7 +379,7 @@ let Y = d().throttle(Chunk80932.OQ, 1e3),
         emojis: Chunk471613.Z.getEmojis(exports.id),
         autoOpen: Chunk471613.Z.getEmojiFileInputAutoOpen()
       })),
-      x = (0, Chunk110924.Z)(Chunk6383),
+      x = (0, Chunk110924.Z)(Chunk786920),
       [j, S] = Chunk647438.useState(false),
       [D, Z] = Chunk647438.useState(false),
       A = Chunk647438.useRef(null),
@@ -414,8 +414,8 @@ let Y = d().throttle(Chunk80932.OQ, 1e3),
     }, [Chunk80932, er]), Chunk647438.useEffect(() => {
       Y(exports.id)
     }, [exports.id]), Chunk647438.useEffect(() => {
-      null != Chunk225433 && Chunk225433 < Chunk6383 && Y(exports.id)
-    }, [Chunk6383, Chunk225433, exports.id]), Chunk647438.useEffect(() => {
+      null != Chunk225433 && Chunk225433 < Chunk786920 && Y(exports.id)
+    }, [Chunk786920, Chunk225433, exports.id]), Chunk647438.useEffect(() => {
       if (null != Chunk668781 && null == et) return void en(Chunk668781)
     }, [Chunk668781, et]);
     let ei = Chunk647438.useMemo(() => J.isEmojiEditingExperimentEnabled && null != et ? new Set(d().differenceBy(Chunk668781, et, "id").map(e => e.id)) : new Set, [J.isEmojiEditingExperimentEnabled, Chunk668781, et]),
@@ -477,9 +477,9 @@ let Y = d().throttle(Chunk80932.OQ, 1e3),
         emoji: e
       }) : true;
     return (0, Chunk951288.jsxs)("div", {
-      className: Chunk52116.emojiSettings,
+      className: Chunk878341.emojiSettings,
       children: [0 === Chunk185923 ? null : (0, Chunk951288.jsx)(Chunk327802.Z, {
-        className: Chunk52116.emojiUploadContainer,
+        className: Chunk878341.emojiUploadContainer,
         onDrop: ec
       }), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
         tag: Chunk481060.RB0.H1,
@@ -489,7 +489,7 @@ let Y = d().throttle(Chunk80932.OQ, 1e3),
           staticEmojiCount: K,
           animatedEmojiCount: Q
         }), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
-          className: Chunk52116.uploader,
+          className: Chunk878341.uploader,
           children: [(0, Chunk951288.jsx)(Chunk481060.R94, {
             type: Chunk481060.geA.DESCRIPTION,
             children: Chunk388032.intl.format(Chunk388032.t.TA1BR0, {
@@ -539,7 +539,7 @@ let Y = d().throttle(Chunk80932.OQ, 1e3),
           })]
         }), (0, Chunk951288.jsx)(X, {
           isLoading: null == Chunk668781,
-          staticEmoji: Chunk504401,
+          staticEmoji: Chunk620842,
           animatedEmoji: q,
           guild: exports,
           theme: Chunk512722,

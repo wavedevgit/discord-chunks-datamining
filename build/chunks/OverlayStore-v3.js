@@ -655,7 +655,7 @@ function e3(e) {
 let e4 = 3e3,
   e8 = 100;
 
-function e6(e) {
+function e5(e) {
   let {
     enabled: t
   } = e;
@@ -675,7 +675,7 @@ function e6(e) {
   } else clearInterval(en), en = null
 }
 
-function e5(e) {
+function e6(e) {
   let {
     enabled: t
   } = e;
@@ -789,8 +789,8 @@ let e9 = new e7(Chunk570140.Z, __OVERLAY__ ? {} : {
     OVERLAY_SET_GPU_BOOST_REQUESTED: eW,
     OVERLAY_CRASHED: eY,
     OVERLAY_FOCUSED: ex,
-    OVERLAY_SET_MODULE_LOGGING: e6,
-    OVERLAY_SET_STATE_DEBUGGING: e5,
+    OVERLAY_SET_MODULE_LOGGING: e5,
+    OVERLAY_SET_STATE_DEBUGGING: e6,
     OVERLAY_OOP_UI_INITIALIZED: eM,
     OVERLAY_OOP_UI_SHOW_INACTIVE_SUCCESS: ej,
     OVERLAY_OOP_POPOUT_INITIALIZATION_STAGE_CHANGED: ek

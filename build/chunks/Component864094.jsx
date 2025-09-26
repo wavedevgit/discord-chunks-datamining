@@ -86,7 +86,7 @@ let u = {
         t.current.stopIfPlaying(n)
       }, [e]),
       _ = i.useCallback(e => (0, r.jsx)(a.L, c(s({}, e), {
-        src: () => n.e("59682").then(n.t.bind(n, 126683, 19)),
+        src: () => n.e("59682").then(n.t.bind(n, 642548, 19)),
         ref: t,
         initialAnimation: o.current,
         markers: u

@@ -1,9 +1,9 @@
-/** Chunk was on 96631 **/
+/** Chunk was on 73323 **/
 /** chunk id: 660384, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => a
 });
-var Chunk6383 = require("./6383.js");
+var Chunk786920 = require("./786920.js");
 class a {
   handleScroll(e) {
     this.top.set(e.currentTarget.scrollTop)
@@ -19,6 +19,6 @@ class a {
         configurable: true,
         writable: true
       }) : e[t] = n
-    }(this, "top", new Chunk6383.SpringValue(0))
+    }(this, "top", new Chunk786920.SpringValue(0))
   }
 }

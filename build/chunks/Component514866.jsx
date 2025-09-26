@@ -1,4 +1,4 @@
-/** Chunk was on 35078 **/
+/** Chunk was on 11222 **/
 /** chunk id: 514866, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => v
@@ -17,10 +17,10 @@ var Chunk120356 = require("./120356.js"),
   Chunk695346 = require("./695346.js"),
   Chunk306052 = require("./306052.jsx"),
   Chunk594174 = require("./594174.js"),
-  Chunk103088 = require("./103088.js"),
-  Chunk10198 = require("./10198.js");
+  Chunk517269 = require("./517269.js"),
+  Chunk197571 = require("./197571.js");
 let g = () => {
-  Promise.all([require.e("52030"), require.e("91403")]).then(require.bind(require, 24031)).then(e => {
+  Promise.all([require.e("52030"), require.e("1286")]).then(require.bind(require, 24031)).then(e => {
     let {
       openMFAModal: t
     } = e;
@@ -47,19 +47,19 @@ function v() {
     n = Chunk695346.Rt.useSetting();
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsx)("div", {
-      className: i()(Chunk103088.buttonsContainer, Chunk10198.marginBottom20),
+      className: i()(Chunk517269.buttonsContainer, Chunk197571.marginBottom20),
       children: (0, Chunk951288.jsx)(Chunk306052.g, {
         isDevTools: true
       })
     }), (0, Chunk951288.jsx)("div", {
-      className: i()(Chunk103088.buttonsContainer, Chunk10198.marginBottom20),
+      className: i()(Chunk517269.buttonsContainer, Chunk197571.marginBottom20),
       children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
         variant: "primary",
         text: "Launch MFA",
         onClick: g
       })
     }), (0, Chunk951288.jsx)("div", {
-      className: i()(Chunk103088.buttonsContainer, Chunk10198.marginBottom20),
+      className: i()(Chunk517269.buttonsContainer, Chunk197571.marginBottom20),
       children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
         variant: "primary",
         text: "Launch Vibing Wumpus",
@@ -67,21 +67,21 @@ function v() {
       })
     }), exports && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsx)("div", {
-        className: i()(Chunk103088.buttonsContainer, Chunk10198.marginBottom20),
+        className: i()(Chunk517269.buttonsContainer, Chunk197571.marginBottom20),
         children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Launch Captcha Test Tool",
           onClick: () => (0, Chunk110478.N)()
         })
       }), (0, Chunk951288.jsx)("div", {
-        className: i()(Chunk103088.buttonsContainer, Chunk10198.marginBottom20),
+        className: i()(Chunk517269.buttonsContainer, Chunk197571.marginBottom20),
         children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Launch Age Verification Test Tool",
           onClick: () => (0, Chunk963886.E)()
         })
       }), (0, Chunk951288.jsx)("div", {
-        className: i()(Chunk103088.buttonsContainer, Chunk10198.marginBottom20),
+        className: i()(Chunk517269.buttonsContainer, Chunk197571.marginBottom20),
         children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Launch Age Verification Modal",
@@ -90,14 +90,14 @@ function v() {
           })
         })
       }), (0, Chunk951288.jsx)("div", {
-        className: i()(Chunk103088.buttonsContainer, Chunk10198.marginBottom20),
+        className: i()(Chunk517269.buttonsContainer, Chunk197571.marginBottom20),
         children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Force libdiscore Crash",
           onClick: Chunk668757.$R
         })
       }), (0, Chunk951288.jsx)("div", {
-        className: i()(Chunk103088.buttonsContainer, Chunk10198.marginBottom20),
+        className: i()(Chunk517269.buttonsContainer, Chunk197571.marginBottom20),
         children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
           value: require,
           onChange: e => p.Rt.updateSetting(e),

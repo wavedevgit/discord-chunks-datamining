@@ -1,4 +1,4 @@
-/** Chunk was on 37384 **/
+/** Chunk was on 32202 **/
 /** chunk id: 420529, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -79,7 +79,7 @@ function y(e) {
         t.type === f.ABu.XBOX ? (0, l.ZDy)(async () => {
           let {
             default: t
-          } = await Promise.all([n.e("56970"), n.e("522")]).then(n.bind(n, 200623));
+          } = await Promise.all([n.e("33888"), n.e("522")]).then(n.bind(n, 200623));
           return n => (0, r.jsx)(t, b(g({}, n), {
             channel: e
           }))

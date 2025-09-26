@@ -1481,7 +1481,7 @@ function e8(e) {
   }
 }
 
-function e6(e) {
+function e5(e) {
   switch (e) {
     case R.p9.TIER_0:
       return N.Rj.PREMIUM_TIER_0;
@@ -1492,7 +1492,7 @@ function e6(e) {
   }
 }
 
-function e5(e) {
+function e6(e) {
   return (0, f.ks)(f.g_, e)
 }
 
@@ -1716,11 +1716,11 @@ let tk = Object.freeze({
   getPremiumSkuIdForSubscription: e3,
   getPremiumTypeFromSubscription: e4,
   getPremiumTypeFromSubscriptionRenewalMutations: e8,
-  getPremiumGradientColor: e6,
+  getPremiumGradientColor: e5,
   getUnactivatedFractionalPremiumHours: tL,
   castPremiumSubscriptionAsSkuId: tI,
   calculateDiscountPercentageForYearlyPlan: tM,
-  canUseAnimatedEmojis: e5,
+  canUseAnimatedEmojis: e6,
   canUseEmojisEverywhere: e7,
   canUseSoundboardEverywhere: e9,
   canUseCustomCallSounds: te,

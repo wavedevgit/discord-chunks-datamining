@@ -39,7 +39,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk950796 = require("./950796.jsx"),
   Chunk176505 = require("./176505.js"),
   Chunk741764 = require("./741764.js"),
-  Chunk851352 = require("./851352.js");
+  Chunk82504 = require("./82504.js");
 let U = (0, Chunk879690.U)(() => ({
   isOpen: true
 }));
@@ -136,8 +136,8 @@ let V = Chunk647438.memo(function() {
       showRecentsButton: Chunk165017
     });
   if (Chunk944486) return null;
-  let L = a()(Chunk851352.button, {
-    [Chunk851352.smallButton]: "sm" === Chunk257966
+  let L = a()(Chunk82504.button, {
+    [Chunk82504.smallButton]: "sm" === Chunk257966
   });
   return (0, Chunk951288.jsx)(Chunk481060.Wdt, {
     children: e => (0, r.jsx)(c.f6W, {

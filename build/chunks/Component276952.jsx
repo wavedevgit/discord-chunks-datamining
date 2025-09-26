@@ -8,9 +8,9 @@ var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
-  Chunk6383 = require("./6383.js"),
+  Chunk786920 = require("./786920.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk434271 = require("./434271.js");
+  Chunk82364 = require("./82364.js");
 let c = Object.freeze({
     tension: 400,
     friction: 30

@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk115530 = require("./115530.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk934537 = require("./934537.js");
+  Chunk79822 = require("./79822.js");
 
 function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -94,10 +94,10 @@ class v extends Chunk647438.PureComponent {
   }
   render() {
     return (0, Chunk951288.jsxs)("div", {
-      className: Chunk934537.listeningAlong,
+      className: Chunk79822.listeningAlong,
       children: [this.renderTitle(), (0, Chunk951288.jsx)(Chunk600164.Z, {
         justify: Chunk600164.Z.Justify.END,
-        className: Chunk934537.party,
+        className: Chunk79822.party,
         children: (0, Chunk951288.jsx)(Chunk237583.Z, {
           users: this.props.party,
           max: this.isHost() ? 5 : 4,
@@ -105,7 +105,7 @@ class v extends Chunk647438.PureComponent {
           renderMoreUsers: this.renderPartyMemberOverflow
         })
       }), (0, Chunk951288.jsxs)("div", {
-        className: Chunk934537.icons,
+        className: Chunk79822.icons,
         children: [this.renderHelpIcon(), this.renderStopListeningButton()]
       })]
     })

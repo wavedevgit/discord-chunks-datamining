@@ -9,7 +9,7 @@ var Chunk951288 = require("./951288.js"),
   s = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
   a = require.n(Chunk512722),
-  Chunk6383 = require("./6383.js"),
+  Chunk786920 = require("./786920.js"),
   Chunk209739 = require("./209739.js"),
   u = require.n(Chunk209739),
   Chunk442837 = require("./442837.js"),
@@ -56,7 +56,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk921944 = require("./921944.js"),
   Chunk761274 = require("./761274.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk79985 = require("./79985.js"),
+  Chunk542257 = require("./542257.js"),
   Chunk402163 = require("./402163.js");
 
 function ei(e) {
@@ -228,7 +228,7 @@ function eo(e) {
       (0, W.t)(), (0, W.T)(null != e ? e : e$)
     }, [e$]);
 
-  function e8(e) {
+  function e4(e) {
     if (e.preventDefault(), 1 === eP) return e3();
     if (2 === eP) return eT(3);
     if (null != e$) return eT(1);
@@ -247,7 +247,7 @@ function eo(e) {
       })
     } else e2()
   }
-  let e4 = i.useCallback(e => {
+  let e8 = i.useCallback(e => {
       eD(e), null != e && (eC && (null == e ? true : e.id.startsWith("camera:")) !== true ? e1(e.id.split(":")[1]) : e1(true), eT(3), eR(true))
     }, [eC]),
     e7 = i.useCallback(e => {
@@ -379,7 +379,7 @@ function eo(e) {
         children: () => {
           var e;
           return (0, r.jsxs)("form", {
-            onSubmit: e8,
+            onSubmit: e4,
             ref: eh,
             children: [(0, r.jsxs)(h.MyZ, {
               springConfig: el(ei({}, c.config.stiff), {
@@ -400,10 +400,10 @@ function eo(e) {
                 children: (0, r.jsx)("div", {
                   className: en.modalSize,
                   children: eC ? (0, r.jsx)(Y.se, {
-                    onSourceSelect: e4
+                    onSourceSelect: e8
                   }) : (0, r.jsx)(Y.oA, {
                     selectedSource: eM,
-                    onChangeSelectedSource: e4
+                    onChangeSelectedSource: e8
                   })
                 })
               }), (0, r.jsx)(h.Mi4, {
@@ -424,7 +424,7 @@ function eo(e) {
                     onChangeSelectedResolution: e => e5(eG, e, eF),
                     onChangeSelectedPreset: e => e5(e, eW, eF),
                     onChangeSelectedChannelId: ek,
-                    onChangeSelectedSource: e4,
+                    onChangeSelectedSource: e8,
                     onChangeSource: () => tt(),
                     onChangeAudioDevice: e => eB(e),
                     onChangeGuild: () => eT(0),

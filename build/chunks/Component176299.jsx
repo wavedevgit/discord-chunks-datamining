@@ -86,7 +86,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk215023 = require("./215023.js"),
   Chunk290511 = require("./290511.js"),
   Chunk186901 = require("./186901.js"),
-  Chunk861218 = require("./861218.js");
+  Chunk981028 = require("./981028.js");
 
 function ew(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -111,7 +111,7 @@ let eL = (0, Chunk608787.Un)({
     webpackId: 267161
   }),
   eR = () => (0, Chunk951288.jsx)("div", {
-    className: Chunk861218.loader,
+    className: Chunk981028.loader,
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {})
   }),
   eD = (0, Chunk608787.Un)({
@@ -595,14 +595,14 @@ function te() {
     v = (0, Chunk442837.e7)([Chunk358221.Z], () => Chunk358221.Z.isFullscreenInContext()),
     C = (0, Chunk442837.e7)([Chunk591472.Z], () => Chunk591472.Z.isFrameActive());
   return (0, Chunk951288.jsx)("div", {
-    className: Chunk861218.container,
+    className: Chunk981028.container,
     children: (0, Chunk951288.jsx)(Chunk372900.Z.Provider, {
       value: (null == Chunk904245 ? true : Chunk904245.params.guildId) === Chunk981631.ME || null == Chunk904245 ? true : Chunk904245.params.guildId,
       children: (0, Chunk951288.jsxs)("div", {
-        className: Chunk861218.base,
+        className: Chunk981028.base,
         "data-fullscreen": Chunk244317,
         children: [!Chunk244317 && (0, Chunk951288.jsx)(eL, {}), Chunk873546.tq ? null : (0, Chunk951288.jsx)(Chunk256638.Z, {}), (0, Chunk951288.jsxs)("div", {
-          className: Chunk861218.content,
+          className: Chunk981028.content,
           children: [(0, Chunk951288.jsx)(Chunk626421.Z, {}), (0, Chunk951288.jsx)(e9, {
             isOnFullScreenCollectiblesShopRoute: Chunk608787,
             isSidebarOpen: Chunk433517,
@@ -611,7 +611,7 @@ function te() {
             hideChannelList: Chunk711237,
             hideSidebar: !Chunk433517 || Chunk608787
           }), (0, Chunk951288.jsx)("div", {
-            className: Chunk861218.page,
+            className: Chunk981028.page,
             "data-collapsed": !!Chunk347469 && Chunk169382,
             children: (0, Chunk951288.jsxs)(Chunk290297.Z.Provider, {
               value: Chunk532835,

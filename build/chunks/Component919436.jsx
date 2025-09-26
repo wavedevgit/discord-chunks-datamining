@@ -1,11 +1,11 @@
-/** Chunk was on 69310 **/
+/** Chunk was on 51727 **/
 /** chunk id: 919436, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => D
 }), require("./415506.js"), require("./388685.js");
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk6383 = require("./6383.js"),
+  Chunk786920 = require("./786920.js"),
   Chunk91192 = require("./91192.jsx"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -27,7 +27,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk674552 = require("./674552.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk117000 = require("./117000.js");
+  Chunk514483 = require("./514483.js");
 
 function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -187,14 +187,14 @@ class R extends(r = Chunk647438.PureComponent) {
         "aria-hidden": true
       }) : true
     }, Chunk933557));
-    return (0, Chunk951288.jsx)(Chunk6383.animated.div, {
+    return (0, Chunk951288.jsx)(Chunk786920.animated.div, {
       style: this.getAnimatedStyle(),
       children: (0, Chunk951288.jsxs)(Chunk682662.H, {
         children: [(0, Chunk951288.jsx)(Chunk276952.Z, {
           hovered: !Chunk199902 && Chunk93687,
           selected: !Chunk199902 && require,
           unread: !Chunk199902 && Chunk358221,
-          className: Chunk117000.pill
+          className: Chunk514483.pill
         }), (0, Chunk951288.jsx)(Chunk662146.Z, {
           text: null != exports ? exports : "",
           selected: require,
@@ -234,7 +234,7 @@ class R extends(r = Chunk647438.PureComponent) {
       null != r ? (0, u.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("79695"), n.e("98783"), n.e("56826"), n.e("55599")]).then(n.bind(n, 131404));
+        } = await Promise.all([n.e("79695"), n.e("98783"), n.e("56826"), n.e("31899")]).then(n.bind(n, 131404));
         return n => (0, i.jsx)(e, Z(w({}, n), {
           channel: t,
           user: r

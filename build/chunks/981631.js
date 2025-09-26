@@ -56,12 +56,12 @@ require.d(exports, {
   GU0: () => eh,
   GZQ: () => Chunk231338.GZ,
   H0J: () => Chunk231338.H0,
-  HGf: () => n6,
+  HGf: () => n5,
   HN8: () => eF,
   HeQ: () => Chunk231338.He,
   Hqc: () => nS,
   IE4: () => F,
-  IIU: () => e5,
+  IIU: () => e6,
   IWh: () => rR,
   IXf: () => te,
   I_8: () => eg,
@@ -97,7 +97,7 @@ require.d(exports, {
   O0b: () => n_,
   O0n: () => es,
   O42: () => Chunk334431.O4,
-  O8q: () => n5,
+  O8q: () => n6,
   OBS: () => K,
   OBo: () => nf,
   OGo: () => ef,
@@ -112,7 +112,7 @@ require.d(exports, {
   POd: () => r_,
   PRK: () => e0,
   PUi: () => nU,
-  Pbq: () => t5,
+  Pbq: () => t6,
   Plq: () => Chunk231338.Pl,
   PrB: () => L,
   PrS: () => tE,
@@ -167,7 +167,7 @@ require.d(exports, {
   VqG: () => Chunk231338.Vq,
   Vzj: () => Chunk231338.Vz,
   WND: () => nu,
-  WtW: () => e6,
+  WtW: () => e5,
   Wyy: () => ne,
   X5t: () => Chunk231338.X5,
   X6Q: () => Chunk231338.X6,
@@ -269,7 +269,7 @@ require.d(exports, {
   oNc: () => G,
   o_z: () => eb,
   p3w: () => tm,
-  p6O: () => t6,
+  p6O: () => t5,
   pAY: () => th,
   pJs: () => w,
   pKx: () => Chunk231338.pK,
@@ -1492,10 +1492,10 @@ let ew = 100,
 var e8 = function(e) {
     return e.MESSAGE = "MESSAGE", e.MESSAGE_GROUP_BLOCKED = "MESSAGE_GROUP_BLOCKED", e.MESSAGE_GROUP_IGNORED = "MESSAGE_GROUP_IGNORED", e.MESSAGE_GROUP_SPAMMER = "MESSAGE_GROUP_SPAMMER", e.THREAD_STARTER_MESSAGE = "THREAD_STARTER_MESSAGE", e.DIVIDER = "DIVIDER", e.JUMP_TARGET = "JUMP_TARGET", e.FORUM_POST_ACTION_BAR = "FORUM_POST_ACTION_BAR", e.MESSAGE_GROUP = "MESSAGE_GROUP", e.DIVIDER_TIME_STAMP = "DIVIDER_TIME_STAMP", e.DIVIDER_NEW_MESSAGES = "DIVIDER_NEW_MESSAGES", e
   }({}),
-  e6 = function(e) {
+  e5 = function(e) {
     return e.VIDEO = "video", e.VOICE = "voice", e
   }({}),
-  e5 = function(e) {
+  e6 = function(e) {
     return e[e.PLAYING = 0] = "PLAYING", e[e.STREAMING = 1] = "STREAMING", e[e.LISTENING = 2] = "LISTENING", e[e.WATCHING = 3] = "WATCHING", e[e.CUSTOM_STATUS = 4] = "CUSTOM_STATUS", e[e.COMPETING = 5] = "COMPETING", e[e.HANG_STATUS = 6] = "HANG_STATUS", e
   }({}),
   e7 = function(e) {
@@ -1767,8 +1767,8 @@ let t2 = Object.freeze({
     IOS: "https://itunes.apple.com/app/discord/id985746746",
     ANDROID: "https://play.google.com/store/apps/details?id=com.discord"
   }),
-  t6 = 0x99aab5,
-  t5 = (0, Chunk866442.Rf)(t6),
+  t5 = 0x99aab5,
+  t6 = (0, Chunk866442.Rf)(t5),
   t7 = [1752220, 3066993, 3447003, 0x9b59b6, 0xe91e63, 0xf1c40f, 0xe67e22, 0xe74c3c, 9807270, 6323595, 1146986, 2067276, 2123412, 7419530, 0xad1457, 0xc27c0e, 0xa84300, 0x992d22, 9936031, 5533306],
   t9 = (0, Chunk866442._i)(Chunk674746.Z.BRAND_500);
 i()(null != t9, "Brand color could not be parsed");
@@ -2049,8 +2049,8 @@ var n4 = function(e) {
   n8 = function(e) {
     return e[e.MUTUAL_FRIENDS = 2] = "MUTUAL_FRIENDS", e[e.MUTUAL_GUILDS = 4] = "MUTUAL_GUILDS", e[e.NO_RELATION = 8] = "NO_RELATION", e
   }({});
-let n6 = 14,
-  n5 = 6,
+let n5 = 14,
+  n6 = 6,
   n7 = 30;
 var n9 = function(e) {
   return e.OVERLAY = "OVERLAY", e.APP = "APP", e.POPOUT = "POPOUT", e
