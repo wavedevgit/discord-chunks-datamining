@@ -1,7 +1,7 @@
 /** Chunk was on 76418 **/
-/** chunk id: 434717, original params: e,t,n (module,exports,require) **/
+/** chunk id: 434717, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => N
+  Z: () => j
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,67 +22,67 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk985952 = require("./985952.js");
 
-function N(e) {
+function j(e) {
   let {
-    quest: t,
-    sourceQuestContent: n
-  } = e, N = (0, o.ZP)(), b = (0, s.wjy)(N) ? _.BR.DARK : _.BR.LIGHT, v = (0, m.ly)(t), y = (0, d.aM)(), T = r.useMemo(() => {
-    let e = g.r.build(t.config),
-      n = e.defaultWatchVideoTask,
-      a = null == n ? true : n.messages.videoEndCtaSubtitle;
-    return (0, l.Ew)(a) ? e.questType !== i.W.GAMEPLAY || t.config.features.includes(f.S7.NON_GAMING_PLAY_QUEST) || (0, u.Pb)(t) ? x.intl.string(x.t.y8Xf3t) : x.intl.string(x.t.wirwNz) : a
-  }, [t]);
+    quest: n,
+    sourceQuestContent: t
+  } = e, j = (0, o.ZP)(), N = (0, s.wjy)(j) ? _.BR.DARK : _.BR.LIGHT, y = (0, m.ly)(n), T = (0, d.aM)(), b = r.useMemo(() => {
+    let e = f.r.build(n.config),
+      t = e.defaultWatchVideoTask,
+      a = null == t ? true : t.messages.videoEndCtaSubtitle;
+    return (0, l.Ew)(a) ? e.questType !== i.W.GAMEPLAY || n.config.features.includes(x.S7.NON_GAMING_PLAY_QUEST) || (0, u.Pb)(n) ? g.intl.string(g.t.y8Xf3t) : g.intl.string(g.t.wirwNz) : a
+  }, [n]);
   return (0, a.jsxs)("div", {
-    className: j.container,
+    className: v.container,
     children: [(0, a.jsx)(h.Z, {
-      quest: t,
+      quest: n,
       dimensions: {
         width: 908,
         height: 380
       },
-      className: j.heroDisplayContainer
+      className: v.heroDisplayContainer
     }), (0, a.jsx)("div", {
-      className: j.partnerLogotypeContainer,
+      className: v.partnerLogotypeContainer,
       children: (0, a.jsx)("img", {
-        className: j.partnerLogotype,
-        alt: x.intl.formatToPlainString(x.t.rtm15O, {
-          name: t.config.messages.gameTitle
+        className: v.partnerLogotype,
+        alt: g.intl.formatToPlainString(g.t.rtm15O, {
+          name: n.config.messages.gameTitle
         }),
-        src: (0, C.fh)(t, C.eC.LOGO_TYPE, b).url
+        src: (0, C.fh)(n, C.eC.LOGO_TYPE, N).url
       })
     }), (0, a.jsxs)("div", {
-      className: j.partnerContentContainer,
+      className: v.partnerContentContainer,
       children: [(0, a.jsxs)("div", {
-        className: j.partnerCopyContainer,
+        className: v.partnerCopyContainer,
         children: [(0, a.jsx)(s.X6q, {
           variant: "heading-lg/bold",
           color: "header-primary",
-          className: j.partnerTitle,
-          children: t.config.messages.questName
+          className: v.partnerTitle,
+          children: n.config.messages.questName
         }), (0, a.jsx)(s.xvT, {
           variant: "text-sm/medium",
           color: "text-secondary",
-          children: T
+          children: b
         })]
       }), (0, a.jsx)("img", {
-        className: j.partnerGameTile,
-        alt: x.intl.formatToPlainString(x.t.rtm15O, {
-          name: t.config.messages.gameTitle
+        className: v.partnerGameTile,
+        alt: g.intl.formatToPlainString(g.t.rtm15O, {
+          name: n.config.messages.gameTitle
         }),
-        src: (0, C.fh)(t, C.eC.GAME_TILE, b).url
+        src: (0, C.fh)(n, C.eC.GAME_TILE, N).url
       })]
     }), (0, a.jsx)("div", {
-      className: j.partnerCtaContainer,
+      className: v.partnerCtaContainer,
       children: (0, a.jsx)(s.zxk, {
         variant: "primary",
         size: "sm",
-        text: v,
+        text: y,
         onClick: () => {
-          (0, u.nc)(t, {
+          (0, u.nc)(n, {
             content: p.jn.REWARD_MODAL,
             ctaContent: c.jZ.OPEN_GAME_LINK,
-            impressionId: y,
-            sourceQuestContent: n
+            impressionId: T,
+            sourceQuestContent: t
           })
         },
         fullWidth: true,

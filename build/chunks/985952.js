@@ -1,5 +1,5 @@
 /** Chunk was on 76418 **/
-/** chunk id: 985952, original params: e,t,n (module,exports,require) **/
+/** chunk id: 985952, original params: e,n,t (module,exports,require) **/
 module.exports = {
   container: "container__7eb2b",
   heroDisplayContainer: "heroDisplayContainer__7eb2b",

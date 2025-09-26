@@ -1,5 +1,5 @@
 /** Chunk was on 76418 **/
-/** chunk id: 515108, original params: e,t,n (module,exports,require) **/
+/** chunk id: 515108, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => c
 });
@@ -13,16 +13,16 @@ var Chunk481060 = require("./481060.js"),
 
 function c(e) {
   let {
-    quest: t,
-    sourceQuestContent: n,
+    quest: n,
+    sourceQuestContent: t,
     transitionState: c,
     onClose: d,
     rewardContent: u
   } = e, m = i.jn.REWARD_MODAL;
   return (0, a.jsx)(s.A, {
-    questOrQuests: t,
+    questOrQuests: n,
     questContent: m,
-    sourceQuestContent: n,
+    sourceQuestContent: t,
     children: e => (0, a.jsx)("div", {
       ref: e,
       children: (0, a.jsxs)(r.Y0X, {
@@ -44,8 +44,8 @@ function c(e) {
           }), (0, a.jsx)("div", {
             className: l.rightPanel,
             children: (0, a.jsx)(o.Z, {
-              quest: t,
-              sourceQuestContent: n
+              quest: n,
+              sourceQuestContent: t
             })
           })]
         })]

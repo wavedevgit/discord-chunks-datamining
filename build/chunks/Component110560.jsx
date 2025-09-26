@@ -147,10 +147,11 @@ function H(e, t, i) {
   (0, s.ZDy)(async () => {
     if ((0, C.i)("openQuestInGameRewardModal")) {
       let {
-        default: t
+        default: a
       } = await n.e("76418").then(n.bind(n, 34251));
-      return n => (0, r.jsx)(t, G(k({}, n), {
+      return n => (0, r.jsx)(a, G(k({}, n), {
         quest: e,
+        location: t,
         sourceQuestContent: i
       }))
     }
