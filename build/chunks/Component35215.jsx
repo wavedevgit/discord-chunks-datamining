@@ -320,6 +320,7 @@ function G(e) {
     align: O,
     spacing: R,
     scrollBehavior: "close",
+    ignoreModalClicks: true,
     children: e => a(e, g)
   })
 }
