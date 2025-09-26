@@ -1,72 +1,85 @@
 /** Chunk was on 28934 **/
 /** chunk id: 826011, original params: e,t,s (module,exports,require) **/
 require.d(exports, {
-  default: () => x
+  default: () => h
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk442837 = require("./442837.js"),
   Chunk667202 = require("./667202.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk572004 = require("./572004.js"),
+  Chunk744993 = require("./744993.js"),
+  Chunk693587 = require("./693587.js"),
   Chunk943970 = require("./943970.js"),
   Chunk998964 = require("./998964.js"),
   Chunk440589 = require("./440589.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk999852 = require("./999852.js");
 
-function x(e) {
+function h(e) {
   let {
-    instance: t,
-    onClose: s,
-    transitionState: x
-  } = e, u = (0, l.Z)(t), h = n.useCallback(() => {
-    (0, c.JG)(u), (0, i.showToast)((0, i.createToast)(d.intl.string(d.t["+5kSoa"]), i.ToastType.SUCCESS))
-  }, [u]), v = (0, o.Z)(t.gameId, "cover");
-  return (0, r.jsx)(a.I, {
+    guildId: t,
+    instance: s,
+    onClose: h,
+    transitionState: I
+  } = e, f = (0, a.e7)([p.Z], () => {
+    var e;
+    return null == (e = p.Z.getStateForGuild(t)) ? true : e.instructions[s.planId]
+  });
+  r.useEffect(() => {
+    null == f && (0, o.iX)(t, s.planId)
+  }, [t, s.planId, f]);
+  let j = (0, u.Z)(s),
+    C = r.useCallback(() => {
+      (0, c.JG)(j), (0, l.showToast)((0, l.createToast)(x.intl.string(x.t["+5kSoa"]), l.ToastType.SUCCESS))
+    }, [j]),
+    N = (0, d.Z)(s.gameId, "cover");
+  return (0, n.jsx)(i.I, {
     graphic: {
-      src: v,
+      src: N,
       type: "image"
     },
-    title: t.name,
-    subtitle: t.planName,
+    title: s.name,
+    subtitle: s.planName,
     size: "md",
-    transitionState: x,
-    onClose: s,
-    children: (0, r.jsxs)("div", {
-      className: m.content,
-      children: [(0, r.jsx)("div", {
-        className: m.stepsContainer,
-        children: t.instructions.map((e, t) => (0, r.jsxs)("div", {
-          className: m.step,
-          children: [(0, r.jsx)("div", {
-            className: m.stepNumber,
-            children: (0, r.jsx)(i.Text, {
+    transitionState: I,
+    onClose: h,
+    children: null == f ? (0, n.jsx)(l.$jN, {}) : (0, n.jsxs)("div", {
+      className: v.content,
+      children: [(0, n.jsx)("div", {
+        className: v.stepsContainer,
+        children: f.map((e, t) => (0, n.jsxs)("div", {
+          className: v.step,
+          children: [(0, n.jsx)("div", {
+            className: v.stepNumber,
+            children: (0, n.jsx)(l.Text, {
               variant: "text-sm/semibold",
               color: "text-secondary",
-              children: d.intl.formatToPlainString(p.default.e0RxEB, {
+              children: x.intl.formatToPlainString(m.default.e0RxEB, {
                 step: t + 1
               })
             })
-          }), (0, r.jsx)(i.Text, {
+          }), (0, n.jsx)(l.Text, {
             variant: "text-md/normal",
             color: "header-primary",
             children: e
           })]
         }, t))
-      }), (0, r.jsxs)("div", {
-        className: m.serverIpContainer,
-        children: [(0, r.jsx)("div", {
-          className: m.serverIpInput,
-          children: (0, r.jsx)(i.Text, {
+      }), (0, n.jsxs)("div", {
+        className: v.serverIpContainer,
+        children: [(0, n.jsx)("div", {
+          className: v.serverIpInput,
+          children: (0, n.jsx)(l.Text, {
             variant: "text-md/medium",
             color: "header-primary",
-            children: u
+            children: j
           })
-        }), (0, r.jsx)(i.zxk, {
+        }), (0, n.jsx)(l.zxk, {
           variant: "primary",
-          text: d.intl.string(d.t.OpuAlJ),
-          onClick: h,
-          icon: i.TIy
+          text: x.intl.string(x.t.OpuAlJ),
+          onClick: C,
+          icon: l.TIy
         })]
       })]
     })

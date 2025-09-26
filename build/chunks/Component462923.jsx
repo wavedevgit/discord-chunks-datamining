@@ -1,7 +1,7 @@
 /** Chunk was on 85683 **/
 /** chunk id: 462923, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => N
+  Z: () => I
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -26,18 +26,18 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk799427 = require("./799427.js");
 
-function N(e) {
+function I(e) {
   let {
     guildId: n,
     instance: t
-  } = e, i = (0, j.Z)(t), N = "Portkey", [I, P] = (0, u.US)([l.z.GAME_SERVER_HOSTING_PORTKEY_TOS]), w = I !== l.z.GAME_SERVER_HOSTING_PORTKEY_TOS, S = (0, c.e7)([m.Z], () => m.Z.getDetectableGame(t.gameId)), T = r.useCallback(() => {
-    w ? (0, v.Z)(t) : (0, _.Z)({
-      provider: N,
+  } = e, i = (0, j.Z)(t), I = "Portkey", [N, P] = (0, u.US)([l.z.GAME_SERVER_HOSTING_PORTKEY_TOS]), w = N !== l.z.GAME_SERVER_HOSTING_PORTKEY_TOS, S = (0, c.e7)([m.Z], () => m.Z.getDetectableGame(t.gameId)), T = r.useCallback(() => {
+    w ? (0, v.Z)(n, t) : (0, _.Z)({
+      provider: I,
       onAccept: () => {
-        P(h.L.TAKE_ACTION), (0, v.Z)(t)
+        P(h.L.TAKE_ACTION), (0, v.Z)(n, t)
       }
     })
-  }, [t, w, P]), E = r.useCallback(() => {
+  }, [t, w, P, n]), E = r.useCallback(() => {
     (0, g.JG)(i), (0, d.showToast)((0, d.createToast)(y.intl.string(y.t["+5kSoa"]), d.ToastType.SUCCESS))
   }, [i]), k = (0, f.Z)(n), Z = (0, x.Z)(t.gameId, "cover");
   return (0, a.jsxs)("div", {
@@ -94,9 +94,9 @@ function N(e) {
             }) : (0, a.jsx)(b.Z, {
               onClick: () => {
                 (0, _.Z)({
-                  provider: N,
+                  provider: I,
                   onAccept: () => {
-                    P(h.L.TAKE_ACTION), (0, v.Z)(t)
+                    P(h.L.TAKE_ACTION), (0, v.Z)(n, t)
                   }
                 })
               },

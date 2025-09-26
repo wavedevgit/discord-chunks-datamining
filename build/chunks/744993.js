@@ -2,13 +2,14 @@
 /** chunk id: 744993, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   EC: () => x,
-  NE: () => v,
-  TN: () => b,
-  _k: () => _,
-  g$: () => f,
+  NE: () => j,
+  TN: () => g,
+  _k: () => y,
+  g$: () => b,
+  iX: () => f,
   po: () => h,
-  s9: () => j,
-  yP: () => g
+  s9: () => _,
+  yP: () => v
 }), require("./642613.js");
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
@@ -79,6 +80,24 @@ function x(e) {
 }
 
 function f(e, t) {
+  return a.tn.get({
+    url: p.ANM.PRODUCT_FOR_SKU(t),
+    rejectWithError: true
+  }).then(n => {
+    if (null != n.body) {
+      var a, i, l, s;
+      let o = null != (s = null == (l = n.body.tenant_metadata) || null == (i = l.guild_monetization) || null == (a = i.game_server) ? true : a.instructions.pc) ? s : [];
+      r.Z.dispatch({
+        type: "PORTKEY_FETCH_GAME_INSTRUCTIONS_SUCCESS",
+        guildId: e,
+        skuId: t,
+        instructions: o
+      })
+    }
+  })
+}
+
+function b(e, t) {
   if (e) {
     var n;
     l.default.track(p.rMx.GAME_SERVER_HOSTING_THIRD_PARTY_CONSENT_ACCEPTED, {
@@ -88,13 +107,13 @@ function f(e, t) {
   }
 }
 
-function b() {
+function g() {
   Chunk570140.Z.dispatch({
     type: "PORTKEY_REGION_PING_STATE_RESET"
   })
 }
 
-function g(e, t) {
+function v(e, t) {
   r.Z.dispatch({
     type: "PORTKEY_REGION_PING_STATE_UPDATE",
     pingUrl: e,
@@ -102,7 +121,7 @@ function g(e, t) {
   })
 }
 
-function v(e, t, n, r) {
+function j(e, t, n, r) {
   return a.tn.post({
     url: p.ANM.GUILD_POWERUP_TOGGLE(e, t),
     body: {
@@ -114,7 +133,7 @@ function v(e, t, n, r) {
   })
 }
 
-function j(e, t, n) {
+function _(e, t, n) {
   return a.tn.del({
     url: p.ANM.GUILD_POWERUP_TOGGLE(e, t),
     query: {
@@ -125,7 +144,7 @@ function j(e, t, n) {
   })
 }
 
-function _(e) {
+function y(e) {
   return a.tn.get({
     url: p.ANM.GAME_SERVER_REGIONS(e),
     rejectWithError: true,
