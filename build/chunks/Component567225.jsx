@@ -23,27 +23,27 @@ function d(e) {
   } = e, v = (0, s.Z)(n.gameId, "cover");
   return (0, l.jsxs)(r.P3F, {
     "aria-disabled": m,
-    className: a()(u.game, {
-      [u.disabled]: m
+    className: a()(c.game, {
+      [c.disabled]: m
     }, t),
     onClick: m ? true : () => i(n),
     children: [(0, l.jsx)("img", {
-      className: a()(u.image, d),
+      className: a()(c.image, d),
       alt: "",
       src: null != v ? v : ""
     }), (0, l.jsxs)("div", {
-      className: u.textContainer,
+      className: c.textContainer,
       children: [(0, l.jsx)(r.X6q, {
         variant: "heading-sm/semibold",
         children: n.name
       }), (0, l.jsxs)("div", {
-        className: u.boostContainer,
+        className: c.boostContainer,
         children: [(0, l.jsx)(r.$Eu, {
           size: "sm",
           color: r.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK
         }), (0, l.jsx)(r.Text, {
           variant: "text-sm/medium",
-          children: c.intl.formatToPlainString(n.plans.length > 1 ? o.default.Vf4vwM : o.default.ZzpD5u, {
+          children: u.intl.formatToPlainString(n.plans.length > 1 ? o.default.Vf4vwM : o.default.ZzpD5u, {
             boostCount: n.baseCost
           })
         })]
