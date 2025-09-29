@@ -1,7 +1,7 @@
 /** Chunk was on 99988 **/
 /** chunk id: 860717, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => U
+  Z: () => X
 }), require("./415506.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -13,6 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk911969 = require("./911969.js"),
   Chunk812206 = require("./812206.js"),
   Chunk810568 = require("./810568.js"),
+  Chunk168524 = require("./168524.js"),
   Chunk970184 = require("./970184.jsx"),
   Chunk197653 = require("./197653.jsx"),
   Chunk979372 = require("./979372.jsx"),
@@ -28,7 +29,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk895652 = require("./895652.js");
 
-function E(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,7 +48,7 @@ function E(e) {
   return e
 }
 
-function S(e, t) {
+function T(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -60,15 +61,15 @@ function S(e, t) {
   }), e
 }
 
-function T(e) {
+function D(e) {
   return null != e && e.loadingState === u.f.LOADED_SUCCESS && null != e.width && null != e.height
 }
 
-function D(e) {
+function N(e) {
   let {
     component: t
   } = e;
-  if (Array.isArray(t)) return A(t);
+  if (Array.isArray(t)) return C(t);
   switch (t.type) {
     case "HERO":
       let {
@@ -88,40 +89,40 @@ function D(e) {
         }
         return i
       }(t, ["body"]);
-      return (0, r.jsx)(C, S(E({}, i), {
-        body: A(n)
+      return (0, r.jsx)(k, T(S({}, i), {
+        body: C(n)
       }));
     case "GRID":
-      return (0, r.jsx)(k, {
-        children: A(t.children)
+      return (0, r.jsx)(R, {
+        children: C(t.children)
       });
     case "FIELD":
-      return (0, r.jsx)(R, {
-        value: N(t.value),
-        name: N(t.name)
+      return (0, r.jsx)(Z, {
+        value: A(t.value),
+        name: A(t.name)
       });
     case "TEXT":
-      return (0, r.jsx)(Z, E({}, t));
+      return (0, r.jsx)(L, S({}, t));
     case "TEXT_WITH_IMAGE":
-      return (0, r.jsx)(L, E({}, t));
+      return (0, r.jsx)(G, S({}, t));
     case "SEPARATOR":
-      return (0, r.jsx)(G, E({}, t));
+      return (0, r.jsx)(B, S({}, t));
     case "SOCIAL_PROOF":
-      return (0, r.jsx)(B, {})
+      return (0, r.jsx)(F, {})
   }
 }
 
-function N(e, t) {
-  return (0, r.jsx)(D, {
+function A(e, t) {
+  return (0, r.jsx)(N, {
     component: e
   }, t)
 }
 
-function A(e) {
-  return e.map((e, t) => N(e, t))
+function C(e) {
+  return e.map((e, t) => A(e, t))
 }
 
-function C(e) {
+function k(e) {
   let {
     title: t,
     body: n,
@@ -129,53 +130,53 @@ function C(e) {
     imagePlaceholder: o
   } = e;
   return (0, r.jsxs)("div", {
-    className: I.heroSection,
+    className: E.heroSection,
     children: [(0, r.jsxs)("div", {
-      className: I.heroBody,
+      className: E.heroBody,
       children: [(0, r.jsx)(s.Text, {
         variant: "text-lg/medium",
-        className: I.heroTitle,
+        className: E.heroTitle,
         children: null != t ? t : (0, r.jsx)("div", {
-          className: I.textPlaceholder
+          className: E.textPlaceholder
         })
-      }), (0, r.jsx)(b.U, {
+      }), (0, r.jsx)(m.U, {
         color: "muted",
         children: n
       })]
-    }), T(i) ? (0, r.jsx)("div", {
-      className: I.heroImageContainer,
-      children: (0, r.jsx)(j.ZP, {
+    }), D(i) ? (0, r.jsx)("div", {
+      className: E.heroImageContainer,
+      children: (0, r.jsx)(h.ZP, {
         src: i.proxyUrl,
         alt: "",
         width: i.width,
         height: i.height,
         responsive: true,
-        className: I.heroImage
+        className: E.heroImage
       })
     }) : null != o ? (0, r.jsx)("div", {
-      className: I.heroImageContainer,
+      className: E.heroImageContainer,
       children: (0, r.jsx)("img", {
         src: o,
         alt: "",
-        className: I.heroImage
+        className: E.heroImage
       })
     }) : (0, r.jsx)("div", {
-      className: I.heroImagePlaceholder
+      className: E.heroImagePlaceholder
     })]
   })
 }
 
-function k(e) {
+function R(e) {
   let {
     children: t
   } = e;
   return (0, r.jsx)("div", {
-    className: I.grid,
+    className: E.grid,
     children: t
   })
 }
 
-function R(e) {
+function Z(e) {
   let {
     name: t,
     value: n
@@ -185,27 +186,27 @@ function R(e) {
   })
 }
 
-function Z(e) {
+function L(e) {
   let {
     content: t
-  } = e, n = i.useId(), o = (0, b._)();
-  return null != t ? (0, r.jsx)(O.Z, {
+  } = e, n = i.useId(), o = (0, m._)();
+  return null != t ? (0, r.jsx)(y.Z, {
     type: u.re.TEXT_DISPLAY,
     id: n,
     content: t
   }) : (0, r.jsx)("div", {
-    className: a()(I.textPlaceholder, o.className)
+    className: a()(E.textPlaceholder, o.className)
   })
 }
 
-function L(e) {
+function G(e) {
   let {
     content: t,
     image: n,
     imagePosition: i
-  } = e, o = (0, b._)(), l = T(n) ? (0, r.jsx)("div", {
-    className: a()(I.image, o.className),
-    children: (0, r.jsx)(j.ZP, {
+  } = e, o = (0, m._)(), l = D(n) ? (0, r.jsx)("div", {
+    className: a()(E.image, o.className),
+    children: (0, r.jsx)(h.ZP, {
       src: n.proxyUrl,
       alt: "",
       width: n.width,
@@ -213,22 +214,22 @@ function L(e) {
       responsive: true
     })
   }) : (0, r.jsx)("div", {
-    className: a()(I.imagePlaceholder, o.className)
+    className: a()(E.imagePlaceholder, o.className)
   });
   return (0, r.jsxs)("div", {
-    className: I.textWithImage,
-    children: ["left" === i ? l : null, (0, r.jsx)(Z, {
+    className: E.textWithImage,
+    children: ["left" === i ? l : null, (0, r.jsx)(L, {
       content: t
     }), "right" === i ? l : null]
   })
 }
 
-function G(e) {
+function B(e) {
   let {
     size: t = "small",
     divider: n = false
   } = e, o = i.useId();
-  return (0, r.jsx)(m.Z, {
+  return (0, r.jsx)(O.Z, {
     type: u.re.SEPARATOR,
     id: o,
     divider: n,
@@ -236,15 +237,15 @@ function G(e) {
   })
 }
 
-function B() {
+function F() {
   let e = function() {
-      let e = Chunk647438.useContext(F);
+      let e = Chunk647438.useContext(H);
       if (null == module) throw Error("ApplicationWidgetContext provider not found");
       return module
     }(),
     {
       game: t
-    } = H(module.widget);
+    } = M(module.widget);
   return null == exports ? null : (0, Chunk951288.jsx)(Chunk919498.Z, {
     className: Chunk895652.socialProof,
     applicationId: exports.id,
@@ -252,33 +253,33 @@ function B() {
     channelId: module.channelId
   })
 }
-let F = Chunk647438.createContext(null);
+let H = Chunk647438.createContext(null);
 
-function H(e) {
-  return (0, l.cj)([d.Z, x.Z, v.Z], () => {
+function M(e) {
+  return (0, l.cj)([d.Z, _.Z, x.Z], () => {
     let t = d.Z.getApplication(e.applicationId);
     return {
       application: t,
-      game: null != t ? v.Z.getGameByApplication(t) : null,
-      config: x.Z.getApplicationWidgetApplicationConfig(e.applicationId)
+      game: null != t ? x.Z.getGameByApplication(t) : null,
+      config: _.Z.getApplicationWidgetApplicationConfig(e.applicationId)
     }
   })
 }
 
-function M(e) {
+function U(e) {
   let {
     children: t,
     widget: n
   } = e;
-  return (0, r.jsx)(p.am.Root, {
+  return (0, r.jsx)(b.am.Root, {
     containerInnerWidth: 396,
-    children: (0, r.jsx)(f.Il, {
+    children: (0, r.jsx)(p.Il, {
       applicationWidget: n,
-      children: (0, r.jsx)(b.U, {
+      children: (0, r.jsx)(m.U, {
         size: "reduced",
         weight: "reduced",
         children: (0, r.jsx)("div", {
-          className: I.container,
+          className: E.container,
           children: t
         })
       })
@@ -286,180 +287,171 @@ function M(e) {
   })
 }
 
-function U(e) {
-  var t, i, o;
+function X(e) {
+  var t, n, i;
   let {
-    user: l,
-    widget: u,
-    containerClassName: d
+    user: o,
+    widget: l,
+    containerClassName: u
   } = e, {
-    application: f,
+    application: d,
     game: p,
     config: b
-  } = H(u), m = null == f ? true : f.getIconURL(16), O = (0, h.O)(l.id).data, j = null == O ? true : O.find(e => e.application_id === u.applicationId), v = null == j || null == (i = j.profile) || null == (t = i.data) ? true : t.primary;
-
-  function x() {
-    null != p && (0, s.ZDy)(async () => {
-      let {
-        default: e
-      } = await Promise.all([n.e("89311"), n.e("20074")]).then(n.bind(n, 644941));
-      return t => (0, r.jsx)(e, E({
-        applicationId: p.id,
-        source: g.m1.ApplicationWidget
-      }, t))
-    })
-  }
-  let P = (0, r.jsxs)(r.Fragment, {
-      children: [null != m ? (0, r.jsx)("img", {
-        className: I.appIcon,
-        src: m,
-        width: 16,
-        height: 16,
-        alt: ""
-      }) : (0, r.jsx)("span", {
-        className: I.appIconPlaceholder
-      }), (0, r.jsx)(s.Text, {
-        variant: "text-sm/medium",
-        children: (null == f ? true : f.name) != null ? f.name : (0, r.jsx)("div", {
-          className: I.textPlaceholder
-        })
-      })]
-    }),
-    T = null == p ? (0, r.jsx)("div", {
-      className: I.header,
-      children: P
-    }) : (0, r.jsx)(c.u, {
-      asContainer: true,
-      text: w.intl.string(w.t.ajHoOj),
-      children: (0, r.jsx)(s.P3F, {
-        className: a()(I.header, I.headerClickable),
-        onClick: x,
-        "aria-label": w.intl.string(w.t.ajHoOj),
-        children: P
+  } = M(l), m = null == d ? true : d.getIconURL(16), O = (0, v.O)(o.id).data, y = null == O ? true : O.find(e => e.application_id === l.applicationId), h = null == y || null == (n = y.profile) || null == (t = n.data) ? true : t.primary, x = (0, f.Z)({
+    location: "UserProfileApplicationWidget",
+    applicationId: null == p ? true : p.id,
+    source: g.m1.UserProfile,
+    sourceUserId: o.id,
+    trackEntryPointImpression: true
+  }), _ = (0, r.jsxs)(r.Fragment, {
+    children: [null != m ? (0, r.jsx)("img", {
+      className: E.appIcon,
+      src: m,
+      width: 16,
+      height: 16,
+      alt: ""
+    }) : (0, r.jsx)("span", {
+      className: E.appIconPlaceholder
+    }), (0, r.jsx)(s.Text, {
+      variant: "text-sm/medium",
+      children: (null == d ? true : d.name) != null ? d.name : (0, r.jsx)("div", {
+        className: E.textPlaceholder
       })
-    }),
-    N = [{
-      type: "HERO",
-      title: null == j || null == (o = j.profile) ? true : o.username,
-      image: (null == v ? true : v.featured_played_character_image) != null ? (0, y.ym)(v.featured_played_character_image) : null,
-      imagePlaceholder: null == b ? true : b.hero_placeholder_image,
-      body: [{
+    })]
+  }), w = null == p ? (0, r.jsx)("div", {
+    className: E.header,
+    children: _
+  }) : (0, r.jsx)(c.u, {
+    asContainer: true,
+    text: I.intl.string(I.t.ajHoOj),
+    children: (0, r.jsx)(s.P3F, {
+      className: a()(E.header, E.headerClickable),
+      onClick: x,
+      "aria-label": I.intl.string(I.t.ajHoOj),
+      children: _
+    })
+  }), D = [{
+    type: "HERO",
+    title: null == y || null == (i = y.profile) ? true : i.username,
+    image: (null == h ? true : h.featured_played_character_image) != null ? (0, j.ym)(h.featured_played_character_image) : null,
+    imagePlaceholder: null == b ? true : b.hero_placeholder_image,
+    body: [{
+      type: "TEXT_WITH_IMAGE",
+      content: (null == h ? true : h.highest_rank) != null ? null == h ? true : h.highest_rank : true,
+      image: (null == h ? true : h.highest_rank_image) != null ? (0, j.ym)(h.highest_rank_image) : true,
+      imagePosition: "right"
+    }, {
+      type: "TEXT",
+      content: (null == h ? true : h.featured_played_character) != null ? "Top Hero: ".concat(null == h ? true : h.featured_played_character) : true
+    }]
+  }, {
+    type: "SEPARATOR",
+    divider: false
+  }, {
+    type: "SEPARATOR",
+    divider: false
+  }, {
+    type: "GRID",
+    children: [{
+      type: "FIELD",
+      value: {
         type: "TEXT_WITH_IMAGE",
-        content: (null == v ? true : v.highest_rank) != null ? null == v ? true : v.highest_rank : true,
-        image: (null == v ? true : v.highest_rank_image) != null ? (0, y.ym)(v.highest_rank_image) : true,
+        content: (null == h ? true : h.rank_name) != null ? "**".concat(null == h ? true : h.rank_name, "**") : true,
+        image: (null == h ? true : h.rank_image) != null ? (0, j.ym)(h.rank_image) : true,
         imagePosition: "right"
-      }, {
+      },
+      name: {
         type: "TEXT",
-        content: (null == v ? true : v.featured_played_character) != null ? "Top Hero: ".concat(null == v ? true : v.featured_played_character) : true
-      }]
+        content: "-# Season High"
+      }
     }, {
-      type: "SEPARATOR",
-      divider: false
+      type: "FIELD",
+      value: {
+        type: "TEXT",
+        content: (null == h ? true : h.playtime_hours) != null ? "**".concat(h.playtime_hours.toLocaleString(), " Hours**") : true
+      },
+      name: {
+        type: "TEXT",
+        content: "-# Time Played"
+      }
     }, {
-      type: "SEPARATOR",
-      divider: false
+      type: "FIELD",
+      value: {
+        type: "TEXT",
+        content: (null == h ? true : h.total_games) != null ? "**".concat(h.total_games.toLocaleString(), "**") : true
+      },
+      name: {
+        type: "TEXT",
+        content: "-# Matches Played"
+      }
+    }]
+  }, {
+    type: "SEPARATOR",
+    divider: false
+  }, {
+    type: "SEPARATOR",
+    divider: false
+  }, {
+    type: "GRID",
+    children: [{
+      type: "FIELD",
+      value: {
+        type: "TEXT",
+        content: (null == h ? true : h.total_wins) != null ? "**".concat(h.total_wins.toLocaleString(), "**") : true
+      },
+      name: {
+        type: "TEXT",
+        content: "-# Wins"
+      }
     }, {
-      type: "GRID",
-      children: [{
-        type: "FIELD",
-        value: {
-          type: "TEXT_WITH_IMAGE",
-          content: (null == v ? true : v.rank_name) != null ? "**".concat(null == v ? true : v.rank_name, "**") : true,
-          image: (null == v ? true : v.rank_image) != null ? (0, y.ym)(v.rank_image) : true,
-          imagePosition: "right"
-        },
-        name: {
-          type: "TEXT",
-          content: "-# Season High"
-        }
-      }, {
-        type: "FIELD",
-        value: {
-          type: "TEXT",
-          content: (null == v ? true : v.playtime_hours) != null ? "**".concat(v.playtime_hours.toLocaleString(), " Hours**") : true
-        },
-        name: {
-          type: "TEXT",
-          content: "-# Time Played"
-        }
-      }, {
-        type: "FIELD",
-        value: {
-          type: "TEXT",
-          content: (null == v ? true : v.total_games) != null ? "**".concat(v.total_games.toLocaleString(), "**") : true
-        },
-        name: {
-          type: "TEXT",
-          content: "-# Matches Played"
-        }
-      }]
+      type: "FIELD",
+      value: {
+        type: "TEXT",
+        content: (null == h ? true : h.total_kills) != null ? "**".concat(h.total_kills.toLocaleString(), "**") : true
+      },
+      name: {
+        type: "TEXT",
+        content: "-# KOs"
+      }
     }, {
-      type: "SEPARATOR",
-      divider: false
-    }, {
-      type: "SEPARATOR",
-      divider: false
-    }, {
-      type: "GRID",
-      children: [{
-        type: "FIELD",
-        value: {
-          type: "TEXT",
-          content: (null == v ? true : v.total_wins) != null ? "**".concat(v.total_wins.toLocaleString(), "**") : true
-        },
-        name: {
-          type: "TEXT",
-          content: "-# Wins"
-        }
-      }, {
-        type: "FIELD",
-        value: {
-          type: "TEXT",
-          content: (null == v ? true : v.total_kills) != null ? "**".concat(v.total_kills.toLocaleString(), "**") : true
-        },
-        name: {
-          type: "TEXT",
-          content: "-# KOs"
-        }
-      }, {
-        type: "FIELD",
-        value: {
-          type: "TEXT",
-          content: (null == v ? true : v.total_assists) != null ? "**".concat(v.total_assists.toLocaleString(), "**") : true
-        },
-        name: {
-          type: "TEXT",
-          content: "-# Assists"
-        }
-      }]
-    }];
-  return (0, r.jsxs)(_.Z, S(E({}, e), {
-    userId: l.id,
-    widget: u,
-    className: a()(d, I.widgetContainer),
-    headerTitle: T,
+      type: "FIELD",
+      value: {
+        type: "TEXT",
+        content: (null == h ? true : h.total_assists) != null ? "**".concat(h.total_assists.toLocaleString(), "**") : true
+      },
+      name: {
+        type: "TEXT",
+        content: "-# Assists"
+      }
+    }]
+  }];
+  return (0, r.jsxs)(P.Z, T(S({}, e), {
+    userId: o.id,
+    widget: l,
+    className: a()(u, E.widgetContainer),
+    headerTitle: w,
     dragHandleAdditionalMenuItems: null != p ? (0, r.jsx)(s.sNh, {
       id: "view-game-profile",
       label: "View Game Profile",
       icon: s.iWm,
       action: x
     }) : null,
-    children: [(0, r.jsx)(F.Provider, {
+    children: [(0, r.jsx)(H.Provider, {
       value: e,
-      children: (0, r.jsx)(M, {
-        widget: u,
-        children: (0, r.jsx)(D, {
-          component: N
+      children: (0, r.jsx)(U, {
+        widget: l,
+        children: (0, r.jsx)(N, {
+          component: D
         })
       })
-    }), null == j ? (0, r.jsxs)("div", {
-      className: I.stillSyncing,
+    }), null == y ? (0, r.jsxs)("div", {
+      className: E.stillSyncing,
       children: [(0, r.jsx)(s.wGF, {
         size: "xxs"
       }), (0, r.jsx)(s.Text, {
         variant: "text-sm/medium",
         color: "text-secondary",
-        children: w.intl.string(w.t.z5K4Ul)
+        children: I.intl.string(I.t.z5K4Ul)
       })]
     }) : null]
   }))
