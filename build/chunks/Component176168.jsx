@@ -24,7 +24,7 @@ let f = function(e) {
       children: [(0, r.jsx)(i.X6q, {
         className: u.barHeading,
         variant: "heading-md/semibold",
-        children: l.intl.string(l.t.dCHFNT)
+        children: l.intl.string(l.t.rjVPdH)
       }), (0, r.jsx)("div", {
         className: u.fixedBarContainer,
         children: (0, r.jsx)("div", {

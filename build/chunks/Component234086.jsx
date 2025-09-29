@@ -20,7 +20,7 @@ let l = e => {
       children: [(0, r.jsx)(i.X6q, {
         className: s.heading,
         variant: "heading-md/semibold",
-        children: o.intl.string(o.t["Vfl/AQ"])
+        children: o.intl.string(o.t.gWinpa)
       }), (0, r.jsx)("div", {
         className: s.questChannelCallHeaderWrapper,
         children: (0, r.jsx)(a.Z, {

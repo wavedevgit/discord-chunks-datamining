@@ -21,7 +21,7 @@ let l = function(e) {
       children: [(0, r.jsx)(i.X6q, {
         className: s.heading,
         variant: "heading-md/semibold",
-        children: o.intl.string(o.t.HWICen)
+        children: o.intl.string(o.t.L2mlUV)
       }), (0, r.jsx)(a.Z, {
         quest: t
       })]

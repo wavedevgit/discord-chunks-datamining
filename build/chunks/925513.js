@@ -10,9 +10,9 @@ require.d(exports, {
 });
 var Chunk647438 = require("./647438.js"),
   Chunk524437 = require("./524437.js"),
+  Chunk128064 = require("./128064.js"),
   Chunk695346 = require("./695346.js"),
   Chunk594174 = require("./594174.js"),
-  Chunk704454 = require("./704454.js"),
   Chunk981631 = require("./981631.js");
 
 function c(e, t, n) {
@@ -43,11 +43,11 @@ let d = e => {
       isFriend: r = false
     } = e;
     if (null != t && t !== i.Q4.UNSET_EXPLICIT_CONTENT_REDACTION) return t;
-    let a = o.default.getCurrentUser();
-    return (0, s.bc)("resolveSettingWithDefaults") ? f({
+    let o = s.default.getCurrentUser();
+    return (0, a.c_)("resolveSettingWithDefaults") ? f({
       isDm: n,
       isFriend: r
-    }) : (0, s.g2)("resolveSettingWithDefaults") ? i.Q4.BLUR : (null == a ? true : a.nsfwAllowed) === false ? p({
+    }) : (null == o ? true : o.nsfwAllowed) === false ? p({
       isDm: n,
       isFriend: r
     }) : _({
@@ -77,7 +77,7 @@ let d = e => {
     return t && n ? i.Q4.BLUR : t ? i.Q4.BLOCK : i.Q4.BLUR
   },
   h = e => {
-    let t = null != e ? e : a.j7.getSetting();
+    let t = null != e ? e : o.j7.getSetting();
     return {
       goreContentGuilds: d({
         setting: null == t ? true : t.goreContentGuilds
@@ -95,6 +95,6 @@ let d = e => {
   },
   m = e => {
     let t = h();
-    a.j7.updateSetting(u({}, t, e))
+    o.j7.updateSetting(u({}, t, e))
   },
   g = () => Chunk647438.useMemo(() => Chunk981631.BhN.EXPLICIT_MEDIA_REDACTION, [])

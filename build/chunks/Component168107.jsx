@@ -7,8 +7,8 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk481060 = require("./481060.js"),
-  Chunk704454 = require("./704454.js"),
   Chunk429142 = require("./429142.js"),
+  Chunk128064 = require("./128064.js"),
   Chunk81643 = require("./81643.js"),
   Chunk469775 = require("./469775.js");
 
@@ -76,14 +76,14 @@ let m = {
   showAgeVerification: e => {
     var {
       onClose: t,
-      entryPoint: a,
+      entryPoint: o,
       shouldShowExpressiveModal: s = false
     } = e, c = _(e, ["onClose", "entryPoint", "shouldShowExpressiveModal"]);
     let d = {
       modalKey: l.zJ,
       onCloseCallback: t,
-      backdropStyle: h(a),
-      Layer: o.ZP
+      backdropStyle: h(o),
+      Layer: a.ZP
     };
     s ? (0, i.ZDy)(async () => {
       let {
@@ -102,7 +102,7 @@ let m = {
       onClose: t,
       entryPoint: c
     } = e;
-    if ((0, s.kJ)() && (0, a.G7)("age_verification_utils")) return void(0, i.ZDy)(async () => {
+    if ((0, s.kJ)() && (0, o.c_)("age_verification_utils")) return void(0, i.ZDy)(async () => {
       let {
         default: e
       } = await n.e("22447").then(n.bind(n, 686768));
@@ -112,7 +112,7 @@ let m = {
     }, {
       modalKey: l.ux,
       backdropStyle: h(c),
-      Layer: o.ZP,
+      Layer: a.ZP,
       onCloseCallback: t
     });
     (0, i.ZDy)(async () => {
@@ -125,7 +125,7 @@ let m = {
     }, {
       modalKey: l.ux,
       backdropStyle: h(c),
-      Layer: o.ZP,
+      Layer: a.ZP,
       onCloseCallback: t
     })
   },

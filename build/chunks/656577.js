@@ -9,9 +9,9 @@ require.d(exports, {
   zj: () => b
 });
 var Chunk524437 = require("./524437.js"),
+  Chunk128064 = require("./128064.js"),
   Chunk695346 = require("./695346.js"),
-  Chunk594174 = require("./594174.js"),
-  Chunk704454 = require("./704454.js");
+  Chunk594174 = require("./594174.js");
 require("./721360.js");
 var Chunk973005 = require("./973005.js");
 
@@ -60,19 +60,19 @@ let u = {
     let {
       setting: t,
       isDm: n = false,
-      isFriend: i = false
+      isFriend: a = false
     } = e;
     if (null != t && t !== r.Q4.UNSET_EXPLICIT_CONTENT_REDACTION) return t;
-    let s = a.default.getCurrentUser();
-    return (0, o.bc)("resolveSettingWithDefaults") ? g({
+    let s = o.default.getCurrentUser();
+    return (0, i.c_)("resolveSettingWithDefaults") ? g({
       isDm: n,
-      isFriend: i
-    }) : (0, o.g2)("resolveSettingWithDefaults") ? r.Q4.BLUR : (null == s ? true : s.nsfwAllowed) === false ? m({
+      isFriend: a
+    }) : (null == s ? true : s.nsfwAllowed) === false ? m({
       isDm: n,
-      isFriend: i
+      isFriend: a
     }) : h({
       isDm: n,
-      isFriend: i
+      isFriend: a
     })
   },
   h = e => {
@@ -81,8 +81,8 @@ let u = {
       isFriend: n = false
     } = e;
     if (!t) return r.Q4.SHOW;
-    let a = i.UP.getSetting();
-    return n ? u[a] : d[a]
+    let i = a.UP.getSetting();
+    return n ? u[i] : d[i]
   },
   m = e => {
     let {
@@ -90,8 +90,8 @@ let u = {
       isFriend: n = false
     } = e;
     if (!t) return r.Q4.BLUR;
-    let a = i.UP.getSetting();
-    return n ? f[a] : _[a]
+    let i = a.UP.getSetting();
+    return n ? f[i] : _[i]
   },
   g = e => {
     let {
@@ -101,7 +101,7 @@ let u = {
     return t && !n ? r.Q4.BLOCK : r.Q4.BLUR
   },
   E = e => {
-    let t = null != e ? e : i.Sh.getSetting();
+    let t = null != e ? e : a.Sh.getSetting();
     return {
       explicitContentGuilds: p({
         setting: null == t ? true : t.explicitContentGuilds
@@ -119,5 +119,5 @@ let u = {
   },
   b = e => {
     let t = E();
-    i.Sh.updateSetting(c({}, t, e))
+    a.Sh.updateSetting(c({}, t, e))
   }
