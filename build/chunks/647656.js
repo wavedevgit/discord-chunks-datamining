@@ -41,7 +41,8 @@ let _ = ["1402418171662569542"],
             large_url: e.string().uri().min(1).max(256),
             small_image: e.string().min(1).max(300),
             small_text: e.string().min(2).max(128),
-            small_url: e.string().uri().min(1).max(256)
+            small_url: e.string().uri().min(1).max(256),
+            invite_cover_image: e.string().min(1).max(300)
           }),
           party: (0, g.Z)(e).keys({
             id: e.string().min(2).max(128),
@@ -122,12 +123,12 @@ let _ = ["1402418171662569542"],
         if (null == j) l = Promise.resolve([]);
         else {
           if (null == a.application || null == a.application.id) throw Error();
-          l = (0, p.hR)(a.application.id, [j.large_image, j.small_image])
+          l = (0, p.hR)(a.application.id, [j.large_image, j.small_image, j.invite_cover_image])
         }
         return l.then(e => {
           var t, n, r, i;
-          let [l, s] = e;
-          if (null != j && (null != l ? j.large_image = l : delete j.large_image, null != s ? j.small_image = s : delete j.small_image), !E()) return;
+          let [l, s, c] = e;
+          if (null != j && (null != l ? j.large_image = l : delete j.large_image, null != s ? j.small_image = s : delete j.small_image, null != c ? j.invite_cover_image = c : delete j.invite_cover_image), !E()) return;
           o.Z.dispatch({
             type: "LOCAL_ACTIVITY_UPDATE",
             socketId: a.id,
@@ -136,9 +137,9 @@ let _ = ["1402418171662569542"],
             partyPrivacy: T
           });
           let {
-            secrets: c,
-            party: u
-          } = O, p = {
+            secrets: u,
+            party: p
+          } = O, f = {
             application_id: a.application.id,
             type: O.type,
             name: O.name,
@@ -147,7 +148,7 @@ let _ = ["1402418171662569542"],
             state: null != (i = O.state) ? i : "",
             has_urls: null != O.state_url || null != O.details_url || (null == (t = O.assets) ? true : t.large_url) != null || (null == (n = O.assets) ? true : n.small_url) != null
           };
-          return null != c && (p.has_match_secret = !!c.match, p.has_join_secret = !!c.join), null != j && (p.has_images = !!(j.large_image || j.small_image)), null != u && (p.party_max = null != u.size && u.size[1] > 0 ? u.size[1] : true, p.party_id = u.id), d.default.track(b.rMx.ACTIVITY_UPDATED, p), O
+          return null != u && (f.has_match_secret = !!u.match, f.has_join_secret = !!u.join), null != j && (f.has_images = !!(j.large_image || j.small_image || j.invite_cover_image)), null != p && (f.party_max = null != p.size && p.size[1] > 0 ? p.size[1] : true, f.party_id = p.id), d.default.track(b.rMx.ACTIVITY_UPDATED, f), O
         })
       }
     }
