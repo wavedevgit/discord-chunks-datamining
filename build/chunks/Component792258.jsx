@@ -2,75 +2,63 @@
 /** chunk id: 792258, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => E
+  Z: () => g,
+  o: () => m
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
-  Chunk468194 = require("./468194.js"),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
   Chunk372769 = require("./372769.jsx"),
-  Chunk601964 = require("./601964.js"),
   Chunk914788 = require("./914788.js"),
+  Chunk322192 = require("./322192.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk412297 = require("./412297.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk537731 = require("./537731.js");
-let m = [18, 18, 16, 16, 14, 12, 10];
+let h = [18, 18, 16, 16, 14, 12, 10];
 
-function g(e) {
+function m(e) {
   var t;
-  return null != (t = m[e.length - 1]) ? t : m[m.length - 1]
+  return null != (t = h[e.length - 1]) ? t : h[h.length - 1]
 }
-let E = e => {
+let g = e => {
   let {
-    guildId: t
-  } = e, n = (0, s.e7)([d.Z], () => d.Z.getGuild(t));
-  if (true === n) return null;
-  let i = n.features.has(f.oNc.VERIFIED) || n.features.has(f.oNc.PARTNERED),
+    guildId: t,
+    className: n,
+    customSubtext: i
+  } = e, h = (0, o.e7)([c.Z], () => c.Z.getGuild(t));
+  if (true === h) return null;
+  let m = h.features.has(d.oNc.VERIFIED) || h.features.has(d.oNc.PARTNERED),
     {
-      name: E
-    } = n,
-    b = (0, u.EB)(n, 40, true),
-    y = null,
-    O = m[m.length - 1];
-  return null == n.icon && null != E && (O = g(y = (0, o.Zg)(E))), (0, r.jsxs)("div", {
-    className: h.container,
-    children: [(0, r.jsxs)("div", {
-      style: {
-        fontSize: O
-      },
-      children: [null != y ? (0, r.jsx)("div", {
-        className: a()(h.childWrapper, h.acronym),
-        "aria-hidden": true,
-        children: y
-      }) : null, null != b ? (0, r.jsx)(l.qEK, {
-        src: b,
-        size: l.EFr.SIZE_40,
-        "aria-hidden": true
-      }) : null]
+      name: g
+    } = h;
+  return (0, r.jsxs)("div", {
+    className: a()(p.container, n),
+    children: [(0, r.jsx)(u.Z, {
+      guildId: t
     }), (0, r.jsxs)("div", {
-      className: h.descriptors,
+      className: p.descriptors,
       children: [(0, r.jsxs)("div", {
-        className: h.header,
-        children: [i ? (0, r.jsx)(c.Z, {
-          guild: n,
+        className: p.header,
+        children: [m ? (0, r.jsx)(l.Z, {
+          guild: h,
           tooltipPosition: "bottom",
-          tooltipColor: l.ua7.Colors.PRIMARY,
-          className: h.guildBadge
-        }) : null, (0, r.jsx)(l.Text, {
+          tooltipColor: s.ua7.Colors.PRIMARY,
+          className: p.guildBadge
+        }) : null, (0, r.jsx)(s.Text, {
           variant: "text-md/semibold",
-          children: E
+          children: g
         })]
-      }), true !== n.approximateMemberCount ? (0, r.jsx)(l.Text, {
+      }), (0, r.jsx)(s.Text, {
         variant: "text-xs/medium",
         color: "text-muted",
-        children: p.intl.format(_.default["5JmNgo"], {
-          members: n.approximateMemberCount
-        })
-      }) : null]
+        children: null != i ? i : true !== h.approximateMemberCount ? _.intl.format(f.default["5JmNgo"], {
+          members: h.approximateMemberCount
+        }) : null
+      })]
     })]
   })
 }
