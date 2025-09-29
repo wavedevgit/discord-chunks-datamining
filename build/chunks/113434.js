@@ -11,6 +11,7 @@ require.d(exports, {
   J2: () => F,
   Jf: () => ey,
   KX: () => eR,
+  MP: () => eK,
   OH: () => eP,
   Qy: () => eF,
   Rf: () => eb,
@@ -877,4 +878,8 @@ let eH = () => (0, Chunk442837.Wu)([Chunk569984.Z], () => [...Chunk569984.Z.ques
       i = (null == e || null == (t = e.userStatus) ? true : t.claimedAt) != null,
       a = (0, c.e7)([N.Z], () => null != N.Z.questEnrollmentBlockedUntil, []);
     return !n && !r && !i && !a
+  },
+  eK = () => {
+    let e = (0, Chunk442837.Wu)([Chunk569984.Z], () => [...Chunk569984.Z.quests.values()]);
+    return Chunk647438.useMemo(() => module.filter(e => e.preview), [module])
   }

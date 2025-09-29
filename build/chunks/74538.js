@@ -31,7 +31,7 @@ require.d(exports, {
   Wz: () => tI,
   XK: () => eQ,
   Z8: () => eg,
-  ZP: () => tk,
+  ZP: () => tU,
   Zx: () => eJ,
   _O: () => tT,
   a5: () => eF,
@@ -48,6 +48,7 @@ require.d(exports, {
   if: () => eY,
   jP: () => en,
   jp: () => eI,
+  k: () => tk,
   k5: () => e3,
   lY: () => ey,
   m3: () => eT,
@@ -1673,7 +1674,11 @@ function tM(e) {
     a = V(e.id, false, t, n);
   if (0 !== i.amount) return Math.floor(100 * (1 - a.amount / (12 * i.amount)))
 }
-let tk = Object.freeze({
+
+function tk(e) {
+  return null == e ? 0 : Math.max((0, y.wY)(new Date, new Date(e)), 0)
+}
+let tU = Object.freeze({
   isNewUser: e => null != e && Date.now() - e.createdAt.getTime() < G,
   isPremiumAtLeast: Chunk111361.yd,
   isPremium: Chunk111361.I5,

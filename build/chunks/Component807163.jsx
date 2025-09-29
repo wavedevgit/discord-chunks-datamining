@@ -40,8 +40,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk314884 = require("./314884.js"),
   Chunk626135 = require("./626135.js"),
   Chunk768581 = require("./768581.js"),
-  Chunk55935 = require("./55935.js"),
   Chunk63063 = require("./63063.js"),
+  Chunk74538 = require("./74538.js"),
   Chunk998502 = require("./998502.js"),
   Chunk768634 = require("./768634.js"),
   Chunk848572 = require("./848572.js"),
@@ -259,24 +259,23 @@ function ej(e) {
 function eC(e) {
   var s, t, n, a;
   let {
-    premiumType: o,
+    currentUser: o,
     onClose: l
-  } = e, c = (0, D.C)(o, "BadgeItem"), u = (0, G.Rw)(), {
+  } = e, c = (0, G.C)(o, "BadgeItem"), u = (0, D.Rw)(), {
     analyticsLocations: m
-  } = (0, h.ZP)(N.Z.PREMIUM_UNCANCEL_MODAL), d = (0, G.GG)();
+  } = (0, h.ZP)(N.Z.PREMIUM_UNCANCEL_MODAL), d = (0, D.GG)();
   if (!c || null == d) return null;
   let p = null != (s = null == u ? true : u.id) ? s : Y.VU.PREMIUM_TENURE_1_MONTH,
-    x = null != (t = null == u ? true : u.status) ? t : G.Vq.UPCOMING,
+    x = null != (t = null == u ? true : u.status) ? t : D.Vq.UPCOMING,
     g = null != (n = null == u ? true : u.nameUnformatted) ? n : Y.vK[Y.VU.PREMIUM_TENURE_1_MONTH].nameUnformatted,
     j = (0, B.J)(p),
     C = Q.intl.string(g),
-    I = x === G.Vq.EARNED,
+    I = x === D.Vq.EARNED,
     E = null != u && "daysLeft" in u ? u.daysLeft : 1,
     _ = Q.t.pwkxYG;
   if (I) {
-    let e = new Date,
-      s = Math.max((0, k.wY)(e, new Date(d)), 1);
-    s >= 365 ? (E = Math.floor(s / 365), _ = Q.t["/ojPfn"]) : (E = s, _ = Q.t.IItWYm)
+    let e = Math.max((0, z.k)(d), 1);
+    e >= 365 ? (E = Math.floor(e / 365), _ = Q.t["/ojPfn"]) : (E = e, _ = Q.t.IItWYm)
   }
   let T = null != (a = eu[p]) ? a : X.badgeGradientBronze;
   return (0, r.jsx)(ex, {
@@ -313,7 +312,7 @@ function eN(e) {
   return (0, r.jsx)(ex, {
     description: o ? Q.intl.format(Q.t.couiKC, {}) : Q.intl.format(Q.t["0hUHi4"], {}),
     onLearnMore: () => {
-      window.open(z.Z.getArticleURL(q.BhN.PREMIUM_DETAILS)), Z.default.track(q.rMx.PREMIUM_UNCANCEL_WINBACK_CTA_CLICKED, {
+      window.open(k.Z.getArticleURL(q.BhN.PREMIUM_DETAILS)), Z.default.track(q.rMx.PREMIUM_UNCANCEL_WINBACK_CTA_CLICKED, {
         action: "emojis_stickers"
       })
     },
@@ -432,7 +431,7 @@ function eE(e) {
   return (0, r.jsx)(ex, {
     description: s === Y.p9.TIER_2 ? Q.intl.format(Q.t.GsOFRE, {}) : Q.intl.format(Q.t.wFWO6O, {}),
     onLearnMore: () => {
-      window.open(z.Z.getArticleURL(q.BhN.PREMIUM_DETAILS)), Z.default.track(q.rMx.PREMIUM_UNCANCEL_WINBACK_CTA_CLICKED, {
+      window.open(k.Z.getArticleURL(q.BhN.PREMIUM_DETAILS)), Z.default.track(q.rMx.PREMIUM_UNCANCEL_WINBACK_CTA_CLICKED, {
         action: "msgs_uploads"
       })
     },
@@ -494,7 +493,7 @@ function eb(e) {
           premiumType: t,
           onClose: a
         }, "boost-item"), (0, r.jsx)(eI, {}, "screen-share-item")) : e.push((0, r.jsx)(eC, {
-          premiumType: t,
+          currentUser: s,
           onClose: a
         }, "badge-item"), (0, r.jsx)(ej, {
           currentUser: s,

@@ -198,7 +198,7 @@ function R(e) {
       options: s,
       onChange: i,
       value: a,
-      clearable: true
+      clearable: null != a
     })]
   })
 }
