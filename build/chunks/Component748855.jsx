@@ -19,36 +19,27 @@ function f(e) {
   let {
     label: t,
     icon: n,
-    isSelected: l = false,
-    setStatus: f,
-    clearStatus: m,
-    isFavorited: g,
-    onFavoriteClick: b
-  } = e, [y, C] = i.useState(false), _ = (0, o.e7)([u.Z], () => u.Z.getFavoritedStatuses().length >= u.o), v = y && l, x = v ? d.intl.string(d.t.S90Fub) : t, O = i.useCallback(() => {
-    v ? null == m || m() : f()
-  }, [v, m, f]), j = i.useCallback(e => {
-    e.stopPropagation(), null == b || b()
-  }, [b]), E = g ? c.r7p : c.vxU;
+    setStatus: l,
+    isFavorited: f,
+    onFavoriteClick: m
+  } = e, [g, b] = i.useState(false), y = (0, o.e7)([u.Z], () => u.Z.getFavoritedStatuses().length >= u.o), C = i.useCallback(e => {
+    e.stopPropagation(), null == m || m()
+  }, [m]), _ = f ? c.r7p : c.vxU;
   return (0, r.jsxs)(c.P3F, {
-    onClick: O,
+    onClick: l,
     onMouseEnter: () => {
-      C(true)
+      b(true)
     },
     onMouseLeave: () => {
-      C(false)
+      b(false)
     },
-    className: a()(h.item, h.labelContainer, p.container, {
-      [p.isSelected]: l
-    }),
+    className: a()(h.item, h.labelContainer, p.container),
     children: [n, (0, r.jsx)(c.Text, {
       variant: "text-md/normal",
       className: p.itemText,
-      children: x
-    }), l ? (0, r.jsx)(c.k$p, {
-      className: p.closeIcon,
-      color: y ? s.Z.colors.ICON_PRIMARY : s.Z.colors.ICON_SECONDARY
-    }) : y && null != b && (0, r.jsx)(c.ua7, {
-      text: _ && !g ? d.intl.string(d.t.YSDH9v) : true,
+      children: t
+    }), g && null != m && (0, r.jsx)(c.ua7, {
+      text: y && !f ? d.intl.string(d.t.YSDH9v) : true,
       children: e => {
         var t, n;
         return (0, r.jsx)(c.P3F, (t = function(e) {
@@ -70,10 +61,10 @@ function f(e) {
           return e
         }({}, e), n = n = {
           className: p.centerAlign,
-          onClick: j,
-          children: (0, r.jsx)(E, {
+          onClick: C,
+          children: (0, r.jsx)(_, {
             className: p.closeIcon,
-            color: g ? s.Z.colors.ICON_FEEDBACK_WARNING : true
+            color: f ? s.Z.colors.ICON_FEEDBACK_WARNING : true
           })
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);

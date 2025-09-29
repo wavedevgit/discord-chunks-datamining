@@ -67,95 +67,94 @@ function M(e, t) {
 }
 
 function R(e) {
-  var t, n, l;
+  var t, n, l, o;
   let {
-    channel: o,
-    setIsHangStatusInputFocused: R,
-    setPopoutRef: k
-  } = e, L = i.useRef(null), D = (0, u.e7)([b.Z], () => b.Z.getCustomHangStatus()), U = (0, x.Z)(), B = (0, u.e7)([b.Z], () => b.Z.getFavoritedStatuses()), {
-    defaultStatusVariant: F,
-    allowPermanentClear: H
+    channel: R,
+    setIsHangStatusInputFocused: k,
+    setPopoutRef: L
+  } = e, D = i.useRef(null), U = (0, u.e7)([b.Z], () => b.Z.getCustomHangStatus()), B = (0, x.Z)(), H = (0, u.e7)([b.Z], () => b.Z.getFavoritedStatuses()), {
+    defaultStatusVariant: V,
+    allowPermanentClear: F
   } = g.n.useExperiment({
-    guildId: o.guild_id,
+    guildId: R.guild_id,
     location: "HangStatusPicker"
-  }), V = (0, y.V)(F), G = i.useRef(null), [z, W] = i.useState(null != (n = null == D ? true : D.status) ? n : ""), [q, Y] = i.useState(null != (l = null == D ? true : D.emoji) ? l : null), K = (0, u.e7)([b.Z], () => b.Z.getCurrentHangStatus()), X = B.length > 0, J = null == z || "" === z.trim(), Q = (0, v.Z)(o), $ = z.trim().length > 0 && z.trim() !== (null == D || null == (t = D.status) ? true : t.trim()) || null != q && !s()(q, null == D ? true : D.emoji), [ee, et] = i.useState(false), en = (0, u.e7)([b.Z], () => b.Z.getFavoritedStatuses().length >= b.o);
+  }), G = (0, y.V)(V), z = i.useRef(null), [W, q] = i.useState(null != (n = null == U ? true : U.status) ? n : ""), [Y, K] = i.useState(null != (l = null == U ? true : U.emoji) ? l : null), X = (0, u.e7)([b.Z], () => b.Z.getCurrentHangStatus()), J = G[X], Q = H.length > 0, $ = null == W || "" === W.trim(), ee = (0, v.Z)(R), et = W.trim().length > 0 && W.trim() !== (null == U || null == (t = U.status) ? true : t.trim()) || null != Y && !s()(Y, null == U ? true : U.emoji), [en, er] = i.useState(false), ei = (0, u.e7)([b.Z], () => b.Z.getFavoritedStatuses().length >= b.o), el = W.length > 0 || null != Y;
   i.useEffect(() => {
-    f.default.track(Z.rMx.HANG_STATUS_PICKER_OPENED, M(w({}, (0, C.Z)(o.id)), {
-      num_favorites: B.length,
-      num_recents: U.length
+    f.default.track(Z.rMx.HANG_STATUS_PICKER_OPENED, M(w({}, (0, C.Z)(R.id)), {
+      num_favorites: H.length,
+      num_recents: B.length
     }))
   }, []), i.useEffect(() => {
-    z.trim().length > 0 && ee && et(false), null == q && ee && et(false)
-  }, [z, q, ee]), i.useEffect(() => {
+    W.trim().length > 0 && en && er(false), null == Y && en && er(false)
+  }, [W, Y, en]), i.useEffect(() => {
     var e;
-    z !== (null != (e = null == D ? true : D.status) ? e : "") && "" !== z.trim() ? R(true) : R(false)
-  }, [z, null == D ? true : D.status, q, null == D ? true : D.emoji, R]), i.useEffect(() => {
-    null == k || k(null == G ? true : G.current)
-  }, [G, k]);
-  let er = i.useCallback(e => {
-      e !== K && ((0, m.Zx)(e, true), null != q && Y(null), "" !== z.trim() && W(""))
-    }, [K, q, z]),
-    ei = i.useCallback((e, t) => {
+    W !== (null != (e = null == U ? true : U.status) ? e : "") && "" !== W.trim() ? k(true) : k(false)
+  }, [W, null == U ? true : U.status, Y, null == U ? true : U.emoji, k]), i.useEffect(() => {
+    null == L || L(null == z ? true : z.current)
+  }, [z, L]);
+  let ea = i.useCallback(e => {
+      e !== X && ((0, m.Zx)(e, true), null != Y && K(null), "" !== W.trim() && q(""))
+    }, [X, Y, W]),
+    eo = i.useCallback(e => {
       let {
-        emoji: n,
-        status: r
+        emoji: t,
+        status: n
       } = e;
-      s()(n, null == D ? true : D.emoji) && r === (null == D ? true : D.status) || ((0, m._s)(e.status, e.emoji, true), Y(t ? null : e.emoji), W(t ? "" : e.status))
-    }, [null == D ? true : D.emoji, null == D ? true : D.status]),
-    el = i.useCallback(e => {
+      s()(t, null == U ? true : U.emoji) && n === (null == U ? true : U.status) || ((0, m._s)(e.status, e.emoji, true), K(e.emoji), q(e.status))
+    }, [null == U ? true : U.emoji, null == U ? true : U.status]),
+    es = i.useCallback(e => {
       var t, n;
-      null == e || null == (t = e.preventDefault) || t.call(e), null != q && 0 === z.trim().length && et(true), J || (ei({
-        status: z,
-        emoji: null != q ? q : {
+      null == e || null == (t = e.preventDefault) || t.call(e), null != Y && 0 === W.trim().length && er(true), $ || (eo({
+        status: W,
+        emoji: null != Y ? Y : {
           id: null,
           name: "\uD83D\uDCAD",
           animated: false
         }
-      }, true), null == (n = L.current) || n.blur())
-    }, [z, q, ei, J]),
-    ea = i.useCallback(() => {
-      let e = null,
-        t = null;
-      do {
-        var n;
-        if (0 === Q.length || (t = (null == (e = (0, c.sample)(Q)) ? true : e.id) != null ? {
-            id: e.id,
-            name: e.name,
-            animated: e.animated
+      }), null == (n = D.current) || n.blur())
+    }, [W, Y, eo, $]),
+    ec = i.useCallback(() => {
+      var e, t;
+      let n = null,
+        r = null;
+      do
+        if (0 === ee.length || (r = (null == (n = (0, c.sample)(ee)) ? true : n.id) != null ? {
+            id: n.id,
+            name: n.name,
+            animated: n.animated
           } : {
             id: null,
-            name: null != (n = null == e ? true : e.optionallyDiverseSequence) ? n : "",
+            name: null != (t = null == n ? true : n.optionallyDiverseSequence) ? t : "",
             animated: false
-          }, 1 === Q.length)) break
-      } while (null == e || (null == e ? true : e.name) == null || s()(q, t));
-      null != t && (null == e ? true : e.name) != null && (Y(t), W(e.name), f.default.track(Z.rMx.HANG_STATUS_RANDOMIZER_CLICKED, (0, C.Z)(o.id)))
-    }, [Q, q, o.id]),
-    eo = i.useCallback((e, t) => {
+          }, 1 === ee.length)) break; while (null == n || (null == n ? true : n.name) == null || s()(Y, r));
+      null != r && (null == n ? true : n.name) != null && (K(r), q(n.name), null == (e = D.current) || e.focus(), f.default.track(Z.rMx.HANG_STATUS_RANDOMIZER_CLICKED, (0, C.Z)(R.id)))
+    }, [ee, Y, R.id]),
+    eu = i.useCallback((e, t) => {
       let n = (0, _.Z)(t);
-      (!en || e) && ((0, m.tg)(n ? t : t.status, n ? null : t.emoji), f.default.track(Z.rMx.HANG_STATUS_FAVORITE_CLICKED, M(w({}, (0, C.Z)(o.id)), {
+      (!ei || e) && ((0, m.tg)(n ? t : t.status, n ? null : t.emoji), f.default.track(Z.rMx.HANG_STATUS_FAVORITE_CLICKED, M(w({}, (0, C.Z)(R.id)), {
         favorited: !e
       })))
-    }, [o.id, en]),
-    es = i.useCallback(() => {
-      R(false)
-    }, [R]),
-    ec = i.useCallback(() => {
+    }, [R.id, ei]),
+    ed = i.useCallback(() => {
+      k(false)
+    }, [k]),
+    ep = i.useCallback(() => {
       var e;
-      z !== (null != (e = null == D ? true : D.status) ? e : "") && "" !== z.trim() ? R(true) : R(false)
-    }, [R, z, null == D ? true : D.status]),
-    eu = i.useCallback((e, t, n) => {
+      W !== (null != (e = null == U ? true : U.status) ? e : "") && "" !== W.trim() ? k(true) : k(false)
+    }, [k, W, null == U ? true : U.status]),
+    eh = i.useCallback((e, t, n) => {
       var i;
       let l = (0, _.Z)(e),
-        a = l ? V[e] : null,
+        a = l ? G[e] : null,
         o = b.Z.isFavorited(e),
-        c = l ? (0, r.jsx)(E.Z, {
+        s = l ? (0, r.jsx)(E.Z, {
           userId: h.default.getId(),
           size: 20,
           hangStatusActivity: {
             type: Z.IIU.HANG_STATUS,
             state: e
           },
-          fallbackVariant: F,
+          fallbackVariant: V,
           className: N.icon
         }) : null != e.emoji && (0, r.jsx)(p.Z, {
           emoji: e.emoji,
@@ -163,19 +162,20 @@ function R(e) {
           className: N.icon
         });
       return (0, r.jsx)(P.L, {
-        isSelected: l ? K === e : s()(null == D ? true : D.emoji, e.emoji) && (null == D ? true : D.status) === e.status,
         label: l ? null != (i = null == a ? true : a.title) ? i : "" : e.status,
-        icon: c,
+        icon: s,
         setStatus: () => {
-          l ? er(e) : ei(e)
+          l ? ea(e) : eo(e)
         },
-        clearStatus: () => (0, m.Sc)(true, H),
         isFavorited: o,
-        onFavoriteClick: () => eo(o, e)
+        onFavoriteClick: () => eu(o, e)
       }, "".concat(n, "-").concat(t))
-    }, [F, ei, er, V, null == D ? true : D.emoji, null == D ? true : D.status, K, H, eo]);
+    }, [V, eo, ea, G, eu]),
+    ef = i.useCallback(() => {
+      (0, m.Sc)(true, F), K(null), q("")
+    }, [F]);
   return (0, r.jsxs)("div", {
-    ref: G,
+    ref: z,
     role: "menu",
     id: "hang-status-picker",
     tabIndex: false,
@@ -184,37 +184,47 @@ function R(e) {
       role: "group",
       className: a()(A.groupLabel, N.group),
       children: (0, r.jsxs)("form", {
-        onSubmit: el,
+        onSubmit: es,
         className: a()(A.item, N.input),
-        children: [(0, r.jsx)(d.oil, {
-          inputRef: L,
-          value: z,
-          onBlur: es,
-          onFocus: ec,
-          onChange: e => W(e.substring(0, I.s0)),
-          placeholder: T.intl.string(T.t.KPop4u),
-          leading: {
-            type: "emoji",
-            button: (0, r.jsx)(j.A, {
-              customStatusEmoji: q,
-              setCustomStatusEmoji: Y
-            })
-          },
-          trailing: {
+        children: [(0, r.jsxs)("div", {
+          className: N.inputRow,
+          children: [(0, r.jsx)(d.oil, {
+            inputRef: D,
+            value: el ? W : null != (o = null == J ? true : J.title) ? o : "",
+            onBlur: ed,
+            onFocus: ep,
+            onChange: e => q(e.substring(0, I.s0)),
+            placeholder: T.intl.string(T.t.KPop4u),
+            leading: {
+              type: "emoji",
+              button: (0, r.jsx)(j.A, {
+                customStatusEmoji: Y,
+                setCustomStatusEmoji: K,
+                selectedDefaultStatus: el ? null : X,
+                defaultStatusVariant: V
+              })
+            },
+            trailing: null == U && null == X || et ? true : {
+              icon: d.XHJ,
+              onClick: ef,
+              "aria-label": T.intl.string(T.t.S90Fub)
+            }
+          }), (0, r.jsx)(d.hU, {
+            variant: "secondary",
             icon: O.k,
-            onClick: ea,
+            onClick: ec,
             "aria-label": T.intl.string(T.t["5UAi5+"])
-          }
-        }), ee && (0, r.jsx)(d.Text, {
+          })]
+        }), en && (0, r.jsx)(d.Text, {
           variant: "text-xs/normal",
           className: N.inputHint,
           color: "text-danger",
           children: T.intl.string(T.t["s/oq0d"])
-        }), $ && !ee && (0, r.jsx)(d.Text, {
+        }), et && !en && (0, r.jsx)(d.Text, {
           variant: "text-xs/normal",
           className: N.inputHint,
           children: T.intl.format(T.t["VjkH/v"], {
-            onSave: () => el()
+            onSave: () => es()
           })
         })]
       })
@@ -223,8 +233,8 @@ function R(e) {
       role: "group",
       className: a()(A.groupLabel, N.group, N.scroller),
       children: [(0, r.jsx)(S.d, {
-        guildId: o.guild_id
-      }), X && (0, r.jsxs)(r.Fragment, {
+        guildId: R.guild_id
+      }), Q && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)("div", {
           className: N.subtitle,
           children: [(0, r.jsx)(d.Text, {
@@ -234,8 +244,8 @@ function R(e) {
           }), (0, r.jsx)(d.r7p, {
             size: "xxs"
           })]
-        }), B.map((e, t) => eu(e, t, "favorite"))]
-      }), U.length > 0 && X && (0, r.jsxs)(r.Fragment, {
+        }), H.map((e, t) => eh(e, t, "favorite"))]
+      }), B.length > 0 && Q && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
           role: "separator",
           className: N.separator
@@ -249,7 +259,7 @@ function R(e) {
             size: "xxs"
           })]
         })]
-      }), U.map((e, t) => eu(e, t, "recent"))]
+      }), B.map((e, t) => eh(e, t, "recent"))]
     })]
   })
 }

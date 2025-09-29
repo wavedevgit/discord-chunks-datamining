@@ -43,10 +43,10 @@ function S(e) {
   }), L = (0, l.e7)([c.ZP], () => null != c.ZP.getSelfEmbeddedActivityForLocation(c.ZP.getConnectedActivityLocation())), D = !N, U = i.useCallback(e => {
     "focus" !== e.type && M()
   }, [M]), B = (0, C.bp)() === O.IlC.POPOUT, {
-    parentAnalyticsLocation: F,
-    newestAnalyticsLocation: H
-  } = (0, m.ZP)(), V = i.useCallback(() => {
-    (0, b.v)(F, b.d.ACTIVITY), (0, g.Z)({
+    parentAnalyticsLocation: H,
+    newestAnalyticsLocation: V
+  } = (0, m.ZP)(), F = i.useCallback(() => {
+    (0, b.v)(H, b.d.ACTIVITY), (0, g.Z)({
       context: null != t ? {
         type: "channel",
         channel: t
@@ -54,9 +54,9 @@ function S(e) {
         type: "contextless"
       },
       openInPopout: B,
-      analyticsLocation: H
+      analyticsLocation: V
     })
-  }, [t, B, H, F]), G = [];
+  }, [t, B, V, H]), G = [];
   N || G.push(a.z.ACTIVITIES_MINI_SHELF_SPARKLES), (0, p.Z)(t.id) && !N && G.push(a.z.ACTIVITY_GDM_ROCKET_SPARKLE), N || G.push(a.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP);
   let z = i.useRef(false),
     W = i.useRef(null);
@@ -138,7 +138,7 @@ function S(e) {
                       label: D ? true : T,
                       isActivityActive: L,
                       onClick: () => {
-                        V(), (i === a.z.ACTIVITIES_MINI_SHELF_SPARKLES || i === a.z.ACTIVITY_GDM_ROCKET_SPARKLE || i === a.z.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_1_SPARKLES || i === a.z.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_2_SPARKLES || i === a.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP) && l(j.L.TAKE_ACTION), t === a.z.ACTIVITIES_VOICE_LAUNCHER_BADGE && n(j.L.TAKE_ACTION)
+                        F(), (i === a.z.ACTIVITIES_MINI_SHELF_SPARKLES || i === a.z.ACTIVITY_GDM_ROCKET_SPARKLE || i === a.z.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_1_SPARKLES || i === a.z.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_2_SPARKLES || i === a.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP) && l(j.L.TAKE_ACTION), t === a.z.ACTIVITIES_VOICE_LAUNCHER_BADGE && n(j.L.TAKE_ACTION)
                       },
                       onMouseEnter: U,
                       onMouseLeave: R

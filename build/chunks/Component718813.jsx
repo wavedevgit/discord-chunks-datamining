@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 718813, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => M
+  Z: () => G
 }), require("./539854.js");
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -21,9 +21,10 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk585483 = require("./585483.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
+  Chunk509950 = require("./509950.js"),
   Chunk590939 = require("./590939.js");
 
-function I(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -32,20 +33,20 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      I(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
 }
 
-function C(e, t) {
+function T(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -57,48 +58,54 @@ function C(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let T = (0, Chunk663993.Un)({
+let N = (0, Chunk663993.Un)({
     createPromise: () => require.e("69470").then(require.bind(require, 989804)),
     webpackId: 989804,
     name: "UserSettings"
   }),
-  N = (0, Chunk663993.Un)({
+  j = (0, Chunk663993.Un)({
     createPromise: () => require.e("79835").then(require.bind(require, 72493)),
     webpackId: 72493
   }),
-  j = (0, Chunk663993.Un)({
+  P = (0, Chunk663993.Un)({
+    createPromise: () => require.e("80448").then(require.bind(require, 765457)),
+    webpackId: 765457,
+    name: "CheckpointSlides"
+  }),
+  x = (0, Chunk663993.Un)({
     createPromise: () => Promise.all([require.e("36599"), require.e("7654"), require.e("58175"), require.e("98039"), require.e("86915")]).then(require.bind(require, 869779)),
     webpackId: 869779,
     name: "ChannelSettings"
   }),
-  P = (0, Chunk663993.Un)({
+  A = (0, Chunk663993.Un)({
     createPromise: () => require.e("45620").then(require.bind(require, 838819)),
     webpackId: 838819,
     name: "CollectiblesShop"
   }),
-  x = (0, Chunk663993.Un)({
+  Z = (0, Chunk663993.Un)({
     createPromise: () => Promise.all([require.e("36599"), require.e("7654"), require.e("58175"), require.e("76692"), require.e("8271"), require.e("15851"), require.e("51453"), require.e("845"), require.e("98039"), require.e("6850"), require.e("58227"), require.e("44686"), require.e("30378"), require.e("27087"), require.e("95140")]).then(require.bind(require, 994763)),
     webpackId: 994763,
     name: "GuildSettings"
   }),
-  A = {
-    [Chunk981631.S9g.USER_SETTINGS]: () => (0, Chunk951288.jsx)(T, {}),
-    [Chunk981631.S9g.CHANNEL_SETTINGS]: () => (0, Chunk951288.jsx)(j, {}),
-    [Chunk981631.S9g.GUILD_SETTINGS]: () => (0, Chunk951288.jsx)(x, {}),
-    [Chunk981631.S9g.COLLECTIBLES_SHOP]: () => (0, Chunk951288.jsx)(P, {}),
-    [Chunk981631.S9g.MANA_PLAYGROUND]: () => (0, Chunk951288.jsx)(N, {})
+  w = {
+    [Chunk981631.S9g.USER_SETTINGS]: () => (0, Chunk951288.jsx)(N, {}),
+    [Chunk981631.S9g.CHANNEL_SETTINGS]: () => (0, Chunk951288.jsx)(x, {}),
+    [Chunk981631.S9g.GUILD_SETTINGS]: () => (0, Chunk951288.jsx)(Z, {}),
+    [Chunk981631.S9g.COLLECTIBLES_SHOP]: () => (0, Chunk951288.jsx)(A, {}),
+    [Chunk981631.S9g.MANA_PLAYGROUND]: () => (0, Chunk951288.jsx)(j, {}),
+    [Chunk981631.S9g.CHECKPOINT]: () => (0, Chunk951288.jsx)(P, {})
   },
-  Z = "SHOWN",
-  w = "HIDDEN",
-  L = {
+  L = "SHOWN",
+  R = "HIDDEN",
+  D = {
     friction: 10,
     tension: 100
   };
 
-function R() {
+function k() {
   return Chunk647438.useEffect(() => (Chunk714338.Z.enable(), Chunk714338.Z.enableTemp(Chunk134616.u), () => Chunk714338.Z.disableTemp()), []), null
 }
-class D extends(r = Chunk647438.PureComponent) {
+class M extends(r = Chunk647438.PureComponent) {
   static getDerivedStateFromProps(e, t) {
     return e.mode !== t.mode ? {
       animating: true,
@@ -112,8 +119,8 @@ class D extends(r = Chunk647438.PureComponent) {
       mode: n
     } = e;
     if (t !== n) {
-      if (t === Z && n === w) return this.animateIn();
-      if (t === w && n === Z) return this.animateUnder()
+      if (t === L && n === R) return this.animateIn();
+      if (t === R && n === L) return this.animateUnder()
     }
   }
   componentWillEnter(e) {
@@ -136,11 +143,11 @@ class D extends(r = Chunk647438.PureComponent) {
       opacity: t,
       scale: n
     } = this.state;
-    s.Z.parallel([s.Z.spring(t, S({
+    s.Z.parallel([s.Z.spring(t, C({
       toValue: 1
-    }, L)), s.Z.spring(n, S({
+    }, D)), s.Z.spring(n, C({
       toValue: 1
-    }, L))]).start(() => this.animateComplete(e))
+    }, D))]).start(() => this.animateComplete(e))
   }
   animateOut(e) {
     c.ZP.Emitter.pause(500);
@@ -148,11 +155,11 @@ class D extends(r = Chunk647438.PureComponent) {
       opacity: t,
       scale: n
     } = this.state;
-    O.S.dispatch(E.CkL.LAYER_POP_START), s.Z.parallel([s.Z.spring(t, S({
+    O.S.dispatch(E.CkL.LAYER_POP_START), s.Z.parallel([s.Z.spring(t, C({
       toValue: 0
-    }, L)), s.Z.spring(n, S({
+    }, D)), s.Z.spring(n, C({
       toValue: 1.1
-    }, L))]).start(() => {
+    }, D))]).start(() => {
       e(), O.S.dispatch(E.CkL.LAYER_POP_COMPLETE)
     })
   }
@@ -162,11 +169,11 @@ class D extends(r = Chunk647438.PureComponent) {
       opacity: e,
       scale: t
     } = this.state;
-    Chunk748780.Z.parallel([Chunk748780.Z.spring(module, S({
+    Chunk748780.Z.parallel([Chunk748780.Z.spring(module, C({
       toValue: 0
-    }, L)), Chunk748780.Z.spring(exports, S({
+    }, D)), Chunk748780.Z.spring(exports, C({
       toValue: .93
-    }, L))]).start(() => this.animateComplete())
+    }, D))]).start(() => this.animateComplete())
   }
   animateComplete(e) {
     this.setState({
@@ -195,7 +202,7 @@ class D extends(r = Chunk647438.PureComponent) {
         for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
       }
       return i
-    }(exports, ["name", "mode", "children", "baseLayer"]), u = r === w, p = module || Chunk215569 ? this.getAnimatedStyle() : null, f = !Chunk215569 && !Chunk120356, h = (0, Chunk951288.jsx)(Chunk748780.Z.div, C(S({
+    }(exports, ["name", "mode", "children", "baseLayer"]), u = r === R, p = module || Chunk215569 ? this.getAnimatedStyle() : null, f = !Chunk215569 && !Chunk120356, h = (0, Chunk951288.jsx)(Chunk748780.Z.div, T(C({
       ref: e => this.containerRef.current = null != e ? e.componentRef : true,
       "data-layer": null != require ? require : "base",
       "aria-hidden": Chunk215569,
@@ -210,6 +217,8 @@ class D extends(r = Chunk647438.PureComponent) {
             return y.intl.string(y.t.pWG4zc);
           case E.S9g.MANA_PLAYGROUND:
             return "Component Playground";
+          case E.S9g.CHECKPOINT:
+            return y.intl.string(v.default["CdU/PD"]);
           default:
             return ""
         }
@@ -218,7 +227,7 @@ class D extends(r = Chunk647438.PureComponent) {
       className: o()(Chunk590939.layer, {
         [Chunk590939.baseLayer]: Chunk120356,
         [Chunk590939.animating]: module,
-        "stop-animations": r === w
+        "stop-animations": r === R
       }),
       style: Chunk37234
     }, Chunk442837), {
@@ -248,10 +257,10 @@ class D extends(r = Chunk647438.PureComponent) {
     }
   }
   constructor(e) {
-    super(e), I(this, "containerRef", l.createRef());
+    super(e), S(this, "containerRef", l.createRef());
     let t = 1,
       n = 1;
-    e.mode === w && (t = .93, n = 0), this.state = {
+    e.mode === R && (t = .93, n = 0), this.state = {
       animating: false,
       scale: new s.Z.Value(t),
       opacity: new s.Z.Value(n),
@@ -259,10 +268,10 @@ class D extends(r = Chunk647438.PureComponent) {
     }
   }
 }
-I(D, "defaultProps", {
+S(M, "defaultProps", {
   baseLayer: false
-}), I(D, "contextType", Chunk481060.Sfi);
-class k extends Chunk647438.PureComponent {
+}), S(M, "contextType", Chunk481060.Sfi);
+class U extends Chunk647438.PureComponent {
   componentDidMount() {
     Chunk585483.S.subscribe(Chunk981631.CkL.LAYER_POP_ESCAPE_KEY, Chunk37234.xf)
   }
@@ -277,25 +286,25 @@ class k extends Chunk647438.PureComponent {
     } = this.props, {
       length: r
     } = exports, l = [];
-    return Chunk647438.push((0, Chunk951288.jsx)(D, {
-      mode: 0 !== r || require ? w : Z,
+    return Chunk647438.push((0, Chunk951288.jsx)(M, {
+      mode: 0 !== r || require ? R : L,
       baseLayer: true,
       children: module
     }, "layer-base")), exports.forEach((e, t) => l.push(this.renderComponent(e, t, r))), Chunk647438
   }
   renderComponent(e, t, n) {
     let r;
-    return r = "string" == typeof e ? A[e]() : (0, i.jsx)(e, {}), (0, i.jsxs)(D, {
+    return r = "string" == typeof e ? w[e]() : (0, i.jsx)(e, {}), (0, i.jsxs)(M, {
       name: "string" == typeof e ? e : true,
-      mode: t === n - 1 ? Z : w,
-      children: [(0, i.jsx)(R, {}), r]
+      mode: t === n - 1 ? L : R,
+      children: [(0, i.jsx)(k, {}), r]
     }, "layer-".concat(t))
   }
   renderArtisanalHack() {
     return (0, Chunk951288.jsx)(Chunk481060.f6W, {
       theme: this.props.sidebarTheme,
       children: e => (0, i.jsx)("div", {
-        className: o()(v.bg, e)
+        className: o()(I.bg, e)
       })
     })
   }
@@ -310,11 +319,11 @@ class k extends Chunk647438.PureComponent {
   }
 }
 
-function M(e) {
+function G(e) {
   let t = (0, b.Ll)(),
     n = (0, c.e7)([_.Z], () => _.Z.getLayers()),
     r = (0, m.QP)(e => e.fullScreenLayers.length > 0);
-  return (0, i.jsx)(k, C(S({}, e), {
+  return (0, i.jsx)(U, T(C({}, e), {
     sidebarTheme: t,
     layers: n,
     hasFullScreenLayer: r

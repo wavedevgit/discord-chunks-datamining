@@ -73,7 +73,7 @@ function B(e, t) {
   }), e
 }
 
-function F(e) {
+function H(e) {
   let {
     focusedParticipant: t,
     channel: n
@@ -89,7 +89,7 @@ function F(e) {
   })
 }
 
-function H(e) {
+function V(e) {
   let {
     user: t,
     channel: n,
@@ -111,7 +111,7 @@ function H(e) {
   })
 }
 
-function V(e) {
+function F(e) {
   let t, {
       focusedApplication: n,
       focusedParticipant: i,
@@ -132,7 +132,7 @@ function V(e) {
       variant: "text-md/normal",
       color: "none",
       children: (0, c.Z)(n.name)
-    }), a && (0, r.jsx)(F, {
+    }), a && (0, r.jsx)(H, {
       channel: l,
       focusedParticipant: i
     })]
@@ -143,12 +143,12 @@ function V(e) {
     t = (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(y.ZP.Divider, {
         className: L.divider
-      }), (0, r.jsx)(H, {
+      }), (0, r.jsx)(V, {
         user: e,
         channel: l,
         stream: n,
         color: a ? "header-primary" : "none"
-      }), a && (0, r.jsx)(F, {
+      }), a && (0, r.jsx)(H, {
         channel: l,
         focusedParticipant: i
       })]
@@ -181,7 +181,7 @@ function G(e) {
   let Z = (0, a.e7)([d.Z], () => d.Z.getChannelStatus(t)),
     N = t.isGuildVoice() && c && null != Z && Z.length > 0,
     M = (0, I.ZP)(t),
-    F = N ? (0, r.jsx)(o.ua7, {
+    H = N ? (0, r.jsx)(o.ua7, {
       text: k.intl.string(k.t.Mgpxi4),
       delay: 500,
       position: "bottom",
@@ -190,7 +190,7 @@ function G(e) {
         className: l()(L.channelStatusClickable, {
           [L.hoverable]: M
         }),
-        onClick: M ? H : true,
+        onClick: M ? V : true,
         children: [(0, r.jsx)(o.Text, {
           variant: "text-xs/normal",
           className: l()(L.channelStatus, D.markup, {
@@ -209,7 +209,7 @@ function G(e) {
       }))
     }) : null;
 
-  function H() {
+  function V() {
     (0, o.ZDy)(async () => {
       let {
         default: e
@@ -234,7 +234,7 @@ function G(e) {
         className: l()(e, L.headerBar),
         innerClassName: L.headerBarChildren,
         toolbarClassName: L.toolbar,
-        childrenBottom: F,
+        childrenBottom: H,
         toolbar: (0, r.jsx)(T.Z, {
           channel: t,
           appContext: s,
@@ -261,7 +261,7 @@ function G(e) {
         }), (0, r.jsx)(_.TS, {
           channel: t,
           guild: i
-        }), (0, r.jsx)(V, {
+        }), (0, r.jsx)(F, {
           focusedApplication: E,
           focusedParticipant: g,
           channel: t

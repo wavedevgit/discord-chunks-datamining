@@ -76,10 +76,10 @@ function I(e) {
       width: D,
       height: U,
       layout: B,
-      idle: F
+      idle: H
     } = e,
-    H = null != A,
-    V = h.Z.getVideoComponent(),
+    V = null != A,
+    F = h.Z.getVideoComponent(),
     G = p.default.getId(),
     [z, W] = i.useState(null),
     q = (0, c.Z)(z),
@@ -200,7 +200,7 @@ function I(e) {
                   noBorder: ed >= D || eu >= U,
                   channel: M,
                   className: x.focusedVideo,
-                  videoComponent: V,
+                  videoComponent: F,
                   width: D,
                   participant: t,
                   onClick: l,
@@ -208,14 +208,14 @@ function I(e) {
                   onContextMenu: I,
                   onVideoResize: ev,
                   inCall: w,
-                  inPopout: H
+                  inPopout: V
                 })
               }, i) : null
             })
           })
         }), el ? (0, r.jsx)(o.animated.div, {
           className: a()(O.actionRow, {
-            [O.idle]: F
+            [O.idle]: H
           }),
           style: {
             bottom: eC.value

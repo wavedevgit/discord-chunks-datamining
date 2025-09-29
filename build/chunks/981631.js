@@ -1874,7 +1874,7 @@ var nA = function(e) {
     return e.THEATRE = "theatre", e.FULL_SCREEN = "full-screen", e.PIP = "pip", e.POPOUT = "popout", e.PORTRAIT = "portrait", e.LANDSCAPE = "landscape", e.MINIMIZED = "minimized", e
   }({}),
   nN = function(e) {
-    return e.USER_SETTINGS = "USER_SETTINGS", e.CHANNEL_SETTINGS = "CHANNEL_SETTINGS", e.GUILD_SETTINGS = "GUILD_SETTINGS", e.RTC_DEBUG = "RTC_DEBUG", e.COLLECTIBLES_SHOP = "COLLECTIBLES_SHOP", e.MANA_PLAYGROUND = "MANA_PLAYGROUND", e
+    return e.USER_SETTINGS = "USER_SETTINGS", e.CHANNEL_SETTINGS = "CHANNEL_SETTINGS", e.GUILD_SETTINGS = "GUILD_SETTINGS", e.RTC_DEBUG = "RTC_DEBUG", e.COLLECTIBLES_SHOP = "COLLECTIBLES_SHOP", e.MANA_PLAYGROUND = "MANA_PLAYGROUND", e.CHECKPOINT = "CHECKPOINT", e
   }({});
 let nR = Object.freeze({
   ALL: null,

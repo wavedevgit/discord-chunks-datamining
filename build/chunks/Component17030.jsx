@@ -1,7 +1,7 @@
 /** Chunk was on 37384 **/
 /** chunk id: 17030, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => b
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -10,25 +10,44 @@ var Chunk951288 = require("./951288.js"),
   Chunk596454 = require("./596454.jsx"),
   Chunk318766 = require("./318766.jsx"),
   Chunk907040 = require("./907040.jsx"),
+  Chunk314897 = require("./314897.js"),
   Chunk592125 = require("./592125.js"),
   Chunk944486 = require("./944486.js"),
-  Chunk185923 = require("./185923.js");
+  Chunk223135 = require("./223135.jsx"),
+  Chunk981631 = require("./981631.js"),
+  Chunk185923 = require("./185923.js"),
+  Chunk34101 = require("./34101.js");
 
-function h(e) {
+function b(e) {
   let {
     customStatusEmoji: t,
-    setCustomStatusEmoji: n
-  } = e, h = i.useRef(null), f = (0, l.e7)([d.Z, u.Z], () => u.Z.getChannel(d.Z.getVoiceChannelId()));
+    setCustomStatusEmoji: n,
+    selectedDefaultStatus: b,
+    defaultStatusVariant: y
+  } = e, C = i.useRef(null), _ = (0, l.e7)([p.Z, d.Z], () => d.Z.getChannel(p.Z.getVoiceChannelId())), v = i.useCallback(() => null != t ? (0, r.jsx)(o.Z, {
+    emojiId: t.id,
+    emojiName: t.name,
+    animated: !!t.animated
+  }) : null != b ? (0, r.jsx)(h.Z, {
+    className: g.icon,
+    userId: u.default.getId(),
+    size: 20,
+    hangStatusActivity: {
+      type: f.IIU.HANG_STATUS,
+      state: b
+    },
+    fallbackVariant: y
+  }) : null, [t, y, b]);
   return (0, r.jsx)(a.yRy, {
-    targetElementRef: h,
+    targetElementRef: C,
     renderPopout: e => {
       var t;
       let {
         closePopout: i
       } = e;
       return (0, r.jsx)(c.Z, {
-        channel: f,
-        guildId: null != (t = null == f ? true : f.guild_id) ? t : true,
+        channel: _,
+        guildId: null != (t = null == _ ? true : _.guild_id) ? t : true,
         closePopout: i,
         onSelectEmoji: e => {
           let {
@@ -49,7 +68,7 @@ function h(e) {
             })
           })(t), r && i()
         },
-        pickerIntention: p.Hz.STATUS
+        pickerIntention: m.Hz.STATUS
       })
     },
     position: "left",
@@ -78,14 +97,10 @@ function h(e) {
         }
         return e
       }({}, e), l = l = {
-        ref: h,
+        ref: C,
         active: a,
         tabIndex: 0,
-        renderButtonContents: null == t ? null : () => (0, r.jsx)(o.Z, {
-          emojiId: t.id,
-          emojiName: t.name,
-          animated: !!t.animated
-        })
+        renderButtonContents: null == t && null == b ? null : v
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {

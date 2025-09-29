@@ -81,11 +81,11 @@ function A(e) {
     C.default.track(E.rMx.CHANNEL_ATTACH_MENU_USE_APPS_CLICKED), M("/", (0, O.JM)("/"))
   }
 
-  function F() {
+  function H() {
     R()
   }
 
-  function H() {
+  function V() {
     (0, h.Q3)(o.z.POLLS_CHAT_INPUT_COACHMARK, {
       dismissAction: S.L.TAKE_ACTION
     }), (0, s.ZDy)(async () => {
@@ -129,7 +129,7 @@ function A(e) {
     })
   }
 
-  function V() {
+  function F() {
     C.default.track(E.rMx.CHANNEL_ATTACH_MENU_START_ACTIVITY_CLICKED, {
       channel_type: t.type,
       channel_id: t.id,
@@ -205,13 +205,13 @@ function A(e) {
           return (0, r.jsx)(s.sNh, {
             id: "clips",
             label: i,
-            action: F
+            action: H
           }, "clips");
         case j.r.POLL:
           return (0, r.jsx)(s.sNh, {
             id: "poll",
             label: i,
-            action: H
+            action: V
           }, "poll");
         case j.r.INVITE_TO_PLAY_GAME:
           return (0, r.jsx)(s.sNh, {
@@ -271,7 +271,7 @@ function A(e) {
           return (0, r.jsx)(s.sNh, {
             id: "activity",
             label: i,
-            action: V,
+            action: F,
             hint: (0, r.jsx)(N, {})
           }, "activity");
         case j.r.SCHEDULED_MESSAGE:

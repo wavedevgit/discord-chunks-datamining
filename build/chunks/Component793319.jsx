@@ -156,7 +156,7 @@ function eE(e) {
             visibleContent: t,
             markAsDismissed: n
           } = e;
-          if (t === d.z.TRIAL_NUX_STREAM_COACH_MARK) return j(true), (0, r.jsx)(F.h, {
+          if (t === d.z.TRIAL_NUX_STREAM_COACH_MARK) return j(true), (0, r.jsx)(H.h, {
             buttonRef: b,
             dismissed: false,
             onDismiss: () => {
@@ -165,7 +165,7 @@ function eE(e) {
           })
         }
       })
-    })(), (0, r.jsx)(V.Z, {
+    })(), (0, r.jsx)(F.Z, {
       children: (0, r.jsx)(p.yRy, {
         targetElementRef: y,
         renderPopout: e => {
@@ -450,10 +450,10 @@ let eT = function(e) {
     canGoLive: R
   } = (0, u.cj)([er.Z], () => ({
     canGoLive: (0, w.Z)(er.Z)
-  })), k = (0, N.Z)(), D = (0, u.e7)([T.Z], () => null != T.Z.getAwaitingRemoteSessionInfo()), B = null != k, F = (0, u.e7)([ei.Z], () => {
+  })), k = (0, N.Z)(), D = (0, u.e7)([T.Z], () => null != T.Z.getAwaitingRemoteSessionInfo()), B = null != k, H = (0, u.e7)([ei.Z], () => {
     var e;
     return (null != (e = null == k ? true : k.channelId) ? e : ei.Z.getVoiceChannelId()) === n.id
-  }), V = (0, u.e7)([y.ZP], () => y.ZP.getCurrentEmbeddedActivity()), {
+  }), F = (0, u.e7)([y.ZP], () => y.ZP.getCurrentEmbeddedActivity()), {
     reachedLimit: z,
     limit: W
   } = (0, eo.Z)(n), {
@@ -465,7 +465,7 @@ let eT = function(e) {
     showRefreshedAudioContextMenu: J
   } = (0, U.e)({
     location: _.Z.VOICE_CONTROL_TRAY
-  }), et = (0, H.Z)(n), en = i.useRef(null), eu = i.useRef(null), ep = Y ? e => {
+  }), et = (0, V.Z)(n), en = i.useRef(null), eu = i.useRef(null), ep = Y ? e => {
     (0, f.jW)(e, () => Promise.resolve(() => (0, r.jsx)(O.default, {
       onClose: f.Zy,
       renderInputDevices: true,
@@ -478,7 +478,7 @@ let eT = function(e) {
       onInteraction: eZ("AudioDeviceMenu")
     })))
   } : true;
-  return F ? (0, r.jsx)(v.Gt, {
+  return H ? (0, r.jsx)(v.Gt, {
     value: q,
     children: (0, r.jsxs)(b.Z, {
       section: eb.jXE.VOICE_CONTROL_TRAY,
@@ -615,7 +615,7 @@ let eT = function(e) {
             remoteMode: B
           })]
         }), (0, r.jsx)(eP, {
-          connectedEmbeddedActivity: V,
+          connectedEmbeddedActivity: F,
           currentUser: C,
           channel: n,
           onDisconnectCall: o

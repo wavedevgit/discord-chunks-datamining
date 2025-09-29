@@ -146,12 +146,12 @@ let D = Chunk647438.forwardRef(function(e, t) {
     return () => clearTimeout(e)
   }, []);
   let {
-    enabled: F
+    enabled: H
   } = P.c.useExperiment({
     location: "ActivitiesMiniShelf"
   }, {
     autoTrackExposure: true
-  }), H = i.useCallback(() => {
+  }), V = i.useCallback(() => {
     (0, y.Z)({
       context: null != l ? {
         type: "channel",
@@ -162,12 +162,12 @@ let D = Chunk647438.forwardRef(function(e, t) {
       openInPopout: U,
       analyticsLocation: D
     }), u(), g()
-  }, [l, D, g, u, U]), V = i.useCallback(e => {
+  }, [l, D, g, u, U]), F = i.useCallback(e => {
     c(), S.default.track(A.rMx.ACTIVITIES_MINI_SHELF_HOVERED, {
       channel_id: l.id,
       guild_id: l.getGuildId()
     })
-  }, [c, l]), G = F ? p.iWm : p.nG3;
+  }, [c, l]), G = H ? p.iWm : p.nG3;
   return (0, r.jsx)(m.Gt, {
     value: R,
     children: (0, r.jsx)(j.Z, {
@@ -185,7 +185,7 @@ let D = Chunk647438.forwardRef(function(e, t) {
           })
         }), (0, r.jsxs)("div", {
           className: M.container,
-          onMouseEnter: V,
+          onMouseEnter: F,
           onMouseLeave: u,
           children: [(0, r.jsxs)("div", {
             className: M.titleContainer,
@@ -201,7 +201,7 @@ let D = Chunk647438.forwardRef(function(e, t) {
               })]
             }), (0, r.jsxs)(p.P3F, {
               className: M.titleRight,
-              onClick: H,
+              onClick: V,
               children: [(0, r.jsx)(p.Text, {
                 variant: "eyebrow",
                 children: w.intl.string(w.t["K8+z4e"])
