@@ -57,14 +57,14 @@ function U(e) {
     location: u,
     reward: _,
     decoration: p,
-    onUseNow: x,
-    preview: f
-  } = e, h = o.useRef(null), [C, v] = o.useState(null), j = o.useRef(new l.qA), w = (0, d.e7)([m.Z], () => m.Z.useReducedMotion), N = (0, d.e7)([I.default], () => I.default.getCurrentUser()), b = (null == (n = s.userStatus) ? true : n.claimedAt) != null, [T, R] = o.useState(true === f || b ? "claimed" : "loading");
+    onUseNow: f,
+    preview: x
+  } = e, h = o.useRef(null), [C, v] = o.useState(null), j = o.useRef(new l.qA), w = (0, d.e7)([m.Z], () => m.Z.useReducedMotion), N = (0, d.e7)([I.default], () => I.default.getCurrentUser()), b = (null == (n = s.userStatus) ? true : n.claimedAt) != null, [T, R] = o.useState(true === x || b ? "claimed" : "loading");
   o.useEffect(() => {
-    b || true === f || (0, P.QB)(s.id, y.y$.CROSS_PLATFORM, u).then(() => R("claimed")).catch(() => R("error"))
-  }, [s, u, b, f]);
-  let S = true === f && null === p && (null == _ ? true : _.skuId) !== "",
-    A = null == N || null == p && true !== f || S || "loading" === T;
+    b || true === x || (0, P.QB)(s.id, y.y$.CROSS_PLATFORM, u).then(() => R("claimed")).catch(() => R("error"))
+  }, [s, u, b, x]);
+  let S = true === x && null === p && (null == _ ? true : _.skuId) !== "",
+    A = null == N || null == p && true !== x || S || "loading" === T;
   return (0, a.jsxs)(a.Fragment, {
     children: [(0, a.jsx)(l.O_, {
       ref: v,
@@ -95,7 +95,7 @@ function U(e) {
           isSaving: "applying" === T,
           onClose: r,
           onConfirm: () => {
-            R("applying"), x().finally(r)
+            R("applying"), f().finally(r)
           }
         })
       })
@@ -138,7 +138,7 @@ function W(e) {
     onConfirm: l
   } = e, s = (0, A.fh)(n, A.eC.REWARD).url, d = (0, R.f$)(n.config), {
     fractionalState: u
-  } = (0, x.Z)(), m = u === Z.a$.FP_ONLY, _ = (0, S.Qy)(n.config);
+  } = (0, f.Z)(), m = u === Z.a$.FP_ONLY, _ = (0, S.Qy)(n.config);
   return (0, a.jsxs)("div", {
     className: z.claimedRootContainer,
     children: [(0, a.jsxs)("div", {
@@ -216,11 +216,11 @@ function G(e) {
     onClose: l,
     transitionState: d,
     preview: c
-  } = e, m = o.useMemo(() => (0, R.xn)(r.config), [r]), [p, x] = function(e) {
+  } = e, m = o.useMemo(() => (0, R.xn)(r.config), [r]), [p, f] = function(e) {
     let {
       product: n,
       isFetching: t
-    } = (0, f.T)(e), {} = (0, j.Z)({}), a = o.useMemo(() => {
+    } = (0, x.T)(e), {} = (0, j.Z)({}), a = o.useMemo(() => {
       if (null == n || t) return null;
       let e = n.items.find(e => e.type === s.Z.AVATAR_DECORATION);
       return null == e ? null : e
@@ -242,7 +242,7 @@ function G(e) {
     location: i,
     reward: m,
     decoration: p,
-    onUseNow: x,
+    onUseNow: f,
     preview: c
   })
 }

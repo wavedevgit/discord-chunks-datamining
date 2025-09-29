@@ -11,19 +11,22 @@ let o = function(e) {
   let {
     quest: t,
     dimensions: n,
-    className: o
-  } = e, s = (0, i.fh)(t, i.eC.HERO_IMAGE), l = null != n ? (0, i.nK)(n.width, n.height) : true, c = (0, i.f0)(s.url, l);
-  return null != c ? (0, r.jsx)("img", {
-    src: c,
+    className: o,
+    assetRef: s
+  } = e, l = (0, i.fh)(t, i.eC.HERO_IMAGE), c = null != n ? (0, i.nK)(n.width, n.height) : true, u = (0, i.f0)(l.url, c);
+  return null != u ? (0, r.jsx)("img", {
+    ref: s,
+    src: u,
     alt: t.config.messages.questName,
     className: o
-  }) : s.isAnimated ? (0, r.jsx)(a.Z, {
+  }) : l.isAnimated ? (0, r.jsx)(a.Z, {
+    ref: s,
     className: o,
     autoPlay: false,
     loop: false,
     muted: true,
     playsInline: true,
     controls: false,
-    src: s.url
+    src: l.url
   }) : null
 }

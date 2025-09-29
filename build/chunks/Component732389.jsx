@@ -23,24 +23,24 @@ let g = e => {
     className: t,
     upsellText: o
   } = e, g = c.default.getCurrentUser(), h = (0, u.yd)(null == g ? true : g.premiumType, p.p9.TIER_2), C = (0, m._)({
-    defaultResponse: x.intl.string(x.t["8x0jKS"]),
-    onNonTier2Subscriber: x.intl.string(x.t.IJI7ys)
+    defaultResponse: f.intl.string(f.t["8x0jKS"]),
+    onNonTier2Subscriber: f.intl.string(f.t.IJI7ys)
   });
   return h ? null : (0, a.jsxs)("div", {
-    className: r()(f.upsellContainer, t),
+    className: r()(x.upsellContainer, t),
     children: [(0, a.jsxs)("div", {
-      className: f.row,
+      className: x.row,
       children: [(0, a.jsx)(i.SrA, {
         size: "md",
         color: d.JX.PREMIUM_TIER_2
       }), (0, a.jsx)(l.xvT, {
         variant: "text-sm/medium",
         color: "header-primary",
-        className: f.upsellText,
+        className: x.upsellText,
         children: o
       })]
     }), (0, a.jsx)(_.Z, {
-      className: f.button,
+      className: x.button,
       size: s.zx.Sizes.SMALL,
       look: s.zx.Looks.BLANK,
       color: s.zx.Colors.CUSTOM,

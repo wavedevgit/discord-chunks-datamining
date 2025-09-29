@@ -1,7 +1,7 @@
 /** Chunk was on 74560 **/
-/** chunk id: 246855, original params: e,n,t (module,exports,require) **/
+/** chunk id: 246855, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => x
+  default: () => v
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,124 +17,127 @@ var Chunk951288 = require("./951288.js"),
   Chunk497505 = require("./497505.js"),
   Chunk515108 = require("./515108.jsx"),
   Chunk291967 = require("./291967.jsx"),
+  Chunk46140 = require("./46140.js"),
   Chunk981631 = require("./981631.js"),
   Chunk215023 = require("./215023.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk651353 = require("./651353.js"),
   Chunk201284 = require("./201284.js");
 
-function y(e) {
+function A(e) {
   let {
-    className: n
+    className: t
   } = e;
-  return (0, a.jsx)(o.Z, {
-    className: n,
+  return (0, r.jsx)(o.Z, {
+    className: t,
     playsInline: true,
     controls: false,
     autoPlay: true,
     loop: true,
-    children: (0, a.jsx)("source", {
-      src: b.Z,
+    children: (0, r.jsx)("source", {
+      src: y.Z,
       type: "video/webm"
     })
   })
 }
 
-function A() {
+function N() {
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk651353.orbsContainer,
-    children: [(0, Chunk951288.jsx)(y, {
+    children: [(0, Chunk951288.jsx)(A, {
       className: Chunk651353.centerOrb
     }), (0, Chunk951288.jsxs)("div", {
       className: Chunk651353.smallOrbContainer,
-      children: [(0, Chunk951288.jsx)(y, {
+      children: [(0, Chunk951288.jsx)(A, {
         className: Chunk651353.smallOrb
-      }), (0, Chunk951288.jsx)(y, {
+      }), (0, Chunk951288.jsx)(A, {
         className: Chunk651353.smallOrb
-      }), (0, Chunk951288.jsx)(y, {
+      }), (0, Chunk951288.jsx)(A, {
         className: Chunk651353.smallOrb
-      }), (0, Chunk951288.jsx)(y, {
+      }), (0, Chunk951288.jsx)(A, {
         className: Chunk651353.smallOrb
       })]
     })]
   })
 }
 
-function N(e) {
+function x(e) {
   let {
-    onClose: n,
-    orbsEarned: t,
-    orbsBalance: r
+    onClose: t,
+    orbsEarned: n,
+    orbsBalance: a
   } = e, o = async () => {
     (0, c.Y)({
-      pageType: R.ZY5.GLOBAL_DISCOVERY_QUESTS,
-      sectionType: R.jXE.ORBS_REWARD_MODAL,
-      ctaObject: R.qAy.CTA_TO_ORBS_SHOP
-    }), await n(), (0, s.mK)({
+      pageType: g.ZY5.GLOBAL_DISCOVERY_QUESTS,
+      sectionType: g.jXE.ORBS_REWARD_MODAL,
+      ctaObject: g.qAy.CTA_TO_ORBS_SHOP
+    }), await t(), (0, s.mK)({
       openInLayer: false,
       tab: E.AW.ORBS,
       analyticsLocations: [],
       analyticsSource: l.Z.QUEST_REWARD_MODAL
     })
   };
-  return (0, a.jsxs)("div", {
-    className: f.contentContainer,
-    children: [(0, a.jsx)(A, {}), (0, a.jsxs)("div", {
-      className: f.copyContainer,
-      children: [(0, a.jsxs)("div", {
-        className: f.heading,
-        children: [(0, a.jsx)(u.M, {
+  return (0, r.jsxs)("div", {
+    className: b.contentContainer,
+    children: [(0, r.jsx)(N, {}), (0, r.jsxs)("div", {
+      className: b.copyContainer,
+      children: [(0, r.jsxs)("div", {
+        className: b.heading,
+        children: [(0, r.jsx)(u.M, {
           shouldUseThemeColor: true,
-          className: f.orbsIcon
-        }), (0, a.jsx)(i.X6q, {
+          className: b.orbsIcon
+        }), (0, r.jsx)(i.X6q, {
           variant: "heading-xl/bold",
           color: "header-primary",
-          children: g.intl.format(g.t["/UTD6e"], {
-            orbsEarned: t
+          children: R.intl.format(R.t["/UTD6e"], {
+            orbsEarned: n
           })
         })]
-      }), (0, a.jsx)(i.Text, {
+      }), null != a ? (0, r.jsx)(i.Text, {
         variant: "text-sm/medium",
         color: "text-secondary",
-        children: g.intl.format(g.t.g4t9a2, {
-          orbsBalance: r
+        children: R.intl.format(R.t.g4t9a2, {
+          orbsBalance: a
         })
-      })]
-    }), (0, a.jsx)(i.zxk, {
+      }) : null]
+    }), (0, r.jsx)(i.zxk, {
       variant: "secondary",
       size: "sm",
-      text: g.intl.string(g.t.WYchdX),
+      text: R.intl.string(R.t.WYchdX),
       onClick: o,
       fullWidth: true
     })]
   })
 }
 
-function x(e) {
-  var n;
+function v(e) {
+  var t;
   let {
-    quest: t,
+    quest: n,
     onClose: i,
     transitionState: l,
     sourceQuestContent: s,
     location: o
-  } = e, c = (null == (n = t.userStatus) ? true : n.claimedAt) != null, {
+  } = e, c = (null == (t = n.userStatus) ? true : t.claimedAt) != null, {
     balance: u,
-    error: R
-  } = (0, d.A)(), E = (0, _.LM)(t.config), [f, b] = r.useState(c ? "success" : "loading");
-  r.useEffect(() => {
-    c || "loading" !== f || (0, h.QB)(t.id, m.y$.CROSS_PLATFORM, o).then(() => b("success")).catch(() => b("error"))
-  }, [t.id, c, f, o]);
-  let y = "loading" === f || null == u && null == R,
-    A = "error" === f || null == E || null == u && null != R;
-  return y || A ? null : (0, a.jsx)(C.Z, {
+    error: g
+  } = (0, d.A)(), E = (0, _.LM)(n.config), [b, y] = a.useState(c ? "success" : "loading");
+  a.useEffect(() => {
+    c || "loading" !== b || (0, h.QB)(n.id, m.y$.CROSS_PLATFORM, o).then(() => y("success")).catch(() => y("error"))
+  }, [n.id, c, b, o]);
+  let A = "error" === b || null == E || null == u && null != g;
+  return (0, r.jsx)(C.Z, {
     onClose: i,
     transitionState: l,
-    quest: t,
+    quest: n,
     sourceQuestContent: s,
-    rewardContent: (0, a.jsx)(p.Z, {
-      rewardName: g.intl.string(g.t.Lmysvb),
-      children: (0, a.jsx)(N, {
+    location: f.dr.ORBS_REWARD_MODAL,
+    isRewardContentLoading: "loading" === b || null == u && null == g,
+    rewardContentHasError: A,
+    rewardContent: A ? null : (0, r.jsx)(p.Z, {
+      rewardName: R.intl.string(R.t.Lmysvb),
+      children: (0, r.jsx)(x, {
         onClose: i,
         orbsEarned: E,
         orbsBalance: u

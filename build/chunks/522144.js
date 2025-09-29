@@ -1,5 +1,5 @@
 /** Chunk was on 76418 **/
-/** chunk id: 522144, original params: e,n,t (module,exports,require) **/
+/** chunk id: 522144, original params: e,t,n (module,exports,require) **/
 module.exports = {
   contentContainer: "contentContainer__3d643",
   rewardTileContainer: "rewardTileContainer__3d643",

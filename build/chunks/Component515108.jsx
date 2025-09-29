@@ -1,55 +1,98 @@
 /** Chunk was on 96861 **/
 /** chunk id: 515108, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => c
-});
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
-var Chunk481060 = require("./481060.js"),
+  Z: () => p
+}), require("./388685.js");
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
+  Chunk82659 = require("./82659.jsx"),
+  Chunk481060 = require("./481060.js"),
   Chunk497505 = require("./497505.js"),
   Chunk602667 = require("./602667.jsx"),
   Chunk434717 = require("./434717.jsx"),
+  Chunk388032 = require("./388032.jsx"),
   Chunk955082 = require("./955082.js");
 
-function c(e) {
+function m(e) {
+  let {
+    onClose: t,
+    transitionState: n
+  } = e;
+  return (0, r.jsx)(i.Modal, {
+    size: "md",
+    title: u.intl.string(u.t.Hd3D8f),
+    actions: [{
+      variant: "primary",
+      text: u.intl.string(u.t.cpT0Cg),
+      onClick: t
+    }],
+    onClose: t,
+    transitionState: n,
+    children: (0, r.jsx)(o.Text, {
+      variant: "text-md/medium",
+      color: "text-secondary",
+      children: u.intl.string(u.t.Ij97SE)
+    })
+  })
+}
+
+function p(e) {
   let {
     quest: t,
     sourceQuestContent: n,
-    transitionState: c,
+    transitionState: i,
     onClose: u,
-    rewardContent: d
-  } = e, m = i.jn.REWARD_MODAL;
-  return (0, r.jsx)(o.A, {
+    rewardContent: p,
+    isRewardContentLoading: C,
+    rewardContentHasError: f,
+    location: h
+  } = e, j = s.jn.REWARD_MODAL, [y, v] = a.useState(true);
+  if (f) return (0, r.jsx)(m, {
+    onClose: u,
+    transitionState: i
+  });
+  let x = C || y;
+  return (0, r.jsx)(l.A, {
     questOrQuests: t,
-    questContent: m,
+    questContent: j,
     sourceQuestContent: n,
-    children: e => (0, r.jsx)("div", {
-      ref: e,
-      children: (0, r.jsxs)(a.Y0X, {
-        "data-migration-pending": true,
-        transitionState: c,
-        size: a.CgR.DYNAMIC,
-        className: l.modal,
-        parentComponent: "QuestRewardV2ModalBase",
-        children: [(0, r.jsx)(a.olH, {
+    children: e => (0, r.jsxs)(r.Fragment, {
+      children: [x ? (0, r.jsx)(o.$jN, {
+        className: d.spinner,
+        type: o.$jN.Type.WANDERING_CUBES
+      }) : null, (0, r.jsx)("div", {
+        ref: e,
+        style: {
+          visibility: x ? "hidden" : "visible"
+        },
+        children: (0, r.jsxs)(o.Y0X, {
           "data-migration-pending": true,
-          className: l.closeButton,
-          onClick: u,
-          withCircleBackground: true
-        }), (0, r.jsxs)("div", {
-          className: l.modalContent,
-          children: [(0, r.jsx)("div", {
-            className: l.leftPanel,
-            children: d
-          }), (0, r.jsx)("div", {
-            className: l.rightPanel,
-            children: (0, r.jsx)(s.Z, {
-              quest: t,
-              sourceQuestContent: n
-            })
+          transitionState: x ? o.Dvm.HIDDEN : i,
+          size: o.CgR.DYNAMIC,
+          className: d.modal,
+          parentComponent: "QuestRewardV2ModalBase",
+          children: [(0, r.jsx)(o.olH, {
+            "data-migration-pending": true,
+            className: d.closeButton,
+            onClick: u,
+            withCircleBackground: true
+          }), (0, r.jsxs)("div", {
+            className: d.modalContent,
+            children: [(0, r.jsx)("div", {
+              className: d.leftPanel,
+              children: p
+            }), (0, r.jsx)("div", {
+              className: d.rightPanel,
+              children: (0, r.jsx)(c.Z, {
+                quest: t,
+                sourceQuestContent: n,
+                onLoadComplete: () => v(false),
+                location: h
+              })
+            })]
           })]
-        })]
-      })
+        })
+      })]
     })
   })
 }
