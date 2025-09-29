@@ -31,22 +31,22 @@ function N(e) {
   let {
     guildId: n,
     instance: t
-  } = e, i = (0, j.Z)(t), N = "Portkey", [P, S] = (0, u.US)([c.z.GAME_SERVER_HOSTING_PORTKEY_TOS]), w = P !== c.z.GAME_SERVER_HOSTING_PORTKEY_TOS, T = (0, l.e7)([m.Z], () => m.Z.getDetectableGame(t.gameId)), E = r.useCallback(() => {
-    w ? (0, _.Z)(n, t) : (0, O.Z)({
-      provider: N,
+  } = e, i = (0, j.Z)(t), N = null != t.serverIP && null != t.port, P = "Portkey", [S, w] = (0, u.US)([c.z.GAME_SERVER_HOSTING_PORTKEY_TOS]), T = S !== c.z.GAME_SERVER_HOSTING_PORTKEY_TOS, E = (0, l.e7)([m.Z], () => m.Z.getDetectableGame(t.gameId)), k = r.useCallback(() => {
+    T ? (0, _.Z)(n, t) : (0, O.Z)({
+      provider: P,
       onAccept: () => {
-        S(h.L.TAKE_ACTION), (0, _.Z)(n, t)
+        w(h.L.TAKE_ACTION), (0, _.Z)(n, t)
       }
     })
-  }, [t, w, S, n]), k = r.useCallback(() => {
+  }, [t, T, w, n]), Z = r.useCallback(() => {
     (0, g.JG)(i), (0, d.showToast)((0, d.createToast)(C.intl.string(C.t["+5kSoa"]), d.ToastType.SUCCESS))
-  }, [i]), Z = (0, x.Z)(n), D = (0, v.Z)(t.gameId, "cover");
+  }, [i]), D = (0, x.Z)(n), R = (0, v.Z)(t.gameId, "cover");
   return (0, a.jsxs)("div", {
     className: I.card,
     children: [(0, a.jsxs)("div", {
       className: I.serverHeader,
       children: [(0, a.jsx)("img", {
-        src: null != D ? D : "",
+        src: null != R ? R : "",
         alt: "",
         className: I.gameImage
       }), (0, a.jsxs)("div", {
@@ -57,14 +57,14 @@ function N(e) {
         }), (0, a.jsxs)(d.Text, {
           variant: "text-sm/medium",
           color: "text-tertiary",
-          children: [null != T ? "".concat(T.name, " • ") : "", t.planName]
+          children: [null != E ? "".concat(E.name, " • ") : "", t.planName]
         })]
       })]
     }), (0, a.jsx)("div", {
       className: I.serverDetails,
       children: (0, a.jsxs)("div", {
         className: I.detailsGrid,
-        children: [(0, a.jsxs)("div", {
+        children: [t.maxConnectionsCount > 0 && (0, a.jsxs)("div", {
           className: I.detailItem,
           children: [(0, a.jsx)(d.Text, {
             variant: "text-xs/semibold",
@@ -73,21 +73,21 @@ function N(e) {
             variant: "text-sm/medium",
             children: "".concat(t.onlineConnectionsCount, " / ").concat(t.maxConnectionsCount)
           })]
-        }), (0, a.jsxs)("div", {
+        }), N && (0, a.jsxs)("div", {
           className: I.detailItem,
           children: [(0, a.jsx)(d.Text, {
             variant: "text-xs/semibold",
             children: C.intl.string(y.default["9pw/yM"])
           }), (0, a.jsx)("div", {
             className: I.serverIpContainer,
-            children: w ? (0, a.jsxs)(a.Fragment, {
+            children: T ? (0, a.jsxs)(a.Fragment, {
               children: [(0, a.jsx)(d.Text, {
                 variant: "text-sm/medium",
                 children: i
               }), (0, a.jsx)(d.P3F, {
                 className: I.copyButton,
                 "aria-label": C.intl.string(C.t.OpuAlJ),
-                onClick: k,
+                onClick: Z,
                 children: (0, a.jsx)(d.TIy, {
                   size: "sm"
                 })
@@ -95,9 +95,9 @@ function N(e) {
             }) : (0, a.jsx)(b.Z, {
               onClick: () => {
                 (0, O.Z)({
-                  provider: N,
+                  provider: P,
                   onAccept: () => {
-                    S(h.L.TAKE_ACTION), (0, _.Z)(n, t)
+                    w(h.L.TAKE_ACTION), (0, _.Z)(n, t)
                   }
                 })
               },
@@ -112,7 +112,7 @@ function N(e) {
           }), (0, a.jsxs)("div", {
             className: I.statusContainer,
             children: [(0, a.jsx)("span", {
-              className: s()(I.statusIndicator, I[t.status])
+              className: s()(I.statusIndicator, null != t.status && I[t.status])
             }), (0, a.jsx)(d.Text, {
               variant: "text-sm/medium",
               children: function(e) {
@@ -132,12 +132,12 @@ function N(e) {
                   case o.V.SLEEPING:
                     return C.intl.string(y.default.PS8AMT);
                   default:
-                    return C.intl.string(y.default.Bz9gcH)
+                    return "———"
                 }
               }(t.status)
             })]
           })]
-        }), (0, a.jsxs)("div", {
+        }), null != t.regionName && (0, a.jsxs)("div", {
           className: I.detailItem,
           children: [(0, a.jsx)(d.Text, {
             variant: "text-xs/semibold",
@@ -150,12 +150,12 @@ function N(e) {
       })
     }), (0, a.jsxs)("div", {
       className: I.serverActions,
-      children: [(0, a.jsx)(d.zxk, {
+      children: [N && (0, a.jsx)(d.zxk, {
         fullWidth: true,
         text: C.intl.string(y.default["0TMXHh"]),
-        onClick: E,
+        onClick: k,
         variant: "primary"
-      }), Z && null != t.gameServerPanelUrl && (0, a.jsx)(d.zxk, {
+      }), D && null != t.gameServerPanelUrl && (0, a.jsx)(d.zxk, {
         fullWidth: true,
         text: C.intl.string(y.default["jO3u+/"]),
         onClick: () => {

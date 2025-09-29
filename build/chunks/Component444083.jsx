@@ -1,19 +1,20 @@
 /** Chunk was on 85683 **/
 /** chunk id: 444083, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => f
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk481060 = require("./481060.js"),
   Chunk239091 = require("./239091.js"),
   Chunk100527 = require("./100527.js"),
+  Chunk639777 = require("./639777.js"),
   Chunk809741 = require("./809741.jsx"),
   Chunk473682 = require("./473682.js"),
   Chunk440589 = require("./440589.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk412247 = require("./412247.js");
-let m = {
+let g = {
   steps: {
     [Chunk473682.Vb.SERVER_SETTINGS]: {
       onBack: {
@@ -26,13 +27,13 @@ let m = {
   }
 };
 
-function g(e) {
+function f(e) {
   let {
     guildId: n,
     instance: t
-  } = e, c = r.useRef(null);
+  } = e, d = r.useRef(null), f = (0, l.Z)(n);
   return (0, a.jsx)(i.yRy, {
-    targetElementRef: c,
+    targetElementRef: d,
     align: "top",
     position: "right",
     animationPosition: "bottom",
@@ -46,22 +47,22 @@ function g(e) {
         onClose: () => {
           (0, s.Zy)(), r()
         },
-        "aria-label": u.intl.string(d.default.xCq1DA),
+        "aria-label": b.intl.string(u.default.xCq1DA),
         onSelect: true,
         children: (0, a.jsxs)(i.kSQ, {
           children: [(0, a.jsx)(i.sNh, {
             id: "get-support",
             icon: i.kBi,
-            label: u.intl.string(d.default["TciV8/"]),
+            label: b.intl.string(u.default["TciV8/"]),
             action: () => {}
-          }), (0, a.jsx)(i.sNh, {
+          }), f && (0, a.jsx)(i.sNh, {
             id: "settings",
             icon: i.ewm,
-            label: u.intl.string(d.default.NUTl4u),
+            label: b.intl.string(u.default.NUTl4u),
             action: () => {
-              (0, l.Z)({
+              (0, c.Z)({
                 guildId: n,
-                stepConfig: m,
+                stepConfig: g,
                 initialPortkeyInstance: t,
                 analyticsLocation: o.Z.PORTKEY_OVERVIEW
               })
@@ -90,10 +91,10 @@ function g(e) {
         }
         return e
       }({
-        "aria-label": u.intl.string(u.t.UKOtz8),
-        className: b.clickable
+        "aria-label": b.intl.string(b.t.UKOtz8),
+        className: m.clickable
       }, e), t = t = {
-        innerRef: c,
+        innerRef: d,
         children: (0, a.jsx)(i.xhG, {
           color: "currentColor",
           size: "sm"
