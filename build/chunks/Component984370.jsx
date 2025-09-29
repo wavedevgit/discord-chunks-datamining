@@ -127,7 +127,7 @@ function P(e) {
     if (null == S) return null;
     let e = null != s && !D && !Z;
     return i.tq ? A : (0, r.jsxs)(r.Fragment, {
-      children: [S, e && !(0, O.AB)(s) ? (0, r.jsx)(p.Z, {
+      children: [S, e && !(0, O.AB)(s) ? (0, r.jsx)(p.ZP, {
         guildId: g,
         channelId: s,
         className: v.search

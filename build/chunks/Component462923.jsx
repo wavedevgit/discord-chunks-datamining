@@ -31,7 +31,7 @@ function N(e) {
   let {
     guildId: n,
     instance: t
-  } = e, i = (0, v.Z)(t), N = "Portkey", [P, S] = (0, u.US)([c.z.GAME_SERVER_HOSTING_PORTKEY_TOS]), w = P !== c.z.GAME_SERVER_HOSTING_PORTKEY_TOS, T = (0, l.e7)([m.Z], () => m.Z.getDetectableGame(t.gameId)), E = r.useCallback(() => {
+  } = e, i = (0, j.Z)(t), N = "Portkey", [P, S] = (0, u.US)([c.z.GAME_SERVER_HOSTING_PORTKEY_TOS]), w = P !== c.z.GAME_SERVER_HOSTING_PORTKEY_TOS, T = (0, l.e7)([m.Z], () => m.Z.getDetectableGame(t.gameId)), E = r.useCallback(() => {
     w ? (0, _.Z)(n, t) : (0, O.Z)({
       provider: N,
       onAccept: () => {
@@ -40,13 +40,13 @@ function N(e) {
     })
   }, [t, w, S, n]), k = r.useCallback(() => {
     (0, g.JG)(i), (0, d.showToast)((0, d.createToast)(C.intl.string(C.t["+5kSoa"]), d.ToastType.SUCCESS))
-  }, [i]), Z = (0, p.Z)(n), R = (0, j.Z)(t.gameId, "cover");
+  }, [i]), Z = (0, x.Z)(n), D = (0, v.Z)(t.gameId, "cover");
   return (0, a.jsxs)("div", {
     className: I.card,
     children: [(0, a.jsxs)("div", {
       className: I.serverHeader,
       children: [(0, a.jsx)("img", {
-        src: null != R ? R : "",
+        src: null != D ? D : "",
         alt: "",
         className: I.gameImage
       }), (0, a.jsxs)("div", {
@@ -168,7 +168,7 @@ function N(e) {
       })]
     }), (0, a.jsx)("div", {
       className: I.overflowMenu,
-      children: (0, a.jsx)(x.Z, {
+      children: (0, a.jsx)(p.Z, {
         guildId: n,
         instance: t
       })

@@ -30,20 +30,21 @@ function c(t) {
     return o
   }(t, ["provider", "onAccept"]);
   return (0, n.jsx)(o.Modal, {
-    title: s.intl.string(a.default.bnsSPj),
-    subtitle: s.intl.format(a.default.MaWfLi, {
+    title: a.intl.string(s.default.bnsSPj),
+    subtitle: a.intl.format(s.default.MaWfLi, {
       provider: e,
       providerUrl: () => (0, i.q)({
         href: "https://google.com/terms-of-service"
-      })
+      }),
+      helpCenterUrl: "https://google.com/help-center"
     }),
     size: "md",
     actions: [{
-      text: s.intl.string(s.t["/g10LC"]),
+      text: a.intl.string(a.t["/g10LC"]),
       onClick: c.onClose,
       variant: "secondary"
     }, {
-      text: s.intl.string(a.default.IfMFoK),
+      text: a.intl.string(s.default.IfMFoK),
       onClick: () => {
         (0, l.g$)(true, e), null == r || r(), c.onClose()
       },

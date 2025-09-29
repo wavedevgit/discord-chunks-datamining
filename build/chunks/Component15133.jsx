@@ -1,7 +1,7 @@
 /** Chunk was on 85683 **/
 /** chunk id: 15133, original params: e,n,t (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => j
+  default: () => v
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk50803 = require("./50803.js");
 
-function j(e) {
+function v(e) {
   var n;
   let {
     guildId: t
@@ -27,41 +27,41 @@ function j(e) {
   r.useEffect(() => {
     (0, u.EC)(t), l.Z.getDetectableGames()
   }, [t]);
-  let j = (0, d.Z)(t),
-    v = (0, s.e7)([b.Z], () => b.Z.getStateForGuild(t)),
-    _ = Object.values(null != (n = null == v ? true : v.instances) ? n : {});
+  let v = (0, d.Z)(t),
+    j = (0, s.e7)([b.Z], () => b.Z.getStateForGuild(t)),
+    _ = Object.values(null != (n = null == j ? true : j.instances) ? n : {});
   return (0, a.jsxs)("div", {
-    className: x.container,
+    className: p.container,
     children: [(0, a.jsxs)(c.ZP, {
-      className: x.toolbar,
+      className: p.toolbar,
       toolbar: (0, a.jsx)("div", {}),
       children: [(0, a.jsx)(c.ZP.Icon, {
         icon: i.$Eu,
         "aria-label": ""
       }), (0, a.jsx)(c.ZP.Title, {
-        children: p.intl.string(f.default.lH9Dio)
+        children: x.intl.string(f.default.lH9Dio)
       }), (0, a.jsx)(o.IGR, {
         disableColor: true,
-        text: p.intl.string(p.t.oW0eUV),
-        className: x.badge
+        text: x.intl.string(x.t.oW0eUV),
+        className: p.badge
       })]
     }), (0, a.jsxs)("div", {
-      className: x.contentContainer,
-      children: [(null == v ? true : v.instances) != null ? (0, a.jsx)(o.zJl, {
-        className: x.gameContainerWrapper,
+      className: p.contentContainer,
+      children: [(null == j ? true : j.instances) != null ? (0, a.jsx)(o.zJl, {
+        className: p.gameContainerWrapper,
         children: (0, a.jsx)("div", {
-          className: x.gameContainer,
+          className: p.gameContainer,
           children: _.map((e, n) => (0, a.jsx)(m.Z, {
             guildId: t,
             instance: e
           }, "".concat(e.gameId, "-").concat(n)))
         })
       }) : (0, a.jsx)("div", {
-        className: x.spinnerContainer,
+        className: p.spinnerContainer,
         children: (0, a.jsx)(o.$jN, {
           type: o.RAz.SPINNING_CIRCLE
         })
-      }), j && (0, a.jsx)(g.Z, {
+      }), v && (0, a.jsx)(g.Z, {
         guildId: t
       })]
     })]

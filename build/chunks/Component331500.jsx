@@ -68,7 +68,7 @@ function y(e) {
         instances: Object.values(null != (n = null == t ? true : t.instances) ? n : {})
       }
     }, [null == t ? true : t.catalog, null == t ? true : t.instances]),
-    o = r.length >= j.zI;
+    o = r.length >= v.zI;
   return 0 === a.length ? (0, i.jsx)("div", {
     className: O.container,
     children: (0, i.jsx)(u.$jN, {
@@ -80,10 +80,10 @@ function y(e) {
     children: [(0, i.jsx)(c.X6q, {
       className: O.heading,
       variant: "heading-md/semibold",
-      children: _.intl.string(v.default.jeYp1t)
+      children: _.intl.string(j.default.DG1SHB)
     }), o && (0, i.jsx)("div", {
       className: O.maxInstancesWarning,
-      children: (0, i.jsx)(p.Y, {})
+      children: (0, i.jsx)(x.Y, {})
     }), (0, i.jsx)(c.zJl, {
       className: l()(O.gameContainerWrapper, {
         [O.disabled]: o
@@ -92,7 +92,7 @@ function y(e) {
         className: O.gameContainer,
         children: a.map((e, t) => (0, i.jsx)(f.Z, {
           game: e,
-          onClick: () => (0, x.Z)({
+          onClick: () => (0, p.Z)({
             guildId: n,
             stepConfig: h,
             initialPortkeyGame: e,

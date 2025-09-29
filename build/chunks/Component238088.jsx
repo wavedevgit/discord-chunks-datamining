@@ -1,7 +1,7 @@
 /** Chunk was on 37979 **/
 /** chunk id: 238088, original params: e,t,l (module,exports,require) **/
 require.d(exports, {
-  default: () => j
+  default: () => v
 }), require("./388685.js"), require("./539854.js"), require("./781311.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk407868 = require("./407868.js");
 
-function E(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var l = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(l);
@@ -78,7 +78,7 @@ function S(e) {
         o(t)
       },
       className: y.removeDateFilterButton,
-      "aria-label": b.intl.formatToPlainString(b.t["2LwBlJ"], {
+      "aria-label": E.intl.formatToPlainString(E.t["2LwBlJ"], {
         filterNumber: t + 1
       }),
       children: (0, n.jsx)(u.XHJ, {
@@ -91,27 +91,28 @@ function S(e) {
   })
 }
 
-function f(e) {
+function b(e) {
   let {
     options: t,
     dates: l,
     handleDateQueryChange: r,
     handleDateChange: a,
     handleAddDateFilter: i,
-    handleRemoveDateFilter: s
-  } = e, o = l.length < 4;
+    handleRemoveDateFilter: s,
+    validateDateFilter: o
+  } = e, c = l.length < 4;
   return (0, n.jsxs)("div", {
     className: y.filterSection,
     children: [(0, n.jsx)(u.Text, {
       variant: "text-md/medium",
       color: "text-primary",
       className: y.label,
-      children: b.intl.string(b.t.oesnws)
+      children: E.intl.string(E.t.oesnws)
     }), (0, n.jsx)(u.Text, {
       variant: "text-sm/medium",
       color: "text-secondary",
       className: y.sublabel,
-      children: b.intl.string(b.t.A2DY6O)
+      children: E.intl.string(E.t.A2DY6O)
     }), l.map((e, l) => (0, n.jsx)(S, {
       options: t,
       index: l,
@@ -119,12 +120,14 @@ function f(e) {
       handleQuerySelect: r,
       handleDateSelect: a,
       handleRemoveDateFilter: s
-    }, e.id)), o && (0, n.jsx)(u.zxk, {
+    }, e.id)), c && (0, n.jsx)(u.zxk, {
       variant: "secondary",
       fullWidth: true,
-      text: b.intl.string(b.t.iP9YpK),
+      text: E.intl.string(E.t.iP9YpK),
       icon: u.BRu,
-      onClick: i
+      onClick: () => {
+        o() && i()
+      }
     })]
   })
 }
@@ -142,7 +145,9 @@ function I(e) {
     onFocus: d,
     onSearchChange: h,
     renderOptionPrefix: x,
-    renderOptionSuffix: g
+    renderOptionSuffix: g,
+    filterType: F,
+    validateFilter: p
   } = e;
   return (0, n.jsxs)("div", {
     className: y.filterSection,
@@ -161,7 +166,9 @@ function I(e) {
       options: s,
       placeholder: r,
       value: a,
-      onChange: i,
+      onChange: e => {
+        (!(e.length > a.length) || p(F, e[e.length - 1])) && i(e)
+      },
       onFocus: d,
       onSearchChange: h,
       closeOnSelect: c,
@@ -179,7 +186,9 @@ function R(e) {
     textPlaceholder: r,
     value: a,
     onChange: i,
-    options: s
+    options: s,
+    filterType: o,
+    validateFilter: c
   } = e;
   return (0, n.jsxs)("div", {
     className: y.filterSection,
@@ -196,36 +205,38 @@ function R(e) {
     }), (0, n.jsx)(u.q4e, {
       placeholder: r,
       options: s,
-      onChange: i,
+      onChange: e => {
+        (null == e || c(o, e)) && i(e)
+      },
       value: a,
       clearable: null != a
     })]
   })
 }
 
-function j(e) {
+function v(e) {
   let {
     transitionState: t,
     onClose: l,
     searchContext: a
-  } = e, i = (0, d.Dt)(), S = r.useMemo(() => (0, C.s5)(a), [a]), j = (0, s.e7)([h.Z, x.Z], () => {
+  } = e, i = (0, d.Dt)(), S = r.useMemo(() => (0, p.s5)(a), [a]), v = (0, s.e7)([h.Z, x.Z], () => {
     let e = h.Z.getChannel(x.Z.getChannelId());
-    return null != e ? (0, C.nl)(e) : "general"
-  }), N = (0, s.e7)([g.default], () => {
+    return null != e ? (0, p.nl)(e) : "general"
+  }), L = (0, s.e7)([g.default], () => {
     let e = g.default.getCurrentUser();
-    return null != e ? e.username : b.intl.string(b.t.cqpybG)
-  }), [O, v] = r.useState(F.Z.getSearchInputText(a)), L = r.useMemo(() => (0, C.kG)(null != O ? O : ""), [O]), {
-    prefilledSearchFilters: _,
+    return null != e ? e.username : E.intl.string(E.t.cqpybG)
+  }), [N, _] = r.useState(m.Z.getSearchInputText(a)), O = r.useMemo(() => (0, p.kG)(null != N ? N : ""), [N]), {
+    prefilledSearchFilters: j,
     eligibleFilterTokens: P
-  } = (0, m.p4)(L, a), k = P.has(T.dCx.FILTER_FROM), A = P.has(T.dCx.FILTER_MENTIONS), Q = P.has(T.dCx.FILTER_IN), M = P.has(T.dCx.FILTER_AUTHOR_TYPE), q = r.useMemo(() => (0, C.nI)(L), [L]), {
-    options: D,
+  } = (0, C.p4)(O, a), k = P.has(T.dCx.FILTER_FROM), A = P.has(T.dCx.FILTER_MENTIONS), M = P.has(T.dCx.FILTER_IN), Q = P.has(T.dCx.FILTER_AUTHOR_TYPE), D = r.useMemo(() => (0, p.nI)(O), [O]), {
+    options: q,
     query: H,
-    setQuery: w,
-    setQueryString: Y,
+    setQuery: Y,
+    setQueryString: w,
     handleClearFilter: U,
     getApplyQueryString: Z,
     handleFocusFilter: z
-  } = (0, m.HJ)(a, T.dCx.FILTER_FROM, _[T.dCx.FILTER_FROM]), {
+  } = (0, C.HJ)(a, T.dCx.FILTER_FROM, j[T.dCx.FILTER_FROM]), {
     options: J,
     query: W,
     setQuery: B,
@@ -233,14 +244,14 @@ function j(e) {
     handleClearFilter: K,
     getApplyQueryString: G,
     handleFocusFilter: V
-  } = (0, m.HJ)(a, T.dCx.FILTER_MENTIONS, _[T.dCx.FILTER_MENTIONS]), $ = (0, m.Zc)(S), {
+  } = (0, C.HJ)(a, T.dCx.FILTER_MENTIONS, j[T.dCx.FILTER_MENTIONS]), $ = (0, C.Zc)(S), {
     options: ee,
     query: et,
     setQuery: el,
     handleClearFilter: en,
     getApplyQueryString: er,
     handleFocusFilter: ea
-  } = (0, m.Z2)(a, _[T.dCx.FILTER_HAS]), {
+  } = (0, C.Z2)(a, j[T.dCx.FILTER_HAS]), {
     options: ei,
     query: es,
     setQuery: eo,
@@ -248,7 +259,7 @@ function j(e) {
     handleClearFilter: ec,
     getApplyQueryString: ed,
     handleFocusFilter: eh
-  } = (0, m.ur)(a, _[T.dCx.FILTER_IN]), ex = r.useCallback(e => {
+  } = (0, C.ur)(a, j[T.dCx.FILTER_IN]), ex = r.useCallback(e => {
     if (null == e) return;
     let t = h.Z.getChannel(e.value);
     if (null == t) return;
@@ -259,106 +270,116 @@ function j(e) {
     }) : null
   }, []), {
     options: eg,
-    dates: ep,
-    validDates: eC,
-    handleDateQueryChange: em,
-    handleDateChange: eF,
+    dates: eF,
+    validDates: ep,
+    handleDateQueryChange: eC,
+    handleDateChange: em,
     handleAddDateFilter: eT,
-    handleRemoveDateFilter: eb,
+    handleRemoveDateFilter: eE,
     handleClearDateFilter: ey,
-    getDateQueryString: eE
-  } = (0, m.fI)(_.dateFilters), {
+    getDateQueryString: ef
+  } = (0, C.fI)(j.dateFilters), {
     options: eS,
-    query: ef,
+    query: eb,
     setQuery: eI,
     handleClearFilter: eR,
-    getApplyQueryString: ej,
-    handleFocusFilter: eN
-  } = (0, m.fJ)(a, _[T.dCx.FILTER_AUTHOR_TYPE]), {
-    options: eO,
-    query: ev,
-    setQuery: eL,
-    handleClearFilter: e_,
+    getApplyQueryString: ev,
+    handleFocusFilter: eL
+  } = (0, C.fJ)(a, j[T.dCx.FILTER_AUTHOR_TYPE]), {
+    options: eN,
+    query: e_,
+    setQuery: eO,
+    handleClearFilter: ej,
     getApplyQueryString: eP
-  } = (0, m.zL)(a, _[T.dCx.FILTER_PINNED]), ek = r.useMemo(() => {
+  } = (0, C.zL)(a, j[T.dCx.FILTER_PINNED]), ek = r.useMemo(() => {
     let e = 0;
-    return k && H.length > 0 && (e += H.length), A && W.length > 0 && (e += W.length), Q && es.length > 0 && (e += es.length), et.length > 0 && (e += et.length), eC.length > 0 && (e += eC.length), M && ef.length > 0 && (e += ef.length), null !== ev && (e += 1), e
-  }, [k, H, A, W, Q, es, et, eC, M, ef, ev]), eA = r.useMemo(() => !((!k || (0, m.Ek)(H, _[T.dCx.FILTER_FROM])) && (!A || (0, m.Ek)(W, _[T.dCx.FILTER_MENTIONS])) && (!Q || (0, m.Ek)(es, _[T.dCx.FILTER_IN])) && (0, m.Ek)(et, _[T.dCx.FILTER_HAS]) && (0, m.LE)(eC, _.dateFilters) && (!M || (0, m.Ek)(ef, _[T.dCx.FILTER_AUTHOR_TYPE])) && (0, m.Ek)(ev, _[T.dCx.FILTER_PINNED])), [k, H, _, A, W, Q, es, et, eC, M, ef, ev]), eQ = r.useCallback(() => {
+    return k && H.length > 0 && (e += H.length), A && W.length > 0 && (e += W.length), M && es.length > 0 && (e += es.length), et.length > 0 && (e += et.length), ep.length > 0 && (e += ep.length), Q && eb.length > 0 && (e += eb.length), null !== e_ && (e += 1), e
+  }, [k, H, A, W, M, es, et, ep, Q, eb, e_]), eA = r.useMemo(() => {
     let e = er(T.dCx.FILTER_HAS),
-      t = eE(),
-      n = eP(T.dCx.FILTER_PINNED),
-      r = [];
+      t = ef(),
+      l = eP(T.dCx.FILTER_PINNED),
+      n = [];
     if (k) {
       let e = Z(T.dCx.FILTER_FROM);
-      null != e && r.push(e)
+      null != e && n.push(e)
     }
     if (A) {
       let e = G(T.dCx.FILTER_MENTIONS);
-      null != e && r.push(e)
+      null != e && n.push(e)
     }
-    if (Q) {
+    if (M) {
       let e = ed(T.dCx.FILTER_IN);
-      null != e && r.push(e)
+      null != e && n.push(e)
     }
-    if (null != e && r.push(e), null != t && r.push(t), M) {
-      let e = ej(T.dCx.FILTER_AUTHOR_TYPE);
-      null != e && r.push(e)
+    if (null != e && n.push(e), null != t && n.push(t), Q) {
+      let e = ev(T.dCx.FILTER_AUTHOR_TYPE);
+      null != e && n.push(e)
     }
-    if (null != n && r.push(n), 0 === r.length && 0 === q.trim().length) {
-      p.S.dispatch(T.CkL.SEARCH_RESULTS_CLOSE), l();
+    return null != l && n.push(l), [...n].join(" ")
+  }, [k, Z, A, G, M, ed, er, ef, Q, ev, eP]), {
+    validateFilter: eM,
+    validateDateFilter: eQ
+  } = (0, C.YL)({
+    nonFilterQueryString: D,
+    filterQueryString: eA
+  }), eD = r.useMemo(() => !((!k || (0, C.Ek)(H, j[T.dCx.FILTER_FROM])) && (!A || (0, C.Ek)(W, j[T.dCx.FILTER_MENTIONS])) && (!M || (0, C.Ek)(es, j[T.dCx.FILTER_IN])) && (0, C.Ek)(et, j[T.dCx.FILTER_HAS]) && (0, C.LE)(ep, j.dateFilters) && (!Q || (0, C.Ek)(eb, j[T.dCx.FILTER_AUTHOR_TYPE])) && (0, C.Ek)(e_, j[T.dCx.FILTER_PINNED])), [k, H, j, A, W, M, es, et, ep, Q, eb, e_]), eq = r.useCallback(() => {
+    if (0 === eA.length && 0 === D.trim().length) {
+      F.S.dispatch(T.CkL.SEARCH_RESULTS_CLOSE), l();
       return
     }
-    let a = [...r, q].join(" ");
-    p.S.dispatch(T.CkL.SET_SEARCH_QUERY, {
-      query: a,
+    let e = "".concat(eA, " ").concat(D).trim();
+    F.S.dispatch(T.CkL.SET_SEARCH_QUERY, {
+      query: e,
       anchor: 0,
       focus: 0,
       performSearch: true,
       replace: true
     }), l()
-  }, [M, k, Q, A, ej, eE, Z, er, ed, G, q, l, eP]), eM = r.useCallback(() => {
-    k && U(), A && K(), Q && ec(), M && eR(), en(), ey(), e_()
-  }, [k, A, en, Q, ey, U, K, ec, M, eR, e_]);
+  }, [eA, D, l]), eH = r.useCallback(() => {
+    k && U(), A && K(), M && ec(), Q && eR(), en(), ey(), ej()
+  }, [k, A, en, M, ey, U, K, ec, Q, eR, ej]);
   return (0, n.jsxs)(o.Modal, {
     transitionState: t,
     onClose: l,
     "aria-labelledby": i,
-    title: b.intl.string(b.t.F8a0W1),
+    title: E.intl.string(E.t.F8a0W1),
     actions: [{
       variant: "secondary",
-      text: b.intl.string(b.t["ETE/oK"]),
+      text: E.intl.string(E.t["ETE/oK"]),
       onClick: l
     }, {
       variant: "primary",
-      text: b.intl.string(b.t.qDzapq),
-      onClick: eQ,
-      disabled: !eA
+      text: E.intl.string(E.t.qDzapq),
+      onClick: eq,
+      disabled: !eD
     }],
     actionBarInput: (0, n.jsx)(u.P3F, {
-      onClick: eM,
+      onClick: eH,
       className: y.clearFilters,
       children: (0, n.jsxs)(u.Text, {
         variant: "text-sm/medium",
         color: ek > 0 ? "text-brand" : "text-tertiary",
-        children: [b.intl.string(b.t.YfwFu7), " ", ek > 0 && "(".concat(ek, ")")]
+        children: [E.intl.string(E.t.YfwFu7), " ", ek > 0 && "(".concat(ek, ")")]
       })
     }),
-    children: [k && (0, n.jsx)(I, E({
-      label: b.intl.string(b.t.Qz6eOT),
-      sublabel: b.intl.string(b.t["2JyXnJ"]),
-      textPlaceholder: b.intl.formatToPlainString(b.t.V4WMj4, {
-        username: N
+    children: [k && (0, n.jsx)(I, f({
+      label: E.intl.string(E.t.Qz6eOT),
+      sublabel: E.intl.string(E.t["2JyXnJ"]),
+      textPlaceholder: E.intl.formatToPlainString(E.t.V4WMj4, {
+        username: L
       }),
       value: H,
-      onChange: w,
+      onChange: Y,
       onFocus: z,
-      onSearchChange: Y,
-      options: D
-    }, $)), Q && (0, n.jsx)(I, {
-      label: b.intl.string(b.t["kLrM/v"]),
-      sublabel: b.intl.string(b.t.x8cC09),
-      textPlaceholder: b.intl.formatToPlainString(b.t.K4l509, {
-        channelName: j
+      onSearchChange: w,
+      options: q,
+      filterType: T.dCx.FILTER_FROM,
+      validateFilter: eM
+    }, $)), M && (0, n.jsx)(I, {
+      label: E.intl.string(E.t["kLrM/v"]),
+      sublabel: E.intl.string(E.t.x8cC09),
+      textPlaceholder: E.intl.formatToPlainString(E.t.K4l509, {
+        channelName: v
       }),
       value: es,
       onChange: eo,
@@ -367,52 +388,63 @@ function j(e) {
       options: ei,
       filter: false,
       closeOnSelect: false,
-      renderOptionPrefix: ex
-    }), A && (0, n.jsx)(I, E({
-      label: b.intl.string(b.t.HEBnRU),
-      sublabel: b.intl.string(b.t.PdfTqa),
-      textPlaceholder: b.intl.formatToPlainString(b.t.zka3aG, {
-        username: N
+      renderOptionPrefix: ex,
+      filterType: T.dCx.FILTER_IN,
+      validateFilter: eM
+    }), A && (0, n.jsx)(I, f({
+      label: E.intl.string(E.t.HEBnRU),
+      sublabel: E.intl.string(E.t.PdfTqa),
+      textPlaceholder: E.intl.formatToPlainString(E.t.zka3aG, {
+        username: L
       }),
       value: W,
       onChange: B,
       onFocus: V,
       onSearchChange: X,
-      options: J
+      options: J,
+      filterType: T.dCx.FILTER_MENTIONS,
+      validateFilter: eM
     }, $)), (0, n.jsx)(I, {
-      label: b.intl.string(b.t["892qg4"]),
-      sublabel: b.intl.string(b.t["Oa//IC"]),
-      textPlaceholder: b.intl.string(b.t.tROvHB),
+      label: E.intl.string(E.t["892qg4"]),
+      sublabel: E.intl.string(E.t["Oa//IC"]),
+      textPlaceholder: E.intl.string(E.t.tROvHB),
       value: et,
       onChange: el,
       onFocus: ea,
       options: ee,
       filter: true,
-      closeOnSelect: false
-    }), (0, n.jsx)(f, {
+      closeOnSelect: false,
+      filterType: T.dCx.FILTER_HAS,
+      validateFilter: eM
+    }), (0, n.jsx)(b, {
       options: eg,
-      dates: ep,
-      handleDateQueryChange: em,
-      handleDateChange: eF,
+      dates: eF,
+      handleDateQueryChange: eC,
+      handleDateChange: em,
       handleAddDateFilter: eT,
-      handleRemoveDateFilter: eb
-    }), M && (0, n.jsx)(I, {
-      label: b.intl.string(b.t.Xgc1am),
-      sublabel: b.intl.string(b.t.XaOAdn),
-      textPlaceholder: b.intl.string(b.t.CAdOdX),
-      value: ef,
+      handleRemoveDateFilter: eE,
+      validateDateFilter: eQ
+    }), Q && (0, n.jsx)(I, {
+      label: E.intl.string(E.t.Xgc1am),
+      sublabel: E.intl.string(E.t.XaOAdn),
+      textPlaceholder: E.intl.string(E.t.CAdOdX),
+      value: eb,
       onChange: eI,
-      onFocus: eN,
+      onFocus: eL,
       options: eS,
       filter: true,
-      closeOnSelect: false
+      closeOnSelect: false,
+      filterType: T.dCx.FILTER_AUTHOR_TYPE,
+      validateFilter: eM
     }), (0, n.jsx)(R, {
-      label: b.intl.string(b.t["6LYPWV"]),
-      sublabel: b.intl.string(b.t.L8jjfn),
-      textPlaceholder: b.intl.string(b.t.AQpFbW),
-      value: ev,
-      onChange: eL,
-      options: eO
+      label: E.intl.string(E.t["6LYPWV"]),
+      sublabel: E.intl.string(E.t.L8jjfn),
+      textPlaceholder: E.intl.string(E.t.AQpFbW),
+      value: e_,
+      onChange: eO,
+      options: eN,
+      filterType: T.dCx.FILTER_PINNED,
+      validateFilter: eM
     })]
   })
 }

@@ -22,34 +22,34 @@ function h(e) {
     guildId: t,
     instance: s,
     onClose: h,
-    transitionState: I
-  } = e, f = (0, a.e7)([p.Z], () => {
+    transitionState: f
+  } = e, I = (0, a.e7)([d.Z], () => {
     var e;
-    return null == (e = p.Z.getStateForGuild(t)) ? true : e.instructions[s.planId]
+    return null == (e = d.Z.getStateForGuild(t)) ? true : e.instructions[s.planId]
   });
   r.useEffect(() => {
-    null == f && (0, o.iX)(t, s.planId)
-  }, [t, s.planId, f]);
+    null == I && (0, o.iX)(t, s.planId)
+  }, [t, s.planId, I]);
   let j = (0, u.Z)(s),
     C = r.useCallback(() => {
       (0, c.JG)(j), (0, l.showToast)((0, l.createToast)(x.intl.string(x.t["+5kSoa"]), l.ToastType.SUCCESS))
     }, [j]),
-    N = (0, d.Z)(s.gameId, "cover");
+    N = (0, p.Z)(s.gameId, "cover");
   return (0, n.jsx)(i.I, {
     graphic: {
       src: N,
       type: "image"
     },
     title: s.name,
-    subtitle: s.planName,
+    subtitle: x.intl.string(m.default["8Fgoo6"]),
     size: "md",
-    transitionState: I,
+    transitionState: f,
     onClose: h,
-    children: null == f ? (0, n.jsx)(l.$jN, {}) : (0, n.jsxs)("div", {
+    children: null == I ? (0, n.jsx)(l.$jN, {}) : (0, n.jsxs)("div", {
       className: v.content,
       children: [(0, n.jsx)("div", {
         className: v.stepsContainer,
-        children: f.map((e, t) => (0, n.jsxs)("div", {
+        children: I.map((e, t) => (0, n.jsxs)("div", {
           className: v.step,
           children: [(0, n.jsx)("div", {
             className: v.stepNumber,

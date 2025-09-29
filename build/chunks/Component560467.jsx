@@ -214,12 +214,19 @@ function y() {
           })]
         }), (0, Chunk951288.jsxs)("div", {
           className: Chunk557787.sectionContainer,
-          children: [(0, Chunk951288.jsx)("div", {
+          children: [(0, Chunk951288.jsxs)("div", {
             className: Chunk557787.sectionHeader,
-            children: (0, Chunk951288.jsx)(Chunk481060.X6q, {
+            children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
               variant: "heading-sm/semibold",
               children: Chunk388032.intl.string(Chunk440589.default["3QONen"])
-            })
+            }), (0, Chunk951288.jsx)(Chunk681715.u, {
+              position: "top",
+              text: Chunk388032.intl.string(Chunk440589.default.HbR6W1),
+              children: (0, Chunk951288.jsx)(Chunk481060.idN, {
+                className: Chunk557787.sectionHeaderIcon,
+                size: "xs"
+              })
+            })]
           }), (0, Chunk951288.jsx)(Chunk481060.PhF, {
             serialize: e => e.id,
             isSelected: e => e.id === S,
