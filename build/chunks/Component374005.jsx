@@ -1,14 +1,17 @@
 /** Chunk was on 1272 **/
 /** chunk id: 374005, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  b: () => y
+  b: () => S
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk120356 = require("./120356.js"),
+  a = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk393238 = require("./393238.js"),
   Chunk100527 = require("./100527.js"),
   Chunk906732 = require("./906732.jsx"),
+  Chunk316243 = require("./316243.js"),
   Chunk720734 = require("./720734.jsx"),
   Chunk840780 = require("./840780.jsx"),
   Chunk235555 = require("./235555.jsx"),
@@ -21,19 +24,19 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk861218 = require("./861218.js");
 
-function E(e) {
+function I(e) {
   var t, n;
   let {
     analyticsLocations: i
-  } = (0, s.ZP)(o.Z.ACTIVITY_PANEL), l = (0, h.Z)(e => {
+  } = (0, u.ZP)(c.Z.ACTIVITY_PANEL), l = (0, b.Z)(e => {
     let {
       guildId: t
     } = e;
     return t
   });
-  return (0, r.jsx)(s.Gt, {
+  return (0, r.jsx)(u.Gt, {
     value: i,
-    children: (0, r.jsx)(u.Z, (t = function(e) {
+    children: (0, r.jsx)(f.Z, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -64,22 +67,28 @@ function E(e) {
     }), t))
   })
 }
-let y = Chunk647438.memo(function() {
+let S = Chunk647438.memo(function() {
   let e = Chunk647438.useRef(null);
-  return (0, Chunk393238.PM)(module, e => {
+  (0, Chunk393238.PM)(module, e => {
     let {
       height: t
     } = e;
     document.body.style.setProperty("--custom-app-panels-height", "".concat(t, "px"))
-  }, []), (0, Chunk951288.jsx)("section", {
+  }, []);
+  let {
+    isSorting: t
+  } = (0, Chunk316243.Z)();
+  return (0, Chunk951288.jsx)("section", {
     ref: module,
-    className: Chunk861218.panels,
+    className: a()(Chunk861218.panels, {
+      [Chunk861218.disablePointersWhileSorting]: exports
+    }),
     "aria-label": Chunk388032.intl.string(Chunk388032.t.StREWF),
     children: (0, Chunk951288.jsxs)(Chunk793030.JcV, {
       containerRef: module,
       children: [(0, Chunk951288.jsx)(Chunk316173.Z, {}), (0, Chunk951288.jsx)(Chunk210724.Z, {}), (0, Chunk951288.jsx)(Chunk235555.Z, {}), (0, Chunk951288.jsx)(Chunk410575.Z, {
         section: Chunk981631.jXE.ACTIVITY_PANEL,
-        children: (0, Chunk951288.jsx)(E, {
+        children: (0, Chunk951288.jsx)(I, {
           className: Chunk861218.activityPanel
         })
       }), (0, Chunk951288.jsx)(Chunk410575.Z, {

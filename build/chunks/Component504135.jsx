@@ -77,28 +77,27 @@ function E(e) {
     subMenuIconClassName: P,
     dontCloseOnActionIfHoldingShiftKey: w,
     dontCloseOnAction: D,
-    iconProps: L,
-    sparkle: x
+    iconProps: L
   } = e, {
-    onSelect: j,
-    onInteraction: M
-  } = i.useContext(c.p), k = i.useRef(null), U = i.useCallback(e => {
+    onSelect: x,
+    onInteraction: j
+  } = i.useContext(c.p), M = i.useRef(null), k = i.useCallback(e => {
     var t;
-    if (null == M || M({
+    if (null == j || j({
         type: c.U.DEFAULT
       }), null == S) returnfalse;
-    e.shiftKey && w || D || A(), e.persist(), null == j || j(), (null != (t = e.nativeEvent.view) ? t : window).requestAnimationFrame(() => S(e))
-  }, [S, A, j, w, D, M]);
+    e.shiftKey && w || D || A(), e.persist(), null == x || x(), (null != (t = e.nativeEvent.view) ? t : window).requestAnimationFrame(() => S(e))
+  }, [S, A, x, w, D, j]);
   return i.useEffect(() => {
-    I && ((0, u.F)(k), null == C || C())
+    I && ((0, u.F)(M), null == C || C())
   }, [I, C]), (0, r.jsxs)(s.P3F, g(h({
-    innerRef: k,
+    innerRef: M,
     className: o()(_.item, _.labelContainer, f._[t], N, {
       [_.disabled]: v,
       [_.focused]: I,
       [null != R ? R : ""]: I
     }),
-    onClick: v ? true : U,
+    onClick: v ? true : k,
     "aria-disabled": v
   }, T), {
     "data-menu-item": "true",
@@ -131,15 +130,13 @@ function E(e) {
       }, L), {
         className: o()(_.icon, null == L ? true : L.className)
       }))
-    }), O && (0, r.jsxs)("div", {
+    }), O && (0, r.jsx)("div", {
       className: _.iconContainer,
-      children: [(0, r.jsx)(s.Fbu, {
+      children: (0, r.jsx)(s.Fbu, {
         size: "md",
         color: "currentColor",
         className: o()(_.caret, P)
-      }), x && (0, r.jsx)(s.K1N, {
-        className: _.sparkles
-      })]
+      })
     })]
   }))
 }

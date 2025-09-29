@@ -86,11 +86,10 @@ let E = Chunk647438.forwardRef(function(e, t) {
     disabled: O,
     dangerous: v,
     separator: I,
-    sparkle: T,
-    showNewBadge: S,
-    buttonClassName: A,
-    children: C
-  } = e, N = m(e, ["label", "ariaLabel", "tooltipText", "tooltipColor", "icon", "iconProps", "onClick", "onTooltipShow", "onTooltipHide", "disabled", "dangerous", "separator", "sparkle", "showNewBadge", "buttonClassName", "children"]);
+    showNewBadge: T,
+    buttonClassName: S,
+    children: A
+  } = e, C = m(e, ["label", "ariaLabel", "tooltipText", "tooltipColor", "icon", "iconProps", "onClick", "onTooltipShow", "onTooltipHide", "disabled", "dangerous", "separator", "showNewBadge", "buttonClassName", "children"]);
   return (0, r.jsx)(s.ua7, {
     text: null != a ? a : n,
     color: null != f ? f : s.FGA.PRIMARY,
@@ -110,7 +109,7 @@ let E = Chunk647438.forwardRef(function(e, t) {
       return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)(c.zx, h(_({
           ref: t,
-          className: o()(d.hoverBarButton, A),
+          className: o()(d.hoverBarButton, S),
           onMouseEnter: a,
           onMouseLeave: f,
           onFocus: m,
@@ -121,14 +120,14 @@ let E = Chunk647438.forwardRef(function(e, t) {
           "aria-label": null != i ? i : n,
           disabled: O,
           dangerous: v
-        }, N), {
+        }, C), {
           children: [null != p ? (0, r.jsx)(p, _({
             className: d.icon,
             color: "currentColor"
-          }, g)) : null, null != C ? (0, r.jsx)("div", {
+          }, g)) : null, null != A ? (0, r.jsx)("div", {
             className: o()(d.icon, d.buttonContent),
-            children: C
-          }) : null, T && (0, r.jsx)(s.K1N, {}), S && (0, r.jsx)(s.IGR, {
+            children: A
+          }) : null, T && (0, r.jsx)(s.IGR, {
             text: u.intl.string(u.t.y2b7CA),
             color: l.Z.BG_BRAND,
             className: d.newBadge
