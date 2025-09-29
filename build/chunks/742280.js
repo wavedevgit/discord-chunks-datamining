@@ -31,8 +31,6 @@ let i = {
   QUESTS_3P_DATA_OPT_OUT_U16_REGIONS: new Set(["CA", "MT", "NH", "OR"]),
   QUESTS_3P_DATA_OPT_OUT_U18_REGIONS: new Set(["CO", "CT", "DE", "MD", "NJ"]),
   QUESTS_3P_DATA_OPT_OUT_COUNTRIES: new Set(["BR", "KR"]),
-  NITRO_TAX_EXCLUSIVE_EXPERIMENT_STATES: new Set(["TN", "WI"]),
-  NITRO_TAX_EXCLUSIVE_PHASE_1_STATES: new Set(["IL", "NC", "NY", "OH", "PA", "TX", "VA", "WA"]),
-  NITRO_TAX_EXCLUSIVE_PHASE_2_STATES: new Set(["AL", "AR", "AZ", "CO", "CT", "DC", "HI", "IA", "IN", "KS", "KY", "LA", "MA", "MD", "ME", "MI", "MN", "MO", "MS", "MT", "ND", "NE", "NH", "NJ", "NM", "OK", "RI", "SC", "SD", "UT", "VT", "WV", "WY"]),
+  NITRO_TAX_EXCLUSIVE_US_STATES: new Set(["AL", "AR", "AZ", "CO", "CT", "DC", "HI", "IA", "IL", "IN", "KS", "KY", "LA", "MA", "MD", "ME", "MI", "MN", "MO", "MS", "MT", "NC", "ND", "NE", "NH", "NJ", "NM", "NY", "OH", "OK", "PA", "PR", "RI", "SC", "SD", "TN", "TX", "UT", "VA", "VT", "WA", "WI", "WV", "WY"]),
   STRIPE_CONNECT_SUPPORTED_COUNTRIES: new Set(["AT", "BE", "BG", "CY", "CZ", "DE", "DK", "EE", "EL", "ES", "FI", "FR", "GB", "GR", "HR", "HU", "IE", "IT", "LT", "LU", "LV", "MT", "NL", "PL", "PT", "RO", "SE", "SI", "SK", "US"])
 }
