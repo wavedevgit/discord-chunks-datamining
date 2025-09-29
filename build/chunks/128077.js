@@ -1,5 +1,5 @@
-/** Chunk was on 74560 **/
-/** chunk id: 128077, original params: e,n,t (module,exports,require) **/
+/** Chunk was on 81501 **/
+/** chunk id: 128077, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   f: () => l
 }), require("./388685.js");
@@ -8,16 +8,16 @@ var Chunk647438 = require("./647438.js"),
   Chunk388032 = require("./388032.jsx");
 
 function l() {
-  let [e, n] = (0, Chunk647438.useState)(""), [t, l] = (0, Chunk647438.useState)([]), [s, c] = (0, Chunk647438.useState)(null), [o, d] = (0, Chunk647438.useState)(false);
+  let [e, t] = (0, Chunk647438.useState)(""), [n, l] = (0, Chunk647438.useState)([]), [c, s] = (0, Chunk647438.useState)(null), [o, d] = (0, Chunk647438.useState)(false);
   return (0, Chunk647438.useEffect)(() => {
-    if (null != s) return void exports(Chunk388032.intl.format(Chunk388032.t["7gHWra"], {
+    if (null != c) return void exports(Chunk388032.intl.format(Chunk388032.t["7gHWra"], {
       amount: "1 orb",
-      errorMessage: s.message
+      errorMessage: c.message
     }));
     if (null != require && require.length > 0) {
       let e = require.map(e => {
-        var n;
-        return null == (n = e.sku) ? true : n.name
+        var t;
+        return null == (t = e.sku) ? true : t.name
       });
       exports(Chunk388032.intl.format(Chunk388032.t.JxNFam, {
         amountDescription: "1 orb",
@@ -26,23 +26,23 @@ function l() {
       return
     }
     exports("")
-  }, [require, s]), {
+  }, [require, c]), {
     entitlements: require,
-    error: s,
+    error: c,
     isSubmitting: o,
     responseMessage: module,
-    redeemVirtualCurrency: function(e, n, t) {
-      return (0, r.df)({
+    redeemVirtualCurrency: function(e, t, n) {
+      return (0, a.df)({
         skuId: e,
-        loadId: n,
+        loadId: t,
         onRedeemStart: () => {
-          d(true), c(null)
+          d(true), s(null)
         },
         onRedeemSucceed: e => {
-          l(e), d(false), null == t || t(e)
+          l(e), d(false), null == n || n(e)
         },
         onRedeemFail: e => {
-          c(e), d(false)
+          s(e), d(false)
         }
       })
     }

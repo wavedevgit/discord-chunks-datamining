@@ -1,0 +1,3 @@
+/** Chunk was on 27534 **/
+/** chunk id: 919809, original params: c (module,exports,require) **/
+module.exports = JSON.parse('{"klSpfn":"Редактировать настройки","NzUuLC":["+",[1,"count"]," ",[6,"count",{"one":["сообщение"],"few":["сообщения"],"other":["сообщений"]},0,"cardinal"]],"O+racX":"Уведомлений нет.","5H2Jd3":"Показать все","Ko8NGh":"Показать закладки","dcpdhI":"Выберите сообщение, чтобы перейти.","VAK+h4":"Добро пожаловать в центр уведомлений!"}')

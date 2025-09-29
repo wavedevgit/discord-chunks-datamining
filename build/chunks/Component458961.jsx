@@ -45,7 +45,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk674563 = require("./674563.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk179598 = require("./179598.js");
+  Chunk707449 = require("./707449.js");
 
 function E(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -202,7 +202,7 @@ function ee(e) {
       hasSavedAttachments: eR,
       hasUnsavedAttachmentChanges: eS
     }), [ed, eq, ex, eC, eV, eP, ey, eE, eR, eS]),
-    e7 = n.useMemo(() => e1 || null == e_ || "publish" === e_ || null != eL ? null : (0, r.jsx)(p.oXn, {
+    e8 = n.useMemo(() => e1 || null == e_ || "publish" === e_ || null != eL ? null : (0, r.jsx)(p.oXn, {
       className: B.successNotice,
       children: (0, r.jsx)(h.Z, {
         message: (0, r.jsxs)("div", {
@@ -220,7 +220,7 @@ function ee(e) {
         onResetText: D.intl.string(D.t.T6QuWV)
       })
     }), [eL, e1, e_]),
-    e8 = n.useCallback(() => {
+    e7 = n.useCallback(() => {
       e1 ? (0, W.Z)({
         title: D.intl.string(D.t.FVDhIS),
         body: D.intl.string(D.t.Hgdhwc),
@@ -235,8 +235,8 @@ function ee(e) {
     (0, p.oav)(R.Yz, e => (0, r.jsx)(et, E({
       guildId: en,
       productId: eo
-    }, e)), e8)
-  }, [en, e8, eo]);
+    }, e)), e7)
+  }, [en, e7, eo]);
   let e2 = async e => {
     let t = (0, N.pM)({
       newRoleParams: eE
@@ -285,7 +285,7 @@ function ee(e) {
           children: D.intl.string(D.t["Tu7f+f"])
         })]
       }), (0, r.jsx)(p.olH, {
-        onClick: e8,
+        onClick: e7,
         className: B.__invalid_modalCloseButton,
         "data-migration-pending": true
       })]
@@ -469,7 +469,7 @@ function ee(e) {
     }), (0, r.jsx)(c.W, {
       component: "div",
       className: B.successNoticeContainer,
-      children: e7
+      children: e8
     })]
   })
 }

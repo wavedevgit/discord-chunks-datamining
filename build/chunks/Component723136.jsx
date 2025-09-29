@@ -1,4 +1,4 @@
-/** Chunk was on 49236 **/
+/** Chunk was on 27087 **/
 /** chunk id: 723136, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -14,8 +14,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk434404 = require("./434404.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk764295 = require("./764295.js"),
-  Chunk776853 = require("./776853.js");
+  Chunk304726 = require("./304726.js"),
+  Chunk984734 = require("./984734.js");
 async function f(e, t) {
   return await d.Z.saveGuild(e.id, {
     moderatorReportingEnabled: t

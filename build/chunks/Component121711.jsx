@@ -58,7 +58,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk215023 = require("./215023.js"),
   Chunk186901 = require("./186901.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk728963 = require("./728963.js"),
+  Chunk838997 = require("./838997.js"),
   Chunk13299 = require("./13299.js"),
   Chunk890631 = require("./890631.js"),
   Chunk164792 = require("./164792.js"),
@@ -298,7 +298,7 @@ let eh = function() {
       onAssetLoadComplete: Chunk672188
     },
     children: (0, Chunk951288.jsx)("div", {
-      className: Chunk728963.container,
+      className: Chunk838997.container,
       children: Chunk772848 ? (0, Chunk951288.jsx)(ef, {
         onSelectTab: Chunk451478,
         onScroll: Chunk526167,
@@ -347,12 +347,12 @@ let eh = function() {
               icon: Chunk481060.Gr1,
               iconPosition: "end"
             }),
-            className: a()(Chunk728963.bannerContainer, {
-              [Chunk728963.orbsContainer]: Chunk890631
+            className: a()(Chunk838997.bannerContainer, {
+              [Chunk838997.orbsContainer]: Chunk890631
             }),
             children: [(0, Chunk951288.jsx)("div", {
-              className: a()(Chunk728963.bannerGradient, {
-                [Chunk728963.orbsGradient]: Chunk890631
+              className: a()(Chunk838997.bannerGradient, {
+                [Chunk838997.orbsGradient]: Chunk890631
               })
             }), (0, Chunk951288.jsx)(ed, {
               onLoadComplete: Chunk672188
@@ -367,7 +367,7 @@ let eh = function() {
         children: [(0, Chunk951288.jsxs)(Chunk611928.ZP, {
           variant: Chunk611928._6.OVERLAY,
           children: [(0, Chunk951288.jsx)("div", {
-            className: Chunk728963.dragRegion
+            className: Chunk838997.dragRegion
           }), (0, Chunk951288.jsx)(Chunk611928.z6, {
             scrollPosition: Chunk617136
           }), (0, Chunk951288.jsx)(Chunk611928.aV, {
@@ -388,19 +388,19 @@ let eh = function() {
                 icon: Chunk481060.Gr1,
                 iconPosition: "end"
               }),
-              className: a()(Chunk728963.bannerContainer, {
-                [Chunk728963.orbsContainer]: Chunk890631
+              className: a()(Chunk838997.bannerContainer, {
+                [Chunk838997.orbsContainer]: Chunk890631
               }),
               children: [(0, Chunk951288.jsx)("div", {
-                className: a()(Chunk728963.bannerGradient, {
-                  [Chunk728963.orbsGradient]: Chunk890631
+                className: a()(Chunk838997.bannerGradient, {
+                  [Chunk838997.orbsGradient]: Chunk890631
                 })
               }), (0, Chunk951288.jsx)(ed, {
                 onLoadComplete: Chunk672188
               })]
             }), (0, Chunk951288.jsxs)(Chunk374939.Z, {
               children: [(0, Chunk951288.jsx)("div", {
-                className: Chunk728963.tabs,
+                className: Chunk838997.tabs,
                 children: (0, Chunk951288.jsx)(Chunk233374.Z, {
                   tabs: Chunk626135,
                   selectedTab: Chunk70097,

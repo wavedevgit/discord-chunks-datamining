@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk215023 = require("./215023.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk561549 = require("./561549.js"),
+  Chunk651353 = require("./651353.js"),
   Chunk201284 = require("./201284.js");
 
 function y(e) {
@@ -42,19 +42,19 @@ function y(e) {
 
 function A() {
   return (0, Chunk951288.jsxs)("div", {
-    className: Chunk561549.orbsContainer,
+    className: Chunk651353.orbsContainer,
     children: [(0, Chunk951288.jsx)(y, {
-      className: Chunk561549.centerOrb
+      className: Chunk651353.centerOrb
     }), (0, Chunk951288.jsxs)("div", {
-      className: Chunk561549.smallOrbContainer,
+      className: Chunk651353.smallOrbContainer,
       children: [(0, Chunk951288.jsx)(y, {
-        className: Chunk561549.smallOrb
+        className: Chunk651353.smallOrb
       }), (0, Chunk951288.jsx)(y, {
-        className: Chunk561549.smallOrb
+        className: Chunk651353.smallOrb
       }), (0, Chunk951288.jsx)(y, {
-        className: Chunk561549.smallOrb
+        className: Chunk651353.smallOrb
       }), (0, Chunk951288.jsx)(y, {
-        className: Chunk561549.smallOrb
+        className: Chunk651353.smallOrb
       })]
     })]
   })

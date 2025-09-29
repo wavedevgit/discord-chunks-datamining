@@ -1,0 +1,3 @@
+/** Chunk was on 14580 **/
+/** chunk id: 657368, original params: i (module,exports,require) **/
+module.exports = JSON.parse('{"klSpfn":"Muokkaa asetuksia","NzUuLC":["+",[1,"count"]," ",[6,"count",{"one":["viesti"],"other":["viesti\xe4"]},0,"cardinal"]],"O+racX":"Ilmoituksia ei ole.","5H2Jd3":"N\xe4yt\xe4 kaikki","Ko8NGh":"N\xe4yt\xe4 kirjanmerkit","dcpdhI":"Valitse viesti, niin siirryt siihen.","VAK+h4":"Tervetuloa ilmoituskeskukseesi!"}')

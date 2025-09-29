@@ -500,7 +500,7 @@ function e8(e) {
   q = null
 }
 
-function e5(e) {
+function e6(e) {
   let {
     profile: t
   } = e;
@@ -508,7 +508,7 @@ function e5(e) {
   t.id === (null == s ? true : s.id) && (l = c = t, q = null)
 }
 
-function e6(e) {
+function e5(e) {
   let {
     guildId: t,
     error: n
@@ -653,11 +653,11 @@ let te = new e9(Chunk570140.Z, __OVERLAY__ ? {} : {
   GUILD_DELETE: ek,
   GUILD_PROFILE_FETCH_SUCCESS: e4,
   GUILD_PROFILE_UPDATE: e8,
-  GUILD_PROFILE_UPDATE_SUCCESS: e5,
-  GUILD_PROFILE_UPDATE_FAILURE: e6,
+  GUILD_PROFILE_UPDATE_SUCCESS: e6,
+  GUILD_PROFILE_UPDATE_FAILURE: e5,
   GUILD_PROFILE_UPDATE_VISIBILITY: e8,
   GUILD_PROFILE_UPDATE_VISIBILITY_SUCCESS: e7,
-  GUILD_PROFILE_UPDATE_VISIBILITY_FAILURE: e6,
+  GUILD_PROFILE_UPDATE_VISIBILITY_FAILURE: e5,
   USER_CONNECTIONS_UPDATE: eK,
   GUILD_INTEGRATIONS_UPDATE: eK,
   INSTANT_INVITE_REVOKE_SUCCESS: eP,

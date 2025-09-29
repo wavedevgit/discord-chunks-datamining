@@ -96,9 +96,9 @@ var Chunk990547 = require("./990547.js"),
   Chunk46140 = require("./46140.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk693450 = require("./693450.js"),
-  Chunk345909 = require("./345909.js"),
-  Chunk202323 = require("./202323.js");
+  Chunk62222 = require("./62222.js"),
+  Chunk412297 = require("./412297.js"),
+  Chunk756464 = require("./756464.js");
 
 function eG(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -191,8 +191,8 @@ let eV = () => {
       isAdultUser: e3,
       hasSecureFramesVerifiedUserIds: e4,
       hasIgnoredUsers: e8,
-      hasBlockedUsers: e5,
-      isEligibleForSensitiveContentDefaults: e6,
+      hasBlockedUsers: e6,
+      isEligibleForSensitiveContentDefaults: e5,
       inputMode: e7,
       activeInputProfile: e9,
       isInputProfileCustom: te,
@@ -235,7 +235,7 @@ let eV = () => {
         searchableTitles: [ej.intl.string(ej.t["/52UY2"]), ej.intl.string(ej.t.sK0dmJ), ej.intl.string(ej.t.XxRj7e), ej.intl.string(ej.t.yNGjyM), ej.intl.string(ej.t.KPGVWl)],
         section: eD.oAB.ACCOUNT,
         parent: eP.s6.ACCOUNT_PROFILE,
-        predicate: () => e6
+        predicate: () => e5
       },
       [eP.s6.ACCOUNT_USERNAME]: {
         searchableTitles: [ej.intl.string(ej.t["+JkHPz"])],
@@ -650,7 +650,7 @@ let eV = () => {
         parent: eP.s6.PRIVACY_AND_SAFETY_FRIEND_REQUESTS_CATEGORY,
         label: ej.intl.string(ej.t["3wRorq"]),
         element: eC.ZP,
-        predicate: () => e8 || e5
+        predicate: () => e8 || e6
       },
       [eP.s6.BLOCKED_USERS]: {
         section: eD.oAB.CONTENT_AND_SOCIAL,
@@ -658,7 +658,7 @@ let eV = () => {
         label: ej.intl.string(ej.t.PFOUKS),
         searchableTitles: [ej.intl.string(ej.t.PFOUKS)],
         element: eC.GF,
-        predicate: () => e5
+        predicate: () => e6
       },
       [eP.s6.IGNORED_USERS]: {
         section: eD.oAB.CONTENT_AND_SOCIAL,

@@ -1,6 +1,0 @@
-/** Chunk was on 32202 **/
-/** chunk id: 30787, original params: e,t,n (module,exports,require) **/
-module.exports = {
-  container: "container__7bdb0",
-  appIcon: "appIcon__7bdb0"
-}

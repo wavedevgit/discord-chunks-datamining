@@ -29,9 +29,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk37113 = require("./37113.js"),
   Chunk526761 = require("./526761.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk556865 = require("./556865.js"),
-  Chunk749799 = require("./749799.js"),
-  Chunk197571 = require("./197571.js");
+  Chunk298291 = require("./298291.js"),
+  Chunk622025 = require("./622025.js"),
+  Chunk10198 = require("./10198.js");
 
 function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -160,7 +160,7 @@ function j() {
       disabled: !module,
       children: [!module && (0, Chunk951288.jsx)(Chunk494620.Z, {
         look: Chunk494620.z.WARNING,
-        className: Chunk749799.formItem,
+        className: Chunk622025.formItem,
         children: Chunk388032.intl.format(Chunk388032.t.kiaF4e, {
           onClick: () => (0, Chunk518596.openUserSettings)(Chunk313789.n.VOICE_AND_VIDEO_PANEL, {
             section: Chunk981631.oAB.VOICE,
@@ -170,12 +170,12 @@ function j() {
         })
       }), j === Chunk894694.x.BELOW_MINIMUM ? (0, Chunk951288.jsx)(Chunk494620.Z, {
         look: Chunk494620.z.WARNING,
-        className: Chunk749799.formItem,
+        className: Chunk622025.formItem,
         children: Chunk388032.intl.string(Chunk388032.t.SIxrIC)
       }) : null, (0, Chunk951288.jsx)(Chunk481060.j7V, {
         hideBorder: true,
         disabled: !module,
-        className: Chunk749799.formItem,
+        className: Chunk622025.formItem,
         value: exports,
         note: Chunk388032.intl.string(Chunk388032.t["4Qw3ND"]),
         onChange: e => O.em({
@@ -184,17 +184,17 @@ function j() {
         }),
         children: Chunk388032.intl.string(Chunk388032.t.h8rgrK)
       }), module && (0, Chunk951288.jsx)(Chunk494620.Z, {
-        className: Chunk749799.formItem,
+        className: Chunk622025.formItem,
         children: Chunk388032.intl.string(Chunk388032.t["Z+Mfqa"])
       })]
     }), k && U && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsx)(Chunk481060.$i$, {}), (0, Chunk951288.jsx)(Chunk481060.hjN, {
-        className: Chunk197571.marginTop20,
+        className: Chunk10198.marginTop20,
         disabled: !module,
         children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
           hideBorder: true,
           disabled: !module,
-          className: Chunk749799.formItem,
+          className: Chunk622025.formItem,
           value: Chunk512722,
           note: Chunk388032.intl.string(Chunk388032.t.YP3ujo),
           onChange: e => O._Q({
@@ -206,10 +206,10 @@ function j() {
       })]
     }), G && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsx)(Chunk481060.$i$, {}), (0, Chunk951288.jsx)(Chunk481060.hjN, {
-        className: Chunk197571.marginTop20,
+        className: Chunk10198.marginTop20,
         children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
           hideBorder: true,
-          className: Chunk749799.formItem,
+          className: Chunk622025.formItem,
           value: require,
           note: Chunk388032.intl.string(Chunk388032.t.m4Cjj4),
           onChange: e => O.N0(e),
@@ -217,16 +217,16 @@ function j() {
         })
       })]
     }), (0, Chunk951288.jsx)(Chunk481060.$i$, {}), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
-      className: Chunk197571.marginTop20,
+      className: Chunk10198.marginTop20,
       children: [(0, Chunk951288.jsx)(Chunk442334.Q, {
-        className: Chunk749799.formItem,
+        className: Chunk622025.formItem,
         select: Chunk39604.eU,
         title: Chunk388032.intl.string(Chunk388032.t.OgfUio),
         note: Chunk388032.intl.string(Chunk388032.t.H7j4tb),
         value: w,
         options: Z
       }), (0, Chunk951288.jsx)(Chunk442334.Q, {
-        className: Chunk749799.formItem,
+        className: Chunk622025.formItem,
         select: e => O.yi({
           resolution: e,
           frameRate: x.frameRate
@@ -236,7 +236,7 @@ function j() {
         value: x.resolution,
         options: F
       }), (0, Chunk951288.jsx)(Chunk442334.Q, {
-        className: Chunk749799.formItem,
+        className: Chunk622025.formItem,
         select: e => O.yi({
           resolution: x.resolution,
           frameRate: e
@@ -246,11 +246,11 @@ function j() {
         value: x.frameRate,
         options: V
       }), (0, Chunk951288.jsx)(Chunk442334.O, {
-        className: Chunk749799.formItem,
+        className: Chunk622025.formItem,
         title: Chunk388032.intl.string(Chunk388032.t.pf54ER),
         note: Chunk388032.intl.string(Chunk388032.t["QyB/jI"]),
         children: (0, Chunk951288.jsx)("div", {
-          className: Chunk556865.keyRecorder,
+          className: Chunk298291.keyRecorder,
           children: (0, Chunk951288.jsx)(Chunk825209.Z, {
             defaultValue: M.shortcut,
             onChange: H

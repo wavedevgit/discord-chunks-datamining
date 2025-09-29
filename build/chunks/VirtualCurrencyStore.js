@@ -1,20 +1,20 @@
-/** Chunk was on 74560 **/
-/** chunk id: 479766, original params: e,n,t (module,exports,require) **/
+/** Chunk was on 81501 **/
+/** chunk id: 479766, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => c
+  Z: () => s
 });
-var a, Chunk442837 = require("./442837.js"),
+var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function l(e, n, t) {
-  return n in e ? Object.defineProperty(e, n, {
-    value: t,
+function l(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
     enumerable: true,
     configurable: true,
     writable: true
-  }) : e[n] = t, e
+  }) : e[t] = n, e
 }
-class s extends(a = Chunk442837.ZP.Store) {
+class c extends(r = Chunk442837.ZP.Store) {
   get redeemError() {
     return this._redeemVirtualCurrencyError
   }
@@ -57,39 +57,39 @@ class s extends(a = Chunk442837.ZP.Store) {
   }
   handleBalanceFetchSuccess(e) {
     let {
-      balance: n
+      balance: t
     } = e;
-    this._isFetchingBalance = false, this._balance = n
+    this._isFetchingBalance = false, this._balance = t
   }
   handleBalanceFetchFail(e) {
     let {
-      error: n
+      error: t
     } = e;
-    this._isFetchingBalance = false, this._fetchBalanceError = n
+    this._isFetchingBalance = false, this._fetchBalanceError = t
   }
   handleBalanceUpdate(e) {
     let {
-      balance: n
+      balance: t
     } = e;
-    this._balance = n
+    this._balance = t
   }
   handleRedeemVirtualCurrencyStart(e) {
     let {
-      skuId: n
+      skuId: t
     } = e;
-    this._entitlements = null, this._redeemingSkuId = n, this._redeemVirtualCurrencyError = null, this._isRedeemingVirtualCurrency = true
+    this._entitlements = null, this._redeemingSkuId = t, this._redeemVirtualCurrencyError = null, this._isRedeemingVirtualCurrency = true
   }
   handleRedeemVirtualCurrencySuccess(e) {
     let {
-      entitlements: n
+      entitlements: t
     } = e;
-    this._entitlements = n, this._redeemingSkuId = null, this._isRedeemingVirtualCurrency = false
+    this._entitlements = t, this._redeemingSkuId = null, this._isRedeemingVirtualCurrency = false
   }
   handleRedeemVirtualCurrencyFail(e) {
     let {
-      error: n
+      error: t
     } = e;
-    this._entitlements = null, this._redeemVirtualCurrencyError = n, this._redeemingSkuId = null, this._isRedeemingVirtualCurrency = false
+    this._entitlements = null, this._redeemVirtualCurrencyError = t, this._redeemingSkuId = null, this._isRedeemingVirtualCurrency = false
   }
   handleOnboardingModalOpen(e) {
     let {} = e;
@@ -117,5 +117,5 @@ class s extends(a = Chunk442837.ZP.Store) {
     }), l(this, "_entitlements", null), l(this, "_redeemingSkuId", null), l(this, "_isRedeemingVirtualCurrency", false), l(this, "_redeemVirtualCurrencyError", null), l(this, "_balance", null), l(this, "_fetchBalanceError", null), l(this, "_isFetchingBalance", false), l(this, "_onboardingModalOpenedPrior", false), l(this, "_balancePillOverlay", false)
   }
 }
-l(s, "displayName", "VirtualCurrencyStore");
-let c = new s
+l(c, "displayName", "VirtualCurrencyStore");
+let s = new c

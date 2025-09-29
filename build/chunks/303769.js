@@ -1,0 +1,6 @@
+/** Chunk was on web.js **/
+/** chunk id: 303769, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+module.exports = {
+  sparkles: "sparkles_f99d90"
+}

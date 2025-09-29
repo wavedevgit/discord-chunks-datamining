@@ -20,8 +20,8 @@ var Chunk120356 = require("./120356.js"),
   Chunk726985 = require("./726985.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk40086 = require("./40086.js"),
-  Chunk197571 = require("./197571.js");
+  Chunk459289 = require("./459289.js"),
+  Chunk10198 = require("./10198.js");
 
 function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -55,8 +55,8 @@ function v() {
     disableNotifications: I,
     enableContentProtection: T
   } = (0, Chunk442837.cj)([Chunk246946.Z], () => O({}, Chunk246946.Z.getSettings())), S = (0, Chunk947889.Z)(), A = () => (0, Chunk951288.jsx)(Chunk481060.ToO, {
-    className: Chunk197571.marginBottom40,
-    iconClassName: Chunk40086.noticeIcon,
+    className: Chunk10198.marginBottom40,
+    iconClassName: Chunk459289.noticeIcon,
     type: Chunk481060.Dd5.PRIMARY,
     imageData: {
       src: require("./560264.js"),
@@ -101,7 +101,7 @@ function v() {
       }), C()]
     }), (0, Chunk951288.jsxs)("div", {
       children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
-        className: a()(Chunk197571.marginTop40, Chunk197571.marginBottom8, Chunk40086.sectionLabel),
+        className: a()(Chunk10198.marginTop40, Chunk10198.marginBottom8, Chunk459289.sectionLabel),
         children: Chunk388032.intl.string(Chunk388032.t["+1H47u"])
       }), (0, Chunk951288.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.STREAMER_MODE_HIDE_PERSONAL_INFORMATION,

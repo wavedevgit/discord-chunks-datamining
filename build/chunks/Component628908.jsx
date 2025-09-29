@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk325067 = require("./325067.js"),
   Chunk594174 = require("./594174.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk505198 = require("./505198.js");
+  Chunk255063 = require("./255063.js");
 
 function x(e, t, r) {
   return t in e ? Object.defineProperty(e, t, {
@@ -164,10 +164,10 @@ class g extends Chunk647438.PureComponent {
     } = this.state;
     return (0, Chunk951288.jsxs)(Chunk481060.Y0X, {
       transitionState: module,
-      className: Chunk505198.modal,
+      className: Chunk255063.modal,
       parentComponent: "MFAEnableSuccess",
       children: [this.renderHeader(Chunk388032.intl.string(Chunk388032.t["681MPT"]), Chunk388032.intl.format(Chunk388032.t["/Nhi8f"], {})), (0, Chunk951288.jsx)(Chunk481060.hzk, {
-        className: Chunk505198.modalInner,
+        className: Chunk255063.modalInner,
         children: this.renderBackupCodesSection(Chunk388032.intl.format(Chunk388032.t.M0Dogo, {}))
       }), exports && this.renderConfirmModal(Chunk388032.intl.string(Chunk388032.t.WJFPHB))]
     })
@@ -180,10 +180,10 @@ class g extends Chunk647438.PureComponent {
     } = this.state;
     return (0, Chunk951288.jsxs)(Chunk481060.Y0X, {
       transitionState: module,
-      className: Chunk505198.modal,
+      className: Chunk255063.modal,
       parentComponent: "MFAEnableSuccess",
       children: [this.renderHeader(Chunk388032.intl.string(Chunk388032.t.x6ielJ), Chunk388032.intl.format(Chunk388032.t["/Nhi8f"], {})), (0, Chunk951288.jsx)(Chunk481060.hzk, {
-        className: Chunk505198.modalInner,
+        className: Chunk255063.modalInner,
         children: this.renderBackupCodesSection(Chunk388032.intl.format(Chunk388032.t.p59QLS, {}))
       }), exports && this.renderConfirmModal(Chunk388032.intl.string(Chunk388032.t.aoNIXF))]
     })

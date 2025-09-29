@@ -1,4 +1,4 @@
-/** Chunk was on 63373 **/
+/** Chunk was on 69310 **/
 /** chunk id: 885524, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -16,22 +16,22 @@ function d(e) {
   let {
     streamId: t,
     userId: n,
-    videoSpinnerContext: o,
+    videoSpinnerContext: s,
     streamKey: d,
     loading: p,
     paused: f = false
-  } = e, m = l.useRef(new r.V7), v = o === s.m.SELF_STREAM || o === s.m.REMOTE_STREAM ? i.Yn.STREAM : i.Yn.DEFAULT;
-  return l.useEffect(() => {
+  } = e, h = r.useRef(new l.V7), g = s === o.m.SELF_STREAM || s === o.m.REMOTE_STREAM ? i.Yn.STREAM : i.Yn.DEFAULT;
+  return r.useEffect(() => {
     if (!p || f || !a.w.isIncomingVideoEnabled()) return;
-    let e = m.current;
+    let e = h.current;
     return e.start(u, () => {
-      (0, c.K)(t, n, v, d)
+      (0, c.K)(t, n, g, d)
     }), () => {
       e.stop()
     }
-  }, [f, t, p, v, d, n]), {
-    onReady: l.useCallback(() => {
-      m.current.stop(), (0, c.w)(v, n)
-    }, [n, v])
+  }, [f, t, p, g, d, n]), {
+    onReady: r.useCallback(() => {
+      h.current.stop(), (0, c.w)(g, n)
+    }, [n, g])
   }
 }
