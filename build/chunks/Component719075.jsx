@@ -35,8 +35,8 @@ let S = e => {
   } = (0, s.WX)({
     location: "product_card_price"
   }), k = l.useMemo(() => (0, d.BH)(t, x), [t, x]), I = (0, C.Iw)(t), P = null != I, {
-    displayPrices: B,
-    hasSufficientOrbs: N
+    displayPrices: N,
+    hasSufficientOrbs: B
   } = (0, m.Ip)({
     product: t,
     isPremiumUser: x,
@@ -57,10 +57,10 @@ let S = e => {
     className: E.priceTag,
     children: b.intl.string(b.t.rt69oq)
   }) : j ? (0, r.jsx)(_.e, {
-    displayPrices: B,
+    displayPrices: N,
     isPremiumUser: x,
     discount: k,
-    hasSufficientOrbs: N,
+    hasSufficientOrbs: B,
     discountOfferAmount: I
   }) : (0, r.jsx)(h.Z, {
     product: t,

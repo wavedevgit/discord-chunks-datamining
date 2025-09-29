@@ -5,7 +5,7 @@ require.d(exports, {
   h: () => a
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
-  Chunk180650 = require("./180650.js"),
+  Chunk884697 = require("./884697.js"),
   Chunk215023 = require("./215023.js");
 let a = e => {
   let {
@@ -15,7 +15,7 @@ let a = e => {
     let t = n.findIndex(t => t.skuId === e);
     return false === t ? 1 : Math.floor(t / i.kN) + 1
   }, [n]), c = r.useCallback(e => {
-    if (null != e && e !== l.T.ORB) {
+    if (null != e && !(0, l.$2)(e)) {
       let t = o(e);
       t !== a && s(t)
     }

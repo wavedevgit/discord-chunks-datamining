@@ -35,7 +35,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk180493 = require("./180493.js");
 
-function N(e) {
+function B(e) {
   let {
     tab: t,
     displayText: n,
@@ -44,9 +44,9 @@ function N(e) {
   } = e;
   return (0, r.jsx)(h.Z.Title, {
     onClick: () => i(t),
-    wrapperClassName: B.tabWrapper,
-    className: a()(B.tab, {
-      [B.selected]: l
+    wrapperClassName: N.tabWrapper,
+    className: a()(N.tab, {
+      [N.selected]: l
     }),
     children: n
   })
@@ -66,7 +66,7 @@ function A(e) {
     ("Enter" === e.key || " " === e.key) && (e.preventDefault(), m(true))
   };
   return (0, r.jsx)("div", {
-    className: B.tabWithMenuContainer,
+    className: N.tabWithMenuContainer,
     onMouseEnter: () => m(true),
     onMouseLeave: () => m(false),
     children: (0, r.jsx)(c.yRy, {
@@ -114,12 +114,12 @@ function A(e) {
           ref: d,
           onClick: () => s(t),
           onKeyDown: b,
-          wrapperClassName: B.tabWrapper,
-          className: a()(B.tab, {
-            [B.selected]: n
+          wrapperClassName: N.tabWrapper,
+          className: a()(N.tab, {
+            [N.selected]: n
           }),
           children: (0, r.jsxs)("span", {
-            className: B.tabWithChevron,
+            className: N.tabWithChevron,
             children: [i, g ? (0, r.jsx)(c.u04, {
               size: "sm",
               color: "currentColor"
@@ -190,22 +190,22 @@ function R(e) {
     theme: y,
     children: e => (0, r.jsxs)(h.Z, {
       disableDoubleClick: true,
-      className: a()(e, B.headerBar, {
-        [B.fullscreenHeaderBar]: t
+      className: a()(e, N.headerBar, {
+        [N.fullscreenHeaderBar]: t
       }),
-      innerClassname: w ? B.headerBarInner : true,
+      innerClassname: w ? N.headerBarInner : true,
       toolbar: t || !Z ? null : (0, r.jsx)(l.Fragment, {}),
       children: [(0, r.jsxs)(c.P3F, {
-        className: B.shopHomeLink,
+        className: N.shopHomeLink,
         onClick: () => f(j.AW.HOME),
         "aria-label": P.intl.string(P.t.pWG4zc) + " home",
         children: [(0, r.jsx)(x.Z, {
-          className: B.discordLogo
+          className: N.discordLogo
         }), (0, r.jsx)(h.Z.Title, {
           children: P.intl.string(P.t.pWG4zc)
         })]
       }), (0, r.jsx)("div", {
-        className: B.tabs,
+        className: N.tabs,
         children: H.map(e => {
           let {
             tab: t,
@@ -216,7 +216,7 @@ function R(e) {
             selected: (0, j.RE)(p) || p === t,
             displayText: n,
             handleTransition: f
-          }, t) : (0, r.jsx)(N, {
+          }, t) : (0, r.jsx)(B, {
             tab: t,
             displayText: n,
             selected: p === t,
@@ -224,12 +224,12 @@ function R(e) {
           }, t)
         })
       }), (w || t || U || F) && (0, r.jsxs)("div", {
-        className: B.alignedRightContent,
+        className: N.alignedRightContent,
         children: [U && (0, r.jsx)(L.Z, {
           handleTransition: f,
           selectedTab: p
         }), F && (0, r.jsx)(c.P3F, {
-          className: B.wishlistButton,
+          className: N.wishlistButton,
           onClick: V,
           "aria-label": P.intl.string(P.t["7lZ31N"]),
           children: (0, r.jsx)(c.h_8, {
@@ -242,7 +242,7 @@ function R(e) {
           cardAlignment: S.V9.CardAlignment.END,
           ctaText: P.intl.string(P.t.VC4Mq6),
           ctaOnClick: W,
-          className: B.balanceWidgetMenu
+          className: N.balanceWidgetMenu
         }), t && (0, r.jsx)(d.Z, {
           closeAction: M,
           keybind: "ESC"

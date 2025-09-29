@@ -51,7 +51,7 @@ function A(e) {
       case v.AW.AVATAR_DECORATIONS:
         return [O.intl.string(O.t.dRZYND), G ? k.Z : j.Z, i.Z.AVATAR_DECORATION];
       case v.AW.PROFILE_EFFECTS:
-        return [O.intl.string(O.t["1cNjt7"]), G ? N.Z : B.Z, i.Z.PROFILE_EFFECT];
+        return [O.intl.string(O.t["1cNjt7"]), G ? B.Z : N.Z, i.Z.PROFILE_EFFECT];
       case v.AW.NAMEPLATES:
         return [O.intl.string(O.t.V68Fq6), G ? P.Z : I.Z, i.Z.NAMEPLATE];
       case v.AW.BUNDLES:

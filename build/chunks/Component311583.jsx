@@ -35,19 +35,19 @@ let E = e => {
     isPartiallyOwnedBundle: L,
     isPurchased: y
   }), P = (0, _.Iw)(t), {
-    isOrbExclusive: B
+    isOrbExclusive: N
   } = (0, C.Ip)({
     product: t,
     isPremiumUser: O,
     tab: v,
     hasDiscountOffer: null != P
-  }), N = (0, h.J7)(t, s.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON);
-  return k || l.tq || B || !I || v === m.AW.ORBS ? null : j ? (0, r.jsx)(a.hU, {
+  }), B = (0, h.J7)(t, s.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON);
+  return k || l.tq || N || !I || v === m.AW.ORBS ? null : j ? (0, r.jsx)(a.hU, {
     variant: "primary",
     "aria-label": b.intl.string(b.t.SKNnqq),
     icon: a.tEF,
     onClick: e => {
-      e.stopPropagation(), N(e)
+      e.stopPropagation(), B(e)
     }
   }) : (0, r.jsx)(u.k0, {
     newValue: {

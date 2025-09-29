@@ -38,8 +38,8 @@ let I = e => {
     title: i,
     sortedSkuIds: I,
     numVisibleItems: P,
-    hasSorting: B,
-    prioritizeUserDiscounts: N,
+    hasSorting: N,
+    prioritizeUserDiscounts: B,
     tab: A,
     buttonContainerClassName: R
   } = e, Z = (0, s.e7)([d.default], () => d.default.getCurrentUser()), w = h.ZP.canUseCollectibles(Z), F = (0, T.G)("FeedBlock"), {
@@ -49,7 +49,7 @@ let I = e => {
     sortOptions: W,
     shuffleProducts: U,
     showRecommendationOption: V
-  } = (0, x.Z)(I, w, N), z = (0, O.St)(D), G = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), K = (0, s.e7)([g.Z], () => g.Z.isFocused()), q = !G && K, {
+  } = (0, x.Z)(I, w, B), z = (0, O.St)(D), G = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), K = (0, s.e7)([g.Z], () => g.Z.isFocused()), q = !G && K, {
     animationPhase: Y,
     startAnimation: X
   } = (0, v.y)(), Q = (0, _.sp)(), J = null != (t = null == Q ? true : Q.sessionId) ? t : "", $ = l.useRef(null), ee = l.useCallback(e => {
@@ -113,7 +113,7 @@ let I = e => {
             }), t))
           }
         })]
-      }), B ? (0, r.jsxs)("div", {
+      }), N ? (0, r.jsxs)("div", {
         className: a()(k.headerRight, {
           [j.shopTakeOver]: F
         }),

@@ -77,7 +77,7 @@ let D = e => {
     let U = (0, R.G)("CollectiblesShop"),
       {
         onClose: V
-      } = (0, N.Db)(),
+      } = (0, B.Db)(),
       {
         currentTab: z,
         hasFilters: G
@@ -155,7 +155,7 @@ let D = e => {
               }),
               ref: t ? eo : ec,
               tabIndex: false,
-              children: [(0, r.jsx)(B.I, {
+              children: [(0, r.jsx)(N.I, {
                 isFullScreen: t,
                 isLayer: es,
                 onClose: V,

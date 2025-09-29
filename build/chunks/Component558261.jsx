@@ -34,7 +34,7 @@ var Chunk311570 = require("./311570.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk660606 = require("./660606.js");
-let B = e => {
+let N = e => {
     let {
       product: t,
       cardRef: n,
@@ -64,7 +64,7 @@ let B = e => {
       fullWidth: true
     })
   },
-  N = e => {
+  B = e => {
     let {
       isClaimPremiumProductDisabled: t
     } = e;
@@ -249,14 +249,14 @@ let B = e => {
       handlePreviewButtonClick: z
     }) : c === j.AW.ORBS ? (0, r.jsx)(F, {
       handlePreviewButtonClick: z
-    }) : (0, r.jsx)(B, {
+    }) : (0, r.jsx)(N, {
       product: t,
       cardRef: n,
       analyticsLocations: V,
       selectedVariantIndex: l,
       hasDiscountOffer: H,
       discountOfferAmount: P
-    }) : (0, r.jsx)(N, {
+    }) : (0, r.jsx)(B, {
       isClaimPremiumProductDisabled: K
     })
   }

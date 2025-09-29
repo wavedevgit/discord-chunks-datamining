@@ -42,10 +42,10 @@ let I = e => {
     } = e, {
       noCache: _,
       includeUnpublished: O
-    } = (0, C.Z)(), [L, I] = l.useState(false), P = (0, d.sp)(), B = null != (t = null == P ? true : P.sessionId) ? t : "";
+    } = (0, C.Z)(), [L, I] = l.useState(false), P = (0, d.sp)(), N = null != (t = null == P ? true : P.sessionId) ? t : "";
     l.useEffect(() => {
       (0, f.n)({
-        sessionId: B,
+        sessionId: N,
         checkpoint: f.a.SHOP_MOUNTED,
         tab: c,
         isFullScreen: u,
@@ -54,7 +54,7 @@ let I = e => {
       })
     }, [c]);
     let {
-      isFetchingShopHome: N,
+      isFetchingShopHome: B,
       fetchShopHomeError: A,
       shopBlocks: R,
       refreshShopHome: Z
@@ -64,37 +64,37 @@ let I = e => {
       includeBundles: true,
       logPerf: true
     }, {
-      sessionId: B,
+      sessionId: N,
       tab: c,
       isFullScreen: u
     }), w = l.useCallback(() => {
       Z()
     }, [Z]);
     return (l.useEffect(() => {
-      null != A || N || 0 === R.length || (0, f.n)({
-        sessionId: B,
+      null != A || B || 0 === R.length || (0, f.n)({
+        sessionId: N,
         checkpoint: f.a.SHOP_RENDERED,
         tab: c,
         isFullScreen: u,
         unpublishedCategoriesShown: O,
         cacheDisabled: _
       })
-    }, [A, N, R.length, O, _, B, c, u]), null != A) ? (0, r.jsx)(h.Z, {
+    }, [A, B, R.length, O, _, N, c, u]), null != A) ? (0, r.jsx)(h.Z, {
       onRetry: w,
       errorOrigin: h.i.SHOP_PAGE,
       errorMessage: A.message
-    }) : N || 0 === R.length ? (0, r.jsxs)("div", {
+    }) : B || 0 === R.length ? (0, r.jsxs)("div", {
       className: a()(k.loadingContainer, k.feedContent),
       children: [(0, r.jsx)(S.Z, {
-        isLoading: N,
+        isLoading: B,
         handleTransition: n,
         tab: c
       }), (0, r.jsx)(b.Z, {
-        isLoading: N,
+        isLoading: B,
         handleTransition: n,
         categories: []
       }), (0, r.jsx)(E.Z, {
-        isLoading: N,
+        isLoading: B,
         title: c === y.AW.ORBS ? j.intl.string(j.t.dFgeub) : j.intl.string(j.t.NSv5KS),
         numVisibleItems: i,
         hasSorting: c === y.AW.HOME,
@@ -108,7 +108,7 @@ let I = e => {
         switch (e.type) {
           case s.z.HERO:
             d = (0, r.jsx)(S.Z, {
-              isLoading: N,
+              isLoading: B,
               handleTransition: n,
               heroBlock: e,
               tab: c
@@ -116,7 +116,7 @@ let I = e => {
             break;
           case s.z.FEATURED:
             d = (0, r.jsx)(b.Z, {
-              isLoading: N,
+              isLoading: B,
               handleTransition: n,
               featuredBlockRecord: e
             }, l);
@@ -125,7 +125,7 @@ let I = e => {
             let f = e.sortedSkuIds;
             d = (0, r.jsx)(E.Z, {
               title: c === y.AW.ORBS ? j.intl.string(j.t.dFgeub) : j.intl.string(j.t.NSv5KS),
-              isLoading: N || o,
+              isLoading: B || o,
               numVisibleItems: i,
               sortedSkuIds: f,
               buttonContainerClassName: (null == t ? true : t.type) === s.z.IMMERSIVE_BANNER ? k.feedblockInteractiveBackground : true,
