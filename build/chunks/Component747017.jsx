@@ -42,7 +42,7 @@ function v(e) {
   let P = (null == a ? true : a.discoverable) !== false ? a : null,
     w = (0, l.e7)([f.default], () => f.default.getId() === (null == t ? true : t.id)),
     D = (0, l.e7)([d.Z], () => w ? d.Z.getHangStatusActivity() : null != n ? n.find(e => e.type === y.IIU.HANG_STATUS) : null),
-    x = i.useMemo(() => {
+    L = i.useMemo(() => {
       var e, t;
       let r = null == n ? true : n.find(e => {
         let {
@@ -55,8 +55,8 @@ function v(e) {
       return null == ("" === i ? null : i) && null == r.emoji ? null : r
     }, [n]);
   if ((0, l.e7)([_.Z], () => _.Z.isBlockedOrIgnored(null == t ? true : t.id))) return null;
-  let L = (null == t ? true : t.bot) === true,
-    j = ((null == x ? true : x.state) != null || null != D) && "xs" === S,
+  let x = (null == t ? true : t.bot) === true,
+    j = ((null == L ? true : L.state) != null || null != D) && "xs" === S,
     M = () => {
       if (null != P) return (0, r.jsx)(h.Z, {
         stream: P,
@@ -65,7 +65,7 @@ function v(e) {
         textClassName: I,
         iconClassName: T,
         hideText: j,
-        hideIcon: L,
+        hideIcon: x,
         hideTooltip: R
       });
       let e = null == n ? true : n.find(e => {
@@ -80,7 +80,7 @@ function v(e) {
         textClassName: I,
         iconClassName: T,
         hideText: j,
-        hideIcon: L,
+        hideIcon: x,
         hideTooltip: R
       }) : null != v ? (0, r.jsx)(E.Z, {
         channel: v,
@@ -95,8 +95,8 @@ function v(e) {
       [O.textXs]: "xs" === S,
       [O.textSm]: "sm" === S
     }),
-    U = () => null == x && null == D ? null : (0, r.jsx)(m.Z, {
-      customStatusActivity: x,
+    U = () => null == L && null == D ? null : (0, r.jsx)(m.Z, {
+      customStatusActivity: L,
       textSize: S,
       animateEmoji: A,
       hideEmoji: N,

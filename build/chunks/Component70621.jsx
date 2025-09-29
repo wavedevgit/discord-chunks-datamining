@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 70621, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 1272 **/
+/** chunk id: 70621, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   w: () => c
 });
@@ -15,20 +14,20 @@ let c = e => {
     quest: t
   } = e;
   return (0, r.jsx)("div", {
-    className: l.previewBackground,
+    className: s.previewBackground,
     children: (0, r.jsxs)("div", {
-      className: l.previewCard,
+      className: s.previewCard,
       children: [(0, r.jsx)(i.X6q, {
-        className: l.heading,
+        className: s.heading,
         variant: "heading-md/semibold",
-        children: s.intl.string(s.t["5wnpFx"])
-      }), (0, r.jsx)(o.Z, {
-        className: l.questTile,
+        children: o.intl.string(o.t["5wnpFx"])
+      }), (0, r.jsx)(a.Z, {
+        className: s.questTile,
         quest: t,
-        questContent: a.jn.QUEST_HOME_DESKTOP,
+        questContent: l.jn.QUEST_HOME_DESKTOP,
         contentPosition: 0,
         rowIndex: 0,
-        sourceQuestContent: a.jn.INTERNAL_PREVIEW_TOOL
+        sourceQuestContent: l.jn.INTERNAL_PREVIEW_TOOL
       })]
     })
   })

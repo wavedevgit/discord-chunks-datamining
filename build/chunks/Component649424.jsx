@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 649424, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 1272 **/
+/** chunk id: 649424, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => l
+  Z: () => s
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -10,19 +9,19 @@ var Chunk481060 = require("./481060.js"),
   Chunk23404 = require("./23404.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk674455 = require("./674455.js");
-let l = function(e) {
+let s = function(e) {
   let {
     quest: t
   } = e;
   return (0, r.jsx)("div", {
-    className: s.previewBackground,
+    className: o.previewBackground,
     children: (0, r.jsxs)("div", {
-      className: s.previewCard,
+      className: o.previewCard,
       children: [(0, r.jsx)(i.X6q, {
-        className: s.heading,
+        className: o.heading,
         variant: "heading-md/semibold",
-        children: o.intl.string(o.t.L2mlUV)
-      }), (0, r.jsx)(a.Z, {
+        children: a.intl.string(a.t.L2mlUV)
+      }), (0, r.jsx)(l.Z, {
         quest: t
       })]
     })

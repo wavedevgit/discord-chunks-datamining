@@ -77,9 +77,9 @@ let D = Object.freeze({
     [Chunk981631.apO.MOVE_UP]: "queued",
     [Chunk981631.apO.RESUME]: "paused"
   }),
-  x = () => [Chunk388032.intl.string(Chunk388032.t.r9wmKi), Chunk388032.intl.string(Chunk388032.t["6CpimZ"]), Chunk388032.intl.string(Chunk388032.t.ysbNDQ), Chunk388032.intl.string(Chunk388032.t.TLnXx8), Chunk388032.intl.string(Chunk388032.t.Qi8mnZ), Chunk388032.intl.string(Chunk388032.t.yvMu3d), Chunk388032.intl.string(Chunk388032.t.PnNUZ2), Chunk388032.intl.string(Chunk388032.t.hU2TEB), Chunk388032.intl.string(Chunk388032.t.YyY519), Chunk388032.intl.string(Chunk388032.t.PbHJb2)];
+  L = () => [Chunk388032.intl.string(Chunk388032.t.r9wmKi), Chunk388032.intl.string(Chunk388032.t["6CpimZ"]), Chunk388032.intl.string(Chunk388032.t.ysbNDQ), Chunk388032.intl.string(Chunk388032.t.TLnXx8), Chunk388032.intl.string(Chunk388032.t.Qi8mnZ), Chunk388032.intl.string(Chunk388032.t.yvMu3d), Chunk388032.intl.string(Chunk388032.t.PnNUZ2), Chunk388032.intl.string(Chunk388032.t.hU2TEB), Chunk388032.intl.string(Chunk388032.t.YyY519), Chunk388032.intl.string(Chunk388032.t.PbHJb2)];
 
-function L(e) {
+function x(e) {
   let t = O.en(e.sku);
   return null != t ? S.intl.formatToPlainString(S.t.Aqe2ZG, {
     date: t
@@ -103,7 +103,7 @@ class j extends(r = Chunk647438.Component) {
       case "locate":
         return S.intl.string(S.t["nIj+a2"]);
       case "uninstalling":
-        let t = x();
+        let t = L();
         return null == this._uninstallStringIndex && (this._uninstallStringIndex = Math.floor(Math.random() * t.length)), t[this._uninstallStringIndex];
       case "queued":
         return S.intl.string(S.t.TiJg5u);
@@ -222,7 +222,7 @@ class j extends(r = Chunk647438.Component) {
       libraryApplication: t
     } = this.props, n = this.getButtonState();
     if ("play" === require) return this.renderPlayButton();
-    if ("preorder_wait" === require) return this.renderDisabledButton(require, L(exports));
+    if ("preorder_wait" === require) return this.renderDisabledButton(require, x(exports));
     if ("unsupported_os" === require) return this.renderDisabledButton(require, Chunk388032.intl.formatToPlainString(Chunk388032.t.LBm0Aw, {
       operatingSystem: Chunk388032.intl.string(Chunk388032.t["0/xHFB"])
     }));

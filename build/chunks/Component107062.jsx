@@ -68,8 +68,8 @@ let C = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
       entry: n,
       showCoverImage: false
     }), {
-      user: x,
-      details: L,
+      user: L,
+      details: x,
       activity: j,
       embeddedActivity: M
     } = (0, T.n)(n), {
@@ -85,13 +85,13 @@ let C = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
         applicationId: n.extra.application_id
       })
     }, Y = i.useCallback(e => {
-      if ((null == D ? true : D.src) == null || null == t || null == x) return;
+      if ((null == D ? true : D.src) == null || null == t || null == L) return;
       let r = V > 0 ? R({
         entry: n,
         channel: t,
         users: [Z, F],
         countOthers: V
-      }) : N(n, t, x);
+      }) : N(n, t, L);
       return (0, y.C4)({
         entry: n,
         applicationImageSrc: null == D ? true : D.src,
@@ -101,14 +101,14 @@ let C = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
         colors: [k, U],
         channelId: e
       })
-    }, [null == D ? true : D.src, t, B, n, G, V, Z, F, k, U, x]), {
+    }, [null == D ? true : D.src, t, B, n, G, V, Z, F, k, U, L]), {
       enabled: W
     } = s.c.useExperiment({
       location: "MemberListAcitivtyContentPopout"
     }, {
       autoTrackExposure: true
     });
-    if (null == x) return null;
+    if (null == L) return null;
     let K = (0, r.jsx)(v.PZ, {
         location: v.Gt.POPOUT,
         entry: n
@@ -117,7 +117,7 @@ let C = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
         channel: t,
         userDescription: (0, b.kr)(n) ? A.t.vPg1JS : A.t.rPqqtr,
         title: n.extra.activity_name,
-        subtitle: L,
+        subtitle: x,
         badges: K,
         entry: n,
         showCoverImage: false,
@@ -129,7 +129,7 @@ let C = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
       X = q ? (0, r.jsx)(u.Z, {
         embeddedActivity: M,
         activity: j,
-        user: x,
+        user: L,
         variant: "primary",
         size: "md",
         icon: o.YVR
@@ -149,10 +149,10 @@ let C = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
         children: (0, r.jsx)(I.WT, {
           onReaction: m,
           onVoiceChannelPreview: P,
-          user: x,
+          user: L,
           channel: t,
           generateReactionImage: Y,
-          reactionImageAltText: C(n, x),
+          reactionImageAltText: C(n, L),
           entry: n,
           buttons: $
         })

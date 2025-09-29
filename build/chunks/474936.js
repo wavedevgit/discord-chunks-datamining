@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   $7: () => k,
-  $8: () => eL,
+  $8: () => ex,
   $X: () => eb,
   $e: () => f,
   $n: () => eQ,
@@ -36,7 +36,7 @@ require.d(exports, {
   Qh: () => e8,
   RU: () => eu,
   Rg: () => W,
-  Rr: () => L,
+  Rr: () => x,
   Rt: () => er,
   Se: () => e7,
   Si: () => p,
@@ -58,7 +58,7 @@ require.d(exports, {
   Z1: () => v,
   Zh: () => u,
   _k: () => ej,
-  a$: () => e5,
+  a$: () => e6,
   a1: () => eW,
   a7: () => $,
   b6: () => d,
@@ -89,7 +89,7 @@ require.d(exports, {
   nS: () => h,
   o4: () => I,
   p9: () => l,
-  pH: () => ex,
+  pH: () => eL,
   pj: () => P,
   rB: () => e_,
   rV: () => C,
@@ -98,7 +98,7 @@ require.d(exports, {
   tL: () => H,
   u6: () => eE,
   uM: () => E,
-  vK: () => e6,
+  vK: () => e5,
   vL: () => eA,
   w1: () => ev,
   wh: () => q,
@@ -326,8 +326,8 @@ let R = Object.freeze({
   P = new Set(["511651880837840896"]),
   w = 16,
   D = 8,
-  x = 5,
-  L = 30,
+  L = 5,
+  x = 30,
   j = 2,
   M = 3,
   k = 28,
@@ -430,17 +430,17 @@ let eA = Object.freeze({
   eP = 0x3200000,
   ew = 0x6400000,
   eD = 5,
-  ex = {
+  eL = {
     [Chunk981631.Eu4.NONE]: eD,
     [Chunk981631.Eu4.TIER_1]: 10,
     [Chunk981631.Eu4.TIER_2]: 15,
     [Chunk981631.Eu4.TIER_3]: 30
   },
-  eL = {
-    [Chunk981631.Eu4.NONE]: ex[Chunk981631.Eu4.NONE],
-    [Chunk981631.Eu4.TIER_1]: ex[Chunk981631.Eu4.NONE] + ex[Chunk981631.Eu4.TIER_1],
-    [Chunk981631.Eu4.TIER_2]: ex[Chunk981631.Eu4.NONE] + ex[Chunk981631.Eu4.TIER_1] + ex[Chunk981631.Eu4.TIER_2],
-    [Chunk981631.Eu4.TIER_3]: ex[Chunk981631.Eu4.NONE] + ex[Chunk981631.Eu4.TIER_1] + ex[Chunk981631.Eu4.TIER_2] + ex[Chunk981631.Eu4.TIER_3]
+  ex = {
+    [Chunk981631.Eu4.NONE]: eL[Chunk981631.Eu4.NONE],
+    [Chunk981631.Eu4.TIER_1]: eL[Chunk981631.Eu4.NONE] + eL[Chunk981631.Eu4.TIER_1],
+    [Chunk981631.Eu4.TIER_2]: eL[Chunk981631.Eu4.NONE] + eL[Chunk981631.Eu4.TIER_1] + eL[Chunk981631.Eu4.TIER_2],
+    [Chunk981631.Eu4.TIER_3]: eL[Chunk981631.Eu4.NONE] + eL[Chunk981631.Eu4.TIER_1] + eL[Chunk981631.Eu4.TIER_2] + eL[Chunk981631.Eu4.TIER_3]
   },
   ej = {
     [Chunk981631.Eu4.NONE]: eO,
@@ -458,7 +458,7 @@ let eA = Object.freeze({
         screenShareQualityFramerate: 30,
         screenShareQualityResolution: "720p",
         soundboardSounds: ej[Chunk981631.Eu4.NONE],
-        stickers: eL[Chunk981631.Eu4.NONE],
+        stickers: ex[Chunk981631.Eu4.NONE],
         stageVideoUsers: Chunk981631.B9o
       }
     },
@@ -471,7 +471,7 @@ let eA = Object.freeze({
         screenShareQualityFramerate: 60,
         screenShareQualityResolution: "720p",
         soundboardSounds: ej[Chunk981631.Eu4.TIER_1],
-        stickers: eL[Chunk981631.Eu4.TIER_1],
+        stickers: ex[Chunk981631.Eu4.TIER_1],
         stageVideoUsers: Chunk981631.B9o
       }
     },
@@ -484,7 +484,7 @@ let eA = Object.freeze({
         screenShareQualityFramerate: 60,
         screenShareQualityResolution: "1080p",
         soundboardSounds: ej[Chunk981631.Eu4.TIER_2],
-        stickers: eL[Chunk981631.Eu4.TIER_2],
+        stickers: ex[Chunk981631.Eu4.TIER_2],
         stageVideoUsers: Chunk981631.eez
       }
     },
@@ -497,7 +497,7 @@ let eA = Object.freeze({
         screenShareQualityFramerate: 60,
         screenShareQualityResolution: "1080p",
         soundboardSounds: ej[Chunk981631.Eu4.TIER_3],
-        stickers: eL[Chunk981631.Eu4.TIER_3],
+        stickers: ex[Chunk981631.Eu4.TIER_3],
         stageVideoUsers: Chunk981631.RcX
       }
     }
@@ -514,7 +514,7 @@ let eB = {
   "511651876987469824": w,
   "511651885459963904": w,
   "944037208325619722": D,
-  "642251038925127690": x
+  "642251038925127690": L
 };
 var eZ = function(e) {
   return e.HIGH_STREAMING_QUALITY = "high_streaming_quality", e.MID_STREAMING_QUALITY = "mid_streaming_quality", e
@@ -569,7 +569,7 @@ var e4 = function(e) {
   return e.PREMIUM_TENURE_1_MONTH = "premium_tenure_1_month_v2", e.PREMIUM_TENURE_3_MONTH = "premium_tenure_3_month_v2", e.PREMIUM_TENURE_6_MONTH = "premium_tenure_6_month_v2", e.PREMIUM_TENURE_12_MONTH = "premium_tenure_12_month_v2", e.PREMIUM_TENURE_24_MONTH = "premium_tenure_24_month_v2", e.PREMIUM_TENURE_36_MONTH = "premium_tenure_36_month_v2", e.PREMIUM_TENURE_60_MONTH = "premium_tenure_60_month_v2", e.PREMIUM_TENURE_72_MONTH = "premium_tenure_72_month_v2", e
 }({});
 let e8 = ["premium_tenure_1_month_v2", "premium_tenure_3_month_v2", "premium_tenure_6_month_v2", "premium_tenure_12_month_v2", "premium_tenure_24_month_v2", "premium_tenure_36_month_v2", "premium_tenure_60_month_v2", "premium_tenure_72_month_v2"],
-  e6 = {
+  e5 = {
     premium_tenure_1_month_v2: {
       id: "premium_tenure_1_month_v2",
       nameUnformatted: Chunk388032.t.LR1C0d,
@@ -627,7 +627,7 @@ let e8 = ["premium_tenure_1_month_v2", "premium_tenure_3_month_v2", "premium_ten
       glowColor: "#078292"
     }
   };
-var e5 = function(e) {
+var e6 = function(e) {
     return e[e.NONE = 0] = "NONE", e[e.FP_ONLY = 1] = "FP_ONLY", e[e.FP_SUB_PAUSED = 2] = "FP_SUB_PAUSED", e
   }({}),
   e7 = function(e) {

@@ -70,7 +70,7 @@ function D(e, t) {
   return null == n ? 0 : n.height
 }
 
-function x(e, t, n, i) {
+function L(e, t, n, i) {
   if (!(e > 0)) return null == P[t] ? null : (0, r.jsx)("div", {
     className: T.placeholder,
     style: A({
@@ -79,7 +79,7 @@ function x(e, t, n, i) {
   }, i)
 }
 
-function L(e, t) {
+function x(e, t) {
   var n, r;
   return e > 0 ? "" : null != (r = null == (n = P[t]) ? true : n.id) ? r : ""
 }
@@ -400,9 +400,9 @@ class B extends Chunk647438.PureComponent {
         sections: [P.length],
         columns: e,
         itemGutter: 12,
-        getItemKey: L,
+        getItemKey: x,
         getItemHeight: D,
-        renderItem: x,
+        renderItem: L,
         chunkSize: 128
       }, s) : (0, r.jsx)(_.GMG, {
         ref: this._masonryRef,

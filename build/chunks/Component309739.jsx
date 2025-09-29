@@ -35,7 +35,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk174546 = require("./174546.js"),
   Chunk10198 = require("./10198.js");
 
-function x(e, t, n) {
+function L(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -44,14 +44,14 @@ function x(e, t, n) {
   }) : e[t] = n, e
 }
 
-function L(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      x(e, t, n[t])
+      L(e, t, n[t])
     })
   }
   return e
@@ -78,7 +78,7 @@ function k(e) {
   let t = () => {
     A.SE.updateSetting(e ? O.Z.getGuildIds() : [])
   };
-  (0, _.h7j)(e => (0, r.jsx)(_.ConfirmModal, M(L({
+  (0, _.h7j)(e => (0, r.jsx)(_.ConfirmModal, M(x({
     header: P.intl.string(P.t["uUr+GR"]),
     confirmText: P.intl.string(P.t.gm1Ven),
     cancelText: P.intl.string(P.t.p89ACg),

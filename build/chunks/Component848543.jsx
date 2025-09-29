@@ -29,7 +29,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk239545 = require("./239545.js");
 
-function P(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -48,7 +48,7 @@ function P(e) {
   return e
 }
 
-function j(e, t) {
+function P(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -102,7 +102,7 @@ function x(e) {
       let {
         default: e
       } = await n.e("56049").then(n.bind(n, 338991));
-      return t => (0, r.jsx)(e, j(P({
+      return t => (0, r.jsx)(e, P(j({
         guildId: k,
         sourceAnalyticsLocations: B
       }, t), {
@@ -117,12 +117,12 @@ function x(e) {
       onMouseEnter: W,
       onMouseLeave: Y
     }
-  } = (0, c.j)(), K = i.useCallback(() => {
+  } = (0, c.j)(), q = i.useCallback(() => {
     L || D(!R)
   }, [L, R]);
   return (0, E.yp)({
     event: S.CkL.TOGGLE_SOUNDBOARD,
-    handler: K
+    handler: q
   }), (0, r.jsx)(h.Gt, {
     value: B,
     children: (0, r.jsx)(d.ua7, {
@@ -151,7 +151,7 @@ function x(e) {
         },
         children: t => (0, r.jsx)("div", {
           ref: x,
-          children: (0, r.jsx)(u.zx, j(P(j(P({
+          children: (0, r.jsx)(u.zx, P(j(P(j({
             "data-migration-pending": true
           }, e, t), {
             className: a()(N.button, N.buttonColor, {

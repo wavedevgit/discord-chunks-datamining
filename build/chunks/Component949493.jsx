@@ -2,7 +2,7 @@
 /** chunk id: 949493, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => L
+  Z: () => x
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -52,15 +52,15 @@ let P = () => (0, Chunk951288.jsx)(Chunk893996.Z, {
     webSetting: Chunk726985.s6.PRIVACY_AND_SAFETY_FRIEND_REQUESTS_CATEGORY,
     children: [(0, Chunk951288.jsx)(Chunk694569.Z, {}), (0, Chunk951288.jsx)(Chunk273927.ZP, {})]
   }),
-  x = () => (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+  L = () => (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsx)(w, {}), (0, Chunk951288.jsx)(P, {}), (0, Chunk951288.jsx)(D, {})]
   });
 
-function L() {
+function x() {
   let e = (0, Chunk442837.e7)([Chunk663389.Z], () => Chunk663389.Z.getSubsection()),
     t = [{
       title: Chunk388032.intl.string(Chunk388032.t["/7xJCA"]),
-      component: () => (0, Chunk951288.jsx)(x, {}),
+      component: () => (0, Chunk951288.jsx)(L, {}),
       setting: Chunk726985.s6.CONTENT_SOCIAL_DISCORD_TAB
     }, {
       title: Chunk388032.intl.string(Chunk388032.t.YpCiMj),

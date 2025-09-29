@@ -37,12 +37,12 @@ let I = function(e) {
     metadata: N
   } = (0, b.oq)(), R = [];
   !n && null == C && (T && !I && R.push(a.z.CLIENT_THEMES_COACHMARK), S && R.push(a.z.CUSTOM_THEME_COACHMARK));
-  let [P, w] = (0, h.US)(R, O.R.SIDEBAR, true), D = P === a.z.CLIENT_THEMES_COACHMARK, x = P === a.z.CUSTOM_THEME_COACHMARK;
+  let [P, w] = (0, h.US)(R, O.R.SIDEBAR, true), D = P === a.z.CLIENT_THEMES_COACHMARK, L = P === a.z.CUSTOM_THEME_COACHMARK;
   if ((0, d.HA)(S, P), n) return null;
-  let L = A ? _.Z : f.Z,
+  let x = A ? _.Z : f.Z,
     j = C === b.wh.CLIENT_THEMES || D,
     M = C === b.wh.APP_ICON,
-    k = C === b.wh.CUSTOM_THEME || x;
+    k = C === b.wh.CUSTOM_THEME || L;
   if (!(j || M || k)) return null;
   let U = () => (0, r.jsxs)(r.Fragment, {
     children: [j && (0, r.jsx)(u.Z, {
@@ -56,10 +56,10 @@ let I = function(e) {
     }), M && (0, r.jsx)(o.Z, {
       isCoachmark: false,
       markAsDismissed: w
-    }), k && (0, r.jsx)(L, {
+    }), k && (0, r.jsx)(x, {
       metadata: null != N ? N : {},
       markAsDismissed: w,
-      isCoachmark: x,
+      isCoachmark: L,
       isMobile: t
     })]
   });

@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 6723, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 1272 **/
+/** chunk id: 6723, original params: e,t,n (module,exports,require) **/
 module.exports = {
   heading: "heading_a10b43",
   previewDescription: "previewDescription_a10b43",

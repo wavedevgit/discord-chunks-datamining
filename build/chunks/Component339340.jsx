@@ -34,7 +34,7 @@ function S(e) {
     transitionState: n,
     sourceAnalyticsLocations: S,
     onClose: A
-  } = e, C = (0, a.e7)([d.Z], () => d.Z.getChannelStatus(t)), N = (0, a.e7)([m.Z], () => m.Z.getMediaSessionId()), [R, P] = i.useState(null != C ? C : ""), [w, D] = i.useState(false), [x, L] = i.useState(null), j = (0, a.e7)([g.default], () => g.default.getCurrentUser()), M = R.length > T;
+  } = e, C = (0, a.e7)([d.Z], () => d.Z.getChannelStatus(t)), N = (0, a.e7)([m.Z], () => m.Z.getMediaSessionId()), [R, P] = i.useState(null != C ? C : ""), [w, D] = i.useState(false), [L, x] = i.useState(null), j = (0, a.e7)([g.default], () => g.default.getCurrentUser()), M = R.length > T;
   i.useEffect(() => {
     E.default.track(b.rMx.OPEN_MODAL, {
       type: "Voice Channel Topic Modal",
@@ -43,7 +43,7 @@ function S(e) {
     })
   }, [t.guild_id, S]);
   let k = e => {
-      L(new o.Hx(e, e.status).getAnyErrorMessage())
+      x(new o.Hx(e, e.status).getAnyErrorMessage())
     },
     U = e => {
       let {
@@ -53,7 +53,7 @@ function S(e) {
         let {
           errorMessage: e
         } = u.Z.validateMessage(n, j, t.id);
-        return L(e), D(false), {
+        return x(e), D(false), {
           hasErrors: true
         }
       }
@@ -62,7 +62,7 @@ function S(e) {
       }
     },
     G = async e => {
-      R === C && A(), null == e || e.preventDefault(), L(null), D(true);
+      R === C && A(), null == e || e.preventDefault(), x(null), D(true);
       let n = R.length,
         r = R.replace(/<(a)?:[^:]+:[0-9]+>/g, "--").length,
         i = h.ZP.parse(t, R),
@@ -111,9 +111,9 @@ function S(e) {
         maxCharacterCount: T,
         showRemainingCharsAfterCount: T / 2,
         emojiPickerCloseOnModalOuterClick: true
-      }), null != x ? (0, r.jsx)(l.kzN, {
+      }), null != L ? (0, r.jsx)(l.kzN, {
         className: O.error,
-        children: x
+        children: L
       }) : null]
     });
   return (0, r.jsx)(s.I, {

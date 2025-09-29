@@ -73,11 +73,11 @@ var Chunk260674 = require("./260674.js"),
     }];
     else if (l(g)) A = g;
     else {
-      var x = Object.keys(C);
-      A = E ? x.sort(E) : x
+      var L = Object.keys(C);
+      A = E ? L.sort(E) : L
     }
-    var L = f ? String(n).replace(/\./g, "%2E") : String(n),
-      j = o && l(C) && 1 === C.length ? L + "[]" : L;
+    var x = f ? String(n).replace(/\./g, "%2E") : String(n),
+      j = o && l(C) && 1 === C.length ? x + "[]" : x;
     if (s && l(C) && 0 === C.length) return j + "[]";
     for (var M = 0; M < A.length; ++M) {
       var k = A[M],

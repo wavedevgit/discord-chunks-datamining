@@ -108,7 +108,7 @@ function et(e) {
     excludeSubscriptionPlansBySKU: es = false,
     excludeSKUPurchasePreviews: el = false,
     wasTier2PremiumBeforePurchase: ec = false
-  } = e, eu = (0, F.Z)(), ed = (0, h.Q)(), ef = (0, L.Z)(), e_ = ee[0], ep = (0, c.e7)([T.Z], () => T.Z.get(e_), [e_]), eh = null == ep ? true : ep.eligiblePaymentGateways, {
+  } = e, eu = (0, F.Z)(), ed = (0, h.Q)(), ef = (0, x.Z)(), e_ = ee[0], ep = (0, c.e7)([T.Z], () => T.Z.get(e_), [e_]), eh = null == ep ? true : ep.eligiblePaymentGateways, {
     paymentSources: em,
     hasPaymentSources: eg,
     paymentSourceId: eE,
@@ -124,7 +124,7 @@ function et(e) {
     setCurrency: eT,
     currencyLoading: eS,
     currencies: eA
-  } = (0, x.Z)({
+  } = (0, L.Z)({
     activeSubscription: z,
     skuIDs: ee,
     paymentSourceId: eE,
@@ -134,8 +134,8 @@ function et(e) {
     step: eP,
     setStep: ew,
     steps: eD,
-    breadcrumbsData: ex,
-    previousStepRef: eL
+    breadcrumbsData: eL,
+    previousStepRef: ex
   } = (0, Z.Z)({
     stepConfigs: X,
     breadcrumbs: $
@@ -161,7 +161,7 @@ function et(e) {
     setSelectedSkuId: eW,
     setSelectedPlanId: eK,
     setSelectedPlanNotification: ez
-  } = (0, P.Z)(), [eq, eX] = (0, c.Wu)([v.Z], () => [v.Z.purchaseTokenAuthState, v.Z.purchaseTokenHash]), [eQ, eJ, e$, e0] = (0, c.Wu)([V.Z], () => [V.Z.browserCheckoutState, V.Z.loadId, V.Z.skuId, V.Z.planId]), [e1, e2] = i.useState(null), [e3, e4] = i.useState(null), [e8, e6] = i.useState(null), [e5, e7] = i.useState(null), [e9, te] = i.useState(null), [tt, tn] = i.useState(true), [tr, ti] = i.useState([]), [ta, to] = i.useState([]), ts = i.useMemo(() => null == eH || (0, N.PV)(eH.id), [eH]), tl = i.useRef(null != z ? z.planId : null);
+  } = (0, P.Z)(), [eq, eX] = (0, c.Wu)([v.Z], () => [v.Z.purchaseTokenAuthState, v.Z.purchaseTokenHash]), [eQ, eJ, e$, e0] = (0, c.Wu)([V.Z], () => [V.Z.browserCheckoutState, V.Z.loadId, V.Z.skuId, V.Z.planId]), [e1, e2] = i.useState(null), [e3, e4] = i.useState(null), [e8, e5] = i.useState(null), [e6, e7] = i.useState(null), [e9, te] = i.useState(null), [tt, tn] = i.useState(true), [tr, ti] = i.useState([]), [ta, to] = i.useState([]), ts = i.useMemo(() => null == eH || (0, N.PV)(eH.id), [eH]), tl = i.useRef(null != z ? z.planId : null);
   i.useEffect(() => {
     null == tl.current && null != z && (tl.current = z.planId)
   }, [z]);
@@ -216,14 +216,14 @@ function et(e) {
     })),
     tD = tP ? K.premiumBrandRefreshBackground : true,
     {
-      enabled: tx
+      enabled: tL
     } = (0, g.l)({
       location: "PaymentModal"
     }),
     {
-      isEligible: tL
+      isEligible: tx
     } = (0, E.Q1)(),
-    tj = !ec && !et && tL && eV === W.Si.TIER_2,
+    tj = !ec && !et && tx && eV === W.Si.TIER_2,
     tM = (0, w.uH)({
       location: "PaymentModal"
     }),
@@ -233,13 +233,13 @@ function et(e) {
   return (0, r.jsx)(J.Provider, {
     value: Q(q({
       stripe: eu,
-      paymentElementsEnabled: tx,
+      paymentElementsEnabled: tL,
       contextMetadata: eF,
       blockedPayments: ed,
       activeSubscription: z,
       hasFetchedSubscriptions: ef,
       hasFetchedSubscriptionPlans: ev,
-      updatedSubscription: e5,
+      updatedSubscription: e6,
       setUpdatedSubscription: e7,
       subscriptionMetadataRequest: e9,
       setSubscriptionMetadataRequest: te,
@@ -259,8 +259,8 @@ function et(e) {
       setStep: ew,
       steps: eD,
       stepConfigs: X,
-      breadcrumbs: ex,
-      previousStepRef: eL,
+      breadcrumbs: eL,
+      previousStepRef: ex,
       purchaseState: ej,
       setPurchaseState: eM,
       paymentAuthenticationState: eU,
@@ -281,7 +281,7 @@ function et(e) {
       footerNode: e3,
       setFooterNode: e4,
       modalOverlayNode: e8,
-      setModalOverlayNode: e6,
+      setModalOverlayNode: e5,
       selectedSkuId: eV,
       selectedSku: th,
       selectedStoreListing: tA,

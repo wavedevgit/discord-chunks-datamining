@@ -192,62 +192,62 @@ let eL = (0, Chunk608787.Un)({
       }
     });
     (0, er.WF)(a) && (0, er.WF)(c) || (null != u && (0, es.uL)(eN.Z5c.CHANNEL(u.id, (0, ei.Z)(u))), (0, W.V)());
-    let h = (0, j.C4)(l, "channel_renderer");
-    if (null != l && null != a && (0, eP.AB)(a)) switch (a) {
-      case eP.oC.ROLE_SUBSCRIPTIONS:
+    let h = (0, P.C4)(l, "channel_renderer");
+    if (null != l && null != a && (0, ej.AB)(a)) switch (a) {
+      case ej.oC.ROLE_SUBSCRIPTIONS:
         return h ? (0, r.jsx)(eD, {
           guildId: l,
           initialTab: x.y.GUILD_ROLE_SUBSCRIPTIONS
         }) : (0, r.jsx)(G.Z, {
           guildId: l
         });
-      case eP.oC.SERVER_MONETIZATION_ONBOARDING:
+      case ej.oC.SERVER_MONETIZATION_ONBOARDING:
         return (0, r.jsx)(eM, {
           guildId: l
         });
-      case eP.oC.GUILD_SHOP:
+      case ej.oC.GUILD_SHOP:
         return (0, eu.w)(u) ? (0, r.jsx)(ek, {}) : (0, r.jsx)(eD, {
           guildId: l,
           productId: o,
           initialTab: f
         });
-      case eP.oC.MEMBER_APPLICATIONS:
+      case ej.oC.MEMBER_APPLICATIONS:
         return (0, r.jsx)(s.l_, {
-          to: eN.Z5c.CHANNEL(l, eP.oC.MEMBER_SAFETY)
+          to: eN.Z5c.CHANNEL(l, ej.oC.MEMBER_SAFETY)
         });
-      case eP.oC.GUILD_HOME:
+      case ej.oC.GUILD_HOME:
         return (0, r.jsx)(eU, {
           guildId: l
         });
-      case eP.oC.CHANNEL_BROWSER:
+      case ej.oC.CHANNEL_BROWSER:
         return (0, r.jsx)(eB, {
           guildId: l,
           selectedSection: ex.l7.BROWSE
         });
-      case eP.oC.GUILD_ONBOARDING:
+      case ej.oC.GUILD_ONBOARDING:
         return (0, r.jsx)(eV, {
           guildId: l
         });
-      case eP.oC.CUSTOMIZE_COMMUNITY:
+      case ej.oC.CUSTOMIZE_COMMUNITY:
         return (0, r.jsx)(eB, {
           guildId: l,
           selectedSection: ex.l7.CUSTOMIZE
         });
-      case eP.oC.MEMBER_SAFETY:
+      case ej.oC.MEMBER_SAFETY:
         return (0, r.jsx)(eG, {
           guildId: l
         });
-      case eP.oC.GUILD_BOOSTS:
+      case ej.oC.GUILD_BOOSTS:
         var g;
         return (0, r.jsx)(eH, {
           guildId: l,
           powerupListingId: null != (g = n.get("powerupId")) ? g : n.get("powerupSkuId")
         });
-      case eP.oC.PORTKEY:
+      case ej.oC.PORTKEY:
         return (0, r.jsx)(eF, {
           guildId: l
         });
-      case eP.oC.REPORT_TO_MOD:
+      case ej.oC.REPORT_TO_MOD:
         return (0, r.jsx)(C.Z, {});
       default:
         (0, e_.vE)(a)
@@ -282,8 +282,8 @@ let eL = (0, Chunk608787.Un)({
     }, module) : (0, Chunk951288.jsx)(Chunk663701.Z, {})
   }),
   eY = e => (0, r.jsx)(ez, ew({}, e)),
-  eK = () => (0, Chunk951288.jsx)(Chunk724383.Z, {}),
-  eq = e => (0, r.jsx)(eQ, ew({}, e)),
+  eq = () => (0, Chunk951288.jsx)(Chunk724383.Z, {}),
+  eK = e => (0, r.jsx)(eQ, ew({}, e)),
   eQ = e => {
     let {
       channelId: t,
@@ -323,7 +323,7 @@ let eL = (0, Chunk608787.Un)({
       let {
         tab: n
       } = (0, o.parse)(t.location.search);
-      return Object.values(ej.AW).includes(n) ? (0, r.jsx)(N.Z, ew({
+      return Object.values(eP.AW).includes(n) ? (0, r.jsx)(N.Z, ew({
         isFullScreen: e,
         tab: n
       }, t)) : (0, r.jsx)(N.Z, ew({
@@ -447,14 +447,14 @@ function e9(e) {
   });
   let g = (0, p.e7)([S.Z], () => S.Z.isFullscreenInContext()),
     m = (0, A.T)("ChannelSidebar"),
-    E = (0, P.useAppSidebarState)(e => !e.isOpen) && m;
+    E = (0, j.useAppSidebarState)(e => !e.isOpen) && m;
   i.useLayoutEffect(() => {
     if (m) {
       var e;
       let t = parseInt(null != (e = f.K.get(eS.nT)) ? e : "");
       Number.isNaN(t) && (t = eS.qO), t = Math.min(Math.max(t, eS.li), eS.zx), !m && t <= eS.p8 && (t = eS.qO), e7(t);
       let n = e => {
-        e.metaKey && "b" === e.key && P.useAppSidebarState.setState(e => ({
+        e.metaKey && "b" === e.key && j.useAppSidebarState.setState(e => ({
           isOpen: !e.isOpen
         }))
       };
@@ -477,7 +477,7 @@ function e9(e) {
       let r = t < eS.li / 3;
       t <= eS.li ? document.body.classList.add(eZ.draggingMin) : document.body.classList.remove(eZ.draggingMin), t >= eS.zx ? document.body.classList.add(eZ.draggingMax) : document.body.classList.remove(eZ.draggingMax);
       let i = t - e;
-      null == (n = y.current) || n.style.setProperty("--custom-overdrag", "".concat(1 + Math.min(Math.abs(i / eS.p8), .25))), m && (P.useAppSidebarState.setState({
+      null == (n = y.current) || n.style.setProperty("--custom-overdrag", "".concat(1 + Math.min(Math.abs(i / eS.p8), .25))), m && (j.useAppSidebarState.setState({
         isOpen: !r
       }), r && e7(eS.p8))
     }, [m]),
@@ -501,14 +501,14 @@ function e9(e) {
       throttleDuration: 0
     }),
     N = i.useCallback(() => {
-      P.useAppSidebarState.setState(e => ({
+      j.useAppSidebarState.setState(e => ({
         isOpen: !e.isOpen
       }))
     }, []);
   if (i.useLayoutEffect(() => {
       E && e7(eS.p8)
     }, [E]), l) return null;
-  let j = {
+  let P = {
     className: a()(eZ.sidebarList, {
       [eZ.sidebarListRounded]: !t
     })
@@ -529,7 +529,7 @@ function e9(e) {
           className: eZ.guilds,
           themeOverride: n
         }), !o && (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)("div", (t = ew({}, j), i = i = {
+          children: [(0, r.jsx)("div", (t = ew({}, P), i = i = {
             children: (0, r.jsx)(eW, {})
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
             var n = Object.keys(e);
@@ -678,7 +678,7 @@ function te() {
                   path: Chunk981631.Z5c.CHANNEL(Chunk981631.STv, Chunk893607.Hw.channelId({
                     optional: true
                   }), ":messageId?"),
-                  render: eq,
+                  render: eK,
                   disableTrack: true
                 }), (0, Chunk951288.jsx)(Chunk765717.Z, {
                   path: [Chunk981631.Z5c.CHANNEL_THREAD_VIEW(Chunk893607.Hw.guildId(), Chunk893607.Hw.channelId(), ":threadId", ":messageId?"), Chunk981631.Z5c.CHANNEL(Chunk981631.ME, Chunk893607.Hw.channelId()), Chunk981631.Z5c.CHANNEL(Chunk893607.Hw.guildId(), Chunk893607.Hw.channelId({
@@ -689,23 +689,23 @@ function te() {
                   disableTrack: true
                 }), (0, Chunk951288.jsx)(Chunk765717.Z, {
                   path: Chunk981631.Z5c.GLOBAL_DISCOVERY,
-                  render: eK,
+                  render: eq,
                   impressionName: Chunk990547.ImpressionNames.GLOBAL_DISCOVERY,
                   disableTrack: true,
                   exact: true
                 }), (0, Chunk951288.jsx)(Chunk765717.Z, {
                   path: Chunk981631.Z5c.GLOBAL_DISCOVERY_SERVERS,
-                  render: eK,
+                  render: eq,
                   impressionName: Chunk990547.ImpressionNames.GLOBAL_DISCOVERY,
                   disableTrack: true
                 }), (0, Chunk951288.jsx)(Chunk765717.Z, {
                   path: Chunk981631.Z5c.GLOBAL_DISCOVERY_APPS,
-                  render: eK,
+                  render: eq,
                   impressionName: Chunk990547.ImpressionNames.GLOBAL_DISCOVERY_APPS,
                   disableTrack: true
                 }), (0, Chunk951288.jsx)(Chunk765717.Z, {
                   path: Chunk981631.Z5c.QUEST_HOME,
-                  render: eK,
+                  render: eq,
                   impressionName: Chunk990547.ImpressionNames.QUEST_HOME,
                   disableTrack: true
                 }), (0, Chunk951288.jsx)(Chunk765717.Z, {
@@ -715,7 +715,7 @@ function te() {
                   disableTrack: true
                 }), (0, Chunk951288.jsx)(Chunk765717.Z, {
                   path: Chunk981631.Z5c.GUILD_DISCOVERY,
-                  render: eK,
+                  render: eq,
                   impressionName: Chunk990547.ImpressionNames.GUILD_DISCOVERY,
                   disableTrack: true
                 }), (0, Chunk951288.jsx)(Chunk765717.Z, {

@@ -202,8 +202,8 @@ function C(e) {
   null == g && (g = a === p.WX.EXTERNAL ? h.intl.string(h.t.IyZxjI) : h.intl.string(h.t["X2K3//"]));
   let D = (0, d.Z)(N, C),
     [{
-      startDateTimeString: x,
-      endDateTimeString: L,
+      startDateTimeString: L,
+      endDateTimeString: x,
       currentOrPastEvent: j,
       upcomingEvent: M,
       diffMinutes: k
@@ -215,13 +215,13 @@ function C(e) {
       clearInterval(e)
     }
   }, [t, _]);
-  let G = x;
-  null != L && "" !== L && (G = h.intl.formatToPlainString(h.t.tXbu7O, {
-    start: x,
-    end: L
+  let G = L;
+  null != x && "" !== x && (G = h.intl.formatToPlainString(h.t.tXbu7O, {
+    start: L,
+    end: x
   }));
   let B = i.useMemo(() => n === p.p1.CANCELED || (null == D ? true : D.is_canceled) ? 5 : n === p.p1.ACTIVE ? 3 : p.$I.has(n) ? 4 : j ? 2 : +!!M, [n, null == D ? true : D.is_canceled, j, M]),
-    Z = I(B, G, g, L, k),
+    Z = I(B, G, g, x, k),
     {
       Icon: F,
       iconColor: V,
@@ -232,9 +232,9 @@ function C(e) {
       textBrand: R,
       textPositive: P,
       textDanger: w,
-      endDateTimeString: L,
-      startDateTimeString: x
-    }), [B, R, P, w, L, x]),
+      endDateTimeString: x,
+      startDateTimeString: L
+    }), [B, R, P, w, x, L]),
     W = null;
   if (null != y) {
     let e = (0, f.Ho)(y);

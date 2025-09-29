@@ -248,7 +248,7 @@
         stripe: n
       }
     },
-    x = function(e) {
+    L = function(e) {
       e && e._registerWrapper && e.registerAppInfo && (e._registerWrapper({
         name: "react-stripe-js",
         version: "3.7.0"
@@ -258,8 +258,8 @@
         url: "https://stripe.com/docs/stripe-js/react"
       }))
     },
-    L = t.createContext(null);
-  L.displayName = "ElementsContext";
+    x = t.createContext(null);
+  x.displayName = "ElementsContext";
   var j = function(e, t) {
       if (!e) throw Error("Could not find Elements context; You need to wrap the part of your app that ".concat(t, " in an <Elements> provider."));
       return e
@@ -307,8 +307,8 @@
           e && s.elements.update(e)
         }
       }, [r, d, s.elements]), t.useEffect(function() {
-        x(s.stripe)
-      }, [s.stripe]), t.createElement(L.Provider, {
+        L(s.stripe)
+      }, [s.stripe]), t.createElement(x.Provider, {
         value: s
       }, i)
     };
@@ -317,7 +317,7 @@
     options: O.object
   };
   var k = function(e) {
-      return j(t.useContext(L), e)
+      return j(t.useContext(x), e)
     },
     U = function() {
       return k("calls useElements()").elements
@@ -399,7 +399,7 @@
           i && (a || o) && d.checkoutSdk.changeAppearance(i)
         }
       }, [r, m, d.checkoutSdk, g]), t.useEffect(function() {
-        x(d.stripe)
+        L(d.stripe)
       }, [d.stripe]);
       var E = t.useMemo(function() {
         return H(d.checkoutSdk, s)
@@ -422,7 +422,7 @@
     },
     z = function(e) {
       var n = t.useContext(Z),
-        r = t.useContext(L);
+        r = t.useContext(x);
       if (n && r) throw Error("You cannot wrap the part of your app that ".concat(e, " in both <CheckoutProvider> and <Elements> providers."));
       return n ? F(n, e) : j(r, e)
     },
@@ -462,12 +462,12 @@
             P = l(t.useState(null), 2),
             w = P[0],
             D = P[1],
-            x = t.useRef(null),
-            L = t.useRef(null);
+            L = t.useRef(null),
+            x = t.useRef(null);
           v(w, "blur", d), v(w, "focus", f), v(w, "escape", h), v(w, "click", m), v(w, "loaderror", g), v(w, "loaderstart", E), v(w, "networkschange", b), v(w, "confirm", y), v(w, "cancel", O), v(w, "shippingaddresschange", T), v(w, "shippingratechange", S), v(w, "change", p), _ && (i = "expressCheckout" === e ? _ : function() {
             _(w)
           }), v(w, "ready", i), t.useLayoutEffect(function() {
-            if (null === x.current && null !== L.current && (C || N)) {
+            if (null === L.current && null !== x.current && (C || N)) {
               var t = null;
               if (N) switch (e) {
                 case "payment":
@@ -491,25 +491,25 @@
                 default:
                   throw Error("Invalid Element type ".concat(r, ". You must use either the <PaymentElement />, <AddressElement options={{mode: 'shipping'}} />, <AddressElement options={{mode: 'billing'}} />, or <ExpressCheckoutElement />."))
               } else C && (t = C.create(e, u));
-              x.current = t, D(t), t && t.mount(L.current)
+              L.current = t, D(t), t && t.mount(x.current)
             }
           }, [C, N, u]);
           var j = I(u);
           return t.useEffect(function() {
-            if (x.current) {
+            if (L.current) {
               var e = R(u, j, ["paymentRequest"]);
-              e && "update" in x.current && x.current.update(e)
+              e && "update" in L.current && L.current.update(e)
             }
           }, [u, j]), t.useLayoutEffect(function() {
             return function() {
-              if (x.current && "function" == typeof x.current.destroy) try {
-                x.current.destroy(), x.current = null
+              if (L.current && "function" == typeof L.current.destroy) try {
+                L.current.destroy(), L.current = null
               } catch (e) {}
             }
           }, []), t.createElement("div", {
             id: a,
             className: o,
-            ref: L
+            ref: x
           })
         },
         a = function(e) {
@@ -584,7 +584,7 @@
           })
         }
       }, [u.embeddedCheckout]), t.useEffect(function() {
-        x(s)
+        L(s)
       }, [s]);
       var f = I(n);
       t.useEffect(function() {

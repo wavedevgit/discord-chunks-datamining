@@ -30,8 +30,8 @@ var Chunk620014 = require("./620014.js"),
   P = "[object Boolean]",
   w = "[object Date]",
   D = "[object Error]",
-  x = "[object Function]",
-  L = "[object GeneratorFunction]",
+  L = "[object Function]",
+  x = "[object GeneratorFunction]",
   j = "[object Map]",
   M = "[object Number]",
   k = "[object Object]",
@@ -64,7 +64,7 @@ function et(e, t, n, R, P, w) {
     if (D = h(e), !j) return c(e, D)
   } else {
     var B = p(e),
-      Z = B == x || B == L;
+      Z = B == L || B == x;
     if (b(e)) return l(e, j);
     if (B == k || B == N || Z && !P) {
       if (D = M || Z ? {} : g(e), !j) return M ? d(e, s(D, e)) : u(e, o(D, e))
@@ -87,4 +87,4 @@ function et(e, t, n, R, P, w) {
     H && (r = e[i = r]), a(D, i, et(r, t, n, i, e, w))
   }), D
 }
-ee[N] = ee[R] = ee[V] = ee[H] = ee[P] = ee[w] = ee[Y] = ee[W] = ee[K] = ee[z] = ee[q] = ee[j] = ee[M] = ee[k] = ee[U] = ee[G] = ee[B] = ee[Z] = ee[X] = ee[Q] = ee[J] = ee[$] = true, ee[D] = ee[x] = ee[F] = false, module.exports = et
+ee[N] = ee[R] = ee[V] = ee[H] = ee[P] = ee[w] = ee[Y] = ee[W] = ee[K] = ee[z] = ee[q] = ee[j] = ee[M] = ee[k] = ee[U] = ee[G] = ee[B] = ee[Z] = ee[X] = ee[Q] = ee[J] = ee[$] = true, ee[D] = ee[L] = ee[F] = false, module.exports = et

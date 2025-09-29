@@ -12,12 +12,12 @@ require.d(exports, {
   X6: () => G,
   kQ: () => Z,
   mR: () => y,
-  n$: () => L,
+  n$: () => x,
   np: () => C,
   ou: () => W,
   qH: () => D,
   tk: () => B,
-  y8: () => x
+  y8: () => L
 }), require("./388685.js"), require("./642613.js"), require("./415506.js");
 var Chunk624238 = require("./624238.js"),
   Chunk379405 = require("./379405.js"),
@@ -142,12 +142,12 @@ function D(e, t) {
   null == n.find(t => t.type === e) && u.Z.setPendingWidgets([...n, t])
 }
 
-function x(e) {
+function L(e) {
   let t = R().filter(t => t.type !== e);
   u.Z.setPendingWidgets(t)
 }
 
-function L(e, t, n) {
+function x(e, t, n) {
   let r = Object.values(i._).length;
   if (n.length > r) return;
   let a = P(e);
@@ -170,7 +170,7 @@ function j(e, t, n) {
   let i = r.games.find(e => e.applicationId === t);
   if (null == i || null == i.tags || 0 === i.tags.length) return;
   let a = i.tags.filter(e => e !== n);
-  L(r.type, t, a.length > 0 ? a : [])
+  x(r.type, t, a.length > 0 ? a : [])
 }
 
 function M(e, t, n) {

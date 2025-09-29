@@ -66,12 +66,12 @@ let T = (0, Chunk663993.Un)({
     createPromise: () => require.e("79835").then(require.bind(require, 72493)),
     webpackId: 72493
   }),
-  P = (0, Chunk663993.Un)({
+  j = (0, Chunk663993.Un)({
     createPromise: () => Promise.all([require.e("36599"), require.e("7654"), require.e("58175"), require.e("98039"), require.e("86915")]).then(require.bind(require, 869779)),
     webpackId: 869779,
     name: "ChannelSettings"
   }),
-  j = (0, Chunk663993.Un)({
+  P = (0, Chunk663993.Un)({
     createPromise: () => require.e("45620").then(require.bind(require, 838819)),
     webpackId: 838819,
     name: "CollectiblesShop"
@@ -83,9 +83,9 @@ let T = (0, Chunk663993.Un)({
   }),
   A = {
     [Chunk981631.S9g.USER_SETTINGS]: () => (0, Chunk951288.jsx)(T, {}),
-    [Chunk981631.S9g.CHANNEL_SETTINGS]: () => (0, Chunk951288.jsx)(P, {}),
+    [Chunk981631.S9g.CHANNEL_SETTINGS]: () => (0, Chunk951288.jsx)(j, {}),
     [Chunk981631.S9g.GUILD_SETTINGS]: () => (0, Chunk951288.jsx)(x, {}),
-    [Chunk981631.S9g.COLLECTIBLES_SHOP]: () => (0, Chunk951288.jsx)(j, {}),
+    [Chunk981631.S9g.COLLECTIBLES_SHOP]: () => (0, Chunk951288.jsx)(P, {}),
     [Chunk981631.S9g.MANA_PLAYGROUND]: () => (0, Chunk951288.jsx)(N, {})
   },
   Z = "SHOWN",

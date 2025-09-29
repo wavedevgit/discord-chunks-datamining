@@ -2,7 +2,7 @@
 /** chunk id: 4484, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => L
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -34,12 +34,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk645174 = require("./645174.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk520093 = require("./520093.js");
-let x = Chunk647438.forwardRef(function(e, t) {
+let L = Chunk647438.forwardRef(function(e, t) {
   let {
     value: n,
     type: a,
-    channel: x,
-    className: L,
+    channel: L,
+    className: x,
     id: j,
     disabled: M,
     submitting: k,
@@ -83,10 +83,10 @@ let x = Chunk647438.forwardRef(function(e, t) {
     if (true !== i && i !== o) {
       if (e.children = i, "parent" === t && !e.previewMarkdown && e.chatInputType === _.Ie.EDIT) {
         try {
-          e.previewMarkdown = true, (0, C.KH)(e, x.guild_id, x.id)
+          e.previewMarkdown = true, (0, C.KH)(e, L.guild_id, L.id)
         } finally {
           e.previewMarkdown = false
-        }(0, C.KH)(e, x.guild_id, x.id), a = true
+        }(0, C.KH)(e, L.guild_id, L.id), a = true
       }
       "undo" !== t && true !== i && i !== o && h.T.insertEntry(e, "other", false, o, s), l = true
     }
@@ -104,20 +104,20 @@ let x = Chunk647438.forwardRef(function(e, t) {
       null != t && (t.selection = a), l = true
     }
     let d = p.cr(e);
-    if (null != d && d[0].command.id !== (null == (r = c.Z.getActiveCommand(x.id)) ? true : r.id) && h.T.withMergedEntry(e, () => {
-        (0, A.L)(e, x.id, null, true)
+    if (null != d && d[0].command.id !== (null == (r = c.Z.getActiveCommand(L.id)) ? true : r.id) && h.T.withMergedEntry(e, () => {
+        (0, A.L)(e, L.id, null, true)
       }), l)
       if ("parent" === t) try {
         eE.current = false, e.onChange()
       } finally {
         eE.current = true
       } else e.onChange()
-  }, [x.id, x.guild_id, er]), eO = i.useCallback(() => {
+  }, [L.id, L.guild_id, er]), eO = i.useCallback(() => {
     eg.current = false
   }, []), ev = i.useCallback(() => {
     eg.current = true
   }, []), eI = (0, O.Z)({
-    channel: x,
+    channel: L,
     chatInputType: a,
     canUseCommands: et,
     canOnlyUseTextCommands: en,
@@ -125,16 +125,16 @@ let x = Chunk647438.forwardRef(function(e, t) {
     onChangeEnd: ev,
     updateState: ey
   }), eT = i.useCallback((e, t) => {
-    let n = p.tM(eI, e, x.id),
-      r = p.lk(e, x.guild_id, x.id, n, t);
+    let n = p.tM(eI, e, L.id),
+      r = p.lk(e, L.guild_id, L.id, n, t);
     return {
       values: n,
       results: r
     }
-  }, [x.guild_id, x.id, eI]), eS = i.useCallback(() => {
+  }, [L.guild_id, L.id, eI]), eS = i.useCallback(() => {
     let e, t = b.bN.getNodesOfType(eI, ["gameMentionInput"]),
       n = null != t ? [...t] : null,
-      r = et ? c.Z.getActiveCommand(x.id) : null,
+      r = et ? c.Z.getActiveCommand(L.id) : null,
       i = false;
     if (null != r && null != r.options) {
       let t = eT(r, false);
@@ -169,14 +169,14 @@ let x = Chunk647438.forwardRef(function(e, t) {
       mode: "raw",
       ignoreTrailingEmptyNodes: true
     }), r, e)
-  }, [x.id, eI, X, eT, et]);
-  (0, v.Z)(t, eI, x, eS), (0, S.Z)(eI, eh, V);
+  }, [L.id, eI, X, eT, et]);
+  (0, v.Z)(t, eI, L, eS), (0, S.Z)(eI, eh, V);
   let {
     handleKeyDown: eA,
     handleKeyUp: eC
   } = (0, I.Z)({
     editor: eI,
-    channel: x,
+    channel: L,
     disableEnterToSubmit: ei,
     onKeyDown: W,
     onKeyUp: K,
@@ -203,29 +203,29 @@ let x = Chunk647438.forwardRef(function(e, t) {
   }, [eI, n, ey]), i.useEffect(() => {
     let e = () => {
       var e;
-      let t = null != (e = c.Z.getActiveCommand(x.id)) ? e : null;
+      let t = null != (e = c.Z.getActiveCommand(L.id)) ? e : null;
       null !== t && null != t.options && eT(t, true)
     };
     return u.Z.addChangeListener(e), () => u.Z.removeChangeListener(e)
-  }, [x, eI, eT]);
+  }, [L, eI, eT]);
   let eD = i.useCallback((e, t) => (0, y.Z)(e, t), []),
-    ex = i.useCallback(e => {
-      let t = (0, N.Z)(eI, e, x.id);
+    eL = i.useCallback(e => {
+      let t = (0, N.Z)(eI, e, L.id);
       return null == t && (t = (0, P.Z)(eI, e)), t
-    }, [x.id, eI]),
-    eL = i.useCallback(e => (0, R.Z)(e), []);
+    }, [L.id, eI]),
+    ex = i.useCallback(e => (0, R.Z)(e), []);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(d.d9, {
       event: w.CkL.GLOBAL_CLIPBOARD_PASTE,
       handler: eR
     }), (0, r.jsx)("div", {
       ref: eh,
-      className: o()(L, D.slateContainer),
+      className: o()(x, D.slateContainer),
       children: (0, r.jsx)(m.Z, {
         id: j,
         editor: eI,
-        channelId: x.id,
-        guildId: x.guild_id,
+        channelId: L.id,
+        guildId: L.guild_id,
         className: o()(D.slateTextArea, B),
         placeholder: U,
         readOnly: eb,
@@ -240,8 +240,8 @@ let x = Chunk647438.forwardRef(function(e, t) {
         onKeyDown: eA,
         onKeyUp: eC,
         decorateExtra: eD,
-        renderExtraElement: ex,
-        renderExtraLeaf: eL,
+        renderExtraElement: eL,
+        renderExtraLeaf: ex,
         "aria-owns": eo,
         "aria-haspopup": el,
         "aria-expanded": es,

@@ -1,4 +1,4 @@
-/** Chunk was on 66663 **/
+/** Chunk was on 89342 **/
 /** chunk id: 789654, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => T,
@@ -83,7 +83,7 @@ function T() {
   let e = (0, Chunk410030.Fg)(),
     [t, n, i, s, d, u] = (0, Chunk500949.zn)(),
     {
-      semanticColorOverrides: b,
+      semanticColorOverrides: g,
       rawColorOverrides: C,
       tab: N,
       scales: T
@@ -295,7 +295,7 @@ function O(e) {
   }, [n]), f = Object.keys(C).map(e => ({
     value: e,
     label: E(e)
-  })), g = Object.keys(u.b).map(e => ({
+  })), b = Object.keys(u.b).map(e => ({
     value: e,
     label: e
   }));
@@ -315,7 +315,7 @@ function O(e) {
           "--custom-color": "var(--".concat(e.label, ")")
         }
       }),
-      popoutLayerContext: b.O$
+      popoutLayerContext: g.O$
     }), (0, a.jsx)("ul", {
       className: j.overrides,
       children: Object.entries(l).map(e => {
@@ -376,7 +376,7 @@ function O(e) {
                   }
                 })
               },
-              popoutLayerContext: b.O$
+              popoutLayerContext: g.O$
             }), (0, a.jsx)(p.oil, {
               inputClassName: j.opacityInput,
               type: "number",
@@ -411,7 +411,7 @@ function O(e) {
       variant: "text-lg/semibold",
       children: "Raw Tokens"
     }), (0, a.jsx)(p.VcW, {
-      options: g,
+      options: b,
       placeholder: "Search for a raw color...",
       value: true,
       onChange: d,
@@ -426,7 +426,7 @@ function O(e) {
           }
         })
       },
-      popoutLayerContext: b.O$
+      popoutLayerContext: g.O$
     }), (0, a.jsx)("ul", {
       className: j.rawOverrides,
       children: Object.entries(s).map(e => {

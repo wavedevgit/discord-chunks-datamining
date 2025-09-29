@@ -60,8 +60,8 @@ function P(e) {
     channelId: P,
     messageId: w,
     roleId: D,
-    openedAt: x,
-    closePopout: L,
+    openedAt: L,
+    closePopout: x,
     setPopoutRef: j,
     disableUserProfileLink: M = __OVERLAY__,
     newAnalyticsLocations: k = [],
@@ -80,7 +80,7 @@ function P(e) {
     null == j || j(null == V ? true : V.current)
   }, [V, j]);
   let Y = e => {
-      null == L || L(), (0, m.openUserProfileModal)(R({
+      null == x || x(), (0, m.openUserProfileModal)(R({
         sourceAnalyticsLocations: G,
         hideRestrictedProfile: true
       }, B, e))
@@ -102,7 +102,7 @@ function P(e) {
     value: G,
     children: (0, r.jsx)(_.Mt, {
       value: B,
-      openedAt: x,
+      openedAt: L,
       fetchStartedAt: null == Z ? true : Z.fetchStartedAt,
       fetchEndedAt: null == Z ? true : Z.fetchEndedAt,
       isLoaded: null == Z ? true : Z.isLoaded,
@@ -125,7 +125,7 @@ function P(e) {
               user: t,
               guildId: N,
               viewProfileItem: W(),
-              onCloseProfile: L
+              onCloseProfile: x
             })
           }), (0, r.jsxs)("div", {
             className: C.header,
@@ -144,7 +144,7 @@ function P(e) {
             }), (0, r.jsx)(v.Z, {
               user: t,
               themeType: S.l.POPOUT,
-              onCloseProfile: L,
+              onCloseProfile: x,
               disableToolbar: true
             })]
           }), (0, r.jsx)(I.Z, {
@@ -155,12 +155,12 @@ function P(e) {
             isHovering: H,
             onOpenProfile: M ? true : Y,
             channelId: P,
-            onClose: L
+            onClose: x
           }), (0, r.jsx)(T.Z, {
             user: t,
             guildId: N,
             channelId: P,
-            onClose: L,
+            onClose: x,
             disableAutoFocus: U
           })]
         })]

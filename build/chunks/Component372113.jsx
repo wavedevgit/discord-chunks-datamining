@@ -65,12 +65,12 @@ function D(e, t) {
   return n
 }
 
-function x(e, t) {
+function L(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let L = (e, t, n) => (0, S.uq)(e) && !n && "lg" === t ? "text-lg/medium" : "lg" === t ? "text-md/medium" : "sm" === t ? "text-sm/medium" : "text-xs/medium";
+let x = (e, t, n) => (0, S.uq)(e) && !n && "lg" === t ? "text-lg/medium" : "lg" === t ? "text-md/medium" : "sm" === t ? "text-sm/medium" : "text-xs/medium";
 
 function j(e) {
   let {
@@ -170,7 +170,7 @@ function k(e) {
       return y ? (0, r.jsx)(U, {
         ctaConfig: b,
         tooltipProps: e
-      }) : (0, r.jsx)(c.zxk, x(w({}, e), {
+      }) : (0, r.jsx)(c.zxk, L(w({}, e), {
         fullWidth: true,
         variant: "primary",
         disabled: null == b.onClick,
@@ -192,14 +192,14 @@ function U(e) {
   } = b.Z.useConfig({
     location: "QuestsCardFooter"
   });
-  return o ? (0, r.jsx)(c.gtL, x(w({}, a), {
+  return o ? (0, r.jsx)(c.gtL, L(w({}, a), {
     "data-migration-pending": true,
     wrapperClassName: R.ctaButtonWrapper,
     color: l.Tt.BRAND,
     disabled: null == i.onClick,
     onClick: null != (t = i.onClick) ? t : true,
     children: i.text
-  })) : (0, r.jsx)(c.zxk, x(w({}, a), {
+  })) : (0, r.jsx)(c.zxk, L(w({}, a), {
     fullWidth: true,
     variant: "primary",
     disabled: null == i.onClick,
@@ -256,7 +256,7 @@ let G = e => {
         text: q ? N.intl.string(N.t["04MTGR"]) : null,
         tooltipContentClassName: R.rewardTileExpirationTooltip,
         shouldShow: q,
-        children: e => (0, r.jsxs)("div", x(w({
+        children: e => (0, r.jsxs)("div", L(w({
           className: R.rewardTileWrapper
         }, e), {
           children: [f && (0, r.jsx)("div", {
@@ -282,7 +282,7 @@ let G = e => {
       }), (0, r.jsxs)("div", {
         className: R.taskDetails,
         children: [(0, r.jsx)(c.Text, {
-          variant: L(a, l, D),
+          variant: x(a, l, D),
           className: R.taskInstructions,
           children: f ? N.intl.formatToPlainString(N.t["ge+AJi"], {
             questName: n.config.messages.questName

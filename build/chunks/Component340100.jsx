@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 340100, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 64838 **/
+/** chunk id: 340100, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
 }), require("./784620.js"), require("./973216.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
   Chunk113434 = require("./113434.js"),
@@ -16,46 +15,46 @@ var Chunk120356 = require("./120356.js"),
 let d = function(e) {
   let {
     className: t,
-    color: n = o.Z.colors.WHITE,
-    quest: i,
+    color: n = i.Z.colors.WHITE,
+    quest: l,
     isInventory: d
-  } = e, f = (0, l.qb)(e.quest), {
-    percentComplete: _,
-    completedRatioDisplay: p
-  } = (0, l.I)(i);
-  return !d && f.length > 0 ? (0, r.jsx)(c.Z, {
-    children: f.at(0)
+  } = e, p = (0, o.qb)(e.quest), {
+    percentComplete: f,
+    completedRatioDisplay: m
+  } = (0, o.I)(l);
+  return !d && p.length > 0 ? (0, r.jsx)(u.Z, {
+    children: p.at(0)
   }) : (0, r.jsxs)("div", {
-    className: a()(u.wrapper, t),
+    className: s()(c.wrapper, t),
     style: {
       color: n.css
     },
     children: [(0, r.jsxs)("div", {
-      className: u.percentCompleteWrapper,
-      children: [(0, r.jsx)(s.Text, {
+      className: c.percentCompleteWrapper,
+      children: [(0, r.jsx)(a.Text, {
         variant: "text-xs/semibold",
-        className: u.percentCompleteLabel,
+        className: c.percentCompleteLabel,
         color: "none",
-        children: p
+        children: m
       }), (0, r.jsx)("div", {
-        className: u.percentCompleteLabelOffset,
+        className: c.percentCompleteLabelOffset,
         style: {
-          width: "".concat(100 - _, "%")
+          width: "".concat(100 - f, "%")
         }
       })]
     }), (0, r.jsx)("div", {
-      className: u.progressBar,
+      className: c.progressBar,
       role: "progressbar",
-      "aria-valuenow": _,
+      "aria-valuenow": f,
       children: (0, r.jsx)("div", {
-        className: u.progressBarFill,
+        className: c.progressBarFill,
         style: {
-          width: "".concat(_, "%")
+          width: "".concat(f, "%")
         }
       })
-    }), f.length > 0 && (0, r.jsx)(c.Z, {
+    }), p.length > 0 && (0, r.jsx)(u.Z, {
       isInventory: d,
-      children: f.at(0)
+      children: p.at(0)
     })]
   })
 }

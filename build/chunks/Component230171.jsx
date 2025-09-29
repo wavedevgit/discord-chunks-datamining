@@ -57,7 +57,7 @@ function M(e) {
     bot: O
   }), {
     staticBannerSrc: N,
-    videoBannerSrc: x,
+    videoBannerSrc: L,
     bannerAspectRatio: j
   } = (0, w.E)(n), M = (0, s.e7)([b.default], () => null != l ? l : b.default.getId(), [l]), {
     analyticsLocations: G
@@ -75,7 +75,7 @@ function M(e) {
   }), W = null != v && I && Y, K = V && I, z = (0, D.G)(n), q = (0, D.z)(n), X = i.useMemo(() => {
     let e = [];
     return I ? (K && e.push({
-      label: null == Z ? L.intl.string(L.t.RscU7O) : F ? L.intl.string(L.t.DPfdsr) : L.intl.string(L.t.sqe0ho),
+      label: null == Z ? x.intl.string(x.t.RscU7O) : F ? x.intl.string(x.t.DPfdsr) : x.intl.string(x.t.sqe0ho),
       trackingArea: R.j_.PLAY,
       onClick() {
         (0, c.G6)({
@@ -90,7 +90,7 @@ function M(e) {
       },
       disabled: F
     }), !K && W && e.push({
-      label: L.intl.string(L.t.JeK1Wl),
+      label: x.intl.string(x.t.JeK1Wl),
       trackingArea: R.j_.PLAY,
       onClick() {
         (0, _.W)({
@@ -110,7 +110,7 @@ function M(e) {
   return (0, r.jsx)(C.W, {
     title: E,
     staticBannerSrc: N,
-    videoBannerSrc: x,
+    videoBannerSrc: L,
     onClickBanner: z,
     bannerAspectRatio: j,
     iconSrc: S,
@@ -146,7 +146,7 @@ function k(e) {
         compactDisplay: "short"
       }),
       r = null != (t = null == (e = c.directoryEntry) ? true : e.guild_count) ? t : 0;
-    return 0 === r ? null : L.intl.format(L.t["6IW6Wl"], {
+    return 0 === r ? null : x.intl.format(x.t["6IW6Wl"], {
       guildCount: n.format(r)
     })
   }, [null == (t = c.directoryEntry) ? true : t.guild_count, u, d]), _ = null == (o = c.categories) || null == (n = o.at(0)) ? true : n.name;
@@ -191,7 +191,7 @@ function U(e) {
     if (d.length > 0) return (0, r.jsx)(N.K, {
       activityUsers: d,
       guildId: c,
-      activityText: L.intl.formatToPlainString(L.t["IJa+4+"], {
+      activityText: x.intl.formatToPlainString(x.t["IJa+4+"], {
         count: d.length
       })
     });
@@ -199,11 +199,11 @@ function U(e) {
       children: [(0, r.jsx)(l.YqE, {
         size: "xxs",
         color: "currentColor"
-      }), L.intl.string(L.t.TsWCdX)]
+      }), x.intl.string(x.t.TsWCdX)]
     });
-    let e = a > 0 ? L.intl.format(L.t.z8EAJS, {
+    let e = a > 0 ? x.intl.format(x.t.z8EAJS, {
       count: a
-    }) : L.intl.string(L.t.RjceQU);
+    }) : x.intl.string(x.t.RjceQU);
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.tBG, {
         size: "xxs",

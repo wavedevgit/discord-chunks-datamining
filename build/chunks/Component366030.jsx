@@ -87,13 +87,13 @@ function B(e) {
   } = e;
   if (null != s) switch (a) {
     case w.iO.LESS_THAN:
-      t = L.intl.format(L.t["2p7dAw"], {
+      t = x.intl.format(x.t["2p7dAw"], {
         description: s,
         count: Math.max(0, Number(o) - 1)
       });
       break;
     case w.iO.GREATER_THAN:
-      t = L.intl.format(L.t["2p7dAw"], {
+      t = x.intl.format(x.t["2p7dAw"], {
         description: s,
         count: Math.max(0, Number(o) + 1)
       });
@@ -198,7 +198,7 @@ function F(e) {
     var e, t;
     return null != (t = null == (e = I.ZP.getSelfMember(d)) ? true : e.roles.includes(l)) && t
   }, [d, l]);
-  return t = 1 === o.length && 1 === o[0].length ? L.intl.string(L.t.jDym4O) : 1 === o.length ? L.intl.format(L.t["0eBj39"], {}) : L.intl.format(L.t.D7uftL, {}), (0, r.jsxs)("div", {
+  return t = 1 === o.length && 1 === o[0].length ? x.intl.string(x.t.jDym4O) : 1 === o.length ? x.intl.format(x.t["0eBj39"], {}) : x.intl.format(x.t.D7uftL, {}), (0, r.jsxs)("div", {
     className: j.popout,
     children: [(0, r.jsx)("div", {
       className: j.popoutHeaderContainer,
@@ -218,12 +218,12 @@ function F(e) {
       children: [p ? null : (0, r.jsx)(f.zx, {
         className: j.getRolesButton,
         onClick: n,
-        children: L.intl.string(L.t.T1t1WV)
+        children: x.intl.string(x.t.T1t1WV)
       }), (0, r.jsx)(f.zx, {
         className: j.viewConnectionsButton,
         color: f.zx.Colors.PRIMARY,
         onClick: a,
-        children: L.intl.string(L.t.hgKDnJ)
+        children: x.intl.string(x.t.hgKDnJ)
       })]
     })]
   })
@@ -264,7 +264,7 @@ function V(e) {
             guildId: a.id,
             channelId: s.id,
             roleId: u.id,
-            subsection: x.Tb.CONNECTIONS,
+            subsection: L.Tb.CONNECTIONS,
             sourceAnalyticsLocations: l
           }), i()
         }
@@ -278,7 +278,7 @@ function V(e) {
     align: "top",
     nudgeAlignIntoViewport: true,
     children: e => (0, r.jsx)(_.ua7, {
-      text: L.intl.string(L.t.Wpsnam),
+      text: x.intl.string(x.t.Wpsnam),
       children: t => (0, r.jsxs)("div", G(k({
         ref: m,
         className: j.badge

@@ -50,9 +50,9 @@ function y(e) {
     })
   }, [C, N]);
   let D = null != n,
-    x = T || true !== R ? null != R : null != A;
+    L = T || true !== R ? null != R : null != A;
 
-  function L() {
+  function x() {
     (0, _.s6)(null, A, null == n ? true : n.id)
   }
   let j = v ? l.gtL : s.zx;
@@ -73,14 +73,14 @@ function y(e) {
           [b.buttonHighlighted]: v
         }),
         children: E.intl.string(E.t["/dRfCQ"])
-      }), x && (0, r.jsx)("div", {
+      }), L && (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: b.removeButton,
         children: (0, r.jsx)(l.zxk, {
           variant: "secondary",
           size: "sm",
           text: D ? E.intl.string(E.t.CHf9iI) : E.intl.string(E.t.uMuafH),
-          onClick: L
+          onClick: x
         })
       })]
     })

@@ -106,7 +106,7 @@ let R = ["continue", "continuePrimaryKey", "advance"],
   P = {},
   w = new WeakMap,
   D = new WeakMap,
-  x = {
+  L = {
     get(e, t) {
       if (!R.includes(t)) return e[t];
       let n = P[t];
@@ -115,10 +115,10 @@ let R = ["continue", "continuePrimaryKey", "advance"],
       }), n
     }
   };
-async function* L(...e) {
+async function* x(...e) {
   let t = this;
   if (t instanceof IDBCursor || (t = await t.openCursor(...e)), !t) return;
-  let n = new Proxy(t, x);
+  let n = new Proxy(t, L);
   for (D.set(n, t), g.set(n, I(t)); t;) yield n, t = await (w.get(n) || t.continue()), w.delete(n)
 }
 
@@ -127,7 +127,7 @@ function j(e, t) {
 }
 b(e => ({
   ...e,
-  get: (t, n, r) => j(t, n) ? L : e.get(t, n, r),
+  get: (t, n, r) => j(t, n) ? x : e.get(t, n, r),
   has: (t, n) => j(t, n) || e.has(t, n)
 }));
 let M = "sprigReplayIframeLoaded",
@@ -557,23 +557,23 @@ let ev = new class {
   eT, eS, eA, eC, eN, eR, eP = [],
   ew = false,
   eD = 0,
-  ex = false,
   eL = false,
+  ex = false,
   ej = [],
   eM = false,
-  ek = () => ex && !ew && Date.now() <= eA,
+  ek = () => eL && !ew && Date.now() <= eA,
   eU = ({
     apiUrl: e,
     config: t,
     triggerSnapshot: n,
     forceInit: r = false
   }) => {
-    ex && !r || (l.a.isStorageAvailable ? (eP = [], ej.splice(0), eI.splice(0), eD = 0, eN = n, eS = e, eT = {
+    eL && !r || (l.a.isStorageAvailable ? (eP = [], ej.splice(0), eI.splice(0), eD = 0, eN = n, eS = e, eT = {
       responseGroupUuid: t.responseGroupUuid,
       surveyId: t.surveyId,
       userAgent: t.userAgent,
       sdkVersion: t.sdkVersion
-    }, eC = t.maxDurationSeconds, eH(), ex || (eR = window.setInterval(eF, 500)), ex = true) : ew = true)
+    }, eC = t.maxDurationSeconds, eH(), eL || (eR = window.setInterval(eF, 500)), eL = true) : ew = true)
   },
   eG = [_.Drag, _.Input, _.MediaInteraction, _.MouseInteraction, _.MouseMove, _.Scroll, _.Selection, _.TouchMove],
   eB = e => e.type === f.Custom || e.type === f.IncrementalSnapshot && eG.includes(e.data.source),
@@ -672,7 +672,7 @@ let ev = new class {
       }
     })
   }, eQ = (e, t) => {
-    ek() && !eL && (e || eI.length) && (e && eI.length && (async () => {
+    ek() && !ex && (e || eI.length) && (e && eI.length && (async () => {
       let e = eI.splice(0);
       if (!eZ(e)) return;
       l.b.info("Capturing always-on event array to upload"), eX(e);
@@ -681,7 +681,7 @@ let ev = new class {
     })(), eI.push(t))
   };
 window.addEventListener("beforeunload", async () => {
-  eL = true, ek() && (Chunk555256.b.info("Always On handle page unload"), (() => {
+  ex = true, ek() && (Chunk555256.b.info("Always On handle page unload"), (() => {
     let e;
     eI.length && (e = eI[0].timestamp);
     let t = {
@@ -714,15 +714,15 @@ let eJ = async (e, t) => {
       r = l.P[t];
     r || (r = (0, l.r)(t)), r.report(e / 1e3)
   }
-}, e0 = 5e3, e1 = 6e4, e2 = 0, e3, e4 = false, e8 = [], e6 = e => {
+}, e0 = 5e3, e1 = 6e4, e2 = 0, e3, e4 = false, e8 = [], e5 = e => {
   var t, n, r, i;
   if (null != (t = e.event) && t.includes("Sprig_Scroll")) {
     let t = null == (i = null == (r = null == (n = JSON.parse(e.event)) ? true : n.data) ? true : r.payload) ? true : i.xPath;
     if (!t) return;
     el.scrollEventUuids[t] = e.uuid
   }
-  e8.push(e), e4 || e5()
-}, e5 = () => {
+  e8.push(e), e4 || e6()
+}, e6 = () => {
   e4 = true, setTimeout(async () => {
     if (ef() || e_()) return;
     let e = e8;
@@ -1111,7 +1111,7 @@ let eJ = async (e, t) => {
             (0, l.d)("sdk_replay_snapshot_seconds", e / 1e3)
           }
           let n = c || !!t && e.type === f.Meta;
-          c = false, eQ(n, e), e6({
+          c = false, eQ(n, e), e5({
             uuid: (0, l.v)(),
             event: JSON.stringify(e),
             isValidStart: n,

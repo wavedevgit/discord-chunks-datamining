@@ -110,12 +110,12 @@ let eg = () => {
     (0, Chunk547972.Z)(Chunk332325.Z.CLIPS, {
       analyticsLocations: module
     })
-  }, ex = () => {
+  }, eL = () => {
     (0, Chunk518596.openUserSettings)(Chunk313789.n.APPEARANCE_PANEL, {
       section: Chunk981631.oAB.APPEARANCE,
       scrollPosition: Chunk526761.h1.CUSTOM_APP_ICONS
     })
-  }, eL = () => {
+  }, ex = () => {
     window.open(Chunk63063.Z.getArticleURL(Chunk981631.BhN.CLIPS), "_blank")
   }, ej = () => {
     eS || (0, Chunk266454.Q3)(Chunk704215.z.PERMADECOS_NITRO_HOME_CARD_NEW_BADGE, {
@@ -138,7 +138,7 @@ let eg = () => {
       description: Chunk388032.intl.string(Chunk388032.t.Z6v86e),
       descriptionCta: ev ? Chunk388032.intl.string(Chunk388032.t.jVcuVV) : Chunk388032.intl.string(Chunk388032.t.hvVgAQ),
       pillText: Chunk388032.intl.string(Chunk388032.t.EYxi0t),
-      onCtaClick: ev ? eD : eL,
+      onCtaClick: ev ? eD : ex,
       perkImage: Chunk766491
     } : {
       name: "clips",
@@ -329,7 +329,7 @@ let eg = () => {
       perkImage: Chunk193943,
       description: Chunk388032.intl.string(Chunk388032.t.e7FKCg),
       descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVV),
-      onCtaClick: ex
+      onCtaClick: eL
     },
     moreEmojiPower: {
       name: "moreEmojiPower",
@@ -377,7 +377,7 @@ let eg = () => {
       description: Chunk388032.intl.string(Chunk388032.t.ee7wQ0),
       descriptionCta: ey || eO ? Chunk388032.intl.string(Chunk388032.t.y9TxXV) : Chunk388032.intl.string(Chunk388032.t.d8o6lZ),
       isPremiumGetCta: !(ey || eO),
-      onCtaClick: ey || eO ? ex : true,
+      onCtaClick: ey || eO ? eL : true,
       perkImage: Chunk607762
     },
     referralProgram: {

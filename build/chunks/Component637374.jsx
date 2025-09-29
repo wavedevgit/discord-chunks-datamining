@@ -190,7 +190,7 @@ class K extends Chunk647438.Component {
     } = this.props, a = {
       onClick: this.handleAccept,
       color: u.zx.Colors.BRAND
-    }, o = !e.isSubscription && null != t || !e.isSelfRedeemable && i || e.isExistingPremiumSubscriptionDisallowed && (0, x.I5)(n);
+    }, o = !e.isSubscription && null != t || !e.isSelfRedeemable && i || e.isExistingPremiumSubscriptionDisallowed && (0, L.I5)(n);
     return (e.redeemed || o || e.isClaimed || !n.verified) && (a.color = u.zx.Colors.BRAND, a.disabled = true), (0, r.jsx)(u.zx, H(F({}, a), {
       className: (0, m.mO)(e) ? B.collectiblesAcceptButton : null,
       size: u.zx.Sizes.SMALL,
@@ -421,7 +421,7 @@ let z = (0, Chunk112724.Z)((0, Chunk730749.Z)(K)),
       giftCode: i,
       gifter: o,
       currentUser: r,
-      subscriptionPlan: null != i && null != i.subscriptionPlanId ? (0, L.oE)(i.subscriptionPlanId) : null,
+      subscriptionPlan: null != i && null != i.subscriptionPlanId ? (0, x.oE)(i.subscriptionPlanId) : null,
       isSelfGift: null != i ? T.default.getId() === i.userId : T.default.getId() === n.id,
       resolved: S.Z.getIsResolved(t),
       libraryApplication: null != a && (null == i ? true : i.entitlementBranches) != null ? D.z2(i.entitlementBranches, a, A.Z) : null

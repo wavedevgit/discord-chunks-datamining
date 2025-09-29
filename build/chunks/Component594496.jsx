@@ -56,7 +56,7 @@ function D(e) {
   return e
 }
 
-function x(e, t) {
+function L(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -67,8 +67,8 @@ function x(e, t) {
   return n
 }
 
-function L(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
+function x(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -76,7 +76,7 @@ function L(e, t) {
 function j(e) {
   var t, n, i, w;
   let {
-    guild: x,
+    guild: L,
     nameplateEnabled: j
   } = e, M = (0, o.e7)([O.default], () => {
     let e = O.default.getCurrentUser();
@@ -112,7 +112,7 @@ function j(e) {
   }), Y = (0, E.SD)({
     userId: M.id,
     image: k
-  }), W = null != x ? x : H;
+  }), W = null != L ? L : H;
   a()(null != W, "guild should not be null");
   let K = (0, l.gS)(W.id),
     z = (0, o.e7)([y.ZP], () => null == W.id ? null : y.ZP.getMember(W.id, M.id)),
@@ -153,7 +153,7 @@ function j(e) {
         sectionTitle: (0, r.jsxs)(r.Fragment, {
           children: [R.intl.string(R.t.lqaIxM), (0, r.jsx)(s.ua7, {
             text: R.intl.string(R.t["5AFxuL"]),
-            children: e => (0, r.jsx)(s.SrA, L(D({
+            children: e => (0, r.jsx)(s.SrA, x(D({
               size: "md",
               color: "currentColor"
             }, e), {
@@ -170,7 +170,7 @@ function j(e) {
         sectionTitle: (0, r.jsxs)(r.Fragment, {
           children: [R.intl.string(R.t["7v0T9P"]), (0, r.jsx)(s.ua7, {
             text: R.intl.string(R.t["5AFxuL"]),
-            children: e => (0, r.jsx)(s.SrA, L(D({
+            children: e => (0, r.jsx)(s.SrA, x(D({
               size: "md",
               color: "currentColor"
             }, e), {
@@ -185,7 +185,7 @@ function j(e) {
         guild: W,
         titleIcon: (0, r.jsx)(s.ua7, {
           text: R.intl.string(R.t["5AFxuL"]),
-          children: e => (0, r.jsx)(s.SrA, L(D({
+          children: e => (0, r.jsx)(s.SrA, x(D({
             size: "md",
             color: "currentColor"
           }, e), {
@@ -196,7 +196,7 @@ function j(e) {
         sectionTitle: (0, r.jsxs)(r.Fragment, {
           children: [R.intl.string(R.t.wR5wOj), (0, r.jsx)(s.ua7, {
             text: R.intl.string(R.t["5AFxuL"]),
-            children: e => (0, r.jsx)(s.SrA, L(D({
+            children: e => (0, r.jsx)(s.SrA, x(D({
               size: "md",
               color: "currentColor"
             }, e), {
@@ -226,7 +226,7 @@ function j(e) {
         sectionTitle: (0, r.jsxs)(r.Fragment, {
           children: [R.intl.string(R.t.jGoPJS), (0, r.jsx)(s.ua7, {
             text: R.intl.string(R.t["5AFxuL"]),
-            children: e => (0, r.jsx)(s.SrA, L(D({
+            children: e => (0, r.jsx)(s.SrA, x(D({
               size: "md",
               color: "currentColor"
             }, e), {

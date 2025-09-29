@@ -218,7 +218,7 @@ let ea = [14, 14, 12, 12, 10, 8, 6],
       name: a
     } = t, {
       data: o
-    } = (0, P.IX)(l), s = (0, S.Z)({
+    } = (0, j.IX)(l), s = (0, S.Z)({
       application: o,
       analyticsLocations: n
     }), c = (0, R.Nj)(u.z.CLOUD_PLAY_NEW_BADGE), d = (0, G.F)(l);
@@ -260,7 +260,7 @@ let eb = e => {
       });
       break;
     case "SPOTIFY":
-      t = (0, i.jsx)(q.Z, {
+      t = (0, i.jsx)(K.Z, {
         className: er.headerIcon,
         color: d.Z.unsafe_rawColors.SPOTIFY.css
       });
@@ -571,7 +571,7 @@ eO.Header = e_, eO.Body = e => {
           className: o()(er.largeImage, er.borderRadius0, {
             [er.largeImageMask]: null != n.small_image
           })
-        }), u ? null : (0, i.jsx)(q.Z, {
+        }), u ? null : (0, i.jsx)(K.Z, {
           className: er.smallImage,
           color: d.Z.unsafe_rawColors.SPOTIFY.css
         })]
@@ -687,13 +687,13 @@ eO.Header = e_, eO.Body = e => {
       return s(t)
     })
   }, [u]);
-  let d = (0, c.Wu)([K.default, W.default], () => Array.from(a).map(e => W.default.getId() === e ? null : K.default.getUser(e)).filter(J.lm)),
+  let d = (0, c.Wu)([q.default, W.default], () => Array.from(a).map(e => W.default.getId() === e ? null : q.default.getUser(e)).filter(J.lm)),
     f = (0, g.O)(),
     {
       analyticsLocations: h
     } = (0, T.ZP)();
   if (null == u) return null;
-  let m = j.Z.getApplication(u);
+  let m = P.Z.getApplication(u);
   if (null == m) return null;
   let _ = null != t.created_at && t.created_at > 0 ? {
       start: t.created_at

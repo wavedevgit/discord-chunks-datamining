@@ -70,9 +70,9 @@ function D(e, t) {
   }), e
 }
 
-function x(e, t) {
+function L(e, t) {
   if (null == e) return {};
-  var n, r, i = L(e, t);
+  var n, r, i = x(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -80,7 +80,7 @@ function x(e, t) {
   return i
 }
 
-function L(e, t) {
+function x(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -179,7 +179,7 @@ function B(e) {
     isAnimatedImage: E,
     isVideo: b,
     hotspotLocation: O
-  } = e, v = x(e, ["option", "source", "selected", "onSelectOption", "isAnimatedImage", "isVideo", "hotspotLocation"]);
+  } = e, v = L(e, ["option", "source", "selected", "onSelectOption", "isAnimatedImage", "isVideo", "hotspotLocation"]);
   let T = (0, u.O)(),
     {
       analyticsLocations: S
@@ -197,7 +197,7 @@ function B(e) {
       source: i
     });
 
-  function L() {
+  function x() {
     null != O && R && (h.Kw(O), g.default.track(I.rMx.PREMIUM_UPSELL_VIEWED, {
       type: A.cd.ANIMATED_VIDEO_BACKGROUND_NEW_PRESET,
       location: T.location,
@@ -221,8 +221,8 @@ function B(e) {
     children: [a ? (0, r.jsx)("div", {
       className: N.backgroundOptionRing
     }) : null, (0, r.jsx)("div", {
-      onFocus: L,
-      onMouseEnter: L,
+      onFocus: x,
+      onMouseEnter: x,
       className: N.backgroundOptionInner,
       children: w
     }), b || E ? (0, r.jsx)("div", {

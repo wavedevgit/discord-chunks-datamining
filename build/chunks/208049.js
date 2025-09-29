@@ -4,7 +4,7 @@
 require.d(exports, {
   $d: () => T,
   AA: () => S,
-  Db: () => x,
+  Db: () => L,
   Dx: () => I,
   R: () => w,
   TB: () => A,
@@ -178,7 +178,7 @@ function D(e, t) {
   })
 }
 
-function x(e) {
+function L(e) {
   o.Z.dispatch({
     type: "SOUNDBOARD_MUTE_JOIN_SOUND",
     channelId: e

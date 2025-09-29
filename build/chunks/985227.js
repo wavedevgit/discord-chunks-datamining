@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 985227, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 1272 **/
+/** chunk id: 985227, original params: e,t,n (module,exports,require) **/
 module.exports = {
   embedSections: "embedSections_b5ecb2",
   embedHelper: "embedHelper_b5ecb2",

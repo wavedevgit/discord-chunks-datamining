@@ -65,20 +65,20 @@ function D(e, t) {
   return n
 }
 
-function x(e, t) {
+function L(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let L = Chunk358085.isPlatformEmbedded && (0, Chunk358085.isWindows)(),
-  j = L && 10 > parseFloat(Chunk579806.Z.os.release),
+let x = Chunk358085.isPlatformEmbedded && (0, Chunk358085.isWindows)(),
+  j = x && 10 > parseFloat(Chunk579806.Z.os.release),
   M = true;
-if (L && !j) {
+if (x && !j) {
   let [e, , t] = Chunk579806.Z.os.release.split(".");
   M = parseInt(module) > 10 || parseInt(exports) >= 15063
 }
 let k = new Chunk710845.Z("NotificationUtils"),
-  U = L && M || "Chrome" === s().name && 47 > parseFloat(s().version) || "Firefox" === s().name && 52 > parseFloat(s().version);
+  U = x && M || "Chrome" === s().name && 47 > parseFloat(s().version) || "Firefox" === s().name && 52 > parseFloat(s().version);
 async function G() {
   if (null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.features.supports("notifications")) try {
     return await Chunk998502.ZP.invoke("NOTIFICATIONS_GET_SETTINGS")
@@ -127,7 +127,7 @@ let Y = a().throttle(H, 1e3, {
 function W() {
   Chunk998502.ZP.flashFrame(false)
 }
-L && (window.addEventListener("focus", W), Chunk998502.ZP.on("MAIN_WINDOW_FOCUS", W));
+x && (window.addEventListener("focus", W), Chunk998502.ZP.on("MAIN_WINDOW_FOCUS", W));
 let K = window.Notification;
 if (j) {
   let e = {};
@@ -225,7 +225,7 @@ async function $(e, t, n, r, i) {
     B = v.Z.disableNotifications && null == i.overrideStreamerMode,
     Z = !C.isPlatformEmbedded || (0, C.isMac)() && j || N.ZP.shouldDisplayNotifications(),
     F = !B && D && Z,
-    H = x(w({}, r), {
+    H = L(w({}, r), {
       action: true,
       ping: true,
       banner: true,
@@ -248,7 +248,7 @@ async function $(e, t, n, r, i) {
         action: "VIEW"
       }, t)), T.default.track(R.rMx.NOTIFICATION_VIEWED, W)), U && setTimeout(() => e.close(), 5e3)
     };
-  if (null == i.sound || Q || (J(i.sound, null != (s = i.volume) ? s : 1, i.soundpack), r.ping = true), i.isUserAvatar && null != e && (e = await (0, p.D)(e)), L && y.Z.taskbarFlash && N.ZP.flashFrame(true), j) {
+  if (null == i.sound || Q || (J(i.sound, null != (s = i.volume) ? s : 1, i.soundpack), r.ping = true), i.isUserAvatar && null != e && (e = await (0, p.D)(e)), x && y.Z.taskbarFlash && N.ZP.flashFrame(true), j) {
     let a = {
       title: t,
       body: n

@@ -90,7 +90,7 @@ function Q(e, t) {
 }
 
 function J(e) {
-  L.Z.requestPermission(t => {
+  x.Z.requestPermission(t => {
     let n = t ? V.$Ab.ENABLED : V.$Ab.BLOCKED;
     p.default.setPermissionsState(n, e)
   })

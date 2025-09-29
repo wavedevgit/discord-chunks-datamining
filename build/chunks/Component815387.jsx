@@ -119,13 +119,13 @@ function eD(e, t) {
   return n
 }
 
-function ex(e, t) {
+function eL(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : eD(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function eL(e) {
+function ex(e) {
   K.Z.captureException(e), new p.Z("SystemMessage").error("", e)
 }
 
@@ -270,9 +270,9 @@ function eB(e) {
     var n;
     let r = null == (n = t.messageReference) ? true : n.channel_id;
     if (null != r) {
-      await x.Z.loadThread(r);
+      await L.Z.loadThread(r);
       let t = U.Z.getChannel(r);
-      null != t && (0, L.ok)(t, e.shiftKey)
+      null != t && (0, x.ok)(t, e.shiftKey)
     }
   }, [t]), d = i.useCallback(() => {
     (0, o.ZDy)(async () => {
@@ -290,7 +290,7 @@ function eB(e) {
       let {
         default: e
       } = await Promise.all([n.e("90508"), n.e("46154"), n.e("3297")]).then(n.bind(n, 422200));
-      return t => (0, r.jsx)(e, ex(ew({}, t), {
+      return t => (0, r.jsx)(e, eL(ew({}, t), {
         channel: a
       }))
     })
@@ -696,7 +696,7 @@ function e8(e) {
   })
 }
 
-function e6(e) {
+function e5(e) {
   let {
     message: t,
     channel: n
@@ -707,7 +707,7 @@ function e6(e) {
   })
 }
 
-function e5(e) {
+function e6(e) {
   let {
     message: t,
     channel: n
@@ -825,9 +825,9 @@ let tn = Object.freeze({
   [Chunk981631.uaV.VOICE_HANGOUT_INVITE]: true,
   [Chunk981631.uaV.POLL_RESULT]: Chunk507435.Z,
   [Chunk981631.uaV.CHANGELOG]: true,
-  [Chunk981631.uaV.NITRO_NOTIFICATION]: e6,
+  [Chunk981631.uaV.NITRO_NOTIFICATION]: e5,
   [Chunk981631.uaV.CHANNEL_LINKED_TO_LOBBY]: e7,
-  [Chunk981631.uaV.GIFTING_PROMPT]: e5,
+  [Chunk981631.uaV.GIFTING_PROMPT]: e6,
   [Chunk981631.uaV.IN_GAME_MESSAGE_NUX]: e9,
   [Chunk981631.uaV.GUILD_JOIN_REQUEST_ACCEPT_NOTIFICATION]: Chunk29887.Cn,
   [Chunk981631.uaV.GUILD_JOIN_REQUEST_REJECT_NOTIFICATION]: Chunk29887.Ue,
@@ -852,7 +852,7 @@ function tr(e) {
   } = e, {
     type: o
   } = t, s = tn[o];
-  return null == s ? (eL(Error("unknown message type ".concat(t.type))), null) : (0, r.jsx)(J.ZP, {
+  return null == s ? (ex(Error("unknown message type ".concat(t.type))), null) : (0, r.jsx)(J.ZP, {
     message: t,
     content: (0, q.ZP)(t).content,
     compact: null != i && i,

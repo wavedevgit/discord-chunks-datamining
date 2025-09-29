@@ -77,8 +77,8 @@ function E(e) {
     subMenuIconClassName: P,
     dontCloseOnActionIfHoldingShiftKey: w,
     dontCloseOnAction: D,
-    iconProps: x,
-    sparkle: L
+    iconProps: L,
+    sparkle: x
   } = e, {
     onSelect: j,
     onInteraction: M
@@ -108,8 +108,8 @@ function E(e) {
       }),
       children: (0, r.jsx)(p, g(h({
         color: "currentColor"
-      }, x), {
-        className: o()(_.icon, null == x ? true : x.className)
+      }, L), {
+        className: o()(_.icon, null == L ? true : L.className)
       }))
     }), (0, r.jsxs)("div", {
       className: _.label,
@@ -128,8 +128,8 @@ function E(e) {
       className: _.iconContainer,
       children: (0, r.jsx)(a, g(h({
         color: "currentColor"
-      }, x), {
-        className: o()(_.icon, null == x ? true : x.className)
+      }, L), {
+        className: o()(_.icon, null == L ? true : L.className)
       }))
     }), O && (0, r.jsxs)("div", {
       className: _.iconContainer,
@@ -137,7 +137,7 @@ function E(e) {
         size: "md",
         color: "currentColor",
         className: o()(_.caret, P)
-      }), L && (0, r.jsx)(s.K1N, {
+      }), x && (0, r.jsx)(s.K1N, {
         className: _.sparkles
       })]
     })]

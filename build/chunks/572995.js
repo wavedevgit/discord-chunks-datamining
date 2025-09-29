@@ -112,11 +112,11 @@ let es = (e, t) => ei({
     },
     showYourStyle: {
       thumbnail: D.Z,
-      assetUrl: e ? w.Z : x.Z
+      assetUrl: e ? w.Z : L.Z
     },
     yourSpace: {
       thumbnail: j.Z,
-      assetUrl: e ? L.Z : M.Z
+      assetUrl: e ? x.Z : M.Z
     },
     emojis: {
       thumbnail: I.Z,

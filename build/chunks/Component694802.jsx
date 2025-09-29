@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 694802, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 3408 **/
+/** chunk id: 694802, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
 }), require("./784620.js"), require("./973216.js");
@@ -9,7 +8,7 @@ require("./647438.js");
 var Chunk481060 = require("./481060.js"),
   Chunk113434 = require("./113434.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk779341 = require("./779341.js");
+  Chunk453799 = require("./453799.js");
 
 function l(e) {
   let {
@@ -17,24 +16,24 @@ function l(e) {
     children: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: s.card,
+    className: i.card,
     children: [(0, r.jsxs)("div", {
-      className: s.header,
-      children: [(0, r.jsx)(i.Mgn, {
+      className: i.header,
+      children: [(0, r.jsx)(s.Mgn, {
         size: "custom",
         color: "currentColor",
-        className: s.icon,
+        className: i.icon,
         width: 16,
         height: 16
-      }), (0, r.jsx)(i.X6q, {
+      }), (0, r.jsx)(s.X6q, {
         color: "text-default",
         variant: "heading-sm/medium",
         children: t
       })]
-    }), (0, r.jsx)(i.Text, {
+    }), (0, r.jsx)(s.Text, {
       color: "text-muted",
       variant: "text-xs/normal",
-      className: s.warningBody,
+      className: i.warningBody,
       children: n
     })]
   })
@@ -42,14 +41,14 @@ function l(e) {
 let c = function(e) {
   let {
     quest: t
-  } = e, n = (0, a.qb)(t);
+  } = e, n = (0, o.qb)(t);
   if (0 === n.length) return null;
-  let i = n.at(0);
-  return i === o.intl.string(o.t.BV6xDg) ? (0, r.jsx)(l, {
-    header: o.intl.string(o.t.onh6cn),
-    children: o.intl.string(o.t.arVHRE)
-  }) : i === o.intl.string(o.t.MFGxFB) ? (0, r.jsx)(l, {
-    header: o.intl.string(o.t.JPihZG),
-    children: o.intl.string(o.t.MFGxFB)
+  let s = n.at(0);
+  return s === a.intl.string(a.t.BV6xDg) ? (0, r.jsx)(l, {
+    header: a.intl.string(a.t.onh6cn),
+    children: a.intl.string(a.t.arVHRE)
+  }) : s === a.intl.string(a.t.MFGxFB) ? (0, r.jsx)(l, {
+    header: a.intl.string(a.t.JPihZG),
+    children: a.intl.string(a.t.MFGxFB)
   }) : null
 }

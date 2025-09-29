@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 17057, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 1272 **/
+/** chunk id: 17057, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
 });
@@ -16,27 +15,27 @@ let c = function(e) {
     questId: t
   } = e;
   return (0, r.jsx)("div", {
-    className: s.previewBackground,
+    className: o.previewBackground,
     children: (0, r.jsxs)("div", {
-      className: s.previewCard,
+      className: o.previewCard,
       children: [(0, r.jsx)(i.X6q, {
         variant: "heading-md/semibold",
-        children: o.intl.string(o.t.IcljUl)
+        children: a.intl.string(a.t.IcljUl)
       }), (0, r.jsx)("div", {
-        className: l.embedHelper,
+        className: s.embedHelper,
         children: (0, r.jsx)("span", {
-          className: l.helperText,
-          children: o.intl.string(o.t.q97mEh)
+          className: s.helperText,
+          children: a.intl.string(a.t.q97mEh)
         })
       }), (0, r.jsx)("div", {
-        className: l.embedSections,
+        className: s.embedSections,
         children: (0, r.jsx)("div", {
-          className: l.embedSection,
+          className: s.embedSection,
           children: (0, r.jsx)("div", {
-            className: l.embedWrapper,
+            className: s.embedWrapper,
             children: (0, r.jsx)("div", {
-              className: l.questsEmbed,
-              children: (0, r.jsx)(a.Z, {
+              className: s.questsEmbed,
+              children: (0, r.jsx)(l.Z, {
                 questId: t
               })
             })

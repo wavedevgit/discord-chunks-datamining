@@ -9,7 +9,7 @@ require.d(exports, {
   ic: () => A,
   n5: () => R,
   rU: () => D,
-  s8: () => x
+  s8: () => L
 }), require("./388685.js"), require("./35282.js");
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -571,7 +571,7 @@ class D extends Chunk647438.Component {
     })
   }
 }
-class x extends Chunk647438.Component {
+class L extends Chunk647438.Component {
   renderContent() {
     let e, t, {
         navigationRecord: n,

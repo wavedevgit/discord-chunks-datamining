@@ -87,8 +87,8 @@ function D(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let x = 16,
-  L = e => {
+let L = 16,
+  x = e => {
     let {
       hangStatusActivity: t,
       iconClassName: n,
@@ -109,7 +109,7 @@ let x = 16,
       className: A.icons,
       children: (0, r.jsx)(g.Z, {
         userId: s,
-        size: x,
+        size: L,
         hangStatusActivity: t,
         className: o()(A.icon, n)
       })
@@ -147,7 +147,7 @@ function M(e) {
     otherClientSessionType: P,
     voicePlatform: w,
     application: D,
-    guildId: x,
+    guildId: L,
     channelId: j,
     user: M,
     disconnected: k,
@@ -234,10 +234,10 @@ function M(e) {
       children: Q ? (0, r.jsx)(G, {
         application: D,
         iconClassName: N,
-        guildId: x,
+        guildId: L,
         channelId: j,
         userId: M.id
-      }, "".concat(M.id, "-game")) : (0, r.jsx)(L, {
+      }, "".concat(M.id, "-game")) : (0, r.jsx)(x, {
         userId: M.id,
         hangStatusActivity: U,
         iconClassName: N,
@@ -270,8 +270,8 @@ function k(e, t) {
     collapsed: C,
     mute: R,
     serverMute: D,
-    guildId: x,
-    nick: L,
+    guildId: L,
+    nick: x,
     isGuest: j,
     flipped: k,
     className: U,
@@ -312,7 +312,7 @@ function k(e, t) {
         [A.avatarSpeaking]: T
       }),
       style: {
-        backgroundImage: "url(".concat(F.getAvatarURL(x, s === v.ipw.LARGE ? 38 : 24), ")")
+        backgroundImage: "url(".concat(F.getAvatarURL(L, s === v.ipw.LARGE ? 38 : 24), ")")
       }
     })
   }
@@ -322,7 +322,7 @@ function k(e, t) {
         className: o()(a, A.username, V, {
           [A.usernameSpeaking]: !R && !D && T
         }),
-        children: [null != L ? L : O.ZP.getName(F), j ? (0, r.jsxs)("span", {
+        children: [null != x ? x : O.ZP.getName(F), j ? (0, r.jsxs)("span", {
           className: A.guestSuffix,
           children: ["\xa0", S.intl.string(S.t["pFO/Pj"])]
         }) : ""]
@@ -330,7 +330,7 @@ function k(e, t) {
       t = {
         primaryGuild: F.primaryGuild,
         userId: F.id,
-        contextGuildId: x,
+        contextGuildId: L,
         isOverlay: d,
         disableTooltip: true,
         className: o()(A.clanTag, d && A.isOverlay),
@@ -366,7 +366,7 @@ function k(e, t) {
     onMouseLeave: K,
     onMouseDown: z,
     onKeyDown: h,
-    "aria-label": null != (n = null != B ? B : L) ? n : F.username,
+    "aria-label": null != (n = null != B ? B : x) ? n : F.username,
     focusProps: {
       offset: {
         right: 4

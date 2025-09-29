@@ -64,7 +64,7 @@ function v(e, t, n) {
   let {
     channel: P,
     type: w
-  } = e, [D, x] = r.useState(() => (0, p.PA)()), L = (0, i.Z)(), j = (0, a.e7)([u.ZP, _.default], () => {
+  } = e, [D, L] = r.useState(() => (0, p.PA)()), x = (0, i.Z)(), j = (0, a.e7)([u.ZP, _.default], () => {
     var e, t;
     let n = _.default.getCurrentUser();
     return null != (t = null != P.guild_id && null != n ? null == (e = u.ZP.getMember(P.guild_id, n.id)) ? true : e.isPending : null) && t
@@ -107,11 +107,11 @@ function v(e, t, n) {
   return r.useEffect(() => {
     Y.updateProps(H)
   }), r.useImperativeHandle(t, () => Y, [Y]), r.useEffect(() => {
-    let e = e => x(e);
-    return Y.on("change", e), Y.on("update", L), () => {
-      Y.off("change", e), Y.off("update", L)
+    let e = e => L(e);
+    return Y.on("change", e), Y.on("update", x), () => {
+      Y.off("change", e), Y.off("update", x)
     }
-  }, [L, Y]), r.useEffect(() => {
+  }, [x, Y]), r.useEffect(() => {
     var e;
     let t = null == (e = D.query) ? true : e.typeInfo.stores;
     if (null != t) {

@@ -1,7 +1,7 @@
-/** Chunk was on 66663 **/
+/** Chunk was on 89342 **/
 /** chunk id: 282003, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  k: () => b
+  k: () => g
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -36,7 +36,7 @@ function f(e) {
   return e
 }
 
-function g(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -48,8 +48,8 @@ function g(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let b = () => {
-    let [e, t] = Chunk647438.useState(Chunk474936.p9.TIER_0), [n, b] = Chunk647438.useState(Chunk45474.R.WHAT_YOU_LOSE), [j, _] = Chunk647438.useState(null), [y, C] = Chunk647438.useState(Chunk474936.Xh.PREMIUM_MONTH_TIER_0), [E, N] = Chunk647438.useState([]), [S, T] = Chunk647438.useState(() => {
+let g = () => {
+    let [e, t] = Chunk647438.useState(Chunk474936.p9.TIER_0), [n, g] = Chunk647438.useState(Chunk45474.R.WHAT_YOU_LOSE), [j, _] = Chunk647438.useState(null), [y, C] = Chunk647438.useState(Chunk474936.Xh.PREMIUM_MONTH_TIER_0), [E, N] = Chunk647438.useState([]), [S, T] = Chunk647438.useState(() => {
       let e = new Date;
       return module.setMonth(module.getMonth() + 1), module
     }), [O, P] = Chunk647438.useState(null), [I, k] = Chunk647438.useState(false), [w, R] = Chunk647438.useState(false), [A, Z] = Chunk647438.useState(false);
@@ -126,7 +126,7 @@ let b = () => {
       })), require !== Chunk45474.R.PREVIEW && null !== O && P(null)
     }, [require, j, S, y, O]);
     let D = Chunk647438.useCallback(async () => {
-      Z(true), await (0, Chunk481060.ZDy)(async () => t => (0, a.jsx)(u.x, g(f({}, t), {
+      Z(true), await (0, Chunk481060.ZDy)(async () => t => (0, a.jsx)(u.x, b(f({}, t), {
         onClose: () => {
           t.onClose(), Z(false)
         },
@@ -141,7 +141,7 @@ let b = () => {
         errorOnCancel: I,
         errorOnRedeem: w,
         setActiveStep: e => {
-          b(e), t.onClose()
+          g(e), t.onClose()
         },
         activeStep: n,
         premiumSubscription: {
@@ -219,7 +219,7 @@ let b = () => {
           }), (0, Chunk951288.jsx)(Chunk481060.PhF, {
             placeholder: "Premium Type",
             select: e => {
-              b(e)
+              g(e)
             },
             isSelected: e => n === e,
             serialize: e => "".concat(e),
@@ -285,7 +285,7 @@ let b = () => {
       {
         discount: t = {}
       } = module;
-    return g(f({
+    return b(f({
       id: "",
       discount_id: "",
       user_id: ""

@@ -1,7 +1,7 @@
 /** Chunk was on 32249 **/
 /** chunk id: 208109, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  e: () => o
+  e: () => l
 });
 let r = (0, require("./818083.js").B)({
     id: "2025-01_video_quests_end_card_cta_v2",
@@ -24,7 +24,7 @@ let r = (0, require("./818083.js").B)({
       }
     }]
   }),
-  o = e => {
+  l = e => {
     let {
       location: t
     } = e;

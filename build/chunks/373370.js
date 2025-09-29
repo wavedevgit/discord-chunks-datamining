@@ -342,21 +342,21 @@ function D(e) {
   }))
 }
 
-function x(e) {
+function L(e) {
   return (0, s.$J)(e) || (0, s.pO)(e) ? 0 : (0, s.Dr)({
     quest: e
   }) ? 1 : (0, s.q8)(e) ? 2 : 3 * !!(0, s.Vl)(e)
 }
 
-function L(e) {
-  return r.useMemo(() => x(e), [e])
+function x(e) {
+  return r.useMemo(() => L(e), [e])
 }
 
 function j(e) {
   let {
     quest: t
   } = e;
-  switch (L(t)) {
+  switch (x(t)) {
     case 0:
       if (t.config.features.includes(f.S7.CLOUD_GAMING_ACTIVITY)) return p.intl.string(p.t["+qoymJ"]);
       if (t.config.features.includes(f.S7.START_QUEST_CTA)) return p.intl.string(p.t["Ie9++v"]);

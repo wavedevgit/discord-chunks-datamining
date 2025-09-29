@@ -398,7 +398,7 @@ class K extends Chunk647438.PureComponent {
       let {
         searchContext: t
       } = this.props;
-      x.Z.updateSearchEditorState(t, e)
+      L.Z.updateSearchEditorState(t, e)
     }), V(this, "getPopoutRef", () => {
       let {
         current: e
@@ -420,7 +420,7 @@ class K extends Chunk647438.PureComponent {
         if (e.preventDefault(), O.xb(i)) this.blurEditor();
         else {
           let e = O.FZ(i);
-          x.Z.updateSearchEditorState(a, e), this.setState({
+          L.Z.updateSearchEditorState(a, e), this.setState({
             focused: true
           })
         }
@@ -461,7 +461,7 @@ function z(e) {
     popoutAlignment: l
   } = e, c = (0, S.Tm)(t), d = (0, u.e7)([p.Z], () => p.Z.keyboardModeEnabled), f = (0, u.e7)([k.Z], () => null != c ? k.Z.getEditorState(c) : null), _ = (0, u.e7)([k.Z], () => k.Z.getIsSearchTokensInitialized()), h = i.useRef(_);
   i.useEffect(() => {
-    _ && h.current !== _ && (h.current = _, L.Z.ensureSearchInputDecorators(t))
+    _ && h.current !== _ && (h.current = _, x.Z.ensureSearchInputDecorators(t))
   }, [_, t]);
   let b = i.useMemo(() => null != f ? f : O.nR(v.Jl(w.ZP)), [f]),
     {
@@ -492,7 +492,7 @@ function z(e) {
         searchContext: t,
         query: r,
         queryString: n
-      }), t.type === B.aib.DMS ? L.Z.fetchCrossDMMessages({
+      }), t.type === B.aib.DMS ? x.Z.fetchCrossDMMessages({
         searchContext: t,
         selectedPageIndex: 0,
         queryString: n
@@ -505,7 +505,7 @@ function z(e) {
         searchMode: B.QIO.NEWEST
       })
     }, [t]),
-    x = (0, u.e7)([E.Z, g.Z], () => {
+    L = (0, u.e7)([E.Z, g.Z], () => {
       let e = (0, S.b7)(t) ? t.guildId : null;
       if (null != e) {
         let t = E.Z.getGuild(e);
@@ -529,8 +529,8 @@ function z(e) {
       location: "Search"
     }),
     V = i.useMemo(() => t.type === B.aib.DMS ? Z.intl.string(Z.t.m7OrlZ) : G || F ? Z.intl.formatToPlainString(Z.t.LDZtFB, {
-      name: x
-    }) : Z.intl.string(Z.t["5h0QOD"]), [t.type, G, x, F]),
+      name: L
+    }) : Z.intl.string(Z.t["5h0QOD"]), [t.type, G, L, F]),
     H = (0, m.bp)(),
     Y = i.useRef(H);
   return i.useEffect(() => {

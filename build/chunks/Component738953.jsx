@@ -171,7 +171,7 @@ function Z(e) {
           }), (0, r.jsxs)(A.Z, {
             user: n,
             displayProfile: en,
-            themeType: L.l.POPOUT,
+            themeType: x.l.POPOUT,
             children: [null != ei.interactionType && (0, r.jsx)(a.animated.div, {
               style: ea,
               className: M.backdrop
@@ -185,7 +185,7 @@ function Z(e) {
                 appContext: q
               }), (0, r.jsx)(N.Z, {
                 shouldShowTooltip: null === ei.interactionType,
-                themeType: L.l.POPOUT,
+                themeType: x.l.POPOUT,
                 user: n
               }), !es && (0, r.jsx)(P.Z, {
                 type: "banner",
@@ -200,7 +200,7 @@ function Z(e) {
                 user: n,
                 displayProfile: en,
                 guildId: G,
-                themeType: L.l.POPOUT
+                themeType: x.l.POPOUT
               }), (0, r.jsx)(S.Z, {
                 userId: n.id,
                 className: M.toast,
@@ -210,14 +210,14 @@ function Z(e) {
                 displayProfile: en,
                 guildId: G,
                 channelId: Z,
-                themeType: L.l.POPOUT,
+                themeType: x.l.POPOUT,
                 onOpenProfile: K ? true : eu
               }), (0, r.jsx)(w.Z, {
                 ref: eo,
                 user: n,
                 guildId: G,
                 channelId: Z,
-                themeType: L.l.POPOUT,
+                themeType: x.l.POPOUT,
                 onCloseProfile: Y,
                 prompt: el ? ec : null
               })]
@@ -230,7 +230,7 @@ function Z(e) {
               onOpenProfile: K ? true : eu,
               channelId: Z,
               onClose: Y
-            }), (0, r.jsx)(x.Z, {
+            }), (0, r.jsx)(L.Z, {
               user: n,
               guildId: G,
               channelId: Z,

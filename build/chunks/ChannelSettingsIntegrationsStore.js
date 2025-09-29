@@ -46,16 +46,16 @@ let O = [],
 
 function T() {
   if (r = null != (i = Chunk388610.Z.getChannel()) ? Chunk430824.Z.getGuild(i.guild_id) : null, O = null != i && null != r && Chunk496675.Z.can(Chunk981631.Plq.MANAGE_WEBHOOKS, i) ? Chunk855674.Z.getWebhooksForChannel(r.id, i.id) : [], null != E) {
-    let e = P(E.id);
+    let e = j(E.id);
     null != module && (E = module)
   }
   v = Chunk981631.QZA.OPEN, I = {}, S = false
 }
 let N = s().debounce(() => {
-  S && ((null == E || s().isEqual(E, P(E.id))) && (S = false), S || x.emitChange())
+  S && ((null == E || s().isEqual(E, j(E.id))) && (S = false), S || x.emitChange())
 }, 500);
 
-function P(e) {
+function j(e) {
   return O.find(t => {
     let {
       id: n
@@ -63,7 +63,7 @@ function P(e) {
     return n === e
   })
 }
-class j extends(a = Chunk442837.ZP.Store) {
+class P extends(a = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk388610.Z, Chunk430824.Z, Chunk855674.Z, Chunk496675.Z)
   }
@@ -80,7 +80,7 @@ class j extends(a = Chunk442837.ZP.Store) {
     return v
   }
   getWebhook(e) {
-    return P(e)
+    return j(e)
   }
   showNotice() {
     return this.hasChanges()
@@ -98,8 +98,8 @@ class j extends(a = Chunk442837.ZP.Store) {
     }
   }
 }
-b(j, "displayName", "ChannelSettingsIntegrationsStore");
-let x = new j(Chunk570140.Z, __OVERLAY__ ? {} : {
+b(P, "displayName", "ChannelSettingsIntegrationsStore");
+let x = new P(Chunk570140.Z, __OVERLAY__ ? {} : {
     INTEGRATION_SETTINGS_INIT: T,
     INTEGRATION_SETTINGS_SAVE_SUCCESS: T,
     CHANNEL_SETTINGS_SET_SECTION: function(e) {
@@ -123,7 +123,7 @@ let x = new j(Chunk570140.Z, __OVERLAY__ ? {} : {
     INTEGRATION_SETTINGS_START_EDITING_WEBHOOK: function(e) {
       let {
         webhookId: t
-      } = e, n = P(t);
+      } = e, n = j(t);
       if (null == n) returnfalse;
       E = n, I = {}, S = false
     },

@@ -36,8 +36,8 @@ let C = (e, t) => {
     } = e, {
       analyticsLocations: C
     } = (0, d.ZP)(u.Z.PREMIUM_MARKETING_HERO_CTA), N = (0, _.Nx)(), R = (0, y.$)(), P = (0, h.Z)(), w = null != P, D = (0, s.e7)([c.Z], () => c.Z.useReducedMotion), {
-      visibilityPercentageRef: x,
-      visibilityPercentage: L
+      visibilityPercentageRef: L,
+      visibilityPercentage: x
     } = (0, v.E)(!D), j = (0, s.e7)([f.Z], () => f.Z.affinities), M = !w && j.length > 0, {
       isEligible: k,
       cohort: U
@@ -49,11 +49,11 @@ let C = (e, t) => {
         className: o()(A.container, n),
         "data-testid": "marketing-page-hero-header",
         children: (0, r.jsx)("div", {
-          ref: x,
+          ref: L,
           children: (0, r.jsxs)("div", {
             className: A.contentContainer,
             children: [(0, r.jsx)(T.Z, {
-              containerVisibilityPercentage: L
+              containerVisibilityPercentage: x
             }), N && (0, r.jsx)("div", {
               className: A.offerPillContainer,
               children: (0, r.jsx)(I.Z, {

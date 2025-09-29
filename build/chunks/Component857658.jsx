@@ -2,7 +2,7 @@
 /** chunk id: 857658, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  U: () => x
+  U: () => L
 }), require("./388685.js"), require("./781311.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -142,7 +142,7 @@ function D(e) {
   return t.set("hsl.h", (t.get("hsl.h") + 15) % 360).hex()
 }
 
-function x(e) {
+function L(e) {
   let {
     value: t,
     onChange: n,
@@ -161,14 +161,14 @@ function x(e) {
       let t = e.trim();
       return t.startsWith("#") ? t : t.length > 0 ? "#".concat(t) : t
     },
-    x = e => {
+    L = e => {
       let t = R(e);
       if (N(t), (0, u.FX)(t) && ((0, g.zW)(), n(t), o.length > 0)) {
         let e = [...o];
         e[O] = t, s(e)
       }
     },
-    L = i.useCallback(e => {
+    x = i.useCallback(e => {
       N(e.hex)
     }, []),
     j = e => {
@@ -182,7 +182,7 @@ function x(e) {
         let {
           sRGBHex: e
         } = await c.open();
-        (0, g.J4)(), x(e)
+        (0, g.J4)(), L(e)
       } catch (e) {}
     }, k = () => {
       if (o.length === C) return;
@@ -207,7 +207,7 @@ function x(e) {
       selectedIndex: O,
       onColorSelect: G
     }), (0, r.jsx)(A, {
-      onChange: L,
+      onChange: x,
       onChangeComplete: j,
       color: S
     }), (0, r.jsxs)("div", {
@@ -217,7 +217,7 @@ function x(e) {
       }), (0, r.jsx)("input", {
         className: y.hexInput,
         value: S.toUpperCase(),
-        onChange: e => x(e.target.value),
+        onChange: e => L(e.target.value),
         maxLength: 7,
         placeholder: h.Dp,
         type: "text"

@@ -147,7 +147,7 @@ let J = Chunk647438.memo(function(e) {
     preview: y,
     subscribeToGroupId: O,
     hideGuildTag: v
-  } = e, I = (0, L.ZP)(t, n), T = i.useMemo(() => (0, G.x)({
+  } = e, I = (0, x.ZP)(t, n), T = i.useMemo(() => (0, G.x)({
     message: t,
     channel: a,
     user: null == t ? true : t.author,
@@ -183,7 +183,7 @@ let J = Chunk647438.memo(function(e) {
       n = D.ZP.isPremium(t.author),
       i = D.ZP.isPremium(w),
       o = null == a ? true : a.isPrivate();
-    return (0, x.R)(null != u, "Message Username") && n && !s && !o && e.push((0, r.jsx)(ei, {
+    return (0, L.R)(null != u, "Message Username") && n && !s && !o && e.push((0, r.jsx)(ei, {
       currentUserIsPremium: i,
       author: t.author
     }, "nitro-author")), null != P && e.push(P), null != C && e.push((0, r.jsx)(m.Z, {
@@ -285,14 +285,14 @@ function ee(e) {
   } = (0, d.ZP)(u.Z.AVATAR), D = (0, l.e7)([S.ZP], () => {
     var e;
     return null != (e = a.displayCompactAvatars) ? e : S.ZP.displayCompactAvatars
-  }), x = (0, B.Z)(p), L = m ? q : X, {
+  }), L = (0, B.Z)(p), x = m ? q : X, {
     avatarSrc: j,
     avatarDecorationSrc: M,
     eventHandlers: k
   } = (0, v.Z)({
     userId: p.author.id,
     guildId: o,
-    size: L,
+    size: x,
     animateOnHover: null != g ? !C : !E,
     showPending: true
   }), U = p.isInteractionPlaceholder(), G = i.useMemo(() => {
@@ -300,15 +300,15 @@ function ee(e) {
     return U && null == p.author.avatar && null == h.guildMemberAvatar && (null == (e = p.application) ? true : e.icon) != null ? null != (t = R.ZP.getApplicationIconURL({
       id: p.application.id,
       icon: p.application.icon,
-      size: L,
+      size: x,
       fallbackAvatar: false
     })) ? t : j : null != p.webhookId && null == h.guildMemberAvatar ? R.ZP.getUserAvatarURL({
       avatar: p.author.avatar,
       id: p.author.id,
       discriminator: p.author.discriminator,
       bot: true
-    }, false, L) : j
-  }, [U, p.author.avatar, p.author.id, p.author.discriminator, null == (t = p.application) ? true : t.icon, null == (n = p.application) ? true : n.id, p.webhookId, j, L, h.guildMemberAvatar]);
+    }, false, x) : j
+  }, [U, p.author.avatar, p.author.id, p.author.discriminator, null == (t = p.application) ? true : t.icon, null == (n = p.application) ? true : n.id, p.webhookId, j, x, h.guildMemberAvatar]);
   if (i.useEffect(() => {
       if (null != g) return P.S.subscribeKeyed(Z.LPv.ANIMATE_CHAT_AVATAR, "".concat(g, ":").concat(p.author.id), N), () => void P.S.unsubscribeKeyed(Z.LPv.ANIMATE_CHAT_AVATAR, "".concat(g, ":").concat(p.author.id), N)
     }, [p.author.id, g]), !m || D) return null != c && null != I ? (0, r.jsx)(d.Gt, {
@@ -320,7 +320,7 @@ function ee(e) {
       channelId: p.channel_id,
       messageId: p.id,
       shouldShow: I,
-      shouldPreload: x,
+      shouldPreload: L,
       renderPopout: c,
       position: s.tq ? "window_center" : "right",
       avatarUrl: G,
@@ -467,7 +467,7 @@ let ei = Chunk647438.memo(function(e) {
       user: null == t ? true : t.author,
       compact: a,
       isRepliedMessage: false
-    }), [t, E, a]), x = (0, l.e7)([A.Z], () => er(a, P, d, A.Z.getGuild(e.guildId)), [a, P, d, e.guildId]), L = i.useMemo(() => {
+    }), [t, E, a]), L = (0, l.e7)([A.Z], () => er(a, P, d, A.Z.getGuild(e.guildId)), [a, P, d, e.guildId]), x = i.useMemo(() => {
       let e = [];
       return (0, w.yE)(t.flags, Z.iLy.SUPPRESS_NOTIFICATIONS) && e.push((0, r.jsx)(y.Z, {}, "suppress-notifications")), t.hasPotions() && e.push((0, r.jsx)(g.Z, {
         message: t
@@ -502,8 +502,8 @@ let ei = Chunk647438.memo(function(e) {
       }),
       usernameSpanId: (0, M.XX)(t, f),
       usernameClassName: o()(V.headerText, {
-        [V.hasRoleIcon]: 0 !== x,
-        [V.hasBadges]: null != D || L.length > 0
+        [V.hasRoleIcon]: 0 !== L,
+        [V.hasBadges]: null != D || x.length > 0
       }),
       compact: a,
       showTimestamp: H,
@@ -511,6 +511,6 @@ let ei = Chunk647438.memo(function(e) {
       ariaLabelledBy: U,
       ariaDescribedBy: B,
       className: m,
-      badges: L
+      badges: x
     })
   })

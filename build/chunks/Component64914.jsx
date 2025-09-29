@@ -104,8 +104,8 @@ function D() {
     })
   }, []), {
     warpEnabled: D,
-    warpConnecting: x,
-    warpLog: L
+    warpConnecting: L,
+    warpLog: x
   } = (0, Chunk442837.cj)([Chunk956097.Z], () => ({
     warpEnabled: Chunk956097.Z.enabled,
     warpConnecting: Chunk956097.Z.connecting,
@@ -173,9 +173,9 @@ function D() {
         note: "Enable WARP Proxy Connection",
         onChange: j,
         children: "Enable WARP"
-      }), x ? (0, Chunk951288.jsx)(Chunk481060.$jN, {}) : null, (0, Chunk951288.jsx)(Chunk481060.Text, {
+      }), L ? (0, Chunk951288.jsx)(Chunk481060.$jN, {}) : null, (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "code",
-        children: L.map((e, t) => (0, r.jsx)("div", {
+        children: x.map((e, t) => (0, r.jsx)("div", {
           children: JSON.stringify(e)
         }, t))
       })]

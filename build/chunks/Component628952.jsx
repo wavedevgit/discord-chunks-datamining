@@ -85,7 +85,7 @@ let I = e => {
       default:
         return null
     }
-  }, D = null != S && S.id !== (null == C ? true : C.id) && P.type !== s.Z.NAMEPLATE, x = () => {
+  }, D = null != S && S.id !== (null == C ? true : C.id) && P.type !== s.Z.NAMEPLATE, L = () => {
     null != t && null != b && b(t)
   };
   return (0, r.jsxs)("div", {
@@ -121,7 +121,7 @@ let I = e => {
       }, S.id)]
     }), (0, r.jsxs)(c.P3F, {
       tag: "div",
-      onClick: x,
+      onClick: L,
       className: o()(E.previewContainer, {
         [E.previewContainerSelected]: n && null == A,
         [E.previewContainerError]: n && null != A

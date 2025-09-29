@@ -69,8 +69,8 @@ function g(e) {
     hint: f,
     notifType: h.n0.OopWelcomeNudge
   }, e), {
-    trackView: v,
-    trackClick: b
+    trackView: b,
+    trackClick: v
   } = (0, u.R)(O, {
     notif_type: O
   });
@@ -88,16 +88,16 @@ function g(e) {
     }),
     confirmText: t ? p.intl.string(p.t.TxyTbm) : true,
     onConfirmClick: t ? () => {
-      b("unlock"), s.Z.setInputLocked(false, (0, d.getPID)())
+      v("unlock"), s.Z.setInputLocked(false, (0, d.getPID)())
     } : true,
     onNotificationShow: () => {
-      v(), t && (0, o.Q3)(r.z.OVERLAY_OOP_WELCOME_SWITCH_FROM_IP_NUX)
+      b(), t && (0, o.Q3)(r.z.OVERLAY_OOP_WELCOME_SWITCH_FROM_IP_NUX)
     },
     onNotificationClick: (e, t) => {
-      b("unlock"), a.default.isOverlayOOPEnabledForPid((0, d.getPID)()) ? s.Z.setInputLocked(false, (0, d.getPID)()) : c.default.isInstanceLocked() && s.Z.setInstanceLocked(false)
+      v("unlock"), a.default.isOverlayOOPEnabledForPid((0, d.getPID)()) ? s.Z.setInputLocked(false, (0, d.getPID)()) : c.default.isInstanceLocked() && s.Z.setInstanceLocked(false)
     },
     onDismissClick: () => {
-      b("dismiss")
+      v("dismiss")
     }
   }
 }

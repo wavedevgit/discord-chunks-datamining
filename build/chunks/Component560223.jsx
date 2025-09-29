@@ -104,11 +104,11 @@ let I = e => {
         fractionalState: w
       } = (0, l.Z)(),
       D = (0, u.W)(),
-      x = (0, f.Z)({
+      L = (0, f.Z)({
         location: "WhatsNewSection"
       }),
       {
-        isEligible: L
+        isEligible: x
       } = (0, d.Q1)(),
       j = c.L.useExperiment({
         location: "PremiumPerks"
@@ -120,9 +120,9 @@ let I = e => {
         isPremiumSubscriber: P,
         fractionalState: w,
         isInReverseTrial: D,
-        showVoiceFiltersCard: x,
+        showVoiceFiltersCard: L,
         showCustomThemesCard: j,
-        isSeptember2025MarketingMomentEligible: L
+        isSeptember2025MarketingMomentEligible: x
       }),
       k = M.some(e => null != e.pillText);
     return (0, r.jsxs)("div", {

@@ -125,10 +125,10 @@ function P(e, t) {
     P = N || h || y,
     w = _ && T && (!C || b || P),
     D = null == (r = u.Z.getChannel(e.getChannelId())) || null == (n = r.getGuildId) ? true : n.call(r),
-    x = null != D ? d.ZP.getSelfMember(D) : null,
-    L = (0, l.EY)(x),
-    j = (0, c.b)(x),
-    M = !E && A && !N && _ && !L && !j;
+    L = null != D ? d.ZP.getSelfMember(D) : null,
+    x = (0, l.EY)(L),
+    j = (0, c.b)(L),
+    M = !E && A && !N && _ && !x && !j;
   return {
     poll: s,
     canTapAnswers: w,
@@ -176,8 +176,8 @@ function w(e, t) {
     canTapAnswers: R,
     canRemoveVote: w,
     canShowVoteCounts: D,
-    canSubmitVote: x,
-    expirationLabel: L = T.intl.string(T.t["e+J3JS"]),
+    canSubmitVote: L,
+    expirationLabel: x = T.intl.string(T.t["e+J3JS"]),
     hasSelectedAnswer: j,
     hasVoted: M,
     isEditingVote: k,
@@ -233,7 +233,7 @@ function w(e, t) {
     }
   }), q = (0, r.EQ)({
     isExpired: U,
-    canSubmitVote: x,
+    canSubmitVote: L,
     hasVoted: M,
     isEditingVote: k,
     canRemoveVote: w,
@@ -268,7 +268,7 @@ function w(e, t) {
   })).otherwise(() => ({
     label: T.intl.string(T.t.JwkNU1),
     presentation: "button",
-    enabled: x,
+    enabled: L,
     type: "submit"
   })), X = (0, m.isIOS)() ? T.intl.string(T.t.PVATMz) : T.intl.string(T.t.cHfFqq), Q = (0, r.EQ)({
     isExpired: U,
@@ -290,7 +290,7 @@ function w(e, t) {
     type: "cancel"
   })).otherwise(() => ({
     label: W,
-    secondaryLabel: L,
+    secondaryLabel: x,
     accessibilityHint: X,
     presentation: "text",
     enabled: true,

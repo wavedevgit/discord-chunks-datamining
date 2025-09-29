@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 941348, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 3408 **/
+/** chunk id: 941348, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => p
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -13,73 +12,73 @@ var Chunk951288 = require("./951288.js"),
   Chunk495722 = require("./495722.jsx"),
   Chunk321025 = require("./321025.jsx"),
   Chunk511760 = require("./511760.js");
-let f = function(e) {
+let p = function(e) {
   var t, n;
   let {
-    expandedContentRef: f,
-    expansionSpring: _,
-    isExpanded: p,
-    isExpansionAnimationComplete: h,
-    onCtxMenuOpened: m,
-    onCtxMenuClosed: g,
-    onCtxMenuSelection: E,
+    expandedContentRef: p,
+    expansionSpring: m,
+    isExpanded: g,
+    isExpansionAnimationComplete: f,
+    onCtxMenuOpened: h,
+    onCtxMenuClosed: x,
+    onCtxMenuSelection: _,
     quest: b,
-    useReducedMotion: y,
-    collapsedHeight: O,
-    onGameSheetOpened: v,
-    onGameSheetClosed: I
-  } = e, T = (null == (t = b.userStatus) ? true : t.completedAt) != null, S = i.useRef(null), A = i.useRef(null), C = (null == (n = b.userStatus) ? true : n.enrolledAt) != null, N = (0, a.Rf)(b);
-  return (0, r.jsxs)(s.p, {
-    expandedContentRef: f,
-    collapsedContentRef: S,
-    expansionSpring: _,
+    useReducedMotion: j,
+    collapsedHeight: v,
+    onGameSheetOpened: C,
+    onGameSheetClosed: y
+  } = e, O = (null == (t = b.userStatus) ? true : t.completedAt) != null, E = s.useRef(null), S = s.useRef(null), T = (null == (n = b.userStatus) ? true : n.enrolledAt) != null, w = (0, o.Rf)(b);
+  return (0, r.jsxs)(i.p, {
+    expandedContentRef: p,
+    collapsedContentRef: E,
+    expansionSpring: m,
     children: [(0, r.jsx)(l.Z, {
-      ref: S,
-      className: d.content,
-      expansionSpring: _,
-      isExpanded: p,
-      isExpansionAnimationComplete: h,
+      ref: E,
+      className: u.content,
+      expansionSpring: m,
+      isExpanded: g,
+      isExpansionAnimationComplete: f,
       quest: b,
-      useReducedMotion: y,
-      taskDetails: N,
-      onCtxMenuOpen: m,
-      onCtxMenuClose: g,
-      onCtxMenuSelect: E,
-      overlayRef: A
-    }, T ? "collapsed-with-rewards" : "collapsed-without-rewards"), (0, r.jsx)(c.Z, {
-      expansionSpring: _,
-      className: d.content,
-      collapsedHeight: O,
-      onCtxMenuOpen: m,
-      onCtxMenuClose: g,
-      onCtxMenuSelect: E,
-      onGameSheetOpened: v,
-      onGameSheetClosed: I,
-      overlayRef: A,
-      isExpanded: p,
-      isExpansionAnimationComplete: h,
+      useReducedMotion: j,
+      taskDetails: w,
+      onCtxMenuOpen: h,
+      onCtxMenuClose: x,
+      onCtxMenuSelect: _,
+      overlayRef: S
+    }, O ? "collapsed-with-rewards" : "collapsed-without-rewards"), (0, r.jsx)(c.Z, {
+      expansionSpring: m,
+      className: u.content,
+      collapsedHeight: v,
+      onCtxMenuOpen: h,
+      onCtxMenuClose: x,
+      onCtxMenuSelect: _,
+      onGameSheetOpened: C,
+      onGameSheetClosed: y,
+      overlayRef: S,
+      isExpanded: g,
+      isExpansionAnimationComplete: f,
       quest: b,
-      useReducedMotion: y,
-      ref: f,
-      taskDetails: N,
+      useReducedMotion: j,
+      ref: p,
+      taskDetails: w,
       children: (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(u.Z, {
-          expansionSpring: _,
-          isExpanded: p
-        }), !C && (0, r.jsx)(o.Z, {
+        children: [(0, r.jsx)(d.Z, {
+          expansionSpring: m,
+          isExpanded: g
+        }), !T && (0, r.jsx)(a.Z, {
           quest: b,
-          expansionSpring: _,
-          useReducedMotion: y,
-          isExpanded: p,
-          isExpansionAnimationComplete: h,
-          onCtxMenuOpen: m,
-          onCtxMenuClose: g,
-          onCtxMenuSelect: E
+          expansionSpring: m,
+          useReducedMotion: j,
+          isExpanded: g,
+          isExpansionAnimationComplete: f,
+          onCtxMenuOpen: h,
+          onCtxMenuClose: x,
+          onCtxMenuSelect: _
         })]
       })
     }), (0, r.jsx)("div", {
-      ref: A,
-      className: d.overlay
+      ref: S,
+      className: u.overlay
     })]
   })
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 66663 **/
+/** Chunk was on 89342 **/
 /** chunk id: 18868, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   L: () => h
@@ -51,9 +51,9 @@ let m = () => {
       onDrop: n
     } = e, [i, h] = r.useState(false), x = r.useRef(null), f = r.useCallback(e => {
       p(e), h(true), (0, s.Mr3)(c.A)
-    }, []), g = r.useCallback(e => {
+    }, []), b = r.useCallback(e => {
       p(e), h(false)
-    }, []), b = r.useCallback(async e => {
+    }, []), g = r.useCallback(async e => {
       p(e), h(false);
       let t = e.dataTransfer;
       if (null == t) return void m();
@@ -67,8 +67,8 @@ let m = () => {
       ref: x,
       className: l()(t, u.uploadArea),
       onDragEnter: f,
-      onDragLeave: g,
-      onDrop: b,
+      onDragLeave: b,
+      onDrop: g,
       children: (0, a.jsx)("div", {
         className: l()(u.uploadModal, {
           [u.droppable]: i

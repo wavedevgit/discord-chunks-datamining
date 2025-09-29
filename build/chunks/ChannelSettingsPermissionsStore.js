@@ -58,9 +58,9 @@ let O = new Set,
   C = null,
   T = null,
   N = null,
-  P = Chunk433517.K.get(Chunk71080.kf) || false;
+  j = Chunk433517.K.get(Chunk71080.kf) || false;
 
-function j(e) {
+function P(e) {
   let t = e.getGuildId(),
     n = b({}, e.permissionOverwrites);
   return null != t && null == n[t] && (n[t] = d.we(t)), n
@@ -69,7 +69,7 @@ function j(e) {
 function x() {
   if (S = Chunk388610.Z.getChannel(), C = Chunk388610.Z.getCategory(), null == S) returnfalse;
   let e = S.getGuildId();
-  I = v = j(S), null == v[T] && (T = module), i = null != C, r = Chunk700785.o4(S, C), N = null, y = false, E = Chunk981631.QZA.CLOSED, O.clear()
+  I = v = P(S), null == v[T] && (T = module), i = null != C, r = Chunk700785.o4(S, C), N = null, y = false, E = Chunk981631.QZA.CLOSED, O.clear()
 }
 class A extends(l = Chunk442837.ZP.Store) {
   initialize() {
@@ -109,7 +109,7 @@ class A extends(l = Chunk442837.ZP.Store) {
     return C
   }
   get advancedMode() {
-    return P
+    return j
   }
 }
 m(A, "displayName", "ChannelSettingsPermissionsStore");
@@ -163,7 +163,7 @@ let Z = new A(Chunk570140.Z, {
       C = p.Z.getCategory();
       let t = S.getGuildId();
       if (null == t) returnfalse;
-      I = j(S);
+      I = P(S);
       let n = {};
       return O.forEach(e => {
         null != v && (n[e] = v[e])
@@ -184,6 +184,6 @@ let Z = new A(Chunk570140.Z, {
     let {
       advancedMode: t
     } = e;
-    P = t, c.K.set(g.kf, t)
+    j = t, c.K.set(g.kf, t)
   }
 })

@@ -80,7 +80,7 @@ function w(e) {
     themeType: w
   } = (0, m.z)(), {
     analyticsLocations: D
-  } = (0, c.ZP)(l.Z.USER_PROFILE_VOICE_ACTIVITY_CARD), x = (0, p.Z)({
+  } = (0, c.ZP)(l.Z.USER_PROFILE_VOICE_ACTIVITY_CARD), L = (0, p.Z)({
     display: "voice",
     activity: {
       type: "VOICE"
@@ -88,9 +88,9 @@ function w(e) {
     voiceChannelId: i.id,
     user: t,
     analyticsLocations: D
-  }), L = (0, h.Z)({
+  }), x = (0, h.Z)({
     userId: t.id,
-    onAction: x
+    onAction: L
   }), j = (0, o.e7)([d.Z], () => d.Z.getGuild(i.guild_id)), M = (0, _.Z)(i), k = (0, u.ZP)(i), {
     channelStatusEnabled: U
   } = (0, f.D)({
@@ -108,16 +108,16 @@ function w(e) {
     className: A.actions,
     children: (0, r.jsx)(v.Z, {
       channel: i,
-      onAction: x,
+      onAction: L,
       onClose: R
     })
   }), Z = i.isDM() || i.isGroupDM() ? S.intl.string(S.t["9FaEzs"]) : i.isGuildStageVoice() ? S.intl.string(S.t.QygGCA) : S.intl.string(S.t.msxteH);
   return (0, r.jsx)(c.Gt, {
     value: D,
     children: (0, r.jsxs)(g.Z, {
-      ref: L,
+      ref: x,
       className: a()(A.card, C),
-      onAction: x,
+      onAction: L,
       onClose: R,
       "aria-label": "".concat(Z, ", ").concat(k),
       children: [(0, r.jsx)(E.Z, {
@@ -140,11 +140,11 @@ function w(e) {
             children: [(0, r.jsx)(b.Z, {
               channel: i,
               guild: j,
-              onAction: x,
+              onAction: L,
               onClose: R
             }), U && i.isGuildVoice() && (0, r.jsx)(O.Z, {
               voiceChannel: i,
-              onAction: x,
+              onAction: L,
               onClose: R
             }), w === T.l.MODAL_V2 && B()]
           }), w === T.l.MODAL && B()]

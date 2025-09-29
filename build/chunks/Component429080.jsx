@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 429080, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 1272 **/
+/** chunk id: 429080, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => b
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk545957 = require("./545957.js"),
@@ -18,108 +17,98 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk674455 = require("./674455.js"),
   Chunk6723 = require("./6723.js");
-
-function g(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function E(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      g(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function b(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-let O = function(e) {
+let b = function(e) {
   let {
     quest: t
-  } = e, [n, a] = i.useState(false), g = i.useRef(null), b = (0, s.e7)([u.default], () => u.default.getCurrentUser()), O = d.ZP.useName(b), v = (0, c.Z)(null == b ? true : b.id), I = i.useCallback(e => (0, r.jsx)(f.Z, y(E({
-    name: O,
-    quest: t,
-    memberListItemRef: g,
-    applicationStream: v
-  }, e), {
-    closePopout: () => {
-      a(false)
-    }
-  })), [t, v, O]);
+  } = e, [n, l] = i.useState(false), b = i.useRef(null), _ = (0, o.e7)([u.default], () => u.default.getCurrentUser()), O = d.ZP.useName(_), E = (0, c.Z)(null == _ ? true : _.id), y = i.useCallback(e => {
+    var n, i;
+    return (0, r.jsx)(p.Z, (n = function(e) {
+      for (var t = 1; t < arguments.length; t++) {
+        var n = null != arguments[t] ? arguments[t] : {},
+          r = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(n, e).enumerable
+        }))), r.forEach(function(t) {
+          var r;
+          r = n[t], t in e ? Object.defineProperty(e, t, {
+            value: r,
+            enumerable: true,
+            configurable: true,
+            writable: true
+          }) : e[t] = r
+        })
+      }
+      return e
+    }({
+      name: O,
+      quest: t,
+      memberListItemRef: b,
+      applicationStream: E
+    }, e), i = i = {
+      closePopout: () => {
+        l(false)
+      }
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+      var n = Object.keys(e);
+      if (Object.getOwnPropertySymbols) {
+        var r = Object.getOwnPropertySymbols(e);
+        n.push.apply(n, r)
+      }
+      return n
+    })(Object(i)).forEach(function(e) {
+      Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
+    }), n))
+  }, [t, E, O]);
   return (0, r.jsx)("div", {
-    className: h.previewBackground,
+    className: g.previewBackground,
     children: (0, r.jsxs)("div", {
-      className: h.previewCard,
-      children: [(0, r.jsx)(l.X6q, {
+      className: g.previewCard,
+      children: [(0, r.jsx)(s.X6q, {
         className: m.heading,
         variant: "heading-md/semibold",
-        children: p.intl.string(p.t.jY7Zxs)
+        children: h.intl.string(h.t.jY7Zxs)
       }), (0, r.jsx)("div", {
         className: m.previewDescription,
-        children: p.intl.string(p.t.q3hbnZ)
+        children: h.intl.string(h.t.q3hbnZ)
       }), (0, r.jsx)("div", {
         className: m.memberListContainer,
-        children: (0, r.jsx)(l.yRy, {
-          targetElementRef: g,
-          renderPopout: I,
+        children: (0, r.jsx)(s.yRy, {
+          targetElementRef: b,
+          renderPopout: y,
           position: "bottom",
           shouldShow: n,
-          onRequestClose: () => a(false),
+          onRequestClose: () => l(false),
           nudgeAlignIntoViewport: false,
           useRawTargetDimensions: true,
-          animation: l.yRy.Animation.NONE,
+          animation: s.yRy.Animation.NONE,
           spacing: false,
           fixed: true,
           scrollBehavior: "close",
           children: () => (0, r.jsx)("div", {
-            ref: g,
-            className: o()(m.minimalMemberItem, {
+            ref: b,
+            className: a()(m.minimalMemberItem, {
               [m.selected]: n
             }),
-            children: (0, r.jsx)(l.P3F, {
-              onClick: () => a(!n),
+            children: (0, r.jsx)(s.P3F, {
+              onClick: () => l(!n),
               tabIndex: 0,
               children: (0, r.jsxs)("div", {
                 className: m.memberItemContent,
-                children: [(0, r.jsx)(l.qEK, {
-                  size: l.EFr.SIZE_32,
-                  src: null == b ? true : b.getAvatarURL(true, 32),
-                  status: _.Skl.ONLINE,
-                  "aria-label": null == b ? true : b.username
+                children: [(0, r.jsx)(s.qEK, {
+                  size: s.EFr.SIZE_32,
+                  src: null == _ ? true : _.getAvatarURL(true, 32),
+                  status: f.Skl.ONLINE,
+                  "aria-label": null == _ ? true : _.username
                 }), (0, r.jsxs)("div", {
                   className: m.memberInfo,
-                  children: [(0, r.jsx)(l.Text, {
+                  children: [(0, r.jsx)(s.Text, {
                     variant: "text-md/semibold",
                     color: "header-primary",
                     children: O
-                  }), (0, r.jsx)(l.Text, {
+                  }), (0, r.jsx)(s.Text, {
                     variant: "text-sm/normal",
                     color: "text-muted",
-                    children: p.intl.string(p.t.b9w3bG)
+                    children: h.intl.string(h.t.b9w3bG)
                   })]
                 })]
               })

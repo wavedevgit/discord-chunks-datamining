@@ -41,8 +41,8 @@ function P(e, t, n) {
 }
 let w = "seenQSTutorial",
   D = 5,
-  x = 100,
-  L = [Chunk212819.h8.USER, Chunk212819.h8.GROUP_DM, Chunk212819.h8.TEXT_CHANNEL, Chunk212819.h8.GUILD, Chunk212819.h8.APPLICATION, Chunk212819.h8.LINK, Chunk212819.h8.IN_APP_NAVIGATION],
+  L = 100,
+  x = [Chunk212819.h8.USER, Chunk212819.h8.GROUP_DM, Chunk212819.h8.TEXT_CHANNEL, Chunk212819.h8.GUILD, Chunk212819.h8.APPLICATION, Chunk212819.h8.LINK, Chunk212819.h8.IN_APP_NAVIGATION],
   j = 0,
   M = false,
   k = false,
@@ -193,7 +193,7 @@ function X(e) {
     query: n,
     queryMode: i
   } = e, a = n.trim(), o = null != (t = T.Z.getGuildId()) ? t : true, s = new Set(["user:".concat(h.default.getId())]);
-  null != o && s.add("guild:".concat(o)), H = Date.now(), r = null != r ? r : new u.ZP($, L, null != i ? x : D, {
+  null != o && s.add("guild:".concat(o)), H = Date.now(), r = null != r ? r : new u.ZP($, x, null != i ? L : D, {
     frecencyBoosters: true,
     blacklist: s,
     allowSnowflake: true
@@ -234,7 +234,7 @@ function et(e) {
   } = e, o = i.trim();
   if (null == r) returnfalse;
   if (U !== a) {
-    r.setResultTypes(null != a ? [a] : L), r.setLimit(null != a ? x : D);
+    r.setResultTypes(null != a ? [a] : x), r.setLimit(null != a ? L : D);
     let e = null != (t = T.Z.getGuildId()) ? t : true;
     a === u.h8.USER && null != e ? r.setOptions({
       userFilters: {

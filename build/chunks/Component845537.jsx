@@ -6,10 +6,10 @@ require.d(exports, {
   Io: () => M,
   N1: () => B,
   NY: () => k,
-  Ox: () => x,
+  Ox: () => L,
   Vq: () => j,
   Wf: () => U,
-  cB: () => L,
+  cB: () => x,
   dy: () => w,
   wP: () => D
 });
@@ -112,7 +112,7 @@ function D(e) {
   })
 }
 
-function x(e) {
+function L(e) {
   let {
     text: t
   } = e;
@@ -121,7 +121,7 @@ function x(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   let {
     id: t,
     guildId: n,

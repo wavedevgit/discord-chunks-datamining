@@ -1,7 +1,7 @@
-/** Chunk was on 73268 **/
+/** Chunk was on 96861 **/
 /** chunk id: 804127, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  G$: () => d,
+  G$: () => u,
   In: () => c,
   uL: () => l
 }), require("./388685.js");
@@ -20,28 +20,28 @@ function l(e) {
     requiresPlatformSelection: o,
     rewardCode: l,
     selectedPlatformType: c,
-    preview: d
-  } = e, [u, p] = r.useState(false), [m, f] = r.useState(false), C = r.useCallback(async (e, t, n) => {
+    preview: u
+  } = e, [d, m] = r.useState(false), [p, C] = r.useState(false), f = r.useCallback(async (e, t, n) => {
     try {
-      f(true), await (0, s.QB)(e, t, n), p(false), f(false)
+      C(true), await (0, s.QB)(e, t, n), m(false), C(false)
     } catch (e) {
-      p(true), f(false)
+      m(true), C(false)
     }
   }, []), h = r.useCallback(e => {
     try {
       (0, s.pf)(e)
     } catch (e) {
-      p(true)
+      m(true)
     }
   }, []);
   return r.useEffect(() => {
     var e, r;
-    true === d || null != l || u || t || m || n || o || (p(false), (null == (e = i.userStatus) ? true : e.claimedAt) == null && null != c ? C(i.id, c, a) : (null == (r = i.userStatus) ? true : r.claimedAt) != null && h(i.id))
-  }, [C, h, u, t, m, n, a, i, o, l, c, d]), {
-    claimCode: C,
+    true === u || null != l || d || t || p || n || o || (m(false), (null == (e = i.userStatus) ? true : e.claimedAt) == null && null != c ? f(i.id, c, a) : (null == (r = i.userStatus) ? true : r.claimedAt) != null && h(i.id))
+  }, [f, h, d, t, p, n, a, i, o, l, c, u]), {
+    claimCode: f,
     fetchCode: h,
-    hasError: u,
-    setHasError: p
+    hasError: d,
+    setHasError: m
   }
 }
 
@@ -52,9 +52,9 @@ function c(e) {
     questContent: s,
     questContentPosition: l,
     sourceQuestContent: c
-  } = e, d = (0, o.O5)();
+  } = e, u = (0, o.O5)();
   return r.useCallback(() => {
-    null != n && (d({
+    null != n && (u({
       questId: t.id,
       questContent: s,
       questContentCTA: o.jZ.REDEEM_REWARD,
@@ -63,7 +63,7 @@ function c(e) {
     }), (0, i.q)({
       href: n,
       onConfirm: () => {
-        d({
+        u({
           questId: t.id,
           questContent: s,
           questContentCTA: o.jZ.VISIT_REDEMPTION_LINK,
@@ -72,10 +72,10 @@ function c(e) {
         }), (0, a.Z)(n)
       }
     }))
-  }, [t.id, s, l, c, d, n])
+  }, [t.id, s, l, c, u, n])
 }
 
-function d(e) {
+function u(e) {
   var t;
   let {
     claimCode: n,
@@ -83,28 +83,28 @@ function d(e) {
     hasError: i,
     onDismiss: s,
     quest: l,
-    questContent: d,
-    questContentCTA: u = o.jZ.GET_REWARD_CODE,
-    questContentPosition: p,
-    requiresPlatformSelection: m,
-    selectedPlatformType: f,
-    redemptionLink: C,
+    questContent: u,
+    questContentCTA: d = o.jZ.GET_REWARD_CODE,
+    questContentPosition: m,
+    requiresPlatformSelection: p,
+    selectedPlatformType: C,
+    redemptionLink: f,
     sourceQuestContent: h
-  } = e, _ = (0, o.O5)(), v = c(e);
+  } = e, y = (0, o.O5)(), j = c(e);
   return r.useCallback(() => {
     var e;
-    m && null != f ? (n(l.id, f, d), _({
+    p && null != C ? (n(l.id, C, u), y({
       questId: l.id,
-      questContent: d,
-      questContentCTA: u,
-      questContentPosition: p,
+      questContent: u,
+      questContentCTA: d,
+      questContentPosition: m,
       sourceQuestContent: h
-    })) : i ? (null == (e = l.userStatus) ? true : e.claimedAt) != null ? a(l.id) : null != f && (n(l.id, f, d), _({
+    })) : i ? (null == (e = l.userStatus) ? true : e.claimedAt) != null ? a(l.id) : null != C && (n(l.id, C, u), y({
       questId: l.id,
-      questContent: d,
-      questContentCTA: u,
-      questContentPosition: p,
+      questContent: u,
+      questContentCTA: d,
+      questContentPosition: m,
       sourceQuestContent: h
-    })) : (null != C && v(), s())
-  }, [n, a, i, s, l.id, null == (t = l.userStatus) ? true : t.claimedAt, d, u, p, m, f, _, C, h, v])
+    })) : (null != f && j(), s())
+  }, [n, a, i, s, l.id, null == (t = l.userStatus) ? true : t.claimedAt, u, d, m, p, C, y, f, h, j])
 }

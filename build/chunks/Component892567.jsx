@@ -42,12 +42,12 @@ let I = [Chunk342905.C.CHERRY_BOMB, Chunk342905.C.CHICLE],
       inProfile: T
     }), {
       useReducedMotion: D,
-      saturation: x
+      saturation: L
     } = (0, d.cj)([p.Z], () => ({
       useReducedMotion: p.Z.useReducedMotion,
       saturation: p.Z.desaturateUserColors ? p.Z.saturation : 1
     })), {
-      includeNonProfile: L
+      includeNonProfile: x
     } = m.fN.useExperiment({
       location: "useDisplayNameStylesFont"
     }), j = (0, g.Y)({
@@ -56,9 +56,9 @@ let I = [Chunk342905.C.CHERRY_BOMB, Chunk342905.C.CHICLE],
       foreground: o()(e),
       background: k === c.m.TOON ? o()("#333") : o()(M),
       ratio: U.minContrastRatio,
-      saturationFactor: x
-    }).hex()) : [], [a, j, k, U.minContrastRatio, x, M]);
-    if (!j || !T && !L || null == a) return n;
+      saturationFactor: L
+    }).hex()) : [], [a, j, k, U.minContrastRatio, L, M]);
+    if (!j || !T && !x || null == a) return n;
     let F = (0, b.K)(k, Z, {
         shouldWrap: N,
         fontOpacity: I.includes(a.fontId) ? R : 1

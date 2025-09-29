@@ -43,7 +43,7 @@ let N = e => {
     } = (0, v.q)({
       searchQuery: T,
       selectedUsers: h
-    }), [x, L] = i.useState(false), j = (0, p.O)(e => {
+    }), [L, x] = i.useState(false), j = (0, p.O)(e => {
       e && !w && R()
     }), M = N.reduce((e, t) => (e.has(t.id) || e.set(t.id, t), e), new Map), k = () => (0, r.jsx)(f.Z, {
       className: C.searchbar,
@@ -71,13 +71,13 @@ let N = e => {
         className: o()(C.footer, C.footerSeparator),
         children: (0, r.jsx)(u.zxk, {
           variant: "primary",
-          disabled: 0 === h.size && !s || x,
+          disabled: 0 === h.size && !s || L,
           text: i,
           size: "md",
           fullWidth: true,
           onClick: async () => {
             if (s) return void t();
-            L(true), await n([...h.values()]), L(false)
+            x(true), await n([...h.values()]), x(false)
           }
         })
       })

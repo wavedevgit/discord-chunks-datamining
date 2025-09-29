@@ -150,14 +150,14 @@ function D(e) {
     recentlyUsedEmojis: b,
     analyticsOverride: T,
     ref: A
-  } = e, D = (0, f.Dt)(), [x, L] = i.useState(false), j = (0, _.wC)(t.guild_id), M = (0, s.uniqBy)([...j, ...R], "name").filter(e => !E.ZP.isEmojiFilteredOrLocked({
+  } = e, D = (0, f.Dt)(), [L, x] = i.useState(false), j = (0, _.wC)(t.guild_id), M = (0, s.uniqBy)([...j, ...R], "name").filter(e => !E.ZP.isEmojiFilteredOrLocked({
     emoji: e,
     channel: t,
     intention: N
   })).slice(0, y.e5);
   null != b && b.length > 0 && M.splice(M.length - 1, 1, b[0]);
   let k = e => {
-      L(e), null == p || p(e)
+      x(e), null == p || p(e)
     },
     U = e => {
       let {
@@ -168,7 +168,7 @@ function D(e) {
       null != t && u(t), k(!n), n && g.kJ.setSearchPlaceholder(null)
     },
     G = e => {
-      null != e && e.key !== v.vn.TAB && (e.key !== v.vn.ENTER || e.shiftKey ? k(true) : k(!x))
+      null != e && e.key !== v.vn.TAB && (e.key !== v.vn.ENTER || e.shiftKey ? k(true) : k(!L))
     };
   return (0, r.jsxs)(c.VqE, {
     "aria-labelledby": D,
@@ -187,20 +187,20 @@ function D(e) {
         analyticsOverride: T,
         channel: t,
         className: o()(I.animatedPicker, {
-          [I.animatedPickerTall]: x
+          [I.animatedPickerTall]: L
         }),
         headerClassName: o()(I.emojiPickerHeader, {
-          [I.emojiPickerHeaderExpanded]: x
+          [I.emojiPickerHeaderExpanded]: L
         }),
         closePopout: a,
-        onSelectEmoji: x ? U : () => {},
-        shouldHidePickerActions: !x,
+        onSelectEmoji: L ? U : () => {},
+        shouldHidePickerActions: !L,
         wrapper: "div",
         pickerIntention: N,
         searchProps: C(S({}, m), {
           accessory: (0, r.jsx)(w, {
             otherAccessories: null == m ? true : m.accessory,
-            isEmojiPickerExpanded: x,
+            isEmojiPickerExpanded: L,
             onSetExpanded: k,
             onFocus: l
           }),

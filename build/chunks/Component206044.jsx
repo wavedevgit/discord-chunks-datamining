@@ -76,8 +76,8 @@ let w = (0, Chunk488290.animated)(Chunk481060.CJ0),
       location: C,
       size: R,
       expansionSpring: D,
-      isAnimating: x,
-      isExpanded: L,
+      isAnimating: L,
+      isExpanded: x,
       isInteracting: j,
       contentPosition: M,
       toggleExpanded: k,
@@ -92,7 +92,7 @@ let w = (0, Chunk488290.animated)(Chunk481060.CJ0),
       e.stopPropagation(), e.currentTarget.blur(), k(), Q({
         questId: a.id,
         questContent: C,
-        questContentCTA: L ? _.jZ.COLLAPSE : _.jZ.EXPAND,
+        questContentCTA: x ? _.jZ.COLLAPSE : _.jZ.EXPAND,
         questContentPosition: M,
         sourceQuestContent: U
       })
@@ -126,7 +126,7 @@ let w = (0, Chunk488290.animated)(Chunk481060.CJ0),
         imageClassName: A.questSplashImage
       }), (0, r.jsxs)("div", {
         className: A.header,
-        "aria-expanded": L,
+        "aria-expanded": x,
         children: [(0, r.jsxs)(s.animated.div, {
           className: o()(A.headerContent, {
             [A.headerContentEmbed]: z
@@ -144,9 +144,9 @@ let w = (0, Chunk488290.animated)(Chunk481060.CJ0),
                 range: [0, 1],
                 output: [1, 0]
               }),
-              visibility: x || !L ? "inherit" : "hidden"
+              visibility: L || !x ? "inherit" : "hidden"
             },
-            "aria-hidden": !x && L,
+            "aria-hidden": !L && x,
             children: (0, r.jsxs)(c.kL8, {
               "aria-label": S.intl.string(S.t.dcl9MT),
               onClick: et,
@@ -186,9 +186,9 @@ let w = (0, Chunk488290.animated)(Chunk481060.CJ0),
                 range: [0, 1],
                 output: [0, 1]
               }),
-              visibility: x || L ? "inherit" : "hidden"
+              visibility: L || x ? "inherit" : "hidden"
             },
-            "aria-hidden": !x && !L,
+            "aria-hidden": !L && !x,
             children: (0, r.jsxs)("div", {
               className: A.headerExpandedWrapper,
               children: [(0, r.jsxs)("div", {
@@ -244,9 +244,9 @@ let w = (0, Chunk488290.animated)(Chunk481060.CJ0),
             children: e => (0, r.jsx)(s.animated.div, {
               style: {
                 opacity: D,
-                visibility: x || L ? "inherit" : "hidden"
+                visibility: L || x ? "inherit" : "hidden"
               },
-              "aria-hidden": !x && !L,
+              "aria-hidden": !L && !x,
               children: (0, r.jsx)(c.P3F, P(N({}, e), {
                 className: A.iconWrapper,
                 "aria-label": S.intl.string(S.t.DEoVWV),
@@ -259,7 +259,7 @@ let w = (0, Chunk488290.animated)(Chunk481060.CJ0),
           }), !(0, v.W_)(C) && (0, r.jsx)(c.P3F, {
             onClick: et,
             className: A.iconWrapper,
-            "aria-label": L ? S.intl.string(S.t.iTcumZ) : S.intl.string(S.t.dcl9MT),
+            "aria-label": x ? S.intl.string(S.t.iTcumZ) : S.intl.string(S.t.dcl9MT),
             children: (0, r.jsx)(w, {
               style: {
                 rotate: D.to({

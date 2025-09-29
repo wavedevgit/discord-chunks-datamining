@@ -70,8 +70,8 @@ let A = "message_requests",
   P = {},
   w = {},
   D = false,
-  x = false,
-  L = null;
+  L = false,
+  x = null;
 
 function j(e) {
   if (null == e) return null;
@@ -88,13 +88,13 @@ function M(e) {
 
 function k(e) {
   let t = false;
-  x && (x = false, t = true);
+  L && (L = false, t = true);
   let n = j(m.Z.getChannelId());
   return null != n && n in P && (delete P[n], t = true), t && e ? e : !e
 }
 
 function U() {
-  x && Chunk585483.S.dispatch(Chunk981631.CkL.SEARCH_RESULTS_CLOSE), N && (N = k(N)), C = k(C)
+  L && Chunk585483.S.dispatch(Chunk981631.CkL.SEARCH_RESULTS_CLOSE), N && (N = k(N)), C = k(C)
 }
 
 function G() {
@@ -112,7 +112,7 @@ function Z(e) {
     baseChannelId: r,
     details: i
   } = e;
-  x = false;
+  L = false;
   let a = j(r);
   return null != a && (w[n] = {
     type: t,
@@ -136,7 +136,7 @@ function V(e) {
     channelId: r,
     details: i
   } = e;
-  x = false;
+  L = false;
   let a = j(n);
   if (null == a) returnfalse;
   let o = {
@@ -155,7 +155,7 @@ function H(e) {
     parentMessageId: n,
     location: r
   } = e;
-  x = false;
+  L = false;
   let i = j(t);
   null != i && (P[i] = {
     type: u.tI.CREATE_THREAD,
@@ -219,10 +219,10 @@ function q(e) {
 }
 
 function X() {
-  if (null == L) returnfalse;
-  let e = Chunk171900.Z.hasSearchState(L);
-  if (x === module) returnfalse;
-  x = module
+  if (null == x) returnfalse;
+  let e = Chunk171900.Z.hasSearchState(x);
+  if (L === module) returnfalse;
+  L = module
 }
 
 function Q(e) {
@@ -235,12 +235,12 @@ function Q(e) {
 }
 
 function J(e) {
-  if (e === L) returnfalse;
-  L = e, X()
+  if (e === x) returnfalse;
+  x = e, X()
 }
 
 function $() {
-  D = true, null != L && Q(L) === Chunk981631.aib.CHANNEL && (0, Chunk945577.ad)({
+  D = true, null != x && Q(x) === Chunk981631.aib.CHANNEL && (0, Chunk945577.ad)({
     location: "SearchStore_handleConnectionOpen"
   }) && J(Chunk981631.aib.DMS)
 }
@@ -273,7 +273,7 @@ class et extends(r = Chunk442837.ZP.PersistedStore) {
     }
   }
   getSection(e, t) {
-    if (x) return b.ULH.SEARCH;
+    if (L) return b.ULH.SEARCH;
     let n = j(e);
     return null != n && null != P[n] ? b.ULH.SIDEBAR_CHAT : t && R ? b.ULH.PROFILE : N ? b.ULH.SUMMARIES : C ? b.ULH.MEMBERS : b.ULH.NONE
   }
@@ -286,14 +286,14 @@ class et extends(r = Chunk442837.ZP.PersistedStore) {
   }
   getCurrentSidebarChannelId(e) {
     let t = j(e);
-    if (null == t || x) return null;
+    if (null == t || L) return null;
     let n = P[t];
     return null == n ? null : n.type === u.tI.VIEW_THREAD || n.type === u.tI.VIEW_CHANNEL || n.type === u.tI.VIEW_MOD_REPORT ? n.channelId : null
   }
   getCurrentSidebarMessageId(e) {
     var t;
     let n = j(e);
-    if (null == n || x) return null;
+    if (null == n || L) return null;
     let r = P[n];
     return null == r ? null : r.type === u.tI.VIEW_THREAD || r.type === u.tI.VIEW_CHANNEL || r.type === u.tI.VIEW_MOD_REPORT ? null == (t = r.details) ? true : t.initialMessageId : null
   }

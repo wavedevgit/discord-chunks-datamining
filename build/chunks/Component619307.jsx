@@ -175,7 +175,7 @@ function D(e) {
     renderOptionValue: N = w,
     popoutClassName: R,
     popoutPosition: D = "bottom",
-    popoutLayerContext: L,
+    popoutLayerContext: x,
     optionClassName: j,
     closeOnSelect: M,
     select: k,
@@ -238,7 +238,7 @@ function D(e) {
         position: i,
         updatePosition: a
       } = e;
-      return (0, r.jsx)(x, {
+      return (0, r.jsx)(L, {
         className: R,
         closeOnSelect: M,
         maxVisibleItems: l,
@@ -256,7 +256,7 @@ function D(e) {
       })
     },
     position: D,
-    layerContext: L,
+    layerContext: x,
     children: (e, t) => {
       var {
         onClick: i,
@@ -335,7 +335,7 @@ function D(e) {
   })
 }
 
-function x(e) {
+function L(e) {
   let {
     className: t,
     onSelect: n,
@@ -373,9 +373,9 @@ function x(e) {
   let D = i.useCallback((e, t) => {
       n(e), u && !t && a()
     }, [a, n, u]),
-    x = i.useMemo(() => f.map((e, t) => {
+    L = i.useMemo(() => f.map((e, t) => {
       var n;
-      return (0, r.jsx)(L, {
+      return (0, r.jsx)(x, {
         isSelected: d(e.value),
         value: e.value,
         label: h(e),
@@ -410,12 +410,12 @@ function x(e) {
             }
           }, i), {
             role: "listbox",
-            children: x
+            children: L
           })), (0, r.jsx)("div", {
             "aria-hidden": true,
             ref: N,
             className: E.measurement,
-            children: x.slice(0, p)
+            children: L.slice(0, p)
           })]
         })
       }
@@ -423,7 +423,7 @@ function x(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   let {
     className: t,
     value: n,

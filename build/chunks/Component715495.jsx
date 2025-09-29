@@ -1,4 +1,4 @@
-/** Chunk was on 66663 **/
+/** Chunk was on 89342 **/
 /** chunk id: 715495, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -180,11 +180,11 @@ function y(e) {
   return (0, r.useEffect)(() => () => {
     null != o.current && (d.current.removeEventListener("mousemove", o.current), o.current = null), null != c.current && (d.current.removeEventListener("mouseup", c.current), c.current = null)
   }, []), (0, a.jsx)(l.zJl, {
-    className: b.previewsContainer,
+    className: g.previewsContainer,
     orientation: "horizontal",
     children: (0, a.jsxs)("div", {
       ref: s,
-      className: b.previews,
+      className: g.previews,
       style: {
         width: "".concat(n, "px")
       },
@@ -204,7 +204,7 @@ function y(e) {
       }), (0, a.jsx)(O, {
         nameplate: t
       }), (0, a.jsx)("div", {
-        className: b.resizeHandle,
+        className: g.resizeHandle,
         onMouseDown: m
       })]
     })
@@ -218,10 +218,10 @@ function C(e) {
     removeAsset: r
   } = e;
   return (0, a.jsxs)("div", {
-    className: b.uploaded,
+    className: g.uploaded,
     children: [(0, a.jsx)(l.P3F, {
       onClick: () => r(t),
-      className: b.xicon,
+      className: g.xicon,
       children: (0, a.jsx)(l.Dio, {
         size: "custom",
         width: 16,
@@ -229,11 +229,11 @@ function C(e) {
         name: "x"
       })
     }), (0, a.jsx)("img", {
-      className: b.uploadedImg,
+      className: g.uploadedImg,
       src: t,
       alt: ""
     }), (0, a.jsx)("div", {
-      className: b.uploadedControls,
+      className: g.uploadedControls,
       children: (0, a.jsx)(l.zxk, {
         onClick: () => n(t),
         size: "sm",
@@ -250,7 +250,7 @@ function E(e) {
     onClick: n
   } = e;
   return (0, a.jsxs)("div", {
-    className: b.flex,
+    className: g.flex,
     children: [(0, a.jsx)(l.Text, {
       variant: "text-sm/normal",
       children: "coming soon"
@@ -270,7 +270,7 @@ function N(e) {
     onChange: n
   } = e;
   return (0, a.jsxs)("div", {
-    className: b.hexInput,
+    className: g.hexInput,
     children: [(0, a.jsx)(l.Text, {
       variant: "text-sm/normal",
       children: t
@@ -278,7 +278,7 @@ function N(e) {
       onChange: e => {
         n(e.target.value)
       },
-      className: b.inputs,
+      className: g.inputs,
       placeholder: "#000000"
     })]
   })
@@ -289,11 +289,11 @@ function S(e) {
     nameplate: t
   } = e, n = (0, i.e7)([d.default], () => d.default.getCurrentUser());
   return (0, a.jsx)("div", {
-    className: b.preview,
+    className: g.preview,
     children: (0, a.jsxs)("div", {
-      className: b.simArea,
+      className: g.simArea,
       children: [(0, a.jsx)(l.Text, {
-        className: b.label,
+        className: g.label,
         variant: "text-sm/semibold",
         children: "DEFAULT"
       }), (0, a.jsx)(s.Z, {
@@ -301,7 +301,7 @@ function S(e) {
         user: n,
         currentUser: n
       }), (0, a.jsx)(l.Text, {
-        className: b.label,
+        className: g.label,
         variant: "text-sm/semibold",
         children: "FOCUSED"
       }), (0, a.jsxs)("div", {
@@ -325,17 +325,17 @@ function T(e) {
     nameplate: t
   } = e;
   return (0, a.jsx)("div", {
-    className: b.preview,
+    className: g.preview,
     children: (0, a.jsxs)("div", {
-      className: b.simArea,
+      className: g.simArea,
       children: [(0, a.jsx)(l.Text, {
-        className: b.label,
+        className: g.label,
         variant: "text-sm/semibold",
         children: "DEFAULT"
       }), (0, a.jsx)(f.Z, {
         nameplate: t
       }), (0, a.jsx)(l.Text, {
-        className: b.label,
+        className: g.label,
         variant: "text-sm/semibold",
         children: "FOCUSED"
       }), (0, a.jsxs)("div", {
@@ -355,9 +355,9 @@ function O(e) {
     nameplate: t
   } = e;
   return (0, a.jsx)("div", {
-    className: b.preview,
+    className: g.preview,
     children: (0, a.jsx)("div", {
-      className: b.rtcSim,
+      className: g.rtcSim,
       children: (0, a.jsx)(h.Z, {
         nameplate: t
       })

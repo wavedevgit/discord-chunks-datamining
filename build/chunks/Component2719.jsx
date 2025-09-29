@@ -197,7 +197,7 @@ function $(e) {
   let {
     user: a,
     className: s
-  } = e, l = (0, O.gS)(), c = null != (n = null == l || null == (t = l.nick) ? true : t[0]) ? n : null, d = L.ZP.getGlobalName(a), _ = i.useRef(null), [p, h] = i.useState(false);
+  } = e, l = (0, O.gS)(), c = null != (n = null == l || null == (t = l.nick) ? true : t[0]) ? n : null, d = x.ZP.getGlobalName(a), _ = i.useRef(null), [p, h] = i.useState(false);
   i.useEffect(() => {
     h(null != _.current && _.current.scrollWidth > _.current.clientWidth)
   }, [d]);
@@ -432,7 +432,7 @@ function er(e) {
     id: t.id,
     label: H.intl.string(H.t["/AXYnJ"])
   }), a = M.Sb.useSetting(), o = i.useRef(null);
-  return a && x.wS ? (0, r.jsx)(f.yRy, {
+  return a && L.wS ? (0, r.jsx)(f.yRy, {
     targetElementRef: o,
     renderPopout: e => {
       let {

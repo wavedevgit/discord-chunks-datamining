@@ -55,7 +55,7 @@ function D(e) {
   return e
 }
 
-function x(e, t) {
+function L(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -66,8 +66,8 @@ function x(e, t) {
   return n
 }
 
-function L(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
+function x(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -148,8 +148,8 @@ function B(e) {
     hideTooltip: w = false
   } = e;
   (0, _.Z)(null == t ? true : t.id);
-  let x = (null == a ? true : a.discoverable) !== false ? a : null,
-    j = (0, m.Cf)(x),
+  let L = (null == a ? true : a.discoverable) !== false ? a : null,
+    j = (0, m.Cf)(L),
     M = i.useMemo(() => {
       var e, t;
       let r = null == n ? true : n.find(e => {
@@ -178,7 +178,7 @@ function B(e) {
     H = (null == t ? true : t.bot) === true,
     Y = (0, c.e7)([b.Z], () => b.Z.isBlockedOrIgnored(null == t ? true : t.id)),
     W = (null == M ? true : M.state) != null,
-    K = null != x,
+    K = null != L,
     z = !K && null != l,
     q = F.length + (K || z ? 1 : 0),
     X = q > 1,
@@ -192,8 +192,8 @@ function B(e) {
   let $ = function() {
       let e = arguments.length > 0 && true !== arguments[0] && arguments[0],
         t = true === e || w;
-      if (null != x) return (0, r.jsx)(I.Z, {
-        stream: x,
+      if (null != L) return (0, r.jsx)(I.Z, {
+        stream: L,
         game: V,
         textVariant: "text-".concat(h, "/medium"),
         textClassName: d,
@@ -229,8 +229,8 @@ function B(e) {
           hideText: false,
           canTruncate: false
         };
-      return null != x && e.push((0, r.jsx)(I.Z, L(D({
-        stream: x,
+      return null != L && e.push((0, r.jsx)(I.Z, x(D({
+        stream: L,
         game: null == n ? true : n.find(f.Z)
       }, t), {
         showChannelName: true
@@ -238,7 +238,7 @@ function B(e) {
         e.push((0, r.jsx)(S.Z, D({
           activity: n
         }, t), "activity-".concat(i)))
-      }), z && e.push((0, r.jsx)(A.Z, L(D({
+      }), z && e.push((0, r.jsx)(A.Z, x(D({
         channel: l
       }, t), {
         showChannelName: true
@@ -258,7 +258,7 @@ function B(e) {
       delay: C.X,
       text: ee(),
       "aria-label": J,
-      children: e => (0, r.jsxs)("div", L(D({
+      children: e => (0, r.jsxs)("div", x(D({
         className: o()(P.activityContainer, Q && P.iconOnly)
       }, e), {
         children: [$(true), et()]

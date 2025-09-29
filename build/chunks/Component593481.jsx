@@ -4,7 +4,7 @@
 require.d(exports, {
   QR: () => y,
   Yj: () => O,
-  ZP: () => b
+  ZP: () => v
 });
 var i, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -48,7 +48,7 @@ let f = e => e.stopPropagation(),
     className: u.hintSubtleText,
     children: t
   });
-class v extends(i = Chunk647438.PureComponent) {
+class b extends(i = Chunk647438.PureComponent) {
   static getDerivedStateFromProps(e, t) {
     let {
       expand: n
@@ -235,9 +235,9 @@ class v extends(i = Chunk647438.PureComponent) {
     }
   }
 }
-p(v, "defaultProps", {
+p(b, "defaultProps", {
   maxBodyLines: true,
   expand: false,
   disabled: false
 });
-let b = v
+let v = b

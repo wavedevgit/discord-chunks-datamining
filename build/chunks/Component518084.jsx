@@ -31,8 +31,8 @@ let m = Chunk981631.t_t.DEFAULT,
     type: m,
     opacity: y
   }),
-  v = Chunk647438.createContext(true),
-  b = e => {
+  b = Chunk647438.createContext(true),
+  v = e => {
     var {
       children: t,
       className: n
@@ -56,7 +56,7 @@ let m = Chunk981631.t_t.DEFAULT,
         let {
           type: s
         } = e;
-        return (0, r.jsx)(v.Consumer, {
+        return (0, r.jsx)(b.Consumer, {
           children: e => {
             var o, a;
             return (0, r.jsx)("div", (o = function(e) {
@@ -97,7 +97,7 @@ class _ extends(i = Chunk647438.PureComponent) {
       children: t,
       className: n
     } = this.props;
-    return (0, Chunk951288.jsx)(v.Consumer, {
+    return (0, Chunk951288.jsx)(b.Consumer, {
       children: i => (0, r.jsx)(O.Consumer, {
         children: s => {
           let o = l()(p.body, p[c()(s.type)], n);
@@ -150,7 +150,7 @@ let E = e => {
       className: n,
       dynamicSize: i = false
     } = e;
-    return (0, r.jsx)(v.Consumer, {
+    return (0, r.jsx)(b.Consumer, {
       children: e => (0, r.jsx)("div", {
         className: l()(p.content, {
           [p.staticSize]: !i
@@ -166,7 +166,7 @@ E.Background = e => {
     opacityOverride: n
   } = e;
   if (null == t) return null;
-  let i = [b, _, x];
+  let i = [v, _, x];
   return (0, r.jsx)(O.Consumer, {
     children: e => {
       let {
@@ -178,7 +178,7 @@ E.Background = e => {
         style: l
       });
       {
-        if (i.includes(t.type)) return (0, r.jsx)(v.Provider, {
+        if (i.includes(t.type)) return (0, r.jsx)(b.Provider, {
           value: l,
           children: t
         });
@@ -234,5 +234,5 @@ E.Background = e => {
       })
     }
   })
-}, E.Bar = b;
+}, E.Bar = v;
 let S = E

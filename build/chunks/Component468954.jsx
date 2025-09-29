@@ -76,8 +76,8 @@ function p(e) {
     sectionHeaderHeight: P,
     sectionFooterHeight: w,
     itemNodeWidth: D,
-    listPaddingRight: x,
-    itemNodeMargin: L,
+    listPaddingRight: L,
+    itemNodeMargin: x,
     listPadding: j,
     gridNavigatorId: M,
     gridNotice: k,
@@ -97,9 +97,9 @@ function p(e) {
     categories: t,
     collapsedCategories: n,
     gridWidth: W,
-    listPaddingRight: x,
+    listPaddingRight: L,
     itemNodeWidth: D,
-    itemNodeMargin: L
+    itemNodeMargin: x
   }), {
     getItemProps: J,
     getRowProps: $,

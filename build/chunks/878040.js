@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 878040, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 3408 **/
+/** chunk id: 878040, original params: e,t,n (module,exports,require) **/
 module.exports = {
   container: "container__956c6",
   rewardDescriptionContainer: "rewardDescriptionContainer__956c6",

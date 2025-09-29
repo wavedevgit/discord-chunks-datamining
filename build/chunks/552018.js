@@ -663,7 +663,7 @@ class C extends Chunk495852.C {
       o = e.pos + t;
     for (; e.pos < o;) {
       let [t, i] = e.tag();
-      if (1 === t) a.locations.push(L.internalBinaryRead(e, e.uint32(), n));
+      if (1 === t) a.locations.push(x.internalBinaryRead(e, e.uint32(), n));
       else {
         let o = n.readUnknownField;
         if ("throw" === o) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
@@ -674,7 +674,7 @@ class C extends Chunk495852.C {
     return a
   }
   internalBinaryWrite(e, t, n) {
-    for (let i = 0; i < e.locations.length; i++) L.internalBinaryWrite(e.locations[i], t.tag(1, r.TD.LengthDelimited).fork(), n).join();
+    for (let i = 0; i < e.locations.length; i++) x.internalBinaryWrite(e.locations[i], t.tag(1, r.TD.LengthDelimited).fork(), n).join();
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.z.onWrite : i)(this.typeName, e, t), t
   }
@@ -684,7 +684,7 @@ class C extends Chunk495852.C {
       name: "locations",
       kind: "message",
       repeat: 1,
-      T: () => L
+      T: () => x
     }])
   }
 }
@@ -802,7 +802,7 @@ class w extends Chunk495852.C {
   }
 }
 let D = new w;
-class x extends Chunk495852.C {
+class L extends Chunk495852.C {
   create(e) {
     let t = {
       location: {
@@ -874,7 +874,7 @@ class x extends Chunk495852.C {
     }])
   }
 }
-let L = new x;
+let x = new L;
 class j extends Chunk495852.C {
   create(e) {
     let t = {

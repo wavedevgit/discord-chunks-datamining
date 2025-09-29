@@ -1,4 +1,4 @@
-/** Chunk was on 73268 **/
+/** Chunk was on 96861 **/
 /** chunk id: 475271, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
   default: () => c
@@ -33,8 +33,8 @@ let c = {
     let o = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {},
       {
         sitekey: c,
-        captchaService: d,
-        options: u
+        captchaService: u,
+        options: d
       } = e;
     (0, a.ZDy)(async () => {
       let {
@@ -45,9 +45,9 @@ let c = {
           captcha_key: e,
           captcha_rqtoken: n
         }),
-        captchaService: d,
+        captchaService: u,
         sitekey: c
-      }, o, u, n))
+      }, o, d, n))
     }, {
       Layer: i.ZP,
       modalKey: s.A
@@ -57,11 +57,11 @@ let c = {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
       {
         sitekey: c,
-        captchaService: d,
-        captchaSessionId: u,
-        options: p
+        captchaService: u,
+        captchaSessionId: d,
+        options: m
       } = e;
-    return new Promise((e, m) => {
+    return new Promise((e, p) => {
       (0, a.ZDy)(async () => {
         let {
           default: a
@@ -70,14 +70,14 @@ let c = {
           onCaptchaVerify: (t, n) => e({
             captcha_key: t,
             captcha_rqtoken: n,
-            captcha_session_id: u
+            captcha_session_id: d
           }),
-          captchaService: d,
+          captchaService: u,
           sitekey: c,
           onReject: e => {
-            e === o.CaptchaError.CANCEL ? m(new o.CaptchaCancelError) : m(Error("cancel captcha"))
+            e === o.CaptchaError.CANCEL ? p(new o.CaptchaCancelError) : p(Error("cancel captcha"))
           }
-        }, t, p, n))
+        }, t, m, n))
       }, {
         Layer: i.ZP,
         modalKey: s.A

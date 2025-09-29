@@ -146,14 +146,14 @@ function D(e) {
       let t = e.trim();
       return t.startsWith("#") ? t : t.length > 0 ? "#".concat(t) : t
     },
-    x = e => {
+    L = e => {
       let t = D(e);
       if (R(t), (0, u.FX)(t) && ((0, E.zW)(), n(t), o.length > 0)) {
         let e = [...o];
         e[v] = t, s(e)
       }
     },
-    L = i.useCallback(e => {
+    x = i.useCallback(e => {
       R(e.hex)
     }, []),
     j = e => {
@@ -167,7 +167,7 @@ function D(e) {
         let {
           sRGBHex: e
         } = await c.open();
-        (0, E.J4)(), x(e)
+        (0, E.J4)(), L(e)
       } catch (e) {}
     }, k = () => {
       if (o.length === N) return;
@@ -212,7 +212,7 @@ function D(e) {
       selectedIndex: v,
       onColorSelect: G
     }), (0, r.jsx)(C, {
-      onChange: L,
+      onChange: x,
       onChangeComplete: j,
       color: A
     }), (0, r.jsxs)("div", {
@@ -220,7 +220,7 @@ function D(e) {
       children: [(0, r.jsx)("input", {
         className: O.hexInput,
         value: A.toUpperCase(),
-        onChange: e => x(e.target.value),
+        onChange: e => L(e.target.value),
         maxLength: 7,
         placeholder: m.Dp,
         type: "text"

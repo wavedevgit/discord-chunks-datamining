@@ -65,28 +65,28 @@ function D(e, t) {
   return n
 }
 
-function x(e, t) {
+function L(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let L = 250,
+let x = 250,
   j = 24;
 
 function M(e, t) {
   switch (t.type) {
     case "MEASUREMENT_COMPLETE":
-      return x(w({}, e), {
+      return L(w({}, e), {
         animationPhase: "ready",
         height: t.height
       });
     case "START_EXPAND_ANIMATION":
-      return x(w({}, e), {
+      return L(w({}, e), {
         animationPhase: "animating",
         height: t.height
       });
     case "ANIMATION_COMPLETE":
-      return x(w({}, e), {
+      return L(w({}, e), {
         animationPhase: "done",
         height: "auto"
       });
@@ -107,7 +107,7 @@ function U(e) {
     onOpenUserProfileModal: g,
     onClose: P
   } = e, D = (0, _.Dt)(), {
-    analyticsLocations: x
+    analyticsLocations: L
   } = (0, f.ZP)(), {
     trackUserProfileAction: U
   } = (0, E.KZ)(), {
@@ -150,7 +150,7 @@ function U(e) {
       onClick: () => {
         U({
           action: "PRESS_VIEW_PROFILE",
-          analyticsLocations: x
+          analyticsLocations: L
         }), g({
           section: A.oh.ACTIVITY
         })
@@ -163,7 +163,7 @@ function U(e) {
     if (null == q.current || null == Q.current) return;
     U({
       action: "PRESS_SHOW_MORE_ACTIVITY",
-      analyticsLocations: x
+      analyticsLocations: L
     });
     let e = q.current.getBoundingClientRect().height,
       t = Q.current.getBoundingClientRect().height;
@@ -180,9 +180,9 @@ function U(e) {
           type: "ANIMATION_COMPLETE",
           height: "auto"
         }), null == (e = X.current) || e.focus()
-      }, L)
+      }, x)
     })
-  }, [x, U]);
+  }, [L, U]);
   if ((0, c.zq)(() => {
       null != J.current && window.clearTimeout(J.current)
     }), H) return null;

@@ -44,7 +44,7 @@ function D(e, t, n) {
   }) : e[t] = n, e
 }
 
-function x(e) {
+function L(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -57,7 +57,7 @@ function x(e) {
   return e
 }
 
-function L(e, t) {
+function x(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -69,7 +69,7 @@ function L(e, t) {
 }
 
 function j(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -251,7 +251,7 @@ async function Y(e) {
   });
   try {
     let e = [...a.selectedAnswerIds.values()];
-    (0, N.eu)(t, n, e => (i()(null != e, "Must not be able to vote without existing state!"), j(x({}, e), {
+    (0, N.eu)(t, n, e => (i()(null != e, "Must not be able to vote without existing state!"), j(L({}, e), {
       submitting: true,
       editing: false
     }))), await H({
@@ -273,7 +273,7 @@ async function Y(e) {
       messageId: n,
       answerIds: o
     }), (0, N.eu)(t, n, e => {
-      if (null != e) return j(x({}, e), {
+      if (null != e) return j(L({}, e), {
         submitting: false,
         editing: false
       })
@@ -414,7 +414,7 @@ let q = {
           showResults: false
         }
       }
-      let s = x({}, e),
+      let s = L({}, e),
         c = new Set(s.selectedAnswerIds);
       if (s.selectedAnswerIds = c, c.has(r)) c.delete(r);
       else {
@@ -487,7 +487,7 @@ let q = {
         }
       }), null == l || l()
     } catch (e) {
-      if ("poll" === (e instanceof p.Hx ? e : new p.Hx(e)).getAnyErrorMessage() && null != e.text) throw j(x({}, e), {
+      if ("poll" === (e instanceof p.Hx ? e : new p.Hx(e)).getAnyErrorMessage() && null != e.text) throw j(L({}, e), {
         body: JSON.parse(e.text)
       });
       throw e

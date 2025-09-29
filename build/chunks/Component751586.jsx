@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 751586, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 1272 **/
+/** chunk id: 751586, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  UN: () => g,
+  UN: () => b,
   Ui: () => m
 });
 var Chunk951288 = require("./951288.js");
@@ -41,44 +40,44 @@ function m() {
     label: Chunk388032.intl.string(Chunk388032.t.L2mlUV)
   }]
 }
-let g = e => {
+let b = e => {
   let {
     questId: t,
     selectedSections: n
-  } = e, p = (0, i.e7)([o.Z], () => o.Z.getQuest(t));
-  if (null != (0, i.e7)([o.Z], () => o.Z.getFetchQuestPreviewError(t)) || null == p) return null;
+  } = e, h = (0, i.e7)([a.Z], () => a.Z.getQuest(t));
+  if (null != (0, i.e7)([a.Z], () => a.Z.getFetchQuestPreviewError(t)) || null == h) return null;
   let m = e => null == n || 0 === n.length || n.includes(e);
   return (0, r.jsxs)(r.Fragment, {
     children: [m("home_card") && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(f.w, {
-        quest: p
-      }), (0, r.jsx)(s.i, {})]
+      children: [(0, r.jsx)(p.w, {
+        quest: h
+      }), (0, r.jsx)(o.i, {})]
     }), m("quest_bar") && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(c.Z, {
-        quest: p
-      }), (0, r.jsx)(s.i, {})]
+        quest: h
+      }), (0, r.jsx)(o.i, {})]
     }), m("share_embed") && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(d.Z, {
-        questId: p.id
-      }), (0, r.jsx)(s.i, {})]
+        questId: h.id
+      }), (0, r.jsx)(o.i, {})]
     }), m("channel_call_header") && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(u.i, {
-        quest: p
-      }), (0, r.jsx)(s.i, {})]
+        quest: h
+      }), (0, r.jsx)(o.i, {})]
     }), m("members_list") && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(_.Z, {
-        quest: p
-      }), (0, r.jsx)(s.i, {})]
+      children: [(0, r.jsx)(f.Z, {
+        quest: h
+      }), (0, r.jsx)(o.i, {})]
     }), m("activity_panel") && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(l.Z, {
-        quest: p
-      }), (0, r.jsx)(s.i, {})]
+      children: [(0, r.jsx)(s.Z, {
+        quest: h
+      }), (0, r.jsx)(o.i, {})]
     }), (0, r.jsx)("div", {
-      className: h.themes,
-      children: (0, r.jsx)(a.ZP, {
-        type: a.yH.SETTINGS,
-        children: (0, r.jsx)(a.ZP.Basic, {
-          className: h.themeSelectionGroup
+      className: g.themes,
+      children: (0, r.jsx)(l.ZP, {
+        type: l.yH.SETTINGS,
+        children: (0, r.jsx)(l.ZP.Basic, {
+          className: g.themeSelectionGroup
         })
       })
     })]

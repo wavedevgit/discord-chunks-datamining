@@ -231,7 +231,7 @@ let q = Chunk647438.forwardRef(function(e, t) {
       lang: l,
       style: u,
       className: d
-    } = (0, L.vP)();
+    } = (0, x.vP)();
     return a.useEffect(() => {
       let e = n.document.documentElement;
       c()(null != e, "Window document element was null"), e.setAttribute("style", u)

@@ -78,7 +78,7 @@ function I(e) {
     return e.length > 1 && (n = "linear-gradient(".concat(t, "deg, ").concat(e.join(", "), ")")), {
       background: "var(--background-gradient), ".concat(n)
     }
-  }, [N, a, R]), x = (0, f.Sl)(E.Il.WHITE).hex, L = (0, f.Sl)(E.Il.RED_430).hex, j = w ? x : true, M = i.useCallback(() => {
+  }, [N, a, R]), L = (0, f.Sl)(E.Il.WHITE).hex, x = (0, f.Sl)(E.Il.RED_430).hex, j = w ? L : true, M = i.useCallback(() => {
     I && T(), null == n || n()
   }, [I, T, n]);
   return (0, r.jsxs)("div", {
@@ -101,7 +101,7 @@ function I(e) {
     }), I && (0, r.jsx)(u.IGR, {
       className: O.newBadge,
       text: y.intl.string(y.t.y2b7CA),
-      color: L
+      color: x
     })]
   })
 }

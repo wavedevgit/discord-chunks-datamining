@@ -86,7 +86,7 @@ function D(e) {
   })
 }
 
-function x(e) {
+function L(e) {
   let {
     Component: t,
     events: n,
@@ -119,7 +119,7 @@ function x(e) {
     })
   }))
 }
-let L = Chunk70956.Z.Millis.DAYS_30;
+let x = Chunk70956.Z.Millis.DAYS_30;
 
 function j(e) {
   var t;
@@ -132,7 +132,7 @@ function j(e) {
   } = (0, u.ZP)(c.Z.GIFT_BUTTON), [v, S] = i.useState(false), C = (0, a.e7)([m.Z], () => !(null === m.Z || true === m.Z ? true : m.Z.hasLayers())), N = (0, a.e7)([g.default], () => g.default.getCurrentUser()), R = null != N ? b.default.age(N.id) : 0, {
     giftBoxAnimation: P,
     trinketsAnimation: w
-  } = null != (t = null == n ? true : n.chatGiftIcon) ? t : {}, j = null != n.firstTimeNotice && !s && C && R >= L, [M, k] = (0, f.XR)(j ? o.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK : null, (0, d.t)(o.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK)), U = null != M, G = v || U, B = (0, y.Ft)(l), Z = (0, p.IH)();
+  } = null != (t = null == n ? true : n.chatGiftIcon) ? t : {}, j = null != n.firstTimeNotice && !s && C && R >= x, [M, k] = (0, f.XR)(j ? o.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK : null, (0, d.t)(o.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK)), U = null != M, G = v || U, B = (0, y.Ft)(l), Z = (0, p.IH)();
   if (s) return null;
   let F = () => {
       (0, _.Z)({
@@ -155,7 +155,7 @@ function j(e) {
       config: P,
       hovered: G,
       onClick: V
-    }) : true !== w && Z ? (0, r.jsx)(x, {
+    }) : true !== w && Z ? (0, r.jsx)(L, {
       config: w,
       hovered: G,
       onClick: V

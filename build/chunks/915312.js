@@ -30,14 +30,19 @@ function f(e) {
             }
             of e) {
             let e = JSON.stringify(r);
-            s.has(e) || (s.add(e), u.default.track(c.rMx.A11Y_RUNTIME_VIOLATION, {
-              rule_id: t,
-              trace: n.join("\n"),
-              hash: r
-            }))
+            if (s.has(e));
+            else {
+              s.add(e);
+              let a = {
+                rule_id: t,
+                trace: n.join("\n"),
+                hash: r
+              };
+              o.default.track(c.rMx.A11Y_RUNTIME_VIOLATION, a)
+            }
           }
   }, []);
-  (0, o.A$)(e, t)
+  (0, u.A$)(e, t)
 }
 
 function h() {

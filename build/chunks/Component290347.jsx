@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 290347, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => P
 }), require("./388685.js"), require("./415506.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -67,7 +67,7 @@ let T = [],
       text: t
     })
   },
-  P = e => {
+  j = e => {
     let {
       header: t,
       subHeader: n,
@@ -103,13 +103,13 @@ let T = [],
     })
   };
 
-function j(e) {
+function P(e) {
   let {
     className: t,
     renderModalProps: n,
     heroArt: l,
     heroArtClassName: N,
-    modalDismissibleContent: j,
+    modalDismissibleContent: P,
     modalTopExtra: x,
     header: A,
     headerClassName: Z,
@@ -122,14 +122,14 @@ function j(e) {
   } = e, {
     onClose: U,
     transitionState: G
-  } = n, B = (0, f.Dt)(), V = R.length % 2 == 0, H = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), [F, z] = i.useState(Date.now()), [W, Y] = i.useState(0), [K, q] = i.useState(0), [Q, X] = i.useState(false), [J, $] = i.useState(true), ee = i.useRef(F), et = i.useRef(W), en = i.useRef(K), er = i.useRef(Q), ei = i.useRef(J), [el, ea] = i.useState(T), eo = i.useRef(false);
+  } = n, B = (0, f.Dt)(), V = R.length % 2 == 0, H = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), [F, z] = i.useState(Date.now()), [W, Y] = i.useState(0), [q, K] = i.useState(0), [Q, X] = i.useState(false), [J, $] = i.useState(true), ee = i.useRef(F), et = i.useRef(W), en = i.useRef(q), er = i.useRef(Q), ei = i.useRef(J), [el, ea] = i.useState(T), eo = i.useRef(false);
 
   function es() {
     let e = Date.now(),
       t = e - ee.current,
       n = et.current,
       r = en.current;
-    return er.current && (Y(n += t), ei.current || q(r += t)), z(e), [n, r]
+    return er.current && (Y(n += t), ei.current || K(r += t)), z(e), [n, r]
   }
   return i.useEffect(() => {
     let e = async () => {
@@ -159,8 +159,8 @@ function j(e) {
       URL.revokeObjectURL(e.src)
     })
   }, [el]), i.useEffect(() => {
-    ee.current = F, et.current = W, en.current = K, er.current = Q, ei.current = J
-  }, [F, W, K, Q, J]), i.useEffect(() => () => {
+    ee.current = F, et.current = W, en.current = q, er.current = Q, ei.current = J
+  }, [F, W, q, Q, J]), i.useEffect(() => () => {
     if ("video" === l.type || "embed" === l.type) {
       let [e, t] = es();
       _.default.track(E.rMx.CHANGE_LOG_VIDEO_PLAYED, {
@@ -172,7 +172,7 @@ function j(e) {
       })
     }
   }, [D, l.type]), i.useEffect(() => {
-    null != j && (0, m.kk)(j);
+    null != P && (0, m.kk)(P);
     let e = Date.now();
     return _.default.track(E.rMx.CHANGE_LOG_OPENED, {
       change_log_id: D
@@ -180,11 +180,11 @@ function j(e) {
       _.default.track(E.rMx.CHANGE_LOG_CLOSED, {
         change_log_id: D,
         seconds_open: Math.round((Date.now() - e) / 1e3)
-      }), null != j && (0, g.Q3)(j, {
+      }), null != P && (0, g.Q3)(P, {
         dismissAction: y.L.DISMISS
       })
     }
-  }, [j, D]), (0, r.jsx)(c.Y0X, {
+  }, [P, D]), (0, r.jsx)(c.Y0X, {
     "data-migration-pending": true,
     className: a()(I.root, I.largeBorderRadius, t),
     transitionState: G,
@@ -273,7 +273,7 @@ function j(e) {
           className: a()(I.featureCardGroup, {
             [I.wideStyle]: V
           }),
-          children: R.map((e, t) => (0, r.jsx)(P, C(S({}, e), {
+          children: R.map((e, t) => (0, r.jsx)(j, C(S({}, e), {
             wideStyle: V
           }), "".concat(e.header, "_").concat(t)))
         }), (0, r.jsx)("div", {

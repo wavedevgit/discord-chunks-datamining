@@ -71,7 +71,7 @@ function w(e, t) {
 
 function D(e, t) {
   if (null == e) return {};
-  var n, r, i = x(e, t);
+  var n, r, i = L(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -79,7 +79,7 @@ function D(e, t) {
   return i
 }
 
-function x(e, t) {
+function L(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -87,7 +87,7 @@ function x(e, t) {
   return i
 }
 
-function L(e) {
+function x(e) {
   var t;
   let n = (0, a.e7)([b.Z], () => b.Z.questDeliveryOverride, []),
     u = (0, m.GN)(e.questContent),
@@ -97,14 +97,14 @@ function L(e) {
     w = (0, E.ly)(e.quest),
     D = true === e.showShareLink && (0, m.vB)(e.quest.config),
     {
-      handleComplete: x,
-      handleProgress: L,
+      handleComplete: L,
+      handleProgress: x,
       handleResetDismissibilityClick: j,
       handleResetStatusClick: M,
       handleOverrideDeliveryClick: k
     } = (0, E.kJ)(e.quest.id),
     U = () => {
-      L(.9 * Math.random() + .03)
+      x(.9 * Math.random() + .03)
     },
     G = i.useCallback(() => {
       if (e.quest.id === T.V6) return void window.open(_.Z.getArticleURL(S.BhN.VIRTUAL_CURRENCY_LEARN_MORE));
@@ -234,7 +234,7 @@ function L(e) {
       }), (0, r.jsx)(o.sNh, {
         id: "complete",
         label: C.intl.string(C.t.jQEfRU),
-        action: x
+        action: L
       }), (0, m.$J)(e.quest) && (0, r.jsxs)(o.sNh, {
         id: "console",
         label: "Console Heartbeat",
@@ -296,14 +296,14 @@ function j(e) {
         closePopout: t
       } = e;
       return s ? (0, r.jsx)(u.Z, {
-        children: (0, r.jsx)(L, w(R({}, _), {
+        children: (0, r.jsx)(x, w(R({}, _), {
           quest: l,
           questContent: c,
           questContentPosition: d,
           onClose: t,
           sourceQuestContent: f
         }))
-      }) : (0, r.jsx)(L, w(R({}, _), {
+      }) : (0, r.jsx)(x, w(R({}, _), {
         quest: l,
         questContent: c,
         questContentPosition: d,

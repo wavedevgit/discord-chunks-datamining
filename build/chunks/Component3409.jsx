@@ -297,7 +297,7 @@ function eP(e) {
       paymentElementsEnabled: eP
     } = (0, C.JL)(),
     ew = i.useMemo(() => (0, V.vP)(), []),
-    [eD, ex, eL, ej] = i.useMemo(() => eg([{
+    [eD, eL, ex, ej] = i.useMemo(() => eg([{
       baseSteps: el,
       methodType: X.He.CARD
     }, {
@@ -317,11 +317,11 @@ function eP(e) {
     }), [g, E, eP, ew]),
     eM = i.useMemo(() => ({
       [X.He.CARD]: eD,
-      [X.He.PAYPAL]: ex,
-      [X.He.IDEAL]: eL,
+      [X.He.PAYPAL]: eL,
+      [X.He.IDEAL]: ex,
       [X.He.GOPAY_WALLET]: ej,
       [X.He.KAKAOPAY]: ej
-    }), [eD, ex, eL, ej]),
+    }), [eD, eL, ex, ej]),
     ek = {
       steps: [...g, ...es, ...E],
       methodType: X.He.PAYMENT_REQUEST
@@ -394,8 +394,8 @@ function eP(e) {
     creditCardState: e3,
     setCreditCardState: e4,
     tokenState: e8,
-    setTokenState: e6,
-    isSubmittingCurrentStep: e5,
+    setTokenState: e5,
+    isSubmittingCurrentStep: e6,
     billingAddressState: e7,
     setBillingAddressState: e9,
     setIsSubmittingCurrentStep: te,
@@ -456,7 +456,7 @@ function eP(e) {
               en ? n(N.h8.AWAITING_BROWSER_CHECKOUT) : (eq(eD), n(N.h8.CREDIT_CARD_INFORMATION));
               break;
             case X.He.PAYPAL:
-              eq(ex), n(N.h8.PAYPAL_INFORMATION);
+              eq(eL), n(N.h8.PAYPAL_INFORMATION);
               break;
             case X.He.VENMO:
               eq(eU), n(N.h8.VENMO_INFORMATION);
@@ -471,7 +471,7 @@ function eP(e) {
               eq(eZ), n(N.h8.EPS_INFORMATION);
               break;
             case X.He.IDEAL:
-              eq(eL), n(N.h8.IDEAL_INFORMATION);
+              eq(ex), n(N.h8.IDEAL_INFORMATION);
               break;
             case X.He.CASH_APP:
               eq(eF), n(N.h8.CASH_APP_INFORMATION);
@@ -499,7 +499,7 @@ function eP(e) {
         tD = () => {
           eq(eG), e0(N.h8.PAYMENT_TYPE)
         },
-        tx = async e => {
+        tL = async e => {
           if ((0, _.Xt)(e), null == e) return void tD();
           try {
             let t = await (0, d.i6)(e, true, H),
@@ -512,10 +512,10 @@ function eP(e) {
       if (eH === N.h8.ATTEMPT_GOOGLE_PAY || eH === N.h8.ATTEMPT_APPLE_PAY) {
         let e = Q.intl.string(eH === N.h8.ATTEMPT_APPLE_PAY ? Q.t.czhXDg : Q.t.Zj2xQ0),
           t = Q.intl.string(eH === N.h8.ATTEMPT_APPLE_PAY ? Q.t.WoXvJC : Q.t.wnVVr6);
-        n = (0, r.jsx)(x.t, {
+        n = (0, r.jsx)(L.t, {
           onChooseType: tP,
           paymentRequestWallet: eH === N.h8.ATTEMPT_APPLE_PAY ? "applePay" : "googlePay",
-          onStripePaymentMethodReceived: tx,
+          onStripePaymentMethodReceived: tL,
           onPaymentRequestFailure: () => {
             tP(X.He.CARD), eK(e)
           },
@@ -532,7 +532,7 @@ function eP(e) {
       }
       n = (0, r.jsx)(ey, {
         onChooseType: tP,
-        onStripePaymentMethodReceived: tx,
+        onStripePaymentMethodReceived: tL,
         paymentRequestWallets: tg,
         isEligibleForTrial: ee,
         paymentRequestPaymentContext: {
@@ -546,7 +546,7 @@ function eP(e) {
       break;
     case N.h8.PAYMENT_ELEMENT:
       if (!eP) throw (0, d.PP)("Payment Elements not enabled, invalid step", true);
-      let tL = () => {
+      let tx = () => {
         te(true);
         try {
           if (null == tT || !(0, v.qH)(tT, ew)) throw (0, d.PP)("Valid Payment Element source type not found", true);
@@ -570,9 +570,9 @@ function eP(e) {
         primaryCTA: P.Z.CTAType.CONTINUE,
         primaryType: "submit",
         primaryText: Q.intl.string(Q.t.PDTjLC),
-        primarySubmitting: e5,
+        primarySubmitting: e6,
         primaryDisabled: !tI,
-        onPrimary: tL
+        onPrimary: tx
       });
       break;
     case N.h8.CREDIT_CARD_INFORMATION:
@@ -580,7 +580,7 @@ function eP(e) {
         te(true);
         try {
           let t = await (0, d.qv)(eE, e);
-          e6({
+          e5({
             token: t
           }), e0(N.h8.ADDRESS)
         } catch (e) {
@@ -617,7 +617,7 @@ function eP(e) {
             primaryCTA: P.Z.CTAType.CONTINUE,
             primaryType: "submit",
             primaryText: Q.intl.string(Q.t.PDTjLC),
-            primarySubmitting: e5,
+            primarySubmitting: e6,
             primaryDisabled: tM,
             onPrimary: () => tj(t)
           })
@@ -881,7 +881,7 @@ function eP(e) {
         onBack: () => e0(p),
         primaryCTA: P.Z.CTAType.CONTINUE,
         primaryText: Q.intl.string(Q.t.PDTjLC),
-        primarySubmitting: e5,
+        primarySubmitting: e6,
         primaryDisabled: !e7.isValid || ts,
         onPrimary: tV
       });
@@ -925,7 +925,7 @@ function eP(e) {
       className: J.paymentModalBreadcrumbs,
       isEligibleForTrial: ee
     }), (0, r.jsxs)(w.C3, {
-      children: [(0, r.jsx)(L.Z, {
+      children: [(0, r.jsx)(x.Z, {
         className: J.paymentModalError
       }), tW]
     }), (0, r.jsx)(w.O3, {
@@ -981,12 +981,12 @@ function ew(e) {
       u.Z.unsubscribe("BRAINTREE_TOKENIZE_PAYPAL_SUCCESS", e), (0, _.fw)()
     }
   }, []);
-  let [P, w] = i.useState(false), [D, x] = i.useState(false), [L, j] = i.useState(null), B = i.useRef(null), Z = (0, l.e7)([k.Z], () => k.Z.isAwaitingAuthentication), [F, V] = (0, l.Wu)([G.Z], () => [G.Z.purchaseTokenAuthState, G.Z.purchaseTokenHash]);
+  let [P, w] = i.useState(false), [D, L] = i.useState(false), [x, j] = i.useState(null), B = i.useRef(null), Z = (0, l.e7)([k.Z], () => k.Z.isAwaitingAuthentication), [F, V] = (0, l.Wu)([G.Z], () => [G.Z.purchaseTokenAuthState, G.Z.purchaseTokenHash]);
   return i.useEffect(() => {
-    null != L && null != B.current && B.current.scrollIntoView({
+    null != x && null != B.current && B.current.scrollIntoView({
       behavior: "smooth"
     })
-  }, [L]), {
+  }, [x]), {
     paymentSources: n,
     paymentSourceId: a,
     hasFetchedPaymentSources: r,
@@ -1000,14 +1000,14 @@ function ew(e) {
     isSubmittingCurrentStep: P,
     setIsSubmittingCurrentStep: w,
     hasRedirectURL: D,
-    setHasRedirectURL: x,
+    setHasRedirectURL: L,
     braintreeEmail: I,
     braintreeNonce: T,
     venmoUsername: A,
     adyenPaymentData: C,
     paymentError: null != N ? N : S,
     paymentAuthenticationState: R ? H.wr.PENDING : null != N ? H.wr.ERROR : H.wr.NONE,
-    purchaseError: L,
+    purchaseError: x,
     setPurchaseError: j,
     purchaseErrorBlockRef: B,
     isAuthenticating: Z,

@@ -91,11 +91,11 @@ let A = e => {
     soundEffect: C,
     setEmojiConfetti: N,
     setSoundEffect: R
-  } = (0, c.wD)(), [P, w] = i.useState(false), D = i.useRef(null), x = (0, s.Jb)({
+  } = (0, c.wD)(), [P, w] = i.useState(false), D = i.useRef(null), L = (0, s.Jb)({
     orientation: "horizontal"
   }), {
-    ref: L
-  } = x, j = T(x, ["ref"]), M = (0, d.MY)(y, t), k = M === d.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD, U = M !== d.xr.DEFAULT, G = (0, p.m)(), B = (0, _.ZP)({
+    ref: x
+  } = L, j = T(L, ["ref"]), M = (0, d.MY)(y, t), k = M === d.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD, U = M !== d.xr.DEFAULT, G = (0, p.m)(), B = (0, _.ZP)({
     location: "GiftAnimationOptions"
   }), Z = e => {
     null != R && R(null == e ? true : e)
@@ -129,7 +129,7 @@ let A = e => {
       },
       className: o()(b.giftBoxOptionContainer, a),
       "aria-label": E.intl.string(E.t.v54NrK),
-      ref: L
+      ref: x
     }, j), {
       children: null != G && !B && G.map((e, t) => (0, r.jsx)(g.m, {
         isSelected: v === e,

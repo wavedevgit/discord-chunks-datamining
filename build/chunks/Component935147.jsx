@@ -173,7 +173,7 @@ function Y(e) {
               variant: "text-sm/normal",
               children: G.intl.string(G.t.xeEC29)
             })]
-          }), (0, r.jsx)(L.Z, {
+          }), (0, r.jsx)(x.Z, {
             className: B.customizationSection,
             user: Z,
             pendingAvatarSrc: (0, v.SD)({
@@ -202,7 +202,7 @@ function Y(e) {
             className: B.customizationSection,
             user: Z,
             sectionTitle: G.intl.string(G.t["7v0T9P"])
-          }, "decoration"), (0, r.jsx)(x.Z, {
+          }, "decoration"), (0, r.jsx)(L.Z, {
             className: B.customizationSection,
             isTryItOutFlow: true,
             initialSelectedEffectId: ee,

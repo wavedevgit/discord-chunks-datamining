@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 638640, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 3408 **/
+/** chunk id: 638640, original params: e,t,n (module,exports,require) **/
 module.exports = {
   contentHeader: "contentHeader__5b400",
   refreshWrapper: "refreshWrapper__5b400",

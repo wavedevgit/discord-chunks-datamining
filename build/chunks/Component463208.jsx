@@ -180,8 +180,8 @@ function N(e) {
     defaultDirty: P = false,
     leading: w,
     trailing: D,
-    validateOn: x = "change",
-    size: L = "md",
+    validateOn: L = "change",
+    size: x = "md",
     fullWidth: j = false,
     clearable: M = false,
     helperText: k,
@@ -193,7 +193,7 @@ function N(e) {
     required: V,
     id: H
   } = e, Y = I(e, ["disabled", "editable", "inputRef", "focusProps", "name", "type", "placeholder", "maxLength", "value", "defaultValue", "minLength", "error", "defaultDirty", "leading", "trailing", "validateOn", "size", "fullWidth", "clearable", "helperText", "showCharacterCount", "successMessage", "label", "description", "hideLabel", "required", "id"]), W = (0, m.m)({
-    validateOn: x,
+    validateOn: L,
     error: N,
     value: b,
     minLength: T,
@@ -221,16 +221,16 @@ function N(e) {
   null == et && false === a && (et = true);
   let en = null;
   ("boolean" == typeof M ? M && null != b && "" !== b && !et : M.show) ? en = (0, r.jsx)(C, {
-    inputSize: L,
+    inputSize: x,
     onClick: $
   }): null != D && (en = (0, r.jsx)(A, {
     accessory: D,
-    inputSize: L
+    inputSize: x
   }));
   let er = null;
   null != w && (er = (0, r.jsx)(A, {
     accessory: w,
-    inputSize: L
+    inputSize: x
   }));
   let ei = U ? (0, r.jsx)(p.H, {
     value: b,
@@ -252,7 +252,7 @@ function N(e) {
       validation: W,
       fullWidth: j,
       readOnly: et,
-      className: o()(E.container, E[L], {
+      className: o()(E.container, E[x], {
         [E.hasLeading]: null != er,
         [E.hasTrailing]: null != en,
         [E.hasTags]: q

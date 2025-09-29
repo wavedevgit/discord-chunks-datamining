@@ -92,7 +92,7 @@ function K(e) {
       onPaymentSourceChange: m,
       onPaymentSourceAdd: g,
       planId: P,
-      setHasAcceptedTerms: x,
+      setHasAcceptedTerms: L,
       legalTermsNodeRef: k,
       hasLegalTermsFlash: U,
       onInvoiceError: Z,
@@ -213,7 +213,7 @@ function K(e) {
         onChange: Y,
         disabled: e_
       })]
-    }), (0, r.jsx)(L.Z, {
+    }), (0, r.jsx)(x.Z, {
       isActive: U,
       ref: k,
       children: null != n && (0, R.R4)(n, P, V) ? (0, r.jsx)(X, {
@@ -226,9 +226,9 @@ function K(e) {
         disabled: e_,
         isEEA: ef,
         paymentSources: a,
-        setHasAcceptedTerms: x
+        setHasAcceptedTerms: L
       }) : (0, r.jsx)(h.Z, {
-        onChange: x,
+        onChange: L,
         finePrint: (0, r.jsx)(_.Z, {
           subscriptionPlan: ec,
           paymentSourceType: el,
@@ -334,7 +334,7 @@ function q(e) {
   if (null !== u && null !== T && (t = (0, N.N1)(T.subscriptionPeriodEnd, u.unactivatedUnits, u.endsAt)), null == T || null == A || w) return (0, r.jsx)(d.$jN, {
     className: F.__invalid_spinner
   });
-  let x = (0, N.Ap)(c.paymentSourceId);
+  let L = (0, N.Ap)(c.paymentSourceId);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(k.hG, {
       proratedInvoice: T,
@@ -347,14 +347,14 @@ function q(e) {
       }), (0, r.jsx)(k.Lu, {
         invoice: T,
         newPlan: a,
-        isPrepaidPaymentSource: x
+        isPrepaidPaymentSource: L
       }), (0, r.jsx)(k.nd, {
         premiumSubscription: n,
         proratedInvoice: T,
         renewalInvoice: A,
         overrideRenewalDate: t,
         isUpdate: true,
-        isPrepaidPaymentSource: x
+        isPrepaidPaymentSource: L
       })]
     })]
   })
@@ -535,7 +535,7 @@ function J(e) {
       }), (0, r.jsx)(D.B1, {
         label: t,
         value: (0, N.PK)(a, c, true)
-      }), (0, r.jsx)(x.Z, {
+      }), (0, r.jsx)(L.Z, {
         invoice: h
       }), (0, r.jsx)(D.UN, {}), (0, r.jsx)(k.nd, {
         premiumSubscription: n,

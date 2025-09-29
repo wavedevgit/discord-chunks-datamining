@@ -69,7 +69,7 @@ function D(e) {
     analyticsLocations: N
   } = (0, f.ZP)(), {
     id: w
-  } = (0, p.p6)(I.h7.VIDEO_INPUT), D = (0, s.e7)([E.Z], () => E.Z.isVideoAvailable()), x = m.qF.useSetting();
+  } = (0, p.p6)(I.h7.VIDEO_INPUT), D = (0, s.e7)([E.Z], () => E.Z.isVideoAvailable()), L = m.qF.useSetting();
   return (0, r.jsxs)(c.Kqy, {
     gap: 20,
     children: [d(w), E.Z.isEnabled() ? null : (0, r.jsx)(c.Text, {
@@ -88,7 +88,7 @@ function D(e) {
           always_preview_video: e
         })
       },
-      value: x,
+      value: L,
       children: T.intl.string(T.t["3Ppr1t"])
     }), !t && (0, r.jsx)(h.F, {
       setting: v.s6.VOICE_AND_VIDEO_VIDEO_CAMERA_PREVIEW,

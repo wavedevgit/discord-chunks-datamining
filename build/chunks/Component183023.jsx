@@ -103,7 +103,7 @@ let Q = 32,
     } = e;
     (0, I.u)({
       emojiId: t.emojiId,
-      currentGuildId: L.Z.getGuildId()
+      currentGuildId: x.Z.getGuildId()
     });
     let n = (0, R.Z)(t.name);
     return (0, r.jsx)(c.V, {
@@ -150,7 +150,7 @@ let Q = 32,
       size: c,
       canAnimate: true
     }), f = (n = null == n || n) || t.isDiscoverable(), _ = () => {
-      t.isDiscoverable() ? (0, U.Ub)(a, {}) : n && (0, D.uL)(F.Z5c.CHANNEL(a, x.Z.getChannelId(a)))
+      t.isDiscoverable() ? (0, U.Ub)(a, {}) : n && (0, D.uL)(F.Z5c.CHANNEL(a, L.Z.getChannelId(a)))
     }, p = () => null != u && f ? (0, r.jsxs)(d.P3F, {
       "aria-label": l,
       onClick: _,
@@ -275,26 +275,26 @@ let Q = 32,
       joinedEmojiSourceGuildRecord: S,
       closePopout: R,
       onToggleShowMoreEmojis: D,
-      guildEmoji: x,
+      guildEmoji: L,
       demoMode: k = false,
       nonce: U
-    } = e, K = (0, l.e7)([j.default], () => j.default.getCurrentUser()), z = (0, l.e7)([L.Z], () => L.Z.getGuildId()), q = G.ZP.isPremium(K), X = null != z && (z === (null == T ? true : T.id) || z === (null == S ? true : S.id)), Q = null != S, J = null != (t = null == T ? true : T.isDiscoverable()) && t;
+    } = e, K = (0, l.e7)([j.default], () => j.default.getCurrentUser()), z = (0, l.e7)([x.Z], () => x.Z.getGuildId()), q = G.ZP.isPremium(K), X = null != z && (z === (null == T ? true : T.id) || z === (null == S ? true : S.id)), Q = null != S, J = null != (t = null == T ? true : T.isDiscoverable()) && t;
     k && (q = true, J = true, Q = false, X = false);
     let ee = $(),
       {
         isRoleSubscriptionEmoji: en,
         isUnusableRoleSubscriptionEmoji: er,
         userIsRoleSubscriber: ea
-      } = i.useMemo(() => null == x ? {
+      } = i.useMemo(() => null == L ? {
         isRoleSubscriptionEmoji: false,
         isUnusableRoleSubscriptionEmoji: false,
         userIsRoleSubscriber: false
       } : {
-        isRoleSubscriptionEmoji: A.yH(x),
-        isUnusableRoleSubscriptionEmoji: A.Fv(x, null != z ? z : true),
-        userIsRoleSubscriber: C.Z.getUserSubscriptionRoles(x.guildId).size > 0
-      }, [x, z]),
-      eo = !!er && (0, y.Ol)(null == x ? true : x.guildId),
+        isRoleSubscriptionEmoji: A.yH(L),
+        isUnusableRoleSubscriptionEmoji: A.Fv(L, null != z ? z : true),
+        userIsRoleSubscriber: C.Z.getUserSubscriptionRoles(L.guildId).size > 0
+      }, [L, z]),
+      eo = !!er && (0, y.Ol)(null == L ? true : L.guildId),
       {
         analyticsLocations: es
       } = (0, h.ZP)(p.Z.GUILD_ROLE_SUBSCRIPTION_EMOJI_TEXT_POPOVER_UPSELL);
@@ -303,13 +303,13 @@ let Q = 32,
       name: s.ImpressionNames.ROLE_SUBSCRIPTION_EMOJI_UPSELL,
       properties: {
         location_stack: es,
-        emoji_guild_id: null != (n = null == x ? true : x.guildId) ? n : null,
-        emoji_id: null != (a = null == x ? true : x.id) ? a : null
+        emoji_guild_id: null != (n = null == L ? true : L.guildId) ? n : null,
+        emoji_id: null != (a = null == L ? true : L.id) ? a : null
       }
     }, {
       disableTrack: !en
     });
-    let el = L.Z.getGuildId(),
+    let el = x.Z.getGuildId(),
       ec = (0, B.a)({
         sourceType: E,
         expressionSourceApplication: O,

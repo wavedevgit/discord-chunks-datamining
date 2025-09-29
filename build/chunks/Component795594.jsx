@@ -249,7 +249,7 @@ let ed = e => {
       return null == (r = K.Z.settings.applications) || null == (n = r.appSettings) || null == (t = n[E]) || null == (e = t.appDmSettings) ? true : e.allowMobilePush
     }, [E]), C = S.w.useExperiment({
       location: "oauth2_authorize"
-    }), x = a.bot, j = (0, _.e7)([L.Z], () => L.Z.getDMFromUserId(null == x ? true : x.id)), {
+    }), L = a.bot, j = (0, _.e7)([x.Z], () => x.Z.getDMFromUserId(null == L ? true : L.id)), {
       appDMChannelMuteConfig: M,
       dmChannelMuted: B
     } = (0, _.cj)([k.ZP], () => null == j ? {
@@ -410,9 +410,9 @@ let ed = e => {
         label: e ? Z.ZB.Unmuted : Z.ZB.Muted
       })
     }, eh = i.useCallback(async () => {
-      u()(null != x, "dm channel mute setting requires having a bot user");
+      u()(null != L, "dm channel mute setting requires having a bot user");
       let e = j;
-      null == e && (e = await b.Z.ensurePrivateChannel(x.id)), B ? y.Z.updateAppDMOverrideSettings(null, e, a.id, {
+      null == e && (e = await b.Z.ensurePrivateChannel(L.id)), B ? y.Z.updateAppDMOverrideSettings(null, e, a.id, {
         muted: false
       }, Z.ZB.Unmuted) : (0, g.ZDy)(async () => {
         let {
@@ -423,14 +423,14 @@ let ed = e => {
           applicationId: a.id
         }, n))
       })
-    }, [j, x, B, a.id]), em = () => C.enabled ? (0, r.jsxs)("div", {
+    }, [j, L, B, a.id]), em = () => C.enabled ? (0, r.jsxs)("div", {
       className: en.directMessagesSection,
       children: [(0, r.jsx)(g.X6q, {
         variant: "heading-sm/medium",
         color: "header-primary",
         className: en.dmSettingsHeader,
         children: et.intl.string(et.t.NaZyYG)
-      }), null != x ? (0, r.jsx)(g.j7V, {
+      }), null != L ? (0, r.jsx)(g.j7V, {
         hideBorder: true,
         onChange: eh,
         className: en.dmSettingsSwitch,

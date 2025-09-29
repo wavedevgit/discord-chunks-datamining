@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 747277, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 1272 **/
+/** chunk id: 747277, original params: e,t,n (module,exports,require) **/
 module.exports = {
   controlBar: "controlBar__04a02",
   questInput: "questInput__04a02",

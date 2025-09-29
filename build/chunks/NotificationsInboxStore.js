@@ -41,8 +41,8 @@ function P(e, t, n) {
 }
 let w = {},
   D = null,
-  x = [],
-  L = new Chunk810457.Z,
+  L = [],
+  x = new Chunk810457.Z,
   j = false,
   M = false,
   k = false,
@@ -82,7 +82,7 @@ function Y(e) {
   if (!E.Z.isReady(e)) return;
   let n = m.Z.getBasicChannel(e),
     r = E.Z.getMessages(e);
-  if (r.hasPresent() && 0 !== r.length) return L.addChannelMessages({
+  if (r.hasPresent() && 0 !== r.length) return x.addChannelMessages({
     channel: n,
     channelMessages: r,
     userId: null == (t = v.default.getCurrentUser()) ? true : t.id
@@ -109,7 +109,7 @@ function K() {
     notifyingChannelIds: e,
     staleChannelIds: t
   } = H();
-  D = module, x = exports, a()(null != D, "notifyingChannelIds should not be null");
+  D = module, L = exports, a()(null != D, "notifyingChannelIds should not be null");
   let n = D.filter(e => null == w[e]),
     r = Object.keys(w).filter(e => !(null == D ? true : D.includes(e)));
   if (0 !== D.length && 0 === require.length && 0 === r.length) returnfalse;
@@ -124,11 +124,11 @@ function K() {
         var i, o;
         w[module].loadState = Chunk982183.a7.LOADED, w[module].mostRecentMessageId = null != (o = null == (i = exports.last()) ? true : Chunk512722.id) ? Chunk442837 : w[module].mostRecentMessageId
       }
-    } L.updateChannelIds(D), W()
+    } x.updateChannelIds(D), W()
 }
 
 function z() {
-  w = {}, D = null, x = [], L = new Chunk810457.Z, j = false, M = false, k = false, G = Chunk709054.default.fromTimestamp(Date.now()), B = true, U = false, F = null, Z = null
+  w = {}, D = null, L = [], x = new Chunk810457.Z, j = false, M = false, k = false, G = Chunk709054.default.fromTimestamp(Date.now()), B = true, U = false, F = null, Z = null
 }
 
 function q() {
@@ -138,7 +138,7 @@ function q() {
     null != r && (w[require].loadState = Chunk982183.a7.LOADED, w[require].mostRecentMessageId = null != (t = null == (e = r.last()) ? true : module.id) ? exports : null, W())
   }
   let r = null != (n = Chunk455199.ZP.getSettingsFilteredMentions()) ? require : [];
-  L.addMessages(r.map(e => {
+  x.addMessages(r.map(e => {
     var t;
     return {
       id: e.id,
@@ -176,11 +176,11 @@ function $(e) {
   let s = J(a),
     c = s.mentioned;
   if (!o && !c) {
-    if (!x.includes(i)) returnfalse;
+    if (!L.includes(i)) returnfalse;
     K()
   }
   if (!o && c && !(0, u.ln)(s)) returnfalse;
-  L.addMessage({
+  x.addMessage({
     id: a.id,
     channelId: a.channel_id,
     guildId: null == (r = m.Z.getBasicChannel(a.channel_id)) ? true : r.guild_id,
@@ -207,7 +207,7 @@ function et(e) {
   if (0 === t.length) returnfalse;
   let n = u.ZP.getSettingsFilteredMentions();
   if (null == n || 0 === n.length) returnfalse;
-  L.addMessages(n.map(e => {
+  x.addMessages(n.map(e => {
     var t;
     return {
       id: e.id,
@@ -223,14 +223,14 @@ function en(e) {
   let {
     id: t
   } = e;
-  return L.deleteMessages([t])
+  return x.deleteMessages([t])
 }
 
 function er(e) {
   let {
     ids: t
   } = e;
-  return L.deleteMessages(t)
+  return x.deleteMessages(t)
 }
 
 function ei() {
@@ -330,7 +330,7 @@ function eh(e) {
   let {
     channel: t
   } = e;
-  if (!L.getMessages().some(e => e.channelId === t.id)) returnfalse;
+  if (!x.getMessages().some(e => e.channelId === t.id)) returnfalse;
   X()
 }
 
@@ -338,7 +338,7 @@ function em(e) {
   let {
     guild: t
   } = e;
-  if (!L.getMessages().some(e => e.guildId === t.id)) returnfalse;
+  if (!x.getMessages().some(e => e.guildId === t.id)) returnfalse;
   X()
 }
 
@@ -361,7 +361,7 @@ class eE extends(r = Chunk442837.ZP.Store) {
     })
   }
   getInboxMessages() {
-    return L.getMessages()
+    return x.getMessages()
   }
   getNotifyingChannelIds() {
     return D

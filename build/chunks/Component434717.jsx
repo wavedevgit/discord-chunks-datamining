@@ -1,7 +1,7 @@
-/** Chunk was on 76418 **/
-/** chunk id: 434717, original params: e,n,t (module,exports,require) **/
+/** Chunk was on 96861 **/
+/** chunk id: 434717, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => x
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,71 +22,71 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk834586 = require("./834586.js");
 
-function j(e) {
+function x(e) {
   let {
-    quest: n,
-    sourceQuestContent: t
-  } = e, j = (0, o.ZP)(), N = (0, s.wjy)(j) ? _.BR.DARK : _.BR.LIGHT, y = (0, m.ly)(n), T = (0, d.aM)(), b = r.useMemo(() => {
-    let e = f.r.build(n.config),
-      t = e.defaultWatchVideoTask,
-      a = null == t ? true : t.messages.videoEndCtaSubtitle;
-    return (0, l.Ew)(a) ? e.questType !== i.W.GAMEPLAY || n.config.features.includes(x.S7.NON_GAMING_PLAY_QUEST) || (0, u.Pb)(n) ? g.intl.string(g.t.y8Xf3t) : g.intl.string(g.t.wirwNz) : a
-  }, [n]);
-  return (0, a.jsxs)("div", {
-    className: v.container,
-    children: [(0, a.jsx)(h.Z, {
-      quest: n,
+    quest: t,
+    sourceQuestContent: n
+  } = e, x = (0, s.ZP)(), _ = (0, o.wjy)(x) ? j.BR.DARK : j.BR.LIGHT, b = (0, m.ly)(t), w = (0, u.aM)(), O = a.useMemo(() => {
+    let e = f.r.build(t.config),
+      n = e.defaultWatchVideoTask,
+      r = null == n ? true : n.messages.videoEndCtaSubtitle;
+    return (0, l.Ew)(r) ? e.questType !== i.W.GAMEPLAY || t.config.features.includes(y.S7.NON_GAMING_PLAY_QUEST) || (0, d.Pb)(t) ? v.intl.string(v.t.y8Xf3t) : v.intl.string(v.t.wirwNz) : r
+  }, [t]);
+  return (0, r.jsxs)("div", {
+    className: g.container,
+    children: [(0, r.jsx)(h.Z, {
+      quest: t,
       dimensions: {
         width: 908,
         height: 380
       },
-      className: v.heroDisplayContainer
-    }), (0, a.jsx)("div", {
-      className: v.partnerLogotypeContainer,
-      children: (0, a.jsx)("img", {
-        className: v.partnerLogotype,
-        alt: g.intl.formatToPlainString(g.t.rtm15O, {
-          name: n.config.messages.gameTitle
+      className: g.heroDisplayContainer
+    }), (0, r.jsx)("div", {
+      className: g.partnerLogotypeContainer,
+      children: (0, r.jsx)("img", {
+        className: g.partnerLogotype,
+        alt: v.intl.formatToPlainString(v.t.rtm15O, {
+          name: t.config.messages.gameTitle
         }),
-        src: (0, C.fh)(n, C.eC.LOGO_TYPE, N).url
+        src: (0, C.fh)(t, C.eC.LOGO_TYPE, _).url
       })
-    }), (0, a.jsxs)("div", {
-      className: v.partnerContentContainer,
-      children: [(0, a.jsxs)("div", {
-        className: v.partnerCopyContainer,
-        children: [(0, a.jsx)(s.X6q, {
+    }), (0, r.jsxs)("div", {
+      className: g.partnerContentContainer,
+      children: [(0, r.jsxs)("div", {
+        className: g.partnerCopyContainer,
+        children: [(0, r.jsx)(o.X6q, {
           variant: "heading-lg/bold",
           color: "header-primary",
-          className: v.partnerTitle,
-          children: n.config.messages.questName
-        }), (0, a.jsx)(s.xvT, {
+          className: g.partnerTitle,
+          children: t.config.messages.questName
+        }), (0, r.jsx)(o.xvT, {
           variant: "text-sm/medium",
           color: "text-secondary",
-          children: b
+          children: O
         })]
-      }), (0, a.jsx)("img", {
-        className: v.partnerGameTile,
-        alt: g.intl.formatToPlainString(g.t.rtm15O, {
-          name: n.config.messages.gameTitle
+      }), (0, r.jsx)("img", {
+        className: g.partnerGameTile,
+        alt: v.intl.formatToPlainString(v.t.rtm15O, {
+          name: t.config.messages.gameTitle
         }),
-        src: (0, C.fh)(n, C.eC.GAME_TILE, N).url
+        src: (0, C.fh)(t, C.eC.GAME_TILE, _).url
       })]
-    }), (0, a.jsx)("div", {
-      className: v.partnerCtaContainer,
-      children: (0, a.jsx)(s.zxk, {
+    }), (0, r.jsx)("div", {
+      className: g.partnerCtaContainer,
+      children: (0, r.jsx)(o.zxk, {
         variant: "primary",
         size: "sm",
-        text: y,
+        text: b,
         onClick: () => {
-          (0, u.nc)(n, {
+          (0, d.nc)(t, {
             content: p.jn.REWARD_MODAL,
             ctaContent: c.jZ.OPEN_GAME_LINK,
-            impressionId: T,
-            sourceQuestContent: t
+            impressionId: w,
+            sourceQuestContent: n
           })
         },
         fullWidth: true,
-        icon: s.zFc,
+        icon: o.zFc,
         iconPosition: "end"
       })
     })]

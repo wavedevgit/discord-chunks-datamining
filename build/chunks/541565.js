@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 541565, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 50584 **/
+/** chunk id: 541565, original params: e,n,t (module,exports,require) **/
 module.exports = {
   ctaButtons: "ctaButtons_a77fde",
   cta: "cta_a77fde",

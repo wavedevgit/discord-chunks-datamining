@@ -132,9 +132,9 @@ function X(e) {
     }), (0, r.jsxs)(_.Z, {
       direction: _.Z.Direction.VERTICAL,
       justify: _.Z.Justify.CENTER,
-      className: L.truncatingText,
+      className: x.truncatingText,
       children: [(0, r.jsx)(c.Text, {
-        className: L.__invalid_emojiName,
+        className: x.__invalid_emojiName,
         variant: "text-md/semibold",
         children: (0, r.jsx)(p.Z, {
           children: t.name
@@ -180,7 +180,7 @@ let Q = e => {
           sticker_pack_id: n.pack_id
         }, (0, f.v_)(e)))
       }, [n.pack_id]), u || null == l) return (0, r.jsx)(E.SE, {
-      className: x.popoutLoader
+      className: L.popoutLoader
     });
     let g = d,
       b = () => {
@@ -190,7 +190,7 @@ let Q = e => {
         }), t()
       };
     return (0, r.jsxs)(E.W_, {
-      className: x.popoutContent,
+      className: L.popoutContent,
       children: [(0, r.jsx)(c.X6q, {
         variant: "heading-md/semibold",
         children: n.name
@@ -198,14 +198,14 @@ let Q = e => {
         variant: "text-sm/normal",
         children: K(l, d)
       }), (0, r.jsx)("ul", {
-        className: x.stickersList,
+        className: L.stickersList,
         children: _.map(e => (0, r.jsx)(N.Z, {
           isInteracting: true,
           size: Z,
           sticker: e
         }, e.id))
       }), d && (0, r.jsx)("div", {
-        className: x.packActions,
+        className: L.packActions,
         children: (0, r.jsx)(c.zxk, {
           variant: "secondary",
           size: "sm",
@@ -274,7 +274,7 @@ let Q = e => {
           type: ei
         }, J))
       }), !C) return (0, r.jsx)(E.SE, {
-      className: x.popoutLoader
+      className: L.popoutLoader
     });
     {
       let e = () => {
@@ -287,12 +287,12 @@ let Q = e => {
             } catch (e) {}
           };
           return (0, r.jsxs)("div", {
-            className: L.emojiSection,
+            className: x.emojiSection,
             children: [(0, r.jsx)(X, {
               description: t,
               sticker: n
             }), er && (0, r.jsx)(y.Z, {
-              className: L.ctaButton,
+              className: x.ctaButton,
               subscriptionTier: w.Si.TIER_2,
               size: l.zx.Sizes.SMALL,
               fullWidth: true,
@@ -304,7 +304,7 @@ let Q = e => {
               premiumModalAnalyticsLocation: Q
             }), ea && (0, r.jsx)("div", {
               "data-button-hoisted-classname-wrapper": true,
-              className: L.ctaButton,
+              className: x.ctaButton,
               children: (0, r.jsx)(c.zxk, {
                 variant: "primary",
                 size: "sm",
@@ -324,9 +324,9 @@ let Q = e => {
             },
             a = null != S ? h.JO.createFromDiscoverableGuild(S) : h.JO.createFromGuildRecord(B);
           return (0, r.jsxs)("div", {
-            className: L.guildSection,
+            className: x.guildSection,
             children: [(0, r.jsx)(c.vwX, {
-              className: L.guildTitle,
+              className: x.guildTitle,
               children: Z ? D.intl.string(D.t.kx6pEB) : D.intl.string(D.t.pDE7GR)
             }), (0, r.jsx)(g.Oe, {
               expressionSourceGuild: a,
@@ -335,18 +335,18 @@ let Q = e => {
             }), !Z && (0, r.jsxs)(r.Fragment, {
               children: [(0, r.jsx)(c.P3F, {
                 onClick: i,
-                className: L.showMoreEmojis,
+                className: x.showMoreEmojis,
                 children: (0, r.jsxs)(_.Z, {
                   children: [(0, r.jsx)(c.Text, {
-                    className: L.__invalid_showMoreEmojisLabel,
+                    className: x.__invalid_showMoreEmojisLabel,
                     variant: "text-xs/normal",
                     color: "none",
                     children: D.intl.string(D.t.vtH5ho)
                   }), (0, r.jsx)(c.CJ0, {
                     size: "md",
                     color: "currentColor",
-                    className: o()(L.showMoreEmojisArrow, {
-                      [L.showMoreEmojisArrowCollapsed]: !F
+                    className: o()(x.showMoreEmojisArrow, {
+                      [x.showMoreEmojisArrowCollapsed]: !F
                     })
                   })]
                 })
@@ -354,7 +354,7 @@ let Q = e => {
                 wrap: _.Z.Wrap.WRAP,
                 align: _.Z.Align.START,
                 justify: _.Z.Justify.START,
-                className: L.otherEmojisContainer,
+                className: x.otherEmojisContainer,
                 children: t.map(e => (0, r.jsx)(c.ua7, U(M({
                   text: e.name
                 }, E.b_), {
@@ -364,8 +364,8 @@ let Q = e => {
                       onMouseLeave: i
                     } = t, a = G(t, ["onMouseEnter", "onMouseLeave"]);
                     return (0, r.jsx)("div", U(M({
-                      className: o()(L.otherEmoji, {
-                        [x.nonInteractingSticker]: null != K && K !== e.id
+                      className: o()(x.otherEmoji, {
+                        [L.nonInteractingSticker]: null != K && K !== e.id
                       }),
                       onMouseEnter: () => {
                         null == n || n(), z(e.id)
@@ -390,7 +390,7 @@ let Q = e => {
           })
         };
       return (0, r.jsxs)(E.W_, {
-        className: L.popoutContent,
+        className: x.popoutContent,
         children: [e(), (null != B || null != S) && i()]
       })
     }
@@ -403,7 +403,7 @@ function $(e) {
     sticker: i
   } = e;
   return (0, r.jsx)(E.W_, {
-    className: x.popoutContent,
+    className: L.popoutContent,
     children: (0, r.jsx)(X, {
       sticker: i,
       description: D.intl.format(D.t.hGWuxc, {

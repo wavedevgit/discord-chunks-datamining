@@ -163,7 +163,7 @@ function q() {
       selectedTab: Chunk873546,
       selectedTeenId: o
     },
-    x = Chunk647438.useRef(Chunk695346);
+    L = Chunk647438.useRef(Chunk695346);
   Chunk647438.useEffect(() => {
     Chunk615160.current = Chunk695346
   }), Chunk647438.useEffect(() => {
@@ -187,7 +187,7 @@ function q() {
   }, [Chunk120356, Chunk984370]), Chunk647438.useEffect(() => {
     Chunk210887 && (0, Chunk758119.mN)(Chunk723359.L0.FAMILY_CENTER)
   }, [Chunk210887]);
-  let L = e => {
+  let x = e => {
     f(e)
   };
   return Chunk210887 ? null : (0, Chunk951288.jsxs)("main", {
@@ -212,8 +212,8 @@ function q() {
 function X() {
   let {
     analyticsLocations: e
-  } = (0, Chunk906732.ZP)(Chunk100527.Z.FAMILY_CENTER), t = (0, Chunk880257.Z)(), n = (0, Chunk631885.M8)(), a = (0, Chunk266454.Nj)(Chunk704215.z.FAMILY_CENTER_NEW_BADGE), s = (0, Chunk399606.e7)([Chunk914788.Z], () => Chunk914788.Z.getIsInitialized()), y = (0, Chunk652262.M)(), x = (0, Chunk399606.e7)([Chunk210887.Z], () => Chunk210887.Z.theme), {
-    selectedTab: L,
+  } = (0, Chunk906732.ZP)(Chunk100527.Z.FAMILY_CENTER), t = (0, Chunk880257.Z)(), n = (0, Chunk631885.M8)(), a = (0, Chunk266454.Nj)(Chunk704215.z.FAMILY_CENTER_NEW_BADGE), s = (0, Chunk399606.e7)([Chunk914788.Z], () => Chunk914788.Z.getIsInitialized()), y = (0, Chunk652262.M)(), L = (0, Chunk399606.e7)([Chunk210887.Z], () => Chunk210887.Z.theme), {
+    selectedTab: x,
     handleTabChange: j
   } = (0, Chunk841409.Z)(), M = (0, Chunk313201.Dt)(), k = Chunk594174.default.getCurrentUser(), Y = null != exports, K = Chunk873546 && null != Chunk521450 && !Y;
   (0, Chunk493773.ZP)(() => {

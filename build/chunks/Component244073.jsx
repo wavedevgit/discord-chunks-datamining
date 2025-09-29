@@ -73,9 +73,9 @@ class D extends Chunk647438.PureComponent {
   renderChannelLink(e) {
     let {
       guild: t
-    } = this.props, n = (0, p.F6)(e, E.default, _.Z), r = null != t ? "".concat(n, " / ").concat(t.name) : n, s = null != t ? t.id : j.ME;
+    } = this.props, n = (0, p.F6)(e, E.default, _.Z), r = null != t ? "".concat(n, " / ").concat(t.name) : n, s = null != t ? t.id : Z.ME;
     return (0, i.jsx)(l.rU, {
-      to: j.Z5c.CHANNEL(s),
+      to: Z.Z5c.CHANNEL(s),
       onClick: t => {
         t.stopPropagation(), u.Z.channelListScrollTo(s, e.id)
       },
@@ -195,9 +195,9 @@ function k(e) {
     }
     return r
   }(e, ["context", "lobbyId", "channel"]);
-  let o = (0, a.e7)([v.Z], () => v.Z.getGuild(null == r ? true : r.getGuildId())),
+  let o = (0, a.e7)([b.Z], () => b.Z.getGuild(null == r ? true : r.getGuildId())),
     l = (0, a.e7)([x.Z], () => null != r && x.Z.hasVideo(r.id)),
-    [c, d] = (0, a.Wu)([b.Z], () => [b.Z.isSelfMute(t) || b.Z.isSelfMutedTemporarily(t), b.Z.isSelfDeaf(t)]),
+    [c, d] = (0, a.Wu)([v.Z], () => [v.Z.isSelfMute(t) || v.Z.isSelfMutedTemporarily(t), v.Z.isSelfDeaf(t)]),
     [u, h, p] = (0, a.Wu)([S.Z], () => [S.Z.getConnectionState(n), S.Z.getLastPing(n), S.Z.getQuality(n)]);
   return (0, i.jsx)(D, T(N({}, s), {
     context: t,

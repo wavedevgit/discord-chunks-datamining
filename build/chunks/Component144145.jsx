@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 144145, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => P
 }), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -58,12 +58,12 @@ function N(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let P = Chunk726542.Z.get(Chunk981631.ABu.XBOX).name;
+let j = Chunk726542.Z.get(Chunk981631.ABu.XBOX).name;
 
-function j(e) {
+function P(e) {
   let {
     currentActivities: t
-  } = e, n = t.length > 1, j = function(e) {
+  } = e, n = t.length > 1, P = function(e) {
     let {
       currentActivities: t
     } = e, n = (0, l.e7)([b.Z], () => b.Z.getAccounts().some(e => e.type === c.Z.get(S.ABu.XBOX).type)), i = t.some(e => {
@@ -78,7 +78,7 @@ function j(e) {
         section: S.oAB.CONNECTIONS
       }),
       label: C.intl.formatToPlainString(C.t.XWSHTU, {
-        platform: P
+        platform: j
       })
     })
   }(e), x = function(e) {
@@ -169,5 +169,5 @@ function j(e) {
       })
     }(e, n))
   }
-  return [j, ...A]
+  return [P, ...A]
 }

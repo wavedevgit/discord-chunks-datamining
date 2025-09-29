@@ -299,7 +299,7 @@ function D(e, t, n) {
   }
 }
 
-function x(e, t, n, i) {
+function L(e, t, n, i) {
   let a = w(n, i, t, false),
     o = (0, u.lm)(i, e);
   if (!t) {
@@ -332,7 +332,7 @@ function x(e, t, n, i) {
   })
 }
 
-function L(e) {
+function x(e) {
   let {
     status: t,
     isMobile: n,
@@ -458,7 +458,7 @@ function k(e) {
     "aria-label": S,
     imageClassName: A,
     ref: C
-  } = e, N = n !== p.Skl.UNKNOWN ? n : null, R = (0, m.UC)(i), D = null != N ? Math.ceil((R.status * m.D6 - R.status) / 2) : 0, L = R.size + D, k = (0, u.vj)(N, a);
+  } = e, N = n !== p.Skl.UNKNOWN ? n : null, R = (0, m.UC)(i), D = null != N ? Math.ceil((R.status * m.D6 - R.status) / 2) : 0, x = R.size + D, k = (0, u.vj)(N, a);
   return (0, r.jsx)(j, v(y({}, e), {
     ariaLabel: S,
     ariaHidden: T,
@@ -467,9 +467,9 @@ function k(e) {
     typingOffset: D,
     children: (0, r.jsxs)("svg", {
       ref: C,
-      width: L,
-      height: L,
-      viewBox: "0 0 ".concat(L, " ").concat(L),
+      width: x,
+      height: x,
+      viewBox: "0 0 ".concat(x, " ").concat(x),
       className: o()(E.mask, E.svg),
       "aria-hidden": true,
       children: [(0, r.jsx)("foreignObject", {
@@ -484,7 +484,7 @@ function k(e) {
           isSpeaking: g,
           className: A
         })
-      }), null != N && null != I ? x(I, s, R, N) : null, null != N ? (0, r.jsx)(d.u, {
+      }), null != N && null != I ? L(I, s, R, N) : null, null != N ? (0, r.jsx)(d.u, {
         text: b ? (0, _.u5)(N) : null,
         "aria-label": false,
         position: "top",
@@ -545,14 +545,14 @@ function B(e) {
     pulseStatusIcon: Z
   } = e, F = (0, u.vj)(T, N), V = i.useId(), H = i.useId(), [Y] = i.useState(() => y({
     fill: a
-  }, L({
+  }, x({
     size: b,
     status: n,
     isMobile: t,
     isTyping: false
   }))), W = i.useMemo(() => y({
     fill: F
-  }, L({
+  }, x({
     size: b,
     status: T,
     isMobile: f,
@@ -626,7 +626,7 @@ function B(e) {
           isSpeaking: g,
           className: B
         })
-      }), null != w && x(w, f, en, T), (0, r.jsx)(d.u, {
+      }), null != w && L(w, f, en, T), (0, r.jsx)(d.u, {
         text: R ? (0, _.u5)(T) : null,
         "aria-label": false,
         position: "top",

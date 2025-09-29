@@ -39,7 +39,7 @@ function p(e) {
     pendingGlobalName: b,
     user: p,
     guildMember: N
-  }), x = true !== T ? T : null != (n = null == N ? true : N.displayNameStyles) ? n : p.displayNameStyles, L = () => {
+  }), L = true !== T ? T : null != (n = null == N ? true : N.displayNameStyles) ? n : p.displayNameStyles, x = () => {
     if (null != N && null !== g && (null != N.avatar || null != g)) return (0, r.jsx)(l.Z, {
       user: p,
       nickname: D
@@ -50,9 +50,9 @@ function p(e) {
     inert: true,
     children: [(0, r.jsx)(o.Z, {
       user: p,
-      usernameIcon: L(),
+      usernameIcon: x(),
       nickname: D,
-      displayNameStyles: x,
+      displayNameStyles: L,
       pronouns: w,
       isTryItOut: S,
       tags: (0, r.jsx)(a.Z, {

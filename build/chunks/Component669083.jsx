@@ -2,7 +2,7 @@
 /** chunk id: 669083, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => Z
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -49,7 +49,7 @@ function S() {
     text_activation_hotkey: null != Chunk951288 ? (0, Chunk13140.BB)(Chunk951288.shortcut) : null
   })
 }
-class Z extends Chunk647438.PureComponent {
+class C extends Chunk647438.PureComponent {
   componentDidMount() {
     Chunk13245.Z.track(Chunk981631.rMx.SETTINGS_PANE_VIEWED, {
       settings_type: "overlay",
@@ -277,7 +277,7 @@ class Z extends Chunk647438.PureComponent {
   }
 }
 
-function j(e) {
+function Z(e) {
   let {
     onClose: t
   } = e, {
@@ -299,7 +299,7 @@ function j(e) {
   })), u = (0, y.Z)({
     location: "Overlay Settings"
   });
-  return (0, i.jsx)(Z, {
+  return (0, i.jsx)(C, {
     onClose: t,
     avatarSizeMode: n,
     displayNameMode: r,

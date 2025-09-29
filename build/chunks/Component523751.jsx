@@ -136,7 +136,7 @@ let D = {
   [Chunk284363.Q.NONE]: {}
 };
 
-function x(e) {
+function L(e) {
   let {
     guildTraits: t
   } = e;
@@ -166,7 +166,7 @@ function x(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   let {
     badgeType: t,
     guildTraits: n
@@ -191,7 +191,7 @@ function L(e) {
         variant: "text-xs/medium",
         children: o
       }) : null]
-    }), n.premium ? (0, r.jsx)(x, {
+    }), n.premium ? (0, r.jsx)(L, {
       guildTraits: n
     }) : null]
   })
@@ -212,14 +212,14 @@ function j(e) {
     "aria-label": N = false
   } = e;
   let w = null != (a = P(e, ["guild", "tooltipColor", "tooltipPosition", "className", "flowerStarClassName", "iconClassName", "badgeStrokeColor", "badgeColor", "disableBoostClick", "aria-label"]).size) ? a : 18,
-    x = (0, s.e7)([m.default, h.ZP], () => {
+    L = (0, s.e7)([m.default, h.ZP], () => {
       let e = m.default.getCurrentUser();
       return h.ZP.isMember(null == o ? true : o.id, null == e ? true : e.id)
     }),
     j = (0, s.e7)([p.Z], () => p.Z.theme),
     M = (0, O.XX)(o),
     k = (0, y.i)(M),
-    U = i.useMemo(() => M.premium && x && !A, [A, M.premium, x]),
+    U = i.useMemo(() => M.premium && L && !A, [A, M.premium, L]),
     G = i.useCallback(e => {
       U && (e.stopPropagation(), e.preventDefault(), (0, f.f)({
         guildId: o.id,
@@ -250,7 +250,7 @@ function j(e) {
     color: l,
     position: d,
     "aria-label": N,
-    text: (0, r.jsx)(L, {
+    text: (0, r.jsx)(x, {
       badgeType: k,
       guildTraits: M
     }),

@@ -69,12 +69,12 @@ function I(e) {
     maxCharacterCount: T,
     showRemainingCharsAfterCount: S,
     className: A
-  } = e, C = (0, o.e7)([f.default], () => _.ZP.canUseIncreasedMessageLength(f.default.getCurrentUser())), N = (0, u.Z)(), R = null != T ? T : N, P = null != (b = null != S ? S : T) ? b : N / 10, w = I.length, D = null != O.upsellLongMessages && (null != w ? w : 0) > h.J6R && C, x = null != O.upsellLongMessages && !C, L = (null == (n = (0, d.N)()) || null == (t = n.subscription_trial) ? true : t.sku_id) === m.Si.TIER_2, j = R - w, M = j > P, k = j < 0 && L, U = 0 === j ? g.intl.string(g.t.tU6YQ0) : j > 0 ? g.intl.formatToPlainString(g.t.qH8uFR, {
+  } = e, C = (0, o.e7)([f.default], () => _.ZP.canUseIncreasedMessageLength(f.default.getCurrentUser())), N = (0, u.Z)(), R = null != T ? T : N, P = null != (b = null != S ? S : T) ? b : N / 10, w = I.length, D = null != O.upsellLongMessages && (null != w ? w : 0) > h.J6R && C, L = null != O.upsellLongMessages && !C, x = (null == (n = (0, d.N)()) || null == (t = n.subscription_trial) ? true : t.sku_id) === m.Si.TIER_2, j = R - w, M = j > P, k = j < 0 && x, U = 0 === j ? g.intl.string(g.t.tU6YQ0) : j > 0 ? g.intl.formatToPlainString(g.t.qH8uFR, {
     count: j
   }) : g.intl.string(g.t.YSRIqa), {
     analyticsLocations: G
   } = (0, c.ZP)(l.Z.CHARACTER_COUNT);
-  if (!(D && j >= 0 || !M || x && !M)) return null;
+  if (!(D && j >= 0 || !M || L && !M)) return null;
   let B = j >= 0;
   return (0, r.jsx)(c.Gt, {
     value: G,
@@ -108,7 +108,7 @@ function I(e) {
         children: g.intl.format(g.t.qH8uFR, {
           count: j
         })
-      }), x && !M ? (0, r.jsx)(p.Z, {
+      }), L && !M ? (0, r.jsx)(p.Z, {
         className: E.upsell,
         iconOnly: (null == (i = O.upsellLongMessages) ? true : i.iconOnly) || false,
         remaining: j

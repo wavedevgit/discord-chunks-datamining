@@ -114,8 +114,8 @@ let K = Object.freeze({
       themeName: n,
       analyticsLocations: r
     } = e;
-    A.default.track(x.rMx.CLIENT_THEME_UPDATED, {
-      feature_name: L.QP.CLIENT_THEME,
+    A.default.track(L.rMx.CLIENT_THEME_UPDATED, {
+      feature_name: x.QP.CLIENT_THEME,
       theme_name: n,
       is_persisted: t,
       location_stack: r
@@ -157,7 +157,7 @@ let K = Object.freeze({
       isPreview: a,
       isCoachmark: o
     } = e;
-    if ((null == (n = (0, b.N)()) || null == (t = n.subscription_trial) ? true : t.sku_id) === L.Si.TIER_2 && a) return null;
+    if ((null == (n = (0, b.N)()) || null == (t = n.subscription_trial) ? true : t.sku_id) === x.Si.TIER_2 && a) return null;
     let l = (0, s.EQ)({
       type: i,
       isPreview: a,
@@ -191,10 +191,10 @@ let K = Object.freeze({
       isCoachmark: o
     } = e, {
       type: s
-    } = i.useContext(z), [c] = (0, l.Wu)([N.Z], () => [N.Z.isPreview]), u = (null == (n = (0, b.N)()) || null == (t = n.subscription_trial) ? true : t.sku_id) === L.Si.TIER_2;
+    } = i.useContext(z), [c] = (0, l.Wu)([N.Z], () => [N.Z.isPreview]), u = (null == (n = (0, b.N)()) || null == (t = n.subscription_trial) ? true : t.sku_id) === x.Si.TIER_2;
     return "EDITOR" === s && c && u ? (0, r.jsx)(y.ZP, {
-      type: L.cd.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
-      subscriptionTier: L.Si.TIER_2,
+      type: x.cd.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
+      subscriptionTier: x.Si.TIER_2,
       children: U.intl.format(U.t.G8yQXl, {
         onPremiumClick: () => E.z
       })
@@ -238,7 +238,7 @@ let K = Object.freeze({
             isPersisted: !g,
             analyticsLocations: u,
             themeName: c.Us[e.id]
-          }), g && a.v2EditorEnabled && "SETTINGS" === o ? x(e) : (0, f.ZI)({
+          }), g && a.v2EditorEnabled && "SETTINGS" === o ? L(e) : (0, f.ZI)({
             backgroundGradientPresetId: e.id,
             theme: e.theme,
             useSystemTheme: g ? j.KW.OFF : true
@@ -247,13 +247,13 @@ let K = Object.freeze({
           v(e => e + 1)
         }
       },
-      x = async e => {
+      L = async e => {
         await (0, f.ZI)({
           backgroundGradientPresetId: e.id,
           theme: e.theme,
           useSystemTheme: g ? j.KW.OFF : true
         }, M.fy.SLOW_USER_ACTION), (0, m.XO)(m.wh.CLIENT_THEMES), (0, S.default)()
-      }, L = () => {
+      }, x = () => {
         if (!b) return null;
         let e = D.qt[c.Us.EASTER_EGG];
         if (null == e) return null;
@@ -297,7 +297,7 @@ let K = Object.freeze({
         tabIndex: 0 !== n || t ? true : 0,
         showBadge: false,
         showLockedBadge: false
-      }, e.id)), L()]
+      }, e.id)), x()]
     })
   },
   ee = e => {

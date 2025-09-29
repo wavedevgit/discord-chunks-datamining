@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk393903 = require("./393903.js"),
   Chunk448986 = require("./448986.js"),
@@ -18,7 +18,7 @@ function p(e, t, n) {
   return n * (Math.max(e - t.left, 0) / t.width)
 }
 
-function m(e, t, n) {
+function f(e, t, n) {
   return n.left + e / t * n.width
 }
 
@@ -26,111 +26,111 @@ function v(e) {
   let {
     percent: t,
     animate: n,
-    interactionEnabled: a,
+    interactionEnabled: o,
     backgroundColor: v,
-    preloadedBuffers: g,
-    duration: _,
-    maxSeekableTime: C,
-    onClick: E,
-    onScrubBack: S,
-    onScrubForward: b
-  } = e, [O, h] = o.useState(null), [y, j] = o.useState(null), [x, T] = o.useState(null), [D, P] = o.useState(false), I = o.useRef(null), R = e => {
-    I.current = e, h(e)
+    preloadedBuffers: E,
+    duration: g,
+    maxSeekableTime: O,
+    onClick: b,
+    onScrubBack: h,
+    onScrubForward: S
+  } = e, [C, _] = l.useState(null), [y, j] = l.useState(null), [x, T] = l.useState(null), [D, R] = l.useState(false), P = l.useRef(null), I = e => {
+    P.current = e, _(e)
   };
-  o.useEffect(() => {
-    null != O && (null == C ? T(null) : T(m(C, _, O)))
-  }, [O, C, _]);
-  let k = (0, c.Z)(e => {
-      R(e.contentRect)
+  l.useEffect(() => {
+    null != C && (null == O ? T(null) : T(f(O, g, C)))
+  }, [C, O, g]);
+  let N = (0, c.Z)(e => {
+      I(e.contentRect)
     }),
-    N = (0, s.y)(k);
-  o.useLayoutEffect(() => {
-    null != N.current && R(N.current.getBoundingClientRect())
-  }, [N]), o.useEffect(() => {
+    k = (0, s.y)(N);
+  l.useLayoutEffect(() => {
+    null != k.current && I(k.current.getBoundingClientRect())
+  }, [k]), l.useEffect(() => {
     let e = () => {
-      null != N.current && R(N.current.getBoundingClientRect())
+      null != k.current && I(k.current.getBoundingClientRect())
     };
     return window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
-  }, [N]);
-  let A = e => {
+  }, [k]);
+  let w = e => {
       j(e.clientX)
     },
-    w = o.useCallback(e => {
+    A = l.useCallback(e => {
       let {
         key: t
       } = e;
-      t === d.mR.ArrowLeft && null != S ? (e.preventDefault(), e.stopPropagation(), S()) : t === d.mR.ArrowRight && null != b && (e.preventDefault(), e.stopPropagation(), b())
-    }, [S, b]),
-    L = null != y && null != O ? p(y, O, _) : 0,
+      t === d.mR.ArrowLeft && null != h ? (e.preventDefault(), e.stopPropagation(), h()) : t === d.mR.ArrowRight && null != S && (e.preventDefault(), e.stopPropagation(), S())
+    }, [h, S]),
+    L = null != y && null != C ? p(y, C, g) : 0,
     M = (0, u.yv)(L),
-    B = null != O ? O.right - m(t / 100 * _, _, O) : null,
-    V = null != y && null != O ? O.right - y : null,
-    F = null != x && null != O ? O.right - x : null;
+    V = null != C ? C.right - f(t / 100 * g, g, C) : null,
+    Z = null != y && null != C ? C.right - y : null,
+    B = null != x && null != C ? C.right - x : null;
   return (0, r.jsxs)("div", {
-    className: f.cont,
-    ref: N,
-    children: [(0, r.jsxs)(i.P3F, {
-      className: l()(f.hitboxArea, {
-        [f.interactionEnabled]: a
+    className: m.cont,
+    ref: k,
+    children: [(0, r.jsxs)(a.P3F, {
+      className: i()(m.hitboxArea, {
+        [m.interactionEnabled]: o
       }),
       ignoreKeyPress: true,
       onClick: e => {
-        a && null != E && E(p(e.clientX, e.currentTarget.getBoundingClientRect(), _))
+        o && null != b && b(p(e.clientX, e.currentTarget.getBoundingClientRect(), g))
       },
       onMouseEnter: e => {
-        a && (null != N.current && R(N.current.getBoundingClientRect()), P(true), A(e))
+        o && (null != k.current && I(k.current.getBoundingClientRect()), R(true), w(e))
       },
       onMouseLeave: e => {
-        a && (P(false), j(null))
+        o && (R(false), j(null))
       },
       onMouseMove: e => {
-        a && D && A(e)
+        o && D && w(e)
       },
-      onKeyDown: w,
-      tabIndex: a ? true : false,
+      onKeyDown: A,
+      tabIndex: o ? true : false,
       focusProps: {
         offset: {
           top: 12,
           bottom: 12
         }
       },
-      children: [null == g ? true : g.map(e => (0, r.jsx)("div", {
-        className: l()(f.buffer, {
-          [f.bufferHovered]: D
+      children: [null == E ? true : E.map(e => (0, r.jsx)("div", {
+        className: i()(m.buffer, {
+          [m.bufferHovered]: D
         }),
         style: {
           width: "".concat(100 * e.size, "%"),
           left: "".concat(100 * e.start, "%")
         }
-      }, "".concat(e.start, ":").concat(e.size))), !a && null != F && F > 0 && (0, r.jsx)("div", {
-        className: f.seekableBar,
+      }, "".concat(e.start, ":").concat(e.size))), !o && null != B && B > 0 && (0, r.jsx)("div", {
+        className: m.seekableBar,
         style: {
-          right: null != F ? "".concat(F, "px") : "auto",
-          opacity: +(null != F)
+          right: null != B ? "".concat(B, "px") : "auto",
+          opacity: +(null != B)
         }
-      }), (0, r.jsx)(i.Exd, {
-        className: f.progress,
+      }), (0, r.jsx)(a.Exd, {
+        className: m.progress,
         percent: t,
         foregroundColor: "#FFFFFF",
         backgroundColor: null != v ? v : true,
-        size: D ? i.Exd.Sizes.XSMALL : i.Exd.Sizes.XXSMALL,
+        size: D ? a.Exd.Sizes.XSMALL : a.Exd.Sizes.XXSMALL,
         animate: n
-      }), D && null != M && (0, r.jsx)(i.Text, {
-        className: f.timeDisplay,
+      }), D && null != M && (0, r.jsx)(a.Text, {
+        className: m.timeDisplay,
         variant: "text-xs/normal",
         style: {
-          right: null != V ? "".concat(V - 10, "px") : "auto",
+          right: null != Z ? "".concat(Z - 10, "px") : "auto",
           color: "#FFFFFF"
         },
         children: M
-      }), D && a && null != B && (0, r.jsx)("div", {
-        className: f.grabber,
+      }), D && o && null != V && (0, r.jsx)("div", {
+        className: m.grabber,
         style: {
-          right: "".concat(B - 6, "px")
+          right: "".concat(V - 6, "px")
         }
       })]
     }), (0, r.jsx)("div", {
-      className: f.progressGlow,
+      className: m.progressGlow,
       style: {
         width: "".concat(t, "%")
       }

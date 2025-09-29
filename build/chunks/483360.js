@@ -4,7 +4,7 @@
 let r;
 require.d(exports, {
   Cq: () => eH,
-  ZP: () => e6,
+  ZP: () => e5,
   gF: () => eg,
   k1: () => eY,
   mB: () => eV
@@ -134,8 +134,8 @@ let eE = new Chunk710845.Z("AutocompleteUtils"),
   eP = 8,
   ew = 1,
   eD = 1e3,
-  ex = .2,
-  eL = .1,
+  eL = .2,
+  ex = .1,
   ej = 50,
   eM = () => true,
   ek = /(\t|\s)/,
@@ -166,23 +166,23 @@ function eH(e) {
       a = r.filter(e => (0, ee.lM)(e));
       break;
     case el.h8.USER:
-      a = r.filter(e => e instanceof x.Sf && e.type === es.d4z.DM);
+      a = r.filter(e => e instanceof L.Sf && e.type === es.d4z.DM);
       break;
     case el.h8.GROUP_DM:
-      a = r.filter(e => e instanceof x.Sf && e.isMultiUserDM());
+      a = r.filter(e => e instanceof L.Sf && e.isMultiUserDM());
       break;
     case el.h8.TEXT_CHANNEL:
-      a = r.filter(e => e instanceof x.Sf && (0, x.r8)(e.type));
+      a = r.filter(e => e instanceof L.Sf && (0, L.r8)(e.type));
       break;
     case el.h8.VOICE_CHANNEL:
-      a = r.filter(e => e instanceof x.Sf && e.isGuildVocal())
+      a = r.filter(e => e instanceof L.Sf && e.isGuildVocal())
   }
   let o = {};
   for (let t of a) {
     let {
       id: n
     } = t, r = k.Z.getScoreWithoutFetchingLatest(n);
-    if (e === el.h8.USER && t instanceof x.mn) {
+    if (e === el.h8.USER && t instanceof L.mn) {
       if (t.type === es.d4z.DM) o[n = t.getRecipientId()] = 1 + r / i;
       else if (t.type === es.d4z.GROUP_DM) {
         let e = t.recipients.length;
@@ -190,8 +190,8 @@ function eH(e) {
       }
     } else o[n] = 1 + r / i
   }
-  for (let e of W.Z.getFriendIDs()) o[e] = (null != (t = o[e]) ? t : 1) + ex;
-  for (let e of M.Z.getDMUserIds()) o[e] = (null != (n = o[e]) ? n : 1) + eL;
+  for (let e of W.Z.getFriendIDs()) o[e] = (null != (t = o[e]) ? t : 1) + eL;
+  for (let e of M.Z.getDMUserIds()) o[e] = (null != (n = o[e]) ? n : 1) + ex;
   return o
 }
 let eY = [Chunk984933.sH, Chunk984933.Zb, Chunk981631.d4z.GUILD_CATEGORY];
@@ -288,15 +288,15 @@ function eX(e) {
 }
 
 function eQ(e) {
-  return e === G.sH || e !== G.Zb && !!(0, x.Q5)(e)
+  return e === G.sH || e !== G.Zb && !!(0, L.Q5)(e)
 }
 
 function eJ(e, t, n) {
-  return e === t || (!!n || !!(0, x.Km)(t)) && (e === G.sH ? (0, x.r8)(t) || (0, x.bw)(t) : e === G.Zb && (0, x.bw)(t))
+  return e === t || (!!n || !!(0, L.Km)(t)) && (e === G.sH ? (0, L.r8)(t) || (0, L.bw)(t) : e === G.Zb && (0, L.bw)(t))
 }
 
 function e$(e, t) {
-  return e === G.sH && (0, x.bw)(t)
+  return e === G.sH && (0, L.bw)(t)
 }
 
 function e0(e) {
@@ -389,7 +389,7 @@ let e8 = (0, Chunk251625.oH)((e, t, n) => {
       recipients: a
     }
   }),
-  e6 = {
+  e5 = {
     queryFriends(e) {
       let {
         query: t,
@@ -544,7 +544,7 @@ let e8 = (0, Chunk251625.oH)((e, t, n) => {
         y = k.Z.getMaxScore();
       for (let e of t) {
         var O;
-        if (!eJ(l, e.type, null != r) || (0, x.Km)(e.type) && !H.Z.can(u ? e.accessPermissions : es.Plq.VIEW_CHANNEL, e) || !o(e)) continue;
+        if (!eJ(l, e.type, null != r) || (0, L.Km)(e.type) && !H.Z.can(u ? e.accessPermissions : es.Plq.VIEW_CHANNEL, e) || !o(e)) continue;
         let t = [...m],
           i = e.name.toLocaleLowerCase(),
           s = p && n === e.id,
@@ -559,7 +559,7 @@ let e8 = (0, Chunk251625.oH)((e, t, n) => {
             c = Math.min(ey - eI, c)
           }
           0 !== c && !(t.length > 1) && (1 !== t.length || t[0].isFullMatch || s) && (e$(l, e.type) && (c = Math.max(c - eT, eI / 2)), e.isThread() && (e.isActiveThread() || (c -= eS), w.Z.hasJoined(e.id) || (c -= eA)), c = Math.min(c + Math.min(null != (O = k.Z.getScoreWithoutFetchingLatest(e.id)) ? O : 0 / y, 1) * eC, c >= ey ? eb : ey), b.push({
-            type: (0, x.bw)(e.type) ? el.h8.VOICE_CHANNEL : el.h8.TEXT_CHANNEL,
+            type: (0, L.bw)(e.type) ? el.h8.VOICE_CHANNEL : el.h8.TEXT_CHANNEL,
             record: e,
             score: eV(c, d[e.id]),
             comparator: (0, _.F6)(e, q.default, W.Z),
@@ -838,7 +838,7 @@ let e8 = (0, Chunk251625.oH)((e, t, n) => {
       })) : [], u = c.length, d = t.toLowerCase(), f = [];
       if (u < es.rnv && o) {
         let e = F.Z.getGuild(n);
-        null != e && (s()(Z.Z.getSortedRoles(e.id)).filter(e => (e.mentionable || r || l) && a()(d, e.name.toLowerCase()) && !(0, L.fI)(e)).take(es.rnv - u).forEach(e => {
+        null != e && (s()(Z.Z.getSortedRoles(e.id)).filter(e => (e.mentionable || r || l) && a()(d, e.name.toLowerCase()) && !(0, x.fI)(e)).take(es.rnv - u).forEach(e => {
           f.push(e)
         }), u += f.length)
       }
@@ -887,7 +887,7 @@ let e8 = (0, Chunk251625.oH)((e, t, n) => {
         id: ec.HY.CUSTOMIZE_COMMUNITY,
         name: ed.intl.string(ed.t.h9mGOD)
       }], c = [];
-      for (let e of l)(e.id !== ec.HY.SERVER_GUIDE || a) && (e.id !== ec.HY.CHANNEL_BROWSER || o) && (e.id !== ec.HY.CUSTOMIZE_COMMUNITY || s) && eK(e.name.toLocaleLowerCase(), i, false) > 0 && c.push(new x.nl({
+      for (let e of l)(e.id !== ec.HY.SERVER_GUIDE || a) && (e.id !== ec.HY.CHANNEL_BROWSER || o) && (e.id !== ec.HY.CUSTOMIZE_COMMUNITY || s) && eK(e.name.toLocaleLowerCase(), i, false) > 0 && c.push(new L.nl({
         id: e.id,
         name: e.name,
         type: es.d4z.UNKNOWN,

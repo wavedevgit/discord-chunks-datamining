@@ -110,8 +110,8 @@ function T(e) {
     onPaymentSourceAdd: w
   } = e, {
     application: D,
-    selectedPlan: x,
-    hasAcceptedTerms: L,
+    selectedPlan: L,
+    hasAcceptedTerms: x,
     purchaseType: j,
     paymentSourceId: M,
     activeSubscription: k,
@@ -123,7 +123,7 @@ function T(e) {
     location: "SubscriptionReviewButton"
   }), Z = v({
     purchaseType: j,
-    plan: x,
+    plan: L,
     premiumSubscription: E,
     isGift: y,
     planGroup: T,
@@ -177,16 +177,16 @@ function T(e) {
   });
   if (A) return (0, r.jsx)(o.zxk, {
     variant: "expressive",
-    "data-testid": L ? "purchase" : "submitButton",
+    "data-testid": x ? "purchase" : "submitButton",
     text: Z,
-    onClick: L ? C : () => I(n, f),
+    onClick: x ? C : () => I(n, f),
     loading: m,
     iconPosition: "start",
     icon: () => (0, r.jsx)(o.SrA, {
       color: "currentColor"
     })
   });
-  else if (!L) return (0, r.jsx)(o.ua7, {
+  else if (!x) return (0, r.jsx)(o.ua7, {
     text: g.intl.string(g.t.XdvBLS),
     children: e => (0, r.jsx)(o.zxk, O(b({
       variant: "active",

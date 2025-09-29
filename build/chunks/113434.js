@@ -4,7 +4,7 @@
 require.d(exports, {
   B4: () => ek,
   B6: () => e_,
-  Bd: () => ex,
+  Bd: () => eL,
   GI: () => eC,
   Gd: () => eZ,
   I: () => eD,
@@ -620,11 +620,11 @@ function eD(e) {
   }
 }
 
-function ex(e, t, n) {
+function eL(e, t, n) {
   var r, i;
   let a = eb(e),
     o = (0, A.b7)(e),
-    s = (0, x.DD)({
+    s = (0, L.DD)({
       quest: e,
       taskDetails: a,
       location: M.dr.QUEST_HOME_DESKTOP,
@@ -639,12 +639,12 @@ function ex(e, t, n) {
   }) : null != o ? o.description : null != s ? s : null
 }
 
-function eL(e) {
+function ex(e) {
   return [(0, c.e7)([N.Z], () => N.Z.selectedTaskPlatform(e)), r.useCallback(t => (0, C.OR)(e, t), [e])]
 }
 
 function ej(e, t) {
-  let [n, i] = eL(e.id), s = r.useMemo(() => (0, A.yH)(e), [e]), l = s.includes(M.cd.DESKTOP), c = s.includes(M.cd.CONSOLE), u = ep(e), d = eh(e), f = r.useMemo(() => (0, a.EQ)(t).with({
+  let [n, i] = ex(e.id), s = r.useMemo(() => (0, A.yH)(e), [e]), l = s.includes(M.cd.DESKTOP), c = s.includes(M.cd.CONSOLE), u = ep(e), d = eh(e), f = r.useMemo(() => (0, a.EQ)(t).with({
     percentComplete: 0
   }, () => null).with({
     taskType: o.X.PLAY_ON_DESKTOP
@@ -777,7 +777,7 @@ function eB(e) {
     popoutTargetElementRef: l,
     onGameSheetOpened: c,
     onGameSheetClosed: u
-  } = e, d = e_(r.useMemo(() => j.r.build(i.config).rewardsExpireAt, [i.config])), f = eb(i), _ = ey(i), p = (null == (t = i.userStatus) ? true : t.completedAt) != null, h = (null == (n = i.userStatus) ? true : n.enrolledAt) != null, m = f.percentComplete > 0, g = eg(i), E = (0, x.DD)({
+  } = e, d = e_(r.useMemo(() => j.r.build(i.config).rewardsExpireAt, [i.config])), f = eb(i), _ = ey(i), p = (null == (t = i.userStatus) ? true : t.completedAt) != null, h = (null == (n = i.userStatus) ? true : n.enrolledAt) != null, m = f.percentComplete > 0, g = eg(i), E = (0, L.DD)({
     quest: i,
     location: M.dr.QUESTS_BAR,
     questContent: R.jn.QUEST_BAR_V2,
@@ -816,7 +816,7 @@ function eZ(e, t) {
   return r.useMemo(() => {
     if (null == n) return null;
     let e = null != t ? t : (0, l.wj)(i) ? k.BRd.DARK : k.BRd.LIGHT;
-    return (0, L.fh)(n, L.eC.COSPONSOR_LOGO_TYPE, e)
+    return (0, x.fh)(n, x.eC.COSPONSOR_LOGO_TYPE, e)
   }, [i, t, n])
 }
 

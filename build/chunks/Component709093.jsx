@@ -84,7 +84,7 @@ let A = function(e) {
     isEligibleForTrial: O = false,
     showTrialBadge: A = false,
     showDiscountBadge: C = false
-  } = e, N = (0, o.apv)((0, s.ZP)()), R = y === m.p9.TIER_2, P = (0, u.Fv)(O), w = (0, p.Ng)(), D = null == w || null == (t = w.discount) ? true : t.amount, x = R ? I : v, L = R ? _.Z : f.Z, {
+  } = e, N = (0, o.apv)((0, s.ZP)()), R = y === m.p9.TIER_2, P = (0, u.Fv)(O), w = (0, p.Ng)(), D = null == w || null == (t = w.discount) ? true : t.amount, L = R ? I : v, x = R ? _.Z : f.Z, {
     step: j,
     breadcrumbs: M,
     startedPaymentFlowWithPaymentSourcesRef: k,
@@ -131,12 +131,12 @@ let A = function(e) {
         onClick: b,
         className: g.closeButtonPosition
       }), (0, r.jsx)("img", {
-        src: x,
+        src: L,
         alt: "",
         className: V ? g.bigWumpus : g.wumpus
       }), (0, r.jsx)("div", {
         className: g.textContainer,
-        children: (0, r.jsx)(L, {
+        children: (0, r.jsx)(x, {
           color: N ? "black" : "white",
           className: g.wordmark
         })

@@ -107,14 +107,14 @@ function eo(e) {
     context: f,
     guildId: g,
     voiceState: m
-  } = e, y = (0, q.Z)({
+  } = e, y = (0, Q.Z)({
     location: "overlay_voice_widget"
-  }), v = (0, a.e7)([B.default], () => B.default.showKeybindIndicators), b = (0, a.e7)([A.default], () => A.default.getId()), _ = (0, a.e7)([z.Z], () => z.Z.isLocalMute(i.id)), E = (0, a.e7)([R.Z], () => R.Z.getCurrentUserActiveStream()), x = (0, a.Wu)([R.Z], () => null != E ? R.Z.getViewerIds(E) : []), S = (0, O.Z)({
+  }), b = (0, a.e7)([B.default], () => B.default.showKeybindIndicators), v = (0, a.e7)([A.default], () => A.default.getId()), _ = (0, a.e7)([z.Z], () => z.Z.isLocalMute(i.id)), E = (0, a.e7)([R.Z], () => R.Z.getCurrentUserActiveStream()), x = (0, a.Wu)([R.Z], () => null != E ? R.Z.getViewerIds(E) : []), S = (0, O.Z)({
     userId: i.id,
     context: f
-  }), Z = (0, a.e7)([U.Z], () => U.Z.isPrioritySpeaker(i.id, f)), j = (0, a.e7)([R.Z], () => null != R.Z.getStreamForUser(i.id, g)), C = s.useMemo(() => null != E && E.ownerId !== i.id && x.includes(i.id), [E, i.id, x]);
+  }), C = (0, a.e7)([W.Z], () => W.Z.isPrioritySpeaker(i.id, f)), Z = (0, a.e7)([R.Z], () => null != R.Z.getStreamForUser(i.id, g)), j = s.useMemo(() => null != E && E.ownerId !== i.id && x.includes(i.id), [E, i.id, x]);
   if (d === $.OYC.ONLY_WHILE_SPEAKING && n && !S) return null;
-  let I = i.id === b,
+  let I = i.id === v,
     {
       mute: P,
       selfMute: w,
@@ -122,7 +122,7 @@ function eo(e) {
       deaf: T,
       selfDeaf: D
     } = m,
-    L = y && v,
+    L = y && b,
     M = w && (!I || !L);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(k.ZP, {
@@ -137,14 +137,14 @@ function eo(e) {
       nick: o,
       speaking: false,
       flipped: t,
-      isStreaming: j,
+      isStreaming: Z,
       iconClassName: l()(en.voiceIcon, {
         [en.locked]: n
       }),
-      isWatching: C,
+      isWatching: j,
       isOverlay: true,
       size: u,
-      priority: Z,
+      priority: C,
       mute: P || M || _,
       localMute: _,
       serverMute: P || N,
@@ -343,7 +343,7 @@ class el extends(i = Chunk647438.PureComponent) {
     (0, Chunk906037.m3)(this.props, this.shouldDisplay())
   }
   componentDidUpdate(e) {
-    (0, J.CR)(e, this.props, this.shouldDisplay)
+    (0, q.CR)(e, this.props, this.shouldDisplay)
   }
   shouldDisplay() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : this.props,
@@ -440,27 +440,27 @@ class el extends(i = Chunk647438.PureComponent) {
 function ea(e) {
   var t;
   let n = (0, a.e7)([V.Z, L.Z], () => L.Z.getChannel(V.Z.getVoiceChannelId())),
-    i = (0, b.ZP)(n),
+    i = (0, v.ZP)(n),
     o = function() {
       let [e] = (0, a.e7)([G.ZP, w.Z, V.Z, L.Z], () => {
         let e = L.Z.getChannel(V.Z.getVoiceChannelId());
         return null == e ? [
           [], false
         ] : e.isGuildStageVoice() ? [w.Z.getMutableParticipants(e.id, N.pV.SPEAKER), w.Z.getParticipantsVersion(e.id)] : [G.ZP.getVoiceStatesForChannel(e), G.ZP.getVoiceStateVersion(e.getGuildId())]
-      }, [], H.Q), t = (0, a.e7)([A.default], () => A.default.getId()), n = (0, q.Z)({
+      }, [], H.Q), t = (0, a.e7)([A.default], () => A.default.getId()), n = (0, Q.Z)({
         location: "voice_widget"
       });
       return s.useMemo(() => n ? [...e].sort((e, n) => e.user.id === t ? false : +(n.user.id === t)) : e, [e, t, n])
     }(),
     l = (0, a.e7)([R.Z], () => R.Z.getStreamerActiveStreamMetadata()),
-    c = (0, a.e7)([E.ZP, W.Z, M.Z], () => {
+    c = (0, a.e7)([E.ZP, U.Z, M.Z], () => {
       var e;
-      let t = (0, C.Z)(E.ZP, W.Z);
+      let t = (0, j.Z)(E.ZP, U.Z);
       return null != t ? null == (e = M.Z.getGameByGameData(t)) ? true : e.id : null
     }),
-    d = (0, v.q)(c),
-    u = (0, a.cj)([E.ZP, W.Z, R.Z, B.default], () => {
-      let e = (0, C.Z)(E.ZP, W.Z),
+    d = (0, b.q)(c),
+    u = (0, a.cj)([E.ZP, U.Z, R.Z, B.default], () => {
+      let e = (0, j.Z)(E.ZP, U.Z),
         t = R.Z.getCurrentUserActiveStream();
       return {
         displayUserMode: B.default.getDisplayUserMode(),

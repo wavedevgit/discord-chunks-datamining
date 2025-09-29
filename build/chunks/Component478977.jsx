@@ -1,7 +1,7 @@
-/** Chunk was on 10150 **/
-/** chunk id: 478977, original params: e,t,s (module,exports,require) **/
+/** Chunk was on 3408 **/
+/** chunk id: 478977, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => d
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -9,20 +9,20 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk745776 = require("./745776.js");
 
-function o(e) {
+function l(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var s = null != arguments[t] ? arguments[t] : {},
-      n = Object.keys(s);
-    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(s).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(s, e).enumerable
-    }))), n.forEach(function(t) {
-      var n;
-      n = s[t], t in e ? Object.defineProperty(e, t, {
-        value: n,
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = n
+      }) : e[t] = r
     })
   }
   return e
@@ -30,44 +30,44 @@ function o(e) {
 
 function c(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var s = Object.keys(e);
+    var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var n = Object.getOwnPropertySymbols(e);
-      s.push.apply(s, n)
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
     }
-    return s
-  })(Object(t)).forEach(function(s) {
-    Object.defineProperty(e, s, Object.getOwnPropertyDescriptor(t, s))
+    return n
+  })(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let u = function(e) {
+let d = function(e) {
   let {
     colorKey: t,
-    value: s,
-    onChange: u,
-    title: d
-  } = e, g = r.useRef(null);
-  return (0, n.jsxs)(i.xJW, {
-    children: [(0, n.jsx)(i.vwX, {
-      children: d
-    }), (0, n.jsx)(i.yRy, {
-      targetElementRef: g,
-      renderPopout: e => (0, n.jsx)(i.Z$W, c(o({}, e), {
-        value: s,
-        onChange: e => u(t, (0, a.Rf)(e))
+    value: n,
+    onChange: d,
+    title: u
+  } = e, p = s.useRef(null);
+  return (0, r.jsxs)(a.xJW, {
+    children: [(0, r.jsx)(a.vwX, {
+      children: u
+    }), (0, r.jsx)(a.yRy, {
+      targetElementRef: p,
+      renderPopout: e => (0, r.jsx)(a.Z$W, c(l({}, e), {
+        value: n,
+        onChange: e => d(t, (0, o.Rf)(e))
       })),
-      children: e => (0, n.jsx)(i.P3F, c(o({}, e), {
-        innerRef: g,
+      children: e => (0, r.jsx)(a.P3F, c(l({}, e), {
+        innerRef: p,
         tag: "span",
         "aria-label": "Select a color",
-        className: l.swatchContainer,
+        className: i.swatchContainer,
         style: {
-          backgroundColor: s
+          backgroundColor: n
         },
-        children: (0, n.jsx)(i.ilE, {
+        children: (0, r.jsx)(a.ilE, {
           size: "xs",
           color: "currentColor",
-          className: l.swatchIcon
+          className: i.swatchIcon
         })
       }))
     })]

@@ -55,7 +55,7 @@ function D(e) {
   return e
 }
 
-function x(e, t) {
+function L(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -66,8 +66,8 @@ function x(e, t) {
   return n
 }
 
-function L(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
+function x(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -79,7 +79,7 @@ function j() {
       remindersEnabled: n,
       decoupledClipsEnabled: a,
       clipsLength: w,
-      clipsQuality: x
+      clipsQuality: L
     } = (0, Chunk442837.cj)([Chunk435064.Z], () => Chunk435064.Z.getSettings()),
     j = (0, Chunk442837.e7)([Chunk435064.Z], () => Chunk435064.Z.getHardwareClassification()),
     M = (0, Chunk442837.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_CLIP, true)),
@@ -151,7 +151,7 @@ function j() {
       })
     }], [B]),
     H = Chunk647438.useCallback(e => {
-      c.Z.setKeybind(L(D({}, M), {
+      c.Z.setKeybind(x(D({}, M), {
         shortcut: e
       }))
     }, [M]);
@@ -229,21 +229,21 @@ function j() {
         className: Chunk622025.formItem,
         select: e => O.yi({
           resolution: e,
-          frameRate: x.frameRate
+          frameRate: L.frameRate
         }),
         title: Chunk388032.intl.string(Chunk388032.t.aFudZG),
         note: Chunk388032.intl.string(Chunk388032.t.nIrkW1),
-        value: x.resolution,
+        value: L.resolution,
         options: F
       }), (0, Chunk951288.jsx)(Chunk442334.Q, {
         className: Chunk622025.formItem,
         select: e => O.yi({
-          resolution: x.resolution,
+          resolution: L.resolution,
           frameRate: e
         }),
         title: Chunk388032.intl.string(Chunk388032.t["2wScLy"]),
         note: Chunk388032.intl.string(Chunk388032.t["Rf9+f3"]),
-        value: x.frameRate,
+        value: L.frameRate,
         options: V
       }), (0, Chunk951288.jsx)(Chunk442334.O, {
         className: Chunk622025.formItem,

@@ -16,8 +16,8 @@ require.d(exports, {
   t9: () => Q,
   tr: () => et,
   vv: () => $,
-  zM: () => K,
-  zy: () => q
+  zM: () => q,
+  zy: () => K
 }), require("./35282.js"), require("./413496.js"), require("./433524.js"), require("./388685.js"), require("./539854.js"), require("./415506.js"), require("./704826.js"), require("./997841.js"), require("./642613.js"), require("./392711.js");
 var r, i, Chunk729594 = require("./729594.js"),
   Chunk243814 = require("./243814.js"),
@@ -153,7 +153,7 @@ function H(e) {
     mention_roles: e.mention_roles || e.mentionRoles,
     embeds: e.embeds,
     attachments: e.attachments,
-    author: null != r ? (0, j.Z)(r) : true,
+    author: null != r ? (0, P.Z)(r) : true,
     pinned: e.pinned,
     type: e.type
   }
@@ -181,14 +181,14 @@ function F(e, t, n) {
       self_deaf: a,
       suppress: o
     },
-    user: (0, j.Z)(c)
+    user: (0, P.Z)(c)
   }
 }
 
 function z(e, t) {
   return {
     type: e,
-    user: (0, j.Z)(t),
+    user: (0, P.Z)(t),
     presence: {
       status: y.Z.getStatus(t.id, null),
       activity: null
@@ -218,12 +218,12 @@ function Y(e) {
   return window.location.hostname === t && "localhost" === t || null == e.match("staging") && !!(D.test(e) && D.test(n))
 }
 
-function K(e, t, n) {
+function q(e, t, n) {
   let r = _.Z.getGuild(e.getGuildId());
   return (null != r ? r.application_id : e.getApplicationId()) === t || n.indexOf(a.x.MESSAGES_READ) > false
 }
 
-function q(e) {
+function K(e) {
   switch (e) {
     case A.hes.RTC_CONNECTED:
     case A.hes.RTC_CONNECTING:
@@ -250,7 +250,7 @@ function X(e) {
     } = e;
     return t
   }, () => {
-    throw new P.Z({
+    throw new j.Z({
       closeCode: A.$VG.INVALID_CLIENTID
     }, "Invalid Client ID")
   })
@@ -260,12 +260,12 @@ async function J(e, t, n) {
   if ("string" == typeof n)
     if (e.transport === x.He.POST_MESSAGE) {
       let e = (0, u.ZP)(t);
-      if (null == e || !B(n, [e])) throw new P.Z({
+      if (null == e || !B(n, [e])) throw new j.Z({
         closeCode: A.$VG.INVALID_ORIGIN
       }, "Invalid Origin")
     } else {
       let e = await X(t);
-      if (r = h.ZP.createFromServer(e), !B(n, e.rpc_origins)) throw new P.Z({
+      if (r = h.ZP.createFromServer(e), !B(n, e.rpc_origins)) throw new j.Z({
         closeCode: A.$VG.INVALID_ORIGIN
       }, "Invalid Origin")
     } null == r && (r = h.ZP.createFromServer(await X(t)));
@@ -344,13 +344,13 @@ function en(e, t) {
 }
 
 function er(e) {
-  if (e !== x.He.POST_MESSAGE) throw new P.Z({
+  if (e !== x.He.POST_MESSAGE) throw new j.Z({
     errorCode: A.lTL.INVALID_COMMAND
   }, 'command not available from "'.concat(e, " transport"))
 }
 
 function ei(e) {
-  if (null == e.id) throw new P.Z({
+  if (null == e.id) throw new j.Z({
     errorCode: A.lTL.INVALID_COMMAND
   }, "Invalid application");
   return e.id

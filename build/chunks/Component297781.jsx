@@ -111,10 +111,10 @@ let w = {
 var D = function(e) {
   return e[e.CARD = 0] = "CARD", e[e.POPOUT = 1] = "POPOUT", e[e.STREAMING_POPOUT = 2] = "STREAMING_POPOUT", e[e.GAME_PROFILE = 3] = "GAME_PROFILE", e[e.USER_PROFILE = 4] = "USER_PROFILE", e[e.EMBED = 5] = "EMBED", e[e.LEADERBOARD_POPOUT = 6] = "LEADERBOARD_POPOUT", e[e.OVERLAY = 7] = "OVERLAY", e[e.FRIENDS_POPOUT = 8] = "FRIENDS_POPOUT", e[e.APP_LAUNCHER = 9] = "APP_LAUNCHER", e
 }({});
-let x = Chunk647438.createContext({});
+let L = Chunk647438.createContext({});
 
-function L() {
-  return Chunk647438.useContext(x)
+function x() {
+  return Chunk647438.useContext(L)
 }
 
 function j(e) {
@@ -139,7 +139,7 @@ function M(e) {
     defaultTextColor: s,
     defaultIconColor: l,
     location: c
-  } = L();
+  } = x();
   return (0, r.jsx)(f.ua7, {
     text: a,
     shouldShow: o,
@@ -165,7 +165,7 @@ function k(e) {
     channel: n
   } = (0, E.Z)(t), {
     location: i
-  } = L();
+  } = x();
   return null == n || (0, h.Hi)(i, [1, 2, 3, 4]) ? null : (0, r.jsx)(M, {
     Icon: f.gj8,
     text: n.name
@@ -180,7 +180,7 @@ function U(e) {
     defaultTextColor: i,
     defaultIconColor: a,
     location: o
-  } = L(), s = (0, b.Jg)(t) && (0, h.Hi)(o, [0, 4, 7, 9]), l = s ? f.TVs.colors.TEXT_FEEDBACK_POSITIVE : a, c = s ? "text-feedback-positive" : i, {
+  } = x(), s = (0, b.Jg)(t) && (0, h.Hi)(o, [0, 4, 7, 9]), l = s ? f.TVs.colors.TEXT_FEEDBACK_POSITIVE : a, c = s ? "text-feedback-positive" : i, {
     streamPreviewUrl: u
   } = (0, E.Z)(t), {
     enabled: d
@@ -209,7 +209,7 @@ function G(e) {
   } = e, {
     defaultTextColor: n,
     defaultIconColor: i
-  } = L(), {
+  } = x(), {
     state: a,
     party: o
   } = (0, y.n)(t), s = (0, b.bT)(a, o);
@@ -234,7 +234,7 @@ function B(e) {
     defaultTextColor: i,
     defaultIconColor: a,
     location: o
-  } = L(), s = (0, b.Jg)(t) && (0, h.Hi)(o, [0, 4]), l = s ? f.TVs.colors.TEXT_FEEDBACK_POSITIVE : a, c = s ? "text-feedback-positive" : i;
+  } = x(), s = (0, b.Jg)(t) && (0, h.Hi)(o, [0, 4]), l = s ? f.TVs.colors.TEXT_FEEDBACK_POSITIVE : a, c = s ? "text-feedback-positive" : i;
   return (0, r.jsxs)("div", {
     className: T.badgeContainer,
     children: [(0, r.jsx)(f.RZG, {
@@ -254,7 +254,7 @@ function Z(e) {
     entry: t
   } = e, {
     location: n
-  } = L(), i = (0, h.Hi)(n, [0, 3]) ? f.TVs.colors.STATUS_POSITIVE : true;
+  } = x(), i = (0, h.Hi)(n, [0, 3]) ? f.TVs.colors.STATUS_POSITIVE : true;
   return (0, b.Ol)(t) ? (0, r.jsx)(M, {
     Icon: f._IE,
     text: I.intl.string(I.t.keY6mZ),
@@ -267,7 +267,7 @@ function F(e) {
     entry: t
   } = e, {
     location: n
-  } = L();
+  } = x();
   if (!(0, b.V5)(t)) return null;
   let i = (0, b.kr)(t),
     a = 0 === n && !i,
@@ -288,7 +288,7 @@ function V(e) {
     entry: t
   } = e, {
     location: n
-  } = L(), i = 0 !== n, a = (0, b.dw)(t);
+  } = x(), i = 0 !== n, a = (0, b.dw)(t);
   if (null == a) return null;
   let o = (0, b.GE)(a);
   return (0, r.jsx)(M, {
@@ -304,7 +304,7 @@ function H(e) {
     entry: t
   } = e, {
     location: n
-  } = L(), i = (0, b.vU)(t);
+  } = x(), i = (0, b.vU)(t);
   return (0, b.q_)(t) ? (0, r.jsx)(M, {
     Icon: f.qOE,
     showTooltip: 0 === n,
@@ -322,7 +322,7 @@ function Y(e) {
     entry: t
   } = e, {
     location: n
-  } = L(), i = 0 !== n, a = (0, b.yA)(t);
+  } = x(), i = 0 !== n, a = (0, b.yA)(t);
   if (null == a) return null;
   let o = i ? " — " : ": ",
     s = i ? I.t.C0Axoa : I.t.SDRHgo;
@@ -342,7 +342,7 @@ function W(e) {
     entry: n
   } = e, {
     location: i
-  } = L(), a = null == (t = (0, b.PJ)(n, u.N.AGGREGATE_COUNT)) ? true : t.count;
+  } = x(), a = null == (t = (0, b.PJ)(n, u.N.AGGREGATE_COUNT)) ? true : t.count;
   if (null == a) return null;
   let o = (0, h.Hi)(i, [1, 2, 5]) ? I.intl.formatToPlainString(I.t.HtifnJ, {
     count: a
@@ -360,7 +360,7 @@ function K(e) {
     entry: t
   } = e, {
     location: n
-  } = L();
+  } = x();
   if (3 === n) return null;
   let i = (0, b.ig)(t);
   return null == i || i === d.o.TRENDING_TYPE_UNSPECIFIED ? null : (0, r.jsx)(M, {
@@ -374,7 +374,7 @@ function z(e) {
     entry: t
   } = e, {
     location: n
-  } = L();
+  } = x();
   if (3 === n) return null;
   let i = m.default.extractTimestamp(t.extra.application_id);
   return l()().diff(l()(i), "days") > v.G ? null : (0, r.jsx)(M, {
@@ -391,7 +391,7 @@ function q(e) {
     defaultTextColor: i,
     defaultIconColor: a,
     location: o
-  } = L(), s = (0, b.Jg)(t) && 4 === o, l = s ? f.TVs.colors.TEXT_FEEDBACK_POSITIVE : a, c = s ? "text-feedback-positive" : i;
+  } = x(), s = (0, b.Jg)(t) && 4 === o, l = s ? f.TVs.colors.TEXT_FEEDBACK_POSITIVE : a, c = s ? "text-feedback-positive" : i;
   return (0, r.jsxs)("div", {
     className: T.badgeContainer,
     children: [(0, r.jsx)(f.ARS, {
@@ -434,7 +434,7 @@ function Q(e) {
     defaultIconColor: f.TVs.colors.TEXT_SECONDARY
   } : {
     defaultTextColor: "text-secondary"
-  }, (0, r.jsx)(x.Provider, {
+  }, (0, r.jsx)(L.Provider, {
     value: A({
       location: n
     }, t),

@@ -96,14 +96,14 @@ function D() {
   }
 }
 
-function x() {
+function L() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : [];
   return arguments.length > 1 && arguments[1], g = module.length > 0 ? module.reduce((e, t) => p(f({}, e), {
     [t.user_id]: t
   }), {}) : {}, E = true, g
 }
 
-function L(e) {
+function x(e) {
   true !== e && (y = e)
 }
 
@@ -143,21 +143,21 @@ function U(e) {
     topUserActivities: c,
     topGuildActivities: u
   } = n;
-  h = o, m = l, j(r), L(a), M(i), x(t), C = c, N = u, T = false, S = s.default.fromTimestamp(Date.now()), I = true
+  h = o, m = l, j(r), x(a), M(i), L(t), C = c, N = u, T = false, S = s.default.fromTimestamp(Date.now()), I = true
 }
 
 function G(e) {
   let {
     linkedUsers: t
   } = e;
-  x(t)
+  L(t)
 }
 
 function B(e) {
   let {
     linkedUsers: t
   } = e;
-  x(t)
+  L(t)
 }
 
 function Z(e) {
@@ -174,7 +174,7 @@ function Z(e) {
     topUserActivities: l,
     topGuildActivities: c
   } = t;
-  h = a, m = o, j(n), L(r), M(i), C = l, N = c, T = false, S = s.default.fromTimestamp(Date.now())
+  h = a, m = o, j(n), x(r), M(i), C = l, N = c, T = false, S = s.default.fromTimestamp(Date.now())
 }
 
 function F(e) {
@@ -191,14 +191,14 @@ function V(e) {
   let {
     linkedUsers: t
   } = e;
-  x(t)
+  L(t)
 }
 
 function H(e) {
   let {
     linkedUsers: t
   } = e;
-  x(t, true)
+  L(t, true)
 }
 
 function Y(e) {
@@ -226,7 +226,7 @@ function K(e) {
       user_id: t
     } = e;
     return true === n[t]
-  }) && t.linked_users.length > Object.keys(g).length ? l.ZP.fetchLinkedUsers() : x(t.linked_users)
+  }) && t.linked_users.length > Object.keys(g).length ? l.ZP.fetchLinkedUsers() : L(t.linked_users)
 }
 
 function z(e) {
@@ -270,7 +270,7 @@ class $ extends Chunk750041.Z {
   }
   loadCache() {
     let e = this.readSnapshot($.LATEST_SNAPSHOT_VERSION);
-    null != module && (x(module.linkedUsers), M(module.guilds), j(module.teenActivity), Q(module.teenActivityTotals))
+    null != module && (L(module.linkedUsers), M(module.guilds), j(module.teenActivity), Q(module.teenActivityTotals))
   }
   takeSnapshot() {
     return {

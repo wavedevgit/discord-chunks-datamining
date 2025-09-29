@@ -93,7 +93,7 @@ function I(e) {
   let P = E >= v.length - 1,
     w = P ? s.FGA.RED : s.FGA.GREEN,
     D = T ? w : s.FGA.PRIMARY,
-    x = () => {
+    L = () => {
       var e;
       if (!T) return t;
       let n = (0, a.clamp)(E - 1, 0, v.length - 1),
@@ -103,19 +103,19 @@ function I(e) {
         children: i()
       })
     },
-    L = (e, t) => {
+    x = (e, t) => {
       !A && T && t.phase === d.UkZ.LEAVE && S(false)
     },
     j = () => {
       null == f || f(), (0, c.JG)(n), l.default.track(d.rMx.TEXT_COPIED), A || I(E + 1), C(true), S(true), N.start(b, () => C(false)), R.start(y, () => I(0))
     };
   return (0, r.jsx)(s.ua7, {
-    text: x(),
+    text: L(),
     delay: h,
     "aria-label": _,
     color: D,
     forceOpen: A,
-    onAnimationRest: L,
+    onAnimationRest: x,
     children: e => {
       var {
         onClick: t,

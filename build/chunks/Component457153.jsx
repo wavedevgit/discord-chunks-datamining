@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 457153, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 3408 **/
+/** chunk id: 457153, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk488290 = require("./488290.js"),
   Chunk113434 = require("./113434.js"),
   Chunk497505 = require("./497505.js"),
@@ -17,65 +16,65 @@ var Chunk951288 = require("./951288.js"),
   Chunk688927 = require("./688927.jsx"),
   Chunk743294 = require("./743294.js"),
   Chunk764889 = require("./764889.js");
-let m = Chunk647438.forwardRef(function(e, t) {
-  var n, a;
+let h = Chunk647438.forwardRef(function(e, t) {
+  var n, o;
   let {
-    className: m,
-    expansionSpring: g,
-    isExpanded: E,
+    className: h,
+    expansionSpring: x,
+    isExpanded: _,
     isExpansionAnimationComplete: b,
-    quest: y,
-    taskDetails: O,
-    useReducedMotion: v,
-    onCtxMenuOpen: I,
-    onCtxMenuClose: T,
-    onCtxMenuSelect: S,
-    overlayRef: A
-  } = e, C = (null == (n = y.userStatus) ? true : n.completedAt) != null, N = (0, l.Jf)(y), R = i.useRef(null), P = (null == (a = y.userStatus) ? true : a.enrolledAt) != null, w = null != N ? N.percentComplete : O.percentComplete, [D, x] = i.useState(false);
+    quest: j,
+    taskDetails: v,
+    useReducedMotion: C,
+    onCtxMenuOpen: y,
+    onCtxMenuClose: O,
+    onCtxMenuSelect: E,
+    overlayRef: S
+  } = e, T = (null == (n = j.userStatus) ? true : n.completedAt) != null, w = (0, l.Jf)(j), P = s.useRef(null), N = (null == (o = j.userStatus) ? true : o.enrolledAt) != null, A = null != w ? w.percentComplete : v.percentComplete, [R, B] = s.useState(false);
   return (0, r.jsxs)(r.Fragment, {
-    children: [C && (0, r.jsx)(d.Z, {
-      expansionSpring: g,
-      overlayRef: A,
-      progressBarRef: R,
-      quest: y,
-      isExpanded: E,
-      isHovered: D
-    }), (0, r.jsx)(s.animated.div, {
+    children: [T && (0, r.jsx)(u.Z, {
+      expansionSpring: x,
+      overlayRef: S,
+      progressBarRef: P,
+      quest: j,
+      isExpanded: _,
+      isHovered: R
+    }), (0, r.jsx)(i.animated.div, {
       ref: t,
-      "aria-hidden": E && b,
-      className: o()(m, h.contentCollapsed, {
-        [h.contentCollapsedExpanded]: E,
-        [h.contentCollapsedAccepted]: P
+      "aria-hidden": _ && b,
+      className: a()(h, f.contentCollapsed, {
+        [f.contentCollapsedExpanded]: _,
+        [f.contentCollapsedAccepted]: N
       }),
       style: {
-        opacity: g.to({
+        opacity: x.to({
           range: [0, 1],
           output: [1, 0]
         }),
-        backgroundImage: C ? "linear-gradient(90deg, ".concat(p.aY, ", ").concat(p.v6, ")") : true
+        backgroundImage: T ? "linear-gradient(90deg, ".concat(g.aY, ", ").concat(g.v6, ")") : true
       },
-      onMouseEnter: () => x(true),
-      onMouseLeave: () => x(false),
+      onMouseEnter: () => B(true),
+      onMouseLeave: () => B(false),
       children: (0, r.jsxs)("div", {
-        className: h.contentCollapsedWrapper,
-        children: [C && (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(_.Z, {
-            quest: y,
-            onCtxMenuOpen: I,
-            onCtxMenuClose: T,
-            onCtxMenuSelect: S
+        className: f.contentCollapsedWrapper,
+        children: [T && (0, r.jsxs)(r.Fragment, {
+          children: [(0, r.jsx)(m.Z, {
+            quest: j,
+            onCtxMenuOpen: y,
+            onCtxMenuClose: O,
+            onCtxMenuSelect: E
           }), (0, r.jsx)("div", {
-            className: h.divider
+            className: f.divider
           })]
-        }), P ? (0, r.jsx)(f.Z, {
+        }), N ? (0, r.jsx)(p.Z, {
           contentLocation: "collapsed",
-          quest: y,
-          progressBarRef: R,
+          quest: j,
+          progressBarRef: P,
           isExpanded: false,
-          percentComplete: w
-        }) : null, C && (0, r.jsx)(u.y, {
-          quest: y,
-          useReducedMotion: v,
+          percentComplete: A
+        }) : null, T && (0, r.jsx)(d.y, {
+          quest: j,
+          useReducedMotion: C,
           isExpanded: false,
           awaitingConsoleConnections: false,
           hasMadeProgress: true,
@@ -83,7 +82,7 @@ let m = Chunk647438.forwardRef(function(e, t) {
           activeScreen: c.LI.DESKTOP,
           showBackButton: false,
           onBack: () => {},
-          taskDetails: O,
+          taskDetails: v,
           sourceQuestContent: c.jn.QUEST_BAR_V2
         })]
       })

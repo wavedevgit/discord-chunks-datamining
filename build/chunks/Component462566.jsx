@@ -94,7 +94,7 @@ let y = function(e) {
       name: v.name
     }, !!e)
   }, [y, v, w]);
-  let x = [{
+  let L = [{
     fields: [{
       name: "cardNumber",
       title: () => _.intl.string(_.t.cVyJ3t),
@@ -143,7 +143,7 @@ let y = function(e) {
     }]
   }];
 
-  function L(e, t) {
+  function x(e, t) {
     if ("name" !== t && "country" !== t && "postalCode" !== t) return;
     let n = g({}, v),
       r = g({}, T),
@@ -193,11 +193,11 @@ let y = function(e) {
   }
   return (0, r.jsxs)("div", {
     children: [j(), (0, r.jsx)(d.Z, {
-      form: x,
+      form: L,
       errors: A,
       formError: n,
       values: v,
-      onFieldChange: L,
+      onFieldChange: x,
       onFieldBlur: D
     })]
   })

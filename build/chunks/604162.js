@@ -3,7 +3,7 @@
 require.d(exports, {
   G6: () => d,
   JC: () => c,
-  qP: () => f,
+  qP: () => m,
   yv: () => u
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
@@ -22,26 +22,26 @@ function u(e) {
 
 function d(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : 2e3,
-    [o, a] = (0, r.useState)(e),
-    l = (0, r.useRef)(null);
+    [l, o] = (0, r.useState)(e),
+    i = (0, r.useRef)(null);
   return (0, r.useEffect)(() => () => {
-    null != l.current && clearTimeout(l.current)
-  }, [e]), [o, () => {
-    a(t), null != l.current && clearTimeout(l.current), l.current = setTimeout(() => {
-      a(e)
+    null != i.current && clearTimeout(i.current)
+  }, [e]), [l, () => {
+    o(t), null != i.current && clearTimeout(i.current), i.current = setTimeout(() => {
+      o(e)
     }, n)
   }]
 }
-async function f(e) {
+async function m(e) {
   try {
     var t;
-    let n = (0, l.zO)(e);
-    if (null == n || n.type !== a.g.INVITE) returnfalse;
-    let r = i.Z.getInvite(n.code);
+    let n = (0, i.zO)(e);
+    if (null == n || n.type !== o.g.INVITE) returnfalse;
+    let r = a.Z.getInvite(n.code);
     if (null == r) {
       let {
         invite: e
-      } = await o.ZP.resolveInvite(n.code, "Markdown Link");
+      } = await l.ZP.resolveInvite(n.code, "Markdown Link");
       r = e
     }
     if (null == r) returnfalse;

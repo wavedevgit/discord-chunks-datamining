@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 801252, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 3408 **/
+/** chunk id: 801252, original params: e,t,n (module,exports,require) **/
 module.exports = {
   questAcceptedHeader: "questAcceptedHeader_e2967a",
   flex: "flex_e2967a",

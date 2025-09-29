@@ -54,9 +54,9 @@ function T(e) {
       guild: P,
       invite: w,
       message: D,
-      currentUserId: x
+      currentUserId: L
     } = e,
-    L = x === D.author.id,
+    x = L === D.author.id,
     {
       channel: j,
       approximate_member_count: M,
@@ -95,7 +95,7 @@ function T(e) {
   }
   let ee = (0, g.e)({
     isVoiceChannel: F,
-    isOwnInvite: L,
+    isOwnInvite: x,
     isGuest: H,
     isHubGuild: Y,
     isStage: V,

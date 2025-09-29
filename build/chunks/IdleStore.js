@@ -77,7 +77,7 @@ function N() {
 function R(e) {
   u.Z.getConfig({
     location: "handlePowerEvent"
-  }).power_events ? L({}) : (e && (E = false / 0), C())
+  }).power_events ? x({}) : (e && (E = false / 0), C())
 }
 if (!__OVERLAY__) {
   Chunk358085.isPlatformEmbedded && (null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.remotePowerMonitor) != null ? (N(), Chunk579806.Z.remotePowerMonitor.on("resume", () => {
@@ -92,7 +92,7 @@ if (!__OVERLAY__) {
   let e = a()(() => {
     Chunk491966.Z.getConfig({
       location: "handleGenericInput"
-    }).generic_inputs && L({})
+    }).generic_inputs && x({})
   }, 500);
   window.addEventListener("mouseup", module), window.addEventListener("wheel", module), window.addEventListener("keypress", module)
 }
@@ -110,17 +110,17 @@ function D(e) {
     userId: t,
     speakingFlags: n
   } = e;
-  return n !== m.Dg.NONE && t === p.default.getId() && L({}), false
+  return n !== m.Dg.NONE && t === p.default.getId() && x({}), false
 }
 
-function x(e) {
+function L(e) {
   let {
     state: t
   } = e;
   return I = t === h.$7l.BACKGROUND, E = Date.now(), C(), false
 }
 
-function L(e) {
+function x(e) {
   let {
     timestamp: t,
     type: n
@@ -135,7 +135,7 @@ function j() {
   if (!Chunk491966.Z.getConfig({
       location: "handleSettingsProtoUpdate"
     }).settings_updates) returnfalse;
-  L({})
+  x({})
 }
 class M extends(r = Chunk442837.ZP.Store) {
   isIdle() {
@@ -159,12 +159,12 @@ let k = new M(Chunk570140.Z, {
   IDLE: P,
   AFK: w,
   SPEAKING: D,
-  APP_STATE_UPDATE: x,
-  OVERLAY_SET_NOT_IDLE: L,
-  CHANNEL_SELECT: L,
-  VOICE_CHANNEL_SELECT: L,
-  WINDOW_FOCUS: L,
-  OVERLAY_INITIALIZE: L,
-  OVERLAY_SET_INPUT_LOCKED: L,
+  APP_STATE_UPDATE: L,
+  OVERLAY_SET_NOT_IDLE: x,
+  CHANNEL_SELECT: x,
+  VOICE_CHANNEL_SELECT: x,
+  WINDOW_FOCUS: x,
+  OVERLAY_INITIALIZE: x,
+  OVERLAY_SET_INPUT_LOCKED: x,
   USER_SETTINGS_PROTO_UPDATE: j
 })

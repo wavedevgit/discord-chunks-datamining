@@ -166,7 +166,7 @@ let D = {
           renderInvisibleOverlay: n
         } = (0, b.fn)("KeyboardShortcutManager");
         if (n) return;
-        let r = (0, j.Z)();
+        let r = (0, P.Z)();
         null != r && l.Z.setInputLocked(!N.default.isLocked(r), r)
       },
       keyEvents: {
@@ -240,7 +240,7 @@ let D = {
     },
     [Chunk981631.kg4.SOUNDBOARD_HOLD]: {
       onTrigger: e => {
-        let t = (0, j.Z)();
+        let t = (0, P.Z)();
         if (null != t) {
           if (e) {
             if (!(0, O.D)()) return;

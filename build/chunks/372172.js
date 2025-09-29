@@ -1,5 +1,5 @@
-/** Chunk was on 27612 **/
-/** chunk id: 372172, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 36288 **/
+/** chunk id: 372172, original params: e,t,n (module,exports,require) **/
 "use strict";
 module.exports = {
   spinner: "spinner__2aeb5",

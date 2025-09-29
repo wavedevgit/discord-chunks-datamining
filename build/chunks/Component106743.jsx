@@ -17,42 +17,42 @@ function d(e) {
   let {
     quest: n,
     onClose: d
-  } = e, f = (0, s.km)(e => e.transcript);
-  o.useEffect(() => {
-    let e = (0, c.z0)(n, a.X.WATCH_VIDEO, c.n1.VIDEO, c.O.TRANSCRIPT);
-    (null == f || f.questId !== n.id || f.fetchStatus === s.iF.NONE || f.fetchStatus === s.iF.SUCCESS && (null == e ? true : e.url) !== f.url) && (0, i.lL)(n, a.X.WATCH_VIDEO)
-  }, [f, n]);
-  let p = (null == f ? true : f.questId) === n.id && (null == f ? true : f.fetchStatus) === s.iF.SUCCESS && null != (t = f.text) ? t : "",
-    m = o.useMemo(() => p.split("\n").map(e => e.trim()).filter(e => e.length > 0), [p]);
+  } = e, m = (0, s.km)(e => e.transcript);
+  l.useEffect(() => {
+    let e = (0, c.z0)(n, o.X.WATCH_VIDEO, c.n1.VIDEO, c.O.TRANSCRIPT);
+    (null == m || m.questId !== n.id || m.fetchStatus === s.iF.NONE || m.fetchStatus === s.iF.SUCCESS && (null == e ? true : e.url) !== m.url) && (0, a.lL)(n, o.X.WATCH_VIDEO)
+  }, [m, n]);
+  let p = (null == m ? true : m.questId) === n.id && (null == m ? true : m.fetchStatus) === s.iF.SUCCESS && null != (t = m.text) ? t : "",
+    f = l.useMemo(() => p.split("\n").map(e => e.trim()).filter(e => e.length > 0), [p]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: u.transcriptHeader,
-      children: [(0, r.jsx)(l.X6q, {
+      children: [(0, r.jsx)(i.X6q, {
         variant: "heading-md/semibold",
         color: "currentColor",
         children: "Transcript"
-      }), (0, r.jsx)(l.P3F, {
+      }), (0, r.jsx)(i.P3F, {
         onClick: d,
         className: u.transcriptBackBtn,
-        children: (0, r.jsx)(l.Dio, {
+        children: (0, r.jsx)(i.Dio, {
           color: "currentColor"
         })
       })]
-    }), (0, r.jsx)(l.tEY, {
-      children: (0, r.jsx)(l.w0Z, {
+    }), (0, r.jsx)(i.tEY, {
+      children: (0, r.jsx)(i.w0Z, {
         className: u.transcriptScroller,
         fade: true,
         children: (0, r.jsx)("div", {
           className: u.transcriptBody,
-          children: (null == f ? true : f.fetchStatus) === s.iF.FETCHING ? (0, r.jsx)("div", {
+          children: (null == m ? true : m.fetchStatus) === s.iF.FETCHING ? (0, r.jsx)("div", {
             className: u.transcriptBodySpinner,
-            children: (0, r.jsx)(l.$jN, {
-              type: l.$jN.Type.WANDERING_CUBES
+            children: (0, r.jsx)(i.$jN, {
+              type: i.$jN.Type.WANDERING_CUBES
             })
-          }) : (0, r.jsx)(l.X6q, {
+          }) : (0, r.jsx)(i.X6q, {
             variant: "heading-md/normal",
             color: "text-muted",
-            children: m.map((e, t) => (0, r.jsx)("p", {
+            children: f.map((e, t) => (0, r.jsx)("p", {
               children: e
             }, t))
           })

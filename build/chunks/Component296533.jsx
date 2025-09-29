@@ -2,8 +2,8 @@
 /** chunk id: 296533, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => L,
-  r: () => x
+  Z: () => x,
+  r: () => L
 }), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -262,7 +262,7 @@ function D(e) {
   })
 }
 
-function x(e) {
+function L(e) {
   let {
     appliedGuildBoosts: t,
     premiumSubscription: n
@@ -288,7 +288,7 @@ function x(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   let {
     guildBoostSlots: t,
     premiumSubscription: n

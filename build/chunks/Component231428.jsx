@@ -54,7 +54,7 @@ function D(e) {
   return e
 }
 
-function x(e, t) {
+function L(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -65,8 +65,8 @@ function x(e, t) {
   return n
 }
 
-function L(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
+function x(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -116,7 +116,7 @@ function U(e) {
         var {
           ref: t
         } = e, a = j(e, ["ref"]);
-        return (0, i.jsx)(b.Z, L(D({
+        return (0, i.jsx)(b.Z, x(D({
           className: R.verticalFit,
           currentPageIndex: c,
           onChangePage: E,
@@ -234,7 +234,7 @@ function Z(e) {
     l() || _.Z.wait(() => {
       o.forEach(e => (0, m.GZ)(e, true, true, true, true))
     })
-  }, [l, o]), (0, i.jsx)(G, L(D({}, e), {
+  }, [l, o]), (0, i.jsx)(G, x(D({}, e), {
     payments: c,
     subscription: n
   }))

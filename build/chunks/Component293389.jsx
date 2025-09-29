@@ -35,7 +35,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk465106 = require("./465106.js"),
   Chunk10198 = require("./10198.js");
 
-function x(e, t, n) {
+function L(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -44,14 +44,14 @@ function x(e, t, n) {
   }) : e[t] = n, e
 }
 
-function L(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      x(e, t, n[t])
+      L(e, t, n[t])
     })
   }
   return e
@@ -145,7 +145,7 @@ function F(e) {
   } = (0, s.cj)([h.ZP], () => ({
     canToggleDetection: null == I || h.ZP.isDetectionEnabled(I),
     isCurrentGameDetectionEnabled: h.ZP.isDetectionEnabled(T)
-  })), P = (0, p.P6)("UserSettingsGameActivity"), D = (0, s.e7)([h.ZP], () => h.ZP.getVisibleGame()), [x, j] = i.useState(false), k = i.useMemo(() => (0, b.le)(T) ? E ? T.gameName : N.intl.formatToPlainString(N.t.G6BGd3, {
+  })), P = (0, p.P6)("UserSettingsGameActivity"), D = (0, s.e7)([h.ZP], () => h.ZP.getVisibleGame()), [L, j] = i.useState(false), k = i.useMemo(() => (0, b.le)(T) ? E ? T.gameName : N.intl.formatToPlainString(N.t.G6BGd3, {
     subgameName: T.gameName
   }) : T.name, [T, E]), [B, Z] = i.useState(null != k ? k : "???"), V = o()(w.flexCenter, {
     [R.game]: !a,
@@ -178,7 +178,7 @@ function F(e) {
       let {
         Modal: e
       } = await Promise.resolve().then(n.bind(n, 82659));
-      return t => (0, r.jsx)(e, M(L({}, t), {
+      return t => (0, r.jsx)(e, M(x({}, t), {
         title: N.intl.formatToPlainString(N.t.PZ4fKS, {
           platform: k
         }),
@@ -201,7 +201,7 @@ function F(e) {
   }
 
   function q() {
-    if (x) return;
+    if (L) return;
     let e = null != T.id ? y.Z.getDetectableGame(T.id) : null;
     v.default.track(C.rMx.USER_SETTINGS_REPORT_INCORRECT_GAME_DETECTION, {
       application_id: null == e ? true : e.id,
@@ -212,7 +212,7 @@ function F(e) {
       } = await n.e("82077").then(n.bind(n, 953848));
       return n => {
         var i, a, o;
-        return (0, r.jsx)(t, M(L({}, n), {
+        return (0, r.jsx)(t, M(x({}, n), {
           detectedActivity: {
             name: null != (i = T.name) ? i : "",
             application_id: null != (o = null != (a = null == e ? true : e.id) ? a : T.id) ? o : true,
@@ -234,7 +234,7 @@ function F(e) {
         children: k
       }), (0, r.jsx)(u.ua7, {
         text: N.intl.string(N.t["4PJP5u"]),
-        children: e => (0, r.jsx)(g.Z, M(L({
+        children: e => (0, r.jsx)(g.Z, M(x({
           className: R.gameVerifiedIcon,
           size: G,
           color: l.Z.unsafe_rawColors.BRAND_500.css
@@ -291,7 +291,7 @@ function F(e) {
       colorClass: R.fill
     }), i = t ? (0, r.jsx)(u.ua7, {
       text: N.intl.string(N.t.Vfw2Ly),
-      children: e => (0, r.jsx)("i", L({
+      children: e => (0, r.jsx)("i", x({
         className: R.overlayWarningIcon
       }, e))
     }) : null;
@@ -354,7 +354,7 @@ function F(e) {
   }
 
   function ee() {
-    return x ? null : (0, r.jsx)("div", {
+    return L ? null : (0, r.jsx)("div", {
       className: o()(w.flexCenter, w.noWrap, w.justifyBetween, R.toggleContainer),
       children: (0, r.jsx)(u.ua7, {
         text: N.intl.string(N.t["y0B+lp"]),
@@ -511,7 +511,7 @@ let Y = (0, Chunk251625.oH)(function() {
           },
           align: "center",
           position: "bottom",
-          children: e => (0, r.jsx)(u.Avr, M(L({}, e), {
+          children: e => (0, r.jsx)(u.Avr, M(x({}, e), {
             buttonRef: _,
             variant: "primary",
             textVariant: "text-sm/medium",

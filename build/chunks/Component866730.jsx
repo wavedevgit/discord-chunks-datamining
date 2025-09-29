@@ -1,4 +1,4 @@
-/** Chunk was on 66663 **/
+/** Chunk was on 89342 **/
 /** chunk id: 866730, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -62,7 +62,7 @@ function x() {
         dismissibleContent: n
       }
     }),
-    g = Array.from(exports.keys()).map(e => ({
+    b = Array.from(exports.keys()).map(e => ({
       key: e.toString(),
       dismissibleContent: e
     }));
@@ -79,7 +79,7 @@ function x() {
       children: (0, Chunk951288.jsx)(Chunk681619.Z, {
         className: Chunk860191.candidatesTable,
         columns: h,
-        data: g
+        data: b
       })
     }), (0, Chunk951288.jsx)("br", {}), (0, Chunk951288.jsx)(Chunk681619.Z, {
       columns: p,

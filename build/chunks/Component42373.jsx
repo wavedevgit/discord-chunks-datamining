@@ -136,8 +136,8 @@ let A = e => {
         size: w,
         enablePremiumBrandRefreshDesign: D
       } = e,
-      x = (0, h.rO)(),
-      L = i.useRef(null),
+      L = (0, h.rO)(),
+      x = i.useRef(null),
       j = i.useRef(0),
       M = S(n),
       k = (0, s.debounce)(() => {
@@ -146,10 +146,10 @@ let A = e => {
         })
       }, 800),
       U = () => {
-        null == L.current || N || (L.current.currentTime = j.current, L.current.play())
+        null == x.current || N || (x.current.currentTime = j.current, x.current.play())
       },
       G = () => {
-        null == L.current || N || (j.current = L.current.currentTime, L.current.pause())
+        null == x.current || N || (j.current = x.current.currentTime, x.current.pause())
       },
       B = D ? y : b;
     t = D ? w === m.y$.LARGE ? "heading-xxl/bold" : "heading-xl/bold" : w === m.y$.SMALL ? "heading-xl/extrabold" : "heading-xxl/extrabold";
@@ -192,10 +192,10 @@ let A = e => {
           className: o()(B.boxVideo, {
             [C]: null != C
           }),
-          ref: L,
+          ref: x,
           children: (0, r.jsx)("source", {
             src: f,
-            type: x ? E.m.MP4 : E.m.WEBM
+            type: L ? E.m.MP4 : E.m.WEBM
           })
         }, f)
       }),

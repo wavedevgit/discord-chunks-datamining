@@ -65,11 +65,11 @@ function s(e) {
     D = r.useCallback(() => {
       O.current = false, v.current || R()
     }, [R]),
-    x = r.useCallback(() => {
+    L = r.useCallback(() => {
       var e;
       v.current = true, null == (e = y.current) || e.stop()
     }, []),
-    L = r.useCallback(() => {
+    x = r.useCallback(() => {
       v.current = false, O.current || R()
     }, [R]),
     j = r.useMemo(() => ({
@@ -94,7 +94,7 @@ function s(e) {
     isRendered: g,
     triggerProps: j,
     handleExitComplete: A,
-    onTooltipMouseEnter: x,
-    onTooltipMouseLeave: L
+    onTooltipMouseEnter: L,
+    onTooltipMouseLeave: x
   }
 }

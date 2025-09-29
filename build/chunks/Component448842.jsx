@@ -88,7 +88,7 @@ function A(e) {
     s.S.dispatch(b.CkL.PERFORM_SEARCH, {
       searchEverywhere: t
     })
-  }, x = e => {
+  }, L = e => {
     var t;
     let {
       autocompleteCount: n,
@@ -115,7 +115,7 @@ function A(e) {
       isInFilterForSelectedChannel: O,
       searchAutocompleteSelectAction: i
     })
-  }, L = i.useMemo(() => {
+  }, x = i.useMemo(() => {
     let {
       label: e
     } = (0, d.HU)({
@@ -292,7 +292,7 @@ function A(e) {
     },
     [b.Sap.FILTER_ALL]: () => {
       let e = [];
-      if (e.push(L), v.type === b.aib.FAVORITES && (0, l.X$)()) {
+      if (e.push(x), v.type === b.aib.FAVORITES && (0, l.X$)()) {
         let t = (0, _.fC)(f.i.ROW, {
           icon: (0, r.jsx)(a._Ve, {
             size: "sm",
@@ -337,7 +337,7 @@ function A(e) {
               selectedIndex: n,
               searchAutocompleteSelectAction: r
             } = e;
-            x({
+            L({
               selectedIndex: n,
               searchAutocompleteSelectAction: r,
               selectedAutocomplete: i,
@@ -403,7 +403,7 @@ function A(e) {
               selectedIndex: r,
               searchAutocompleteSelectAction: o
             } = t;
-            x({
+            L({
               selectedIndex: r,
               searchAutocompleteSelectAction: o,
               selectedAutocomplete: n,

@@ -62,7 +62,7 @@ function D(e) {
   return e
 }
 
-function x(e, t) {
+function L(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -73,8 +73,8 @@ function x(e, t) {
   return n
 }
 
-function L(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
+function x(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -194,7 +194,7 @@ function G(e) {
     sourceQuestContent: v
   }), A = (0, E._s)({
     quest: n
-  }), w = (0, E.Rf)(n), x = i.useCallback(() => {
+  }), w = (0, E.Rf)(n), L = i.useCallback(() => {
     (0, u.$)()
   }, []), M = i.useCallback(() => {
     (0, d.Y)({
@@ -334,15 +334,15 @@ function G(e) {
           tooltipText: null,
           onClick: I
         };
-        if (a) return L(D({}, i), {
+        if (a) return x(D({}, i), {
           text: P.intl.string(P.t.MAS7uL)
         });
-        if ((0, m.vQ)(n.config)) return L(D({}, i), {
+        if ((0, m.vQ)(n.config)) return x(D({}, i), {
           text: P.intl.string(P.t.vTgCW1)
         });
         if ((0, m.Bg)(n.config)) return {
           tooltipText: null,
-          onClick: x,
+          onClick: L,
           text: P.intl.string(P.t["eQX+go"])
         };
         else if ((0, m.xN)(n.config)) return {
@@ -350,11 +350,11 @@ function G(e) {
           text: P.intl.string(P.t.WYchdX),
           onClick: M
         };
-        return L(D({}, i), {
+        return x(D({}, i), {
           text: P.intl.string(P.t.bAGFz8)
         })
     }
-  }, [r, b, A, _, I, a, n, o, s, f, k, w, x, M, y, G, v, Z, B])
+  }, [r, b, A, _, I, a, n, o, s, f, k, w, L, M, y, G, v, Z, B])
 }
 
 function B() {

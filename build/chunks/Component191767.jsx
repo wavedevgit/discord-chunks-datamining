@@ -1,4 +1,4 @@
-/** Chunk was on 66663 **/
+/** Chunk was on 89342 **/
 /** chunk id: 191767, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   f: () => E
@@ -318,7 +318,7 @@ let w = {
   D = e => true !== e ? JSON.stringify(e, null, 2) : "undefined";
 
 function L() {
-  let [e, t] = Chunk647438.useState(D(A)), [n, l] = Chunk647438.useState(A), [s, d] = Chunk647438.useState(D(Z)), [u, p] = Chunk647438.useState(Z), [h, x] = Chunk647438.useState(null), [f, b] = Chunk647438.useState((0, Chunk951288.jsx)(Chunk237012.DS, {
+  let [e, t] = Chunk647438.useState(D(A)), [n, l] = Chunk647438.useState(A), [s, d] = Chunk647438.useState(D(Z)), [u, p] = Chunk647438.useState(Z), [h, x] = Chunk647438.useState(null), [f, g] = Chunk647438.useState((0, Chunk951288.jsx)(Chunk237012.DS, {
     errorLabel: w.CONFIGURABLE,
     elementOptions: A,
     children: (0, Chunk951288.jsx)(Chunk289008.ExpressCheckoutElement, {
@@ -443,7 +443,7 @@ function M() {
       })
     }), ["GPAY_FILTERED", "APPLE_PAY_FILTERED", "APPLE_AND_GPAY_DISABLED"].map(e => {
       let t = w[e];
-      return (0, a.jsx)(g.E_, {
+      return (0, a.jsx)(b.E_, {
         label: t,
         children: (0, a.jsxs)("div", {
           children: [(0, a.jsx)(c.Text, {
@@ -453,7 +453,7 @@ function M() {
           }), (0, a.jsx)(m.Z, {
             className: j.markdown,
             children: "".concat("``").concat(D(R[e]), " ").concat("``")
-          }), (0, a.jsx)(g.DS, {
+          }), (0, a.jsx)(b.DS, {
             errorLabel: t,
             children: (0, a.jsx)(i.ExpressCheckoutElement, {
               onConfirm: e => {

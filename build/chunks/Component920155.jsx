@@ -91,7 +91,7 @@ function S(e) {
     gradientColor: A,
     onPositionChange: C,
     scrollBehavior: N = "sticky"
-  } = e, [R, P] = i.useState(p), [w, D] = i.useState(E), x = i.useRef(E), L = (0, c.e7)([d.Z], () => d.Z.getLayers()), j = null != (t = L[L.length - 1]) ? t : "base", M = i.useMemo(() => {
+  } = e, [R, P] = i.useState(p), [w, D] = i.useState(E), L = i.useRef(E), x = (0, c.e7)([d.Z], () => d.Z.getLayers()), j = null != (t = x[x.length - 1]) ? t : "base", M = i.useMemo(() => {
     var e;
     return null == a.current || (null == (e = a.current.closest("[data-layer]")) ? true : e.getAttribute("data-layer")) === j
   }, [a, j]);
@@ -111,7 +111,7 @@ function S(e) {
         setPopoutRef: t,
         position: i
       } = e, c = y(e, ["setPopoutRef", "position"]);
-      return null != i && i !== x.current && (x.current = i, D(i), null == C || C(i)), U((e, i) => {
+      return null != i && i !== L.current && (L.current = i, D(i), null == C || C(i)), U((e, i) => {
         if (!i) return null;
         let u = (0, r.jsx)(l.VqE, b(g({}, c), {
           setDialogRef: t,

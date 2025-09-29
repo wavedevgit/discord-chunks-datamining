@@ -1,34 +1,33 @@
-/** Chunk was on web.js **/
-/** chunk id: 960919, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 81501 **/
+/** chunk id: 960919, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  M: () => d,
-  Z: () => f
+  M: () => u,
+  Z: () => h
 });
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk780384 = require("./780384.js"),
   Chunk410030 = require("./410030.js"),
   Chunk779802 = require("./779802.js");
 let Chunk17702 = require("./17702.js"),
   Chunk647894 = require("./647894.js"),
-  d = e => {
+  u = e => {
     let {
       customSize: t,
       shouldUseThemeColor: n = false,
-      loading: i,
-      className: d
-    } = e, f = (0, s.ZP)(), _ = n && (0, o.ap)(f) ? u : c, p = true !== t ? {
-      height: t
-    } : true;
+      loading: a,
+      className: u
+    } = e, h = (0, c.ZP)(), _ = n && (0, l.ap)(h) ? d : o;
     return (0, r.jsx)("img", {
-      className: a()(l.orbIconSVG, d, {
-        [l.loading]: i
+      className: i()(s.orbIconSVG, u, {
+        [s.loading]: a
       }),
       src: _,
       alt: "",
-      style: p
+      style: true !== t ? {
+        height: t
+      } : true
     })
   },
-  f = d
+  h = u

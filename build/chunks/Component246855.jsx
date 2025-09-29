@@ -27,7 +27,7 @@ function y(e) {
   let {
     className: n
   } = e;
-  return (0, a.jsx)(c.Z, {
+  return (0, a.jsx)(o.Z, {
     className: n,
     playsInline: true,
     controls: false,
@@ -65,14 +65,14 @@ function N(e) {
     onClose: n,
     orbsEarned: t,
     orbsBalance: r
-  } = e, c = async () => {
-    (0, o.Y)({
-      pageType: E.ZY5.GLOBAL_DISCOVERY_QUESTS,
-      sectionType: E.jXE.ORBS_REWARD_MODAL,
-      ctaObject: E.qAy.CTA_TO_ORBS_SHOP
+  } = e, o = async () => {
+    (0, c.Y)({
+      pageType: R.ZY5.GLOBAL_DISCOVERY_QUESTS,
+      sectionType: R.jXE.ORBS_REWARD_MODAL,
+      ctaObject: R.qAy.CTA_TO_ORBS_SHOP
     }), await n(), (0, s.mK)({
       openInLayer: false,
-      tab: p.AW.ORBS,
+      tab: E.AW.ORBS,
       analyticsLocations: [],
       analyticsSource: l.Z.QUEST_REWARD_MODAL
     })
@@ -104,7 +104,7 @@ function N(e) {
       variant: "secondary",
       size: "sm",
       text: g.intl.string(g.t.WYchdX),
-      onClick: c,
+      onClick: o,
       fullWidth: true
     })]
   })
@@ -117,26 +117,26 @@ function x(e) {
     onClose: i,
     transitionState: l,
     sourceQuestContent: s,
-    location: c
-  } = e, o = (null == (n = t.userStatus) ? true : n.claimedAt) != null, {
+    location: o
+  } = e, c = (null == (n = t.userStatus) ? true : n.claimedAt) != null, {
     balance: u,
-    error: E
-  } = (0, d.A)(), p = (0, _.LM)(t.config), [f, b] = r.useState(o ? "success" : "loading");
+    error: R
+  } = (0, d.A)(), E = (0, _.LM)(t.config), [f, b] = r.useState(c ? "success" : "loading");
   r.useEffect(() => {
-    o || "loading" !== f || (0, h.QB)(t.id, m.y$.CROSS_PLATFORM, c).then(() => b("success")).catch(() => b("error"))
-  }, [t.id, o, f, c]);
-  let y = "loading" === f || null == u && null == E,
-    A = "error" === f || null == p || null == u && null != E;
+    c || "loading" !== f || (0, h.QB)(t.id, m.y$.CROSS_PLATFORM, o).then(() => b("success")).catch(() => b("error"))
+  }, [t.id, c, f, o]);
+  let y = "loading" === f || null == u && null == R,
+    A = "error" === f || null == E || null == u && null != R;
   return y || A ? null : (0, a.jsx)(C.Z, {
     onClose: i,
     transitionState: l,
     quest: t,
     sourceQuestContent: s,
-    rewardContent: (0, a.jsx)(R.Z, {
+    rewardContent: (0, a.jsx)(p.Z, {
       rewardName: g.intl.string(g.t.Lmysvb),
       children: (0, a.jsx)(N, {
         onClose: i,
-        orbsEarned: p,
+        orbsEarned: E,
         orbsBalance: u
       })
     })

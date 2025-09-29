@@ -38,10 +38,10 @@ function _(e, t) {
     P = u.Z.getMutualFriends(e),
     w = u.Z.getMutualFriendsCount(e),
     D = null == P && b,
-    x = null == w && E,
-    L = null == R && g || D || x,
+    L = null == w && E,
+    x = null == R && g || D || L,
     j = null == v ? null == A : null == N,
-    M = !j && (C || L);
+    M = !j && (C || x);
   if (!j && !M) return Promise.resolve();
   (0, s.t)(), null != t && (0, a.vM)(t);
   let k = {

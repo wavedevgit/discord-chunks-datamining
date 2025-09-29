@@ -65,8 +65,8 @@ function R(e, t) {
 let P = {},
   w = {},
   D = {},
-  x = [],
-  L = {},
+  L = [],
+  x = {},
   j = {
     status: "ok",
     lastRequest: null,
@@ -134,10 +134,10 @@ class Z extends(s = Chunk442837.ZP.PersistedStore) {
     return !(null == i ? true : i.fetching) && 0 === o
   }
   channelAffinities() {
-    return x
+    return L
   }
   channelAffinitiesById() {
-    return L
+    return x
   }
   channelAffinitiesStatus() {
     return j
@@ -152,7 +152,7 @@ class Z extends(s = Chunk442837.ZP.PersistedStore) {
       withUnreads: r,
       numChannels: i = G
     } = e, a = [];
-    return t && (a = a.concat(M)), n && (a = a.concat(x.map(e => e.channel_id))), r && (a = a.filter(e => {
+    return t && (a = a.concat(M)), n && (a = a.concat(L.map(e => e.channel_id))), r && (a = a.filter(e => {
       let t = m.Z.getChannel(e);
       return null != t && !y.ZP.isChannelMuted(t.guild_id, e) && E.ZP.hasUnread(e)
     })), (a = a.filter(e => {
@@ -295,13 +295,13 @@ let V = new Z(Chunk570140.Z, {
       error: r
     } = e;
     if (null != r) {
-      x = [], L = {}, j = R(C({}, j), {
+      L = [], x = {}, j = R(C({}, j), {
         status: "error",
         lastResponse: Date.now()
       });
       return
     }
-    x = null != n ? n : [], L = null != (t = null == n ? true : n.reduce((e, t) => (e[t.channel_id] = t.affinity, e), {})) ? t : {}, j = R(C({}, j), {
+    L = null != n ? n : [], x = null != (t = null == n ? true : n.reduce((e, t) => (e[t.channel_id] = t.affinity, e), {})) ? t : {}, j = R(C({}, j), {
       status: "ok",
       lastResponse: Date.now()
     })

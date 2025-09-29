@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 176168, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 1272 **/
+/** chunk id: 176168, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => p
 });
 var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
@@ -13,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk674455 = require("./674455.js"),
   Chunk212612 = require("./212612.js"),
   Chunk861218 = require("./861218.js");
-let f = function(e) {
+let p = function(e) {
   let {
     quest: t
   } = e;
@@ -24,18 +23,18 @@ let f = function(e) {
       children: [(0, r.jsx)(i.X6q, {
         className: u.barHeading,
         variant: "heading-md/semibold",
-        children: l.intl.string(l.t.rjVPdH)
+        children: s.intl.string(s.t.rjVPdH)
       }), (0, r.jsx)("div", {
         className: u.fixedBarContainer,
         children: (0, r.jsx)("div", {
           className: u.fixedBarWrapper,
           children: (0, r.jsx)("div", {
             className: d.panels,
-            children: (0, r.jsx)(o.Z, {
-              children: (0, r.jsx)(s.p, {
+            children: (0, r.jsx)(a.Z, {
+              children: (0, r.jsx)(o.p, {
                 source: "preview",
                 questId: t.id,
-                children: (0, r.jsx)(a.P, {
+                children: (0, r.jsx)(l.P, {
                   quest: t
                 })
               })

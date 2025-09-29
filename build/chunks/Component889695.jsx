@@ -45,10 +45,10 @@ function S(e) {
   } = (0, l.cj)([b.Z], () => ({
     impersonateType: b.Z.getImpersonateType(t),
     viewingRoles: b.Z.getViewingRoles(t)
-  })), R = C === y.z.SERVER_SHOP, P = (0, l.e7)([f.ZP], () => null != n ? f.ZP.getTrueMember(t, n.id) : null), [w, D] = (0, c.A7R)(null == N ? [] : g.default.keys(N)), x = i.useRef(a);
+  })), R = C === y.z.SERVER_SHOP, P = (0, l.e7)([f.ZP], () => null != n ? f.ZP.getTrueMember(t, n.id) : null), [w, D] = (0, c.A7R)(null == N ? [] : g.default.keys(N)), L = i.useRef(a);
   i.useEffect(() => {
     let e = {},
-      t = x.current;
+      t = L.current;
     if (null != t && null != C) {
       for (let t of w) {
         let n = S[t];
@@ -59,11 +59,11 @@ function S(e) {
       })
     }
   }, [w, C, S]);
-  let L = null != a && null != n && null != P ? A.find(e => P.roles.includes(e.id)) : true,
+  let x = null != a && null != n && null != P ? A.find(e => P.roles.includes(e.id)) : true,
     j = i.useMemo(() => null != a && null != n ? A.filter(e => !(0, d.fI)(e)).filter(e => {
       var t;
       return !R || (null == (t = e.tags) ? true : t.subscription_listing_id) != null
-    }).filter(e => (null == L ? true : L.id) === e.id || m.r6(a, n.id, L, e)) : [], [a, n, R, L, A]);
+    }).filter(e => (null == x ? true : x.id) === e.id || m.r6(a, n.id, x, e)) : [], [a, n, R, x, A]);
   if (null == n || null == a || null == P) return null;
   let M = {};
   return (P.roles.forEach(e => {

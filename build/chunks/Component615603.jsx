@@ -137,14 +137,14 @@ function D(e) {
   }, t.id)
 }
 
-function x(e) {
+function L(e) {
   (0, c.ZDy)(async () => t => (0, r.jsx)(_.default, w(R({}, t), {
     guildBoostSlots: [e],
     locationSection: T.jXE.SETTINGS_PREMIUM
   })))
 }
 
-function L(e) {
+function x(e) {
   (0, c.ZDy)(async () => t => (0, r.jsx)(p.default, w(R({}, t), {
     guildBoostSlot: e
   })))
@@ -263,7 +263,7 @@ let M = function(e) {
               text: A.intl.string(A.t.BMx1i4)
             }, e), {
               disabled: null == W || N,
-              onClick: null != W ? () => x(W) : true
+              onClick: null != W ? () => L(W) : true
             }))
           })
         })]
@@ -272,7 +272,7 @@ let M = function(e) {
         children: M.map(e => (0, r.jsx)(D, {
           guildBoostSlot: e,
           isCancellable: F,
-          onCancel: L,
+          onCancel: x,
           onUncancel: j,
           premiumSubscription: _,
           useReducedMotion: v,

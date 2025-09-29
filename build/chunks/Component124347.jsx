@@ -331,12 +331,12 @@ class w extends(r = Chunk647438.Component) {
       dataSafeSrc: P,
       srcIsAnimated: D
     } = this.props, {
-      readyState: x,
-      hasMouseOver: L,
+      readyState: L,
+      hasMouseOver: x,
       hasFocus: j
     } = this.state, M = null != require, k = this.getRatio(), U = (0, Chunk392711.clamp)(Math.round(Chunk866960 * k), null != Chunk768581 ? Chunk768581 : 0, null != Chunk217702 ? Chunk217702 : 1 / 0), G = (0, Chunk392711.clamp)(Math.round(Chunk626135 * k), null != Chunk956664 ? Chunk956664 : 0, null != O ? O : 1 / 0), B = {
       alt: module,
-      readyState: x,
+      readyState: L,
       onContextMenu: null != Chunk647438 ? Chunk647438 : true,
       zoomable: M,
       className: Chunk818083,
@@ -374,14 +374,14 @@ class w extends(r = Chunk647438.Component) {
       onBlur: this.onBlur
     };
     if (1 === B.width && 1 === B.height) return null;
-    switch ((M || null != I) && (B.onClick = this.onClick), r && (B.original = null != Chunk622535 && "" !== Chunk622535 ? Chunk622535 : B.src), x) {
+    switch ((M || null != I) && (B.onClick = this.onClick), r && (B.original = null != Chunk622535 && "" !== Chunk622535 ? Chunk622535 : B.src), L) {
       case Chunk981631.zo9.LOADING:
         null != exports && (B.src = exports);
         break;
       case Chunk981631.zo9.READY:
         if (w.isAnimated(this.props)) {
           B.onMouseLeave = this.onMouseLeave;
-          let e = (Chunk286379 || L || j) && (null == Chunk740492 || Chunk740492) && w.visibilityObserver.isVisible(this);
+          let e = (Chunk286379 || x || j) && (null == Chunk740492 || Chunk740492) && w.visibilityObserver.isVisible(this);
           module ? (B.src = this.getSrc(k), B.renderAccessory = T) : (B.src = this.getSrc(k, !Chunk797614 || !Chunk286379), B.renderAccessory = this.renderAccessory), null != Chunk134432 && (B.children = t => {
             let {
               src: n,

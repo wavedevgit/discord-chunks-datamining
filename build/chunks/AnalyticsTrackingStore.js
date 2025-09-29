@@ -69,8 +69,8 @@ let m = "x-science-test",
   P = 0,
   w = null,
   D = 0,
-  x = Number.MAX_SAFE_INTEGER,
-  L = 0,
+  L = Number.MAX_SAFE_INTEGER,
+  x = 0,
   j = 0,
   M = null,
   k = false,
@@ -78,7 +78,7 @@ let m = "x-science-test",
   G = null;
 
 function B() {
-  C = 0, N = 0, R = 0, D = 0, x = Number.MAX_SAFE_INTEGER, L = 0, j = 0, w = Date.now(), P = A
+  C = 0, N = 0, R = 0, D = 0, L = Number.MAX_SAFE_INTEGER, x = 0, j = 0, w = Date.now(), P = A
 }
 
 function Z(e) {
@@ -137,7 +137,7 @@ let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
       let e = Y.slice();
       Y = [], D = Z(D);
       let t = e.length;
-      x = Math.min(x, t), L = Math.max(L, t), j = Z(j, t);
+      L = Math.min(L, t), x = Math.max(x, t), j = Z(j, t);
       let n = ee(e);
       return n.then(() => {
         e.forEach(e => {
@@ -193,8 +193,8 @@ let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
           telemetry_period_end_timestamp: Date.now(),
           event_queue_rejection_count: C,
           event_queue_batch_count: D,
-          event_queue_batch_min_size: x === Number.MAX_SAFE_INTEGER ? 0 : x,
-          event_queue_batch_max_size: L,
+          event_queue_batch_min_size: L === Number.MAX_SAFE_INTEGER ? 0 : L,
+          event_queue_batch_max_size: x,
           event_queue_batch_avg_size: D > 0 ? j / D : 0,
           science_request_id: G,
           science_response: U,

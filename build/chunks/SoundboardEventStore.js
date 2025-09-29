@@ -73,7 +73,7 @@ function S(e) {
     sound: t,
     trigger: n
   } = e;
-  if (!L()) return;
+  if (!x()) return;
   let r = t.soundId.toString();
   n === h.YQ.SOUNDBOARD && N(r)
 }
@@ -84,7 +84,7 @@ function A(e) {
     soundId: n,
     userId: r
   } = e;
-  if (!x()) return;
+  if (!L()) return;
   let i = n.toString();
   r !== (null == (t = f.default.getCurrentUser()) ? true : t.id) && R(i) && C(i)
 }
@@ -114,7 +114,7 @@ function P(e) {
 
 function w() {
   var e;
-  if (!L()) return;
+  if (!x()) return;
   let t = null == (e = Chunk581883.Z.frecencyWithoutFetchingLatest.playedSoundFrecency) ? true : module.playedSounds;
   T.overwriteHistory(P(null != exports ? exports : {}), v)
 }
@@ -126,17 +126,17 @@ function D(e) {
     },
     wasSaved: n
   } = e;
-  L() && t === g.yP.FRECENCY_AND_FAVORITES_SETTINGS && n && (v = [])
+  x() && t === g.yP.FRECENCY_AND_FAVORITES_SETTINGS && n && (v = [])
 }
 
-function x() {
+function L() {
   return (0, Chunk164878.v)({
     location: "soundboard_event_store",
     autoTrackExposure: false
   }).canSeeRecentlyHeard
 }
 
-function L() {
+function x() {
   return (0, Chunk164878.v)({
     location: "soundboard_event_store",
     autoTrackExposure: false

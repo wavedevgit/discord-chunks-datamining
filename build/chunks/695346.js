@@ -12,7 +12,7 @@ require.d(exports, {
   Ex: () => eG,
   Fg: () => $,
   G6: () => ep,
-  H1: () => L,
+  H1: () => x,
   I0: () => k,
   JG: () => eF,
   JN: () => ei,
@@ -30,10 +30,10 @@ require.d(exports, {
   RS: () => ev,
   R_: () => eB,
   Rt: () => e$,
-  SE: () => eL,
+  SE: () => ex,
   Sb: () => eN,
   Sh: () => eW,
-  T4: () => x,
+  T4: () => L,
   UP: () => ef,
   Wp: () => eD,
   Xc: () => Z,
@@ -163,8 +163,8 @@ let C = (0, Chunk560997.Zc)("notifications", "enableVoiceActivityNotifications",
   P = [],
   w = (0, Chunk560997.Zc)("textAndImages", "emojiPickerCollapsedSections", e => null != e ? e : P, e => e),
   D = (0, Chunk560997.Zc)("textAndImages", "stickerPickerCollapsedSections", e => null != e ? e : P, e => e),
-  x = (0, Chunk560997.Zc)("textAndImages", "soundboardPickerCollapsedSections", e => null != e ? e : P, e => e),
-  L = (0, Chunk560997.Zc)("textAndImages", "viewImageDescriptions", e => {
+  L = (0, Chunk560997.Zc)("textAndImages", "soundboardPickerCollapsedSections", e => null != e ? e : P, e => e),
+  x = (0, Chunk560997.Zc)("textAndImages", "viewImageDescriptions", e => {
     var t;
     return null != (t = null == e ? true : e.value) && t
   }, e => o.D5.create({
@@ -519,9 +519,9 @@ let eN = (0, Chunk560997.KM)((0, Chunk560997.Zc)("appearance", "developerMode", 
     var e;
     return null == (e = Chunk263937.Z.getOverride("animateStickers")) ? true : module.value
   })),
-  ex = [],
-  eL = (0, Chunk560997.Zc)("privacy", "activityRestrictedGuildIds", e => null != e ? e : ex, e => e),
-  ej = (0, Chunk560997.Zc)("privacy", "activityRestrictedGuildIds", e => null != e ? e : ex, e => e, {
+  eL = [],
+  ex = (0, Chunk560997.Zc)("privacy", "activityRestrictedGuildIds", e => null != e ? e : eL, e => e),
+  ej = (0, Chunk560997.Zc)("privacy", "activityRestrictedGuildIds", e => null != e ? e : eL, e => e, {
     delay: Chunk526761.fy.FREQUENT_USER_ACTION
   }),
   eM = [],

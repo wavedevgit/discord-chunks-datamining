@@ -72,7 +72,7 @@ let A = {},
   },
   w = new Chunk798140.ZP,
   D = new Chunk798140.ZP,
-  x = {
+  L = {
     suppress_everyone: false,
     suppress_roles: false,
     mute_scheduled_events: false,
@@ -86,11 +86,11 @@ let A = {},
     version: false,
     mute_config: null
   },
-  L = {
-    [Chunk981631.bL.ALL_MESSAGES]: S(I({}, x), {
+  x = {
+    [Chunk981631.bL.ALL_MESSAGES]: S(I({}, L), {
       message_notifications: Chunk981631.bL.ALL_MESSAGES
     }),
-    [Chunk981631.bL.ONLY_MENTIONS]: S(I({}, x), {
+    [Chunk981631.bL.ONLY_MENTIONS]: S(I({}, L), {
       message_notifications: Chunk981631.bL.ONLY_MENTIONS
     })
   },
@@ -201,7 +201,7 @@ function q(e, t, n) {
 
 function X(e) {
   let t = m.Z.getGuild(e);
-  return L[null != t ? t.defaultMessageNotifications : E.bL.ALL_MESSAGES]
+  return x[null != t ? t.defaultMessageNotifications : E.bL.ALL_MESSAGES]
 }
 
 function Q() {

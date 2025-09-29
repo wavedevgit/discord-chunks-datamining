@@ -35,7 +35,7 @@ var Chunk392711 = require("./392711.js"),
   Chunk185923 = require("./185923.js"),
   Chunk388032 = require("./388032.jsx");
 
-function x(e, t, n) {
+function L(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -44,14 +44,14 @@ function x(e, t, n) {
   }) : e[t] = n, e
 }
 
-function L(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      x(e, t, n[t])
+      L(e, t, n[t])
     })
   }
   return e
@@ -178,7 +178,7 @@ let Z = Chunk428595.Z.RULES,
         if (/^[^ ]+@[^ ]+\.[^ .]+/.test(r)) return null;
         let i = k("@", e, t.users, "mention");
         if (i || (i = k("@", e, t.mentionableRoles, "roleMention"))) return i;
-        if (!(i = k("@", e, t.users.map(e => M(L({}, e), {
+        if (!(i = k("@", e, t.users.map(e => M(x({}, e), {
             text: e.text.split("#")[0]
           })), "mention"))) return null;
         let a = z.exec(e);
@@ -256,7 +256,7 @@ let Z = Chunk428595.Z.RULES,
         }
       }
     },
-    text: M(L({}, F), {
+    text: M(x({}, F), {
       match: (e, t) => "string" == typeof t.textExclusions && "" !== t.textExclusions ? (0, f.T9)(t.textExclusions).exec(e) : null != F.match ? F.match(e, t, "") : null
     })
   },
@@ -378,7 +378,7 @@ let Z = Chunk428595.Z.RULES,
         content: "<id:".concat(e[1], ">")
       })
     },
-    timestamp: M(L({}, Z.timestamp), {
+    timestamp: M(x({}, Z.timestamp), {
       parse() {
         for (var e = arguments.length, t = Array(module), n = 0; require < module; require++) exports[require] = arguments[require];
         let r = Z.timestamp.parse(...exports);
@@ -389,7 +389,7 @@ let Z = Chunk428595.Z.RULES,
         }
       }
     }),
-    text: L({}, F)
+    text: x({}, F)
   };
 [q, X].forEach(e => {
   Object.keys(e).forEach((t, n) => {

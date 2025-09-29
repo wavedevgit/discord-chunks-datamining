@@ -116,11 +116,11 @@ function D(e) {
   return O = g({}, O, e.preferences), A()
 }
 
-function x(e) {
+function L(e) {
   return T = e.theme, A()
 }
 
-function L() {
+function x() {
   return T = null, A()
 }
 
@@ -145,7 +145,7 @@ let M = new C(Chunk570140.Z, {
   SYSTEM_THEME_CHANGE: w,
   ACCESSIBILITY_DARK_SIDEBAR_TOGGLE: R,
   UPDATE_THEME_PREFERENCES: D,
-  SET_THEME_OVERRIDE: x,
-  CLEAR_THEME_OVERRIDE: L,
+  SET_THEME_OVERRIDE: L,
+  CLEAR_THEME_OVERRIDE: x,
   REFRESH_THEME: j
 })

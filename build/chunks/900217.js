@@ -40,10 +40,10 @@ module.exports = function(e, t) {
       w = P.getBlockForKey(T),
       D = w.getText().slice(N, R);
     if (y.endsWith(f) && (y = y.slice(0, false)), y === D) {
-      var x = t.nativeEvent.inputType;
-      if (x) {
-        var L = _(x, O);
-        L !== O && (e.restoreEditorDOM(), e.update(L))
+      var L = t.nativeEvent.inputType;
+      if (L) {
+        var x = _(L, O);
+        x !== O && (e.restoreEditorDOM(), e.update(x))
       }
       return
     }

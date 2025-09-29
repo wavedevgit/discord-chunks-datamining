@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   O: () => R,
-  Z: () => x
+  Z: () => L
 }), require("./35282.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -108,8 +108,8 @@ function P(e) {
     scrollable: P,
     role: w,
     hideSearch: D,
-    showDivider: x,
-    disableDoubleClick: L
+    showDivider: L,
+    disableDoubleClick: x
   } = e, j = null == s || (0, O.AB)(s) ? null : s, M = (0, a.e7)([m.Z], () => m.Z.isInChannel(j) || false), k = (0, a.e7)([c.Z], () => null != j && c.Z.getParticipantsListOpen(j)), {
     enabled: U,
     inInbox: G
@@ -131,7 +131,7 @@ function P(e) {
         guildId: g,
         channelId: s,
         className: v.search
-      }, null != g ? g : s) : null, x && (0, r.jsx)(b.ZP.Divider, {}), U && !G ? (0, r.jsx)(f.Z, {}) : null, B && M && null != j && !k && l === y.d4z.GROUP_DM && (0, r.jsxs)("div", {
+      }, null != g ? g : s) : null, L && (0, r.jsx)(b.ZP.Divider, {}), U && !G ? (0, r.jsx)(f.Z, {}) : null, B && M && null != j && !k && l === y.d4z.GROUP_DM && (0, r.jsxs)("div", {
         className: v.controlButtonWrapper,
         children: [(0, r.jsx)(b.ZP.Divider, {}), (0, r.jsx)(h.Z, {
           onClick: () => o.Z.toggleParticipantsList(j, !k)
@@ -145,7 +145,7 @@ function P(e) {
     toolbar: F(),
     transparent: I,
     hidden: T,
-    onDoubleClick: () => R(L),
+    onDoubleClick: () => R(x),
     "aria-label": C,
     "aria-labelledby": N,
     role: w,
@@ -190,4 +190,4 @@ function D(e) {
   })
 }
 D.Title = Chunk665149.ZP.Title, D.Icon = Chunk665149.ZP.Icon, D.ChannelIcon = Chunk665149.ZP.ChannelIcon, D.Divider = Chunk665149.ZP.Divider, D.Caret = Chunk665149.ZP.Caret;
-let x = D
+let L = D

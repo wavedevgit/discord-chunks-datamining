@@ -104,7 +104,7 @@ function F(e) {
   }, {
     header: "Developer Only",
     divider: true,
-    settings: r ? [j.s6.EXPERIMENTS, j.s6.DEVELOPER_OPTIONS, j.s6.QUEST_PREVIEW_TOOL_2] : []
+    settings: r ? [j.s6.EXPERIMENTS, j.s6.DEVELOPER_OPTIONS] : []
   }, {
     divider: true,
     settings: [j.s6.LOGOUT]
@@ -147,7 +147,7 @@ function H() {
   var e, t, n, o;
   let O = (0, Chunk725727.YO)().length,
     R = (0, Chunk160913.U)(),
-    L = (0, Chunk442837.e7)([Chunk663389.Z], () => Chunk663389.Z.getProps().searchParams),
+    x = (0, Chunk442837.e7)([Chunk663389.Z], () => Chunk663389.Z.getProps().searchParams),
     j = (0, Chunk631885.gU)(),
     k = (0, Chunk168308.bC)(),
     U = (0, Chunk924557.Go)(),
@@ -226,7 +226,7 @@ function H() {
 }
 
 function Y(e) {
-  let t = L.R.useField("searchResults"),
+  let t = x.R.useField("searchResults"),
     n = H(),
     r = n[e],
     i = Object.fromEntries(Object.entries(n).filter(e => {

@@ -98,7 +98,7 @@ function V(e) {
     children: (0, r.jsx)(c.PZ7, {
       size: "sm",
       onClick: () => {
-        null == t || t(x.L.USER_DISMISS), (0, m.Ll)()
+        null == t || t(L.L.USER_DISMISS), (0, m.Ll)()
       }
     })
   })
@@ -137,7 +137,7 @@ function Y(e) {
 function W(e) {
   let {
     markAsDismissed: t
-  } = e, n = (0, y.m)(L.p9.TIER_2);
+  } = e, n = (0, y.m)(x.p9.TIER_2);
   return (0, r.jsxs)("div", {
     className: k.coachmarkHeaderContainer,
     children: [(0, r.jsxs)("div", {
@@ -272,7 +272,7 @@ function Q(e) {
   let {
     onSaveTheme: t,
     canApply: n
-  } = e, i = (0, y.m)(L.p9.TIER_2);
+  } = e, i = (0, y.m)(x.p9.TIER_2);
   return (0, R.hf)(i, p.Z.CUSTOM_THEMES_EDITOR_COACHMARK), (0, r.jsxs)("div", {
     className: k.coachmarkFooterContainer,
     children: [(0, r.jsx)(q, {
@@ -289,7 +289,7 @@ function Q(e) {
       textOptions: {
         subscribeText: M.intl.string(M.t.JST6jo)
       },
-      subscriptionTier: L.Si.TIER_2,
+      subscriptionTier: x.Si.TIER_2,
       showGradient: true,
       color: u.Tt.BRAND
     })]
@@ -301,7 +301,7 @@ function J(e) {
     onSaveTheme: t,
     canApply: n,
     metadata: i
-  } = e, a = (0, y.m)(L.p9.TIER_2);
+  } = e, a = (0, y.m)(x.p9.TIER_2);
   (0, R.hf)(a, p.Z.CUSTOM_THEMES_EDITOR);
   let o = () => {
     (0, R.Vb)(), (0, g.Q3)(l.z.CUSTOM_THEME_COACHMARK), (null == i ? true : i.from) === m.tE.SETTING ? ((0, T.openUserSettings)(I.n.APPEARANCE_PANEL, {
@@ -322,7 +322,7 @@ function J(e) {
     }) : (0, r.jsx)(b.Z, {
       className: k.subscribeButton,
       size: u.zx.Sizes.MEDIUM,
-      subscriptionTier: L.Si.TIER_2,
+      subscriptionTier: x.Si.TIER_2,
       showGradient: true,
       premiumModalAnalyticsLocation: {
         page: D.ZY5.PREMIUM_UPSELL_CUSTOM_THEMES,
@@ -348,7 +348,7 @@ function $(e) {
     colors: T,
     chassisMixAmount: A,
     gradientAngle: D,
-    setColors: L,
+    setColors: x,
     setChassisMixAmount: j,
     setGradientAngle: U
   } = (0, S.Ig)(), [G, B] = i.useState(null != (t = T[0]) ? t : S.Dp), Z = (0, s.e7)([v.Z], () => v.Z.theme), F = (0, g.Nj)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), {
@@ -362,14 +362,14 @@ function $(e) {
         gradientAngle: D,
         baseMix: A
       }
-    }), (0, R.u7)(T, A, D, Z, V), null == a || a(x.L.TAKE_ACTION), F || (0, g.Q3)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), (0, m.Ll)(), (0, O.UD)()
+    }), (0, R.u7)(T, A, D, Z, V), null == a || a(L.L.TAKE_ACTION), F || (0, g.Q3)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), (0, m.Ll)(), (0, O.UD)()
   }, W = () => {
     y(C._m.RESET_BUTTON), (0, R.uf)()
   }, q = T.length > 0;
   return (i.useEffect(() => () => {
     I.current || y(C._m.EDITOR_CLOSE)
   }, [y]), (0, _.ZP)(() => {
-    u || (0, C.lT)(T, G, L)
+    u || (0, C.lT)(T, G, x)
   }), b) ? (0, r.jsx)("div", {
     className: o()(k.container, {
       [k.mobileContainer]: E
@@ -387,18 +387,18 @@ function $(e) {
             isCoachmark: u
           }), (0, r.jsx)(w.o, {}), (0, r.jsx)(P.U, {
             onChange: e => {
-              B(e), 0 === T.length && (0, C.lT)(T, e, L)
+              B(e), 0 === T.length && (0, C.lT)(T, e, x)
             },
             value: G,
             colors: T,
-            setColors: L
+            setColors: x
           }), T.length > 1 && (0, r.jsx)(K, {
             gradientAngle: D,
             setGradientAngle: U
           }), (0, r.jsx)(z, {
             chassisMixAmount: A,
             setChassisMixAmount: e => {
-              j(e), 0 === T.length && (0, C.lT)(T, G, L)
+              j(e), 0 === T.length && (0, C.lT)(T, G, x)
             }
           }), (0, r.jsx)(c.zxk, {
             variant: "secondary",

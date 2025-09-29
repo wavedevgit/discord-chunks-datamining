@@ -37,8 +37,8 @@ let a = {
   P = 65506,
   w = 65517,
   D = 65519,
-  x = 65534,
-  L = 65535,
+  L = 65534,
+  x = 65535,
   j = "JFIF",
   M = "Exif",
   k = "http://ns.adobe.com/xap/1.0/\0",
@@ -158,9 +158,9 @@ function ee(e, t) {
 
 function et(e, t) {
   let n = e.getUint16(t);
-  return n >= N && n <= D || n === x || n === v || n === I || n === T || n === S || n === A || n === C
+  return n >= N && n <= D || n === L || n === v || n === I || n === T || n === S || n === A || n === C
 }
 
 function en(e, t) {
-  return e.getUint16(t) === L
+  return e.getUint16(t) === x
 }

@@ -78,8 +78,8 @@ function y(e) {
     paymentAuthenticationState: P,
     selectedSkuId: w,
     activeSubscription: D,
-    previousStepRef: x,
-    setPurchaseState: L,
+    previousStepRef: L,
+    setPurchaseState: x,
     paymentElementsEnabled: j
   } = (0, d.JL)(), {
     isGift: M
@@ -100,7 +100,7 @@ function y(e) {
   }, Z = null != E ? E : B;
   i()(I, "Step should be set here");
   let F = (0, a.Z)(() => Date.now(), [I]),
-    V = (0, a.Z)(() => null != y && null == x.current ? j && y === f.h8.CREDIT_CARD_INFORMATION ? f.h8.PAYMENT_ELEMENT : y : f.h8.PAYMENT_TYPE, [y, x.current, j]);
+    V = (0, a.Z)(() => null != y && null == L.current ? j && y === f.h8.CREDIT_CARD_INFORMATION ? f.h8.PAYMENT_ELEMENT : y : f.h8.PAYMENT_TYPE, [y, L.current, j]);
   return (0, s.vP)({
     paymentModalArgs: k,
     initialStep: V,
@@ -112,7 +112,7 @@ function y(e) {
     analyticsData: t,
     onReturn: Z,
     onComplete: e => {
-      f.Nj.has(e) ? (L(_.A.COMPLETED), c(f.h8.CONFIRM, {
+      f.Nj.has(e) ? (x(_.A.COMPLETED), c(f.h8.CONFIRM, {
         trackedFromStep: e
       })) : c(f.h8.REVIEW, {
         trackedFromStep: e

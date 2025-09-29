@@ -74,8 +74,8 @@ function S(e) {
   i.useEffect(() => {
     (0, u.XV)()
   }, []);
-  let x = (0, a.cj)([d.Z], () => D ? d.Z.videoFilterAssets : {}),
-    L = i.useMemo(() => Object.values(x).filter(e => e.type === m.xV.BACKGROUND), [x]),
+  let L = (0, a.cj)([d.Z], () => D ? d.Z.videoFilterAssets : {}),
+    x = i.useMemo(() => Object.values(L).filter(e => e.type === m.xV.BACKGROUND), [L]),
     j = (0, s.O)(),
     M = {
       isVideoBackgroundSupported: w,
@@ -137,7 +137,7 @@ function S(e) {
       children: R
     }) : null, (0, r.jsx)(h.Z, {
       canUseCustomBackgrounds: D,
-      customBackgroundOptions: L,
+      customBackgroundOptions: x,
       selectedOption: O,
       onSelectOption: G,
       onUpsellClick: B,

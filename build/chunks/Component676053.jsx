@@ -96,7 +96,7 @@ function T(e) {
   } = e, P = v(e, ["title", "body", "assetUrl", "previewUrl", "action", "caretConfig", "badge", "textLink", "onWatchVideo", "onRequestClose", "popoverRef"]);
   let w = i.useRef(null),
     D = (0, o.j1)(y),
-    x = i.useCallback(() => ({
+    L = i.useCallback(() => ({
       type: "VIDEO",
       url: E,
       proxyUrl: E,
@@ -105,7 +105,7 @@ function T(e) {
       height: 720,
       className: g.media
     }), [E, t]),
-    L = i.useCallback(() => {
+    x = i.useCallback(() => {
       null !== w.current && w.current.pause(), null == N || N()
     }, [N]),
     j = i.useCallback(() => {
@@ -113,14 +113,14 @@ function T(e) {
     }, [N]),
     M = i.useCallback(() => {
       null !== w.current && w.current.pause();
-      let e = x();
+      let e = L();
       (0, c.K)({
         items: [e],
         startingIndex: 0,
         location: "VideoPopover",
         shouldHideMediaOptions: true
       }), null == N || N(), null == C || C()
-    }, [x, C, N]),
+    }, [L, C, N]),
     k = D ? (0, r.jsx)(a.z, {
       type: "image",
       src: y
@@ -147,7 +147,7 @@ function T(e) {
       })]
     });
   return (0, r.jsx)(u.m, O(b({}, P), {
-    onRequestClose: L,
+    onRequestClose: x,
     hasVideo: true,
     children: (0, r.jsxs)("div", {
       ref: R,

@@ -1,10 +1,9 @@
-/** Chunk was on web.js **/
-/** chunk id: 613087, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 3408 **/
+/** chunk id: 613087, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  B$: () => _,
+  B$: () => u,
   l7: () => p,
-  p: () => h
+  p: () => m
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -13,45 +12,38 @@ var Chunk951288 = require("./951288.js"),
   Chunk393238 = require("./393238.js"),
   Chunk743294 = require("./743294.js");
 
-function c(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function u(e) {
+function c(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      c(e, t, n[t])
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = r
     })
   }
   return e
 }
 
 function d(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function f(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
+    }
+    return n
+  })(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let _ = Chunk647438.createContext({
+let u = Chunk647438.createContext({
     registerComponent: () => {},
     unregisterComponent: () => {},
     animatedComponents: {},
@@ -67,138 +59,138 @@ let _ = Chunk647438.createContext({
     let {
       children: l,
       id: c,
-      inState: u,
-      isTextTransition: d = false
+      inState: d,
+      isTextTransition: p = false
     } = e, {
-      recalculateAnimationPositions: f,
-      registerComponent: p,
-      unregisterComponent: h,
-      expansionSpring: m,
-      mountPoints: g
-    } = i.useContext(_), E = i.useRef(null), b = i.useRef(null), y = i.useRef(true);
-    i.useEffect(() => {
-      f()
-    }, [f]), i.useLayoutEffect(() => {
-      let e = E.current;
-      return null != e && p(e, c, u), () => {
-        null != e && h(c, u)
+      recalculateAnimationPositions: m,
+      registerComponent: g,
+      unregisterComponent: f,
+      expansionSpring: h,
+      mountPoints: x
+    } = s.useContext(u), _ = s.useRef(null), b = s.useRef(null), j = s.useRef(true);
+    s.useEffect(() => {
+      m()
+    }, [m]), s.useLayoutEffect(() => {
+      let e = _.current;
+      return null != e && g(e, c, d), () => {
+        null != e && f(c, d)
       }
-    }, [c, u, p, h]);
-    let O = i.useCallback(e => {
+    }, [c, d, g, f]);
+    let v = s.useCallback(e => {
       let {
         height: t
       } = e;
-      y.current !== t && (f(), y.current = t)
-    }, [f]);
-    (0, s.PM)(E, O);
-    let v = null == (n = g.get(c)) ? true : n.current,
-      I = null;
-    return null == v ? I = null : d && null != m ? I = (0, r.jsxs)(r.Fragment, {
-      children: ["collapsed" === u && (0, a.createPortal)((0, r.jsx)(o.animated.div, {
+      j.current !== t && (m(), j.current = t)
+    }, [m]);
+    (0, i.PM)(_, v);
+    let C = null == (n = x.get(c)) ? true : n.current,
+      y = null;
+    return null == C ? y = null : p && null != h ? y = (0, r.jsxs)(r.Fragment, {
+      children: ["collapsed" === d && (0, o.createPortal)((0, r.jsx)(a.animated.div, {
         style: {
           position: "absolute",
-          opacity: m.to({
+          opacity: h.to({
             range: [0, 1],
             output: [1, 0]
           })
         },
         children: l(b)
-      }), v), "expanded" === u && (0, a.createPortal)((0, r.jsx)(o.animated.div, {
+      }), C), "expanded" === d && (0, o.createPortal)((0, r.jsx)(a.animated.div, {
         style: {
           position: "absolute",
-          opacity: m.to({
+          opacity: h.to({
             range: [0, 1],
             output: [0, 1]
           })
         },
         children: l(b)
-      }), v)]
-    }) : "collapsed" === u && (I = (0, a.createPortal)(l(b), v)), (0, r.jsxs)("div", {
+      }), C)]
+    }) : "collapsed" === d && (y = (0, o.createPortal)(l(b), C)), (0, r.jsxs)("div", {
       style: {
-        opacity: +(null == I && "collapsed" === u || null == v)
+        opacity: +(null == y && "collapsed" === d || null == C)
       },
       ref: t,
-      children: [l(E), I]
+      children: [l(_), y]
     })
   }),
-  h = e => {
+  m = e => {
     let {
       children: t,
       expandedContentRef: n,
-      collapsedContentRef: a,
-      expansionSpring: o
-    } = e, [s, c] = i.useState({}), [d, p] = i.useState([]), [h, m] = i.useState(() => new Map), g = i.useCallback((e, t, n) => {
-      c(r => {
-        var i;
-        let a = null != (i = r[t]) ? i : {
+      collapsedContentRef: o,
+      expansionSpring: a
+    } = e, [i, p] = s.useState({}), [m, g] = s.useState([]), [f, h] = s.useState(() => new Map), x = s.useCallback((e, t, n) => {
+      p(r => {
+        var s;
+        let o = null != (s = r[t]) ? s : {
           expanded: null,
           collapsed: null
         };
-        return f(u({}, r), {
-          [t]: f(u({}, a), {
+        return d(c({}, r), {
+          [t]: d(c({}, o), {
             [n]: e
           })
         })
-      }), m(e => {
+      }), h(e => {
         let n = new Map(e);
-        return n.set(t, i.createRef()), n
+        return n.set(t, s.createRef()), n
       })
-    }, []), E = i.useCallback((e, t) => {
+    }, []), _ = s.useCallback((e, t) => {
       let n = false;
-      c(r => {
-        var i;
-        let a = null != (i = r[e]) ? i : {
+      p(r => {
+        var s;
+        let o = null != (s = r[e]) ? s : {
           expanded: null,
           collapsed: null
         };
-        return a[t] = null, n = null == a.expanded && null == a.collapsed, f(u({}, r), {
-          [e]: a
+        return o[t] = null, n = null == o.expanded && null == o.collapsed, d(c({}, r), {
+          [e]: o
         })
-      }), n && m(t => {
+      }), n && h(t => {
         let n = new Map(t);
         return n.delete(e), n
       })
-    }, []), b = i.useCallback(() => {
+    }, []), b = s.useCallback(() => {
       let e = [];
-      for (let t in s) {
-        if (null == s[t] || null == n.current || null == a.current) continue;
-        let r = s[t].collapsed,
-          i = s[t].expanded;
-        if (null == r || null == i) continue;
-        let o = i.getBoundingClientRect(),
+      for (let t in i) {
+        if (null == i[t] || null == n.current || null == o.current) continue;
+        let r = i[t].collapsed,
+          s = i[t].expanded;
+        if (null == r || null == s) continue;
+        let a = s.getBoundingClientRect(),
           c = n.current.getBoundingClientRect(),
-          u = r.getBoundingClientRect(),
-          d = a.current.getBoundingClientRect(),
-          f = o.top - c.top + l.Li,
-          _ = u.top - d.top,
-          p = o.left - c.left + l.Li,
-          h = u.left - d.left,
-          m = -o.right + c.right + l.Li,
-          g = -u.right + d.right;
+          d = r.getBoundingClientRect(),
+          u = o.current.getBoundingClientRect(),
+          p = a.top - c.top + l.Li,
+          m = d.top - u.top,
+          g = a.left - c.left + l.Li,
+          f = d.left - u.left,
+          h = -a.right + c.right + l.Li,
+          x = -d.right + u.right;
         e.push({
           id: t,
-          collapsedLeft: h,
-          expandedLeft: p,
-          collapsedRight: g,
-          expandedRight: m,
-          collapsedTop: _,
-          expandedTop: f,
-          width: o.width
+          collapsedLeft: f,
+          expandedLeft: g,
+          collapsedRight: x,
+          expandedRight: h,
+          collapsedTop: m,
+          expandedTop: p,
+          width: a.width
         })
       }
-      p(e)
-    }, [s, n, a, p]);
-    return (0, r.jsx)(_.Provider, {
+      g(e)
+    }, [i, n, o, g]);
+    return (0, r.jsx)(u.Provider, {
       value: {
-        registerComponent: g,
-        unregisterComponent: E,
-        animatedComponents: s,
+        registerComponent: x,
+        unregisterComponent: _,
+        animatedComponents: i,
         expandedContentRef: n,
-        collapsedContentRef: a,
+        collapsedContentRef: o,
         recalculateAnimationPositions: b,
-        animatedComponentProps: d,
-        expansionSpring: o,
-        mountPoints: h
+        animatedComponentProps: m,
+        expansionSpring: a,
+        mountPoints: f
       },
       children: t
     })

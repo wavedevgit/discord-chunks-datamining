@@ -33,7 +33,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk88490 = require("./88490.js"),
   Chunk466674 = require("./466674.js");
 
-function x() {
+function B() {
   let e = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion),
     [t, n] = Chunk647438.useState(!module),
     [i, d] = Chunk647438.useState(false),
@@ -48,7 +48,7 @@ function x() {
       null == (n = Chunk100527.current) || require.play()
     }
   }, [exports, module]);
-  let R = (0, Chunk481060.q_F)({
+  let g = (0, Chunk481060.q_F)({
     from: {
       y: 50
     },
@@ -111,39 +111,39 @@ function U(e) {
     "data-migration-pending": true,
     transitionState: t,
     size: o.CgR.DYNAMIC,
-    className: N.modal,
+    className: v.modal,
     parentComponent: "QuestsOrbsRewardModal",
     children: [(0, r.jsx)("div", {
-      className: N.header,
+      className: v.header,
       children: (0, r.jsx)(o.olH, {
         "data-migration-pending": true,
-        className: N.closeBtn,
+        className: v.closeBtn,
         onClick: i
       })
     }), "loading" === l ? (0, r.jsx)("div", {
-      className: N.spinnerContainer,
+      className: v.spinnerContainer,
       children: (0, r.jsx)(o.$jN, {
         type: o.RAz.SPINNING_CIRCLE
       })
     }) : "success" === l ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(x, {}), (0, r.jsx)(o.X6q, {
+      children: [(0, r.jsx)(B, {}), (0, r.jsx)(o.X6q, {
         variant: "heading-lg/medium",
-        className: N.title,
+        className: v.title,
         children: S.intl.format(S.t["8l9H0t"], {
           balanceHook: () => (0, r.jsxs)("span", {
-            className: N.orbsBalance,
-            children: [(0, r.jsx)(R.Z, {
+            className: v.orbsBalance,
+            children: [(0, r.jsx)(g.Z, {
               shouldUseThemeColor: true,
-              className: N.orbsBalanceIcon
+              className: v.orbsBalanceIcon
             }), n]
           })
         })
       }), (0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
-        className: N.subtext,
+        className: v.subtext,
         children: S.intl.string(S.t.EDUOIC)
       }), (0, r.jsxs)(o.hE2, {
-        className: N.buttonContainer,
+        className: v.buttonContainer,
         fullWidthContainer: true,
         fullWidth: true,
         direction: "vertical",
@@ -160,16 +160,16 @@ function U(e) {
         })]
       })]
     }) : (0, r.jsxs)("div", {
-      className: N.errorContainer,
+      className: v.errorContainer,
       children: [(0, r.jsx)("img", {
         alt: "",
-        className: N.errorImage,
-        src: v
+        className: v.errorImage,
+        src: N
       }), (0, r.jsxs)("div", {
-        className: N.errorContentContainer,
+        className: v.errorContentContainer,
         children: [(0, r.jsx)(o.X6q, {
           variant: "heading-xl/medium",
-          className: N.errorHeader,
+          className: v.errorHeader,
           children: S.intl.string(S.t.tWYWJy)
         }), (0, r.jsx)(o.Text, {
           variant: "text-md/normal",
@@ -177,7 +177,7 @@ function U(e) {
           children: S.intl.string(S.t.JNQRU1)
         })]
       }), (0, r.jsx)("div", {
-        className: N.buttonContainer,
+        className: v.buttonContainer,
         children: (0, r.jsx)(o.zxk, {
           variant: "primary",
           fullWidth: true,
@@ -225,7 +225,7 @@ function T(e) {
     }, [r, t]), a.useEffect(() => {
       !l && null != s && null != o && s > o && c(true)
     }, [s, o, l]), a.useEffect(() => {
-      (0, E.QB)(e, g.y$.CROSS_PLATFORM, n).then(e => {
+      (0, R.QB)(e, E.y$.CROSS_PLATFORM, n).then(e => {
         if ((null == e ? true : e.claimedAt) != null) return void i("success");
         i("error")
       }).catch(() => {

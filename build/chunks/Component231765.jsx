@@ -74,7 +74,7 @@ let N = {
   P = (0, Chunk392711.range)(0, 2.25, .25),
   w = (0, Chunk392711.range)(1, 11),
   D = (0, Chunk392711.range)(1, 26),
-  x = () => [{
+  L = () => [{
     location: Chunk524484.Hn.CHAT_INPUT,
     title: Chunk388032.intl.string(Chunk388032.t.elTty8),
     description: Chunk388032.intl.string(Chunk388032.t.HtKfMj)
@@ -91,7 +91,7 @@ let N = {
     title: Chunk388032.intl.string(Chunk388032.t.V66giY),
     description: Chunk388032.intl.string(Chunk388032.t.fiHV7u)
   }],
-  L = () => [{
+  x = () => [{
     location: Chunk524484.oZ.CHAT_INPUT,
     title: Chunk388032.intl.string(Chunk388032.t.vUcvPD),
     description: Chunk388032.intl.string(Chunk388032.t.y00OrK)
@@ -232,7 +232,7 @@ function U(e) {
       })]
     }), (0, r.jsx)(j, {
       disabled: c,
-      locations: x(),
+      locations: L(),
       settingsLocations: o,
       onChange: e => s({
         confettiEnabledLocations: e
@@ -339,7 +339,7 @@ function B(e) {
       })]
     }), (0, r.jsx)(j, {
       disabled: d,
-      locations: L(),
+      locations: x(),
       settingsLocations: a,
       onChange: e => s({
         screenshakeEnabledLocations: e

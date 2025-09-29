@@ -2,7 +2,7 @@
 /** chunk id: 117652, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Dd: () => x
+  Dd: () => L
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -55,7 +55,7 @@ function D(e) {
   }
   return e
 }
-let x = {
+let L = {
   key: Chunk409813.h8.GIFT_CUSTOMIZATION,
   renderStep: e => (0, r.jsx)(j, D({}, e)),
   options: {
@@ -64,7 +64,7 @@ let x = {
   }
 };
 
-function L(e) {
+function x(e) {
   let {
     onStepChange: t,
     onBackClick: n,
@@ -97,7 +97,7 @@ function j(e) {
     setGiftRecipientError: T,
     validatingGiftRecipient: w,
     giftRecipient: D,
-    recommendedGiftSkuIds: x,
+    recommendedGiftSkuIds: L,
     giftingOrigin: j,
     setValidatingGiftRecipient: k
   } = (0, v.wD)(), {
@@ -159,7 +159,7 @@ function j(e) {
         color: "header-secondary",
         className: R.selectGiftTitle,
         children: K.toLocaleUpperCase()
-      }), x.map(e => X(e)), (0, r.jsx)(M, {
+      }), L.map(e => X(e)), (0, r.jsx)(M, {
         handleClose: n
       })]
     }) : (0, r.jsx)("div", {
@@ -217,7 +217,7 @@ function j(e) {
         "data-migration-pending": true,
         justify: f.Z.Justify.BETWEEN,
         align: f.Z.Align.CENTER,
-        children: (0, r.jsx)(L, {
+        children: (0, r.jsx)(x, {
           onStepChange: t,
           onBackClick: n,
           disabled: null != m || null == D || D.id === (null == V ? true : V.id) || s.length > C.$n,

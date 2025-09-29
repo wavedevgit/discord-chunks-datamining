@@ -69,12 +69,12 @@ function R(e, t) {
 let P = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LIST_PADDING),
   w = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_ICON_SIZE),
   D = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_ICON_MARGIN),
-  x = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_UNICODE_ICON_SIZE),
-  L = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_CATEGORY_SEPARATOR_SIZE),
+  L = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_UNICODE_ICON_SIZE),
+  x = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_CATEGORY_SEPARATOR_SIZE),
   j = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_CATEGORY_SEPARATOR_MARGIN_VERTICAL),
   M = [P, P, P, P],
   k = (w + D) * 2 + P,
-  U = L + 2 * j,
+  U = x + 2 * j,
   G = 7,
   B = e => {
     let {
@@ -106,8 +106,8 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LI
             size: "custom",
             color: "currentColor",
             className: S.stickerCategoryGenericIcon,
-            height: x,
-            width: x
+            height: L,
+            width: L
           })
         })
       }, "favorites");
@@ -126,12 +126,12 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LI
             size: "custom",
             color: "currentColor",
             className: S.stickerCategoryGenericIcon,
-            height: x,
-            width: x
+            height: L,
+            width: L
           })
         })
       }, "recent");
-      let L = t === a,
+      let x = t === a,
         j = n[a],
         M = n[a + 1],
         k = null != M && j.type === b.Ih.GUILD && M.type !== b.Ih.GUILD,
@@ -142,12 +142,12 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LI
         let e = p.Z.getGuild(j.id);
         null != e && (f = e.id, G = e.name, B = (0, r.jsx)(u.Z, {
           guild: e,
-          isSelected: L
+          isSelected: x
         }))
       } else if (U) {
         let e = E.Z.getStickerPack(j.id);
         null != e && (G = e.name, B = (0, r.jsx)(O.Z, {
-          disableAnimation: !L || m,
+          disableAnimation: !x || m,
           size: w,
           sticker: (0, y.Zt)(e)
         }))
@@ -165,7 +165,7 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LI
               "aria-label": G,
               className: o()(S.stickerCategory, {
                 [S.firstPartyCategory]: U,
-                [S.firstPartyCategorySelected]: !m && L && U
+                [S.firstPartyCategorySelected]: !m && x && U
               }),
               onClick: () => {
                 j.type === b.Ih.PACK && h.default.track(v.rMx.EXPRESSION_PICKER_CATEGORY_SELECTED, {
@@ -194,7 +194,7 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LI
       onScroll: i.useCallback(e => {
         var t;
         let n = null == (t = a.current) ? true : t.getListDimensions();
-        null != n && d(e + n.height - L < s)
+        null != n && d(e + n.height - x < s)
       }, [s, a, d])
     }
   },

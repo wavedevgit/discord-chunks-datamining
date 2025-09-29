@@ -78,8 +78,8 @@ let K = 0,
       isUsingKeyboardNavigation: C,
       allowAnimatedEmoji: R,
       channelGuildId: P,
-      channelId: x,
-      messageId: L,
+      channelId: L,
+      messageId: x,
       isBurstReaction: j,
       listHeaderClassName: H,
       activeSectionIndex: K,
@@ -140,13 +140,13 @@ let K = 0,
         channelGuildId: P,
         category: i.sectionId,
         selectedItemClassName: W.__invalid_selectedItem,
-        channelId: x,
-        messageId: L,
+        channelId: L,
+        messageId: x,
         isBurstReaction: j,
         inNitroLockedSection: i.isNitroLocked,
         handleScrollUpOnSectionCollapse: o
       }, e)
-    }), [a, m, s, el, ef, c, f, O, v, A, C, R, e_, P, x, L, j, ea]);
+    }), [a, m, s, el, ef, c, f, O, v, A, C, R, e_, P, L, x, j, ea]);
     i.useEffect(() => () => {
       var e, t;
       return null == (t = ep.cache) || null == (e = t.clear) ? true : e.call(t)
@@ -254,7 +254,7 @@ let K = 0,
       messageId: M,
       isBurstReaction: k,
       listHeaderClassName: U
-    } = e, B = i.useRef(false), Z = E.kJ.useStore(e => e.activeCategoryIndex), V = (0, b.Iu)(e => e.searchQuery), z = R.Yk.useSetting(), q = (0, u.e7)([P.default], () => P.default.getCurrentUser()), X = (0, x.I5)(q), {
+    } = e, B = i.useRef(false), Z = E.kJ.useStore(e => e.activeCategoryIndex), V = (0, b.Iu)(e => e.searchQuery), z = R.Yk.useSetting(), q = (0, u.e7)([P.default], () => P.default.getCurrentUser()), X = (0, L.I5)(q), {
       location: Q
     } = (0, h.O)(), {
       analyticsLocations: J
@@ -323,7 +323,7 @@ let K = 0,
       ey = f.length > 0;
 
     function eO() {
-      let e = (0, L.Px)(H.p9.TIER_2);
+      let e = (0, x.Px)(H.p9.TIER_2);
       return Y.intl.format(Y.t.gMVjeX, {
         nitroTierName: e,
         onClick: () => {
@@ -338,7 +338,7 @@ let K = 0,
     function ev() {
       var e;
       let t = (0, A.J0)();
-      return null != (e = (0, L.fr)(t, H.Si.TIER_2)) ? e : Y.intl.string(Y.t.BmJkbW)
+      return null != (e = (0, x.fr)(t, H.Si.TIER_2)) ? e : Y.intl.string(Y.t.BmJkbW)
     }
     return i.useEffect(() => {
       et && w.default.track(F.rMx.PREMIUM_UPSELL_VIEWED, {

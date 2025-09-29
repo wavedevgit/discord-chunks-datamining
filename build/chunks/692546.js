@@ -37,18 +37,18 @@ function O(e) {
   } = e;
   y = true, m.x = t, m.y = n
 }
-let v = new Map;
+let b = new Map;
 
-function b(e, t) {
-  if (null == t) v.delete(e), 0 === v.size && (window.removeEventListener("mousemove", O), y = false);
+function v(e, t) {
+  if (null == t) b.delete(e), 0 === b.size && (window.removeEventListener("mousemove", O), y = false);
   else {
-    let n = v.get(e);
+    let n = b.get(e);
     if (null != n && (0, a.Z)(n.zone, t.zone)) return;
-    0 === v.size && window.addEventListener("mousemove", O), v.set(e, t)
+    0 === b.size && window.addEventListener("mousemove", O), b.set(e, t)
   }
   if (f.isPlatformEmbedded)
     if (u.default.isCurrentPidOutOfProcess()) {
-      let e = Array.from(v.values()).map(e => {
+      let e = Array.from(b.values()).map(e => {
         let {
           zone: t
         } = e;
@@ -67,14 +67,14 @@ function b(e, t) {
       if (null == e) return;
       e.broadcastCommand({
         message: "set_click_zones",
-        zones: Array.from(v.values()).map(e => {
+        zones: Array.from(b.values()).map(e => {
           let {
             zone: t
           } = e;
           return t
         })
       }), n = e, _ || (n.setClickZoneCallback((e, t, n) => {
-        let i = v.get(e);
+        let i = b.get(e);
         null != i && (y || (m.x = t, m.y = n), i.instance.click())
       }), _ = true)
     }
@@ -85,7 +85,7 @@ class E extends(i = Chunk647438.PureComponent) {
     this.props.observe ? this.observeZone() : this.updateZone()
   }
   componentWillUnmount() {
-    this.interval.stop(), b(this.zone, null)
+    this.interval.stop(), v(this.zone, null)
   }
   componentDidUpdate(e) {
     let {
@@ -113,7 +113,7 @@ class E extends(i = Chunk647438.PureComponent) {
           right: i,
           bottom: r
         } = e.getBoundingClientRect();
-        b(this.zone, {
+        v(this.zone, {
           instance: this,
           zone: {
             name: this.zone,

@@ -1,7 +1,7 @@
-/** Chunk was on 66663 **/
+/** Chunk was on 89342 **/
 /** chunk id: 775451, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  V9: () => g,
+  V9: () => b,
   ek: () => f
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -21,13 +21,13 @@ let f = {
     START: Chunk522323.alignLeft,
     END: Chunk522323.alignRight
   },
-  g = e => {
+  b = e => {
     let {
       showNotificationBadge: t,
       ctaText: n,
       ctaOnClick: i,
-      anchorPillType: g,
-      analyticsPage: b,
+      anchorPillType: b,
+      analyticsPage: g,
       linkText: v = h.intl.string(h.t.XRdyj4),
       cardAlignment: j = f.START,
       className: _
@@ -35,21 +35,21 @@ let f = {
       balance: y
     } = (0, c.A)(), [C, E] = r.useState(d.b.DEFAULT), [N, S] = r.useState(false), [T, O] = r.useState(false), P = r.useRef(null), I = r.useCallback(() => {
       let e = !N;
-      e && null != b && (0, o.Y)({
-        pageType: b,
+      e && null != g && (0, o.Y)({
+        pageType: g,
         sectionType: p.jXE.ORBS_BALANCE_MENU,
         ctaObject: p.qAy.OPEN_ORB_BALANCE_MENU_FROM_PILL
       }), E(e ? d.b.SELECTED : d.b.DEFAULT), S(e)
-    }, [N, b]), k = r.useCallback(() => {
+    }, [N, g]), k = r.useCallback(() => {
       N && I()
     }, [N, I]), w = (0, s.Z)(null, k), R = r.useMemo(() => (0, a.jsx)(u.L, {
-      analyticsPage: b,
+      analyticsPage: g,
       ctaText: n,
       ctaOnClick: () => {
         I(), i()
       },
       linkText: v
-    }), [b, n, v, I, i]);
+    }), [g, n, v, I, i]);
     return (0, a.jsxs)("div", {
       className: l()(x.container, _, {
         [x.hidden]: T,
@@ -57,7 +57,7 @@ let f = {
       }),
       children: [(0, a.jsx)(m.y, {
         pillRef: P,
-        anchorPillType: g,
+        anchorPillType: b,
         balance: y,
         balanceWidgetMode: C,
         onMouseDown: e => {
@@ -75,4 +75,4 @@ let f = {
       })]
     })
   };
-g.CardAlignment = f
+b.CardAlignment = f

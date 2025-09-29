@@ -8,7 +8,7 @@ require.d(exports, {
   Q0: () => N,
   V4: () => H,
   _B: () => C,
-  dI: () => L,
+  dI: () => x,
   do: () => w,
   f: () => P,
   mW: () => R,
@@ -202,7 +202,7 @@ function D(e) {
   })
 }
 
-function x(e) {
+function L(e) {
   let {
     headerId: t,
     titleText: n,
@@ -219,7 +219,7 @@ function x(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   let {
     navId: t,
     item: n,
@@ -233,7 +233,7 @@ function L(e) {
   return (0, r.jsxs)(D, {
     title: l,
     showDivider: i > 0,
-    children: [(0, r.jsx)(x, {
+    children: [(0, r.jsx)(L, {
       headerId: l,
       titleText: l,
       trailingIcon: c

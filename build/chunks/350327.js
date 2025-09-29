@@ -14,7 +14,7 @@ require.d(exports, {
   ho: () => v,
   pG: () => O,
   rf: () => w,
-  uV: () => L,
+  uV: () => x,
   x3: () => D,
   z5: () => C
 });
@@ -193,7 +193,7 @@ function D(e) {
     type: "USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_PRESET"
   }, e)), E(h.QP.PRESET)
 }
-async function x() {
+async function L() {
   if (null == Chunk621853.Z.applicationWidgetApplicationConfigs || !(Chunk621853.Z.applicationWidgetApplicationConfigs.length > 0)) {
     Chunk570140.Z.dispatch({
       type: "USER_PROFILE_APPLICATION_WIDGET_APPLICATION_CONFIGS_FETCH_START"
@@ -214,9 +214,9 @@ async function x() {
     }
   }
 }
-let L = (0, Chunk442837.Kb)(Chunk621853.Z, {
+let x = (0, Chunk442837.Kb)(Chunk621853.Z, {
   queryId: () => Chunk981631.McO.APPLICATION_WIDGET_APPLICATION_CONFIGS,
   get: () => Chunk621853.Z.applicationWidgetApplicationConfigs,
-  load: () => x(),
+  load: () => L(),
   useStateHook: Chunk442837.e7
 })

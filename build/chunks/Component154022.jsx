@@ -364,7 +364,7 @@ function ep() {
     } = (0, Chunk906732.ZP)();
 
   function n(e) {
-    (0, h.X2)(e), L.default.track(H.rMx.DISPLAY_NAME_STYLES_ACCESSIBILITY_TOGGLE, {
+    (0, h.X2)(e), x.default.track(H.rMx.DISPLAY_NAME_STYLES_ACCESSIBILITY_TOGGLE, {
       enabled: e
     })
   }
@@ -561,7 +561,7 @@ function eb() {
         value: exports,
         note: Chunk388032.intl.string(Chunk388032.t.Q7wgHR),
         onChange: e => {
-          L.default.track(H.rMx.LEGACY_CHAT_INPUT_TOGGLED, {
+          x.default.track(H.rMx.LEGACY_CHAT_INPUT_TOGGLED, {
             enabled: e,
             location: {
               section: H.jXE.SETTINGS_ACCESSIBILITY

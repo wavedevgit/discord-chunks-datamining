@@ -37,8 +37,8 @@ function S() {
       selectedTab: T,
       setSelectedTab: N
     } = (0, Chunk29086.Y)(),
-    P = (0, Chunk726115.lg)(T),
-    j = !Chunk128449.MU.has(T),
+    j = (0, Chunk726115.lg)(T),
+    P = !Chunk128449.MU.has(T),
     {
       searchQuery: x,
       onSearchTextChange: A,
@@ -55,7 +55,7 @@ function S() {
       onSearchBarBlur: M,
       tabsClassName: U
     } = (0, Chunk36485.U)({
-      isSearchBarVisible: j,
+      isSearchBarVisible: P,
       isSearchBarEmpty: "" === x.trim(),
       searchBarState: R,
       setSearchBarState: e => h.Z.setState({
@@ -72,7 +72,7 @@ function S() {
       } = e;
       return !E.MU.has(t)
     }) : C, [C, L]),
-    H = Chunk647438.useRef(new Chunk444324.Z(P)),
+    H = Chunk647438.useRef(new Chunk444324.Z(j)),
     {
       onGuildCardSeen: F,
       onGuildCardClick: z
@@ -82,7 +82,7 @@ function S() {
     });
   return Chunk647438.useEffect(() => {
     H.current.flushSeenGuilds(module.current)
-  }, [P]), Chunk647438.useEffect(() => {
+  }, [j]), Chunk647438.useEffect(() => {
     S()
   }, [T, S]), Chunk647438.useEffect(() => {
     L || Chunk164991.Z.setState({
@@ -112,7 +112,7 @@ function S() {
         children: Chunk388032.intl.format(Chunk388032.t.zHdzqa, {
           query: G
         })
-      }), j && (0, Chunk951288.jsx)(Chunk680180.Z, {
+      }), P && (0, Chunk951288.jsx)(Chunk680180.Z, {
         query: x,
         placeholder: Chunk388032.intl.string(Chunk388032.t["5h0QOD"]),
         onTextChange: A,

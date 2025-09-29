@@ -35,7 +35,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk722177 = require("./722177.js"),
   Chunk546241 = require("./546241.js");
 
-function x(e, t, n) {
+function L(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -44,14 +44,14 @@ function x(e, t, n) {
   }) : e[t] = n, e
 }
 
-function L(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      x(e, t, n[t])
+      L(e, t, n[t])
     })
   }
   return e
@@ -81,7 +81,7 @@ function k(e) {
     onClose: a
   } = e, {
     analyticsLocations: u
-  } = (0, p.ZP)(), E = (0, O.g1)(t, "GuildPowerupMarketingPowerupCard"), b = n.skuId === c.A$, y = (0, S.ZP)(t, n).type !== C.A3.INACTIVE, T = (0, I.Z)(t), [x, j] = i.useState(false), [k, U] = i.useState(false), G = k, B = i.useCallback(() => {
+  } = (0, p.ZP)(), E = (0, O.g1)(t, "GuildPowerupMarketingPowerupCard"), b = n.skuId === c.A$, y = (0, S.ZP)(t, n).type !== C.A3.INACTIVE, T = (0, I.Z)(t), [L, j] = i.useState(false), [k, U] = i.useState(false), G = k, B = i.useCallback(() => {
     let e = g.Z.getGuild(t);
     null != e && (0, h.u)({
       analyticsLocation: {
@@ -114,7 +114,7 @@ function k(e) {
   }, []), K = (0, f.O)(W), z = (0, v.Z)(n, k);
   return (0, r.jsxs)("div", {
     className: o()(D.topPerksCard, D.animatedTopPerksCard, w.powerupCard, {
-      [D.animate]: x
+      [D.animate]: L
     }),
     onMouseEnter: () => U(true),
     onMouseLeave: () => U(false),
@@ -130,7 +130,7 @@ function k(e) {
         style: V
       })
     }), (0, r.jsxs)(s.animated.div, {
-      style: M(L({}, H), {
+      style: M(x({}, H), {
         transform: H.y.to(e => "translateY(".concat(e, "px)"))
       }),
       className: o()(D.contentContainer, w.contentContainer),
@@ -169,7 +169,7 @@ function k(e) {
       className: D.topPerksCardNew,
       text: P.intl.string(P.t.oW0eUV),
       color: l.Z.BG_BRAND
-    }), x && (0, r.jsx)("div", {
+    }), L && (0, r.jsx)("div", {
       className: D.shineLine
     })]
   })

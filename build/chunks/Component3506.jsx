@@ -57,7 +57,7 @@ function D(e) {
   return e
 }
 
-function x(e, t) {
+function L(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -68,8 +68,8 @@ function x(e, t) {
   return n
 }
 
-function L(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
+function x(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -123,7 +123,7 @@ function G(e) {
     displayUserMode: A,
     textChatDisabled: C,
     notificationPositionMode: w,
-    shouldShowKeybindIndicators: x
+    shouldShowKeybindIndicators: L
   } = (0, l.cj)([S.default, O.Z], () => ({
     avatarSizeMode: S.default.getAvatarSizeMode(),
     displayNameMode: S.default.getDisplayNameMode(),
@@ -148,7 +148,7 @@ function G(e) {
   }
 
   function F(e) {
-    a()(null != j, "Keybind should never be undefined"), d.Z.setKeybind(L(D({}, j), {
+    a()(null != j, "Keybind should never be undefined"), d.Z.setKeybind(x(D({}, j), {
       shortcut: e
     }))
   }
@@ -224,7 +224,7 @@ function G(e) {
         })
       }), k && (0, r.jsx)(U, {
         children: (0, r.jsx)(u.j7V, {
-          value: x,
+          value: L,
           onChange: e => f.Z.setShowKeybindIndicators(e),
           hideBorder: true,
           children: R.intl.string(R.t.XZTl9v)

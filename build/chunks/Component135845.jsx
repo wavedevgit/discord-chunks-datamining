@@ -40,8 +40,8 @@ function v(e) {
     {
       analyticsLocations: D
     } = (0, u.ZP)(c.Z.INVITE_EMBED),
-    x = null != v && v.target_type === b.Iq.STREAM && null != v.target_user && null != P,
-    L = null != v && null != w && null != v.channel && null != v.guild && w.channelId === v.channel.id && w.guildId === v.guild.id;
+    L = null != v && v.target_type === b.Iq.STREAM && null != v.target_user && null != P,
+    x = null != v && null != w && null != v.channel && null != v.guild && w.channelId === v.channel.id && w.guildId === v.guild.id;
   o()(null != v, "Invite cannot be null");
   let {
     target_type: j,
@@ -52,13 +52,13 @@ function v(e) {
     U = v.state === E.r2o.ACCEPTING,
     G = i.useCallback(() => {
       let e = "noop";
-      x ? (A(), e = "transition") : (C(), e = "accept"), (0, l.r$)({
+      L ? (A(), e = "transition") : (C(), e = "accept"), (0, l.r$)({
         invite: v,
         action: e,
         inviter_id: S.author.id,
         invite_message_id: S.id
       }, D)
-    }, [v, S, D, x, A, C]),
+    }, [v, S, D, L, A, C]),
     B = null != T;
   if (null == T) {
     if (null == v.guild) return (0, r.jsx)(g.Z, {});
@@ -66,9 +66,9 @@ function v(e) {
   }
   let Z = null != v.channel ? (0, f.jD)(v.channel) : null,
     F = m.ZP.getName(M);
-  B && !L ? a = k ? y.intl.string(y.t.oBLoZG) : y.intl.formatToPlainString(y.t["0QJmAw"], {
+  B && !x ? a = k ? y.intl.string(y.t.oBLoZG) : y.intl.formatToPlainString(y.t["0QJmAw"], {
     name: F
-  }) : (t = y.intl.string(y.t["I6JG4+"]), n = d.Z.Button.Colors.GREEN, x && (t = y.intl.string(y.t["Q1W99/"]), n = d.Z.Button.Colors.PRIMARY), a = k ? y.intl.string(y.t["4hyaHh"]) : y.intl.formatToPlainString(y.t.QmlLEh, {
+  }) : (t = y.intl.string(y.t["I6JG4+"]), n = d.Z.Button.Colors.GREEN, L && (t = y.intl.string(y.t["Q1W99/"]), n = d.Z.Button.Colors.PRIMARY), a = k ? y.intl.string(y.t["4hyaHh"]) : y.intl.formatToPlainString(y.t.QmlLEh, {
     name: F
   }));
   let V = R === T.id && null != Z ? (0, r.jsx)(d.Z.Channel, {
@@ -84,17 +84,17 @@ function v(e) {
         className: O.headerLine,
         children: [(0, r.jsx)(d.Z.Icon, {
           guild: T,
-          onClick: B && L ? G : true
+          onClick: B && x ? G : true
         }), (0, r.jsx)(d.Z.Info, {
           title: a,
-          onClick: B && L ? G : true,
+          onClick: B && x ? G : true,
           children: V
         })]
-      }), L ? (0, r.jsx)(d.Z.Button, {
-        disabled: B && !L,
+      }), x ? (0, r.jsx)(d.Z.Button, {
+        disabled: B && !x,
         onClick: G,
         submitting: U,
-        isDisabled: x && L,
+        isDisabled: L && x,
         color: n,
         children: t
       }) : null]

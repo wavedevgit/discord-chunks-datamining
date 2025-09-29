@@ -248,11 +248,11 @@ let eu = (e, t) => {
       } = e,
       {
         onFocus: eD,
-        onKeyDown: ex,
-        autoFocus: eL = true,
+        onKeyDown: eL,
+        autoFocus: ex = true,
         accessory: ej
       } = ev,
-      eM = (0, u.e7)([x.ZP], () => null != f ? x.ZP.getDefaultChannel(f) : null, [f]),
+      eM = (0, u.e7)([L.ZP], () => null != f ? L.ZP.getDefaultChannel(f) : null, [f]),
       [ek, eU] = i.useState(null),
       eG = i.useRef(""),
       eB = (0, S.Iu)(e => e.searchQuery),
@@ -262,7 +262,7 @@ let eu = (e, t) => {
     null == c && null != eM && (c = eM);
     let eH = null != (a = null != (n = null == c ? true : c.getGuildId()) ? n : f) ? a : null,
       [eY, eW] = i.useState(false),
-      eK = L.default.getCurrentUser(),
+      eK = x.default.getCurrentUser(),
       ez = (0, M.I5)(eK);
     i.useImperativeHandle(t, () => ({
       onPickerOpen: ta
@@ -283,7 +283,7 @@ let eu = (e, t) => {
       diversitySurrogate: e3
     } = (0, u.cj)([O.ZP], () => ({
       diversitySurrogate: O.ZP.diversitySurrogate
-    })), e4 = (0, U.DV)(eB, c, l, eP), e8 = null == e4 ? 0 : e4.locked.length + e4.unlocked.length, e6 = D.d4.useSetting(), e5 = i.useMemo(() => new Set(e6), [e6]), e7 = i.useCallback(e => {
+    })), e4 = (0, U.DV)(eB, c, l, eP), e8 = null == e4 ? 0 : e4.locked.length + e4.unlocked.length, e5 = D.d4.useSetting(), e6 = i.useMemo(() => new Set(e5), [e5]), e7 = i.useCallback(e => {
       D.d4.updateSetting(Array.from(e))
     }, []), e9 = (0, C.ep)({
       gridWrapperRef: eZ,
@@ -301,7 +301,7 @@ let eu = (e, t) => {
       includeCreateEmojiButton: et,
       pickerIntention: l,
       emojiSearchResults: e4,
-      collapsedSections: e5,
+      collapsedSections: e6,
       emojiPaddingHorizontal: ea,
       emojiSpriteSize: A,
       shouldShowSoundmojiInEmojiPicker: eR,
@@ -379,7 +379,7 @@ let eu = (e, t) => {
         channelGuildId: eH,
         isBurstReaction: eY
       });
-    ef(eu, eF), e_(eu, e3, eV, eL), i.useEffect(() => {
+    ef(eu, eF), e_(eu, e3, eV, ex), i.useEffect(() => {
       eE || (0, S.ql)("")
     }, [eE]), i.useEffect(() => (j.default.track(Q.rMx.OPEN_POPOUT, en({
       type: null != e$ ? e$ : "Emoji Picker",
@@ -434,11 +434,11 @@ let eu = (e, t) => {
         pickerIntention: l,
         emojiListRef: eF,
         onKeyDown: e => {
-          null == td || td(e), null == ex || ex(e)
+          null == td || td(e), null == eL || eL(e)
         },
         searchBarRef: eV,
         onFocus: eD,
-        autoFocus: eL,
+        autoFocus: ex,
         accessory: ej,
         headerClassName: ey,
         diversitySurrogate: e3,
@@ -483,7 +483,7 @@ let eu = (e, t) => {
               id: X.Vr
             }, tu), {
               children: tp ? (0, r.jsx)(K.Z, {
-                collapsedSections: e5,
+                collapsedSections: e6,
                 diversitySurrogate: e3,
                 emojiGrid: tn,
                 emojiListRef: eF,

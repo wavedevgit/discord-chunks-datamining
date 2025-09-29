@@ -145,7 +145,7 @@ function z(e) {
     account: n,
     theme: a,
     locale: o
-  } = e, [s, l] = i.useState(n.friendSync), [_, h] = i.useState(n.visibility), [m, g] = i.useState(n.metadataVisibility), [I, T] = i.useState(n.showActivity), [A, C] = i.useState(null), [N, R] = i.useState(null), [w, L] = i.useState(false), [G, F] = i.useState([]), V = (0, b.rR)(n.type), Y = E.Z.get(V);
+  } = e, [s, l] = i.useState(n.friendSync), [_, h] = i.useState(n.visibility), [m, g] = i.useState(n.metadataVisibility), [I, T] = i.useState(n.showActivity), [A, C] = i.useState(null), [N, R] = i.useState(null), [w, x] = i.useState(false), [G, F] = i.useState([]), V = (0, b.rR)(n.type), Y = E.Z.get(V);
   i.useEffect(() => {
     l(n.friendSync), h(n.visibility), g(n.metadataVisibility), T(n.showActivity)
   }, [n]);
@@ -281,9 +281,9 @@ function z(e) {
         disabled: s,
         "aria-label": B.intl.string(B.t.sCkLYG),
         onClick: s ? true : () => {
-          L(true), p.Z.refresh(e.type, e.id).finally(() => {
+          x(true), p.Z.refresh(e.type, e.id).finally(() => {
             setTimeout(() => {
-              G.push(e.id), F(G), L(false)
+              G.push(e.id), F(G), x(false)
             }, 2e3)
           })
         }
@@ -403,7 +403,7 @@ function z(e) {
         variant: "primary"
       }]
     }, i), {
-      children: (0, D.Z)(n) && (0, r.jsx)(x.Z, {
+      children: (0, D.Z)(n) && (0, r.jsx)(L.Z, {
         children: B.intl.format(B.t.COW3Xl, {
           platformName: e.name
         })

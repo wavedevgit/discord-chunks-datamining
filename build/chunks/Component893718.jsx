@@ -5,7 +5,7 @@ require.d(exports, {
   O1: () => eO,
   Sg: () => eb,
   TE: () => eN,
-  ZP: () => ex,
+  ZP: () => eL,
   ae: () => ey,
   bL: () => eE,
   hJ: () => eI,
@@ -132,9 +132,9 @@ function eE(e, t, a, o, s) {
     var g, E, b;
     if (l) return;
     c(true);
-    let y = null != (E = null == (g = L.Z.getStickerPreview(s, t.drafts.type)) ? true : g.map(e => e.id)) ? E : [],
+    let y = null != (E = null == (g = x.Z.getStickerPreview(s, t.drafts.type)) ? true : g.map(e => e.id)) ? E : [],
       O = null != (b = V.Z.getUploads(s, t.drafts.type)) ? b : [],
-      v = (0, x.q5)(s);
+      v = (0, L.q5)(s);
     if (null == d && !_ && !m && (0, R.CB)(O, s)) {
       c(false), (0, p.ZDy)(async () => {
         let {
@@ -211,7 +211,7 @@ function eO(e) {
     n || (o === X.Ie.CREATE_ANNOUNCEMENT_POST || (0, M.Hc)(i, r, a, o.drafts.type) ? ((0, $._H)({
       sticker: e,
       stickerSelectLocation: i,
-      isReplacement: null != L.Z.getStickerPreview(a, o.drafts.type),
+      isReplacement: null != x.Z.getStickerPreview(a, o.drafts.type),
       analyticsLocations: l
     }), (0, j.eu)(a, e, o.drafts.type)) : (s({
       value: "",
@@ -395,8 +395,8 @@ function eD(e, t) {
     editorClassName: C,
     id: R,
     required: P,
-    disabled: x,
-    placeholder: L,
+    disabled: L,
+    placeholder: x,
     accessibilityLabel: j,
     channel: M,
     type: k,
@@ -418,8 +418,8 @@ function eD(e, t) {
     canMentionChannels: em,
     maxCharacterCount: eg,
     showRemainingCharsAfterCount: eD,
-    allowNewLines: ex = true,
-    characterCountClassName: eL,
+    allowNewLines: eL = true,
+    characterCountClassName: ex,
     "aria-describedby": ej,
     "aria-labelledby": eM,
     setEditorRef: ek,
@@ -458,10 +458,10 @@ function eD(e, t) {
     isLurking: e3,
     isPendingMember: e4,
     disabled: e8,
-    canAttachFiles: e6,
-    canCreateThreads: e5,
+    canAttachFiles: e5,
+    canCreateThreads: e6,
     canEveryoneSendMessages: e7
-  } = eN(M, k, e1, x), e9 = k.toolbarType === X.OW.STATIC, te = !U.dN.useSetting() && !(0, z.isAndroidWeb)() && null != window.ResizeObserver, tt = !te || !(null == (n = k.commands) ? true : n.enabled) || !G || f !== el.GI, tn = (0, w.Z)(), {
+  } = eN(M, k, e1, L), e9 = k.toolbarType === X.OW.STATIC, te = !U.dN.useSetting() && !(0, z.isAndroidWeb)() && null != window.ResizeObserver, tt = !te || !(null == (n = k.commands) ? true : n.enabled) || !G || f !== el.GI, tn = (0, w.Z)(), {
     fontSize: tr
   } = (0, _.cj)([g.Z], () => ({
     fontSize: g.Z.fontSize
@@ -510,9 +510,9 @@ function eD(e, t) {
   let tP = null != Y,
     tw = e8 && !((e3 || e4) && e7) || tc && (null == (s = k.submit) ? true : s.useDisabledStylesOnSubmit),
     tD = null;
-  null != e1 ? tD = null == V ? true : V(e1, e2, eu.attachButton) : (!e8 || e5) && (tD = null == Z ? true : Z(tP, eu.attachButton));
-  let tx = te && null != h && !e8 && k.showCharacterCount && null == e1,
-    tL = te && !__OVERLAY__ && null != h && null == e1 && k.toolbarType !== X.OW.NONE && !e8,
+  null != e1 ? tD = null == V ? true : V(e1, e2, eu.attachButton) : (!e8 || e6) && (tD = null == Z ? true : Z(tP, eu.attachButton));
+  let tL = te && null != h && !e8 && k.showCharacterCount && null == e1,
+    tx = te && !__OVERLAY__ && null != h && null == e1 && k.toolbarType !== X.OW.NONE && !e8,
     tj = (0, ee.c)({
       channel: M,
       type: k,
@@ -533,10 +533,10 @@ function eD(e, t) {
       showAllButtons: e$,
       children: null == H ? true : H()
     }),
-    tB = tx ? (0, r.jsx)(er.Z, {
+    tB = tL ? (0, r.jsx)(er.Z, {
       type: k,
       textValue: f,
-      className: eL,
+      className: ex,
       maxCharacterCount: eg,
       showRemainingCharsAfterCount: eD
     }) : null;
@@ -544,11 +544,11 @@ function eD(e, t) {
     value: ts,
     children: (0, r.jsxs)(b.Gt, {
       value: eW,
-      children: [tL && e9 ? (0, r.jsx)(eo.Z, {
+      children: [tx && e9 ? (0, r.jsx)(eo.Z, {
         editorRef: eq,
         options: k.markdown,
         channel: M
-      }) : tL ? (0, r.jsx)(ei.Z, {
+      }) : tx ? (0, r.jsx)(ei.Z, {
         ref: eQ,
         editorRef: eq,
         containerRef: eX,
@@ -580,7 +580,7 @@ function eD(e, t) {
           }), k.hideAttachmentArea ? null : (0, r.jsx)(en.Z, {
             channelId: M.id,
             type: k,
-            canAttachFiles: e6
+            canAttachFiles: e5
           }), (0, r.jsxs)("div", {
             className: o()(eu.inner, {
               [eu.innerDisabled]: tw,
@@ -601,16 +601,16 @@ function eD(e, t) {
                 textValue: f,
                 richValue: h,
                 disabled: e8,
-                placeholder: L,
+                placeholder: x,
                 required: P,
                 accessibilityLabel: j,
                 isPreviewing: (e3 || e4) && e7,
                 channel: M,
                 type: k,
-                canPasteFiles: e6,
+                canPasteFiles: e5,
                 uploadPromptCharacterCount: es.en1,
                 maxCharacterCount: null != eg ? eg : tn,
-                allowNewLines: ex,
+                allowNewLines: eL,
                 "aria-describedby": ej,
                 onChange: to,
                 onResize: tO,
@@ -689,4 +689,4 @@ function eD(e, t) {
     })
   })
 }
-let ex = Chunk647438.memo(Chunk647438.forwardRef(eD))
+let eL = Chunk647438.memo(Chunk647438.forwardRef(eD))

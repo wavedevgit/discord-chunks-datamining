@@ -96,7 +96,7 @@ function D(e) {
   })
 }
 
-function x(e, t) {
+function L(e, t) {
   let {
     results: n,
     queryMode: r,
@@ -150,7 +150,7 @@ function x(e, t) {
   y.default.track(e, g)
 }
 
-function L() {
+function x() {
   Chunk570140.Z.dispatch({
     type: "QUICKSWITCHER_HIDE"
   })
@@ -165,7 +165,7 @@ function j() {
 }
 
 function M() {
-  x(Chunk981631.rMx.QUICKSWITCHER_CLOSED), L()
+  L(Chunk981631.rMx.QUICKSWITCHER_CLOSED), x()
 }
 
 function k() {
@@ -188,7 +188,7 @@ function G(e) {
 
 function B(e) {
   let t, h = arguments.length > 1 && true !== arguments[1] && arguments[1];
-  L(), (0, r.pTH)(), x(I.rMx.QUICKSWITCHER_RESULT_SELECTED, e);
+  x(), (0, r.pTH)(), L(I.rMx.QUICKSWITCHER_RESULT_SELECTED, e);
   let {
     type: E,
     record: b

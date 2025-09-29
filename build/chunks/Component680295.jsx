@@ -63,8 +63,8 @@ let I = e => {
     let [A, C] = i.useState(0), [N, R] = i.useState(0), {
       accessibilityLabel: P
     } = E, [w, D] = i.useState(-v), {
-      stop: x,
-      reset: L,
+      stop: L,
+      reset: x,
       ticking: j
     } = (0, p.Z)(e => {
       D(t => t + e)
@@ -83,8 +83,8 @@ let I = e => {
     }, [R, T]);
     let [k, U] = i.useState(false);
     return i.useEffect(() => {
-      true === u || l || (x(), D(0)), !l && k && j.current && (x(), D(0)), a && l && !j.current && (L(), E.animationType === s.y.ANIMATION_TYPE_PERSISTENT ? D(d === _.Q.FromStart ? 0 : A) : D(0))
-    }, [l, k, A, a, x, L, j, E.animationType, u, d]), (0, r.jsx)("div", {
+      true === u || l || (L(), D(0)), !l && k && j.current && (L(), D(0)), a && l && !j.current && (x(), E.animationType === s.y.ANIMATION_TYPE_PERSISTENT ? D(d === _.Q.FromStart ? 0 : A) : D(0))
+    }, [l, k, A, a, L, x, j, E.animationType, u, d]), (0, r.jsx)("div", {
       ref: I,
       className: o()(y.profileEffects, {
         [y.hovered]: l && c

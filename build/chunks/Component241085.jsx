@@ -2,7 +2,7 @@
 /** chunk id: 241085, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => L
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -144,7 +144,7 @@ function D(e) {
   }, n.id)
 }
 
-function x(e) {
+function L(e) {
   var t;
   let {
     type: n,
@@ -157,10 +157,10 @@ function x(e) {
   let I = null == (t = E.modal) ? true : t.customId;
   l()(null != I, "FileUploadActionComponent requires modalCustomId from context");
   let {
-    state: x,
-    executeStateUpdate: L,
+    state: L,
+    executeStateUpdate: x,
     error: j
-  } = E.useComponentState(e, true), M = i.useMemo(() => (null == x ? true : x.type) === n ? x.uploadIds : [], [x, n]), k = (0, c.e7)([b.Z], () => b.Z.getBasicChannel(v));
+  } = E.useComponentState(e, true), M = i.useMemo(() => (null == L ? true : L.type) === n ? L.uploadIds : [], [L, n]), k = (0, c.e7)([b.Z], () => b.Z.getBasicChannel(v));
   l()(null != k, "FileUploadActionComponent requires a valid channel");
   let U = i.useCallback(e => {
       var t;
@@ -193,11 +193,11 @@ function x(e) {
           draftType: y.d.InteractionModal
         }), n
       });
-      L({
+      x({
         type: n,
         uploadIds: M.concat(r)
       })
-    }, [M, s, k, L, n, I, v]),
+    }, [M, s, k, x, n, I, v]),
     Z = i.useCallback(e => {
       var t, n;
       e.preventDefault(), g(false), B(Array.from(null != (n = null == (t = e.dataTransfer) ? true : t.files) ? n : []), "drag_drop")
@@ -207,7 +207,7 @@ function x(e) {
       B(Array.from(null != (t = e.currentTarget.files) ? t : []), "file_picker"), e.currentTarget.value = ""
     },
     V = e => {
-      d.Z.remove(v, e, y.d.InteractionModal), L({
+      d.Z.remove(v, e, y.d.InteractionModal), x({
         type: n,
         uploadIds: M.filter(t => t !== e)
       })

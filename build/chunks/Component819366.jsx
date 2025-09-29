@@ -110,7 +110,7 @@ function T(e) {
         guildId: w
       }))
     })
-  }, x = E.ZP.useName(R), L = (0, o.e7)([_.Z, p.ZP, h.Z], () => g.ZP.getNickname(w, b, R));
+  }, L = E.ZP.useName(R), x = (0, o.e7)([_.Z, p.ZP, h.Z], () => g.ZP.getNickname(w, b, R));
   if (null == R) return (0, r.jsx)(I, {
     userId: O,
     className: t,
@@ -121,7 +121,7 @@ function T(e) {
     className: t,
     onContextMenu: D
   }, e), {
-    children: "@".concat(null != L ? L : x)
+    children: "@".concat(null != x ? x : L)
   }));
   return S ? (0, r.jsx)(c.Gt, {
     value: N,

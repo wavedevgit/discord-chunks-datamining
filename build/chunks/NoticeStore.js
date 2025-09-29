@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   ZP: () => tn,
-  m9: () => eL,
+  m9: () => ex,
   nA: () => ek,
   o: () => ej,
   zD: () => eM
@@ -122,12 +122,12 @@ function eD(e, t) {
   return n
 }
 
-function ex(e, t) {
+function eL(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : eD(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let eL = {
+let ex = {
     [Chunk981631.kVF.DOWNLOAD_NAG]: Chunk704215.z.NAGBAR_NOTICE_DOWNLOAD,
     [Chunk981631.kVF.CONNECT_SPOTIFY]: Chunk704215.z.NAGBAR_NOTICE_CONNECT_SPOTIFY,
     [Chunk981631.kVF.CONNECT_PLAYSTATION]: Chunk704215.z.NAGBAR_NOTICE_CONNECT_PLAYSTATION,
@@ -206,7 +206,7 @@ function eq(e) {
   if (null == e || null != eM[e]) returnfalse;
   let t = ej[e];
   if (null != t) return (0, g.H4)(t).isDismissed;
-  let n = eL[e];
+  let n = ex[e];
   if (null != n) return (0, m.zu)(n);
   let r = eU[e];
   if (null != r) {
@@ -690,7 +690,7 @@ function e$() {
         premiumSubscription: Chunk913527,
         selectedGuildId: a
       });
-      eV = ex(ew({}, eF), {
+      eV = eL(ew({}, eF), {
         type: require,
         metadata: Chunk442837
       });
@@ -737,11 +737,11 @@ function e8() {
   return delete eB[Chunk981631.kVF.DISPATCH_ERROR], e$()
 }
 
-function e6() {
+function e5() {
   return delete eB[Chunk981631.kVF.DISPATCH_INSTALL_SCRIPT_PROGRESS], e$()
 }
 
-function e5() {
+function e6() {
   return e$()
 }
 
@@ -815,8 +815,8 @@ let tn = new tt(Chunk570140.Z, {
   STREAMER_MODE_UPDATE: e4,
   RUNNING_STREAMER_TOOLS_CHANGE: e4,
   DISPATCH_APPLICATION_ERROR: e8,
-  DISPATCH_APPLICATION_LAUNCH_SETUP_START: e6,
-  DISPATCH_APPLICATION_INSTALL_SCRIPTS_PROGRESS_UPDATE: e5,
+  DISPATCH_APPLICATION_LAUNCH_SETUP_START: e5,
+  DISPATCH_APPLICATION_INSTALL_SCRIPTS_PROGRESS_UPDATE: e6,
   DISPATCH_APPLICATION_LAUNCH_SETUP_COMPLETE: e7,
   NOTICE_SHOW: e1,
   NOTICE_DISMISS: e2,

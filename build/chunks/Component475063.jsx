@@ -93,8 +93,8 @@ function A(e) {
       showRemainingCharacterCount: P = true,
       rows: w = 3,
       disabled: D,
-      label: x,
-      hideLabel: L,
+      label: L,
+      hideLabel: x,
       description: j,
       helperText: M,
       successMessage: k,
@@ -127,8 +127,8 @@ function A(e) {
       maxLength: P && null != E ? E : true
     }) : null;
   return (0, r.jsx)(f.N, {
-    label: x,
-    hideLabel: L,
+    label: L,
+    hideLabel: x,
     description: j,
     helperText: M,
     successMessage: k,

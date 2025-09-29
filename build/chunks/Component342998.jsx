@@ -46,24 +46,24 @@ let y = (0, Chunk879690.U)(e => ({
     i.useEffect(() => {
       S && null === A && C(t.id)
     }, [A, S, t.id, C]);
-    let x = () => {
+    let L = () => {
       null == I || I()
     };
     i.useEffect(() => () => {
       D && (w(g.L.USER_DISMISS), C(null))
     }, [D, w, C]);
-    let [L, j] = i.useState(false);
+    let [x, j] = i.useState(false);
     i.useEffect(() => {
-      D && !L && j(true)
-    }, [D, L]), (0, _.Z)({
+      D && !x && j(true)
+    }, [D, x]), (0, _.Z)({
       name: o.ImpressionNames.CLOUD_PLAY_CTA,
       type: o.ImpressionTypes.VIEW,
       properties: {
         location_stack: v
       }
     }, {
-      disableTrack: !L
-    }, [L]);
+      disableTrack: !x
+    }, [x]);
     let M = () => {
       w(g.L.USER_DISMISS), C(null)
     };
@@ -84,7 +84,7 @@ let y = (0, Chunk879690.U)(e => ({
       actions: [{
         icon: c.v3n,
         text: E.intl.string(E.t["jaYS/v"]),
-        onClick: x
+        onClick: L
       }],
       onRequestClose: M
     })

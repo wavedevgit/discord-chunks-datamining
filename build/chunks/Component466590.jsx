@@ -97,11 +97,11 @@ function v(e) {
   }, [R, T]);
   let w = O[R],
     D = R + 1 === O.length,
-    x = i.useCallback(() => {
+    L = i.useCallback(() => {
       var e;
       null == w || null == (e = w.onCta) || e.call(w), D ? null == S || S() : P(e => e + 1)
     }, [w, D, S]),
-    L = i.useCallback(() => {
+    x = i.useCallback(() => {
       null == S || S()
     }, [S]),
     j = i.useCallback(() => {
@@ -111,11 +111,11 @@ function v(e) {
   let M = g({
     text: null != (a = null == (t = w.action) ? true : t.text) ? a : D ? p.intl.string(p.t.i4jeWV) : p.intl.string(p.t.PDTjLC),
     variant: null != (m = null == (n = w.action) ? true : n.variant) ? m : "primary",
-    onClick: x
+    onClick: L
   }, w.action);
   return (0, r.jsx)(u.m, b(g({}, N), {
     shouldShow: C,
-    onRequestClose: L,
+    onRequestClose: x,
     gradientColor: w.gradientColor,
     children: (0, r.jsxs)("div", {
       ref: A,

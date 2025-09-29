@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 936289, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 3408 **/
+/** chunk id: 936289, original params: e,t,n (module,exports,require) **/
 module.exports = {
   microphoneUnit: "microphoneUnit_de2d78",
   microphoneUnitHeader: "microphoneUnitHeader_de2d78",

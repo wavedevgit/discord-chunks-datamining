@@ -36,7 +36,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk192201 = require("./192201.js");
 
-function L(e, t, n) {
+function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -52,7 +52,7 @@ function j(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      L(e, t, n[t])
+      x(e, t, n[t])
     })
   }
   return e
@@ -114,7 +114,7 @@ function Z(e) {
   } = (0, _.ZP)(d.Z.USER_SETTINGS_GUILD_PROFILE), a = (0, s.e7)([I.default], () => {
     let e = I.default.getCurrentUser();
     return o()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
-  }), L = (0, s.e7)([O.Z], () => !O.Z.isFetchingProfile(a.id, null == t ? true : t.id)), M = (0, s.e7)([v.Z], () => v.Z.hidePersonalInformation), G = (0, s.cj)([C.Z], () => k(j({}, C.Z.getAllPending()), {
+  }), x = (0, s.e7)([O.Z], () => !O.Z.isFetchingProfile(a.id, null == t ? true : t.id)), M = (0, s.e7)([v.Z], () => v.Z.hidePersonalInformation), G = (0, s.cj)([C.Z], () => k(j({}, C.Z.getAllPending()), {
     source: C.Z.getSource()
   })), {
     source: Z,
@@ -141,7 +141,7 @@ function Z(e) {
   } = h.Z.useConfig({
     location: "GuildIdentitySettingsPage"
   });
-  return M ? (0, r.jsx)(u.Z, {}) : L ? (0, r.jsxs)(_.Gt, {
+  return M ? (0, r.jsx)(u.Z, {}) : x ? (0, r.jsxs)(_.Gt, {
     value: n,
     children: [(0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
@@ -157,7 +157,7 @@ function Z(e) {
       }), (0, r.jsx)(E.Z, {
         profilePreviewTitle: (0, r.jsx)(l.X6q, {
           variant: "heading-md/medium",
-          className: x.profilePreviewTitle,
+          className: L.profilePreviewTitle,
           children: D.intl.formatToPlainString(D.t.Tc0slJ, {
             guildName: null == t ? true : t.name
           })

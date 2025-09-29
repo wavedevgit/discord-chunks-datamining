@@ -60,7 +60,7 @@ function j(e) {
   }), q = (null == j ? true : j.widgets) != null && j.widgets.length > 0, X = z && q, Q = (0, d.I5)(n);
   return (0, r.jsxs)(a.Ttm, {
     fade: true,
-    className: L.body,
+    className: x.body,
     children: [(0, r.jsx)(I.Z, {
       user: t,
       onOpenProfile: U,
@@ -107,9 +107,9 @@ function j(e) {
         section: e
       })
     }), t.isProvisional ? (0, r.jsx)(v.Z.Overlay, {
-      className: L.card,
+      className: x.card,
       children: (0, r.jsx)(y.Z, {
-        heading: x.intl.string(x.t.Iyka0d),
+        heading: L.intl.string(L.t.Iyka0d),
         headingIcon: (0, r.jsx)(a.Mgn, {
           size: "xxs",
           color: a.TVs.colors.HEADER_PRIMARY

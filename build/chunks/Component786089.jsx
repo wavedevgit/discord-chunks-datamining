@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 786089, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => j
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -28,8 +28,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk384809 = require("./384809.js");
-let P = (0, Chunk647438.memo)(function(e) {
-  var t, n, l, P, j, x;
+let j = (0, Chunk647438.memo)(function(e) {
+  var t, n, l, j, P, x;
   let {
     quest: A
   } = e, [Z, w] = (0, i.useState)(false), [L, R] = (0, i.useState)(24), [D, k] = (0, i.useState)(false), M = (0, i.useRef)(null), U = (0, i.useRef)(null), G = (0, i.useRef)(null), B = (0, c.e7)([m.default], () => m.default.getCurrentUser()), {
@@ -38,12 +38,12 @@ let P = (0, Chunk647438.memo)(function(e) {
   } = (0, p.ZP)(), F = (0, f.ZP)(), z = (0, O.B6)(null == (t = A.userStatus) ? true : t.claimedAt, {
     month: "numeric",
     day: "numeric"
-  }), W = null != (j = null == (n = A.userStatus) ? true : n.claimedTier) ? j : 0, Y = A.config.rewards[W], K = (null == Y ? true : Y.type) === s.w.FRACTIONAL_PREMIUM, q = (null == Y ? true : Y.type) === s.w.COLLECTIBLE, Q = (null == Y ? true : Y.type) === s.w.VIRTUAL_CURRENCY, X = null == Y || null == (P = Y.collectibleProduct) || null == (l = P.items) ? true : l[0], J = (null == X ? true : X.type) === o.Z.AVATAR_DECORATION ? X : null;
+  }), W = null != (P = null == (n = A.userStatus) ? true : n.claimedTier) ? P : 0, Y = A.config.rewards[W], q = (null == Y ? true : Y.type) === s.w.FRACTIONAL_PREMIUM, K = (null == Y ? true : Y.type) === s.w.COLLECTIBLE, Q = (null == Y ? true : Y.type) === s.w.VIRTUAL_CURRENCY, X = null == Y || null == (j = Y.collectibleProduct) || null == (l = j.items) ? true : l[0], J = (null == X ? true : X.type) === o.Z.AVATAR_DECORATION ? X : null;
   (0, p.PM)(M, e => {
     let {
       height: t
     } = e;
-    if (!q || null == t || null == U.current || null == M.current || null == G.current) return;
+    if (!K || null == t || null == U.current || null == M.current || null == G.current) return;
     let n = M.current.getBoundingClientRect(),
       r = U.current.getBoundingClientRect(),
       i = G.current.getBoundingClientRect();
@@ -114,7 +114,7 @@ let P = (0, Chunk647438.memo)(function(e) {
       className: a()(N.container, {
         [N.hovered]: Z
       }),
-      children: [null != B && q && null != J && (0, r.jsx)("div", {
+      children: [null != B && K && null != J && (0, r.jsx)("div", {
         ref: G,
         className: N.decoWrapper,
         style: {
@@ -125,7 +125,7 @@ let P = (0, Chunk647438.memo)(function(e) {
           user: B,
           guildId: null
         })
-      }), K ? (0, r.jsx)(v.Z, {
+      }), q ? (0, r.jsx)(v.Z, {
         className: N.image
       }) : Q ? (0, r.jsx)(I.Z, {
         className: N.image

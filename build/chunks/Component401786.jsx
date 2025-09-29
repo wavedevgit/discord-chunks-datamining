@@ -80,13 +80,13 @@ function D(e) {
   })
 }
 
-function x() {
+function L() {
   let e = Object.values(Chunk314884.Z.boostSlots),
     t = o().sortBy(module.filter(e => !(0, T.tl)(e)), e => [null != e.premiumGuildSubscription, null != e.cooldownEndsAt ? new Date(e.cooldownEndsAt) : null])[0];
   return null != exports ? exports.id : null
 }
-async function L(e, t, n, r) {
-  let i = null != r ? r : x();
+async function x(e, t, n, r) {
+  let i = null != r ? r : L();
   if (null == i) throw Error("No slot to cancel");
   let a = (0, S.MY)(e, t);
   await (0, d.pD)(i), await (0, u.Mg)(e, {
@@ -106,7 +106,7 @@ function j(e) {
     onBack: d,
     onNext: p,
     onClose: O
-  } = e, [I, T] = i.useState(false), [R, D] = i.useState(null), [x, j] = i.useMemo(() => {
+  } = e, [I, T] = i.useState(false), [R, D] = i.useState(null), [L, j] = i.useMemo(() => {
     try {
       return [(0, g.g)(o, false), false]
     } catch (e) {
@@ -138,7 +138,7 @@ function j(e) {
     paymentSourceId: o.paymentSourceId,
     analyticsLocations: G,
     analyticsLocation: f.Z.GUILD_BOOST_SLOT_CANCELLATION_MODAL_CURRENT_INVOICE_PREVIEW
-  }), Z = null != U ? (0, S.Zx)(o, null != (a = null == (t = x[0]) ? true : t.quantity) ? a : 0, U.id) : null, [F] = (0, m.ED)({
+  }), Z = null != U ? (0, S.Zx)(o, null != (a = null == (t = L[0]) ? true : t.quantity) ? a : 0, U.id) : null, [F] = (0, m.ED)({
     subscriptionId: o.id,
     items: Z,
     renewal: true,
@@ -157,7 +157,7 @@ function j(e) {
       } = e;
       return !N.Z1.has(t)
     })) != null,
-    H = x.some(e => {
+    H = L.some(e => {
       let {
         planId: t
       } = e;
@@ -213,7 +213,7 @@ function j(e) {
         disabled: I,
         onClick: async () => {
           try {
-            T(true), D(null), await L(o, x, G, l), p()
+            T(true), D(null), await x(o, L, G, l), p()
           } catch (e) {
             D(P.intl.string(P.t["5mlOCQ"])), T(false)
           }

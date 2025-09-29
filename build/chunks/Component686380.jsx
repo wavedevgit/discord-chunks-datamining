@@ -232,34 +232,34 @@ class F extends Chunk647438.Component {
       src: j.Z,
       height: 84,
       width: 144,
-      className: x.imgDMEmbedXP
+      className: L.imgDMEmbedXP
     }) : (0, r.jsx)(d.Eep, {
-      src: L.Z,
+      src: x.Z,
       height: 137,
       width: 144,
-      className: x.imgDMEmbedXP
+      className: L.imgDMEmbedXP
     }), {
       headerText: l,
       bodyText: c
     } = n();
     return (0, r.jsxs)(h.Z, {
-      className: x.systemMessageContainerDMEmbedXP,
+      className: L.systemMessageContainerDMEmbedXP,
       iconNode: (0, r.jsx)(d.SrA, {
         size: "md",
         color: "currentColor"
       }),
-      iconContainerClassName: x.systemMessageContainerIcon,
+      iconContainerClassName: L.systemMessageContainerIcon,
       compact: this.compact,
       children: [(0, r.jsx)(d.Text, {
         variant: "text-md/medium",
         color: "text-primary",
         children: this.getSystemMessageHeader()
       }), (0, r.jsxs)("div", {
-        className: x.containerDMEmbedXP,
+        className: L.containerDMEmbedXP,
         children: [s, (0, r.jsxs)("div", {
-          className: x.contentDMEmbedXP,
+          className: L.contentDMEmbedXP,
           children: [(0, r.jsxs)("div", {
-            className: x.contentTextDMEmbedXP,
+            className: L.contentTextDMEmbedXP,
             children: [(0, r.jsx)(d.X6q, {
               variant: "heading-md/semibold",
               color: "header-primary",
@@ -270,7 +270,7 @@ class F extends Chunk647438.Component {
               children: c
             })]
           }), (0, r.jsx)("div", {
-            className: x.buttonContainerDMEmbedXP,
+            className: L.buttonContainerDMEmbedXP,
             children: o
           })]
         })]
@@ -347,9 +347,9 @@ function V(e) {
     dmRefreshXPCohort: b.cohort,
     compact: i
   }) : (0, r.jsx)("div", {
-    className: x.invalidWrapper,
+    className: L.invalidWrapper,
     children: (0, r.jsx)("div", {
-      className: x.invalid
+      className: L.invalid
     })
   })
 }

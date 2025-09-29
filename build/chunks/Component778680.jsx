@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 778680, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 1272 **/
+/** chunk id: 778680, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
 });
@@ -17,34 +16,34 @@ function c(e) {
     selectedSections: n = [],
     onSectionSelect: c,
     controls: u
-  } = e, d = (0, o.Ui)(), f = 0 === n.length || n.length === d.length, _ = i.useMemo(() => f ? "all" : 1 === n.length ? n[0] : "all", [n, f]), p = e => {
-    null == c || c(e)
-  };
+  } = e, d = (0, a.Ui)(), p = 0 === n.length || n.length === d.length, f = i.useMemo(() => p ? "all" : 1 === n.length ? n[0] : "all", [n, p]);
   return (0, r.jsxs)("div", {
-    className: l.container,
-    children: [(0, r.jsx)(a.X6q, {
+    className: s.container,
+    children: [(0, r.jsx)(l.X6q, {
       variant: "heading-xl/semibold",
       color: "header-primary",
-      children: s.intl.string(s.t.BDUDam)
+      children: o.intl.string(o.t.BDUDam)
     }), (0, r.jsx)("div", {
-      className: l.controlsBarContainer,
+      className: s.controlsBarContainer,
       children: u
-    }), (0, r.jsxs)(a.njP, {
+    }), (0, r.jsxs)(l.njP, {
       type: "top",
       look: "brand",
-      selectedItem: _,
-      onItemSelect: p,
-      children: [(0, r.jsx)(a.njP.Item, {
+      selectedItem: f,
+      onItemSelect: e => {
+        null == c || c(e)
+      },
+      children: [(0, r.jsx)(l.njP.Item, {
         id: "all",
-        children: s.intl.string(s.t.Y9DnPT)
-      }), d.map(e => (0, r.jsx)(a.njP.Item, {
+        children: o.intl.string(o.t.Y9DnPT)
+      }), d.map(e => (0, r.jsx)(l.njP.Item, {
         id: e.value,
         children: e.label
       }, e.value))]
     }), (0, r.jsx)("div", {
-      className: l.contentArea,
+      className: s.contentArea,
       children: (0, r.jsx)("div", {
-        className: l.content,
+        className: s.content,
         children: t
       })
     })]

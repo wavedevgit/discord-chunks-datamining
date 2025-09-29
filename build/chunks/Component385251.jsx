@@ -154,8 +154,8 @@ let P = function(e) {
   } = (0, _.k)({
     location: "Subscription Details"
   }), D = () => {
-    t.status !== b.O0b.CANCELED && x()
-  }, x = e => {
+    t.status !== b.O0b.CANCELED && L()
+  }, L = e => {
     (0, i.ZDy)(async () => {
       let {
         PremiumBrandRefreshSubscriptionCancellationModal: i
@@ -167,7 +167,7 @@ let P = function(e) {
         initialStep: e
       }))
     })
-  }, L = () => {
+  }, x = () => {
     let e = d.ZP.isSwitchingPlansDisabled(t),
       n = d.ZP.getSwitchingPlansDisabledMessage(t);
     return d.ZP.isBaseSubscriptionCanceled(t) ? (0, r.jsx)(i.zxk, {
@@ -178,7 +178,7 @@ let P = function(e) {
         percent: S.discount.amount
       }) : y.intl.string(y.t.zrCzVF),
       loading: f,
-      onClick: () => x(g.R.CONFIRM_DISCOUNT)
+      onClick: () => L(g.R.CONFIRM_DISCOUNT)
     }) : (0, r.jsxs)("div", {
       className: O.activeSubButtons,
       children: [(0, r.jsx)(i.ua7, {
@@ -247,7 +247,7 @@ let P = function(e) {
               isDiscountActive: null != E
             }), (0, r.jsx)("div", {
               className: O.churnDiscountBannerButton,
-              children: L()
+              children: x()
             })]
           }), (0, r.jsx)("img", {
             className: O.churnDiscountBannerImage,

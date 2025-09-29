@@ -84,8 +84,8 @@ function R(e, t) {
 let P = new Chunk710845.Z("OverlayRenderStore"),
   w = Chunk837268.R5.UNSET,
   D = false,
-  x = false,
   L = false,
+  x = false,
   j = (0, Chunk358085.isWindows)() && Chunk358085.isPlatformEmbedded && !__OVERLAY__,
   M = null,
   k = {},
@@ -106,7 +106,7 @@ function Y() {
 }
 
 function W() {
-  return x
+  return L
 }
 
 function K() {
@@ -454,20 +454,20 @@ async function eh(e, t) {
     newOopEnabled: t
   });
   let n = e !== D,
-    r = t !== x;
-  if (D = e, x = t, g.v.update({
+    r = t !== L;
+  if (D = e, L = t, g.v.update({
       legacyEnabled: D,
-      oopEnabled: x
+      oopEnabled: L
     }), P.info("setOverlayEnabled", {
       newOopEnabled: t,
       newLegacyEnabled: e
-    }), x && r && (0, h.setOutOfProcessSupport)(true), D || x) n && P.info("Legacy change"), r && P.info("OOP change"), eO();
+    }), L && r && (0, h.setOutOfProcessSupport)(true), D || L) n && P.info("Legacy change"), r && P.info("OOP change"), eO();
   else
     for (let e of q()) await ea(e), await (0, a._v)(16)
 }
 
 function em() {
-  ec(), L = false, G = null, eD()
+  ec(), x = false, G = null, eD()
 }
 
 function eg(e) {
@@ -579,15 +579,15 @@ function ew(e) {
 }
 
 function eD() {
-  Chunk353926.Z.hasLoadedExperiments && !L && (L = true, eh(Chunk454991.v.legacyEnabled, Chunk454991.v.oopEnabled))
-}
-
-function ex() {
-  L = false, G = null
+  Chunk353926.Z.hasLoadedExperiments && !x && (x = true, eh(Chunk454991.v.legacyEnabled, Chunk454991.v.oopEnabled))
 }
 
 function eL() {
-  L = false, G = null, ev()
+  x = false, G = null
+}
+
+function ex() {
+  x = false, G = null, ev()
 }
 class ej extends(r = Chunk442837.ZP.Store) {
   initialize() {
@@ -597,7 +597,7 @@ class ej extends(r = Chunk442837.ZP.Store) {
     return V
   }
   getHasLoadedExperiments() {
-    return L
+    return x
   }
   getForcedRenderMode() {
     return w
@@ -667,8 +667,8 @@ class ej extends(r = Chunk442837.ZP.Store) {
 T(ej, "displayName", "OverlayRenderStore");
 let eM = new ej(Chunk570140.Z, !j ? {} : {
     CONNECTION_OPEN: em,
-    LOGIN: ex,
-    LOGOUT: eL,
+    LOGIN: eL,
+    LOGOUT: ex,
     EXPERIMENT_OVERRIDE_BUCKET: em,
     OVERLAY_SET_ENABLED: eg,
     GAME_LAUNCH_SUCCESS: eE,

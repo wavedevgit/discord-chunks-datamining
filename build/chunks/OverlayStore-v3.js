@@ -44,7 +44,7 @@ function D(e, t, n) {
   }) : e[t] = n, e
 }
 
-function x(e) {
+function L(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -57,7 +57,7 @@ function x(e) {
   return e
 }
 
-function L(e, t) {
+function x(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -69,7 +69,7 @@ function L(e, t) {
 }
 
 function j(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -227,7 +227,7 @@ function ed(e, t) {
   var n, r;
   let i = null == (n = V[e]) ? true : n.error,
     a = null == (r = V[e]) ? true : r.error_description;
-  V[e] = x({}, V[e], t), null != i && (V[e].error = i), null != a && (V[e].error_description = a)
+  V[e] = L({}, V[e], t), null != i && (V[e].error = i), null != a && (V[e].error_description = a)
 }
 
 function ef(e) {
@@ -371,7 +371,7 @@ async function eT(e) {
       n = {
         mounting_started_at: t
       };
-    ed(e, n), ea(), X = null, B(e, "renderer_window_mounting_started", n), await (0, C.f)(et), ei = j(x({}, ei), {
+    ed(e, n), ea(), X = null, B(e, "renderer_window_mounting_started", n), await (0, C.f)(et), ei = j(L({}, ei), {
       popoutOpened: true
     });
     let r = {
@@ -388,7 +388,7 @@ async function eT(e) {
     };
     return B(e, "renderer_started", a), ed(e, a), eZ(false), S.Z.resetWindowState(), (null == W ? true : W.setOnWindowHandleInitializedCallback) == null && eG(true), i
   } catch (t) {
-    G.error("failed to create out of process overlay host window", t), eh(e, t), c.Z.updateOverlayState(e, I.mM.OVERLAY_CRASHED_DISABLED), ei = j(x({}, ei), {
+    G.error("failed to create out of process overlay host window", t), eh(e, t), c.Z.updateOverlayState(e, I.mM.OVERLAY_CRASHED_DISABLED), ei = j(L({}, ei), {
       errorMessage: "Error in _createOutOfProcessOverlayHostWindow: " + t
     })
   } finally {
@@ -496,11 +496,11 @@ function eD() {
   eR(null, true), e9.emitChange()
 }
 
-function ex(e) {
+function eL(e) {
   return z = e.pid, true
 }
 
-function eL(e) {
+function ex(e) {
   if (!Y.has(e) || !ei.allDone) return;
   let t = eu(e).mounting_started_at;
   ed(e, {
@@ -511,16 +511,16 @@ function eL(e) {
 
 function ej() {
   var e;
-  ei = j(x({}, ei), {
+  ei = j(L({}, ei), {
     showInactiveCalled: true
   }), null == W || null == (e = W.onPopoutShowInactive) || module.call(W)
 }
 
 function eM() {
-  ei = j(x({}, ei), {
+  ei = j(L({}, ei), {
     allDone: true
   }), Y.forEach(e => {
-    eL(e)
+    ex(e)
   })
 }
 
@@ -528,15 +528,15 @@ function ek(e) {
   let {
     update: t
   } = e;
-  ei = x({}, ei, t)
+  ei = L({}, ei, t)
 }
 
 function eU(e) {
-  B(e, "_successfullyShownCallback"), Y.add(e), eL(e)
+  B(e, "_successfullyShownCallback"), Y.add(e), ex(e)
 }
 
 function eG(e) {
-  ei = j(x({}, ei), {
+  ei = j(L({}, ei), {
     windowHandleSentToNative: e
   }), e && c.Z.updateOverlayState((0, b.getPID)(), I.mM.WAITING_FOR_REACT_INITIALIZATION), e9.emitChange()
 }
@@ -661,7 +661,7 @@ function e3(e) {
 let e4 = 3e3,
   e8 = 100;
 
-function e6(e) {
+function e5(e) {
   let {
     enabled: t
   } = e;
@@ -681,7 +681,7 @@ function e6(e) {
   } else clearInterval(en), en = null
 }
 
-function e5(e) {
+function e6(e) {
   let {
     enabled: t
   } = e;
@@ -794,9 +794,9 @@ let e9 = new e7(Chunk570140.Z, __OVERLAY__ ? {} : {
     OVERLAY_UPDATE_OVERLAY_STATE: eX,
     OVERLAY_SET_GPU_BOOST_REQUESTED: eW,
     OVERLAY_CRASHED: eY,
-    OVERLAY_FOCUSED: ex,
-    OVERLAY_SET_MODULE_LOGGING: e6,
-    OVERLAY_SET_STATE_DEBUGGING: e5,
+    OVERLAY_FOCUSED: eL,
+    OVERLAY_SET_MODULE_LOGGING: e5,
+    OVERLAY_SET_STATE_DEBUGGING: e6,
     OVERLAY_OOP_UI_INITIALIZED: eM,
     OVERLAY_OOP_UI_SHOW_INACTIVE_SUCCESS: ej,
     OVERLAY_OOP_POPOUT_INITIALIZATION_STAGE_CHANGED: ek

@@ -100,7 +100,7 @@ let C = 40,
       D = () => {
         (0, _.uL)(b.Z5c.CHANNEL(n.id, y.oC.ROLE_SUBSCRIPTIONS))
       },
-      x = N ? D : w;
+      L = N ? D : w;
     return (0, r.jsx)(a.VqE, {
       children: (0, r.jsx)(E.W_, {
         children: (0, r.jsxs)("div", {
@@ -131,7 +131,7 @@ let C = 40,
             size: "sm",
             variant: "secondary",
             text: O.intl.string(O.t["H930+P"]),
-            onClick: x,
+            onClick: L,
             icon: a.$Eu,
             fullWidth: true,
             autoFocus: true

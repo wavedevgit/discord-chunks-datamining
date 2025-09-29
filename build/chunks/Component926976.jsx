@@ -1,4 +1,4 @@
-/** Chunk was on 66663 **/
+/** Chunk was on 89342 **/
 /** chunk id: 926976, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => Z
@@ -81,7 +81,7 @@ function I(e) {
     }), (0, a.jsx)(u.P3F, {
       tag: "span",
       className: S.copyPropertyButton,
-      onClick: () => (0, g.JG)(JSON.stringify(i), () => s(true)),
+      onClick: () => (0, b.JG)(JSON.stringify(i), () => s(true)),
       children: l ? (0, a.jsx)(u.kmB, {
         color: "currentColor",
         size: "sm"
@@ -120,7 +120,7 @@ let k = new Set(["client_performance_cpu", "client_performance_memory"]),
             children: [t, (0, a.jsx)(u.P3F, {
               tag: "span",
               className: S.copyEventButton,
-              onClick: () => (0, g.JG)(t),
+              onClick: () => (0, b.JG)(t),
               children: (0, a.jsx)(u.TIy, {
                 color: "currentColor",
                 size: "sm"
@@ -130,7 +130,7 @@ let k = new Set(["client_performance_cpu", "client_performance_memory"]),
             icon: u.TIy,
             tooltip: "Copy all properties",
             onClick: () => {
-              (0, g.JG)(JSON.stringify(function(e) {
+              (0, b.JG)(JSON.stringify(function(e) {
                 for (var t = 1; t < arguments.length; t++) {
                   var n = null != arguments[t] ? arguments[t] : {},
                     a = Object.keys(n);
@@ -166,8 +166,8 @@ let k = new Set(["client_performance_cpu", "client_performance_memory"]),
             copyValue: r.toISOString(),
             children: (0, a.jsxs)("time", {
               dateTime: r.toISOString(),
-              title: (0, b.vc)(h, "LLLL"),
-              children: ["(", o().locale(), ") ", (0, b.Y4)(h)]
+              title: (0, g.vc)(h, "LLLL"),
+              children: ["(", o().locale(), ") ", (0, g.Y4)(h)]
             })
           }), null != d && (0, a.jsx)(_.Z9, {
             name: "User",
@@ -281,8 +281,8 @@ function Z() {
         if (R[t].filter(e)) returntrue;
       returnfalse
     }),
-    [g, b] = Chunk647438.useState(true),
-    _ = Chunk594174.find(e => e.key === g),
+    [b, g] = Chunk647438.useState(true),
+    _ = Chunk594174.find(e => e.key === b),
     {
       TabBar: P,
       renderSelectedTab: I
@@ -335,7 +335,7 @@ function Z() {
       columns: O,
       data: Chunk594174,
       selectedRowKey: Chunk572004,
-      onClickRow: e => b(e.key)
+      onClickRow: e => g(e.key)
     }), null != Chunk257785 && (0, Chunk951288.jsxs)(Chunk484036.Z, {
       className: Chunk529554.subPanel,
       minHeight: 100,

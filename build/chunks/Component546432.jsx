@@ -57,7 +57,7 @@ function D(e) {
   return e
 }
 
-function x(e, t) {
+function L(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -68,8 +68,8 @@ function x(e, t) {
   return n
 }
 
-function L(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
+function x(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -142,7 +142,7 @@ let Z = e => {
     mimeType: t
   }, "app")), null != a && E.push((0, r.jsx)(l.ua7, {
     text: N.intl.string(N.t["/XT3io"]),
-    children: e => (0, r.jsx)(l.P3F, L(D({}, e), {
+    children: e => (0, r.jsx)(l.P3F, x(D({}, e), {
       className: o()(P.hoverButton, R.removeMosaicItemHoverButton),
       focusProps: {
         offset: 2
@@ -158,7 +158,7 @@ let Z = e => {
     }))
   }, "remove")), s && E.push((0, r.jsx)(l.ua7, {
     text: N.intl.string(N.t["1WjMbG"]),
-    children: e => (0, r.jsx)(p.Z, L(D({}, e), {
+    children: e => (0, r.jsx)(p.Z, x(D({}, e), {
       target: "_blank",
       rel: "noreferrer noopener",
       className: P.hoverButton,
@@ -202,8 +202,8 @@ function F(e) {
     renderPlaintextFilePreview: P,
     renderGenericFileComponent: w,
     renderVisualPlaceholderComponent: D,
-    className: x,
-    imgContainerClassName: L,
+    className: L,
+    imgContainerClassName: x,
     imgClassName: j,
     focusable: M,
     hiddenSpoilers: k,
@@ -288,7 +288,7 @@ function F(e) {
       })
     }, [U, c, Q, eo, J, eu, ee, el, n, ec, es, K, ed, H, ei, f]);
   if (z) return (0, r.jsx)(l.Eep, {
-    className: x,
+    className: L,
     readyState: C.zo9.READY,
     src: "",
     width: null != q ? q : 350,
@@ -313,8 +313,8 @@ function F(e) {
           shouldHideMediaOptions: eo,
           renderAccessory: e,
           renderAdjacentContent: e_,
-          containerClassName: x,
-          className: L,
+          containerClassName: L,
+          className: x,
           imageClassName: j,
           shouldLink: M,
           hiddenSpoilers: k,
@@ -340,7 +340,7 @@ function F(e) {
         renderAdjacentContent: e_,
         naturalWidth: q,
         naturalHeight: X,
-        className: o()(x, {
+        className: o()(L, {
           [R.hasFooter]: F
         }),
         playable: M,
@@ -360,7 +360,7 @@ function F(e) {
       return (0, r.jsx)(D, {
         item: n,
         message: t,
-        className: L,
+        className: x,
         imageClassName: j,
         maxWidth: G,
         maxHeight: B,
@@ -371,7 +371,7 @@ function F(e) {
       return (0, r.jsx)(S, {
         item: n,
         message: t,
-        className: x,
+        className: L,
         playable: M,
         mimeType: el,
         renderAdjacentContent: e_,
@@ -383,7 +383,7 @@ function F(e) {
       return (0, r.jsx)(P, {
         item: n,
         message: t,
-        className: x,
+        className: L,
         onClick: _,
         onContextMenu: h,
         renderAdjacentContent: e_
@@ -392,7 +392,7 @@ function F(e) {
       return (0, r.jsx)(w, {
         item: n,
         message: t,
-        className: x,
+        className: L,
         onClick: _,
         onContextMenu: h,
         renderAdjacentContent: e_
@@ -416,7 +416,7 @@ function V(e, t, n) {
     });
     r = t
   }
-  return L(D({}, n !== A.hV.MOSAIC && {
+  return x(D({}, n !== A.hV.MOSAIC && {
     maxWidth: null != r ? r : "400px"
   }), {
     width: "100%",
@@ -440,13 +440,13 @@ let H = function(e) {
     width: E,
     height: b,
     type: y
-  } = n, O = s(n, (0, g.v)(a)), [v, I] = i.useState(null != O), T = (0, h.JO)(O), C = c === A.hV.MOSAIC, N = !C && (null != E && E < k || null != b && b < U), P = G(y), w = (0, S.R_)(y), x = u && null != O && (0, h.yf)(E, b), [M, B] = i.useState(false), Z = () => {
+  } = n, O = s(n, (0, g.v)(a)), [v, I] = i.useState(null != O), T = (0, h.JO)(O), C = c === A.hV.MOSAIC, N = !C && (null != E && E < k || null != b && b < U), P = G(y), w = (0, S.R_)(y), L = u && null != O && (0, h.yf)(E, b), [M, B] = i.useState(false), Z = () => {
     B(true)
   }, H = () => {
     B(false)
   }, Y = function() {
     let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-    return (0, r.jsx)(F, L(D({}, p), {
+    return (0, r.jsx)(F, x(D({}, p), {
       item: n,
       message: a,
       getObscureReason: s,
@@ -461,7 +461,7 @@ let H = function(e) {
       focusable: !e,
       mediaLayoutType: c,
       hasFooter: null != d,
-      useFullWidth: !!x && !!e || l,
+      useFullWidth: !!L && !!e || l,
       isVisualMediaType: w,
       onVideoControlsShow: Z,
       onVideoControlsHide: H,

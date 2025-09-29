@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   B1: () => Z,
-  DR: () => x,
+  DR: () => L,
   F$: () => k,
   Ov: () => V,
   R2: () => F,
@@ -12,7 +12,7 @@ require.d(exports, {
   fi: () => H,
   jr: () => G,
   mK: () => w,
-  oK: () => L,
+  oK: () => x,
   oc: () => M,
   p8: () => Y,
   qg: () => U
@@ -101,12 +101,12 @@ let w = e => {
       type: "COLLECTIBLES_SHOP_OPEN"
     }, e))
   },
-  x = () => {
+  L = () => {
     Chunk570140.Z.dispatch({
       type: "COLLECTIBLES_SHOP_CLOSE"
     }), (0, Chunk37234.xf)()
   },
-  L = e => {
+  x = e => {
     s.Z.dispatch({
       type: "COLLECTIBLES_PRODUCT_DETAILS_OPEN",
       item: e

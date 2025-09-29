@@ -33,8 +33,8 @@ let A = 10,
   P = RegExp("^/events/(\\d+)(?:/)(\\d+)?((?:/)(\\d+))?"),
   w = /^\/(application-directory|discovery\/applications)\/([0-9-]+)\/?((about|images|privacy)\/?)?$/,
   D = /^\/(application-directory|discovery\/applications)\/([0-9-]+)\/store\/?([0-9-]+)?\/?$/,
-  x = /^\/activities\/([0-9-]+)\/?$/,
-  L = /^\/channels\/([0-9]+)\/shop\/([0-9]+)$/,
+  L = /^\/activities\/([0-9-]+)\/?$/,
+  x = /^\/channels\/([0-9]+)\/shop\/([0-9]+)$/,
   j = /^\/channels\/([0-9]+)\/shop$/,
   M = /^\/quests\/([0-9-]+)\/?$/,
   k = /^\/oauth2\/authorize/,
@@ -193,12 +193,12 @@ function ea(e) {
         u(T.g.APP_DIRECTORY_STOREFRONT_SKU, n)
       } else u(T.g.APP_DIRECTORY_STOREFRONT, e)
     }
-    let h = null == c ? true : c.match(x);
+    let h = null == c ? true : c.match(L);
     if (null != h) {
       let e = h[1];
       u(T.g.ACTIVITY_BOOKMARK, e)
     }
-    let m = null == c ? true : c.match(L);
+    let m = null == c ? true : c.match(x);
     null != m && u(T.g.GUILD_PRODUCT, "".concat(m[1], "-").concat(m[2]));
     let v = null == c ? true : c.match(j);
     null != v && u(T.g.SERVER_SHOP, v[1]);

@@ -292,8 +292,8 @@ function ep(e) {
     message: P,
     onView: w,
     partyStatusElement: D,
-    presenceActivity: x
-  } = e, L = (0, v.A)(S), j = (0, p.ye)(S), {
+    presenceActivity: L
+  } = e, x = (0, v.A)(S), j = (0, p.ye)(S), {
     bot: M
   } = S, G = U.ZP.getApplicationIconURL({
     id: S.id,
@@ -303,7 +303,7 @@ function ep(e) {
     staticBannerSrc: B,
     videoBannerSrc: H,
     bannerAspectRatio: K
-  } = (0, E.E)(S), z = !(0, X.Z)(x, P, S.id), J = (0, Y.H)(P), {
+  } = (0, E.E)(S), z = !(0, X.Z)(L, P, S.id), J = (0, Y.H)(P), {
     openGameProfileModal: ee,
     launchableAppId: et
   } = ef(S.id, P.author.id), ei = !!et, es = (0, $.Z)({
@@ -318,15 +318,15 @@ function ep(e) {
     canJoin: ec,
     remoteJoinPlatform: ed
   } = (0, F.h)({
-    presenceActivity: x,
+    presenceActivity: L,
     currentUserPresenceActivity: N,
     currentUserId: C,
     message: P,
     application: S,
     isEmbeddedApplication: j,
-    isFrameApplication: L,
+    isFrameApplication: x,
     isGameLaunchable: ei
-  }), ep = eu(x, N, P, S), eh = (0, W.g)(N, x), em = (0, V.L)(x, P, S, C), eg = (0, l.e7)([k.Z], () => null != x && null != x.application_id && k.Z.getState(x.application_id, en.mFx.JOIN) === en.OcF.LOADING), eE = i.useMemo(() => ec ? {
+  }), ep = eu(L, N, P, S), eh = (0, W.g)(N, L), em = (0, V.L)(L, P, S, C), eg = (0, l.e7)([k.Z], () => null != L && null != L.application_id && k.Z.getState(L.application_id, en.mFx.JOIN) === en.OcF.LOADING), eE = i.useMemo(() => ec ? {
     label: ea.intl.string(ea.t.VJlc0d),
     trackingArea: m.j_.JOIN,
     submitting: eg,
@@ -334,22 +334,22 @@ function ep(e) {
       var e, t;
       d.Z.join({
         userId: P.author.id,
-        sessionId: x.session_id,
-        applicationId: x.application_id,
+        sessionId: L.session_id,
+        applicationId: L.application_id,
         channelId: A.id,
         messageId: P.id,
         source: en.Sbl.MESSAGE_EMBED,
         analyticsLocations: I,
-        embedded: (0, q.Z)(x, en.xjy.EMBEDDED),
-        remotePartyId: null != ed ? null == (e = x.party) ? true : e.id : true
+        embedded: (0, q.Z)(L, en.xjy.EMBEDDED),
+        remotePartyId: null != ed ? null == (e = L.party) ? true : e.id : true
       }), (0, Q.Z)({
         type: en.q5t.JOIN,
         source: en.Sbl.MESSAGE_EMBED,
         userId: P.author.id,
         guildId: A.guild_id,
         channelId: A.id,
-        applicationId: x.application_id,
-        partyId: null == (t = x.party) ? true : t.id,
+        applicationId: L.application_id,
+        partyId: null == (t = L.party) ? true : t.id,
         messageId: P.id,
         analyticsLocations: I,
         remoteJoinPlatform: ed
@@ -359,16 +359,16 @@ function ep(e) {
     label: ea.intl.string(ea.t.VJlc0d),
     trackingArea: m.j_.SYNC,
     onClick: () => {
-      null != x && f.Z_(x, P.author.id)
+      null != L && f.Z_(L, P.author.id)
     }
   } : em ? {
     label: ea.intl.string(ea.t["hC/Ze3"]),
     trackingArea: m.j_.INVITE,
     onClick: () => {
-      null != x && u.Z.sendActivityInvite({
+      null != L && u.Z.sendActivityInvite({
         type: en.mFx.JOIN,
         channelId: A.id,
-        activity: x,
+        activity: L,
         location: en.Sbl.MESSAGE_EMBED
       })
     },
@@ -379,7 +379,7 @@ function ep(e) {
     trackingArea: m.j_.PLAY,
     onClick: () => {},
     disabled: true
-  } : null != el ? el : true, [ec, ep, em, eh, el, P.author.id, P.id, x, A.id, A.guild_id, I, ed, C, eg]), eb = i.useMemo(() => ei && null != et ? {
+  } : null != el ? el : true, [ec, ep, em, eh, el, P.author.id, P.id, L, A.id, A.guild_id, I, ed, C, eg]), eb = i.useMemo(() => ei && null != et ? {
     label: ea.intl.string(ea.t.RscU7O),
     trackingArea: m.j_.PLAY,
     onClick: () => {
@@ -409,7 +409,7 @@ function ep(e) {
       }), ea.intl.string(ea.t.TsWCdX)]
     }) : null,
     eA = eh ? null : (0, r.jsx)(e_, {
-      presenceActivity: x,
+      presenceActivity: L,
       remoteJoinPlatform: ed
     });
   if (z) {
@@ -442,7 +442,7 @@ function ep(e) {
       }
     })
   }
-  let eC = null != (g = null == x || null == (n = x.timestamps) ? true : n.start) ? g : null == x ? true : x.created_at,
+  let eC = null != (g = null == L || null == (n = L.timestamps) ? true : n.start) ? g : null == L ? true : L.created_at,
     eN = null != eC ? (0, r.jsxs)("div", {
       className: eo.timestampContainer,
       children: [(0, r.jsx)(c.iWm, {
@@ -451,7 +451,7 @@ function ep(e) {
       }), (0, r.jsx)(y.x3, {
         entry: {
           start: eC,
-          end: null == x || null == (s = x.timestamps) ? true : s.end
+          end: null == L || null == (s = L.timestamps) ? true : s.end
         },
         textColor: "currentColor",
         textTabularNumbers: false,
@@ -502,15 +502,15 @@ function eh(e) {
     message: c,
     hideParty: u,
     onView: d
-  } = e, f = (0, g.O)(o), _ = (0, l.e7)([w.default], () => w.default.getId()), p = (0, l.e7)([L.Z], () => {
-    if (null == c.application) return L.Z.findActivity(c.author.id, e => e.type === en.IIU.LISTENING);
+  } = e, f = (0, g.O)(o), _ = (0, l.e7)([w.default], () => w.default.getId()), p = (0, l.e7)([x.Z], () => {
+    if (null == c.application) return x.Z.findActivity(c.author.id, e => e.type === en.IIU.LISTENING);
     {
       let e = c.author.id;
-      return (0, Y.H)(c) && (e = e === _ && s.isPrivate() ? s.getRecipientId() : _), L.Z.getApplicationActivity(e, c.application.id)
+      return (0, Y.H)(c) && (e = e === _ && s.isPrivate() ? s.getRecipientId() : _), x.Z.getApplicationActivity(e, c.application.id)
     }
-  }, [c, s, _]), h = (0, l.e7)([x.Z, j.Z], () => {
+  }, [c, s, _]), h = (0, l.e7)([L.Z, j.Z], () => {
     var e;
-    return null != (e = x.Z.getApplicationActivity(f.id)) ? e : j.Z.getApplicationActivity(f.id, true)
+    return null != (e = L.Z.getApplicationActivity(f.id)) ? e : j.Z.getApplicationActivity(f.id, true)
   }, [f.id]), m = (0, l.Wu)([D.Z], () => {
     var e;
     return null == p || null == p.party ? [] : Array.from(null != (e = D.Z.getParty(p.party.id)) ? e : [])

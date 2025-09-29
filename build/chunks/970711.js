@@ -15,7 +15,7 @@ require.d(exports, {
   BQ: () => eN,
   C2: () => ek,
   Cn: () => ea,
-  D7: () => ex,
+  D7: () => eL,
   DZ: () => ev,
   F8: () => em,
   G0: () => ts,
@@ -37,7 +37,7 @@ require.d(exports, {
   S: () => ei,
   S6: () => J,
   Tc: () => e1,
-  UE: () => eL,
+  UE: () => ex,
   Ub: () => v,
   Uj: () => eC,
   V3: () => e3,
@@ -71,7 +71,7 @@ require.d(exports, {
   jx: () => eE,
   k7: () => eI,
   kI: () => to,
-  kK: () => e6,
+  kK: () => e5,
   kn: () => el,
   kr: () => eA,
   mO: () => e4,
@@ -90,7 +90,7 @@ require.d(exports, {
   qt: () => th,
   r3: () => eD,
   rs: () => T,
-  sB: () => e5,
+  sB: () => e6,
   uX: () => ec,
   up: () => eH,
   vH: () => $,
@@ -285,15 +285,15 @@ function P(e, t, n, i) {
 }
 let w = ["bytes"],
   D = ["omit", "same-origin", "include"],
-  x = ["same-origin", "no-cors", "cors", "navigate"],
-  L = "undefined" == typeof FinalizationRegistry ? {
+  L = ["same-origin", "no-cors", "cors", "navigate"],
+  x = "undefined" == typeof FinalizationRegistry ? {
     register: () => {},
     unregister: () => {}
   } : new FinalizationRegistry(e => r.__wbg_blockeddomainsstore_free(e >>> 0, 1));
 class j {
   __destroy_into_raw() {
     let e = this.__wbg_ptr;
-    return this.__wbg_ptr = 0, L.unregister(this), module
+    return this.__wbg_ptr = 0, x.unregister(this), module
   }
   free() {
     let e = this.__destroy_into_raw();
@@ -668,13 +668,13 @@ function eD() {
   }, arguments)
 }
 
-function ex() {
+function eL() {
   return u(function(e) {
     return new Blob(e)
   }, arguments)
 }
 
-function eL(e) {
+function ex(e) {
   return e.next
 }
 
@@ -755,7 +755,7 @@ function eQ(e, t, n) {
 }
 
 function eJ(e, t) {
-  e.mode = x[t]
+  e.mode = L[t]
 }
 
 function e$(e, t) {
@@ -790,11 +790,11 @@ function e8() {
   return d(module) ? 0 : c(module)
 }
 
-function e6(e) {
+function e5(e) {
   return e.status
 }
 
-function e5() {
+function e6() {
   return u(function(e) {
     return JSON.stringify(e)
   }, arguments)

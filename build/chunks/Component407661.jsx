@@ -104,7 +104,7 @@ function A(e) {
     displayNameStyles: R
   } = (0, d.ZP)(a), P = (0, f.X7)(m, N, A), w = (0, u.j)({
     displayNameStyles: R
-  }), D = T(i, a), x = (0, h.NE)(i, a), L = n.showThreadPromptOnReply && D >= v && x, j = () => (0, p.uL)(b.Z5c.CHANNEL(i.getGuildId(), i.id, a.id));
+  }), D = T(i, a), L = (0, h.NE)(i, a), x = n.showThreadPromptOnReply && D >= v && L, j = () => (0, p.uL)(b.Z5c.CHANNEL(i.getGuildId(), i.id, a.id));
 
   function M(e) {
     e.stopPropagation(), (0, _.qx)(i.id, !s)
@@ -185,7 +185,7 @@ function A(e) {
             onClick: k
           })]
         })]
-      }), L && (0, r.jsx)(S, {
+      }), x && (0, r.jsx)(S, {
         channel: i,
         message: a,
         replyChainLength: D

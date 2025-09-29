@@ -87,24 +87,24 @@ async function A(e, t) {
     w = null == P ? true : P.getGuildId(),
     D = null == (n = u.Z.getGuild(w)) ? true : n.premiumTier;
   if (null == N || null == P || null == R) return [false, "no user or channel"];
-  let x = null;
-  if (null == (x = "number" == typeof e ? a.ZP.getGameForPID(e) : e)) return [false, "no source"];
+  let L = null;
+  if (null == (L = "number" == typeof e ? a.ZP.getGameForPID(e) : e)) return [false, "no source"];
   if (!d.Z.getUseSystemScreensharePicker() && !await o.Z.hasPermission(b.Eu.SCREEN_RECORDING, {
       showAuthorizationError: false
     })) return [false, "no permission"];
   let {
-    preset: L,
+    preset: x,
     resolution: j,
     fps: M,
     soundshareEnabled: k
-  } = l.Z.getState(), U = null != (g = null == t ? true : t.preset) ? g : L, [G, B] = null != (y = (0, m.Z)(U, N, D)) ? y : [], Z = null != (v = null != G ? G : null == t ? true : t.resolution) ? v : j, F = null != (T = null != B ? B : null == t ? true : t.fps) ? T : M, V = null != (A = null == t ? true : t.previewDisabled) ? A : s.I0.getSetting(), H = null != (C = null == t ? true : t.soundshareEnabled) ? C : k;
+  } = l.Z.getState(), U = null != (g = null == t ? true : t.preset) ? g : x, [G, B] = null != (y = (0, m.Z)(U, N, D)) ? y : [], Z = null != (v = null != G ? G : null == t ? true : t.resolution) ? v : j, F = null != (T = null != B ? B : null == t ? true : t.fps) ? T : M, V = null != (A = null == t ? true : t.previewDisabled) ? A : s.I0.getSetting(), H = null != (C = null == t ? true : t.soundshareEnabled) ? C : k;
   return (0, h.Z)(U, Z, F, N, D, P) || (U = E.tI.PRESET_VIDEO, Z = E.LY.RESOLUTION_720, F = E.ws.FPS_30), (0, i.Rc)({
     preset: U,
     resolution: Z,
     frameRate: F,
     soundshareEnabled: H
-  }), (0, i.WH)(w, R, I(O({}, S(x)), {
-    audioSourceId: (null == (p = x.id) ? true : p.startsWith(r.vA.CAMERA)) ? null == t ? true : t.audioSourceId : true,
+  }), (0, i.WH)(w, R, I(O({}, S(L)), {
+    audioSourceId: (null == (p = L.id) ? true : p.startsWith(r.vA.CAMERA)) ? null == t ? true : t.audioSourceId : true,
     sound: H,
     previewDisabled: V,
     goLiveModalDurationMs: null == t ? true : t.goLiveModalDurationMs,

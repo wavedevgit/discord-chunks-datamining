@@ -35,7 +35,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk543434 = require("./543434.js");
 
-function x(e, t, n) {
+function L(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -44,14 +44,14 @@ function x(e, t, n) {
   }) : e[t] = n, e
 }
 
-function L(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      x(e, t, n[t])
+      L(e, t, n[t])
     })
   }
   return e
@@ -111,7 +111,7 @@ function k(e) {
       } = e;
       return (0, r.jsx)(s.ua7, {
         text: w.intl.string(w.t.emnnEB),
-        children: e => (0, r.jsx)(s.P3F, M(L({}, e), {
+        children: e => (0, r.jsx)(s.P3F, M(x({}, e), {
           className: l,
           focusProps: {
             offset: 2
@@ -141,7 +141,7 @@ function U(e) {
     onClose: n,
     channel: o,
     imageUrl: I,
-    mimeType: x
+    mimeType: L
   } = e, j = (0, a.e7)([S.Z], () => S.Z.getGuild(o.guild_id)), {
     fetchState: M,
     imageRecCommandContexts: k
@@ -166,7 +166,7 @@ function U(e) {
   let F = i.useCallback(async e => {
       let t = await fetch(I),
         n = await t.arrayBuffer(),
-        r = x.join("/"),
+        r = L.join("/"),
         i = new File([n], "image".concat((0, N.Q)({
           contentType: r
         })), {
@@ -183,7 +183,7 @@ function U(e) {
         },
         draftType: T.d.SlashCommand
       })
-    }, [I, o.id, x]),
+    }, [I, o.id, L]),
     V = i.useCallback(async (e, t, n, r) => {
       var i, a;
       if (!G) return;
@@ -239,7 +239,7 @@ function U(e) {
         location: t,
         source: d._b.TEXT
       }), c && (await F(n), await (0, g.Z)({
-        command: L({}, e),
+        command: x({}, e),
         optionValues: {
           [n]: [{
             text: "image",

@@ -1,32 +1,32 @@
-/** Chunk was on 10150 **/
-/** chunk id: 456799, original params: e,t,s (module,exports,require) **/
+/** Chunk was on 3408 **/
+/** chunk id: 456799, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => o
+  Z: () => l
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk745776 = require("./745776.js");
-let o = function(e) {
+let l = function(e) {
   let {
     allowClicks: t = false,
-    children: s,
-    withBorder: r = false
+    children: n,
+    withBorder: s = false
   } = e;
-  return (0, n.jsx)(i.Rny, {
-    children: (0, n.jsx)(i.Zbd, {
-      className: a()(l.componentPreviewWrapper, {
-        [l.componentPreviewWrapperBordered]: r
+  return (0, r.jsx)(a.Rny, {
+    children: (0, r.jsx)(a.Zbd, {
+      className: o()(i.componentPreviewWrapper, {
+        [i.componentPreviewWrapperBordered]: s
       }),
-      outline: r,
-      children: (0, n.jsx)("div", {
-        className: l.componentPreview,
+      outline: s,
+      children: (0, r.jsx)("div", {
+        className: i.componentPreview,
         onClickCapture: t ? true : function(e) {
           e.stopPropagation()
         },
-        children: s
+        children: n
       })
     })
   })

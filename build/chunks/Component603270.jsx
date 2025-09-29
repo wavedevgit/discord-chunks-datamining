@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   F: () => j,
-  P: () => L
+  P: () => x
 }), require("./388685.js"), require("./997841.js"), require("./953529.js"), require("./781311.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -63,7 +63,7 @@ let w = (0, Chunk442837.Kb)([Chunk55563.Z, Chunk551428.Z, Chunk509545.Z], {
     useStateHook: Chunk442837.cj
   });
 
-function x(e, t) {
+function L(e, t) {
   var n, r;
   let {
     data: i
@@ -78,7 +78,7 @@ function x(e, t) {
   }
 }
 
-function L(e) {
+function x(e) {
   let {
     appId: t,
     message: a
@@ -116,13 +116,13 @@ function L(e) {
         })
       })
     },
-    x = () => {
+    L = () => {
       D(), O.default.track(C.rMx.STOREFRONT_STORE_MESSAGE_EMBED_CLICKED, {
         application_id: t,
         area: "app_icon"
       })
     },
-    L = () => {
+    x = () => {
       D(), O.default.track(C.rMx.STOREFRONT_STORE_MESSAGE_EMBED_CLICKED, {
         application_id: t,
         area: "open_store_button"
@@ -140,11 +140,11 @@ function L(e) {
     link: "".concat(location.protocol, "//").concat(location.host).concat(C.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(u.id, N.GlobalDiscoveryAppsSections.STORE)),
     onLinkCopy: j,
     iconSrc: y,
-    onIconClick: x,
+    onIconClick: L,
     children: (0, r.jsx)("div", {
       className: P.openStoreButton,
       children: (0, r.jsx)(l.zxk, {
-        onClick: L,
+        onClick: x,
         text: R.intl.string(R.t.kRvlKC)
       })
     })
@@ -162,14 +162,14 @@ function j(e) {
     sku: _,
     subscriptionPlan: g,
     storeListing: E
-  } = x(c, o), {
+  } = L(c, o), {
     data: b
   } = (0, d.IX)(null == _ ? true : _.applicationId), y = (0, s.e7)([m.Z], () => {
     var e;
     return null == (e = m.Z.getBasicChannel(u.channel_id)) ? true : e.guild_id
   }, [u]), v = i.useMemo(() => null != b ? (0, I.y)(b, 45) : true, [b]), w = (0, S.R)(null != (a = null == b ? true : b.id) ? a : ""), {
     openModal: D,
-    subscriptionPurchaseButtonState: L
+    subscriptionPurchaseButtonState: x
   } = (0, h.Z)({
     skuId: c,
     initialSubscribeForGuild: y
@@ -277,7 +277,7 @@ function j(e) {
         icon: l.EOn,
         onHasClicked: H,
         subscriptionPlan: g,
-        state: L
+        state: x
       }) : (0, r.jsx)(l.zxk, {
         variant: "primary",
         text: R.intl.string(R.t.uuzaAA),

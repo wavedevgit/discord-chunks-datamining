@@ -205,9 +205,9 @@ let P = [
       if (n === e.toUpperCase()) return t.toLowerCase();
     return e
   },
-  x = /shift|meta|ctrl|alt$/;
+  L = /shift|meta|ctrl|alt$/;
 
-function L(e) {
+function x(e) {
   return "meta" === e || "shift" === e || "alt" === e || "ctrl" === e
 }
 
@@ -231,7 +231,7 @@ function M(e) {
     if (null == r) return e.push(h(_({}, i), {
       combo: n
     })), e;
-    if (x.test(r) && L(r)) return t[j(r)] = true, e.map(e => (e[j(r)] = true, e));
+    if (L.test(r) && x(r)) return t[j(r)] = true, e.map(e => (e[j(r)] = true, e));
     {
       let t = C(r, d.Cg.BROWSER);
       return null != t && (i.keyCode = t), e.push(i), e

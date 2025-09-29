@@ -69,7 +69,7 @@ let C = 10,
   P = 5,
   w = 8,
   D = 10,
-  x = e => {
+  L = e => {
     let {
       gameCount: t,
       onClose: n
@@ -100,7 +100,7 @@ let C = 10,
       })]
     })
   },
-  L = e => {
+  x = e => {
     let {
       quest: t,
       game: i,
@@ -209,7 +209,7 @@ function M(e) {
     let e = Math.min(o.length, C);
     return (0, r.jsxs)("div", {
       className: v.container,
-      children: [(0, r.jsx)(x, {
+      children: [(0, r.jsx)(L, {
         gameCount: e,
         onClose: c
       }), (0, r.jsx)("div", {
@@ -225,12 +225,12 @@ function M(e) {
       p.current = e
     },
     className: v.container,
-    children: [(0, r.jsx)(x, {
+    children: [(0, r.jsx)(L, {
       gameCount: I.length,
       onClose: c
     }), (0, r.jsxs)("div", {
       className: v.gameGrid,
-      children: [I.map(e => (0, r.jsx)(L, {
+      children: [I.map(e => (0, r.jsx)(x, {
         quest: t,
         game: e,
         sourceQuestContent: f,

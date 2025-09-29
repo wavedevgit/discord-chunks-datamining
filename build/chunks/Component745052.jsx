@@ -181,8 +181,8 @@ function ei() {
           },
           paddingTop: 24,
           paddingBottom: 24,
-          sectionHeight: q.oi,
-          rowHeight: q.WN,
+          sectionHeight: K.oi,
+          rowHeight: K.WN,
           renderSection: O,
           renderRow: _,
           sections: [n.length],
@@ -199,7 +199,7 @@ function el(e) {
     pageWidth: t,
     onSidebarResize: n
   } = e, i = (0, c.e7)([w.ZP], () => w.ZP.getSidebarState(w.uZ)), l = (0, c.e7)([L.Z], () => L.Z.getChannel(null == i ? true : i.channelId));
-  if (null == i || i.type !== P.tI.VIEW_MESSAGE_REQUEST || null == l || !l.isPrivate()) return null;
+  if (null == i || i.type !== j.tI.VIEW_MESSAGE_REQUEST || null == l || !l.isPrivate()) return null;
   let a = t - Q.R7I;
   return (0, r.jsx)(_.Z, {
     sidebarType: _.y.MessageRequestSidebar,
@@ -265,14 +265,14 @@ function eo(e) {
   let {
     section: t
   } = e;
-  return t === q.pS.SPAM ? (0, r.jsx)(K.Z, {}) : (0, r.jsx)(ei, {})
+  return t === K.pS.SPAM ? (0, r.jsx)(q.Z, {}) : (0, r.jsx)(ei, {})
 }
 let es = (0, Chunk112724.Z)(function(e) {
   let {
     width: t
   } = e, n = (0, H.q)();
   (0, m.ZP)(() => {
-    f.Y(Q.Z5c.MESSAGE_REQUESTS), (0, j.e)("message-requests"), D.default.track(Q.rMx.MESSAGE_REQUESTS_VIEWED, {
+    f.Y(Q.Z5c.MESSAGE_REQUESTS), (0, P.e)("message-requests"), D.default.track(Q.rMx.MESSAGE_REQUESTS_VIEWED, {
       num_message_requests: n
     }), C.Z.increment({
       name: s.V.MESSAGE_REQUEST_VIEW
@@ -283,7 +283,7 @@ let es = (0, Chunk112724.Z)(function(e) {
     [u, d] = i.useState(false),
     h = (0, c.e7)([w.ZP], () => {
       let e = w.ZP.getSidebarState(w.uZ);
-      return null != e && e.type === P.tI.VIEW_MESSAGE_REQUEST ? e : null
+      return null != e && e.type === j.tI.VIEW_MESSAGE_REQUEST ? e : null
     }),
     g = null == h ? true : h.channelId,
     b = null != h,
@@ -293,7 +293,7 @@ let es = (0, Chunk112724.Z)(function(e) {
   i.useEffect(() => {
     null != g && !_ && O && b && ((0, T.Kh)(g), N.Z.closeChannelSidebar(w.uZ))
   }, [g, O, b, _]);
-  let [v, I] = i.useState(q.pS.REQUESTS), A = e => {
+  let [v, I] = i.useState(K.pS.REQUESTS), A = e => {
     I(e)
   };
   return (0, y.Tt)({
@@ -324,11 +324,11 @@ let es = (0, Chunk112724.Z)(function(e) {
             type: "top-pill",
             onItemSelect: A,
             children: [(0, r.jsx)(p.njP.Item, {
-              id: q.pS.REQUESTS,
+              id: K.pS.REQUESTS,
               className: ee.item,
               children: $.intl.string($.t["7RFcXV"])
             }), (0, r.jsx)(p.njP.Item, {
-              id: q.pS.SPAM,
+              id: K.pS.SPAM,
               className: ee.item,
               children: 0 === o ? $.intl.string($.t.ulKXHh) : $.intl.formatToPlainString($.t["5jtrlZ"], {
                 count: o

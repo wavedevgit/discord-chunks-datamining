@@ -37,7 +37,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk325804 = require("./325804.js");
 
-function L(e, t, n) {
+function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -53,7 +53,7 @@ function j(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      L(e, t, n[t])
+      x(e, t, n[t])
     })
   }
   return e
@@ -107,7 +107,7 @@ let B = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
         size: "md",
         color: "currentColor"
       }, e), {
-        className: x.ownerIcon
+        className: L.ownerIcon
       }))
     }) : null
   }),
@@ -125,7 +125,7 @@ let B = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
         tabIndex: false,
         children: (0, r.jsx)(l.$Eu, k(j({}, e), {
           color: l.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
-          className: x.premiumIcon
+          className: L.premiumIcon
         }))
       })
     })
@@ -137,7 +137,7 @@ let B = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
     if (null == t || !t.bot) return null;
     let n = P.Hb.BOT;
     return (0, r.jsx)(p.Z, {
-      className: x.botTag,
+      className: L.botTag,
       type: n,
       verified: t.isVerifiedBot()
     })
@@ -188,7 +188,7 @@ let B = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
         colorString: n,
         colorStrings: i,
         name: a,
-        className: x.name,
+        className: L.name,
         displayNameStylesFont: d,
         animateRoleGradient: u
       }), !o && (0, r.jsx)(O.ZP, {
@@ -196,7 +196,7 @@ let B = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
         userId: null == s ? true : s.id,
         contextGuildId: c,
         disableGuildProfile: true,
-        className: x.clanTag
+        className: L.clanTag
       })]
     })
   }),
@@ -292,7 +292,7 @@ let B = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       isMobile: P,
       premiumSince: w,
       channel: D,
-      guildId: L,
+      guildId: x,
       className: M,
       nameplate: G,
       hideClanTag: B = false,
@@ -315,7 +315,7 @@ let B = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       voiceChannel: eg
     } = (0, f.Z)({
       userId: es,
-      guildId: L
+      guildId: x
     }), {
       voiceActivityStatusEnabled: eE
     } = (0, u.U)({
@@ -328,10 +328,10 @@ let B = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       userId: es,
       size: l.EFr.SIZE_32,
       animateOnHover: !(t || ed),
-      guildId: L
+      guildId: x
     }), eI = null != ea ? ea : {}, {
       onFocus: eT
-    } = eI, eS = U(eI, ["onFocus"]), eA = (0, I.X7)(L, es, null != a ? a : null), [eC, eN] = i.useState(false);
+    } = eI, eS = U(eI, ["onFocus"]), eA = (0, I.X7)(x, es, null != a ? a : null), [eC, eN] = i.useState(false);
     i.useEffect(() => {
       t && eN(false)
     }, [t]);
@@ -343,10 +343,10 @@ let B = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       eD = i.useCallback(() => {
         ef(false)
       }, []),
-      ex = i.useCallback(() => {
+      eL = i.useCallback(() => {
         ep(true), null == eT || eT()
       }, [eT]),
-      eL = i.useCallback(() => {
+      ex = i.useCallback(() => {
         ep(false)
       }, []),
       ej = i.useCallback(e => {
@@ -362,7 +362,7 @@ let B = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       })), [eR, eu, O, g, el]);
     return null == E ? (0, r.jsx)(h.Z, {
       avatarSize: l.EFr.SIZE_32,
-      className: x.placeholder
+      className: L.placeholder
     }) : (0, r.jsx)(l.yRy, {
       targetElementRef: eu,
       renderPopout: eM,
@@ -375,21 +375,21 @@ let B = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       children: () => (0, r.jsx)(m.Z, j({
         ref: eu,
         selected: t,
-        className: o()(x.member, M, {
-          [x.offline]: v === R.Skl.OFFLINE && !t,
-          [x.flatBottom]: eP
+        className: o()(L.member, M, {
+          [L.offline]: v === R.Skl.OFFLINE && !t,
+          [L.flatBottom]: eP
         }),
-        innerClassName: x.memberInner,
+        innerClassName: L.memberInner,
         onClick: X,
         onKeyDown: q,
         onMouseDown: H,
         onContextMenu: Q,
         onMouseEnter: ew,
         onMouseLeave: eD,
-        onBlur: eL,
+        onBlur: ex,
         hovered: ed,
         name: null == _ ? (0, r.jsx)("span", {
-          className: x.username,
+          className: L.username,
           children: (0, r.jsx)(W, {
             colorRoleName: s,
             colorString: null != n ? n : null,
@@ -397,13 +397,13 @@ let B = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
             colorStrings: eA,
             hideClanTag: B,
             user: E,
-            guildId: L,
+            guildId: x,
             isHovering: ed
           })
         }) : (0, r.jsx)(l.ua7, {
           text: _,
           children: e => (0, r.jsx)("span", k(j({}, e), {
-            className: o()(x.username, x.lostPermission),
+            className: o()(L.username, L.lostPermission),
             children: (0, r.jsx)(W, {
               colorRoleName: s,
               colorString: null != n ? n : null,
@@ -411,7 +411,7 @@ let B = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
               colorStrings: eA,
               hideClanTag: B,
               user: E,
-              guildId: L,
+              guildId: x,
               isHovering: ed
             })
           }))
@@ -457,7 +457,7 @@ let B = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
         "aria-posinset": et,
         id: er,
         tabIndex: ei,
-        onFocus: ex,
+        onFocus: eL,
         focusProps: {
           offset: {
             top: 4,

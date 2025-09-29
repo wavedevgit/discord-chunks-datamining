@@ -40,7 +40,7 @@ function C(e) {
   } = e, {
     themeType: P
   } = (0, m.z)(), w = (0, c.q)(R, "UserProfileActivityButtons"), D = (0, f.L)(null != n ? n : true, true), {
-    analyticsLocations: x
+    analyticsLocations: L
   } = (0, d.ZP)(u.Z.USER_PROFILE_ACTIVITY_BUTTONS);
   if ((0, s.Z)(n)) return (0, r.jsx)(O.Z, {
     platformType: S.ABu.XBOX,
@@ -56,8 +56,8 @@ function C(e) {
     activity: n,
     onAction: C
   });
-  let L = P === A.l.MODAL || P === A.l.MODAL_V2;
-  return D || !w || null == R || L ? (0, i.Z)(n, S.xjy.JOIN) || (0, a.Z)(n) ? (0, r.jsx)(b.Z, {
+  let x = P === A.l.MODAL || P === A.l.MODAL_V2;
+  return D || !w || null == R || x ? (0, i.Z)(n, S.xjy.JOIN) || (0, a.Z)(n) ? (0, r.jsx)(b.Z, {
     user: t,
     activity: n,
     onAction: C,
@@ -83,6 +83,6 @@ function C(e) {
     application: R,
     onAction: C,
     onClose: N,
-    analyticsLocations: x
+    analyticsLocations: L
   })
 }

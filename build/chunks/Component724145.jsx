@@ -91,7 +91,7 @@ let B = () => (0, Chunk951288.jsx)("div", {
       intervalType: null == p || null == (t = p.subscription_trial) ? true : t.interval,
       intervalCount: null == p || null == (n = p.subscription_trial) ? true : n.interval_count
     }), b = f ? U.intl.string(U.t.IJI7ys) : (null == p || null == (i = p.subscription_trial) ? true : i.sku_id) === k.Si.TIER_2 ? E : U.intl.string(U.t.mr4K7O), I = e => {
-      e && (null == a || a(), null != o && o(M.L.PRIMARY), null != u && ((0, L.Yk)({
+      e && (null == a || a(), null != o && o(M.L.PRIMARY), null != u && ((0, x.Yk)({
         isPersisted: true,
         themeName: c.Us[u.id],
         analyticsLocations: s
@@ -202,13 +202,13 @@ function H(e) {
       children: (0, r.jsxs)(f.y5t, {
         children: [n ? (0, r.jsx)(B, {}) : (0, r.jsx)(Z, {
           markAsDismissed: t
-        }), s && (0, r.jsx)(x.Z, {}), (0, r.jsx)(f.Ttm, {
+        }), s && (0, r.jsx)(L.Z, {}), (0, r.jsx)(f.Ttm, {
           className: G.editorBody,
-          children: (0, r.jsxs)(L.ZP, {
-            type: L.yH.EDITOR,
-            children: [!c && (0, r.jsx)(L.ZP.Basic, {
+          children: (0, r.jsxs)(x.ZP, {
+            type: x.yH.EDITOR,
+            children: [!c && (0, r.jsx)(x.ZP.Basic, {
               className: G.selectionGroup
-            }), (0, r.jsx)(L.ZP.Gradient, {
+            }), (0, r.jsx)(x.ZP.Gradient, {
               className: G.selectionGroup,
               isCoachmark: n
             })]

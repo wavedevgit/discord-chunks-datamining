@@ -159,8 +159,8 @@ let z = Chunk647438.forwardRef(function(e, t) {
       guildId: I
     }),
     D = (0, _.e7)([b.Z], () => b.Z.roleStyle),
-    x = (0, A._f)(I, E, E.colorStrings),
-    L = (null == (a = E.tags) ? true : a.guild_connections) === null,
+    L = (0, A._f)(I, E, E.colorStrings),
+    x = (null == (a = E.tags) ? true : a.guild_connections) === null,
     j = i.useCallback(e => {
       (0, m.jW)(e, async () => {
         let {
@@ -177,7 +177,7 @@ let z = Chunk647438.forwardRef(function(e, t) {
     V = null != (l = (0, f.wK)(B, .6)) ? l : true,
     H = p.Z.unsafe_rawColors.WHITE_500.css,
     Y = (0, f._i)(B);
-  null != Y && .3 > (0, f.Bd)(Y) && (H = p.Z.unsafe_rawColors.PRIMARY_630.css), c = L ? (0, r.jsx)(y.Z, {
+  null != Y && .3 > (0, f.Bd)(Y) && (H = p.Z.unsafe_rawColors.PRIMARY_630.css), c = x ? (0, r.jsx)(y.Z, {
     className: k.roleFlowerStar,
     iconClassName: d ? k.roleVerifiedIcon : true,
     color: B,
@@ -185,12 +185,12 @@ let z = Chunk647438.forwardRef(function(e, t) {
   }) : "dot" === D ? (0, r.jsx)(h.FhE, {
     className: k.roleDot,
     color: B,
-    colors: x,
+    colors: L,
     background: false,
     tooltip: false
   }) : (0, r.jsx)(h.xko, {
     color: B,
-    colors: x
+    colors: L
   });
   let W = i.useMemo(() => {
     var t;
@@ -293,7 +293,7 @@ function X(e) {
       let {
         closePopout: t
       } = e;
-      return (0, r.jsx)(L.Z, {
+      return (0, r.jsx)(x.Z, {
         guild: n,
         roleStyle: p,
         roleFilter: E,
@@ -351,7 +351,7 @@ function Q(e) {
     [T, A] = i.useState(null),
     N = (0, _.Wu)([P.Z], () => P.Z.getManyRoles(a.id, s).sort(C.Z)),
     R = i.useMemo(() => null != T ? N.slice(0, T) : N, [N, T]),
-    L = s.length - R.length;
+    x = s.length - R.length;
   i.useLayoutEffect(() => {
     if (f) return;
     if ("number" != typeof p) throw Error("Unexpected null width");
@@ -371,7 +371,7 @@ function Q(e) {
   let U = D.default.getCurrentUser();
   l()(null != U, "MemberRolesList: currentUser cannot be undefined");
   let B = !m && w.Z.can(j.Plq.MANAGE_ROLES, a),
-    V = x.e9(a, U.id),
+    V = L.e9(a, U.id),
     K = i.useMemo(() => "roles-".concat((0, c.Z)()), []),
     Q = (0, d.ZP)({
       id: K,
@@ -385,15 +385,15 @@ function Q(e) {
       return (0, r.jsx)(z, {
         className: E,
         role: e,
-        canRemove: (null == (t = e.tags) ? true : t.guild_connections) === null ? n.id === U.id : B && x.r6(a, U.id, V, e),
+        canRemove: (null == (t = e.tags) ? true : t.guild_connections) === null ? n.id === U.id : B && L.r6(a, U.id, V, e),
         onRemove: () => v(e),
         ref: t => O(e.id, t),
         guildId: a.id,
         disableBorderColor: b
       }, e.id)
     });
-  return null != T && 0 !== L ? t = (0, r.jsx)(q, Z(G({}, e), {
-    numRolesHidden: L
+  return null != T && 0 !== x ? t = (0, r.jsx)(q, Z(G({}, e), {
+    numRolesHidden: x
   })) : B && (t = (0, r.jsx)(X, Z(G({}, e), {
     handleAddRole: I
   }))), (0, r.jsx)(u.bG, {

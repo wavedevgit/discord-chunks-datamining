@@ -71,7 +71,7 @@ function w(e, t) {
 
 function D(e, t) {
   if (null == e) return {};
-  var n, r, i = x(e, t);
+  var n, r, i = L(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -79,14 +79,14 @@ function D(e, t) {
   return i
 }
 
-function x(e, t) {
+function L(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let L = 44,
+let x = 44,
   j = {
     keys: ["label"]
   };
@@ -170,8 +170,8 @@ let G = Chunk647438.forwardRef(function(e, t) {
     className: R,
     isDisabled: P = false,
     isProcessing: w = false,
-    maxVisibleItems: x = 7,
-    autoFocus: L = false,
+    maxVisibleItems: L = 7,
+    autoFocus: x = false,
     popoutPosition: G = "bottom",
     popoutWidth: Z,
     filter: H = true,
@@ -210,7 +210,7 @@ let G = Chunk647438.forwardRef(function(e, t) {
   } = (0, p.Gc)(), {
     ref: eI,
     width: eT
-  } = (0, v.ZP)(), eS = i.useRef(null), [eA, eC] = i.useState(null), [eN, eR] = i.useState(false), [eP, ew] = i.useState(null), [eD, ex] = i.useState(false), eL = i.useRef(null), ej = i.useRef(null), {
+  } = (0, v.ZP)(), eS = i.useRef(null), [eA, eC] = i.useState(null), [eN, eR] = i.useState(false), [eP, ew] = i.useState(null), [eD, eL] = i.useState(false), ex = i.useRef(null), ej = i.useRef(null), {
     options: eM,
     loading: ek,
     onQueryChange: eU
@@ -230,20 +230,20 @@ let G = Chunk647438.forwardRef(function(e, t) {
   }));
   let ez = i.useCallback((e, t) => {
       let n = document.querySelector(e),
-        r = eL.current;
+        r = ex.current;
       eC(t), null != r && null != n && r.scrollIntoViewNode({
         node: n
       })
     }, []),
     eq = i.useCallback(() => new Promise(e => {
-      let t = eL.current;
+      let t = ex.current;
       if (null == t) return e();
       t.scrollToTop({
         callback: () => requestAnimationFrame(() => e())
       })
     }), []),
     eX = i.useCallback(() => new Promise(e => {
-      let t = eL.current;
+      let t = ex.current;
       if (null == t) return e();
       t.scrollToBottom({
         callback: () => requestAnimationFrame(() => e())
@@ -266,7 +266,7 @@ let G = Chunk647438.forwardRef(function(e, t) {
     let e = e$.current,
       t = eF.current;
     eN && null != t && !ek && requestAnimationFrame(() => {
-      let n = eL.current,
+      let n = ex.current,
         r = e.indexOf(t);
       null == n || n.scrollToIndex({
         section: 0,
@@ -308,14 +308,14 @@ let G = Chunk647438.forwardRef(function(e, t) {
         null == (o = eS.current) || o.focus()
       }
     } else l(i);
-    eC(null), (!_ || h) && eY(false), ex(false), eo && ew("")
+    eC(null), (!_ || h) && eY(false), eL(false), eo && ew("")
   }, [n, eM, _, h, eo, l, a, eY]);
   i.useLayoutEffect(() => {
-    if (L) {
+    if (x) {
       var e;
       null == (e = eS.current) || e.focus()
     }
-  }, [L]);
+  }, [x]);
   let e1 = i.useCallback(() => {
       ew(""), e0(null), eY(true)
     }, [e0, eY]),
@@ -331,7 +331,7 @@ let G = Chunk647438.forwardRef(function(e, t) {
     }, [eY, eN]),
     e3 = eM;
   eD && null != eP && false !== H && (e3 = "function" == typeof H ? H(eM, eP) : (0, s.Lu)(eM, eP, null != ea ? ea : j)), i.useEffect(() => {
-    let e = eL.current;
+    let e = ex.current;
     null == e || e.scrollToTop()
   }, [eP]), i.useEffect(() => {
     !ek && eD && null !== eP && requestAnimationFrame(() => eQ.focusFirstVisibleItem())
@@ -339,8 +339,8 @@ let G = Chunk647438.forwardRef(function(e, t) {
   let e4 = _ ? K : W,
     e8 = i.useRef(null),
     {
-      focusPreviousItem: e6,
-      focusNextItem: e5
+      focusPreviousItem: e5,
+      focusNextItem: e6
     } = F(e8, eS, eG);
   return (0, r.jsxs)(u.bG, {
     navigator: eQ,
@@ -360,9 +360,9 @@ let G = Chunk647438.forwardRef(function(e, t) {
         return (0, r.jsx)(B, {
           loading: ek,
           multi: !!_,
-          listRef: eL,
+          listRef: ex,
           listId: eV,
-          maxVisibleItems: x,
+          maxVisibleItems: L,
           width: null != Z && "auto" !== Z ? Z : eT,
           selectedValues: eB,
           closePopout: t,
@@ -413,7 +413,7 @@ let G = Chunk647438.forwardRef(function(e, t) {
               },
               onBlur: e => {
                 var t, n, r;
-                (null == (t = ej.current) ? true : t.contains(e.relatedTarget)) || (null == (r = eL.current) || null == (n = r.getScrollerNode()) ? true : n.contains(e.relatedTarget)) || (_ || null == eZ || ew(eZ.label), ex(false), eY(false), null == er || er(e))
+                (null == (t = ej.current) ? true : t.contains(e.relatedTarget)) || (null == (r = ex.current) || null == (n = r.getScrollerNode()) ? true : n.contains(e.relatedTarget)) || (_ || null == eZ || ew(eZ.label), eL(false), eY(false), null == er || er(e))
               },
               children: [(0, r.jsx)(f.tEY, {
                 ringTarget: eI,
@@ -460,7 +460,7 @@ let G = Chunk647438.forwardRef(function(e, t) {
                         null == (t = eS.current) || t.setSelectionRange(0, null != (n = null == eP ? true : eP.length) ? n : 0), null == ei || ei(e)
                       },
                       onChange: e => {
-                        eU(e), null == q || q(e), ew(e), eY(true), ex(true)
+                        eU(e), null == q || q(e), ew(e), eY(true), eL(true)
                       },
                       onKeyDown: u,
                       activeDescendant: eA,
@@ -520,8 +520,8 @@ let G = Chunk647438.forwardRef(function(e, t) {
           let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
           e0(e, t)
         },
-        focusNextItem: e5,
-        focusPreviousItem: e6,
+        focusNextItem: e6,
+        focusPreviousItem: e5,
         renderCustomPill: el,
         customPillContainerClassName: ec
       })
@@ -588,7 +588,7 @@ function B(e) {
         }),
         style: {
           width: l,
-          maxHeight: c * L
+          maxHeight: c * x
         },
         ref: e => {
           var n;
@@ -601,7 +601,7 @@ function B(e) {
         innerRole: "listbox",
         innerAriaMultiselectable: b,
         innerId: p,
-        rowHeight: L,
+        rowHeight: x,
         sections: [s.length],
         sectionHeight: 0,
         renderRow: e => {
@@ -756,7 +756,7 @@ function H(e) {
   return (0, r.jsxs)(f.P3F, w(R({
     tag: "li",
     style: {
-      height: L
+      height: x
     },
     focusProps: {
       enabled: false

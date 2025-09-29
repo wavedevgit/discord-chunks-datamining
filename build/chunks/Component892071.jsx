@@ -52,13 +52,13 @@ function b(e) {
     hardwareAccelerationEnabled: P,
     highContrastMode: w,
     isPopoutWindow: D,
-    children: x
-  } = e, L = window.CSS.supports("selector(::-webkit-scrollbar)"), j = (0, l.e7)([u.Z], () => u.Z.zoom), M = D ? "" : "--custom-zoom: ".concat(j, ";"), k = "font-size: ".concat(y, "%; --saturation-factor: ").concat(T, "; ").concat(M), U = (0, p.Z)("highlight_mana_buttons"), G = (0, p.Z)("highlight_mana_components"), B = (0, p.Z)("highlight_void_toggleables"), Z = (0, p.Z)("highlight_void_buttons"), F = o()((0, d.Z)(), (0, c.QeD)(a), "density-".concat(E), O, {
+    children: L
+  } = e, x = window.CSS.supports("selector(::-webkit-scrollbar)"), j = (0, l.e7)([u.Z], () => u.Z.zoom), M = D ? "" : "--custom-zoom: ".concat(j, ";"), k = "font-size: ".concat(y, "%; --saturation-factor: ").concat(T, "; ").concat(M), U = (0, p.Z)("highlight_mana_buttons"), G = (0, p.Z)("highlight_mana_components"), B = (0, p.Z)("highlight_void_toggleables"), Z = (0, p.Z)("highlight_void_buttons"), F = o()((0, d.Z)(), (0, c.QeD)(a), "density-".concat(E), O, {
     "low-saturation": T <= c.AEw,
     "keyboard-mode": I,
     "decorate-links": R,
-    "no-webkit-scrollbar": !L,
-    "has-webkit-scrollbar": L,
+    "no-webkit-scrollbar": !x,
+    "has-webkit-scrollbar": x,
     "mouse-mode": v,
     "reduce-motion": N,
     "full-motion": !N,
@@ -97,6 +97,6 @@ function b(e) {
     m.ZP.setTrafficLightPosition(e)
   }, [D, H]), (0, r.jsx)(g.Provider, {
     value: V,
-    children: x
+    children: L
   })
 }

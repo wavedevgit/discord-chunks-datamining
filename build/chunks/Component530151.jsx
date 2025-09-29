@@ -470,12 +470,12 @@ let Y = () => (0, Chunk951288.jsx)(B, {
     tooltip: Chunk388032.intl.string(Chunk388032.t.YGm6SU),
     onClick: () => Chunk51025.v4()
   }),
-  K = () => (0, Chunk951288.jsx)(B, {
+  q = () => (0, Chunk951288.jsx)(B, {
     icon: Chunk481060.fpf,
     tooltip: Chunk388032.intl.string(Chunk388032.t.TVAd5O),
     onClick: () => Chunk51025.wO()
   }),
-  q = e => {
+  K = e => {
     let {
       item: t
     } = e;
@@ -528,9 +528,9 @@ let Y = () => (0, Chunk951288.jsx)(B, {
         size: p.zx.Sizes.SMALL,
         className: k.gameActionButton,
         source: R.Sbl.APPLICATION_LIBRARY_UPDATES
-      }) : null : null != e.state ? e.state.type !== R.vxO.UP_TO_DATE && (n = e.index > 0 ? (0, r.jsx)(q, {
+      }) : null : null != e.state ? e.state.type !== R.vxO.UP_TO_DATE && (n = e.index > 0 ? (0, r.jsx)(K, {
         item: e
-      }) : null != t && t.paused ? (0, r.jsx)(Y, {}) : (0, r.jsx)(K, {
+      }) : null != t && t.paused ? (0, r.jsx)(Y, {}) : (0, r.jsx)(q, {
         item: e
       }), i = (0, r.jsx)(Q, {
         item: e

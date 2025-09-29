@@ -182,10 +182,10 @@ class D {
     m(this, "_nextCheck", true), m(this, "_started", true), this._started = false
   }
 }
-let x = new D;
+let L = new D;
 
-function L() {
-  Chunk246946.Z.enabled ? x.start() : x.stop()
+function x() {
+  Chunk246946.Z.enabled ? L.start() : L.stop()
 }
 
 function j(e) {
@@ -195,7 +195,7 @@ function j(e) {
 }
 class M extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    L(), this.waitFor(Chunk553795.Z), this.syncWith([Chunk246946.Z], L)
+    x(), this.waitFor(Chunk553795.Z), this.syncWith([Chunk246946.Z], x)
   }
   getStream() {
     return T
@@ -204,5 +204,5 @@ class M extends(r = Chunk442837.ZP.Store) {
 m(M, "displayName", "ExternalStreamingStore");
 let k = new M(Chunk570140.Z, {
   STREAMING_UPDATE: j,
-  USER_CONNECTIONS_UPDATE: () => x._check()
+  USER_CONNECTIONS_UPDATE: () => L._check()
 })

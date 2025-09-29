@@ -2,7 +2,7 @@
 /** chunk id: 312178, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => Z
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -68,12 +68,12 @@ let E = {
       locked: s,
       pinned: o
     } = e;
-    return (0, i.jsx)(v.Z, {
+    return (0, i.jsx)(b.Z, {
       anchor: n,
       id: t,
       locked: s,
       pinned: o,
-      widget: b.Odu.VOICE,
+      widget: v.Odu.VOICE,
       isPreviewingInGame: r
     })
   },
@@ -95,7 +95,7 @@ let E = {
 };
 class x extends Chunk647438.PureComponent {
   componentDidUpdate(e) {
-    this.props.locked && !e.locked && null != this.state.lastLayoutUpdate && (l.Z.track(b.rMx.OVERLAY_LAYOUT_UPDATED, this.state.lastLayoutUpdate), this.setState({
+    this.props.locked && !e.locked && null != this.state.lastLayoutUpdate && (l.Z.track(v.rMx.OVERLAY_LAYOUT_UPDATED, this.state.lastLayoutUpdate), this.setState({
       lastLayoutUpdate: null
     }))
   }
@@ -139,8 +139,8 @@ class x extends Chunk647438.PureComponent {
       minSize: f
     } = module, g = (0, Chunk434529.w_)(Chunk237997, require), m = (0, Chunk434529.KR)(Chunk451478, require), {
       resizeX: O,
-      resizeY: v,
-      dragAnywhere: b
+      resizeY: b,
+      dragAnywhere: v
     } = exports, _ = (0, Chunk906037.eM)({
       locked: Chunk647438,
       isPreviewingInGame: Chunk442837,
@@ -239,21 +239,21 @@ let S = Chunk442837.ZP.connectStores([Chunk355863.Z, Chunk237997.default], e => 
     widgetConfig: null != n ? d.Z.getWidgetConfig(n.type) : null,
     locked: u.default.isInstanceLocked(),
     isPreviewingInGame: u.default.isPreviewingInGame(),
-    isActiveRegion: null != n && n.type === b.Odu.TEXT && i.has(b.O0n.TEXT_WIDGET)
+    isActiveRegion: null != n && n.type === v.Odu.TEXT && i.has(v.O0n.TEXT_WIDGET)
   }
 })(x);
 
-function Z(e, t) {
+function C(e, t) {
   return (0, i.jsx)(S, {
     widgetId: e,
     layoutSize: t
   }, e)
 }
-let j = Chunk442837.ZP.connectStores([Chunk355863.Z, Chunk451478.Z], () => {
+let Z = Chunk442837.ZP.connectStores([Chunk355863.Z, Chunk451478.Z], () => {
   var e;
   return {
     layout: null != (e = Chunk355863.Z.getLayout(Chunk145597.OVERLAY_LAYOUT_ID)) ? module : true,
     layoutSize: Chunk451478.Z.windowSize(),
-    renderWidget: Z
+    renderWidget: C
   }
 })(Chunk26229.Z)

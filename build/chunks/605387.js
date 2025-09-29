@@ -165,30 +165,30 @@ var t = function() {
         var w = T * o,
           D = T * n;
         if (1 == d)
-          for (var x = 0; x < n; x++) {
-            var P = 255 * (t[w + (x >>> 3)] >>> 7 - (7 & x) & 1),
-              L = 255 * (P != 255 * g);
-            c[D + x] = L << 24 | P << 16 | P << 8 | P
+          for (var L = 0; L < n; L++) {
+            var P = 255 * (t[w + (L >>> 3)] >>> 7 - (7 & L) & 1),
+              x = 255 * (P != 255 * g);
+            c[D + L] = x << 24 | P << 16 | P << 8 | P
           } else if (2 == d)
-            for (var x = 0; x < n; x++) {
-              var P = 85 * (t[w + (x >>> 2)] >>> 6 - ((3 & x) << 1) & 3),
-                L = 255 * (P != 85 * g);
-              c[D + x] = L << 24 | P << 16 | P << 8 | P
+            for (var L = 0; L < n; L++) {
+              var P = 85 * (t[w + (L >>> 2)] >>> 6 - ((3 & L) << 1) & 3),
+                x = 255 * (P != 85 * g);
+              c[D + L] = x << 24 | P << 16 | P << 8 | P
             } else if (4 == d)
-              for (var x = 0; x < n; x++) {
-                var P = 17 * (t[w + (x >>> 1)] >>> 4 - ((1 & x) << 2) & 15),
-                  L = 255 * (P != 17 * g);
-                c[D + x] = L << 24 | P << 16 | P << 8 | P
+              for (var L = 0; L < n; L++) {
+                var P = 17 * (t[w + (L >>> 1)] >>> 4 - ((1 & L) << 2) & 15),
+                  x = 255 * (P != 17 * g);
+                c[D + L] = x << 24 | P << 16 | P << 8 | P
               } else if (8 == d)
-                for (var x = 0; x < n; x++) {
-                  var P = t[w + x],
-                    L = 255 * (P != g);
-                  c[D + x] = L << 24 | P << 16 | P << 8 | P
+                for (var L = 0; L < n; L++) {
+                  var P = t[w + L],
+                    x = 255 * (P != g);
+                  c[D + L] = x << 24 | P << 16 | P << 8 | P
                 } else if (16 == d)
-                  for (var x = 0; x < n; x++) {
-                    var P = t[w + (x << 1)],
-                      L = 255 * (f(t, w + (x << 1)) != g);
-                    c[D + x] = L << 24 | P << 16 | P << 8 | P
+                  for (var L = 0; L < n; L++) {
+                    var P = t[w + (L << 1)],
+                      x = 255 * (f(t, w + (L << 1)) != g);
+                    c[D + L] = x << 24 | P << 16 | P << 8 | P
                   }
       }
     return s
@@ -278,9 +278,9 @@ var t = function() {
         f.tabs[b][R] = C
       } else if ("PLTE" == b) f.tabs[b] = l.readBytes(r, s, E);
       else if ("hIST" == b) {
-        var x = f.tabs.PLTE.length / 3;
+        var L = f.tabs.PLTE.length / 3;
         f.tabs[b] = [];
-        for (var g = 0; g < x; g++) f.tabs[b].push(c(r, s + 2 * g))
+        for (var g = 0; g < L; g++) f.tabs[b].push(c(r, s + 2 * g))
       } else if ("tRNS" == b) 3 == f.ctype ? f.tabs[b] = l.readBytes(r, s, E) : 0 == f.ctype ? f.tabs[b] = c(r, s) : 2 == f.ctype && (f.tabs[b] = [c(r, s), c(r, s + 2), c(r, s + 4)]);
       else if ("gAMA" == b) f.tabs[b] = l.readUint(r, s) / 1e5;
       else if ("sRGB" == b) f.tabs[b] = r[s];
@@ -458,18 +458,18 @@ var t = function() {
             if (D >>> 8 == 0) u[O++] = D;
             else if (256 == D) break;
             else {
-              var x = O + D - 254;
+              var L = O + D - 254;
               if (D > 264) {
-                var L = e.B[D - 257];
-                x = O + (L >>> 3) + i(r, v, 7 & L), v += 7 & L
+                var x = e.B[D - 257];
+                L = O + (x >>> 3) + i(r, v, 7 & x), v += 7 & x
               }
               var j = f[o(r, v) & y];
               v += 15 & j;
               var M = j >>> 4,
                 k = e.h[M],
                 U = (k >>> 4) + a(r, v, 15 & k);
-              for (v += 15 & k, I && (u = s(u, O + 131072)); O < x;) u[O] = u[O++ - U], u[O] = u[O++ - U], u[O] = u[O++ - U], u[O] = u[O++ - U];
-              O = x
+              for (v += 15 & k, I && (u = s(u, O + 131072)); O < L;) u[O] = u[O++ - U], u[O] = u[O++ - U], u[O] = u[O++ - U], u[O] = u[O++ - U];
+              O = L
             }
           }
         }
@@ -769,21 +769,21 @@ var t = function() {
           P = R.img.length,
           w = new Uint8Array(C.inds.buffer, N >> 2, P >> 2);
         S.push(w);
-        var x = new Uint8Array(C.abuf, N, P);
-        d && l(R.img, R.rect.width, R.rect.height, T, x, w), R.img.set(x), N += P
+        var L = new Uint8Array(C.abuf, N, P);
+        d && l(R.img, R.rect.width, R.rect.height, T, L, w), R.img.set(L), N += P
       }
     } else
       for (var m = 0; m < v.length; m++) {
         var R = v[m],
-          L = new Uint32Array(R.img.buffer),
+          x = new Uint32Array(R.img.buffer),
           j = R.rect.width,
-          b = L.length,
+          b = x.length,
           w = new Uint8Array(b);
         S.push(w);
         for (var y = 0; y < b; y++) {
-          var M = L[y];
-          if (0 != y && M == L[y - 1]) w[y] = w[y - 1];
-          else if (y > j && M == L[y - j]) w[y] = w[y - j];
+          var M = x[y];
+          if (0 != y && M == x[y - 1]) w[y] = w[y - 1];
+          else if (y > j && M == x[y - j]) w[y] = w[y - j];
           else {
             var k = I[M];
             if (null == k && (I[M] = k = T.length, T.push(M), T.length >= 300)) break;
@@ -875,14 +875,14 @@ var t = function() {
     }
     if (i)
       for (var l = 0; l < s.length; l++) {
-        var x = s[l];
-        if (1 != x.blend) {
-          var L = x.rect,
+        var L = s[l];
+        if (1 != L.blend) {
+          var x = L.rect,
             j = s[l - 1].rect,
-            M = Math.min(L.x, j.x),
-            k = Math.min(L.y, j.y),
-            U = Math.max(L.x + L.width, j.x + j.width),
-            G = Math.max(L.y + L.height, j.y + j.height),
+            M = Math.min(x.x, j.x),
+            k = Math.min(x.y, j.y),
+            U = Math.max(x.x + x.width, j.x + j.width),
+            G = Math.max(x.y + x.height, j.y + j.height),
             B = {
               x: M,
               y: k,
@@ -895,8 +895,8 @@ var t = function() {
     var Z = 0;
     if (1 != t.length)
       for (var w = 0; w < s.length; w++) {
-        var x = s[w];
-        Z += x.rect.width * x.rect.height
+        var L = s[w];
+        Z += L.rect.width * L.rect.height
       }
     return s
   }

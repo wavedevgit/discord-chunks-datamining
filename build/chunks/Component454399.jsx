@@ -116,7 +116,7 @@ function O(e) {
     } = (0, u.l)(h({
       targetElementRef: I.targetElementRef
     }, v)),
-    x = i.useMemo(() => ({
+    L = i.useMemo(() => ({
       triggerProps: g(h({}, R), {
         "aria-describedby": S,
         ref: I.triggerRef
@@ -139,7 +139,7 @@ function O(e) {
       onTooltipMouseLeave: D
     }), [R, I.triggerRef, I.targetElementRef, S, C, N, A, d, p, m, b, O, c, P, n, o, w, D]);
   return (0, r.jsxs)(y.Provider, {
-    value: x,
+    value: L,
     children: [t, (0, r.jsx)(T, {})]
   })
 }

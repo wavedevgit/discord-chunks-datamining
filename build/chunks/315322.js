@@ -5,7 +5,7 @@ require.d(exports, {
   $z: () => P,
   I1: () => y,
   IZ: () => O,
-  O2: () => x,
+  O2: () => L,
   PJ: () => C,
   Qb: () => b,
   Yc: () => T,
@@ -399,7 +399,7 @@ function D(e) {
   })
 }
 
-function x(e) {
+function L(e) {
   let {
     searchContext: t,
     appContext: n

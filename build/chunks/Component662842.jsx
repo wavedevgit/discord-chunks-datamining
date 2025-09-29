@@ -41,25 +41,25 @@ function D(e) {
   let {
     guild: t,
     isStudyRoomNotice: n = false
-  } = e, l = (0, _.y)(t.id), d = (0, O.k5)(t.id), P = (0, o.e7)([T.Z], () => T.Z.getStageInstanceByChannel(null == l ? true : l.id), [l]), {
+  } = e, l = (0, _.y)(t.id), d = (0, O.k5)(t.id), j = (0, o.e7)([T.Z], () => T.Z.getStageInstanceByChannel(null == l ? true : l.id), [l]), {
     isStageNoticeHidden: D,
     isEventNoticeHidden: M
   } = (0, o.cj)([m.Z], () => ({
     isStageNoticeHidden: m.Z.isLiveChannelNoticeHidden({
-      stageId: null == P ? true : P.id
+      stageId: null == j ? true : j.id
     }),
     isEventNoticeHidden: m.Z.isLiveChannelNoticeHidden({
       eventId: null == d ? true : d.id
     })
-  }), [P, d]), U = null == l ? true : l.id, G = (0, o.Wu)([S.Z], () => [...new Set(S.Z.getMutableParticipants(U, C.pV.SPEAKER).map(e => e.user))], [U]), B = (0, o.e7)([S.Z], () => null != U ? S.Z.getParticipantCount(U, C.pV.AUDIENCE) : 0, [U]), V = (0, o.e7)([j.Z], () => j.Z.can(Z.Plq.CONNECT, l)), H = (0, N.Z)(null == l ? true : l.id), F = null == d ? true : d.creator_id, z = (0, o.e7)([x.default], () => x.default.getUser(F), [F]);
+  }), [j, d]), U = null == l ? true : l.id, G = (0, o.Wu)([S.Z], () => [...new Set(S.Z.getMutableParticipants(U, C.pV.SPEAKER).map(e => e.user))], [U]), B = (0, o.e7)([S.Z], () => null != U ? S.Z.getParticipantCount(U, C.pV.AUDIENCE) : 0, [U]), V = (0, o.e7)([P.Z], () => P.Z.can(Z.Plq.CONNECT, l)), H = (0, N.Z)(null == l ? true : l.id), F = null == d ? true : d.creator_id, z = (0, o.e7)([x.default], () => x.default.getUser(F), [F]);
   i.useEffect(() => {
     null != F && (0, u.PR)(F)
   }, [F]);
   let {
     noticeType: W,
     title: Y,
-    location: K,
-    locationIcon: q,
+    location: q,
+    locationIcon: K,
     canListenIn: Q,
     buttonText: X,
     users: J,
@@ -247,7 +247,7 @@ function D(e) {
     }
   })({
     guildEvent: d,
-    stageInstance: P,
+    stageInstance: j,
     activeChannel: l,
     canConnect: V,
     myRole: H,
@@ -257,7 +257,7 @@ function D(e) {
     isEventNoticeHidden: M,
     isStageNoticeHidden: D,
     isStudyRoomNotice: n
-  }), [d, P, l, V, H, z, G, B, M, D, n]);
+  }), [d, j, l, V, H, z, G, B, M, D, n]);
   return null == W ? null : (0, r.jsxs)("div", {
     className: R.container,
     children: [null != ee ? (0, r.jsx)(c.P3F, {
@@ -293,11 +293,11 @@ function D(e) {
       children: Y
     }), (0, r.jsxs)("div", {
       className: R.locationContainer,
-      children: [q, (0, r.jsx)(c.Text, {
+      children: [K, (0, r.jsx)(c.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
         className: R.location,
-        children: K
+        children: q
       })]
     }), Q || 1 === W ? (0, r.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
@@ -326,7 +326,7 @@ function k(e) {
     user: t,
     guildId: n
   } = e, l = i.useRef(null);
-  return (0, r.jsx)(P.Z, {
+  return (0, r.jsx)(j.Z, {
     targetElementRef: l,
     user: t,
     guildId: n,

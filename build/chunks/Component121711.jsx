@@ -164,7 +164,7 @@ function ef(e) {
   }, []);
   return (0, r.jsx)(X.t.Provider, {
     value: o,
-    children: (0, r.jsxs)(P.Z, {
+    children: (0, r.jsxs)(j.Z, {
       onScroll: n,
       ref: o,
       children: [(0, r.jsx)(N.a, {

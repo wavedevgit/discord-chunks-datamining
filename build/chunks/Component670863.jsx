@@ -112,11 +112,11 @@ function P(e) {
     setDevice: P,
     Icon: w,
     getCanSetDevice: D,
-    getWarningMessage: x,
-    getLocation: L
+    getWarningMessage: L,
+    getLocation: x
   } = R(t), {
     analyticsLocations: j
-  } = (0, d.ZP)(), M = (0, s.e7)([f.Z], () => f.Z.theme), [k, U] = i.useState(u), G = L(a), [B, Z] = (0, E.Ls)(t, {
+  } = (0, d.ZP)(), M = (0, s.e7)([f.Z], () => f.Z.theme), [k, U] = i.useState(u), G = x(a), [B, Z] = (0, E.Ls)(t, {
     location: G
   }), {
     id: F
@@ -127,7 +127,7 @@ function P(e) {
   }), W = (0, r.jsx)(c.R94, {
     type: c.R94.Types.DESCRIPTION,
     className: I.marginTop8,
-    children: x()
+    children: L()
   }), K = i.useCallback(e => {
     if (e === N) U(true), m.default.track(b.rMx.DEVICES_LIST_SHOW_MORE_CLICKED, {
       device_type: t,

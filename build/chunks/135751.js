@@ -8,7 +8,7 @@ var Chunk745200 = require("./745200.js"),
   Chunk82328 = require("./82328.js"),
   Chunk869950 = require("./869950.js");
 
-function i(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -51,6 +51,6 @@ class c {
     return this.sessionId
   }
   constructor(e) {
-    i(this, "isMonitoring", false), i(this, "videoElement", true), i(this, "config", true), i(this, "sessionId", true), i(this, "hlsInstance", true), this.config = e, this.videoElement = e.videoElement, this.sessionId = l.S.generateSessionId(), this.hlsInstance = e.hlsInstance
+    a(this, "isMonitoring", false), a(this, "videoElement", true), a(this, "config", true), a(this, "sessionId", true), a(this, "hlsInstance", true), this.config = e, this.videoElement = e.videoElement, this.sessionId = i.S.generateSessionId(), this.hlsInstance = e.hlsInstance
   }
 }

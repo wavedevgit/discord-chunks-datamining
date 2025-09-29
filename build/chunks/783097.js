@@ -15,13 +15,13 @@ require.d(exports, {
   Y$: () => B,
   Yn: () => H,
   dF: () => U,
-  jD: () => x,
+  jD: () => L,
   lf: () => M,
   pF: () => W,
   sl: () => Z,
   vJ: () => j,
   yJ: () => G,
-  ye: () => L
+  ye: () => x
 }), require("./953529.js"), require("./997841.js"), require("./804061.js"), require("./704826.js"), require("./35282.js"), require("./539854.js"), require("./388685.js");
 var Chunk706527 = require("./706527.js"),
   Chunk668781 = require("./668781.js"),
@@ -113,11 +113,11 @@ function D(e) {
   return w(e) ? e.name : I.intl.string(I.t.UB2gGx)
 }
 
-function x(e) {
+function L(e) {
   return w(e) ? e.description : I.intl.string(I.t.X9fusr)
 }
 
-function L(e) {
+function x(e) {
   var t;
   return w(e) && (0, m.yE)(null != (t = e.flags) ? t : 0, y.udG.EMBEDDED)
 }
@@ -155,7 +155,7 @@ function U(e) {
 }
 
 function G(e) {
-  return w(e) && L(e) ? e instanceof p.ZP ? e.embeddedActivityConfig : e.embedded_activity_config : null
+  return w(e) && x(e) ? e instanceof p.ZP ? e.embeddedActivityConfig : e.embedded_activity_config : null
 }
 
 function B(e) {
@@ -240,7 +240,7 @@ function Y(e) {
 function W(e) {
   let t = [];
   for (let n of e) {
-    let e = n.application_directory_collection_items.filter(e => e.type === r.C.APPLICATION && L(e.application));
+    let e = n.application_directory_collection_items.filter(e => e.type === r.C.APPLICATION && x(e.application));
     0 !== e.length && t.push(C(S({}, n), {
       application_directory_collection_items: e
     }))

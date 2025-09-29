@@ -80,14 +80,14 @@ function N(e, t, n) {
   }({}, i, l)), t.end(n)
 }
 
-function P(e, t, n, r) {
+function j(e, t, n, r) {
   let i = arguments.length > 4 && true !== arguments[4] ? arguments[4] : 0;
   N(e, t, {
     code: i,
     message: r
   }, n)
 }
-class j extends Chunk76238.Z {
+class P extends Chunk76238.Z {
   send(e) {
     (u.default.isLoggingOverlayEvents || e.cmd !== _.Etm.OVERLAY && e.evt !== _.zMe.OVERLAY) && I.info("Socket Emit: ".concat(this.id), (0, h.Z)(e)), null != r && "etf" === this.encoding ? this._socket.send(r.pack(e), {
       binary: true
@@ -138,10 +138,10 @@ class A extends Chunk836560.EventEmitter {
           } = null != (r = d.Z.toURLSafe(null != (e = n.get("callback")) ? e : "")) ? r : {};
           i === location.protocol && l === location.host ? t.setHeader("Location", n.get("callback")) : t.setHeader("Location", v), t.writeHead(301), t.end()
         },
-        s = new x(!l ? o : N.bind(null, e, t), !l ? o : P.bind(null, e, t, 400), Number(n.get("v")), i);
+        s = new x(!l ? o : N.bind(null, e, t), !l ? o : j.bind(null, e, t, 400), Number(n.get("v")), i);
       if (l)(0, m.em)(s, C(e.headers).origin, n.get("client_id")).then(() => {
         let n = "";
-        e.on("data", e => n += e), e.on("error", () => P(e, t, 500, "Internal Server Error")), e.on("end", () => this.handleMessage(s, n))
+        e.on("data", e => n += e), e.on("error", () => j(e, t, 500, "Internal Server Error")), e.on("end", () => this.handleMessage(s, n))
       }).catch(e => {
         let {
           code: t,
@@ -155,14 +155,14 @@ class A extends Chunk836560.EventEmitter {
       }
       return
     }
-    P(e, t, 404, "Not Found")
+    j(e, t, 404, "Not Found")
   }
   handleConnection(e) {
     var t, n;
     let r, i = new URLSearchParams(C(e.upgradeReq).url.split("?")[1]),
       l = null != (t = C(e.upgradeReq).headers.origin) ? t : "";
     try {
-      r = new j(e, Number(i.get("v")), null != (n = i.get("encoding")) ? n : "json")
+      r = new P(e, Number(i.get("v")), null != (n = i.get("encoding")) ? n : "json")
     } catch (t) {
       e.close(t.code, t.message);
       return

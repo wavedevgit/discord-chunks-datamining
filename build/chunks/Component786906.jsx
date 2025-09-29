@@ -2,7 +2,7 @@
 /** chunk id: 786906, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => Z
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -34,7 +34,7 @@ function S(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class Z extends Chunk647438.Component {
+class C extends Chunk647438.Component {
   componentDidUpdate() {
     this.props.locked && this.state.showOpacitySlider && this.setState({
       showOpacitySlider: false
@@ -160,7 +160,7 @@ class Z extends Chunk647438.Component {
   }
 }
 
-function j(e) {
+function Z(e) {
   var {
     channel: t
   } = e, n = function(e, t) {
@@ -178,15 +178,15 @@ function j(e) {
     }
     return r
   }(e, ["channel"]);
-  let r = (0, l.e7)([v.Z, m.Z], () => {
-      let e = v.Z.getVoiceChannelId();
+  let r = (0, l.e7)([b.Z, m.Z], () => {
+      let e = b.Z.getVoiceChannelId();
       return m.Z.getChannel(e)
     }),
     s = (0, l.e7)([y.Z], () => y.Z.getGuild(t.guild_id)),
     o = (0, l.e7)([g.Z], () => g.Z.isCallActive(t.id)),
     a = (0, u.ZP)(t),
     c = (0, l.e7)([O.Z], () => !!t.isDM() && null != t.getRecipientId() && O.Z.isBlocked(t.getRecipientId()));
-  return (0, i.jsx)(Z, function(e) {
+  return (0, i.jsx)(C, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         i = Object.keys(n);

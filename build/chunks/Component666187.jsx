@@ -133,7 +133,7 @@ class T extends(r = Chunk647438.Component) {
       required: C,
       onInvalid: N,
       inputRef: R
-    } = this.props, P = A ? Chunk639317.g : "textarea", w = this.hasError(), D = null != (t = this.props["aria-labelledby"]) ? exports : null == (e = this.context) ? true : module.titleId, x = this.getAriaDescribedBy();
+    } = this.props, P = A ? Chunk639317.g : "textarea", w = this.hasError(), D = null != (t = this.props["aria-labelledby"]) ? exports : null == (e = this.context) ? true : module.titleId, L = this.getAriaDescribedBy();
     return (0, Chunk951288.jsxs)("div", {
       className: s()(Chunk219990.inputWrapper, {
         [Chunk258422.flex]: S
@@ -151,7 +151,7 @@ class T extends(r = Chunk647438.Component) {
               [Chunk258422.resizeable]: b
             }),
             "aria-labelledby": D,
-            "aria-describedby": x,
+            "aria-describedby": L,
             "aria-invalid": w,
             style: {
               paddingRight: this.getPaddingRight()

@@ -172,11 +172,11 @@ function D(e) {
   }
 }
 
-function x(e) {
+function L(e) {
   return null != e ? w(e) : D("#".concat(y.intl.string(y.t.J90oLS)))
 }
 
-function L() {
+function x() {
   return C({
     name: Chunk388032.intl.string(Chunk388032.t.zLZPmp).toLowerCase(),
     type: Chunk981631.d4z.UNKNOWN,
@@ -194,7 +194,7 @@ function j(e, t, n, r, i) {
     messageId: n,
     originalLink: i,
     inContent: null == a || o ? null : [A(a)],
-    content: [L()]
+    content: [x()]
   }
 }
 
@@ -251,7 +251,7 @@ function k(e, t, n, r) {
       inContent: [C(e)],
       content: [R(false)]
     });
-    else return x(r);
+    else return L(r);
   let o = e.guildId === n;
   return v({}, i, M(a, e, o, null != t))
 }

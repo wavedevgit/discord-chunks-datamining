@@ -46,15 +46,15 @@ let I = 1e3,
       wasTier2PremiumBeforePurchase: P,
       selectedSkuId: w,
       purchaseState: D
-    } = (0, m.JL)(), [x, L] = (0, i.useState)(false);
+    } = (0, m.JL)(), [L, x] = (0, i.useState)(false);
     (0, i.useEffect)(() => {
-      D === g.A.PURCHASING && L(true)
+      D === g.A.PURCHASING && x(true)
     }, [D]);
     let j = (0, f.P)(R, !!P, w),
       {
         mediaUrls: M,
         isSuccess: k
-      } = (0, E.Z)(!a && j && x),
+      } = (0, E.Z)(!a && j && L),
       U = (0, i.useRef)(null),
       [G, B] = (0, i.useState)(false),
       [Z, F] = (0, i.useState)(false),

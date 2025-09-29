@@ -428,7 +428,7 @@ function N(e) {
     minSize: a,
     defaultSize: o
   } = e;
-  return C(t, (e, t) => L({
+  return C(t, (e, t) => x({
     widget: e,
     anchor: n,
     size: r,
@@ -474,7 +474,7 @@ function D(e, t) {
   })
 }
 
-function x(e) {
+function L(e) {
   let {
     widgetId: t,
     pinned: n
@@ -484,7 +484,7 @@ function x(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   let {
     widget: t,
     anchor: n,
@@ -835,7 +835,7 @@ g(W, "displayName", "LayoutStore"), g(W, "persistKey", "LayoutStore"), g(W, "mig
 }]);
 let K = new W(Chunk570140.Z, {
   LAYOUT_CREATE: S,
-  LAYOUT_SET_PINNED: x,
+  LAYOUT_SET_PINNED: L,
   LAYOUT_UPDATE_WIDGET: N,
   LAYOUT_SET_TOP_WIDGET: R,
   LAYOUT_DELETE_WIDGET: k,

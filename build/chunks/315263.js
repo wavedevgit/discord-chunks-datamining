@@ -43,7 +43,7 @@ async function M(e, t) {
     type: "INVITE_MODAL_OPEN",
     invite: e,
     code: t,
-    context: L.IlC.APP
+    context: x.IlC.APP
   })
 }
 async function k(e) {
@@ -56,7 +56,7 @@ async function k(e) {
     n = t
   }
   if (null == n) return;
-  if (n.state === L.r2o.EXPIRED || n.state === L.r2o.BANNED || n.state === L.r2o.ERROR) return void await M(n, e.code);
+  if (n.state === x.r2o.EXPIRED || n.state === x.r2o.BANNED || n.state === x.r2o.ERROR) return void await M(n, e.code);
   let r = P.ZP.getFlattenedGuildIds(),
     i = null == n || null == (t = n.guild) ? true : t.id;
   null != i && r.includes(i) ? s.ZP.transitionToInviteSync(n) : await M(n, e.code)
@@ -88,7 +88,7 @@ function G(e) {
       applicationId: true,
       skuId: true
     }, c = null != (a = R.Z.getGuildId()) ? a : true;
-    return null == s ? (0, x.Z)(e) : (w.default.track(L.rMx.APP_DIRECTORY_PROFILE_EMBED_URL_CLICKED, {
+    return null == s ? (0, L.Z)(e) : (w.default.track(x.rMx.APP_DIRECTORY_PROFILE_EMBED_URL_CLICKED, {
       application_id: s,
       device_platform: r.tq ? "mobile_web" : "desktop_web",
       guild_id: c,
@@ -221,7 +221,7 @@ function G(e) {
       getOAuth2AuthorizeProps: t,
       openOAuth2ModalWithCreateGuildModal: r
     } = n(69580), i = t(e);
-    if (null != i) return e => (null == e || e.preventDefault(), null != C && C.type === m.g.APP_OAUTH2_LINK && f.ZP.trackWithMetadata(L.rMx.APP_OAUTH2_LINK_EMBED_URL_CLICKED, {
+    if (null != i) return e => (null == e || e.preventDefault(), null != C && C.type === m.g.APP_OAUTH2_LINK && f.ZP.trackWithMetadata(x.rMx.APP_OAUTH2_LINK_EMBED_URL_CLICKED, {
       application_id: i.clientId
     }), r(i), true)
   }
@@ -229,7 +229,7 @@ function G(e) {
   if (null != G && F && null != V) return e => {
     null == e || e.preventDefault();
     let t = R.Z.getGuildId();
-    null != V.guildId && "" !== V.guildId && V.guildId !== t && (0, v.Z)(L.Z5c.CHANNEL(V.guildId));
+    null != V.guildId && "" !== V.guildId && V.guildId !== t && (0, v.Z)(x.Z5c.CHANNEL(V.guildId));
     let n = b.ZP.getGuildScheduledEvent(V.guildEventId);
     return null != n && (0, E.bO)({
       eventId: n.id

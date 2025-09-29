@@ -145,32 +145,32 @@ function m(e) {
     T || S(true)
   }, [T]), D = r.useCallback(e => {
     e.target !== e.currentTarget && !e.currentTarget.contains(e.relatedTarget) && T && S(false)
-  }, [T]), x = r.useCallback(() => {
+  }, [T]), L = r.useCallback(() => {
     O({
       type: i.B.SET_FOCUS_PATH,
       path: []
     }), S(false)
-  }, []), L = r.useCallback(e => e.every((e, t) => I[t] === e), [I]), j = r.useCallback(() => ({
+  }, []), x = r.useCallback(e => e.every((e, t) => I[t] === e), [I]), j = r.useCallback(() => ({
     role: "menu",
     id: t,
     tabIndex: false,
     onKeyDown: P,
     onFocus: w,
     onBlur: D,
-    onMouseLeave: x,
+    onMouseLeave: L,
     "aria-activedescendant": I.length > 0 ? (0, o.qR)(t, I.join(d)) : true
-  }), [t, P, w, D, x, I]), M = r.useCallback(e => {
+  }), [t, P, w, D, L, I]), M = r.useCallback(e => {
     let {
       path: n
     } = e;
     return {
       role: "menu",
       tabIndex: false,
-      "aria-activedescendant": L(n) ? (0, o.qR)(t, I.join(d)) : true,
+      "aria-activedescendant": x(n) ? (0, o.qR)(t, I.join(d)) : true,
       focusIndex: y.focusIndex,
       isUsingKeyboardNavigation: A
     }
-  }, [t, I, L, y.focusIndex, A]), k = r.useCallback(e => {
+  }, [t, I, x, y.focusIndex, A]), k = r.useCallback(e => {
     let {
       path: n,
       hasSubmenu: r = false,
@@ -178,7 +178,7 @@ function m(e) {
       role: a = "menuitem"
     } = e, s = n.join(d);
     return u(l({}, r ? {
-      "aria-expanded": L(n),
+      "aria-expanded": x(n),
       "aria-haspopup": true
     } : {}), {
       role: a,
@@ -187,13 +187,13 @@ function m(e) {
       onFocus: i ? N.get(s) : () => {},
       onMouseEnter: i ? R.get(s) : () => {}
     })
-  }, [t, L, N, R]);
+  }, [t, x, N, R]);
   return r.useMemo(() => ({
     dispatch: v,
     getContainerProps: j,
     getSubmenuProps: M,
     getItemProps: k,
-    isFocused: L,
+    isFocused: x,
     isUsingKeyboardNavigation: A
-  }), [v, j, M, k, L, A])
+  }), [v, j, M, k, x, A])
 }

@@ -94,7 +94,7 @@ function v(e) {
       action: "UNIGNORE",
       analyticsLocations: S
     })
-  }), x = (0, h.Z)({
+  }), L = (0, h.Z)({
     user: t,
     guildId: n,
     location: A,
@@ -103,7 +103,7 @@ function v(e) {
       action: "REPORT",
       analyticsLocations: S
     })
-  }), L = (0, d.Z)({
+  }), x = (0, d.Z)({
     id: null == R ? true : R.id,
     label: b.intl.string(b.t["+NP/b2"]),
     onSuccess: () => T({
@@ -112,7 +112,7 @@ function v(e) {
     })
   }), j = [
     [y], C ? [P] : [],
-    [D, w, x],
+    [D, w, L],
     [(0, u.Z)({
       application: R,
       label: b.intl.string(b.t.WqhZsr),
@@ -120,7 +120,7 @@ function v(e) {
         action: "COPY_APP_LINK",
         analyticsLocations: S
       })
-    }), L]
+    }), x]
   ];
   return j.every(e => e.every(e => null == e)) ? null : (0, r.jsx)(o.yRy, {
     targetElementRef: I,

@@ -74,16 +74,16 @@ let j = e => {
     location: "SubscriberNitroHome"
   });
   return null == Q ? (0, r.jsx)("div", {
-    className: o()(x.container, x.loading),
+    className: o()(L.container, L.loading),
     children: (0, r.jsx)(c.$jN, {})
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(c.yWw, {
-      className: x.mainPageScroller,
+      className: L.mainPageScroller,
       ref: n,
       children: [(0, r.jsx)(c.$1m, {
         color: "nitro-pink",
-        className: o()(x.container, x.responsiveContainer, {
-          [x.hiddenGradient]: !$
+        className: o()(L.container, L.responsiveContainer, {
+          [L.hiddenGradient]: !$
         }),
         children: (0, r.jsxs)(f.Gt, {
           value: z,
@@ -94,19 +94,19 @@ let j = e => {
             active: true,
             children: (0, r.jsx)(A.Z, {
               buttonVisibilityRef: B,
-              className: x.heroHeading,
+              className: L.heroHeading,
               enablePremiumBrandRefresh: $,
               userDiscountOffer: G,
               discountedPrice: W
             })
           }), (0, r.jsx)(T.Z, {
             variant: C.gM.WHATS_NEW,
-            className: x.whatsNew,
+            className: L.whatsNew,
             noBackground: true,
             leftAlignHeaders: true,
             shouldAutoScroll: J
           }), (0, r.jsx)(T.Z, {
-            className: x.perksDiscoverability,
+            className: L.perksDiscoverability,
             variant: C.gM.PERKS_DISCOVERABILITY,
             noBackground: true,
             leftAlignHeaders: true,
@@ -115,14 +115,14 @@ let j = e => {
               previousComponent: C.MQ.HOME
             })
           }), (0, r.jsx)(S.Z, {
-            className: x.giftNitro,
+            className: L.giftNitro,
             location: d.Z.PREMIUM_MARKETING_GIFT_SECTION,
             analyticsLocation: {
               page: w.ZY5.NITRO_HOME,
               section: w.jXE.GIFT_BANNER
             }
           }), (0, r.jsx)("div", {
-            className: x.footerSpacing
+            className: L.footerSpacing
           }), (0, r.jsx)(l.$, {
             innerRef: a,
             onChange: e => {
@@ -132,11 +132,11 @@ let j = e => {
             },
             children: (0, r.jsx)("div", {
               ref: a,
-              className: x.bottomOfPageVisibilitySensor
+              className: L.bottomOfPageVisibilitySensor
             })
           }), (0, r.jsx)("img", {
-            src: L,
-            className: x.bottomIllustration,
+            src: x,
+            className: L.bottomIllustration,
             width: 112,
             height: 85,
             alt: D.intl.string(D.t.X4IxWF)

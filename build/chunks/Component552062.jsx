@@ -62,7 +62,7 @@ function O(e, t, n) {
   }
 }
 
-function v(e) {
+function b(e) {
   let {
     top: t,
     left: n,
@@ -77,7 +77,7 @@ function v(e) {
   }
 }
 
-function b(e) {
+function v(e) {
   return "auto" === e || null == e ? "auto" : "".concat(e, "px")
 }
 
@@ -126,7 +126,7 @@ class x extends(i = Chunk647438.Component) {
     return !(0, c.Z)(t, this.state) || !(0, c.Z)(e, this.props, ["anchor", "size", "minSize", "container"]) || !(0, c.Z)(e.anchor, this.props.anchor) || !(0, c.Z)(e.size, this.props.size) || !(0, c.Z)(e.minSize, this.props.minSize) || !(0, c.Z)(e.container, this.props.container)
   }
   componentDidUpdate(e, t) {
-    null == t.operation && ((0, c.Z)(this.props.anchor, e.anchor) || this.setDOMPositions(v(this.props.anchor)), (0, c.Z)(this.props.size, e.size) || this.setDOMSize(O(this.props.size, this.props.minSize.width, this.props.minSize.height)))
+    null == t.operation && ((0, c.Z)(this.props.anchor, e.anchor) || this.setDOMPositions(b(this.props.anchor)), (0, c.Z)(this.props.size, e.size) || this.setDOMSize(O(this.props.size, this.props.minSize.width, this.props.minSize.height)))
   }
   componentWillUnmount() {
     this.handleOperationEnd()
@@ -168,13 +168,13 @@ class x extends(i = Chunk647438.Component) {
     let {
       width: g,
       height: m
-    } = _(n, this.size), y = t - p, O = e - h, v = (0, d.ou)((0, d.PY)({
+    } = _(n, this.size), y = t - p, O = e - h, b = (0, d.ou)((0, d.PY)({
       top: y,
       left: O,
       bottom: true,
       right: true
-    }, r, s, g, m)), b = u ? (0, d.R)(v) : E("RESIZE_SOUTH_EAST", v);
-    this.setDOMPositions(b), f || (null != a && a(), this.setState({
+    }, r, s, g, m)), v = u ? (0, d.R)(b) : E("RESIZE_SOUTH_EAST", b);
+    this.setDOMPositions(v), f || (null != a && a(), this.setState({
       operationStarted: true
     })), null != c && c(i, "MOVE", this.anchor, this.size)
   }
@@ -247,7 +247,7 @@ class x extends(i = Chunk647438.Component) {
       left: n,
       bottom: i,
       right: r
-    }, null != s && (s.style.top = b(t), s.style.bottom = b(i), s.style.left = b(n), s.style.right = b(r))
+    }, null != s && (s.style.top = v(t), s.style.bottom = v(i), s.style.left = v(n), s.style.right = v(r))
   }
   setDOMSize(e) {
     let {
@@ -259,7 +259,7 @@ class x extends(i = Chunk647438.Component) {
     t = "auto" === this.size.width ? "auto" : t, n = "auto" === this.size.height ? "auto" : n, this.size = {
       width: t,
       height: n
-    }, null != i && (i.style.width = b(t), i.style.height = b(n))
+    }, null != i && (i.style.width = v(t), i.style.height = v(n))
   }
   renderResizeHandles() {
     let {
@@ -471,7 +471,7 @@ class x extends(i = Chunk647438.Component) {
         operation: null,
         operationStarted: false
       }, r)
-    }), this.anchor = v(e.anchor), this.size = O(e.size, e.minSize.width, e.minSize.height)
+    }), this.anchor = b(e.anchor), this.size = O(e.size, e.minSize.width, e.minSize.height)
   }
 }
 p(x, "Operations", m), p(x, "defaultProps", {
