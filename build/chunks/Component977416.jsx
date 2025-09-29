@@ -69,12 +69,12 @@ function y(e) {
     }
     return i
   }(e, ["gameName", "onClick"]);
-  let o = null != t ? t : g.intl.string(g.t.GIWFlJ),
-    c = g.intl.formatToPlainString(g.t["3mb1s7"], {
+  let o = null != t ? t : f.intl.string(f.t.GIWFlJ),
+    c = f.intl.formatToPlainString(f.t["3mb1s7"], {
       game: o
     }),
-    f = (0, a.e7)([s.Z], () => s.Z.suggestedFetchIsLoading);
-  return (0, u.kO)(i.applicationId) || f ? (0, r.jsx)("div", {
+    g = (0, a.e7)([s.Z], () => s.Z.suggestedFetchIsLoading);
+  return (0, u.kO)(i.applicationId) || g ? (0, r.jsx)("div", {
     className: p.loadingCover
   }) : (0, r.jsx)(l.ua7, {
     text: c,
@@ -111,7 +111,7 @@ function j(e) {
       className: b.header,
       children: [(0, r.jsx)(l.P3F, {
         className: b.dismissButton,
-        "aria-label": g.intl.string(g.t["pUR+3t"]),
+        "aria-label": f.intl.string(f.t["pUR+3t"]),
         onClick: i,
         children: (0, r.jsx)(l.Dio, {
           size: "sm",
@@ -121,9 +121,9 @@ function j(e) {
         id: u,
         variant: "text-xs/medium",
         color: "text-secondary",
-        children: g.intl.string(g.t.zMUr6e)
+        children: f.intl.string(f.t.zMUr6e)
       })]
-    }), (0, r.jsx)(f.Z, {
+    }), (0, r.jsx)(g.Z, {
       games: n,
       renderGame: e => {
         let {

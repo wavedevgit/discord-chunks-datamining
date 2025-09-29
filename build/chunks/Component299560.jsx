@@ -64,50 +64,51 @@ let j = {
 };
 
 function O(e) {
+  var t;
   let {
-    widgetType: t,
-    onAddWidget: r,
-    size: l = "default",
-    loading: c = false,
-    trackUserProfileEditAction: u
+    widgetType: r,
+    onAddWidget: l,
+    size: c = "default",
+    loading: u = false,
+    trackUserProfileEditAction: b
   } = e, {
-    placeholder: b,
-    getAriaLabel: O
-  } = j[t], x = "small" === l, P = (0, d.SM)().data, S = i.useMemo(() => {
-    switch (t) {
+    placeholder: O,
+    getAriaLabel: x
+  } = j[r], P = "small" === c, S = null == (t = (0, d.uV)().data) ? true : t.map(e => e.application_id), w = i.useMemo(() => {
+    switch (r) {
       case s.l.CURRENT_GAMES:
       case s.l.FAVORITE_GAMES:
       case s.l.PLAYED_GAMES:
       case s.l.WANT_TO_PLAY_GAMES:
         return new g.zy({
-          type: t,
+          type: r,
           games: []
         });
       case s.l.APPLICATION:
-        let e = null == P ? true : P[0];
+        let e = null == S ? true : S[0];
         if (null == e) return null;
         return new f.q({
-          type: t,
+          type: r,
           applicationId: e
         })
     }
-  }, [t, P]), w = i.useCallback(() => {
-    c || null == S || ((0, h.qH)(t, S), u({
+  }, [r, S]), I = i.useCallback(() => {
+    u || null == w || ((0, h.qH)(r, w), b({
       action: "WIDGET_ADDED",
-      widgetEdited: t
-    }), (0, p.L$)(v.qb.WIDGET_ADDED), null == r || r())
-  }, [c, t, S, u, r]);
-  return null == S ? null : (0, n.jsxs)(o.P3F, {
-    className: a()(y.addButtonContainer, x && y.sizeSmall, c && y.loading),
-    onClick: w,
-    "aria-label": O(S),
-    "aria-busy": c,
-    children: ["details" === b.variant ? (0, n.jsx)(m.i, {
-      applicationId: b.applicationId,
-      size: l
+      widgetEdited: r
+    }), (0, p.L$)(v.qb.WIDGET_ADDED), null == l || l())
+  }, [u, r, w, b, l]);
+  return null == w ? null : (0, n.jsxs)(o.P3F, {
+    className: a()(y.addButtonContainer, P && y.sizeSmall, u && y.loading),
+    onClick: I,
+    "aria-label": x(w),
+    "aria-busy": u,
+    children: ["details" === O.variant ? (0, n.jsx)(m.i, {
+      applicationId: O.applicationId,
+      size: c
     }) : (0, n.jsx)(m.c, {
-      applicationIds: b.applicationIds,
-      size: l
+      applicationIds: O.applicationIds,
+      size: c
     }), (0, n.jsxs)("div", {
       className: y.overlay,
       children: [(0, n.jsx)(o.oFk, {
@@ -117,7 +118,7 @@ function O(e) {
       }), (0, n.jsx)(o.Text, {
         variant: "text-md/medium",
         color: "header-primary",
-        children: (0, h.mR)(S)
+        children: (0, h.mR)(w)
       })]
     })]
   })

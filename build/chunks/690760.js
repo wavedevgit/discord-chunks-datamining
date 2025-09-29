@@ -9,13 +9,14 @@ var Chunk647438 = require("./647438.js"),
   Chunk350327 = require("./350327.js");
 
 function a(e) {
-  let t = (0, l.SM)().data,
-    r = n.useMemo(() => {
-      let r = new Set;
-      for (let t of e) r.add(t.applicationId);
-      if (null != t)
-        for (let e of t) r.add(e);
-      return [...r]
-    }, [t, e]);
-  return (0, i.Z)(r)
+  var t;
+  let r = null == (t = (0, l.uV)().data) ? true : t.map(e => e.application_id),
+    a = n.useMemo(() => {
+      let t = new Set;
+      for (let r of e) t.add(r.applicationId);
+      if (null != r)
+        for (let e of r) t.add(e);
+      return [...t]
+    }, [r, e]);
+  return (0, i.Z)(a)
 }

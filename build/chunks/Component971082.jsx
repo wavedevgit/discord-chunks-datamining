@@ -19,7 +19,7 @@ function u(e) {
     className: i,
     size: u = a.EFr.SIZE_16,
     maxUsers: d = 4
-  } = e, f = function(e, t) {
+  } = e, g = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -34,7 +34,7 @@ function u(e) {
     }
     return i
   }(e, ["label", "visuallyHideLabel", "className", "size", "maxUsers"]);
-  let g = (0, l.Dt)();
+  let f = (0, l.Dt)();
   return (0, r.jsxs)("div", {
     className: o()(i, s.container),
     children: [(0, r.jsx)(c.Z, function(e) {
@@ -55,17 +55,17 @@ function u(e) {
       }
       return e
     }({
-      "aria-labelledby": g,
+      "aria-labelledby": f,
       overflowCountClassName: s.overflowButton,
       size: u,
       maxUsers: d
-    }, f)), n ? (0, r.jsx)(a.nn4, {
-      id: g,
+    }, g)), n ? (0, r.jsx)(a.nn4, {
+      id: f,
       children: t
     }) : (0, r.jsx)(a.Text, {
       variant: "text-xs/normal",
       color: "text-secondary",
-      id: g,
+      id: f,
       children: t
     })]
   })

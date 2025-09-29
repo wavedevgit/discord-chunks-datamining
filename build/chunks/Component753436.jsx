@@ -26,23 +26,23 @@ function p(e) {
     disableInteraction: m = false
   } = e, O = (0, d.Z)(t.applicationId).length > 0, y = a.default.getCurrentUser(), j = (null == y ? true : y.id) === n;
   return (0, l.kO)(t.applicationId) ? (0, r.jsx)("div", {
-    className: f.loadingCover
+    className: g.loadingCover
   }) : (0, r.jsxs)("div", {
-    className: g.container,
+    className: f.container,
     children: [(0, r.jsx)(c.Z, {
       imageSrc: t.imageSrc,
       gameName: t.gameName,
       applicationId: t.applicationId,
       userId: n,
       disableInteraction: m,
-      className: o()(O ? g.socialProofBackdrop : true, (null == t ? true : t.imageSrc) == null || m ? true : f.hoverActiveEffect)
+      className: o()(O ? f.socialProofBackdrop : true, (null == t ? true : t.imageSrc) == null || m ? true : g.hoverActiveEffect)
     }), !m && j && (0, r.jsx)(s.Z, {
       game: t,
       widgetType: i,
-      className: g.removeGameButton,
+      className: f.removeGameButton,
       iconSize: "xs"
     }), !m && (0, r.jsx)(u.Z, {
-      className: g.socialProof,
+      className: f.socialProof,
       applicationId: t.applicationId,
       guildId: p,
       channelId: b,

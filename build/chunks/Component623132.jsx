@@ -79,7 +79,7 @@ function S(e) {
     }
     return i
   }(e, ["applicationId", "userId", "gameName"]);
-  let a = (0, f.Z)({
+  let a = (0, g.Z)({
     location: "UserProfileWidgetGameDetailsCard",
     applicationId: t,
     source: d.m1.UserProfile,
@@ -157,8 +157,8 @@ function A(e) {
     guildId: o,
     channelId: c,
     widgetType: d,
-    applicationId: f
-  } = e, g = (0, u.Dt)(), p = (0, u.Dt)(), {
+    applicationId: g
+  } = e, f = (0, u.Dt)(), p = (0, u.Dt)(), {
     trackUserProfileEditAction: O
   } = (0, b.KZ)(), [y, j] = i.useState("idle"), [h, v] = i.useState(null != t ? t : ""), x = i.useRef(null), P = i.useRef(null), I = _.intl.string(_.t.xKSfBQ), E = null != t && "" !== t.trim(), S = i.useCallback(() => {
     O({
@@ -168,12 +168,12 @@ function A(e) {
   }, [d, O]), N = i.useCallback(() => {
     let e = h.trim(),
       n = e !== (null != t ? t : "").trim();
-    (0, m.Bu)(d, f, "" !== e ? e : true), j("completed"), n && O({
+    (0, m.Bu)(d, g, "" !== e ? e : true), j("completed"), n && O({
       action: "COMMENTARY_EDITED",
       widgetEdited: d,
-      gameId: f
+      gameId: g
     })
-  }, [d, f, h, t, O]), A = i.useCallback(e => {
+  }, [d, g, h, t, O]), A = i.useCallback(e => {
     v(e)
   }, []);
   return i.useEffect(() => {
@@ -187,10 +187,10 @@ function A(e) {
     className: w.textAreaContainer,
     children: [(0, r.jsx)(s.nn4, {
       tag: "label",
-      htmlFor: g,
+      htmlFor: f,
       children: _.intl.string(_.t.JxKXeX)
     }), (0, r.jsx)(s.Kx8, {
-      id: g,
+      id: f,
       value: h,
       placeholder: I,
       onChange: A,
@@ -244,20 +244,20 @@ function C(e) {
   } = e, {
     gameName: u = _.intl.string(_.t.GIWFlJ),
     imageSrc: d,
-    applicationId: f,
+    applicationId: g,
     comment: p,
     tags: b
   } = o, m = {
     variant: "heading-sm/medium",
     color: "text-default"
-  }, T = g.default.getCurrentUser(), D = (null == T ? true : T.id) === t.id, C = !l && D && a === c.l.FAVORITE_GAMES;
-  return (0, O.kO)(f) ? (0, r.jsx)(j.i, {}) : (0, r.jsxs)("div", {
+  }, T = f.default.getCurrentUser(), D = (null == T ? true : T.id) === t.id, C = !l && D && a === c.l.FAVORITE_GAMES;
+  return (0, O.kO)(g) ? (0, r.jsx)(j.i, {}) : (0, r.jsxs)("div", {
     className: w.card,
     children: [(0, r.jsx)(y.Z, {
       className: null == d || l ? true : P.hoverActiveEffect,
       imageSrc: d,
       gameName: u,
-      applicationId: f,
+      applicationId: g,
       userId: t.id,
       disableInteraction: l,
       hideTooltip: true
@@ -266,7 +266,7 @@ function C(e) {
       children: [l ? (0, r.jsx)(s.X6q, E(I({}, m), {
         children: u
       })) : (0, r.jsx)(S, I({
-        applicationId: f,
+        applicationId: g,
         userId: t.id,
         gameName: u
       }, m)), C ? (0, r.jsx)(A, {
@@ -275,7 +275,7 @@ function C(e) {
         guildId: n,
         channelId: i,
         widgetType: a,
-        applicationId: f
+        applicationId: g
       }) : (0, r.jsx)(N, {
         text: p,
         user: t,
@@ -285,12 +285,12 @@ function C(e) {
         tags: b,
         isCurrentUser: D,
         widgetType: a,
-        applicationId: f,
+        applicationId: g,
         disableInteraction: l,
         className: w.tags
       }), !l && (0, r.jsx)(x.Z, {
         className: w.socialProof,
-        applicationId: f,
+        applicationId: g,
         guildId: n,
         channelId: i
       })]

@@ -27,7 +27,7 @@ function O(e) {
     applicationId: s,
     className: u,
     disableInteraction: O = false
-  } = e, x = null != (t = null == n ? true : n.filter(e => null != (0, p.zK)(e))) ? t : [], _ = x.length > 0, P = l.qH, w = o && !O && (0, f.M8)(c) && x.length < P, {
+  } = e, x = null != (t = null == n ? true : n.filter(e => null != (0, p.zK)(e))) ? t : [], _ = x.length > 0, P = l.qH, w = o && !O && (0, g.M8)(c) && x.length < P, {
     trackUserProfileAction: I
   } = (0, d.KZ)(), E = (0, i.useRef)(new Map), S = (0, i.useRef)(null), T = (0, i.useRef)(null), [D, N] = (0, i.useState)(0), [A, C] = (0, i.useState)(false), k = v(S, T, x, E, N);
   if ((0, i.useEffect)(() => (k(), window.addEventListener("resize", k), () => {
@@ -66,7 +66,7 @@ function O(e) {
         ref: S,
         disableInteraction: O
       }))]
-    }), w && (0, r.jsx)(g.Z, {
+    }), w && (0, r.jsx)(f.Z, {
       tags: n,
       widgetType: c,
       applicationId: s,
@@ -87,10 +87,10 @@ let y = e => {
     } = (0, d.KZ)(), u = (0, p.zK)(t);
     if (null == u) return null;
     let {
-      getText: g,
+      getText: f,
       icon: O
     } = u, y = () => {
-      (0, f.RZ)(o, i, t), c({
+      (0, g.RZ)(o, i, t), c({
         action: "TAG_REMOVED",
         widgetEdited: o,
         gameId: i
@@ -104,7 +104,7 @@ let y = e => {
       }), (0, r.jsx)(s.Text, {
         variant: "text-xxs/medium",
         color: "text-secondary",
-        children: g()
+        children: f()
       }), n && !a && (0, r.jsx)(s.ua7, {
         text: b.intl.string(b.t.Otv9fH),
         children: e => {
@@ -130,7 +130,7 @@ let y = e => {
             onClick: y,
             className: m.removeButton,
             "aria-label": b.intl.formatToPlainString(b.t.GCn1nZ, {
-              tag: g()
+              tag: f()
             }),
             children: (0, r.jsx)(s.Dio, {
               size: "xxs",
@@ -206,23 +206,23 @@ let y = e => {
     let s = null != (l = null == (i = e.current) ? true : i.getBoundingClientRect().width) ? l : 0,
       u = null != (c = null == (a = t.current) ? true : a.getBoundingClientRect().width) ? c : 0,
       d = u > 0 ? 8 : 4,
-      f = 0,
       g = 0,
+      f = 0,
       p = r.current;
     for (let e = 0; e < n.length; e++) {
       let t = p.get(n[e]);
       if (null != t) {
-        if ((g += t.offsetWidth + 4) > 296) break;
-        f++
+        if ((f += t.offsetWidth + 4) > 296) break;
+        g++
       }
     }
-    g = 0;
-    for (let e = f; e < n.length; e++) {
+    f = 0;
+    for (let e = g; e < n.length; e++) {
       let t = p.get(n[e]);
       if (null != t) {
-        if ((g += t.offsetWidth + 4) > 296 - s - u - d) break;
-        f++
+        if ((f += t.offsetWidth + 4) > 296 - s - u - d) break;
+        g++
       }
     }
-    o(n.length - f)
+    o(n.length - g)
   }, [e, t, null == n ? true : n.join(""), r, o])

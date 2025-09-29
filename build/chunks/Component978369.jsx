@@ -1,7 +1,7 @@
 /** Chunk was on 99988 **/
 /** chunk id: 978369, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => g
 }), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -57,12 +57,12 @@ let d = Chunk647438.memo(function(e) {
   })
 });
 
-function f(e) {
+function g(e) {
   let {
     tags: t,
     widgetType: n,
-    applicationId: f,
-    ref: g
+    applicationId: g,
+    ref: f
   } = e, p = (0, i.useRef)(null), {
     trackUserProfileEditAction: b
   } = (0, a.KZ)(), m = (0, i.useMemo)(() => null != t ? t : [], [t]), O = (0, i.useCallback)(function(e) {
@@ -75,28 +75,28 @@ function f(e) {
       }), r.add(e), b({
         action: "TAG_ADDED",
         widgetEdited: n,
-        gameId: f
+        gameId: g
       }))
     } else r.has(e) ? (r.delete(e), b({
       action: "TAG_REMOVED",
       widgetEdited: n,
-      gameId: f
+      gameId: g
     })) : (r.add(e), b({
       action: "TAG_ADDED",
       widgetEdited: n,
-      gameId: f
+      gameId: g
     }));
-    (0, l.n$)(n, f, Array.from(r))
-  }, [m, b, n, f]), y = (0, i.useCallback)(e => {
+    (0, l.n$)(n, g, Array.from(r))
+  }, [m, b, n, g]), y = (0, i.useCallback)(e => {
     let t = new Set(m);
     e.forEach(e => {
       t.delete(e)
     }), b({
       action: "TAG_REMOVED",
       widgetEdited: n,
-      gameId: f
-    }), (0, l.n$)(n, f, Array.from(t))
-  }, [m, b, n, f]);
+      gameId: g
+    }), (0, l.n$)(n, g, Array.from(t))
+  }, [m, b, n, g]);
   return (0, r.jsx)(o.yRy, {
     targetElementRef: p,
     position: "right",
@@ -121,8 +121,8 @@ function f(e) {
     children: e => {
       var t, n;
       return (0, r.jsx)("div", {
-        ref: e => (null != e && (p.current = e, g.current = e), () => {
-          p.current = null, g.current = null
+        ref: e => (null != e && (p.current = e, f.current = e), () => {
+          p.current = null, f.current = null
         }),
         children: (0, r.jsx)(o.P3F, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {

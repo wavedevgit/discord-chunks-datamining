@@ -35,13 +35,13 @@ function j(e) {
     dragHandleAdditionalMenuItems: w
   } = e, I = (0, u.Dt)(), E = (0, c.e7)([d.default], () => d.default.getId() === t), S = i.useRef(null), T = i.useRef(null), {
     trackUserProfileAction: D
-  } = (0, f.KZ)(), N = (0, p.Z)({
+  } = (0, g.KZ)(), N = (0, p.Z)({
     widgetType: n.type,
     onAction: D
   }), A = E && null != j && !s, {
     isDragging: C,
     dragSourcePosition: k
-  } = (0, g.q)({
+  } = (0, f.q)({
     dropRef: S,
     dragRef: T,
     userId: t,
@@ -92,12 +92,12 @@ let h = e => {
     onMouseLeave: l,
     dragSourcePosition: c,
     index: u
-  } = e, d = (0, s.zPA)() && null != c, f = d && u < c, g = d && u > c;
+  } = e, d = (0, s.zPA)() && null != c, g = d && u < c, f = d && u > c;
   return i ? n : (0, r.jsx)("div", {
     ref: t,
     className: a()(y.dragAndDropHitbox, {
-      [y.dropIndicatorBefore]: f,
-      [y.dropIndicatorAfter]: g
+      [y.dropIndicatorBefore]: g,
+      [y.dropIndicatorAfter]: f
     }),
     onMouseEnter: o,
     onMouseLeave: l,

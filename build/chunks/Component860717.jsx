@@ -1,7 +1,7 @@
 /** Chunk was on 99988 **/
 /** chunk id: 860717, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => M
+  Z: () => U
 }), require("./415506.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,12 +22,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk124347 = require("./124347.jsx"),
   Chunk929677 = require("./929677.js"),
   Chunk77498 = require("./77498.js"),
+  Chunk621853 = require("./621853.js"),
   Chunk750312 = require("./750312.jsx"),
   Chunk919498 = require("./919498.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk895652 = require("./895652.js");
 
-function I(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,7 +47,7 @@ function I(e) {
   return e
 }
 
-function E(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -59,15 +60,15 @@ function E(e, t) {
   }), e
 }
 
-function S(e) {
+function T(e) {
   return null != e && e.loadingState === u.f.LOADED_SUCCESS && null != e.width && null != e.height
 }
 
-function T(e) {
+function D(e) {
   let {
     component: t
   } = e;
-  if (Array.isArray(t)) return N(t);
+  if (Array.isArray(t)) return A(t);
   switch (t.type) {
     case "HERO":
       let {
@@ -87,89 +88,94 @@ function T(e) {
         }
         return i
       }(t, ["body"]);
-      return (0, r.jsx)(A, E(I({}, i), {
-        body: N(n)
+      return (0, r.jsx)(C, S(E({}, i), {
+        body: A(n)
       }));
     case "GRID":
-      return (0, r.jsx)(C, {
-        children: N(t.children)
+      return (0, r.jsx)(k, {
+        children: A(t.children)
       });
     case "FIELD":
-      return (0, r.jsx)(k, {
-        value: D(t.value),
-        name: D(t.name)
+      return (0, r.jsx)(R, {
+        value: N(t.value),
+        name: N(t.name)
       });
     case "TEXT":
-      return (0, r.jsx)(R, I({}, t));
+      return (0, r.jsx)(Z, E({}, t));
     case "TEXT_WITH_IMAGE":
-      return (0, r.jsx)(Z, I({}, t));
+      return (0, r.jsx)(L, E({}, t));
     case "SEPARATOR":
-      return (0, r.jsx)(L, I({}, t));
+      return (0, r.jsx)(G, E({}, t));
     case "SOCIAL_PROOF":
-      return (0, r.jsx)(G, {})
+      return (0, r.jsx)(B, {})
   }
 }
 
-function D(e, t) {
-  return (0, r.jsx)(T, {
+function N(e, t) {
+  return (0, r.jsx)(D, {
     component: e
   }, t)
 }
 
-function N(e) {
-  return e.map((e, t) => D(e, t))
+function A(e) {
+  return e.map((e, t) => N(e, t))
 }
 
-function A(e) {
+function C(e) {
   let {
     title: t,
     body: n,
-    image: i
+    image: i,
+    imagePlaceholder: o
   } = e;
   return (0, r.jsxs)("div", {
-    className: w.heroSection,
-    style: {
-      "--custom-filter-opacity": "opacity(0.5)"
-    },
+    className: I.heroSection,
     children: [(0, r.jsxs)("div", {
-      className: w.heroBody,
+      className: I.heroBody,
       children: [(0, r.jsx)(s.Text, {
         variant: "text-lg/medium",
-        className: w.heroTitle,
+        className: I.heroTitle,
         children: null != t ? t : (0, r.jsx)("div", {
-          className: w.textPlaceholder
+          className: I.textPlaceholder
         })
       }), (0, r.jsx)(b.U, {
         color: "muted",
         children: n
       })]
-    }), S(i) ? (0, r.jsx)("div", {
-      className: w.heroImageContainer,
+    }), T(i) ? (0, r.jsx)("div", {
+      className: I.heroImageContainer,
       children: (0, r.jsx)(j.ZP, {
         src: i.proxyUrl,
         alt: "",
         width: i.width,
         height: i.height,
         responsive: true,
-        className: w.heroImage
+        className: I.heroImage
+      })
+    }) : null != o ? (0, r.jsx)("div", {
+      className: I.heroImageContainer,
+      children: (0, r.jsx)("img", {
+        src: o,
+        alt: "",
+        className: I.heroImage
       })
     }) : (0, r.jsx)("div", {
-      className: w.heroImagePlaceholder
+      className: I.heroImagePlaceholder
     })]
   })
 }
 
-function C(e) {
+function k(e) {
   let {
     children: t
   } = e;
   return (0, r.jsx)("div", {
-    className: w.grid,
+    className: I.grid,
     children: t
   })
 }
 
-function k(e) {
+function R(e) {
   let {
     name: t,
     value: n
@@ -179,7 +185,7 @@ function k(e) {
   })
 }
 
-function R(e) {
+function Z(e) {
   let {
     content: t
   } = e, n = i.useId(), o = (0, b._)();
@@ -188,17 +194,17 @@ function R(e) {
     id: n,
     content: t
   }) : (0, r.jsx)("div", {
-    className: a()(w.textPlaceholder, o.className)
+    className: a()(I.textPlaceholder, o.className)
   })
 }
 
-function Z(e) {
+function L(e) {
   let {
     content: t,
     image: n,
     imagePosition: i
-  } = e, o = (0, b._)(), l = S(n) ? (0, r.jsx)("div", {
-    className: a()(w.image, o.className),
+  } = e, o = (0, b._)(), l = T(n) ? (0, r.jsx)("div", {
+    className: a()(I.image, o.className),
     children: (0, r.jsx)(j.ZP, {
       src: n.proxyUrl,
       alt: "",
@@ -207,17 +213,17 @@ function Z(e) {
       responsive: true
     })
   }) : (0, r.jsx)("div", {
-    className: a()(w.imagePlaceholder, o.className)
+    className: a()(I.imagePlaceholder, o.className)
   });
   return (0, r.jsxs)("div", {
-    className: w.textWithImage,
-    children: ["left" === i ? l : null, (0, r.jsx)(R, {
+    className: I.textWithImage,
+    children: ["left" === i ? l : null, (0, r.jsx)(Z, {
       content: t
     }), "right" === i ? l : null]
   })
 }
 
-function L(e) {
+function G(e) {
   let {
     size: t = "small",
     divider: n = false
@@ -230,15 +236,15 @@ function L(e) {
   })
 }
 
-function G() {
+function B() {
   let e = function() {
-      let e = Chunk647438.useContext(B);
+      let e = Chunk647438.useContext(F);
       if (null == module) throw Error("ApplicationWidgetContext provider not found");
       return module
     }(),
     {
       game: t
-    } = F(module.widget);
+    } = H(module.widget);
   return null == exports ? null : (0, Chunk951288.jsx)(Chunk919498.Z, {
     className: Chunk895652.socialProof,
     applicationId: exports.id,
@@ -246,31 +252,33 @@ function G() {
     channelId: module.channelId
   })
 }
-let B = Chunk647438.createContext(null);
-
-function F(e) {
-  let t = (0, l.e7)([d.Z], () => d.Z.getApplication(e.applicationId)),
-    n = (0, l.e7)([v.Z], () => null != t ? v.Z.getGameByApplication(t) : null);
-  return {
-    application: t,
-    game: n
-  }
-}
+let F = Chunk647438.createContext(null);
 
 function H(e) {
+  return (0, l.cj)([d.Z, x.Z, v.Z], () => {
+    let t = d.Z.getApplication(e.applicationId);
+    return {
+      application: t,
+      game: null != t ? v.Z.getGameByApplication(t) : null,
+      config: x.Z.getApplicationWidgetApplicationConfig(e.applicationId)
+    }
+  })
+}
+
+function M(e) {
   let {
     children: t,
     widget: n
   } = e;
   return (0, r.jsx)(p.am.Root, {
     containerInnerWidth: 396,
-    children: (0, r.jsx)(g.Il, {
+    children: (0, r.jsx)(f.Il, {
       applicationWidget: n,
       children: (0, r.jsx)(b.U, {
         size: "reduced",
         weight: "reduced",
         children: (0, r.jsx)("div", {
-          className: w.container,
+          className: I.container,
           children: t
         })
       })
@@ -278,69 +286,71 @@ function H(e) {
   })
 }
 
-function M(e) {
+function U(e) {
   var t, i, o;
   let {
     user: l,
     widget: u,
     containerClassName: d
   } = e, {
-    application: g,
-    game: p
-  } = F(u), b = null == g ? true : g.getIconURL(16), m = (0, h.O)(l.id).data, O = null == m ? true : m.find(e => e.application_id === u.applicationId), j = null == O || null == (i = O.profile) || null == (t = i.data) ? true : t.primary;
+    application: f,
+    game: p,
+    config: b
+  } = H(u), m = null == f ? true : f.getIconURL(16), O = (0, h.O)(l.id).data, j = null == O ? true : O.find(e => e.application_id === u.applicationId), v = null == j || null == (i = j.profile) || null == (t = i.data) ? true : t.primary;
 
-  function v() {
+  function x() {
     null != p && (0, s.ZDy)(async () => {
       let {
         default: e
       } = await Promise.all([n.e("89311"), n.e("20074")]).then(n.bind(n, 644941));
-      return t => (0, r.jsx)(e, I({
+      return t => (0, r.jsx)(e, E({
         applicationId: p.id,
-        source: f.m1.ApplicationWidget
+        source: g.m1.ApplicationWidget
       }, t))
     })
   }
-  let _ = (0, r.jsxs)(r.Fragment, {
-      children: [null != b ? (0, r.jsx)("img", {
-        className: w.appIcon,
-        src: b,
+  let P = (0, r.jsxs)(r.Fragment, {
+      children: [null != m ? (0, r.jsx)("img", {
+        className: I.appIcon,
+        src: m,
         width: 16,
         height: 16,
         alt: ""
       }) : (0, r.jsx)("span", {
-        className: w.appIconPlaceholder
+        className: I.appIconPlaceholder
       }), (0, r.jsx)(s.Text, {
         variant: "text-sm/medium",
-        children: (null == g ? true : g.name) != null ? g.name : (0, r.jsx)("div", {
-          className: w.textPlaceholder
+        children: (null == f ? true : f.name) != null ? f.name : (0, r.jsx)("div", {
+          className: I.textPlaceholder
         })
       })]
     }),
-    S = null == p ? (0, r.jsx)("div", {
-      className: w.header,
-      children: _
+    T = null == p ? (0, r.jsx)("div", {
+      className: I.header,
+      children: P
     }) : (0, r.jsx)(c.u, {
       asContainer: true,
-      text: P.intl.string(P.t.ajHoOj),
+      text: w.intl.string(w.t.ajHoOj),
       children: (0, r.jsx)(s.P3F, {
-        className: a()(w.header, w.headerClickable),
-        onClick: v,
-        "aria-label": P.intl.string(P.t.ajHoOj),
-        children: _
+        className: a()(I.header, I.headerClickable),
+        onClick: x,
+        "aria-label": w.intl.string(w.t.ajHoOj),
+        children: P
       })
     }),
-    D = [{
+    N = [{
       type: "HERO",
-      title: null == O || null == (o = O.profile) ? true : o.username,
-      image: (null == j ? true : j.featured_played_character_image) != null ? (0, y.ym)(j.featured_played_character_image) : true,
+      title: null == j || null == (o = j.profile) ? true : o.username,
+      image: (null == v ? true : v.featured_played_character_image) != null ? (0, y.ym)(v.featured_played_character_image) : null,
+      imagePlaceholder: null == b ? true : b.hero_placeholder_image,
       body: [{
         type: "TEXT_WITH_IMAGE",
-        content: (null == j ? true : j.highest_rank) != null ? null == j ? true : j.highest_rank : true,
-        image: (null == j ? true : j.highest_rank_image) != null ? (0, y.ym)(j.highest_rank_image) : true,
+        content: (null == v ? true : v.highest_rank) != null ? null == v ? true : v.highest_rank : true,
+        image: (null == v ? true : v.highest_rank_image) != null ? (0, y.ym)(v.highest_rank_image) : true,
         imagePosition: "right"
       }, {
         type: "TEXT",
-        content: (null == j ? true : j.featured_played_character) != null ? "Top Hero: ".concat(null == j ? true : j.featured_played_character) : true
+        content: (null == v ? true : v.featured_played_character) != null ? "Top Hero: ".concat(null == v ? true : v.featured_played_character) : true
       }]
     }, {
       type: "SEPARATOR",
@@ -354,8 +364,8 @@ function M(e) {
         type: "FIELD",
         value: {
           type: "TEXT_WITH_IMAGE",
-          content: (null == j ? true : j.rank_name) != null ? "**".concat(null == j ? true : j.rank_name, "**") : true,
-          image: (null == j ? true : j.rank_image) != null ? (0, y.ym)(j.rank_image) : true,
+          content: (null == v ? true : v.rank_name) != null ? "**".concat(null == v ? true : v.rank_name, "**") : true,
+          image: (null == v ? true : v.rank_image) != null ? (0, y.ym)(v.rank_image) : true,
           imagePosition: "right"
         },
         name: {
@@ -366,7 +376,7 @@ function M(e) {
         type: "FIELD",
         value: {
           type: "TEXT",
-          content: (null == j ? true : j.playtime_hours) != null ? "**".concat(j.playtime_hours.toLocaleString(), " Hours**") : true
+          content: (null == v ? true : v.playtime_hours) != null ? "**".concat(v.playtime_hours.toLocaleString(), " Hours**") : true
         },
         name: {
           type: "TEXT",
@@ -376,7 +386,7 @@ function M(e) {
         type: "FIELD",
         value: {
           type: "TEXT",
-          content: (null == j ? true : j.total_games) != null ? "**".concat(j.total_games.toLocaleString(), "**") : true
+          content: (null == v ? true : v.total_games) != null ? "**".concat(v.total_games.toLocaleString(), "**") : true
         },
         name: {
           type: "TEXT",
@@ -395,7 +405,7 @@ function M(e) {
         type: "FIELD",
         value: {
           type: "TEXT",
-          content: (null == j ? true : j.total_wins) != null ? "**".concat(j.total_wins.toLocaleString(), "**") : true
+          content: (null == v ? true : v.total_wins) != null ? "**".concat(v.total_wins.toLocaleString(), "**") : true
         },
         name: {
           type: "TEXT",
@@ -405,7 +415,7 @@ function M(e) {
         type: "FIELD",
         value: {
           type: "TEXT",
-          content: (null == j ? true : j.total_kills) != null ? "**".concat(j.total_kills.toLocaleString(), "**") : true
+          content: (null == v ? true : v.total_kills) != null ? "**".concat(v.total_kills.toLocaleString(), "**") : true
         },
         name: {
           type: "TEXT",
@@ -415,7 +425,7 @@ function M(e) {
         type: "FIELD",
         value: {
           type: "TEXT",
-          content: (null == j ? true : j.total_assists) != null ? "**".concat(j.total_assists.toLocaleString(), "**") : true
+          content: (null == v ? true : v.total_assists) != null ? "**".concat(v.total_assists.toLocaleString(), "**") : true
         },
         name: {
           type: "TEXT",
@@ -423,33 +433,33 @@ function M(e) {
         }
       }]
     }];
-  return (0, r.jsxs)(x.Z, E(I({}, e), {
+  return (0, r.jsxs)(_.Z, S(E({}, e), {
     userId: l.id,
     widget: u,
-    className: a()(d, w.widgetContainer),
-    headerTitle: S,
+    className: a()(d, I.widgetContainer),
+    headerTitle: T,
     dragHandleAdditionalMenuItems: null != p ? (0, r.jsx)(s.sNh, {
       id: "view-game-profile",
       label: "View Game Profile",
       icon: s.iWm,
-      action: v
+      action: x
     }) : null,
-    children: [(0, r.jsx)(B.Provider, {
+    children: [(0, r.jsx)(F.Provider, {
       value: e,
-      children: (0, r.jsx)(H, {
+      children: (0, r.jsx)(M, {
         widget: u,
-        children: (0, r.jsx)(T, {
-          component: D
+        children: (0, r.jsx)(D, {
+          component: N
         })
       })
-    }), null == O ? (0, r.jsxs)("div", {
-      className: w.stillSyncing,
+    }), null == j ? (0, r.jsxs)("div", {
+      className: I.stillSyncing,
       children: [(0, r.jsx)(s.wGF, {
         size: "xxs"
       }), (0, r.jsx)(s.Text, {
         variant: "text-sm/medium",
         color: "text-secondary",
-        children: P.intl.string(P.t.z5K4Ul)
+        children: w.intl.string(w.t.z5K4Ul)
       })]
     }) : null]
   }))

@@ -2,10 +2,10 @@
 /** chunk id: 747101, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   FX: () => b,
-  ZP: () => g,
+  ZP: () => f,
   kN: () => p,
   kO: () => d,
-  qU: () => f
+  qU: () => g
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
@@ -50,7 +50,7 @@ function d(e) {
   return (0, i.e7)([a.Z], () => a.Z.isFetching(e))
 }
 
-function f(e) {
+function g(e) {
   r.useEffect(() => {
     if (e.length > 0) {
       let t = e.filter(e => a.Z.canFetch(e));
@@ -59,8 +59,8 @@ function f(e) {
   }, [e])
 }
 
-function g(e) {
-  f(r.useMemo(() => (function(e) {
+function f(e) {
+  g(r.useMemo(() => (function(e) {
     let t = new Set;
     return e.forEach(e => {
       e.games.forEach(e => {
