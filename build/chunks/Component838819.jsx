@@ -67,33 +67,33 @@ let D = e => {
       {
         userProfile: F,
         wishlistId: W
-      } = (0, o.cj)([C.Z], () => ({
-        userProfile: null != c ? C.Z.getUserProfile(c.id) : null,
-        wishlistId: null != c ? C.Z.getFirstWishlistId(c.id) : null
+      } = (0, o.cj)([_.Z], () => ({
+        userProfile: null != c ? _.Z.getUserProfile(c.id) : null,
+        wishlistId: null != c ? _.Z.getFirstWishlistId(c.id) : null
       }), [c]);
     l.useEffect(() => {
-      null != c && null == F && (0, _.Z)(c.id, c.getAvatarURL(null, 80))
+      null != c && null == F && (0, C.Z)(c.id, c.getAvatarURL(null, 80))
     }, [c, F]), (0, m.k)(W);
     let U = (0, R.G)("CollectiblesShop"),
       {
         onClose: V
-      } = (0, A.Db)(),
+      } = (0, N.Db)(),
       {
         currentTab: z,
         hasFilters: G
       } = (0, k.S)(),
-      q = l.useMemo(() => n === Z.AW.HOME && z && G() ? z : n, [n, z, G]),
+      K = l.useMemo(() => n === Z.AW.HOME && z && G() ? z : n, [n, z, G]),
       {
-        categories: K,
+        categories: q,
         refreshCategories: Y
       } = (0, T.ZP)({
         logPerf: true
       }, {
         sessionId: i,
-        tab: q,
+        tab: K,
         isFullScreen: t
       }),
-      X = (0, y.O)(K),
+      X = (0, y.O)(q),
       [Q, J] = l.useState(),
       $ = (0, o.e7)([v.Z], () => {
         var e;
@@ -108,11 +108,11 @@ let D = e => {
         selectedTab: er,
         transitionState: el,
         transitionToTab: ei
-      } = (0, j.B)(q, t);
+      } = (0, j.B)(K, t);
     (0, O.q3)(i, er, $, el, ee), (0, O.EB)(er, c);
     let {
       dismissShopButtonDC: ea
-    } = (0, B.Z)();
+    } = (0, A.Z)();
     l.useEffect(() => {
       ea()
     }, [ea]), l.useEffect(() => {
@@ -150,22 +150,22 @@ let D = e => {
             onClose: V,
             shouldAddEventListener: t && !es,
             children: (0, r.jsxs)("div", {
-              className: a()(M.shop, {
-                [H.shopTakeOver]: U
+              className: a()(H.shop, {
+                [M.shopTakeOver]: U
               }),
               ref: t ? eo : ec,
               tabIndex: false,
-              children: [(0, r.jsx)(N.I, {
+              children: [(0, r.jsx)(B.I, {
                 isFullScreen: t,
                 isLayer: es,
                 onClose: V,
                 handleTransition: ei,
                 selectedTab: er
               }), (0, r.jsx)("div", {
-                className: a()(M.shopViewWrapper, {
-                  [M.visible]: el === Z.f7.VISIBLE,
-                  [M.in]: el === Z.f7.IN,
-                  [M.out]: el === Z.f7.OUT
+                className: a()(H.shopViewWrapper, {
+                  [H.visible]: el === Z.f7.VISIBLE,
+                  [H.in]: el === Z.f7.IN,
+                  [H.out]: el === Z.f7.OUT
                 }),
                 children: (0, r.jsx)(I.Z, {
                   tab: er,

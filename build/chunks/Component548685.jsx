@@ -38,29 +38,29 @@ let I = e => {
     title: i,
     sortedSkuIds: I,
     numVisibleItems: P,
-    hasSorting: N,
-    prioritizeUserDiscounts: A,
-    tab: B,
+    hasSorting: B,
+    prioritizeUserDiscounts: N,
+    tab: A,
     buttonContainerClassName: R
   } = e, Z = (0, s.e7)([d.default], () => d.default.getCurrentUser()), w = h.ZP.canUseCollectibles(Z), F = (0, T.G)("FeedBlock"), {
-    sortType: M,
-    setSortType: H,
+    sortType: H,
+    setSortType: M,
     sortedItems: D,
     sortOptions: W,
     shuffleProducts: U,
     showRecommendationOption: V
-  } = (0, x.Z)(I, w, A), z = (0, O.St)(D), G = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), q = (0, s.e7)([g.Z], () => g.Z.isFocused()), K = !G && q, {
+  } = (0, x.Z)(I, w, N), z = (0, O.St)(D), G = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), K = (0, s.e7)([g.Z], () => g.Z.isFocused()), q = !G && K, {
     animationPhase: Y,
     startAnimation: X
-  } = (0, v.y)(), Q = (0, C.sp)(), J = null != (t = null == Q ? true : Q.sessionId) ? t : "", $ = l.useRef(null), ee = l.useCallback(e => {
+  } = (0, v.y)(), Q = (0, _.sp)(), J = null != (t = null == Q ? true : Q.sessionId) ? t : "", $ = l.useRef(null), ee = l.useCallback(e => {
     X({
       isShuffling: false,
-      onOutroComplete: () => H(e)
+      onOutroComplete: () => M(e)
     }), p.default.track(y.rMx.COLLECTIBLES_SHOP_FEED_SORT_CHANGED, {
       page_session_id: J,
       sort_type: e
     })
-  }, [X, H, J]), et = m.Z.useConfig({
+  }, [X, M, J]), et = m.Z.useConfig({
     location: "FeedBlock"
   }).showCardsV2;
   return null == Z ? null : (0, r.jsxs)("div", {
@@ -113,7 +113,7 @@ let I = e => {
             }), t))
           }
         })]
-      }), N ? (0, r.jsxs)("div", {
+      }), B ? (0, r.jsxs)("div", {
         className: a()(k.headerRight, {
           [j.shopTakeOver]: F
         }),
@@ -129,7 +129,7 @@ let I = e => {
             popoutClassName: a()({
               [j.shopTakeOver]: F
             }),
-            isSelected: e => e === M,
+            isSelected: e => e === H,
             serialize: e => e
           })
         }), (0, r.jsx)("div", {
@@ -156,14 +156,14 @@ let I = e => {
       children: n ? (0, r.jsx)(r.Fragment, {
         children: [...Array(12)].map((e, t) => (0, r.jsx)(b.K, {}, t + 1))
       }) : z.slice(0, P).map((e, t) => {
-        let n, l = _.Z.getCategoryForProduct(e.skuId);
+        let n, l = C.Z.getCategoryForProduct(e.skuId);
         if (null == e || null == l) return null;
-        if (K)
+        if (q)
           if (Y === v.g.SHUFFLE_OUT) return (0, r.jsx)("div", {
             className: k.shuffleOutro
           }, "".concat(e.skuId, "-").concat(t));
           else Y === v.g.SORT_OUT ? n = k.sortChangedOutro : Y === v.g.SHUFFLE_IN ? n = k.shuffleIntro : Y === v.g.SORT_IN && (n = k.sortChangedIntro);
-        return (0, r.jsx)(C.k0, {
+        return (0, r.jsx)(_.k0, {
           newValue: {
             tilePosition: t,
             pageSection: "popular picks",
@@ -175,7 +175,7 @@ let I = e => {
             product: e,
             category: l,
             user: Z,
-            tab: B,
+            tab: A,
             className: n
           })
         }, null == e ? true : e.skuId)

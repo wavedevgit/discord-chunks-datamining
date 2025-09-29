@@ -28,7 +28,7 @@ let E = e => {
     selectedVariantIndex: i
   } = e, E = (0, u.Nd)(), S = null == E ? true : E.tab, v = l.useRef(null), {
     handleCardVisibilityChange: x
-  } = (0, d.E)(t.skuId, S === m.AW.CATALOG ? "full" : S), O = (0, _.J7)(t, c.Z.COLLECTIBLES_SHOP_CARD);
+  } = (0, d.E)(t.skuId, S === m.AW.CATALOG ? "full" : S), O = (0, C.J7)(t, c.Z.COLLECTIBLES_SHOP_CARD);
   return (0, r.jsx)(s.$, {
     innerRef: v,
     onChange: x,
@@ -69,7 +69,7 @@ let E = e => {
                 product: t,
                 cardRef: v,
                 selectedVariantIndex: i
-              }), (0, r.jsx)(C.Z, {
+              }), (0, r.jsx)(_.Z, {
                 product: t,
                 cardRef: v,
                 selectedVariantIndex: i

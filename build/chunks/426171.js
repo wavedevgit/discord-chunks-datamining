@@ -62,7 +62,7 @@ let m = "".concat("#").concat("itemSkuId", "="),
             } = e, i = u.Z.getProduct(t), a = u.Z.getCategoryForProduct(t);
             if (null != i && null != a) {
               let e = i,
-                o = (0, C.oQ)({
+                o = (0, _.oQ)({
                   product: i
                 }),
                 c = document.getElementById("shop-item-".concat(e.skuId));

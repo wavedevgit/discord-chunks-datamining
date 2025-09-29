@@ -2,7 +2,7 @@
 /** chunk id: 653126, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => C
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -53,7 +53,7 @@ let g = e => {
       selectedVariantIndex: n
     })
   },
-  C = e => {
+  _ = e => {
     let {
       product: t
     } = e, [n, l] = (0, c.SS)(t), i = (0, u.W)(t, n);
@@ -63,7 +63,7 @@ let g = e => {
       selectedVariantIndex: n
     })
   },
-  _ = Chunk647438.memo(function(e) {
+  C = Chunk647438.memo(function(e) {
     let {
       skuId: t
     } = e, n = (0, a.e7)([s.Z], () => s.Z.getCategoryForProduct(t)), l = null == n ? true : n.products.find(e => e.skuId === t), o = (0, d.Cr)(l);
@@ -77,7 +77,7 @@ let g = e => {
       product: o
     }) : u === i.Z.BUNDLE ? (0, r.jsx)(h, {
       product: o
-    }) : u === i.Z.EXTERNAL_SKU ? (0, r.jsx)(C, {
+    }) : u === i.Z.EXTERNAL_SKU ? (0, r.jsx)(_, {
       product: o
     }) : null
   })

@@ -34,20 +34,20 @@ let E = e => {
     product: t,
     isPartiallyOwnedBundle: L,
     isPurchased: y
-  }), P = (0, C.Iw)(t), {
-    isOrbExclusive: N
-  } = (0, _.Ip)({
+  }), P = (0, _.Iw)(t), {
+    isOrbExclusive: B
+  } = (0, C.Ip)({
     product: t,
     isPremiumUser: O,
     tab: v,
     hasDiscountOffer: null != P
-  }), A = (0, h.J7)(t, s.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON);
-  return k || l.tq || N || !I || v === m.AW.ORBS ? null : j ? (0, r.jsx)(a.hU, {
+  }), N = (0, h.J7)(t, s.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON);
+  return k || l.tq || B || !I || v === m.AW.ORBS ? null : j ? (0, r.jsx)(a.hU, {
     variant: "primary",
     "aria-label": b.intl.string(b.t.SKNnqq),
     icon: a.tEF,
     onClick: e => {
-      e.stopPropagation(), A(e)
+      e.stopPropagation(), N(e)
     }
   }) : (0, r.jsx)(u.k0, {
     newValue: {

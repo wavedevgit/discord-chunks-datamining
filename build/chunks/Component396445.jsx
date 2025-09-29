@@ -50,7 +50,7 @@ let T = (e, t, n, r) => {
       u = null == i ? true : i.blockType,
       p = (0, d.sp)(),
       {
-        analyticsLocations: C
+        analyticsLocations: _
       } = (0, c.ZP)(o.Z.COLLECTIBLES_SHOP_CARD),
       m = (0, s.e7)([g.Z], () => g.Z.getCategoryForProduct(e.skuId)),
       b = l.useRef(null),
@@ -61,24 +61,24 @@ let T = (e, t, n, r) => {
       let l = (0, S.oQ)({
         product: e
       });
-      b.current = n.currentTarget, T(e, r, p, null), (0, _.T)({
+      b.current = n.currentTarget, T(e, r, p, null), (0, C.T)({
         product: e,
         category: m,
         shouldCheckoutWithOrbs: l,
-        analyticsLocations: C,
+        analyticsLocations: _,
         analyticsSource: t,
         returnRef: b,
         tab: r,
         variantType: O
       })
-    }, [e, r, m, C, p, O])(t)
+    }, [e, r, m, _, p, O])(t)
   },
   L = e => {
     let {
       previewingVariantIndex: t,
       handleEntering: n,
       handleLeaving: a
-    } = (0, E.f)(e), o = (0, s.e7)([p.Z], () => p.Z.purchases), c = (0, C.o)(e, o), u = (0, b.o)(e, o, t), [d, g] = l.useState(false);
+    } = (0, E.f)(e), o = (0, s.e7)([p.Z], () => p.Z.purchases), c = (0, _.o)(e, o), u = (0, b.o)(e, o, t), [d, g] = l.useState(false);
     if (e.type === i.Z.VARIANTS_GROUP) {
       let l = (0, r.jsx)(m.P, {
         variantGroupProduct: e,

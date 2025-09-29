@@ -39,7 +39,7 @@ function T(e) {
   let p = (0, d.FF)("CollectiblesBrowse"),
     f = l.useRef(null),
     {
-      handleScroll: C
+      handleScroll: _
     } = (0, o.z)(f, n),
     {
       setCategoryRef: m,
@@ -69,7 +69,7 @@ function T(e) {
       children: [(0, r.jsx)(s.yWw, {
         className: O.shopScroll,
         ref: f,
-        onScroll: C,
+        onScroll: _,
         children: (0, r.jsx)(y, {
           isFullScreen: t,
           isSmallScreen: v,
@@ -84,7 +84,7 @@ function T(e) {
         className: O.divider
       }), E && !v && (0, r.jsx)(s.Ttm, {
         className: O.filterBar,
-        children: (0, r.jsx)(_.Z, {})
+        children: (0, r.jsx)(C.Z, {})
       })]
     })
   })
@@ -100,12 +100,12 @@ let y = e => {
     sortedCategories: y,
     setCategoryRef: L
   } = e, j = (0, d.FF)("CollectiblesBrowse"), k = l.useRef(null), I = (0, g.S)(e => e.hasDefaultFilters()), P = (0, u.sp)(), {
-    handlePageChange: N,
-    currentPage: A
+    handlePageChange: B,
+    currentPage: N
   } = (0, m.h)({
     scrollerRef: T,
     sortedCategories: y
-  }), B = l.useCallback(e => {
+  }), A = l.useCallback(e => {
     c.default.track(v.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
       collectibles_shop_session_id: null == P ? true : P.sessionId,
       page_section: null == P ? true : P.pageSection,
@@ -114,8 +114,8 @@ let y = e => {
       page_size: null == P ? true : P.pageSize,
       cta_name: "catalog page ".concat(e),
       page_type: "catalog"
-    }), N(e)
-  }, [P, N]), R = l.useRef(null);
+    }), B(e)
+  }, [P, B]), R = l.useRef(null);
   return l.useEffect(() => {
     if (!n || !i) return;
     let e = e => {
@@ -152,7 +152,7 @@ let y = e => {
             children: [(0, r.jsx)(s.Text, {
               variant: "text-md/semibold",
               children: x.intl.string(x.t.uaX709)
-            }), (0, r.jsx)(C.Z, {})]
+            }), (0, r.jsx)(_.Z, {})]
           }), (0, r.jsx)("div", {
             ref: R,
             children: (0, r.jsx)(s.zxk, {
@@ -179,7 +179,7 @@ let y = e => {
           ref: k,
           children: (0, r.jsx)(s.Den, {
             className: O.filterOverlayContent,
-            children: (0, r.jsx)(_.Z, {})
+            children: (0, r.jsx)(C.Z, {})
           })
         })]
       }), j && !I ? (0, r.jsx)(b.Z, {
@@ -192,14 +192,14 @@ let y = e => {
         tab: h
       }, h) : (0, r.jsx)(u.k0, {
         newValue: {
-          pageIndex: A
+          pageIndex: N
         },
         children: (0, r.jsx)(f.Z, {
           isFullScreen: t,
           sortedCategories: y,
           setCategoryRef: L,
-          currentPage: A,
-          handlePageChange: B
+          currentPage: N,
+          handlePageChange: A
         })
       })]
     })

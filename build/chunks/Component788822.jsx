@@ -43,7 +43,7 @@ let m = e => {
     onChange: T,
     threshold: 0,
     children: (0, r.jsxs)(c.P3F, {
-      className: _.featuredBlock,
+      className: C.featuredBlock,
       innerRef: L,
       style: {
         backgroundImage: "url(".concat(y, ")")
@@ -63,13 +63,13 @@ let m = e => {
       children: [null != v && (0, r.jsx)(c.IGR, {
         disableColor: true,
         text: v,
-        className: _.featuredBlockBadge
+        className: C.featuredBlockBadge
       }), (0, r.jsxs)("div", {
-        className: _.featuredBlockTextContainer,
+        className: C.featuredBlockTextContainer,
         children: [null != k && (0, r.jsx)(c.X6q, {
           lineClamp: 2,
-          className: a()(_.featuredBlockTitleText, {
-            [_.featuredBlockTitleTextNameplate]: j
+          className: a()(C.featuredBlockTitleText, {
+            [C.featuredBlockTitleTextNameplate]: j
           }),
           style: {
             color: null != (i = null == S ? true : S.bannerTextColor) ? i : "white"
@@ -78,7 +78,7 @@ let m = e => {
           children: k
         }), null != I && (0, r.jsx)(c.X6q, {
           lineClamp: null != k ? 2 : 4,
-          className: _.featuredBlockBodyText,
+          className: C.featuredBlockBodyText,
           style: {
             color: null != (m = null == S ? true : S.bannerTextColor) ? m : "white"
           },
@@ -86,10 +86,10 @@ let m = e => {
           children: I
         })]
       }), (0, r.jsx)("div", {
-        className: _.featuredBlockButtonContainer,
+        className: C.featuredBlockButtonContainer,
         children: (0, r.jsx)(c.zxk, {
           variant: "overlay-primary",
-          text: C.intl.string(C.t.jVcuVV),
+          text: _.intl.string(_.t.jVcuVV),
           onClick: e => {
             x("shop marketing take me there button", O), e.stopPropagation(), u.default.track(h.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
               collectibles_shop_session_id: null == P ? true : P.sessionId,

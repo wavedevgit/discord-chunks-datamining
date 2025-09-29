@@ -2,7 +2,7 @@
 /** chunk id: 993222, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => C
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -19,10 +19,10 @@ var Chunk180650 = require("./180650.js"),
   Chunk956472 = require("./956472.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk809854 = require("./809854.js");
-let _ = e => {
+let C = e => {
   let {
     product: t
-  } = e, n = (0, u.Nd)(), _ = null == n ? true : n.tab, {
+  } = e, n = (0, u.Nd)(), C = null == n ? true : n.tab, {
     isPurchased: m,
     isPartiallyOwnedBundle: b
   } = (0, g.L)(t), E = (0, i.e7)([c.Z], () => c.Z.getCategoryForProduct(t.skuId)), S = (0, i.e7)([s.default], () => s.default.getCurrentUser()), v = o.ZP.canUseCollectibles(S), x = (0, p.Iw)(t), {
@@ -30,20 +30,20 @@ let _ = e => {
   } = (0, f.Ip)({
     product: t,
     isPremiumUser: v,
-    tab: _,
+    tab: C,
     hasDiscountOffer: null != x
   }), T = (0, d.Yq)(t.skuId), y = (null == E ? true : E.skuId) === l.T.ANIME_V3 && (0, d.WW)(t.skuId);
   return b || m || !T ? O ? (0, r.jsx)(a.IGR, {
     text: h.intl.string(h.t["0TmQRE"]),
     disableColor: true,
-    className: C.productCardBadge
+    className: _.productCardBadge
   }) : y ? (0, r.jsx)(a.IGR, {
     text: h.intl.string(h.t.S6kE9v),
     disableColor: true,
-    className: C.productCardBadge
+    className: _.productCardBadge
   }) : null : (0, r.jsx)(a.IGR, {
     text: h.intl.string(h.t.y2b7CA),
     disableColor: true,
-    className: C.productCardBadge
+    className: _.productCardBadge
   })
 }

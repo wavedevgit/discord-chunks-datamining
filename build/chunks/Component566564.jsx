@@ -40,61 +40,61 @@ let I = e => {
       tab: c,
       isFullScreen: u
     } = e, {
-      noCache: C,
+      noCache: _,
       includeUnpublished: O
-    } = (0, _.Z)(), [L, I] = l.useState(false), P = (0, d.sp)(), N = null != (t = null == P ? true : P.sessionId) ? t : "";
+    } = (0, C.Z)(), [L, I] = l.useState(false), P = (0, d.sp)(), B = null != (t = null == P ? true : P.sessionId) ? t : "";
     l.useEffect(() => {
       (0, f.n)({
-        sessionId: N,
+        sessionId: B,
         checkpoint: f.a.SHOP_MOUNTED,
         tab: c,
         isFullScreen: u,
         unpublishedCategoriesShown: O,
-        cacheDisabled: C
+        cacheDisabled: _
       })
     }, [c]);
     let {
-      isFetchingShopHome: A,
-      fetchShopHomeError: B,
+      isFetchingShopHome: N,
+      fetchShopHomeError: A,
       shopBlocks: R,
       refreshShopHome: Z
     } = (0, p.E)(c, {
-      noCache: C,
+      noCache: _,
       includeUnpublished: O,
       includeBundles: true,
       logPerf: true
     }, {
-      sessionId: N,
+      sessionId: B,
       tab: c,
       isFullScreen: u
     }), w = l.useCallback(() => {
       Z()
     }, [Z]);
     return (l.useEffect(() => {
-      null != B || A || 0 === R.length || (0, f.n)({
-        sessionId: N,
+      null != A || N || 0 === R.length || (0, f.n)({
+        sessionId: B,
         checkpoint: f.a.SHOP_RENDERED,
         tab: c,
         isFullScreen: u,
         unpublishedCategoriesShown: O,
-        cacheDisabled: C
+        cacheDisabled: _
       })
-    }, [B, A, R.length, O, C, N, c, u]), null != B) ? (0, r.jsx)(h.Z, {
+    }, [A, N, R.length, O, _, B, c, u]), null != A) ? (0, r.jsx)(h.Z, {
       onRetry: w,
       errorOrigin: h.i.SHOP_PAGE,
-      errorMessage: B.message
-    }) : A || 0 === R.length ? (0, r.jsxs)("div", {
+      errorMessage: A.message
+    }) : N || 0 === R.length ? (0, r.jsxs)("div", {
       className: a()(k.loadingContainer, k.feedContent),
       children: [(0, r.jsx)(S.Z, {
-        isLoading: A,
+        isLoading: N,
         handleTransition: n,
         tab: c
       }), (0, r.jsx)(b.Z, {
-        isLoading: A,
+        isLoading: N,
         handleTransition: n,
         categories: []
       }), (0, r.jsx)(E.Z, {
-        isLoading: A,
+        isLoading: N,
         title: c === y.AW.ORBS ? j.intl.string(j.t.dFgeub) : j.intl.string(j.t.NSv5KS),
         numVisibleItems: i,
         hasSorting: c === y.AW.HOME,
@@ -108,7 +108,7 @@ let I = e => {
         switch (e.type) {
           case s.z.HERO:
             d = (0, r.jsx)(S.Z, {
-              isLoading: A,
+              isLoading: N,
               handleTransition: n,
               heroBlock: e,
               tab: c
@@ -116,7 +116,7 @@ let I = e => {
             break;
           case s.z.FEATURED:
             d = (0, r.jsx)(b.Z, {
-              isLoading: A,
+              isLoading: N,
               handleTransition: n,
               featuredBlockRecord: e
             }, l);
@@ -125,7 +125,7 @@ let I = e => {
             let f = e.sortedSkuIds;
             d = (0, r.jsx)(E.Z, {
               title: c === y.AW.ORBS ? j.intl.string(j.t.dFgeub) : j.intl.string(j.t.NSv5KS),
-              isLoading: A || o,
+              isLoading: N || o,
               numVisibleItems: i,
               sortedSkuIds: f,
               buttonContainerClassName: (null == t ? true : t.type) === s.z.IMMERSIVE_BANNER ? k.feedblockInteractiveBackground : true,
@@ -184,20 +184,20 @@ let I = e => {
       transitionState: a
     } = e, s = l.useRef(null), {
       handleScroll: g
-    } = (0, c.z)(s, i), p = (0, C.R)(), f = (0, d.sp)(), [h, _] = l.useState(y.IV), [m, b] = l.useState(false);
+    } = (0, c.z)(s, i), p = (0, _.R)(), f = (0, d.sp)(), [h, C] = l.useState(y.IV), [m, b] = l.useState(false);
     return l.useEffect(() => {
       if (null != s.current) {
         let e = () => {
             if (null == s.current) return;
             let e = s.current.getDistanceFromBottom();
-            h >= 36 ? b(e < 20) : e <= 200 && _(e => e + y.IV)
+            h >= 36 ? b(e < 20) : e <= 200 && C(e => e + y.IV)
           },
           t = s.current.getScrollerNode();
         return null == t || t.addEventListener("scroll", e), () => {
           null == t || t.removeEventListener("scroll", e)
         }
       }
-    }, [s, h, _, b]), (0, r.jsx)(o.Den, {
+    }, [s, h, C, b]), (0, r.jsx)(o.Den, {
       className: k.shopScroll,
       ref: s,
       onScroll: g,
