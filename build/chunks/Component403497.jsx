@@ -87,7 +87,9 @@ function T(e) {
     size: L
   })) : N.pathname.startsWith(y.Z5c.FRIENDS) ? (t = I.intl.string(I.t.TdEu5e), U = (0, r.jsx)(c.iFz, {
     size: L
-  })) : N.pathname.startsWith(y.Z5c.FAMILY_CENTER) && (t = I.intl.string(S.default.RZqaJi), U = (0, r.jsx)(c.BFJ, {
+  })) : N.pathname.startsWith(y.Z5c.FAMILY_CENTER) ? (t = I.intl.string(S.default.RZqaJi), U = (0, r.jsx)(c.BFJ, {
+    size: L
+  })) : N.pathname.startsWith(y.Z5c.QUEST_HOME_V2) && (t = I.intl.string(I.t.JALI2N), U = (0, r.jsx)(c.qDn, {
     size: L
   }));
   let G = i.useCallback(e => {
