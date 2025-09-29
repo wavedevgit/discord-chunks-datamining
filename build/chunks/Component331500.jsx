@@ -6,7 +6,7 @@ require.d(exports, {
 var a, r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  c = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -77,15 +77,15 @@ function y(e) {
     })
   }) : (0, i.jsxs)("div", {
     className: O.container,
-    children: [(0, i.jsx)(l.X6q, {
+    children: [(0, i.jsx)(c.X6q, {
       className: O.heading,
       variant: "heading-md/semibold",
       children: _.intl.string(v.default.jeYp1t)
     }), o && (0, i.jsx)("div", {
       className: O.maxInstancesWarning,
       children: (0, i.jsx)(p.Y, {})
-    }), (0, i.jsx)(l.zJl, {
-      className: c()(O.gameContainerWrapper, {
+    }), (0, i.jsx)(c.zJl, {
+      className: l()(O.gameContainerWrapper, {
         [O.disabled]: o
       }),
       children: (0, i.jsx)("div", {

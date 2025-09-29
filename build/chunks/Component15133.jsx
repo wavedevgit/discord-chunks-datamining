@@ -25,20 +25,20 @@ function j(e) {
     guildId: t
   } = e;
   r.useEffect(() => {
-    (0, u.EC)(t), c.Z.getDetectableGames()
+    (0, u.EC)(t), l.Z.getDetectableGames()
   }, [t]);
   let j = (0, d.Z)(t),
     v = (0, s.e7)([b.Z], () => b.Z.getStateForGuild(t)),
     _ = Object.values(null != (n = null == v ? true : v.instances) ? n : {});
   return (0, a.jsxs)("div", {
     className: x.container,
-    children: [(0, a.jsxs)(l.ZP, {
+    children: [(0, a.jsxs)(c.ZP, {
       className: x.toolbar,
       toolbar: (0, a.jsx)("div", {}),
-      children: [(0, a.jsx)(l.ZP.Icon, {
+      children: [(0, a.jsx)(c.ZP.Icon, {
         icon: i.$Eu,
         "aria-label": ""
-      }), (0, a.jsx)(l.ZP.Title, {
+      }), (0, a.jsx)(c.ZP.Title, {
         children: p.intl.string(f.default.lH9Dio)
       }), (0, a.jsx)(o.IGR, {
         disableColor: true,
