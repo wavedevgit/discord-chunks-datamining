@@ -1,7 +1,7 @@
 /** Chunk was on 52461 **/
 /** chunk id: 514866, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => j
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -13,13 +13,14 @@ var Chunk120356 = require("./120356.js"),
   Chunk480916 = require("./480916.js"),
   Chunk963886 = require("./963886.jsx"),
   Chunk110478 = require("./110478.jsx"),
+  Chunk906605 = require("./906605.js"),
   Chunk423932 = require("./423932.jsx"),
   Chunk695346 = require("./695346.js"),
   Chunk306052 = require("./306052.jsx"),
   Chunk594174 = require("./594174.js"),
   Chunk517269 = require("./517269.js"),
   Chunk197571 = require("./197571.js");
-let g = () => {
+let v = () => {
   Promise.all([require.e("52030"), require.e("1286")]).then(require.bind(require, 24031)).then(e => {
     let {
       openMFAModal: t
@@ -41,7 +42,7 @@ let g = () => {
   })
 };
 
-function v() {
+function j() {
   let e = Chunk594174.default.getCurrentUser(),
     t = null == module ? true : module.isStaff(),
     n = Chunk695346.Rt.useSetting();
@@ -56,7 +57,7 @@ function v() {
       children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
         variant: "primary",
         text: "Launch MFA",
-        onClick: g
+        onClick: v
       })
     }), (0, Chunk951288.jsx)("div", {
       className: i()(Chunk517269.buttonsContainer, Chunk197571.marginBottom20),
@@ -93,6 +94,13 @@ function v() {
         className: i()(Chunk517269.buttonsContainer, Chunk197571.marginBottom20),
         children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
+          text: "Reset Hang Status State",
+          onClick: Chunk906605.YU
+        })
+      }), (0, Chunk951288.jsx)("div", {
+        className: i()(Chunk517269.buttonsContainer, Chunk197571.marginBottom20),
+        children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
+          variant: "primary",
           text: "Force libdiscore Crash",
           onClick: Chunk668757.$R
         })
@@ -100,7 +108,7 @@ function v() {
         className: i()(Chunk517269.buttonsContainer, Chunk197571.marginBottom20),
         children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
           value: require,
-          onChange: e => p.Rt.updateSetting(e),
+          onChange: e => h.Rt.updateSetting(e),
           hideBorder: true,
           children: "Ignore profile speedbump disabled"
         })

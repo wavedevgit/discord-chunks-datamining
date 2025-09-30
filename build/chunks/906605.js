@@ -5,6 +5,7 @@ require.d(exports, {
   Sc: () => b,
   UP: () => y,
   XE: () => E,
+  YU: () => v,
   Zx: () => m,
   _s: () => g,
   tg: () => O
@@ -115,5 +116,11 @@ function O(e, t) {
     type: "UPDATE_FAVORITE_HANG_STATUS",
     status: e,
     emoji: t
+  })
+}
+
+function v() {
+  Chunk570140.Z.dispatch({
+    type: "RESET_HANG_STATUS_STATE"
   })
 }
