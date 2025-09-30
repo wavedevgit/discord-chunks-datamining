@@ -2,7 +2,7 @@
 /** chunk id: 963278, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => C
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -18,18 +18,18 @@ var Chunk120356 = require("./120356.js"),
   Chunk653126 = require("./653126.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk310582 = require("./310582.js");
-let _ = e => {
+let C = e => {
   let {
     shelf: t,
     handleTransition: n,
     tab: l
-  } = e, _ = (0, a.e7)([o.default], () => o.default.getCurrentUser()), C = d.Z.useConfig({
+  } = e, C = (0, a.e7)([o.default], () => o.default.getCurrentUser()), h = d.Z.useConfig({
     location: "ShelfBlock"
   }).showCardsV2;
-  return null == _ ? null : (0, r.jsxs)("div", {
-    className: i()(h.shelfBlockContainer, h.centeredSection),
+  return null == C ? null : (0, r.jsxs)("div", {
+    className: i()(_.shelfBlockContainer, _.centeredSection),
     children: [(0, r.jsxs)("div", {
-      className: h.blockHeader,
+      className: _.blockHeader,
       children: [(0, r.jsx)(s.X6q, {
         variant: "heading-lg/semibold",
         children: t.name
@@ -41,7 +41,7 @@ let _ = e => {
         onClick: () => n("shelf block see all", t.categorySkuId)
       })]
     }), (0, r.jsx)("div", {
-      className: h.feed,
+      className: _.feed,
       children: (0, r.jsx)(r.Fragment, {
         children: t.rankedSkuIds.map((e, n) => {
           let i = u.Z.getCategoryForProduct(e),
@@ -52,12 +52,12 @@ let _ = e => {
               pageSection: t.name,
               categoryPosition: 2
             },
-            children: C ? (0, r.jsx)(p.Z, {
+            children: h ? (0, r.jsx)(p.Z, {
               skuId: e
             }, e) : (0, r.jsx)(g.Z, {
               product: a,
               category: i,
-              user: _,
+              user: C,
               tab: l
             }, e)
           }, e)

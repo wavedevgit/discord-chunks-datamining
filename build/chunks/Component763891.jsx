@@ -46,34 +46,34 @@ function A(e) {
   } = e, w = (0, g.sp)(), F = null != (t = null == w ? true : w.sessionId) ? t : "", {
     noCache: H,
     includeUnpublished: M
-  } = (0, S.Z)(), D = (0, a.e7)([u.default], () => u.default.getCurrentUser()), W = (0, a.e7)([p.Z], () => p.Z.productsWithVariantsAsGroup), [U, V] = l.useState(1), z = (0, c.Fg)(), G = (0, s.ap)(z), [K, q, Y] = l.useMemo(() => {
+  } = (0, v.Z)(), D = (0, a.e7)([u.default], () => u.default.getCurrentUser()), W = (0, a.e7)([p.Z], () => p.Z.productsWithVariantsAsGroup), [U, V] = l.useState(1), z = (0, c.Fg)(), G = (0, s.ap)(z), [K, q, Y] = l.useMemo(() => {
     switch (Z) {
-      case v.AW.AVATAR_DECORATIONS:
+      case S.AW.AVATAR_DECORATIONS:
         return [O.intl.string(O.t.dRZYND), G ? k.Z : j.Z, i.Z.AVATAR_DECORATION];
-      case v.AW.PROFILE_EFFECTS:
+      case S.AW.PROFILE_EFFECTS:
         return [O.intl.string(O.t["1cNjt7"]), G ? B.Z : N.Z, i.Z.PROFILE_EFFECT];
-      case v.AW.NAMEPLATES:
+      case S.AW.NAMEPLATES:
         return [O.intl.string(O.t.V68Fq6), G ? P.Z : I.Z, i.Z.NAMEPLATE];
-      case v.AW.BUNDLES:
+      case S.AW.BUNDLES:
         return [O.intl.string(O.t.FYFppq), G ? L.Z : y.Z, i.Z.BUNDLE]
     }
-  }, [Z, G]), X = (0, h.a)(), Q = l.useMemo(() => X(W.filter(e => {
+  }, [Z, G]), X = (0, _.a)(), Q = l.useMemo(() => X(W.filter(e => {
     var t;
     return e.type === Y || e.type === i.Z.VARIANTS_GROUP && (null == (t = e.variants) ? true : t.some(e => e.type === Y)) === true
-  })), [W, Y, X]), J = (0, _.l)(Q);
+  })), [W, Y, X]), J = (0, C.l)(Q);
   l.useEffect(() => {
-    (0, C.n)({
+    (0, h.n)({
       sessionId: F,
-      checkpoint: C.a.SHOP_MOUNTED,
+      checkpoint: h.a.SHOP_MOUNTED,
       tab: Z,
       isFullScreen: A,
       unpublishedCategoriesShown: M,
       cacheDisabled: H
     })
   }, []), l.useEffect(() => {
-    n || (0, C.n)({
+    n || (0, h.n)({
       sessionId: F,
-      checkpoint: C.a.SHOP_RENDERED,
+      checkpoint: h.a.SHOP_RENDERED,
       tab: Z,
       isFullScreen: A,
       unpublishedCategoriesShown: M,

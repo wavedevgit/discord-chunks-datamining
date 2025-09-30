@@ -39,14 +39,14 @@ function T(e) {
   let p = (0, d.FF)("CollectiblesBrowse"),
     f = l.useRef(null),
     {
-      handleScroll: _
+      handleScroll: C
     } = (0, o.z)(f, n),
     {
       setCategoryRef: m,
       handleScrollToCategory: b
-    } = (0, h.xV)(f.current),
-    [E, S] = l.useState(p),
-    [v, x] = l.useState(false);
+    } = (0, _.xV)(f.current),
+    [E, v] = l.useState(p),
+    [S, x] = l.useState(false);
   return l.useEffect(() => {
     null != c && b(c)
   }, [c, b]), l.useEffect(() => () => {
@@ -57,8 +57,8 @@ function T(e) {
     };
     return e(), window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
   }, []), l.useEffect(() => {
-    p || S(false)
-  }, [p, S]), (0, r.jsx)("div", {
+    p || v(false)
+  }, [p, v]), (0, r.jsx)("div", {
     className: a()(O.pageWrapper, {
       [O.pageWrapperFilter]: p
     }),
@@ -69,22 +69,22 @@ function T(e) {
       children: [(0, r.jsx)(s.yWw, {
         className: O.shopScroll,
         ref: f,
-        onScroll: _,
+        onScroll: C,
         children: (0, r.jsx)(y, {
           isFullScreen: t,
-          isSmallScreen: v,
+          isSmallScreen: S,
           filterBarOpen: E,
-          setFilterBarOpen: S,
+          setFilterBarOpen: v,
           tab: n,
           scrollerRef: f,
           sortedCategories: i,
           setCategoryRef: m
         })
-      }), E && !v && (0, r.jsx)("div", {
+      }), E && !S && (0, r.jsx)("div", {
         className: O.divider
-      }), E && !v && (0, r.jsx)(s.Ttm, {
+      }), E && !S && (0, r.jsx)(s.Ttm, {
         className: O.filterBar,
-        children: (0, r.jsx)(C.Z, {})
+        children: (0, r.jsx)(h.Z, {})
       })]
     })
   })
@@ -95,7 +95,7 @@ let y = e => {
     isSmallScreen: n,
     filterBarOpen: i,
     setFilterBarOpen: o,
-    tab: h,
+    tab: _,
     scrollerRef: T,
     sortedCategories: y,
     setCategoryRef: L
@@ -106,7 +106,7 @@ let y = e => {
     scrollerRef: T,
     sortedCategories: y
   }), A = l.useCallback(e => {
-    c.default.track(v.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+    c.default.track(S.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
       collectibles_shop_session_id: null == P ? true : P.sessionId,
       page_section: null == P ? true : P.pageSection,
       page_category: null == P ? true : P.pageCategory,
@@ -120,7 +120,7 @@ let y = e => {
     if (!n || !i) return;
     let e = e => {
       let t = e.target;
-      null === k.current || null === R.current || k.current.contains(t) || R.current.contains(t) || (c.default.track(v.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+      null === k.current || null === R.current || k.current.contains(t) || R.current.contains(t) || (c.default.track(S.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
         collectibles_shop_session_id: null == P ? true : P.sessionId,
         page_section: null == P ? true : P.pageSection,
         page_category: null == P ? true : P.pageCategory,
@@ -152,13 +152,13 @@ let y = e => {
             children: [(0, r.jsx)(s.Text, {
               variant: "text-md/semibold",
               children: x.intl.string(x.t.uaX709)
-            }), (0, r.jsx)(_.Z, {})]
+            }), (0, r.jsx)(C.Z, {})]
           }), (0, r.jsx)("div", {
             ref: R,
             children: (0, r.jsx)(s.zxk, {
               onClick: () => {
                 let e = !i;
-                c.default.track(v.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+                c.default.track(S.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                   collectibles_shop_session_id: null == P ? true : P.sessionId,
                   page_section: null == P ? true : P.pageSection,
                   page_category: null == P ? true : P.pageCategory,
@@ -179,18 +179,18 @@ let y = e => {
           ref: k,
           children: (0, r.jsx)(s.Den, {
             className: O.filterOverlayContent,
-            children: (0, r.jsx)(C.Z, {})
+            children: (0, r.jsx)(h.Z, {})
           })
         })]
       }), j && !I ? (0, r.jsx)(b.Z, {
         isFullScreen: t,
         scrollerRef: T,
-        tab: h
-      }, h) : (0, S.RE)(h) ? (0, r.jsx)(E.Z, {
+        tab: _
+      }, _) : (0, v.RE)(_) ? (0, r.jsx)(E.Z, {
         isFullScreen: t,
         scrollerRef: T,
-        tab: h
-      }, h) : (0, r.jsx)(u.k0, {
+        tab: _
+      }, _) : (0, r.jsx)(u.k0, {
         newValue: {
           pageIndex: B
         },

@@ -2,7 +2,7 @@
 /** chunk id: 653126, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => h
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -43,16 +43,6 @@ let g = e => {
       selectedVariantIndex: n
     })
   },
-  h = e => {
-    let {
-      product: t
-    } = e, [n, l] = (0, c.SS)(t), i = (0, u.W)(t, n);
-    return (0, r.jsx)(o.Z, {
-      product: i,
-      variantSwitcher: l,
-      selectedVariantIndex: n
-    })
-  },
   _ = e => {
     let {
       product: t
@@ -63,7 +53,17 @@ let g = e => {
       selectedVariantIndex: n
     })
   },
-  C = Chunk647438.memo(function(e) {
+  C = e => {
+    let {
+      product: t
+    } = e, [n, l] = (0, c.SS)(t), i = (0, u.W)(t, n);
+    return (0, r.jsx)(o.Z, {
+      product: i,
+      variantSwitcher: l,
+      selectedVariantIndex: n
+    })
+  },
+  h = Chunk647438.memo(function(e) {
     let {
       skuId: t
     } = e, n = (0, a.e7)([s.Z], () => s.Z.getCategoryForProduct(t)), l = null == n ? true : n.products.find(e => e.skuId === t), o = (0, d.Cr)(l);
@@ -75,9 +75,9 @@ let g = e => {
       product: o
     }) : u === i.Z.NAMEPLATE ? (0, r.jsx)(f, {
       product: o
-    }) : u === i.Z.BUNDLE ? (0, r.jsx)(h, {
+    }) : u === i.Z.BUNDLE ? (0, r.jsx)(_, {
       product: o
-    }) : u === i.Z.EXTERNAL_SKU ? (0, r.jsx)(_, {
+    }) : u === i.Z.EXTERNAL_SKU ? (0, r.jsx)(C, {
       product: o
     }) : null
   })

@@ -2,7 +2,7 @@
 /** chunk id: 719075, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => v
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,10 +22,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk956472 = require("./956472.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk997033 = require("./997033.js");
-let S = e => {
+let v = e => {
   let {
     product: t
-  } = e, n = (0, u.Nd)(), S = null == n ? true : n.tab, v = (0, i.e7)([o.default], () => o.default.getCurrentUser()), x = c.ZP.canUseCollectibles(v), {
+  } = e, n = (0, u.Nd)(), v = null == n ? true : n.tab, S = (0, i.e7)([o.default], () => o.default.getCurrentUser()), x = c.ZP.canUseCollectibles(S), {
     isDisabled: O
   } = (0, g.G)(t.skuId), {
     isPurchased: T,
@@ -34,13 +34,13 @@ let S = e => {
     enabled: j
   } = (0, s.WX)({
     location: "product_card_price"
-  }), k = l.useMemo(() => (0, d.BH)(t, x), [t, x]), I = (0, C.Iw)(t), P = null != I, {
+  }), k = l.useMemo(() => (0, d.BH)(t, x), [t, x]), I = (0, h.Iw)(t), P = null != I, {
     displayPrices: N,
     hasSufficientOrbs: B
   } = (0, m.Ip)({
     product: t,
     isPremiumUser: x,
-    tab: S,
+    tab: v,
     hasDiscountOffer: P
   });
   return O ? (0, r.jsx)(a.Text, {
@@ -56,13 +56,13 @@ let S = e => {
     variant: "text-md/semibold",
     className: E.priceTag,
     children: b.intl.string(b.t.rt69oq)
-  }) : j ? (0, r.jsx)(_.e, {
+  }) : j ? (0, r.jsx)(C.e, {
     displayPrices: N,
     isPremiumUser: x,
     discount: k,
     hasSufficientOrbs: B,
     discountOfferAmount: I
-  }) : (0, r.jsx)(h.Z, {
+  }) : (0, r.jsx)(_.Z, {
     product: t,
     discount: k,
     isPremiumUser: x,

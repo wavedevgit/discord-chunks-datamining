@@ -117,7 +117,7 @@ let N = e => {
       analyticsLocations: s,
       analyticsContext: o
     } = e, c = async () => {
-      (0, x.oc)(t, i, o, "claim premium product button"), await (0, h.fK)(t.skuId), (0, L.Z)({
+      (0, x.oc)(t, i, o, "claim premium product button"), await (0, _.fK)(t.skuId), (0, L.Z)({
         product: t,
         analyticsLocations: s,
         purchaseType: j.o8.PREMIUM_PURCHASE
@@ -164,7 +164,7 @@ let N = e => {
             let {
               entitlements: r
             } = e;
-            (0, h.qg)({
+            (0, _.qg)({
               variantsReturnStyle: l.v.VARIANTS_GROUP
             }), (0, L.Z)({
               product: t,
@@ -202,12 +202,12 @@ let N = e => {
       selectedVariantIndex: l
     } = e, a = (0, m.Nd)(), c = null == a ? true : a.tab, u = (0, i.e7)([p.default], () => p.default.getCurrentUser()), d = f.ZP.canUseCollectibles(u), {
       isPurchased: g,
-      isPartiallyOwnedBundle: h
-    } = (0, v.L)(t), O = (0, b.G1)(t), L = (0, b.rN)(t), {
+      isPartiallyOwnedBundle: _
+    } = (0, S.L)(t), O = (0, b.G1)(t), L = (0, b.rN)(t), {
       isDisabled: k
-    } = (0, S.G)(t.skuId), I = (0, b.ne)({
+    } = (0, v.G)(t.skuId), I = (0, b.ne)({
       product: t,
-      isPartiallyOwnedBundle: h,
+      isPartiallyOwnedBundle: _,
       isPurchased: g
     }), P = (0, T.Iw)(t), H = null != P, {
       shouldCheckoutWithOrbs: M,
@@ -218,9 +218,9 @@ let N = e => {
       isPremiumUser: d,
       tab: c,
       hasDiscountOffer: H
-    }), U = (0, _.sp)(), {
+    }), U = (0, C.sp)(), {
       analyticsLocations: V
-    } = (0, o.ZP)(s.Z.COLLECTIBLES_SHOP_CARD), z = (0, x.J7)(t, s.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON), [G, K] = (0, i.Wu)([C.Z], () => [C.Z.isClaiming === t.skuId, null != C.Z.isClaiming && C.Z.isClaiming !== t.skuId]), {
+    } = (0, o.ZP)(s.Z.COLLECTIBLES_SHOP_CARD), z = (0, x.J7)(t, s.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON), [G, K] = (0, i.Wu)([h.Z], () => [h.Z.isClaiming === t.skuId, null != h.Z.isClaiming && h.Z.isClaiming !== t.skuId]), {
       handleUseNow: q,
       isApplying: Y
     } = (0, E.W)({

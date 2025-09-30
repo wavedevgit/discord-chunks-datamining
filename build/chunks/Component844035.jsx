@@ -26,16 +26,16 @@ let E = e => {
     product: t,
     variantSwitcher: n,
     selectedVariantIndex: i
-  } = e, E = (0, u.Nd)(), S = null == E ? true : E.tab, v = l.useRef(null), {
+  } = e, E = (0, u.Nd)(), v = null == E ? true : E.tab, S = l.useRef(null), {
     handleCardVisibilityChange: x
-  } = (0, d.E)(t.skuId, S === m.AW.CATALOG ? "full" : S), O = (0, C.J7)(t, c.Z.COLLECTIBLES_SHOP_CARD);
+  } = (0, d.E)(t.skuId, v === m.AW.CATALOG ? "full" : v), O = (0, h.J7)(t, c.Z.COLLECTIBLES_SHOP_CARD);
   return (0, r.jsx)(s.$, {
-    innerRef: v,
+    innerRef: S,
     onChange: x,
     threshold: 0,
     children: (0, r.jsx)(o.tEY, {
       children: (0, r.jsx)(o.kL8, {
-        ref: v,
+        ref: S,
         onClick: O,
         "aria-label": t.name,
         children: (0, r.jsxs)("div", {
@@ -65,13 +65,13 @@ let E = e => {
             children: (0, r.jsxs)(o.hE2, {
               wrap: false,
               fullWidth: true,
-              children: [(0, r.jsx)(h.Z, {
+              children: [(0, r.jsx)(_.Z, {
                 product: t,
-                cardRef: v,
+                cardRef: S,
                 selectedVariantIndex: i
-              }), (0, r.jsx)(_.Z, {
+              }), (0, r.jsx)(C.Z, {
                 product: t,
-                cardRef: v,
+                cardRef: S,
                 selectedVariantIndex: i
               })]
             })

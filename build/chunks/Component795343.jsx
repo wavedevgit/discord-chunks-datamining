@@ -37,12 +37,12 @@ function T(e) {
   } = e, L = (0, d.sp)(), j = null != (t = null == L ? true : L.sessionId) ? t : "", {
     noCache: k,
     includeUnpublished: I
-  } = (0, S.Z)(), P = (0, s.e7)([c.default], () => c.default.getCurrentUser()), {
+  } = (0, v.Z)(), P = (0, s.e7)([c.default], () => c.default.getCurrentUser()), {
     skus: N,
     currentPage: B,
     totalCount: A,
     isFetchingResults: R
-  } = (0, _.a)(), Z = (0, s.Wu)([g.Z], () => g.Z.getProductsBySkus(N)), w = l.useCallback(() => {
+  } = (0, C.a)(), Z = (0, s.Wu)([g.Z], () => g.Z.getProductsBySkus(N)), w = l.useCallback(() => {
     var e;
     null == T || null == (e = T.current) || e.scrollToTop({
       animate: true
@@ -54,9 +54,9 @@ function T(e) {
   let H = (0, f.a)(),
     M = l.useMemo(() => H(Z), [H, Z]);
   l.useEffect(() => {
-    n || (0, C.n)({
+    n || (0, h.n)({
       sessionId: j,
-      checkpoint: C.a.SHOP_RENDERED,
+      checkpoint: h.a.SHOP_RENDERED,
       tab: y,
       isFullScreen: i,
       unpublishedCategoriesShown: I,
@@ -68,7 +68,7 @@ function T(e) {
       setQueryPageSize: W,
       setQueryPageOffset: U,
       queryPageSize: V
-    } = (0, h.S)(),
+    } = (0, _.S)(),
     [z, G] = l.useState(false),
     K = n || R || null == P;
   l.useEffect(() => {
@@ -101,7 +101,7 @@ function T(e) {
       className: a()({
         [O.productsEmpty]: q
       }),
-      children: [q && (0, r.jsx)(v.Z, {}), (0, r.jsxs)("div", {
+      children: [q && (0, r.jsx)(S.Z, {}), (0, r.jsxs)("div", {
         className: a()(O.products, {
           [O.loadIn]: z
         }),

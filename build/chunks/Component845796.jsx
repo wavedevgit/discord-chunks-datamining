@@ -25,25 +25,25 @@ let b = () => {
     sort: e,
     onSetSort: t,
     hasRelevanceFilters: n
-  } = (0, Chunk501431.S)(), i = (0, Chunk381585.sp)(), b = (0, Chunk642909.G)("CollectiblesSortSelect"), E = require(), S = Chunk647438.useMemo(() => Chunk215023.aP.filter(e => e.sortType !== o.E.RELEVANCE || E), [E]), v = Chunk647438.useCallback(e => {
+  } = (0, Chunk501431.S)(), i = (0, Chunk381585.sp)(), b = (0, Chunk642909.G)("CollectiblesSortSelect"), E = require(), v = Chunk647438.useMemo(() => Chunk215023.aP.filter(e => e.sortType !== o.E.RELEVANCE || E), [E]), S = Chunk647438.useCallback(e => {
     let {
       sortType: t,
       sortDirection: n
     } = e;
     return t === o.E.RECENCY ? {
-      label: _.intl.string(_.t["51Bhi4"]),
+      label: C.intl.string(C.t["51Bhi4"]),
       value: "recent"
     } : t === o.E.PRICE ? n === s.F.ASC ? {
-      label: _.intl.string(_.t.m8RVU1),
+      label: C.intl.string(C.t.m8RVU1),
       value: "price-asc"
     } : {
-      label: _.intl.string(_.t.zBwQJC),
+      label: C.intl.string(C.t.zBwQJC),
       value: "price-desc"
     } : t === o.E.RELEVANCE ? {
-      label: _.intl.string(_.t["XoeT//"]),
+      label: C.intl.string(C.t["XoeT//"]),
       value: "relevance"
     } : {
-      label: _.intl.string(_.t.Y68e5u),
+      label: C.intl.string(C.t.Y68e5u),
       value: "popularity"
     }
   }, []), x = Chunk647438.useCallback(e => ({
@@ -68,8 +68,8 @@ let b = () => {
       sortDirection: s.F.DESC
     }
   })[e], []), O = Chunk647438.useCallback(e => {
-    let n = v(x(e));
-    u.default.track(h.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+    let n = S(x(e));
+    u.default.track(_.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
       collectibles_shop_session_id: null == i ? true : i.sessionId,
       page_section: null == i ? true : i.pageSection,
       page_category: null == i ? true : i.pageCategory,
@@ -78,13 +78,13 @@ let b = () => {
       cta_name: "sort by ".concat(n.label.toLowerCase()),
       page_type: "catalog"
     }), t(x(e))
-  }, [Chunk120356, v, x, exports]), T = v(module);
+  }, [Chunk120356, S, x, exports]), T = S(module);
   return (0, Chunk951288.jsx)("div", {
     className: a()(Chunk182668.container, {
       [Chunk345213.shopTakeOver]: b
     }),
     children: (0, Chunk951288.jsx)(Chunk481060.PhF, {
-      options: S.map(v),
+      options: v.map(S),
       select: O,
       isSelected: e => e === T.value,
       serialize: e => e,

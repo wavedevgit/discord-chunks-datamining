@@ -42,7 +42,7 @@ let I = e => {
     prioritizeUserDiscounts: B,
     tab: A,
     buttonContainerClassName: R
-  } = e, Z = (0, s.e7)([d.default], () => d.default.getCurrentUser()), w = h.ZP.canUseCollectibles(Z), F = (0, T.G)("FeedBlock"), {
+  } = e, Z = (0, s.e7)([d.default], () => d.default.getCurrentUser()), w = _.ZP.canUseCollectibles(Z), F = (0, T.G)("FeedBlock"), {
     sortType: H,
     setSortType: M,
     sortedItems: D,
@@ -52,7 +52,7 @@ let I = e => {
   } = (0, x.Z)(I, w, B), z = (0, O.St)(D), G = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), K = (0, s.e7)([g.Z], () => g.Z.isFocused()), q = !G && K, {
     animationPhase: Y,
     startAnimation: X
-  } = (0, v.y)(), Q = (0, _.sp)(), J = null != (t = null == Q ? true : Q.sessionId) ? t : "", $ = l.useRef(null), ee = l.useCallback(e => {
+  } = (0, S.y)(), Q = (0, C.sp)(), J = null != (t = null == Q ? true : Q.sessionId) ? t : "", $ = l.useRef(null), ee = l.useCallback(e => {
     X({
       isShuffling: false,
       onOutroComplete: () => M(e)
@@ -147,7 +147,7 @@ let I = e => {
                 page_session_id: J
               })
             },
-            disabled: Y !== v.g.MOUNTED && Y !== v.g.FINISHED
+            disabled: Y !== S.g.MOUNTED && Y !== S.g.FINISHED
           })
         })]
       }) : null]
@@ -156,20 +156,20 @@ let I = e => {
       children: n ? (0, r.jsx)(r.Fragment, {
         children: [...Array(12)].map((e, t) => (0, r.jsx)(b.K, {}, t + 1))
       }) : z.slice(0, P).map((e, t) => {
-        let n, l = C.Z.getCategoryForProduct(e.skuId);
+        let n, l = h.Z.getCategoryForProduct(e.skuId);
         if (null == e || null == l) return null;
         if (q)
-          if (Y === v.g.SHUFFLE_OUT) return (0, r.jsx)("div", {
+          if (Y === S.g.SHUFFLE_OUT) return (0, r.jsx)("div", {
             className: k.shuffleOutro
           }, "".concat(e.skuId, "-").concat(t));
-          else Y === v.g.SORT_OUT ? n = k.sortChangedOutro : Y === v.g.SHUFFLE_IN ? n = k.shuffleIntro : Y === v.g.SORT_IN && (n = k.sortChangedIntro);
-        return (0, r.jsx)(_.k0, {
+          else Y === S.g.SORT_OUT ? n = k.sortChangedOutro : Y === S.g.SHUFFLE_IN ? n = k.shuffleIntro : Y === S.g.SORT_IN && (n = k.sortChangedIntro);
+        return (0, r.jsx)(C.k0, {
           newValue: {
             tilePosition: t,
             pageSection: "popular picks",
             categoryPosition: 2
           },
-          children: et ? (0, r.jsx)(S.Z, {
+          children: et ? (0, r.jsx)(v.Z, {
             skuId: null == e ? true : e.skuId
           }) : (0, r.jsx)(E.Z, {
             product: e,

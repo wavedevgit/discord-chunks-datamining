@@ -2,7 +2,7 @@
 /** chunk id: 501431, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => S,
+  A: () => v,
   S: () => b
 }), require("./388685.js"), require("./781311.js"), require("./642613.js"), require("./49124.js");
 var Chunk647438 = require("./647438.js"),
@@ -54,15 +54,15 @@ let f = {
     sortType: Chunk792091.E.RECENCY,
     sortDirection: Chunk497598.F.DESC
   },
-  h = {
+  _ = {
     sortType: Chunk792091.E.POPULARITY,
     sortDirection: Chunk497598.F.DESC
   },
-  _ = {
+  C = {
     sortType: Chunk792091.E.RELEVANCE,
     sortDirection: Chunk497598.F.DESC
   },
-  C = {
+  h = {
     itemTypeFilters: new Set,
     colorFilters: new Set,
     themeFilters: new Set,
@@ -83,9 +83,9 @@ let f = {
       searchQuery: r,
       itemTypeFilters: l
     } = e;
-    return t.size > 0 || n.size > 0 || "" !== r.trim() ? _ : l.size > 0 ? h : f
+    return t.size > 0 || n.size > 0 || "" !== r.trim() ? C : l.size > 0 ? _ : f
   },
-  b = (0, Chunk879690.U)((0, Chunk8058.XR)((e, t) => g(d({}, C), {
+  b = (0, Chunk879690.U)((0, Chunk8058.XR)((e, t) => g(d({}, h), {
     hasDefaultFilters: () => !t().hasFilters() && t().sort.sortType === f.sortType && t().sort.sortDirection === f.sortDirection,
     hasFilters: () => {
       let {
@@ -160,7 +160,7 @@ let f = {
           searchQuery: t,
           queryPageOffset: 0
         });
-        return "" !== t.trim() ? (n.sort = _, n.userHasSelectedSort = false) : e.userHasSelectedSort || (n.sort = m(n)), n
+        return "" !== t.trim() ? (n.sort = C, n.userHasSelectedSort = false) : e.userHasSelectedSort || (n.sort = m(n)), n
       })
     },
     setQueryPageSize: t => {
@@ -199,7 +199,7 @@ let f = {
         queryPageSize: n,
         queryPageOffset: r
       } = t();
-      e(g(d({}, C), {
+      e(g(d({}, h), {
         queryPageSize: n,
         queryPageOffset: r
       }))
@@ -238,7 +238,7 @@ let f = {
       search: "" !== a ? a : true
     }
   },
-  S = () => {
+  v = () => {
     let {
       onSetResponse: e,
       setSearchError: t,

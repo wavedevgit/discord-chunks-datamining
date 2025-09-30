@@ -27,33 +27,33 @@ let g = {
     }), i = (0, s.FF)("CollectiblesBrowse"), {
       setItemTypeFilter: p,
       reset: f,
-      setCurrentTab: h
-    } = (0, o.S)(), _ = r.useMemo(() => e !== u.AW.ORBS || n ? (0, u.RE)(e) && i ? u.AW.CATALOG : e : u.AW.HOME, [e, n, i]), [C, m] = r.useState(_), [b, E] = r.useState(u.f7.VISIBLE);
+      setCurrentTab: _
+    } = (0, o.S)(), C = r.useMemo(() => e !== u.AW.ORBS || n ? (0, u.RE)(e) && i ? u.AW.CATALOG : e : u.AW.HOME, [e, n, i]), [h, m] = r.useState(C), [b, E] = r.useState(u.f7.VISIBLE);
     r.useEffect(() => {
-      h(C)
-    }, [C, h]), r.useEffect(() => {
-      m(_)
-    }, [_]);
+      _(h)
+    }, [h, _]), r.useEffect(() => {
+      m(C)
+    }, [C]);
     let {
-      clearError: S
-    } = (0, c.a)(), v = (0, l.k6)(), x = r.useCallback(async (e, n) => {
-      if (S(), e === u.AW.CATALOG) f();
-      else if ((0, u.RE)(e) && e !== C) {
+      clearError: v
+    } = (0, c.a)(), S = (0, l.k6)(), x = r.useCallback(async (e, n) => {
+      if (v(), e === u.AW.CATALOG) f();
+      else if ((0, u.RE)(e) && e !== h) {
         let t = g[e];
         null != t ? p(t) : f()
       }
-      if (C === e) return;
+      if (h === e) return;
       if (n) {
         let e;
         E(u.f7.OUT), await (e = 1.1 * u.lb, new Promise(t => setTimeout(t, e)))
       }
       let r = i && ![u.AW.HOME, u.AW.ORBS].includes(e) ? u.AW.CATALOG : e;
-      m(r), n && E(u.f7.IN), t || v.push(d.Z5c.COLLECTIBLES_SHOP_WITH_TAB(r), {
+      m(r), n && E(u.f7.IN), t || S.push(d.Z5c.COLLECTIBLES_SHOP_WITH_TAB(r), {
         shallow: true
       }), E(u.f7.VISIBLE)
-    }, [v, t, i, p, f, C, S]);
+    }, [S, t, i, p, f, h, v]);
     return {
-      selectedTab: C,
+      selectedTab: h,
       transitionState: b,
       transitionToTab: x
     }

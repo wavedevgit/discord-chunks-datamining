@@ -23,33 +23,33 @@ let m = e => {
   var t, n, i, m;
   let b, {
     category: E,
-    subblock: S,
-    badgeText: v,
+    subblock: v,
+    badgeText: S,
     handleTransition: x
   } = e;
-  null != S && (b = null == (t = d.Z.getCategoryByStoreListingId(null == S ? true : S.categoryStoreListingId)) ? true : t.skuId);
+  null != v && (b = null == (t = d.Z.getCategoryByStoreListingId(null == v ? true : v.categoryStoreListingId)) ? true : t.skuId);
   let O = null != (n = null != b ? b : null == E ? true : E.skuId) ? n : "",
     {
       handleCardVisibilityChange: T
     } = (0, g.E)(O, "home", "marketing featured block"),
-    y = (0, p.YG)(E, S),
+    y = (0, p.YG)(E, v),
     L = l.useRef(null),
     j = O === f.tb,
     k = j ? "NAMEPLATES VOL.3" : null,
-    I = null == S ? true : S.bodyText,
+    I = null == v ? true : v.bodyText,
     P = (0, u.sp)();
   return (0, r.jsx)(s.$, {
     innerRef: L,
     onChange: T,
     threshold: 0,
     children: (0, r.jsxs)(o.P3F, {
-      className: C.featuredBlock,
+      className: h.featuredBlock,
       innerRef: L,
       style: {
         backgroundImage: "url(".concat(y, ")")
       },
       onClick: () => {
-        x("shop marketing tile", O), c.default.track(h.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+        x("shop marketing tile", O), c.default.track(_.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
           collectibles_shop_session_id: null == P ? true : P.sessionId,
           sku_id: O,
           page_type: "home",
@@ -60,38 +60,38 @@ let m = e => {
           cta_name: null
         })
       },
-      children: [null != v && (0, r.jsx)(o.IGR, {
+      children: [null != S && (0, r.jsx)(o.IGR, {
         disableColor: true,
-        text: v,
-        className: C.featuredBlockBadge
+        text: S,
+        className: h.featuredBlockBadge
       }), (0, r.jsxs)("div", {
-        className: C.featuredBlockTextContainer,
+        className: h.featuredBlockTextContainer,
         children: [null != k && (0, r.jsx)(o.X6q, {
           lineClamp: 2,
-          className: a()(C.featuredBlockTitleText, {
-            [C.featuredBlockTitleTextNameplate]: j
+          className: a()(h.featuredBlockTitleText, {
+            [h.featuredBlockTitleTextNameplate]: j
           }),
           style: {
-            color: null != (i = null == S ? true : S.bannerTextColor) ? i : "white"
+            color: null != (i = null == v ? true : v.bannerTextColor) ? i : "white"
           },
           variant: "heading-xl/semibold",
           children: k
         }), null != I && (0, r.jsx)(o.X6q, {
           lineClamp: null != k ? 2 : 4,
-          className: C.featuredBlockBodyText,
+          className: h.featuredBlockBodyText,
           style: {
-            color: null != (m = null == S ? true : S.bannerTextColor) ? m : "white"
+            color: null != (m = null == v ? true : v.bannerTextColor) ? m : "white"
           },
           variant: "heading-md/medium",
           children: I
         })]
       }), (0, r.jsx)("div", {
-        className: C.featuredBlockButtonContainer,
+        className: h.featuredBlockButtonContainer,
         children: (0, r.jsx)(o.zxk, {
           variant: "overlay-primary",
-          text: _.intl.string(_.t.jVcuVV),
+          text: C.intl.string(C.t.jVcuVV),
           onClick: e => {
-            x("shop marketing take me there button", O), e.stopPropagation(), c.default.track(h.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+            x("shop marketing take me there button", O), e.stopPropagation(), c.default.track(_.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
               collectibles_shop_session_id: null == P ? true : P.sessionId,
               sku_id: O,
               page_type: "home",

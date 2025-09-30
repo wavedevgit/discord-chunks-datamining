@@ -61,18 +61,18 @@ let D = e => {
       isFullScreen: t = true,
       tab: n = Z.AW.HOME
     } = e;
-    (0, h.z)(f.f), (0, L.f)();
+    (0, _.z)(f.f), (0, L.f)();
     let i = (0, g.Z)((0, s.Z)()),
       c = (0, o.e7)([E.default], () => E.default.getCurrentUser()),
       {
         userProfile: F,
         wishlistId: W
-      } = (0, o.cj)([_.Z], () => ({
-        userProfile: null != c ? _.Z.getUserProfile(c.id) : null,
-        wishlistId: null != c ? _.Z.getFirstWishlistId(c.id) : null
+      } = (0, o.cj)([C.Z], () => ({
+        userProfile: null != c ? C.Z.getUserProfile(c.id) : null,
+        wishlistId: null != c ? C.Z.getFirstWishlistId(c.id) : null
       }), [c]);
     l.useEffect(() => {
-      null != c && null == F && (0, C.Z)(c.id, c.getAvatarURL(null, 80))
+      null != c && null == F && (0, h.Z)(c.id, c.getAvatarURL(null, 80))
     }, [c, F]), (0, m.k)(W);
     let U = (0, R.G)("CollectiblesShop"),
       {
@@ -95,9 +95,9 @@ let D = e => {
       }),
       X = (0, y.O)(q),
       [Q, J] = l.useState(),
-      $ = (0, o.e7)([v.Z], () => {
+      $ = (0, o.e7)([S.Z], () => {
         var e;
-        return null == (e = v.Z.getCategory(Q)) ? true : e.name
+        return null == (e = S.Z.getCategory(Q)) ? true : e.name
       }),
       [ee, et] = l.useState();
     (0, P.Kp)();
@@ -138,7 +138,7 @@ let D = e => {
     } = (0, O.MV)(er);
     return ed && !t ? null : (0, r.jsx)(p.Gt, {
       value: eg,
-      children: (0, r.jsx)(S.k0, {
+      children: (0, r.jsx)(v.k0, {
         newValue: {
           sessionId: i,
           pageCategory: $,

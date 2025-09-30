@@ -66,7 +66,7 @@ function y(e) {
 function L(e) {
   let {
     category: t
-  } = e, n = (0, h.l)(t.products), l = (0, f.a)()(n);
+  } = e, n = (0, _.l)(t.products), l = (0, f.a)()(n);
   return (0, r.jsx)(y, {
     products: l,
     category: t
@@ -83,7 +83,7 @@ function j(e) {
   return (0, r.jsxs)("div", {
     className: T.categoryWrapper,
     ref: s,
-    children: [(0, r.jsx)(C.Z, {
+    children: [(0, r.jsx)(h.Z, {
       category: t
     }), (0, r.jsx)(L, {
       category: t
@@ -99,10 +99,10 @@ function k(e) {
     isFullScreen: s,
     currentPage: c,
     handlePageChange: u
-  } = e, g = (0, d.sp)(), f = (0, S.R)(), h = null != (t = null == g ? true : g.sessionId) ? t : "", {
-    noCache: C,
+  } = e, g = (0, d.sp)(), f = (0, v.R)(), _ = null != (t = null == g ? true : g.sessionId) ? t : "", {
+    noCache: h,
     includeUnpublished: b
-  } = (0, v.Z)(), E = l.useMemo(() => n.filter(e => null == e.unpublishedAt || e.unpublishedAt > new Date).filter(e => {
+  } = (0, S.Z)(), E = l.useMemo(() => n.filter(e => null == e.unpublishedAt || e.unpublishedAt > new Date).filter(e => {
     let {
       products: t
     } = e;
@@ -112,24 +112,24 @@ function k(e) {
     return E.slice(e, e + O.kN)
   }, [E, c]);
   l.useEffect(() => {
-    (0, _.n)({
-      sessionId: h,
-      checkpoint: _.a.SHOP_MOUNTED,
+    (0, C.n)({
+      sessionId: _,
+      checkpoint: C.a.SHOP_MOUNTED,
       tab: O.AW.CATALOG,
       isFullScreen: s,
       unpublishedCategoriesShown: b,
-      cacheDisabled: C
+      cacheDisabled: h
     })
   }, []), l.useEffect(() => {
-    f || 0 === x.length || (0, _.n)({
-      sessionId: h,
-      checkpoint: _.a.SHOP_RENDERED,
+    f || 0 === x.length || (0, C.n)({
+      sessionId: _,
+      checkpoint: C.a.SHOP_RENDERED,
       tab: O.AW.CATALOG,
       isFullScreen: s,
       unpublishedCategoriesShown: b,
-      cacheDisabled: C
+      cacheDisabled: h
     })
-  }, [h, s, b, C, f, x.length]);
+  }, [_, s, b, h, f, x.length]);
   let y = (0, p.FF)("CollectiblesBrowse");
   return f ? (0, r.jsx)(m.Z, {}) : (0, r.jsxs)("div", {
     className: a()(T.categories, {

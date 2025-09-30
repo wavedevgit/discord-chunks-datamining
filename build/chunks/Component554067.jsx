@@ -2,7 +2,7 @@
 /** chunk id: 554067, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => _
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,22 +17,22 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk535333 = require("./535333.js");
 
-function h(e) {
+function _(e) {
   let {
     handleTransition: t,
     selectedTab: n
   } = e, {
-    searchQuery: h,
-    onSetSearchQuery: _
-  } = (0, u.S)(), [C, m] = l.useState(""), b = (0, c.sp)(), E = (0, i.e7)([s.default], () => s.default.locale);
+    searchQuery: _,
+    onSetSearchQuery: C
+  } = (0, u.S)(), [h, m] = l.useState(""), b = (0, c.sp)(), E = (0, i.e7)([s.default], () => s.default.locale);
   return l.useEffect(() => {
     let e = setTimeout(() => {
-      _(C)
+      C(h)
     }, 250);
     return () => clearTimeout(e)
-  }, [C, _]), l.useEffect(() => {
-    m(h)
-  }, [h]), (0, r.jsx)(a.P3F, {
+  }, [h, C]), l.useEffect(() => {
+    m(_)
+  }, [_]), (0, r.jsx)(a.P3F, {
     ignoreKeyPress: true,
     className: f.searchBar,
     onClick: () => {
@@ -49,9 +49,9 @@ function h(e) {
     children: (0, r.jsx)(a.E1j, {
       size: "sm",
       onKeyDown: e => {
-        "Enter" === e.key && _(C)
+        "Enter" === e.key && C(h)
       },
-      query: C,
+      query: h,
       onChange: m,
       onClear: () => {
         m(""), o.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {

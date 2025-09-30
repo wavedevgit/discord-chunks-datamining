@@ -40,9 +40,9 @@ let I = e => {
       tab: c,
       isFullScreen: u
     } = e, {
-      noCache: _,
+      noCache: C,
       includeUnpublished: O
-    } = (0, C.Z)(), [L, I] = l.useState(false), P = (0, d.sp)(), N = null != (t = null == P ? true : P.sessionId) ? t : "";
+    } = (0, h.Z)(), [L, I] = l.useState(false), P = (0, d.sp)(), N = null != (t = null == P ? true : P.sessionId) ? t : "";
     l.useEffect(() => {
       (0, f.n)({
         sessionId: N,
@@ -50,7 +50,7 @@ let I = e => {
         tab: c,
         isFullScreen: u,
         unpublishedCategoriesShown: O,
-        cacheDisabled: _
+        cacheDisabled: C
       })
     }, [c]);
     let {
@@ -59,7 +59,7 @@ let I = e => {
       shopBlocks: R,
       refreshShopHome: Z
     } = (0, p.E)(c, {
-      noCache: _,
+      noCache: C,
       includeUnpublished: O,
       includeBundles: true,
       logPerf: true
@@ -77,15 +77,15 @@ let I = e => {
         tab: c,
         isFullScreen: u,
         unpublishedCategoriesShown: O,
-        cacheDisabled: _
+        cacheDisabled: C
       })
-    }, [A, B, R.length, O, _, N, c, u]), null != A) ? (0, r.jsx)(h.Z, {
+    }, [A, B, R.length, O, C, N, c, u]), null != A) ? (0, r.jsx)(_.Z, {
       onRetry: w,
-      errorOrigin: h.i.SHOP_PAGE,
+      errorOrigin: _.i.SHOP_PAGE,
       errorMessage: A.message
     }) : B || 0 === R.length ? (0, r.jsxs)("div", {
       className: a()(k.loadingContainer, k.feedContent),
-      children: [(0, r.jsx)(S.Z, {
+      children: [(0, r.jsx)(v.Z, {
         isLoading: B,
         handleTransition: n,
         tab: c
@@ -107,7 +107,7 @@ let I = e => {
           p = false;
         switch (e.type) {
           case s.z.HERO:
-            d = (0, r.jsx)(S.Z, {
+            d = (0, r.jsx)(v.Z, {
               isLoading: B,
               handleTransition: n,
               heroBlock: e,
@@ -156,7 +156,7 @@ let I = e => {
             }, l), p = true;
             break;
           case s.z.IMMERSIVE_BANNER:
-            d = (0, r.jsx)(v.Z, {
+            d = (0, r.jsx)(S.Z, {
               immersiveBannerBlock: e,
               onVisibilityChange: e => I(!e)
             }, l);
@@ -184,20 +184,20 @@ let I = e => {
       transitionState: a
     } = e, s = l.useRef(null), {
       handleScroll: g
-    } = (0, c.z)(s, i), p = (0, _.R)(), f = (0, d.sp)(), [h, C] = l.useState(y.IV), [m, b] = l.useState(false);
+    } = (0, c.z)(s, i), p = (0, C.R)(), f = (0, d.sp)(), [_, h] = l.useState(y.IV), [m, b] = l.useState(false);
     return l.useEffect(() => {
       if (null != s.current) {
         let e = () => {
             if (null == s.current) return;
             let e = s.current.getDistanceFromBottom();
-            h >= 36 ? b(e < 20) : e <= 200 && C(e => e + y.IV)
+            _ >= 36 ? b(e < 20) : e <= 200 && h(e => e + y.IV)
           },
           t = s.current.getScrollerNode();
         return null == t || t.addEventListener("scroll", e), () => {
           null == t || t.removeEventListener("scroll", e)
         }
       }
-    }, [s, h, C, b]), (0, r.jsx)(o.Den, {
+    }, [s, _, h, b]), (0, r.jsx)(o.Den, {
       className: k.shopScroll,
       ref: s,
       onScroll: g,
@@ -207,11 +207,11 @@ let I = e => {
           className: k.mainContent,
           children: [(0, r.jsx)(I, {
             handleTransition: n,
-            numVisibleItems: h,
+            numVisibleItems: _,
             isFetchingCategories: p,
             tab: i,
             isFullScreen: t
-          }), i !== y.AW.CATALOG && h >= 36 && (0, r.jsxs)("div", {
+          }), i !== y.AW.CATALOG && _ >= 36 && (0, r.jsxs)("div", {
             className: k.endOfFeed,
             children: [(0, r.jsx)(o.X6q, {
               variant: "heading-md/semibold",

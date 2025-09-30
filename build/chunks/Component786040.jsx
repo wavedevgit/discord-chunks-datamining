@@ -44,41 +44,41 @@ let T = (e, t, n, r) => {
     })
   },
   y = (e, t) => {
-    let n = (0, h.Nd)(),
+    let n = (0, _.Nd)(),
       r = null == n ? true : n.tab,
       i = (0, f.Vc)(),
       u = null == i ? true : i.blockType,
       p = (0, d.sp)(),
       {
-        analyticsLocations: _
+        analyticsLocations: C
       } = (0, c.ZP)(o.Z.COLLECTIBLES_SHOP_CARD),
       m = (0, s.e7)([g.Z], () => g.Z.getCategoryForProduct(e.skuId)),
       b = l.useRef(null),
-      E = (0, v.G)("useHandlePreviewClick"),
+      E = (0, S.G)("useHandlePreviewClick"),
       O = null != u && u === a.z.HERO && E ? x.Ch.THUMBNAIL : x.Ch.DEFAULT;
     return l.useCallback(t => n => {
       if (null == m) return;
-      let l = (0, S.oQ)({
+      let l = (0, v.oQ)({
         product: e
       });
-      b.current = n.currentTarget, T(e, r, p, null), (0, C.T)({
+      b.current = n.currentTarget, T(e, r, p, null), (0, h.T)({
         product: e,
         category: m,
         shouldCheckoutWithOrbs: l,
-        analyticsLocations: _,
+        analyticsLocations: C,
         analyticsSource: t,
         returnRef: b,
         tab: r,
         variantType: O
       })
-    }, [e, r, m, _, p, O])(t)
+    }, [e, r, m, C, p, O])(t)
   },
   L = e => {
     let {
       previewingVariantIndex: t,
       handleEntering: n,
       handleLeaving: a
-    } = (0, E.f)(e), o = (0, s.e7)([p.Z], () => p.Z.purchases), c = (0, _.o)(e, o), u = (0, b.o)(e, o, t), [d, g] = l.useState(false);
+    } = (0, E.f)(e), o = (0, s.e7)([p.Z], () => p.Z.purchases), c = (0, C.o)(e, o), u = (0, b.o)(e, o, t), [d, g] = l.useState(false);
     if (e.type === i.Z.VARIANTS_GROUP) {
       let l = (0, r.jsx)(m.P, {
         variantGroupProduct: e,

@@ -2,7 +2,7 @@
 /** chunk id: 531864, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => _
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -91,12 +91,12 @@ let p = {
     size: p,
     skuId: "1217625794382401577"
   }],
-  h = e => {
+  _ = e => {
     let {
       peaking: t,
       transitioning: n,
       style: i
-    } = e, p = window.innerHeight, [h, _] = l.useState(false), C = f.map(e => {
+    } = e, p = window.innerHeight, [_, C] = l.useState(false), h = f.map(e => {
       let {
         skuId: t
       } = e;
@@ -104,13 +104,13 @@ let p = {
     });
     return l.useEffect(() => {
       n && setTimeout(() => {
-        _(true)
+        C(true)
       }, d.lb)
     }, [n]), (0, r.jsx)("div", {
       style: i,
       className: a()(g.jumbleWrapper, {
         [g.peaking]: t,
-        [g.transitioned]: h
+        [g.transitioned]: _
       }),
       children: f.map((e, t) => {
         var l, i;
@@ -118,17 +118,17 @@ let p = {
           top: a,
           left: c,
           rotation: f,
-          size: h,
-          skuId: _
-        } = e, m = null == (l = C[t]) ? true : l.items[0], b = null == (i = C[t]) ? true : i.type, E = b === s.Z.AVATAR_DECORATION ? 384 : 512;
+          size: _,
+          skuId: C
+        } = e, m = null == (l = h[t]) ? true : l.items[0], b = null == (i = h[t]) ? true : i.type, E = b === s.Z.AVATAR_DECORATION ? 384 : 512;
         return (0, r.jsxs)("div", {
           className: g.asset,
           style: {
             top: n ? -p - E : a,
             left: n ? "".concat(c - 75 - 350 * Math.random()) : c,
             transform: "rotate(".concat(f, "deg)"),
-            height: h.y,
-            width: h.x,
+            height: _.y,
+            width: _.x,
             transitionDelay: "".concat(Math.random() / 3, "s"),
             transitionDuration: "".concat(d.lb - 200 * Math.random(), "ms")
           },
@@ -139,7 +139,7 @@ let p = {
             isPurchased: false,
             isHovering: true
           })]
-        }, _ + t)
+        }, C + t)
       })
     })
   }
