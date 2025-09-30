@@ -591,7 +591,7 @@ class e9 extends Chunk647438.PureComponent {
       var t, n;
       let r = null == (t = this.editorRef) ? true : t.getSlateEditor();
       null != r && (G.Q.select(r, []), r.insertText(e), null == (n = this.editorRef) || n.focus())
-    }), e2(this, "renderAttachButton", (e, t) => (0, r.jsx)(V.Z, {
+    }), e2(this, "renderAttachButton", (e, t) => (0, r.jsx)(F.Z, {
       className: t,
       channel: this.props.channel,
       draftType: ej.d.ChannelMessage,
@@ -710,7 +710,7 @@ class te extends Chunk647438.PureComponent {
         guildId: null == Chunk827498 ? true : Chunk827498.guild_id,
         location: "ChannelChat"
       }),
-      V = Chunk516887 && null != Chunk541099 && null != Chunk827498 && null != Chunk827498.guild_id;
+      F = Chunk516887 && null != Chunk541099 && null != Chunk827498 && null != Chunk827498.guild_id;
     return (0, Chunk951288.jsx)(Chunk410575.Z, {
       page: (0, Chunk934415.mE)(this.props.channel),
       children: (0, Chunk951288.jsx)(Chunk549006.sW, {
@@ -882,7 +882,7 @@ class te extends Chunk647438.PureComponent {
         entryPointCommandButtonRef: t,
         chatInputType: n
       } = this.props;
-      return (0, r.jsx)(eF.Z, {
+      return (0, r.jsx)(eV.Z, {
         channel: e,
         type: n,
         animateRef: this.appIconAnimateRef,
@@ -919,7 +919,7 @@ let tt = Chunk647438.memo(function(e) {
   } = e, {
     placeholder: o,
     accessibilityLabel: s
-  } = (0, eV.Z)({
+  } = (0, eF.Z)({
     channel: t
   }), c = (0, ed.S)(eN.default.getCurrentUser(), t), [u] = (0, X.AB)(null == n ? true : n.id), h = (0, q.Ux)(null == n ? true : n.id), f = (0, d.e7)([eN.default], () => eN.default.getCurrentUser()), m = (0, d.e7)([eS.ZP], () => {
     var e, t, r;
@@ -954,9 +954,9 @@ let tt = Chunk647438.memo(function(e) {
     U = (0, d.e7)([eO.Z], () => eO.Z.getChannel(D)),
     B = (0, d.e7)([eN.default], () => t.type !== eJ.d4z.DM ? null : eN.default.getUser(t.getRecipientId())),
     H = (0, d.e7)([es.ZP, ev.default], () => es.ZP.getUserCombo(ev.default.getId(), t.id)),
-    V = (0, b.iD)(t),
-    F = (0, b.d7)(t),
-    G = V.length > 0 || t.rateLimitPerUser > 0 || null != H || null != F,
+    F = (0, b.iD)(t),
+    V = (0, b.d7)(t),
+    G = F.length > 0 || t.rateLimitPerUser > 0 || null != H || null != V,
     {
       showLinkedLobbyApplicationLoadingIndicator: W
     } = (0, eH.Z)(t.linkedLobby),

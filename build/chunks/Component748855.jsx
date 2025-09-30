@@ -60,11 +60,11 @@ function f(e) {
           }
           return e
         }({}, e), n = n = {
-          className: p.centerAlign,
+          className: a()(p.centerAlign, p.favoriteIcon),
           onClick: C,
           children: (0, r.jsx)(_, {
             className: p.closeIcon,
-            color: f ? s.Z.colors.ICON_FEEDBACK_WARNING : true
+            color: f ? s.Z.colors.ICON_FEEDBACK_WARNING : "currentColor"
           })
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);

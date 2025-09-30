@@ -89,7 +89,7 @@ function H(e) {
   })
 }
 
-function V(e) {
+function F(e) {
   let {
     user: t,
     channel: n,
@@ -111,7 +111,7 @@ function V(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   let t, {
       focusedApplication: n,
       focusedParticipant: i,
@@ -143,7 +143,7 @@ function F(e) {
     t = (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(y.ZP.Divider, {
         className: L.divider
-      }), (0, r.jsx)(V, {
+      }), (0, r.jsx)(F, {
         user: e,
         channel: l,
         stream: n,
@@ -190,7 +190,7 @@ function G(e) {
         className: l()(L.channelStatusClickable, {
           [L.hoverable]: M
         }),
-        onClick: M ? V : true,
+        onClick: M ? F : true,
         children: [(0, r.jsx)(o.Text, {
           variant: "text-xs/normal",
           className: l()(L.channelStatus, D.markup, {
@@ -209,7 +209,7 @@ function G(e) {
       }))
     }) : null;
 
-  function V() {
+  function F() {
     (0, o.ZDy)(async () => {
       let {
         default: e
@@ -261,7 +261,7 @@ function G(e) {
         }), (0, r.jsx)(_.TS, {
           channel: t,
           guild: i
-        }), (0, r.jsx)(F, {
+        }), (0, r.jsx)(V, {
           focusedApplication: E,
           focusedParticipant: g,
           channel: t

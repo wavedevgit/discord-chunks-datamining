@@ -61,7 +61,7 @@ function H(e) {
   return e
 }
 
-function V(e, t) {
+function F(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -74,7 +74,7 @@ function V(e, t) {
   }), e
 }
 
-function F(e) {
+function V(e) {
   let {
     channel: t
   } = e, l = t.isArchivedThread(), a = (0, O.P0)(t), [o, u] = i.useState(false), d = () => {
@@ -230,11 +230,11 @@ function G(e) {
         })]
       }), (0, r.jsxs)("div", {
         className: D.buttons,
-        children: [en ? (0, r.jsx)(F, {
+        children: [en ? (0, r.jsx)(V, {
           channel: Y
         }) : (0, r.jsx)(c.ua7, {
           text: k.intl.string(k.t.F7oeDg),
-          children: e => (0, r.jsx)(c.zxk, V(H({}, e), {
+          children: e => (0, r.jsx)(c.zxk, F(H({}, e), {
             icon: eh,
             size: "sm",
             variant: "secondary",
@@ -243,13 +243,13 @@ function G(e) {
           }))
         }), (0, r.jsx)(c.ua7, {
           text: k.intl.string(k.t.WqhZsr),
-          children: e => W ? (0, r.jsx)(c.zxk, V(H({}, e), {
+          children: e => W ? (0, r.jsx)(c.zxk, F(H({}, e), {
             icon: c.dz2,
             size: "sm",
             variant: "secondary",
             onClick: ed,
             text: k.intl.string(k.t["t5VZ8/"])
-          })) : (0, r.jsx)(c.hU, V(H({}, e), {
+          })) : (0, r.jsx)(c.hU, F(H({}, e), {
             icon: c.xPt,
             size: "sm",
             variant: "secondary",
@@ -258,7 +258,7 @@ function G(e) {
           }))
         }), !n && (0, r.jsx)(c.ua7, {
           text: k.intl.string(k.t.nFP4oa),
-          children: e => (0, r.jsx)(c.hU, V(H({}, e), {
+          children: e => (0, r.jsx)(c.hU, F(H({}, e), {
             icon: c.Za2,
             size: "sm",
             variant: "secondary",

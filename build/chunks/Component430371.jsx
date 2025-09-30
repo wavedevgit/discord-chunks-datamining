@@ -78,8 +78,8 @@ function I(e) {
       layout: B,
       idle: H
     } = e,
-    V = null != A,
-    F = h.Z.getVideoComponent(),
+    F = null != A,
+    V = h.Z.getVideoComponent(),
     G = p.default.getId(),
     [z, W] = i.useState(null),
     q = (0, c.Z)(z),
@@ -200,7 +200,7 @@ function I(e) {
                   noBorder: ed >= D || eu >= U,
                   channel: M,
                   className: x.focusedVideo,
-                  videoComponent: F,
+                  videoComponent: V,
                   width: D,
                   participant: t,
                   onClick: l,
@@ -208,7 +208,7 @@ function I(e) {
                   onContextMenu: I,
                   onVideoResize: ev,
                   inCall: w,
-                  inPopout: V
+                  inPopout: F
                 })
               }, i) : null
             })

@@ -57,8 +57,8 @@ function S(e) {
     U = (null == w ? true : w.afkChannelId) === I.id,
     B = I.userLimit <= 0 || I.userLimit > 1,
     H = (0, o.e7)([c.ZP], () => c.ZP.getEmbeddedActivitiesForChannel(I.id).length <= 0),
-    V = (0, h.Nj)(s.z.VC_TILE_ACTIVITIES_ENTRY_POINT),
-    F = (0, u.KF)(I.id) !== u.jy.CAN_LAUNCH,
+    F = (0, h.Nj)(s.z.VC_TILE_ACTIVITIES_ENTRY_POINT),
+    V = (0, u.KF)(I.id) !== u.jy.CAN_LAUNCH,
     G = null != M && M === I.id,
     z = k.map(e => t => (0, r.jsx)(v.ZP, {
       participant: e,
@@ -82,7 +82,7 @@ function S(e) {
     }
   }, {
     trackOnInitialLoad: true
-  }, []), null != w && !U && (!(R >= 2) || !H || F || V || G ? B && 1 === R && D && (H && !F ? z.push(e => (0, r.jsx)(_.h, {
+  }, []), null != w && !U && (!(R >= 2) || !H || V || F || G ? B && 1 === R && D && (H && !V ? z.push(e => (0, r.jsx)(_.h, {
     channel: I,
     guild: w,
     width: e,

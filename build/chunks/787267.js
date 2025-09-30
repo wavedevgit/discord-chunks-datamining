@@ -2,6 +2,7 @@
 /** chunk id: 787267, original params: e,t,n (module,exports,require) **/
 module.exports = {
   container: "container__7116a",
+  inputGroup: "inputGroup__7116a",
   group: "group__7116a",
   scroller: "scroller__7116a",
   separator: "separator__7116a",

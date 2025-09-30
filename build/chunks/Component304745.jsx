@@ -44,8 +44,8 @@ function S(e) {
     "focus" !== e.type && M()
   }, [M]), B = (0, C.bp)() === O.IlC.POPOUT, {
     parentAnalyticsLocation: H,
-    newestAnalyticsLocation: V
-  } = (0, m.ZP)(), F = i.useCallback(() => {
+    newestAnalyticsLocation: F
+  } = (0, m.ZP)(), V = i.useCallback(() => {
     (0, b.v)(H, b.d.ACTIVITY), (0, g.Z)({
       context: null != t ? {
         type: "channel",
@@ -54,9 +54,9 @@ function S(e) {
         type: "contextless"
       },
       openInPopout: B,
-      analyticsLocation: V
+      analyticsLocation: F
     })
-  }, [t, B, V, H]), G = [];
+  }, [t, B, F, H]), G = [];
   N || G.push(a.z.ACTIVITIES_MINI_SHELF_SPARKLES), (0, p.Z)(t.id) && !N && G.push(a.z.ACTIVITY_GDM_ROCKET_SPARKLE), N || G.push(a.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP);
   let z = i.useRef(false),
     W = i.useRef(null);
@@ -138,7 +138,7 @@ function S(e) {
                       label: D ? true : T,
                       isActivityActive: L,
                       onClick: () => {
-                        F(), (i === a.z.ACTIVITIES_MINI_SHELF_SPARKLES || i === a.z.ACTIVITY_GDM_ROCKET_SPARKLE || i === a.z.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_1_SPARKLES || i === a.z.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_2_SPARKLES || i === a.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP) && l(j.L.TAKE_ACTION), t === a.z.ACTIVITIES_VOICE_LAUNCHER_BADGE && n(j.L.TAKE_ACTION)
+                        V(), (i === a.z.ACTIVITIES_MINI_SHELF_SPARKLES || i === a.z.ACTIVITY_GDM_ROCKET_SPARKLE || i === a.z.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_1_SPARKLES || i === a.z.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_2_SPARKLES || i === a.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP) && l(j.L.TAKE_ACTION), t === a.z.ACTIVITIES_VOICE_LAUNCHER_BADGE && n(j.L.TAKE_ACTION)
                       },
                       onMouseEnter: U,
                       onMouseLeave: R
