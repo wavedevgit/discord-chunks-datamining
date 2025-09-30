@@ -114,14 +114,16 @@ function O() {
     id: e,
     onKeyDown: t,
     ref: n,
-    tabIndex: r
+    tabIndex: r,
+    orientation: a
   } = Chunk647438.useContext(h);
   return {
     role: "list",
     tabIndex: Chunk951288,
     [Chunk260866.kn]: module,
     onKeyDown: exports,
-    ref: require
+    ref: require,
+    "aria-orientation": Chunk25441
   }
 }
 
@@ -140,7 +142,8 @@ function v(e) {
     onKeyDown: n,
     ref: r,
     [s.kn]: t,
-    tabIndex: i
+    tabIndex: i,
+    "aria-orientation": a
   }
 }
 
