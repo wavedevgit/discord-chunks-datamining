@@ -37,7 +37,7 @@ function O(e) {
     categories: _,
     purchases: f,
     analyticsLocations: x,
-    onClose: P,
+    onClose: I,
     guildId: O,
     initialSelectedNameplate: E
   } = e, k = (0, a.e7)([b.ZP], () => null != O && null != c ? b.ZP.getMember(O, c.id) : null), A = null != k ? null == k || null == (t = k.collectibles) ? true : t.nameplate : null == c || null == (n = c.collectibles) ? true : n.nameplate, {
@@ -54,12 +54,12 @@ function O(e) {
     product: N,
     purchase: L
   } = (0, p.Z)(null == Z ? true : Z.skuId), D = C.ZP.canUseCollectibles(c), M = true === T ? (null == Z ? true : Z.skuId) === (null == A ? true : A.skuId) : (null == Z ? true : Z.skuId) === (null == T ? true : T.skuId), U = (0, i.useCallback)(e => {
-    P(), (0, d.mK)({
+    I(), (0, d.mK)({
       analyticsLocations: x,
       analyticsSource: s.Z.EDIT_NAMEPLATE_MODAL,
       initialProductSkuId: e
     })
-  }, [x, P]);
+  }, [x, I]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(l.xBx, {
       "data-migration-pending": true,
@@ -71,13 +71,13 @@ function O(e) {
       }), (0, r.jsx)(l.olH, {
         "data-migration-pending": true,
         className: S.closeButton,
-        onClick: P
+        onClick: I
       })]
     }), (0, r.jsxs)(l.hzk, {
       "data-migration-pending": true,
       className: S.content,
       scrollbarType: "none",
-      children: [(0, r.jsx)(I.Z, {
+      children: [(0, r.jsx)(P.Z, {
         currentUser: c,
         selectedNameplate: Z,
         guildId: O,
@@ -95,7 +95,7 @@ function O(e) {
         variant: "primary",
         text: j.intl.string(j.t.Jh8fJy),
         onClick: () => {
-          null != O ? (0, m.RH)(Z) : (0, o.Rx)(Z), P()
+          null != O ? (0, m.RH)(Z) : (0, o.Rx)(Z), I()
         },
         disabled: M
       }) : null == L && (D || !(0, u.G1)(N)) ? (0, r.jsx)(l.zxk, {
@@ -110,11 +110,11 @@ function O(e) {
         }
       }), !D && (0, u.G1)(N) ? (0, r.jsx)(h.Z, {
         product: N,
-        onClose: P
+        onClose: I
       }) : (0, r.jsx)(l.zxk, {
         variant: "secondary",
         text: j.intl.string(j.t["ETE/oK"]),
-        onClick: P
+        onClick: I
       })]
     })]
   })
@@ -136,8 +136,8 @@ function E(e) {
     isFetchingPurchases: b
   } = (0, _.ZP)(), C = g || b && 0 === v.size;
   return ((0, i.useEffect)(() => {
-    x.default.track(P.rMx.OPEN_MODAL, {
-      type: P.jXE.NAMEPLATE_CUSTOMIZATION,
+    x.default.track(I.rMx.OPEN_MODAL, {
+      type: I.jXE.NAMEPLATE_CUSTOMIZATION,
       location_stack: m
     })
   }, [m]), null == p) ? null : (0, r.jsx)(c.Gt, {

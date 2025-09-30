@@ -26,7 +26,7 @@ let g = e => {
   } = e, g = (0, l.e7)([_.Z], () => _.Z.getPendingGlobalName()), {
     product: b,
     purchase: f
-  } = (0, c.Z)(null == i ? true : i.skuId), x = (0, p.kd)(b), C = m.ZP.canUseCollectibles(t), w = (0, s.qS)(f), I = (0, s.G1)(b), P = !C && w, y = null == f || P;
+  } = (0, c.Z)(null == i ? true : i.skuId), x = (0, p.kd)(b), C = m.ZP.canUseCollectibles(t), w = (0, s.qS)(f), P = (0, s.G1)(b), I = !C && w, y = null == f || I;
   return (0, r.jsxs)("div", {
     className: a()(v.previewBorder, {
       [v.upsell]: null != i && y
@@ -62,7 +62,7 @@ let g = e => {
         children: x
       }), y && (0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
-        children: P ? h.intl.string(h.t.nD78oa) : I && C ? h.intl.string(h.t.hmyYKy) : I ? h.intl.string(h.t.JY1i0t) : h.intl.string(h.t.fEGjVV)
+        children: I ? h.intl.string(h.t.nD78oa) : P && C ? h.intl.string(h.t.hmyYKy) : P ? h.intl.string(h.t.JY1i0t) : h.intl.string(h.t.fEGjVV)
       })]
     })]
   })

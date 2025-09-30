@@ -34,7 +34,7 @@ let p = e => {
     discountOfferAmount: b,
     discount: h = s.f_,
     variant: g = "heading-md/semibold"
-  } = e, y = null != b, m = (0, o.qr)(t, r), O = h !== s.f_ && h.discountPercentage >= 5 && !y ? (0, n.jsxs)(n.Fragment, {
+  } = e, y = null != b, m = (0, o.qr)(t, r), v = h !== s.f_ && h.discountPercentage >= 5 && !y ? (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsx)(a.nn4, {
       children: c.intl.format(c.t.niC6DA, {
         price: m,
@@ -113,7 +113,7 @@ let p = e => {
       size: p,
       color: "currentColor",
       className: u.nitroIcon
-    }) : null, O, y && (0, n.jsxs)(a.X6q, {
+    }) : null, v, y && (0, n.jsxs)(a.X6q, {
       variant: "heading-md/semibold",
       className: u.discountPill,
       children: [(0, n.jsx)(a.nn4, {

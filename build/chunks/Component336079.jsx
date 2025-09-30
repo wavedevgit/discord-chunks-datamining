@@ -45,8 +45,8 @@ let p = (0, Chunk647438.createContext)({
       }
     }, [g, h]), {
       redeemVirtualCurrency: m,
-      isSubmitting: O,
-      error: v
+      isSubmitting: v,
+      error: O
     } = (0, d.f)(), j = (0, l.useCallback)(e => {
       m(t, r, r => {
         f({
@@ -62,8 +62,8 @@ let p = (0, Chunk647438.createContext)({
         analyticsLocations: null != i ? i : [],
         orbProductContext: y,
         onRedeemVirtualCurrency: j,
-        isRedeeming: O,
-        orbRedemptionError: v
+        isRedeeming: v,
+        orbRedemptionError: O
       },
       children: b
     })

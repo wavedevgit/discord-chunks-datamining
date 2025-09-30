@@ -38,7 +38,7 @@ function m(e) {
   return e
 }
 
-function O(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -51,7 +51,7 @@ function O(e, t) {
   }), e
 }
 
-function v(e, t) {
+function O(e, t) {
   if (null == e) return {};
   var r, n, l = function(e, t) {
     if (null == e) return {};
@@ -88,14 +88,14 @@ let j = s()(e => {
       isPurchased: _
     } = (0, h.L)(r), E = (0, c.JA)("shop-variants-group-".concat(t.storeListingId, "-").concat(i)), {
       onFocus: x
-    } = E, C = v(E, ["onFocus"]), S = l.useCallback(e => {
+    } = E, C = O(E, ["onFocus"]), S = l.useCallback(e => {
       e.preventDefault(), e.stopPropagation(), (0, b.$)(t, i), x()
     }, [x, t, i]);
     return (0, n.jsx)(p.ua7, {
       text: g.intl.string(g.t["6cfuDg"]),
       "aria-label": false,
       shouldShow: !P && _,
-      children: e => (0, n.jsx)(p.P3F, O(m({}, C), {
+      children: e => (0, n.jsx)(p.P3F, v(m({}, C), {
         tag: "li",
         onMouseEnter: () => {
           var t;
@@ -155,8 +155,8 @@ let j = s()(e => {
           var t, {
               ref: r
             } = e,
-            c = v(e, ["ref"]);
-          return (0, n.jsxs)("div", O(m({
+            c = O(e, ["ref"]);
+          return (0, n.jsxs)("div", v(m({
             ref: r
           }, c), {
             className: a()(y.variantsPanel, i, {

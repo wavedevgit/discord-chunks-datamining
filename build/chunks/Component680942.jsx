@@ -23,8 +23,8 @@ let m = e => {
     product: t,
     primary: r,
     selectedVariantIndex: m,
-    returnRef: O,
-    onSuccess: v,
+    returnRef: v,
+    onSuccess: O,
     tooltipDelay: j
   } = e, {
     analyticsLocations: P
@@ -75,10 +75,10 @@ let m = e => {
             isGift: true,
             giftingOrigin: g.Wt.SHOP_PAGE,
             analyticsLocations: P,
-            returnRef: O,
+            returnRef: v,
             variantsReturnStyle: a.v.VARIANTS_GROUP,
-            onClose: null != v ? e => {
-              e && v()
+            onClose: null != O ? e => {
+              e && O()
             } : true
           })
         }

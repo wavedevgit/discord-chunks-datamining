@@ -62,7 +62,7 @@ let _ = e => {
     } = e;
     return (0, n.jsxs)(i.Text, {
       variant: "text-md/semibold",
-      className: v.orbAmountTag,
+      className: O.orbAmountTag,
       children: [(0, n.jsx)(y.Z, {
         shouldUseThemeColor: true,
         customSize: 14
@@ -94,15 +94,15 @@ let _ = e => {
       variant: "active",
       type: "submit",
       "data-testid": "submitButton",
-      text: O.intl.string(O.t.wmcDys)
+      text: v.intl.string(v.t.wmcDys)
     }, s);
     return null === r ? (0, n.jsx)(i.ua7, {
-      text: O.intl.string(O.t["c/rcUl"]),
+      text: v.intl.string(v.t["c/rcUl"]),
       children: e => (0, n.jsx)(l.zxk, P(j({}, e, c), {
         disabled: true
       }))
     }) : null === t || r > t ? (0, n.jsx)(i.ua7, {
-      text: O.intl.string(O.t.keFvXF),
+      text: v.intl.string(v.t.keFvXF),
       children: e => (0, n.jsx)(l.zxk, P(j({}, e, c), {
         disabled: true
       }))
@@ -127,7 +127,7 @@ let _ = e => {
     return true === a ? (0, n.jsx)(h.aO, {
       children: (0, n.jsx)(i.$jN, {
         type: i.$jN.Type.PULSING_ELLIPSIS,
-        className: v.purchaseDetailsSpinner
+        className: O.purchaseDetailsSpinner
       })
     }) : (0, n.jsx)(b.E, {
       sku: a,
@@ -141,17 +141,17 @@ let _ = e => {
       orbBalance: t
     } = e;
     return (0, n.jsxs)("div", {
-      className: v.paymentSourceWrapper,
+      className: O.paymentSourceWrapper,
       children: [(0, n.jsx)(i.vwX, {
-        children: O.intl.string(O.t.mmDvV1)
+        children: v.intl.string(v.t.mmDvV1)
       }), (0, n.jsxs)("div", {
-        className: v.paymentSourceItem,
+        className: O.paymentSourceItem,
         children: [(0, n.jsx)(i.Text, {
-          className: v.displayFlex,
+          className: O.displayFlex,
           variant: "text-md/medium",
-          children: O.intl.string(O.t.y0WGqK)
+          children: v.intl.string(v.t.y0WGqK)
         }), (0, n.jsx)(i.Text, {
-          className: v.displayFlex,
+          className: O.displayFlex,
           variant: "text-md/medium",
           children: (0, n.jsx)(_, {
             orbAmount: t
@@ -166,7 +166,7 @@ let _ = e => {
     } = e;
     if (null == t) return;
     let r = "";
-    return r = t.code === s.SM.VIRTUAL_CURRENCY_INSUFFICIENT_BALANCE ? O.intl.string(O.t.keFvXF) : t.code === s.SM.ALREADY_PURCHASED ? O.intl.string(O.t.m371Mz) : O.intl.string(O.t.fqJZ19), (0, n.jsx)(i.kzN, {
+    return r = t.code === s.SM.VIRTUAL_CURRENCY_INSUFFICIENT_BALANCE ? v.intl.string(v.t.keFvXF) : t.code === s.SM.ALREADY_PURCHASED ? v.intl.string(v.t.m371Mz) : v.intl.string(v.t.fqJZ19), (0, n.jsx)(i.kzN, {
       children: r
     })
   },
@@ -178,7 +178,7 @@ let _ = e => {
       skuId: t,
       isOrbsPurchase: true
     }) ? (0, n.jsx)(p.Z, {
-      message: O.intl.format(O.t.fsOXXF, {})
+      message: v.intl.format(v.t.fsOXXF, {})
     }) : null
   },
   A = e => {
@@ -188,9 +188,9 @@ let _ = e => {
       orbBalance: l
     } = e;
     return (0, n.jsxs)("div", {
-      className: v.stepBody,
+      className: O.stepBody,
       children: [(0, n.jsx)(i.vwX, {
-        children: O.intl.string(O.t.sail9P)
+        children: v.intl.string(v.t.sail9P)
       }), (0, n.jsx)(x, {
         skuId: t,
         orbPriceAmount: r

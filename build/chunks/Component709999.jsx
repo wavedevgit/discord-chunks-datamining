@@ -227,8 +227,8 @@ let ef = e => {
       }
       return l
     }(e, ["tab", "product", "onMount", "shopBlockType"]);
-    let s = (0, p.e7)([T.Z], () => T.Z.purchases),
-      c = (0, R.o)(r, s),
+    let s = (0, p.e7)([R.Z], () => R.Z.purchases),
+      c = (0, T.o)(r, s),
       u = (0, Q.W)(r, c),
       d = l.useRef(null),
       {
@@ -243,7 +243,7 @@ let ef = e => {
       tab: t,
       selectedProduct: u,
       cardRef: d,
-      children: (0, n.jsx)(ev, ep({
+      children: (0, n.jsx)(eO, ep({
         tab: t,
         product: r,
         selectedVariantIndex: c,
@@ -258,7 +258,7 @@ let ef = e => {
     })
   });
 
-function eO(e) {
+function ev(e) {
   let {
     product: t,
     tab: r,
@@ -273,7 +273,7 @@ function eO(e) {
     isPartiallyOwnedBundle: m,
     isDisabled: j,
     discount: P
-  } = e, _ = (0, w.sp)(), I = (0, N.rN)(t), [R, k] = (0, p.Wu)([T.Z], () => [T.Z.isClaiming === t.skuId, null != T.Z.isClaiming && T.Z.isClaiming !== t.skuId]), D = (0, N.XM)(l, f, false), M = (0, N.ne)({
+  } = e, _ = (0, w.sp)(), I = (0, N.rN)(t), [T, k] = (0, p.Wu)([R.Z], () => [R.Z.isClaiming === t.skuId, null != R.Z.isClaiming && R.Z.isClaiming !== t.skuId]), D = (0, N.XM)(l, f, false), M = (0, N.ne)({
     product: l,
     isPartiallyOwnedBundle: m,
     isPurchased: g
@@ -348,7 +348,7 @@ function eO(e) {
         children: [(() => {
           if (h && !f && !I) return (0, n.jsx)("div", {
             className: ed.hoverUpsellContainer,
-            children: (0, n.jsx)(v.Z, {
+            children: (0, n.jsx)(O.Z, {
               fullWidth: true,
               className: ed.__invalid_premiumSubscribeButton,
               disabled: k,
@@ -395,7 +395,7 @@ function eO(e) {
                   t.stopPropagation(), e()
                 },
                 disabled: k,
-                loading: R,
+                loading: T,
                 loadingStartedLabel: eu.intl.string(eu.t["TYw+9v"]),
                 loadingFinishedLabel: eu.intl.string(eu.t.Pg1UPz),
                 text: eu.intl.string(eu.t.zp6caG),
@@ -478,7 +478,7 @@ function eO(e) {
                   tile_type: c.Z[t.type],
                   tile_position: String(null == _ ? true : _.tilePosition),
                   cta_name: "buy button"
-                }), (0, O.Z)({
+                }), (0, v.Z)({
                   skuId: (0, J.S)({
                     product: t,
                     selectedVariantIndex: i
@@ -515,7 +515,7 @@ function eO(e) {
     })]
   })
 }
-let ev = Chunk647438.memo(function(e) {
+let eO = Chunk647438.memo(function(e) {
     let {
       product: t,
       user: r,
@@ -523,23 +523,23 @@ let ev = Chunk647438.memo(function(e) {
       tab: s,
       cardRef: d,
       selectedProduct: f,
-      firstCollectibleItem: O,
-      selectedVariantIndex: v,
+      firstCollectibleItem: v,
+      selectedVariantIndex: O,
       handleEntering: j,
       handleLeaving: E,
       previewingVariantIndex: x,
       className: C,
       shopBlockType: A
     } = e, {
-      analyticsLocations: T
-    } = (0, m.ZP)([y.Z.COLLECTIBLES_SHOP_CARD]), R = (0, w.sp)(), L = (0, ea.G)("CollectiblesShopTallCard"), M = null != A && A === u.z.HERO && L ? eo.Ch.THUMBNAIL : eo.Ch.DEFAULT, Z = (0, P.Y)({
+      analyticsLocations: R
+    } = (0, m.ZP)([y.Z.COLLECTIBLES_SHOP_CARD]), T = (0, w.sp)(), L = (0, ea.G)("CollectiblesShopTallCard"), M = null != A && A === u.z.HERO && L ? eo.Ch.THUMBNAIL : eo.Ch.DEFAULT, Z = (0, P.Y)({
       location: "CollectiblesShopTallCard"
     }), B = (0, h.Z)(d), F = (0, ee.m)(d), H = B || F, K = (0, en.To)(t), X = (0, p.e7)([g.Z], () => g.Z.useReducedMotion), J = I.ZP.canUseCollectibles(r), Q = l.useMemo(() => (0, N.BH)(t, J), [t, J]), $ = (0, N.G1)(t), et = (0, p.e7)([_.Z], () => (0, b.wjy)(_.Z.theme)), er = (0, N.Yq)(t.skuId), ei = i.skuId === eo.bu && (0, N.WW)(t.skuId), {
       isPurchased: ec,
       isPartiallyOwnedBundle: eh
     } = (0, D.L)(f), {
       isDisabled: ey
-    } = (0, k.G)(f.skuId), em = null !== x ? x : v, [ev, ej] = l.useState(false), eP = l.useCallback(function(e, t, l) {
+    } = (0, k.G)(f.skuId), em = null !== x ? x : O, [eO, ej] = l.useState(false), eP = l.useCallback(function(e, t, l) {
       let i = arguments.length > 3 && true !== arguments[3] && arguments[3];
       return (0, o.EQ)(e.type).with(c.Z.PROFILE_EFFECT, () => (0, n.jsx)(ef, {
         isHighlighted: t,
@@ -568,27 +568,27 @@ let ev = Chunk647438.memo(function(e) {
         product: t
       });
       e_.current = r.currentTarget, S.default.track(es.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-        collectibles_shop_session_id: null == R ? true : R.sessionId,
+        collectibles_shop_session_id: null == T ? true : T.sessionId,
         sku_id: t.skuId,
         page_type: s,
-        page_section: null == R ? true : R.pageSection,
+        page_section: null == T ? true : T.pageSection,
         page_category: s === eo.AW.HOME ? true : i.name,
-        page_index: s === eo.AW.CATALOG ? null == R ? true : R.pageIndex : true,
-        page_size: s === eo.AW.CATALOG ? null == R ? true : R.pageSize : true,
+        page_index: s === eo.AW.CATALOG ? null == T ? true : T.pageIndex : true,
+        page_size: s === eo.AW.CATALOG ? null == T ? true : T.pageSize : true,
         tile_type: c.Z[t.type],
-        tile_position: String(null == R ? true : R.tilePosition),
+        tile_position: String(null == T ? true : T.tilePosition),
         cta_name: null
       }), (0, V.T)({
         product: t,
         category: i,
         shouldCheckoutWithOrbs: n,
-        analyticsLocations: T,
+        analyticsLocations: R,
         analyticsSource: e,
         returnRef: e_,
         tab: s,
         variantType: M
       })
-    }, [t, i, s, T, R, M]), eS = eC(y.Z.COLLECTIBLES_SHOP_CARD);
+    }, [t, i, s, R, T, M]), eS = eC(y.Z.COLLECTIBLES_SHOP_CARD);
     if (0 === eE.length || (0, N.x6)(t) && null != Q && Q.discountPercentage < 0) return null;
     let eI = a()(ed.badge, {
       [ed.badgeLeftAligned]: Z
@@ -656,7 +656,7 @@ let ev = Chunk647438.memo(function(e) {
           className: a()(ed.preview, {
             [ed.previewThumbnailVariant]: M === eo.Ch.THUMBNAIL
           }),
-          children: (0, o.EQ)(t.type).with(c.Z.PROFILE_EFFECT, c.Z.AVATAR_DECORATION, c.Z.NAMEPLATE, () => eP(O, H, ec)).with(c.Z.BUNDLE, () => (0, n.jsx)(q.d, {
+          children: (0, o.EQ)(t.type).with(c.Z.PROFILE_EFFECT, c.Z.AVATAR_DECORATION, c.Z.NAMEPLATE, () => eP(v, H, ec)).with(c.Z.BUNDLE, () => (0, n.jsx)(q.d, {
             product: t,
             user: r,
             isPurchased: ec,
@@ -666,7 +666,7 @@ let ev = Chunk647438.memo(function(e) {
             let e = t.variants[em];
             if (null == e) return null;
             let [r] = e.items;
-            return eP(r, H, ec, ev)
+            return eP(r, H, ec, eO)
           }).with(c.Z.EXTERNAL_SKU, () => (0, n.jsx)(W.b, {
             product: t,
             animationState: H ? "on" : "off",
@@ -702,10 +702,10 @@ let ev = Chunk647438.memo(function(e) {
               handleEntering: j,
               handleLeaving: E
             },
-            selectedVariantIndex: v,
+            selectedVariantIndex: O,
             setIsHoveringOnSwitch: ej,
             minimal: !H,
-            alternativeBackgroundColor: (null == O ? true : O.type) === c.Z.PROFILE_EFFECT
+            alternativeBackgroundColor: (null == v ? true : v.type) === c.Z.PROFILE_EFFECT
           }) : (0, n.jsx)(Y.r, {
             variantGroupProduct: t,
             previewingVariantIndexProps: {
@@ -713,16 +713,16 @@ let ev = Chunk647438.memo(function(e) {
               handleEntering: j,
               handleLeaving: E
             },
-            selectedVariantIndex: v,
+            selectedVariantIndex: O,
             setIsHoveringOnSwitch: ej
-          }) : null, (0, n.jsx)(eO, {
+          }) : null, (0, n.jsx)(ev, {
             product: t,
             tab: s,
             buildHandlePreviewClick: eC,
             selectedProduct: f,
-            selectedVariantIndex: v,
+            selectedVariantIndex: O,
             cardRef: d,
-            analyticsLocations: T,
+            analyticsLocations: R,
             isPremiumUser: J,
             isPremiumProduct: $,
             isPartiallyOwnedBundle: eh,

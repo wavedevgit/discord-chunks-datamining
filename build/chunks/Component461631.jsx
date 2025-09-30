@@ -22,7 +22,7 @@ function f(e) {
     className: f
   } = e, g = async () => {
     try {
-      await s.Z.removeSkuFromWishlist(r, t.skuId), (0, o.L$)(c.qb.WISHLIST_ITEM_REMOVED)
+      await s.Z.removeSkuFromWishlist(r, t.skuId)
     } catch (e) {
       (0, o.L$)(c.qb.SOMETHING_WENT_WRONG)
     }

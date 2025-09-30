@@ -59,8 +59,8 @@ function N(e) {
   }), W = (0, i.e7)([o.Z], () => o.Z.isFetchingUserOutbox(t.id)), B = t.id === r.id, z = (0, i.e7)([f.Z, d.Z], () => {
     let e = B ? f.Z.getStatus() : d.Z.getStatus(t.id);
     return e === l.Skl.OFFLINE || e === l.Skl.INVISIBLE
-  }), H = L.length > 0 || null != M, q = D && null == M && null == G && null != F, V = !z && (H || q), Y = U.length > 0, K = L.some(e => (0, a.Z)(e));
-  if (!V && !Y && W) return (0, n.jsx)("div", {
+  }), H = L.length > 0 || null != M, q = D && null == M && null == G && null != F, Y = !z && (H || q), V = U.length > 0, K = L.some(e => (0, a.Z)(e));
+  if (!Y && !V && W) return (0, n.jsx)("div", {
     className: C.cards,
     children: Array.from({
       length: 8
@@ -75,7 +75,7 @@ function N(e) {
       })]
     }, t))
   });
-  if (!V && !Y && !W) {
+  if (!Y && !V && !W) {
     var J;
     return B ? (0, n.jsx)(x.Uf, {
       onClose: Z
@@ -91,7 +91,7 @@ function N(e) {
     fade: true,
     children: [(() => {
       let e = B && R && !K;
-      return V ? (0, n.jsx)(P.Z, {
+      return Y ? (0, n.jsx)(P.Z, {
         heading: E.intl.string(E.t.J6STd3),
         children: (0, n.jsxs)("ul", {
           className: C.cards,
@@ -135,7 +135,7 @@ function N(e) {
           variant: "horizontal"
         })
       }) : null
-    })(), Y ? (0, n.jsx)(P.Z, {
+    })(), V ? (0, n.jsx)(P.Z, {
       heading: E.intl.string(E.t.jzgEoK),
       introText: B ? E.intl.format(E.t["4bk9Ag"], {
         learnMoreHook: (e, t) => (0, n.jsx)(l.eee, {
