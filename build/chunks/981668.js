@@ -36,11 +36,9 @@ async function g(e) {
   let t = c.Z.getChannel(e),
     {
       enableHangStatus: n
-    } = s.n.getCurrentConfig({
+    } = (0, s.gx)({
       guildId: null == t ? true : t.guild_id,
       location: "GameActivityManager"
-    }, {
-      autoTrackExposure: false
     });
   if (null == t || !((0, f.Ku)("running_games_change", false) || n)) return;
   let r = d.Z.getActivities();

@@ -114,7 +114,7 @@ function k() {
     let e = Chunk106301.Z.getCustomHangStatus(),
       {
         defaultStatusVariant: r
-      } = Chunk574176.n.getCurrentConfig({
+      } = (0, Chunk574176.gx)({
         guildId: null == (t = Chunk592125.Z.getChannel(Chunk944486.Z.getVoiceChannelId())) ? true : exports.guild_id,
         location: "LocalActivityStore"
       });

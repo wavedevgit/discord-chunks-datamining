@@ -92,7 +92,7 @@ function P(e) {
   });
   let {
     defaultStatusVariant: l
-  } = g.n.getCurrentConfig({
+  } = (0, g.gx)({
     guildId: n,
     location: "UpdateHangStatus"
   });

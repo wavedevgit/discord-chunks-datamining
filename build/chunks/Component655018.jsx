@@ -75,7 +75,7 @@ function R(e) {
   } = e, D = i.useRef(null), U = (0, u.e7)([b.Z], () => b.Z.getCustomHangStatus()), B = (0, x.Z)(), H = (0, u.e7)([b.Z], () => b.Z.getFavoritedStatuses()), {
     defaultStatusVariant: V,
     allowPermanentClear: F
-  } = g.n.useExperiment({
+  } = (0, g.bN)({
     guildId: R.guild_id,
     location: "HangStatusPicker"
   }), G = (0, y.V)(V), z = i.useRef(null), [W, q] = i.useState(null != (n = null == U ? true : U.status) ? n : ""), [Y, K] = i.useState(null != (l = null == U ? true : U.emoji) ? l : null), X = (0, u.e7)([b.Z], () => b.Z.getCurrentHangStatus()), J = G[X], Q = H.length > 0, $ = null == W || "" === W.trim(), ee = (0, v.Z)(R), et = W.trim().length > 0 && W.trim() !== (null == U || null == (t = U.status) ? true : t.trim()) || null != Y && !s()(Y, null == U ? true : U.emoji), [en, er] = i.useState(false), ei = (0, u.e7)([b.Z], () => b.Z.getFavoritedStatuses().length >= b.o), el = W.length > 0 || null != Y;

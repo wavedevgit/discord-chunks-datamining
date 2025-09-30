@@ -464,11 +464,9 @@ function ei(e) {
   } = (0, S.Z)(n.id), I = (0, x.Z)(), w = (0, a.e7)([G.ZP], () => G.ZP.isFavorite(t.id, n.id)), T = e.connected || (null == I ? true : I.channelId) === n.id, {
     enableHangStatus: A,
     allowChannelTopic: R
-  } = N.n.useExperiment({
+  } = (0, N.bN)({
     guildId: n.guild_id,
     location: "VoiceChannel"
-  }, {
-    autoTrackExposure: false
   }), {
     enableOpenTIVForPing: M
   } = Z.A.useExperiment({

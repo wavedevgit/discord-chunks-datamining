@@ -156,7 +156,9 @@ let P = 490,
               ref: e => {
                 var n;
                 t.current = null != (n = null == e ? true : e.getScrollerNode()) ? n : null, Y.current = e
-              }
+              },
+              orientation: "vertical",
+              overflow: "auto"
             }, n), {
               className: I.scroller,
               style: {

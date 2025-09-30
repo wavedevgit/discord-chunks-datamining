@@ -15,7 +15,7 @@ function s(e, t) {
   let l = null == (n = r.Z.getChannel(null == (s = i.Z.getVoiceStateForUser(e)) ? true : s.channelId)) ? true : n.guild_id,
     {
       defaultStatusVariant: c
-    } = a.n.getCurrentConfig({
+    } = (0, a.gx)({
       guildId: l,
       location: "parseHangStatus"
     }),

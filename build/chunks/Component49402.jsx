@@ -77,57 +77,58 @@ function m(e, t, n) {
       className: m,
       dir: g = "ltr",
       orientation: E = "vertical",
-      fade: b = false,
-      customTheme: y = false,
-      paddingFix: O = true,
-      style: v,
-      gap: I,
-      experimental_useStack: T
-    } = u, S = p(u, ["children", "className", "dir", "orientation", "fade", "customTheme", "paddingFix", "style", "gap", "experimental_useStack"]);
+      overflow: b = "scroll",
+      fade: y = false,
+      customTheme: O = false,
+      paddingFix: v = true,
+      style: I,
+      gap: T,
+      experimental_useStack: S
+    } = u, A = p(u, ["children", "className", "dir", "orientation", "overflow", "fade", "customTheme", "paddingFix", "style", "gap", "experimental_useStack"]);
     let {
-      scrollerRef: A,
-      getScrollerState: C
-    } = (0, c.Ke)(), N = (0, c.t2)(A, E);
+      scrollerRef: C,
+      getScrollerState: N
+    } = (0, c.Ke)(), R = (0, c.t2)(C, E);
     i.useImperativeHandle(f, () => d({
-      getScrollerNode: () => A.current,
-      getScrollerState: C
-    }, (0, c.Ue)(A, C, N, E)), [A, C, E, N]);
-    let R = (0, c.tT)({
-      paddingFix: O,
+      getScrollerNode: () => C.current,
+      getScrollerState: N
+    }, (0, c.Ue)(C, N, R, E)), [C, N, E, R]);
+    let P = (0, c.tT)({
+      paddingFix: v,
       orientation: E,
       dir: g,
       className: m,
-      scrollerRef: A,
+      scrollerRef: C,
       specs: a
     });
-    return T ? (0, r.jsx)(l.K, _(d({
-      gap: I,
-      ref: A,
+    return S ? (0, r.jsx)(l.K, _(d({
+      gap: T,
+      ref: C,
       className: o()(m, {
         [e]: true,
-        [t]: b,
-        [n]: y
+        [t]: y,
+        [n]: O
       }),
-      style: (0, c.uT)(v, E),
+      style: (0, c.uT)(I, E, b),
       dir: g
-    }, S), {
+    }, A), {
       children: (0, r.jsxs)(s.Jc, {
-        containerRef: A,
-        children: [h, R]
+        containerRef: C,
+        children: [h, P]
       })
     })) : (0, r.jsx)("div", _(d({
-      ref: A,
+      ref: C,
       className: o()(m, {
         [e]: true,
-        [t]: b,
-        [n]: y
+        [t]: y,
+        [n]: O
       }),
-      style: (0, c.uT)(v, E),
+      style: (0, c.uT)(I, E, b),
       dir: g
-    }, S), {
+    }, A), {
       children: (0, r.jsxs)(s.Jc, {
-        containerRef: A,
-        children: [h, R]
+        containerRef: C,
+        children: [h, P]
       })
     }))
   })

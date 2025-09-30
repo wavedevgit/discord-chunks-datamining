@@ -56,7 +56,7 @@ let L = Chunk647438.memo(e => {
     return t.has(L)
   }), [L, P.id]), q = (0, p.Z)(null != W ? [W.applicationId] : []), Y = (0, _.Z)(L, P.guild_id)[0], K = null != (n = (0, d.IX)(null == Y ? true : Y.application_id).data) ? n : true, [X, J] = (0, o.Wu)([O.Z], () => [O.Z.getStreamForUser(L, P.getGuildId()), O.Z.getActiveStreamForUser(L, P.getGuildId())], [P, L]), Q = (0, o.e7)([Z.Z], () => Z.Z.getSessionById(I)), $ = A.ZP.useName(x), ee = (0, o.e7)([N.Z], () => N.Z.getVoicePlatformForChannel(P.id, L), [P.id, L]), {
     enableHangStatus: et
-  } = m.n.useExperiment({
+  } = (0, m.bN)({
     guildId: P.guild_id,
     location: "VoiceUsers"
   }), en = (0, f.ZP)(P, true, x), er = (0, o.e7)([g.Z], () => D ? g.Z.getHangStatusActivity() : null, [D]), ei = (0, b.j)(L), el = (0, v.Eu)(P.id, L), {

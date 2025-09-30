@@ -34,7 +34,7 @@ function m(e) {
     hideTooltip: I = false
   } = e, T = (0, d.E)("ActivityStatus", g), {
     defaultStatusVariant: S
-  } = l.n.useExperiment({
+  } = (0, l.bN)({
     guildId: null == g ? true : g.guild_id,
     location: "CustomStatusActivityStatus"
   });

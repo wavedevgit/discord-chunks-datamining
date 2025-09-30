@@ -24,22 +24,31 @@ function i(e) {
   return e
 }
 require.d(exports, {
-  ZP: () => l
+  ZP: () => u
 });
 let a = Object.freeze({
     overflowY: "scroll",
     overflowX: "hidden"
   }),
   o = Object.freeze({
+    overflowY: "auto",
+    overflowX: "hidden"
+  }),
+  s = Object.freeze({
     overflowX: "scroll",
     overflowY: "hidden"
   }),
-  s = Object.freeze({
+  l = Object.freeze({
+    overflowX: "auto",
+    overflowY: "hidden"
+  }),
+  c = Object.freeze({
     overflow: "auto"
   });
 
-function l(e) {
+function u(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : "vertical",
-    n = "vertical" === t ? a : "horizontal" === t ? o : s;
-  return null != e ? i({}, n, e) : n
+    n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : "scroll",
+    r = "vertical" === t ? "auto" === n ? o : a : "horizontal" === t ? "auto" === n ? l : s : c;
+  return null != e ? i({}, r, e) : r
 }

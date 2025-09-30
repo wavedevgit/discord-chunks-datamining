@@ -40,11 +40,9 @@ class h extends Chunk147913.Z {
       } = e, {
         enableHangStatus: r,
         setDefaultStatus: a
-      } = c.n.getCurrentConfig({
+      } = (0, c.gx)({
         guildId: null != n ? n : _.lds,
         location: "HangStatusManager"
-      }, {
-        autoTrackExposure: true
       });
       if (null == n && null == t) {
         this.handleDisconnectFromVoiceChannel(), this.previousVoiceChannelId = t;
