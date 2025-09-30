@@ -411,17 +411,25 @@ class K extends Chunk647438.PureComponent {
       let {
         key: t,
         metaKey: n,
-        shiftKey: r
+        shiftKey: r,
+        ctrlKey: i
       } = e, {
-        editorState: i,
-        searchContext: a,
-        keyboardModeEnabled: o
+        editorState: a,
+        searchContext: o,
+        keyboardModeEnabled: s
       } = this.props;
-      if (e.stopPropagation(), "Escape" === t) {
-        if (e.preventDefault(), O.xb(i)) this.blurEditor();
+      if (e.stopPropagation(), (n || i) && "a" === t.toLowerCase()) {
+        e.preventDefault();
+        let t = O.m1(a);
+        return this.setEditorState(t), this.setState({
+          focused: true
+        }), true
+      }
+      if ("Escape" === t) {
+        if (e.preventDefault(), O.xb(a)) this.blurEditor();
         else {
-          let e = O.FZ(i);
-          L.Z.updateSearchEditorState(a, e), this.setState({
+          let e = O.FZ(a);
+          L.Z.updateSearchEditorState(o, e), this.setState({
             focused: true
           })
         }
@@ -438,13 +446,13 @@ class K extends Chunk647438.PureComponent {
         return null != t && t.focusNextOption(), true
       }
       if ("Tab" === t) {
-        if (o) return;
+        if (s) return;
         return (0, _.Qj)(), true
       }
-      if ("Home" === t || "ArrowLeft" === t && n) return e.preventDefault(), i = r ? O.R8(i) : O.eE(i), this.setEditorState(i), true;
-      if ("End" === t || "ArrowRight" === t && n) return e.preventDefault(), i = r ? O.Wg(i) : O.NJ(i), this.setEditorState(i), true;
+      if ("Home" === t || "ArrowLeft" === t && n) return e.preventDefault(), a = r ? O.R8(a) : O.eE(a), this.setEditorState(a), true;
+      if ("End" === t || "ArrowRight" === t && n) return e.preventDefault(), a = r ? O.Wg(a) : O.NJ(a), this.setEditorState(a), true;
       if (("Delete" === t || "Backspace" === t) && n) {
-        let e = O.FZ(i);
+        let e = O.FZ(a);
         return this.setEditorState(e), true
       }
       return O.q0(e)

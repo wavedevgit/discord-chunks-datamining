@@ -1,16 +1,27 @@
 /** Chunk was on 52461 **/
 /** chunk id: 252899, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  F: () => o
+  F: () => d
 }), require("./388685.js"), require("./539854.js"), require("./781311.js"), require("./642613.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk93582 = require("./93582.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk621060 = require("./621060.jsx");
+  Chunk621060 = require("./621060.jsx"),
+  Chunk716768 = require("./716768.js");
 
-function o(e, t) {
-  let [n, o] = r.useState(""), c = r.useMemo(() => {
+function c(e) {
+  let {
+    label: t
+  } = e;
+  return (0, a.jsx)("div", {
+    className: o.menuLabel,
+    children: t
+  })
+}
+
+function d(e, t) {
+  let [n, o] = r.useState(""), d = r.useMemo(() => {
     if ("" === n.trim()) return e;
     let t = n.toLowerCase().trim();
     return e.filter(e => {
@@ -59,13 +70,13 @@ function o(e, t) {
     }
   }, "devtools-search"), [n]), ...r.useMemo(() => {
     let e = [];
-    if ("" !== n.trim() && 0 === c.length) e.push((0, a.jsx)(l.sNh, {
+    if ("" !== n.trim() && 0 === d.length) e.push((0, a.jsx)(l.sNh, {
       id: "devtools-no-results",
       label: 'No DevTools found for "'.concat(n, '"'),
       disabled: true
     }, "devtools-no-results"));
     else {
-      let r = c.filter(e => e.group === s.v0.NONE),
+      let r = d.filter(e => e.group === s.v0.NONE),
         o = function(e) {
           let t = new Map;
           for (let a of e) {
@@ -74,7 +85,7 @@ function o(e, t) {
             e.push(a), t.set(a.group, e)
           }
           return t
-        }(c.filter(e => e.group !== s.v0.NONE));
+        }(d.filter(e => e.group !== s.v0.NONE));
       r.forEach(n => {
         let {
           id: r,
@@ -82,7 +93,9 @@ function o(e, t) {
         } = n;
         return e.push((0, a.jsx)(l.sNh, {
           id: r,
-          label: i,
+          label: (0, a.jsx)(c, {
+            label: i
+          }),
           action: () => t(r)
         }, r))
       }), s.Zj.forEach(r => {
@@ -94,11 +107,15 @@ function o(e, t) {
           });
           "" === n.trim() ? e.push((0, a.jsx)(l.sNh, {
             id: "devtools-".concat(r),
-            label: r,
+            label: (0, a.jsx)(c, {
+              label: r
+            }),
             children: (0, a.jsx)(l.kSQ, {
               children: o.map(e => (0, a.jsx)(l.sNh, {
                 id: "devtools-".concat(e.id),
-                label: e.name,
+                label: (0, a.jsx)(c, {
+                  label: e.name
+                }),
                 action: () => t(e.id)
               }, e.id))
             })
@@ -106,7 +123,9 @@ function o(e, t) {
             label: r,
             children: o.map(e => (0, a.jsx)(l.sNh, {
               id: "devtools-filtered-".concat(e.id),
-              label: e.name,
+              label: (0, a.jsx)(c, {
+                label: e.name
+              }),
               action: () => t(e.id)
             }, e.id))
           }, "devtools-filtered-".concat(r)))
@@ -114,5 +133,5 @@ function o(e, t) {
       })
     }
     return e
-  }, [c, n, t])]
+  }, [d, n, t])]
 }

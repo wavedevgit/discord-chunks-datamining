@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   FZ: () => D,
-  Hl: () => G,
+  Hl: () => B,
   NJ: () => j,
   R8: () => k,
   Sq: () => N,
@@ -11,14 +11,15 @@ require.d(exports, {
   Zn: () => C,
   c2: () => L,
   eE: () => M,
-  iE: () => B,
+  iE: () => Z,
   iK: () => x,
   l8: () => w,
   lv: () => R,
+  m1: () => G,
   nR: () => P,
   q0: () => a.a,
   x0: () => S,
-  xb: () => F,
+  xb: () => V,
   yd: () => A
 }), require("./388685.js"), require("./539854.js");
 var Chunk258863 = require("./258863.js"),
@@ -187,6 +188,17 @@ function U(e) {
 }
 
 function G(e) {
+  let t = e.getCurrentContent().getFirstBlock(),
+    n = new r.SelectionState({
+      anchorKey: t.getKey(),
+      anchorOffset: 0,
+      focusKey: t.getKey(),
+      focusOffset: t.getLength()
+    });
+  return r.EditorState.forceSelection(e, n)
+}
+
+function B(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 512,
     n = N(e);
   if (n.length > t) {
@@ -196,11 +208,11 @@ function G(e) {
   return e
 }
 
-function B(e) {
+function Z(e) {
   let t = window.getSelection();
   if (null == t || "Caret" !== t.type || null == e) return;
   let n = t.getRangeAt(0);
-  if (!Z(n.commonAncestorContainer, e)) return;
+  if (!F(n.commonAncestorContainer, e)) return;
   let r = n.getClientRects()[0],
     i = e.getClientRects()[0];
   if (null == r || null == i) return;
@@ -208,7 +220,7 @@ function B(e) {
   a < e.scrollLeft ? e.scrollLeft = a - 10 : a > e.scrollLeft + e.offsetWidth && (e.scrollLeft = a - e.offsetWidth + 3)
 }
 
-function Z(e, t) {
+function F(e, t) {
   for (; null != e;) {
     if (e === t) returntrue;
     e = e.parentNode
@@ -216,6 +228,6 @@ function Z(e, t) {
   returnfalse
 }
 
-function F(e) {
+function V(e) {
   return 0 === N(e).length
 }
