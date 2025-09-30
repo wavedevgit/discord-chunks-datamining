@@ -314,24 +314,24 @@ function eU(e) {
       legacyEnabled: L,
       oopEnabled: j
     } = (0, _.cj)([k.default], () => k.default.getGlobalEnabledStatus()),
-    M = (e, t, n) => {
-      var r, i, a;
-      if (ek(n), null == o) return;
-      let s = false,
-        l = false;
+    M = (e, t) => {
+      var n, r, i;
+      if (null == o) return;
+      let a = false,
+        s = false;
       switch (t) {
         case D.AE.LEGACY_GAME:
-          T(e), g.Z.toggleOverlay(o, e, E), s = !e && O;
+          T(e), g.Z.toggleOverlay(o, e, E), a = !e && O;
           break;
         case D.AE.OOP_GAME:
-          b(e), g.Z.toggleOverlay(o, O, e), l = !e && E;
+          b(e), g.Z.toggleOverlay(o, O, e), s = !e && E;
           break;
         case D.AE.LEGACY:
-          y.Z.setEnabled(e, j), (0, D.ou)(e, D.AE.LEGACY, null != (r = o.id) ? r : null);
+          y.Z.setEnabled(e, j), (0, D.ou)(e, D.AE.LEGACY, null != (n = o.id) ? n : null);
           break;
         case D.AE.OOP:
-          y.Z.setEnabled(L, e), (0, D.ou)(e, D.AE.OOP, null != (i = o.id) ? i : null)
-      }(s || l) && (0, Z.l)(s ? D.AE.LEGACY_GAME : D.AE.OOP_GAME, null != (a = o.id) ? a : null)
+          y.Z.setEnabled(L, e), (0, D.ou)(e, D.AE.OOP, null != (r = o.id) ? r : null)
+      }(a || s) && (0, Z.l)(a ? D.AE.LEGACY_GAME : D.AE.OOP_GAME, null != (i = o.id) ? i : null)
     },
     U = (e, t) => {
       let n = !t && e,
@@ -348,24 +348,24 @@ function eU(e) {
           return "game"
       }
     },
-    G = (e, t, n) => {
-      if (ek(n), null == o) return;
-      let r = false,
-        i = false;
+    G = (e, t) => {
+      if (null == o) return;
+      let n = false,
+        r = false;
       switch (t) {
         case "game":
-          g.Z.toggleOverlay(o, e, e), T(e), b(e), r = !e && O, i = !e && E;
+          g.Z.toggleOverlay(o, e, e), T(e), b(e), n = !e && O, r = !e && E;
           break;
         case "global":
-          y.Z.setEnabled(e, e), r = !e && L, i = !e && j;
+          y.Z.setEnabled(e, e), n = !e && L, r = !e && j;
           break;
         case "both":
-          y.Z.setEnabled(e, e), g.Z.toggleOverlay(o, e, e), T(e), b(e), r = !e && L || !e && O, i = !e && j || !e && E
+          y.Z.setEnabled(e, e), g.Z.toggleOverlay(o, e, e), T(e), b(e), n = !e && L || !e && O, r = !e && j || !e && E
       }
-      let a = null;
-      if (r ? a = "game" === t ? D.AE.LEGACY_GAME : D.AE.LEGACY : i && (a = "game" === t ? D.AE.OOP_GAME : D.AE.OOP), null != a) {
-        var s;
-        (0, Z.l)(a, null != (s = o.id) ? s : null)
+      let i = null;
+      if (n ? i = "game" === t ? D.AE.LEGACY_GAME : D.AE.LEGACY : r && (i = "game" === t ? D.AE.OOP_GAME : D.AE.OOP), null != i) {
+        var a;
+        (0, Z.l)(i, null != (a = o.id) ? a : null)
       }
     },
     B = N && R,
@@ -509,8 +509,8 @@ function eU(e) {
       children: (0, r.jsx)(h.T2, {
         checked: E && j || O && L,
         disabled: B,
-        onChange: (e, t) => {
-          G(e, U(e, E && j || O && L), t)
+        onChange: e => {
+          G(e, U(e, E && j || O && L))
         }
       })
     }),
@@ -527,8 +527,8 @@ function eU(e) {
         children: [(0, r.jsx)(h.T2, {
           checked: E && j,
           disabled: R,
-          onChange: (e, t) => {
-            e && !j ? M(e, D.AE.OOP, t) : M(e, D.AE.OOP_GAME, t)
+          onChange: e => {
+            e && !j ? M(e, D.AE.OOP) : M(e, D.AE.OOP_GAME)
           }
         }), (0, r.jsx)("div", {
           className: eh.emptySpacer
@@ -543,8 +543,8 @@ function eU(e) {
         children: [(0, r.jsx)(h.T2, {
           checked: O && L,
           disabled: N,
-          onChange: (e, t) => {
-            e && !L ? M(e, D.AE.LEGACY, t) : M(e, D.AE.LEGACY_GAME, t)
+          onChange: e => {
+            e && !L ? M(e, D.AE.LEGACY) : M(e, D.AE.LEGACY_GAME)
           }
         }), (0, r.jsx)("div", {
           className: eh.emptySpacer
@@ -579,11 +579,11 @@ function eB(e) {
   i.useEffect(() => {
     m(f)
   }, [f]);
-  let g = (e, n) => {
-    let r = !e && p;
-    if (ek(n), m(e), s(e, u, d), r) {
-      var i, a;
-      (0, Z.l)(l, null != (a = null != (i = u.id) ? i : null == t ? true : t.id) ? a : null)
+  let g = e => {
+    let n = !e && p;
+    if (m(e), s(e, u, d), n) {
+      var r, i;
+      (0, Z.l)(l, null != (i = null != (r = u.id) ? r : null == t ? true : t.id) ? i : null)
     }
   };
   return (0, r.jsx)(ex, {
@@ -597,7 +597,7 @@ function eB(e) {
       children: [(0, r.jsx)(h.T2, {
         checked: p,
         disabled: a,
-        onChange: (e, t) => g(e, t)
+        onChange: e => g(e)
       }), (0, r.jsx)("div", {
         className: eh.emptySpacer
       })]
@@ -609,11 +609,11 @@ function eZ() {
   let [e, t] = Chunk647438.useState(false), {
     legacyEnabled: n,
     oopEnabled: a
-  } = (0, Chunk442837.cj)([Chunk371651.default], () => Chunk371651.default.getGlobalEnabledStatus()), o = (0, Chunk442837.Wu)([Chunk594190.ZP], () => Chunk594190.ZP.getGamesSeen(true)).filter(e => !(0, Y.le)(e)), s = (0, Chunk835473.Z)(o.map(e => e.id)), l = !(0, Chunk145597.supportsLegacy)(), c = (e, t) => {
-    var r, i;
-    ek(t), y.Z.setEnabled(e, a);
-    let o = null != (i = null == (r = C.ZP.getCurrentGameForAnalytics()) ? true : r.id) ? i : null;
-    (0, D.ou)(e, D.AE.LEGACY, o), !e && n && (0, Z.l)(D.AE.LEGACY, o)
+  } = (0, Chunk442837.cj)([Chunk371651.default], () => Chunk371651.default.getGlobalEnabledStatus()), o = (0, Chunk442837.Wu)([Chunk594190.ZP], () => Chunk594190.ZP.getGamesSeen(true)).filter(e => !(0, Y.le)(e)), s = (0, Chunk835473.Z)(o.map(e => e.id)), l = !(0, Chunk145597.supportsLegacy)(), c = e => {
+    var t, r;
+    y.Z.setEnabled(e, a);
+    let i = null != (r = null == (t = C.ZP.getCurrentGameForAnalytics()) ? true : t.id) ? r : null;
+    (0, D.ou)(e, D.AE.LEGACY, i), !e && n && (0, Z.l)(D.AE.LEGACY, i)
   }, u = (e, t, n) => {
     let {
       enabledOOP: r
@@ -629,7 +629,7 @@ function eZ() {
       children: [(0, Chunk951288.jsx)(Chunk755721.T2, {
         checked: require,
         disabled: l,
-        onChange: (e, t) => c(e, t)
+        onChange: e => c(e)
       }), Chunk987650.iP && (0, Chunk951288.jsx)("div", {
         className: Chunk607547.emptySpacer
       })]
@@ -645,7 +645,7 @@ function eZ() {
       children: (0, Chunk951288.jsx)(Chunk755721.T2, {
         checked: require,
         disabled: l,
-        onChange: (e, t) => c(e, t)
+        onChange: e => c(e)
       })
     }),
     children: [(0, Chunk951288.jsx)("div", {
@@ -681,13 +681,12 @@ function eF() {
   let [e, t] = Chunk647438.useState(false), {
     oopEnabled: n,
     legacyEnabled: a
-  } = (0, Chunk442837.cj)([Chunk371651.default], () => Chunk371651.default.getGlobalEnabledStatus()), o = !(0, Chunk145597.supportsOutOfProcess)(), s = (0, Chunk442837.Wu)([Chunk594190.ZP], () => Chunk594190.ZP.getGamesSeen(true)).filter(e => !(0, Y.le)(e)), l = (0, Chunk835473.Z)(Chunk348327.map(e => e.id)), c = (e, t) => {
-    var r, i;
-    ek(t);
-    let o = !e && n;
+  } = (0, Chunk442837.cj)([Chunk371651.default], () => Chunk371651.default.getGlobalEnabledStatus()), o = !(0, Chunk145597.supportsOutOfProcess)(), s = (0, Chunk442837.Wu)([Chunk594190.ZP], () => Chunk594190.ZP.getGamesSeen(true)).filter(e => !(0, Y.le)(e)), l = (0, Chunk835473.Z)(Chunk348327.map(e => e.id)), c = e => {
+    var t, r;
+    let i = !e && n;
     y.Z.setEnabled(a, e);
-    let s = null != (i = null == (r = C.ZP.getCurrentGameForAnalytics()) ? true : r.id) ? i : null;
-    (0, D.ou)(e, D.AE.OOP, s), o && (0, Z.l)(D.AE.OOP, s)
+    let o = null != (r = null == (t = C.ZP.getCurrentGameForAnalytics()) ? true : t.id) ? r : null;
+    (0, D.ou)(e, D.AE.OOP, o), i && (0, Z.l)(D.AE.OOP, o)
   }, u = (e, t, n) => {
     let {
       enabledLegacy: r
@@ -703,7 +702,7 @@ function eF() {
       children: [(0, Chunk951288.jsx)(Chunk755721.T2, {
         checked: require,
         disabled: o,
-        onChange: (e, t) => c(e, t)
+        onChange: e => c(e)
       }), Chunk987650.iP && (0, Chunk951288.jsx)("div", {
         className: Chunk607547.emptySpacer
       })]
@@ -719,7 +718,7 @@ function eF() {
       children: (0, Chunk951288.jsx)(Chunk755721.T2, {
         checked: require,
         disabled: o,
-        onChange: (e, t) => c(e, t)
+        onChange: e => c(e)
       })
     }),
     children: [(0, Chunk951288.jsx)("div", {
