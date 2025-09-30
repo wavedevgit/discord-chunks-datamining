@@ -1,7 +1,7 @@
 /** Chunk was on 50751 **/
 /** chunk id: 350663, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => S
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk339882 = require("./339882.js");
 
-function v(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -39,7 +39,7 @@ function v(e) {
   return e
 }
 
-function E(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -51,18 +51,18 @@ function E(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = {
+let b = {
     mass: 1,
     tension: 250,
     friction: 18,
     clamp: true
   },
-  b = Chunk647438.memo(function(e) {
+  S = Chunk647438.memo(function(e) {
     let {
       widgetId: t,
       tileWidth: n,
       tileHeight: l,
-      layout: b,
+      layout: S,
       locked: x,
       activeStreams: j,
       streamParticipants: I,
@@ -77,13 +77,13 @@ let S = {
       locked: x,
       widgetId: t,
       pinned: Z
-    })), T = (0, u.Z)(n), _ = (0, u.Z)(x), P = b === g.C5.VERTICAL, D = x || _ !== x || T !== n, A = r.useMemo(() => {
+    })), T = (0, u.Z)(n), _ = (0, u.Z)(x), P = S === g.C5.VERTICAL, D = x || _ !== x || T !== n, A = r.useMemo(() => {
       let e = 0,
         t = 0;
-      return P ? N.map((t, n) => E(v({}, t), {
+      return P ? N.map((t, n) => v(E({}, t), {
         y: (e += t.height + (n > 0 ? w : 0)) - t.height,
         x: 0
-      })) : N.map((e, n) => E(v({}, e), {
+      })) : N.map((e, n) => v(E({}, e), {
         x: (t += e.width + (n > 0 ? w : 0)) - e.width,
         y: 0
       }))
@@ -126,7 +126,7 @@ let S = {
           height: r
         }
       },
-      config: S,
+      config: b,
       trail: 100 * !D
     }, D ? "animate-never" : "respect-motion-settings"), M = (0, p.ee)(() => new Set(I.map(e => e.user.id)), [I, C]), V = (0, p.ee)(() => new Set(I.filter(e => j.has((0, c.V9)(e.stream))).map(e => e.user.id)), [I, j, C]);
     return r.useEffect(() => {

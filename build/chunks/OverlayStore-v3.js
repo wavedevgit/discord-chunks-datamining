@@ -758,7 +758,7 @@ class e7 extends(i = Chunk442837.ZP.Store) {
     return null == z ? null : null != (e = Chunk594190.ZP.getGameOrTransformedSubgameForPID(z)) ? module : null
   }
   isReady(e) {
-    return Z.has(e)
+    return !!Z.has(e) && J[e] === I.mM.OVERLAY_RENDERING
   }
   isGPUBoosted() {
     return H.isGPUBoosted

@@ -156,11 +156,11 @@ function P(e) {
 
 function D(e, t, n) {
   var r, l;
-  let o = v.default.getUser(e);
+  let o = E.default.getUser(e);
   if (null == o) return null;
   let {
     designVariant: c
-  } = (0, b.lj)("OverlayV3StreamWatchNudge"), f = null == n ? true : n.application_id, j = g.Z.getChannel(t), w = null != f ? d.Z.getApplication(f) : null, N = null != f ? O.Z.getDetectableGame(f) : null, T = null != f ? h.ZP.getRunningGames().find(e => e.id === f) : null, D = null != (l = null != (r = null == T ? true : T.name) ? r : null == N ? true : N.name) ? l : null == w ? true : w.name, A = (0, E.oY)(null == j ? true : j.guild_id, null == j ? true : j.id, o), {
+  } = (0, S.lj)("OverlayV3StreamWatchNudge"), f = null == n ? true : n.application_id, j = g.Z.getChannel(t), w = null != f ? d.Z.getApplication(f) : null, N = null != f ? O.Z.getDetectableGame(f) : null, T = null != f ? h.ZP.getRunningGames().find(e => e.id === f) : null, D = null != (l = null != (r = null == T ? true : T.name) ? r : null == N ? true : N.name) ? l : null == w ? true : w.name, A = (0, v.oY)(null == j ? true : j.guild_id, null == j ? true : j.id, o), {
     trackView: R,
     trackClick: k
   } = (0, I.R)(C.n0.StreamWatchNudge, {
@@ -172,7 +172,7 @@ function D(e, t, n) {
   return {
     body: (() => {
       switch (c) {
-        case b.RD.GREEN_BUTTON_WITH_TEXT:
+        case S.RD.GREEN_BUTTON_WITH_TEXT:
           return (0, i.jsx)(_, {
             user: o,
             application: w,
@@ -180,7 +180,7 @@ function D(e, t, n) {
             username: A,
             buttonColor: "green"
           });
-        case b.RD.GRAY_BUTTON_WITH_TEXT:
+        case S.RD.GRAY_BUTTON_WITH_TEXT:
           return (0, i.jsx)(_, {
             user: o,
             application: w,
@@ -188,7 +188,7 @@ function D(e, t, n) {
             username: A,
             buttonColor: "gray"
           });
-        case b.RD.SINGLE_ICON_BUTTON:
+        case S.RD.SINGLE_ICON_BUTTON:
           return (0, i.jsx)(P, {
             user: o,
             application: w,
@@ -205,9 +205,9 @@ function D(e, t, n) {
       null != r && null != l && ((0, x.gI)(l.stream, m.L.COVER), (0, u.rn)(l.stream, {
         forceMultiple: true,
         noFocus: true
-      }), (0, a.xh)(r.id, true), (0, a.n6)(r.id), (0, S.Ws)(Z.Odu.GO_LIVE, {
-        type: S.Qu.GO_LIVE,
-        value: S.bk.ACCEPT_REQUEST,
+      }), (0, a.xh)(r.id, true), (0, a.n6)(r.id), (0, b.Ws)(Z.Odu.GO_LIVE, {
+        type: b.Qu.GO_LIVE,
+        value: b.bk.ACCEPT_REQUEST,
         userId: l.user.id
       })), setTimeout(() => {
         s.Z.updateNotificationStatus(i)

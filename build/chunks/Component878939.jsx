@@ -19,8 +19,8 @@ var Chunk951288 = require("./951288.js"),
 function m(e) {
   let {
     locked: t
-  } = e, n = (0, p.II)(), m = null == n ? true : n.id, g = null == n ? true : n.altId, O = (0, l.e7)([u.default], () => u.default.getCurrentUser()), y = null != g ? g : m, [v, E] = r.useState(new Set), [S, b] = r.useState(new Set), x = r.useCallback((e, t, n) => {
-    E(n => {
+  } = e, n = (0, p.II)(), m = null == n ? true : n.id, g = null == n ? true : n.altId, O = (0, l.e7)([u.default], () => u.default.getCurrentUser()), y = null != g ? g : m, [E, v] = r.useState(new Set), [b, S] = r.useState(new Set), x = r.useCallback((e, t, n) => {
+    v(n => {
       if (t) {
         if (n.has(e)) return n;
         n.add(e)
@@ -29,7 +29,7 @@ function m(e) {
         n.delete(e)
       }
       return new Set(n)
-    }), b(i => {
+    }), S(i => {
       if (n && t) {
         if (i.has(e)) return i;
         i.add(e)
@@ -39,7 +39,7 @@ function m(e) {
       }
       return new Set(i)
     })
-  }, []), j = (0, c.ee)(() => v, [v]), I = (0, c.ee)(() => S, [S]), C = (0, o.h)(c.zi, 3e3, []);
+  }, []), j = (0, c.ee)(() => E, [E]), I = (0, c.ee)(() => b, [b]), C = (0, o.h)(c.zi, 3e3, []);
   r.useEffect(() => {
     0 === j.size || t || C(h.Odu.FRIENDS, {
       locked: t,

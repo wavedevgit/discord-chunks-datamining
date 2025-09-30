@@ -1,14 +1,13 @@
 /** Chunk was on 1272 **/
 /** chunk id: 852926, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  GC: () => _,
-  _X: () => b,
-  br: () => h,
-  em: () => m,
-  jU: () => g
+  GC: () => b,
+  _X: () => m,
+  br: () => f,
+  em: () => g,
+  jU: () => h
 });
 var Chunk13245 = require("./13245.js"),
-  Chunk837268 = require("./837268.js"),
   Chunk371651 = require("./371651.js"),
   Chunk610394 = require("./610394.js"),
   Chunk998502 = require("./998502.js"),
@@ -17,46 +16,46 @@ var Chunk13245 = require("./13245.js"),
   Chunk914946 = require("./914946.js"),
   Chunk186901 = require("./186901.js"),
   Chunk981631 = require("./981631.js");
-let f = ["207646673902501888"];
+let p = ["207646673902501888"];
 
-function h(e) {
-  return null != e && l.default.isOverlayOOPEnabledForPid(e) && a.ZP.isReady(e) && a.ZP.getOverlayState(e) === i.mM.OVERLAY_RENDERING
+function f(e) {
+  return null != e && !!i.default.isOverlayOOPEnabledForPid(e) && l.ZP.isReady(e)
 }
 
-function g(e) {
+function h(e) {
   return null == e ? {
-    lock: p.VqG,
-    context: p.IlC.APP
-  } : h(e) ? (r.Z.setInputLocked(false, e), {
+    lock: d.VqG,
+    context: d.IlC.APP
+  } : f(e) ? (r.Z.setInputLocked(false, e), {
     lock() {
       r.Z.setInputLocked(true, e)
     },
-    context: p.IlC.POPOUT
-  }) : (o.ZP.focus(null, true), {
+    context: d.IlC.POPOUT
+  }) : (a.ZP.focus(null, true), {
     lock() {
-      o.ZP.setForegroundProcess(e)
+      a.ZP.setForegroundProcess(e)
     },
-    context: p.IlC.APP
+    context: d.IlC.APP
   })
 }
-let m = async (e, t, n) => {
-  if ((0, u.YK)(e, t), (null == n || "" === n) && (0, u.s9)(t)) return e.authorization.scopes = [d.cE, d.CN], Promise.resolve();
-  if (null == n || "" === n) return Promise.reject(new c.Z({
-    closeCode: p.$VG.INVALID_CLIENTID
+let g = async (e, t, n) => {
+  if ((0, c.YK)(e, t), (null == n || "" === n) && (0, c.s9)(t)) return e.authorization.scopes = [u.cE, u.CN], Promise.resolve();
+  if (null == n || "" === n) return Promise.reject(new s.Z({
+    closeCode: d.$VG.INVALID_CLIENTID
   }, "No Client ID Specified"));
-  let r = o.ZP.releaseChannel !== p.R5N.CANARY && !f.includes(n) && e.transport !== d.He.POST_MESSAGE;
-  return await (0, u.vv)(n, r), (0, u.YS)(e, n, t)
-}, b = () => (0, Chunk914946.tr)(e => {
+  let r = a.ZP.releaseChannel !== d.R5N.CANARY && !p.includes(n) && e.transport !== u.He.POST_MESSAGE;
+  return await (0, c.vv)(n, r), (0, c.YS)(e, n, t)
+}, m = () => (0, Chunk914946.tr)(e => {
   let t = [];
   return null != e.modeOptions.shortcut && Array.isArray(e.modeOptions.shortcut) && (t = e.modeOptions.shortcut.map(e => {
     var t;
     return {
       type: e[0],
       code: e[1],
-      name: null != (t = (0, s.H9)(e)) ? t : "unknown"
+      name: null != (t = (0, o.H9)(e)) ? t : "unknown"
     }
   })), t
-}), _ = e => (0, u.FJ)(e, e => {
+}), b = e => (0, c.FJ)(e, e => {
   let t = "";
-  return null != e.modeOptions.shortcut && Array.isArray(e.modeOptions.shortcut) && (t = (0, s.BB)(e.modeOptions.shortcut)), t
+  return null != e.modeOptions.shortcut && Array.isArray(e.modeOptions.shortcut) && (t = (0, o.BB)(e.modeOptions.shortcut)), t
 })

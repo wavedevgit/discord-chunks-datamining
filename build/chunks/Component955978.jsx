@@ -22,12 +22,12 @@ function O(e, t, n) {
   var O;
   let y = d.default.getUser(e);
   if (null == y) return null;
-  let v = c.Z.getCurrentlySelectedChannelId(),
-    E = u.Z.getChannel(v),
-    S = o.Z.getApplication(t),
-    b = a.ZP.getRunningGames().find(e => e.id === t),
-    x = null != (O = null == b ? true : b.name) ? O : null == S ? true : S.name,
-    j = (0, p.oY)(null == E ? true : E.guild_id, null == E ? true : E.id, y),
+  let E = c.Z.getCurrentlySelectedChannelId(),
+    v = u.Z.getChannel(E),
+    b = o.Z.getApplication(t),
+    S = a.ZP.getRunningGames().find(e => e.id === t),
+    x = null != (O = null == S ? true : S.name) ? O : null == b ? true : b.name,
+    j = (0, p.oY)(null == v ? true : v.guild_id, null == v ? true : v.id, y),
     I = (0, i.jsxs)("div", {
       className: g.nowPlayingNotification,
       children: [(0, i.jsx)("div", {
@@ -46,9 +46,9 @@ function O(e, t, n) {
           children: m.intl.format(m.t["q7/rgo"], {
             username: null != j ? j : y.username,
             gameName: x,
-            gameIcon: () => null != S || null != b ? (0, i.jsx)(s.Z, {
-              game: S,
-              pid: null == b ? true : b.pid,
+            gameIcon: () => null != b || null != S ? (0, i.jsx)(s.Z, {
+              game: b,
+              pid: null == S ? true : S.pid,
               size: s.A.XSMALL,
               className: g.gameIcon
             }) : null

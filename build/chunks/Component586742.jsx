@@ -86,9 +86,9 @@ let R = Chunk647438.memo(function(e) {
       shouldDisplay: d
     } = e, p = r.useCallback((e, r) => {
       let l = e.user;
-      (0, b.Ws)(N.Odu.VIDEO, {
-        type: b.Qu.CAMERA,
-        value: b.bk.SETTINGS_OPENED,
+      (0, S.Ws)(N.Odu.VIDEO, {
+        type: S.Qu.CAMERA,
+        value: S.bk.SETTINGS_OPENED,
         userId: null == l ? true : l.id
       }), (0, u.jW)(r, async () => {
         let {
@@ -98,21 +98,21 @@ let R = Chunk647438.memo(function(e) {
           user: l,
           mediaEngineContext: t,
           onWatchStream: () => {
-            (0, b.Ws)(N.Odu.VIDEO, {
-              type: b.Qu.GO_LIVE,
-              value: b.bk.ENABLED,
+            (0, S.Ws)(N.Odu.VIDEO, {
+              type: S.Qu.GO_LIVE,
+              value: S.bk.ENABLED,
               userId: null == l ? true : l.id
             })
           }
         }))
       })
-    }, [t]), f = (0, b.ee)(() => new Set(l.map(e => {
+    }, [t]), f = (0, S.ee)(() => new Set(l.map(e => {
       var t;
       return null == (t = e.user) ? true : t.id
     })), [l]);
     r.useEffect(() => {
-      d && (0, b.zi)(N.Odu.VIDEO, {
-        locked: E.default.isInstanceLocked(),
+      d && (0, S.zi)(N.Odu.VIDEO, {
+        locked: v.default.isInstanceLocked(),
         shownUserIds: Array.from(f),
         liveUserIds: Array.from(f),
         contentInventoryIds: []
@@ -220,22 +220,22 @@ let R = Chunk647438.memo(function(e) {
 
 function V(e) {
   var t, n, l, o;
-  let s = (0, a.e7)([v.Z, O.Z], () => O.Z.getChannel(v.Z.getVoiceChannelId())),
+  let s = (0, a.e7)([E.Z, O.Z], () => O.Z.getChannel(E.Z.getVoiceChannelId())),
     u = 2 * e.padding + 2 * e.borderWidth,
     h = null == s ? true : s.id,
     [m, y] = (0, a.e7)([p.Z], () => null == h ? [
       [], 0
-    ] : [p.Z.getVideoParticipants(h), p.Z.getParticipantsVersion(h)], [h], S.Q),
-    E = "boolean" != typeof e.widget.meta.horizontal || e.widget.meta.horizontal,
+    ] : [p.Z.getVideoParticipants(h), p.Z.getParticipantsVersion(h)], [h], b.Q),
+    v = "boolean" != typeof e.widget.meta.horizontal || e.widget.meta.horizontal,
     {
-      width: b = e.width - u,
+      width: S = e.width - u,
       height: x = e.height - u,
       ref: I
     } = (0, d.ZP)(e.locked, e.widget.pinned),
     {
       participantTileWidth: C,
       visibleParticipants: Z
-    } = (0, g.ZB)(E ? b : x, m, {
+    } = (0, g.ZB)(v ? S : x, m, {
       tileWidth: w.vZ,
       tileMinWidth: w.mo,
       tileMargin: w.F$,
@@ -248,7 +248,7 @@ function V(e) {
       id: e.widget.id,
       containerSize: {
         containerHeight: x,
-        containerWidth: b
+        containerWidth: S
       },
       sizeOffset: u,
       padding: e.padding,
@@ -315,15 +315,15 @@ function V(e) {
       })
     }, [t])
   }({
-    horizontal: E,
+    horizontal: v,
     widget: e.widget,
     widgetLayoutSpecs: T
   }), (0, i.jsx)(L, A(D({}, e), {
     channel: s,
     participants: Z,
     participantsVersion: y,
-    width: E ? C : null != b ? b : e.width,
-    height: E ? null != x ? x : e.height : C,
+    width: v ? C : null != S ? S : e.width,
+    height: v ? null != x ? x : e.height : C,
     containerRef: I
   }))
 }

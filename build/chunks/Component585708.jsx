@@ -1,7 +1,7 @@
 /** Chunk was on 50751 **/
 /** chunk id: 585708, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => b
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -23,8 +23,8 @@ var Chunk13245 = require("./13245.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function S(e, t, n, S) {
-  var b;
+function b(e, t, n, b) {
+  var S;
   let {
     icon: x,
     title: j,
@@ -34,7 +34,7 @@ function S(e, t, n, S) {
     trackClick: Z
   } = (0, O.R)(y.n0.TextChat, {
     notif_type: y.n0.TextChat,
-    notif_user_id: null == (b = t.author) ? true : b.id,
+    notif_user_id: null == (S = t.author) ? true : S.id,
     message_id: t.id,
     message_type: t.type,
     guild_id: e.guild_id,
@@ -49,7 +49,7 @@ function S(e, t, n, S) {
       formatInline: true,
       hideSimpleEmbedContent: false
     }).content : I,
-    hint: (e, t) => e && !t ? null : (0, g.Q)((0, O.P)(), E.t.ykjOAA, E.intl.string(E.t.jZkzVF)),
+    hint: (e, t) => e && !t ? null : (0, g.Q)((0, O.P)(), v.t.ykjOAA, v.intl.string(v.t.jZkzVF)),
     maxBodyLines: 2,
     renderFooter: (n, r, l) => n && !l ? (0, i.jsx)(m.Z, {
       id: r,
@@ -58,15 +58,15 @@ function S(e, t, n, S) {
       onSend: () => Z("send")
     }) : null,
     onNotificationShow: () => {
-      S && (0, u.GN)(c.Ay, c.yk), C()
+      b && (0, u.GN)(c.Ay, c.yk), C()
     },
     onNotificationClick: () => {
       let n = (0, h.getPID)();
       (0, l.In)(e.id, {
-        section: v.jXE.OVERLAY,
-        object: v.qAy.ACK_TEXT_CHAT_NOTIFICATION,
-        objectType: v.Qqv.ACK_SEMI_AUTOMATIC
-      }, true, true, t.id), f.ZP.isInputLocked(n) ? (Z("unlock"), r.Z.setInputLocked(false, n)) : (Z("jump"), (0, s.uL)(v.Z5c.CHANNEL(e.guild_id, e.id, t.id)), d.isPlatformEmbedded && p.ZP.focus())
+        section: E.jXE.OVERLAY,
+        object: E.qAy.ACK_TEXT_CHAT_NOTIFICATION,
+        objectType: E.Qqv.ACK_SEMI_AUTOMATIC
+      }, true, true, t.id), f.ZP.isInputLocked(n) ? (Z("unlock"), r.Z.setInputLocked(false, n)) : (Z("jump"), (0, s.uL)(E.Z5c.CHANNEL(e.guild_id, e.id, t.id)), d.isPlatformEmbedded && p.ZP.focus())
     },
     onDismissClick: () => {
       Z("dismiss")

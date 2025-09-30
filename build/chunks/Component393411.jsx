@@ -192,7 +192,7 @@ function H() {
         analyticsLocations: module,
         analyticsObject: G
       }),
-      children: Chunk388032.intl.string(Chunk388032.t["/ygMUV"])
+      text: Chunk388032.intl.string(Chunk388032.t["/ygMUV"])
     }),
     statusClasses: {
       [Chunk965406.tier1]: true
@@ -342,8 +342,8 @@ let Y = function(e) {
           }), (0, r.jsx)(l.ua7, {
             text: t,
             children: t => (0, r.jsx)(N.Z, k(j({}, t), {
-              disabled: e,
               className: L.toolsButton,
+              disabled: e,
               onClick: () => {
                 (0, p.Z)({
                   analyticsLocations: M,
@@ -352,7 +352,7 @@ let Y = function(e) {
                   subscription: i
                 })
               },
-              children: D.intl.string(D.t["dylp//"])
+              text: D.intl.string(D.t["dylp//"])
             }))
           })]
         })

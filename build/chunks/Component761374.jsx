@@ -1,7 +1,7 @@
 /** Chunk was on 50751 **/
 /** chunk id: 761374, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => C
+  Z: () => I
 }), require("./388685.js"), require("./642613.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -25,119 +25,121 @@ var Chunk951288 = require("./951288.js"),
   Chunk501787 = require("./501787.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk965365 = require("./965365.js");
-let I = [];
 
-function C(e) {
-  var t, n, C, Z;
+function I(e) {
+  var t, n;
   let {
-    id: w,
-    widget: N,
-    size: T,
-    locked: _,
-    padding: P,
-    borderWidth: D,
-    opacity: A,
-    horizontal: R,
-    pinned: k,
-    anchorTop: L,
-    anchorLeft: M,
-    showEmpty: V = true
-  } = e, z = R ? S.C5.HORIZONTAL : S.C5.VERTICAL, U = z === S.C5.VERTICAL, W = (0, l.e7)([m.Z], () => {
+    id: I,
+    widget: C,
+    size: Z,
+    locked: w,
+    padding: N,
+    borderWidth: T,
+    opacity: _,
+    horizontal: P,
+    pinned: D,
+    anchorTop: A,
+    anchorLeft: R,
+    showEmpty: k = true
+  } = e, L = P ? b.C5.HORIZONTAL : b.C5.VERTICAL, M = L === b.C5.VERTICAL, V = (0, l.e7)([m.Z], () => {
     var e;
-    let t = m.Z.getWidget(w);
-    return !!(0, S.ZL)(t) && !_ && (null == (e = t.meta.showAllStreams) || e)
-  }, [w, _]), G = (0, l.e7)([g.Z], () => g.Z.getVoiceChannelId()), H = (0, l.e7)([f.Z], () => f.Z.getChannel(G)), F = (0, l.e7)([h.default], () => h.default.getId()), {
-    streamParticipants: Y,
-    activeStreams: B,
-    participantsVersion: Q
-  } = (C = L && U || M && R, Z = !L && U || !M && R, (0, l.cj)([p.Z, u.Z], () => {
-    if (null == G) return {
-      streamParticipants: I,
-      participantsVersion: false,
-      activeStreams: new Set
-    };
-    let e = new Set(p.Z.getAllActiveStreamsForChannel(G).map(e => (0, c.V9)(e))),
-      t = t => e.has((0, c.V9)(t.stream)),
-      n = u.Z.getStreamParticipants(G).filter(e => e.user.id !== F && (!!W || t(e)));
-    return n.sort((e, n) => {
-      if (C) {
-        if (t(e) && !t(n)) return false;
-        if (!t(e) && t(n)) return 1
-      } else if (Z) {
-        if (t(e) && !t(n)) return 1;
-        if (!t(e) && t(n)) return false
-      }
-      return e.user.username.localeCompare(n.user.username)
-    }), {
-      streamParticipants: n,
-      activeStreams: e,
-      participantsVersion: u.Z.getParticipantsVersion(G)
+    let t = m.Z.getWidget(I);
+    return !!(0, b.ZL)(t) && !w && (null == (e = t.meta.showAllStreams) || e)
+  }, [I, w]), z = (0, l.e7)([g.Z], () => g.Z.getVoiceChannelId()), U = (0, l.e7)([f.Z], () => f.Z.getChannel(z)), {
+    streamParticipants: W,
+    activeStreams: G,
+    participantsVersion: H
+  } = function(e, t, n, i, o) {
+    let a = (0, l.Wu)([p.Z], () => null == e ? [] : p.Z.getAllActiveStreamsForChannel(e)),
+      s = r.useMemo(() => new Set(a.map(e => (0, c.V9)(e))), [a]),
+      d = (0, l.e7)([u.Z], () => null == e ? false : u.Z.getParticipantsVersion(e));
+    return {
+      streamParticipants: (0, l.Wu)([u.Z], () => {
+        if (null == e) return [];
+
+        function r(e) {
+          return s.has((0, c.V9)(e.stream))
+        }
+        let l = u.Z.getStreamParticipants(e).filter(e => e.user.id !== t && (!!n || r(e)));
+        return l.sort((e, t) => {
+          if (i) {
+            if (r(e) && !r(t)) return false;
+            if (!r(e) && r(t)) return 1
+          } else if (o) {
+            if (r(e) && !r(t)) return 1;
+            if (!r(e) && r(t)) return false
+          }
+          return e.user.username.localeCompare(t.user.username)
+        }), l
+      }, [e, s, t, n, i, o]),
+      activeStreams: s,
+      participantsVersion: d
     }
-  }, [G, F, W, C, Z])), K = Y.length, X = (0, l.e7)([d.Z], () => d.Z.getWindowState(b.$J), []), {
-    tileWidth: q,
-    tileHeight: J,
-    widgetWidth: $,
-    widgetHeight: ee,
-    containerRef: et,
-    containerMinMaxSizes: en
-  } = (0, E.Bz)({
-    tileCount: K,
-    padding: P,
-    borderWidth: D,
-    isVertical: U,
-    widgetSize: T
-  }), ei = {
-    id: w,
-    widget: N,
-    layout: z,
-    participants: Y.length,
-    padding: P,
-    borderWidth: D,
-    widgetMinMaxSizes: en,
+  }(z, (0, l.e7)([h.default], () => h.default.getId()), V, A && M || R && P, !A && M || !R && P), F = W.length, Y = (0, l.e7)([d.Z], () => d.Z.getWindowState(S.$J), []), {
+    tileWidth: B,
+    tileHeight: Q,
+    widgetWidth: K,
+    widgetHeight: X,
+    containerRef: q,
+    containerMinMaxSizes: J
+  } = (0, v.Bz)({
+    tileCount: F,
+    padding: N,
+    borderWidth: T,
+    isVertical: M,
+    widgetSize: Z
+  }), $ = {
+    id: I,
+    widget: C,
+    layout: L,
+    participants: W.length,
+    padding: N,
+    borderWidth: T,
+    widgetMinMaxSizes: J,
     containerSize: {
-      width: $,
-      height: ee
+      width: K,
+      height: X
     },
     orientedPosition: {
       top: 0,
       left: 0,
-      bottom: null != (t = null == X ? true : X.height) ? t : ee,
-      right: null != (n = null == X ? true : X.width) ? n : $
+      bottom: null != (t = null == Y ? true : Y.height) ? t : X,
+      right: null != (n = null == Y ? true : Y.width) ? n : K
     },
-    locked: _
+    locked: w
   };
-  (0, E.Dl)({
-    id: w,
-    streamParticipants: Y,
-    layout: z,
-    widgetLayoutSpecs: ei
+  (0, v.Dl)({
+    id: I,
+    streamParticipants: W,
+    layout: L,
+    widgetLayoutSpecs: $
   });
-  let er = null == H || 0 === B.size && _ || 0 === K && !_;
+  let ee = null == U || 0 === G.size && w || 0 === F && !w;
   return (r.useEffect(() => {
-    a.Z.setGpuBoostRequested(O.zS.OVERLAY_VIDEO_STREAM_RENDERING, !er)
-  }, [er]), (0, s.ZP)(() => () => {
+    a.Z.setGpuBoostRequested(O.zS.OVERLAY_VIDEO_STREAM_RENDERING, !ee)
+  }, [ee]), (0, s.ZP)(() => () => {
     a.Z.setGpuBoostRequested(O.zS.OVERLAY_VIDEO_STREAM_RENDERING, false)
-  }), (er || !k) && _) ? null : er && !_ ? V ? _ ? null : (0, i.jsx)(y.E, {
+  }), (ee || !D) && w) ? null : ee && !w ? k ? w ? null : (0, i.jsx)(y.E, {
     emptyText: x.intl.string(x.t["T6+rX1"]),
     icon: o.hGI,
     absolute: true
   }) : null : (0, i.jsx)("div", {
     className: j.goLiveGridContainer,
     style: {
-      opacity: A
+      opacity: _
     },
-    ref: et,
-    children: (0, i.jsx)(v.Z, {
-      widgetId: w,
-      tileWidth: q,
-      tileHeight: J,
-      locked: _,
-      layout: z,
-      activeStreams: B,
-      streamParticipants: Y,
-      participantsVersion: Q,
-      pinned: k,
-      padding: P
+    ref: q,
+    children: (0, i.jsx)(E.Z, {
+      widgetId: I,
+      tileWidth: B,
+      tileHeight: Q,
+      locked: w,
+      layout: L,
+      activeStreams: G,
+      streamParticipants: W,
+      participantsVersion: H,
+      pinned: D,
+      padding: N
     })
   })
 }

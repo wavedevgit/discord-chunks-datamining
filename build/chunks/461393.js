@@ -59,13 +59,13 @@ function d(e, t, n) {
       tileCount: h,
       isVertical: s
     }),
-    v = e.width - i,
-    E = e.height - i,
-    S = d - i,
-    b = p - i;
-  return s ? (b -= g, E -= g) : (S -= g, v -= g), f && m && (e.width > e.height ? E = l(v = S, O) : v = o(E = b, y), f = v > S, m = E > b), f && (E = l(v = S, O)), m && (v = o(E = b, y)), s ? E += u(a, r) : v += u(a, r), {
-    width: v + i,
-    height: E + i
+    E = e.width - i,
+    v = e.height - i,
+    b = d - i,
+    S = p - i;
+  return s ? (S -= g, v -= g) : (b -= g, E -= g), f && m && (e.width > e.height ? v = l(E = b, O) : E = o(v = S, y), f = E > b, m = v > S), f && (v = l(E = b, O)), m && (E = o(v = S, y)), s ? v += u(a, r) : E += u(a, r), {
+    width: E + i,
+    height: v + i
   }
 }
 

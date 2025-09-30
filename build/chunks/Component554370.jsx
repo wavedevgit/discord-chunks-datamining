@@ -185,9 +185,9 @@ function ea(e) {
     incompatibleApp: Z,
     hasZeroSizeDimension: P,
     keybind: R
-  } = (0, a.cj)([U.ZP, j.default, I.Z, b.ZP], () => {
+  } = (0, a.cj)([U.ZP, j.default, I.Z, S.ZP], () => {
     let e = I.Z.windowSize((0, T.ZY)(l)),
-      t = b.ZP.getOverlayKeybind(),
+      t = S.ZP.getOverlayKeybind(),
       n = (0, N.getPID)();
     return {
       locked: U.ZP.isInputLocked(n),
@@ -224,12 +224,12 @@ function ea(e) {
   return (0, p.ZP)(() => {
     var e;
     let t = (0, W.pL)(),
-      n = S.Z.getVoiceChannelId(),
+      n = b.Z.getVoiceChannelId(),
       i = y.Z.getChannel(n),
-      r = null != i ? v.Z.getGuild(i.guild_id) : null,
+      r = null != i ? E.Z.getGuild(i.guild_id) : null,
       l = null != O.Z.getCurrentUserActiveStream(),
       o = null != n,
-      a = (0, g.Z)(E.Z) && !l && null != t,
+      a = (0, g.Z)(v.Z) && !l && null != t,
       s = o && null != r && null != n,
       {
         allowActivityWidget: u

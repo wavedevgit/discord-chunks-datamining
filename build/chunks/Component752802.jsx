@@ -119,7 +119,7 @@ function M(e) {
     return I.Z.isLocalMute(t.user.id, e)
   }, [t]), o = (0, a.e7)([j.default], () => j.default.getId()), {
     hasVideo: d
-  } = (0, b.Z)(t, o), p = l && d, h = r.useCallback(() => {
+  } = (0, S.Z)(t, o), p = l && d, h = r.useCallback(() => {
     c.Z.toggleLocalMute(n, s.Yn.STREAM)
   }, [n]);
   return (0, i.jsx)(u.ua7, {
@@ -173,7 +173,7 @@ function z(e) {
     hasActiveStream: t,
     participant: n,
     onEnablePin: r
-  } = e, l = (0, v.bp)(), s = n.user, c = (0, a.e7)([C.default], () => {
+  } = e, l = (0, E.bp)(), s = n.user, c = (0, a.e7)([C.default], () => {
     var e;
     return null != (e = C.default.getUser(s.id)) ? e : s
   }, [s]), d = t ? P.intl.string(P.t.tLxK4u) : P.intl.string(P.t.E5RDnJ), {
@@ -272,7 +272,7 @@ let U = new Set([Chunk981631.jm8.ENDED, Chunk981631.jm8.FAILED, Chunk981631.jm8.
       locked: r,
       widgetId: l,
       pinned: o
-    } = e, s = (0, a.e7)([x.Z], () => x.Z.getActiveStreamForUser(t.user.id, t.stream.guildId), [t.user.id, t.stream.guildId]), c = (0, v.bp)(), d = null != s && U.has(s.state), h = null != s, f = (0, T.yA)(t.stream), g = (0, T.xN)(t.stream);
+    } = e, s = (0, a.e7)([x.Z], () => x.Z.getActiveStreamForUser(t.user.id, t.stream.guildId), [t.user.id, t.stream.guildId]), c = (0, E.bp)(), d = null != s && U.has(s.state), h = null != s, f = (0, T.yA)(t.stream), g = (0, T.xN)(t.stream);
     return !h && r || d ? null : (0, i.jsxs)("div", {
       className: D.tile,
       children: [h && !r && (0, i.jsx)(m.ZP, {
@@ -290,10 +290,10 @@ let U = new Set([Chunk981631.jm8.ENDED, Chunk981631.jm8.FAILED, Chunk981631.jm8.
           style: {
             transform: "scale(".concat(f, ")")
           },
-          children: (0, i.jsx)(S.Z, {
+          children: (0, i.jsx)(b.Z, {
             participant: t,
             width: n,
-            fit: null != g ? g : E.L.CONTAIN,
+            fit: null != g ? g : v.L.CONTAIN,
             inPopout: true,
             focused: !r,
             selected: false,

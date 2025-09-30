@@ -95,8 +95,8 @@ function X(e) {
       return () => clearTimeout(e)
     }
   }, [s]);
-  let y = null != n && (0, v.Z)(n, H.xjy.JOIN),
-    E = async e => {
+  let y = null != n && (0, E.Z)(n, H.xjy.JOIN),
+    v = async e => {
       if (null != a && "unsent" === s) {
         e.stopPropagation();
         try {
@@ -140,7 +140,7 @@ function X(e) {
           u("unsent")
         }
       }
-    }, S = async () => {
+    }, b = async () => {
       var e;
       if (null == a) return;
       let t = await m.Z.getOrEnsurePrivateChannel(a.id),
@@ -150,7 +150,7 @@ function X(e) {
         value: W.bk.CHAT,
         userId: a.id
       })
-    }, b = y ? Y.intl.string(Y.t["3fRyS0"]) : Y.intl.string(Y.t.XHxDIS), j = y ? (0, i.jsx)(p.ejJ, {
+    }, S = y ? Y.intl.string(Y.t["3fRyS0"]) : Y.intl.string(Y.t.XHxDIS), j = y ? (0, i.jsx)(p.ejJ, {
       color: "currentColor",
       size: "sm"
     }) : (0, i.jsx)(p.Uuj, {
@@ -158,11 +158,11 @@ function X(e) {
       size: "sm"
     });
   return (0, i.jsx)(p.ua7, {
-    text: b,
-    "aria-label": b,
+    text: S,
+    "aria-label": S,
     children: e => (0, i.jsx)(d.zx, K(Q({}, e), {
       submitting: "sending" === s,
-      onClick: f ? S : E,
+      onClick: f ? b : v,
       className: B.inviteButton,
       wrapperClassName: B.inviteButtonWrapper,
       innerClassName: B.inviteButtonInner,
@@ -187,7 +187,7 @@ function q(e) {
     entry: n,
     currentUserActivity: l
   } = e, o = (0, c.e7)([k.default], () => k.default.getUser(n.author_id)), a = null != (t = null == l ? true : l.application_id) ? t : n.extra.application_id, s = (0, c.e7)([A.Z], () => null != o ? A.Z.getApplicationActivity(o.id, a) : null, [a, o]), [u, f] = r.useState("unsent");
-  if (!(null != s && (0, v.Z)(s, H.xjy.JOIN))) return null;
+  if (!(null != s && (0, E.Z)(s, H.xjy.JOIN))) return null;
   let m = async e => {
     if (null != o && "unsent" === u) {
       e.stopPropagation();
@@ -262,13 +262,13 @@ function J(e) {
           variant: "text-md/medium",
           color: "header-primary",
           children: z.ZP.getName(true, true, l)
-        }), null != o && (0, i.jsx)(S.ZP, {
+        }), null != o && (0, i.jsx)(b.ZP, {
           className: B.liveIndicator
         })]
-      }), (0, i.jsx)(b.Gk, {
-        location: b.Gt.OVERLAY,
+      }), (0, i.jsx)(S.Gk, {
+        location: S.Gt.OVERLAY,
         className: B.badgesContainer,
-        children: [b.OV, b.wO, b.f, b.v1, b.pQ].map((e, n) => (0, i.jsx)(e, {
+        children: [S.OV, S.wO, S.f, S.v1, S.pQ].map((e, n) => (0, i.jsx)(e, {
           entry: t
         }, "entry-".concat(n)))
       })]
@@ -423,7 +423,7 @@ function ei(e) {
     activity: t,
     currentUser: n,
     showInviteButton: r = true
-  } = e, l = null != t && (0, v.Z)(t, H.xjy.JOIN), o = (0, E.q)(null == t ? true : t.application_id), a = null != o && (0, V.yE)(o.flags, H.udG.EMBEDDED);
+  } = e, l = null != t && (0, E.Z)(t, H.xjy.JOIN), o = (0, v.q)(null == t ? true : t.application_id), a = null != o && (0, V.yE)(o.flags, H.udG.EMBEDDED);
   return null == t || null == n ? null : (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(T.Z, {
       className: B.activityCard,

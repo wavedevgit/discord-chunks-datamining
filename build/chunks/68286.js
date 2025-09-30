@@ -55,7 +55,7 @@ function g(e, t) {
 }
 let O = 256,
   y = (e, t) => 2 * e + 2 * t,
-  v = e => {
+  E = e => {
     let {
       width: t,
       height: n
@@ -67,7 +67,7 @@ let O = 256,
     }
   };
 
-function E(e, t, n, i) {
+function v(e, t, n, i) {
   let r = arguments.length > 4 && true !== arguments[4] ? arguments[4] : O,
     l = {
       width: r,
@@ -85,12 +85,12 @@ function E(e, t, n, i) {
   }
 }
 
-function S(e, t, n, i) {
+function b(e, t, n, i) {
   let r = y(e, t);
   return i ? n.width - r : (0, p.eJ)(n.height - r)
 }
 
-function b(e) {
+function S(e) {
   return e.height > e.width
 }
 let x = 180 / 1080;
@@ -103,7 +103,7 @@ function j(e) {
     padding: r,
     previousContainerSize: l,
     widgetMinMaxSizes: o
-  } = e, a = t === h.C5.VERTICAL, s = S(i, r, l, a), u = E(n, r, i, a, s);
+  } = e, a = t === h.C5.VERTICAL, s = b(i, r, l, a), u = v(n, r, i, a, s);
   return (0, p.Se)(u, {
     containerOffset: y(i, r),
     gapSize: r,
@@ -153,9 +153,9 @@ let C = e => {
   } = e, a = y(r, l), s = Math.max(1, i.width), u = Math.max(1, i.height), c = {
     width: s,
     height: u
-  }, h = b(c), f = function(e, t, n) {
-    let i = b(n),
-      r = S(e, t, n, i),
+  }, h = S(c), f = function(e, t, n) {
+    let i = S(n),
+      r = b(e, t, n, i),
       l = (0, p.MH)(r);
     return i ? Math.floor(n.height / l) : Math.floor(n.width / r)
   }(r, l, c), m = (0, p.f8)({
@@ -214,7 +214,7 @@ function Z(e) {
     width: h = s,
     height: m = d,
     ref: g
-  } = (0, o.ZP)(), v = (0, f.Z)(), b = (0, c.ZY)(v), j = (0, r.e7)([u.Z], () => u.Z.windowSize(b), [b]), I = function(e) {
+  } = (0, o.ZP)(), E = (0, f.Z)(), S = (0, c.ZY)(E), j = (0, r.e7)([u.Z], () => u.Z.windowSize(S), [S]), I = function(e) {
     let {
       tileCount: t,
       padding: n,
@@ -222,7 +222,7 @@ function Z(e) {
       windowWidth: r,
       windowHeight: l,
       isVertical: o
-    } = e, a = E(t, n, i, o), s = {
+    } = e, a = v(t, n, i, o), s = {
       maxX: null != r ? r : 2 * a.width / .75,
       maxY: null != l ? l : 2 * a.height / .75,
       minX: 0,
@@ -233,7 +233,7 @@ function Z(e) {
     }, c = (null != l ? l : 0) * x;
     return c = Math.max(a.height, c), c = Math.min(u.height, c), {
       minSize: a,
-      defaultSize: E(t, n, i, o, (0, p.eJ)(c)),
+      defaultSize: v(t, n, i, o, (0, p.eJ)(c)),
       maxSize: u,
       containerSpecs: s
     }
@@ -244,7 +244,7 @@ function Z(e) {
     windowWidth: j.width,
     windowHeight: j.height,
     isVertical: l
-  }), C = y(i, n), Z = S(i, n, {
+  }), C = y(i, n), Z = b(i, n, {
     width: h + C,
     height: m + C
   }, l), w = (0, p.MH)(Z);
@@ -283,7 +283,7 @@ function w(e) {
       d = g(e, ["id", "widgetMinMaxSizes", "containerSize", "layout", "padding", "widget", "borderWidth", "locked"]);
     null != a && I(m({
       widgetId: t,
-      size: v(j({
+      size: E(j({
         layout: r,
         tileCount: Math.max(1, u),
         borderWidth: s,
@@ -292,7 +292,7 @@ function w(e) {
         widgetMinMaxSizes: n
       })),
       defaultSize: n.defaultSize,
-      minSize: v(n.minSize),
+      minSize: E(n.minSize),
       containerSpecs: n.containerSpecs,
       padding: o,
       borderWidth: s,
@@ -316,9 +316,9 @@ function w(e) {
         if (c) return;
         I(m({
           widgetId: t,
-          size: v(n.defaultSize),
+          size: E(n.defaultSize),
           defaultSize: n.defaultSize,
-          minSize: v(n.minSize),
+          minSize: E(n.minSize),
           padding: o,
           borderWidth: s,
           widget: a,
@@ -328,7 +328,7 @@ function w(e) {
       }
       I(m({
         widgetId: t,
-        size: v(j({
+        size: E(j({
           layout: r,
           tileCount: u,
           borderWidth: s,
@@ -336,7 +336,7 @@ function w(e) {
           previousContainerSize: i,
           widgetMinMaxSizes: n
         })),
-        minSize: v(n.minSize),
+        minSize: E(n.minSize),
         containerSpecs: n.containerSpecs,
         padding: o,
         borderWidth: s,
@@ -366,7 +366,7 @@ function w(e) {
         padding: l,
         previousContainerSize: o,
         widgetMinMaxSizes: a
-      } = e, s = S(r, l, o, t === h.C5.VERTICAL), u = E(i, l, r, n === h.C5.VERTICAL, s);
+      } = e, s = b(r, l, o, t === h.C5.VERTICAL), u = v(i, l, r, n === h.C5.VERTICAL, s);
       return (0, p.Se)(u, {
         containerOffset: y(r, l),
         gapSize: l,
@@ -387,8 +387,8 @@ function w(e) {
     });
     I(m({
       widgetId: t,
-      size: v(f),
-      minSize: v(i.minSize),
+      size: E(f),
+      minSize: E(i.minSize),
       containerSpecs: i.containerSpecs,
       padding: a,
       borderWidth: s,
@@ -405,9 +405,9 @@ function w(e) {
       o = g(e, ["id", "widgetMinMaxSizes", "widget", "padding"]);
     null != i && I(m({
       widgetId: t,
-      size: v(n.defaultSize),
+      size: E(n.defaultSize),
       defaultSize: n.defaultSize,
-      minSize: v(n.minSize),
+      minSize: E(n.minSize),
       containerSpecs: n.containerSpecs,
       padding: r,
       widget: i

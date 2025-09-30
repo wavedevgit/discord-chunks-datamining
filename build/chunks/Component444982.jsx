@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function b(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -86,7 +86,7 @@ let j = {
             let {
               default: t
             } = await n.e("26775").then(n.bind(n, 740579));
-            return n => (0, i.jsx)(t, x(b({}, n), {
+            return n => (0, i.jsx)(t, x(S({}, n), {
               widget: e
             }))
           })
@@ -112,8 +112,8 @@ let j = {
         id: n.id,
         locked: l,
         pinned: n.pinned,
-        widget: E.Odu.VOICE_V3,
-        maxDisplayedVoiceStates: null != (t = n.meta.voiceStatesMaxShown) ? t : v.At,
+        widget: v.Odu.VOICE_V3,
+        maxDisplayedVoiceStates: null != (t = n.meta.voiceStatesMaxShown) ? t : E.At,
         isPreviewingInGame: false,
         showEmpty: o
       }) : null
@@ -128,7 +128,7 @@ let j = {
             let {
               default: e
             } = await n.e("32382").then(n.bind(n, 955280));
-            return t => (0, i.jsx)(e, b({}, t))
+            return t => (0, i.jsx)(e, S({}, t))
           })
         }
       }), (0, i.jsx)(O.RT, {
@@ -159,7 +159,7 @@ let j = {
             let {
               default: e
             } = await n.e("38813").then(n.bind(n, 541501));
-            return t => (0, i.jsx)(e, b({}, t))
+            return t => (0, i.jsx)(e, S({}, t))
           })
         }
       }), (0, i.jsx)(O.RT, {
@@ -223,7 +223,7 @@ let j = {
     },
     renderTitle: e => (0, i.jsx)(O.XM, {
       widgetId: e.id,
-      children: S.intl.string(S.t["386XRk"])
+      children: b.intl.string(b.t["386XRk"])
     }),
     renderButtons(e) {
       var t;
@@ -234,7 +234,7 @@ let j = {
               let {
                 default: t
               } = await n.e("34684").then(n.bind(n, 68738));
-              return n => (0, i.jsx)(t, x(b({}, n), {
+              return n => (0, i.jsx)(t, x(S({}, n), {
                 widget: e
               }))
             })
@@ -283,7 +283,7 @@ let j = {
             let {
               default: e
             } = await n.e("94706").then(n.bind(n, 168133));
-            return t => (0, i.jsx)(e, b({}, t))
+            return t => (0, i.jsx)(e, S({}, t))
           })
         }
       }), (0, i.jsx)(O.RT, {

@@ -1,7 +1,7 @@
 /** Chunk was on 50751 **/
 /** chunk id: 134849, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => S
 }), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,11 +20,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk63452 = require("./63452.js");
 let y = [];
 
-function v(e) {
+function E(e) {
   return e.notification.id
 }
 
-function E(e, t, n, r) {
+function v(e, t, n, r) {
   let {
     index: l,
     notification: o,
@@ -41,13 +41,13 @@ function E(e, t, n, r) {
   }, e)
 }
 
-function S(e) {
+function b(e) {
   return (0, i.jsx)("div", {
     className: O.container,
     children: e
   })
 }
-let b = Chunk647438.memo(function(e) {
+let S = Chunk647438.memo(function(e) {
   let {
     locked: t,
     pinned: n,
@@ -66,14 +66,14 @@ let b = Chunk647438.memo(function(e) {
       }), i++)
     }
     return e
-  }, [t, n], c.E6), b = r.useState(() => new h.AS(t))[0];
-  return (r.useLayoutEffect(() => b.updateState(O, t)), r.useLayoutEffect(() => (b.initialize((0, d.i)()), () => b.cleanUp()), [b]), 0 !== O.length || t) ? (0, i.jsx)(h.S4.Provider, {
-    value: b,
+  }, [t, n], c.E6), S = r.useState(() => new h.AS(t))[0];
+  return (r.useLayoutEffect(() => S.updateState(O, t)), r.useLayoutEffect(() => (S.initialize((0, d.i)()), () => S.cleanUp()), [S]), 0 !== O.length || t) ? (0, i.jsx)(h.S4.Provider, {
+    value: S,
     children: (0, i.jsx)(o.W3x, {
       items: O,
-      renderItem: E,
-      getItemKey: v,
-      wrapChildren: S
+      renderItem: v,
+      getItemKey: E,
+      wrapChildren: b
     })
   }) : p ? t ? null : (0, i.jsx)(s.E, {
     emptyText: g.intl.string(g.t.O1Nbjo),
