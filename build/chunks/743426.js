@@ -585,7 +585,7 @@ class v extends Chunk47770.Z {
     return 0 === this.connections.size
   }
   constructor() {
-    var e, t, n, r, i, a, c, p, g;
+    var e, t, n, r, i, a, c, p, g, E;
     super(), e = this, m(this, "Video", Chunk650886.Z), m(this, "Camera", Chunk656795.Z), m(this, "audioInputDeviceId", Chunk149396.Av), m(this, "audioOutputDeviceId", Chunk149396.Av), m(this, "videoInputDeviceId", Chunk149396.Av), m(this, "connections", new Set), m(this, "lastVoiceActivity", false), m(this, "audioSubsystem", "standard"), m(this, "audioLayer", ""), m(this, "deviceChangeGeneration", 0), m(this, "consecutiveWatchdogFailures", 0), m(this, "codecSurvey", null), m(this, "logger", new Chunk579092.Yd("MediaEngineNative")), m(this, "handleDeviceChange", function() {
       let t = arguments.length > 0 && true !== arguments[0] ? arguments[0] : [],
         n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [],
@@ -629,13 +629,13 @@ class v extends Chunk47770.Z {
     }), m(this, "handleSystemMicrophoneModeChangeCallback", e => {
       this.emit(s.aB.SystemMicrophoneModeChange, e)
     });
-    let E = (0, Chunk992774.zS)();
-    E.setDeviceChangeCallback(this.handleDeviceChange), E.setVolumeChangeCallback(this.handleVolumeChange), E.setOnVoiceCallback(this.handleVoiceActivity), null == (t = E.setVideoInputInitializationCallback) || exports.call(E, this.handleVideoInputInitialization), null == (n = E.setAudioInputInitializationCallback) || require.call(E, this.handleAudioInputInitialization), null == (r = E.setAudioDeviceModuleErrorCallback) || Chunk264344.call(E, this.handleAudioDeviceModuleErrorCallback), E.setTransportOptions({
+    let b = (0, Chunk992774.zS)();
+    null == (t = b.updateFieldTrial) || exports.call(b, "WebRTC-CheckReceiveTime", "Enabled"), b.setDeviceChangeCallback(this.handleDeviceChange), b.setVolumeChangeCallback(this.handleVolumeChange), b.setOnVoiceCallback(this.handleVoiceActivity), null == (n = b.setVideoInputInitializationCallback) || require.call(b, this.handleVideoInputInitialization), null == (r = b.setAudioInputInitializationCallback) || Chunk264344.call(b, this.handleAudioInputInitialization), null == (i = b.setAudioDeviceModuleErrorCallback) || i.call(b, this.handleAudioDeviceModuleErrorCallback), b.setTransportOptions({
       idleJitterBufferFlush: true,
       ducking: false
-    }), null == (i = E.setNativeScreenSharePickerCallbacks) || i.call(E, this.handleNativeScreenSharePickerUpdate, this.handleNativeScreenSharePickerCancel, this.handleNativeScreenSharePickerError), null == (a = E.setVideoCodecErrorCallback) || Chunk47770.call(E, this.handleVideoCodecErrorCallback), null == (c = E.setSystemMicrophoneModeChangeCallback) || Chunk997545.call(E, this.handleSystemMicrophoneModeChangeCallback), this.on("removeListener", this.handleRemoveListener), this.on("newListener", this.handleNewListener), null != (0, Chunk992774.zS)().getAudioSubsystem ? (0, Chunk992774.zS)().getAudioSubsystem((e, t) => {
+    }), null == (a = b.setNativeScreenSharePickerCallbacks) || Chunk47770.call(b, this.handleNativeScreenSharePickerUpdate, this.handleNativeScreenSharePickerCancel, this.handleNativeScreenSharePickerError), null == (c = b.setVideoCodecErrorCallback) || Chunk997545.call(b, this.handleVideoCodecErrorCallback), null == (p = b.setSystemMicrophoneModeChangeCallback) || Chunk65154.call(b, this.handleSystemMicrophoneModeChangeCallback), this.on("removeListener", this.handleRemoveListener), this.on("newListener", this.handleNewListener), null != (0, Chunk992774.zS)().getAudioSubsystem ? (0, Chunk992774.zS)().getAudioSubsystem((e, t) => {
       this.audioSubsystem = e, this.audioLayer = t
-    }) : null != (0, Chunk992774.zS)().getUseLegacyAudioDevice && (this.audioSubsystem = (0, Chunk992774.zS)().getUseLegacyAudioDevice() ? Chunk149396.iA.LEGACY : Chunk149396.iA.STANDARD), null != E.pingVoiceThread && "undefined" != typeof window && "canary" === window.GLOBAL_ENV.RELEASE_CHANNEL && this.watchdogTick(), null != E.setActiveSinksChangeCallback && E.setActiveSinksChangeCallback(this.handleActiveSinksChange), null == (p = E.setLoopbackPlaybackGainMultiplier) || Chunk65154.call(E, Chunk149396.Jk), null == (g = E.setVoiceFiltersFailedCallback) || g.call(E, e => this.emit(s.aB.VoiceFiltersFailed, e)), (0, Chunk734298.Z)(this), I(this)
+    }) : null != (0, Chunk992774.zS)().getUseLegacyAudioDevice && (this.audioSubsystem = (0, Chunk992774.zS)().getUseLegacyAudioDevice() ? Chunk149396.iA.LEGACY : Chunk149396.iA.STANDARD), null != b.pingVoiceThread && "undefined" != typeof window && "canary" === window.GLOBAL_ENV.RELEASE_CHANNEL && this.watchdogTick(), null != b.setActiveSinksChangeCallback && b.setActiveSinksChangeCallback(this.handleActiveSinksChange), null == (g = b.setLoopbackPlaybackGainMultiplier) || g.call(b, Chunk149396.Jk), null == (E = b.setVoiceFiltersFailedCallback) || E.call(b, e => this.emit(s.aB.VoiceFiltersFailed, e)), (0, Chunk734298.Z)(this), I(this)
   }
 }
 

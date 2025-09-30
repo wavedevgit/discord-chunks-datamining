@@ -110,7 +110,7 @@ function A(e) {
   }, "animate-always");
 
   function R(e) {
-    I(false), e.stopPropagation(), null == n || n(e.currentTarget.checked, e)
+    I(false), e.stopPropagation(), null == n || n(e.currentTarget.checked)
   }
 
   function P(e) {
