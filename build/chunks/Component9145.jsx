@@ -1,7 +1,7 @@
 /** Chunk was on 63962 **/
 /** chunk id: 9145, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => z
+  Z: () => Y
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -28,9 +28,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk51144 = require("./51144.js"),
   Chunk566620 = require("./566620.js"),
   Chunk317381 = require("./317381.js"),
+  Chunk389147 = require("./389147.js"),
   Chunk619915 = require("./619915.js"),
   Chunk988980 = require("./988980.js"),
   Chunk16609 = require("./16609.js"),
+  Chunk60902 = require("./60902.js"),
   Chunk952561 = require("./952561.js"),
   Chunk563218 = require("./563218.jsx"),
   Chunk884338 = require("./884338.jsx"),
@@ -42,61 +44,80 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk322678 = require("./322678.js");
-let F = Chunk884338.u8.SIZE_32,
-  B = {
+
+function z(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = r
+    })
+  }
+  return e
+}
+let V = Chunk884338.u8.SIZE_32,
+  W = {
     [Chunk918559.MI.NO_CHAT]: Chunk322678.noChat,
     [Chunk918559.MI.RESIZABLE]: Chunk322678.resizable
   };
 
-function z(e) {
-  var t, n, l;
+function Y(e) {
+  var t, l, Y;
   let {
-    maxHeight: z,
-    connectedLocation: V,
-    renderExternalHeader: W
-  } = e, Y = (0, N.Z)(), q = (0, s.Wu)([S.ZP], () => S.ZP.getEmbeddedActivitiesForLocation(V), [V]), K = (0, P.p)(V), Q = (0, s.e7)([O.Z], () => O.Z.getChannel(K)), X = (0, Z.gb)(q), J = (0, Z.uF)(X), $ = i.useCallback(() => {
-    (0, E.tg)(k.Ez.PIP)
-  }, []), ee = i.useRef(null), et = (0, s.e7)([S.ZP], () => S.ZP.getFocusedLayout()), en = et !== k.MI.NO_CHAT, [er, ei] = i.useState(null != (n = null != (t = m.ZP.activityPanelHeight) ? t : z) ? n : null), el = i.useCallback(e => {
+    maxHeight: q,
+    connectedLocation: K,
+    renderExternalHeader: Q
+  } = e, X = (0, w.Z)(), J = (0, s.Wu)([S.ZP], () => S.ZP.getEmbeddedActivitiesForLocation(K), [K]), $ = (0, N.p)(K), ee = (0, s.e7)([O.Z], () => O.Z.getChannel($)), et = (0, T.gb)(J), en = (0, T.uF)(et), er = i.useCallback(() => {
+    (0, E.tg)(G.Ez.PIP)
+  }, []), ei = i.useRef(null), el = (0, s.e7)([S.ZP], () => S.ZP.getFocusedLayout()), ea = el !== G.MI.NO_CHAT, [es, eo] = i.useState(null != (l = null != (t = m.ZP.activityPanelHeight) ? t : q) ? l : null), ec = i.useCallback(e => {
     u.ZP.updatedUnsyncedSettings({
       activityPanelHeight: e
     })
-  }, []), ea = i.useRef(null), [es, eo] = i.useState({
+  }, []), ed = i.useRef(null), [eu, ep] = i.useState({
     width: 0,
     height: 0
   });
   i.useLayoutEffect(() => {
-    if (null == ea.current) return;
+    if (null == ed.current) return;
     let e = new ResizeObserver(() => {
       var e, t, n, r;
-      eo({
-        width: null != (n = null == (e = ea.current) ? true : e.clientWidth) ? n : 0,
-        height: null != (r = null == (t = ea.current) ? true : t.clientHeight) ? r : 0
+      ep({
+        width: null != (n = null == (e = ed.current) ? true : e.clientWidth) ? n : 0,
+        height: null != (r = null == (t = ed.current) ? true : t.clientHeight) ? r : 0
       })
     });
-    return e.observe(ea.current), () => e.disconnect()
+    return e.observe(ed.current), () => e.disconnect()
   }, []);
-  let ec = es.width / Math.max(es.height, 1) < k.I0,
-    ed = 0,
-    eu = 0,
-    ep = (0, T.Z)(null == Y ? true : Y.id);
-  if (!ep) {
-    let e = es.width,
-      t = es.height;
-    ec ? ((t = es.width / k.I0) > es.height && (e = (t = es.height) * k.I0), eu = (es.height - t) / 2) : ((e = Math.min(es.height * k.I0)) > es.width && (t = (e = es.width) / k.I0), ed = (es.width - e) / 2)
+  let eh = eu.width / Math.max(eu.height, 1) < G.I0,
+    ef = 0,
+    eg = 0,
+    em = (0, P.Z)(null == X ? true : X.id);
+  if (!em) {
+    let e = eu.width,
+      t = eu.height;
+    eh ? ((t = eu.width / G.I0) > eu.height && (e = (t = eu.height) * G.I0), eg = (eu.height - t) / 2) : ((e = Math.min(eu.height * G.I0)) > eu.width && (t = (e = eu.width) / G.I0), ef = (eu.width - e) / 2)
   }
-  let eh = J.get(null != (l = null == Y ? true : Y.id) ? l : ""),
-    ef = (0, s.e7)([v.Z], () => v.Z.getChannelId()),
-    eg = (0, s.Wu)([j.ZP], () => {
+  let eb = en.get(null != (Y = null == X ? true : X.id) ? Y : ""),
+    ey = (0, s.e7)([v.Z], () => v.Z.getChannelId()),
+    e_ = (0, s.Wu)([j.ZP], () => {
       var e;
-      return null == Q ? [] : Array.from(null != (e = null == eh ? true : eh.embeddedActivity.userIds) ? e : []).map(e => j.ZP.getMember(Q.guild_id, e))
-    }, [eh, Q]),
-    em = i.useMemo(() => {
+      return null == ee ? [] : Array.from(null != (e = null == eb ? true : eb.embeddedActivity.userIds) ? e : []).map(e => j.ZP.getMember(ee.guild_id, e))
+    }, [eb, ee]),
+    eO = i.useMemo(() => {
       let e = new Map;
-      return eg.forEach(t => {
+      return e_.forEach(t => {
         null != t && true !== t && e.set(t.userId, t)
       }), e
-    }, [eg]),
-    eb = function(e, t, n) {
+    }, [e_]),
+    ej = function(e, t, n) {
       let r = (0, p.Z)(e),
         l = e !== r,
         [a, s] = i.useState(false);
@@ -113,24 +134,7 @@ function z(e) {
           transitionDuration: "".concat(50, "ms"),
           transitionTimingFunction: "ease-in-out"
         } : true;
-        return e && null != t && null != n ? (r = function(e) {
-          for (var t = 1; t < arguments.length; t++) {
-            var n = null != arguments[t] ? arguments[t] : {},
-              r = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-              return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), r.forEach(function(t) {
-              var r;
-              r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: true,
-                configurable: true,
-                writable: true
-              }) : e[t] = r
-            })
-          }
-          return e
-        }({}, l), i = i = {
+        return e && null != t && null != n ? (r = z({}, l), i = i = {
           minHeight: 200,
           maxHeight: n,
           height: t
@@ -145,113 +149,133 @@ function z(e) {
           Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
         }), r) : l
       }, [o, e, n, t])
-    }(en, er, z),
-    ey = (0, L.y)();
-  if (null == Y) return null;
-  let e_ = [];
-  null != eh && (e_ = Array.from(eh.embeddedActivity.userIds).map(e => x.default.getUser(e)).filter(e => null != e && true !== e));
-  let eO = e => {
+    }(ea, es, q),
+    ev = (0, k.y)(),
+    {
+      data: ex
+    } = (0, R.K)(Z.B);
+  if (null == X) return null;
+  let eC = null == ex ? true : ex.isFortniteActivity(X.id),
+    eI = [];
+  null != eb && (eI = Array.from(eb.embeddedActivity.userIds).map(e => x.default.getUser(e)).filter(e => null != e && true !== e));
+  let eE = e => {
     var t;
-    if (null == e || true === e || e === w.ag) return null;
-    let n = em.get(e.id),
+    if (null == e || true === e || e === D.ag) return null;
+    let n = eO.get(e.id),
       i = null != (t = null == n ? true : n.nick) ? t : I.ZP.getName(e);
     return (0, r.jsx)(c.u, {
       asContainer: true,
       text: i,
       position: "bottom",
       children: (0, r.jsx)("img", {
-        src: e.getAvatarURL(null == Q ? true : Q.guild_id, F),
+        src: e.getAvatarURL(null == ee ? true : ee.guild_id, V),
         alt: i,
-        className: H.avatar
+        className: B.avatar
       }, e.id)
     }, e.id)
   };
   return (0, r.jsx)(d.f6W, {
-    theme: U.BRd.DARK,
+    theme: H.BRd.DARK,
     children: e => (0, r.jsxs)("div", {
-      className: a()(H.wrapper, B[et], e),
-      ref: ee,
-      style: eb,
-      children: [null == W ? true : W(), (0, r.jsxs)("div", {
-        className: H.activityPanelContainer,
-        children: [en ? null : (0, r.jsx)("div", {
-          className: H.header,
+      className: a()(B.wrapper, W[el], e),
+      ref: ei,
+      style: ej,
+      children: [null == Q ? true : Q(), (0, r.jsxs)("div", {
+        className: B.activityPanelContainer,
+        children: [ea ? null : (0, r.jsx)("div", {
+          className: B.header,
           children: (0, r.jsx)(o.x, {
             color: "header-primary",
             variant: "text-md/semibold",
-            className: H.headerTitle,
-            children: null == Y ? true : Y.name
+            className: B.headerTitle,
+            children: null == X ? true : X.name
           })
         }), (0, r.jsx)("div", {
-          className: a()(H.activityContainer, {
-            [H.activityContainerNoMargin]: ep
+          className: a()(B.activityContainer, {
+            [B.activityContainerNoMargin]: em
           }),
           style: {
-            paddingLeft: ed,
-            paddingRight: ed,
-            paddingTop: eu,
-            paddingBottom: eu
+            paddingLeft: ef,
+            paddingRight: ef,
+            paddingTop: eg,
+            paddingBottom: eg
           },
-          ref: ea,
-          children: (0, r.jsx)(R.Z, {
-            className: H.iframe,
-            embedId: (0, D.Z)(V.id, Y.id)
+          ref: ed,
+          children: (0, r.jsx)(A.Z, {
+            className: B.iframe,
+            embedId: (0, M.Z)(K.id, X.id)
           })
-        }), null != ef ? (0, r.jsxs)("div", {
-          className: H.footer,
-          children: [(0, r.jsx)(w.ZP, {
+        }), null != ey ? (0, r.jsxs)("div", {
+          className: B.footer,
+          children: [(0, r.jsx)(D.ZP, {
             renderIcon: false,
-            users: e_,
-            size: F,
+            users: eI,
+            size: V,
             max: 6,
-            renderUser: eO
+            renderUser: eE
           }), (0, r.jsxs)("div", {
-            className: H.footerButtons,
+            className: B.footerButtons,
             children: [(0, r.jsxs)("div", {
-              className: H.buttonSection,
-              children: [(0, r.jsx)(M.Z, {
-                channelId: ef
+              className: B.buttonSection,
+              children: [(0, r.jsx)(U.Z, {
+                channelId: ey
               }), (0, r.jsx)(b.d, {
                 isTrayButton: true,
-                label: G.intl.string(G.t.brPQ5e),
-                onClick: $,
+                label: F.intl.string(F.t.brPQ5e),
+                onClick: er,
                 iconComponent: d.dOc,
                 themeable: true
               })]
             }), (0, r.jsx)("div", {
-              className: H.leaveButtonContainer,
+              className: B.leaveButtonContainer,
               children: (0, r.jsx)(y.Z, {
-                applicationId: Y.id,
-                location: V,
+                applicationId: X.id,
+                location: K,
                 centerButton: true,
                 color: "disconnect"
               })
             })]
-          }), ey ? (0, r.jsx)(_.Z, {
+          }), eC && (0, r.jsx)("div", {
+            className: B.fortniteUpsellModalButton,
+            children: (0, r.jsx)(d.zxk, {
+              onClick: () => {
+                (0, d.ZDy)(async () => {
+                  let {
+                    FortniteUpsellModal: e
+                  } = await n.e("64152").then(n.bind(n, 690804));
+                  return t => (0, r.jsx)(e, z({}, t))
+                }, {
+                  modalKey: "activity-upsell-modal"
+                })
+              },
+              text: F.intl.string(F.t["36gY4e"]),
+              variant: "color-mix"
+            })
+          }), ev ? (0, r.jsx)(_.Z, {
             popoutOpen: false,
             onOpenPopout: () => {
-              (0, f.yw)(U.rMx.ACTIVITY_POPOUT_POP_OUT_BUTTON_CLICKED), (0, A.Z)({
+              (0, f.yw)(H.rMx.ACTIVITY_POPOUT_POP_OUT_BUTTON_CLICKED), (0, L.Z)({
                 onConfirm: async () => {
-                  (null == Y ? true : Y.id) != null && null != K && await (0, E.nJ)(Y.id, K), (0, E.Gj)()
+                  (null == X ? true : X.id) != null && null != $ && await (0, E.nJ)(X.id, $), (0, E.Gj)()
                 }
               })
             },
             onClosePopout: () => {}
           }) : null]
         }) : null]
-      }), en && null != z ? (0, r.jsx)(g.Z, {
+      }), ea && null != q ? (0, r.jsx)(g.Z, {
         minHeight: 480,
-        maxHeight: z,
-        resizableNode: ee,
+        maxHeight: q,
+        resizableNode: ei,
         onResize: e => {
-          C.S.dispatch(U.CkL.MANUAL_IFRAME_RESIZING, {
+          C.S.dispatch(H.CkL.MANUAL_IFRAME_RESIZING, {
             resizing: true
-          }), ei(e)
+          }), eo(e)
         },
         onResizeEnd: e => {
-          C.S.dispatch(U.CkL.MANUAL_IFRAME_RESIZING, {
+          C.S.dispatch(H.CkL.MANUAL_IFRAME_RESIZING, {
             resizing: false
-          }), el(e)
+          }), ec(e)
         }
       }) : null]
     })
