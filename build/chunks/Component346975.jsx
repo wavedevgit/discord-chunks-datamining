@@ -652,30 +652,31 @@ function eN(e) {
       r.scrollHeight - i < (eo ? Math.max(200, (0, ec.KW)(eR)) : 200) && _()
     }, [e_, eo, t.guild_id, t.id, eR, _]),
     te = (0, g.e7)([v.Z], () => v.Z.keyboardModeEnabled),
-    tt = (0, em.ZP)({
+    tt = (0, ei.xH)(e => e.titleFocused || e.bodyFocused, c.X),
+    tn = (0, em.ZP)({
       id: "forum-grid-view",
-      isEnabled: eo && te,
+      isEnabled: eo && te && !tt,
       setFocus: e5
     }),
-    tn = (0, eh.Z)({
+    tr = (0, eh.Z)({
       listRef: ea,
       padding: 96,
-      isEnabled: !eo && te,
+      isEnabled: !eo && te && !tt,
       channel: t
     }),
-    tr = i.useCallback((e, n, r) => 0 === e ? 0 : (0, ec.KW)(r, t.isMediaChannel() ? ec.Lv.SIXTEEN_BY_NINE : ec.Lv.THREE_BY_TWO), [t]),
-    ti = tt.containerProps,
+    ti = i.useCallback((e, n, r) => 0 === e ? 0 : (0, ec.KW)(r, t.isMediaChannel() ? ec.Lv.SIXTEEN_BY_NINE : ec.Lv.THREE_BY_TWO), [t]),
+    ta = tn.containerProps,
     {
-      ref: ta
-    } = ti,
-    tl = ev(ti, ["ref"]),
-    ts = F.ZP.getSidebarState(t.id),
-    to = null != ts && (0, F.D5)(ts),
-    tc = (0, g.e7)([F.ZP], () => F.ZP.getSection(t.id)) === eg.ULH.MEMBERS;
+      ref: tl
+    } = ta,
+    ts = ev(ta, ["ref"]),
+    to = F.ZP.getSidebarState(t.id),
+    tc = null != to && (0, F.D5)(to),
+    td = (0, g.e7)([F.ZP], () => F.ZP.getSection(t.id)) === eg.ULH.MEMBERS;
   return (0, r.jsx)("div", {
     className: ep.container,
     ref: eN,
-    "data-member-list-open": tc,
+    "data-member-list-open": td,
     children: (0, r.jsx)(p.Wdt, {
       children: e => (0, r.jsxs)(r.Fragment, {
         children: [u && (0, r.jsx)(b.Z, {
@@ -683,7 +684,7 @@ function eN(e) {
           draftType: z.d.FirstThreadMessage,
           className: ep.uploadArea,
           style: {
-            right: to && (null == n ? true : n.isThreadSidebarFloating) ? n.threadSidebarWidth : 0
+            right: tc && (null == n ? true : n.isThreadSidebarFloating) ? n.threadSidebarWidth : 0
           }
         }), (0, r.jsx)(eE, {
           channel: t
@@ -697,11 +698,11 @@ function eN(e) {
             channel: t
           })
         }) : null, eo ? (0, r.jsx)(em.KT, {
-          navigator: tt,
+          navigator: tn,
           children: (0, r.jsx)(p.GMG, eb({
             ref: e => {
               var t;
-              ta.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null, e8(e)
+              tl.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null, e8(e)
             },
             itemGutter: 16,
             padding: 24,
@@ -710,15 +711,15 @@ function eN(e) {
             sections: eH,
             getItemKey: e6,
             getSectionHeight: e9,
-            getItemHeight: tr,
+            getItemHeight: ti,
             renderSection: e1,
             renderItem: e4,
             getSectionProps: e2,
             onScroll: j ? e7 : true,
             chunkSize: 350
-          }, tl, e), A)
+          }, ts, e), A)
         }) : (0, r.jsx)(d.bG, {
-          navigator: tn,
+          navigator: tr,
           children: (0, r.jsx)(d.SJ, {
             children: t => {
               var {
