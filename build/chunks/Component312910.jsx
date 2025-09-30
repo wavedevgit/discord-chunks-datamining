@@ -2,12 +2,11 @@
 /** chunk id: 312910, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => I
+  Z: () => E
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk442837 = require("./442837.js"),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk100527 = require("./100527.js"),
   Chunk906732 = require("./906732.jsx"),
@@ -25,55 +24,52 @@ var Chunk442837 = require("./442837.js"),
   Chunk611480 = require("./611480.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk96761 = require("./96761.js");
-let y = {
+let O = {
     page: Chunk981631.ZY5.GUILD_SETTINGS,
     section: Chunk981631.jXE.GUILD_SETTINGS_STICKERS,
     object: Chunk981631.qAy.BOOSTING_BANNER
   },
-  C = e => {
+  y = e => {
     let {
       guild: t
     } = e, {
       analyticsLocations: n
-    } = (0, o.ZP)(), i = (0, m.Z)(t.id).available, a = j.oCV[j.Eu4.TIER_1] - i;
+    } = (0, a.ZP)(), i = (0, u.Z)(t.id).available, s = b.oCV[b.Eu4.TIER_1] - i;
     return (0, r.jsxs)("div", {
-      className: O.upsellContainer,
-      children: [(0, r.jsx)(s.X6q, {
-        className: O.upsellHeader,
+      className: _.upsellContainer,
+      children: [(0, r.jsx)(l.X6q, {
+        className: _.upsellHeader,
         variant: "heading-xl/semibold",
-        children: _.intl.string(_.t.hzCkys)
-      }), (0, r.jsx)(s.Text, {
-        className: O.upsellDescription,
+        children: v.intl.string(v.t.hzCkys)
+      }), (0, r.jsx)(l.Text, {
+        className: _.upsellDescription,
         variant: "text-md/normal",
-        children: _.intl.string(_.t.jcesAA)
-      }), (0, r.jsxs)("div", {
-        className: O.upsellButtons,
-        children: [(0, r.jsx)(l.zx, {
-          className: O.upsellButtonPrimary,
-          innerClassName: O.upsellButton,
-          color: l.zx.Colors.WHITE,
-          onClick: () => (0, u.Z)({
+        children: v.intl.string(v.t.jcesAA)
+      }), (0, r.jsxs)(l.hE2, {
+        className: _.upsellButtons,
+        children: [(0, r.jsx)(l.zxk, {
+          variant: "overlay-primary",
+          text: v.intl.string(v.t.Q5dbTk),
+          onClick: () => (0, d.Z)({
             analyticsLocations: n,
-            analyticsLocation: y,
+            analyticsLocation: O,
             guildId: t.id,
-            totalNumberOfSlotsToAssign: a
-          }),
-          children: _.intl.string(_.t.Q5dbTk)
-        }), (0, r.jsx)(l.zx, {
-          innerClassName: O.upsellButton,
-          color: l.zx.Colors.WHITE,
-          onClick: () => (0, c.f)({
+            totalNumberOfSlotsToAssign: s
+          })
+        }), (0, r.jsx)(l.zxk, {
+          variant: "overlay-primary",
+          text: v.intl.string(v.t.hvVgAQ),
+          onClick: () => (0, o.f)({
             guildId: t.id,
             location: {
-              section: j.jXE.GUILD_SETTINGS_STICKERS
+              section: b.jXE.GUILD_SETTINGS_STICKERS
             }
-          }),
-          children: _.intl.string(_.t.hvVgAQ)
+          })
         })]
       })]
     })
   },
-  N = () => (0, Chunk951288.jsxs)(Chunk481060.hjN, {
+  C = () => (0, Chunk951288.jsxs)(Chunk481060.hjN, {
     title: Chunk388032.intl.string(Chunk388032.t["9N2OWF"]),
     children: [(0, Chunk951288.jsx)(Chunk481060.R94, {
       type: Chunk481060.geA.DESCRIPTION,
@@ -89,36 +85,36 @@ let y = {
       })
     })]
   }),
-  E = e => {
+  N = e => {
     let t, n, i, {
         guild: l,
         guildStickers: s
       } = e,
       a = l.premiumTier,
-      o = (0, h.Qi)(s, a),
-      c = (0, h.FZ)(a),
-      u = (0, h.A3)(a),
+      o = (0, f.Qi)(s, a),
+      d = (0, f.FZ)(a),
+      u = (0, f.A3)(a),
       m = s.length;
-    return null == c || a === j.Eu4.TIER_3 || o > 0 ? null : (m > u ? (t = _.intl.formatToPlainString(_.t.ZtAY1d, {
-      level: c
-    }), n = _.intl.formatToPlainString(_.t["13hOWl"], {
-      level: c
-    }), i = j.qAy.BOOST_UPSELL_BANNER_LOST_LEVEL) : (t = _.intl.string(_.t.zT9Sxc), n = _.intl.formatToPlainString(_.t.YaW9wM, {
-      level: c,
-      numAdditional: (0, h.ig)(c)
-    }), i = j.qAy.BOOST_UPSELL_BANNER_SLOTS_FULL), (0, r.jsx)(d.Z, {
+    return null == d || a === b.Eu4.TIER_3 || o > 0 ? null : (m > u ? (t = v.intl.formatToPlainString(v.t.ZtAY1d, {
+      level: d
+    }), n = v.intl.formatToPlainString(v.t["13hOWl"], {
+      level: d
+    }), i = b.qAy.BOOST_UPSELL_BANNER_LOST_LEVEL) : (t = v.intl.string(v.t.zT9Sxc), n = v.intl.formatToPlainString(v.t.YaW9wM, {
+      level: d,
+      numAdditional: (0, f.ig)(d)
+    }), i = b.qAy.BOOST_UPSELL_BANNER_SLOTS_FULL), (0, r.jsx)(c.Z, {
       header: t,
       text: n,
       guild: l,
       analyticsLocation: {
-        page: j.ZY5.GUILD_SETTINGS,
-        section: j.jXE.GUILD_SETTINGS_STICKERS,
+        page: b.ZY5.GUILD_SETTINGS,
+        section: b.jXE.GUILD_SETTINGS_STICKERS,
         object: i,
-        objectType: (0, h.ge)(c)
+        objectType: (0, f.ge)(d)
       }
     }))
   },
-  I = () => {
+  E = () => {
     let e = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuild()),
       t = (0, Chunk442837.e7)([Chunk926491.Z], () => {
         var t;
@@ -128,18 +124,18 @@ let y = {
         analyticsLocations: n
       } = (0, Chunk906732.ZP)(Chunk100527.Z.STICKERS);
     if (null == module) return null;
-    let l = module.premiumTier !== Chunk981631.Eu4.NONE || exports.length > 0;
+    let o = module.premiumTier !== Chunk981631.Eu4.NONE || exports.length > 0;
     return (0, Chunk951288.jsx)(Chunk906732.Gt, {
       value: require,
       children: (0, Chunk951288.jsxs)(Chunk481060.hjN, {
         title: Chunk388032.intl.string(Chunk388032.t.R5nQkZ),
         tag: Chunk481060.RB0.H1,
-        children: [Chunk755721 ? (0, Chunk951288.jsxs)("div", {
-          children: [(0, Chunk951288.jsx)(E, {
+        children: [Chunk623624 ? (0, Chunk951288.jsxs)("div", {
+          children: [(0, Chunk951288.jsx)(N, {
             guild: module,
             guildStickers: exports
-          }), (0, Chunk951288.jsx)(N, {})]
-        }) : (0, Chunk951288.jsx)(C, {
+          }), (0, Chunk951288.jsx)(C, {})]
+        }) : (0, Chunk951288.jsx)(y, {
           guild: module
         }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
           className: Chunk96761.divider

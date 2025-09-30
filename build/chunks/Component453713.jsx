@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk270132 = require("./270132.js");
 
-function m(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -38,7 +38,7 @@ function m(e) {
   return e
 }
 
-function v(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -66,7 +66,7 @@ function O(e, t) {
   }
   return l
 }
-let j = s()(e => {
+let P = s()(e => {
     let t = false;
     if (null != e && (0, d.FX)(e)) {
       let r = (0, d._i)(e);
@@ -74,7 +74,7 @@ let j = s()(e => {
     }
     return t ? p.TVs.unsafe_rawColors.PRIMARY_700.css : p.TVs.unsafe_rawColors.PRIMARY_200.css
   }),
-  P = e => {
+  j = e => {
     let {
       variantGroupProduct: t,
       variant: r,
@@ -83,7 +83,7 @@ let j = s()(e => {
       selectedVariantIndex: s,
       onEnter: d,
       onLeave: f,
-      minimal: P
+      minimal: j
     } = e, {
       isPurchased: _
     } = (0, h.L)(r), E = (0, c.JA)("shop-variants-group-".concat(t.storeListingId, "-").concat(i)), {
@@ -94,8 +94,8 @@ let j = s()(e => {
     return (0, n.jsx)(p.ua7, {
       text: g.intl.string(g.t["6cfuDg"]),
       "aria-label": false,
-      shouldShow: !P && _,
-      children: e => (0, n.jsx)(p.P3F, v(m({}, C), {
+      shouldShow: !j && _,
+      children: e => (0, n.jsx)(p.P3F, m(v({}, C), {
         tag: "li",
         onMouseEnter: () => {
           var t;
@@ -120,7 +120,7 @@ let j = s()(e => {
         className: y.colorVariant,
         children: (0, n.jsx)("div", {
           className: a()(y.colorSwatch, {
-            [y.open]: !P,
+            [y.open]: !j,
             [y.selected]: i === s
           }),
           style: {
@@ -129,7 +129,7 @@ let j = s()(e => {
           },
           children: _ ? (0, n.jsx)(p.kSu, {
             className: y.purchasedIndicator,
-            color: j(r.variantValue)
+            color: P(r.variantValue)
           }) : null
         })
       }))
@@ -145,7 +145,7 @@ let j = s()(e => {
       minimal: d,
       selectedVariantIndex: b,
       alternativeBackgroundColor: h
-    } = e, j = o.previewingVariantIndex, _ = null == (t = l.variants) ? true : t[b], E = null !== j ? null == (r = l.variants) ? true : r[j] : true, x = (0, f.Z)("shop-variants-group-".concat(l.storeListingId), u.hy.HORIZONTAL);
+    } = e, P = o.previewingVariantIndex, _ = null == (t = l.variants) ? true : t[b], E = null !== P ? null == (r = l.variants) ? true : r[P] : true, x = (0, f.Z)("shop-variants-group-".concat(l.storeListingId), u.hy.HORIZONTAL);
     if (null == _) return null;
     let C = null != E ? E.variantLabel : null == _ ? true : _.variantLabel;
     return (0, n.jsx)(c.bG, {
@@ -156,7 +156,7 @@ let j = s()(e => {
               ref: r
             } = e,
             c = O(e, ["ref"]);
-          return (0, n.jsxs)("div", v(m({
+          return (0, n.jsxs)("div", m(v({
             ref: r
           }, c), {
             className: a()(y.variantsPanel, i, {
@@ -169,7 +169,7 @@ let j = s()(e => {
               className: y.variantsList,
               children: null == (t = l.variants) ? true : t.map((e, t) => {
                 var r, i;
-                return (0, n.jsx)(P, {
+                return (0, n.jsx)(j, {
                   variantGroupProduct: l,
                   variant: e,
                   variantIndex: t,

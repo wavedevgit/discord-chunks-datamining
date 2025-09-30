@@ -6,7 +6,7 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk755721 = require("./755721.js"),
+  Chunk159691 = require("./159691.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk821458 = require("./821458.jsx"),
   Chunk585961 = require("./585961.jsx"),
@@ -37,12 +37,8 @@ function p(e) {
       analyticsObject: c.qAy.BUTTON_CTA,
       perks: (0, d.XO)()
     })
-  }, [f, t]);
-  return h ? (0, r.jsx)(l.zx, {
-    disabled: !(h && n),
-    color: l.zx.Colors.BRAND,
-    className: p,
-    onClick: () => (0, a.mw)({
+  }, [f, t]), j = i.useCallback(() => {
+    (0, a.mw)({
       uploadType: u.pC.GUILD_BANNER,
       maxFileSizeBytes: m.B,
       onComplete: x,
@@ -51,8 +47,16 @@ function p(e) {
         section: c.jXE.GUILD_BANNER
       },
       analyticsLocations: f
-    }),
-    children: g.intl.string(g.t.yG2pUl)
+    })
+  }, [f, x]);
+  return h ? (0, r.jsx)("div", {
+    className: p,
+    children: (0, r.jsx)(l.zxk, {
+      disabled: !(h && n),
+      variant: "primary",
+      text: g.intl.string(g.t.yG2pUl),
+      onClick: j
+    })
   }) : (0, r.jsx)(o.P, {
     className: p,
     onClick: b

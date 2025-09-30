@@ -777,7 +777,8 @@ let eZ = e => {
             }), (0, r.jsxs)("div", {
               className: eR.pdpControls,
               children: [y && (0, r.jsx)(eg.a, {
-                product: E,
+                product: l,
+                selectedVariantIndex: T,
                 className: eR.wishlistButton,
                 iconSize: 16,
                 enableHoverEffect: true

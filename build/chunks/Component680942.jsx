@@ -1,7 +1,7 @@
 /** Chunk was on 204 **/
 /** chunk id: 680942, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => v
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,20 +18,20 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx");
-let m = e => {
+let v = e => {
   let {
     product: t,
     primary: r,
-    selectedVariantIndex: m,
-    returnRef: v,
+    selectedVariantIndex: v,
+    returnRef: m,
     onSuccess: O,
-    tooltipDelay: j
+    tooltipDelay: P
   } = e, {
-    analyticsLocations: P
+    analyticsLocations: j
   } = (0, s.ZP)(), _ = l.useRef(null), E = (0, d.sp)(), x = (0, f.Z)();
   return (0, p.x6)(t) ? null : (0, n.jsx)(o.ua7, {
     text: y.intl.string(y.t["JCFN//"]),
-    delay: j,
+    delay: P,
     children: e => {
       var l, s;
       return (0, n.jsx)(o.hU, (l = function(e) {
@@ -70,12 +70,12 @@ let m = e => {
           }), (0, c.Z)({
             skuId: (0, b.S)({
               product: t,
-              selectedVariantIndex: m
+              selectedVariantIndex: v
             }),
             isGift: true,
             giftingOrigin: g.Wt.SHOP_PAGE,
-            analyticsLocations: P,
-            returnRef: v,
+            analyticsLocations: j,
+            returnRef: m,
             variantsReturnStyle: a.v.VARIANTS_GROUP,
             onClose: null != O ? e => {
               e && O()

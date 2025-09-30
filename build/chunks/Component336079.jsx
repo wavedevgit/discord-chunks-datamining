@@ -44,25 +44,25 @@ let p = (0, Chunk647438.createContext)({
         product: g
       }
     }, [g, h]), {
-      redeemVirtualCurrency: m,
-      isSubmitting: v,
+      redeemVirtualCurrency: v,
+      isSubmitting: m,
       error: O
-    } = (0, d.f)(), j = (0, l.useCallback)(e => {
-      m(t, r, r => {
+    } = (0, d.f)(), P = (0, l.useCallback)(e => {
+      v(t, r, r => {
         f({
           entitlements: r,
           skuId: t
         }), e()
       })
-    }, [t, r, m, f]);
+    }, [t, r, v, f]);
     return (0, n.jsx)(p.Provider, {
       value: {
         skuId: t,
         loadId: r,
         analyticsLocations: null != i ? i : [],
         orbProductContext: y,
-        onRedeemVirtualCurrency: j,
-        isRedeeming: v,
+        onRedeemVirtualCurrency: P,
+        isRedeeming: m,
         orbRedemptionError: O
       },
       children: b

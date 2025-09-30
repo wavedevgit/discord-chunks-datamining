@@ -1,7 +1,7 @@
 /** Chunk was on 204 **/
 /** chunk id: 709999, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => ej,
+  Z: () => eP,
   d: () => eh
 }), require("./388685.js"), require("./314940.js");
 var Chunk951288 = require("./951288.js"),
@@ -94,7 +94,7 @@ let ef = e => {
     } = e;
     return (0, n.jsx)("div", {
       className: ed.profileEffectShopPreview,
-      children: (0, n.jsx)(j.Z, {
+      children: (0, n.jsx)(P.Z, {
         profileEffectId: t,
         isHovering: r,
         isPurchased: l && !r,
@@ -206,7 +206,7 @@ let ef = e => {
       children: i
     })
   },
-  em = Chunk647438.memo(function(e) {
+  ev = Chunk647438.memo(function(e) {
     var {
       tab: t,
       product: r,
@@ -258,7 +258,7 @@ let ef = e => {
     })
   });
 
-function ev(e) {
+function em(e) {
   let {
     product: t,
     tab: r,
@@ -270,12 +270,12 @@ function ev(e) {
     isPremiumUser: f,
     isPremiumProduct: h,
     isPurchased: g,
-    isPartiallyOwnedBundle: m,
-    isDisabled: j,
-    discount: P
-  } = e, _ = (0, w.sp)(), I = (0, N.rN)(t), [T, k] = (0, p.Wu)([R.Z], () => [R.Z.isClaiming === t.skuId, null != R.Z.isClaiming && R.Z.isClaiming !== t.skuId]), D = (0, N.XM)(l, f, false), M = (0, N.ne)({
+    isPartiallyOwnedBundle: v,
+    isDisabled: P,
+    discount: j
+  } = e, _ = (0, w.sp)(), A = (0, N.rN)(t), [T, k] = (0, p.Wu)([R.Z], () => [R.Z.isClaiming === t.skuId, null != R.Z.isClaiming && R.Z.isClaiming !== t.skuId]), D = (0, N.XM)(l, f, false), M = (0, N.ne)({
     product: l,
-    isPartiallyOwnedBundle: m,
+    isPartiallyOwnedBundle: v,
     isPurchased: g
   }), {
     enabled: U
@@ -311,15 +311,15 @@ function ev(e) {
     className: ed.detailsWrapper,
     children: [(0, n.jsx)("div", {
       className: ed.innerBlur,
-      children: j ? (0, n.jsx)(b.Text, {
+      children: P ? (0, n.jsx)(b.Text, {
         tag: "div",
         variant: "heading-md/semibold",
         color: "header-muted",
         className: ed.priceTag,
         children: eu.intl.string(eu.t.wu4gyc)
-      }) : g || m ? (0, n.jsx)(Z.U, {
+      }) : g || v ? (0, n.jsx)(Z.U, {
         className: ed.priceTag,
-        isPartiallyPurchased: m
+        isPartiallyPurchased: v
       }) : h ? (0, n.jsx)(b.Text, {
         variant: "text-md/semibold",
         className: ed.priceTag,
@@ -327,12 +327,12 @@ function ev(e) {
       }) : U ? (0, n.jsx)(H.e, {
         displayPrices: K,
         isPremiumUser: f,
-        discount: P,
+        discount: j,
         hasSufficientOrbs: ee,
         discountOfferAmount: Y
       }) : (0, n.jsx)(F.Z, {
         product: l,
-        discount: P,
+        discount: j,
         isPremiumUser: f,
         className: ed.priceTag,
         hideStrikethroughPrice: true,
@@ -346,7 +346,7 @@ function ev(e) {
         wrap: false,
         fullWidth: true,
         children: [(() => {
-          if (h && !f && !I) return (0, n.jsx)("div", {
+          if (h && !f && !A) return (0, n.jsx)("div", {
             className: ed.hoverUpsellContainer,
             children: (0, n.jsx)(O.Z, {
               fullWidth: true,
@@ -359,7 +359,7 @@ function ev(e) {
               subscriptionTier: ec.Si.TIER_2
             })
           });
-          if (!M || j) return et();
+          if (!M || P) return et();
           if (g) return (0, n.jsx)(b.zxk, {
             variant: "primary",
             onClick: e => {
@@ -383,7 +383,7 @@ function ev(e) {
                   tile_type: c.Z[t.type],
                   tile_position: String(null == _ ? true : _.tilePosition),
                   cta_name: "claim premium product button"
-                }), await (0, A.fK)(t.skuId), (0, ei.Z)({
+                }), await (0, I.fK)(t.skuId), (0, ei.Z)({
                   product: t,
                   analyticsLocations: o,
                   purchaseType: eo.o8.PREMIUM_PURCHASE
@@ -433,7 +433,7 @@ function ev(e) {
                       let {
                         entitlements: n
                       } = e;
-                      (0, A.qg)({
+                      (0, I.qg)({
                         variantsReturnStyle: d.v.VARIANTS_GROUP
                       }), (0, ei.Z)({
                         product: t,
@@ -478,7 +478,7 @@ function ev(e) {
                   tile_type: c.Z[t.type],
                   tile_position: String(null == _ ? true : _.tilePosition),
                   cta_name: "buy button"
-                }), (0, v.Z)({
+                }), (0, m.Z)({
                   skuId: (0, J.S)({
                     product: t,
                     selectedVariantIndex: i
@@ -492,7 +492,7 @@ function ev(e) {
               fullWidth: true
             })
           }
-        })(), h || s.tq || X || !M || r === eo.AW.ORBS ? null : I ? (0, n.jsx)(b.hU, {
+        })(), h || s.tq || X || !M || r === eo.AW.ORBS ? null : A ? (0, n.jsx)(b.hU, {
           variant: "primary",
           "aria-label": eu.intl.string(eu.t.SKNnqq),
           icon: b.tEF,
@@ -523,23 +523,23 @@ let eO = Chunk647438.memo(function(e) {
       tab: s,
       cardRef: d,
       selectedProduct: f,
-      firstCollectibleItem: v,
+      firstCollectibleItem: m,
       selectedVariantIndex: O,
-      handleEntering: j,
+      handleEntering: P,
       handleLeaving: E,
       previewingVariantIndex: x,
       className: C,
-      shopBlockType: A
+      shopBlockType: I
     } = e, {
       analyticsLocations: R
-    } = (0, m.ZP)([y.Z.COLLECTIBLES_SHOP_CARD]), T = (0, w.sp)(), L = (0, ea.G)("CollectiblesShopTallCard"), M = null != A && A === u.z.HERO && L ? eo.Ch.THUMBNAIL : eo.Ch.DEFAULT, Z = (0, P.Y)({
+    } = (0, v.ZP)([y.Z.COLLECTIBLES_SHOP_CARD]), T = (0, w.sp)(), L = (0, ea.G)("CollectiblesShopTallCard"), M = null != I && I === u.z.HERO && L ? eo.Ch.THUMBNAIL : eo.Ch.DEFAULT, Z = (0, j.Y)({
       location: "CollectiblesShopTallCard"
-    }), B = (0, h.Z)(d), F = (0, ee.m)(d), H = B || F, K = (0, en.To)(t), X = (0, p.e7)([g.Z], () => g.Z.useReducedMotion), J = I.ZP.canUseCollectibles(r), Q = l.useMemo(() => (0, N.BH)(t, J), [t, J]), $ = (0, N.G1)(t), et = (0, p.e7)([_.Z], () => (0, b.wjy)(_.Z.theme)), er = (0, N.Yq)(t.skuId), ei = i.skuId === eo.bu && (0, N.WW)(t.skuId), {
+    }), B = (0, h.Z)(d), F = (0, ee.m)(d), H = B || F, K = (0, en.To)(t), X = (0, p.e7)([g.Z], () => g.Z.useReducedMotion), J = A.ZP.canUseCollectibles(r), Q = l.useMemo(() => (0, N.BH)(t, J), [t, J]), $ = (0, N.G1)(t), et = (0, p.e7)([_.Z], () => (0, b.wjy)(_.Z.theme)), er = (0, N.Yq)(t.skuId), ei = i.skuId === eo.bu && (0, N.WW)(t.skuId), {
       isPurchased: ec,
       isPartiallyOwnedBundle: eh
     } = (0, D.L)(f), {
       isDisabled: ey
-    } = (0, k.G)(f.skuId), em = null !== x ? x : O, [eO, ej] = l.useState(false), eP = l.useCallback(function(e, t, l) {
+    } = (0, k.G)(f.skuId), ev = null !== x ? x : O, [eO, eP] = l.useState(false), ej = l.useCallback(function(e, t, l) {
       let i = arguments.length > 3 && true !== arguments[3] && arguments[3];
       return (0, o.EQ)(e.type).with(c.Z.PROFILE_EFFECT, () => (0, n.jsx)(ef, {
         isHighlighted: t,
@@ -590,7 +590,7 @@ let eO = Chunk647438.memo(function(e) {
       })
     }, [t, i, s, R, T, M]), eS = eC(y.Z.COLLECTIBLES_SHOP_CARD);
     if (0 === eE.length || (0, N.x6)(t) && null != Q && Q.discountPercentage < 0) return null;
-    let eI = a()(ed.badge, {
+    let eA = a()(ed.badge, {
       [ed.badgeLeftAligned]: Z
     });
     return (0, n.jsx)(b.tEY, {
@@ -635,38 +635,39 @@ let eO = Chunk647438.memo(function(e) {
             [ed.badgeLeftAligned]: Z
           }),
           display: U.k.CARD,
-          shopBlockType: A
+          shopBlockType: I
         }), Z && (0, n.jsx)(z.a, {
           product: t,
+          selectedVariantIndex: O,
           className: ed.wishlistButton,
           isCardHovered: H
         }), eh || ec || !er ? ex ? (0, n.jsx)(b.IGR, {
           text: eu.intl.string(eu.t["0TmQRE"]),
           disableColor: true,
-          className: eI
+          className: eA
         }) : ei ? (0, n.jsx)(b.IGR, {
           text: eu.intl.string(eu.t.S6kE9v),
           disableColor: true,
-          className: eI
+          className: eA
         }) : null : (0, n.jsx)(b.IGR, {
           text: eu.intl.string(eu.t.y2b7CA),
           disableColor: true,
-          className: eI
+          className: eA
         }), (0, n.jsx)("div", {
           className: a()(ed.preview, {
             [ed.previewThumbnailVariant]: M === eo.Ch.THUMBNAIL
           }),
-          children: (0, o.EQ)(t.type).with(c.Z.PROFILE_EFFECT, c.Z.AVATAR_DECORATION, c.Z.NAMEPLATE, () => eP(v, H, ec)).with(c.Z.BUNDLE, () => (0, n.jsx)(q.d, {
+          children: (0, o.EQ)(t.type).with(c.Z.PROFILE_EFFECT, c.Z.AVATAR_DECORATION, c.Z.NAMEPLATE, () => ej(m, H, ec)).with(c.Z.BUNDLE, () => (0, n.jsx)(q.d, {
             product: t,
             user: r,
             isPurchased: ec,
             isHighlighted: H
           })).with(c.Z.VARIANTS_GROUP, () => {
             if (null == t.variants || 0 === t.variants.length) return null;
-            let e = t.variants[em];
+            let e = t.variants[ev];
             if (null == e) return null;
             let [r] = e.items;
-            return eP(r, H, ec, eO)
+            return ej(r, H, ec, eO)
           }).with(c.Z.EXTERNAL_SKU, () => (0, n.jsx)(W.b, {
             product: t,
             animationState: H ? "on" : "off",
@@ -699,23 +700,23 @@ let eO = Chunk647438.memo(function(e) {
             variantGroupProduct: t,
             previewingVariantIndexProps: {
               previewingVariantIndex: x,
-              handleEntering: j,
+              handleEntering: P,
               handleLeaving: E
             },
             selectedVariantIndex: O,
-            setIsHoveringOnSwitch: ej,
+            setIsHoveringOnSwitch: eP,
             minimal: !H,
-            alternativeBackgroundColor: (null == v ? true : v.type) === c.Z.PROFILE_EFFECT
+            alternativeBackgroundColor: (null == m ? true : m.type) === c.Z.PROFILE_EFFECT
           }) : (0, n.jsx)(Y.r, {
             variantGroupProduct: t,
             previewingVariantIndexProps: {
               previewingVariantIndex: x,
-              handleEntering: j,
+              handleEntering: P,
               handleLeaving: E
             },
             selectedVariantIndex: O,
-            setIsHoveringOnSwitch: ej
-          }) : null, (0, n.jsx)(ev, {
+            setIsHoveringOnSwitch: eP
+          }) : null, (0, n.jsx)(em, {
             product: t,
             tab: s,
             buildHandlePreviewClick: eC,
@@ -734,4 +735,4 @@ let eO = Chunk647438.memo(function(e) {
       })
     })
   }),
-  ej = em
+  eP = ev

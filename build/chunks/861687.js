@@ -469,7 +469,8 @@ class eC extends Chunk47770.Z {
       }).catch(e => {
         this.logger.warn(e)
       }), this._trackMLSFailures({
-        recovered: false
+        recovered: false,
+        downgraded: false
       });
       let n = U.Z.shouldIncludePreferredRegion() ? U.Z.getPreferredRegion() : null,
         i = j.Z.getSettings(),
@@ -1021,7 +1022,10 @@ class eC extends Chunk47770.Z {
     var n;
     this.logger.info("Preparing DAVE protocol transition: ".concat(e, ", protocol version: ").concat(t)), this._secureFramesTransitionPrepareCount++;
     let r = (0, _.zO)();
-    null == (n = this._connection) || n.prepareSecureFramesTransition(e, t, () => {
+    0 === t && this._trackMLSFailures({
+      recovered: true,
+      downgraded: true
+    }), null == (n = this._connection) || n.prepareSecureFramesTransition(e, t, () => {
       this._maybeSendSecureFramesTransitionReady(e), this._storeSecureFrameTransitionData(e, {
         protocolVersion: t,
         prepareReceivedTime: r,
@@ -1092,7 +1096,8 @@ class eC extends Chunk47770.Z {
     let r = (0, _.zO)();
     null == (n = this._connection) || n.prepareMLSCommitTransition(e, t, (n, i, a) => {
       n ? (this._trackMLSFailures({
-        recovered: true
+        recovered: true,
+        downgraded: false
       }), this._mlsSessionResetStartTime = true, this._handleSecureFramesRosterChange(a, e), this._maybeSendSecureFramesTransitionReady(e)) : (this.logger.warn("Failed to process MLS commit for transition ID ".concat(e)), this._mlsSessionResetStartTime = (0, _.zO)(), this._flagMLSInvalidCommitWelcome(e), this._handleSecureFramesInit(i)), this._storeSecureFrameTransitionData(e, {
         protocolVersion: i,
         commitReceivedTime: r,
@@ -1108,7 +1113,8 @@ class eC extends Chunk47770.Z {
     let r = (0, _.zO)();
     null == (n = this._connection) || n.processMLSWelcome(e, t, (n, i, a) => {
       n ? (this._trackMLSFailures({
-        recovered: true
+        recovered: true,
+        downgraded: false
       }), this._mlsSessionResetStartTime = true, this._handleSecureFramesRosterChange(a, e), this._maybeSendSecureFramesTransitionReady(e)) : (this._mlsSessionResetStartTime = (0, _.zO)(), this._flagMLSInvalidCommitWelcome(e), this._sendMLSKeyPackage()), this._storeSecureFrameTransitionData(e, {
         protocolVersion: i,
         welcomeReceivedTime: r,
@@ -1145,32 +1151,34 @@ class eC extends Chunk47770.Z {
   }
   _trackMLSFailures(e) {
     let {
-      recovered: t
-    } = e, n = (0, _.zO)(), r = this.getMediaSessionId(), i = null != this._mlsSessionResetStartTime ? n - this._mlsSessionResetStartTime : true;
+      recovered: t,
+      downgraded: n
+    } = e, r = (0, _.zO)(), i = this.getMediaSessionId(), a = null != this._mlsSessionResetStartTime ? r - this._mlsSessionResetStartTime : true;
     for (let {
         id: e,
-        source: a,
-        reason: o,
-        count: s,
-        countDuringReset: l,
-        firstOccurrence: c,
-        timeSinceInit: u,
-        eventLog: d
+        source: o,
+        reason: s,
+        count: l,
+        countDuringReset: c,
+        firstOccurrence: u,
+        timeSinceInit: d,
+        eventLog: f
       }
       of this._mlsFailures) B.default.track(es.rMx.MLS_FAILURES, ef(eu({}, this._getAnalyticsProperties()), {
-      media_session_id: r,
+      media_session_id: i,
       parent_media_session_id: this.parentMediaSessionId,
       failure_id: e,
-      failure_time: c - this._createdTime,
-      failure_source: a,
-      failure_reason: o,
-      failure_count: s,
+      failure_time: u - this._createdTime,
+      failure_source: o,
+      failure_reason: s,
+      failure_count: l,
       failure_was_recovered: t,
-      time_since_first_occurrence: n - c,
-      time_since_last_reset: i,
-      failure_count_during_reset: l,
-      time_since_init: u,
-      event_history: d,
+      failure_cleared_by_downgrade: n,
+      time_since_first_occurrence: r - u,
+      time_since_last_reset: a,
+      failure_count_during_reset: c,
+      time_since_init: d,
+      event_history: f,
       connection_serial: this._connectionSerial
     }));
     this._mlsFailures = []

@@ -49,7 +49,7 @@ function y(e, t) {
   }), e
 }
 
-function m(e, t) {
+function v(e, t) {
   if (null == e) return {};
   var r, n, l = function(e, t) {
     if (null == e) return {};
@@ -64,26 +64,26 @@ function m(e, t) {
   }
   return l
 }
-let v = e => {
+let m = e => {
     let {
       variantGroupProduct: t,
       variant: r,
       variantIndex: i,
       totalVariants: u,
-      selectedVariantIndex: v,
+      selectedVariantIndex: m,
       onEnter: O,
-      onLeave: j
+      onLeave: P
     } = e, {
-      isPurchased: P
+      isPurchased: j
     } = (0, p.L)(r), _ = (0, o.JA)("shop-variants-group-".concat(t.storeListingId, "-").concat(i)), {
       onFocus: E
-    } = _, x = m(_, ["onFocus"]), C = l.useCallback(e => {
+    } = _, x = v(_, ["onFocus"]), C = l.useCallback(e => {
       e.preventDefault(), e.stopPropagation(), (0, d.$)(t, i), E()
     }, [E, t, i]), S = (0, f.SQ)(r);
     return (0, n.jsx)(c.ua7, {
       text: b.intl.string(b.t["6cfuDg"]),
       "aria-label": false,
-      shouldShow: P,
+      shouldShow: j,
       children: e => (0, n.jsx)(c.P3F, y(g({}, x), {
         tag: "li",
         onMouseEnter: () => {
@@ -92,7 +92,7 @@ let v = e => {
         },
         onMouseLeave: () => {
           var t;
-          j(), null == (t = e.onMouseLeave) || t.call(e)
+          P(), null == (t = e.onMouseLeave) || t.call(e)
         },
         onFocus: () => {
           var t;
@@ -100,7 +100,7 @@ let v = e => {
         },
         onBlur: () => {
           var t;
-          j(), null == (t = e.onMouseLeave) || t.call(e)
+          P(), null == (t = e.onMouseLeave) || t.call(e)
         },
         onClick: C,
         onKeyDown: e => {
@@ -109,7 +109,7 @@ let v = e => {
         className: h.thumbnailVariant,
         children: (0, n.jsxs)("div", {
           className: a()(h.thumbnailImage, {
-            [h.selected]: i === v
+            [h.selected]: i === m
           }),
           style: {
             zIndex: u - i
@@ -121,7 +121,7 @@ let v = e => {
             onError: e => {
               e.target.style.display = "none"
             }
-          }), P ? (0, n.jsx)("div", {
+          }), j ? (0, n.jsx)("div", {
             className: h.purchasedIndicator,
             children: (0, n.jsx)(c.kSu, {
               color: "var(--text-primary)"
@@ -139,16 +139,16 @@ let v = e => {
       previewingVariantIndexProps: d,
       setIsHoveringOnSwitch: p,
       selectedVariantIndex: f
-    } = e, b = d.previewingVariantIndex, O = null == (t = l.variants) ? true : t[f], j = null !== b ? null == (r = l.variants) ? true : r[b] : true, P = (0, u.Z)("shop-variants-group-".concat(l.storeListingId), s.hy.HORIZONTAL);
+    } = e, b = d.previewingVariantIndex, O = null == (t = l.variants) ? true : t[f], P = null !== b ? null == (r = l.variants) ? true : r[b] : true, j = (0, u.Z)("shop-variants-group-".concat(l.storeListingId), s.hy.HORIZONTAL);
     if (null == O) return null;
-    let _ = null != j ? j.variantLabel : null == O ? true : O.variantLabel;
+    let _ = null != P ? P.variantLabel : null == O ? true : O.variantLabel;
     return (0, n.jsx)(o.bG, {
-      navigator: P,
+      navigator: j,
       children: (0, n.jsx)(o.SJ, {
         children: e => {
           var {
             ref: t
-          } = e, r = m(e, ["ref"]);
+          } = e, r = v(e, ["ref"]);
           return (0, n.jsxs)("div", y(g({
             ref: t
           }, r), {
@@ -157,7 +157,7 @@ let v = e => {
             onMouseLeave: () => null == p ? true : p(false),
             children: [null != l.variants && l.variants.length > 0 && (0, n.jsx)("ol", {
               className: h.variantsList,
-              children: l.variants.map((e, t) => (0, n.jsx)(v, {
+              children: l.variants.map((e, t) => (0, n.jsx)(m, {
                 variantGroupProduct: l,
                 variant: e,
                 variantIndex: t,

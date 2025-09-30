@@ -24,15 +24,15 @@ function d(e) {
     hideStrikethroughPrice: h = false,
     nitroIconType: g,
     nitroIconSize: y = "md"
-  } = e, m = (0, a.ql)(l, c.tuJ.DEFAULT);
-  if (null == m) return null;
-  if (m.amount <= 0) return (0, n.jsx)("div", {
+  } = e, v = (0, a.ql)(l, c.tuJ.DEFAULT);
+  if (null == v) return null;
+  if (v.amount <= 0) return (0, n.jsx)("div", {
     className: i()(u.priceTagsContainer, f),
     children: (0, n.jsx)(s.F, {
-      price: m
+      price: v
     })
   });
-  let v = (0, a.ql)(l, c.tuJ.PREMIUM_TIER_2),
+  let m = (0, a.ql)(l, c.tuJ.PREMIUM_TIER_2),
     O = (0, a.x6)(l) && d ? (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var r = null != arguments[t] ? arguments[t] : {},
@@ -50,7 +50,7 @@ function d(e) {
         })
       }
       return e
-    }({}, m), r = r = {
+    }({}, v), r = r = {
       amount: p.original
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
       var r = Object.keys(e);
@@ -61,20 +61,20 @@ function d(e) {
       return r
     })(Object(r)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
-    }), t) : m,
-    j = d && null != v;
+    }), t) : v,
+    P = d && null != m;
   return (0, n.jsxs)("div", {
     className: i()(u.priceTagsContainer, f),
     children: [h ? null : (0, n.jsx)(o.y, {
       price: O,
       className: u.price
     }), (0, n.jsx)(s.F, {
-      price: j ? v : O,
+      price: P ? m : O,
       discount: p,
       className: i()({
         [u.price]: null == b
       }),
-      nitroIconType: j ? g : true,
+      nitroIconType: P ? g : true,
       nitroIconSize: y,
       discountOfferAmount: b
     })]
