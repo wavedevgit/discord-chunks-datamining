@@ -36,7 +36,7 @@ function I(t) {
     application: i,
     subscriptionId: e,
     onClose: I
-  } = t, [S, E] = s.useState(false), [x, A] = s.useState(null), [O, T] = s.useState(""), h = s.useCallback(() => {
+  } = t, [S, E] = a.useState(false), [x, A] = a.useState(null), [O, T] = a.useState(""), p = a.useCallback(() => {
     null != x && (o.default.track(C.rMx.PREMIUM_APP_CANCELLATION_SURVEY_SUBMITTED, {
       answer: x,
       application_id: i.id,
@@ -44,7 +44,7 @@ function I(t) {
       subscription_id: e
     }), I())
   }, [i.id, e, x, I, O]);
-  return s.useEffect(() => {
+  return a.useEffect(() => {
     d.ZP.updatedUnsyncedSettings({
       disableApplicationSubscriptionCancellationSurvey: S
     })
@@ -52,7 +52,7 @@ function I(t) {
     children: [(0, n.jsx)(l.x, {
       title: _.intl.string(_.t.zPxMdX),
       subtitle: _.intl.string(_.t.QJGdBw)
-    }), (0, n.jsxs)(a.f, {
+    }), (0, n.jsxs)(s.f, {
       children: [(0, n.jsx)("div", {
         className: u.answerChoicesContainer,
         children: (0, n.jsx)(r.Gu, {
@@ -80,6 +80,7 @@ function I(t) {
         })
       })]
     }), (0, n.jsx)(c.mzw, {
+      "data-migration-pending": true,
       children: (0, n.jsxs)("div", {
         className: u.footer,
         children: [(0, n.jsx)(r.$q, {
@@ -95,7 +96,7 @@ function I(t) {
         }), (0, n.jsx)(c.zxk, {
           variant: "primary",
           text: _.intl.string(_.t.geKm7u),
-          onClick: h,
+          onClick: p,
           disabled: null == x
         })]
       })

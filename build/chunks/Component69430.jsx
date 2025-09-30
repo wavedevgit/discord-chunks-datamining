@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-/** chunk id: 278126, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 69430, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
   _: () => f
@@ -8,7 +8,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
-  Chunk399020 = require("./399020.js");
+  Chunk872865 = require("./872865.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -36,19 +36,19 @@ class f extends(r = Chunk647438.Component) {
     } = this.props, o = Math.min(Math.max(exports, 0), 100), c = (d - module) / 2, u = c * Math.PI * 2;
     return (0, Chunk951288.jsxs)("svg", {
       viewBox: "0 0 ".concat(d, " ").concat(d),
-      className: Chunk399020.circle,
+      className: Chunk872865.circle,
       children: [(0, Chunk951288.jsx)("circle", {
-        className: true !== Chunk647438 ? Chunk647438 : Chunk399020.circleBackgroundAlt,
+        className: true !== Chunk647438 ? Chunk647438 : Chunk872865.circleBackgroundAlt,
         cx: d / 2,
         cy: d / 2,
         r: d / 2
       }), (0, Chunk951288.jsx)("circle", {
-        className: s()(Chunk399020.circleBackground, r),
+        className: s()(Chunk872865.circleBackground, r),
         cx: d / 2,
         cy: d / 2,
         r: (d - 2 * module) / 2
       }), (0, Chunk951288.jsx)("circle", {
-        className: Chunk399020.circleProgress,
+        className: Chunk872865.circleProgress,
         cx: d / 2,
         cy: d / 2,
         r: c,
@@ -69,9 +69,9 @@ class f extends(r = Chunk647438.Component) {
       children: t
     } = this.props;
     return (0, Chunk951288.jsxs)("div", {
-      className: s()(Chunk399020.progressCircle, module),
+      className: s()(Chunk872865.progressCircle, module),
       children: [this.renderCircle(), null != exports ? (0, Chunk951288.jsx)("div", {
-        className: s()(Chunk399020.circleOverlay, this.props.overlayClassName),
+        className: s()(Chunk872865.circleOverlay, this.props.overlayClassName),
         children: exports
       }) : null]
     })

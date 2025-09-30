@@ -202,6 +202,7 @@ function L(e) {
     scrollbarType: a
   } = e, s = S(e, ["className", "children", "scrollerRef", "scrollbarType"]), l = D(a);
   return (0, r.jsx)(l, T(v({
+    "data-migration-pending": true,
     className: o()(y.content, t),
     ref: i
   }, s), {
@@ -231,6 +232,7 @@ function x(e) {
 
 function j(e) {
   return (0, r.jsx)(f.zx, {
+    "data-migration-pending": true,
     focusProps: e.focusProps,
     "aria-label": b.intl.string(b.t.cpT0Cg),
     look: f.zx.Looks.BLANK,

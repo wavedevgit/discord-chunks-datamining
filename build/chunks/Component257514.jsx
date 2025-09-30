@@ -1,7 +1,7 @@
 /** Chunk was on 6284 **/
 /** chunk id: 257514, original params: t,i,e (module,exports,require) **/
 require.d(exports, {
-  default: () => h
+  default: () => p
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -23,12 +23,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk304495 = require("./304495.js");
 
-function h(t) {
+function p(t) {
   let {
     transitionState: i,
     application: e,
-    storeListing: h,
-    subscription: p,
+    storeListing: p,
+    subscription: h,
     guild: m,
     onClose: P
   } = t, g = (0, u.Dt)(), {
@@ -38,13 +38,13 @@ function h(t) {
     error: f,
     submitting: v
   } = (t => {
-    let [i, e] = s.useState(false), [n, a] = s.useState(null);
+    let [i, e] = a.useState(false), [n, s] = a.useState(null);
     return {
       cancelSubscription: async i => {
         try {
           return e(true), await o.EO(i, t), true
         } catch (t) {
-          a(t)
+          s(t)
         } finally {
           e(false)
         }
@@ -52,16 +52,16 @@ function h(t) {
       error: n,
       submitting: i
     }
-  })(j), [R, U] = s.useState(0), b = async () => {
-    await L(p.id) && (N.ZP.disableApplicationSubscriptionCancellationSurvey ? P() : U(1))
+  })(j), [R, U] = a.useState(0), b = async () => {
+    await L(h.id) && (N.ZP.disableApplicationSubscriptionCancellationSurvey ? P() : U(1))
   };
-  s.useEffect(() => {
+  a.useEffect(() => {
     I.default.track(A.rMx.CANCELLATION_FLOW_STARTED, {
       location_stack: j
     })
   }, [j]);
-  let k = (0, S.KW)(h.skuFlags);
-  return (0, n.jsx)(a.IX, {
+  let k = (0, S.KW)(p.skuFlags);
+  return (0, n.jsx)(s.IX, {
     onClose: P,
     transitionState: i,
     "aria-labelledby": g,
@@ -83,19 +83,19 @@ function h(t) {
               }), (0, n.jsx)(E.r0, {
                 id: g,
                 children: O.intl.format(O.t.irka9v, {
-                  tier: h.summary
+                  tier: p.summary
                 })
               }), (0, n.jsx)(E.s$, {}), (0, n.jsx)(E.K9, {
                 title: O.intl.string(O.t.LZunzc),
                 description: k ? O.intl.formatToPlainString(O.t["+HdfBw"], {
-                  timestamp: p.currentPeriodEnd.getTime()
+                  timestamp: h.currentPeriodEnd.getTime()
                 }) : O.intl.formatToPlainString(O.t.qxiBnZ, {
-                  timestamp: p.currentPeriodEnd.getTime(),
+                  timestamp: h.currentPeriodEnd.getTime(),
                   guildName: null == m ? true : m.name
                 })
               }), (0, n.jsx)(E.G9, {
-                applicationId: h.applicationId,
-                storeListingBenefits: h.benefits
+                applicationId: p.applicationId,
+                storeListingBenefits: p.benefits
               })]
             })]
           }), (0, n.jsx)(c.m, {
@@ -120,7 +120,7 @@ function h(t) {
           className: T.slideContainer,
           children: (0, n.jsx)(x.Z, {
             application: e,
-            subscriptionId: p.id,
+            subscriptionId: h.id,
             onClose: P
           })
         })

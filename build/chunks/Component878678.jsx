@@ -61,6 +61,7 @@ function _(e) {
       return null == (e = S.current) ? true : e.focus()
     }, 0)
   }, [I]), i.useLayoutEffect(() => () => null == E ? true : E()), null != _ && (t = (0, r.jsx)(s.zx, {
+    "data-migration-pending": true,
     type: "button",
     look: s.zx.Looks.FILLED,
     color: s.zx.Colors.PRIMARY,
@@ -73,6 +74,7 @@ function _(e) {
     autoFocus: I,
     children: _
   })), null != f && (n = (0, r.jsx)(s.zx, {
+    "data-migration-pending": true,
     buttonRef: S,
     type: "submit",
     size: s.zx.Sizes.MEDIUM,
@@ -93,15 +95,18 @@ function _(e) {
     impression: T,
     parentComponent: "ConfirmModal",
     children: [null != a ? (0, r.jsx)(c.xB, {
+      "data-migration-pending": true,
       separator: false,
       children: (0, r.jsx)(l.X6q, {
         variant: "heading-lg/semibold",
         children: a
       })
     }) : null, (0, r.jsx)(c.hz, {
+      "data-migration-pending": true,
       className: o()(u.content, b),
       children: d
     }), (0, r.jsxs)(c.mz, {
+      "data-migration-pending": true,
       children: [n, t]
     })]
   })

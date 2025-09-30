@@ -101,6 +101,7 @@ class m extends(r = Chunk647438.PureComponent) {
               margin: 0
             },
             children: (0, Chunk951288.jsx)(Chunk755721.zx, {
+              "data-migration-pending": true,
               className: Chunk147103.button,
               onClick: this.handleButtonClick,
               size: Chunk755721.Ph.MIN,

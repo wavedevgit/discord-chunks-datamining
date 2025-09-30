@@ -968,6 +968,7 @@ function K(e) {
   return (0, r.jsx)(f.tEY, {
     offset: 3,
     children: (0, r.jsxs)(_.zx, {
+      "data-migration-pending": true,
       look: _.zx.Looks.BLANK,
       tabIndex: n ? 0 : false,
       "data-option-pill-value": t.value,

@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-/** chunk id: 507173, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 753190, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
   y: () => _
@@ -8,10 +8,10 @@ var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
-  Chunk392711 = require("./392711.js"),
-  s = require.n(Chunk392711),
+  Chunk906881 = require("./906881.js"),
+  s = require.n(Chunk906881),
   Chunk692547 = require("./692547.js"),
-  Chunk569750 = require("./569750.js");
+  Chunk626707 = require("./626707.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -46,7 +46,7 @@ function _(e) {
     foregroundColors: o = [l.Z.unsafe_rawColors.BRAND_500.css],
     backgroundColor: u = "var(--background-modifier-active)",
     animate: f = true
-  } = e, _ = s().zip(n, o).map((e, t) => {
+  } = e, _ = s()(null != n ? n : [], o).map((e, t) => {
     let n, [o, s] = e;
     return n = Array.isArray(s) ? {
       background: "linear-gradient(to right, ".concat(s[0], ", ").concat(s[1], ")")
@@ -57,7 +57,7 @@ function _(e) {
         [c.animating]: f
       }),
       style: d({
-        transform: "translate3d(".concat(Math.min(Math.max(0, o), 100) - 100, "%, 0, 0)")
+        transform: "translate3d(".concat(Math.min(Math.max(0, null != o ? o : 0), 100) - 100, "%, 0, 0)")
       }, n)
     }, t)
   }).reverse();

@@ -126,12 +126,14 @@ let I = e => {
     O = (0, u.Z)(y),
     I = !r && !o && true !== l && (!E || O);
   return (0, i.jsxs)(c.zx, m(p({
+    "data-migration-pending": true,
     buttonRef: y
   }, b), {
     className: s()(f.shinyButton, n),
     disabled: r,
     submitting: o,
     children: [t, I ? (0, i.jsx)(v, {
+      "data-migration-pending": true,
       shinePaused: _,
       className: s()(f.buttonShine, E ? f.onlyShineOnHover : true, h),
       shineSize: d
