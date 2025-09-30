@@ -166,7 +166,7 @@ function y() {
               children: Chunk388032.intl.string(Chunk401561.default.iccpNT)
             }), (0, Chunk951288.jsx)(Chunk681715.u, {
               position: "top",
-              text: Chunk388032.intl.string(Chunk401561.default.wKyl39),
+              text: Chunk388032.intl.string(null != Chunk120356 ? Chunk401561.default.sjwMnJ : Chunk401561.default.wKyl39),
               children: (0, Chunk951288.jsx)(Chunk481060.idN, {
                 className: Chunk149671.sectionHeaderIcon,
                 size: "xs"
@@ -189,7 +189,7 @@ function y() {
           }), (0, Chunk951288.jsx)(Chunk481060.PhF, {
             serialize: e => e.id,
             isSelected: e => e.id === t,
-            isDisabled: w,
+            isDisabled: w || null != Chunk120356,
             options: R,
             optionClassName: Chunk149671.option,
             select: e => a(e.id),
