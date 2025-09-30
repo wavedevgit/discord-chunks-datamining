@@ -2,7 +2,7 @@
 /** chunk id: 666187, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  L: () => T
+  L: () => I
 }), require("./539854.js");
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -11,7 +11,6 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk772848 = require("./772848.js"),
   Chunk793030 = require("./793030.js"),
   Chunk15127 = require("./15127.jsx"),
-  Chunk766646 = require("./766646.jsx"),
   Chunk993365 = require("./993365.js"),
   Chunk639317 = require("./639317.jsx"),
   Chunk388032 = require("./388032.jsx"),
@@ -19,7 +18,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk979712 = require("./979712.js"),
   Chunk154257 = require("./154257.js");
 
-function E(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -27,20 +26,20 @@ function E(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let b = (0, Chunk772848.Z)(),
+let E = (0, Chunk772848.Z)(),
+  b = (0, Chunk772848.Z)(),
   y = (0, Chunk772848.Z)(),
-  O = (0, Chunk772848.Z)(),
-  v = 10,
-  I = 7.23;
-class T extends(r = Chunk647438.Component) {
+  O = 10,
+  v = 7.23;
+class I extends(r = Chunk647438.Component) {
   getPaddingRight() {
     let {
       maxLength: e,
       showCharacterCountFullPadding: t
     } = this.props;
-    if (null == module) return v;
+    if (null == module) return O;
     let n = "".concat(module).length;
-    return exports && (n += "".concat(module, " / ").length), I * require + v
+    return exports && (n += "".concat(module, " / ").length), v * require + O
   }
   getCharsLeftLength() {
     let {
@@ -106,7 +105,7 @@ class T extends(r = Chunk647438.Component) {
   renderErrorMessage() {
     let e = this.getErrorMessage();
     return null == module ? null : (0, Chunk951288.jsx)(Chunk993365.x, {
-      id: b,
+      id: E,
       variant: "text-xs/normal",
       color: "text-danger",
       className: Chunk8542.errorMessage,
@@ -122,64 +121,64 @@ class T extends(r = Chunk647438.Component) {
       autoFocus: o,
       minLength: l,
       maxLength: u,
-      allowOverflow: f,
-      spellCheck: E,
-      resizeable: b,
-      className: v,
-      id: I,
-      rows: T,
-      flex: S,
-      autosize: A,
-      required: C,
-      onInvalid: N,
-      inputRef: R
-    } = this.props, P = A ? Chunk639317.g : "textarea", w = this.hasError(), D = null != (t = this.props["aria-labelledby"]) ? exports : null == (e = this.context) ? true : module.titleId, L = this.getAriaDescribedBy();
+      allowOverflow: d,
+      spellCheck: g,
+      resizeable: E,
+      className: O,
+      id: v,
+      rows: I,
+      flex: T,
+      autosize: S,
+      required: A,
+      onInvalid: C,
+      inputRef: N
+    } = this.props, R = S ? Chunk639317.g : "textarea", P = this.hasError(), w = null != (t = this.props["aria-labelledby"]) ? exports : null == (e = this.context) ? true : module.titleId, D = this.getAriaDescribedBy();
     return (0, Chunk951288.jsxs)("div", {
       className: s()(Chunk979712.inputWrapper, {
-        [Chunk8542.flex]: S
+        [Chunk8542.flex]: T
       }),
       children: [(0, Chunk951288.jsxs)("div", {
         className: s()(Chunk8542.inputMaxLength, {
-          [Chunk8542.flex]: S
+          [Chunk8542.flex]: T
         }),
         children: [(0, Chunk951288.jsx)(Chunk793030.tEY, {
-          children: (0, Chunk951288.jsx)(P, {
+          children: (0, Chunk951288.jsx)(R, {
             type: "text",
-            className: s()(Chunk979712.input, Chunk8542.textArea, Chunk154257.scrollbarDefault, v, {
-              [Chunk979712.error]: w,
+            className: s()(Chunk979712.input, Chunk8542.textArea, Chunk154257.scrollbarDefault, O, {
+              [Chunk979712.error]: P,
               [Chunk979712.disabled]: require,
-              [Chunk8542.resizeable]: b
+              [Chunk8542.resizeable]: E
             }),
-            "aria-labelledby": D,
-            "aria-describedby": L,
-            "aria-invalid": w,
+            "aria-labelledby": w,
+            "aria-describedby": D,
+            "aria-invalid": P,
             style: {
               paddingRight: this.getPaddingRight()
             },
-            id: I,
+            id: v,
             disabled: require,
             placeholder: Chunk647438,
             value: r,
             autoFocus: Chunk120356,
             minLength: Chunk772848,
             maxLength: Chunk993365 ? true : Chunk15127,
-            spellCheck: E,
-            required: C,
+            spellCheck: g,
+            required: A,
             onChange: this.onChange,
             onBlur: this.onBlur,
             onFocus: this.onFocus,
             onKeyDown: this.onKeyDown,
-            onInvalid: N,
-            rows: T,
-            ref: R
+            onInvalid: C,
+            rows: I,
+            ref: N
           })
-        }), null != Chunk772848 && (0, Chunk951288.jsx)(Chunk766646.n, {
-          id: y,
+        }), null != Chunk772848 && (0, Chunk951288.jsx)(Chunk793030.nn4, {
+          id: b,
           children: Chunk388032.intl.format(Chunk388032.t["bmQU//"], {
             minLength: Chunk772848
           })
-        }), null != Chunk15127 && (0, Chunk951288.jsx)(Chunk766646.n, {
-          id: O,
+        }), null != Chunk15127 && (0, Chunk951288.jsx)(Chunk793030.nn4, {
+          id: y,
           children: Chunk388032.intl.format(Chunk388032.t["+DFxLS"], {
             maxLength: Chunk15127
           })
@@ -189,15 +188,15 @@ class T extends(r = Chunk647438.Component) {
   }
   constructor(e) {
     var t;
-    super(e), E(this, "getAriaDescribedBy", () => {
+    super(e), g(this, "getAriaDescribedBy", () => {
       var e;
       let {
         maxLength: t,
         minLength: n,
         error: r
       } = this.props, i = [], a = null == (e = this.context) ? true : e.errorId;
-      return null != a && i.push(a), null != r ? i.push(b) : (null != t && i.push(O), null != n && i.push(y)), i.length > 0 ? i.join(" ") : true
-    }), E(this, "onChange", e => {
+      return null != a && i.push(a), null != r ? i.push(E) : (null != t && i.push(y), null != n && i.push(b)), i.length > 0 ? i.join(" ") : true
+    }), g(this, "onChange", e => {
       let {
         onChange: t,
         name: n
@@ -205,19 +204,19 @@ class T extends(r = Chunk647438.Component) {
       null == t || t(e.currentTarget.value, n), this.setState({
         dirty: true
       })
-    }), E(this, "onFocus", e => {
+    }), g(this, "onFocus", e => {
       let {
         onFocus: t,
         name: n
       } = this.props;
       null == t || t(e, n)
-    }), E(this, "onBlur", e => {
+    }), g(this, "onBlur", e => {
       let {
         onBlur: t,
         name: n
       } = this.props;
       null == t || t(e, n)
-    }), E(this, "onKeyDown", e => {
+    }), g(this, "onKeyDown", e => {
       let {
         onKeyDown: t
       } = this.props;
@@ -227,7 +226,7 @@ class T extends(r = Chunk647438.Component) {
     }
   }
 }
-E(T, "contextType", Chunk15127.q3), E(T, "defaultProps", {
+g(I, "contextType", Chunk15127.q3), g(I, "defaultProps", {
   name: "",
   disabled: false,
   placeholder: "",

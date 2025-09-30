@@ -1,7 +1,7 @@
 /** Chunk was on 47129 **/
 /** chunk id: 79808, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => b
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -43,14 +43,14 @@ function d(e, t) {
   }), e
 }
 
-function g(e) {
-  var t, n, g;
+function f(e) {
+  var t, n, f;
   let {
-    root: f,
+    root: b,
     directory: y,
     target: O,
-    onClose: E,
-    sidebarHeader: b,
+    onClose: g,
+    sidebarHeader: E,
     sidebarFooter: p,
     onPanelChange: v
   } = e, [T, S] = i.useState(true), [j, N] = i.useState(null == (t = y.entry(O)) ? true : t.parentPanel), [m, C] = i.useState(() => y.typedGet(j)), _ = i.useCallback(() => x(true), []), [P, x] = i.useState({
@@ -84,26 +84,26 @@ function g(e) {
     navTransition: P,
     showNavigationMobile: T,
     setShowNavigationMobile: S
-  }), [y, j, P, T, _, I, v]), h = () => I(E);
+  }), [y, j, P, T, _, I, v]), h = () => I(g);
   return (0, r.jsx)(a.j.Provider, {
     value: A,
     children: (0, r.jsxs)("div", {
       className: u.container,
       children: [(0, r.jsx)(o.P, {
-        root: f,
-        header: b,
+        root: b,
+        header: E,
         footer: p,
         onClose: h
       }), (0, r.jsx)(l.Z, {
         onClose: h,
-        setting: null != (g = A.currentPanel) ? g : m
+        setting: null != (f = A.currentPanel) ? f : m
       })]
     })
   })
 }
 
-function f(e) {
+function b(e) {
   return (0, r.jsx)(s.Ri, {
-    children: (0, r.jsx)(g, c({}, e))
+    children: (0, r.jsx)(f, c({}, e))
   })
 }

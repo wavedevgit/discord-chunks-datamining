@@ -11,13 +11,13 @@ var Chunk657707 = require("./657707.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx");
 let c = (0, Chunk509613.x1)(Chunk313789.n.LINUX_PANE, {
-    getLayout: () => [],
+    buildLayout: () => [],
     render: Chunk200645.Z
   }),
   d = (0, Chunk509613.wf)(Chunk313789.n.LINUX_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["7pPjTU"]),
     icon: Chunk657707.pzj,
-    getLayout: () => [c],
+    buildLayout: () => [c],
     legacySearchKey: Chunk726985.s6.LINUX_SETTINGS,
     usePredicate: () => Chunk358085.isPlatformEmbedded && (0, Chunk358085.isLinux)()
   })

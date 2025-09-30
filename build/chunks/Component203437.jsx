@@ -95,13 +95,13 @@ function N(e) {
         availableSlots: C[n]
       })
     }, [C]),
-    P = l.useCallback(e => (0, a.jsx)("div", {
+    I = l.useCallback(e => (0, a.jsx)("div", {
       className: r()({
         [w.disabledOption]: e.disabled
       }),
       children: e.label
     }), []),
-    I = l.useCallback(e => {
+    P = l.useCallback(e => {
       C[e] <= 0 || i(e)
     }, [C, i]),
     Z = (() => {
@@ -110,13 +110,13 @@ function N(e) {
     })();
   return (0, a.jsx)(s.VcW, {
     className: t,
-    onChange: I,
+    onChange: P,
     value: Z,
     multi: false,
     options: S,
     renderOptionPrefix: O,
     renderOptionSuffix: E,
-    renderOptionLabel: P,
+    renderOptionLabel: I,
     placeholder: 0 === S.length ? j.intl.string(j.t.O3i2gY) : j.intl.string(j.t.CunCMD)
   })
 }

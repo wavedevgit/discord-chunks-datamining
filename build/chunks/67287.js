@@ -12,6 +12,6 @@ var Chunk509613 = require("./509613.js"),
   Chunk388032 = require("./388032.jsx");
 let c = (0, Chunk509613.vB)(Chunk313789.n.DEVELOPER_SECTION, {
   useLabel: () => Chunk388032.intl.string(Chunk388032.t.CbItOD),
-  getLayout: () => [Chunk965557.Z, Chunk713602.Z, Chunk865121.Z],
+  buildLayout: () => [Chunk965557.Z, Chunk713602.Z, Chunk865121.Z],
   usePredicate: () => Chunk906467.Z.isDeveloper
 })

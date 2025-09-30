@@ -1201,7 +1201,9 @@ class Y extends Chunk495852.C {
 let W = new Y;
 class K extends Chunk495852.C {
   create(e) {
-    let t = {};
+    let t = {
+      allowNonNativeWeb: false
+    };
     return globalThis.Object.defineProperty(t, a.C, {
       enumerable: false,
       value: this
@@ -1225,6 +1227,9 @@ class K extends Chunk495852.C {
         case 4:
           a.nativeVersion = X.internalBinaryRead(e, e.uint32(), n, a.nativeVersion);
           break;
+        case 6:
+          a.allowNonNativeWeb = e.bool();
+          break;
         case 5:
           a.clientRequiredChanges = ei.internalBinaryRead(e, e.uint32(), n, a.clientRequiredChanges);
           break;
@@ -1238,7 +1243,7 @@ class K extends Chunk495852.C {
     return a
   }
   internalBinaryWrite(e, t, n) {
-    e.iosVersion && X.internalBinaryWrite(e.iosVersion, t.tag(1, r.TD.LengthDelimited).fork(), n).join(), e.androidVersion && X.internalBinaryWrite(e.androidVersion, t.tag(2, r.TD.LengthDelimited).fork(), n).join(), e.webVersion && X.internalBinaryWrite(e.webVersion, t.tag(3, r.TD.LengthDelimited).fork(), n).join(), e.nativeVersion && X.internalBinaryWrite(e.nativeVersion, t.tag(4, r.TD.LengthDelimited).fork(), n).join(), e.clientRequiredChanges && ei.internalBinaryWrite(e.clientRequiredChanges, t.tag(5, r.TD.LengthDelimited).fork(), n).join();
+    e.iosVersion && X.internalBinaryWrite(e.iosVersion, t.tag(1, r.TD.LengthDelimited).fork(), n).join(), e.androidVersion && X.internalBinaryWrite(e.androidVersion, t.tag(2, r.TD.LengthDelimited).fork(), n).join(), e.webVersion && X.internalBinaryWrite(e.webVersion, t.tag(3, r.TD.LengthDelimited).fork(), n).join(), e.nativeVersion && X.internalBinaryWrite(e.nativeVersion, t.tag(4, r.TD.LengthDelimited).fork(), n).join(), false !== e.allowNonNativeWeb && t.tag(6, r.TD.Varint).bool(e.allowNonNativeWeb), e.clientRequiredChanges && ei.internalBinaryWrite(e.clientRequiredChanges, t.tag(5, r.TD.LengthDelimited).fork(), n).join();
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.z.onWrite : i)(this.typeName, e, t), t
   }
@@ -1263,6 +1268,11 @@ class K extends Chunk495852.C {
       name: "native_version",
       kind: "message",
       T: () => X
+    }, {
+      no: 6,
+      name: "allow_non_native_web",
+      kind: "scalar",
+      T: 8
     }, {
       no: 5,
       name: "client_required_changes",

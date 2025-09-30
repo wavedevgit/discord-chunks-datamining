@@ -1,13 +1,12 @@
 /** Chunk was on 66063 **/
 /** chunk id: 344516, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => O
+  default: () => A
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk538534 = require("./538534.jsx"),
-  Chunk886025 = require("./886025.jsx"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk846027 = require("./846027.js"),
@@ -24,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk476265 = require("./476265.js"),
   Chunk197571 = require("./197571.js");
 
-function v(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -32,7 +31,7 @@ function v(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class M extends Chunk647438.PureComponent {
+class v extends Chunk647438.PureComponent {
   handleValueRender(e) {
     return "".concat((-((100 - e) * 1)).toFixed(0), "dB")
   }
@@ -41,15 +40,15 @@ class M extends Chunk647438.PureComponent {
       autoThreshold: e
     } = this.props;
     return (0, Chunk951288.jsx)(Chunk313201.FG, {
-      children: t => (0, l.jsxs)(c.Z, {
-        className: b.marginBottom4,
-        children: [(0, l.jsx)(d.vwX, {
-          tag: d.RB0.H3,
+      children: t => (0, l.jsxs)(u.Z, {
+        className: Z.marginBottom4,
+        children: [(0, l.jsx)(r.vwX, {
+          tag: r.RB0.H3,
           children: (0, l.jsx)("label", {
             htmlFor: t,
-            children: T.intl.string(T.t.I1Zuq6)
+            children: C.intl.string(C.t.I1Zuq6)
           })
-        }), (0, l.jsx)(r.T2, {
+        }), (0, l.jsx)(o.T2, {
           id: t,
           checked: e,
           onChange: this.handleAutoThresholdChange
@@ -73,7 +72,7 @@ class M extends Chunk647438.PureComponent {
   render() {
     return (0, Chunk951288.jsx)("div", {
       className: Chunk197571.marginBottom20,
-      children: (0, Chunk951288.jsxs)(Chunk886025.N, {
+      children: (0, Chunk951288.jsxs)(Chunk481060.NIc, {
         label: Chunk388032.intl.string(Chunk388032.t["sqUm+v"]),
         role: "group",
         children: [this.renderAutomaticVADToggle(), this.renderSlider()]
@@ -81,13 +80,13 @@ class M extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), v(this, "handleAutoThresholdChange", e => {
+    super(...e), b(this, "handleAutoThresholdChange", e => {
       let {
         onThresholdChange: t,
         threshold: n
       } = this.props;
       null == t || t(n, e)
-    }), v(this, "handleSensitivityChange", e => {
+    }), b(this, "handleSensitivityChange", e => {
       let {
         onThresholdChange: t,
         autoThreshold: n
@@ -97,119 +96,119 @@ class M extends Chunk647438.PureComponent {
   }
 }
 
-function A(e) {
+function M(e) {
   let t, {
       mediaEngineContext: n,
       speaking: i = false
     } = e,
     {
-      inputVolume: r,
-      outputVolume: c,
-      inputMode: g,
-      shortcut: x,
-      vadThreshold: Z,
-      vadAutoThreshold: b,
-      delay: v
-    } = (0, s.cj)([j.Z], () => ({
-      inputVolume: j.Z.getInputVolume(),
-      outputVolume: j.Z.getOutputVolume(),
-      inputMode: j.Z.getMode(n),
-      shortcut: j.Z.getModeOptions(n).shortcut,
-      vadThreshold: j.Z.getModeOptions(n).threshold,
-      vadAutoThreshold: j.Z.getModeOptions(n).autoThreshold,
-      delay: j.Z.getModeOptions(n).delay
+      inputVolume: o,
+      outputVolume: u,
+      inputMode: c,
+      shortcut: p,
+      vadThreshold: T,
+      vadAutoThreshold: Z,
+      delay: b
+    } = (0, s.cj)([x.Z], () => ({
+      inputVolume: x.Z.getInputVolume(),
+      outputVolume: x.Z.getOutputVolume(),
+      inputMode: x.Z.getMode(n),
+      shortcut: x.Z.getModeOptions(n).shortcut,
+      vadThreshold: x.Z.getModeOptions(n).threshold,
+      vadAutoThreshold: x.Z.getModeOptions(n).autoThreshold,
+      delay: x.Z.getModeOptions(n).delay
     })),
-    A = [{
-      value: V.pM4.VOICE_ACTIVITY,
-      name: T.intl.string(T.t.cHCEOD)
+    M = [{
+      value: m.pM4.VOICE_ACTIVITY,
+      name: C.intl.string(C.t.cHCEOD)
     }, {
-      value: V.pM4.PUSH_TO_TALK,
-      name: T.intl.string(T.t.Q8gkVF)
+      value: m.pM4.PUSH_TO_TALK,
+      name: C.intl.string(C.t.Q8gkVF)
     }];
-  return t = g === V.pM4.PUSH_TO_TALK ? (0, l.jsxs)(d.Kqy, {
+  return t = c === m.pM4.PUSH_TO_TALK ? (0, l.jsxs)(r.Kqy, {
     gap: 20,
-    children: [(0, l.jsx)(o.N, {
-      label: T.intl.string(T.t.YkDjVF),
-      children: (0, l.jsx)(u.Z, {
-        defaultValue: x,
-        onChange: e => h.Z.setMode(g, {
+    children: [(0, l.jsx)(r.NIc, {
+      label: C.intl.string(C.t.YkDjVF),
+      children: (0, l.jsx)(h.Z, {
+        defaultValue: p,
+        onChange: e => d.Z.setMode(c, {
           shortcut: e
         }, n)
       })
-    }), (0, l.jsx)(d.iRW, {
-      label: T.intl.string(T.t.y0ShVl),
-      initialValue: v,
-      onValueChange: e => h.Z.setMode(g, {
+    }), (0, l.jsx)(r.iRW, {
+      label: C.intl.string(C.t.y0ShVl),
+      initialValue: b,
+      onValueChange: e => d.Z.setMode(c, {
         delay: e
       }, n),
       onValueRender: e => e >= 1e3 ? (e /= 1e3, "".concat(e.toFixed(2), "s")) : "".concat(e.toFixed(0), "ms"),
-      maxValue: V.qhL
+      maxValue: m.qhL
     })]
-  }) : (0, l.jsx)(M, {
+  }) : (0, l.jsx)(v, {
     speaking: i,
-    inputMode: g,
-    threshold: Z,
-    autoThreshold: b,
-    onThresholdChange: (e, t) => h.Z.setMode(g, {
+    inputMode: c,
+    threshold: T,
+    autoThreshold: Z,
+    onThresholdChange: (e, t) => d.Z.setMode(c, {
       threshold: e,
       autoThreshold: t
     }, n)
-  }), (0, l.jsxs)(d.Kqy, {
+  }), (0, l.jsxs)(r.Kqy, {
     gap: 20,
-    children: [(0, l.jsx)(p.j, {
-      label: T.intl.string(T.t.hHMYbW),
-      deviceType: C.h7.AUDIO_INPUT,
+    children: [(0, l.jsx)(g.j, {
+      label: C.intl.string(C.t.hHMYbW),
+      deviceType: V.h7.AUDIO_INPUT,
       location: "VoiceSettingsModal"
-    }), (0, l.jsx)(d.iRW, {
-      label: T.intl.string(T.t.OX2Bnp),
-      initialValue: (0, m.P)(r),
-      asValueChanges: e => h.Z.setInputVolume((0, m.A)(e))
-    }), (0, l.jsx)(p.j, {
-      label: T.intl.string(T.t.dl18zc),
-      deviceType: C.h7.AUDIO_OUTPUT,
+    }), (0, l.jsx)(r.iRW, {
+      label: C.intl.string(C.t.OX2Bnp),
+      initialValue: (0, j.P)(o),
+      asValueChanges: e => d.Z.setInputVolume((0, j.A)(e))
+    }), (0, l.jsx)(g.j, {
+      label: C.intl.string(C.t.dl18zc),
+      deviceType: V.h7.AUDIO_OUTPUT,
       location: "VoiceSettingsModal"
-    }), (0, l.jsx)(d.iRW, {
-      label: T.intl.string(T.t.eATD2N),
-      initialValue: (0, m.P)(c),
+    }), (0, l.jsx)(r.iRW, {
+      label: C.intl.string(C.t.eATD2N),
+      initialValue: (0, j.P)(u),
       maxValue: 200,
-      asValueChanges: e => h.Z.setOutputVolume((0, m.A)(e))
+      asValueChanges: e => d.Z.setOutputVolume((0, j.A)(e))
     }), (0, l.jsx)(a.E, {
-      label: T.intl.string(T.t["pS+K2N"]),
-      onChange: e => h.Z.setMode(e, {}, n),
-      options: A,
-      value: g
+      label: C.intl.string(C.t["pS+K2N"]),
+      onChange: e => d.Z.setMode(e, {}, n),
+      options: M,
+      value: c
     }), t]
   })
 }
 
-function O(e) {
+function A(e) {
   var t;
-  return (0, x.Z)(() => {
-    null != V.e3s && e.onClose()
-  }), (0, l.jsxs)(d.Y0X, {
+  return (0, p.Z)(() => {
+    null != m.e3s && e.onClose()
+  }), (0, l.jsxs)(r.Y0X, {
     transitionState: e.transitionState,
-    "aria-label": T.intl.string(T.t.NiTd0d),
+    "aria-label": C.intl.string(C.t.NiTd0d),
     parentComponent: "VoiceSettingsModal",
-    children: [(0, l.jsxs)(d.xBx, {
-      children: [(0, l.jsxs)(c.Z.Child, {
-        children: [(0, l.jsx)(d.vwX, {
+    children: [(0, l.jsxs)(r.xBx, {
+      children: [(0, l.jsxs)(u.Z.Child, {
+        children: [(0, l.jsx)(r.vwX, {
           tag: "h1",
-          className: b.marginReset,
-          children: T.intl.string(T.t.NiTd0d)
-        }), (0, l.jsx)(d.Text, {
+          className: Z.marginReset,
+          children: C.intl.string(C.t.NiTd0d)
+        }), (0, l.jsx)(r.Text, {
           variant: "text-xs/normal",
-          className: Z.title,
+          className: T.title,
           children: e.title
         })]
-      }), (0, l.jsx)(c.Z.Child, {
+      }), (0, l.jsx)(u.Z.Child, {
         grow: 0,
-        children: (0, l.jsx)(d.olH, {
+        children: (0, l.jsx)(r.olH, {
           onClick: e.onClose
         })
       })]
-    }), (0, l.jsx)(d.hzk, {
-      children: (0, l.jsx)(A, {
-        mediaEngineContext: null != (t = e.mediaEngineContext) ? t : C.Yn.DEFAULT
+    }), (0, l.jsx)(r.hzk, {
+      children: (0, l.jsx)(M, {
+        mediaEngineContext: null != (t = e.mediaEngineContext) ? t : V.Yn.DEFAULT
       })
     })]
   })

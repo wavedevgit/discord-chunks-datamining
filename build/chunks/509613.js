@@ -2,15 +2,15 @@
 /** chunk id: 509613, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   $l: () => y,
-  CB: () => f,
+  CB: () => b,
   Em: () => p,
   J9: () => v,
   ON: () => T,
   Ql: () => function e(t, n) {
-    if ("function" == typeof(null == t ? true : t.getLayout)) {
-      let n = t.getLayout().map(t => e(t)),
+    if ("function" == typeof(null == t ? true : t.buildLayout)) {
+      let n = t.buildLayout().map(t => e(t)),
         {
-          getLayout: r
+          buildLayout: r
         } = t,
         o = l(i({}, function(e, t) {
           if (null == e) return {};
@@ -26,17 +26,17 @@ require.d(exports, {
             for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
           }
           return i
-        }(t, ["getLayout"])), {
+        }(t, ["buildLayout"])), {
           layout: n
         });
       return n.forEach(e => e.parent = o), o
     }
     return t
   },
-  ax: () => E,
-  k4: () => g,
+  ax: () => g,
+  k4: () => f,
   m7: () => u,
-  qs: () => b,
+  qs: () => E,
   so: () => s,
   vB: () => a,
   wf: () => c,
@@ -106,11 +106,11 @@ function d(e, t) {
   return o(e, r.Jq.PANE, t)
 }
 
-function g(e, t) {
+function f(e, t) {
   return o(e, r.Jq.CATEGORY, t)
 }
 
-function f(e, t) {
+function b(e, t) {
   return o(e, r.Jq.ACCORDION, t)
 }
 
@@ -125,11 +125,11 @@ function O(e, t, n) {
   })
 }
 
-function E(e, t) {
+function g(e, t) {
   return O(e, r.Jq.BUTTON, t)
 }
 
-function b(e, t) {
+function E(e, t) {
   return O(e, r.Jq.TOGGLE, t)
 }
 

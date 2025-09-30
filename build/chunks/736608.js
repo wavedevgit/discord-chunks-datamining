@@ -18,5 +18,5 @@ let c = (0, Chunk509613.k4)(Chunk313789.n.NOTIFICATIONS_EMAIL_CATEGORY, {
     } = Chunk151662.Z.getEmailSettings();
     module || (0, Chunk960412.Y7)()
   },
-  getLayout: () => [...Chunk996231.Z, Chunk663623.Z]
+  buildLayout: () => [...Chunk996231.Z, Chunk663623.Z]
 })

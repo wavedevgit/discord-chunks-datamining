@@ -12,5 +12,5 @@ var Chunk509613 = require("./509613.js"),
   Chunk42762 = require("./42762.js"),
   Chunk507313 = require("./507313.js");
 let d = (0, Chunk509613.so)({
-  getLayout: () => [Chunk42762.Z, Chunk507313.Z, Chunk821246.Z, Chunk795961.Z, Chunk461982.Z, Chunk67287.Z, Chunk409032.Z]
+  buildLayout: () => [Chunk42762.Z, Chunk507313.Z, Chunk821246.Z, Chunk795961.Z, Chunk461982.Z, Chunk67287.Z, Chunk409032.Z]
 })

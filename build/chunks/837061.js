@@ -11,12 +11,12 @@ var Chunk657707 = require("./657707.js"),
   Chunk388032 = require("./388032.jsx");
 let u = (0, Chunk509613.x1)(Chunk313789.n.ACCOUNT_PANE, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["JAIM/v"]),
-    getLayout: () => [],
+    buildLayout: () => [],
     render: Chunk736752.Z
   }),
   c = (0, Chunk509613.wf)(Chunk313789.n.ACCOUNT_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["JAIM/v"]),
     icon: Chunk657707.tBG,
     legacySearchKey: Chunk726985.s6.ACCOUNT,
-    getLayout: () => [u]
+    buildLayout: () => [u]
   })

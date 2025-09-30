@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk649926 = require("./649926.js");
 let O = Chunk647438.createContext(true);
 
-function E(e) {
+function g(e) {
   let {
     sound: t
   } = e, {
@@ -30,7 +30,7 @@ function E(e) {
   return (0, r.jsx)(o.P3F, {
     className: y.soundIcon,
     onClick: e => n(t, e),
-    "aria-label": f.intl.string(f.t.Kd4uxM),
+    "aria-label": b.intl.string(b.t.Kd4uxM),
     children: (0, r.jsx)(o.gj8, {
       size: "xs",
       color: "currentColor",
@@ -39,7 +39,7 @@ function E(e) {
     })
   })
 }
-let b = [{
+let E = [{
     useLabel: () => Chunk388032.intl.string(Chunk388032.t.jD1qzM),
     sound: "message1",
     useDisabled: Chunk734934.p,
@@ -114,14 +114,14 @@ let b = [{
     useLabel: () => Chunk388032.intl.string(Chunk388032.t.CP3DCw),
     sound: "reconnect"
   }].map(e => ({
-    node: (0, u.qs)("".concat(g.n.SOUNDS_LIST_ITEM_PREFIX).concat(e.sound), {
+    node: (0, u.qs)("".concat(f.n.SOUNDS_LIST_ITEM_PREFIX).concat(e.sound), {
       useTitle: () => {
         let t = e.useLabel();
         return (0, r.jsxs)("div", {
           className: y.soundRow,
           children: [(0, r.jsx)("span", {
             children: t
-          }), (0, r.jsx)(E, {
+          }), (0, r.jsx)(g, {
             sound: e.sound
           })]
         })
@@ -158,9 +158,9 @@ let b = [{
   }),
   T = (0, Chunk509613.$l)(Chunk313789.n.NOTIFICATION_SOUNDS_LIST, {
     collapseAfter: 4,
-    useCollapsibleTitle: (e, t) => e ? f.intl.formatToPlainString(f.t["0JYT9/"], {
+    useCollapsibleTitle: (e, t) => e ? b.intl.formatToPlainString(b.t["0JYT9/"], {
       count: t
-    }) : f.intl.formatToPlainString(f.t.ji1uNj, {
+    }) : b.intl.formatToPlainString(b.t.ji1uNj, {
       count: t
     }),
     ContextProvider: function(e) {
@@ -181,5 +181,5 @@ let b = [{
         children: t
       })
     },
-    getLayout: () => [b[0].node, p, b[1].node, v, ...b.slice(2).map(e => e.node)]
+    buildLayout: () => [E[0].node, p, E[1].node, v, ...E.slice(2).map(e => e.node)]
   })

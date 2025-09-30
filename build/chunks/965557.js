@@ -9,12 +9,12 @@ var Chunk657707 = require("./657707.js"),
   Chunk313789 = require("./313789.js"),
   Chunk287490 = require("./287490.jsx");
 let a = (0, Chunk509613.x1)(Chunk313789.n.EXPERIMENTS_PANE, {
-    getLayout: () => [],
+    buildLayout: () => [],
     render: Chunk287490.Z
   }),
   u = (0, Chunk509613.wf)(Chunk313789.n.EXPERIMENTS_PANEL, {
     icon: Chunk657707.uOV,
     useTitle: () => "Experiments",
     usePredicate: () => Chunk906467.Z.isDeveloper,
-    getLayout: () => [a]
+    buildLayout: () => [a]
   })

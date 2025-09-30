@@ -1,7 +1,7 @@
 /** Chunk was on 47129 **/
 /** chunk id: 603569, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js"),
   Chunk657707 = require("./657707.js"),
@@ -17,13 +17,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk345909 = require("./345909.js");
 let O = (0, Chunk509613.x1)(Chunk313789.n.FAMILY_CENTER_PANE, {
     useTitle: () => Chunk388032.intl.string(Chunk345909.default.RZqaJi),
-    getLayout: () => [],
+    buildLayout: () => [],
     render: () => (0, Chunk951288.jsx)(Chunk54942.Z, {})
   }),
-  E = (0, Chunk509613.wf)(Chunk313789.n.FAMILY_CENTER_PANEL, {
+  g = (0, Chunk509613.wf)(Chunk313789.n.FAMILY_CENTER_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk345909.default.RZqaJi),
     icon: Chunk657707.BFJ,
-    getLayout: () => [O],
+    buildLayout: () => [O],
     legacySearchKey: Chunk726985.s6.PRIVACY_FAMILY_CENTER,
     trailing: {
       type: Chunk28682.PU.STRONGLY_DISCOURAGED_CUSTOM,
@@ -31,7 +31,7 @@ let O = (0, Chunk509613.x1)(Chunk313789.n.FAMILY_CENTER_PANE, {
       useDecoration: function(e) {
         let t = (0, s.gU)();
         return e === l.z.FAMILY_CENTER_NEW_BADGE ? (0, r.jsx)(o.IGR, {
-          text: f.intl.string(f.t.y2b7CA)
+          text: b.intl.string(b.t.y2b7CA)
         }) : t > 0 ? (0, r.jsx)(o.mAB, {
           count: t
         }) : null

@@ -1,7 +1,7 @@
 /** Chunk was on 47129 **/
 /** chunk id: 462718, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => f
 });
 var Chunk951288 = require("./951288.js"),
   Chunk603113 = require("./603113.js"),
@@ -12,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk313789 = require("./313789.js"),
   Chunk518596 = require("./518596.jsx"),
   Chunk388032 = require("./388032.jsx");
-let g = (0, Chunk509613.m7)(Chunk313789.n.LOGOUT_SIDEBAR_ITEM, {
+let f = (0, Chunk509613.m7)(Chunk313789.n.LOGOUT_SIDEBAR_ITEM, {
   useTitle: () => Chunk388032.intl.string(Chunk388032.t["2jxGen"]),
   icon: Chunk657707.PBZ,
   onClick: () => {

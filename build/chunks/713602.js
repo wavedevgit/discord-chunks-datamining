@@ -10,13 +10,13 @@ var Chunk657707 = require("./657707.js"),
   Chunk956699 = require("./956699.jsx"),
   Chunk726985 = require("./726985.js");
 let u = (0, Chunk509613.x1)(Chunk313789.n.DEVELOPER_OPTIONS_PANE, {
-    getLayout: () => [],
+    buildLayout: () => [],
     render: Chunk956699.Z
   }),
   c = (0, Chunk509613.wf)(Chunk313789.n.DEVELOPER_OPTIONS_PANEL, {
     useTitle: () => "Developer Options",
     icon: Chunk657707.Che,
-    getLayout: () => [u],
+    buildLayout: () => [u],
     legacySearchKey: Chunk726985.s6.DEVELOPER_OPTIONS,
     usePredicate: () => Chunk906467.Z.isDeveloper
   })

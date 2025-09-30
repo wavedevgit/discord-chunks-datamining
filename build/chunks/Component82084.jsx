@@ -16,7 +16,7 @@ function o(e) {
       sidebarHeader: c,
       sidebarFooter: d
     } = e,
-    g = function(e, t) {
+    f = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -48,9 +48,9 @@ function o(e) {
       })
     }
     return e
-  }({}, g), n = n = {
+  }({}, f), n = n = {
     children: (0, r.jsx)(l.Z, {
-      onClose: g.onClose,
+      onClose: f.onClose,
       root: o,
       directory: s,
       target: a,

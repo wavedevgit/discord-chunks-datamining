@@ -68,11 +68,11 @@ let A = e => {
   })
 };
 async function B(e) {
-  let t = await (0, w.fD)(e),
+  let t = await (0, I.fD)(e),
     l = new Image;
   l.src = t, await l.decode();
   let n = (0, o.Ae)(l, 320, 320);
-  return (0, w.Bo)(n, e.name, "image/png")
+  return (0, I.Bo)(n, e.name, "image/png")
 }
 
 function U(e) {
@@ -95,7 +95,7 @@ function U(e) {
     });
     let n = e;
     if ("image/jpeg" === l || "image/jpg" === l) n = await B(e);
-    else if ("image/png" === l && e.size > q && !await (0, w.c0)(e)) {
+    else if ("image/png" === l && e.size > q && !await (0, I.c0)(e)) {
       let t = (n = await B(e)).size > q;
       b.default.track(P.rMx.STICKER_FILE_RESIZED, {
         original_file_size_bytes: e.size,
@@ -134,7 +134,7 @@ function U(e) {
         }), eo(null)
       }), e.readAsText(n)
     } else {
-      let e = await (0, w.fD)(n);
+      let e = await (0, I.fD)(n);
       X({
         id: (0, a.Z)(),
         formatType: i,
@@ -150,7 +150,7 @@ function U(e) {
     e.preventDefault();
     let a = null != (l = null != (t = null != $ ? $ : et) ? t : null == Y ? true : Y.tags) ? l : "";
     try {
-      if (es(true), ed) await (0, I.Jf)(F, null != (n = null == Y ? true : Y.id) ? n : "", {
+      if (es(true), ed) await (0, w.Jf)(F, null != (n = null == Y ? true : Y.id) ? n : "", {
         name: W,
         tags: a,
         description: en
@@ -159,7 +159,7 @@ function U(e) {
         let e = new FormData;
         e.append("name", W), e.append("tags", a), e.append("description", en), (null == J ? true : J.file) != null && e.append("file", J.file), s = null != (r = null == (i = J.file) ? true : i.type) ? r : "", b.default.track(P.rMx.STICKER_UPLOAD_STARTED, {
           filetype: s
-        }), await (0, I.lY)({
+        }), await (0, w.lY)({
           guildId: F,
           body: e,
           platform: "web"

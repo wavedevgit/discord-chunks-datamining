@@ -1,7 +1,7 @@
 /** Chunk was on 47129 **/
 /** chunk id: 36361, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => E
 }), require("./415506.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -18,7 +18,7 @@ var Chunk28682 = require("./28682.js"),
   Chunk670304 = require("./670304.jsx"),
   Chunk357660 = require("./357660.jsx");
 
-function E(e) {
+function g(e) {
   let {
     node: t
   } = e;
@@ -36,11 +36,11 @@ function E(e) {
         node: t
       });
     case i.Jq.LIST:
-      return (0, r.jsx)(f.Z, {
+      return (0, r.jsx)(b.Z, {
         node: t
       });
     case i.Jq.CATEGORY:
-      return (0, r.jsx)(g.Z, {
+      return (0, r.jsx)(f.Z, {
         node: t
       });
     case i.Jq.ACCORDION:
@@ -71,15 +71,15 @@ function E(e) {
   }
 }
 
-function b(e) {
+function E(e) {
   let {
     node: t
   } = e;
-  return t.type === i.Jq.PANEL || t.type === i.Jq.PANE ? (0, r.jsx)(E, {
+  return t.type === i.Jq.PANEL || t.type === i.Jq.PANE ? (0, r.jsx)(g, {
     node: t
   }) : (0, r.jsx)(l.Z, {
     node: t,
-    children: (0, r.jsx)(E, {
+    children: (0, r.jsx)(g, {
       node: t
     })
   })

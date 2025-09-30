@@ -56,9 +56,9 @@ function T(e) {
   let c = (0, d.Z7)(),
     {
       node: O,
-      directory: b
+      directory: E
     } = (0, a.Z)(y.Z, c),
-    p = (t = g.n.ACCOUNT_PANEL, null == b.entry(n) ? t : n),
+    p = (t = f.n.ACCOUNT_PANEL, null == E.entry(n) ? t : n),
     T = i.useRef(null);
   return (0, o.ZP)(() => {
     let e = u.Z.getSection();
@@ -85,11 +85,11 @@ function T(e) {
     return e
   }({
     root: O,
-    directory: b,
+    directory: E,
     sidebarHeader: S,
-    sidebarFooter: f.Z,
+    sidebarFooter: b.Z,
     onPanelChange: e => {
-      let t = (0, E.getUserSettingsSectionsByWebUserSettings)().get(e);
+      let t = (0, g.getUserSettingsSectionsByWebUserSettings)().get(e);
       null != t && (v({
         destinationPanel: t,
         originPanel: T.current

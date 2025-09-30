@@ -45,13 +45,13 @@ let h = {
     let E = l.useCallback(e => {
         null != y && (y.pause(), null != e && (y.currentTime = e), v(false))
       }, [y]),
-      P = l.useCallback(() => {
+      I = l.useCallback(() => {
         if (null != y) {
           if (b) return void E();
           w >= _ ? y.currentTime = (0, f.my)(N) : y.currentTime = (0, f.my)(w), y.volume = (0, u.Z)(t), y.play(), v(true)
         }
       }, [y, _, E, w, b, N, t]),
-      I = l.useCallback(e => {
+      P = l.useCallback(e => {
         j(e), null == p || p({
           startMs: e.startPositionMs,
           endMs: e.endPositionMs
@@ -69,7 +69,7 @@ let h = {
         className: g.playButtonContainer,
         children: [(0, a.jsx)(o.P3F, {
           className: g.playButton,
-          onClick: C ? P : true,
+          onClick: C ? I : true,
           children: b ? (0, a.jsx)(o.wNq, {
             size: "xs",
             color: "currentColor",
@@ -92,7 +92,7 @@ let h = {
         playing: b,
         onPlaybackChange: Z,
         onPausePlayback: E,
-        onChangePosition: I,
+        onChangePosition: P,
         disabled: i
       })]
     })

@@ -22,13 +22,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk88651 = require("./88651.js");
 let S = (0, Chunk509613.x1)(Chunk313789.n.PROFILE_PANE, {
-    getLayout: () => [],
+    buildLayout: () => [],
     render: Chunk564344.Z
   }),
   j = (0, Chunk509613.wf)(Chunk313789.n.PROFILE_PANEL, {
     icon: Chunk657707.tBG,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["vi7f+v"]),
-    getLayout: () => [S],
+    buildLayout: () => [S],
     notice: {
       stores: [Chunk778825.Z, Chunk25990.Z],
       element: Chunk398140.Z
@@ -47,7 +47,7 @@ let S = (0, Chunk509613.x1)(Chunk313789.n.PROFILE_PANE, {
       } = e, a = (0, l.e7)([O.default], () => O.default.getCurrentUser()), {
         avatarSrc: u,
         avatarDecorationSrc: d
-      } = (0, f.Z)({
+      } = (0, b.Z)({
         userId: null == a ? true : a.id,
         size: o.EFr.SIZE_48
       });

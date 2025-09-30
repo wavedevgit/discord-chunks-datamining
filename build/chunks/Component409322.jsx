@@ -17,17 +17,17 @@ function u(e) {
     } = e,
     [c, d] = i.useState(false),
     {
-      layout: g,
-      collapseAfter: f,
+      layout: f,
+      collapseAfter: b,
       ContextProvider: y,
       useCollapsibleTitle: O
     } = u,
-    E = g.filter(e => {
+    g = f.filter(e => {
       var t, n;
       return null == (n = null == (t = e.usePredicate) ? true : t.call(e)) || n
     }),
-    b = null != f ? E.slice(0, f) : E,
-    p = null != f ? E.slice(f) : [],
+    E = null != b ? g.slice(0, b) : g,
+    p = null != b ? g.slice(b) : [],
     v = null != y ? y : i.Fragment,
     T = null != (t = null == O ? true : O(c, p.length)) ? t : (n = p.length, c ? a.intl.formatToPlainString(a.t["3SHL+f"], {
       count: n
@@ -35,10 +35,10 @@ function u(e) {
       count: n
     }));
   return (0, r.jsxs)(v, {
-    children: [b.map((e, t) => (0, r.jsxs)(i.Fragment, {
+    children: [E.map((e, t) => (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(o.Z, {
         node: e
-      }), (t !== b.length - 1 || p.length > 0) && (0, r.jsx)(l.izJ, {})]
+      }), (t !== E.length - 1 || p.length > 0) && (0, r.jsx)(l.izJ, {})]
     }, e.key)), p.length > 0 && (0, r.jsx)(s.I, {
       title: T,
       isOpen: c,

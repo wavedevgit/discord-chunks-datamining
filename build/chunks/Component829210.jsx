@@ -47,7 +47,7 @@ function O(e, t) {
   }), e
 }
 
-function E(e) {
+function g(e) {
   let {
     useCount: t
   } = e, n = t();
@@ -56,13 +56,13 @@ function E(e) {
   })
 }
 
-function b(e) {
+function E(e) {
   let {
     dismissibleContentTypes: t,
     badgeComponent: n,
     visibleContent: i
   } = e, l = null != i && t.includes(i), o = null != n ? (0, r.jsx)(n, {}) : (0, r.jsx)(a.IGR, {
-    text: g.intl.string(g.t.y2b7CA)
+    text: f.intl.string(f.t.y2b7CA)
   });
   return l ? o : null
 }
@@ -83,9 +83,9 @@ function v(e) {
   if (null == t) return null;
   switch (t.type) {
     case c.PU.BADGE_COUNT:
-      return (0, r.jsx)(E, y({}, t));
+      return (0, r.jsx)(g, y({}, t));
     case c.PU.BADGE_NEW:
-      return (0, r.jsx)(b, O(y({}, t), {
+      return (0, r.jsx)(E, O(y({}, t), {
         visibleContent: n
       }));
     case c.PU.STRONGLY_DISCOURAGED_CUSTOM:
@@ -106,23 +106,23 @@ function T(e) {
   } = (0, u.t)(), {
     useTitle: a,
     trailing: c,
-    stronglyDiscouragedCustomTab: g
-  } = t, f = a(), y = i.useMemo(() => t.layout.flatMap(e => e.layout), [t]), O = (null == l ? true : l.key) === t.key, E = () => {
+    stronglyDiscouragedCustomTab: f
+  } = t, b = a(), y = i.useMemo(() => t.layout.flatMap(e => e.layout), [t]), O = (null == l ? true : l.key) === t.key, g = () => {
     o(t.key), s(false)
   };
-  return null != g ? (0, r.jsx)(g, {
+  return null != f ? (0, r.jsx)(f, {
     active: O,
-    onClick: E
+    onClick: g
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(d.Z, {
       icon: t.icon,
-      title: f,
+      title: b,
       active: O,
       trailing: (0, r.jsx)(v, {
         trailing: c,
         visibleContent: n
       }),
-      onClick: E
+      onClick: g
     }), O && y.length > 1 && (0, r.jsx)(S, {
       categories: y
     })]
@@ -135,7 +135,7 @@ function S(e) {
   } = e, [n, l] = i.useState(0), {
     setShowNavigationMobile: c,
     navigateTo: d
-  } = (0, u.t)(), [g, y] = (0, a.q_F)(() => ({
+  } = (0, u.t)(), [f, y] = (0, a.q_F)(() => ({
     y: 0,
     config: {
       mass: .1,
@@ -155,12 +155,12 @@ function S(e) {
     return null != t
   }), [t]);
   return (0, r.jsxs)("div", {
-    className: f.subnav,
+    className: b.subnav,
     children: [(0, r.jsx)("div", {
-      className: f.track,
+      className: b.track,
       children: (0, r.jsx)(s.animated.div, {
-        className: f.thumb,
-        style: g
+        className: b.thumb,
+        style: f
       })
     }), (0, r.jsx)("ul", {
       children: O.map((e, t) => {
@@ -176,7 +176,7 @@ function S(e) {
           },
           tag: "li",
           className: o()({
-            [f.active]: t === n
+            [b.active]: t === n
           }),
           children: i
         }, s)

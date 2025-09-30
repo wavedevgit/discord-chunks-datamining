@@ -13,5 +13,5 @@ var Chunk509613 = require("./509613.js"),
   Chunk388032 = require("./388032.jsx");
 let d = (0, Chunk509613.vB)(Chunk313789.n.BILLING_SECTION, {
   useLabel: () => Chunk388032.intl.string(Chunk388032.t["4uOdGh"]),
-  getLayout: () => [Chunk466802.Z, Chunk597679.Z, Chunk367889.Z, Chunk419477.Z, Chunk380217.Z]
+  buildLayout: () => [Chunk466802.Z, Chunk597679.Z, Chunk367889.Z, Chunk419477.Z, Chunk380217.Z]
 })
