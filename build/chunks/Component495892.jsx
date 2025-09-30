@@ -172,8 +172,8 @@ function S(e) {
     saveRule: g
   } = (0, p.w)(), {
     updateRule: h
-  } = (0, m.pH)(t.guildId), [x, b] = i.useState(t.enabled), E = (0, l.throttle)(async (e, n) => {
-    if (n.preventDefault(), n.stopPropagation(), !d) {
+  } = (0, m.pH)(t.guildId), [x, b] = i.useState(t.enabled), E = (0, l.throttle)(async () => {
+    if (!d) {
       let e = O(_({}, t), {
         enabled: !x
       });
