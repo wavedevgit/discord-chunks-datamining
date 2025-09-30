@@ -53,7 +53,7 @@ class E extends Chunk495852.C {
       rules: [],
       phase: 0,
       surfaces: [],
-      owningTeamName: "",
+      owningTeamId: "",
       cachedNotificationChannelId: "0",
       exposureTracking: 0,
       assignmentMode: 0,
@@ -131,7 +131,7 @@ class E extends Chunk495852.C {
           else a.surfaces.push(e.int32());
           break;
         case 20:
-          a.owningTeamName = e.string();
+          a.owningTeamId = e.string();
           break;
         case 21:
           a.cachedNotificationChannelId = e.fixed64().toString();
@@ -177,7 +177,7 @@ class E extends Chunk495852.C {
       for (let n = 0; n < e.surfaces.length; n++) t.int32(e.surfaces[n]);
       t.join()
     }
-    if ("" !== e.owningTeamName && t.tag(20, r.TD.LengthDelimited).string(e.owningTeamName), "0" !== e.cachedNotificationChannelId && t.tag(21, r.TD.Bit64).fixed64(e.cachedNotificationChannelId), 0 !== e.exposureTracking && t.tag(22, r.TD.Varint).int32(e.exposureTracking), 0 !== e.assignmentMode && t.tag(25, r.TD.Varint).int32(e.assignmentMode), false !== e.enableEditRawJsonUi && t.tag(23, r.TD.Varint).bool(e.enableEditRawJsonUi), 0 !== e.winningVariationId && t.tag(24, r.TD.Varint).int32(e.winningVariationId), 0 !== e.type && t.tag(26, r.TD.Varint).int32(e.type), false !== e.isTemplate && t.tag(27, r.TD.Varint).bool(e.isTemplate), e.fieldNumbersToCopy.length) {
+    if ("" !== e.owningTeamId && t.tag(20, r.TD.LengthDelimited).string(e.owningTeamId), "0" !== e.cachedNotificationChannelId && t.tag(21, r.TD.Bit64).fixed64(e.cachedNotificationChannelId), 0 !== e.exposureTracking && t.tag(22, r.TD.Varint).int32(e.exposureTracking), 0 !== e.assignmentMode && t.tag(25, r.TD.Varint).int32(e.assignmentMode), false !== e.enableEditRawJsonUi && t.tag(23, r.TD.Varint).bool(e.enableEditRawJsonUi), 0 !== e.winningVariationId && t.tag(24, r.TD.Varint).int32(e.winningVariationId), 0 !== e.type && t.tag(26, r.TD.Varint).int32(e.type), false !== e.isTemplate && t.tag(27, r.TD.Varint).bool(e.isTemplate), e.fieldNumbersToCopy.length) {
       t.tag(28, r.TD.LengthDelimited).fork();
       for (let n = 0; n < e.fieldNumbersToCopy.length; n++) t.int32(e.fieldNumbersToCopy[n]);
       t.join()
@@ -281,7 +281,7 @@ class E extends Chunk495852.C {
       T: () => ["discord_protos.discord_experimentation.v1.Experiment.Surface", d]
     }, {
       no: 20,
-      name: "owning_team_name",
+      name: "owning_team_id",
       kind: "scalar",
       T: 9
     }, {

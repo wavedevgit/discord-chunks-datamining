@@ -2,6 +2,7 @@
 /** chunk id: 325100, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
+  Ak: () => _,
   uH: () => f
 }), require("./35282.js");
 var Chunk593473 = require("./593473.js"),
@@ -25,13 +26,13 @@ let c = e => {
       location: t
     } = e, {
       enabled: n
-    } = TurtleExperiment.getCurrentConfig({
+    } = o.n.getCurrentConfig({
       location: t
     });
     return n ? {
       enabled: false,
       discountEnabled: false
-    } : MobileApplePaymentLinkExperiment.getConfig({
+    } : a.E.getConfig({
       location: t
     })
   },
@@ -65,4 +66,18 @@ let c = e => {
       deep_link_type: s
     } = (0, r.parse)(n);
     return d(o, a, s)
+  },
+  _ = function(e) {
+    let {
+      location: t
+    } = e, n = arguments.length > 1 && true !== arguments[1] && arguments[1], i = window.location.pathname, {
+      deep_link_type: a
+    } = (0, r.parse)(window.location.search);
+    if (i.startsWith(s.Z5c.BILLING_MANAGE_SUBSCRIPTION)) returnfalse;
+    let {
+      enabled: o
+    } = c({
+      location: t
+    });
+    return d(n || o, i, a)
   }
