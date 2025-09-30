@@ -197,6 +197,7 @@ function D(e) {
     }), (0, r.jsx)("ul", {
       role: "group",
       "aria-labelledby": "".concat(t, "-header"),
+      className: v.groupWrapper,
       children: i
     }, t)]
   })
@@ -210,7 +211,7 @@ function L(e) {
   } = e;
   return (0, r.jsxs)("div", {
     id: t,
-    className: v.autocompleteGroupHeader,
+    className: v.groupHeader,
     children: [(0, r.jsx)(s.Text, {
       variant: "text-xs/semibold",
       color: "text-secondary",

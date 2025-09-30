@@ -51,7 +51,7 @@ function f(e) {
       color: "status-warning",
       variant: "text-sm/bold",
       children: b.intl.formatToMarkdownString(u.default["ol/ao6"], {
-        dateString: (0, c.Z)(n)
+        dateString: (0, l.Z)(n)
       })
     })]
   })
@@ -82,9 +82,9 @@ function p(e) {
     costDecorator: t,
     status: r,
     className: i
-  } = e, l = true !== n ? m.labelContainer : m.labelContainerEnd;
+  } = e, c = true !== n ? m.labelContainer : m.labelContainerEnd;
   return (0, a.jsxs)("div", {
-    className: s()(l, i),
+    className: s()(c, i),
     children: [true !== n && (0, a.jsxs)("div", {
       className: s()(m.inline, m.inlineBoost),
       children: [(0, a.jsx)(o.$Eu, {
@@ -146,7 +146,7 @@ let _ = Chunk647438.forwardRef(function(e, n) {
     className: t,
     label: r,
     isActive: i,
-    isWarning: c,
+    isWarning: l,
     badge: d,
     canRollback: u,
     onClick: g,
@@ -166,7 +166,7 @@ let _ = Chunk647438.forwardRef(function(e, n) {
       onMouseLeave: x,
       className: s()(m.container, {
         [m.active]: i,
-        [m.warning]: c || u && i
+        [m.warning]: l || u && i
       }, t),
       children: [p, "new" === d && (0, a.jsx)(o.IGR, {
         className: m.new,
@@ -174,7 +174,7 @@ let _ = Chunk647438.forwardRef(function(e, n) {
       }), "beta" === d && (0, a.jsx)(o.IGR, {
         className: m.new,
         text: b.intl.string(b.t.oW0eUV),
-        color: l.Z.BG_BRAND
+        color: c.Z.BG_BRAND
       })]
     })
   })

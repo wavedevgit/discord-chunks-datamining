@@ -10,7 +10,7 @@ function i(e) {
   return (0, r.ZDy)(async () => {
     let {
       default: n
-    } = await Promise.all([t.e("60728"), t.e("57318")]).then(t.bind(t, 630746));
+    } = await Promise.all([t.e("952"), t.e("54965")]).then(t.bind(t, 630746));
     return t => (0, a.jsx)(n, function(e) {
       for (var n = 1; n < arguments.length; n++) {
         var t = null != arguments[n] ? arguments[n] : {},

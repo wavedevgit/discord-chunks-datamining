@@ -15,40 +15,40 @@ let u = e => {
   let {
     profileEffectId: t,
     isHovering: r,
-    forCollectedModal: n = false,
+    forCollectedModal: i = false,
     isPurchased: u,
-    removeSetHeight: v = false
-  } = e, f = n ? 250 : .1, [p, h] = i.useState(true);
-  return (i.useEffect(() => {
-    if (true !== n) h(false);
+    removeSetHeight: f = false
+  } = e, p = i ? 250 : .1, [v, h] = n.useState(true);
+  return (n.useEffect(() => {
+    if (true !== i) h(false);
     else {
       let e = setTimeout(() => {
         h(false)
-      }, f);
+      }, p);
       return () => {
         clearTimeout(e)
       }
     }
-  }, [f, n]), null != t) ? (0, a.jsxs)("div", {
+  }, [p, i]), null != t) ? (0, a.jsxs)("div", {
     className: l()(c.previewContainer, {
-      [c.previewContainerAnimation]: n,
-      [c.previewContainerSetHeight]: !v
+      [c.previewContainerAnimation]: i,
+      [c.previewContainerSetHeight]: !f
     }),
     children: [(0, a.jsx)("img", {
       src: d,
       alt: " ",
-      className: n ? c.previewForCollected : c.preview,
+      className: i ? c.previewForCollected : c.preview,
       "aria-hidden": true
-    }), !p && (0, a.jsx)("div", {
+    }), !v && (0, a.jsx)("div", {
       className: u ? c.purchasedEffect : true,
       children: (0, a.jsx)(s.Z, {
         profileEffectId: t,
         useThumbnail: true,
-        autoPlay: n,
+        autoPlay: i,
         restartMethod: o.Q.FromStart,
         resetOnHover: true,
         isHovering: r,
-        introDelay: f,
+        introDelay: p,
         useOpacityOnHover: false,
         shopPreview: true
       })

@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk945182 = require("./945182.js"),
   Chunk234286 = require("./234286.js");
 
-function x(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       a = Object.keys(r);
@@ -45,77 +45,58 @@ function x(e) {
   }
   return e
 }
-let S = e => {
+let x = e => {
     let {
       product: t,
-      pairedProduct: r,
-      itemConsumed: i,
+      itemConsumed: r,
       forCollectedModal: n
-    } = e, [o] = t.items, y = null == r ? true : r.items[0], x = (0, u.e7)([h.default], () => {
+    } = e, [i] = t.items, o = (0, u.e7)([h.default], () => {
       let e = h.default.getCurrentUser();
       return l()(null != e, "User cannot be undefined"), e
-    }), S = Object.values(d.a).includes(t.skuId), C = (0, f.ZP)({
+    }), y = Object.values(d.a).includes(t.skuId), C = (0, p.ZP)({
       location: "CollectiblesProductPreview"
     });
     return (0, s.EQ)(t.type).with(c.Z.PROFILE_EFFECT, () => (0, a.jsx)("div", {
       className: _.profileEffectShopPreview,
-      children: (0, a.jsx)(p.Z, {
+      children: (0, a.jsx)(v.Z, {
         forCollectedModal: true,
-        profileEffectId: o.id
+        profileEffectId: i.id
       })
-    })).with(c.Z.AVATAR_DECORATION, () => (l()(o.type === c.Z.AVATAR_DECORATION, "ts-match already checked the type"), null != y && y.type === c.Z.AVATAR_DECORATION) ? (0, a.jsxs)("div", {
-      children: [(0, a.jsx)("div", {
-        className: _.avatarDecorationPairOne,
-        children: (0, a.jsx)(P.R, {
-          item: o,
-          user: x,
-          avatarSize: v.EFr.SIZE_120,
-          isPurchased: false,
-          isHighlighted: true
-        })
-      }), (0, a.jsx)("div", {
-        className: _.avatarDecorationPairTwo,
-        children: (0, a.jsx)(P.R, {
-          item: y,
-          avatarSize: v.EFr.SIZE_120,
-          isPurchased: false
-        })
-      })]
-    }) : (0, a.jsx)(P.R, {
-      item: o,
-      user: x,
-      avatarSize: v.EFr.SIZE_120,
+    })).with(c.Z.AVATAR_DECORATION, () => (0, a.jsx)(g.R, {
+      item: i,
+      user: o,
+      avatarSize: f.EFr.SIZE_120,
       isPurchased: false,
       isHighlighted: true
     })).with(c.Z.NAMEPLATE, () => (0, a.jsx)("div", {
       className: _.nameplate,
       children: (0, a.jsx)(w.Z, {
-        nameplate: o,
-        user: x,
+        nameplate: i,
+        user: o,
         nameplatePreviewSize: "large",
         isHighlighted: true
       })
     })).with(c.Z.BUNDLE, () => (0, a.jsx)("div", {
       className: _.bundlePreview,
-      children: (0, a.jsx)(g.d, {
+      children: (0, a.jsx)(P.d, {
         containerClassName: _.bundlePreviewContainer,
         product: t,
-        user: x,
+        user: o,
         isPurchased: false,
         isHighlighted: true,
         forCollectedModal: n
       })
     })).with(c.Z.EXTERNAL_SKU, () => {
-      if (S)
-        if (i) return (0, a.jsx)("img", {
-          src: C ? E : j,
+      if (y)
+        if (r) return (0, a.jsx)("img", {
+          src: C ? E : O,
           alt: b.intl.string(b.t.t0xkSE),
           style: {
             width: "100%"
           }
         });
         else return (0, a.jsx)("img", {
-          src: O,
+          src: j,
           alt: b.intl.string(b.t.g5W1g4)
         });
       return (0, a.jsx)(m.b, {
@@ -123,11 +104,11 @@ let S = e => {
       })
     }).otherwise(() => null)
   },
-  C = e => {
+  S = e => {
     let {
       reducedMotion: t,
       displayOptions: r
-    } = e, [n, l] = i.useState(false), s = (0, v.q_F)({
+    } = e, [i, l] = n.useState(false), s = (0, f.q_F)({
       from: {
         transform: "translateX(100%)",
         right: "-100%"
@@ -140,7 +121,7 @@ let S = e => {
         duration: 1550
       },
       onRest: () => setTimeout(() => l(true), 100)
-    }), c = (0, v.q_F)({
+    }), c = (0, f.q_F)({
       from: {
         transform: "translateX(100%)",
         right: "-100%"
@@ -152,8 +133,8 @@ let S = e => {
       config: {
         duration: 1550
       },
-      reverse: n
-    }), d = (0, v.q_F)({
+      reverse: i
+    }), d = (0, f.q_F)({
       from: {
         transform: "translateX(50%)",
         right: "50%",
@@ -173,7 +154,7 @@ let S = e => {
       children: [(0, a.jsx)(o.animated.div, {
         className: _.easterEggContainer,
         style: s,
-        children: (0, a.jsx)(S, x({}, e))
+        children: (0, a.jsx)(x, C({}, e))
       }), (0, a.jsx)(o.animated.div, {
         className: _.easterEggContainer,
         style: t ? d : c,
@@ -189,9 +170,9 @@ let S = e => {
 
 function D(e) {
   var t, r;
-  let i = (0, y.v)(e.product.categorySkuId);
-  return null != i ? (0, a.jsx)(C, (t = x({}, e), r = r = {
-    displayOptions: i
+  let n = (0, y.v)(e.product.categorySkuId);
+  return null != n ? (0, a.jsx)(S, (t = C({}, e), r = r = {
+    displayOptions: n
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -201,5 +182,5 @@ function D(e) {
     return r
   })(Object(r)).forEach(function(e) {
     Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
-  }), t)) : (0, a.jsx)(S, x({}, e))
+  }), t)) : (0, a.jsx)(x, C({}, e))
 }

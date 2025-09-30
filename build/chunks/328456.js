@@ -44,21 +44,21 @@ let o = e => {
     let {
       firstProfileEffect: t,
       firstAvatarDecoration: r,
-      firstNameplate: i
+      firstNameplate: n
     } = a.useMemo(() => new l(e.items), [e]);
     return {
       firstProfileEffect: t,
       firstAvatarDecoration: r,
-      firstNameplate: i
+      firstNameplate: n
     }
   },
   s = e => {
-    let t = n.intl.string(n.t["7v0T9P"]),
-      r = n.intl.string(n.t.wR5wOj),
-      a = n.intl.string(n.t.x5CoXV);
+    let t = i.intl.string(i.t["7v0T9P"]),
+      r = i.intl.string(i.t.wR5wOj),
+      a = i.intl.string(i.t.x5CoXV);
     if (null != e.bundledProducts) {
-      var i, l, o;
-      e.bundledProducts.length > 0 && (t = null == (i = e.bundledProducts[0]) ? true : i.name), e.bundledProducts.length > 1 && (r = null == (l = e.bundledProducts[1]) ? true : l.name), e.bundledProducts.length > 2 && (a = null == (o = e.bundledProducts[2]) ? true : o.name)
+      var n, l, o;
+      e.bundledProducts.length > 0 && (t = null == (n = e.bundledProducts[0]) ? true : n.name), e.bundledProducts.length > 1 && (r = null == (l = e.bundledProducts[1]) ? true : l.name), e.bundledProducts.length > 2 && (a = null == (o = e.bundledProducts[2]) ? true : o.name)
     }
     return {
       itemOneName: t,

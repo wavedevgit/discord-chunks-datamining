@@ -31,7 +31,7 @@ function f(e) {
   let {
     guildId: n,
     instance: t
-  } = e, d = r.useRef(null), f = (0, l.Z)(n);
+  } = e, d = r.useRef(null), f = (0, c.Z)(n);
   return (0, a.jsx)(i.yRy, {
     targetElementRef: d,
     align: "top",
@@ -60,7 +60,7 @@ function f(e) {
             icon: i.ewm,
             label: b.intl.string(u.default.NUTl4u),
             action: () => {
-              (0, c.Z)({
+              (0, l.Z)({
                 guildId: n,
                 stepConfig: g,
                 initialPortkeyInstance: t,

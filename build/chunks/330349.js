@@ -7,8 +7,8 @@ require.d(exports, {
 var Chunk884697 = require("./884697.js"),
   Chunk328456 = require("./328456.js");
 
-function n(e) {
-  let t = new i.bB(e.items);
+function i(e) {
+  let t = new n.bB(e.items);
   return {
     firstProfileEffect: t.firstProfileEffect,
     firstAvatarDecoration: t.firstAvatarDecoration,
@@ -21,7 +21,7 @@ function l(e) {
     firstAvatarDecoration: t,
     firstProfileEffect: r,
     firstNameplate: a
-  } = n(e);
+  } = i(e);
   return null != t && null != r && null == a || null != t && null != r && null != a
 }
 
@@ -29,6 +29,6 @@ function o(e) {
   if (!(0, a.x6)(e)) returnfalse;
   let {
     firstNameplate: t
-  } = n(e);
+  } = i(e);
   return null != t
 }

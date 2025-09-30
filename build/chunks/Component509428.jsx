@@ -1,7 +1,7 @@
 /** Chunk was on 77198 **/
 /** chunk id: 509428, original params: t,e,s (module,exports,require) **/
 require.d(exports, {
-  default: () => O
+  default: () => m
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -25,21 +25,21 @@ var Chunk951288 = require("./951288.js"),
   Chunk391594 = require("./391594.js"),
   Chunk215023 = require("./215023.js"),
   Chunk222311 = require("./222311.js");
-let O = t => {
+let m = t => {
   let {
     transitionState: e,
     product: s,
-    onClose: O,
+    onClose: m,
     analyticsLocations: y,
-    overrideTitle: N,
-    overrideDescription: P,
-    itemConsumed: S = true,
-    purchaseType: B = k.o8.ORB
-  } = t, R = (0, a.e7)([l.Z], () => l.Z.purchases), T = (0, C.o)(s, R), Z = (0, _.W)(s, T), {
+    overrideTitle: S,
+    overrideDescription: N,
+    itemConsumed: B = true,
+    purchaseType: P = k.o8.ORB
+  } = t, R = (0, a.e7)([l.Z], () => l.Z.purchases), T = (0, C.o)(s, R), Z = (0, v.W)(s, T), {
     analyticsLocations: b
-  } = (0, u.ZP)([...y, d.Z.COLLECTIBLES_COLLECTED_MODAL]);
+  } = (0, d.ZP)([...y, u.Z.COLLECTIBLES_COLLECTED_MODAL]);
   o.useEffect(() => {
-    k.Vt.ORB_PROFILE_BADGE === Z.skuId && (0, p.Ls)([(0, I.X)()], 600)
+    k.Vt.ORB_PROFILE_BADGE === Z.skuId && (0, p.Ls)([(0, _.X)()], 600)
   }, [Z.skuId]);
   let {
     isLoading: g,
@@ -51,7 +51,7 @@ let O = t => {
     confettiCanvas: D,
     setConfettiCanvas: V,
     customConfettiDisplayOptions: W
-  } = (0, x.$0)(Z, B);
+  } = (0, x.$0)(Z, P);
   (0, x.f1)(Z, b);
   let X = (0, j.kd)(Z),
     {
@@ -59,45 +59,43 @@ let O = t => {
       isApplying: F
     } = (0, f.W)({
       product: Z,
-      onSuccess: O,
-      onError: O
+      onSuccess: m,
+      onError: m
     });
   if (g) return (0, n.jsx)(c.$jN, {
     type: c.$jN.Type.SPINNING_CIRCLE
   });
   let M = (0, x.Xw)({
       product: Z,
-      pairedProduct: true,
-      overrideTitle: N,
+      overrideTitle: S,
       isVariantsGroupEnabled: false,
       shouldShowPromotionalExperience: false,
       productName: X,
-      pairedProductName: true,
-      itemConsumed: S
+      itemConsumed: B
     }),
     q = (0, x.ys)({
       product: Z,
-      overrideDescription: P,
+      overrideDescription: N,
       productName: X,
-      itemConsumed: S,
+      itemConsumed: B,
       isFractionalPremiumActive: w,
       expiresAt: G
     }),
     z = (0, x.cf)({
       product: Z,
-      onClose: O,
+      onClose: m,
       analyticsLocations: b,
       handleUseNow: K,
       isApplying: F,
-      itemConsumed: S
+      itemConsumed: B
     });
-  return (0, n.jsx)(u.Gt, {
+  return (0, n.jsx)(d.Gt, {
     value: b,
     children: (0, n.jsxs)("div", {
       ref: A,
       children: [(0, n.jsx)(i.O_, {
         ref: V,
-        className: m.confettiCanvas,
+        className: O.confettiCanvas,
         environment: $
       }), (0, n.jsx)(r.I, {
         graphic: {
@@ -105,20 +103,20 @@ let O = t => {
           component: c.AX$.COLLECTIBLES_PREVIEW,
           props: {
             product: Z,
-            itemConsumed: S
+            itemConsumed: B
           }
         },
         title: M,
         subtitle: null != q ? q : true,
-        onClose: O,
+        onClose: m,
         transitionState: e,
         actions: z
-      }), null != W ? (0, n.jsx)(h.i, {
+      }), null != W ? (0, n.jsx)(I.i, {
         options: W
       }) : (0, n.jsx)(L.Z, {
         confettiTarget: A.current,
         confettiCanvas: D,
-        sprites: (0, v.vK)(Z.categorySkuId)
+        sprites: (0, h.vK)(Z.categorySkuId)
       })]
     })
   })

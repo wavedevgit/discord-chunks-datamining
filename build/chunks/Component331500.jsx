@@ -6,7 +6,7 @@ require.d(exports, {
 var a, r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  c = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -20,7 +20,7 @@ var a, r, Chunk951288 = require("./951288.js"),
   Chunk401561 = require("./401561.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk134977 = require("./134977.js");
-let h = (a = function(e) {
+let O = (a = function(e) {
   for (var n = 1; n < arguments.length; n++) {
     var t = null != arguments[n] ? arguments[n] : {},
       a = Object.keys(t);
@@ -70,35 +70,35 @@ function y(e) {
     }, [null == t ? true : t.catalog, null == t ? true : t.instances]),
     o = r.length >= v.zI;
   return 0 === a.length ? (0, i.jsx)("div", {
-    className: O.container,
+    className: h.container,
     children: (0, i.jsx)(u.$jN, {
       type: u.RAz.SPINNING_CIRCLE,
-      className: O.spinner
+      className: h.spinner
     })
   }) : (0, i.jsxs)("div", {
-    className: O.container,
-    children: [(0, i.jsx)(c.X6q, {
-      className: O.heading,
+    className: h.container,
+    children: [(0, i.jsx)(l.X6q, {
+      className: h.heading,
       variant: "heading-md/semibold",
       children: _.intl.string(j.default.DG1SHB)
     }), o && (0, i.jsx)("div", {
-      className: O.maxInstancesWarning,
+      className: h.maxInstancesWarning,
       children: (0, i.jsx)(x.Y, {})
-    }), (0, i.jsx)(c.zJl, {
-      className: l()(O.gameContainerWrapper, {
-        [O.disabled]: o
+    }), (0, i.jsx)(l.zJl, {
+      className: c()(h.gameContainerWrapper, {
+        [h.disabled]: o
       }),
       children: (0, i.jsx)("div", {
-        className: O.gameContainer,
+        className: h.gameContainer,
         children: a.map((e, t) => (0, i.jsx)(f.Z, {
           game: e,
           onClick: () => (0, p.Z)({
             guildId: n,
-            stepConfig: h,
+            stepConfig: O,
             initialPortkeyGame: e,
             analyticsLocation: b.Z.PORTKEY_OVERVIEW
           }),
-          imageClassName: O.image,
+          imageClassName: h.image,
           disabled: o
         }, "sidebar-game-".concat(t, "-").concat(e.id)))
       })

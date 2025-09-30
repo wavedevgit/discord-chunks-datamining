@@ -1,7 +1,8 @@
-/** Chunk was on 57318 **/
+/** Chunk was on 54965 **/
 /** chunk id: 20426, original params: e,n,t (module,exports,require) **/
 module.exports = {
   container: "container__07e9e",
+  imageBackground: "imageBackground__07e9e",
   headerContainer: "headerContainer__07e9e",
   image: "image__07e9e",
   content: "content__07e9e",

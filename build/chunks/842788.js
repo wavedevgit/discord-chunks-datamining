@@ -2,11 +2,13 @@
 /** chunk id: 842788, original params: e,n,t (module,exports,require) **/
 require.r(module.exports = {
   card: "card_acb40e",
+  contentWrapper: "contentWrapper_acb40e",
+  serverDetailsContainer: "serverDetailsContainer_acb40e",
+  imageBackground: "imageBackground_acb40e",
   serverHeader: "serverHeader_acb40e",
   gameIcon: "gameIcon_acb40e",
   gameImage: "gameImage_acb40e",
   serverInfo: "serverInfo_acb40e",
-  serverDetails: "serverDetails_acb40e",
   detailsGrid: "detailsGrid_acb40e",
   detailItem: "detailItem_acb40e",
   serverIpContainer: "serverIpContainer_acb40e",
@@ -20,6 +22,7 @@ require.r(module.exports = {
   deleted: "deleted_acb40e",
   missing_stock: "missing_stock_acb40e",
   sleeping: "sleeping_acb40e",
+  divider: "divider_acb40e",
   serverActions: "serverActions_acb40e",
   overflowMenu: "overflowMenu_acb40e"
 })

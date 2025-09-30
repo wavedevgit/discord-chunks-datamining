@@ -1,4 +1,4 @@
-/** Chunk was on 60728 **/
+/** Chunk was on 952 **/
 /** chunk id: 748745, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -81,10 +81,10 @@ function g(e) {
     guildId: g,
     gameInstance: p,
     onClick: j
-  } = e, y = (0, a.e7)([u.Z], () => u.Z.getStateForGuild(g)), x = i.useMemo(() => {
+  } = e, y = (0, a.e7)([c.Z], () => c.Z.getStateForGuild(g)), x = i.useMemo(() => {
     var e;
     return null == y || null == (e = y.entitlements) ? true : e[p.entitlementId]
-  }, [null == y ? true : y.entitlements, p.entitlementId]), O = (null == x ? true : x.ends_at) != null, h = null == x || null == (d = x.sku) || null == (o = d.tenant_metadata) || null == (n = o.guild_monetization) || null == (t = n.game_server) ? true : t.boost_price, P = (0, c.Z)(p.gameId, "icon");
+  }, [null == y ? true : y.entitlements, p.entitlementId]), O = (null == x ? true : x.ends_at) != null, h = null == x || null == (d = x.sku) || null == (o = d.tenant_metadata) || null == (n = o.guild_monetization) || null == (t = n.game_server) ? true : t.boost_price, P = (0, u.Z)(p.gameId, "icon");
   return null == h ? null : (0, l.jsxs)(r.P3F, {
     className: f.game,
     onClick: () => j(p),

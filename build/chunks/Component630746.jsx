@@ -1,7 +1,7 @@
-/** Chunk was on 57318 **/
+/** Chunk was on 54965 **/
 /** chunk id: 630746, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  default: () => j
+  default: () => h
 });
 var Chunk951288 = require("./951288.js"),
   Chunk257465 = require("./257465.jsx"),
@@ -49,13 +49,13 @@ function _(e, n) {
   }), e
 }
 
-function h(e) {
+function j(e) {
   let {
     step: n,
     setFooterNode: t
   } = (0, u.aj)(), {
     title: s,
-    subtitle: h
+    subtitle: j
   } = function(e) {
     switch (e) {
       case m.Vb.SELECT_GAME:
@@ -72,7 +72,7 @@ function h(e) {
     size: "lg",
     children: [(0, r.jsx)(a.x, {
       title: s,
-      subtitle: h
+      subtitle: j
     }), (0, r.jsx)(o.zJl, {
       className: x.modalContent,
       style: {
@@ -102,14 +102,14 @@ function h(e) {
   }))
 }
 
-function j(e) {
+function h(e) {
   let {
     analyticsLocations: n
   } = (0, s.ZP)();
   return (0, r.jsx)(s.Gt, {
     value: n,
     children: (0, r.jsx)(u.KO, _(f({}, e), {
-      children: (0, r.jsx)(h, f({}, e))
+      children: (0, r.jsx)(j, f({}, e))
     }))
   })
 }
