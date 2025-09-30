@@ -126,14 +126,14 @@ function T() {
       color: "header-primary",
       variant: "heading-lg/semibold",
       children: Chunk388032.intl.string(Chunk388032.t.YJlvBA)
-    }), null != module && (0, Chunk951288.jsx)(S, {
-      guildId: module.id
     }), (0, Chunk951288.jsx)(Chunk307375.h, {
       onTypePicked: require,
       activeType: Chunk456268,
       guild: module
     }), (0, Chunk951288.jsx)("div", {
       className: Chunk912231.divider
+    }), null != module && (0, Chunk951288.jsx)(S, {
+      guildId: module.id
     }), (0, Chunk951288.jsx)("div", {
       children: (0, Chunk951288.jsx)(E, {
         pendingState: exports

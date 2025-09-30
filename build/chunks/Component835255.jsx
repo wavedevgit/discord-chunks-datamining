@@ -1,7 +1,7 @@
 /** Chunk was on 49902 **/
 /** chunk id: 835255, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => x
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,36 +16,43 @@ var Chunk951288 = require("./951288.js"),
   Chunk22267 = require("./22267.jsx"),
   Chunk333867 = require("./333867.jsx"),
   Chunk876917 = require("./876917.jsx"),
+  Chunk221292 = require("./221292.js"),
   Chunk461631 = require("./461631.jsx"),
+  Chunk228168 = require("./228168.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk232644 = require("./232644.js");
 
-function O(e) {
+function x(e) {
   let {
     item: t,
     profileOwner: r,
-    wishlistId: O,
-    isOwner: j
-  } = e, x = i.useRef(null), P = (0, o.Z)(x), S = t.collectiblesItem, {
-    analyticsLocations: I
-  } = (0, u.ZP)(), w = () => {
-    j ? ((0, s.pTH)(), (0, d.mK)({
-      analyticsLocations: I,
+    wishlistId: x,
+    isOwner: P
+  } = e, S = i.useRef(null), I = (0, o.Z)(S), w = t.collectiblesItem, {
+    analyticsLocations: E
+  } = (0, u.ZP)(), C = () => {
+    (0, m.Er)({
+      wishlistId: x,
+      action: b.NW.WISHLIST_ITEM_CLICKED,
+      skuId: t.skuId,
+      analyticsLocations: E
+    }), P ? ((0, s.pTH)(), (0, d.mK)({
+      analyticsLocations: E,
       analyticsSource: c.Z.USER_PROFILE_WISHLIST,
       openInLayer: false,
       initialProductSkuId: t.skuId
     })) : (0, h.Z)({
       skuId: t.skuId,
       isGift: true,
-      giftingOrigin: v.Wt.USER_PROFILE_WISHLIST,
-      analyticsLocations: I,
+      giftingOrigin: y.Wt.USER_PROFILE_WISHLIST,
+      analyticsLocations: E,
       giftRecipient: r,
       variantsReturnStyle: a.v.VARIANTS_GROUP
     })
   };
   return (0, n.jsxs)("div", {
-    className: y.container,
+    className: j.container,
     children: [(0, n.jsx)(s.ua7, {
       text: t.skuName,
       children: e => {
@@ -68,44 +75,44 @@ function O(e) {
           }
           return e
         }({}, e), a = a = {
-          className: y.card,
-          innerRef: x,
-          onClick: w,
+          className: j.card,
+          innerRef: S,
+          onClick: C,
           "aria-label": t.skuName,
           children: [(0, n.jsx)("div", {
-            className: y.cardPreview,
+            className: j.cardPreview,
             children: (() => {
-              switch (S.type) {
+              switch (w.type) {
                 case l.Z.PROFILE_EFFECT:
                   return (0, n.jsx)("div", {
-                    className: y.profileEffectPreview,
+                    className: j.profileEffectPreview,
                     children: (0, n.jsx)(p.Z, {
-                      profileEffectId: S.id,
-                      isHovering: P,
+                      profileEffectId: w.id,
+                      isHovering: I,
                       isPurchased: false,
                       removeSetHeight: true
                     })
                   });
                 case l.Z.AVATAR_DECORATION:
                   return (0, n.jsx)("div", {
-                    className: y.avatarDecorationPreview,
+                    className: j.avatarDecorationPreview,
                     children: (0, n.jsx)(f.R, {
-                      item: S,
+                      item: w,
                       user: r,
-                      isHighlighted: P,
+                      isHighlighted: I,
                       isPurchased: false,
                       avatarSize: s.EFr.SIZE_80
                     })
                   });
                 case l.Z.NAMEPLATE:
                   return (0, n.jsxs)("div", {
-                    className: y.nameplatePreview,
+                    className: j.nameplatePreview,
                     children: [(0, n.jsx)("div", {
-                      className: y.nameplateTopLeft,
+                      className: j.nameplateTopLeft,
                       children: (0, n.jsx)(g.Z, {
                         user: r,
-                        nameplate: S,
-                        isHighlighted: P,
+                        nameplate: w,
+                        isHighlighted: I,
                         showPlaceholderUser: true,
                         showStatus: true,
                         isPurchased: false,
@@ -113,11 +120,11 @@ function O(e) {
                         width: 200
                       })
                     }), (0, n.jsx)("div", {
-                      className: y.nameplateBottomRight,
+                      className: j.nameplateBottomRight,
                       children: (0, n.jsx)(g.Z, {
                         user: r,
-                        nameplate: S,
-                        isHighlighted: P,
+                        nameplate: w,
+                        isHighlighted: I,
                         showPlaceholderUser: true,
                         showStatus: true,
                         isPurchased: false,
@@ -130,15 +137,15 @@ function O(e) {
                   return null
               }
             })()
-          }), P && (0, n.jsx)("div", {
-            className: y.overlay,
+          }), I && (0, n.jsx)("div", {
+            className: j.overlay,
             children: (0, n.jsx)(s.zxk, {
               variant: "primary",
               size: "sm",
-              text: b.intl.string(j ? b.t.FdGl5O : b.t.ilhtIS),
-              icon: j ? true : s.OgN,
+              text: O.intl.string(P ? O.t.FdGl5O : O.t.ilhtIS),
+              icon: P ? true : s.OgN,
               onClick: e => {
-                e.stopPropagation(), w()
+                e.stopPropagation(), C()
               },
               fullWidth: true
             })
@@ -154,11 +161,11 @@ function O(e) {
           Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(a, e))
         }), i))
       }
-    }), j && (0, n.jsx)(m.Z, {
+    }), P && (0, n.jsx)(v.Z, {
       iconSize: "sm",
       item: t,
-      wishlistId: O,
-      className: y.removeItemButton
+      wishlistId: x,
+      className: j.removeItemButton
     })]
   })
 }

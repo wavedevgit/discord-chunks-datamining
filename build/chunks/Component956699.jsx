@@ -268,7 +268,7 @@ class el extends Chunk647438.Component {
         onClick: this.handleDiscardChanges,
         disabled: module
       }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
-        variant: "active",
+        variant: "primary",
         text: "Save Build Overrides",
         disabled: eo(null != exports ? exports : {}),
         onClick: this.handleSaveChanges,

@@ -2,11 +2,12 @@
 /** chunk id: 988043, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => I
+  Z: () => T
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk755721 = require("./755721.js"),
+  Chunk915009 = require("./915009.js"),
   Chunk430824 = require("./430824.js"),
   Chunk626135 = require("./626135.js"),
   Chunk88658 = require("./88658.js"),
@@ -24,68 +25,69 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function v(e) {
+function I(e) {
   let {
     ingress: t,
     guildId: n
-  } = e, g = (0, f.c_)(), v = u.h2.useSetting().includes(n), I = (0, c.q)(), T = (0, d.r)(), S = i.useCallback(e => {
-    let r = (0, l.YK)();
-    e ? r.delete(n) : r.add(n), u.h2.updateSetting(Array.from(r)), s.default.track(y.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
-      action: m.Y.DIRECT_MESSAGES_TOGGLE,
+  } = e, E = (0, _.c_)(), I = d.h2.useSetting().includes(n), T = (0, u.q)(), S = (0, f.r)(), A = (0, o.LN)(), C = i.useCallback(e => {
+    let r = (0, c.YK)();
+    e ? r.delete(n) : r.add(n), d.h2.updateSetting(Array.from(r)), l.default.track(O.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
+      action: g.Y.DIRECT_MESSAGES_TOGGLE,
       ingress: t,
       guild_id: n
     })
   }, [n, t]);
 
-  function A(e, t) {
-    s.default.track(y.rMx.GUILD_DEFAULT_DMS_UPDATED, {
+  function N(e, t) {
+    l.default.track(O.rMx.GUILD_DEFAULT_DMS_UPDATED, {
       default_guilds_restricted: e,
       applied_to_existing_guilds: t
     })
   }
-  let C = e => {
-      N(!e)
+  let R = e => {
+      P(!e)
     },
-    N = e => {
+    P = e => {
       let t = () => {
-          u.gR.updateSetting(e), u.h2.updateSetting(e ? o.Z.getGuildIds() : []), A(e, true)
+          d.gR.updateSetting(e), d.h2.updateSetting(e ? s.Z.getGuildIds() : []), N(e, true)
         },
         n = () => {
-          u.gR.updateSetting(e), A(e, false)
+          d.gR.updateSetting(e), N(e, false)
         };
-      (0, h.V)({
-        header: O.intl.string(O.t["uUr+GR"]),
-        body: O.intl.string(O.t.hjGJBg),
-        confirmText: O.intl.string(O.t.gm1Ven),
-        cancelText: O.intl.string(O.t.p89ACg),
+      (0, m.V)({
+        header: v.intl.string(v.t["uUr+GR"]),
+        body: v.intl.string(v.t.hjGJBg),
+        confirmText: v.intl.string(v.t.gm1Ven),
+        cancelText: v.intl.string(v.t.p89ACg),
         confirmButtonColor: a.zx.Colors.BRAND,
         onConfirm: n,
         onCancel: t
       })
     },
-    R = T ? O.intl.string(O.t.PMsfcH) : O.intl.string(O.t.RAQUSE);
-  return (0, r.jsx)(_.U, {
-    setting: E.s6.PRIVACY_SERVER_SPECIFIC_PRIVACY_DMS_V2,
-    children: n === b.T ? (0, r.jsx)(p.Z, {
-      title: R,
-      note: T ? O.intl.string(O.t.XXGmuL) : O.intl.string(O.t.wbYDfX),
+    w = S ? v.intl.string(v.t.PMsfcH) : v.intl.string(v.t.RAQUSE);
+  return (0, r.jsx)(p.U, {
+    setting: b.s6.PRIVACY_SERVER_SPECIFIC_PRIVACY_DMS_V2,
+    children: n === y.T ? (0, r.jsx)(h.Z, {
+      title: w,
+      note: S ? v.intl.string(v.t.XXGmuL) : v.intl.string(v.t.wbYDfX),
+      value: !T,
+      onChange: R,
+      disabled: A
+    }) : (0, r.jsx)(h.Z, {
+      title: w,
+      note: E ? v.intl.string(v.t.V0ka0d) : S ? v.intl.string(v.t.F9WY3d) : v.intl.string(v.t.G7c3Xl),
       value: !I,
       onChange: C
-    }) : (0, r.jsx)(p.Z, {
-      title: R,
-      note: g ? O.intl.string(O.t.V0ka0d) : T ? O.intl.string(O.t.F9WY3d) : O.intl.string(O.t.G7c3Xl),
-      value: !v,
-      onChange: S
     })
   })
 }
 
-function I(e) {
+function T(e) {
   let {
-    ingress: t = g.f4.USER_SETTINGS_PRIVACY_SAFETY,
+    ingress: t = E.f4.USER_SETTINGS_PRIVACY_SAFETY,
     guildId: n
-  } = e, i = (0, f.is)();
-  return (0, r.jsx)(v, {
+  } = e, i = (0, _.is)();
+  return (0, r.jsx)(I, {
     ingress: t,
     guildId: null != n ? n : i
   })

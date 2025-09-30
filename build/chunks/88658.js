@@ -61,8 +61,7 @@ function h(e) {
     source: i,
     subsection: a,
     locationStack: o,
-    searchQuery: l,
-    applicationId: c
+    applicationId: l
   } = e;
   r.ZP.trackWithMetadata(s.rMx.SETTINGS_PANE_VIEWED, {
     settings_type: "user",
@@ -71,7 +70,6 @@ function h(e) {
     location_stack: o,
     source: i,
     subsection: a,
-    search_query: l,
-    application_id: c
+    application_id: l
   })
 }

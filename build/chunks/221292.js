@@ -2,6 +2,7 @@
 /** chunk id: 221292, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
+  Er: () => j,
   NE: () => P,
   Of: () => L,
   QN: () => A,
@@ -322,5 +323,23 @@ let v = e => {
       tags: s,
       num_characters_commentary: l,
       is_widget_removed: c
+    }))
+  },
+  j = e => {
+    let {
+      guildId: t,
+      channelId: n,
+      analyticsLocations: i,
+      action: a,
+      wishlistId: o,
+      skuId: s
+    } = e;
+    C(O(b({}, e), {
+      action: a
+    })), u.default.track(m.rMx.USER_PROFILE_WISHLIST_ACTION, O(b({}, (0, r.hH)(t), (0, r.JS)(n), S(e)), {
+      location_stack: i,
+      action_type: a,
+      wishlist_id: o,
+      sku_id: s
     }))
   }

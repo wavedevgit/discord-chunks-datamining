@@ -21,9 +21,7 @@ function p() {
   let e = (0, Chunk925513.v6)(),
     t = [{
       title: Chunk388032.intl.string(Chunk388032.t.GYpoAg),
-      component: () => (0, Chunk951288.jsx)(Chunk821035.P, {
-        isNested: true
-      }),
+      component: () => (0, Chunk951288.jsx)(Chunk821035.P, {}),
       orientation: "vertical",
       setting: Chunk726985.s6.SEXUALLY_EXPLICIT_MEDIA_REDACTION
     }, {
