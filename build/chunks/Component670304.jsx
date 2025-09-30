@@ -5,7 +5,7 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk770102 = require("./770102.jsx"),
+  Chunk481060 = require("./481060.js"),
   Chunk36361 = require("./36361.jsx"),
   Chunk770877 = require("./770877.js");
 let a = Chunk647438.memo(function(e) {
@@ -17,7 +17,7 @@ let a = Chunk647438.memo(function(e) {
     children: t.layout.map((e, n) => (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(o.Z, {
         node: e
-      }), n !== t.layout.length - 1 && (0, r.jsx)(l.$, {
+      }), n !== t.layout.length - 1 && (0, r.jsx)(l.izJ, {
         className: s.divider
       })]
     }, e.key))

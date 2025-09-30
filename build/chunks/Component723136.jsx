@@ -52,7 +52,7 @@ function h(e) {
           })]
         })
       })
-    }), (0, r.jsx)(s.$i$, {
+    }), (0, r.jsx)(s.izJ, {
       className: p.divider
     })]
   }) : null

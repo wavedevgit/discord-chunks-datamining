@@ -141,7 +141,7 @@ let y = {
           }), (0, Chunk951288.jsx)(N, {})]
         }) : (0, Chunk951288.jsx)(C, {
           guild: module
-        }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
+        }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
           className: Chunk96761.divider
         }), (0, Chunk951288.jsx)(Chunk145499.Z, {
           guild: module

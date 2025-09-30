@@ -236,7 +236,7 @@ let Z = function() {
       }) : null;
     return (0, Chunk951288.jsxs)("div", {
       className: Chunk666707.marginContainer,
-      children: [Chunk755721, k ? (0, Chunk951288.jsx)(Chunk481060.$i$, {
+      children: [Chunk755721, k ? (0, Chunk951288.jsx)(Chunk481060.izJ, {
         className: Chunk666707.divider
       }) : null, (0, Chunk951288.jsx)(Chunk504983.Z, {
         className: Chunk666707.gradientContainer,
@@ -311,7 +311,7 @@ let Z = function() {
           variant: "heading-md/semibold",
           children: Chunk388032.intl.string(Chunk388032.t["9KeUbW"])
         }),
-        children: [(0, Chunk951288.jsx)(Chunk481060.$i$, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.izJ, {
           className: Chunk666707.divider
         }), 0 === Object.keys(Chunk392711).length ? V() : l().keys(Chunk392711).map(e => {
           let {

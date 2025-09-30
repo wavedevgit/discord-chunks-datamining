@@ -20,26 +20,26 @@ function u(e) {
     hideLabel: u,
     channel: h,
     onChange: g
-  } = e, [m, p] = l.useState(null), f = h.rateLimitPerUser, b = l.useMemo(() => {
-    let e = [...null != m ? m : o.BiE];
+  } = e, [p, m] = l.useState(null), f = h.rateLimitPerUser, b = l.useMemo(() => {
+    let e = [...null != p ? p : o.BiE];
     return e.includes(f) || e.unshift(f), e.map(e => ({
       label: (0, a.A)(e, false),
       value: e
     }))
-  }, [m, f]), x = l.useCallback(e => {
-    g(e), p(null)
+  }, [p, f]), x = l.useCallback(e => {
+    g(e), m(null)
   }, [g]), j = l.useCallback(e => {
-    if ("" === e) return void p(null);
+    if ("" === e) return void m(null);
     let t = [],
       n = parseInt(e, 10);
-    if (Number.isNaN(n)) return void p(null);
+    if (Number.isNaN(n)) return void m(null);
     n <= o.GI0 && t.push(n);
     let i = n * s.Z.Seconds.MINUTE;
     i <= o.GI0 && t.push(i);
     let l = n * s.Z.Seconds.HOUR;
-    l <= o.GI0 && t.push(l), p(t)
+    l <= o.GI0 && t.push(l), m(t)
   }, []), v = l.useCallback(() => {
-    p(null)
+    m(null)
   }, []);
   return (0, i.jsx)(r.VcW, {
     label: t,

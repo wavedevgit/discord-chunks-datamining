@@ -293,6 +293,6 @@ let P = Chunk442837.ZP.connectStores([Chunk82142.Z, Chunk283595.Z, Chunk314897.d
     isResolved: x.Z.getIsResolved(t),
     isAccepting: x.Z.getIsAccepting(t),
     libraryApplicationsFetched: E.Z.fetched,
-    nativeAppState: p.Z.getState(t)
+    nativeAppState: m.Z.getState(t)
   }
 })(Z)

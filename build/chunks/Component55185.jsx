@@ -201,7 +201,7 @@ function P(e) {
     children: [(0, i.jsx)(j, {
       showCurrentGame: n,
       closePopout: t
-    }), (0, i.jsx)(c.$i$, {
+    }), (0, i.jsx)(c.izJ, {
       className: O.divider
     }), (0, i.jsx)(c.Text, {
       variant: "text-xs/normal",
@@ -248,7 +248,7 @@ function N(e) {
       showCurrentGame: n,
       shouldShowStatus: true,
       closePopout: t
-    }), (0, i.jsx)(c.$i$, {
+    }), (0, i.jsx)(c.izJ, {
       className: O.divider
     }), (0, i.jsx)(c.Text, {
       variant: "text-xs/normal",

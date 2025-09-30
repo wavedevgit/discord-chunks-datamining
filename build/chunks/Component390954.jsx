@@ -85,7 +85,7 @@ class I extends(r = Chunk647438.PureComponent) {
       onCancel: Chunk709054,
       onDelete: Chunk981631
     }) : (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-      children: [r > 0 && !Chunk647438 ? (0, Chunk951288.jsx)(Chunk481060.$i$, {
+      children: [r > 0 && !Chunk647438 ? (0, Chunk951288.jsx)(Chunk481060.izJ, {
         className: Chunk579378.__invalid_sourceDivider
       }) : null, (0, Chunk951288.jsxs)("div", {
         className: Chunk579378.paymentSourceRow,
@@ -177,7 +177,7 @@ class T extends Chunk647438.PureComponent {
             }, e))
           }), Chunk388032.intl.string(Chunk388032.t.W26xGR)]
         })
-      }), Chunk212895, Chunk159351 !== Chunk159691.length - 1 ? (0, Chunk951288.jsx)(Chunk481060.$i$, {
+      }), Chunk212895, Chunk159351 !== Chunk159691.length - 1 ? (0, Chunk951288.jsx)(Chunk481060.izJ, {
         className: Chunk579378.__invalid_sourceDivider
       }) : null, this.renderFooter()]
     })

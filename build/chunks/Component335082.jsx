@@ -192,11 +192,11 @@ let I = function(e) {
   return (0, r.jsxs)(u.Z, {
     className: t,
     title: m.intl.string(m.t.Cq98yM),
-    children: [(0, r.jsx)(O, {}), (0, r.jsx)(s.$i$, {
+    children: [(0, r.jsx)(O, {}), (0, r.jsx)(s.izJ, {
       className: g.divider
-    }), (0, r.jsx)(b, {}), (0, r.jsx)(s.$i$, {
+    }), (0, r.jsx)(b, {}), (0, r.jsx)(s.izJ, {
       className: g.divider
-    }), (0, r.jsx)(y, {}), (0, r.jsx)(s.$i$, {
+    }), (0, r.jsx)(y, {}), (0, r.jsx)(s.izJ, {
       className: g.divider
     }), (0, r.jsx)(v, {})]
   })

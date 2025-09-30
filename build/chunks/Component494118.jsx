@@ -31,7 +31,7 @@ function g(e) {
       children: u.intl.format(u.t["5u+aV1"], {
         helpdeskArticle: s.Z.getArticleURL(d.BhN.CHANNEL_FOLLOWING)
       })
-    }), (0, i.jsx)(l.$i$, {
+    }), (0, i.jsx)(l.izJ, {
       className: p.headerDivider
     }), t.length > 0 ? (0, i.jsx)(c.Z, {
       webhooks: t,

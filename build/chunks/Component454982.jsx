@@ -99,7 +99,7 @@ let p = function(e) {
     transitionState: m,
     "aria-label": b,
     children: (0, r.jsxs)("div", {
-      children: [(0, r.jsx)(s.$i$, {
+      children: [(0, r.jsx)(s.izJ, {
         className: f.formDivider
       }), (0, r.jsxs)(s.hjN, {
         title: d.intl.string(d.t.s9LFQk),

@@ -50,12 +50,12 @@ function I(e) {
   }), [q, z] = i.useState(() => {
     var e;
     return new Set(null != (e = null == x ? true : x.roleIds) ? e : [])
-  }), [A, F] = i.useState({}), H = i.useRef(null);
+  }), [J, A] = i.useState({}), F = i.useRef(null);
   i.useLayoutEffect(() => {
     var e;
-    return null == (e = H.current) ? true : e.focus()
+    return null == (e = F.current) ? true : e.focus()
   }, []);
-  let K = i.useCallback(() => {
+  let H = i.useCallback(() => {
       var e;
       let t = {
           id: null != (e = null == x ? true : x.id) ? e : "".concat(Date.now()),
@@ -71,17 +71,17 @@ function I(e) {
           let r = (0, p.en)(e, t, n, l);
           return null != r && (i.roles = r), i
         }(I, f.Z.editedOnboardingPrompts, P, t);
-      F(l), o().isEmpty(l) && (r(t), n())
+      A(l), o().isEmpty(l) && (r(t), n())
     }, [B, T, Z, I, n, r, null == x ? true : x.id, P, q, R]),
-    L = i.useMemo(() => [{
+    K = i.useMemo(() => [{
       text: O.intl.string(O.t["ETE/oK"]),
       onClick: n,
       variant: "secondary"
     }, {
       text: O.intl.string(O.t.R3BPHx),
-      onClick: K,
+      onClick: H,
       variant: "primary"
-    }], [K, n]);
+    }], [H, n]);
   return (0, l.jsxs)(a.IX, {
     transitionState: t,
     onClose: n,
@@ -108,20 +108,20 @@ function I(e) {
         children: [(0, l.jsx)(d.oil, {
           label: O.intl.string(O.t.VWdcBg),
           required: true,
-          inputRef: H,
+          inputRef: F,
           placeholder: O.intl.string(O.t.EHe6gY),
           value: R,
           onChange: e => M(e),
           maxLength: y.NE,
           autoFocus: true,
-          error: A.title
+          error: J.title
         }), (0, l.jsx)(d.oil, {
           placeholder: O.intl.string(O.t.mIjgJC),
           value: T,
           onChange: e => _(e),
           maxLength: y.NO
         })]
-      }), (0, l.jsx)(d.$i$, {}), (0, l.jsxs)(d.xJW, {
+      }), (0, l.jsx)(d.izJ, {}), (0, l.jsxs)(d.xJW, {
         title: O.intl.string(O.t.TtIbPD),
         children: [(0, l.jsxs)(d.Kqy, {
           gap: 8,
@@ -140,13 +140,13 @@ function I(e) {
             helperText: O.intl.string(O.t.Mbvpv7),
             selectableRoleFilter: e => !e.managed
           })]
-        }), null == A.roles ? null : (0, l.jsx)(d.pdY, {
-          error: A.roles
+        }), null == J.roles ? null : (0, l.jsx)(d.pdY, {
+          error: J.roles
         }), (0, l.jsx)(N, {
           guild: I,
           roleIds: q
         })]
-      }), (0, l.jsx)(d.$i$, {}), (0, l.jsxs)("div", {
+      }), (0, l.jsx)(d.izJ, {}), (0, l.jsxs)("div", {
         className: C.emojiQuestionContainer,
         children: [(0, l.jsxs)("div", {
           children: [(0, l.jsx)(d.vwX, {
@@ -162,7 +162,7 @@ function I(e) {
         })]
       })]
     }), (0, l.jsx)(c.G, {
-      actions: L,
+      actions: K,
       leading: (0, l.jsx)(d.Avr, {
         text: O.intl.string(O.t.N86XcH),
         onClick: () => {

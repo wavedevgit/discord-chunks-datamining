@@ -132,7 +132,7 @@ function I(e) {
   let B = null;
   return I && null != l && (B = (0, i.jsxs)("div", {
     className: C.body,
-    children: [(0, i.jsx)(c.$i$, {
+    children: [(0, i.jsx)(c.izJ, {
       className: C.topDivider
     }), (0, i.jsxs)(m.Z, {
       children: [(0, i.jsx)(m.Z.Child, {
@@ -190,7 +190,7 @@ function I(e) {
               })
             })
           })]
-        }), (0, i.jsx)(c.$i$, {
+        }), (0, i.jsx)(c.izJ, {
           className: C.bottomDivider
         }), (0, i.jsxs)(m.Z, {
           children: [(0, i.jsx)(c.ua7, {

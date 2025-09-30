@@ -62,7 +62,7 @@ class p extends Chunk647438.PureComponent {
           type: Chunk481060.geA.DESCRIPTION,
           children: Chunk692547
         })
-      }, null != Chunk647438 ? "".concat(Chunk647438, "-").concat(Chunk120356) : Chunk120356), (0, Chunk951288.jsx)(Chunk481060.$i$, {
+      }, null != Chunk647438 ? "".concat(Chunk647438, "-").concat(Chunk120356) : Chunk120356), (0, Chunk951288.jsx)(Chunk481060.izJ, {
         className: Chunk966117.divider
       })]
     })

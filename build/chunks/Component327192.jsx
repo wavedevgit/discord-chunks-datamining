@@ -370,7 +370,7 @@ function z(e) {
   }
 
   function et() {
-    if (n.revoked || n.integrations.length > 0) return (0, r.jsx)(f.$i$, {
+    if (n.revoked || n.integrations.length > 0) return (0, r.jsx)(f.izJ, {
       className: Z.connectedAccountSeparator
     })
   }

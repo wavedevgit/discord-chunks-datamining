@@ -112,7 +112,7 @@ class x extends Chunk647438.PureComponent {
       tag: Chunk481060.RB0.H2,
       title: Chunk388032.intl.string(Chunk388032.t.wU9INz) + (null != Chunk647438 ? " - " + Chunk647438 : ""),
       className: Chunk966117.allowSelection,
-      children: [(0, Chunk481250.VE)(Chunk226961), 0 === Chunk476221.length ? null : (0, Chunk951288.jsx)(Chunk481060.$i$, {
+      children: [(0, Chunk481250.VE)(Chunk226961), 0 === Chunk476221.length ? null : (0, Chunk951288.jsx)(Chunk481060.izJ, {
         className: Chunk197571.marginBottom20
       }), (0, Chunk481250.VE)(Chunk476221)]
     })

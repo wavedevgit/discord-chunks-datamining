@@ -155,7 +155,7 @@ class b extends(i = Chunk647438.Component) {
         section: t
       } = e, n = this.props.sections[t];
       return this.isEmpty() || null == n ? null : (0, l.jsx)("div", {
-        className: p.section,
+        className: m.section,
         children: n
       }, t)
     }), f(this, "renderRow", e => {
@@ -167,12 +167,12 @@ class b extends(i = Chunk647438.Component) {
         selectedRow: r
       } = this.state;
       if (this.isEmpty()) return (0, l.jsxs)("div", {
-        className: p.empty,
+        className: m.empty,
         children: [(0, l.jsx)("p", {
-          className: p.noResultsHeader,
-          children: m.intl.string(m.t["4o4z3d"])
+          className: m.noResultsHeader,
+          children: p.intl.string(p.t["4o4z3d"])
         }), (0, l.jsx)("p", {
-          children: m.intl.string(m.t.QwSXv7)
+          children: p.intl.string(p.t.QwSXv7)
         })]
       }, "empty");
       let s = this.getRows(),
@@ -181,11 +181,11 @@ class b extends(i = Chunk647438.Component) {
       return (0, l.jsx)(c.P3F, {
         onClick: this.handleClick.bind(this, n, i),
         onMouseEnter: this.handleMouseEnter.bind(this, n, i),
-        className: a()(p.row, {
-          [p.selected]: o === n && r === i
+        className: a()(m.row, {
+          [m.selected]: o === n && r === i
         }),
         children: (0, l.jsx)("div", {
-          className: p.rowInner,
+          className: m.rowInner,
           children: this.props.onRenderResult(d, n)
         })
       }, "".concat(n, "-").concat(i))

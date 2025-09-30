@@ -37,9 +37,9 @@ function x(e) {
     {
       isAuthenticated: E,
       loginStatus: v
-    } = (0, o.cj)([p.default], () => ({
-      isAuthenticated: p.default.isAuthenticated(),
-      loginStatus: p.default.getLoginStatus()
+    } = (0, o.cj)([m.default], () => ({
+      isAuthenticated: m.default.isAuthenticated(),
+      loginStatus: m.default.getLoginStatus()
     })),
     {
       location: b,
@@ -80,7 +80,7 @@ function x(e) {
         })
       }
     }
-  }), I || v === f.u34.LOGGING_IN) ? (0, r.jsx)(m.q, {}) : (0, r.jsx)(m.Z, (t = function(e) {
+  }), I || v === f.u34.LOGGING_IN) ? (0, r.jsx)(p.q, {}) : (0, r.jsx)(p.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);

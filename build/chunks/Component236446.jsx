@@ -49,7 +49,7 @@ class w extends Chunk647438.PureComponent {
     (0, Chunk108427.e)("guildTemplate"), Chunk436620.KO || Chunk954824.Z.launch("discord://" + Chunk981631.Z5c.GUILD_TEMPLATE(this.props.code), () => true)
   }
   componentDidUpdate(e) {
-    this.props.code !== e.code && p.Z.resolveGuildTemplate(this.props.code)
+    this.props.code !== e.code && m.Z.resolveGuildTemplate(this.props.code)
   }
   renderButton(e, t) {
     return T.KO ? (0, r.jsx)(u.zx, {
@@ -197,7 +197,7 @@ function k(e) {
   });
   return (0, r.jsx)(N.Z, {
     className: P.authBox,
-    children: () => [(0, r.jsx)(m.Z, {
+    children: () => [(0, r.jsx)(p.Z, {
       guildTemplate: t
     }, "template"), (0, r.jsx)("div", {
       className: P.formContainer,

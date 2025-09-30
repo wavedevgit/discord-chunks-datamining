@@ -127,7 +127,7 @@ class f extends Chunk647438.PureComponent {
             googleAuthURL: "https://support.google.com/accounts/answer/1066447?hl=en",
             authyURL: "https://www.authy.com/"
           })
-        }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
+        }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
           className: Chunk186603.divider
         }), (0, Chunk951288.jsx)(p, {
           image: (0, Chunk951288.jsx)(Chunk198993.ZP, {
@@ -148,7 +148,7 @@ class f extends Chunk647438.PureComponent {
               children: Chunk816814
             })]
           })
-        }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
+        }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
           className: Chunk186603.divider
         }), (0, Chunk951288.jsx)(p, {
           image: (0, Chunk951288.jsx)("img", {

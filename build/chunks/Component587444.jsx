@@ -2,7 +2,7 @@
 /** chunk id: 587444, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f,
-  u: () => m
+  u: () => p
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -18,7 +18,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk149715 = require("./149715.js"),
   Chunk197571 = require("./197571.js");
 
-function m(e) {
+function p(e) {
   let {
     text: t,
     buttonCta: i,
@@ -28,10 +28,10 @@ function m(e) {
     children: [(0, r.jsx)(a.Ee, {
       src: n(689411)
     }), (0, r.jsx)(a.Dx, {
-      className: l()(p.marginTop20, p.marginBottom8, g.flexCenter),
+      className: l()(m.marginTop20, m.marginBottom8, g.flexCenter),
       children: d.intl.string(d.t.eL5z0t)
     }), (0, r.jsx)(a.DK, {
-      className: p.marginBottom40,
+      className: m.marginBottom40,
       children: d.intl.string(d.t["poAv6+"])
     }), (0, r.jsxs)(o.Zbd, {
       className: h.card,
@@ -76,7 +76,7 @@ function f(e) {
   } = e;
   return (0, r.jsx)(a.ZP, {
     theme: i,
-    children: (0, r.jsx)(m, {
+    children: (0, r.jsx)(p, {
       text: t,
       buttonCta: n,
       onClick: l

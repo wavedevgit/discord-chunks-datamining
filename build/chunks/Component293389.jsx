@@ -111,7 +111,7 @@ function Z(e) {
         lineClamp: 1,
         children: e.label
       })
-    }), (0, r.jsx)(u.$i$, {
+    }), (0, r.jsx)(u.izJ, {
       className: o()(D.marginTop8, D.marginBottom8)
     }), (0, r.jsxs)("div", {
       className: o()(R.actions, w.horizontal),

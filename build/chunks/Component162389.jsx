@@ -56,8 +56,8 @@ function v(e, t) {
 function y(e) {
   let {
     channel: t
-  } = e, r = (0, a.e7)([g.Z], () => g.Z.can(f.Plq.MANAGE_CHANNELS, t), [t]), u = t.availableTags.length >= p.pC, m = t.availableTags.length > 0, y = l.useCallback(() => {
-    let e = t.availableTags.length >= p.pC;
+  } = e, r = (0, a.e7)([g.Z], () => g.Z.can(f.Plq.MANAGE_CHANNELS, t), [t]), u = t.availableTags.length >= m.pC, p = t.availableTags.length > 0, y = l.useCallback(() => {
+    let e = t.availableTags.length >= m.pC;
     r && !e && (0, c.ZDy)(async () => {
       let {
         default: e
@@ -89,7 +89,7 @@ function y(e) {
   });
   return (0, i.jsxs)("div", {
     className: x.tags,
-    children: [m ? t.availableTags.map(e => (0, i.jsx)(C, {
+    children: [p ? t.availableTags.map(e => (0, i.jsx)(C, {
       tag: e,
       availableTags: t.availableTags,
       canManageChannels: r,
@@ -97,7 +97,7 @@ function y(e) {
       onDragComplete: O,
       onDragReset: E,
       onDragStart: S
-    }, e.id)) : null, m ? (0, i.jsx)(c.P3F, {
+    }, e.id)) : null, p ? (0, i.jsx)(c.P3F, {
       onClick: y,
       className: s()(x.addTags, {
         [x.disabled]: !r || u
@@ -130,7 +130,7 @@ function C(e) {
   } = e, d = n.findIndex(e => e.id === t.id), {
     drag: h,
     dragSourcePosition: g,
-    drop: p,
+    drop: m,
     setIsDraggable: f
   } = (0, u.Z)({
     type: "CHANNEL_SETTINGS_FORUM_TAGS",
@@ -146,11 +146,11 @@ function C(e) {
       [x.dropIndicatorAfter]: null != g && d > g
     }),
     ref: e => {
-      h(p(e))
+      h(m(e))
     },
     onMouseEnter: () => f(l),
     onMouseLeave: () => f(false),
-    children: (0, i.jsx)(m.Z, {
+    children: (0, i.jsx)(p.Z, {
       tag: t,
       disabled: !l,
       ariaLabel: b.intl.formatToPlainString(b.t.jhSvBw, {

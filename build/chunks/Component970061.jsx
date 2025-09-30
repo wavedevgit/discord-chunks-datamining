@@ -72,7 +72,7 @@ function g(e) {
         items: l
       } = e;
       return (0, r.jsxs)(i.Fragment, {
-        children: [t > 0 && (0, r.jsx)(c.$i$, {
+        children: [t > 0 && (0, r.jsx)(c.izJ, {
           className: u.divider
         }), (0, r.jsx)(c.vwX, {
           className: u.categoryTitle,
@@ -83,7 +83,7 @@ function g(e) {
         }, t))]
       }, t)
     }), null !== l && "" !== l && null !== s && (0, r.jsxs)("div", {
-      children: [(0, r.jsx)(c.$i$, {
+      children: [(0, r.jsx)(c.izJ, {
         className: u.divider
       }), (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,

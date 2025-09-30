@@ -99,8 +99,8 @@ function Z(e) {
       serviceName: W,
       channelURL: H,
       expireBehaviorLabel: G,
-      syncLabel: F,
-      subscribersText: z
+      syncLabel: z,
+      subscribersText: F
     } = r.useMemo(() => {
       var e, t, n, i, r;
       let a = null != (n = null == (t = b.Z.get(l.type)) || null == (e = t.getPlatformUserUrl) ? true : e.call(t, {
@@ -144,12 +144,12 @@ function Z(e) {
         })
       }
     }, [q, U, l.revoked, l.synced_at, l.type, l.user]),
-    Y = (0, d.e7)([j.Z], () => j.Z.getSortedRoles(n.id)),
-    $ = r.useMemo(() => {
+    J = (0, d.e7)([j.Z], () => j.Z.getSortedRoles(n.id)),
+    Y = r.useMemo(() => {
       let e = f.ZP.getGuildEmoji(n.id),
-        t = Y.filter(e => null != e.tags && e.tags.integration_id === l.id).map(e => e.id);
+        t = J.filter(e => null != e.tags && e.tags.integration_id === l.id).map(e => e.id);
       return l.enable_emoticons ? e.filter(e => null != l.role_id && (null == e ? true : e.roles.some(e => t.includes(e)))).sort((e, t) => e.name.localeCompare(t.name)) : []
-    }, [n.id, Y, l.enable_emoticons, l.id, l.role_id]);
+    }, [n.id, J, l.enable_emoticons, l.id, l.role_id]);
   if (r.useEffect(() => {
       (null == o ? true : o.id) === l.id && (null == o ? true : o.enabled) === true && D(false)
     }, [o, l.id]), l.enabled && null != l.user) t = [{
@@ -203,11 +203,11 @@ function Z(e) {
         })
       })]
     }),
-    J = null;
-  return Z && !A && null != o && (J = (0, i.jsxs)(g.Z, {
+    Q = null;
+  return Z && !A && null != o && (Q = (0, i.jsxs)(g.Z, {
     className: S.body,
     direction: g.Z.Direction.VERTICAL,
-    children: [(0, i.jsx)(p.$i$, {
+    children: [(0, i.jsx)(p.izJ, {
       className: S.topDivider
     }), function(e) {
       let {
@@ -266,12 +266,12 @@ function Z(e) {
       })
     }({
       integration: o,
-      labelText: F,
-      subscribersText: z,
+      labelText: z,
+      subscribersText: F,
       descriptionText: V,
       roleLink: K,
       onSync: B
-    }), (0, i.jsx)(p.$i$, {
+    }), (0, i.jsx)(p.izJ, {
       className: S.midDivider
     }), function(e) {
       let {
@@ -376,13 +376,13 @@ function Z(e) {
       })
     }({
       integration: o,
-      emojis: $,
+      emojis: Y,
       onToggle: function(e) {
         m.Z.updateIntegration({
           enableEmoticons: e
         })
       }
-    }) : null, (0, i.jsx)(p.$i$, {
+    }) : null, (0, i.jsx)(p.izJ, {
       className: S.bottomDivider
     }), (0, i.jsx)(g.Z, {
       children: (0, i.jsx)(p.zxk, {
@@ -402,7 +402,7 @@ function Z(e) {
         "aria-expanded": Z && !A,
         onClick: T,
         children: X
-      }) : X, J]
+      }) : X, Q]
     })
   })
 }

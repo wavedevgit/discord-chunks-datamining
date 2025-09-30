@@ -347,7 +347,7 @@ class eo extends Chunk647438.Component {
           value: e
         }),
         value: module
-      }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
+      }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
         className: Chunk226518.divider
       })]
     }), o = (0, Chunk951288.jsxs)(Chunk921801.F, {
@@ -389,7 +389,7 @@ class eo extends Chunk647438.Component {
           variant: "text-md/medium",
           children: Chunk388032.intl.string(Chunk388032.t["//vhWl"])
         })
-      }), this.renderMessageGroupSpacingSlider(), (0, Chunk951288.jsx)(Chunk481060.$i$, {
+      }), this.renderMessageGroupSpacingSlider(), (0, Chunk951288.jsx)(Chunk481060.izJ, {
         className: Chunk226518.divider
       })]
     }), s = (0, Chunk951288.jsxs)(Chunk921801.F, {
@@ -398,7 +398,7 @@ class eo extends Chunk647438.Component {
         variant: "text-lg/medium",
         className: Chunk226518.title,
         children: Chunk388032.intl.string(Chunk388032.t["0Yh+ZW"])
-      }), this.renderFontScaleSlider(), this.renderZoomSlider(), (0, Chunk951288.jsx)(Chunk481060.$i$, {
+      }), this.renderFontScaleSlider(), this.renderZoomSlider(), (0, Chunk951288.jsx)(Chunk481060.izJ, {
         className: Chunk226518.divider
       })]
     }), l = (0, Chunk951288.jsx)(Chunk921801.F, {

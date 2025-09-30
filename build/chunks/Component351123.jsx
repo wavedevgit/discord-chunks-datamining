@@ -170,8 +170,8 @@ function W(e) {
                 cancelText: V.intl.string(V.t["ETE/oK"]),
                 onConfirm: () => (function(e, n) {
                   if (t.isGuildStageVoice()) {
-                    let i = (0, C._L)(e, n === D.aC.ROLE ? p.BN.ROLE : p.BN.MEMBER, t);
-                    (0, C.Os)(i) ? h.Z.clearPermissionOverwrite(t.id, i.id): (0, m.hw)(t.id, [i])
+                    let i = (0, C._L)(e, n === D.aC.ROLE ? m.BN.ROLE : m.BN.MEMBER, t);
+                    (0, C.Os)(i) ? h.Z.clearPermissionOverwrite(t.id, i.id): (0, p.hw)(t.id, [i])
                   } else h.Z.clearPermissionOverwrite(t.id, e)
                 })(e, i)
               }))
@@ -209,7 +209,7 @@ function W(e) {
   })
 }
 
-function F(e) {
+function z(e) {
   let {
     guild: t,
     channel: l,
@@ -272,15 +272,15 @@ function F(e) {
   })
 }
 
-function z(e) {
+function F(e) {
   let {
     guild: t,
     channel: l,
     isPrivateGuildChannel: r,
     roles: o,
     members: u
-  } = e, h = (0, a.e7)([T.Z], () => T.Z.can(B.Pl.ADMINISTRATOR, t)), g = I.Uu(B.Pl.VIEW_CHANNEL, t), m = I.Uu(B.Pl.ADMINISTRATOR, t);
-  async function p() {
+  } = e, h = (0, a.e7)([T.Z], () => T.Z.can(B.Pl.ADMINISTRATOR, t)), g = I.Uu(B.Pl.VIEW_CHANNEL, t), p = I.Uu(B.Pl.ADMINISTRATOR, t);
+  async function m() {
     let e = l.accessPermissions,
       s = R.default.getCurrentUser();
     if (!r && null != await (0, v.T)(t.id, l.id)) return void(0, d.ZDy)(async () => {
@@ -323,17 +323,17 @@ function z(e) {
       }),
       id: "PrivateChannelSettingCard",
       label: f.title,
-      onChange: p,
+      onChange: m,
       value: r
     }), (0, i.jsxs)("div", {
       className: H.cardFolder,
-      children: [m && (0, i.jsx)("div", {
+      children: [p && (0, i.jsx)("div", {
         className: H.adminWarning,
         children: (0, i.jsx)(d.Wn, {
           messageType: d.QYI.WARNING,
           children: V.intl.string(V.t["5f3HIC"])
         })
-      }), !g && !m && !r && (0, i.jsx)("div", {
+      }), !g && !p && !r && (0, i.jsx)("div", {
         className: H.adminWarning,
         children: (0, i.jsx)(d.Wn, {
           messageType: d.QYI.WARNING,
@@ -380,7 +380,7 @@ function X(e) {
     title: t
   } = e;
   return (0, i.jsxs)("div", {
-    children: [(0, i.jsx)(d.$i$, {
+    children: [(0, i.jsx)(d.izJ, {
       className: H.divider
     }), (0, i.jsx)(d.vwX, {
       className: s()(H.folderTitle, H.sectionTitle),
@@ -428,8 +428,8 @@ let q = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk496675.Z, Chunk271383.
     guild: c,
     isPrivateGuildChannel: u,
     locked: h,
-    permissionUpdates: m
-  } = e, [p, f] = l.useState(!I.Uu(B.Pl.SEND_MESSAGES, s));
+    permissionUpdates: p
+  } = e, [m, f] = l.useState(!I.Uu(B.Pl.SEND_MESSAGES, s));
   if (null == s || null == c) return null;
   let b = {
     title: V.intl.string(V.t.BAZMBg),
@@ -473,11 +473,11 @@ let q = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk496675.Z, Chunk271383.
           }))
         })
       }
-    }) : null, s.isGuildStageVoice() ? (0, i.jsx)(F, {
+    }) : null, s.isGuildStageVoice() ? (0, i.jsx)(z, {
       guild: c,
       channel: s,
-      permissionUpdates: m
-    }) : null, (0, i.jsx)(z, {
+      permissionUpdates: p
+    }) : null, (0, i.jsx)(F, {
       channel: s,
       guild: c,
       isPrivateGuildChannel: u,

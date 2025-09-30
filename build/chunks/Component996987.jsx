@@ -66,7 +66,7 @@ function u(e) {
       })
     }), !f && (0, i.jsx)(l.Z.Child, {
       className: d.marginTop20,
-      children: (0, i.jsx)(r.$i$, {})
+      children: (0, i.jsx)(r.izJ, {})
     })]
   })
 }

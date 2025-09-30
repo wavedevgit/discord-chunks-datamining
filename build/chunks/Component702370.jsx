@@ -463,7 +463,7 @@ let eZ = e => {
                     }))
                   })
                 })(e, n);
-                let i = !$ && !en && !u.tq && !eO && M && !(0, q.iP)(e.currency),
+                let i = !$ && !en && !u.tq && !eO && M,
                   l = (0, q.x6)(N) ? eA.intl.string(eA.t.V1AWw8) : N.type === d.Z.PROFILE_EFFECT ? eA.intl.string(eA.t.kAeDcH) : N.type === d.Z.NAMEPLATE ? eA.intl.string(eA.t.H3vhqa) : eA.intl.string(eA.t.AQ0Ven);
                 return ex ? l = eA.intl.formatToPlainString(eA.t["5U5RBw"], {
                   discountOfferAmount: eP

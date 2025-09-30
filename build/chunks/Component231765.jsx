@@ -288,7 +288,7 @@ function G(e) {
         }),
         onValueRender: e => "".concat(e)
       })]
-    }), (0, r.jsx)(l.$i$, {
+    }), (0, r.jsx)(l.izJ, {
       className: I.divider
     })]
   })
@@ -410,7 +410,7 @@ function F(e) {
         width: 16,
         className: I.rightCaretIcon
       })]
-    }), (0, r.jsx)(l.$i$, {
+    }), (0, r.jsx)(l.izJ, {
       className: I.divider
     })]
   })

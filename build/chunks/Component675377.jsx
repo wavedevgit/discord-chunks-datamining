@@ -260,7 +260,7 @@ function K(e) {
         children: k.intl.string(k.t.I6P1p6)
       }), b]
     }) : (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(m.$i$, {
+      children: [(0, r.jsx)(m.izJ, {
         className: G.divider
       }), (0, r.jsx)(m.X6q, {
         className: G.tableTitle,

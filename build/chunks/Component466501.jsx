@@ -47,7 +47,7 @@ function j(e) {
         checked: e.checked,
         actionLabel: e.actionLabel,
         actionHandler: e.actionHandler
-      }), t < g.length - 1 ? (0, n.jsx)(l.$i$, {}) : null]
+      }), t < g.length - 1 ? (0, n.jsx)(l.izJ, {}) : null]
     }, e.checkedLabel))
   })
 }

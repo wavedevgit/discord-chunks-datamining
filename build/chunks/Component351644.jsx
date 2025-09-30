@@ -69,16 +69,16 @@ function W(e) {
     guild: W,
     channel: H,
     applicationIntegrations: G,
-    builtInIntegrations: F,
-    customWebhooks: z,
+    builtInIntegrations: z,
+    customWebhooks: F,
     followedChannelWebhooks: q,
     isLoadingWebhooks: K,
     canCreateWebhook: V,
-    onManageBuiltIn: Y,
-    onManageCustomWebhooks: $,
+    onManageBuiltIn: J,
+    onManageCustomWebhooks: Y,
     onManageFollowedChannels: X,
-    onManageApplication: J,
-    onManageLobbiesLinked: Q
+    onManageApplication: Q,
+    onManageLobbiesLinked: $
   } = e, ee = (0, m.ZP)(), [et, en] = r.useState(""), {
     isFetchingConnections: ei,
     accounts: er
@@ -99,12 +99,12 @@ function W(e) {
   } = r.useMemo(() => {
     var e, t, n, i, r, l, a, o;
     return {
-      availableTwitchIntegrations: null != (r = null == (e = F.twitch) ? true : e.length) ? r : 0,
-      availableYoutubeIntegrations: null != (l = null == (t = F.youtube) ? true : t.length) ? l : 0,
-      guildTwitchIntegrations: null != (a = null == (n = F.twitch) ? true : n.filter(e => e.enabled).length) ? a : 0,
-      guildYoutubeIntegrations: null != (o = null == (i = F.youtube) ? true : i.filter(e => e.enabled).length) ? o : 0
+      availableTwitchIntegrations: null != (r = null == (e = z.twitch) ? true : e.length) ? r : 0,
+      availableYoutubeIntegrations: null != (l = null == (t = z.youtube) ? true : t.length) ? l : 0,
+      guildTwitchIntegrations: null != (a = null == (n = z.twitch) ? true : n.filter(e => e.enabled).length) ? a : 0,
+      guildYoutubeIntegrations: null != (o = null == (i = z.youtube) ? true : i.filter(e => e.enabled).length) ? o : 0
     }
-  }, [F.twitch, F.youtube]), {
+  }, [z.twitch, z.youtube]), {
     showTwitchCard: eb,
     showYoutubeCard: eg
   } = r.useMemo(() => {
@@ -162,7 +162,7 @@ function W(e) {
         buttonText: A.intl.string(A.t["Z/qRnJ"]),
         hasNextSection: true,
         onButtonClick: () => {
-          J(r.id), C.default.track(E.rMx.APP_MANAGE_CTA_CLICKED, {
+          Q(r.id), C.default.track(E.rMx.APP_MANAGE_CTA_CLICKED, {
             application_id: r.id,
             guild_id: null == W ? true : W.id,
             is_admin: null != W ? _.Z.can(E.Plq.ADMINISTRATOR, W) : true
@@ -236,7 +236,7 @@ function W(e) {
     eP = [];
   if (el) {
     let e, t, r, a, o;
-    eP.push((n = z.length, n > 0 ? t = (0, i.jsx)(u.LJT, {
+    eP.push((n = F.length, n > 0 ? t = (0, i.jsx)(u.LJT, {
       size: "xs"
     }) : e = A.intl.string(A.t.lOQqJC), (0, i.jsx)(Z.Z, {
       name: A.intl.string(A.t.xOg4SE),
@@ -244,7 +244,7 @@ function W(e) {
       buttonText: e,
       buttonDisabled: !V,
       trailing: t,
-      onButtonClick: $,
+      onButtonClick: Y,
       hasNextSection: n > 0,
       details: [{
         text: A.intl.formatToPlainString(A.t["6HqDfX"], {
@@ -273,7 +273,7 @@ function W(e) {
     trailing: (0, i.jsx)(u.LJT, {
       size: "xs"
     }),
-    onButtonClick: Q,
+    onButtonClick: $,
     hasNextSection: true,
     details: [{
       text: A.intl.formatToPlainString(A.t["puxS4+"], {
@@ -302,7 +302,7 @@ function W(e) {
         text: l
       }]
     }, "integrations-twitch")
-  }(ed, ep, Y)), eg && eP.push(function(e, t, n) {
+  }(ed, ep, J)), eg && eP.push(function(e, t, n) {
     let r, l, a, o, s = b.Z.get(E.ABu.YOUTUBE);
     return e > 0 ? (o = (0, i.jsx)(u.LJT, {
       size: "xs"
@@ -324,7 +324,7 @@ function W(e) {
         text: l
       }]
     }, "integrations-youtube")
-  }(eu, em, Y));
+  }(eu, em, J));
   let eZ = null != H && eo && null != es;
   return (0, i.jsxs)(u.hjN, {
     className: a()(null != ew ? D.footerPlaceholder : null),
@@ -333,14 +333,14 @@ function W(e) {
       children: A.intl.format(eI, {
         helpdeskArticle: eS
       })
-    }), (0, i.jsx)(u.$i$, {
+    }), (0, i.jsx)(u.izJ, {
       className: D.divider
     }), K || ei || null == W ? (0, i.jsx)(u.$jN, {
       className: D.__invalid_spinner,
       type: u.$jN.Type.SPINNING_CIRCLE
     }) : (0, i.jsxs)(i.Fragment, {
       children: [eP, eZ && (0, i.jsxs)(i.Fragment, {
-        children: [eP.length > 0 ? (0, i.jsx)(u.$i$, {
+        children: [eP.length > 0 ? (0, i.jsx)(u.izJ, {
           className: D.divider
         }) : null, (0, i.jsx)(u.X6q, {
           variant: "heading-md/semibold",
@@ -358,7 +358,7 @@ function W(e) {
           })
         })]
       }), ea ? (0, i.jsxs)(i.Fragment, {
-        children: [eP.length > 0 || eZ ? (0, i.jsx)(u.$i$, {
+        children: [eP.length > 0 || eZ ? (0, i.jsx)(u.izJ, {
           className: D.divider
         }) : null, (0, i.jsx)(u.X6q, {
           variant: "heading-md/semibold",

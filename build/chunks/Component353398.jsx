@@ -98,7 +98,7 @@ function w() {
         className: Chunk197571.marginBottom20,
         type: Chunk481060.geA.DESCRIPTION,
         children: Chunk388032.intl.format(Chunk388032.t.c0m8bG, {})
-      }), (0, Chunk951288.jsx)(D, {}), (0, Chunk951288.jsx)(Chunk481060.$i$, {
+      }), (0, Chunk951288.jsx)(D, {}), (0, Chunk951288.jsx)(Chunk481060.izJ, {
         className: Chunk86477.divider
       }), (0, Chunk951288.jsx)(R, {})]
     })

@@ -228,7 +228,7 @@ let Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
         return (0, r.jsxs)(r.Fragment, {
           children: [i ? (0, r.jsx)("div", {
             className: G.divider,
-            children: (0, r.jsx)(l.$i$, {})
+            children: (0, r.jsx)(l.izJ, {})
           }) : null, (0, r.jsx)(b.Z, {
             className: G.packHeader,
             "aria-label": U.intl.string(U.t.wbfJFh),

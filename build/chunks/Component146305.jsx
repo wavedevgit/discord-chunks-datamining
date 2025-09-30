@@ -151,7 +151,7 @@ let e_ = {
         return {
           section: ef.pNK.BOOST_PERKS, impressionName: i.ImpressionNames.GUILD_SETTINGS_BOOST_PERKS, label: ex.intl.string(ex.t.UKgg5O), ariaLabel: ex.intl.string(ex.t.UKgg5O), element: X.I, notice: {
             stores: [T.Z, q.Z],
-            element: Q.C
+            element: J.C
           }
         };
       case ef.pNK.INVITES:
@@ -177,7 +177,7 @@ let e_ = {
         };
       case ef.pNK.SOUNDBOARD:
         return {
-          section: ef.pNK.SOUNDBOARD, impressionName: i.ImpressionNames.GUILD_SETTINGS_SOUNDBOARD, label: ex.intl.string(ex.t.OWQNYm), ariaLabel: ex.intl.string(ex.t.OWQNYm), element: J.Z, predicate: () => t.canManageGuildExpressions
+          section: ef.pNK.SOUNDBOARD, impressionName: i.ImpressionNames.GUILD_SETTINGS_SOUNDBOARD, label: ex.intl.string(ex.t.OWQNYm), ariaLabel: ex.intl.string(ex.t.OWQNYm), element: Q.Z, predicate: () => t.canManageGuildExpressions
         };
       case ef.pNK.GUILD_TEMPLATES:
         return {

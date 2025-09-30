@@ -109,12 +109,12 @@ function y(e) {
         align: "center"
       }
     }) : null,
-    F = (0, s.Wu)([m.Z], () => {
+    z = (0, s.Wu)([m.Z], () => {
       var e;
       return null != I && null != k && null != (e = m.Z.getApplicationEntitlementsForGuild(I.application.id, k)) ? e : []
     }),
-    z = (0, p.LD)(k, true),
-    q = (null == I ? true : I.application) != null && Object.keys(null != (l = null == (n = z.result) || null == (t = n.sections[I.application.id]) ? true : t.commands) ? l : {}).length > 0,
+    F = (0, p.LD)(k, true),
+    q = (null == I ? true : I.application) != null && Object.keys(null != (l = null == (n = F.result) || null == (t = n.sections[I.application.id]) ? true : t.commands) ? l : {}).length > 0,
     K = (0, i.jsxs)(d.Kqy, {
       direction: "horizontal",
       align: "center",
@@ -126,7 +126,7 @@ function y(e) {
         iconClassName: N,
         iconWrapperClassName: w,
         details: S,
-        isPremium: F.length > 0,
+        isPremium: z.length > 0,
         children: function(e, t) {
           var n, r;
           if (null == e) return null;

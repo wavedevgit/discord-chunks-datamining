@@ -139,7 +139,7 @@ function D() {
       children: [(0, Chunk951288.jsx)(Chunk494620.Z, {
         look: Chunk494620.z.WARNING,
         children: Chunk388032.intl.string(Chunk388032.t.j7S6IS)
-      }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
+      }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
         className: Chunk692278.infoBoxDivider
       })]
     }), (0, Chunk951288.jsx)(Chunk921801.F, {

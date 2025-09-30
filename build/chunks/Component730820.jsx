@@ -229,7 +229,7 @@ class U extends Chunk647438.PureComponent {
             onClick: this.generateBackupCodes,
             text: Chunk388032.intl.string(Chunk388032.t.RIThUl)
           })
-        }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
+        }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
           className: Chunk197571.marginTop20
         })]
       })

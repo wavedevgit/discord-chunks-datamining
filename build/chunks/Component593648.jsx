@@ -304,7 +304,7 @@ function et() {
           },
           hideBorder: true,
           children: Chunk388032.intl.string(Chunk388032.t.u6dc5O)
-        }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
+        }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
           className: o()(Chunk197571.marginTop20, Chunk197571.marginBottom40)
         })]
       }), (0, Chunk951288.jsxs)(Chunk921801.F, {
@@ -320,11 +320,11 @@ function et() {
           },
           hideBorder: true,
           children: Chunk388032.intl.string(Chunk388032.t.P8MG6u)
-        }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
+        }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
           className: o()(Chunk197571.marginTop20, Chunk197571.marginBottom40)
         })]
       })]
-    }) : null, null != exports ? null : (0, Chunk951288.jsx)(Chunk481060.$i$, {
+    }) : null, null != exports ? null : (0, Chunk951288.jsx)(Chunk481060.izJ, {
       className: o()(Chunk197571.marginTop20, Chunk197571.marginBottom40)
     })]
   })
@@ -395,7 +395,7 @@ class en extends Chunk647438.PureComponent {
           value: exports,
           onChange: Chunk695346.CM.updateSetting,
           options: Chunk292556
-        }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
+        }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
           className: o()(Chunk197571.marginTop40, Chunk197571.marginBottom40)
         })]
       }), this.renderTTS(), (0, Chunk951288.jsx)(et, {}), (0, Chunk951288.jsx)(ee, {
@@ -430,7 +430,7 @@ class en extends Chunk647438.PureComponent {
           options: e,
           onChange: this.handleTTSChange,
           value: this.props.ttsType
-        }), (0, r.jsx)(f.$i$, {
+        }), (0, r.jsx)(f.izJ, {
           className: o()(K.marginTop40, K.marginBottom40)
         })]
       })
@@ -549,7 +549,7 @@ function ea() {
             })
           })]
         })
-      }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
+      }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
         className: o()(Chunk197571.marginTop40, Chunk197571.marginBottom40)
       })]
     })]
@@ -618,7 +618,7 @@ function ec() {
         value: e
       }),
       value: module
-    }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
+    }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
       className: o()(Chunk197571.marginTop40, Chunk197571.marginBottom40)
     })]
   }) : null

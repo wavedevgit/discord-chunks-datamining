@@ -2,7 +2,7 @@
 /** chunk id: 374347, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => m
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,11 +17,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk657254 = require("./657254.js");
 
-function p() {
+function m() {
   let e = (0, Chunk442837.e7)([Chunk277053.Z], () => Chunk277053.Z.advancedMode),
     [t] = Chunk647438.useState(new Chunk748780.Z.Value(+!!module));
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-    children: [(0, Chunk951288.jsx)(Chunk481060.$i$, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.izJ, {
       className: Chunk657254.advancedModeDivider
     }), (0, Chunk951288.jsx)(Chunk481060.y5t, {
       component: (0, Chunk951288.jsx)(Chunk755721.zx, {

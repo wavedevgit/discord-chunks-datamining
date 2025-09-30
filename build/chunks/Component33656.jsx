@@ -97,7 +97,7 @@ function y() {
         }), (0, Chunk951288.jsx)(Chunk481060.R94, {
           type: Chunk481060.geA.DESCRIPTION,
           children: Chunk388032.intl.string(Chunk388032.t.iYjQ8f)
-        }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
+        }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
           className: o()(Chunk197571.marginTop40, Chunk197571.marginBottom40)
         })]
       })]

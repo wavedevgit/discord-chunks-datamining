@@ -38,7 +38,7 @@ function u(e) {
     children: [b.map((e, t) => (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(o.Z, {
         node: e
-      }), (t !== b.length - 1 || p.length > 0) && (0, r.jsx)(l.$i$, {})]
+      }), (t !== b.length - 1 || p.length > 0) && (0, r.jsx)(l.izJ, {})]
     }, e.key)), p.length > 0 && (0, r.jsx)(s.I, {
       title: T,
       isOpen: c,
@@ -47,7 +47,7 @@ function u(e) {
       children: p.map((e, t) => (0, r.jsxs)(i.Fragment, {
         children: [(0, r.jsx)(o.Z, {
           node: e
-        }), t !== p.length - 1 && (0, r.jsx)(l.$i$, {})]
+        }), t !== p.length - 1 && (0, r.jsx)(l.izJ, {})]
       }, e.key))
     })]
   })

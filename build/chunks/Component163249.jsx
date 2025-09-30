@@ -206,7 +206,7 @@ function b(e) {
             loading: s
           })
         })]
-      }), (0, r.jsx)(a.$i$, {
+      }), (0, r.jsx)(a.izJ, {
         className: p.divider
       }), (0, r.jsx)(u.Z, {
         role: n,

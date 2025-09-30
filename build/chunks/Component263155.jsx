@@ -312,7 +312,7 @@ let k = "WELCOME_CHANNEL",
               disabled: true
             })
           })]
-        }), (0, r.jsx)(m.$i$, {
+        }), (0, r.jsx)(m.izJ, {
           className: Z.divider
         }), (0, r.jsxs)("div", {
           className: Z.welcomeChannels,

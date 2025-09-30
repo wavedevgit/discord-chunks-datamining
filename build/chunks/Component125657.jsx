@@ -61,7 +61,7 @@ function j(e) {
           s = [];
         for (let e of m.VY) l.e$(r, e) ? a.push(e) : s.push(e);
         return (0, i.jsxs)(i.Fragment, {
-          children: [(0, i.jsx)(o.$i$, {
+          children: [(0, i.jsx)(o.izJ, {
             className: x.divider
           }), n.length > 0 ? (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(o.vwX, {

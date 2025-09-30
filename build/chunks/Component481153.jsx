@@ -34,7 +34,7 @@ let N = Chunk442837.ZP.connectStores([Chunk55563.Z, Chunk812206.Z, Chunk509545.Z
     sku: n,
     subscriptionPlan: null != r ? (0, _.oE)(r) : null,
     application: c.Z.getApplication(n.applicationId),
-    gifter: p.default.getUser(t.userId)
+    gifter: m.default.getUser(t.userId)
   }
 })(e => {
   let {
@@ -43,13 +43,13 @@ let N = Chunk442837.ZP.connectStores([Chunk55563.Z, Chunk812206.Z, Chunk509545.Z
     gifter: l,
     sku: o,
     application: c,
-    subscriptionPlan: p
-  } = e, m = null == l ? v.intl.string(v.t.lTGZAg) : v.intl.formatToPlainString(v.t.TjWdPT, {
+    subscriptionPlan: m
+  } = e, p = null == l ? v.intl.string(v.t.lTGZAg) : v.intl.formatToPlainString(v.t.TjWdPT, {
     username: l.username
   }), f = o.name;
-  return null != p && (f = v.intl.formatToPlainString(p.interval === E.rV.MONTH ? v.t.CTpcCQ : v.t.rgPWGx, {
+  return null != m && (f = v.intl.formatToPlainString(m.interval === E.rV.MONTH ? v.t.CTpcCQ : v.t.rgPWGx, {
     skuName: o.name,
-    intervalCount: p.intervalCount
+    intervalCount: m.intervalCount
   })), (0, r.jsxs)(i.Fragment, {
     children: [null != n.giftStyle ? (0, r.jsx)(g.Z, {
       defaultAnimationState: h.SR.LOOP,
@@ -67,7 +67,7 @@ let N = Chunk442837.ZP.connectStores([Chunk55563.Z, Chunk812206.Z, Chunk509545.Z
       })]
     }) : (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(u.DK, {
-        children: m
+        children: p
       }), (0, r.jsxs)(u.Dx, {
         className: s()(I.marginTop8, j.flexCenter),
         children: [o.productLine !== x.POd.COLLECTIBLES && (0, r.jsx)(d.Z, {

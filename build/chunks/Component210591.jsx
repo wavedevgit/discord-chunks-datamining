@@ -59,7 +59,7 @@ function f(e) {
         items: l
       } = e;
       return (0, r.jsxs)(i.Fragment, {
-        children: [t > 0 && (0, r.jsx)(c.$i$, {
+        children: [t > 0 && (0, r.jsx)(c.izJ, {
           className: g.divider
         }), (0, r.jsx)(c.vwX, {
           className: g.categoryTitle,
@@ -69,7 +69,7 @@ function f(e) {
           checked: e.completed
         }, t))]
       }, t)
-    }), (0, r.jsx)(c.$i$, {
+    }), (0, r.jsx)(c.izJ, {
       className: g.divider
     }), (0, r.jsx)(c.vwX, {
       className: g.categoryTitle,

@@ -226,7 +226,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                         })
                       })]
                     })
-                  })(), (0, Chunk951288.jsx)(Chunk481060.$i$, {
+                  })(), (0, Chunk951288.jsx)(Chunk481060.izJ, {
                     className: Chunk133190.divider
                   }), (() => {
                     if (null != Chunk852860) return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
@@ -260,7 +260,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                         children: z.category
                       }) : null]
                     })
-                  })(), (0, Chunk951288.jsx)(Chunk481060.$i$, {
+                  })(), (0, Chunk951288.jsx)(Chunk481060.izJ, {
                     className: Chunk133190.divider
                   }), (() => {
                     if (null != Chunk852860) return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
@@ -301,7 +301,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                         children: z.discovery_splash
                       }) : null]
                     })
-                  })(), (0, Chunk951288.jsx)(Chunk481060.$i$, {
+                  })(), (0, Chunk951288.jsx)(Chunk481060.izJ, {
                     className: Chunk133190.divider
                   }), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
                     children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
@@ -323,7 +323,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                       maxLength: Chunk345074.Us,
                       disabled: !R
                     })]
-                  }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
+                  }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
                     className: Chunk133190.divider
                   }), (() => {
                     if (null == Z) return null;
@@ -353,7 +353,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                         children: z.reasons_to_join
                       }) : null]
                     })
-                  })(), (0, Chunk951288.jsx)(Chunk481060.$i$, {
+                  })(), (0, Chunk951288.jsx)(Chunk481060.izJ, {
                     className: Chunk133190.divider
                   }), (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
                     children: [(0, Chunk951288.jsxs)(Chunk481060.hjN, {
@@ -382,7 +382,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                       variant: "text-sm/normal",
                       children: z.about
                     }) : null]
-                  }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
+                  }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
                     className: Chunk133190.divider
                   }), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
                     children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
@@ -469,7 +469,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                       disabled: !R || Z.socialLinks.length >= 9
                     })]
                   }), Z.isPublished && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-                    children: [(0, Chunk951288.jsx)(Chunk481060.$i$, {
+                    children: [(0, Chunk951288.jsx)(Chunk481060.izJ, {
                       className: Chunk133190.divider
                     }), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
                       children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {

@@ -189,9 +189,9 @@ let w = e => {
           Y = U - M,
           q = n(872732),
           X = B - F.length,
-          Q = W ? Math.min(5 - (F.length + 0) % 5, X) : 0,
-          J = [];
-        for (let e = 0; e < Q; e++) J.push((0, r.jsx)(R, {}, "placeholder-".concat(e)));
+          J = W ? Math.min(5 - (F.length + 0) % 5, X) : 0,
+          Q = [];
+        for (let e = 0; e < J; e++) Q.push((0, r.jsx)(R, {}, "placeholder-".concat(e)));
         let $ = t.premiumTier < b.tier && Z >= E.oCV[b.tier],
           ee = S.intl.string(S.t.dtFw5e),
           et = () => {
@@ -246,7 +246,7 @@ let w = e => {
               isDisabled: z,
               sticker: e,
               canManageSticker: w(e)
-            }, e.id)), J]
+            }, e.id)), Q]
           }), !z && !W && 0 === F.length && (0, r.jsx)("div", {
             className: s()(T.emptyTierWrapper, T.unusedTierWrapper),
             children: (0, r.jsx)(c.Text, {

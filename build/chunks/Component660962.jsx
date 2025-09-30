@@ -213,7 +213,7 @@ function X() {
   })
 }
 
-function Q(e) {
+function J(e) {
   var t, n;
   let {
     role: i,
@@ -251,7 +251,7 @@ function Q(e) {
   })
 }
 
-function J(e) {
+function Q(e) {
   let {
     role: t,
     guildId: n,
@@ -315,7 +315,7 @@ function $(e) {
       onChange: e => (0, S.we)(t.id, e, t.mentionable),
       hideBorder: true,
       children: U.intl.string(U.t.vceJPj)
-    }), (0, r.jsx)(g.$i$, {
+    }), (0, r.jsx)(g.izJ, {
       className: F.divider
     }), (0, r.jsx)(g.j7V, {
       disabled: n,
@@ -368,7 +368,7 @@ function ee(e) {
         children: (0, r.jsx)(A.Z, {
           role: n
         })
-      }), (0, r.jsx)(g.$i$, {
+      }), (0, r.jsx)(g.izJ, {
         className: F.divider
       }), (a || c) && null != u && (0, r.jsx)(q, {
         role: n,
@@ -376,7 +376,7 @@ function ee(e) {
         selectedStyle: u,
         disabled: p,
         shouldShowUpsell: c
-      }), u !== T.g.HOLOGRAPHIC && null != u && (0, r.jsx)(Q, {
+      }), u !== T.g.HOLOGRAPHIC && null != u && (0, r.jsx)(J, {
         role: n,
         disabled: p,
         currentStyle: u,
@@ -391,18 +391,18 @@ function ee(e) {
         guild: t,
         disabled: p,
         role: n
-      }), (0, r.jsx)(J, {
+      }), (0, r.jsx)(Q, {
         role: n,
         guildId: t.id,
         selectedStyle: u,
         disableInteraction: !a
-      }), (0, r.jsx)(g.$i$, {
+      }), (0, r.jsx)(g.izJ, {
         className: F.divider
       }), (0, r.jsx)($, {
         role: n,
         disabled: p
       }), f ? (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(g.$i$, {
+        children: [(0, r.jsx)(g.izJ, {
           className: F.divider
         }), (0, r.jsx)(Z.L, {
           guildId: t.id,

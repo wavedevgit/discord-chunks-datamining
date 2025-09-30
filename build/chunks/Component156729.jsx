@@ -223,7 +223,7 @@ class P extends(r = Chunk647438.PureComponent) {
             variant: "text-sm/normal",
             children: Chunk388032.intl.string(Chunk388032.t.nag9Oj)
           })
-        }), (0, Chunk951288.jsx)(Chunk481060.$i$, {}), this.renderActions()]
+        }), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), this.renderActions()]
       })
     })
   }

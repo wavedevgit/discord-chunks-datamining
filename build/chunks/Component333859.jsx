@@ -71,7 +71,7 @@ let O = () => {
       children: [(0, Chunk951288.jsx)(Chunk539873.Z, {
         disabled: exports,
         renderCTAButtons: Chunk550385
-      }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
+      }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
         className: Chunk980676.divider
       })]
     })

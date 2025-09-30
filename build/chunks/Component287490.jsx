@@ -191,7 +191,7 @@ function S(e) {
           onClick: () => v(true)
         })
       })]
-    }), (0, r.jsx)(l.$i$, {
+    }), (0, r.jsx)(l.izJ, {
       className: O.divider
     })]
   })
@@ -304,7 +304,7 @@ function A(e) {
           onClick: () => p(true)
         })
       })]
-    }), (0, r.jsx)(l.$i$, {
+    }), (0, r.jsx)(l.izJ, {
       className: O.divider
     })]
   }) : (0, r.jsx)("div", {

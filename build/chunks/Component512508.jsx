@@ -356,7 +356,7 @@ function k(e) {
             } = e;
             return 0 === t ? 0 === q[1] && q[0] > 0 ? null : (0, r.jsx)("div", {
               className: H.sectionFooter,
-              children: (0, r.jsx)(u.$i$, {})
+              children: (0, r.jsx)(u.izJ, {})
             }) : null
           },
           sectionHeight: 24,

@@ -98,7 +98,7 @@ class k extends Chunk647438.PureComponent {
           canDeleteChannels: a,
           canManageWebhooks: d,
           canUnlinkChannel: h
-        } = e, f = (0, m.KS)(t), {
+        } = e, f = (0, p.KS)(t), {
           GUILD_CATEGORY: b
         } = A.d4z, x = v.Ec.has(t.type), j = t.type === b ? L.intl.string(L.t.ifbXnJ) : x ? t.isForumPost() ? L.intl.string(L.t.nEOg1N) : L.intl.string(L.t.H7vTe3) : L.intl.string(L.t["8D8Rsb"]);
         return [{
@@ -130,7 +130,7 @@ class k extends Chunk647438.PureComponent {
         }, {
           section: A.CoT.PERMISSIONS,
           label: L.intl.string(L.t.xrmhRU),
-          element: p.Z,
+          element: m.Z,
           notice: {
             element: P.n,
             stores: [C.Z]
@@ -199,7 +199,7 @@ function B() {
     canManageRoles: null != module && Chunk496675.Z.can(Chunk981631.Plq.MANAGE_ROLES, module),
     canManageWebhooks: null != module && Chunk496675.Z.can(Chunk981631.Plq.MANAGE_WEBHOOKS, module),
     canUnlinkChannel: (0, Chunk685929.C)(module, Chunk496675.Z)
-  })), m = (0, Chunk442837.e7)([Chunk592125.Z], () => Chunk592125.Z.getChannel(null == module ? true : module.parent_id));
+  })), p = (0, Chunk442837.e7)([Chunk592125.Z], () => Chunk592125.Z.getChannel(null == module ? true : module.parent_id));
   return (0, Chunk951288.jsx)(k, {
     channel: module,
     category: Chunk471445,

@@ -56,7 +56,7 @@ function T(e) {
         onSubmit: e => e.preventDefault(),
         children: [(0, r.jsx)(E.Z, {}), (0, r.jsx)(b.Z, {})]
       })
-    }), C && (0, r.jsx)(s.$i$, {}), (0, r.jsxs)(s.hjN, {
+    }), C && (0, r.jsx)(s.izJ, {}), (0, r.jsxs)(s.hjN, {
       className: n || C ? I.marginTop20 : t,
       children: [(0, r.jsx)(s.j7V, {
         hideBorder: true,

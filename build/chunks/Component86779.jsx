@@ -44,7 +44,7 @@ let b = "mweb_handoff_nonce",
       })
     }, [Chunk70956, module]);
     let [C, A] = Chunk647438.useState(null), T = Chunk647438.useCallback(e => {
-      A(e), m.default.track(x.rMx.MOBILE_WEB_HANDOFF_FAILURE, {
+      A(e), p.default.track(x.rMx.MOBILE_WEB_HANDOFF_FAILURE, {
         reason: e,
         fingerprint: (0, s.K)(y)
       }, {

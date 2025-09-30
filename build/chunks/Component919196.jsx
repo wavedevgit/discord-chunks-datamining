@@ -157,7 +157,7 @@ function w(e) {
       application: P,
       canNavigate: I,
       guildId: n.id
-    }) : null, (0, i.jsx)(o.$i$, {
+    }) : null, (0, i.jsx)(o.izJ, {
       className: _.headerDivider
     }), null != P.bot ? (0, i.jsxs)("div", {
       className: _.section,
@@ -191,7 +191,7 @@ function w(e) {
           children: A ? O.intl.string(O.t.ahPd2d) : O.intl.string(O.t.axqYMj)
         })
       })]
-    }), (0, i.jsx)(o.$i$, {
+    }), (0, i.jsx)(o.izJ, {
       className: _.headerDivider
     }), (0, i.jsxs)(c.Z, {
       className: _.section,

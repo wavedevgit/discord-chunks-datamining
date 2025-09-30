@@ -71,7 +71,7 @@ function j(e) {
         helpdeskArticle: p.Z.getArticleURL(b.BhN.WEBHOOKS),
         developersArticle: b.EYA.API_DOCS_WEBHOOKS
       })
-    }), (0, i.jsx)(a.$i$, {
+    }), (0, i.jsx)(a.izJ, {
       className: f.headerDivider
     }), v.length > 0 ? (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)("div", {

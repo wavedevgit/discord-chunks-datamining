@@ -104,7 +104,7 @@ function f(e) {
   let C = null;
   return x && null != f && (C = (0, i.jsxs)("div", {
     className: g.body,
-    children: [(0, i.jsx)(a.$i$, {
+    children: [(0, i.jsx)(a.izJ, {
       className: g.topDivider
     }), (0, i.jsxs)(a.Kqy, {
       gap: 24,
@@ -137,7 +137,7 @@ function f(e) {
             }
           })
         })]
-      }), (0, i.jsx)(a.$i$, {
+      }), (0, i.jsx)(a.izJ, {
         className: g.bottomDivider
       }), (0, i.jsx)(l.Avr, {
         onClick: O,

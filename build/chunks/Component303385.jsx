@@ -15,7 +15,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk46140 = require("./46140.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk895758 = require("./895758.js");
-let g = (0, Chunk488290.animated)(Chunk481060.$i$),
+let g = (0, Chunk488290.animated)(Chunk481060.izJ),
   f = e => {
     let {
       quest: t,

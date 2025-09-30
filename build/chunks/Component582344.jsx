@@ -42,7 +42,7 @@ function h() {
             color: "text-secondary",
             children: "Daily Cap Reached: ".concat(module ? "Yes" : "No")
           })]
-        }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
+        }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
           className: Chunk455698.divider
         }), (0, Chunk951288.jsx)(Chunk481060.j7V, {
           value: exports,

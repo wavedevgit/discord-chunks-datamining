@@ -125,7 +125,7 @@ function es(e) {
       children: (0, r.jsx)(ec, {})
     }) : null, (0, r.jsxs)(w.F, {
       setting: V.s6.ACCESSIBILITY_SATURATION,
-      children: [(0, r.jsx)(eu, {}), (0, r.jsx)(_.$i$, {})]
+      children: [(0, r.jsx)(eu, {}), (0, r.jsx)(_.izJ, {})]
     }), (0, r.jsx)(w.F, {
       setting: V.s6.ACCESSIBILITY_LINK_DECORATIONS,
       children: (0, r.jsx)(ed, {})
@@ -155,7 +155,7 @@ function es(e) {
       children: (0, r.jsx)(eb, {})
     }), (0, r.jsx)(ey, {}), (0, r.jsxs)(w.F, {
       setting: V.s6.ACCESSIBILITY_APPEARANCE_UPSELL,
-      children: [(0, r.jsx)(_.$i$, {
+      children: [(0, r.jsx)(_.izJ, {
         className: X.marginTop20
       }), (0, r.jsx)(_.Text, {
         className: X.marginTop20,
@@ -351,7 +351,7 @@ function e_() {
       }],
       onChange: exports,
       value: module
-    }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
+    }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
       className: Chunk197571.marginTop20
     })]
   })

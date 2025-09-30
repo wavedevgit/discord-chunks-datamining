@@ -119,7 +119,7 @@ class E extends Chunk647438.PureComponent {
             className: Chunk499126.defaultLocationCheckbox,
             onChange: this.handleToggleDefault,
             children: Chunk388032.intl.string(Chunk388032.t.Z2MWuL)
-          }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
+          }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
             className: Chunk499126.separator
           }), (0, Chunk951288.jsxs)(Chunk600164.Z, {
             children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {

@@ -124,7 +124,7 @@ function Z(e) {
         i = null != e ? e.name : "role"
       }
     }(0, O._)(n, i)
-  }, [j, Z]), F = r.useCallback((e, n) => {
+  }, [j, Z]), z = r.useCallback((e, n) => {
     let i = {};
     for (let [e, t] of Object.entries(Z)) i[e] = {
       id: t.id,
@@ -133,14 +133,14 @@ function Z(e) {
     };
     if (i = Object.assign(i, e), n.length > 0 && (i = a().omit(i, n)), !H(i)) return void G(e, n);
     h.W4(t, B, i)
-  }, [t, Z, B, H, G]), z = r.useCallback(() => {
+  }, [t, Z, B, H, G]), F = r.useCallback(() => {
     let e = Object.keys(U);
     return (0, c.ZDy)(async () => {
       let {
         default: t
       } = await n.e("64908").then(n.bind(n, 557944));
       return n => (0, i.jsx)(t, I({
-        editPermissions: F,
+        editPermissions: z,
         guildId: j,
         headerText: w.intl.string(w.t["i1c+kZ"]),
         hasMemberSearch: false,
@@ -150,14 +150,14 @@ function Z(e) {
         selectedPermissionCount: D
       }, n))
     })
-  }, [F, U, j, D]), q = r.useCallback(() => {
+  }, [z, U, j, D]), q = r.useCallback(() => {
     let e = Object.keys(W);
     return (0, c.ZDy)(async () => {
       let {
         default: t
       } = await n.e("64908").then(n.bind(n, 557944));
       return n => (0, i.jsx)(t, I({
-        editPermissions: F,
+        editPermissions: z,
         guildId: j,
         hasMemberSearch: true,
         headerText: w.intl.string(w.t["56jRn5"]),
@@ -167,21 +167,21 @@ function Z(e) {
         selectedPermissionCount: D
       }, n))
     })
-  }, [F, j, W, D]), K = r.useCallback(() => (0, c.ZDy)(async () => {
+  }, [z, j, W, D]), K = r.useCallback(() => (0, c.ZDy)(async () => {
     let {
       default: e
     } = await n.e("21897").then(n.bind(n, 303313)), t = R.defaultMemberPermissions;
     return o.fS(t, u.BO) && (t = C.Plq.ADMINISTRATOR), n => (0, i.jsx)(e, P(I({}, n), {
       defaultMemberPermissions: t
     }))
-  }), [R]), V = D - N._n, Y = V >= 0, $ = [{
+  }), [R]), V = D - N._n, J = V >= 0, Y = [{
     buttonClick: q,
     buttonText: w.intl.string(w.t["56jRn5"]),
     noneSelectedText: w.intl.string(w.t.C0rYfn),
     overwrites: W,
     title: null == l ? w.intl.string(w.t["vPWe+/"]) : w.intl.string(w.t["1jLVGB"])
   }, {
-    buttonClick: z,
+    buttonClick: F,
     buttonText: w.intl.string(w.t["i1c+kZ"]),
     noneSelectedText: w.intl.string(w.t.UBJhCw),
     overwrites: U,
@@ -208,16 +208,16 @@ function Z(e) {
         onClick: K,
         text: w.intl.string(w.t["HO/oXl"])
       })]
-    }) : null, $.map((e, t) => {
+    }) : null, Y.map((e, t) => {
       let n = null;
-      return M ? Y && (n = w.intl.string(w.t.XTwtW1)) : n = null != l ? w.intl.string(w.t.tybdam) : w.intl.string(w.t.z2hjk5), (0, i.jsx)(_.Z, {
+      return M ? J && (n = w.intl.string(w.t.XTwtW1)) : n = null != l ? w.intl.string(w.t.tybdam) : w.intl.string(w.t.z2hjk5), (0, i.jsx)(_.Z, {
         bar: (0, i.jsx)(c.ua7, {
           tooltipClassName: S.tooltip,
           text: n,
           shouldShow: null != n,
           children: t => (0, i.jsx)(c.zxk, P(I({}, t), {
             variant: "secondary",
-            disabled: Y || !M,
+            disabled: J || !M,
             onClick: e.buttonClick,
             size: "sm",
             text: e.buttonText
@@ -232,7 +232,7 @@ function Z(e) {
             commandId: l,
             noneSelectedText: e.noneSelectedText,
             overwrites: e.overwrites,
-            editPermissions: F,
+            editPermissions: z,
             hasAccessToMutatePermissions: M
           })
         })

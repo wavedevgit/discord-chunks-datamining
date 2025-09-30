@@ -284,7 +284,7 @@ class U extends Chunk647438.PureComponent {
           className: Chunk912864.formTitle,
           children: Chunk388032.intl.string(Chunk388032.t.SPWLyc)
         }), this.renderHeaderDropdowns()]
-      }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
+      }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
         className: Chunk912864.divider
       })]
     })

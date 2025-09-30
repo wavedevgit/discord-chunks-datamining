@@ -140,7 +140,7 @@ function U() {
             value: exports,
             onChange: e => s(e)
           })]
-        }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
+        }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
           className: o()(Chunk197571.marginBottom20, Chunk197571.marginTop20)
         })]
       }) : (0, Chunk951288.jsx)(Chunk481060.j7V, {

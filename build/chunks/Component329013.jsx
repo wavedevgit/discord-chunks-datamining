@@ -132,7 +132,7 @@ let j = () => {
         children: [(0, Chunk951288.jsx)(Chunk705262.ZP.Basic, {
           className: Chunk505575.basicThemeSelectors
         }), (0, Chunk951288.jsx)(k, {}), Chunk550385 && (0, Chunk951288.jsx)(Chunk607270.Z, {}), Chunk210887]
-      }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
+      }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
         className: Chunk505575.divider
       })]
     })

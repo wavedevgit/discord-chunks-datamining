@@ -36,7 +36,7 @@ function x(e) {
       src: null == N ? n(26230) : n(935227),
       className: s()(_.marginBottom20, _.marginTop8)
     }), (0, r.jsx)(u.Dx, {
-      children: m.intl.string(m.t["IfBQ5+"])
+      children: p.intl.string(p.t["IfBQ5+"])
     }), null != N && "" !== N ? (0, r.jsx)(a.Text, {
       variant: "text-sm/normal",
       color: "text-danger",
@@ -46,7 +46,7 @@ function x(e) {
       children: [(0, r.jsx)(u.II, {
         name: "password",
         type: "password",
-        label: m.intl.string(m.t["8dM4FB"]),
+        label: p.intl.string(p.t["8dM4FB"]),
         setRef: C,
         className: _.marginBottom20,
         value: S,
@@ -54,17 +54,17 @@ function x(e) {
         error: j,
         autoComplete: "new-password",
         maxLength: 72,
-        placeholder: m.intl.string(m.t["yY/PXV"])
+        placeholder: p.intl.string(p.t["yY/PXV"])
       }), (0, r.jsx)(u.zx, {
         className: _.marginTop8,
         onClick: () => {
           if (!v) {
             if (0 === S.length) {
-              I(m.intl.string(m.t.R98xDw)), d.S.dispatch(p.CkL.WAVE_EMPHASIZE);
+              I(p.intl.string(p.t.R98xDw)), d.S.dispatch(m.CkL.WAVE_EMPHASIZE);
               return
             }
             return null != N && O(null), null != j && I(null), t(""), b(true), h.Z.post({
-              url: p.ANM.ACCOUNT_REVERT,
+              url: m.ANM.ACCOUNT_REVERT,
               body: {
                 token: E,
                 password: S
@@ -81,27 +81,27 @@ function x(e) {
               } = e;
               y(""), t(n), l(g.n.SUCCESS)
             }).catch(e => {
-              if (e instanceof Error) O(m.intl.formatToPlainString(m.t.aTVNen, {
-                statusPageURL: p.yXt.STATUS
+              if (e instanceof Error) O(p.intl.formatToPlainString(p.t.aTVNen, {
+                statusPageURL: m.yXt.STATUS
               }));
               else {
                 let t = new c.Z(e);
                 t.hasFieldErrors() ? I(t.getAnyErrorMessage()) : O((function(e) {
                   switch (e) {
-                    case p.evJ.ACCOUNT_REVERT_INVALID_TOKEN:
-                      return m.intl.string(m.t["11zzGR"]);
-                    case p.evJ.ACCOUNT_REVERT_EMAIL_ALREADY_TAKEN:
-                      return m.intl.string(m.t["6qmgaG"]);
-                    case p.evJ.ACCOUNT_REVERT_ACCOUNT_NOT_FOUND:
-                      return m.intl.string(m.t.bChnKi);
+                    case m.evJ.ACCOUNT_REVERT_INVALID_TOKEN:
+                      return p.intl.string(p.t["11zzGR"]);
+                    case m.evJ.ACCOUNT_REVERT_EMAIL_ALREADY_TAKEN:
+                      return p.intl.string(p.t["6qmgaG"]);
+                    case m.evJ.ACCOUNT_REVERT_ACCOUNT_NOT_FOUND:
+                      return p.intl.string(p.t.bChnKi);
                     default:
-                      return m.intl.format(m.t.aTVNen, {
-                        statusPageURL: p.yXt.STATUS
+                      return p.intl.format(p.t.aTVNen, {
+                        statusPageURL: m.yXt.STATUS
                       })
                   }
                 })(t.code).toString())
               }
-              d.S.dispatch(p.CkL.WAVE_EMPHASIZE)
+              d.S.dispatch(m.CkL.WAVE_EMPHASIZE)
             }).finally(() => {
               b(false)
             })
@@ -109,7 +109,7 @@ function x(e) {
         },
         submitting: v,
         disabled: v,
-        children: m.intl.string(m.t.ezv91d)
+        children: p.intl.string(p.t.ezv91d)
       })]
     }), (0, r.jsx)("div", {
       className: f.buttonContainer,
@@ -118,7 +118,7 @@ function x(e) {
         onClick: () => {
           y(""), l(g.n.START)
         },
-        children: m.intl.string(m.t.rzxnQ0)
+        children: p.intl.string(p.t.rzxnQ0)
       })
     })]
   })

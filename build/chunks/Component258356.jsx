@@ -1,7 +1,7 @@
 /** Chunk was on 27978 **/
 /** chunk id: 258356, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  X: () => m,
+  X: () => p,
   Z: () => f
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js");
@@ -17,7 +17,7 @@ var Chunk755721 = require("./755721.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk694527 = require("./694527.js");
 
-function p(e) {
+function m(e) {
   var t;
   let {
     guildScheduledEvent: n,
@@ -51,7 +51,7 @@ function p(e) {
   })
 }
 
-function m(e) {
+function p(e) {
   var t;
   let {
     invite: n
@@ -108,7 +108,7 @@ function f(e) {
   } = e, {
     guild_scheduled_event: s
   } = t;
-  return null != s ? (0, r.jsx)(p, {
+  return null != s ? (0, r.jsx)(m, {
     guildScheduledEvent: s,
     channel: n,
     isSubmitting: i,

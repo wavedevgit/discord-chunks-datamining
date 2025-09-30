@@ -99,7 +99,7 @@ let C = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
             disabled: B
           })
         })]
-      }), (0, r.jsx)(u.$i$, {
+      }), (0, r.jsx)(u.izJ, {
         className: y.divider
       }), (0, r.jsxs)(u.xJW, {
         title: O.intl.string(O.t.W39uIC),
@@ -129,7 +129,7 @@ let C = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
             disabled: B
           })]
         })]
-      }), (0, r.jsx)(u.$i$, {
+      }), (0, r.jsx)(u.izJ, {
         className: y.divider
       }), (0, r.jsx)(u.xJW, {
         disabled: B,
@@ -143,7 +143,7 @@ let C = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
           trailing: D && U ? u.owK : true,
           disabled: B
         })
-      }), (0, r.jsx)(u.$i$, {
+      }), (0, r.jsx)(u.izJ, {
         className: y.divider
       }), (0, r.jsxs)(u.xJW, {
         title: O.intl.string(O.t.AU2HU1),

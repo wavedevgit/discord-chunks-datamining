@@ -32,7 +32,7 @@ function v(e) {
       children: t
     } = e;
     return (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(s.$i$, {
+      children: [(0, r.jsx)(s.izJ, {
         className: j.sectionDivider
       }), t]
     })

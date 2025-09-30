@@ -148,10 +148,10 @@ function k(e) {
     setFilename: K
   } = (0, N.Z)(null == a ? true : a.cover_image_asset), Y = (0, b.Dt)(), q = (0, b.Dt)(), X = (0, b.Dt)();
 
-  function Q(e, t) {
+  function J(e, t) {
     o()(null != e, "Null value not allowed"), null != t && K(t.name), k(e)
   }
-  let J = i.useMemo(() => {
+  let Q = i.useMemo(() => {
       var e;
       return null != x && x !== (null != (e = null == a ? true : a.description) ? e : "") || (null == A ? true : A.startsWith("data:")) === true || m !== s || (null == a ? true : a.store_page_guild_products_default_sort) !== G || (null == a ? true : a.server_shop_tab_order) !== U
     }, [A, s, x, a, m, G, U]),
@@ -206,7 +206,7 @@ function k(e) {
           "aria-labelledby": Y,
           disabled: ee
         })]
-      }), (0, r.jsx)(p.$i$, {
+      }), (0, r.jsx)(p.izJ, {
         className: w.divider
       })]
     }), (0, r.jsx)(p.hjN, {
@@ -222,7 +222,7 @@ function k(e) {
         "aria-labelledby": q,
         disabled: ee
       })
-    }), (0, r.jsx)(p.$i$, {
+    }), (0, r.jsx)(p.izJ, {
       className: w.divider
     }), (0, r.jsxs)(p.hjN, {
       title: P.intl.string(P.t["0kpTpK"]),
@@ -242,13 +242,13 @@ function k(e) {
         iconWrapperClassName: w.coverImageUploaderIconWrapper,
         imageClassName: w.coverImageUploaderInner,
         iconClassName: w.coverImageUploaderIcon,
-        onChange: Q,
+        onChange: J,
         "aria-label": W,
         disabled: ee
       }), (0, r.jsx)(p.LZC, {
         size: 16
       }), (0, r.jsx)(j.Z, {
-        onChange: Q,
+        onChange: J,
         "aria-label": W,
         disabled: ee,
         text: V,
@@ -256,7 +256,7 @@ function k(e) {
         size: "md"
       })]
     }), l ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(p.$i$, {
+      children: [(0, r.jsx)(p.izJ, {
         className: w.divider
       }), (0, r.jsxs)(p.hjN, {
         title: P.intl.string(P.t.aaZ9pK),
@@ -275,7 +275,7 @@ function k(e) {
         })]
       })]
     }) : null, en.length > 0 && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(p.$i$, {
+      children: [(0, r.jsx)(p.izJ, {
         className: w.divider
       }), (0, r.jsxs)(p.hjN, {
         title: P.intl.string(P.t["+dtmw8"]),
@@ -296,7 +296,7 @@ function k(e) {
     }), (0, r.jsx)(u.W, {
       component: "div",
       className: w.contentRegion,
-      children: J && (0, r.jsx)(p.oXn, {
+      children: Q && (0, r.jsx)(p.oXn, {
         children: (0, r.jsx)(f.Z, {
           submitting: F,
           disabled: !$,

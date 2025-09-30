@@ -2,13 +2,12 @@
 /** chunk id: 275846, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  i: () => m
+  i: () => h
 }), require("./781311.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk49800 = require("./49800.jsx"),
   Chunk481060 = require("./481060.js"),
-  Chunk770102 = require("./770102.jsx"),
   Chunk434333 = require("./434333.jsx"),
   Chunk540863 = require("./540863.jsx"),
   Chunk383838 = require("./383838.jsx"),
@@ -16,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk471141 = require("./471141.jsx"),
   Chunk512983 = require("./512983.jsx"),
   Chunk231338 = require("./231338.js");
-let h = {
+let p = {
     id: "formnotice",
     name: "FormNotice",
     component: function(e) {
@@ -28,7 +27,7 @@ let h = {
       } = e, s = a ? (0, r.jsx)(o.zxk, {
         text: "Action"
       }) : true;
-      return (0, r.jsx)(u.To, {
+      return (0, r.jsx)(c.To, {
         type: t,
         title: n,
         body: i,
@@ -77,9 +76,9 @@ let h = {
       }
     }
   },
-  m = {
+  h = {
     title: "Form Components",
-    stories: [h, {
+    stories: [p, {
       id: "formitem",
       name: "FormItem",
       component: function(e) {
@@ -89,10 +88,10 @@ let h = {
           disabled: i,
           required: a,
           tag: s
-        } = e, l = (null == n ? true : n.trim()) === "" ? true : n;
-        return (0, r.jsx)(c.x, {
+        } = e, c = (null == n ? true : n.trim()) === "" ? true : n;
+        return (0, r.jsx)(l.x, {
           title: t,
-          error: l,
+          error: c,
           disabled: i,
           required: a,
           tag: s,
@@ -179,7 +178,7 @@ let h = {
                 color: "#666"
               },
               children: [e, ":"]
-            }), (0, r.jsx)(_.v, {
+            }), (0, r.jsx)(f.v, {
               tag: e,
               disabled: n,
               required: i,
@@ -223,14 +222,14 @@ let h = {
           note: o,
           disabledText: s,
           tooltipNote: l
-        } = e, [c, u] = i.useState(false), d = e => {
+        } = e, [c, u] = i.useState(false), f = e => {
           u(e)
         };
-        return (0, r.jsx)(f.j, {
+        return (0, r.jsx)(d.j, {
           value: c,
           disabled: n,
           hideBorder: a,
-          onChange: d,
+          onChange: f,
           note: (null == o ? true : o.trim()) === "" ? true : o,
           disabledText: "" === s.trim() ? true : s,
           tooltipNote: "" === l.trim() ? true : l,
@@ -270,22 +269,6 @@ let h = {
         }
       }
     }, {
-      id: "formdivider",
-      name: "FormDivider",
-      component: function(e) {
-        let {} = e;
-        return (0, r.jsxs)("div", {
-          children: [(0, r.jsx)(o.Text, {
-            variant: "text-md/normal",
-            children: "Content above divider"
-          }), (0, r.jsx)(s.$, {}), (0, r.jsx)(o.Text, {
-            variant: "text-md/normal",
-            children: "Content below divider"
-          })]
-        })
-      },
-      controls: {}
-    }, {
       id: "formsection",
       name: "FormSection",
       component: function(e) {
@@ -294,7 +277,7 @@ let h = {
           disabled: n,
           tag: i
         } = e;
-        return (0, r.jsxs)(d.h, {
+        return (0, r.jsxs)(u.h, {
           title: t,
           disabled: n,
           tag: i,
@@ -345,11 +328,11 @@ let h = {
           backgroundColor: n,
           hasDismiss: i,
           iconType: a
-        } = e, s = "check" === a ? o.owK : o.Mgn;
-        return (0, r.jsx)(l.k, {
+        } = e, l = "check" === a ? o.owK : o.Mgn;
+        return (0, r.jsx)(s.k, {
           backgroundColor: n,
-          onDismiss: i ? p.dG : true,
-          icon: s,
+          onDismiss: i ? _.dG : true,
+          icon: l,
           children: t
         })
       },

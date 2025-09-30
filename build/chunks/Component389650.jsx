@@ -307,7 +307,7 @@ class W extends Chunk647438.PureComponent {
         keybind: t,
         keybindDescriptions: this.keybindDescriptions,
         keybindActionTypes: this.keybindActionTypes
-      }, t.id), n !== e.length - 1 ? (0, r.jsx)(f.$i$, {}) : null]
+      }, t.id), n !== e.length - 1 ? (0, r.jsx)(f.izJ, {}) : null]
     }, t.id))
   }
   renderEmpty(e) {
@@ -347,7 +347,7 @@ class W extends Chunk647438.PureComponent {
           }), (0, Chunk951288.jsx)(Chunk825655.Z, {
             className: Chunk894462.systemServiceUpsell,
             sourcePage: "keybinds"
-          }), (0, Chunk951288.jsx)(Chunk481060.$i$, {}), this.renderKeybinds(exports), this.renderEmpty(exports)]
+          }), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), this.renderKeybinds(exports), this.renderEmpty(exports)]
         }) : (0, Chunk951288.jsx)(Chunk481060.Wn, {
           messageType: Chunk481060.QYI.INFO,
           className: Chunk894462.browserNotice,
@@ -355,7 +355,7 @@ class W extends Chunk647438.PureComponent {
             downloadLink: Chunk981631.EYA.DOWNLOAD
           })
         })
-      }), (0, Chunk951288.jsx)(Chunk481060.$i$, {}), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
+      }), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
         tag: Chunk481060.RB0.H1,
         title: Chunk388032.intl.string(Chunk388032.t.Lz5KHB),
         className: Chunk197571.marginTop60,
@@ -370,7 +370,7 @@ class W extends Chunk647438.PureComponent {
               shortcut: Chunk721383._.binds["0"]
             })
           })]
-        }), (0, Chunk951288.jsx)(Chunk481060.$i$, {}), (0, Chunk951288.jsx)(V, {
+        }), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsx)(V, {
           children: e => (0, r.jsx)(r.Fragment, {
             children: e.map((e, t) => {
               let n = (0, g.UD)(e),
@@ -389,7 +389,7 @@ class W extends Chunk647438.PureComponent {
                   className: M.defaultKeybindGroupDescription,
                   variant: "text-sm/normal",
                   children: a
-                }), (0, r.jsx)(f.$i$, {}), s.map(e => (0, r.jsxs)(i.Fragment, {
+                }), (0, r.jsx)(f.izJ, {}), s.map(e => (0, r.jsxs)(i.Fragment, {
                   children: [(0, r.jsxs)("div", {
                     className: M.defaultKeybind,
                     children: [(0, r.jsx)(f.Text, {
@@ -401,7 +401,7 @@ class W extends Chunk647438.PureComponent {
                         shortcut: e
                       }, e))
                     })]
-                  }), (0, r.jsx)(f.$i$, {})]
+                  }), (0, r.jsx)(f.izJ, {})]
                 }, e.description))]
               }, t)
             })

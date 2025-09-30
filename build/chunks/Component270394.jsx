@@ -63,7 +63,7 @@ function G(e) {
   return e
 }
 
-function F(e, t) {
+function z(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -76,7 +76,7 @@ function F(e, t) {
   }), e
 }
 
-function z(e) {
+function F(e) {
   let {
     isDisabled: t,
     inviter: n,
@@ -156,7 +156,7 @@ function q(e) {
     inviteDisabled: l = false,
     hide: a = false
   } = e, o = n.uses;
-  return n.maxUses > 0 && (o = "".concat(n.uses, "/").concat(n.maxUses)), (0, i.jsx)(z, {
+  return n.maxUses > 0 && (o = "".concat(n.uses, "/").concat(n.maxUses)), (0, i.jsx)(F, {
     isDisabled: l,
     inviter: n.inviter,
     showChannel: r,
@@ -175,7 +175,7 @@ function q(e) {
         children: B.intl.string(B.t["1i1bUl"])
       }), (0, i.jsx)(g.ua7, {
         text: B.intl.string(B.t["jvd/LC"]),
-        children: e => (0, i.jsx)(g.d3s, F(G({
+        children: e => (0, i.jsx)(g.d3s, z(G({
           size: "xxs",
           color: "currentColor"
         }, e), {
@@ -203,7 +203,7 @@ function K(e) {
     var e;
     return A.default.getUser(null == (e = r.linkedLobby) ? true : e.linked_by)
   }), c = (0, T.Y)(r);
-  return (0, i.jsx)(z, {
+  return (0, i.jsx)(F, {
     isDisabled: a,
     inviter: s,
     showChannel: l,
@@ -230,7 +230,7 @@ function K(e) {
         let {
           default: e
         } = await n.e("30019").then(n.bind(n, 719498));
-        return t => (0, i.jsx)(e, F(G({}, t), {
+        return t => (0, i.jsx)(e, z(G({}, t), {
           channel: r,
           application: o
         }))
@@ -267,7 +267,7 @@ function V(e) {
       data: e
     }))], [_, C, h]),
     S = () => {
-      (0, g.ZDy)(async () => e => (0, i.jsx)(Z.default, F(G({}, e), {
+      (0, g.ZDy)(async () => e => (0, i.jsx)(Z.default, z(G({}, e), {
         channel: u,
         guild: l,
         source: M.t4x.SETTINGS_INVITE
@@ -278,7 +278,7 @@ function V(e) {
       let e = {
         source: I.Zu.GUILD_SETTINGS
       };
-      (0, g.ZDy)(async () => t => (0, i.jsx)(P.default, F(G({}, t), {
+      (0, g.ZDy)(async () => t => (0, i.jsx)(P.default, z(G({}, t), {
         guildId: l.id,
         analyticsData: e
       })))
@@ -374,7 +374,7 @@ function V(e) {
               children: B.intl.string(B.t["2LLbj4"])
             })]
           })]
-        }), (0, i.jsx)(g.$i$, {
+        }), (0, i.jsx)(g.izJ, {
           className: U.headerDivider
         })]
       }, "header");

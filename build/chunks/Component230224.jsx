@@ -37,10 +37,10 @@ let x = 100,
   v = e => e.target_type === g.Iq.STREAM && null != e.target_user,
   b = e => {
     var t;
-    return (null == (t = e.channel) ? true : t.type) === p.d4z.GROUP_DM
+    return (null == (t = e.channel) ? true : t.type) === m.d4z.GROUP_DM
   },
   j = e => null == e.channel && null == e.guild && null != e.inviter,
-  I = e => e.state === p.r2o.ACCEPTED,
+  I = e => e.state === m.r2o.ACCEPTED,
   N = e => {
     let {
       guild_scheduled_event: t
@@ -81,7 +81,7 @@ function y(e) {
     textClassName: i,
     className: l
   } = e, o = E(n);
-  return null == o || O(n) || (null == n || null == (t = n.guild) ? true : t.id) === m.fQ ? null : (0, r.jsx)(a.EJ, {
+  return null == o || O(n) || (null == n || null == (t = n.guild) ? true : t.id) === p.fQ ? null : (0, r.jsx)(a.EJ, {
     className: s()(_.activityCount, l),
     online: o.onlineCount,
     total: o.memberCount,

@@ -67,7 +67,7 @@ function j(e) {
       children: f.intl.format(f.t["9gsSLi"], {
         helpdeskArticle: m.Z.getArticleURL(g.BhN.LINKED_LOBBIES)
       })
-    }), (0, i.jsx)(o.$i$, {
+    }), (0, i.jsx)(o.izJ, {
       className: h.headerDivider
     }), c.map(e => (0, i.jsx)(x, {
       applicationId: e,

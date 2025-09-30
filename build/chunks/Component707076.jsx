@@ -190,7 +190,7 @@ function _() {
           disabled: false
         })
       })]
-    }), (0, Chunk951288.jsx)(Chunk481060.$i$, {}), (0, Chunk951288.jsx)(T, {}), (0, Chunk951288.jsx)(Chunk481060.$i$, {}), (0, Chunk951288.jsxs)("div", {
+    }), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsx)(T, {}), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsxs)("div", {
       className: Chunk473450.valuesContainer,
       children: [(0, Chunk951288.jsxs)("div", {
         className: Chunk473450.valueContainer,

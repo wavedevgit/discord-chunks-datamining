@@ -33,7 +33,7 @@ function s(e) {
     }), (0, r.jsx)("div", {
       className: o.categoryContent,
       children: t
-    }), (0, r.jsx)(i.$i$, {
+    }), (0, r.jsx)(i.izJ, {
       className: o.categoryDivider
     })]
   })

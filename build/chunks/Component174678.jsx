@@ -1,22 +1,25 @@
 /** Chunk was on web.js **/
-/** chunk id: 770102, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 174678, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $: () => s
+  i: () => s
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
-  Chunk388398 = require("./388398.js");
+  Chunk640159 = require("./640159.js");
 
 function s(e) {
   let {
     className: t,
-    style: n
+    gap: n
   } = e;
   return (0, r.jsx)("div", {
     className: a()(o.divider, t),
-    style: n
+    style: {
+      marginTop: n,
+      marginBottom: n
+    }
   })
 }

@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk884902 = require("./884902.js"),
   Chunk332448 = require("./332448.js");
 
-function m(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -35,7 +35,7 @@ function m(e) {
   return e
 }
 
-function p(e) {
+function m(e) {
   let {
     role: t,
     guild: r
@@ -48,7 +48,7 @@ function p(e) {
         } = await Promise.resolve().then(n.bind(n, 741247));
         return n => {
           var l, s;
-          return (0, i.jsx)(e, (l = m({}, n), s = s = {
+          return (0, i.jsx)(e, (l = p({}, n), s = s = {
             role: t,
             guild: r
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
@@ -125,7 +125,7 @@ function f(e) {
         return (0, i.jsx)(o.ua7, {
           text: v,
           color: o.ua7.Colors.RED,
-          children: t => (0, i.jsx)(u.Z, m({
+          children: t => (0, i.jsx)(u.Z, p({
             className: g.lock,
             src: e
           }, t))
@@ -133,7 +133,7 @@ function f(e) {
       }(), (0, i.jsx)("div", {
         className: g.roleInner,
         children: c
-      }), y && null != r ? (0, i.jsx)(p, {
+      }), y && null != r ? (0, i.jsx)(m, {
         guild: s,
         role: r
       }) : null]

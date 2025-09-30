@@ -58,7 +58,7 @@ async function K(e) {
   let {
     invite: t
   } = await d.ZP.resolveInvite(e, F);
-  null != t && (0, p.A)(t)
+  null != t && (0, m.A)(t)
 }
 class H extends Chunk647438.PureComponent {
   componentDidMount() {
@@ -153,10 +153,10 @@ class H extends Chunk647438.PureComponent {
     }({}, s, n))
   }
   renderSpinner(e) {
-    return (0, r.jsxs)(m.ZP, {
-      children: [(0, r.jsx)(m.Dx, {
+    return (0, r.jsxs)(p.ZP, {
+      children: [(0, r.jsx)(p.Dx, {
         children: e
-      }), (0, r.jsx)(m.Hh, {})]
+      }), (0, r.jsx)(p.Hh, {})]
     })
   }
   renderInvalidInvite() {
@@ -196,11 +196,11 @@ class H extends Chunk647438.PureComponent {
   }
   renderAppOpened(e) {
     let t = null != e ? e : this.handleContinue;
-    return (0, r.jsxs)(m.ZP, {
-      children: [(0, r.jsx)(m.Dx, {
+    return (0, r.jsxs)(p.ZP, {
+      children: [(0, r.jsx)(p.Dx, {
         className: G.marginBottom8,
         children: U.intl.string(U.t.csrAMD)
-      }), (0, r.jsx)(m.DK, {
+      }), (0, r.jsx)(p.DK, {
         children: U.intl.string(U.t["m1+IBg"])
       }), this.renderButton(U.intl.string(U.t.fIv16O), () => t())]
     })
@@ -311,7 +311,7 @@ class H extends Chunk647438.PureComponent {
         context: this.getAcceptInviteContext(F),
         skipOnboarding: true,
         callback: t => {
-          (0, p.A)(t), null != t.channel && d.ZP.openApp(e, t.channel.id)
+          (0, m.A)(t), null != t.channel && d.ZP.openApp(e, t.channel.id)
         }
       }).catch(e => {
         if (e instanceof h.yZ || e instanceof h.Hx) {
@@ -341,12 +341,12 @@ class H extends Chunk647438.PureComponent {
           invite: i
         } = t.props,
         l = null != i.guild_scheduled_event;
-      return M.KO ? (0, r.jsx)(m.zx, {
+      return M.KO ? (0, r.jsx)(p.zx, {
         className: l ? G.marginTop20 : G.marginTop40,
         onClick: n,
-        color: l ? m.zx.Colors.GREEN : m.zx.Colors.BRAND,
+        color: l ? p.zx.Colors.GREEN : p.zx.Colors.BRAND,
         children: e
-      }) : (0, r.jsx)(m.v6, {
+      }) : (0, r.jsx)(p.v6, {
         className: G.marginTop40
       })
     })

@@ -38,7 +38,7 @@ function p(e) {
       iconClassName: u.platformIcon,
       description: g,
       isHeader: true
-    }), (0, i.jsx)(l.$i$, {
+    }), (0, i.jsx)(l.izJ, {
       className: u.headerDivider
     }), t.map(e => (0, i.jsx)(d.Z, {
       integration: e,
