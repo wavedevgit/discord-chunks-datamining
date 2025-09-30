@@ -13,9 +13,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk317257 = require("./317257.js"),
   Chunk583478 = require("./583478.jsx"),
   Chunk976845 = require("./976845.jsx"),
-  Chunk646855 = require("./646855.js");
+  Chunk647917 = require("./647917.js");
 let O = () => (0, Chunk951288.jsx)("img", {
-    className: Chunk646855.notificationBadge,
+    className: Chunk647917.notificationBadge,
     src: require("./808824.js"),
     alt: ""
   }),

@@ -1,26 +1,26 @@
-/** Chunk was on 81201 **/
-/** chunk id: 86392, original params: e,n,t (module,exports,require) **/
+/** Chunk was on 74477 **/
+/** chunk id: 86392, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  p: () => c
+  p: () => s
 });
 var Chunk573654 = require("./573654.js");
 
-function i(e, n, t) {
-  return n in e ? Object.defineProperty(e, n, {
-    value: t,
+function i(e, t, r) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: r,
     enumerable: true,
     configurable: true,
     writable: true
-  }) : e[n] = t, e
+  }) : e[t] = r, e
 }
-var a = false,
-  o = false,
-  c = function() {
+var l = false,
+  a = false,
+  s = function() {
     var e;
 
-    function n(e) {
-      if (!(this instanceof n)) throw TypeError("Cannot call a class as a function");
+    function t(e) {
+      if (!(this instanceof t)) throw TypeError("Cannot call a class as a function");
       i(this, "internalMonitor", true), i(this, "sourceId", null), this.internalMonitor = e.getMonitor()
     }
     return e = [{
@@ -36,28 +36,28 @@ var a = false,
       }, {
         key: "canDrag",
         value: function() {
-          (0, Chunk573654.k)(!a, "You may not call monitor.canDrag() inside your canDrag() implementation. Read more: http://react-dnd.github.io/react-dnd/docs/api/drag-source-monitor");
+          (0, Chunk573654.k)(!l, "You may not call monitor.canDrag() inside your canDrag() implementation. Read more: http://react-dnd.github.io/react-dnd/docs/api/drag-source-monitor");
           try {
-            return a = true, this.internalMonitor.canDragSource(this.sourceId)
+            return l = true, this.internalMonitor.canDragSource(this.sourceId)
           } finally {
-            a = false
+            l = false
           }
         }
       }, {
         key: "isDragging",
         value: function() {
           if (!this.sourceId) returnfalse;
-          (0, Chunk573654.k)(!o, "You may not call monitor.isDragging() inside your isDragging() implementation. Read more: http://react-dnd.github.io/react-dnd/docs/api/drag-source-monitor");
+          (0, Chunk573654.k)(!a, "You may not call monitor.isDragging() inside your isDragging() implementation. Read more: http://react-dnd.github.io/react-dnd/docs/api/drag-source-monitor");
           try {
-            return o = true, this.internalMonitor.isDraggingSource(this.sourceId)
+            return a = true, this.internalMonitor.isDraggingSource(this.sourceId)
           } finally {
-            o = false
+            a = false
           }
         }
       }, {
         key: "subscribeToStateChange",
-        value: function(e, n) {
-          return this.internalMonitor.subscribeToStateChange(e, n)
+        value: function(e, t) {
+          return this.internalMonitor.subscribeToStateChange(e, t)
         }
       }, {
         key: "isDraggingSource",
@@ -66,8 +66,8 @@ var a = false,
         }
       }, {
         key: "isOverTarget",
-        value: function(e, n) {
-          return this.internalMonitor.isOverTarget(e, n)
+        value: function(e, t) {
+          return this.internalMonitor.isOverTarget(e, t)
         }
       }, {
         key: "getTargetIds",
@@ -145,10 +145,10 @@ var a = false,
           return this.internalMonitor.getDifferenceFromInitialOffset()
         }
       }],
-      function(e, n) {
-        for (var t = 0; t < n.length; t++) {
-          var r = n[t];
-          r.enumerable = r.enumerable || false, r.configurable = true, "value" in r && (r.writable = true), Object.defineProperty(e, r.key, r)
+      function(e, t) {
+        for (var r = 0; r < t.length; r++) {
+          var n = t[r];
+          n.enumerable = n.enumerable || false, n.configurable = true, "value" in n && (n.writable = true), Object.defineProperty(e, n.key, n)
         }
       }(exports.prototype, module), exports
   }()

@@ -1,4 +1,4 @@
-/** Chunk was on 62266 **/
+/** Chunk was on 57318 **/
 /** chunk id: 642633, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -8,9 +8,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk793030 = require("./793030.js"),
   Chunk183369 = require("./183369.jsx"),
   Chunk943970 = require("./943970.js"),
-  Chunk440589 = require("./440589.js"),
+  Chunk401561 = require("./401561.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk233019 = require("./233019.js");
+  Chunk20426 = require("./20426.js");
 
 function u() {
   let {
@@ -20,17 +20,17 @@ function u() {
   if (null == module) return null;
   let u = null == module ? true : module.plans.find(e => e.id === n);
   return (0, Chunk951288.jsx)("div", {
-    className: Chunk233019.container,
+    className: Chunk20426.container,
     children: (0, Chunk951288.jsxs)("div", {
-      className: Chunk233019.content,
+      className: Chunk20426.content,
       children: [(0, Chunk951288.jsxs)("div", {
-        className: Chunk233019.headerContainer,
+        className: Chunk20426.headerContainer,
         children: [(0, Chunk951288.jsx)("img", {
           src: null != require ? require : "",
-          className: Chunk233019.image,
+          className: Chunk20426.image,
           alt: module.name
         }), (0, Chunk951288.jsxs)("div", {
-          className: Chunk233019.header,
+          className: Chunk20426.header,
           children: [(0, Chunk951288.jsx)(Chunk793030.X6q, {
             variant: "heading-lg/semibold",
             color: "text-primary",
@@ -42,7 +42,7 @@ function u() {
           })]
         })]
       }), null != u && (0, Chunk951288.jsx)("div", {
-        className: Chunk233019.statsGrid,
+        className: Chunk20426.statsGrid,
         children: u.specifications.map((e, n) => {
           var t;
           return (0, r.jsxs)(i.Fragment, {
@@ -63,11 +63,11 @@ function u() {
           }, n)
         })
       }), (0, Chunk951288.jsx)("div", {
-        className: Chunk233019.poweredBy,
+        className: Chunk20426.poweredBy,
         children: (0, Chunk951288.jsx)(Chunk793030.xvT, {
           variant: "text-sm/medium",
           color: "text-secondary",
-          children: Chunk388032.intl.format(Chunk440589.default.JWpue3, {
+          children: Chunk388032.intl.format(Chunk401561.default.JWpue3, {
             developer: module.developer
           })
         })

@@ -10,7 +10,7 @@ var r, Chunk951288 = require("./951288.js"),
   s = require.n(Chunk120356),
   Chunk748780 = require("./748780.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk625721 = require("./625721.js");
+  Chunk684640 = require("./684640.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -92,7 +92,7 @@ class m extends(r = Chunk647438.Component) {
       children: t
     } = this.props;
     return (0, Chunk951288.jsx)(Chunk748780.Z.div, {
-      className: s()(module, Chunk625721.slider),
+      className: s()(module, Chunk684640.slider),
       style: this.getAnimatedStyle(),
       children: exports
     })

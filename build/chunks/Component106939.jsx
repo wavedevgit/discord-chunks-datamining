@@ -44,9 +44,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk723359 = require("./723359.js"),
   Chunk921944 = require("./921944.js"),
-  Chunk412297 = require("./412297.js"),
+  Chunk345909 = require("./345909.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk799114 = require("./799114.js");
+  Chunk166387 = require("./166387.js");
 let Y = {
     [Chunk292352.dG.REQUESTS]: () => (0, Chunk951288.jsx)(Chunk731934.Z, {}),
     [Chunk292352.dG.ACTIVITY]: () => (0, Chunk951288.jsx)(Chunk830746.Z, {}),
@@ -191,17 +191,17 @@ function q() {
     f(e)
   };
   return Chunk210887 ? null : (0, Chunk951288.jsxs)("main", {
-    className: Chunk799114.container,
-    "aria-label": Chunk388032.intl.string(Chunk412297.default.RZqaJi),
+    className: Chunk166387.container,
+    "aria-label": Chunk388032.intl.string(Chunk345909.default.RZqaJi),
     children: [(0, Chunk951288.jsx)(Chunk252618.yY, {
-      location: Chunk388032.intl.string(Chunk412297.default.RZqaJi)
+      location: Chunk388032.intl.string(Chunk345909.default.RZqaJi)
     }), (0, Chunk951288.jsx)(K, {
       section: Chunk873546,
       handleItemSelect: Chunk273879
     }), (0, Chunk951288.jsx)(Chunk481060.njP.Panel, {
       id: Chunk873546,
       "aria-labelledby": Chunk100527,
-      className: Chunk799114.contentPanel,
+      className: Chunk166387.contentPanel,
       children: (0, Chunk951288.jsx)("div", {
         children: Y[Chunk873546]()
       })
@@ -264,10 +264,10 @@ function X() {
   return (0, Chunk951288.jsx)(Chunk906732.Gt, {
     value: module,
     children: (0, Chunk951288.jsxs)("main", {
-      className: o()(Chunk799114.container, Chunk799114.containerSidenav),
-      "aria-label": Chunk388032.intl.string(Chunk412297.default.RZqaJi),
+      className: o()(Chunk166387.container, Chunk166387.containerSidenav),
+      "aria-label": Chunk388032.intl.string(Chunk345909.default.RZqaJi),
       children: [(0, Chunk951288.jsx)(Chunk252618.yY, {
-        location: Chunk388032.intl.string(Chunk412297.default.RZqaJi)
+        location: Chunk388032.intl.string(Chunk345909.default.RZqaJi)
       }), (0, Chunk951288.jsx)(z, {
         theme: Chunk615160,
         section: J,
@@ -275,10 +275,10 @@ function X() {
       }), (0, Chunk951288.jsx)(Chunk481060.njP.Panel, {
         id: J,
         "aria-labelledby": Chunk731934,
-        className: Chunk799114.contentPanel,
+        className: Chunk166387.contentPanel,
         children: (0, Chunk951288.jsx)(Chunk481060.Ttm, {
           children: (0, Chunk951288.jsx)("div", {
-            className: Chunk799114.sideNavContent,
+            className: Chunk166387.sideNavContent,
             children: $()
           })
         })

@@ -1,8 +1,8 @@
-/** Chunk was on 89311 **/
-/** chunk id: 485267, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 91053 **/
+/** chunk id: 485267, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Bt: () => d,
-  Jn: () => u,
+  Bt: () => u,
+  Jn: () => d,
   lY: () => c
 });
 var Chunk570140 = require("./570140.js");
@@ -24,13 +24,13 @@ let c = () => {
   })
 };
 
-function u() {
+function d() {
   Chunk570140.Z.dispatch({
     type: "GAME_PROFILE_OPEN"
   })
 }
 
-function d() {
+function u() {
   Chunk570140.Z.dispatch({
     type: "CONTENT_INVENTORY_CLEAR_DELETE_HISTORY_ERROR"
   })

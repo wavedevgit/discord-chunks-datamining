@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk442837 = require("./442837.js"),
   Chunk5888 = require("./5888.js"),
   Chunk198358 = require("./198358.jsx"),
-  Chunk509950 = require("./509950.js"),
+  Chunk484718 = require("./484718.js"),
   Chunk388032 = require("./388032.jsx");
 
 function o() {
@@ -26,11 +26,11 @@ function o() {
     }), (0, Chunk951288.jsx)(Chunk793030.xvT, {
       variant: "display-sm",
       color: "text-primary",
-      children: Chunk388032.intl.string(Chunk509950.default["3NjdFR"])
+      children: Chunk388032.intl.string(Chunk484718.default["3NjdFR"])
     }), (0, Chunk951288.jsx)(Chunk793030.xvT, {
       variant: "display-sm",
       color: "text-primary",
-      children: Chunk388032.intl.format(Chunk509950.default["36PZws"], {
+      children: Chunk388032.intl.format(Chunk484718.default["36PZws"], {
         percent: exports
       })
     })]

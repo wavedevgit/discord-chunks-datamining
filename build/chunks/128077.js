@@ -1,4 +1,4 @@
-/** Chunk was on 81501 **/
+/** Chunk was on 74560 **/
 /** chunk id: 128077, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   f: () => l
@@ -8,11 +8,11 @@ var Chunk647438 = require("./647438.js"),
   Chunk388032 = require("./388032.jsx");
 
 function l() {
-  let [e, t] = (0, Chunk647438.useState)(""), [n, l] = (0, Chunk647438.useState)([]), [c, s] = (0, Chunk647438.useState)(null), [o, d] = (0, Chunk647438.useState)(false);
+  let [e, t] = (0, Chunk647438.useState)(""), [n, l] = (0, Chunk647438.useState)([]), [s, o] = (0, Chunk647438.useState)(null), [c, d] = (0, Chunk647438.useState)(false);
   return (0, Chunk647438.useEffect)(() => {
-    if (null != c) return void exports(Chunk388032.intl.format(Chunk388032.t["7gHWra"], {
+    if (null != s) return void exports(Chunk388032.intl.format(Chunk388032.t["7gHWra"], {
       amount: "1 orb",
-      errorMessage: c.message
+      errorMessage: s.message
     }));
     if (null != require && require.length > 0) {
       let e = require.map(e => {
@@ -26,23 +26,23 @@ function l() {
       return
     }
     exports("")
-  }, [require, c]), {
+  }, [require, s]), {
     entitlements: require,
-    error: c,
-    isSubmitting: o,
+    error: s,
+    isSubmitting: c,
     responseMessage: module,
     redeemVirtualCurrency: function(e, t, n) {
       return (0, a.df)({
         skuId: e,
         loadId: t,
         onRedeemStart: () => {
-          d(true), s(null)
+          d(true), o(null)
         },
         onRedeemSucceed: e => {
           l(e), d(false), null == n || n(e)
         },
         onRedeemFail: e => {
-          s(e), d(false)
+          o(e), d(false)
         }
       })
     }

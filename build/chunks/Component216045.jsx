@@ -43,7 +43,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk950106 = require("./950106.js");
+  Chunk391371 = require("./391371.js");
 
 function V(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -168,7 +168,7 @@ function Q() {
         nameplate: Chunk266454,
         nameplateData: true === Chunk266454 ? module.nameplate : true
       }, Chunk243778), {
-        className: Chunk950106.nameplatePreview,
+        className: Chunk391371.nameplatePreview,
         isHighlighted: true
       })),
       children: (0, Chunk951288.jsx)(Chunk532495.Z, {})
@@ -186,7 +186,7 @@ function Q() {
         })
       })
     }), et && !Chunk921944 && (0, Chunk951288.jsx)(Chunk53691.p, {
-      className: Chunk950106.floatingNitroUpsell,
+      className: Chunk391371.floatingNitroUpsell,
       showUpsell: et && !J,
       text: Chunk388032.intl.format(Chunk388032.t.TmfgIy, {
         onClick: () => (0, Chunk267717.y)({
@@ -195,8 +195,8 @@ function Q() {
       }),
       textVariant: "heading-md/medium",
       button: (0, Chunk951288.jsxs)(Chunk481060.gtL, {
-        className: Chunk950106.floatingNitroButton,
-        innerClassName: Chunk950106.floatingNitroButtonInner,
+        className: Chunk391371.floatingNitroButton,
+        innerClassName: Chunk391371.floatingNitroButtonInner,
         onClick: () => {
           var e;
           Chunk626135.default.track(Chunk981631.rMx.TRY_IT_OUT_PRESET_CLICKED, {

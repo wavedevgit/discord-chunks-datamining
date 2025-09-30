@@ -1,4 +1,4 @@
-/** Chunk was on 89342 **/
+/** Chunk was on 52461 **/
 /** chunk id: 903502, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk511010 = require("./511010.jsx"),
   Chunk246992 = require("./246992.js"),
   Chunk531578 = require("./531578.js"),
-  Chunk400678 = require("./400678.js");
+  Chunk584314 = require("./584314.js");
 let h = [{
   label: "second(s)",
   value: 1e3
@@ -40,10 +40,10 @@ function x() {
     }
   }), C = Chunk647438.useMemo(() => null != module && g >= 0 && g <= 100 && require >= 0, [module, g, require]);
   return (0, Chunk951288.jsxs)("div", {
-    className: Chunk400678.container,
+    className: Chunk584314.container,
     children: [(0, Chunk951288.jsx)(Chunk481060.hjN, {
       title: "Feedback Survey",
-      className: Chunk400678.formElement,
+      className: Chunk584314.formElement,
       tag: Chunk481060.RB0.H3,
       children: (0, Chunk951288.jsx)(Chunk481060.q4e, {
         options: y,
@@ -56,11 +56,11 @@ function x() {
       })
     }), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
       title: "Override Survey Cooldown",
-      className: Chunk400678.formElement,
+      className: Chunk584314.formElement,
       tag: Chunk481060.RB0.H3,
       children: [null != j && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
         children: [(0, Chunk951288.jsx)(Chunk511010.Z, {
-          className: Chunk400678.formDividerTitle,
+          className: Chunk584314.formDividerTitle,
           children: (0, Chunk951288.jsx)(Chunk481060.Text, {
             variant: "text-sm/semibold",
             children: "Current cooldown"
@@ -79,13 +79,13 @@ function x() {
           children: "".concat(j.cooldown / 864e5, " day(s)")
         })]
       }), (0, Chunk951288.jsx)(Chunk511010.Z, {
-        className: Chunk400678.formDividerTitle,
+        className: Chunk584314.formDividerTitle,
         children: (0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-sm/semibold",
           children: "Override cooldown"
         })
       }), (0, Chunk951288.jsxs)("div", {
-        className: Chunk400678.formRow,
+        className: Chunk584314.formRow,
         children: [(0, Chunk951288.jsx)(Chunk481060.oil, {
           min: 0,
           value: require.toString(),
@@ -103,11 +103,11 @@ function x() {
       })]
     }), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
       title: "Override Survey Chance",
-      className: Chunk400678.formElement,
+      className: Chunk584314.formElement,
       tag: Chunk481060.RB0.H3,
       children: [null != j && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
         children: [(0, Chunk951288.jsx)(Chunk511010.Z, {
-          className: Chunk400678.formDividerTitle,
+          className: Chunk584314.formDividerTitle,
           children: (0, Chunk951288.jsx)(Chunk481060.Text, {
             variant: "text-sm/semibold",
             children: "Current chance"
@@ -117,13 +117,13 @@ function x() {
           children: "".concat(100 * j.chance, "%")
         })]
       }), (0, Chunk951288.jsx)(Chunk511010.Z, {
-        className: Chunk400678.formDividerTitle,
+        className: Chunk584314.formDividerTitle,
         children: (0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-sm/semibold",
           children: "Override chance"
         })
       }), (0, Chunk951288.jsxs)("div", {
-        className: Chunk400678.formRow,
+        className: Chunk584314.formRow,
         children: [(0, Chunk951288.jsx)(Chunk481060.oil, {
           min: 0,
           max: 100,
@@ -136,7 +136,7 @@ function x() {
         })]
       })]
     }), (0, Chunk951288.jsxs)("div", {
-      className: Chunk400678.formRow,
+      className: Chunk584314.formRow,
       children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
         variant: "primary",
         text: "Update",

@@ -19,8 +19,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk5192 = require("./5192.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk304726 = require("./304726.js"),
-  Chunk272567 = require("./272567.js");
+  Chunk764295 = require("./764295.js"),
+  Chunk768716 = require("./768716.js");
 
 function y() {
   return [{
@@ -46,8 +46,8 @@ function y() {
     label: Chunk388032.intl.string(Chunk388032.t.FA7IUl)
   }]
 }
-let x = y()[1].value,
-  S = y()[0].value;
+let S = y()[1].value,
+  x = y()[0].value;
 
 function C(e) {
   let {
@@ -56,46 +56,46 @@ function C(e) {
     location: i,
     userIds: v,
     onBanMultiple: C,
-    transitionState: k,
-    onClose: P,
-    canBulkBan: Z = false,
-    modReportId: w
-  } = e, [_, I] = r.useState(null != w ? S : x), [M, T] = r.useState(""), [D, K] = r.useState(null), {
-    isModReportClosed: R,
-    isModReport: E
+    transitionState: P,
+    onClose: k,
+    canBulkBan: R = false,
+    modReportId: _
+  } = e, [E, Z] = l.useState(null != _ ? x : S), [M, w] = l.useState(""), [T, D] = l.useState(null), {
+    isModReportClosed: N,
+    isModReport: I
   } = (0, o.cj)([g.Z], () => {
-    let e = g.Z.getChannel(w);
+    let e = g.Z.getChannel(_);
     return {
       isModReportClosed: null == e ? true : e.isArchivedThread(),
       isModReport: null == e ? true : e.isModeratorReportChannel()
     }
-  }), [N, U] = r.useState(false), [Y, A] = r.useState(false), B = (0, p.sE)(t, {
+  }), [A, K] = l.useState(false), [U, Y] = l.useState(false), F = (0, p.sE)(t, {
     location: i,
     targetUserId: null == n ? true : n.id,
     targets: v
-  }), F = r.useCallback(() => {
-    let e = null != D ? D : M;
+  }), B = l.useCallback(() => {
+    let e = null != T ? T : M;
     if (null != C) {
-      if (!(null != v && (null == v ? true : v.size) > 0 && Z) || N) return;
-      if ("" === M.trim() && !N) return void U(true);
-      C(t, [...v], _, e)
+      if (!(null != v && (null == v ? true : v.size) > 0 && R) || A) return;
+      if ("" === M.trim() && !A) return void K(true);
+      C(t, [...v], E, e)
     } else {
       if (null == n) return;
-      d.Z.banUser(t, null == n ? true : n.id, _, e, w).then(() => {
-        Y && null != w && b.Z.resolveFlag(w)
+      d.Z.banUser(t, null == n ? true : n.id, E, e, _).then(() => {
+        U && null != _ && b.Z.resolveFlag(_)
       })
     }
-    B(p.jQ.BAN), P()
-  }, [D, M, C, B, P, v, Z, N, t, _, n, w, Y]), X = r.useCallback(e => {
-    I(e)
-  }, []), q = r.useCallback(e => {
+    F(p.jQ.BAN), k()
+  }, [T, M, C, F, k, v, R, A, t, E, n, _, U]), X = l.useCallback(e => {
+    Z(e)
+  }, []), q = l.useCallback(e => {
     let {
       value: t
     } = e;
-    T(t), U(false), K(null)
-  }, []), G = r.useCallback(e => {
-    K(e), N && U(false)
-  }, [N]), J = E && !R && null != w, H = [{
+    w(t), K(false), D(null)
+  }, []), G = l.useCallback(e => {
+    D(e), A && K(false)
+  }, [A]), J = I && !N && null != _, L = [{
     name: j.intl.string(j.t.tamLhY),
     value: j.intl.string(j.t.tamLhY)
   }, {
@@ -107,78 +107,78 @@ function C(e) {
   }, {
     name: j.intl.string(j.t.BcZTKi),
     value: "other"
-  }], L = (() => {
+  }], W = (() => {
     if (null != C && null != v) return j.intl.formatToPlainString(j.t.HVJexc, {
       count: null == v ? true : v.size
     });
     if (null == n) return "";
     let e = h.ZP.getName(t, null, n);
-    return j.intl.formatToPlainString(null != w ? j.t.WDR8XV : j.t.jeKpoq, {
+    return j.intl.formatToPlainString(null != _ ? j.t.WDR8XV : j.t.jeKpoq, {
       username: "@".concat(e)
     })
-  })(), V = null == w ? null : j.intl.string(j.t.pQjhIC);
-  return (0, l.jsx)(s.Modal, {
-    onClose: P,
-    transitionState: k,
-    title: L,
-    subtitle: null != V ? V : true,
+  })(), H = null == _ ? null : j.intl.string(j.t.pQjhIC);
+  return (0, r.jsx)(s.Modal, {
+    onClose: k,
+    transitionState: P,
+    title: W,
+    subtitle: null != H ? H : true,
     actions: (() => {
       let e = [];
-      return E || e.push({
+      return I || e.push({
         variant: "secondary",
         text: j.intl.string(j.t["ETE/oK"]),
-        onClick: P
+        onClick: k
       }), e.push({
         variant: "critical-primary",
         text: j.intl.string(j.t["5MBJ5O"]),
-        onClick: F
+        onClick: B
       }), e
     })(),
-    actionBarInput: J ? (0, l.jsx)(c.XZJ, {
-      checked: Y,
-      onChange: e => A(e),
-      label: j.intl.string(m.default["8yIKen"])
+    actionBarInput: J ? (0, r.jsx)(c.XZJ, {
+      checked: U,
+      onChange: e => Y(e),
+      label: j.intl.string(f.default["8yIKen"])
     }) : true,
-    children: (0, l.jsxs)(c.Kqy, {
+    children: (0, r.jsxs)(c.Kqy, {
       direction: "vertical",
       gap: 24,
-      children: [(0, l.jsxs)(c.Kqy, {
+      children: [(0, r.jsxs)(c.Kqy, {
         direction: "vertical",
         gap: 8,
-        children: [N && (0, l.jsx)(c.kzN, {
-          className: O.error,
+        children: [A && (0, r.jsx)(c.kzN, {
+          className: m.error,
           children: j.intl.string(j.t.IrYX19)
-        }), (0, l.jsx)(u.Gu, {
+        }), (0, r.jsx)(u.Gu, {
           required: true,
-          label: j.intl.string(null != w ? j.t["+KCLVl"] : j.t.w4Ivys),
-          className: O.radioGroup,
+          label: j.intl.string(null != _ ? j.t["+KCLVl"] : j.t.w4Ivys),
+          className: m.radioGroup,
           value: M,
-          options: H.map(e => {
+          options: L.map(e => {
             var t, n;
             return t = function(e) {
               for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {},
-                  l = Object.keys(n);
-                "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                  r = Object.keys(n);
+                "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
                   return Object.getOwnPropertyDescriptor(n, e).enumerable
-                }))), l.forEach(function(t) {
-                  var l;
-                  l = n[t], t in e ? Object.defineProperty(e, t, {
-                    value: l,
+                }))), r.forEach(function(t) {
+                  var r;
+                  r = n[t], t in e ? Object.defineProperty(e, t, {
+                    value: r,
                     enumerable: true,
                     configurable: true,
                     writable: true
-                  }) : e[t] = l
+                  }) : e[t] = r
                 })
               }
               return e
             }({}, e), n = n = {
-              radioBarClassName: O.radioItem
+              radioBarClassName: m.radioItem
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {
-                var l = Object.getOwnPropertySymbols(e);
-                n.push.apply(n, l)
+                var r = Object.getOwnPropertySymbols(e);
+                n.push.apply(n, r)
               }
               return n
             })(Object(n)).forEach(function(e) {
@@ -187,22 +187,22 @@ function C(e) {
           }),
           onChange: q,
           withTransparentBackground: true
-        }), (0, l.jsx)("div", {
-          className: a()(O.reasonFreeText, {
-            [O.hidden]: "other" !== M
+        }), (0, r.jsx)("div", {
+          className: a()(m.reasonFreeText, {
+            [m.hidden]: "other" !== M
           }),
-          children: (0, l.jsx)(c.Kx8, {
-            maxLength: f.GNZ,
+          children: (0, r.jsx)(c.Kx8, {
+            maxLength: O.GNZ,
             onChange: G,
-            value: null != D ? D : "",
+            value: null != T ? T : "",
             rows: 5,
             autoFocus: true
           })
         })]
-      }), (0, l.jsx)(c.q4e, {
-        label: j.intl.string(null != w ? j.t.ERSM8P : j.t["8l3W09"]),
+      }), (0, r.jsx)(c.q4e, {
+        label: j.intl.string(null != _ ? j.t.ERSM8P : j.t["8l3W09"]),
         options: y(),
-        value: _,
+        value: E,
         onChange: X
       })]
     })

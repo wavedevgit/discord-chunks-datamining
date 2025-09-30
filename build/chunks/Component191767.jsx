@@ -1,4 +1,4 @@
-/** Chunk was on 89342 **/
+/** Chunk was on 52461 **/
 /** chunk id: 191767, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   f: () => E
@@ -20,8 +20,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk237012 = require("./237012.jsx"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk634155 = require("./634155.js"),
-  Chunk822054 = require("./822054.js");
+  Chunk306197 = require("./306197.js"),
+  Chunk818033 = require("./818033.js");
 
 function y(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -64,7 +64,7 @@ function E() {
       children: [(0, Chunk951288.jsx)(N, {}), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         color: "text-feedback-info",
-        className: Chunk634155.labelSpacing,
+        className: Chunk306197.labelSpacing,
         children: "Payment-method-specific components and views may not appear for you unless your browser is supported for that payment method and they have been configured on your browser."
       }), (0, Chunk951288.jsx)(S, {}), (0, Chunk951288.jsx)(k, {}), (0, Chunk951288.jsx)(M, {})]
     })
@@ -331,18 +331,18 @@ function L() {
   return (0, Chunk951288.jsxs)("div", {
     children: [(0, Chunk951288.jsxs)(Chunk481060.Text, {
       variant: "text-md/normal",
-      className: Chunk634155.labelSpacing,
+      className: Chunk306197.labelSpacing,
       children: ["Try configuring options for the Stripe Element container and Express Checkout Element here. Not all settings will change the appearance or functionality of the checkout button - use this to figure out the customizability of the Express Checkout Element.", (0, Chunk951288.jsx)("br", {}), (0, Chunk951288.jsx)("br", {}), "Start by changing the `borderRadius` or `buttonHeight` as a test!"]
     }), (0, Chunk951288.jsxs)(Chunk481060.Text, {
       variant: "text-md/normal",
-      className: Chunk634155.labelSpacing,
+      className: Chunk306197.labelSpacing,
       children: [(0, Chunk951288.jsx)("b", {
         children: "elements.options:"
       }), (0, Chunk951288.jsx)("br", {}), (0, Chunk951288.jsx)(Chunk237012.lD, {
         href: "https://github.com/stripe/stripe-js/blob/master/types/stripe-js/elements-group.d.ts#L632"
       })]
     }), (0, Chunk951288.jsx)("div", {
-      className: Chunk634155.textarea,
+      className: Chunk306197.textarea,
       children: (0, Chunk951288.jsx)(Chunk481060.Kx8, {
         placeholder: "Stripe Elements Container Options",
         showCharacterCount: true,
@@ -352,7 +352,7 @@ function L() {
       })
     }), (0, Chunk951288.jsxs)(Chunk481060.Text, {
       variant: "text-md/normal",
-      className: Chunk634155.labelSpacing,
+      className: Chunk306197.labelSpacing,
       children: [(0, Chunk951288.jsx)("b", {
         children: "expressCheckoutElement.options:"
       }), (0, Chunk951288.jsx)("br", {}), (0, Chunk951288.jsx)(Chunk237012.lD, {
@@ -361,7 +361,7 @@ function L() {
         href: "https://docs.stripe.com/elements/express-checkout-element/migration#customize-express-checkout-element"
       })]
     }), (0, Chunk951288.jsx)("div", {
-      className: Chunk634155.textarea,
+      className: Chunk306197.textarea,
       children: (0, Chunk951288.jsx)(Chunk481060.Kx8, {
         placeholder: "Stripe Express Checkout Element Options",
         showCharacterCount: true,
@@ -375,7 +375,7 @@ function L() {
       children: Chunk586585
     }), (0, Chunk951288.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
-      className: Chunk634155.applyChangesButton,
+      className: Chunk306197.applyChangesButton,
       children: (0, Chunk951288.jsx)(Chunk159691.zxk, {
         variant: "primary",
         size: "sm",
@@ -387,7 +387,7 @@ function L() {
             Chunk231338(null), Chunk231338((0, Chunk951288.jsxs)(Chunk951288.Fragment, {
               children: [(0, Chunk951288.jsxs)(Chunk481060.Text, {
                 variant: "text-md/normal",
-                className: Chunk634155.labelSpacing,
+                className: Chunk306197.labelSpacing,
                 children: ["Element updated at: ", new Date().toString()]
               }), (0, Chunk951288.jsx)(Chunk237012.DS, {
                 errorLabel: w.CONFIGURABLE,
@@ -407,17 +407,17 @@ function L() {
       })
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-md/normal",
-      className: Chunk634155.labelSpacing,
+      className: Chunk306197.labelSpacing,
       children: "Current Element Options:"
     }), (0, Chunk951288.jsx)(Chunk241209.Z, {
-      className: Chunk634155.markdown,
+      className: Chunk306197.markdown,
       children: "".concat("``", " ").concat(D(require), " ").concat("``")
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-md/normal",
-      className: Chunk634155.labelSpacing,
+      className: Chunk306197.labelSpacing,
       children: "Current Express Checkout Element Options:"
     }), (0, Chunk951288.jsx)(Chunk241209.Z, {
-      className: Chunk634155.markdown,
+      className: Chunk306197.markdown,
       children: "".concat("``", " ").concat(D(Chunk502109), " ").concat("``")
     }), Chunk954824]
   })
