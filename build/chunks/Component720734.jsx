@@ -212,16 +212,19 @@ function tm(e) {
       setHighlightBadge: a
     }
   }(), S = (0, er.A)(m);
-  return null == s ? null : (0, a.jsx)(g.Z, {
+  if (null == s) return null;
+  let T = h && p !== e7.I_8 && p !== e7.ME && null != p ? p : true;
+  return (0, a.jsx)(g.Z, {
     object: e7.qAy.AVATAR,
     children: (0, a.jsx)(eh.Z, {
       user: s,
       targetElementRef: j,
       clickTrap: true,
-      preload: () => (0, ep.Z)(s.id, s.getAvatarURL(h ? p : true, eh.I), {
+      preload: () => (0, ep.Z)(s.id, s.getAvatarURL(T, eh.I), {
         type: "account_popout",
         withMutualGuilds: false,
-        withMutualFriends: false
+        withMutualFriends: false,
+        guildId: T
       }),
       renderPopout: (e, t) => {
         let {
@@ -235,7 +238,9 @@ function tm(e) {
           onClose: () => {
             null == n || n()
           },
-          setPopoutRef: r
+          setPopoutRef: r,
+          guildId: T,
+          guildProfileEnabled: h
         })
       },
       position: "top",

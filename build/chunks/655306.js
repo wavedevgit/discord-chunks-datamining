@@ -13,10 +13,10 @@ var Chunk392711 = require("./392711.js"),
   Chunk966146 = require("./966146.js"),
   Chunk902704 = require("./902704.js"),
   Chunk846519 = require("./846519.js"),
-  Chunk621012 = require("./621012.js"),
   Chunk314897 = require("./314897.js"),
   Chunk526167 = require("./526167.js"),
   Chunk70956 = require("./70956.js"),
+  Chunk358085 = require("./358085.js"),
   Chunk709054 = require("./709054.js"),
   Chunk798681 = require("./798681.js"),
   Chunk981631 = require("./981631.js"),
@@ -56,7 +56,7 @@ class N extends Chunk47770.Z {
     return 1 === this.otherUsers.size
   }
   updateCallUserIds(e) {
-    this.otherUsers = new Set(e), this.otherUsers.delete(d.default.getId()), this.update()
+    this.otherUsers = new Set(e), this.otherUsers.delete(u.default.getId()), this.update()
   }
   shouldReceiveFromUser(e) {
     var t, n;
@@ -186,15 +186,9 @@ class N extends Chunk47770.Z {
           any: r
         };
       a.updateOffscreenUsers();
-      let {
-        enabledSingle: s
-      } = u.m.getCurrentConfig({
-        location: "RTCMediaSinkWantsManager.update"
-      }, {
-        autoTrackExposure: false
-      }), c = s && a.isOneToOneCall() && !a.isStageChannel;
+      let s = (0, _.isDesktop)() && a.isOneToOneCall() && !a.isStageChannel;
       for (let [t, i] of p.default.entries(a.videoSsrcs)) {
-        let s = [],
+        let c = [],
           u = false,
           d = null != (e = a.streamPixelCounts[a.streamIds[t]]) ? e : 0,
           f = a.getWantsLevel(d),
@@ -202,15 +196,15 @@ class N extends Chunk47770.Z {
         if (a.shouldReceiveFromUser(t)) {
           let e = t === a.selectedParticipantId && r !== b && !a.pipOpen;
           if (i.length > 1) {
-            for (let t of i) t.quality === b ? e ? (o[t.ssrc] = b, _ = t.ssrc) : o[t.ssrc] = y : e ? o[t.ssrc] = y : (c && (o[t.ssrc] = f), _ = t.ssrc);
+            for (let t of i) t.quality === b ? e ? (o[t.ssrc] = b, _ = t.ssrc) : o[t.ssrc] = y : e ? o[t.ssrc] = y : (s && (o[t.ssrc] = f), _ = t.ssrc);
             if (a.supportsSeamless && !a.framesReceived[_])
-              for (let e of (u = true, s = [_], i)) e.ssrc !== _ && a.framesReceived[e.ssrc] && (e.quality === b ? o[e.ssrc] = b : o[e.ssrc] = c ? f : r, s.push(e.ssrc))
-          } else e ? o[_] = b : c && (o[_] = f)
+              for (let e of (u = true, c = [_], i)) e.ssrc !== _ && a.framesReceived[e.ssrc] && (e.quality === b ? o[e.ssrc] = b : o[e.ssrc] = s ? f : r, c.push(e.ssrc))
+          } else e ? o[_] = b : s && (o[_] = f)
         } else
           for (let e of i) o[e.ssrc] = y;
         let p = a.getSimulcastOverrideQuality(t);
-        for (let e of (p === g.Z.HIGH ? o[_] = b : p === g.Z.LOW && (o[_] = 50), a.supportsSeamless && u || (s = [_]), i)) s.includes(e.ssrc) || delete a.framesReceived[e.ssrc];
-        (n.includes(t) || true !== a.remoteVideoSsrcs[t] && !(0, l.Z)(a.remoteVideoSsrcs[t], s)) && (a.remoteVideoSsrcs[t] = [...s], a.emit("user-ssrc-update", t, a.audioSsrcs[t], s))
+        for (let e of (p === g.Z.HIGH ? o[_] = b : p === g.Z.LOW && (o[_] = 50), a.supportsSeamless && u || (c = [_]), i)) c.includes(e.ssrc) || delete a.framesReceived[e.ssrc];
+        (n.includes(t) || true !== a.remoteVideoSsrcs[t] && !(0, l.Z)(a.remoteVideoSsrcs[t], c)) && (a.remoteVideoSsrcs[t] = [...c], a.emit("user-ssrc-update", t, a.audioSsrcs[t], c))
       }
       for (let [e, n] of Object.entries(a.audioSsrcs))(null == (t = a.connection) ? true : t.getLocalMute(e)) && (o[n] = 0);
       return A ? a.latestWants : (null == a.connection || i().isEqual(a.latestWants, o) || (a.latestWants = o, a.emit("update", o)), o)

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk570140 = require("./570140.js"),
   Chunk194359 = require("./194359.js"),
   Chunk855796 = require("./855796.js"),
-  Chunk497060 = require("./497060.js"),
+  Chunk128064 = require("./128064.js"),
   Chunk699516 = require("./699516.js"),
   Chunk885149 = require("./885149.jsx"),
   Chunk981631 = require("./981631.js");
@@ -77,7 +77,7 @@ function h(e) {
     location: r,
     onConfirm: i,
     onCancel: a
-  } = e, c = (0, o.pB)("useFriendRequestActions"), u = s.Z.isStranger(t);
+  } = e, c = (0, o.c_)("useFriendRequestActions"), u = s.Z.isStranger(t);
   return null == n && c && false !== u ? u && c ? void(0, l.c)({
     onConfirm: () => {
       p({
