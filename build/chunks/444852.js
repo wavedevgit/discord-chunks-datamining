@@ -195,7 +195,7 @@ class F extends Chunk861687.Z {
         }, t, n), {
           streamKey: this.streamKey
         })), e === w.hes.RTC_CONNECTED) {
-        var r, i, s, c, u, d, f;
+        var r, i, s, c, u, d, f, _;
         null == (r = this._connection) || r.on(a.Sh.ScreenshareFinish, (e, t, n, r, i, a, o, s, l, c, u, d, f, _, m, g) => {
           let E = this.getMediaSessionId(),
             b = this.getRTCConnectionId(),
@@ -319,7 +319,21 @@ class F extends Chunk861687.Z {
             time_remote_user_to_secure_frame_local_key_ratchet_set: true !== e.setLocalSecureFrameKeyRatchetTimestamp && true !== e.remoteUserCreatedTimestamp ? Number(e.setLocalSecureFrameKeyRatchetTimestamp - e.remoteUserCreatedTimestamp) : null,
             time_remote_user_to_first_frame_decrypted: true !== e.firstFrameDecryptedTimestamp && true !== e.remoteUserCreatedTimestamp ? Number(e.firstFrameDecryptedTimestamp - e.remoteUserCreatedTimestamp) : null
           })
-        }), null == (f = this._connection) || f.on(a.Sh.Destroy, () => {
+        }), null == (f = this._connection) || f.on(a.Sh.FirstFrameEncryptedStats, e => {
+          let t = this.getStreamAnalyticsProperties();
+          T.default.track(w.rMx.STREAMER_FIRST_FRAME_ENCRYPTED, {
+            guild_id: t.guild_id,
+            channel_id: t.channel_id,
+            rtc_connection_id: t.rtc_connection_id,
+            media_session_id: t.media_session_id,
+            parent_media_session_id: t.parent_media_session_id,
+            time_local_user_to_video_receivers_set: true !== e.videoReceiversSetTimestamp && true !== e.localUserCreatedTimestamp ? Number(e.videoReceiversSetTimestamp - e.localUserCreatedTimestamp) : null,
+            time_local_user_to_mls_external_sender_updated: true !== e.updateMLSExternalSenderTimestamp && true !== e.localUserCreatedTimestamp ? Number(e.updateMLSExternalSenderTimestamp - e.localUserCreatedTimestamp) : null,
+            time_local_user_to_secure_frame_remote_key_ratchet_set: true !== e.setRemoteSecureFrameKeyRatchetTimestamp && true !== e.localUserCreatedTimestamp ? Number(e.setRemoteSecureFrameKeyRatchetTimestamp - e.localUserCreatedTimestamp) : null,
+            time_local_user_to_secure_frame_local_key_ratchet_set: true !== e.setLocalSecureFrameKeyRatchetTimestamp && true !== e.localUserCreatedTimestamp ? Number(e.setLocalSecureFrameKeyRatchetTimestamp - e.localUserCreatedTimestamp) : null,
+            time_local_user_to_first_frame_encrypted: true !== e.firstFrameEncryptedTimestamp && true !== e.localUserCreatedTimestamp ? Number(e.firstFrameEncryptedTimestamp - e.localUserCreatedTimestamp) : null
+          })
+        }), null == (_ = this._connection) || _.on(a.Sh.Destroy, () => {
           this.errorTimer.stop()
         })
       }

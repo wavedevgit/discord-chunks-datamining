@@ -34,7 +34,7 @@ function g(e) {
 function E(e, t) {
   let {
     enabled: n
-  } = f.t.useExperiment({
+  } = f.tL.useExperiment({
     location: t
   }, {
     autoTrackExposure: false
@@ -46,8 +46,8 @@ function E(e, t) {
     bot: u
   } = null != l ? l : {
     bot: null
-  };
-  return !!n && null != e && ((null == e ? true : e.embeddedActivityConfig) == null || !!g({
+  }, d = (0, f.b0)(null == e ? true : e.id);
+  return null != e && (!!n || !!d) && ((null == e ? true : e.embeddedActivityConfig) == null || !!g({
     countryCode: null == r ? true : r.alpha2,
     activity: e.embeddedActivityConfig
   })) && (!!m(e) || null != a && null != u && null != l && !!(0, o.ye)(l) && ((null == l ? true : l.embeddedActivityConfig) == null || !!g({
