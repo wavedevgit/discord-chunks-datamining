@@ -816,7 +816,7 @@ let tl = (0, Chunk112724.Z)(ti),
       U = (0, p.e7)([eW.Z], () => null != c && c.isVocalThread() && !d().isEmpty(eW.Z.getVoiceStatesForChannel(c.id)), [c]),
       H = null != c && c.isPrivate() && !k && j,
       F = (null == c ? true : c.isGuildVocal()) || H || U,
-      V = (0, p.e7)([B.Z], () => B.Z.getFrameLayoutMode() === e3.U.FOCUSED),
+      V = (0, p.e7)([B.Z], () => B.Z.getFrameLayoutMode() === e2.U.FOCUSED),
       {
         welcomeModalChannelId: W
       } = (0, u.TH)(),
@@ -876,7 +876,7 @@ let tl = (0, Chunk112724.Z)(ti),
       let e = eO && !e_,
         t = eO && e_ && (null == c ? true : c.id) !== ej;
       (e || t) && (0, G.Q3)(h.z.ACTIVITY_GDM_CALL_TOOLTIP, {
-        dismissAction: e2.L.AUTO
+        dismissAction: e3.L.AUTO
       })
     }, [null == c ? true : c.id, ej, e_, eO]);
     let ex = (0, f.f9)();
