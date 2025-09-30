@@ -9,5 +9,6 @@ module.exports = {
   nameplatePreview: "nameplatePreview__39b32",
   nameplateTopLeft: "nameplateTopLeft__39b32",
   nameplateBottomRight: "nameplateBottomRight__39b32",
-  removeItemButton: "removeItemButton__39b32"
+  removeItemButton: "removeItemButton__39b32",
+  overlay: "overlay__39b32"
 }

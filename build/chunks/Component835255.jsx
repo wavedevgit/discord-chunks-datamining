@@ -2,7 +2,7 @@
 /** chunk id: 835255, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => y
+  Z: () => O
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,24 +19,39 @@ var Chunk951288 = require("./951288.js"),
   Chunk876917 = require("./876917.jsx"),
   Chunk461631 = require("./461631.jsx"),
   Chunk474936 = require("./474936.js"),
+  Chunk388032 = require("./388032.jsx"),
   Chunk988388 = require("./988388.js");
 
-function y(e) {
+function O(e) {
   let {
     item: t,
     profileOwner: r,
-    wishlistId: y,
-    isOwner: O
-  } = e, j = i.useRef(null), x = (0, o.Z)(j), P = t.collectiblesItem, {
-    analyticsLocations: S
-  } = (0, u.ZP)();
+    wishlistId: O,
+    isOwner: j
+  } = e, x = i.useRef(null), P = (0, o.Z)(x), S = t.collectiblesItem, {
+    analyticsLocations: I
+  } = (0, u.ZP)(), w = () => {
+    j ? ((0, s.pTH)(), (0, d.mK)({
+      analyticsLocations: I,
+      analyticsSource: c.Z.USER_PROFILE_WISHLIST,
+      openInLayer: false,
+      initialProductSkuId: t.skuId
+    })) : (0, h.Z)({
+      skuId: t.skuId,
+      isGift: true,
+      giftingOrigin: v.Wt.USER_PROFILE_WISHLIST,
+      analyticsLocations: I,
+      giftRecipient: r,
+      variantsReturnStyle: a.v.VARIANTS_GROUP
+    })
+  };
   return (0, n.jsxs)("div", {
-    className: b.container,
+    className: y.container,
     children: [(0, n.jsx)(s.ua7, {
       text: t.skuName,
       children: e => {
-        var i, o;
-        return (0, n.jsx)(s.P3F, (i = function(e) {
+        var i, a;
+        return (0, n.jsxs)(s.P3F, (i = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var r = null != arguments[t] ? arguments[t] : {},
               n = Object.keys(r);
@@ -53,59 +68,45 @@ function y(e) {
             })
           }
           return e
-        }({}, e), o = o = {
-          className: b.card,
-          innerRef: j,
-          onClick: () => {
-            O ? ((0, s.pTH)(), (0, d.mK)({
-              analyticsLocations: S,
-              analyticsSource: c.Z.USER_PROFILE_WISHLIST,
-              openInLayer: false,
-              initialProductSkuId: t.skuId
-            })) : (0, h.Z)({
-              skuId: t.skuId,
-              isGift: true,
-              giftingOrigin: v.Wt.USER_PROFILE_WISHLIST,
-              analyticsLocations: S,
-              giftRecipient: r,
-              variantsReturnStyle: a.v.VARIANTS_GROUP
-            })
-          },
+        }({}, e), a = a = {
+          className: y.card,
+          innerRef: x,
+          onClick: w,
           "aria-label": t.skuName,
-          children: (0, n.jsx)("div", {
-            className: b.cardPreview,
+          children: [(0, n.jsx)("div", {
+            className: y.cardPreview,
             children: (() => {
-              switch (P.type) {
+              switch (S.type) {
                 case l.Z.PROFILE_EFFECT:
                   return (0, n.jsx)("div", {
-                    className: b.profileEffectPreview,
+                    className: y.profileEffectPreview,
                     children: (0, n.jsx)(p.Z, {
-                      profileEffectId: P.id,
-                      isHovering: x,
+                      profileEffectId: S.id,
+                      isHovering: P,
                       isPurchased: false,
                       removeSetHeight: true
                     })
                   });
                 case l.Z.AVATAR_DECORATION:
                   return (0, n.jsx)("div", {
-                    className: b.avatarDecorationPreview,
+                    className: y.avatarDecorationPreview,
                     children: (0, n.jsx)(f.R, {
-                      item: P,
+                      item: S,
                       user: r,
-                      isHighlighted: x,
+                      isHighlighted: P,
                       isPurchased: false,
                       avatarSize: s.EFr.SIZE_80
                     })
                   });
                 case l.Z.NAMEPLATE:
                   return (0, n.jsxs)("div", {
-                    className: b.nameplatePreview,
+                    className: y.nameplatePreview,
                     children: [(0, n.jsx)("div", {
-                      className: b.nameplateTopLeft,
+                      className: y.nameplateTopLeft,
                       children: (0, n.jsx)(g.Z, {
                         user: r,
-                        nameplate: P,
-                        isHighlighted: x,
+                        nameplate: S,
+                        isHighlighted: P,
                         showPlaceholderUser: true,
                         showStatus: true,
                         isPurchased: false,
@@ -113,11 +114,11 @@ function y(e) {
                         width: 200
                       })
                     }), (0, n.jsx)("div", {
-                      className: b.nameplateBottomRight,
+                      className: y.nameplateBottomRight,
                       children: (0, n.jsx)(g.Z, {
                         user: r,
-                        nameplate: P,
-                        isHighlighted: x,
+                        nameplate: S,
+                        isHighlighted: P,
                         showPlaceholderUser: true,
                         showStatus: true,
                         isPurchased: false,
@@ -130,23 +131,35 @@ function y(e) {
                   return null
               }
             })()
-          })
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
+          }), P && (0, n.jsx)("div", {
+            className: y.overlay,
+            children: (0, n.jsx)(s.zxk, {
+              variant: "primary",
+              size: "sm",
+              text: b.intl.string(j ? b.t.FdGl5O : b.t.ilhtIS),
+              icon: j ? true : s.OgN,
+              onClick: e => {
+                e.stopPropagation(), w()
+              },
+              fullWidth: true
+            })
+          })]
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
           var r = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var n = Object.getOwnPropertySymbols(e);
             r.push.apply(r, n)
           }
           return r
-        })(Object(o)).forEach(function(e) {
-          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(o, e))
+        })(Object(a)).forEach(function(e) {
+          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(a, e))
         }), i))
       }
-    }), O && (0, n.jsx)(m.Z, {
+    }), j && (0, n.jsx)(m.Z, {
       iconSize: "sm",
       item: t,
-      wishlistId: y,
-      className: b.removeItemButton
+      wishlistId: O,
+      className: y.removeItemButton
     })]
   })
 }
