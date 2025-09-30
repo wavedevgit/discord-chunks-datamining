@@ -2,16 +2,14 @@
 /** chunk id: 663389, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => G
+  Z: () => L
 });
-var r, Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
-  Chunk442837 = require("./442837.js"),
+var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk594174 = require("./594174.js"),
   Chunk981631 = require("./981631.js");
 
-function u(e, t, n) {
+function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -20,95 +18,91 @@ function u(e, t, n) {
   }) : e[t] = n, e
 }
 
-function d(e) {
+function c(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      u(e, t, n[t])
+      l(e, t, n[t])
     })
   }
   return e
 }
-let f = Chunk981631.QZA.CLOSED,
-  _ = null,
-  p = null,
-  h = {},
-  m = {},
-  g = {},
+let u = Chunk981631.QZA.CLOSED,
+  d = null,
+  f = {},
+  _ = {},
+  p = {},
+  h = null,
+  m = null,
+  g = false,
   E = null,
-  b = null,
-  y = false,
-  O = false,
-  v = null,
-  I = null,
-  T = [],
-  S = null,
-  A = null;
+  b = [],
+  y = null;
 
-function C(e) {
-  y = true, N(e)
+function O(e) {
+  v(e)
 }
 
-function N(e) {
-  var t, n, r, i, a, o;
-  let s = l.default.getCurrentUser();
-  if (null == s) return R();
-  p = null != (t = e.section) ? t : p, S = null != (n = e.section) ? n : p, null != e.subsection && null != p && (h[p] = e.subsection), null != e.scrollPosition && null != p && (m[p] = e.scrollPosition), O = !!e.openWithoutBackstack, f = c.QZA.OPEN, g = {}, b = d({}, E = {
-    [c.oAB.ACCOUNT]: {
-      userId: s.id,
-      username: s.username,
-      discriminator: s.discriminator,
-      email: s.email,
-      avatar: s.avatar,
+function v(e) {
+  var t, n, r, i;
+  let a = o.default.getCurrentUser();
+  if (null == a) return I();
+  d = null != (t = e.section) ? t : d, null != e.subsection && null != d && (f[d] = e.subsection), null != e.scrollPosition && null != d && (_[d] = e.scrollPosition), g = !!e.openWithoutBackstack, u = s.QZA.OPEN, p = {}, m = c({}, h = {
+    [s.oAB.ACCOUNT]: {
+      userId: a.id,
+      username: a.username,
+      discriminator: a.discriminator,
+      email: a.email,
+      avatar: a.avatar,
       password: "",
       newPassword: null,
-      claimed: s.isClaimed()
+      claimed: a.isClaimed()
     }
-  }), v = null != (r = e.onClose) ? r : null, I = null != (i = e.analyticsLocation) ? i : null, T = null != (a = e.analyticsLocations) ? a : [], A = null != (o = e.searchParams) ? o : null
+  }), E = null != (n = e.analyticsLocation) ? n : null, b = null != (r = e.analyticsLocations) ? r : [], y = null != (i = e.searchParams) ? i : null
 }
 
-function R() {
-  f = Chunk981631.QZA.CLOSED, y = false, E = null, S = null, b = null, _ = null, p = null, h = {}, m = {}, v = null, I = null, T = [], A = null
+function I() {
+  u = Chunk981631.QZA.CLOSED, h = null, m = null, d = null, f = {}, _ = {}, E = null, b = [], y = null
 }
 
-function P(e) {
+function T(e) {
   var t;
-  _ = p, p = e.section, I = null, T = null != (t = e.analyticsLocations) ? t : [], null != e.subsection && (h[p] = e.subsection)
+  d = e.section, E = null, b = null != (t = e.analyticsLocations) ? t : [], null != e.subsection && (f[d] = e.subsection)
 }
 
-function w(e) {
+function S(e) {
   let {
     forSection: t
   } = e;
-  null != t ? delete h[t] : null != p && delete h[p]
+  null != t ? delete f[t] : null != d && delete f[d]
 }
 
-function D(e) {
+function A(e) {
   let {
     forSection: t
   } = e;
-  null != t ? delete m[t] : null != p && delete m[p]
+  null != t ? delete _[t] : null != d && delete _[d]
 }
 
-function L(e) {
+function C(e) {
   let {
     settings: t
   } = e;
-  null == b && (b = {});
-  let n = b[c.oAB.ACCOUNT];
-  b[c.oAB.ACCOUNT] = d({}, n, t)
+  null == m && (m = {});
+  let n = m[s.oAB.ACCOUNT];
+  m[s.oAB.ACCOUNT] = c({}, n, t)
 }
 
-function x() {
-  f = Chunk981631.QZA.SUBMITTING
+function N() {
+  u = Chunk981631.QZA.SUBMITTING
 }
 
-function j() {
+function R() {
   let e = Chunk594174.default.getCurrentUser();
-  M(), null != module && (b = d({}, E = {
+  P(), null != module && (m = c({}, h = {
     [Chunk981631.oAB.ACCOUNT]: {
       userId: module.id,
       username: module.username,
@@ -122,78 +116,62 @@ function j() {
   }))
 }
 
-function M() {
-  f = Chunk981631.QZA.OPEN, g = {}
+function P() {
+  u = Chunk981631.QZA.OPEN, p = {}
 }
 
-function k(e) {
+function w(e) {
   var t;
-  if (f !== c.QZA.SUBMITTING) returnfalse;
-  f = c.QZA.OPEN, p = c.oAB.ACCOUNT, g = null != (t = e.errors) ? t : {}
+  if (u !== s.QZA.SUBMITTING) returnfalse;
+  u = s.QZA.OPEN, d = s.oAB.ACCOUNT, p = null != (t = e.errors) ? t : {}
 }
-class U extends(r = Chunk442837.ZP.Store) {
+class D extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk594174.default)
   }
-  hasChanges() {
-    return null != b && null != E && !!this.isOpen() && !a().isEqual(b, E)
-  }
-  isOpen() {
-    return y
-  }
-  getPreviousSection() {
-    return _
-  }
   getSection() {
-    return p
+    return d
   }
   getSubsection() {
-    return null != p ? h[p] : null
+    return null != d ? f[d] : null
   }
   getScrollPosition() {
-    return null != p ? m[p] : null
-  }
-  shouldOpenWithoutBackstack() {
-    return O
+    return null != d ? _[d] : null
   }
   getAnalyticsLocation() {
-    return I
+    return E
   }
   getAnalyticsLocations() {
-    return T
+    return b
   }
-  getProps() {
-    return {
-      submitting: f === Chunk981631.QZA.SUBMITTING,
-      section: p,
-      subsection: null != p ? h[p] : null,
-      scrollPosition: null != p ? m[p] : null,
-      settings: b,
-      errors: g,
-      hasChanges: this.hasChanges(),
-      openWithoutBackstack: O,
-      analyticsLocation: I,
-      analyticsLocations: T,
-      initialSection: S,
-      searchParams: A
-    }
+  getErrors() {
+    return p
   }
-  get onClose() {
-    return v
+  getSubmitting() {
+    return u === Chunk981631.QZA.SUBMITTING
+  }
+  getSettings() {
+    return m
+  }
+  getOpenWithoutBackstack() {
+    return g
+  }
+  getSearchParams() {
+    return y
   }
 }
-u(U, "displayName", "UserSettingsModalStore");
-let G = new U(Chunk570140.Z, {
-  USER_SETTINGS_MODAL_OPEN: C,
-  USER_SETTINGS_MODAL_INIT: N,
-  USER_SETTINGS_MODAL_CLOSE: R,
-  LOGOUT: R,
-  USER_SETTINGS_MODAL_SUBMIT: x,
-  USER_SETTINGS_MODAL_SUBMIT_FAILURE: k,
-  USER_SETTINGS_MODAL_SET_SECTION: P,
-  USER_SETTINGS_MODAL_CLEAR_SUBSECTION: w,
-  USER_SETTINGS_MODAL_CLEAR_SCROLL_POSITION: D,
-  USER_SETTINGS_MODAL_UPDATE_ACCOUNT: L,
-  USER_SETTINGS_MODAL_SUBMIT_COMPLETE: M,
-  USER_SETTINGS_MODAL_RESET: j
+l(D, "displayName", "UserSettingsModalStore");
+let L = new D(Chunk570140.Z, {
+  USER_SETTINGS_MODAL_OPEN: O,
+  USER_SETTINGS_MODAL_INIT: v,
+  USER_SETTINGS_MODAL_CLOSE: I,
+  LOGOUT: I,
+  USER_SETTINGS_MODAL_SUBMIT: N,
+  USER_SETTINGS_MODAL_SUBMIT_FAILURE: w,
+  USER_SETTINGS_MODAL_SET_SECTION: T,
+  USER_SETTINGS_MODAL_CLEAR_SUBSECTION: S,
+  USER_SETTINGS_MODAL_CLEAR_SCROLL_POSITION: A,
+  USER_SETTINGS_MODAL_UPDATE_ACCOUNT: C,
+  USER_SETTINGS_MODAL_SUBMIT_COMPLETE: P,
+  USER_SETTINGS_MODAL_RESET: R
 })

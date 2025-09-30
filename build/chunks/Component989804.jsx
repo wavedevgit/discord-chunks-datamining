@@ -1,7 +1,7 @@
 /** Chunk was on 69470 **/
 /** chunk id: 989804, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => w
+  default: () => T
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk839469 = require("./839469.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let j = Chunk647438.forwardRef(function() {
+let L = Chunk647438.forwardRef(function() {
     Chunk45493.Z.trackExposure({
       location: "cd25e4_1"
     }), Chunk254901.Z.useExperiment({
@@ -40,47 +40,43 @@ let j = Chunk647438.forwardRef(function() {
       t = (0, Chunk984802.Ll)(),
       {
         section: n,
-        subsection: j,
-        analyticsLocation: w,
-        analyticsLocations: A
+        subsection: L,
+        analyticsLocation: T,
+        analyticsLocations: j
       } = (0, Chunk442837.cj)([Chunk663389.Z], () => {
         let e = Chunk663389.Z.getSection(),
-          t = Chunk663389.Z.getSubsection(),
-          {
-            analyticsLocation: n,
-            analyticsLocations: s
-          } = Chunk663389.Z.getProps();
+          t = Chunk663389.Z.getSubsection();
         return {
           section: module,
           subsection: exports,
-          analyticsLocation: require,
-          analyticsLocations: Chunk951288
+          analyticsLocation: Chunk663389.Z.getAnalyticsLocation(),
+          analyticsLocations: Chunk663389.Z.getAnalyticsLocations()
         }
       }),
-      C = (0, Chunk110924.Z)(require),
-      v = (0, Chunk110924.Z)(j),
-      y = (0, Chunk996733.Z7)(),
+      P = (0, Chunk110924.Z)(require),
+      w = (0, Chunk110924.Z)(L),
+      C = (0, Chunk996733.Z7)(),
       {
-        analyticsLocations: G
+        analyticsLocations: v
       } = (0, Chunk906732.ZP)(Chunk100527.Z.USER_SETTINGS);
     Chunk647438.useEffect(() => {
-      null != require && (require !== C || j !== v) && (0, Chunk88658.QB)({
+      null != require && (require !== P || L !== w) && (0, Chunk88658.QB)({
         destinationPane: require,
-        originPane: null != C ? C : null,
-        source: w,
-        subsection: j,
-        locationStack: A,
-        searchQuery: "" !== y ? y : null
+        originPane: null != P ? P : null,
+        source: T,
+        subsection: L,
+        locationStack: j,
+        searchQuery: "" !== C ? C : null
       })
-    }, [require, C, j, v, w, A, y]);
+    }, [require, P, L, w, T, j, C]);
     let {
-      hasSearchResults: L,
+      hasSearchResults: G,
       searchResults: R
-    } = (0, Chunk839469.F)(), U = (0, Chunk991346.VO)(), B = (0, Chunk991346.q8)(R), F = Chunk647438.useMemo(() => L ? B : U, [L, B, U]), I = (0, Chunk332473.b)(), N = (0, Chunk113434.iO)(), q = Chunk647438.useCallback(e => {
+    } = (0, Chunk839469.F)(), U = (0, Chunk991346.VO)(), B = (0, Chunk991346.q8)(R), F = Chunk647438.useMemo(() => G ? B : U, [G, B, U]), I = (0, Chunk332473.b)(), N = (0, Chunk113434.iO)(), q = Chunk647438.useCallback(e => {
       l.Z.setSection(e)
     }, []);
     return (0, Chunk951288.jsx)(Chunk906732.Gt, {
-      value: G,
+      value: v,
       children: (0, Chunk951288.jsx)(Chunk410575.Z, {
         root: true,
         page: Chunk981631.ZY5.USER_SETTINGS,
@@ -99,13 +95,13 @@ let j = Chunk647438.forwardRef(function() {
       })
     })
   }),
-  w = Chunk647438.forwardRef(function() {
-    let e = (0, Chunk442837.e7)([Chunk663389.Z], () => Chunk663389.Z.getProps().analyticsLocations),
+  T = Chunk647438.forwardRef(function() {
+    let e = (0, Chunk442837.e7)([Chunk663389.Z], () => Chunk663389.Z.getAnalyticsLocations()),
       {
         analyticsLocations: t
       } = (0, Chunk906732.ZP)(module);
     return (0, Chunk951288.jsx)(Chunk906732.Gt, {
       value: exports,
-      children: (0, Chunk951288.jsx)(j, {})
+      children: (0, Chunk951288.jsx)(L, {})
     })
   })

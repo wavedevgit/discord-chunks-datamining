@@ -147,7 +147,7 @@ function H() {
   var e, t, n, o;
   let O = (0, Chunk725727.YO)().length,
     R = (0, Chunk160913.U)(),
-    x = (0, Chunk442837.e7)([Chunk663389.Z], () => Chunk663389.Z.getProps().searchParams),
+    x = (0, Chunk442837.e7)([Chunk663389.Z], () => Chunk663389.Z.getSearchParams()),
     j = (0, Chunk631885.gU)(),
     k = (0, Chunk168308.bC)(),
     U = (0, Chunk924557.Go)(),
