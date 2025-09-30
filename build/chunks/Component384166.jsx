@@ -31,10 +31,10 @@ function O(e) {
   } = (0, f.KZ)(), [l, O] = i.useState(false), x = (0, o.Wu)([p.Z], () => {
     var e;
     return null != (e = p.Z.getSaveablePendingWidgets()) ? e : []
-  }), P = (0, o.Wu)([p.Z], () => p.Z.getChangedWidgets()), S = (0, o.Wu)([p.Z], () => p.Z.getRemovedWidgets()), w = (0, o.e7)([p.Z], () => p.Z.hasSaveablePendingChanges()), I = (0, o.e7)([p.Z], () => p.Z.isSubmitting), E = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), C = (0, c.Yzy)(w, {
+  }), P = (0, o.Wu)([p.Z], () => p.Z.getChangedWidgets()), S = (0, o.Wu)([p.Z], () => p.Z.getRemovedWidgets()), I = (0, o.e7)([p.Z], () => p.Z.hasSaveablePendingChanges()), w = (0, o.e7)([p.Z], () => p.Z.isSubmitting), C = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), E = (0, c.Yzy)(I, {
     from: {
       opacity: 0,
-      y: 80 * !E
+      y: 80 * !C
     },
     enter: {
       opacity: 1,
@@ -42,7 +42,7 @@ function O(e) {
     },
     leave: {
       opacity: 0,
-      y: 80 * !E
+      y: 80 * !C
     }
   });
   i.useEffect(() => {
@@ -55,8 +55,8 @@ function O(e) {
       d.S.unsubscribe(b.CkL.EMPHASIZE_NOTICE, t), null !== e && clearTimeout(e)
     }
   }, []), i.useEffect(() => {
-    w && c.uvj.announce(y.intl.string(y.t["0Y/qkJ"]))
-  }, [w]);
+    I && c.uvj.announce(y.intl.string(y.t["0Y/qkJ"]))
+  }, [I]);
   let N = i.useCallback(async () => {
       try {
         await h.Z.savePendingWidgets(x)
@@ -85,7 +85,7 @@ function O(e) {
     A = i.useCallback(() => {
       h.Z.clearPendingWidgets()
     }, []);
-  return C((e, r) => r ? (0, n.jsx)(s.animated.div, {
+  return E((e, r) => r ? (0, n.jsx)(s.animated.div, {
     className: t,
     style: e,
     children: (0, n.jsxs)("section", {
@@ -105,14 +105,14 @@ function O(e) {
           variant: "secondary",
           text: y.intl.string(y.t.yBZMsb),
           onClick: A,
-          disabled: !w || I
+          disabled: !I || w
         }), (0, n.jsx)(c.zxk, {
           size: "sm",
           variant: "primary",
           text: y.intl.string(y.t.R3BPHx),
           onClick: N,
-          loading: I,
-          disabled: !w || I
+          loading: w,
+          disabled: !I || w
         })]
       })]
     })

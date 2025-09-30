@@ -74,7 +74,7 @@ function O(e) {
   } = e, {
     placeholder: O,
     getAriaLabel: x
-  } = j[r], P = "small" === c, S = null == (t = (0, d.uV)().data) ? true : t.map(e => e.application_id), w = i.useMemo(() => {
+  } = j[r], P = "small" === c, S = null == (t = (0, d.uV)().data) ? true : t.map(e => e.application_id), I = i.useMemo(() => {
     switch (r) {
       case s.l.CURRENT_GAMES:
       case s.l.FAVORITE_GAMES:
@@ -92,16 +92,16 @@ function O(e) {
           applicationId: e
         })
     }
-  }, [r, S]), I = i.useCallback(() => {
-    u || null == w || ((0, h.qH)(r, w), b({
+  }, [r, S]), w = i.useCallback(() => {
+    u || null == I || ((0, h.qH)(r, I), b({
       action: "WIDGET_ADDED",
       widgetEdited: r
     }), (0, p.L$)(v.qb.WIDGET_ADDED), null == l || l())
-  }, [u, r, w, b, l]);
-  return null == w ? null : (0, n.jsxs)(o.P3F, {
+  }, [u, r, I, b, l]);
+  return null == I ? null : (0, n.jsxs)(o.P3F, {
     className: a()(y.addButtonContainer, P && y.sizeSmall, u && y.loading),
-    onClick: I,
-    "aria-label": x(w),
+    onClick: w,
+    "aria-label": x(I),
     "aria-busy": u,
     children: ["details" === O.variant ? (0, n.jsx)(m.i, {
       applicationId: O.applicationId,
@@ -118,7 +118,7 @@ function O(e) {
       }), (0, n.jsx)(o.Text, {
         variant: "text-md/medium",
         color: "header-primary",
-        children: (0, h.mR)(w)
+        children: (0, h.mR)(I)
       })]
     })]
   })

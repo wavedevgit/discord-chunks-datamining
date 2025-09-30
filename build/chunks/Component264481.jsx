@@ -2,8 +2,8 @@
 /** chunk id: 264481, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  P9: () => w,
-  Uf: () => E,
+  P9: () => I,
+  Uf: () => C,
   b0: () => S,
   s_: () => P
 }), require("./388685.js");
@@ -76,7 +76,7 @@ function S() {
   })
 }
 
-function w(e) {
+function I(e) {
   let {
     user: t,
     guildId: r,
@@ -106,7 +106,7 @@ function w(e) {
   })
 }
 
-function I() {
+function w() {
   let e = (0, Chunk410030.ZP)();
   return (0, Chunk951288.jsx)("div", {
     className: Chunk835540.connectionPlatforms,
@@ -123,7 +123,7 @@ function I() {
   })
 }
 
-function E(e) {
+function C(e) {
   let {
     onClose: t
   } = e, l = (0, u.P6)("UserProfileModalV2EmptyActivityCurrentUser"), s = i.useCallback(() => {
@@ -163,7 +163,7 @@ function E(e) {
   return (0, n.jsxs)(x, {
     heading: m.intl.string(m.t.VB6LWV),
     bodyText: m.intl.string(m.t.KpjsU1),
-    children: [(0, n.jsx)(I, {}), (0, n.jsxs)("div", {
+    children: [(0, n.jsx)(w, {}), (0, n.jsxs)("div", {
       className: v.buttonRow,
       children: [(0, n.jsx)(h.O1, {
         text: m.intl.string(m.t["/Hl24e"]),

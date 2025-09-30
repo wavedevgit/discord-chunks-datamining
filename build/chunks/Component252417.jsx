@@ -31,10 +31,10 @@ function O(e) {
     channelId: P,
     onSelect: S
   } = e, {
-    theme: w,
-    themeType: I
-  } = (0, p.z)(), E = i.useMemo(() => t.isNonUserBot() || (0, f.W)(t, P), [t, P]), {
-    activities: C,
+    theme: I,
+    themeType: w
+  } = (0, p.z)(), C = i.useMemo(() => t.isNonUserBot() || (0, f.W)(t, P), [t, P]), {
+    activities: E,
     isMobileOnline: N
   } = (0, l.cj)([h.Z], () => ({
     activities: h.Z.getActivities(t.id),
@@ -50,7 +50,7 @@ function O(e) {
     guildId: x
   });
   return (0, n.jsxs)(a.P3F, {
-    focusProps: I === v.l.MODAL_V2 ? {
+    focusProps: w === v.l.MODAL_V2 ? {
       offset: {
         top: 4,
         right: 4,
@@ -106,8 +106,8 @@ function O(e) {
       src: t.getAvatarURL(x, j),
       "aria-label": t.username,
       size: y,
-      status: E ? m.Skl.UNKNOWN : O,
-      statusBackdropColor: E ? true : (0, a.QFD)(w),
+      status: C ? m.Skl.UNKNOWN : O,
+      statusBackdropColor: C ? true : (0, a.QFD)(I),
       isMobile: N,
       className: b.avatar
     }), (0, n.jsxs)("div", {
@@ -118,7 +118,7 @@ function O(e) {
         discriminatorClass: b.discriminator
       }), (0, n.jsx)(d.Z, {
         user: t,
-        activities: C,
+        activities: E,
         applicationStream: A,
         voiceChannel: T
       })]

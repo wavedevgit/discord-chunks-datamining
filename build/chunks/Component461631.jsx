@@ -59,7 +59,7 @@ function d(e) {
         children: (0, n.jsx)(a.XHJ, {
           size: i,
           className: u.icon,
-          color: a.TVs.colors.STATUS_DANGER
+          color: a.TVs.colors.ICON_FEEDBACK_CRITICAL
         })
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
         var r = Object.keys(e);

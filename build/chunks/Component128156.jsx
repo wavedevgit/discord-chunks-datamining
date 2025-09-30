@@ -62,11 +62,11 @@ function N(e) {
     return e === l.Skl.OFFLINE || e === l.Skl.INVISIBLE
   }), H = U.length > 0 || null != M, Y = D && null == M && null == G && null != F, q = !z && (H || Y), V = L.length > 0, K = U.some(e => (0, a.Z)(e));
   if (!q && !V && B) return (0, n.jsx)("div", {
-    className: C.cards,
+    className: E.cards,
     children: Array.from({
       length: 8
     }).map((e, t) => (0, n.jsxs)("div", {
-      className: C.loadingItem,
+      className: E.loadingItem,
       children: [(0, n.jsx)(u.ZT, {
         width: 60,
         opacity: .08
@@ -88,14 +88,14 @@ function N(e) {
     })
   }
   return (0, n.jsxs)(S.F, {
-    className: C.scroller,
+    className: E.scroller,
     fade: true,
     children: [(() => {
       let e = W && R && !K;
       return q ? (0, n.jsx)(P.Z, {
-        heading: E.intl.string(E.t.J6STd3),
+        heading: C.intl.string(C.t.J6STd3),
         children: (0, n.jsxs)("ul", {
-          className: C.cards,
+          className: E.cards,
           children: [e && (0, n.jsx)("li", {
             children: (0, n.jsx)(v.Z, {
               variant: "horizontal"
@@ -131,22 +131,22 @@ function N(e) {
           })]
         })
       }) : e ? (0, n.jsx)(P.Z, {
-        heading: E.intl.string(E.t.J6STd3),
+        heading: C.intl.string(C.t.J6STd3),
         children: (0, n.jsx)(v.Z, {
           variant: "horizontal"
         })
       }) : null
     })(), V ? (0, n.jsx)(P.Z, {
-      heading: E.intl.string(E.t.jzgEoK),
-      introText: W ? E.intl.format(E.t["4bk9Ag"], {
+      heading: C.intl.string(C.t.jzgEoK),
+      introText: W ? C.intl.format(C.t["4bk9Ag"], {
         learnMoreHook: (e, t) => (0, n.jsx)(l.eee, {
-          href: g.Z.getArticleURL(I.BhN.ACTIVITY_STATUS_SETTINGS),
+          href: g.Z.getArticleURL(w.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e
         }, t)
       }) : true,
-      scrollIntoView: T === w.Tb.RECENT_ACTIVITY,
+      scrollIntoView: T === I.Tb.RECENT_ACTIVITY,
       children: (0, n.jsx)("ul", {
-        className: C.cards,
+        className: E.cards,
         children: L.map(e => (0, n.jsx)("li", {
           children: (0, n.jsx)(y.Z, {
             user: t,

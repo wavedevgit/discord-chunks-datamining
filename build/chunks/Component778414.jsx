@@ -106,14 +106,14 @@ function _(e) {
     }, [e, t, r]), "GB" === e && r
   })(), O = 0 === a.length && o, P = i.useMemo(() => a.filter(p.Wc), [a]), S = i.useMemo(() => a.filter(e => e instanceof h.q), [a]);
   (0, y.ZP)(P), (0, m.J)(o, P);
-  var w = t.id;
+  var I = t.id;
   (0, b.s)(S);
   let {
-    data: I
-  } = (0, d.O)(w), N = i.useRef(I);
-  return (N.current = I, i.useEffect(() => {
-    null !== N.current && (0, s.Xf)(C.McO.USER_APPLICATION_IDENTITIES(w))
-  }, [w]), O) ? (0, n.jsx)(E.Z, {}) : (0, n.jsxs)(n.Fragment, {
+    data: w
+  } = (0, d.O)(I), N = i.useRef(w);
+  return (N.current = w, i.useEffect(() => {
+    null !== N.current && (0, s.Xf)(E.McO.USER_APPLICATION_IDENTITIES(I))
+  }, [I]), O) ? (0, n.jsx)(C.Z, {}) : (0, n.jsxs)(n.Fragment, {
     children: [o && v && (0, n.jsx)(D, {}), a.map((e, i) => (0, n.jsx)(Z, {
       widget: e,
       user: t,
@@ -132,8 +132,8 @@ function R(e) {
   (0, v.r)({
     container: l.current
   });
-  let s = (0, w.h)(t.id);
-  return (0, n.jsxs)(I.F, {
+  let s = (0, I.h)(t.id);
+  return (0, n.jsxs)(w.F, {
     "data-scroller": true,
     scrollerRef: l,
     className: a()(A.scroller, {
