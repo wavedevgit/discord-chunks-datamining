@@ -23,12 +23,12 @@ let m = e => {
     product: t,
     primary: r,
     selectedVariantIndex: m,
-    returnRef: v,
-    onSuccess: O,
+    returnRef: O,
+    onSuccess: v,
     tooltipDelay: j
   } = e, {
     analyticsLocations: P
-  } = (0, s.ZP)(), _ = l.useRef(null), E = (0, d.sp)(), C = (0, f.Z)();
+  } = (0, s.ZP)(), _ = l.useRef(null), E = (0, d.sp)(), x = (0, f.Z)();
   return (0, p.x6)(t) ? null : (0, n.jsx)(o.ua7, {
     text: y.intl.string(y.t["JCFN//"]),
     delay: j,
@@ -58,7 +58,7 @@ let m = e => {
         icon: o.OgN,
         size: "md",
         onClick: e => {
-          e.stopPropagation(), u.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+          e.stopPropagation(), u.default.track(h.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
             collectibles_shop_session_id: null == E ? true : E.sessionId,
             sku_id: t.skuId,
             page_section: null == E ? true : E.pageSection,
@@ -66,19 +66,19 @@ let m = e => {
             tile_type: i.Z[t.type],
             tile_position: String(null == E ? true : E.tilePosition),
             cta_name: "gift button",
-            page_type: C || "home"
+            page_type: x || "home"
           }), (0, c.Z)({
             skuId: (0, b.S)({
               product: t,
               selectedVariantIndex: m
             }),
             isGift: true,
-            giftingOrigin: h.Wt.SHOP_PAGE,
+            giftingOrigin: g.Wt.SHOP_PAGE,
             analyticsLocations: P,
-            returnRef: v,
+            returnRef: O,
             variantsReturnStyle: a.v.VARIANTS_GROUP,
-            onClose: null != O ? e => {
-              e && O()
+            onClose: null != v ? e => {
+              e && v()
             } : true
           })
         }

@@ -44,15 +44,15 @@ function Z(e) {
     recent: S,
     stream: C
   } = (0, m.Z)(n.id), {
-    voiceChannel: w,
-    voiceActivity: _
+    voiceChannel: _,
+    voiceActivity: w
   } = (0, p.Z)({
     userId: n.id,
     guildId: Z
   }), D = (0, i.e7)([s.Z], () => s.Z.isFetchingUserOutbox(n.id)), R = n.id === t.id, L = (0, i.e7)([c.Z, a.Z], () => {
     let e = R ? c.Z.getStatus() : a.Z.getStatus(n.id);
     return e === r.Skl.OFFLINE || e === r.Skl.INVISIBLE
-  }), M = A.length > 0 || null != C, U = T && null == C && null == _ && null != w, k = !L && (M || U), B = S.length > 0;
+  }), M = A.length > 0 || null != C, U = T && null == C && null == w && null != _, k = !L && (M || U), B = S.length > 0;
   return k || B || !D ? (0, l.jsxs)(r.zJl, {
     className: O.scroller,
     fade: true,
@@ -64,7 +64,7 @@ function Z(e) {
           children: (0, l.jsx)(v.Z, {
             user: n,
             currentUser: t,
-            voiceChannel: w,
+            voiceChannel: _,
             onClose: N
           })
         }), null != C && (0, l.jsx)("li", {

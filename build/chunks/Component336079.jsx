@@ -29,24 +29,24 @@ let p = (0, Chunk647438.createContext)({
       analyticsLocations: i,
       onCheckoutSuccess: f,
       children: b
-    } = e, g = (0, a.e7)([c.default], () => u.ZP.canUseCollectibles(c.default.getCurrentUser())), {
-      product: h
+    } = e, h = (0, a.e7)([c.default], () => u.ZP.canUseCollectibles(c.default.getCurrentUser())), {
+      product: g
     } = (0, o.T)(t), y = (0, l.useMemo)(() => {
-      if (null == h) return null;
+      if (null == g) return null;
       let e = (0, s.T)({
-          product: h,
-          isPremiumUser: g
+          product: g,
+          isPremiumUser: h
         }),
         t = null !== e ? e.amount : null;
       return {
         orbPrice: e,
         orbPriceAmount: t,
-        product: h
+        product: g
       }
-    }, [h, g]), {
+    }, [g, h]), {
       redeemVirtualCurrency: m,
-      isSubmitting: v,
-      error: O
+      isSubmitting: O,
+      error: v
     } = (0, d.f)(), j = (0, l.useCallback)(e => {
       m(t, r, r => {
         f({
@@ -62,8 +62,8 @@ let p = (0, Chunk647438.createContext)({
         analyticsLocations: null != i ? i : [],
         orbProductContext: y,
         onRedeemVirtualCurrency: j,
-        isRedeeming: v,
-        orbRedemptionError: O
+        isRedeeming: O,
+        orbRedemptionError: v
       },
       children: b
     })

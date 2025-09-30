@@ -1,4 +1,4 @@
-/** Chunk was on 51678 **/
+/** Chunk was on 73696 **/
 /** chunk id: 840367, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => s
@@ -16,7 +16,7 @@ function s(e) {
     userId: t,
     headingId: n,
     widget: i,
-    disableInteraction: a = false,
+    disableInteraction: o = false,
     title: l,
     subtitle: s,
     actionButtons: d = []
@@ -25,12 +25,12 @@ function s(e) {
     className: c.headerRow,
     children: [(0, r.jsxs)("div", {
       className: c.title,
-      children: [(0, r.jsx)(o.X6q, {
+      children: [(0, r.jsx)(a.X6q, {
         variant: "heading-sm/medium",
         color: "text-default",
         id: n,
         children: l
-      }), null != s && (0, r.jsx)(o.Text, {
+      }), null != s && (0, r.jsx)(a.Text, {
         variant: "text-xs/normal",
         color: "text-secondary",
         children: s
@@ -38,7 +38,7 @@ function s(e) {
     }), (0, r.jsx)(u, {
       widget: i,
       actionButtons: d,
-      disabledInteraction: a,
+      disabledInteraction: o,
       userId: t
     })]
   })
@@ -48,10 +48,10 @@ function u(e) {
   let {
     widget: t,
     actionButtons: n,
-    disabledInteraction: o,
+    disabledInteraction: a,
     userId: s
-  } = e, u = (0, i.e7)([a.default], () => a.default.getId());
-  return o ? null : null != n && n.length > 0 ? (0, r.jsx)("div", {
+  } = e, u = (0, i.e7)([o.default], () => o.default.getId());
+  return a ? null : null != n && n.length > 0 ? (0, r.jsx)("div", {
     className: c.actions,
     children: n
   }) : u !== s ? (0, r.jsx)("div", {

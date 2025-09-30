@@ -1,6 +1,5 @@
-/** Chunk was on 74477 **/
+/** Chunk was on 49902 **/
 /** chunk id: 778414, original params: e,t,r (module,exports,require) **/
-"use strict";
 require.d(exports, {
   C: () => R,
   Z: () => Z
@@ -110,10 +109,10 @@ function _(e) {
   (0, b.s)(S);
   let {
     data: w
-  } = (0, d.O)(I), k = i.useRef(w);
-  return (k.current = w, i.useEffect(() => {
-    null !== k.current && (0, s.Xf)(E.McO.USER_APPLICATION_IDENTITIES(I))
-  }, [I]), j) ? (0, n.jsx)(C.Z, {}) : (0, n.jsxs)(n.Fragment, {
+  } = (0, d.O)(I), N = i.useRef(w);
+  return (N.current = w, i.useEffect(() => {
+    null !== N.current && (0, s.Xf)(C.McO.USER_APPLICATION_IDENTITIES(I))
+  }, [I]), j) ? (0, n.jsx)(E.Z, {}) : (0, n.jsxs)(n.Fragment, {
     children: [o && v && (0, n.jsx)(D, {}), a.map((e, i) => (0, n.jsx)(Z, {
       widget: e,
       user: t,
@@ -136,8 +135,8 @@ function R(e) {
   return (0, n.jsxs)(w.F, {
     "data-scroller": true,
     scrollerRef: l,
-    className: a()(N.scroller, {
-      [N.hasToolbar]: s
+    className: a()(k.scroller, {
+      [k.hasToolbar]: s
     }),
     fade: true,
     children: [(0, n.jsx)(P.Z, {

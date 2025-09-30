@@ -25,7 +25,7 @@ function f(e, t, n) {
 }
 let v = new Chunk710845.Z("UploadArea");
 
-function h() {
+function g() {
   return (0, Chunk951288.jsxs)("div", {
     children: [(0, Chunk951288.jsx)("div", {
       className: a()(Chunk162130.sparkleWhite, Chunk995751.sparkleOne)
@@ -44,7 +44,7 @@ function h() {
     })]
   })
 }
-class g extends Chunk647438.Component {
+class h extends Chunk647438.Component {
   componentDidMount() {
     let e = this.elementDOMRef.current;
     null != module && (module.ownerDocument.body.addEventListener("dragover", this.handleDragOver, false), module.ownerDocument.body.addEventListener("drop", this.handleDragLeave, false), module.addEventListener("dragover", this.handleDragOverZone, false), module.addEventListener("dragleave", this.handleDragLeaveZone, false), module.addEventListener("drop", this.handleDrop, false))
@@ -70,7 +70,7 @@ class g extends Chunk647438.Component {
       style: Chunk647438,
       children: (0, Chunk951288.jsxs)("div", {
         className: Chunk995751.uploadDropModal,
-        children: [this.state.isDragging && (0, Chunk951288.jsx)(h, {}), (0, Chunk951288.jsx)("div", {
+        children: [this.state.isDragging && (0, Chunk951288.jsx)(g, {}), (0, Chunk951288.jsx)("div", {
           className: Chunk995751.bgScale
         }), (0, Chunk951288.jsxs)("div", {
           className: Chunk995751.inner,
@@ -157,4 +157,4 @@ class g extends Chunk647438.Component {
     })
   }
 }
-let b = g
+let b = h

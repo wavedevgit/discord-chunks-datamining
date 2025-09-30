@@ -1,8 +1,7 @@
-/** Chunk was on 74477 **/
+/** Chunk was on 49902 **/
 /** chunk id: 128156, original params: e,t,r (module,exports,require) **/
-"use strict";
 require.d(exports, {
-  Z: () => k
+  Z: () => N
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -32,12 +31,12 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk158069 = require("./158069.js");
 
-function k(e) {
+function N(e) {
   let {
     user: t,
     currentUser: r,
-    displayProfile: k,
-    guildId: N,
+    displayProfile: N,
+    guildId: k,
     channelId: A,
     subsection: T,
     onClose: Z
@@ -56,17 +55,17 @@ function k(e) {
     voiceActivity: G
   } = (0, m.Z)({
     userId: t.id,
-    guildId: N
-  }), B = (0, i.e7)([o.Z], () => o.Z.isFetchingUserOutbox(t.id)), W = t.id === r.id, z = (0, i.e7)([f.Z, d.Z], () => {
-    let e = W ? f.Z.getStatus() : d.Z.getStatus(t.id);
+    guildId: k
+  }), W = (0, i.e7)([o.Z], () => o.Z.isFetchingUserOutbox(t.id)), B = t.id === r.id, z = (0, i.e7)([f.Z, d.Z], () => {
+    let e = B ? f.Z.getStatus() : d.Z.getStatus(t.id);
     return e === l.Skl.OFFLINE || e === l.Skl.INVISIBLE
-  }), H = L.length > 0 || null != M, Y = D && null == M && null == G && null != F, q = !z && (H || Y), V = U.length > 0, K = L.some(e => (0, a.Z)(e));
-  if (!q && !V && B) return (0, n.jsx)("div", {
-    className: E.cards,
+  }), H = L.length > 0 || null != M, q = D && null == M && null == G && null != F, V = !z && (H || q), Y = U.length > 0, K = L.some(e => (0, a.Z)(e));
+  if (!V && !Y && W) return (0, n.jsx)("div", {
+    className: C.cards,
     children: Array.from({
       length: 8
     }).map((e, t) => (0, n.jsxs)("div", {
-      className: E.loadingItem,
+      className: C.loadingItem,
       children: [(0, n.jsx)(u.ZT, {
         width: 60,
         opacity: .08
@@ -76,31 +75,31 @@ function k(e) {
       })]
     }, t))
   });
-  if (!q && !V && !B) {
+  if (!V && !Y && !W) {
     var J;
-    return W ? (0, n.jsx)(x.Uf, {
+    return B ? (0, n.jsx)(x.Uf, {
       onClose: Z
     }) : (0, n.jsx)(x.P9, {
       user: t,
-      guildId: null != (J = null == k ? true : k.guildId) ? J : N,
+      guildId: null != (J = null == N ? true : N.guildId) ? J : k,
       channelId: A,
       onClose: Z
     })
   }
   return (0, n.jsxs)(S.F, {
-    className: E.scroller,
+    className: C.scroller,
     fade: true,
     children: [(() => {
-      let e = W && R && !K;
-      return q ? (0, n.jsx)(P.Z, {
-        heading: C.intl.string(C.t.J6STd3),
+      let e = B && R && !K;
+      return V ? (0, n.jsx)(P.Z, {
+        heading: E.intl.string(E.t.J6STd3),
         children: (0, n.jsxs)("ul", {
-          className: E.cards,
+          className: C.cards,
           children: [e && (0, n.jsx)("li", {
             children: (0, n.jsx)(v.Z, {
               variant: "horizontal"
             })
-          }), !_ && Y && (0, n.jsx)("li", {
+          }), !_ && q && (0, n.jsx)("li", {
             children: (0, n.jsx)(j.Z, {
               user: t,
               currentUser: r,
@@ -121,7 +120,7 @@ function k(e) {
               activity: e,
               onClose: Z
             })
-          }, "live-".concat(i))), _ && Y && (0, n.jsx)("li", {
+          }, "live-".concat(i))), _ && q && (0, n.jsx)("li", {
             children: (0, n.jsx)(j.Z, {
               user: t,
               currentUser: r,
@@ -131,14 +130,14 @@ function k(e) {
           })]
         })
       }) : e ? (0, n.jsx)(P.Z, {
-        heading: C.intl.string(C.t.J6STd3),
+        heading: E.intl.string(E.t.J6STd3),
         children: (0, n.jsx)(v.Z, {
           variant: "horizontal"
         })
       }) : null
-    })(), V ? (0, n.jsx)(P.Z, {
-      heading: C.intl.string(C.t.jzgEoK),
-      introText: W ? C.intl.format(C.t["4bk9Ag"], {
+    })(), Y ? (0, n.jsx)(P.Z, {
+      heading: E.intl.string(E.t.jzgEoK),
+      introText: B ? E.intl.format(E.t["4bk9Ag"], {
         learnMoreHook: (e, t) => (0, n.jsx)(l.eee, {
           href: g.Z.getArticleURL(w.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e
@@ -146,7 +145,7 @@ function k(e) {
       }) : true,
       scrollIntoView: T === I.Tb.RECENT_ACTIVITY,
       children: (0, n.jsx)("ul", {
-        className: E.cards,
+        className: C.cards,
         children: U.map(e => (0, n.jsx)("li", {
           children: (0, n.jsx)(y.Z, {
             user: t,

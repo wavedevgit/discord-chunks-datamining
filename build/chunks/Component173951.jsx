@@ -1,4 +1,4 @@
-/** Chunk was on 51678 **/
+/** Chunk was on 73696 **/
 /** chunk id: 173951, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -39,13 +39,13 @@ function c(e) {
       var n, r, i = function(e, t) {
         if (null == e) return {};
         var n, r, i = {},
-          o = Object.keys(e);
-        for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+          a = Object.keys(e);
+        for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
         return i
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var o = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+        var a = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
       }
       return i
     }(e, ["user", "widget", "containerClassName"]);
@@ -54,12 +54,12 @@ function c(e) {
     widget: s,
     className: u
   }, d), n = n = {
-    children: s.games.length > 0 ? (0, r.jsx)(a.Z, l({
+    children: s.games.length > 0 ? (0, r.jsx)(o.Z, l({
       userId: c.id,
       games: s.games,
       disableInteraction: d.disableInteraction,
       widgetType: s.type
-    }, d)) : (0, r.jsx)(o.Z, {
+    }, d)) : (0, r.jsx)(a.Z, {
       widgetType: s.type
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

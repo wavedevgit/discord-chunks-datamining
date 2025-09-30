@@ -1,4 +1,4 @@
-/** Chunk was on 51678 **/
+/** Chunk was on 73696 **/
 /** chunk id: 853072, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -13,13 +13,13 @@ function c(e) {
   let {
     userId: t
   } = (0, l.z)(), n = (0, i.N)(e);
-  return (0, r.Wu)([o.default], () => {
-    let e = o.default.getCurrentUser(),
+  return (0, r.Wu)([a.default], () => {
+    let e = a.default.getCurrentUser(),
       r = new Set;
     return n.forEach(e => {
       r.add(e.author_id), e.participants.forEach(e => {
         r.add(e)
       })
-    }), Array.from(r).filter(n => n !== (null == e ? true : e.id) && n !== t).map(e => o.default.getUser(e)).filter(a.lm)
+    }), Array.from(r).filter(n => n !== (null == e ? true : e.id) && n !== t).map(e => a.default.getUser(e)).filter(o.lm)
   }, [n, t])
 }

@@ -1,7 +1,7 @@
 /** Chunk was on 204 **/
 /** chunk id: 325834, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  r: () => O
+  r: () => v
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk233971 = require("./233971.js");
 
-function h(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -64,31 +64,31 @@ function m(e, t) {
   }
   return l
 }
-let v = e => {
+let O = e => {
     let {
       variantGroupProduct: t,
       variant: r,
       variantIndex: i,
       totalVariants: u,
-      selectedVariantIndex: v,
-      onEnter: O,
+      selectedVariantIndex: O,
+      onEnter: v,
       onLeave: j
     } = e, {
       isPurchased: P
     } = (0, p.L)(r), _ = (0, o.JA)("shop-variants-group-".concat(t.storeListingId, "-").concat(i)), {
       onFocus: E
-    } = _, C = m(_, ["onFocus"]), x = l.useCallback(e => {
+    } = _, x = m(_, ["onFocus"]), C = l.useCallback(e => {
       e.preventDefault(), e.stopPropagation(), (0, d.$)(t, i), E()
     }, [E, t, i]), S = (0, f.SQ)(r);
     return (0, n.jsx)(c.ua7, {
       text: b.intl.string(b.t["6cfuDg"]),
       "aria-label": false,
       shouldShow: P,
-      children: e => (0, n.jsx)(c.P3F, y(h({}, C), {
+      children: e => (0, n.jsx)(c.P3F, y(g({}, x), {
         tag: "li",
         onMouseEnter: () => {
           var t;
-          O(), null == (t = e.onMouseEnter) || t.call(e)
+          v(), null == (t = e.onMouseEnter) || t.call(e)
         },
         onMouseLeave: () => {
           var t;
@@ -96,20 +96,20 @@ let v = e => {
         },
         onFocus: () => {
           var t;
-          O(), null == (t = e.onMouseEnter) || t.call(e)
+          v(), null == (t = e.onMouseEnter) || t.call(e)
         },
         onBlur: () => {
           var t;
           j(), null == (t = e.onMouseLeave) || t.call(e)
         },
-        onClick: x,
+        onClick: C,
         onKeyDown: e => {
-          e.key === s.R8.ENTER && x(e)
+          e.key === s.R8.ENTER && C(e)
         },
-        className: g.thumbnailVariant,
+        className: h.thumbnailVariant,
         children: (0, n.jsxs)("div", {
-          className: a()(g.thumbnailImage, {
-            [g.selected]: i === v
+          className: a()(h.thumbnailImage, {
+            [h.selected]: i === O
           }),
           style: {
             zIndex: u - i
@@ -117,12 +117,12 @@ let v = e => {
           children: [null != S && "" !== S && (0, n.jsx)("img", {
             src: S,
             alt: r.variantLabel,
-            className: g.thumbnailImg,
+            className: h.thumbnailImg,
             onError: e => {
               e.target.style.display = "none"
             }
           }), P ? (0, n.jsx)("div", {
-            className: g.purchasedIndicator,
+            className: h.purchasedIndicator,
             children: (0, n.jsx)(c.kSu, {
               color: "var(--text-primary)"
             })
@@ -131,7 +131,7 @@ let v = e => {
       }))
     })
   },
-  O = e => {
+  v = e => {
     var t, r;
     let {
       variantGroupProduct: l,
@@ -139,9 +139,9 @@ let v = e => {
       previewingVariantIndexProps: d,
       setIsHoveringOnSwitch: p,
       selectedVariantIndex: f
-    } = e, b = d.previewingVariantIndex, O = null == (t = l.variants) ? true : t[f], j = null !== b ? null == (r = l.variants) ? true : r[b] : true, P = (0, u.Z)("shop-variants-group-".concat(l.storeListingId), s.hy.HORIZONTAL);
-    if (null == O) return null;
-    let _ = null != j ? j.variantLabel : null == O ? true : O.variantLabel;
+    } = e, b = d.previewingVariantIndex, v = null == (t = l.variants) ? true : t[f], j = null !== b ? null == (r = l.variants) ? true : r[b] : true, P = (0, u.Z)("shop-variants-group-".concat(l.storeListingId), s.hy.HORIZONTAL);
+    if (null == v) return null;
+    let _ = null != j ? j.variantLabel : null == v ? true : v.variantLabel;
     return (0, n.jsx)(o.bG, {
       navigator: P,
       children: (0, n.jsx)(o.SJ, {
@@ -149,15 +149,15 @@ let v = e => {
           var {
             ref: t
           } = e, r = m(e, ["ref"]);
-          return (0, n.jsxs)("div", y(h({
+          return (0, n.jsxs)("div", y(g({
             ref: t
           }, r), {
-            className: a()(g.variantsPanel, i, {}),
+            className: a()(h.variantsPanel, i, {}),
             onMouseEnter: () => null == p ? true : p(true),
             onMouseLeave: () => null == p ? true : p(false),
             children: [null != l.variants && l.variants.length > 0 && (0, n.jsx)("ol", {
-              className: g.variantsList,
-              children: l.variants.map((e, t) => (0, n.jsx)(v, {
+              className: h.variantsList,
+              children: l.variants.map((e, t) => (0, n.jsx)(O, {
                 variantGroupProduct: l,
                 variant: e,
                 variantIndex: t,
@@ -169,7 +169,7 @@ let v = e => {
             }), (0, n.jsx)(c.Text, {
               variant: "text-xs/medium",
               color: "text-secondary",
-              className: g.variantLabel,
+              className: h.variantLabel,
               children: _
             })]
           }))

@@ -1,4 +1,4 @@
-/** Chunk was on 51678 **/
+/** Chunk was on 73696 **/
 /** chunk id: 860717, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => X
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk681715 = require("./681715.js"),
   Chunk481060 = require("./481060.js"),
@@ -79,13 +79,13 @@ function N(e) {
         var n, r, i = function(e, t) {
           if (null == e) return {};
           var n, r, i = {},
-            o = Object.keys(e);
-          for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+            a = Object.keys(e);
+          for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
           return i
         }(e, t);
         if (Object.getOwnPropertySymbols) {
-          var o = Object.getOwnPropertySymbols(e);
-          for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+          var a = Object.getOwnPropertySymbols(e);
+          for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
         }
         return i
       }(t, ["body"]);
@@ -127,7 +127,7 @@ function k(e) {
     title: t,
     body: n,
     image: i,
-    imagePlaceholder: o
+    imagePlaceholder: a
   } = e;
   return (0, r.jsxs)("div", {
     className: E.heroSection,
@@ -153,10 +153,10 @@ function k(e) {
         responsive: true,
         className: E.heroImage
       })
-    }) : null != o ? (0, r.jsx)("div", {
+    }) : null != a ? (0, r.jsx)("div", {
       className: E.heroImageContainer,
       children: (0, r.jsx)("img", {
-        src: o,
+        src: a,
         alt: "",
         className: E.heroImage
       })
@@ -189,13 +189,13 @@ function Z(e) {
 function L(e) {
   let {
     content: t
-  } = e, n = i.useId(), o = (0, m._)();
+  } = e, n = i.useId(), a = (0, m._)();
   return null != t ? (0, r.jsx)(y.Z, {
     type: u.re.TEXT_DISPLAY,
     id: n,
     content: t
   }) : (0, r.jsx)("div", {
-    className: a()(E.textPlaceholder, o.className)
+    className: o()(E.textPlaceholder, a.className)
   })
 }
 
@@ -204,8 +204,8 @@ function G(e) {
     content: t,
     image: n,
     imagePosition: i
-  } = e, o = (0, m._)(), l = D(n) ? (0, r.jsx)("div", {
-    className: a()(E.image, o.className),
+  } = e, a = (0, m._)(), l = D(n) ? (0, r.jsx)("div", {
+    className: o()(E.image, a.className),
     children: (0, r.jsx)(h.ZP, {
       src: n.proxyUrl,
       alt: "",
@@ -214,7 +214,7 @@ function G(e) {
       responsive: true
     })
   }) : (0, r.jsx)("div", {
-    className: a()(E.imagePlaceholder, o.className)
+    className: o()(E.imagePlaceholder, a.className)
   });
   return (0, r.jsxs)("div", {
     className: E.textWithImage,
@@ -228,10 +228,10 @@ function B(e) {
   let {
     size: t = "small",
     divider: n = false
-  } = e, o = i.useId();
+  } = e, a = i.useId();
   return (0, r.jsx)(O.Z, {
     type: u.re.SEPARATOR,
-    id: o,
+    id: a,
     divider: n,
     spacing: "large" === t ? u.US.LARGE : u.US.SMALL
   })
@@ -290,18 +290,18 @@ function U(e) {
 function X(e) {
   var t, n, i;
   let {
-    user: o,
+    user: a,
     widget: l,
     containerClassName: u
   } = e, {
     application: d,
     game: p,
     config: b
-  } = M(l), m = null == d ? true : d.getIconURL(16), O = (0, v.O)(o.id).data, y = null == O ? true : O.find(e => e.application_id === l.applicationId), h = null == y || null == (n = y.profile) || null == (t = n.data) ? true : t.primary, x = (0, f.Z)({
+  } = M(l), m = null == d ? true : d.getIconURL(16), O = (0, v.O)(a.id).data, y = null == O ? true : O.find(e => e.application_id === l.applicationId), h = null == y || null == (n = y.profile) || null == (t = n.data) ? true : t.primary, x = (0, f.Z)({
     location: "UserProfileApplicationWidget",
     applicationId: null == p ? true : p.id,
     source: g.m1.UserProfile,
-    sourceUserId: o.id,
+    sourceUserId: a.id,
     trackEntryPointImpression: true
   }), _ = (0, r.jsxs)(r.Fragment, {
     children: [null != m ? (0, r.jsx)("img", {
@@ -325,7 +325,7 @@ function X(e) {
     asContainer: true,
     text: I.intl.string(I.t.ajHoOj),
     children: (0, r.jsx)(s.P3F, {
-      className: a()(E.header, E.headerClickable),
+      className: o()(E.header, E.headerClickable),
       onClick: x,
       "aria-label": I.intl.string(I.t.ajHoOj),
       children: _
@@ -426,9 +426,9 @@ function X(e) {
     }]
   }];
   return (0, r.jsxs)(P.Z, T(S({}, e), {
-    userId: o.id,
+    userId: a.id,
     widget: l,
-    className: a()(u, E.widgetContainer),
+    className: o()(u, E.widgetContainer),
     headerTitle: w,
     dragHandleAdditionalMenuItems: null != p ? (0, r.jsx)(s.sNh, {
       id: "view-game-profile",

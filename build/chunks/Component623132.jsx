@@ -1,4 +1,4 @@
-/** Chunk was on 51678 **/
+/** Chunk was on 73696 **/
 /** chunk id: 623132, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => C
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk624238 = require("./624238.js"),
   Chunk296009 = require("./296009.js"),
   Chunk481060 = require("./481060.js"),
@@ -64,33 +64,33 @@ function S(e) {
     applicationId: t,
     userId: n,
     gameName: i
-  } = e, o = function(e, t) {
+  } = e, a = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
       var n, r, i = {},
-        o = Object.keys(e);
-      for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+        a = Object.keys(e);
+      for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
       return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var o = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+      var a = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
   }(e, ["applicationId", "userId", "gameName"]);
-  let a = (0, g.Z)({
+  let o = (0, g.Z)({
     location: "UserProfileWidgetGameDetailsCard",
     applicationId: t,
     source: d.m1.UserProfile,
     sourceUserId: n,
     trackEntryPointImpression: true
   });
-  return null == a ? (0, r.jsx)(s.X6q, E(I({}, o), {
+  return null == o ? (0, r.jsx)(s.X6q, E(I({}, a), {
     children: i
-  })) : (0, r.jsx)(s.X6q, E(I({}, o), {
+  })) : (0, r.jsx)(s.X6q, E(I({}, a), {
     children: (0, r.jsx)(s.P3F, {
-      onClick: a,
+      onClick: o,
       className: w.clickableText,
       children: i
     })
@@ -102,10 +102,10 @@ function T(e) {
     user: t,
     guildId: n,
     channelId: i,
-    id: o
+    id: a
   } = e;
   return (0, r.jsx)(s.nn4, {
-    id: o,
+    id: a,
     children: _.intl.format(_.t.TM0XDQ, {
       name: p.ZP.getName(n, i, t)
     })
@@ -130,11 +130,11 @@ function N(e) {
     text: t,
     user: n,
     guildId: i,
-    channelId: o
-  } = e, a = (0, u.Dt)();
+    channelId: a
+  } = e, o = (0, u.Dt)();
   return null == t || "" === t.trim() ? null : (0, r.jsxs)("div", {
     role: "group",
-    "aria-labelledby": a,
+    "aria-labelledby": o,
     children: [(0, r.jsx)(s.PEf, {
       size: "xxs",
       color: s.TVs.colors.ICON_TERTIARY,
@@ -142,8 +142,8 @@ function N(e) {
     }), (0, r.jsx)(T, {
       user: n,
       guildId: i,
-      channelId: o,
-      id: a
+      channelId: a,
+      id: o
     }), (0, r.jsx)(D, {
       text: t
     })]
@@ -154,7 +154,7 @@ function A(e) {
   let {
     text: t,
     user: n,
-    guildId: o,
+    guildId: a,
     channelId: c,
     widgetType: d,
     applicationId: g
@@ -214,12 +214,12 @@ function A(e) {
       className: w.commentIcon
     }), (0, r.jsx)(T, {
       user: n,
-      guildId: o,
+      guildId: a,
       channelId: c,
       id: p
     }), (0, r.jsx)(D, {
       text: null != t ? t : I,
-      className: a()(w.editableCommentText, !E && w.placeholder)
+      className: o()(w.editableCommentText, !E && w.placeholder)
     }), (0, r.jsx)(s.P3F, {
       innerRef: x,
       "aria-label": _.intl.string(_.t.ppb9MD),
@@ -238,8 +238,8 @@ function C(e) {
     user: t,
     guildId: n,
     channelId: i,
-    game: o,
-    widgetType: a,
+    game: a,
+    widgetType: o,
     disableInteraction: l = false
   } = e, {
     gameName: u = _.intl.string(_.t.GIWFlJ),
@@ -247,10 +247,10 @@ function C(e) {
     applicationId: g,
     comment: p,
     tags: b
-  } = o, m = {
+  } = a, m = {
     variant: "heading-sm/medium",
     color: "text-default"
-  }, T = f.default.getCurrentUser(), D = (null == T ? true : T.id) === t.id, C = !l && D && a === c.l.FAVORITE_GAMES;
+  }, T = f.default.getCurrentUser(), D = (null == T ? true : T.id) === t.id, C = !l && D && o === c.l.FAVORITE_GAMES;
   return (0, O.kO)(g) ? (0, r.jsx)(j.i, {}) : (0, r.jsxs)("div", {
     className: w.card,
     children: [(0, r.jsx)(y.Z, {
@@ -274,7 +274,7 @@ function C(e) {
         user: t,
         guildId: n,
         channelId: i,
-        widgetType: a,
+        widgetType: o,
         applicationId: g
       }) : (0, r.jsx)(N, {
         text: p,
@@ -284,7 +284,7 @@ function C(e) {
       }), (0, r.jsx)(h.Z, {
         tags: b,
         isCurrentUser: D,
-        widgetType: a,
+        widgetType: o,
         applicationId: g,
         disableInteraction: l,
         className: w.tags
@@ -295,8 +295,8 @@ function C(e) {
         channelId: i
       })]
     }), !l && D && (0, r.jsx)(v.Z, {
-      game: o,
-      widgetType: a,
+      game: a,
+      widgetType: o,
       className: w.removeGameButton
     })]
   })

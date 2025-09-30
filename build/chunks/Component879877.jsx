@@ -1,4 +1,4 @@
-/** Chunk was on 51678 **/
+/** Chunk was on 73696 **/
 /** chunk id: 879877, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk624238 = require("./624238.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -22,12 +22,12 @@ function O(e) {
   var t;
   let {
     tags: n,
-    isCurrentUser: o,
+    isCurrentUser: a,
     widgetType: c,
     applicationId: s,
     className: u,
     disableInteraction: O = false
-  } = e, x = null != (t = null == n ? true : n.filter(e => null != (0, p.zK)(e))) ? t : [], _ = x.length > 0, P = l.qH, w = o && !O && (0, g.M8)(c) && x.length < P, {
+  } = e, x = null != (t = null == n ? true : n.filter(e => null != (0, p.zK)(e))) ? t : [], _ = x.length > 0, P = l.qH, w = a && !O && (0, g.M8)(c) && x.length < P, {
     trackUserProfileAction: I
   } = (0, d.KZ)(), E = (0, i.useRef)(new Map), S = (0, i.useRef)(null), T = (0, i.useRef)(null), [D, N] = (0, i.useState)(0), [A, C] = (0, i.useState)(false), k = v(S, T, x, E, N);
   if ((0, i.useEffect)(() => (k(), window.addEventListener("resize", k), () => {
@@ -35,14 +35,14 @@ function O(e) {
     }), [k, null == x ? true : x.join("")]), !_ && !w) return null;
   let R = A ? x : x.slice(0, x.length - D);
   return (0, r.jsxs)("div", {
-    className: a()(m.tagListContainer, u),
+    className: o()(m.tagListContainer, u),
     children: [_ && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("ul", {
         className: m.tagList,
         "aria-label": b.intl.string(b.t.EfjTi4),
         children: R.map(e => (0, r.jsx)(y, {
           tag: e,
-          isCurrentUser: o,
+          isCurrentUser: a,
           applicationId: s,
           widgetType: c,
           ref: t => {
@@ -79,8 +79,8 @@ let y = e => {
       tag: t,
       isCurrentUser: n,
       applicationId: i,
-      widgetType: o,
-      disableInteraction: a,
+      widgetType: a,
+      disableInteraction: o,
       ref: l
     } = e, {
       trackUserProfileEditAction: c
@@ -90,9 +90,9 @@ let y = e => {
       getText: f,
       icon: O
     } = u, y = () => {
-      (0, g.RZ)(o, i, t), c({
+      (0, g.RZ)(a, i, t), c({
         action: "TAG_REMOVED",
-        widgetEdited: o,
+        widgetEdited: a,
         gameId: i
       })
     };
@@ -105,7 +105,7 @@ let y = e => {
         variant: "text-xxs/medium",
         color: "text-secondary",
         children: f()
-      }), n && !a && (0, r.jsx)(s.ua7, {
+      }), n && !o && (0, r.jsx)(s.ua7, {
         text: b.intl.string(b.t.Otv9fH),
         children: e => {
           var t, n;
@@ -155,7 +155,7 @@ let y = e => {
       numHidden: t,
       onClick: n,
       disableInteraction: i,
-      ref: o
+      ref: a
     } = e;
     return i ? (0, r.jsx)("div", {
       className: m.expandButton,
@@ -170,7 +170,7 @@ let y = e => {
       children: (0, r.jsx)(s.P3F, {
         onClick: n,
         className: m.expandButton,
-        innerRef: o,
+        innerRef: a,
         "aria-label": b.intl.string(b.t.mriLXF),
         children: (0, r.jsx)(s.Text, {
           variant: "text-xxs/medium",
@@ -200,11 +200,11 @@ let y = e => {
       })
     })
   },
-  v = (e, t, n, r, o) => (0, i.useCallback)(() => {
-    var i, a, l, c;
-    if (null == n) return void o(0);
+  v = (e, t, n, r, a) => (0, i.useCallback)(() => {
+    var i, o, l, c;
+    if (null == n) return void a(0);
     let s = null != (l = null == (i = e.current) ? true : i.getBoundingClientRect().width) ? l : 0,
-      u = null != (c = null == (a = t.current) ? true : a.getBoundingClientRect().width) ? c : 0,
+      u = null != (c = null == (o = t.current) ? true : o.getBoundingClientRect().width) ? c : 0,
       d = u > 0 ? 8 : 4,
       g = 0,
       f = 0,
@@ -224,5 +224,5 @@ let y = e => {
         g++
       }
     }
-    o(n.length - g)
-  }, [e, t, null == n ? true : n.join(""), r, o])
+    a(n.length - g)
+  }, [e, t, null == n ? true : n.join(""), r, a])

@@ -1,6 +1,5 @@
-/** Chunk was on 74477 **/
+/** Chunk was on 49902 **/
 /** chunk id: 384166, original params: e,t,r (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => j
 }), require("./388685.js"), require("./361932.js"), require("./187205.js");
@@ -31,10 +30,10 @@ function j(e) {
   } = (0, f.KZ)(), [l, j] = i.useState(false), x = (0, o.Wu)([p.Z], () => {
     var e;
     return null != (e = p.Z.getSaveablePendingWidgets()) ? e : []
-  }), P = (0, o.Wu)([p.Z], () => p.Z.getChangedWidgets()), S = (0, o.Wu)([p.Z], () => p.Z.getRemovedWidgets()), I = (0, o.e7)([p.Z], () => p.Z.hasSaveablePendingChanges()), w = (0, o.e7)([p.Z], () => p.Z.isSubmitting), C = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), E = (0, c.Yzy)(I, {
+  }), P = (0, o.Wu)([p.Z], () => p.Z.getChangedWidgets()), S = (0, o.Wu)([p.Z], () => p.Z.getRemovedWidgets()), I = (0, o.e7)([p.Z], () => p.Z.hasSaveablePendingChanges()), w = (0, o.e7)([p.Z], () => p.Z.isSubmitting), E = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), C = (0, c.Yzy)(I, {
     from: {
       opacity: 0,
-      y: 80 * !C
+      y: 80 * !E
     },
     enter: {
       opacity: 1,
@@ -42,7 +41,7 @@ function j(e) {
     },
     leave: {
       opacity: 0,
-      y: 80 * !C
+      y: 80 * !E
     }
   });
   i.useEffect(() => {
@@ -57,7 +56,7 @@ function j(e) {
   }, []), i.useEffect(() => {
     I && c.uvj.announce(y.intl.string(y.t["0Y/qkJ"]))
   }, [I]);
-  let k = i.useCallback(async () => {
+  let N = i.useCallback(async () => {
       try {
         await h.Z.savePendingWidgets(x)
       } catch (e) {
@@ -82,10 +81,10 @@ function j(e) {
         isWidgetRemoved: true
       })
     }, [x, P, S, r]),
-    N = i.useCallback(() => {
+    k = i.useCallback(() => {
       h.Z.clearPendingWidgets()
     }, []);
-  return E((e, r) => r ? (0, n.jsx)(s.animated.div, {
+  return C((e, r) => r ? (0, n.jsx)(s.animated.div, {
     className: t,
     style: e,
     children: (0, n.jsxs)("section", {
@@ -104,13 +103,13 @@ function j(e) {
           size: "sm",
           variant: "secondary",
           text: y.intl.string(y.t.yBZMsb),
-          onClick: N,
+          onClick: k,
           disabled: !I || w
         }), (0, n.jsx)(c.zxk, {
           size: "sm",
           variant: "primary",
           text: y.intl.string(y.t.R3BPHx),
-          onClick: k,
+          onClick: N,
           loading: w,
           disabled: !I || w
         })]

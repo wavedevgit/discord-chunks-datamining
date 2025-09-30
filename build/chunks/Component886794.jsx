@@ -37,23 +37,23 @@ function C(e) {
   let {
     user: t,
     guildId: C,
-    channelId: w,
-    messageId: _,
+    channelId: _,
+    messageId: w,
     roleId: D,
     sessionId: R,
     transitionState: L,
     openedAt: M,
     onClose: U,
     sourceAnalyticsLocations: k = []
-  } = e, B = C === P.ME ? true : C, F = (0, p.ZP)(t.id, B), V = u.ZP.getName(B, w, t), G = (0, c.Dt)(), {
+  } = e, B = C === P.ME ? true : C, F = (0, p.ZP)(t.id, B), V = u.ZP.getName(B, _, t), G = (0, c.Dt)(), {
     analyticsLocations: z
   } = (0, a.ZP)([...k, s.Z.USER_PROFILE_MODAL]), K = (0, m.ZB)({
     layout: "MODAL",
     userId: t.id,
     sourceSessionId: R,
     guildId: B,
-    channelId: w,
-    messageId: _,
+    channelId: _,
+    messageId: w,
     roleId: D
   }), W = i.useRef(null), Y = (0, o.Z)(W);
   return (0, l.jsx)(a.Gt, {
@@ -100,7 +100,7 @@ function C(e) {
                   user: t,
                   displayProfile: F,
                   guildId: B,
-                  channelId: w,
+                  channelId: _,
                   themeType: N.l.MODAL
                 })
               })]

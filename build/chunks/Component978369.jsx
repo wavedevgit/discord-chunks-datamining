@@ -1,4 +1,4 @@
-/** Chunk was on 51678 **/
+/** Chunk was on 73696 **/
 /** chunk id: 978369, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -16,43 +16,43 @@ let d = Chunk647438.memo(function(e) {
     currentTags: t,
     onTagSelect: n,
     onNoneSelect: i,
-    onClose: a
+    onClose: o
   } = e;
-  return (0, r.jsx)(o.v2r, {
+  return (0, r.jsx)(a.v2r, {
     navId: "widget-game-tags",
     "aria-label": s.intl.string(s.t.r6EJOj),
-    onClose: a,
+    onClose: o,
     onSelect: () => {},
     className: u.gameTagsMenu,
     children: Object.entries(c.aE).map(e => {
-      let [a, l] = e, u = ((e, a) => {
+      let [o, l] = e, u = ((e, o) => {
         let l = [];
-        return a.type === c.kd.RADIO && l.push((0, r.jsx)(o.k5B, {
+        return o.type === c.kd.RADIO && l.push((0, r.jsx)(a.k5B, {
           id: "".concat(e, "-none"),
           group: e,
           label: s.intl.string(s.t.PoWNfX),
-          checked: !a.tags.some(e => t.includes(e)),
-          action: () => i(a.tags)
-        }, "none")), a.tags.forEach(i => {
+          checked: !o.tags.some(e => t.includes(e)),
+          action: () => i(o.tags)
+        }, "none")), o.tags.forEach(i => {
           let s = c.XV[i];
-          null != s && (a.type === c.kd.RADIO ? l.push((0, r.jsx)(o.k5B, {
+          null != s && (o.type === c.kd.RADIO ? l.push((0, r.jsx)(a.k5B, {
             id: i,
             group: e,
             label: s.getText(),
             checked: t.includes(i),
             action: () => n(i, true)
-          }, i)) : l.push((0, r.jsx)(o.S89, {
+          }, i)) : l.push((0, r.jsx)(a.S89, {
             id: i,
             label: s.getText(),
             checked: t.includes(i),
             action: () => n(i, false)
           }, i)))
         }), l
-      })(a, l);
-      return (0, r.jsx)(o.kSQ, {
+      })(o, l);
+      return (0, r.jsx)(a.kSQ, {
         label: l.getLabel(),
         children: u
-      }, a)
+      }, o)
     })
   })
 });
@@ -65,7 +65,7 @@ function g(e) {
     ref: f
   } = e, p = (0, i.useRef)(null), {
     trackUserProfileEditAction: b
-  } = (0, a.KZ)(), m = (0, i.useMemo)(() => null != t ? t : [], [t]), O = (0, i.useCallback)(function(e) {
+  } = (0, o.KZ)(), m = (0, i.useMemo)(() => null != t ? t : [], [t]), O = (0, i.useCallback)(function(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
       r = new Set(m);
     if (t) {
@@ -97,7 +97,7 @@ function g(e) {
       gameId: g
     }), (0, l.n$)(n, g, Array.from(t))
   }, [m, b, n, g]);
-  return (0, r.jsx)(o.yRy, {
+  return (0, r.jsx)(a.yRy, {
     targetElementRef: p,
     position: "right",
     align: "top",
@@ -124,7 +124,7 @@ function g(e) {
         ref: e => (null != e && (p.current = e, f.current = e), () => {
           p.current = null, f.current = null
         }),
-        children: (0, r.jsx)(o.P3F, (t = function(e) {
+        children: (0, r.jsx)(a.P3F, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -144,7 +144,7 @@ function g(e) {
         }({}, e), n = n = {
           className: u.addButton,
           "aria-label": s.intl.string(s.t.r6EJOj),
-          children: (0, r.jsx)(o.Text, {
+          children: (0, r.jsx)(a.Text, {
             variant: "text-xxs/medium",
             color: "none",
             children: s.intl.string(s.t.fZSej4)

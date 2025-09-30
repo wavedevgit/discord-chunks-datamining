@@ -1,35 +1,35 @@
-/** Chunk was on 74477 **/
-/** chunk id: 344669, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 72615 **/
+/** chunk id: 344669, original params: e,n,t (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  x: () => s
+  x: () => c
 });
 var Chunk476098 = require("./476098.js"),
   Chunk156755 = require("./156755.js"),
   Chunk521548 = require("./521548.js");
 
-function a(e, t, r) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: r,
+function o(e, n, t) {
+  return n in e ? Object.defineProperty(e, n, {
+    value: t,
     enumerable: true,
     configurable: true,
     writable: true
-  }) : e[t] = r, e
+  }) : e[n] = t, e
 }
-var s = function() {
+var c = function() {
   var e;
 
-  function t(e) {
-    var r = this;
-    if (!(this instanceof t)) throw TypeError("Cannot call a class as a function");
-    a(this, "hooks", (0, n.p)({
-      dragSource: function(e, t) {
-        r.clearDragSource(), r.dragSourceOptions = t || null, (0, i.d)(e) ? r.dragSourceRef = e : r.dragSourceNode = e, r.reconnectDragSource()
+  function n(e) {
+    var t = this;
+    if (!(this instanceof n)) throw TypeError("Cannot call a class as a function");
+    o(this, "hooks", (0, r.p)({
+      dragSource: function(e, n) {
+        t.clearDragSource(), t.dragSourceOptions = n || null, (0, i.d)(e) ? t.dragSourceRef = e : t.dragSourceNode = e, t.reconnectDragSource()
       },
-      dragPreview: function(e, t) {
-        r.clearDragPreview(), r.dragPreviewOptions = t || null, (0, i.d)(e) ? r.dragPreviewRef = e : r.dragPreviewNode = e, r.reconnectDragPreview()
+      dragPreview: function(e, n) {
+        t.clearDragPreview(), t.dragPreviewOptions = n || null, (0, i.d)(e) ? t.dragPreviewRef = e : t.dragPreviewNode = e, t.reconnectDragPreview()
       }
-    })), a(this, "handlerId", null), a(this, "dragSourceRef", null), a(this, "dragSourceNode", true), a(this, "dragSourceOptionsInternal", null), a(this, "dragSourceUnsubscribe", true), a(this, "dragPreviewRef", null), a(this, "dragPreviewNode", true), a(this, "dragPreviewOptionsInternal", null), a(this, "dragPreviewUnsubscribe", true), a(this, "lastConnectedHandlerId", null), a(this, "lastConnectedDragSource", null), a(this, "lastConnectedDragSourceOptions", null), a(this, "lastConnectedDragPreview", null), a(this, "lastConnectedDragPreviewOptions", null), a(this, "backend", true), this.backend = e
+    })), o(this, "handlerId", null), o(this, "dragSourceRef", null), o(this, "dragSourceNode", true), o(this, "dragSourceOptionsInternal", null), o(this, "dragSourceUnsubscribe", true), o(this, "dragPreviewRef", null), o(this, "dragPreviewNode", true), o(this, "dragPreviewOptionsInternal", null), o(this, "dragPreviewUnsubscribe", true), o(this, "lastConnectedHandlerId", null), o(this, "lastConnectedDragSource", null), o(this, "lastConnectedDragSourceOptions", null), o(this, "lastConnectedDragPreview", null), o(this, "lastConnectedDragPreviewOptions", null), o(this, "backend", true), this.backend = e
   }
   return e = [{
       key: "receiveHandlerId",
@@ -66,7 +66,7 @@ var s = function() {
       key: "reconnectDragSource",
       value: function() {
         var e = this.dragSource,
-          t = this.didHandlerIdChange() || this.didConnectedDragSourceChange() || this.didDragSourceOptionsChange();
+          n = this.didHandlerIdChange() || this.didConnectedDragSourceChange() || this.didDragSourceOptionsChange();
         if (exports && this.disconnectDragSource(), this.handlerId) {
           if (!module) {
             this.lastConnectedDragSource = module;
@@ -79,7 +79,7 @@ var s = function() {
       key: "reconnectDragPreview",
       value: function() {
         var e = this.dragPreview,
-          t = this.didHandlerIdChange() || this.didConnectedDragPreviewChange() || this.didDragPreviewOptionsChange();
+          n = this.didHandlerIdChange() || this.didConnectedDragPreviewChange() || this.didDragPreviewOptionsChange();
         if (exports && this.disconnectDragPreview(), this.handlerId) {
           if (!module) {
             this.lastConnectedDragPreview = module;
@@ -144,10 +144,10 @@ var s = function() {
         this.dragPreviewNode = null, this.dragPreviewRef = null
       }
     }],
-    function(e, t) {
-      for (var r = 0; r < t.length; r++) {
-        var n = t[r];
-        n.enumerable = n.enumerable || false, n.configurable = true, "value" in n && (n.writable = true), Object.defineProperty(e, n.key, n)
+    function(e, n) {
+      for (var t = 0; t < n.length; t++) {
+        var r = n[t];
+        r.enumerable = r.enumerable || false, r.configurable = true, "value" in r && (r.writable = true), Object.defineProperty(e, r.key, r)
       }
     }(exports.prototype, module), exports
 }()
