@@ -18,13 +18,13 @@ function u(e) {
     item: t,
     profileOwner: r,
     wishlistId: i,
-    canEdit: a
+    isOwner: a
   } = e;
   return (0, l.Q)(t) ? (0, n.jsx)(o.Z, {
     item: t,
     profileOwner: r,
     wishlistId: i,
-    canEdit: a
+    isOwner: a
   }) : null
 }
 
@@ -32,7 +32,7 @@ function d(e) {
   let {
     items: t,
     profileOwner: r,
-    canEdit: l
+    isOwner: l
   } = e, o = a.default.getCurrentUser(), {
     defaultWishlistId: d
   } = (0, i.cj)([s.Z], () => ({
@@ -44,7 +44,7 @@ function d(e) {
       item: e,
       profileOwner: r,
       wishlistId: d,
-      canEdit: l
+      isOwner: l
     }, e.skuId))
   })
 }

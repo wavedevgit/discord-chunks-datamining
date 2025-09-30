@@ -2,7 +2,7 @@
 /** chunk id: 252417, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => O
+  Z: () => j
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -21,12 +21,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk671955 = require("./671955.js"),
   Chunk788485 = require("./788485.js");
 let y = Chunk481060.EFr.SIZE_40,
-  j = (0, Chunk481060.pxk)(y);
+  O = (0, Chunk481060.pxk)(y);
 
-function O(e) {
+function j(e) {
   let {
     user: t,
-    status: O,
+    status: j,
     guildId: x,
     channelId: P,
     onSelect: S
@@ -35,18 +35,18 @@ function O(e) {
     themeType: w
   } = (0, p.z)(), C = i.useMemo(() => t.isNonUserBot() || (0, f.W)(t, P), [t, P]), {
     activities: E,
-    isMobileOnline: N
+    isMobileOnline: k
   } = (0, l.cj)([h.Z], () => ({
     activities: h.Z.getActivities(t.id),
     isMobileOnline: h.Z.isMobileOnline(t.id)
-  })), A = (0, g.Z)(t.id), {
-    voiceActivityStatusEnabled: k
+  })), N = (0, g.Z)(t.id), {
+    voiceActivityStatusEnabled: A
   } = (0, c.a)({
     location: "UserProfileMutualFriendRow"
   }), {
     voiceChannel: T
   } = (0, u.Z)({
-    userId: k ? t.id : true,
+    userId: A ? t.id : true,
     guildId: x
   });
   return (0, n.jsxs)(a.P3F, {
@@ -103,12 +103,12 @@ function O(e) {
       })
     },
     children: [(0, n.jsx)(a.qEK, {
-      src: t.getAvatarURL(x, j),
+      src: t.getAvatarURL(x, O),
       "aria-label": t.username,
       size: y,
-      status: C ? m.Skl.UNKNOWN : O,
+      status: C ? m.Skl.UNKNOWN : j,
       statusBackdropColor: C ? true : (0, a.QFD)(I),
-      isMobile: N,
+      isMobile: k,
       className: b.avatar
     }), (0, n.jsxs)("div", {
       className: b.details,
@@ -119,7 +119,7 @@ function O(e) {
       }), (0, n.jsx)(d.Z, {
         user: t,
         activities: E,
-        applicationStream: A,
+        applicationStream: N,
         voiceChannel: T
       })]
     })]

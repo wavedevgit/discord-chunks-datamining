@@ -30,7 +30,7 @@ function P(e) {
     videoEnabled: a,
     onEnable: P,
     onClose: _
-  } = e, k = w.Z.getCameraComponent(), S = p.qF.useSetting(), [j, y] = n.useState((0, g.P)(b.default.getCurrentUser())), x = (0, s.O)(), {
+  } = e, k = w.Z.getCameraComponent(), y = p.qF.useSetting(), [j, S] = n.useState((0, g.P)(b.default.getCurrentUser())), x = (0, s.O)(), {
     analyticsLocations: A
   } = (0, u.ZP)(d.Z.CAMERA_PREVIEW);
   n.useEffect(() => {
@@ -82,11 +82,11 @@ function P(e) {
         title: a ? E.intl.string(E.t.LAwwbW) : E.intl.string(E.t["/HITVF"]),
         actionBarInput: (0, r.jsx)(c.XZJ, {
           label: E.intl.string(E.t["3Ppr1t"]),
-          labelSize: "small",
-          checked: S,
+          labelType: "secondary",
+          checked: y,
           onChange: () => {
-            p.qF.updateSetting(!S), f.default.track(C.rMx.UPDATE_USER_SETTINGS_LOCAL, {
-              always_preview_video: !S
+            p.qF.updateSetting(!y), f.default.track(C.rMx.UPDATE_USER_SETTINGS_LOCAL, {
+              always_preview_video: !y
             })
           }
         }),
@@ -99,7 +99,7 @@ function P(e) {
           hideDeviceHeader: true,
           hideCameraSettingsLink: true,
           selectedBackgroundOption: j,
-          onSelectBackgroundOption: y,
+          onSelectBackgroundOption: S,
           hideDeviceSelector: a,
           renderCamera: e => (0, r.jsxs)("div", {
             className: O.cameraPreview,

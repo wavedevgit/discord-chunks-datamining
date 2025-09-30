@@ -2,7 +2,7 @@
 /** chunk id: 299560, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => O
+  Z: () => j
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk73686 = require("./73686.js");
-let j = {
+let O = {
   [Chunk296009.l.FAVORITE_GAMES]: {
     placeholder: {
       variant: "details",
@@ -63,7 +63,7 @@ let j = {
   }
 };
 
-function O(e) {
+function j(e) {
   var t;
   let {
     widgetType: r,
@@ -72,9 +72,9 @@ function O(e) {
     loading: u = false,
     trackUserProfileEditAction: b
   } = e, {
-    placeholder: O,
+    placeholder: j,
     getAriaLabel: x
-  } = j[r], P = "small" === c, S = null == (t = (0, d.uV)().data) ? true : t.map(e => e.application_id), I = i.useMemo(() => {
+  } = O[r], P = "small" === c, S = null == (t = (0, d.uV)().data) ? true : t.map(e => e.application_id), I = i.useMemo(() => {
     switch (r) {
       case s.l.CURRENT_GAMES:
       case s.l.FAVORITE_GAMES:
@@ -103,11 +103,11 @@ function O(e) {
     onClick: w,
     "aria-label": x(I),
     "aria-busy": u,
-    children: ["details" === O.variant ? (0, n.jsx)(m.i, {
-      applicationId: O.applicationId,
+    children: ["details" === j.variant ? (0, n.jsx)(m.i, {
+      applicationId: j.applicationId,
       size: c
     }) : (0, n.jsx)(m.c, {
-      applicationIds: O.applicationIds,
+      applicationIds: j.applicationIds,
       size: c
     }), (0, n.jsxs)("div", {
       className: y.overlay,

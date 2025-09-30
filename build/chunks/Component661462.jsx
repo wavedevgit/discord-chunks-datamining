@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   F: () => b,
-  Z: () => j
+  Z: () => O
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -116,7 +116,7 @@ function y(e) {
   }) : null
 }
 
-function j(e) {
+function O(e) {
   var t;
   let {
     user: r,
@@ -131,8 +131,8 @@ function j(e) {
   } = e, {
     trackUserProfileAction: b
   } = (0, o.KZ)(), [{
-    section: j,
-    subsection: O,
+    section: O,
+    subsection: j,
     text: x
   }, P] = i.useState(v(m({}, null != (t = d.find(e => {
     let {
@@ -152,7 +152,7 @@ function j(e) {
       children: (0, n.jsx)(s.njP, {
         type: "top",
         look: "custom",
-        selectedItem: j,
+        selectedItem: O,
         onItemSelect: e => {
           b({
             action: "PRESS_SECTION",
@@ -170,7 +170,7 @@ function j(e) {
         }, e.section))
       })
     }), (0, n.jsx)(s.njP.Panel, {
-      id: j,
+      id: O,
       "aria-label": x,
       className: p.tabBarPanel,
       children: (0, n.jsx)(y, {
@@ -179,8 +179,8 @@ function j(e) {
         displayProfile: a,
         guildId: c,
         channelId: u,
-        section: j,
-        subsection: O,
+        section: O,
+        subsection: j,
         onClose: h
       })
     })]

@@ -2,64 +2,89 @@
 /** chunk id: 982125, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  C: () => d
-});
+  C: () => f
+}), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk42650 = require("./42650.js"),
   Chunk499339 = require("./499339.js"),
   Chunk155127 = require("./155127.js"),
   Chunk657707 = require("./657707.js"),
+  Chunk821541 = require("./821541.jsx"),
   Chunk777207 = require("./777207.jsx"),
   Chunk997562 = require("./997562.js");
 
-function d(e) {
+function f(e) {
   let {
-    inputRef: t,
-    checked: n,
-    defaultChecked: d,
-    onChange: f,
-    disabled: _ = false,
-    displayOnly: p,
-    label: h,
-    labeledBy: m,
-    labelSize: g = "medium",
-    value: E
-  } = e, b = i.useRef(null), y = i.useRef(null), O = true !== t ? t : y, v = null != h && "" !== h;
+    checked: t,
+    defaultChecked: n,
+    description: f,
+    onChange: _,
+    disabled: p = false,
+    displayOnly: h,
+    label: m,
+    labeledBy: g,
+    leadingIcon: E,
+    trailingIcon: b,
+    value: y,
+    groupVariant: O = "single",
+    labelType: v = "primary"
+  } = e, I = i.useRef(null), T = i.useRef(null), S = i.useRef(null), A = null != m && "" !== m, C = null != f && "" !== f, N = null != E ? E : null, R = null != b ? b : null;
   return (0, r.jsx)(s.tE, {
-    focusTarget: O,
-    ringTarget: b,
+    focusTarget: T,
+    ringTarget: S,
     children: (0, r.jsx)(a.XZ, {
-      inputRef: O,
-      "aria-hidden": p || true,
-      "aria-labelledby": m,
-      isSelected: n,
-      defaultSelected: d,
-      onChange: f,
-      isDisabled: _,
-      isReadOnly: p,
+      ref: S,
+      inputRef: T,
+      "aria-hidden": h || true,
+      "aria-labelledby": g,
+      isSelected: t,
+      defaultSelected: n,
+      onChange: _,
+      isDisabled: p,
+      isReadOnly: h,
       "data-mana-component": "checkbox",
-      className: u.checkboxWrapper,
-      value: E,
+      className: d.checkboxItem,
+      value: String(y),
       children: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
-          ref: b,
-          className: u.checkbox,
-          style: {
-            width: 24,
-            height: 24
-          },
+          ref: I,
+          className: d.checkboxIndicator,
+          "aria-hidden": true,
           children: (0, r.jsx)(l.kSu, {
             size: "sm",
             "aria-hidden": true,
             color: "currentColor"
           })
-        }), v && (0, r.jsx)(o._, {
-          className: u.label,
-          children: (0, r.jsx)(c.x, {
-            variant: "small" === g ? "text-sm/normal" : "text-md/normal",
-            children: h
-          })
+        }), A && (0, r.jsxs)(c.K, {
+          gap: 8,
+          children: [(0, r.jsxs)(o._, {
+            className: d.label,
+            children: [(0, r.jsxs)("div", {
+              className: d.labelContent,
+              children: [null != N && (0, r.jsx)(N, {
+                className: d.leadingIcon,
+                size: "sm",
+                color: "currentColor",
+                "aria-hidden": true,
+                focusable: false
+              }), (0, r.jsx)(u.x, {
+                variant: "group" === O ? "text-md/normal" : "text-md/medium",
+                color: "primary" === v ? "text-primary" : "text-secondary",
+                children: m
+              })]
+            }), null != R && (0, r.jsx)(R, {
+              className: d.trailingIcon,
+              size: "sm",
+              color: "currentColor",
+              "aria-hidden": true,
+              focusable: false
+            })]
+          }), C && (0, r.jsx)(u.x, {
+            variant: "text-sm/normal",
+            color: "text-secondary",
+            children: f
+          })]
         })]
       })
     })

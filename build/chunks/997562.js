@@ -2,7 +2,10 @@
 /** chunk id: 997562, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 module.exports = {
-  checkboxWrapper: "checkboxWrapper__714a9",
-  checkbox: "checkbox__714a9",
-  label: "label__714a9"
+  checkboxItem: "checkboxItem__714a9",
+  checkboxIndicator: "checkboxIndicator__714a9",
+  leadingIcon: "leadingIcon__714a9",
+  trailingIcon: "trailingIcon__714a9",
+  label: "label__714a9",
+  labelContent: "labelContent__714a9"
 }

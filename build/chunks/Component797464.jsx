@@ -1,5 +1,5 @@
 /** Chunk was on 7649 **/
-/** chunk id: 797464, original params: t,n,i (module,exports,require) **/
+/** chunk id: 797464, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
   default: () => o
 }), require("./388685.js");
@@ -12,11 +12,11 @@ var Chunk951288 = require("./951288.js"),
 function o(t) {
   let {
     transitionState: n,
-    onConfirm: i,
+    onConfirm: e,
     onClose: o,
     onDismiss: c
-  } = t, [d, u] = a.useState(false), [h, b] = a.useState(true), [g, p] = a.useState(true);
-  return (0, e.jsx)(s.Modal, {
+  } = t, [d, u] = a.useState(false), [h, p] = a.useState(true), [b, g] = a.useState(true);
+  return (0, i.jsx)(s.Modal, {
     transitionState: n,
     onClose: o,
     title: r.intl.string(r.t["6rP+BQ"]),
@@ -31,23 +31,23 @@ function o(t) {
     }, {
       text: r.intl.string(r.t["cY+Ooa"]),
       onClick: () => {
-        d || (u(true), i(h, g), u(false), o())
+        d || (u(true), e(h, b), u(false), o())
       },
       disabled: d,
       loading: d
     }],
-    actionBarInput: (0, e.jsx)(l.XZJ, {
-      checked: g,
+    actionBarInput: (0, i.jsx)(l.XZJ, {
+      checked: b,
       onChange: t => {
-        p(t)
+        g(t)
       },
       label: r.intl.string(r.t.KX8WJi),
-      labelSize: "small"
+      labelType: "secondary"
     }),
-    children: (0, e.jsx)(l.j7V, {
+    children: (0, i.jsx)(l.j7V, {
       hideBorder: true,
       onChange: t => {
-        b(t)
+        p(t)
       },
       value: h,
       children: r.intl.string(r.t["zLb+u7"])

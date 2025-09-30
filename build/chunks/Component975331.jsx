@@ -34,7 +34,7 @@ function b() {
     title: Chunk388032.intl.string(Chunk388032.t["6antoq"]),
     description: Chunk388032.intl.string(Chunk388032.t.urVijY),
     children: [(0, Chunk951288.jsx)(Chunk481060.j7V, {
-      onChange: (e, t) => C(e),
+      onChange: e => C(e),
       value: y,
       disabled: N,
       hideBorder: true,

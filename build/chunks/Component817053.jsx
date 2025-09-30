@@ -87,11 +87,11 @@ function p(e) {
     trackEntryPointImpression: true
   }), b = null != r ? r : u.intl.string(u.t.GIWFlJ), y = u.intl.formatToPlainString(u.t["8QLQBw"], {
     gameName: b
-  }), j = e => m ? e() : (0, n.jsx)(s.ua7, {
+  }), O = e => m ? e() : (0, n.jsx)(s.ua7, {
     text: b,
     children: t => e(t)
   });
-  return j(null == v ? e => (0, n.jsx)("div", g(f({
+  return O(null == v ? e => (0, n.jsx)("div", g(f({
     className: p
   }, e), {
     children: (0, n.jsx)(h, {
