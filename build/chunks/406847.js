@@ -1,7 +1,7 @@
-/** Chunk was on 47129 **/
+/** Chunk was on 9452 **/
 /** chunk id: 406847, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => o
 });
 var Chunk524437 = require("./524437.js"),
   Chunk995774 = require("./995774.js"),
@@ -9,7 +9,7 @@ var Chunk524437 = require("./524437.js"),
   Chunk695346 = require("./695346.js"),
   Chunk313789 = require("./313789.js"),
   Chunk388032 = require("./388032.jsx");
-let u = (0, Chunk509613.Em)(Chunk313789.n.REACTION_NOTIFICATIONS, {
+let o = (0, Chunk509613.Em)(Chunk313789.n.REACTION_NOTIFICATIONS, {
   useTitle: () => Chunk388032.intl.string(Chunk388032.t.Rq0NFh),
   useSubtitle: () => Chunk388032.intl.string(Chunk388032.t.oWF6eX),
   useOptions: () => [{
@@ -23,5 +23,5 @@ let u = (0, Chunk509613.Em)(Chunk313789.n.REACTION_NOTIFICATIONS, {
     value: Chunk524437.Ns.NOTIFICATIONS_DISABLED
   }],
   useValue: Chunk695346.fz.useSetting,
-  setValue: e => (0, i.MR)(e, o.fz.getSetting())
+  setValue: e => (0, r.MR)(e, u.fz.getSetting())
 })

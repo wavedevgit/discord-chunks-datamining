@@ -1,47 +1,47 @@
-/** Chunk was on 47129 **/
+/** Chunk was on 59739 **/
 /** chunk id: 924052, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Cu: () => c,
-  Ri: () => u
+  Cu: () => u,
+  Ri: () => c
 }), require("./388685.js"), require("./415506.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk503089 = require("./503089.jsx"),
   Chunk585483 = require("./585483.js"),
   Chunk981631 = require("./981631.js");
-let a = Chunk647438.createContext(true);
+let s = Chunk647438.createContext(true);
 
-function u(e) {
+function c(e) {
   let {
     children: t
-  } = e, n = i.useRef(l.$x), [u, c] = i.useState(false), d = i.useCallback(e => {
+  } = e, n = o.useRef(l.$x), [c, u] = o.useState(false), d = o.useCallback(e => {
     var t;
-    c(null != (t = null == e ? true : e.some(e => {
+    u(null != (t = null == e ? true : e.some(e => {
       var t;
       return e.showNotice() && !(null == (t = e.canCloseEarly) ? true : t.call(e))
     })) && t), n.current = l.$x
-  }, []), f = i.useCallback(e => {
-    if (u) {
-      o.S.dispatch(s.CkL.SHAKE_APP, {
+  }, []), f = o.useCallback(e => {
+    if (c) {
+      i.S.dispatch(a.CkL.SHAKE_APP, {
         duration: 300,
         intensity: n.current
-      }), n.current = Math.min(n.current + l.d7, l.w6), o.S.dispatch(s.CkL.EMPHASIZE_NOTICE);
+      }), n.current = Math.min(n.current + l.d7, l.w6), i.S.dispatch(a.CkL.EMPHASIZE_NOTICE);
       return
     }
     e()
-  }, [u]), b = i.useMemo(() => ({
+  }, [c]), b = o.useMemo(() => ({
     navigateWithValidation: f,
-    showNotice: u,
+    showNotice: c,
     handleStoreUpdate: d
-  }), [f, u, d]);
-  return (0, r.jsx)(a.Provider, {
+  }), [f, c, d]);
+  return (0, r.jsx)(s.Provider, {
     value: b,
     children: t
   })
 }
 
-function c() {
-  let e = Chunk647438.useContext(a);
+function u() {
+  let e = Chunk647438.useContext(s);
   if (null == module) throw Error("useNoticeContext must be used within a NoticeProvider");
   return module
 }

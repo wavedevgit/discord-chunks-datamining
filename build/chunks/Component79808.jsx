@@ -1,4 +1,4 @@
-/** Chunk was on 47129 **/
+/** Chunk was on 59739 **/
 /** chunk id: 79808, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk59662 = require("./59662.js"),
   Chunk990757 = require("./990757.js");
 
-function c(e) {
+function u(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,63 +47,63 @@ function f(e) {
   var t, n, f;
   let {
     root: b,
-    directory: y,
-    target: O,
-    onClose: g,
-    sidebarHeader: E,
-    sidebarFooter: p,
+    directory: p,
+    target: m,
+    onClose: j,
+    sidebarHeader: y,
+    sidebarFooter: x,
     onPanelChange: v
-  } = e, [T, S] = i.useState(true), [j, N] = i.useState(null == (t = y.entry(O)) ? true : t.parentPanel), [m, C] = i.useState(() => y.typedGet(j)), _ = i.useCallback(() => x(true), []), [P, x] = i.useState({
-    target: O,
-    targetAccordion: null == (n = y.entry(O)) ? true : n.parentAccordion,
+  } = e, [g, h] = o.useState(true), [O, C] = o.useState(null == (t = p.entry(m)) ? true : t.parentPanel), [P, _] = o.useState(() => p.typedGet(O)), S = o.useCallback(() => N(true), []), [E, N] = o.useState({
+    target: m,
+    targetAccordion: null == (n = p.entry(m)) ? true : n.parentAccordion,
     animateScroll: false,
-    complete: _
+    complete: S
   }), {
-    navigateWithValidation: I
-  } = (0, s.Cu)(), A = i.useMemo(() => ({
-    currentPanel: y.typedGet(j),
+    navigateWithValidation: k
+  } = (0, a.Cu)(), w = o.useMemo(() => ({
+    currentPanel: p.typedGet(O),
     navigateTo: e => {
-      let t = y.entry(e);
+      let t = p.entry(e);
       if ((null == t ? true : t.parentPanel) == null) return;
       let n = {
         target: e,
         targetAccordion: t.parentAccordion,
-        complete: _
+        complete: S
       };
-      if (t.parentPanel.key !== (null == j ? true : j.key)) {
+      if (t.parentPanel.key !== (null == O ? true : O.key)) {
         let e = t.parentPanel;
-        I(() => {
-          x(d(c({}, n), {
+        k(() => {
+          N(d(u({}, n), {
             animateScroll: false
-          })), C(e), N(e), null == v || v(e.key)
+          })), _(e), C(e), null == v || v(e.key)
         })
-      } else x(d(c({}, n), {
+      } else N(d(u({}, n), {
         animateScroll: true
       }))
     },
-    navTransition: P,
-    showNavigationMobile: T,
-    setShowNavigationMobile: S
-  }), [y, j, P, T, _, I, v]), h = () => I(g);
-  return (0, r.jsx)(a.j.Provider, {
-    value: A,
+    navTransition: E,
+    showNavigationMobile: g,
+    setShowNavigationMobile: h
+  }), [p, O, E, g, S, k, v]), T = () => k(j);
+  return (0, r.jsx)(s.j.Provider, {
+    value: w,
     children: (0, r.jsxs)("div", {
-      className: u.container,
-      children: [(0, r.jsx)(o.P, {
+      className: c.container,
+      children: [(0, r.jsx)(i.P, {
         root: b,
-        header: E,
-        footer: p,
-        onClose: h
+        header: y,
+        footer: x,
+        onClose: T
       }), (0, r.jsx)(l.Z, {
-        onClose: h,
-        setting: null != (f = A.currentPanel) ? f : m
+        onClose: T,
+        setting: null != (f = w.currentPanel) ? f : P
       })]
     })
   })
 }
 
 function b(e) {
-  return (0, r.jsx)(s.Ri, {
-    children: (0, r.jsx)(f, c({}, e))
+  return (0, r.jsx)(a.Ri, {
+    children: (0, r.jsx)(f, u({}, e))
   })
 }

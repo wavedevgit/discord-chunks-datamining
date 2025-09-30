@@ -14,23 +14,34 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx");
 
 function d() {
-  let e = (0, Chunk996733.Z7)(),
+  let e = Chunk996733.Z.useField("query"),
     t = Chunk647438.useCallback((e, t) => {
-      t.stopPropagation(), t.preventDefault(), (0, c.QH)(e)
+      t.stopPropagation(), t.preventDefault(), c.Z.setState({
+        isActive: e
+      })
     }, []),
     n = Chunk647438.useCallback(() => {
-      (0, Chunk996733.QH)(false), (0, Chunk996733.yN)("")
+      Chunk996733.Z.setState({
+        query: "",
+        isActive: false
+      })
     }, []),
     d = Chunk647438.useRef(null),
     f = (0, Chunk442837.e7)([Chunk663389.Z], () => Chunk663389.Z.getSection());
-  return Chunk647438.useEffect(() => {
+  Chunk647438.useEffect(() => {
     let e = e => {
       var t;
       let n = d.current;
       (null == (t = (0, a.uB)(e)) ? true : t.activeElement) === document.body && (null == n || n.focus())
     };
     return window.addEventListener("keydown", module), () => window.removeEventListener("keydown", module)
-  }, [f]), (0, Chunk951288.jsx)("div", {
+  }, [f]);
+  let _ = Chunk647438.useCallback(e => {
+    c.Z.setState({
+      query: e
+    })
+  }, []);
+  return (0, Chunk951288.jsx)("div", {
     style: {
       marginBottom: "8px"
     },
@@ -38,7 +49,7 @@ function d() {
       ref: d,
       query: module,
       onClear: require,
-      onChange: Chunk996733.yN,
+      onChange: _,
       placeholder: Chunk388032.intl.string(Chunk388032.t["5h0QOD"]),
       inputProps: {
         "aria-label": Chunk388032.intl.string(Chunk388032.t.pk9BWV),

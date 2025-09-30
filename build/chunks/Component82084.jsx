@@ -1,37 +1,37 @@
-/** Chunk was on 47129 **/
+/** Chunk was on 59739 **/
 /** chunk id: 82084, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => o
+  Z: () => i
 });
 var Chunk951288 = require("./951288.js"),
   Chunk352065 = require("./352065.jsx"),
   Chunk79808 = require("./79808.jsx");
 
-function o(e) {
+function i(e) {
   var t, n, {
-      root: o,
-      directory: s,
-      target: a,
-      onPanelChange: u,
-      sidebarHeader: c,
+      root: i,
+      directory: a,
+      target: s,
+      onPanelChange: c,
+      sidebarHeader: u,
       sidebarFooter: d
     } = e,
     f = function(e, t) {
       if (null == e) return {};
-      var n, r, i = function(e, t) {
+      var n, r, o = function(e, t) {
         if (null == e) return {};
-        var n, r, i = {},
+        var n, r, o = {},
           l = Object.keys(e);
-        for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-        return i
+        for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
+        return o
       }(e, t);
       if (Object.getOwnPropertySymbols) {
         var l = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+        for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
       }
-      return i
+      return o
     }(e, ["root", "directory", "target", "onPanelChange", "sidebarHeader", "sidebarFooter"]);
-  return (0, r.jsx)(i.A, (t = function(e) {
+  return (0, r.jsx)(o.A, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -51,11 +51,11 @@ function o(e) {
   }({}, f), n = n = {
     children: (0, r.jsx)(l.Z, {
       onClose: f.onClose,
-      root: o,
-      directory: s,
-      target: a,
-      onPanelChange: u,
-      sidebarHeader: c,
+      root: i,
+      directory: a,
+      target: s,
+      onPanelChange: c,
+      sidebarHeader: u,
       sidebarFooter: d
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

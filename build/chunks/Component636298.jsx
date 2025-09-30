@@ -1,12 +1,12 @@
-/** Chunk was on 47129 **/
+/** Chunk was on 59739 **/
 /** chunk id: 636298, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => j
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk873546 = require("./873546.js"),
   Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
@@ -15,14 +15,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk214779 = require("./214779.js");
 
-function y(e) {
+function p(e) {
   let {
     icon: t,
     label: n,
-    onClick: i
+    onClick: o
   } = e;
-  return (0, r.jsx)(a.hU, {
-    onClick: i,
+  return (0, r.jsx)(s.hU, {
+    onClick: o,
     icon: t,
     size: "sm",
     variant: "icon-only",
@@ -30,47 +30,47 @@ function y(e) {
   })
 }
 
-function O(e) {
+function m(e) {
   let {
     title: t,
     onClose: n
   } = e, {
-    setShowNavigationMobile: i
-  } = (0, c.t)();
+    setShowNavigationMobile: o
+  } = (0, u.t)();
   return (0, r.jsxs)("div", {
     className: b.contentHeader,
     children: [(0, r.jsxs)("div", {
       className: b.contentHeaderLeft,
-      children: [s.tq && (0, r.jsx)(y, {
-        icon: u.yFM,
-        onClick: () => i(true),
+      children: [a.tq && (0, r.jsx)(p, {
+        icon: c.yFM,
+        onClick: () => o(true),
         label: f.intl.string(f.t["13/7kZ"])
-      }), (0, r.jsx)(u.X6q, {
+      }), (0, r.jsx)(c.X6q, {
         variant: "heading-md/medium",
         color: "header-secondary",
         children: t
       })]
-    }), (0, r.jsx)(y, {
-      icon: u.Uz9,
+    }), (0, r.jsx)(p, {
+      icon: c.Uz9,
       onClick: n,
       label: f.intl.string(f.t.cpT0Cg)
     })]
   })
 }
-let g = Chunk647438.memo(function(e) {
+let j = Chunk647438.memo(function(e) {
   let {
     onClose: t,
     setting: n
-  } = e, i = null == n ? true : n.useTitle(), {
+  } = e, o = null == n ? true : n.useTitle(), {
     showNavigationMobile: l
-  } = (0, c.t)();
+  } = (0, u.t)();
   return (0, r.jsxs)("div", {
-    className: o()(b.content, {
-      [b.mobile]: s.tq,
+    className: i()(b.content, {
+      [b.mobile]: a.tq,
       [b.mobileNavigationOpen]: l
     }),
-    children: [(0, r.jsx)(O, {
-      title: i,
+    children: [(0, r.jsx)(m, {
+      title: o,
       onClose: t
     }), (0, r.jsx)("div", {
       className: b.contentBody,

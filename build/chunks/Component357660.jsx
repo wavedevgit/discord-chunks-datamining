@@ -1,4 +1,4 @@
-/** Chunk was on 47129 **/
+/** Chunk was on 59739 **/
 /** chunk id: 357660, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   T: () => f
@@ -17,10 +17,10 @@ function d(e) {
     notice: t,
     children: n
   } = e, {
-    showNotice: u,
+    showNotice: c,
     handleStoreUpdate: d
-  } = (0, a.Cu)(), f = null == t ? true : t.stores;
-  i.useEffect(() => {
+  } = (0, s.Cu)(), f = null == t ? true : t.stores;
+  o.useEffect(() => {
     if (null != f) {
       let e = new l.Fh(f, () => {
         d(f)
@@ -30,18 +30,18 @@ function d(e) {
       }
     }
   }, [f, d]);
-  let b = i.useMemo(() => {
-    if (null == t || !u) return null;
+  let b = o.useMemo(() => {
+    if (null == t || !c) return null;
     let {
       element: e
     } = t;
-    return (0, r.jsx)(s.oXn, {
-      className: c.notice,
+    return (0, r.jsx)(a.oXn, {
+      className: u.notice,
       children: (0, r.jsx)(e, {})
     })
-  }, [t, u]);
+  }, [t, c]);
   return (0, r.jsxs)(r.Fragment, {
-    children: [n, (0, r.jsx)(o.W, {
+    children: [n, (0, r.jsx)(i.W, {
       component: "div",
       children: b
     })]
@@ -56,11 +56,11 @@ function f(e) {
   if (1 !== t.layout.length) throw Error("Panels with multiple panes must define a render prop to handle the multiple panes");
   return (0, r.jsx)(d, {
     notice: t.notice,
-    children: (0, r.jsx)(s.w0Z, {
-      className: c.scroller,
+    children: (0, r.jsx)(a.w0Z, {
+      className: u.scroller,
       children: (0, r.jsx)("div", {
-        className: c.panel,
-        children: (0, r.jsx)(u.Z, {
+        className: u.panel,
+        children: (0, r.jsx)(c.Z, {
           node: t.layout[0]
         })
       })

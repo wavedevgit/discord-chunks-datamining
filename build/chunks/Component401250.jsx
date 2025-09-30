@@ -1,20 +1,20 @@
-/** Chunk was on 47129 **/
+/** Chunk was on 59739 **/
 /** chunk id: 401250, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  W: () => o
+  W: () => i
 });
 var Chunk951288 = require("./951288.js"),
   Chunk657707 = require("./657707.js"),
   Chunk206403 = require("./206403.jsx");
 
-function o(e) {
+function i(e) {
   var t, n;
   let {
-    node: o
+    node: i
   } = e;
   return (0, r.jsx)(l.x, {
-    title: "useTitle" in o ? "[PLACEHOLDER] ".concat(null == (t = o.useTitle) ? true : t.call(o, false)) : "[PLACEHOLDER]",
-    description: "useSubtitle" in o ? null == (n = o.useSubtitle) ? true : n.call(o) : "",
-    secondaryTrailingElement: (0, r.jsx)(i.tEQ, {})
+    title: "useTitle" in i ? "[PLACEHOLDER] ".concat(null == (t = i.useTitle) ? true : t.call(i, false)) : "[PLACEHOLDER]",
+    description: "useSubtitle" in i ? null == (n = i.useSubtitle) ? true : n.call(i) : "",
+    secondaryTrailingElement: (0, r.jsx)(o.tEQ, {})
   })
 }

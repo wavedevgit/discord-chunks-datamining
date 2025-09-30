@@ -102,9 +102,6 @@ class d extends Chunk47770.Z {
   configureGoLiveSimulcast(e, t) {
     this.videoQualityManager.configGoLiveSimulcast(e, t)
   }
-  setGoLiveUsePixelCounts(e, t, n) {
-    this.videoQualityManager.setGoLiveUsePixelCounts(e, t, n)
-  }
   applyQualityConstraints() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {},
       t = arguments.length > 1 ? arguments[1] : true;

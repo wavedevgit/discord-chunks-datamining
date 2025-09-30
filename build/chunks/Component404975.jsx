@@ -1,12 +1,12 @@
-/** Chunk was on 47129 **/
+/** Chunk was on 59739 **/
 /** chunk id: 404975, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  P: () => T
+  P: () => g
 }), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk873546 = require("./873546.js"),
   Chunk264418 = require("./264418.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -39,15 +39,15 @@ function v(e) {
   return e
 }
 
-function T(e) {
+function g(e) {
   let {
     root: t,
     header: n,
     footer: l,
-    onClose: a
+    onClose: s
   } = e, {
-    showNavigationMobile: c
-  } = (0, f.t)(), y = i.useMemo(() => {
+    showNavigationMobile: u
+  } = (0, f.t)(), p = o.useMemo(() => {
     let e = [];
     return t.layout.forEach(t => {
       let {
@@ -65,7 +65,7 @@ function T(e) {
         }
       })
     }), e
-  }, [t.layout]), [O, g] = i.useMemo(() => {
+  }, [t.layout]), [m, j] = o.useMemo(() => {
     let e = [],
       n = [];
     return t.layout.forEach(t => {
@@ -73,44 +73,44 @@ function T(e) {
     }), [e, n]
   }, [t.layout]);
   return (0, r.jsx)(d.ZP, {
-    contentTypes: y,
+    contentTypes: p,
     children: e => {
       let {
         visibleContent: t,
-        markAsDismissed: i
+        markAsDismissed: o
       } = e;
       return (0, r.jsxs)("div", {
-        className: o()(p.sidebar, {
-          [p.mobile]: s.tq,
-          [p.mobileNavigationOpen]: c
+        className: i()(x.sidebar, {
+          [x.mobile]: a.tq,
+          [x.mobileNavigationOpen]: u
         }),
         children: [(0, r.jsxs)("div", {
-          className: p.fixedContent,
-          children: [s.tq && (0, r.jsx)("div", {
-            className: p.mobileCloseButton,
-            children: (0, r.jsx)(u.hU, {
-              icon: u.Uz9,
-              onClick: a,
+          className: x.fixedContent,
+          children: [a.tq && (0, r.jsx)("div", {
+            className: x.mobileCloseButton,
+            children: (0, r.jsx)(c.hU, {
+              icon: c.Uz9,
+              onClick: s,
               variant: "icon-only",
               size: "sm",
-              "aria-label": E.intl.string(E.t.cpT0Cg)
+              "aria-label": y.intl.string(y.t.cpT0Cg)
             })
           }), (0, r.jsx)("div", {
-            children: O.map(e => (0, r.jsx)(N, {
+            children: m.map(e => (0, r.jsx)(C, {
               section: e,
               visibleContent: t,
-              markAsDismissed: i
+              markAsDismissed: o
             }, e.key))
           }), null != n && (0, r.jsx)(n, {})]
-        }), (0, r.jsxs)(u.zJl, {
-          className: p.navScroller,
+        }), (0, r.jsxs)(c.zJl, {
+          className: x.navScroller,
           fade: true,
           children: [(0, r.jsx)("nav", {
-            className: p.nav,
-            children: g.map(e => (0, r.jsx)(N, {
+            className: x.nav,
+            children: j.map(e => (0, r.jsx)(C, {
               section: e,
               visibleContent: t,
-              markAsDismissed: i
+              markAsDismissed: o
             }, e.key))
           }), null != l && (0, r.jsx)(l, {})]
         })]
@@ -119,84 +119,84 @@ function T(e) {
   })
 }
 
-function S(e) {
+function h(e) {
   let {
     dismissibleContentType: t,
     targetElementRef: n,
     visibleContent: l,
-    markAsDismissed: o,
-    props: s
-  } = e, [u, d] = i.useState(false), f = i.useRef(null);
-  (0, c.ZP)(() => (f.current = setTimeout(() => d(true), 250), () => {
-    clearTimeout(f.current), o(g.L.AUTO_DISMISS)
+    markAsDismissed: i,
+    props: a
+  } = e, [c, d] = o.useState(false), f = o.useRef(null);
+  (0, u.ZP)(() => (f.current = setTimeout(() => d(true), 250), () => {
+    clearTimeout(f.current), i(j.L.AUTO_DISMISS)
   }));
-  let b = i.useCallback(e => {
-    o("user:explicit" === e ? g.L.USER_DISMISS : g.L.AUTO_DISMISS)
-  }, [o]);
-  return (0, r.jsx)(a.Z, v({
+  let b = o.useCallback(e => {
+    i("user:explicit" === e ? j.L.USER_DISMISS : j.L.AUTO_DISMISS)
+  }, [i]);
+  return (0, r.jsx)(s.Z, v({
     targetElementRef: n,
-    shouldShow: u && l === t,
+    shouldShow: c && l === t,
     scrollBehavior: "close",
     onRequestClose: b
-  }, s))
+  }, a))
 }
 
-function j(e) {
+function O(e) {
   let {
     trailing: t,
     sectionRef: n,
-    visibleContent: i,
+    visibleContent: o,
     markAsDismissed: l
   } = e;
   if (t.type === b.PU.POPOVER) {
-    var o, s;
-    return (0, r.jsx)(S, (o = v({}, t), s = s = {
+    var i, a;
+    return (0, r.jsx)(h, (i = v({}, t), a = a = {
       targetElementRef: n,
-      visibleContent: i,
+      visibleContent: o,
       markAsDismissed: l
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
         var r = Object.getOwnPropertySymbols(e);
         n.push.apply(n, r)
       }
       return n
-    })(Object(s)).forEach(function(e) {
-      Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(s, e))
-    }), o))
+    })(Object(a)).forEach(function(e) {
+      Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(a, e))
+    }), i))
   }
 }
 
-function N(e) {
+function C(e) {
   var t;
   let {
     section: n,
     visibleContent: l,
-    markAsDismissed: o
-  } = e, s = i.useRef(null), a = null == (t = n.useLabel) ? true : t.call(n), c = n.trailing;
+    markAsDismissed: i
+  } = e, a = o.useRef(null), s = null == (t = n.useLabel) ? true : t.call(n), u = n.trailing;
   return (0, r.jsxs)("ul", {
-    className: p.section,
-    children: [null != a && (0, r.jsxs)("div", {
-      className: p.sectionLabel,
-      ref: s,
-      children: [(0, r.jsx)(u.X6q, {
-        className: p.label,
+    className: x.section,
+    children: [null != s && (0, r.jsxs)("div", {
+      className: x.sectionLabel,
+      ref: a,
+      children: [(0, r.jsx)(c.X6q, {
+        className: x.label,
         variant: "heading-sm/medium",
         color: "text-tertiary",
-        children: a
-      }), null != c && (0, r.jsx)(j, {
-        trailing: c,
-        sectionRef: s,
+        children: s
+      }), null != u && (0, r.jsx)(O, {
+        trailing: u,
+        sectionRef: a,
         visibleContent: l,
-        markAsDismissed: o
+        markAsDismissed: i
       })]
     }), n.layout.map(e => (0, r.jsxs)("li", {
-      children: [e.type === b.Jq.PANEL && (0, r.jsx)(y.Z, {
+      children: [e.type === b.Jq.PANEL && (0, r.jsx)(p.Z, {
         node: e,
         visibleContent: l
-      }), e.type === b.Jq.SIDEBAR_ITEM && ("render" in e ? (0, r.jsx)(O.Z, {
+      }), e.type === b.Jq.SIDEBAR_ITEM && ("render" in e ? (0, r.jsx)(m.Z, {
         render: e.render
-      }) : (0, r.jsx)(O.Z, {
+      }) : (0, r.jsx)(m.Z, {
         icon: e.icon,
         title: e.useTitle(),
         onClick: e.onClick

@@ -1,7 +1,7 @@
-/** Chunk was on 47129 **/
+/** Chunk was on 9452 **/
 /** chunk id: 798922, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => O
 });
 var Chunk951288 = require("./951288.js"),
   Chunk657707 = require("./657707.js"),
@@ -12,15 +12,15 @@ var Chunk951288 = require("./951288.js"),
   Chunk36192 = require("./36192.jsx"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx");
-let f = (0, Chunk509613.x1)(Chunk313789.n.SESSIONS_PANE, {
+let E = (0, Chunk509613.x1)(Chunk313789.n.SESSIONS_PANE, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["+1h0k5"]),
     buildLayout: () => [],
     render: () => (0, Chunk951288.jsx)(Chunk36192.Z, {})
   }),
-  b = (0, Chunk509613.wf)(Chunk313789.n.SESSIONS_PANEL, {
+  O = (0, Chunk509613.wf)(Chunk313789.n.SESSIONS_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["+1h0k5"]),
     icon: Chunk657707.dW3,
-    buildLayout: () => [f],
+    buildLayout: () => [E],
     legacySearchKey: Chunk726985.s6.PRIVACY_ENCRYPTION_VERIFIED_DEVICES_V2,
     trailing: {
       type: Chunk28682.PU.BADGE_NEW,

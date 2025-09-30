@@ -1,4 +1,4 @@
-/** Chunk was on 47129 **/
+/** Chunk was on 59739 **/
 /** chunk id: 914578, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => v
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk782568 = require("./782568.js"),
   Chunk163379 = require("./163379.jsx"),
@@ -19,28 +19,28 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk989281 = require("./989281.js");
 
-function p(e) {
+function x(e) {
   let {
     onClose: t
   } = e;
-  return (0, r.jsx)(s.v2r, {
+  return (0, r.jsx)(a.v2r, {
     navId: "settings-footer-more-menu",
     onClose: t,
     onSelect: () => {},
     "aria-label": "More options",
-    children: (0, r.jsxs)(s.kSQ, {
-      children: [(0, r.jsx)(s.sNh, {
+    children: (0, r.jsxs)(a.kSQ, {
+      children: [(0, r.jsx)(a.sNh, {
         id: "changelog",
-        label: g.intl.string(g.t.LRmNAg),
-        action: () => (0, u.Z)(true)
-      }), (0, r.jsx)(s.sNh, {
+        label: j.intl.string(j.t.LRmNAg),
+        action: () => (0, c.Z)(true)
+      }), (0, r.jsx)(a.sNh, {
         id: "acknowledgements",
-        label: g.intl.string(g.t["0nUKy8"]),
-        action: () => (0, a.Z)(O.EYA.ACKNOWLEDGEMENTS)
-      }), (0, r.jsx)(s.sNh, {
+        label: j.intl.string(j.t["0nUKy8"]),
+        action: () => (0, s.Z)(m.EYA.ACKNOWLEDGEMENTS)
+      }), (0, r.jsx)(a.sNh, {
         id: "support",
-        label: g.intl.string(g.t["Yl/Rio"]),
-        action: () => (0, a.Z)(f.w)
+        label: j.intl.string(j.t["Yl/Rio"]),
+        action: () => (0, s.Z)(f.w)
       })]
     })
   })
@@ -94,13 +94,13 @@ function v() {
           let {
             closePopout: t
           } = e;
-          return (0, r.jsx)(p, {
+          return (0, r.jsx)(x, {
             onClose: t
           })
         },
         children: (t, n) => {
-          var i, l;
-          return (0, r.jsx)(s.eee, (i = function(e) {
+          var o, l;
+          return (0, r.jsx)(a.eee, (o = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
                 r = Object.keys(n);
@@ -120,16 +120,16 @@ function v() {
           }({}, t), l = l = {
             ref: e,
             useDefaultUnderlineStyles: false,
-            className: o()(E.moreButton, {
-              [E.active]: n.isShown
+            className: i()(y.moreButton, {
+              [y.active]: n.isShown
             }),
-            children: (0, r.jsx)(s.Text, {
+            children: (0, r.jsx)(a.Text, {
               tag: "span",
               variant: "text-xxs/normal",
               color: "currentColor",
-              children: g.intl.string(g.t.UKOtz8)
+              children: j.intl.string(j.t.UKOtz8)
             })
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
               var r = Object.getOwnPropertySymbols(e);
@@ -137,8 +137,8 @@ function v() {
             }
             return n
           })(Object(l)).forEach(function(e) {
-            Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
-          }), i))
+            Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(l, e))
+          }), o))
         }
       })]
     })]

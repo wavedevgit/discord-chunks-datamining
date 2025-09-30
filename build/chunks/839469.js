@@ -18,7 +18,7 @@ let u = (0, Chunk972959.H)(() => ({
 }));
 
 function d() {
-  let e = (0, Chunk996733.Z7)(),
+  let e = Chunk996733.Z.useField("query"),
     t = (0, Chunk991346.Pt)(),
     n = Chunk647438.useRef(new Chunk170401.Z((0, Chunk991346.ji)(exports))),
     a = Chunk647438.useCallback(async e => {
@@ -31,7 +31,9 @@ function d() {
   Chunk647438.useEffect(() => {
     "" === module || module.length < 2 ? u.resetState() : Chunk972959(module)
   }, [module, Chunk972959]), (0, Chunk493773.ZP)(() => () => {
-    u.resetState(), (0, Chunk996733.yN)("")
+    u.resetState(), Chunk996733.Z.setState({
+      query: ""
+    })
   });
   let c = u.useField("searchResults");
   return {

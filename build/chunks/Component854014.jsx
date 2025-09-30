@@ -1,8 +1,8 @@
-/** Chunk was on 47129 **/
+/** Chunk was on 9452 **/
 /** chunk id: 854014, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   C: () => a,
-  Z: () => u
+  Z: () => o
 });
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
@@ -14,66 +14,66 @@ function a(e) {
   let {
     onClick: t,
     active: n,
-    children: i
+    children: r
   } = e;
-  return (0, r.jsx)(o.P3F, {
+  return (0, i.jsx)(u.P3F, {
     className: l()(s.item, {
       [s.active]: n
     }),
     onClick: t,
-    children: i
+    children: r
   })
 }
 
-function u(e) {
+function o(e) {
   var {
     onClick: t,
     active: n
-  } = e, i = function(e, t) {
+  } = e, r = function(e, t) {
     if (null == e) return {};
-    var n, r, i = function(e, t) {
+    var n, i, r = function(e, t) {
       if (null == e) return {};
-      var n, r, i = {},
+      var n, i, r = {},
         l = Object.keys(e);
-      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-      return i
+      for (i = 0; i < l.length; i++) n = l[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
+      return r
     }(e, t);
     if (Object.getOwnPropertySymbols) {
       var l = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+      for (i = 0; i < l.length; i++) n = l[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
     }
-    return i
+    return r
   }(e, ["onClick", "active"]);
-  if ("render" in i) {
+  if ("render" in r) {
     let {
       render: e
-    } = i;
-    return (0, r.jsx)(a, {
+    } = r;
+    return (0, i.jsx)(a, {
       onClick: t,
       active: n,
-      children: (0, r.jsx)(e, {})
+      children: (0, i.jsx)(e, {})
     })
   }
   let {
     icon: l,
-    title: u,
+    title: o,
     trailing: c
-  } = i;
-  return (0, r.jsxs)(a, {
+  } = r;
+  return (0, i.jsxs)(a, {
     onClick: t,
     active: n,
-    children: [(0, r.jsxs)("div", {
+    children: [(0, i.jsxs)("div", {
       className: s.itemContent,
-      children: [(0, r.jsx)(l, {
+      children: [(0, i.jsx)(l, {
         color: "currentColor",
         size: "refresh_sm",
         className: s.icon
-      }), (0, r.jsx)(o.Text, {
+      }), (0, i.jsx)(u.Text, {
         variant: "text-md/medium",
         color: "currentColor",
-        children: u
+        children: o
       })]
-    }), (0, r.jsx)("div", {
+    }), (0, i.jsx)("div", {
       className: s.itemContent,
       children: c
     })]

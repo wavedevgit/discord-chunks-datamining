@@ -1,7 +1,7 @@
-/** Chunk was on 47129 **/
+/** Chunk was on 9452 **/
 /** chunk id: 965557, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => o
 });
 var Chunk657707 = require("./657707.js"),
   Chunk509613 = require("./509613.js"),
@@ -12,7 +12,7 @@ let a = (0, Chunk509613.x1)(Chunk313789.n.EXPERIMENTS_PANE, {
     buildLayout: () => [],
     render: Chunk287490.Z
   }),
-  u = (0, Chunk509613.wf)(Chunk313789.n.EXPERIMENTS_PANEL, {
+  o = (0, Chunk509613.wf)(Chunk313789.n.EXPERIMENTS_PANEL, {
     icon: Chunk657707.uOV,
     useTitle: () => "Experiments",
     usePredicate: () => Chunk906467.Z.isDeveloper,

@@ -1,113 +1,89 @@
-/** Chunk was on 43374 **/
+/** Chunk was on 51711 **/
 /** chunk id: 512313, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
-}), require("./388685.js"), require("./642613.js"), require("./539854.js");
+  Z: () => x
+}), require("./642613.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk772848 = require("./772848.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk991346 = require("./991346.js"),
-  Chunk259580 = require("./259580.jsx"),
+  Chunk131051 = require("./131051.js"),
+  Chunk28682 = require("./28682.js"),
+  Chunk920952 = require("./920952.js"),
+  Chunk544651 = require("./544651.jsx"),
+  Chunk546697 = require("./546697.js"),
   Chunk547481 = require("./547481.js");
 
-function d(e) {
+function m(e) {
+  var t;
   let {
-    setting: t,
-    hasChildren: n
-  } = e;
-  return (0, a.jsx)(l.Text, {
-    variant: n ? "text-md/bold" : "text-md/normal",
-    children: t
+    setting: n,
+    depth: i,
+    highlight: l
+  } = e, s = null == (t = r.useContext(h)) ? true : t.get(n), o = null;
+  return null != s && s.length > 0 && (o = s.sort((e, t) => e.localeCompare(t)).map(e => (0, a.jsx)(m, {
+    setting: e,
+    depth: i + 1,
+    highlight: l
+  }, e))), (0, a.jsx)(c.r, {
+    title: n,
+    initExpanded: i <= 2,
+    highlight: l,
+    children: o
   })
 }
 
-function u(e) {
+function p(e) {
   let {
     setting: t,
-    children: n,
-    depth: s
-  } = e, [m, p] = r.useState(1 === s), h = r.useCallback(() => {
-    p(!m)
-  }, [m, p]);
-  if (0 === n.length) return (0, a.jsx)("div", {
-    style: {
-      marginLeft: 8 * s
-    },
-    className: c.settingNode,
-    children: (0, a.jsx)(d, {
-      setting: t,
-      hasChildren: false
-    })
-  }, (0, i.Z)());
-  let x = m ? (0, a.jsx)("div", {
-    className: c.settingNodeChildren,
-    children: n.sort((e, t) => e.setting.localeCompare(t.setting)).sort((e, t) => e.children.length - t.children.length).map(e => (0, a.jsx)(u, {
-      setting: e.setting,
-      children: e.children,
-      depth: s + 1
-    }, (0, i.Z)()))
-  }) : null;
-  return (0, a.jsxs)("div", {
-    style: {
-      marginLeft: 8 * s
-    },
-    className: c.settingNode,
-    children: [(0, a.jsxs)(l.P3F, {
-      className: c.headerBar,
-      onClick: h,
-      children: [(0, a.jsx)(d, {
-        setting: t,
-        hasChildren: n.length > 0
-      }), (0, a.jsx)(o.Z, {
-        direction: m ? o.Z.Directions.DOWN : o.Z.Directions.RIGHT,
-        className: c.headerCaret
-      })]
-    }), x]
-  }, (0, i.Z)())
-}
-
-function m() {
-  let e = (0, Chunk991346.Pt)(),
-    t = [],
-    n = Object.keys(module).filter(t => {
-      let n = e[t];
-      return null == n.predicate || null != n.predicate && n.predicate()
-    }).map(t => {
-      var n;
-      return {
-        setting: t,
-        parent: null != (n = e[t].parent) ? n : null
-      }
-    });
-  require.filter(e => null === e.parent).forEach(e => {
-    t.push({
-      setting: e.setting,
-      children: []
-    })
-  });
-  let r = [...exports];
-  for (; Chunk647438.length > 0;) {
-    let e = Chunk647438.shift();
-    if (null == module) continue;
-    let t = require.filter(t => t.parent === e.setting).map(e => ({
-      setting: e.setting,
-      children: []
-    }));
-    module.children = exports, Chunk647438.push(...exports)
+    depth: n
+  } = e, r = (0, s.Lk)(t) && (t.type === s.Jq.PANEL && t.layout.some(e => null != e.render) || t.type === s.Jq.PANE && null != t.render), i = null;
+  if ((0, s.Lk)(t)) {
+    var l;
+    i = 0 === t.layout.length && (null == (l = t.parent) ? true : l.legacySearchKey) != null ? (0, a.jsx)(m, {
+      setting: t.parent.legacySearchKey,
+      depth: n + 1,
+      highlight: true
+    }) : t.layout.map(e => (0, a.jsx)(p, {
+      setting: e,
+      depth: n + 1
+    }, e.key))
   }
+  return (0, a.jsx)(c.r, {
+    title: t.key,
+    initExpanded: n <= 2,
+    highlight: r,
+    children: i
+  })
+}
+let h = Chunk647438.createContext(null);
+
+function x() {
+  let [e, t] = Chunk647438.useState(false), {
+    legacySettingDirectory: n
+  } = (0, Chunk546697.q)(), {
+    node: s
+  } = (0, Chunk131051.Z)(Chunk920952.Z, "");
   return (0, Chunk951288.jsxs)(Chunk481060.zJl, {
     className: Chunk547481.root,
     children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
       variant: "heading-lg/bold",
       children: "Settings Tree"
-    }), (0, Chunk951288.jsx)("div", {
-      className: Chunk547481.tree,
-      children: exports.sort((e, t) => e.setting.localeCompare(t.setting)).map(e => (0, a.jsx)(u, {
-        setting: e.setting,
-        children: e.children,
-        depth: 1
-      }, (0, i.Z)()))
+    }), (0, Chunk951288.jsx)(Chunk481060.j7V, {
+      value: module,
+      onChange: e => t(e),
+      children: "Show Legacy Settings Tree"
+    }), (0, Chunk951288.jsx)(h.Provider, {
+      value: require,
+      children: (0, Chunk951288.jsxs)("div", {
+        className: Chunk547481.tree,
+        children: [module && (0, Chunk951288.jsx)(m, {
+          setting: "root",
+          depth: 1
+        }, "root"), !module && (0, Chunk951288.jsx)(p, {
+          setting: Chunk28682,
+          depth: 1
+        }, Chunk28682.key)]
+      })
     })]
   })
 }

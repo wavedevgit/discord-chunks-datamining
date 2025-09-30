@@ -1,7 +1,7 @@
-/** Chunk was on 47129 **/
+/** Chunk was on 9452 **/
 /** chunk id: 462718, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => E
 });
 var Chunk951288 = require("./951288.js"),
   Chunk603113 = require("./603113.js"),
@@ -12,26 +12,26 @@ var Chunk951288 = require("./951288.js"),
   Chunk313789 = require("./313789.js"),
   Chunk518596 = require("./518596.jsx"),
   Chunk388032 = require("./388032.jsx");
-let f = (0, Chunk509613.m7)(Chunk313789.n.LOGOUT_SIDEBAR_ITEM, {
+let E = (0, Chunk509613.m7)(Chunk313789.n.LOGOUT_SIDEBAR_ITEM, {
   useTitle: () => Chunk388032.intl.string(Chunk388032.t["2jxGen"]),
   icon: Chunk657707.PBZ,
   onClick: () => {
     (0, Chunk481060.h7j)(e => {
       var t, n;
-      return (0, r.jsx)(o.ConfirmModal, (t = function(e) {
+      return (0, i.jsx)(u.ConfirmModal, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            i = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-              value: r,
+          }))), i.forEach(function(t) {
+            var i;
+            i = n[t], t in e ? Object.defineProperty(e, t, {
+              value: i,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[t] = r
+            }) : e[t] = i
           })
         }
         return e
@@ -41,20 +41,20 @@ let f = (0, Chunk509613.m7)(Chunk313789.n.LOGOUT_SIDEBAR_ITEM, {
         cancelText: d.intl.string(d.t["ETE/oK"]),
         onCancel: e.onClose,
         onConfirm: () => {
-          i.flushSync(() => {
-            (0, o.Mr3)(c.USER_SETTINGS_MODAL_KEY)
+          r.flushSync(() => {
+            (0, u.Mr3)(c.USER_SETTINGS_MODAL_KEY)
           }), s.Z.logout("settings")
         }
       }, e), n = n = {
-        children: (0, r.jsx)(o.Text, {
+        children: (0, i.jsx)(u.Text, {
           variant: "text-md/normal",
           children: d.intl.string(d.t.SUnWBA)
         })
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, r)
+          var i = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, i)
         }
         return n
       })(Object(n)).forEach(function(e) {

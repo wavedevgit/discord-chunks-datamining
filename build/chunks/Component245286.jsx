@@ -1,7 +1,7 @@
-/** Chunk was on 47129 **/
+/** Chunk was on 59739 **/
 /** chunk id: 245286, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => T
+  default: () => g
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -25,48 +25,48 @@ function v(e) {
     destinationPanel: t,
     originPanel: n
   } = e;
-  (0, c.QB)({
+  (0, u.QB)({
     destinationPane: t,
     originPane: n,
-    subsection: u.Z.getSubsection(),
-    source: u.Z.getAnalyticsLocation(),
-    locationStack: u.Z.getAnalyticsLocations()
+    subsection: c.Z.getSubsection(),
+    source: c.Z.getAnalyticsLocation(),
+    locationStack: c.Z.getAnalyticsLocations()
   })
 }
 
-function T(e) {
+function g(e) {
   var t, {
       target: n
     } = e,
     l = function(e, t) {
       if (null == e) return {};
-      var n, r, i = function(e, t) {
+      var n, r, o = function(e, t) {
         if (null == e) return {};
-        var n, r, i = {},
+        var n, r, o = {},
           l = Object.keys(e);
-        for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-        return i
+        for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
+        return o
       }(e, t);
       if (Object.getOwnPropertySymbols) {
         var l = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+        for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
       }
-      return i
+      return o
     }(e, ["target"]);
-  let c = (0, d.Z7)(),
+  let u = d.Z.useField("query"),
     {
-      node: O,
-      directory: E
-    } = (0, a.Z)(y.Z, c),
-    p = (t = f.n.ACCOUNT_PANEL, null == E.entry(n) ? t : n),
-    T = i.useRef(null);
-  return (0, o.ZP)(() => {
-    let e = u.Z.getSection();
+      node: m,
+      directory: y
+    } = (0, s.Z)(p.Z, u),
+    x = (t = f.n.ACCOUNT_PANEL, null == y.entry(n) ? t : n),
+    g = o.useRef(null);
+  return (0, i.ZP)(() => {
+    let e = c.Z.getSection();
     null != e && (v({
       destinationPanel: e,
       originPanel: null
-    }), T.current = e)
-  }), (0, r.jsx)(s.Z, function(e) {
+    }), g.current = e)
+  }), (0, r.jsx)(a.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -84,31 +84,41 @@ function T(e) {
     }
     return e
   }({
-    root: O,
-    directory: E,
-    sidebarHeader: S,
+    root: m,
+    directory: y,
+    sidebarHeader: h,
     sidebarFooter: b.Z,
     onPanelChange: e => {
-      let t = (0, g.getUserSettingsSectionsByWebUserSettings)().get(e);
+      let t = (0, j.getUserSettingsSectionsByWebUserSettings)().get(e);
       null != t && (v({
         destinationPanel: t,
-        originPanel: T.current
-      }), T.current = t)
+        originPanel: g.current
+      }), g.current = t)
     },
-    target: p
+    target: x
   }, l))
 }
 
-function S() {
-  let e = (0, Chunk996733.Z7)(),
+function h() {
+  let e = Chunk996733.Z.useField("query"),
     t = Chunk839469.R.useField("hasSearchResults"),
-    n = Chunk839469.R.useField("searchResults");
+    n = Chunk839469.R.useField("searchResults"),
+    i = Chunk647438.useCallback(e => {
+      d.Z.setState({
+        query: e
+      })
+    }, []),
+    a = Chunk647438.useCallback(() => {
+      Chunk996733.Z.setState({
+        query: ""
+      })
+    }, []);
   return (0, Chunk951288.jsxs)("div", {
     children: [(0, Chunk951288.jsx)(Chunk481060.E1j, {
       size: "md",
       query: module,
-      onChange: Chunk996733.yN,
-      onClear: () => (0, Chunk996733.yN)("")
+      onChange: Chunk493773,
+      onClear: Chunk82084
     }), exports && 0 === require.length && (0, Chunk951288.jsxs)("div", {
       className: Chunk942408.emptySearchResultsContainer,
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {

@@ -1,6 +1,6 @@
-/** Chunk was on 47129 **/
+/** Chunk was on 9452 **/
 /** chunk id: 904849, original params: e,t,n (module,exports,require) **/
-function r(e, t, n) {
+function i(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -9,15 +9,15 @@ function r(e, t, n) {
   }) : e[t] = n, e
 }
 require.d(exports, {
-  Z: () => i
+  Z: () => r
 }), require("./388685.js");
-class i {
-  register(e, t, n, r) {
+class r {
+  register(e, t, n, i) {
     this.map.set(e.key, {
       node: e,
       parentPanel: t,
       parentCategory: n,
-      parentAccordion: r
+      parentAccordion: i
     })
   }
   entry(e) {
@@ -41,6 +41,6 @@ class i {
     return this.defaultPanel
   }
   constructor() {
-    r(this, "map", new Map), r(this, "defaultPanel", true)
+    i(this, "map", new Map), i(this, "defaultPanel", true)
   }
 }

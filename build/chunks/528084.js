@@ -11,7 +11,7 @@ var Chunk442837 = require("./442837.js"),
 
 function s(e, t) {
   let n = (0, o.Gj)(t),
-    s = (0, a.Z7)(),
+    s = a.Z.useField("query"),
     l = (0, r.e7)([i.Z], () => i.Z.getSubsection()),
     c = e.filter(e => null == e.predicate || e.predicate());
   if (null != n && n.size > 0) {

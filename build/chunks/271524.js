@@ -1,4 +1,4 @@
-/** Chunk was on 47129 **/
+/** Chunk was on 9452 **/
 /** chunk id: 271524, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -15,7 +15,7 @@ let d = (0, Chunk509613.J9)(Chunk313789.n.TEXT_TO_SPEECH_NOTIFICATIONS, {
   useTitle: () => Chunk388032.intl.string(Chunk388032.t.VIm5MD),
   useSubtitle: () => Chunk388032.intl.string(Chunk388032.t["+4dnAw"]),
   useValue: () => (0, Chunk442837.e7)([Chunk292959.Z], () => Chunk292959.Z.getTTSType()),
-  setValue: e => i.default.setTTSType(e),
+  setValue: e => r.default.setTTSType(e),
   usePredicate: () => Chunk419363.Zh,
   useOptions: () => [{
     name: Chunk388032.intl.string(Chunk388032.t.B1AGeH),

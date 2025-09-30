@@ -1,7 +1,7 @@
-/** Chunk was on 47129 **/
+/** Chunk was on 59739 **/
 /** chunk id: 206403, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  x: () => u
+  x: () => c
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
@@ -10,47 +10,47 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk845442 = require("./845442.js");
 
-function u(e) {
+function c(e) {
   let {
     leadingElement: t,
     primaryTrailingElement: n,
-    secondaryTrailingElement: i,
-    title: u,
-    secondaryTitle: c,
+    secondaryTrailingElement: o,
+    title: c,
+    secondaryTitle: u,
     description: d,
     compact: f = false,
     onClick: b
   } = e;
-  return (0, r.jsxs)(s.P3F, {
-    className: l()(a.baseControlItem, {
-      [a.compact]: f
+  return (0, r.jsxs)(a.P3F, {
+    className: l()(s.baseControlItem, {
+      [s.compact]: f
     }),
     onClick: b,
     children: [null != t && (0, r.jsx)("div", {
-      className: a.baseControlItemLeadingElement,
+      className: s.baseControlItemLeadingElement,
       children: t
     }), (0, r.jsxs)("div", {
-      className: a.baseControlItemContent,
+      className: s.baseControlItemContent,
       children: [(0, r.jsxs)("div", {
-        className: a.baseControlItemTitle,
-        children: [(0, r.jsx)(o.X6q, {
+        className: s.baseControlItemTitle,
+        children: [(0, r.jsx)(i.X6q, {
           variant: "heading-md/semibold",
           color: "text-primary",
-          children: u
-        }), null != c && (0, r.jsx)(o.X6q, {
+          children: c
+        }), null != u && (0, r.jsx)(i.X6q, {
           variant: "heading-md/semibold",
           color: "text-secondary",
-          className: a.secondaryTitle,
-          children: c
+          className: s.secondaryTitle,
+          children: u
         })]
-      }), null != d && (0, r.jsx)(o.xvT, {
+      }), null != d && (0, r.jsx)(i.xvT, {
         variant: "text-md/normal",
         color: "text-secondary",
         children: d
       })]
-    }), (null != n || null != i) && (0, r.jsxs)("div", {
-      className: a.baseControlItemTrailingElements,
-      children: [n, i]
+    }), (null != n || null != o) && (0, r.jsxs)("div", {
+      className: s.baseControlItemTrailingElements,
+      children: [n, o]
     })]
   })
 }
