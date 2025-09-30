@@ -1,13 +1,12 @@
 /** Chunk was on 47552 **/
-/** chunk id: 520977, original params: e,t,r (module,exports,require) **/
+/** chunk id: 520977, original params: t,e,r (module,exports,require) **/
 require.d(exports, {
   default: () => O
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk481060 = require("./481060.js"),
-  Chunk313201 = require("./313201.js"),
+  Chunk82659 = require("./82659.jsx"),
   Chunk237997 = require("./237997.js"),
   Chunk451478 = require("./451478.js"),
   Chunk358085 = require("./358085.js"),
@@ -16,92 +15,74 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function O(e) {
-  var t, r, {
+function O(t) {
+  var e, r, {
       transitionState: O,
       onClose: y,
-      contextKey: j
-    } = e,
-    h = function(e, t) {
-      if (null == e) return {};
-      var r, n, i = function(e, t) {
-        if (null == e) return {};
-        var r, n, i = {},
-          o = Object.keys(e);
-        for (n = 0; n < o.length; n++) r = o[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
-        return i
-      }(e, t);
+      contextKey: d
+    } = t,
+    g = function(t, e) {
+      if (null == t) return {};
+      var r, n, o = function(t, e) {
+        if (null == t) return {};
+        var r, n, o = {},
+          i = Object.keys(t);
+        for (n = 0; n < i.length; n++) r = i[n], e.indexOf(r) >= 0 || (o[r] = t[r]);
+        return o
+      }(t, e);
       if (Object.getOwnPropertySymbols) {
-        var o = Object.getOwnPropertySymbols(e);
-        for (n = 0; n < o.length; n++) r = o[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
+        var i = Object.getOwnPropertySymbols(t);
+        for (n = 0; n < i.length; n++) r = i[n], !(e.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(t, r) && (o[r] = t[r])
       }
-      return i
-    }(e, ["transitionState", "onClose", "contextKey"]);
-  let g = (0, l.Dt)(),
-    x = (0, o.e7)([a.Z], () => a.Z.isFocused()),
-    P = j === f.IlC.APP,
-    m = (0, d.getPID)(),
-    v = (0, o.e7)([s.default], () => s.default.isLocked(m));
-  return (i.useEffect(() => {
-    (x || P || v) && (null == y || y())
-  }, [x, y, P, v]), x || v) ? null : (0, n.jsxs)(c.Y0X, (t = function(e) {
-    for (var t = 1; t < arguments.length; t++) {
-      var r = null != arguments[t] ? arguments[t] : {},
+      return o
+    }(t, ["transitionState", "onClose", "contextKey"]);
+  let j = (0, i.e7)([s.Z], () => s.Z.isFocused()),
+    P = d === b.IlC.APP,
+    w = (0, f.getPID)(),
+    v = (0, i.e7)([l.default], () => l.default.isLocked(w));
+  return (o.useEffect(() => {
+    (j || P || v) && (null == y || y())
+  }, [j, y, P, v]), j || v) ? null : (0, n.jsx)(c.Modal, (e = function(t) {
+    for (var e = 1; e < arguments.length; e++) {
+      var r = null != arguments[e] ? arguments[e] : {},
         n = Object.keys(r);
-      "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-        return Object.getOwnPropertyDescriptor(r, e).enumerable
-      }))), n.forEach(function(t) {
+      "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(t) {
+        return Object.getOwnPropertyDescriptor(r, t).enumerable
+      }))), n.forEach(function(e) {
         var n;
-        n = r[t], t in e ? Object.defineProperty(e, t, {
+        n = r[e], e in t ? Object.defineProperty(t, e, {
           value: n,
           enumerable: true,
           configurable: true,
           writable: true
-        }) : e[t] = n
+        }) : t[e] = n
       })
     }
-    return e
-  }({
-    transitionState: O,
-    "aria-labelledby": g
-  }, h), r = r = {
-    size: c.CgR.SMALL,
-    parentComponent: "FocusMainAppModal",
-    children: [(0, n.jsx)(c.xBx, {
-      children: (0, n.jsx)(c.X6q, {
-        variant: "heading-xl/semibold",
-        children: b.intl.string(b.t.DJ8ojI)
-      })
-    }), (0, n.jsx)(c.hzk, {
-      children: (0, n.jsx)(c.Text, {
-        color: "text-default",
-        variant: "text-md/medium",
-        children: b.intl.string(b.t["E+Ph7O"])
-      })
-    }), (0, n.jsx)(c.mzw, {
-      children: (0, n.jsxs)(c.hE2, {
-        direction: "horizontal-reverse",
-        children: [(0, n.jsx)(c.zxk, {
-          variant: "primary",
-          text: b.intl.string(b.t.ELRJQk),
-          onClick: () => {
-            u.isPlatformEmbedded ? p.ZP.focus() : window.focus(), y()
-          }
-        }), (0, n.jsx)(c.zxk, {
-          variant: "secondary",
-          text: b.intl.string(b.t.FgK5QE),
-          onClick: () => null == y ? true : y()
-        })]
-      })
-    })]
-  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
-    var r = Object.keys(e);
+    return t
+  }({}, g), r = r = {
+    title: p.intl.string(p.t.DJ8ojI),
+    subtitle: p.intl.string(p.t["E+Ph7O"]),
+    actions: [{
+      variant: "secondary",
+      text: p.intl.string(p.t.FgK5QE),
+      onClick: () => null == y ? true : y()
+    }, {
+      variant: "primary",
+      text: p.intl.string(p.t.ELRJQk),
+      onClick: () => {
+        u.isPlatformEmbedded ? a.ZP.focus() : window.focus(), y()
+      }
+    }],
+    onClose: y,
+    transitionState: O
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : (function(t, e) {
+    var r = Object.keys(t);
     if (Object.getOwnPropertySymbols) {
-      var n = Object.getOwnPropertySymbols(e);
+      var n = Object.getOwnPropertySymbols(t);
       r.push.apply(r, n)
     }
     return r
-  })(Object(r)).forEach(function(e) {
-    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
-  }), t))
+  })(Object(r)).forEach(function(t) {
+    Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
+  }), e))
 }
