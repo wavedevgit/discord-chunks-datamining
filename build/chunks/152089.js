@@ -53,9 +53,10 @@ function f(e) {
     emojiIntention: E,
     sendMessage: y,
     sendSticker: O,
-    insertText: (e, t) => {
+    insertText: function(e, t) {
       var n;
-      null == (n = b.current) || n.insertAutocomplete(e, null != t ? t : e)
+      let r = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {};
+      null == (n = b.current) || n.insertAutocomplete(e, null != t ? t : e, r)
     },
     replaceText: (e, t) => {
       v(e, null != t ? t : (0, s.JM)(e))
@@ -103,28 +104,29 @@ function p(e) {
     options: r,
     currentWord: a,
     currentWordIsAtStart: o,
-    textValue: s,
-    optionText: f,
-    parentAutocompleteInputType: p,
-    parentAutocompleteInputValue: h
-  } = e, m = null;
+    fullWord: s,
+    textValue: f,
+    optionText: p,
+    parentAutocompleteInputType: h,
+    parentAutocompleteInputValue: m
+  } = e, g = null;
   for (let e of c.R) {
-    var g, E, b, y, O, v;
-    let I = c.W[e];
+    var E, b, y, O, v, I;
+    let T = c.W[e];
     if (e === u.eq.GIFS || e === u.eq.CHOICES) {
       if (r.commands === u.L8.OLD_BUILT_INS) {
         if (_({
             type: e,
             channel: t,
             guild: n,
-            query: s,
+            query: f,
             isAtStart: false,
             options: r
           })) {
-          m = {
+          g = {
             type: e,
-            typeInfo: I,
-            query: s
+            typeInfo: T,
+            query: f
           };
           break
         }
@@ -132,40 +134,40 @@ function p(e) {
           type: e,
           channel: t,
           guild: n,
-          query: f,
+          query: p,
           isAtStart: false,
           options: r
         })) return {
         type: e,
-        typeInfo: I,
-        query: f
+        typeInfo: T,
+        query: p
       }
     } else if (e === u.eq.STICKERS) {
       if (_({
           type: e,
           channel: t,
           guild: n,
-          query: f,
+          query: p,
           isAtStart: false,
           options: r
         })) return {
         type: e,
-        typeInfo: I,
-        query: f
+        typeInfo: T,
+        query: p
       }
     } else if (e === u.eq.COMMANDS && r.commands !== u.L8.OLD_BUILT_INS) {
       if (_({
           type: e,
           channel: t,
           guild: n,
-          query: s,
+          query: f,
           isAtStart: true,
           options: r
         })) {
-        m = {
+        g = {
           type: e,
-          typeInfo: I,
-          query: s.substring(null != (E = null == (g = I.sentinel) ? true : g.length) ? E : 0)
+          typeInfo: T,
+          query: f.substring(null != (b = null == (E = T.sentinel) ? true : E.length) ? b : 0)
         };
         break
       }
@@ -174,14 +176,14 @@ function p(e) {
           type: e,
           channel: t,
           guild: n,
-          query: s,
+          query: f,
           isAtStart: o,
           options: r
         })) {
-        m = {
+        g = {
           type: e,
-          typeInfo: I,
-          query: s
+          typeInfo: T,
+          query: f
         };
         break
       }
@@ -194,35 +196,38 @@ function p(e) {
           isAtStart: o,
           options: r
         })) {
-        m = {
+        g = {
           type: e,
-          typeInfo: I,
-          query: a.substring(null != (y = null == (b = I.sentinel) ? true : b.length) ? y : 0)
+          typeInfo: T,
+          query: a.substring(null != (O = null == (y = T.sentinel) ? true : y.length) ? O : 0)
         };
         break
       }
-    } else if (null != I.autocompleteInputElementType) I.autocompleteInputElementType === p && (i()(null != h, "parentAutocompleteInputValue is null, but we're in an inline autocomplete object"), m = {
+    } else if (null != T.autocompleteInputElementType) T.autocompleteInputElementType === h && (i()(null != m, "parentAutocompleteInputValue is null, but we're in an inline autocomplete object"), g = {
       type: e,
-      typeInfo: I,
-      query: h
+      typeInfo: T,
+      query: m
     });
-    else if (null != a && _({
-        type: e,
-        channel: t,
-        guild: n,
-        query: a,
-        isAtStart: o,
-        options: r
-      })) {
-      m = {
-        type: e,
-        typeInfo: I,
-        query: a.substring(null != (v = null == (O = I.sentinel) ? true : O.length) ? v : 0)
-      };
-      break
+    else {
+      let i = T.useFullWord && null != s ? s : a;
+      if (null != i && _({
+          type: e,
+          channel: t,
+          guild: n,
+          query: i,
+          isAtStart: o,
+          options: r
+        })) {
+        g = {
+          type: e,
+          typeInfo: T,
+          query: i.substring(null != (I = null == (v = T.sentinel) ? true : v.length) ? I : 0)
+        };
+        break
+      }
     }
   }
-  return null == m ? null : (m.query = m.query.toLocaleLowerCase(), m)
+  return null == g ? null : (g.query = g.query.toLocaleLowerCase(), g)
 }
 
 function h(e, t) {

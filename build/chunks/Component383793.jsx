@@ -1,4 +1,4 @@
-/** Chunk was on 49236 **/
+/** Chunk was on 64982 **/
 /** chunk id: 383793, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -15,10 +15,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk158638 = require("./158638.js"),
   Chunk441536 = require("./441536.js"),
   Chunk434404 = require("./434404.js"),
-  Chunk70086 = require("./70086.jsx"),
   Chunk736617 = require("./736617.js"),
   Chunk196961 = require("./196961.js"),
   Chunk821458 = require("./821458.jsx"),
+  Chunk585961 = require("./585961.jsx"),
   Chunk790359 = require("./790359.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk30513 = require("./30513.js"),
@@ -52,12 +52,12 @@ function C(e) {
     originalVanityURLCode: o,
     errorDetails: c
   } = e, d = (null == t ? true : t.features.has(j.oNc.VANITY_URL)) === true, u = i.useCallback(() => {
-    (0, f.Gy)("")
+    (0, p.Gy)("")
   }, []), m = i.useCallback(e => {
-    (0, f.Gy)(e)
+    (0, p.Gy)(e)
   }, []);
   if (null == n) return (0, r.jsx)(a.$jN, {});
-  let g = null != c ? (0, h.i)(c.code) : null;
+  let g = null != c ? (0, f.i)(c.code) : null;
   return (0, r.jsxs)(a.Zbd, {
     editable: true,
     className: O.editVanityUrlCard,
@@ -98,25 +98,25 @@ function N(e) {
     originalVanityURLCode: a,
     errorDetails: d
   } = e, {
-    analyticsLocations: f
+    analyticsLocations: p
   } = (0, c.ZP)(), b = (0, u.g1)(t.id, "GuildSettingsBoostPerks"), _ = i.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), b ? (g.Z.close(), (0, m.Z)(t.id, o.Z.GUILD_POWERUPS_GUILD_SETTINGS_VANITY_URL, l.A$)) : (0, x.E6)({
+    e.preventDefault(), e.stopPropagation(), b ? (g.Z.close(), (0, m.Z)(t.id, o.Z.GUILD_POWERUPS_GUILD_SETTINGS_VANITY_URL, l.A$)) : (0, h.E6)({
       guild: t,
-      analyticsLocations: f,
+      analyticsLocations: p,
       analyticsSection: j.jXE.GUILD_SETTINGS_VANITY_URL,
       analyticsObject: j.qAy.BUTTON_CTA,
       perks: (0, v.WW)(),
       targetPremiumGuildTier: j.Eu4.TIER_3
     })
-  }, [f, t, b]);
+  }, [p, t, b]);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, h.p)(t) ? (0, r.jsx)(C, {
+    children: [(0, f.p)(t) ? (0, r.jsx)(C, {
       guild: t,
       vanityURLCode: n,
       vanityURLUses: s,
       originalVanityURLCode: a,
       errorDetails: d
-    }) : (0, r.jsx)(p.P, {
+    }) : (0, r.jsx)(x.P, {
       onClick: _,
       className: O.upsellButton
     }), (0, r.jsx)(y, {

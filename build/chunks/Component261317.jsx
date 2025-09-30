@@ -1,4 +1,4 @@
-/** Chunk was on 49236 **/
+/** Chunk was on 64982 **/
 /** chunk id: 261317, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk494620 = require("./494620.jsx"),
   Chunk434404 = require("./434404.js"),
   Chunk999382 = require("./999382.js"),
-  Chunk70086 = require("./70086.jsx"),
+  Chunk585961 = require("./585961.jsx"),
   Chunk910494 = require("./910494.jsx"),
   Chunk196902 = require("./196902.jsx"),
   Chunk423087 = require("./423087.jsx"),
@@ -138,7 +138,7 @@ let w = function() {
           })]
         }) : (0, Chunk951288.jsx)("div", {
           className: Chunk764009.boostingLinkContainer,
-          children: (0, Chunk951288.jsx)(Chunk70086.P, {
+          children: (0, Chunk951288.jsx)(Chunk585961.P, {
             onClick: () => {
               (0, Chunk441536.Z)(R.id, Chunk100527.Z.GUILD_POWERUPS_GUILD_SETTINGS_TAGS), Chunk434404.Z.close()
             }

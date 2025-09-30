@@ -79,6 +79,7 @@ class v extends Chunk647438.PureComponent {
     let e = this._ref;
     if (null == module) return {
       word: null,
+      fullWord: null,
       isAtStart: false
     };
     let {
@@ -86,13 +87,17 @@ class v extends Chunk647438.PureComponent {
     } = this.props;
     if (0 === exports.trim().length) return {
       word: null,
+      fullWord: null,
       isAtStart: false
     };
     let n = module.selectionStart,
       r = module.selectionEnd;
     for (; require > 0 && !O.test(exports[require - 1]);) require--;
+    let i = module.selectionEnd;
+    for (; Chunk647438 < exports.length && !O.test(exports[Chunk647438]);) Chunk647438++;
     return {
       word: exports.slice(require, Chunk951288),
+      fullWord: exports.slice(require, Chunk647438),
       isAtStart: 0 === require
     }
   }
@@ -106,17 +111,21 @@ class v extends Chunk647438.PureComponent {
     return e.preventDefault(), this.props.onSubmit(this.props.value)
   }
   insertAutocomplete(e, t) {
-    let n = !(arguments.length > 2) || true === arguments[2] || arguments[2],
-      {
-        word: r
-      } = this.getCurrentWord();
-    if (null == r) this.insertText(e, t, n);
+    let {
+      addSpace: n = true,
+      replaceFullWord: r = false
+    } = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {}, {
+      word: i,
+      fullWord: a
+    } = this.getCurrentWord();
+    if (null == i) this.insertText(e, t, n);
     else {
       let t = this._ref;
       if (null == t) return;
-      let i = t.value.slice(0, t.selectionStart - r.length),
-        a = t.value.slice(t.selectionEnd);
-      this._insertText(e, i, a, n)
+      let o = t.value.slice(0, t.selectionStart - i.length),
+        s = r && null != a ? a.length - i.length : 0,
+        l = t.value.slice(t.selectionEnd + s);
+      this._insertText(e, o, l, n)
     }
   }
   insertInlineAutocompleteInput(e) {}

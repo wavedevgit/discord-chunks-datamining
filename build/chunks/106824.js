@@ -67,7 +67,7 @@ class g extends Chunk836560.EventEmitter {
   updateProps(e) {
     let t = this.props.focused !== e.focused,
       n = this.props.channel.id !== e.channel.id || this.props.activeCommandOption !== e.activeCommandOption || this.props.activeInlineAutocompleteInput !== e.activeInlineAutocompleteInput,
-      r = !this.state.didInitialQuery || this.props.currentWord !== e.currentWord || this.props.currentWordIsAtStart !== e.currentWordIsAtStart || this.props.textValue !== e.textValue || this.props.optionText !== e.optionText;
+      r = !this.state.didInitialQuery || this.props.currentWord !== e.currentWord || this.props.currentWordIsAtStart !== e.currentWordIsAtStart || this.props.fullWord !== e.fullWord || this.props.textValue !== e.textValue || this.props.optionText !== e.optionText;
     if (this.props = e, n || r) this.updateResults(r, n), this.state.didInitialQuery || (this.state = p(f({}, this.state), {
       didInitialQuery: true
     }));
@@ -142,6 +142,7 @@ class g extends Chunk836560.EventEmitter {
         options: f,
         currentWord: this.props.currentWord,
         currentWordIsAtStart: this.props.currentWordIsAtStart,
+        fullWord: this.props.fullWord,
         textValue: this.props.textValue,
         optionText: this.props.optionText,
         parentAutocompleteInputType: null == require ? true : require[0].type,

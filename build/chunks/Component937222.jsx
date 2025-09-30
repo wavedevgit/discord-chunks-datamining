@@ -1,4 +1,4 @@
-/** Chunk was on 49236 **/
+/** Chunk was on 64982 **/
 /** chunk id: 937222, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -8,8 +8,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk755721 = require("./755721.js"),
   Chunk906732 = require("./906732.jsx"),
-  Chunk70086 = require("./70086.jsx"),
   Chunk821458 = require("./821458.jsx"),
+  Chunk585961 = require("./585961.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk30513 = require("./30513.js"),
   Chunk486324 = require("./486324.js"),
@@ -28,9 +28,9 @@ function p(e) {
       imageUri: n,
       file: r
     } = e;
-    (0, o.f4)(t, f, n, r)
+    (0, a.f4)(t, f, n, r)
   }, [f, t]), b = i.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), (0, o.E6)({
+    e.preventDefault(), e.stopPropagation(), (0, a.E6)({
       guild: t,
       analyticsLocations: f,
       analyticsSection: c.jXE.GUILD_BANNER,
@@ -42,7 +42,7 @@ function p(e) {
     disabled: !(h && n),
     color: l.zx.Colors.BRAND,
     className: p,
-    onClick: () => (0, o.mw)({
+    onClick: () => (0, a.mw)({
       uploadType: u.pC.GUILD_BANNER,
       maxFileSizeBytes: m.B,
       onComplete: x,
@@ -53,7 +53,7 @@ function p(e) {
       analyticsLocations: f
     }),
     children: g.intl.string(g.t.yG2pUl)
-  }) : (0, r.jsx)(a.P, {
+  }) : (0, r.jsx)(o.P, {
     className: p,
     onClick: b
   })

@@ -90,23 +90,25 @@ let b = e => {
     innerClassName: l,
     onClick: d,
     ref: _
-  } = e, p = h(e, ["action", "color", "themeColor", "className", "innerClassName", "onClick", "ref"]);
+  } = e, m = h(e, ["action", "color", "themeColor", "className", "innerClassName", "onClick", "ref"]);
   let {
-    trackUserProfileAction: m
-  } = (0, c.KZ)(), E = e => {
-    null != t && m({
+    trackUserProfileAction: E
+  } = (0, c.KZ)(), b = e => {
+    null != t && E({
       action: t
     }), null == d || d(e)
   };
-  return (0, r.jsx)(s.zx, f({
+  return (0, r.jsx)(s.zx, p(f({
     buttonRef: _,
     className: o()(u.button, a),
     innerClassName: o()(u.buttonInner, l),
     color: o()(n, g[i]),
     look: s.zx.Looks.FILLED,
     size: s.zx.Sizes.SMALL,
-    onClick: E
-  }, p))
+    onClick: b
+  }, m), {
+    "data-migration-pending": true
+  }))
 };
 
 function y(e) {

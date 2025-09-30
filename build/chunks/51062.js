@@ -60,66 +60,67 @@ function O(e, t) {
 }
 
 function v(e, t, n) {
-  var E, y, v, I, T, S, A, C, N, R;
+  var E, y, v, I, T, S, A, C, N, R, P;
   let {
-    channel: P,
-    type: w
-  } = e, [D, L] = r.useState(() => (0, p.PA)()), x = (0, i.Z)(), j = (0, a.e7)([u.ZP, _.default], () => {
+    channel: w,
+    type: D
+  } = e, [L, x] = r.useState(() => (0, p.PA)()), j = (0, i.Z)(), M = (0, a.e7)([u.ZP, _.default], () => {
     var e, t;
     let n = _.default.getCurrentUser();
-    return null != (t = null != P.guild_id && null != n ? null == (e = u.ZP.getMember(P.guild_id, n.id)) ? true : e.isPending : null) && t
+    return null != (t = null != w.guild_id && null != n ? null == (e = u.ZP.getMember(w.guild_id, n.id)) ? true : e.isPending : null) && t
   }), {
-    canMentionEveryone: M,
-    hidePersonalInformation: k
+    canMentionEveryone: k,
+    hidePersonalInformation: U
   } = (0, a.cj)([d.Z, f.Z], () => ({
-    canMentionEveryone: P.isPrivate() || j || w === l.Ie.RULES_INPUT || d.Z.can(m.Plq.MENTION_EVERYONE, P),
+    canMentionEveryone: w.isPrivate() || M || D === l.Ie.RULES_INPUT || d.Z.can(m.Plq.MENTION_EVERYONE, w),
     hidePersonalInformation: f.Z.hidePersonalInformation
-  }), [P, w, j]), {
-    activeCommand: U,
-    activeCommandOption: G
+  }), [w, D, M]), {
+    activeCommand: G,
+    activeCommandOption: B
   } = (0, a.cj)([s.Z], () => ({
-    activeCommand: s.Z.getActiveCommand(P.id),
-    activeCommandOption: s.Z.getActiveOption(P.id)
-  })), B = (0, h.Z)({
+    activeCommand: s.Z.getActiveCommand(w.id),
+    activeCommandOption: s.Z.getActiveOption(w.id)
+  })), Z = (0, h.Z)({
     navId: "channel-autocomplete",
     scrollerRef: n,
-    state: D,
-    onFocus: e => Y.setSelectedIndex(e)
-  }), Z = null == (E = e.editorRef.current) ? true : E.getCurrentWord(), F = null == (y = e.editorRef.current) ? true : y.getSlateEditor(), V = null;
-  null != F && (V = null != (A = null == (S = c.bN.getSelectedParentOfType(F, p.un)) ? true : S[0]) ? A : null);
-  let H = O(b({}, e), {
-      navigator: B,
-      activeCommand: U,
-      activeCommandOption: G,
-      activeInlineAutocompleteInput: V,
-      canMentionUsers: null != (C = null == (v = w.users) ? true : v.allowMentioning) && C,
-      canMentionEveryone: M,
-      hidePersonalInformation: k,
-      hideMentionDescription: w === l.Ie.RULES_INPUT,
-      emojiIntention: w === l.Ie.RULES_INPUT ? g.Hz.COMMUNITY_CONTENT : g.Hz.CHAT,
-      currentWord: null != (N = null == Z ? true : Z.word) ? N : "",
-      currentWordIsAtStart: (null == Z ? true : Z.isAtStart) === true,
-      optionText: null != G ? (0, o.KF)({
-        [G.name]: null != (R = null == (I = e.editorRef.current) ? true : I.getCurrentCommandOptionValue()) ? R : []
-      }, G.name) : ""
+    state: L,
+    onFocus: e => W.setSelectedIndex(e)
+  }), F = null == (E = e.editorRef.current) ? true : E.getCurrentWord(), V = null == (y = e.editorRef.current) ? true : y.getSlateEditor(), H = null;
+  null != V && (H = null != (A = null == (S = c.bN.getSelectedParentOfType(V, p.un)) ? true : S[0]) ? A : null);
+  let Y = O(b({}, e), {
+      navigator: Z,
+      activeCommand: G,
+      activeCommandOption: B,
+      activeInlineAutocompleteInput: H,
+      canMentionUsers: null != (C = null == (v = D.users) ? true : v.allowMentioning) && C,
+      canMentionEveryone: k,
+      hidePersonalInformation: U,
+      hideMentionDescription: D === l.Ie.RULES_INPUT,
+      emojiIntention: D === l.Ie.RULES_INPUT ? g.Hz.COMMUNITY_CONTENT : g.Hz.CHAT,
+      currentWord: null != (N = null == F ? true : F.word) ? N : "",
+      currentWordIsAtStart: (null == F ? true : F.isAtStart) === true,
+      fullWord: null != (R = null == F ? true : F.fullWord) ? R : "",
+      optionText: null != B ? (0, o.KF)({
+        [B.name]: null != (P = null == (I = e.editorRef.current) ? true : I.getCurrentCommandOptionValue()) ? P : []
+      }, B.name) : ""
     }),
-    [Y] = r.useState(() => new p.ZP(H));
+    [W] = r.useState(() => new p.ZP(Y));
   return r.useEffect(() => {
-    Y.updateProps(H)
-  }), r.useImperativeHandle(t, () => Y, [Y]), r.useEffect(() => {
-    let e = e => L(e);
-    return Y.on("change", e), Y.on("update", x), () => {
-      Y.off("change", e), Y.off("update", x)
+    W.updateProps(Y)
+  }), r.useImperativeHandle(t, () => W, [W]), r.useEffect(() => {
+    let e = e => x(e);
+    return W.on("change", e), W.on("update", j), () => {
+      W.off("change", e), W.off("update", j)
     }
-  }, [x, Y]), r.useEffect(() => {
+  }, [j, W]), r.useEffect(() => {
     var e;
-    let t = null == (e = D.query) ? true : e.typeInfo.stores;
+    let t = null == (e = L.query) ? true : e.typeInfo.stores;
     if (null != t) {
-      let e = () => Y.queryResults();
+      let e = () => W.queryResults();
       for (let n of t) n.addChangeListener(e);
       return () => {
         for (let n of t) n.removeChangeListener(e)
       }
     }
-  }, [Y, null == (T = D.query) ? true : T.typeInfo]), [D, Y, B]
+  }, [W, null == (T = L.query) ? true : T.typeInfo]), [L, W, Z]
 }
