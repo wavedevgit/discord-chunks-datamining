@@ -16,8 +16,6 @@ module.exports = {
   rivBanner: "rivBanner__08415",
   featuredBlock: "featuredBlock__08415",
   featuredBlockTextContainer: "featuredBlockTextContainer__08415",
-  featuredBlockTitleText: "featuredBlockTitleText__08415",
-  featuredBlockTitleTextNameplate: "featuredBlockTitleTextNameplate__08415",
   featuredBlockBodyText: "featuredBlockBodyText__08415",
   featuredBlockBadge: "featuredBlockBadge__08415",
   featuredBlockButtonContainer: "featuredBlockButtonContainer__08415",
