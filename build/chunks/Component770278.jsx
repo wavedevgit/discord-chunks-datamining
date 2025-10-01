@@ -2,8 +2,7 @@
 /** chunk id: 770278, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m,
-  f: () => p
+  Z: () => h
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -36,41 +35,40 @@ function f(e) {
   return e
 }
 let _ = 8;
-var p = function(e) {
-  return e.DARK = "DARK", e.LIGHTBOX = "LIGHTBOX", e.IMMERSIVE = "IMMERSIVE", e.SUBTLE = "SUBTLE", e.BLUR = "BLUR", e.TOP_RADIAL = "TOP_RADIAL", e
-}({});
 
-function h() {
+function p() {
   let e = (0, Chunk481060.dQu)(Chunk481060.TVs.colors.BG_BACKDROP_NO_OPACITY).spring({
       opacity: .25
     }),
-    t = (0, Chunk481060.dQu)(Chunk481060.TVs.colors.BG_BACKDROP).spring();
+    t = (0, Chunk481060.dQu)(Chunk481060.TVs.colors.BG_BACKDROP).spring(),
+    n = (0, Chunk481060.dQu)(Chunk481060.TVs.colors.BG_BACKDROP_IMMERSIVE).spring(),
+    r = (0, Chunk481060.dQu)(Chunk481060.TVs.colors.OVERLAY_BACKDROP_LIGHTBOX).spring();
   return {
-    SUBTLE: module,
-    DARK: exports,
-    BLUR: exports,
-    IMMERSIVE: (0, Chunk481060.dQu)(Chunk481060.TVs.colors.BG_BACKDROP_IMMERSIVE).spring(),
-    LIGHTBOX: (0, Chunk481060.dQu)(Chunk481060.TVs.colors.OVERLAY_BACKDROP_LIGHTBOX).spring(),
-    TOP_RADIAL: exports
+    [Chunk481060.fCB.SUBTLE]: module,
+    [Chunk481060.fCB.DARK]: exports,
+    [Chunk481060.fCB.BLUR]: exports,
+    [Chunk481060.fCB.IMMERSIVE]: require,
+    [Chunk481060.fCB.LIGHTBOX]: Chunk951288,
+    [Chunk481060.fCB.TOP_RADIAL]: exports
   }
 }
-let m = Chunk647438.forwardRef(function(e, t) {
+let h = Chunk647438.forwardRef(function(e, t) {
   let {
-    backdropStyle: n = "SUBTLE",
+    backdropStyle: n = l.fCB.SUBTLE,
     backdropInstant: i = false,
     zIndexBoost: a = 0,
     LayerComponent: d,
-    isVisible: p,
+    isVisible: h,
     onClose: m
-  } = e, g = h()[n], E = (0, l.dQu)(l.TVs.colors.BG_BACKDROP_NO_OPACITY).spring({
+  } = e, g = p()[n], E = (0, l.dQu)(l.TVs.colors.BG_BACKDROP_NO_OPACITY).spring({
     opacity: 0
-  }), b = "BLUR" === n ? _ : 0, y = {
+  }), b = n === l.fCB.BLUR ? _ : 0, y = {
     background: E,
     backdropFilter: "blur(0px)"
   }, O = {
     background: g,
     backdropFilter: "blur(".concat(b, "px)")
-  }, v = (0, c.Z)(i), I = (0, l.Yzy)(p, {
+  }, v = (0, c.Z)(i), I = (0, l.Yzy)(h, {
     keys: e => e ? "backdrop" : "empty",
     config: {
       duration: i || v ? 0 : 200
@@ -92,7 +90,7 @@ let m = Chunk647438.forwardRef(function(e, t) {
   return (0, r.jsx)(d, {
     children: I((e, t) => t ? (0, r.jsx)(s.animated.div, {
       className: o()(u.backdrop, u.withLayer),
-      style: "TOP_RADIAL" === n ? {
+      style: n === l.fCB.TOP_RADIAL ? {
         background: "radial-gradient(96.68% 96.68% at 50.04% 3.32%, rgba(0, 0, 0, 0.52) 0%, rgba(0, 0, 0, 0.00) 100%)"
       } : e,
       onClick: m

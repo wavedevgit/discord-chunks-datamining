@@ -1,0 +1,67 @@
+/** Chunk was on web.js **/
+/** chunk id: 657871, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  kB: () => i,
+  zM: () => a
+});
+let r = (0, require("./818083.js").B)({
+  kind: "user",
+  id: "2025-09_mention_suggestion",
+  label: "Mention Suggestions",
+  defaultConfig: {
+    enabled: false,
+    suggestionDesign: "horizontal",
+    highlightDesign: "mention",
+    onlyExactMatch: false
+  },
+  treatments: [{
+    id: 1,
+    label: "Default",
+    config: {
+      enabled: true,
+      suggestionDesign: "vertical",
+      highlightDesign: "simple",
+      onlyExactMatch: false
+    }
+  }, {
+    id: 2,
+    label: "Exact match only",
+    config: {
+      enabled: true,
+      suggestionDesign: "vertical",
+      highlightDesign: "simple",
+      onlyExactMatch: true
+    }
+  }, {
+    id: 3,
+    label: "Alternate highlight design",
+    config: {
+      enabled: true,
+      suggestionDesign: "vertical",
+      highlightDesign: "mention",
+      onlyExactMatch: false
+    }
+  }, {
+    id: 4,
+    label: "Horizontal suggestions",
+    config: {
+      enabled: true,
+      suggestionDesign: "horizontal",
+      highlightDesign: "simple",
+      onlyExactMatch: false
+    }
+  }]
+});
+
+function i(e, t) {
+  return r.getCurrentConfig({
+    location: e
+  }, t)
+}
+
+function a(e, t) {
+  return r.useExperiment({
+    location: e
+  }, t)
+}

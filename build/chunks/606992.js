@@ -2,44 +2,53 @@
 /** chunk id: 606992, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => o
+  Z: () => s
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk728285 = require("./728285.jsx"),
-  Chunk590921 = require("./590921.js");
+  Chunk590921 = require("./590921.js"),
+  Chunk53457 = require("./53457.js");
 
-function o(e) {
+function s(e) {
   let {
     editorHeight: t,
     type: n,
-    state: o
-  } = e, [s, l] = r.useState(true), c = null == o ? true : o.query, u = null == o ? true : o.isVisible, {
-    renderWindow: d
-  } = r.useContext(i.ZP), f = r.useCallback(() => {
+    state: s
+  } = e, [l, c] = r.useState(true), u = null == s ? true : s.query, d = null == s ? true : s.isVisible, {
+    renderWindow: f
+  } = r.useContext(i.ZP), _ = r.useCallback(() => {
     var e, t, r, i;
-    if (null != o && (null == c || !u)) return void l(true);
-    if ((null == c ? true : c.type) === a.eq.GIFS || null != n && !(null == (e = n.autocomplete) ? true : e.alwaysUseLayer)) return void l(null);
-    let s = d.document.getSelection(),
-      f = null != s && s.rangeCount > 0 ? s.getRangeAt(0) : null;
-    if (null == f) return;
-    let _ = f.startContainer,
-      p = f.startOffset;
-    for (; null != _;) {
-      if (_.nodeType !== Node.TEXT_NODE || null == _.nodeValue) return void l(null);
-      if ((null == (t = _.nodeValue) ? true : t.length) === 0) {
-        p = null != (i = null == (_ = _.previousSibling) || null == (r = _.nodeValue) ? true : r.length) ? i : 0;
+    if (null != s && (null == u || !d)) return void c(true);
+    if ((null == u ? true : u.type) === a.eq.MENTION_SUGGESTIONS) {
+      let e = f.document.getElementsByClassName(o.mentionSuggestion)[0];
+      if (null != e) {
+        let t = e.getBoundingClientRect();
+        c(new DOMRect(t.x - 10, t.y, t.width, t.height));
+        return
+      }
+    }
+    if ((null == u ? true : u.type) === a.eq.GIFS || null != n && !(null == (e = n.autocomplete) ? true : e.alwaysUseLayer)) return void c(null);
+    let l = f.document.getSelection(),
+      _ = null != l && l.rangeCount > 0 ? l.getRangeAt(0) : null;
+    if (null == _) return;
+    let p = _.startContainer,
+      h = _.startOffset;
+    for (; null != p;) {
+      if (p.nodeType !== Node.TEXT_NODE || null == p.nodeValue) return void c(null);
+      if ((null == (t = p.nodeValue) ? true : t.length) === 0) {
+        h = null != (i = null == (p = p.previousSibling) || null == (r = p.nodeValue) ? true : r.length) ? i : 0;
         continue
       }
-      null != c && (p >= c.queryText.length ? p -= c.queryText.length : p = 0);
+      null != u && (h >= u.queryText.length ? h -= u.queryText.length : h = 0);
       break
     }
-    if (null == _) return;
-    let h = d.document.createRange();
-    h.setStart(_, p), h.setEnd(_, p);
-    let m = h.getBoundingClientRect();
-    (null == m ? true : m.height) !== 0 && l(null != m ? m : null)
-  }, [d.document, o, u, c, n]);
-  return r.useEffect(() => (d.document.addEventListener("selectionchange", f), () => d.document.removeEventListener("selectionchange", f)), [d.document, f]), r.useEffect(() => {
-    f()
-  }, [f, t]), s
+    if (null == p) return;
+    let m = f.document.createRange();
+    m.setStart(p, h), m.setEnd(p, h);
+    let g = m.getBoundingClientRect();
+    (null == g ? true : g.height) !== 0 && c(null != g ? g : null)
+  }, [f.document, s, d, u, n]);
+  return r.useEffect(() => (f.document.addEventListener("selectionchange", _), () => f.document.removeEventListener("selectionchange", _)), [f.document, _]), r.useEffect(() => {
+    _()
+  }, [_, t]), l
 }

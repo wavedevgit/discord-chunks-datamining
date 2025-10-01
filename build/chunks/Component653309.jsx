@@ -69,7 +69,9 @@ let p = {
   codeBlockText: Chunk990376.codeBlockText,
   codeBlockSyntax: Chunk990376.codeBlockSyntax,
   codeBlockLang: Chunk990376.codeBlockLang,
-  subtext: Chunk990376.subtext
+  subtext: Chunk990376.subtext,
+  mentionSuggestion: Chunk53457.mentionSuggestion,
+  mentionSuggestionSimpleColorVariant: Chunk53457.mentionSuggestionSimpleColorVariant
 };
 
 function h(e, t) {

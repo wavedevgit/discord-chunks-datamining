@@ -8,5 +8,6 @@ module.exports = {
   autocompletePopout: "autocompletePopout__6b0e0",
   autocompleteInner: "autocompleteInner__6b0e0",
   autocompleteTop: "autocompleteTop__6b0e0",
-  scroller: "scroller__6b0e0"
+  scroller: "scroller__6b0e0",
+  minimal: "minimal__6b0e0"
 }

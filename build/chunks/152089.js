@@ -16,27 +16,30 @@ var Chunk512722 = require("./512722.js"),
   Chunk590921 = require("./590921.js"),
   Chunk185923 = require("./185923.js");
 
-function f(e) {
-  var t;
+function f(e, t) {
+  var n;
   let {
-    activeCommandOption: n,
-    canMentionUsers: r = true,
-    canMentionRoles: i = true,
-    canMentionChannels: l = true,
-    canMentionEveryone: c,
-    useNewSlashCommands: d,
-    canOnlyUseTextCommands: f,
-    canSendStickers: _,
-    canSendSoundmoji: p,
-    hideMentionDescription: h,
-    hidePersonalInformation: m,
-    type: g,
-    emojiIntention: E,
-    editorRef: b,
-    onSendMessage: y,
-    onSendSticker: O,
-    setValue: v
-  } = e, I = {
+    activeCommandOption: r,
+    canMentionUsers: i = true,
+    canMentionRoles: l = true,
+    canMentionChannels: c = true,
+    canMentionEveryone: d,
+    useNewSlashCommands: f,
+    canOnlyUseTextCommands: _,
+    canSendStickers: p,
+    canSendSoundmoji: h,
+    hideMentionDescription: m,
+    hidePersonalInformation: g,
+    type: E,
+    emojiIntention: b,
+    editorRef: y,
+    onSendMessage: O,
+    onSendSticker: v,
+    setValue: I,
+    isEditorIdle: T
+  } = e, {
+    isVisible: S
+  } = t, A = {
     mentions: {
       channel: u.nS.DENY,
       global: u.VV.DENY,
@@ -44,41 +47,43 @@ function f(e) {
       user: u.h3.DENY
     },
     commands: u.L8.DISABLED,
-    allowStickers: true === _,
-    allowSoundmoji: true === p,
-    forNonStringCommandOption: null != n && n.type !== a.jw.STRING,
-    hideMentionDescription: true === h,
-    hidePersonalInformation: true === m,
-    chatInputType: g,
-    emojiIntention: E,
-    sendMessage: y,
-    sendSticker: O,
+    allowStickers: true === p,
+    allowSoundmoji: true === h,
+    forNonStringCommandOption: null != r && r.type !== a.jw.STRING,
+    hideMentionDescription: true === m,
+    hidePersonalInformation: true === g,
+    chatInputType: E,
+    emojiIntention: b,
+    sendMessage: O,
+    sendSticker: v,
+    isEditorIdle: T,
+    isVisible: S,
     insertText: function(e, t) {
       var n;
       let r = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {};
-      null == (n = b.current) || n.insertAutocomplete(e, null != t ? t : e, r)
+      null == (n = y.current) || n.insertAutocomplete(e, null != t ? t : e, r)
     },
     replaceText: (e, t) => {
-      v(e, null != t ? t : (0, s.JM)(e))
+      I(e, null != t ? t : (0, s.JM)(e))
     },
     insertAutocompleteInput: e => {
       var t;
-      null == (t = b.current) || t.insertInlineAutocompleteElement(e)
+      null == (t = y.current) || t.insertInlineAutocompleteElement(e)
     },
     replaceInlineInput: (e, t, n) => {
       var r;
-      null == (r = b.current) || r.replaceInlineAutocompleteInput(e, t, null != n ? n : t)
+      null == (r = y.current) || r.replaceInlineAutocompleteInput(e, t, null != n ? n : t)
     },
     getCommandOptionValues: () => {
       var e;
-      return null == (e = b.current) ? true : e.getCommandOptionValues()
+      return null == (e = y.current) ? true : e.getCommandOptionValues()
     }
   };
-  if (null != n) {
-    let e = (0, o.$z)(n);
-    e.canMentionChannels && (I.mentions.channel = u.nS.ALLOW_SELECTABLE), e.canMentionEveryone && (I.mentions.global = e.canMentionHere ? u.VV.ALLOW_EVERYONE_OR_HERE : u.VV.ALLOW_EVERYONE), e.canMentionRoles && (I.mentions.role = e.canMentionNonMentionableRoles ? u.Fw.ALLOW_ALL : u.Fw.ALLOW_MENTIONABLE), e.canMentionUsers && (I.mentions.user = e.canMentionAnyGuildUser ? u.h3.ALLOW_GUILD : u.h3.ALLOW_CHANNEL), I.hideMentionDescription = true
-  } else l && (I.mentions.channel = u.nS.ALLOW_SELECTABLE), i && (I.mentions.role = u.Fw.ALLOW_MENTIONABLE), r && (I.mentions.user = u.h3.ALLOW_CHANNEL), c && (I.mentions.global = u.VV.ALLOW_EVERYONE_OR_HERE);
-  return (null == (t = g.commands) ? true : t.enabled) && (d ? I.commands = f ? u.L8.NEW_TEXT_ONLY : u.L8.NEW : I.commands = u.L8.OLD_BUILT_INS), null != n && null != n.channelTypes && (I.allowedChannelTypes = n.channelTypes), I
+  if (null != r) {
+    let e = (0, o.$z)(r);
+    e.canMentionChannels && (A.mentions.channel = u.nS.ALLOW_SELECTABLE), e.canMentionEveryone && (A.mentions.global = e.canMentionHere ? u.VV.ALLOW_EVERYONE_OR_HERE : u.VV.ALLOW_EVERYONE), e.canMentionRoles && (A.mentions.role = e.canMentionNonMentionableRoles ? u.Fw.ALLOW_ALL : u.Fw.ALLOW_MENTIONABLE), e.canMentionUsers && (A.mentions.user = e.canMentionAnyGuildUser ? u.h3.ALLOW_GUILD : u.h3.ALLOW_CHANNEL), A.hideMentionDescription = true
+  } else c && (A.mentions.channel = u.nS.ALLOW_SELECTABLE), l && (A.mentions.role = u.Fw.ALLOW_MENTIONABLE), i && (A.mentions.user = u.h3.ALLOW_CHANNEL), d && (A.mentions.global = u.VV.ALLOW_EVERYONE_OR_HERE);
+  return (null == (n = E.commands) ? true : n.enabled) && (f ? A.commands = _ ? u.L8.NEW_TEXT_ONLY : u.L8.NEW : A.commands = u.L8.OLD_BUILT_INS), null != r && null != r.channelTypes && (A.allowedChannelTypes = r.channelTypes), A
 }
 
 function _(e) {

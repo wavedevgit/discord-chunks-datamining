@@ -230,25 +230,27 @@ class G extends Chunk647438.Component {
       required: R,
       maxCharacterCount: w,
       allowNewLines: L,
-      "aria-describedby": j,
-      "aria-labelledby": k,
-      accessibilityLabel: U,
-      showValueWhenDisabled: G
+      isEditorIdle: j,
+      isAutocompleteVisible: k,
+      "aria-describedby": U,
+      "aria-labelledby": G,
+      accessibilityLabel: B,
+      showValueWhenDisabled: Z
     } = this.props, {
-      submitting: B,
-      popup: Z
-    } = this.state, F = {
+      submitting: F,
+      popup: V
+    } = this.state, H = {
       channel: Chunk911969,
       className: o()(Chunk30465, Chunk744114.textArea, {
         [Chunk744114.textAreaSlate]: Chunk998698,
-        [Chunk744114.textAreaDisabled]: u || B
+        [Chunk744114.textAreaDisabled]: u || F
       }),
       id: Chunk330122,
       placeholder: this.getPlaceholder(),
       required: Chunk925994,
-      accessibilityLabel: U,
+      accessibilityLabel: B,
       disabled: u || false,
-      submitting: B,
+      submitting: F,
       isEdit: Chunk476326 === Chunk541716.Ie.EDIT,
       onFocus: this.handleFocus,
       onBlur: this.handleBlur,
@@ -271,27 +273,29 @@ class G extends Chunk647438.Component {
       }),
       spellcheckEnabled: Chunk710845,
       useNewSlashCommands: Chunk117530,
+      isEditorIdle: j,
+      isAutocompleteVisible: k,
       disableAutoFocus: Chunk873546.tq || null != (n = Chunk476326.disableAutoFocus) && require,
       disableEnterToSubmit: null != (i = null == (e = Chunk476326.submit) ? true : module.disableEnterToSubmit) && Chunk647438,
-      "aria-controls": null != (a = Z.id) ? Chunk120356 : true,
+      "aria-controls": null != (a = V.id) ? Chunk120356 : true,
       "aria-haspopup": "listbox",
-      "aria-expanded": null !== Z.id || true,
-      "aria-activedescendant": null != (s = Z.activeDescendant) ? Chunk392711 : true,
+      "aria-expanded": null !== V.id || true,
+      "aria-activedescendant": null != (s = V.activeDescendant) ? Chunk392711 : true,
       "aria-invalid": l.length > Chunk388032,
-      "aria-describedby": j,
-      "aria-labelledby": k,
+      "aria-describedby": U,
+      "aria-labelledby": G,
       "aria-autocomplete": "list"
-    }, V = Chunk998698 ? (0, Chunk951288.jsx)(Chunk4484.Z, M(x({
+    }, Y = Chunk998698 ? (0, Chunk951288.jsx)(Chunk4484.Z, M(x({
       ref: this.ref
-    }, F), {
+    }, H), {
       type: Chunk476326,
-      value: u && !G ? (0, Chunk752305.JM)("") : Chunk218887,
+      value: u && !Z ? (0, Chunk752305.JM)("") : Chunk218887,
       canUseCommands: null == (t = Chunk476326.commands) ? true : exports.enabled,
       canOnlyUseTextCommands: Chunk403182
     })) : (0, Chunk951288.jsx)(Chunk140963.Z, M(x({
       ref: this.ref
-    }, F), {
-      value: u && !G ? "" : l
+    }, H), {
+      value: u && !Z ? "" : l
     }));
     return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsx)(Chunk459273.d9, {
@@ -300,7 +304,7 @@ class G extends Chunk647438.Component {
       }), (0, Chunk951288.jsx)(Chunk459273.d9, {
         event: Chunk981631.CkL.CLEAR_TEXT,
         handler: this.handleClearText
-      }), V]
+      }), Y]
     })
   }
   constructor(e) {

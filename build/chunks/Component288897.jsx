@@ -2,7 +2,7 @@
 /** chunk id: 288897, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w
+  Z: () => R
 }), require("./388685.js"), require("./704826.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,15 +18,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk789952 = require("./789952.js"),
   Chunk436660 = require("./436660.js"),
   Chunk887490 = require("./887490.js"),
-  Chunk77224 = require("./77224.js"),
-  Chunk135223 = require("./135223.js"),
   Chunk704875 = require("./704875.jsx"),
   Chunk653309 = require("./653309.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk155857 = require("./155857.js"),
   Chunk602009 = require("./602009.js");
 
-function T(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,20 +33,20 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
 }
 
-function A(e, t) {
+function T(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -59,15 +57,15 @@ function A(e, t) {
   return n
 }
 
-function C(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
+function S(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function N(e, t) {
+function A(e, t) {
   if (null == e) return {};
-  var n, r, i = R(e, t);
+  var n, r, i = C(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -75,14 +73,14 @@ function N(e, t) {
   return i
 }
 
-function R(e, t) {
+function C(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-class P extends Chunk647438.PureComponent {
+class N extends Chunk647438.PureComponent {
   componentDidMount() {
     this.props.editor.events.addListener("onChange", this.handleOnChange)
   }
@@ -99,15 +97,6 @@ class P extends Chunk647438.PureComponent {
       initialValue: [...this.props.editor.children]
     })
   }
-  decorate(e) {
-    var t;
-    let {
-      editor: n,
-      guildId: r,
-      decorateExtra: i
-    } = this.props;
-    return [...(0, E.Z)(n, e, r), ...(0, g.Z)(n, e), ...null != (t = null == i ? true : i(n, e)) ? t : []]
-  }
   renderElement(e) {
     var t;
     let {
@@ -118,11 +107,11 @@ class P extends Chunk647438.PureComponent {
       attributes: o,
       children: s
     } = e;
-    "rtl" === o.dir && (o.style = C(S({}, o.style), {
+    "rtl" === o.dir && (o.style = S(I({}, o.style), {
       textAlign: "right"
     }));
-    let l = null != (t = null == a ? true : a(e)) ? t : (0, b.Z)(e, n, i);
-    return null != l ? l : (0, r.jsx)("div", C(S({}, o), {
+    let l = null != (t = null == a ? true : a(e)) ? t : (0, g.Z)(e, n, i);
+    return null != l ? l : (0, r.jsx)("div", S(I({}, o), {
       children: s
     }))
   }
@@ -134,8 +123,8 @@ class P extends Chunk647438.PureComponent {
     } = this.props, {
       attributes: a,
       children: o
-    } = e, s = null != (t = null == i ? true : i(e)) ? t : (0, y.Z)(n, e);
-    return null != s ? s : (0, r.jsx)("span", C(S({}, a), {
+    } = e, s = null != (t = null == i ? true : i(e)) ? t : (0, E.Z)(n, e);
+    return null != s ? s : (0, r.jsx)("span", S(I({}, a), {
       children: o
     }))
   }
@@ -324,13 +313,13 @@ class P extends Chunk647438.PureComponent {
         let {
           default: e
         } = await n.e("41984").then(n.bind(n, 343602));
-        return n => (0, r.jsx)(e, C(S({}, n), {
+        return n => (0, r.jsx)(e, S(I({}, n), {
           editor: t,
           text: m.bN.getSelectedText(t, true)
         }))
       }, {
         align: o,
-        enableSpellCheck: i === O.IlC.APP
+        enableSpellCheck: i === b.IlC.APP
       })
     } else blur()
   }
@@ -351,18 +340,18 @@ class P extends Chunk647438.PureComponent {
         canFocus: a,
         autoFocus: l,
         placeholder: c,
-        channelId: u,
-        guildId: d,
-        onChange: f,
-        onFocus: _,
-        onBlur: p,
-        onKeyDown: h,
-        onKeyUp: m,
-        decorateExtra: g,
+        decorate: u,
+        channelId: d,
+        guildId: f,
+        onChange: _,
+        onFocus: p,
+        onBlur: h,
+        onKeyDown: m,
+        onKeyUp: g,
         renderExtraElement: E,
         renderExtraLeaf: b
       } = module,
-      y = N(module, ["editor", "className", "containerClassName", "canFocus", "autoFocus", "placeholder", "channelId", "guildId", "onChange", "onFocus", "onBlur", "onKeyDown", "onKeyUp", "decorateExtra", "renderExtraElement", "renderExtraLeaf"]);
+      v = A(module, ["editor", "className", "containerClassName", "canFocus", "autoFocus", "placeholder", "decorate", "channelId", "guildId", "onChange", "onFocus", "onBlur", "onKeyDown", "onKeyUp", "renderExtraElement", "renderExtraLeaf"]);
     return (0, Chunk951288.jsxs)("div", {
       ref: this.containerRef,
       className: Chunk647438,
@@ -373,9 +362,9 @@ class P extends Chunk647438.PureComponent {
       }) : null, (0, Chunk951288.jsx)(Chunk755712.mH, {
         editor: exports,
         value: [...this.state.initialValue],
-        children: (0, Chunk951288.jsx)(Chunk755712.CX, C(S({}, Chunk653309), {
+        children: (0, Chunk951288.jsx)(Chunk755712.CX, S(I({}, v), {
           className: o()(Chunk602009.markup, Chunk155857.editor, require),
-          decorate: this.decorate,
+          decorate: Chunk358085,
           renderElement: this.renderElement,
           renderLeaf: this.renderLeaf,
           onFocusCapture: this.handleFocusCapture,
@@ -397,7 +386,7 @@ class P extends Chunk647438.PureComponent {
     })
   }
   constructor(e) {
-    super(e), T(this, "containerRef", i.createRef()), T(this, "state", true), this.decorate = this.decorate.bind(this), this.renderElement = this.renderElement.bind(this), this.renderLeaf = this.renderLeaf.bind(this), this.handleOnChange = this.handleOnChange.bind(this), this.handleKeyDown = this.handleKeyDown.bind(this), this.handleKeyUp = this.handleKeyUp.bind(this), this.handleBeforeInput = this.handleBeforeInput.bind(this), this.handleCompositionStart = this.handleCompositionStart.bind(this), this.handleCompositionEnd = this.handleCompositionEnd.bind(this), this.handleFocusCapture = this.handleFocusCapture.bind(this), this.handleBlurCapture = this.handleBlurCapture.bind(this), this.handleContextMenu = this.handleContextMenu.bind(this), this.handlePasteCapture = this.handlePasteCapture.bind(this), m.bN.isEditorEmpty(e.editor) ? this.state = {
+    super(e), v(this, "containerRef", i.createRef()), v(this, "state", true), this.renderElement = this.renderElement.bind(this), this.renderLeaf = this.renderLeaf.bind(this), this.handleOnChange = this.handleOnChange.bind(this), this.handleKeyDown = this.handleKeyDown.bind(this), this.handleKeyUp = this.handleKeyUp.bind(this), this.handleBeforeInput = this.handleBeforeInput.bind(this), this.handleCompositionStart = this.handleCompositionStart.bind(this), this.handleCompositionEnd = this.handleCompositionEnd.bind(this), this.handleFocusCapture = this.handleFocusCapture.bind(this), this.handleBlurCapture = this.handleBlurCapture.bind(this), this.handleContextMenu = this.handleContextMenu.bind(this), this.handlePasteCapture = this.handlePasteCapture.bind(this), m.bN.isEditorEmpty(e.editor) ? this.state = {
       initialValue: (0, f.H2)().richValue,
       showPlaceholder: true
     } : this.state = {
@@ -406,4 +395,4 @@ class P extends Chunk647438.PureComponent {
     }
   }
 }
-let w = P
+let R = N

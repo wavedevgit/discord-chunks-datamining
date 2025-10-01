@@ -259,9 +259,11 @@ let er = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
   }(e$, eA, eV), {
     expressionPickerView: e5,
     shouldHideExpressionPicker: e9,
-    handleAutocompleteVisibilityChange: te,
-    handleOuterClick: tt
-  } = (0, V.iV)(D, eY, ew), tn = (0, V.ae)(ew), tr = (0, V.Sg)(eJ, D, ew), ti = (0, V.O1)({
+    handleOuterClick: te
+  } = (0, V.iV)(D, ew), tt = (0, V.aT)(p), {
+    isAutocompleteVisible: tn,
+    handleAutocompleteVisibilityChange: tr
+  } = (0, V.vB)(), ti = (0, V.ae)(ew), tl = (0, V.Sg)(eJ, D, ew), ta = (0, V.O1)({
     editorRef: ew,
     disabled: eU,
     textValue: p,
@@ -270,30 +272,30 @@ let er = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
     submit: eX
   });
   (0, U.S)(eY, k.guild_id, k.id);
-  let [tl, ta] = i.useState(false), to = G || tl || p.length > 0 || null != eP || eS.length > 0, {
-    editorHeaderHeight: ts,
-    paddingTop: tc
+  let [to, ts] = i.useState(false), tc = G || to || p.length > 0 || null != eP || eS.length > 0, {
+    editorHeaderHeight: tu,
+    paddingTop: td
   } = (0, f.q_F)({
-    editorHeaderHeight: 122 * !!to,
-    paddingTop: 16 * !!to,
+    editorHeaderHeight: 122 * !!tc,
+    paddingTop: 16 * !!tc,
     config: {
       tension: 120,
       friction: 15,
       clamp: true
     }
-  }), tu = i.useRef(null), [td, tp] = i.useState(false), th = i.useRef(false), tf = i.useCallback(() => {
-    th.current = true;
+  }), tp = i.useRef(null), [th, tf] = i.useState(false), tm = i.useRef(false), tg = i.useCallback(() => {
+    tm.current = true;
     let e = setTimeout(() => {
-      th.current && tp(true)
+      tm.current && tf(true)
     }, 100);
     return () => clearTimeout(e)
-  }, []), tm = i.useCallback(() => {
-    th.current = false;
+  }, []), tb = i.useCallback(() => {
+    tm.current = false;
     let e = setTimeout(() => {
-      th.current || tp(false)
+      tm.current || tf(false)
     }, 100);
     return () => clearTimeout(e)
-  }, []), tg = i.useCallback(() => {
+  }, []), ty = i.useCallback(() => {
     var e;
     if (null == eP) return;
     let t = null == (e = R.Z.getUploads(k.id, D.drafts.type).find(e => e.filename === eP.name)) ? true : e.id;
@@ -308,7 +310,7 @@ let er = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
       children: [(0, r.jsxs)("div", {
         ref: eN,
         className: a()(b, Q.channelTextArea),
-        onMouseDown: tt,
+        onMouseDown: te,
         children: [(0, r.jsx)("div", {
           ref: eM,
           onScroll: e2,
@@ -322,21 +324,21 @@ let er = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
               children: [(0, r.jsxs)(c.animated.div, {
                 className: J.headerInput,
                 style: {
-                  height: ts,
-                  paddingTop: tc
+                  height: tu,
+                  paddingTop: td
                 },
                 children: [null != eP ? (0, r.jsx)(el, {
                   file: eP,
-                  onRemoveHeroImage: tg
+                  onRemoveHeroImage: ty
                 }) : null, null != eP ? null : (0, r.jsx)(eo, {
                   channel: k,
                   onImageUploaded: e => (0, O.c)(k.id, {
                     heroFile: e
                   }),
-                  onFocus: () => ta(true)
+                  onFocus: () => ts(true)
                 }), (0, r.jsx)("input", {
-                  onFocus: () => ta(true),
-                  onBlur: () => ta(false),
+                  onFocus: () => ts(true),
+                  onBlur: () => ts(false),
                   maxLength: 140,
                   className: J.titleInput,
                   placeholder: X.intl.string(X.t.Z8fYjI),
@@ -385,6 +387,8 @@ let er = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
                     fontSize: ez,
                     spellcheckEnabled: eW,
                     canOnlyUseTextCommands: false,
+                    isEditorIdle: tt,
+                    isAutocompleteVisible: tn,
                     "aria-labelledby": ey
                   })
                 })
@@ -419,17 +423,17 @@ let er = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
           }), (0, r.jsx)("div", {
             className: J.footerPart,
             children: (0, r.jsx)("div", {
-              ref: tu,
+              ref: tp,
               className: J.sendButtonContainer,
-              onMouseEnter: tf,
-              onMouseLeave: tm,
+              onMouseEnter: tg,
+              onMouseLeave: tb,
               children: (0, r.jsx)(f.yRy, {
-                targetElementRef: tu,
+                targetElementRef: tp,
                 renderPopout: () => (0, r.jsx)(ei, {
                   channelId: k.id,
                   canCreateThread: eq
                 }),
-                shouldShow: td,
+                shouldShow: th,
                 autoInvert: true,
                 nudgeAlignIntoViewport: true,
                 position: "top",
@@ -475,12 +479,13 @@ let er = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
           canSendStickers: true,
           textValue: p,
           focused: G,
+          isEditorIdle: tt,
           expressionPickerView: e5,
           type: D,
           editorRef: ew,
           onSendMessage: eJ,
           onSendSticker: () => {},
-          onVisibilityChange: te,
+          onVisibilityChange: tr,
           editorHeight: e3,
           setValue: (e, t) => null == K ? true : K(null, e, t),
           position: e_
@@ -488,9 +493,9 @@ let er = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
       }), e9 ? null : (0, r.jsx)(S.Z, {
         positionTargetRef: eN,
         type: D,
-        onSelectGIF: tr,
-        onSelectEmoji: tn,
-        onSelectSticker: ti,
+        onSelectGIF: tl,
+        onSelectEmoji: ti,
+        onSelectSticker: ta,
         channel: k,
         closeOnModalOuterClick: eO,
         parentModalKey: ej,

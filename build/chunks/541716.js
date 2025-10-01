@@ -59,7 +59,8 @@ let d = {
     autocomplete: {
       addReactionShortcut: true,
       forceChatLayer: true,
-      reactions: true
+      reactions: true,
+      mentionSuggestions: true
     },
     commands: {
       enabled: true
@@ -117,7 +118,8 @@ let d = {
     analyticsName: "overlay",
     autocomplete: {
       addReactionShortcut: true,
-      forceChatLayer: true
+      forceChatLayer: true,
+      mentionSuggestions: true
     },
     confetti: {
       button: true
@@ -165,7 +167,8 @@ let d = {
     analyticsName: "sidebar",
     attachments: true,
     autocomplete: {
-      addReactionShortcut: true
+      addReactionShortcut: true,
+      mentionSuggestions: true
     },
     commands: {
       enabled: true
@@ -214,6 +217,9 @@ let d = {
   },
   p = {
     analyticsName: "edit",
+    autocomplete: {
+      mentionSuggestions: true
+    },
     drafts: {
       type: Chunk703558.d.ChannelMessage
     },
@@ -295,6 +301,9 @@ let d = {
   g = {
     analyticsName: "thread_creation",
     attachments: true,
+    autocomplete: {
+      mentionSuggestions: true
+    },
     drafts: {
       type: Chunk703558.d.FirstThreadMessage
     },
@@ -347,6 +356,9 @@ let d = {
   b = {
     analyticsName: "create_forum_post",
     attachments: true,
+    autocomplete: {
+      mentionSuggestions: true
+    },
     drafts: {
       type: Chunk703558.d.FirstThreadMessage
     },
@@ -621,7 +633,8 @@ let d = {
       },
       autocomplete: {
         alwaysUseLayer: true,
-        small: true
+        small: true,
+        mentionSuggestions: true
       },
       disableAutoFocus: true,
       showCharacterCount: true,

@@ -13,6 +13,7 @@ require.d(exports, {
   Fg: () => J,
   G6: () => e_,
   H1: () => L,
+  HV: () => e1,
   I0: () => M,
   JG: () => eZ,
   JN: () => er,
@@ -652,4 +653,10 @@ let eQ = (0, Chunk560997.Zc)("userContent", "lastReceivedChangelogId", e => null
     value: null != e ? String(e) : true
   }))), {
     delay: Chunk526761.fy.AUTOMATED
-  })
+  }),
+  e1 = (0, Chunk560997.Zc)("textAndImages", "showMentionSuggestions", e => {
+    var t;
+    return null == (t = null == e ? true : e.value) || t
+  }, e => o.D5.create({
+    value: e
+  }))

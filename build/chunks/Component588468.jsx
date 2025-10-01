@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   DJ: () => Z,
-  ZP: () => es,
+  ZP: () => el,
   rp: () => F
 }), require("./415506.js"), require("./953529.js"), require("./388685.js");
 var r, Chunk951288 = require("./951288.js"),
@@ -275,6 +275,60 @@ class q extends H {
 }
 class X extends H {
   renderContent() {
+    var e;
+    let {
+      user: t,
+      nick: n,
+      comparator: r,
+      status: a,
+      hidePersonalInformation: o,
+      guildId: l,
+      selected: c,
+      layout: u = "horizontal"
+    } = this.props, d = null == Chunk392711 ? Chunk699516.Z.getNickname(exports.id) : null, _ = null != (e = null != require ? require : Chunk313666) ? module : Chunk51144.ZP.getName(exports);
+    return (0, Chunk951288.jsxs)(Chunk965386.RX, {
+      className: s()({
+        [Chunk537221.verticalLayout]: "vertical-suggestion" === Chunk91192
+      }),
+      children: [(0, Chunk951288.jsx)(Chunk965386.Tw, {
+        children: (0, Chunk951288.jsx)(Chunk481060.qEK, {
+          size: Chunk481060.EFr.SIZE_32,
+          src: exports.getAvatarURL(Chunk392711, 32),
+          "aria-hidden": true,
+          status: Chunk647438
+        })
+      }), (0, Chunk951288.jsxs)("div", {
+        className: Chunk537221.autocompleteContentWrapper,
+        children: [(0, Chunk951288.jsx)(Chunk965386.z5, {
+          children: (0, Chunk951288.jsx)(Chunk965386.BR, {
+            children: Chunk607070
+          })
+        }), (0, Chunk951288.jsx)(Chunk965386.dY, {
+          children: null == r || r === Chunk607070.toLocaleLowerCase() || r === exports.username.toLocaleLowerCase() ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+            children: [Chunk51144.ZP.getUserTag(exports, {
+              mode: "username",
+              identifiable: Chunk120356 ? "never" : "always"
+            }), Chunk120356 || exports.hasUniqueUsername() ? null : (0, Chunk951288.jsxs)("span", {
+              className: Chunk537221.descriptionDiscriminator,
+              children: ["#", exports.discriminator]
+            })]
+          }) : r
+        })]
+      }), (0, Chunk951288.jsx)("div", {
+        className: Chunk537221.keyComboContainer,
+        children: c ? (0, Chunk951288.jsx)(Chunk481060.M2$, {
+          shortcut: "tab",
+          dim: true
+        }) : null
+      })]
+    })
+  }
+  constructor(...e) {
+    super(...e), j(this, "layoutClass", x.autoCompleteRowSuggestion)
+  }
+}
+class Q extends H {
+  renderContent() {
     let {
       role: e,
       hideDescription: t,
@@ -316,7 +370,7 @@ class X extends H {
     })
   }
 }
-class Q extends H {
+class J extends H {
   renderContent() {
     let {
       channel: e,
@@ -337,7 +391,7 @@ class Q extends H {
     })
   }
 }
-class J extends H {
+class $ extends H {
   renderContent() {
     let {
       command: e
@@ -360,7 +414,7 @@ class J extends H {
     })
   }
 }
-class $ extends H {
+class ee extends H {
   isSelectable() {
     return this.props.command.inputType !== Chunk895924.iw.PLACEHOLDER
   }
@@ -384,7 +438,7 @@ class $ extends H {
     })
   }
 }
-class ee extends H {
+class et extends H {
   renderContent() {
     let {
       emoji: e,
@@ -418,7 +472,7 @@ class ee extends H {
     super(...e), j(this, "layoutClass", s()(x.autocompleteRowVertical, x.autocompleteRowVerticalSmall))
   }
 }
-class et extends H {
+class en extends H {
   renderContent() {
     var e, t;
     let n, {
@@ -450,7 +504,7 @@ class et extends H {
     super(...e), j(this, "layoutClass", s()(x.autocompleteRowVertical, x.autocompleteRowVerticalSmall))
   }
 }
-class en extends H {
+class er extends H {
   renderContent() {
     let {
       width: e,
@@ -468,19 +522,19 @@ class en extends H {
     super(...e), j(this, "layoutClass", x.autocompleteRowHorizontal)
   }
 }
-class er extends H {
+class ei extends H {
   renderContent() {
     return (0, Chunk951288.jsx)(Chunk511618.Z, {
       emojis: this.props.emojis
     })
   }
 }
-class ei extends H {
+class ea extends H {
   renderContent() {
     return (0, Chunk951288.jsx)(Chunk887120.Z, M({}, this.props))
   }
 }
-class ea extends H {
+class eo extends H {
   renderContent() {
     let {
       game: e
@@ -504,7 +558,7 @@ class ea extends H {
     })
   }
 }
-class eo extends(r = Chunk647438.PureComponent) {
+class es extends(r = Chunk647438.PureComponent) {
   render() {
     let e = this.props,
       {
@@ -529,5 +583,5 @@ class eo extends(r = Chunk647438.PureComponent) {
     }) : null
   }
 }
-j(eo, "Generic", Y), j(eo, "Loading", W), j(eo, "Title", K), j(eo, "Divider", z), j(eo, "User", q), j(eo, "Role", X), j(eo, "Channel", Q), j(eo, "Command", J), j(eo, "NewCommand", $), j(eo, "Emoji", ee), j(eo, "GIFIntegration", en), j(eo, "Sticker", et), j(eo, "EmojiUpsell", er), j(eo, "Soundmoji", ei), j(eo, "Game", ea);
-let es = eo
+j(es, "Generic", Y), j(es, "Loading", W), j(es, "Title", K), j(es, "Divider", z), j(es, "User", q), j(es, "UserSuggestion", X), j(es, "Role", Q), j(es, "Channel", J), j(es, "Command", $), j(es, "NewCommand", ee), j(es, "Emoji", et), j(es, "GIFIntegration", er), j(es, "Sticker", en), j(es, "EmojiUpsell", ei), j(es, "Soundmoji", ea), j(es, "Game", eo);
+let el = es

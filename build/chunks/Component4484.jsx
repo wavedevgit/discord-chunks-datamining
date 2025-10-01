@@ -2,7 +2,7 @@
 /** chunk id: 4484, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => L
+  Z: () => M
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -21,7 +21,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk925994 = require("./925994.js"),
   Chunk436660 = require("./436660.js"),
   Chunk887490 = require("./887490.js"),
+  Chunk77224 = require("./77224.js"),
   Chunk194625 = require("./194625.js"),
+  Chunk135223 = require("./135223.js"),
+  Chunk512729 = require("./512729.js"),
   Chunk77188 = require("./77188.js"),
   Chunk230554 = require("./230554.js"),
   Chunk780748 = require("./780748.js"),
@@ -34,47 +37,49 @@ var Chunk951288 = require("./951288.js"),
   Chunk645174 = require("./645174.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk520093 = require("./520093.js");
-let L = Chunk647438.forwardRef(function(e, t) {
+let M = Chunk647438.forwardRef(function(e, t) {
   let {
     value: n,
     type: a,
-    channel: L,
-    className: x,
-    id: j,
-    disabled: M,
-    submitting: k,
-    placeholder: U,
-    required: G,
-    textAreaPaddingClassName: B,
-    onChange: Z,
-    onPaste: F,
-    onResize: V,
-    onFocus: H,
-    onBlur: Y,
-    onKeyDown: W,
-    onKeyUp: K,
-    onTab: z,
-    onEnter: q,
-    onSubmit: X,
-    maybeShowAutocomplete: Q,
-    hideAutocomplete: J,
-    moveSelection: $,
-    spellcheckEnabled: ee,
-    canUseCommands: et,
-    canOnlyUseTextCommands: en,
-    disableAutoFocus: er,
-    disableEnterToSubmit: ei,
-    allowNewLines: ea,
-    "aria-owns": eo,
-    "aria-expanded": es,
-    "aria-haspopup": el,
-    "aria-activedescendant": ec,
-    "aria-controls": eu,
-    "aria-invalid": ed,
-    "aria-describedby": ef,
-    "aria-labelledby": e_,
-    "aria-autocomplete": ep
-  } = e, eh = i.useRef(null), em = i.useRef(null), eg = i.useRef(true), eE = i.useRef(true), eb = M || k, ey = i.useCallback((e, t, n) => {
+    channel: M,
+    className: k,
+    id: U,
+    disabled: G,
+    submitting: B,
+    placeholder: Z,
+    required: F,
+    textAreaPaddingClassName: V,
+    onChange: H,
+    onPaste: Y,
+    onResize: W,
+    onFocus: K,
+    onBlur: z,
+    onKeyDown: q,
+    onKeyUp: X,
+    onTab: Q,
+    onEnter: J,
+    onSubmit: $,
+    maybeShowAutocomplete: ee,
+    hideAutocomplete: et,
+    moveSelection: en,
+    spellcheckEnabled: er,
+    canUseCommands: ei,
+    canOnlyUseTextCommands: ea,
+    disableAutoFocus: eo,
+    disableEnterToSubmit: es,
+    allowNewLines: el,
+    isEditorIdle: ec,
+    isAutocompleteVisible: eu,
+    "aria-owns": ed,
+    "aria-expanded": ef,
+    "aria-haspopup": e_,
+    "aria-activedescendant": ep,
+    "aria-controls": eh,
+    "aria-invalid": em,
+    "aria-describedby": eg,
+    "aria-labelledby": eE,
+    "aria-autocomplete": eb
+  } = e, ey = i.useRef(null), eO = i.useRef(null), ev = i.useRef(true), eI = i.useRef(true), eT = G || B, eS = i.useCallback((e, t, n) => {
     var r;
     let {
       value: i,
@@ -83,10 +88,10 @@ let L = Chunk647438.forwardRef(function(e, t) {
     if (true !== i && i !== o) {
       if (e.children = i, "parent" === t && !e.previewMarkdown && e.chatInputType === _.Ie.EDIT) {
         try {
-          e.previewMarkdown = true, (0, C.KH)(e, L.guild_id, L.id)
+          e.previewMarkdown = true, (0, P.KH)(e, M.guild_id, M.id)
         } finally {
           e.previewMarkdown = false
-        }(0, C.KH)(e, L.guild_id, L.id), a = true
+        }(0, P.KH)(e, M.guild_id, M.id), a = true
       }
       "undo" !== t && true !== i && i !== o && h.T.insertEntry(e, "other", false, o, s), l = true
     }
@@ -98,56 +103,56 @@ let L = Chunk647438.forwardRef(function(e, t) {
       }
     }
     let u = null != a && !b.Ew.equals(a, s);
-    if (l && !er && b.bN.focus(e), null != a && u) {
+    if (l && !eo && b.bN.focus(e), null != a && u) {
       e.selection = a;
       let t = h.T.currentEntry(e);
       null != t && (t.selection = a), l = true
     }
     let d = p.cr(e);
-    if (null != d && d[0].command.id !== (null == (r = c.Z.getActiveCommand(L.id)) ? true : r.id) && h.T.withMergedEntry(e, () => {
-        (0, A.L)(e, L.id, null, true)
+    if (null != d && d[0].command.id !== (null == (r = c.Z.getActiveCommand(M.id)) ? true : r.id) && h.T.withMergedEntry(e, () => {
+        (0, R.L)(e, M.id, null, true)
       }), l)
       if ("parent" === t) try {
-        eE.current = false, e.onChange()
+        eI.current = false, e.onChange()
       } finally {
-        eE.current = true
+        eI.current = true
       } else e.onChange()
-  }, [L.id, L.guild_id, er]), eO = i.useCallback(() => {
-    eg.current = false
-  }, []), ev = i.useCallback(() => {
-    eg.current = true
-  }, []), eI = (0, O.Z)({
-    channel: L,
+  }, [M.id, M.guild_id, eo]), eA = i.useCallback(() => {
+    ev.current = false
+  }, []), eC = i.useCallback(() => {
+    ev.current = true
+  }, []), eN = (0, T.Z)({
+    channel: M,
     chatInputType: a,
-    canUseCommands: et,
-    canOnlyUseTextCommands: en,
-    onChangeStart: eO,
-    onChangeEnd: ev,
-    updateState: ey
-  }), eT = i.useCallback((e, t) => {
-    let n = p.tM(eI, e, L.id),
-      r = p.lk(e, L.guild_id, L.id, n, t);
+    canUseCommands: ei,
+    canOnlyUseTextCommands: ea,
+    onChangeStart: eA,
+    onChangeEnd: eC,
+    updateState: eS
+  }), eR = i.useCallback((e, t) => {
+    let n = p.tM(eN, e, M.id),
+      r = p.lk(e, M.guild_id, M.id, n, t);
     return {
       values: n,
       results: r
     }
-  }, [L.guild_id, L.id, eI]), eS = i.useCallback(() => {
-    let e, t = b.bN.getNodesOfType(eI, ["gameMentionInput"]),
+  }, [M.guild_id, M.id, eN]), eP = i.useCallback(() => {
+    let e, t = b.bN.getNodesOfType(eN, ["gameMentionInput"]),
       n = null != t ? [...t] : null,
-      r = et ? c.Z.getActiveCommand(L.id) : null,
+      r = ei ? c.Z.getActiveCommand(M.id) : null,
       i = false;
     if (null != r && null != r.options) {
-      let t = eT(r, false);
+      let t = eR(r, false);
       e = t.values;
-      let n = p.cu(eI).filter(e => !t.results[e].success).map(e => {
+      let n = p.cu(eN).filter(e => !t.results[e].success).map(e => {
         var t;
         return (null != (t = r.options) ? t : []).find(t => t.name === e)
       });
-      for (let e of r.options) !e.required || e.name in t.values || (E.Q.insertCommandOption(eI, e), n.push(e));
+      for (let e of r.options) !e.required || e.name in t.values || (E.Q.insertCommandOption(eN, e), n.push(e));
       if (n.length > 0) {
         var a, o;
         let e = n[0];
-        E.Q.selectCommandOption(eI, e.name), i = true, (0, l.yw)(w.rMx.APPLICATION_COMMAND_VALIDATION_FAILED, {
+        E.Q.selectCommandOption(eN, e.name), i = true, (0, l.yw)(x.rMx.APPLICATION_COMMAND_VALIDATION_FAILED, {
           application_id: null == r ? true : r.applicationId,
           command_id: null == r || null == (a = r.rootCommand) ? true : a.id,
           argument_type: s.jw[null != (o = null == e ? true : e.type) ? o : 3],
@@ -156,102 +161,105 @@ let L = Chunk647438.forwardRef(function(e, t) {
       }
     }
     if (null != n)
-      for (let [e, t] of n) i = true, E.Q.setNodes(eI, {
+      for (let [e, t] of n) i = true, E.Q.setNodes(eN, {
         error: true
       }, {
         at: t
       });
-    if (i) return void f.S.dispatch(w.CkL.SHAKE_APP, {
+    if (i) return void f.S.dispatch(x.CkL.SHAKE_APP, {
       duration: 200,
       intensity: 2
     });
-    null == X || X((0, g.sk)(b.bN.richValue(eI), {
+    null == $ || $((0, g.sk)(b.bN.richValue(eN), {
       mode: "raw",
       ignoreTrailingEmptyNodes: true
     }), r, e)
-  }, [L.id, eI, X, eT, et]);
-  (0, v.Z)(t, eI, L, eS), (0, S.Z)(eI, eh, V);
+  }, [M.id, eN, $, eR, ei]);
+  (0, S.Z)(t, eN, M, eP), (0, N.Z)(eN, ey, W);
   let {
-    handleKeyDown: eA,
-    handleKeyUp: eC
-  } = (0, I.Z)({
-    editor: eI,
-    channel: L,
-    disableEnterToSubmit: ei,
-    onKeyDown: W,
-    onKeyUp: K,
-    onTab: z,
-    onEnter: q,
-    allowNewLines: ea,
-    submit: eS,
-    hideAutocomplete: J,
-    moveSelection: $
+    handleKeyDown: ew,
+    handleKeyUp: eD
+  } = (0, A.Z)({
+    editor: eN,
+    channel: M,
+    disableEnterToSubmit: es,
+    onKeyDown: q,
+    onKeyUp: X,
+    onTab: Q,
+    onEnter: J,
+    allowNewLines: el,
+    submit: eP,
+    hideAutocomplete: et,
+    moveSelection: en
   }), {
-    handlePaste: eN,
-    handleGlobalPaste: eR
-  } = (0, T.Z)(eI, eb, F), eP = i.useCallback(e => {
-    null == Q || Q()
-  }, [Q]), ew = i.useCallback(e => {
-    e !== em.current ? eE.current && (null == Z || Z(null, (0, g.sk)(e, {
+    handlePaste: eL,
+    handleGlobalPaste: ex
+  } = (0, C.Z)(eN, eT, Y), ej = i.useCallback(e => {
+    null == ee || ee()
+  }, [ee]), eM = i.useCallback(e => {
+    e !== eO.current ? eI.current && (null == H || H(null, (0, g.sk)(e, {
       mode: "raw"
-    }), e)) : eE.current && Q()
-  }, [Q, Z]);
+    }), e)) : eI.current && ee()
+  }, [ee, H]);
   i.useLayoutEffect(() => {
-    eg.current && (em.current = n, ey(eI, "parent", {
+    ev.current && (eO.current = n, eS(eN, "parent", {
       value: n
     }))
-  }, [eI, n, ey]), i.useEffect(() => {
+  }, [eN, n, eS]), i.useEffect(() => {
     let e = () => {
       var e;
-      let t = null != (e = c.Z.getActiveCommand(L.id)) ? e : null;
-      null !== t && null != t.options && eT(t, true)
+      let t = null != (e = c.Z.getActiveCommand(M.id)) ? e : null;
+      null !== t && null != t.options && eR(t, true)
     };
     return u.Z.addChangeListener(e), () => u.Z.removeChangeListener(e)
-  }, [L, eI, eT]);
-  let eD = i.useCallback((e, t) => (0, y.Z)(e, t), []),
-    eL = i.useCallback(e => {
-      let t = (0, N.Z)(eI, e, L.id);
-      return null == t && (t = (0, P.Z)(eI, e)), t
-    }, [L.id, eI]),
-    ex = i.useCallback(e => (0, R.Z)(e), []);
+  }, [M, eN, eR]);
+  let ek = i.useCallback(e => [...(0, v.Z)(eN, e, M.guild_id), ...(0, y.Z)(eN, e), ...(0, O.Z)(eN, e), ...(0, I.Z)(eN, e, M, {
+      isIdle: ec,
+      isVisible: eu
+    })], [eN, M, ec, eu]),
+    eU = i.useCallback(e => {
+      let t = (0, w.Z)(eN, e, M.id);
+      return null == t && (t = (0, L.Z)(eN, e)), t
+    }, [M.id, eN]),
+    eG = i.useCallback(e => (0, D.Z)(e), []);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(d.d9, {
-      event: w.CkL.GLOBAL_CLIPBOARD_PASTE,
-      handler: eR
+      event: x.CkL.GLOBAL_CLIPBOARD_PASTE,
+      handler: ex
     }), (0, r.jsx)("div", {
-      ref: eh,
-      className: o()(x, D.slateContainer),
+      ref: ey,
+      className: o()(k, j.slateContainer),
       children: (0, r.jsx)(m.Z, {
-        id: j,
-        editor: eI,
-        channelId: L.id,
-        guildId: L.guild_id,
-        className: o()(D.slateTextArea, B),
-        placeholder: U,
-        readOnly: eb,
-        spellCheck: ee,
-        autoFocus: !er,
-        canFocus: !M,
-        onChange: ew,
-        onFocus: H,
-        onBlur: Y,
-        onClick: eP,
-        onPaste: eN,
-        onKeyDown: eA,
-        onKeyUp: eC,
-        decorateExtra: eD,
-        renderExtraElement: eL,
-        renderExtraLeaf: ex,
-        "aria-owns": eo,
-        "aria-haspopup": el,
-        "aria-expanded": es,
-        "aria-activedescendant": ec,
-        "aria-controls": eu,
-        "aria-labelledby": e_,
-        "aria-describedby": ef,
-        "aria-invalid": ed,
-        "aria-autocomplete": ep,
-        "aria-required": G
+        id: U,
+        editor: eN,
+        channelId: M.id,
+        guildId: M.guild_id,
+        className: o()(j.slateTextArea, V),
+        placeholder: Z,
+        readOnly: eT,
+        spellCheck: er,
+        autoFocus: !eo,
+        canFocus: !G,
+        onChange: eM,
+        onFocus: K,
+        onBlur: z,
+        onClick: ej,
+        onPaste: eL,
+        onKeyDown: ew,
+        onKeyUp: eD,
+        decorate: ek,
+        renderExtraElement: eU,
+        renderExtraLeaf: eG,
+        "aria-owns": ed,
+        "aria-haspopup": e_,
+        "aria-expanded": ef,
+        "aria-activedescendant": ep,
+        "aria-controls": eh,
+        "aria-labelledby": eE,
+        "aria-describedby": eg,
+        "aria-invalid": em,
+        "aria-autocomplete": eb,
+        "aria-required": F
       })
     })]
   })

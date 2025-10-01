@@ -67,8 +67,9 @@ class g extends Chunk836560.EventEmitter {
   updateProps(e) {
     let t = this.props.focused !== e.focused,
       n = this.props.channel.id !== e.channel.id || this.props.activeCommandOption !== e.activeCommandOption || this.props.activeInlineAutocompleteInput !== e.activeInlineAutocompleteInput,
-      r = !this.state.didInitialQuery || this.props.currentWord !== e.currentWord || this.props.currentWordIsAtStart !== e.currentWordIsAtStart || this.props.fullWord !== e.fullWord || this.props.textValue !== e.textValue || this.props.optionText !== e.optionText;
-    if (this.props = e, n || r) this.updateResults(r, n), this.state.didInitialQuery || (this.state = p(f({}, this.state), {
+      r = !this.state.didInitialQuery || this.props.currentWord !== e.currentWord || this.props.currentWordIsAtStart !== e.currentWordIsAtStart || this.props.fullWord !== e.fullWord || this.props.textValue !== e.textValue || this.props.optionText !== e.optionText,
+      i = this.props.isEditorIdle !== e.isEditorIdle;
+    if (this.props = e, n || r || i) this.updateResults(r, n), this.state.didInitialQuery || (this.state = p(f({}, this.state), {
       didInitialQuery: true
     }));
     else if (t) {
@@ -84,11 +85,11 @@ class g extends Chunk836560.EventEmitter {
     })
   }
   onTabOrEnter(e) {
-    if (!this.state.isVisible) returnfalse;
+    var t, n;
+    if (!this.state.isVisible || (null == (t = this.state.query) ? true : t.typeInfo.selectMode) === c.W7.TAB_ONLY && e) returnfalse;
     if (null == this.state.selectedIndex) {
-      var t;
-      let n = null == (t = this.state.query) ? true : t.typeInfo.focusMode;
-      return !e && (n === c.QZ.MANUAL || n === c.QZ.AUTO_WHEN_FILTERED) && (this.setSelectedIndex(0), true)
+      let t = null == (n = this.state.query) ? true : n.typeInfo.focusMode;
+      return !e && (t === c.QZ.MANUAL || t === c.QZ.AUTO_WHEN_FILTERED) && (this.setSelectedIndex(0), true)
     }
     return this.selectResult(this.state.selectedIndex, e, true)
   }
@@ -133,7 +134,7 @@ class g extends Chunk836560.EventEmitter {
     let n, r, i = arguments.length > 0 && true !== arguments[0] && arguments[0],
       d = arguments.length > 1 && true !== arguments[1] && arguments[1];
     if (null == this.props.editorRef.current) return;
-    let f = (0, Chunk152089.FW)(this.props),
+    let f = (0, Chunk152089.FW)(this.props, this.state),
       _ = this.props.editorRef.current.getSlateEditor();
     null != _ && (r = null != (n = Chunk887490.bN.getSelectedParentOfType(_, h)) ? Chunk887490.bN.getTextFromRange(_, Chunk887490.bN.range(_, require[1])) : null);
     let p = (0, Chunk152089.fZ)({
