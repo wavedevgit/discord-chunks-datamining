@@ -6,8 +6,8 @@ require.d(exports, {
 }), require("./539854.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk952265 = require("./952265.js"),
-  Chunk82659 = require("./82659.jsx"),
+var Chunk793030 = require("./793030.js"),
+  Chunk952265 = require("./952265.js"),
   Chunk755721 = require("./755721.js"),
   Chunk468026 = require("./468026.jsx"),
   Chunk388032 = require("./388032.jsx");
@@ -68,26 +68,26 @@ let _ = {
       titleClassName: O,
       contextKey: v
     } = e;
-    (0, i.h7)(e => {
+    (0, a.h7)(e => {
       if (null == E) {
-        let i = [];
-        return null != p && "" !== p && i.push({
+        let a = [];
+        return null != p && "" !== p && a.push({
           text: p,
           onClick: () => {
             null == m || m(), e.onClose()
           },
           variant: "secondary"
-        }), i.push({
+        }), a.push({
           text: null != d ? d : l.intl.string(l.t.BddRzc),
           onClick: () => {
             null == h || h(), e.onClose()
           },
           variant: _
-        }), (0, r.jsx)(a.Modal, f(u({}, e), {
+        }), (0, r.jsx)(i.Modal, f(u({}, e), {
           size: "sm",
           title: t,
           subtitle: n,
-          actions: i
+          actions: a
         }))
       }
       return (0, r.jsx)(s.default, f(u({}, e), {

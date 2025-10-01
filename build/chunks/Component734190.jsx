@@ -135,8 +135,8 @@ function M(e) {
     thread: t
   } = e, n = i.useMemo(() => {
     var e;
-    return null != (e = (0, f.KS)(t)) ? e : c.or_
-  }, [t]), l = (0, f.bT)(t);
+    return null != (e = (0, h.KS)(t)) ? e : c.or_
+  }, [t]), l = (0, h.bT)(t);
   return (0, r.jsx)(c.ua7, {
     text: l,
     delay: 500,
@@ -155,7 +155,7 @@ let L = Chunk647438.memo(function(e) {
   let {
     thread: t,
     isSelectedChannel: l,
-    isSelectedVoice: f,
+    isSelectedVoice: h,
     isLast: T,
     withGuildIcon: L
   } = e, k = (0, s.e7)([v.ZP], () => v.ZP.getVoiceStatesForChannel(t), [t]), U = (0, s.e7)([y.Z], () => y.Z.hasVideo(t.id)), {
@@ -261,7 +261,7 @@ let L = Chunk647438.memo(function(e) {
               })]
             }) : null, "icon-in-bubble" === H.variant ? (0, r.jsx)(M, {
               thread: t
-            }) : null, (0, r.jsx)(h.Z, {
+            }) : null, (0, r.jsx)(f.Z, {
               className: Z.name,
               "aria-hidden": true,
               children: t.name
@@ -281,7 +281,7 @@ let L = Chunk647438.memo(function(e) {
       })
     }), (0, r.jsx)(S.Z, {
       channel: t,
-      collapsed: !f,
+      collapsed: !h,
       collapsedMax: 6,
       voiceStates: k,
       location: P.Sbl.GUILD_CHANNEL_LIST

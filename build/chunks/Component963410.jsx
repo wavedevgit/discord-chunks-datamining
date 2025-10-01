@@ -5,8 +5,8 @@ require.r(exports), require.d(exports, {
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk82659 = require("./82659.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk377171 = require("./377171.js"),
   Chunk592125 = require("./592125.js"),
@@ -45,7 +45,7 @@ function C(e) {
     userId: R,
     channelId: Z,
     onClose: I
-  } = e, w = (0, u.e7)([s.default], () => s.default.getUser(R)), A = (0, u.e7)([o.Z], () => {
+  } = e, w = (0, i.e7)([s.default], () => s.default.getUser(R)), A = (0, i.e7)([o.Z], () => {
     var e;
     return null == (e = o.Z.getChannel(Z)) ? true : e.getGuildId()
   }), x = f.ZP.useName(A, null, w), {
@@ -155,7 +155,7 @@ function C(e) {
       onClick: I,
       variant: "secondary"
     };
-  return (0, n.jsx)(i.Modal, (t = function(e) {
+  return (0, n.jsx)(u.Modal, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
         n = Object.keys(r);

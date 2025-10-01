@@ -8,8 +8,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
   o = require.n(Chunk512722),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk82659 = require("./82659.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk179360 = require("./179360.js"),
   Chunk899667 = require("./899667.js"),
@@ -33,7 +33,7 @@ let v = e => {
   } = e, T = (0, h.vx)(_.Z.boostSlots);
   o()(null != t || null != n, "Must either provide slots or an initial selected guild"), o()(!(null == t ? true : t.some(e => e.isOnCooldown())), "If slots are provided, they must not be on cooldown");
   let S = [null == t ? "UNUSED_QUANTITY_SELECT" : null, null == n ? "GUILD_SELECT" : null, "CONFIRM", "SUCCESS"].filter(e => null != e),
-    [A, C] = (0, s.Wu)([d.Z], () => [d.Z.isModifyingAppliedBoost, d.Z.applyBoostError]),
+    [A, C] = (0, l.Wu)([d.Z], () => [d.Z.isModifyingAppliedBoost, d.Z.applyBoostError]),
     [N, R] = i.useState(S[0]),
     [P, w] = i.useState(false),
     [D, L] = i.useState(n),
@@ -53,7 +53,7 @@ let v = e => {
       location_section: a
     }), Promise.resolve()),
     G = {
-      UNUSED_QUANTITY_SELECT: () => (o()(null != t || 0 !== T.length, "Cannot provide no slots if there are no other available slots"), (0, r.jsx)(l.Modal, {
+      UNUSED_QUANTITY_SELECT: () => (o()(null != t || 0 !== T.length, "Cannot provide no slots if there are no other available slots"), (0, r.jsx)(s.Modal, {
         transitionState: v,
         onClose: U,
         size: "md",
@@ -122,12 +122,12 @@ let v = e => {
                 w(true)
               }
             }
-          }, s = k ? y.intl.string(y.t["PR0n//"]) : y.intl.string(y.t["7KP/fH"]);
-        return (0, r.jsx)(l.Modal, {
+          }, l = k ? y.intl.string(y.t["PR0n//"]) : y.intl.string(y.t["7KP/fH"]);
+        return (0, r.jsx)(s.Modal, {
           transitionState: v,
           onClose: U,
           size: "md",
-          title: s,
+          title: l,
           actions: [{
             variant: "secondary",
             text: y.intl.string(y.t["ETE/oK"]),
@@ -172,7 +172,7 @@ let v = e => {
       },
       SUCCESS() {
         let e = k ? y.intl.string(y.t["PR0n//"]) : y.intl.string(y.t["7KP/fH"]);
-        return (0, r.jsx)(l.Modal, {
+        return (0, r.jsx)(s.Modal, {
           transitionState: v,
           onClose: U,
           size: "md",

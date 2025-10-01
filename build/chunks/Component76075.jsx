@@ -5,8 +5,8 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk82659 = require("./82659.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk271383 = require("./271383.js"),
   Chunk430824 = require("./430824.js"),
@@ -22,10 +22,10 @@ let v = function(n) {
     guildId: e,
     transitionState: t,
     onClose: v
-  } = n, _ = (0, l.e7)([p.Z], () => p.Z.getRequest(e), [e]), C = (0, l.e7)([c.Z], () => c.Z.getGuild(e), [e]), R = (0, l.e7)([u.default], () => {
+  } = n, _ = (0, a.e7)([p.Z], () => p.Z.getRequest(e), [e]), C = (0, a.e7)([c.Z], () => c.Z.getGuild(e), [e]), R = (0, a.e7)([u.default], () => {
     var n;
     return null == (n = u.default.getCurrentUser()) ? true : n.id
-  }), x = (0, l.e7)([s.ZP], () => null != R ? s.ZP.getMember(e, R) : null, [R, e]), Z = o.useCallback(() => {
+  }), x = (0, a.e7)([s.ZP], () => null != R ? s.ZP.getMember(e, R) : null, [R, e]), Z = o.useCallback(() => {
     v(), null == x && (0, g.Z)()
   }, [x, v]), j = o.useCallback(async () => {
     if (null == x ? true : x.isPending) {
@@ -45,7 +45,7 @@ let v = function(n) {
     variant: "critical-primary",
     onClick: Z
   }], [j, Z]);
-  return (0, i.jsx)(a.Modal, {
+  return (0, i.jsx)(l.Modal, {
     transitionState: t,
     onClose: v,
     title: (null == C ? true : C.name) != null ? f.intl.formatToPlainString(f.t["P+/gzM"], {

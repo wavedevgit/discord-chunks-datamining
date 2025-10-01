@@ -5,8 +5,8 @@ require.d(exports, {
 }), require("./953529.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk82659 = require("./82659.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk596454 = require("./596454.jsx"),
   Chunk471445 = require("./471445.js"),
@@ -34,12 +34,12 @@ let k = e => {
     let {
       channelData: i,
       onClose: l,
-      trackOptionClick: t
-    } = e, d = (0, o.e7)([x.Z], () => x.Z.getChannel(i.channel_id)), u = (0, o.e7)([g.Z], () => null != d && g.Z.can(I.Pl.VIEW_CHANNEL, d)), _ = (0, o.e7)([m.ZP], () => null != i.emoji_id ? m.ZP.getCustomEmojiById(i.emoji_id) : null, [i.emoji_id]), p = null != i.emoji_name ? h.ZP.getByName(h.ZP.convertSurrogateToName(i.emoji_name, false)) : null, N = null != (n = (0, c.KS)(d)) ? n : s.VL1;
+      trackOptionClick: o
+    } = e, d = (0, t.e7)([x.Z], () => x.Z.getChannel(i.channel_id)), u = (0, t.e7)([g.Z], () => null != d && g.Z.can(I.Pl.VIEW_CHANNEL, d)), _ = (0, t.e7)([m.ZP], () => null != i.emoji_id ? m.ZP.getCustomEmojiById(i.emoji_id) : null, [i.emoji_id]), p = null != i.emoji_name ? h.ZP.getByName(h.ZP.convertSurrogateToName(i.emoji_name, false)) : null, N = null != (n = (0, c.KS)(d)) ? n : s.VL1;
     return null != d && u ? (0, a.jsxs)(s.P3F, {
       className: S.optionContainer,
       onClick: () => {
-        t(), l(), (0, j.XU)(d.guild_id, d.id)
+        o(), l(), (0, j.XU)(d.guild_id, d.id)
       },
       children: [null != _ || null != p ? (0, a.jsx)(r.Z, {
         emojiName: null != i.emoji_id ? null == _ ? true : _.name : i.emoji_name,
@@ -79,11 +79,11 @@ let k = e => {
       transitionState: r,
       guildId: c,
       isPreview: m
-    } = e, h = (0, o.e7)([N.Z], () => N.Z.getGuild(c)), {
+    } = e, h = (0, t.e7)([N.Z], () => N.Z.getGuild(c)), {
       welcomeScreen: j,
       fetching: x,
       hasError: g
-    } = (0, o.cj)([Z.Z], () => ({
+    } = (0, t.cj)([Z.Z], () => ({
       welcomeScreen: Z.Z.get(c),
       fetching: Z.Z.isFetching(),
       hasError: Z.Z.hasError()
@@ -117,7 +117,7 @@ let k = e => {
         has_custom_emojis: l
       })
     }, [c, m, j]);
-    return null == h ? null : null == j ? (0, a.jsx)(t.Modal, {
+    return null == h ? null : null == j ? (0, a.jsx)(o.Modal, {
       transitionState: r,
       "aria-label": T.intl.string(T.t.ZTNur6),
       title: T.intl.string(T.t.ZTNur6),
@@ -126,7 +126,7 @@ let k = e => {
       children: (0, a.jsx)(s.$jN, {
         type: s.$jN.Type.SPINNING_CIRCLE
       })
-    }) : (0, a.jsx)(t.Modal, {
+    }) : (0, a.jsx)(o.Modal, {
       transitionState: r,
       "aria-labelledby": C,
       actions: [{

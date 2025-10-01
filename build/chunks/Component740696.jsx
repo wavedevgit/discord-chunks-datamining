@@ -1,15 +1,12 @@
 /** Chunk was on 18417 **/
 /** chunk id: 740696, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  default: () => b
+  default: () => f
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk257465 = require("./257465.jsx"),
-  Chunk369585 = require("./369585.jsx"),
-  Chunk103866 = require("./103866.jsx"),
-  Chunk37148 = require("./37148.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk430824 = require("./430824.js"),
   Chunk496675 = require("./496675.js"),
@@ -21,31 +18,31 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk87612 = require("./87612.js");
 
-function b(t) {
+function f(t) {
   let {
     guildId: e,
-    shouldUpsellCreation: b,
-    transitionState: y,
-    onClose: P
-  } = t, N = (0, i.e7)([d.Z], () => d.Z.getGuild(e), [e]), S = (0, i.e7)([m.Z], () => m.Z.can(h.Plq.MANAGE_CHANNELS, N)), O = [{
+    shouldUpsellCreation: f,
+    transitionState: j,
+    onClose: v
+  } = t, b = (0, s.e7)([l.Z], () => l.Z.getGuild(e), [e]), y = (0, s.e7)([c.Z], () => c.Z.can(u.Plq.MANAGE_CHANNELS, b)), P = [{
     id: 0,
-    name: j.intl.string(j.t.HTA519)
+    name: x.intl.string(x.t.HTA519)
   }, {
     id: 1,
-    name: j.intl.string(j.t.IHjjY2)
+    name: x.intl.string(x.t.IHjjY2)
   }, {
     id: 2,
-    name: j.intl.string(j.t.x3drh4)
-  }], [C, w] = r.useState(0), k = [{
-    variant: b ? "secondary" : "primary",
-    text: b ? j.intl.string(j.t.TulDPj) : j.intl.string(j.t["NX+WJC"]),
-    onClick: () => P(f.L.SECONDARY)
+    name: x.intl.string(x.t.x3drh4)
+  }], [N, S] = r.useState(0), O = [{
+    variant: f ? "secondary" : "primary",
+    text: f ? x.intl.string(x.t.TulDPj) : x.intl.string(x.t["NX+WJC"]),
+    onClick: () => v(p.L.SECONDARY)
   }];
-  return b && k.push({
+  return f && O.push({
     variant: "primary",
-    text: j.intl.string(j.t["1X8SKy"]),
+    text: x.intl.string(x.t["1X8SKy"]),
     onClick: () => {
-      (0, g.ZDy)(async () => {
+      (0, o.ZDy)(async () => {
         let {
           default: t
         } = await Promise.all([n.e("45094"), n.e("67133")]).then(n.bind(n, 218613));
@@ -69,9 +66,9 @@ function b(t) {
             }
             return t
           }({}, n), i = i = {
-            channelType: h.d4z.GUILD_FORUM,
+            channelType: u.d4z.GUILD_FORUM,
             guildId: e,
-            prefillChannelName: b ? j.intl.string(j.t["5z1Xam"]) : true
+            prefillChannelName: f ? x.intl.string(x.t["5z1Xam"]) : true
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(t, e) {
             var n = Object.keys(t);
             if (Object.getOwnPropertySymbols) {
@@ -83,44 +80,44 @@ function b(t) {
             Object.defineProperty(r, t, Object.getOwnPropertyDescriptor(i, t))
           }), r))
         }
-      }), P(f.L.PRIMARY)
+      }), v(p.L.PRIMARY)
     }
-  }), (0, a.jsxs)(s.IX, {
-    transitionState: y,
+  }), (0, a.jsxs)(i.IX, {
+    transitionState: j,
     size: "xl",
-    onClose: async () => await P(),
-    children: [(0, a.jsx)(c.x, {
-      title: j.intl.string(j.t["6S6WCQ"]),
-      subtitle: j.intl.string(j.t.I2BA8P)
-    }), (0, a.jsxs)(l.f, {
-      children: [(0, a.jsx)(g.njP, {
-        selectedItem: C,
+    onClose: async () => await v(),
+    children: [(0, a.jsx)(i.xBx, {
+      title: x.intl.string(x.t["6S6WCQ"]),
+      subtitle: x.intl.string(x.t.I2BA8P)
+    }), (0, a.jsxs)(i.fef, {
+      children: [(0, a.jsx)(o.njP, {
+        selectedItem: N,
         type: "top",
         onItemSelect: t => {
-          w(t), (0, u.ws)({
+          S(t), (0, g.ws)({
             forumDemoId: t
           })
         },
-        className: v.tags,
-        children: O.map((t, e) => (0, a.jsx)(g.njP.Item, {
+        className: h.tags,
+        children: P.map((t, e) => (0, a.jsx)(o.njP.Item, {
           id: e,
           children: t.name
         }, e))
-      }), (0, a.jsx)(p.Z, {
-        id: C
+      }), (0, a.jsx)(d.Z, {
+        id: N
       })]
-    }), S && (0, a.jsx)(o.G, {
-      leading: (0, a.jsx)(g.zxk, {
+    }), y && (0, a.jsx)(i.Go$, {
+      leading: (0, a.jsx)(o.zxk, {
         variant: "secondary",
-        text: j.intl.string(j.t.hvVgAQ),
-        icon: g.Gr1,
+        text: x.intl.string(x.t.hvVgAQ),
+        icon: o.Gr1,
         iconPosition: "end",
         role: "link",
         onClick: () => {
-          open(x.V8)
+          open(m.V8)
         }
       }),
-      actions: k
+      actions: O
     })]
   })
 }

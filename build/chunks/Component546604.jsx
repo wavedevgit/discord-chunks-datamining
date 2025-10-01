@@ -8,8 +8,8 @@ require("./647438.js");
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
   Chunk990547 = require("./990547.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk82659 = require("./82659.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk100527 = require("./100527.js"),
   Chunk213609 = require("./213609.js"),
@@ -31,7 +31,7 @@ function v(e) {
     analyticsLocation: Z,
     guildId: N,
     onClose: O
-  } = e, y = (0, l.e7)([h.Z], () => h.Z.getGuildProduct(v));
+  } = e, y = (0, o.e7)([h.Z], () => h.Z.getGuildProduct(v));
   i()(null != y, "guildProductListing cannot be null"), (0, u.Z)({
     type: s.ImpressionTypes.MODAL,
     name: s.ImpressionNames.GUILD_PRODUCT_LISTING_INFO_MODAL,
@@ -43,13 +43,13 @@ function v(e) {
   });
   let C = null != (t = (0, p.C)(y)) ? t : "",
     I = (0, p.k)(y),
-    L = (0, l.e7)([f.Z], () => f.Z.getGuild(N)),
+    L = (0, o.e7)([f.Z], () => f.Z.getGuild(N)),
     D = (0, _.Z)({
       guildId: N,
       guildProductListingId: v,
       sourceAnalyticsLocations: d.Z.GUILD_PRODUCT_INFO_MODAL
     });
-  return (0, r.jsxs)(o.Modal, {
+  return (0, r.jsxs)(l.Modal, {
     title: y.name,
     subtitle: b.intl.format(b.t.xImSen, {
       productType: C,

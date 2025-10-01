@@ -8,8 +8,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk512722 = require("./512722.js"),
   s = require.n(Chunk512722),
   Chunk990547 = require("./990547.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk82659 = require("./82659.jsx"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk668781 = require("./668781.js"),
@@ -97,11 +97,11 @@ function x(e) {
       transitionState: b,
       onClose: j
     } = e,
-    x = (0, a.e7)([h.Z], () => h.Z.getDevicesForPlatform(v), [v]),
-    I = (0, a.e7)([h.Z], () => h.Z.getLastSelectedDeviceByPlatform(v)),
+    x = (0, c.e7)([h.Z], () => h.Z.getDevicesForPlatform(v), [v]),
+    I = (0, c.e7)([h.Z], () => h.Z.getLastSelectedDeviceByPlatform(v)),
     w = r.useMemo(() => Object.values(x), [x]),
-    N = (0, a.e7)([h.Z], () => h.Z.getFetchingDevices(v)),
-    P = (0, a.e7)([h.Z], () => {
+    N = (0, c.e7)([h.Z], () => h.Z.getFetchingDevices(v)),
+    P = (0, c.e7)([h.Z], () => {
       var e;
       return null == (e = h.Z.getAwaitingRemoteSessionInfo()) ? true : e.deviceId
     }),
@@ -143,7 +143,7 @@ function x(e) {
     onSelectDeviceId: e => {
       D(e), (0, m.bp)(v, e)
     }
-  })), (0, i.jsx)(c.Modal, {
+  })), (0, i.jsx)(a.Modal, {
     title: n,
     subtitle: l,
     actions: d,

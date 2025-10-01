@@ -9,8 +9,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk990547 = require("./990547.js"),
   Chunk311570 = require("./311570.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk704215 = require("./704215.js"),
-  Chunk257465 = require("./257465.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk596454 = require("./596454.jsx"),
   Chunk100527 = require("./100527.js"),
@@ -82,10 +82,10 @@ let M = 190,
       message: i,
       onRedeem: a,
       onClose: o,
-      buttonUseState: l = "activate",
+      buttonUseState: s = "activate",
       source: u
     } = e, d = m.Z.getChannel(t);
-    null != d && ((0, _.Q3)(s.z.CONFETTI_POTION_UPSELL, {
+    null != d && ((0, _.Q3)(l.z.CONFETTI_POTION_UPSELL, {
       dismissAction: N.L.INDIRECT_ACTION
     }), (0, c.ZDy)(async () => {
       let {
@@ -97,7 +97,7 @@ let M = 190,
         onRedeem: a,
         onUnmount: o,
         source: u,
-        buttonUseState: l
+        buttonUseState: s
       }))
     }, {
       modalKey: U
@@ -109,14 +109,14 @@ function B(e) {
     transitionState: t,
     channel: n,
     message: o,
-    onRedeem: s,
+    onRedeem: l,
     onUnmount: u,
     buttonUseState: d,
     source: f
   } = e;
   (0, i.useEffect)(() => u, [u]);
   let _ = (0, i.useCallback)(() => ((0, c.Mr3)(U), Promise.resolve()), []);
-  return (0, r.jsx)(l.IX, {
+  return (0, r.jsx)(s.IX, {
     transitionState: t,
     onClose: _,
     trackingProps: {
@@ -130,7 +130,7 @@ function B(e) {
     children: (0, r.jsx)(Z, {
       channel: n,
       message: o,
-      onRedeem: s,
+      onRedeem: l,
       buttonUseState: d
     })
   })

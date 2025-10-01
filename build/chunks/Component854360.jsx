@@ -5,8 +5,8 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk82659 = require("./82659.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk749210 = require("./749210.js"),
   Chunk910693 = require("./910693.js"),
@@ -77,7 +77,7 @@ function m(e) {
   }), {
     isModReportClosed: S,
     isModReport: P
-  } = (0, i.cj)([d.Z], () => {
+  } = (0, o.cj)([d.Z], () => {
     let e = d.Z.getChannel(y);
     return {
       isModReportClosed: null == e ? true : e.isArchivedThread(),
@@ -93,7 +93,7 @@ function m(e) {
   }, [t, n.id, v, C, y, M, j]), I = l.useCallback(e => {
     h(e)
   }, []);
-  return null != y && P ? (0, r.jsx)(o.Modal, E(p({}, j), {
+  return null != y && P ? (0, r.jsx)(i.Modal, E(p({}, j), {
     title: g.intl.formatToPlainString(g.t["1Ie87u"], {
       user: n.username
     }),

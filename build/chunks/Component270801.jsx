@@ -1,26 +1,24 @@
 /** Chunk was on 32202 **/
 /** chunk id: 270801, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => u
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk257465 = require("./257465.jsx"),
-  Chunk369585 = require("./369585.jsx"),
-  Chunk103866 = require("./103866.jsx"),
+var Chunk793030 = require("./793030.js"),
   Chunk481060 = require("./481060.js"),
   Chunk313201 = require("./313201.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk881053 = require("./881053.js");
-let d = () => require.e("49812").then(require.t.bind(require, 48603, 19)).then(e => {
+let c = () => require.e("49812").then(require.t.bind(require, 48603, 19)).then(e => {
     let {
       default: t
     } = e;
     return t
   }),
-  p = e => {
+  u = e => {
     var t, n;
-    let p = (0, s.Dt)();
+    let u = (0, a.Dt)();
     return (0, r.jsxs)(i.IX, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -41,34 +39,34 @@ let d = () => require.e("49812").then(require.t.bind(require, 48603, 19)).then(e
     }({}, e), n = n = {
       size: "sm",
       children: [(0, r.jsx)("div", {
-        className: u.animationContainer,
-        children: (0, r.jsx)(o.Fmz, {
-          importData: d,
-          className: u.animationMiddle
+        className: s.animationContainer,
+        children: (0, r.jsx)(l.Fmz, {
+          importData: c,
+          className: s.animationMiddle
         })
-      }), (0, r.jsx)(a.f, {
+      }), (0, r.jsx)(i.fef, {
         children: (0, r.jsxs)("div", {
-          className: u.manaContainer,
-          children: [(0, r.jsx)(o.X6q, {
+          className: s.manaContainer,
+          children: [(0, r.jsx)(l.X6q, {
             variant: "heading-lg/semibold",
-            className: u.header,
-            id: p,
-            children: c.intl.format(c.t.z9qozM, {
+            className: s.header,
+            id: u,
+            children: o.intl.format(o.t.z9qozM, {
               guildName: e.guildName
             })
-          }), (0, r.jsx)(o.Text, {
+          }), (0, r.jsx)(l.Text, {
             variant: "text-sm/medium",
             color: "header-secondary",
-            children: c.intl.string(c.t.nwpqyc)
+            children: o.intl.string(o.t.nwpqyc)
           })]
         })
-      }), (0, r.jsx)(l.G, {
+      }), (0, r.jsx)(i.Go$, {
         actions: [{
           variant: "primary",
           onClick: () => {
             e.onAccept(), e.onClose()
           },
-          text: c.intl.string(c.t.NuzmOD)
+          text: o.intl.string(o.t.NuzmOD)
         }],
         actionsFullWidth: true
       })]

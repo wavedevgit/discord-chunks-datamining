@@ -5,7 +5,7 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk103866 = require("./103866.jsx"),
+var Chunk793030 = require("./793030.js"),
   Chunk481060 = require("./481060.js"),
   Chunk697674 = require("./697674.jsx"),
   Chunk345262 = require("./345262.js"),
@@ -26,7 +26,7 @@ let c = e => {
       variant: "heading-lg/semibold",
       className: o.heading,
       children: d
-    }), (0, a.jsx)(r.f, {
+    }), (0, a.jsx)(r.fef, {
       children: t
     }), (0, a.jsx)("div", {
       className: o.footerSpacer

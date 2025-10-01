@@ -1,15 +1,13 @@
 /** Chunk was on 43525 **/
 /** chunk id: 7225, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  default: () => w
+  default: () => v
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk312568 = require("./312568.jsx"),
-  Chunk257465 = require("./257465.jsx"),
-  Chunk213734 = require("./213734.jsx"),
-  Chunk37148 = require("./37148.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk728345 = require("./728345.js"),
   Chunk812206 = require("./812206.js"),
@@ -23,82 +21,82 @@ var Chunk951288 = require("./951288.js"),
   Chunk979007 = require("./979007.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk465103 = require("./465103.js"),
-  Chunk525751 = require("./525751.js");
+  Chunk325380 = require("./325380.js");
 
-function w(t) {
+function v(t) {
   let {
     onClose: e,
     transitionState: i,
-    appId: w,
-    guildId: Z
-  } = t, y = (0, c.e7)([u.Z], () => u.Z.getApplication(w), [w]), [O, P] = r.useState(() => u.Z.isFetchingApplication(w) ? {
+    appId: v,
+    guildId: w
+  } = t, C = (0, s.e7)([p.Z], () => p.Z.getApplication(v), [v]), [Z, y] = r.useState(() => p.Z.isFetchingApplication(v) ? {
     status: 1
   } : {
     status: 0
   });
   r.useEffect(() => {
-    0 === O.status && (P({
+    0 === Z.status && (y({
       status: 1
-    }), d.ZP.fetchApplication(w).then(() => {
-      P({
+    }), l.ZP.fetchApplication(v).then(() => {
+      y({
         status: 2
       })
     }).catch(t => {
-      P({
+      y({
         status: 3,
         error: t.message
       })
     }))
-  }, [w, O.status]);
+  }, [v, Z.status]);
   let {
-    subscriptions: T,
-    otps: A
-  } = (0, h.q)(w);
-  if (null == y) return null;
-  let I = j.intl.formatToPlainString(j.t.XDRjs7, {
-      appName: y.name
+    subscriptions: O,
+    otps: P
+  } = (0, x.q)(v);
+  if (null == C) return null;
+  let T = m.intl.formatToPlainString(m.t.XDRjs7, {
+      appName: C.name
     }),
-    U = (0, n.jsx)("div", {
-      className: v.icon,
-      children: (0, n.jsx)(_.Z, {})
+    A = (0, n.jsx)("div", {
+      className: b.icon,
+      children: (0, n.jsx)(d.Z, {})
     }),
-    k = x.wS ? (0, n.jsx)(p.hU, {
-      "aria-label": j.intl.string(j.t.WqhZsr),
-      icon: () => (0, n.jsx)(p.xPt, {
+    I = u.wS ? (0, n.jsx)(a.hU, {
+      "aria-label": m.intl.string(m.t.WqhZsr),
+      icon: () => (0, n.jsx)(a.xPt, {
         size: "sm"
       }),
       onClick: () => {
-        let t = "".concat(location.protocol, "//").concat(location.host).concat(m.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(w, b.GlobalDiscoveryAppsSections.STORE));
-        (0, x.JG)(t, () => (0, p.showToast)((0, p.createToast)(j.intl.string(j.t["L/PwZW"]), p.ToastType.SUCCESS))), (0, f.X)(w, f.B.STORE_MODAL)
+        let t = "".concat(location.protocol, "//").concat(location.host).concat(S.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(v, g.GlobalDiscoveryAppsSections.STORE));
+        (0, u.JG)(t, () => (0, a.showToast)((0, a.createToast)(m.intl.string(m.t["L/PwZW"]), a.ToastType.SUCCESS))), (0, _.X)(v, _.B.STORE_MODAL)
       },
       variant: "icon-only"
     }) : true;
-  return (0, n.jsxs)(o.IX, {
+  return (0, n.jsxs)(c.IX, {
     transitionState: i,
-    "aria-label": I,
+    "aria-label": T,
     onClose: e,
     size: "xl",
-    children: [(0, n.jsx)(l.x, {
-      leading: U,
-      title: I,
-      trailing: k
-    }), (0, n.jsx)(s.Z, {
+    children: [(0, n.jsx)(c.xBx, {
+      leading: A,
+      title: T,
+      trailing: I
+    }), (0, n.jsx)(o.Z, {
       children: (0, n.jsx)("main", {
-        className: C.bodyInner,
-        children: (0, n.jsx)(S.AF, {
-          app: y,
-          guildId: Z,
-          subscriptions: T,
-          otps: A
+        className: j.bodyInner,
+        children: (0, n.jsx)(f.AF, {
+          app: C,
+          guildId: w,
+          subscriptions: O,
+          otps: P
         })
       })
-    }), (0, n.jsx)(a.m, {
-      children: (0, n.jsx)(p.Text, {
+    }), (0, n.jsx)(c.mzw, {
+      children: (0, n.jsx)(a.Text, {
         variant: "text-md/normal",
-        children: null != y.termsOfServiceUrl || null != y.privacyPolicyUrl ? (0, n.jsx)(g.Z, {
-          termsOfServiceUrl: y.termsOfServiceUrl,
-          privacyPolicyUrl: y.privacyPolicyUrl
-        }) : j.intl.string(j.t["3ZY+0N"])
+        children: null != C.termsOfServiceUrl || null != C.privacyPolicyUrl ? (0, n.jsx)(h.Z, {
+          termsOfServiceUrl: C.termsOfServiceUrl,
+          privacyPolicyUrl: C.privacyPolicyUrl
+        }) : m.intl.string(m.t["3ZY+0N"])
       })
     })]
   })

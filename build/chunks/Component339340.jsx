@@ -7,9 +7,9 @@ require.d(exports, {
 }), require("./388685.js"), require("./704826.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk399606 = require("./399606.js"),
   Chunk343817 = require("./343817.js"),
-  Chunk667202 = require("./667202.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk787014 = require("./787014.js"),
   Chunk904245 = require("./904245.js"),
@@ -34,7 +34,7 @@ function S(e) {
     transitionState: n,
     sourceAnalyticsLocations: S,
     onClose: A
-  } = e, C = (0, a.e7)([d.Z], () => d.Z.getChannelStatus(t)), N = (0, a.e7)([m.Z], () => m.Z.getMediaSessionId()), [R, P] = i.useState(null != C ? C : ""), [w, D] = i.useState(false), [L, x] = i.useState(null), j = (0, a.e7)([g.default], () => g.default.getCurrentUser()), M = R.length > T;
+  } = e, C = (0, o.e7)([d.Z], () => d.Z.getChannelStatus(t)), N = (0, o.e7)([m.Z], () => m.Z.getMediaSessionId()), [R, P] = i.useState(null != C ? C : ""), [w, D] = i.useState(false), [L, x] = i.useState(null), j = (0, o.e7)([g.default], () => g.default.getCurrentUser()), M = R.length > T;
   i.useEffect(() => {
     E.default.track(b.rMx.OPEN_MODAL, {
       type: "Voice Channel Topic Modal",
@@ -43,7 +43,7 @@ function S(e) {
     })
   }, [t.guild_id, S]);
   let k = e => {
-      x(new o.Hx(e, e.status).getAnyErrorMessage())
+      x(new s.Hx(e, e.status).getAnyErrorMessage())
     },
     U = e => {
       let {
@@ -116,7 +116,7 @@ function S(e) {
         children: L
       }) : null]
     });
-  return (0, r.jsx)(s.ExpressiveModal, {
+  return (0, r.jsx)(a.ExpressiveModal, {
     transitionState: n,
     onClose: A,
     graphic: {

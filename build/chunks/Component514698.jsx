@@ -5,8 +5,8 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk442837 = require("./442837.js"),
-  Chunk82659 = require("./82659.jsx"),
+var Chunk793030 = require("./793030.js"),
+  Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk933557 = require("./933557.js"),
   Chunk592125 = require("./592125.js"),
@@ -32,9 +32,9 @@ function u(t) {
       }
       return o
     }(t, ["onConfirm", "channelId"]);
-  let O = (0, o.e7)([a.Z], () => null != p ? a.Z.getChannel(p) : null),
+  let O = (0, i.e7)([a.Z], () => null != p ? a.Z.getChannel(p) : null),
     f = (0, l.ZP)(O, true);
-  return (0, n.jsx)(i.Modal, (e = function(t) {
+  return (0, n.jsx)(o.Modal, (e = function(t) {
     for (var e = 1; e < arguments.length; e++) {
       var r = null != arguments[e] ? arguments[e] : {},
         n = Object.keys(r);

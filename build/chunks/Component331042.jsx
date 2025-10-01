@@ -7,8 +7,8 @@ var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk238651 = require("./238651.js"),
   Chunk979554 = require("./979554.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk399606 = require("./399606.js"),
-  Chunk667202 = require("./667202.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk100527 = require("./100527.js"),
   Chunk906732 = require("./906732.jsx"),
@@ -39,7 +39,7 @@ let P = t => {
     overrideDescription: k,
     shouldShowPromotionalExperience: w,
     purchaseType: y = N.o8.FIAT
-  } = t, b = (0, o.e7)([p.Z], () => p.Z.purchases), D = (0, E.o)(n, b), S = (0, T.W)(n, D), {
+  } = t, b = (0, s.e7)([p.Z], () => p.Z.purchases), D = (0, E.o)(n, b), S = (0, T.W)(n, D), {
     analyticsLocations: g
   } = (0, u.ZP)([...R, c.Z.COLLECTIBLES_COLLECTED_MODAL]), {
     hasRequiredProductItems: B
@@ -127,7 +127,7 @@ let P = t => {
         ref: X,
         className: O.confettiCanvas,
         environment: V
-      }), (0, r.jsx)(s.ExpressiveModal, {
+      }), (0, r.jsx)(o.ExpressiveModal, {
         graphic: {
           type: "dynamic",
           component: i.AX$.COLLECTIBLES_PREVIEW,

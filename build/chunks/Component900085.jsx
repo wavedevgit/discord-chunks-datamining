@@ -7,8 +7,8 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk257465 = require("./257465.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk239091 = require("./239091.js"),
   Chunk134616 = require("./134616.js"),
@@ -266,10 +266,10 @@ class X extends Chunk647438.PureComponent {
       }),
       type: Chunk576855.Z.Types.INLINE,
       children: Chunk388032.intl.format(Chunk388032.t.wukqXV, {
-        userSymbolHook: (e, t) => q(t, h.xQ.USER, L.intl.string(L.t.GQRCGh)),
-        textChannelSymbolHook: (e, t) => q(t, h.xQ.TEXT_CHANNEL, L.intl.string(L.t.wrwhub)),
-        voiceChannelSymbolHook: (e, t) => q(t, h.xQ.VOICE_CHANNEL, L.intl.string(L.t["jz+hJi"])),
-        guildSymbolHook: (e, t) => q(t, h.xQ.GUILD, L.intl.string(L.t.WuwCWl)),
+        userSymbolHook: (e, t) => q(t, f.xQ.USER, L.intl.string(L.t.GQRCGh)),
+        textChannelSymbolHook: (e, t) => q(t, f.xQ.TEXT_CHANNEL, L.intl.string(L.t.wrwhub)),
+        voiceChannelSymbolHook: (e, t) => q(t, f.xQ.VOICE_CHANNEL, L.intl.string(L.t["jz+hJi"])),
+        guildSymbolHook: (e, t) => q(t, f.xQ.GUILD, L.intl.string(L.t.WuwCWl)),
         helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.QUICK_SWITCHER_TUTORIAL)
       })
     })
@@ -286,7 +286,7 @@ class X extends Chunk647438.PureComponent {
     })
   }
   render() {
-    return (0, Chunk951288.jsx)(Chunk257465.IX, {
+    return (0, Chunk951288.jsx)(Chunk793030.IX, {
       "aria-label": Chunk388032.intl.string(Chunk388032.t.ZvKwYW),
       size: "lg",
       transitionState: this.props.transitionState,
@@ -317,11 +317,11 @@ class X extends Chunk647438.PureComponent {
     }), U(this, "focusResult", e => {
       this.state.mouseFocusDisabled || (0, Z.tF)(this.props.results.indexOf(e))
     }), U(this, "selectResult", e => {
-      (0, Z.Se)(e, this.props.queryMode === h.h8.TEXT_CHANNEL)
+      (0, Z.Se)(e, this.props.queryMode === f.h8.TEXT_CHANNEL)
     }), U(this, "handleContextMenu", e => {
       let t = this.props.results[this.props.selectedIndex];
       switch (t.type) {
-        case h.h8.GUILD:
+        case f.h8.GUILD:
           return (0, d.jW)(e, async () => {
             let {
               default: e
@@ -332,8 +332,8 @@ class X extends Chunk647438.PureComponent {
               hideSettings: true
             }))
           });
-        case h.h8.TEXT_CHANNEL:
-        case h.h8.VOICE_CHANNEL:
+        case f.h8.TEXT_CHANNEL:
+        case f.h8.VOICE_CHANNEL:
           let r = t.record,
             l = j.Z.getGuild(r.getGuildId());
           if (null == l) return;
@@ -398,7 +398,7 @@ class X extends Chunk647438.PureComponent {
               })
           }
           break;
-        case h.h8.GROUP_DM:
+        case f.h8.GROUP_DM:
           return (0, d.jW)(e, async () => {
             let {
               default: e
@@ -409,7 +409,7 @@ class X extends Chunk647438.PureComponent {
               onSelect: Z.Cp
             }))
           });
-        case h.h8.USER:
+        case f.h8.USER:
           return (0, d.jW)(e, async () => {
             let {
               default: e
@@ -449,18 +449,18 @@ class X extends Chunk647438.PureComponent {
           return
         }
         case "arrowup":
-          l = (0, h.gJ)(h.a8.UP, l, r);
+          l = (0, f.gJ)(f.a8.UP, l, r);
           break;
         case "arrowdown":
-          l = (0, h.gJ)(h.a8.DOWN, l, r);
+          l = (0, f.gJ)(f.a8.DOWN, l, r);
           break;
         case "n":
           if (!e.ctrlKey) return;
-          l = (0, h.gJ)(h.a8.DOWN, l, r);
+          l = (0, f.gJ)(f.a8.DOWN, l, r);
           break;
         case "p":
           if (!e.ctrlKey) return;
-          l = (0, h.gJ)(h.a8.UP, l, r);
+          l = (0, f.gJ)(f.a8.UP, l, r);
           break;
         default:
           return
@@ -485,11 +485,11 @@ class X extends Chunk647438.PureComponent {
         autoTrackExposure: false
       });
       switch (n.type) {
-        case h.h8.HEADER:
+        case f.h8.HEADER:
           return (0, i.jsx)(A.h4, {
             children: n.record.text
           }, "".concat(n.type, "-").concat(n.record.id));
-        case h.h8.TEXT_CHANNEL:
+        case f.h8.TEXT_CHANNEL:
           return (0, i.jsx)(H, {
             id: this.getRowId(t),
             focused: r >= 0 && t === r,
@@ -500,7 +500,7 @@ class X extends Chunk647438.PureComponent {
             channel: n.record,
             score: l ? n.score : true
           }, "".concat(n.type, "-").concat(n.record.id));
-        case h.h8.VOICE_CHANNEL:
+        case f.h8.VOICE_CHANNEL:
           return (0, i.jsx)(z, {
             id: this.getRowId(t),
             focused: r >= 0 && t === r,
@@ -511,7 +511,7 @@ class X extends Chunk647438.PureComponent {
             channel: n.record,
             score: l ? n.score : true
           }, "".concat(n.type, "-").concat(n.record.id));
-        case h.h8.GUILD:
+        case f.h8.GUILD:
           return (0, i.jsx)(W, {
             id: this.getRowId(t),
             focused: r >= 0 && t === r,
@@ -522,7 +522,7 @@ class X extends Chunk647438.PureComponent {
             guild: n.record,
             score: l ? n.score : true
           }, "".concat(n.type, "-").concat(n.record.id));
-        case h.h8.USER:
+        case f.h8.USER:
           return (0, i.jsx)(Y, {
             id: this.getRowId(t),
             focused: r >= 0 && t === r,
@@ -534,7 +534,7 @@ class X extends Chunk647438.PureComponent {
             comparator: n.comparator,
             score: l ? n.score : true
           }, "".concat(n.type, "-").concat(n.record.id));
-        case h.h8.GROUP_DM:
+        case f.h8.GROUP_DM:
           return (0, i.jsx)(K, {
             id: this.getRowId(t),
             focused: r >= 0 && t === r,
@@ -545,7 +545,7 @@ class X extends Chunk647438.PureComponent {
             channel: n.record,
             score: l ? n.score : true
           }, "".concat(n.type, "-").concat(n.record.id));
-        case h.h8.APPLICATION:
+        case f.h8.APPLICATION:
           return (0, i.jsx)(A.Mx, {
             id: this.getRowId(t),
             focused: r >= 0 && t === r,
@@ -554,7 +554,7 @@ class X extends Chunk647438.PureComponent {
             onFocus: this.focusNode,
             application: n.record
           }, "".concat(n.type, "-").concat(n.record.id));
-        case h.h8.LINK:
+        case f.h8.LINK:
           return (0, i.jsx)(A.rU, {
             focused: r >= 0 && t === r,
             onClick: () => this.selectResult(n),
@@ -565,7 +565,7 @@ class X extends Chunk647438.PureComponent {
             score: l ? n.score : true,
             id: this.getRowId(t)
           }, "".concat(n.type, "-").concat(n.record.id));
-        case h.h8.IN_APP_NAVIGATION:
+        case f.h8.IN_APP_NAVIGATION:
           return (0, i.jsx)(A.s8, {
             focused: r >= 0 && t === r,
             onClick: () => this.selectResult(n),
@@ -588,7 +588,7 @@ class X extends Chunk647438.PureComponent {
 }
 
 function Q(e) {
-  let t = (0, s.cj)([T.Z], () => T.Z.getProps()),
+  let t = (0, c.cj)([T.Z], () => T.Z.getProps()),
     n = (0, O.Pt)(),
     r = D.Z.useExperiment({
       location: "QuickSwitcher"

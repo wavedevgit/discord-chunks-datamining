@@ -1,3 +1,3 @@
 /** Chunk was on 52334 **/
-/** chunk id: 636430, original params: c (module,exports,require) **/
-module.exports = JSON.parse('{"0vTx7u":"Re\xeencarcă","hDvmYG":"Re\xeencarcă"}')
+/** chunk id: 636430, original params: e (module,exports,require) **/
+module.exports = JSON.parse('{"b7Oqdn":"Alege o altă metodă","ar3a3t":"Folosim informațiile transmise doar pentru a-ți confirma grupa de v\xe2rstă, apoi le ștergem.","0vTx7u":"Re\xeencarcă","XYYm+/":"Alege o altă metodă pentru a-ți verifica v\xe2rsta","rVLCwM":"Alege o altă metodă","RpMIT0":["Folosim grupe de v\xe2rstă pentru a oferi acces la anumite experiențe. ",[8,"$link",["Află mai multe"],[[1,"handleOnHelpUrlHook"]]]],"eJmat7":"De obicei este cea mai rapidă variantă și este total automată. N-ai nevoie dec\xe2t de o cameră.","2yLvkZ":"Fă-ți un selfie video","ZdmRwc":"Ai nevoie de permisul de conducere, pașaport sau alt act de identitate. Apoi, de un selfie foto pentru a confirma că ești tu.","dwkwo6":"Scanează-ți actul de identitate","cR6339":"Nu sunt disponibile metode de verificare a v\xe2rstei. S-ar putea să fie o eroare.","hDvmYG":"Re\xeencarcă"}')

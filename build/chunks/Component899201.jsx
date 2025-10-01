@@ -10,8 +10,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk218887 = require("./218887.js"),
   o = require.n(Chunk218887),
   Chunk990547 = require("./990547.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk82659 = require("./82659.jsx"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk493683 = require("./493683.js"),
@@ -69,7 +69,7 @@ function B(e) {
       }
       return a
     }(e, ["applicationId", "mediaUrl", "onClose", "transitionState"]);
-  let _ = (0, d.e7)([F.ZP], () => F.ZP.getCurrentEmbeddedActivity());
+  let _ = (0, u.e7)([F.ZP], () => F.ZP.getCurrentEmbeddedActivity());
   (0, h.Z)({
     type: c.ImpressionTypes.MODAL,
     name: c.ImpressionNames.ACTIVITY_SHARE_MOMENT_MODAL,
@@ -78,7 +78,7 @@ function B(e) {
       activity_session_id: null == _ ? true : _.compositeInstanceId
     }
   });
-  let [N] = (0, w.Z)([r]), x = (0, d.e7)([A.default], () => A.default.getCurrentUser()), [D, M] = a.useState(""), [R, B] = a.useState([]), [Q, Y] = a.useState(null), [W, X] = a.useState(null), [$, J] = a.useState(false);
+  let [N] = (0, w.Z)([r]), x = (0, u.e7)([A.default], () => A.default.getCurrentUser()), [D, M] = a.useState(""), [R, B] = a.useState([]), [Q, Y] = a.useState(null), [W, X] = a.useState(null), [$, J] = a.useState(false);
   a.useEffect(() => {
     (async () => {
       let e = k.Z.toURLSafe(l);
@@ -94,7 +94,7 @@ function B(e) {
       }, a.readAsDataURL(i)
     })()
   }, [l, Y]);
-  let ee = (0, d.Wu)([C.Z, j.Z], () => C.Z.getInviteSuggestionRows().filter(e => e.type === U.bm.FRIEND || e.type === U.bm.DM || j.Z.can(G.Plq.ATTACH_FILES, e.item)));
+  let ee = (0, u.Wu)([C.Z, j.Z], () => C.Z.getInviteSuggestionRows().filter(e => e.type === U.bm.FRIEND || e.type === U.bm.DM || j.Z.can(G.Plq.ATTACH_FILES, e.item)));
   a.useEffect(() => {
     (0, g.x)({
       omitUserIds: new Set,
@@ -197,7 +197,7 @@ function B(e) {
       }
       et()
     }, [_, N, r, R, Q, et, x]);
-  return null == W ? (0, i.jsx)(p.$jN, {}) : (0, i.jsx)(u.Modal, (t = function(e) {
+  return null == W ? (0, i.jsx)(p.$jN, {}) : (0, i.jsx)(d.Modal, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         i = Object.keys(n);

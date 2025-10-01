@@ -228,7 +228,7 @@ class F extends(r = Chunk647438.Component) {
     null != module && null != exports && exports.indexOf(module) >= 0 && this.scrollToChannel(module), this.reportAnalytics()
   }
   shouldComponentUpdate(e) {
-    return !(0, f.Z)(this.props, e, ["children"])
+    return !(0, h.Z)(this.props, e, ["children"])
   }
   componentDidUpdate(e) {
     let {
@@ -278,8 +278,8 @@ class F extends(r = Chunk647438.Component) {
           }
           return i
         }(r, ["ref", "role"]);
-        return (0, i.jsx)(h.Wdt, {
-          children: r => (0, i.jsx)(h.aVo, U({
+        return (0, i.jsx)(f.Wdt, {
+          children: r => (0, i.jsx)(f.aVo, U({
             fade: true,
             innerRole: o,
             innerAriaLabel: M.intl.string(M.t.YUU0RE),
@@ -396,11 +396,11 @@ class F extends(r = Chunk647438.Component) {
           popoutAlign: "left",
           className: L.privateChannelRecipientsInviteButtonIconContainer,
           iconClassName: L.privateChannelRecipientsInviteButtonIcon,
-          icon: h.BRu,
+          icon: f.BRu,
           subscribeToGlobalHotkey: true
         }), "side" === r && (0, i.jsx)(S.l, {
           popoutAlign: "left",
-          icon: h.kL_,
+          icon: f.kL_,
           text: M.intl.string(M.t["6Urw1t"]),
           size: "sm",
           subscribeToGlobalHotkey: true
@@ -430,14 +430,14 @@ k(F, "defaultProps", {
 let V = e => {
   let {
     density: t
-  } = (0, h.TCT)(), {
+  } = (0, f.TCT)(), {
     version: n,
     theme: r,
     children: o,
     showDMHeader: a,
     listScrollerRef: s,
     createDMCTAButtonVariant: c
-  } = e, f = l.Children.count(o), g = Z.Z.getMutablePrivateChannels(), _ = (0, I.k1)(g), y = (0, p.Wu)([A.Z, P.Z, N.Z], () => {
+  } = e, h = l.Children.count(o), g = Z.Z.getMutablePrivateChannels(), _ = (0, I.k1)(g), y = (0, p.Wu)([A.Z, P.Z, N.Z], () => {
     let e = A.Z.getPrivateChannelIds();
     return (0, I.tU)(e, [P.Z, N.Z])
   }, []);
@@ -483,7 +483,7 @@ let V = e => {
     isEnabled: S,
     scrollToStart: L,
     scrollToEnd: k,
-    defaultFocused: (f + +!!a).toString(),
+    defaultFocused: (h + +!!a).toString(),
     setFocus: M
   });
   return (0, i.jsx)(O.Gt, {

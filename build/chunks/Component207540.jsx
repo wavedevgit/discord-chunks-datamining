@@ -5,8 +5,8 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk82659 = require("./82659.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk933557 = require("./933557.js"),
   Chunk156699 = require("./156699.js"),
@@ -28,9 +28,9 @@ let v = e => {
     onClose: n,
     onConfirm: v,
     transitionState: C
-  } = e, P = (0, o.ZP)(t, true), S = t.id, I = t.isForumPost(), T = (0, r.e7)([Z.Z], () => Z.Z.getGuild(t.getGuildId())), D = (0, N.u1)(S), {
+  } = e, P = (0, o.ZP)(t, true), S = t.id, I = t.isForumPost(), T = (0, u.e7)([Z.Z], () => Z.Z.getGuild(t.getGuildId())), D = (0, N.u1)(S), {
     isSubscriptionGated: y
-  } = (0, E.Z)(t.id), b = (0, f.Z)(T, t), [w, G] = i.useState(), A = (0, r.e7)([m.default], () => t.isOwner(m.default.getId()), [t]), U = (0, r.e7)([O.Z], () => O.Z.can(t.isThread() ? p.Plq.MANAGE_THREADS : p.Plq.MANAGE_CHANNELS, t), [t]), j = (0, r.e7)([_.Z], () => {
+  } = (0, E.Z)(t.id), b = (0, f.Z)(T, t), [w, G] = i.useState(), A = (0, u.e7)([m.default], () => t.isOwner(m.default.getId()), [t]), U = (0, u.e7)([O.Z], () => O.Z.can(t.isThread() ? p.Plq.MANAGE_THREADS : p.Plq.MANAGE_CHANNELS, t), [t]), j = (0, u.e7)([_.Z], () => {
     var e;
     return null != (e = _.Z.getCount(t.id)) ? e : 0
   }, [t.id]), L = I && (U || A && j < 1), V = D.length > 0 && (t.type === p.d4z.GUILD_VOICE || t.type === p.d4z.GUILD_STAGE_VOICE);
@@ -77,7 +77,7 @@ let v = e => {
           onClick: i
         })
     }
-    return (0, l.jsx)(u.Modal, {
+    return (0, l.jsx)(r.Modal, {
       title: h.intl.string(h.t["TY/V+P"]),
       onClose: n,
       subtitle: e,
@@ -121,7 +121,7 @@ let v = e => {
       channelName: P
     })
   };
-  return (0, l.jsx)(u.Modal, {
+  return (0, l.jsx)(r.Modal, {
     size: "sm",
     onClose: n,
     transitionState: C,

@@ -5,8 +5,8 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk442837 = require("./442837.js"),
-  Chunk82659 = require("./82659.jsx"),
+var Chunk793030 = require("./793030.js"),
+  Chunk442837 = require("./442837.js"),
   Chunk87051 = require("./87051.js"),
   Chunk9156 = require("./9156.js"),
   Chunk621600 = require("./621600.js"),
@@ -16,8 +16,8 @@ let c = t => {
     onClose: i,
     channelId: n,
     transitionState: c
-  } = t, o = (0, r.e7)([a.ZP], () => a.ZP.isChannelMuted(null, n));
-  return (0, e.jsx)(l.Modal, {
+  } = t, o = (0, l.e7)([a.ZP], () => a.ZP.isChannelMuted(null, n));
+  return (0, e.jsx)(r.Modal, {
     transitionState: c,
     onClose: i,
     title: o ? d.intl.string(d.t["4rg7cH"]) : d.intl.string(d.t.uAmAiI),

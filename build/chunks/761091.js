@@ -33,10 +33,10 @@ function O(e) {
     S = [],
     P = e.features.has(_.oNc.HUB),
     I = e.features.has(_.oNc.COMMUNITY),
-    N = (0, m.l)(!(0, f.r1)(e.id)),
+    N = (0, m.l)(!(0, h.r1)(e.id)),
     w = e.features.has(_.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY),
     Z = (0, g.Z)(e.id),
-    T = (0, h.A0)(e.id, "useGuildActionRows"),
+    T = (0, f.A0)(e.id, "useGuildActionRows"),
     A = e.features.has(_.oNc.GAME_SERVERS);
   return P && S.push(b.z.GUILD_HUB_HEADER_OPTIONS), !C && v && x && null != j && j.length > 0 ? S.push(b.z.GUILD_NEW_MEMBER_ACTIONS_PROGRESS_BAR) : e.premiumProgressBarEnabled && S.push(b.z.GUILD_PREMIUM_PROGRESS_BAR), !P && v && S.push(b.z.GUILD_HOME), t && S.push(b.z.GUILD_SCHEDULED_EVENTS), !P && I && N && S.push(b.z.CHANNELS_AND_ROLES), O && S.push(b.z.GUILD_ROLE_SUBSCRIPTIONS), y && S.push(b.z.GUILD_SHOP), (E && (I || w) || n && e.features.has(_.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL)) && S.push(b.z.GUILD_MOD_DASH_MEMBER_SAFETY), Z && S.push(b.z.GUILD_BOOSTS), T && A && S.push(b.z.PORTKEY), S
 }

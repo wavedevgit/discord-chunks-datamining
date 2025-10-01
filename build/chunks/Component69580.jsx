@@ -18,9 +18,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk373793 = require("./373793.js"),
   Chunk243814 = require("./243814.js"),
   Chunk149765 = require("./149765.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk952265 = require("./952265.js"),
-  Chunk257465 = require("./257465.jsx"),
   Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk893776 = require("./893776.js"),
@@ -109,8 +109,8 @@ function eo() {
   let a = !module.search.includes("response_type"),
     [o, c] = Chunk647438.useState(false),
     u = Chunk647438.useRef(false),
-    [d, f] = Chunk647438.useState(null),
-    _ = !Chunk873546.tq && !o && (Chunk120356 || !Chunk314897.default.isAuthenticated());
+    [d, _] = Chunk647438.useState(null),
+    p = !Chunk873546.tq && !o && (Chunk120356 || !Chunk314897.default.isAuthenticated());
   if (Chunk647438.useEffect(() => {
       if (Chunk873546.eL && Chunk120356) {
         let t = new URL("discord://action/oauth2/authorize");
@@ -125,10 +125,10 @@ function eo() {
             search: e.search
           }
         }).then(e => {
-          f(null != e && e)
-        }).catch(() => f(false)).then(() => n.disconnect());
+          _(null != e && e)
+        }).catch(() => _(false)).then(() => n.disconnect());
         else {
-          f(true);
+          _(true);
           let t = new URLSearchParams(e.search);
           n.request(J.Etm.AUTHORIZE, {
             client_id: t.get("client_id"),
@@ -150,7 +150,7 @@ function eo() {
               location: t
             } = e;
             t && (window.location.href = t)
-          }).catch(() => f(false)).then(() => n.disconnect())
+          }).catch(() => _(false)).then(() => n.disconnect())
         }
       }))
     }, [module.search, Chunk120356]), Chunk952265 && false !== Chunk149765) {
@@ -180,7 +180,7 @@ function eo() {
   return (0, Chunk951288.jsx)(Chunk787025.G, {
     removeChildWrapper: true,
     children: (0, Chunk951288.jsx)(es, ea(er({
-      transitionState: Chunk257465.Dv.ENTERED
+      transitionState: Chunk793030.Dvm.ENTERED
     }, exports), {
       showLogout: true,
       isExternalStandaloneOAuthPage: true,
@@ -241,7 +241,7 @@ function el() {
 }
 
 function ec(e) {
-  var t, n, a, o, l, _, p, h;
+  var t, n, a, o, l, f, p, h;
   let y, S, A, N, q, {
       clientId: $,
       responseType: en,
@@ -271,7 +271,7 @@ function ec(e) {
     } = e,
     eC = null != eh ? null == eu ? true : eu.get(eh) : true,
     eN = (0, s.TH)(),
-    eR = (0, f.e7)([C.Z], () => C.Z.hasLoadedExperiments);
+    eR = (0, _.e7)([C.Z], () => C.Z.hasLoadedExperiments);
   i.useEffect(() => {
     D.default.isAuthenticated() && !eR && g.Z.getExperiments()
   }, [eR]);
@@ -577,7 +577,7 @@ function ec(e) {
   }
   let tI = [];
   if (tp && null != eP) {
-    let e = null != (p = null == eP ? true : eP.application.approximate_guild_count) ? p : null == eP || null == (_ = eP.bot) ? true : _.approximate_guild_count;
+    let e = null != (p = null == eP ? true : eP.application.approximate_guild_count) ? p : null == eP || null == (f = eP.bot) ? true : f.approximate_guild_count;
     N = (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(F.Z, {
         application: eP.application,
@@ -638,10 +638,10 @@ function eu(e, t) {
     pathname: o,
     searchParams: s
   } = null != (n = j.Z.toURLSafe(t.location)) ? n : {}, l = j.Z.isDiscordHostname(null != a ? a : null) || window.location.host === a;
-  l && o === J.Z5c.OAUTH2_AUTHORIZED ? (0, _.h7)(e => (0, r.jsx)(X.jO, er({
+  l && o === J.Z5c.OAUTH2_AUTHORIZED ? (0, p.h7)(e => (0, r.jsx)(X.jO, er({
     guild: t.guild,
     application: t.application
-  }, e))) : l && (null == o ? true : o.startsWith(J.Z5c.OAUTH2_ERROR)) ? (0, _.h7)(e => {
+  }, e))) : l && (null == o ? true : o.startsWith(J.Z5c.OAUTH2_ERROR)) ? (0, p.h7)(e => {
     var t, n;
     let i = null != (n = null != (t = null == s ? true : s.get("error_description")) ? t : null == s ? true : s.get("error")) ? n : ee.intl.string(ee.t["mqn87+"]);
     return Array.isArray(i) && (i = i[0]), (0, r.jsx)(q.j, ea(er({}, e), {
@@ -663,7 +663,7 @@ function ed(e, t) {
 }
 
 function ef(e, t) {
-  (0, _.h7)(t => (0, r.jsx)(es, ea(er({}, t, e), {
+  (0, p.h7)(t => (0, r.jsx)(es, ea(er({}, t, e), {
     cancelCompletesFlow: false,
     callback: eu.bind(null, e)
   })), {

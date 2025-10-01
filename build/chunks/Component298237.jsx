@@ -6,8 +6,8 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk990547 = require("./990547.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk82659 = require("./82659.jsx"),
   Chunk390885 = require("./390885.js"),
   Chunk594174 = require("./594174.js"),
   Chunk626135 = require("./626135.js"),
@@ -23,7 +23,7 @@ function y(t) {
   let {
     transitionState: e,
     onClose: n
-  } = t, [y, b] = l.useState(null), [g, T] = l.useState(null), [O, S] = l.useState(false), N = l.useRef(null), v = (0, a.e7)([c.default], () => c.default.getCurrentUser()), h = l.useRef(null);
+  } = t, [y, b] = l.useState(null), [g, T] = l.useState(null), [O, S] = l.useState(false), N = l.useRef(null), v = (0, i.e7)([c.default], () => c.default.getCurrentUser()), h = l.useRef(null);
   l.useEffect(() => {
     u.Z.flowStep(m.MK.ANY, m.FF.AGE_GATE), s.default.track(E.rMx.OPEN_MODAL, {
       type: "Claim Age Gate"
@@ -51,7 +51,7 @@ function y(t) {
   }, [h]);
   return (0, r.jsx)("form", {
     onSubmit: G,
-    children: (0, r.jsx)(i.Modal, {
+    children: (0, r.jsx)(a.Modal, {
       transitionState: e,
       onClose: n,
       title: A.intl.string(A.t.QpSKo6),

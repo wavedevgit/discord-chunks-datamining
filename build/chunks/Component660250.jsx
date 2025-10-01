@@ -5,8 +5,8 @@ require.r(exports), require.d(exports, {
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk82659 = require("./82659.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk959457 = require("./959457.js"),
   Chunk571826 = require("./571826.js"),
@@ -24,7 +24,7 @@ let j = function(e) {
     streamKey: h,
     channelId: m,
     onClose: g
-  } = e, v = (0, c.e7)([s.Z], () => {
+  } = e, v = (0, l.e7)([s.Z], () => {
     var e;
     return null == (e = s.Z.getSecureFramesState(h)) ? true : e.epochAuthenticator
   }), x = (0, d.W)({
@@ -68,7 +68,7 @@ let j = function(e) {
       })
     })]
   });
-  return (0, n.jsx)(l.Modal, (t = function(e) {
+  return (0, n.jsx)(c.Modal, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
         n = Object.keys(r);

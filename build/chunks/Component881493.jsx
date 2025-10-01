@@ -7,8 +7,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
+  Chunk793030 = require("./793030.js"),
   Chunk434333 = require("./434333.jsx"),
-  Chunk82659 = require("./82659.jsx"),
   Chunk74538 = require("./74538.js"),
   Chunk937615 = require("./937615.js"),
   Chunk811334 = require("./811334.jsx"),
@@ -53,7 +53,7 @@ let h = () => {
     intervalType: N,
     intervalCount: j
   } = x, T = (0, Chunk937615.og)("".concat(C), N, j);
-  return (0, Chunk951288.jsxs)(Chunk82659.Modal, {
+  return (0, Chunk951288.jsxs)(Chunk793030.Modal, {
     size: "md",
     transitionState: module,
     title: "".concat(Chunk388032.intl.format(Chunk388032.t.LZunzc, {

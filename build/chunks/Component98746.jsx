@@ -7,8 +7,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk82659 = require("./82659.jsx"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk749210 = require("./749210.js"),
@@ -63,7 +63,7 @@ function C(e) {
   } = e, [E, Z] = l.useState(null != _ ? x : S), [M, w] = l.useState(""), [T, D] = l.useState(null), {
     isModReportClosed: N,
     isModReport: I
-  } = (0, o.cj)([g.Z], () => {
+  } = (0, s.cj)([g.Z], () => {
     let e = g.Z.getChannel(_);
     return {
       isModReportClosed: null == e ? true : e.isArchivedThread(),
@@ -117,7 +117,7 @@ function C(e) {
       username: "@".concat(e)
     })
   })(), H = null == _ ? null : j.intl.string(j.t.pQjhIC);
-  return (0, r.jsx)(s.Modal, {
+  return (0, r.jsx)(o.Modal, {
     onClose: k,
     transitionState: P,
     title: W,

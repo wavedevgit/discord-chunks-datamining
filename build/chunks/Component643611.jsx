@@ -5,8 +5,8 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk82659 = require("./82659.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk933557 = require("./933557.js"),
   Chunk592125 = require("./592125.js"),
@@ -20,7 +20,7 @@ let N = t => {
     guildId: n,
     channel: e,
     onSelectChannel: r
-  } = t, a = (0, i.Wu)([d.ZP], () => d.ZP.getChannels(n)[d.sH].filter(t => {
+  } = t, i = (0, a.Wu)([d.ZP], () => d.ZP.getChannels(n)[d.sH].filter(t => {
     let {
       channel: n
     } = t;
@@ -34,12 +34,12 @@ let N = t => {
   return (0, l.jsx)(u.VcW, {
     required: true,
     value: null == e ? true : e.id,
-    options: a.map(t => ({
+    options: i.map(t => ({
       value: t.id,
       label: (0, s.F6)(t, o.default, j.Z, true)
     })),
     onChange: t => {
-      let n = a.find(n => n.id === t);
+      let n = i.find(n => n.id === t);
       r(null != n ? n : true)
     },
     placeholder: E.intl.string(E.t["N+T69/"])
@@ -55,12 +55,12 @@ function _(t) {
     onEditChannel: j,
     onClose: o,
     transitionState: _
-  } = t, [S, C] = r.useState(n.metadata.channelId), [h, I] = r.useState(null), L = (0, i.e7)([c.Z], () => c.Z.getChannel(S), [S]), g = (0, A.c)(n.type, n, e);
+  } = t, [S, C] = r.useState(n.metadata.channelId), [h, I] = r.useState(null), L = (0, a.e7)([c.Z], () => c.Z.getChannel(S), [S]), g = (0, A.c)(n.type, n, e);
   if (null == g) return null;
   let {
     headerText: T
   } = g;
-  return (0, l.jsx)(a.Modal, {
+  return (0, l.jsx)(i.Modal, {
     onClose: o,
     transitionState: _,
     title: T,

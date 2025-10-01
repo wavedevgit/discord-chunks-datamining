@@ -6,8 +6,8 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk286379 = require("./286379.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk399606 = require("./399606.js"),
-  Chunk667202 = require("./667202.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk797614 = require("./797614.js"),
   Chunk819557 = require("./819557.jsx"),
@@ -30,7 +30,7 @@ function k(n) {
     safetyTipRows: T,
     actionRows: j,
     learnMore: N
-  } = n, f = (0, c.e7)([b.ZP], () => b.ZP.getChannelSafetyWarning(k, p));
+  } = n, f = (0, o.e7)([b.ZP], () => b.ZP.getChannelSafetyWarning(k, p));
   return s.useEffect(() => {
     (0, _.MC)(x.rMx.SAFETY_WARNING_MODAL_VIEWED, {
       channelId: k,
@@ -40,7 +40,7 @@ function k(n) {
     }), l.Z.increment({
       name: i.V.SAFETY_WARNING_MODAL_VIEW
     })
-  }, [k, p, y, f]), (0, a.jsx)(o.ExpressiveModal, {
+  }, [k, p, y, f]), (0, a.jsx)(c.ExpressiveModal, {
     onClose: e,
     transitionState: t,
     graphic: {

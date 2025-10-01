@@ -5,8 +5,8 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk82659 = require("./82659.jsx"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk430824 = require("./430824.js"),
@@ -59,13 +59,13 @@ function v(t) {
     transitionState: n,
     onClose: v,
     analyticsData: N
-  } = t, m = (0, l.e7)([c.Z], () => c.Z.getGuild(e), [e]), E = !!(null == m ? true : m.features.has(h.oNc.INVITES_DISABLED)), [S] = i.useState(false), [C, T] = i.useState(f.Fl), I = (0, l.e7)([O.Z], () => O.Z.getGuildIncident(e)), D = (0, p.BT)(m), A = (0, b.SG)(I) || E, P = (0, b.sN)(I), [w, R] = i.useState(A), [M, k] = i.useState(P), [G, L] = i.useState(false), Z = w !== A || M !== P || G, U = E && !D;
+  } = t, m = (0, a.e7)([c.Z], () => c.Z.getGuild(e), [e]), E = !!(null == m ? true : m.features.has(h.oNc.INVITES_DISABLED)), [S] = i.useState(false), [C, T] = i.useState(f.Fl), I = (0, a.e7)([O.Z], () => O.Z.getGuildIncident(e)), D = (0, p.BT)(m), A = (0, b.SG)(I) || E, P = (0, b.sN)(I), [w, R] = i.useState(A), [M, k] = i.useState(P), [G, L] = i.useState(false), Z = w !== A || M !== P || G, U = E && !D;
   if (null == m) return v(), null;
 
   function K() {
     R(t => !t)
   }
-  return (0, r.jsx)(a.Modal, {
+  return (0, r.jsx)(l.Modal, {
     transitionState: n,
     title: _.intl.string(_.t.oCYAc3),
     actions: [{

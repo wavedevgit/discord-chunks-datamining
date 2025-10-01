@@ -7,8 +7,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
   l = require.n(Chunk512722),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk82659 = require("./82659.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk418632 = require("./418632.jsx"),
   Chunk594174 = require("./594174.js"),
@@ -18,7 +18,7 @@ let g = function(e) {
   let {
     onClose: t,
     transitionState: a
-  } = e, g = (0, s.e7)([d.default], () => d.default.getCurrentUser()), [b, p] = r.useState(false), v = r.useCallback(() => (null == t || t(), Promise.resolve()), [t]), y = r.useCallback(() => {
+  } = e, g = (0, o.e7)([d.default], () => d.default.getCurrentUser()), [b, p] = r.useState(false), v = r.useCallback(() => (null == t || t(), Promise.resolve()), [t]), y = r.useCallback(() => {
     null == t || t(), (0, u.ZDy)(async () => {
       let {
         default: e
@@ -58,7 +58,7 @@ let g = function(e) {
     variant: "primary",
     loading: b
   }], [g, y, k, b]);
-  return (0, i.jsxs)(o.Modal, {
+  return (0, i.jsxs)(s.Modal, {
     title: f.intl.string(f.t.UZLrY2),
     transitionState: a,
     onClose: v,

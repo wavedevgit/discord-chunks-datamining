@@ -9,8 +9,8 @@ var Chunk951288 = require("./951288.js"),
   o = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   l = require.n(Chunk392711),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk82659 = require("./82659.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk224706 = require("./224706.js"),
   Chunk812206 = require("./812206.js"),
@@ -44,7 +44,7 @@ function v(e) {
 let y = e => {
   let {
     game: a
-  } = e, r = (0, g.e7)([p.Z], () => p.Z.getApplication(a.applicationId));
+  } = e, r = (0, s.e7)([p.Z], () => p.Z.getApplication(a.applicationId));
   return (0, t.jsx)(_.ua7, {
     text: a.name,
     children: e => {
@@ -86,9 +86,9 @@ function j(e) {
   (0, d.Z)(a), i.useEffect(() => {
     a.length > 1 && m.Z.getDetectableGamesSupplemental(a)
   }, [a]);
-  let c = (0, g.e7)([f.Z], () => a.some(e => f.Z.isFetching(e))),
-    _ = (0, g.e7)([f.Z], () => a.some(e => f.Z.didFetchingFail(e))),
-    p = (0, g.Wu)([f.Z], () => a.map(e => f.Z.getGame(e)).filter(e => null != e).filter(e => (0, u.z6)(e.applicationId)).slice(0, 10));
+  let c = (0, s.e7)([f.Z], () => a.some(e => f.Z.isFetching(e))),
+    _ = (0, s.e7)([f.Z], () => a.some(e => f.Z.didFetchingFail(e))),
+    p = (0, s.Wu)([f.Z], () => a.map(e => f.Z.getGame(e)).filter(e => null != e).filter(e => (0, u.z6)(e.applicationId)).slice(0, 10));
   return c && !_ ? (0, t.jsxs)("div", {
     children: [(0, t.jsx)("div", {
       className: o()(h.loadingHeading, h.sectionHeader)
@@ -98,7 +98,7 @@ function j(e) {
         className: h.loadingArtwork
       }, e))
     })]
-  }) : !c && 0 === p.length || _ ? null : (0, t.jsx)(s.Modal, {
+  }) : !c && 0 === p.length || _ ? null : (0, t.jsx)(g.Modal, {
     title: I.intl.string(I.t["D+DkEB"]),
     transitionState: n,
     onClose: r,

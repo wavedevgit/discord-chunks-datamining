@@ -9,7 +9,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk913527 = require("./913527.js"),
   i = require.n(Chunk913527),
   Chunk99945 = require("./99945.js"),
-  Chunk82659 = require("./82659.jsx"),
+  Chunk793030 = require("./793030.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk355467 = require("./355467.js"),
@@ -82,7 +82,7 @@ function C() {
   }(Chunk481060);
   return (0, Chunk493773.ZP)(() => {
     b.length < 1 || Chunk913527(b[0].value)
-  }), (0, Chunk951288.jsx)(Chunk82659.Modal, {
+  }), (0, Chunk951288.jsx)(Chunk793030.Modal, {
     transitionState: module,
     title: Chunk388032.intl.string(Chunk388032.t.f3nnBw),
     subtitle: Chunk74538,
@@ -142,7 +142,7 @@ function R() {
         pauseDuration: require
       })
   }
-  return (0, Chunk951288.jsxs)(Chunk82659.Modal, {
+  return (0, Chunk951288.jsxs)(Chunk793030.Modal, {
     title: Chunk388032.intl.string(Chunk388032.t["AnMG5+"]),
     transitionState: module,
     actions: [{

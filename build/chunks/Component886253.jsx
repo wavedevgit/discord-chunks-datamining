@@ -2,16 +2,13 @@
 /** chunk id: 886253, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => v
+  A: () => b
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk442837 = require("./442837.js"),
+var Chunk793030 = require("./793030.js"),
+  Chunk442837 = require("./442837.js"),
   Chunk312568 = require("./312568.jsx"),
-  Chunk257465 = require("./257465.jsx"),
-  Chunk82659 = require("./82659.jsx"),
-  Chunk213734 = require("./213734.jsx"),
-  Chunk37148 = require("./37148.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk812206 = require("./812206.js"),
   Chunk370210 = require("./370210.js"),
@@ -23,90 +20,90 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk186812 = require("./186812.js"),
-  Chunk525751 = require("./525751.js");
+  Chunk325380 = require("./325380.js");
 
-function v(e) {
+function b(e) {
   let {
     appId: t,
     skuId: n,
-    transitionState: v,
-    onClose: I,
-    children: T,
-    footer: S
-  } = e, A = (0, i.e7)([d.Z, f.Z], () => {
+    transitionState: b,
+    onClose: y,
+    children: O,
+    footer: v
+  } = e, I = (0, a.e7)([l.Z, c.Z], () => {
     var e;
-    return null != (e = d.Z.getApplication(t)) ? e : f.Z.getApplicationRecord(t)
+    return null != (e = l.Z.getApplication(t)) ? e : c.Z.getApplicationRecord(t)
   }, [t]), {
-    data: C
-  } = (0, _.Z)(n);
-  if (null == A) return null;
-  let N = (0, h.y)(A, 25),
+    data: T
+  } = (0, u.Z)(n);
+  if (null == I) return null;
+  let S = (0, f.y)(I, 25),
     {
-      termsOfServiceUrl: R,
-      privacyPolicyUrl: P
-    } = A;
-  if ((null == C ? true : C.applicationId) !== t) return (0, r.jsx)(s.Modal, {
+      termsOfServiceUrl: A,
+      privacyPolicyUrl: C
+    } = I;
+  if ((null == T ? true : T.applicationId) !== t) return (0, r.jsx)(i.Modal, {
     actions: [{
-      onClick: I,
-      text: b.intl.string(b.t.BddRzc),
+      onClick: y,
+      text: m.intl.string(m.t.BddRzc),
       variant: "primary"
     }],
-    onClose: I,
+    onClose: y,
     size: "sm",
-    transitionState: v,
-    title: b.intl.string(b.t["0Bf80N"]),
-    children: (0, r.jsx)(u.Text, {
+    transitionState: b,
+    title: m.intl.string(m.t["0Bf80N"]),
+    children: (0, r.jsx)(s.Text, {
       variant: "text-md/normal",
       color: "header-secondary",
-      className: y.unavailableBody,
-      children: b.intl.string(b.t.omH3bm)
+      className: g.unavailableBody,
+      children: m.intl.string(m.t.omH3bm)
     })
   });
-  let w = null != N ? (0, r.jsx)("img", {
-    src: N.href,
+  let N = null != S ? (0, r.jsx)("img", {
+    src: S.href,
     alt: "",
-    className: y.appIcon
+    className: g.appIcon
   }) : true;
-  return (0, r.jsxs)(o.IX, {
-    onClose: I,
+  return (0, r.jsxs)(i.IX, {
+    onClose: y,
     size: "lg",
-    transitionState: v,
-    children: [(0, r.jsx)(c.x, {
-      leading: w,
-      title: A.name
-    }), (0, r.jsx)(a.Z, {
+    transitionState: b,
+    children: [(0, r.jsx)(i.xBx, {
+      leading: N,
+      title: I.name
+    }), (0, r.jsx)(o.Z, {
       children: (0, r.jsx)("main", {
-        className: O.bodyInner,
-        children: T
+        className: E.bodyInner,
+        children: O
       })
-    }), (0, r.jsx)(l.m, {
+    }), (0, r.jsx)(i.mzw, {
       children: (0, r.jsxs)("div", {
-        className: y.footer,
-        children: [null != R || null != P ? (0, r.jsx)(u.Text, {
+        className: g.footer,
+        children: [null != A || null != C ? (0, r.jsx)(s.Text, {
           color: "header-primary",
           variant: "text-sm/normal",
-          children: (0, r.jsx)(g.Z, {
-            termsOfServiceUrl: R,
-            privacyPolicyUrl: P
+          children: (0, r.jsx)(p.Z, {
+            termsOfServiceUrl: A,
+            privacyPolicyUrl: C
           })
-        }) : (0, r.jsx)(u.Text, {
+        }) : (0, r.jsx)(s.Text, {
           color: "header-primary",
           variant: "text-xs/normal",
-          children: b.intl.string(b.t["3ZY+0N"])
+          children: m.intl.string(m.t["3ZY+0N"])
         }), (0, r.jsxs)("div", {
-          className: y.footerButtons,
-          children: [p.wS && (0, r.jsx)(u.hU, {
-            "aria-label": b.intl.string(b.t.WqhZsr),
-            icon: () => (0, r.jsx)(u.xPt, {
+          className: g.footerButtons,
+          children: [d.wS && (0, r.jsx)(s.hU, {
+            "aria-label": m.intl.string(m.t.WqhZsr),
+            icon: () => (0, r.jsx)(s.xPt, {
               size: "xs",
               color: "currentColor"
             }),
             onClick: () => {
-              let e = "".concat(location.protocol, "//").concat(location.host).concat(E.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(t, n));
-              (0, p.JG)(e, () => (0, u.showToast)((0, u.createToast)(b.intl.string(b.t["L/PwZW"]), u.ToastType.SUCCESS))), (0, m.X)(t, m.B.DETAILS_MODAL, n)
+              let e = "".concat(location.protocol, "//").concat(location.host).concat(h.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(t, n));
+              (0, d.JG)(e, () => (0, s.showToast)((0, s.createToast)(m.intl.string(m.t["L/PwZW"]), s.ToastType.SUCCESS))), (0, _.X)(t, _.B.DETAILS_MODAL, n)
             },
             variant: "icon-only"
-          }), S]
+          }), v]
         })]
       })
     })]

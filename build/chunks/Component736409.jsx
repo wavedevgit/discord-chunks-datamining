@@ -37,7 +37,7 @@ let v = e => {
       hasLoadedQuestBar: o
     } = (0, d.Ws)({
       location: y.dr.CONFLICT_CHECKS
-    }), a = p.G6.useSetting(), s = (0, l.e7)([f.Z], () => f.Z.getLayers().includes(_.S9g.USER_SETTINGS)), c = (0, l.e7)([h.Z], () => h.Z.getStatus()), {
+    }), a = p.G6.useSetting(), s = (0, l.e7)([h.Z], () => h.Z.getLayers().includes(_.S9g.USER_SETTINGS)), c = (0, l.e7)([f.Z], () => f.Z.getStatus()), {
       isOpen: g
     } = (0, u.Z)();
     if ((i && o || t) && !s && !g && !__OVERLAY__ && n) {

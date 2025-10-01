@@ -6,8 +6,8 @@ require.d(exports, {
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk82659 = require("./82659.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk741361 = require("./741361.js"),
   Chunk881052 = require("./881052.js"),
@@ -51,8 +51,8 @@ function m(e) {
       }
       return i
     }(e, ["channelId", "onClose"]);
-  let v = (0, l.e7)([b.Z], () => b.Z.getChannel(f)),
-    P = (0, l.e7)([y.Z], () => y.Z.getGuild(null == v ? true : v.getGuildId())),
+  let v = (0, o.e7)([b.Z], () => b.Z.getChannel(f)),
+    P = (0, o.e7)([y.Z], () => y.Z.getGuild(null == v ? true : v.getGuildId())),
     [S, E] = i.useState(""),
     [_, N] = i.useState({}),
     [T, Z] = i.useState(false),
@@ -100,7 +100,7 @@ function m(e) {
     roles: R,
     members: H,
     getRichTag: G,
-    children: (0, r.jsx)(o.Modal, (t = function(e) {
+    children: (0, r.jsx)(l.Modal, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);

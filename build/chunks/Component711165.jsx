@@ -138,7 +138,7 @@ function T(e) {
         className: I.channelRow,
         children: [(0, r.jsx)(C.Z, {
           channel: n,
-          gotoChannel: () => (0, h.uL)(S.Z5c.CHANNEL(n.getGuildId(), n.id)),
+          gotoChannel: () => (0, f.uL)(S.Z5c.CHANNEL(n.getGuildId(), n.id)),
           children: null
         }), i.map(e => {
           let t = l.has(e.scheduledMessageId);
@@ -217,7 +217,7 @@ let A = Chunk647438.memo(function(e) {
         children: u
       }), (0, r.jsxs)("div", {
         className: I.channelMessageAndCancelButton,
-        children: [(0, r.jsx)(f.Z, {
+        children: [(0, r.jsx)(h.Z, {
           message: a,
           channel: n,
           className: I.message,

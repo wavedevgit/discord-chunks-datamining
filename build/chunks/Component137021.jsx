@@ -5,8 +5,8 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk82659 = require("./82659.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk904245 = require("./904245.js"),
   Chunk311819 = require("./311819.js"),
@@ -35,7 +35,7 @@ function Z(e) {
     onCopyLink: _,
     onShare: C,
     transitionState: L
-  } = e, [T] = (0, c.Z)([t]), N = (0, a.e7)([h.default], () => h.default.getCurrentUser()), [w, D] = l.useState(false), [R, M] = l.useState(""), [k, A] = l.useState("");
+  } = e, [T] = (0, c.Z)([t]), N = (0, i.e7)([h.default], () => h.default.getCurrentUser()), [w, D] = l.useState(false), [R, M] = l.useState(""), [k, A] = l.useState("");
   l.useEffect(() => {
     A((0, o.H)({
       applicationId: t,
@@ -118,7 +118,7 @@ function Z(e) {
         children: S.intl.string(S.t.V6nAfH)
       })]
     });
-  return (0, r.jsx)(i.Modal, {
+  return (0, r.jsx)(a.Modal, {
     transitionState: L,
     onClose: P,
     title: S.intl.string(S.t.r9qKo6),

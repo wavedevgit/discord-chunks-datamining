@@ -8,8 +8,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk658722 = require("./658722.js"),
   o = require.n(Chunk658722),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk82659 = require("./82659.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk37234 = require("./37234.js"),
   Chunk565138 = require("./565138.jsx"),
@@ -41,10 +41,10 @@ function y(e) {
     selectedSlotGuilds: n,
     onClose: i,
     onSelectGuild: a,
-    query: l
-  } = e, b = (0, s.e7)([p.ZP], () => p.ZP.getFlattenedGuildIds()), y = (0, s.Wu)([_.Z], () => b.reduce((e, t) => {
+    query: s
+  } = e, b = (0, l.e7)([p.ZP], () => p.ZP.getFlattenedGuildIds()), y = (0, l.Wu)([_.Z], () => b.reduce((e, t) => {
     let r = _.Z.getGuild(t);
-    return null == r || null != n && n.some(e => e.id === t) || (l.length <= 0 || o()(l.toLowerCase(), null == r ? true : r.name.toLowerCase())) && e.push(r), e
+    return null == r || null != n && n.some(e => e.id === t) || (s.length <= 0 || o()(s.toLowerCase(), null == r ? true : r.name.toLowerCase())) && e.push(r), e
   }, []));
 
   function O() {
@@ -100,11 +100,11 @@ function O(e) {
     onSelectGuild: n,
     transitionState: a,
     isTransfer: o = false,
-    selectedSlotGuilds: s
+    selectedSlotGuilds: l
   } = e, [c, u] = i.useState(""), d = async () => {
     await t()
   }, f = o ? g.intl.string(g.t.IB13DQ) : g.intl.string(g.t.cQYceX);
-  return (0, r.jsx)(l.Modal, {
+  return (0, r.jsx)(s.Modal, {
     transitionState: a,
     onClose: d,
     size: "md",
@@ -119,7 +119,7 @@ function O(e) {
       onSelectGuild: n,
       query: c,
       isTransfer: o,
-      selectedSlotGuilds: s
+      selectedSlotGuilds: l
     })
   })
 }

@@ -7,8 +7,8 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk494497 = require("./494497.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk82659 = require("./82659.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk14263 = require("./14263.js"),
   Chunk650774 = require("./650774.js"),
@@ -62,7 +62,7 @@ function I(e, t) {
 function h(e) {
   var t, n, {
       size: a,
-      title: i,
+      title: c,
       body: s,
       warningText: u,
       acknowledgementText: d,
@@ -71,14 +71,14 @@ function h(e) {
       onDeactivate: b
     } = e,
     p = I(e, ["size", "title", "body", "warningText", "acknowledgementText", "error", "isLoading", "onDeactivate"]);
-  let [g, x] = o.useState(false);
-  return (0, r.jsxs)(c.Modal, (t = y({}, p), n = n = {
+  let [g, v] = o.useState(false);
+  return (0, r.jsxs)(i.Modal, (t = y({}, p), n = n = {
     size: a,
     title: O.intl.formatToPlainString(k.default.iEBw1N, {
-      perk: i
+      perk: c
     }),
     subtitle: O.intl.formatToPlainString(k.default["7o0K+/"], {
-      perk: i
+      perk: c
     }),
     actions: [{
       variant: "secondary",
@@ -93,17 +93,17 @@ function h(e) {
     }],
     children: [s, (0, r.jsxs)("div", {
       className: j.warningContainer,
-      children: [(0, r.jsx)(l.Text, {
+      children: [(0, r.jsx)(i.xvT, {
         color: "text-danger",
         variant: "eyebrow",
         children: O.intl.string(k.default.OVt5CA)
-      }), (0, r.jsx)(l.Text, {
+      }), (0, r.jsx)(i.xvT, {
         className: j.warningText,
         tag: "span",
         variant: "text-sm/medium",
         children: u
       })]
-    }), null != f && (0, r.jsx)(l.Text, {
+    }), null != f && (0, r.jsx)(i.xvT, {
       className: j.errorText,
       color: "text-danger",
       variant: "text-sm/semibold",
@@ -112,8 +112,8 @@ function h(e) {
       className: j.acknowledgementContainer,
       children: [(0, r.jsx)(l.XZJ, {
         checked: g,
-        onChange: x
-      }), (0, r.jsx)(l.Text, {
+        onChange: v
+      }), (0, r.jsx)(i.xvT, {
         variant: "text-sm/medium",
         color: "text-secondary",
         children: d
@@ -135,29 +135,29 @@ function _(e) {
   var {
     guildId: t,
     powerup: n
-  } = e, c = I(e, ["guildId", "powerup"]);
+  } = e, l = I(e, ["guildId", "powerup"]);
   let {
     onDeactivate: _,
     error: w,
     isLoading: T
-  } = (0, x.ZP)(t, n), {
+  } = (0, v.ZP)(t, n), {
     onClose: S
-  } = c, E = o.useCallback(e => {
+  } = l, E = o.useCallback(e => {
     _(e).then(() => {
       null == S || S()
     })
   }, [S, _]), C = function(e, t) {
-    let n = (0, i.e7)([u.Z], () => u.Z.getMemberCount(e)),
-      c = (0, s.Z)(e),
-      m = (0, i.e7)([f.Z], () => {
+    let n = (0, c.e7)([u.Z], () => u.Z.getMemberCount(e)),
+      l = (0, s.Z)(e),
+      m = (0, c.e7)([f.Z], () => {
         var t;
         return (null == (t = f.Z.getGuild(e)) ? true : t.vanityURLCode) != null
       }),
       p = (0, b.g1)(e, "Powerup Deactivate Modal"),
-      g = (0, i.e7)([d.Z], () => t.skuId !== a.If || null == c ? 0 : d.Z.getSortedRoles(e).reduce((e, t) => {
+      g = (0, c.e7)([d.Z], () => t.skuId !== a.If || null == l ? 0 : d.Z.getSortedRoles(e).reduce((e, t) => {
         var n, r;
-        return (null == (n = t.colorStrings) ? true : n.secondaryColor) == null ? e : e + (null != (r = c[t.id]) ? r : 0)
-      }, 0), [e, t.skuId, c]);
+        return (null == (n = t.colorStrings) ? true : n.secondaryColor) == null ? e : e + (null != (r = l[t.id]) ? r : 0)
+      }, 0), [e, t.skuId, l]);
     return o.useMemo(() => {
       let e;
       switch (t.skuId) {
@@ -170,11 +170,11 @@ function _(e) {
           });
           break;
         case a.A$:
-          e = m ? (0, r.jsx)(l.Text, {
+          e = m ? (0, r.jsx)(i.xvT, {
             color: "text-danger",
             variant: "text-sm/semibold",
             children: O.intl.string(k.default.hN75yc)
-          }) : (0, r.jsx)(l.Text, {
+          }) : (0, r.jsx)(i.xvT, {
             color: "text-danger",
             variant: "text-sm/semibold",
             children: O.intl.string(k.default.Du91RU)
@@ -191,7 +191,7 @@ function _(e) {
           })
       }
       return m && t.skuId === a.XW && (e = (0, r.jsxs)(r.Fragment, {
-        children: [e, (0, r.jsx)(l.Text, {
+        children: [e, (0, r.jsx)(i.xvT, {
           color: "text-danger",
           variant: "text-sm/semibold",
           children: p ? O.intl.string(k.default.TkNA7e) : O.intl.string(k.default.M4XL5u)
@@ -200,15 +200,15 @@ function _(e) {
     }, [t, g, n, m, p])
   }(t, n);
   return (0, m.$)(t, n, m.w.DEACTIVATE), (0, r.jsx)(h, y({
-    size: n.type === v.Us.LEVEL ? "md" : "sm",
+    size: n.type === x.Us.LEVEL ? "md" : "sm",
     title: n.title,
     body: (() => {
       switch (n.type) {
-        case v.Us.LEVEL:
+        case x.Us.LEVEL:
           return (0, r.jsx)(g.Z, {
             powerup: n
           });
-        case v.Us.PERK:
+        case x.Us.PERK:
           return (0, r.jsx)(p.m, {
             className: j.image,
             powerup: n
@@ -219,5 +219,5 @@ function _(e) {
     error: w,
     isLoading: T,
     onDeactivate: E
-  }, c))
+  }, l))
 }

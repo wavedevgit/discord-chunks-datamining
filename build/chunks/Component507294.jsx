@@ -8,8 +8,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk82659 = require("./82659.jsx"),
   Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
   Chunk239091 = require("./239091.js"),
@@ -65,7 +65,7 @@ let Z = function(e) {
     guildId: t,
     transitionState: l,
     onClose: Z
-  } = e, S = (0, a.e7)([y.Z], () => y.Z.getSortedRoles(t)), D = (0, a.e7)([j.default], () => j.default.getId()), E = (0, a.e7)([h.ZP], () => h.ZP.getMember(t, D)), [I, A] = i.useState([]), T = (0, p.ZP)();
+  } = e, S = (0, c.e7)([y.Z], () => y.Z.getSortedRoles(t)), D = (0, c.e7)([j.default], () => j.default.getId()), E = (0, c.e7)([h.ZP], () => h.ZP.getMember(t, D)), [I, A] = i.useState([]), T = (0, p.ZP)();
   if (i.useEffect(() => {
       0 !== I.length && O.default.track(P.rMx.PASSPORT_ENTRY_VIEWED, k({
         role_ids: I.map(e => {
@@ -79,7 +79,7 @@ let Z = function(e) {
       f.Z.getGuildRoleConnectionsConfigurations(t).then(e => A(e))
     }, [t]), null == E) return null;
   let U = S.filter(e => null === e.tags.guild_connections);
-  return (0, n.jsx)(c.Modal, {
+  return (0, n.jsx)(a.Modal, {
     transitionState: l,
     title: N.intl.string(N.t.ghtnsr),
     onClose: Z,

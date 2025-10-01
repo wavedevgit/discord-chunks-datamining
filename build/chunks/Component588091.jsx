@@ -9,9 +9,9 @@ var Chunk951288 = require("./951288.js"),
   l = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
   c = require.n(Chunk512722),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk693789 = require("./693789.jsx"),
-  Chunk82659 = require("./82659.jsx"),
   Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk809086 = require("./809086.jsx"),
@@ -34,7 +34,7 @@ function O(e) {
     guildProductListing: t,
     guildId: n,
     skuPricePreview: a
-  } = e, i = (0, y.C)(t), l = (0, p.T4)(a.amount, a.currency), s = (0, o.e7)([v.Z], () => v.Z.getGuild(n));
+  } = e, i = (0, y.C)(t), l = (0, p.T4)(a.amount, a.currency), s = (0, u.e7)([v.Z], () => v.Z.getGuild(n));
   return c()(null != s, "guild cannot be null"), (0, r.jsxs)("div", {
     className: z.purchaseSummaryContainer,
     children: [(0, r.jsx)(x.Z, {
@@ -153,7 +153,7 @@ function T(e) {
     guildProductListingId: l,
     guildId: s,
     skuPricePreview: m
-  } = e, x = (0, o.e7)([b.Z], () => b.Z.getGuildProduct(l));
+  } = e, x = (0, u.e7)([b.Z], () => b.Z.getGuildProduct(l));
   c()(null != x, "guildProductListing cannot be null");
   let [v, p] = a.useState(false);
   a.useEffect(() => {
@@ -165,15 +165,15 @@ function T(e) {
           body: S.intl.string(S.t.VQ0lXV),
           confirmText: S.intl.string(S.t["NX+WJC"]),
           header: S.intl.string(S.t.OCwKlp),
-          confirmButtonColor: u.zx.Colors.BRAND
+          confirmButtonColor: d.zx.Colors.BRAND
         })
       }
     }()
   }, [s, l, n]);
   let y = (null != (t = x.attachments) ? t : []).length > 0,
     C = x.role_id,
-    Z = (0, o.e7)([j.Z], () => null != C ? j.Z.getRole(s, C) : true);
-  return (0, r.jsx)(d.Modal, {
+    Z = (0, u.e7)([j.Z], () => null != C ? j.Z.getRole(s, C) : true);
+  return (0, r.jsx)(o.Modal, {
     title: S.intl.string(S.t.dhAgv7),
     subtitle: S.intl.format(S.t.X6yvvr, {
       productName: x.name,

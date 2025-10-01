@@ -5,8 +5,8 @@ require.d(exports, {
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk82659 = require("./82659.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk168107 = require("./168107.jsx"),
   Chunk480916 = require("./480916.js"),
@@ -32,7 +32,7 @@ let h = [{
       onClose: n,
       transitionState: t,
       classificationId: p
-    } = e, v = (0, l.e7)([b.Z], () => b.Z.getAgeVerificationWebviewUrl()), g = (0, l.e7)([b.Z], () => b.Z.getIsLoadingAgeVerification()), _ = r.useCallback(() => {
+    } = e, v = (0, o.e7)([b.Z], () => b.Z.getAgeVerificationWebviewUrl()), g = (0, o.e7)([b.Z], () => b.Z.getIsLoadingAgeVerification()), _ = r.useCallback(() => {
       n(), x.Z.close()
     }, [n]), y = r.useCallback(() => {
       x.Z.success(), _(), x.Z.start_verification_check()
@@ -44,7 +44,7 @@ let h = [{
         useV1: true,
         entryPoint: a.cU.AUTOMATED_UNDERAGE_APPEALS
       })
-    }, [v, y]), (0, i.jsx)(o.Modal, {
+    }, [v, y]), (0, i.jsx)(l.Modal, {
       onClose: n,
       transitionState: t,
       title: j.intl.string(j.t["9SDLnp"]),

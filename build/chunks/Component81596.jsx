@@ -5,8 +5,8 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk82659 = require("./82659.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk485267 = require("./485267.js"),
   Chunk564990 = require("./564990.js"),
@@ -28,8 +28,8 @@ function h(t) {
     onAction: p,
     onClose: I,
     onOpenGameSettings: S
-  } = t, [f, x] = (0, s.Wu)([o.Z], () => [o.Z.isDeletingEntryHistory, o.Z.deleteOutboxEntryError]);
-  return r.useEffect(() => d.Bt, []), (0, e.jsxs)(l.Modal, {
+  } = t, [f, x] = (0, l.Wu)([o.Z], () => [o.Z.isDeletingEntryHistory, o.Z.deleteOutboxEntryError]);
+  return r.useEffect(() => d.Bt, []), (0, e.jsxs)(s.Modal, {
     title: (0, T.y)(i),
     subtitle: C.intl.format(C.t.KV72oa, {
       settingsHook: (t, n) => {

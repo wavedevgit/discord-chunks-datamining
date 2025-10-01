@@ -5,8 +5,8 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk82659 = require("./82659.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk594174 = require("./594174.js"),
   Chunk63063 = require("./63063.js"),
@@ -41,8 +41,8 @@ function b(t) {
       action: "WIDGET_REMOVED",
       widgetEdited: i.type
     }), b(), (0, x.L$)(h.qb.WIDGET_REMOVED)
-  }, [i.type, b, v]), f = (0, s.e7)([d.default], () => d.default.getUser(u));
-  return null == f ? null : (0, n.jsxs)(l.Modal, {
+  }, [i.type, b, v]), f = (0, l.e7)([d.default], () => d.default.getUser(u));
+  return null == f ? null : (0, n.jsxs)(s.Modal, {
     transitionState: e,
     onClose: b,
     title: p.intl.string(p.t.Mm07YW),

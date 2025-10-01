@@ -5,7 +5,7 @@ require.d(exports, {
 }), require("./953529.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk82659 = require("./82659.jsx"),
+  Chunk793030 = require("./793030.js"),
   Chunk481060 = require("./481060.js"),
   Chunk355467 = require("./355467.js"),
   Chunk626135 = require("./626135.js"),
@@ -108,7 +108,7 @@ class m extends Chunk647438.Component {
     let {
       transitionState: t
     } = this.props;
-    return (0, Chunk951288.jsxs)(Chunk82659.Modal, {
+    return (0, Chunk951288.jsxs)(Chunk793030.Modal, {
       transitionState: module,
       "aria-label": this.getTitle(),
       title: this.getTitle(),

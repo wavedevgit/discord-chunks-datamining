@@ -5,8 +5,8 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk442837 = require("./442837.js"),
-  Chunk82659 = require("./82659.jsx"),
+var Chunk793030 = require("./793030.js"),
+  Chunk442837 = require("./442837.js"),
   Chunk979651 = require("./979651.js"),
   Chunk388032 = require("./388032.jsx");
 
@@ -16,8 +16,8 @@ function l(t) {
     onConfirm: i,
     onClose: l,
     transitionState: c
-  } = t, d = (0, r.e7)([o.Z], () => o.Z.isCurrentClientInVoiceChannel());
-  return (0, a.jsx)(e.Modal, {
+  } = t, d = (0, e.e7)([o.Z], () => o.Z.isCurrentClientInVoiceChannel());
+  return (0, a.jsx)(r.Modal, {
     title: s.intl.formatToPlainString(s.t.RNAFd3, {
       username: n
     }),

@@ -68,7 +68,7 @@ function C(e) {
     message: l,
     Icon: a,
     interactionType: s
-  } = e, [c, u] = (0, i.useState)(false), d = (0, h.fJ)();
+  } = e, [c, u] = (0, i.useState)(false), d = (0, f.fJ)();
   return (0, r.jsx)(o.ua7, {
     text: t,
     position: "top",
@@ -78,7 +78,7 @@ function C(e) {
     children: e => (0, r.jsx)(o.P3F, j(v({}, e), {
       className: y.action,
       onClick: e => {
-        (0, h.Qz)({
+        (0, f.Qz)({
           message: l,
           interactionType: s,
           viewId: d
@@ -101,7 +101,7 @@ function E(e) {
     Menu: s,
     interactionType: c,
     actionType: u
-  } = e, d = (0, h.fJ)(), [p, f] = (0, i.useState)(false), [g, b] = (0, i.useState)(false), _ = (0, i.useRef)(null), {
+  } = e, d = (0, f.fJ)(), [p, h] = (0, i.useState)(false), [g, b] = (0, i.useState)(false), _ = (0, i.useRef)(null), {
     openMenu: O,
     closeMenu: x
   } = (0, m.z)();
@@ -128,13 +128,13 @@ function E(e) {
       text: l,
       position: "top",
       spacing: 4,
-      onTooltipShow: () => f(true),
-      onTooltipHide: () => f(false),
+      onTooltipShow: () => h(true),
+      onTooltipHide: () => h(false),
       children: t => (0, r.jsx)(o.P3F, j(v({}, t), {
         innerRef: _,
         className: y.action,
         onClick: e => {
-          (0, h.Qz)({
+          (0, f.Qz)({
             message: n,
             interactionType: c,
             viewId: d
@@ -220,7 +220,7 @@ let S = {
         channel: t,
         renderPopoutProps: n
       } = e;
-      return t.isThread() ? (0, r.jsx)(f.Z, j(v({}, n), {
+      return t.isThread() ? (0, r.jsx)(h.Z, j(v({}, n), {
         channel: t,
         navId: "thread-context",
         label: O.intl.string(O.t["1NBjqa"])

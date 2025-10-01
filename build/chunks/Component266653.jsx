@@ -6,8 +6,8 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk990547 = require("./990547.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk82659 = require("./82659.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk213609 = require("./213609.js"),
   Chunk594174 = require("./594174.js"),
@@ -26,7 +26,7 @@ function C(e) {
   } = e, {
     currentUser: C,
     multiAccountUsers: E
-  } = (0, r.cj)([d.default, u.Z], () => ({
+  } = (0, l.cj)([d.default, u.Z], () => ({
     currentUser: d.default.getCurrentUser(),
     multiAccountUsers: u.Z.getUsers()
   })), [N, T] = a.useState(false), [b, A] = a.useState(_.lds), [p, v] = a.useState(null);
@@ -53,7 +53,7 @@ function C(e) {
   }, [E]), (0, o.Z)({
     type: i.ImpressionTypes.MODAL,
     name: i.ImpressionNames.MULTI_ACCOUNT_SWITCH_LANDING
-  }), (0, s.jsxs)(l.Modal, {
+  }), (0, s.jsxs)(r.Modal, {
     onClose: n,
     transitionState: t,
     size: "md",

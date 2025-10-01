@@ -6,8 +6,8 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk990547 = require("./990547.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk82659 = require("./82659.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk812206 = require("./812206.js"),
   Chunk810568 = require("./810568.js"),
@@ -26,7 +26,7 @@ function b(e) {
     transitionState: _,
     onSubmitted: f,
     detectedActivity: j
-  } = e, [O, w] = i.useState("issue_selection"), [y, P] = i.useState(null), [k, I] = i.useState(""), [G, N] = i.useState(null), [T, D] = i.useState(""), S = i.useMemo(() => (0, d.fP)(), []), C = (0, r.e7)([u.Z], () => u.Z.games), E = null != j, A = (0, r.e7)([s.Z], () => (null == j ? true : j.application_id) != null ? s.Z.getApplication(j.application_id) : null), Z = i.useMemo(() => k.trim().length < 1 ? [] : C.filter(e => e.name.toLowerCase().includes(k.toLowerCase())).slice(0, 20).map(e => ({
+  } = e, [O, w] = i.useState("issue_selection"), [y, P] = i.useState(null), [k, I] = i.useState(""), [G, N] = i.useState(null), [T, D] = i.useState(""), S = i.useMemo(() => (0, d.fP)(), []), C = (0, o.e7)([u.Z], () => u.Z.games), E = null != j, A = (0, o.e7)([s.Z], () => (null == j ? true : j.application_id) != null ? s.Z.getApplication(j.application_id) : null), Z = i.useMemo(() => k.trim().length < 1 ? [] : C.filter(e => e.name.toLowerCase().includes(k.toLowerCase())).slice(0, 20).map(e => ({
     value: e.id,
     label: e.name,
     game: e
@@ -70,7 +70,7 @@ function b(e) {
         }
     }
   })();
-  return (0, l.jsx)(o.Modal, (t = function(e) {
+  return (0, l.jsx)(r.Modal, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         l = Object.keys(n);

@@ -5,9 +5,9 @@ require.d(exports, {
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk544891 = require("./544891.js"),
-  Chunk82659 = require("./82659.jsx"),
   Chunk159691 = require("./159691.js"),
   Chunk904245 = require("./904245.js"),
   Chunk166459 = require("./166459.js"),
@@ -34,7 +34,7 @@ async function E(e) {
   var t, i, n;
   let s, {
       thread: a,
-      attachments: l,
+      attachments: o,
       setIsUploading: r,
       guild: g,
       onClose: p
@@ -43,20 +43,20 @@ async function E(e) {
     x = new c.Z;
   x.on("progress", e => {
     let t = (0, v.dg)(g.id);
-    e.currentSize > t && (x.cancel(), r(false), p(), (0, C.G)(a, (0, S.KZ)(l)))
+    e.currentSize > t && (x.cancel(), r(false), p(), (0, C.G)(a, (0, S.KZ)(o)))
   });
   let T = m.Z.getMessage(a.id, f),
     w = null != T ? T.attachments : [];
   r(true);
   try {
-    s = await x.uploadFiles(l)
+    s = await x.uploadFiles(o)
   } catch (e) {
     r(false);
     return
   }
   let F = [...w, ...null != (t = s.map((e, t) => (0, y.B)(e, t))) ? t : []];
   try {
-    await o.tn.patch({
+    await l.tn.patch({
       url: O.ANM.MESSAGE(a.id, f),
       body: {
         attachments: F
@@ -72,11 +72,11 @@ function P(e) {
   var t;
   let {
     threadId: i,
-    attachments: o,
+    attachments: l,
     sendMessage: d,
     transitionState: h,
     onClose: c
-  } = e, u = (0, a.e7)([p.Z], () => p.Z.getChannel(i), [i]), b = (0, a.e7)([f.Z], () => f.Z.getGuild(null == u ? true : u.getGuildId()), [u]), m = (0, a.e7)([p.Z], () => p.Z.getChannel(null == u ? true : u.parent_id), [u]), v = null == (t = o[0]) ? true : t.item, [_, y] = s.useState(null);
+  } = e, u = (0, o.e7)([p.Z], () => p.Z.getChannel(i), [i]), b = (0, o.e7)([f.Z], () => f.Z.getGuild(null == u ? true : u.getGuildId()), [u]), m = (0, o.e7)([p.Z], () => p.Z.getChannel(null == u ? true : u.parent_id), [u]), v = null == (t = l[0]) ? true : t.item, [_, y] = s.useState(null);
   s.useEffect(() => {
     null != v && (0, g.Fq)(v.file, (e, t) => y(e), F.dG)
   }, [v]);
@@ -84,8 +84,8 @@ function P(e) {
       src: _,
       width: T.TJ,
       height: T.Lp,
-      spoiler: o[0].spoiler,
-      alt: o[0].description
+      spoiler: l[0].spoiler,
+      alt: l[0].description
     } : null,
     [S, O] = s.useState(false),
     P = s.useCallback(() => {
@@ -98,13 +98,13 @@ function P(e) {
         added: true
       }), E({
         thread: u,
-        attachments: o,
+        attachments: l,
         setIsUploading: O,
         guild: b,
         onClose: c
       }))
-    }, [u, o, O, b, c]);
-  return null == m ? null : (0, n.jsx)(l.Modal, {
+    }, [u, l, O, b, c]);
+  return null == m ? null : (0, n.jsx)(a.Modal, {
     title: I.intl.string(I.t["+SZF6e"]),
     subtitle: I.intl.string(I.t["0Ycgw8"]),
     transitionState: h,

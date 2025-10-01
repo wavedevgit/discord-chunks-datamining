@@ -5,8 +5,8 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk82659 = require("./82659.jsx"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk596454 = require("./596454.jsx"),
@@ -32,7 +32,7 @@ function h(e) {
   } = e, k = l.useRef(null), P = null != x, [N, w] = l.useState(null != (n = null == x ? true : x.name) ? n : ""), [E, I] = l.useState(null != x ? {
     id: x.emojiId,
     name: x.emojiName
-  } : null), [Z, S] = l.useState(null == x ? true : x.moderated), _ = (0, o.e7)([j.ZP], () => (null == E ? true : E.id) != null ? j.ZP.getUsableCustomEmojiById(E.id) : null), B = (null == x ? true : x.name) !== N || (null == x ? true : x.emojiId) !== (null == E ? true : E.id) || (null == x ? true : x.emojiName) !== (null == E ? true : E.name) || Z !== (null == x ? true : x.moderated), R = () => {
+  } : null), [Z, S] = l.useState(null == x ? true : x.moderated), _ = (0, r.e7)([j.ZP], () => (null == E ? true : E.id) != null ? j.ZP.getUsableCustomEmojiById(E.id) : null), B = (null == x ? true : x.name) !== N || (null == x ? true : x.emojiId) !== (null == E ? true : E.id) || (null == x ? true : x.emojiName) !== (null == E ? true : E.name) || Z !== (null == x ? true : x.moderated), R = () => {
     if (null != N && B) {
       if (P) {
         v.Z.updateForumTag({
@@ -54,7 +54,7 @@ function h(e) {
   }, T = l.useCallback(e => w(e), []), D = l.useRef(null);
   return (0, c.ZP)(() => {
     null != D.current && D.current.focus()
-  }), (0, i.jsxs)(r.Modal, {
+  }), (0, i.jsxs)(o.Modal, {
     title: P ? y.intl.string(y.t.zeVg5e) : y.intl.string(y.t["/jubeH"]),
     subtitle: y.intl.string(y.t["3v8kZG"]),
     transitionState: t,

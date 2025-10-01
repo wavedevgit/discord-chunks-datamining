@@ -5,8 +5,8 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk667202 = require("./667202.jsx"),
   Chunk607070 = require("./607070.js"),
   Chunk530618 = require("./530618.jsx"),
   Chunk219673 = require("./219673.js"),
@@ -42,7 +42,7 @@ let x = () => {
     }];
   return (0, Chunk951288.jsxs)("div", {
     ref: v,
-    children: [(0, Chunk951288.jsx)(Chunk667202.ExpressiveModal, {
+    children: [(0, Chunk951288.jsx)(Chunk793030.ExpressiveModal, {
       graphic: {
         type: "image",
         src: D ? Chunk234286 : Chunk997892

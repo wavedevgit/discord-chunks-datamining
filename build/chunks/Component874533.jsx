@@ -1,41 +1,40 @@
 /** Chunk was on 36340 **/
 /** chunk id: 874533, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  default: () => u
+  default: () => d
 });
 var Chunk951288 = require("./951288.js"),
   Chunk979554 = require("./979554.js"),
-  Chunk257465 = require("./257465.jsx"),
-  Chunk667202 = require("./667202.jsx"),
+  Chunk793030 = require("./793030.js"),
   Chunk481060 = require("./481060.js"),
   Chunk892001 = require("./892001.js"),
   Chunk594174 = require("./594174.js"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx");
 
-function u(t) {
+function d(t) {
   let {
     onClose: e,
     product: i
-  } = t, u = l.default.getCurrentUser(), E = "6/4";
+  } = t, d = c.default.getCurrentUser(), u = "6/4";
   switch (i.type) {
     case s.Z.NAMEPLATE:
     case s.Z.AVATAR_DECORATION:
-      E = "16/9";
+      u = "16/9";
       break;
     case s.Z.BUNDLE:
     case s.Z.PROFILE_EFFECT:
     default:
-      E = "6/4"
+      u = "6/4"
   }
-  return (0, n.jsx)(r.ExpressiveModal, {
-    transitionState: a.Dv.ENTERED,
-    title: d.intl.string(d.t.L4Wg3N),
-    subtitle: d.intl.string(d.t.SXb73N),
+  return (0, n.jsx)(a.ExpressiveModal, {
+    transitionState: a.Dvm.ENTERED,
+    title: p.intl.string(p.t.L4Wg3N),
+    subtitle: p.intl.string(p.t.SXb73N),
     graphic: {
       type: "dynamic",
-      component: o.AX$.COLLECTIBLES_PREVIEW,
-      aspectRatio: E,
+      component: r.AX$.COLLECTIBLES_PREVIEW,
+      aspectRatio: u,
       props: {
         product: i,
         forCollectedModal: true
@@ -43,17 +42,17 @@ function u(t) {
     },
     onClose: e,
     actions: [{
-      text: d.intl.string(d.t.TxBQzM),
+      text: p.intl.string(p.t.TxBQzM),
       onClick: () => {
-        null != u && (0, c.openUserProfileModal)({
-          userId: u.id,
-          section: p.oh.WISHLIST
+        null != d && (0, o.openUserProfileModal)({
+          userId: d.id,
+          section: l.oh.WISHLIST
         }), e()
       },
       variant: "secondary"
     }, {
       variant: "primary",
-      text: d.intl.string(d.t.tM4PUl),
+      text: p.intl.string(p.t.tM4PUl),
       onClick: e
     }]
   })

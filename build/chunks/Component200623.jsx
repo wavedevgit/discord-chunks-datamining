@@ -5,8 +5,8 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk82659 = require("./82659.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk198993 = require("./198993.jsx"),
   Chunk639351 = require("./639351.jsx"),
@@ -47,14 +47,14 @@ function C(e) {
     channel: t,
     transitionState: r,
     onClose: C
-  } = e, _ = (0, i.e7)([u.Z], () => null != u.Z.getRemoteSessionId()), j = (0, f.Z)(t, {
+  } = e, _ = (0, a.e7)([u.Z], () => null != u.Z.getRemoteSessionId()), j = (0, f.Z)(t, {
     forQRCode: true
   });
   return s.useEffect(() => {
     _ && C()
   }, [_, C]), s.useEffect(() => {
     (0, m.Z)(t.id, p.YE.XBOX)
-  }, [t.id]), (0, n.jsx)(a.Modal, {
+  }, [t.id]), (0, n.jsx)(i.Modal, {
     title: b.intl.string(b.t["f+Aijo"]),
     subtitle: b.intl.string(b.t.mYFmDQ),
     actions: [],

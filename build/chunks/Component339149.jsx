@@ -136,11 +136,11 @@ class S extends Chunk647438.PureComponent {
         d = null != u ? Object.keys(u) : [],
         {
           unit: p,
-          time: f
-        } = (0, h.CI)(null != c ? c / 60 : null, d);
+          time: h
+        } = (0, f.CI)(null != c ? c / 60 : null, d);
       if (null != u && null != p) {
         let e = u[p];
-        return null != e ? e(r.name, f) : null
+        return null != e ? e(r.name, h) : null
       }
       return null
     })

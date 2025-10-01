@@ -2,34 +2,33 @@
 /** chunk id: 48931, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => c
+  Z: () => l
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk257465 = require("./257465.jsx"),
-  Chunk82659 = require("./82659.jsx"),
+var Chunk793030 = require("./793030.js"),
   Chunk267097 = require("./267097.js"),
   Chunk752053 = require("./752053.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function c(e) {
+function l(e) {
   let {
-    transitionState: t = i.Dv.ENTERED,
+    transitionState: t = i.Dvm.ENTERED,
     onClose: n
   } = e, {
-    refreshCategories: c
-  } = (0, o.Z)(), u = async () => {
+    refreshCategories: l
+  } = (0, a.Z)(), c = async () => {
     await n()
   };
-  return (0, r.jsx)(a.Modal, {
+  return (0, r.jsx)(i.Modal, {
     transitionState: t,
-    onClose: u,
+    onClose: c,
     size: "sm",
-    title: l.intl.string(l.t["p8+qtb"]),
+    title: s.intl.string(s.t["p8+qtb"]),
     actions: [],
-    children: (0, r.jsx)(s.Z, {
-      onRetry: c,
-      errorOrigin: s.i.GIFT_MODAL
+    children: (0, r.jsx)(o.Z, {
+      onRetry: l,
+      errorOrigin: o.i.GIFT_MODAL
     })
   })
 }

@@ -6,8 +6,8 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk772848 = require("./772848.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk704215 = require("./704215.js"),
-  Chunk82659 = require("./82659.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk243778 = require("./243778.jsx"),
   Chunk690221 = require("./690221.jsx"),
@@ -27,7 +27,7 @@ let E = function(e) {
     transitionState: n,
     entryPoint: t,
     onClose: E
-  } = e, [R, g] = i.useState(l.z.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), A = i.useRef(R), [O, C] = (0, s.US)([R], true, true), {
+  } = e, [R, g] = i.useState(a.z.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), A = i.useRef(R), [O, C] = (0, s.US)([R], true, true), {
     loading: T,
     initiateAgeVerification: I
   } = (0, _.WD)(E), N = i.useMemo(() => (0, o.Z)(), []), k = i.useRef(false);
@@ -42,7 +42,7 @@ let E = function(e) {
     }))
   }, []), i.useEffect(() => {
     (0, f.lA)(N, f.d_.PRIMARY, t)
-  }, [N, t]), (0, r.jsxs)(a.Modal, {
+  }, [N, t]), (0, r.jsxs)(l.Modal, {
     transitionState: n,
     onClose: E,
     title: v.intl.string(v.t.JHNunp),
@@ -53,7 +53,7 @@ let E = function(e) {
       icon: c.Gr1,
       iconPosition: "end",
       onClick: async () => {
-        (0, f.x3)(N, f.d_.PRIMARY, f.sU.GET_STARTED), g(l.z.AGE_VERIFICATION_SURVEY_MODAL_CLOSE), await I(f.cU.GET_STARTED_MODAL)
+        (0, f.x3)(N, f.d_.PRIMARY, f.sU.GET_STARTED), g(a.z.AGE_VERIFICATION_SURVEY_MODAL_CLOSE), await I(f.cU.GET_STARTED_MODAL)
       }
     }],
     actionBarInput: (0, r.jsxs)(d.Z, {

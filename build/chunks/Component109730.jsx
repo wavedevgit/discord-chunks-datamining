@@ -5,8 +5,8 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk82659 = require("./82659.jsx"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk91176 = require("./91176.js"),
@@ -45,7 +45,7 @@ function D(t) {
     modReportId: U
   } = t, {
     analyticsLocations: v
-  } = (0, _.ZP)(), x = null != (n = null != (e = null == N ? true : N[0]) ? e : null == v ? true : v[0]) ? n : null, b = (0, a.e7)([O.default], () => O.default.getUser(D), [D]), [y, j] = r.useState(M.UK.DURATION_60_SEC), [k, P] = r.useState(""), [B, K] = r.useState(false), [L, Z] = r.useState(false), w = (0, a.e7)([T.Z], () => {
+  } = (0, _.ZP)(), x = null != (n = null != (e = null == N ? true : N[0]) ? e : null == v ? true : v[0]) ? n : null, b = (0, i.e7)([O.default], () => O.default.getUser(D), [D]), [y, j] = r.useState(M.UK.DURATION_60_SEC), [k, P] = r.useState(""), [B, K] = r.useState(false), [L, Z] = r.useState(false), w = (0, i.e7)([T.Z], () => {
     var t;
     return null == (t = T.Z.getChannel(U)) ? true : t.isArchivedThread()
   }), F = (0, d.sE)(m, {
@@ -73,7 +73,7 @@ function D(t) {
     })
   }), r.useEffect(() => {
     (null == b || null == m) && p()
-  }, [m, b, p]), null == b || null == m) ? null : (0, l.jsx)(i.Modal, {
+  }, [m, b, p]), null == b || null == m) ? null : (0, l.jsx)(a.Modal, {
     transitionState: R,
     title: f.intl.formatToPlainString(f.t.OhsOy8, {
       user: A.ZP.getName(m, null, b)

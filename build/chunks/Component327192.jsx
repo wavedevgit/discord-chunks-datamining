@@ -8,10 +8,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
   Chunk692547 = require("./692547.js"),
-  Chunk82659 = require("./82659.jsx"),
   Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
   Chunk570140 = require("./570140.js"),
@@ -90,9 +90,9 @@ let K = e => {
     } = e,
     {
       isJoining: o,
-      joinErrorMessage: l,
+      joinErrorMessage: s,
       showJoinErrorMessage: c
-    } = (0, s.cj)([A.Z], () => ({
+    } = (0, l.cj)([A.Z], () => ({
       isJoining: A.Z.isJoining(a.id),
       joinErrorMessage: "" === A.Z.joinErrorMessage(a.id) ? B.intl.string(B.t.j2d6Ki) : A.Z.joinErrorMessage(a.id),
       showJoinErrorMessage: true !== A.Z.joinErrorMessage(a.id)
@@ -101,7 +101,7 @@ let K = e => {
   function u() {
     p.Z.joinServer(a.id, () => {})
   }
-  return null == (0, s.e7)([C.Z], () => C.Z.getGuild(a.guild.id), [a.guild.id]) && (i = (0, r.jsx)(f.zxk, {
+  return null == (0, l.e7)([C.Z], () => C.Z.getGuild(a.guild.id), [a.guild.id]) && (i = (0, r.jsx)(f.zxk, {
     size: "sm",
     onClick: u,
     disabled: o,
@@ -134,7 +134,7 @@ let K = e => {
       variant: "text-xs/normal",
       color: "text-danger",
       className: Z.integrationError,
-      children: l
+      children: s
     })]
   })
 };
@@ -145,9 +145,9 @@ function z(e) {
     account: n,
     theme: a,
     locale: o
-  } = e, [s, l] = i.useState(n.friendSync), [_, h] = i.useState(n.visibility), [m, g] = i.useState(n.metadataVisibility), [I, T] = i.useState(n.showActivity), [A, C] = i.useState(null), [N, R] = i.useState(null), [w, x] = i.useState(false), [G, F] = i.useState([]), V = (0, b.rR)(n.type), Y = E.Z.get(V);
+  } = e, [l, c] = i.useState(n.friendSync), [_, h] = i.useState(n.visibility), [m, g] = i.useState(n.metadataVisibility), [I, T] = i.useState(n.showActivity), [A, C] = i.useState(null), [N, R] = i.useState(null), [w, x] = i.useState(false), [G, F] = i.useState([]), V = (0, b.rR)(n.type), Y = E.Z.get(V);
   i.useEffect(() => {
-    l(n.friendSync), h(n.visibility), g(n.metadataVisibility), T(n.showActivity)
+    c(n.friendSync), h(n.visibility), g(n.metadataVisibility), T(n.showActivity)
   }, [n]);
   let z = {
       inProgressVisibility: A,
@@ -164,10 +164,10 @@ function z(e) {
     return n.type === k.ABu.TWITTER && o && (s = (0, r.jsx)(f.ua7, {
       text: B.intl.string(B.t.Jebrw8),
       children: e => (0, r.jsx)(S.Z, W(H({}, e), {
-        color: c.Z.unsafe_rawColors.TWITTER.css,
+        color: u.Z.unsafe_rawColors.TWITTER.css,
         children: (0, r.jsx)(f.kmB, {
           size: "xs",
-          color: c.Z.unsafe_rawColors.WHITE_500.css
+          color: u.Z.unsafe_rawColors.WHITE_500.css
         })
       }))
     })), (0, r.jsxs)("div", {
@@ -300,7 +300,7 @@ function z(e) {
     return k.BFP.has(n.type) && (i = (0, r.jsx)(f.j7V, {
       className: Z.connectionOptionSwitch,
       hideBorder: true,
-      value: s,
+      value: l,
       onChange: eo,
       children: (0, r.jsx)(f.Text, {
         variant: "text-sm/semibold",
@@ -384,7 +384,7 @@ function z(e) {
 
   function er() {
     let e = E.Z.get(n.type);
-    (0, f.h7j)(i => (0, r.jsx)(u.Modal, W(H({
+    (0, f.h7j)(i => (0, r.jsx)(s.Modal, W(H({
       title: B.intl.formatToPlainString(B.t.U5x12d, {
         name: e.name
       }),
@@ -440,7 +440,7 @@ function z(e) {
   }
 
   function eo(e) {
-    l(e), p.Z.setFriendSync(n.type, n.id, e)
+    c(e), p.Z.setFriendSync(n.type, n.id, e)
   }
 
   function es(e) {

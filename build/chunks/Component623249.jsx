@@ -8,8 +8,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk82659 = require("./82659.jsx"),
   Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
   Chunk607070 = require("./607070.js"),
@@ -53,10 +53,10 @@ function E(e) {
     transitionState: b,
     onClose: E,
     sourceQuestContent: T
-  } = e, [w, P] = (0, s.useState)(o), N = (0, h.KX)(), A = (0, m.O5)(), R = null == (t = (0, g.WD)()) ? true : t.getId(), B = (0, i.e7)([u.Z], () => u.Z.useReducedMotion), k = (0, j.g2)({
+  } = e, [w, P] = (0, s.useState)(o), N = (0, h.KX)(), A = (0, m.O5)(), R = null == (t = (0, g.WD)()) ? true : t.getId(), B = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), k = (0, j.g2)({
     useReducedMotion: B,
     className: y.colorTransition
-  }), I = w.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), q = (0, f.Bz)(n), D = (0, i.e7)([p.Z], () => p.Z.getState().theme), L = (0, c.wj)(D) ? v.BRd.DARK : v.BRd.LIGHT, {
+  }), I = w.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), q = (0, f.Bz)(n), D = (0, l.e7)([p.Z], () => p.Z.getState().theme), L = (0, c.wj)(D) ? v.BRd.DARK : v.BRd.LIGHT, {
     startConsoleQuest: V,
     startingConsoleQuest: Q
   } = (0, h.GI)({
@@ -73,7 +73,7 @@ function E(e) {
       k.stopAnimation(), P(e)
     }
   });
-  return (0, r.jsx)(l.Modal, {
+  return (0, r.jsx)(i.Modal, {
     transitionState: b,
     onClose: E,
     title: C.intl.string(C.t.W5lmKi),

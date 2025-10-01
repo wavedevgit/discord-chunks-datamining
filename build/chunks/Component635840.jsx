@@ -1,12 +1,11 @@
 /** Chunk was on 6284 **/
 /** chunk id: 635840, original params: t,i,e (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => N
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk103866 = require("./103866.jsx"),
-  Chunk37148 = require("./37148.jsx"),
+  Chunk793030 = require("./793030.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk153867 = require("./153867.js"),
@@ -14,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk167739 = require("./167739.js");
-let N = [{
+let u = [{
   value: "APPLICATION_SUBSCRIPTION_CANCELLATION_SURVEY_ANSWER_CHOICE_NOT_USING_ENOUGH",
   nameGetter: () => Chunk388032.intl.string(Chunk388032.t["+RZgNT"])
 }, {
@@ -31,33 +30,33 @@ let N = [{
   nameGetter: () => Chunk388032.intl.string(Chunk388032.t.wZLu3d)
 }];
 
-function I(t) {
+function N(t) {
   let {
     application: i,
     subscriptionId: e,
-    onClose: I
-  } = t, [S, E] = a.useState(false), [x, A] = a.useState(null), [O, T] = a.useState(""), p = a.useCallback(() => {
-    null != x && (o.default.track(C.rMx.PREMIUM_APP_CANCELLATION_SURVEY_SUBMITTED, {
+    onClose: N
+  } = t, [I, S] = a.useState(false), [x, E] = a.useState(null), [A, O] = a.useState(""), T = a.useCallback(() => {
+    null != x && (d.default.track(o.rMx.PREMIUM_APP_CANCELLATION_SURVEY_SUBMITTED, {
       answer: x,
       application_id: i.id,
-      reason: O,
+      reason: A,
       subscription_id: e
-    }), I())
-  }, [i.id, e, x, I, O]);
+    }), N())
+  }, [i.id, e, x, N, A]);
   return a.useEffect(() => {
-    d.ZP.updatedUnsyncedSettings({
-      disableApplicationSubscriptionCancellationSurvey: S
+    c.ZP.updatedUnsyncedSettings({
+      disableApplicationSubscriptionCancellationSurvey: I
     })
-  }, [S]), (0, n.jsxs)(n.Fragment, {
-    children: [(0, n.jsx)(l.x, {
-      title: _.intl.string(_.t.zPxMdX),
-      subtitle: _.intl.string(_.t.QJGdBw)
-    }), (0, n.jsxs)(s.f, {
+  }, [I]), (0, n.jsxs)(n.Fragment, {
+    children: [(0, n.jsx)(s.xBx, {
+      title: C.intl.string(C.t.zPxMdX),
+      subtitle: C.intl.string(C.t.QJGdBw)
+    }), (0, n.jsxs)(s.fef, {
       children: [(0, n.jsx)("div", {
-        className: u.answerChoicesContainer,
-        children: (0, n.jsx)(r.Gu, {
+        className: _.answerChoicesContainer,
+        children: (0, n.jsx)(l.Gu, {
           value: x,
-          options: N.map(t => {
+          options: u.map(t => {
             let {
               nameGetter: i,
               value: e
@@ -67,36 +66,36 @@ function I(t) {
               value: e
             }
           }),
-          onChange: t => A(t.value),
+          onChange: t => E(t.value),
           withTransparentBackground: true
         })
       }), "APPLICATION_SUBSCRIPTION_CANCELLATION_SURVEY_ANSWER_CHOICE_OTHER" === x && (0, n.jsx)("div", {
-        className: u.otherField,
-        children: (0, n.jsx)(c.oil, {
+        className: _.otherField,
+        children: (0, n.jsx)(r.oil, {
           autoFocus: true,
-          placeholder: _.intl.string(_.t.s6tM8f),
-          value: O,
-          onChange: T
+          placeholder: C.intl.string(C.t.s6tM8f),
+          value: A,
+          onChange: O
         })
       })]
-    }), (0, n.jsx)(c.mzw, {
+    }), (0, n.jsx)(r.mzw, {
       "data-migration-pending": true,
       children: (0, n.jsxs)("div", {
-        className: u.footer,
-        children: [(0, n.jsx)(r.$q, {
-          type: r.M0.INVERTED,
-          value: S,
-          onChange: (t, i) => E(i),
+        className: _.footer,
+        children: [(0, n.jsx)(l.$q, {
+          type: l.M0.INVERTED,
+          value: I,
+          onChange: (t, i) => S(i),
           size: 20,
-          className: u.__invalid_checkbox,
-          children: (0, n.jsx)(c.Text, {
+          className: _.__invalid_checkbox,
+          children: (0, n.jsx)(r.Text, {
             variant: "text-sm/medium",
-            children: _.intl.string(_.t["3vPFQk"])
+            children: C.intl.string(C.t["3vPFQk"])
           })
-        }), (0, n.jsx)(c.zxk, {
+        }), (0, n.jsx)(r.zxk, {
           variant: "primary",
-          text: _.intl.string(_.t.geKm7u),
-          onClick: p,
+          text: C.intl.string(C.t.geKm7u),
+          onClick: T,
           disabled: null == x
         })]
       })

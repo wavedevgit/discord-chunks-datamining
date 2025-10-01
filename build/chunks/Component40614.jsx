@@ -38,13 +38,13 @@ function _(e) {
   var t;
   let {
     onClick: n
-  } = e, p = (0, l.e7)([a.Z], () => a.Z.getFakeGameData()), f = (0, l.e7)([u.ZP], () => u.ZP.getVisibleGame()), b = null != (t = null == p ? true : p.start) ? t : null == f ? true : f.start, _ = d.SE.useSetting().length > 0, {
+  } = e, p = (0, l.e7)([a.Z], () => a.Z.getFakeGameData()), h = (0, l.e7)([u.ZP], () => u.ZP.getVisibleGame()), b = null != (t = null == p ? true : p.start) ? t : null == h ? true : h.start, _ = d.SE.useSetting().length > 0, {
     now: O
   } = (0, s.tS)(), y = (0, i.useMemo)(() => null == b ? null : (0, c.T_)({
     start: b
   }, O), [b, O]);
   if (null == b) return null;
-  let v = [..._ ? [g.intl.string(h.default.jfDsyM)] : [], g.intl.string(g.t.BMTj29), y];
+  let v = [..._ ? [g.intl.string(f.default.jfDsyM)] : [], g.intl.string(g.t.BMTj29), y];
   return (0, r.jsx)(o.P3F, {
     className: m.container,
     onClick: n,
@@ -64,7 +64,7 @@ function O(e) {
   } = e, {
     isEnabled: n,
     showActivitySharingIndicatorWhenSharing: i
-  } = (0, f.D)("not sharing link"), a = d.G6.useSetting(), s = (0, l.e7)([p.Z], () => p.Z.getStatus());
+  } = (0, h.D)("not sharing link"), a = d.G6.useSetting(), s = (0, l.e7)([p.Z], () => p.Z.getStatus());
   return !n || __OVERLAY__ ? null : a && s !== o.Skl.INVISIBLE ? i ? (0, r.jsx)(_, {
     onClick: t
   }) : null : (0, r.jsx)(b, {

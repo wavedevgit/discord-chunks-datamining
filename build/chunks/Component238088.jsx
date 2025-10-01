@@ -7,8 +7,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk913527 = require("./913527.js"),
   i = require.n(Chunk913527),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk82659 = require("./82659.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk471445 = require("./471445.js"),
   Chunk313201 = require("./313201.js"),
@@ -219,10 +219,10 @@ function v(e) {
     transitionState: t,
     onClose: l,
     searchContext: a
-  } = e, i = (0, d.Dt)(), y = r.useMemo(() => (0, F.s5)(a), [a]), S = (0, s.e7)([h.Z, x.Z], () => {
+  } = e, i = (0, d.Dt)(), y = r.useMemo(() => (0, F.s5)(a), [a]), S = (0, o.e7)([h.Z, x.Z], () => {
     let e = h.Z.getChannel(x.Z.getChannelId());
     return null != e ? (0, F.nl)(e) : "general"
-  }), v = (0, s.e7)([g.default], () => {
+  }), v = (0, o.e7)([g.default], () => {
     let e = g.default.getCurrentUser();
     return null != e ? e.username : E.intl.string(E.t.cqpybG)
   }), [L, _] = r.useState(m.Z.getSearchInputText(a)), N = r.useMemo(() => (0, F.kG)(null != L ? L : ""), [L]), {
@@ -342,7 +342,7 @@ function v(e) {
   }, [eP]), eH = r.useCallback(() => {
     P && w(), k && X(), A && eu(), M && eI(), el(), eE(), eO()
   }, [P, k, el, A, eE, w, X, eu, M, eI, eO]);
-  return (0, n.jsxs)(o.Modal, {
+  return (0, n.jsxs)(s.Modal, {
     transitionState: t,
     onClose: l,
     "aria-labelledby": i,

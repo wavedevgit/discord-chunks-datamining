@@ -137,7 +137,7 @@ class K extends Chunk98597.ZP {
       connectDragPreview: u,
       canReorderChannel: d,
       canMoveMembers: p,
-      stageInstance: h,
+      stageInstance: f,
       isSubscriptionGated: g,
       needSubscriptionToAccess: m,
       unread: b,
@@ -183,7 +183,7 @@ class K extends Chunk98597.ZP {
               ref: this.channelItemRef,
               className: F.iconVisibility,
               iconClassName: o()({
-                [V.iconLive]: null != h
+                [V.iconLive]: null != f
               }),
               channel: e,
               selected: !y && t,
@@ -201,7 +201,7 @@ class K extends Chunk98597.ZP {
               connectDragPreview: u,
               subtitle: this.renderSubtitle(),
               isFavoriteSuggestion: y,
-              "aria-label": (0, f.ZP)({
+              "aria-label": (0, h.ZP)({
                 channel: e,
                 unread: b,
                 mentionCount: O,
@@ -307,7 +307,7 @@ class K extends Chunk98597.ZP {
     }), H(this, "renderSubtitle", () => {
       var e;
       let t = null == (e = this.props.stageInstance) ? true : e.topic;
-      return null == t ? null : (0, r.jsx)(h.Z, {
+      return null == t ? null : (0, r.jsx)(f.Z, {
         children: t
       })
     })
@@ -337,7 +337,7 @@ function q(e) {
       bypassLimit: w.Z.can(U.Plq.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
-  }), p = (0, a.e7)([S.Z], () => S.Z.isCollapsed(n.parent_id)), f = (0, E.ZP)(n.id), h = (0, a.e7)([x.Z], () => x.Z.getStageInstanceByChannel(n.id), [n.id]), g = (0, v.Rk)(n.id, j.pV.AUDIENCE), {
+  }), p = (0, a.e7)([S.Z], () => S.Z.isCollapsed(n.parent_id)), h = (0, E.ZP)(n.id), f = (0, a.e7)([x.Z], () => x.Z.getStageInstanceByChannel(n.id), [n.id]), g = (0, v.Rk)(n.id, j.pV.AUDIENCE), {
     isSubscriptionGated: m,
     needSubscriptionToAccess: _
   } = (0, b.Z)(n.id), O = (0, a.e7)([T.ZP], () => T.ZP.isFavorite(t.id, n.id)), y = (0, C.xJ)(n.id), I = (0, M.Z)({
@@ -351,9 +351,9 @@ function q(e) {
   }), A = e.connected && null == I;
   return (0, r.jsx)(Y, W(z({
     categoryCollapsed: p,
-    connectAction: f,
+    connectAction: h,
     numAudience: g,
-    stageInstance: h,
+    stageInstance: f,
     isSubscriptionGated: m,
     needSubscriptionToAccess: _
   }, c, d, e), {

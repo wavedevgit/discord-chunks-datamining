@@ -2,7 +2,7 @@
 /** chunk id: 746106, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  w: () => D
+  w: () => L
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -31,22 +31,24 @@ var Chunk951288 = require("./951288.js"),
   Chunk998502 = require("./998502.js"),
   Chunk264783 = require("./264783.js"),
   Chunk892071 = require("./892071.jsx"),
+  Chunk490340 = require("./490340.js"),
   Chunk388032 = require("./388032.jsx");
 
-function w(e, t, n, r) {
+function D(e, t, n, r) {
   let o = i.useContext(_.Z),
     s = i.useCallback(() => ({
       i18n: {
-        SPINNER_LOADING_LABEL: P.intl.string(P.t.ZTNur6),
-        BUTTON_LOADING_STARTED_LABEL: P.intl.string(P.t.pfChQk),
-        BUTTON_LOADING_FINISHED_LABEL: P.intl.string(P.t.SVPara),
-        CLOSE_BUTTON_LABEL: P.intl.string(P.t.cpT0Cg),
-        PLAY_BUTTON_LABEL: P.intl.string(P.t.RscU7O),
-        PAUSE_BUTTON_LABEL: P.intl.string(P.t.ZcgDJS),
-        NEW: P.intl.string(P.t.y2b7CA),
-        BETA: P.intl.string(P.t.oW0eUV),
-        EARLY_ACCESS: P.intl.string(P.t.EYxi0t),
-        BILLING_TRIAL_FREE_TRIAL_TEXT: P.intl.string(P.t.IBYG5e)
+        SPINNER_LOADING_LABEL: w.intl.string(w.t.ZTNur6),
+        BUTTON_LOADING_STARTED_LABEL: w.intl.string(w.t.pfChQk),
+        BUTTON_LOADING_FINISHED_LABEL: w.intl.string(w.t.SVPara),
+        CLOSE_BUTTON_LABEL: w.intl.string(w.t.cpT0Cg),
+        PLAY_BUTTON_LABEL: w.intl.string(w.t.RscU7O),
+        PAUSE_BUTTON_LABEL: w.intl.string(w.t.ZcgDJS),
+        NEW: w.intl.string(w.t.y2b7CA),
+        BETA: w.intl.string(w.t.oW0eUV),
+        EARLY_ACCESS: w.intl.string(w.t.EYxi0t),
+        BILLING_TRIAL_FREE_TRIAL_TEXT: w.intl.string(w.t.IBYG5e),
+        MODAL_DONT_SHOW_AGAIN: w.intl.string(P.default.m3Vfcn)
       },
       theme: e,
       saturation: t,
@@ -62,11 +64,11 @@ function w(e, t, n, r) {
   return i.useLayoutEffect(() => {
     function e() {
       u(s)
-    }(0, a.waitForAllDefaultIntlMessagesLoaded)().then(e), P.intl.onLocaleChange(e)
+    }(0, a.waitForAllDefaultIntlMessagesLoaded)().then(e), w.intl.onLocaleChange(e)
   }, [s]), l
 }
 
-function D(e) {
+function L(e) {
   let {
     windowKey: t,
     themeOverride: n,
@@ -75,7 +77,7 @@ function D(e) {
     locale: _,
     theme: y,
     focused: P,
-    currentWindow: D,
+    currentWindow: w,
     fontScale: L,
     fontScaleClass: x,
     keyboardModeEnabled: j,
@@ -110,7 +112,7 @@ function D(e) {
     location: "RootThemeContextProvider"
   }, {
     autoTrackExposure: true
-  }).enabled, Y = (0, m.Z)(D, __OVERLAY__ || P), W = 0;
+  }).enabled, Y = (0, m.Z)(w, __OVERLAY__ || P), W = 0;
   1 !== M && (W = (0, u.OdO)(W, u.bgu.REDUCE_SATURATION_ENABLED));
   let K = (0, N.A)(),
     z = (0, g.Ml)("RootThemeContextProvider"),
@@ -128,7 +130,7 @@ function D(e) {
       isPopoutWindow: o,
       isSearchDesktopTopLevelEnabled: ee
     }),
-    en = w(y, M, i.useMemo(() => {
+    en = D(y, M, i.useMemo(() => {
       let e = [];
       return z && e.push("refresh-fast-follow-avatars"), q && e.push("refresh-fast-follow-guild-bg"), X && e.push("refresh-fast-follow-distinct-borders"), Q && e.push("mana-text-inputs"), J && e.push("mana-toggle-inputs"), e
     }, [z, q, X, Q, J]), P);

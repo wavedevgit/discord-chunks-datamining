@@ -9,8 +9,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
   s = require.n(Chunk512722),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk82659 = require("./82659.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk596454 = require("./596454.jsx"),
   Chunk313201 = require("./313201.js"),
@@ -61,7 +61,7 @@ function y(e) {
     guildId: t,
     emojiData: n,
     onSelectEmoji: l
-  } = e, s = i.useRef(null), o = (0, a.e7)([p.ZP], () => null != n.id ? p.ZP.getCustomEmojiById(n.id) : true), u = (0, a.e7)([h.ZP], () => h.ZP.getDefaultChannel(t)), x = i.useCallback(e => {
+  } = e, s = i.useRef(null), a = (0, o.e7)([p.ZP], () => null != n.id ? p.ZP.getCustomEmojiById(n.id) : true), u = (0, o.e7)([h.ZP], () => h.ZP.getDefaultChannel(t)), x = i.useCallback(e => {
     let {
       closePopout: t
     } = e;
@@ -84,15 +84,15 @@ function y(e) {
         }), r && t()
       }
     })
-  }, [l, u]), j = i.useMemo(() => null == o && null == n.name ? null : function() {
+  }, [l, u]), j = i.useMemo(() => null == a && null == n.name ? null : function() {
     return (0, r.jsx)(d.Z, {
       className: v.emoji,
       emojiId: n.id,
       emojiName: n.name,
-      animated: null == o ? true : o.animated
+      animated: null == a ? true : a.animated
     })
-  }, [n, o]), y = "";
-  return null != o ? y = ":".concat(o.name, ":") : null != n.name && (y = f.ZP.convertSurrogateToName(n.name)), (0, r.jsx)(c.yRy, {
+  }, [n, a]), y = "";
+  return null != a ? y = ":".concat(a.name, ":") : null != n.name && (y = f.ZP.convertSurrogateToName(n.name)), (0, r.jsx)(c.yRy, {
     targetElementRef: s,
     animation: c.yRy.Animation.NONE,
     position: "top",
@@ -126,7 +126,7 @@ function C(e) {
     guildId: n,
     initialData: l,
     benefitTypeInput: s,
-    descriptionPlaceholder: a,
+    descriptionPlaceholder: o,
     canSubmit: d,
     onSave: m,
     onDelete: g,
@@ -163,7 +163,7 @@ function C(e) {
     disabled: !O
   }), (0, r.jsx)("form", {
     onSubmit: C,
-    children: (0, r.jsx)(o.Modal, {
+    children: (0, r.jsx)(a.Modal, {
       transitionState: p,
       onClose: f,
       title: j.intl.string(j.t["2qf9EB"]),
@@ -174,7 +174,7 @@ function C(e) {
           title: j.intl.string(j.t["1Ts7QE"]),
           titleId: h,
           children: (0, r.jsx)(c.Kx8, {
-            placeholder: a,
+            placeholder: o,
             value: x,
             rows: 1,
             autosize: true,

@@ -7,8 +7,8 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk667202 = require("./667202.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk893776 = require("./893776.js"),
   Chunk594174 = require("./594174.js"),
@@ -43,7 +43,7 @@ function m(e) {
   let {
     transitionState: t,
     onClose: n
-  } = e, p = (0, a.e7)([c.default], () => {
+  } = e, p = (0, o.e7)([c.default], () => {
     var e;
     return null == (e = c.default.getCurrentUser()) ? true : e.email
   }), [h, m] = i.useState({
@@ -68,7 +68,7 @@ function m(e) {
     emailAddress: p,
     emailAddressLink: "mailto:".concat(p)
   }) : true;
-  return (0, r.jsxs)(o.ExpressiveModal, {
+  return (0, r.jsxs)(a.ExpressiveModal, {
     transitionState: t,
     onClose: n,
     graphic: "loading" === h.status ? true : {

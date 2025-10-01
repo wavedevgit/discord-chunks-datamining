@@ -71,13 +71,13 @@ function R(e, t, n) {
   if (null != n) return n.applicationId === e.id;
   if (null != t) {
     var r;
-    return (t.application_id === e.id || (null == (r = e.linkedGames) ? true : r.some(e => e.id === t.application_id))) && t.type === N.IIU.PLAYING && (0, f.Z)(t, N.xjy.JOIN)
+    return (t.application_id === e.id || (null == (r = e.linkedGames) ? true : r.some(e => e.id === t.application_id))) && t.type === N.IIU.PLAYING && (0, h.Z)(t, N.xjy.JOIN)
   }
   returnfalse
 }
 let D = Chunk647438.memo(function(e) {
     var t;
-    let l, a, f, D, {
+    let l, a, h, D, {
         stream: L,
         canGoLive: k,
         guildId: U,
@@ -170,25 +170,25 @@ let D = Chunk647438.memo(function(e) {
         location: "ActivityActions"
       }).enabled,
       ep = i.useRef(null),
-      [ef, eh] = i.useState(false);
+      [eh, ef] = i.useState(false);
     i.useEffect(() => () => {
       null != ep.current && clearTimeout(ep.current)
     }, []), i.useEffect(() => {
-      ec && (eh(false), null != ep.current && (clearTimeout(ep.current), ep.current = null))
+      ec && (ef(false), null != ep.current && (clearTimeout(ep.current), ep.current = null))
     }, [ec]);
     let eg = (null != V || null == H || (0, p.R)()) && (G || k) ? (G ? (l = false, a = () => {
         ei(), (0, _.v)(J, _.d.STREAM, false)
-      }, f = c.g5r, D = w.intl.string(w.t.S5anIS)) : F ? (l = false, a = () => {
+      }, h = c.g5r, D = w.intl.string(w.t.S5anIS)) : F ? (l = false, a = () => {
         el(), (0, _.v)(J, _.d.STREAM, true)
-      }, f = c.hGI, D = null != V ? w.intl.formatToPlainString(w.t.AB5gT0, {
+      }, h = c.hGI, D = null != V ? w.intl.formatToPlainString(w.t.AB5gT0, {
         game: V.name
-      }) : w.intl.string(w.t.FeUKeH)) : (l = true, a = null, f = c.hGI, D = null != B && (0, C.vd)(B.type) ? w.intl.string(w.t.uQn9Bw) : null != U ? w.intl.string(w.t.fBXEoK) : w.intl.string(w.t.n3feND)), (0, r.jsx)("div", {
+      }) : w.intl.string(w.t.FeUKeH)) : (l = true, a = null, h = c.hGI, D = null != B && (0, C.vd)(B.type) ? w.intl.string(w.t.uQn9Bw) : null != U ? w.intl.string(w.t.fBXEoK) : w.intl.string(w.t.n3feND)), (0, r.jsx)("div", {
         className: Z.panelButtonContainer,
         children: (0, r.jsx)(I.Z, {
           tooltipText: D,
           disabled: l,
           onClick: a,
-          icon: f
+          icon: h
         })
       })) : null,
       em = ee && null == H ? (0, r.jsx)(I.Z, {
@@ -211,14 +211,14 @@ let D = Chunk647438.memo(function(e) {
       ey = ed && ea && !ec ? (0, r.jsx)(M, {
         runningGame: V,
         startAuthorization: () => {
-          eh(true), null != ep.current && clearTimeout(ep.current), ep.current = setTimeout(() => {
-            eh(false)
+          ef(true), null != ep.current && clearTimeout(ep.current), ep.current = setTimeout(() => {
+            ef(false)
           }, 9e4), es()
         },
         connectionApp: eu,
         ref: X
       }) : null,
-      ev = $ && null != W && (0, h.Z)(W) ? (0, r.jsx)(I.Z, {
+      ev = $ && null != W && (0, f.Z)(W) ? (0, r.jsx)(I.Z, {
         tooltipText: "Report Issue",
         onClick: eo,
         icon: c.xhG
@@ -232,9 +232,9 @@ let D = Chunk647438.memo(function(e) {
         caretConfig: {
           align: "center"
         },
-        shouldShow: ef,
+        shouldShow: eh,
         onRequestClose: () => {
-          eh(false), null != ep.current && (clearTimeout(ep.current), ep.current = null)
+          ef(false), null != ep.current && (clearTimeout(ep.current), ep.current = null)
         }
       }) : null;
     return null == eg && null == em && null == eb && null == e_ && null == ey && null == ev ? null : (0, r.jsxs)("div", {

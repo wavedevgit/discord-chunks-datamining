@@ -176,8 +176,8 @@ class en extends Chunk98597.ZP {
       sorting: u,
       isUserOver: d,
       connectChannelDropTarget: p,
-      connectChannelDragSource: f,
-      connectUserDropTarget: h,
+      connectChannelDragSource: h,
+      connectUserDropTarget: f,
       connectDragPreview: g,
       canReorderChannel: m,
       canMoveMembers: b,
@@ -453,7 +453,7 @@ function ei(e) {
       bypassLimit: k.Z.can(q.Plq.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
-  }), f = (0, a.e7)([B.Z], () => B.Z.hasVideo(n.id)), g = (0, h.ZP)(n), _ = (0, y.ZP)(n), O = (0, P.qY)(n.id), {
+  }), h = (0, a.e7)([B.Z], () => B.Z.hasVideo(n.id)), g = (0, f.ZP)(n), _ = (0, y.ZP)(n), O = (0, P.qY)(n.id), {
     enabled: v
   } = m.W.useExperiment({
     guildId: t.id,
@@ -488,7 +488,7 @@ function ei(e) {
     channelName: _,
     embeddedApps: g,
     embeddedActivityType: q.IIU.PLAYING,
-    video: f,
+    video: h,
     hasActiveEvent: null != O,
     isSubscriptionGated: C,
     needSubscriptionToAccess: E

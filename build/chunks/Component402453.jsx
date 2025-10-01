@@ -19,7 +19,8 @@ let a = {
       NEW: "New",
       BETA: "Beta",
       EARLY_ACCESS: "Early Access",
-      BILLING_TRIAL_FREE_TRIAL_TEXT: "Free Trial"
+      BILLING_TRIAL_FREE_TRIAL_TEXT: "Free Trial",
+      MODAL_DONT_SHOW_AGAIN: "Don't show again"
     },
     theme: "light",
     saturation: .5,

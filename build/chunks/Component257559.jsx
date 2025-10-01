@@ -7,7 +7,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
-  Chunk82659 = require("./82659.jsx"),
+  Chunk793030 = require("./793030.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk332148 = require("./332148.js"),
@@ -157,7 +157,7 @@ class T extends Chunk647438.PureComponent {
     }
     return (0, Chunk951288.jsx)(Chunk372900.Z.Provider, {
       value: s.guild_id,
-      children: (0, Chunk951288.jsx)(Chunk82659.Modal, {
+      children: (0, Chunk951288.jsx)(Chunk793030.Modal, {
         title: Chunk501517 ? Chunk388032.intl.string(Chunk388032.t.aIz1oa) : Chunk388032.intl.string(Chunk388032.t.MWMcg4),
         subtitle: Chunk699516,
         actions: [{

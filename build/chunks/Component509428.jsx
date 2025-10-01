@@ -6,8 +6,8 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk238651 = require("./238651.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk399606 = require("./399606.js"),
-  Chunk667202 = require("./667202.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk100527 = require("./100527.js"),
   Chunk906732 = require("./906732.jsx"),
@@ -35,7 +35,7 @@ let m = t => {
     overrideDescription: N,
     itemConsumed: B = true,
     purchaseType: P = k.o8.ORB
-  } = t, R = (0, a.e7)([l.Z], () => l.Z.purchases), T = (0, C.o)(s, R), Z = (0, x.W)(s, T), {
+  } = t, R = (0, r.e7)([l.Z], () => l.Z.purchases), T = (0, C.o)(s, R), Z = (0, x.W)(s, T), {
     analyticsLocations: b
   } = (0, d.ZP)([...y, u.Z.COLLECTIBLES_COLLECTED_MODAL]);
   o.useEffect(() => {
@@ -97,7 +97,7 @@ let m = t => {
         ref: V,
         className: O.confettiCanvas,
         environment: $
-      }), (0, n.jsx)(r.ExpressiveModal, {
+      }), (0, n.jsx)(a.ExpressiveModal, {
         graphic: {
           type: "dynamic",
           component: c.AX$.COLLECTIBLES_PREVIEW,

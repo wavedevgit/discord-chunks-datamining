@@ -5,8 +5,8 @@ require.d(exports, {
 }), require("./388685.js"), require("./781311.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk82659 = require("./82659.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk794433 = require("./794433.jsx"),
   Chunk881052 = require("./881052.js"),
@@ -28,7 +28,7 @@ function h(e) {
     onClose: r,
     roleId: h,
     guildId: y
-  } = e, k = (0, i.e7)([w.Z], () => w.Z.getRole(h), [h]), [T, C] = n.useState(""), [M, v] = n.useState({}), [E, Z] = n.useState(false), [S, H] = n.useState(null), B = n.useRef(null);
+  } = e, k = (0, l.e7)([w.Z], () => w.Z.getRole(h), [h]), [T, C] = n.useState(""), [M, v] = n.useState({}), [E, Z] = n.useState(false), [S, H] = n.useState(null), B = n.useRef(null);
   n.useEffect(() => {
     d.Z.requestMembers(y, T.trim().toLowerCase(), x._4)
   }, [y, T]);
@@ -79,7 +79,7 @@ function h(e) {
     members: A,
     getRichTag: U,
     maxPendingRows: _.ey,
-    children: (0, a.jsx)(l.Modal, {
+    children: (0, a.jsx)(i.Modal, {
       onClose: r,
       transitionState: t,
       title: p.intl.string(p.t["ZYOK4+"]),

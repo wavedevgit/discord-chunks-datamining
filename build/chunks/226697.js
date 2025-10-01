@@ -1,3 +1,3 @@
 /** Chunk was on 40152 **/
 /** chunk id: 226697, original params: p (module,exports,require) **/
-module.exports = JSON.parse('{"0vTx7u":"リロード","hDvmYG":"リロード"}')
+module.exports = JSON.parse('{"b7Oqdn":"別の方法を選択","ar3a3t":"ご提供いただいた情報は年齢層の確認のみに使用され、その後削除されます。","0vTx7u":"リロード","XYYm+/":"別の年齢確認方法を選択","rVLCwM":"別の方法を選択","RpMIT0":["Discordは年齢層を使用して、特定のコンテンツをご利用いただけるかどうかを決定します。",[8,"$link",["詳細はこちら"],[[1,"handleOnHelpUrlHook"]]]],"eJmat7":"一般的に最も迅速で、全て自動で行われます。必要なのはカメラのみです。","2yLvkZ":"動画の自撮りを撮影","ZdmRwc":"運転免許証やパスポートなどの身分証が必要です。その後、本人確認のために写真の自撮りを行います。","dwkwo6":"身分証をスキャン","cR6339":"利用できる年齢確認方法がありません。これはエラーの可能性があります。","hDvmYG":"リロード"}')

@@ -5,8 +5,8 @@ require.d(exports, {
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk434333 = require("./434333.jsx"),
-  Chunk82659 = require("./82659.jsx"),
   Chunk63063 = require("./63063.js"),
   Chunk74538 = require("./74538.js"),
   Chunk45474 = require("./45474.js"),
@@ -59,7 +59,7 @@ let p = () => {
       disabled: P,
       variant: "critical-primary",
       loading: P
-    }), (0, Chunk951288.jsx)(Chunk82659.Modal, {
+    }), (0, Chunk951288.jsx)(Chunk793030.Modal, {
       size: "md",
       transitionState: exports,
       title: "".concat(Chunk388032.intl.format(Chunk388032.t.LZunzc, {

@@ -5,8 +5,8 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk82659 = require("./82659.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk660216 = require("./660216.js"),
   Chunk825209 = require("./825209.jsx"),
@@ -23,7 +23,7 @@ function g(e) {
   let {
     transitionState: n,
     onClose: g
-  } = e, m = (0, a.e7)([b.ZP], () => b.ZP.getKeybindForAction(O.kg4.SOUNDBOARD_HOLD)), [h, j] = i.useState(null != (t = null == m ? true : m.shortcut) ? t : []), v = i.useCallback(() => {
+  } = e, m = (0, o.e7)([b.ZP], () => b.ZP.getKeybindForAction(O.kg4.SOUNDBOARD_HOLD)), [h, j] = i.useState(null != (t = null == m ? true : m.shortcut) ? t : []), v = i.useCallback(() => {
     if (0 === h.length) return null != m && s.Z.deleteKeybind(m.id), g();
     if (null == m) s.Z.addKeybind({
       action: O.kg4.SOUNDBOARD_HOLD,
@@ -77,7 +77,7 @@ function g(e) {
     onClick: v,
     variant: "primary"
   }], [g, v]);
-  return (0, r.jsxs)(o.Modal, {
+  return (0, r.jsxs)(a.Modal, {
     transitionState: n,
     title: f.intl.string(f.t["0Osu39"]),
     actions: w,

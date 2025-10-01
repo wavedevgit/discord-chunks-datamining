@@ -17,9 +17,9 @@ var Chunk951288 = require("./951288.js"),
   o = require.n(Chunk120356),
   Chunk593473 = require("./593473.js"),
   Chunk843611 = require("./843611.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk993365 = require("./993365.js"),
-  Chunk257465 = require("./257465.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk686546 = require("./686546.jsx"),
   Chunk252618 = require("./252618.js"),
@@ -113,7 +113,7 @@ function j(e) {
       variant: "heading-lg/bold",
       className: N.text,
       children: t
-    }), null != n ? n : null, a ? (0, r.jsx)(u.x, {
+    }), null != n ? n : null, a ? (0, r.jsx)(d.x, {
       variant: "text-sm/normal",
       color: "text-muted",
       className: N.cta,
@@ -140,7 +140,7 @@ function k(e) {
       application_id: null == n ? true : n.id,
       guild_id: null == t ? true : t.id
     }))
-  }, [o, null == n ? true : n.id, null == t ? true : t.id]), l = h.z8.getField("entrypoint"), u = i.useCallback(() => {
+  }, [o, null == n ? true : n.id, null == t ? true : t.id]), l = h.z8.getField("entrypoint"), c = i.useCallback(() => {
     null == o || o(), O.default.track(A.rMx.OAUTH2_AUTHORIZE_SUCCESS_CLOSE_CLICKED, {
       application_id: null == n ? true : n.id
     })
@@ -152,11 +152,11 @@ function k(e) {
         application_id: n.id
       })
     }))
-  }, [null == n ? true : n.id, o, l]), _ = (0, c.e7)([y.Z, E.Z], () => E.Z.getChannel(y.Z.getChannelId())), p = (0, c.e7)([b.Z], () => b.Z.can(A.Plq.SEND_MESSAGES, _)), v = null != t, T = null == t && p && (!d || null != l), N = [];
+  }, [null == n ? true : n.id, o, l]), _ = (0, u.e7)([y.Z, E.Z], () => E.Z.getChannel(y.Z.getChannelId())), p = (0, u.e7)([b.Z], () => b.Z.can(A.Plq.SEND_MESSAGES, _)), v = null != t, T = null == t && p && (!d || null != l), N = [];
   return (null != t || null != o) && (null != o && N.push({
     variant: "secondary",
     text: C.intl.string(C.t.cpT0Cg),
-    onClick: u
+    onClick: c
   }), v && N.push({
     variant: "primary",
     text: (null == t ? true : t.name.length) > 30 ? C.intl.string(C.t.M35zFB) : C.intl.format(C.t.UdYYPz, {
@@ -193,7 +193,7 @@ function U(e) {
     }) : C.intl.format(C.t.vTVC5e, {
       installedApplicationName: null == n ? true : n.name
     }) : C.intl.string(C.t["Dp+rgI"]), [n, t]),
-    l = (0, r.jsx)(u.x, {
+    l = (0, r.jsx)(d.x, {
       variant: "text-md/normal",
       className: N.authorizedSuccessSubtext,
       children: s
@@ -247,7 +247,7 @@ function G(e) {
           children: C.intl.format(C.t["1Q+p1t"], {
             appName: t.name
           })
-        }), (0, r.jsx)(u.x, {
+        }), (0, r.jsx)(d.x, {
           variant: "text-md/normal",
           color: "text-muted",
           children: C.intl.format(C.t.Mr7x5e, {
@@ -282,7 +282,7 @@ function F() {
   return (0, Chunk951288.jsx)(Chunk787025.G, {
     removeChildWrapper: true,
     children: (0, Chunk951288.jsx)(Chunk787025.j, {
-      transitionState: Chunk257465.Dv.ENTERED,
+      transitionState: Chunk793030.Dvm.ENTERED,
       hideHeader: true,
       children: (0, Chunk951288.jsx)(U, {
         guild: null == (e = require.state) ? true : module.guild,
@@ -308,7 +308,7 @@ function V(e) {
   return (0, r.jsx)(S.G, {
     removeChildWrapper: true,
     children: (0, r.jsx)(S.j, {
-      transitionState: d.Dv.ENTERED,
+      transitionState: c.Dvm.ENTERED,
       hideHeader: true,
       children: (0, r.jsx)(Z, {
         message: l,

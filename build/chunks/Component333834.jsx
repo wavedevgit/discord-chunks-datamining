@@ -110,11 +110,11 @@ function D(e) {
     loadMore: l,
     renderLoadingState: a,
     renderMessageGroup: d,
-    scrollerClassName: h,
+    scrollerClassName: f,
     className: g,
     listName: I,
     ignoreGrouping: N = false
-  } = e, D = (0, y.fJ)(), M = i.useRef(null), L = (0, f.Z)(I, M), {
+  } = e, D = (0, y.fJ)(), M = i.useRef(null), L = (0, h.Z)(I, M), {
     entrypoint: k,
     notificationCenterVariant: U
   } = (0, O.pN)({
@@ -312,7 +312,7 @@ function D(e) {
               var t;
               M.current = e, i.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
             },
-            className: o()(w.messagesPopout, h),
+            className: o()(w.messagesPopout, f),
             onScroll: K,
             fade: true
           }, l), n = n = {

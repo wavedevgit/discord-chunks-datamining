@@ -5,8 +5,8 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk399606 = require("./399606.js"),
-  Chunk82659 = require("./82659.jsx"),
   Chunk493773 = require("./493773.js"),
   Chunk100527 = require("./100527.js"),
   Chunk906732 = require("./906732.jsx"),
@@ -27,7 +27,7 @@ function Z(t) {
     onClose: n,
     transitionState: Z,
     guildId: h
-  } = t, k = (0, r.e7)([d.default], () => d.default.getId()), p = (0, r.e7)([_.ZP], () => _.ZP.getMember(h, k), [h, k]), N = (0, r.e7)([c.Z], () => c.Z.getGuild(h), [h]), T = null != (i = null == N ? true : N.name) ? i : "", D = (0, g.no)(p), {
+  } = t, k = (0, a.e7)([d.default], () => d.default.getId()), p = (0, a.e7)([_.ZP], () => _.ZP.getMember(h, k), [h, k]), N = (0, a.e7)([c.Z], () => c.Z.getGuild(h), [h]), T = null != (i = null == N ? true : N.name) ? i : "", D = (0, g.no)(p), {
     analyticsLocations: I
   } = (0, s.ZP)(o.Z.AUTOMOD_PROFILE_QUARANTINE_ALERT), [R, S] = (0, A.ww)({
     guildId: h,
@@ -49,7 +49,7 @@ function Z(t) {
     })
   }), e.useEffect(() => {
     if (null == N) return void n()
-  }, [N, n]), null == N) ? null : (0, l.jsx)(a.Modal, {
+  }, [N, n]), null == N) ? null : (0, l.jsx)(r.Modal, {
     transitionState: Z,
     onClose: n,
     title: O.intl.string(O.t["P+6K9P"]),

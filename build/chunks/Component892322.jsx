@@ -1,64 +1,63 @@
 /** Chunk was on 79764 **/
 /** chunk id: 892322, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => m
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk512722 = require("./512722.js"),
   s = require.n(Chunk512722),
-  Chunk369585 = require("./369585.jsx"),
-  Chunk103866 = require("./103866.jsx"),
+  Chunk793030 = require("./793030.js"),
   Chunk481060 = require("./481060.js"),
   Chunk565138 = require("./565138.jsx"),
   Chunk703656 = require("./703656.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk475608 = require("./475608.js");
 
-function x(e) {
+function m(e) {
   let {
     directoryGuildName: t,
     guildToAdd: n,
     isExistingGuildFlow: l,
-    onClose: x
+    onClose: m
   } = e;
   return s()(null != n, "Missing guild in Hub add guild confirmation"), (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(a.f, {
+    children: [(0, i.jsx)(r.fef, {
       children: (0, i.jsxs)("div", {
-        className: m.content,
-        children: [(0, i.jsx)(c.Z, {
+        className: u.content,
+        children: [(0, i.jsx)(o.Z, {
           guild: n,
-          size: c.Z.Sizes.XLARGE,
+          size: o.Z.Sizes.XLARGE,
           active: true
-        }), (0, i.jsx)(o.X6q, {
-          className: m.title,
+        }), (0, i.jsx)(a.X6q, {
+          className: u.title,
           variant: "heading-xl/semibold",
-          children: u.intl.string(u.t.CueiPT)
-        }), (0, i.jsx)(o.Text, {
+          children: d.intl.string(d.t.CueiPT)
+        }), (0, i.jsx)(a.Text, {
           color: "header-secondary",
           variant: "text-md/normal",
-          children: l ? u.intl.formatToPlainString(u.t.R7Pqn5, {
+          children: l ? d.intl.formatToPlainString(d.t.R7Pqn5, {
             guildName: t
-          }) : u.intl.formatToPlainString(u.t.eIxPSk, {
+          }) : d.intl.formatToPlainString(d.t.eIxPSk, {
             guildName: t
           })
         })]
       })
-    }), (0, i.jsx)(r.G, {
+    }), (0, i.jsx)(r.Go$, {
       actionsFullWidth: true,
       actions: l ? [{
-        text: u.intl.string(u.t["X0WK+/"]),
+        text: d.intl.string(d.t["X0WK+/"]),
         variant: "primary",
-        onClick: x
+        onClick: m
       }] : [{
-        text: u.intl.string(u.t["X/VABg"]),
+        text: d.intl.string(d.t["X/VABg"]),
         variant: "secondary",
-        onClick: x
+        onClick: m
       }, {
-        text: u.intl.string(u.t.DymAQk),
+        text: d.intl.string(d.t.DymAQk),
         variant: "primary",
         onClick: () => {
-          (0, d.XU)(n.id), null == x || x()
+          (0, c.XU)(n.id), null == m || m()
         }
       }]
     })]

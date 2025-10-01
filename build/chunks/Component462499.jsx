@@ -1,15 +1,14 @@
 /** Chunk was on 84725 **/
 /** chunk id: 462499, original params: e,n,l (module,exports,require) **/
 require.d(exports, {
-  default: () => _
+  default: () => f
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk658722 = require("./658722.js"),
   t = require.n(Chunk658722),
+  Chunk793030 = require("./793030.js"),
   Chunk399606 = require("./399606.js"),
-  Chunk257465 = require("./257465.jsx"),
-  Chunk369585 = require("./369585.jsx"),
   Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk471445 = require("./471445.js"),
@@ -24,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk353441 = require("./353441.js");
 
-function f(e, n, l, a) {
+function b(e, n, l, a) {
   return {
     channelId: e.value,
     title: n,
@@ -34,165 +33,165 @@ function f(e, n, l, a) {
   }
 }
 
-function _(e) {
+function f(e) {
   var n, l;
   let {
     transitionState: i,
-    onClose: _,
-    resourceChannel: N,
-    guildId: Z,
-    onSave: y,
-    onDelete: G,
-    onIconUpload: S
-  } = e, [X, P] = r.useState(null != (n = null == N ? true : N.title) ? n : ""), [U, B] = r.useState(null != (l = null == N ? true : N.description) ? l : ""), [R, W] = r.useState(function(e) {
+    onClose: f,
+    resourceChannel: _,
+    guildId: N,
+    onSave: Z,
+    onDelete: y,
+    onIconUpload: G
+  } = e, [S, X] = r.useState(null != (n = null == _ ? true : _.title) ? n : ""), [P, U] = r.useState(null != (l = null == _ ? true : _.description) ? l : ""), [B, R] = r.useState(function(e) {
     if (null == e) return null;
-    let n = p.Z.getChannel(e.channelId);
+    let n = x.Z.getChannel(e.channelId);
     return null == n ? null : {
       value: n.id,
       label: n.name
     }
-  }(N)), q = (0, s.e7)([C.Z], () => {
+  }(_)), W = (0, o.e7)([j.Z], () => {
     var e;
-    return null == (e = C.Z.getResourceChannel(null == N ? true : N.channelId)) ? true : e.icon
-  }), H = (0, s.Wu)([C.Z], () => {
+    return null == (e = j.Z.getResourceChannel(null == _ ? true : _.channelId)) ? true : e.icon
+  }), q = (0, o.Wu)([j.Z], () => {
     var e, n;
-    return (null != (n = null == (e = C.Z.getSettings()) ? true : e.resourceChannels) ? n : []).map(e => e.channelId)
-  }), K = X.length < h.n || null == R, L = r.useCallback(() => {
-    null == R || X.length <= 0 || (y(f(R, X, U, q)), _())
-  }, [y, _, X, R, q, U]), O = r.useCallback(() => {
-    null == G || G(), _()
-  }, [G, _]), E = r.useCallback(e => {
-    W(e)
-  }, [W]), J = r.useCallback(e => Promise.resolve(g.ZP.getSelectableChannels(Z).filter(n => (0, h.k3)(n.channel) && !H.includes(n.channel.id) && t()(e, n.channel.name)).map(e => ({
+    return (null != (n = null == (e = j.Z.getSettings()) ? true : e.resourceChannels) ? n : []).map(e => e.channelId)
+  }), H = S.length < m.n || null == B, K = r.useCallback(() => {
+    null == B || S.length <= 0 || (Z(b(B, S, P, W)), f())
+  }, [Z, f, S, B, W, P]), L = r.useCallback(() => {
+    null == y || y(), f()
+  }, [y, f]), O = r.useCallback(e => {
+    R(e)
+  }, [R]), E = r.useCallback(e => Promise.resolve(p.ZP.getSelectableChannels(N).filter(n => (0, m.k3)(n.channel) && !q.includes(n.channel.id) && t()(e, n.channel.name)).map(e => ({
     value: e.channel.id,
     label: e.channel.name
-  }))), [Z, H]), T = r.useCallback(e => {
-    if (null == e || null == Z) return null;
-    let n = p.Z.getChannel(e.value),
-      l = v.Z.getGuild(Z);
+  }))), [N, q]), J = r.useCallback(e => {
+    if (null == e || null == N) return null;
+    let n = x.Z.getChannel(e.value),
+      l = g.Z.getGuild(N);
     if (null == n || null == l) return null;
-    let r = (0, m.KS)(n, l);
+    let r = (0, u.KS)(n, l);
     return null == r ? null : (0, a.jsx)(r, {
       size: "xs",
       color: "currentColor",
-      className: b.channelIcon
+      className: I.channelIcon
     })
-  }, [Z]), w = r.useCallback(e => {
-    null != S && null != R && S(f(R, X, U), e)
-  }, [R, X, S, U]), z = r.useCallback(() => null == q || null == R ? null : j.ZP.getResourceChannelIconURL({
-    channelId: R.value,
-    icon: q
-  }), [R, q]), F = r.useMemo(() => [{
+  }, [N]), T = r.useCallback(e => {
+    null != G && null != B && G(b(B, S, P), e)
+  }, [B, S, G, P]), w = r.useCallback(() => null == W || null == B ? null : v.ZP.getResourceChannelIconURL({
+    channelId: B.value,
+    icon: W
+  }), [B, W]), z = r.useMemo(() => [{
     variant: "secondary",
-    text: I.intl.string(I.t["ETE/oK"]),
-    onClick: _
+    text: k.intl.string(k.t["ETE/oK"]),
+    onClick: f
   }, {
     variant: "primary",
-    text: I.intl.string(I.t.R3BPHx),
-    onClick: L,
-    disabled: K
-  }], [L, K, _]);
-  return (0, a.jsxs)(o.IX, {
+    text: k.intl.string(k.t.R3BPHx),
+    onClick: K,
+    disabled: H
+  }], [K, H, f]);
+  return (0, a.jsxs)(s.IX, {
     transitionState: i,
-    onClose: _,
+    onClose: f,
     children: [(0, a.jsx)("div", {
-      className: b.closeButton,
-      children: (0, a.jsx)(d.PZ7, {
-        onClick: _
+      className: I.closeButton,
+      children: (0, a.jsx)(c.PZ7, {
+        onClick: f
       })
     }), (0, a.jsxs)("div", {
-      className: b.containerWithHeader,
+      className: I.containerWithHeader,
       children: [(0, a.jsx)("div", {
-        className: b.splitGroup,
+        className: I.splitGroup,
         children: (0, a.jsx)("div", {
-          className: b.header,
-          children: (0, a.jsx)(u.X6q, {
+          className: I.header,
+          children: (0, a.jsx)(d.X6q, {
             variant: "heading-md/semibold",
             color: "header-primary",
-            children: I.intl.string(I.t.iREYFB)
+            children: k.intl.string(k.t.iREYFB)
           })
         })
       }), (0, a.jsxs)("div", {
-        className: b.formGroup,
-        children: [(0, a.jsxs)(u.X6q, {
+        className: I.formGroup,
+        children: [(0, a.jsxs)(d.X6q, {
           variant: "heading-md/semibold",
           color: "header-primary",
-          children: [I.intl.string(I.t.nPa4Ji), (0, a.jsx)(k.Z, {})]
-        }), (0, a.jsx)(u.VcW, {
-          value: R,
-          renderOptionPrefix: T,
-          options: J,
-          onChange: E
-        }), (0, a.jsx)(u.Text, {
+          children: [k.intl.string(k.t.nPa4Ji), (0, a.jsx)(C.Z, {})]
+        }), (0, a.jsx)(d.VcW, {
+          value: B,
+          renderOptionPrefix: J,
+          options: E,
+          onChange: O
+        }), (0, a.jsx)(d.Text, {
           variant: "text-xs/medium",
           color: "text-muted",
-          children: I.intl.string(I.t.eNDtJC)
+          children: k.intl.string(k.t.eNDtJC)
         })]
       }), (0, a.jsx)("div", {
-        className: b.separator
+        className: I.separator
       }), (0, a.jsxs)("div", {
-        className: b.formGroup,
-        children: [(0, a.jsxs)(u.X6q, {
+        className: I.formGroup,
+        children: [(0, a.jsxs)(d.X6q, {
           variant: "heading-md/semibold",
           color: "header-primary",
-          children: [I.intl.string(I.t["lFy+aW"]), (0, a.jsx)(k.Z, {})]
-        }), (0, a.jsx)(u.oil, {
-          value: X,
-          onChange: P,
-          placeholder: I.intl.string(I.t.XKUimJ),
-          maxLength: h.am
+          children: [k.intl.string(k.t["lFy+aW"]), (0, a.jsx)(C.Z, {})]
+        }), (0, a.jsx)(d.oil, {
+          value: S,
+          onChange: X,
+          placeholder: k.intl.string(k.t.XKUimJ),
+          maxLength: m.am
         })]
       }), (0, a.jsx)("div", {
-        className: b.separator
+        className: I.separator
       }), (0, a.jsxs)("div", {
-        className: b.formGroup,
-        children: [(0, a.jsx)(u.X6q, {
+        className: I.formGroup,
+        children: [(0, a.jsx)(d.X6q, {
           variant: "heading-md/semibold",
           color: "header-primary",
-          children: I.intl.string(I.t.CnkilJ)
-        }), (0, a.jsx)(u.Kx8, {
-          value: U,
-          onChange: B,
-          placeholder: I.intl.string(I.t.na0V4O),
-          maxLength: h.Vu
+          children: k.intl.string(k.t.CnkilJ)
+        }), (0, a.jsx)(d.Kx8, {
+          value: P,
+          onChange: U,
+          placeholder: k.intl.string(k.t.na0V4O),
+          maxLength: m.Vu
         })]
       }), (0, a.jsx)("div", {
-        className: b.separator
+        className: I.separator
       }), (0, a.jsxs)("div", {
-        className: b.splitGroup,
+        className: I.splitGroup,
         children: [(0, a.jsxs)("div", {
-          children: [(0, a.jsx)(u.X6q, {
+          children: [(0, a.jsx)(d.X6q, {
             variant: "heading-md/semibold",
             color: "header-primary",
-            children: I.intl.string(I.t.CB6dys)
-          }), (0, a.jsx)(u.Text, {
+            children: k.intl.string(k.t.CB6dys)
+          }), (0, a.jsx)(d.Text, {
             variant: "text-xs/medium",
             color: "text-muted",
-            children: I.intl.string(I.t.Kcdk7O)
+            children: k.intl.string(k.t.Kcdk7O)
           })]
         }), (0, a.jsx)("div", {
-          children: (0, a.jsx)(x.Z, {
-            className: b.uploader,
-            imageClassName: b.uploadImage,
-            image: q,
-            makeURL: z,
-            icon: (0, a.jsx)(u.rG2, {
+          children: (0, a.jsx)(h.Z, {
+            className: I.uploader,
+            imageClassName: I.uploadImage,
+            image: W,
+            makeURL: w,
+            icon: (0, a.jsx)(d.rG2, {
               size: "md",
               color: "currentColor"
             }),
             hideSize: true,
-            onChange: w,
-            iconClassName: b.uploadImageIcon,
-            showIcon: null == q
+            onChange: T,
+            iconClassName: I.uploadImageIcon,
+            showIcon: null == W
           })
         })]
       })]
-    }), (0, a.jsx)(c.G, {
-      actions: F,
-      leading: null != N ? (0, a.jsx)(u.Avr, {
-        text: I.intl.string(I.t.N86XcH),
+    }), (0, a.jsx)(s.Go$, {
+      actions: z,
+      leading: null != _ ? (0, a.jsx)(d.Avr, {
+        text: k.intl.string(k.t.N86XcH),
         variant: "critical",
-        onClick: O
+        onClick: L
       }) : true
     })]
   })

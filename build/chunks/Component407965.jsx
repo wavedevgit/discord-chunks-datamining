@@ -7,8 +7,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
   l = require.n(Chunk512722),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk82659 = require("./82659.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk484459 = require("./484459.js"),
   Chunk594174 = require("./594174.js"),
@@ -47,7 +47,7 @@ let P = t => {
     }, [v]);
     let y = (0, Chunk847903.Z)(),
       S = "US" === y.ipCountryCode && "CA" === y.ipSubdivisionCode;
-    if (Chunk181679) return (0, Chunk951288.jsx)(Chunk82659.Modal, {
+    if (Chunk181679) return (0, Chunk951288.jsx)(Chunk793030.Modal, {
       transitionState: module,
       title: "",
       actions: [],
@@ -69,7 +69,7 @@ let P = t => {
       text: S ? Chunk388032.intl.string(Chunk388032.t.PfnxqK) : Chunk388032.intl.string(Chunk388032.t["3PatS0"]),
       onClick: () => Chunk512722(Chunk45474.R.CONFIRM),
       variant: "primary"
-    }), (0, Chunk951288.jsx)(Chunk82659.Modal, {
+    }), (0, Chunk951288.jsx)(Chunk793030.Modal, {
       transitionState: module,
       title: Chunk388032.intl.string(Chunk388032.t.PWq8TE),
       subtitle: Chunk388032.intl.formatToPlainString(Chunk388032.t.nsGVzs, {}),

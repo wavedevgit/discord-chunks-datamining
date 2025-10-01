@@ -2,7 +2,7 @@
 /** chunk id: 352065, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => g
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -12,12 +12,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk990547 = require("./990547.js"),
   Chunk793030 = require("./793030.js"),
   Chunk507274 = require("./507274.jsx"),
-  Chunk667137 = require("./667137.js"),
-  Chunk985316 = require("./985316.js"),
   Chunk163838 = require("./163838.js"),
-  Chunk525751 = require("./525751.js");
+  Chunk325380 = require("./325380.js");
 
-function h(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,20 +24,20 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
 }
 
-function g(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -50,49 +48,49 @@ function g(e, t) {
   return n
 }
 
-function E(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function b(e) {
+function g(e) {
   var t;
   let {
     transitionState: n,
     animationVariant: a = "default",
-    returnRef: h,
-    "aria-label": g,
-    onClose: b,
-    trackingProps: y,
-    children: O
-  } = e, v = i.useId(), I = i.useMemo(() => ({
-    id: v,
-    headingId: "heading-".concat(v),
-    onClose: b,
+    returnRef: _,
+    "aria-label": h,
+    onClose: g,
+    trackingProps: E,
+    children: b
+  } = e, y = i.useId(), O = i.useMemo(() => ({
+    id: y,
+    headingId: "heading-".concat(y),
+    onClose: g,
     dismissable: true
-  }), [v, b]), T = (0, f.hv)(n, a);
-  return (0, r.jsx)(d.t.Provider, {
-    value: I,
-    children: (0, r.jsx)(u.V, E(m({
-      id: v,
+  }), [y, g]), v = (0, c.hvB)(n, a);
+  return (0, r.jsx)(c.tCf.Provider, {
+    value: O,
+    children: (0, r.jsx)(u.V, m(p({
+      id: y,
       role: "dialog",
-      "aria-label": g,
-      "aria-labelledby": null != g ? true : I.headingId,
-      returnRef: h
-    }, y), {
-      impressionType: null != (t = null == y ? true : y.impressionType) ? t : l.ImpressionTypes.MODAL,
+      "aria-label": h,
+      "aria-labelledby": null != h ? true : O.headingId,
+      returnRef: _
+    }, E), {
+      impressionType: null != (t = null == E ? true : E.impressionType) ? t : l.ImpressionTypes.MODAL,
       children: (0, r.jsx)(c.y5t, {
         forceLevel: 1,
         children: (0, r.jsx)("div", {
-          className: _.outerContainer,
+          className: d.outerContainer,
           children: (0, r.jsx)(s.animated.div, {
             "data-mana-component": "layer-modal",
-            className: o()(p.container, _.modal),
-            style: T,
+            className: o()(f.container, d.modal),
+            style: v,
             children: (0, r.jsx)("div", {
-              className: _.modalContent,
-              children: O
+              className: d.modalContent,
+              children: b
             })
           })
         })

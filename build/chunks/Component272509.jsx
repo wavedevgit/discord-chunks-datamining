@@ -5,8 +5,8 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk704215 = require("./704215.js"),
-  Chunk667202 = require("./667202.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk266454 = require("./266454.js"),
   Chunk749681 = require("./749681.js"),
@@ -24,14 +24,14 @@ function C(t) {
     guildId: i,
     transitionState: C,
     onClose: h,
-    analyticsType: v = o.z.APP_DIRECTORY_UPSELL_MODAL
+    analyticsType: v = r.z.APP_DIRECTORY_UPSELL_MODAL
   } = t;
   return n.useEffect(() => {
     d.default.track(x.rMx.DISMISSIBLE_CONTENT_SHOWN, {
-      type: o.z[v],
+      type: r.z[v],
       guild_id: i
     })
-  }, [i, v]), (0, s.jsx)(r.ExpressiveModal, {
+  }, [i, v]), (0, s.jsx)(o.ExpressiveModal, {
     title: _.intl.string(_.t["2tv5YG"]),
     subtitle: _.intl.string(_.t.pgwlDw),
     transitionState: C,

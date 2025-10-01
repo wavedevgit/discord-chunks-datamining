@@ -8,9 +8,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk902704 = require("./902704.js"),
-  Chunk82659 = require("./82659.jsx"),
   Chunk477690 = require("./477690.js"),
   Chunk481060 = require("./481060.js"),
   Chunk596454 = require("./596454.jsx"),
@@ -44,7 +44,7 @@ function R(e) {
     emojiId: n,
     emojiName: l,
     className: r
-  } = e, o = (0, a.e7)([g.ZP], () => null != n ? g.ZP.getCustomEmojiById(n) : true);
+  } = e, o = (0, s.e7)([g.ZP], () => null != n ? g.ZP.getCustomEmojiById(n) : true);
   return (0, i.jsx)(h.Z, {
     emojiId: n,
     emojiName: l,
@@ -158,9 +158,9 @@ function L(e) {
     fromSubscriptionListing: n,
     existingChannelBenefits: r,
     existingIntangibleBenefits: o,
-    onSubmit: a,
+    onSubmit: s,
     onClose: d
-  } = e, h = n.role_benefits.benefits, [u, x] = l.useState(() => new Set(h)), f = l.useMemo(() => h.filter(k.rC), [h]), j = (0, S.Z)(f), g = l.useMemo(() => h.filter(k.lL), [h]), p = l.useMemo(() => new Set(j.filter(e => r.some(t => t.ref_id === e.ref_id))), [j, r]), _ = l.useMemo(() => new Set(g.filter(e => o.some(t => (0, s.Z)(e, t)))), [o, g]);
+  } = e, h = n.role_benefits.benefits, [u, x] = l.useState(() => new Set(h)), f = l.useMemo(() => h.filter(k.rC), [h]), j = (0, S.Z)(f), g = l.useMemo(() => h.filter(k.lL), [h]), p = l.useMemo(() => new Set(j.filter(e => r.some(t => t.ref_id === e.ref_id))), [j, r]), _ = l.useMemo(() => new Set(g.filter(e => o.some(t => (0, c.Z)(e, t)))), [o, g]);
 
   function b(e, t) {
     x(n => {
@@ -172,11 +172,11 @@ function L(e) {
   function v(e) {
     e.preventDefault();
     let t = h.filter(e => u.has(e));
-    a(t.filter(k.rC).filter(e => !p.has(e)), t.filter(k.lL).filter(e => !_.has(e))), d()
+    s(t.filter(k.rC).filter(e => !p.has(e)), t.filter(k.lL).filter(e => !_.has(e))), d()
   }
   return (0, i.jsx)("form", {
     onSubmit: v,
-    children: (0, i.jsxs)(c.Modal, {
+    children: (0, i.jsxs)(a.Modal, {
       transitionState: t,
       onClose: d,
       title: z.intl.format(z.t["7zpiYG"], {
@@ -282,7 +282,7 @@ function H(e) {
   let {
     guild: t,
     onSelect: n
-  } = e, r = (0, a.e7)([C.Z], () => C.Z.getSortedRoles(t.id)), o = (0, a.e7)([v.Z], () => v.Z.getCategories(t.id)), s = l.useMemo(() => o._categories.flatMap(e => o[e.channel.id].filter(e => {
+  } = e, r = (0, s.e7)([C.Z], () => C.Z.getSortedRoles(t.id)), o = (0, s.e7)([v.Z], () => v.Z.getCategories(t.id)), a = l.useMemo(() => o._categories.flatMap(e => o[e.channel.id].filter(e => {
     let {
       channel: t
     } = e;
@@ -295,12 +295,12 @@ function H(e) {
   })), [o]), c = l.useMemo(() => r.flatMap(e => {
     var t;
     if ((0, b.fI)(e) || (null == (t = e.tags) ? true : t.subscription_listing_id) != null || (0, b._N)(e, Z.TC2)) return [];
-    let n = (0, y.Z)(s, e).length;
+    let n = (0, y.Z)(a, e).length;
     return n > 0 ? {
       role: e,
       channelCount: n
     } : []
-  }), [r, s]);
+  }), [r, a]);
   return c.length > 0 ? (0, i.jsx)("div", {
     className: M.list,
     children: c.map(e => (0, i.jsx)(F, {
@@ -320,7 +320,7 @@ function K(e) {
     onClose: t,
     guildId: n,
     onSelect: l
-  } = e, r = (0, a.e7)([w.Z], () => w.Z.getGuild(n));
+  } = e, r = (0, s.e7)([w.Z], () => w.Z.getGuild(n));
   return null == r ? null : (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)(m.xBx, {
       "data-migration-pending": true,

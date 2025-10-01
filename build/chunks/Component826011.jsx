@@ -5,8 +5,8 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk667202 = require("./667202.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk572004 = require("./572004.js"),
   Chunk744993 = require("./744993.js"),
@@ -23,7 +23,7 @@ function h(e) {
     instance: s,
     onClose: h,
     transitionState: f
-  } = e, I = (0, a.e7)([d.Z], () => {
+  } = e, I = (0, i.e7)([d.Z], () => {
     var e;
     return null == (e = d.Z.getStateForGuild(t)) ? true : e.instructions[s.planId]
   });
@@ -35,7 +35,7 @@ function h(e) {
       (0, c.JG)(j), (0, l.showToast)((0, l.createToast)(x.intl.string(x.t["+5kSoa"]), l.ToastType.SUCCESS))
     }, [j]),
     N = (0, p.Z)(s.gameId, "cover");
-  return (0, r.jsx)(i.ExpressiveModal, {
+  return (0, r.jsx)(a.ExpressiveModal, {
     graphic: {
       src: N,
       type: "image"

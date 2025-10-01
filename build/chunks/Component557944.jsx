@@ -7,8 +7,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
   s = require.n(Chunk512722),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk82659 = require("./82659.jsx"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk749210 = require("./749210.js"),
@@ -31,7 +31,7 @@ function m(e) {
     searchPlaceholderText: v,
     selectedPermissionCount: E,
     transitionState: w
-  } = e, O = (0, a.e7)([b.Z], () => b.Z.getGuild(n), [n]);
+  } = e, O = (0, o.e7)([b.Z], () => b.Z.getGuild(n), [n]);
   s()(null != O, "");
   let [x, M] = r.useState(null), {
     query: T,
@@ -99,7 +99,7 @@ function m(e) {
     }, [N, O, I, D, Z]);
   return r.useEffect(() => {
     d.Z.requestMembers(n, true, 200, false)
-  }, [n]), (0, i.jsx)(o.Modal, {
+  }, [n]), (0, i.jsx)(a.Modal, {
     "aria-label": h.intl.string(h.t["N+InBQ"]),
     transitionState: w,
     title: m,

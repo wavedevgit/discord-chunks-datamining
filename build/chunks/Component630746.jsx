@@ -1,12 +1,10 @@
 /** Chunk was on 54965 **/
 /** chunk id: 630746, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  default: () => h
+  default: () => _
 });
 var Chunk951288 = require("./951288.js"),
-  Chunk257465 = require("./257465.jsx"),
-  Chunk213734 = require("./213734.jsx"),
-  Chunk37148 = require("./37148.jsx"),
+  Chunk793030 = require("./793030.js"),
   Chunk481060 = require("./481060.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk678328 = require("./678328.jsx"),
@@ -17,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk831119 = require("./831119.js");
 
-function f(e) {
+function g(e) {
   for (var n = 1; n < arguments.length; n++) {
     var t = null != arguments[n] ? arguments[n] : {},
       r = Object.keys(t);
@@ -36,7 +34,7 @@ function f(e) {
   return e
 }
 
-function _(e, n) {
+function x(e, n) {
   return n = null != n ? n : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, n) {
     var t = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -49,52 +47,52 @@ function _(e, n) {
   }), e
 }
 
-function j(e) {
+function f(e) {
   let {
     step: n,
     setFooterNode: t
-  } = (0, u.aj)(), {
-    title: s,
-    subtitle: j
+  } = (0, c.aj)(), {
+    title: a,
+    subtitle: f
   } = function(e) {
     switch (e) {
-      case m.Vb.SELECT_GAME:
+      case d.Vb.SELECT_GAME:
         return {
-          title: g.intl.string(p.default.DG1SHB), subtitle: g.intl.string(p.default.hkWuWF)
+          title: m.intl.string(u.default.DG1SHB), subtitle: m.intl.string(u.default.hkWuWF)
         };
-      case m.Vb.SERVER_SETTINGS:
+      case d.Vb.SERVER_SETTINGS:
         return {
-          title: g.intl.string(p.default.Eonh9P)
+          title: m.intl.string(u.default.Eonh9P)
         }
     }
   }(n);
-  return (0, r.jsxs)(i.IX, _(f({}, e), {
+  return (0, r.jsxs)(i.IX, x(g({}, e), {
     size: "lg",
-    children: [(0, r.jsx)(a.x, {
-      title: s,
-      subtitle: j
-    }), (0, r.jsx)(o.zJl, {
-      className: x.modalContent,
+    children: [(0, r.jsx)(i.xBx, {
+      title: a,
+      subtitle: f
+    }), (0, r.jsx)(l.zJl, {
+      className: p.modalContent,
       style: {
-        width: m.M4
+        width: d.M4
       },
       children: (0, r.jsx)("div", {
         style: {
-          padding: m.hK
+          padding: d.hK
         },
-        children: (0, r.jsxs)(o.MyZ, {
-          width: m.Ne,
+        children: (0, r.jsxs)(l.MyZ, {
+          width: d.Ne,
           activeSlide: n,
-          children: [(0, r.jsx)(o.Mi4, {
-            id: m.Vb.SELECT_GAME,
-            children: (0, r.jsx)(c.Z, {})
-          }, m.Vb.SELECT_GAME), (0, r.jsx)(o.Mi4, {
-            id: m.Vb.SERVER_SETTINGS,
-            children: (0, r.jsx)(d.Z, {})
-          }, m.Vb.SERVER_SETTINGS)]
+          children: [(0, r.jsx)(l.Mi4, {
+            id: d.Vb.SELECT_GAME,
+            children: (0, r.jsx)(o.Z, {})
+          }, d.Vb.SELECT_GAME), (0, r.jsx)(l.Mi4, {
+            id: d.Vb.SERVER_SETTINGS,
+            children: (0, r.jsx)(s.Z, {})
+          }, d.Vb.SERVER_SETTINGS)]
         })
       })
-    }), (0, r.jsx)(l.m, {
+    }), (0, r.jsx)(i.mzw, {
       children: (0, r.jsx)("div", {
         ref: e => t(e)
       })
@@ -102,14 +100,14 @@ function j(e) {
   }))
 }
 
-function h(e) {
+function _(e) {
   let {
     analyticsLocations: n
-  } = (0, s.ZP)();
-  return (0, r.jsx)(s.Gt, {
+  } = (0, a.ZP)();
+  return (0, r.jsx)(a.Gt, {
     value: n,
-    children: (0, r.jsx)(u.KO, _(f({}, e), {
-      children: (0, r.jsx)(j, f({}, e))
+    children: (0, r.jsx)(c.KO, x(g({}, e), {
+      children: (0, r.jsx)(f, g({}, e))
     }))
   })
 }

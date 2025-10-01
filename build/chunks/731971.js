@@ -5,10 +5,10 @@ require.d(exports, {
   U1: () => y,
   XW: () => d,
   _J: () => m,
-  aP: () => h,
+  aP: () => f,
   e7: () => g,
   h6: () => _,
-  oE: () => f,
+  oE: () => h,
   pB: () => p,
   y: () => O,
   yr: () => v
@@ -106,10 +106,10 @@ let d = (0, Chunk879690.U)(e => ({
   p = (e, t, n) => {
     d.getState().initialize(e, t, n)
   },
-  f = () => {
+  h = () => {
     d.getState().reset()
   },
-  h = () => {
+  f = () => {
     let e = d.getState();
     return module.nickname !== c.nickname || module.dmsAllowed !== c.dmsAllowed || module.showActivity !== u(module.guildSize)
   },

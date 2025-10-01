@@ -6,9 +6,9 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk990547 = require("./990547.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk283693 = require("./283693.js"),
-  Chunk82659 = require("./82659.jsx"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk218613 = require("./218613.jsx"),
@@ -34,7 +34,7 @@ function y(e) {
     transitionState: T,
     onSubmit: N,
     onClose: B
-  } = e, [R, M] = a.useState(C.Sc2), [j, D] = a.useState(C.d4z.GUILD_TEXT), [S, k] = a.useState(""), [Z, G] = a.useState(false), A = (0, l.e7)([f.Z], () => f.Z.getGuild(y), [y]), H = (0, m.m)(y), O = (0, h.Ui)(A), U = a.useMemo(() => (function(e) {
+  } = e, [R, M] = a.useState(C.Sc2), [j, D] = a.useState(C.d4z.GUILD_TEXT), [S, k] = a.useState(""), [Z, G] = a.useState(false), A = (0, o.e7)([f.Z], () => f.Z.getGuild(y), [y]), H = (0, m.m)(y), O = (0, h.Ui)(A), U = a.useMemo(() => (function(e) {
     let {
       canCreateStageChannel: t,
       canCreateMediaChannel: n
@@ -99,7 +99,7 @@ function y(e) {
   })({
     canCreateStageChannel: H,
     canCreateMediaChannel: O
-  }), [H, O]), V = (0, l.e7)([g.Z], () => g.Z.getCategories(y)._categories, [y]), W = a.useMemo(() => V.map(e => {
+  }), [H, O]), V = (0, o.e7)([g.Z], () => g.Z.getCategories(y)._categories, [y]), W = a.useMemo(() => V.map(e => {
     let {
       channel: t
     } = e;
@@ -131,7 +131,7 @@ function y(e) {
           event: r.NetworkActionNames.CHANNEL_CREATE,
           properties: e => {
             var t, n;
-            return (0, o.iG)({
+            return (0, c.iG)({
               is_private: true,
               channel_id: null == e || null == (t = e.body) ? true : t.id,
               channel_type: null == e || null == (n = e.body) ? true : n.type
@@ -145,7 +145,7 @@ function y(e) {
         G(false)
       })
     },
-    children: (0, i.jsx)(c.Modal, {
+    children: (0, i.jsx)(l.Modal, {
       transitionState: T,
       title: I.intl.string(I.t["fUYU+v"]),
       onClose: B,

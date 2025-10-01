@@ -6,8 +6,8 @@ require.d(exports, {
 }), require("./415506.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk61247 = require("./61247.js"),
   Chunk793030 = require("./793030.js"),
-  Chunk747127 = require("./747127.js"),
   Chunk550656 = require("./550656.jsx"),
   Chunk464281 = require("./464281.js"),
   Chunk102725 = require("./102725.js"),
@@ -126,14 +126,14 @@ function y(e) {
   let {
     strategy: n = "clone",
     tag: r = "div",
-    children: a
+    children: o
   } = e, s = i.useContext(E);
   if (null == s) throw Error("TooltipTrigger must be used within TooltipRoot");
   let {
     triggerHandlers: c,
     triggerRef: u,
     tooltipId: d
-  } = s, f = i.isValidElement(a) ? a : null, p = (0, o.Z)(null == f || null == (t = f.props) ? true : t.ref, u);
+  } = s, f = i.isValidElement(o) ? o : null, p = (0, a.Z)(null == f || null == (t = f.props) ? true : t.ref, u);
   if ("clone" === n) return null == f ? null : (0, l.C9)(f, c, d, p);
   let m = h(_({}, c), {
     onFocus: (0, l.tS)(c.onFocus, e => {
@@ -147,7 +147,7 @@ function y(e) {
   });
   return (0, l.FX)({
     tag: r,
-    children: a,
+    children: o,
     triggerHandlers: m,
     triggerRef: u
   })
@@ -179,7 +179,7 @@ function v() {
   if (null == exports) throw Error("TooltipContent must be used within TooltipRoot");
   let {
     isVisible: n,
-    isRendered: o,
+    isRendered: a,
     handleExitComplete: c,
     onAnimationRest: d,
     tooltipId: f,
@@ -201,7 +201,7 @@ function v() {
   } = (0, Chunk793030.ZFG)();
   return v((e, i) => i ? (0, r.jsx)(s.N, {
     isVisible: n,
-    isRendered: o,
+    isRendered: a,
     targetElementRef: _,
     id: f,
     content: p,

@@ -6,8 +6,8 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk525769 = require("./525769.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk693789 = require("./693789.jsx"),
-  Chunk82659 = require("./82659.jsx"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk240872 = require("./240872.jsx"),
@@ -143,7 +143,7 @@ function x(e) {
       if (!(0, m.D$)(I, A)) return void u.Z.show({
         title: h.intl.string(h.t.HMrgcn),
         body: h.intl.string(h.t["Wxa/j4"]),
-        confirmColor: i.Tt.RED,
+        confirmColor: o.Tt.RED,
         confirmText: h.intl.string(h.t.TzJA4u),
         confirmVariant: "critical-primary",
         cancelText: h.intl.string(h.t["2BR5R0"]),
@@ -216,7 +216,7 @@ function x(e) {
       submitting: V,
       text: h.intl.string(h.t.JOj8Zm)
     }], [en, V]);
-  return (0, r.jsx)(o.Modal, {
+  return (0, r.jsx)(i.Modal, {
     transitionState: n,
     onClose: b,
     title: h.intl.string(h.t["GD/8X1"]),

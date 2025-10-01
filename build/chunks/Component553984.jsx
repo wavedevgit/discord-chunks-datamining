@@ -32,7 +32,7 @@ function g(e) {
         viewId: n
       })
     },
-    O = g === p.V5.ALL ? f.intl.string(f.t["2pAkDA"]) : f.intl.string(f.t.HcoRu7);
+    O = g === p.V5.ALL ? h.intl.string(h.t["2pAkDA"]) : h.intl.string(h.t.HcoRu7);
   return (0, r.jsx)(o.ua7, {
     position: "bottom",
     text: O,
@@ -56,8 +56,8 @@ function g(e) {
         }
         return e
       }({}, e), i = i = {
-        className: l()(t, h.headerButton, {
-          [h.enabled]: g === p.V5.BOOKMARKS
+        className: l()(t, f.headerButton, {
+          [f.enabled]: g === p.V5.BOOKMARKS
         }),
         "aria-label": O,
         onClick: _,

@@ -9,8 +9,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
   o = require.n(Chunk512722),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk82659 = require("./82659.jsx"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk893776 = require("./893776.js"),
@@ -74,7 +74,7 @@ function E(e) {
     let {
       body: t
     } = e, n = _.intl.string(_.t.XcrQNz);
-    null != t && t.email && (n = t.email), (0, u.h7j)(e => (0, r.jsx)(l.Modal, h({
+    null != t && t.email && (n = t.email), (0, u.h7j)(e => (0, r.jsx)(s.Modal, h({
       actions: [{
         variant: "primary",
         text: _.intl.string(_.t.BddRzc),
@@ -90,9 +90,9 @@ function b(e) {
   let {
     size: t,
     variant: n
-  } = e, a = (0, s.e7)([f.default], () => f.default.getCurrentUser());
+  } = e, a = (0, l.e7)([f.default], () => f.default.getCurrentUser());
   o()(null != a, "ResendEmailVerificationButton: currentUser cannot be undefined");
-  let [l, c] = i.useState(false), d = i.useCallback(() => {
+  let [s, c] = i.useState(false), d = i.useCallback(() => {
     c(true), E(a).then(() => c(false))
   }, [a]);
   return (0, r.jsx)(u.zxk, {
@@ -100,6 +100,6 @@ function b(e) {
     variant: n,
     onClick: d,
     text: _.intl.string(_.t.lm1UKi),
-    disabled: l
+    disabled: s
   })
 }

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk990547 = require("./990547.js"),
-  Chunk82659 = require("./82659.jsx"),
+  Chunk793030 = require("./793030.js"),
   Chunk481060 = require("./481060.js"),
   Chunk7557 = require("./7557.jsx"),
   Chunk200357 = require("./200357.jsx"),
@@ -62,7 +62,7 @@ class _ extends Chunk647438.PureComponent {
       disabled: "" === g,
       loading: _,
       onClick: this.handleAddPhone
-    }]), i = h ? Chunk388032.intl.string(Chunk388032.t.Xclkxs) : Chunk388032.intl.string(Chunk388032.t.uR76s7), (0, Chunk951288.jsx)(Chunk82659.Modal, {
+    }]), i = h ? Chunk388032.intl.string(Chunk388032.t.Xclkxs) : Chunk388032.intl.string(Chunk388032.t.uR76s7), (0, Chunk951288.jsx)(Chunk793030.Modal, {
       size: h ? "sm" : "md",
       title: Chunk647438,
       subtitle: module,

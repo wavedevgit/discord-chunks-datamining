@@ -8,8 +8,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk82659 = require("./82659.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk493683 = require("./493683.js"),
   Chunk493773 = require("./493773.js"),
@@ -116,7 +116,7 @@ let D = function(e) {
     setHasPendingChanges: o,
     closeOrShowDiscardChangesAlert: f,
     location: D
-  } = e, w = (0, a.e7)([b.Z], () => b.Z.getChannel(t)), C = null == w ? true : w.name, I = (0, m.cO)(w), [E, k] = l.useState(null != C ? C : ""), [N, T] = l.useState(true), S = true !== N, {
+  } = e, w = (0, c.e7)([b.Z], () => b.Z.getChannel(t)), C = null == w ? true : w.name, I = (0, m.cO)(w), [E, k] = l.useState(null != C ? C : ""), [N, T] = l.useState(true), S = true !== N, {
     analyticsLocations: R
   } = (0, h.ZP)(D, p.Z.GROUP_DM_EDIT_MODAL), Z = {
     channel_id: t,
@@ -153,7 +153,7 @@ let D = function(e) {
         }
         n()
       },
-      children: (0, i.jsx)(c.Modal, {
+      children: (0, i.jsx)(a.Modal, {
         title: g.intl.string(g.t["5Q9+/P"]),
         actions: [{
           text: g.intl.string(g.t["ETE/oK"]),

@@ -47,15 +47,15 @@ function v(e) {
           className: O.applicationLargeImage
         })
       })
-    } let f = null != (t = d.large_image) ? t : d.small_image,
-    h = (0, u.Z)(l),
-    b = h ? O.spotifyLargeImage : O.applicationLargeImage,
-    _ = null != f ? (0, r.jsx)("img", {
+    } let h = null != (t = d.large_image) ? t : d.small_image,
+    f = (0, u.Z)(l),
+    b = f ? O.spotifyLargeImage : O.applicationLargeImage,
+    _ = null != h ? (0, r.jsx)("img", {
       alt: null != (n = d.large_text) ? n : "",
-      src: (0, g.xF)(p, f, [128, 128]),
+      src: (0, g.xF)(p, h, [128, 128]),
       className: b
     }) : null;
-  return h && null != s ? (_ = (0, r.jsx)(c.P3F, {
+  return f && null != s ? (_ = (0, r.jsx)(c.P3F, {
     className: O.clickable,
     onClick: () => {
       s(l, o.id)
@@ -118,7 +118,7 @@ function x(e) {
     user: n,
     onOpenSpotifyArtist: i
   } = e, l = null == t ? true : t.details, a = null == t ? true : t.state, s = l;
-  return (null != t && (0, u.Z)(t) && null != a && (s = [(0, r.jsx)(f.Z, {
+  return (null != t && (0, u.Z)(t) && null != a && (s = [(0, r.jsx)(h.Z, {
     artists: a,
     linkClassName: O.bodyLink,
     canOpen: null != t.sync_id,
@@ -171,11 +171,11 @@ function S(e) {
     channel: o,
     sortedVoiceStates: c,
     onOpenSpotifyTrack: d,
-    onOpenSpotifyArtist: f,
+    onOpenSpotifyArtist: h,
     onOpenSpotifyAlbum: g
   } = e, m = [];
   null != n ? m = Array.from(n.embeddedActivity.userIds) : (0, u.Z)(t) && null != c && (m = c.map(e => e.user.id));
-  let S = (0, a.Wu)([h.default], () => m.map(e => h.default.getUser(e)).filter(b.lm)),
+  let S = (0, a.Wu)([f.default], () => m.map(e => f.default.getUser(e)).filter(b.lm)),
     P = null != n || (0, u.Z)(t),
     I = i.useMemo(() => {
       let e = new Map;
@@ -202,7 +202,7 @@ function S(e) {
         }), (0, r.jsx)(x, {
           activity: t,
           user: l,
-          onOpenSpotifyArtist: f
+          onOpenSpotifyArtist: h
         }), (0, r.jsx)(C, {
           activity: t
         }), m.length > 0 && (0, r.jsx)(p.ZP, {

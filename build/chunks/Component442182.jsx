@@ -8,8 +8,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk82659 = require("./82659.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk239091 = require("./239091.js"),
   Chunk479531 = require("./479531.js"),
@@ -69,7 +69,7 @@ async function R(e, t, n) {
     await j.Z.updateMemberRoles(t, e.id, i, [], [n])
   } catch (t) {
     let e = new u.Z(t);
-    (0, c.h7j)(t => (0, r.jsx)(o.Modal, w(P({}, t), {
+    (0, c.h7j)(t => (0, r.jsx)(a.Modal, w(P({}, t), {
       title: I.intl.string(I.t.R0RpRU),
       actions: [{
         text: I.intl.string(I.t.BddRzc),
@@ -89,7 +89,7 @@ function D(e) {
   let {
     member: t,
     guildId: l,
-    roleId: a,
+    roleId: o,
     locked: u
   } = e, g = i.useRef(null), p = i.useMemo(() => ({
     [l]: [t.id]
@@ -97,9 +97,9 @@ function D(e) {
 
   function x(e) {
     if (e.stopPropagation(), !u) {
-      if (e.shiftKey) return void R(t, l, a);
-      let n = v.Z.getRole(a);
-      (0, c.h7j)(e => (0, r.jsx)(o.Modal, w(P({}, e), {
+      if (e.shiftKey) return void R(t, l, o);
+      let n = v.Z.getRole(o);
+      (0, c.h7j)(e => (0, r.jsx)(a.Modal, w(P({}, e), {
         title: I.intl.string(I.t["7sFNfX"]),
         subtitle: I.intl.format(I.t.scORUl, {
           username: t.name,
@@ -113,7 +113,7 @@ function D(e) {
           text: I.intl.string(I.t.N86XcH),
           variant: "critical-primary",
           onClick: () => {
-            R(t, l, a), e.onClose()
+            R(t, l, o), e.onClose()
           }
         }],
         children: (0, r.jsx)(c.Text, {
@@ -145,7 +145,7 @@ function D(e) {
       targetElementRef: g,
       userId: t.id,
       guildId: l,
-      roleId: a,
+      roleId: o,
       position: "left",
       children: e => (0, r.jsxs)(c.P3F, w(P({}, e), {
         innerRef: g,
@@ -290,7 +290,7 @@ function k(e) {
   let {
     guild: t,
     role: l,
-    locked: o,
+    locked: a,
     setSelectedSection: d
   } = e, [u, m] = i.useState(""), {
     headerHeight: g,
@@ -298,7 +298,7 @@ function k(e) {
   } = (0, O.Z)(0), {
     scrolledToTop: f,
     handleScroll: h
-  } = (0, y.V)(), j = l.managed || o, v = (0, _.e)(t.id, l.id), C = (0, a.e7)([b.Z], () => {
+  } = (0, y.V)(), j = l.managed || a, v = (0, _.e)(t.id, l.id), C = (0, o.e7)([b.Z], () => {
     var e, n;
     return null != (n = null == (e = b.Z.getRoleMemberCount(t.id)) ? true : e[l.id]) ? n : 0
   }) > v.length, R = () => {
