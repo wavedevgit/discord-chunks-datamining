@@ -1,5 +1,5 @@
 /** Chunk was on 49902 **/
-/** chunk id: 996921, original params: e,t,r (module,exports,require) **/
+/** chunk id: 996921, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g,
   h: () => f
@@ -17,21 +17,21 @@ var Chunk120356 = require("./120356.js"),
 
 function f(e) {
   let t = (0, a.e7)([o.default], () => o.default.getId() === e),
-    r = (0, s.zPA)(),
-    n = (0, a.e7)([c.Z], () => c.Z.hasSaveablePendingChanges());
-  return t && (r || n)
+    n = (0, s.zPA)(),
+    r = (0, a.e7)([c.Z], () => c.Z.hasSaveablePendingChanges());
+  return t && (n || r)
 }
 
 function g(e) {
   let {
     userId: t,
-    className: r
+    className: n
   } = e, i = (0, a.e7)([o.default], () => o.default.getId() === t), c = (0, s.zPA)();
-  return i ? (0, n.jsx)("div", {
-    className: l()(d.container, r),
-    children: c ? (0, n.jsx)(s.c43, {
+  return i ? (0, r.jsx)("div", {
+    className: l()(d.container, n),
+    children: c ? (0, r.jsx)(s.c43, {
       className: d.dndKeyboardHelpBar
-    }) : (0, n.jsx)(u.Z, {
+    }) : (0, r.jsx)(u.Z, {
       className: d.pendingChangesNotice
     })
   }) : null

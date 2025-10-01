@@ -1,7 +1,7 @@
 /** Chunk was on 49902 **/
-/** chunk id: 299560, original params: e,t,r (module,exports,require) **/
+/** chunk id: 299560, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => O
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk229870 = require("./229870.js");
-let O = {
+let j = {
   [Chunk296009.l.FAVORITE_GAMES]: {
     placeholder: {
       variant: "details",
@@ -54,67 +54,67 @@ let O = {
       variant: "details"
     },
     getAriaLabel: e => {
-      var t, r;
+      var t, n;
       return b.intl.formatToPlainString(b.t.KfGahI, {
-        applicationName: null != (r = null == (t = c.Z.getApplication(e.applicationId)) ? true : t.name) ? r : ""
+        applicationName: null != (n = null == (t = c.Z.getApplication(e.applicationId)) ? true : t.name) ? n : ""
       })
     }
   }
 };
 
-function j(e) {
+function O(e) {
   var t;
   let {
-    widgetType: r,
+    widgetType: n,
     onAddWidget: l,
     size: c = "default",
     loading: u = false,
     trackUserProfileEditAction: b
   } = e, {
-    placeholder: j,
+    placeholder: O,
     getAriaLabel: x
-  } = O[r], P = "small" === c, S = null == (t = (0, d.uV)().data) ? true : t.map(e => e.application_id), I = i.useMemo(() => {
-    switch (r) {
+  } = j[n], P = "small" === c, S = null == (t = (0, d.uV)().data) ? true : t.map(e => e.application_id), I = i.useMemo(() => {
+    switch (n) {
       case s.l.CURRENT_GAMES:
       case s.l.FAVORITE_GAMES:
       case s.l.PLAYED_GAMES:
       case s.l.WANT_TO_PLAY_GAMES:
         return new g.zy({
-          type: r,
+          type: n,
           games: []
         });
       case s.l.APPLICATION:
         let e = null == S ? true : S[0];
         if (null == e) return null;
         return new f.q({
-          type: r,
+          type: n,
           applicationId: e
         })
     }
-  }, [r, S]), w = i.useCallback(() => {
-    u || null == I || ((0, h.qH)(r, I), b({
+  }, [n, S]), w = i.useCallback(() => {
+    u || null == I || ((0, h.qH)(n, I), b({
       action: "WIDGET_ADDED",
-      widgetEdited: r
+      widgetEdited: n
     }), (0, p.L$)(v.qb.WIDGET_ADDED), null == l || l())
-  }, [u, r, I, b, l]);
-  return null == I ? null : (0, n.jsxs)(o.P3F, {
+  }, [u, n, I, b, l]);
+  return null == I ? null : (0, r.jsxs)(o.P3F, {
     className: a()(y.addButtonContainer, P && y.sizeSmall, u && y.loading),
     onClick: w,
     "aria-label": x(I),
     "aria-busy": u,
-    children: ["details" === j.variant ? (0, n.jsx)(m.i, {
-      applicationId: j.applicationId,
+    children: ["details" === O.variant ? (0, r.jsx)(m.i, {
+      applicationId: O.applicationId,
       size: c
-    }) : (0, n.jsx)(m.c, {
-      applicationIds: j.applicationIds,
+    }) : (0, r.jsx)(m.c, {
+      applicationIds: O.applicationIds,
       size: c
-    }), (0, n.jsxs)("div", {
+    }), (0, r.jsxs)("div", {
       className: y.overlay,
-      children: [(0, n.jsx)(o.oFk, {
+      children: [(0, r.jsx)(o.oFk, {
         size: "md",
         color: "currentColor",
         className: y.addButton
-      }), (0, n.jsx)(o.Text, {
+      }), (0, r.jsx)(o.Text, {
         variant: "text-md/medium",
         color: "header-primary",
         children: (0, h.mR)(I)

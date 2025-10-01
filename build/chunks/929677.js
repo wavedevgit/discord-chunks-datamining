@@ -1,5 +1,5 @@
 /** Chunk was on 49902 **/
-/** chunk id: 929677, original params: e,t,r (module,exports,require) **/
+/** chunk id: 929677, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   O: () => u
 });
@@ -16,7 +16,7 @@ let c = {
         userId: e
       });
       try {
-        let r = await i.tn.get({
+        let n = await i.tn.get({
           url: o.ANM.USER_APPLICATION_IDENTITIES(e),
           query: {
             with_profiles: true
@@ -27,7 +27,7 @@ let c = {
         l.Z.dispatch({
           type: "USER_APPLICATION_IDENTITY_FETCH_USER_SUCCESS",
           userId: e,
-          identities: r.body.identities
+          identities: n.body.identities
         })
       } catch (t) {
         throw l.Z.dispatch({

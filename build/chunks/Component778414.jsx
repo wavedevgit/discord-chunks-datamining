@@ -1,5 +1,5 @@
 /** Chunk was on 49902 **/
-/** chunk id: 778414, original params: e,t,r (module,exports,require) **/
+/** chunk id: 778414, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   C: () => R,
   Z: () => Z
@@ -35,18 +35,18 @@ var Chunk951288 = require("./951288.js"),
 
 function A(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var r = null != arguments[t] ? arguments[t] : {},
-      n = Object.keys(r);
-    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(r, e).enumerable
-    }))), n.forEach(function(t) {
-      var n;
-      n = r[t], t in e ? Object.defineProperty(e, t, {
-        value: n,
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = n
+      }) : e[t] = r
     })
   }
   return e
@@ -54,16 +54,16 @@ function A(e) {
 
 function T(e, t) {
   if (null == e) return {};
-  var r, n, i = function(e, t) {
+  var n, r, i = function(e, t) {
     if (null == e) return {};
-    var r, n, i = {},
+    var n, r, i = {},
       l = Object.keys(e);
-    for (n = 0; n < l.length; n++) r = l[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
+    for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
     return i
   }(e, t);
   if (Object.getOwnPropertySymbols) {
     var l = Object.getOwnPropertySymbols(e);
-    for (n = 0; n < l.length; n++) r = l[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
+    for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -71,12 +71,12 @@ function T(e, t) {
 function Z(e) {
   var {
     widget: t
-  } = e, r = T(e, ["widget"]);
-  return t instanceof h.q ? (0, n.jsx)(j.Z, A({
+  } = e, n = T(e, ["widget"]);
+  return t instanceof h.q ? (0, r.jsx)(O.Z, A({
     widget: t
-  }, r)) : t instanceof p.zy ? (0, n.jsx)(S.Z, A({
+  }, n)) : t instanceof p.zy ? (0, r.jsx)(S.Z, A({
     widget: t
-  }, r)) : null
+  }, n)) : null
 }
 
 function D() {
@@ -96,14 +96,14 @@ function D() {
 function _(e) {
   let {
     user: t,
-    guildId: r,
+    guildId: n,
     channelId: l
-  } = e, a = (0, O.Z)(t.id), o = (0, s.e7)([f.default], () => f.default.getId() === t.id), v = (() => {
-    let [e, t] = (0, s.Wu)([g.Z], () => [g.Z.ipCountryCode, g.Z.ipCountryCodeRequest]), r = (0, u.U)();
+  } = e, a = (0, j.Z)(t.id), o = (0, s.e7)([f.default], () => f.default.getId() === t.id), v = (() => {
+    let [e, t] = (0, s.Wu)([g.Z], () => [g.Z.ipCountryCode, g.Z.ipCountryCodeRequest]), n = (0, u.U)();
     return i.useEffect(() => {
-      null == e && null == t && r && (0, c.GE)()
-    }, [e, t, r]), "GB" === e && r
-  })(), j = 0 === a.length && o, P = i.useMemo(() => a.filter(p.Wc), [a]), S = i.useMemo(() => a.filter(e => e instanceof h.q), [a]);
+      null == e && null == t && n && (0, c.GE)()
+    }, [e, t, n]), "GB" === e && n
+  })(), O = 0 === a.length && o, P = i.useMemo(() => a.filter(p.Wc), [a]), S = i.useMemo(() => a.filter(e => e instanceof h.q), [a]);
   (0, y.ZP)(P), (0, m.J)(o, P);
   var I = t.id;
   (0, b.s)(S);
@@ -111,38 +111,38 @@ function _(e) {
     data: w
   } = (0, d.O)(I), N = i.useRef(w);
   return (N.current = w, i.useEffect(() => {
-    null !== N.current && (0, s.Xf)(C.McO.USER_APPLICATION_IDENTITIES(I))
-  }, [I]), j) ? (0, n.jsx)(E.Z, {}) : (0, n.jsxs)(n.Fragment, {
-    children: [o && v && (0, n.jsx)(D, {}), a.map((e, i) => (0, n.jsx)(Z, {
+    null !== N.current && (0, s.Xf)(E.McO.USER_APPLICATION_IDENTITIES(I))
+  }, [I]), O) ? (0, r.jsx)(C.Z, {}) : (0, r.jsxs)(r.Fragment, {
+    children: [o && v && (0, r.jsx)(D, {}), a.map((e, i) => (0, r.jsx)(Z, {
       widget: e,
       user: t,
-      guildId: r,
+      guildId: n,
       channelId: l,
       index: i
-    }, e.type)), o && (0, n.jsx)(x.Z, {})]
+    }, e.type)), o && (0, r.jsx)(x.Z, {})]
   })
 }
 
 function R(e) {
   var {
     user: t
-  } = e, r = T(e, ["user"]);
+  } = e, n = T(e, ["user"]);
   let l = i.useRef(null);
   (0, v.r)({
     container: l.current
   });
   let s = (0, I.h)(t.id);
-  return (0, n.jsxs)(w.F, {
+  return (0, r.jsxs)(w.F, {
     "data-scroller": true,
     scrollerRef: l,
     className: a()(k.scroller, {
       [k.hasToolbar]: s
     }),
     fade: true,
-    children: [(0, n.jsx)(P.Z, {
+    children: [(0, r.jsx)(P.Z, {
       scrollerRef: l
-    }), (0, n.jsx)(_, A({
+    }), (0, r.jsx)(_, A({
       user: t
-    }, r))]
+    }, n))]
   })
 }
