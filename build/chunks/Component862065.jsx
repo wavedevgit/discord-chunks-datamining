@@ -31,7 +31,7 @@ function d(e) {
     }
     return o
   }(e, ["guildId", "gameInstance"]);
-  let [f, m] = o.useState(false), [b, p] = o.useState(true), g = (0, c.Z)(n.gameId, "cover");
+  let [f, m] = o.useState(false), [b, p] = o.useState(true), g = (0, l.Z)(n.gameId, "cover");
   return (0, r.jsx)(a.f, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -60,8 +60,8 @@ function d(e) {
         className: u.image
       })
     }),
-    warningText: s.intl.string(l.default.oHNuWl),
-    acknowledgementText: s.intl.string(l.default.dXQR1t),
+    warningText: s.intl.string(c.default.oHNuWl),
+    acknowledgementText: s.intl.string(c.default.dXQR1t),
     isLoading: f,
     error: b,
     onDeactivate: () => {

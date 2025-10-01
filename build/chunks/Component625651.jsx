@@ -1,8 +1,8 @@
 /** Chunk was on 88856 **/
 /** chunk id: 625651, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => _,
-  f: () => h
+  default: () => h,
+  f: () => _
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -59,10 +59,10 @@ function I(e, t) {
   return o
 }
 
-function h(e) {
+function _(e) {
   var t, n, {
       size: a,
-      title: c,
+      title: l,
       body: s,
       warningText: u,
       acknowledgementText: d,
@@ -75,10 +75,10 @@ function h(e) {
   return (0, r.jsxs)(i.Modal, (t = y({}, p), n = n = {
     size: a,
     title: O.intl.formatToPlainString(k.default.iEBw1N, {
-      perk: c
+      perk: l
     }),
     subtitle: O.intl.formatToPlainString(k.default["7o0K+/"], {
-      perk: c
+      perk: l
     }),
     actions: [{
       variant: "secondary",
@@ -108,16 +108,14 @@ function h(e) {
       color: "text-danger",
       variant: "text-sm/semibold",
       children: f
-    }), null != d && (0, r.jsxs)("div", {
+    }), null != d && (0, r.jsx)("div", {
       className: j.acknowledgementContainer,
-      children: [(0, r.jsx)(l.XZJ, {
+      children: (0, r.jsx)(c.XZJ, {
         checked: g,
-        onChange: v
-      }), (0, r.jsx)(i.xvT, {
-        variant: "text-sm/medium",
-        color: "text-secondary",
-        children: d
-      })]
+        onChange: v,
+        label: d,
+        labelType: "secondary"
+      })
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
@@ -131,33 +129,33 @@ function h(e) {
   }), t))
 }
 
-function _(e) {
+function h(e) {
   var {
     guildId: t,
     powerup: n
-  } = e, l = I(e, ["guildId", "powerup"]);
+  } = e, c = I(e, ["guildId", "powerup"]);
   let {
-    onDeactivate: _,
+    onDeactivate: h,
     error: w,
     isLoading: T
   } = (0, v.ZP)(t, n), {
     onClose: S
-  } = l, E = o.useCallback(e => {
-    _(e).then(() => {
+  } = c, E = o.useCallback(e => {
+    h(e).then(() => {
       null == S || S()
     })
-  }, [S, _]), C = function(e, t) {
-    let n = (0, c.e7)([u.Z], () => u.Z.getMemberCount(e)),
-      l = (0, s.Z)(e),
-      m = (0, c.e7)([f.Z], () => {
+  }, [S, h]), C = function(e, t) {
+    let n = (0, l.e7)([u.Z], () => u.Z.getMemberCount(e)),
+      c = (0, s.Z)(e),
+      m = (0, l.e7)([f.Z], () => {
         var t;
         return (null == (t = f.Z.getGuild(e)) ? true : t.vanityURLCode) != null
       }),
       p = (0, b.g1)(e, "Powerup Deactivate Modal"),
-      g = (0, c.e7)([d.Z], () => t.skuId !== a.If || null == l ? 0 : d.Z.getSortedRoles(e).reduce((e, t) => {
+      g = (0, l.e7)([d.Z], () => t.skuId !== a.If || null == c ? 0 : d.Z.getSortedRoles(e).reduce((e, t) => {
         var n, r;
-        return (null == (n = t.colorStrings) ? true : n.secondaryColor) == null ? e : e + (null != (r = l[t.id]) ? r : 0)
-      }, 0), [e, t.skuId, l]);
+        return (null == (n = t.colorStrings) ? true : n.secondaryColor) == null ? e : e + (null != (r = c[t.id]) ? r : 0)
+      }, 0), [e, t.skuId, c]);
     return o.useMemo(() => {
       let e;
       switch (t.skuId) {
@@ -199,7 +197,7 @@ function _(e) {
       })), e
     }, [t, g, n, m, p])
   }(t, n);
-  return (0, m.$)(t, n, m.w.DEACTIVATE), (0, r.jsx)(h, y({
+  return (0, m.$)(t, n, m.w.DEACTIVATE), (0, r.jsx)(_, y({
     size: n.type === x.Us.LEVEL ? "md" : "sm",
     title: n.title,
     body: (() => {
@@ -219,5 +217,5 @@ function _(e) {
     error: w,
     isLoading: T,
     onDeactivate: E
-  }, l))
+  }, c))
 }
