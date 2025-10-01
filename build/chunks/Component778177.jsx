@@ -286,6 +286,7 @@ let er = {
         searchContext: t
       } = e;
       return (0, r.jsx)(p.u, {
+        asContainer: true,
         text: G.intl.string(G.t.dwAvX1),
         position: "left",
         children: (0, r.jsx)(h.P3F, {
@@ -305,6 +306,7 @@ let er = {
   [Chunk981631.rtL.SEARCH_OPTIONS]: {
     titleText: () => Chunk388032.intl.string(Chunk388032.t["8Zkyw8"]),
     groupTip: () => (0, Chunk951288.jsx)(Chunk681715.u, {
+      asContainer: true,
       text: Chunk388032.intl.string(Chunk388032.t.hvVgAQ),
       position: "left",
       children: (0, Chunk951288.jsx)("div", {

@@ -178,6 +178,7 @@ function j(e) {
     documentsIndexed: t
   } = e;
   return (0, r.jsx)(s.u, {
+    asContainer: true,
     text: m.intl.formatToPlainString(m.t["4Y3O+P"], {
       count: t
     }),

@@ -162,6 +162,7 @@ function D(e) {
     searchContext: t
   } = e;
   return (0, r.jsx)(s.u, {
+    asContainer: true,
     text: v.intl.string(v.t.dwAvX1),
     position: "left",
     children: (0, r.jsx)(l.P3F, {

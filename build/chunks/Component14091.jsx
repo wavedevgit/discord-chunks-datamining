@@ -254,6 +254,7 @@ let z = [],
             maxPages: n
           });
           return (0, r.jsx)(c.u, {
+            asContainer: true,
             text: e,
             children: t
           })
