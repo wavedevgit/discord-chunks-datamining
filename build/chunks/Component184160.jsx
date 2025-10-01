@@ -26,15 +26,15 @@ function m(e) {
   } = e, i = (0, s.ZP)(), {
     activeSubscription: m,
     selectedSkuId: x,
-    setSelectedPlanId: g,
-    startedPaymentFlowWithPaymentSourcesRef: j
+    setSelectedPlanId: j,
+    startedPaymentFlowWithPaymentSourcesRef: g
   } = (0, u.JL)(), {
     isGift: b
   } = (0, c.wD)(), L = null != m ? (0, C.Af)(m) : null, y = null != L ? (0, C.gq)(L.planId) : null, v = null != L ? (0, C.Rd)(L.planId) : null, S = (0, _.Kp)({
     isTrial: false,
     isGift: b,
     selectedSkuId: x,
-    startedPaymentFlowWithPaymentSources: j.current
+    startedPaymentFlowWithPaymentSources: g.current
   });
   return a()(null != v, "Expected premium type"), (0, r.jsx)(d.Z, {
     premiumType: v,
@@ -47,7 +47,7 @@ function m(e) {
       children: [(0, r.jsx)(l.zx, {
         "data-migration-pending": true,
         onClick: () => {
-          S ? (g((0, _.nA)(x, m)), t(p.h8.REVIEW)) : t(p.h8.PLAN_SELECT)
+          S ? (j((0, _.nA)(x, m)), t(p.h8.REVIEW)) : t(p.h8.PLAN_SELECT)
         },
         children: f.intl.string(f.t["3PatS0"])
       }), (0, r.jsx)(l.zx, {

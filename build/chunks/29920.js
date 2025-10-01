@@ -1,50 +1,31 @@
-/** Chunk was on web.js **/
-/** chunk id: 29920, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 1272 **/
+/** chunk id: 29920, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  He: () => s,
-  Ul: () => l
+  He: () => a
 });
-var Chunk544891 = require("./544891.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk960048 = require("./960048.js"),
+var Chunk544891 = require("./544891.js");
+require("./570140.js");
+var Chunk960048 = require("./960048.js"),
   Chunk981631 = require("./981631.js");
-async function s(e) {
+async function a(e) {
   let {
     userTrialOffer: t,
     userDiscount: n,
-    userDiscountOffer: i
+    userDiscountOffer: a
   } = e;
   try {
     let e = await r.tn.post({
-      url: o.ANM.PREMIUM_MARKETING,
+      url: l.ANM.PREMIUM_MARKETING,
       body: {
         user_trial_offer: t,
         user_discount: n,
-        user_discount_offer: i
+        user_discount_offer: a
       },
       rejectWithError: true
     });
     if (e.ok) return e.body;
-    return a.Z.captureMessage("fetchPremiumMarketingContentWithUserOffer failed"), []
+    return i.Z.captureMessage("fetchPremiumMarketingContentWithUserOffer failed"), []
   } catch (e) {
     return []
-  }
-}
-async function l(e) {
-  let {
-    subscriptionId: t
-  } = e;
-  try {
-    let e = await r.tn.post({
-      url: o.ANM.BILLING_SUBSCRIPTION_PROMOTION_REWARD(t),
-      rejectWithError: true
-    });
-    return i.Z.dispatch({
-      type: "ENTITLEMENT_CREATE",
-      entitlement: e.body
-    }), e.body
-  } catch (e) {
-    return null
   }
 }

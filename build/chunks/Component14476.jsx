@@ -24,19 +24,19 @@ let m = e => {
     user: a,
     claimed: m,
     onSelect: x,
-    productName: g,
-    a11yLabel: j,
+    productName: j,
+    a11yLabel: g,
     selectedSkuId: b,
     category: L
   } = e, y = i.useRef(null), v = (0, C.Z)(y), S = (0, _.m)(y), O = !m && (v || S), E = (0, c.ZP)(), I = (0, s.wj)(E), P = {
     type: l.Z.AVATAR_DECORATION,
-    label: j,
+    label: g,
     asset: n
   };
   return (0, r.jsx)(d.tEY, {
     children: (0, r.jsxs)(d.kL8, {
       ref: y,
-      "aria-label": null != g ? g : "",
+      "aria-label": null != j ? j : "",
       onClick: () => {
         null == t || null == x || m || x(t)
       },
@@ -68,7 +68,7 @@ let m = e => {
         className: h.productName,
         children: [(0, r.jsx)(d.X6q, {
           variant: "text-md/bold",
-          children: g
+          children: j
         }), (0, r.jsx)(d.Text, {
           variant: "text-md/normal",
           children: m ? f.intl.string(f.t["6cfuDg"]) : f.intl.string(f.t.QQsaCQ)

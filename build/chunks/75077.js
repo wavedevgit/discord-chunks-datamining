@@ -22,39 +22,36 @@ let d = (e, t, n) => (0, i.wj)(e) ? t : n,
       cards: t,
       perksCards: n,
       showVoiceFiltersCard: r,
-      showCustomThemesCard: i,
-      isSeptember2025MarketingMomentEligible: a
-    } = e, o = f, s = e => {
+      showCustomThemesCard: i
+    } = e, a = f, o = e => {
       let {
         card: n
       } = e;
-      t.length < o && t.push(n)
-    }, l = () => {
-      s({
+      t.length < a && t.push(n)
+    }, s = () => {
+      o({
         card: n.specialShopPerks
       })
-    }, c = g();
-    return a && s({
-      card: n.september2025MarketingMoment
-    }), r ? s({
+    }, l = g();
+    return r ? o({
       card: n.voiceFilters
-    }) : i ? s({
+    }) : i ? o({
       card: n.customThemes
-    }) : s({
+    }) : o({
       card: n.nameplates
-    }), null != n.tenureBadge && s({
+    }), null != n.tenureBadge && o({
       card: n.tenureBadge
-    }), s({
+    }), o({
       card: n.permadecos
-    }), c ? 0 === t.length && l() : s({
+    }), l ? 0 === t.length && s() : o({
       card: n.referralProgram
-    }), s({
+    }), o({
       card: n.newAppStylesUpdateJune2024
-    }), s({
+    }), o({
       card: n.serverProfiles
-    }), s({
+    }), o({
       card: n.earlyAccess
-    }), s({
+    }), o({
       card: n.unlimitedSuperReactions
     }), t
   },
@@ -67,32 +64,30 @@ let d = (e, t, n) => (0, i.wj)(e) ? t : n,
       fractionalState: a,
       isInReverseTrial: o,
       showVoiceFiltersCard: s,
-      showCustomThemesCard: u,
-      isSeptember2025MarketingMomentEligible: d
-    } = e, f = [];
+      showCustomThemesCard: u
+    } = e, d = [];
     switch (n) {
       case l.gM.PERKS_DISCOVERABILITY:
-        f = false === i ? [t.profiles, t.moreEmojiPower, t.largeUploads, t.hdVideo, t.clientThemes, t.customAppIcons] : a === c.a$.FP_ONLY ? [t.profiles, t.clientThemes, t.hdVideo] : [t.profiles, t.clientThemes, t.serverBoosts];
+        d = false === i ? [t.profiles, t.moreEmojiPower, t.largeUploads, t.hdVideo, t.clientThemes, t.customAppIcons] : a === c.a$.FP_ONLY ? [t.profiles, t.clientThemes, t.hdVideo] : [t.profiles, t.clientThemes, t.serverBoosts];
         break;
       case l.gM.WHATS_NEW:
-        f = _({
-          cards: f,
+        d = _({
+          cards: d,
           perksCards: t,
           showVoiceFiltersCard: s,
-          showCustomThemesCard: u,
-          isSeptember2025MarketingMomentEligible: d
+          showCustomThemesCard: u
         });
         break;
       case l.gM.CARD_CAROUSEL_FIRST_ROW:
-        f = false === i ? [t.serverBoosts, t.superReactions, t.earlyAccessSeeAllVariant, t.specialShopPerks] : [t.customAppIcons, t.moreEmojiPower, t.customSoundsEverywhere, t.specialStickerAccess];
+        d = false === i ? [t.serverBoosts, t.superReactions, t.earlyAccessSeeAllVariant, t.specialShopPerks] : [t.customAppIcons, t.moreEmojiPower, t.customSoundsEverywhere, t.specialStickerAccess];
         break;
       case l.gM.CARD_CAROUSEL_SECOND_ROW:
-        f = false === i ? [t.customSoundsEverywhere, t.specialStickerAccess] : a === c.a$.FP_ONLY ? o ? [t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions] : [t.greyServerBoosts, t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions] : [t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions];
+        d = false === i ? [t.customSoundsEverywhere, t.specialStickerAccess] : a === c.a$.FP_ONLY ? o ? [t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions] : [t.greyServerBoosts, t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions] : [t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions];
         break;
       case l.gM.CARD_CAROUSEL_THIRD_ROW:
-        f = a === c.a$.FP_ONLY ? o ? [t.entranceSoundsSeeAllVariation] : [t.entranceSoundsSeeAllVariation, t.greyBadge] : [t.entranceSoundsSeeAllVariation, t.badge]
+        d = a === c.a$.FP_ONLY ? o ? [t.entranceSoundsSeeAllVariation] : [t.entranceSoundsSeeAllVariation, t.greyBadge] : [t.entranceSoundsSeeAllVariation, t.badge]
     }
-    return r && (f = f.filter(e => !e.hideOnNarrowScreen)), f
+    return r && (d = d.filter(e => !e.hideOnNarrowScreen)), d
   },
   h = e => {
     let t = (0, r.e7)([o.Z], () => o.Z.getPremiumTypeSubscription()),

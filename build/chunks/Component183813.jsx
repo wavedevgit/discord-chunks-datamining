@@ -38,7 +38,7 @@ function y(e) {
     selectedGiftingPromotionReward: I,
     claimableRewards: P,
     claimableVariants: w
-  } = (0, h.wD)(), k = (0, l.e7)([_.default], () => _.default.getCurrentUser()), M = (0, c.ZP)(P, w, I), [T, A] = i.useState(null != (n = null == M ? true : M.defaultCategory) ? n : c.KN.Trick), [Z, N] = i.useState(null == M || null == (t = M.defaultHighlightedReward) ? true : t.skuId), [R, F] = i.useState(false), B = i.useRef(T), U = i.useMemo(() => null == w ? null != P ? P : [] : w.flatMap(e => {
+  } = (0, h.wD)(), k = (0, l.e7)([_.default], () => _.default.getCurrentUser()), T = (0, c.ZP)(P, w, I), [A, M] = i.useState(null != (n = null == T ? true : T.defaultCategory) ? n : c.KN.Trick), [Z, N] = i.useState(null == T || null == (t = T.defaultHighlightedReward) ? true : t.skuId), [R, F] = i.useState(false), B = i.useRef(A), U = i.useMemo(() => null == w ? null != P ? P : [] : w.flatMap(e => {
     var t, n;
     return e.variants.length < c.mo ? [] : (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -57,7 +57,7 @@ function y(e) {
         })
       }
       return e
-    }({}, e.variants[T]), n = n = {
+    }({}, e.variants[A]), n = n = {
       name: e.name
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
@@ -69,13 +69,13 @@ function y(e) {
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t)
-  }), [w, P, T]);
+  }), [w, P, A]);
   i.useEffect(() => {
-    let e = null == M ? true : M.defaultHighlightedReward;
+    let e = null == T ? true : T.defaultHighlightedReward;
     !R && null == I && null != e && null != e && U.some(t => t.skuId === e.skuId) && (E(e), N(e.skuId))
-  }, [M, R, I, U, E]), i.useEffect(() => {
-    (null == M ? true : M.defaultCategory) == null || R || A(M.defaultCategory)
-  }, [null == M ? true : M.defaultCategory, R]), o()(null != v, "Expected plan to selected"), o()(null != S, "Expected selectedSkuId"), o()(null != O, "Step should be set");
+  }, [T, R, I, U, E]), i.useEffect(() => {
+    (null == T ? true : T.defaultCategory) == null || R || M(T.defaultCategory)
+  }, [null == T ? true : T.defaultCategory, R]), o()(null != v, "Expected plan to selected"), o()(null != S, "Expected selectedSkuId"), o()(null != O, "Step should be set");
   let H = i.useMemo(() => null != Z && (null != P ? P : []).some(e => e.skuId === Z), [Z, P]),
     G = i.useMemo(() => null != I && U.some(e => e.skuId === I.skuId), [U, I]),
     D = i.useMemo(() => 0 === U.length || null == Z || !G || !H, [U, Z, H, G]);
@@ -86,8 +86,8 @@ function y(e) {
     }
     H && U.some(e => e.skuId === Z) || null == Z || (N(true), E(true))
   }, [U, H, Z, E]), i.useEffect(() => {
-    B.current === T || G || (E(true), N(true)), B.current = T
-  }, [T, G, E]);
+    B.current === A || G || (E(true), N(true)), B.current = A
+  }, [A, G, E]);
   let z = e => {
       E(U.find(t => t.skuId === e)), N(e), F(true)
     },
@@ -102,16 +102,16 @@ function y(e) {
         user: k,
         onSelect: z,
         selectedSkuId: Z,
-        category: T
+        category: A
       }, e.skuId)
     }),
-    K = (0, r.jsx)(g.O3, {
+    K = (0, r.jsx)(j.O3, {
       children: (0, r.jsx)(s.mzw, {
         "data-migration-pending": true,
         className: L.modalFooter,
         children: (0, r.jsx)(p.y, {
           onStepChange: e => {
-            null != k && null != I && f.default.track(j.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
+            null != k && null != I && f.default.track(g.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
               user_id: k.id,
               reward_sku_id: I.skuId
             }), a(e)
@@ -153,8 +153,8 @@ function y(e) {
         justify: "center",
         align: "center",
         children: [null != w && w.length > 1 && (0, r.jsx)(u.Z, {
-          defaultCategory: T,
-          onCategoryChange: A
+          defaultCategory: A,
+          onCategoryChange: M
         }), (0, r.jsx)("div", {
           className: L.giftRewardShopCardsGrid,
           children: Y

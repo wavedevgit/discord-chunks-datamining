@@ -32,8 +32,8 @@ function y(e) {
     analyticsLocation: I
   } = e;
   i.useEffect(() => {
-    (0, v.po)(h), (0, v.EC)(h), (0, d.BN)(h, true)
-  }, [h]);
+    (0, v.po)(h), (0, d.BN)(h, true), null == P && (0, v.EC)(h)
+  }, [h, P]);
   let N = (0, a.e7)([f.Z], () => f.Z.getStateForGuild(h)),
     Z = (0, a.e7)([c.Z], () => c.Z.getGuild(h)),
     {
