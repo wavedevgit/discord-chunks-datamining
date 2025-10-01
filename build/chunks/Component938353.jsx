@@ -109,7 +109,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk636428 = require("./636428.js"),
+  Chunk448494 = require("./448494.js"),
   Chunk680674 = require("./680674.js");
 
 function e1(e, t, n) {
@@ -171,10 +171,10 @@ function e5(e, t) {
 
 function e6() {
   return (0, Chunk951288.jsxs)("div", {
-    className: Chunk636428.nitroFileSizeUpsell,
+    className: Chunk448494.nitroFileSizeUpsell,
     children: [(0, Chunk951288.jsx)("img", {
       src: Chunk680674,
-      className: Chunk636428.nitroBadgeSvg,
+      className: Chunk448494.nitroBadgeSvg,
       alt: ""
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-xs/normal",
@@ -261,7 +261,7 @@ class tr extends(r = Chunk647438.Component) {
         return null
     }
     return (0, Chunk951288.jsx)("div", {
-      className: Chunk636428.ctaButtonContainer,
+      className: Chunk448494.ctaButtonContainer,
       children: r
     })
   }
@@ -594,7 +594,7 @@ class tr extends(r = Chunk647438.Component) {
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         color: "text-default",
-        className: Chunk636428.confirmText,
+        className: Chunk448494.confirmText,
         children: Chunk388032.intl.string(Chunk388032.t["vXZ+Fh"])
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
@@ -631,7 +631,7 @@ class tr extends(r = Chunk647438.Component) {
       children: (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         color: "text-default",
-        className: Chunk636428.confirmText,
+        className: Chunk448494.confirmText,
         children: Chunk388032.intl.string(Chunk388032.t.faHmOz)
       })
     })
@@ -718,7 +718,7 @@ class tr extends(r = Chunk647438.Component) {
     } = this.state, l = this.renderEditedTag(exports, r), c = this.renderCodedLinks(exports), u = this.renderGiftCodes(exports), d = this.renderReferralTrial(exports), f = this.renderAttachments(exports), _ = this.renderCtaButton(), p = this.renderSocialProofingFileSizeNitroUpsell(exports), h = this.renderEmbeds(exports), m = this.renderActivityInvite(exports), g = this.renderReactions(exports), E = this.renderPublishBump(exports), b = this.renderEphemeralAccessories(exports), y = this.renderStickersAccessories(exports), O = this.renderThreadAccessories(exports), v = this.renderComponentAccessories(exports), I = this.renderThreadRoleMentionWarning(exports), T = this.renderEmbeddedApplicationInstanceEmbed(exports), S = this.renderInteractionPremiumUpsell(exports), A = this.renderMediaPostEmbeds(exports), C = this.renderSafetyPolicyNotice(exports), N = this.renderSafetySystemNotification(exports), R = this.renderMediaObscureNotice(exports), P = this.renderPoll(exports, require), w = this.renderForwardedMessage(exports), D = this.renderReportedMessage(exports), L = this.renderShareClientTheme(exports);
     return null == Chunk442837 && null == Chunk481060 && null == Chunk626799 && null == Chunk624367 && null == Chunk183431 && null == Chunk377108 && null == Chunk902704 && null == Chunk421474 && null == Chunk603270 && null == Chunk234431 && null == Chunk162297 && null == Chunk222709 && null == Chunk36129 && null == Chunk446411 && null == Chunk161314 && null == Chunk247206 && null != Chunk960904 && null == Chunk761538 && null == Chunk674611 && null == Chunk294734 && null == Chunk947849 ? null : (0, Chunk951288.jsxs)("div", {
       id: (0, Chunk453687.bX)(exports),
-      className: s()(module, Chunk636428.container),
+      className: s()(module, Chunk448494.container),
       children: [Chunk294734, Chunk674611, Chunk446411, Chunk761538, Chunk947849, Chunk442837, Chunk377108, Chunk902704, Chunk161314, Chunk481060, Chunk904245, Chunk626799, Chunk262777, Chunk624367, Chunk234431, Chunk222709, Chunk36129, Chunk960904, Chunk637374, Chunk275726, Chunk183431, Chunk421474, Chunk603270, Chunk647438 && this.renderSuppressConfirmModal(), Chunk120356 && this.renderRemoveAttachmentConfirmModal(), Chunk162297, Chunk247206, Chunk629710]
     })
   }

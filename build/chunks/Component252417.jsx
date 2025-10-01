@@ -1,7 +1,7 @@
-/** Chunk was on 93338 **/
+/** Chunk was on 69310 **/
 /** chunk id: 252417, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => j
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,38 +18,38 @@ var Chunk951288 = require("./951288.js"),
   Chunk652853 = require("./652853.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk671955 = require("./671955.js"),
-  Chunk777267 = require("./777267.js");
-let y = Chunk481060.EFr.SIZE_40,
-  j = (0, Chunk481060.pxk)(y);
+  Chunk788485 = require("./788485.js");
+let O = Chunk481060.EFr.SIZE_40,
+  y = (0, Chunk481060.pxk)(O);
 
-function v(e) {
+function j(e) {
   let {
     user: t,
-    status: v,
-    guildId: O,
+    status: j,
+    guildId: v,
     channelId: x,
-    onSelect: P
+    onSelect: C
   } = e, {
-    theme: w,
-    themeType: C
-  } = (0, h.z)(), k = i.useMemo(() => t.isNonUserBot() || (0, b.W)(t, x), [t, x]), {
-    activities: S,
-    isMobileOnline: Z
-  } = (0, o.cj)([f.Z], () => ({
+    theme: E,
+    themeType: S
+  } = (0, g.z)(), P = i.useMemo(() => t.isNonUserBot() || (0, p.W)(t, x), [t, x]), {
+    activities: I,
+    isMobileOnline: N
+  } = (0, l.cj)([f.Z], () => ({
     activities: f.Z.getActivities(t.id),
     isMobileOnline: f.Z.isMobileOnline(t.id)
-  })), I = (0, p.Z)(t.id), {
-    voiceActivityStatusEnabled: E
+  })), w = (0, h.Z)(t.id), {
+    voiceActivityStatusEnabled: Z
   } = (0, c.a)({
     location: "UserProfileMutualFriendRow"
   }), {
     voiceChannel: T
   } = (0, u.Z)({
-    userId: E ? t.id : true,
-    guildId: O
+    userId: Z ? t.id : true,
+    guildId: v
   });
-  return (0, r.jsxs)(a.P3F, {
-    focusProps: C === g.l.MODAL_V2 ? {
+  return (0, r.jsxs)(o.P3F, {
+    focusProps: S === b.l.MODAL_V2 ? {
       offset: {
         top: 4,
         right: 4,
@@ -61,14 +61,14 @@ function v(e) {
       }
     },
     className: _.row,
-    onClick: P,
+    onClick: C,
     onContextMenu: e => {
-      (0, l.jW)(e, async () => {
+      (0, a.jW)(e, async () => {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("69220")]).then(n.bind(n, 881351));
         return n => {
-          var i, o;
+          var i, l;
           return (0, r.jsx)(e, (i = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
@@ -86,28 +86,28 @@ function v(e) {
               })
             }
             return e
-          }({}, n), o = o = {
+          }({}, n), l = l = {
             user: t
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
               var r = Object.getOwnPropertySymbols(e);
               n.push.apply(n, r)
             }
             return n
-          })(Object(o)).forEach(function(e) {
-            Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(o, e))
+          })(Object(l)).forEach(function(e) {
+            Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
           }), i))
         }
       })
     },
-    children: [(0, r.jsx)(a.qEK, {
-      src: t.getAvatarURL(O, j),
+    children: [(0, r.jsx)(o.qEK, {
+      src: t.getAvatarURL(v, y),
       "aria-label": t.username,
-      size: y,
-      status: k ? m.Skl.UNKNOWN : v,
-      statusBackdropColor: k ? true : (0, a.QFD)(w),
-      isMobile: Z,
+      size: O,
+      status: P ? m.Skl.UNKNOWN : j,
+      statusBackdropColor: P ? true : (0, o.QFD)(E),
+      isMobile: N,
       className: _.avatar
     }), (0, r.jsxs)("div", {
       className: _.details,
@@ -117,8 +117,8 @@ function v(e) {
         discriminatorClass: _.discriminator
       }), (0, r.jsx)(d.Z, {
         user: t,
-        activities: S,
-        applicationStream: I,
+        activities: I,
+        applicationStream: w,
         voiceChannel: T
       })]
     })]

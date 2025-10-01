@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk197571 = require("./197571.js");
+  Chunk10198 = require("./10198.js");
 
 function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -190,7 +190,7 @@ function x() {
         children: Chunk388032.intl.string(Chunk388032.t.U4FgFB)
       }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
         children: (0, Chunk951288.jsx)(Chunk600164.Z, {
-          className: Chunk197571.marginBottom20,
+          className: Chunk10198.marginBottom20,
           children: (0, Chunk951288.jsx)(Chunk600164.Z.Child, {
             grow: 0,
             shrink: 0,

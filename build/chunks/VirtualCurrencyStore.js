@@ -1,7 +1,7 @@
-/** Chunk was on 74560 **/
+/** Chunk was on 81501 **/
 /** chunk id: 479766, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => o
+  Z: () => s
 });
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
@@ -14,7 +14,7 @@ function l(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class s extends(r = Chunk442837.ZP.Store) {
+class c extends(r = Chunk442837.ZP.Store) {
   get redeemError() {
     return this._redeemVirtualCurrencyError
   }
@@ -117,5 +117,5 @@ class s extends(r = Chunk442837.ZP.Store) {
     }), l(this, "_entitlements", null), l(this, "_redeemingSkuId", null), l(this, "_isRedeemingVirtualCurrency", false), l(this, "_redeemVirtualCurrencyError", null), l(this, "_balance", null), l(this, "_fetchBalanceError", null), l(this, "_isFetchingBalance", false), l(this, "_onboardingModalOpenedPrior", false), l(this, "_balancePillOverlay", false)
   }
 }
-l(s, "displayName", "VirtualCurrencyStore");
-let o = new s
+l(c, "displayName", "VirtualCurrencyStore");
+let s = new c

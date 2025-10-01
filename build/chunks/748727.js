@@ -1,3 +1,0 @@
-/** Chunk was on 76044 **/
-/** chunk id: 748727, original params: p (module,exports,require) **/
-module.exports = JSON.parse('{"UvP/1N":"ลบแล้ว","Bz9gcH":"ออฟไลน์","7q4iGR":"ออนไลน์","1eK9GR":"ไม่พร้อมใช้งาน","op6/kZ":"ตำแหน่ง","iccpNT":"ตำแหน่ง","78avu7":"ชื่อ","3QONen":"แผน","D0Mb4O":"เชิญเพื่อน","3NtB39":"จัดการแผน","NUTl4u":"การตั้งค่า","MQQIu7":"สถานะเซิร์ฟเวอร์"}')

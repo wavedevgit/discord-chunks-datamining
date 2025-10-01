@@ -9,29 +9,29 @@ var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
-  Chunk638758 = require("./638758.js"),
-  Chunk887353 = require("./887353.js"),
-  Chunk198501 = require("./198501.js"),
-  Chunk300179 = require("./300179.js");
+  Chunk55783 = require("./55783.js"),
+  Chunk654664 = require("./654664.js"),
+  Chunk970217 = require("./970217.js"),
+  Chunk670185 = require("./670185.js");
 let u = () => 4 * Math.random() + 8,
   d = [u(), u(), u()],
   g = () => (0, Chunk951288.jsx)("div", {
-    className: i()(Chunk198501.skeleton, Chunk300179.shopCard),
+    className: i()(Chunk970217.skeleton, Chunk670185.shopCard),
     children: (0, Chunk951288.jsxs)("div", {
-      className: Chunk198501.cardBody,
+      className: Chunk970217.cardBody,
       children: [(0, Chunk951288.jsx)("div", {
-        className: Chunk198501.cardAvatar
+        className: Chunk970217.cardAvatar
       }), (0, Chunk951288.jsx)("div", {
-        className: Chunk198501.cardTitle
+        className: Chunk970217.cardTitle
       }), (0, Chunk951288.jsx)("div", {
-        className: Chunk198501.cardDescription
+        className: Chunk970217.cardDescription
       }), (0, Chunk951288.jsx)("div", {
-        className: Chunk198501.cardSummary
+        className: Chunk970217.cardSummary
       })]
     })
   }),
   p = () => (0, Chunk951288.jsx)("div", {
-    className: Chunk198501.skeletonsContainer,
+    className: Chunk970217.skeletonsContainer,
     children: d.map(e => (0, r.jsxs)("div", {
       className: s.cardsContainer,
       children: [(0, r.jsx)("div", {

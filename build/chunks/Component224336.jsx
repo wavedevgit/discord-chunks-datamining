@@ -5,10 +5,10 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk351864 = require("./351864.js");
+var Chunk361368 = require("./361368.js");
 
 function l() {
   return (0, Chunk951288.jsx)("div", {
-    className: Chunk351864.divider
+    className: Chunk361368.divider
   })
 }

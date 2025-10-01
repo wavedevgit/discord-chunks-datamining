@@ -1,4 +1,4 @@
-/** Chunk was on 73696 **/
+/** Chunk was on 53714 **/
 /** chunk id: 860717, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => X
@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk750312 = require("./750312.jsx"),
   Chunk919498 = require("./919498.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk18827 = require("./18827.js");
+  Chunk895652 = require("./895652.js");
 
 function S(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -247,7 +247,7 @@ function F() {
       game: t
     } = M(module.widget);
   return null == exports ? null : (0, Chunk951288.jsx)(Chunk919498.Z, {
-    className: Chunk18827.socialProof,
+    className: Chunk895652.socialProof,
     applicationId: exports.id,
     guildId: module.guildId,
     channelId: module.channelId

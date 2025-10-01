@@ -1,7 +1,7 @@
-/** Chunk was on 59739 **/
+/** Chunk was on 54573 **/
 /** chunk id: 636298, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => x
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -10,12 +10,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk873546 = require("./873546.js"),
   Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
+  Chunk984802 = require("./984802.js"),
   Chunk59662 = require("./59662.js"),
   Chunk36361 = require("./36361.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk214779 = require("./214779.js");
+  Chunk269537 = require("./269537.js");
 
-function m(e) {
+function p(e) {
   let {
     icon: t,
     label: n,
@@ -30,51 +31,54 @@ function m(e) {
   })
 }
 
-function p(e) {
+function j(e) {
   let {
     title: t,
     onClose: n
   } = e, {
     setShowNavigationMobile: o
-  } = (0, u.t)();
-  return (0, r.jsxs)("div", {
-    className: b.contentHeader,
-    children: [(0, r.jsxs)("div", {
-      className: b.contentHeaderLeft,
-      children: [a.tq && (0, r.jsx)(m, {
-        icon: c.yFM,
-        onClick: () => o(true),
-        label: f.intl.string(f.t["13/7kZ"])
-      }), (0, r.jsx)(c.X6q, {
-        variant: "heading-md/medium",
-        color: "header-secondary",
-        children: t
+  } = (0, d.t)(), l = (0, u.Ll)();
+  return (0, r.jsx)(c.f6W, {
+    theme: l,
+    children: e => (0, r.jsxs)("div", {
+      className: i()(m.contentHeader, e),
+      children: [(0, r.jsxs)("div", {
+        className: m.contentHeaderLeft,
+        children: [a.tq && (0, r.jsx)(p, {
+          icon: c.yFM,
+          onClick: () => o(true),
+          label: b.intl.string(b.t["13/7kZ"])
+        }), (0, r.jsx)(c.X6q, {
+          variant: "heading-md/medium",
+          color: "header-secondary",
+          children: t
+        })]
+      }), (0, r.jsx)(p, {
+        icon: c.Uz9,
+        onClick: n,
+        label: b.intl.string(b.t.cpT0Cg)
       })]
-    }), (0, r.jsx)(m, {
-      icon: c.Uz9,
-      onClick: n,
-      label: f.intl.string(f.t.cpT0Cg)
-    })]
+    })
   })
 }
-let j = Chunk647438.memo(function(e) {
+let x = Chunk647438.memo(function(e) {
   let {
     onClose: t,
     setting: n
   } = e, o = null == n ? true : n.useTitle(), {
     showNavigationMobile: l
-  } = (0, u.t)();
+  } = (0, d.t)();
   return (0, r.jsxs)("div", {
-    className: i()(b.content, {
-      [b.mobile]: a.tq,
-      [b.mobileNavigationOpen]: l
+    className: i()(m.content, {
+      [m.mobile]: a.tq,
+      [m.mobileNavigationOpen]: l
     }),
-    children: [(0, r.jsx)(p, {
+    children: [(0, r.jsx)(j, {
       title: o,
       onClose: t
     }), (0, r.jsx)("div", {
-      className: b.contentBody,
-      children: null != n && (0, r.jsx)(d.Z, {
+      className: m.contentBody,
+      children: null != n && (0, r.jsx)(f.Z, {
         node: n
       })
     })]

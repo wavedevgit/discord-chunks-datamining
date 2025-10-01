@@ -44,7 +44,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk674563 = require("./674563.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk179598 = require("./179598.js");
+  Chunk707449 = require("./707449.js");
 
 function B(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -219,7 +219,7 @@ function $(e) {
         onResetText: k.intl.string(k.t.T6QuWV)
       })
     }), [eR, e0, eJ]),
-    e7 = n.useCallback(() => {
+    e8 = n.useCallback(() => {
       e0 ? (0, Z.Z)({
         title: k.intl.string(k.t.FVDhIS),
         body: k.intl.string(k.t.Hgdhwc),
@@ -234,9 +234,9 @@ function $(e) {
     (0, f.oav)(w.Yz, e => (0, r.jsx)(ee, B({
       guildId: er,
       productId: ei
-    }, e)), e7)
-  }, [er, e7, ei]);
-  let e8 = async e => {
+    }, e)), e8)
+  }, [er, e8, ei]);
+  let e7 = async e => {
     let t = (0, I.pM)({
       newRoleParams: eB
     });
@@ -284,7 +284,7 @@ function $(e) {
           children: k.intl.string(k.t["Tu7f+f"])
         })]
       }), (0, r.jsx)(f.olH, {
-        onClick: e7,
+        onClick: e8,
         className: D.__invalid_modalCloseButton,
         "data-migration-pending": true
       })]
@@ -373,7 +373,7 @@ function $(e) {
             }) : k.intl.string(k.t["Ax89/f"]),
             published: ec,
             onClick: () => {
-              o()(e9, "Attempting to publish/unpublish when not allowed"), e_(ec ? "unpublish" : "publish"), e8(E(B({}, e$), {
+              o()(e9, "Attempting to publish/unpublish when not allowed"), e_(ec ? "unpublish" : "publish"), e7(E(B({}, e$), {
                 published: !ec
               }))
             },
@@ -452,7 +452,7 @@ function $(e) {
             disabled: !e3,
             loading: ek,
             onClick: () => {
-              o()(e3, "cannot save changes for published product without adding all fields"), e_("update_publish"), e8(e$)
+              o()(e3, "cannot save changes for published product without adding all fields"), e_("update_publish"), e7(e$)
             }
           }) : (0, r.jsx)(u.zxk, {
             variant: "secondary",
@@ -460,7 +460,7 @@ function $(e) {
             disabled: !e1,
             loading: ek,
             onClick: () => {
-              o()(e1, "cannot save changes without name or price tier"), e_("draft"), e8(e$)
+              o()(e1, "cannot save changes without name or price tier"), e_("draft"), e7(e$)
             }
           })
         })]

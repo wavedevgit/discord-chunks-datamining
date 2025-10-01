@@ -1,0 +1,3 @@
+/** Chunk was on 17348 **/
+/** chunk id: 552804, original params: e (module,exports,require) **/
+module.exports = JSON.parse('{"UvP/1N":"Gel\xf6scht","Bz9gcH":"Offline","7q4iGR":"Online","1eK9GR":"Nicht verf\xfcgbar","op6/kZ":"Verzeichnis","iccpNT":"Verzeichnis","78avu7":"Name","3QONen":"Abonnement","D0Mb4O":"Freunde einladen","3NtB39":"Abo verwalten","NUTl4u":"Einstellungen","MQQIu7":"Serverstatus"}')

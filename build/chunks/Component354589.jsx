@@ -1,7 +1,7 @@
-/** Chunk was on 74379 **/
-/** chunk id: 354589, original params: e,n,t (module,exports,require) **/
+/** Chunk was on 92775 **/
+/** chunk id: 354589, original params: e,n,r (module,exports,require) **/
 require.d(exports, {
-  default: () => B
+  default: () => W
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -44,91 +44,91 @@ var Chunk442837 = require("./442837.js"),
   Chunk332031 = require("./332031.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let B = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
+let W = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
   var n;
   let {
-    user: t,
-    channel: s,
+    user: r,
+    channel: l,
     context: a,
     showChatItems: u = true,
-    showMediaItems: F = false,
-    showChannelCallItems: B = false,
-    showModalItems: H = true,
-    onSelect: G,
-    onHeightUpdate: K,
-    onInteraction: W
-  } = e, Y = (0, L.Z)({
-    userId: t.id,
+    showMediaItems: G = false,
+    showChannelCallItems: W = false,
+    showModalItems: q = true,
+    onSelect: B,
+    onHeightUpdate: F,
+    onInteraction: J
+  } = e, X = (0, R.Z)({
+    userId: r.id,
     guildId: null
-  }), z = (0, k.Z)(t, null, a), J = (0, i.e7)([v.Z, Z.Z], () => {
-    let e = v.Z.getVoiceChannelId();
-    return Z.Z.getChannel(e)
+  }), Y = (0, N.Z)(r, null, a), H = (0, i.e7)([x.Z, j.Z], () => {
+    let e = x.Z.getVoiceChannelId();
+    return j.Z.getChannel(e)
   }), {
-    enabled: X
-  } = j.Z.useExperiment({
-    guildId: null == J ? true : J.guild_id,
+    enabled: K
+  } = Z.Z.useExperiment({
+    guildId: null == H ? true : H.guild_id,
     location: "GroupDMUserContextMenu"
-  }), q = X ? null == J ? true : J.id : s.id, $ = (0, U.Z)(t, q), ee = (0, N.Z)(t.id, a), en = (0, P.Z)({
-    user: t,
+  }), V = K ? null == H ? true : H.id : l.id, $ = (0, D.Z)(r, V), ee = (0, S.Z)(r.id, a), en = (0, C.Z)({
+    user: r,
+    context: a
+  }), er = (0, I.Z)({
+    user: r,
+    channelId: l.id,
     context: a
   }), et = (0, _.Z)({
-    user: t,
-    channelId: s.id,
-    context: a
-  }), er = (0, y.Z)({
-    user: t
-  }), ei = (0, R.Z)(t.id), el = (0, D.Z)(t.id, s.id), eo = (0, A.Z)(t.id), es = (0, p.B)({
-    userId: t.id,
-    channelId: s.id,
-    guildId: s.getGuildId()
-  }), ea = (0, I.Z)(t.id, s.id), ec = (0, T.Z)({
-    user: t
-  }), ed = (0, d.Z)(null, t), eu = (0, O.Z)({
-    user: t
-  }), ef = (0, x.Z)({
-    user: t
-  }), em = (0, M.Z)({
-    user: t
-  }), eb = (0, E.Z)({
-    user: t,
+    user: r
+  }), ei = (0, A.Z)(r.id), es = (0, U.Z)(r.id, l.id), eo = (0, Q.Z)(r.id), el = (0, g.B)({
+    userId: r.id,
+    channelId: l.id,
+    guildId: l.getGuildId()
+  }), ea = (0, P.Z)(r.id, l.id), ed = (0, M.Z)({
+    user: r
+  }), ec = (0, c.Z)(null, r), eu = (0, v.Z)({
+    user: r
+  }), em = (0, O.Z)({
+    user: r
+  }), eh = (0, T.Z)({
+    user: r
+  }), eb = (0, y.Z)({
+    user: r,
     location: "GroupDMUserContextMenu"
-  }), ep = (0, C.Z)({
-    user: t,
+  }), eg = (0, E.Z)({
+    user: r,
     location: "GroupDMUserContextMenu"
-  }), eg = (0, g.Z)({
-    id: t.id,
-    label: Q.intl.string(Q.t["/AXYnJ"])
-  }), eh = (0, V.Z)(t.id), ej = (0, m.Z)(t.id), eZ = (0, f.Z)(s.id), ev = (0, h.Z)(t), eO = (0, b.Z)(t.id), ey = (0, w.Z)({
-    commandType: c.yU.USER,
-    commandTargetId: t.id,
-    channel: s,
+  }), ep = (0, p.Z)({
+    id: r.id,
+    label: L.intl.string(L.t["/AXYnJ"])
+  }), ef = (0, z.Z)(r.id), eZ = (0, h.Z)(r.id), ej = (0, m.Z)(l.id), ex = (0, f.Z)(r), ev = (0, b.Z)(r.id), e_ = (0, w.Z)({
+    commandType: d.yU.USER,
+    commandTargetId: r.id,
+    channel: l,
     guildId: true,
-    onHeightUpdate: K
-  }), ex = (0, S.Z)(t, s), e_ = t.isNonUserBot(), ew = s.isManaged(), eE = null == (n = s.recipients) ? true : n.includes(t.id);
-  return (0, r.jsxs)(l.v2r, {
+    onHeightUpdate: F
+  }), eO = (0, k.Z)(r, l), eI = r.isNonUserBot(), ew = l.isManaged(), ey = null == (n = l.recipients) ? true : n.includes(r.id);
+  return (0, t.jsxs)(s.v2r, {
     navId: "user-context",
     onClose: o.Zy,
-    "aria-label": Q.intl.string(Q.t.liqwPD),
-    onSelect: G,
-    onInteraction: W,
-    children: [!e_ && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(l.kSQ, {
-        children: ev
-      }), (0, r.jsxs)(l.kSQ, {
-        children: [H && Y, u && z, ee, en, !ew && $, H && et, H && er, eh]
-      }), F && (0, r.jsx)(l.kSQ, {
+    "aria-label": L.intl.string(L.t.liqwPD),
+    onSelect: B,
+    onInteraction: J,
+    children: [!eI && (0, t.jsxs)(t.Fragment, {
+      children: [(0, t.jsx)(s.kSQ, {
+        children: ex
+      }), (0, t.jsxs)(s.kSQ, {
+        children: [q && X, u && Y, ee, en, !ew && $, q && er, q && et, ef]
+      }), G && (0, t.jsx)(s.kSQ, {
         children: ei
-      }), eE && (0, r.jsxs)(l.kSQ, {
-        children: [!ew && el, ex]
-      }), (0, r.jsx)(l.kSQ, {
-        children: H && ed
-      }), (0, r.jsxs)(l.kSQ, {
-        children: [F && eo, F && es, F && ea, ey, H && ec, eu, ef, em, H && ep, H && eb, F && eO]
-      }), B && (0, r.jsxs)(l.kSQ, {
-        children: [eZ, ej]
+      }), ey && (0, t.jsxs)(s.kSQ, {
+        children: [!ew && es, eO]
+      }), (0, t.jsx)(s.kSQ, {
+        children: q && ec
+      }), (0, t.jsxs)(s.kSQ, {
+        children: [G && eo, G && el, G && ea, e_, q && ed, eu, em, eh, q && eg, q && eb, G && ev]
+      }), W && (0, t.jsxs)(s.kSQ, {
+        children: [ej, eZ]
       })]
-    }), (0, r.jsx)(l.kSQ, {
-      children: eg
+    }), (0, t.jsx)(s.kSQ, {
+      children: ep
     })]
   })
 }, {

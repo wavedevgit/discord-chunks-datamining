@@ -13,8 +13,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk358085 = require("./358085.js"),
   Chunk998502 = require("./998502.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk761588 = require("./761588.js"),
-  Chunk197571 = require("./197571.js");
+  Chunk680465 = require("./680465.js"),
+  Chunk10198 = require("./10198.js");
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -33,9 +33,9 @@ function h() {
       require(true), Chunk120356 ? await (0, Chunk865066.OK)("windows-settings") : await (0, Chunk865066.sU)("windows-settings"), require(false), o((0, Chunk865066.aL)())
     }, [Chunk120356]);
   return module ? (0, Chunk951288.jsxs)("div", {
-    className: Chunk761588.systemServiceContainer,
+    className: Chunk680465.systemServiceContainer,
     children: [(0, Chunk951288.jsxs)("div", {
-      className: Chunk761588.systemServiceTextContainer,
+      className: Chunk680465.systemServiceTextContainer,
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/medium",
         color: "header-primary",
@@ -70,20 +70,20 @@ class m extends Chunk647438.PureComponent {
       tag: Chunk481060.RB0.H1,
       title: Chunk647438,
       children: [(0, Chunk951288.jsx)(Chunk481060.j7V, {
-        className: Chunk197571.marginBottom20,
+        className: Chunk10198.marginBottom20,
         value: module,
         note: Chunk388032.intl.string(Chunk388032.t["s/cQra"]),
         onChange: this.handleToggleOpenOnStartup,
         children: Chunk388032.intl.string(Chunk388032.t.WQm4p6)
       }), (0, Chunk358085.isWindows)() ? (0, Chunk951288.jsx)(Chunk481060.j7V, {
         disabled: !module,
-        className: o()(Chunk197571.marginTop8, Chunk197571.marginBottom20),
+        className: o()(Chunk10198.marginTop8, Chunk10198.marginBottom20),
         value: !!module && exports,
         note: Chunk388032.intl.string(Chunk388032.t.o2FSjI),
         onChange: this.handleToggleStartMinimized,
         children: Chunk388032.intl.string(Chunk388032.t.n7Yjen)
       }) : null, (0, Chunk951288.jsx)(Chunk481060.j7V, {
-        className: Chunk197571.marginBottom20,
+        className: Chunk10198.marginBottom20,
         value: require,
         note: Chunk388032.intl.string(Chunk388032.t["mVuX+v"]),
         onChange: this.handleToggleMinimizeToTray,
