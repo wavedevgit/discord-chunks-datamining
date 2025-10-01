@@ -2,33 +2,47 @@
 /** chunk id: 827313, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => u
+  Z: () => _
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk481060 = require("./481060.js"),
+var Chunk120356 = require("./120356.js"),
+  a = require.n(Chunk120356),
+  Chunk681715 = require("./681715.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk785717 = require("./785717.jsx"),
   Chunk531301 = require("./531301.js"),
-  Chunk475413 = require("./475413.jsx"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk205853 = require("./205853.js");
 
-function u(e) {
+function _(e) {
   let {
     userId: t,
-    isHovering: n,
-    onOpenProfile: u
+    isVisible: n,
+    onOpenProfile: i
   } = e, {
-    note: d
-  } = (0, a.Z)(t), f = null != d && "" !== d;
-  return (0, r.jsx)(o.y, {
-    action: "PRESS_ADD_NOTE",
-    icon: f ? i.hH0 : i.Wos,
-    tooltipText: f ? d : l.intl.string(l.t["1ZZttr"]),
-    tooltipClassName: f ? c.tooltip : true,
-    isHovering: n,
-    onClick: () => null == u ? true : u({
-      subsection: s.Tb.NOTE
+    note: _
+  } = (0, c.Z)(t), p = null != _ && "" !== _, h = p ? s.hH0 : s.Wos, m = p ? d.intl.string(d.t["gs+qcH"]) : d.intl.string(d.t["1ZZttr"]), g = p ? _ : d.intl.string(d.t["1ZZttr"]), {
+    trackUserProfileAction: E
+  } = (0, l.KZ)(), b = () => {
+    E({
+      action: "PRESS_ADD_NOTE"
+    }), null == i || i({
+      subsection: u.Tb.NOTE
+    })
+  };
+  return (0, r.jsx)(o.u, {
+    asContainer: true,
+    text: g,
+    children: (0, r.jsx)(s.P3F, {
+      "aria-label": m,
+      onClick: b,
+      className: a()(f.button, n && f.visible),
+      children: (0, r.jsx)(h, {
+        size: "xs",
+        color: "currentColor"
+      })
     })
   })
 }

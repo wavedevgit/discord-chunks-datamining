@@ -64,6 +64,7 @@ function b(e) {
       })]
     })
   }) : (0, n.jsxs)(h.F, {
+    className: v.scroller,
     fade: true,
     children: [(0, n.jsxs)("div", {
       className: v.headerRow,

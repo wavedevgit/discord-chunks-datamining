@@ -5,8 +5,7 @@ require.d(exports, {
   ef: () => O,
   j8: () => E,
   oY: () => v,
-  tG: () => y,
-  y: () => I
+  tG: () => y
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -178,21 +177,4 @@ let O = Chunk647438.forwardRef(function(e, t) {
       color: u.bannerColor,
       themeColor: "none"
     }, a))
-  });
-
-function I(e) {
-  var {
-    isHovering: t,
-    className: n,
-    innerClassName: i
-  } = e, a = h(e, ["isHovering", "className", "innerClassName"]);
-  return (0, r.jsx)(O, f({
-    className: o()(u.hover, {
-      [u.visible]: t
-    }, n),
-    innerClassName: o()(u.hover, i),
-    color: u.hoverColor,
-    themeColor: "none",
-    look: s.zx.Looks.BLANK
-  }, a))
-}
+  })
