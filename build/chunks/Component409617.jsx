@@ -27,35 +27,35 @@ function N(e) {
     onClose: s,
     onNext: N,
     onBack: j
-  } = e, I = (0, u.U0)(), E = (0, r.e7)([m.Z], () => m.Z.getFreeTextAppealReason()), [T, v] = a.useState(""), [f, k] = a.useState(false);
+  } = e, I = (0, u.U0)(), T = (0, r.e7)([m.Z], () => m.Z.getFreeTextAppealReason()), [E, v] = a.useState(""), [f, k] = a.useState(false);
   a.useEffect(() => {
-    v(null != E ? E : ""), k(I === g.bK.SOMETHING_ELSE)
-  }, [E, I, t]);
+    v(null != T ? T : ""), k(I === g.bK.SOMETHING_ELSE)
+  }, [T, I, t]);
   let S = g.RY.map(e => ({
     value: e,
     name: (0, p.ox)(e)
   }));
   return (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsxs)(c.xBx, {
+    children: [(0, i.jsxs)(d.xBx, {
       "data-migration-pending": true,
       direction: x.Z.Direction.VERTICAL,
       className: C.header,
       separator: false,
-      children: [(0, i.jsx)(c.X6q, {
+      children: [(0, i.jsx)(d.X6q, {
         className: C.title,
         variant: "heading-xl/semibold",
         children: _.intl.string(_.t["C5q+pa"])
-      }), (0, i.jsx)(c.Text, {
+      }), (0, i.jsx)(d.Text, {
         className: C.subtitle,
         color: "header-secondary",
         variant: "text-md/normal",
         children: _.intl.string(_.t.VEcRh4)
-      }), null != s && (0, i.jsx)(c.olH, {
+      }), null != s && (0, i.jsx)(d.olH, {
         "data-migration-pending": true,
         className: C.closeButton,
         onClick: s
       })]
-    }), (0, i.jsxs)(c.hzk, {
+    }), (0, i.jsxs)(d.hzk, {
       "data-migration-pending": true,
       className: l()(h.modalContent, n),
       paddingFix: false,
@@ -69,52 +69,52 @@ function N(e) {
           let {
             value: n
           } = e;
-          k(n === g.bK.SOMETHING_ELSE), n !== g.bK.SOMETHING_ELSE && (v(""), d.Z.dispatch({
+          k(n === g.bK.SOMETHING_ELSE), n !== g.bK.SOMETHING_ELSE && (v(""), c.Z.dispatch({
             type: "SAFETY_HUB_APPEAL_SIGNAL_CUSTOM_INPUT_CHANGE",
             userInput: ""
-          })), d.Z.dispatch({
+          })), c.Z.dispatch({
             type: "SAFETY_HUB_APPEAL_SIGNAL_SELECT",
             signal: n
           })
         }
       }), t && f && (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(c.Kx8, {
+        children: [(0, i.jsx)(d.Kx8, {
           rows: 4,
           maxLength: 1024,
           placeholder: _.intl.string(_.t.bQrZIC),
-          value: T,
+          value: E,
           onChange: v,
           autoFocus: true
-        }), (0, i.jsx)(c.Text, {
+        }), (0, i.jsx)(d.Text, {
           variant: "text-sm/normal",
           color: "header-muted",
           children: _.intl.string(_.t.xfNY3N)
         })]
-      }), (0, i.jsx)(c.Text, {
+      }), (0, i.jsx)(d.Text, {
         variant: "text-sm/normal",
         className: h.disclaimer,
         children: _.intl.format(_.t["8k9GCQ"], {})
       })]
-    }), (0, i.jsx)(c.mzw, {
+    }), (0, i.jsx)(d.mzw, {
       "data-migration-pending": true,
-      children: (0, i.jsxs)(c.hE2, {
+      children: (0, i.jsxs)(d.hE2, {
         direction: "horizontal-reverse",
-        children: [(0, i.jsx)(c.zxk, {
+        children: [(0, i.jsx)(d.zxk, {
           variant: "primary",
           text: _.intl.string(_.t.PDTjLC),
           onClick: () => {
-            d.Z.dispatch({
+            c.Z.dispatch({
               type: "SAFETY_HUB_APPEAL_SIGNAL_CUSTOM_INPUT_CHANGE",
-              userInput: T
+              userInput: E
             }), null == N || N()
           }
-        }), (0, i.jsx)(c.zxk, {
+        }), (0, i.jsx)(d.zxk, {
           variant: "secondary",
           text: _.intl.string(_.t["13/7kZ"]),
           onClick: () => {
-            d.Z.dispatch({
+            c.Z.dispatch({
               type: "SAFETY_HUB_APPEAL_SIGNAL_CUSTOM_INPUT_CHANGE",
-              userInput: T
+              userInput: E
             }), null == j || j()
           }
         })]

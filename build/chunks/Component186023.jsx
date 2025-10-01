@@ -32,7 +32,7 @@ let h = e => {
     root_node_id: I,
     success_node_id: Z,
     fail_node_id: S
-  } = n, [T, P] = i.useState(I), [N, E] = i.useState(true), [k, w] = i.useState(true), [R, D] = i.useState([]), [A, M] = i.useState(true), [B, L] = i.useState(true), U = (0, _.PO)("in_app_report_modal");
+  } = n, [T, P] = i.useState(I), [N, E] = i.useState(true), [k, w] = i.useState(true), [R, D] = i.useState([]), [M, A] = i.useState(true), [B, L] = i.useState(true), U = (0, _.PO)("in_app_report_modal");
   (0, o.ZP)(() => {
     U && (0, u.k0)()
   });
@@ -89,7 +89,7 @@ let h = e => {
       var r;
       let i = y ? await (0, p.ZD)(n, t, [...R, e]) : await (0, p.fw)(n, t, [...R, e], j),
         l = null == i || null == (r = i.body) ? true : r.report_id;
-      null != l && M(l), L(C[e.nodeRef].report_type), null == x || x(l)
+      null != l && A(l), L(C[e.nodeRef].report_type), null == x || x(l)
     }, z = () => {
       var e, n;
       if (R.length < 1) return;
@@ -153,7 +153,8 @@ let h = e => {
             successNodeId: Z,
             failNodeId: S,
             onSubmit: W,
-            reportId: A
+            reportId: M,
+            nodeMap: C
           })
         })
       }, e.id))

@@ -154,7 +154,7 @@ let et = e => {
     ew = (0, d.U)(),
     eR = (0, s.PO)("share_with_parent_element"),
     eD = (0, c.mq)(X.ne.ACTIVE),
-    eA = ew && eD.length > 0 && eR && null != $(t, "share_with_parents");
+    eM = ew && eD.length > 0 && eR && null != $(t, "share_with_parents");
   return (0, r.jsxs)("div", {
     className: K.container,
     children: [(0, r.jsxs)(a.xBx, {
@@ -204,7 +204,7 @@ let et = e => {
           user: "user" === n.name ? n.record : n.record.author,
           channelId: eZ,
           reportId: eo
-        }), eA && (0, r.jsx)(B.Z, {
+        }), eM && (0, r.jsx)(B.Z, {
           parents: eD
         }), null != $(t, "block_users") && ("message" === n.name || "first_dm" === n.name || "user" === n.name || "report_to_mod_message" === n.name || "application" === n.name && null != n.record.bot) && (0, r.jsx)(g.Z, {
           user: "application" === n.name ? n.record.bot : "user" === n.name ? n.record : n.record.author,
@@ -224,11 +224,11 @@ let et = e => {
         }), null != $(t, "deauthorize_app") && "application" === n.name && (0, r.jsx)(h.Z, {
           application: n.record,
           reportId: eo
-        }), null != $(t, "deauthorize_app") && "application" === n.name && (0, r.jsx)(A.Z, {
+        }), null != $(t, "deauthorize_app") && "application" === n.name && (0, r.jsx)(M.Z, {
           application: n.record,
           reportId: eo
         })]
-      }), null != $(t, "settings_upsells") && ("message" === n.name || "report_to_mod_message" === n.name) && null != eE && (0, r.jsx)(M.Z, {
+      }), null != $(t, "settings_upsells") && ("message" === n.name || "report_to_mod_message" === n.name) && null != eE && (0, r.jsx)(A.Z, {
         settingsUpsells: eE,
         channelId: n.record.channel_id,
         onModalClose: ei,
@@ -264,7 +264,8 @@ let et = e => {
         className: K.listContainer,
         children: [(0, r.jsx)(b.Z, {
           node: t,
-          onSelectChild: eN
+          onSelectChild: eN,
+          nodeMap: e.nodeMap
         }), null != eu && eu.length > 0 ? (0, r.jsx)(y.Z, {
           elements: eu
         }) : null]

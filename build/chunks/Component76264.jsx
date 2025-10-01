@@ -1,51 +1,64 @@
 /** Chunk was on 9273 **/
 /** chunk id: 76264, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => m
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
+  Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
+  Chunk432877 = require("./432877.js"),
   Chunk259580 = require("./259580.jsx"),
   Chunk520310 = require("./520310.js"),
   Chunk452847 = require("./452847.js");
-let d = e => {
+let _ = e => {
     let {
       child: t,
-      onClick: n
-    } = e, [i] = t;
-    return (0, r.jsxs)(a.P3F, {
-      className: l()(c.childButton, s.listElement),
+      onClick: n,
+      nodeMap: i
+    } = e, [_, m] = t, p = (0, a.e7)([s.ZP], () => s.ZP.get("iar_show_report_sub_type_labels")), g = i[m], f = null == g ? true : g.report_type;
+    return (0, r.jsxs)(o.P3F, {
+      className: l()(u.childButton, d.listElement),
       onClick: () => n(t),
-      children: [(0, r.jsx)(a.Text, {
-        className: c.childText,
-        variant: "text-md/semibold",
-        children: i
-      }), (0, r.jsx)(o.Z, {
-        className: c.childIcon,
-        direction: o.Z.Directions.RIGHT
+      children: [(0, r.jsxs)("div", {
+        className: u.childContent,
+        children: [(0, r.jsx)(o.Text, {
+          className: u.childText,
+          variant: "text-md/semibold",
+          children: _
+        }), p && null != f && (0, r.jsx)(o.Text, {
+          className: u.debugText,
+          variant: "text-xs/normal",
+          color: "text-muted",
+          children: f
+        })]
+      }), (0, r.jsx)(c.Z, {
+        className: u.childIcon,
+        direction: c.Z.Directions.RIGHT
       })]
     })
   },
-  u = e => {
+  m = e => {
     let {
       node: {
         children: t
       },
-      onSelectChild: n
+      onSelectChild: n,
+      nodeMap: i
     } = e;
     if (null == t || 0 === t.length) return null;
-    let i = t.map(e => {
-      let [t, i] = e;
-      return (0, r.jsx)(d, {
+    let l = t.map(e => {
+      let [t, l] = e;
+      return (0, r.jsx)(_, {
         child: e,
-        onClick: n
-      }, "".concat(t, "+").concat(i))
+        onClick: n,
+        nodeMap: i
+      }, "".concat(t, "+").concat(l))
     });
     return (0, r.jsx)("div", {
-      className: s.listElementWrapper,
-      children: i
+      className: d.listElementWrapper,
+      children: l
     })
   }

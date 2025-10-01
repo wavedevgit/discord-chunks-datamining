@@ -59,14 +59,14 @@ function g(e) {
         color: "header-primary",
         className: m.actionsHeader,
         children: x.intl.string(x.t["9BRc1N"])
-      }), (0, i.jsx)(c.Z, {
+      }), (0, i.jsx)(d.Z, {
         text: x.intl.string(x.t.PxL38P),
-        url: d.sQ.COMMUNITY_GUIDELINES,
-        onClick: () => g(d.n0.ClickCommunityGuidelinesLink)
-      }), (0, i.jsx)(c.Z, {
+        url: c.sQ.COMMUNITY_GUIDELINES,
+        onClick: () => g(c.n0.ClickCommunityGuidelinesLink)
+      }), (0, i.jsx)(d.Z, {
         text: x.intl.string(x.t.qC3XKS),
-        url: d.sQ.WARNING_SYSTEM_HELPCENTER_LINK,
-        onClick: () => g(d.n0.ClickWarningSystemHelpcenterLink)
+        url: c.sQ.WARNING_SYSTEM_HELPCENTER_LINK,
+        onClick: () => g(c.n0.ClickWarningSystemHelpcenterLink)
       })]
     }), (0, i.jsx)(l.mzw, {
       "data-migration-pending": true,

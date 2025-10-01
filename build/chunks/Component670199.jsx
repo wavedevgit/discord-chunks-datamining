@@ -28,8 +28,8 @@ function _(e) {
     appealIngestionType: N,
     className: j,
     onClose: I,
-    onNext: E
-  } = e, T = (0, d.n)(), v = null != (n = null == a ? true : a.explainer_link) ? n : "", f = null != a && null != a.flagged_content && a.flagged_content.length > 0, k = (0, c.c7)(null == a ? true : a.description), S = !h && !C && (null == N || N === o.j4.IN_APP), A = null != a && ((0, c.FB)(a) || f);
+    onNext: T
+  } = e, E = (0, c.n)(), v = null != (n = null == a ? true : a.explainer_link) ? n : "", f = null != a && null != a.flagged_content && a.flagged_content.length > 0, k = (0, d.c7)(null == a ? true : a.description), S = !h && !C && (null == N || N === o.j4.IN_APP), A = null != a && ((0, d.FB)(a) || f);
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)(l.xBx, {
       "data-migration-pending": true,
@@ -70,15 +70,15 @@ function _(e) {
       }), C && (0, i.jsx)(x.Z, {
         url: p.sQ.AGE_VERIFICATION_LINK,
         text: u.intl.string(u.t["gJs+kZ"]),
-        onClick: () => T(p.n0.ClickAgeVerificationLink)
+        onClick: () => E(p.n0.ClickAgeVerificationLink)
       }), h && !C && (0, i.jsx)(x.Z, {
         url: p.sQ.SPAM_LINK,
         text: u.intl.string(u.t["PaNS+P"]),
-        onClick: () => T(p.n0.ClickSpamWebformLink)
+        onClick: () => E(p.n0.ClickSpamWebformLink)
       }), !C && (0, i.jsx)(x.Z, {
         text: u.intl.string(u.t["Vtyn//"]),
         url: v,
-        onClick: () => T(p.n0.ClickLearnMoreLink)
+        onClick: () => E(p.n0.ClickLearnMoreLink)
       }), S && _ && (0, i.jsx)(l.Text, {
         className: g.learnMore,
         variant: "text-xs/normal",
@@ -89,7 +89,7 @@ function _(e) {
       children: (0, i.jsx)(l.zxk, {
         variant: "primary",
         text: u.intl.string(u.t.PDTjLC),
-        onClick: E
+        onClick: T
       })
     })]
   })

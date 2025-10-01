@@ -17,11 +17,11 @@ let x = () => {
     t = (0, Chunk451284.P)(),
     x = (0, Chunk442837.e7)([Chunk236289.Z], () => Chunk236289.Z.getIsDsaEligible());
   return Chunk647438.useCallback(i => {
-    s.default.track(d.rMx.SAFETY_HUB_ACTION, {
+    s.default.track(c.rMx.SAFETY_HUB_ACTION, {
       action: i,
       account_standing: t.state,
       classification_ids: null != e ? [Number(e)] : null,
-      source: c.s.AppealIngestion,
+      source: d.s.AppealIngestion,
       is_dsa_eligible: x,
       violation_type: n.violationType
     })

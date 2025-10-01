@@ -25,16 +25,16 @@ function h(e) {
     onClose: h,
     onNext: C,
     onBack: N
-  } = e, j = (0, s.e7)([d.Z], () => d.Z.getAppealClassificationId()), {
+  } = e, j = (0, s.e7)([c.Z], () => c.Z.getAppealClassificationId()), {
     classification: I
-  } = (0, m.YG)(null != j ? j : p.lds), E = (0, x.c7)(null == I ? true : I.description), T = (0, s.e7)([d.Z], () => d.Z.getIsSubmitting()), v = (0, s.e7)([d.Z], () => d.Z.getAppealSignal()), f = (0, s.e7)([d.Z], () => d.Z.getFreeTextAppealReason()), [k, S] = a.useState(false), [A, Z] = a.useState(""), L = a.useCallback(e => {
+  } = (0, m.YG)(null != j ? j : p.lds), T = (0, x.c7)(null == I ? true : I.description), E = (0, s.e7)([c.Z], () => c.Z.getIsSubmitting()), v = (0, s.e7)([c.Z], () => c.Z.getAppealSignal()), f = (0, s.e7)([c.Z], () => c.Z.getFreeTextAppealReason()), [k, S] = a.useState(false), [A, Z] = a.useState(""), b = a.useCallback(e => {
     r.Z.dispatch({
       type: "SAFETY_HUB_APPEAL_SIGNAL_CUSTOM_INPUT_CHANGE",
       userInput: e
     })
-  }, []), b = a.useCallback(async () => {
+  }, []), L = a.useCallback(async () => {
     if (null !== j) try {
-      Z(""), await c.uR(j, v, f), null == C || C()
+      Z(""), await d.uR(j, v, f), null == C || C()
     } catch (n) {
       var e;
       Z((0, x.Zs)(null == (e = n.body) ? true : e.code))
@@ -88,13 +88,13 @@ function h(e) {
         className: g.inputContainer,
         children: (0, i.jsx)(l.Kx8, {
           value: f,
-          onChange: L
+          onChange: b
         })
       }), (0, i.jsx)("div", {
         className: _.policyContainer,
         children: (0, i.jsx)(l.Text, {
           variant: "text-md/semibold",
-          children: E
+          children: T
         })
       }), (0, i.jsx)(l.Text, {
         variant: "text-xs/medium",
@@ -118,12 +118,12 @@ function h(e) {
             variant: "secondary",
             text: u.intl.string(u.t["13/7kZ"]),
             onClick: N,
-            disabled: T
+            disabled: E
           }), (0, i.jsx)(l.zxk, {
             variant: "critical-primary",
             text: u.intl.string(u.t.geKm7u),
-            onClick: b,
-            loading: T
+            onClick: L,
+            loading: E
           })]
         })
       })]

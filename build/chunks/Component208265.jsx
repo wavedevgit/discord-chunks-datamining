@@ -26,12 +26,12 @@ function _(e) {
   } = e, [C, N] = a.useState(_), {
     classification: j,
     isDsaEligible: I
-  } = (0, r.YG)(null != n ? n : u.lds), E = (null == j ? true : j.is_spam) || false, T = (null == j ? true : j.is_coppa) || false, v = null == j ? true : j.appeal_ingestion_type;
+  } = (0, r.YG)(null != n ? n : u.lds), T = (null == j ? true : j.is_spam) || false, E = (null == j ? true : j.is_coppa) || false, v = null == j ? true : j.appeal_ingestion_type;
   a.useEffect(() => {
     N(_)
   }, [N, _]);
   let f = a.useCallback(() => {
-      d.Z.close(), h()
+      c.Z.close(), h()
     }, [h]),
     k = a.useCallback(() => {
       var e;
@@ -62,8 +62,8 @@ function _(e) {
             classification: j,
             onClose: f,
             onNext: k,
-            isSpam: E,
-            isCoppa: T,
+            isSpam: T,
+            isCoppa: E,
             appealIngestionType: v,
             isDsaEligible: I
           })
@@ -81,7 +81,7 @@ function _(e) {
           id: p.Cs.CONFIRM_SUBMISSION,
           impressionName: s.ImpressionNames.APPEAL_INGESTION_CONFIRM_SUBMISSION,
           impressionProperties: p.ZW,
-          children: (0, i.jsx)(c.Z, {
+          children: (0, i.jsx)(d.Z, {
             isDsaEligible: I,
             onClose: f,
             onNext: k,
