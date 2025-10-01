@@ -151,8 +151,8 @@ function E(e) {
     t.includes(e) || (t = [...t, e]), d.Z.updateMemberRoles(r, n.id, t, [e], [])
   }, [I, r, n.id, s]);
   if (null == v) return null;
-  let _ = A && null != b;
-  return 0 !== E.length || _ ? (0, l.jsx)(g.Z, P(Z({
+  let w = A && null != b;
+  return 0 !== E.length || w ? (0, l.jsx)(g.Z, P(Z({
     heading: O.intl.string(O.t.LPJmLy)
   }, o), {
     children: (0, l.jsx)(T, {

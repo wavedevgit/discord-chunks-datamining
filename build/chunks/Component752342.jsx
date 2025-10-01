@@ -38,8 +38,8 @@ function C(e) {
     user: n,
     currentUser: t,
     guildId: C,
-    channelId: _,
-    messageId: w,
+    channelId: w,
+    messageId: _,
     roleId: D,
     sessionId: R,
     initialSection: L,
@@ -48,15 +48,15 @@ function C(e) {
     openedAt: k,
     onClose: B,
     sourceAnalyticsLocations: F = []
-  } = e, V = C === T.ME ? true : C, G = (0, u.ZP)(n.id, V), z = c.ZP.getName(V, _, n), K = (0, a.Dt)(), {
+  } = e, V = C === T.ME ? true : C, G = (0, u.ZP)(n.id, V), z = c.ZP.getName(V, w, n), K = (0, a.Dt)(), {
     analyticsLocations: W
   } = (0, s.ZP)([...F, o.Z.USER_PROFILE_MODAL]), Y = (0, d.ZB)({
     layout: "MODAL",
     userId: n.id,
     sourceSessionId: R,
     guildId: V,
-    channelId: _,
-    messageId: w,
+    channelId: w,
+    messageId: _,
     roleId: D
   }), H = (0, P.Z)(n);
   return (0, l.jsx)(s.Gt, {
@@ -104,7 +104,7 @@ function C(e) {
                   user: n,
                   displayProfile: G,
                   guildId: V,
-                  channelId: _,
+                  channelId: w,
                   themeType: E.l.MODAL
                 }), (0, l.jsx)(I.Z, {
                   user: n,

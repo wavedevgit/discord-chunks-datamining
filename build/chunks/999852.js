@@ -1,5 +1,5 @@
 /** Chunk was on 28934 **/
-/** chunk id: 999852, original params: e,t,s (module,exports,require) **/
+/** chunk id: 999852, original params: e,t,n (module,exports,require) **/
 module.exports = {
   content: "content_f2e68c",
   infoBox: "infoBox_f2e68c",

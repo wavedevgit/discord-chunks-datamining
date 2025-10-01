@@ -54,8 +54,8 @@ function I(e) {
     onHide: E,
     sourceAnalyticsLocations: A = []
   } = e, S = t === v.ME ? true : t, C = (0, i.e7)([c.Z], () => c.Z.isBlocked(n.id)), {
-    analyticsLocations: _
-  } = (0, s.ZP)([...A, C ? o.Z.BLOCKED_PROFILE_MODAL : o.Z.IGNORED_PROFILE_MODAL]), w = (0, u.ZB)({
+    analyticsLocations: w
+  } = (0, s.ZP)([...A, C ? o.Z.BLOCKED_PROFILE_MODAL : o.Z.IGNORED_PROFILE_MODAL]), _ = (0, u.ZB)({
     layout: "MODAL_V2",
     userId: n.id,
     showGuildProfile: true,
@@ -73,9 +73,9 @@ function I(e) {
     name: L
   });
   return (0, l.jsx)(s.Gt, {
-    value: _,
+    value: w,
     children: (0, l.jsx)(u.Mt, {
-      value: w,
+      value: _,
       openedAt: T,
       fetchStartedAt: null == R ? true : R.fetchStartedAt,
       fetchEndedAt: null == R ? true : R.fetchEndedAt,
@@ -132,16 +132,16 @@ function I(e) {
                 onClick: () => {
                   E(), (0, m.pQ)(O({
                     action: C ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
-                    analyticsLocations: _
-                  }, w))
+                    analyticsLocations: w
+                  }, _))
                 }
               }), (0, l.jsx)(j.Z, {
                 userId: n.id,
                 onClick: () => {
                   E(), (0, m.pQ)(O({
                     action: "DONT_SHOW_AGAIN_IGNORED_PROFILE",
-                    analyticsLocations: _
-                  }, w))
+                    analyticsLocations: w
+                  }, _))
                 }
               })]
             })]
