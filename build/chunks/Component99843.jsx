@@ -95,7 +95,7 @@ let _ = e => {
             onClick: () => {
               null == _ || _(), (0, u.B)(i, l.Z.HEADER_BAR)
             },
-            onContextMenu: e => (0, a.jW)(e, () => Promise.all([n.e("79695"), n.e("22981")]).then(n.bind(n, 354741)).then(e => {
+            onContextMenu: e => (0, a.jW)(e, () => Promise.all([n.e("79695"), n.e("25421"), n.e("38357")]).then(n.bind(n, 354741)).then(e => {
               let {
                 default: n
               } = e;

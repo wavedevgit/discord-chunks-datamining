@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   s = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
-  Chunk198168 = require("./198168.jsx"),
+  Chunk198168 = require("./198168.js"),
   Chunk907862 = require("./907862.js"),
   Chunk481060 = require("./481060.js"),
   Chunk570140 = require("./570140.js"),
@@ -216,7 +216,7 @@ class eN extends Chunk647438.PureComponent {
         }) : t === u.z.ACCOUNT_LINK_PROMPT ? (0, r.jsx)(p.J2, {
           graphic: {
             type: "dynamic",
-            component: d.P3.ACCOUNT_LINK_DISPLAY,
+            component: d.DynamicGraphicComponent.ACCOUNT_LINK_DISPLAY,
             props: {
               application: i
             }

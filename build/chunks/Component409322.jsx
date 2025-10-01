@@ -19,35 +19,35 @@ function c(e) {
     {
       layout: f,
       collapseAfter: b,
-      ContextProvider: p,
-      useCollapsibleTitle: m
+      ContextProvider: m,
+      useCollapsibleTitle: p
     } = c,
     j = f.filter(e => {
       var t, n;
       return null == (n = null == (t = e.usePredicate) ? true : t.call(e)) || n
     }),
-    y = null != b ? j.slice(0, b) : j,
-    x = null != b ? j.slice(b) : [],
-    v = null != p ? p : o.Fragment,
-    g = null != (t = null == m ? true : m(u, x.length)) ? t : (n = x.length, u ? s.intl.formatToPlainString(s.t["3SHL+f"], {
+    x = null != b ? j.slice(0, b) : j,
+    v = null != b ? j.slice(b) : [],
+    y = null != m ? m : o.Fragment,
+    g = null != (t = null == p ? true : p(u, v.length)) ? t : (n = v.length, u ? s.intl.formatToPlainString(s.t["3SHL+f"], {
       count: n
     }) : s.intl.formatToPlainString(s.t["8JRFyc"], {
       count: n
     }));
-  return (0, r.jsxs)(v, {
-    children: [y.map((e, t) => (0, r.jsxs)(o.Fragment, {
+  return (0, r.jsxs)(y, {
+    children: [x.map((e, t) => (0, r.jsxs)(o.Fragment, {
       children: [(0, r.jsx)(i.Z, {
         node: e
-      }), (t !== y.length - 1 || x.length > 0) && (0, r.jsx)(l.izJ, {})]
-    }, e.key)), x.length > 0 && (0, r.jsx)(a.I, {
+      }), (t !== x.length - 1 || v.length > 0) && (0, r.jsx)(l.izJ, {})]
+    }, e.key)), v.length > 0 && (0, r.jsx)(a.I, {
       title: g,
       isOpen: u,
       setIsOpen: d,
       compact: true,
-      children: x.map((e, t) => (0, r.jsxs)(o.Fragment, {
+      children: v.map((e, t) => (0, r.jsxs)(o.Fragment, {
         children: [(0, r.jsx)(i.Z, {
           node: e
-        }), t !== x.length - 1 && (0, r.jsx)(l.izJ, {})]
+        }), t !== v.length - 1 && (0, r.jsx)(l.izJ, {})]
       }, e.key))
     })]
   })

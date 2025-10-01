@@ -51,7 +51,7 @@ let C = function(e) {
     }))
   }, []), r.useEffect(() => {
     (0, x.lA)(k, x.d_.EXPRESSIVE_PRIMARY, n)
-  }, [k, n]), (0, a.jsx)(s.I, {
+  }, [k, n]), (0, a.jsx)(s.ExpressiveModal, {
     transitionState: t,
     onClose: C,
     gradientColor: "blue",

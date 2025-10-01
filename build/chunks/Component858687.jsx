@@ -18,56 +18,56 @@ function f(e, t) {
     rearrangeContextMenu: f
   } = o.Z.useExperiment({
     location: "useChannelLeaveItem"
-  }), h = r.useCallback(() => {
-    let r = (0, u.F6)(e, c.default, d.Z),
-      o = s.intl.formatToPlainString(s.t.hJ5Ap6, {
-        name: r
+  }), b = i.useCallback(() => {
+    let i = (0, u.F6)(e, s.default, c.Z),
+      o = d.intl.formatToPlainString(d.t.hJ5Ap6, {
+        name: i
       }),
-      f = s.intl.format(s.t.SSIVOj, {
-        name: r
+      f = d.intl.format(d.t.SSIVOj, {
+        name: i
       });
-    e.isManaged() && (o = s.intl.formatToPlainString(s.t.hVGjER, {
-      name: r
-    }), f = s.intl.format(s.t.IK1Qvr, {
-      name: r
+    e.isManaged() && (o = d.intl.formatToPlainString(d.t.hVGjER, {
+      name: i
+    }), f = d.intl.format(d.t.IK1Qvr, {
+      name: i
     }));
-    let h = function(n) {
-      let i = arguments.length > 1 && true !== arguments[1] && arguments[1];
-      a.Z.closePrivateChannel(e.id, t, i)
+    let b = function(n) {
+      let r = arguments.length > 1 && true !== arguments[1] && arguments[1];
+      a.Z.closePrivateChannel(e.id, t, r)
     };
     (0, l.ZDy)(async () => {
       let {
         default: e
       } = await n.e("14604").then(n.bind(n, 960670));
-      return t => (0, i.jsx)(e, function(e) {
+      return t => (0, r.jsx)(e, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
-            i = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            r = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), i.forEach(function(t) {
-            var i;
-            i = n[t], t in e ? Object.defineProperty(e, t, {
-              value: i,
+          }))), r.forEach(function(t) {
+            var r;
+            r = n[t], t in e ? Object.defineProperty(e, t, {
+              value: r,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[t] = i
+            }) : e[t] = r
           })
         }
         return e
       }({
         header: o,
         body: f,
-        onSubmit: h
+        onSubmit: b
       }, t))
     })
   }, [e, t]);
-  return (0, i.jsx)(l.sNh, {
+  return (0, r.jsx)(l.sNh, {
     id: "leave-channel",
-    label: s.intl.string(s.t["26C4oq"]),
-    action: h,
+    label: d.intl.string(d.t["26C4oq"]),
+    action: b,
     color: "danger",
-    subtext: f ? s.intl.string(s.t["2HOk0t"]) : true
+    subtext: f ? d.intl.string(d.t["2HOk0t"]) : true
   })
 }

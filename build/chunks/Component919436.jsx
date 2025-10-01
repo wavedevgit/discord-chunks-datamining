@@ -242,7 +242,7 @@ class R extends(r = Chunk647438.PureComponent) {
       }) : (0, u.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("79695"), n.e("2950")]).then(n.bind(n, 354741));
+        } = await Promise.all([n.e("79695"), n.e("25421")]).then(n.bind(n, 354741));
         return n => (0, i.jsx)(e, Z(w({}, n), {
           channel: t,
           selected: false

@@ -92,7 +92,7 @@ let m = e => {
       let {
         onClick: a
       } = e;
-      return (0, r.jsx)(i.I, d({
+      return (0, r.jsx)(i.ExpressiveModal, d({
         size: "md",
         onClose: async () => {
           await f()

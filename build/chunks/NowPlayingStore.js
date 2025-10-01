@@ -20,7 +20,7 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -33,7 +33,7 @@ function p(e) {
   return e
 }
 
-function f(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -47,9 +47,9 @@ function f(e, t) {
 }
 let g = false,
   h = {},
-  m = {};
+  y = {};
 
-function y(e) {
+function m(e) {
   let t = false;
   return e.forEach(e => {
     t = false !== N(e) || t
@@ -57,10 +57,10 @@ function y(e) {
 }
 
 function O(e) {
-  let t = m[e];
+  let t = y[e];
   if (null == t) returnfalse;
   let n = t.gameId;
-  return null != h[n] && (h = p({}, h), delete h[n][e], 0 === Object.values(h[n]).length && delete h[n]), m = p({}, m), delete m[e], true
+  return null != h[n] && (h = f({}, h), delete h[n][e], 0 === Object.values(h[n]).length && delete h[n]), y = f({}, y), delete y[e], true
 }
 
 function N(e) {
@@ -75,21 +75,21 @@ function N(e) {
   return i.forEach(e => {
     (function(e, t) {
       var n, i;
-      let r = (0, s.Z)(e);
+      let r = (0, a.Z)(e);
       if (null == r) return O(t.id);
-      let l = m[t.id];
+      let l = y[t.id];
       null != l && l.gameId !== r && O(t.id);
-      let a = null != (i = null == (n = e.timestamps) ? true : n.start) ? i : Date.now(),
+      let s = null != (i = null == (n = e.timestamps) ? true : n.start) ? i : Date.now(),
         o = {
           userId: t.id,
           activity: e,
-          startedPlaying: a
+          startedPlaying: s
         };
-      return h = f(p({}, h), {
-        [r]: f(p({}, h[r]), {
+      return h = p(f({}, h), {
+        [r]: p(f({}, h[r]), {
           [o.userId]: o
         })
-      }), m = f(p({}, m), {
+      }), y = p(f({}, y), {
         [o.userId]: {
           gameId: r,
           startedPlaying: o.startedPlaying
@@ -101,7 +101,7 @@ function N(e) {
 
 function b() {
   let e, t = false;
-  return Chunk752048.Z.shouldFetch() || g || (h = {}, m = {}, e = false, Chunk158776.Z.getUserIds().forEach(t => {
+  return Chunk752048.Z.shouldFetch() || g || (h = {}, y = {}, e = false, Chunk158776.Z.getUserIds().forEach(t => {
     let n = c.default.getUser(t);
     null != n && (e = N({
       user: n,
@@ -117,7 +117,7 @@ class v extends(i = Chunk442837.ZP.Store) {
     return h
   }
   get usersPlaying() {
-    return m
+    return y
   }
   get gameIds() {
     return Object.keys(h)
@@ -126,13 +126,13 @@ class v extends(i = Chunk442837.ZP.Store) {
     return h[e]
   }
   getUserGame(e) {
-    return m[e]
+    return y[e]
   }
 }
 d(v, "displayName", "NowPlayingStore");
 let _ = new v(Chunk570140.Z, {
   CONNECTION_OPEN: function() {
-    h = {}, m = {}
+    h = {}, y = {}
   },
   CONNECTION_OPEN_SUPPLEMENTAL: function(e) {
     let {
@@ -140,11 +140,11 @@ let _ = new v(Chunk570140.Z, {
       presences: n
     } = e, i = false;
     return t.forEach(e => {
-      y(e.presences) && (i = true)
-    }), y(n) && (i = true), i
+      m(e.presences) && (i = true)
+    }), m(n) && (i = true), i
   },
   LOGOUT: function() {
-    h = {}, m = {}
+    h = {}, y = {}
   },
   PRESENCE_UPDATES: function(e) {
     let {
@@ -156,6 +156,6 @@ let _ = new v(Chunk570140.Z, {
     let {
       presences: t
     } = e;
-    return y(t)
+    return m(t)
   }
 })

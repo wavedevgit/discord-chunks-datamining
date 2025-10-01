@@ -1,18 +1,24 @@
-/** Chunk was on 64861 **/
-/** chunk id: 564172, original params: t,e,i (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 564172, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.r(exports), require.d(exports, {
-  default: () => n
+  default: () => a
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk481060 = require("./481060.js");
 
-function n(t) {
+function a(e) {
   let {
-    text: e
-  } = t;
-  return (0, r.jsx)(a.Text, {
-    variant: "text-lg/semibold",
-    children: e
+    text: t
+  } = e;
+  return (0, r.jsx)("div", {
+    className: "dynamicGraphicDemoContainer",
+    children: (0, r.jsx)(i.Text, {
+      variant: "text-lg/semibold",
+      className: "dynamicGraphicDemoText",
+      children: t
+    })
   })
 }
+require("./403845.js")

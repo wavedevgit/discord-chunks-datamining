@@ -12,7 +12,7 @@ var i, Chunk392711 = require("./392711.js"),
   Chunk388380 = require("./388380.js"),
   Chunk72937 = require("./72937.js");
 
-function p(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -20,12 +20,12 @@ function p(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let f = {},
+let p = {},
   g = 0,
   h = false,
-  m = false;
+  y = false;
 
-function y(e) {
+function m(e) {
   var t;
   let n = null != e.contact_names && e.contact_names.length >= 2 ? e.contact_names.slice(0, 2) : [];
   return {
@@ -44,24 +44,24 @@ class O extends(i = Chunk442837.ZP.Store) {
     return g
   }
   getSuggestions() {
-    return Object.entries(f).map(e => {
+    return Object.entries(p).map(e => {
       let [t, n] = e;
       return n
     })
   }
   getSuggestion(e) {
-    return f[e]
+    return p[e]
   }
 }
-p(O, "displayName", "FriendSuggestionStore");
+f(O, "displayName", "FriendSuggestionStore");
 let N = new O(Chunk570140.Z, {
   CONNECTION_OPEN: function(e) {
-    f = {}, (g = e.friendSuggestionCount) > 0 ? (m = true, !h && m && (h = true, m = false, u.Z.fetch())) : (0, d.Z)()
+    p = {}, (g = e.friendSuggestionCount) > 0 ? (y = true, !h && y && (h = true, y = false, u.Z.fetch())) : (0, d.Z)()
   },
   FRIEND_SUGGESTION_CREATE: function(e) {
     var t, n;
-    let i = y(e.suggestion);
-    if (null != f[i.key]) returnfalse;
+    let i = m(e.suggestion);
+    if (null != p[i.key]) returnfalse;
     g++, t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -69,11 +69,11 @@ let N = new O(Chunk570140.Z, {
         "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), i.forEach(function(t) {
-          p(e, t, n[t])
+          f(e, t, n[t])
         })
       }
       return e
-    }({}, f), n = n = {
+    }({}, p), n = n = {
       [i.key]: i
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
@@ -84,16 +84,16 @@ let N = new O(Chunk570140.Z, {
       return n
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-    }), f = t
+    }), p = t
   },
   FRIEND_SUGGESTION_DELETE: function(e) {
-    g = Math.max(0, --g), delete f[e.suggestedUserId]
+    g = Math.max(0, --g), delete p[e.suggestedUserId]
   },
   LOAD_FRIEND_SUGGESTIONS_SUCCESS: function(e) {
     var t;
-    h = false, t = e.suggestions, f = l().chain(t).map(e => y(e)).keyBy(e => e.key).value(), g = l().keys(f).length
+    h = false, t = e.suggestions, p = l().chain(t).map(e => m(e)).keyBy(e => e.key).value(), g = l().keys(p).length
   },
   LOAD_FRIEND_SUGGESTIONS_FAILURE: function() {
-    h = false, f = {}
+    h = false, p = {}
   }
 })

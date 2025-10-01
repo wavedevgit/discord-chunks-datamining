@@ -133,7 +133,7 @@ let A = (e, t) => {
           onClose: n
         }, e.recipient.id))
       });
-    return (0, r.jsx)(c.I, {
+    return (0, r.jsx)(c.ExpressiveModal, {
       graphic: _(),
       gradientColor: "nitro-pink",
       title: p(),

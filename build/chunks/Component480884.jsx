@@ -40,7 +40,7 @@ function k(n) {
     }), l.Z.increment({
       name: i.V.SAFETY_WARNING_MODAL_VIEW
     })
-  }, [k, p, y, f]), (0, a.jsx)(o.I, {
+  }, [k, p, y, f]), (0, a.jsx)(o.ExpressiveModal, {
     onClose: e,
     transitionState: t,
     graphic: {

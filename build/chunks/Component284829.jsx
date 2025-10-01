@@ -1,5 +1,5 @@
 /** Chunk was on 69432 **/
-/** chunk id: 284829, original params: t,n,e (module,exports,require) **/
+/** chunk id: 284829, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   U: () => y
 }), require("./388685.js");
@@ -24,32 +24,32 @@ var Chunk951288 = require("./951288.js"),
 let y = () => {
   let {
     transitionState: t,
-    onClose: n,
-    premiumType: e,
+    onClose: e,
+    premiumType: n,
     premiumSubscription: y,
     setStep: S,
-    applyOffer: _,
-    churnUserDiscountOffer: D,
-    discountedPrice: E,
+    applyOffer: E,
+    churnUserDiscountOffer: _,
+    discountedPrice: D,
     fullPrice: N
   } = (0, Chunk594135.a)(), [j, T] = (0, Chunk647438.useState)(false), [b, A] = (0, Chunk647438.useState)(false), {
     enabled: O
   } = Chunk219673.b.useConfig({
     location: "ConfirmDiscountStep"
-  }), I = async () => {
-    if (null === D) return void A(true);
+  }), R = async () => {
+    if (null === _) return void A(true);
     T(true), A(false);
     try {
-      await _(), S(Chunk45474.R.DISCOUNT_APPLIED)
+      await E(), S(Chunk45474.R.DISCOUNT_APPLIED)
     } catch (t) {
       A(true), T(false)
     }
   };
-  if (null === D || null === E) return (0, Chunk951288.jsx)("div", {
+  if (null === _ || null === D) return (0, Chunk951288.jsx)("div", {
     className: Chunk950728.spinnerContainer,
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {})
   });
-  let R = require === Chunk474936.p9.TIER_2,
+  let I = require === Chunk474936.p9.TIER_2,
     k = [{
       text: Chunk388032.intl.string(Chunk388032.t.zl7LZm),
       onClick: () => exports(),
@@ -57,28 +57,28 @@ let y = () => {
       disabled: j
     }, {
       text: Chunk388032.intl.string(Chunk388032.t.CKSuZG),
-      onClick: () => I(),
+      onClick: () => R(),
       variant: "primary",
       icon: Chunk481060.SrA,
       loading: j,
       disabled: j
     }];
-  return (0, Chunk951288.jsxs)(Chunk667202.I, {
+  return (0, Chunk951288.jsxs)(Chunk667202.ExpressiveModal, {
     graphic: {
       type: "image",
-      src: R ? O ? Chunk288541.Z : Chunk234286 : Chunk997892
+      src: I ? O ? Chunk288541.Z : Chunk234286 : Chunk997892
     },
-    gradientColor: R ? "nitro-pink" : "nitro-green",
+    gradientColor: I ? "nitro-pink" : "nitro-green",
     transitionState: module,
     title: y.status === Chunk981631.O0b.CANCELED ? Chunk388032.intl.string(Chunk388032.t["2Otztr"]) : "".concat(Chunk388032.intl.format(Chunk388032.t.q9Vxu7, {
-      percent: D.discount.amount
+      percent: _.discount.amount
     })),
     actions: k,
     onClose: async () => exports(),
     children: [(0, Chunk951288.jsx)("div", {
       className: Chunk950728.offerDetailContainer,
       children: (0, Chunk951288.jsx)(Chunk10508.o, {
-        userDiscountOffer: D,
+        userDiscountOffer: _,
         offerState: Chunk10508.w.CONFIRMING
       })
     }), (0, Chunk951288.jsx)("div", {
@@ -87,15 +87,15 @@ let y = () => {
         variant: "text-xs/medium",
         color: "text-secondary",
         children: y.status === Chunk981631.O0b.CANCELED ? Chunk388032.intl.format(Chunk388032.t.mY3ysL, {
-          discountedPrice: E,
-          billingPeriod: (0, Chunk74538.JP)(D.discount.user_usage_limit_interval),
-          numMonths: D.discount.user_usage_limit,
+          discountedPrice: D,
+          billingPeriod: (0, Chunk74538.JP)(_.discount.user_usage_limit_interval),
+          numMonths: _.discount.user_usage_limit,
           fullPrice: N,
           paidURL: Chunk63063.Z.getArticleURL(Chunk981631.BhN.PAID_TERMS)
         }) : Chunk388032.intl.format(Chunk388032.t.hrGTjI, {
-          discountedPrice: E,
-          billingPeriod: (0, Chunk74538.JP)(D.discount.user_usage_limit_interval),
-          numMonths: D.discount.user_usage_limit,
+          discountedPrice: D,
+          billingPeriod: (0, Chunk74538.JP)(_.discount.user_usage_limit_interval),
+          numMonths: _.discount.user_usage_limit,
           fullPrice: N,
           helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.PAID_TERMS)
         })

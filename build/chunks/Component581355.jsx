@@ -245,7 +245,7 @@ function M(e) {
       }],
       onClose: p
     };
-  return null == z ? (0, r.jsx)(o.I, F(T({
+  return null == z ? (0, r.jsx)(o.ExpressiveModal, F(T({
     graphic: {
       type: "image",
       src: E.Z

@@ -9,7 +9,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
-  Chunk751334 = require("./751334.jsx"),
+  Chunk793030 = require("./793030.js"),
   Chunk920155 = require("./920155.jsx"),
   Chunk744399 = require("./744399.jsx"),
   Chunk966902 = require("./966902.jsx"),
@@ -120,7 +120,7 @@ function O(e) {
         className: o()(p.graphic, {
           [p["graphic--".concat(O)]]: null != O
         }),
-        children: (0, r.jsx)(s.z, E(m({}, y), {
+        children: (0, r.jsx)(s.zsu, E(m({}, y), {
           aspectRatio: null != (n = y.aspectRatio) ? n : "sm" === O ? "2/1" : "16/9"
         }))
       }), (0, r.jsx)(f.Y, {

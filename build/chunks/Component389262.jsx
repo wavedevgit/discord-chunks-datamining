@@ -1,5 +1,5 @@
 /** Chunk was on 18879 **/
-/** chunk id: 389262, original params: t,i,e (module,exports,require) **/
+/** chunk id: 389262, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   default: () => d
 });
@@ -14,28 +14,28 @@ var Chunk667202 = require("./667202.jsx"),
 
 function d(t) {
   let {
-    transitionState: i,
-    onClose: e,
+    transitionState: e,
+    onClose: i,
     storeListing: d,
     subscription: u
-  } = t, m = (0, s.Dt)();
-  return (0, a.jsx)(n.I, {
+  } = t, p = (0, s.Dt)();
+  return (0, a.jsx)(r.ExpressiveModal, {
     actions: [{
       variant: "secondary",
-      onClick: e,
+      onClick: i,
       text: l.intl.string(l.t["JtWl+f"])
     }],
-    "aria-labelledby": m,
+    "aria-labelledby": p,
     graphic: {
       type: "image",
       src: c
     },
-    onClose: e,
-    transitionState: i,
+    onClose: i,
+    transitionState: e,
     title: l.intl.formatToPlainString(l.t["wLFT6+"], {
       tier: d.summary
     }),
-    children: (0, a.jsx)(r.Text, {
+    children: (0, a.jsx)(n.Text, {
       className: o.subtitle,
       variant: "text-md/medium",
       color: "header-secondary",

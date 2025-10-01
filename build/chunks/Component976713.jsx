@@ -17,7 +17,7 @@ function a(e) {
     useTitle: s,
     useSubtitle: c,
     useOptions: u
-  } = t, d = s(), f = null == c ? true : c(), b = n(), p = u();
+  } = t, d = s(), f = null == c ? true : c(), b = n(), m = u();
   return (0, r.jsx)(l.xJW, {
     title: d,
     className: i.radioContainer,
@@ -27,7 +27,7 @@ function a(e) {
         type: l.geA.DESCRIPTION,
         children: f
       }), (0, r.jsx)(o.Gu, {
-        options: p,
+        options: m,
         value: b,
         onChange: e => a(e.value)
       })]

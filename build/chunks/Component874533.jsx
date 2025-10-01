@@ -19,17 +19,17 @@ function u(t) {
     product: i
   } = t, u = l.default.getCurrentUser(), E = "6/4";
   switch (i.type) {
-    case a.Z.NAMEPLATE:
-    case a.Z.AVATAR_DECORATION:
+    case s.Z.NAMEPLATE:
+    case s.Z.AVATAR_DECORATION:
       E = "16/9";
       break;
-    case a.Z.BUNDLE:
-    case a.Z.PROFILE_EFFECT:
+    case s.Z.BUNDLE:
+    case s.Z.PROFILE_EFFECT:
     default:
       E = "6/4"
   }
-  return (0, n.jsx)(r.I, {
-    transitionState: s.Dv.ENTERED,
+  return (0, n.jsx)(r.ExpressiveModal, {
+    transitionState: a.Dv.ENTERED,
     title: d.intl.string(d.t.L4Wg3N),
     subtitle: d.intl.string(d.t.SXb73N),
     graphic: {

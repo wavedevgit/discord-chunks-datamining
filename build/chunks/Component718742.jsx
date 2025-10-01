@@ -83,7 +83,7 @@ function m(e) {
       onClose: E ? t : true
     }, w))]
   });
-  return (0, r.jsx)(c.I, {
+  return (0, r.jsx)(c.ExpressiveModal, {
     transitionState: m,
     onClose: t,
     size: "sm",

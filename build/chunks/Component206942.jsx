@@ -1,7 +1,7 @@
 /** Chunk was on 9452 **/
 /** chunk id: 206942, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  ZP: () => g
+  ZP: () => I
 }), require("./415506.js"), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk649926 = require("./649926.js");
 let y = Chunk647438.createContext(true);
 
-function N(e) {
+function f(e) {
   let {
     sound: t
   } = e, {
@@ -39,7 +39,7 @@ function N(e) {
     })
   })
 }
-let f = [{
+let N = [{
     useLabel: () => Chunk388032.intl.string(Chunk388032.t.jD1qzM),
     sound: "message1",
     useDisabled: Chunk734934.p,
@@ -121,7 +121,7 @@ let f = [{
           className: T.soundRow,
           children: [(0, i.jsx)("span", {
             children: t
-          }), (0, i.jsx)(N, {
+          }), (0, i.jsx)(f, {
             sound: e.sound
           })]
         })
@@ -145,18 +145,18 @@ let f = [{
       useTooltip: e.useTooltip
     })
   })),
-  S = (0, Chunk509613.qs)(Chunk313789.n.SELECTED_CHANNEL_NOTIFICATIONS, {
+  A = (0, Chunk509613.qs)(Chunk313789.n.SELECTED_CHANNEL_NOTIFICATIONS, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.TzjwV1),
     useValue: () => (0, Chunk442837.e7)([Chunk292959.Z], () => Chunk292959.Z.getNotifyMessagesInSelectedChannel()),
     setValue: e => s.default.setNotifyMessagesInSelectedChannel(e)
   }),
-  A = (0, Chunk509613.qs)(Chunk313789.n.DISABLE_ALL_NOTIFICATION_SOUNDS, {
+  S = (0, Chunk509613.qs)(Chunk313789.n.DISABLE_ALL_NOTIFICATION_SOUNDS, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["2ZhCOT"]),
     useSubtitle: () => Chunk388032.intl.string(Chunk388032.t["+B0XLC"]),
     useValue: () => (0, Chunk442837.e7)([Chunk292959.Z], () => Chunk292959.Z.getDisableAllSounds()),
     setValue: e => s.default.toggleDisableAllSounds(e)
   }),
-  g = (0, Chunk509613.$l)(Chunk313789.n.NOTIFICATION_SOUNDS_LIST, {
+  I = (0, Chunk509613.$l)(Chunk313789.n.NOTIFICATION_SOUNDS_LIST, {
     collapseAfter: 4,
     useCollapsibleTitle: (e, t) => e ? O.intl.formatToPlainString(O.t["0JYT9/"], {
       count: t
@@ -181,5 +181,5 @@ let f = [{
         children: t
       })
     },
-    buildLayout: () => [f[0].node, S, f[1].node, A, ...f.slice(2).map(e => e.node)]
+    buildLayout: () => [N[0].node, A, N[1].node, S, ...N.slice(2).map(e => e.node)]
   })

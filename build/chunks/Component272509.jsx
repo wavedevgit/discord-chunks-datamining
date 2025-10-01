@@ -1,7 +1,7 @@
 /** Chunk was on 77046 **/
 /** chunk id: 272509, original params: t,i,e (module,exports,require) **/
 require.d(exports, {
-  default: () => p
+  default: () => C
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,10 +19,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk817238 = require("./817238.js");
 
-function p(t) {
+function C(t) {
   let {
     guildId: i,
-    transitionState: p,
+    transitionState: C,
     onClose: h,
     analyticsType: v = o.z.APP_DIRECTORY_UPSELL_MODAL
   } = t;
@@ -31,10 +31,10 @@ function p(t) {
       type: o.z[v],
       guild_id: i
     })
-  }, [i, v]), (0, s.jsx)(r.I, {
+  }, [i, v]), (0, s.jsx)(r.ExpressiveModal, {
     title: _.intl.string(_.t["2tv5YG"]),
     subtitle: _.intl.string(_.t.pgwlDw),
-    transitionState: p,
+    transitionState: C,
     size: "sm",
     graphic: {
       type: "lottie",
@@ -48,7 +48,7 @@ function p(t) {
       onClick: () => {
         h(), (0, c.Q3)(v, {
           forceTrack: true,
-          dismissAction: I.L.SECONDARY,
+          dismissAction: u.L.SECONDARY,
           guildId: i
         })
       }
@@ -58,10 +58,10 @@ function p(t) {
       onClick: () => {
         h(), (0, c.Q3)(v, {
           forceTrack: true,
-          dismissAction: I.L.PRIMARY,
+          dismissAction: u.L.PRIMARY,
           guildId: i
         }), (0, a.transitionToGlobalDiscovery)({
-          tab: u.GlobalDiscoveryTab.APPS,
+          tab: I.GlobalDiscoveryTab.APPS,
           newSessionState: {
             guildId: i,
             entrypoint: {
@@ -72,36 +72,36 @@ function p(t) {
       }
     }],
     children: (0, s.jsxs)("ul", {
-      className: C.listContainer,
+      className: p.listContainer,
       children: [(0, s.jsxs)("li", {
-        className: C.listItem,
+        className: p.listItem,
         children: [(0, s.jsx)(l.$2U, {
           color: "currentColor",
-          className: C.wandIcon
+          className: p.wandIcon
         }), (0, s.jsx)(l.Text, {
           variant: "text-sm/medium",
           color: "text-default",
           children: _.intl.string(_.t["0vKo5O"])
         })]
       }), (0, s.jsx)(b.Z, {
-        className: C.divider
+        className: p.divider
       }), (0, s.jsxs)("li", {
-        className: C.listItem,
+        className: p.listItem,
         children: [(0, s.jsx)(l.wGt, {
           color: "currentColor",
-          className: C.robotIcon
+          className: p.robotIcon
         }), (0, s.jsx)(l.Text, {
           variant: "text-sm/medium",
           color: "text-default",
           children: _.intl.string(_.t.CprEDA)
         })]
       }), (0, s.jsx)(b.Z, {
-        className: C.divider
+        className: p.divider
       }), (0, s.jsxs)("li", {
-        className: C.listItem,
+        className: p.listItem,
         children: [(0, s.jsx)(l.EO4, {
           color: "currentColor",
-          className: C.smileIcon
+          className: p.smileIcon
         }), (0, s.jsx)(l.Text, {
           variant: "text-sm/medium",
           color: "text-default",

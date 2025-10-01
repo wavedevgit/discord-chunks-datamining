@@ -68,7 +68,7 @@ function m(e) {
     emailAddress: p,
     emailAddressLink: "mailto:".concat(p)
   }) : true;
-  return (0, r.jsxs)(o.I, {
+  return (0, r.jsxs)(o.ExpressiveModal, {
     transitionState: t,
     onClose: n,
     graphic: "loading" === h.status ? true : {

@@ -18,7 +18,7 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 var o = function(e) {
-    return e.NativeOOP = "native_oop", e.NativeLegacy = "native_legacy", e.OOPModule = "oop_module", e.LegacyModule = "legacy_module", e.Renderer = "renderer", e
+    return e.NativeOOP = "native_oop", e.NativeLegacy = "native_legacy", e.OOPModule = "oop_module", e.LegacyModule = "legacy_module", e.Flux = "flux", e.Renderer = "renderer", e
   }({}),
   s = function(e) {
     return e.Info = "info", e.Error = "error", e.Warning = "warn", e
@@ -91,23 +91,22 @@ class m {
     return this.addBreadcrumb(i)
   }
   addModuleBreadcrumb(e, t, n, r) {
-    var i;
-    let a = arguments.length > 4 && true !== arguments[4] ? arguments[4] : "info",
-      o = h(),
-      s = _(o),
-      l = {
-        id: s,
-        key: s,
+    let i = arguments.length > 4 && true !== arguments[4] ? arguments[4] : "info",
+      a = h(),
+      o = _(a),
+      s = {
+        id: o,
+        key: o,
         nativeId: null,
-        timestamp: o,
+        timestamp: a,
         name: e,
         data: t,
         type: n,
         pid: r,
-        logType: a,
-        stack: null != (i = Error().stack) ? i : ""
+        logType: i,
+        stack: true
       };
-    return this.addBreadcrumb(l)
+    return this.addBreadcrumb(s)
   }
   getBreadcrumbs(e) {
     return [this.breadcrumbs.values(e, true), this.breadcrumbs.version]

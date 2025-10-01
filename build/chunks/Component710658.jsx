@@ -35,7 +35,7 @@ let g = t => {
       onSuccess: n,
       onError: n
     });
-  return (0, i.jsx)(l.I, {
+  return (0, i.jsx)(l.ExpressiveModal, {
     gradientColor: "nitro-pink",
     title: p.intl.string(p.t.qYWlf3),
     subtitle: p.intl.string(p.t.x01cl5),

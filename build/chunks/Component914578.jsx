@@ -1,7 +1,7 @@
 /** Chunk was on 59739 **/
 /** chunk id: 914578, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => y
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk989281 = require("./989281.js");
 
-function x(e) {
+function v(e) {
   let {
     onClose: t
   } = e;
@@ -36,7 +36,7 @@ function x(e) {
       }), (0, r.jsx)(a.sNh, {
         id: "acknowledgements",
         label: j.intl.string(j.t["0nUKy8"]),
-        action: () => (0, s.Z)(m.EYA.ACKNOWLEDGEMENTS)
+        action: () => (0, s.Z)(p.EYA.ACKNOWLEDGEMENTS)
       }), (0, r.jsx)(a.sNh, {
         id: "support",
         label: j.intl.string(j.t["Yl/Rio"]),
@@ -46,7 +46,7 @@ function x(e) {
   })
 }
 
-function v() {
+function y() {
   let e = Chunk647438.useRef(null),
     t = Chunk906467.Z.isDeveloper;
   return (0, Chunk951288.jsxs)("div", {
@@ -94,7 +94,7 @@ function v() {
           let {
             closePopout: t
           } = e;
-          return (0, r.jsx)(x, {
+          return (0, r.jsx)(v, {
             onClose: t
           })
         },
@@ -120,8 +120,8 @@ function v() {
           }({}, t), l = l = {
             ref: e,
             useDefaultUnderlineStyles: false,
-            className: i()(y.moreButton, {
-              [y.active]: n.isShown
+            className: i()(x.moreButton, {
+              [x.active]: n.isShown
             }),
             children: (0, r.jsx)(a.Text, {
               tag: "span",

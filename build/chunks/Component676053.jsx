@@ -2,12 +2,11 @@
 /** chunk id: 676053, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  M: () => T
+  M: () => I
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk751334 = require("./751334.jsx"),
-  Chunk587272 = require("./587272.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk159691 = require("./159691.js"),
   Chunk70097 = require("./70097.jsx"),
   Chunk312097 = require("./312097.jsx"),
@@ -20,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk37751 = require("./37751.js");
 
-function E(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -29,20 +28,20 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      E(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
 }
 
-function y(e, t) {
+function b(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -53,15 +52,15 @@ function y(e, t) {
   return n
 }
 
-function O(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
+function y(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function v(e, t) {
+function O(e, t) {
   if (null == e) return {};
-  var n, r, i = I(e, t);
+  var n, r, i = v(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -69,7 +68,7 @@ function v(e, t) {
   return i
 }
 
-function I(e, t) {
+function v(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -77,57 +76,57 @@ function I(e, t) {
   return i
 }
 
-function T(e) {
+function I(e) {
   var {
     title: t,
     body: n,
-    assetUrl: E,
-    previewUrl: y = E,
-    action: I,
-    caretConfig: T = {
+    assetUrl: g,
+    previewUrl: b = g,
+    action: v,
+    caretConfig: I = {
       position: "bottom",
       align: "center"
     },
-    badge: S,
-    textLink: A,
-    onWatchVideo: C,
-    onRequestClose: N,
-    popoverRef: R
-  } = e, P = v(e, ["title", "body", "assetUrl", "previewUrl", "action", "caretConfig", "badge", "textLink", "onWatchVideo", "onRequestClose", "popoverRef"]);
-  let w = i.useRef(null),
-    D = (0, o.j1)(y),
-    L = i.useCallback(() => ({
+    badge: T,
+    textLink: S,
+    onWatchVideo: A,
+    onRequestClose: C,
+    popoverRef: N
+  } = e, R = O(e, ["title", "body", "assetUrl", "previewUrl", "action", "caretConfig", "badge", "textLink", "onWatchVideo", "onRequestClose", "popoverRef"]);
+  let P = i.useRef(null),
+    w = (0, a.j1L)(b),
+    D = i.useCallback(() => ({
       type: "VIDEO",
-      url: E,
-      proxyUrl: E,
+      url: g,
+      proxyUrl: g,
       alt: t,
       width: 1280,
       height: 720,
-      className: g.media
-    }), [E, t]),
+      className: m.media
+    }), [g, t]),
+    L = i.useCallback(() => {
+      null !== P.current && P.current.pause(), null == C || C()
+    }, [C]),
     x = i.useCallback(() => {
-      null !== w.current && w.current.pause(), null == N || N()
-    }, [N]),
+      null !== P.current && P.current.pause(), null == C || C()
+    }, [C]),
     j = i.useCallback(() => {
-      null !== w.current && w.current.pause(), null == N || N()
-    }, [N]),
-    M = i.useCallback(() => {
-      null !== w.current && w.current.pause();
-      let e = L();
-      (0, c.K)({
+      null !== P.current && P.current.pause();
+      let e = D();
+      (0, l.K)({
         items: [e],
         startingIndex: 0,
         location: "VideoPopover",
         shouldHideMediaOptions: true
-      }), null == N || N(), null == C || C()
-    }, [L, C, N]),
-    k = D ? (0, r.jsx)(a.z, {
+      }), null == C || C(), null == A || A()
+    }, [D, A, C]),
+    M = w ? (0, r.jsx)(a.zsu, {
       type: "image",
-      src: y
+      src: b
     }) : (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(l.Z, {
-        ref: w,
-        src: y,
+      children: [(0, r.jsx)(s.Z, {
+        ref: P,
+        src: b,
         width: 232,
         height: 131,
         autoPlay: true,
@@ -137,35 +136,35 @@ function T(e) {
         controls: false,
         preload: "metadata"
       }), (0, r.jsx)("div", {
-        className: g.playButton,
-        children: (0, r.jsx)(s.JM1, {
+        className: m.playButton,
+        children: (0, r.jsx)(o.JM1, {
           playing: false,
           size: "sm",
-          "aria-label": m.intl.string(h.default.YpT3kp),
-          onClick: M
+          "aria-label": h.intl.string(p.default.YpT3kp),
+          onClick: j
         })
       })]
     });
-  return (0, r.jsx)(u.m, O(b({}, P), {
-    onRequestClose: x,
+  return (0, r.jsx)(c.m, y(E({}, R), {
+    onRequestClose: L,
     hasVideo: true,
     children: (0, r.jsxs)("div", {
-      ref: R,
-      children: [(0, r.jsx)(p.N, {
-        onClick: j
-      }), (0, r.jsx)(f.$, {
-        caretConfig: T
+      ref: N,
+      children: [(0, r.jsx)(_.N, {
+        onClick: x
+      }), (0, r.jsx)(d.$, {
+        caretConfig: I
       }), (0, r.jsx)("div", {
-        className: g.assetContainer,
-        children: k
-      }), (0, r.jsx)(_.Y, {
+        className: m.assetContainer,
+        children: M
+      }), (0, r.jsx)(f.Y, {
         title: t,
         body: n,
-        badge: S,
-        textLink: A,
-        hasBottomMargin: null != I
-      }), null != I ? (0, r.jsx)(d.k, {
-        actions: [I]
+        badge: T,
+        textLink: S,
+        hasBottomMargin: null != v
+      }), null != v ? (0, r.jsx)(u.k, {
+        actions: [v]
       }) : null]
     })
   }))

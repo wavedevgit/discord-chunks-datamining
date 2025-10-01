@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk643153 = require("./643153.js");
 
-function p(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,7 +34,7 @@ function p(e) {
   return e
 }
 
-function m(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -56,7 +56,7 @@ function j(e) {
   })
 }
 
-function y(e) {
+function x(e) {
   let {
     dismissibleContentTypes: t,
     badgeComponent: n,
@@ -67,7 +67,7 @@ function y(e) {
   return l ? i : null
 }
 
-function x(e) {
+function v(e) {
   let {
     useDecoration: t,
     visibleContent: n
@@ -75,7 +75,7 @@ function x(e) {
   return t(n)
 }
 
-function v(e) {
+function y(e) {
   let {
     trailing: t,
     visibleContent: n
@@ -83,13 +83,13 @@ function v(e) {
   if (null == t) return null;
   switch (t.type) {
     case u.PU.BADGE_COUNT:
-      return (0, r.jsx)(j, p({}, t));
+      return (0, r.jsx)(j, m({}, t));
     case u.PU.BADGE_NEW:
-      return (0, r.jsx)(y, m(p({}, t), {
+      return (0, r.jsx)(x, p(m({}, t), {
         visibleContent: n
       }));
     case u.PU.STRONGLY_DISCOURAGED_CUSTOM:
-      return (0, r.jsx)(x, m(p({}, t), {
+      return (0, r.jsx)(v, p(m({}, t), {
         visibleContent: n
       }))
   }
@@ -107,24 +107,24 @@ function g(e) {
     useTitle: s,
     trailing: u,
     stronglyDiscouragedCustomTab: f
-  } = t, b = s(), p = o.useMemo(() => t.layout.flatMap(e => e.layout), [t]), m = (null == l ? true : l.key) === t.key, j = () => {
+  } = t, b = s(), m = o.useMemo(() => t.layout.flatMap(e => e.layout), [t]), p = (null == l ? true : l.key) === t.key, j = () => {
     i(t.key), a(false)
   };
   return null != f ? (0, r.jsx)(f, {
-    active: m,
+    active: p,
     onClick: j
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(d.Z, {
       icon: t.icon,
       title: b,
-      active: m,
-      trailing: (0, r.jsx)(v, {
+      active: p,
+      trailing: (0, r.jsx)(y, {
         trailing: u,
         visibleContent: n
       }),
       onClick: j
-    }), m && p.length > 1 && (0, r.jsx)(h, {
-      categories: p
+    }), p && m.length > 1 && (0, r.jsx)(h, {
+      categories: m
     })]
   })
 }
@@ -135,14 +135,14 @@ function h(e) {
   } = e, [n, l] = o.useState(0), {
     setShowNavigationMobile: u,
     navigateTo: d
-  } = (0, c.t)(), [f, p] = (0, s.q_F)(() => ({
+  } = (0, c.t)(), [f, m] = (0, s.q_F)(() => ({
     y: 0,
     config: {
       mass: .1,
       friction: 20,
       tension: 300
     }
-  })), m = o.useMemo(() => t.map(e => {
+  })), p = o.useMemo(() => t.map(e => {
     var t;
     return {
       title: null == (t = e.useTitle) ? true : t.call(e),
@@ -163,14 +163,14 @@ function h(e) {
         style: f
       })
     }), (0, r.jsx)("ul", {
-      children: m.map((e, t) => {
+      children: p.map((e, t) => {
         let {
           title: o,
           key: a
         } = e;
         return (0, r.jsx)(s.P3F, {
           onClick: () => {
-            l(t), p({
+            l(t), m({
               y: 36 * t
             }), u(false), d(a)
           },

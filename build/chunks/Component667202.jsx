@@ -2,7 +2,7 @@
 /** chunk id: 667202, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  I: () => p
+  ExpressiveModal: () => p
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");

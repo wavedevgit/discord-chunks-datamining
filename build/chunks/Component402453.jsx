@@ -25,7 +25,8 @@ let a = {
     saturation: .5,
     defaultLayerContext: true,
     trackImpression: true,
-    isWindowFocused: true
+    isWindowFocused: true,
+    dynamicGraphicComponents: true
   },
   o = Chunk647438.createContext(a);
 

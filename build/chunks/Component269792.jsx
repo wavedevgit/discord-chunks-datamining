@@ -1,12 +1,12 @@
 /** Chunk was on 22274 **/
-/** chunk id: 269792, original params: e,t,a (module,exports,require) **/
+/** chunk id: 269792, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => h
+  default: () => y
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk990547 = require("./990547.js"),
   Chunk481060 = require("./481060.js"),
   Chunk213609 = require("./213609.js"),
@@ -20,87 +20,117 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk326760 = require("./326760.js");
 
-function h(e) {
+function y(e) {
   var t;
   let {
-    levelUpData: a
-  } = e, [r, h] = d.useState(false), [f, b] = d.useState(false), [v, N] = d.useState(false), C = (0, _.GG)(), w = d.useRef(null), y = d.useRef(null), {
-    currentBadge: B,
-    prevBadge: R,
+    levelUpData: n
+  } = e, [d, y] = a.useState(false), [h, O] = a.useState(false), [T, j] = a.useState(false), v = (0, _.GG)(), E = a.useRef(null), w = a.useRef(null), {
+    currentBadge: P,
+    prevBadge: N,
     levelUpVideoSrc: U
-  } = a, j = d.useCallback(() => {
-    let e = 700 * (B.id !== g.VU.PREMIUM_TENURE_1_MONTH);
-    y.current.currentTime = 0, setTimeout(() => {
-      N(true), y.current.play()
+  } = n, k = a.useCallback(() => {
+    let e = 700 * (P.id !== g.VU.PREMIUM_TENURE_1_MONTH);
+    w.current.currentTime = 0, setTimeout(() => {
+      j(true), w.current.play()
     }, e)
-  }, [B.id]);
-  d.useEffect(() => {
-    r && j()
-  }, [r, j]), (0, o.Z)({
-    type: i.ImpressionTypes.POPOUT,
-    name: i.ImpressionNames.TIERED_TENURE_BADGE_LEVEL_UP,
+  }, [P.id]);
+  a.useEffect(() => {
+    d && k()
+  }, [d, k]), (0, c.Z)({
+    type: s.ImpressionTypes.POPOUT,
+    name: s.ImpressionNames.TIERED_TENURE_BADGE_LEVEL_UP,
     properties: {
-      new_badge_id: B.id
+      new_badge_id: P.id
     }
   }, {
     trackOnInitialLoad: true
-  }), d.useEffect(() => {
-    null != y.current && y.current.load()
+  }), a.useEffect(() => {
+    null != w.current && w.current.load()
   }, []);
-  let k = d.useCallback(() => {
-      b(false), N(false), j(), w.current.style.display = "none", w.current.offsetWidth, w.current.style.display = "", m.default.track(T.rMx.TIERED_TENURE_BADGE_LEVEL_UP_REPLAY_CLICKED, {
-        new_badge_id: B.id
+  let B = a.useCallback(() => {
+      O(false), j(false), k(), E.current.style.display = "none", E.current.offsetWidth, E.current.style.display = "", p.default.track(f.rMx.TIERED_TENURE_BADGE_LEVEL_UP_REPLAY_CLICKED, {
+        new_badge_id: P.id
       })
-    }, [B.id, j]),
-    I = {
-      "--custom-old-badge-color": "linear-gradient(to right, ".concat(null != (t = a.prevBadgeTextGradient) ? t : "transparent", ")"),
-      "--custom-new-badge-color": "linear-gradient(to right, ".concat(a.currentBadgeTextGradient, ")")
+    }, [P.id, k]),
+    C = {
+      "--custom-old-badge-color": "linear-gradient(to right, ".concat(null != (t = n.prevBadgeTextGradient) ? t : "transparent", ")"),
+      "--custom-new-badge-color": "linear-gradient(to right, ".concat(n.currentBadgeTextGradient, ")")
     };
-  return (0, n.jsxs)("div", {
-    className: s()(E.content, {
-      [E.ended]: f,
-      [E.loaded]: r,
-      [E.started]: v
+  return (0, r.jsxs)("div", {
+    className: i()(x.content, {
+      [x.ended]: h,
+      [x.loaded]: d,
+      [x.started]: T
     }),
-    style: I,
-    ref: w,
-    children: [(0, n.jsx)(c.Z, {
-      ref: y,
-      className: E.video,
+    style: C,
+    ref: E,
+    children: [(0, r.jsx)(l.Z, {
+      ref: w,
+      className: x.video,
       src: U,
       playsInline: true,
-      onLoadedData: () => h(true),
-      onEnded: () => b(true)
-    }), (0, n.jsxs)("div", {
-      className: E.textContainer,
-      children: [(0, n.jsx)(x.Z, {
+      onLoadedData: () => y(true),
+      onEnded: () => O(true)
+    }), (0, r.jsxs)("div", {
+      className: x.textContainer,
+      children: [(0, r.jsx)(b.Z, {
         width: 60,
         height: 15
-      }), null != R && (0, n.jsx)(l.Text, {
+      }), null != N && (0, r.jsx)(o.Text, {
         variant: "display-md",
-        className: s()(E.badgeText, E.old),
-        children: p.intl.string(R.nameUnformatted)
-      }), (0, n.jsx)(l.Text, {
+        className: i()(x.badgeText, x.old),
+        children: m.intl.string(N.nameUnformatted)
+      }), (0, r.jsx)(o.Text, {
         variant: "display-md",
-        className: s()(E.badgeText, E.new),
-        children: p.intl.string(B.nameUnformatted)
-      }), null != C && (0, n.jsx)(l.Text, {
+        className: i()(x.badgeText, x.new),
+        children: m.intl.string(P.nameUnformatted)
+      }), null != v && (0, r.jsx)(o.Text, {
         variant: "text-xs/medium",
-        className: E.subscribedText,
-        children: p.intl.formatToPlainString(p.t["f/OGgI"], {
-          timeFrame: (0, u.q)(B.id, B.tenureReqNumMonths),
-          date: C
+        className: x.subscribedText,
+        children: m.intl.formatToPlainString(m.t["f/OGgI"], {
+          timeFrame: (0, u.q)(P.id, P.tenureReqNumMonths),
+          date: v
         })
-      }), (0, n.jsx)("div", {
-        className: E.actionButtons,
-        children: (0, n.jsx)(l.M0o, {
-          tooltip: p.intl.string(p.t.hsvh0t),
-          color: l.YX$.SECONDARY,
-          icon: (0, n.jsx)(l.o1U, {
-            size: "xs",
-            color: "currentColor"
-          }),
-          onClick: k
+      }), (0, r.jsx)("div", {
+        className: x.actionButtons,
+        children: (0, r.jsx)(o.ua7, {
+          text: m.intl.string(m.t.hsvh0t),
+          children: e => {
+            var t, n;
+            return (0, r.jsx)(o.hU, (t = function(e) {
+              for (var t = 1; t < arguments.length; t++) {
+                var n = null != arguments[t] ? arguments[t] : {},
+                  r = Object.keys(n);
+                "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                  return Object.getOwnPropertyDescriptor(n, e).enumerable
+                }))), r.forEach(function(t) {
+                  var r;
+                  r = n[t], t in e ? Object.defineProperty(e, t, {
+                    value: r,
+                    enumerable: true,
+                    configurable: true,
+                    writable: true
+                  }) : e[t] = r
+                })
+              }
+              return e
+            }({}, e), n = n = {
+              icon: o.o1U,
+              variant: "secondary",
+              size: "sm",
+              onClick: B,
+              "aria-label": m.intl.string(m.t.hsvh0t)
+            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+              var n = Object.keys(e);
+              if (Object.getOwnPropertySymbols) {
+                var r = Object.getOwnPropertySymbols(e);
+                n.push.apply(n, r)
+              }
+              return n
+            })(Object(n)).forEach(function(e) {
+              Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+            }), t))
+          }
         })
       })]
     })]

@@ -4,7 +4,6 @@ module.exports = {
   container: "container_e73f2a",
   header: "header_e73f2a",
   controlButtons: "controlButtons_e73f2a",
-  controlButton: "controlButton_e73f2a",
   searchContainer: "searchContainer_e73f2a",
   list: "list_e73f2a",
   section: "section_e73f2a",

@@ -222,7 +222,7 @@ class k extends Chunk98597.ZP {
       if (t.type === T.d4z.GROUP_DM) return void(0, u.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("79695"), n.e("2950")]).then(n.bind(n, 354741));
+        } = await Promise.all([n.e("79695"), n.e("25421")]).then(n.bind(n, 354741));
         return n => (0, r.jsx)(e, L(M({}, n), {
           channel: t,
           selected: true

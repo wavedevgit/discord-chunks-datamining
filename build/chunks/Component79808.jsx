@@ -47,23 +47,23 @@ function f(e) {
   var t, n, f;
   let {
     root: b,
-    directory: p,
-    target: m,
+    directory: m,
+    target: p,
     onClose: j,
-    sidebarHeader: y,
-    sidebarFooter: x,
-    onPanelChange: v
-  } = e, [g, h] = o.useState(true), [O, C] = o.useState(null == (t = p.entry(m)) ? true : t.parentPanel), [P, _] = o.useState(() => p.typedGet(O)), S = o.useCallback(() => N(true), []), [E, N] = o.useState({
-    target: m,
-    targetAccordion: null == (n = p.entry(m)) ? true : n.parentAccordion,
+    sidebarHeader: x,
+    sidebarFooter: v,
+    onPanelChange: y
+  } = e, [g, h] = o.useState(true), [O, C] = o.useState(null == (t = m.entry(p)) ? true : t.parentPanel), [_, P] = o.useState(() => m.typedGet(O)), S = o.useCallback(() => N(true), []), [E, N] = o.useState({
+    target: p,
+    targetAccordion: null == (n = m.entry(p)) ? true : n.parentAccordion,
     animateScroll: false,
     complete: S
   }), {
-    navigateWithValidation: k
-  } = (0, a.Cu)(), w = o.useMemo(() => ({
-    currentPanel: p.typedGet(O),
+    navigateWithValidation: T
+  } = (0, a.Cu)(), k = o.useMemo(() => ({
+    currentPanel: m.typedGet(O),
     navigateTo: e => {
-      let t = p.entry(e);
+      let t = m.entry(e);
       if ((null == t ? true : t.parentPanel) == null) return;
       let n = {
         target: e,
@@ -72,10 +72,10 @@ function f(e) {
       };
       if (t.parentPanel.key !== (null == O ? true : O.key)) {
         let e = t.parentPanel;
-        k(() => {
+        T(() => {
           N(d(u({}, n), {
             animateScroll: false
-          })), _(e), C(e), null == v || v(e.key)
+          })), P(e), C(e), null == y || y(e.key)
         })
       } else N(d(u({}, n), {
         animateScroll: true
@@ -84,19 +84,19 @@ function f(e) {
     navTransition: E,
     showNavigationMobile: g,
     setShowNavigationMobile: h
-  }), [p, O, E, g, S, k, v]), T = () => k(j);
+  }), [m, O, E, g, S, T, y]), w = () => T(j);
   return (0, r.jsx)(s.j.Provider, {
-    value: w,
+    value: k,
     children: (0, r.jsxs)("div", {
       className: c.container,
       children: [(0, r.jsx)(i.P, {
         root: b,
-        header: y,
-        footer: x,
-        onClose: T
+        header: x,
+        footer: v,
+        onClose: w
       }), (0, r.jsx)(l.Z, {
-        onClose: T,
-        setting: null != (f = w.currentPanel) ? f : P
+        onClose: w,
+        setting: null != (f = k.currentPanel) ? f : _
       })]
     })
   })

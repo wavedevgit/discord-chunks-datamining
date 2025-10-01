@@ -17,7 +17,7 @@ function i(e) {
     useSubtitle: s,
     useOptions: c,
     renderOptionLabel: u
-  } = t, d = a(), f = null == s ? true : s(), b = n(), p = c();
+  } = t, d = a(), f = null == s ? true : s(), b = n(), m = c();
   return (0, r.jsx)(o.xJW, {
     title: d,
     className: l.selectContainer,
@@ -29,7 +29,7 @@ function i(e) {
       }), (0, r.jsx)(o.q4e, {
         value: b,
         onChange: e => i(e),
-        options: p,
+        options: m,
         renderOptionLabel: null != u ? u : true,
         renderOptionValue: null != u ? e => {
           let [t] = e;

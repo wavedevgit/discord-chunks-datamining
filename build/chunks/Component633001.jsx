@@ -316,7 +316,7 @@ function ee(e) {
 
 function et(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
-  return t ? "".concat(e.toFixed(2), "ms") : new Date(e).toLocaleTimeString()
+  return t ? "".concat(e.toFixed(2), "ms") : (0, R.vc)(o()(e), "h:mm:ss.SSS")
 }
 let en = Chunk647438.memo(function(e) {
   var {
@@ -351,7 +351,7 @@ let en = Chunk647438.memo(function(e) {
 
 function ea() {
   let e = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.hasRenderDebugMode(Chunk837268.GO.TrackFocusPIDs)),
-    t = (0, Chunk442837.Wu)([Chunk371651.default], () => Chunk371651.default.getDevToolsFocusedPidsWithTimestamp(), []);
+    t = (0, Chunk442837.Wu)([Chunk371651.default], () => Chunk371651.default.getDevToolsFocusedPidsWithTimestamp());
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk454741.panelGroup,
     children: [(0, Chunk951288.jsxs)("div", {
@@ -397,7 +397,7 @@ function ea() {
                   children: [(0, a.jsx)(en, {
                     pid: n,
                     tag: "span"
-                  }), " - ", null != (r = null == n ? true : n.toString()) ? r : "null", " @ ", et(t, true)]
+                  }), " - ", null != (r = null == n ? true : n.toString()) ? r : "null", " @ ", et(t)]
                 })
               }))
             }
@@ -819,6 +819,10 @@ let eu = {
     label: "Render",
     filter: e => e.type === j.C7.Renderer
   },
+  flux: {
+    label: "Flux",
+    filter: e => e.type === j.C7.Flux
+  },
   client: {
     label: "Client",
     filter: e => e.type === j.C7.OOPModule || e.type === j.C7.LegacyModule
@@ -833,6 +837,8 @@ function em(e) {
       return "var(--yellow-500)";
     case j.C7.NativeOOP:
       return "var(--green-500)";
+    case j.C7.Flux:
+      return "var(--brand-400)";
     case j.C7.Renderer:
       return "var(--brand-500)";
     case j.C7.LegacyModule:
@@ -913,6 +919,7 @@ function eh(e) {
     case j.C7.NativeOOP:
       return m.ljO;
     case j.C7.Renderer:
+    case j.C7.Flux:
       return m.n6r;
     case j.C7.LegacyModule:
       return m.pzj;
@@ -933,38 +940,39 @@ let ef = ["__webpack_require__", "fn"],
     name: "Details",
     group: Chunk621060.v0.NONE,
     render: e => {
-      var t, n;
+      var t, n, r, i;
       let {
-        breadcrumb: r,
-        onClose: i
+        breadcrumb: s,
+        onClose: c
       } = e, {
-        name: s,
-        type: c,
-        logType: d,
-        nativeId: u,
-        stack: p,
-        data: h,
-        timestamp: x
-      } = r, f = o()(x), b = eh(c);
+        name: d,
+        type: u,
+        logType: p,
+        nativeId: h,
+        stack: x,
+        data: f,
+        timestamp: b,
+        pid: g
+      } = s, j = o()(b), _ = eh(u);
       return (0, a.jsxs)(m.w0Z, {
         className: H.subPanelScroller,
         children: [(0, a.jsxs)(v.Z, {
           className: l()(W.headerBar, H.subPanelHeaderBar),
           children: [(0, a.jsx)("div", {
             style: {
-              color: em(c, d)
+              color: em(u, p)
             },
             className: H.headerIcon,
-            children: (0, a.jsx)(b, {
+            children: (0, a.jsx)(_, {
               color: "currentColor",
               size: "sm"
             })
           }), (0, a.jsxs)(v.Z.Title, {
             wrapperClassName: H.headerTitle,
-            children: [s, " (", c, ")", (0, a.jsx)(m.P3F, {
+            children: [d, " (", u, ")", (0, a.jsx)(m.P3F, {
               tag: "span",
               className: H.copyEventButton,
-              onClick: () => (0, w.JG)(s),
+              onClick: () => (0, w.JG)(d),
               children: (0, a.jsx)(m.TIy, {
                 color: "currentColor",
                 size: "sm"
@@ -974,46 +982,52 @@ let ef = ["__webpack_require__", "fn"],
             icon: m.TIy,
             tooltip: "Copy all properties",
             onClick: () => {
-              (0, w.JG)(ex(r))
+              (0, w.JG)(ex(s))
             }
           }), (0, a.jsx)(v.Z.Icon, {
             icon: m.k$p,
             tooltip: "Close",
-            onClick: i
+            onClick: c
           })]
         }), (0, a.jsxs)(M.E, {
           className: H.commonProperties,
           children: [(0, a.jsx)(M.Z9, {
             name: "Timestamp",
-            copyValue: f.toISOString(),
+            copyValue: j.toISOString(),
             children: (0, a.jsx)("time", {
-              dateTime: f.toISOString(),
-              title: (0, R.vc)(f, "LLLL"),
-              children: (0, R.vc)(f, "L h:mm:ss.SSS")
+              dateTime: j.toISOString(),
+              title: (0, R.vc)(j, "LLLL"),
+              children: (0, R.vc)(j, "L h:mm:ss.SSS")
             })
           }), (0, a.jsx)(M.Z9, {
             name: "Log Type",
-            copyValue: d,
+            copyValue: p,
             children: (0, a.jsx)("code", {
-              children: d
+              children: p
+            })
+          }), (0, a.jsx)(M.Z9, {
+            name: "PID",
+            copyValue: null != (t = null == g ? true : g.toString()) ? t : "null",
+            children: (0, a.jsx)("code", {
+              children: null != (n = null == g ? true : g.toString()) ? n : "null"
             })
           }), (0, a.jsx)(M.Z9, {
             name: "Native ID",
-            copyValue: null != (t = null == u ? true : u.toString()) ? t : "null",
+            copyValue: null != (r = null == h ? true : h.toString()) ? r : "null",
             children: (0, a.jsx)("code", {
-              children: null != (n = null == u ? true : u.toString()) ? n : "null"
+              children: null != (i = null == h ? true : h.toString()) ? i : "null"
             })
           }), (0, a.jsx)(M.Z9, {
             name: "Data",
-            copyValue: ex(h),
+            copyValue: ex(f),
             children: (0, a.jsx)("code", {
-              children: ex(h)
+              children: ex(f)
             })
-          }), (0, a.jsx)(M.Z9, {
+          }), null != x && (0, a.jsx)(M.Z9, {
             name: "Stack Trace",
-            copyValue: p,
+            copyValue: x,
             children: (0, a.jsx)("code", {
-              children: p.split("\n").map((e, t) => {
+              children: x.split("\n").map((e, t) => {
                 let n = e.match(/at (.*) \((.*):(\d+):(\d+)\)/);
                 if (null != n) {
                   let [, e, r, i, l] = n, s = r.split(/[\\/]/).pop();
@@ -1048,8 +1062,8 @@ let ef = ["__webpack_require__", "fn"],
         type: n,
         stack: a,
         data: r
-      } = e;
-      return [t, n, a, JSON.stringify(r)]
+      } = e, i = [t, n, JSON.stringify(r)];
+      return null != a && i.push(a), i
     },
     throttleMs: 100
   };
@@ -1085,8 +1099,8 @@ function ej() {
     [z, V] = Chunk647438.useState(false),
     W = Chunk647438.useRef(null),
     K = Chunk647438.useCallback(() => {
-      (0, Chunk572004.JG)(JSON.stringify(Chunk829907)), Chunk388032(true)
-    }, [Chunk829907]);
+      (0, Chunk572004.JG)(JSON.stringify(Chunk355863)), Chunk388032(true)
+    }, [Chunk355863]);
   Chunk647438.useEffect(() => {
     if (Chunk757744) return Chunk451429.current = setTimeout(() => {
       Chunk388032(false)

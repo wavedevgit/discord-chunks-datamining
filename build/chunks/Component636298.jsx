@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk214779 = require("./214779.js");
 
-function p(e) {
+function m(e) {
   let {
     icon: t,
     label: n,
@@ -30,7 +30,7 @@ function p(e) {
   })
 }
 
-function m(e) {
+function p(e) {
   let {
     title: t,
     onClose: n
@@ -41,7 +41,7 @@ function m(e) {
     className: b.contentHeader,
     children: [(0, r.jsxs)("div", {
       className: b.contentHeaderLeft,
-      children: [a.tq && (0, r.jsx)(p, {
+      children: [a.tq && (0, r.jsx)(m, {
         icon: c.yFM,
         onClick: () => o(true),
         label: f.intl.string(f.t["13/7kZ"])
@@ -50,7 +50,7 @@ function m(e) {
         color: "header-secondary",
         children: t
       })]
-    }), (0, r.jsx)(p, {
+    }), (0, r.jsx)(m, {
       icon: c.Uz9,
       onClick: n,
       label: f.intl.string(f.t.cpT0Cg)
@@ -69,7 +69,7 @@ let j = Chunk647438.memo(function(e) {
       [b.mobile]: a.tq,
       [b.mobileNavigationOpen]: l
     }),
-    children: [(0, r.jsx)(m, {
+    children: [(0, r.jsx)(p, {
       title: o,
       onClose: t
     }), (0, r.jsx)("div", {

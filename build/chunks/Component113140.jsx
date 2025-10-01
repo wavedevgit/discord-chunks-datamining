@@ -18,16 +18,16 @@ function h(t) {
     onClose: e,
     channel: h
   } = t, u = t => {
-    (0, c.RK)(h, t), e()
+    (0, r.RK)(h, t), e()
   };
-  return (0, i.jsx)(s.I, {
+  return (0, i.jsx)(s.ExpressiveModal, {
     transitionState: n,
     graphic: {
       type: "image",
       src: l.Z
     },
-    title: r.intl.string(r.t.Ul1RJS),
-    subtitle: r.intl.format(r.t["Z+3bW1"], {
+    title: c.intl.string(c.t.Ul1RJS),
+    subtitle: c.intl.format(c.t["Z+3bW1"], {
       stageChannelHook: () => (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(a.ewx, {
           size: "custom",
@@ -40,11 +40,11 @@ function h(t) {
     }),
     onClose: () => (u(true), Promise.resolve()),
     actions: [{
-      text: r.intl.string(r.t.L5eIZ2),
+      text: c.intl.string(c.t.L5eIZ2),
       onClick: () => e(),
       variant: "secondary"
     }, {
-      text: r.intl.string(r.t.MMlhsr),
+      text: c.intl.string(c.t.MMlhsr),
       onClick: () => u(false),
       variant: "active"
     }]

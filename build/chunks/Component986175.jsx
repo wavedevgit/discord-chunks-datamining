@@ -2,11 +2,12 @@
 /** chunk id: 986175, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  I: () => y
+  I: () => O
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk164617 = require("./164617.js"),
+  Chunk198168 = require("./198168.js"),
   Chunk352065 = require("./352065.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk667202 = require("./667202.jsx"),
@@ -14,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk177475 = require("./177475.js"),
   Chunk691739 = require("./691739.js");
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -23,8 +24,8 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _() {
-  return (_ = Object.assign || function(e) {
+function p() {
+  return (p = Object.assign || function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = arguments[t];
       for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -33,25 +34,25 @@ function _() {
   }).apply(this, arguments)
 }
 
-function p(e) {
+function h(e) {
   if (null == e) throw TypeError("Cannot destructure " + e);
   return e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
 }
 
-function m(e, t) {
+function g(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -62,15 +63,15 @@ function m(e, t) {
   return n
 }
 
-function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function E(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function E(e, t) {
+function b(e, t) {
   if (null == e) return {};
-  var n, r, i = b(e, t);
+  var n, r, i = y(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -78,14 +79,14 @@ function E(e, t) {
   return i
 }
 
-function b(e, t) {
+function y(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let y = {
+let O = {
   title: "Modal",
   stories: [{
     name: "Modal",
@@ -95,30 +96,30 @@ let y = {
       var {
         showPreview: t,
         showInput: n
-      } = e, i = E(e, ["showPreview", "showInput"]);
-      return (0, r.jsxs)(s.Kqy, {
+      } = e, i = b(e, ["showPreview", "showInput"]);
+      return (0, r.jsxs)(l.Kqy, {
         gap: 16,
         align: "center",
-        children: [(0, r.jsx)(s.Text, {
+        children: [(0, r.jsx)(l.Text, {
           variant: "text-md/normal",
           children: "Click the button below to open the modal"
-        }), (0, r.jsx)(s.zxk, {
+        }), (0, r.jsx)(l.zxk, {
           variant: "primary",
           text: "Open Modal",
-          onClick: () => (0, s.h7j)(e => (0, r.jsx)(c.Modal, g(h({}, e, i), {
+          onClick: () => (0, l.h7j)(e => (0, r.jsx)(u.Modal, E(m({}, e, i), {
             title: i.title,
             subtitle: i.subtitle,
-            input: n ? (0, r.jsx)(s.E1j, {
+            input: n ? (0, r.jsx)(l.E1j, {
               placeholder: "Search...",
               onChange: () => {},
               query: ""
             }) : true,
-            preview: t ? (0, r.jsxs)(s.Kqy, {
+            preview: t ? (0, r.jsxs)(l.Kqy, {
               gap: 8,
-              children: [(0, r.jsx)(s.Text, {
+              children: [(0, r.jsx)(l.Text, {
                 variant: "text-lg/semibold",
                 children: "Preview Content"
-              }), (0, r.jsx)(s.Text, {
+              }), (0, r.jsx)(l.Text, {
                 variant: "text-md/normal",
                 color: "text-secondary",
                 children: "This is preview content that appears in the modal footer."
@@ -133,12 +134,12 @@ let y = {
               text: "Submit",
               onClick: e.onClose
             }],
-            children: (0, r.jsxs)(s.Kqy, {
+            children: (0, r.jsxs)(l.Kqy, {
               gap: 16,
-              children: [(0, r.jsx)(s.oil, {
+              children: [(0, r.jsx)(l.oil, {
                 label: "Example Input",
                 placeholder: "Enter some text..."
-              }), (0, r.jsx)(s.Text, {
+              }), (0, r.jsx)(l.Text, {
                 variant: "text-md/normal",
                 children: "This is the main content area of the modal. You can place any content here."
               })]
@@ -195,10 +196,10 @@ let y = {
     component: function(e) {
       var {
         graphic: t
-      } = e, o = E(e, ["graphic"]);
-      let c = i.useMemo(() => 0 === t ? {
+      } = e, s = b(e, ["graphic"]);
+      let u = i.useMemo(() => 0 === t ? {
         type: "image",
-        src: u
+        src: d
       } : 1 === t ? {
         type: "lottie",
         lottie: () => n.e("94792").then(n.t.bind(n, 972951, 19)),
@@ -208,30 +209,31 @@ let y = {
         rive: a.PerfTestRive
       } : 3 === t ? {
         type: "video",
-        src: d.Z,
-        fallbackImageSrc: u,
+        src: f.Z,
+        fallbackImageSrc: d,
         loop: true,
         loopAt: 2.5
       } : 4 === t ? {
         type: "dynamic",
-        component: s.AX$.DEMO,
+        component: o.DynamicGraphicComponent.DEMO,
+        aspectRatio: "6/4",
         props: {
           text: "Dynamic Content"
         }
       } : true, [t]);
-      return (0, r.jsxs)(s.Kqy, {
+      return (0, r.jsxs)(l.Kqy, {
         gap: 16,
         align: "center",
-        children: [(0, r.jsx)(s.Text, {
+        children: [(0, r.jsx)(l.Text, {
           variant: "text-md/normal",
           children: "Click the button below to open the expressive modal"
-        }), (0, r.jsx)(s.zxk, {
+        }), (0, r.jsx)(l.zxk, {
           variant: "primary",
           text: "Open ExpressiveModal",
-          onClick: () => (0, s.h7j)(e => (0, r.jsx)(l.I, g(h({}, e, o), {
-            title: o.title,
-            subtitle: o.subtitle,
-            graphic: c,
+          onClick: () => (0, l.h7j)(e => (0, r.jsx)(c.ExpressiveModal, E(m({}, e, s), {
+            title: s.title,
+            subtitle: s.subtitle,
+            graphic: u,
             actions: [{
               variant: "secondary",
               text: "Cancel",
@@ -241,15 +243,15 @@ let y = {
               text: "Submit",
               onClick: e.onClose
             }],
-            children: (0, r.jsx)(s.Kqy, {
+            children: (0, r.jsx)(l.Kqy, {
               gap: 16,
-              children: (0, r.jsx)(s.Text, {
+              children: (0, r.jsx)(l.Text, {
                 variant: "text-md/normal",
                 children: "This is an expressive modal with a gradient background and optional badge."
               })
             })
           })), {
-            dismissable: o.dismissable
+            dismissable: s.dismissable
           })
         })]
       })
@@ -326,23 +328,133 @@ let y = {
       }
     }
   }, {
+    name: "Dynamic Graphic Modal",
+    id: "dynamic-graphic-modal",
+    component: function(e) {
+      var {
+        dynamicText: t
+      } = e, i = b(e, ["dynamicText"]);
+      let a = {
+        type: "dynamic",
+        component: o.DynamicGraphicComponent.DEMO,
+        aspectRatio: "6/4",
+        props: {
+          text: t
+        }
+      };
+      return (0, r.jsxs)(l.Kqy, {
+        gap: 16,
+        align: "center",
+        children: [(0, r.jsx)(l.Text, {
+          variant: "text-md/normal",
+          children: "This example demonstrates the DynamicGraphic component rendering a React component inside the modal header."
+        }), (0, r.jsx)(l.zxk, {
+          variant: "primary",
+          text: "Open Dynamic Graphic Modal",
+          onClick: () => (0, l.ZDy)(async () => {
+            let {
+              ExpressiveModal: e
+            } = await Promise.resolve().then(n.bind(n, 667202));
+            return t => (0, r.jsx)(e, E(m({}, t, i), {
+              title: i.title,
+              subtitle: i.subtitle,
+              graphic: a,
+              actions: [{
+                variant: "secondary",
+                text: "Cancel",
+                onClick: t.onClose
+              }, {
+                variant: "primary",
+                text: "Submit",
+                onClick: t.onClose
+              }],
+              children: (0, r.jsx)(l.Kqy, {
+                gap: 16,
+                children: (0, r.jsx)(l.Text, {
+                  variant: "text-md/normal",
+                  children: "The header above is rendered using a React component via DynamicGraphic, allowing for dynamic, interactive content in the modal header."
+                })
+              })
+            }))
+          }, {
+            dismissable: i.dismissable
+          })
+        })]
+      })
+    },
+    controls: {
+      title: {
+        label: "Title",
+        type: "text",
+        defaultValue: "Dynamic Graphic Modal"
+      },
+      subtitle: {
+        label: "Subtitle",
+        type: "text",
+        defaultValue: "This modal uses a React component in the header"
+      },
+      dynamicText: {
+        label: "Dynamic Text",
+        type: "text",
+        defaultValue: "Hello from DynamicGraphic!"
+      },
+      gradientColor: {
+        label: "Gradient Color",
+        type: "select",
+        defaultValue: "purple",
+        options: [{
+          label: "Purple",
+          value: "purple"
+        }, {
+          label: "Blue",
+          value: "blue"
+        }, {
+          label: "Nitro Pink",
+          value: "nitro-pink"
+        }]
+      },
+      badge: {
+        label: "Badge",
+        type: "select",
+        defaultValue: true,
+        options: [{
+          label: "None",
+          value: true
+        }, {
+          label: "New",
+          value: "new"
+        }, {
+          label: "Beta",
+          value: "beta"
+        }, {
+          label: "Early Access",
+          value: "early_access"
+        }]
+      },
+      dismissable: {
+        label: "Dismissable",
+        type: "boolean",
+        defaultValue: true
+      }
+    }
+  }, {
     name: "LayerModal",
     id: "layer-modal",
     component: function(e) {
-      var t = _({}, p(e));
-      return (0, r.jsxs)(s.Kqy, {
+      var t = p({}, h(e));
+      return (0, r.jsxs)(l.Kqy, {
         gap: 16,
         align: "center",
-        children: [(0, r.jsx)(s.Text, {
+        children: [(0, r.jsx)(l.Text, {
           variant: "text-md/normal",
           children: "Click the button below to open the layer modal"
-        }), (0, r.jsx)(s.zxk, {
+        }), (0, r.jsx)(l.zxk, {
           variant: "primary",
           text: "Open Layer Modal",
-          onClick: () => (0, s.h7j)(e => (0, r.jsx)(o.A, g(h({}, e, t), {
-            children: (0, r.jsx)(s.Kqy, {
+          onClick: () => (0, l.h7j)(e => (0, r.jsx)(s.A, E(m({}, e, t), {
+            children: (0, r.jsx)(l.Kqy, {
               gap: 16,
-              children: (0, r.jsx)(s.Text, {
+              children: (0, r.jsx)(l.Text, {
                 variant: "text-md/normal",
                 children: "This is the layer modal content"
               })

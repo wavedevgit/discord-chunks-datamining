@@ -1,7 +1,7 @@
 /** Chunk was on 59739 **/
 /** chunk id: 36361, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => x
 }), require("./415506.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -28,11 +28,11 @@ function j(e) {
     case o.Jq.SIDEBAR_ITEM:
       throw Error("".concat(t.type, " nodes should never be rendered directly"));
     case o.Jq.PANEL:
-      return (0, r.jsx)(m.T, {
+      return (0, r.jsx)(p.T, {
         node: t
       });
     case o.Jq.PANE:
-      return (0, r.jsx)(p.Z, {
+      return (0, r.jsx)(m.Z, {
         node: t
       });
     case o.Jq.LIST:
@@ -71,7 +71,7 @@ function j(e) {
   }
 }
 
-function y(e) {
+function x(e) {
   let {
     node: t
   } = e;

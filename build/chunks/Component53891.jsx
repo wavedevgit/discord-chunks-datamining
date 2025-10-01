@@ -7,7 +7,7 @@ var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
-  Chunk198168 = require("./198168.jsx"),
+  Chunk198168 = require("./198168.js"),
   Chunk907862 = require("./907862.js"),
   Chunk570140 = require("./570140.js"),
   Chunk710845 = require("./710845.js"),
@@ -52,7 +52,7 @@ function g(e) {
       position: "top",
       graphic: {
         type: "dynamic",
-        component: l.P3.GUILD_TAG_COACHMARK_ASSET,
+        component: l.DynamicGraphicComponent.GUILD_TAG_COACHMARK_ASSET,
         props: {
           guildId: e.guild.id,
           guildProfile: e.guild.profile
@@ -101,7 +101,7 @@ function v(e) {
       position: "top",
       graphic: {
         type: "dynamic",
-        component: l.P3.GUILD_TAG_COACHMARK_ASSET,
+        component: l.DynamicGraphicComponent.GUILD_TAG_COACHMARK_ASSET,
         props: {
           guildId: e.guild.id,
           guildProfile: e.guild.profile

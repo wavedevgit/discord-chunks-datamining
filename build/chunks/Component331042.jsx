@@ -39,7 +39,7 @@ let P = t => {
     overrideDescription: k,
     shouldShowPromotionalExperience: w,
     purchaseType: y = N.o8.FIAT
-  } = t, b = (0, o.e7)([p.Z], () => p.Z.purchases), D = (0, C.o)(n, b), S = (0, T.W)(n, D), {
+  } = t, b = (0, o.e7)([p.Z], () => p.Z.purchases), D = (0, E.o)(n, b), S = (0, T.W)(n, D), {
     analyticsLocations: g
   } = (0, u.ZP)([...R, c.Z.COLLECTIBLES_COLLECTED_MODAL]), {
     hasRequiredProductItems: B
@@ -48,13 +48,13 @@ let P = t => {
       firstProfileEffect: e,
       firstAvatarDecoration: n,
       firstNameplate: r
-    } = (0, L.Rj)(t), l = (0, E.x6)(t);
+    } = (0, L.Rj)(t), l = (0, C.x6)(t);
     return {
       firstAvatarDecoration: n,
       firstProfileEffect: e,
       firstNameplate: r,
       isBundle: l,
-      hasRequiredProductItems: l ? (0, x.N)(t) : null != n || null != e || null != r
+      hasRequiredProductItems: l ? (0, h.N)(t) : null != n || null != e || null != r
     }
   })(S), {
     promotionalRewardCollectedText: F,
@@ -118,7 +118,7 @@ let P = t => {
   }
   let {
     confettiColors: Y
-  } = (0, h.Z)(S.styles);
+  } = (0, x.Z)(S.styles);
   return (0, r.jsx)(u.Gt, {
     value: g,
     children: (0, r.jsxs)("div", {
@@ -127,10 +127,10 @@ let P = t => {
         ref: X,
         className: O.confettiCanvas,
         environment: V
-      }), (0, r.jsx)(i.I, {
+      }), (0, r.jsx)(s.ExpressiveModal, {
         graphic: {
           type: "dynamic",
-          component: s.AX$.COLLECTIBLES_PREVIEW,
+          component: i.AX$.COLLECTIBLES_PREVIEW,
           aspectRatio: Q,
           props: {
             product: S,

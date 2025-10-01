@@ -1,5 +1,5 @@
 /** Chunk was on 69432 **/
-/** chunk id: 10508, original params: t,n,e (module,exports,require) **/
+/** chunk id: 10508, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   o: () => f,
   w: () => m
@@ -16,8 +16,8 @@ var Chunk793030 = require("./793030.js"),
   m = ((i = {}).NONE = "none", i.CONFIRMING = "confirming", i.APPLIED = "applied", i);
 let f = t => {
     let {
-      userDiscountOffer: n,
-      offerState: e = "none"
+      userDiscountOffer: e,
+      offerState: n = "none"
     } = t, {
       discountedPrice: i,
       premiumSubscription: l
@@ -33,35 +33,35 @@ let f = t => {
         children: [(0, r.jsx)(a.xvT, {
           variant: "text-md/semibold",
           children: l.status === o.O0b.CANCELED ? c.intl.format(c.t["DC+nPD"], {
-            numMonths: n.discount.user_usage_limit,
+            numMonths: e.discount.user_usage_limit,
             discountedPrice: i
           }) : c.intl.format(c.t.tQvNlp, {
-            numMonths: n.discount.user_usage_limit
+            numMonths: e.discount.user_usage_limit
           })
         }), (0, r.jsx)(p, {
-          userDiscountOffer: n,
-          offerState: e
+          userDiscountOffer: e,
+          offerState: n
         })]
       })]
     })
   },
   p = t => {
     let {
-      userDiscountOffer: n,
-      offerState: e
+      userDiscountOffer: e,
+      offerState: n
     } = t, {
       discountedPrice: i,
       fullPrice: u,
       premiumSubscription: d
     } = (0, s.a)();
-    switch (e) {
+    switch (n) {
       case "applied":
         if (d.status === o.O0b.CANCELED) return (0, r.jsx)(a.xvT, {
           variant: "text-md/normal",
           color: "text-secondary",
           children: c.intl.formatToPlainString(c.t.h2g1IS, {
-            billingPeriod: (0, l.JP)(n.discount.user_usage_limit_interval),
-            numMonths: n.discount.user_usage_limit,
+            billingPeriod: (0, l.JP)(e.discount.user_usage_limit_interval),
+            numMonths: e.discount.user_usage_limit,
             fullPrice: u
           })
         });
@@ -69,7 +69,7 @@ let f = t => {
           variant: "text-md/normal",
           color: "text-secondary",
           children: c.intl.formatToPlainString(c.t.gPzMHR, {
-            numMonths: n.discount.user_usage_limit,
+            numMonths: e.discount.user_usage_limit,
             discountedPrice: i,
             regularPrice: u
           })
@@ -79,8 +79,8 @@ let f = t => {
           variant: "text-md/normal",
           color: "text-secondary",
           children: c.intl.formatToPlainString(c.t.iDFk3t, {
-            billingPeriod: (0, l.JP)(n.discount.user_usage_limit_interval),
-            numMonths: n.discount.user_usage_limit,
+            billingPeriod: (0, l.JP)(e.discount.user_usage_limit_interval),
+            numMonths: e.discount.user_usage_limit,
             fullPrice: u
           })
         });
@@ -88,8 +88,8 @@ let f = t => {
           variant: "text-md/normal",
           color: "text-secondary",
           children: c.intl.formatToPlainString(c.t.Eq1RHB, {
-            percent: n.discount.amount,
-            numMonths: n.discount.user_usage_limit,
+            percent: e.discount.amount,
+            numMonths: e.discount.user_usage_limit,
             price: u
           })
         });
@@ -98,8 +98,8 @@ let f = t => {
           variant: "text-md/normal",
           color: "text-secondary",
           children: c.intl.formatToPlainString(c.t["2gem09"], {
-            percent: n.discount.amount,
-            numMonths: n.discount.user_usage_limit
+            percent: e.discount.amount,
+            numMonths: e.discount.user_usage_limit
           })
         })
     }

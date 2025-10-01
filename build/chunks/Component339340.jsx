@@ -116,7 +116,7 @@ function S(e) {
         children: L
       }) : null]
     });
-  return (0, r.jsx)(s.I, {
+  return (0, r.jsx)(s.ExpressiveModal, {
     transitionState: n,
     onClose: A,
     graphic: {

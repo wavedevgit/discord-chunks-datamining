@@ -1,5 +1,5 @@
 /** Chunk was on 69432 **/
-/** chunk id: 586920, original params: t,n,e (module,exports,require) **/
+/** chunk id: 586920, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   i: () => x
 }), require("./388685.js");
@@ -20,21 +20,21 @@ var Chunk951288 = require("./951288.js"),
 let x = () => {
   let {
     transitionState: t,
-    onClose: n,
-    premiumType: e,
+    onClose: e,
+    premiumType: n,
     confettiCanvas: x,
     churnUserDiscountOffer: C,
     discountedPrice: P
   } = (0, Chunk594135.a)(), v = (0, Chunk647438.useRef)(null), [y, S] = (0, Chunk647438.useState)(false), {
-    enabled: _
+    enabled: E
   } = Chunk219673.b.useConfig({
     location: "DiscountAppliedStep"
-  }), D = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion);
+  }), _ = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion);
   if ((0, Chunk647438.useEffect)(() => {
       null !== v.current && null !== P && S(true)
     }, [v, P]), null === C) return null;
-  let E = require === Chunk474936.p9.TIER_2,
-    N = _ ? [] : [{
+  let D = require === Chunk474936.p9.TIER_2,
+    N = E ? [] : [{
       text: Chunk388032.intl.string(Chunk388032.t["/r8g/v"]),
       onClick: () => exports(),
       variant: "primary",
@@ -42,12 +42,12 @@ let x = () => {
     }];
   return (0, Chunk951288.jsxs)("div", {
     ref: v,
-    children: [(0, Chunk951288.jsx)(Chunk667202.I, {
+    children: [(0, Chunk951288.jsx)(Chunk667202.ExpressiveModal, {
       graphic: {
         type: "image",
-        src: E ? Chunk234286 : Chunk997892
+        src: D ? Chunk234286 : Chunk997892
       },
-      gradientColor: E ? "nitro-pink" : "nitro-green",
+      gradientColor: D ? "nitro-pink" : "nitro-green",
       transitionState: module,
       title: Chunk388032.intl.string(Chunk388032.t.PZSyRk),
       actions: N,
@@ -59,7 +59,7 @@ let x = () => {
           userDiscountOffer: C
         })
       })
-    }), !D && y && (0, Chunk951288.jsx)(Chunk530618.Z, {
+    }), !_ && y && (0, Chunk951288.jsx)(Chunk530618.Z, {
       confettiTarget: v.current,
       confettiCanvas: x,
       confettiVelocityMultiplier: .75

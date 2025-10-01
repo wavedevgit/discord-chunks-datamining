@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-/** chunk id: 587272, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 151108, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
   Am: () => l,
@@ -38,7 +38,7 @@ function c(e) {
 }
 
 function u(e) {
-  return "type" in e && "dynamic" === e.type && "number" == typeof e.component
+  return "type" in e && "dynamic" === e.type && "component" in e
 }
 
 function d(e) {

@@ -292,7 +292,7 @@ function ef(e) {
     eO(true), t.isMultiUserDM() ? (0, y.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("79695"), n.e("90508"), n.e("25421")]).then(n.bind(n, 354741));
+      } = await Promise.all([n.e("79695"), n.e("90508"), n.e("25421"), n.e("89183")]).then(n.bind(n, 354741));
       return n => (0, r.jsx)(e, el(er({}, n), {
         channel: t,
         selected: o
