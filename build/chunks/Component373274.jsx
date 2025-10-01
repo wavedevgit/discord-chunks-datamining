@@ -519,7 +519,7 @@ class eh extends(r = Chunk647438.PureComponent) {
       if (null == r) return;
       let i = null,
         l = r.getShownChannelAndThreadIds();
-      null != n && l.includes(n) && (i = (0, j.KY)(t)), (0, j.Uo)(e.id, l, i)
+      null != n && l.includes(n) && (i = (0, v.KY)(t)), (0, v.Uo)(e.id, l, i)
     }), ec(this, "renderSection", e => {
       let {
         section: t
@@ -561,7 +561,7 @@ class eh extends(r = Chunk647438.PureComponent) {
         if (null == t) return null;
         switch (t) {
           case er.z.GUILD_HUB_HEADER_OPTIONS:
-            return (0, i.jsx)(v.Z, {
+            return (0, i.jsx)(j.Z, {
               guild: r,
               channel: A.ZP.getDefaultChannel(r.id)
             }, er.z.GUILD_HUB_HEADER_OPTIONS);
@@ -631,8 +631,8 @@ class eh extends(r = Chunk647438.PureComponent) {
       let {
         category: b,
         channel: _
-      } = m, O = b instanceof D.VR, j = _.record, x = "".concat(t).concat(_.id);
-      switch (j.type) {
+      } = m, O = b instanceof D.VR, v = _.record, x = "".concat(t).concat(_.id);
+      switch (v.type) {
         case el.d4z.GUILD_ANNOUNCEMENT:
         case el.d4z.GUILD_TEXT:
         case el.d4z.GUILD_FORUM:
@@ -641,7 +641,7 @@ class eh extends(r = Chunk647438.PureComponent) {
         case el.d4z.GROUP_DM:
           return (0, i.jsxs)(l.Fragment, {
             children: [(0, i.jsx)(J.Z, {
-              channel: j,
+              channel: v,
               guild: r,
               position: _.position,
               selected: a === _.id,
@@ -653,16 +653,16 @@ class eh extends(r = Chunk647438.PureComponent) {
               withGuildIcon: g
             }), _.threadCount > 0 ? (0, i.jsx)(q.Z, {
               withGuildIcon: g,
-              channel: j,
+              channel: v,
               sortedThreadIds: _.threadIds,
-              selectedChannel: null != o && (o.id === _.id || o.parent_id === j.id) ? o : null,
-              selectedVoiceChannelId: (null == s ? true : s.parent_id) === j.id ? c : null
+              selectedChannel: null != o && (o.id === _.id || o.parent_id === v.id) ? o : null,
+              selectedVoiceChannelId: (null == s ? true : s.parent_id) === v.id ? c : null
             }) : null]
           }, x);
         case el.d4z.GUILD_STAGE_VOICE:
           var P, I;
           return (0, i.jsx)(X.Z, {
-            channel: j,
+            channel: v,
             guild: r,
             position: _.position,
             selected: a === _.id,
@@ -675,7 +675,7 @@ class eh extends(r = Chunk647438.PureComponent) {
           }, x);
         case el.d4z.GUILD_VOICE:
           return (0, i.jsx)(en.Z, {
-            channel: j,
+            channel: v,
             guild: r,
             position: _.position,
             selected: a === _.id,
@@ -690,7 +690,7 @@ class eh extends(r = Chunk647438.PureComponent) {
           }, x);
         case el.d4z.GUILD_STORE:
           return (0, i.jsx)(Q.Z, {
-            channel: j,
+            channel: v,
             guild: r,
             position: _.position,
             selected: a === _.id
@@ -698,12 +698,12 @@ class eh extends(r = Chunk647438.PureComponent) {
         case el.d4z.GUILD_CATEGORY:
           if (t !== u.voiceChannelsSectionNumber) return null;
           return (0, i.jsx)(G.kw, {
-            channel: j
-          }, "readonly-".concat(j.id));
+            channel: v
+          }, "readonly-".concat(v.id));
         case el.d4z.PUBLIC_THREAD:
         case el.d4z.PRIVATE_THREAD:
           return (0, i.jsx)(J.Z, {
-            channel: j,
+            channel: v,
             guild: r,
             position: _.position,
             selected: a === _.id,
@@ -787,11 +787,11 @@ let ef = e => {
         var r;
         null == (r = document.querySelector(e)) || r.focus()
       }
-  }, []), v = l.useCallback(() => new Promise(e => {
+  }, []), j = l.useCallback(() => new Promise(e => {
     let t = O.current;
     if (null == t) return e();
     t.scrollTo(0, () => requestAnimationFrame(() => e()))
-  }), []), j = l.useCallback(() => new Promise(e => {
+  }), []), v = l.useCallback(() => new Promise(e => {
     let t = O.current;
     if (null == t) return e();
     t.scrollTo(Number.MAX_SAFE_INTEGER, () => requestAnimationFrame(() => e()))
@@ -800,8 +800,8 @@ let ef = e => {
     defaultFocused: null != n ? n : true,
     isEnabled: o,
     setFocus: y,
-    scrollToStart: v,
-    scrollToEnd: j
+    scrollToStart: j,
+    scrollToEnd: v
   }), E = C.setFocus;
   l.useEffect(() => {
     null != n && E(n)

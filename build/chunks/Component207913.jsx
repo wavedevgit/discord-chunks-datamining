@@ -93,7 +93,7 @@ function V(e) {
     size: u.EFr.SIZE_32,
     guildId: null == b ? true : b.id,
     animateOnHover: true
-  }), S = n.type !== L.d4z.GUILD_ANNOUNCEMENT || null == b, I = (0, v.x)({
+  }), S = n.type !== L.d4z.GUILD_ANNOUNCEMENT || null == b, I = (0, j.x)({
     channel: n,
     message: t,
     user: t.author,
@@ -102,7 +102,7 @@ function V(e) {
   }), Z = (0, r.jsx)("div", {
     className: G.usernameTagContainer,
     inert: true,
-    children: (0, r.jsx)(j.Z, {
+    children: (0, r.jsx)(v.Z, {
       channel: n,
       message: t,
       hideGuildTag: true,
@@ -309,18 +309,18 @@ function W(e) {
         _ = null;
       1 === s ? _ = u.XBm : s > 1 ? _ = u.Ka2 : c ? _ = b.Z : p || h ? _ = u.QDj : d ? _ = u.SlE : f && (_ = u.gj8);
       let y = true,
-        v = null;
+        j = null;
       if (e)
-        if (c) v = U.intl.string(U.t["9ddYKi"]);
+        if (c) j = U.intl.string(U.t["9ddYKi"]);
         else if (p) {
-        var j;
-        y = false, v = null == (j = t.poll) ? true : j.question.text
-      } else v = h ? U.intl.string(U.t.sad2PD) : i ? U.intl.string(U.t.p0oZm5) : s > 1 ? U.intl.formatToPlainString(U.t.rtfTKi, {
+        var v;
+        y = false, j = null == (v = t.poll) ? true : v.question.text
+      } else j = h ? U.intl.string(U.t.sad2PD) : i ? U.intl.string(U.t.p0oZm5) : s > 1 ? U.intl.formatToPlainString(U.t.rtfTKi, {
         count: s
       }) : 1 === s ? U.intl.string(U.t.tCcq5u) : d ? U.intl.format(U.t.zY4v1N, {
         stickerName: t.stickerItems[0].name
       }) : f ? U.intl.string(U.t.slFYgo) : g ? U.intl.string(U.t.Yvvfw8) : U.intl.string(U.t.sDqZHB);
-      else y = false, v = (0, r.jsx)(O.ZP, {
+      else y = false, j = (0, r.jsx)(O.ZP, {
         content: a,
         message: t,
         compact: false,
@@ -329,15 +329,15 @@ function W(e) {
           [G.selected]: l
         })
       });
-      return e && (v = (0, r.jsx)("div", {
+      return e && (j = (0, r.jsx)("div", {
         className: o()(G.message, {
           [G.unread]: n,
           [G.selected]: l,
           [G.descriptionMessage]: y
         }),
-        children: v
+        children: j
       })), {
-        previewContent: v,
+        previewContent: j,
         Icon: _
       }
     }, [t, a, n, l])

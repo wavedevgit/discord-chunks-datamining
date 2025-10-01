@@ -9,19 +9,19 @@ var Chunk647438 = require("./647438.js"),
   Chunk388032 = require("./388032.jsx");
 
 function o(e) {
-  let [t, n] = c.useState(false), [o, s] = c.useState(false), [a, d] = c.useState(false);
+  let [t, n] = i.useState(false), [o, a] = i.useState(false), [s, u] = i.useState(false);
   return {
-    rules: c.useMemo(() => {
-      let c = l.intl.format(l.t.S2lVJS, {
-        onCommunityGuidelinesClick: () => (0, i.lW)({
-          articleId: r.BhN.PUBLIC_GUILD_GUILDLINES,
+    rules: i.useMemo(() => {
+      let i = l.intl.format(l.t.S2lVJS, {
+        onCommunityGuidelinesClick: () => (0, r.lW)({
+          articleId: c.BhN.PUBLIC_GUILD_GUILDLINES,
           guildId: e,
-          modalStep: i.tK.AGREE_TO_RULES
+          modalStep: r.tK.AGREE_TO_RULES
         }),
-        onDiscoveryGuidelinesClick: () => (0, i.lW)({
-          articleId: r.BhN.SERVER_DISCOVERY_GUIDELINES,
+        onDiscoveryGuidelinesClick: () => (0, r.lW)({
+          articleId: c.BhN.SERVER_DISCOVERY_GUIDELINES,
           guildId: e,
-          modalStep: i.tK.AGREE_TO_RULES
+          modalStep: r.tK.AGREE_TO_RULES
         })
       });
       return [{
@@ -34,16 +34,16 @@ function o(e) {
         key: "nonNSFW",
         title: l.intl.string(l.t.iwnCh4),
         body: l.intl.string(l.t.UKFzER),
-        onCheck: () => s(!o),
+        onCheck: () => a(!o),
         checked: o
       }, {
         key: "guidelines",
-        title: c,
+        title: i,
         body: l.intl.string(l.t.u0Go2t),
-        onCheck: () => d(!a),
-        checked: a
+        onCheck: () => u(!s),
+        checked: s
       }]
-    }, [a, e, t, o]),
-    rulesAccepted: t && o && a
+    }, [s, e, t, o]),
+    rulesAccepted: t && o && s
   }
 }

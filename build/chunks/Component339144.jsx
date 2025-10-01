@@ -95,14 +95,14 @@ let D = Chunk647438.memo(function(e) {
       } = e,
       {
         showRefreshedGoLiveModal: Q
-      } = (0, j.a)({
+      } = (0, v.a)({
         location: "Activity Panel",
         autoTrackExposure: false
       }),
       {
         parentAnalyticsLocation: J
       } = (0, m.ZP)(),
-      $ = (0, v.P6)("ActivityPanelGameCard"),
+      $ = (0, j.P6)("ActivityPanelGameCard"),
       ee = R(K, W, H),
       et = i.useCallback(() => {
         var e;
@@ -218,12 +218,12 @@ let D = Chunk647438.memo(function(e) {
         connectionApp: eu,
         ref: X
       }) : null,
-      ev = $ && null != W && (0, f.Z)(W) ? (0, r.jsx)(I.Z, {
+      ej = $ && null != W && (0, f.Z)(W) ? (0, r.jsx)(I.Z, {
         tooltipText: "Report Issue",
         onClick: eo,
         icon: c.xhG
       }) : null,
-      ej = ed && ea && !ec ? (0, r.jsx)(s.J2, {
+      ev = ed && ea && !ec ? (0, r.jsx)(s.J2, {
         title: w.intl.string(w.t.ULvRFR),
         body: w.intl.string(w.t.HJJDr6),
         targetElementRef: X,
@@ -237,9 +237,9 @@ let D = Chunk647438.memo(function(e) {
           ef(false), null != ep.current && (clearTimeout(ep.current), ep.current = null)
         }
       }) : null;
-    return null == eg && null == em && null == eb && null == e_ && null == ey && null == ev ? null : (0, r.jsxs)("div", {
+    return null == eg && null == em && null == eb && null == e_ && null == ey && null == ej ? null : (0, r.jsxs)("div", {
       className: Z.actions,
-      children: [null != ey ? ey : em, eg, null != (t = null != eb ? eb : e_) ? t : eO, ev, ej]
+      children: [null != ey ? ey : em, eg, null != (t = null != eb ? eb : e_) ? t : eO, ej, ev]
     })
   }),
   M = Chunk647438.forwardRef(function(e, t) {

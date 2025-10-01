@@ -105,18 +105,18 @@ function w(e) {
     selectableWebhookChannels: d,
     editedWebhook: w,
     errors: S,
-    canNavigate: I
+    canNavigate: P
   } = e, {
-    application: P,
+    application: I,
     integration: Z,
     webhooks: T
-  } = s, [E, k] = (0, a.Wu)([m.Z], () => [m.Z.can(y.Plq.MANAGE_ROLES, n), null == P.bot || m.Z.canManageUser(y.Plq.MANAGE_GUILD, P.bot.id, n)], [P.bot, n]), A = (0, a.e7)([m.Z], () => m.Z.can(y.Plq.MANAGE_WEBHOOKS, n), [n]), D = r.useCallback(() => {
-    I() && (0, o.h7j)(e => (0, i.jsx)(N, C({
+  } = s, [E, k] = (0, a.Wu)([m.Z], () => [m.Z.can(y.Plq.MANAGE_ROLES, n), null == I.bot || m.Z.canManageUser(y.Plq.MANAGE_GUILD, I.bot.id, n)], [I.bot, n]), A = (0, a.e7)([m.Z], () => m.Z.can(y.Plq.MANAGE_WEBHOOKS, n), [n]), D = r.useCallback(() => {
+    P() && (0, o.h7j)(e => (0, i.jsx)(N, C({
       guild: n,
-      application: P,
+      application: I,
       integration: Z
     }, e)))
-  }, [P, I, n, Z]), R = r.useMemo(() => {
+  }, [I, P, n, Z]), R = r.useMemo(() => {
     let e = [{
       icon: o.T39,
       text: O.intl.formatToPlainString(O.t.gcdJ8P, {
@@ -131,7 +131,7 @@ function w(e) {
     }), e
   }, [Z.id, Z.user]), L = r.useMemo(() => {
     var e;
-    return null != P.bot && (null == (e = Z.scopes) ? true : e.includes(l.x.BOT)) ? (0, i.jsx)(j.Z, {
+    return null != I.bot && (null == (e = Z.scopes) ? true : e.includes(l.x.BOT)) ? (0, i.jsx)(j.Z, {
       guild: n,
       applicationIntegration: s
     }) : (0, i.jsx)(o.Zbd, {
@@ -143,23 +143,23 @@ function w(e) {
         children: O.intl.string(O.t.pfLnzc)
       })
     })
-  }, [P.bot, s, n, Z.scopes]);
+  }, [I.bot, s, n, Z.scopes]);
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(h.Z, {
-      name: P.name,
-      imageSrc: null != (t = P.getIconURL(32)) ? t : b.pK["0"],
+      name: I.name,
+      imageSrc: null != (t = I.getIconURL(32)) ? t : b.pK["0"],
       details: R,
       isHeader: true
-    }), (null == P ? true : P.description) != null ? (0, i.jsx)(p.Z, {
-      userBio: P.description,
+    }), (null == I ? true : I.description) != null ? (0, i.jsx)(p.Z, {
+      userBio: I.description,
       className: _.headerDescription
     }) : null, E ? (0, i.jsx)(u.Z, {
-      application: P,
-      canNavigate: I,
+      application: I,
+      canNavigate: P,
       guildId: n.id
     }) : null, (0, i.jsx)(o.izJ, {
       className: _.headerDivider
-    }), null != P.bot ? (0, i.jsxs)("div", {
+    }), null != I.bot ? (0, i.jsxs)("div", {
       className: _.section,
       children: [(0, i.jsx)(x.Z, {
         icon: (0, i.jsx)(o.wGt, {
@@ -181,7 +181,7 @@ function w(e) {
         editedWebhook: w,
         selectableWebhookChannels: d,
         errors: S,
-        canNavigate: I
+        canNavigate: P
       }) : (0, i.jsx)(o.Zbd, {
         className: _.emptyCard,
         editable: true,

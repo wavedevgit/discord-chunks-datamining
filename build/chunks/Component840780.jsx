@@ -446,7 +446,7 @@ class eN extends Chunk647438.PureComponent {
       } = this.props;
       s()(null != e, "Frame cannot be null during navigation click"), L.Z.updateFrameLayoutMode({
         applicationId: e.applicationId,
-        layoutMode: ev.U.FOCUSED
+        layoutMode: ej.U.FOCUSED
       })
     })
   }
@@ -477,14 +477,14 @@ let ew = (0, Chunk730749.Z)(function(e) {
     d = (0, c.e7)([ee.Z], () => ee.Z.getChannel(u)),
     p = (0, c.e7)([en.Z], () => en.Z.getGuild(null == d ? true : d.guild_id)),
     [h, f] = (0, c.Wu)([J.Z], () => [J.Z.getCurrentUserActiveStream(), J.Z.getStreamerActiveStreamMetadata()]),
-    g = (0, c.e7)([v.Z], () => v.Z.useReducedMotion),
+    g = (0, c.e7)([j.Z], () => j.Z.useReducedMotion),
     m = (0, c.e7)([C.ZP], () => C.ZP.getCurrentEmbeddedActivity()),
     b = (0, c.e7)([k.Z], () => k.Z.getConnectedFrame()),
     _ = (0, c.e7)([en.Z, ei.Z, et.ZP], () => null != s ? B.JL(s, en.Z, ei.Z, false) : null != n && B.h_(et.ZP.getChannels(n), en.Z, ei.Z).length > 0),
     [O] = (0, N.Z)([null != (t = null != f && null != f.id ? f.id : null != a && null != a.id ? a.id : null != m ? m.applicationId : null != b ? b.applicationId : true) ? t : ""]),
     x = (0, c.e7)([R.Z], () => R.Z.getFakeGameData()),
     S = (0, c.e7)([C.ZP], () => C.ZP.getCurrentEmbeddedActivity()),
-    w = (0, E.Z)() && null != S && (0, j.R)(),
+    w = (0, E.Z)() && null != S && (0, v.R)(),
     Z = (0, c.e7)([er.Z], () => (0, F.Z)(er.Z) && (0, ep.isWindows)()),
     A = (0, c.e7)([el.Z], () => null != o ? el.Z.findActivity(o, e => e.type === e_.IIU.PLAYING) : null),
     D = null != h && h.ownerId === o && h.state !== e_.jm8.ENDED,
@@ -504,7 +504,7 @@ let ew = (0, Chunk730749.Z)(function(e) {
       isQuestBarEmpty: ef,
       hasLoadedQuestBar: eg
     } = (0, X.Ws)({
-      location: ej.dr.CONFLICT_CHECKS
+      location: ev.dr.CONFLICT_CHECKS
     }),
     em = eh.Z.useConfig({
       location: "RunningGameCard"

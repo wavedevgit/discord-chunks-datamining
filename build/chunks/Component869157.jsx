@@ -76,7 +76,7 @@ function k(e) {
   a()(null != f, "");
   let v = (0, o.e7)([h.Z], () => h.Z.getSortedRoles(l)),
     [w, S] = r.useState(new Set),
-    I = r.useMemo(() => {
+    P = r.useMemo(() => {
       let e = (0, m.bD)(l),
         t = v.toReversed().reduce((e, t, n) => (e[t.id] = n, e), {});
       return Object.values(u).filter(e => e.canRead).sort((n, i) => {
@@ -108,7 +108,7 @@ function k(e) {
         }
       })
     }, [l, u, v]),
-    P = r.useCallback((e, t) => {
+    I = r.useCallback((e, t) => {
       n({}, [(0, N.rE)(e, t)])
     }, [n]),
     T = r.useCallback((e, t, i) => {
@@ -131,11 +131,11 @@ function k(e) {
       return (null == (t = e.application) ? true : t.id) === E
     })),
     D = (0, o.e7)([g.Z], () => true !== k && g.Z.canShowToggleTooltip(k.id));
-  return I.length > 0 ? I.map(e => (0, i.jsx)(A, {
+  return P.length > 0 ? P.map(e => (0, i.jsx)(A, {
     guild: f,
     commandId: t,
     onChange: t => T(e.id, e.type, t),
-    onRemove: () => P(e.id, e.type),
+    onRemove: () => I(e.id, e.type),
     overwrite: e,
     integration: k,
     canShowMigrationTooltip: D,
@@ -166,12 +166,12 @@ function A(e) {
     C = null == j || null == (n = j.application) || null == (t = n.bot) ? true : t.username,
     N = !x.canWrite || !O,
     k = f.default.getId();
-  O ? x.canWrite || (x.type === p.Kw.USER ? a = x.id === k ? P.intl.string(P.t["1VF/09"]) : P.intl.string(P.t.P1GnER) : x.type === p.Kw.ROLE && (a = P.intl.string(P.t.mcAijY))) : a = null != d ? P.intl.string(P.t.tybdam) : P.intl.string(P.t.z2hjk5);
+  O ? x.canWrite || (x.type === p.Kw.USER ? a = x.id === k ? I.intl.string(I.t["1VF/09"]) : I.intl.string(I.t.P1GnER) : x.type === p.Kw.ROLE && (a = I.intl.string(I.t.mcAijY))) : a = null != d ? I.intl.string(I.t.tybdam) : I.intl.string(I.t.z2hjk5);
   let A = y && null != j && x.id === o.id && true !== C && !x.permission;
   r.useEffect(() => {
     if (A) {
       var e;
-      v.default.track(I.rMx.COMMANDS_MIGRATION_TOOLTIP_VIEWED, E(T({}, (0, u.hH)(o.id)), {
+      v.default.track(P.rMx.COMMANDS_MIGRATION_TOOLTIP_VIEWED, E(T({}, (0, u.hH)(o.id)), {
         application_id: null == j || null == (e = j.application) ? true : e.id,
         location: "toggle"
       }))
@@ -197,8 +197,8 @@ function A(e) {
     }),
     M = (0, i.jsx)(s.J2, {
       targetElementRef: R,
-      title: P.intl.string(P.t.ufFDiI),
-      body: P.intl.format(P.t.pW4Cr6, {
+      title: I.intl.string(I.t.ufFDiI),
+      body: I.intl.format(I.t.pW4Cr6, {
         botName: C,
         link: "https://discord.com/blog/welcome-to-the-new-era-of-discord-apps/"
       }),
@@ -244,7 +244,7 @@ function D(e) {
     className: Z.removeActions,
     children: (0, i.jsx)(c.P3F, {
       className: Z.removeContainer,
-      "aria-label": P.intl.string(P.t.mT0CQE),
+      "aria-label": I.intl.string(I.t.mT0CQE),
       onClick: l,
       children: (0, i.jsx)(c.XHJ, {
         size: "md",

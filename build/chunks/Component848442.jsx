@@ -68,7 +68,7 @@ function Z(e) {
     guildId: t,
     selected: n,
     handleClick: i
-  } = e, u = (0, f.RF)(t, "guild_shop_channel_row"), g = (0, o.e7)([v.Z], () => v.Z.getGuild(t)), O = (null == g ? true : g.features.has(C.oNc.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE)) === true, E = "false" === s.K.get(S.tM, "false"), Z = (0, o.e7)([d.Z], () => d.Z.useReducedMotion);
+  } = e, u = (0, f.RF)(t, "guild_shop_channel_row"), g = (0, o.e7)([j.Z], () => j.Z.getGuild(t)), O = (null == g ? true : g.features.has(C.oNc.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE)) === true, E = "false" === s.K.get(S.tM, "false"), Z = (0, o.e7)([d.Z], () => d.Z.useReducedMotion);
   return (0, r.jsx)(x.m, {
     id: "shop-".concat(t),
     className: l()(I.previewChannelRow, {
@@ -97,7 +97,7 @@ function Z(e) {
       }), n && (0, r.jsx)(c.P3F, {
         className: I.closeButton,
         onClick: e => {
-          if (e.stopPropagation(), (0, b.Q3)(a.z.SERVER_SHOP_PHANTOM_PREVIEW), j.default.track(C.rMx.GUILD_SHOP_PREVIEW_CLICK, w(N({}, (0, p.hH)(t)), {
+          if (e.stopPropagation(), (0, b.Q3)(a.z.SERVER_SHOP_PHANTOM_PREVIEW), v.default.track(C.rMx.GUILD_SHOP_PREVIEW_CLICK, w(N({}, (0, p.hH)(t)), {
               action_taken: S.mz.DISMISS_CHANNEL_ROW
             })), !u || !O) {
             var n;

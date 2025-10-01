@@ -29,7 +29,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk591086 = require("./591086.js");
 
-function I(e) {
+function P(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -48,7 +48,7 @@ function I(e) {
   return e
 }
 
-function P(e, t) {
+function I(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -139,7 +139,7 @@ function Z(e) {
       let {
         default: t
       } = await n.e("64908").then(n.bind(n, 557944));
-      return n => (0, i.jsx)(t, I({
+      return n => (0, i.jsx)(t, P({
         editPermissions: z,
         guildId: j,
         headerText: w.intl.string(w.t["i1c+kZ"]),
@@ -156,7 +156,7 @@ function Z(e) {
       let {
         default: t
       } = await n.e("64908").then(n.bind(n, 557944));
-      return n => (0, i.jsx)(t, I({
+      return n => (0, i.jsx)(t, P({
         editPermissions: z,
         guildId: j,
         hasMemberSearch: true,
@@ -171,7 +171,7 @@ function Z(e) {
     let {
       default: e
     } = await n.e("21897").then(n.bind(n, 303313)), t = R.defaultMemberPermissions;
-    return o.fS(t, u.BO) && (t = C.Plq.ADMINISTRATOR), n => (0, i.jsx)(e, P(I({}, n), {
+    return o.fS(t, u.BO) && (t = C.Plq.ADMINISTRATOR), n => (0, i.jsx)(e, I(P({}, n), {
       defaultMemberPermissions: t
     }))
   }), [R]), V = D - N._n, J = V >= 0, Y = [{
@@ -215,7 +215,7 @@ function Z(e) {
           tooltipClassName: S.tooltip,
           text: n,
           shouldShow: null != n,
-          children: t => (0, i.jsx)(c.zxk, P(I({}, t), {
+          children: t => (0, i.jsx)(c.zxk, I(P({}, t), {
             variant: "secondary",
             disabled: J || !M,
             onClick: e.buttonClick,
@@ -243,8 +243,8 @@ function Z(e) {
 
 function T(e) {
   let t = (0, j.w)(e);
-  return P(I({}, t), {
-    results: t.results.map(e => P(I({}, e), {
+  return I(P({}, t), {
+    results: t.results.map(e => I(P({}, e), {
       type: d.Kw.CHANNEL
     }))
   })
@@ -252,10 +252,10 @@ function T(e) {
 
 function E(e) {
   let t = (0, v.U)(e);
-  return P(I({}, t), {
-    results: t.results.roles.map(e => P(I({}, e), {
+  return I(P({}, t), {
+    results: t.results.roles.map(e => I(P({}, e), {
       type: d.Kw.ROLE
-    })).concat(t.results.members.map(e => P(I({}, e), {
+    })).concat(t.results.members.map(e => I(P({}, e), {
       type: d.Kw.USER
     })))
   })

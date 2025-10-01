@@ -62,10 +62,8 @@ function _(e) {
     onClose: n,
     popoutPosition: "bottom",
     popoutAlign: "right",
-    children: (e, t, n, s, d) => (0, r.jsx)(o.U, {
-      location: "bookmarks-button",
-      targetElementRef: d,
-      children: (0, r.jsx)(a.JO, f(u({}, n), {
+    children: (e, t, n, s, d) => (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(a.JO, f(u({}, n), {
         ref: d,
         className: c,
         onClick: e,
@@ -74,7 +72,10 @@ function _(e) {
         tooltip: t ? null : l.intl.string(l.t["2pAkDA"]),
         selected: t,
         showBadge: s
-      }))
+      })), (0, r.jsx)(o.U, {
+        location: "bookmarks-button",
+        targetElementRef: d
+      })]
     })
   })
 }

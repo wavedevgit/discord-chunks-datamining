@@ -2,63 +2,49 @@
 /** chunk id: 388035, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  U: () => g
+  U: () => f
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk704215 = require("./704215.js"),
-  Chunk755721 = require("./755721.js"),
-  Chunk481060 = require("./481060.js"),
+  Chunk907862 = require("./907862.js"),
   Chunk243778 = require("./243778.jsx"),
-  Chunk970731 = require("./970731.jsx"),
   Chunk2818 = require("./2818.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk684642 = require("./684642.js"),
   Chunk235810 = require("./235810.js");
-let p = Chunk704215.z.FOR_LATER_POPOUT_COACHMARK,
-  h = () => (0, Chunk951288.jsx)("div", {
-    className: Chunk684642.imageContainer,
-    children: (0, Chunk951288.jsx)("img", {
-      className: Chunk684642.image,
-      src: Chunk235810,
-      alt: ""
-    })
-  }),
-  m = e => (0, r.jsx)(l.ZP, {
-    className: f.container,
-    asset: (0, r.jsx)(h, {}),
-    header: d.intl.string(d.t.qPbFKy),
-    content: d.intl.string(d.t.URrJq6),
-    buttonCTA: d.intl.string(d.t["NX+WJC"]),
-    buttonProps: {
-      color: a.Tt.WHITE,
-      innerClassName: f.primaryButton
-    },
-    onClick: () => e(u.L.USER_DISMISS),
-    markAsDismissed: e,
-    caretPosition: l.DF.TOP_RIGHT
-  });
+let d = Chunk704215.z.FOR_LATER_POPOUT_COACHMARK;
 
-function g(e) {
+function f(e) {
   let {
     location: t,
-    children: n,
-    targetElementRef: i
+    targetElementRef: n
   } = e, {
-    enabled: a,
-    inInbox: l
-  } = c.Z.useExperiment({
+    enabled: i,
+    inInbox: f
+  } = s.Z.useExperiment({
     location: "ForLaterCoachmarkWeb"
   }, {
     autoTrackExposure: false
-  }), u = t === (l ? "inbox-button" : "bookmarks-button"), d = a && u ? [p] : [], [f, _] = (0, s.US)(d, true);
-  return f !== p ? n : (0, r.jsx)(o.yRy, {
-    targetElementRef: i,
-    renderPopout: () => m(_),
+  }), _ = t === (f ? "inbox-button" : "bookmarks-button"), p = i && _ ? [d] : [], [h, m] = (0, o.US)(p, true);
+  return h !== d ? null : (0, r.jsx)(a.J2, {
+    targetElementRef: n,
+    gradientColor: "purple",
     position: "bottom",
     align: "right",
-    animation: o.yRy.Animation.TRANSLATE,
     shouldShow: true,
-    children: () => n
+    caretConfig: {
+      align: "end"
+    },
+    onRequestClose: () => m(l.L.USER_DISMISS),
+    title: c.intl.string(c.t.qPbFKy),
+    body: c.intl.string(c.t.URrJq6),
+    actions: [{
+      text: c.intl.string(c.t["NX+WJC"]),
+      onClick: () => m(l.L.USER_DISMISS)
+    }],
+    graphic: {
+      type: "image",
+      src: u
+    }
   })
 }

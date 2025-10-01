@@ -1,7 +1,7 @@
 /** Chunk was on 58511 **/
 /** chunk id: 335049, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => P
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -59,7 +59,7 @@ function S(e, t) {
   }), e
 }
 
-function I(e) {
+function P(e) {
   let {
     guild: t,
     id: l,
@@ -81,7 +81,7 @@ function I(e) {
   }, [l]);
   switch (a) {
     case p.Kw.CHANNEL:
-      return (0, i.jsx)(P, {
+      return (0, i.jsx)(I, {
         guild: t,
         id: l,
         isLocked: o,
@@ -107,7 +107,7 @@ function I(e) {
   }
 }
 
-function P(e) {
+function I(e) {
   let {
     guild: t,
     id: n,

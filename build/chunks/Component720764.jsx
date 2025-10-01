@@ -32,8 +32,8 @@ function j(e) {
       canNavigate: N
     } = e,
     w = (0, d.ZP)(),
-    [S, I] = r.useState(null),
-    [P, Z] = r.useState(null);
+    [S, P] = r.useState(null),
+    [I, Z] = r.useState(null);
   if (null != j) t = j;
   else {
     let e = Object.values(O);
@@ -57,7 +57,7 @@ function j(e) {
           body: g.intl.string(g.t["/4TwKS"])
         }), null
       });
-      null != e && (Z(e.id), I(e))
+      null != e && (Z(e.id), P(e))
     }
   }, [N, t, n]);
   (0, c.ZP)(() => {

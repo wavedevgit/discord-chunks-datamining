@@ -88,8 +88,8 @@ function O(e) {
     iconSize: b,
     size: O,
     grow: y,
-    className: v,
-    onError: j
+    className: j,
+    onError: v
   } = e, {
     onActivate: x,
     isLoading: C,
@@ -100,8 +100,8 @@ function O(e) {
     reason: N
   } = (0, c.Z)(t, n, P);
   return i.useEffect(() => {
-    null == j || j(E)
-  }, [E, j]), (0, r.jsx)(s.ua7, {
+    null == v || v(E)
+  }, [E, v]), (0, r.jsx)(s.ua7, {
     delay: 100,
     "aria-label": null != N ? N : P ? f.intl.string(h.default.TZsu1d) : true,
     text: null != N ? N : P ? (0, r.jsx)(_, {
@@ -114,7 +114,7 @@ function O(e) {
         className: o()(g.secondaryButton, {
           [g.buttonWrapper]: y,
           [g.noGrow]: !y
-        }, v),
+        }, j),
         children: (() => {
           let {
             text: e,

@@ -158,7 +158,7 @@ let L = Chunk647438.memo(function(e) {
     isSelectedVoice: h,
     isLast: T,
     withGuildIcon: L
-  } = e, k = (0, s.e7)([v.ZP], () => v.ZP.getVoiceStatesForChannel(t), [t]), U = (0, s.e7)([y.Z], () => y.Z.hasVideo(t.id)), {
+  } = e, k = (0, s.e7)([j.ZP], () => j.ZP.getVoiceStatesForChannel(t), [t]), U = (0, s.e7)([y.Z], () => y.Z.hasVideo(t.id)), {
     unread: G,
     mentionCount: B,
     isMentionLowImportance: F
@@ -166,7 +166,7 @@ let L = Chunk647438.memo(function(e) {
     unread: _.ZP.hasUnread(t.id),
     mentionCount: _.ZP.getMentionCount(t.id),
     isMentionLowImportance: _.ZP.getIsMentionLowImportance(t.id)
-  })), V = (0, s.e7)([g.Z], () => g.Z.isMuted(t.id)), H = (0, j.p)({
+  })), V = (0, s.e7)([g.Z], () => g.Z.isMuted(t.id)), H = (0, v.p)({
     location: "GuildSidebarThreadListEntry"
   }), z = (0, s.e7)([O.default], () => O.default.getUser(t.ownerId)), W = i.useCallback(e => {
     (0, m.ok)(t, !e.shiftKey, I.on.CHANNEL_LIST)

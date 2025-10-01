@@ -1,51 +1,51 @@
-/** Chunk was on 39173 **/
-/** chunk id: 653255, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 53448 **/
+/** chunk id: 653255, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => m
 });
-var r, i, Chunk442837 = require("./442837.js"),
+var n, l, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk358085 = require("./358085.js"),
   Chunk998502 = require("./998502.js"),
   Chunk869614 = require("./869614.js"),
   Chunk281083 = require("./281083.js"),
   Chunk672598 = require("./672598.js");
-let f = false,
-  v = true,
-  h = false;
-class p extends(i = Chunk442837.ZP.Store) {
+let p = false,
+  f = true,
+  _ = false;
+class h extends(l = Chunk442837.ZP.Store) {
   initialize() {
     !Chunk358085.isPlatformEmbedded || __OVERLAY__ || Chunk998502.ZP.getGPUDriverVersions().then(e => {
-      f = (0, c.Z)(e), v = (0, s.Z)(e), h = (0, d.Z)(e), this.emitChange()
+      p = (0, d.Z)(e), f = (0, c.Z)(e), _ = (0, s.Z)(e), this.emitChange()
     })
   }
   get GPUDriversOutdated() {
-    return f
+    return p
   }
   get canUseHardwareAcceleration() {
-    return v
+    return f
   }
   get problematicGPUDriver() {
-    return h
+    return _
   }
   getState() {
     return {
-      GPUDriversOutdated: f,
-      canUseHardwareAcceleration: v,
-      problematicGPUDriver: h
+      GPUDriversOutdated: p,
+      canUseHardwareAcceleration: f,
+      problematicGPUDriver: _
     }
   }
-}(r = "displayName") in p ? Object.defineProperty(p, r, {
+}(n = "displayName") in h ? Object.defineProperty(h, n, {
   value: "StreamingCapabilitiesStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : p[r] = "StreamingCapabilitiesStore";
-let m = new p(Chunk570140.Z, {
+}) : h[n] = "StreamingCapabilitiesStore";
+let m = new h(Chunk570140.Z, {
   OVERLAY_INITIALIZE: function(e) {
     let {
       streamingCapabilitiesStoreState: t
     } = e;
-    f = t.GPUDriversOutdated, v = t.canUseHardwareAcceleration
+    p = t.GPUDriversOutdated, f = t.canUseHardwareAcceleration
   }
 })

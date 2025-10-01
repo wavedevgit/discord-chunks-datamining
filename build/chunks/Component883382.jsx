@@ -2,12 +2,13 @@
 /** chunk id: 883382, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk924628 = require("./924628.js"),
+  Chunk915009 = require("./915009.js"),
   Chunk480294 = require("./480294.js"),
   Chunk63063 = require("./63063.js"),
   Chunk838436 = require("./838436.jsx"),
@@ -17,18 +18,19 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function h() {
+function m() {
   let e = (0, Chunk442837.cj)([Chunk480294.Z], () => Chunk480294.Z.hasConsented(Chunk981631.pjP.PERSONALIZATION)),
     [t, n] = Chunk647438.useState(module),
-    h = e => {
-      e ? (0, o.g)([_.pjP.PERSONALIZATION], []).catch(d.S).then(() => n(true)) : (0, d.V)({
-        header: p.intl.string(p.t["9SNpzs"]),
-        confirmText: p.intl.string(p.t["9g5UGx"]),
-        cancelText: p.intl.string(p.t["+ZLPw8"]),
+    m = (0, Chunk915009.LN)(),
+    g = e => {
+      e ? (0, o.g)([p.pjP.PERSONALIZATION], []).catch(f.S).then(() => n(true)) : (0, f.V)({
+        header: h.intl.string(h.t["9SNpzs"]),
+        confirmText: h.intl.string(h.t["9g5UGx"]),
+        cancelText: h.intl.string(h.t["+ZLPw8"]),
         onConfirm: () => {
-          (0, o.g)([], [_.pjP.PERSONALIZATION]).catch(d.S).then(() => n(false))
+          (0, o.g)([], [p.pjP.PERSONALIZATION]).catch(f.S).then(() => n(false))
         },
-        body: p.intl.string(p.t.gJvDDg)
+        body: h.intl.string(h.t.gJvDDg)
       })
     };
   return (0, Chunk951288.jsx)(Chunk838436.U, {
@@ -39,7 +41,8 @@ function h() {
         helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.DATA_USED_FOR_RECOMMENDED)
       }),
       value: exports,
-      onChange: h
+      onChange: g,
+      disabled: m
     })
   })
 }

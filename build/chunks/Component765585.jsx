@@ -25,8 +25,8 @@ let b = Chunk647438.forwardRef(function(e, t) {
     headerClassName: _,
     contentClassName: O,
     tryItText: y,
-    dismissText: v,
-    onTryFeature: j,
+    dismissText: j,
+    onTryFeature: v,
     onClose: x,
     className: C,
     inlineArt: E = false,
@@ -112,12 +112,12 @@ let b = Chunk647438.forwardRef(function(e, t) {
       }), (0, r.jsx)("div", {
         ref: H,
         className: F || !P ? m.buttonContainerVertical : m.buttonContainerHorizontal,
-        children: null != j ? (0, r.jsxs)(r.Fragment, {
+        children: null != v ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(a.zx, {
             className: m.button,
             size: B,
             onClick: e => {
-              null == x || x(e), j(e), W(f.L.PRIMARY)
+              null == x || x(e), v(e), W(f.L.PRIMARY)
             },
             color: null != G ? G : S || A ? a.zx.Colors.BRAND_INVERTED : a.zx.Colors.WHITE,
             children: null != y ? y : g.intl.string(g.t.IHf1RE)
@@ -129,7 +129,7 @@ let b = Chunk647438.forwardRef(function(e, t) {
             },
             color: S || A ? a.zx.Colors.WHITE : a.zx.Colors.BRAND,
             look: S || A ? a.zx.Looks.LINK : a.zx.Looks.FILLED,
-            children: null != v ? v : g.intl.string(g.t.om7Ovr)
+            children: null != j ? j : g.intl.string(g.t.om7Ovr)
           })]
         }) : (0, r.jsx)(a.zx, {
           className: m.button,

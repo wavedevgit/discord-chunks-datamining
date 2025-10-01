@@ -84,8 +84,8 @@ class v extends(i = Chunk647438.PureComponent) {
       imageClassName: N,
       iconClassName: w,
       iconWrapperClassName: S,
-      icon: I,
-      hideSize: P,
+      icon: P,
+      hideSize: I,
       imageStyle: Z,
       showRemoveButton: T,
       maxFileSizeBytes: E,
@@ -107,7 +107,7 @@ class v extends(i = Chunk647438.PureComponent) {
         }),
         children: [i, _ && (0, Chunk951288.jsx)("div", {
           className: o()(Chunk270956.imageUploaderIcon, Chunk270956.imageUploaderIconDisabled, w),
-          children: I
+          children: P
         })]
       })
     });
@@ -115,7 +115,7 @@ class v extends(i = Chunk647438.PureComponent) {
       className: Chunk270956.removeButton,
       onClick: this.handleRemove,
       children: Chunk388032.intl.string(Chunk388032.t.N86XcH)
-    }) : P || (l = (0, Chunk951288.jsx)("small", {
+    }) : I || (l = (0, Chunk951288.jsx)("small", {
       className: Chunk270956.sizeInfo,
       children: Chunk388032.intl.format(Chunk388032.t.AH4c7e, {
         size: Chunk981631.IXf
@@ -155,7 +155,7 @@ class v extends(i = Chunk647438.PureComponent) {
             children: Chunk512722
           }), O && (0, Chunk951288.jsx)(j, {
             className: w,
-            icon: I
+            icon: P
           })]
         })
       }), T ? Chunk647438 : null]

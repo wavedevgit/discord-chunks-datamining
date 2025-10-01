@@ -30,7 +30,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk516941 = require("./516941.js"),
   Chunk197571 = require("./197571.js");
 
-function P(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -68,7 +68,7 @@ function Z(e) {
       l.syncing || (0, p.h7j)(e => {
         var t, n;
         let r = 0 === l.expire_behavior ? w.intl.string(w.t["6kpw4u"]) : w.intl.string(w.t.fQUQIC);
-        return (0, i.jsx)(p.ConfirmModal, (t = P({}, e), n = n = {
+        return (0, i.jsx)(p.ConfirmModal, (t = I({}, e), n = n = {
           header: w.intl.string(w.t.emx3lJ),
           confirmText: r,
           cancelText: w.intl.string(w.t["ETE/oK"]),
@@ -222,7 +222,7 @@ function Z(e) {
         children: [(0, i.jsxs)(g.Z.Child, {
           basis: "50%",
           children: [(0, i.jsx)(p.vwX, {
-            className: I.marginBottom8,
+            className: P.marginBottom8,
             children: w.intl.string(w.t.eBtNBQ)
           }), (0, i.jsx)(p.Text, {
             className: S.syncedRole,
@@ -233,7 +233,7 @@ function Z(e) {
         }), (0, i.jsxs)(g.Z.Child, {
           basis: "50%",
           children: [(0, i.jsx)(p.vwX, {
-            className: I.marginBottom8,
+            className: P.marginBottom8,
             children: n
           }), (0, i.jsxs)(g.Z, {
             justify: g.Z.Justify.BETWEEN,
@@ -284,7 +284,7 @@ function Z(e) {
         children: [(0, i.jsxs)(g.Z.Child, {
           basis: "50%",
           children: [(0, i.jsx)(p.vwX, {
-            className: I.marginBottom8,
+            className: P.marginBottom8,
             children: n
           }), (0, i.jsx)(p.q4e, {
             placeholder: n,
@@ -302,7 +302,7 @@ function Z(e) {
         }), (0, i.jsxs)(g.Z.Child, {
           basis: "50%",
           children: [(0, i.jsx)(p.vwX, {
-            className: I.marginBottom8,
+            className: P.marginBottom8,
             children: w.intl.string(w.t.uiXMo6)
           }), (0, i.jsx)(p.q4e, {
             placeholder: w.intl.string(w.t.uiXMo6),
@@ -342,7 +342,7 @@ function Z(e) {
         direction: g.Z.Direction.VERTICAL,
         children: [(0, i.jsx)(u.$q, {
           type: u.M0.INVERTED,
-          className: a()(I.marginTop20, I.marginBottom8),
+          className: a()(P.marginTop20, P.marginBottom8),
           value: t.enable_emoticons,
           disabled: t.syncing,
           onChange: e => {
@@ -359,7 +359,7 @@ function Z(e) {
           className: S.__invalid_twitchEmojis,
           children: n.map((e, t) => (0, i.jsx)(p.ua7, {
             text: e.name,
-            children: t => (0, i.jsx)("img", P({
+            children: t => (0, i.jsx)("img", I({
               alt: w.intl.formatToPlainString(w.t.n6ZZn5, {
                 name: e.name
               }),

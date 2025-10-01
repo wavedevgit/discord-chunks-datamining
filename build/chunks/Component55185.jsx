@@ -22,7 +22,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk87587 = require("./87587.js"),
   Chunk354810 = require("./354810.js");
 
-function v(e) {
+function j(e) {
   let {
     closePopout: t
   } = e;
@@ -43,7 +43,7 @@ function v(e) {
   })
 }
 
-function j(e) {
+function v(e) {
   let {
     showCurrentGame: t,
     shouldShowStatus: n = false,
@@ -139,7 +139,7 @@ function C(e) {
       })
     }), (0, i.jsx)("div", {
       className: O.toggleContainerWrapper,
-      children: (0, i.jsx)(j, {
+      children: (0, i.jsx)(v, {
         showCurrentGame: n,
         shouldShowCustomizeLink: true,
         closePopout: t
@@ -161,7 +161,7 @@ function E(e) {
       children: _.intl.format(b.default["vtp/IS"], {
         learnMoreLink: h.Z.getArticleURL(m.BhN.ACTIVITY_STATUS_SETTINGS)
       })
-    }), (0, i.jsx)(v, {
+    }), (0, i.jsx)(j, {
       closePopout: t
     })]
   })
@@ -182,7 +182,7 @@ function S(e) {
       })
     }), (0, i.jsx)("div", {
       className: O.toggleContainerWrapper,
-      children: (0, i.jsx)(j, {
+      children: (0, i.jsx)(v, {
         showCurrentGame: n,
         shouldShowStatus: true,
         closePopout: t
@@ -198,7 +198,7 @@ function P(e) {
     showLinkToSettings: r
   } = (0, f.D)("popout");
   return (0, i.jsxs)(x, {
-    children: [(0, i.jsx)(j, {
+    children: [(0, i.jsx)(v, {
       showCurrentGame: n,
       closePopout: t
     }), (0, i.jsx)(c.izJ, {
@@ -231,7 +231,7 @@ function I(e) {
       children: _.intl.format(b.default["vtp/IS"], {
         learnMoreLink: h.Z.getArticleURL(m.BhN.ACTIVITY_STATUS_SETTINGS)
       })
-    }), (0, i.jsx)(v, {
+    }), (0, i.jsx)(j, {
       closePopout: t
     })]
   })
@@ -244,7 +244,7 @@ function N(e) {
     showLinkToSettings: r
   } = (0, f.D)("popout");
   return (0, i.jsxs)(x, {
-    children: [(0, i.jsx)(j, {
+    children: [(0, i.jsx)(v, {
       showCurrentGame: n,
       shouldShowStatus: true,
       closePopout: t

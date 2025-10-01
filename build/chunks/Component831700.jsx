@@ -182,8 +182,8 @@ class en extends Chunk98597.ZP {
       canReorderChannel: m,
       canMoveMembers: b,
       showTutorial: y,
-      hasActiveEvent: v,
-      embeddedApps: j,
+      hasActiveEvent: j,
+      embeddedApps: v,
       isSubscriptionGated: x,
       isFavoriteSuggestion: C,
       withGuildIcon: E,
@@ -234,9 +234,9 @@ class en extends Chunk98597.ZP {
                 ref: this.channelItemRef,
                 className: J.iconVisibility,
                 iconClassName: o()({
-                  [J.iconLive]: v || S
+                  [J.iconLive]: j || S
                 }),
-                hasActiveEvent: v,
+                hasActiveEvent: j,
                 channel: e,
                 selected: !C && t,
                 connected: n,
@@ -258,12 +258,12 @@ class en extends Chunk98597.ZP {
                   unread: i,
                   mentionCount: a,
                   userCount: Z,
-                  embeddedActivitiesCount: j.length,
+                  embeddedActivitiesCount: v.length,
                   isSubscriptionGated: x
                 }),
                 "aria-describedby": (0, O.Z)({
                   channel: e,
-                  embeddedApps: j
+                  embeddedApps: v
                 }),
                 withGuildIcon: E
               }, p), {
@@ -311,7 +311,7 @@ class en extends Chunk98597.ZP {
         shouldShowGuildVerificationPopout: true
       });
       let a = l && o > 0;
-      a && u.Z.updateChatOpen(n.id, true), v.Z.handleVoiceConnect({
+      a && u.Z.updateChatOpen(n.id, true), j.Z.handleVoiceConnect({
         channel: n,
         connected: t,
         needSubscriptionToAccess: i,
@@ -454,11 +454,11 @@ function ei(e) {
       unverifiedAccount: !r.canChat
     }
   }), h = (0, a.e7)([B.Z], () => B.Z.hasVideo(n.id)), g = (0, f.ZP)(n), _ = (0, y.ZP)(n), O = (0, P.qY)(n.id), {
-    enabled: v
+    enabled: j
   } = m.W.useExperiment({
     guildId: t.id,
     location: "VoiceChannel"
-  }), j = (0, a.e7)([b.Z], () => !!v && null != b.Z.getStartTime(n), [n, v]), {
+  }), v = (0, a.e7)([b.Z], () => !!j && null != b.Z.getStartTime(n), [n, j]), {
     isSubscriptionGated: C,
     needSubscriptionToAccess: E
   } = (0, S.Z)(n.id), I = (0, x.Z)(), w = (0, a.e7)([G.ZP], () => G.ZP.isFavorite(t.id, n.id)), T = e.connected || (null == I ? true : I.channelId) === n.id, {
@@ -502,6 +502,6 @@ function ei(e) {
     allowChannelTopic: R,
     enableOpenTIVForPing: M,
     hasChannelInfo: null != F,
-    hasStartTime: j
+    hasStartTime: v
   }))
 }

@@ -1,7 +1,6 @@
-/** Chunk was on web.js **/
-/** chunk id: 706371, original params: e,t,n (module,exports,re quire) **/
-"use strict";
-var r = {
+/** Chunk was on 53448 **/
+/** chunk id: 164208, original params: e,t,r (module,exports,require) **/
+require.r(module.exports = {
   colorBrand: "colorBrand__675aa",
   colorPrimary: "colorPrimary__675aa",
   upsellTooltipWrapper: "upsellTooltipWrapper__675aa",
@@ -22,5 +21,4 @@ var r = {
   upsellButtonsStacked: "upsellButtonsStacked__675aa",
   fullWidthImage: "fullWidthImage__675aa",
   content: "content__675aa"
-};
-require.r(module.exports = r)
+})

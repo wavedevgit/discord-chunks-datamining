@@ -46,10 +46,8 @@ function E(e) {
     popoutAlign: "right",
     children: (e, t, n, i) => {
       var o, p;
-      return (0, r.jsx)(f.U, {
-        location: "inbox-button",
-        targetElementRef: y,
-        children: (0, r.jsx)(c.u, {
+      return (0, r.jsxs)(r.Fragment, {
+        children: [(0, r.jsx)(c.u, {
           targetElementRef: y,
           shouldShow: !t,
           text: _.intl.string(_.t.GSmTKC),
@@ -101,7 +99,10 @@ function E(e) {
           })(Object(p)).forEach(function(e) {
             Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(p, e))
           }), o))
-        })
+        }), (0, r.jsx)(f.U, {
+          location: "inbox-button",
+          targetElementRef: y
+        })]
       })
     }
   })
