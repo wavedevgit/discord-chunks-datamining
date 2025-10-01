@@ -25,7 +25,7 @@ let h = e => {
   } = e, n = (0, c.Nd)(), h = null == n ? true : n.tab, {
     isPurchased: m,
     isPartiallyOwnedBundle: b
-  } = (0, d.L)(t), E = (0, l.e7)([o.Z], () => o.Z.getCategoryForProduct(t.skuId)), v = (0, l.e7)([a.default], () => a.default.getCurrentUser()), S = s.ZP.canUseCollectibles(v), x = (0, g.Iw)(t), {
+  } = (0, d.L)(t), E = (0, l.e7)([o.Z], () => o.Z.getCategoryForProduct(t.skuId)), v = (0, l.e7)([s.default], () => s.default.getCurrentUser()), S = a.ZP.canUseCollectibles(v), x = (0, g.Iw)(t), {
     isOrbExclusive: O
   } = (0, p.Ip)({
     product: t,

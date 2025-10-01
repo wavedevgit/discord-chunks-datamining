@@ -1,5 +1,5 @@
 /** Chunk was on 56848 **/
-/** chunk id: 384166, original params: e,t,r (module,exports,require) **/
+/** chunk id: 384166, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
 }), require("./388685.js"), require("./361932.js"), require("./187205.js");
@@ -26,7 +26,7 @@ function j(e) {
   let {
     className: t
   } = e, {
-    trackUserProfileEditSaved: r
+    trackUserProfileEditSaved: n
   } = (0, f.KZ)(), [l, j] = i.useState(false), P = (0, o.Wu)([p.Z], () => {
     var e;
     return null != (e = p.Z.getSaveablePendingWidgets()) ? e : []
@@ -72,40 +72,40 @@ function j(e) {
           var t;
           return null != (t = e.tags) ? t : []
         }).map(e => e.toString()), t.numCharactersCommentary = e.games.reduce((e, t) => {
-          var r, n;
-          return e + (null != (n = null == (r = t.comment) ? true : r.length) ? n : 0)
-        }, 0)), r(t)
+          var n, r;
+          return e + (null != (r = null == (n = t.comment) ? true : n.length) ? r : 0)
+        }, 0)), n(t)
       }
-      for (let e of S) r({
+      for (let e of S) n({
         widgetEdited: e.type,
         isWidgetRemoved: true
       })
-    }, [P, x, S, r]),
-    N = i.useCallback(() => {
+    }, [P, x, S, n]),
+    k = i.useCallback(() => {
       h.Z.clearPendingWidgets()
     }, []);
-  return C((e, r) => r ? (0, n.jsx)(s.animated.div, {
+  return C((e, n) => n ? (0, r.jsx)(s.animated.div, {
     className: t,
     style: e,
-    children: (0, n.jsxs)("section", {
+    children: (0, r.jsxs)("section", {
       className: a()(O.content, {
         [O.emphasized]: l
       }),
       "aria-label": y.intl.string(y.t["odDw+/"]),
-      children: [(0, n.jsx)(c.Text, {
+      children: [(0, r.jsx)(c.Text, {
         variant: "text-md/medium",
         color: "text-primary",
         className: O.message,
         children: y.intl.string(y.t["/lQiX1"])
-      }), (0, n.jsxs)("div", {
+      }), (0, r.jsxs)("div", {
         className: O.actions,
-        children: [(0, n.jsx)(c.zxk, {
+        children: [(0, r.jsx)(c.zxk, {
           size: "sm",
           variant: "secondary",
           text: y.intl.string(y.t.yBZMsb),
-          onClick: N,
+          onClick: k,
           disabled: !I || w
-        }), (0, n.jsx)(c.zxk, {
+        }), (0, r.jsx)(c.zxk, {
           size: "sm",
           variant: "primary",
           text: y.intl.string(y.t.R3BPHx),

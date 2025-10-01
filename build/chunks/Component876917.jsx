@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk241822 = require("./241822.js");
 let u = e => {
   let {
-    profileEffectId: t,
+    skuId: t,
     isHovering: r,
     forCollectedModal: i = false,
     isPurchased: u,
@@ -29,7 +29,7 @@ let u = e => {
         clearTimeout(e)
       }
     }
-  }, [p, i]), null != t) ? (0, a.jsxs)("div", {
+  }, [p, i]), null == t) ? null : (0, a.jsxs)("div", {
     className: l()(c.previewContainer, {
       [c.previewContainerAnimation]: i,
       [c.previewContainerSetHeight]: !f
@@ -42,7 +42,7 @@ let u = e => {
     }), !v && (0, a.jsx)("div", {
       className: u ? c.purchasedEffect : true,
       children: (0, a.jsx)(s.Z, {
-        profileEffectId: t,
+        skuId: t,
         useThumbnail: true,
         autoPlay: i,
         restartMethod: o.Q.FromStart,
@@ -53,5 +53,5 @@ let u = e => {
         shopPreview: true
       })
     })]
-  }) : null
+  })
 }

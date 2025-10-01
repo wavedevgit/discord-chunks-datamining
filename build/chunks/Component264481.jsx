@@ -1,5 +1,5 @@
 /** Chunk was on 56848 **/
-/** chunk id: 264481, original params: e,t,r (module,exports,require) **/
+/** chunk id: 264481, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   P9: () => I,
   Uf: () => E,
@@ -31,21 +31,21 @@ let b = [() => Chunk388032.intl.string(Chunk388032.t.madJdH), () => Chunk388032.
 function P(e) {
   let {
     heading: t,
-    bodyText: r,
+    bodyText: n,
     children: i
   } = e;
-  return (0, n.jsxs)("div", {
+  return (0, r.jsxs)("div", {
     className: v.empty,
-    children: [(0, n.jsxs)("div", {
+    children: [(0, r.jsxs)("div", {
       className: v.textContainer,
-      children: [(0, n.jsx)(a.X6q, {
+      children: [(0, r.jsx)(a.X6q, {
         variant: "heading-md/medium",
         color: "header-primary",
         children: t
-      }), (0, n.jsx)(a.Text, {
+      }), (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
-        children: r
+        children: n
       })]
     }), i]
   })
@@ -78,10 +78,10 @@ function S() {
 function I(e) {
   let {
     user: t,
-    guildId: r,
+    guildId: n,
     channelId: o,
     onClose: c
-  } = e, u = g.ZP.getName(r, o, t), d = m.intl.formatToPlainString(m.t.sjSitL, {
+  } = e, u = g.ZP.getName(n, o, t), d = m.intl.formatToPlainString(m.t.sjSitL, {
     name: u
   }), [f] = i.useState(() => {
     var e;
@@ -91,12 +91,12 @@ function I(e) {
       recipientIds: t.id
     }), null == c || c()
   }, [t.id, c]);
-  return (0, n.jsx)(P, {
+  return (0, r.jsx)(P, {
     heading: d,
     bodyText: f,
-    children: (0, n.jsx)("div", {
+    children: (0, r.jsx)("div", {
       className: v.buttonRow,
-      children: (0, n.jsx)(h.O1, {
+      children: (0, r.jsx)(h.O1, {
         icon: a.kBi,
         text: m.intl.string(m.t["g33r/P"]),
         onClick: p
@@ -109,15 +109,15 @@ function w() {
   let e = (0, Chunk410030.ZP)();
   return (0, Chunk951288.jsx)("div", {
     className: Chunk835540.connectionPlatforms,
-    children: j.map((t, r) => {
+    children: j.map((t, n) => {
       let i = c.Z.get(t);
       if (null == i) return null;
       let l = (0, a.wjy)(e) ? i.icon.darkPNG : i.icon.lightPNG;
-      return (0, n.jsx)("img", {
+      return (0, r.jsx)("img", {
         src: l,
         alt: i.name,
         className: v.connectionIcon
-      }, r)
+      }, n)
     })
   })
 }
@@ -138,42 +138,42 @@ function E(e) {
     (0, a.ZDy)(async () => {
       let {
         default: e
-      } = await r.e("82077").then(r.bind(r, 953848));
-      return t => (0, n.jsx)(e, function(e) {
+      } = await n.e("82077").then(n.bind(n, 953848));
+      return t => (0, r.jsx)(e, function(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {},
-            n = Object.keys(r);
-          "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(r, e).enumerable
-          }))), n.forEach(function(t) {
-            var n;
-            n = r[t], t in e ? Object.defineProperty(e, t, {
-              value: n,
+          var n = null != arguments[t] ? arguments[t] : {},
+            r = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(n, e).enumerable
+          }))), r.forEach(function(t) {
+            var r;
+            r = n[t], t in e ? Object.defineProperty(e, t, {
+              value: r,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[t] = n
+            }) : e[t] = r
           })
         }
         return e
       }({}, t))
     })
   }, []);
-  return (0, n.jsxs)(P, {
+  return (0, r.jsxs)(P, {
     heading: m.intl.string(m.t.VB6LWV),
     bodyText: m.intl.string(m.t.KpjsU1),
-    children: [(0, n.jsx)(w, {}), (0, n.jsxs)("div", {
+    children: [(0, r.jsx)(w, {}), (0, r.jsxs)("div", {
       className: v.buttonRow,
-      children: [(0, n.jsx)(h.O1, {
+      children: [(0, r.jsx)(h.O1, {
         text: m.intl.string(m.t["/Hl24e"]),
         onClick: s
-      }), (0, n.jsx)(h.O1, {
+      }), (0, r.jsx)(h.O1, {
         text: m.intl.string(m.t.GTCx0t),
         onClick: o
       })]
-    }), l && (0, n.jsx)("div", {
+    }), l && (0, r.jsx)("div", {
       className: v.reportMissingActivity,
-      children: (0, n.jsx)(a.Avr, {
+      children: (0, r.jsx)(a.Avr, {
         text: m.intl.string(m.t["+huUnJ"]),
         onClick: c,
         size: "sm"

@@ -2,20 +2,20 @@
 /** chunk id: 932083, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => s
+  Z: () => a
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk481060 = require("./481060.js"),
   Chunk29121 = require("./29121.js"),
   Chunk351702 = require("./351702.js");
-let s = e => {
+let a = e => {
   let {
     product: t
   } = e, n = (0, i.To)(t);
   return (0, r.jsx)(l.Text, {
     variant: "text-lg/bold",
-    className: a.productName,
+    className: s.productName,
     children: n
   })
 }

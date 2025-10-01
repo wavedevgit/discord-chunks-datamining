@@ -146,7 +146,7 @@ function w(e) {
             children: P.intl.string(P.t["+Xp3ho"])
           })
         }), (null == D ? true : D.profileEffect) != null && (0, r.jsx)(p.Z, {
-          profileEffectId: null == D || null == (t = D.profileEffect) ? true : t.id,
+          skuId: null == D || null == (t = D.profileEffect) ? true : t.skuId,
           isHovering: H
         })]
       })

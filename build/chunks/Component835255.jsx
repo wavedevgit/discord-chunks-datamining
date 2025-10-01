@@ -1,5 +1,5 @@
 /** Chunk was on 56848 **/
-/** chunk id: 835255, original params: e,t,r (module,exports,require) **/
+/** chunk id: 835255, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
 });
@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
 function x(e) {
   let {
     item: t,
-    profileOwner: r,
+    profileOwner: n,
     wishlistId: x,
     isOwner: S
   } = e, I = i.useRef(null), w = (0, o.Z)(I), E = t.collectiblesItem, {
@@ -43,49 +43,49 @@ function x(e) {
       isGift: true,
       giftingOrigin: O.Wt.USER_PROFILE_WISHLIST,
       analyticsLocations: C,
-      giftRecipient: r,
+      giftRecipient: n,
       variantsReturnStyle: a.v.VARIANTS_GROUP
     })
   };
-  return (0, n.jsxs)("div", {
+  return (0, r.jsxs)("div", {
     className: P.container,
-    children: [(0, n.jsxs)(s.P3F, {
+    children: [(0, r.jsxs)(s.P3F, {
       className: P.card,
       innerRef: I,
       onClick: A,
       "aria-label": t.skuName,
-      children: [(0, n.jsx)("div", {
+      children: [(0, r.jsx)("div", {
         className: P.cardPreview,
         children: (() => {
           switch (E.type) {
             case l.Z.PROFILE_EFFECT:
-              return (0, n.jsx)("div", {
+              return (0, r.jsx)("div", {
                 className: P.profileEffectPreview,
-                children: (0, n.jsx)(g.Z, {
-                  profileEffectId: E.id,
+                children: (0, r.jsx)(g.Z, {
+                  skuId: E.skuId,
                   isHovering: w,
                   isPurchased: false,
                   removeSetHeight: true
                 })
               });
             case l.Z.AVATAR_DECORATION:
-              return (0, n.jsx)("div", {
+              return (0, r.jsx)("div", {
                 className: P.avatarDecorationPreview,
-                children: (0, n.jsx)(u.R, {
+                children: (0, r.jsx)(u.R, {
                   item: E,
-                  user: r,
+                  user: n,
                   isHighlighted: w,
                   isPurchased: false,
                   avatarSize: s.EFr.SIZE_80
                 })
               });
             case l.Z.NAMEPLATE:
-              return (0, n.jsxs)("div", {
+              return (0, r.jsxs)("div", {
                 className: P.nameplatePreview,
-                children: [(0, n.jsx)("div", {
+                children: [(0, r.jsx)("div", {
                   className: P.nameplateTopLeft,
-                  children: (0, n.jsx)(d.Z, {
-                    user: r,
+                  children: (0, r.jsx)(d.Z, {
+                    user: n,
                     nameplate: E,
                     isHighlighted: w,
                     showPlaceholderUser: true,
@@ -94,10 +94,10 @@ function x(e) {
                     nameplatePreviewSize: "default",
                     width: 200
                   })
-                }), (0, n.jsx)("div", {
+                }), (0, r.jsx)("div", {
                   className: P.nameplateBottomRight,
-                  children: (0, n.jsx)(d.Z, {
-                    user: r,
+                  children: (0, r.jsx)(d.Z, {
+                    user: n,
                     nameplate: E,
                     isHighlighted: w,
                     showPlaceholderUser: true,
@@ -112,9 +112,9 @@ function x(e) {
               return null
           }
         })()
-      }), w && (0, n.jsx)("div", {
+      }), w && (0, r.jsx)("div", {
         className: P.overlay,
-        children: (0, n.jsx)(s.zxk, {
+        children: (0, r.jsx)(s.zxk, {
           variant: "primary",
           size: "sm",
           text: j.intl.string(S ? j.t.FdGl5O : j.t.ilhtIS),
@@ -125,7 +125,7 @@ function x(e) {
           fullWidth: true
         })
       })]
-    }), S && (0, n.jsx)(v.Z, {
+    }), S && (0, r.jsx)(v.Z, {
       iconSize: "sm",
       item: t,
       wishlistId: x,

@@ -1,5 +1,5 @@
 /** Chunk was on 56848 **/
-/** chunk id: 661462, original params: e,t,r (module,exports,require) **/
+/** chunk id: 661462, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   F: () => b,
   Z: () => O
@@ -20,18 +20,18 @@ var Chunk951288 = require("./951288.js"),
 
 function m(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var r = null != arguments[t] ? arguments[t] : {},
-      n = Object.keys(r);
-    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(r, e).enumerable
-    }))), n.forEach(function(t) {
-      var n;
-      n = r[t], t in e ? Object.defineProperty(e, t, {
-        value: n,
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = n
+      }) : e[t] = r
     })
   }
   return e
@@ -39,40 +39,40 @@ function m(e) {
 
 function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var r = Object.keys(e);
+    var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var n = Object.getOwnPropertySymbols(e);
-      r.push.apply(r, n)
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
     }
-    return r
-  })(Object(t)).forEach(function(r) {
-    Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
+    return n
+  })(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
 function b(e) {
   var {
     children: t,
-    className: r,
+    className: n,
     scrollerRef: i
   } = e, l = function(e, t) {
     if (null == e) return {};
-    var r, n, i = function(e, t) {
+    var n, r, i = function(e, t) {
       if (null == e) return {};
-      var r, n, i = {},
+      var n, r, i = {},
         l = Object.keys(e);
-      for (n = 0; n < l.length; n++) r = l[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
+      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
       return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
       var l = Object.getOwnPropertySymbols(e);
-      for (n = 0; n < l.length; n++) r = l[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
+      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
   }(e, ["children", "className", "scrollerRef"]);
-  return (0, n.jsx)(s.Ttm, v(m({
+  return (0, r.jsx)(s.Ttm, v(m({
     ref: i,
-    className: a()(p.tabPanelScroller, r),
+    className: a()(p.tabPanelScroller, n),
     fade: true
   }, l), {
     children: t
@@ -82,7 +82,7 @@ function b(e) {
 function y(e) {
   let {
     user: t,
-    currentUser: r,
+    currentUser: n,
     section: i,
     subsection: l,
     displayProfile: a,
@@ -90,27 +90,27 @@ function y(e) {
     channelId: o,
     onClose: p
   } = e;
-  return i === h.oh.ACTIVITY ? (0, n.jsx)(c.Z, {
+  return i === h.oh.ACTIVITY ? (0, r.jsx)(c.Z, {
     user: t,
-    currentUser: r,
+    currentUser: n,
     displayProfile: a,
     guildId: s,
     channelId: o,
     subsection: l,
     onClose: p
-  }) : i === h.oh.MUTUAL_FRIENDS ? (0, n.jsx)(u.Z, {
+  }) : i === h.oh.MUTUAL_FRIENDS ? (0, r.jsx)(u.Z, {
     user: t,
     guildId: s,
     channelId: o,
     onClose: p
-  }) : i === h.oh.MUTUAL_GUILDS ? (0, n.jsx)(d.Z, {
+  }) : i === h.oh.MUTUAL_GUILDS ? (0, r.jsx)(d.Z, {
     user: t,
     onClose: p
-  }) : i === h.oh.WIDGETS ? (0, n.jsx)(f.C, {
+  }) : i === h.oh.WIDGETS ? (0, r.jsx)(f.C, {
     user: t,
     guildId: s,
     channelId: o
-  }) : i === h.oh.WISHLIST ? (0, n.jsx)(g.Z, {
+  }) : i === h.oh.WISHLIST ? (0, r.jsx)(g.Z, {
     profileOwner: t
   }) : null
 }
@@ -118,7 +118,7 @@ function y(e) {
 function O(e) {
   var t;
   let {
-    user: r,
+    user: n,
     currentUser: l,
     displayProfile: a,
     guildId: c,
@@ -141,14 +141,14 @@ function O(e) {
   })) ? t : d[0]), {
     subsection: g
   }));
-  return (0, n.jsxs)("div", {
+  return (0, r.jsxs)("div", {
     className: p.container,
-    children: [(0, n.jsx)(s.Ttm, {
+    children: [(0, r.jsx)(s.Ttm, {
       orientation: "horizontal",
       className: p.tabListScroller,
       fade: true,
       paddingFix: false,
-      children: (0, n.jsx)(s.njP, {
+      children: (0, r.jsx)(s.njP, {
         type: "top",
         look: "custom",
         selectedItem: O,
@@ -157,29 +157,29 @@ function O(e) {
             action: "PRESS_SECTION",
             section: e
           }), x(t => {
-            var r;
-            return null != (r = d.find(t => t.section === e)) ? r : t
+            var n;
+            return null != (n = d.find(t => t.section === e)) ? n : t
           })
         },
-        children: d.map(e => (0, n.jsx)(s.njP.Item, {
+        children: d.map(e => (0, r.jsx)(s.njP.Item, {
           className: p.tabBarItem,
           id: e.section,
           "aria-label": e.text,
           children: e.text
         }, e.section))
       })
-    }), (0, n.jsx)(s.njP.Panel, {
+    }), (0, r.jsx)(s.njP.Panel, {
       id: O,
       "aria-label": P,
       className: p.tabBarPanel,
-      children: (0, n.jsx)(s.y5t, {
-        component: (0, n.jsx)(s.nn4, {
-          children: (0, n.jsx)(s.H, {
+      children: (0, r.jsx)(s.y5t, {
+        component: (0, r.jsx)(s.nn4, {
+          children: (0, r.jsx)(s.H, {
             children: P
           })
         }),
-        children: (0, n.jsx)(y, {
-          user: r,
+        children: (0, r.jsx)(y, {
+          user: n,
           currentUser: l,
           displayProfile: a,
           guildId: c,

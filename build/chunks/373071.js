@@ -67,7 +67,7 @@ let h = "__DEBUG_PROFILE_EFFECTS_STORE",
     upsertConfig: t => (0, s.j)(() => {
       e(e => {
         let n = f({}, e);
-        return n.profileEffects[t.id] = t, g(n), n
+        return n.profileEffects[t.skuId] = t, g(n), n
       })
     }),
     deleteConfig: t => (0, s.j)(() => {

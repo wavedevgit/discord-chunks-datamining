@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk636977 = require("./636977.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -45,7 +45,7 @@ function B(e) {
   return (0, r.jsx)(_.Z.Title, {
     onClick: () => i(t),
     wrapperClassName: N.tabWrapper,
-    className: a()(N.tab, {
+    className: s()(N.tab, {
       [N.selected]: l
     }),
     children: n
@@ -57,7 +57,7 @@ function A(e) {
     tab: t,
     selected: n,
     displayText: i,
-    handleTransition: s
+    handleTransition: a
   } = e, [o, u] = l.useState(false), d = l.useRef(null), [g, C] = l.useState(0), h = l.useRef(false), m = e => {
     clearTimeout(g), C(setTimeout(() => {
       u(e)
@@ -84,7 +84,7 @@ function A(e) {
           closePopout: t
         } = e;
         return (0, r.jsx)(y.Z, {
-          handleTransition: s,
+          handleTransition: a,
           onClose: t
         })
       },
@@ -112,10 +112,10 @@ function A(e) {
           return e
         }({}, e), u = u = {
           ref: d,
-          onClick: () => s(t),
+          onClick: () => a(t),
           onKeyDown: b,
           wrapperClassName: N.tabWrapper,
-          className: a()(N.tab, {
+          className: s()(N.tab, {
             [N.selected]: n
           }),
           children: (0, r.jsxs)("span", {
@@ -175,7 +175,7 @@ function R(e) {
         sectionType: k.jXE.ORBS_BALANCE_MENU,
         ctaObject: k.qAy.CTA_TO_QUEST_HOME
       }), (0, C.navigateToQuestHome)({
-        fromContent: s.j.ORBS_BALANCE_MENU
+        fromContent: a.j.ORBS_BALANCE_MENU
       })
     }, [M, t, D]),
     U = (0, T.eN)("collectibles_shop_header_bar"),
@@ -190,7 +190,7 @@ function R(e) {
     theme: y,
     children: e => (0, r.jsxs)(_.Z, {
       disableDoubleClick: true,
-      className: a()(e, N.headerBar, {
+      className: s()(e, N.headerBar, {
         [N.fullscreenHeaderBar]: t
       }),
       innerClassname: w ? N.headerBarInner : true,

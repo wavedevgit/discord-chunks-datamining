@@ -52,10 +52,10 @@ let T = (e, t, n, r) => {
       {
         analyticsLocations: C
       } = (0, c.ZP)(o.Z.COLLECTIBLES_SHOP_CARD),
-      m = (0, s.e7)([g.Z], () => g.Z.getCategoryForProduct(e.skuId)),
+      m = (0, a.e7)([g.Z], () => g.Z.getCategoryForProduct(e.skuId)),
       b = l.useRef(null),
       E = (0, S.G)("useHandlePreviewClick"),
-      O = null != u && u === a.z.HERO && E ? x.Ch.THUMBNAIL : x.Ch.DEFAULT;
+      O = null != u && u === s.z.HERO && E ? x.Ch.THUMBNAIL : x.Ch.DEFAULT;
     return l.useCallback(t => n => {
       if (null == m) return;
       let l = (0, v.oQ)({
@@ -77,15 +77,15 @@ let T = (e, t, n, r) => {
     let {
       previewingVariantIndex: t,
       handleEntering: n,
-      handleLeaving: a
-    } = (0, E.f)(e), o = (0, s.e7)([p.Z], () => p.Z.purchases), c = (0, C.o)(e, o), u = (0, b.o)(e, o, t), [d, g] = l.useState(false);
+      handleLeaving: s
+    } = (0, E.f)(e), o = (0, a.e7)([p.Z], () => p.Z.purchases), c = (0, C.o)(e, o), u = (0, b.o)(e, o, t), [d, g] = l.useState(false);
     if (e.type === i.Z.VARIANTS_GROUP) {
       let l = (0, r.jsx)(m.P, {
         variantGroupProduct: e,
         previewingVariantIndexProps: {
           previewingVariantIndex: t,
           handleEntering: n,
-          handleLeaving: a
+          handleLeaving: s
         },
         selectedVariantIndex: c,
         setIsHoveringOnSwitch: g,

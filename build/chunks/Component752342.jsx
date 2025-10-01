@@ -78,7 +78,7 @@ function C(e) {
           component: (0, l.jsx)(i.nn4, {
             children: (0, l.jsx)(i.H, {
               id: K,
-              children: A.intl.format(A.t.KRe1Fh, {
+              children: E.intl.format(E.t.KRe1Fh, {
                 name: z
               })
             })
@@ -86,7 +86,7 @@ function C(e) {
           children: (0, l.jsxs)(j.Z, {
             user: n,
             displayProfile: G,
-            themeType: E.l.MODAL,
+            themeType: A.l.MODAL,
             children: [(0, l.jsx)(y.Z, {
               children: (0, l.jsx)(g.Z, {
                 user: n,
@@ -97,7 +97,7 @@ function C(e) {
               children: [(0, l.jsx)(f.Z, {
                 user: n,
                 displayProfile: G,
-                themeType: E.l.MODAL
+                themeType: A.l.MODAL
               }), (0, l.jsxs)("div", {
                 className: S.headerInner,
                 children: [(0, l.jsx)(m.Z, {
@@ -105,10 +105,10 @@ function C(e) {
                   displayProfile: G,
                   guildId: V,
                   channelId: w,
-                  themeType: E.l.MODAL
+                  themeType: A.l.MODAL
                 }), (0, l.jsx)(I.Z, {
                   user: n,
-                  themeType: E.l.MODAL,
+                  themeType: A.l.MODAL,
                   hasEntered: U === i.Dvm.ENTERED,
                   onCloseProfile: B,
                   disableToolbar: true
@@ -146,7 +146,7 @@ function C(e) {
                 }),
                 tags: (0, l.jsx)(p.Z, {
                   displayProfile: G,
-                  themeType: E.l.MODAL,
+                  themeType: A.l.MODAL,
                   onClose: B
                 })
               }), (0, l.jsx)(Z.Z, {

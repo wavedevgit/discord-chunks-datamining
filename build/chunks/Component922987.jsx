@@ -1,7 +1,7 @@
 /** Chunk was on 204 **/
 /** chunk id: 922987, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  _Y: () => I,
+  _Y: () => A,
   default: () => D
 });
 var Chunk951288 = require("./951288.js"),
@@ -74,13 +74,13 @@ function S(e, t) {
   }
   return l
 }
-let A = {
+let I = {
     payment_type: Chunk981631.Zuq[Chunk981631.GZQ.ONE_TIME],
     is_gift: false,
     eligible_for_trial: false,
     payment_modal_version: Chunk791785.PaymentModal.CURRENT_VERSION
   },
-  I = (e, t) => {
+  A = (e, t) => {
     let {
       loadId: r,
       skuId: n,
@@ -96,7 +96,7 @@ let A = {
       currency: j.pKx.DISCORD_ORB
     }, null != i && {
       source: i
-    }, A))
+    }, I))
   },
   w = () => {
     let {
@@ -127,7 +127,7 @@ let A = {
         currency: Chunk981631.pKx.DISCORD_ORB
       }), null != Chunk987209 && {
         source: Chunk987209
-      }, A)
+      }, I)
     }, [Chunk951288, module, Chunk493773, Chunk583434, Chunk987209, Chunk89057]);
     return {
       emitOrbCheckoutPaymentFlowEvent: (0, Chunk647438.useCallback)((e, r) => {
@@ -196,7 +196,7 @@ let A = {
     }, [c, r]), (0, l.useEffect)(() => {
       null != E && null !== S.current && (b(j.rMx.PAYMENT_FLOW_FAILED, E), S.current = null)
     }, [E, b]);
-    let A = (0, l.useCallback)(() => {
+    let I = (0, l.useCallback)(() => {
       S.current = C, b(j.rMx.PAYMENT_FLOW_COMPLETED), v(() => {
         d(p.A.COMPLETED), b(j.rMx.PAYMENT_FLOW_SUCCEEDED)
       })
@@ -204,7 +204,7 @@ let A = {
     if (null == o || null == f) return (0, n.jsx)(i.$jN, {
       type: i.$jN.Type.WANDERING_CUBES
     });
-    let I = null != (t = S.current) ? t : C,
+    let A = null != (t = S.current) ? t : C,
       R = null != x ? x.orbPriceAmount : null;
     return (0, n.jsxs)(n.Fragment, {
       children: [(0, n.jsx)(h.Z, {}), (0, n.jsxs)(g.C3, {
@@ -219,14 +219,14 @@ let A = {
         }), (0, n.jsx)(P.A3, {
           skuId: y,
           orbPriceAmount: R,
-          orbBalance: I
+          orbBalance: A
         })]
       }), (0, n.jsx)(g.O3, {
         children: (0, n.jsx)(P.f9, {
           orbPriceAmount: R,
-          orbBalance: I,
+          orbBalance: A,
           isSubmitting: _,
-          onClickCheckout: A
+          onClickCheckout: I
         })
       })]
     })

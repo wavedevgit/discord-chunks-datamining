@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk622535 = require("./622535.js"),
   Chunk481060 = require("./481060.js"),
   Chunk100527 = require("./100527.js"),
@@ -29,7 +29,7 @@ let E = e => {
   } = e, E = (0, u.Nd)(), v = null == E ? true : E.tab, S = l.useRef(null), {
     handleCardVisibilityChange: x
   } = (0, d.E)(t.skuId, v === m.AW.CATALOG ? "full" : v), O = (0, h.J7)(t, c.Z.COLLECTIBLES_SHOP_CARD);
-  return (0, r.jsx)(s.$, {
+  return (0, r.jsx)(a.$, {
     innerRef: S,
     onChange: x,
     threshold: 0,
@@ -45,7 +45,7 @@ let E = e => {
           }), (0, r.jsxs)("div", {
             className: b.innerContainer,
             children: [(0, r.jsxs)("div", {
-              className: a()(b.baseProductCardDetailsContainer, {
+              className: s()(b.baseProductCardDetailsContainer, {
                 [b.hasVariantSwitcher]: null != n
               }),
               children: [(0, r.jsx)(p.Z, {

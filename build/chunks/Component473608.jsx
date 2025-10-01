@@ -69,7 +69,7 @@ let T = e => {
     let {
       profileEffect: n,
       fallbackLabel: i
-    } = e, a = (0, h.V)(null == n ? true : n.id);
+    } = e, a = (0, h.V)(null == n ? true : n.skuId);
     if (null == a) return i;
     let {
       accessibilityLabel: o,

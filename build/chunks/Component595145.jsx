@@ -93,12 +93,12 @@ function ea(e) {
     messageId: eu,
     roleId: em,
     showGuildProfile: eb
-  }), eP = i.useRef(null), eN = (0, c.Z)(eP), [eT, eE] = i.useState(false), {
-    defaultWishlistId: eA
-  } = (0, o.cj)([E.Z], () => ({
-    defaultWishlistId: E.Z.getFirstWishlistId(t.id)
+  }), eP = i.useRef(null), eN = (0, c.Z)(eP), [eT, eA] = i.useState(false), {
+    defaultWishlistId: eE
+  } = (0, o.cj)([A.Z], () => ({
+    defaultWishlistId: A.Z.getFirstWishlistId(t.id)
   }));
-  (0, b.k)(eA);
+  (0, b.k)(eE);
   let eS = (0, w.$m)(),
     eC = (0, s.q_F)({
       opacity: +(null != eS.interactionType),
@@ -110,7 +110,7 @@ function ea(e) {
       [ec]: [t.id]
     } : {}, [ec, t.id]);
   (0, d.$)(ew, "UserProfileModalV2");
-  let e_ = (0, A.ZP)(t.id, eb ? ec : true),
+  let e_ = (0, E.ZP)(t.id, eb ? ec : true),
     eD = Z.ZP.useName(null == e_ ? true : e_.guildId, ed, t),
     {
       relationshipType: eR,
@@ -144,8 +144,8 @@ function ea(e) {
     });
   return i.useEffect(() => {
     let e = () => {
-      eE(true), setTimeout(() => {
-        eE(false)
+      eA(true), setTimeout(() => {
+        eA(false)
       }, 1e3)
     };
     return I.S.subscribe(ei.CkL.SHAKE_PROFILE_MODAL, e), () => {
@@ -384,7 +384,7 @@ function ea(e) {
                       })
                     })]
                   }), (null == e_ ? true : e_.profileEffect) != null && (0, l.jsx)(v.Z, {
-                    profileEffectId: null == e_ ? true : e_.profileEffect.id,
+                    skuId: null == e_ ? true : e_.profileEffect.skuId,
                     isHovering: eN
                   })]
                 }), (0, l.jsx)($.Z, {

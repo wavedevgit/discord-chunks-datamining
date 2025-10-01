@@ -66,7 +66,7 @@ let g = e => {
   h = Chunk647438.memo(function(e) {
     let {
       skuId: t
-    } = e, n = (0, a.e7)([s.Z], () => s.Z.getCategoryForProduct(t)), l = null == n ? true : n.products.find(e => e.skuId === t), o = (0, d.Cr)(l);
+    } = e, n = (0, s.e7)([a.Z], () => a.Z.getCategoryForProduct(t)), l = null == n ? true : n.products.find(e => e.skuId === t), o = (0, d.Cr)(l);
     if (null == o) return null;
     let u = (0, c.rC)(l);
     return u === i.Z.PROFILE_EFFECT ? (0, r.jsx)(g, {

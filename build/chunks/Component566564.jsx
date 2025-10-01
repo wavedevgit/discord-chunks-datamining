@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk685816 = require("./685816.js"),
   Chunk481060 = require("./481060.js"),
   Chunk702486 = require("./702486.js"),
@@ -84,7 +84,7 @@ let I = e => {
       errorOrigin: _.i.SHOP_PAGE,
       errorMessage: A.message
     }) : B || 0 === R.length ? (0, r.jsxs)("div", {
-      className: a()(k.loadingContainer, k.feedContent),
+      className: s()(k.loadingContainer, k.feedContent),
       children: [(0, r.jsx)(v.Z, {
         isLoading: B,
         handleTransition: n,
@@ -106,7 +106,7 @@ let I = e => {
         let d = null,
           p = false;
         switch (e.type) {
-          case s.z.HERO:
+          case a.z.HERO:
             d = (0, r.jsx)(v.Z, {
               isLoading: B,
               handleTransition: n,
@@ -114,48 +114,48 @@ let I = e => {
               tab: c
             }, l);
             break;
-          case s.z.FEATURED:
+          case a.z.FEATURED:
             d = (0, r.jsx)(b.Z, {
               isLoading: B,
               handleTransition: n,
               featuredBlockRecord: e
             }, l);
             break;
-          case s.z.FEED:
+          case a.z.FEED:
             let f = e.sortedSkuIds;
             d = (0, r.jsx)(E.Z, {
               title: c === y.AW.ORBS ? j.intl.string(j.t.dFgeub) : j.intl.string(j.t.NSv5KS),
               isLoading: B || o,
               numVisibleItems: i,
               sortedSkuIds: f,
-              buttonContainerClassName: (null == t ? true : t.type) === s.z.IMMERSIVE_BANNER ? k.feedblockInteractiveBackground : true,
+              buttonContainerClassName: (null == t ? true : t.type) === a.z.IMMERSIVE_BANNER ? k.feedblockInteractiveBackground : true,
               hasSorting: c === y.AW.HOME,
               prioritizeUserDiscounts: c === y.AW.HOME,
               tab: c
             }, l);
             break;
-          case s.z.WIDE_BANNER:
+          case a.z.WIDE_BANNER:
             d = (0, r.jsx)(T.Z, {
               handleTransition: n,
               wideBannerBlock: e,
               tab: c
             }, l);
             break;
-          case s.z.SHELF:
+          case a.z.SHELF:
             d = (0, r.jsx)(x.Z, {
               handleTransition: n,
               shelf: e,
               tab: c
             }, l);
             break;
-          case s.z.COUNTDOWN_TIMER:
+          case a.z.COUNTDOWN_TIMER:
             d = (0, r.jsx)(m.J, {
               countdownTimerBlock: e,
               isVisible: L,
               isFullScreen: u
             }, l), p = true;
             break;
-          case s.z.IMMERSIVE_BANNER:
+          case a.z.IMMERSIVE_BANNER:
             d = (0, r.jsx)(S.Z, {
               immersiveBannerBlock: e,
               onVisibilityChange: e => I(!e)
@@ -167,7 +167,7 @@ let I = e => {
         return (0, r.jsx)(g.g6, {
           blockType: e.type,
           children: (0, r.jsx)("div", {
-            className: a()(k.blockContainer, k.feedContent, {
+            className: s()(k.blockContainer, k.feedContent, {
               [k.skipPadding]: 0 === l || p
             }),
             children: d
@@ -181,25 +181,25 @@ let I = e => {
       isFullScreen: t,
       handleTransition: n,
       tab: i,
-      transitionState: a
-    } = e, s = l.useRef(null), {
+      transitionState: s
+    } = e, a = l.useRef(null), {
       handleScroll: g
-    } = (0, c.z)(s, i), p = (0, C.R)(), f = (0, d.sp)(), [_, h] = l.useState(y.IV), [m, b] = l.useState(false);
+    } = (0, c.z)(a, i), p = (0, C.R)(), f = (0, d.sp)(), [_, h] = l.useState(y.IV), [m, b] = l.useState(false);
     return l.useEffect(() => {
-      if (null != s.current) {
+      if (null != a.current) {
         let e = () => {
-            if (null == s.current) return;
-            let e = s.current.getDistanceFromBottom();
+            if (null == a.current) return;
+            let e = a.current.getDistanceFromBottom();
             _ >= 36 ? b(e < 20) : e <= 200 && h(e => e + y.IV)
           },
-          t = s.current.getScrollerNode();
+          t = a.current.getScrollerNode();
         return null == t || t.addEventListener("scroll", e), () => {
           null == t || t.removeEventListener("scroll", e)
         }
       }
-    }, [s, _, h, b]), (0, r.jsx)(o.Den, {
+    }, [a, _, h, b]), (0, r.jsx)(o.Den, {
       className: k.shopScroll,
-      ref: s,
+      ref: a,
       onScroll: g,
       children: (0, r.jsxs)("div", {
         className: k.shop,
@@ -233,13 +233,13 @@ let I = e => {
         }), !t && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(O.Z, {
             peaking: m,
-            transitioning: a === y.f7.OUT
+            transitioning: s === y.f7.OUT
           }), (0, r.jsx)(O.Z, {
             style: {
               left: 1850
             },
             peaking: m,
-            transitioning: a === y.f7.OUT
+            transitioning: s === y.f7.OUT
           })]
         })]
       })

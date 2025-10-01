@@ -7,7 +7,7 @@ require.r(exports), require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk772848 = require("./772848.js"),
   Chunk399606 = require("./399606.js"),
   Chunk952265 = require("./952265.js"),
@@ -62,7 +62,7 @@ let D = e => {
       tab: n = Z.AW.HOME
     } = e;
     (0, _.z)(f.f), (0, L.f)();
-    let i = (0, g.Z)((0, s.Z)()),
+    let i = (0, g.Z)((0, a.Z)()),
       c = (0, o.e7)([E.default], () => E.default.getCurrentUser()),
       {
         userProfile: F,
@@ -111,14 +111,14 @@ let D = e => {
       } = (0, j.B)(K, t);
     (0, O.q3)(i, er, $, el, ee), (0, O.EB)(er, c);
     let {
-      dismissShopButtonDC: ea
+      dismissShopButtonDC: es
     } = (0, A.Z)();
     l.useEffect(() => {
-      ea()
-    }, [ea]), l.useEffect(() => {
+      es()
+    }, [es]), l.useEffect(() => {
       t || (0, d.Y)(w.Z5c.COLLECTIBLES_SHOP)
     }, [t]);
-    let es = (0, o.e7)([b.Z], () => b.Z.getLayers().includes(w.S9g.COLLECTIBLES_SHOP)),
+    let ea = (0, o.e7)([b.Z], () => b.Z.getLayers().includes(w.S9g.COLLECTIBLES_SHOP)),
       eo = l.useRef(null),
       ec = l.useRef(null);
     (0, u.Tbt)(eo);
@@ -148,21 +148,21 @@ let D = e => {
           tab: er,
           children: (0, r.jsx)(D, {
             onClose: V,
-            shouldAddEventListener: t && !es,
+            shouldAddEventListener: t && !ea,
             children: (0, r.jsxs)("div", {
-              className: a()(H.shop, {
+              className: s()(H.shop, {
                 [M.shopTakeOver]: U
               }),
               ref: t ? eo : ec,
               tabIndex: false,
               children: [(0, r.jsx)(N.I, {
                 isFullScreen: t,
-                isLayer: es,
+                isLayer: ea,
                 onClose: V,
                 handleTransition: ei,
                 selectedTab: er
               }), (0, r.jsx)("div", {
-                className: a()(H.shopViewWrapper, {
+                className: s()(H.shopViewWrapper, {
                   [H.visible]: el === Z.f7.VISIBLE,
                   [H.in]: el === Z.f7.IN,
                   [H.out]: el === Z.f7.OUT

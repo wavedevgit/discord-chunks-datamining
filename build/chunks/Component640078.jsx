@@ -1,5 +1,5 @@
 /** Chunk was on 56848 **/
-/** chunk id: 640078, original params: e,t,r (module,exports,require) **/
+/** chunk id: 640078, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
 });
@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
 let u = function(e) {
   var t;
   let {
-    scrollerRef: r
+    scrollerRef: n
   } = e, {
     isDragging: u,
     item: d,
@@ -24,16 +24,16 @@ let u = function(e) {
     sourceClientOffset: e.getSourceClientOffset()
   })), g = (0, l.e7)([s.default], () => s.default.getCurrentUser()), h = (0, a.zPA)();
   if (true !== u || null == f || null == d.widget) return null;
-  let p = null == r || null == (t = r.current) ? true : t.getBoundingClientRect();
+  let p = null == n || null == (t = n.current) ? true : t.getBoundingClientRect();
   if (null == p || null == g) return null;
   let m = f.x - p.left - 60 * !!h,
     v = f.y - p.top;
-  return (0, n.jsx)("div", {
+  return (0, r.jsx)("div", {
     className: c.container,
     style: {
       transform: "translate(".concat(m, "px, ").concat(v, "px)")
     },
-    children: (0, n.jsx)(o.Z, {
+    children: (0, r.jsx)(o.Z, {
       widget: d.widget,
       user: g,
       disableInteraction: true

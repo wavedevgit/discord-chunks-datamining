@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk702486 = require("./702486.js"),
   Chunk626135 = require("./626135.js"),
@@ -59,14 +59,14 @@ function T(e) {
   }, []), l.useEffect(() => {
     p || v(false)
   }, [p, v]), (0, r.jsx)("div", {
-    className: a()(O.pageWrapper, {
+    className: s()(O.pageWrapper, {
       [O.pageWrapperFilter]: p
     }),
     children: (0, r.jsxs)("main", {
-      className: a()(O.page, {
+      className: s()(O.page, {
         [O.pageFilter]: p
       }),
-      children: [(0, r.jsx)(s.yWw, {
+      children: [(0, r.jsx)(a.yWw, {
         className: O.shopScroll,
         ref: f,
         onScroll: C,
@@ -82,7 +82,7 @@ function T(e) {
         })
       }), E && !S && (0, r.jsx)("div", {
         className: O.divider
-      }), E && !S && (0, r.jsx)(s.Ttm, {
+      }), E && !S && (0, r.jsx)(a.Ttm, {
         className: O.filterBar,
         children: (0, r.jsx)(h.Z, {})
       })]
@@ -134,7 +134,7 @@ let y = e => {
   }, [n, i, o, P]), (0, r.jsx)("div", {
     className: O.inventoryWrapper,
     children: (0, r.jsxs)("div", {
-      className: a()(O.inventory, {
+      className: s()(O.inventory, {
         [O.inventoryFilter]: j,
         [O.pageFullscreen]: t
       }),
@@ -144,18 +144,18 @@ let y = e => {
           className: O.controlsLeftSide,
           children: (0, r.jsx)(p.Z, {})
         }), (0, r.jsxs)("div", {
-          className: a()(O.controlsRightSide, {
+          className: s()(O.controlsRightSide, {
             [O.controlsRightSideResponsive]: n
           }),
           children: [(0, r.jsxs)("div", {
             className: O.sortBy,
-            children: [(0, r.jsx)(s.Text, {
+            children: [(0, r.jsx)(a.Text, {
               variant: "text-md/semibold",
               children: x.intl.string(x.t.uaX709)
             }), (0, r.jsx)(C.Z, {})]
           }), (0, r.jsx)("div", {
             ref: R,
-            children: (0, r.jsx)(s.zxk, {
+            children: (0, r.jsx)(a.zxk, {
               onClick: () => {
                 let e = !i;
                 c.default.track(S.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
@@ -170,14 +170,14 @@ let y = e => {
               },
               variant: "secondary",
               text: x.intl.string(i ? x.t.fYtm6e : x.t.TeTYEx),
-              icon: s.gXV,
+              icon: a.gXV,
               iconPosition: "end"
             })
           })]
         }), i && n && (0, r.jsx)("div", {
           className: O.filterOverlay,
           ref: k,
-          children: (0, r.jsx)(s.Den, {
+          children: (0, r.jsx)(a.Den, {
             className: O.filterOverlayContent,
             children: (0, r.jsx)(h.Z, {})
           })

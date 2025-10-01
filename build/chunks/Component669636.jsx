@@ -1,7 +1,7 @@
 /** Chunk was on 96887 **/
 /** chunk id: 669636, original params: e,t,r (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => D
+  default: () => I
 }), require("./388685.js"), require("./314940.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -60,7 +60,7 @@ let x = e => {
       className: _.profileEffectShopPreview,
       children: (0, a.jsx)(v.Z, {
         forCollectedModal: true,
-        profileEffectId: i.id
+        skuId: i.skuId
       })
     })).with(c.Z.AVATAR_DECORATION, () => (0, a.jsx)(g.R, {
       item: i,
@@ -168,7 +168,7 @@ let x = e => {
     })
   };
 
-function D(e) {
+function I(e) {
   var t, r;
   let n = (0, y.v)(e.product.categorySkuId);
   return null != n ? (0, a.jsx)(S, (t = C({}, e), r = r = {

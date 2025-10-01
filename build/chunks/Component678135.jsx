@@ -136,7 +136,7 @@ function v(e) {
       hideMessageInput: Z,
       hideExampleButton: H
     }), null != q && (0, r.jsx)(s.Z, {
-      profileEffectId: q.id
+      skuId: q.skuId
     })]
   });
   return Y ? J : (0, r.jsx)("div", {

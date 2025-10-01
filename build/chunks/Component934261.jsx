@@ -127,7 +127,7 @@ let S = e => {
       pendingNickname: true,
       pendingGlobalName: true,
       pendingAccentColor: true
-    }, null != f ? u.Z.getAllPending() : P.Z.getAllPending())), D = O.ZP.isPremium(i), k = O.ZP.canUsePremiumProfileCustomization(i), T = (0, h.ZP)(i.id), U = !!(null == T ? true : T.getPreviewBio(_).value), L = {
+    }, null != f ? u.Z.getAllPending() : P.Z.getAllPending())), k = O.ZP.isPremium(i), D = O.ZP.canUsePremiumProfileCustomization(i), T = (0, h.ZP)(i.id), U = !!(null == T ? true : T.getPreviewBio(_).value), L = {
       user: i,
       guild: f,
       pendingGlobalName: x,
@@ -145,7 +145,7 @@ let S = e => {
       pendingAccentColor: N,
       pendingProfileEffect: null != o ? o : null,
       hideFakeActivity: U,
-      canUsePremiumCustomization: k,
+      canUsePremiumCustomization: D,
       onUpsellClick: y.Z,
       onBannerChange: g.g_
     };
@@ -168,7 +168,7 @@ let S = e => {
         pendingProfileEffectRecord: o,
         product: c,
         purchase: a,
-        userIsPremium: D
+        userIsPremium: k
       })]
     })
   }

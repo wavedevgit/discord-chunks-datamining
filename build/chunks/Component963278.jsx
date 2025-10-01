@@ -23,17 +23,17 @@ let C = e => {
     shelf: t,
     handleTransition: n,
     tab: l
-  } = e, C = (0, a.e7)([o.default], () => o.default.getCurrentUser()), h = d.Z.useConfig({
+  } = e, C = (0, s.e7)([o.default], () => o.default.getCurrentUser()), h = d.Z.useConfig({
     location: "ShelfBlock"
   }).showCardsV2;
   return null == C ? null : (0, r.jsxs)("div", {
     className: i()(_.shelfBlockContainer, _.centeredSection),
     children: [(0, r.jsxs)("div", {
       className: _.blockHeader,
-      children: [(0, r.jsx)(s.X6q, {
+      children: [(0, r.jsx)(a.X6q, {
         variant: "heading-lg/semibold",
         children: t.name
-      }), (0, r.jsx)(s.zxk, {
+      }), (0, r.jsx)(a.zxk, {
         variant: "secondary",
         text: f.intl.formatToPlainString(f.t.bc9RBA, {
           category_name: t.name
@@ -45,8 +45,8 @@ let C = e => {
       children: (0, r.jsx)(r.Fragment, {
         children: t.rankedSkuIds.map((e, n) => {
           let i = u.Z.getCategoryForProduct(e),
-            a = u.Z.getProduct(e);
-          return null == i || null == a ? null : (0, r.jsx)(c.k0, {
+            s = u.Z.getProduct(e);
+          return null == i || null == s ? null : (0, r.jsx)(c.k0, {
             newValue: {
               tilePosition: n,
               pageSection: t.name,
@@ -55,7 +55,7 @@ let C = e => {
             children: h ? (0, r.jsx)(p.Z, {
               skuId: e
             }, e) : (0, r.jsx)(g.Z, {
-              product: a,
+              product: s,
               category: i,
               user: C,
               tab: l

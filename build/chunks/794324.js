@@ -67,15 +67,15 @@ let c = e => {
       d = (0, a.zL)(o.jE.COACHTIP_AVATAR);
     return r.useMemo(() => {
       var r, a, o, m, p;
-      let f = [t, n, l, s, c, u, d].some(e => null != e);
+      let v = [t, n, l, s, c, u, d].some(e => null != e);
       if ((null == e ? true : e.type) === i.Z.COACHMARK) return {
         hasPreviewAssets: false
       };
-      let v = null == e || null == (r = e.refTargetBackground) ? true : r.asset,
-        h = null == v ? true : v.resting,
-        g = null == v ? true : v.hovered;
+      let f = null == e || null == (r = e.refTargetBackground) ? true : r.asset,
+        h = null == f ? true : f.resting,
+        g = null == f ? true : f.hovered;
       return {
-        hasPreviewAssets: f,
+        hasPreviewAssets: v,
         buttonBGHoverDark: null != (a = null != n ? n : t) ? a : null == g ? true : g.dark,
         buttonBGHoverLight: null != (o = null != l ? l : t) ? o : null == g ? true : g.light,
         buttonBGRestingDark: null != (m = null != c ? c : s) ? m : null == h ? true : h.dark,

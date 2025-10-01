@@ -163,7 +163,7 @@ function P(e) {
             className: C.footer
           })]
         }), (null == G ? true : G.profileEffect) != null && (0, r.jsx)(d.Z, {
-          profileEffectId: null == G || null == (t = G.profileEffect) ? true : t.id,
+          skuId: null == G || null == (t = G.profileEffect) ? true : t.skuId,
           isHovering: V
         })]
       })

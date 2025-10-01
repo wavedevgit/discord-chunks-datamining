@@ -163,7 +163,7 @@ let I = e => {
     let t = (0, d.n)(),
       n = (0, l.e7)([c.Z], () => c.Z.useReducedMotion),
       [a, o] = i.useState(false),
-      f = (0, h.V)(e.profileEffectId),
+      f = (0, h.V)(e.skuId),
       _ = (0, u.ex)(null == f ? true : f.config),
       p = (0, m.C)(null == f ? true : f.config),
       g = null != _ ? _ : p;

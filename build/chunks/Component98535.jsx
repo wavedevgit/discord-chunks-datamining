@@ -27,14 +27,14 @@ function v(e) {
   let {
     tab: t,
     isFullScreen: n,
-    sortedCategories: s,
+    sortedCategories: a,
     transitionToTab: o,
     transitionState: c,
     updateAnalyticsState: u,
     refreshCategories: C
   } = e, v = S();
   x(v);
-  let O = (0, i.e7)([a.Z], () => a.Z.useReducedMotion),
+  let O = (0, i.e7)([s.Z], () => s.Z.useReducedMotion),
     [T, y] = l.useState(true),
     L = l.useCallback(async (e, t, r) => {
       u(e, t);
@@ -58,14 +58,14 @@ function v(e) {
   }) : (0, r.jsx)(f.Z, {
     isFullScreen: n,
     tab: t,
-    sortedCategories: s,
+    sortedCategories: a,
     initialCategoryId: T,
     onUnmount: () => y(true)
   })
 }
 let S = () => (0, Chunk442837.e7)([Chunk597688.Z, Chunk1870.Z], () => null != Chunk597688.Z.error ? "shop load fetch categories error: ".concat(Chunk597688.Z.error.message) : null != Chunk1870.Z.claimError ? "shop load claim error: ".concat(Chunk1870.Z.claimError.message) : null != Chunk1870.Z.fetchError ? "shop load fetch purchase error: ".concat(Chunk1870.Z.fetchError.message) : true),
   x = e => {
-    let t = (0, i.e7)([s.default], () => s.default.getCurrentUser()),
+    let t = (0, i.e7)([a.default], () => a.default.getCurrentUser()),
       {
         noCache: n,
         includeUnpublished: r

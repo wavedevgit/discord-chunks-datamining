@@ -32,7 +32,7 @@ let v = e => {
     isPartiallyOwnedBundle: y
   } = (0, p.L)(t), L = (0, d.G1)(t), {
     enabled: j
-  } = (0, s.WX)({
+  } = (0, a.WX)({
     location: "product_card_price"
   }), k = l.useMemo(() => (0, d.BH)(t, x), [t, x]), I = (0, h.Iw)(t), P = null != I, {
     displayPrices: N,
@@ -43,7 +43,7 @@ let v = e => {
     tab: v,
     hasDiscountOffer: P
   });
-  return O ? (0, r.jsx)(a.Text, {
+  return O ? (0, r.jsx)(s.Text, {
     tag: "div",
     variant: "heading-md/semibold",
     color: "header-muted",
@@ -52,7 +52,7 @@ let v = e => {
   }) : T || y ? (0, r.jsx)(f.U, {
     className: E.priceTag,
     isPartiallyPurchased: y
-  }) : L ? (0, r.jsx)(a.Text, {
+  }) : L ? (0, r.jsx)(s.Text, {
     variant: "text-md/semibold",
     className: E.priceTag,
     children: b.intl.string(b.t.rt69oq)

@@ -35,7 +35,7 @@ function Z(e) {
     onClose: N
   } = e, {
     trackUserProfileAction: T
-  } = (0, m.KZ)(), E = (0, i.e7)([d.Z], () => d.Z.getGuildId()), A = (0, s.Y)({
+  } = (0, m.KZ)(), A = (0, i.e7)([d.Z], () => d.Z.getGuildId()), E = (0, s.Y)({
     userId: n.id
   }), S = (0, i.e7)([u.Z], () => u.Z.hidePersonalInformation), C = (0, i.e7)([c.default], () => c.default.locale), w = (0, f.Z)(n.id), _ = (0, p.Z)(n.id);
   return (0, l.jsxs)(r.zJl, {
@@ -59,10 +59,10 @@ function Z(e) {
       children: (0, l.jsx)(a.n, {
         userId: n.id
       })
-    }), A.length > 0 && (0, l.jsx)(g.Z, {
+    }), E.length > 0 && (0, l.jsx)(g.Z, {
       heading: O.intl.string(O.t["Uv/eT0"]),
       children: (0, l.jsx)(x.Z, {
-        applicationIds: A
+        applicationIds: E
       })
     }), (0, l.jsx)(g.Z, {
       heading: O.intl.string(O.t.a6XYDw),
@@ -91,7 +91,7 @@ function Z(e) {
             action: "PRESS_APP_CONNECTION"
           }), N()
         },
-        selectedGuildId: null != E ? E : true
+        selectedGuildId: null != A ? A : true
       }, e.application.id))
     }), (0, l.jsx)(g.Z, {
       heading: O.intl.string(O.t["mQKv+v"]),

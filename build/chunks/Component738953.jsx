@@ -238,7 +238,7 @@ function Z(e) {
               appContext: q,
               disableAutoFocus: X
             }), (null == en ? true : en.profileEffect) != null && (0, r.jsx)(h.Z, {
-              profileEffectId: null == en || null == (t = en.profileEffect) ? true : t.id,
+              skuId: null == en || null == (t = en.profileEffect) ? true : t.skuId,
               isHovering: er
             })]
           })]

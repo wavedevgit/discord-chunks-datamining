@@ -36,9 +36,9 @@ let P = e => {
     className: i()(h.container, x ? h.threeItemBundle : null, y),
     children: [(0, a.jsx)("div", {
       className: i()(h.profileEffectShopPreview, w ? h.profileEffectShopPreviewCollectedModal : null),
-      children: (0, a.jsx)(c.Z, {
+      children: null != b && (0, a.jsx)(c.Z, {
         isHovering: n,
-        profileEffectId: b.id,
+        skuId: b.skuId,
         isPurchased: r,
         forCollectedModal: w,
         removeSetHeight: true

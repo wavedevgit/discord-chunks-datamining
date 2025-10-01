@@ -99,7 +99,7 @@ let y = (0, Chunk879690.U)(e => ({
     previewEnabled: false,
     collectionAssets: {},
     avatarDecorationAssets: {},
-    previewProfileEffectId: null,
+    previewProfileEffectSkuId: null,
     previewAvatarDecorationId: null,
     setPreviewEnabled: t => e({
       previewEnabled: t
@@ -175,12 +175,12 @@ let y = (0, Chunk879690.U)(e => ({
         collectionAssets: {},
         avatarDecorationAssets: {},
         previewEnabled: false,
-        previewProfileEffectId: null,
+        previewProfileEffectSkuId: null,
         previewAvatarDecorationId: null
       }))
     }),
-    setPreviewProfileEffectId: t => (0, s.j)(() => e({
-      previewProfileEffectId: t,
+    setPreviewProfileEffectSkuId: t => (0, s.j)(() => e({
+      previewProfileEffectSkuId: t,
       previewEnabled: null != t
     })),
     setPreviewAvatarDecorationId: t => (0, s.j)(() => e({
@@ -203,7 +203,7 @@ let y = (0, Chunk879690.U)(e => ({
   I = e => {
     let {
       previewEnabled: t,
-      previewProfileEffectId: n
+      previewProfileEffectSkuId: n
     } = y(), a = t ? n : null, o = (0, l.mr)(a);
     return r.useMemo(() => {
       if (null == o || null == e) return null;

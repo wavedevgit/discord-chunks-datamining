@@ -1,5 +1,5 @@
 /** Chunk was on 56848 **/
-/** chunk id: 311044, original params: e,t,r (module,exports,require) **/
+/** chunk id: 311044, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
 });
@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
 function m(e) {
   let {
     user: t,
-    guildId: r,
+    guildId: n,
     channelId: m,
     onClose: v
   } = e, {
@@ -34,29 +34,29 @@ function m(e) {
   } = (0, c.Z)(t), x = (0, l.Z)();
   return i.useEffect(() => {
     (0, u.Z)(t.id, x)
-  }, [t.id, x]), (0, n.jsx)(h.F, {
+  }, [t.id, x]), (0, r.jsx)(h.F, {
     className: p.scroller,
     children: null == j ? Array.from({
       length: null != P ? P : 10
-    }).map((e, t) => (0, n.jsxs)("div", {
+    }).map((e, t) => (0, r.jsxs)("div", {
       className: p.friendsLoadingItem,
-      children: [(0, n.jsx)(s.ZT, {
+      children: [(0, r.jsx)(s.ZT, {
         width: 40,
         opacity: .08
-      }), (0, n.jsx)(s.ZT, {
+      }), (0, r.jsx)(s.ZT, {
         width: 135,
         opacity: .08
       })]
-    }, t)) : 0 === j.length ? (0, n.jsx)(g.s_, {}) : j.map(e => {
+    }, t)) : 0 === j.length ? (0, r.jsx)(g.s_, {}) : j.map(e => {
       let {
         key: t,
         user: i,
         status: l
       } = e;
-      return (0, n.jsx)(f.Z, {
+      return (0, r.jsx)(f.Z, {
         user: i,
         status: l,
-        guildId: r,
+        guildId: n,
         channelId: m,
         onSelect: () => {
           var e, t;
@@ -64,18 +64,18 @@ function m(e) {
             action: "PRESS_MUTUAL_FRIEND"
           }), (0, d.openUserProfileModal)((e = function(e) {
             for (var t = 1; t < arguments.length; t++) {
-              var r = null != arguments[t] ? arguments[t] : {},
-                n = Object.keys(r);
-              "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-                return Object.getOwnPropertyDescriptor(r, e).enumerable
-              }))), n.forEach(function(t) {
-                var n;
-                n = r[t], t in e ? Object.defineProperty(e, t, {
-                  value: n,
+              var n = null != arguments[t] ? arguments[t] : {},
+                r = Object.keys(n);
+              "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                return Object.getOwnPropertyDescriptor(n, e).enumerable
+              }))), r.forEach(function(t) {
+                var r;
+                r = n[t], t in e ? Object.defineProperty(e, t, {
+                  value: r,
                   enumerable: true,
                   configurable: true,
                   writable: true
-                }) : e[t] = n
+                }) : e[t] = r
               })
             }
             return e
@@ -83,14 +83,14 @@ function m(e) {
             userId: i.id,
             sourceAnalyticsLocations: b
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-            var r = Object.keys(e);
+            var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
-              var n = Object.getOwnPropertySymbols(e);
-              r.push.apply(r, n)
+              var r = Object.getOwnPropertySymbols(e);
+              n.push.apply(n, r)
             }
-            return r
-          })(Object(t)).forEach(function(r) {
-            Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
+            return n
+          })(Object(t)).forEach(function(n) {
+            Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
           }), e))
         }
       }, t)

@@ -89,7 +89,7 @@ function S(e) {
 function A(e) {
   var t;
   let {
-    id: n
+    skuId: n
   } = e, i = null == (t = (0, _.V)(n)) ? true : t.config;
   return (0, r.jsxs)("div", {
     className: E.profileEffectContainer,
@@ -98,7 +98,7 @@ function A(e) {
       alt: null == i ? true : i.accessibilityLabel,
       className: E.profileEffectBackground
     }), (0, r.jsx)(p.Z, {
-      profileEffectId: n
+      skuId: n
     })]
   })
 }
@@ -133,7 +133,7 @@ function N(e) {
   })).with({
     type: a.Z.PROFILE_EFFECT
   }, e => (0, r.jsx)(A, {
-    id: e.id
+    skuId: e.skuId
   })).with({
     type: a.Z.NAMEPLATE
   }, e => (0, r.jsx)(C, {

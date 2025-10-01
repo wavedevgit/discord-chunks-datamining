@@ -51,11 +51,11 @@ function I(e) {
     roleId: P,
     transitionState: N,
     openedAt: T,
-    onHide: E,
-    sourceAnalyticsLocations: A = []
+    onHide: A,
+    sourceAnalyticsLocations: E = []
   } = e, S = t === v.ME ? true : t, C = (0, i.e7)([c.Z], () => c.Z.isBlocked(n.id)), {
     analyticsLocations: w
-  } = (0, s.ZP)([...A, C ? o.Z.BLOCKED_PROFILE_MODAL : o.Z.IGNORED_PROFILE_MODAL]), _ = (0, u.ZB)({
+  } = (0, s.ZP)([...E, C ? o.Z.BLOCKED_PROFILE_MODAL : o.Z.IGNORED_PROFILE_MODAL]), _ = (0, u.ZB)({
     layout: "MODAL_V2",
     userId: n.id,
     showGuildProfile: true,
@@ -130,7 +130,7 @@ function I(e) {
                 size: "md",
                 isBlocked: C,
                 onClick: () => {
-                  E(), (0, m.pQ)(O({
+                  A(), (0, m.pQ)(O({
                     action: C ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
                     analyticsLocations: w
                   }, _))
@@ -138,7 +138,7 @@ function I(e) {
               }), (0, l.jsx)(j.Z, {
                 userId: n.id,
                 onClick: () => {
-                  E(), (0, m.pQ)(O({
+                  A(), (0, m.pQ)(O({
                     action: "DONT_SHOW_AGAIN_IGNORED_PROFILE",
                     analyticsLocations: w
                   }, _))

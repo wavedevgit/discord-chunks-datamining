@@ -46,7 +46,7 @@ function A(e) {
   } = e, w = (0, g.sp)(), F = null != (t = null == w ? true : w.sessionId) ? t : "", {
     noCache: H,
     includeUnpublished: M
-  } = (0, v.Z)(), D = (0, a.e7)([u.default], () => u.default.getCurrentUser()), W = (0, a.e7)([p.Z], () => p.Z.productsWithVariantsAsGroup), [U, V] = l.useState(1), z = (0, c.Fg)(), G = (0, s.ap)(z), [K, q, Y] = l.useMemo(() => {
+  } = (0, v.Z)(), D = (0, s.e7)([u.default], () => u.default.getCurrentUser()), W = (0, s.e7)([p.Z], () => p.Z.productsWithVariantsAsGroup), [U, V] = l.useState(1), z = (0, c.Fg)(), G = (0, a.ap)(z), [K, q, Y] = l.useMemo(() => {
     switch (Z) {
       case S.AW.AVATAR_DECORATIONS:
         return [O.intl.string(O.t.dRZYND), G ? k.Z : j.Z, i.Z.AVATAR_DECORATION];

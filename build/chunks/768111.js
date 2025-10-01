@@ -31,7 +31,7 @@ function x(e) {
     location: "useUserProfileModalV2TabBarItems"
   }), I = (0, m.Z)(n.id), Z = (0, o.S)({
     location: "useUserProfileModalV2TabBarItems"
-  }), P = (0, s.Z)(n.id), N = [], T = n.id === (null == t ? true : t.id), E = r.Z.getFirstWishlistId(n.id), A = (null != E ? l.Z.getWishlistItems(E) : []).length > 0, S = I.length > 0;
+  }), P = (0, s.Z)(n.id), N = [], T = n.id === (null == t ? true : t.id), A = r.Z.getFirstWishlistId(n.id), E = (null != A ? l.Z.getWishlistItems(A) : []).length > 0, S = I.length > 0;
   (T && y || S && O) && N.push({
     text: j.intl.string(j.t.laViw8),
     section: h.oh.WIDGETS,
@@ -43,7 +43,7 @@ function x(e) {
   });
   let C = false === n.nsfwAllowed,
     w = i.Z.isFriend(n.id);
-  return Z && (T || A && P && (!C || C && w)) && N.push({
+  return Z && (T || E && P && (!C || C && w)) && N.push({
     text: j.intl.string(j.t["7lZ31N"]),
     section: h.oh.WISHLIST,
     subsection: true

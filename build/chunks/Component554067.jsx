@@ -24,7 +24,7 @@ function _(e) {
   } = e, {
     searchQuery: _,
     onSetSearchQuery: C
-  } = (0, u.S)(), [h, m] = l.useState(""), b = (0, c.sp)(), E = (0, i.e7)([s.default], () => s.default.locale);
+  } = (0, u.S)(), [h, m] = l.useState(""), b = (0, c.sp)(), E = (0, i.e7)([a.default], () => a.default.locale);
   return l.useEffect(() => {
     let e = setTimeout(() => {
       C(h)
@@ -32,7 +32,7 @@ function _(e) {
     return () => clearTimeout(e)
   }, [h, C]), l.useEffect(() => {
     m(_)
-  }, [_]), (0, r.jsx)(a.P3F, {
+  }, [_]), (0, r.jsx)(s.P3F, {
     ignoreKeyPress: true,
     className: f.searchBar,
     onClick: () => {
@@ -46,7 +46,7 @@ function _(e) {
         page_type: n
       })
     },
-    children: (0, r.jsx)(a.E1j, {
+    children: (0, r.jsx)(s.E1j, {
       size: "sm",
       onKeyDown: e => {
         "Enter" === e.key && C(h)

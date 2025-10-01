@@ -42,16 +42,16 @@ function R(e) {
     onClose: R,
     sourceAnalyticsLocations: M = [],
     prompt: U = null
-  } = e, F = (0, v.p)({
+  } = e, k = (0, v.p)({
     location: "CustomStatusModalWithPreview"
-  }), k = (0, T.P)({
+  }), F = (0, T.P)({
     location: "CustomStatusModalWithPreview"
   }), {
-    analyticsLocations: Y
-  } = (0, O.ZP)(M, p.Z.CUSTOM_STATUS_MODAL), I = (0, u.e7)([h.default], () => {
+    analyticsLocations: I
+  } = (0, O.ZP)(M, p.Z.CUSTOM_STATUS_MODAL), Y = (0, u.e7)([h.default], () => {
     var e;
     return null != (e = h.default.getCurrentUser()) ? e : null
-  }), B = (0, w.a)(), [L, H] = i.useState(null != (t = null == B ? true : B.state) ? t : ""), [W, z] = i.useState(null != (n = null == B ? true : B.emoji) ? n : null), [G, q] = i.useState((0, P.Z)()), J = i.useRef(null), K = i.useRef(null), V = i.useRef(null), Q = F && null != U ? U.label() : A.intl.string(A.t["xod36+"]), [X, $] = i.useState(Q), {
+  }), B = (0, w.a)(), [L, H] = i.useState(null != (t = null == B ? true : B.state) ? t : ""), [W, z] = i.useState(null != (n = null == B ? true : B.emoji) ? n : null), [G, q] = i.useState((0, P.Z)()), J = i.useRef(null), K = i.useRef(null), V = i.useRef(null), Q = k && null != U ? U.label() : A.intl.string(A.t["xod36+"]), [X, $] = i.useState(Q), {
     ref: ee,
     width: et
   } = (0, m.ZP)(Q);
@@ -70,9 +70,9 @@ function R(e) {
   }, [et, Q]), i.useEffect(() => {
     S.default.track(D.rMx.OPEN_MODAL, {
       type: p.Z.CUSTOM_STATUS_MODAL,
-      location_stack: Y
+      location_stack: I
     })
-  }, [Y]), (0, f.ZP)(() => {
+  }, [I]), (0, f.ZP)(() => {
     var e, t;
     null == (e = J.current) || e.focus(), null == (t = J.current) || t.setSelection(L.length, L.length)
   });
@@ -82,10 +82,10 @@ function R(e) {
         emojiInfo: W,
         clearAfter: G,
         prompt: U,
-        analyticsLocations: Y
+        analyticsLocations: I
       }), R())
     },
-    er = F ? A.intl.string(A.t.rp0aho) : A.intl.string(A.t.UcdRn5),
+    er = k ? A.intl.string(A.t.rp0aho) : A.intl.string(A.t.UcdRn5),
     ei = "custom-status-placeholder-text";
   return (0, r.jsxs)(o.Modal, {
     title: A.intl.string(A.t.Zx4jzM),
@@ -94,7 +94,7 @@ function R(e) {
       children: (0, r.jsx)(c.q4e, {
         maxVisibleItems: C.wS.length + 1,
         value: G,
-        options: k ? [{
+        options: F ? [{
           value: E,
           key: E,
           label: A.intl.string(A.t.E45wvL),
@@ -118,7 +118,7 @@ function R(e) {
           } = e;
           return (0, r.jsx)("span", {
             className: a()(Z.clearAfterSelectOptionLabel, i ? Z.disabled : true),
-            children: t === E ? n : (0, x.Z)(t, k)
+            children: t === E ? n : (0, x.Z)(t, F)
           })
         },
         variant: "text-only",
@@ -135,10 +135,10 @@ function R(e) {
       variant: "primary",
       onClick: en
     }],
-    children: [null != I && (0, r.jsx)("div", {
+    children: [null != Y && (0, r.jsx)("div", {
       className: Z.profilePreview,
       children: (0, r.jsx)(y.Z, {
-        user: I,
+        user: Y,
         previewText: L,
         previewEmoji: W,
         placeHolderText: Q,

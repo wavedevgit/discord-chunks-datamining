@@ -39,7 +39,7 @@ let N = e => {
       product: t,
       cardRef: n,
       analyticsLocations: i,
-      selectedVariantIndex: s,
+      selectedVariantIndex: a,
       hasDiscountOffer: o,
       discountOfferAmount: u
     } = e, d = (0, b.XM)(t, false, false), g = o ? I.intl.formatToPlainString(I.t["5U5RBw"], {
@@ -47,13 +47,13 @@ let N = e => {
     }) : I.intl.formatToPlainString(I.t["cNSL/v"], {
       price: d
     });
-    return (0, r.jsx)(a.zxk, {
+    return (0, r.jsx)(s.zxk, {
       variant: "primary",
       onClick: e => {
         e.stopPropagation(), (0, c.Z)({
           skuId: (0, O.S)({
             product: t,
-            selectedVariantIndex: s
+            selectedVariantIndex: a
           }),
           returnRef: n,
           analyticsLocations: i,
@@ -84,7 +84,7 @@ let N = e => {
     let {
       handlePreviewButtonClick: t
     } = e;
-    return (0, r.jsx)(a.zxk, {
+    return (0, r.jsx)(s.zxk, {
       variant: "primary",
       onClick: e => {
         e.stopPropagation(), t(e)
@@ -98,7 +98,7 @@ let N = e => {
       handleUseNow: t,
       isApplying: n
     } = e;
-    return (0, r.jsx)(a.zxk, {
+    return (0, r.jsx)(s.zxk, {
       variant: "primary",
       onClick: e => {
         e.stopPropagation(), t()
@@ -114,16 +114,16 @@ let N = e => {
       isClaimPremiumProductDisabled: n,
       isClaiming: l,
       tab: i,
-      analyticsLocations: s,
+      analyticsLocations: a,
       analyticsContext: o
     } = e, c = async () => {
       (0, x.oc)(t, i, o, "claim premium product button"), await (0, _.fK)(t.skuId), (0, L.Z)({
         product: t,
-        analyticsLocations: s,
+        analyticsLocations: a,
         purchaseType: j.o8.PREMIUM_PURCHASE
       })
     };
-    return (0, r.jsx)(a.zxk, {
+    return (0, r.jsx)(s.zxk, {
       variant: "primary",
       onClick: e => {
         e.stopPropagation(), c()
@@ -141,11 +141,11 @@ let N = e => {
       product: t,
       tab: n,
       checkoutEligiblePrices: i,
-      analyticsLocations: s,
+      analyticsLocations: a,
       analyticsContext: o,
       selectedVariantIndex: c
     } = e;
-    return (0, r.jsx)(a.zxk, {
+    return (0, r.jsx)(s.zxk, {
       variant: "primary",
       text: I.intl.format(I.t.kAgx5O, {
         orbPrice: i[0].amount,
@@ -168,12 +168,12 @@ let N = e => {
               variantsReturnStyle: l.v.VARIANTS_GROUP
             }), (0, L.Z)({
               product: t,
-              analyticsLocations: s,
+              analyticsLocations: a,
               itemConsumed: null == (n = r[0]) ? true : n.consumed,
               purchaseType: j.o8.ORB
             })
           },
-          analyticsLocations: s
+          analyticsLocations: a
         })
       },
       "aria-label": I.intl.formatToPlainString(I.t["fNG/09"], {
@@ -186,7 +186,7 @@ let N = e => {
     let {
       handlePreviewButtonClick: t
     } = e;
-    return (0, r.jsx)(a.zxk, {
+    return (0, r.jsx)(s.zxk, {
       variant: "primary",
       onClick: e => {
         e.stopPropagation(), t(e)
@@ -200,7 +200,7 @@ let N = e => {
       product: t,
       cardRef: n,
       selectedVariantIndex: l
-    } = e, a = (0, m.Nd)(), c = null == a ? true : a.tab, u = (0, i.e7)([p.default], () => p.default.getCurrentUser()), d = f.ZP.canUseCollectibles(u), {
+    } = e, s = (0, m.Nd)(), c = null == s ? true : s.tab, u = (0, i.e7)([p.default], () => p.default.getCurrentUser()), d = f.ZP.canUseCollectibles(u), {
       isPurchased: g,
       isPartiallyOwnedBundle: _
     } = (0, S.L)(t), O = (0, b.G1)(t), L = (0, b.rN)(t), {
@@ -220,7 +220,7 @@ let N = e => {
       hasDiscountOffer: H
     }), U = (0, C.sp)(), {
       analyticsLocations: V
-    } = (0, o.ZP)(s.Z.COLLECTIBLES_SHOP_CARD), z = (0, x.J7)(t, s.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON), [G, K] = (0, i.Wu)([h.Z], () => [h.Z.isClaiming === t.skuId, null != h.Z.isClaiming && h.Z.isClaiming !== t.skuId]), {
+    } = (0, o.ZP)(a.Z.COLLECTIBLES_SHOP_CARD), z = (0, x.J7)(t, a.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON), [G, K] = (0, i.Wu)([h.Z], () => [h.Z.isClaiming === t.skuId, null != h.Z.isClaiming && h.Z.isClaiming !== t.skuId]), {
       handleUseNow: q,
       isApplying: Y
     } = (0, E.W)({

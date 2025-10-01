@@ -25,15 +25,17 @@ let u = {},
   p = 0,
   h = 0,
   m = e => Math.min(d * 2 ** e, f),
-  g = e => !(0, i.isEqual)(u[e.id], e) && (u[e.id] = e, true),
+  g = (e, t) => !(0, i.isEqual)(u[e], t) && (u[e] = t, true),
   E = e => {
     let t = false;
     return e.items.forEach(n => {
-      (0, s.H)(n) && g({
+      if (!(0, s.H)(n)) return;
+      let r = {
         id: n.id,
         skuId: e.skuId,
         config: n
-      }) && (t = true)
+      };
+      g(e.skuId, r) && (t = true)
     }), t
   },
   b = e => {
@@ -58,7 +60,7 @@ let u = {},
       configs: t
     } = e;
     t.forEach(e => {
-      g({
+      g(e.skuId, {
         id: e.id,
         skuId: e.skuId,
         config: e
@@ -111,7 +113,7 @@ class w extends(r = Chunk442837.ZP.Store) {
   getAllProfileEffects() {
     return Object.values(u)
   }
-  getProfileEffectById(e) {
+  getProfileEffect(e) {
     return null != e ? u[e] : true
   }
   get isFetchingAll() {

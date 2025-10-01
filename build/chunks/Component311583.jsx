@@ -41,11 +41,11 @@ let E = e => {
     isPremiumUser: O,
     tab: S,
     hasDiscountOffer: null != P
-  }), B = (0, _.J7)(t, s.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON);
-  return k || l.tq || N || !I || S === m.AW.ORBS ? null : j ? (0, r.jsx)(a.hU, {
+  }), B = (0, _.J7)(t, a.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON);
+  return k || l.tq || N || !I || S === m.AW.ORBS ? null : j ? (0, r.jsx)(s.hU, {
     variant: "primary",
     "aria-label": b.intl.string(b.t.SKNnqq),
-    icon: a.tEF,
+    icon: s.tEF,
     onClick: e => {
       e.stopPropagation(), B(e)
     }

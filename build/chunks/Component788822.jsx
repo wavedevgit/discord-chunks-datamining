@@ -37,14 +37,14 @@ let _ = e => {
     innerRef: O,
     onChange: S,
     threshold: 0,
-    children: (0, r.jsxs)(a.P3F, {
+    children: (0, r.jsxs)(s.P3F, {
       className: f.featuredBlock,
       innerRef: O,
       style: {
         backgroundImage: "url(".concat(x, ")")
       },
       onClick: () => {
-        E("shop marketing tile", v), s.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+        E("shop marketing tile", v), a.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
           collectibles_shop_session_id: null == y ? true : y.sessionId,
           sku_id: v,
           page_type: "home",
@@ -55,13 +55,13 @@ let _ = e => {
           cta_name: null
         })
       },
-      children: [null != b && (0, r.jsx)(a.IGR, {
+      children: [null != b && (0, r.jsx)(s.IGR, {
         disableColor: true,
         text: b,
         className: f.featuredBlockBadge
       }), (0, r.jsx)("div", {
         className: f.featuredBlockTextContainer,
-        children: null != T && (0, r.jsx)(a.X6q, {
+        children: null != T && (0, r.jsx)(s.X6q, {
           lineClamp: 4,
           className: f.featuredBlockBodyText,
           style: {
@@ -72,11 +72,11 @@ let _ = e => {
         })
       }), (0, r.jsx)("div", {
         className: f.featuredBlockButtonContainer,
-        children: (0, r.jsx)(a.zxk, {
+        children: (0, r.jsx)(s.zxk, {
           variant: "overlay-primary",
           text: p.intl.string(p.t.jVcuVV),
           onClick: e => {
-            E("shop marketing take me there button", v), e.stopPropagation(), s.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+            E("shop marketing take me there button", v), e.stopPropagation(), a.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
               collectibles_shop_session_id: null == y ? true : y.sessionId,
               sku_id: v,
               page_type: "home",

@@ -76,7 +76,7 @@ let g = Chunk481060.EFr.SIZE_152,
       className: h.profileEffectPreview,
       children: (0, i.jsx)(d.Z, {
         isHovering: true,
-        profileEffectId: null == e ? true : e.id
+        skuId: null == e ? true : e.skuId
       })
     })
   },

@@ -1,5 +1,5 @@
 /** Chunk was on 56848 **/
-/** chunk id: 414655, original params: e,t,r (module,exports,require) **/
+/** chunk id: 414655, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
 });
@@ -23,7 +23,7 @@ function b(e) {
   let {
     profileOwner: t
   } = e, {
-    defaultWishlistId: r,
+    defaultWishlistId: n,
     currentUser: b
   } = (0, l.cj)([g.Z, f.default], () => ({
     defaultWishlistId: g.Z.getFirstWishlistId(t.id),
@@ -33,29 +33,29 @@ function b(e) {
   } = (0, c.ZP)(), O = (null == b ? true : b.id) === t.id, {
     wishlist: j,
     error: P
-  } = (0, d.k)(r), x = i.useCallback(() => {
+  } = (0, d.k)(n), x = i.useCallback(() => {
     (0, a.pT)(), (0, u.mK)({
       analyticsLocations: y,
       analyticsSource: o.Z.USER_PROFILE_WISHLIST,
       openInLayer: false
     })
   }, [y]);
-  return null != P ? null : null == j || 0 === j.items.length ? (0, n.jsx)(h.F, {
+  return null != P ? null : null == j || 0 === j.items.length ? (0, r.jsx)(h.F, {
     fade: true,
-    children: (0, n.jsxs)("div", {
+    children: (0, r.jsxs)("div", {
       className: v.emptyStateContainer,
-      children: [(0, n.jsxs)("div", {
+      children: [(0, r.jsxs)("div", {
         className: v.emptyStateText,
-        children: [(0, n.jsx)(s.X6q, {
+        children: [(0, r.jsx)(s.X6q, {
           variant: "heading-md/medium",
           color: "header-primary",
           children: m.intl.string(m.t.HGnLLS)
-        }), (0, n.jsx)(s.Text, {
+        }), (0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
           children: m.intl.string(m.t["/X1ny8"])
         })]
-      }), O && (0, n.jsx)(s.zxk, {
+      }), O && (0, r.jsx)(s.zxk, {
         variant: "primary",
         size: "sm",
         icon: s.EOn,
@@ -63,31 +63,31 @@ function b(e) {
         onClick: x
       })]
     })
-  }) : (0, n.jsxs)(h.F, {
+  }) : (0, r.jsxs)(h.F, {
     className: v.scroller,
     fade: true,
-    children: [(0, n.jsxs)("div", {
+    children: [(0, r.jsxs)("div", {
       className: v.headerRow,
-      children: [(0, n.jsx)(s.Text, {
+      children: [(0, r.jsx)(s.Text, {
         variant: "text-sm/normal",
         color: "text-secondary",
         children: m.intl.format(m.t.r6Y1Li, {
           count: j.items.length
         })
-      }), O ? (0, n.jsx)(s.zxk, {
+      }), O ? (0, r.jsx)(s.zxk, {
         variant: "secondary",
         size: "sm",
         icon: s.qJs,
         text: m.intl.string(m.t.SDUwMz),
         onClick: x
-      }) : (0, n.jsx)(s.zxk, {
+      }) : (0, r.jsx)(s.zxk, {
         variant: "secondary",
         size: "sm",
         icon: s.EOn,
         text: m.intl.string(m.t["i/yzHh"]),
         onClick: x
       })]
-    }), (0, n.jsx)(p.Z, {
+    }), (0, r.jsx)(p.Z, {
       items: j.items,
       profileOwner: t,
       isOwner: O

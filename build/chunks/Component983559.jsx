@@ -160,7 +160,7 @@ function L(e) {
             analyticsLocations: H,
             context: F
           }), (null == k ? true : k.profileEffect) != null && (0, r.jsx)(p.Z, {
-            profileEffectId: null == k || null == (t = k.profileEffect) ? true : t.id,
+            skuId: null == k || null == (t = k.profileEffect) ? true : t.skuId,
             isHovering: z,
             urlQueryString: "dmView"
           })]

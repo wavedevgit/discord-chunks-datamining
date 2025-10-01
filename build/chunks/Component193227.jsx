@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
   Chunk434650 = require("./434650.js"),
@@ -33,7 +33,7 @@ function y(e) {
     products: t,
     header: n,
     category: l
-  } = e, i = (0, s.e7)([u.default], () => u.default.getCurrentUser()), a = (0, x.St)(t), c = g.Z.useConfig({
+  } = e, i = (0, a.e7)([u.default], () => u.default.getCurrentUser()), s = (0, x.St)(t), c = g.Z.useConfig({
     location: "Products"
   }).showCardsV2;
   return null == i || 0 === t.length ? null : (0, r.jsxs)("div", {
@@ -46,7 +46,7 @@ function y(e) {
       size: 24
     }), (0, r.jsx)("div", {
       className: T.cardsContainer,
-      children: a.map((e, t) => (0, r.jsx)(d.k0, {
+      children: s.map((e, t) => (0, r.jsx)(d.k0, {
         newValue: {
           tilePosition: t
         },
@@ -77,12 +77,12 @@ function j(e) {
   let {
     category: t,
     isFullScreen: n
-  } = e, [i, a] = l.useState(false), s = (0, c.O)(e => {
-    a(e)
+  } = e, [i, s] = l.useState(false), a = (0, c.O)(e => {
+    s(e)
   }, n ? .13 : .15);
   return (0, r.jsxs)("div", {
     className: T.categoryWrapper,
-    ref: s,
+    ref: a,
     children: [(0, r.jsx)(h.Z, {
       category: t
     }), (0, r.jsx)(L, {
@@ -96,7 +96,7 @@ function k(e) {
   let {
     sortedCategories: n,
     setCategoryRef: i,
-    isFullScreen: s,
+    isFullScreen: a,
     currentPage: c,
     handlePageChange: u
   } = e, g = (0, d.sp)(), f = (0, v.R)(), _ = null != (t = null == g ? true : g.sessionId) ? t : "", {
@@ -116,7 +116,7 @@ function k(e) {
       sessionId: _,
       checkpoint: C.a.SHOP_MOUNTED,
       tab: O.AW.CATALOG,
-      isFullScreen: s,
+      isFullScreen: a,
       unpublishedCategoriesShown: b,
       cacheDisabled: h
     })
@@ -125,14 +125,14 @@ function k(e) {
       sessionId: _,
       checkpoint: C.a.SHOP_RENDERED,
       tab: O.AW.CATALOG,
-      isFullScreen: s,
+      isFullScreen: a,
       unpublishedCategoriesShown: b,
       cacheDisabled: h
     })
-  }, [_, s, b, h, f, x.length]);
+  }, [_, a, b, h, f, x.length]);
   let y = (0, p.FF)("CollectiblesBrowse");
   return f ? (0, r.jsx)(m.Z, {}) : (0, r.jsxs)("div", {
-    className: a()(T.categories, {
+    className: s()(T.categories, {
       [T.categoriesNoFilter]: !y
     }),
     children: [x.map((e, t) => (0, r.jsx)("div", {
@@ -143,7 +143,7 @@ function k(e) {
         },
         children: (0, r.jsx)(j, {
           category: e,
-          isFullScreen: s
+          isFullScreen: a
         })
       })
     }, e.skuId)), (0, r.jsx)("div", {

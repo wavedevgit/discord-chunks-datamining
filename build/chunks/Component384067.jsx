@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk622535 = require("./622535.js"),
   Chunk481060 = require("./481060.js"),
   Chunk63063 = require("./63063.js"),
@@ -41,24 +41,24 @@ let C = e => {
     y = C.bannerUrl;
   if (null == y) return null;
   let L = m === g.AW.ORBS;
-  return (0, r.jsx)(s.$, {
+  return (0, r.jsx)(a.$, {
     innerRef: E,
     onChange: T,
     threshold: 0,
     children: (0, r.jsxs)("div", {
       ref: E,
-      className: a()(_.row, _.between, _.bannerBlockContainer, _.centeredSection, {
+      className: s()(_.row, _.between, _.bannerBlockContainer, _.centeredSection, {
         [_.extraRounded]: L
       }),
       children: [(0, r.jsx)("div", {
-        className: a()(_.wideBannerBackgroundImg, {
+        className: s()(_.wideBannerBackgroundImg, {
           [_.extraRounded]: L
         }),
         children: (0, r.jsx)("img", {
           ref: v,
           src: y,
           alt: C.title,
-          className: a()(_.wideBannerArt, {
+          className: s()(_.wideBannerArt, {
             [_.wideBannerArtOrbs]: L
           }),
           style: {

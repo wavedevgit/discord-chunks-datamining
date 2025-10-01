@@ -102,7 +102,7 @@ function C(e) {
   }, [C, j, v]), {
     product: A,
     purchase: Z
-  } = (0, d.Z)(null == I ? true : I.skuId), N = i.useRef(null), D = b.ZP.canUseCollectibles(t), k = (null == C ? true : C.skuId) === (true === x ? null == m ? true : m.skuId : null == x ? true : x.skuId), T = i.useCallback(e => {
+  } = (0, d.Z)(null == I ? true : I.skuId), N = i.useRef(null), k = b.ZP.canUseCollectibles(t), D = (null == C ? true : C.skuId) === (true === x ? null == m ? true : m.skuId : null == x ? true : x.skuId), T = i.useCallback(e => {
     S(e)
   }, [S]), U = i.useCallback(e => {
     f(), (0, a.mK)({
@@ -151,9 +151,9 @@ function C(e) {
       onOpenShop: U,
       product: A,
       purchase: Z,
-      canUseCollectibles: D,
+      canUseCollectibles: k,
       selectedProfileEffect: C,
-      disableApplyButton: k,
+      disableApplyButton: D,
       analyticsLocations: h
     })]
   })

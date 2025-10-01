@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Dp: () => i,
-  gT: () => a
+  gT: () => s
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -25,12 +25,12 @@ let l = e => {
     var t;
     return null != (t = null == e ? true : e.endsWith(".riv")) && t
   },
-  a = e => {
+  s = e => {
     let {
       isCustomCursorEnabled: t,
       className: n,
       riveEventTargetRef: i
-    } = e, a = e => {
+    } = e, s = e => {
       let {
         button: n
       } = l(e), r = e.currentTarget;
@@ -39,7 +39,7 @@ let l = e => {
     return (0, r.jsx)("div", {
       ref: i,
       className: n,
-      onMouseMove: a,
+      onMouseMove: s,
       onMouseDown: e => {
         let {
           button: t

@@ -373,7 +373,7 @@ function es(e) {
               })]
             })]
           }), (null == ep ? true : ep.profileEffect) != null && !ew.current && (0, a.jsx)(j.Z, {
-            profileEffectId: ep.profileEffect.id,
+            skuId: ep.profileEffect.skuId,
             isHovering: eb
           })]
         }), (0, a.jsx)(U.Z, {})]

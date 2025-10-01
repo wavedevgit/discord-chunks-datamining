@@ -55,7 +55,7 @@ function b(e) {
         hasEntered: S === i.Dvm.ENTERED
       })]
     }), (null == T ? true : T.profileEffect) != null && (0, r.jsx)(l.Z, {
-      profileEffectId: T.profileEffect.id
+      skuId: T.profileEffect.skuId
     }), (0, r.jsx)("div", {
       className: O.usernameContainer,
       inert: true,

@@ -62,7 +62,7 @@ let E = e => {
     enableHoverEffect: x = false,
     isCardHovered: C = true,
     selectedVariantIndex: S
-  } = e, [A, I] = (0, p.US)([s.z.WISHLIST_NUX_TOOLTIP_AND_MODAL], true, true), w = A === s.z.WISHLIST_NUX_TOOLTIP_AND_MODAL, {
+  } = e, [I, A] = (0, p.US)([s.z.WISHLIST_NUX_TOOLTIP_AND_MODAL], true, true), w = I === s.z.WISHLIST_NUX_TOOLTIP_AND_MODAL, {
     analyticsLocations: R
   } = (0, d.ZP)(), T = g.default.getCurrentUser(), N = null != T ? f.Z.getFirstWishlistId(T.id) : null, L = l.useMemo(() => {
     var e;
@@ -97,12 +97,12 @@ let E = e => {
             return r => (0, n.jsx)(e, _(j({}, r), {
               product: t
             }))
-          }), I(m.L.USER_DISMISS))
+          }), A(m.L.USER_DISMISS))
         } catch (e) {
           U(null), (0, c.showToast)((0, c.createToast)(O.intl.string(O.t.F8FvU1), c.ToastType.FAILURE))
         }
       }
-    }, [R, B, k, t, w, I, N, U]);
+    }, [R, B, k, t, w, A, N, U]);
   if (!C && !B || null == T) return null;
   if (G || H) return (0, n.jsx)(c.ua7, {
     text: O.intl.string(O.t["02QYZG"]),

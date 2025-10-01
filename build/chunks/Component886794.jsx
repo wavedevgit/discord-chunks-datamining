@@ -67,7 +67,7 @@ function C(e) {
       children: (0, l.jsxs)(r.Y0X, {
         "data-migration-pending": true,
         transitionState: L,
-        className: E.root,
+        className: A.root,
         hideShadow: true,
         "aria-labelledby": G,
         parentComponent: "NonUserBotProfileModal",
@@ -95,7 +95,7 @@ function C(e) {
                 displayProfile: F,
                 themeType: N.l.MODAL
               }), (0, l.jsx)("div", {
-                className: E.headerInner,
+                className: A.headerInner,
                 children: (0, l.jsx)(f.Z, {
                   user: t,
                   displayProfile: F,
@@ -105,9 +105,9 @@ function C(e) {
                 })
               })]
             }), (0, l.jsxs)("div", {
-              className: E.body,
+              className: A.body,
               children: [(0, l.jsx)(y.Z, {
-                className: E.username,
+                className: A.username,
                 user: t,
                 nickname: V,
                 pronouns: null == F ? true : F.pronouns,
@@ -135,7 +135,7 @@ function C(e) {
                   }, Z.oh.BOT_INFO)
                 }), (0, l.jsxs)(r.zJl, {
                   fade: true,
-                  className: A.scroller,
+                  className: E.scroller,
                   children: [(0, l.jsx)(x.Z, {
                     userId: t.id,
                     userBio: null == F ? true : F.bio,
@@ -153,7 +153,7 @@ function C(e) {
             })]
           })
         }), (null == F ? true : F.profileEffect) != null && (0, l.jsx)(d.Z, {
-          profileEffectId: null == F || null == (n = F.profileEffect) ? true : n.id,
+          skuId: null == F || null == (n = F.profileEffect) ? true : n.skuId,
           isHovering: Y
         })]
       })

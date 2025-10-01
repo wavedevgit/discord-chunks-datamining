@@ -20,8 +20,8 @@ let g = e => {
     bannerAnimated: n,
     isResponsive: l = false,
     eventTargetRef: g
-  } = e, p = (0, a.e7)([o.Z], () => o.Z.useReducedMotion), f = (0, a.e7)([u.Z], () => u.Z.isFocused()), _ = null != n && !p && f;
-  return null != n && n.endsWith(".riv") ? (0, r.jsx)(s.B, {
+  } = e, p = (0, s.e7)([o.Z], () => o.Z.useReducedMotion), f = (0, s.e7)([u.Z], () => u.Z.isFocused()), _ = null != n && !p && f;
+  return null != n && n.endsWith(".riv") ? (0, r.jsx)(a.B, {
     src: n,
     fit: "fit-width",
     eventTargetRef: g

@@ -73,12 +73,12 @@ let x = [{
   j = () => {
     let e = (0, Chunk373071.lb)(),
       {
-        previewProfileEffectId: t,
-        setPreviewProfileEffectId: n
+        previewProfileEffectSkuId: t,
+        setPreviewProfileEffectSkuId: n
       } = (0, Chunk619899.N9)(),
       i = Chunk647438.useMemo(() => [f, ...module.map(e => ({
         label: e.name,
-        value: e.id
+        value: e.skuId
       }))], [module]);
     return (0, Chunk951288.jsxs)("div", {
       className: Chunk329119.previewSelector,

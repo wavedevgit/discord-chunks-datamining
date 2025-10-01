@@ -468,7 +468,7 @@ let tt = Chunk442837.ZP.connectStores([Chunk283595.Z, Chunk55563.Z, Chunk812206.
     } = t, n = k.Z.get(e.skuId), i = null != n ? y.Z.getApplication(n.applicationId) : null, r = f.Z.useReducedMotion;
     return {
       sku: n,
-      libraryApplication: null != n && (null == e ? true : e.entitlementBranches) != null ? (0, L.z2)(e.entitlementBranches, n, E.Z) : null,
+      libraryApplication: null != n && (null == e ? true : e.entitlementBranches) != null ? (0, L.z2)(e.entitlementBranches, n, R.Z) : null,
       application: i,
       subscriptionPlan: null != e.subscriptionPlanId ? (0, _.oE)(e.subscriptionPlanId) : null,
       accepting: T.Z.getIsAccepting(e.code),
