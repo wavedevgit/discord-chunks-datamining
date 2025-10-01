@@ -168,8 +168,8 @@ class en extends Chunk647438.PureComponent {
         channelId: o
       });
       let i = null,
-        l = q.default.getFocusedPID();
-      null != l && P.default.getOverlayMethod(l) !== N.gl.Disabled && (q.default.isInstanceLocked() ? i = J.ADE.OVERLAY_LOCKED_ACTIVATED : q.default.isInstanceLocked() || (i = q.default.isPinned(J.Odu.TEXT) ? J.ADE.OVERLAY_UNLOCKED_PINNED : J.ADE.OVERLAY_UNLOCKED)), K.default.track(J.rMx.JOIN_VOICE_CHANNEL, ee({
+        l = Y.default.getFocusedPID();
+      null != l && P.default.getOverlayMethod(l) !== N.gl.Disabled && (Y.default.isInstanceLocked() ? i = J.ADE.OVERLAY_LOCKED_ACTIVATED : Y.default.isInstanceLocked() || (i = Y.default.isPinned(J.Odu.TEXT) ? J.ADE.OVERLAY_UNLOCKED_PINNED : J.ADE.OVERLAY_UNLOCKED)), K.default.track(J.rMx.JOIN_VOICE_CHANNEL, ee({
         location: i,
         channel_id: o,
         channel_type: u,
@@ -298,7 +298,7 @@ function er() {
   let {
     connected: U,
     friendsTabSection: G,
-    homeLink: q,
+    homeLink: Y,
     isMemberPending: Q,
     selectedChannelId: X,
     selectedGuildId: $

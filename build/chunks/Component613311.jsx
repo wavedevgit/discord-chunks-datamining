@@ -283,7 +283,7 @@ class ep extends Chunk647438.PureComponent {
     })
   }
   renderFeatures(e) {
-    return (0, r.jsx)(q.Z, {
+    return (0, r.jsx)(Y.Z, {
       sku: e
     })
   }
@@ -305,7 +305,7 @@ class ep extends Chunk647438.PureComponent {
         children: eo.intl.format(eo.t.tluX4O, {
           name: n.name
         })
-      }), (0, r.jsx)(b.Z, {}), (0, r.jsx)(Y.Z, {
+      }), (0, r.jsx)(b.Z, {}), (0, r.jsx)(q.Z, {
         applicationId: e.id,
         blurb: t.summary,
         description: l,

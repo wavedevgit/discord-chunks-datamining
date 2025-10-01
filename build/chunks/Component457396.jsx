@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 457396, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  g: () => Y,
+  g: () => q,
   i: () => W
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
@@ -53,9 +53,9 @@ let W = e => {
     } = e, n = (0, a.e7)([m.default], () => m.default.getCurrentUser()), r = (0, a.e7)([b.Z], () => b.Z.getPremiumTypeSubscription()), i = (0, P.N)(), l = (0, j.Ng)(), o = (0, y.Vi)(), s = (0, U.V)(), c = (0, O.Qo)(n, r), u = (0, a.e7)([E.Z], () => E.Z.getCreatedAtOverride()), d = t || null != i || null != l || o || null != s || c, p = null != u ? u : null == n ? true : n.createdAt;
     return d || null != n && null != p && Date.now() - p.getTime() > 12096e5
   },
-  Y = e => {
+  q = e => {
     let t, n, E;
-    var Y, q, {
+    var q, Y, {
         selected: K,
         nitroTabButtonRef: Q,
         route: X,
@@ -185,7 +185,7 @@ let W = e => {
         has_premium: en
       }), (0, A.ZL)()
     });
-    let ew = (0, r.jsx)(c.Qj, (Y = function(e) {
+    let ew = (0, r.jsx)(c.Qj, (q = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -210,19 +210,19 @@ let W = e => {
       text: er ? z.intl.string(z.t["4gwVVl"]) : z.intl.string(z.t.Ipxkoq),
       locationState: J,
       onClick: eZ
-    }, $, el), q = q = {
+    }, $, el), Y = Y = {
       className: t,
       children: n
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(Y, Object.getOwnPropertyDescriptors(q)) : (function(e, t) {
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(q, Object.getOwnPropertyDescriptors(Y)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
         var r = Object.getOwnPropertySymbols(e);
         n.push.apply(n, r)
       }
       return n
-    })(Object(q)).forEach(function(e) {
-      Object.defineProperty(Y, e, Object.getOwnPropertyDescriptor(q, e))
-    }), Y));
+    })(Object(Y)).forEach(function(e) {
+      Object.defineProperty(q, e, Object.getOwnPropertyDescriptor(Y, e))
+    }), q));
     return em ? (0, r.jsx)(R.C, {
       children: ew
     }) : eb && ex === o.z.CHURN_DISCOUNT_PREMIUM_TAB_COACHMARK && 8 === E ? (0, r.jsx)(Z.Z, {

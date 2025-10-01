@@ -166,7 +166,7 @@ function eW(e) {
   })
 }
 
-function eY() {
+function eq() {
   let e = Chunk647438.useRef(null);
   (0, Chunk481060.Tbt)(module), Chunk647438.useEffect(() => {
     Chunk626135.default.track(Chunk981631.rMx.OPEN_POPOUT, {
@@ -218,7 +218,7 @@ function eY() {
   })
 }
 
-function eq() {
+function eY() {
   let {
     parentAnalyticsLocation: e
   } = (0, Chunk906732.ZP)(), t = (0, Chunk442837.e7)([Chunk754277.Z], () => Chunk754277.Z.isMuted()), n = exports ? Chunk388032.intl.string(Chunk388032.t.ScHlfn) : Chunk388032.intl.string(Chunk388032.t.zqxfra);
@@ -244,11 +244,11 @@ function eK(e) {
     limit: O
   } = (0, eo.Z)(t), E = i.useCallback(() => {
     (0, eu.Z)()
-  }, []), y = (0, Y.bp)(), v = i.useCallback(e => {
+  }, []), y = (0, q.bp)(), v = i.useCallback(e => {
     if (eE.Z.isVideoEnabled() === e) return;
     let n = () => {
       var n;
-      b.Z.setVideoEnabled(e), e && (0, q.uL)(eL.Z5c.CHANNEL(null != (n = t.getGuildId()) ? n : eL.ME, t.id))
+      b.Z.setVideoEnabled(e), e && (0, Y.uL)(eL.Z5c.CHANNEL(null != (n = t.getGuildId()) ? n : eL.ME, t.id))
     };
     (0, L.v)(s, L.d.CAMERA, e), e ? (0, ef.Z)(n, y) : n()
   }, [t, y, s]), S = p || n || h, {
@@ -348,7 +348,7 @@ function eQ(e) {
   let {
     channel: t,
     enableActivities: n
-  } = e, i = (0, Y.bp)(), {
+  } = e, i = (0, q.bp)(), {
     parentAnalyticsLocation: l,
     newestAnalyticsLocation: o
   } = (0, x.ZP)(), s = i === eL.IlC.POPOUT, c = (0, T.KF)(t.id), p = (0, T.g5)(c), {
@@ -572,7 +572,7 @@ class eJ extends Chunk647438.PureComponent {
       channel: l,
       voiceStates: a
     } = this.props;
-    return null != Chunk647438 ? null : (null == Chunk120356 ? true : Chunk120356.isGuildStageVoice()) && null == a.find(e => e.user.id === em.default.getId() && (0, ei.gf)(e.voiceState) === ei.xO.ON_STAGE) && (0, Chunk485287.U5)(Chunk120356.id) ? (0, Chunk951288.jsx)(eq, {}) : !require && exports ? (0, Chunk951288.jsx)(Chunk481060.ua7, {
+    return null != Chunk647438 ? null : (null == Chunk120356 ? true : Chunk120356.isGuildStageVoice()) && null == a.find(e => e.user.id === em.default.getId() && (0, ei.gf)(e.voiceState) === ei.xO.ON_STAGE) && (0, Chunk485287.U5)(Chunk120356.id) ? (0, Chunk951288.jsx)(eY, {}) : !require && exports ? (0, Chunk951288.jsx)(Chunk481060.ua7, {
       text: Chunk388032.intl.string(Chunk388032.t["i+SO/f"]),
       tooltipClassName: Chunk890332.noiseCancellationTooltip,
       forceOpen: true,
@@ -591,7 +591,7 @@ class eJ extends Chunk647438.PureComponent {
       targetElementRef: this.krispButtonRef,
       position: "top",
       align: "center",
-      renderPopout: () => (0, Chunk951288.jsx)(eY, {}),
+      renderPopout: () => (0, Chunk951288.jsx)(eq, {}),
       children: (t, n) => {
         let {
           isShown: i

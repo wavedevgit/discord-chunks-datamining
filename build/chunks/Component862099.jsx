@@ -288,7 +288,7 @@ function W(e) {
   })
 }
 
-function Y(e) {
+function q(e) {
   let {
     channel: t,
     label: n
@@ -308,7 +308,7 @@ function Y(e) {
   })
 }
 
-function q(e) {
+function Y(e) {
   let {
     stageInstance: t,
     channel: n
@@ -379,7 +379,7 @@ function Q(e) {
         className: G.userNames,
         children: (0, _.ER)(a, d, null == t ? true : t.id, n.length)
       })]
-    }) : null, p && null == f && (0, i.jsx)(Y, {
+    }) : null, p && null == f && (0, i.jsx)(q, {
       channel: t,
       label: h
     })]
@@ -404,10 +404,10 @@ let X = Chunk647438.memo(function(e) {
   if (n) return (0, i.jsx)(f.Z, {
     guild: t
   });
-  null == l || u ? h && (d = (0, i.jsx)(q, {
+  null == l || u ? h && (d = (0, i.jsx)(Y, {
     stageInstance: o,
     channel: r
-  })) : l.entity_type === k.WX.STAGE_INSTANCE && h ? d = (0, i.jsx)(q, {
+  })) : l.entity_type === k.WX.STAGE_INSTANCE && h ? d = (0, i.jsx)(Y, {
     stageInstance: o,
     channel: r
   }) : l.entity_type === k.WX.EXTERNAL ? d = (0, i.jsx)(z, {
