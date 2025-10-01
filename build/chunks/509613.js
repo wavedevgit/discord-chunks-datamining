@@ -33,10 +33,10 @@ require.d(exports, {
     }
     return t
   },
-  ax: () => f,
+  ax: () => N,
   k4: () => E,
   m7: () => o,
-  qs: () => N,
+  qs: () => f,
   so: () => s,
   vB: () => a,
   wf: () => c,
@@ -125,11 +125,11 @@ function y(e, t, n) {
   })
 }
 
-function f(e, t) {
+function N(e, t) {
   return y(e, i.Jq.BUTTON, t)
 }
 
-function N(e, t) {
+function f(e, t) {
   return y(e, i.Jq.TOGGLE, t)
 }
 

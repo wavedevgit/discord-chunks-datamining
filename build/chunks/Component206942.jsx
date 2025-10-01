@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk649926 = require("./649926.js");
 let y = Chunk647438.createContext(true);
 
-function f(e) {
+function N(e) {
   let {
     sound: t
   } = e, {
@@ -39,7 +39,7 @@ function f(e) {
     })
   })
 }
-let N = [{
+let f = [{
     useLabel: () => Chunk388032.intl.string(Chunk388032.t.jD1qzM),
     sound: "message1",
     useDisabled: Chunk734934.p,
@@ -121,7 +121,7 @@ let N = [{
           className: T.soundRow,
           children: [(0, i.jsx)("span", {
             children: t
-          }), (0, i.jsx)(f, {
+          }), (0, i.jsx)(N, {
             sound: e.sound
           })]
         })
@@ -181,5 +181,5 @@ let N = [{
         children: t
       })
     },
-    buildLayout: () => [N[0].node, A, N[1].node, S, ...N.slice(2).map(e => e.node)]
+    buildLayout: () => [f[0].node, A, f[1].node, S, ...f.slice(2).map(e => e.node)]
   })

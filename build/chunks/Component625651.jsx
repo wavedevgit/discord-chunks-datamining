@@ -1,9 +1,9 @@
 /** Chunk was on 88856 **/
 /** chunk id: 625651, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => h,
-  f: () => _
-});
+  default: () => _,
+  f: () => h
+}), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk494497 = require("./494497.js"),
@@ -59,52 +59,65 @@ function I(e, t) {
   return o
 }
 
-function _(e) {
+function h(e) {
   var t, n, {
-      size: o,
-      title: a,
-      body: i,
-      warningText: l,
-      error: u,
-      isLoading: d,
-      onDeactivate: f
+      size: a,
+      title: i,
+      body: s,
+      warningText: u,
+      acknowledgementText: d,
+      error: f,
+      isLoading: m,
+      onDeactivate: b
     } = e,
-    m = I(e, ["size", "title", "body", "warningText", "error", "isLoading", "onDeactivate"]);
-  return (0, r.jsxs)(c.Modal, (t = y({}, m), n = n = {
-    size: o,
-    title: k.intl.formatToPlainString(x.default.iEBw1N, {
-      perk: a
+    p = I(e, ["size", "title", "body", "warningText", "acknowledgementText", "error", "isLoading", "onDeactivate"]);
+  let [g, x] = o.useState(false);
+  return (0, r.jsxs)(c.Modal, (t = y({}, p), n = n = {
+    size: a,
+    title: O.intl.formatToPlainString(k.default.iEBw1N, {
+      perk: i
     }),
-    subtitle: k.intl.formatToPlainString(x.default["7o0K+/"], {
-      perk: a
+    subtitle: O.intl.formatToPlainString(k.default["7o0K+/"], {
+      perk: i
     }),
     actions: [{
       variant: "secondary",
-      text: k.intl.string(k.t["ETE/oK"]),
-      onClick: m.onClose
+      text: O.intl.string(O.t["ETE/oK"]),
+      onClick: p.onClose
     }, {
       variant: "critical-primary",
-      text: k.intl.string(x.default.PYPdl5),
-      loading: d,
-      onClick: f
+      text: O.intl.string(k.default.PYPdl5),
+      loading: m,
+      onClick: b,
+      disabled: null != d && !g
     }],
-    children: [i, (0, r.jsxs)("div", {
+    children: [s, (0, r.jsxs)("div", {
       className: j.warningContainer,
-      children: [(0, r.jsx)(s.Text, {
+      children: [(0, r.jsx)(l.Text, {
         color: "text-danger",
         variant: "eyebrow",
-        children: k.intl.string(x.default.OVt5CA)
-      }), (0, r.jsx)(s.Text, {
+        children: O.intl.string(k.default.OVt5CA)
+      }), (0, r.jsx)(l.Text, {
         className: j.warningText,
         tag: "span",
         variant: "text-sm/medium",
-        children: l
+        children: u
       })]
-    }), null != u && (0, r.jsx)(s.Text, {
+    }), null != f && (0, r.jsx)(l.Text, {
       className: j.errorText,
       color: "text-danger",
       variant: "text-sm/semibold",
-      children: u
+      children: f
+    }), null != d && (0, r.jsxs)("div", {
+      className: j.acknowledgementContainer,
+      children: [(0, r.jsx)(l.XZJ, {
+        checked: g,
+        onChange: x
+      }), (0, r.jsx)(l.Text, {
+        variant: "text-sm/medium",
+        color: "text-secondary",
+        children: d
+      })]
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
@@ -118,24 +131,24 @@ function _(e) {
   }), t))
 }
 
-function h(e) {
+function _(e) {
   var {
     guildId: t,
     powerup: n
   } = e, c = I(e, ["guildId", "powerup"]);
   let {
-    onDeactivate: h,
-    error: T,
-    isLoading: w
-  } = (0, v.ZP)(t, n), {
+    onDeactivate: _,
+    error: w,
+    isLoading: T
+  } = (0, x.ZP)(t, n), {
     onClose: S
   } = c, E = o.useCallback(e => {
-    h(e).then(() => {
+    _(e).then(() => {
       null == S || S()
     })
-  }, [S, h]), P = function(e, t) {
+  }, [S, _]), C = function(e, t) {
     let n = (0, i.e7)([u.Z], () => u.Z.getMemberCount(e)),
-      c = (0, l.Z)(e),
+      c = (0, s.Z)(e),
       m = (0, i.e7)([f.Z], () => {
         var t;
         return (null == (t = f.Z.getGuild(e)) ? true : t.vanityURLCode) != null
@@ -149,62 +162,62 @@ function h(e) {
       let e;
       switch (t.skuId) {
         case a.If:
-          e = g > 0 ? k.intl.formatToPlainString(x.default["4jSvr6"], {
+          e = g > 0 ? O.intl.formatToPlainString(k.default["4jSvr6"], {
             perk: t.title,
             memberCount: g
-          }) : k.intl.formatToPlainString(x.default.cavtEh, {
+          }) : O.intl.formatToPlainString(k.default.cavtEh, {
             perk: t.title
           });
           break;
         case a.A$:
-          e = m ? (0, r.jsx)(s.Text, {
+          e = m ? (0, r.jsx)(l.Text, {
             color: "text-danger",
             variant: "text-sm/semibold",
-            children: k.intl.string(x.default.hN75yc)
-          }) : (0, r.jsx)(s.Text, {
+            children: O.intl.string(k.default.hN75yc)
+          }) : (0, r.jsx)(l.Text, {
             color: "text-danger",
             variant: "text-sm/semibold",
-            children: k.intl.string(x.default.Du91RU)
+            children: O.intl.string(k.default.Du91RU)
           });
           break;
         case a.MB:
         case a.Vk:
-          e = k.intl.string(x.default.Vf2ZcX);
+          e = O.intl.string(k.default.Vf2ZcX);
           break;
         default:
-          e = k.intl.formatToPlainString(x.default["4jSvr6"], {
+          e = O.intl.formatToPlainString(k.default["4jSvr6"], {
             perk: t.title,
             memberCount: n
           })
       }
       return m && t.skuId === a.XW && (e = (0, r.jsxs)(r.Fragment, {
-        children: [e, (0, r.jsx)(s.Text, {
+        children: [e, (0, r.jsx)(l.Text, {
           color: "text-danger",
           variant: "text-sm/semibold",
-          children: p ? k.intl.string(x.default.TkNA7e) : k.intl.string(x.default.M4XL5u)
+          children: p ? O.intl.string(k.default.TkNA7e) : O.intl.string(k.default.M4XL5u)
         })]
       })), e
     }, [t, g, n, m, p])
   }(t, n);
-  return (0, m.$)(t, n, m.w.DEACTIVATE), (0, r.jsx)(_, y({
-    size: n.type === O.Us.LEVEL ? "md" : "sm",
+  return (0, m.$)(t, n, m.w.DEACTIVATE), (0, r.jsx)(h, y({
+    size: n.type === v.Us.LEVEL ? "md" : "sm",
     title: n.title,
     body: (() => {
       switch (n.type) {
-        case O.Us.LEVEL:
+        case v.Us.LEVEL:
           return (0, r.jsx)(g.Z, {
             powerup: n
           });
-        case O.Us.PERK:
+        case v.Us.PERK:
           return (0, r.jsx)(p.m, {
             className: j.image,
             powerup: n
           })
       }
     })(),
-    warningText: P,
-    error: T,
-    isLoading: w,
+    warningText: C,
+    error: w,
+    isLoading: T,
     onDeactivate: E
   }, c))
 }

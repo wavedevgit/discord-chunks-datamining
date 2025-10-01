@@ -60,7 +60,8 @@ function d(e) {
         className: u.image
       })
     }),
-    warningText: l.intl.string(s.default.oHNuWl),
+    warningText: s.intl.string(l.default.oHNuWl),
+    acknowledgementText: s.intl.string(l.default.dXQR1t),
     isLoading: f,
     error: b,
     onDeactivate: () => {

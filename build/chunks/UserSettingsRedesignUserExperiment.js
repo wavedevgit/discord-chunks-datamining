@@ -3,6 +3,7 @@
 "use strict";
 require.d(exports, {
   KV: () => s,
+  NT: () => l,
   gj: () => o,
   wy: () => a,
   yP: () => i
@@ -13,21 +14,32 @@ let r = (0, require("./818083.js").B)({
     label: "User Settings Redesign",
     defaultConfig: {
       enabled: false,
-      showRedesignedNotifications: false
+      showRedesignedNotifications: false,
+      showLegacyOpen: false
     },
     treatments: [{
       id: 1,
       label: "Enable user settings redesign with legacy notifications",
       config: {
         enabled: true,
-        showRedesignedNotifications: false
+        showRedesignedNotifications: false,
+        showLegacyOpen: false
       }
     }, {
       id: 2,
       label: "Enable user settings redesign with new notifications page",
       config: {
         enabled: true,
-        showRedesignedNotifications: true
+        showRedesignedNotifications: true,
+        showLegacyOpen: false
+      }
+    }, {
+      id: 3,
+      label: "Enable user settings redesign with legacy open",
+      config: {
+        enabled: true,
+        showRedesignedNotifications: false,
+        showLegacyOpen: true
       }
     }]
   }),
@@ -50,4 +62,9 @@ let r = (0, require("./818083.js").B)({
     location: e
   }, {
     autoTrackExposure: false
-  }).showRedesignedNotifications
+  }).showRedesignedNotifications,
+  l = () => r.useExperiment({
+    location: "user_settings"
+  }, {
+    autoTrackExposure: false
+  }).showLegacyOpen
