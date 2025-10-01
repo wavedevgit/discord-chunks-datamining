@@ -57,6 +57,7 @@ function b(e) {
         })]
       }), j && (0, r.jsx)(s.zxk, {
         variant: "primary",
+        size: "sm",
         icon: s.EOn,
         text: m.intl.string(m.t.ZbS4QE),
         onClick: P
