@@ -1,4 +1,4 @@
-/** Chunk was on 37384 **/
+/** Chunk was on 49613 **/
 /** chunk id: 561472, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => v
@@ -27,10 +27,10 @@ let v = function(e) {
     style: n,
     channel: v,
     draftType: x
-  } = e, [O, j] = i.useState(true), E = (0, l.e7)([d.Z], () => d.Z.hasLayers()), S = (0, l.e7)([p.Z], () => null != v && p.Z.can(C.Plq.ATTACH_FILES, v), [v]), P = null != (0, l.e7)([o.Z], () => o.Z.getActiveCommand(v.id)), I = v.getGuildId(), Z = x === c.d.FirstThreadMessage, T = (0, a.$5)(v), N = i.useMemo(() => !E && (v.isPrivate() && !v.isManaged() || null != I && !T && S && u.Z.canChatInGuild(I)), [S, T, v, I, E]), A = Z ? C.TPd.GUILD_THREADS_ONLY.has(v.type) ? _.intl.string(_.t.RBBLhI) : _.intl.string(_.t.gUx4en) : O ? _.intl.format(_.t.dYP2FR, {
+  } = e, [O, j] = i.useState(true), E = (0, l.e7)([d.Z], () => d.Z.hasLayers()), S = (0, l.e7)([p.Z], () => null != v && p.Z.can(C.Plq.ATTACH_FILES, v), [v]), P = null != (0, l.e7)([o.Z], () => o.Z.getActiveCommand(v.id)), I = v.getGuildId(), Z = x === c.d.FirstThreadMessage, N = (0, a.$5)(v), T = i.useMemo(() => !E && (v.isPrivate() && !v.isManaged() || null != I && !N && S && u.Z.canChatInGuild(I)), [S, N, v, I, E]), A = Z ? C.TPd.GUILD_THREADS_ONLY.has(v.type) ? _.intl.string(_.t.RBBLhI) : _.intl.string(_.t.gUx4en) : O ? _.intl.format(_.t.dYP2FR, {
     destination: (0, s.F6)(v, f.default, h.Z, true)
   }) : _.intl.string(_.t.h76ulJ);
-  return P || !N ? null : (0, r.jsx)(b.Z, {
+  return P || !T ? null : (0, r.jsx)(b.Z, {
     className: t,
     style: n,
     title: A,
@@ -38,7 +38,7 @@ let v = function(e) {
     icons: y.J6,
     onDrop: e => {
       if (P) returnfalse;
-      N && null != v && ((0, g.d)(e, v, x, {
+      T && null != v && ((0, g.d)(e, v, x, {
         requireConfirm: O,
         showLargeMessageDialog: false,
         origin: "drag_drop"

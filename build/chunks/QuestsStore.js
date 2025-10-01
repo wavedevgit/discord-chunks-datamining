@@ -529,6 +529,9 @@ class eB extends(A = Chunk442837.ZP.Store) {
     var t;
     return null != (t = I.get(e)) && t
   }
+  getQuestLoadedViaPreview(e) {
+    return S.get(e)
+  }
 }
 k(eB, "displayName", "QuestsStore");
 let eZ = new eB(Chunk570140.Z, {

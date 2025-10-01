@@ -1,5 +1,6 @@
-/** Chunk was on 93886 **/
-/** chunk id: 829575, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 829575, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   row: "row__19fd1",
   clickable: "clickable__19fd1",

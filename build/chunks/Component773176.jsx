@@ -1,4 +1,4 @@
-/** Chunk was on 37384 **/
+/** Chunk was on 49613 **/
 /** chunk id: 773176, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => eC
@@ -208,7 +208,7 @@ function em(e) {
       isFocused: s
     } = e, {
       author: d
-    } = n, p = (0, u.e7)([V.Z], () => V.Z.getGuild(t.guild_id), [t.guild_id]), h = (0, u.e7)([B.default], () => B.default.getId()), g = (0, D.$R)(t), b = (0, D.Gu)(t), {
+    } = n, p = (0, u.e7)([F.Z], () => F.Z.getGuild(t.guild_id), [t.guild_id]), h = (0, u.e7)([B.default], () => B.default.getId()), g = (0, L.$R)(t), b = (0, L.Gu)(t), {
       firstMessage: y
     } = (0, u.e7)([_.Z], () => _.Z.getMessage(t.id), [t.id]), C = U.nc.useSetting(), x = U.Sb.useSetting(), O = (0, u.e7)([G.Z], () => null == t.guild_id || G.Z.canChatInGuild(t.guild_id), [t]), {
       canManageMessages: j,
@@ -216,7 +216,7 @@ function em(e) {
     } = (0, u.cj)([z.Z], () => ({
       canAddNewReactions: O && z.Z.can(el.Plq.ADD_REACTIONS, t),
       canManageMessages: z.Z.can(el.Plq.MANAGE_MESSAGES, t)
-    }), [t, O]), P = (0, R.U)(t, n), I = (0, D.NE)(t, n), Z = (0, D.Ek)(n), T = (0, u.e7)([E.Z], () => null != t.guild_id && E.Z.isLurking(t.guild_id), [t]), N = (0, u.e7)([F.ZP], () => null != t.guild_id && F.ZP.isCurrentUserGuest(t.guild_id), [t]), A = d.id === h, w = (j || n.canDeleteOwnMessage(h)) && g && !el.V$x.UNDELETABLE.has(n.type);
+    }), [t, O]), P = (0, R.U)(t, n), I = (0, L.NE)(t, n), Z = (0, L.Ek)(n), N = (0, u.e7)([E.Z], () => null != t.guild_id && E.Z.isLurking(t.guild_id), [t]), T = (0, u.e7)([V.ZP], () => null != t.guild_id && V.ZP.isCurrentUserGuest(t.guild_id), [t]), A = d.id === h, w = (j || n.canDeleteOwnMessage(h)) && g && !el.V$x.UNDELETABLE.has(n.type);
     n.type === el.uaV.AUTO_MODERATION_ACTION && (w = w && j), t.isModeratorReportChannel() && (w = w && n.id !== (null == y ? true : y.id) && !(0, $.Z)(n));
     let M = (0, X.a4)(n),
       H = (0, Q.Z)(n, t),
@@ -228,8 +228,8 @@ function em(e) {
         canChat: O,
         renderReactions: C,
         canAddNewReactions: S,
-        isLurking: T,
-        isGuest: N,
+        isLurking: N,
+        isGuest: T,
         isActiveChannelOrUnarchivableThread: g
       }),
       K = t.type === el.d4z.GUILD_ANNOUNCEMENT && null != p && p.features.has(el.oNc.NEWS) && (A || j) && (0, m.Z)(n),
@@ -243,7 +243,7 @@ function em(e) {
       } = k.Z.useExperiment({
         location: "message_utilities"
       }),
-      ea = (0, u.e7)([L.Z], () => null != L.Z.getSavedMessage(t.id, n.id)),
+      ea = (0, u.e7)([D.Z], () => null != D.Z.getSavedMessage(t.id, n.id)),
       eo = (0, c.Z)(a),
       es = (0, u.e7)([f.Z], () => f.Z.keyboardModeEnabled);
     return {
@@ -282,13 +282,13 @@ function em(e) {
     eo({
       emojiPicker: !Y
     })
-  }, [Y, eo]), eb = (0, D.$R)(t), eC = n.hasFlag(el.iLy.CROSSPOSTED), [e_, ev] = (0, g.cv)(w ? [d.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE] : []), ex = e_ === d.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE, [eO, ej] = i.useState(false), eE = i.useCallback(() => {
+  }, [Y, eo]), eb = (0, L.$R)(t), eC = n.hasFlag(el.iLy.CROSSPOSTED), [e_, ev] = (0, g.cv)(w ? [d.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE] : []), ex = e_ === d.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE, [eO, ej] = i.useState(false), eE = i.useCallback(() => {
     ej(true)
   }, []), eS = i.useCallback(() => {
     ej(false)
   }, []), eP = i.useCallback((e, t) => {
     ev(ea.L.TAKE_ACTION), (0, en.ts)(e, t)
-  }, [ev]), eI = (0, N.Z)(t), eZ = (0, T.Nt)(), eT = eI && eZ && !n.hasPotions(), eN = i.useCallback(e => {
+  }, [ev]), eI = (0, T.Z)(t), eZ = (0, N.Nt)(), eN = eI && eZ && !n.hasPotions(), eT = i.useCallback(e => {
     try {
       (0, S.qc)(t.id, n.id, e)
     } catch (e) {
@@ -343,7 +343,7 @@ function em(e) {
         isFocused: ed,
         channel: t,
         message: n
-      }), eT ? (0, r.jsx)(et.sF, {
+      }), eN ? (0, r.jsx)(et.sF, {
         label: es.intl.string(es.t.icaJW1),
         icon: p.l22,
         onClick: () => {
@@ -352,7 +352,7 @@ function em(e) {
           }), (0, Z.s)({
             channelId: t.id,
             message: n,
-            onRedeem: eN,
+            onRedeem: eT,
             onClose: P.Qy,
             source: I.YD.MessageExpandingButtons
           })

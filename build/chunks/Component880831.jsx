@@ -1,7 +1,7 @@
-/** Chunk was on 37384 **/
+/** Chunk was on 49613 **/
 /** chunk id: 880831, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => N,
+  Z: () => T,
   z: () => Z
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -32,7 +32,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk832063 = require("./832063.js");
 let Z = 10 * Chunk70956.Z.Millis.SECOND;
 
-function T(e) {
+function N(e) {
   var t;
   let {
     message: n
@@ -52,8 +52,8 @@ function T(e) {
     isInteracting: v,
     shouldFilterKeywords: E
   }).content : null, {
-    contentPlaceholder: T,
-    renderedContent: N,
+    contentPlaceholder: N,
+    renderedContent: T,
     trailingIcon: A,
     leadingIcon: w
   } = (0, y.f)(n, Z, l, o, I.messageContent, {
@@ -79,8 +79,8 @@ function T(e) {
       className: a()(I.messageContentWrapper, {
         [I.mentioned]: n.mentioned
       }),
-      children: [null != R ? null : w, null != (t = null != N ? N : R) ? t : (0, r.jsx)("span", {
-        children: T
+      children: [null != R ? null : w, null != (t = null != T ? T : R) ? t : (0, r.jsx)("span", {
+        children: N
       }), null != R ? null : A]
     }), (0, r.jsx)("img", {
       alt: "",
@@ -94,7 +94,7 @@ function T(e) {
   })
 }
 
-function N(e) {
+function T(e) {
   let {
     channelId: t,
     className: n
@@ -208,7 +208,7 @@ function N(e) {
         ref: e => y(t.message.id, null != e ? e.offsetHeight : null),
         className: I.toastWrapper,
         style: e,
-        children: (0, r.jsx)(T, {
+        children: (0, r.jsx)(N, {
           message: t.message
         })
       }))

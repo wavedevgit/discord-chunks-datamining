@@ -1,4 +1,4 @@
-/** Chunk was on 37384 **/
+/** Chunk was on 49613 **/
 /** chunk id: 62764, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => G
@@ -61,7 +61,7 @@ function H(e) {
   return e
 }
 
-function F(e, t) {
+function V(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -74,7 +74,7 @@ function F(e, t) {
   }), e
 }
 
-function V(e) {
+function F(e) {
   let {
     channel: t
   } = e, l = t.isArchivedThread(), a = (0, O.P0)(t), [o, u] = i.useState(false), d = () => {
@@ -85,7 +85,7 @@ function V(e) {
   return a ? (0, r.jsx)(c.zxk, {
     size: "sm",
     variant: "secondary",
-    text: l ? k.intl.string(L.default["2Y4vkp"]) : k.intl.string(L.default.YIbR4u),
+    text: l ? k.intl.string(D.default["2Y4vkp"]) : k.intl.string(D.default.YIbR4u),
     onClick: () => {
       true === s.K.get(E.F) ? d() : (0, c.ZDy)(async () => {
         let {
@@ -119,7 +119,7 @@ function G(e) {
   } = e, {
     ref: x,
     width: O
-  } = (0, p.ZP)(), [E, L] = i.useState(3), [G, z] = i.useState(!n), [W, q] = (0, h.Z)(false, 2e3), Y = (0, o.e7)([Z.Z], () => Z.Z.getChannel(t), [t]), {
+  } = (0, p.ZP)(), [E, D] = i.useState(3), [G, z] = i.useState(!n), [W, q] = (0, h.Z)(false, 2e3), Y = (0, o.e7)([Z.Z], () => Z.Z.getChannel(t), [t]), {
     firstMessage: K
   } = (0, w.cl)(Y), X = (0, o.e7)([P.Z], () => P.Z.hasJoined(t)), {
     disableReactionUpdates: J,
@@ -147,7 +147,7 @@ function G(e) {
   });
   let [eo, es] = i.useState(true);
   if (i.useEffect(() => {
-      null != O && (L(Math.floor((O - 280) / 58)), es(false))
+      null != O && (D(Math.floor((O - 280) / 58)), es(false))
     }, [O]), null == Y || null == K) return null;
   let ec = K.reactions.length > 0,
     eu = () => {
@@ -159,7 +159,7 @@ function G(e) {
         location: {
           section: R.jXE.CHANNEL_HEADER
         }
-      }), (0, N.JG)((0, T.EO)(Y, er), () => q(true))
+      }), (0, T.JG)((0, N.EO)(Y, er), () => q(true))
     },
     ep = () => {
       u.Z.jumpToMessage({
@@ -172,19 +172,19 @@ function G(e) {
     eh = X ? c.dz2 : c.Dkj;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: a()(D.container, {
-        [D.header]: G
+      className: a()(L.container, {
+        [L.header]: G
       }),
       ref: x,
       children: [en ? (0, r.jsx)("div", {
-        className: D.reportedMessageActions,
+        className: L.reportedMessageActions,
         children: (0, r.jsx)(S.Z, {
           message: K,
           channel: Y
         })
       }) : (0, r.jsxs)("div", {
-        className: a()(D.reactButtons, {
-          [D.loading]: eo
+        className: a()(L.reactButtons, {
+          [L.loading]: eo
         }),
         children: [!ec && !Q && null != ei && (0, r.jsx)("div", {
           className: U.reactions,
@@ -213,7 +213,7 @@ function G(e) {
           isGuest: ee,
           isPendingMember: et,
           maxReactions: E,
-          className: D.reactions,
+          className: L.reactions,
           useChatFontScaling: false,
           isForumToolbar: true,
           forceHideReactionCreates: true
@@ -222,19 +222,19 @@ function G(e) {
           message: K,
           channel: Y,
           useChatFontScaling: false,
-          className: a()(B.secondary, D.addReactButton, {
-            [D.hasNoReactions]: !ec
+          className: a()(B.secondary, L.addReactButton, {
+            [L.hasNoReactions]: !ec
           }),
           isForumToolbar: true,
           children: !ec && k.intl.string(k.t.xpOyTE)
         })]
       }), (0, r.jsxs)("div", {
-        className: D.buttons,
-        children: [en ? (0, r.jsx)(V, {
+        className: L.buttons,
+        children: [en ? (0, r.jsx)(F, {
           channel: Y
         }) : (0, r.jsx)(c.ua7, {
           text: k.intl.string(k.t.F7oeDg),
-          children: e => (0, r.jsx)(c.zxk, F(H({}, e), {
+          children: e => (0, r.jsx)(c.zxk, V(H({}, e), {
             icon: eh,
             size: "sm",
             variant: "secondary",
@@ -243,13 +243,13 @@ function G(e) {
           }))
         }), (0, r.jsx)(c.ua7, {
           text: k.intl.string(k.t.WqhZsr),
-          children: e => W ? (0, r.jsx)(c.zxk, F(H({}, e), {
+          children: e => W ? (0, r.jsx)(c.zxk, V(H({}, e), {
             icon: c.dz2,
             size: "sm",
             variant: "secondary",
             onClick: ed,
             text: k.intl.string(k.t["t5VZ8/"])
-          })) : (0, r.jsx)(c.hU, F(H({}, e), {
+          })) : (0, r.jsx)(c.hU, V(H({}, e), {
             icon: c.xPt,
             size: "sm",
             variant: "secondary",
@@ -258,7 +258,7 @@ function G(e) {
           }))
         }), !n && (0, r.jsx)(c.ua7, {
           text: k.intl.string(k.t.nFP4oa),
-          children: e => (0, r.jsx)(c.hU, F(H({}, e), {
+          children: e => (0, r.jsx)(c.hU, V(H({}, e), {
             icon: c.Za2,
             size: "sm",
             variant: "secondary",

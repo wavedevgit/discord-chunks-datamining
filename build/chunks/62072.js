@@ -1,4 +1,4 @@
-/** Chunk was on 37384 **/
+/** Chunk was on 49613 **/
 /** chunk id: 62072, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => I
@@ -34,8 +34,8 @@ let I = function(e, t, n) {
     if (!I.current || n.target !== n.currentTarget) return;
     let r = !n.altKey && !n.ctrlKey && !n.metaKey && !n.shiftKey,
       Z = n.altKey && !(n.ctrlKey || n.metaKey || n.shiftKey),
-      T = n.ctrlKey && !(n.altKey || n.metaKey || n.shiftKey),
-      N = n.metaKey && !(n.altKey || n.ctrlKey || n.shiftKey),
+      N = n.ctrlKey && !(n.altKey || n.metaKey || n.shiftKey),
+      T = n.metaKey && !(n.altKey || n.ctrlKey || n.shiftKey),
       A = n.shiftKey && !(n.altKey || n.ctrlKey || n.metaKey),
       w = b.Z.getMessage(t, e),
       M = h.Z.getChannel(t);
@@ -46,7 +46,7 @@ let I = function(e, t, n) {
         r && (y.Z.can(P.Plq.MANAGE_MESSAGES, M) || w.canDeleteOwnMessage(R)) && (n.preventDefault(), (0, S.$Z)(M, w, n));
         break;
       case "c":
-        ((0, v.isMac)() ? N : T) && C.wS && (n.preventDefault(), (0, C.JG)(w.content));
+        ((0, v.isMac)() ? T : N) && C.wS && (n.preventDefault(), (0, C.JG)(w.content));
         break;
       case "e":
         r && !M.isSystemDM() && (0, O.Z)(w, R) && (n.preventDefault(), (0, S.Hd)(M, w));

@@ -1,4 +1,4 @@
-/** Chunk was on 37384 **/
+/** Chunk was on 49613 **/
 /** chunk id: 83896, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   I: () => S
@@ -63,7 +63,7 @@ function S(e) {
     channel: n,
     userId: l,
     setPopoutRef: S
-  } = e, P = i.useRef(null), I = (0, o.e7)([d.Z], () => d.Z.getVoiceChannelId() === n.id), Z = (0, o.e7)([u.Z], () => u.Z.can(_.Plq.CONNECT, n)), T = (null == t ? true : t.emoji) == null || (0, m.K)(t.emoji, n);
+  } = e, P = i.useRef(null), I = (0, o.e7)([d.Z], () => d.Z.getVoiceChannelId() === n.id), Z = (0, o.e7)([u.Z], () => u.Z.can(_.Plq.CONNECT, n)), N = (null == t ? true : t.emoji) == null || (0, m.K)(t.emoji, n);
   i.useEffect(() => {
     null == S || S(null == P ? true : P.current)
   }, [P, S]), i.useEffect(() => {
@@ -72,7 +72,7 @@ function S(e) {
       other_user_id: l
     }, (0, g.Z)(n.id)))
   }, [n.guild_id, n.id, l]);
-  let N = i.useCallback(() => {
+  let T = i.useCallback(() => {
       !I && Z && (c.default.selectVoiceChannel(n.id), p.default.track(_.rMx.HANG_STATUS_CTA_CLICKED, E(j({
         source: "HangStatusPopout"
       }, (0, g.Z)(n.id)), {
@@ -81,7 +81,7 @@ function S(e) {
       })))
     }, [I, Z, n.id, l]),
     A = i.useCallback(() => {
-      if (!I || !T || null == t.state) return;
+      if (!I || !N || null == t.state) return;
       let [e] = (0, b.F)(l, t.state);
       if (null != e) {
         if (e === C.tN.CUSTOM) {
@@ -95,7 +95,7 @@ function S(e) {
           cta_type: "swipe"
         }))
       }
-    }, [I, T, t, n.id, l]);
+    }, [I, N, t, n.id, l]);
   return (0, r.jsxs)("div", {
     ref: P,
     className: a()(O.popover, x.container),
@@ -109,21 +109,21 @@ function S(e) {
       className: x.statusText,
       children: (0, f.O8)(l, t)
     }), I ? (0, r.jsx)(s.ua7, {
-      text: T ? true : v.intl.string(v.t["0LMpW1"]),
+      text: N ? true : v.intl.string(v.t["0LMpW1"]),
       children: e => (0, r.jsx)("div", E(j({}, e), {
         children: (0, r.jsx)(s.zxk, {
           size: "sm",
           variant: "secondary",
           text: v.intl.string(v.t["0eHzpq"]),
           onClick: A,
-          disabled: !T
+          disabled: !N
         })
       }))
     }) : Z && (0, r.jsx)(s.zxk, {
       size: "sm",
       variant: "secondary",
       text: v.intl.string(v.t["B/dHXF"]),
-      onClick: N
+      onClick: T
     })]
   })
 }

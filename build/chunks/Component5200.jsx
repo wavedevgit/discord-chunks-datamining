@@ -1,4 +1,4 @@
-/** Chunk was on 37384 **/
+/** Chunk was on 49613 **/
 /** chunk id: 5200, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Y: () => _
@@ -50,7 +50,7 @@ function _(e) {
     P(true)
   }, [P]), Z = l.useCallback(() => {
     P(false)
-  }, [P]), T = l.useMemo(() => (0, i.jsx)("div", {
+  }, [P]), N = l.useMemo(() => (0, i.jsx)("div", {
     className: g.overlayBadge,
     children: (0, i.jsx)("div", {
       className: g.badgeContainer,
@@ -58,7 +58,7 @@ function _(e) {
         labelType: E
       })
     })
-  }), [E]), N = l.useMemo(() => {
+  }), [E]), T = l.useMemo(() => {
     switch (j) {
       case u.JS.JOIN:
         return (0, i.jsx)("div", {
@@ -123,7 +123,7 @@ function _(e) {
               applicationName: r.application.name,
               imageClassName: g.activitySuggestionImage,
               imageNotFoundClassName: g.brokenImageIconWrapper
-            }), T, N]
+            }), N, T]
           })
         })
       }

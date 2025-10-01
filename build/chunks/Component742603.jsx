@@ -1,4 +1,4 @@
-/** Chunk was on 37384 **/
+/** Chunk was on 49613 **/
 /** chunk id: 742603, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => G
@@ -79,7 +79,7 @@ function H(e) {
     channel: n
   } = e, i = (0, v.bp)(), l = (0, a.e7)([P.Z], () => P.Z.getLayout(n.id, i));
   return (0, r.jsx)(S.Z, {
-    children: (0, r.jsx)(N.Z, {
+    children: (0, r.jsx)(T.Z, {
       participant: t,
       maxVisibleUsers: 5,
       guildId: n.getGuildId(),
@@ -89,7 +89,7 @@ function H(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   let {
     user: t,
     channel: n,
@@ -98,12 +98,12 @@ function F(e) {
   } = e, a = (0, E.Z)(n, t, i);
   return null == t || null == i ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.Z, {
-      className: L.avatar,
+      className: D.avatar,
       size: o.EFr.SIZE_24,
       user: t,
       animate: false
     }), (0, r.jsx)(o.Text, {
-      className: L.playingText,
+      className: D.playingText,
       variant: "text-md/medium",
       color: l,
       children: a
@@ -111,7 +111,7 @@ function F(e) {
   })
 }
 
-function V(e) {
+function F(e) {
   let t, {
       focusedApplication: n,
       focusedParticipant: i,
@@ -123,12 +123,12 @@ function V(e) {
     d = null != s;
   if ((null == i ? true : i.type) === w.fO.ACTIVITY) null != n && (t = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(y.ZP.Divider, {
-      className: L.divider
+      className: D.divider
     }), (0, r.jsx)(f.Z, {
       game: n,
-      className: L.activityIcon
+      className: D.activityIcon
     }), (0, r.jsx)(o.Text, {
-      className: L.playingText,
+      className: D.playingText,
       variant: "text-md/normal",
       color: "none",
       children: (0, c.Z)(n.name)
@@ -142,8 +142,8 @@ function V(e) {
       n = i.stream;
     t = (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(y.ZP.Divider, {
-        className: L.divider
-      }), (0, r.jsx)(F, {
+        className: D.divider
+      }), (0, r.jsx)(V, {
         user: e,
         channel: l,
         stream: n,
@@ -158,7 +158,7 @@ function V(e) {
     recurrenceId: u
   }));
   return (0, r.jsx)("div", {
-    className: L.container,
+    className: D.container,
     children: t
   })
 }
@@ -179,22 +179,22 @@ function G(e) {
   }), [t.id]), b = (0, p.ZP)(t), v = (0, h.KS)(t), [E] = (0, u.Z)((null == g ? true : g.type) === w.fO.ACTIVITY ? [g.applicationId] : []), S = k.intl.string(k.t.BVZqJi);
   t.isDM() ? S = k.intl.string(k.t.jN2DfX) : t.isGroupDM() && (S = k.intl.string(k.t["e5y+go"]));
   let Z = (0, a.e7)([d.Z], () => d.Z.getChannelStatus(t)),
-    N = t.isGuildVoice() && c && null != Z && Z.length > 0,
+    T = t.isGuildVoice() && c && null != Z && Z.length > 0,
     M = (0, I.ZP)(t),
-    H = N ? (0, r.jsx)(o.ua7, {
+    H = T ? (0, r.jsx)(o.ua7, {
       text: k.intl.string(k.t.Mgpxi4),
       delay: 500,
       position: "bottom",
       shouldShow: M,
       children: e => (0, r.jsxs)(o.P3F, B(U({}, e), {
-        className: l()(L.channelStatusClickable, {
-          [L.hoverable]: M
+        className: l()(D.channelStatusClickable, {
+          [D.hoverable]: M
         }),
-        onClick: M ? F : true,
+        onClick: M ? V : true,
         children: [(0, r.jsx)(o.Text, {
           variant: "text-xs/normal",
-          className: l()(L.channelStatus, D.markup, {
-            [L.hoverable]: M
+          className: l()(D.channelStatus, L.markup, {
+            [D.hoverable]: M
           }),
           children: x.Z.parseVoiceChannelStatus(Z, true, {
             channelId: t.id
@@ -202,14 +202,14 @@ function G(e) {
         }), M && (0, r.jsx)(o.vdY, {
           size: "custom",
           color: "currentColor",
-          className: l()(L.pencilIcon, L.hoverable),
+          className: l()(D.pencilIcon, D.hoverable),
           width: 14,
           height: 14
         })]
       }))
     }) : null;
 
-  function F() {
+  function V() {
     (0, o.ZDy)(async () => {
       let {
         default: e
@@ -225,17 +225,17 @@ function G(e) {
     channelId: t.id
   });
   return (0, r.jsxs)("div", {
-    className: L.subtitleContainer,
+    className: D.subtitleContainer,
     children: [(0, r.jsx)(o.f6W, {
       theme: R.BR.DARK,
       children: e => (0, r.jsxs)(y.ZP, {
         onDoubleClick: C.O,
         transparent: true,
-        className: l()(e, L.headerBar),
-        innerClassName: L.headerBarChildren,
-        toolbarClassName: L.toolbar,
+        className: l()(e, D.headerBar),
+        innerClassName: D.headerBarChildren,
+        toolbarClassName: D.toolbar,
         childrenBottom: H,
-        toolbar: (0, r.jsx)(T.Z, {
+        toolbar: (0, r.jsx)(N.Z, {
           channel: t,
           appContext: s,
           inCall: c,
@@ -243,7 +243,7 @@ function G(e) {
           exitFullScreen: m
         }),
         children: [(0, r.jsx)(y.ZP.Title, {
-          wrapperClassName: L.title,
+          wrapperClassName: D.title,
           children: (0, r.jsxs)(r.Fragment, {
             children: [null != v ? (0, r.jsx)(y.ZP.ChannelIcon, {
               icon: v,
@@ -254,14 +254,14 @@ function G(e) {
                 size: "xs",
                 "aria-label": k.intl.string(k.t.VHXh8f),
                 color: o.TVs.colors.INTERACTIVE_NORMAL,
-                className: L.secureFramesIcon
+                className: D.secureFramesIcon
               }))
             })]
           })
         }), (0, r.jsx)(_.TS, {
           channel: t,
           guild: i
-        }), (0, r.jsx)(V, {
+        }), (0, r.jsx)(F, {
           focusedApplication: E,
           focusedParticipant: g,
           channel: t

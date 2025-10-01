@@ -1,5 +1,5 @@
-/** Chunk was on 49902 **/
-/** chunk id: 996921, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 56848 **/
+/** chunk id: 996921, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => g,
   h: () => f
@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk314897 = require("./314897.js"),
@@ -16,22 +16,22 @@ var Chunk120356 = require("./120356.js"),
   Chunk512219 = require("./512219.js");
 
 function f(e) {
-  let t = (0, a.e7)([o.default], () => o.default.getId() === e),
-    n = (0, s.zPA)(),
-    r = (0, a.e7)([c.Z], () => c.Z.hasSaveablePendingChanges());
-  return t && (n || r)
+  let t = (0, l.e7)([o.default], () => o.default.getId() === e),
+    r = (0, s.zPA)(),
+    n = (0, l.e7)([c.Z], () => c.Z.hasSaveablePendingChanges());
+  return t && (r || n)
 }
 
 function g(e) {
   let {
     userId: t,
-    className: n
-  } = e, i = (0, a.e7)([o.default], () => o.default.getId() === t), c = (0, s.zPA)();
-  return i ? (0, r.jsx)("div", {
-    className: l()(d.container, n),
-    children: c ? (0, r.jsx)(s.c43, {
+    className: r
+  } = e, i = (0, l.e7)([o.default], () => o.default.getId() === t), c = (0, s.zPA)();
+  return i ? (0, n.jsx)("div", {
+    className: a()(d.container, r),
+    children: c ? (0, n.jsx)(s.c43, {
       className: d.dndKeyboardHelpBar
-    }) : (0, r.jsx)(u.Z, {
+    }) : (0, n.jsx)(u.Z, {
       className: d.pendingChangesNotice
     })
   }) : null

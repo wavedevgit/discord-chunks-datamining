@@ -1,11 +1,11 @@
 /** Chunk was on 1272 **/
 /** chunk id: 877109, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
-}), require("./388685.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./35282.js");
+  Z: () => m
+}), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js"), require("./35282.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk948789 = require("./948789.js"),
+  Chunk843611 = require("./843611.js"),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk272008 = require("./272008.js"),
@@ -15,29 +15,34 @@ var Chunk951288 = require("./951288.js"),
   Chunk778680 = require("./778680.jsx"),
   Chunk751586 = require("./751586.jsx"),
   Chunk981631 = require("./981631.js");
-let g = function(e) {
+
+function g(e) {
+  return new URLSearchParams(e).get(c.tR.QUEST_ID)
+}
+let m = function(e) {
   let {
     questId: t
   } = e, {
     questId: n,
-    setQuestId: g
+    setQuestId: m
   } = function(e) {
-    let [t, n] = i.useState(e), [r, a] = i.useState(false);
+    let t = (0, l.k6)(),
+      [n, r] = i.useState(e),
+      {
+        search: a
+      } = (0, l.TH)();
     return i.useEffect(() => {
-      if (r) return;
-      let t = new URLSearchParams(window.location.search).get(c.tR.QUEST_ID);
-      null != t ? n(t) : null != e && n(e), a(true)
-    }, [e, r]), i.useEffect(() => {
-      if (!r || null == t) return;
+      let t = g(a);
+      null != t ? r(t) : null != e && r(e)
+    }, [e, a]), i.useEffect(() => {
+      if (null == n || g(a) === n) return;
       let e = new URLSearchParams;
-      e.set(c.tR.TAB, c.e5.PREVIEW_TOOL), e.set(c.tR.QUEST_ID, t);
-      let n = "".concat(h.Z5c.QUEST_HOME_V2, "?").concat(e.toString());
-      (0, l.uL)(n.toString())
-    }, [t, r]), {
-      questId: t,
-      setQuestId: n
+      e.set(c.tR.TAB, c.e5.PREVIEW_TOOL), e.set(c.tR.QUEST_ID, n), t.push("".concat(h.Z5c.QUEST_HOME_V2, "?").concat(e.toString()))
+    }, [n, t, a]), {
+      questId: n,
+      setQuestId: r
     }
-  }(t), m = (0, a.e7)([u.Z], () => null != n ? u.Z.getQuest(n) : true, [n]);
+  }(t), b = (0, a.e7)([u.Z], () => null != n ? u.Z.getQuest(n) : true, [n]), _ = (0, a.e7)([u.Z], () => null != n ? u.Z.getQuestLoadedViaPreview(n) : null, [n]);
   i.useEffect(() => {
     null != n && (0, s.MG)(n).then(() => {
       (0, s.T0)(n)
@@ -53,23 +58,23 @@ let g = function(e) {
       o.Z.unsubscribe("QUEST_PREVIEW_UPDATE", e)
     }
   }, [n]);
-  let [b, _] = i.useState([]);
+  let [O, E] = i.useState([]);
   return (0, r.jsx)(p.Z, {
     controls: (0, r.jsx)(d.Z, {
       questId: n,
-      setQuestId: g,
-      quest: m,
+      setQuestId: m,
+      quest: b,
       refreshQuest: () => {
         null != n && (0, s.MG)(n)
       }
     }),
-    selectedSections: b,
+    selectedSections: O,
     onSectionSelect: e => {
-      "all" === e ? _([]) : _([e])
+      "all" === e ? E([]) : E([e])
     },
-    children: null != n ? (0, r.jsx)(f.UN, {
-      questId: n,
-      selectedSections: b
+    children: (null == _ ? true : _.id) != null ? (0, r.jsx)(f.UN, {
+      questId: null == _ ? true : _.id,
+      selectedSections: O
     }) : null
   })
 }

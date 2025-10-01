@@ -1,5 +1,5 @@
-/** Chunk was on 49902 **/
-/** chunk id: 414655, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 56848 **/
+/** chunk id: 414655, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => b
 });
@@ -23,73 +23,73 @@ function b(e) {
   let {
     profileOwner: t
   } = e, {
-    defaultWishlistId: n,
+    defaultWishlistId: r,
     currentUser: b
-  } = (0, l.cj)([g.Z, f.default], () => ({
+  } = (0, a.cj)([g.Z, f.default], () => ({
     defaultWishlistId: g.Z.getFirstWishlistId(t.id),
     currentUser: f.default.getCurrentUser()
   })), {
     analyticsLocations: y
-  } = (0, c.ZP)(), j = (null == b ? true : b.id) === t.id, {
-    wishlist: O,
-    error: x
-  } = (0, d.k)(n), P = i.useCallback(() => {
-    (0, a.pT)(), (0, u.mK)({
+  } = (0, c.ZP)(), O = (null == b ? true : b.id) === t.id, {
+    wishlist: j,
+    error: P
+  } = (0, d.k)(r), x = i.useCallback(() => {
+    (0, l.pT)(), (0, u.mK)({
       analyticsLocations: y,
       analyticsSource: o.Z.USER_PROFILE_WISHLIST,
       openInLayer: false
     })
   }, [y]);
-  return null != x ? null : null == O || 0 === O.items.length ? (0, r.jsx)(h.F, {
+  return null != P ? null : null == j || 0 === j.items.length ? (0, n.jsx)(h.F, {
     fade: true,
-    children: (0, r.jsxs)("div", {
+    children: (0, n.jsxs)("div", {
       className: v.emptyStateContainer,
-      children: [(0, r.jsxs)("div", {
+      children: [(0, n.jsxs)("div", {
         className: v.emptyStateText,
-        children: [(0, r.jsx)(s.X6q, {
+        children: [(0, n.jsx)(s.X6q, {
           variant: "heading-md/medium",
           color: "header-primary",
           children: m.intl.string(m.t.HGnLLS)
-        }), (0, r.jsx)(s.Text, {
+        }), (0, n.jsx)(s.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
           children: m.intl.string(m.t["/X1ny8"])
         })]
-      }), j && (0, r.jsx)(s.zxk, {
+      }), O && (0, n.jsx)(s.zxk, {
         variant: "primary",
         size: "sm",
         icon: s.EOn,
         text: m.intl.string(m.t.ZbS4QE),
-        onClick: P
+        onClick: x
       })]
     })
-  }) : (0, r.jsxs)(h.F, {
+  }) : (0, n.jsxs)(h.F, {
     fade: true,
-    children: [(0, r.jsxs)("div", {
+    children: [(0, n.jsxs)("div", {
       className: v.headerRow,
-      children: [(0, r.jsx)(s.Text, {
+      children: [(0, n.jsx)(s.Text, {
         variant: "text-sm/normal",
         color: "text-secondary",
         children: m.intl.format(m.t.r6Y1Li, {
-          count: O.items.length
+          count: j.items.length
         })
-      }), j ? (0, r.jsx)(s.zxk, {
+      }), O ? (0, n.jsx)(s.zxk, {
         variant: "secondary",
         size: "sm",
         icon: s.qJs,
         text: m.intl.string(m.t.SDUwMz),
-        onClick: P
-      }) : (0, r.jsx)(s.zxk, {
+        onClick: x
+      }) : (0, n.jsx)(s.zxk, {
         variant: "secondary",
         size: "sm",
         icon: s.EOn,
         text: m.intl.string(m.t["i/yzHh"]),
-        onClick: P
+        onClick: x
       })]
-    }), (0, r.jsx)(p.Z, {
-      items: O.items,
+    }), (0, n.jsx)(p.Z, {
+      items: j.items,
       profileOwner: t,
-      isOwner: j
+      isOwner: O
     })]
   })
 }

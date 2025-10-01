@@ -1,4 +1,4 @@
-/** Chunk was on 37384 **/
+/** Chunk was on 49613 **/
 /** chunk id: 534469, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   AP: () => et,
@@ -137,7 +137,7 @@ function en(e) {
       popouts: f,
       setPopout: m
     } = (0, k.Z)(i.id, q.d$),
-    g = (0, T.ZP)(i),
+    g = (0, N.ZP)(i),
     b = (0, w.iG)(i),
     y = (0, w.Gx)(i);
   return i.type === Y.uaV.THREAD_STARTER_MESSAGE && null != h && h.state === _.Y.LOADED ? (0, r.jsx)(er, $(Q({}, e), {
@@ -153,7 +153,7 @@ function en(e) {
       [X.systemMessage]: true,
       [X.groupStart]: true
     }),
-    childrenHeader: (0, F.Z)({
+    childrenHeader: (0, V.Z)({
       messageProps: e,
       setPopout: m,
       messagePopouts: f,
@@ -188,8 +188,8 @@ function er(e) {
   } = e, j = o.type === Y.uaV.REPLY ? o.messageReference : true, E = (0, c.JA)(null != (t = e.id) ? t : ""), {
     onFocus: S
   } = E, I = ee(E, ["onFocus"]), {
-    isFocused: N,
-    handleFocus: D,
+    isFocused: T,
+    handleFocus: L,
     handleBlur: B
   } = (0, M.bb)(S), {
     popouts: H,
@@ -204,10 +204,10 @@ function er(e) {
     message: o,
     defaultValue: G,
     popouts: H
-  }), es = (0, u.e7)([p.Z], () => p.Z.keyboardModeEnabled), ec = G || es && N, eu = ec || eo, {
+  }), es = (0, u.e7)([p.Z], () => p.Z.keyboardModeEnabled), ec = G || es && T, eu = ec || eo, {
     content: ed,
     hasSpoilerEmbeds: ep
-  } = (0, L.Z)(o, {
+  } = (0, D.Z)(o, {
     hideSimpleEmbedContent: et && en,
     isInteracting: eu,
     formatInline: false,
@@ -216,7 +216,7 @@ function er(e) {
     allowLinks: true,
     previewLinkTarget: true,
     viewingChannelId: O
-  }), eh = (0, R.Z)(s, h, es), ef = (0, T.ZP)(o), em = (0, w.iG)(o, C), eg = (0, w.Gx)(o), eb = (0, V.Z)(e, ed, false), ey = i.useCallback(() => (0, v.XU)(g, h, s), [g, h, s]), eC = (0, f.p9)({
+  }), eh = (0, R.Z)(s, h, es), ef = (0, N.ZP)(o), em = (0, w.iG)(o, C), eg = (0, w.Gx)(o), eb = (0, F.Z)(e, ed, false), ey = i.useCallback(() => (0, v.XU)(g, h, s), [g, h, s]), eC = (0, f.p9)({
     guildId: g,
     roleId: ef.iconRoleId
   });
@@ -241,7 +241,7 @@ function er(e) {
       }),
       zalgo: true,
       onKeyDown: eh,
-      onFocus: D,
+      onFocus: L,
       onBlur: B,
       childrenRepliedMessage: o.type === Y.uaV.REPLY && (0, z.Z)($(Q({}, e), {
         setPopout: J,
@@ -251,7 +251,7 @@ function er(e) {
         replyMessage: er,
         isReplySpineClickable: true
       })),
-      childrenHeader: (0, F.Z)({
+      childrenHeader: (0, V.Z)({
         messageProps: e,
         setPopout: J,
         messagePopouts: H,
@@ -339,31 +339,31 @@ let ei = Chunk647438.memo(function(e) {
     eZ = i.useCallback(e => {
       eP(e), ev()
     }, [eP, ev]),
-    eT = (0, u.e7)([E.Z], () => E.Z.isEditing(et, I), [et, I]),
-    eN = (0, u.e7)([p.Z], () => p.Z.keyboardModeEnabled),
-    eA = eg || eT || eN && ej,
+    eN = (0, u.e7)([E.Z], () => E.Z.isEditing(et, I), [et, I]),
+    eT = (0, u.e7)([p.Z], () => p.Z.keyboardModeEnabled),
+    eA = eg || eN || eT && ej,
     ew = eA || eO,
     eM = (0, u.e7)([O.Z], () => v.hasFlag(Y.iLy.HAS_THREAD) && O.Z.getChannel(S.default.castMessageIdAsChannelId(v.id))),
     eR = v.isFirstMessageInForumPost(J),
     ek = (0, m.A)((null != (n = v.editedTimestamp) ? n : v.timestamp).valueOf()),
-    eL = (0, u.e7)([j.Z], () => j.Z.isDeveloper),
+    eD = (0, u.e7)([j.Z], () => j.Z.isDeveloper),
     {
-      content: eD,
+      content: eL,
       hasSpoilerEmbeds: eU
-    } = (0, L.Z)(v, {
+    } = (0, D.Z)(v, {
       hideSimpleEmbedContent: ep && eh,
       isInteracting: ew,
       formatInline: false,
       allowList: eR || ek,
       allowHeading: eR || ek,
       allowLinks: true,
-      allowDevLinks: eL,
+      allowDevLinks: eD,
       previewLinkTarget: true
     }),
-    eB = (0, R.Z)(I, et, eN),
-    eH = (0, T.ZP)(v),
-    eF = (0, u.e7)([C.Z], () => C.Z.getPendingReply(et)),
-    eV = function(e) {
+    eB = (0, R.Z)(I, et, eT),
+    eH = (0, N.ZP)(v),
+    eV = (0, u.e7)([C.Z], () => C.Z.getPendingReply(et)),
+    eF = function(e) {
       let t = i.useRef(e);
       return i.useEffect(() => {
         t.current = null != e ? e : t.current
@@ -376,14 +376,14 @@ let ei = Chunk647438.memo(function(e) {
     ez = (0, w.iG)(v, el),
     eW = (0, w.Gx)(v),
     eq = (0, u.e7)([h.Z], () => h.Z.getMessage(I), [I]),
-    eY = (0, D.Z)({
+    eY = (0, L.Z)({
       message: v,
       channel: J
     }),
     eK = i.useRef(window),
     eX = null != eq,
     eJ = i.useMemo(() => Object.values(em).some(e => e), [em]);
-  l = v.type === Y.uaV.CUSTOM_GIFT ? "" : !eT && eX ? (0, B.Z)(e, eD) : (0, V.Z)(e, eD, eT);
+  l = v.type === Y.uaV.CUSTOM_GIFT ? "" : !eN && eX ? (0, B.Z)(e, eL) : (0, F.Z)(e, eL, eN);
   let eQ = v.id === el,
     e$ = (0, r.jsx)(d.tEY, {
       offset: {
@@ -397,7 +397,7 @@ let ei = Chunk647438.memo(function(e) {
         children: [(0, y.Uw)(v) && (0, r.jsx)(g.Z, {
           compact: en,
           message: v,
-          hovering: eO && !eT && !eJ
+          hovering: eO && !eN && !eJ
         }), (0, r.jsx)(A.Z, $(Q({}, eu), {
           "aria-setsize": false,
           "aria-roledescription": K.intl.string(K.t.BAB0yM),
@@ -419,14 +419,14 @@ let ei = Chunk647438.memo(function(e) {
             [X.systemMessage]: (0, Z.Z)(v),
             [X.groupStart]: !ea && (eQ || v.type === Y.uaV.REPLY),
             [X.selected]: eA,
-            [X.replying]: (null == eF ? true : eF.message.id) === v.id,
+            [X.replying]: (null == eV ? true : eV.message.id) === v.id,
             [X.interactionSending]: v.isCommandType() && v.state === Y.yb.SENDING,
             [X.automodMessage]: eX,
-            [X.editing]: eT,
+            [X.editing]: eN,
             [X.hasOpenPopouts]: eJ,
             [X.potioned]: (0, y.Uw)(v) && ed
           }),
-          zalgo: !eT,
+          zalgo: !eN,
           childrenRepliedMessage: ea || v.type !== Y.uaV.REPLY ? true : (0, z.Z)($(Q({}, e), {
             setPopout: eb,
             referencedUsernameProfile: em.referencedUsernameProfile,
@@ -436,7 +436,7 @@ let ei = Chunk647438.memo(function(e) {
             isReplySpineClickable: true
           })),
           childrenExecutedCommand: (0, G.Z)(e, eb, em),
-          childrenHeader: ea ? true : (0, F.Z)({
+          childrenHeader: ea ? true : (0, V.Z)({
             messageProps: e,
             setPopout: eb,
             messagePopouts: em,
@@ -475,8 +475,8 @@ let ei = Chunk647438.memo(function(e) {
         }))]
       })
     });
-  return null != eV ? (0, r.jsx)(N.Z, {
-    flashKey: eV,
+  return null != eF ? (0, r.jsx)(T.Z, {
+    flashKey: eF,
     className: a()({
       [X.backgroundFlash]: true,
       [X.groupStart]: !en && v.id === el

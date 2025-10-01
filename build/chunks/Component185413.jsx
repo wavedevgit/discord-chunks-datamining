@@ -1,4 +1,4 @@
-/** Chunk was on 37384 **/
+/** Chunk was on 49613 **/
 /** chunk id: 185413, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => O
@@ -82,15 +82,15 @@ function j(e) {
       inSettings: y
     } = e,
     O = x(e, ["guild", "channel", "onClose", "newChannel", "inSettings"]);
-  let [j, E] = i.useState(""), [S, P] = i.useState({}), [I, Z] = i.useState(false), [T, N] = i.useState(null), A = i.useRef(null), {
+  let [j, E] = i.useState(""), [S, P] = i.useState({}), [I, Z] = i.useState(false), [N, T] = i.useState(null), A = i.useRef(null), {
     roles: w,
     members: M,
     getRichTag: R
   } = (0, g.Q)(a, d, d.accessPermissions, j), k = m.Z.useSections({
     roles: w,
     members: M
-  }), L = h && 0 === Object.keys(S).length;
-  async function D() {
+  }), D = h && 0 === Object.keys(S).length;
+  async function L() {
     if (null == d || 0 === Object.keys(S).length) return void p();
     Z(true);
     try {
@@ -106,7 +106,7 @@ function j(e) {
       }(d, S, y), p(), Z(false)
     } catch (t) {
       let e = new c.Hx(t);
-      Z(false), N(e)
+      Z(false), T(e)
     }
   }
   let U = (0, u.zi)(d.type) ? o.W4G : o.gjC;
@@ -143,11 +143,11 @@ function j(e) {
           className: _.subtext,
           variant: "text-xs/normal",
           children: C.intl.string(C.t["rwFx8/"])
-        }), null != T ? (0, r.jsx)(o.Text, {
+        }), null != N ? (0, r.jsx)(o.Text, {
           className: _.subtext,
           variant: "text-xs/normal",
           color: "text-danger",
-          children: T.getAnyErrorMessage()
+          children: N.getAnyErrorMessage()
         }) : null]
       }),
       listProps: {
@@ -158,7 +158,7 @@ function j(e) {
         renderRow: m.Z.renderRow,
         sections: k
       },
-      actions: L ? [{
+      actions: D ? [{
         variant: "secondary",
         text: C.intl.string(C.t.u46sxc),
         onClick: p
@@ -169,7 +169,7 @@ function j(e) {
       }, {
         variant: "primary",
         text: C.intl.string(C.t.i4jeWV),
-        onClick: D,
+        onClick: L,
         loading: I
       }]
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

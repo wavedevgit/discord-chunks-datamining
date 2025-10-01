@@ -1,4 +1,4 @@
-/** Chunk was on 37384 **/
+/** Chunk was on 49613 **/
 /** chunk id: 614584, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => P
@@ -64,13 +64,13 @@ let S = Chunk647438.memo(function(e) {
     channel: P,
     compact: I = false,
     referencedUsernameProfile: Z,
-    referencedAvatarProfile: T,
-    setPopout: N,
+    referencedAvatarProfile: N,
+    setPopout: T,
     isReplySpineClickable: A,
     showReplySpine: w
-  } = e, M = S.state === f.Y.LOADED ? S.message : true, R = (0, y.Uj)(M), k = (0, u.p)(), L = s.d.useExperiment({
+  } = e, M = S.state === f.Y.LOADED ? S.message : true, R = (0, y.Uj)(M), k = (0, u.p)(), D = s.d.useExperiment({
     location: "repliedMessage"
-  }).enabled, D = (0, d.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), U = i.useMemo(() => {
+  }).enabled, L = (0, d.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), U = i.useMemo(() => {
     if (null == M) return null;
     let e = (0, o.Z)(M);
     if (e.type === x.uaV.USER_JOIN) return (0, a.Rp)(O.intl.formatToParts(g.Z.getSystemMessageUserJoin(e.id), {
@@ -105,28 +105,28 @@ let S = Chunk647438.memo(function(e) {
           noStyleAndInteraction: true,
           allowHeading: true,
           allowList: true,
-          allowGameMentions: L
+          allowGameMentions: D
         }) : E(j({}, t), {
           formatInline: true,
-          allowHeading: D,
-          allowList: D,
-          allowGameMentions: L
+          allowHeading: L,
+          allowList: L,
+          allowGameMentions: D
         });
       return (0, b.ZP)(e, n).content
     }
     return null
-  }, [M, R, P, D, k, L]), {
+  }, [M, R, P, L, k, D]), {
     isReplyAuthorBlocked: B,
     isReplyAuthorIgnored: H
   } = (0, l.cj)([m.Z], () => ({
     isReplyAuthorBlocked: null != M && m.Z.isBlockedForMessage(M),
     isReplyAuthorIgnored: null != M && m.Z.isIgnoredForMessage(M)
-  }), [M]), F = (0, v.wq)(null == M ? true : M.author.id, P.id), V = (0, v.$3)(n, M), G = (0, v.Wl)(M, P, Z, N), z = (0, v.rY)(T, N), W = i.useCallback(() => {
-    N({
+  }), [M]), V = (0, v.wq)(null == M ? true : M.author.id, P.id), F = (0, v.$3)(n, M), G = (0, v.Wl)(M, P, Z, T), z = (0, v.rY)(N, T), W = i.useCallback(() => {
+    T({
       referencedUsernameProfile: false,
       referencedAvatarProfile: false
     })
-  }, [N]), q = (0, y.Uj)(n);
+  }, [T]), q = (0, y.Uj)(n);
   return (0, r.jsx)(C.Z, {
     repliedAuthor: R,
     baseMessage: n,
@@ -137,13 +137,13 @@ let S = Chunk647438.memo(function(e) {
     compact: I,
     isReplyAuthorBlocked: B,
     isReplyAuthorIgnored: H,
-    showAvatarPopout: T,
+    showAvatarPopout: N,
     showUsernamePopout: Z,
     renderPopout: _.Z,
     onClickAvatar: z,
     onClickUsername: G,
-    onClickReply: V,
-    onContextMenu: F,
+    onClickReply: F,
+    onContextMenu: V,
     onPopoutRequestClose: W,
     isReplySpineClickable: A,
     showReplySpine: w

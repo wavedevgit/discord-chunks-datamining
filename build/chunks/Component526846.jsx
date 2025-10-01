@@ -1,7 +1,7 @@
-/** Chunk was on 37384 **/
+/** Chunk was on 49613 **/
 /** chunk id: 526846, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  m: () => D
+  m: () => L
 }), require("./997841.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -38,7 +38,7 @@ var Chunk951288 = require("./951288.js"),
 let R = Chunk973693.Y.APP_LAUNCHER_IN_VOICE_BANNER,
   k = "vc-activities-".concat((0, Chunk772848.Z)());
 
-function L(e) {
+function D(e) {
   var t;
   let n, {
       channel: l,
@@ -110,7 +110,7 @@ function L(e) {
     })]
   }))
 }
-let D = Chunk647438.forwardRef(function(e, t) {
+let L = Chunk647438.forwardRef(function(e, t) {
   var n;
   let {
     channel: l,
@@ -135,7 +135,7 @@ let D = Chunk647438.forwardRef(function(e, t) {
   let E = (0, O.bp)(),
     {
       analyticsLocations: R,
-      newestAnalyticsLocation: D
+      newestAnalyticsLocation: L
     } = (0, m.ZP)(f.Z.ACTIVITIES_MINI_SHELF),
     U = E === A.IlC.POPOUT,
     B = (n = l.getGuildId(), (0, Z.Z)({
@@ -151,7 +151,7 @@ let D = Chunk647438.forwardRef(function(e, t) {
     location: "ActivitiesMiniShelf"
   }, {
     autoTrackExposure: true
-  }), F = i.useCallback(() => {
+  }), V = i.useCallback(() => {
     (0, y.Z)({
       context: null != l ? {
         type: "channel",
@@ -160,9 +160,9 @@ let D = Chunk647438.forwardRef(function(e, t) {
         type: "contextless"
       },
       openInPopout: U,
-      analyticsLocation: D
+      analyticsLocation: L
     }), u(), g()
-  }, [l, D, g, u, U]), V = i.useCallback(e => {
+  }, [l, L, g, u, U]), F = i.useCallback(e => {
     c(), S.default.track(A.rMx.ACTIVITIES_MINI_SHELF_HOVERED, {
       channel_id: l.id,
       guild_id: l.getGuildId()
@@ -185,7 +185,7 @@ let D = Chunk647438.forwardRef(function(e, t) {
           })
         }), (0, r.jsxs)("div", {
           className: M.container,
-          onMouseEnter: V,
+          onMouseEnter: F,
           onMouseLeave: u,
           children: [(0, r.jsxs)("div", {
             className: M.titleContainer,
@@ -201,7 +201,7 @@ let D = Chunk647438.forwardRef(function(e, t) {
               })]
             }), (0, r.jsxs)(p.P3F, {
               className: M.titleRight,
-              onClick: F,
+              onClick: V,
               children: [(0, r.jsx)(p.Text, {
                 variant: "eyebrow",
                 children: w.intl.string(w.t["K8+z4e"])
@@ -213,7 +213,7 @@ let D = Chunk647438.forwardRef(function(e, t) {
                 className: M.titleRightIcon
               })]
             })]
-          }), (0, r.jsx)(L, {
+          }), (0, r.jsx)(D, {
             openInPopout: U,
             channel: l,
             onClick: () => {
@@ -221,7 +221,7 @@ let D = Chunk647438.forwardRef(function(e, t) {
             }
           }), (0, r.jsxs)("div", {
             className: M.activityContainer,
-            children: [B.map(e => (0, r.jsx)(T.Y, {
+            children: [B.map(e => (0, r.jsx)(N.Y, {
               context: {
                 channel: l,
                 type: "channel"
@@ -230,7 +230,7 @@ let D = Chunk647438.forwardRef(function(e, t) {
               onClick: () => {
                 s(), g()
               },
-              aspectRatio: T.Y.AspectRatio.THIRTEEN_BY_ELEVEN,
+              aspectRatio: N.Y.AspectRatio.THIRTEEN_BY_ELEVEN,
               animatedDivClass: M.activitySuggestion,
               commandOrigin: C.bB.MINI_SHELF
             }, e.application.id)), (0, r.jsx)("div", {
@@ -239,7 +239,7 @@ let D = Chunk647438.forwardRef(function(e, t) {
               }),
               children: (0, r.jsx)("div", {
                 className: M.wumpusRocketInnerContainer,
-                children: (0, r.jsx)(N.Z, {
+                children: (0, r.jsx)(T.Z, {
                   className: M.wumpusRocket
                 })
               })

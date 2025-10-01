@@ -1,4 +1,4 @@
-/** Chunk was on 37384 **/
+/** Chunk was on 49613 **/
 /** chunk id: 434488, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   h: () => Z
@@ -69,7 +69,7 @@ function Z(e) {
     handleClose: a,
     userParticipantCount: o
   } = e;
-  return i < 250 ? (0, r.jsx)(T, {
+  return i < 250 ? (0, r.jsx)(N, {
     channel: t,
     guild: n,
     width: i,
@@ -83,7 +83,7 @@ function Z(e) {
     inPopout: l,
     handleClose: a,
     userParticipantCount: o
-  }) : (0, r.jsx)(N, {
+  }) : (0, r.jsx)(T, {
     channel: t,
     guild: n,
     width: i,
@@ -91,7 +91,7 @@ function Z(e) {
   })
 }
 
-function T(e) {
+function N(e) {
   let {
     channel: t,
     inPopout: n,
@@ -172,7 +172,7 @@ function T(e) {
   })
 }
 
-function N(e) {
+function T(e) {
   let {
     channel: t,
     guild: l,

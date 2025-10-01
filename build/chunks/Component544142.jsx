@@ -1,4 +1,4 @@
-/** Chunk was on 37384 **/
+/** Chunk was on 49613 **/
 /** chunk id: 544142, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -78,7 +78,7 @@ function j(e) {
     })
   }
   let Z = null != (p = null != (l = null == S ? true : S.nick) ? l : b.ZP.getName(E)) ? p : "???",
-    T = null == S ? true : S.colorString;
+    N = null == S ? true : S.colorString;
   return null == E ? (0, r.jsx)("span", {
     className: a()(v.threadCreatorName, v.unknownCreatorName),
     children: Z
@@ -98,7 +98,7 @@ function j(e) {
         onContextMenu: I,
         children: (0, r.jsx)(s.PUh, {
           name: Z,
-          colorString: null != T ? T : null,
+          colorString: null != N ? N : null,
           colorStrings: P
         })
       }))

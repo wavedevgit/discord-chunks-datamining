@@ -28,12 +28,12 @@ let c = (0, Chunk818083.B)({
 
 function d(e) {
   var t;
-  let n = (0, i.e7)([l.Z], () => l.Z.can(s.Plq.ADMINISTRATOR, e)),
-    a = c.useExperiment({
+  let n = (0, r.e7)([o.Z], () => o.Z.can(s.Plq.ADMINISTRATOR, e)),
+    l = c.useExperiment({
       guildId: null == e ? true : e.id,
       location: "useIsPinPermissionMigrationNotificationAvailable"
     }).enabled,
     d = null == e ? true : e.features.has(s.oNc.PIN_PERMISSION_MIGRATION_COMPLETE),
-    u = (0, o.OA)(r.z.GUILD_PIN_PERMISSION_MIGRATION_NOTIFICATION, null != (t = null == e ? true : e.id) ? t : s.lds);
-  return n && a && !d && !u
+    u = (0, a.OA)(i.z.GUILD_PIN_PERMISSION_MIGRATION_NOTIFICATION, null != (t = null == e ? true : e.id) ? t : s.lds);
+  return n && l && !d && !u
 }

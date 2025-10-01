@@ -1,4 +1,4 @@
-/** Chunk was on 37384 **/
+/** Chunk was on 49613 **/
 /** chunk id: 786915, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => C
@@ -54,8 +54,8 @@ function C(e) {
     look: P,
     size: I,
     buttonText: Z,
-    color: T
-  } = e, N = function(e, t) {
+    color: N
+  } = e, T = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -77,19 +77,19 @@ function C(e) {
     M = null == C ? true : C.getGuildId(),
     R = (0, a.e7)([p.Z], () => null != M ? p.Z.getGuild(M) : null, [M]),
     k = (0, a.e7)([h.Z], () => null != t ? h.Z.getApplicationActivity(t) : true),
-    L = null == t || j ? o.ejJ : o.gQj,
-    D = null != t ? b.intl.string(b.t["OzOM/v"]) : b.intl.string(b.t["6F9ivr"]);
+    D = null == t || j ? o.ejJ : o.gQj,
+    L = null != t ? b.intl.string(b.t["OzOM/v"]) : b.intl.string(b.t["6F9ivr"]);
   return null != k && E ? (0, r.jsx)(m.Z, {
     onClick: () => {
       null != w && (0, u.v)(w, u.d.INVITE), s.h7(k, false, A)
     },
-    iconComponent: L,
-    label: D,
+    iconComponent: D,
+    label: L,
     iconClassName: S,
     look: P,
     size: I,
     buttonText: Z,
-    color: null != T ? T : true
+    color: null != N ? N : true
   }) : null != R && null != C && f.Z.can(g.Plq.CREATE_INSTANT_INVITE, C) ? (0, r.jsx)(m.Z, y({
     onClick: () => {
       l()(null != R, "guild cannot be null"), l()(null != C, "channel cannot be null"), null != w && (0, u.v)(w, u.d.INVITE),
@@ -144,12 +144,12 @@ function C(e) {
           guildScheduledEvent: O
         })
     },
-    iconComponent: L,
-    label: D,
+    iconComponent: D,
+    label: L,
     iconClassName: S,
     look: P,
     size: I,
-    color: T,
+    color: N,
     buttonText: Z
-  }, N)) : null
+  }, T)) : null
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 37384 **/
+/** Chunk was on 49613 **/
 /** chunk id: 753898, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -37,14 +37,14 @@ function x(e) {
     userId: null == O ? true : O.id,
     size: o.EFr.SIZE_80,
     animateOnHover: true
-  }), [Z, T] = i.useState(false), N = i.useCallback(() => {
-    P.onMouseEnter(), T(true)
+  }), [Z, N] = i.useState(false), T = i.useCallback(() => {
+    P.onMouseEnter(), N(true)
   }, [P]), A = i.useCallback(() => {
-    P.onMouseLeave(), T(false)
+    P.onMouseLeave(), N(false)
   }, [P]), w = !n.isMultiUserDM() && (null == O ? true : O.displayNameStyles) != null;
   return (0, r.jsxs)(C.ZP, {
     channelId: n.id,
-    onMouseEnter: N,
+    onMouseEnter: T,
     onMouseLeave: A,
     children: [(() => {
       let e = !j && I;

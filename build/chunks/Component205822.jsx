@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk710845 = require("./710845.js"),
   Chunk310752 = require("./310752.jsx"),
@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk311795 = require("./311795.js"),
   Chunk287540 = require("./287540.js");
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -28,19 +28,19 @@ let v = new Chunk710845.Z("UploadArea");
 function g() {
   return (0, Chunk951288.jsxs)("div", {
     children: [(0, Chunk951288.jsx)("div", {
-      className: a()(Chunk287540.sparkleWhite, Chunk311795.sparkleOne)
+      className: l()(Chunk287540.sparkleWhite, Chunk311795.sparkleOne)
     }), (0, Chunk951288.jsx)("div", {
-      className: a()(Chunk287540.sparkleWhite, Chunk311795.sparkleTwo)
+      className: l()(Chunk287540.sparkleWhite, Chunk311795.sparkleTwo)
     }), (0, Chunk951288.jsx)("div", {
-      className: a()(Chunk287540.lightWhite, Chunk311795.lightOne)
+      className: l()(Chunk287540.lightWhite, Chunk311795.lightOne)
     }), (0, Chunk951288.jsx)("div", {
-      className: a()(Chunk287540.lightWhite, Chunk311795.lightTwo)
+      className: l()(Chunk287540.lightWhite, Chunk311795.lightTwo)
     }), (0, Chunk951288.jsx)("div", {
-      className: a()(Chunk287540.crossWhite, Chunk311795.crossOne)
+      className: l()(Chunk287540.crossWhite, Chunk311795.crossOne)
     }), (0, Chunk951288.jsx)("div", {
-      className: a()(Chunk287540.crossWhite, Chunk311795.crossTwo)
+      className: l()(Chunk287540.crossWhite, Chunk311795.crossTwo)
     }), (0, Chunk951288.jsx)("div", {
-      className: a()(Chunk287540.popWhite, Chunk311795.popOne)
+      className: l()(Chunk287540.popWhite, Chunk311795.popOne)
     })]
   })
 }
@@ -58,12 +58,12 @@ class h extends Chunk647438.Component {
       title: e,
       description: t,
       icons: n,
-      style: r,
-      className: o
+      style: i,
+      className: a
     } = this.props;
     return (0, Chunk951288.jsx)("div", {
       ref: this.elementDOMRef,
-      className: a()(Chunk120356, Chunk311795.uploadArea, {
+      className: l()(Chunk120356, Chunk311795.uploadArea, {
         [Chunk311795.droppable]: this.state.isDragging,
         [Chunk311795.uploadModalIn]: this.state.isOverZone
       }),
@@ -91,38 +91,38 @@ class h extends Chunk647438.Component {
   }
   constructor(...e) {
     var t;
-    super(...e), t = this, f(this, "state", {
+    super(...e), t = this, _(this, "state", {
       isDragging: false,
       isOverZone: false
-    }), f(this, "dragOverTimeout", null), f(this, "elementDOMRef", r.createRef()), f(this, "isAllDropFiles", e => {
+    }), _(this, "dragOverTimeout", null), _(this, "elementDOMRef", i.createRef()), _(this, "isAllDropFiles", e => {
       for (let n = 0; n < e.length; n++) try {
         var t;
-        let i = null != (t = e[n].webkitGetAsEntry()) ? t : e[n].getAsEntry();
-        if (null == i) return v.warn("Dropped item is null or undefined"), false;
-        if (!i.isFile) returnfalse
+        let r = null != (t = e[n].webkitGetAsEntry()) ? t : e[n].getAsEntry();
+        if (null == r) return v.warn("Dropped item is null or undefined"), false;
+        if (!r.isFile) returnfalse
       } catch (e) {}
       returntrue
-    }), f(this, "preventUnwantedDrop", function(e) {
+    }), _(this, "preventUnwantedDrop", function(e) {
       let n = arguments.length > 1 && true !== arguments[1] && arguments[1],
-        i = e.dataTransfer;
-      if (null == i) returntrue;
-      let r = Array.isArray(i.types) && false !== i.types.indexOf("text/uri-list") && false === i.types.indexOf("application/json"),
-        o = null != i.items && !t.isAllDropFiles(i.items);
-      return !r && !o || (e.stopPropagation(), e.preventDefault(), i.effectAllowed = "none", i.dropEffect = "none", n && (t.setState({
+        r = e.dataTransfer;
+      if (null == r) returntrue;
+      let i = Array.isArray(r.types) && false !== r.types.indexOf("text/uri-list") && false === r.types.indexOf("application/json"),
+        a = null != r.items && !t.isAllDropFiles(r.items);
+      return !i && !a || (e.stopPropagation(), e.preventDefault(), r.effectAllowed = "none", r.dropEffect = "none", n && (t.setState({
         isDragging: false
       }), (0, d.openUploadError)({
         title: u.intl.string(u.t.azO1PT),
         help: u.intl.string(u.t.Koklr6),
         icons: t.props.icons
       })), false)
-    }), f(this, "handleDragOver", e => {
-      var t, n, i;
+    }), _(this, "handleDragOver", e => {
+      var t, n, r;
       if (!this.preventUnwantedDrop(e)) returnfalse;
-      let r = e.dataTransfer;
-      if (null != r) {
-        if ("move" === r.effectAllowed ? r.dropEffect = "move" : r.dropEffect = "copy", (0, l.nfh)(d.A) && (0, l.Mr3)(d.A), e.stopPropagation(), e.preventDefault(), null == (t = (n = this.props).onDragOver) || t.call(n, e), !this.state.isDragging) {
-          let e = null == (i = this.elementDOMRef.current) ? true : i.ownerDocument.defaultView;
-          (null != e && r.types instanceof e.DOMStringList && r.types.contains("application/x-moz-file") || false !== r.types.indexOf("Files")) && this.setState(e => e.isDragging ? {} : {
+      let i = e.dataTransfer;
+      if (null != i) {
+        if ("move" === i.effectAllowed ? i.dropEffect = "move" : i.dropEffect = "copy", (0, o.nfh)(d.A) && (0, o.Mr3)(d.A), e.stopPropagation(), e.preventDefault(), null == (t = (n = this.props).onDragOver) || t.call(n, e), !this.state.isDragging) {
+          let e = null == (r = this.elementDOMRef.current) ? true : r.ownerDocument.defaultView;
+          (null != e && i.types instanceof e.DOMStringList && i.types.contains("application/x-moz-file") || false !== i.types.indexOf("Files")) && this.setState(e => e.isDragging ? {} : {
             isDragging: true
           })
         }
@@ -133,23 +133,23 @@ class h extends Chunk647438.Component {
           }), null == (e = (t = this.props).onDragClear) || e.call(t)
         }, 1e3)
       }
-    }), f(this, "handleDragOverZone", () => {
+    }), _(this, "handleDragOverZone", () => {
       this.setState({
         isOverZone: true
       })
-    }), f(this, "handleDragLeaveZone", () => {
+    }), _(this, "handleDragLeaveZone", () => {
       this.setState({
         isOverZone: false
       })
-    }), f(this, "handleDragLeave", e => {
+    }), _(this, "handleDragLeave", e => {
       this.state.isDragging && (e.stopPropagation(), e.preventDefault(), this.clearDragging())
-    }), f(this, "clearDragging", () => {
+    }), _(this, "clearDragging", () => {
       var e, t;
       this.setState({
         isDragging: false,
         isOverZone: false
       }), null == (e = (t = this.props).onDragClear) || e.call(t)
-    }), f(this, "handleDrop", e => {
+    }), _(this, "handleDrop", e => {
       if (!this.preventUnwantedDrop(e, true)) returnfalse;
       let t = e.dataTransfer;
       if (null == t) returntrue;

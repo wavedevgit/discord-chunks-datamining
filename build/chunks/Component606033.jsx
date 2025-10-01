@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 606033, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => b
 }), require("./388685.js"), require("./290780.js"), require("./781311.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -13,73 +13,75 @@ var Chunk951288 = require("./951288.js"),
   Chunk113434 = require("./113434.js"),
   Chunk569984 = require("./569984.js"),
   Chunk253010 = require("./253010.jsx"),
+  Chunk6809 = require("./6809.jsx"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk747277 = require("./747277.js");
-let m = function(e) {
-  var t, n, m;
+let b = function(e) {
+  var t, n, b;
   let {
-    questId: b,
-    setQuestId: _,
-    quest: O,
-    refreshQuest: E
-  } = e, [y, v] = i.useState(false), [I, S] = i.useState(false), C = i.useRef(null), T = (0, u.MP)(), N = (0, l.e7)([d.Z], () => null != b ? d.Z.getFetchQuestPreviewError(b) : null, [b]), j = (0, l.e7)([d.Z], () => null != b && d.Z.isFetchingQuestPreview(b), [b]), P = i.useMemo(() => {
-    let e = T.map(e => {
+    questId: _,
+    setQuestId: O,
+    quest: E,
+    refreshQuest: y
+  } = e, [v, I] = i.useState(false), [S, C] = i.useState(false), T = i.useRef(null), N = (0, u.MP)(), j = (0, l.e7)([d.Z], () => null != _ ? d.Z.getFetchQuestPreviewError(_) : null, [_]), P = (0, l.e7)([d.Z], () => null != _ && d.Z.isFetchingQuestPreview(_), [_]), x = i.useMemo(() => {
+    let e = N.map(e => {
       var t, n, r;
       return {
         label: "".concat(null != (r = null == (n = e.config) || null == (t = n.messages) ? true : t.questName) ? r : e.id, " (").concat(e.id, ")"),
         value: e.id
       }
     });
-    return null == b || e.some(e => e.value === b) || e.unshift({
-      label: b,
-      value: b
+    return null == _ || e.some(e => e.value === _) || e.unshift({
+      label: _,
+      value: _
     }), e
-  }, [T, b]), x = i.useCallback(async () => {
-    if (null != b) {
-      v(true);
+  }, [N, _]), A = i.useCallback(async () => {
+    if (null != _) {
+      I(true);
       try {
-        await (0, c.Wf)(b, 1)
+        await (0, c.Wf)(_, 1)
       } finally {
-        v(false)
+        I(false)
       }
     }
-  }, [b, v]), A = i.useCallback(async () => {
-    if (null != b) {
-      v(true);
+  }, [_, I]), Z = i.useCallback(async () => {
+    if (null != _) {
+      I(true);
       try {
-        await (0, c.eT)(b)
+        await (0, c.eT)(_)
       } finally {
-        v(false)
+        I(false)
       }
     }
-  }, [b, v]), Z = i.useCallback(async () => {
-    if (null != b) {
-      v(true);
+  }, [_, I]), w = i.useCallback(async () => {
+    if (null != _) {
+      I(true);
       try {
         let e = Math.random();
-        await (0, c.Wf)(b, e)
+        await (0, c.Wf)(_, e)
       } finally {
-        v(false)
+        I(false)
       }
     }
-  }, [b, v]), w = i.useCallback(e => {
-    (0, s.Ew)(e) || null == _ || _(e)
-  }, [_]);
+  }, [_, I]), L = i.useCallback(e => {
+    (0, s.Ew)(e) || null == O || O(e)
+  }, [O]);
   return (0, r.jsxs)("div", {
-    className: g.controlBar,
+    className: m.controlBar,
     children: [(0, r.jsx)("div", {
       children: (0, r.jsx)("div", {
-        className: g.questSelectorContainer,
-        children: (0, r.jsx)("div", {
-          children: (0, r.jsxs)("div", {
-            className: g.questInput,
+        className: m.questSelectorContainer,
+        children: (0, r.jsxs)("div", {
+          className: m.questSelectorWrapper,
+          children: [(0, r.jsx)(f.Z, {}), (0, r.jsxs)("div", {
+            className: m.questInput,
             children: [(0, r.jsx)(a.VcW, {
               "aria-label": "Quest ID",
-              options: P,
-              value: b,
-              onChange: w,
-              placeholder: h.intl.string(h.t.Zw8jxs),
+              options: x,
+              value: _,
+              onChange: L,
+              placeholder: g.intl.string(g.t.Zw8jxs),
               clearable: true,
               filter: (e, t) => {
                 if ((0, s.Ew)(null == t ? true : t.trim())) return e;
@@ -89,64 +91,64 @@ let m = function(e) {
                   value: t.trim()
                 }] : n
               }
-            }, "".concat(b, "-").concat(null != (m = null == O || null == (n = O.config) || null == (t = n.messages) ? true : t.questName) ? m : "")), (0, r.jsx)(a.hU, {
-              onClick: E,
-              "aria-label": h.intl.string(h.t.wzzjk5),
+            }, "".concat(_, "-").concat(null != (b = null == E || null == (n = E.config) || null == (t = n.messages) ? true : t.questName) ? b : "")), (0, r.jsx)(a.hU, {
+              onClick: y,
+              "aria-label": g.intl.string(g.t.wzzjk5),
               icon: a.DuK,
-              loading: j
+              loading: P
             })]
-          })
+          })]
         })
       })
-    }), null != b && null != O && (0, r.jsx)("div", {
-      className: g.controlsSection,
+    }), null != _ && null != E && (0, r.jsx)("div", {
+      className: m.controlsSection,
       children: (0, r.jsxs)(a.hE2, {
-        className: g.controlButtons,
+        className: m.controlButtons,
         children: [(0, r.jsx)(a.zxk, {
-          onClick: x,
-          disabled: y,
-          loading: y,
-          variant: "secondary",
-          text: h.intl.string(h.t.jQEfRU)
-        }), (0, r.jsx)(a.zxk, {
           onClick: A,
-          disabled: y,
-          loading: y,
+          disabled: v,
+          loading: v,
           variant: "secondary",
-          text: h.intl.string(h.t.taqkwM)
+          text: g.intl.string(g.t.jQEfRU)
         }), (0, r.jsx)(a.zxk, {
           onClick: Z,
-          disabled: y,
-          loading: y,
+          disabled: v,
+          loading: v,
           variant: "secondary",
-          text: h.intl.string(h.t.cKSLr6)
+          text: g.intl.string(g.t.taqkwM)
+        }), (0, r.jsx)(a.zxk, {
+          onClick: w,
+          disabled: v,
+          loading: v,
+          variant: "secondary",
+          text: g.intl.string(g.t.cKSLr6)
         }), (0, r.jsx)(a.yRy, {
-          targetElementRef: C,
-          shouldShow: I,
-          onRequestClose: () => S(false),
+          targetElementRef: T,
+          shouldShow: S,
+          onRequestClose: () => C(false),
           position: "bottom",
           align: "center",
           renderPopout: () => (0, r.jsx)("div", {
-            className: g.sharePopover,
+            className: m.sharePopover,
             children: (0, r.jsx)("div", {
-              className: g.copyInput,
+              className: m.copyInput,
               children: (0, r.jsx)(o.Z, {
-                value: f.$w.QUEST_PREVIEW_TOOL_2(b),
-                text: h.intl.string(h.t.WqhZsr)
+                value: h.$w.QUEST_PREVIEW_TOOL_2(_),
+                text: g.intl.string(g.t.WqhZsr)
               })
             })
           }),
           children: () => (0, r.jsx)(a.hU, {
-            buttonRef: C,
-            onClick: () => S(!I),
-            "aria-label": h.intl.string(h.t.rNGQfH),
+            buttonRef: T,
+            onClick: () => C(!S),
+            "aria-label": g.intl.string(g.t.rNGQfH),
             icon: a.TIy,
             variant: "secondary"
           })
         })]
       })
-    }), null != N ? (0, r.jsx)(p.W, {
-      error: N
-    }) : null, j ? (0, r.jsx)(a.$jN, {}) : null]
+    }), null != j ? (0, r.jsx)(p.W, {
+      error: j
+    }) : null, P ? (0, r.jsx)(a.$jN, {}) : null]
   })
 }

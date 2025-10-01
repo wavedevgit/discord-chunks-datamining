@@ -1,4 +1,4 @@
-/** Chunk was on 37384 **/
+/** Chunk was on 49613 **/
 /** chunk id: 406534, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => et
@@ -121,16 +121,16 @@ function et(e) {
       hideSummaries: ed,
       jumpBarClassName: ep
     } = e,
-    eh = N.default.getCurrentUser(),
+    eh = T.default.getCurrentUser(),
     ef = () => eo.isInitialized() || et.ready,
-    em = (0, D.$)(U),
+    em = (0, L.$)(U),
     eg = et.length > 0 && (null == (t = et.first()) ? true : t.isFirstMessageInForumPost(U)),
     eb = (0, s.ts)(U),
     ey = (0, l.e7)([E.Z], () => E.Z.shouldShowTopicsBar() && !ed),
     eC = (0, O.P)(U.id),
     e_ = (0, v.z)(U.id, X.zr),
     ev = (0, d.k)(U.id),
-    ex = (0, L.Z)(),
+    ex = (0, D.Z)(),
     eO = function(e, t) {
       if (e.isDM() && null != t)
         if (t.type === _.pj.STRANGER_DANGER) return (0, r.jsx)(j.M, {
@@ -167,7 +167,7 @@ function et(e) {
           item: e,
           channel: U,
           isBeforeGroup: null == e.content && $(el[t + 1])
-        }) : (0, r.jsx)(F.Z, {
+        }) : (0, r.jsx)(V.Z, {
           isUnread: l,
           isBeforeGroup: null == e.content && $(el[t + 1]),
           id: l ? Y.j1 : true,
@@ -207,9 +207,9 @@ function et(e) {
       }, e.content.id)
     });
   eI.push(...eZ);
-  let eT = el[el.length - 1];
+  let eN = el[el.length - 1];
   if (null != eh && ea.forEach((e, t) => {
-      let n = 0 === t && (0, k.J)(U, eT, new I.ZP({
+      let n = 0 === t && (0, k.J)(U, eN, new I.ZP({
         type: K.uaV.DEFAULT,
         author: eh
       }));
@@ -288,7 +288,7 @@ function et(e) {
             color: "currentColor",
             children: n
           });
-          i = (0, r.jsx)(V.G5, {
+          i = (0, r.jsx)(F.G5, {
             scrollManager: eo,
             content: e,
             channel: U
@@ -327,13 +327,13 @@ function et(e) {
               children: n
             })
           });
-          i = (0, r.jsx)(V.LE, {
+          i = (0, r.jsx)(F.LE, {
             content: e,
             channelId: U.id
           })
         }
       }
-    } else ex.includes(q.E.NEW_MESSAGES) && (i = (0, r.jsx)(V.LE, {
+    } else ex.includes(q.E.NEW_MESSAGES) && (i = (0, r.jsx)(F.LE, {
       content: J.intl.format(e, {
         count: en,
         timestamp: l
@@ -341,10 +341,10 @@ function et(e) {
       channelId: U.id
     }))
   }
-  if (null == i && (0, s.Lp)(U) && ey && ex.includes(q.E.SUMMARIES) && (i = (0, r.jsx)(V.BO, {
+  if (null == i && (0, s.Lp)(U) && ey && ex.includes(q.E.SUMMARIES) && (i = (0, r.jsx)(F.BO, {
       channel: U,
       scrollManager: eo
-    })), et.error) h = (0, r.jsx)(V.Rp, {
+    })), et.error) h = (0, r.jsx)(F.Rp, {
     loading: et.loadingMore,
     onClick: () => {
       var e;
@@ -360,10 +360,10 @@ function et(e) {
     let {
       jumpReturnTargetId: e
     } = et;
-    h = et.loadingMore && et.jumpedToPresent ? (0, r.jsx)(V.DR, {
+    h = et.loadingMore && et.jumpedToPresent ? (0, r.jsx)(F.DR, {
       className: ep
-    }) : null != e ? (0, r.jsx)(V.DR, {
-      type: V.A7.REPLY,
+    }) : null != e ? (0, r.jsx)(F.DR, {
+      type: F.A7.REPLY,
       onClick: () => {
         o.Z.jumpToMessage({
           channelId: U.id,
@@ -372,10 +372,10 @@ function et(e) {
         })
       },
       className: ep
-    }) : (0, r.jsx)(V.DR, {
+    }) : (0, r.jsx)(F.DR, {
       onClick: () => (function(e) {
         o.Z.jumpToPresent(e.id, K.AQB);
-        let t = T.Z.getChannelId();
+        let t = N.Z.getChannelId();
         e.id === t && (0, C.Kh)(e.id)
       })(U),
       className: ep

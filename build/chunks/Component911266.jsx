@@ -1,4 +1,4 @@
-/** Chunk was on 37384 **/
+/** Chunk was on 49613 **/
 /** chunk id: 911266, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => C
@@ -60,7 +60,7 @@ let C = e => {
     "aria-hidden": "true"
   });
   let Z = I.emoji[0],
-    T = null == Z.id ? p.ZP.getURL(Z.name) : d.ZP.getEmojiURL({
+    N = null == Z.id ? p.ZP.getURL(Z.name) : d.ZP.getEmojiURL({
       id: Z.id,
       animated: false,
       size: 32,
@@ -74,17 +74,17 @@ let C = e => {
     },
     children: [(0, r.jsx)("img", {
       alt: "",
-      src: T,
+      src: N,
       className: a()([y.emoji, y.left, P && y.shy, _ && y.confettiMode]),
       width: 28
     }), (0, r.jsx)("img", {
       alt: "",
-      src: T,
+      src: N,
       className: a()([y.emoji, y.right, P && y.shy, _ && y.confettiMode]),
       width: 26
     }), (0, r.jsx)("img", {
       alt: "",
-      src: T,
+      src: N,
       className: a()([y.emoji, y.center, P && y.shy, _ && y.confettiMode]),
       width: 32
     })]

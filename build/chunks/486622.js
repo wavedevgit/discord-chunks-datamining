@@ -1,4 +1,4 @@
-/** Chunk was on 37384 **/
+/** Chunk was on 49613 **/
 /** chunk id: 486622, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   m: () => b
@@ -24,7 +24,7 @@ function b(e) {
     onAcceptSuccess: n,
     onRejectSuccess: i,
     onError: b
-  } = e, y = (0, f.Z)(), [C, _] = r.useState(false), [v, x] = r.useState(false), [O, j] = r.useState(false), [E, S] = r.useState(false), [P, I] = r.useState(false), Z = C || v || O, T = r.useCallback(async e => {
+  } = e, y = (0, f.Z)(), [C, _] = r.useState(false), [v, x] = r.useState(false), [O, j] = r.useState(false), [E, S] = r.useState(false), [P, I] = r.useState(false), Z = C || v || O, N = r.useCallback(async e => {
     if (!Z) {
       _(true);
       try {
@@ -36,7 +36,7 @@ function b(e) {
         _(false)
       }
     }
-  }, [Z, n, b]), N = r.useCallback(async e => {
+  }, [Z, n, b]), T = r.useCallback(async e => {
     if (!Z) {
       x(true);
       try {
@@ -82,7 +82,7 @@ function b(e) {
         channel_id: e,
         mutual_guild_ids: null != r ? r : [],
         other_user_id: null == t ? true : t.id
-      }), await T(e)
+      }), await N(e)
     };
     (0, h.H)({
       channelId: e,
@@ -98,9 +98,9 @@ function b(e) {
         })
       }
     })
-  }, [T, Z, t]), M = r.useCallback((e, t, n) => {
+  }, [N, Z, t]), M = r.useCallback((e, t, n) => {
     let r = (r, i) => {
-        i && u.kJ.updateSetting(r), r && null != t && (0, o.zd)(t), T(e.id), d.default.track(g.rMx.MESSAGE_REQUEST_ACTION, {
+        i && u.kJ.updateSetting(r), r && null != t && (0, o.zd)(t), N(e.id), d.default.track(g.rMx.MESSAGE_REQUEST_ACTION, {
           action: m.cl.ACCEPT_HAM_CONFIRMATION_PROMPT,
           channel_id: e.id,
           is_dont_show_again_checked: i,
@@ -118,10 +118,10 @@ function b(e) {
         })
       }
     }) : r(i)
-  }, [T]);
+  }, [N]);
   return {
-    acceptMessageRequest: y ? w : T,
-    rejectMessageRequest: N,
+    acceptMessageRequest: y ? w : N,
+    rejectMessageRequest: T,
     rejectAll: A,
     markAsNotSpam: M,
     isAcceptLoading: C,

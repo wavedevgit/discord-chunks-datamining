@@ -1,4 +1,4 @@
-/** Chunk was on 37384 **/
+/** Chunk was on 49613 **/
 /** chunk id: 450936, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -59,13 +59,13 @@ function b(e) {
     P = S.commands.filter(e => e.type === a.yU.PRIMARY_ENTRY_POINT && e.applicationId === E)[0],
     I = S.commands.filter(e => "0" !== e.id && !e.id.startsWith("-")),
     Z = S.loading,
-    T = null == (t = S.descriptors.find(e => {
+    N = null == (t = S.descriptors.find(e => {
       var t;
       return (null == (t = e.application) ? true : t.id) === E
     })) ? true : t.application,
-    N = r.useMemo(() => null != T ? h.ZP.createFromServer(T) : true, [T]),
-    A = (0, u.q)(null == N ? E : true),
-    w = null != (n = null != N ? N : A) ? n : true,
+    T = r.useMemo(() => null != N ? h.ZP.createFromServer(N) : true, [N]),
+    A = (0, u.q)(null == T ? E : true),
+    w = null != (n = null != T ? T : A) ? n : true,
     M = null == w || Z && 0 === I.length;
   return {
     application: w,

@@ -1,8 +1,8 @@
-/** Chunk was on 37384 **/
+/** Chunk was on 49613 **/
 /** chunk id: 793319, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   NZ: () => eE,
-  ZP: () => eT,
+  ZP: () => eN,
   r: () => ej
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -137,7 +137,7 @@ function eE(e) {
   } = e, {
     parentAnalyticsLocation: c,
     analyticsLocations: h
-  } = (0, v.ZP)(), f = (0, D.bp)(), m = (0, u.Wu)([et.Z], () => et.Z.getAllActiveStreams()), g = m.find(e => e.ownerId === n.id), b = i.useRef(null), y = i.useRef(null), C = t.getGuildId(), _ = i.useCallback(() => {
+  } = (0, v.ZP)(), f = (0, L.bp)(), m = (0, u.Wu)([et.Z], () => et.Z.getAllActiveStreams()), g = m.find(e => e.ownerId === n.id), b = i.useRef(null), y = i.useRef(null), C = t.getGuildId(), _ = i.useCallback(() => {
     if (null == l || l(), !a) return (0, ef.Z)();
     (0, em.Z)(C, t.id, h)
   }, [C, t.id, a, l, h]), x = (0, B.B4)(), [O, j] = i.useState(false), E = () => {
@@ -165,7 +165,7 @@ function eE(e) {
           })
         }
       })
-    })(), (0, r.jsx)(V.Z, {
+    })(), (0, r.jsx)(F.Z, {
       children: (0, r.jsx)(p.yRy, {
         targetElementRef: y,
         renderPopout: e => {
@@ -294,7 +294,7 @@ let eP = Chunk647438.memo(function(e) {
   i.useEffect(() => {
     E() !== S && f(true)
   }, [S, E]);
-  let T = i.useCallback(() => {
+  let N = i.useCallback(() => {
     if (null != y)(0, g.g)((0, A.V9)(y));
     else
       for (let e of _)(0, g.g)((0, A.V9)(e))
@@ -348,7 +348,7 @@ let eP = Chunk647438.memo(function(e) {
                 streamActive: true,
                 color: "disconnect",
                 onClick: () => {
-                  (0, P.v)(o, P.d.STOP_WATCHING), T()
+                  (0, P.v)(o, P.d.STOP_WATCHING), N()
                 },
                 onPopoutClick: _.length > 1 ? i : null,
                 isSelfStream: false
@@ -381,7 +381,7 @@ function eI(e) {
     cameraUnavailable: n,
     hasCameraPermission: l,
     currentUser: a
-  } = e, o = (0, D.bp)(), {
+  } = e, o = (0, L.bp)(), {
     parentAnalyticsLocation: s
   } = (0, v.ZP)(), {
     reachedLimit: c,
@@ -428,7 +428,7 @@ function eZ(e) {
     entrypoint: ey.A5.CARET
   })
 }
-let eT = function(e) {
+let eN = function(e) {
   var t;
   let {
     channel: n,
@@ -450,10 +450,10 @@ let eT = function(e) {
     canGoLive: R
   } = (0, u.cj)([er.Z], () => ({
     canGoLive: (0, w.Z)(er.Z)
-  })), k = (0, N.Z)(), D = (0, u.e7)([T.Z], () => null != T.Z.getAwaitingRemoteSessionInfo()), B = null != k, H = (0, u.e7)([ei.Z], () => {
+  })), k = (0, T.Z)(), L = (0, u.e7)([N.Z], () => null != N.Z.getAwaitingRemoteSessionInfo()), B = null != k, H = (0, u.e7)([ei.Z], () => {
     var e;
     return (null != (e = null == k ? true : k.channelId) ? e : ei.Z.getVoiceChannelId()) === n.id
-  }), V = (0, u.e7)([y.ZP], () => y.ZP.getCurrentEmbeddedActivity()), {
+  }), F = (0, u.e7)([y.ZP], () => y.ZP.getCurrentEmbeddedActivity()), {
     reachedLimit: z,
     limit: W
   } = (0, eo.Z)(n), {
@@ -465,7 +465,7 @@ let eT = function(e) {
     showRefreshedAudioContextMenu: J
   } = (0, U.e)({
     location: _.Z.VOICE_CONTROL_TRAY
-  }), et = (0, F.Z)(n), en = i.useRef(null), eu = i.useRef(null), ep = Y ? e => {
+  }), et = (0, V.Z)(n), en = i.useRef(null), eu = i.useRef(null), ep = Y ? e => {
     (0, f.jW)(e, () => Promise.resolve(() => (0, r.jsx)(O.default, {
       onClose: f.Zy,
       renderInputDevices: true,
@@ -484,7 +484,7 @@ let eT = function(e) {
       section: eb.jXE.VOICE_CONTROL_TRAY,
       children: [(0, r.jsx)("div", {
         className: e_.eventPromptsContainer,
-        children: (0, r.jsx)(L.Z, {
+        children: (0, r.jsx)(D.Z, {
           channelId: n.id
         })
       }), (0, r.jsxs)("div", {
@@ -546,7 +546,7 @@ let eT = function(e) {
                 serverMute: M,
                 suppress: Z,
                 popoutOpen: i,
-                awaitingRemote: D,
+                awaitingRemote: L,
                 onClick: () => (0, S.Z)(M, Z, eb.jXE.VOICE_CONTROL_TRAY),
                 onContextMenu: ep
               })
@@ -615,7 +615,7 @@ let eT = function(e) {
             remoteMode: B
           })]
         }), (0, r.jsx)(eP, {
-          connectedEmbeddedActivity: V,
+          connectedEmbeddedActivity: F,
           currentUser: C,
           channel: n,
           onDisconnectCall: o

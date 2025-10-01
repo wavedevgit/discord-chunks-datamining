@@ -1,4 +1,4 @@
-/** Chunk was on 37384 **/
+/** Chunk was on 49613 **/
 /** chunk id: 111248, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -44,7 +44,7 @@ function y(e) {
       let t = 0 === S ? e : (e - 8 * (S - 1)) / S;
       c.d7(t, f.cL.CAMERA_PREVIEW)
     }, [S]),
-    T = i.useCallback((e, t) => {
+    N = i.useCallback((e, t) => {
       x(t)
     }, [x]);
   return (0, r.jsx)("div", {
@@ -54,7 +54,7 @@ function y(e) {
       id: 0,
       width: P,
       ref: O,
-      onMove: T,
+      onMove: N,
       onResize: Z,
       maxX: t,
       maxY: l,

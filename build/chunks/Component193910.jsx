@@ -1,4 +1,4 @@
-/** Chunk was on 37384 **/
+/** Chunk was on 49613 **/
 /** chunk id: 193910, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => A
@@ -30,9 +30,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk489887 = require("./489887.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk878066 = require("./878066.js");
-let T = RegExp("(.*)```(\\w+)\\n(.*)```(.*)", "s");
+let N = RegExp("(.*)```(\\w+)\\n(.*)```(.*)", "s");
 
-function N() {
+function T() {
   let e = (0, Chunk442837.e7)([Chunk375954.Z], () => Chunk375954.Z.hasCurrentUserSentMessageSinceAppStart()),
     t = [];
   module && exports.push(Chunk704215.z.ACTIVITIES_CHAT_MENU_NEW_BADGE);
@@ -68,8 +68,8 @@ function A(e) {
     openClips: R
   } = e, {
     analyticsLocations: k,
-    newestAnalyticsLocation: L
-  } = (0, d.ZP)(), D = (0, g.Dt)({
+    newestAnalyticsLocation: D
+  } = (0, d.ZP)(), L = (0, g.Dt)({
     channel: t
   });
 
@@ -85,7 +85,7 @@ function A(e) {
     R()
   }
 
-  function F() {
+  function V() {
     (0, h.Q3)(o.z.POLLS_CHAT_INPUT_COACHMARK, {
       dismissAction: S.L.TAKE_ACTION
     }), (0, s.ZDy)(async () => {
@@ -129,7 +129,7 @@ function A(e) {
     })
   }
 
-  function V() {
+  function F() {
     C.default.track(E.rMx.CHANNEL_ATTACH_MENU_START_ACTIVITY_CLICKED, {
       channel_type: t.type,
       channel_id: t.id,
@@ -142,7 +142,7 @@ function A(e) {
         type: "contextless"
       },
       openInPopout: false,
-      analyticsLocation: L
+      analyticsLocation: D
     }), (0, u.w1)({
       guildId: t.guild_id
     })
@@ -152,7 +152,7 @@ function A(e) {
     let e = w,
       n = "txt",
       r = "",
-      i = w.match(T);
+      i = w.match(N);
     null != i && (r = i[1], n = i[2], e = i[3], r += i[4]), (0, x.d)([(0, v.dp)(new Blob([e], {
       type: "text/plain"
     }), "message.".concat(n), "text/plain")], t, A), _.S.dispatchToLastSubscribed(E.CkL.CLEAR_TEXT), "" !== r && _.S.dispatchToLastSubscribed(E.CkL.INSERT_TEXT, {
@@ -211,7 +211,7 @@ function A(e) {
           return (0, r.jsx)(s.sNh, {
             id: "poll",
             label: i,
-            action: F
+            action: V
           }, "poll");
         case j.r.INVITE_TO_PLAY_GAME:
           return (0, r.jsx)(s.sNh, {
@@ -271,8 +271,8 @@ function A(e) {
           return (0, r.jsx)(s.sNh, {
             id: "activity",
             label: i,
-            action: V,
-            hint: (0, r.jsx)(N, {})
+            action: F,
+            hint: (0, r.jsx)(T, {})
           }, "activity");
         case j.r.SCHEDULED_MESSAGE:
           return (0, r.jsx)(s.sNh, {
@@ -281,7 +281,7 @@ function A(e) {
             action: () => (0, g.$f)({
               channel: t
             }),
-            children: D
+            children: L
           }, "scheduled_message");
         default:
           return null

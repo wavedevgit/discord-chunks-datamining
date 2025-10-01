@@ -1,4 +1,4 @@
-/** Chunk was on 37384 **/
+/** Chunk was on 49613 **/
 /** chunk id: 400023, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => K
@@ -110,12 +110,12 @@ let q = (0, Chunk137317.animated)(Chunk481060.eTT),
       editingMessageId: S,
       fontSize: P,
       keyboardModeEnabled: I,
-      filterAfterTimestamp: T,
-      showingQuarantineBanner: N,
+      filterAfterTimestamp: N,
+      showingQuarantineBanner: T,
       hideSummaries: A = false,
       jumpBarClassName: M,
       typingGradient: R
-    } = e, [L, Y] = i.useState(null != (n = E.Z.isAtBottom(m.id)) && n), K = i.useMemo(() => C ? (0, k.aJ)({
+    } = e, [D, Y] = i.useState(null != (n = E.Z.isAtBottom(m.id)) && n), K = i.useMemo(() => C ? (0, k.aJ)({
       compact: true,
       messageGroups: 30,
       groupRange: 4,
@@ -136,11 +136,11 @@ let q = (0, Chunk137317.animated)(Chunk481060.eTT),
       hasUnreads: j,
       focusId: S,
       placeholderHeight: K.totalHeight,
-      canLoadMore: null == T,
+      canLoadMore: null == N,
       handleScrollToBottom: i.useCallback(() => Y(true), [Y]),
       handleScrollFromBottom: i.useCallback(() => Y(false), [Y]),
       additionalMessagePadding: 48
-    }), J = (0, D.Z)({
+    }), J = (0, L.Z)({
       scrollerRef: X.ref,
       isEditing: null != S,
       keyboardModeEnabled: I,
@@ -162,8 +162,8 @@ let q = (0, Chunk137317.animated)(Chunk481060.eTT),
       loadMore: X.loadMore,
       scrollManager: X,
       specs: K,
-      filterAfterTimestamp: null != T ? T : Q,
-      showingQuarantineBanner: N,
+      filterAfterTimestamp: null != N ? N : Q,
+      showingQuarantineBanner: T,
       hideSummaries: A,
       jumpToPresent: () => {
         if (g.hasPresent()) {
@@ -218,17 +218,17 @@ let q = (0, Chunk137317.animated)(Chunk481060.eTT),
         let t = null == (e = O.Z.settings.appearance) ? true : e.clientThemeSettings;
         return (null == t ? true : t.backgroundGradientPresetId) != null || (null == t ? true : t.customUserThemeSettings) != null
       }),
-      eu = i.useMemo(() => R ? L ? V.chatTypingGradientAtBottom : V.chatTypingGradientNotAtBottom : V.chatGradient, [R, L]),
-      ed = i.useMemo(() => R ? L ? V.typingGradientAtBottom : V.typingGradientNotAtBottom : V.gradientDefault, [R, L]);
+      eu = i.useMemo(() => R ? D ? F.chatTypingGradientAtBottom : F.chatTypingGradientNotAtBottom : F.chatGradient, [R, D]),
+      ed = i.useMemo(() => R ? D ? F.typingGradientAtBottom : F.typingGradientNotAtBottom : F.gradientDefault, [R, D]);
     return (0, r.jsxs)(s.bG, {
       navigator: J,
       children: [null != er && er, (0, r.jsxs)("div", {
-        className: a()(V.messagesWrapper, l, "group-spacing-".concat(o)),
+        className: a()(F.messagesWrapper, l, "group-spacing-".concat(o)),
         children: [null == er && ee, (0, r.jsxs)(q, z(G({
           ref: es,
           customTheme: true,
-          className: a()(p, V.scroller, ec ? ed : true),
-          contentClassName: V.scrollerContent,
+          className: a()(p, F.scroller, ec ? ed : true),
+          contentClassName: F.scrollerContent,
           onResize: X.handleResize,
           onScroll: X.handleScroll,
           onMouseDown: X.handleMouseDown,
@@ -237,23 +237,23 @@ let q = (0, Chunk137317.animated)(Chunk481060.eTT),
           tabIndex: false,
           role: "group",
           children: [en, (0, r.jsxs)("ol", z(G({
-            className: a()(V.scrollerInner, {
-              [V.scrollerAllowSticky]: m.isModeratorReportChannel()
+            className: a()(F.scrollerInner, {
+              [F.scrollerAllowSticky]: m.isModeratorReportChannel()
             }),
-            "aria-label": F.intl.formatToPlainString(F.t.XarRiI, {
+            "aria-label": V.intl.formatToPlainString(V.t.XarRiI, {
               channelName: m.name
             })
           }, eo), {
             children: [(0, r.jsx)("span", {
-              className: V.navigationDescription,
+              className: F.navigationDescription,
               id: "messagesNavigationDescription",
               "aria-hidden": true,
-              children: F.intl.string(F.t.Spb3s7)
+              children: V.intl.string(V.t.Spb3s7)
             }), $, (0, r.jsx)("div", {
               className: a()({
-                [V.scrollerSpacer]: !N,
-                [V.empty]: 0 === g.length && !g.loadingMore,
-                [V.emptyForum]: 1 === g.length && !g.loadingMore && m.isForumPost() && (null == (t = g.first()) ? true : t.isFirstMessageInForumPost(m))
+                [F.scrollerSpacer]: !T,
+                [F.empty]: 0 === g.length && !g.loadingMore,
+                [F.emptyForum]: 1 === g.length && !g.loadingMore && m.isForumPost() && (null == (t = g.first()) ? true : t.isFirstMessageInForumPost(m))
               })
             })]
           }))]
@@ -296,7 +296,7 @@ let q = (0, Chunk137317.animated)(Chunk481060.eTT),
       fontSize: E,
       messageDisplayCompact: w,
       renderSpoilers: k,
-      keyboardModeEnabled: D
+      keyboardModeEnabled: L
     } = function() {
       let e = x.jU.useSetting(),
         t = x.cC.useSetting(),
@@ -326,14 +326,14 @@ let q = (0, Chunk137317.animated)(Chunk481060.eTT),
     }(), {
       messages: U,
       channelStream: B,
-      oldestUnreadMessageId: F,
-      editingMessageId: V
+      oldestUnreadMessageId: V,
+      editingMessageId: F
     } = function(e) {
       var t, n;
       let r = (0, c.e7)([I.Z], () => I.Z.getMessages(e.id), [e.id]),
-        l = (0, c.e7)([T.ZP], () => {
+        l = (0, c.e7)([N.ZP], () => {
           var t;
-          return null != (t = T.ZP.getOldestUnreadMessageId(e.id)) ? t : null
+          return null != (t = N.ZP.getOldestUnreadMessageId(e.id)) ? t : null
         }, [e.id]),
         {
           enabled: a
@@ -380,7 +380,7 @@ let q = (0, Chunk137317.animated)(Chunk481060.eTT),
     }(t);
     return (0, r.jsx)(b.aQ.Provider, {
       value: (0, M.Z)(k, d),
-      children: (0, r.jsx)(L.v, {
+      children: (0, r.jsx)(D.v, {
         children: (0, r.jsx)(Y, z(G({}, u), {
           messageGroupSpacing: O,
           showNewMessagesBar: true,
@@ -389,13 +389,13 @@ let q = (0, Chunk137317.animated)(Chunk481060.eTT),
           messages: U,
           channelStream: B,
           permissionVersion: h,
-          uploads: (0, c.e7)([N.Z], () => N.Z.getFiles(t.id), [t]),
-          unreadCount: (0, c.e7)([T.ZP], () => T.ZP.getUnreadCount(t.id), [t]),
-          hasUnreads: null != F,
+          uploads: (0, c.e7)([T.Z], () => T.Z.getFiles(t.id), [t]),
+          unreadCount: (0, c.e7)([N.ZP], () => N.ZP.getUnreadCount(t.id), [t]),
+          hasUnreads: null != V,
           canChat: _,
-          editingMessageId: V,
+          editingMessageId: F,
           fontSize: E,
-          keyboardModeEnabled: D,
+          keyboardModeEnabled: L,
           showingQuarantineBanner: n,
           hideSummaries: l,
           typingGradient: s

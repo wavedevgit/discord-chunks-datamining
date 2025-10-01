@@ -1,13 +1,11 @@
 /** Chunk was on 1272 **/
 /** chunk id: 751586, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  UN: () => b,
-  Ui: () => m
+  UN: () => g,
+  Ui: () => h
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
-var Chunk442837 = require("./442837.js"),
-  Chunk705262 = require("./705262.jsx"),
+var Chunk951288 = require("./951288.js"),
+  Chunk442837 = require("./442837.js"),
   Chunk569984 = require("./569984.js"),
   Chunk564034 = require("./564034.jsx"),
   Chunk649424 = require("./649424.jsx"),
@@ -16,10 +14,9 @@ var Chunk442837 = require("./442837.js"),
   Chunk17057 = require("./17057.jsx"),
   Chunk70621 = require("./70621.jsx"),
   Chunk429080 = require("./429080.jsx"),
-  Chunk388032 = require("./388032.jsx"),
-  Chunk777338 = require("./777338.js");
+  Chunk388032 = require("./388032.jsx");
 
-function m() {
+function h() {
   return [{
     value: "quest_bar",
     label: Chunk388032.intl.string(Chunk388032.t.rjVPdH)
@@ -40,46 +37,38 @@ function m() {
     label: Chunk388032.intl.string(Chunk388032.t.L2mlUV)
   }]
 }
-let b = e => {
+let g = e => {
   let {
     questId: t,
     selectedSections: n
-  } = e, h = (0, i.e7)([a.Z], () => a.Z.getQuest(t));
-  if (null != (0, i.e7)([a.Z], () => a.Z.getFetchQuestPreviewError(t)) || null == h) return null;
-  let m = e => null == n || 0 === n.length || n.includes(e);
+  } = e, f = (0, i.e7)([l.Z], () => l.Z.getQuest(t));
+  if (null != (0, i.e7)([l.Z], () => l.Z.getFetchQuestPreviewError(t)) || null == f) return null;
+  let h = e => null == n || 0 === n.length || n.includes(e);
   return (0, r.jsxs)(r.Fragment, {
-    children: [m("home_card") && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(p.w, {
-        quest: h
-      }), (0, r.jsx)(o.i, {})]
-    }), m("quest_bar") && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(c.Z, {
-        quest: h
-      }), (0, r.jsx)(o.i, {})]
-    }), m("share_embed") && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(d.Z, {
-        questId: h.id
-      }), (0, r.jsx)(o.i, {})]
-    }), m("channel_call_header") && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(u.i, {
-        quest: h
-      }), (0, r.jsx)(o.i, {})]
-    }), m("members_list") && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(f.Z, {
-        quest: h
-      }), (0, r.jsx)(o.i, {})]
-    }), m("activity_panel") && (0, r.jsxs)(r.Fragment, {
+    children: [h("quest_bar") && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(s.Z, {
-        quest: h
-      }), (0, r.jsx)(o.i, {})]
-    }), (0, r.jsx)("div", {
-      className: g.themes,
-      children: (0, r.jsx)(l.ZP, {
-        type: l.yH.SETTINGS,
-        children: (0, r.jsx)(l.ZP.Basic, {
-          className: g.themeSelectionGroup
-        })
-      })
+        quest: f
+      }), (0, r.jsx)(a.i, {})]
+    }), h("home_card") && (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(d.w, {
+        quest: f
+      }), (0, r.jsx)(a.i, {})]
+    }), h("share_embed") && (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(u.Z, {
+        questId: f.id
+      }), (0, r.jsx)(a.i, {})]
+    }), h("channel_call_header") && (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(c.i, {
+        quest: f
+      }), (0, r.jsx)(a.i, {})]
+    }), h("members_list") && (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(p.Z, {
+        quest: f
+      }), (0, r.jsx)(a.i, {})]
+    }), h("activity_panel") && (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(o.Z, {
+        quest: f
+      }), (0, r.jsx)(a.i, {})]
     })]
   })
 }

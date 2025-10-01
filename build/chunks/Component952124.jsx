@@ -12,11 +12,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk279332 = require("./279332.js"),
   Chunk14491 = require("./14491.jsx"),
+  Chunk423086 = require("./423086.jsx"),
   Chunk299206 = require("./299206.jsx"),
   Chunk276022 = require("./276022.jsx"),
   Chunk389052 = require("./389052.jsx"),
   Chunk158508 = require("./158508.jsx"),
-  Chunk622724 = require("./622724.jsx"),
   Chunk785717 = require("./785717.jsx"),
   Chunk621853 = require("./621853.js"),
   Chunk475413 = require("./475413.jsx"),
@@ -59,7 +59,7 @@ function v(e) {
     location: "UserSettingsAuthedApps"
   }, {
     autoTrackExposure: true
-  }).enabled, N = (0, a.e7)([g.Z], () => g.Z.getUserProfile(t.id)), R = null == N ? true : N.application, P = (0, f.Z)({
+  }).enabled, N = (0, a.e7)([g.Z], () => g.Z.getUserProfile(t.id)), R = null == N ? true : N.application, P = (0, _.Z)({
     user: t,
     application: null != R ? R : true,
     guildId: n,
@@ -69,7 +69,7 @@ function v(e) {
         analyticsLocations: S
       }), null == v || v()
     }
-  }), w = (0, _.Z)({
+  }), w = (0, p.Z)({
     user: t,
     guildId: n,
     location: A,
@@ -82,7 +82,7 @@ function v(e) {
       action: "UNBLOCK",
       analyticsLocations: S
     })
-  }), D = (0, p.Z)({
+  }), D = (0, h.Z)({
     user: t,
     guildId: n,
     location: A,
@@ -94,16 +94,16 @@ function v(e) {
       action: "UNIGNORE",
       analyticsLocations: S
     })
-  }), L = (0, h.Z)({
+  }), L = (0, d.Z)({
+    applicationId: null == R ? true : R.id,
     user: t,
     guildId: n,
-    location: A,
-    color: "danger",
-    onAction: () => T({
+    onSubmit: () => T({
       action: "REPORT",
       analyticsLocations: S
-    })
-  }), x = (0, d.Z)({
+    }),
+    color: "danger"
+  }), x = (0, f.Z)({
     id: null == R ? true : R.id,
     label: b.intl.string(b.t["+NP/b2"]),
     onSuccess: () => T({

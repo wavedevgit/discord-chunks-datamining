@@ -27,7 +27,7 @@ function c(e) {
     }, t ? {
       id: a.e5.CLAIMED,
       label: s.intl.string(s.t.zyNYND)
-    } : null, u ? {
+    } : null, t && u ? {
       id: a.e5.PREVIEW_TOOL,
       label: s.intl.string(s.t.BDUDam)
     } : null].filter(l.lm), [t, u]),

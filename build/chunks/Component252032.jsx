@@ -1,4 +1,4 @@
-/** Chunk was on 37384 **/
+/** Chunk was on 49613 **/
 /** chunk id: 252032, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -54,10 +54,10 @@ function j(e) {
     editingMessage: p.Z.getEditingMessage(c),
     editingTextValue: p.Z.getEditingTextValue(c),
     editingRichValue: p.Z.getEditingRichValue(c)
-  }), [c]), T = (0, l.e7)([d.default], () => d.default.getId()), N = i.useCallback((e, r, i) => {
+  }), [c]), N = (0, l.e7)([d.default], () => d.default.getId()), T = i.useCallback((e, r, i) => {
     let {
       content: l
-    } = i, c = f.Z.can(_.Plq.MANAGE_MESSAGES, t), u = null != P && null != P.author ? P.author.id : null, d = S && (u === T || c), p = {
+    } = i, c = f.Z.can(_.Plq.MANAGE_MESSAGES, t), u = null != P && null != P.author ? P.author.id : null, d = S && (u === N || c), p = {
       content: l,
       components: true
     };
@@ -72,7 +72,7 @@ function j(e) {
       }), p.content = "", p.components = t
     }
     return d && null != P && (0, g.yE)(P.flags, _.iLy.CROSSPOSTED) ? o.Z.confirmEdit(e, r, p) : a.Z.editMessage(e, r, p), Promise.resolve()
-  }, [P, S, T, t, n]), A = i.useCallback(e => {
+  }, [P, S, N, t, n]), A = i.useCallback(e => {
     var t, n;
     return (0, i.createElement)(E, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -114,7 +114,7 @@ function j(e) {
     onCancel: a.Z.endEditMessage,
     onChange: a.Z.updateEditMessage,
     onConfirmDelete: o.Z.confirmDelete,
-    saveMessage: N,
+    saveMessage: T,
     validateEdit: O,
     children: A
   }) : null

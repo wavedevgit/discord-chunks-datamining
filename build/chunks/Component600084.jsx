@@ -1,7 +1,7 @@
-/** Chunk was on 37384 **/
+/** Chunk was on 49613 **/
 /** chunk id: 600084, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => V
+  Z: () => F
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -43,7 +43,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk40036 = require("./40036.js"),
   Chunk10198 = require("./10198.js");
 
-function F(e) {
+function V(e) {
   let {
     canManageRoles: t,
     channel: n
@@ -66,7 +66,7 @@ function F(e) {
   })
 }
 
-function V(e) {
+function F(e) {
   var t, n;
   let {
     channel: p,
@@ -77,15 +77,15 @@ function V(e) {
     canManageRoles: M,
     canReadMessageHistory: R
   } = (0, l.cj)([x.Z], () => ({
-    canManageRoles: x.Z.can(L.Plq.MANAGE_ROLES, p),
-    canReadMessageHistory: x.Z.can(L.Plq.READ_MESSAGE_HISTORY, p)
-  })), k = (0, l.e7)([b.Z], () => v === L.d4z.DM ? b.Z.getMutualGuilds(p.getRecipientId()) : null, [p, v]), {
-    systemDMRedesignEnabled: V
+    canManageRoles: x.Z.can(D.Plq.MANAGE_ROLES, p),
+    canReadMessageHistory: x.Z.can(D.Plq.READ_MESSAGE_HISTORY, p)
+  })), k = (0, l.e7)([b.Z], () => v === D.d4z.DM ? b.Z.getMutualGuilds(p.getRecipientId()) : null, [p, v]), {
+    systemDMRedesignEnabled: F
   } = g.Z.useExperiment({
     location: "bf1a4f_1"
   }, {
     autoTrackExposure: null != (t = p.isSystemDM()) && t
-  }), G = (0, u.Z)(null != (n = null == P ? true : P.id) ? n : L.lds), {
+  }), G = (0, u.Z)(null != (n = null == P ? true : P.id) ? n : D.lds), {
     authorizedAppToken: z,
     authorizedAppsFetchState: W
   } = (0, l.cj)([_.Z], () => ({
@@ -95,22 +95,22 @@ function V(e) {
     location: "EmptyMessages"
   }).enabledDesktop;
   if (i.useEffect(() => {
-      v === L.d4z.DM && null == k && null != P && o.Z.wait(() => (0, y.Z)(p.getRecipientId(), P.getAvatarURL(null, 80), {
+      v === D.d4z.DM && null == k && null != P && o.Z.wait(() => (0, y.Z)(p.getRecipientId(), P.getAvatarURL(null, 80), {
         withMutualGuilds: true
       }))
     }, [k, v, p, P]), i.useEffect(() => {
       (null == P ? true : P.bot) && W === _.M.NOT_FETCHED && s.Z.fetch()
-    }, [null == P ? true : P.bot, W]), p.isSystemDM()) return V ? (0, r.jsx)(w.Z, {
+    }, [null == P ? true : P.bot, W]), p.isSystemDM()) return F ? (0, r.jsx)(w.Z, {
     channel: p
-  }) : (0, r.jsx)(N.Z, {
+  }) : (0, r.jsx)(T.Z, {
     channel: p,
     children: U.intl.string(U.t.Rzvnio)
   });
-  if (v === L.d4z.DM) {
+  if (v === D.d4z.DM) {
     let e;
     return null != P && null != G ? null != z && (e = (0, r.jsxs)("div", {
       className: B.buttonContainer,
-      children: [(0, r.jsx)(T.W, {
+      children: [(0, r.jsx)(N.W, {
         className: B.button,
         channel: p,
         user: P
@@ -127,7 +127,7 @@ function V(e) {
       userId: p.getRecipientId(),
       channel: p,
       showingBanner: h
-    }), (0, r.jsxs)(N.Z, {
+    }), (0, r.jsxs)(T.Z, {
       channel: p,
       user: P,
       children: [null != P && !P.isProvisional && (0, r.jsx)(a.X6q, {
@@ -152,16 +152,16 @@ function V(e) {
         children: U.intl.string(U.t.M8Ao6O)
       })]
     });
-    else if (p.hasFlag(D.zZ.IS_JOIN_REQUEST_INTERVIEW_CHANNEL)) return (0, r.jsx)(I.Z, {
+    else if (p.hasFlag(L.zZ.IS_JOIN_REQUEST_INTERVIEW_CHANNEL)) return (0, r.jsx)(I.Z, {
     channel: p
   });
-  else return (0, r.jsx)(N.Z, {
+  else return (0, r.jsx)(T.Z, {
     channel: p,
     children: U.intl.format(U.t.MFwcqK, {
       name: C
     })
   });
-  return R ? (0, r.jsx)(F, {
+  return R ? (0, r.jsx)(V, {
     channel: p,
     canManageRoles: M
   }) : (0, r.jsx)(S.ZP, {

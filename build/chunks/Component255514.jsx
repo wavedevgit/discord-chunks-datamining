@@ -1,4 +1,4 @@
-/** Chunk was on 60151 **/
+/** Chunk was on 15926 **/
 /** chunk id: 255514, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => et
@@ -107,7 +107,7 @@ let et = e => {
     multiSelect: ea,
     reportId: eo,
     textInput: es
-  } = e, ec = $(t, "checkbox"), ed = $(t, "text_line_resource"), eu = ee(t, "external_link"), e_ = ee(t, "free_text"), em = ee(t, "dropdown"), ep = $(t, "text"), eg = l.s.REPORT_TO_MOD.has(n.name), [ef, eb] = i.useState(false), [eh, ex] = i.useState(false), [ev, ej] = i.useState(""), [ey, eO] = i.useState(() => ({})), [eC, eI] = i.useState(() => ({})), eZ = i.useMemo(() => "message" === n.name ? n.record.channel_id : true, [n]), eS = i.useCallback(e => ({
+  } = e, ec = $(t, "checkbox"), ed = $(t, "text_line_resource"), eu = ee(t, "external_link"), e_ = ee(t, "free_text"), em = ee(t, "dropdown"), ep = $(t, "text"), eg = l.s.REPORT_TO_MOD.has(n.name), [ef, eb] = i.useState(false), [eh, ex] = i.useState(false), [ev, ej] = i.useState(""), [ey, eO] = i.useState(() => ({})), [eC, eZ] = i.useState(() => ({})), eI = i.useMemo(() => "message" === n.name ? n.record.channel_id : true, [n]), eS = i.useCallback(e => ({
     nodeRef: t.id,
     destination: e,
     textInput: null != e_ || null != em ? eC : true,
@@ -121,12 +121,12 @@ let et = e => {
     r[e] = {
       value: t,
       isValid: n
-    }, eI(r)
+    }, eZ(r)
   }, eN = e => {
     er(eS(e))
   };
   i.useEffect(() => {
-    null != ea && eO(ea), null != es && eI(es)
+    null != ea && eO(ea), null != es && eZ(es)
   }, [ea, es]), i.useEffect(() => {
     if (null != ec) {
       let e = ec.data;
@@ -152,9 +152,9 @@ let et = e => {
   let eE = (0, u.fW)(et),
     ek = null != $(t, "ignore_users") && ("message" === n.name || "first_dm" === n.name || "user" === n.name),
     ew = (0, d.U)(),
-    eR = (0, s.PO)("share_with_parent_element"),
-    eD = (0, c.mq)(X.ne.ACTIVE),
-    eM = ew && eD.length > 0 && eR && null != $(t, "share_with_parents");
+    eD = (0, s.PO)("share_with_parent_element"),
+    eR = (0, c.mq)(X.ne.ACTIVE),
+    eM = ew && eR.length > 0 && eD && null != $(t, "share_with_parents");
   return (0, r.jsxs)("div", {
     className: K.container,
     children: [(0, r.jsxs)(a.xBx, {
@@ -184,7 +184,7 @@ let et = e => {
       }) : null, null != $(t, "widget_preview") && "widget" === n.name ? (0, r.jsx)(F.Z, {
         widget: n.widget,
         userId: n.user_id
-      }) : null, null != $(t, "guild_preview") && "guild" === n.name ? (0, r.jsx)(Z.Z, {
+      }) : null, null != $(t, "guild_preview") && "guild" === n.name ? (0, r.jsx)(I.Z, {
         guild: n.record
       }) : null, null != $(t, "breadcrumbs") && (0, r.jsx)(f.Z, {
         isModeratorReport: eg,
@@ -199,21 +199,21 @@ let et = e => {
           } = e;
           return q.O.includes(t)
         })
-      }(t) && (0, r.jsxs)(D.Z, {
+      }(t) && (0, r.jsxs)(R.Z, {
         children: [ek && (0, r.jsx)(P.Z, {
           user: "user" === n.name ? n.record : n.record.author,
-          channelId: eZ,
+          channelId: eI,
           reportId: eo
         }), eM && (0, r.jsx)(B.Z, {
-          parents: eD
+          parents: eR
         }), null != $(t, "block_users") && ("message" === n.name || "first_dm" === n.name || "user" === n.name || "report_to_mod_message" === n.name || "application" === n.name && null != n.record.bot) && (0, r.jsx)(g.Z, {
           user: "application" === n.name ? n.record.bot : "user" === n.name ? n.record : n.record.author,
-          channelId: eZ,
+          channelId: eI,
           reportId: eo,
           reportType: n
-        }), !ek && null != $(t, "mute_users") && ("message" === n.name || "first_dm" === n.name || "user" === n.name || "report_to_mod_message" === n.name) && (0, r.jsx)(R.Z, {
+        }), !ek && null != $(t, "mute_users") && ("message" === n.name || "first_dm" === n.name || "user" === n.name || "report_to_mod_message" === n.name) && (0, r.jsx)(D.Z, {
           user: "user" === n.name ? n.record : n.record.author,
-          channelId: eZ,
+          channelId: eI,
           reportId: eo
         }), null != $(t, "delete_message") && ("message" === n.name || "report_to_mod_message" === n.name) && (0, r.jsx)(x.Z, {
           message: n.record,
@@ -241,7 +241,7 @@ let et = e => {
         event: n.record
       }), null != $(t, "guild_directory_entry_preview") && "guild_directory_entry" === n.name && (0, r.jsx)(C.Z, {
         entry: n.record
-      }), null != $(t, "guild_discovery_preview") && "guild_discovery" === n.name && (0, r.jsx)(I.Z, {
+      }), null != $(t, "guild_discovery_preview") && "guild_discovery" === n.name && (0, r.jsx)(Z.Z, {
         entry: n.record
       }), null != $(t, "app_preview") && "application" === n.name && (0, r.jsx)(p.Z, {
         entry: n.record

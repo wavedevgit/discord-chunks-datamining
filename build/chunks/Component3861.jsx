@@ -1,4 +1,4 @@
-/** Chunk was on 37384 **/
+/** Chunk was on 49613 **/
 /** chunk id: 3861, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -35,8 +35,8 @@ let y = (0, Chunk112724.Z)(e => {
     showParticipants: P = true,
     width: I,
     height: Z,
-    idle: T,
-    mode: N,
+    idle: N,
+    mode: T,
     popoutWindow: A,
     awaitingRemoteSessionInfo: w,
     callContainerDimensions: M
@@ -51,7 +51,7 @@ let y = (0, Chunk112724.Z)(e => {
     channel: O,
     participants: t,
     hasConnectPermission: j
-  }) : N === m.WtW.VOICE ? (0, r.jsx)(o.Z, {
+  }) : T === m.WtW.VOICE ? (0, r.jsx)(o.Z, {
     guildId: O.guild_id,
     width: I,
     className: b.voiceCallWrapper,
@@ -82,7 +82,7 @@ let y = (0, Chunk112724.Z)(e => {
     participants: t,
     popoutWindow: A,
     className: E,
-    idle: T,
+    idle: N,
     height: Z,
     width: I,
     layout: C,

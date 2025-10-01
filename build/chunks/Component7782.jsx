@@ -1,4 +1,4 @@
-/** Chunk was on 37384 **/
+/** Chunk was on 49613 **/
 /** chunk id: 7782, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => w
@@ -30,7 +30,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk90985 = require("./90985.js");
-let T = e => {
+let N = e => {
     let {
       userId: t,
       channelId: n
@@ -84,7 +84,7 @@ let T = e => {
       })]
     })
   },
-  N = e => {
+  T = e => {
     var t;
     let {
       relationshipType: n,
@@ -232,7 +232,7 @@ let T = e => {
       })]
     }) : (0, r.jsxs)("div", {
       className: Z.inline,
-      children: [(0, r.jsx)(N, {
+      children: [(0, r.jsx)(T, {
         relationshipType: d,
         userId: t,
         showingBanner: i
@@ -250,7 +250,7 @@ let T = e => {
       className: m ? Z.mobileContainer : Z.container,
       children: [(0, r.jsx)("div", {
         className: Z.inline,
-        children: (0, r.jsx)(T, {
+        children: (0, r.jsx)(N, {
           userId: t,
           channelId: n.id
         })

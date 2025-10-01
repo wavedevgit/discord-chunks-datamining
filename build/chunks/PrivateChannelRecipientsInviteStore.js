@@ -1,4 +1,4 @@
-/** Chunk was on 37384 **/
+/** Chunk was on 49613 **/
 /** chunk id: 544610, original params: e,t,n (module,exports,require) **/
 let r;
 require.d(exports, {
@@ -46,7 +46,7 @@ function Z() {
         user: n,
         comparator: h.ZP.getName(n)
       }), e
-    }, []).sort(N)
+    }, []).sort(T)
   }(module), true;
   let t = null != module ? module.recipients : [];
   if (null != r) {
@@ -83,13 +83,13 @@ function Z() {
   returnfalse
 }
 
-function T() {
+function N() {
   if (!_) returnfalse;
   let e = j;
   return (j = Chunk699516.Z.getFriendCount() > 0) !== module
 }
 
-function N(e, t) {
+function T(e, t) {
   if (m.Z.hasConsented(C.pjP.PERSONALIZATION)) {
     var n, r, i, l;
     let a = null != (i = null == (n = u.Z.getUserAffinity(e.user.id)) ? true : n.communicationProbability) ? i : 0,
@@ -116,7 +116,7 @@ function A(e) {
       comparator: r
     })
   }
-  O = n, D.emitChange()
+  O = n, L.emitChange()
 }
 
 function w() {
@@ -125,7 +125,7 @@ function w() {
 
 function M(e) {
   if (e.key !== C.vTt) returnfalse;
-  _ = true, T(), r = w(), S = null, I("")
+  _ = true, N(), r = w(), S = null, I("")
 }
 
 function R(e) {
@@ -136,9 +136,9 @@ function R(e) {
 function k() {
   null != r && (r.destroy(), r = null), P()
 }
-class L extends(i = Chunk442837.ZP.Store) {
+class D extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk594174.default, Chunk592125.Z, Chunk699516.Z, Chunk353926.Z, Chunk480294.Z), this.syncWith([Chunk594174.default, Chunk592125.Z], Z), this.syncWith([Chunk699516.Z], T)
+    this.waitFor(Chunk594174.default, Chunk592125.Z, Chunk699516.Z, Chunk353926.Z, Chunk480294.Z), this.syncWith([Chunk594174.default, Chunk592125.Z], Z), this.syncWith([Chunk699516.Z], N)
   }
   getResults() {
     return O
@@ -161,13 +161,13 @@ class L extends(i = Chunk442837.ZP.Store) {
       hasFriends: j
     }
   }
-}(l = "displayName") in L ? Object.defineProperty(L, l, {
+}(l = "displayName") in D ? Object.defineProperty(D, l, {
   value: "PrivateChannelRecipientsInviteStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : L[l] = "PrivateChannelRecipientsInviteStore";
-let D = new L(Chunk570140.Z, {
+}) : D[l] = "PrivateChannelRecipientsInviteStore";
+let L = new D(Chunk570140.Z, {
     CONNECTION_OPEN: function() {
       P()
     },
@@ -183,7 +183,7 @@ let D = new L(Chunk570140.Z, {
     MODAL_PUSH: M,
     SHOW_ACTION_SHEET: M,
     PRIVATE_CHANNEL_RECIPIENTS_INVITE_OPEN: function(e) {
-      _ = true, T(), r = w(), S = e.channelId, I("")
+      _ = true, N(), r = w(), S = e.channelId, I("")
     },
     MODAL_POP: R,
     HIDE_ACTION_SHEET: R,
@@ -207,4 +207,4 @@ let D = new L(Chunk570140.Z, {
       E.delete(t), E = new Set(E)
     }
   }),
-  U = D
+  U = L

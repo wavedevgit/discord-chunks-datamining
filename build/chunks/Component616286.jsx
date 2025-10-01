@@ -1,4 +1,4 @@
-/** Chunk was on 37384 **/
+/** Chunk was on 49613 **/
 /** chunk id: 616286, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   T: () => j
@@ -91,8 +91,8 @@ function j(e) {
     disabled: S
   } = j, P = i.useRef(null), I = (0, s.e7)([d.Z], () => d.Z.getChatOpen(n), [n]), {
     isShowing: Z,
-    unreadCount: T,
-    mentionCount: N
+    unreadCount: N,
+    mentionCount: T
   } = function(e) {
     let {
       unreadCount: t,
@@ -130,12 +130,12 @@ function j(e) {
     event: _.CkL.FOCUS_CHAT_BUTTON,
     handler: S ? null : M
   });
-  let [R, k] = i.useState(false), L = i.useCallback(() => {
+  let [R, k] = i.useState(false), D = i.useCallback(() => {
     f && k(true)
   }, [f]);
   (0, g.yp)({
     event: _.CkL.SHOW_TEXT_IN_VOICE_POPOUT_COMING_SOON_TIP,
-    handler: L
+    handler: D
   }), i.useEffect(() => {
     let e;
     return R && (e = setTimeout(() => {
@@ -144,10 +144,10 @@ function j(e) {
       clearTimeout(e)
     }
   }, [R]);
-  let D = [t = f && S ? v.intl.string(v.t.DPgc5u) : I ? v.intl.string(v.t.nthdxM) : v.intl.string(v.t["5KxXrK"])];
-  return N > 0 && D.push(v.intl.formatToPlainString(v.t["3l1GOz"], {
-    mentionCount: N
-  })), T > 0 && D.push(v.intl.string(v.t.x5zAGR)), (0, r.jsx)(C.Z, function(e) {
+  let L = [t = f && S ? v.intl.string(v.t.DPgc5u) : I ? v.intl.string(v.t.nthdxM) : v.intl.string(v.t["5KxXrK"])];
+  return T > 0 && L.push(v.intl.formatToPlainString(v.t["3l1GOz"], {
+    mentionCount: T
+  })), N > 0 && L.push(v.intl.string(v.t.x5zAGR)), (0, r.jsx)(C.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -168,7 +168,7 @@ function j(e) {
     buttonRef: P,
     onClick: A,
     label: t,
-    "aria-label": D.join(", "),
+    "aria-label": L.join(", "),
     iconComponent: w,
     tooltipPosition: "bottom",
     wrapperClassName: a()(l, null != o && {

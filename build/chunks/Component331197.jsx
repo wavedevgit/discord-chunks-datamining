@@ -1,4 +1,4 @@
-/** Chunk was on 37384 **/
+/** Chunk was on 49613 **/
 /** chunk id: 331197, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -37,20 +37,20 @@ function j(e) {
     Component: I,
     play: Z,
     events: {
-      onMouseEnter: T,
-      onMouseLeave: N
+      onMouseEnter: N,
+      onMouseLeave: T
     }
   } = (0, o.j)(), A = t.getGuildId(), {
     mute: w,
     suppress: M
-  } = (0, y.Z)(t), R = (0, l.e7)([C.Z], () => C.Z.isDeaf()), k = w || M || R, L = (0, m.sR)({
+  } = (0, y.Z)(t), R = (0, l.e7)([C.Z], () => C.Z.isDeaf()), k = w || M || R, D = (0, m.sR)({
     isSoundboardButtonDisabled: k
-  }), [D, U] = (0, h.cv)(L), {
+  }), [L, U] = (0, h.cv)(D), {
     analyticsLocations: B
   } = (0, u.ZP)(), {
     isHovered: H,
-    setIsHovered: F,
-    onMouseEnter: V,
+    setIsHovered: V,
+    onMouseEnter: F,
     onMouseLeave: G
   } = (0, f.Z)(200, 300);
 
@@ -98,7 +98,7 @@ function j(e) {
   }
 
   function W() {
-    (0, d.v)(P, d.d.SOUNDBOARD), E === x.D.SOUNDBOARD ? (null == S || S(true), G()) : (null != E ? (Z(), V()) : Z(), null == S || S(x.D.SOUNDBOARD))
+    (0, d.v)(P, d.d.SOUNDBOARD), E === x.D.SOUNDBOARD ? (null == S || S(true), G()) : (null != E ? (Z(), F()) : Z(), null == S || S(x.D.SOUNDBOARD))
   }
   let q = i.useRef(null);
   return (0, r.jsx)(s.y, {
@@ -110,7 +110,7 @@ function j(e) {
     align: "center",
     spacing: 16,
     onRequestClose: () => {
-      F(false), null == S || S(true)
+      V(false), null == S || S(true)
     },
     renderPopout: e => {
       let {
@@ -118,13 +118,13 @@ function j(e) {
       } = e;
       return k ? null : (0, r.jsx)(_.Z, {
         children: (0, r.jsx)("div", {
-          onMouseEnter: V,
+          onMouseEnter: F,
           onMouseLeave: G,
           children: (0, r.jsx)(b.Z, {
             guildId: A,
             channel: t,
             onClose: n,
-            gridNotice: D === a.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && (0, r.jsx)(g.o, {
+            gridNotice: L === a.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && (0, r.jsx)(g.o, {
               onClose: n,
               markAsDismissed: U
             }),
@@ -143,10 +143,10 @@ function j(e) {
       onContextMenu: z,
       onClick: W,
       onMouseEnter: () => {
-        V(), T()
+        F(), N()
       },
       onMouseLeave: () => {
-        null == E && (G(), N())
+        null == E && (G(), T())
       },
       isActive: H || E === x.D.SOUNDBOARD,
       color: H || E === x.D.SOUNDBOARD ? "primaryDark" : true
