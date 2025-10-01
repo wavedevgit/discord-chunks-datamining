@@ -5,7 +5,7 @@ let r;
 require.d(exports, {
   A8: () => M,
   Il: () => k,
-  ZP: () => tt
+  ZP: () => tn
 }), require("./388685.js"), require("./415506.js");
 var i, Chunk348327 = require("./348327.js"),
   o = require.n(Chunk348327),
@@ -90,7 +90,7 @@ class U {
         if (this.isGPUBoosted === require) return;
         let r = await (null === Chunk579806.Z || true === Chunk579806.Z || null == (t = Chunk579806.Z.processUtils) || null == (e = exports.getGpuProcessId) ? true : module.call(exports));
         if (null == r) return;
-        Chunk998502.ZP.SetGPUBoostEnabledByPid(r, require) && (this.isGPUBoosted = require), te.emitChange()
+        Chunk998502.ZP.SetGPUBoostEnabledByPid(r, require) && (this.isGPUBoosted = require), tt.emitChange()
       } catch (e) {
         (null == (n = module.message) ? true : require.includes("IPC method called after context was released")) && this.resetGPUBoosts(), G.error("Error during GPU boost request flush:", module), eh(null != X ? X : Chunk145597.UNSET_PID, module)
       }
@@ -101,12 +101,12 @@ let G = new Chunk710845.Z("OverlayStoreV3");
 
 function B(e, t, n) {
   let r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : y.l6.Info;
-  y.JC.addModuleBreadcrumb(t, null != n ? n : {}, y.C7.OOPModule, e, r), te.emitChange()
+  y.JC.addModuleBreadcrumb(t, null != n ? n : {}, y.C7.OOPModule, e, r), tt.emitChange()
 }
 
 function Z(e, t, n) {
   let r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : y.l6.Info;
-  y.JC.addModuleBreadcrumb(t, null != n ? n : {}, y.C7.Flux, e, r), te.emitChange()
+  y.JC.addModuleBreadcrumb(t, null != n ? n : {}, y.C7.Flux, e, r), tt.emitChange()
 }
 let F = new Set,
   V = new Set,
@@ -277,7 +277,7 @@ function eh(e, t) {
   }), y.JC.addModuleBreadcrumb("host_crash", {
     error: t.message,
     error_description: null != (n = t.stack) ? n : ""
-  }, y.C7.NativeOOP, e, y.l6.Error), ec.clearClickZones(), te.emitChange())
+  }, y.C7.NativeOOP, e, y.l6.Error), ec.clearClickZones(), tt.emitChange())
 }
 
 function em(e, t) {
@@ -291,7 +291,7 @@ function em(e, t) {
   }), y.JC.addModuleBreadcrumb("renderer_crash", {
     error: t.message,
     error_description: null != (n = t.stack) ? n : ""
-  }, y.C7.OOPModule, e, y.l6.Error), ec.clearClickZones(), te.emitChange())
+  }, y.C7.OOPModule, e, y.l6.Error), ec.clearClickZones(), tt.emitChange())
 }
 
 function eg(e, t) {
@@ -406,7 +406,7 @@ async function eS(e) {
     return B(e, "renderer_started", {
       rendererStartedAnalyticsData: a,
       popoutInitializationStages: ea
-    }), ef(e, a), eF(false), S.Z.resetWindowState(), (null == K ? true : K.setOnWindowHandleInitializedCallback) == null && eB(true), i
+    }), ef(e, a), eV(false), S.Z.resetWindowState(), (null == K ? true : K.setOnWindowHandleInitializedCallback) == null && eZ(true), i
   } catch (t) {
     G.error("failed to create out of process overlay host window", t), em(e, t), c.Z.updateOverlayState(e, I.mM.OVERLAY_CRASHED_DISABLED), ea = j(L({}, ea), {
       errorMessage: "Error in _createOutOfProcessOverlayHostWindow: " + t
@@ -415,7 +415,7 @@ async function eS(e) {
       popoutInitializationStages: ea
     })
   } finally {
-    te.emitChange()
+    tt.emitChange()
   }
   return eC(e), ""
 }
@@ -433,7 +433,7 @@ function eA() {
   } catch (e) {
     G.error("Error setting background throttling:", module), eh(null != X ? X : Chunk145597.UNSET_PID, module)
   }
-  eL(), V.clear(), Chunk503522.Z.resetWindowState(false), null != X && eC(X), X = null, (0, Chunk145597.setPID)(null != X ? X : Chunk145597.UNSET_PID), eo(), te.emitChange()
+  eL(), V.clear(), Chunk503522.Z.resetWindowState(false), null != X && eC(X), X = null, (0, Chunk145597.setPID)(null != X ? X : Chunk145597.UNSET_PID), eo(), tt.emitChange()
 }
 
 function eC(e) {
@@ -463,7 +463,7 @@ function eN(e) {
   } catch (e) {
     G.error("failed to refresh out of process overlay host window", e), eh(null != X ? X : b.UNSET_PID, e)
   } finally {
-    te.emitChange()
+    tt.emitChange()
   }
 }
 
@@ -511,18 +511,18 @@ function ew(e) {
   B(null != q ? q : null, "focus_callback", {
     callbackPid: e,
     currentFocusedPID: q
-  }), eP(e), te.emitChange(), e !== q && G.info("OverlayStore: Focused new PID", e)
+  }), eP(e), tt.emitChange(), e !== q && G.info("OverlayStore: Focused new PID", e)
 }
 
 function eD(e) {
   null != q && B(q, "focus_lost_callback", {
     focusedPID: q,
     lostPid: e
-  }), eL(), te.emitChange()
+  }), eL(), tt.emitChange()
 }
 
 function eL() {
-  eP(null, true), te.emitChange()
+  eP(null, true), tt.emitChange()
 }
 
 function ex(e) {
@@ -563,15 +563,23 @@ function eU(e) {
 }
 
 function eG(e) {
-  B(e, "_successfullyShownCallback"), W.add(e), ej(e)
+  var t;
+  let {
+    enabled: n
+  } = e;
+  null == K || null == (t = K.setDetailedLogging) || t.call(K, n)
 }
 
 function eB(e) {
+  B(e, "_successfullyShownCallback"), W.add(e), ej(e)
+}
+
+function eZ(e) {
   ea = j(L({}, ea), {
     windowHandleSentToNative: e
-  }), e && c.Z.updateOverlayState((0, b.getPID)(), I.mM.WAITING_FOR_REACT_INITIALIZATION), te.emitChange()
+  }), e && c.Z.updateOverlayState((0, b.getPID)(), I.mM.WAITING_FOR_REACT_INITIALIZATION), tt.emitChange()
 }
-let eZ = (() => {
+let eF = (() => {
   let e = null;
   async function t() {
     if (!Chunk987650.iP) return void G.error("Attempted to load overlay on an unsupported platform.");
@@ -580,7 +588,7 @@ let eZ = (() => {
       var e, t, n, r;
       await Chunk998502.ZP.ensureModule("discord_desktop_overlay");
       let i = Chunk998502.ZP.requireModule("discord_desktop_overlay");
-      null == i || null == (e = i.init) || module.call(i), i.setCaptureZoneCallback(eR), i.setHostWindowCallbacks(eS, eA, eN), i.setFocusCallback(ew), null == (t = i.setFocusLostCallback) || exports.call(i, eD), null == (n = i.setSuccessfullyShownCallback) || require.call(i, eG), null == (r = i.setOnWindowHandleInitializedCallback) || r.call(i, eB), K = i, (0, Chunk145597.setOutOfProcessSupport)(true), eO(), Chunk13245.Z.setRenderDebugMode(true, Chunk837268.GO.TrackFocusPIDs), G.info("OverlayV3 Module Loaded"), B((0, Chunk145597.getPID)(), "overlay_v3_module_loaded")
+      null == i || null == (e = i.init) || module.call(i), i.setCaptureZoneCallback(eR), i.setHostWindowCallbacks(eS, eA, eN), i.setFocusCallback(ew), null == (t = i.setFocusLostCallback) || exports.call(i, eD), null == (n = i.setSuccessfullyShownCallback) || require.call(i, eB), null == (r = i.setOnWindowHandleInitializedCallback) || r.call(i, eZ), K = i, (0, Chunk145597.setOutOfProcessSupport)(true), eO(), Chunk13245.Z.setRenderDebugMode(true, Chunk837268.GO.TrackFocusPIDs), G.info("OverlayV3 Module Loaded"), B((0, Chunk145597.getPID)(), "overlay_v3_module_loaded")
     } catch (e) {
       throw G.error("failed loading overlay module", module), (0, Chunk145597.setOutOfProcessSupport)(false), (0, Chunk41534.V6)(module, Chunk837268.gl.OutOfProcess, {
         extra: ep(null != X ? X : Chunk145597.UNSET_PID, "module_load")
@@ -590,24 +598,24 @@ let eZ = (() => {
   return () => (null == module && (e = exports()), module)
 })();
 
-function eF(e) {
+function eV(e) {
   Z((0, b.getPID)(), "setInteractionEnabled called", {
     interactionEnabled: e
   }), null == K || K.setInteractionEnabled(e)
 }
 
-function eV(e) {
-  if (N.iP && (z = e, null == K && ey())) return void eZ()
+function eH(e) {
+  if (N.iP && (z = e, null == K && ey())) return void eF()
 }
-async function eH(e) {
-  e.overlayMethod === I.gl.OutOfProcess || e.overlayMethod === I.gl.OutOfProcessLimitedInteraction ? (null == K && await eZ(), eg(e.pid, e.overlayMethod)) : eE(e.pid), te.emitChange()
-}
-
-function eY(e) {
-  G.verbose("Updating OverlayMethod", e), eH(e)
+async function eY(e) {
+  e.overlayMethod === I.gl.OutOfProcess || e.overlayMethod === I.gl.OutOfProcessLimitedInteraction ? (null == K && await eF(), eg(e.pid, e.overlayMethod)) : eE(e.pid), tt.emitChange()
 }
 
 function eW(e) {
+  G.verbose("Updating OverlayMethod", e), eY(e)
+}
+
+function eK(e) {
   let {
     pid: t,
     error: n
@@ -615,33 +623,33 @@ function eW(e) {
   F.has(t) && em(t, n instanceof Error ? n : Error(null != n ? n : "Unknown error"))
 }
 
-function eK(e) {
+function ez(e) {
   Y.toggleGPUBoost(e.reason, e.enabled)
 }
 
-function ez() {
-  G.verbose("Maybe Enable Overlay"), ey() ? (eV(Chunk454991.v.oopEnabled), (0, Chunk145597.setOutOfProcessSupport)(true), eZ()) : z && eV(false)
-}
-
-function eq(e) {
-  let {
-    oopEnabled: t
-  } = e;
-  eV(t)
+function eq() {
+  G.verbose("Maybe Enable Overlay"), ey() ? (eH(Chunk454991.v.oopEnabled), (0, Chunk145597.setOutOfProcessSupport)(true), eF()) : z && eH(false)
 }
 
 function eX(e) {
+  let {
+    oopEnabled: t
+  } = e;
+  eH(t)
+}
+
+function eQ(e) {
   let {
     zones: t
   } = e;
   ec.setClickZones(t)
 }
 
-function eQ(e) {
+function eJ(e) {
   $[e.pid] = e.overlayState
 }
 
-function eJ(e) {
+function e$(e) {
   let {
     locked: t,
     pid: n
@@ -656,7 +664,7 @@ function eJ(e) {
   }
 }
 
-function e$(e) {
+function e0(e) {
   let {
     region: t
   } = e;
@@ -665,11 +673,11 @@ function e$(e) {
   }), ev(false)
 }
 
-function e0() {
+function e1() {
   Z(null != q ? q : null, "deactivate_all_regions"), ev(true)
 }
 
-function e1(e) {
+function e2(e) {
   let {
     enabled: t,
     mode: n
@@ -677,24 +685,24 @@ function e1(e) {
   t ? eu.add(n) : eu.delete(n), n === I.GO.DisabledGPUBoost && Y.toggleDisabledGPUBoost(t), n === I.GO.ForceGPUBoost && Y.toggleGPUBoost(I.zS.DEV_FORCED_GPU_BOOST, t)
 }
 
-function e2() {
-  Chunk353926.Z.hasLoadedExperiments && !et && (et = true, ez())
+function e3() {
+  Chunk353926.Z.hasLoadedExperiments && !et && (et = true, eq())
 }
 
-function e3() {
+function e4() {
   et = false
 }
 
-function e4(e) {
+function e8(e) {
   let {
     mode: t
   } = e;
   en = t
 }
-let e8 = 3e3,
-  e5 = 100;
+let e5 = 3e3,
+  e6 = 100;
 
-function e6(e) {
+function e7(e) {
   let {
     enabled: t
   } = e;
@@ -708,13 +716,13 @@ function e6(e) {
           breadcrumbs: t
         } = e;
         for (let e of t) y.JC.addNativeBreadcrumb(e, y.C7.NativeOOP, (0, b.getPID)());
-        te.emitChange()
+        tt.emitChange()
       })
-    }, e8)
+    }, e5)
   } else clearInterval(er), er = null
 }
 
-function e7(e) {
+function e9(e) {
   let {
     enabled: t
   } = e;
@@ -723,14 +731,14 @@ function e7(e) {
     ei = setInterval(() => {
       var e;
       null == K || null == (e = K.getDebuggingState) || e.call(K, e => {
-        o()(r, e) || (r = e, te.emitChange())
+        o()(r, e) || (r = e, tt.emitChange())
       })
-    }, e5)
+    }, e6)
   } else clearInterval(ei), ei = null
 }
-class e9 extends(i = Chunk442837.ZP.Store) {
+class te extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk594190.ZP, Chunk314897.default, Chunk353926.Z), this.syncWith([Chunk353926.Z], e2)
+    this.waitFor(Chunk594190.ZP, Chunk314897.default, Chunk353926.Z), this.syncWith([Chunk353926.Z], e3)
   }
   DEV_getOverlayLoggingBreadcrumbs(e) {
     return y.JC.getBreadcrumbs(e)
@@ -811,27 +819,28 @@ class e9 extends(i = Chunk442837.ZP.Store) {
     return ea
   }
 }
-D(e9, "displayName", "OverlayStore-v3");
-let te = new e9(Chunk570140.Z, __OVERLAY__ ? {} : {
-    LOGIN: e3,
-    LOGOUT: e3,
-    EXPERIMENT_OVERRIDE_BUCKET: ez,
-    OVERLAY_SET_ENABLED: eq,
-    OVERLAY_FORCE_RENDER_MODE: e4,
-    OVERLAY_SET_CLICK_ZONES: eX,
-    OVERLAY_SET_INPUT_LOCKED: eJ,
-    OVERLAY_ACTIVATE_REGION: e$,
-    OVERLAY_DEACTIVATE_ALL_REGIONS: e0,
-    OVERLAY_RENDER_DEBUG_MODE: e1,
-    OVERLAY_UPDATE_OVERLAY_METHOD: eY,
-    OVERLAY_UPDATE_OVERLAY_STATE: eQ,
-    OVERLAY_SET_GPU_BOOST_REQUESTED: eK,
-    OVERLAY_CRASHED: eW,
+D(te, "displayName", "OverlayStore-v3");
+let tt = new te(Chunk570140.Z, __OVERLAY__ ? {} : {
+    LOGIN: e4,
+    LOGOUT: e4,
+    EXPERIMENT_OVERRIDE_BUCKET: eq,
+    OVERLAY_SET_ENABLED: eX,
+    OVERLAY_FORCE_RENDER_MODE: e8,
+    OVERLAY_SET_CLICK_ZONES: eQ,
+    OVERLAY_SET_INPUT_LOCKED: e$,
+    OVERLAY_ACTIVATE_REGION: e0,
+    OVERLAY_DEACTIVATE_ALL_REGIONS: e1,
+    OVERLAY_RENDER_DEBUG_MODE: e2,
+    OVERLAY_UPDATE_OVERLAY_METHOD: eW,
+    OVERLAY_UPDATE_OVERLAY_STATE: eJ,
+    OVERLAY_SET_GPU_BOOST_REQUESTED: ez,
+    OVERLAY_CRASHED: eK,
     OVERLAY_FOCUSED: ex,
-    OVERLAY_SET_MODULE_LOGGING: e6,
-    OVERLAY_SET_STATE_DEBUGGING: e7,
+    OVERLAY_SET_MODULE_LOGGING: e7,
+    OVERLAY_SET_STATE_DEBUGGING: e9,
     OVERLAY_OOP_UI_INITIALIZED: ek,
     OVERLAY_OOP_UI_SHOW_INACTIVE_SUCCESS: eM,
-    OVERLAY_OOP_POPOUT_INITIALIZATION_STAGE_CHANGED: eU
+    OVERLAY_OOP_POPOUT_INITIALIZATION_STAGE_CHANGED: eU,
+    OVERLAY_SET_DETAILED_LOGGING: eG
   }),
-  tt = te
+  tn = tt

@@ -1,8 +1,8 @@
 /** Chunk was on 80448 **/
-/** chunk id: 612776, original params: i,e,t (module,exports,require) **/
+/** chunk id: 612776, original params: e,i,t (module,exports,require) **/
 require.d(exports, {
-  W: () => r,
+  W: () => n,
   t: () => s
 });
-var n, r = ((n = {}).WELCOME = "Welcome", n.MESSAGES = "Messages", n.EMOJIS = "Emojis", n.VOICE = "Voice", n.GUILDS = "Guilds", n.FRIENDS = "Friends", n.BEST_FRIEND = "BestFriend", n.GAMING = "Gaming", n.QUESTS = "Quests", n.END = "End", n);
-let s = ["Welcome", "Messages", "Emojis", "Voice", "Guilds", "Friends", "BestFriend", "Gaming", "Quests", "End"]
+var r, n = ((r = {}).WELCOME = "Welcome", r.MESSAGES = "CharacterSelect", r.EMOJIS = "CursorSelect", r.VOICE = "ClickerGame", r.GUILDS = "SnekGame", r.FRIENDS = "Multiplayer", r.BEST_FRIEND = "VS", r.GAMING = "RedeemPrize", r.QUESTS = "EasterEgg", r.END = "GG", r);
+let s = ["Welcome", "CharacterSelect", "CursorSelect", "ClickerGame", "SnekGame", "Multiplayer", "VS", "RedeemPrize", "EasterEgg", "GG"]

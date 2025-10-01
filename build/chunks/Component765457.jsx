@@ -1,7 +1,7 @@
 /** Chunk was on 80448 **/
-/** chunk id: 765457, original params: i,e,t (module,exports,require) **/
+/** chunk id: 765457, original params: e,i,t (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => T
+  default: () => E
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk509950 = require("./509950.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk356379 = require("./356379.js");
-let E = {
+let f = {
   0: Chunk612776.W.WELCOME,
   1: Chunk612776.W.MESSAGES,
   2: Chunk612776.W.EMOJIS,
@@ -34,102 +34,102 @@ let E = {
   9: Chunk612776.W.END
 };
 
-function T(i) {
-  let {} = i, [e, t] = r.useState(0), s = E[e], T = r.useCallback(() => {
-    if (e >= j.t.length - 1) return void(0, d.xf)();
-    t(e + 1)
-  }, [e]);
-  return (0, n.jsx)(a.f6W, {
+function E(e) {
+  let {} = e, [i, t] = n.useState(0), s = f[i], E = n.useCallback(() => {
+    if (i >= j.t.length - 1) return void(0, d.xf)();
+    t(i + 1)
+  }, [i]);
+  return (0, r.jsx)(a.f6W, {
     theme: v.BR.DARKER,
-    children: i => (0, n.jsxs)("div", {
-      className: l()(f.container, i),
+    children: e => (0, r.jsxs)("div", {
+      className: l()(S.container, e),
       "aria-label": y.intl.string(g.default["CdU/PD"]),
-      children: [(0, n.jsxs)(a.MyZ, {
+      children: [(0, r.jsxs)(a.MyZ, {
         activeSlide: s,
-        children: [(0, n.jsx)(a.Mi4, {
+        children: [(0, r.jsx)(a.Mi4, {
           id: j.W.WELCOME,
-          children: (0, n.jsx)(h.Z, {})
-        }), (0, n.jsx)(a.Mi4, {
+          children: (0, r.jsx)(h.Z, {})
+        }), (0, r.jsx)(a.Mi4, {
           id: j.W.MESSAGES,
-          children: (0, n.jsx)(m.Z, {})
-        }), (0, n.jsx)(a.Mi4, {
+          children: (0, r.jsx)(m.Z, {})
+        }), (0, r.jsx)(a.Mi4, {
           id: j.W.EMOJIS,
-          children: (0, n.jsx)(c.Z, {
-            children: (0, n.jsx)(a.Text, {
+          children: (0, r.jsx)(c.Z, {
+            children: (0, r.jsx)(a.Text, {
               variant: "display-lg",
               color: "text-primary",
               children: "TBD"
             })
           })
-        }), (0, n.jsx)(a.Mi4, {
+        }), (0, r.jsx)(a.Mi4, {
           id: j.W.VOICE,
-          children: (0, n.jsx)(p.Z, {})
-        }), (0, n.jsx)(a.Mi4, {
+          children: (0, r.jsx)(p.Z, {})
+        }), (0, r.jsx)(a.Mi4, {
           id: j.W.GUILDS,
-          children: (0, n.jsx)(u.Z, {})
-        }), (0, n.jsx)(a.Mi4, {
+          children: (0, r.jsx)(u.Z, {})
+        }), (0, r.jsx)(a.Mi4, {
           id: j.W.FRIENDS,
-          children: (0, n.jsx)(x.Z, {
+          children: (0, r.jsx)(x.Z, {
             slide: j.W.FRIENDS
           })
-        }), (0, n.jsx)(a.Mi4, {
+        }), (0, r.jsx)(a.Mi4, {
           id: j.W.BEST_FRIEND,
-          children: (0, n.jsx)(x.Z, {
+          children: (0, r.jsx)(x.Z, {
             slide: j.W.BEST_FRIEND
           })
-        }), (0, n.jsx)(a.Mi4, {
+        }), (0, r.jsx)(a.Mi4, {
           id: j.W.GAMING,
-          children: (0, n.jsx)(c.Z, {
-            children: (0, n.jsx)(a.Text, {
+          children: (0, r.jsx)(c.Z, {
+            children: (0, r.jsx)(a.Text, {
               variant: "display-lg",
               color: "text-primary",
               children: "TBD"
             })
           })
-        }), (0, n.jsx)(a.Mi4, {
+        }), (0, r.jsx)(a.Mi4, {
           id: j.W.QUESTS,
-          children: (0, n.jsx)(c.Z, {
-            children: (0, n.jsx)(a.Text, {
+          children: (0, r.jsx)(c.Z, {
+            children: (0, r.jsx)(a.Text, {
               variant: "display-lg",
               color: "text-primary",
               children: "TBD"
             })
           })
-        }), (0, n.jsx)(a.Mi4, {
+        }), (0, r.jsx)(a.Mi4, {
           id: j.W.END,
-          children: (0, n.jsx)(c.Z, {
-            children: (0, n.jsx)(a.Text, {
+          children: (0, r.jsx)(c.Z, {
+            children: (0, r.jsx)(a.Text, {
               variant: "display-lg",
               color: "text-primary",
               children: "Thanks for being a gamer."
             })
           })
         })]
-      }), (0, n.jsxs)("div", {
-        className: l()(f.header, i),
-        children: [(0, n.jsxs)("div", {
-          className: f.logo,
-          children: [(0, n.jsx)(a.gw7, {
+      }), (0, r.jsxs)("div", {
+        className: l()(S.header, e),
+        children: [(0, r.jsxs)("div", {
+          className: S.logo,
+          children: [(0, r.jsx)(a.gw7, {
             color: a.TVs.colors.BG_BRAND
-          }), (0, n.jsx)(a.Text, {
+          }), (0, r.jsx)(a.Text, {
             variant: "display-sm",
             color: "text-primary",
-            className: f.logoText,
+            className: S.logoText,
             children: y.intl.string(g.default["CdU/PD"])
           })]
-        }), (0, n.jsx)(o.Z, {
-          currentStep: e,
+        }), (0, r.jsx)(o.Z, {
+          currentStep: i,
           totalSteps: j.t.length,
-          className: f.stepIndicator
-        }), (0, n.jsx)(a.P3F, {
+          className: S.stepIndicator
+        }), (0, r.jsx)(a.P3F, {
           onClick: d.xf,
-          className: f.closeButton,
-          children: (0, n.jsx)(a.Uz9, {})
+          className: S.closeButton,
+          children: (0, r.jsx)(a.Uz9, {})
         })]
-      }), (0, n.jsx)(a.P3F, {
-        onClick: T,
-        className: f.nextButton,
-        children: (0, n.jsx)(a.Text, {
+      }), (0, r.jsx)(a.P3F, {
+        onClick: E,
+        className: S.nextButton,
+        children: (0, r.jsx)(a.Text, {
           variant: "display-sm",
           color: "text-primary",
           children: y.intl.string(y.t.PDTjLC)

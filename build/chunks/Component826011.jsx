@@ -1,13 +1,15 @@
 /** Chunk was on 28934 **/
 /** chunk id: 826011, original params: e,t,s (module,exports,require) **/
 require.d(exports, {
-  default: () => h
+  default: () => I
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk660815 = require("./660815.js"),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
+  Chunk494620 = require("./494620.jsx"),
   Chunk572004 = require("./572004.js"),
   Chunk744993 = require("./744993.js"),
   Chunk693587 = require("./693587.js"),
@@ -17,69 +19,82 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk999852 = require("./999852.js");
 
-function h(e) {
+function I(e) {
   let {
     guildId: t,
     instance: s,
-    onClose: h,
-    transitionState: f
-  } = e, I = (0, i.e7)([d.Z], () => {
+    onClose: I,
+    transitionState: j
+  } = e, C = (0, l.e7)([u.Z], () => {
     var e;
-    return null == (e = d.Z.getStateForGuild(t)) ? true : e.instructions[s.planId]
+    return null == (e = u.Z.getStateForGuild(t)) ? true : e.instructions[s.planId]
   });
-  n.useEffect(() => {
-    null == I && (0, o.iX)(t, s.planId)
-  }, [t, s.planId, I]);
-  let j = (0, u.Z)(s),
-    C = n.useCallback(() => {
-      (0, c.JG)(j), (0, l.showToast)((0, l.createToast)(x.intl.string(x.t["+5kSoa"]), l.ToastType.SUCCESS))
-    }, [j]),
-    N = (0, p.Z)(s.gameId, "cover");
-  return (0, r.jsx)(a.ExpressiveModal, {
+  r.useEffect(() => {
+    null == C && (0, p.iX)(t, s.planId)
+  }, [t, s.planId, C]);
+  let N = (0, x.Z)(s),
+    g = r.useCallback(() => {
+      (0, d.JG)(N), (0, c.showToast)((0, c.createToast)(h.intl.string(h.t["+5kSoa"]), c.ToastType.SUCCESS))
+    }, [N]),
+    T = (0, m.Z)(s.gameId, "cover"),
+    _ = r.useMemo(() => {
+      switch (s.status) {
+        case i.V.STARTING:
+          return h.intl.string(f.default["1XVBDQ"]);
+        case i.V.OFFLINE:
+          return h.intl.string(f.default.m4inWl);
+        default:
+          return
+      }
+    }, [s.status]);
+  return (0, n.jsx)(a.ExpressiveModal, {
     graphic: {
-      src: N,
+      src: T,
       type: "image"
     },
     title: s.name,
-    subtitle: x.intl.string(m.default["8Fgoo6"]),
+    subtitle: h.intl.string(f.default["8Fgoo6"]),
     size: "md",
-    transitionState: f,
-    onClose: h,
-    children: null == I ? (0, r.jsx)(l.$jN, {}) : (0, r.jsxs)("div", {
+    transitionState: j,
+    onClose: I,
+    children: null == C ? (0, n.jsx)(c.$jN, {}) : (0, n.jsxs)("div", {
       className: v.content,
-      children: [(0, r.jsx)("div", {
+      children: [null != _ && (0, n.jsx)(o.Z, {
+        className: v.infoBox,
+        children: _
+      }), (0, n.jsx)("div", {
         className: v.stepsContainer,
-        children: I.map((e, t) => (0, r.jsxs)("div", {
+        children: C.map((e, t) => (0, n.jsxs)("div", {
           className: v.step,
-          children: [(0, r.jsx)("div", {
+          children: [(0, n.jsx)("div", {
             className: v.stepNumber,
-            children: (0, r.jsx)(l.Text, {
+            children: (0, n.jsx)(c.Text, {
               variant: "text-sm/semibold",
               color: "text-secondary",
-              children: x.intl.formatToPlainString(m.default.e0RxEB, {
+              children: h.intl.formatToPlainString(f.default.e0RxEB, {
                 step: t + 1
               })
             })
-          }), (0, r.jsx)(l.Text, {
+          }), (0, n.jsx)(c.Text, {
             variant: "text-md/normal",
             color: "header-primary",
             children: e
           })]
         }, t))
-      }), (0, r.jsxs)("div", {
+      }), (0, n.jsxs)("div", {
         className: v.serverIpContainer,
-        children: [(0, r.jsx)("div", {
+        children: [(0, n.jsx)("div", {
           className: v.serverIpInput,
-          children: (0, r.jsx)(l.Text, {
+          children: (0, n.jsx)(c.Text, {
             variant: "text-md/medium",
             color: "header-primary",
-            children: j
+            children: N
           })
-        }), (0, r.jsx)(l.zxk, {
+        }), (0, n.jsx)(c.zxk, {
           variant: "primary",
-          text: x.intl.string(x.t.OpuAlJ),
-          onClick: C,
-          icon: l.TIy
+          text: h.intl.string(h.t.OpuAlJ),
+          onClick: g,
+          icon: c.TIy
         })]
       })]
     })

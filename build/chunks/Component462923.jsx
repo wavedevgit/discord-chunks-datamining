@@ -75,7 +75,7 @@ function P(e) {
                 children: N.intl.string(C.default.X0IaiI)
               }), (0, a.jsx)(d.Text, {
                 variant: "text-sm/medium",
-                children: 0 === t.maxConnectionsCount ? "———" : "".concat(t.onlineConnectionsCount, " / ").concat(t.maxConnectionsCount)
+                children: "".concat(null != t.onlineConnectionsCount ? t.onlineConnectionsCount : "———", " / ").concat(null != t.maxConnectionsCount ? t.maxConnectionsCount : "———")
               })]
             }), (0, a.jsxs)("div", {
               className: I.detailItem,

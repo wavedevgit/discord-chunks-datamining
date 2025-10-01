@@ -3,7 +3,7 @@
 require.d(exports, {
   Y9: () => i,
   kd: () => s,
-  qE: () => c
+  qE: () => o
 }), require("./388685.js");
 var Chunk660815 = require("./660815.js");
 let r = [{
@@ -84,8 +84,7 @@ function l(e, t) {
   }
 }
 let s = [l("1", "Portkey Test #1"), l("2", "Portkey Test #2"), l("3", "Portkey Test #3"), l("4", "Portkey Test #4"), l("5", "Portkey Test #5"), l("6", "Portkey Test #6"), l("7", "Portkey Test #7"), l("8", "Portkey Test #8"), l("9", "Portkey Test #9"), l("10", "Portkey Test #10"), l("11", "Portkey Test #11"), l("12", "Portkey Test #12")],
-  o = ["Launch Minecraft.", 'Click "Multiplayer".', 'Click "Add Server".', "Paste the server's IP address, found below."],
-  c = [{
+  o = [{
     id: "1",
     gameId: "1",
     name: "Portkey Test #1",
@@ -98,7 +97,6 @@ let s = [l("1", "Portkey Test #1"), l("2", "Portkey Test #2"), l("3", "Portkey T
     maxConnectionsCount: 10,
     status: Chunk660815.V.ONLINE,
     serverIP: "127.0.0.1",
-    instructions: o,
     gameServerPanelUrl: "https://google.com",
     entitlementId: "1"
   }, {
@@ -114,7 +112,6 @@ let s = [l("1", "Portkey Test #1"), l("2", "Portkey Test #2"), l("3", "Portkey T
     maxConnectionsCount: 10,
     status: Chunk660815.V.ONLINE,
     serverIP: "127.0.0.1",
-    instructions: o,
     gameServerPanelUrl: "https://google.com",
     entitlementId: "2"
   }, {
@@ -130,7 +127,6 @@ let s = [l("1", "Portkey Test #1"), l("2", "Portkey Test #2"), l("3", "Portkey T
     maxConnectionsCount: 10,
     status: Chunk660815.V.ONLINE,
     serverIP: "127.0.0.1",
-    instructions: o,
     gameServerPanelUrl: "https://google.com",
     entitlementId: "3"
   }, {
@@ -146,7 +142,6 @@ let s = [l("1", "Portkey Test #1"), l("2", "Portkey Test #2"), l("3", "Portkey T
     maxConnectionsCount: 10,
     status: Chunk660815.V.ONLINE,
     serverIP: "127.0.0.1",
-    instructions: o,
     gameServerPanelUrl: "https://google.com",
     entitlementId: "4"
   }, {
@@ -162,7 +157,6 @@ let s = [l("1", "Portkey Test #1"), l("2", "Portkey Test #2"), l("3", "Portkey T
     maxConnectionsCount: 10,
     status: Chunk660815.V.ONLINE,
     serverIP: "127.0.0.1",
-    instructions: o,
     gameServerPanelUrl: "https://google.com",
     entitlementId: "5"
   }, {
@@ -178,7 +172,6 @@ let s = [l("1", "Portkey Test #1"), l("2", "Portkey Test #2"), l("3", "Portkey T
     maxConnectionsCount: 10,
     status: Chunk660815.V.ONLINE,
     serverIP: "127.0.0.1",
-    instructions: o,
     gameServerPanelUrl: "https://google.com",
     entitlementId: "6"
   }]

@@ -1,5 +1,5 @@
 /** Chunk was on 80448 **/
-/** chunk id: 515970, original params: i,e,t (module,exports,require) **/
+/** chunk id: 515970, original params: e,i,t (module,exports,require) **/
 require.d(exports, {
   p: () => l
 });
@@ -13,16 +13,16 @@ function l() {
   });
   try {
     let {
-      sidekicks: i,
-      guilds: e
+      sidekicks: e,
+      guilds: i
     } = {
-      sidekicks: Chunk752048.Z.getUserAffinities().slice(0, 3).map(i => ({
-        userId: i.otherUserId,
+      sidekicks: Chunk752048.Z.getUserAffinities().slice(0, 3).map(e => ({
+        userId: e.otherUserId,
         numMessagesSent: 39240,
         numMinutesInVoice: 324
       })),
-      guilds: Chunk165630.Z.affinities.slice(0, 3).map(i => ({
-        guildId: i.guildId,
+      guilds: Chunk165630.Z.affinities.slice(0, 3).map(e => ({
+        guildId: e.guildId,
         numMessagesSent: 3284,
         numMinutesListening: 42324,
         numMinutesSpeaking: 424
@@ -46,7 +46,7 @@ function l() {
         sidekicks: module
       }
     })
-  } catch (i) {
+  } catch (e) {
     Chunk570140.Z.dispatch({
       type: "CHECKPOINT_FETCH_FAILED"
     })
