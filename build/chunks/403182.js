@@ -64,7 +64,7 @@ let E = [{
   reName: /\.(?:rar|zip|7z|tar|tar\.gz)$/,
   klass: "archive"
 }, {
-  reName: /\.(?:c\+\+|cpp|cc|c|h|hpp|mm|m|json|js|rb|rake|py|asm|fs|pyc|dtd|cgi|bat|rss|java|graphml|idb|lua|o|gml|prl|sls|conf|cmake|make|sln|vbe|cxx|wbf|vbs|r|wml|php|bash|applescript|fcgi|yaml|ex|exs|sh|ml|actionscript)$/,
+  reName: /\.(?:c\+\+|cpp|cc|c|h|hpp|mm|m|json|js|ts|rb|rake|py|asm|fs|pyc|dtd|cgi|bat|rss|java|graphml|idb|lua|o|gml|prl|sls|conf|cmake|make|sln|vbe|cxx|wbf|vbs|r|wml|php|bash|applescript|fcgi|yaml|ex|exs|sh|ml|actionscript)$/,
   klass: "code"
 }, {
   reName: /\.(?:txt|rtf|doc|docx|md|pages|ppt|pptx|pptm|key|log)$/,
@@ -73,7 +73,7 @@ let E = [{
   reName: /\.(?:xls|xlsx|numbers|csv)$/,
   klass: "spreadsheet"
 }, {
-  reName: /\.(?:html|xhtml|htm|js|xml|xls|xsd|css|styl)$/,
+  reName: /\.(?:html|xhtml|htm|xml|xsd|css|styl)$/,
   klass: "webcode"
 }, {
   reName: /\.(?:mp3|ogg|opus|wav|aiff|flac)$/,

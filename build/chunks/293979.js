@@ -72,8 +72,11 @@ function j(e, t) {
     application: n,
     customId: i,
     components: a
-  } = e, s = (0, f.Z)(), [u, _] = r.useState(null), [p, h] = r.useState(null), [m, g] = r.useState({}), b = (0, o.e7)([N.Z], () => N.Z.getModalState(p), [p]), y = (0, d.Z)(() => new Set), O = r.useCallback(() => {
-    _(null), h(null), D(y) && h(G(e, s))
+  } = e, s = (0, f.Z)(), [u, _] = r.useState(null), [p, h] = r.useState(null), [m, g] = r.useState({}), b = (0, o.e7)([N.Z], () => N.Z.getModalState(p), [p]), y = (0, d.Z)(() => new Set), O = r.useCallback(async () => {
+    if (_(null), h(null), D(y)) {
+      let t = T.default.fromTimestamp(Date.now());
+      h(t), await G(e, s, t)
+    }
   }, [s, e, y]);
   r.useEffect(() => {
     b === N.i.SUCCEEDED && (l.Z.dispatch({
@@ -185,47 +188,45 @@ function U(e, t) {
     return (null == (n = (0, C.yw)(e.id)) ? true : n.containerId) === t
   })
 }
-
-function G(e, t) {
-  let n = T.default.fromTimestamp(Date.now()),
-    r = e.channelId,
+async function G(e, t, n) {
+  let r = e.channelId,
     i = g.Z.getChannel(r);
   a()(null != i, "expected channel");
   let o = U(r, e.customId),
-    l = k(e.customId, e.components, {
-      uploads: o
-    });
+    l = o.length > 0 ? (0, _.Z)(o) : true;
   (0, h.kz)(n, {
     data: {
       interactionType: u.B8.MODAL_SUBMIT,
       applicationId: e.application.id
-    }
-  });
-  let c = async () => {
-    if (null == t ? true : t.aborted) return;
-    o.length > 0 && await (0, _.Z)(o);
-    let r = o.map((e, t) => (0, S.B)(e, t));
-    null != t && t.aborted || s.tn.post({
-      url: P.ANM.INTERACTIONS,
-      body: {
-        type: u.B8.MODAL_SUBMIT,
-        application_id: e.application.id,
-        channel_id: i.id,
-        guild_id: i.guild_id,
-        data: {
-          id: e.id,
-          custom_id: e.customId,
-          components: l,
-          attachments: r.length > 0 ? r : true
+    },
+    preflight: l
+  }), await l;
+  let c = o.map((e, t) => (0, S.B)(e, t)),
+    d = k(e.customId, e.components, {
+      uploads: o
+    }),
+    f = () => {
+      null != t && t.aborted || s.tn.post({
+        url: P.ANM.INTERACTIONS,
+        body: {
+          type: u.B8.MODAL_SUBMIT,
+          application_id: e.application.id,
+          channel_id: i.id,
+          guild_id: i.guild_id,
+          data: {
+            id: e.id,
+            custom_id: e.customId,
+            components: d,
+            attachments: c.length > 0 ? c : true
+          },
+          session_id: m.default.getSessionId(),
+          nonce: n
         },
-        session_id: m.default.getSessionId(),
-        nonce: n
-      },
-      signal: t,
-      rejectWithError: false
-    }).catch(e => {
-      429 === e.status ? setTimeout(c, e.body.retry_after * I.Z.Millis.SECOND) : (0, h.yr)(n)
-    })
-  };
-  return c(), n
+        signal: t,
+        rejectWithError: false
+      }).catch(e => {
+        429 === e.status ? setTimeout(f, e.body.retry_after * I.Z.Millis.SECOND) : (0, h.yr)(n)
+      })
+    };
+  f()
 }
