@@ -26,16 +26,16 @@ function _() {
       claimableRewards: x
     } = (0, Chunk987209.wD)();
   if (null == m || null == x) return null;
-  let j = null == (e = m.getBackgroundImageUrl) ? true : module.call(m, f),
-    g = (0, Chunk717401.Yr)(j),
+  let g = null == (e = m.getBackgroundImageUrl) ? true : module.call(m, f),
+    j = (0, Chunk717401.Yr)(g),
     b = null == (t = m.gradientConfig) ? true : exports.call(m, {
       isDarkMode: f,
       isAndroid: false
     }),
-    L = (0, Chunk717401.Tl)(b);
+    y = (0, Chunk717401.Tl)(b);
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk947007.promotionalFooterBanner,
-    style: null != g ? g : L,
+    style: null != j ? j : y,
     children: [(0, Chunk951288.jsx)("div", {
       className: Chunk947007.avatar,
       children: (0, Chunk951288.jsx)(Chunk897942.Z, {

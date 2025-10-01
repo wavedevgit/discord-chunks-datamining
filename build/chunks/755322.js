@@ -19,5 +19,5 @@ let c = (0, Chunk509613.x1)(Chunk313789.n.LEGACY_NOTIFICATIONS_PANE, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.HcoRu7),
     buildLayout: () => [c],
     legacySearchKey: Chunk726985.s6.NOTIFICATIONS,
-    usePredicate: () => !(0, Chunk526665.gj)()
+    usePredicate: () => !(0, Chunk526665.gj)("LegacyNotificationsPanel")
   })

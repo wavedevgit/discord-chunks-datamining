@@ -182,6 +182,11 @@ let h = {
         label: "Spacing (px)",
         type: "number",
         defaultValue: 11
+      },
+      keyboardShortcut: {
+        label: "Keyboard Shortcut",
+        type: "text",
+        defaultValue: "mod+k"
       }
     }
   }, {
@@ -212,7 +217,7 @@ let h = {
           src: l.Z,
           alt: "Graphic"
         }) : true, [s]);
-      return (0, r.jsx)(o.i_, f(u({
+      return (0, r.jsx)(o.i, f(u({
         title: t,
         body: n,
         position: c,

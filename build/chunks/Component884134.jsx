@@ -336,7 +336,7 @@ function et(e) {
       text: G.intl.string(U.default.c9MBEB),
       fullWidth: true
     });
-  return n ? b() : (0, r.jsx)(c.i_, {
+  return n ? b() : (0, r.jsx)(c.i, {
     title: G.intl.string(U.default.NJ9m8f),
     body: G.intl.string(U.default["6pabtb"]),
     position: "left",

@@ -1,11 +1,11 @@
 /** Chunk was on 84992 **/
-/** chunk id: 783017, original params: t,e,n (module,exports,require) **/
+/** chunk id: 783017, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js"),
   Chunk512722 = require("./512722.js"),
-  l = require.n(Chunk512722),
+  i = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
@@ -20,19 +20,19 @@ var Chunk951288 = require("./951288.js"),
   Chunk667325 = require("./667325.js"),
   Chunk552039 = require("./552039.js"),
   Chunk445161 = require("./445161.js");
-let x = t => {
+let g = e => {
   let {
-    type: e,
+    type: t,
     text: n,
-    buttonText: i,
-    buttonLoading: x,
+    buttonText: l,
+    buttonLoading: g,
     hideClose: N,
     onClose: f
-  } = t, p = (0, a.e7)([c.Z], () => c.Z.useReducedMotion), T = (0, a.e7)([L.default], () => {
-    let t = L.default.getCurrentUser();
-    return l()(null != t, "UserSettingsProfileCustomization: user cannot be undefined"), t
-  }), E = (0, o.rO)() ? m.Z : Z.Z, I = (t => {
-    switch (t) {
+  } = e, x = (0, a.e7)([c.Z], () => c.Z.useReducedMotion), _ = (0, a.e7)([u.default], () => {
+    let e = u.default.getCurrentUser();
+    return i()(null != e, "UserSettingsProfileCustomization: user cannot be undefined"), e
+  }), E = (0, o.rO)() ? p.Z : Z.Z, I = (e => {
+    switch (e) {
       case H.Yk.PREMIUM_UPDATED:
         return M.intl.string(M.t["75Wt0N"]);
       case H.Yk.PREMIUM_ACTIVATED:
@@ -40,7 +40,7 @@ let x = t => {
       default:
         return M.intl.string(M.t.X79Az8)
     }
-  })(e);
+  })(t);
   return (0, s.jsxs)("div", {
     className: h.container,
     children: [(0, s.jsx)(C.X6q, {
@@ -50,11 +50,11 @@ let x = t => {
       children: I
     }), (0, s.jsxs)("div", {
       className: h.nameplatePreviewContainer,
-      children: [p ? (0, s.jsx)("img", {
-        src: g.Z,
+      children: [x ? (0, s.jsx)("img", {
+        src: m.Z,
         alt: "",
         className: h.nameplateGlow
-      }) : (0, s.jsx)(u.Z, {
+      }) : (0, s.jsx)(L.Z, {
         playsInline: true,
         muted: true,
         autoPlay: true,
@@ -64,10 +64,10 @@ let x = t => {
           src: E
         })
       }), (0, s.jsx)(d.Z, {
-        user: T,
+        user: _,
         isHighlighted: true,
         nameplate: null,
-        nameplateData: T.nameplate,
+        nameplateData: _.nameplate,
         className: h.nameplatePreview,
         nameplatePreviewSize: "large"
       })]
@@ -79,9 +79,9 @@ let x = t => {
       children: (0, s.jsx)(r.zxk, {
         variant: "expressive",
         fullWidth: true,
-        text: i,
+        text: l,
         onClick: f,
-        loading: x
+        loading: g
       })
     })]
   })

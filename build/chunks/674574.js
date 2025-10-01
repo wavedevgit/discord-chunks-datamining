@@ -20,5 +20,5 @@ let O = (0, Chunk509613.x1)(Chunk313789.n.NOTIFICATIONS_PANE, {
     icon: Chunk657707.Dkj,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.HcoRu7),
     buildLayout: () => [O],
-    usePredicate: Chunk526665.gj
+    usePredicate: () => (0, Chunk526665.gj)("NotificationsPanel")
   })

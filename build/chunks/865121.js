@@ -16,5 +16,5 @@ let c = (0, Chunk509613.m7)(Chunk313789.n.LEGACY_SETTINGS_SIDEBAR_ITEM, {
   onClick: () => {
     (0, Chunk342386.default)(), Chunk230711.Z.open()
   },
-  usePredicate: () => (0, Chunk526665.NT)() || Chunk906467.Z.isDeveloper
+  usePredicate: () => (0, Chunk526665.NT)("LegacySettingsSidebarItem") || Chunk906467.Z.isDeveloper
 })

@@ -24,35 +24,35 @@ let m = e => {
     user: a,
     claimed: m,
     onSelect: x,
-    productName: j,
-    a11yLabel: g,
+    productName: g,
+    a11yLabel: j,
     selectedSkuId: b,
-    category: L
-  } = e, y = i.useRef(null), v = (0, C.Z)(y), S = (0, _.m)(y), O = !m && (v || S), E = (0, c.ZP)(), I = (0, s.wj)(E), P = {
+    category: y
+  } = e, L = i.useRef(null), v = (0, C.Z)(L), S = (0, _.m)(L), O = !m && (v || S), E = (0, c.ZP)(), P = (0, s.wj)(E), I = {
     type: l.Z.AVATAR_DECORATION,
-    label: g,
+    label: j,
     asset: n
   };
   return (0, r.jsx)(d.tEY, {
     children: (0, r.jsxs)(d.kL8, {
-      ref: y,
-      "aria-label": null != j ? j : "",
+      ref: L,
+      "aria-label": null != g ? g : "",
       onClick: () => {
         null == t || null == x || m || x(t)
       },
-      className: o()(I ? h.shopCardDark : h.shopCard, {
+      className: o()(P ? h.shopCardDark : h.shopCard, {
         [h.shopCardAnimation]: !m,
-        [I ? h.shopCardDarkHighlighted : h.shopCardHighlighted]: O,
+        [P ? h.shopCardDarkHighlighted : h.shopCardHighlighted]: O,
         [h.shopCardSelected]: b === t
       }),
       children: [(0, r.jsx)("div", {
         className: o()(h.preview, {
-          [h.previewTrick]: L === u.KN.Trick,
-          [h.previewTreat]: L === u.KN.Treat,
+          [h.previewTrick]: y === u.KN.Trick,
+          [h.previewTreat]: y === u.KN.Treat,
           [h.shopCardClaimed]: m
         }),
         children: (0, r.jsx)(p.R, {
-          item: P,
+          item: I,
           user: a,
           isHighlighted: O,
           avatarSize: d.EFr.SIZE_120,
@@ -68,7 +68,7 @@ let m = e => {
         className: h.productName,
         children: [(0, r.jsx)(d.X6q, {
           variant: "text-md/bold",
-          children: j
+          children: g
         }), (0, r.jsx)(d.Text, {
           variant: "text-md/normal",
           children: m ? f.intl.string(f.t["6cfuDg"]) : f.intl.string(f.t.QQsaCQ)

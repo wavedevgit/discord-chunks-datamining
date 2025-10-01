@@ -39,13 +39,13 @@ function N(e) {
     showGuildPicker: P = false
   } = e, [Z, k] = l.useState(null != (t = null != (n = null == S ? true : S.name) ? n : null == O ? true : O.name) ? t : ""), [M, T] = l.useState(null != (i = null == O ? true : O.volume) ? i : 1), [F, D] = l.useState(null == O ? true : O.emojiId), [R, B] = l.useState(null == O ? true : O.emojiName), {
     file: H,
-    loadAudioFromFile: U,
-    maxVolume: A,
+    loadAudioFromFile: A,
+    maxVolume: U,
     setMaxVolume: z
   } = (0, p.p)(), [L, G] = l.useState(false), [q, V] = l.useState(null), [W, Y] = l.useState(null), [J, K] = l.useState("ready"), [X, Q] = l.useState(C);
   async function $(e) {
     try {
-      await U(null != e ? e : null), K("ready"), V(null)
+      await A(null != e ? e : null), K("ready"), V(null)
     } catch (e) {
       ee(e)
     }
@@ -67,12 +67,12 @@ function N(e) {
     (null == S ? true : S.file) != null && e(S.file);
     async function e(e) {
       try {
-        await U(e), K("ready"), V(null)
+        await A(e), K("ready"), V(null)
       } catch (e) {
         ee(e)
       }
     }
-  }, [null == S ? true : S.file, U]);
+  }, [null == S ? true : S.file, A]);
   let en = function(e) {
       switch (e) {
         case "encoding":
@@ -142,13 +142,13 @@ function N(e) {
       }
     }, [ea, E, X, O, Z, M, F, R, er, z]);
   (0, c.ZP)(() => {
-    U(null), m.default.track(x.rMx.OPEN_MODAL, {
+    A(null), m.default.track(x.rMx.OPEN_MODAL, {
       type: "Soundboard Upload Sound",
       guild_id: X
     })
   }), l.useEffect(() => {
-    T(Math.min(M, A))
-  }, [M, T, A]);
+    T(Math.min(M, U))
+  }, [M, T, U]);
   let es = (0, a.jsx)(d.Z, {
       guildId: X,
       emojiId: F,
@@ -222,7 +222,7 @@ function N(e) {
         initialValue: M,
         onValueChange: e => T(e),
         minValue: 0,
-        maxValue: A
+        maxValue: U
       })
     }), null != en && (0, a.jsx)("div", {
       className: w.soundStateHint,

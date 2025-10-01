@@ -2,7 +2,7 @@
 /** chunk id: 276442, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  J: () => y
+  J: () => O
 });
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
@@ -57,7 +57,11 @@ function b(e, t) {
   }), e
 }
 
-function y(e) {
+function y(e, t, n) {
+  return (0, c.isDesktop)() && null != e && [h.Si.TIER_0, h.Si.TIER_2].includes(e) && !t && null == n
+}
+
+function O(e) {
   let {
     analyticsData: t,
     initialPlanId: n,
@@ -65,7 +69,7 @@ function y(e) {
     handleStepChange: c,
     referralTrialOfferId: m,
     onReturn: E,
-    continueSessionToInitialStep: y
+    continueSessionToInitialStep: O
   } = e, {
     contextMetadata: v,
     step: I,
@@ -100,7 +104,7 @@ function y(e) {
   }, Z = null != E ? E : B;
   i()(I, "Step should be set here");
   let F = (0, a.Z)(() => Date.now(), [I]),
-    V = (0, a.Z)(() => null != y && null == L.current ? j && y === f.h8.CREDIT_CARD_INFORMATION ? f.h8.PAYMENT_ELEMENT : y : f.h8.PAYMENT_TYPE, [y, L.current, j]);
+    V = (0, a.Z)(() => null != O && null == L.current ? j && O === f.h8.CREDIT_CARD_INFORMATION ? f.h8.PAYMENT_ELEMENT : O : f.h8.PAYMENT_TYPE, [O, L.current, j]);
   return (0, s.vP)({
     paymentModalArgs: k,
     initialStep: V,
@@ -131,11 +135,7 @@ function y(e) {
       }))
     },
     isEligibleForTrial: G,
-    allowDesktopRedirectPurchase: O(w, M, D),
-    continueSessionToInitialStep: y
+    allowDesktopRedirectPurchase: y(w, M, D),
+    continueSessionToInitialStep: O
   })
-}
-
-function O(e, t, n) {
-  return (0, c.isDesktop)() && null != e && [h.Si.TIER_0, h.Si.TIER_2].includes(e) && !t && null == n
 }

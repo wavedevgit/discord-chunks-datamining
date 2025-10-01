@@ -26,28 +26,28 @@ function m(e) {
   } = e, i = (0, s.ZP)(), {
     activeSubscription: m,
     selectedSkuId: x,
-    setSelectedPlanId: j,
-    startedPaymentFlowWithPaymentSourcesRef: g
+    setSelectedPlanId: g,
+    startedPaymentFlowWithPaymentSourcesRef: j
   } = (0, u.JL)(), {
     isGift: b
-  } = (0, c.wD)(), L = null != m ? (0, C.Af)(m) : null, y = null != L ? (0, C.gq)(L.planId) : null, v = null != L ? (0, C.Rd)(L.planId) : null, S = (0, _.Kp)({
+  } = (0, c.wD)(), y = null != m ? (0, C.Af)(m) : null, L = null != y ? (0, C.gq)(y.planId) : null, v = null != y ? (0, C.Rd)(y.planId) : null, S = (0, _.Kp)({
     isTrial: false,
     isGift: b,
     selectedSkuId: x,
-    startedPaymentFlowWithPaymentSources: g.current
+    startedPaymentFlowWithPaymentSources: j.current
   });
   return a()(null != v, "Expected premium type"), (0, r.jsx)(d.Z, {
     premiumType: v,
     titleText: f.intl.string(f.t["7VcWW1"]),
     subtitleText: f.intl.format(f.t.Qk34Ii, {
-      subscriptionName: y
+      subscriptionName: L
     }),
     footer: (0, r.jsxs)("div", {
       className: h.whatYouLoseButtonContainer,
       children: [(0, r.jsx)(l.zx, {
         "data-migration-pending": true,
         onClick: () => {
-          S ? (j((0, _.nA)(x, m)), t(p.h8.REVIEW)) : t(p.h8.PLAN_SELECT)
+          S ? (g((0, _.nA)(x, m)), t(p.h8.REVIEW)) : t(p.h8.PLAN_SELECT)
         },
         children: f.intl.string(f.t["3PatS0"])
       }), (0, r.jsx)(l.zx, {

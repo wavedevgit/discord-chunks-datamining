@@ -2,19 +2,21 @@
 /** chunk id: 28664, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  u: () => O
-}), require("./415506.js");
+  u: () => y
+}), require("./35282.js"), require("./415506.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk61247 = require("./61247.js"),
+  Chunk635041 = require("./635041.jsx"),
   Chunk793030 = require("./793030.js"),
+  Chunk481060 = require("./481060.js"),
   Chunk550656 = require("./550656.jsx"),
   Chunk464281 = require("./464281.js"),
   Chunk102725 = require("./102725.js"),
   Chunk342134 = require("./342134.js"),
-  Chunk966327 = require("./966327.js");
+  Chunk966327 = require("./966327.js"),
+  Chunk220104 = require("./220104.js");
 
-function f(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -23,20 +25,20 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
 }
 
-function p(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -47,15 +49,15 @@ function p(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+function g(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function m(e, t) {
+function E(e, t) {
   if (null == e) return {};
-  var n, r, i = g(e, t);
+  var n, r, i = b(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -63,157 +65,106 @@ function m(e, t) {
   return i
 }
 
-function g(e, t) {
+function b(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let E = Chunk647438.createContext(null);
-
-function b(e) {
-  var {
-    children: t,
-    text: n,
-    position: a = "top",
-    align: o = "center",
-    spacing: s,
-    layerContext: l,
-    onAnimationRest: u,
-    targetElementRef: f,
-    caretConfig: p
-  } = e, h = m(e, ["children", "text", "position", "align", "spacing", "layerContext", "onAnimationRest", "targetElementRef", "caretConfig"]);
-  let g = (0, d.c)(f),
-    b = i.useId(),
-    {
-      isVisible: y,
-      isRendered: O,
-      triggerProps: I,
-      handleExitComplete: T,
-      onTooltipMouseEnter: S,
-      onTooltipMouseLeave: A
-    } = (0, c.l)(_({
-      targetElementRef: g.targetElementRef
-    }, h)),
-    C = i.useMemo(() => ({
-      triggerHandlers: I,
-      triggerRef: g.triggerRef,
-      targetElementRef: g.targetElementRef,
-      tooltipId: b,
-      isVisible: y,
-      isRendered: O,
-      text: n,
-      position: a,
-      align: o,
-      spacing: s,
-      caretConfig: p,
-      layerContext: l,
-      onAnimationRest: u,
-      handleExitComplete: T,
-      positionKey: "string" == typeof n ? n : true,
-      onTooltipMouseEnter: S,
-      onTooltipMouseLeave: A
-    }), [I, g.triggerRef, g.targetElementRef, b, y, O, n, a, o, s, p, l, u, T, S, A]);
-  return (0, r.jsxs)(E.Provider, {
-    value: C,
-    children: [t, (0, r.jsx)(v, {})]
-  })
-}
 
 function y(e) {
-  var t;
-  let {
-    strategy: n = "clone",
-    tag: r = "div",
-    children: o
-  } = e, s = i.useContext(E);
-  if (null == s) throw Error("TooltipTrigger must be used within TooltipRoot");
-  let {
-    triggerHandlers: c,
-    triggerRef: u,
-    tooltipId: d
-  } = s, f = i.isValidElement(o) ? o : null, p = (0, a.Z)(null == f || null == (t = f.props) ? true : t.ref, u);
-  if ("clone" === n) return null == f ? null : (0, l.C9)(f, c, d, p);
-  let m = h(_({}, c), {
-    onFocus: (0, l.tS)(c.onFocus, e => {
-      let t = e.target;
-      if (null != t) {
-        var n;
-        let e = (0, l.QV)(null != (n = t.getAttribute("aria-describedby")) ? n : true, d);
-        t.setAttribute("aria-describedby", e)
-      }
-    })
-  });
-  return (0, l.FX)({
-    tag: r,
-    children: o,
-    triggerHandlers: m,
-    triggerRef: u
-  })
-}
-
-function O(e) {
+  let t;
   var {
-    children: t,
-    asContainer: n = false,
-    tag: a = "div"
-  } = e, o = m(e, ["children", "asContainer", "tag"]);
-  return null == o.text || "" === o.text ? t : n ? (0, r.jsx)(b, h(_({}, o), {
-    children: (0, r.jsx)(y, {
-      strategy: "wrap",
-      tag: a,
-      children: t
-    })
-  })) : i.isValidElement(t) ? (0, r.jsx)(b, h(_({}, o), {
-    children: (0, r.jsx)(y, {
-      strategy: "clone",
-      children: t
-    })
-  })) : null
-}
-
-function v() {
-  var e;
-  let t = Chunk647438.useContext(E);
-  if (null == exports) throw Error("TooltipContent must be used within TooltipRoot");
-  let {
-    isVisible: n,
-    isRendered: a,
-    handleExitComplete: c,
-    onAnimationRest: d,
-    tooltipId: f,
-    targetElementRef: _,
+    children: n,
     text: p,
-    position: h,
-    align: m,
-    spacing: g,
-    caretConfig: b,
-    layerContext: y,
-    positionKey: O
-  } = exports, v = (0, Chunk342134.Q)({
-    shouldShow: require,
-    caretPosition: null != (e = null == b ? true : b.position) ? module : (0, Chunk464281.Av)(h),
-    onExitComplete: Chunk102725,
-    onAnimationRest: Chunk966327
-  }), {
-    defaultLayerContext: I
-  } = (0, Chunk793030.ZFG)();
-  return v((e, i) => i ? (0, r.jsx)(s.N, {
-    isVisible: n,
-    isRendered: a,
-    targetElementRef: _,
-    id: f,
-    content: p,
-    position: h,
-    align: m,
-    spacing: g,
-    caretConfig: b,
-    layerContext: null != y ? y : I,
+    keyboardShortcut: m,
+    __unsupportedReactNodeAsText: b,
+    asContainer: y = false,
+    tag: O = "span",
+    position: v = "top",
+    align: I = "center",
+    spacing: T,
+    layerContext: S,
+    targetElementRef: A,
+    caretConfig: C,
+    positionKey: N
+  } = e, R = E(e, ["children", "text", "keyboardShortcut", "__unsupportedReactNodeAsText", "asContainer", "tag", "position", "align", "spacing", "layerContext", "targetElementRef", "caretConfig", "positionKey"]);
+  let P = (0, f.c)(A),
+    w = i.useId(),
+    {
+      isVisible: D,
+      triggerProps: L
+    } = (0, u.l)(h({
+      targetElementRef: P.targetElementRef
+    }, R)),
+    x = (0, d.Q)({
+      shouldShow: D
+    }),
+    {
+      defaultLayerContext: j
+    } = (0, o.ZFG)(),
+    M = i.useMemo(() => null != b ? b : null == p || "" === p ? null : null != m && "" !== m ? (0, r.jsxs)("div", {
+      className: _.tooltipWithShortcut,
+      children: [(0, r.jsx)(s.Text, {
+        variant: "text-sm/medium",
+        children: p
+      }), (0, r.jsx)(s.M2$, {
+        shortcut: m
+      })]
+    }) : p, [p, m, b]);
+  if (null == M || "string" == typeof M && "" === M) return n;
+  let k = null != N ? N : (0, c.Sw)(p);
+  if (y) {
+    let e = g(h({}, L), {
+      onFocus: (0, c.tS)(L.onFocus, e => {
+        let t = e.target;
+        if (null != t) {
+          var n;
+          let e = (0, c.QV)(null != (n = t.getAttribute("aria-describedby")) ? n : true, w);
+          t.setAttribute("aria-describedby", e)
+        }
+      }),
+      onBlur: (0, c.tS)(L.onBlur, e => {
+        let t = e.target;
+        if (null != t) {
+          let e = t.getAttribute("aria-describedby");
+          if (null != e) {
+            let n = e.split(" ").filter(e => e !== w);
+            n.length > 0 ? t.setAttribute("aria-describedby", n.join(" ")) : t.removeAttribute("aria-describedby")
+          }
+        }
+      })
+    });
+    t = (0, c.FX)({
+      tag: O,
+      children: n,
+      triggerHandlers: e,
+      triggerRef: P.triggerRef
+    })
+  } else {
+    if (!i.isValidElement(n)) return null;
+    t = (0, c.C9)(n, L, w, P.triggerRef)
+  }
+  let U = x((e, t) => t ? (0, r.jsx)(l.N, {
+    isVisible: D,
+    isRendered: true,
+    targetElementRef: P.targetElementRef,
+    id: w,
+    content: M,
+    position: v,
+    align: I,
+    spacing: T,
+    caretConfig: C,
+    layerContext: null != S ? S : j,
     animationStyle: e,
-    positionKey: O,
-    "data-mana-component": "tooltip",
-    onMouseEnter: t.onTooltipMouseEnter,
-    onMouseLeave: t.onTooltipMouseLeave
-  }) : null)
+    positionKey: k,
+    "data-mana-component": "tooltip"
+  }) : null);
+  return (0, r.jsxs)(r.Fragment, {
+    children: [t, null != M && "" !== M ? (0, r.jsx)(a.n, {
+      id: w,
+      children: M
+    }) : null, U]
+  })
 }

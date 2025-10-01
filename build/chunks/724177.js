@@ -2,56 +2,60 @@
 /** chunk id: 724177, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  r: () => p,
-  x: () => c
+  r: () => h,
+  x: () => u
 }), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./704826.js");
 var Chunk392711 = require("./392711.js"),
   Chunk212819 = require("./212819.js"),
   Chunk375954 = require("./375954.js"),
   Chunk483360 = require("./483360.js"),
-  Chunk657871 = require("./657871.js");
-let l = {
+  Chunk657871 = require("./657871.js"),
+  Chunk389458 = require("./389458.js");
+let c = {
     results: {
       suggestions: [],
       trailingPunctuation: ""
     }
   },
-  c = "-,.?!:;",
-  u = new RegExp("([".concat((0, Chunk392711.escapeRegExp)(c), "]*)$"));
+  u = "-,.?!:;",
+  d = new RegExp("([".concat((0, Chunk392711.escapeRegExp)(u), "]*)$"));
 
-function d(e, t, n) {
+function f(e, t, n) {
   let {
     isIdle: r,
-    isVisible: c
+    isVisible: u
   } = n, {
-    onlyExactMatch: d
+    onlyExactMatch: f
   } = (0, s.kB)("getMentionSuggestions", {
     autoTrackExposure: false
-  }), f = "", _ = t.replace(u, e => (f = e, "")), p = (0, o.Cq)(i.h8.USER), h = a.Z.getMessages(e.id).toArray();
-  for (let e = 0; e < h.length; e++) {
-    var m;
-    let t = h[e];
-    p[t.author.id] = (null != (m = p[t.author.id]) ? m : 1) + (h.length - e) / h.length
+  }), _ = "", p = t.replace(d, e => (_ = e, ""));
+  if (l.Z.isFrequentlyUsedWord(p)) return c;
+  let h = (0, o.Cq)(i.h8.USER),
+    m = a.Z.getMessages(e.id).toArray();
+  for (let e = 0; e < m.length; e++) {
+    var g;
+    let t = m[e];
+    h[t.author.id] = (null != (g = h[t.author.id]) ? g : 1) + (m.length - e) / m.length
   }
-  let g = o.ZP.queryMentionSuggestionResults({
-    query: _,
+  let E = o.ZP.queryMentionSuggestionResults({
+    query: p,
     channel: e,
-    boosters: p,
-    onlyExactMatch: d
+    boosters: h,
+    onlyExactMatch: f
   });
-  return r || c || !(_.length < 5) || g.some(e => "exact" === e.matchType) ? {
+  return r || u || !(p.length < 5) || E.some(e => "exact" === e.matchType) ? {
     results: {
-      suggestions: g,
-      trailingPunctuation: f
+      suggestions: E,
+      trailingPunctuation: _
     }
-  } : l
+  } : c
 }
-let f = (0, Chunk392711.memoize)(d, (e, t, n) => "".concat(e.id, "-").concat(n.isIdle, "-").concat(n.isVisible, "-").concat(t)),
-  _ = null;
+let _ = (0, Chunk392711.memoize)(f, (e, t, n) => "".concat(e.id, "-").concat(n.isIdle, "-").concat(n.isVisible, "-").concat(t)),
+  p = null;
 
-function p(e, t, n) {
-  return null == _ && (_ = setTimeout(() => {
+function h(e, t, n) {
+  return null == p && (p = setTimeout(() => {
     var e, t;
-    null == (e = (t = f.cache).clear) || e.call(t), _ = null
-  }, 0)), f(e, t, n)
+    null == (e = (t = _.cache).clear) || e.call(t), p = null
+  }, 0)), _(e, t, n)
 }

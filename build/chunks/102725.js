@@ -2,99 +2,90 @@
 /** chunk id: 102725, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  l: () => s
+  l: () => l
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk374470 = require("./374470.js"),
-  Chunk846519 = require("./846519.js");
-let o = 0;
+  Chunk846519 = require("./846519.js"),
+  Chunk607070 = require("./607070.js");
+let s = 0;
 
-function s(e) {
+function l(e) {
   let {
     targetElementRef: t,
     shouldShow: n = true,
-    delay: s,
-    onTooltipShow: l,
-    onTooltipHide: c,
-    forceOpen: u = false,
-    overflowOnly: d = false
-  } = e, f = 150, _ = r.useRef(null), p = null != t ? t : _, [h, m] = r.useState(false), [g, E] = r.useState(false), b = r.useRef(null), y = r.useRef(null), O = r.useRef(false), v = r.useRef(false), I = r.useRef(false);
-  r.useEffect(() => (b.current = new a.V7, y.current = new a.V7, () => {
-    let e = b.current;
-    null != e && e.stop();
-    let t = y.current;
-    null != t && t.stop()
+    delay: l,
+    onTooltipShow: c,
+    onTooltipHide: u,
+    forceOpen: d = false,
+    overflowOnly: f = false,
+    hideOnClick: _ = true
+  } = e, p = r.useRef(null), h = null != t ? t : p, [m, g] = r.useState(false), E = r.useRef(null), b = r.useRef(false);
+  r.useEffect(() => (E.current = new a.V7, () => {
+    let e = E.current;
+    null != e && e.stop()
   }), []);
-  let T = null != p.current,
-    S = false !== n && (h || u) && T && !I.current;
-  r.useEffect(() => {
-    S && E(true)
-  }, [S]);
-  let A = r.useCallback(() => {
-      E(false)
-    }, []),
-    C = r.useCallback(() => {
-      if (I.current) return;
-      if (d && null != p.current) {
-        let e = p.current;
+  let y = null != h.current,
+    O = false !== n && (m || d) && y && !b.current,
+    v = r.useCallback(() => {
+      if (b.current || f && null == h.current) return;
+      if (f && null != h.current) {
+        let e = h.current;
         if ((0, i.kK)(e, HTMLElement) && e.offsetWidth >= e.scrollWidth) return
       }
-      let e = null != s ? s : o,
-        t = b.current;
+      let e = null != l ? l : s,
+        t = E.current;
       null != t && t.start(e, () => {
-        m(true), null == l || l()
+        g(true), null == c || c()
       }, false)
-    }, [s, l, d, p]),
-    N = r.useCallback(() => {
-      var e, t;
-      null == (e = b.current) || e.stop(), null == (t = y.current) || t.stop(), m(false), null == c || c()
-    }, [c]),
-    R = r.useCallback(() => {
-      let e = y.current;
-      null != e && e.start(f, () => {
-        O.current || v.current || N()
-      }, false)
-    }, [N]),
-    P = r.useCallback(e => {
-      var t;
-      null == p.current && (p.current = e.currentTarget), O.current = true, null == (t = y.current) || t.stop(), I.current = false, C()
-    }, [C, p]),
-    w = r.useCallback(e => {
-      null == p.current && (p.current = e.currentTarget), I.current = false, C()
-    }, [C, p]),
-    D = r.useCallback(() => {
-      O.current = false, v.current || R()
-    }, [R]),
-    L = r.useCallback(() => {
+    }, [l, c, f, h]),
+    I = r.useCallback(() => {
       var e;
-      v.current = true, null == (e = y.current) || e.stop()
-    }, []),
-    x = r.useCallback(() => {
-      v.current = false, O.current || R()
-    }, [R]),
-    j = r.useMemo(() => ({
-      onMouseEnter: P,
-      onMouseLeave: D,
-      onFocus: w,
-      onBlur: N,
-      onContextMenu: N
-    }), [P, D, w, N]);
+      null == (e = E.current) || e.stop(), g(false), null == u || u()
+    }, [u]),
+    T = r.useCallback(() => {
+      _ && I()
+    }, [I, _]),
+    S = r.useCallback(e => {
+      null == h.current && (h.current = e.currentTarget), b.current = false, v()
+    }, [v, h]),
+    A = r.useCallback(e => {
+      o.Z.keyboardModeEnabled && (null == h.current && (h.current = e.currentTarget), b.current = false, v())
+    }, [v, h]),
+    C = r.useCallback(() => {
+      var e;
+      null == (e = E.current) || e.stop(), I()
+    }, [I]),
+    N = r.useMemo(() => ({
+      onMouseEnter: S,
+      onMouseLeave: C,
+      onFocus: A,
+      onBlur: I,
+      onContextMenu: I,
+      onClick: T
+    }), [S, C, A, I, T]);
   return r.useEffect(() => {
     var e, t;
-    if (!S) return;
-    let n = null != (t = null == (e = p.current) ? true : e.ownerDocument) ? t : document,
+    if (!O) return;
+    let n = null != (t = null == (e = h.current) ? true : e.ownerDocument) ? t : document,
       r = e => {
-        ("Escape" === e.key || "Esc" === e.key) && (I.current = true, N())
+        ("Escape" === e.key || "Esc" === e.key) && (b.current = true, I())
       };
     return n.addEventListener("keydown", r), () => {
       n.removeEventListener("keydown", r)
     }
-  }, [S, N, p]), {
-    isVisible: S,
-    isRendered: g,
-    triggerProps: j,
-    handleExitComplete: A,
-    onTooltipMouseEnter: L,
-    onTooltipMouseLeave: x
+  }, [O, I, h]), r.useEffect(() => {
+    var e, t;
+    if (!O) return;
+    let n = null != (t = null == (e = h.current) ? true : e.ownerDocument) ? t : document,
+      r = () => {
+        I()
+      };
+    return n.addEventListener("click", r), () => {
+      n.removeEventListener("click", r)
+    }
+  }, [O, I, h]), {
+    isVisible: O,
+    triggerProps: N
   }
 }
