@@ -3,8 +3,8 @@
 require.d(exports, {
   FJ: () => en,
   RE: () => G,
-  T5: () => V,
-  Xb: () => H,
+  T5: () => H,
+  Xb: () => V,
   YK: () => ee,
   YS: () => J,
   _J: () => z,
@@ -103,7 +103,7 @@ function B(e) {
   return t.indexOf(e) > false
 }
 
-function V(e, t) {
+function H(e, t) {
   let n = [],
     r = e.getGuildId();
   return [A.d4z.GUILD_CATEGORY, ...g.tx].includes(e.type) || n.push(new Promise(t => {
@@ -113,7 +113,7 @@ function V(e, t) {
     })
   })), Promise.all(n).then(() => {
     var n;
-    let i = (!e.isNSFW() || (null == (n = v.default.getCurrentUser()) ? true : n.nsfwAllowed) === true) && t ? E.Z.getMessages(e.id).toArray().map(H) : [],
+    let i = (!e.isNSFW() || (null == (n = v.default.getCurrentUser()) ? true : n.nsfwAllowed) === true) && t ? E.Z.getMessages(e.id).toArray().map(V) : [],
       l = Object.values(I.Z.getVoiceStatesForChannel(e.id)).map(t => F(r, e.id, t));
     return {
       id: e.id,
@@ -130,7 +130,7 @@ function V(e, t) {
   })
 }
 
-function H(e) {
+function V(e) {
   let t = p.Z.parseToAST(e.content, true, {
       channelId: e.channel_id
     }).map(U),

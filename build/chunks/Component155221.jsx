@@ -2,7 +2,7 @@
 /** chunk id: 155221, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => es,
+  Z: () => el,
   a: () => q
 }), require("./388685.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
@@ -119,7 +119,7 @@ let j = (0, Chunk663993.Un)({
     name: "ActivateDevice"
   }),
   H = (0, Chunk663993.Un)({
-    createPromise: () => Promise.all([require.e("57804"), require.e("13599"), require.e("50448"), require.e("80451"), require.e("75387"), require.e("35535"), require.e("48704"), require.e("258"), require.e("33034"), require.e("90508"), require.e("49049"), require.e("63575"), require.e("33285"), require.e("46154"), require.e("62856"), require.e("64838"), require.e("38697"), require.e("17938"), require.e("66201"), require.e("43342"), require.e("93375"), require.e("91315"), require.e("30474"), require.e("24358"), require.e("36084"), require.e("38342"), require.e("52407"), require.e("91689"), require.e("39206"), require.e("63962"), require.e("3408"), require.e("35755"), require.e("22516"), require.e("56785"), require.e("37220"), require.e("5007"), require.e("22173"), require.e("30634"), require.e("95546"), require.e("49613"), require.e("3688"), require.e("204"), require.e("53714"), require.e("60831"), require.e("9452"), require.e("24920"), require.e("64170"), require.e("83243"), require.e("93964"), require.e("77803"), require.e("69432"), require.e("69310"), require.e("8345"), require.e("96631"), require.e("31553"), require.e("95468"), require.e("29709"), require.e("32996"), require.e("1272")]).then(require.bind(require, 457094)),
+    createPromise: () => Promise.all([require.e("57804"), require.e("13599"), require.e("50448"), require.e("80451"), require.e("75387"), require.e("35535"), require.e("48704"), require.e("258"), require.e("33034"), require.e("90508"), require.e("49049"), require.e("63575"), require.e("33285"), require.e("46154"), require.e("62856"), require.e("64838"), require.e("38697"), require.e("17938"), require.e("66201"), require.e("43342"), require.e("93375"), require.e("91315"), require.e("30474"), require.e("24358"), require.e("36084"), require.e("38342"), require.e("52407"), require.e("91689"), require.e("39206"), require.e("63962"), require.e("3408"), require.e("35755"), require.e("22516"), require.e("56785"), require.e("37220"), require.e("89442"), require.e("22173"), require.e("30634"), require.e("95546"), require.e("49613"), require.e("3688"), require.e("204"), require.e("53714"), require.e("60831"), require.e("9452"), require.e("24920"), require.e("64170"), require.e("83243"), require.e("93964"), require.e("77803"), require.e("69432"), require.e("69310"), require.e("8345"), require.e("96631"), require.e("31553"), require.e("95468"), require.e("29709"), require.e("32996"), require.e("1272")]).then(require.bind(require, 457094)),
     webpackId: 457094,
     name: "ViewsWithMainInterface",
     memo: true,
@@ -146,7 +146,7 @@ let j = (0, Chunk663993.Un)({
     name: "MobileWebHandoffFallback"
   }),
   q = (0, Chunk663993.Un)({
-    createPromise: () => Promise.all([require.e("57804"), require.e("13599"), require.e("75387"), require.e("35535"), require.e("258"), require.e("90508"), require.e("49049"), require.e("63575"), require.e("33285"), require.e("46154"), require.e("62856"), require.e("64838"), require.e("38697"), require.e("66201"), require.e("43342"), require.e("93375"), require.e("91315"), require.e("30474"), require.e("24358"), require.e("36084"), require.e("38342"), require.e("39206"), require.e("63962"), require.e("35755"), require.e("56785"), require.e("37220"), require.e("5007"), require.e("22173"), require.e("95546"), require.e("49613"), require.e("60831"), require.e("24920"), require.e("64170"), require.e("69310"), require.e("63141")]).then(require.bind(require, 290161)),
+    createPromise: () => Promise.all([require.e("57804"), require.e("13599"), require.e("75387"), require.e("35535"), require.e("258"), require.e("90508"), require.e("49049"), require.e("63575"), require.e("33285"), require.e("46154"), require.e("62856"), require.e("64838"), require.e("38697"), require.e("66201"), require.e("43342"), require.e("93375"), require.e("91315"), require.e("30474"), require.e("24358"), require.e("36084"), require.e("38342"), require.e("39206"), require.e("63962"), require.e("35755"), require.e("56785"), require.e("37220"), require.e("89442"), require.e("22173"), require.e("95546"), require.e("49613"), require.e("60831"), require.e("24920"), require.e("64170"), require.e("69310"), require.e("63141")]).then(require.bind(require, 290161)),
     webpackId: 290161,
     name: "Overlay"
   }),
@@ -156,32 +156,37 @@ let j = (0, Chunk663993.Un)({
     name: "SuspendedUserSafetyHubPage"
   }),
   Q = (0, Chunk663993.Un)({
-    createPromise: () => require.e("10125").then(require.bind(require, 630107)),
+    createPromise: () => Promise.all([require.e("72868"), require.e("10125")]).then(require.bind(require, 630107)),
     webpackId: 630107,
     name: "QuestsLandingPage"
   }),
   J = (0, Chunk663993.Un)({
+    createPromise: () => Promise.all([require.e("72868"), require.e("41734")]).then(require.bind(require, 792459)),
+    webpackId: 792459,
+    name: "QuestPreviewLandingPage"
+  }),
+  $ = (0, Chunk663993.Un)({
     createPromise: () => Promise.all([require.e("800"), require.e("58131")]).then(require.bind(require, 531338)),
     webpackId: 531338,
     name: "ConnectionsAuthorizeContinue"
   }),
-  $ = (0, Chunk663993.Un)({
+  ee = (0, Chunk663993.Un)({
     createPromise: () => require.e("78449").then(require.bind(require, 684572)),
     webpackId: 684572,
     name: "ApplicationDirectoryRoutes"
   }),
-  ee = (0, Chunk663993.Un)({
+  et = (0, Chunk663993.Un)({
     createPromise: () => require.e("20501").then(require.bind(require, 332116)),
     webpackId: 332116,
     name: "ApplicationDirectoryGlobalDiscoveryRoutes"
   }),
-  et = () => (0, Chunk951288.jsx)(H, {}),
-  en = new Set([Chunk981631.Z5c.LOGIN, Chunk981631.Z5c.LOGIN_HANDOFF, Chunk981631.Z5c.INVITE_LOGIN(":inviteCode"), Chunk981631.Z5c.GIFT_CODE_LOGIN(":giftCode"), Chunk981631.Z5c.GUILD_TEMPLATE_LOGIN(":guildTemplateCode")]);
+  en = () => (0, Chunk951288.jsx)(H, {}),
+  er = new Set([Chunk981631.Z5c.LOGIN, Chunk981631.Z5c.LOGIN_HANDOFF, Chunk981631.Z5c.INVITE_LOGIN(":inviteCode"), Chunk981631.Z5c.GIFT_CODE_LOGIN(":giftCode"), Chunk981631.Z5c.GUILD_TEMPLATE_LOGIN(":guildTemplateCode")]);
 
-function er(e, t) {
-  return t ? e.filter(e => !en.has(e)) : e
+function ei(e, t) {
+  return t ? e.filter(e => !er.has(e)) : e
 }
-class ei extends Chunk647438.Component {
+class ea extends Chunk647438.Component {
   componentDidMount() {
     Chunk998502.ZP.cleanupDisplaySleep(), Chunk137412.Z.initialize()
   }
@@ -212,7 +217,7 @@ class ei extends Chunk647438.Component {
         path: Chunk981631.Z5c.APPS,
         component: M
       }), (0, Chunk951288.jsx)(Chunk843611.AW, {
-        path: er([Chunk981631.Z5c.LOGIN, Chunk981631.Z5c.REGISTER, Chunk981631.Z5c.INVITE(":inviteCode"), Chunk981631.Z5c.INVITE_LOGIN(":inviteCode"), Chunk981631.Z5c.GIFT_CODE(":giftCode"), Chunk981631.Z5c.GIFT_CODE_LOGIN(":giftCode"), Chunk981631.Z5c.RESET], Chunk188785.a),
+        path: ei([Chunk981631.Z5c.LOGIN, Chunk981631.Z5c.REGISTER, Chunk981631.Z5c.INVITE(":inviteCode"), Chunk981631.Z5c.INVITE_LOGIN(":inviteCode"), Chunk981631.Z5c.GIFT_CODE(":giftCode"), Chunk981631.Z5c.GIFT_CODE_LOGIN(":giftCode"), Chunk981631.Z5c.RESET], Chunk188785.a),
         component: Y
       }), (0, Chunk951288.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.INVITE_PROXY(Chunk893607.Hw.channelId()),
@@ -224,7 +229,7 @@ class ei extends Chunk647438.Component {
         from: Chunk981631.Z5c.GIFT_CODE(""),
         to: Chunk981631.Z5c.LOGIN
       }), (0, Chunk951288.jsx)(Chunk843611.AW, {
-        render: et
+        render: en
       })]
     }) : (0, Chunk951288.jsxs)(Chunk843611.rs, {
       children: [(0, Chunk951288.jsx)(Chunk765717.Z, {
@@ -232,7 +237,7 @@ class ei extends Chunk647438.Component {
         path: Chunk981631.Z5c.INDEX,
         render: () => (0, Chunk951288.jsx)(Chunk799656.Z, {})
       }), (0, Chunk951288.jsx)(Chunk843611.AW, {
-        path: er([Chunk981631.Z5c.LOGIN, Chunk981631.Z5c.LOGIN_HANDOFF, Chunk981631.Z5c.REGISTER, Chunk981631.Z5c.BILLING_PREFIX, Chunk981631.Z5c.BILLING_PROMOTION_REDEMPTION(":code"), Chunk981631.Z5c.INVITE(":inviteCode"), Chunk981631.Z5c.INVITE_LOGIN(":inviteCode"), Chunk981631.Z5c.GIFT_CODE(":giftCode"), Chunk981631.Z5c.GIFT_CODE_LOGIN(":giftCode"), Chunk981631.Z5c.GUILD_TEMPLATE(":guildTemplateCode"), Chunk981631.Z5c.GUILD_TEMPLATE_LOGIN(":guildTemplateCode"), Chunk981631.Z5c.DISABLE_EMAIL_NOTIFICATIONS, Chunk981631.Z5c.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS, Chunk981631.Z5c.RESET, Chunk981631.Z5c.REPORT, Chunk981631.Z5c.REPORT_SECOND_LOOK, Chunk981631.Z5c.ACCOUNT_REVERT(":token")], Chunk188785.a),
+        path: ei([Chunk981631.Z5c.LOGIN, Chunk981631.Z5c.LOGIN_HANDOFF, Chunk981631.Z5c.REGISTER, Chunk981631.Z5c.BILLING_PREFIX, Chunk981631.Z5c.BILLING_PROMOTION_REDEMPTION(":code"), Chunk981631.Z5c.INVITE(":inviteCode"), Chunk981631.Z5c.INVITE_LOGIN(":inviteCode"), Chunk981631.Z5c.GIFT_CODE(":giftCode"), Chunk981631.Z5c.GIFT_CODE_LOGIN(":giftCode"), Chunk981631.Z5c.GUILD_TEMPLATE(":guildTemplateCode"), Chunk981631.Z5c.GUILD_TEMPLATE_LOGIN(":guildTemplateCode"), Chunk981631.Z5c.DISABLE_EMAIL_NOTIFICATIONS, Chunk981631.Z5c.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS, Chunk981631.Z5c.RESET, Chunk981631.Z5c.REPORT, Chunk981631.Z5c.REPORT_SECOND_LOOK, Chunk981631.Z5c.ACCOUNT_REVERT(":token")], Chunk188785.a),
         component: Y
       }), exports ? null : (0, Chunk951288.jsx)(Chunk843611.AW, {
         path: Chunk981631.Z5c.PICK_GUILD_SETTINGS(":section?", ":subsection?"),
@@ -264,6 +269,9 @@ class ei extends Chunk647438.Component {
           }
         }
       }), (0, Chunk951288.jsx)(Chunk765717.Z, {
+        path: Chunk981631.Z5c.QUEST_PREVIEW(":questId"),
+        component: J
+      }), (0, Chunk951288.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.HANDOFF,
         component: K
       }), (0, Chunk951288.jsx)(Chunk765717.Z, {
@@ -283,7 +291,7 @@ class ei extends Chunk647438.Component {
         component: V
       }), (0, Chunk951288.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.CONNECTIONS_AUTHORIZE_CONTINUE(":type"),
-        component: J
+        component: $
       }), (0, Chunk951288.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.CONNECTIONS_SUCCESS(":type"),
         component: G
@@ -342,12 +350,12 @@ class ei extends Chunk647438.Component {
         component: X
       }), exports ? null : (0, Chunk951288.jsx)(Chunk843611.AW, {
         path: [Chunk981631.Z5c.APPLICATION_DIRECTORY],
-        component: $
+        component: ee
       }), exports ? null : (0, Chunk951288.jsx)(Chunk843611.AW, {
         path: [Chunk981631.Z5c.GLOBAL_DISCOVERY_APPS],
-        component: ee
+        component: et
       }), (0, Chunk951288.jsx)(Chunk843611.AW, {
-        render: et
+        render: en
       }), (0, Chunk951288.jsx)(Chunk843611.l_, {
         from: Chunk981631.Z5c.ACCOUNT_REVERT(""),
         to: Chunk981631.Z5c.LOGIN
@@ -359,7 +367,7 @@ class ei extends Chunk647438.Component {
   }
 }
 
-function ea() {
+function eo() {
   let {
     pathname: e
   } = (0, Chunk843611.TH)();
@@ -368,17 +376,17 @@ function ea() {
   })
 }
 
-function eo(e) {
-  let t = ea(),
+function es(e) {
+  let t = eo(),
     n = (0, b.h)();
-  return (0, r.jsx)(ei, x(D({}, e), {
+  return (0, r.jsx)(ea, x(D({}, e), {
     skipsSettingDefaultPageTitle: t,
     shouldBlockBrowser: n
   }))
 }
-let es = Chunk442837.ZP.connectStores([Chunk314897.default, Chunk554608.Z], () => ({
+let el = Chunk442837.ZP.connectStores([Chunk314897.default, Chunk554608.Z], () => ({
   isAuthenticated: Chunk314897.default.isAuthenticated(),
   migrationStatus: Chunk554608.Z.getMigrationStatus()
 }), {
   forwardRef: true
-})(eo)
+})(es)

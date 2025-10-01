@@ -91,7 +91,7 @@ let U = e => {
     })
   };
 
-function V(e, t) {
+function H(e, t) {
   switch (t) {
     case R.f07.POST_INSTALL_SCRIPTS:
     case R.f07.PLANNING:
@@ -104,7 +104,7 @@ function V(e, t) {
       })
   }
 }
-let H = {
+let V = {
   [Chunk981631.vxO.INSTALLING]: {
     [Chunk707409.J6.NONE]: (e, t, n, r) => D.intl.formatToPlainString(D.t.JfJt9f, {
       percent: e,
@@ -183,7 +183,7 @@ let H = {
 };
 
 function F(e, t, n, r, i) {
-  let l = H[t],
+  let l = V[t],
     a = null != l ? Object.keys(l) : [],
     {
       unit: o,
@@ -204,7 +204,7 @@ function z(e) {
     progress: i,
     total: l,
     secondsRemaining: a
-  } = e, o = V(l, n), s = V(i, n);
+  } = e, o = H(l, n), s = H(i, n);
   switch (n) {
     case R.f07.QUEUED:
       if (0 === i) return D.intl.string(D.t.RpfBqa);
@@ -327,8 +327,8 @@ class W extends Chunk647438.PureComponent {
         stage: l
       } = require;
       if (null != Chunk951288 && null != Chunk647438) {
-        let n = V(Chunk647438, Chunk120356),
-          a = V(Chunk951288, Chunk120356),
+        let n = H(Chunk647438, Chunk120356),
+          a = H(Chunk951288, Chunk120356),
           o = Math.floor(t = Chunk780570.xI(Chunk951288, Chunk647438));
         e = Chunk120356 === Chunk981631.f07.PAUSING ? Chunk388032.intl.formatToPlainString(Chunk388032.t.vjxhWl, {
           percent: Chunk392711,

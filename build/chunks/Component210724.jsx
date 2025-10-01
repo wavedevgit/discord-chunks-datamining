@@ -128,7 +128,9 @@ function L(e) {
       sourceQuestContent: v.jn.QUEST_BAR_V2
     }), $.current = false, ej()
   }, [ej, o]);
-  s.useLayoutEffect(() => {
+  s.useEffect(() => {
+    en && eC()
+  }, [en, eC]), s.useLayoutEffect(() => {
     H && !F && $.current && ep()
   }, [ep, H, F]), s.useLayoutEffect(() => {
     X || !H || F || $.current || eu(false)

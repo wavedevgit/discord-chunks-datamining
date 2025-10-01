@@ -11,12 +11,12 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx");
 
 function o(e, t) {
-  return r.isPlatformEmbedded && (null == e ? true : e.length) !== 0 ? (0, i.jsx)(l.sNh, {
+  return s.isPlatformEmbedded && (null == e ? true : e.length) !== 0 ? (0, i.jsx)(l.sNh, {
     id: "copy",
     label: a.intl.string(a.t.OpuAlJ),
-    hint: (0, r.isMac)() ? "⌘C" : "Ctrl+C",
+    hint: (0, s.isMac)() ? "⌘C" : "Ctrl+C",
     action: () => {
-      s.ZP.copy(e), null == t || t.focus()
+      r.ZP.copy(e), null == t || t.focus()
     }
   }) : null
 }

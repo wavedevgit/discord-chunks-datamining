@@ -150,28 +150,28 @@ let L = function(e) {
     M(P(j({}, k), {
       [A]: ""
     }))
-  }, [k, A]), V = i.useMemo(() => A === C.pJs.PENDING && (o.filter(C.pJs.SPAM).length > 0 || o.filter(C.pJs.PENDING_IGNORED).length > 0), [o, A]), H = i.useMemo(() => o.filter(A, k[A]), [o, k, A]), F = A === C.pJs.PENDING, z = i.useMemo(() => {
+  }, [k, A]), H = i.useMemo(() => A === C.pJs.PENDING && (o.filter(C.pJs.SPAM).length > 0 || o.filter(C.pJs.PENDING_IGNORED).length > 0), [o, A]), V = i.useMemo(() => o.filter(A, k[A]), [o, k, A]), F = A === C.pJs.PENDING, z = i.useMemo(() => {
     if (!F) return x;
     let e = [];
-    return H.forEach(t => {
+    return V.forEach(t => {
       let {
         applicationId: n
       } = t;
       null != n && e.push(n)
     }), e
-  }, [F, H]);
+  }, [F, V]);
   (0, p.Z)(z, F);
   let W = i.useMemo(() => {
-      if (A !== C.pJs.PENDING) return [H];
+      if (A !== C.pJs.PENDING) return [V];
       {
         let e = [],
           t = [];
-        return H.forEach(n => {
+        return V.forEach(n => {
           n.type === C.OGo.PENDING_INCOMING ? e.push(n) : n.type === C.OGo.PENDING_OUTGOING && t.push(n)
         }), [e, t]
       }
-    }, [H, A]),
-    q = i.useMemo(() => H.filter(e => e.type === C.OGo.PENDING_INCOMING).length, [H]),
+    }, [V, A]),
+    q = i.useMemo(() => V.filter(e => e.type === C.OGo.PENDING_INCOMING).length, [V]),
     Y = A === C.pJs.PENDING && q > 0 && q >= S.yf,
     K = i.useCallback(e => {
       e.stopPropagation(), s.Z.confirmClearPendingRelationships(q)
@@ -225,12 +225,12 @@ let L = function(e) {
     }, [W, A, t, Y, K]);
   if (i.useEffect(() => {
       A === C.pJs.ALL && (0, f.d$)()
-    }, [A]), 0 === H.length && "" === k[A]) return (0, r.jsx)(w, {
+    }, [A]), 0 === V.length && "" === k[A]) return (0, r.jsx)(w, {
     section: A,
-    showSpamCta: V
+    showSpamCta: H
   });
   let X = "" !== k[A],
-    J = 0 === H.length && X;
+    J = 0 === V.length && X;
   return (0, r.jsx)(d.Gt, {
     value: n,
     children: (0, r.jsxs)(c.Z, {
@@ -249,7 +249,7 @@ let L = function(e) {
         sectionFilter: A,
         isVirtualizedList: R >= S.nG,
         hasSearchQuery: X,
-        footer: V && !J ? (0, r.jsx)("div", {
+        footer: H && !J ? (0, r.jsx)("div", {
           className: N.viewSpamButton,
           children: (0, r.jsx)(a.Avr, {
             text: T.intl.string(T.t.R40bU1),

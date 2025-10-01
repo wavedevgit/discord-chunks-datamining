@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 974042, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  ZP: () => H
+  ZP: () => V
 }), require("./539854.js"), require("./388685.js");
 var r, Chunk392711 = require("./392711.js"),
   l = require.n(Chunk392711),
@@ -226,7 +226,7 @@ function B(e) {
     return !D && !!R.update(e) && (R = R.clone(), true)
   }
 }
-class V extends(r = Chunk442837.ZP.Store) {
+class H extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk699516.Z, Chunk158776.Z, Chunk594174.default, Chunk430824.Z, Chunk271383.ZP, Chunk199902.Z, Chunk5254.Z, Chunk353926.Z, Chunk633289.Z), this.syncWith([Chunk699516.Z], G), this.syncWith([Chunk91896.Z], G), this.syncWith([Chunk5254.Z], G), this.syncWith([Chunk441623.Z], G), this.syncWith([Chunk594174.default], B(N)), this.syncWith([Chunk158776.Z, Chunk199902.Z], B(j)), U()
   }
@@ -238,8 +238,8 @@ class V extends(r = Chunk442837.ZP.Store) {
     }
   }
 }
-S(V, "displayName", "FriendsStore");
-let H = new V(Chunk570140.Z, {
+S(H, "displayName", "FriendsStore");
+let V = new H(Chunk570140.Z, {
   CONNECTION_OPEN: function() {
     U()
   },

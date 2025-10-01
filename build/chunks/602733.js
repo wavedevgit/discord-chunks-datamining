@@ -11,12 +11,12 @@ var Chunk647438 = require("./647438.js"),
   Chunk607550 = require("./607550.js");
 
 function a(e) {
-  let t = (0, o.S)({
+  let t = (0, s.S)({
       location: "UserProfileModalV2"
     }),
     [r, a, c] = (0, i.Wu)([u.Z], () => null != e && t ? [u.Z.getWishlist(e), u.Z.isFetching(e), u.Z.getError(e)] : [null, false, true]);
   return (0, n.useEffect)(() => {
-    null != e && null == r && !a && t && s.Z.fetchWishlist(e)
+    null != e && null == r && !a && t && o.Z.fetchWishlist(e)
   }, [e, r, a, t]), {
     wishlist: r,
     isFetching: a,

@@ -122,7 +122,7 @@ function P(e) {
   } = e, {
     onClose: U,
     transitionState: G
-  } = n, B = (0, f.Dt)(), V = R.length % 2 == 0, H = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), [F, z] = i.useState(Date.now()), [W, q] = i.useState(0), [Y, K] = i.useState(0), [Q, X] = i.useState(false), [J, $] = i.useState(true), ee = i.useRef(F), et = i.useRef(W), en = i.useRef(Y), er = i.useRef(Q), ei = i.useRef(J), [el, ea] = i.useState(T), eo = i.useRef(false);
+  } = n, B = (0, f.Dt)(), H = R.length % 2 == 0, V = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), [F, z] = i.useState(Date.now()), [W, q] = i.useState(0), [Y, K] = i.useState(0), [Q, X] = i.useState(false), [J, $] = i.useState(true), ee = i.useRef(F), et = i.useRef(W), en = i.useRef(Y), er = i.useRef(Q), ei = i.useRef(J), [el, ea] = i.useState(T), eo = i.useRef(false);
 
   function es() {
     let e = Date.now(),
@@ -207,7 +207,7 @@ function P(e) {
           children: A
         }), "video" === l.type ? (0, r.jsx)(h.Z, {
           className: a()(I.video, N),
-          autoPlay: !H,
+          autoPlay: !V,
           loop: true,
           muted: true,
           controls: true,
@@ -271,10 +271,10 @@ function P(e) {
           children: M
         }), R.length > 0 && (0, r.jsx)("div", {
           className: a()(I.featureCardGroup, {
-            [I.wideStyle]: V
+            [I.wideStyle]: H
           }),
           children: R.map((e, t) => (0, r.jsx)(j, C(S({}, e), {
-            wideStyle: V
+            wideStyle: H
           }), "".concat(e.header, "_").concat(t)))
         }), (0, r.jsx)("div", {
           className: I.buttonContainer,

@@ -1,30 +1,30 @@
-/** Chunk was on 10125 **/
-/** chunk id: 830064, original params: a,t,l (module,exports,require) **/
+/** Chunk was on 72868 **/
+/** chunk id: 830064, original params: a,l,t (module,exports,require) **/
 require.d(exports, {
   Z: () => e
 });
 var Chunk951288 = require("./951288.js");
 
 function e(a) {
-  var t, l;
-  return (0, s.jsxs)("svg", (t = function(a) {
-    for (var t = 1; t < arguments.length; t++) {
-      var l = null != arguments[t] ? arguments[t] : {},
-        s = Object.keys(l);
-      "function" == typeof Object.getOwnPropertySymbols && (s = s.concat(Object.getOwnPropertySymbols(l).filter(function(a) {
-        return Object.getOwnPropertyDescriptor(l, a).enumerable
-      }))), s.forEach(function(t) {
+  var l, t;
+  return (0, s.jsxs)("svg", (l = function(a) {
+    for (var l = 1; l < arguments.length; l++) {
+      var t = null != arguments[l] ? arguments[l] : {},
+        s = Object.keys(t);
+      "function" == typeof Object.getOwnPropertySymbols && (s = s.concat(Object.getOwnPropertySymbols(t).filter(function(a) {
+        return Object.getOwnPropertyDescriptor(t, a).enumerable
+      }))), s.forEach(function(l) {
         var s;
-        s = l[t], t in a ? Object.defineProperty(a, t, {
+        s = t[l], l in a ? Object.defineProperty(a, l, {
           value: s,
           enumerable: true,
           configurable: true,
           writable: true
-        }) : a[t] = s
+        }) : a[l] = s
       })
     }
     return a
-  }({}, a), l = l = {
+  }({}, a), t = t = {
     xmlns: "http://www.w3.org/2000/svg",
     xmlnsXlink: "http://www.w3.org/1999/xlink",
     viewBox: "0 0 1700 1200",
@@ -1204,15 +1204,15 @@ function e(a) {
       d: "M1193 1115.1a15.7 15.7 0 0015.6-18.5 111.8 111.8 0 00-213.8-20.7 117.2 117.2 0 00-111.3 35.2 2.4 2.4 0 001.8 4H1193z",
       "data-name": "Layer 8"
     })]
-  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(l)) : (function(a, t) {
-    var l = Object.keys(a);
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(t)) : (function(a, l) {
+    var t = Object.keys(a);
     if (Object.getOwnPropertySymbols) {
       var s = Object.getOwnPropertySymbols(a);
-      l.push.apply(l, s)
+      t.push.apply(t, s)
     }
-    return l
-  })(Object(l)).forEach(function(a) {
-    Object.defineProperty(t, a, Object.getOwnPropertyDescriptor(l, a))
-  }), t))
+    return t
+  })(Object(t)).forEach(function(a) {
+    Object.defineProperty(l, a, Object.getOwnPropertyDescriptor(t, a))
+  }), l))
 }
 require("./647438.js")

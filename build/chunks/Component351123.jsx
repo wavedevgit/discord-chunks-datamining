@@ -88,7 +88,7 @@ function W(e) {
     className: H.roleMemberList,
     sections: [n.length, l.length],
     renderRow: function(e) {
-      let c, g, j, {
+      let c, g, x, {
           section: v,
           row: y
         } = e,
@@ -96,7 +96,7 @@ function W(e) {
       switch (v) {
         case D.m$.ROLES:
           var S;
-          j = (g = n[y]).rowType === D.aC.ROLE && (null == (S = g.tags) ? true : S.guild_connections) === null ? (0, i.jsx)(b.Z, {
+          x = (g = n[y]).rowType === D.aC.ROLE && (null == (S = g.tags) ? true : S.guild_connections) === null ? (0, i.jsx)(b.Z, {
             className: H.shield,
             color: g.colorString,
             size: 20
@@ -108,7 +108,7 @@ function W(e) {
           }), c = (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("div", {
               className: H.rowHeight,
-              children: j
+              children: x
             }), (0, i.jsx)(d.Text, {
               variant: "text-sm/normal",
               className: H.rowLabel,
@@ -143,13 +143,13 @@ function W(e) {
       }
       if (null == g) return null;
       let E = !N && null == r && null != g.id;
-      return (0, i.jsxs)(x.Z, {
-        justify: x.Z.Justify.BETWEEN,
-        align: x.Z.Align.CENTER,
+      return (0, i.jsxs)(j.Z, {
+        justify: j.Z.Justify.BETWEEN,
+        align: j.Z.Align.CENTER,
         className: H.memberRow,
-        children: [(0, i.jsx)(x.Z, {
-          justify: x.Z.Justify.START,
-          align: x.Z.Align.CENTER,
+        children: [(0, i.jsx)(j.Z, {
+          justify: j.Z.Justify.START,
+          align: j.Z.Align.CENTER,
           className: H.__invalid_memberRowBody,
           children: c
         }), (0, i.jsx)(d.Text, {
@@ -241,9 +241,9 @@ function z(e) {
       id: "StageModeratorSettingCard"
     }), (0, i.jsxs)("div", {
       className: H.cardFolder,
-      children: [(0, i.jsxs)(x.Z, {
-        justify: x.Z.Justify.BETWEEN,
-        align: x.Z.Align.CENTER,
+      children: [(0, i.jsxs)(j.Z, {
+        justify: j.Z.Justify.BETWEEN,
+        align: j.Z.Align.CENTER,
         className: H.folderHeader,
         children: [(0, i.jsx)(d.vwX, {
           tag: "h5",
@@ -340,9 +340,9 @@ function F(e) {
           children: V.intl.string(V.t.ZAk4Q0)
         })
       }), r && (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsxs)(x.Z, {
-          justify: x.Z.Justify.BETWEEN,
-          align: x.Z.Align.CENTER,
+        children: [(0, i.jsxs)(j.Z, {
+          justify: j.Z.Justify.BETWEEN,
+          align: j.Z.Align.CENTER,
           className: H.folderHeader,
           children: [(0, i.jsx)(d.vwX, {
             tag: "h5",
@@ -466,7 +466,7 @@ let J = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk496675.Z, Chunk271383.
               let {
                 guild_id: e
               } = r, t = U({}, r.permissionOverwrites);
-              null != e && null == t[e] && (t[e] = I.we(e)), await (0, j.u)(s, t[e].deny, t[e].allow) && (0, g.wk)(s.id, {
+              null != e && null == t[e] && (t[e] = I.we(e)), await (0, x.u)(s, t[e].deny, t[e].allow) && (0, g.wk)(s.id, {
                 permissionOverwrites: Object.values(t)
               })
             }

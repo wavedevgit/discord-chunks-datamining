@@ -1,11 +1,11 @@
-/** Chunk was on 45136 **/
-/** chunk id: 216572, original params: e,n,t (module,exports,require) **/
+/** Chunk was on 24358 **/
+/** chunk id: 216572, original params: t,i,e (module,exports,require) **/
 require.d(exports, {
-  Cv: () => _,
-  HL: () => p,
-  KK: () => g,
-  Q_: () => f,
-  nw: () => m
+  Cv: () => L,
+  HL: () => _,
+  KK: () => h,
+  Q_: () => u,
+  nw: () => S
 });
 var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
@@ -17,39 +17,39 @@ var Chunk647438 = require("./647438.js"),
   Chunk893908 = require("./893908.js"),
   Chunk953252 = require("./953252.js");
 
-function f(e) {
-  return (0, l.e7)([a.Z], () => {
-    if (null == e) returnfalse;
-    let n = a.Z.getGuild(e);
-    return null != n && (0, d.Z)(n) && null != (0, r.Z)(n)
+function u(t) {
+  return (0, l.e7)([r.Z], () => {
+    if (null == t) returnfalse;
+    let i = r.Z.getGuild(t);
+    return null != i && (0, g.Z)(i) && null != (0, c.Z)(i)
   })
 }
 
-function p(e) {
-  return (0, c.P0)(e)
+function _(t) {
+  return (0, o.P0)(t)
 }
 
-function m(e) {
-  return (0, c.gT)(e)
+function S(t) {
+  return (0, o.gT)(t)
 }
 
-function _(e) {
+function L(t) {
   let {
-    messageReference: n
-  } = e, t = (0, l.e7)([u.Z], () => null != n ? u.Z.getMessage(n.channel_id, n.message_id) : null);
-  (0, i.useEffect)(() => {
-    null == t && null != n && o.Z.fetchMessages({
-      channelId: n.channel_id,
+    messageReference: i
+  } = t, e = (0, l.e7)([d.Z], () => null != i ? d.Z.getMessage(i.channel_id, i.message_id) : null);
+  (0, n.useEffect)(() => {
+    null == e && null != i && s.Z.fetchMessages({
+      channelId: i.channel_id,
       jump: {
-        messageId: n.message_id
+        messageId: i.message_id
       },
       limit: 10
     })
-  }, [t, n])
+  }, [e, i])
 }
 
-function g(e) {
-  var n, t;
-  let i = null == e || null == (t = e.messageSnapshots[0]) || null == (n = t.moderatorReport) ? true : n.reported_user_id;
-  null != i && (0, s.PR)(i)
+function h(t) {
+  var i, e;
+  let n = null == t || null == (e = t.messageSnapshots[0]) || null == (i = e.moderatorReport) ? true : i.reported_user_id;
+  null != n && (0, a.PR)(n)
 }

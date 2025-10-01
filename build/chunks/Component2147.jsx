@@ -106,8 +106,8 @@ function em(e, t) {
 }
 let ef = (0, Chunk313201.hQ)(),
   eb = (0, Chunk313201.hQ)(),
-  ex = (0, Chunk313201.hQ)(),
   ej = (0, Chunk313201.hQ)(),
+  ex = (0, Chunk313201.hQ)(),
   ev = (0, Chunk313201.hQ)(),
   ey = (0, Chunk313201.hQ)(),
   eC = (0, Chunk313201.hQ)(),
@@ -168,8 +168,8 @@ let ef = (0, Chunk313201.hQ)(),
           videoQualityMode: p,
           defaultReactionEmoji: m,
           availableTags: b,
-          defaultSortOrder: x,
-          defaultForumLayout: j,
+          defaultSortOrder: j,
+          defaultForumLayout: x,
           defaultTagSetting: v
         } = module;
         module.isThread() && (t = (0, Chunk456077.Z)(exports, true)), (0, Chunk787014.wk)(module.id, {
@@ -285,7 +285,7 @@ class eA extends Chunk647438.PureComponent {
   renderChannelInfo(e, t) {
     var n, l, r, a, o, h, p;
     let f, b, {
-        canManageChannels: j,
+        canManageChannels: x,
         canSendMessages: v,
         isThreadModerator: y,
         canManageThread: N,
@@ -303,10 +303,10 @@ class eA extends Chunk647438.PureComponent {
           label: I ? ed.intl.string(ed.t.yR6Hwc) : ed.intl.string(ed.t.X8jMDg),
           children: (0, i.jsx)(O.ZP, {
             className: s()(eu.topicContainer, {
-              [eu.disabled]: !j
+              [eu.disabled]: !x
             }),
             innerClassName: s()(eu.topic, {
-              [eu.disabled]: !j
+              [eu.disabled]: !x
             }),
             characterCountClassName: eu.topicCharacterCount,
             maxCharacterCount: I ? es.Z7 : es.$x,
@@ -330,7 +330,7 @@ class eA extends Chunk647438.PureComponent {
             onSubmit: this.handleSubmit,
             disableThemedBackground: true,
             error: this.getError("topic"),
-            disabled: !j,
+            disabled: !x,
             showValueWhenDisabled: true
           })
         }), (0, i.jsx)(m.izJ, {
@@ -345,7 +345,7 @@ class eA extends Chunk647438.PureComponent {
           onChange: this.handleChangeTemplate,
           error: this.getError("template"),
           maxLength: eo.Vb,
-          disabled: !j,
+          disabled: !x,
           autosize: true,
           showCharacterCount: true
         }), (0, i.jsx)(m.izJ, {
@@ -362,7 +362,7 @@ class eA extends Chunk647438.PureComponent {
             channel: e
           })
         }), (0, i.jsx)(m.XZJ, {
-          disabled: !j || A,
+          disabled: !x || A,
           checked: e.hasFlag(es.zZ.REQUIRE_TAG),
           onChange: e => this.handleRequireTagChanged(e),
           label: ed.intl.string(ed.t["9g2Zys"])
@@ -376,7 +376,7 @@ class eA extends Chunk647438.PureComponent {
           children: [(0, i.jsxs)("div", {
             className: s()(eu.settingsLeft, eu.settingsDefaultReaction),
             children: [(0, i.jsx)(m.vwX, {
-              id: ex,
+              id: ej,
               className: eu.formTitle,
               children: ed.intl.string(ed.t["8ao1+P"])
             }), (0, i.jsx)(m.R94, {
@@ -395,7 +395,7 @@ class eA extends Chunk647438.PureComponent {
                 children: e => (0, i.jsx)(m.zxk, em(ep({}, e), {
                   buttonRef: this.defaultReactionButtonRef,
                   text: ed.intl.string(ed.t["59QgaG"]),
-                  disabled: !j,
+                  disabled: !x,
                   onClick: t => {
                     var n;
                     null == (n = e.onClick) || n.call(e, t)
@@ -490,7 +490,7 @@ class eA extends Chunk647438.PureComponent {
           gap: 40
         })]
       }) : null,
-      Q = _ ? y : j,
+      Q = _ ? y : x,
       Y = null == (r = Z.Z.getCurrentConfig({
         guildId: e.guild_id,
         location: "ChannelSettingsOverview"
@@ -516,7 +516,7 @@ class eA extends Chunk647438.PureComponent {
               onMarkerRender: this.getCooldownSliderMarker,
               disabled: !Q,
               equidistant: true,
-              "aria-labelledby": ej,
+              "aria-labelledby": ex,
               "aria-describedby": ev
             }), I ? (0, i.jsx)(m.iRW, {
               label: ed.intl.string(ed.t["fkY5+v"]),
@@ -528,7 +528,7 @@ class eA extends Chunk647438.PureComponent {
               onMarkerRender: this.getCooldownSliderMarker,
               disabled: !Q,
               equidistant: true,
-              "aria-labelledby": ej,
+              "aria-labelledby": ex,
               "aria-describedby": ev
             }) : null]
           })
@@ -537,7 +537,7 @@ class eA extends Chunk647438.PureComponent {
         })]
       }) : null,
       $ = _ && null != e.threadMetadata ? (0, i.jsxs)("div", {
-        children: [(0, i.jsx)(x.Z, {
+        children: [(0, i.jsx)(j.Z, {
           page: er.ZY5.CHANNEL_SETTINGS,
           children: (0, i.jsx)(V.Z, {
             isDisabled: !N,
@@ -567,7 +567,7 @@ class eA extends Chunk647438.PureComponent {
           onChange: this.handleNSFWChange,
           value: (0, C.qF)(e),
           hideBorder: true,
-          disabled: !j || null != e.linkedLobby || ea,
+          disabled: !x || null != e.linkedLobby || ea,
           disabledText: null != e.linkedLobby ? ed.intl.string(ed.t.l6uSVV) : null,
           children: ed.intl.string(ed.t.Es25YW)
         })
@@ -587,17 +587,17 @@ class eA extends Chunk647438.PureComponent {
           onChange: this.handleNewsChange,
           value: e.type === er.d4z.GUILD_ANNOUNCEMENT,
           hideBorder: true,
-          disabled: !j,
+          disabled: !x,
           children: ed.intl.string(ed.t.Au2b7u)
         })
       }) : null,
       eC = U.uC.has(e.type) ? (0, i.jsxs)("div", {
         children: [(0, i.jsx)(m.izJ, {
           gap: 40
-        }), (0, i.jsx)(x.Z, {
+        }), (0, i.jsx)(j.Z, {
           page: er.ZY5.CHANNEL_SETTINGS,
           children: (0, i.jsx)(V.Z, {
-            isDisabled: !j,
+            isDisabled: !x,
             autoArchiveDuration: (0, D.WD)(e, null),
             onChange: this.handleChangeDefaultAutoArchiveDuration
           })
@@ -614,7 +614,7 @@ class eA extends Chunk647438.PureComponent {
         onChange: this.handleChannelSummariesToggled,
         value: !e.hasFlag(es.zZ.SUMMARIES_DISABLED) && (null == E ? true : E.features.has(er.oNc.SUMMARIES_ENABLED_BY_USER)),
         hideBorder: true,
-        disabled: !j || !(null == E ? true : E.features.has(er.oNc.SUMMARIES_ENABLED_BY_USER)),
+        disabled: !x || !(null == E ? true : E.features.has(er.oNc.SUMMARIES_ENABLED_BY_USER)),
         children: (0, i.jsxs)("div", {
           className: eu.badgedItem,
           children: [ed.intl.string(ed.t.id3ozs), (0, i.jsx)(m.IGR, {
@@ -631,12 +631,12 @@ class eA extends Chunk647438.PureComponent {
           value: !e.hasFlag(es.zZ.HIDE_MEDIA_DOWNLOAD_OPTIONS),
           note: ed.intl.string(ed.t.J4wCc3),
           hideBorder: true,
-          disabled: !j,
+          disabled: !x,
           children: ed.intl.string(ed.t.u8LZOj)
         })]
       }) : null;
     e.type === er.d4z.GUILD_CATEGORY ? (b = ed.intl.string(ed.t.OCAkGB), f = "category-name") : e.isForumPost() ? (b = ed.intl.string(ed.t.uyVrTE), f = "post-title") : _ ? (b = ed.intl.string(ed.t.j3XWjI), f = "thread-name") : (b = ed.intl.string(ed.t.PVbHDg), f = "channel-name");
-    let eE = T ? v : j;
+    let eE = T ? v : x;
     return (0, i.jsxs)("div", {
       children: [(0, i.jsx)(m.oil, {
         label: b,
@@ -1073,7 +1073,7 @@ function eL() {
   } = (0, Chunk442837.cj)([Chunk496675.Z], () => ({
     canManageChannels: Chunk496675.Z.can(Chunk981631.Plq.MANAGE_CHANNELS, exports),
     canSendMessages: Chunk496675.Z.can(Chunk981631.Plq.SEND_MESSAGES, exports)
-  })), p = (0, Chunk933557.ZP)(exports), m = Chunk314897.default.getId(), f = (0, Chunk109434.v)(), b = null == exports ? true : exports.id, x = (0, Chunk902840.ts)(exports, false, true), j = Chunk129865.Z.useExperiment({
+  })), p = (0, Chunk933557.ZP)(exports), m = Chunk314897.default.getId(), f = (0, Chunk109434.v)(), b = null == exports ? true : exports.id, j = (0, Chunk902840.ts)(exports, false, true), x = Chunk129865.Z.useExperiment({
     guildId: null == exports ? true : exports.guild_id,
     location: "ChannelSettingsOverview"
   }).enabled, C = Chunk647438.useCallback(e => {

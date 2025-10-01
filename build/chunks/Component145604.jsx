@@ -111,7 +111,7 @@ async function et(e) {
     overlay_method: null != (l = N.gl[p]) ? l : __OVERLAY__ ? N.gl[N.gl.Hook] : null,
     activity_status_enabled: w.G6.getSetting(),
     activity_status_shared_guilds: f,
-    current_user_status: H.Z.getStatus(),
+    current_user_status: V.Z.getStatus(),
     game_detection_enabled: (0, E.ik)(a),
     executable_path: I,
     voice_channel_id: h,

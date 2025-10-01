@@ -1,7 +1,7 @@
 /** Chunk was on 18539 **/
 /** chunk id: 523080, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => o
+  Z: () => s
 });
 var Chunk81825 = require("./81825.js");
 
@@ -13,14 +13,14 @@ function i(e, t, r) {
     writable: true
   }) : e[t] = r, e
 }
-class o extends Chunk81825.Z {
+class s extends Chunk81825.Z {
   static fromServer(e) {
     var t, r, {
       sku_id: n,
-      sku_product_line: s,
+      sku_product_line: o,
       sku_name: u
     } = e;
-    return new o((t = function(e) {
+    return new s((t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var r = null != arguments[t] ? arguments[t] : {},
           n = Object.keys(r);
@@ -36,18 +36,18 @@ class o extends Chunk81825.Z {
       var r, n, i = function(e, t) {
         if (null == e) return {};
         var r, n, i = {},
-          o = Object.keys(e);
-        for (n = 0; n < o.length; n++) r = o[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
+          s = Object.keys(e);
+        for (n = 0; n < s.length; n++) r = s[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
         return i
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var o = Object.getOwnPropertySymbols(e);
-        for (n = 0; n < o.length; n++) r = o[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
+        var s = Object.getOwnPropertySymbols(e);
+        for (n = 0; n < s.length; n++) r = s[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
       }
       return i
     }(e, ["sku_id", "sku_product_line", "sku_name"])), r = r = {
       sku_id: n,
-      sku_product_line: s,
+      sku_product_line: o,
       sku_name: u
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
       var r = Object.keys(e);

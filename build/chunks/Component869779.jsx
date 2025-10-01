@@ -81,7 +81,7 @@ class k extends Chunk647438.PureComponent {
       canManageChannels: h,
       canDeleteChannels: f,
       canManageWebhooks: b,
-      canUnlinkChannel: x
+      canUnlinkChannel: j
     } = this.props;
     return null == Chunk647438 ? null : (0, Chunk951288.jsx)(Chunk503089.ZP, {
       theme: module,
@@ -100,7 +100,7 @@ class k extends Chunk647438.PureComponent {
           canUnlinkChannel: h
         } = e, f = (0, p.KS)(t), {
           GUILD_CATEGORY: b
-        } = A.d4z, x = v.Ec.has(t.type), j = t.type === b ? L.intl.string(L.t.ifbXnJ) : x ? t.isForumPost() ? L.intl.string(L.t.nEOg1N) : L.intl.string(L.t.H7vTe3) : L.intl.string(L.t["8D8Rsb"]);
+        } = A.d4z, j = v.Ec.has(t.type), x = t.type === b ? L.intl.string(L.t.ifbXnJ) : j ? t.isForumPost() ? L.intl.string(L.t.nEOg1N) : L.intl.string(L.t.H7vTe3) : L.intl.string(L.t["8D8Rsb"]);
         return [{
           section: u.ID.HEADER,
           label: null != t ? (0, i.jsxs)(i.Fragment, {
@@ -135,13 +135,13 @@ class k extends Chunk647438.PureComponent {
             element: P.n,
             stores: [C.Z]
           },
-          predicate: () => l && !x
+          predicate: () => l && !j
         }, {
           section: A.CoT.INSTANT_INVITES,
           label: L.intl.string(L.t["9F90iY"]),
           element: _.Z,
           type: u.bT.CUSTOM,
-          predicate: () => t.type !== b && r && !x && !t.isModeratorReportChannel()
+          predicate: () => t.type !== b && r && !j && !t.isModeratorReportChannel()
         }, {
           section: A.CoT.INTEGRATIONS,
           label: L.intl.string(L.t.s69NLC),
@@ -163,8 +163,8 @@ class k extends Chunk647438.PureComponent {
               }), (0, c.xf)()
             })
           },
-          label: j,
-          ariaLabel: j,
+          label: x,
+          ariaLabel: x,
           icon: (0, i.jsx)(s.XHJ, {
             size: "xs",
             color: "currentColor"

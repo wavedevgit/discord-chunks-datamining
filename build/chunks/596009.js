@@ -1,5 +1,5 @@
-/** Chunk was on 10125 **/
-/** chunk id: 596009, original params: a,t,l (module,exports,require) **/
+/** Chunk was on 41734 **/
+/** chunk id: 596009, original params: e,t,a (module,exports,require) **/
 module.exports = {
   page: "page__4c945",
   bgImg: "bgImg__4c945",

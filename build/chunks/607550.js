@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk960048 = require("./960048.js");
-let s = {},
+let o = {},
   u = () => ({
     data: null,
     status: "not_loaded"
@@ -14,12 +14,12 @@ let s = {},
 
 function a(e) {
   var t;
-  return null != (t = s[e]) ? t : s[e] = u()
+  return null != (t = o[e]) ? t : o[e] = u()
 }
 class c extends Chunk442837.ZP.Store {
   get(e) {
     var t;
-    return null != (t = s[e]) ? t : u()
+    return null != (t = o[e]) ? t : u()
   }
   getWishlist(e) {
     return this.get(e).data
@@ -77,7 +77,7 @@ let l = new c(Chunk570140.Z, {
     let {
       error: t
     } = e;
-    o.Z.captureException(t)
+    s.Z.captureException(t)
   },
   WISHLIST_REMOVE_SKU_SUCCESS: function(e) {
     let {
@@ -90,6 +90,6 @@ let l = new c(Chunk570140.Z, {
     let {
       error: t
     } = e;
-    o.Z.captureException(t)
+    s.Z.captureException(t)
   }
 })

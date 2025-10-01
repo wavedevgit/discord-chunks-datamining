@@ -313,7 +313,7 @@ function A(t) {
         title: S.intl.string(S.t.Ny49TE),
         permissions: e(i, t)
       })
-    }(E), (i = [l.Pl.SEND_MESSAGES, l.Pl.SEND_MESSAGES_IN_THREADS, l.Pl.CREATE_PUBLIC_THREADS, l.Pl.CREATE_PRIVATE_THREADS, l.Pl.EMBED_LINKS, l.Pl.ATTACH_FILES, l.Pl.ADD_REACTIONS, l.Pl.USE_EXTERNAL_EMOJIS, l.Pl.USE_EXTERNAL_STICKERS, l.Pl.USE_EXTERNAL_SOUNDS, l.Pl.MENTION_EVERYONE, l.Pl.MANAGE_MESSAGES, l.Pl.PIN_MESSAGES, l.Pl.BYPASS_SLOWMODE, l.Pl.MANAGE_THREADS, l.Pl.READ_MESSAGE_HISTORY, l.Pl.SEND_TTS_MESSAGES, l.Pl.SEND_VOICE_MESSAGES, l.Pl.SEND_POLLS], t.inSoundmojiExperiment || (i = i.filter(t => t !== l.Pl.USE_EXTERNAL_SOUNDS)), t.inPinPermissionExperiment || (i = i.filter(t => t !== l.Pl.PIN_MESSAGES)), t.inBypassSlowmodePermissionExperiment || (i = i.filter(t => t !== l.Pl.BYPASS_SLOWMODE)), r({
+    }(E), (i = [l.Pl.SEND_MESSAGES, l.Pl.SEND_MESSAGES_IN_THREADS, l.Pl.CREATE_PUBLIC_THREADS, l.Pl.CREATE_PRIVATE_THREADS, l.Pl.EMBED_LINKS, l.Pl.ATTACH_FILES, l.Pl.ADD_REACTIONS, l.Pl.USE_EXTERNAL_EMOJIS, l.Pl.USE_EXTERNAL_STICKERS, l.Pl.USE_EXTERNAL_SOUNDS, l.Pl.MENTION_EVERYONE, l.Pl.MANAGE_MESSAGES, l.Pl.PIN_MESSAGES, l.Pl.BYPASS_SLOWMODE, l.Pl.MANAGE_THREADS, l.Pl.READ_MESSAGE_HISTORY, l.Pl.SEND_TTS_MESSAGES, l.Pl.SEND_VOICE_MESSAGES, l.Pl.SEND_POLLS], t.inSoundmojiExperiment || (i = i.filter(t => t !== l.Pl.USE_EXTERNAL_SOUNDS)), t.inBypassSlowmodePermissionExperiment || (i = i.filter(t => t !== l.Pl.BYPASS_SLOWMODE)), r({
       title: S.intl.string(S.t.cKobOz),
       permissions: e(i, E)
     })), function(t, i) {
@@ -360,7 +360,7 @@ function o(t, i) {
 
 function _(t, i, E) {
   let n = [l.Pl.SEND_MESSAGES, l.Pl.SEND_MESSAGES_IN_THREADS, l.Pl.CREATE_PUBLIC_THREADS, l.Pl.CREATE_PRIVATE_THREADS, l.Pl.EMBED_LINKS, l.Pl.ATTACH_FILES, l.Pl.ADD_REACTIONS, l.Pl.USE_EXTERNAL_EMOJIS, l.Pl.USE_EXTERNAL_STICKERS, l.Pl.USE_EXTERNAL_SOUNDS, l.Pl.MENTION_EVERYONE, l.Pl.MANAGE_MESSAGES, l.Pl.PIN_MESSAGES, l.Pl.BYPASS_SLOWMODE, l.Pl.MANAGE_THREADS, l.Pl.READ_MESSAGE_HISTORY, l.Pl.SEND_TTS_MESSAGES, l.Pl.SEND_VOICE_MESSAGES, l.Pl.SEND_POLLS];
-  return E.inSoundmojiExperiment || (n = n.filter(t => t !== l.Pl.USE_EXTERNAL_SOUNDS)), E.showPrivateThreads && E.showCreateThreads || (n = n.filter(t => t !== l.Pl.CREATE_PRIVATE_THREADS)), E.showCreateThreads || (n = n.filter(t => t !== l.Pl.CREATE_PUBLIC_THREADS)), E.inPinPermissionExperiment || (n = n.filter(t => t !== l.Pl.PIN_MESSAGES)), E.inBypassSlowmodePermissionExperiment || (n = n.filter(t => t !== l.Pl.BYPASS_SLOWMODE)), {
+  return E.inSoundmojiExperiment || (n = n.filter(t => t !== l.Pl.USE_EXTERNAL_SOUNDS)), E.showPrivateThreads && E.showCreateThreads || (n = n.filter(t => t !== l.Pl.CREATE_PRIVATE_THREADS)), E.showCreateThreads || (n = n.filter(t => t !== l.Pl.CREATE_PUBLIC_THREADS)), E.inBypassSlowmodePermissionExperiment || (n = n.filter(t => t !== l.Pl.BYPASS_SLOWMODE)), {
     title: i,
     description: E.sectionDescription,
     permissions: e(n, t)

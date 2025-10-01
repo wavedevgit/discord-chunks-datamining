@@ -33,8 +33,8 @@ let j = (0, Chunk647438.memo)(function(e) {
   let {
     quest: A
   } = e, [Z, w] = (0, i.useState)(false), [L, R] = (0, i.useState)(24), [D, k] = (0, i.useState)(false), M = (0, i.useRef)(null), U = (0, i.useRef)(null), G = (0, i.useRef)(null), B = (0, c.e7)([m.default], () => m.default.getCurrentUser()), {
-    ref: V,
-    height: H = 0
+    ref: H,
+    height: V = 0
   } = (0, p.ZP)(), F = (0, f.ZP)(), z = (0, O.B6)(null == (t = A.userStatus) ? true : t.claimedAt, {
     month: "numeric",
     day: "numeric"
@@ -52,7 +52,7 @@ let j = (0, Chunk647438.memo)(function(e) {
   let $ = (0, u.wj)(F),
     ee = (0, i.useMemo)(() => null != A.config.cosponsorMetadata, [A]),
     et = (0, i.useMemo)(() => (0, y.fh)(A, y.eC.REWARD), [A]),
-    en = Z ? H + 8 : 0,
+    en = Z ? V + 8 : 0,
     er = (0, _.mH)(E.jn.TROPHY_CASE_CARD),
     {
       content_position: ei,
@@ -161,7 +161,7 @@ let j = (0, Chunk647438.memo)(function(e) {
           withGameTile: false
         })
       }), (0, r.jsxs)("div", {
-        ref: V,
+        ref: H,
         className: N.details,
         children: [(0, r.jsx)(d.X6q, {
           className: N.title,

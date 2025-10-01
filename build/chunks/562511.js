@@ -18,7 +18,7 @@ var Chunk647438 = require("./647438.js"),
 
 function _(e) {
   let t = function(e) {
-    let t = (0, o.FT)(a.C.ADOPT_CLAN_IDENTITY_NOTICE, null != e ? e : f.lds);
+    let t = (0, l.FT)(a.C.ADOPT_CLAN_IDENTITY_NOTICE, null != e ? e : f.lds);
     return (0, i.e7)([c.Z, d.default, s.ZP], () => {
       var t, n;
       if (null === e) returnfalse;
@@ -31,7 +31,7 @@ function _(e) {
     }, [e]) && !t
   }(e);
   return ! function(e) {
-    let t = (0, o.FT)(a.C.ADOPT_CLAN_IDENTITY_NOTICE, null != e ? e : f.lds),
+    let t = (0, l.FT)(a.C.ADOPT_CLAN_IDENTITY_NOTICE, null != e ? e : f.lds),
       n = (0, i.e7)([p.Z], () => null === e ? null : p.Z.getGuildLastSeenInfo(e)),
       s = (0, i.e7)([d.default], () => {
         var e;
@@ -42,7 +42,7 @@ function _(e) {
         return null == (n = c.Z.getGuild(e)) || null == (t = n.profile) ? true : t.tag
       });
     if (r.useEffect(() => {
-        t && null === n && null != e && null != u && l.Z.dispatch({
+        t && null === n && null != e && null != u && o.Z.dispatch({
           type: "GUILD_TAG_CHANGED_COACHMARK_SEEN",
           guildId: e,
           lastSeenInfo: {

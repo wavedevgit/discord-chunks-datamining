@@ -12,14 +12,14 @@ var Chunk481060 = require("./481060.js"),
 function o(e) {
   let {
     guildFriendsEnabled: t
-  } = a.Z.useExperiment({
+  } = l.Z.useExperiment({
     location: "useFriendsItem"
   }, {
     autoTrackExposure: false
   });
   return t ? (0, i.jsx)(r.sNh, {
     id: "friends",
-    label: l.intl.string(l.t.kYxEcH),
+    label: a.intl.string(a.t.kYxEcH),
     icon: r.iFz,
     action: () => {
       (0, r.ZDy)(async () => {

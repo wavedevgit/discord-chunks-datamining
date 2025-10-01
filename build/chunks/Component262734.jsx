@@ -78,20 +78,20 @@ function j(e) {
   let U = R.width / Math.max(R.height, 1) < S.I0,
     G = 0,
     B = 0,
-    V = (0, p.Z)(null == n ? true : n.id);
-  if (!V) {
+    H = (0, p.Z)(null == n ? true : n.id);
+  if (!H) {
     let e = R.width,
       t = R.height;
     U ? ((t = R.width / S.I0) > R.height && (e = (t = R.height) * S.I0), B = (R.height - t) / 2) : ((e = Math.min(R.height * S.I0)) > R.width && (t = (e = R.width) / S.I0), G = (R.width - e) / 2)
   }
-  let H = S.MI.NO_CHAT;
+  let V = S.MI.NO_CHAT;
   if (null == n) return null;
   let F = (null != A ? A : I.$Y6) + Z,
     z = (0, y.ro)(t);
   return (0, r.jsx)(u.f6W, {
     theme: I.BRd.DARK,
     children: e => (0, r.jsxs)("div", {
-      className: a()(T.wrapper, N[H], e),
+      className: a()(T.wrapper, N[V], e),
       ref: w,
       style: {
         right: x && !Number.isNaN(F) ? F : 0
@@ -100,7 +100,7 @@ function j(e) {
         className: T.activityPanelContainer,
         children: (0, r.jsx)("div", {
           className: a()(T.activityContainer, {
-            [T.activityContainerNoMargin]: V
+            [T.activityContainerNoMargin]: H
           }),
           style: {
             paddingLeft: G,

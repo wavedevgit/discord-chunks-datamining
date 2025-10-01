@@ -150,13 +150,13 @@ let eL = (0, Chunk608787.Un)({
     name: "ChannelsAndRolesPage",
     renderLoader: eR
   }),
-  eV = (0, Chunk608787.Un)({
+  eH = (0, Chunk608787.Un)({
     createPromise: () => Promise.all([require.e("8271"), require.e("15851"), require.e("51453"), require.e("845"), require.e("37709")]).then(require.bind(require, 599263)),
     webpackId: 599263,
     name: "GuildOnboardingPage",
     renderLoader: eR
   }),
-  eH = (0, Chunk608787.Un)({
+  eV = (0, Chunk608787.Un)({
     createPromise: () => Promise.all([require.e("48776"), require.e("44799")]).then(require.bind(require, 393357)),
     webpackId: 393357,
     name: "GuildPowerupsPage",
@@ -225,7 +225,7 @@ let eL = (0, Chunk608787.Un)({
           selectedSection: ex.l7.BROWSE
         });
       case ej.oC.GUILD_ONBOARDING:
-        return (0, r.jsx)(eV, {
+        return (0, r.jsx)(eH, {
           guildId: l
         });
       case ej.oC.CUSTOMIZE_COMMUNITY:
@@ -239,7 +239,7 @@ let eL = (0, Chunk608787.Un)({
         });
       case ej.oC.GUILD_BOOSTS:
         var g;
-        return (0, r.jsx)(eH, {
+        return (0, r.jsx)(eV, {
           guildId: l,
           powerupListingId: null != (g = n.get("powerupId")) ? g : n.get("powerupSkuId")
         });
@@ -310,7 +310,7 @@ let eL = (0, Chunk608787.Un)({
     let {
       match: t
     } = e;
-    return null != t.params.guildId ? (0, r.jsx)(H.Z, {
+    return null != t.params.guildId ? (0, r.jsx)(V.Z, {
       guildId: t.params.guildId,
       inviteCode: t.params.inviteCode
     }) : null
@@ -525,7 +525,7 @@ function e9(e) {
           [eZ.hidden]: g,
           [eZ.channelListHidden]: o
         }),
-        children: [s && !c && (0, r.jsx)(V.Z, {
+        children: [s && !c && (0, r.jsx)(H.Z, {
           className: eZ.guilds,
           themeOverride: n
         }), !o && (0, r.jsxs)(r.Fragment, {

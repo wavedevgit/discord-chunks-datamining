@@ -30,9 +30,9 @@ class l extends Chunk523080.Z {
         case n.Z.AVATAR_DECORATION:
           return i.Z.fromServer(e);
         case n.Z.PROFILE_EFFECT:
-          return s.Z.fromServer(e);
-        case n.Z.NAMEPLATE:
           return o.Z.fromServer(e);
+        case n.Z.NAMEPLATE:
+          return s.Z.fromServer(e);
         default:
           return null
       }

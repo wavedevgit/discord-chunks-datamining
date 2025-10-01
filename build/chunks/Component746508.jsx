@@ -105,7 +105,7 @@ function eB(e, t, n) {
   }) : e[t] = n, e
 }
 
-function eV(e) {
+function eH(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -118,7 +118,7 @@ function eV(e) {
   return e
 }
 
-function eH(e, t) {
+function eV(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -256,7 +256,7 @@ function eK(e) {
     play: T,
     events: N
   } = (0, f.o)(c.enabled ? "disable" : "enable");
-  return i.useEffect(() => () => T(), [c.enabled, T]), (0, r.jsx)(eh.Z, eH(eV({
+  return i.useEffect(() => () => T(), [c.enabled, T]), (0, r.jsx)(eh.Z, eV(eH({
     onChange: v,
     onCameraUnavailable: E,
     hasPermission: d,
@@ -302,7 +302,7 @@ function eK(e) {
           } = l;
           return (0, r.jsx)(m.ua7, {
             text: i,
-            children: e => (0, r.jsx)(g.zx, eH(eV({
+            children: e => (0, r.jsx)(g.zx, eV(eH({
               "data-migration-pending": true,
               buttonRef: o
             }, u, e, c), {
@@ -373,7 +373,7 @@ function eQ(e) {
           visibleContent: i,
           markAsDismissed: c
         } = n;
-        return (0, r.jsxs)(g.zx, eH(eV(eH(eV({
+        return (0, r.jsxs)(g.zx, eV(eH(eV(eH({
           "data-migration-pending": true
         }, e), {
           fullWidth: true,
@@ -445,7 +445,7 @@ function eX(e) {
     }, [O, n.id, f]),
     S = b.find(e => e.ownerId === (null == h ? true : h.id)),
     C = (0, ec.E)(n, h, b);
-  t = null == S ? l ? v : ed.Z : () => (0, H.Z)(S);
+  t = null == S ? l ? v : ed.Z : () => (0, V.Z)(S);
   let T = null != S || C.length > 0,
     N = _ ? eM.intl.string(eM.t.fjBNo6) : eM.intl.string(eM.t.uQn9Bw),
     j = E || o || y,
@@ -490,7 +490,7 @@ function eX(e) {
       } = e, l = eF(e, ["onClick", "onMouseEnter"]);
       return (0, r.jsx)(m.ua7, {
         text: N,
-        children: e => (0, r.jsx)(g.zx, eH(eV(eH(eV({
+        children: e => (0, r.jsx)(g.zx, eV(eH(eV(eH({
           "data-migration-pending": true
         }, e), {
           buttonRef: c,
@@ -712,7 +712,7 @@ class eJ extends Chunk647438.PureComponent {
         } = await n.e("56944").then(n.bind(n, 600830));
         return n => (0, r.jsx)(x.Gt, {
           value: i,
-          children: (0, r.jsx)(e, eH(eV({}, n), {
+          children: (0, r.jsx)(e, eV(eH({}, n), {
             channel: t,
             onInteraction: (0, R.u)("RTCConnectionMenu", P.Z.RTC_PANEL)
           }))
@@ -754,7 +754,7 @@ function e$(e) {
     Component: c,
     events: u
   } = (0, h.P)(l ? "disable" : "enable");
-  return i.useEffect(() => () => s(), [l, s]), (0, r.jsx)(ex.Z, eH(eV({}, t), {
+  return i.useEffect(() => () => s(), [l, s]), (0, r.jsx)(ex.Z, eV(eH({}, t), {
     ref: a,
     onClick: e => {
       (0, L.v)(o, L.d.KRISP, !l), t.onClick(e)
@@ -799,7 +799,7 @@ let e0 = (0, Chunk730749.Z)(function(e) {
       noiseCancellationSupported: eE.Z.isNoiseCancellationSupported(),
       noiseCancellationActive: eE.Z.getNoiseCancellation(),
       noiseCancellationError: eE.Z.isNoiseCancellationError(),
-      canGoLive: (0, V.Z)(eE.Z)
+      canGoLive: (0, H.Z)(eE.Z)
     })),
     h = (0, u.e7)([eE.Z, z.Z], () => z.Z.hasHotspot(ek.v.VOICE_PANEL_INTRODUCTION) && (0, eP.EO)(l) && !eE.Z.isInteractionRequired() && !(null == c ? true : c.isGuildStageVoice())),
     b = (0, u.e7)([eC.Z], () => null != o && eC.Z.hasVideo(o), [o]),
@@ -838,7 +838,7 @@ let e0 = (0, Chunk730749.Z)(function(e) {
       children: [null != t || null != n ? (0, r.jsx)(B.Z, {
         voiceState: t,
         awaitingRemoteSessionInfo: n
-      }) : null, (0, r.jsx)(eJ, eH(eV({}, e, f, s), {
+      }) : null, (0, r.jsx)(eJ, eV(eH({}, e, f, s), {
         enableActivities: L,
         remoteVoiceState: t,
         guild: p,

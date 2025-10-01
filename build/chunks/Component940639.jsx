@@ -2,7 +2,7 @@
 /** chunk id: 940639, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => j
 }), require("./539854.js"), require("./388685.js"), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./781311.js");
 var i, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -195,6 +195,6 @@ class b extends(i = Chunk647438.Component) {
 f(b, "defaultProps", {
   sections: [null]
 });
-let x = Chunk442837.ZP.connectStores([Chunk607070.Z], () => ({
+let j = Chunk442837.ZP.connectStores([Chunk607070.Z], () => ({
   keyboardModeEnabled: Chunk607070.Z.keyboardModeEnabled
 }))(b)

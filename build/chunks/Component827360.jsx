@@ -1,0 +1,55 @@
+/** Chunk was on 1272 **/
+/** chunk id: 827360, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  Z: () => p
+});
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
+  Chunk907862 = require("./907862.js"),
+  Chunk100527 = require("./100527.js"),
+  Chunk906732 = require("./906732.jsx"),
+  Chunk335131 = require("./335131.js"),
+  Chunk215023 = require("./215023.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk595619 = require("./595619.js");
+let p = e => {
+  let {
+    targetElementRef: t,
+    onRequestClose: n,
+    onClick: p
+  } = e, {
+    analyticsLocations: f
+  } = (0, o.ZP)(a.Z.HOME_PAGE_SHOP_TAB), h = i.useRef(n);
+  return h.current = n, i.useEffect(() => () => {
+    var e;
+    null == (e = h.current) || e.call(h)
+  }, []), (0, r.jsx)(l.J2, {
+    targetElementRef: t,
+    position: "right",
+    align: "top",
+    size: "md",
+    caretConfig: {
+      align: "start"
+    },
+    title: u.intl.string(u.t.epBu6O),
+    body: u.intl.string(u.t["o8+3AQ"]),
+    graphic: {
+      type: "image",
+      src: d.Z
+    },
+    gradientColor: "blue",
+    actions: [{
+      text: u.intl.string(u.t.dp9qDg),
+      variant: "primary",
+      onClick: () => {
+        null == p || p(), (0, s.mK)({
+          openInLayer: false,
+          analyticsLocations: f,
+          analyticsSource: a.Z.HOME_PAGE_SHOP_TAB,
+          tab: c.AW.HOME
+        })
+      }
+    }],
+    onRequestClose: n
+  })
+}

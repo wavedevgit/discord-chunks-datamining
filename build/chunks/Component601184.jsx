@@ -22,16 +22,16 @@ function _(e, t) {
     _ = (0, u.$R)(t),
     g = (0, l.e7)([c.Z], () => c.Z.can(f.Plq.MANAGE_MESSAGES, t), [t]),
     {
-      firstMessage: S
+      firstMessage: N
     } = (0, l.e7)([o.Z], () => o.Z.getMessage(t.id), [t.id]),
-    N = g || null != n && e.canDeleteOwnMessage(n.id);
-  return e.state === f.yb.SENDING || !N || f.V$x.UNDELETABLE.has(e.type) || !_ || t.isModeratorReportChannel() && (e.id === (null == S ? true : S.id) || (0, E.Z)(e)) ? null : (0, i.jsx)(r.sNh, {
+    S = g || null != n && e.canDeleteOwnMessage(n.id);
+  return e.state === f.yb.SENDING || !S || f.V$x.UNDELETABLE.has(e.type) || !_ || t.isModeratorReportChannel() && (e.id === (null == N ? true : N.id) || (0, E.Z)(e)) ? null : (0, i.jsx)(s.sNh, {
     id: "delete",
     label: m.intl.string(m.t.xwMqDw),
     action: function(n) {
-      e.state === f.yb.SEND_FAILED ? s.Z.deleteMessage(t.id, e.id, true) : n.shiftKey ? s.Z.deleteMessage(t.id, e.id) : a.Z.confirmDelete(t, e, true)
+      e.state === f.yb.SEND_FAILED ? r.Z.deleteMessage(t.id, e.id, true) : n.shiftKey ? r.Z.deleteMessage(t.id, e.id) : a.Z.confirmDelete(t, e, true)
     },
     color: "danger",
-    icon: r.XHJ
+    icon: s.XHJ
   })
 }

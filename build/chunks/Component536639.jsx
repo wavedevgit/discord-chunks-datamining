@@ -16,14 +16,14 @@ function c(e, t) {
   return e.state !== o.yb.SEND_FAILED && (0, a.Z)(e, t) ? false === e.pinned ? (0, i.jsx)(l.sNh, {
     id: "pin",
     action: function(n) {
-      n.shiftKey ? r.Z.pinMessage(t, e.id) : s.Z.confirmPin(t, e)
+      n.shiftKey ? s.Z.pinMessage(t, e.id) : r.Z.confirmPin(t, e)
     },
     label: u.intl.string(u.t["CvQ18/"]),
     icon: l.qQX
   }) : (0, i.jsx)(l.sNh, {
     id: "unpin",
     action: function(n) {
-      n.shiftKey ? r.Z.unpinMessage(t, e.id) : s.Z.confirmUnpin(t, e)
+      n.shiftKey ? s.Z.unpinMessage(t, e.id) : r.Z.confirmUnpin(t, e)
     },
     label: u.intl.string(u.t["Bse+Fx"]),
     icon: l.qQX

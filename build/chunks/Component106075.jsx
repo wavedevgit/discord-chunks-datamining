@@ -66,22 +66,22 @@ function S() {
     B = Chunk647438.useCallback(e => {
       N(e), L && Z()
     }, [L, Z, N]),
-    V = Chunk647438.useMemo(() => L ? C.filter(e => {
+    H = Chunk647438.useMemo(() => L ? C.filter(e => {
       let {
         id: t
       } = e;
       return !E.MU.has(t)
     }) : C, [C, L]),
-    H = Chunk647438.useRef(new Chunk444324.Z(j)),
+    V = Chunk647438.useRef(new Chunk444324.Z(j)),
     {
       onGuildCardSeen: F,
       onGuildCardClick: z
     } = (0, Chunk750910.H)({
-      guildDiscoveryCardSeenManager: H.current,
+      guildDiscoveryCardSeenManager: V.current,
       loadId: module.current
     });
   return Chunk647438.useEffect(() => {
-    H.current.flushSeenGuilds(module.current)
+    V.current.flushSeenGuilds(module.current)
   }, [j]), Chunk647438.useEffect(() => {
     S()
   }, [T, S]), Chunk647438.useEffect(() => {
@@ -101,7 +101,7 @@ function S() {
         icon: Chunk481060.QTo
       }), !L && (0, Chunk951288.jsx)(c.Z, {
         className: U,
-        tabs: V,
+        tabs: H,
         selectedTab: L ? null : T,
         onTabSelect: B,
         onAvailableWidthChange: D

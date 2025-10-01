@@ -1,7 +1,7 @@
 /** Chunk was on 204 **/
 /** chunk id: 143941, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  a: () => _
+  a: () => E
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -11,6 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk704215 = require("./704215.js"),
   Chunk481060 = require("./481060.js"),
   Chunk727637 = require("./727637.js"),
+  Chunk906732 = require("./906732.jsx"),
   Chunk243778 = require("./243778.jsx"),
   Chunk621853 = require("./621853.js"),
   Chunk277511 = require("./277511.js"),
@@ -22,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk820657 = require("./820657.js");
 
-function P(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -41,7 +42,7 @@ function P(e) {
   return e
 }
 
-function j(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -53,88 +54,90 @@ function j(e, t) {
     Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
   }), e
 }
-let _ = e => {
+let E = e => {
   let {
     product: t,
     iconSize: i = 20,
-    className: _,
-    enableHoverEffect: E = false,
-    isCardHovered: x = true,
-    selectedVariantIndex: C
-  } = e, [S, A] = (0, d.US)([s.z.WISHLIST_NUX_TOOLTIP_AND_MODAL], true, true), I = S === s.z.WISHLIST_NUX_TOOLTIP_AND_MODAL, w = h.default.getCurrentUser(), R = null != w ? p.Z.getFirstWishlistId(w.id) : null, T = l.useMemo(() => {
+    className: E,
+    enableHoverEffect: x = false,
+    isCardHovered: C = true,
+    selectedVariantIndex: S
+  } = e, [A, I] = (0, p.US)([s.z.WISHLIST_NUX_TOOLTIP_AND_MODAL], true, true), w = A === s.z.WISHLIST_NUX_TOOLTIP_AND_MODAL, {
+    analyticsLocations: R
+  } = (0, d.ZP)(), T = g.default.getCurrentUser(), N = null != T ? f.Z.getFirstWishlistId(T.id) : null, L = l.useMemo(() => {
     var e;
-    return t.type === o.Z.VARIANTS_GROUP && null != C && (null == (e = t.variants) ? true : e[C]) != null ? t.variants[C] : t
-  }, [t, C]), N = T.skuId, L = (0, b.n)(R, N), k = l.useRef(null), [D, M] = l.useState(null);
+    return t.type === o.Z.VARIANTS_GROUP && null != S && (null == (e = t.variants) ? true : e[S]) != null ? t.variants[S] : t
+  }, [t, S]), k = L.skuId, D = (0, h.n)(N, k), M = l.useRef(null), [Z, U] = l.useState(null);
   l.useEffect(() => {
-    M(null)
-  }, [N]);
-  let Z = null !== D ? D : L,
-    U = (0, u.Z)(k),
-    B = Z ? c.h_8 : c.Pzh,
-    F = Z || U ? O.wishlistedOrHoveredIconColor : O.normalIconColor,
+    U(null)
+  }, [k]);
+  let B = null !== Z ? Z : D,
+    F = (0, u.Z)(M),
+    V = B ? c.h_8 : c.Pzh,
+    W = B || F ? P.wishlistedOrHoveredIconColor : P.normalIconColor,
     {
-      isPurchased: V
-    } = (0, y.L)(T),
-    W = (0, g.fp)(T) || (0, g.x6)(T) || (0, g.G1)(T),
-    H = l.useCallback(async e => {
-      if (e.stopPropagation(), e.currentTarget.blur(), Z && null != R) {
-        M(false);
+      isPurchased: H
+    } = (0, v.L)(L),
+    G = (0, y.fp)(L) || (0, y.x6)(L) || (0, y.G1)(L),
+    Y = l.useCallback(async e => {
+      if (e.stopPropagation(), e.currentTarget.blur(), B && null != N) {
+        U(false);
         try {
-          await f.Z.removeSkuFromWishlist(R, N), M(null)
+          await b.Z.removeSkuFromWishlist(N, k, R), U(null)
         } catch (e) {
-          M(null), (0, c.showToast)((0, c.createToast)(m.intl.string(m.t.F8FvU1), c.ToastType.FAILURE))
+          U(null), (0, c.showToast)((0, c.createToast)(O.intl.string(O.t.F8FvU1), c.ToastType.FAILURE))
         }
       } else {
-        M(true);
+        U(true);
         try {
-          await f.Z.addSkuToWishlist(N), M(null), I && ((0, c.ZDy)(async () => {
+          await b.Z.addSkuToWishlist(k, R), U(null), w && ((0, c.ZDy)(async () => {
             let {
               default: e
             } = await r.e("36340").then(r.bind(r, 874533));
-            return r => (0, n.jsx)(e, j(P({}, r), {
+            return r => (0, n.jsx)(e, _(j({}, r), {
               product: t
             }))
-          }), A(v.L.USER_DISMISS))
+          }), I(m.L.USER_DISMISS))
         } catch (e) {
-          M(null), (0, c.showToast)((0, c.createToast)(m.intl.string(m.t.F8FvU1), c.ToastType.FAILURE))
+          U(null), (0, c.showToast)((0, c.createToast)(O.intl.string(O.t.F8FvU1), c.ToastType.FAILURE))
         }
       }
-    }, [Z, N, t, I, A, R, M]);
-  if (!x && !Z || null == w) return null;
-  if (W || V) return (0, n.jsx)(c.ua7, {
-    text: m.intl.string(m.t["02QYZG"]),
-    children: e => (0, n.jsx)(c.P3F, j(P({}, e), {
-      className: a()(O.wishlistButton, O.disabledButton, _),
-      innerRef: k,
+    }, [R, B, k, t, w, I, N, U]);
+  if (!C && !B || null == T) return null;
+  if (G || H) return (0, n.jsx)(c.ua7, {
+    text: O.intl.string(O.t["02QYZG"]),
+    children: e => (0, n.jsx)(c.P3F, _(j({}, e), {
+      className: a()(P.wishlistButton, P.disabledButton, E),
+      innerRef: M,
       onClick: e => e.stopPropagation(),
-      children: (0, n.jsx)(B, {
-        colorClass: O.disabledIconColor,
+      children: (0, n.jsx)(V, {
+        colorClass: P.disabledIconColor,
         size: "custom",
         height: i,
         width: i
       })
     }))
   });
-  let G = Z ? m.intl.string(m.t.yr9TTU) : m.intl.string(m.t["8DkMER"]),
-    Y = I ? (0, n.jsxs)(n.Fragment, {
+  let z = B ? O.intl.string(O.t.yr9TTU) : O.intl.string(O.t["8DkMER"]),
+    K = w ? (0, n.jsxs)(n.Fragment, {
       children: [(0, n.jsx)(c.Text, {
         variant: "text-sm/semibold",
-        children: m.intl.string(m.t["47Rhc3"])
+        children: O.intl.string(O.t["47Rhc3"])
       }), (0, n.jsx)(c.Text, {
         variant: "text-sm/medium",
-        children: m.intl.string(m.t.PXjA0d)
+        children: O.intl.string(O.t.PXjA0d)
       })]
-    }) : G;
+    }) : z;
   return (0, n.jsx)(c.ua7, {
-    text: Y,
-    "aria-label": G,
-    children: e => (0, n.jsx)(c.P3F, j(P({}, e), {
-      className: a()(O.wishlistButton, E && O.withHover, _),
-      innerRef: k,
-      onClick: H,
-      "aria-label": G,
-      children: (0, n.jsx)(B, {
-        colorClass: F,
+    text: K,
+    "aria-label": z,
+    children: e => (0, n.jsx)(c.P3F, _(j({}, e), {
+      className: a()(P.wishlistButton, x && P.withHover, E),
+      innerRef: M,
+      onClick: Y,
+      "aria-label": z,
+      children: (0, n.jsx)(V, {
+        colorClass: W,
         size: "custom",
         height: i,
         width: i

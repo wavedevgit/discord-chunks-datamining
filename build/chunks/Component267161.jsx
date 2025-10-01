@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 267161, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => V,
+  default: () => H,
   useAppSidebarState: () => U
 });
 var Chunk951288 = require("./951288.js"),
@@ -90,7 +90,7 @@ function B(e) {
     focusSectionProps: i
   })
 }
-let V = Chunk647438.memo(function() {
+let H = Chunk647438.memo(function() {
   Chunk647438.useLayoutEffect(() => {
     Chunk998502.ZP.setMinimumSize(Chunk741764.J, Chunk741764.N)
   }, []);

@@ -2,7 +2,7 @@
 /** chunk id: 457396, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   g: () => F,
-  i: () => H
+  i: () => V
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -44,7 +44,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx");
-let H = e => {
+let V = e => {
     let {
       selected: t
     } = e, n = (0, a.e7)([m.default], () => m.default.getCurrentUser()), r = (0, a.e7)([b.Z], () => b.Z.getPremiumTypeSubscription()), i = (0, j.N)(), l = (0, N.Ng)(), o = (0, y.Vi)(), s = (0, D.V)(), c = (0, O.Qo)(n, r), u = (0, a.e7)([E.Z], () => E.Z.getCreatedAtOverride()), d = t || null != i || null != l || o || null != s || c, p = null != u ? u : null == n ? true : n.createdAt;
@@ -119,7 +119,7 @@ let H = e => {
     let [eC, eT] = (0, g.US)(ev, true, true);
     if (i.useEffect(() => {
         true === W && null != eI && eS(B.L.AUTO_DISMISS), true === W && null != eC && eT(B.L.AUTO_DISMISS)
-      }, [eS, W, eI, eT, eC]), !H({
+      }, [eS, W, eI, eT, eC]), !V({
         selected: W
       })) return null;
     let eN = () => {
@@ -139,12 +139,12 @@ let H = e => {
       let e = (0, x.$q)();
       n = (0, r.jsx)(w._y, {
         isTabSelected: W,
-        badgeCopy: V.intl.string(V.t.OS9KPj),
+        badgeCopy: H.intl.string(H.t.OS9KPj),
         offerExpiresAt: true === e ? null == er ? true : er.expires_at : null
       }), E = 4
     } else eI === o.z.VOICE_FILTER_EARLY_ACCESS_PREMIUM_TAB_BADGE || eI === o.z.CUSTOM_THEMES_PREMIUM_TAB_BADGE ? (n = (0, r.jsx)(w._y, {
       isTabSelected: W,
-      badgeCopy: V.intl.string(V.t.y2b7CA),
+      badgeCopy: H.intl.string(H.t.y2b7CA),
       offerExpiresAt: null
     }), E = 2) : ea ? (n = (0, r.jsx)(R.S, {
       expiresAt: eg
@@ -169,7 +169,7 @@ let H = e => {
     }), E = 4);
     eu && (n = (0, r.jsx)(w._y, {
       isTabSelected: W,
-      badgeCopy: V.intl.string(V.t.RDE0SU),
+      badgeCopy: H.intl.string(H.t.RDE0SU),
       offerExpiresAt: null
     }), E = 4, eN = () => {
       _.default.track(G.rMx.NITRO_TAB_VISITED, {
@@ -199,7 +199,7 @@ let H = e => {
       selected: W,
       route: Y,
       icon: s.SrA,
-      text: ee ? V.intl.string(V.t["4gwVVl"]) : V.intl.string(V.t.Ipxkoq),
+      text: ee ? H.intl.string(H.t["4gwVVl"]) : H.intl.string(H.t.Ipxkoq),
       locationState: K,
       onClick: eN
     }, Q, en), z = z = {
