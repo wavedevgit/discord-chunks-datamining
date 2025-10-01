@@ -96,19 +96,19 @@ function h(e) {
   }), {
     state: {
       value: R,
-      tags: D,
-      selections: Z,
+      tags: Z,
+      selections: D,
       isSelecting: A
     }
-  } = _, L = (0, o.Z)(D), [k, G] = i.useState(false), M = i.useCallback(() => {
+  } = _, L = (0, o.Z)(Z), [k, G] = i.useState(false), M = i.useCallback(() => {
     var e;
     G(false), P(), null == (e = b.current) || e.focus({
       preventScroll: true
     })
   }, [P]);
   i.useEffect(() => {
-    L !== D && l(D)
-  }, [l, L, D]), i.useEffect(() => {
+    L !== Z && l(Z)
+  }, [l, L, Z]), i.useEffect(() => {
     k || c(R)
   }, [c, R, k]);
   let U = i.useCallback(function() {
@@ -118,7 +118,7 @@ function h(e) {
     B = i.useCallback(e => t => {
       if (t) {
         var n;
-        let t = Z.includes(D[e]);
+        let t = D.includes(Z[e]);
         null == (n = b.current) || n.focus(), t ? T(e) : (S(e), setImmediate(() => {
           var e;
           null == (e = b.current) || e.blur(), setTimeout(() => {
@@ -127,7 +127,7 @@ function h(e) {
           }, 16)
         }))
       } else T(e, true), G(true)
-    }, [S, T, Z, D]);
+    }, [S, T, D, Z]);
   return (0, r.jsxs)("div", {
     className: s()(g.mainContainer, h),
     ref: j,
@@ -136,16 +136,16 @@ function h(e) {
     children: [(0, r.jsxs)(f, {
       ref: v,
       onClick: M,
-      children: [D.map((e, t) => (0, r.jsx)(d.Z, {
+      children: [Z.map((e, t) => (0, r.jsx)(d.Z, {
         value: e,
         onChange: I(t),
         onBlur: U,
         onFocus: B(t),
         onRemove: () => E(t),
-        isSelected: Z.includes(e),
+        isSelected: D.includes(e),
         isSelecting: A,
         error: u[e],
-        forceShowErrorTooltip: !k && t === D.length - 1
+        forceShowErrorTooltip: !k && t === Z.length - 1
       }, t)), (0, r.jsx)("input", {
         className: s()(g.mainTextInput, {
           [g.isEditingOtherNodes]: k
@@ -155,14 +155,14 @@ function h(e) {
         onKeyDownCapture: C,
         onPaste: O,
         onBlur: w,
-        placeholder: 0 === D.length ? p : true,
+        placeholder: 0 === Z.length ? p : true,
         value: R
       })]
     }), null != x && (0, r.jsxs)(a.Text, {
       variant: "text-xs/normal",
       color: "text-muted",
       className: g.maxTags,
-      children: [null != (t = null == D ? true : D.length) ? t : 0, "/", x]
+      children: [null != (t = null == Z ? true : Z.length) ? t : 0, "/", x]
     })]
   })
 }

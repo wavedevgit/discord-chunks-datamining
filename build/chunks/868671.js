@@ -37,12 +37,12 @@ function v(e) {
     requestId: E,
     entries: S,
     impressionCappedEntryIds: Z
-  } = (0, g.Z)(v), T = (0, i.e7)([p.Z], () => p.Z.hidden), P = (0, i.e7)([c.Z], () => c.Z.isFocused()), N = (0, i.e7)([s.Z], () => s.Z.getChannel(v)), R = (0, i.e7)([o.Z], () => o.Z.getGuild(x), [x]), w = (0, h.E)(R), A = null != w && w && (null == N ? true : N.isForumChannel()) === false, [D, L, M, k] = r.useMemo(() => {
+  } = (0, g.Z)(v), P = (0, i.e7)([p.Z], () => p.Z.hidden), T = (0, i.e7)([c.Z], () => c.Z.isFocused()), N = (0, i.e7)([s.Z], () => s.Z.getChannel(v)), R = (0, i.e7)([o.Z], () => o.Z.getGuild(x), [x]), w = (0, h.E)(R), A = null != w && w && (null == N ? true : N.isForumChannel()) === false, [D, L, M, k] = r.useMemo(() => {
     let e;
     if (null == S || 0 === S.length || null == E || !A) return [t, n, j];
     let r = C ? S.length : 3,
       i = S.slice(0, r);
-    e = T ? [{
+    e = P ? [{
       type: a.so.HIDDEN_CONTENT_INVENTORY
     }] : i.map(e => ({
       type: a.so.CONTENT_INVENTORY,
@@ -74,7 +74,7 @@ function v(e) {
       [l, ...t],
       [...n, l, ...e], Math.random(), e
     ]
-  }, [v, S, C, t, x, E, n, j, T, A]), U = r.useRef(0), G = r.useRef(S), H = r.useRef(true), F = r.useRef({
+  }, [v, S, C, t, x, E, n, j, P, A]), U = r.useRef(0), G = r.useRef(S), H = r.useRef(true), F = r.useRef({
     impressionCappedEntryIds: Z
   }), B = r.useCallback(e => {
     var t;
@@ -93,7 +93,7 @@ function v(e) {
     if (null == E || null == H.current || Date.now() - H.current < 3e3) return;
     let n = null != (t = null == (e = G.current) ? true : e.map(e => e.id)) ? t : [],
       r = n.slice(0, U.current);
-    !T && P && A && ((0, f.e)(_.rMx.RANKING_ITEMS_SEEN_MUST_BE_SAMPLED, {
+    !P && T && A && ((0, f.e)(_.rMx.RANKING_ITEMS_SEEN_MUST_BE_SAMPLED, {
       request_id: E,
       first_shown_at: H.current,
       item_ids: r,
@@ -106,7 +106,7 @@ function v(e) {
       type: "CONTENT_INVENTORY_TRACK_ITEM_IMPRESSIONS",
       itemIds: r
     }))
-  }), [E, v, x, T, P, A]), {
+  }), [E, v, x, P, T, A]), {
     groups: D,
     rows: L,
     version: M,

@@ -38,11 +38,11 @@ function C(e) {
     guild: S,
     subsection: T
   } = (0, l.cj)([o.Z], () => o.Z.getProps()), P = null != (n = null != (t = null == S ? true : S.id) ? t : C) ? n : _.lds, w = null != E, [R] = (0, g.RD)(P), {
-    rulesByTriggerType: D
-  } = (0, g.pH)(P), Z = {
+    rulesByTriggerType: Z
+  } = (0, g.pH)(P), D = {
     [p.vh.MEMBERS]: O.intl.string(O.t.sx4E5u),
     [p.vh.CONTENT]: O.intl.string(O.t.fphZb2)
-  }, A = i.useMemo(() => Object.values(null != D ? D : {}).flat().filter(d.lm), [D]), L = {
+  }, A = i.useMemo(() => Object.values(null != Z ? Z : {}).flat().filter(d.lm), [Z]), L = {
     isInEditMode: w,
     setEditingRule: I
   }, k = i.useRef(L);
@@ -121,13 +121,13 @@ function C(e) {
     }), R ? (0, r.jsx)(f.Z, {}) : Object.entries(U).map(e => {
       let [t, n] = e;
       if (0 === n.length) return (0, r.jsx)(i.Fragment, {}, t);
-      let l = null != Z[t] ? (0, r.jsx)(a.hjN, {
+      let l = null != D[t] ? (0, r.jsx)(a.hjN, {
         tag: "h3",
         className: y.categoryHeader,
         children: (0, r.jsx)(a.Text, {
           variant: "text-lg/normal",
           color: "header-primary",
-          children: Z[t]
+          children: D[t]
         })
       }) : null;
       return (0, r.jsxs)("div", {
@@ -138,7 +138,7 @@ function C(e) {
             return (0, r.jsx)(b.Z, {
               guildId: P,
               triggerType: e,
-              rules: null != (t = D[e]) ? t : [],
+              rules: null != (t = Z[e]) ? t : [],
               initWithEdit: T === _.KsC.AUTOMOD_MENTION_SPAM && e === v.fX.MENTION_SPAM
             }, e)
           })

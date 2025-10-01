@@ -2,7 +2,7 @@
 /** chunk id: 730910, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => Z
+  Z: () => D
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -53,7 +53,7 @@ function R(e) {
   return e
 }
 
-function D(e, t) {
+function Z(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -66,7 +66,7 @@ function D(e, t) {
   }), e
 }
 
-function Z() {
+function D() {
   let e = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuild());
   return null == module ? null : (0, Chunk951288.jsx)(A, {
     guild: module
@@ -76,7 +76,7 @@ function Z() {
 function A(e) {
   let {
     guild: t
-  } = e, f = t.id, Z = (0, s.e7)([O.Z], () => O.Z.getCurrentPage()), A = (0, C.Z)(f), {
+  } = e, f = t.id, D = (0, s.e7)([O.Z], () => O.Z.getCurrentPage()), A = (0, C.Z)(f), {
     hasChanges: L,
     hasConfiguredAnythingForCurrentStep: k,
     hasErrors: G
@@ -85,7 +85,7 @@ function A(e) {
     hasConfiguredAnythingForCurrentStep: O.Z.hasConfiguredAnythingForCurrentStep(),
     hasErrors: O.Z.hasErrors()
   })), M = (0, s.e7)([O.Z], () => {
-    let e = (0, y.lg)(Z);
+    let e = (0, y.lg)(D);
     return null != e && !O.Z.isEducationUpsellDismissed(e)
   }), U = (0, u.ZP)(), B = i.useRef(null), [{
     spring: F
@@ -115,22 +115,22 @@ function A(e) {
       output: [W, (0, d.dQu)(a.Z.colors.STATUS_DANGER).hex()]
     });
   if (A) {
-    if (Z === y.PG.DEFAULT_CHANNELS) return (0, r.jsx)(E.j, {});
-    else if (Z === y.PG.CUSTOMIZATION_QUESTIONS) return (0, r.jsx)(I.Zm, {});
-    else if (Z === y.PG.HOME_SETTINGS) return (0, r.jsx)(S.Z, {});
-    else if ((Z === y.PG.LANDING || Z === y.PG.REVIEW) && j.Z.hasChanges()) return (0, r.jsx)(S.Z, {})
+    if (D === y.PG.DEFAULT_CHANNELS) return (0, r.jsx)(E.j, {});
+    else if (D === y.PG.CUSTOMIZATION_QUESTIONS) return (0, r.jsx)(I.Zm, {});
+    else if (D === y.PG.HOME_SETTINGS) return (0, r.jsx)(S.Z, {});
+    else if ((D === y.PG.LANDING || D === y.PG.REVIEW) && j.Z.hasChanges()) return (0, r.jsx)(S.Z, {})
   }
-  let Y = Z === y.xh[y.xh.length - 1],
+  let Y = D === y.xh[y.xh.length - 1],
     q = async () => {
       let e = _.Z.advancedMode;
       if (L) try {
-        if (Z === y.PG.DEFAULT_CHANNELS) await (0, h.DO)(t).then(() => e ? (0, v.rS)(t, {
+        if (D === y.PG.DEFAULT_CHANNELS) await (0, h.DO)(t).then(() => e ? (0, v.rS)(t, {
           ignoreDefaultPrompt: true
         }) : Promise.resolve());
-        else if (Z === y.PG.CUSTOMIZATION_QUESTIONS) await (0, v.rS)(t, {
+        else if (D === y.PG.CUSTOMIZATION_QUESTIONS) await (0, v.rS)(t, {
           ignoreDefaultPrompt: true
         });
-        else if (Z === y.PG.HOME_SETTINGS) {
+        else if (D === y.PG.HOME_SETTINGS) {
           let e = j.Z.getSettings();
           await (0, b.oo)(t.id, e)
         }
@@ -139,19 +139,19 @@ function A(e) {
       }
       returntrue
     }, X = async () => {
-      g.default.track(T.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, D(R({}, (0, m.hH)(f)), {
-        step: y.PG[Z],
+      g.default.track(T.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, Z(R({}, (0, m.hH)(f)), {
+        step: y.PG[D],
         back: false,
         skip: !L
-      })), (0, x.Nb)((0, y.lg)(Z)), await q() && (0, x.IG)(f, Z)
+      })), (0, x.Nb)((0, y.lg)(D)), await q() && (0, x.IG)(f, D)
     }, J = async () => {
-      g.default.track(T.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, D(R({}, (0, m.hH)(f)), {
-        step: y.PG[Z],
+      g.default.track(T.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, Z(R({}, (0, m.hH)(f)), {
+        step: y.PG[D],
         back: true,
         skip: false
-      })), await q() && (0, x.Wy)(f, Z)
+      })), await q() && (0, x.Wy)(f, D)
     }, Q = null;
-  M && (Z === y.PG.SAFETY_CHECK ? Q = (0, r.jsx)(N.j7, {}) : Z === y.PG.DEFAULT_CHANNELS ? Q = (0, r.jsx)(N.Io, {}) : Z === y.PG.CUSTOMIZATION_QUESTIONS ? Q = (0, r.jsx)(N.cZ, {}) : Z === y.PG.HOME_SETTINGS && (Q = (0, r.jsx)(N.g6, {})));
+  M && (D === y.PG.SAFETY_CHECK ? Q = (0, r.jsx)(N.j7, {}) : D === y.PG.DEFAULT_CHANNELS ? Q = (0, r.jsx)(N.Io, {}) : D === y.PG.CUSTOMIZATION_QUESTIONS ? Q = (0, r.jsx)(N.cZ, {}) : D === y.PG.HOME_SETTINGS && (Q = (0, r.jsx)(N.g6, {})));
   let $ = (0, r.jsx)("div", {
       className: M ? w.hidden : true,
       children: (0, r.jsx)(d.zxk, {

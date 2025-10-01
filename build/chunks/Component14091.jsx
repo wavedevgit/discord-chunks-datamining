@@ -117,7 +117,7 @@ function F(e) {
     isFeedbackVisible: n,
     dismissFeedbackEntrypoint: i
   } = e;
-  return n ? (0, r.jsx)(T.Z, {
+  return n ? (0, r.jsx)(P.Z, {
     searchContext: t,
     dismissFeedbackEntrypoint: i
   }) : null
@@ -213,8 +213,8 @@ let z = [],
       searchMode: I,
       onBlockedResultsClick: E,
       searchResultsQuery: Z,
-      isFavoritesSearch: T
-    } = e, P = i.useRef(null), N = i.useCallback(() => {
+      isFavoritesSearch: P
+    } = e, T = i.useRef(null), N = i.useCallback(() => {
       S.Z.cleanUpSearchState(t)
     }, [t]);
     i.useEffect(() => (m.S.subscribe(L.CkL.SEARCH_RESULTS_CLOSE, N), () => {
@@ -224,12 +224,12 @@ let z = [],
     i.useEffect(() => {
       if (R.current !== n.showBlockedResults) {
         R.current = n.showBlockedResults;
-        let e = P.current;
+        let e = T.current;
         null != e && e.scrollToBottom()
       }
     }, [n.showBlockedResults]);
     let M = i.useCallback((e, t, n) => {
-        let r = P.current;
+        let r = T.current;
         if (null == r) return;
         let i = r.getScrollerState().scrollTop - e;
         r.scrollTo({
@@ -334,7 +334,7 @@ let z = [],
         isIndexing: n.isHistoricalIndexing,
         documentsIndexed: n.documentsIndexed
       }), (0, r.jsxs)(d.Den, {
-        ref: P,
+        ref: T,
         className: U.scroller,
         children: [X && !n.isSearching && (0, r.jsx)(d.Wn, {
           className: U.paginationLimitHeader,
@@ -363,7 +363,7 @@ let z = [],
           onBlockedResultsClick: E,
           searchRequestAnalyticsId: a,
           searchResultsQuery: Z,
-          isFavoritesSearch: T
+          isFavoritesSearch: P
         })]
       }), (0, r.jsx)(F, {
         searchContext: t,
@@ -461,7 +461,7 @@ function W(e) {
   }, [n, c.isSearching, t, _]), Z = (0, s.e7)([A.Z], () => {
     let e = (0, y.Tm)(t);
     return A.Z.getSearchResultsQuery(e)
-  }), T = t.type === L.aib.FAVORITES, P = i.useCallback(e => E.Z.setShowBlockedResults(t, e), [t]), w = i.useDeferredValue(p), D = i.useDeferredValue(c), k = i.useDeferredValue(d);
+  }), P = t.type === L.aib.FAVORITES, T = i.useCallback(e => E.Z.setShowBlockedResults(t, e), [t]), w = i.useDeferredValue(p), D = i.useDeferredValue(c), k = i.useDeferredValue(d);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(V, {
       searchContext: t,
@@ -476,9 +476,9 @@ function W(e) {
       onPageChange: I,
       onSearchModeChange: C,
       searchMode: _,
-      onBlockedResultsClick: P,
+      onBlockedResultsClick: T,
       searchResultsQuery: Z,
-      isFavoritesSearch: T
+      isFavoritesSearch: P
     }), (0, r.jsx)(G, {
       searchContext: t,
       searchRequestAnalyticsId: k,
@@ -497,7 +497,7 @@ function Y(e) {
   let {
     guildId: t,
     channelId: n
-  } = e, i = (0, P.H)({
+  } = e, i = (0, T.H)({
     guildId: t,
     channelId: n
   });

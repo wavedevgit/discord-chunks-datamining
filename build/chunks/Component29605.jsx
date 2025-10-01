@@ -89,7 +89,7 @@ let Y = d().throttle(Chunk80932.OQ, 1e3),
       onEdit: l,
       editingDisabled: a = false,
       isNewlyAdded: o = false
-    } = e, [c, d] = i.useState(n.name), m = D.ZP.getEmojiURL({
+    } = e, [c, d] = i.useState(n.name), m = Z.ZP.getEmojiURL({
       id: n.id,
       animated: n.animated,
       size: 32
@@ -148,7 +148,7 @@ let Y = d().throttle(Chunk80932.OQ, 1e3),
             value: null != c ? c : "",
             onBlur: () => {
               if (c === n.name) return;
-              let e = Z.ZP.sanitizeEmojiName(c);
+              let e = D.ZP.sanitizeEmojiName(c);
               e !== n.name && (0, x.dv)({
                 guildId: t,
                 emojiId: n.id,
@@ -381,7 +381,7 @@ let Y = d().throttle(Chunk80932.OQ, 1e3),
       })),
       b = (0, Chunk110924.Z)(Chunk137317),
       [j, S] = Chunk647438.useState(false),
-      [D, Z] = Chunk647438.useState(false),
+      [Z, D] = Chunk647438.useState(false),
       A = Chunk647438.useRef(null),
       {
         maxEmojiSlots: L,

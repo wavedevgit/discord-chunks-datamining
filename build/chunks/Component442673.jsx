@@ -21,12 +21,12 @@ let f = e => {
     onClose: h
   } = e, p = o.useCallback(() => {
     h()
-  }, [h]), j = (0, c.Z)(), [x, m] = o.useState(false), [g, y] = o.useState(false), O = o.useCallback(() => {
-    y(true), m(false)
+  }, [h]), j = (0, a.Z)(), [m, g] = o.useState(false), [x, y] = o.useState(false), O = o.useCallback(() => {
+    y(true), g(false)
   }, []), {
     disconnectLinkRequest: v,
     isDisconnectLoading: k
-  } = (0, a.G)({
+  } = (0, c.G)({
     onSuccess: p,
     onError: O
   });
@@ -37,7 +37,7 @@ let f = e => {
         e.preventDefault(), v(r)
       },
       children: [(0, n.jsx)(l.Z.Error, {
-        error: g ? u.intl.string(d.default.krIDd3) : true
+        error: x ? u.intl.string(d.default.krIDd3) : true
       }), (0, n.jsxs)(s.hzk, {
         "data-migration-pending": true,
         children: [(0, n.jsx)(l.Z.Header, {
@@ -53,17 +53,13 @@ let f = e => {
           })
         }), (0, n.jsx)(l.Z.Notice, {
           notice: j ? u.intl.string(d.default.EvMGLS) : u.intl.string(d.default.f1SUeX)
-        }), (0, n.jsx)(i.$q, {
+        }), (0, n.jsx)(i.VL, {
           className: b.acknowledgementCheckbox,
-          type: i.M0.INVERTED,
-          value: x,
-          onChange: (e, t) => {
-            m(t), y(false)
+          checked: m,
+          onChange: e => {
+            g(e), y(false)
           },
-          children: (0, n.jsx)(s.Text, {
-            variant: "text-xs/semibold",
-            children: j ? u.intl.string(d.default["/MYCeX"]) : u.intl.string(d.default.VJaHUV)
-          })
+          label: j ? u.intl.string(d.default["/MYCeX"]) : u.intl.string(d.default.VJaHUV)
         })]
       }), (0, n.jsx)(s.mzw, {
         "data-migration-pending": true,
@@ -82,7 +78,7 @@ let f = e => {
               size: "sm",
               text: u.intl.string(d.default["c5L+sr"]),
               type: "submit",
-              disabled: !x || k,
+              disabled: !m || k,
               loading: k
             })]
           })

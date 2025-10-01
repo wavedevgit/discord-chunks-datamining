@@ -70,17 +70,17 @@ function E(e) {
     removeEditStateId: P
   } = b.B7(h, t, {
     includeSoftDeleted: true
-  }), [w, R] = i.useState({}), D = i.useMemo(() => {
+  }), [w, R] = i.useState({}), Z = i.useMemo(() => {
     let e = I.map(e => {
       var t;
       return null != (t = w[e]) ? t : e
     });
     return (0, a.uniq)(e)
-  }, [I, w]), Z = (0, p.ss)(t), A = (0, p.Gp)(), L = i.useCallback(() => {
+  }, [I, w]), D = (0, p.ss)(t), A = (0, p.Gp)(), L = i.useCallback(() => {
     A && g.jJ.trackExposure({
       guildId: t,
       location: "b2d9de_1"
-    }), A && Z ? (0, d.ZDy)(async () => {
+    }), A && D ? (0, d.ZDy)(async () => {
       let {
         default: e
       } = await n.e("9558").then(n.bind(n, 34460));
@@ -93,13 +93,13 @@ function E(e) {
     }, {
       modalKey: N
     }) : S()
-  }, [t, T, S, l, A, Z]), k = b.Lo(D), G = i.useCallback(() => D.forEach(b.GM), [D]), M = (0, x.mY)(), U = (0, o.e7)([m.Z], () => m.Z.getProps().subsection);
+  }, [t, T, S, l, A, D]), k = b.Lo(Z), G = i.useCallback(() => Z.forEach(b.GM), [Z]), M = (0, x.mY)(), U = (0, o.e7)([m.Z], () => m.Z.getProps().subsection);
   return i.useEffect(() => (U === v.KsC.ROLE_SUBSCRIPTION_TIER_TEMPLATE && L(), () => {
     (0, d.Mr3)(N)
   }), [U, L]), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: O.groupListings,
-      children: [D.map(e => (0, r.jsx)(j.Z, {
+      children: [Z.map(e => (0, r.jsx)(j.Z, {
         guildId: t,
         initialEditStateId: e,
         allSubscriptionListings: E,

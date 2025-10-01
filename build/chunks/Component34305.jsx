@@ -112,13 +112,12 @@ class E extends Chunk647438.PureComponent {
               disabled: true,
               value: module
             })
-          }), (0, Chunk951288.jsx)(Chunk755721.$q, {
-            type: Chunk755721.M0.INVERTED,
-            value: null != Chunk647438 ? Chunk647438 : this.props.isDefault,
+          }), (0, Chunk951288.jsx)(Chunk755721.VL, {
+            checked: null != Chunk647438 ? Chunk647438 : this.props.isDefault,
             disabled: this.props.isDefault,
             className: Chunk167103.defaultLocationCheckbox,
             onChange: this.handleToggleDefault,
-            children: Chunk388032.intl.string(Chunk388032.t.Z2MWuL)
+            label: Chunk388032.intl.string(Chunk388032.t.Z2MWuL)
           }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
             className: Chunk167103.separator
           }), (0, Chunk951288.jsxs)(Chunk600164.Z, {

@@ -123,15 +123,15 @@ function Z(e) {
           }
       }
     }, [l.account, l.subscriber_count, l.type]),
-    q = (0, d.e7)([j.Z], () => null != l.role_id ? j.Z.getRole(n.id, l.role_id) : true),
+    K = (0, d.e7)([j.Z], () => null != l.role_id ? j.Z.getRole(n.id, l.role_id) : true),
     {
-      roleLink: K,
+      roleLink: q,
       syncDescriptionText: V
     } = r.useMemo(() => {
       let e;
-      e = null != q ? (0, i.jsx)(p.eee, {
+      e = null != K ? (0, i.jsx)(p.eee, {
         onClick: U,
-        children: q.name
+        children: K.name
       }) : w.intl.string(w.t.PoWNfX);
       let t = b.Z.get(l.type);
       return {
@@ -143,7 +143,7 @@ function Z(e) {
           datetime: s()(l.synced_at).calendar()
         })
       }
-    }, [q, U, l.revoked, l.synced_at, l.type, l.user]),
+    }, [K, U, l.revoked, l.synced_at, l.type, l.user]),
     J = (0, d.e7)([j.Z], () => j.Z.getSortedRoles(n.id)),
     Y = r.useMemo(() => {
       let e = f.ZP.getGuildEmoji(n.id),
@@ -269,7 +269,7 @@ function Z(e) {
       labelText: z,
       subscribersText: F,
       descriptionText: V,
-      roleLink: K,
+      roleLink: q,
       onSync: B
     }), (0, i.jsx)(p.izJ, {
       className: S.midDivider
@@ -340,20 +340,12 @@ function Z(e) {
       } = e;
       return (0, i.jsxs)(g.Z, {
         direction: g.Z.Direction.VERTICAL,
-        children: [(0, i.jsx)(u.$q, {
-          type: u.M0.INVERTED,
+        children: [(0, i.jsx)(u.VL, {
           className: a()(P.marginTop20, P.marginBottom8),
-          value: t.enable_emoticons,
+          checked: t.enable_emoticons,
           disabled: t.syncing,
-          onChange: e => {
-            let {
-              currentTarget: t
-            } = e;
-            return r(t.checked)
-          },
-          children: (0, i.jsx)(p.R94, {
-            children: w.intl.string(w.t["7r4OKi"])
-          })
+          onChange: e => r(e),
+          label: w.intl.string(w.t["7r4OKi"])
         }), (0, i.jsx)(g.Z, {
           wrap: g.Z.Wrap.WRAP,
           className: S.__invalid_twitchEmojis,

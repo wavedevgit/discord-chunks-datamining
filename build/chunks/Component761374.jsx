@@ -78,10 +78,10 @@ function I(e) {
   }(z, (0, l.e7)([h.default], () => h.default.getId()), V, A && M || R && P, !A && M || !R && P), F = W.length, Y = (0, l.e7)([d.Z], () => d.Z.getWindowState(S.$J), []), {
     tileWidth: B,
     tileHeight: Q,
-    widgetWidth: K,
-    widgetHeight: X,
-    containerRef: q,
-    containerMinMaxSizes: J
+    widgetWidth: X,
+    widgetHeight: K,
+    containerRef: J,
+    containerMinMaxSizes: q
   } = (0, v.Bz)({
     tileCount: F,
     padding: N,
@@ -95,16 +95,16 @@ function I(e) {
     participants: W.length,
     padding: N,
     borderWidth: T,
-    widgetMinMaxSizes: J,
+    widgetMinMaxSizes: q,
     containerSize: {
-      width: K,
-      height: X
+      width: X,
+      height: K
     },
     orientedPosition: {
       top: 0,
       left: 0,
-      bottom: null != (t = null == Y ? true : Y.height) ? t : X,
-      right: null != (n = null == Y ? true : Y.width) ? n : K
+      bottom: null != (t = null == Y ? true : Y.height) ? t : K,
+      right: null != (n = null == Y ? true : Y.width) ? n : X
     },
     locked: w
   };
@@ -128,7 +128,7 @@ function I(e) {
     style: {
       opacity: _
     },
-    ref: q,
+    ref: J,
     children: (0, i.jsx)(E.Z, {
       widgetId: I,
       tileWidth: B,

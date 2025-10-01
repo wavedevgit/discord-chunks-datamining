@@ -48,7 +48,7 @@ function h(e) {
     } = (0, l.eC)(null == e ? true : e.id),
     w = O || (null == E ? true : E.isApplicationPending) === true,
     R = (null == E ? true : E.canApply) === true,
-    D = f.intl.format(f.t.aJUdOj, {
+    Z = f.intl.format(f.t.aJUdOj, {
       faqUrl: o.Z.getArticleURL(p.BhN.CREATOR_FAQ)
     });
   I && P ? t = true === h ? f.intl.format(f.t["0o1Q+v"], {
@@ -59,13 +59,13 @@ function h(e) {
     requestCooldownDuration: S,
     creatorRevenuePolicyUrl: o.Z.getArticleURL(p.BhN.CREATOR_POLICY)
   }));
-  let Z = n && b && false === x,
+  let D = n && b && false === x,
     A = n && false === h,
     L = (0, g.f)(),
     k = I && R && b ? f.intl.format(f.t.wbVIUF, {}) : true;
   return r.useEffect(() => {
-    Z && N()
-  }, [N, Z]), {
+    D && N()
+  }, [N, D]), {
     resubmittingEnableRequest: v,
     resubmissionError: j,
     isGuildOwner: b,
@@ -82,7 +82,7 @@ function h(e) {
     reapplyNoticeText: k,
     showAcceptTermsFlow: A,
     wasRejectedInV1: A && (T || I),
-    requirementsFinePrintText: D,
+    requirementsFinePrintText: Z,
     acceptTermsCheckboxText: L
   }
 }

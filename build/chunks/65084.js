@@ -7,7 +7,6 @@ module.exports = {
   formActions: "formActions_f0c2ea",
   addressSection: "addressSection_f0c2ea",
   defaultSection: "defaultSection_f0c2ea",
-  defaultCheckboxLabel: "defaultCheckboxLabel_f0c2ea",
   sectionHeader: "sectionHeader_f0c2ea",
   subText: "subText_f0c2ea",
   errorSubText: "errorSubText_f0c2ea subText_f0c2ea",

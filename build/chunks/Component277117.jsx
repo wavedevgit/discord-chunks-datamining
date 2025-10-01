@@ -66,7 +66,7 @@ function w(e) {
       onOpenProfile: L,
       tags: (0, r.jsx)(m.Z, {
         displayProfile: w,
-        themeType: P.l.SIDEBAR
+        themeType: T.l.SIDEBAR
       }),
       nicknameIcons: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(_.Z, {
@@ -77,7 +77,7 @@ function w(e) {
           onOpenProfile: L
         })]
       })
-    }), M === T.OGo.PENDING_INCOMING && (0, r.jsx)(E.Z.Overlay, {
+    }), M === P.OGo.PENDING_INCOMING && (0, r.jsx)(E.Z.Overlay, {
       children: (0, r.jsx)(j.Z, {
         user: t,
         channelId: A.id,

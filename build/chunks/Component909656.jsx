@@ -53,7 +53,7 @@ function R(e) {
   return e
 }
 
-function D(e, t) {
+function Z(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -65,7 +65,7 @@ function D(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let Z = (0, Chunk624138.Mg)(Chunk477690.Z.GUILD_SETTINGS_ROLE_SUBSCRIPTIONS_OVERVIEW_SETTINGS_MAX_WIDTH);
+let D = (0, Chunk624138.Mg)(Chunk477690.Z.GUILD_SETTINGS_ROLE_SUBSCRIPTIONS_OVERVIEW_SETTINGS_MAX_WIDTH);
 
 function A() {
   return [{
@@ -90,7 +90,7 @@ function L(e) {
   } = e, {
     ref: o,
     width: c
-  } = (0, h.ZP)(), d = (0, x.Z)(A), u = i.useMemo(() => d.map(e => D(R({}, e), {
+  } = (0, h.ZP)(), d = (0, x.Z)(A), u = i.useMemo(() => d.map(e => Z(R({}, e), {
     icon: function() {
       let {
         icon: t
@@ -137,7 +137,7 @@ function k(e) {
     format: s
   } = (0, E.Z)(n.id), a = (0, y.YB)(n.id), c = i.useCallback(() => {
     var e;
-    return (null == a || null == (e = a.cover_image_asset) ? true : e.application_id) == null ? null : (0, _._W)(a.cover_image_asset.application_id, a.cover_image_asset, Z)
+    return (null == a || null == (e = a.cover_image_asset) ? true : e.application_id) == null ? null : (0, _._W)(a.cover_image_asset.application_id, a.cover_image_asset, D)
   }, [a]), [m, h] = i.useState(s), [x, O] = i.useState(null != (t = null == a ? true : a.description) ? t : ""), [A, k] = i.useState(c), [G, M] = i.useState(null == a ? true : a.store_page_guild_products_default_sort), [U, B] = i.useState(null == a ? true : a.server_shop_tab_order), {
     loading: F,
     error: H,
@@ -158,7 +158,7 @@ function k(e) {
     $ = null != x && "" !== x && null != A;
   i.useEffect(() => {
     var e;
-    (null == a || null == (e = a.cover_image_asset) ? true : e.application_id) != null && k((0, _._W)(a.cover_image_asset.application_id, a.cover_image_asset, Z))
+    (null == a || null == (e = a.cover_image_asset) ? true : e.application_id) != null && k((0, _._W)(a.cover_image_asset.application_id, a.cover_image_asset, D))
   }, [null == a ? true : a.cover_image_asset]);
   let ee = (0, C.mY)(),
     et = i.useMemo(() => T.kL.map(e => ({
@@ -193,7 +193,7 @@ function k(e) {
         }), (0, r.jsx)(L, {
           value: m,
           onChange: e => {
-            s !== e && e === S.e3.ALL_CHANNELS && (0, p.h7j)(e => (0, r.jsx)(p.ConfirmModal, D(R({}, e), {
+            s !== e && e === S.e3.ALL_CHANNELS && (0, p.h7j)(e => (0, r.jsx)(p.ConfirmModal, Z(R({}, e), {
               header: P.intl.string(P.t.dmVoOz),
               confirmText: P.intl.string(P.t["NX+WJC"]),
               confirmButtonColor: g.zx.Colors.BRAND,

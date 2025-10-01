@@ -61,9 +61,9 @@ function b(e, t, n, b) {
     A = h.filter(e => (0, u.cS)(e)),
     I = h.filter(e => (0, u.uY)(e)),
     N = P.length > 0 && A.length >= d.gY && 0 === I.length,
-    [T, {
+    [L, {
       error: U,
-      loading: L
+      loading: T
     }] = (0, a.Z)(s.Z.createPoll),
     Z = h.length < d.fw,
     B = h.length > d.gY,
@@ -153,7 +153,7 @@ function b(e, t, n, b) {
       }), _(t), D(!e), e
     }, [h, P]),
     J = r.useCallback(async () => {
-      await T({
+      await L({
         channel: e,
         question: P,
         answers: A,
@@ -162,10 +162,10 @@ function b(e, t, n, b) {
         layout: l.C.DEFAULT,
         onClose: t
       })
-    }, [P, A, x, C, T, e, t]),
+    }, [P, A, x, C, L, e, t]),
     Q = r.useCallback(() => {
-      !L && X() && J()
-    }, [J, L, X]);
+      !T && X() && J()
+    }, [J, T, X]);
   return {
     answers: h,
     question: P,
@@ -188,7 +188,7 @@ function b(e, t, n, b) {
     fieldErrors: E,
     createPoll: J,
     handleSubmitPoll: Q,
-    submitting: L,
+    submitting: T,
     createPollError: U,
     shouldFocusOnInvalidField: S,
     setShouldFocusOnInvalidField: D

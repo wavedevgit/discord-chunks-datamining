@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk70722 = require("./70722.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk178167 = require("./178167.js");
-let y = [Chunk70722.kr.OTHER];
+let v = [Chunk70722.kr.OTHER];
 
 function j(e) {
   let {
@@ -133,7 +133,7 @@ function j(e) {
   if (C) {
     let e = {
         value: _.tX.CONNECTION,
-        label: O.intl.string(v.default.FVhMw8),
+        label: O.intl.string(y.default.FVhMw8),
         problemsHeader: O.intl.string(O.t["6Y1t5O"]),
         problemOptions: (0, a.Z1)(),
         freeformConfig: {
@@ -143,7 +143,7 @@ function j(e) {
       },
       n = {
         value: _.tX.AUDIO,
-        label: O.intl.string(v.default.PL2l6O),
+        label: O.intl.string(y.default.PL2l6O),
         problemsHeader: O.intl.string(O.t["6Y1t5O"]),
         problemOptions: (0, a.w9)({
           isMobile: false
@@ -155,7 +155,7 @@ function j(e) {
       },
       l = {
         value: _.tX.VIDEO,
-        label: O.intl.string(v.default["0WFzPj"]),
+        label: O.intl.string(y.default["0WFzPj"]),
         problemsHeader: O.intl.string(O.t["6Y1t5O"]),
         problemOptions: (0, a.NX)(),
         freeformConfig: {
@@ -165,7 +165,7 @@ function j(e) {
       },
       i = {
         value: _.tX.PEOPLE,
-        label: O.intl.string(v.default.Moa3W1),
+        label: O.intl.string(y.default.Moa3W1),
         problemsHeader: O.intl.string(O.t["6Y1t5O"]),
         problemOptions: (0, a.hP)(),
         freeformConfig: {
@@ -175,7 +175,7 @@ function j(e) {
       },
       o = {
         value: t ? _.tX.STREAMING : _.tX.STREAM_WATCHING,
-        label: O.intl.string(t ? v.default["0ZBLiY"] : v.default.TVTIT0),
+        label: O.intl.string(t ? y.default["0ZBLiY"] : y.default.TVTIT0),
         problemsHeader: O.intl.string(O.t["6Y1t5O"]),
         problemOptions: (0, a.Ez)({
           isStreamer: t
@@ -191,7 +191,7 @@ function j(e) {
       ratingHeader: P,
       ratingEmojiKind: k,
       ratingBody: t ? R : T,
-      categoriesHeader: O.intl.string(v.default["tq859/"]),
+      categoriesHeader: O.intl.string(y.default["tq859/"]),
       optionsTree: [e, n, l, o, i],
       impression: L,
       transitionState: E
@@ -208,7 +208,7 @@ function j(e) {
       isStreamer: t,
       isEndStream: true
     }),
-    freeformNeededProblems: y,
+    freeformNeededProblems: v,
     onSubmit: w,
     onClose: x,
     transitionState: E,

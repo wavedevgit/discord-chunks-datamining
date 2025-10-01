@@ -2,12 +2,11 @@
 /** chunk id: 271267, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Q: () => p,
-  Z: () => b
+  Q: () => g,
+  Z: () => x
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk957011 = require("./957011.js"),
   Chunk587431 = require("./587431.jsx"),
@@ -16,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk370191 = require("./370191.js"),
   Chunk270395 = require("./270395.js");
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,32 +33,32 @@ function g(e) {
   }
   return e
 }
-let p = "role_subscriptions_eligibility_modal";
+let g = "role_subscriptions_eligibility_modal";
 
-function f(e) {
+function p(e) {
   let {
     guild: t,
     eligibility: i,
-    eligibilityLoading: l,
+    eligibilityLoading: s,
     eligibilityError: a,
     refreshEligibility: o
   } = e;
-  return (0, r.jsx)(s.zxk, {
+  return (0, r.jsx)(l.zxk, {
     variant: "expressive",
     onClick: function() {
-      (0, s.ZDy)(async () => {
+      (0, l.ZDy)(async () => {
         let {
           default: e
         } = await n.e("21863").then(n.bind(n, 466501));
         return n => {
-          var s, c;
-          return (0, r.jsx)(e, (s = g({}, n), c = c = {
+          var l, c;
+          return (0, r.jsx)(e, (l = m({}, n), c = c = {
             eligibility: i,
-            eligibilityLoading: l,
+            eligibilityLoading: s,
             eligibilityError: a,
             refreshEligibility: o,
             guildId: t.id
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(s, Object.getOwnPropertyDescriptors(c)) : (function(e, t) {
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(c)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
               var r = Object.getOwnPropertySymbols(e);
@@ -67,61 +66,55 @@ function f(e) {
             }
             return n
           })(Object(c)).forEach(function(e) {
-            Object.defineProperty(s, e, Object.getOwnPropertyDescriptor(c, e))
-          }), s))
+            Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(c, e))
+          }), l))
         }
       }, {
-        modalKey: p
+        modalKey: g
       })
     },
     size: "md",
-    text: d.intl.string(d.t.NL5ZNT),
-    icon: s.Mgn
+    text: c.intl.string(c.t.NL5ZNT),
+    icon: l.Mgn
   })
 }
 
-function h(e) {
+function f(e) {
   let {
     guild: t,
     checkboxText: n
   } = e, {
-    canSubmitAcceptance: c,
-    error: u,
-    loading: m,
-    submitAcceptTermsRequest: g
-  } = (0, a.Z)(t.id), [p, f] = i.useState(false);
+    canSubmitAcceptance: o,
+    error: d,
+    loading: u,
+    submitAcceptTermsRequest: m
+  } = (0, s.Z)(t.id), [g, p] = i.useState(false);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(l.$q, {
+    children: [(0, r.jsx)(l.XZJ, {
       onChange: function() {
-        f(e => !e)
+        p(e => !e)
       },
-      size: 20,
-      type: l.M0.INVERTED,
-      value: p,
-      children: (0, r.jsx)(s.Text, {
-        variant: "text-sm/normal",
-        color: "header-secondary",
-        children: n
-      })
-    }), (0, r.jsx)(s.LZC, {
+      checked: g,
+      label: n
+    }), (0, r.jsx)(l.LZC, {
       size: 24
-    }), (0, r.jsx)(s.zxk, {
-      disabled: !p || !c,
-      onClick: g,
-      loading: m,
+    }), (0, r.jsx)(l.zxk, {
+      disabled: !g || !o,
+      onClick: m,
+      loading: u,
       variant: "expressive",
-      text: d.intl.string(d.t.NL5ZNT)
-    }), null != u && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(s.LZC, {
+      text: c.intl.string(c.t.NL5ZNT)
+    }), null != d && (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(l.LZC, {
         size: 24
-      }), (0, r.jsx)(o.Z, {
-        children: u.getAnyErrorMessage()
+      }), (0, r.jsx)(a.Z, {
+        children: d.getAnyErrorMessage()
       })]
     })]
   })
 }
 
-function x(e) {
+function h(e) {
   let {
     guild: t,
     monetizationEligibility: n
@@ -130,14 +123,14 @@ function x(e) {
     eligibilityError: l,
     refreshEligibility: s,
     eligibility: a,
-    eligibleForMonetization: o,
+    eligibleForMonetization: c,
     acceptTermsCheckboxText: d,
     wasRejectedInV1: u
   } = n;
-  return o ? u ? (0, r.jsx)(c.Z, g({}, n)) : (0, r.jsx)(h, {
+  return c ? u ? (0, r.jsx)(o.Z, m({}, n)) : (0, r.jsx)(f, {
     guild: t,
     checkboxText: d
-  }) : (0, r.jsx)(f, {
+  }) : (0, r.jsx)(p, {
     guild: t,
     eligibility: a,
     eligibilityLoading: i,
@@ -146,32 +139,32 @@ function x(e) {
   })
 }
 
-function b(e) {
+function x(e) {
   let {
     guild: t,
     monetizationEligibility: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: u.ctaContainer,
+    className: d.ctaContainer,
     children: [(0, r.jsx)("img", {
-      className: u.heroBanner,
-      src: m,
-      alt: d.intl.string(d.t.Af4klJ)
+      className: d.heroBanner,
+      src: u,
+      alt: c.intl.string(c.t.Af4klJ)
     }), (0, r.jsxs)("div", {
-      className: u.ctaContent,
-      children: [(0, r.jsx)(s.X6q, {
+      className: d.ctaContent,
+      children: [(0, r.jsx)(l.X6q, {
         variant: "heading-xl/semibold",
         color: "header-primary",
-        children: d.intl.string(d.t.PqYfh4)
-      }), (0, r.jsx)(s.LZC, {
+        children: c.intl.string(c.t.PqYfh4)
+      }), (0, r.jsx)(l.LZC, {
         size: 12
-      }), (0, r.jsx)(s.Text, {
+      }), (0, r.jsx)(l.Text, {
         variant: "text-md/normal",
         color: "header-secondary",
-        children: d.intl.string(d.t["41wkMT"])
-      }), (0, r.jsx)(s.LZC, {
+        children: c.intl.string(c.t["41wkMT"])
+      }), (0, r.jsx)(l.LZC, {
         size: 24
-      }), (0, r.jsx)(x, {
+      }), (0, r.jsx)(h, {
         guild: t,
         monetizationEligibility: n
       })]

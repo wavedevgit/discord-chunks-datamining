@@ -2,7 +2,7 @@
 /** chunk id: 965288, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => N,
-  y: () => P
+  y: () => T
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -88,7 +88,7 @@ let Z = Chunk647438.memo(function(e) {
       }) : null]
     })
   }),
-  T = Chunk647438.memo(function(e) {
+  P = Chunk647438.memo(function(e) {
     var t;
     let {
       participant: n,
@@ -128,7 +128,7 @@ let Z = Chunk647438.memo(function(e) {
       })]
     })
   }),
-  P = () => (0, Chunk951288.jsx)("div", {
+  T = () => (0, Chunk951288.jsx)("div", {
     className: Chunk28594.tileBaseContainer
   }),
   N = Chunk647438.memo(function(e) {
@@ -140,7 +140,7 @@ let Z = Chunk647438.memo(function(e) {
       blocked: u
     } = t, v = l.getGuildId(), x = O.default.getId(), {
       newestAnalyticsLocation: Z
-    } = (0, g.ZP)(f.Z.AUDIENCE_TILE), P = (0, y.bp)(), N = (0, d.e7)([j.ZP], () => {
+    } = (0, g.ZP)(f.Z.AUDIENCE_TILE), T = (0, y.bp)(), N = (0, d.e7)([j.ZP], () => {
       var e;
       return null != v && (null == (e = j.ZP.getMember(v, s.id)) ? true : e.premiumSince) != null
     }, [v, s.id]), R = i.useRef(null);
@@ -171,9 +171,9 @@ let Z = Chunk647438.memo(function(e) {
           })
         }))
       }, {
-        context: P
+        context: T
       })
-    }, [s, x, P, v, l, Z]);
+    }, [s, x, T, v, l, Z]);
     return (0, r.jsx)(_.Z, {
       targetElementRef: R,
       user: s,
@@ -188,7 +188,7 @@ let Z = Chunk647438.memo(function(e) {
         }),
         onContextMenu: w
       }, e), {
-        children: (0, r.jsx)(T, {
+        children: (0, r.jsx)(P, {
           participant: t,
           guildId: v,
           channel: l,

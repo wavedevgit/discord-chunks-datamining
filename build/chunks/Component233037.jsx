@@ -1,7 +1,7 @@
 /** Chunk was on 46746 **/
 /** chunk id: 233037, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -18,12 +18,12 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk520258 = require("./520258.js");
 
-function x(e) {
+function g(e) {
   let {
     selectedChannelId: t,
     guildId: n,
-    onChangeSelectedChannelId: x
-  } = e, g = (0, i.e7)([c.default], () => c.default.getCurrentUser()), _ = (0, i.e7)([o.Z, s.ZP, a.Z], () => (0, u.h_)(s.ZP.getChannels(n), o.Z, a.Z)), v = (0, i.e7)([d.ZP], () => d.ZP.getVoiceStates(n)), j = _.map(e => {
+    onChangeSelectedChannelId: g
+  } = e, x = (0, i.e7)([c.default], () => c.default.getCurrentUser()), _ = (0, i.e7)([o.Z, s.ZP, a.Z], () => (0, u.h_)(s.ZP.getChannels(n), o.Z, a.Z)), v = (0, i.e7)([d.ZP], () => d.ZP.getVoiceStates(n)), j = _.map(e => {
     var n;
     return {
       name: (0, r.jsx)(f.Z, {
@@ -32,7 +32,7 @@ function x(e) {
           let {
             user: t
           } = e;
-          return t.id !== (null == g ? true : g.id)
+          return t.id !== (null == x ? true : x.id)
         }).map(e => {
           let {
             user: t
@@ -56,7 +56,7 @@ function x(e) {
         let {
           value: t
         } = e;
-        return x(t)
+        return g(t)
       }
     })
   })

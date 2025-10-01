@@ -29,9 +29,9 @@ let h = e => {
   } = e, j = (0, s.ZP)(), {
     maxAgeOptions: N,
     maxAge: _,
-    maxUses: E,
-    temporary: S,
-    flags: b
+    maxUses: S,
+    temporary: b,
+    flags: E
   } = i;
   return (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsxs)(a.xBx, {
@@ -53,15 +53,15 @@ let h = e => {
       shouldHideTemporaryInviteToggle: h,
       maxAgeOptions: N,
       maxAge: _,
-      maxUses: E,
-      temporary: S,
+      maxUses: S,
+      temporary: b,
       onToggleTemporary: p,
       onSelectMaxAge: v,
       onSelectMaxUses: x,
       onGenerateNewLink: m,
       isGuestInviteCreationToggleEnabled: I,
       onSetInviteFlags: f,
-      inviteFlags: b
+      inviteFlags: E
     }), (0, l.jsx)(a.mzw, {
       className: c.settingsFooter,
       children: (0, l.jsx)(u.Z, {

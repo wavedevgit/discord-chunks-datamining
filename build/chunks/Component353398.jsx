@@ -98,7 +98,7 @@ function w() {
         className: Chunk10198.marginBottom20,
         type: Chunk481060.geA.DESCRIPTION,
         children: Chunk388032.intl.format(Chunk388032.t.c0m8bG, {})
-      }), (0, Chunk951288.jsx)(D, {}), (0, Chunk951288.jsx)(Chunk481060.izJ, {
+      }), (0, Chunk951288.jsx)(Z, {}), (0, Chunk951288.jsx)(Chunk481060.izJ, {
         className: Chunk232386.divider
       }), (0, Chunk951288.jsx)(R, {})]
     })
@@ -163,7 +163,7 @@ function R() {
   })
 }
 
-function D() {
+function Z() {
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk232386.descriptionBox,
     children: [(0, Chunk951288.jsxs)("div", {
@@ -230,7 +230,7 @@ function D() {
   })
 }
 
-function Z(e) {
+function D(e) {
   let {
     cancel: t,
     confirm: n
@@ -398,7 +398,7 @@ function M(e) {
         text: y.intl.string(y.t["cN/RFB"]),
         onClick: () => s(true)
       })
-    }), r ? (0, i.jsx)(Z, {
+    }), r ? (0, i.jsx)(D, {
       confirm: a,
       cancel: () => s(false)
     }) : null]

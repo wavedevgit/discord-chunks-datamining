@@ -48,13 +48,13 @@ let I = function() {
   Chunk647438.useEffect(() => {
     null != require && I()
   }, [require, I]);
-  let D = Chunk647438.useCallback(() => {
+  let Z = Chunk647438.useCallback(() => {
     I(true)
   }, [I]);
   return (Chunk647438.useEffect(() => {
     Chunk224706.Z.getDetectableGames()
   }, []), S === Chunk314852.a.FETCHED && null == T) ? (0, Chunk951288.jsx)(Chunk509798.g, {
-    forceFetchGuildProfile: D
+    forceFetchGuildProfile: Z
   }) : S === Chunk314852.a.NOT_FETCHED || S === Chunk314852.a.FETCHING ? (0, Chunk951288.jsx)("main", {
     className: Chunk310538.spinner,
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {})

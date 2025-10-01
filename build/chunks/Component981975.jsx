@@ -94,8 +94,8 @@ function P(e) {
     headerRef: w
   } = (0, b.Z)(0), {
     scrolledToTop: R,
-    handleScroll: D
-  } = (0, v.V)(), Z = (0, c.e7)([f.Z], () => {
+    handleScroll: Z
+  } = (0, v.V)(), D = (0, c.e7)([f.Z], () => {
     var e;
     return null == (e = f.Z.getRoleMemberCount(t.id)) ? true : e[n.id]
   }, [n.id, t.id]), A = (0, c.Wu)([x.Z], () => {
@@ -246,7 +246,7 @@ function P(e) {
     style: {
       scrollPaddingTop: P
     },
-    onScroll: D,
+    onScroll: Z,
     children: (0, r.jsxs)("div", {
       className: E.contentWidth,
       children: [(0, r.jsx)("div", {
@@ -260,7 +260,7 @@ function P(e) {
           selectedSection: _.ZI.VERIFICATIONS,
           setSelectedSection: a
         })
-      }), (null != Z ? Z : 0) > 0 ? (0, r.jsxs)("div", {
+      }), (null != D ? D : 0) > 0 ? (0, r.jsxs)("div", {
         className: N.warningContainer,
         children: [(0, r.jsx)(u.Mgn, {
           size: "custom",

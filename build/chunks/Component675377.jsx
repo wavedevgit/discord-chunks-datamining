@@ -124,8 +124,8 @@ function H(e) {
           (0, x.f)({
             guildId: i,
             location: {
-              section: Z.jXE.GUILD_SETTINGS_SOUNDBOARD,
-              object: Z.qAy.BOOST_GEM_ICON
+              section: D.jXE.GUILD_SETTINGS_SOUNDBOARD,
+              object: D.qAy.BOOST_GEM_ICON
             }
           })
         },
@@ -277,7 +277,7 @@ function W(e) {
           currentTier: m,
           availableSounds: g
         })
-      }), (0, r.jsx)(D.Z, {
+      }), (0, r.jsx)(Z.Z, {
         guild: t,
         numSounds: l.length,
         isOutOfSlots: 0 === g
@@ -320,14 +320,14 @@ function K(e) {
     analyticsLocations: O
   } = (0, h.ZP)(), N = (0, c.e7)([E.default], () => null != f ? f : E.default.getUser(x), [x, f]), {
     canManageGuildExpression: I
-  } = (0, b.XJ)(o), T = i.useMemo(() => I(t), [t, I]), P = null != v || null != _, [R, D] = i.useState(false), Z = (0, y.z)(t, o.id);
+  } = (0, b.XJ)(o), T = i.useMemo(() => I(t), [t, I]), P = null != v || null != _, [R, Z] = i.useState(false), D = (0, y.z)(t, o.id);
   async function A() {
     if (!R) {
-      D(true);
+      Z(true);
       try {
         await (0, j.AA)(o.id, d)
       } catch (e) {
-        D(false)
+        Z(false)
       }
     }
   }
@@ -361,7 +361,7 @@ function K(e) {
       onClick: () => {
         R || a(t)
       },
-      onContextMenu: Z,
+      onContextMenu: D,
       className: k.soundName,
       children: (0, r.jsxs)(u.Text, {
         variant: "text-sm/normal",

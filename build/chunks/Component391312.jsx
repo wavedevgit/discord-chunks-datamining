@@ -1,7 +1,7 @@
 /** Chunk was on 82560 **/
 /** chunk id: 391312, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  default: () => u
+  default: () => b
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -12,9 +12,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk351432 = require("./351432.js");
 
-function u(e) {
+function b(e) {
   var t, r;
-  let [u, b] = o.useState(false);
+  let [b, u] = o.useState(false);
   return (0, n.jsxs)(i.ConfirmModal, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
@@ -43,17 +43,13 @@ function u(e) {
     children: [(0, n.jsx)(i.Text, {
       variant: "text-md/normal",
       children: l.intl.format(l.t["0eydys"], {})
-    }), (0, n.jsx)(c.$q, {
+    }), (0, n.jsx)(c.VL, {
       className: p.checkboxMargin,
-      type: c.M0.INVERTED,
-      value: u,
+      checked: b,
       onChange: () => {
-        (0, s.E)(), b(true)
+        (0, s.E)(), u(true)
       },
-      children: (0, n.jsx)(i.Text, {
-        variant: "text-md/normal",
-        children: l.intl.string(l.t["50TyjY"])
-      })
+      label: l.intl.string(l.t["50TyjY"])
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
     var r = Object.keys(e);

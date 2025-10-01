@@ -1,7 +1,7 @@
 /** Chunk was on 27157 **/
 /** chunk id: 736454, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  default: () => u
+  default: () => b
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -11,10 +11,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk826967 = require("./826967.js");
 
-function u(e) {
+function b(e) {
   var t, r, {
-      onSubmit: u,
-      onClose: b
+      onSubmit: b,
+      onClose: u
     } = e,
     p = function(e, t) {
       if (null == e) return {};
@@ -54,23 +54,20 @@ function u(e) {
     confirmButtonColor: c.zx.Colors.GREEN,
     confirmText: s.intl.string(s.t.rimG2d),
     cancelText: s.intl.string(s.t["ETE/oK"]),
-    onConfirm: u,
+    onConfirm: b,
     onClose: () => (f && l.ZP.updatedUnsyncedSettings({
       disableCallUserConfirmationPrompt: true
-    }), b())
+    }), u())
   }, p), r = r = {
     children: [(0, n.jsx)(i.Text, {
       variant: "text-md/normal",
       children: s.intl.string(s.t.Jz3oqK)
-    }), (0, n.jsx)(c.$q, {
-      type: c.M0.INVERTED,
-      value: f,
-      onChange: (e, t) => O(t),
+    }), (0, n.jsx)(c.VL, {
+      checked: f,
+      onChange: e => O(e),
       className: a.checkbox,
-      children: (0, n.jsx)(i.Text, {
-        variant: "text-md/normal",
-        children: s.intl.string(s.t["JdIQ/f"])
-      })
+      label: s.intl.string(s.t["JdIQ/f"]),
+      labelType: "secondary"
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
     var r = Object.keys(e);

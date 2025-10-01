@@ -44,19 +44,19 @@ function D(t) {
     onClose: p,
     modReportId: U
   } = t, {
-    analyticsLocations: v
-  } = (0, _.ZP)(), x = null != (n = null != (e = null == N ? true : N[0]) ? e : null == v ? true : v[0]) ? n : null, b = (0, i.e7)([O.default], () => O.default.getUser(D), [D]), [y, j] = r.useState(M.UK.DURATION_60_SEC), [k, P] = r.useState(""), [B, K] = r.useState(false), [L, Z] = r.useState(false), w = (0, i.e7)([T.Z], () => {
+    analyticsLocations: b
+  } = (0, _.ZP)(), v = null != (n = null != (e = null == N ? true : N[0]) ? e : null == b ? true : b[0]) ? n : null, x = (0, i.e7)([O.default], () => O.default.getUser(D), [D]), [y, k] = r.useState(M.UK.DURATION_60_SEC), [j, P] = r.useState(""), [B, K] = r.useState(false), [L, Z] = r.useState(false), w = (0, i.e7)([T.Z], () => {
     var t;
     return null == (t = T.Z.getChannel(U)) ? true : t.isArchivedThread()
   }), F = (0, d.sE)(m, {
-    location: x,
+    location: v,
     targetUserId: D
   }), H = r.useCallback(async () => {
-    if (null != b) {
+    if (null != x) {
       K(true);
       try {
-        await s.Z.setCommunicationDisabledDuration(m, D, y, k, x, U), L && null != U && E.Z.resolveFlag(U), F(d.jQ.TIMEOUT), (0, u.showToast)((0, u.createToast)(f.intl.formatToPlainString(f.t.O9C3Nj, {
-          user: A.ZP.getName(m, null, b)
+        await c.Z.setCommunicationDisabledDuration(m, D, y, j, v, U), L && null != U && E.Z.resolveFlag(U), F(d.jQ.TIMEOUT), (0, u.showToast)((0, u.createToast)(f.intl.formatToPlainString(f.t.O9C3Nj, {
+          user: A.ZP.getName(m, null, x)
         }), u.ToastType.SUCCESS)), p()
       } catch (t) {
         (0, u.showToast)((0, u.createToast)(f.intl.string(f.t.epyCur), u.ToastType.FAILURE))
@@ -64,19 +64,19 @@ function D(t) {
         K(false)
       }
     }
-  }, [m, b, D, p, y, k, x, F, U, L]);
-  return ((0, c.ZP)(() => {
-    null != b && g.default.track(S.rMx.OPEN_MODAL, {
+  }, [m, x, D, p, y, j, v, F, U, L]);
+  return ((0, s.ZP)(() => {
+    null != x && g.default.track(S.rMx.OPEN_MODAL, {
       type: M.Cl,
       guild_id: m,
-      other_user_id: b.id
+      other_user_id: x.id
     })
   }), r.useEffect(() => {
-    (null == b || null == m) && p()
-  }, [m, b, p]), null == b || null == m) ? null : (0, l.jsx)(a.Modal, {
+    (null == x || null == m) && p()
+  }, [m, x, p]), null == x || null == m) ? null : (0, l.jsx)(a.Modal, {
     transitionState: R,
     title: f.intl.formatToPlainString(f.t.OhsOy8, {
-      user: A.ZP.getName(m, null, b)
+      user: A.ZP.getName(m, null, x)
     }),
     subtitle: f.intl.format(f.t.Ns83GR, {
       helpdeskArticle: M.cu
@@ -90,12 +90,10 @@ function D(t) {
       onClick: H,
       loading: B
     }],
-    actionBarInput: null == U || w ? true : (0, l.jsx)(o.$q, {
-      value: L,
-      onChange: (t, e) => {
-        Z(e)
-      },
-      children: f.intl.string(C.default["8yIKen"])
+    actionBarInput: null == U || w ? true : (0, l.jsx)(u.XZJ, {
+      checked: L,
+      onChange: t => Z(t),
+      label: f.intl.string(C.default["8yIKen"])
     }),
     onClose: p,
     children: (0, l.jsxs)(u.Kqy, {
@@ -120,7 +118,7 @@ function D(t) {
               className: e ? h.selectorButtonSelected : h.selectorButton,
               onClick: () => n(r)
             }
-          })(t, t.value === y, j))
+          })(t, t.value === y, k))
         })]
       }), (0, l.jsxs)(u.Kqy, {
         gap: 8,
@@ -128,7 +126,7 @@ function D(t) {
           variant: "heading-sm/semibold",
           children: f.intl.string(f.t.ewHW19)
         }), (0, l.jsx)(u.Kx8, {
-          value: k,
+          value: j,
           onChange: t => P(t),
           placeholder: f.intl.string(f.t.GakiHx),
           rows: 4,

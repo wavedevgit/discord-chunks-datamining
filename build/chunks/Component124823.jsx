@@ -89,7 +89,7 @@ function w(e) {
               user: n
             })
           }), (0, r.jsxs)("div", {
-            className: P.header,
+            className: T.header,
             children: [(0, r.jsx)(O.Z, {
               user: n,
               displayProfile: D,
@@ -116,7 +116,7 @@ function w(e) {
             }), (0, r.jsxs)(C.Z.Overlay, {
               className: N.overlay,
               children: [(0, r.jsx)(x.Z, {
-                heading: T.intl.string(T.t["61W33d"]),
+                heading: P.intl.string(P.t["61W33d"]),
                 headingColor: "header-primary",
                 children: (0, r.jsx)(j.Z, {
                   userBio: null == D ? true : D.bio,
@@ -125,7 +125,7 @@ function w(e) {
                   isHovering: H
                 })
               }), (0, r.jsx)(x.Z, {
-                heading: T.intl.string(T.t["A//N4u"]),
+                heading: P.intl.string(P.t["A//N4u"]),
                 headingColor: "header-primary",
                 children: (0, r.jsx)(v.Z, {
                   userId: n.id
@@ -134,7 +134,7 @@ function w(e) {
             })]
           })]
         }), !A && (0, r.jsx)("div", {
-          className: P.footer,
+          className: T.footer,
           children: (0, r.jsx)(a.P3F, {
             onClick: () => {
               F(), (0, g.pQ)(R({
@@ -142,8 +142,8 @@ function w(e) {
                 analyticsLocations: k
               }, U))
             },
-            className: P.footerButton,
-            children: T.intl.string(T.t["+Xp3ho"])
+            className: T.footerButton,
+            children: P.intl.string(P.t["+Xp3ho"])
           })
         }), (null == D ? true : D.profileEffect) != null && (0, r.jsx)(p.Z, {
           profileEffectId: null == D || null == (t = D.profileEffect) ? true : t.id,

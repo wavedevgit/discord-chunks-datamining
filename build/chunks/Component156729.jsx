@@ -212,17 +212,13 @@ class P extends(r = Chunk647438.PureComponent) {
               paypalURL: N
             }) : Chunk388032.intl.string(Chunk388032.t.VXndys)
           })]
-        }), this.renderCardExpirationSection(), this.renderBillingAddressSection(), (0, Chunk951288.jsx)(Chunk755721.$q, {
-          name: R,
-          value: Chunk120356,
-          onChange: (e, t) => this.handleFieldChange(t, R),
-          type: Chunk755721.M0.INVERTED,
+        }), this.renderCardExpirationSection(), this.renderBillingAddressSection(), (0, Chunk951288.jsx)(Chunk755721.VL, {
+          value: R,
+          checked: Chunk120356,
+          onChange: e => this.handleFieldChange(e, R),
           className: Chunk65084.defaultSection,
-          children: (0, Chunk951288.jsx)(Chunk481060.Text, {
-            className: Chunk65084.defaultCheckboxLabel,
-            variant: "text-sm/normal",
-            children: Chunk388032.intl.string(Chunk388032.t.nag9Oj)
-          })
+          label: Chunk388032.intl.string(Chunk388032.t.nag9Oj),
+          labelType: "secondary"
         }), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), this.renderActions()]
       })
     })

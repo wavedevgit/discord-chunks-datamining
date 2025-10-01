@@ -2,7 +2,7 @@
 /** chunk id: 145499, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => Z
+  Z: () => D
 }), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -79,7 +79,7 @@ let w = e => {
       src: require("./872732.js")
     })
   }),
-  D = e => {
+  Z = e => {
     let {
       guild: t
     } = e, {
@@ -114,7 +114,7 @@ let w = e => {
       disabled: !l
     })
   },
-  Z = e => {
+  D = e => {
     let {
       guild: t
     } = e, {
@@ -124,7 +124,7 @@ let w = e => {
       return null != (e = _.Z.getStickersByGuildId(t.id)) ? e : []
     }, [t]), {
       analyticsLocations: j
-    } = (0, m.ZP)(), Z = (0, x.Z)(t.id), A = t.features.has(E.oNc.MORE_STICKERS) ? E.Eu4.TIER_3 : t.premiumTier, L = t.features.has(E.oNc.MORE_STICKERS) ? E.oCV[E.Eu4.TIER_3] : Z, k = (0, b.Z)(t.id);
+    } = (0, m.ZP)(), D = (0, x.Z)(t.id), A = t.features.has(E.oNc.MORE_STICKERS) ? E.Eu4.TIER_3 : t.premiumTier, L = t.features.has(E.oNc.MORE_STICKERS) ? E.oCV[E.Eu4.TIER_3] : D, k = (0, b.Z)(t.id);
     if (i.useEffect(() => {
         window.dispatchEvent(new Event("resize"))
       }, [u]), l) return (0, r.jsx)(c.$jN, {});
@@ -192,12 +192,12 @@ let w = e => {
           J = W ? Math.min(5 - (F.length + 0) % 5, X) : 0,
           Q = [];
         for (let e = 0; e < J; e++) Q.push((0, r.jsx)(R, {}, "placeholder-".concat(e)));
-        let $ = t.premiumTier < b.tier && Z >= E.oCV[b.tier],
+        let $ = t.premiumTier < b.tier && D >= E.oCV[b.tier],
           ee = S.intl.string(S.t.dtFw5e),
           et = () => {
             var e, n;
             let r;
-            return e = Math.max(1, E.oCV[b.tier] - Z), n = b.tier, r = null, void(n === E.Eu4.TIER_1 ? r = E.Qqv.TIER_1 : n === E.Eu4.TIER_2 ? r = E.Qqv.TIER_2 : n === E.Eu4.TIER_3 && (r = E.Qqv.TIER_3), (0, p.Z)({
+            return e = Math.max(1, E.oCV[b.tier] - D), n = b.tier, r = null, void(n === E.Eu4.TIER_1 ? r = E.Qqv.TIER_1 : n === E.Eu4.TIER_2 ? r = E.Qqv.TIER_2 : n === E.Eu4.TIER_3 && (r = E.Qqv.TIER_3), (0, p.Z)({
               analyticsLocations: j,
               analyticsLocation: {
                 page: E.ZY5.GUILD_SETTINGS,
@@ -228,7 +228,7 @@ let w = e => {
             object: E.qAy.BOOST_UPSELL_NEXT_LEVEL_HEADER,
             objectType: (0, v.ge)(b.tier)
           }
-        }) : W && (a = (0, r.jsx)(D, {
+        }) : W && (a = (0, r.jsx)(Z, {
           guild: t
         })), (0, r.jsxs)(N.Z, {
           subscriptionCount: L,

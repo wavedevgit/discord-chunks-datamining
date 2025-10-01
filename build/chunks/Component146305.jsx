@@ -240,12 +240,12 @@ let e_ = {
           section: ef.pNK.COMMUNITY,
           impressionName: t.guild.features.has(ef.oNc.COMMUNITY) ? i.ImpressionNames.GUILD_SETTINGS_COMMUNITY_OVERVIEW : i.ImpressionNames.GUILD_SETTINGS_ENABLE_COMMUNITY,
           label: eE,
-          element: D.Z,
+          element: Z.Z,
           ariaLabel: eE,
           newIndicator: !t.guild.features.has(ef.oNc.COMMUNITY) && null != t.memberCount && t.memberCount >= eh.U3 && O.qc.hasHotspot(O.v6.GUILD_SETTINGS_COMMUNITY_GUILD_UPSELL),
           notice: {
             stores: [T.Z],
-            element: D.X
+            element: Z.X
           }
         };
       case ef.pNK.ONBOARDING:
@@ -283,7 +283,7 @@ let e_ = {
         };
       case ef.pNK.COMMUNITY_WELCOME:
         return {
-          section: ef.pNK.COMMUNITY_WELCOME, impressionName: i.ImpressionNames.GUILD_SETTINGS_COMMUNITY_WELCOME, label: ex.intl.string(ex.t["2rkmDg"]), ariaLabel: ex.intl.string(ex.t["2rkmDg"]), element: Z.Z, notice: {
+          section: ef.pNK.COMMUNITY_WELCOME, impressionName: i.ImpressionNames.GUILD_SETTINGS_COMMUNITY_WELCOME, label: ex.intl.string(ex.t["2rkmDg"]), ariaLabel: ex.intl.string(ex.t["2rkmDg"]), element: D.Z, notice: {
             stores: [y.Z],
             element: C.Z
           }, predicate: () => t.canManageGuild && t.guild.features.has(ef.oNc.COMMUNITY) && !t.welcomeScreenEmpty && !t.guild.features.has(ef.oNc.GUILD_SERVER_GUIDE)

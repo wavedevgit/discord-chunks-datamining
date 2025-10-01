@@ -104,23 +104,23 @@ let I = Chunk647438.memo(function(e) {
     minY: 0,
     maxX: D.width,
     maxY: D.height
-  }), [D]), K = r.useCallback(e => n(j(x({}, e), {
+  }), [D]), X = r.useCallback(e => n(j(x({}, e), {
     widget: t,
     dragging: null != e.dragOperation,
     className: Z
-  })), [t, n, Z]), X = r.useCallback(e => null != l || null != I ? (0, i.jsxs)("div", {
+  })), [t, n, Z]), K = r.useCallback(e => null != l || null != I ? (0, i.jsxs)("div", {
     className: o()(S.extrasContainer, T && S.fullFlex),
     children: [null == l ? true : l(t), null == I ? true : I(t, e)]
-  }) : null, [t, l, T, I]), q = (0, a.e7)([y.ZP], () => y.ZP.hasRenderDebugMode(g.GO.WidgetAreas)), J = r.useMemo(() => {
+  }) : null, [t, l, T, I]), J = (0, a.e7)([y.ZP], () => y.ZP.hasRenderDebugMode(g.GO.WidgetAreas)), q = r.useMemo(() => {
     if (null != C) return e => C(j(x({}, e), {
       widget: t
     }))
   }, [C, t]);
   return (0, i.jsx)(O.Z, {
     className: o()({
-      [S.debug]: q,
-      [S.debugUnpinned]: q && !L,
-      [S.debugPinned]: q && L
+      [S.debug]: J,
+      [S.debugUnpinned]: J && !L,
+      [S.debugPinned]: J && L
     }, w),
     id: k,
     size: W,
@@ -143,8 +143,8 @@ let I = Chunk647438.memo(function(e) {
     onClick: R,
     targetWindow: P,
     forceShowExtras: T,
-    renderExtras: X,
-    resizeValidation: J,
-    children: K
+    renderExtras: K,
+    resizeValidation: q,
+    children: X
   })
 })

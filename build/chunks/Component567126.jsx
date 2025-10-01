@@ -67,8 +67,8 @@ function W(e) {
 }
 
 function z(e, t, n, r) {
-  let i = (0, O.isWindows)() ? (0, T.Z)(g.ZP, C.Z) : null,
-    l = g.ZP.getRunningGames(),
+  let i = (0, O.isWindows)() ? (0, T.Z)(x.ZP, y.Z) : null,
+    l = x.ZP.getRunningGames(),
     s = null == n ? true : n.split(":")[1],
     o = e.id.split(":")[1];
   if (null != s && s === o) return 0;
@@ -107,7 +107,7 @@ function H(e) {
     enableGoLiveCaptureCard: l
   } = w.Z.useExperiment({
     location: "GoLive_Source_Select"
-  }), o = S.Z.supports(B.AN.GO_LIVE_HARDWARE), [a, f] = i.useState(null), [h, v] = i.useState(null), [b, C] = i.useState(null), O = null != b && b.length > 0, [Z, I] = i.useState(c.vA.WINDOW), [N, T] = i.useState(false), E = i.useRef(null), A = i.useRef(new u.Xp), M = (0, d.e7)([g.ZP], () => g.ZP.getRunningGames()), L = F((0, d.e7)([j.Z], () => j.Z.quests), M, h), W = i.useMemo(() => null == h ? null : [...h].sort((e, t) => z(t, null == L ? true : L.source.id) - z(e, null == L ? true : L.source.id)), [L, h]);
+  }), o = C.Z.supports(B.AN.GO_LIVE_HARDWARE), [a, f] = i.useState(null), [h, v] = i.useState(null), [b, y] = i.useState(null), O = null != b && b.length > 0, [Z, I] = i.useState(c.vA.WINDOW), [N, T] = i.useState(false), E = i.useRef(null), A = i.useRef(new u.Xp), M = (0, d.e7)([x.ZP], () => x.ZP.getRunningGames()), L = F((0, d.e7)([j.Z], () => j.Z.quests), M, h), W = i.useMemo(() => null == h ? null : [...h].sort((e, t) => z(t, null == L ? true : L.source.id) - z(e, null == L ? true : L.source.id)), [L, h]);
   i.useEffect(() => {
     let e = A.current;
     return (0, P.t)({
@@ -119,7 +119,7 @@ function H(e) {
         windowSources: n,
         cameraSources: r
       } = e;
-      f(t), v(n), C(r)
+      f(t), v(n), y(r)
     }), e.start(1e3, async () => {
       let {
         screenSources: e,
@@ -129,7 +129,7 @@ function H(e) {
         width: 176,
         height: 99
       });
-      f(e), v(t), C(n)
+      f(e), v(t), y(n)
     }), () => {
       e.stop()
     }
@@ -215,10 +215,10 @@ function H(e) {
         let e = E.current;
         null != e && T(!e.isScrolledToTop())
       },
-      children: [Z === c.vA.WINDOW && null != L && (0, r.jsx)(y.Z, {
+      children: [Z === c.vA.WINDOW && null != L && (0, r.jsx)(S.Z, {
         quest: L.quest
-      }), (0, r.jsx)(x.Z, {
-        layout: x.Z.Layout.WRAP,
+      }), (0, r.jsx)(g.Z, {
+        layout: g.Z.Layout.WRAP,
         columns: 2,
         className: U.sourceContainer,
         children: X
@@ -296,7 +296,7 @@ function J(e) {
   i.useEffect(() => {
     let e = d.current,
       t = () => {
-        let e = Object.entries(S.Z.getVideoDevices()).filter(e => {
+        let e = Object.entries(C.Z.getVideoDevices()).filter(e => {
           let [t, n] = e;
           return !n.disabled
         });
@@ -332,13 +332,13 @@ function J(e) {
         url: ""
       })
     }, [t, o]),
-    x = (0, O.isMac)() && a().satisfies(null === h.Z || true === h.Z ? true : h.Z.os.release, M.jR),
-    g = (0, O.isMac)(),
+    g = (0, O.isMac)() && a().satisfies(null === h.Z || true === h.Z ? true : h.Z.os.release, M.jR),
+    x = (0, O.isMac)(),
     [_, v] = i.useState(false),
     j = i.useCallback(() => {
       v(!_)
     }, [_]),
-    b = x ? (0, r.jsx)(V, {
+    b = g ? (0, r.jsx)(V, {
       onSelect: t
     }) : (0, r.jsxs)("div", {
       className: U.nativePickerTypes,
@@ -354,7 +354,7 @@ function J(e) {
         name: G.intl.string(G.t["+SLJCg"]),
         text: G.intl.string(G.t.dG2A1N),
         icon: m.GON
-      }), g ? (0, r.jsx)(Y, {
+      }), x ? (0, r.jsx)(Y, {
         onSelect: t,
         id: "app",
         name: G.intl.string(G.t.ct7AKS),

@@ -67,13 +67,13 @@ function E(e) {
     settingsGuild: E,
     settingsMetadata: I,
     settingsProfile: S
-  } = e, T = E.id, [P, w] = i.useState(false), [R, D] = i.useState(null), Z = E.features.has(_.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL), A = null != (t = (0, g.A)({
+  } = e, T = E.id, [P, w] = i.useState(false), [R, Z] = i.useState(null), D = E.features.has(_.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL), A = null != (t = (0, g.A)({
     guildId: E.id
   })) ? t : 0, L = i.useCallback(() => {
-    D(null), f.Z.init(T, _.pNK.ACCESS)
+    Z(null), f.Z.init(T, _.pNK.ACCESS)
   }, [T]), k = i.useCallback(async e => {
     try {
-      w(true), await e(), D(null)
+      w(true), await e(), Z(null)
     } finally {
       w(false)
     }
@@ -83,7 +83,7 @@ function E(e) {
         throwErr: true
       })
     } catch (e) {
-      throw "object" == typeof e && "message" in e ? D(e.message) : D(y.intl.formatToPlainString(y.t.aTVNen, {
+      throw "object" == typeof e && "message" in e ? Z(e.message) : Z(y.intl.formatToPlainString(y.t.aTVNen, {
         statusPageURL: _.yXt.STATUS
       })), e
     }
@@ -91,7 +91,7 @@ function E(e) {
     try {
       await d.ZP.updateVerificationForm(T, e, t, n)
     } catch (e) {
-      throw D(new o.Hx(e).getAnyErrorMessage()), e
+      throw Z(new o.Hx(e).getAnyErrorMessage()), e
     }
   }, [T]), U = i.useCallback(async (e, t, n) => {
     let r = t.length > 0 ? [{
@@ -157,7 +157,7 @@ function E(e) {
               guildId: E.id
             }, I))
           } catch (e) {
-            throw D(new o.Hx(e).getAnyErrorMessage()), e
+            throw Z(new o.Hx(e).getAnyErrorMessage()), e
           }
         }
       })
@@ -169,11 +169,11 @@ function E(e) {
         requireTerms: e,
         termRules: t = []
       } = l;
-      if (t.map(e => e.value.trim()).filter(e => "" !== e).length < 1 && e) return void D(y.intl.string(y.t.TCHkcX))
+      if (t.map(e => e.value.trim()).filter(e => "" !== e).length < 1 && e) return void Z(y.intl.string(y.t.TCHkcX))
     }
-    if (l.joinType === j.A.APPLY && !(null == (e = l.pendingVerificationFields) ? true : e.some(e => (0, m._C)(e)))) return void D(y.intl.string(y.t.HGVrIy));
+    if (l.joinType === j.A.APPLY && !(null == (e = l.pendingVerificationFields) ? true : e.some(e => (0, m._C)(e)))) return void Z(y.intl.string(y.t.HGVrIy));
     (e => {
-      if (Z && A > 0 && l.joinType !== j.A.APPLY) return (0, s.ZDy)(async () => {
+      if (D && A > 0 && l.joinType !== j.A.APPLY) return (0, s.ZDy)(async () => {
         let {
           default: t
         } = await n.e("55009").then(n.bind(n, 826390));
@@ -196,7 +196,7 @@ function E(e) {
       });
       e()
     })(() => B(e)))
-  }, [Z, B, l, T, A]), H = l.joinType === j.A.DISCOVERABLE && l.settingsView === v.U.ELIGIBLE_DISABLED, z = null != E.description && I.primaryCategoryId !== O.o3 && I.keywords.length > 0;
+  }, [D, B, l, T, A]), H = l.joinType === j.A.DISCOVERABLE && l.settingsView === v.U.ELIGIBLE_DISABLED, z = null != E.description && I.primaryCategoryId !== O.o3 && I.keywords.length > 0;
   return (0, r.jsx)(a.Z, {
     message: H ? y.intl.string(y.t.V2G2Ym) : true,
     onSaveText: H ? y.intl.string(y.t["qjtt/v"]) : true,

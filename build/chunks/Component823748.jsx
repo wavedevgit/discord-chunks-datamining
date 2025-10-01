@@ -824,7 +824,7 @@ let tl = (0, Chunk112724.Z)(ti),
       q = (0, p.e7)([eA.Z], () => eA.Z.hasSeen(null == c ? true : c.guild_id, Y), [c, Y]),
       K = (0, p.e7)([w.Z, E.ZP], () => null != E.ZP.getConnectedActivityLocation() && E.ZP.getActivityPanelMode() === e8.Ez.PANEL ? E.ZP.getFocusedLayout() === e8.MI.NO_CHAT ? e1.AEg.NO_CHAT : e1.AEg.NORMAL : null != s ? w.Z.getLayout(s) : e1.AEg.NORMAL, [s]),
       X = (0, p.e7)([w.Z], () => null != c ? w.Z.getSelectedParticipant(c.id) : null),
-      J = (0, P.$5)(c),
+      J = (0, T.$5)(c),
       $ = (0, eu.Z)(null == _ ? true : _.id),
       ee = (0, eD.Z)(W, null == _ ? true : _.id),
       {
@@ -842,7 +842,7 @@ let tl = (0, Chunk112724.Z)(ti),
       eo = (0, eY.ZP)(c, true),
       ec = null != c && o === c.id,
       ed = null != c && c.isGuildStageVoice();
-    (0, T.Z)({
+    (0, P.Z)({
       onTransition: true
     }), i.useEffect(() => {
       var e, t, n;

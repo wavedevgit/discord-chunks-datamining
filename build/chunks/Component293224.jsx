@@ -419,12 +419,12 @@ function ep(e) {
       locked: o
     } = e,
     a = r.useRef(null),
-    u = (0, l.e7)([X.default], () => X.default.getCurrentUser()),
+    u = (0, l.e7)([K.default], () => K.default.getCurrentUser()),
     c = (0, A.Z)(n),
     p = (0, l.cj)([B.Z], () => (0, C.Z)(B.Z)),
     h = (0, l.e7)([H.Z], () => H.Z.getCurrentUserActiveStream()),
     f = (0, ee.P)({
-      pid: (0, J.getPID)(),
+      pid: (0, q.getPID)(),
       allowOneClickGoLive: true,
       analyticsLocation: ei.Sbl.UNLOCKED_OVERLAY
     }),
@@ -600,7 +600,7 @@ function ef(e) {
   let {
     voiceChannel: t,
     locked: n
-  } = e, a = r.useRef(null), s = (0, l.e7)([K.Z], () => K.Z.getVoiceChannelId() === (null == t ? true : t.id)), u = () => {
+  } = e, a = r.useRef(null), s = (0, l.e7)([X.Z], () => X.Z.getVoiceChannelId() === (null == t ? true : t.id)), u = () => {
     (0, $.Ws)(ei.Odu.QUICK_ACTIONS, {
       type: $.Qu.CALL_BUTTON,
       value: $.bk.DISABLED,
@@ -731,7 +731,7 @@ function eO(e) {
     quality: Q.Z.getQuality(),
     state: Q.Z.getState(),
     lastPing: Q.Z.getLastPing()
-  })), s = (0, l.e7)([q.Z], () => null != o && q.Z.hasVideo(o), [o]);
+  })), s = (0, l.e7)([J.Z], () => null != o && J.Z.hasVideo(o), [o]);
   return null != o && null != r && (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(T.Z, (t = eo({}, a), n = n = {
       channelId: o,

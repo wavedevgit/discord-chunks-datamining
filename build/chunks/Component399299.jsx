@@ -53,14 +53,14 @@ function V(e) {
     selectSource: n,
     sourceChanged: i,
     onChangeSource: l
-  } = e, s = (0, o.e7)([m.ZP, w.Z], () => (0, P.isWindows)() ? (0, E.Z)(m.ZP, w.Z) : null), u = (0, o.e7)([d.Z], () => (null == s ? true : s.id) != null ? d.Z.getApplication(s.id) : null), f = (0, o.e7)([m.ZP], () => m.ZP.getRunningGames()), p = (0, o.Wu)([d.Z], () => f.map(e => null != e.id ? d.Z.getApplication(e.id) : null).filter(I.lm), [f]), x = null;
-  if (null != t ? x = t.name : null != s && (x = s.name), null == x) return null;
-  let g = (0, B.Z)(s, t, f),
+  } = e, s = (0, o.e7)([m.ZP, w.Z], () => (0, P.isWindows)() ? (0, E.Z)(m.ZP, w.Z) : null), u = (0, o.e7)([d.Z], () => (null == s ? true : s.id) != null ? d.Z.getApplication(s.id) : null), f = (0, o.e7)([m.ZP], () => m.ZP.getRunningGames()), p = (0, o.Wu)([d.Z], () => f.map(e => null != e.id ? d.Z.getApplication(e.id) : null).filter(I.lm), [f]), g = null;
+  if (null != t ? g = t.name : null != s && (g = s.name), null == g) return null;
+  let x = (0, B.Z)(s, t, f),
     _ = i ? p.find(e => {
       let {
         id: t
       } = e;
-      return t === (null == g ? true : g.id)
+      return t === (null == x ? true : x.id)
     }) : u,
     v = null != t && t.id.startsWith("screen") ? c.pzj : c.GON;
   return (0, r.jsx)(c.xJW, {
@@ -76,7 +76,7 @@ function V(e) {
         className: F.selectedIcon
       }), (0, r.jsx)("span", {
         className: F.ellipsisText,
-        children: x
+        children: g
       }), n ? (0, r.jsx)(a.zx, {
         className: F.changeButton,
         color: a.zx.Colors.PRIMARY,
@@ -92,7 +92,7 @@ function Y(e) {
   let {
     onChange: t,
     guildId: n
-  } = e, i = (0, o.e7)([y.Z], () => y.Z.getGuild(n));
+  } = e, i = (0, o.e7)([S.Z], () => S.Z.getGuild(n));
   return null == i ? (t(), null) : (0, r.jsx)(c.xJW, {
     title: z.intl.string(z.t.WC3u3t),
     className: H.modalContent,
@@ -143,21 +143,17 @@ function X(e) {
   } = e, n = (0, o.e7)([b.Z], () => {
     var e;
     return null != (e = b.Z.getMemberCount(t)) ? e : 0
-  }), l = x.eo.useSetting(), d = i.useCallback((e, t) => {
-    x.eo.updateSetting(t), Z.default.track(U.rMx.NOTIFY_STREAM_SETTING_UPDATE, {
-      value: t
+  }), l = g.eo.useSetting(), a = i.useCallback(e => {
+    g.eo.updateSetting(e), Z.default.track(U.rMx.NOTIFY_STREAM_SETTING_UPDATE, {
+      value: e
     })
   }, []);
   return n >= 2 && n <= G.tB ? (0, r.jsx)("div", {
     className: s()(H.modalContent, F.checkboxRow),
-    children: (0, r.jsx)(a.$q, {
-      value: !!l,
-      type: a.M0.INVERTED,
-      onChange: d,
-      children: (0, r.jsx)(c.Text, {
-        variant: "text-sm/normal",
-        children: z.intl.string(z.t.Cef4t7)
-      })
+    children: (0, r.jsx)(c.XZJ, {
+      checked: !!l,
+      onChange: a,
+      label: z.intl.string(z.t.Cef4t7)
     })
   }) : null
 }
@@ -167,19 +163,15 @@ function K(e) {
     enabled: t,
     onChange: n,
     screen: l
-  } = e, d = i.useCallback((e, t) => {
-    n(t)
-  }, [n]), u = (0, o.e7)([S.Z], () => S.Z.getUseSystemScreensharePicker() && (0, P.isLinux)());
+  } = e, a = i.useCallback(e => {
+    n(e)
+  }, [n]), d = (0, o.e7)([C.Z], () => C.Z.getUseSystemScreensharePicker() && (0, P.isLinux)());
   return (0, r.jsx)("div", {
     className: s()(H.modalContent, F.checkboxRow),
-    children: (0, r.jsx)(a.$q, {
-      value: t,
-      type: a.M0.INVERTED,
-      onChange: d,
-      children: (0, r.jsx)(c.Text, {
-        variant: "text-sm/normal",
-        children: l || u ? z.intl.string(z.t["5Adrtb"]) : z.intl.string(z.t.gRpbRE)
-      })
+    children: (0, r.jsx)(c.XZJ, {
+      checked: t,
+      onChange: a,
+      label: l || d ? z.intl.string(z.t["5Adrtb"]) : z.intl.string(z.t.gRpbRE)
     })
   })
 }
@@ -188,19 +180,15 @@ function q(e) {
   let {
     enabled: t,
     onChange: n
-  } = e, l = i.useCallback((e, t) => {
-    n(t)
+  } = e, l = i.useCallback(e => {
+    n(e)
   }, [n]);
   return (0, r.jsx)("div", {
     className: s()(H.modalContent, F.checkboxRow),
-    children: (0, r.jsx)(a.$q, {
-      value: t,
-      type: a.M0.INVERTED,
+    children: (0, r.jsx)(c.XZJ, {
+      checked: t,
       onChange: l,
-      children: (0, r.jsx)(c.Text, {
-        variant: "text-sm/normal",
-        children: z.intl.string(z.t.JE73jI)
-      })
+      label: z.intl.string(z.t.JE73jI)
     })
   })
 }
@@ -218,9 +206,9 @@ function Q(e) {
     selectSource: m,
     selectGuild: h,
     sound: p,
-    previewDisabled: x,
+    previewDisabled: g,
     onClose: b,
-    onChangeSelectedFPS: y,
+    onChangeSelectedFPS: S,
     onChangeSelectedResolution: w,
     onChangeSelectedPreset: Z,
     onChangeSelectedChannelId: I,
@@ -229,12 +217,12 @@ function Q(e) {
     onChangeGuild: D,
     onChangeSound: B,
     onChangePreviewDisabled: G
-  } = e, H = (0, o.e7)([C.Z, j.Z], () => j.Z.getChannel(C.Z.getVoiceChannelId())), Q = (0, o.e7)([T.Z], () => T.Z.GPUDriversOutdated), $ = (0, o.e7)([T.Z], () => T.Z.problematicGPUDriver), ee = (0, o.e7)([O.default], () => O.default.getCurrentUser()), et = (0, R.Z)();
-  null != t && t.id.startsWith("screen") && !S.Z.supportsScreenSoundshare() && (et = z.intl.string(z.t["1b0Gm5"]));
+  } = e, H = (0, o.e7)([y.Z, j.Z], () => j.Z.getChannel(y.Z.getVoiceChannelId())), Q = (0, o.e7)([T.Z], () => T.Z.GPUDriversOutdated), $ = (0, o.e7)([T.Z], () => T.Z.problematicGPUDriver), ee = (0, o.e7)([O.default], () => O.default.getCurrentUser()), et = (0, R.Z)();
+  null != t && t.id.startsWith("screen") && !C.Z.supportsScreenSoundshare() && (et = z.intl.string(z.t["1b0Gm5"]));
   let en = !!(null == t ? true : t.id.startsWith("camera")),
     er = null != ee && ee.verified && !ee.bot,
     ei = null != H && !(0, u.Yk)(H),
-    el = !(0, o.e7)([S.Z], () => S.Z.getHardwareEncoding());
+    el = !(0, o.e7)([C.Z], () => C.Z.getHardwareEncoding());
   return (0, r.jsxs)(i.Fragment, {
     children: [en ? (0, r.jsx)(A.Z, {
       selectedSource: t,
@@ -275,7 +263,7 @@ function Q(e) {
       className: F.hardwareWarning,
       children: z.intl.format(z.t.zCLXws, {
         onClick: () => {
-          b(), (0, v.openUserSettings)(g.n.VOICE_AND_VIDEO_PANEL, {
+          b(), (0, v.openUserSettings)(x.n.VOICE_AND_VIDEO_PANEL, {
             section: U.oAB.VOICE,
             subsection: W.gP,
             scrollPosition: W.KQ.VoiceAndVideoScrollPositions.HARDWARE_ACCELERATION
@@ -288,12 +276,12 @@ function Q(e) {
       selectedResolution: a,
       targetGuildPremiumTier: f,
       onClose: b,
-      onFPSChange: y,
+      onFPSChange: S,
       onResolutionChange: w,
       onPresetChange: Z,
       captureDeviceSelected: en
     }), (0, r.jsx)(q, {
-      enabled: x,
+      enabled: g,
       onChange: G
     })]
   })

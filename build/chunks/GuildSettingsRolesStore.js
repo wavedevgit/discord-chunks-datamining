@@ -51,8 +51,8 @@ let S = new Set,
   P = false,
   w = false,
   R = [],
-  D = [],
-  Z = false,
+  Z = [],
+  D = false,
   A = new Set,
   L = new Map,
   k = new Map,
@@ -78,7 +78,7 @@ function U(e) {
 
 function B() {
   let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];
-  r = Chunk999382.Z.getProps().guild, P = false, w = false, l = true, S.clear(), G.clear(), T = Chunk981631.QZA.OPEN, D = [...R = null != r ? [...Chunk485386.Z.getSortedRoles(r.id)] : []], F(null == r ? true : r.id, D), Z = false, module && (k.clear(), L.forEach((e, t) => {
+  r = Chunk999382.Z.getProps().guild, P = false, w = false, l = true, S.clear(), G.clear(), T = Chunk981631.QZA.OPEN, Z = [...R = null != r ? [...Chunk485386.Z.getSortedRoles(r.id)] : []], F(null == r ? true : r.id, Z), D = false, module && (k.clear(), L.forEach((e, t) => {
     k.set(t, [...e])
   }))
 }
@@ -123,13 +123,13 @@ let H = c().debounce(() => {
   let e = false;
   w && ((w = M().length > 0) || (e = true)), [...S].forEach(t => {
     var n;
-    c().isEqual(V(t), (n = t, D.find(e => {
+    c().isEqual(V(t), (n = t, Z.find(e => {
       let {
         id: t
       } = e;
       return t === n
     }))) && (S.delete(t), e = true)
-  }), 0 === S.size && (P = false), Z && c().isEqual(L, k) && (e = true, Z = false), module && Y.emitChange()
+  }), 0 === S.size && (P = false), D && c().isEqual(L, k) && (e = true, D = false), module && Y.emitChange()
 }, 500);
 
 function z(e, t) {
@@ -178,7 +178,7 @@ class K extends(s = Chunk442837.ZP.Store) {
     this.waitFor(Chunk999382.Z, Chunk561654.Z, Chunk485386.Z)
   }
   hasChanges() {
-    return P || w || Z
+    return P || w || D
   }
   getRoleStyleData(e) {
     return G.get(e)
@@ -190,7 +190,7 @@ class K extends(s = Chunk442837.ZP.Store) {
     return w
   }
   get hasRoleConfigurationChanges() {
-    return Z
+    return D
   }
   get guild() {
     return r
@@ -396,15 +396,15 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
         roleConnectionConfigurations: n
       } = e, r = V(t);
       if (null == r) returnfalse;
-      Z = true, A.add(r.id), k.set(r.id, n), H()
+      D = true, A.add(r.id), k.set(r.id, n), H()
     },
     GUILD_SETTINGS_CLOSE: function() {
-      r = null, D = R = [], L.clear(), S.clear(), G.clear(), k.clear(), A = new Set, P = false, w = false, Z = false, T = Chunk981631.QZA.CLOSED
+      r = null, Z = R = [], L.clear(), S.clear(), G.clear(), k.clear(), A = new Set, P = false, w = false, D = false, T = Chunk981631.QZA.CLOSED
     },
     GUILD_ROLE_CREATE: W,
     GUILD_ROLE_UPDATE: W,
     GUILD_ROLE_DELETE: function(e) {
-      return A.has(e.roleId) && (A.delete(e.roleId), L.delete(e.roleId), k.delete(e.roleId), Z = false), W(e)
+      return A.has(e.roleId) && (A.delete(e.roleId), L.delete(e.roleId), k.delete(e.roleId), D = false), W(e)
     },
     GUILD_SETTINGS_ROLES_SUBMITTING: function() {
       T = Chunk981631.QZA.SUBMITTING

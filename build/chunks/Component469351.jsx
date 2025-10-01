@@ -39,7 +39,7 @@ function w(e) {
     hasValidApplication: n
   } = e, {
     listingsLoaded: w
-  } = (0, y.eD)(t), R = (0, s.e7)([v.Z], () => v.Z.getGuild(t)), D = (0, s.e7)([_.default], () => _.default.getCurrentUser()), Z = null != R && (0, b.eM)(R, D), {
+  } = (0, y.eD)(t), R = (0, s.e7)([v.Z], () => v.Z.getGuild(t)), Z = (0, s.e7)([_.default], () => _.default.getCurrentUser()), D = null != R && (0, b.eM)(R, Z), {
     loading: A
   } = (0, c.H)(t), [L, k] = i.useState(n ? "manage_listings" : "payment");
   (0, m.P)(R);
@@ -88,7 +88,7 @@ function w(e) {
         disabledTooltip: T.intl.string(T.t.NVDuUV),
         disabled: !n,
         children: T.intl.string(T.t.wlZ1mp)
-      }), Z ? (0, r.jsx)(o.njP.Item, {
+      }), D ? (0, r.jsx)(o.njP.Item, {
         id: "payment",
         className: P.tabBarItem,
         children: T.intl.string(T.t.YBrFe3)

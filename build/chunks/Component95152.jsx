@@ -201,15 +201,12 @@ class R extends Chunk647438.Component {
                   if (e.which === E.yXg.ENTER) return this.handleSubmit()
                 }
               }) : null]
-            }), true !== Chunk647438 && (0, Chunk951288.jsx)(Chunk755721.$q, {
-              value: Chunk120356,
-              onChange: (e, t) => this.setState({
-                hasSpoiler: t
+            }), true !== Chunk647438 && (0, Chunk951288.jsx)(Chunk481060.XZJ, {
+              checked: Chunk120356,
+              onChange: e => this.setState({
+                hasSpoiler: e
               }),
-              children: (0, Chunk951288.jsx)(Chunk481060.Text, {
-                variant: "text-sm/normal",
-                children: Chunk388032.intl.string(Chunk388032.t["gsI+xM"])
-              })
+              label: Chunk388032.intl.string(Chunk388032.t["gsI+xM"])
             })]
           })
         })]

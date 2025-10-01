@@ -54,7 +54,7 @@ function y(e) {
   }, {
     label: m.intl.string(m.t["q8gB5+"]),
     value: g.QIO.MOST_RELEVANT
-  }], []), T = i.useCallback(() => {
+  }], []), P = i.useCallback(() => {
     (0, o.ZDy)(async () => {
       let {
         default: e
@@ -92,7 +92,7 @@ function y(e) {
         }), i))
       }
     })
-  }, [t]), P = i.useMemo(() => E > 0 ? m.intl.format(m.t.uaR4sL, {
+  }, [t]), T = i.useMemo(() => E > 0 ? m.intl.format(m.t.uaR4sL, {
     filterCount: E
   }) : m.intl.string(m.t.UdhTtr), [E]);
   return (0, r.jsxs)("header", {
@@ -119,8 +119,8 @@ function y(e) {
         size: "sm"
       }), (0, r.jsx)(o.zxk, {
         variant: "secondary",
-        onClick: T,
-        text: P,
+        onClick: P,
+        text: T,
         icon: o.gXV,
         size: "sm"
       })]

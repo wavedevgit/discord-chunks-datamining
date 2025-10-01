@@ -35,14 +35,14 @@ function N(t) {
     application: i,
     subscriptionId: e,
     onClose: N
-  } = t, [I, S] = a.useState(false), [x, E] = a.useState(null), [A, O] = a.useState(""), T = a.useCallback(() => {
-    null != x && (d.default.track(o.rMx.PREMIUM_APP_CANCELLATION_SURVEY_SUBMITTED, {
-      answer: x,
+  } = t, [I, S] = a.useState(false), [A, E] = a.useState(null), [O, x] = a.useState(""), T = a.useCallback(() => {
+    null != A && (o.default.track(d.rMx.PREMIUM_APP_CANCELLATION_SURVEY_SUBMITTED, {
+      answer: A,
       application_id: i.id,
-      reason: A,
+      reason: O,
       subscription_id: e
     }), N())
-  }, [i.id, e, x, N, A]);
+  }, [i.id, e, A, N, O]);
   return a.useEffect(() => {
     c.ZP.updatedUnsyncedSettings({
       disableApplicationSubscriptionCancellationSurvey: I
@@ -55,7 +55,7 @@ function N(t) {
       children: [(0, n.jsx)("div", {
         className: _.answerChoicesContainer,
         children: (0, n.jsx)(l.Gu, {
-          value: x,
+          value: A,
           options: u.map(t => {
             let {
               nameGetter: i,
@@ -69,34 +69,30 @@ function N(t) {
           onChange: t => E(t.value),
           withTransparentBackground: true
         })
-      }), "APPLICATION_SUBSCRIPTION_CANCELLATION_SURVEY_ANSWER_CHOICE_OTHER" === x && (0, n.jsx)("div", {
+      }), "APPLICATION_SUBSCRIPTION_CANCELLATION_SURVEY_ANSWER_CHOICE_OTHER" === A && (0, n.jsx)("div", {
         className: _.otherField,
         children: (0, n.jsx)(r.oil, {
           autoFocus: true,
           placeholder: C.intl.string(C.t.s6tM8f),
-          value: A,
-          onChange: O
+          value: O,
+          onChange: x
         })
       })]
     }), (0, n.jsx)(r.mzw, {
       "data-migration-pending": true,
       children: (0, n.jsxs)("div", {
         className: _.footer,
-        children: [(0, n.jsx)(l.$q, {
-          type: l.M0.INVERTED,
-          value: I,
-          onChange: (t, i) => S(i),
-          size: 20,
+        children: [(0, n.jsx)(l.VL, {
+          checked: I,
+          onChange: t => S(t),
           className: _.__invalid_checkbox,
-          children: (0, n.jsx)(r.Text, {
-            variant: "text-sm/medium",
-            children: C.intl.string(C.t["3vPFQk"])
-          })
+          label: C.intl.string(C.t["3vPFQk"]),
+          labelType: "secondary"
         }), (0, n.jsx)(r.zxk, {
           variant: "primary",
           text: C.intl.string(C.t.geKm7u),
           onClick: T,
-          disabled: null == x
+          disabled: null == A
         })]
       })
     })]

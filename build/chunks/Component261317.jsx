@@ -36,9 +36,9 @@ let w = function() {
   var e, t, n, w;
   (0, Chunk388032.useSyncMessages)(Chunk755032.messagesLoader);
   let R = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuild()),
-    D = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuildProfile()),
+    Z = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuildProfile()),
     {
-      fetchGuildProfile: Z,
+      fetchGuildProfile: D,
       fetchStatus: A
     } = (0, Chunk65361.u)(null == R ? true : R.id);
   if (Chunk647438.useEffect(() => {
@@ -46,24 +46,24 @@ let w = function() {
         dismissAction: Chunk921944.L.AUTO
       })
     }, []), Chunk647438.useEffect(() => {
-      A === Chunk314852.a.NOT_FETCHED && Z()
-    }, [Z, A]), A !== Chunk314852.a.FETCHED) return (0, Chunk951288.jsx)("div", {
+      A === Chunk314852.a.NOT_FETCHED && D()
+    }, [D, A]), A !== Chunk314852.a.FETCHED) return (0, Chunk951288.jsx)("div", {
     className: Chunk565744.spinnerContainer,
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {})
   });
-  if (null == R || null == D) return null;
-  let L = Chunk580685.Y.VISIBLE.has(D.visibility),
+  if (null == R || null == Z) return null;
+  let L = Chunk580685.Y.VISIBLE.has(Z.visibility),
     k = (0, Chunk731722.up)(R),
-    G = !k || (null == D ? true : D.tag) == null,
-    M = null != (e = D.badge) ? module : Chunk131085.QV["0"],
-    U = null != (t = D.badgeColorPrimary) ? exports : Chunk131085.Ek["0"].primary,
-    B = null != (n = D.badgeColorSecondary) ? require : Chunk131085.Ek["0"].secondary,
+    G = !k || (null == Z ? true : Z.tag) == null,
+    M = null != (e = Z.badge) ? module : Chunk131085.QV["0"],
+    U = null != (t = Z.badgeColorPrimary) ? exports : Chunk131085.Ek["0"].primary,
+    B = null != (n = Z.badgeColorSecondary) ? require : Chunk131085.Ek["0"].secondary,
     F = (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsx)(Chunk196902.Z, {
         className: Chunk565744.section,
         guildId: R.id,
         isDisabled: G,
-        tag: null != (w = D.tag) ? w : "",
+        tag: null != (w = Z.tag) ? w : "",
         badge: M,
         primaryColor: U,
         secondaryColor: B
@@ -126,7 +126,7 @@ let w = function() {
               if (G) {
                 var e;
                 Chunk434404.Z.updateGuildProfile(R.id, {
-                  tag: null != (e = D.tag) ? module : "",
+                  tag: null != (e = Z.tag) ? module : "",
                   badge: M,
                   badgeColorPrimary: U,
                   badgeColorSecondary: B
@@ -153,7 +153,7 @@ let w = function() {
         className: Chunk565744.sidebarContainer,
         children: [(0, Chunk951288.jsx)(Chunk978088.Z, {
           guildId: R.id,
-          tag: D.tag,
+          tag: Z.tag,
           badge: M,
           primaryColor: U,
           secondaryColor: B

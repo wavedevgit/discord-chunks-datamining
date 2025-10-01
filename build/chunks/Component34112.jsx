@@ -35,7 +35,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk960585 = require("./960585.js"),
   Chunk804306 = require("./804306.js");
 
-function D(e) {
+function Z(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -54,7 +54,7 @@ function D(e) {
   return e
 }
 
-function Z(e, t) {
+function D(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -197,7 +197,7 @@ function G(e) {
       let {
         default: e
       } = await Promise.resolve().then(n.bind(n, 741247));
-      return t => (0, r.jsx)(e, Z(D({}, t), {
+      return t => (0, r.jsx)(e, D(Z({}, t), {
         role: d,
         guild: g
       }))
@@ -273,7 +273,7 @@ function G(e) {
         count: "".concat(v)
       }),
       position: "right",
-      children: e => (0, r.jsxs)(u.P3F, Z(D({}, e), {
+      children: e => (0, r.jsxs)(u.P3F, D(Z({}, e), {
         className: s()(w.memberCountContainer, R.memberSpacing),
         onClick: X,
         children: [(0, r.jsx)(u.Text, {
@@ -292,7 +292,7 @@ function G(e) {
       className: s()(w.buttonsContainer, R.buttonsSpacing),
       children: [(0, r.jsx)(u.ua7, {
         text: k ? P.intl.string(P.t["HO/oXl"]) : P.intl.string(P.t.bt75u7),
-        children: e => (0, r.jsx)(u.hU, Z(D({}, e), {
+        children: e => (0, r.jsx)(u.hU, D(Z({}, e), {
           variant: "secondary",
           "aria-label": k ? P.intl.string(P.t["HO/oXl"]) : P.intl.string(P.t.bt75u7),
           icon: k ? u.tEF : u.vdY,
@@ -301,7 +301,7 @@ function G(e) {
       }), (0, r.jsx)(u.ua7, {
         text: P.intl.string(P.t.UKOtz8),
         shouldShow: Y,
-        children: e => (0, r.jsx)(u.hU, Z(D({}, e), {
+        children: e => (0, r.jsx)(u.hU, D(Z({}, e), {
           variant: "secondary",
           "aria-label": P.intl.string(P.t.UKOtz8),
           icon: u.xhG,
@@ -331,7 +331,7 @@ function M(e) {
     roleId: o.id,
     size: c
   });
-  if (null != O) return (0, r.jsx)(f.Z, Z(D({}, O), {
+  if (null != O) return (0, r.jsx)(f.Z, D(Z({}, O), {
     className: g,
     enableTooltip: m
   }));

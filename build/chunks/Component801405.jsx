@@ -46,9 +46,9 @@ function O(e) {
   i.useEffect(() => {
     I.current = S
   });
-  let T = i.useRef(E),
+  let P = i.useRef(E),
     {
-      currentDocument: P,
+      currentDocument: T,
       rootNode: N
     } = i.useMemo(() => {
       let e = null != j && C ? j.document : document,
@@ -65,21 +65,21 @@ function O(e) {
       r !== e && (s.Z.updateLayout(t.id, r, n), r === _.AEg.FULL_SCREEN && t.isPrivate() && m.S.dispatch(_.CkL.TEXTAREA_BLUR))
     }, [n, t]),
     D = i.useCallback(e => {
-      null != N && e === _.AEg.FULL_SCREEN && (A(e, T.current), (0, y.Pr)(e => {
-        T.current = e
-      }, P))
-    }, [P, A, N]),
+      null != N && e === _.AEg.FULL_SCREEN && (A(e, P.current), (0, y.Pr)(e => {
+        P.current = e
+      }, T))
+    }, [T, A, N]),
     L = i.useCallback(e => () => {
-      null != N && ((0, u.v)(x, u.d.FULL_SCREEN, e !== _.AEg.FULL_SCREEN), e !== _.AEg.FULL_SCREEN ? (T.current = e, A(e, _.AEg.FULL_SCREEN), (0, y.Dj)(N)) : D(e))
+      null != N && ((0, u.v)(x, u.d.FULL_SCREEN, e !== _.AEg.FULL_SCREEN), e !== _.AEg.FULL_SCREEN ? (P.current = e, A(e, _.AEg.FULL_SCREEN), (0, y.Dj)(N)) : D(e))
     }, [A, D, N, x]);
   i.useEffect(() => {
     let e = () => {
-      null != N && ((0, y.rB)(N, P) || E !== _.AEg.FULL_SCREEN || L(E)())
+      null != N && ((0, y.rB)(N, T) || E !== _.AEg.FULL_SCREEN || L(E)())
     };
-    return P.addEventListener(y.NO, e), () => {
-      P.removeEventListener(y.NO, e)
+    return T.addEventListener(y.NO, e), () => {
+      T.removeEventListener(y.NO, e)
     }
-  }, [P, E, L, N]);
+  }, [T, E, L, N]);
   let M = {
       channel: t,
       maybeLeaveFullScreen: D
@@ -115,8 +115,8 @@ function O(e) {
       C && (0, b.isMac)() || t(E)
     }
   }, [E, C]), i.useEffect(() => {
-    null != N && I.current === _.WtW.VIDEO && S === _.WtW.VOICE && (0, y.Pr)(N, P)
-  }, [P, S, I, N]), i.useEffect(() => {
+    null != N && I.current === _.WtW.VIDEO && S === _.WtW.VOICE && (0, y.Pr)(N, T)
+  }, [T, S, I, N]), i.useEffect(() => {
     !Z && C && a.Z.wait(() => p.xv(_.KJ3.CHANNEL_CALL_POPOUT))
   }, [Z, C]), w) ? (0, r.jsx)(h.Z, {
     themeable: false,

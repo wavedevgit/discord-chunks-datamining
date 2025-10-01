@@ -90,7 +90,7 @@ let L = function() {
       label: e.name
     })),
     [U, F] = Chunk647438.useState(M.length > 0 ? M[0].value : null),
-    [B, G] = Chunk647438.useState(""),
+    [G, B] = Chunk647438.useState(""),
     [z, V] = Chunk647438.useState({
       plan_id: Chunk474936.Xh.PREMIUM_MONTH_TIER_2,
       gift: "true"
@@ -101,9 +101,9 @@ let L = function() {
       analyticsLocations: q
     } = (0, Chunk906732.ZP)(Chunk100527.Z.PAYMENT_FLOW_TEST_PAGE),
     [Y, X] = Chunk647438.useState(""),
-    [J, $] = Chunk647438.useState(Chunk981631.lds),
+    [J, Q] = Chunk647438.useState(Chunk981631.lds),
     {
-      balance: Q,
+      balance: $,
       isFetching: ee,
       error: et
     } = (0, Chunk43747.A)(),
@@ -222,11 +222,11 @@ let L = function() {
             className: Chunk358928.formItem,
             children: [(0, Chunk951288.jsx)(Chunk481060.oil, {
               placeholder: "Promotion Code",
-              value: B,
-              onChange: e => G(e)
+              value: G,
+              onChange: e => B(e)
             }), (0, Chunk951288.jsx)(Chunk481060.ua7, {
               text: "Need Promotion Code",
-              shouldShow: B.length < 1,
+              shouldShow: G.length < 1,
               children: e => {
                 let {
                   onMouseEnter: t,
@@ -235,11 +235,11 @@ let L = function() {
                 return (0, a.jsx)(d.zxk, {
                   variant: "primary",
                   text: "Open Link",
-                  disabled: B.length < 1,
+                  disabled: G.length < 1,
                   onMouseEnter: t,
                   onMouseLeave: n,
                   onClick: () => {
-                    window.open(k.Z5c.BILLING_PROMOTION_REDEMPTION(B))
+                    window.open(k.Z5c.BILLING_PROMOTION_REDEMPTION(G))
                   }
                 })
               }
@@ -325,7 +325,7 @@ let L = function() {
                 variant: "text-sm/normal",
                 children: ["Error fetching Virtual Currency Balance: ", et.message]
               }), (0, Chunk951288.jsx)(Chunk970815.A4, {
-                balance: null != Q ? Q : 0,
+                balance: null != $ ? $ : 0,
                 balanceWidgetMode: Chunk970815.b6.SELECTED
               })]
             })]
@@ -390,7 +390,7 @@ let L = function() {
             }), (0, Chunk951288.jsx)(Chunk481060.oil, {
               placeholder: "Sku Id",
               value: J,
-              onChange: e => $(e)
+              onChange: e => Q(e)
             }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
               variant: "primary",
               text: "Open App Subs Modal for Activity",

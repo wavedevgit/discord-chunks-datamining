@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   ZP: () => L,
-  fp: () => D,
+  fp: () => Z,
   k0: () => R
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -162,7 +162,7 @@ function R(e) {
     })]
   })
 }
-async function D(e, t) {
+async function Z(e, t) {
   if (e.features.has(E.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY) === t) return;
   let n = e.features;
   return t ? n.add(E.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY) : n.delete(E.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY), await _.Z.saveGuild(e.id, {
@@ -170,11 +170,11 @@ async function D(e, t) {
   })
 }
 
-function Z(e) {
+function D(e) {
   let {
     guild: t
   } = e, n = (0, o.e7)([h.Z], () => null != t && h.Z.can(E.Plq.MANAGE_GUILD, t), [t]), l = t.features.has(E.oNc.COMMUNITY), s = (0, m.n2)(t.id), [a, d] = i.useState(t.features.has(E.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), g = i.useCallback(async e => {
-    d(e), await D(t, e)
+    d(e), await Z(t, e)
   }, [t]);
   return l || !s ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
@@ -279,7 +279,7 @@ function L() {
     titleClassName: Chunk984734.headerContainer,
     children: [(0, Chunk951288.jsx)(Chunk723136.z, {
       guild: module
-    }), (0, Chunk951288.jsx)(Z, {
+    }), (0, Chunk951288.jsx)(D, {
       guild: module
     }), (0, Chunk951288.jsx)(w, {
       guild: module

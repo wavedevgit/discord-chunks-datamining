@@ -132,7 +132,7 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
       isMobileOnline: v,
       premiumSince: x,
       nameplate: C
-    } = e, I = J(e, ["colorString", "colorStrings", "colorRoleName", "colorRoleId", "isOwner", "nick", "user", "currentUser", "activities", "applicationStream", "status", "channel", "guildId", "isTyping", "isMobileOnline", "premiumSince", "nameplate"]), E = i.useRef(null), [S, Z] = i.useState(false), T = null != x ? new Date(x) : null, N = i.useCallback(e => {
+    } = e, I = J(e, ["colorString", "colorStrings", "colorRoleName", "colorRoleId", "isOwner", "nick", "user", "currentUser", "activities", "applicationStream", "status", "channel", "guildId", "isTyping", "isMobileOnline", "premiumSince", "nameplate"]), E = i.useRef(null), [S, Z] = i.useState(false), P = null != x ? new Date(x) : null, N = i.useCallback(e => {
       (0, f.jW)(e, async () => {
         let {
           default: e
@@ -156,7 +156,7 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
         rawText: t
       }), m.Z.startTyping(_.id)
     }, [d, _.id]), w = i.useCallback(e => {
-      null != O && (e.stopPropagation(), (0, P.f)({
+      null != O && (e.stopPropagation(), (0, T.f)({
         guildId: O,
         location: {
           section: W.jXE.MEMBER_LIST,
@@ -194,7 +194,7 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
           activities: h,
           applicationStream: g,
           isOwner: o,
-          premiumSince: T,
+          premiumSince: P,
           colorString: t,
           colorStrings: l,
           colorRoleName: a,
@@ -329,7 +329,7 @@ class el extends Chunk647438.Component {
       sectionHeight: i
     } = this.props;
     return (0, Chunk951288.jsx)(Chunk481060.Wdt, {
-      children: l => (0, r.jsx)(T.FG, {
+      children: l => (0, r.jsx)(P.FG, {
         children: s => (0, r.jsx)("aside", {
           className: a()(q.membersWrap, q.hiddenMembers),
           "aria-labelledby": s,

@@ -63,10 +63,10 @@ let _ = function(e) {
     onDragStart: T,
     onDragComplete: P,
     onDragReset: w
-  } = e, R = (0, a.e7)([p.Z], () => p.Z.getChannel(N.channelId)), D = (0, a.e7)([f.Z], () => f.Z.getGuild(C)), {
-    customEmoji: Z,
+  } = e, R = (0, a.e7)([p.Z], () => p.Z.getChannel(N.channelId)), Z = (0, a.e7)([f.Z], () => f.Z.getGuild(C)), {
+    customEmoji: D,
     unicodeEmoji: A
-  } = (0, u.Z)(null == (t = N.emoji) ? true : t.id, null == (l = N.emoji) ? true : l.name), L = null == N.emoji || null != Z || null != A, k = h.ZP.getNewMemberActionIconURL({
+  } = (0, u.Z)(null == (t = N.emoji) ? true : t.id, null == (l = N.emoji) ? true : l.name), L = null == N.emoji || null != D || null != A, k = h.ZP.getNewMemberActionIconURL({
     channelId: N.channelId,
     icon: N.icon
   }), G = null;
@@ -96,7 +96,7 @@ let _ = function(e) {
       }))
     })
   }, [C, N, E, I, S]);
-  if (null == R || null == D) return null;
+  if (null == R || null == Z) return null;
   let z = null != (y = (0, c.KS)(R)) ? y : o.VL1;
   return (0, r.jsxs)("div", {
     className: b.actionItemContainer,

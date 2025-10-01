@@ -1,7 +1,7 @@
 /** Chunk was on 6284 **/
 /** chunk id: 257514, original params: t,i,e (module,exports,require) **/
 require.d(exports, {
-  default: () => A
+  default: () => O
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,20 +20,20 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk290362 = require("./290362.js");
 
-function A(t) {
+function O(t) {
   let {
     transitionState: i,
     application: e,
-    storeListing: A,
-    subscription: O,
+    storeListing: O,
+    subscription: x,
     guild: T,
     onClose: p
-  } = t, h = (0, o.Dt)(), {
-    analyticsLocations: m
-  } = (0, d.ZP)(c.Z.APPLICATION_SUBSCRIPTION_CANCELLATION_MODAL), {
-    cancelSubscription: P,
-    error: g,
-    submitting: j
+  } = t, h = (0, d.Dt)(), {
+    analyticsLocations: P
+  } = (0, o.ZP)(c.Z.APPLICATION_SUBSCRIPTION_CANCELLATION_MODAL), {
+    cancelSubscription: g,
+    error: m,
+    submitting: L
   } = (t => {
     let [i, e] = a.useState(false), [n, s] = a.useState(null);
     return {
@@ -49,28 +49,28 @@ function A(t) {
       error: n,
       submitting: i
     }
-  })(m), [L, f] = a.useState(0), v = async () => {
-    await P(O.id) && (C.ZP.disableApplicationSubscriptionCancellationSurvey ? p() : f(1))
+  })(P), [j, f] = a.useState(0), R = async () => {
+    await g(x.id) && (C.ZP.disableApplicationSubscriptionCancellationSurvey ? p() : f(1))
   };
   a.useEffect(() => {
     _.default.track(S.rMx.CANCELLATION_FLOW_STARTED, {
-      location_stack: m
+      location_stack: P
     })
-  }, [m]);
-  let R = (0, u.KW)(A.skuFlags);
+  }, [P]);
+  let v = (0, u.KW)(O.skuFlags);
   return (0, n.jsx)(s.IX, {
     onClose: p,
     transitionState: i,
     "aria-labelledby": h,
     children: (0, n.jsxs)(l.MyZ, {
-      activeSlide: L,
+      activeSlide: j,
       width: 480,
       children: [(0, n.jsx)(l.Mi4, {
         id: 0,
         children: (0, n.jsxs)("div", {
           className: E.slideContainer,
-          children: [null != g ? (0, n.jsx)(l.kzN, {
-            children: g.message
+          children: [null != m ? (0, n.jsx)(l.kzN, {
+            children: m.message
           }) : null, (0, n.jsxs)(s.fef, {
             children: [(0, n.jsx)(l.LZC, {
               size: 16
@@ -79,32 +79,32 @@ function A(t) {
                 application: e
               }), (0, n.jsx)(N.r0, {
                 id: h,
-                children: x.intl.format(x.t.irka9v, {
-                  tier: A.summary
+                children: A.intl.format(A.t.irka9v, {
+                  tier: O.summary
                 })
               }), (0, n.jsx)(N.s$, {}), (0, n.jsx)(N.K9, {
-                title: x.intl.string(x.t.LZunzc),
-                description: R ? x.intl.formatToPlainString(x.t["+HdfBw"], {
-                  timestamp: O.currentPeriodEnd.getTime()
-                }) : x.intl.formatToPlainString(x.t.qxiBnZ, {
-                  timestamp: O.currentPeriodEnd.getTime(),
+                title: A.intl.string(A.t.LZunzc),
+                description: v ? A.intl.formatToPlainString(A.t["+HdfBw"], {
+                  timestamp: x.currentPeriodEnd.getTime()
+                }) : A.intl.formatToPlainString(A.t.qxiBnZ, {
+                  timestamp: x.currentPeriodEnd.getTime(),
                   guildName: null == T ? true : T.name
                 })
               }), (0, n.jsx)(N.G9, {
-                applicationId: A.applicationId,
-                storeListingBenefits: A.benefits
+                applicationId: O.applicationId,
+                storeListingBenefits: O.benefits
               })]
             })]
           }), (0, n.jsx)(s.mzw, {
             children: (0, n.jsx)(s.Go$, {
               actions: [{
-                loading: j,
-                onClick: v,
-                text: x.intl.string(x.t.KSqyfX),
+                loading: L,
+                onClick: R,
+                text: A.intl.string(A.t.KSqyfX),
                 variant: "critical-primary"
               }, {
                 onClick: p,
-                text: x.intl.string(x.t["05jDxs"]),
+                text: A.intl.string(A.t["05jDxs"]),
                 variant: "icon-only"
               }],
               actionsFullWidth: true
@@ -117,7 +117,7 @@ function A(t) {
           className: E.slideContainer,
           children: (0, n.jsx)(I.Z, {
             application: e,
-            subscriptionId: O.id,
+            subscriptionId: x.id,
             onClose: p
           })
         })

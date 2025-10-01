@@ -2,7 +2,7 @@
 /** chunk id: 610665, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   GV: () => m,
-  iQ: () => x
+  iQ: () => g
 }), require("./539854.js"), require("./388685.js"), require("./415506.js");
 var Chunk512722 = require("./512722.js"),
   l = require.n(Chunk512722),
@@ -45,7 +45,7 @@ async function m(e, n) {
     l()(null != t, "could not find or create channel")
   }
 }
-async function x(e) {
+async function g(e) {
   let n = arguments.length > 1 && true !== arguments[1] && arguments[1],
     {
       channel_id: t,

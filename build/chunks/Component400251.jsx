@@ -2,7 +2,7 @@
 /** chunk id: 400251, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => N,
-  m: () => T
+  m: () => P
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -75,7 +75,7 @@ function Z(e, t) {
   }
   return i
 }
-let T = e => {
+let P = e => {
   let {
     onClick: t
   } = e;
@@ -94,7 +94,7 @@ let T = e => {
   })
 };
 
-function P(e) {
+function T(e) {
   let {
     entry: t
   } = e, [l, s] = i.useState(false), c = i.useRef(null), {
@@ -188,8 +188,8 @@ let N = e => {
     id: l.guildId,
     icon: l.icon,
     size: 40
-  })) ? t : true, T = x.intl.string(x.t.VJlc0d);
-  return O && (T = x.intl.string(x.t.cqWE2d)), (0, r.jsxs)("div", {
+  })) ? t : true, P = x.intl.string(x.t.VJlc0d);
+  return O && (P = x.intl.string(x.t.cqWE2d)), (0, r.jsxs)("div", {
     className: C.card,
     onContextMenu: e => {
       (0, c.jW)(e, async () => {
@@ -278,11 +278,11 @@ let N = e => {
           loading: a,
           variant: O ? "secondary" : "active",
           onClick: j,
-          text: T,
+          text: P,
           fullWidth: true
         })
       })]
-    }), (0, r.jsx)(P, {
+    }), (0, r.jsx)(T, {
       entry: l
     })]
   })

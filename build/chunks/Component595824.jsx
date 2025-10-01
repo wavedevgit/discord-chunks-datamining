@@ -2,7 +2,8 @@
 /** chunk id: 595824, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  X: () => f
+  X: () => f,
+  h: () => _
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -51,20 +52,23 @@ function d(e, t) {
 }
 
 function f(e) {
-  if ((0, i.A)("Checkbox")) return (0, r.jsx)(o.C, c({}, e));
+  return (0, i.A)("Checkbox") ? (0, r.jsx)(o.C, c({}, e)) : (0, r.jsx)(_, c({}, e))
+}
+
+function _(e) {
   let {
     label: t,
     checked: n,
-    onChange: l,
-    labelType: u = "primary"
-  } = e, f = null != t && "" !== t ? (0, r.jsx)(a.x, {
+    onChange: i,
+    labelType: o = "primary"
+  } = e, l = null != t && "" !== t ? (0, r.jsx)(a.x, {
     variant: "text-md/medium",
-    color: "primary" === u ? "text-primary" : "text-secondary",
+    color: "primary" === o ? "text-primary" : "text-secondary",
     children: t
   }) : null;
   return (0, r.jsx)(s.$q, d(c({}, e), {
     value: n,
-    onChange: (e, t) => null == l ? true : l(t),
-    children: f
+    onChange: (e, t) => null == i ? true : i(t),
+    children: l
   }))
 }

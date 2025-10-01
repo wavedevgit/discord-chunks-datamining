@@ -49,17 +49,17 @@ var Chunk951288 = require("./951288.js"),
   Chunk757744 = require("./757744.js"),
   Chunk981631 = require("./981631.js"),
   Chunk250928 = require("./250928.js");
-let K = !Chunk358085.isPlatformEmbedded && false,
-  X = K ? (0, Chunk951288.jsx)(Chunk70097.Z, {
+let X = !Chunk358085.isPlatformEmbedded && false,
+  K = X ? (0, Chunk951288.jsx)(Chunk70097.Z, {
     src: "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzdpcnRrYXdrNzVuNjZ3NXpmeTJvNGl4Z2N4OXBsamx5aXphdHhxaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9dg/OPg2B0FPBL94H12uM0/giphy480p.mp4",
     className: Chunk250928.videoDev,
     autoPlay: true,
     loop: true,
     muted: true
   }) : null,
-  q = null;
+  J = null;
 
-function J(e) {
+function q(e) {
   e.preventDefault()
 }
 
@@ -216,9 +216,9 @@ function ea(e) {
       n.current.unmount()
     }), [])
   }(() => {
-    d.Z.overlayReady((0, N.getPID)()), l.addEventListener("keydown", el), l.addEventListener("keyup", el), K && (l.document.hasFocus() && d.Z.setFocusedPID(N.DEV_PID), l.addEventListener("focus", ei), l.addEventListener("blur", er))
+    d.Z.overlayReady((0, N.getPID)()), l.addEventListener("keydown", el), l.addEventListener("keyup", el), X && (l.document.hasFocus() && d.Z.setFocusedPID(N.DEV_PID), l.addEventListener("focus", ei), l.addEventListener("blur", er))
   }, () => {
-    l.removeEventListener("keydown", el), l.removeEventListener("keyup", el), K && (l.removeEventListener("focus", ei), l.removeEventListener("blur", er))
+    l.removeEventListener("keydown", el), l.removeEventListener("keyup", el), X && (l.removeEventListener("focus", ei), l.removeEventListener("blur", er))
   });
   let Y = r.useRef(null);
   return (0, p.ZP)(() => {
@@ -262,23 +262,23 @@ function ea(e) {
     if (C.S.dispatch(B.CkL.OVERLAY_V3_SHOW_WIDGETS, {
         show: true
       }), c) {
-      if ((0, s.Ay)(u.u1M), l.addEventListener("contextmenu", J, false), null != q) {
-        let e = Date.now() - q;
+      if ((0, s.Ay)(u.u1M), l.addEventListener("contextmenu", q, false), null != J) {
+        let e = Date.now() - J;
         d.Z.track(B.rMx.OVERLAY_LOCKED, {
           unlocked_duration: e
-        }), q = null
+        }), J = null
       }
       return () => {
-        l.removeEventListener("contextmenu", J, false)
+        l.removeEventListener("contextmenu", q, false)
       }
     }
-    l.removeEventListener("contextmenu", J, false), null == q && (q = Date.now(), d.Z.track(B.rMx.OVERLAY_UNLOCKED))
+    l.removeEventListener("contextmenu", q, false), null == J && (J = Date.now(), d.Z.track(B.rMx.OVERLAY_UNLOCKED))
   }, [c, l]), (0, i.jsx)(f.Gt, {
     value: M,
     children: P || Z || n ? null : (0, i.jsxs)("div", {
       id: "overlay-container",
       className: Q.overlay,
-      children: [!t && X, (0, i.jsx)(ee, {
+      children: [!t && K, (0, i.jsx)(ee, {
         locked: c,
         keybind: R,
         onClick: en
@@ -287,7 +287,7 @@ function ea(e) {
           [Q.layoutLocked]: c,
           [Q.layoutUnlocked]: !c
         })
-      }), (0, i.jsx)(G.Z, {}), !t && K && (0, i.jsx)(et, {
+      }), (0, i.jsx)(G.Z, {}), !t && X && (0, i.jsx)(et, {
         locked: c,
         focused: m
       }), (0, i.jsx)(A.Z, {}), (0, i.jsx)(k.Z, {

@@ -18,18 +18,18 @@ function _(t) {
     guildId: e,
     transitionState: n,
     onClose: _
-  } = t, [b, S] = i.useState([]), p = i.useCallback(() => {
+  } = t, [b, S] = i.useState([]), f = i.useCallback(() => {
     (0, a.KK)(e, b), (0, a.C4)(e), _()
-  }, [e, _, b]), f = i.useCallback(t => () => {
+  }, [e, _, b]), h = i.useCallback(t => () => {
     S(e => e.includes(t) ? e.filter(e => e !== t) : [...e, t])
-  }, []), I = i.useCallback(() => {
+  }, []), p = i.useCallback(() => {
     open(s.RI)
   }, []);
-  return (0, r.jsx)(l.Modal, {
+  return (0, r.jsx)(c.Modal, {
     transitionState: n,
     title: u.intl.string(u.t.uYPGsb),
     subtitle: u.intl.format(u.t.Hg8Ee3, {
-      onClick: I
+      onClick: p
     }),
     actions: [{
       text: u.intl.string(u.t["ETE/oK"]),
@@ -37,7 +37,7 @@ function _(t) {
       variant: "secondary"
     }, {
       text: u.intl.string(u.t.geKm7u),
-      onClick: p
+      onClick: f
     }],
     onClose: _,
     children: (0, r.jsx)(o.Kqy, {
@@ -45,12 +45,11 @@ function _(t) {
       className: d.mainCheckboxContainer,
       children: s.Ud.map(t => (0, r.jsxs)(o.P3F, {
         className: d.checkboxContainer,
-        onClick: f(t),
-        children: [(0, r.jsx)(c.$q, {
-          type: c.M0.INVERTED,
+        onClick: h(t),
+        children: [(0, r.jsx)(l.VL, {
           className: d.checkbox,
-          value: b.includes(t),
-          displayOnly: true
+          checked: b.includes(t),
+          isIndicator: true
         }), (0, r.jsx)(o.Text, {
           variant: "text-sm/normal",
           children: (0, s.$l)(t)

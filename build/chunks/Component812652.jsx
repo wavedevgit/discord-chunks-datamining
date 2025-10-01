@@ -23,7 +23,7 @@ var Chunk268146 = require("./268146.js"),
   Chunk137349 = require("./137349.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk246238 = require("./246238.js");
-let y = [{
+let S = [{
     value: Chunk37113.tI.PRESET_VIDEO,
     canUse: e => true
   }, {
@@ -33,7 +33,7 @@ let y = [{
     value: Chunk37113.tI.PRESET_CUSTOM,
     canUse: e => true
   }],
-  S = [{
+  C = [{
     value: Chunk37113.LY.RESOLUTION_720,
     canUse: e => true
   }, {
@@ -46,7 +46,7 @@ let y = [{
     value: Chunk37113.LY.RESOLUTION_SOURCE,
     canUse: e => e !== i.vA.CAMERA
   }],
-  C = [Chunk37113.ws.FPS_15, Chunk37113.ws.FPS_30, Chunk37113.ws.FPS_60];
+  y = [Chunk37113.ws.FPS_15, Chunk37113.ws.FPS_30, Chunk37113.ws.FPS_60];
 
 function O(e) {
   let {
@@ -76,7 +76,7 @@ function w(e) {
     fps: R,
     sourceType: A,
     selectedChannel: k
-  }, M] = (0, h.E_)(), D = !(0, c.$s)(k, "StreamOptionsMenu"), L = (0, m.Z)(), [B, G] = null != (t = (0, x.Z)(g.tI.PRESET_VIDEO)) ? t : [g.LY.RESOLUTION_720, g.ws.FPS_30], [U, W] = null != (n = (0, x.Z)(g.tI.PRESET_DOCUMENTS)) ? n : [g.LY.RESOLUTION_SOURCE, g.ws.FPS_15], z = (0, o.M)({
+  }, M] = (0, h.E_)(), D = !(0, c.$s)(k, "StreamOptionsMenu"), L = (0, m.Z)(), [B, G] = null != (t = (0, g.Z)(x.tI.PRESET_VIDEO)) ? t : [x.LY.RESOLUTION_720, x.ws.FPS_30], [U, W] = null != (n = (0, g.Z)(x.tI.PRESET_DOCUMENTS)) ? n : [x.LY.RESOLUTION_SOURCE, x.ws.FPS_15], z = (0, o.M)({
     deviceType: _.h7.AUDIO_INPUT,
     selectedDeviceId: Z,
     analyticsLocations: [s.Z.GO_LIVE_MODAL_SETTINGS_SELECTION],
@@ -102,7 +102,7 @@ function w(e) {
     onSelect: w,
     children: [(0, r.jsx)(l.kSQ, {
       label: j.intl.string(v.default.P2pjm5),
-      children: y.filter(e => {
+      children: S.filter(e => {
         let {
           canUse: t
         } = e;
@@ -118,17 +118,17 @@ function w(e) {
           label: (0, u.L)(t),
           subtext: function(e) {
             switch (e) {
-              case g.tI.PRESET_VIDEO:
+              case x.tI.PRESET_VIDEO:
                 return j.intl.format(v.default.G5O1Mz, {
                   resolution: (0, f.M)(B),
                   frameRate: G
                 });
-              case g.tI.PRESET_DOCUMENTS:
+              case x.tI.PRESET_DOCUMENTS:
                 return j.intl.format(v.default["8tcFLy"], {
                   resolution: (0, f.M)(U),
                   frameRate: W
                 });
-              case g.tI.PRESET_CUSTOM:
+              case x.tI.PRESET_CUSTOM:
                 return;
               default:
                 throw Error("No case implemented for ".concat(e))
@@ -140,11 +140,11 @@ function w(e) {
           })
         }, t)
       })
-    }), T === g.tI.PRESET_CUSTOM && (0, r.jsxs)(r.Fragment, {
+    }), T === x.tI.PRESET_CUSTOM && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.Clw, {}), (0, r.jsx)(l.sNh, {
         id: "resolution",
         label: j.intl.string(v.default.IG5n0d),
-        children: S.filter(e => {
+        children: C.filter(e => {
           let {
             canUse: t
           } = e;
@@ -157,7 +157,7 @@ function w(e) {
             group: "resolution",
             id: "stream-option-resolution-".concat(t),
             checked: E === t,
-            label: t !== g.LY.RESOLUTION_720 ? (0, r.jsx)(O, {
+            label: t !== x.LY.RESOLUTION_720 ? (0, r.jsx)(O, {
               label: (0, f.M)(t)
             }) : (0, f.M)(t),
             action: () => (function(e) {
@@ -174,11 +174,11 @@ function w(e) {
       }), (0, r.jsx)(l.sNh, {
         id: "frame-rate",
         label: j.intl.string(j.t.SkkeIi),
-        children: C.map(e => (0, r.jsx)(l.k5B, {
+        children: y.map(e => (0, r.jsx)(l.k5B, {
           group: "frame-rate",
           id: "stream-option-frame-rate-".concat(e),
           checked: R === e,
-          label: e === g.ws.FPS_60 ? (0, r.jsx)(O, {
+          label: e === x.ws.FPS_60 ? (0, r.jsx)(O, {
             label: "".concat(e, "fps")
           }) : "".concat(e, "fps"),
           action: () => (function(e) {

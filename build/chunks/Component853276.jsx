@@ -147,10 +147,10 @@ function h(e) {
   }, [j]), i.useEffect(() => () => {
     clearTimeout(w.current)
   }, []);
-  let D = i.useCallback(e => {
+  let Z = i.useCallback(e => {
       n(e.target.value)
     }, [n]),
-    Z = i.useCallback(function() {
+    D = i.useCallback(function() {
       let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
       if (t.trim().length <= 0 && p(), null != v.current && null != C.current && null != _.current) {
         var n;
@@ -160,8 +160,8 @@ function h(e) {
     }, [t, C, l, p]),
     A = i.useCallback(e => {
       let n = t.trim().length <= 0;
-      u.ye.has(e.key) ? (e.preventDefault(), e.stopPropagation(), Z(true)) : "Backspace" === e.key && n && (e.preventDefault(), e.stopPropagation(), Z(true))
-    }, [Z, t]),
+      u.ye.has(e.key) ? (e.preventDefault(), e.stopPropagation(), D(true)) : "Backspace" === e.key && n && (e.preventDefault(), e.stopPropagation(), D(true))
+    }, [D, t]),
     L = i.useCallback(e => {
       let t = e.metaKey || e.ctrlKey;
       g(t), t ? e.preventDefault() : y(true), e.stopPropagation()
@@ -182,7 +182,7 @@ function h(e) {
       }),
       children: [(0, r.jsxs)(o.P3F, {
         tag: "div",
-        onBlur: () => Z(false),
+        onBlur: () => D(false),
         onClick: L,
         ignoreKeyPress: true,
         onMouseEnter: () => P(true),
@@ -198,7 +198,7 @@ function h(e) {
             [m.isSelecting]: x
           }),
           ref: v,
-          onChange: D,
+          onChange: Z,
           onKeyDownCapture: A,
           value: t,
           style: {

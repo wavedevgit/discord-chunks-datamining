@@ -37,7 +37,7 @@ let O = (0, Chunk112724.Z)(e => {
     selectedParticipantId: s.Z.getSelectedParticipantId(a.id),
     largeStream: s.Z.getStageStreamSize(a.id),
     chatOpen: s.Z.getChatOpen(a.id)
-  }), [a.id]), I = (0, c.Io)(a.id), E = (0, c.Rk)(a.id, d.pV.AUDIENCE), S = (0, l.e7)([o.Z], () => null != v ? o.Z.getParticipant(a.id, v) : null), Z = (0, c.w8)(a.id, d.pV.SPEAKER), T = Z.filter(_), P = null != Z.find(e => e.type === d.Ui.STREAM), N = Math.floor((O - 32) / 102), R = O < 424 ? 1 : O < 624 ? 2 : O < 824 || C ? 3 : 4, w = {
+  }), [a.id]), I = (0, c.Io)(a.id), E = (0, c.Rk)(a.id, d.pV.AUDIENCE), S = (0, l.e7)([o.Z], () => null != v ? o.Z.getParticipant(a.id, v) : null), Z = (0, c.w8)(a.id, d.pV.SPEAKER), P = Z.filter(_), T = null != Z.find(e => e.type === d.Ui.STREAM), N = Math.floor((O - 32) / 102), R = O < 424 ? 1 : O < 624 ? 2 : O < 824 || C ? 3 : 4, w = {
     [d.pV.SPEAKER]: R,
     [d.pV.AUDIENCE]: N,
     [d.pV.SELECTED]: 1
@@ -64,9 +64,9 @@ let O = (0, Chunk112724.Z)(e => {
         className: y.header,
         onClick: () => B(!F),
         collapsed: F,
-        speakers: T,
+        speakers: P,
         channel: a,
-        isStreamLive: P
+        isStreamLive: T
       }, "speaker-header-".concat(t)) : 2 === t ? 0 === E ? null : (0, r.jsx)(g.Z, {
         participantCount: E,
         label: b.intl.string(b.t["3foUu7"]),

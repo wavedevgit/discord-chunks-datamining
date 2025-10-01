@@ -38,9 +38,9 @@ function b(e) {
   } = (0, d.r4)(), {
     error: w,
     archiveSubscriptionListing: R,
-    submitting: D
+    submitting: Z
   } = (0, d._1)(), {
-    allowSelfRemoveMonetization: Z
+    allowSelfRemoveMonetization: D
   } = (0, c.gX)(j);
   return null == _ ? null : (0, r.jsx)(p.Z, {
     title: f.intl.string(f.t["7Si8Ul"]),
@@ -54,11 +54,11 @@ function b(e) {
         children: f.intl.string(f.t.up8gUl)
       }), I ? (0, r.jsxs)(o.hjN, {
         title: f.intl.string(f.t["2D14T0"]),
-        disabled: !Z,
+        disabled: !D,
         children: [(0, r.jsx)(o.R94, {
           type: o.R94.Types.DESCRIPTION,
           className: h.formDescription,
-          disabled: !Z,
+          disabled: !D,
           children: f.intl.string(f.t.Y4KjUF)
         }), (0, r.jsxs)(o.Kqy, {
           gap: 16,
@@ -101,17 +101,17 @@ function b(e) {
               })
             },
             loading: P,
-            disabled: !Z || !N,
+            disabled: !D || !N,
             text: f.intl.string(f.t.GMtG6u)
           })]
         })]
       }) : (0, r.jsxs)(o.hjN, {
         title: f.intl.string(f.t["MS/4U1"]),
-        disabled: !Z,
+        disabled: !D,
         children: [(0, r.jsx)(o.R94, {
           type: o.R94.Types.DESCRIPTION,
           className: h.formDescription,
-          disabled: !Z,
+          disabled: !D,
           children: f.intl.string(f.t["5/Jeg4"])
         }), (0, r.jsx)(o.zxk, {
           variant: "critical-primary",
@@ -142,8 +142,8 @@ function b(e) {
               })
             })
           },
-          loading: D,
-          disabled: !Z,
+          loading: Z,
+          disabled: !D,
           text: f.intl.string(f.t.RL0wjo)
         })]
       })]

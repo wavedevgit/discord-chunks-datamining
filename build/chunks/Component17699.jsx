@@ -67,7 +67,7 @@ function R(e, t) {
   }), e
 }
 
-function D(e) {
+function Z(e) {
   var t;
   let {
     transitionState: n,
@@ -145,7 +145,7 @@ function D(e) {
     })]
   })
 }
-class Z extends Chunk647438.PureComponent {
+class D extends Chunk647438.PureComponent {
   render() {
     var e;
     let {
@@ -183,7 +183,7 @@ class Z extends Chunk647438.PureComponent {
         hideDiscriminator: n,
         ban: i
       } = this.props;
-      (0, o.h7j)(l => (0, r.jsx)(D, R(w({}, l), {
+      (0, o.h7j)(l => (0, r.jsx)(Z, R(w({}, l), {
         guild: e,
         user: t,
         ban: i,
@@ -220,7 +220,7 @@ let A = Chunk647438.forwardRef(function(e, t) {
     }, "spinner");
     let i = l[e],
       a = null == s ? true : s.get(null != (t = null == i ? true : i.id) ? t : "");
-    if (null != i && null != a) return (0, r.jsx)(Z, {
+    if (null != i && null != a) return (0, r.jsx)(D, {
       user: i,
       ban: a,
       hideDiscriminator: c,
@@ -317,7 +317,7 @@ function k() {
       null != e && E(t)(e) && r.push(e)
     }
     return r
-  }, [Chunk740903]), D = Chunk647438.useMemo(() => P(Chunk246946, Chunk479531, Chunk626135), [Chunk246946, P, Chunk479531, Chunk626135]), Z = null != Chunk246946, k = D.length % 1e3 == 0 && D.length > 0 && Z, G = 0 === D.length, [M, U] = Chunk647438.useState({
+  }, [Chunk740903]), Z = Chunk647438.useMemo(() => P(Chunk246946, Chunk479531, Chunk626135), [Chunk246946, P, Chunk479531, Chunk626135]), D = null != Chunk246946, k = Z.length % 1e3 == 0 && Z.length > 0 && D, G = 0 === Z.length, [M, U] = Chunk647438.useState({
     currentPage: 1,
     pageSize: 100
   });
@@ -329,13 +329,13 @@ function k() {
   let B = Chunk647438.useCallback(e => {
       d.Z.fetchGuildBansBatch(y, 1e3, e)
     }, [Chunk434404]),
-    F = Chunk647438.useMemo(() => s().chunk(D, M.pageSize), [M.pageSize, D]),
+    F = Chunk647438.useMemo(() => s().chunk(Z, M.pageSize), [M.pageSize, Z]),
     H = Chunk647438.useCallback(e => {
       var t, n, r;
-      null == (t = N.current) || t.scrollToSectionTop(0), (e + 1) * M.pageSize > D.length && k && !p && (z.current = null != (r = null == (n = D[D.length - 1]) ? true : n.id) ? r : null, B(z.current)), (null != F[e - 1] || k) && U(t => R(w({}, t), {
+      null == (t = N.current) || t.scrollToSectionTop(0), (e + 1) * M.pageSize > Z.length && k && !p && (z.current = null != (r = null == (n = Z[Z.length - 1]) ? true : n.id) ? r : null, B(z.current)), (null != F[e - 1] || k) && U(t => R(w({}, t), {
         currentPage: e
       }))
-    }, [M.pageSize, D, k, F, B, Chunk367907]),
+    }, [M.pageSize, Z, k, F, B, Chunk367907]),
     z = Chunk647438.useRef(null);
   Chunk647438.useEffect(() => {
     B(z.current)
@@ -375,7 +375,7 @@ function k() {
     }), (0, Chunk951288.jsx)("div", {
       children: (0, Chunk951288.jsx)(Chunk481060.DsT, {
         className: Chunk298814.paginationInput,
-        totalCount: D.length + (k ? M.pageSize : 0),
+        totalCount: Z.length + (k ? M.pageSize : 0),
         pageSize: M.pageSize,
         currentPage: M.currentPage,
         onPageChange: H,

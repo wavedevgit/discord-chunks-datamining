@@ -1,11 +1,11 @@
 /** Chunk was on 31835 **/
 /** chunk id: 53365, original params: t,r,n (module,exports,require) **/
 require.d(exports, {
-  $J: () => O,
+  $J: () => s,
   He: () => T,
   av: () => u,
   df: () => N,
-  hY: () => s,
+  hY: () => O,
   oL: () => R,
   wE: () => l,
   wZ: () => _,
@@ -76,14 +76,14 @@ async function N(t, r) {
   }), n
 }
 
-function s(t) {
+function O(t) {
   return i.tn.post({
     url: E.ANM.CREATOR_MONETIZATION_ACCEPT_NEW_TERMS(t),
     rejectWithError: false
   })
 }
 
-function O(t) {
+function s(t) {
   return i.tn.post({
     url: E.ANM.CREATOR_MONETIZATION_ACCEPT_NEW_TERMS_DEMONETIZED(t),
     rejectWithError: false

@@ -105,7 +105,7 @@ function es(e) {
   }), () => W.Z.setState({
     isOpen: false
   })), []);
-  let eg = (0, s.e7)([B.Z], () => B.Z.getStatus(t.id)),
+  let eg = (0, s.e7)([G.Z], () => G.Z.getStatus(t.id)),
     ev = F.Cr.useSetting(),
     ej = (0, J.F)(ev),
     {
@@ -115,7 +115,7 @@ function es(e) {
     }, {
       autoTrackExposure: false
     }),
-    ey = (0, s.e7)([G.Z], () => G.Z.hidePersonalInformation),
+    ey = (0, s.e7)([B.Z], () => B.Z.hidePersonalInformation),
     eC = (0, g.p)(),
     eE = F.Sb.useSetting(),
     eN = (0, J.I)(eg),
@@ -150,16 +150,16 @@ function es(e) {
     }),
     eM = (null == ep ? true : ep.widgets) != null && ep.widgets.length > 0,
     eU = eM ? [] : [o.z.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE],
-    [eF, eB] = (0, f.US)(eU),
-    eG = eF === o.z.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE,
+    [eF, eG] = (0, f.US)(eU),
+    eB = eF === o.z.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE,
     ez = r.useCallback(() => {
-      eB(ee.L.USER_DISMISS), n()
-    }, [eB, n]),
+      eG(ee.L.USER_DISMISS), n()
+    }, [eG, n]),
     eV = r.useCallback(() => {
       eu && null != ed || (eT(), ez())
     }, [eT, ez, eu, ed]),
     eH = eu && null != ed,
-    eW = (0, K.K)(ed, eh, eG, n, ez);
+    eW = (0, K.K)(ed, eh, eB, n, ez);
   return (0, a.jsx)(p.Gt, {
     value: eh,
     children: (0, a.jsx)(_.Mt, {
@@ -265,7 +265,7 @@ function es(e) {
                         children: eW
                       })
                     } : true,
-                    trailing: eG ? (0, a.jsx)(c.IGR, {
+                    trailing: eB ? (0, a.jsx)(c.IGR, {
                       text: ea.intl.string(ea.t.y2b7CA)
                     }) : true
                   }), (0, a.jsx)(Y.V4, {
@@ -276,7 +276,7 @@ function es(e) {
                       status: eg,
                       size: 12
                     }),
-                    trailing: (eC || eg === Q.Skl.DND) && (0, a.jsx)(c.owu, {
+                    trailing: (eC || eg === $.Skl.DND) && (0, a.jsx)(c.owu, {
                       size: "xxs"
                     }),
                     renderSubmenu: i.tq ? true : e => {
@@ -348,7 +348,7 @@ function es(e) {
                     icon: c.lMe,
                     label: ea.intl.string(ea.t.oMNyYG),
                     onClick: () => {
-                      n(), (0, $.Z)()
+                      n(), (0, Q.Z)()
                     },
                     renderSubmenu: e => {
                       let {

@@ -124,9 +124,9 @@ function y(e) {
       D(e.body.message)
     }
     S()
-  }, B = (null == (t = f.GP[N.planIdFromItems]) ? true : t.premiumType) === f.p9.TIER_0, G = null == (n = N.metadata) ? true : n.ended_at, z = null != G ? new Date(G).toISOString().substring(0, 10) : "", V = N.hasActiveTrial, H = (null == (i = N.metadata) ? true : i.active_discount_id) != null;
+  }, G = (null == (t = f.GP[N.planIdFromItems]) ? true : t.premiumType) === f.p9.TIER_0, B = null == (n = N.metadata) ? true : n.ended_at, z = null != B ? new Date(B).toISOString().substring(0, 10) : "", V = N.hasActiveTrial, H = (null == (i = N.metadata) ? true : i.active_discount_id) != null;
   return (0, a.jsxs)("div", {
-    className: l()(b.card, B ? b.gradientWrapperTier0 : b.gradientWrapperTier2),
+    className: l()(b.card, G ? b.gradientWrapperTier0 : b.gradientWrapperTier2),
     children: [V && (0, a.jsx)(o.P3F, {
       className: g.badge,
       children: (0, a.jsx)(o.Text, {

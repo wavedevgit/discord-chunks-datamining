@@ -2,7 +2,7 @@
 /** chunk id: 67152, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  ZP: () => D,
+  ZP: () => Z,
   av: () => T,
   bL: () => C,
   kA: () => N
@@ -275,7 +275,7 @@ let C = e => {
       })
     }
   }],
-  D = e => {
+  Z = e => {
     let {
       payoutsByPeriod: t
     } = e, [n, l] = i.useState(new Set);

@@ -105,14 +105,14 @@ class A extends Chunk647438.PureComponent {
             targetElementRef: this.iconRef,
             title: R.intl.string(R.t.HOPqzc),
             body: R.intl.format(R.t.xAW71d, {
-              helpdeskUrl: T.sI
+              helpdeskUrl: P.sI
             }),
             position: "bottom",
             align: "center",
             caretConfig: {
               align: "center"
             },
-            onRequestClose: () => n(P.L.USER_DISMISS)
+            onRequestClose: () => n(T.L.USER_DISMISS)
           }) : null
         }
       })]
@@ -140,7 +140,7 @@ class A extends Chunk647438.PureComponent {
         dismissibleContentTypes: r
       } = this.props;
       if (r.includes(a.z.ACTIVITY_GDM_CALL_TOOLTIP) && (0, f.Q3)(a.z.ACTIVITY_GDM_CALL_TOOLTIP, {
-          dismissAction: P.L.AUTO
+          dismissAction: T.L.AUTO
         }), t);
       else if (n) return this.handleJoinCall(false);
       else return this.handleStartCall(e, false)
@@ -173,8 +173,8 @@ function D(e) {
   } = (0, l.cj)([x.Z], () => ({
     notFriend: n.type === Z.d4z.DM && null != g && !x.Z.isFriend(g),
     isBlocked: n.type === Z.d4z.DM && null != g && x.Z.isBlocked(g)
-  })), v = (0, l.e7)([C.default], () => C.default.getUser(g)), E = (0, b.bp)(), S = [], T = (0, p.Z)(n.id), P = (0, l.e7)([j.Z], () => j.Z.hasLayers());
-  return (T && !P && S.push(a.z.ACTIVITY_GDM_CALL_TOOLTIP), i || (null == v ? true : v.bot)) ? null : (0, r.jsx)(A, {
+  })), v = (0, l.e7)([C.default], () => C.default.getUser(g)), E = (0, b.bp)(), S = [], P = (0, p.Z)(n.id), T = (0, l.e7)([j.Z], () => j.Z.hasLayers());
+  return (P && !T && S.push(a.z.ACTIVITY_GDM_CALL_TOOLTIP), i || (null == v ? true : v.bot)) ? null : (0, r.jsx)(A, {
     channel: n,
     mode: s,
     inCall: o,

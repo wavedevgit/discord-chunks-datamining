@@ -150,7 +150,7 @@ function Z(e) {
         selectedPermissionCount: D
       }, n))
     })
-  }, [z, U, j, D]), q = r.useCallback(() => {
+  }, [z, U, j, D]), K = r.useCallback(() => {
     let e = Object.keys(W);
     return (0, c.ZDy)(async () => {
       let {
@@ -167,7 +167,7 @@ function Z(e) {
         selectedPermissionCount: D
       }, n))
     })
-  }, [z, j, W, D]), K = r.useCallback(() => (0, c.ZDy)(async () => {
+  }, [z, j, W, D]), q = r.useCallback(() => (0, c.ZDy)(async () => {
     let {
       default: e
     } = await n.e("21897").then(n.bind(n, 303313)), t = R.defaultMemberPermissions;
@@ -175,7 +175,7 @@ function Z(e) {
       defaultMemberPermissions: t
     }))
   }), [R]), V = D - N._n, J = V >= 0, Y = [{
-    buttonClick: q,
+    buttonClick: K,
     buttonText: w.intl.string(w.t["56jRn5"]),
     noneSelectedText: w.intl.string(w.t.C0rYfn),
     overwrites: W,
@@ -205,7 +205,7 @@ function Z(e) {
       }), (0, i.jsx)(c.zxk, {
         variant: "secondary",
         size: "sm",
-        onClick: K,
+        onClick: q,
         text: w.intl.string(w.t["HO/oXl"])
       })]
     }) : null, Y.map((e, t) => {

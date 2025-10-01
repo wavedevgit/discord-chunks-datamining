@@ -340,7 +340,7 @@ function ee(e) {
   } = (0, w.Z)(0), {
     scrolledToTop: b,
     handleScroll: j
-  } = (0, D.V)();
+  } = (0, Z.V)();
   return (0, r.jsx)(g.yWw, {
     className: F.scroller,
     style: {
@@ -354,7 +354,7 @@ function ee(e) {
           [H.stickyHeaderElevated]: !b
         }),
         ref: x,
-        children: (0, r.jsx)(D.Z, {
+        children: (0, r.jsx)(Z.Z, {
           guild: t,
           role: n,
           selectedSection: L.ZI.DISPLAY,
@@ -404,7 +404,7 @@ function ee(e) {
       }), f ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(g.izJ, {
           className: F.divider
-        }), (0, r.jsx)(Z.L, {
+        }), (0, r.jsx)(D.L, {
           guildId: t.id,
           role: n
         })]

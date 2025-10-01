@@ -48,20 +48,12 @@ function f(e) {
     checked: n,
     disabled: l
   } = e;
-  return (0, r.jsx)(s.$q, {
-    size: 24,
-    type: s.M0.INVERTED,
-    value: n,
+  return (0, r.jsx)(s.VL, {
+    checked: n,
     onChange: t,
     disabled: l,
-    style: {
-      borderWidth: 2
-    },
     className: d.checkbox,
-    children: (0, r.jsx)(a.Text, {
-      variant: "text-md/normal",
-      children: u.intl.string(u.t["2EXfGB"])
-    })
+    label: u.intl.string(u.t["2EXfGB"])
   })
 }
 

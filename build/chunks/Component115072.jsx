@@ -56,7 +56,7 @@ function k(e) {
   let {
     transitionState: N,
     onClose: I
-  } = e, A = i.useRef(null), L = i.useRef(null), [R, M] = i.useState(""), [Z, q] = i.useState(""), [z, B] = i.useState(), [V, W] = i.useState(""), [G, H] = i.useState([]), [U, X] = i.useState(), [Y, K] = i.useState(), [J, Q] = i.useState(false), [F, $] = i.useState(""), [ee, et] = i.useState(function(e) {
+  } = e, A = i.useRef(null), L = i.useRef(null), [R, Z] = i.useState(""), [M, z] = i.useState(""), [q, B] = i.useState(), [V, W] = i.useState(""), [G, H] = i.useState([]), [X, U] = i.useState(), [Y, K] = i.useState(), [J, Q] = i.useState(false), [F, $] = i.useState(""), [ee, et] = i.useState(function(e) {
     switch (e) {
       case "windows":
         return "Windows";
@@ -76,8 +76,8 @@ function k(e) {
       },
       rejectWithError: true
     }).then(e => {
-      if (null != e.body && "d3f7ef5cdca1e27320689a6dfafa79fb782182ce" !== e.body.hash) {
-        let e = new Date("1759350914273"),
+      if (null != e.body && "af3172fda6fa286649f2b2af02cd23cfd1235e82" !== e.body.hash) {
+        let e = new Date("1759351048315"),
           t = new Date,
           n = (0, j.TD)(t, e);
         n.hours > 6 && ex(n.hours)
@@ -112,8 +112,8 @@ function k(e) {
     };
   async function eS() {
     var e, t;
-    if (ev(false), "" === R || "" === Z || null == z) return void ed(true);
-    let i = null == U || null == (e = U.features) ? true : e.find(e => (0, _.pD)(e) === Y);
+    if (ev(false), "" === R || "" === M || null == q) return void ed(true);
+    let i = null == X || null == (e = X.features) ? true : e.find(e => (0, _.pD)(e) === Y);
     ep(true), ed(false);
     let l = (0, S.D)(G.map(e => {
         let {
@@ -123,8 +123,8 @@ function k(e) {
       })),
       a = await (0, _.ZD)({
         name: R,
-        description: Z,
-        priority: z,
+        description: M,
+        priority: q,
         feature: i,
         url: V,
         buildOverride: null != (t = null == ey ? true : ey.id) ? t : null,
@@ -163,7 +163,7 @@ function k(e) {
   }
   i.useEffect(() => {
     async function e() {
-      X(await (0, _.WG)())
+      U(await (0, _.WG)())
     }
     eg && e()
   }, [eg]), i.useEffect(() => {
@@ -236,17 +236,17 @@ function k(e) {
             type: "text",
             value: R,
             maxLength: 100,
-            onChange: M
+            onChange: Z
           }), (0, r.jsx)(u.Kx8, {
             label: w.intl.string(w.t["1SplHx"]),
-            error: ec && "" === Z ? w.intl.string(w.t.EkokLy) : null,
+            error: ec && "" === M ? w.intl.string(w.t.EkokLy) : null,
             placeholder: "What did you expect to see?",
-            value: Z,
-            onChange: q,
+            value: M,
+            onChange: z,
             description: eg ? "You can add additional information/media on the ticket after submitting" : true
           }), (0, r.jsx)(u.q4e, {
             label: w.intl.string(w.t.xMXLdX),
-            errorMessage: ec && true === z ? w.intl.string(w.t.EkokLy) : null,
+            errorMessage: ec && true === q ? w.intl.string(w.t.EkokLy) : null,
             renderOptionLabel: e => (function(e) {
               let t = e.priority;
               return (0, r.jsxs)("div", {
@@ -282,20 +282,20 @@ function k(e) {
               label: e.title
             })),
             optionClassName: P.formPriorityOption,
-            value: z,
+            value: q,
             maxVisibleItems: 4,
             closeOnSelect: true
           }), eg && (0, r.jsx)(u.VcW, {
             label: w.intl.string(w.t["77VVd3"]),
             value: Y,
-            options: null != (D = null == U || null == (T = U.features) || null == (k = T.filter(e => "" !== (0, _.pD)(e))) || null == (t = k.map(e => {
+            options: null != (D = null == X || null == (T = X.features) || null == (k = T.filter(e => "" !== (0, _.pD)(e))) || null == (t = k.map(e => {
               var t;
               return {
                 label: null != (t = e.name) ? t : "",
                 value: (0, _.pD)(e)
               }
             })) ? true : t.sort((e, t) => e.label.localeCompare(t.label))) ? D : [],
-            isDisabled: null == U,
+            isDisabled: null == X,
             onChange: e => K(e)
           }), (0, r.jsx)(u.oil, {
             label: w.intl.string(w.t["7p5pqq"]),
@@ -304,10 +304,10 @@ function k(e) {
             value: V,
             maxLength: 5e3,
             onChange: W
-          }), (0, r.jsx)(s.$q, {
-            value: J,
-            onChange: (e, t) => Q(t),
-            children: w.intl.string(w.t.ayhqiI)
+          }), (0, r.jsx)(u.XZJ, {
+            checked: J,
+            onChange: e => Q(e),
+            label: w.intl.string(w.t.ayhqiI)
           }), J ? (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(u.oil, {
               label: w.intl.string(w.t.rrI4Tk),

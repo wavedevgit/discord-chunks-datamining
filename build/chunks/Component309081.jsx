@@ -113,7 +113,7 @@ function x(e) {
     image: a
   }), I = S || null != E, N = l.useCallback(() => {
     d(m)
-  }, [d, m]), T = l.useMemo(() => S ? y.intl.formatToPlainString(y.t.vcC7Qk, {
+  }, [d, m]), L = l.useMemo(() => S ? y.intl.formatToPlainString(y.t.vcC7Qk, {
     imageName: (0, p.fw)(A),
     answerNumber: m + 1
   }) : null != E ? y.intl.formatToPlainString(y.t.ncOAhY, {
@@ -141,7 +141,7 @@ function x(e) {
         }
       })
     })
-  }, [R, s, m]), L = l.useCallback(e => {
+  }, [R, s, m]), T = l.useCallback(e => {
     let {
       closePopout: t
     } = e;
@@ -185,7 +185,7 @@ function x(e) {
         targetElementRef: C,
         animation: c.yRy.Animation.NONE,
         position: "bottom",
-        renderPopout: L,
+        renderPopout: T,
         children: e => {
           var l, a, {
               onClick: i,
@@ -215,7 +215,7 @@ function x(e) {
           }, u), a = a = {
             className: B,
             onClick: I && !g ? i : x,
-            "aria-label": T,
+            "aria-label": L,
             "aria-controls": null != t ? t : o,
             "aria-expanded": n || s,
             children: [Z, I && (0, r.jsx)(c.vdY, {

@@ -132,7 +132,7 @@ let N = Chunk647438.memo(function() {
       isFirstChannel: f,
       isLastChannel: C,
       tooltipDirection: I = "right"
-    } = e, S = (0, x.Mf)(t.id, i.id), T = (0, x.t4)(t.id, i.id), P = (0, x.EH)(t.id, i.id), w = (0, x.lL)(l.id, i.id), R = null != (0, b.Z)(l).find(e => e.id === t.id), D = (0, g.mn)(t.id), Z = e => {
+    } = e, S = (0, x.Mf)(t.id, i.id), T = (0, x.t4)(t.id, i.id), P = (0, x.EH)(t.id, i.id), w = (0, x.lL)(l.id, i.id), R = null != (0, b.Z)(l).find(e => e.id === t.id), Z = (0, g.mn)(t.id), D = e => {
       if (!T) return e.stopPropagation(), (0, m.s)(l.id, t.id) ? (0, h.pt)(t.id) : (0, c.ZDy)(async () => {
         let {
           default: e
@@ -173,7 +173,7 @@ let N = Chunk647438.memo(function() {
             [_.disabled]: T
           })
         }, e), {
-          onClick: Z,
+          onClick: D,
           onContextMenu: A,
           children: [(0, r.jsx)("div", {
             className: _.channelInfo,
@@ -209,7 +209,7 @@ let N = Chunk647438.memo(function() {
               value: S,
               type: o.M0.INVERTED,
               disabled: T,
-              color: D ? a.Z.colors.BG_BRAND.css : a.Z.colors.BUTTON_SECONDARY_BACKGROUND.css,
+              color: Z ? a.Z.colors.BG_BRAND.css : a.Z.colors.BUTTON_SECONDARY_BACKGROUND.css,
               innerClassName: _.checkboxInner,
               displayOnly: true
             }) : (0, r.jsx)(c.zxk, {

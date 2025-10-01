@@ -117,13 +117,12 @@ function x(e) {
             children: g.intl.string(g.t.EDBe5u)
           })]
         }), (0, r.jsx)("div", {
-          children: (0, r.jsx)(l.$q, {
-            type: l.M0.INVERTED,
-            value: null == (n = x.triggerMetadata) ? true : n.mentionRaidProtectionEnabled,
-            onChange: (e, t) => {
+          children: (0, r.jsx)(l.VL, {
+            checked: null == (n = x.triggerMetadata) ? true : n.mentionRaidProtectionEnabled,
+            onChange: e => {
               b(h(f({}, x), {
                 triggerMetadata: h(f({}, x.triggerMetadata), {
-                  mentionRaidProtectionEnabled: t
+                  mentionRaidProtectionEnabled: e
                 })
               }))
             },

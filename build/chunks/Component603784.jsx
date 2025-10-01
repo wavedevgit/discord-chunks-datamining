@@ -91,8 +91,8 @@ let w = Chunk647438.forwardRef((e, t) => {
       guildId: _,
       guild: w,
       onChannelContextMenu: R,
-      onContentClick: D,
-      onHeaderClick: Z,
+      onContentClick: Z,
+      onHeaderClick: D,
       onTargetContextMenu: A,
       onUserContextMenu: L,
       theme: k
@@ -117,7 +117,7 @@ let w = Chunk647438.forwardRef((e, t) => {
     variant: "text-sm/normal",
     children: [B, "—", F]
   });
-  let H = M ? Z : N.dG4;
+  let H = M ? D : N.dG4;
   return (0, r.jsx)(a.mh, {
     id: l.id,
     children: e => (0, r.jsxs)("div", {
@@ -230,7 +230,7 @@ let w = Chunk647438.forwardRef((e, t) => {
       }) : null, f && null != w ? (0, r.jsx)(C.tP, {
         log: l,
         guild: w,
-        onContentClick: D
+        onContentClick: Z
       }) : null]
     })
   })

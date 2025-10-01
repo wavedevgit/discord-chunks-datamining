@@ -72,12 +72,12 @@ function b(e) {
           return (0, r.jsx)(h.dd, {
             channelId: a,
             formField: e,
-            onChange: (e, r) => ((e, t) => {
+            onChange: e => ((e, t) => {
               let r = n[e];
               l([...n.slice(0, e), v(g({}, r), {
                 response: t
               }), ...n.slice(e + 1)])
-            })(t, r)
+            })(t, e)
           }, t);
         case o.QJ.TEXT_INPUT:
           return (0, r.jsx)(x.zY, {

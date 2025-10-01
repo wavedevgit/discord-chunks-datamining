@@ -114,8 +114,8 @@ function y(e) {
       return null != P && null != k && null != (e = m.Z.getApplicationEntitlementsForGuild(P.application.id, k)) ? e : []
     }),
     F = (0, p.LD)(k, true),
-    q = (null == P ? true : P.application) != null && Object.keys(null != (l = null == (n = F.result) || null == (t = n.sections[P.application.id]) ? true : t.commands) ? l : {}).length > 0,
-    K = (0, i.jsxs)(d.Kqy, {
+    K = (null == P ? true : P.application) != null && Object.keys(null != (l = null == (n = F.result) || null == (t = n.sections[P.application.id]) ? true : t.commands) ? l : {}).length > 0,
+    q = (0, i.jsxs)(d.Kqy, {
       direction: "horizontal",
       align: "center",
       children: [(0, i.jsx)(f.Z, {
@@ -159,7 +159,7 @@ function y(e) {
               items: l
             })
           })
-        }(P, q)
+        }(P, K)
       }), G, H, R]
     });
   return T ? (0, i.jsx)(d.P3F, {
@@ -169,11 +169,11 @@ function y(e) {
     children: (0, i.jsx)(d.Zbd, {
       editable: true,
       className: a()(v.card, v.clickable),
-      children: K
+      children: q
     })
   }) : (0, i.jsx)(d.Zbd, {
     editable: true,
     className: v.card,
-    children: K
+    children: q
   })
 }

@@ -458,8 +458,8 @@ function eg() {
     d = "auto" === Chunk120356,
     p = Chunk647438.useRef(null);
   (0, Chunk996073.Z)(Chunk419363, Chunk526761.rP.REDUCED_MOTION);
-  let g = Chunk647438.useCallback((e, t) => {
-      (0, h.Zt)(t ? "auto" : s)
+  let g = Chunk647438.useCallback(e => {
+      (0, h.Zt)(e ? "auto" : s)
     }, [Chunk392711]),
     E = Chunk647438.useCallback(e => {
       (0, h.Zt)(e ? "reduce" : "no-preference")
@@ -474,16 +474,11 @@ function eg() {
       children: Chunk388032.intl.format(Chunk388032.t["2l9U2t"], {
         helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.REDUCED_MOTION)
       })
-    }), (0, Chunk951288.jsx)(Chunk755721.$q, {
+    }), (0, Chunk951288.jsx)(Chunk755721.VL, {
       className: o()(Chunk10198.marginTop8, Chunk10198.marginBottom20),
-      value: Chunk538534,
-      shape: Chunk755721.zV.BOX,
-      type: Chunk755721.M0.INVERTED,
+      checked: Chunk538534,
       onChange: Chunk299363,
-      children: (0, Chunk951288.jsx)(Chunk481060.Text, {
-        variant: "text-sm/normal",
-        children: Chunk388032.intl.string(Chunk388032.t["+Dx+HB"])
-      })
+      label: Chunk388032.intl.string(Chunk388032.t["+Dx+HB"])
     }), (0, Chunk951288.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.ACCESSIBILITY_REDUCED_MOTION_ENABLE,
       children: (0, Chunk951288.jsx)(Chunk481060.j7V, {

@@ -397,7 +397,7 @@ class tp extends Chunk647438.PureComponent {
     });
     if (r === u.z.GUILD_TAG_AVAILABLE_COACHMARK) {
       var d;
-      return (0, a.jsx)(Q.ZP, {
+      return (0, a.jsx)($.ZP, {
         guildId: null != (d = this.props.selectedGuildId) ? d : null,
         onDismiss: i,
         targetElementRef: this.avatarWithPopoutRef,
@@ -509,13 +509,13 @@ class tp extends Chunk647438.PureComponent {
         suppress: t,
         selfMute: n
       } = this.props;
-      (0, F.Z)(e, t, e7.jXE.ACCOUNT_PANEL), (0, B.v)(T.Z.ACCOUNT, B.d.MIC, n)
+      (0, F.Z)(e, t, e7.jXE.ACCOUNT_PANEL), (0, G.v)(T.Z.ACCOUNT, G.d.MIC, n)
     }), ti(this, "handleToggleSelfDeaf", () => {
       let {
         serverDeaf: e,
         selfDeaf: t
       } = this.props;
-      (0, U.Z)(e, e7.jXE.ACCOUNT_PANEL), (0, B.v)(T.Z.ACCOUNT, B.d.DEAFEN, !t)
+      (0, U.Z)(e, e7.jXE.ACCOUNT_PANEL), (0, G.v)(T.Z.ACCOUNT, G.d.DEAFEN, !t)
     }), ti(this, "handleOpenAccountSettings", () => {
       this.dismissTooltips(), eU.Z.isConnected() ? (0, eg.openUserSettings)(ef.n.VOICE_AND_VIDEO_PANEL, {
         section: e7.oAB.VOICE
@@ -532,10 +532,10 @@ class tp extends Chunk647438.PureComponent {
           user: t,
           premiumSubscription: this.props.premiumSubscription,
           webBuildOverride: this.props.webBuildOverride,
-          onInteraction: (0, G.u)("UserSettingsCogContextMenu", T.Z.ACCOUNT)
+          onInteraction: (0, B.u)("UserSettingsCogContextMenu", T.Z.ACCOUNT)
         }))
       })
-    }), ti(this, "audioOnInteractionHandler", (0, G.u)("AudioDeviceMenu", T.Z.ACCOUNT)), ti(this, "handleInputAudioContextMenu", (e, t) => {
+    }), ti(this, "audioOnInteractionHandler", (0, B.u)("AudioDeviceMenu", T.Z.ACCOUNT)), ti(this, "handleInputAudioContextMenu", (e, t) => {
       this.dismissTooltips(), (0, b.jW)(e, async () => {
         let {
           default: e
@@ -836,8 +836,8 @@ function tf() {
     M = (0, Chunk332473.b)(),
     U = (0, Chunk442837.e7)([Chunk258609.Z], () => null != Chunk258609.Z.getAwaitingRemoteSessionInfo()),
     F = (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId()),
-    B = null == require ? true : require.avatarDecoration,
-    G = (0, Chunk541638.R)(require, null != Chunk575175 ? Chunk575175 : true),
+    G = null == require ? true : require.avatarDecoration,
+    B = (0, Chunk541638.R)(require, null != Chunk575175 ? Chunk575175 : true),
     z = (0, Chunk676742.Z)(Chunk120356 ? Chunk795318 : Chunk522651),
     V = Chunk5192.ZP.useName(null != Chunk575175 ? Chunk575175 : true, null, require),
     W = null != (t = Chunk51144.ZP.useName(require)) ? exports : "",
@@ -847,7 +847,7 @@ function tf() {
     } = (0, Chunk468363.U)({
       location: "Account"
     }),
-    [J, Q] = (0, Chunk291533.G)(null != Chunk575175 ? Chunk575175 : null),
+    [J, $] = (0, Chunk291533.G)(null != Chunk575175 ? Chunk575175 : null),
     [et, en] = (0, Chunk812055.b)(),
     er = Chunk594928.JH.useExperiment({
       location: "Account"
@@ -1036,7 +1036,7 @@ function tg(e) {
     U = (0, d.e7)([eU.Z], () => eU.Z.isConnected()),
     {
       Component: F,
-      events: B,
+      events: G,
       play: z
     } = P,
     V = i || s ? f.v0G : F,
@@ -1067,16 +1067,16 @@ function tg(e) {
   let J = r.useCallback(e => {
       g(e, q)
     }, [g, q]),
-    [$, Q] = r.useState(false),
+    [Q, $] = r.useState(false),
     ee = r.useCallback(e => {
       var t;
       if ((0, c.kK)(null == e ? true : e.target, Node) && (null == (t = N.current) ? true : t.contains(e.target))) return x.F;
-      Q(false)
+      $(false)
     }, []);
   (0, eq.yp)({
     event: e7.CkL.OPEN_VOICE_FILTER_POPOUT,
     handler: () => {
-      Q(true)
+      $(true)
     }
   });
   let [en, ea] = r.useState(false);
@@ -1120,7 +1120,7 @@ function tg(e) {
         return C(), (0, a.jsx)(O.Gt, {
           value: q,
           children: ed ? (0, a.jsx)(M.Z, {
-            onInteraction: (0, G.u)("AudioDeviceMenu", T.Z.ACCOUNT),
+            onInteraction: (0, B.u)("AudioDeviceMenu", T.Z.ACCOUNT),
             onClose: t,
             maybeRenderPTTCheckbox: true,
             renderInputProfiles: eu.length > 0,
@@ -1129,7 +1129,7 @@ function tg(e) {
             renderInputVolume: true,
             renderSettingsButton: true
           }) : (0, a.jsx)(L.default, {
-            onInteraction: (0, G.u)("AudioDeviceMenu", T.Z.ACCOUNT),
+            onInteraction: (0, B.u)("AudioDeviceMenu", T.Z.ACCOUNT),
             onClose: t,
             renderInputDevices: true,
             renderInputProfiles: eu.length > 0,
@@ -1171,10 +1171,10 @@ function tg(e) {
             onClick: b,
             onContextMenu: r,
             onMouseEnter: () => {
-              p(), B.onMouseEnter()
+              p(), G.onMouseEnter()
             },
             onMouseLeave: () => {
-              h(), B.onMouseLeave()
+              h(), G.onMouseLeave()
             },
             orangeGlow: R,
             plated: null != v,
@@ -1233,10 +1233,10 @@ function tg(e) {
         tooltipForceOpen: _,
         plated: null != v,
         onMouseEnter: () => {
-          p(), B.onMouseEnter()
+          p(), G.onMouseEnter()
         },
         onMouseLeave: () => {
-          h(), B.onMouseLeave()
+          h(), G.onMouseLeave()
         },
         icon: (0, a.jsx)(V, {
           size: "custom",
@@ -1266,7 +1266,7 @@ function tg(e) {
         ignoreModalClicks: true,
         onRequestOpen: er,
         onRequestClose: ee,
-        shouldShow: $,
+        shouldShow: Q,
         renderPopout: e => {
           let {
             closePopout: t
@@ -1308,13 +1308,13 @@ function tg(e) {
                 } = e, s = null;
                 t === u.z.VOICE_FILTER_EARLY_ACCESS_COACHMARK ? s = (0, a.jsx)(eP.U, {
                   markAsDismissed: i,
-                  onCTA: () => Q(true)
+                  onCTA: () => $(true)
                 }) : t === u.z.VOICE_FILTER_LAUNCH_COACHMARK ? s = (0, a.jsx)(eO.n, {
                   markAsDismissed: i,
-                  onCTA: () => Q(true)
+                  onCTA: () => $(true)
                 }) : t === u.z.VOICE_FILTER_FIRST_USE_COACHMARK && (s = (0, a.jsx)(eT.v, {
                   markAsDismissed: i,
-                  onCTA: () => Q(true)
+                  onCTA: () => $(true)
                 }));
                 let c = () => (0, a.jsx)(e6.Z, tl({
                   ref: S,
@@ -1347,7 +1347,7 @@ function tg(e) {
                   "aria-label": ta.intl.string(ta.t.Hapb4O),
                   disabled: o,
                   onClick: e => {
-                    i(te.L.INDIRECT_ACTION), n(e), null != k && !$ && w ? (0, ek.$)(() => Q(true)) : Q(!$)
+                    i(te.L.INDIRECT_ACTION), n(e), null != k && !Q && w ? (0, ek.$)(() => $(true)) : $(!Q)
                   }
                 }, r));
                 return null != s ? (0, a.jsx)(f.yRy, {
@@ -1411,7 +1411,7 @@ function tv(e) {
         return m(), (0, a.jsx)(O.Gt, {
           value: E,
           children: (0, a.jsx)(M.Z, {
-            onInteraction: (0, G.u)("AudioDeviceMenu", T.Z.ACCOUNT),
+            onInteraction: (0, B.u)("AudioDeviceMenu", T.Z.ACCOUNT),
             onClose: t,
             renderOutputDevices: true,
             renderOutputVolume: true,

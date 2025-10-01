@@ -28,7 +28,7 @@ function c(e) {
     isGuestInviteCreationToggleEnabled: f,
     inviteFlags: j,
     onSetInviteFlags: N
-  } = e, _ = s.ZP.getMaxAgeOptionByValue(g), E = d.find(e => e.value === h);
+  } = e, _ = s.ZP.getMaxAgeOptionByValue(g), S = d.find(e => e.value === h);
   return (0, l.jsx)("div", {
     className: u.settingsContent,
     children: (0, l.jsxs)("form", {
@@ -42,7 +42,7 @@ function c(e) {
       }), (0, l.jsx)(r.VcW, {
         label: o.intl.string(o.t.jDqWHR),
         options: d,
-        value: null == E ? true : E.value,
+        value: null == S ? true : S.value,
         onChange: I
       }), !n && (0, l.jsx)(r.j7V, {
         className: u.switch,

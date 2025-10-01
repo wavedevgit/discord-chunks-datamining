@@ -6,7 +6,7 @@ require.d(exports, {
   GU: () => Y,
   H8: () => J,
   HI: () => X,
-  HW: () => B,
+  HW: () => G,
   Ib: () => eo,
   KB: () => eu,
   S2: () => H,
@@ -17,12 +17,12 @@ require.d(exports, {
   h9: () => es,
   iw: () => en,
   jC: () => V,
-  jQ: () => G,
+  jQ: () => B,
   lT: () => q,
   rd: () => ed,
   t4: () => ec,
   uF: () => em,
-  zn: () => $
+  zn: () => Q
 }), require("./467055.js"), require("./388685.js"), require("./35282.js"), require("./539854.js");
 var a, r, Chunk647438 = require("./647438.js"),
   Chunk973805 = require("./973805.js"),
@@ -90,7 +90,7 @@ function F(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let B = {
+let G = {
     sRGB: Chunk973805.Z,
     A98RGB: Chunk764160.Z,
     ACEScc: Chunk808131.Z,
@@ -118,8 +118,8 @@ let B = {
     XYZ_D50: Chunk341901.Z,
     XYZ_D65: Chunk856308.Z
   },
-  G = Object.fromEntries(Object.keys(B).map(e => [e, e]));
-Object.values(B).forEach(e => w.Z.register(e));
+  B = Object.fromEntries(Object.keys(G).map(e => [e, e]));
+Object.values(G).forEach(e => w.Z.register(e));
 let {
   SemanticColors: z
 } = Chunk521904.V, V = z, H = CSS.supports("color", "color(display-p3 1 0 0)") && CSS.supports("color", "color(display-p3 1 0 0 / 1)");
@@ -172,7 +172,7 @@ function X(e) {
 }
 var J = ((a = {}).TOKENS = "Tokens", a.PALETTES = "Palettes", a);
 
-function $() {
+function Q() {
   return function(e, t) {
     let [n, a] = W("".concat(e, "-states"), [t]), [r, l] = W("".concat(e, "-index"), 0), s = n[r], o = i.useCallback(e => {
       a(["function" == typeof e ? e(s) : e, ...n].slice(0, 20)), l(0)
@@ -189,11 +189,11 @@ function $() {
     scales: []
   })
 }
-let Q = [100, 130, 160, 200, 230, 260, 300, 330, 345, 360, 400, 430, 460, 500, 530, 560, 600, 630, 660, 700, 730, 760, 800, 830, 860, 900],
+let $ = [100, 130, 160, 200, 230, 260, 300, 330, 345, 360, 400, 430, 460, 500, 530, 560, 600, 630, 660, 700, 730, 760, 800, 830, 860, 900],
   ee = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26];
 
 function et(e) {
-  return "plum" === e ? ee : Q
+  return "plum" === e ? ee : $
 }
 var en = ((r = {}).LINEAR = "Linear", r.EASE_IN = "Ease In", r.EASE_OUT = "Ease Out", r.EASE_IN_OUT = "Ease In Out", r);
 
@@ -217,7 +217,7 @@ function er(e) {
     darkness: r,
     lightness: i,
     easingStrength: s = 1
-  } = e, o = B[e.colorSpace], c = (0, A.Z)(n, o), d = (0, Z.CD)(c, "white", 1 - r, {
+  } = e, o = G[e.colorSpace], c = (0, A.Z)(n, o), d = (0, Z.CD)(c, "white", 1 - r, {
     space: o,
     outputSpace: l.Z
   }), u = (0, Z.CD)(c, "black", 1 - i, {

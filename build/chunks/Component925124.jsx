@@ -174,8 +174,8 @@ function O(e) {
       }
     }
   }, [b, y]);
-  let B = "Active";
-  return D && (B = "Acked"), L && (B = "Expired"), (0, a.jsxs)("div", {
+  let G = "Active";
+  return D && (G = "Acked"), L && (G = "Expired"), (0, a.jsxs)("div", {
     className: l()(j.card, M ? j.gradientWrapperTier0 : j.gradientWrapperTier2),
     children: [(0, a.jsx)("div", {
       className: l()(j.row, j.nameRow),
@@ -267,8 +267,8 @@ function O(e) {
         }),
         children: (0, a.jsx)(c.Text, {
           variant: "eyebrow",
-          color: "Acked" === B ? true : "always-white",
-          children: B
+          color: "Acked" === G ? true : "always-white",
+          children: G
         })
       }), null != k && (0, a.jsx)("div", {
         className: l()(j.badge, j.redeemed),
@@ -493,9 +493,9 @@ function I() {
       E(e.trial.sort((e, t) => e.id.localeCompare(t.id))), k(e.discount.sort((e, t) => e.id.localeCompare(t.id)))
     }))
   }, [w]);
-  let B = async () => {
+  let G = async () => {
     null != l && (await C(l, "trial"), R(true))
-  }, G = async () => {
+  }, B = async () => {
     null != Chunk572004 && (await C(Chunk572004, "discount"), R(true))
   }, z = async () => {
     await S(), R(true)
@@ -554,7 +554,7 @@ function I() {
           }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
             variant: "primary",
             text: "Create",
-            onClick: B
+            onClick: G
           })]
         })]
       }), (0, Chunk951288.jsxs)("section", {
@@ -575,7 +575,7 @@ function I() {
           }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
             variant: "primary",
             text: "Create",
-            onClick: G
+            onClick: B
           })]
         })]
       }), Chunk474936.length > 0 && (0, Chunk951288.jsxs)("section", {

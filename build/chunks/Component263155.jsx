@@ -128,14 +128,14 @@ let k = "WELCOME_CHANNEL",
     }) : (0, r.jsx)(T, {
       size: "md",
       color: "currentColor",
-      className: Z.channelIcon
+      className: D.channelIcon
     }) : (0, r.jsx)(E.Z, {
       width: 24,
       height: 24,
-      className: Z.warningIcon
+      className: D.warningIcon
     }), (0, r.jsxs)("div", {
-      className: s()(Z.welcomeChannel, {
-        [Z.dragging]: v
+      className: s()(D.welcomeChannel, {
+        [D.dragging]: v
       }),
       ref: O,
       "data-dnd-name": o.description,
@@ -154,27 +154,27 @@ let k = "WELCOME_CHANNEL",
         })
       },
       children: [l, (0, r.jsxs)("div", {
-        className: Z.channelDescriptionWrapper,
+        className: D.channelDescriptionWrapper,
         children: [(0, r.jsx)(m.Text, {
           variant: "text-md/semibold",
           color: "header-primary",
           children: o.description
         }), (0, r.jsxs)(m.Text, {
-          className: I ? true : Z.channelWarning,
+          className: I ? true : D.channelWarning,
           variant: "text-xs/normal",
           color: "header-secondary",
           children: [(0, r.jsx)(T, {
-            className: Z.channelTitleIcon,
+            className: D.channelTitleIcon,
             size: "xxs",
             color: "currentColor"
           }), (0, r.jsx)("span", {
-            children: I ? P : D.intl.string(D.t.zFuCsL)
+            children: I ? P : Z.intl.string(Z.t.zFuCsL)
           })]
         })]
       }), (0, r.jsx)(m.hU, {
         variant: "icon-only",
         icon: m.XHJ,
-        "aria-label": D.intl.string(D.t.JYBc3N),
+        "aria-label": Z.intl.string(Z.t.JYBc3N),
         onClick: G
       })]
     })
@@ -228,15 +228,15 @@ let k = "WELCOME_CHANNEL",
       null != t && T.Z.open(t.id, w.pNK.ONBOARDING)
     }, [t]);
     return null == t ? null : (0, r.jsxs)(m.hjN, {
-      title: D.intl.string(D.t["2rkmDg"]),
+      title: Z.intl.string(Z.t["2rkmDg"]),
       tag: m.RB0.H1,
       children: [(0, r.jsx)("div", {
-        className: Z.notice,
+        className: D.notice,
         children: (0, r.jsxs)(m.Text, {
           variant: "text-md/normal",
           children: [(0, r.jsx)(E.Z, {
-            className: Z.noticeIcon
-          }), D.intl.format(D.t.oj2vi4, {
+            className: D.noticeIcon
+          }), Z.intl.format(Z.t.oj2vi4, {
             onboardingLink: e => (0, r.jsx)(O.Z, {
               onClick: B,
               children: e
@@ -245,7 +245,7 @@ let k = "WELCOME_CHANNEL",
         })
       }), (0, r.jsx)(m.Text, {
         variant: "text-sm/normal",
-        children: D.intl.string(D.t["w2d74+"])
+        children: Z.intl.string(Z.t["w2d74+"])
       }), (0, r.jsx)(P.Z, {
         enabled: S,
         onPreview: (null == N ? true : N.length) === 0 ? true : () => {
@@ -263,37 +263,37 @@ let k = "WELCOME_CHANNEL",
           k(!S)
         } : true,
         animateStatus: x,
-        firstLine: S ? D.intl.string(D.t.JbB7Qk) : D.intl.string(D.t["/bd0Qk"]),
-        secondLine: S ? D.intl.string(D.t["TA1g7+"]) : D.intl.string(D.t.nc6r1N)
+        firstLine: S ? Z.intl.string(Z.t.JbB7Qk) : Z.intl.string(Z.t["/bd0Qk"]),
+        secondLine: S ? Z.intl.string(Z.t["TA1g7+"]) : Z.intl.string(Z.t.nc6r1N)
       }), (0, r.jsxs)("div", {
-        className: Z.previewContainer,
+        className: D.previewContainer,
         children: [(0, r.jsxs)("div", {
-          className: Z.welcomeHeader,
+          className: D.welcomeHeader,
           children: [(0, r.jsx)(v.Z, {
             size: v.Z.Sizes.LARGER,
-            className: Z.icon,
+            className: D.icon,
             guild: t,
             animate: true,
             tabIndex: false
           }), (0, r.jsx)(m.X6q, {
-            className: Z.welcomeTitle,
+            className: D.welcomeTitle,
             variant: "heading-xl/semibold",
-            children: D.intl.format(D.t["0aydCA"], {
+            children: Z.intl.format(Z.t["0aydCA"], {
               guildName: t.name,
               guildNameHook: (e, n) => (0, r.jsxs)("span", {
                 children: [(0, r.jsx)(_.Z, {
                   guild: t,
-                  className: Z.headerGuildBadge,
-                  flowerStarClassName: Z.flowerStar
+                  className: D.headerGuildBadge,
+                  flowerStarClassName: D.flowerStar
                 }), (0, r.jsx)("strong", {
                   children: e
                 })]
               }, n)
             })
           }), (0, r.jsx)("div", {
-            className: Z.descriptionWrapper,
+            className: D.descriptionWrapper,
             children: (0, r.jsx)(m.Kx8, {
-              placeholder: D.intl.string(D.t.qzZHaW),
+              placeholder: Z.intl.string(Z.t.qzZHaW),
               onChange: e => {
                 (0, y.VP)({
                   description: e
@@ -313,15 +313,15 @@ let k = "WELCOME_CHANNEL",
             })
           })]
         }), (0, r.jsx)(m.izJ, {
-          className: Z.divider
+          className: D.divider
         }), (0, r.jsxs)("div", {
-          className: Z.welcomeChannels,
+          className: D.welcomeChannels,
           children: [(0, r.jsx)(m.vwX, {
-            children: D.intl.string(D.t.euJXzc)
+            children: Z.intl.string(Z.t.euJXzc)
           }), (0, r.jsx)(m.Text, {
             variant: "text-sm/normal",
-            className: Z.addChannelSubtext,
-            children: D.intl.string(D.t.VOnnn5)
+            className: D.addChannelSubtext,
+            children: Z.intl.string(Z.t.VOnnn5)
           }), null == N ? true : N.map((e, n) => (0, r.jsx)(G, {
             guildId: t.id,
             welcomeChannel: e,

@@ -35,7 +35,7 @@ function _(e) {
     imageCTA: P,
     imageAriaLabel: w,
     setFilename: R
-  } = (0, f.Z)(_), D = i.useMemo(() => {
+  } = (0, f.Z)(_), Z = i.useMemo(() => {
     var e;
     return null != (e = null == t ? true : t.map(e => ({
       value: e,
@@ -43,7 +43,7 @@ function _(e) {
     }))) ? e : []
   }, [t]);
 
-  function Z(e, t) {
+  function D(e, t) {
     null != t && R(t.name), T(e)
   }
   let A = (0, m.mY)(),
@@ -76,7 +76,7 @@ function _(e) {
           titleId: k,
           disabled: A,
           children: (0, r.jsx)(s.q4e, {
-            options: D,
+            options: Z,
             isDisabled: A || null == t,
             placeholder: b.intl.string(b.t["88XZDg"]),
             value: C,
@@ -114,7 +114,7 @@ function _(e) {
           disabled: A,
           children: b.intl.string(b.t["0iUofH"])
         }), (0, r.jsx)(o.Z, {
-          onChange: Z,
+          onChange: D,
           "aria-label": w,
           disabled: A,
           text: P,
@@ -129,7 +129,7 @@ function _(e) {
         hideSize: true,
         className: v.iconUploader,
         imageClassName: v.tierSymbolUploaderInner,
-        onChange: Z,
+        onChange: D,
         "aria-label": w,
         disabled: A
       })]

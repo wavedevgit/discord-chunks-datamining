@@ -93,7 +93,7 @@ let w = e => {
     let {
       guild: t,
       channel: n
-    } = e, i = (0, S.a5)({
+    } = e, i = (0, b.a5)({
       type: n.type
     }), r = (0, l.jsx)(h.Text, {
       variant: "text-xs/medium",
@@ -190,7 +190,7 @@ let w = e => {
     })
   };
 
-function V(e) {
+function L(e) {
   let {
     guild: t,
     channel: n,
@@ -206,7 +206,7 @@ function V(e) {
   })
 }
 
-function L(e) {
+function V(e) {
   let {
     className: t,
     children: n
@@ -249,27 +249,27 @@ function F(e) {
     canUseVanityURL: f,
     disabled: j,
     hasSelection: N,
-    options: S,
+    options: b,
     setOptions: w,
     isApplicationBypassAllowed: R,
     isGuestInviteAllowed: k,
     isTemporaryInviteAllowed: D,
     setError: F,
     analyticsLocation: B
-  } = e, [z, G] = i.useState(false), [H, q] = i.useState(false), Y = i.useRef(null), [W] = (0, d.Wu)([_.Z], () => [_.Z.hideInstantInvites]), K = (0, I.Dt)(), X = (0, I.Dt)(), Q = (0, I.Dt)(), $ = i.useMemo(() => f && null != r.vanityURLCode ? (0, O.Z)(r.vanityURLCode, false) : null, [r, f]), J = i.useCallback(async () => {
+  } = e, [G, z] = i.useState(false), [H, q] = i.useState(false), Y = i.useRef(null), [W] = (0, d.Wu)([_.Z], () => [_.Z.hideInstantInvites]), K = (0, I.Dt)(), X = (0, I.Dt)(), Q = (0, I.Dt)(), $ = i.useMemo(() => f && null != r.vanityURLCode ? (0, O.Z)(r.vanityURLCode, false) : null, [r, f]), J = i.useCallback(async () => {
     var e, t;
     if (j) return;
     null !== Y.current && clearTimeout(Y.current);
     let n = await v();
     o()(null != n, "Invite key could not be determined.");
     let l = (0, O.Z)(n);
-    return (0, b.JG)(l, () => {
-      G(true), Y.current = setTimeout(() => {
-        G(false), Y.current = null
+    return (0, E.JG)(l, () => {
+      z(true), Y.current = setTimeout(() => {
+        z(false), Y.current = null
       }, 1e3)
     }, e => {
       F(e)
-    }), E.default.track(C.rMx.COPY_INSTANT_INVITE, {
+    }), S.default.track(C.rMx.COPY_INSTANT_INVITE, {
       server: r.id,
       channel: null != (e = null == s ? true : s.id) ? e : null,
       channel_type: null != (t = null == s ? true : s.type) ? t : null,
@@ -288,12 +288,12 @@ function F(e) {
       max_uses: e
     })
   }, [w]), en = i.useCallback(e => {
-    S.flags === e ? w({
+    b.flags === e ? w({
       flags: true
     }) : w({
       flags: e
     })
-  }, [S, w]), el = i.useCallback(e => {
+  }, [b, w]), el = i.useCallback(e => {
     w({
       temporary: e
     })
@@ -309,12 +309,12 @@ function F(e) {
         default: e
       } = await n.e("84212").then(n.bind(n, 593851));
       return t => (0, l.jsx)(e, M(A({}, t), {
-        initialOptions: S,
+        initialOptions: b,
         onChangeMaxAge: ee,
         onChangeMaxUses: et
       }))
     })
-  }, [S, ee, et]), er = function(e) {
+  }, [b, ee, et]), er = function(e) {
     let t = y.H.find(t => {
         let {
           value: n
@@ -331,12 +331,12 @@ function F(e) {
       maxAge: t.label,
       maxUses: n.label
     }) : n.value === T.ZP.INVITE_OPTIONS_UNLIMITED.value && t.value !== T.ZP.INVITE_OPTIONS_FOREVER.value ? t.label : n.value !== T.ZP.INVITE_OPTIONS_UNLIMITED.value && t.value === T.ZP.INVITE_OPTIONS_FOREVER.value ? n.label : null
-  }(S);
+  }(b);
   return (0, l.jsxs)("div", {
     className: a()(t, Z.footer),
     children: [(0, l.jsxs)("div", {
       className: Z.guildRow,
-      children: [(0, l.jsx)(V, {
+      children: [(0, l.jsx)(L, {
         guild: r,
         channel: s,
         applicationId: p
@@ -358,7 +358,7 @@ function F(e) {
           })
         }))
       })]
-    }), H && (0, l.jsxs)(L, {
+    }), H && (0, l.jsxs)(V, {
       children: [(0, l.jsxs)(U, {
         onClick: ei,
         children: [(0, l.jsxs)("div", {
@@ -402,7 +402,7 @@ function F(e) {
           })]
         }), (0, l.jsx)(g.T2, {
           id: K,
-          checked: S.flags === u.$.IS_APPLICATION_BYPASS,
+          checked: b.flags === u.$.IS_APPLICATION_BYPASS,
           onChange: () => en(u.$.IS_APPLICATION_BYPASS)
         })]
       }), k && (0, l.jsxs)(U, {
@@ -422,7 +422,7 @@ function F(e) {
           })]
         }), (0, l.jsx)(g.T2, {
           id: X,
-          checked: S.flags === u.$.IS_GUEST_INVITE,
+          checked: b.flags === u.$.IS_GUEST_INVITE,
           onChange: () => en(u.$.IS_GUEST_INVITE)
         })]
       }), D && (0, l.jsxs)(U, {
@@ -442,7 +442,7 @@ function F(e) {
           })]
         }), (0, l.jsx)(g.T2, {
           id: Q,
-          checked: !!S.temporary,
+          checked: !!b.temporary,
           onChange: e => el(e)
         })]
       })]
@@ -462,7 +462,7 @@ function F(e) {
             null == e || null == (t = e.onClick) || t.call(e), J()
           },
           disabled: j,
-          children: z ? (0, l.jsxs)(l.Fragment, {
+          children: G ? (0, l.jsxs)(l.Fragment, {
             children: [(0, l.jsx)(h.dz2, {
               size: "xs",
               color: "currentColor"

@@ -2,7 +2,7 @@
 /** chunk id: 266665, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => D
+  Z: () => Z
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -81,8 +81,8 @@ function R(e) {
     N = (0, O.T)(c, g, m),
     I = (0, b.fI)(m),
     R = null == N && !I,
-    D = (null == (t = m.tags) ? true : t.guild_connections) !== true,
-    Z = (0, x._f)(c.id, m, m.colorStrings),
+    Z = (null == (t = m.tags) ? true : t.guild_connections) !== true,
+    D = (0, x._f)(c.id, m, m.colorStrings),
     [, A] = (0, a.c)({
       type: w,
       item: () => (v(m.id), {
@@ -114,18 +114,18 @@ function R(e) {
       })
     }),
     G = null != (i = m.colorString) ? i : E.Pbq;
-  return l = D ? (0, r.jsx)(f.Z, {
+  return l = Z ? (0, r.jsx)(f.Z, {
     size: 12,
     color: m.colorString,
     className: S.verifiedRoleIcon
   }) : "dot" === C ? (0, r.jsx)(d.FhE, {
     color: G,
-    colors: Z,
+    colors: D,
     background: false,
     tooltip: false
   }) : (0, r.jsx)(d.xko, {
     color: G,
-    colors: Z
+    colors: D
   }), (0, r.jsxs)(d.njP.Item, {
     className: s()(S.row, {
       [S.dragBefore]: null !== L && j < L,
@@ -163,7 +163,7 @@ function R(e) {
   })
 }
 
-function D(e) {
+function Z(e) {
   let {
     guild: t,
     currentRoleId: n,
@@ -174,8 +174,8 @@ function D(e) {
     handleScroll: E
   } = (0, C.V)(), {
     handleDragStart: w,
-    handleDragReset: D,
-    handleDragComplete: Z
+    handleDragReset: Z,
+    handleDragComplete: D
   } = (0, y.Z)(o), A = i.useRef(null), L = i.useCallback(e => {
     var t, n;
     let r = o.findIndex(t => t.id === e);
@@ -246,8 +246,8 @@ function D(e) {
             onClick: () => l(e.id),
             currentPosition: i,
             onDragStart: w,
-            onDragReset: D,
-            onDragComplete: Z,
+            onDragReset: Z,
+            onDragComplete: D,
             roleStyle: f
           }, e.id))
         })

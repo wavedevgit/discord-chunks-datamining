@@ -394,7 +394,7 @@ function eN(e) {
     properties: {
       panel: o
     }
-  }), (0, a.jsxs)(G.Gk, {
+  }), (0, a.jsxs)(B.Gk, {
     children: [(0, a.jsxs)(h.ZP, {
       className: e_.headerBar,
       toolbar: n ? null : (0, a.jsxs)(a.Fragment, {
@@ -414,7 +414,7 @@ function eN(e) {
       }), (0, a.jsx)(h.ZP.Title, {
         children: "DevTools"
       })]
-    }), (0, a.jsx)(i, {}), l(), (0, a.jsx)(G.Br, {
+    }), (0, a.jsx)(i, {}), l(), (0, a.jsx)(B.Br, {
       className: ej.layerContainer
     })]
   })

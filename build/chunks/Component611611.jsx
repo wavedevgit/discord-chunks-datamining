@@ -110,9 +110,9 @@ function x(e) {
       answers: A,
       question: I,
       allowMultiSelect: N,
-      setAllowMultiSelect: T,
+      setAllowMultiSelect: L,
       duration: U,
-      setDuration: L,
+      setDuration: T,
       handleQuestionChange: Z,
       handleAnswerTextChange: B,
       handleEmojiSelect: Y,
@@ -221,16 +221,11 @@ function x(e) {
     onClose: b,
     title: h.intl.string(h.t["GD/8X1"]),
     actions: el,
-    actionBarInput: (0, r.jsx)(c.$q, {
+    actionBarInput: (0, r.jsx)(c.VL, {
       className: v.checkbox,
-      size: 24,
-      value: N,
-      onChange: (e, t) => T(t),
-      children: (0, r.jsx)(s.Text, {
-        variant: "text-md/medium",
-        color: "interactive-active",
-        children: h.intl.string(h.t["Ux+iQU"])
-      })
+      checked: N,
+      onChange: e => L(e),
+      label: h.intl.string(h.t["Ux+iQU"])
     }),
     children: (0, r.jsxs)("div", {
       className: v.content,
@@ -280,7 +275,7 @@ function x(e) {
         size: 18
       }), (0, r.jsx)(w, {
         selectedDuration: U,
-        onSelect: L
+        onSelect: T
       })]
     })
   })

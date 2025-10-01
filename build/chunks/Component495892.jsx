@@ -190,7 +190,7 @@ function S(e) {
     headerSubtext: P,
     descriptionText: w,
     icon: R
-  } = c, D = !(0, u.Vb)(t);
+  } = c, Z = !(0, u.Vb)(t);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: v.ruleIconContainer,
@@ -213,7 +213,7 @@ function S(e) {
           variant: "text-sm/normal",
           children: P
         })]
-      }), D && (0, r.jsx)(a.Text, {
+      }), Z && (0, r.jsx)(a.Text, {
         className: v.ruleTextDescription,
         variant: "text-sm/normal",
         children: w

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => et,
-  n: () => J
+  n: () => q
 }), require("./539854.js"), require("./415506.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -69,7 +69,7 @@ function X(e) {
   return e
 }
 
-function q(e, t) {
+function J(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -81,7 +81,7 @@ function q(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let J = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk388610.Z], () => {
+let q = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk388610.Z], () => {
   let e = Chunk388610.Z.getChannel();
   return {
     submitting: Chunk277053.Z.formState === Chunk981631.QZA.SUBMITTING,
@@ -133,7 +133,7 @@ function Q(e) {
         r = a.IH(r, e)
     }
     if (P.Z.can(e, n, {
-        [t.id]: q(X({}, t), {
+        [t.id]: J(X({}, t), {
           allow: l,
           deny: r
         })
@@ -305,7 +305,7 @@ function ee() {
         } = l, a = null != b ? (0, O.lV)(b) : null, o = null != r && a === r.id, {
           default: c
         } = await n.e("83884").then(n.bind(n, 905687));
-        return n => (0, i.jsx)(c, q(X({}, n), {
+        return n => (0, i.jsx)(c, J(X({}, n), {
           id: e,
           role: r,
           handleDeletePermission: o ? true : () => {
@@ -406,7 +406,7 @@ function ee() {
           position: "bottom",
           autoInvert: false,
           clickTrap: true,
-          children: n => (0, i.jsx)(d.njP.Header, q(X({
+          children: n => (0, i.jsx)(d.njP.Header, J(X({
             ref: e
           }, n), {
             children: (0, i.jsxs)("div", {

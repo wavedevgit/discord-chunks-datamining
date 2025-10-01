@@ -74,11 +74,11 @@ let C = {
       thumbnailPreviewSrc: "",
       effects: w,
       animationType: s.y.ANIMATION_TYPE_UNSPECIFIED
-    }), [w]), B = e => {
+    }), [w]), G = e => {
       let t = e.currentTarget.files;
       return null == t ? null : t[0]
-    }, G = (e, t) => {
-      let n = B(t);
+    }, B = (e, t) => {
+      let n = G(t);
       null != n && (0, f.i0)(n, t => {
         Z(a => y(_({}, a), {
           [e]: (0, f.z)(t, n)
@@ -194,7 +194,7 @@ let C = {
               children: ["Upload Animated Layer", (0, a.jsx)(m.Z, {
                 ref: T,
                 onChange: e => {
-                  let t = B(e);
+                  let t = G(e);
                   null != t && (0, f.i0)(t, async e => {
                     let n = await (0, f.Xv)(e, t, w.length);
                     R(e => [...e, n])
@@ -212,21 +212,21 @@ let C = {
               color: c.Tt.GREEN,
               children: ["Upload thumbnail.png", (0, a.jsx)(m.Z, {
                 ref: T,
-                onChange: e => G(f.cq.THUMBNAIL, e),
+                onChange: e => B(f.cq.THUMBNAIL, e),
                 multiple: false
               })]
             }), (0, a.jsxs)(c.zx, {
               color: c.Tt.GREEN,
               children: ["Upload static.png", (0, a.jsx)(m.Z, {
                 ref: T,
-                onChange: e => G(f.cq.STATIC, e),
+                onChange: e => B(f.cq.STATIC, e),
                 multiple: false
               })]
             }), (0, a.jsxs)(c.zx, {
               color: c.Tt.GREEN,
               children: ["Upload reduced_motion.png", (0, a.jsx)(m.Z, {
                 ref: T,
-                onChange: e => G(f.cq.REDUCED_MOTION, e),
+                onChange: e => B(f.cq.REDUCED_MOTION, e),
                 multiple: false
               })]
             })]
@@ -474,7 +474,7 @@ let C = {
                 }), (0, a.jsx)(m.Z, {
                   ref: T,
                   onChange: e => ((e, t) => {
-                    let n = B(e);
+                    let n = G(e);
                     null != n && (0, f.i0)(n, e => {
                       R(a => {
                         let r = [...a],

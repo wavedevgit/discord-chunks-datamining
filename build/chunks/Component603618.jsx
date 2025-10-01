@@ -70,7 +70,7 @@ function Q(e) {
   return e
 }
 
-function K(e, t) {
+function X(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -83,7 +83,7 @@ function K(e, t) {
   }), e
 }
 
-function X(e) {
+function K(e) {
   let {
     entry: t,
     currentUserActivity: n,
@@ -160,7 +160,7 @@ function X(e) {
   return (0, i.jsx)(p.ua7, {
     text: S,
     "aria-label": S,
-    children: e => (0, i.jsx)(d.zx, K(Q({}, e), {
+    children: e => (0, i.jsx)(d.zx, X(Q({}, e), {
       submitting: "sending" === s,
       onClick: f ? b : v,
       className: B.inviteButton,
@@ -181,7 +181,7 @@ function X(e) {
   })
 }
 
-function q(e) {
+function J(e) {
   var t;
   let {
     entry: n,
@@ -210,7 +210,7 @@ function q(e) {
   return (0, i.jsx)(p.ua7, {
     text: g,
     "aria-label": g,
-    children: e => (0, i.jsx)(d.zx, K(Q({}, e), {
+    children: e => (0, i.jsx)(d.zx, X(Q({}, e), {
       submitting: "sending" === u,
       onClick: m,
       className: B.inviteButton,
@@ -231,7 +231,7 @@ function q(e) {
   })
 }
 
-function J(e) {
+function q(e) {
   let {
     entry: t,
     currentUserActivity: n,
@@ -272,11 +272,11 @@ function J(e) {
           entry: t
         }, "entry-".concat(n)))
       })]
-    }), (0, i.jsx)(q, {
+    }), (0, i.jsx)(J, {
       entry: t,
       currentUserActivity: n,
       idx: r
-    }), (0, i.jsx)(X, {
+    }), (0, i.jsx)(K, {
       entry: t,
       currentUserActivity: n,
       idx: r
@@ -325,7 +325,7 @@ function ee(e) {
         tag: "div",
         children: Y.intl.string(Y.t.y9eo7e)
       })
-    }), t.map((e, t) => (0, i.jsx)(J, {
+    }), t.map((e, t) => (0, i.jsx)(q, {
       idx: t,
       entry: e,
       currentUserActivity: n
@@ -413,7 +413,7 @@ function et(e) {
 
 function en(e) {
   let t = et(e);
-  return (0, i.jsx)(ee, K(Q({}, t), {
+  return (0, i.jsx)(ee, X(Q({}, t), {
     className: e.className
   }))
 }
@@ -461,7 +461,7 @@ function er(e) {
     children: [(0, i.jsx)(ei, {
       activity: u,
       currentUser: a
-    }), (0, i.jsx)(ee, K(Q({}, d), {
+    }), (0, i.jsx)(ee, X(Q({}, d), {
       className: B.contentInventoryContainer,
       hideHeader: true
     }))]

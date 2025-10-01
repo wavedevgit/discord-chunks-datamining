@@ -1,8 +1,8 @@
 /** Chunk was on 7654 **/
 /** chunk id: 603236, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  I: () => S,
-  S: () => E
+  I: () => b,
+  S: () => S
 }), require("./997841.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk869306 = require("./869306.js"),
   Chunk10198 = require("./10198.js");
-let E = Chunk442837.ZP.connectStores([Chunk246946.Z], () => ({
+let S = Chunk442837.ZP.connectStores([Chunk246946.Z], () => ({
     hideValue: Chunk246946.Z.hideInstantInvites
   }))(e => {
     let {
@@ -43,7 +43,7 @@ let E = Chunk442837.ZP.connectStores([Chunk246946.Z], () => ({
       disabled: a
     })
   }),
-  S = e => {
+  b = e => {
     let {
       guild: t,
       noInvitesAvailable: n,
@@ -52,8 +52,8 @@ let E = Chunk442837.ZP.connectStores([Chunk246946.Z], () => ({
       modalState: u,
       isApplicationBypassToggleEnabled: c,
       setInviteFlags: h,
-      copyValue: S,
-      changePage: b,
+      copyValue: b,
+      changePage: E,
       inviteChannel: T,
       source: O,
       code: y,
@@ -78,8 +78,8 @@ let E = Chunk442837.ZP.connectStores([Chunk246946.Z], () => ({
       })
     }, [null == Z ? true : Z.id, T, O, y, C]);
     return (0, l.jsxs)(l.Fragment, {
-      children: [(0, l.jsx)(E, {
-        value: S,
+      children: [(0, l.jsx)(S, {
+        value: b,
         autoFocus: r,
         onCopy: D,
         disabled: P
@@ -127,7 +127,7 @@ let E = Chunk442837.ZP.connectStores([Chunk246946.Z], () => ({
         variant: "text-xs/normal",
         className: a()(_.marginTop8, N.footerText),
         children: [(0, v.Vg)(A, M), " ", r ? (0, l.jsx)(d.eee, {
-          onClick: () => b(I.RV.SETTINGS),
+          onClick: () => E(I.RV.SETTINGS),
           children: j.intl.string(j.t.VNe8Pz)
         }) : null]
       }), !n && r && R ? (0, l.jsxs)(d.Text, {
