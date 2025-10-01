@@ -2,7 +2,7 @@
 /** chunk id: 174532, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => u
+  Z: () => d
 }), require("./388685.js");
 var Chunk445686 = require("./445686.js"),
   Chunk379649 = require("./379649.js");
@@ -45,12 +45,13 @@ function l(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let c = [1, 100, 1e3, 1e4];
-class u {
+let c = [1, 100, 1e3, 1e4],
+  u = [100, 500, 1e3, 5e3];
+class d {
   start() {
     let e = arguments.length > 0 && true !== arguments[0] && arguments[0],
       t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null;
-    this.listeningUsers.clear(), this.listening.reset(), this.speaking.reset(), this.participation.reset(), this.muted.reset(), this.connected.reset(), this.noiseCancellation.reset(), this.voiceFilterSpeaking.clear(), this.timesUntilSpeakingDurationMilestonesMs.clear(), this.connected.start(), this.connection.on(Chunk445686.S.Speaking, (e, t, n) => {
+    this.listeningUsers.clear(), this.listening.reset(), this.speaking.reset(), this.participation.reset(), this.muted.reset(), this.connected.reset(), this.noiseCancellation.reset(), this.voiceFilterSpeaking.clear(), this.timesUntilSpeakingDurationMilestonesMs.clear(), this.speakingMinimumChunks.clear(), this.speakingMinimumChunkCounts.clear(), this.speechEventCount = 0, this.connected.start(), this.connection.on(Chunk445686.S.Speaking, (e, t, n) => {
       this.userId === e ? this.onSpeaking(0 !== t) : this.onListening(0 !== t, e)
     }), this.onMuted(module), this.connection.on(Chunk445686.S.Mute, e => {
       this.onMuted(e)
@@ -65,12 +66,12 @@ class u {
   }
   onSpeaking(e) {
     let t = this._getVoiceFilterStopWatch(this.connection.getVoiceFilterId());
-    if (e) this.speaking.start(), this.participation.start(), null == t || t.start();
+    if (e) this.speaking.start(), this.participation.start(), null == t || t.start(), this.speechEventCount++;
     else {
       let e = this.connected.lastStartTime,
         n = this.speaking.lastStartTime,
         r = this.speaking.lastElapsed;
-      this.speaking.stop(), this.listening.isRunning() || this.participation.stop(), null == t || t.stop(), this.computeSpeakingDurationMilestones(e, n, r)
+      this.addSpeechChunk(), this.speaking.stop(), this.listening.isRunning() || this.participation.stop(), null == t || t.stop(), this.computeSpeakingDurationMilestones(e, n, r)
     }
   }
   onListening(e, t) {
@@ -93,10 +94,23 @@ class u {
       this.timesUntilSpeakingDurationMilestonesMs.set(r, i)
     })
   }
+  addSpeechChunk() {
+    let e = this.speaking.lastStartTime;
+    if (null == module) return;
+    let t = this.timestampProducer.now() - module;
+    u.filter(e => t >= e).forEach(e => {
+      var n, r;
+      let i = null != (n = this.speakingMinimumChunks.get(e)) ? n : 0;
+      this.speakingMinimumChunks.set(e, i + t);
+      let a = null != (r = this.speakingMinimumChunkCounts.get(e)) ? r : 0;
+      this.speakingMinimumChunkCounts.set(e, a + 1)
+    })
+  }
   setNoiseCancellationEnabled(e) {
     this.noiseCancellation.value = e
   }
   stop() {
+    this.addSpeechChunk();
     let e = this.connected.lastStartTime,
       t = this.speaking.lastStartTime,
       n = this.speaking.lastElapsed;
@@ -109,6 +123,9 @@ class u {
     }))
   }
   getDurationStats() {
+    let e = this.speaking.lastStartTime,
+      t = this.timestampProducer.now(),
+      n = null != module ? exports - module : 0;
     return this.computeSpeakingDurationMilestones(this.connected.lastStartTime, this.speaking.lastStartTime, this.speaking.lastElapsed), o({
       duration_listening_ms: this.listening.elapsed().asMilliseconds(),
       duration_speaking_ms: this.speaking.elapsed().asMilliseconds(),
@@ -117,12 +134,19 @@ class u {
       duration_muted_ms: this.muted.elapsed().asMilliseconds(),
       duration_speaking_voice_filter_ids: [...this.voiceFilterSpeaking.keys()],
       duration_noise_cancellation_enabled_ms: this.noiseCancellation.totalDuration(),
-      duration_speaking_voice_filter_ms: [...this.voiceFilterSpeaking.values()].map(e => e.elapsed().asMilliseconds())
+      duration_speaking_voice_filter_ms: [...this.voiceFilterSpeaking.values()].map(e => e.elapsed().asMilliseconds()),
+      speech_event_count: this.speechEventCount
     }, c.filter(e => this.timesUntilSpeakingDurationMilestonesMs.has(e)).reduce((e, t) => l(o({}, e), {
       ["time_to_first_".concat(t, "ms_speech_ms")]: this.timesUntilSpeakingDurationMilestonesMs.get(t)
-    }), {}))
+    }), {}), u.filter(e => this.speakingMinimumChunks.has(e) || n >= e).reduce((e, t) => {
+      var r, i;
+      return l(o({}, e), {
+        ["duration_speaking_gte_".concat(t, "ms_ms")]: (null != (r = this.speakingMinimumChunks.get(t)) ? r : 0) + (n >= t ? n : 0),
+        ["speech_event_count_gte_".concat(t, "ms")]: (null != (i = this.speakingMinimumChunkCounts.get(t)) ? i : 0) + +(n >= t)
+      })
+    }, {}))
   }
   constructor(e, t, n = i.Z_) {
-    a(this, "userId", true), a(this, "connection", true), a(this, "timestampProducer", true), a(this, "listeningUsers", true), a(this, "listening", true), a(this, "speaking", true), a(this, "participation", true), a(this, "connected", true), a(this, "muted", true), a(this, "noiseCancellation", true), a(this, "voiceFilterSpeaking", true), a(this, "timesUntilSpeakingDurationMilestonesMs", true), this.userId = e, this.connection = t, this.timestampProducer = n, this.listeningUsers = new Set, this.timesUntilSpeakingDurationMilestonesMs = new Map, this.listening = new i.G9(this.timestampProducer), this.speaking = new i.G9(this.timestampProducer), this.participation = new i.G9(this.timestampProducer), this.connected = new i.G9(this.timestampProducer), this.muted = new i.G9(this.timestampProducer), this.noiseCancellation = new i.sX(t.getNoiseCancellation(), this.timestampProducer), this.voiceFilterSpeaking = new Map
+    a(this, "userId", true), a(this, "connection", true), a(this, "timestampProducer", true), a(this, "listeningUsers", true), a(this, "listening", true), a(this, "speaking", true), a(this, "participation", true), a(this, "connected", true), a(this, "muted", true), a(this, "noiseCancellation", true), a(this, "voiceFilterSpeaking", true), a(this, "timesUntilSpeakingDurationMilestonesMs", true), a(this, "speakingMinimumChunks", true), a(this, "speakingMinimumChunkCounts", true), a(this, "speechEventCount", true), this.userId = e, this.connection = t, this.timestampProducer = n, this.listeningUsers = new Set, this.timesUntilSpeakingDurationMilestonesMs = new Map, this.speakingMinimumChunks = new Map, this.speakingMinimumChunkCounts = new Map, this.speechEventCount = 0, this.listening = new i.G9(this.timestampProducer), this.speaking = new i.G9(this.timestampProducer), this.participation = new i.G9(this.timestampProducer), this.connected = new i.G9(this.timestampProducer), this.muted = new i.G9(this.timestampProducer), this.noiseCancellation = new i.sX(t.getNoiseCancellation(), this.timestampProducer), this.voiceFilterSpeaking = new Map
   }
 }
