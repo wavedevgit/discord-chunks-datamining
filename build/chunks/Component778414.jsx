@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk355467 = require("./355467.js"),
@@ -57,13 +57,13 @@ function T(e, t) {
   var r, n, i = function(e, t) {
     if (null == e) return {};
     var r, n, i = {},
-      a = Object.keys(e);
-    for (n = 0; n < a.length; n++) r = a[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
+      l = Object.keys(e);
+    for (n = 0; n < l.length; n++) r = l[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
     return i
   }(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (n = 0; n < a.length; n++) r = a[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
+    var l = Object.getOwnPropertySymbols(e);
+    for (n = 0; n < l.length; n++) r = l[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
   }
   return i
 }
@@ -97,13 +97,13 @@ function _(e) {
   let {
     user: t,
     guildId: r,
-    channelId: a
-  } = e, l = (0, O.Z)(t.id), o = (0, s.e7)([f.default], () => f.default.getId() === t.id), v = (() => {
+    channelId: l
+  } = e, a = (0, O.Z)(t.id), o = (0, s.e7)([f.default], () => f.default.getId() === t.id), v = (() => {
     let [e, t] = (0, s.Wu)([g.Z], () => [g.Z.ipCountryCode, g.Z.ipCountryCodeRequest]), r = (0, u.U)();
     return i.useEffect(() => {
       null == e && null == t && r && (0, c.GE)()
     }, [e, t, r]), "GB" === e && r
-  })(), j = 0 === l.length && o, x = i.useMemo(() => l.filter(p.Wc), [l]), S = i.useMemo(() => l.filter(e => e instanceof h.q), [l]);
+  })(), j = 0 === a.length && o, x = i.useMemo(() => a.filter(p.Wc), [a]), S = i.useMemo(() => a.filter(e => e instanceof h.q), [a]);
   (0, y.ZP)(x), (0, m.J)(o, x);
   var I = t.id;
   (0, b.s)(S);
@@ -113,11 +113,11 @@ function _(e) {
   return (A.current = w, i.useEffect(() => {
     null !== A.current && (0, s.Xf)(C.McO.USER_APPLICATION_IDENTITIES(I))
   }, [I]), j) ? (0, n.jsx)(E.Z, {}) : (0, n.jsxs)(n.Fragment, {
-    children: [o && v && (0, n.jsx)(D, {}), l.map((e, i) => (0, n.jsx)(Z, {
+    children: [o && v && (0, n.jsx)(D, {}), a.map((e, i) => (0, n.jsx)(Z, {
       widget: e,
       user: t,
       guildId: r,
-      channelId: a,
+      channelId: l,
       index: i
     }, e.type)), o && (0, n.jsx)(P.Z, {})]
   })
@@ -127,20 +127,20 @@ function R(e) {
   var {
     user: t
   } = e, r = T(e, ["user"]);
-  let a = i.useRef(null);
+  let l = i.useRef(null);
   (0, v.r)({
-    container: a.current
+    container: l.current
   });
   let s = (0, I.h)(t.id);
   return (0, n.jsxs)(w.F, {
     "data-scroller": true,
-    scrollerRef: a,
-    className: l()(N.scroller, {
+    scrollerRef: l,
+    className: a()(N.scroller, {
       [N.hasToolbar]: s
     }),
     fade: true,
     children: [(0, n.jsx)(x.Z, {
-      scrollerRef: a
+      scrollerRef: l
     }), (0, n.jsx)(_, k({
       user: t
     }, r))]

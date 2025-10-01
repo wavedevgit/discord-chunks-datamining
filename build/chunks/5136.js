@@ -1,17 +1,17 @@
 /** Chunk was on 56848 **/
 /** chunk id: 5136, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  r: () => l
+  r: () => a
 });
 var Chunk647438 = require("./647438.js"),
   Chunk79116 = require("./79116.js"),
   Chunk481060 = require("./481060.js");
 
-function l(e) {
+function a(e) {
   let {
     container: t,
     edgeDistance: r = 130,
-    maxSpeed: l = 1700,
+    maxSpeed: a = 1700,
     power: s = 2.2
   } = e, o = (0, n.useRef)(null), c = (0, n.useRef)(0), u = (0, n.useCallback)(e => ({
     isDragging: e.isDragging(),
@@ -19,7 +19,7 @@ function l(e) {
   }), []), {
     isDragging: d,
     clientOffset: f
-  } = (0, i.f)(u), g = (0, a.zPA)();
+  } = (0, i.f)(u), g = (0, l.zPA)();
   (0, n.useEffect)(() => (o.current = requestAnimationFrame(function e(n) {
     if (g || null == t) return;
     if (o.current = requestAnimationFrame(e), false === d || null == f) {
@@ -29,13 +29,13 @@ function l(e) {
     t.style.overflowAnchor = "none", t.style.overscrollBehavior = "contain";
     let i = Math.min(32, 0 !== c.current ? n - c.current : 16) / 1e3;
     c.current = n;
-    let a = t.getBoundingClientRect(),
+    let l = t.getBoundingClientRect(),
       u = f.y,
-      h = u - a.top,
-      p = a.bottom - u,
+      h = u - l.top,
+      p = l.bottom - u,
       m = 0;
-    h >= 0 && h < r ? m = -l * Math.pow(1 - h / r, s) : p >= 0 && p < r && (m = l * Math.pow(1 - p / r, s)), 0 !== m && (t.scrollTop += m * i)
+    h >= 0 && h < r ? m = -a * Math.pow(1 - h / r, s) : p >= 0 && p < r && (m = a * Math.pow(1 - p / r, s)), 0 !== m && (t.scrollTop += m * i)
   }), () => {
     null !== o.current && cancelAnimationFrame(o.current), o.current = null, c.current = 0
-  }), [t, d, f, r, l, s, g])
+  }), [t, d, f, r, a, s, g])
 }

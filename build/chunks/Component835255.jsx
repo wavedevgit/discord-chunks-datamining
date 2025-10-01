@@ -44,7 +44,7 @@ function x(e) {
       giftingOrigin: O.Wt.USER_PROFILE_WISHLIST,
       analyticsLocations: C,
       giftRecipient: r,
-      variantsReturnStyle: l.v.VARIANTS_GROUP
+      variantsReturnStyle: a.v.VARIANTS_GROUP
     })
   };
   return (0, n.jsxs)("div", {
@@ -58,7 +58,7 @@ function x(e) {
         className: P.cardPreview,
         children: (() => {
           switch (E.type) {
-            case a.Z.PROFILE_EFFECT:
+            case l.Z.PROFILE_EFFECT:
               return (0, n.jsx)("div", {
                 className: P.profileEffectPreview,
                 children: (0, n.jsx)(g.Z, {
@@ -68,7 +68,7 @@ function x(e) {
                   removeSetHeight: true
                 })
               });
-            case a.Z.AVATAR_DECORATION:
+            case l.Z.AVATAR_DECORATION:
               return (0, n.jsx)("div", {
                 className: P.avatarDecorationPreview,
                 children: (0, n.jsx)(u.R, {
@@ -79,7 +79,7 @@ function x(e) {
                   avatarSize: s.EFr.SIZE_80
                 })
               });
-            case a.Z.NAMEPLATE:
+            case l.Z.NAMEPLATE:
               return (0, n.jsxs)("div", {
                 className: P.nameplatePreview,
                 children: [(0, n.jsx)("div", {

@@ -58,8 +58,8 @@ function A(e) {
     guildId: N
   }), W = (0, i.e7)([o.Z], () => o.Z.isFetchingUserOutbox(t.id)), B = t.id === r.id, z = (0, i.e7)([f.Z, d.Z], () => {
     let e = B ? f.Z.getStatus() : d.Z.getStatus(t.id);
-    return e === a.Skl.OFFLINE || e === a.Skl.INVISIBLE
-  }), H = L.length > 0 || null != M, Y = D && null == M && null == G && null != F, V = !z && (H || Y), q = U.length > 0, K = L.some(e => (0, l.Z)(e));
+    return e === l.Skl.OFFLINE || e === l.Skl.INVISIBLE
+  }), H = L.length > 0 || null != M, Y = D && null == M && null == G && null != F, V = !z && (H || Y), q = U.length > 0, K = L.some(e => (0, a.Z)(e));
   if (!V && !q && W) return (0, n.jsx)("div", {
     className: C.cards,
     children: Array.from({
@@ -138,7 +138,7 @@ function A(e) {
     })(), q ? (0, n.jsx)(x.Z, {
       heading: E.intl.string(E.t.jzgEoK),
       introText: B ? E.intl.format(E.t["4bk9Ag"], {
-        learnMoreHook: (e, t) => (0, n.jsx)(a.eee, {
+        learnMoreHook: (e, t) => (0, n.jsx)(l.eee, {
           href: g.Z.getArticleURL(w.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e
         }, t)

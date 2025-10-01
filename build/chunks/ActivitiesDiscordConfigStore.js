@@ -18,7 +18,7 @@ function c(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let u = {};
+let u = Object.create(null);
 
 function d(e) {
   let {
@@ -32,7 +32,7 @@ function d(e) {
 }
 
 function f() {
-  u = {}
+  u = Object.create(null)
 }
 class _ extends(r = Chunk442837.ZP.Store) {
   getOne(e) {

@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk296009 = require("./296009.js"),
   Chunk481060 = require("./481060.js"),
   Chunk812206 = require("./812206.js"),
@@ -66,7 +66,7 @@ function j(e) {
   var t;
   let {
     widgetType: r,
-    onAddWidget: a,
+    onAddWidget: l,
     size: c = "default",
     loading: u = false,
     trackUserProfileEditAction: b
@@ -95,10 +95,10 @@ function j(e) {
     u || null == I || ((0, h.qH)(r, I), b({
       action: "WIDGET_ADDED",
       widgetEdited: r
-    }), (0, p.L$)(v.qb.WIDGET_ADDED), null == a || a())
-  }, [u, r, I, b, a]);
+    }), (0, p.L$)(v.qb.WIDGET_ADDED), null == l || l())
+  }, [u, r, I, b, l]);
   return null == I ? null : (0, n.jsxs)(o.P3F, {
-    className: l()(y.addButtonContainer, x && y.sizeSmall, u && y.loading),
+    className: a()(y.addButtonContainer, x && y.sizeSmall, u && y.loading),
     onClick: w,
     "aria-label": P(I),
     "aria-busy": u,
