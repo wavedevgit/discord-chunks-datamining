@@ -96,11 +96,14 @@ function g(e) {
     if (n && 1 === A.size && A.has(e)) return;
     let t = new Set(A);
     A.has(e) ? t.delete(e) : "multiple" === o ? t.add(e) : t = new Set([e]), S || T(t), null == g || g(t)
-  }, [n, A, g, S, o]), R = i.useCallback(e => (0, r.jsx)(c.xvT, {
-    variant: "text-md/medium",
-    color: "currentColor",
-    className: u.listBoxItemLabel,
-    children: e.label
+  }, [n, A, g, S, o]), R = i.useCallback(e => (0, r.jsx)("div", {
+    className: u.listBoxItemContent,
+    children: (0, r.jsx)(c.xvT, {
+      variant: "text-md/medium",
+      color: "currentColor",
+      className: u.listBoxItemLabel,
+      children: e.label
+    })
   }), []), P = i.useMemo(() => d.map(e => {
     var t, n;
     return (0, r.jsx)(E, p(f({}, e), {
@@ -126,12 +129,9 @@ function g(e) {
           role: "listbox",
           "aria-multiselectable": "multiple" === o,
           className: u.listBox,
-          children: (0, r.jsx)(c.w0Z, {
-            className: u.scroller,
-            children: (0, r.jsxs)("div", {
-              className: u.listBoxInner,
-              children: [P, 0 === P.length && (null == O ? true : O())]
-            })
+          children: (0, r.jsxs)("div", {
+            className: u.listBoxInner,
+            children: [P, 0 === P.length && (null == O ? true : O())]
           })
         }))
       }
@@ -169,10 +169,7 @@ function E(e) {
     onClick: d,
     "aria-disabled": a,
     "aria-selected": i,
-    children: [(0, r.jsx)("div", {
-      className: u.listBoxItemContent,
-      children: t
-    }), (0, r.jsx)("div", {
+    children: [t, (0, r.jsx)("div", {
       className: u.selectedIcon,
       "aria-hidden": true,
       children: h()

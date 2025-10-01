@@ -275,8 +275,9 @@ class N extends(r = Chunk647438.Component) {
       this.setState({
         renderedPosition: e
       })
-    }), v(this, "handleScroll", () => {
-      this.close(true, "system:scroll")
+    }), v(this, "handleScroll", e => {
+      let t = e.target;
+      (null == t ? true : t.contains(this.domElementRef.current)) && this.close(true, "system:scroll")
     }), v(this, "handleEscapeClose", e => {
       this.close(e, "user:escape")
     }), v(this, "handleStickyScroll", s()(() => {

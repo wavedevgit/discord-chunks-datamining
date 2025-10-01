@@ -3,7 +3,6 @@
 "use strict";
 module.exports = {
   listBox: "listBox__8906b",
-  scroller: "scroller__8906b",
   listBoxInner: "listBoxInner__8906b",
   listBoxItem: "listBoxItem__8906b",
   listBoxItemContent: "listBoxItemContent__8906b",
