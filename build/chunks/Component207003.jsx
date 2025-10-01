@@ -147,7 +147,7 @@ function H(e) {
     i = N.ZP.useUserTag(t, {
       decoration: "never"
     }),
-    s = (0, c.e7)([P.Z], () => P.Z.getNickname(t.id)),
+    s = (0, c.e7)([_.Z], () => _.Z.getNickname(t.id)),
     u = (0, c.e7)([O.Z], () => O.Z.getStatus(t.id));
   return (0, r.jsx)(U, A(k({}, l), {
     icon: (0, r.jsx)(b.Z, {
@@ -187,11 +187,11 @@ function F(e) {
   } = e, l = I(e, ["channel", "subLabel"]);
   let a = (0, c.e7)([j.Z], () => j.Z.getGuild(null == t ? true : t.guild_id)),
     i = (0, m.ZP)(t),
-    s = (0, c.e7)([E.Z, C.default, P.Z], () => {
+    s = (0, c.e7)([E.Z, C.default, _.Z], () => {
       let e = E.Z.getChannel(t.parent_id);
-      return null == e ? null : (0, m.F6)(e, C.default, P.Z, false)
+      return null == e ? null : (0, m.F6)(e, C.default, _.Z, false)
     }),
-    o = (0, c.e7)([_.ZP], () => _.ZP.lastMessageTimestamp(t.id, D.W.CHANNEL)),
+    o = (0, c.e7)([P.ZP], () => P.ZP.lastMessageTimestamp(t.id, D.W.CHANNEL)),
     d = null == a ? true : a.name;
   if (t.isThread() || t.isForumPost()) {
     let e = t.isForumPost() ? f.Mmi : f.VL1;

@@ -1,7 +1,7 @@
 /** Chunk was on 83098 **/
 /** chunk id: 137021, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => j
+  default: () => Z
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,57 +18,58 @@ var Chunk951288 = require("./951288.js"),
   Chunk594174 = require("./594174.js"),
   Chunk572004 = require("./572004.js"),
   Chunk823379 = require("./823379.js"),
+  Chunk479713 = require("./479713.js"),
   Chunk207003 = require("./207003.jsx"),
   Chunk959517 = require("./959517.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk834505 = require("./834505.js"),
   Chunk621054 = require("./621054.js");
 
-function j(e) {
+function Z(e) {
   let {
     applicationId: t,
     customId: n,
-    linkId: j,
-    message: Z,
-    onClose: O,
+    linkId: Z,
+    message: O,
+    onClose: P,
     onCopyLink: _,
-    onShare: P,
-    transitionState: C
-  } = e, [L] = (0, c.Z)([t]), T = (0, a.e7)([h.default], () => h.default.getCurrentUser()), [N, w] = l.useState(false), [D, R] = l.useState(""), [M, k] = l.useState("");
+    onShare: C,
+    transitionState: L
+  } = e, [T] = (0, c.Z)([t]), N = (0, a.e7)([h.default], () => h.default.getCurrentUser()), [w, D] = l.useState(false), [R, M] = l.useState(""), [k, A] = l.useState("");
   l.useEffect(() => {
-    k((0, o.H)({
+    A((0, o.H)({
       applicationId: t,
-      referrerId: null == T ? true : T.id,
+      referrerId: null == N ? true : N.id,
       customId: n,
-      linkId: j
+      linkId: Z
     }))
-  }, [t, T, n, j, k]);
-  let A = l.useRef(0),
-    [I, U] = l.useState([]),
-    H = I.length,
-    q = H >= 5;
+  }, [t, N, n, Z, A]);
+  let I = l.useRef(0),
+    [U, H] = l.useState([]),
+    q = U.length,
+    F = q >= 5;
   l.useEffect(() => {
-    if ("" === D) {
+    if ("" === R) {
       var e;
-      null == (e = z.current) || e.focus()
+      null == (e = G.current) || e.focus()
     }
-  }, [D]);
-  let F = l.useCallback(() => {
-      R("")
-    }, [R]),
-    z = l.useRef(null),
+  }, [R]);
+  let z = l.useCallback(() => {
+      M("")
+    }, [M]),
+    G = l.useRef(null),
     {
-      results: G,
-      updateSearchText: V
+      results: V,
+      updateSearchText: W
     } = (0, b.s)({
-      selectedDestinations: I,
+      selectedDestinations: U,
       includeMissingDMs: true
     }),
-    W = l.useCallback(e => {
-      R(e), V(e)
-    }, [R, V]),
     Q = l.useCallback(e => {
-      U(t => {
+      M(e), W(e)
+    }, [M, W]),
+    X = l.useCallback(e => {
+      H(t => {
         let n = t.findIndex(t => {
           let {
             type: n,
@@ -76,77 +77,73 @@ function j(e) {
           } = t;
           return n === e.type && r === e.id
         });
-        if (false === n) return q ? t : (R(""), A.current += 1, [e, ...t]);
+        if (false === n) return F ? t : (M(""), I.current += 1, [e, ...t]);
         let r = [...t];
-        return r.splice(n, 1), A.current += 1, r
+        return r.splice(n, 1), I.current += 1, r
       })
-    }, [q]),
-    X = l.useCallback(async e => {
-      if (null == L) return;
-      let t = v.intl.formatToMarkdownString(v.t.dZJpdH, {
-          applicationName: L.name,
-          link: M
-        }),
-        n = "".concat(Z, "\n\n").concat(t);
-      w(true), (await Promise.all(e.map(f.qx))).filter(g.lm).forEach(async e => {
-        let t = p.Z.getChannel(e);
-        null != t && await u.Z.sendMessage(e, d.ZP.parse(t, n), false, {
-          location: x.dy.ACTIVITY_SHARE
+    }, [F]),
+    J = l.useCallback(async e => {
+      if (null == T) return;
+      let t = (0, y.P)(O, T, k);
+      D(true), (await Promise.all(e.map(f.qx))).filter(g.lm).forEach(async e => {
+        let n = p.Z.getChannel(e);
+        null != n && await u.Z.sendMessage(e, d.ZP.parse(n, t), false, {
+          location: v.dy.ACTIVITY_SHARE
         })
-      }), (0, s.showToast)((0, s.createToast)(v.intl.formatToPlainString(v.t.jQULqK, {
-        applicationName: L.name
-      }), s.ToastType.SUCCESS)), P(true), O()
-    }, [Z, M, O, P, L]),
-    J = l.useCallback(() => {
-      (0, m.JG)(M, () => {
-        _(), (0, s.showToast)((0, s.createToast)(v.intl.string(v.t["t5VZ8/"]), s.ToastType.SUCCESS))
+      }), (0, s.showToast)((0, s.createToast)(S.intl.formatToPlainString(S.t.jQULqK, {
+        applicationName: T.name
+      }), s.ToastType.SUCCESS)), C(true), P()
+    }, [O, k, P, C, T]),
+    B = l.useCallback(() => {
+      (0, m.JG)(k, () => {
+        _(), (0, s.showToast)((0, s.createToast)(S.intl.string(S.t["t5VZ8/"]), s.ToastType.SUCCESS))
       })
-    }, [M, _]),
-    B = G.length > 0 ? (0, r.jsx)(y.Q, {
+    }, [k, _]),
+    K = V.length > 0 ? (0, r.jsx)(x.Q, {
       paddingBottom: 8,
       paddingTop: 8,
-      rowData: G,
-      handleToggleDestination: Q,
-      selectedDestinations: I,
-      disableSelection: q
+      rowData: V,
+      handleToggleDestination: X,
+      selectedDestinations: U,
+      disableSelection: F
     }) : (0, r.jsxs)("div", {
-      className: S.noResults,
+      className: E.noResults,
       children: [(0, r.jsx)("img", {
-        className: S.noResultsImg,
-        src: E,
+        className: E.noResultsImg,
+        src: j,
         alt: ""
       }), (0, r.jsx)(s.Text, {
         variant: "text-md/normal",
         color: "text-muted",
-        children: v.intl.string(v.t.V6nAfH)
+        children: S.intl.string(S.t.V6nAfH)
       })]
     });
   return (0, r.jsx)(i.Modal, {
-    transitionState: C,
-    onClose: O,
-    title: v.intl.string(v.t.r9qKo6),
-    subtitle: Z,
+    transitionState: L,
+    onClose: P,
+    title: S.intl.string(S.t.r9qKo6),
+    subtitle: O,
     size: "md",
     input: (0, r.jsx)(s.E1j, {
-      ref: z,
-      query: D,
-      onChange: W,
-      onClear: F,
-      placeholder: v.intl.string(v.t["5h0QOD"]),
-      "aria-label": v.intl.string(v.t["5h0QOD"]),
+      ref: G,
+      query: R,
+      onChange: Q,
+      onClear: z,
+      placeholder: S.intl.string(S.t["5h0QOD"]),
+      "aria-label": S.intl.string(S.t["5h0QOD"]),
       autoFocus: true
     }),
     actions: [{
-      text: v.intl.string(v.t.WqhZsr),
+      text: S.intl.string(S.t.WqhZsr),
       variant: "secondary",
-      onClick: J
+      onClick: B
     }, {
-      text: v.intl.string(v.t.TXNS7e),
+      text: S.intl.string(S.t.TXNS7e),
       variant: "primary",
-      onClick: () => X(I),
-      loading: N,
-      disabled: !(H > 0)
+      onClick: () => J(U),
+      loading: w,
+      disabled: !(q > 0)
     }],
-    children: B
+    children: K
   })
 }

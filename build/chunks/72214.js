@@ -57,8 +57,8 @@ function p(e) {
       resultTypes: t
     })
   }, [m, x]), (0, s.D)();
-  let _ = (0, l.e7)([o.Z], () => o.Z.getFrequentlyWithoutFetchingLatest()),
-    P = (0, l.e7)([a.Z], () => a.Z.isConnected()),
+  let P = (0, l.e7)([o.Z], () => o.Z.getFrequentlyWithoutFetchingLatest()),
+    _ = (0, l.e7)([a.Z], () => a.Z.isConnected()),
     C = "" !== g;
   return {
     results: r.useMemo(() => (0, c.ZP)({
@@ -66,13 +66,13 @@ function p(e) {
       hasQuery: C,
       queryMode: E,
       targetDestination: t,
-      frequentChannels: _,
+      frequentChannels: P,
       selectedDestinations: n,
       pinnedDestinations: O,
       originDestination: i,
       includeMissingDMs: f,
-      isConnected: P
-    }), [y, C, E, t, _, n, O, i, f, P]),
+      isConnected: _
+    }), [y, C, E, t, P, n, O, i, f, _]),
     updateSearchText: S
   }
 }
