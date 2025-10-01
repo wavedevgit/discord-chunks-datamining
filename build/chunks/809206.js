@@ -3,6 +3,7 @@
 "use strict";
 require.d(exports, {
   FD: () => h,
+  Fu: () => A,
   I5: () => O,
   Mn: () => b,
   NI: () => N,
@@ -20,8 +21,7 @@ require.d(exports, {
   iR: () => L,
   s4: () => C,
   si: () => P,
-  ss: () => g,
-  xn: () => A
+  ss: () => g
 });
 var Chunk544891 = require("./544891.js"),
   Chunk433517 = require("./433517.js"),
@@ -222,8 +222,8 @@ function S(e) {
 
 function A(e) {
   o.Z.dispatch({
-    type: "USER_SETTINGS_ACCOUNT_SET_PENDING_PROFILE_EFFECT_ID",
-    profileEffectId: e
+    type: "USER_SETTINGS_ACCOUNT_SET_PENDING_PROFILE_EFFECT",
+    profileEffect: e
   })
 }
 

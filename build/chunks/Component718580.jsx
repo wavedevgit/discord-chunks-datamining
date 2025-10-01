@@ -170,14 +170,16 @@ function N(e) {
   }, null == P ? "animate-never" : "respect-motion-settings"), F = (0, m.Z)(w), {
     width: V,
     centered: H = true
-  } = I, Y = c.tq ? "100%" : B.width.to(e => "string" == typeof e ? e : Math.round(e)), W = c.tq && !I.shouldUseMediaQueryToSetHeight ? "100%" : B.height.to(e => Math.round(e)), K = c.tq ? {} : H ? {
+  } = I, Y = c.tq && !I.shouldUseMediaQueriesForSizing ? "100%" : B.width.to(e => "string" == typeof e ? e : Math.round(e)), W = c.tq && !I.shouldUseMediaQueriesForSizing ? "100%" : B.height.to(e => Math.round(e)), K = c.tq ? {} : H ? {
     transform: "translate3d(0, -50%, 0) scale(1.0, 1.0)",
     top: "50%"
   } : {
     transform: "scale(1.0, 1.0)"
   }, z = c.tq ? {} : {
     overflow: null != (a = I.overflow) ? a : "hidden"
-  };
+  }, q = i.useMemo(() => ({
+    width: c.tq && !I.shouldUseMediaQueriesForSizing ? "100%" : V
+  }), [I.shouldUseMediaQueriesForSizing, V]);
   return (0, r.jsx)(s.animated.div, {
     style: b({
       position: "relative",
@@ -185,7 +187,7 @@ function N(e) {
       minHeight: W
     }, z),
     className: o()({
-      [g.animatedDivDynamicHeight]: I.shouldUseMediaQueryToSetHeight
+      [g.outerAnimatedDivDynamicSizing]: I.shouldUseMediaQueriesForSizing
     }),
     children: Z((e, t, n) => {
       let {
@@ -199,12 +201,14 @@ function N(e) {
           position: "absolute",
           display: E,
           flexDirection: "column",
-          backfaceVisibility: "hidden",
-          width: c.tq ? "100%" : V
-        }, K, D.enabled ? a : b({
+          backfaceVisibility: "hidden"
+        }, q, K, D.enabled ? a : b({
           left: e.value.to(A("left", F)),
           right: e.value.to(A("right", F))
         }, y && a)),
+        className: o()({
+          [g.innerAnimatedDivDynamicSizing]: I.shouldUseMediaQueriesForSizing
+        }),
         children: C[t].children
       }, i)
     })

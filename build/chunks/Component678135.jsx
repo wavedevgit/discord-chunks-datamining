@@ -40,7 +40,7 @@ function v(e) {
     pendingNickname: R,
     pendingGlobalName: P,
     pendingThemeColors: w,
-    pendingProfileEffectId: D,
+    pendingProfileEffect: D,
     pendingLegacyUsernameDisabled: L,
     pendingDisplayNameStyles: x,
     avatarClassName: j,
@@ -64,8 +64,8 @@ function v(e) {
     avatarOverride: C,
     size: o.EFr.SIZE_80,
     showPending: true
-  }), q = (0, _.ZT)({
-    pendingProfileEffectId: D,
+  }), q = (0, _.IG)({
+    pendingProfileEffect: D,
     displayProfile: W
   }), {
     theme: X,
@@ -136,7 +136,7 @@ function v(e) {
       hideMessageInput: Z,
       hideExampleButton: H
     }), null != q && (0, r.jsx)(s.Z, {
-      profileEffectId: q
+      profileEffectId: q.id
     })]
   });
   return Y ? J : (0, r.jsx)("div", {

@@ -62,7 +62,7 @@ function R(e) {
 
 function P(e) {
   let {
-    profileEffectId: t
+    profileEffect: t
   } = e;
   o = t
 }
@@ -154,7 +154,7 @@ class V extends(h = Chunk442837.ZP.Store) {
   getPendingAvatarDecoration() {
     return i
   }
-  getPendingProfileEffectId() {
+  getPendingProfileEffect() {
     return o
   }
   getPendingBanner() {
@@ -185,7 +185,7 @@ class V extends(h = Chunk442837.ZP.Store) {
     return {
       pendingAvatar: r,
       pendingAvatarDecoration: i,
-      pendingProfileEffectId: o,
+      pendingProfileEffect: o,
       pendingBanner: s,
       pendingBio: l,
       pendingPronouns: c,
@@ -214,7 +214,7 @@ let H = new V(Chunk570140.Z, {
   GUILD_IDENTITY_SETTINGS_SET_PENDING_AVATAR_DECORATION: R,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_DISPLAY_NAME_STYLES: k,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_NAMEPLATE: M,
-  GUILD_IDENTITY_SETTINGS_SET_PENDING_PROFILE_EFFECT_ID: P,
+  GUILD_IDENTITY_SETTINGS_SET_PENDING_PROFILE_EFFECT: P,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_BANNER: w,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_BIO: D,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_PRONOUNS: L,

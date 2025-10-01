@@ -157,7 +157,7 @@ let S = t => null != t ? _.intl.format(_.t["4kp0AA"], {
           }
           if (e.type === u.Z.PROFILE_EFFECT) {
             s()(t.type === u.Z.PROFILE_EFFECT, "product type and item type are the same"), (0, f.H)({
-              initialSelectedEffectId: t.id,
+              initialSelectedEffect: t,
               analyticsLocations: i
             });
             return

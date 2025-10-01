@@ -54,7 +54,7 @@ function p(e) {
     tryItOutAvatar: I,
     tryItOutBanner: T,
     tryItOutAvatarDecoration: S,
-    tryItOutProfileEffectId: A
+    tryItOutProfileEffect: A
   } = (0, a.cj)([c.Z], () => _({}, c.Z.getAllPending(), c.Z.getAllTryItOut())), C = (0, l.SD)({
     userId: f.id,
     image: null != I ? I : g
@@ -68,7 +68,7 @@ function p(e) {
     pendingAvatar: C,
     pendingThemeColors: null != v ? v : b,
     pendingAvatarDecoration: N,
-    pendingProfileEffectId: A,
+    pendingProfileEffect: A,
     avatarClassName: null != I || null != g || m.enabled ? true : d.spinningAvatar,
     canUsePremiumCustomization: true,
     isTryItOutFlow: true,

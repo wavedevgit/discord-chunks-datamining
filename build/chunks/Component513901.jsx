@@ -26,23 +26,23 @@ function y(e) {
   let {
     user: t,
     guild: n,
-    className: a,
-    sectionTitle: y,
-    forcedDivider: O = false,
-    withTutorial: v = false,
-    showBorder: I = false,
-    isTryItOutFlow: T = false,
-    initialSelectedEffectId: S
+    initialSelectedEffect: a,
+    className: y,
+    sectionTitle: O,
+    forcedDivider: v = false,
+    withTutorial: I = false,
+    showBorder: T = false,
+    isTryItOutFlow: S = false
   } = e, A = (0, _.Kg)(t, n), C = f.ZP.canUsePremiumProfileCustomization(t), {
     analyticsLocations: N
   } = (0, c.ZP)(), {
-    pendingProfileEffectId: R,
+    pendingProfileEffect: R,
     errors: P
   } = (0, _.bd)(n), w = i.useCallback(() => (0, u.H)({
     analyticsLocations: N,
-    initialSelectedEffectId: S,
+    initialSelectedEffect: a,
     guild: n
-  }), [N, S, n]);
+  }), [N, a, n]);
   i.useEffect(() => {
     C && d.default.track(m.rMx.PREMIUM_UPSELL_VIEWED, {
       type: g.cd.PROFILE_EFFECTS_INLINE_SETTINGS,
@@ -50,27 +50,27 @@ function y(e) {
     })
   }, [C, N]);
   let D = null != n,
-    L = T || true !== R ? null != R : null != A;
+    L = S || true !== R ? null != R : null != A;
 
   function x() {
-    (0, _.s6)(null, A, null == n ? true : n.id)
+    (0, _.UK)(null, A, null == n ? true : n.id)
   }
-  let j = v ? l.gtL : s.zx;
+  let j = I ? l.gtL : s.zx;
   return (0, r.jsx)(p.Z, {
-    forcedDivider: O,
+    forcedDivider: v,
     borderType: h.Y.PREMIUM,
     hasBackground: true,
-    title: y,
-    showBorder: I,
+    title: O,
+    showBorder: T,
     errors: P,
-    className: a,
+    className: y,
     children: (0, r.jsxs)("div", {
       className: b.buttonsContainer,
       children: [(0, r.jsx)(j, {
         size: s.zx.Sizes.SMALL,
         onClick: w,
         className: o()({
-          [b.buttonHighlighted]: v
+          [b.buttonHighlighted]: I
         }),
         children: E.intl.string(E.t["/dRfCQ"])
       }), L && (0, r.jsx)("div", {

@@ -100,7 +100,7 @@ function E(e) {
           onSlideReady: e => A(e),
           width: m,
           overflow: R ? "visible" : true,
-          shouldUseMediaQueryToSetHeight: true,
+          shouldUseMediaQueriesForSizing: true,
           children: v.filter(e => null != e.key).map(e => (0, r.jsx)(u.Mi4, {
             id: e.key,
             children: (0, r.jsx)("form", {

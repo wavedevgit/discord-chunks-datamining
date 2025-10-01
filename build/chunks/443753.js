@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-/** chunk id: 175756, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 443753, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
   Z: () => s
@@ -22,7 +22,7 @@ let s = e => {
         skuId: t
       } = e, n = i.Z.getProduct(t);
       return (0, a.G1)(n)
-    }).map(e => e.id);
+    });
     return n[Math.floor(Math.random() * n.length)]
   }, [t, e])
 }

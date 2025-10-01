@@ -1,7 +1,7 @@
 /** Chunk was on 55183 **/
 /** chunk id: 52268, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => v
 }), require("./314940.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -93,8 +93,8 @@ let y = () => 80,
       y = i.useRef(null),
       {
         accessibilityLabel: j,
-        thumbnailPreviewSrc: O,
-        title: _
+        thumbnailPreviewSrc: v,
+        title: O
       } = null != (t = null == p ? true : p.config) ? t : {};
     return (0, r.jsxs)(P, x(h({
       innerRef: null != l ? l : y,
@@ -106,8 +106,8 @@ let y = () => 80,
         className: m.presetEffectBackground
       }), (0, r.jsx)("img", {
         className: m.presetEffectImg,
-        src: O,
-        alt: _
+        src: v,
+        alt: O
       }), (0, r.jsx)(a.Z, {
         isPurchaseSection: o === f.$0.PURCHASE,
         isPremiumSection: o === f.$0.PREMIUM_PURCHASE,
@@ -116,7 +116,7 @@ let y = () => 80,
       })]
     }))
   },
-  O = e => {
+  v = e => {
     let {
       user: t,
       guild: n,
@@ -144,9 +144,9 @@ let y = () => 80,
         renderItem: (e, t, u, x) => {
           let {
             section: y,
-            items: O
+            items: v
           } = d[e];
-          return (0, s.EQ)(O[t]).with(f.Tm, () => (0, r.jsxs)(P, {
+          return (0, s.EQ)(v[t]).with(f.Tm, () => (0, r.jsxs)(P, {
             style: h({}, u),
             isSelected: !g,
             onSelect: () => o(null),
@@ -174,14 +174,14 @@ let y = () => 80,
               children: p.intl.string(p.t.pWG4zc)
             })]
           }, x)).otherwise(e => {
-            let t = i === e.id;
+            let t = (null == i ? true : i.skuId) === e.skuId;
             return (0, r.jsx)(j, {
               style: h({}, u),
               section: y,
               profileEffect: e,
               innerRef: t ? l : true,
               isSelected: t,
-              onSelect: () => o(e.id),
+              onSelect: () => o(e),
               canUsePremiumCollectibles: b
             }, x)
           })

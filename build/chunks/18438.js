@@ -4,6 +4,7 @@
 require.d(exports, {
   Cf: () => p,
   Fq: () => l,
+  Fu: () => f,
   HP: () => s,
   I5: () => u,
   ID: () => h,
@@ -18,7 +19,6 @@ require.d(exports, {
   iq: () => o,
   pG: () => O,
   sr: () => m,
-  xn: () => f,
   z5: () => g
 }), require("./415506.js");
 var Chunk544891 = require("./544891.js"),
@@ -117,8 +117,8 @@ function d(e) {
 
 function f(e) {
   i.Z.dispatch({
-    type: "GUILD_IDENTITY_SETTINGS_SET_PENDING_PROFILE_EFFECT_ID",
-    profileEffectId: e
+    type: "GUILD_IDENTITY_SETTINGS_SET_PENDING_PROFILE_EFFECT",
+    profileEffect: e
   })
 }
 

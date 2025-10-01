@@ -48,8 +48,8 @@ function l(e, t) {
 }
 let c = e => {
   let {
-    analyticsLocations: t,
-    initialSelectedEffectId: a,
+    initialSelectedEffect: t,
+    analyticsLocations: a,
     guild: s
   } = e;
   (0, i.ZDy)(async () => {
@@ -58,8 +58,8 @@ let c = e => {
     } = await n.e("55183").then(n.bind(n, 191564));
     return n => (0, r.jsx)(e, l(o({}, n), {
       guild: s,
-      initialSelectedEffectId: a,
-      analyticsLocations: t
+      initialSelectedEffect: t,
+      analyticsLocations: a
     }))
   }, {})
 }

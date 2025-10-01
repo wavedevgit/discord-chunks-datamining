@@ -249,9 +249,9 @@ let eZ = e => {
         isPartiallyOwnedBundle: k,
         isPurchased: R
       }),
-      U = (0, v.e7)([V.Z], () => V.Z.isClaiming === (null == N ? true : N.skuId)),
+      U = (0, f.e7)([V.Z], () => V.Z.isClaiming === (null == N ? true : N.skuId)),
       F = (0, x.ZP)(),
-      W = (0, f.wj)(F),
+      W = (0, v.wj)(F),
       $ = (0, q.G1)(N),
       ee = (0, q.ql)(N, eS.tuJ.DEFAULT),
       en = (null == ee ? true : ee.amount) === 0,
@@ -329,7 +329,7 @@ let eZ = e => {
             variant: "text-md/semibold",
             className: eR.priceTag,
             children: eA.intl.string(eA.t.rt69oq)
-          }) : eg ? (0, r.jsx)(ev.a, {
+          }) : eg ? (0, r.jsx)(ef.a, {
             prices: e_,
             product: N,
             isPremiumUser: w,
@@ -352,7 +352,7 @@ let eZ = e => {
             })]
           })]
         }), (0, r.jsx)(h.Rny, {
-          children: O === eI.Ch.DEFAULT ? (0, r.jsx)(ef.P, {
+          children: O === eI.Ch.DEFAULT ? (0, r.jsx)(ev.P, {
             selectedVariantIndex: b,
             variantGroupProduct: t,
             previewingVariantIndexProps: P,
@@ -567,7 +567,7 @@ let eZ = e => {
       user: n,
       activeBundleSlide: i,
       isTransitioning: l
-    } = e, o = (0, v.e7)([b.Z], () => b.Z.useReducedMotion), s = G.ZP.canUsePremiumProfileCustomization(n), c = (0, v.cj)([D.Z], () => D.Z.getAllPending()), {
+    } = e, o = (0, f.e7)([b.Z], () => b.Z.useReducedMotion), s = G.ZP.canUsePremiumProfileCustomization(n), c = (0, f.cj)([D.Z], () => D.Z.getAllPending()), {
       pendingAvatar: u
     } = c, m = function(e, t) {
       if (null == e) return {};
@@ -586,7 +586,7 @@ let eZ = e => {
     }(c, ["pendingAvatar"]), p = (0, R.SD)({
       userId: n.id,
       image: u
-    }), f = t.type === d.Z.AVATAR_DECORATION, [h] = t.items, {
+    }), v = t.type === d.Z.AVATAR_DECORATION, [h] = t.items, {
       firstAvatarDecoration: g,
       firstProfileEffect: P,
       firstNameplate: x
@@ -596,14 +596,14 @@ let eZ = e => {
         user: n,
         canUsePremiumCustomization: s,
         pendingAvatarDecoration: g,
-        pendingProfileEffectId: null == P ? true : P.id,
+        pendingProfileEffect: P,
         disabledInputs: true,
         hideMessageInput: !j,
         hideCustomStatus: true,
-        hideBioSection: f,
+        hideBioSection: v,
         hideExampleButton: true,
         interactive: false
-      })), f && (0, r.jsx)(ez, {
+      })), v && (0, r.jsx)(ez, {
         user: n
       })]
     }), _ = e => (0, r.jsx)(eG, {
@@ -695,12 +695,12 @@ let eZ = e => {
       returnRef: c,
       analyticsSource: u,
       analyticsLocations: p,
-      shouldCheckoutWithOrbs: f,
+      shouldCheckoutWithOrbs: v,
       tab: g,
       variantType: P = eI.Ch.DEFAULT
-    } = e, x = (0, v.e7)([M.default], () => M.default.getCurrentUser()), b = (0, eO.f)(l), {
+    } = e, x = (0, f.e7)([M.default], () => M.default.getCurrentUser()), b = (0, eO.f)(l), {
       previewingVariantIndex: _
-    } = b, O = (0, v.e7)([V.Z], () => V.Z.purchases), T = (0, W.o)(l, O), w = (0, eb.N)(l, _), E = (0, ej.W)(l, T);
+    } = b, O = (0, f.e7)([V.Z], () => V.Z.purchases), T = (0, W.o)(l, O), w = (0, eb.N)(l, _), E = (0, ej.W)(l, T);
     s()(null != E, "Selected product should not be null");
     let {
       analyticsLocations: I
@@ -755,7 +755,7 @@ let eZ = e => {
             onClose: n,
             previewingVariantIndexProps: b,
             selectedVariantIndex: T,
-            shouldCheckoutWithOrbs: f,
+            shouldCheckoutWithOrbs: v,
             tab: g,
             activeBundleSlide: G,
             variantType: P

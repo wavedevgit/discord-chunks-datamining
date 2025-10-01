@@ -2,5 +2,6 @@
 /** chunk id: 827221, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 module.exports = {
-  animatedDivDynamicHeight: "animatedDivDynamicHeight__59d99"
+  outerAnimatedDivDynamicSizing: "outerAnimatedDivDynamicSizing__59d99",
+  innerAnimatedDivDynamicSizing: "innerAnimatedDivDynamicSizing__59d99"
 }

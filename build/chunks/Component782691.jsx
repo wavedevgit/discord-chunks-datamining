@@ -336,7 +336,7 @@ let C = {
               children: [(0, a.jsx)(p.Z, {
                 user: i,
                 pendingAvatar: true,
-                pendingProfileEffectId: null,
+                pendingProfileEffect: null,
                 canUsePremiumCustomization: true,
                 isTryItOutFlow: true
               }), (0, a.jsx)(b.Z, {

@@ -3,18 +3,18 @@
 "use strict";
 require.d(exports, {
   $U: () => h,
+  IG: () => A,
   Jw: () => O,
   Kg: () => E,
   PO: () => I,
+  UK: () => T,
   Wx: () => S,
-  ZT: () => A,
   Zx: () => m,
   bd: () => b,
   f$: () => N,
   gc: () => p,
   gd: () => C,
   mD: () => g,
-  s6: () => T,
   xQ: () => y
 }), require("./539854.js");
 var Chunk647438 = require("./647438.js"),
@@ -124,17 +124,17 @@ function g(e, t) {
 
 function E(e, t) {
   return (0, i.e7)([d.Z], () => {
-    var n, r, i, a;
-    return null == t ? null == (r = d.Z.getUserProfile(e.id)) || null == (n = r.profileEffect) ? true : n.id : null == (a = d.Z.getGuildMemberProfile(e.id, t.id)) || null == (i = a.profileEffect) ? true : i.id
-  }, [e, t])
+    var n, r;
+    return null == t ? null == (n = d.Z.getUserProfile(e.id)) ? true : n.profileEffect : null == (r = d.Z.getGuildMemberProfile(e.id, t.id)) ? true : r.profileEffect
+  })
 }
 
 function b(e) {
   return (0, i.cj)([_.Z, c.Z], () => null == e ? {
-    pendingProfileEffectId: _.Z.getPendingProfileEffectId(),
+    pendingProfileEffect: _.Z.getPendingProfileEffect(),
     errors: _.Z.getErrors().profileEffect
   } : {
-    pendingProfileEffectId: c.Z.getPendingProfileEffectId(),
+    pendingProfileEffect: c.Z.getPendingProfileEffect(),
     errors: c.Z.getErrors().profileEffect
   }, [e])
 }
@@ -156,8 +156,8 @@ function I(e, t) {
 }
 
 function T(e, t, n) {
-  if (e === t) return void(null == n ? (0, a.xn)(true) : (0, l.xn)(true));
-  null == n ? (0, a.xn)(e) : (0, l.xn)(e)
+  if ((null == e ? true : e.skuId) === (null == t ? true : t.skuId)) return void(null == n ? (0, a.Fu)(true) : (0, l.Fu)(true));
+  null == n ? (0, a.Fu)(e) : (0, l.Fu)(e)
 }
 
 function S(e, t, n) {
@@ -178,12 +178,12 @@ function S(e, t, n) {
 }
 
 function A(e) {
-  var t, n, r, i, a;
+  var t, n;
   let {
-    pendingProfileEffectId: o,
-    displayProfile: s
-  } = e, l = null == s || null == (n = s._userProfile) || null == (t = n.profileEffect) ? true : t.id, c = null == s || null == (i = s._guildMemberProfile) || null == (r = i.profileEffect) ? true : r.id, u = null === o;
-  return u && null != c ? l : u ? null : null != o ? o : null == s || null == (a = s.profileEffect) ? true : a.id
+    pendingProfileEffect: r,
+    displayProfile: i
+  } = e, a = null == i || null == (t = i._userProfile) ? true : t.profileEffect, o = null == i || null == (n = i._guildMemberProfile) ? true : n.profileEffect, s = null === r;
+  return s && null != o ? a : s ? null : null != r ? r : null == i ? true : i.profileEffect
 }
 
 function C(e, t) {

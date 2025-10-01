@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk597688 = require("./597688.js"),
   Chunk1870 = require("./1870.js"),
   Chunk884697 = require("./884697.js"),
-  Chunk175756 = require("./175756.js"),
+  Chunk443753 = require("./443753.js"),
   Chunk104494 = require("./104494.js"),
   Chunk639119 = require("./639119.js"),
   Chunk402567 = require("./402567.js"),
@@ -94,7 +94,7 @@ function Y(e) {
     tryItOutThemeColors: q,
     tryItOutAvatar: X,
     tryItOutBanner: Q,
-    tryItOutProfileEffectId: J,
+    tryItOutProfileEffect: J,
     tryItOutAvatarDecoration: $
   } = (0, a.cj)([S.Z], () => {
     let e = S.Z.getAllPending(),
@@ -205,7 +205,7 @@ function Y(e) {
           }, "decoration"), (0, r.jsx)(L.Z, {
             className: B.customizationSection,
             isTryItOutFlow: true,
-            initialSelectedEffectId: ee,
+            initialSelectedEffect: ee,
             user: Z,
             sectionTitle: G.intl.string(G.t.wR5wOj)
           }, "effect"), !el && (0, r.jsx)(o.Text, {
