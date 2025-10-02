@@ -1,7 +1,7 @@
 /** Chunk was on 56848 **/
 /** chunk id: 872269, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  L$: () => l,
+  L$: () => a,
   be: () => i
 });
 let r = (0, require("./879690.js").U)(e => ({
@@ -11,6 +11,6 @@ let r = (0, require("./879690.js").U)(e => ({
     })
   })),
   i = () => r(e => e.toastType),
-  l = e => {
+  a = e => {
     r.getState().showToast(e)
   }

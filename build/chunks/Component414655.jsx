@@ -25,7 +25,7 @@ function b(e) {
   } = e, {
     defaultWishlistId: n,
     currentUser: b
-  } = (0, l.cj)([g.Z, f.default], () => ({
+  } = (0, a.cj)([g.Z, f.default], () => ({
     defaultWishlistId: g.Z.getFirstWishlistId(t.id),
     currentUser: f.default.getCurrentUser()
   })), {
@@ -34,7 +34,7 @@ function b(e) {
     wishlist: j,
     error: P
   } = (0, d.k)(n), x = i.useCallback(() => {
-    (0, a.pT)(), (0, u.mK)({
+    (0, l.pT)(), (0, u.mK)({
       analyticsLocations: y,
       analyticsSource: o.Z.USER_PROFILE_WISHLIST,
       openInLayer: false

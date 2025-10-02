@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk137317 = require("./137317.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -27,7 +27,7 @@ function j(e) {
     className: t
   } = e, {
     trackUserProfileEditSaved: n
-  } = (0, f.KZ)(), [l, j] = i.useState(false), P = (0, o.Wu)([p.Z], () => {
+  } = (0, f.KZ)(), [a, j] = i.useState(false), P = (0, o.Wu)([p.Z], () => {
     var e;
     return null != (e = p.Z.getSaveablePendingWidgets()) ? e : []
   }), x = (0, o.Wu)([p.Z], () => p.Z.getChangedWidgets()), S = (0, o.Wu)([p.Z], () => p.Z.getRemovedWidgets()), I = (0, o.e7)([p.Z], () => p.Z.hasSaveablePendingChanges()), w = (0, o.e7)([p.Z], () => p.Z.isSubmitting), E = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), C = (0, c.Yzy)(I, {
@@ -56,7 +56,7 @@ function j(e) {
   }, []), i.useEffect(() => {
     I && c.uvj.announce(y.intl.string(y.t["0Y/qkJ"]))
   }, [I]);
-  let A = i.useCallback(async () => {
+  let N = i.useCallback(async () => {
       try {
         await h.Z.savePendingWidgets(P)
       } catch (e) {
@@ -81,15 +81,15 @@ function j(e) {
         isWidgetRemoved: true
       })
     }, [P, x, S, n]),
-    k = i.useCallback(() => {
+    A = i.useCallback(() => {
       h.Z.clearPendingWidgets()
     }, []);
   return C((e, n) => n ? (0, r.jsx)(s.animated.div, {
     className: t,
     style: e,
     children: (0, r.jsxs)("section", {
-      className: a()(O.content, {
-        [O.emphasized]: l
+      className: l()(O.content, {
+        [O.emphasized]: a
       }),
       "aria-label": y.intl.string(y.t["odDw+/"]),
       children: [(0, r.jsx)(c.Text, {
@@ -103,13 +103,13 @@ function j(e) {
           size: "sm",
           variant: "secondary",
           text: y.intl.string(y.t.yBZMsb),
-          onClick: k,
+          onClick: A,
           disabled: !I || w
         }), (0, r.jsx)(c.zxk, {
           size: "sm",
           variant: "primary",
           text: y.intl.string(y.t.R3BPHx),
-          onClick: A,
+          onClick: N,
           loading: w,
           disabled: !I || w
         })]

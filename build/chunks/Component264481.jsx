@@ -38,11 +38,11 @@ function P(e) {
     className: v.empty,
     children: [(0, r.jsxs)("div", {
       className: v.textContainer,
-      children: [(0, r.jsx)(a.X6q, {
+      children: [(0, r.jsx)(l.X6q, {
         variant: "heading-md/medium",
         color: "header-primary",
         children: t
-      }), (0, r.jsx)(a.Text, {
+      }), (0, r.jsx)(l.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
         children: n
@@ -85,7 +85,7 @@ function I(e) {
     name: u
   }), [f] = i.useState(() => {
     var e;
-    return (null != (e = (0, l.sample)(O)) ? e : O[0])(u)
+    return (null != (e = (0, a.sample)(O)) ? e : O[0])(u)
   }), p = i.useCallback(() => {
     s.Z.openPrivateChannel({
       recipientIds: t.id
@@ -97,7 +97,7 @@ function I(e) {
     children: (0, r.jsx)("div", {
       className: v.buttonRow,
       children: (0, r.jsx)(h.O1, {
-        icon: a.kBi,
+        icon: l.kBi,
         text: m.intl.string(m.t["g33r/P"]),
         onClick: p
       })
@@ -112,9 +112,9 @@ function w() {
     children: j.map((t, n) => {
       let i = c.Z.get(t);
       if (null == i) return null;
-      let l = (0, a.wjy)(e) ? i.icon.darkPNG : i.icon.lightPNG;
+      let a = (0, l.wjy)(e) ? i.icon.darkPNG : i.icon.lightPNG;
       return (0, r.jsx)("img", {
-        src: l,
+        src: a,
         alt: i.name,
         className: v.connectionIcon
       }, n)
@@ -125,7 +125,7 @@ function w() {
 function E(e) {
   let {
     onClose: t
-  } = e, l = (0, u.P6)("UserProfileModalV2EmptyActivityCurrentUser"), s = i.useCallback(() => {
+  } = e, a = (0, u.P6)("UserProfileModalV2EmptyActivityCurrentUser"), s = i.useCallback(() => {
     null == t || t(), (0, f.openUserSettings)(d.n.CONNECTIONS_PANEL, {
       section: p.oAB.CONNECTIONS
     })
@@ -135,7 +135,7 @@ function E(e) {
       subsection: "CONNECTED_GAMES"
     })
   }, [t]), c = i.useCallback(() => {
-    (0, a.ZDy)(async () => {
+    (0, l.ZDy)(async () => {
       let {
         default: e
       } = await n.e("82077").then(n.bind(n, 953848));
@@ -171,9 +171,9 @@ function E(e) {
         text: m.intl.string(m.t.GTCx0t),
         onClick: o
       })]
-    }), l && (0, r.jsx)("div", {
+    }), a && (0, r.jsx)("div", {
       className: v.reportMissingActivity,
-      children: (0, r.jsx)(a.Avr, {
+      children: (0, r.jsx)(l.Avr, {
         text: m.intl.string(m.t["+huUnJ"]),
         onClick: c,
         size: "sm"

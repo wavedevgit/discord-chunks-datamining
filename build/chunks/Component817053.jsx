@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk810568 = require("./810568.js"),
   Chunk168524 = require("./168524.js"),
@@ -50,8 +50,8 @@ function h(e) {
   let {
     imageSrc: t,
     gameName: n
-  } = e, [l, a] = i.useState(false), o = null != n ? n : u.intl.string(u.t.GIWFlJ);
-  return l || null == t ? (0, r.jsx)("div", {
+  } = e, [a, l] = i.useState(false), o = null != n ? n : u.intl.string(u.t.GIWFlJ);
+  return a || null == t ? (0, r.jsx)("div", {
     role: "img",
     "aria-label": o,
     className: d.fallback,
@@ -65,8 +65,8 @@ function h(e) {
     src: t,
     alt: o,
     className: d.gameCoverImage,
-    onError: () => a(true),
-    onLoad: () => a(false)
+    onError: () => l(true),
+    onLoad: () => l(false)
   })
 }
 
@@ -75,14 +75,14 @@ function p(e) {
     imageSrc: t,
     gameName: n,
     applicationId: i,
-    userId: l,
+    userId: a,
     className: p,
     hideTooltip: m = false
   } = e, v = (0, c.Z)({
     location: "GameCover",
     applicationId: i,
     source: o.m1.UserProfile,
-    sourceUserId: l,
+    sourceUserId: a,
     trackEntryPointImpression: true
   }), b = null != n ? n : u.intl.string(u.t.GIWFlJ), y = u.intl.formatToPlainString(u.t["8QLQBw"], {
     gameName: b
@@ -100,7 +100,7 @@ function p(e) {
   })) : e => (0, r.jsx)(s.P3F, g(f({}, e), {
     onClick: v,
     "aria-label": y,
-    className: a()(d.clickable, p),
+    className: l()(d.clickable, p),
     children: (0, r.jsx)(h, {
       imageSrc: t,
       gameName: n
@@ -113,25 +113,25 @@ function m(e) {
     applicationId: t,
     userId: n,
     className: i,
-    disableInteraction: l = false,
+    disableInteraction: a = false,
     hideTooltip: s
   } = e, o = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
       var n, r, i = {},
-        l = Object.keys(e);
-      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+        a = Object.keys(e);
+      for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
       return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var l = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+      var a = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
   }(e, ["applicationId", "userId", "className", "disableInteraction", "hideTooltip"]);
-  let c = a()(d.coverContainer, i);
-  return l ? (0, r.jsx)("div", {
+  let c = l()(d.coverContainer, i);
+  return a ? (0, r.jsx)("div", {
     className: c,
     children: (0, r.jsx)(h, f({}, o))
   }) : (0, r.jsx)(p, f({

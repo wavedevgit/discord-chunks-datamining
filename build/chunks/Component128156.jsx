@@ -1,7 +1,7 @@
 /** Chunk was on 56848 **/
 /** chunk id: 128156, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => A
+  Z: () => N
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -31,13 +31,13 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk837493 = require("./837493.js");
 
-function A(e) {
+function N(e) {
   let {
     user: t,
     currentUser: n,
-    displayProfile: A,
-    guildId: k,
-    channelId: N,
+    displayProfile: N,
+    guildId: A,
+    channelId: k,
     subsection: T,
     onClose: Z
   } = e, {
@@ -55,12 +55,12 @@ function A(e) {
     voiceActivity: G
   } = (0, m.Z)({
     userId: t.id,
-    guildId: k
+    guildId: A
   }), W = (0, i.e7)([o.Z], () => o.Z.isFetchingUserOutbox(t.id)), B = t.id === n.id, z = (0, i.e7)([f.Z, d.Z], () => {
     let e = B ? f.Z.getStatus() : d.Z.getStatus(t.id);
-    return e === l.Skl.OFFLINE || e === l.Skl.INVISIBLE
-  }), H = L.length > 0 || null != M, Y = D && null == M && null == G && null != F, V = !z && (H || Y), q = U.length > 0, K = L.some(e => (0, a.Z)(e));
-  if (!V && !q && W) return (0, r.jsx)("div", {
+    return e === a.Skl.OFFLINE || e === a.Skl.INVISIBLE
+  }), H = L.length > 0 || null != M, V = D && null == M && null == G && null != F, Y = !z && (H || V), q = U.length > 0, K = L.some(e => (0, l.Z)(e));
+  if (!Y && !q && W) return (0, r.jsx)("div", {
     className: C.cards,
     children: Array.from({
       length: 8
@@ -75,14 +75,14 @@ function A(e) {
       })]
     }, t))
   });
-  if (!V && !q && !W) {
+  if (!Y && !q && !W) {
     var J;
     return B ? (0, r.jsx)(P.Uf, {
       onClose: Z
     }) : (0, r.jsx)(P.P9, {
       user: t,
-      guildId: null != (J = null == A ? true : A.guildId) ? J : k,
-      channelId: N,
+      guildId: null != (J = null == N ? true : N.guildId) ? J : A,
+      channelId: k,
       onClose: Z
     })
   }
@@ -91,7 +91,7 @@ function A(e) {
     fade: true,
     children: [(() => {
       let e = B && R && !K;
-      return V ? (0, r.jsx)(x.Z, {
+      return Y ? (0, r.jsx)(x.Z, {
         heading: E.intl.string(E.t.J6STd3),
         children: (0, r.jsxs)("ul", {
           className: C.cards,
@@ -99,7 +99,7 @@ function A(e) {
             children: (0, r.jsx)(v.Z, {
               variant: "horizontal"
             })
-          }), !_ && Y && (0, r.jsx)("li", {
+          }), !_ && V && (0, r.jsx)("li", {
             children: (0, r.jsx)(j.Z, {
               user: t,
               currentUser: n,
@@ -120,7 +120,7 @@ function A(e) {
               activity: e,
               onClose: Z
             })
-          }, "live-".concat(i))), _ && Y && (0, r.jsx)("li", {
+          }, "live-".concat(i))), _ && V && (0, r.jsx)("li", {
             children: (0, r.jsx)(j.Z, {
               user: t,
               currentUser: n,
@@ -138,7 +138,7 @@ function A(e) {
     })(), q ? (0, r.jsx)(x.Z, {
       heading: E.intl.string(E.t.jzgEoK),
       introText: B ? E.intl.format(E.t["4bk9Ag"], {
-        learnMoreHook: (e, t) => (0, r.jsx)(l.eee, {
+        learnMoreHook: (e, t) => (0, r.jsx)(a.eee, {
           href: g.Z.getArticleURL(w.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e
         }, t)

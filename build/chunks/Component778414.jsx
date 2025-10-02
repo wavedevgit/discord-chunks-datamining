@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk355467 = require("./355467.js"),
@@ -33,7 +33,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk479283 = require("./479283.js");
 
-function N(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -57,13 +57,13 @@ function T(e, t) {
   var n, r, i = function(e, t) {
     if (null == e) return {};
     var n, r, i = {},
-      l = Object.keys(e);
-    for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+      a = Object.keys(e);
+    for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
     return i
   }(e, t);
   if (Object.getOwnPropertySymbols) {
-    var l = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -72,9 +72,9 @@ function Z(e) {
   var {
     widget: t
   } = e, n = T(e, ["widget"]);
-  return t instanceof h.q ? (0, r.jsx)(j.Z, N({
+  return t instanceof h.q ? (0, r.jsx)(j.Z, k({
     widget: t
-  }, n)) : t instanceof p.zy ? (0, r.jsx)(S.Z, N({
+  }, n)) : t instanceof p.zy ? (0, r.jsx)(S.Z, k({
     widget: t
   }, n)) : null
 }
@@ -97,27 +97,27 @@ function _(e) {
   let {
     user: t,
     guildId: n,
-    channelId: l
-  } = e, a = (0, O.Z)(t.id), o = (0, s.e7)([f.default], () => f.default.getId() === t.id), v = (() => {
+    channelId: a
+  } = e, l = (0, O.Z)(t.id), o = (0, s.e7)([f.default], () => f.default.getId() === t.id), v = (() => {
     let [e, t] = (0, s.Wu)([g.Z], () => [g.Z.ipCountryCode, g.Z.ipCountryCodeRequest]), n = (0, u.U)();
     return i.useEffect(() => {
       null == e && null == t && n && (0, c.GE)()
     }, [e, t, n]), "GB" === e && n
-  })(), j = 0 === a.length && o, x = i.useMemo(() => a.filter(p.Wc), [a]), S = i.useMemo(() => a.filter(e => e instanceof h.q), [a]);
+  })(), j = 0 === l.length && o, x = i.useMemo(() => l.filter(p.Wc), [l]), S = i.useMemo(() => l.filter(e => e instanceof h.q), [l]);
   (0, y.ZP)(x), (0, m.J)(o, x);
   var I = t.id;
   (0, b.s)(S);
   let {
     data: w
-  } = (0, d.O)(I), A = i.useRef(w);
-  return (A.current = w, i.useEffect(() => {
-    null !== A.current && (0, s.Xf)(C.McO.USER_APPLICATION_IDENTITIES(I))
+  } = (0, d.O)(I), N = i.useRef(w);
+  return (N.current = w, i.useEffect(() => {
+    null !== N.current && (0, s.Xf)(C.McO.USER_APPLICATION_IDENTITIES(I))
   }, [I]), j) ? (0, r.jsx)(E.Z, {}) : (0, r.jsxs)(r.Fragment, {
-    children: [o && v && (0, r.jsx)(D, {}), a.map((e, i) => (0, r.jsx)(Z, {
+    children: [o && v && (0, r.jsx)(D, {}), l.map((e, i) => (0, r.jsx)(Z, {
       widget: e,
       user: t,
       guildId: n,
-      channelId: l,
+      channelId: a,
       index: i
     }, e.type)), o && (0, r.jsx)(P.Z, {})]
   })
@@ -127,21 +127,21 @@ function R(e) {
   var {
     user: t
   } = e, n = T(e, ["user"]);
-  let l = i.useRef(null);
+  let a = i.useRef(null);
   (0, v.r)({
-    container: l.current
+    container: a.current
   });
   let s = (0, I.h)(t.id);
   return (0, r.jsxs)(w.F, {
     "data-scroller": true,
-    scrollerRef: l,
-    className: a()(k.scroller, {
-      [k.hasToolbar]: s
+    scrollerRef: a,
+    className: l()(A.scroller, {
+      [A.hasToolbar]: s
     }),
     fade: true,
     children: [(0, r.jsx)(x.Z, {
-      scrollerRef: l
-    }), (0, r.jsx)(_, N({
+      scrollerRef: a
+    }), (0, r.jsx)(_, k({
       user: t
     }, n))]
   })

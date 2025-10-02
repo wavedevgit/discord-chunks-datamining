@@ -13,11 +13,11 @@ function s(e) {
       let t = i.default.getId();
       return null != e && t === e
     }, [e]),
-    n = (0, r.e7)([a.Z], () => a.Z.getPendingWidgets()),
-    s = (0, r.Wu)([l.Z], () => {
+    n = (0, r.e7)([l.Z], () => l.Z.getPendingWidgets()),
+    s = (0, r.Wu)([a.Z], () => {
       var t;
       if (null == e) return [];
-      let n = l.Z.getUserProfile(e);
+      let n = a.Z.getUserProfile(e);
       return null != (t = null == n ? true : n.widgets) ? t : []
     }, [e]);
   return t && null !== n ? n : s

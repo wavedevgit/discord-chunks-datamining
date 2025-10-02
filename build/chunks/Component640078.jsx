@@ -22,7 +22,7 @@ let u = function(e) {
     isDragging: e.isDragging(),
     item: e.getItem(),
     sourceClientOffset: e.getSourceClientOffset()
-  })), g = (0, l.e7)([s.default], () => s.default.getCurrentUser()), h = (0, a.zPA)();
+  })), g = (0, a.e7)([s.default], () => s.default.getCurrentUser()), h = (0, l.zPA)();
   if (true !== u || null == f || null == d.widget) return null;
   let p = null == n || null == (t = n.current) ? true : t.getBoundingClientRect();
   if (null == p || null == g) return null;
