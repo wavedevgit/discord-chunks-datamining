@@ -106,7 +106,7 @@ let b = () => ({
       title: Chunk388032.intl.string(Chunk388032.t.fFTJTE),
       emoji: {
         id: true,
-        name: "\uD83D\uDCA8"
+        name: "\uD83E\uDDFB"
       }
     },
     [Chunk505905.tN.CHILLING]: {
