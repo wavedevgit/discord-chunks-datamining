@@ -1,7 +1,7 @@
 /** Chunk was on 3408 **/
 /** chunk id: 303385, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -15,96 +15,95 @@ var Chunk120356 = require("./120356.js"),
   Chunk46140 = require("./46140.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk96656 = require("./96656.js");
-let g = (0, Chunk137317.animated)(Chunk481060.izJ),
-  f = e => {
-    let {
-      quest: t,
-      expansionSpring: n,
-      isFullyExpanded: s,
-      partnerBranding: f,
-      useReducedMotion: h
-    } = e, {
-      status: x
-    } = (0, c.n)({
-      location: u.dr.QUESTS_BAR,
-      questConfig: t.config
-    }), _ = null == x ? true : x.progressBlur, b = (null == x ? true : x.label1) || (null == x ? true : x.label2), j = null == x ? true : x.shineWipe, v = _ ? 70 : 48, C = _ ? 12 : 8, y = _ ? false : false, O = _ ? 0 : b ? false : 6;
-    return (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(a.animated.div, {
-        className: m.rewardTileContainer,
+let g = e => {
+  let {
+    quest: t,
+    expansionSpring: n,
+    isFullyExpanded: s,
+    partnerBranding: g,
+    useReducedMotion: f
+  } = e, {
+    status: h
+  } = (0, c.n)({
+    location: u.dr.QUESTS_BAR,
+    questConfig: t.config
+  }), x = null == h ? true : h.progressBlur, _ = (null == h ? true : h.label1) || (null == h ? true : h.label2), b = null == h ? true : h.shineWipe, j = x ? 70 : 48, v = x ? 12 : 8, C = x ? false : false, y = x ? 0 : _ ? false : 6;
+  return (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(a.animated.div, {
+      className: m.rewardTileContainer,
+      style: {
+        transform: (0, a.to)([n.to({
+          range: [0, 1],
+          output: [0, 0]
+        }), n.to({
+          range: [0, 1],
+          output: [0, 82]
+        }), n.to({
+          range: [0, 1],
+          output: [1, 64 / j]
+        })], (e, t, n) => "translate(".concat(e, "px, ").concat(t, "px) scale(").concat(n, ")"))
+      },
+      children: (0, r.jsx)(d.Z, {
+        learnMoreStyle: "text",
+        learnMoreFontSize: s ? j / 64 * 12 : true,
+        quest: t,
+        questContent: l.jn.QUEST_BAR_V2,
+        location: u.dr.QUESTS_BAR,
+        autoplay: s && !f,
+        sourceQuestContent: l.jn.QUEST_BAR_V2,
+        showShine: !b,
         style: {
-          transform: (0, a.to)([n.to({
+          width: j,
+          height: j,
+          marginRight: v,
+          borderRadius: j / 64 * 8
+        }
+      })
+    }), (0, r.jsxs)(a.animated.div, {
+      className: o()(m.rewardHighlightLogoCTA, {
+        [m.rewardHighlightLogoCTAHeightBoost]: x,
+        [m.rewardHighlightLogoCTALabel]: _
+      }),
+      style: {
+        height: x ? j : true,
+        transform: (0, a.to)([n.to({
+          range: [0, 1],
+          output: [0, C]
+        }), n.to({
+          range: [0, 1],
+          output: [0, y]
+        })], (e, t) => "translate(".concat(e, "px, ").concat(t, "px)"))
+      },
+      children: [(0, r.jsx)("div", {
+        className: o()({
+          [m.partnerBranding]: !x && !_
+        }),
+        children: g
+      }), x && (0, r.jsx)(a.animated.div, {
+        className: m.rewardHighlightLogoCTADivider,
+        style: {
+          opacity: n.to({
             range: [0, 1],
-            output: [0, 0]
-          }), n.to({
-            range: [0, 1],
-            output: [0, 82]
-          }), n.to({
-            range: [0, 1],
-            output: [1, 64 / v]
-          })], (e, t, n) => "translate(".concat(e, "px, ").concat(t, "px) scale(").concat(n, ")"))
-        },
-        children: (0, r.jsx)(d.Z, {
-          learnMoreStyle: "text",
-          learnMoreFontSize: s ? v / 64 * 12 : true,
-          quest: t,
-          questContent: l.jn.QUEST_BAR_V2,
-          location: u.dr.QUESTS_BAR,
-          autoplay: s && !h,
-          sourceQuestContent: l.jn.QUEST_BAR_V2,
-          showShine: !j,
-          style: {
-            width: v,
-            height: v,
-            marginRight: C,
-            borderRadius: v / 64 * 8
-          }
-        })
-      }), (0, r.jsxs)(a.animated.div, {
-        className: o()(m.rewardHighlightLogoCTA, {
-          [m.rewardHighlightLogoCTAHeightBoost]: _,
-          [m.rewardHighlightLogoCTALabel]: b
+            output: [.1, 0]
+          })
+        }
+      }), (0, r.jsx)(a.animated.div, {
+        className: o()(m.rewardHighlightCTA, {
+          [m.rewardHighlightCTALabel]: _
         }),
         style: {
-          height: _ ? v : true,
-          transform: (0, a.to)([n.to({
+          opacity: n.to({
             range: [0, 1],
-            output: [0, y]
-          }), n.to({
-            range: [0, 1],
-            output: [0, O]
-          })], (e, t) => "translate(".concat(e, "px, ").concat(t, "px)"))
-        },
-        children: [(0, r.jsx)("div", {
-          className: o()({
-            [m.partnerBranding]: !_ && !b
-          }),
-          children: f
-        }), _ && (0, r.jsx)(g, {
-          className: m.rewardHighlightLogoCTADivider,
-          style: {
-            opacity: n.to({
-              range: [0, 1],
-              output: [.1, 0]
-            })
-          }
-        }), (0, r.jsx)(a.animated.div, {
-          className: o()(m.rewardHighlightCTA, {
-            [m.rewardHighlightCTALabel]: b
-          }),
-          style: {
-            opacity: n.to({
-              range: [0, 1],
-              output: [b ? 1 : .7, 0]
-            })
-          },
-          children: (0, r.jsx)(i.Text, {
-            color: "always-white",
-            lineClamp: 1,
-            variant: "text-xs/medium",
-            children: p.intl.string((null == x ? true : x.label2) ? p.t["3mgEQU"] : p.t["1Wvve3"])
+            output: [_ ? 1 : .7, 0]
           })
-        })]
+        },
+        children: (0, r.jsx)(i.Text, {
+          color: "always-white",
+          lineClamp: 1,
+          variant: "text-xs/medium",
+          children: p.intl.string((null == h ? true : h.label2) ? p.t["3mgEQU"] : p.t["1Wvve3"])
+        })
       })]
-    })
-  }
+    })]
+  })
+}
