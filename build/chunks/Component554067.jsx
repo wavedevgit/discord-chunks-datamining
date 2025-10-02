@@ -2,7 +2,7 @@
 /** chunk id: 554067, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => C
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,22 +17,22 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk55918 = require("./55918.js");
 
-function _(e) {
+function C(e) {
   let {
     handleTransition: t,
     selectedTab: n
   } = e, {
-    searchQuery: _,
-    onSetSearchQuery: C
-  } = (0, u.S)(), [h, m] = l.useState(""), b = (0, c.sp)(), E = (0, i.e7)([a.default], () => a.default.locale);
+    searchQuery: C,
+    onSetSearchQuery: _
+  } = (0, u.S)(), [h, m] = l.useState(""), b = (0, c.sp)(), E = (0, a.e7)([s.default], () => s.default.locale);
   return l.useEffect(() => {
     let e = setTimeout(() => {
-      C(h)
+      _(h)
     }, 250);
     return () => clearTimeout(e)
-  }, [h, C]), l.useEffect(() => {
-    m(_)
-  }, [_]), (0, r.jsx)(s.P3F, {
+  }, [h, _]), l.useEffect(() => {
+    m(C)
+  }, [C]), (0, r.jsx)(i.P3F, {
     ignoreKeyPress: true,
     className: f.searchBar,
     onClick: () => {
@@ -46,10 +46,10 @@ function _(e) {
         page_type: n
       })
     },
-    children: (0, r.jsx)(s.E1j, {
+    children: (0, r.jsx)(i.E1j, {
       size: "sm",
       onKeyDown: e => {
-        "Enter" === e.key && C(h)
+        "Enter" === e.key && _(h)
       },
       query: h,
       onChange: m,

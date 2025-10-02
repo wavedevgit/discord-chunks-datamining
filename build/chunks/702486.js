@@ -13,16 +13,16 @@ var Chunk647438 = require("./647438.js"),
 let c = (e, t, n, r) => {
     let {
       scrollTop: l = 0,
-      scrollOffset: i = 0,
-      scrollHeight: s = 0,
+      scrollOffset: a = 0,
+      scrollHeight: i = 0,
       scrollWidth: o = 0
     } = r;
-    if (s > 0) {
-      let r = (l + i) / s;
-      r > 0 && a.default.track(e, {
+    if (i > 0) {
+      let r = (l + a) / i;
+      r > 0 && s.default.track(e, {
         scroll_visible_percent: r,
         source: n,
-        page_height: Math.round(s),
+        page_height: Math.round(i),
         page_width: Math.round(o),
         page_session_id: t
       })
@@ -31,20 +31,20 @@ let c = (e, t, n, r) => {
   u = (e, t) => {
     let {
       analyticsSource: n
-    } = (0, s.MV)(t), a = (0, l.h)(c, 5e3, [], {
+    } = (0, i.MV)(t), s = (0, l.h)(c, 5e3, [], {
       trailing: true
-    }), u = (0, i.sp)(), d = null == u ? true : u.sessionId;
+    }), u = (0, a.sp)(), d = null == u ? true : u.sessionId;
     return {
       handleScroll: r.useCallback(() => {
         if (null != e.current) {
           let t = e.current.getScrollerNode();
-          null != t && a(o.rMx.COLLECTIBLES_SHOP_SCROLLED, null != d ? d : "", n, {
+          null != t && s(o.rMx.COLLECTIBLES_SHOP_SCROLLED, null != d ? d : "", n, {
             scrollTop: t.scrollTop,
             scrollOffset: t.offsetHeight,
             scrollHeight: t.scrollHeight,
             scrollWidth: t.scrollWidth
           })
         }
-      }, [a, n, d, e])
+      }, [s, n, d, e])
     }
   }

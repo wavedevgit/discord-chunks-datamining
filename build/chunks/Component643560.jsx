@@ -67,12 +67,12 @@ function f(e) {
     c.kx(t.channelId, t.guildId)
   };
 
-  function v() {
+  function x() {
     (0, a.Zy)(), null == g || g()
   }
   return (0, r.jsxs)(l.v2r, {
     navId: "guild-entry-context",
-    onClose: v,
+    onClose: x,
     "aria-label": u.intl.string(u.t.HpQykZ),
     onSelect: f,
     children: [(0, r.jsxs)(l.kSQ, {
@@ -87,7 +87,7 @@ function f(e) {
             return n => (0, r.jsx)(e, h(p({}, n), {
               entry: t
             }))
-          }), v()
+          }), x()
         }
       }) : null, _ ? (0, r.jsx)(l.sNh, {
         id: "remove-from-hub",
@@ -105,14 +105,14 @@ function f(e) {
                 guildName: t.name
               })
             })
-          }))), v()
+          }))), x()
         },
         color: "danger"
       }) : null, b ? null : (0, r.jsx)(l.sNh, {
         id: "report-server-listing",
         label: u.intl.string(u.t.Aen9en),
         action: function() {
-          null != t && ((0, o.sq)(t), v())
+          null != t && ((0, o.sq)(t), x())
         },
         icon: l.U65,
         color: "danger"

@@ -89,7 +89,7 @@ let P = e => {
       variant: "text-sm/semibold",
       color: "header-primary",
       className: C.addServerText,
-      children: x.intl.string(x.t.H9jxS0)
+      children: v.intl.string(v.t.H9jxS0)
     })]
   })
 };
@@ -106,7 +106,7 @@ function T(e) {
     }),
     children: (0, r.jsxs)(p.ZP, {
       children: [d ? (0, r.jsx)(o.ua7, {
-        text: x.intl.string(x.t.XnuOvL),
+        text: v.intl.string(v.t.XnuOvL),
         hideOnClick: true,
         children: e => {
           var {
@@ -123,7 +123,7 @@ function T(e) {
                 }))
               })
             },
-            "aria-label": x.intl.string(x.t.XnuOvL),
+            "aria-label": v.intl.string(v.t.XnuOvL),
             children: (0, r.jsx)(o.vdY, {
               size: "xs",
               color: "currentColor",
@@ -142,7 +142,7 @@ function T(e) {
             onClick: t
           } = e, n = Z(e, ["onClick"]);
           return (0, r.jsx)(o.ua7, {
-            text: x.intl.string(x.t.UKOtz8),
+            text: v.intl.string(v.t.UKOtz8),
             hideOnClick: true,
             children: e => {
               var {
@@ -153,7 +153,7 @@ function T(e) {
                 onClick: e => {
                   null == i || i(), t(e)
                 },
-                "aria-label": x.intl.string(x.t.UKOtz8),
+                "aria-label": v.intl.string(v.t.UKOtz8),
                 children: (0, r.jsx)(o.xhG, {
                   size: "md",
                   color: "currentColor",
@@ -175,7 +175,7 @@ let N = e => {
     p(true);
     try {
       O ? (0, m.X)(l.guildId) : await d.Z.joinGuild(l.guildId, {
-        source: v.vtS.DIRECTORY_ENTRY
+        source: x.vtS.DIRECTORY_ENTRY
       })
     } finally {
       p(false)
@@ -188,8 +188,8 @@ let N = e => {
     id: l.guildId,
     icon: l.icon,
     size: 40
-  })) ? t : true, P = x.intl.string(x.t.VJlc0d);
-  return O && (P = x.intl.string(x.t.cqWE2d)), (0, r.jsxs)("div", {
+  })) ? t : true, P = v.intl.string(v.t.VJlc0d);
+  return O && (P = v.intl.string(v.t.cqWE2d)), (0, r.jsxs)("div", {
     className: C.card,
     onContextMenu: e => {
       (0, c.jW)(e, async () => {
@@ -256,7 +256,7 @@ let N = e => {
           }), (0, r.jsx)(o.Text, {
             variant: "text-xs/normal",
             color: "header-secondary",
-            children: x.intl.format(x.t["LC+S+v"], {
+            children: v.intl.format(v.t["LC+S+v"], {
               membersOnline: l.approximatePresenceCount
             })
           })]
@@ -267,7 +267,7 @@ let N = e => {
           }), (0, r.jsx)(o.Text, {
             variant: "text-xs/normal",
             color: "header-secondary",
-            children: x.intl.format(x.t.zRl6XV, {
+            children: v.intl.format(v.t.zRl6XV, {
               count: l.approximateMemberCount
             })
           })]

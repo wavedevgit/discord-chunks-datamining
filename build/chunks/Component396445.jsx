@@ -2,10 +2,11 @@
 /** chunk id: 396445, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  J7: () => y,
-  SS: () => L,
-  oc: () => T,
-  rC: () => j
+  J7: () => L,
+  NT: () => I,
+  SS: () => j,
+  oc: () => y,
+  rC: () => k
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -28,8 +29,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk956472 = require("./956472.js"),
   Chunk642909 = require("./642909.js"),
   Chunk215023 = require("./215023.js"),
-  Chunk981631 = require("./981631.js");
-let T = (e, t, n, r) => {
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx");
+let y = (e, t, n, r) => {
     u.default.track(O.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
       collectibles_shop_session_id: null == n ? true : n.sessionId,
       sku_id: e.skuId,
@@ -38,67 +40,67 @@ let T = (e, t, n, r) => {
       page_category: t === x.AW.HOME || null == n ? true : n.pageCategory,
       page_index: t === x.AW.CATALOG ? null == n ? true : n.pageIndex : true,
       page_size: t === x.AW.CATALOG ? null == n ? true : n.pageSize : true,
-      tile_type: i.Z[e.type],
+      tile_type: a.Z[e.type],
       tile_position: String(null == n ? true : n.tilePosition),
       cta_name: r
     })
   },
-  y = (e, t) => {
-    let n = (0, _.Nd)(),
+  L = (e, t) => {
+    let n = (0, C.Nd)(),
       r = null == n ? true : n.tab,
-      i = (0, f.Vc)(),
-      u = null == i ? true : i.blockType,
+      a = (0, f.Vc)(),
+      u = null == a ? true : a.blockType,
       p = (0, d.sp)(),
       {
-        analyticsLocations: C
+        analyticsLocations: _
       } = (0, c.ZP)(o.Z.COLLECTIBLES_SHOP_CARD),
-      m = (0, a.e7)([g.Z], () => g.Z.getCategoryForProduct(e.skuId)),
+      m = (0, s.e7)([g.Z], () => g.Z.getCategoryForProduct(e.skuId)),
       b = l.useRef(null),
       E = (0, S.G)("useHandlePreviewClick"),
-      O = null != u && u === s.z.HERO && E ? x.Ch.THUMBNAIL : x.Ch.DEFAULT;
+      O = null != u && u === i.z.HERO && E ? x.Ch.THUMBNAIL : x.Ch.DEFAULT;
     return l.useCallback(t => n => {
       if (null == m) return;
       let l = (0, v.oQ)({
         product: e
       });
-      b.current = n.currentTarget, T(e, r, p, null), (0, h.T)({
+      b.current = n.currentTarget, y(e, r, p, null), (0, h.T)({
         product: e,
         category: m,
         shouldCheckoutWithOrbs: l,
-        analyticsLocations: C,
+        analyticsLocations: _,
         analyticsSource: t,
         returnRef: b,
         tab: r,
         variantType: O
       })
-    }, [e, r, m, C, p, O])(t)
+    }, [e, r, m, _, p, O])(t)
   },
-  L = e => {
+  j = e => {
     let {
       previewingVariantIndex: t,
       handleEntering: n,
-      handleLeaving: s
-    } = (0, E.f)(e), o = (0, a.e7)([p.Z], () => p.Z.purchases), c = (0, C.o)(e, o), u = (0, b.o)(e, o, t), [d, g] = l.useState(false);
-    if (e.type === i.Z.VARIANTS_GROUP) {
+      handleLeaving: i
+    } = (0, E.f)(e), o = (0, s.e7)([p.Z], () => p.Z.purchases), c = (0, _.o)(e, o), u = (0, b.o)(e, o, t), [d, g] = l.useState(false);
+    if (e.type === a.Z.VARIANTS_GROUP) {
       let l = (0, r.jsx)(m.P, {
         variantGroupProduct: e,
         previewingVariantIndexProps: {
           previewingVariantIndex: t,
           handleEntering: n,
-          handleLeaving: s
+          handleLeaving: i
         },
         selectedVariantIndex: c,
         setIsHoveringOnSwitch: g,
         minimal: true,
-        alternativeBackgroundColor: (null == u ? true : u.type) === i.Z.PROFILE_EFFECT
+        alternativeBackgroundColor: (null == u ? true : u.type) === a.Z.PROFILE_EFFECT
       });
       return [c, l]
     }
     return [c, null]
   },
-  j = e => {
+  k = e => {
     if (null == e) return null;
-    if (e.type === i.Z.VARIANTS_GROUP) {
+    if (e.type === a.Z.VARIANTS_GROUP) {
       if (null == e.variants || 0 === e.variants.length) return null;
       let t = e.variants[0];
       if (null == t) return null;
@@ -106,4 +108,22 @@ let T = (e, t, n, r) => {
       return n.type
     }
     return e.type
+  },
+  I = e => {
+    switch (k(e)) {
+      case a.Z.AVATAR_DECORATION:
+        return T.intl.formatToPlainString(T.t.lvBzLi, {
+          product: e.name
+        });
+      case a.Z.PROFILE_EFFECT:
+        return T.intl.formatToPlainString(T.t.eR7moK, {
+          product: e.name
+        });
+      case a.Z.NAMEPLATE:
+        return T.intl.formatToPlainString(T.t.YFOwHh, {
+          product: e.name
+        });
+      default:
+        return e.name
+    }
   }

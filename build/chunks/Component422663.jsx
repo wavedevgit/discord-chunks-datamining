@@ -3,7 +3,7 @@
 require.d(exports, {
   VS: () => j,
   oh: () => p,
-  ok: () => y
+  ok: () => x
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -37,7 +37,7 @@ function f(e) {
   return e
 }
 
-function b(e) {
+function g(e) {
   let {
     onNext: t
   } = (0, u.aj)();
@@ -50,7 +50,7 @@ function b(e) {
   }, e))
 }
 
-function g(e) {
+function b(e) {
   let {
     onNext: t,
     stepLoading: n,
@@ -75,9 +75,9 @@ function p(e) {
   } = (0, u.aj)(), i = null == n || null == (t = n.onNext) ? true : t.type;
   switch (i) {
     case "go-to-step":
-      return (0, l.jsx)(b, f({}, e));
-    case "save":
       return (0, l.jsx)(g, f({}, e));
+    case "save":
+      return (0, l.jsx)(b, f({}, e));
     default:
       s()(null != i, "Invalid stepType ".concat(i))
   }
@@ -115,7 +115,7 @@ function j(e) {
   }), n))
 }
 
-function y(e) {
+function x(e) {
   let {
     step: t,
     className: n,

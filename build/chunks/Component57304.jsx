@@ -50,16 +50,16 @@ function m(e, t) {
 let b = function(e) {
   let {
     channel: t
-  } = e, n = (0, o.$5)(t), [b, y] = i.useState(false), _ = (0, l.e7)([d.ZP], () => d.ZP.hasUnreadPins(t.id), [t]), O = (0, c.Aq)(), j = i.useRef(null), v = i.useCallback(() => {
+  } = e, n = (0, o.$5)(t), [b, y] = i.useState(false), _ = (0, l.e7)([d.ZP], () => d.ZP.hasUnreadPins(t.id), [t]), O = (0, c.Aq)(), j = i.useRef(null), x = i.useCallback(() => {
     n || y(e => !e)
   }, [n]);
 
-  function x(e) {
+  function v(e) {
     (null == e ? true : e.shiftKey) || O.dispatch(h.CkL.POPOUT_CLOSE)
   }
-  return i.useEffect(() => (u.S.subscribe(h.CkL.TOGGLE_CHANNEL_PINS, v), () => {
-    u.S.unsubscribe(h.CkL.TOGGLE_CHANNEL_PINS, v)
-  }), [v]), (0, r.jsx)(a.yRy, {
+  return i.useEffect(() => (u.S.subscribe(h.CkL.TOGGLE_CHANNEL_PINS, x), () => {
+    u.S.unsubscribe(h.CkL.TOGGLE_CHANNEL_PINS, x)
+  }), [x]), (0, r.jsx)(a.yRy, {
     targetElementRef: j,
     shouldShow: b,
     animation: a.yRy.Animation.NONE,
@@ -70,7 +70,7 @@ let b = function(e) {
     onRequestClose: () => y(false),
     renderPopout: function(e) {
       return (0, r.jsx)(s.Z, m(g({}, e), {
-        onJump: x,
+        onJump: v,
         channel: t
       }))
     },
@@ -81,7 +81,7 @@ let b = function(e) {
       } = t;
       return (0, r.jsx)(p.JO, m(g({}, e), {
         ref: j,
-        onClick: v,
+        onClick: x,
         tooltip: i ? null : f.intl.string(f.t["mp1N//"]),
         icon: a.qQX,
         iconSize: 20,

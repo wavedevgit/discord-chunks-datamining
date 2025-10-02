@@ -92,6 +92,7 @@ let S = {
       application_id: (0, g.N)(n),
       location: l,
       location_stack: l,
+      payment_gateway: x.ht.VIRTUAL_CURRENCY,
       sku_id: n,
       currency: P.pKx.DISCORD_ORB
     }, null != i && {
@@ -119,7 +120,8 @@ let S = {
         location: Chunk583434,
         location_stack: Chunk583434,
         sku_id: Chunk493773,
-        activity_session_id: module
+        activity_session_id: module,
+        payment_gateway: Chunk231338.ht.VIRTUAL_CURRENCY
       }, null != Chunk89057 && {
         price: null != (t = Chunk89057.orbPriceAmount) ? exports : true,
         regular_price: null != (r = Chunk89057.orbPriceAmount) ? require : true
@@ -143,12 +145,10 @@ let S = {
         })) : e === P.rMx.PAYMENT_FLOW_CANCELED ? v.default.track(P.rMx.PAYMENT_FLOW_CANCELED, w(_({}, p), {
           duration_ms: n
         })) : e === P.rMx.PAYMENT_FLOW_COMPLETED ? v.default.track(P.rMx.PAYMENT_FLOW_COMPLETED, w(_({}, p), {
-          payment_gateway: x.ht.VIRTUAL_CURRENCY,
           duration_ms: n
         })) : e === P.rMx.PAYMENT_FLOW_SUCCEEDED ? v.default.track(P.rMx.PAYMENT_FLOW_SUCCEEDED, w(_({}, p), {
           duration_ms: n
         })) : e === P.rMx.PAYMENT_FLOW_FAILED && v.default.track(P.rMx.PAYMENT_FLOW_FAILED, _(w(_({}, p), {
-          payment_gateway: x.ht.VIRTUAL_CURRENCY,
           duration_ms: n
         }), null != r ? {
           payment_error_code: r.code,

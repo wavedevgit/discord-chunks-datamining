@@ -106,7 +106,7 @@ function Y(e) {
     eh ? ((t = eu.width / G.I0) > eu.height && (e = (t = eu.height) * G.I0), eg = (eu.height - t) / 2) : ((e = Math.min(eu.height * G.I0)) > eu.width && (t = (e = eu.width) / G.I0), ef = (eu.width - e) / 2)
   }
   let eb = en.get(null != (Y = null == X ? true : X.id) ? Y : ""),
-    ey = (0, s.e7)([v.Z], () => v.Z.getChannelId()),
+    ey = (0, s.e7)([x.Z], () => x.Z.getChannelId()),
     e_ = (0, s.Wu)([j.ZP], () => {
       var e;
       return null == ee ? [] : Array.from(null != (e = null == eb ? true : eb.embeddedActivity.userIds) ? e : []).map(e => j.ZP.getMember(ee.guild_id, e))
@@ -150,14 +150,14 @@ function Y(e) {
         }), r) : l
       }, [o, e, n, t])
     }(ea, es, q),
-    ev = (0, k.y)(),
+    ex = (0, k.y)(),
     {
-      data: ex
+      data: ev
     } = (0, R.K)(Z.B);
   if (null == X) return null;
-  let eC = null == ex ? true : ex.isFortniteActivity(X.id),
+  let eC = null == ev ? true : ev.isFortniteActivity(X.id),
     eI = [];
-  null != eb && (eI = Array.from(eb.embeddedActivity.userIds).map(e => x.default.getUser(e)).filter(e => null != e && true !== e));
+  null != eb && (eI = Array.from(eb.embeddedActivity.userIds).map(e => v.default.getUser(e)).filter(e => null != e && true !== e));
   let eE = e => {
     var t;
     if (null == e || true === e || e === D.ag) return null;
@@ -251,7 +251,7 @@ function Y(e) {
               text: F.intl.string(F.t["36gY4e"]),
               variant: "color-mix"
             })
-          }), ev ? (0, r.jsx)(_.Z, {
+          }), ex ? (0, r.jsx)(_.Z, {
             popoutOpen: false,
             onOpenPopout: () => {
               (0, f.yw)(H.rMx.ACTIVITY_POPOUT_POP_OUT_BUTTON_CLICKED), (0, L.Z)({

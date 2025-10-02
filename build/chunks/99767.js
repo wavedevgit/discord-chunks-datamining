@@ -22,18 +22,18 @@ let g = {
   p = (e, t) => {
     let {
       enabled: n
-    } = (0, s.WX)({
+    } = (0, i.WX)({
       location: "useShopViewTransition"
-    }), i = (0, a.FF)("CollectiblesBrowse"), {
+    }), a = (0, s.FF)("CollectiblesBrowse"), {
       setItemTypeFilter: p,
       reset: f,
-      setCurrentTab: _
-    } = (0, o.S)(), C = r.useMemo(() => e !== u.AW.ORBS || n ? (0, u.RE)(e) && i ? u.AW.CATALOG : e : u.AW.HOME, [e, n, i]), [h, m] = r.useState(C), [b, E] = r.useState(u.f7.VISIBLE);
+      setCurrentTab: C
+    } = (0, o.S)(), _ = r.useMemo(() => e !== u.AW.ORBS || n ? (0, u.RE)(e) && a ? u.AW.CATALOG : e : u.AW.HOME, [e, n, a]), [h, m] = r.useState(_), [b, E] = r.useState(u.f7.VISIBLE);
     r.useEffect(() => {
-      _(h)
-    }, [h, _]), r.useEffect(() => {
-      m(C)
-    }, [C]);
+      C(h)
+    }, [h, C]), r.useEffect(() => {
+      m(_)
+    }, [_]);
     let {
       clearError: v
     } = (0, c.a)(), S = (0, l.k6)(), x = r.useCallback(async (e, n) => {
@@ -47,11 +47,11 @@ let g = {
         let e;
         E(u.f7.OUT), await (e = 1.1 * u.lb, new Promise(t => setTimeout(t, e)))
       }
-      let r = i && ![u.AW.HOME, u.AW.ORBS].includes(e) ? u.AW.CATALOG : e;
+      let r = a && ![u.AW.HOME, u.AW.ORBS].includes(e) ? u.AW.CATALOG : e;
       m(r), n && E(u.f7.IN), t || S.push(d.Z5c.COLLECTIBLES_SHOP_WITH_TAB(r), {
         shallow: true
       }), E(u.f7.VISIBLE)
-    }, [S, t, i, p, f, h, v]);
+    }, [S, t, a, p, f, h, v]);
     return {
       selectedTab: h,
       transitionState: b,

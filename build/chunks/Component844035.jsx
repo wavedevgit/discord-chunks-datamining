@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk622535 = require("./622535.js"),
   Chunk481060 = require("./481060.js"),
   Chunk100527 = require("./100527.js"),
@@ -25,27 +25,29 @@ let E = e => {
   let {
     product: t,
     variantSwitcher: n,
-    selectedVariantIndex: i
+    selectedVariantIndex: a
   } = e, E = (0, u.Nd)(), v = null == E ? true : E.tab, S = l.useRef(null), {
     handleCardVisibilityChange: x
   } = (0, d.E)(t.skuId, v === m.AW.CATALOG ? "full" : v), O = (0, h.J7)(t, c.Z.COLLECTIBLES_SHOP_CARD);
-  return (0, r.jsx)(a.$, {
+  return (0, r.jsx)(s.$, {
     innerRef: S,
     onChange: x,
     threshold: 0,
-    children: (0, r.jsx)(o.tEY, {
+    children: (0, r.jsx)("div", {
+      className: b.baseProductCardHoverContainer,
       children: (0, r.jsx)(o.kL8, {
         ref: S,
         onClick: O,
-        "aria-label": t.name,
+        "aria-label": (0, h.NT)(t),
+        className: b.baseProductCardContainer,
         children: (0, r.jsxs)("div", {
-          className: b.baseProductCardContainer,
+          className: b.baseProductCardContentContainer,
           children: [(0, r.jsx)(g.Z, {
             product: t
           }), (0, r.jsxs)("div", {
             className: b.innerContainer,
             children: [(0, r.jsxs)("div", {
-              className: s()(b.baseProductCardDetailsContainer, {
+              className: i()(b.baseProductCardDetailsContainer, {
                 [b.hasVariantSwitcher]: null != n
               }),
               children: [(0, r.jsx)(p.Z, {
@@ -65,14 +67,14 @@ let E = e => {
             children: (0, r.jsxs)(o.hE2, {
               wrap: false,
               fullWidth: true,
-              children: [(0, r.jsx)(_.Z, {
+              children: [(0, r.jsx)(C.Z, {
                 product: t,
                 cardRef: S,
-                selectedVariantIndex: i
-              }), (0, r.jsx)(C.Z, {
+                selectedVariantIndex: a
+              }), (0, r.jsx)(_.Z, {
                 product: t,
                 cardRef: S,
-                selectedVariantIndex: i
+                selectedVariantIndex: a
               })]
             })
           })]

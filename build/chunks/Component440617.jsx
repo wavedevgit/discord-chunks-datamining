@@ -2,14 +2,14 @@
 /** chunk id: 440617, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => s
 });
 var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk891206 = require("./891206.js");
 
-function a() {
+function s() {
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk891206.container,
     children: [(0, Chunk951288.jsx)("img", {

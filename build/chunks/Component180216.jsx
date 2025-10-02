@@ -25,7 +25,7 @@ function b(e) {
   } = e, b = (0, d.C)({
     guildId: t,
     channelId: n
-  }), y = (0, c.GG)(t), _ = (0, c.YB)(t), O = (0, l.e7)([o.Z], () => o.Z.getGuild(t), [t]), j = null == O ? true : O.name, v = (0, l.e7)([s.Z], () => s.Z.getChannel(n)), x = i.useMemo(() => {
+  }), y = (0, c.GG)(t), _ = (0, c.YB)(t), O = (0, l.e7)([o.Z], () => o.Z.getGuild(t), [t]), j = null == O ? true : O.name, x = (0, l.e7)([s.Z], () => s.Z.getChannel(n)), v = i.useMemo(() => {
     let e = {};
     for (let t of y)
       for (let n of t.subscription_listings_ids) e[n] = t.id;
@@ -47,7 +47,7 @@ function b(e) {
       className: m.joinCtaTitle,
       children: g.intl.format(g.t.xHMpys, {
         serverName: j,
-        channelName: null == v ? true : v.name
+        channelName: null == x ? true : x.name
       })
     }), (0, r.jsx)(a.Text, {
       className: m.joinCtaSubtitle,
@@ -56,10 +56,10 @@ function b(e) {
       children: null == _ ? true : _.description
     }), (0, r.jsx)(p.Z, {
       guildId: t,
-      children: b.filter(e => null != x[e.id]).map(e => (0, r.jsx)(h.Z, {
+      children: b.filter(e => null != v[e.id]).map(e => (0, r.jsx)(h.Z, {
         guildId: t,
         listingId: e.id,
-        groupListingId: x[e.id],
+        groupListingId: v[e.id],
         analyticsLocation: f.Sbl.ROLE_SUBSCRIPTION_GATED_CHANNEL
       }, e.id))
     })]

@@ -2,13 +2,13 @@
 /** chunk id: 870289, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  FF: () => s,
-  KS: () => i,
-  eN: () => a
+  FF: () => i,
+  KS: () => a,
+  eN: () => s
 });
 var Chunk818083 = require("./818083.js"),
   Chunk987338 = require("./987338.js");
-let i = (0, Chunk818083.B)({
+let a = (0, Chunk818083.B)({
     kind: "user",
     id: "2025-06_collectibles_browse",
     label: "Collectibles Browse Experiment",
@@ -33,9 +33,9 @@ let i = (0, Chunk818083.B)({
       }
     }]
   }),
-  s = e => i.useExperiment({
+  i = e => a.useExperiment({
     location: e
   }).filterEnabled,
-  a = e => i.useExperiment({
+  s = e => a.useExperiment({
     location: e
   }).searchEnabled

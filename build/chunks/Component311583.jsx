@@ -27,27 +27,27 @@ let E = e => {
     product: t,
     selectedVariantIndex: n,
     cardRef: E
-  } = e, v = (0, d.Nd)(), S = null == v ? true : v.tab, x = (0, i.e7)([o.default], () => o.default.getCurrentUser()), O = c.ZP.canUseCollectibles(x), T = (0, u.sp)(), {
+  } = e, v = (0, d.Nd)(), S = null == v ? true : v.tab, x = (0, a.e7)([o.default], () => o.default.getCurrentUser()), O = c.ZP.canUseCollectibles(x), T = (0, u.sp)(), {
     isPurchased: y,
     isPartiallyOwnedBundle: L
   } = (0, p.L)(t), j = (0, g.rN)(t), k = (0, g.G1)(t), I = (0, g.ne)({
     product: t,
     isPartiallyOwnedBundle: L,
     isPurchased: y
-  }), P = (0, C.Iw)(t), {
+  }), P = (0, _.Iw)(t), {
     isOrbExclusive: N
   } = (0, h.Ip)({
     product: t,
     isPremiumUser: O,
     tab: S,
     hasDiscountOffer: null != P
-  }), B = (0, _.J7)(t, a.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON);
-  return k || l.tq || N || !I || S === m.AW.ORBS ? null : j ? (0, r.jsx)(s.hU, {
+  }), A = (0, C.J7)(t, s.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON);
+  return k || l.tq || N || !I || S === m.AW.ORBS ? null : j ? (0, r.jsx)(i.hU, {
     variant: "primary",
     "aria-label": b.intl.string(b.t.SKNnqq),
-    icon: s.tEF,
+    icon: i.tEF,
     onClick: e => {
-      e.stopPropagation(), B(e)
+      e.stopPropagation(), A(e)
     }
   }) : (0, r.jsx)(u.k0, {
     newValue: {

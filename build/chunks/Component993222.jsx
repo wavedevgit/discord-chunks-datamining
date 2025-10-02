@@ -25,7 +25,7 @@ let h = e => {
   } = e, n = (0, c.Nd)(), h = null == n ? true : n.tab, {
     isPurchased: m,
     isPartiallyOwnedBundle: b
-  } = (0, d.L)(t), E = (0, l.e7)([o.Z], () => o.Z.getCategoryForProduct(t.skuId)), v = (0, l.e7)([s.default], () => s.default.getCurrentUser()), S = a.ZP.canUseCollectibles(v), x = (0, g.Iw)(t), {
+  } = (0, d.L)(t), E = (0, l.e7)([o.Z], () => o.Z.getCategoryForProduct(t.skuId)), v = (0, l.e7)([i.default], () => i.default.getCurrentUser()), S = s.ZP.canUseCollectibles(v), x = (0, g.Iw)(t), {
     isOrbExclusive: O
   } = (0, p.Ip)({
     product: t,
@@ -33,17 +33,17 @@ let h = e => {
     tab: h,
     hasDiscountOffer: null != x
   }), T = (0, u.Yq)(t.skuId), y = (null == E ? true : E.skuId) === f.bu && (0, u.WW)(t.skuId);
-  return b || m || !T ? O ? (0, r.jsx)(i.IGR, {
-    text: _.intl.string(_.t["0TmQRE"]),
+  return b || m || !T ? O ? (0, r.jsx)(a.IGR, {
+    text: C.intl.string(C.t["0TmQRE"]),
     disableColor: true,
-    className: C.productCardBadge
-  }) : y ? (0, r.jsx)(i.IGR, {
-    text: _.intl.string(_.t.S6kE9v),
+    className: _.productCardBadge
+  }) : y ? (0, r.jsx)(a.IGR, {
+    text: C.intl.string(C.t.S6kE9v),
     disableColor: true,
-    className: C.productCardBadge
-  }) : null : (0, r.jsx)(i.IGR, {
-    text: _.intl.string(_.t.y2b7CA),
+    className: _.productCardBadge
+  }) : null : (0, r.jsx)(a.IGR, {
+    text: C.intl.string(C.t.y2b7CA),
     disableColor: true,
-    className: C.productCardBadge
+    className: _.productCardBadge
   })
 }

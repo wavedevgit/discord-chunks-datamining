@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk55783 = require("./55783.js"),
   Chunk654664 = require("./654664.js"),
   Chunk970217 = require("./970217.js"),
@@ -16,7 +16,7 @@ var Chunk120356 = require("./120356.js"),
 let u = () => 4 * Math.random() + 8,
   d = [u(), u(), u()],
   g = () => (0, Chunk951288.jsx)("div", {
-    className: i()(Chunk970217.skeleton, Chunk670185.shopCard),
+    className: a()(Chunk970217.skeleton, Chunk670185.shopCard),
     children: (0, Chunk951288.jsxs)("div", {
       className: Chunk970217.cardBody,
       children: [(0, Chunk951288.jsx)("div", {
@@ -33,9 +33,9 @@ let u = () => 4 * Math.random() + 8,
   p = () => (0, Chunk951288.jsx)("div", {
     className: Chunk970217.skeletonsContainer,
     children: d.map(e => (0, r.jsxs)("div", {
-      className: a.cardsContainer,
+      className: s.cardsContainer,
       children: [(0, r.jsx)("div", {
-        className: i()(o.skeleton, o.bannerSkeleton, s.catalogBanner),
+        className: a()(o.skeleton, o.bannerSkeleton, i.catalogBanner),
         children: (0, r.jsx)("div", {
           className: o.bannerBody
         })

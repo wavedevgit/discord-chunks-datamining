@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk677850 = require("./677850.jsx"),
   Chunk607070 = require("./607070.js"),
@@ -20,20 +20,20 @@ let g = e => {
     bannerAnimated: n,
     isResponsive: l = false,
     eventTargetRef: g
-  } = e, p = (0, s.e7)([o.Z], () => o.Z.useReducedMotion), f = (0, s.e7)([u.Z], () => u.Z.isFocused()), _ = null != n && !p && f;
-  return null != n && n.endsWith(".riv") ? (0, r.jsx)(a.B, {
+  } = e, p = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), f = (0, i.e7)([u.Z], () => u.Z.isFocused()), C = null != n && !p && f;
+  return null != n && n.endsWith(".riv") ? (0, r.jsx)(s.B, {
     src: n,
     fit: "fit-width",
     eventTargetRef: g
-  }) : _ ? (0, r.jsx)(c.Z, {
-    className: i()({
+  }) : C ? (0, r.jsx)(c.Z, {
+    className: a()({
       [d.responsive]: l
     }, d.bannerAsset, d.bannerVideoBackground),
     src: n,
     autoPlay: true,
     loop: true
   }) : (0, r.jsx)("div", {
-    className: i()({
+    className: a()({
       [d.responsive]: l
     }, d.bannerAsset, d.bannerImage),
     style: {

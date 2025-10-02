@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk636977 = require("./636977.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -35,31 +35,31 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk180493 = require("./180493.js");
 
-function B(e) {
+function A(e) {
   let {
     tab: t,
     displayText: n,
     selected: l,
-    handleTransition: i
+    handleTransition: a
   } = e;
-  return (0, r.jsx)(_.Z.Title, {
-    onClick: () => i(t),
+  return (0, r.jsx)(C.Z.Title, {
+    onClick: () => a(t),
     wrapperClassName: N.tabWrapper,
-    className: s()(N.tab, {
+    className: i()(N.tab, {
       [N.selected]: l
     }),
     children: n
   })
 }
 
-function A(e) {
+function B(e) {
   let {
     tab: t,
     selected: n,
-    displayText: i,
-    handleTransition: a
-  } = e, [o, u] = l.useState(false), d = l.useRef(null), [g, C] = l.useState(0), h = l.useRef(false), m = e => {
-    clearTimeout(g), C(setTimeout(() => {
+    displayText: a,
+    handleTransition: s
+  } = e, [o, u] = l.useState(false), d = l.useRef(null), [g, _] = l.useState(0), h = l.useRef(false), m = e => {
+    clearTimeout(g), _(setTimeout(() => {
       u(e)
     }, 100)), e && (h.current = f.Z.keyboardModeEnabled)
   }, b = e => {
@@ -84,7 +84,7 @@ function A(e) {
           closePopout: t
         } = e;
         return (0, r.jsx)(y.Z, {
-          handleTransition: a,
+          handleTransition: s,
           onClose: t
         })
       },
@@ -93,7 +93,7 @@ function A(e) {
         let {
           isShown: g
         } = l;
-        return (0, r.jsx)(_.Z.Title, (o = function(e) {
+        return (0, r.jsx)(C.Z.Title, (o = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -112,15 +112,15 @@ function A(e) {
           return e
         }({}, e), u = u = {
           ref: d,
-          onClick: () => a(t),
+          onClick: () => s(t),
           onKeyDown: b,
           wrapperClassName: N.tabWrapper,
-          className: s()(N.tab, {
+          className: i()(N.tab, {
             [N.selected]: n
           }),
           children: (0, r.jsxs)("span", {
             className: N.tabWithChevron,
-            children: [i, g ? (0, r.jsx)(c.u04, {
+            children: [a, g ? (0, r.jsx)(c.u04, {
               size: "sm",
               color: "currentColor"
             }) : (0, r.jsx)(c.CJ0, {
@@ -147,7 +147,7 @@ function R(e) {
   let {
     isFullScreen: t,
     isLayer: n,
-    onClose: i,
+    onClose: a,
     selectedTab: p,
     handleTransition: f
   } = e, y = (0, g.ZP)(), R = (0, o.e7)([S.default], () => S.default.getCurrentUser()), Z = (null == R ? true : R.isStaff()) || (null == R ? true : R.isStaffPersonal()) || false, {
@@ -167,15 +167,15 @@ function R(e) {
     tab: j.AW.ORBS,
     displayText: P.intl.string(P.t.EBYkzs)
   });
-  let M = n ? O.DR : i,
+  let M = n ? O.DR : a,
     D = p === j.AW.ORBS ? k.ZY5.SHOP_ORBS_TAB : k.ZY5.COLLECTIBLES_SHOP,
     W = l.useCallback(() => {
       t && (M(), (0, u.Ou)()), (0, b.Y)({
         pageType: D,
         sectionType: k.jXE.ORBS_BALANCE_MENU,
         ctaObject: k.qAy.CTA_TO_QUEST_HOME
-      }), (0, C.navigateToQuestHome)({
-        fromContent: a.j.ORBS_BALANCE_MENU
+      }), (0, _.navigateToQuestHome)({
+        fromContent: s.j.ORBS_BALANCE_MENU
       })
     }, [M, t, D]),
     U = (0, T.eN)("collectibles_shop_header_bar"),
@@ -188,9 +188,9 @@ function R(e) {
     }, [null == R ? true : R.id]);
   return (0, r.jsx)(c.f6W, {
     theme: y,
-    children: e => (0, r.jsxs)(_.Z, {
+    children: e => (0, r.jsxs)(C.Z, {
       disableDoubleClick: true,
-      className: s()(e, N.headerBar, {
+      className: i()(e, N.headerBar, {
         [N.fullscreenHeaderBar]: t
       }),
       innerClassname: w ? N.headerBarInner : true,
@@ -201,7 +201,7 @@ function R(e) {
         "aria-label": P.intl.string(P.t.pWG4zc) + " home",
         children: [(0, r.jsx)(x.Z, {
           className: N.discordLogo
-        }), (0, r.jsx)(_.Z.Title, {
+        }), (0, r.jsx)(C.Z.Title, {
           children: P.intl.string(P.t.pWG4zc)
         })]
       }), (0, r.jsx)("div", {
@@ -211,12 +211,12 @@ function R(e) {
             tab: t,
             displayText: n
           } = e;
-          return t === j.AW.CATALOG ? (0, r.jsx)(A, {
+          return t === j.AW.CATALOG ? (0, r.jsx)(B, {
             tab: t,
             selected: (0, j.RE)(p) || p === t,
             displayText: n,
             handleTransition: f
-          }, t) : (0, r.jsx)(B, {
+          }, t) : (0, r.jsx)(A, {
             tab: t,
             displayText: n,
             selected: p === t,

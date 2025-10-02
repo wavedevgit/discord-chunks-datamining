@@ -2,7 +2,7 @@
 /** chunk id: 763891, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => A
+  Z: () => B
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -36,37 +36,37 @@ var Chunk951288 = require("./951288.js"),
   Chunk266058 = require("./266058.js"),
   Chunk719138 = require("./719138.js");
 
-function A(e) {
+function B(e) {
   var t;
   let {
     isFetchingCategories: n,
-    isFullScreen: A,
+    isFullScreen: B,
     scrollerRef: R,
     tab: Z
   } = e, w = (0, g.sp)(), F = null != (t = null == w ? true : w.sessionId) ? t : "", {
     noCache: H,
     includeUnpublished: M
-  } = (0, v.Z)(), D = (0, s.e7)([u.default], () => u.default.getCurrentUser()), W = (0, s.e7)([p.Z], () => p.Z.productsWithVariantsAsGroup), [U, V] = l.useState(1), z = (0, c.Fg)(), G = (0, a.ap)(z), [K, q, Y] = l.useMemo(() => {
+  } = (0, v.Z)(), D = (0, i.e7)([u.default], () => u.default.getCurrentUser()), W = (0, i.e7)([p.Z], () => p.Z.productsWithVariantsAsGroup), [U, V] = l.useState(1), z = (0, c.Fg)(), G = (0, s.ap)(z), [K, q, Y] = l.useMemo(() => {
     switch (Z) {
       case S.AW.AVATAR_DECORATIONS:
-        return [O.intl.string(O.t.dRZYND), G ? k.Z : j.Z, i.Z.AVATAR_DECORATION];
+        return [O.intl.string(O.t.dRZYND), G ? k.Z : j.Z, a.Z.AVATAR_DECORATION];
       case S.AW.PROFILE_EFFECTS:
-        return [O.intl.string(O.t["1cNjt7"]), G ? B.Z : N.Z, i.Z.PROFILE_EFFECT];
+        return [O.intl.string(O.t["1cNjt7"]), G ? A.Z : N.Z, a.Z.PROFILE_EFFECT];
       case S.AW.NAMEPLATES:
-        return [O.intl.string(O.t.V68Fq6), G ? P.Z : I.Z, i.Z.NAMEPLATE];
+        return [O.intl.string(O.t.V68Fq6), G ? P.Z : I.Z, a.Z.NAMEPLATE];
       case S.AW.BUNDLES:
-        return [O.intl.string(O.t.FYFppq), G ? L.Z : y.Z, i.Z.BUNDLE]
+        return [O.intl.string(O.t.FYFppq), G ? L.Z : y.Z, a.Z.BUNDLE]
     }
-  }, [Z, G]), X = (0, _.a)(), Q = l.useMemo(() => X(W.filter(e => {
+  }, [Z, G]), X = (0, C.a)(), Q = l.useMemo(() => X(W.filter(e => {
     var t;
-    return e.type === Y || e.type === i.Z.VARIANTS_GROUP && (null == (t = e.variants) ? true : t.some(e => e.type === Y)) === true
-  })), [W, Y, X]), J = (0, C.l)(Q);
+    return e.type === Y || e.type === a.Z.VARIANTS_GROUP && (null == (t = e.variants) ? true : t.some(e => e.type === Y)) === true
+  })), [W, Y, X]), J = (0, _.l)(Q);
   l.useEffect(() => {
     (0, h.n)({
       sessionId: F,
       checkpoint: h.a.SHOP_MOUNTED,
       tab: Z,
-      isFullScreen: A,
+      isFullScreen: B,
       unpublishedCategoriesShown: M,
       cacheDisabled: H
     })
@@ -75,11 +75,11 @@ function A(e) {
       sessionId: F,
       checkpoint: h.a.SHOP_RENDERED,
       tab: Z,
-      isFullScreen: A,
+      isFullScreen: B,
       unpublishedCategoriesShown: M,
       cacheDisabled: H
     })
-  }, [F, A, M, H, n, Z]);
+  }, [F, B, M, H, n, Z]);
   let $ = f.Z.useConfig({
     location: "CollectiblesFilterableShop"
   }).showCardsV2;

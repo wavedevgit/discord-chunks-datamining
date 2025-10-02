@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
   Chunk434650 = require("./434650.js"),
@@ -33,10 +33,10 @@ function y(e) {
     products: t,
     header: n,
     category: l
-  } = e, i = (0, a.e7)([u.default], () => u.default.getCurrentUser()), s = (0, x.St)(t), c = g.Z.useConfig({
+  } = e, a = (0, s.e7)([u.default], () => u.default.getCurrentUser()), i = (0, x.St)(t), c = g.Z.useConfig({
     location: "Products"
   }).showCardsV2;
-  return null == i || 0 === t.length ? null : (0, r.jsxs)("div", {
+  return null == a || 0 === t.length ? null : (0, r.jsxs)("div", {
     children: [null != n ? (0, r.jsx)(o.Text, {
       className: T.itemTypeTitle,
       color: "header-secondary",
@@ -46,7 +46,7 @@ function y(e) {
       size: 24
     }), (0, r.jsx)("div", {
       className: T.cardsContainer,
-      children: s.map((e, t) => (0, r.jsx)(d.k0, {
+      children: i.map((e, t) => (0, r.jsx)(d.k0, {
         newValue: {
           tilePosition: t
         },
@@ -55,7 +55,7 @@ function y(e) {
         }, e.skuId) : (0, r.jsx)(b.Z, {
           category: l,
           product: e,
-          user: i,
+          user: a,
           tab: O.AW.CATALOG
         }, e.skuId)
       }, e.skuId))
@@ -66,7 +66,7 @@ function y(e) {
 function L(e) {
   let {
     category: t
-  } = e, n = (0, _.l)(t.products), l = (0, f.a)()(n);
+  } = e, n = (0, C.l)(t.products), l = (0, f.a)()(n);
   return (0, r.jsx)(y, {
     products: l,
     category: t
@@ -77,12 +77,12 @@ function j(e) {
   let {
     category: t,
     isFullScreen: n
-  } = e, [i, s] = l.useState(false), a = (0, c.O)(e => {
-    s(e)
+  } = e, [a, i] = l.useState(false), s = (0, c.O)(e => {
+    i(e)
   }, n ? .13 : .15);
   return (0, r.jsxs)("div", {
     className: T.categoryWrapper,
-    ref: a,
+    ref: s,
     children: [(0, r.jsx)(h.Z, {
       category: t
     }), (0, r.jsx)(L, {
@@ -95,11 +95,11 @@ function k(e) {
   var t;
   let {
     sortedCategories: n,
-    setCategoryRef: i,
-    isFullScreen: a,
+    setCategoryRef: a,
+    isFullScreen: s,
     currentPage: c,
     handlePageChange: u
-  } = e, g = (0, d.sp)(), f = (0, v.R)(), _ = null != (t = null == g ? true : g.sessionId) ? t : "", {
+  } = e, g = (0, d.sp)(), f = (0, v.R)(), C = null != (t = null == g ? true : g.sessionId) ? t : "", {
     noCache: h,
     includeUnpublished: b
   } = (0, S.Z)(), E = l.useMemo(() => n.filter(e => null == e.unpublishedAt || e.unpublishedAt > new Date).filter(e => {
@@ -112,38 +112,38 @@ function k(e) {
     return E.slice(e, e + O.kN)
   }, [E, c]);
   l.useEffect(() => {
-    (0, C.n)({
-      sessionId: _,
-      checkpoint: C.a.SHOP_MOUNTED,
+    (0, _.n)({
+      sessionId: C,
+      checkpoint: _.a.SHOP_MOUNTED,
       tab: O.AW.CATALOG,
-      isFullScreen: a,
+      isFullScreen: s,
       unpublishedCategoriesShown: b,
       cacheDisabled: h
     })
   }, []), l.useEffect(() => {
-    f || 0 === x.length || (0, C.n)({
-      sessionId: _,
-      checkpoint: C.a.SHOP_RENDERED,
+    f || 0 === x.length || (0, _.n)({
+      sessionId: C,
+      checkpoint: _.a.SHOP_RENDERED,
       tab: O.AW.CATALOG,
-      isFullScreen: a,
+      isFullScreen: s,
       unpublishedCategoriesShown: b,
       cacheDisabled: h
     })
-  }, [_, a, b, h, f, x.length]);
+  }, [C, s, b, h, f, x.length]);
   let y = (0, p.FF)("CollectiblesBrowse");
   return f ? (0, r.jsx)(m.Z, {}) : (0, r.jsxs)("div", {
-    className: s()(T.categories, {
+    className: i()(T.categories, {
       [T.categoriesNoFilter]: !y
     }),
     children: [x.map((e, t) => (0, r.jsx)("div", {
-      ref: t => i(e.skuId, t),
+      ref: t => a(e.skuId, t),
       children: (0, r.jsx)(d.k0, {
         newValue: {
           categoryPosition: t
         },
         children: (0, r.jsx)(j, {
           category: e,
-          isFullScreen: a
+          isFullScreen: s
         })
       })
     }, e.skuId)), (0, r.jsx)("div", {

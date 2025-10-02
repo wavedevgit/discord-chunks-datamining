@@ -25,25 +25,25 @@ var Chunk951288 = require("./951288.js"),
 let v = e => {
   let {
     product: t
-  } = e, n = (0, u.Nd)(), v = null == n ? true : n.tab, S = (0, i.e7)([o.default], () => o.default.getCurrentUser()), x = c.ZP.canUseCollectibles(S), {
+  } = e, n = (0, u.Nd)(), v = null == n ? true : n.tab, S = (0, a.e7)([o.default], () => o.default.getCurrentUser()), x = c.ZP.canUseCollectibles(S), {
     isDisabled: O
   } = (0, g.G)(t.skuId), {
     isPurchased: T,
     isPartiallyOwnedBundle: y
   } = (0, p.L)(t), L = (0, d.G1)(t), {
     enabled: j
-  } = (0, a.WX)({
+  } = (0, s.WX)({
     location: "product_card_price"
   }), k = l.useMemo(() => (0, d.BH)(t, x), [t, x]), I = (0, h.Iw)(t), P = null != I, {
     displayPrices: N,
-    hasSufficientOrbs: B
+    hasSufficientOrbs: A
   } = (0, m.Ip)({
     product: t,
     isPremiumUser: x,
     tab: v,
     hasDiscountOffer: P
   });
-  return O ? (0, r.jsx)(s.Text, {
+  return O ? (0, r.jsx)(i.Text, {
     tag: "div",
     variant: "heading-md/semibold",
     color: "header-muted",
@@ -52,17 +52,17 @@ let v = e => {
   }) : T || y ? (0, r.jsx)(f.U, {
     className: E.priceTag,
     isPartiallyPurchased: y
-  }) : L ? (0, r.jsx)(s.Text, {
+  }) : L ? (0, r.jsx)(i.Text, {
     variant: "text-md/semibold",
     className: E.priceTag,
     children: b.intl.string(b.t.rt69oq)
-  }) : j ? (0, r.jsx)(C.e, {
+  }) : j ? (0, r.jsx)(_.e, {
     displayPrices: N,
     isPremiumUser: x,
     discount: k,
-    hasSufficientOrbs: B,
+    hasSufficientOrbs: A,
     discountOfferAmount: I
-  }) : (0, r.jsx)(_.Z, {
+  }) : (0, r.jsx)(C.Z, {
     product: t,
     discount: k,
     isPremiumUser: x,

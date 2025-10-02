@@ -54,11 +54,11 @@ let f = {
     sortType: Chunk792091.E.RECENCY,
     sortDirection: Chunk497598.F.DESC
   },
-  _ = {
+  C = {
     sortType: Chunk792091.E.POPULARITY,
     sortDirection: Chunk497598.F.DESC
   },
-  C = {
+  _ = {
     sortType: Chunk792091.E.RELEVANCE,
     sortDirection: Chunk497598.F.DESC
   },
@@ -83,7 +83,7 @@ let f = {
       searchQuery: r,
       itemTypeFilters: l
     } = e;
-    return t.size > 0 || n.size > 0 || "" !== r.trim() ? C : l.size > 0 ? _ : f
+    return t.size > 0 || n.size > 0 || "" !== r.trim() ? _ : l.size > 0 ? C : f
   },
   b = (0, Chunk879690.U)((0, Chunk8058.XR)((e, t) => g(d({}, h), {
     hasDefaultFilters: () => !t().hasFilters() && t().sort.sortType === f.sortType && t().sort.sortDirection === f.sortDirection,
@@ -93,9 +93,9 @@ let f = {
         colorFilters: n,
         themeFilters: r,
         orbEligible: l,
-        searchQuery: i
+        searchQuery: a
       } = t();
-      return [e, n, r].some(e => e.size > 0) || l || "" !== i
+      return [e, n, r].some(e => e.size > 0) || l || "" !== a
     },
     hasRelevanceFilters: () => {
       let {
@@ -160,7 +160,7 @@ let f = {
           searchQuery: t,
           queryPageOffset: 0
         });
-        return "" !== t.trim() ? (n.sort = C, n.userHasSelectedSort = false) : e.userHasSelectedSort || (n.sort = m(n)), n
+        return "" !== t.trim() ? (n.sort = _, n.userHasSelectedSort = false) : e.userHasSelectedSort || (n.sort = m(n)), n
       })
     },
     setQueryPageSize: t => {
@@ -221,9 +221,9 @@ let f = {
       colorFilters: n,
       themeFilters: r,
       orbEligible: l,
-      sort: i,
-      searchQuery: s,
-      queryPageSize: a,
+      sort: a,
+      searchQuery: i,
+      queryPageSize: s,
       queryPageOffset: o
     } = e;
     return {
@@ -232,10 +232,10 @@ let f = {
       themes: Array.from(r),
       orbs_eligible: !!l || true,
       offset: o,
-      limit: a,
-      sort_type: i.sortType,
-      sort_direction: i.sortDirection,
-      search: "" !== s ? s : true
+      limit: s,
+      sort_type: a.sortType,
+      sort_direction: a.sortDirection,
+      search: "" !== i ? i : true
     }
   },
   v = () => {
@@ -246,7 +246,7 @@ let f = {
     } = (0, Chunk149705.a)(), l = (0, Chunk870289.FF)("collectibles_shop_header_bar");
     Chunk647438.useEffect(() => {
       let r = r => {
-        let i = async () => {
+        let a = async () => {
           n(true);
           try {
             let t = await (0, o.y)(r);
@@ -270,13 +270,13 @@ let f = {
             n(false)
           }
         };
-        l && 0 !== r.limit && i()
+        l && 0 !== r.limit && a()
       };
       Chunk647438(E(b.getState()));
-      let i = b.subscribe(E, Chunk647438, {
+      let a = b.subscribe(E, Chunk647438, {
           equalityFn: (e, t) => JSON.stringify(e) === JSON.stringify(t)
         }),
-        s = b.subscribe(e => e.hasFilters(), (e, t) => {
+        i = b.subscribe(e => e.hasFilters(), (e, t) => {
           if (!e && t) {
             let e = b.getState();
             e.userHasSelectedSort || b.setState({

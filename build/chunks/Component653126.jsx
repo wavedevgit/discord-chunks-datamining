@@ -16,9 +16,9 @@ var Chunk951288 = require("./951288.js"),
 let g = e => {
     let {
       product: t
-    } = e, [n, l] = (0, c.SS)(t), i = (0, u.W)(t, n);
+    } = e, [n, l] = (0, c.SS)(t), a = (0, u.W)(t, n);
     return (0, r.jsx)(o.Z, {
-      product: i,
+      product: a,
       variantSwitcher: l,
       selectedVariantIndex: n
     })
@@ -26,9 +26,9 @@ let g = e => {
   p = e => {
     let {
       product: t
-    } = e, [n, l] = (0, c.SS)(t), i = (0, u.W)(t, n);
+    } = e, [n, l] = (0, c.SS)(t), a = (0, u.W)(t, n);
     return (0, r.jsx)(o.Z, {
-      product: i,
+      product: a,
       variantSwitcher: l,
       selectedVariantIndex: n
     })
@@ -36,19 +36,9 @@ let g = e => {
   f = e => {
     let {
       product: t
-    } = e, [n, l] = (0, c.SS)(t), i = (0, u.W)(t, n);
+    } = e, [n, l] = (0, c.SS)(t), a = (0, u.W)(t, n);
     return (0, r.jsx)(o.Z, {
-      product: i,
-      variantSwitcher: l,
-      selectedVariantIndex: n
-    })
-  },
-  _ = e => {
-    let {
-      product: t
-    } = e, [n, l] = (0, c.SS)(t), i = (0, u.W)(t, n);
-    return (0, r.jsx)(o.Z, {
-      product: i,
+      product: a,
       variantSwitcher: l,
       selectedVariantIndex: n
     })
@@ -56,9 +46,19 @@ let g = e => {
   C = e => {
     let {
       product: t
-    } = e, [n, l] = (0, c.SS)(t), i = (0, u.W)(t, n);
+    } = e, [n, l] = (0, c.SS)(t), a = (0, u.W)(t, n);
     return (0, r.jsx)(o.Z, {
-      product: i,
+      product: a,
+      variantSwitcher: l,
+      selectedVariantIndex: n
+    })
+  },
+  _ = e => {
+    let {
+      product: t
+    } = e, [n, l] = (0, c.SS)(t), a = (0, u.W)(t, n);
+    return (0, r.jsx)(o.Z, {
+      product: a,
       variantSwitcher: l,
       selectedVariantIndex: n
     })
@@ -66,18 +66,18 @@ let g = e => {
   h = Chunk647438.memo(function(e) {
     let {
       skuId: t
-    } = e, n = (0, s.e7)([a.Z], () => a.Z.getCategoryForProduct(t)), l = null == n ? true : n.products.find(e => e.skuId === t), o = (0, d.Cr)(l);
+    } = e, n = (0, i.e7)([s.Z], () => s.Z.getCategoryForProduct(t)), l = null == n ? true : n.products.find(e => e.skuId === t), o = (0, d.Cr)(l);
     if (null == o) return null;
     let u = (0, c.rC)(l);
-    return u === i.Z.PROFILE_EFFECT ? (0, r.jsx)(g, {
+    return u === a.Z.PROFILE_EFFECT ? (0, r.jsx)(g, {
       product: o
-    }) : u === i.Z.AVATAR_DECORATION ? (0, r.jsx)(p, {
+    }) : u === a.Z.AVATAR_DECORATION ? (0, r.jsx)(p, {
       product: o
-    }) : u === i.Z.NAMEPLATE ? (0, r.jsx)(f, {
+    }) : u === a.Z.NAMEPLATE ? (0, r.jsx)(f, {
       product: o
-    }) : u === i.Z.BUNDLE ? (0, r.jsx)(_, {
+    }) : u === a.Z.BUNDLE ? (0, r.jsx)(C, {
       product: o
-    }) : u === i.Z.EXTERNAL_SKU ? (0, r.jsx)(C, {
+    }) : u === a.Z.EXTERNAL_SKU ? (0, r.jsx)(_, {
       product: o
     }) : null
   })

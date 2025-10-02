@@ -1,8 +1,8 @@
 /** Chunk was on 63962 **/
 /** chunk id: 406326, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
-});
+  Z: () => O
+}), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
@@ -20,109 +20,100 @@ var Chunk951288 = require("./951288.js"),
   Chunk250990 = require("./250990.js");
 
 function y(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = r
+    })
+  }
+  return e
+}
+
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
+    }
+    return n
+  })(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+
+function O(e) {
   let {
     searchContext: t,
     searchMode: l,
     onSearchModeChange: s,
     totalResults: c,
-    isIndexing: y,
-    isSearching: O,
-    documentsIndexed: j
-  } = e, v = (0, u.UX)({
+    isIndexing: O,
+    isSearching: x,
+    documentsIndexed: v
+  } = e, C = (0, u.UX)({
     location: "SearchHeader"
-  }), x = (0, p.nP)({
+  }), I = (0, p.nP)({
     location: "SearchHeader"
-  }), C = (0, p.KS)({
+  }), S = (0, p.KS)({
     location: "SearchHeader"
-  }), I = (0, f.I)(t), {
-    totalFilters: E
-  } = (0, h.p4)(I, t), S = i.useMemo(() => {
-    if (t.type === g.aib.DMS && v) {
+  }), Z = (0, f.I)(t), {
+    totalFilters: P
+  } = (0, h.p4)(Z, t), T = i.useMemo(() => {
+    if (t.type === g.aib.DMS && C) {
       var e, n;
-      let t = null != (n = null == (e = (0, d.$G)(I).channel_id) ? true : e.length) ? n : 0;
+      let t = null != (n = null == (e = (0, d.$G)(Z).channel_id) ? true : e.length) ? n : 0;
       return t > 0 ? m.intl.format(m.t.A2dqWF, {
         filterCount: t
       }) : m.intl.string(m.t.tc619f)
     }
     return null
-  }, [v, t.type, I]), Z = i.useMemo(() => [{
-    label: m.intl.string(m.t.CbaapK),
-    value: g.QIO.NEWEST
-  }, {
-    label: m.intl.string(m.t.OukXZm),
-    value: g.QIO.OLDEST
-  }, {
-    label: m.intl.string(m.t["q8gB5+"]),
-    value: g.QIO.MOST_RELEVANT
-  }], []), P = i.useCallback(() => {
+  }, [C, t.type, Z]), N = i.useCallback(() => {
     (0, o.ZDy)(async () => {
       let {
         default: e
       } = await Promise.all([n.e("37979"), n.e("386")]).then(n.bind(n, 238088));
-      return n => {
-        var i, l;
-        return (0, r.jsx)(e, (i = function(e) {
-          for (var t = 1; t < arguments.length; t++) {
-            var n = null != arguments[t] ? arguments[t] : {},
-              r = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-              return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), r.forEach(function(t) {
-              var r;
-              r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: true,
-                configurable: true,
-                writable: true
-              }) : e[t] = r
-            })
-          }
-          return e
-        }({}, n), l = l = {
-          searchContext: t
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
-          var n = Object.keys(e);
-          if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
-          }
-          return n
-        })(Object(l)).forEach(function(e) {
-          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
-        }), i))
-      }
+      return n => (0, r.jsx)(e, _(y({}, n), {
+        searchContext: t
+      }))
     })
-  }, [t]), T = i.useMemo(() => E > 0 ? m.intl.format(m.t.uaR4sL, {
-    filterCount: E
-  }) : m.intl.string(m.t.UdhTtr), [E]);
+  }, [t]), R = i.useMemo(() => P > 0 ? m.intl.format(m.t.uaR4sL, {
+    filterCount: P
+  }) : m.intl.string(m.t.UdhTtr), [P]);
   return (0, r.jsxs)("header", {
     className: a()(b.searchHeader, {
-      [b.searchHeaderWithSubtitle]: null != S
+      [b.searchHeaderWithSubtitle]: null != T
     }),
     children: [(0, r.jsx)("div", {
       className: b.totalResults,
       role: "status",
-      children: (0, r.jsx)(_, {
+      children: (0, r.jsx)(j, {
         totalResults: c,
-        subtitle: S,
-        isIndexing: y,
-        isSearching: O,
-        documentsIndexed: j
+        subtitle: T,
+        isIndexing: O,
+        isSearching: x,
+        documentsIndexed: v
       })
-    }), x || C ? (0, r.jsxs)("div", {
+    }), I || S ? (0, r.jsxs)("div", {
       className: b.searchModeAndFiltersContainer,
-      children: [(0, r.jsx)(o.q4e, {
-        options: Z,
-        value: l,
-        onChange: s,
-        popoutWidth: 130,
-        size: "sm"
-      }), (0, r.jsx)(o.zxk, {
+      children: [(0, r.jsx)(o.zxk, {
         variant: "secondary",
-        onClick: P,
-        text: T,
+        onClick: N,
+        text: R,
         icon: o.gXV,
         size: "sm"
+      }), (0, r.jsx)(E, {
+        searchMode: l,
+        onSearchModeChange: s
       })]
     }) : (0, r.jsxs)(o.njP, {
       orientation: "horizontal",
@@ -146,7 +137,7 @@ function y(e) {
   })
 }
 
-function _(e) {
+function j(e) {
   let {
     totalResults: t,
     subtitle: n,
@@ -154,15 +145,15 @@ function _(e) {
     isIndexing: l,
     documentsIndexed: a
   } = e;
-  return l ? (0, r.jsx)(j, {
+  return l ? (0, r.jsx)(v, {
     documentsIndexed: a
-  }) : i ? (0, r.jsx)(v, {}) : (0, r.jsx)(x, {
+  }) : i ? (0, r.jsx)(C, {}) : (0, r.jsx)(I, {
     totalResults: t,
     subtitle: n
   })
 }
 
-function O() {
+function x() {
   return (0, Chunk951288.jsx)("div", {
     className: Chunk250990.spinnerWrapper,
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {
@@ -173,7 +164,7 @@ function O() {
   })
 }
 
-function j(e) {
+function v(e) {
   let {
     documentsIndexed: t
   } = e;
@@ -192,22 +183,22 @@ function j(e) {
           href: c.Z.getArticleURL(g.BhN.SEARCH_INDEXING),
           children: m.intl.string(m.t["G3EA+/"])
         })
-      }), (0, r.jsx)(O, {})]
+      }), (0, r.jsx)(x, {})]
     })
   })
 }
 
-function v() {
+function C() {
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-md/medium",
       color: "header-secondary",
       children: Chunk388032.intl.string(Chunk388032.t.uixzLS)
-    }), (0, Chunk951288.jsx)(O, {})]
+    }), (0, Chunk951288.jsx)(x, {})]
   })
 }
 
-function x(e) {
+function I(e) {
   let {
     totalResults: t,
     subtitle: n
@@ -226,4 +217,64 @@ function x(e) {
       children: n
     })]
   }) : a
+}
+
+function E(e) {
+  let {
+    searchMode: t,
+    onSearchModeChange: n
+  } = e, l = i.useRef(null), [a, s] = i.useState(false), c = i.useMemo(() => [{
+    label: m.intl.string(m.t.CbaapK),
+    value: g.QIO.NEWEST
+  }, {
+    label: m.intl.string(m.t.OukXZm),
+    value: g.QIO.OLDEST
+  }, {
+    label: m.intl.string(m.t["q8gB5+"]),
+    value: g.QIO.MOST_RELEVANT
+  }], []);
+  return (0, r.jsx)(o.yRy, {
+    targetElementRef: l,
+    shouldShow: a,
+    animation: o.yRy.Animation.NONE,
+    position: "bottom",
+    align: "right",
+    onRequestClose: () => s(false),
+    renderPopout: e => {
+      let {
+        closePopout: i
+      } = e;
+      return (0, r.jsx)(o.v2r, {
+        navId: "search-result-sort-menu",
+        onClose: i,
+        "aria-label": m.intl.string(m.t.utp2hY),
+        onSelect: () => s(false),
+        children: (0, r.jsx)(o.kSQ, {
+          children: c.map(e => {
+            let {
+              label: i,
+              value: l
+            } = e;
+            return (0, r.jsx)(o.k5B, {
+              group: "sort-by",
+              id: "sort-by-option-".concat(l),
+              label: i,
+              action: () => n(l),
+              checked: t === l
+            }, l)
+          })
+        })
+      })
+    },
+    children: e => (0, r.jsx)(o.hU, _(y({}, e), {
+      buttonRef: l,
+      variant: "secondary",
+      icon: o.uVW,
+      onClick: () => {
+        s(e => !e)
+      },
+      "aria-label": m.intl.string(m.t.XvNMNj),
+      size: "sm"
+    }))
+  })
 }

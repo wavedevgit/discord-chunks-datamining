@@ -181,18 +181,18 @@ function B(e) {
     isFavoritesSearch: b
   });
   let {
-    showNoResultsAlt: v
-  } = l, x = v ? k.intl.string(k.t["VrK/2d"]) : k.intl.string(k.t.V6nAfH);
+    showNoResultsAlt: x
+  } = l, v = x ? k.intl.string(k.t["VrK/2d"]) : k.intl.string(k.t.V6nAfH);
   return (0, r.jsxs)(H, {
     children: [(0, r.jsx)("div", {
       className: a()(U.noResultsImage, {
-        [U.alt]: v
+        [U.alt]: x
       })
     }), (0, r.jsx)("div", {
       className: a()(U.emptyResultsText, U.noResults, {
-        [U.alt]: v
+        [U.alt]: x
       }),
-      children: x
+      children: v
     })]
   })
 }
@@ -209,7 +209,7 @@ let z = [],
       isFeedbackVisible: b,
       dismissFeedbackEntrypoint: O,
       onSearchModeChange: j,
-      onPageChange: v,
+      onPageChange: x,
       searchMode: I,
       onBlockedResultsClick: E,
       searchResultsQuery: Z,
@@ -296,8 +296,8 @@ let z = [],
           searchContext: t,
           searchRequestAnalyticsId: a,
           newPageIndex: e
-        }), v(e)
-      }, [v, t, a]),
+        }), x(e)
+      }, [x, t, a]),
       Q = Math.floor(n.offset / L.vpv),
       X = V && Q >= H,
       J = H + 1,
@@ -319,7 +319,7 @@ let z = [],
       [et, en] = (0, p.US)(ee),
       er = et === o.z.SEARCH_AUTHOR_TYPE_SEARCH_RESULTS_HINT,
       ei = i.useCallback(() => {
-        let e = "".concat(x.ZP[L.dCx.FILTER_AUTHOR_TYPE].key, " user") + " ";
+        let e = "".concat(v.ZP[L.dCx.FILTER_AUTHOR_TYPE].key, " user") + " ";
         S.Z.appendTextToSearchInput(t, e)
       }, [t]);
     return (0, r.jsxs)("section", {
@@ -387,7 +387,7 @@ function W(e) {
     }), {
       enabled: l,
       force: a
-    } = (0, v.f)({
+    } = (0, x.f)({
       location: "SearchResults"
     }), s = e.type === L.aib.DMS || e.type === L.aib.CHANNEL, o = r && s || l;
     return i.useEffect(() => {
@@ -421,12 +421,12 @@ function W(e) {
     searchContext: t
   }), {
     searchMode: _,
-    setSearchMode: x
+    setSearchMode: v
   } = (0, R.Z)({
     searchContext: t
   }), C = i.useCallback(e => {
     if (c.isSearching) return;
-    x(e);
+    v(e);
     let r = S.Z.getSearchInputText(t),
       i = (0, y.Tm)(t),
       l = A.Z.getSearchResultsQuery(i);
@@ -442,7 +442,7 @@ function W(e) {
       searchMode: e,
       offset: 0
     }))
-  }, [n, c.isSearching, t, x]), I = i.useCallback(e => {
+  }, [n, c.isSearching, t, v]), I = i.useCallback(e => {
     if (c.isSearching) return;
     let r = S.Z.getSearchInputText(t),
       i = (0, y.Tm)(t),

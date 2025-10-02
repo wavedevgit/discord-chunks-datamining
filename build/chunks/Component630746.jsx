@@ -1,4 +1,4 @@
-/** Chunk was on 25869 **/
+/** Chunk was on 4539 **/
 /** chunk id: 630746, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   default: () => _
@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk197080 = require("./197080.js");
 
-function g(e) {
+function p(e) {
   for (var n = 1; n < arguments.length; n++) {
     var t = null != arguments[n] ? arguments[n] : {},
       r = Object.keys(t);
@@ -66,13 +66,13 @@ function f(e) {
         }
     }
   }(n);
-  return (0, r.jsxs)(i.IX, x(g({}, e), {
+  return (0, r.jsxs)(i.IX, x(p({}, e), {
     size: "lg",
     children: [(0, r.jsx)(i.xBx, {
       title: a,
       subtitle: f
     }), (0, r.jsx)(l.zJl, {
-      className: p.modalContent,
+      className: g.modalContent,
       style: {
         width: d.M4
       },
@@ -92,10 +92,8 @@ function f(e) {
           }, d.Vb.SERVER_SETTINGS)]
         })
       })
-    }), (0, r.jsx)(i.mzw, {
-      children: (0, r.jsx)("div", {
-        ref: e => t(e)
-      })
+    }), (0, r.jsx)("div", {
+      ref: e => t(e)
     })]
   }))
 }
@@ -106,8 +104,8 @@ function _(e) {
   } = (0, a.ZP)();
   return (0, r.jsx)(a.Gt, {
     value: n,
-    children: (0, r.jsx)(c.KO, x(g({}, e), {
-      children: (0, r.jsx)(f, g({}, e))
+    children: (0, r.jsx)(c.KO, x(p({}, e), {
+      children: (0, r.jsx)(f, p({}, e))
     }))
   })
 }

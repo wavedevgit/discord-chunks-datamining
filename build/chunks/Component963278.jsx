@@ -2,12 +2,12 @@
 /** chunk id: 963278, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => _
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk594174 = require("./594174.js"),
@@ -18,22 +18,22 @@ var Chunk120356 = require("./120356.js"),
   Chunk653126 = require("./653126.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk687983 = require("./687983.js");
-let C = e => {
+let _ = e => {
   let {
     shelf: t,
     handleTransition: n,
     tab: l
-  } = e, C = (0, s.e7)([o.default], () => o.default.getCurrentUser()), h = d.Z.useConfig({
+  } = e, _ = (0, i.e7)([o.default], () => o.default.getCurrentUser()), h = d.Z.useConfig({
     location: "ShelfBlock"
   }).showCardsV2;
-  return null == C ? null : (0, r.jsxs)("div", {
-    className: i()(_.shelfBlockContainer, _.centeredSection),
+  return null == _ ? null : (0, r.jsxs)("div", {
+    className: a()(C.shelfBlockContainer, C.centeredSection),
     children: [(0, r.jsxs)("div", {
-      className: _.blockHeader,
-      children: [(0, r.jsx)(a.X6q, {
+      className: C.blockHeader,
+      children: [(0, r.jsx)(s.X6q, {
         variant: "heading-lg/semibold",
         children: t.name
-      }), (0, r.jsx)(a.zxk, {
+      }), (0, r.jsx)(s.zxk, {
         variant: "secondary",
         text: f.intl.formatToPlainString(f.t.bc9RBA, {
           category_name: t.name
@@ -41,12 +41,12 @@ let C = e => {
         onClick: () => n("shelf block see all", t.categorySkuId)
       })]
     }), (0, r.jsx)("div", {
-      className: _.feed,
+      className: C.feed,
       children: (0, r.jsx)(r.Fragment, {
         children: t.rankedSkuIds.map((e, n) => {
-          let i = u.Z.getCategoryForProduct(e),
-            s = u.Z.getProduct(e);
-          return null == i || null == s ? null : (0, r.jsx)(c.k0, {
+          let a = u.Z.getCategoryForProduct(e),
+            i = u.Z.getProduct(e);
+          return null == a || null == i ? null : (0, r.jsx)(c.k0, {
             newValue: {
               tilePosition: n,
               pageSection: t.name,
@@ -55,9 +55,9 @@ let C = e => {
             children: h ? (0, r.jsx)(p.Z, {
               skuId: e
             }, e) : (0, r.jsx)(g.Z, {
-              product: s,
-              category: i,
-              user: C,
+              product: i,
+              category: a,
+              user: _,
               tab: l
             }, e)
           }, e)

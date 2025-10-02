@@ -7,7 +7,7 @@ require.r(exports), require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk772848 = require("./772848.js"),
   Chunk399606 = require("./399606.js"),
   Chunk952265 = require("./952265.js"),
@@ -47,29 +47,29 @@ let D = e => {
       children: t,
       shouldAddEventListener: n,
       onClose: r
-    } = e, i = (0, c.f9)();
+    } = e, a = (0, c.f9)();
     return l.useEffect(() => {
-      if (!n || i) return;
+      if (!n || a) return;
       let e = e => {
         e.key === F.mR.Escape && r()
       };
       return window.addEventListener("keydown", e), () => window.removeEventListener("keydown", e)
-    }, [n, i, r]), t
+    }, [n, a, r]), t
   },
   W = function(e) {
     let {
       isFullScreen: t = true,
       tab: n = Z.AW.HOME
     } = e;
-    (0, _.z)(f.f), (0, L.f)();
-    let i = (0, g.Z)((0, a.Z)()),
+    (0, C.z)(f.f), (0, L.f)();
+    let a = (0, g.Z)((0, s.Z)()),
       c = (0, o.e7)([E.default], () => E.default.getCurrentUser()),
       {
         userProfile: F,
         wishlistId: W
-      } = (0, o.cj)([C.Z], () => ({
-        userProfile: null != c ? C.Z.getUserProfile(c.id) : null,
-        wishlistId: null != c ? C.Z.getFirstWishlistId(c.id) : null
+      } = (0, o.cj)([_.Z], () => ({
+        userProfile: null != c ? _.Z.getUserProfile(c.id) : null,
+        wishlistId: null != c ? _.Z.getFirstWishlistId(c.id) : null
       }), [c]);
     l.useEffect(() => {
       null != c && null == F && (0, h.Z)(c.id, c.getAvatarURL(null, 80))
@@ -77,7 +77,7 @@ let D = e => {
     let U = (0, R.G)("CollectiblesShop"),
       {
         onClose: V
-      } = (0, B.Db)(),
+      } = (0, A.Db)(),
       {
         currentTab: z,
         hasFilters: G
@@ -89,7 +89,7 @@ let D = e => {
       } = (0, T.ZP)({
         logPerf: true
       }, {
-        sessionId: i,
+        sessionId: a,
         tab: K,
         isFullScreen: t
       }),
@@ -107,18 +107,18 @@ let D = e => {
       {
         selectedTab: er,
         transitionState: el,
-        transitionToTab: ei
+        transitionToTab: ea
       } = (0, j.B)(K, t);
-    (0, O.q3)(i, er, $, el, ee), (0, O.EB)(er, c);
+    (0, O.q3)(a, er, $, el, ee), (0, O.EB)(er, c);
     let {
-      dismissShopButtonDC: es
-    } = (0, A.Z)();
+      dismissShopButtonDC: ei
+    } = (0, B.Z)();
     l.useEffect(() => {
-      es()
-    }, [es]), l.useEffect(() => {
+      ei()
+    }, [ei]), l.useEffect(() => {
       t || (0, d.Y)(w.Z5c.COLLECTIBLES_SHOP)
     }, [t]);
-    let ea = (0, o.e7)([b.Z], () => b.Z.getLayers().includes(w.S9g.COLLECTIBLES_SHOP)),
+    let es = (0, o.e7)([b.Z], () => b.Z.getLayers().includes(w.S9g.COLLECTIBLES_SHOP)),
       eo = l.useRef(null),
       ec = l.useRef(null);
     (0, u.Tbt)(eo);
@@ -140,7 +140,7 @@ let D = e => {
       value: eg,
       children: (0, r.jsx)(v.k0, {
         newValue: {
-          sessionId: i,
+          sessionId: a,
           pageCategory: $,
           pageSize: Z.kN
         },
@@ -148,21 +148,21 @@ let D = e => {
           tab: er,
           children: (0, r.jsx)(D, {
             onClose: V,
-            shouldAddEventListener: t && !ea,
+            shouldAddEventListener: t && !es,
             children: (0, r.jsxs)("div", {
-              className: s()(H.shop, {
+              className: i()(H.shop, {
                 [M.shopTakeOver]: U
               }),
               ref: t ? eo : ec,
               tabIndex: false,
               children: [(0, r.jsx)(N.I, {
                 isFullScreen: t,
-                isLayer: ea,
+                isLayer: es,
                 onClose: V,
-                handleTransition: ei,
+                handleTransition: ea,
                 selectedTab: er
               }), (0, r.jsx)("div", {
-                className: s()(H.shopViewWrapper, {
+                className: i()(H.shopViewWrapper, {
                   [H.visible]: el === Z.f7.VISIBLE,
                   [H.in]: el === Z.f7.IN,
                   [H.out]: el === Z.f7.OUT
@@ -171,7 +171,7 @@ let D = e => {
                   tab: er,
                   isFullScreen: t,
                   refreshCategories: Y,
-                  transitionToTab: ei,
+                  transitionToTab: ea,
                   transitionState: el,
                   sortedCategories: X,
                   updateAnalyticsState: en

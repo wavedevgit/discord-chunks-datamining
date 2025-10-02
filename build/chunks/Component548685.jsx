@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk782568 = require("./782568.js"),
@@ -35,24 +35,24 @@ let I = e => {
   var t;
   let {
     isLoading: n,
-    title: i,
+    title: a,
     sortedSkuIds: I,
     numVisibleItems: P,
     hasSorting: N,
-    prioritizeUserDiscounts: B,
-    tab: A,
+    prioritizeUserDiscounts: A,
+    tab: B,
     buttonContainerClassName: R
-  } = e, Z = (0, a.e7)([d.default], () => d.default.getCurrentUser()), w = _.ZP.canUseCollectibles(Z), F = (0, T.G)("FeedBlock"), {
+  } = e, Z = (0, s.e7)([d.default], () => d.default.getCurrentUser()), w = C.ZP.canUseCollectibles(Z), F = (0, T.G)("FeedBlock"), {
     sortType: H,
     setSortType: M,
     sortedItems: D,
     sortOptions: W,
     shuffleProducts: U,
     showRecommendationOption: V
-  } = (0, x.Z)(I, w, B), z = (0, O.St)(D), G = (0, a.e7)([u.Z], () => u.Z.useReducedMotion), K = (0, a.e7)([g.Z], () => g.Z.isFocused()), q = !G && K, {
+  } = (0, x.Z)(I, w, A), z = (0, O.St)(D), G = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), K = (0, s.e7)([g.Z], () => g.Z.isFocused()), q = !G && K, {
     animationPhase: Y,
     startAnimation: X
-  } = (0, S.y)(), Q = (0, C.sp)(), J = null != (t = null == Q ? true : Q.sessionId) ? t : "", $ = l.useRef(null), ee = l.useCallback(e => {
+  } = (0, S.y)(), Q = (0, _.sp)(), J = null != (t = null == Q ? true : Q.sessionId) ? t : "", $ = l.useRef(null), ee = l.useCallback(e => {
     X({
       isShuffling: false,
       onOutroComplete: () => M(e)
@@ -64,14 +64,14 @@ let I = e => {
     location: "FeedBlock"
   }).showCardsV2;
   return null == Z ? null : (0, r.jsxs)("div", {
-    className: s()(k.popularPicksSection, k.centeredSection),
+    className: i()(k.popularPicksSection, k.centeredSection),
     children: [(0, r.jsxs)("div", {
       className: k.blockHeader,
       children: [(0, r.jsxs)("div", {
         className: k.headerLeft,
         children: [(0, r.jsx)(o.X6q, {
           variant: "heading-lg/semibold",
-          children: i
+          children: a
         }), V && (0, r.jsx)(o.ua7, {
           text: L.intl.string(L.t["3taPdn"]),
           position: "top",
@@ -114,7 +114,7 @@ let I = e => {
           }
         })]
       }), N ? (0, r.jsxs)("div", {
-        className: s()(k.headerRight, {
+        className: i()(k.headerRight, {
           [j.shopTakeOver]: F
         }),
         children: [(0, r.jsx)(o.Text, {
@@ -126,7 +126,7 @@ let I = e => {
             options: W,
             select: ee,
             className: k.sortSelect,
-            popoutClassName: s()({
+            popoutClassName: i()({
               [j.shopTakeOver]: F
             }),
             isSelected: e => e === H,
@@ -163,7 +163,7 @@ let I = e => {
             className: k.shuffleOutro
           }, "".concat(e.skuId, "-").concat(t));
           else Y === S.g.SORT_OUT ? n = k.sortChangedOutro : Y === S.g.SHUFFLE_IN ? n = k.shuffleIntro : Y === S.g.SORT_IN && (n = k.sortChangedIntro);
-        return (0, r.jsx)(C.k0, {
+        return (0, r.jsx)(_.k0, {
           newValue: {
             tilePosition: t,
             pageSection: "popular picks",
@@ -175,7 +175,7 @@ let I = e => {
             product: e,
             category: l,
             user: Z,
-            tab: A,
+            tab: B,
             className: n
           })
         }, null == e ? true : e.skuId)

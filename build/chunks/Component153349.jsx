@@ -91,10 +91,10 @@ let R = Chunk647438.memo(function(e) {
       channel: l,
       participant: a,
       tempDisableOnInit: s = false
-    } = e, g = i.useRef(null), [_, v] = i.useState(s);
+    } = e, g = i.useRef(null), [_, x] = i.useState(s);
     (0, h.ZP)(() => {
       if (!_) return;
-      let e = setTimeout(() => v(false), 1e3);
+      let e = setTimeout(() => x(false), 1e3);
       return () => clearTimeout(e)
     });
     let I = l.getGuildId();
@@ -164,7 +164,7 @@ let R = Chunk647438.memo(function(e) {
               }), (0, r.jsx)(d.Text, {
                 variant: "text-xs/normal",
                 color: "header-secondary",
-                children: (0, x.$)(a)
+                children: (0, v.$)(a)
               })]
             })]
           }))
@@ -228,7 +228,7 @@ function L(e) {
     channel: t,
     toggleRequestToSpeakSidebar: n,
     chatOpen: i
-  } = e, l = (0, v.Fd)(t.id), s = [+!!(0, c.e7)([_.Z], () => _.Z.can(S.Pl.MANAGE_CHANNELS, t) || _.Z.can(S.Pl.MANAGE_ROLES, t)), Math.max(1, l.length)];
+  } = e, l = (0, x.Fd)(t.id), s = [+!!(0, c.e7)([_.Z], () => _.Z.can(S.Pl.MANAGE_CHANNELS, t) || _.Z.can(S.Pl.MANAGE_ROLES, t)), Math.max(1, l.length)];
   return (0, r.jsxs)("div", {
     className: a()(P.container, {
       [P.chatOpen]: i

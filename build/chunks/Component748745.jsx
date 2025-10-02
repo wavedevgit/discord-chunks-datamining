@@ -1,7 +1,7 @@
 /** Chunk was on 952 **/
 /** chunk id: 748745, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => b
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk958751 = require("./958751.js");
 
-function b(e) {
+function g(e) {
   let {
     guildId: t,
     gameInstance: n,
@@ -75,16 +75,16 @@ function b(e) {
   })
 }
 
-function g(e) {
+function b(e) {
   var t, n, o, d;
   let {
-    guildId: g,
+    guildId: b,
     gameInstance: p,
     onClick: j
-  } = e, y = (0, a.e7)([c.Z], () => c.Z.getStateForGuild(g)), x = i.useMemo(() => {
+  } = e, x = (0, a.e7)([c.Z], () => c.Z.getStateForGuild(b)), y = i.useMemo(() => {
     var e;
-    return null == y || null == (e = y.entitlements) ? true : e[p.entitlementId]
-  }, [null == y ? true : y.entitlements, p.entitlementId]), O = (null == x ? true : x.ends_at) != null, h = null == x || null == (d = x.sku) || null == (o = d.tenant_metadata) || null == (n = o.guild_monetization) || null == (t = n.game_server) ? true : t.boost_price, P = (0, u.Z)(p.gameId, "icon");
+    return null == x || null == (e = x.entitlements) ? true : e[p.entitlementId]
+  }, [null == x ? true : x.entitlements, p.entitlementId]), O = (null == y ? true : y.ends_at) != null, h = null == y || null == (d = y.sku) || null == (o = d.tenant_metadata) || null == (n = o.guild_monetization) || null == (t = n.game_server) ? true : t.boost_price, P = (0, u.Z)(p.gameId, "icon");
   return null == h ? null : (0, l.jsxs)(r.P3F, {
     className: f.game,
     onClick: () => j(p),
@@ -98,12 +98,12 @@ function g(e) {
         variant: "heading-sm/semibold",
         children: p.name
       }), O ? (0, l.jsx)(s.rL, {
-        dateString: x.ends_at
+        dateString: y.ends_at
       }) : (0, l.jsx)(s.P2, {
         text: v.intl.string(m.default.FFLkm5)
       })]
-    }), (0, l.jsx)(b, {
-      guildId: g,
+    }), (0, l.jsx)(g, {
+      guildId: b,
       gameInstance: p,
       cost: h
     })]
