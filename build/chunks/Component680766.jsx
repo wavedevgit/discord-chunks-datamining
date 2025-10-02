@@ -2,17 +2,19 @@
 /** chunk id: 680766, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  W: () => m
+  W: () => b
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk35916 = require("./35916.jsx"),
+var Chunk793030 = require("./793030.js"),
+  Chunk35916 = require("./35916.jsx"),
   Chunk496600 = require("./496600.jsx"),
   Chunk333200 = require("./333200.jsx"),
   Chunk673221 = require("./673221.jsx"),
-  Chunk231338 = require("./231338.js");
+  Chunk231338 = require("./231338.js"),
+  Chunk740353 = require("./740353.js");
 
-function c(e, t, n) {
+function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -21,20 +23,20 @@ function c(e, t, n) {
   }) : e[t] = n, e
 }
 
-function u(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      c(e, t, n[t])
+      d(e, t, n[t])
     })
   }
   return e
 }
 
-function d(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -45,15 +47,15 @@ function d(e, t) {
   return n
 }
 
-function f(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
+function p(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function _(e, t) {
+function h(e, t) {
   if (null == e) return {};
-  var n, r, i = p(e, t);
+  var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -61,14 +63,14 @@ function _(e, t) {
   return i
 }
 
-function p(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let h = [{
+let g = [{
     label: "Aardvark",
     value: "aardvark",
     id: "aardvark"
@@ -94,19 +96,63 @@ let h = [{
     id: "snake",
     disabled: true
   }],
-  m = {
+  E = [{
+    label: "Aardvark",
+    value: "aardvark",
+    id: "aardvark",
+    leading: Chunk793030.VL1,
+    trailing: {
+      type: "badge",
+      badgeType: "new"
+    }
+  }, {
+    label: "Cat",
+    value: "cat",
+    id: "cat",
+    leading: Chunk793030.VL1,
+    trailing: "20m"
+  }, {
+    label: "Dog",
+    value: "dog",
+    id: "dog",
+    leading: Chunk793030.VL1
+  }, {
+    label: "Kangaroo",
+    value: "kangaroo",
+    id: "kangaroo",
+    leading: {
+      type: "image",
+      src: Chunk740353
+    }
+  }, {
+    label: "Panda",
+    value: "panda",
+    id: "panda",
+    leading: {
+      type: "avatar",
+      src: Chunk740353
+    }
+  }, {
+    label: "Snake",
+    value: "snake",
+    id: "snake",
+    leading: Chunk793030.VL1,
+    disabled: true
+  }],
+  b = {
     title: "Select",
     stories: [{
       id: "select",
       name: "Select",
       component: function(e) {
         var {
-          selectionMode: t
-        } = e, n = _(e, ["selectionMode"]);
-        return (0, r.jsx)(s.P, f(u({}, n), {
           selectionMode: t,
-          options: h,
-          onSelectionChange: l.dG
+          withLeadingAndTrailing: n
+        } = e, i = h(e, ["selectionMode", "withLeadingAndTrailing"]);
+        return (0, r.jsx)(l.P, p(f({}, i), {
+          selectionMode: t,
+          options: n ? E : g,
+          onSelectionChange: c.dG
         }))
       },
       controls: {
@@ -121,6 +167,11 @@ let h = [{
             value: "multiple"
           }],
           defaultValue: "single"
+        },
+        withLeadingAndTrailing: {
+          label: "Show leading and trailing content",
+          type: "boolean",
+          defaultValue: false
         },
         required: {
           label: "Required",
@@ -203,12 +254,13 @@ let h = [{
       name: "SearchableSelect",
       component: function(e) {
         var {
-          selectionMode: t
-        } = e, n = _(e, ["selectionMode"]);
-        return (0, r.jsx)(o.V, f(u({}, n), {
           selectionMode: t,
-          onSelectionChange: l.dG,
-          options: h
+          withLeadingAndTrailing: n
+        } = e, i = h(e, ["selectionMode", "withLeadingAndTrailing"]);
+        return (0, r.jsx)(s.V, p(f({}, i), {
+          selectionMode: t,
+          onSelectionChange: c.dG,
+          options: n ? E : g
         }))
       },
       controls: {
@@ -223,6 +275,11 @@ let h = [{
             value: "multiple"
           }],
           defaultValue: "single"
+        },
+        withLeadingAndTrailing: {
+          label: "Show leading and trailing content",
+          type: "boolean",
+          defaultValue: false
         },
         required: {
           label: "Required",
@@ -303,32 +360,33 @@ let h = [{
           selectionMode: t,
           label: n,
           hideLabel: i,
-          description: o,
+          description: a,
           helperText: s,
-          errorMessage: c,
-          successMessage: d,
-          wrapTags: p
-        } = e, m = _(e, ["selectionMode", "label", "hideLabel", "description", "helperText", "errorMessage", "successMessage", "wrapTags"]);
+          errorMessage: l,
+          successMessage: u,
+          wrapTags: d,
+          withLeadingAndTrailing: _
+        } = e, m = h(e, ["selectionMode", "label", "hideLabel", "description", "helperText", "errorMessage", "successMessage", "wrapTags", "withLeadingAndTrailing"]);
         let {
-          required: g,
-          disabled: E
+          required: b,
+          disabled: y
         } = m;
-        return (0, r.jsxs)(a.uz, f(u({
+        return (0, r.jsxs)(o.uz, p(f({
           selectionMode: t,
-          onSelectionChange: l.dG,
-          options: h
+          onSelectionChange: c.dG,
+          options: _ ? E : g
         }, m), {
-          children: [(0, r.jsx)(a.Ct, {
+          children: [(0, r.jsx)(o.Ct, {
             label: n,
             hideLabel: i,
-            required: g,
-            disabled: E,
-            description: o,
+            required: b,
+            disabled: y,
+            description: a,
             helperText: s,
-            errorMessage: c,
-            successMessage: d,
-            wrapTags: p
-          }), (0, r.jsx)(a.px, {})]
+            errorMessage: l,
+            successMessage: u,
+            wrapTags: d
+          }), (0, r.jsx)(o.px, {})]
         }))
       },
       controls: {
@@ -343,6 +401,11 @@ let h = [{
             value: "multiple"
           }],
           defaultValue: "single"
+        },
+        withLeadingAndTrailing: {
+          label: "Show leading and trailing content",
+          type: "boolean",
+          defaultValue: false
         },
         required: {
           label: "Required",
@@ -417,14 +480,15 @@ let h = [{
         let {
           selectionMode: t,
           required: n,
-          shouldFocusWrap: a
+          shouldFocusWrap: i,
+          withLeadingAndTrailing: o
         } = e;
-        return (0, r.jsx)(i.w, {
+        return (0, r.jsx)(a.w, {
           selectionMode: t,
           required: n,
-          shouldFocusWrap: a,
-          items: h,
-          onSelectionChange: l.dG
+          shouldFocusWrap: i,
+          items: o ? E : g,
+          onSelectionChange: c.dG
         })
       },
       controls: {
@@ -439,6 +503,11 @@ let h = [{
             value: "multiple"
           }],
           defaultValue: "single"
+        },
+        withLeadingAndTrailing: {
+          label: "Show leading and trailing content",
+          type: "boolean",
+          defaultValue: false
         },
         required: {
           label: "Required",

@@ -145,7 +145,7 @@ function P(e) {
         width: i,
         dropDownHeight: o
       }))
-    }, 500));
+    }, 50));
     return e.observe(v.current), () => e.disconnect()
   }, [l, a, R, I.longestLabelCharCount]);
   let D = i.useCallback(e => {
@@ -291,9 +291,10 @@ function D(e) {
       null == (e = L.current) || e.select()
     }, []),
     ec = i.useCallback(e => {
+      if (X) return;
       let t = Array.from(e)[0];
       $(new Set([...k.selectedItems].filter(e => e.id !== t)))
-    }, [$, k.selectedItems]),
+    }, [$, k.selectedItems, X]),
     eu = i.useCallback(e => {
       let t = k.filteredItems.length;
       switch (e.key) {
@@ -360,11 +361,16 @@ function D(e) {
           }))
         })
       }
-      let e = Array.from(k.selectedItems).map(e => ({
-        id: e.id,
-        label: e.label,
-        accessibilityHint: y.intl.string(b.default["/Y7vRU"])
-      }));
+      let e = Array.from(k.selectedItems).map(e => {
+        let t;
+        return null != e.leading && (t = e.leading), {
+          id: e.id,
+          label: e.label,
+          icon: t,
+          isDisabled: B || e.disabled,
+          accessibilityHint: y.intl.string(b.default["/Y7vRU"])
+        }
+      });
       return (0, r.jsx)(d.QSK, {
         listRef: D,
         label: y.intl.string(b.default.VMNfsb),
@@ -372,7 +378,7 @@ function D(e) {
         layout: "inline",
         onRemove: ec
       })
-    }, [G, el, ec, k.isEditing, k.selectedItems]);
+    }, [G, B, el, ec, k.isEditing, k.selectedItems]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(g.q, {
       ref: W,
