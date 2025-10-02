@@ -205,210 +205,214 @@ function ef(e) {
     })
   })
 }
-let eh = function() {
-  var e;
+let eh = function(e) {
+  var t;
   let {
-    enabled: t
-  } = Chunk937797.m8.useConfig({
-    location: Chunk46140.dr.QUEST_HOME_DESKTOP
-  }), n = (0, Chunk843611.TH)(), l = (null == (e = (0, Chunk843611.LX)(require.pathname, Chunk981631.Z5c.QUEST_HOME)) ? true : module.isExact) === true, s = exports && Chunk120356, f = (0, Chunk442837.e7)([Chunk362762.Z], () => Chunk362762.Z.getState("quests")), {
-    selectedTab: E,
-    onSelectTab: Z,
-    tabs: w
-  } = (0, Chunk452081.z)({
-    withClaimedQuestsTab: !Chunk772848
+    withTopBorder: n
+  } = e, {
+    enabled: l
+  } = B.m8.useConfig({
+    location: $.dr.QUEST_HOME_DESKTOP
+  }), s = (0, o.TH)(), f = (null == (t = (0, o.LX)(s.pathname, ee.Z5c.QUEST_HOME)) ? true : t.isExact) === true, E = l && f, Z = (0, u.e7)([b.Z], () => b.Z.getState("quests")), {
+    selectedTab: w,
+    onSelectTab: L,
+    tabs: D
+  } = (0, J.z)({
+    withClaimedQuestsTab: !E
   });
-  Chunk647438.useLayoutEffect(() => {
-    Chunk772848 && Chunk70097 === Chunk113434.e5.CLAIMED && Chunk220068.Z.setState({
-      tab: Chunk113434.e5.ALL
+  i.useLayoutEffect(() => {
+    E && w === k.e5.CLAIMED && G.Z.setState({
+      tab: k.e5.ALL
     })
-  }, [Chunk772848, Chunk70097]);
+  }, [E, w]);
   let {
-    onScroll: L,
-    scrollPosition: D
-  } = (0, Chunk979233.M)(), U = Chunk150560.Z.getState().getUtmCurrentContext(), F = (0, Chunk833435._)({
-    location: Chunk46140.dr.QUEST_HOME_DESKTOP
-  }) ? Chunk736683.Z : Chunk736683.j, W = (0, Chunk879438.z)(e => e.registerAssetLoad), el = Chunk647438.useRef(Chunk497505);
-  Chunk647438.useEffect(() => {
-    Chunk13299.current = Chunk497505
-  }), Chunk647438.useEffect(() => {
+    onScroll: U,
+    scrollPosition: F
+  } = (0, v.M)(), W = z.Z.getState().getUtmCurrentContext(), el = (0, M._)({
+    location: $.dr.QUEST_HOME_DESKTOP
+  }) ? Y.Z : Y.j, ea = (0, K.z)(e => e.registerAssetLoad), eo = i.useRef(W);
+  i.useEffect(() => {
+    eo.current = W
+  }), i.useEffect(() => {
     let {
       current: e
-    } = Chunk13299;
-    (0, Chunk213609.h)({
-      name: Chunk990547.ImpressionNames.QUEST_HOME,
-      type: Chunk990547.ImpressionTypes.VIEW,
+    } = eo;
+    (0, g.h)({
+      name: c.ImpressionNames.QUEST_HOME,
+      type: c.ImpressionTypes.VIEW,
       properties: {
-        utm_source_current: module.utmSourceCurrent,
-        utm_medium_current: module.utmMediumCurrent,
-        utm_campaign_current: module.utmCampaignCurrent,
-        utm_content_current: module.utmContentCurrent,
-        tab: Chunk70097
+        utm_source_current: e.utmSourceCurrent,
+        utm_medium_current: e.utmMediumCurrent,
+        utm_campaign_current: e.utmCampaignCurrent,
+        utm_content_current: e.utmContentCurrent,
+        tab: w
       }
     })
-  }, [Chunk70097]);
+  }, [w]);
   let {
-    enabled: ea
-  } = (0, Chunk825102.WX)({
-    location: Chunk46140.dr.QUEST_HOME_DESKTOP
-  }), eo = Chunk647438.useCallback(() => {
-    if (Chunk890631) return void window.open(Chunk981631.EYA.PAID_TERMS_ORBS);
-    window.open(Chunk63063.Z.getArticleURL(Chunk981631.BhN.QUESTS_LEARN_MORE))
-  }, [Chunk890631]);
-  (0, Chunk252618.Tt)({
-    location: Chunk388032.intl.string(Chunk388032.t.JALI2N)
+    enabled: es
+  } = (0, x.WX)({
+    location: $.dr.QUEST_HOME_DESKTOP
+  }), ec = i.useCallback(() => {
+    if (es) return void window.open(ee.EYA.PAID_TERMS_ORBS);
+    window.open(R.Z.getArticleURL(ee.BhN.QUESTS_LEARN_MORE))
+  }, [es]);
+  (0, O.Tt)({
+    location: er.intl.string(er.t.JALI2N)
   });
-  let es = Chunk890631 ? Chunk388032.intl.format(Chunk388032.t.BCBIlp, {}) : Chunk388032.intl.format(Chunk388032.t.lmMBf3, {}),
-    ec = Chunk890631 ? Chunk388032.intl.format(Chunk388032.t.U9FY0N, {}) : Chunk388032.intl.string(Chunk388032.t.oWCrBg),
-    eu = Chunk647438.useRef(null),
-    ep = Chunk647438.useCallback(() => {
-      (0, Chunk507808.Y)({
-        pageType: Chunk981631.ZY5.GLOBAL_DISCOVERY_QUESTS,
-        sectionType: Chunk981631.jXE.ORBS_BALANCE_MENU,
-        ctaObject: Chunk981631.qAy.CTA_TO_ORBS_SHOP
-      }), (0, Chunk335131.mK)({
+  let eu = es ? er.intl.format(er.t.BCBIlp, {}) : er.intl.format(er.t.lmMBf3, {}),
+    ep = es ? er.intl.format(er.t.U9FY0N, {}) : er.intl.string(er.t.oWCrBg),
+    eh = i.useRef(null),
+    eg = i.useCallback(() => {
+      (0, P.Y)({
+        pageType: ee.ZY5.GLOBAL_DISCOVERY_QUESTS,
+        sectionType: ee.jXE.ORBS_BALANCE_MENU,
+        ctaObject: ee.qAy.CTA_TO_ORBS_SHOP
+      }), (0, _.mK)({
         openInLayer: false,
-        tab: Chunk215023.AW.ORBS,
+        tab: et.AW.ORBS,
         analyticsLocations: [],
-        analyticsSource: Chunk100527.Z.ORBS_BALANCE_MENU
+        analyticsSource: h.Z.ORBS_BALANCE_MENU
       })
     }, []);
-  Chunk647438.useEffect(() => {
-    exports && (0, Chunk150063.Y)(Chunk981631.Z5c.QUEST_HOME_V2)
-  }, [exports]), Chunk647438.useEffect(() => {
-    Chunk632285.C.trigger()
+  i.useEffect(() => {
+    l && (0, p.Y)(ee.Z5c.QUEST_HOME_V2)
+  }, [l]), i.useEffect(() => {
+    y.C.trigger()
   }, []);
-  let eh = (0, Chunk36243.T)({
-    location: Chunk46140.dr.QUEST_PREVIEW_TOOL_2
+  let em = (0, H.T)({
+    location: $.dr.QUEST_PREVIEW_TOOL_2
   });
-  return Chunk647438.useEffect(() => {
-    if (null != Chunk607070 || !eh) return;
-    let e = new URLSearchParams(require.search),
-      t = module.get(Chunk113434.tR.TAB),
-      r = module.get(Chunk113434.tR.QUEST_ID);
-    exports === Chunk113434.e5.PREVIEW_TOOL && Chunk625128.Z.openNativeAppModal("quests", Chunk981631.Etm.DEEP_LINK, {
-      type: Chunk186901.jE.QUEST_PREVIEW_TOOL,
+  return i.useEffect(() => {
+    if (null != Z || !em) return;
+    let e = new URLSearchParams(s.search),
+      t = e.get(k.tR.TAB),
+      n = e.get(k.tR.QUEST_ID);
+    t === k.e5.PREVIEW_TOOL && m.Z.openNativeAppModal("quests", ee.Etm.DEEP_LINK, {
+      type: en.jE.QUEST_PREVIEW_TOOL,
       params: {
-        questId: Chunk951288,
-        tab: exports
+        questId: n,
+        tab: t
       }
     })
-  }, [require.search, Chunk607070, eh]), (0, Chunk951288.jsx)(Chunk251360.k.Provider, {
+  }, [s.search, Z, em]), (0, r.jsx)(Q.k.Provider, {
     value: {
-      onAssetLoadComplete: Chunk672188
+      onAssetLoadComplete: ea
     },
-    children: (0, Chunk951288.jsx)("div", {
-      className: Chunk838997.container,
-      children: Chunk772848 ? (0, Chunk951288.jsx)(ef, {
-        onSelectTab: Chunk451478,
-        onScroll: Chunk526167,
-        onLoadComplete: Chunk672188,
-        scrollerRef: Chunk431115,
-        selectedTabId: Chunk70097,
-        tabs: Chunk626135
-      }) : Chunk890631 ? (0, Chunk951288.jsx)(Chunk466962.t.Provider, {
-        value: Chunk431115,
-        children: (0, Chunk951288.jsxs)(Chunk283293.Z, {
-          onScroll: Chunk526167,
-          ref: Chunk431115,
-          children: [(0, Chunk951288.jsx)(Chunk763433.a, {
-            selectedTabId: Chunk70097,
-            handleTransition: Chunk451478,
-            tabs: Chunk626135,
-            icon: Chunk481060.qDn,
-            children: (0, Chunk951288.jsx)(Chunk775451.V9, {
-              analyticsPage: Chunk981631.ZY5.GLOBAL_DISCOVERY_QUESTS,
-              cardAlignment: Chunk775451.ek.END,
-              ctaText: Chunk388032.intl.string(Chunk388032.t["J+vlIS"]),
-              ctaOnClick: ep
+    children: (0, r.jsx)("div", {
+      className: a()(ei.container, {
+        [ei.withoutTopBorder]: !n
+      }),
+      children: E ? (0, r.jsx)(ef, {
+        onSelectTab: L,
+        onScroll: U,
+        onLoadComplete: ea,
+        scrollerRef: eh,
+        selectedTabId: w,
+        tabs: D
+      }) : es ? (0, r.jsx)(X.t.Provider, {
+        value: eh,
+        children: (0, r.jsxs)(j.Z, {
+          onScroll: U,
+          ref: eh,
+          children: [(0, r.jsx)(N.a, {
+            selectedTabId: w,
+            handleTransition: L,
+            tabs: D,
+            icon: d.qDn,
+            children: (0, r.jsx)(A.V9, {
+              analyticsPage: ee.ZY5.GLOBAL_DISCOVERY_QUESTS,
+              cardAlignment: A.ek.END,
+              ctaText: er.intl.string(er.t["J+vlIS"]),
+              ctaOnClick: eg
             })
-          }), Chunk70097 !== Chunk113434.e5.PREVIEW_TOOL && (0, Chunk951288.jsxs)(Chunk17845.Z, {
-            title: Chunk524777,
-            description: Chunk913713,
-            button: Chunk890631 ? (0, Chunk951288.jsxs)(Chunk481060.hE2, {
-              children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
+          }), w !== k.e5.PREVIEW_TOOL && (0, r.jsxs)(I.Z, {
+            title: eu,
+            description: ep,
+            button: es ? (0, r.jsxs)(d.hE2, {
+              children: [(0, r.jsx)(d.zxk, {
                 variant: "overlay-primary",
-                text: Chunk388032.intl.string(Chunk388032.t["1Wm129"]),
-                onClick: () => (0, Chunk335131.mK)({
+                text: er.intl.string(er.t["1Wm129"]),
+                onClick: () => (0, _.mK)({
                   openInLayer: false,
-                  tab: Chunk215023.AW.ORBS,
+                  tab: et.AW.ORBS,
                   analyticsLocations: [],
-                  analyticsSource: Chunk100527.Z.INTRO_TO_ORBS_QUEST_BANNER
+                  analyticsSource: h.Z.INTRO_TO_ORBS_QUEST_BANNER
                 })
-              }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+              }), (0, r.jsx)(d.zxk, {
                 variant: "overlay-secondary",
-                text: Chunk388032.intl.string(Chunk388032.t["7kTAgI"]),
-                onClick: Chunk164792
+                text: er.intl.string(er.t["7kTAgI"]),
+                onClick: ec
               })]
-            }) : (0, Chunk951288.jsx)(Chunk481060.zxk, {
+            }) : (0, r.jsx)(d.zxk, {
               variant: "overlay-primary",
-              text: Chunk388032.intl.string(Chunk388032.t.hvVgAQ),
-              onClick: Chunk164792,
-              icon: Chunk481060.Gr1,
+              text: er.intl.string(er.t.hvVgAQ),
+              onClick: ec,
+              icon: d.Gr1,
               iconPosition: "end"
             }),
-            className: a()(Chunk838997.bannerContainer, {
-              [Chunk838997.orbsContainer]: Chunk890631
+            className: a()(ei.bannerContainer, {
+              [ei.orbsContainer]: es
             }),
-            children: [(0, Chunk951288.jsx)("div", {
-              className: a()(Chunk838997.bannerGradient, {
-                [Chunk838997.orbsGradient]: Chunk890631
+            children: [(0, r.jsx)("div", {
+              className: a()(ei.bannerGradient, {
+                [ei.orbsGradient]: es
               })
-            }), (0, Chunk951288.jsx)(ed, {
-              onLoadComplete: Chunk672188
+            }), (0, r.jsx)(ed, {
+              onLoadComplete: ea
             })]
-          }), (0, Chunk951288.jsx)(Chunk374939.Z, {
-            children: Chunk70097 === Chunk113434.e5.CLAIMED ? (0, Chunk951288.jsx)(Chunk110560, {
-              onSelectTab: Chunk451478
-            }) : Chunk70097 === Chunk113434.e5.PREVIEW_TOOL ? (0, Chunk951288.jsx)(Chunk877109.Z, {}) : (0, Chunk951288.jsx)(Chunk558652.Z, {})
+          }), (0, r.jsx)(C.Z, {
+            children: w === k.e5.CLAIMED ? (0, r.jsx)(el, {
+              onSelectTab: L
+            }) : w === k.e5.PREVIEW_TOOL ? (0, r.jsx)(V.Z, {}) : (0, r.jsx)(q.Z, {})
           })]
         })
-      }) : (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-        children: [(0, Chunk951288.jsxs)(Chunk611928.ZP, {
-          variant: Chunk611928._6.OVERLAY,
-          children: [(0, Chunk951288.jsx)("div", {
-            className: Chunk838997.dragRegion
-          }), (0, Chunk951288.jsx)(Chunk611928.z6, {
-            scrollPosition: Chunk617136
-          }), (0, Chunk951288.jsx)(Chunk611928.aV, {
-            icon: Chunk481060.qDn
+      }) : (0, r.jsxs)(r.Fragment, {
+        children: [(0, r.jsxs)(T.ZP, {
+          variant: T._6.OVERLAY,
+          children: [(0, r.jsx)("div", {
+            className: ei.dragRegion
+          }), (0, r.jsx)(T.z6, {
+            scrollPosition: F
+          }), (0, r.jsx)(T.aV, {
+            icon: d.qDn
           })]
-        }), (0, Chunk951288.jsx)(Chunk466962.t.Provider, {
-          value: Chunk431115,
-          children: (0, Chunk951288.jsxs)(Chunk283293.Z, {
-            onScroll: Chunk526167,
-            ref: Chunk431115,
-            children: [(0, Chunk951288.jsxs)(Chunk17845.Z, {
-              title: Chunk524777,
-              description: Chunk913713,
-              button: (0, Chunk951288.jsx)(Chunk481060.zxk, {
+        }), (0, r.jsx)(X.t.Provider, {
+          value: eh,
+          children: (0, r.jsxs)(j.Z, {
+            onScroll: U,
+            ref: eh,
+            children: [(0, r.jsxs)(I.Z, {
+              title: eu,
+              description: ep,
+              button: (0, r.jsx)(d.zxk, {
                 variant: "overlay-primary",
-                text: Chunk388032.intl.string(Chunk388032.t.hvVgAQ),
-                onClick: Chunk164792,
-                icon: Chunk481060.Gr1,
+                text: er.intl.string(er.t.hvVgAQ),
+                onClick: ec,
+                icon: d.Gr1,
                 iconPosition: "end"
               }),
-              className: a()(Chunk838997.bannerContainer, {
-                [Chunk838997.orbsContainer]: Chunk890631
+              className: a()(ei.bannerContainer, {
+                [ei.orbsContainer]: es
               }),
-              children: [(0, Chunk951288.jsx)("div", {
-                className: a()(Chunk838997.bannerGradient, {
-                  [Chunk838997.orbsGradient]: Chunk890631
+              children: [(0, r.jsx)("div", {
+                className: a()(ei.bannerGradient, {
+                  [ei.orbsGradient]: es
                 })
-              }), (0, Chunk951288.jsx)(ed, {
-                onLoadComplete: Chunk672188
+              }), (0, r.jsx)(ed, {
+                onLoadComplete: ea
               })]
-            }), (0, Chunk951288.jsxs)(Chunk374939.Z, {
-              children: [(0, Chunk951288.jsx)("div", {
-                className: Chunk838997.tabs,
-                children: (0, Chunk951288.jsx)(Chunk233374.Z, {
-                  tabs: Chunk626135,
-                  selectedTab: Chunk70097,
-                  onTabSelect: Chunk451478
+            }), (0, r.jsxs)(C.Z, {
+              children: [(0, r.jsx)("div", {
+                className: ei.tabs,
+                children: (0, r.jsx)(S.Z, {
+                  tabs: D,
+                  selectedTab: w,
+                  onTabSelect: L
                 })
-              }), Chunk70097 === Chunk113434.e5.CLAIMED ? (0, Chunk951288.jsx)(Chunk110560, {
-                onSelectTab: Chunk451478
-              }) : Chunk70097 === Chunk113434.e5.PREVIEW_TOOL ? (0, Chunk951288.jsx)(Chunk877109.Z, {}) : (0, Chunk951288.jsx)(Chunk558652.Z, {})]
+              }), w === k.e5.CLAIMED ? (0, r.jsx)(el, {
+                onSelectTab: L
+              }) : w === k.e5.PREVIEW_TOOL ? (0, r.jsx)(V.Z, {}) : (0, r.jsx)(q.Z, {})]
             })]
           })
         })]

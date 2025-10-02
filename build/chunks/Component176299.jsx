@@ -333,7 +333,9 @@ let eL = (0, Chunk608787.Un)({
   };
 
 function e8() {
-  return (0, Chunk951288.jsx)(Chunk121711.Z, {})
+  return (0, Chunk951288.jsx)(Chunk121711.Z, {
+    withTopBorder: true
+  })
 }
 let e4 = e => (0, r.jsx)(v.Z, ew({}, e)),
   e3 = () => (0, Chunk951288.jsx)(Chunk270759.Z, {}),
