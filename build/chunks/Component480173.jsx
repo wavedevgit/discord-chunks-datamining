@@ -1,5 +1,5 @@
 /** Chunk was on 8345 **/
-/** chunk id: 785184, original params: e,t,n (module,exports,require) **/
+/** chunk id: 480173, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
 });
@@ -9,15 +9,15 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk607070 = require("./607070.js"),
   Chunk7093 = require("./7093.js"),
-  Chunk40347 = require("./40347.js"),
+  Chunk817466 = require("./817466.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk478741 = require("./478741.js");
-let m = Chunk647438.lazy(() => require.e("22274").then(require.bind(require, 269792)));
+  Chunk384981 = require("./384981.js");
+let m = Chunk647438.lazy(() => require.e("77898").then(require.bind(require, 739859)));
 
 function p() {
   let e = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion),
     t = (0, Chunk7093.Z)(e => e.shouldRenderTenureLevelUp),
-    n = (0, Chunk40347.Z)();
+    n = (0, Chunk817466.Z)();
   return module || !exports || null == require ? null : (0, Chunk951288.jsx)(h, {
     levelUpData: require
   })
