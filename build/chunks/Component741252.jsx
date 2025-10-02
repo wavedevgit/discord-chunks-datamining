@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js");
 
-function a(e, t) {
+function a(e, t, a) {
   (0, i.ZDy)(async () => {
     let {
       default: i
@@ -30,7 +30,8 @@ function a(e, t) {
       return e
     }({
       portkeyGame: t,
-      guildId: e
+      guildId: e,
+      status: a
     }, n))
   })
 }

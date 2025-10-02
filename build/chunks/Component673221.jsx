@@ -2,20 +2,20 @@
 /** chunk id: 673221, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  P: () => C
-}), require("./49124.js"), require("./388685.js"), require("./953529.js");
+  P: () => S
+}), require("./953529.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   Chunk753187 = require("./753187.jsx"),
   Chunk993517 = require("./993517.js"),
   Chunk635041 = require("./635041.jsx"),
   Chunk793030 = require("./793030.js"),
-  Chunk74655 = require("./74655.jsx"),
   Chunk816529 = require("./816529.jsx"),
   Chunk35916 = require("./35916.jsx"),
+  Chunk199823 = require("./199823.jsx"),
+  Chunk626921 = require("./626921.jsx"),
+  Chunk483753 = require("./483753.js"),
   Chunk614177 = require("./614177.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk484050 = require("./484050.js"),
@@ -78,218 +78,204 @@ function T(e, t) {
   return i
 }
 
-function S(e, t) {
-  return "object" == typeof e ? JSON.stringify(e) === JSON.stringify(t) : e === t
-}
-
-function A(e, t) {
-  return null != t && (t instanceof Set ? t.has(e) : S(e, t))
-}
-
-function C(e) {
+function S(e) {
   var {
-    id: t,
-    hideLabel: n,
-    description: i,
-    helperText: a,
-    errorMessage: o,
+    hideLabel: t,
+    description: n,
+    helperText: i,
+    errorMessage: a,
     successMessage: s
-  } = e, c = I(e, ["id", "hideLabel", "description", "helperText", "errorMessage", "successMessage"]);
+  } = e, l = I(e, ["hideLabel", "description", "helperText", "errorMessage", "successMessage"]);
   let {
+    id: c,
     required: u,
     label: d
-  } = c;
-  return (0, r.jsx)(l.N, {
-    id: t,
+  } = l;
+  return (0, r.jsx)(o.N, {
+    id: c,
     required: u,
     label: d,
-    hideLabel: n,
-    description: i,
-    helperText: a,
-    errorMessage: o,
+    hideLabel: t,
+    description: n,
+    helperText: i,
+    errorMessage: a,
     successMessage: s,
-    children: (0, r.jsx)(N, y({}, c))
+    children: (0, r.jsx)(A, y({}, l))
   })
 }
 
-function N(e) {
+function A(e) {
   let {
     selectionMode: t,
-    required: n,
-    disabled: a,
-    readOnly: l,
-    loading: E,
-    autoFocus: b,
-    clearable: O,
-    fullWidth: I,
-    closeOnSelect: T = true,
-    shouldFocusWrap: S,
-    placeholder: C = m.intl.string(h.default["A+pfVV"]),
-    label: N,
-    name: x,
-    form: j,
-    autoComplete: M,
-    maxOptionsVisible: k = 5,
-    options: U,
-    renderOption: G,
-    onSelectionChange: B,
-    value: Z,
-    defaultValue: F
-  } = e, V = true !== Z, H = i.useId(), [Y, W] = i.useState({
-    initialized: false,
+    id: n,
+    required: o,
+    disabled: E,
+    readOnly: b,
+    loading: O,
+    autoFocus: I,
+    clearable: T,
+    fullWidth: S,
+    closeOnSelect: A = true,
+    shouldFocusWrap: R,
+    placeholder: P = m.intl.string(h.default["A+pfVV"]),
+    label: w,
+    name: D,
+    form: L,
+    autoComplete: x,
+    maxOptionsVisible: j = 5,
+    options: M,
+    renderOption: k,
+    onSelectionChange: U,
+    value: G,
+    defaultValue: B
+  } = e, Z = true !== G, F = i.useId(), [V, H] = i.useState({
+    isInitialized: false,
     isOpen: false,
+    activeDescendantIndex: null,
     listItems: [],
+    filteredItems: [],
     selectedItems: new Set,
     longestLabelCharCount: 5,
-    width: "0px",
+    width: "200px",
     dropDownHeight: "auto"
-  }), K = i.useContext(c.U), z = i.useRef(null), q = i.useRef(null), X = null != T ? T : "multiple" !== t, Q = Y.selectedItems.size > 0, J = Y.listItems.length > k, $ = !Y.initialized || a || l || E, ee = i.useCallback(() => {
-    $ || W(e => v(y({}, e), {
+  }), Y = i.useContext(s.U), W = i.useRef(null), K = i.useRef(null), z = null != A ? A : "multiple" !== t, q = V.selectedItems.size > 0, X = V.listItems.length > j, Q = !V.isInitialized || E || b || O, J = i.useCallback(() => {
+    Q || H(e => v(y({}, e), {
       isOpen: !e.isOpen
     }))
-  }, [$]), et = i.useCallback(() => {
+  }, [Q]), $ = i.useCallback(() => {
     var e;
-    W(e => v(y({}, e), {
+    H(e => v(y({}, e), {
       isOpen: false
-    })), null == (e = z.current) || e.focus()
-  }, []), en = i.useCallback(() => {
+    })), null == (e = W.current) || e.focus()
+  }, []), ee = i.useCallback(() => {
     var e;
-    W(e => v(y({}, e), {
+    H(e => v(y({}, e), {
       selectedItems: new Set
-    })), B(null), null == (e = z.current) || e.focus()
-  }, [B]), er = i.useCallback(e => {
+    })), U(null), null == (e = W.current) || e.focus()
+  }, [U]), et = i.useCallback(e => {
     switch (e.key) {
       case "ArrowDown":
-        e.preventDefault(), W(e => v(y({}, e), {
+        e.preventDefault(), H(e => v(y({}, e), {
           isOpen: true
         }));
         break;
       case "Escape":
-        Q && (e.preventDefault(), e.stopPropagation(), en())
+        q && T && (e.preventDefault(), e.stopPropagation(), ee())
     }
-  }, [en, Q]), ei = i.useCallback(e => null != G ? G(e) : e, [G]);
+  }, [ee, q, T]), en = i.useCallback(e => null != k ? k(e) : e, [k]);
   i.useLayoutEffect(() => {
     let e = new Set,
       t = 6,
-      n = U.map(n => {
-        let r = ei(n);
-        return t = Math.max(t, r.label.length), !Y.initialized && (null != Z || null != F) && A(r.value, null != Z ? Z : F) && e.add(r), r
+      n = M.map(n => {
+        let r = en(n);
+        return t = Math.max(t, r.label.length), !V.isInitialized && (null != G || null != B) && (0, p.tw)(r.value, null != G ? G : B) && e.add(r), r
       });
-    W(r => v(y({}, r), {
+    H(r => v(y({}, r), {
       listItems: n,
-      initialized: true,
+      isInitialized: true,
       longestLabelCharCount: t,
-      selectedItems: r.initialized ? r.selectedItems : e
+      selectedItems: r.isInitialized ? r.selectedItems : e
     }))
-  }, [U, ei]), i.useEffect(() => {
-    !$ && V && (null == Z ? W(e => v(y({}, e), {
+  }, [M, en]), i.useEffect(() => {
+    !Q && Z && (null == G ? H(e => v(y({}, e), {
       selectedItems: new Set
-    })) : W(e => v(y({}, e), {
-      selectedItems: new Set(e.listItems.filter(e => A(e.value, Z)))
+    })) : H(e => v(y({}, e), {
+      selectedItems: new Set(e.listItems.filter(e => (0, p.tw)(e.value, G)))
     })))
-  }, [Z, $, V]), i.useLayoutEffect(() => {
-    if (null == q.current) return;
-    let e = new ResizeObserver((0, s.throttle)(() => {
+  }, [G, Q, Z]), i.useLayoutEffect(() => {
+    if (null == K.current) return;
+    let e = new ResizeObserver((0, a.throttle)(() => {
       var e, n, r, i;
       let a = "",
         o = "auto";
-      if (I) a = "".concat(null != (n = null == (e = q.current) ? true : e.getBoundingClientRect().width) ? n : 0, "px");
+      if (S) a = "".concat(null != (n = null == (e = K.current) ? true : e.getBoundingClientRect().width) ? n : 0, "px");
       else {
         let e = "multiple" === t ? 1.5 : 1;
-        a = "calc((".concat(Y.longestLabelCharCount, "ch + 20px + 24px + 36px) * ").concat(e, ")")
+        a = "calc((".concat(V.longestLabelCharCount, "ch + 20px + 24px + 36px) * ").concat(e, ")")
       }
-      J && (o = (null != (i = null == (r = q.current) ? true : r.getBoundingClientRect().height) ? i : 40) * k), W(e => v(y({}, e), {
+      X && (o = (null != (i = null == (r = K.current) ? true : r.getBoundingClientRect().height) ? i : 40) * j), H(e => v(y({}, e), {
         width: a,
         dropDownHeight: o
       }))
     }, 500));
-    return e.observe(q.current), () => e.disconnect()
-  }, [I, t, k, J, Y.longestLabelCharCount]);
-  let ea = i.useCallback(e => {
-    if ($) return;
+    return e.observe(K.current), () => e.disconnect()
+  }, [S, t, j, X, V.longestLabelCharCount]);
+  let er = i.useCallback(e => {
+    if (Q) return;
     let n = Array.from(e);
-    if ("multiple" === t) {
-      if (n.length < 1) return void B(null);
-      B(new Set(n.map(e => e.value)))
-    } else {
+    if ("multiple" === t && n.length < 1) U(null);
+    else if ("multiple" === t) U(new Set(n.map(e => e.value)));
+    else {
       var r, i;
-      B(null != (i = null == (r = n[0]) ? true : r.value) ? i : null)
+      U(null != (i = null == (r = n[0]) ? true : r.value) ? i : null)
     }
-    X && Y.isOpen && et(), W(t => v(y({}, t), {
+    z && V.isOpen && $(), H(t => v(y({}, t), {
       selectedItems: e
     }))
-  }, [$, t, B, X, et, Y.isOpen]);
+  }, [Q, t, U, z, $, V.isOpen]);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)(f.U, {
-      ref: q,
-      containerClassName: o()(g.selectFieldContainer, {
-        [g.fullWidth]: I
-      }),
-      className: o()(g.selectField, {
-        [g.isFocused]: Y.isOpen,
-        [g.isInert]: $
-      }),
-      style: I ? true : {
-        width: "min(".concat(Y.width, ", 100%)")
-      },
-      disabled: a,
-      readOnly: l,
-      fullWidth: I,
-      children: [(0, r.jsx)(d.tEY, {
-        ringTarget: q,
+    children: [(0, r.jsx)(_.q, {
+      ref: K,
+      disabled: E,
+      readOnly: b,
+      loading: O,
+      clearable: T,
+      fullWidth: S,
+      isOpen: V.isOpen,
+      isInert: Q,
+      hasValue: q,
+      width: V.width,
+      handleToggle: J,
+      handleClear: ee,
+      children: (0, r.jsx)(c.tEY, {
+        ringTarget: K,
         children: (0, r.jsxs)("button", {
-          ref: z,
-          autoFocus: b,
+          id: n,
+          ref: W,
+          autoFocus: I,
           className: g.selectButton,
-          onClick: ee,
-          onKeyDown: er,
-          disabled: a || l,
-          "aria-expanded": Y.isOpen,
-          "aria-busy": E,
+          onClick: J,
+          onKeyDown: et,
+          disabled: E || b,
+          "aria-expanded": V.isOpen,
+          "aria-busy": O,
           "aria-haspopup": "listbox",
-          "aria-controls": H,
-          "aria-describedby": "".concat(null == K ? true : K.describedById),
-          "aria-errormessage": null == K ? true : K.errorMessageId,
-          "aria-invalid": (null == K ? true : K.errorMessageId) != null,
-          children: [(0, r.jsxs)(u.n, {
-            children: [N, ", "]
-          }), (0, r.jsx)(R, {
-            placeholder: C,
-            selectedItems: Y.selectedItems
+          "aria-controls": F,
+          "aria-describedby": "".concat(null == Y ? true : Y.describedById),
+          "aria-errormessage": null == Y ? true : Y.errorMessageId,
+          "aria-invalid": (null == Y ? true : Y.errorMessageId) != null,
+          children: [(0, r.jsxs)(l.n, {
+            children: [w, ", "]
+          }), (0, r.jsx)(C, {
+            placeholder: P,
+            selectedItems: V.selectedItems
           })]
         })
-      }), (0, r.jsx)(w, {
-        show: true === O && !$ && Q,
-        onClick: en
-      }), (0, r.jsx)(D, {
-        isOpen: Y.isOpen,
-        loading: E,
-        onClick: ee
-      })]
-    }), (0, r.jsx)(L, {
-      name: x,
-      form: j,
-      disabled: $,
-      autoComplete: M,
+      })
+    }), (0, r.jsx)(f.M, {
+      name: D,
+      form: L,
+      disabled: Q,
+      autoComplete: x,
       selectionMode: t,
-      selectedItems: Y.selectedItems,
-      onSelectionChange: ea,
-      listItems: Y.listItems
-    }), !$ && (0, r.jsx)(_.L, {
-      targetElementRef: z,
-      isOpen: Y.isOpen,
-      onRequestClose: et,
-      width: Y.width,
-      height: Y.dropDownHeight,
-      children: (0, r.jsx)(p.w, {
-        id: H,
-        required: n,
-        items: Y.listItems,
+      selectedItems: V.selectedItems,
+      onSelectionChange: er,
+      listItems: V.listItems
+    }), !Q && (0, r.jsx)(u.L, {
+      targetElementRef: W,
+      isOpen: V.isOpen,
+      onRequestClose: $,
+      width: V.width,
+      height: V.dropDownHeight,
+      children: (0, r.jsx)(d.w, {
+        id: F,
+        required: o,
+        items: V.listItems,
         selectionMode: t,
-        selectedItems: Y.selectedItems,
-        onSelectionChange: ea,
-        shouldFocusWrap: S,
-        renderListItem: e => (0, r.jsx)(P, {
+        selectedItems: V.selectedItems,
+        onSelectionChange: er,
+        shouldFocusWrap: R,
+        renderListItem: e => (0, r.jsx)(N, {
           item: e
         })
       })
@@ -297,14 +283,14 @@ function N(e) {
   })
 }
 
-function R(e) {
+function C(e) {
   let {
     placeholder: t,
     selectedItems: n
   } = e;
   if (null == n || 0 === n.size) return (0, r.jsx)("div", {
     className: g.placeholder,
-    children: (0, r.jsx)(d.xvT, {
+    children: (0, r.jsx)(c.xvT, {
       variant: "text-md/normal",
       color: "currentColor",
       lineClamp: 1,
@@ -314,110 +300,27 @@ function R(e) {
   let i = Array.from(n);
   return i.length > 1 ? (0, r.jsx)("div", {
     className: g.multipleValues,
-    children: (0, r.jsx)(d.xvT, {
+    children: (0, r.jsx)(c.xvT, {
       variant: "text-md/normal",
       color: "currentColor",
       lineClamp: 1,
       children: i.map(e => e.label).join(", ")
     })
-  }) : (0, r.jsx)(P, {
+  }) : (0, r.jsx)(N, {
     item: i[0]
   })
 }
 
-function P(e) {
+function N(e) {
   let {
     item: t
   } = e;
   return (0, r.jsx)("div", {
     className: E.listBoxItemContent,
-    children: (0, r.jsx)(d.xvT, {
+    children: (0, r.jsx)(c.xvT, {
       variant: "text-md/medium",
       color: "currentColor",
       children: t.label
-    })
-  })
-}
-
-function w(e) {
-  let {
-    show: t,
-    onClick: n
-  } = e;
-  return t ? (0, r.jsx)(d.tEY, {
-    children: (0, r.jsx)("button", {
-      className: g.clearButton,
-      "aria-label": m.intl.string(h.default.JA5C7O),
-      onClick: n,
-      children: (0, r.jsx)(d.k$p, {
-        size: "xs",
-        color: "currentColor"
-      })
-    })
-  }) : (0, r.jsx)("span", {})
-}
-
-function D(e) {
-  let {
-    isOpen: t,
-    loading: n,
-    onClick: i
-  } = e;
-  return (0, r.jsx)("button", {
-    "aria-hidden": true,
-    tabIndex: false,
-    className: g.chevronButton,
-    onClick: i,
-    children: n ? (0, r.jsx)(d.$jN, {
-      type: d.RAz.PULSING_ELLIPSIS
-    }) : (0, r.jsx)("span", {
-      className: o()(g.chevronIcon, {
-        [g.isOpen]: t
-      }),
-      children: (0, r.jsx)(d.hic, {
-        size: "refresh_sm",
-        color: "currentColor"
-      })
-    })
-  })
-}
-
-function L(e) {
-  let {
-    name: t,
-    form: n,
-    disabled: i,
-    autoComplete: a,
-    selectionMode: o,
-    selectedItems: s,
-    onSelectionChange: l,
-    listItems: c
-  } = e;
-  if (null == t && (null == a || "off" === a)) return null;
-
-  function d(e) {
-    let t = Array.from(e.target.selectedOptions).map(e => e.dataset.id);
-    l(new Set(c.filter(e => t.includes(e.id))))
-  }
-  return (0, r.jsx)(u.n, {
-    children: (0, r.jsx)("select", {
-      "aria-hidden": true,
-      tabIndex: false,
-      disabled: i,
-      name: t,
-      form: n,
-      multiple: "multiple" === o,
-      autoComplete: a,
-      onChange: d,
-      children: null == c ? true : c.map(e => {
-        let t = "object" == typeof e.value ? JSON.stringify(e.value) : String(e.value);
-        return (0, r.jsx)("option", {
-          "data-id": e.id,
-          value: t,
-          selected: s.has(e),
-          children: e.label
-        }, e.id)
-      })
     })
   })
 }

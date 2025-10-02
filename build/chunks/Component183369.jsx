@@ -76,7 +76,7 @@ function x(e) {
         setTimeout(() => e(true), b.cF)
       });
       Promise.all([null != R ? (0, v.EY)(N.id, R.entitlementId, A, $) : (0, v.NE)(N.id, A, $, Q), e]).then(() => {
-        C(), (0, g.Z)(N.id, M)
+        C(), (0, g.Z)(N.id, M, null == R ? "created" : "updated")
       }).catch(e => {
         var t, n;
         L(null != (n = null == (t = e.body) ? true : t.message) ? n : e.message)

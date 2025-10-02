@@ -197,6 +197,7 @@ class E extends Chunk839548.Z {
   setHardwareH264(e) {}
   setSoftwareH264(e) {}
   setQoS(e) {}
+  setSoundshareDiscardRearChannels(e) {}
   isAttenuating() {
     returnfalse
   }

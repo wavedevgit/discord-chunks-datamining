@@ -422,6 +422,11 @@ class L extends Chunk839548.Z {
       qos: this.qos
     })
   }
+  setSoundshareDiscardRearChannels(e) {
+    this.conn.setTransportOptions({
+      soundshareDiscardRearChannels: e
+    })
+  }
   setInputMode(e, t) {
     switch (this.inputMode = e, e) {
       case v.pM.PUSH_TO_TALK:

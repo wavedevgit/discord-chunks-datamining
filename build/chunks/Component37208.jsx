@@ -18,8 +18,9 @@ var Chunk951288 = require("./951288.js"),
 function b(e) {
   var {
     portkeyGame: t,
-    guildId: n
-  } = e, b = function(e, t) {
+    guildId: n,
+    status: b
+  } = e, m = function(e, t) {
     if (null == e) return {};
     var n, r, a = function(e, t) {
       if (null == e) return {};
@@ -33,8 +34,8 @@ function b(e) {
       for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n])
     }
     return a
-  }(e, ["portkeyGame", "guildId"]);
-  let m = (0, c.Z)(t.gameId, "cover");
+  }(e, ["portkeyGame", "guildId", "status"]);
+  let g = (0, c.Z)(t.gameId, "cover");
   return (0, r.jsx)(i.default, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -53,7 +54,7 @@ function b(e) {
     }
     return e
   }({
-    title: f.intl.string(u.default.hcBOZW),
+    title: f.intl.string("created" === b ? u.default.hcBOZW : u.default.mFefx8),
     description: f.intl.formatToPlainString(u.default.KCgZMj, {
       provider: "Portkey"
     }),
@@ -62,7 +63,7 @@ function b(e) {
       children: (0, r.jsx)("img", {
         className: d.image,
         alt: "",
-        src: null != m ? m : ""
+        src: null != g ? g : ""
       })
     }),
     button: (0, r.jsx)("div", {
@@ -72,9 +73,9 @@ function b(e) {
         variant: "primary",
         text: f.intl.string(u.default.AS3n8v),
         onClick: () => {
-          (0, o.uL)(l.Z5c.CHANNEL(n, s.oC.PORTKEY)), b.onClose()
+          (0, o.uL)(l.Z5c.CHANNEL(n, s.oC.PORTKEY)), m.onClose()
         }
       })
     })
-  }, b))
+  }, m))
 }
