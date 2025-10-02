@@ -184,7 +184,7 @@ function ef(e) {
         children: (0, r.jsx)(ep, {
           onLoadComplete: t
         })
-      }), (0, r.jsx)(C.Z, {
+      }), (0, r.jsx)(S.Z, {
         children: (0, r.jsxs)("div", {
           className: ei.redirectNoticeContainer,
           children: [(0, r.jsx)(d.X6q, {
@@ -361,7 +361,7 @@ let eh = function(e) {
             }), (0, r.jsx)(ed, {
               onLoadComplete: ea
             })]
-          }), (0, r.jsx)(C.Z, {
+          }), (0, r.jsx)(S.Z, {
             children: w === k.e5.CLAIMED ? (0, r.jsx)(el, {
               onSelectTab: L
             }) : w === k.e5.PREVIEW_TOOL ? (0, r.jsx)(V.Z, {}) : (0, r.jsx)(q.Z, {})
@@ -402,10 +402,10 @@ let eh = function(e) {
               }), (0, r.jsx)(ed, {
                 onLoadComplete: ea
               })]
-            }), (0, r.jsxs)(C.Z, {
+            }), (0, r.jsxs)(S.Z, {
               children: [(0, r.jsx)("div", {
                 className: ei.tabs,
-                children: (0, r.jsx)(S.Z, {
+                children: (0, r.jsx)(C.Z, {
                   tabs: D,
                   selectedTab: w,
                   onTabSelect: L

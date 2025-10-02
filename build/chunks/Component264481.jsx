@@ -1,9 +1,9 @@
 /** Chunk was on 56848 **/
 /** chunk id: 264481, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  P9: () => x,
+  P9: () => I,
   Uf: () => E,
-  b0: () => I,
+  b0: () => x,
   s_: () => P
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -38,11 +38,11 @@ function S(e) {
     className: v.empty,
     children: [(0, n.jsxs)("div", {
       className: v.textContainer,
-      children: [(0, n.jsx)(l.X6q, {
+      children: [(0, n.jsx)(a.X6q, {
         variant: "heading-md/medium",
         color: "header-primary",
         children: t
-      }), (0, n.jsx)(l.Text, {
+      }), (0, n.jsx)(a.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
         children: r
@@ -63,7 +63,7 @@ function P() {
   })
 }
 
-function I() {
+function x() {
   let e = Chunk388032.intl.string(Chunk388032.t.bFgqYG),
     [t] = Chunk647438.useState(() => {
       var e;
@@ -75,7 +75,7 @@ function I() {
   })
 }
 
-function x(e) {
+function I(e) {
   let {
     user: t,
     guildId: r,
@@ -85,7 +85,7 @@ function x(e) {
     name: u
   }), [f] = i.useState(() => {
     var e;
-    return (null != (e = (0, a.sample)(O)) ? e : O[0])(u)
+    return (null != (e = (0, l.sample)(O)) ? e : O[0])(u)
   }), p = i.useCallback(() => {
     s.Z.openPrivateChannel({
       recipientIds: t.id
@@ -97,7 +97,7 @@ function x(e) {
     children: (0, n.jsx)("div", {
       className: v.buttonRow,
       children: (0, n.jsx)(h.O1, {
-        icon: l.kBi,
+        icon: a.kBi,
         text: m.intl.string(m.t["g33r/P"]),
         onClick: p
       })
@@ -112,9 +112,9 @@ function w() {
     children: j.map((t, r) => {
       let i = c.Z.get(t);
       if (null == i) return null;
-      let a = (0, l.wjy)(e) ? i.icon.darkPNG : i.icon.lightPNG;
+      let l = (0, a.wjy)(e) ? i.icon.darkPNG : i.icon.lightPNG;
       return (0, n.jsx)("img", {
-        src: a,
+        src: l,
         alt: i.name,
         className: v.connectionIcon
       }, r)
@@ -125,7 +125,7 @@ function w() {
 function E(e) {
   let {
     onClose: t
-  } = e, a = (0, u.P6)("UserProfileModalV2EmptyActivityCurrentUser"), s = i.useCallback(() => {
+  } = e, l = (0, u.P6)("UserProfileModalV2EmptyActivityCurrentUser"), s = i.useCallback(() => {
     null == t || t(), (0, f.openUserSettings)(d.n.CONNECTIONS_PANEL, {
       section: p.oAB.CONNECTIONS
     })
@@ -135,7 +135,7 @@ function E(e) {
       subsection: "CONNECTED_GAMES"
     })
   }, [t]), c = i.useCallback(() => {
-    (0, l.ZDy)(async () => {
+    (0, a.ZDy)(async () => {
       let {
         default: e
       } = await r.e("82077").then(r.bind(r, 953848));
@@ -171,9 +171,9 @@ function E(e) {
         text: m.intl.string(m.t.GTCx0t),
         onClick: o
       })]
-    }), a && (0, n.jsx)("div", {
+    }), l && (0, n.jsx)("div", {
       className: v.reportMissingActivity,
-      children: (0, n.jsx)(l.Avr, {
+      children: (0, n.jsx)(a.Avr, {
         text: m.intl.string(m.t["+huUnJ"]),
         onClick: c,
         size: "sm"

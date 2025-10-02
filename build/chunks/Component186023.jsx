@@ -1,4 +1,4 @@
-/** Chunk was on 15926 **/
+/** Chunk was on 60149 **/
 /** chunk id: 186023, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => h
@@ -29,10 +29,10 @@ let h = e => {
     isAuthenticated: y = true
   } = e, O = (0, c.Dt)(), {
     nodes: C,
-    root_node_id: Z,
-    success_node_id: I,
+    root_node_id: I,
+    success_node_id: Z,
     fail_node_id: S
-  } = n, [T, P] = i.useState(Z), [N, E] = i.useState(true), [k, w] = i.useState(true), [D, R] = i.useState([]), [M, A] = i.useState(true), [B, L] = i.useState(true), U = (0, _.PO)("in_app_report_modal");
+  } = n, [T, P] = i.useState(I), [N, E] = i.useState(true), [k, w] = i.useState(true), [D, R] = i.useState([]), [M, A] = i.useState(true), [B, L] = i.useState(true), U = (0, _.PO)("in_app_report_modal");
   (0, o.ZP)(() => {
     U && (0, u.k0)()
   });
@@ -95,7 +95,7 @@ let h = e => {
       if (D.length < 1) return;
       let r = [...D],
         i = r.pop(),
-        l = null != (n = null == i ? true : i.nodeRef) ? n : Z;
+        l = null != (n = null == i ? true : i.nodeRef) ? n : I;
       if (t.name === m.b.MESSAGE || t.name === m.b.FIRST_DM) {
         let e = t.record.id;
         s.ZP.trackWithMetadata(f.rMx.IAR_NAVIGATE, {
@@ -113,7 +113,7 @@ let h = e => {
       for (let l in C) {
         var n, r, i;
         let a = C[l];
-        if (a.id !== I && a.id !== S && a.id !== Z) {
+        if (a.id !== Z && a.id !== S && a.id !== I) {
           if (a.key.endsWith("_SUBMIT") || (null == (n = a.button) ? true : n.type) === "submit") {
             t.push(a);
             continue
@@ -125,8 +125,8 @@ let h = e => {
           }
         }
       }
-      return [C[Z], ...e, ...t, C[I], C[S]]
-    }, [C, Z, S, I]);
+      return [C[I], ...e, ...t, C[Z], C[S]]
+    }, [C, I, S, Z]);
   return (0, r.jsx)(a.Y0X, {
     "data-migration-pending": true,
     transitionState: h.transitionState,
@@ -150,7 +150,7 @@ let h = e => {
             onNavigateBack: z,
             multiSelect: N,
             textInput: k,
-            successNodeId: I,
+            successNodeId: Z,
             failNodeId: S,
             onSubmit: W,
             reportId: M,

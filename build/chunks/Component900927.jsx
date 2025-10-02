@@ -1,4 +1,4 @@
-/** Chunk was on 70928 **/
+/** Chunk was on 72279 **/
 /** chunk id: 900927, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -53,19 +53,19 @@ function b(e) {
     userId: t,
     guildId: n,
     textClassName: b,
-    tooltipDelay: g
-  } = e, x = (0, c.e7)([_.default], () => _.default.locale), v = (0, c.e7)([d.Z], () => null != n ? d.Z.getGuild(n) : null), C = (0, c.e7)([l.ZP], () => null != n ? l.ZP.getMember(n, t) : null), I = (0, r.FI)(s.default.extractTimestamp(t), x), y = (0, r.FI)(null == C ? true : C.joinedAt, x);
-  return null == v || null == C ? (0, o.jsx)(a.Text, {
+    tooltipDelay: x
+  } = e, g = (0, c.e7)([_.default], () => _.default.locale), v = (0, c.e7)([d.Z], () => null != n ? d.Z.getGuild(n) : null), I = (0, c.e7)([l.ZP], () => null != n ? l.ZP.getMember(n, t) : null), C = (0, r.FI)(s.default.extractTimestamp(t), g), y = (0, r.FI)(null == I ? true : I.joinedAt, g);
+  return null == v || null == I ? (0, o.jsx)(a.Text, {
     variant: "text-sm/normal",
     className: b,
-    children: I
+    children: C
   }) : (0, o.jsxs)("div", {
     className: f.memberSinceWrapper,
     children: [(0, o.jsxs)("div", {
       className: f.memberSince,
       children: [(0, o.jsx)(a.ua7, {
         text: u.intl.string(u.t.uvGmCw),
-        delay: g,
+        delay: x,
         children: e => (0, o.jsx)(a.gw7, m(p({
           size: "custom",
           width: 28,
@@ -77,7 +77,7 @@ function b(e) {
       }), (0, o.jsx)(a.Text, {
         variant: "text-sm/normal",
         className: b,
-        children: I
+        children: C
       })]
     }), (0, o.jsx)("div", {
       className: f.divider
@@ -85,7 +85,7 @@ function b(e) {
       className: f.memberSince,
       children: [(0, o.jsx)(a.ua7, {
         text: v.name,
-        delay: g,
+        delay: x,
         children: e => (0, o.jsx)(i.Z, m(p({}, e), {
           guild: v,
           size: i.Z.Sizes.SMOL,

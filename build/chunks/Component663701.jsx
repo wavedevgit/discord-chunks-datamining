@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 663701, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => eC,
+  Z: () => eS,
   d: () => eI
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -393,7 +393,7 @@ let ev = Chunk647438.memo(function(e) {
         selected: null != l && l.startsWith(er.Z5c.FAMILY_CENTER) || null != b && b.startsWith(er.Z5c.FAMILY_CENTER)
       }, "family-center") : null, f ? (0, r.jsx)(B.Z, {
         selected: null == b ? null != l && l.startsWith(er.Z5c.QUEST_HOME_V2) : b === er.Z5c.QUEST_HOME_V2
-      }, "quests") : null, (0, r.jsx)(eI, {}, "section-divider-top"), (0, r.jsx)(C.Z, {}, "frequent-friends"), "full-width" === g && (0, r.jsx)(eg, {}, "create-dm")]
+      }, "quests") : null, (0, r.jsx)(eI, {}, "section-divider-top"), (0, r.jsx)(S.Z, {}, "frequent-friends"), "full-width" === g && (0, r.jsx)(eg, {}, "create-dm")]
     }))]
   })
 });
@@ -404,7 +404,7 @@ function eI() {
   })
 }
 
-function eC() {
+function eS() {
   let e = (0, Chunk442837.e7)([Chunk774343.Z], () => Chunk774343.Z.getHomeLink()),
     t = (0, Chunk442837.e7)([Chunk55563.Z], () => {
       if (module === Chunk981631.Z5c.APPLICATION_STORE) returntrue;

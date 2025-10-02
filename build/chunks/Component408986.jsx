@@ -32,28 +32,28 @@ function g(e) {
       length: 10
     }).map((e, t) => (0, n.jsxs)("div", {
       className: f.guildsLoadingItem,
-      children: [(0, n.jsx)(a.ZT, {
+      children: [(0, n.jsx)(l.ZT, {
         width: 40,
         opacity: .08
-      }), (0, n.jsx)(a.ZT, {
+      }), (0, n.jsx)(l.ZT, {
         width: 135,
         opacity: .08
       })]
     }, t)) : (null != h || p) && (null == h ? true : h.length) !== 0 ? null == h ? true : h.map(e => {
       let {
-        guild: a,
+        guild: l,
         nick: s
       } = e;
       return (0, n.jsx)(c.Z, {
         user: t,
-        guild: a,
+        guild: l,
         nick: s,
         onSelect: () => {
           g({
             action: "PRESS_MUTUAL_GUILD"
-          }), (0, l.X)(a.id), r(), (0, i.xf)()
+          }), (0, a.X)(l.id), r(), (0, i.xf)()
         }
-      }, a.id)
+      }, l.id)
     }) : (0, n.jsx)(u.b0, {})
   })
 }

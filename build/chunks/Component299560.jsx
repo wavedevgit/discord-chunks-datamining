@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk296009 = require("./296009.js"),
   Chunk481060 = require("./481060.js"),
   Chunk812206 = require("./812206.js"),
@@ -66,14 +66,14 @@ function j(e) {
   var t;
   let {
     widgetType: r,
-    onAddWidget: a,
+    onAddWidget: l,
     size: c = "default",
     loading: u = false,
     trackUserProfileEditAction: b
   } = e, {
     placeholder: j,
     getAriaLabel: S
-  } = O[r], P = "small" === c, I = null == (t = (0, d.uV)().data) ? true : t.map(e => e.application_id), x = i.useMemo(() => {
+  } = O[r], P = "small" === c, x = null == (t = (0, d.uV)().data) ? true : t.map(e => e.application_id), I = i.useMemo(() => {
     switch (r) {
       case s.l.CURRENT_GAMES:
       case s.l.FAVORITE_GAMES:
@@ -84,23 +84,23 @@ function j(e) {
           games: []
         });
       case s.l.APPLICATION:
-        let e = null == I ? true : I[0];
+        let e = null == x ? true : x[0];
         if (null == e) return null;
         return new f.q({
           type: r,
           applicationId: e
         })
     }
-  }, [r, I]), w = i.useCallback(() => {
-    u || null == x || ((0, h.qH)(r, x), b({
+  }, [r, x]), w = i.useCallback(() => {
+    u || null == I || ((0, h.qH)(r, I), b({
       action: "WIDGET_ADDED",
       widgetEdited: r
-    }), (0, p.L$)(v.qb.WIDGET_ADDED), null == a || a())
-  }, [u, r, x, b, a]);
-  return null == x ? null : (0, n.jsxs)(o.P3F, {
-    className: l()(y.addButtonContainer, P && y.sizeSmall, u && y.loading),
+    }), (0, p.L$)(v.qb.WIDGET_ADDED), null == l || l())
+  }, [u, r, I, b, l]);
+  return null == I ? null : (0, n.jsxs)(o.P3F, {
+    className: a()(y.addButtonContainer, P && y.sizeSmall, u && y.loading),
     onClick: w,
-    "aria-label": S(x),
+    "aria-label": S(I),
     "aria-busy": u,
     children: ["details" === j.variant ? (0, n.jsx)(m.i, {
       applicationId: j.applicationId,
@@ -117,7 +117,7 @@ function j(e) {
       }), (0, n.jsx)(o.Text, {
         variant: "text-md/medium",
         color: "header-primary",
-        children: (0, h.mR)(x)
+        children: (0, h.mR)(I)
       })]
     })]
   })

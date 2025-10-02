@@ -28,13 +28,13 @@ function E(e) {
     "data-jump-section": l
   } = e, E = (0, o.e7)([g.default], () => g.default.getCurrentUser()), y = i.useRef(null), v = (0, o.e7)([h.ZP], () => (null == E ? true : E.id) != null && h.ZP.getMentionCount(E.id, b.W.NOTIFICATION_CENTER) > 0), {
     titlebarIconSize: I,
-    titlebarHoverHighlight: C
+    titlebarHoverHighlight: S
   } = (0, p.T)({
     location: "RecentsButton"
-  }), S = "sm" === I ? "refresh_sm" : "md", T = i.useMemo(() => (0, r.jsx)(u.xx7, {
-    size: S,
+  }), C = "sm" === I ? "refresh_sm" : "md", T = i.useMemo(() => (0, r.jsx)(u.xx7, {
+    size: C,
     color: "currentColor"
-  }), [S]);
+  }), [C]);
   return (0, r.jsx)(m.k, {
     targetElementRef: y,
     onOpen: t,
@@ -75,17 +75,17 @@ function E(e) {
             "data-jump-section": l,
             "aria-label": _.intl.string(_.t.GSmTKC),
             className: a()(O.clickable, {
-              [O.withHighlight]: C
+              [O.withHighlight]: S
             }),
             children: v || i ? (0, r.jsxs)(r.Fragment, {
               children: [(0, r.jsx)(d.ZP, {
                 mask: d.ZP.Masks.HEADER_BAR_BADGE_BOTTOM,
-                height: s.Z[S],
-                width: s.Z[S],
+                height: s.Z[C],
+                width: s.Z[C],
                 children: T
               }), (0, r.jsx)("span", {
                 className: a()(O.badge, {
-                  [O.smol]: "refresh_sm" === S
+                  [O.smol]: "refresh_sm" === C
                 })
               })]
             }) : T

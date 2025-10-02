@@ -121,7 +121,7 @@ function x(e) {
     L || D(!R)
   }, [L, R]);
   return (0, E.yp)({
-    event: C.CkL.TOGGLE_SOUNDBOARD,
+    event: S.CkL.TOGGLE_SOUNDBOARD,
     handler: Y
   }), (0, r.jsx)(h.Gt, {
     value: B,
@@ -163,7 +163,7 @@ function x(e) {
             disabled: L,
             onClick: () => {
               var t;
-              null != U && U !== s.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && G(S.L.UNKNOWN), null == e || null == (t = e.onClick) || t.call(e), D(!R), z(), (0, g.v)(H, g.d.SOUNDBOARD)
+              null != U && U !== s.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && G(C.L.UNKNOWN), null == e || null == (t = e.onClick) || t.call(e), D(!R), z(), (0, g.v)(H, g.d.SOUNDBOARD)
             },
             onMouseEnter: t => {
               var n, r;

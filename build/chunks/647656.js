@@ -92,11 +92,11 @@ let _ = ["1402418171662569542"],
         O.application_id = v;
         let I = a.transport === m.He.POST_MESSAGE;
         O.platform = I ? b.M7m.EMBEDDED : b.M7m.DESKTOP;
-        let C = c.Z.getApplication(null != v ? v : true),
-          S = null != (r = O.instance) && r,
+        let S = c.Z.getApplication(null != v ? v : true),
+          C = null != (r = O.instance) && r,
           T = null == (t = O.party) ? true : t.privacy;
         delete O.instance, null == (n = O.party) || delete n.privacy;
-        let N = (0, s.S)(O, S, I, null != C && (0, u.g)(C) && I, T);
+        let N = (0, s.S)(O, C, I, null != S && (0, u.g)(S) && I, T);
         N > 0 && (O.flags = N);
         let {
           assets: j,

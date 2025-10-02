@@ -30,8 +30,8 @@ let g = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
       undismissable: y,
       onDismissed: v,
       onClick: I,
-      cta: C,
-      ctaColor: S,
+      cta: S,
+      ctaColor: C,
       centerText: T,
       className: N
     } = e;
@@ -42,7 +42,7 @@ let g = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
       })
     }, [t.id, m]);
     let j = null;
-    "function" == typeof C ? j = C() : null != C && (j = (0, r.jsx)(s.zx, {
+    "function" == typeof S ? j = S() : null != S && (j = (0, r.jsx)(s.zx, {
       className: h.button,
       size: s.zx.Sizes.SMALL,
       onClick: () => {
@@ -53,8 +53,8 @@ let g = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
         }), null == I || I()
       },
       fullWidth: true,
-      color: S,
-      children: C
+      color: C,
+      children: S
     }));
     let P = null;
     "function" == typeof n ? P = n() : null != n && (P = (0, r.jsx)(c.Text, {

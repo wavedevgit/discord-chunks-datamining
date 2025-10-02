@@ -117,6 +117,12 @@ function v(e) {
       navigable: true,
       props: t.props
     }), e;
+    else if (t.type === _.m7) return e.push({
+      type: "switch",
+      key: t.props.id,
+      navigable: true,
+      props: t.props
+    }), e;
     else if (t.type === _.II) return e.push(null != t.props.control ? {
       type: "control",
       key: t.props.id,
@@ -228,6 +234,17 @@ function T(e, t, n, i) {
           menuItemProps: t.getItemProps({
             path: e,
             role: "menuitemradio"
+          })
+        }), s.key)), a++;
+        break
+      }
+      case "switch": {
+        let e = [...n, s.key];
+        c.push((0, r.jsx)(h.TO, y(E({}, s.props), {
+          isFocused: t.isFocused(e),
+          menuItemProps: t.getItemProps({
+            path: e,
+            role: "menuitemcheckbox"
           })
         }), s.key)), a++;
         break

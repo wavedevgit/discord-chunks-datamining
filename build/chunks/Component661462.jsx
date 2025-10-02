@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk785717 = require("./785717.jsx"),
   Chunk128156 = require("./128156.jsx"),
@@ -55,26 +55,26 @@ function b(e) {
     children: t,
     className: r,
     scrollerRef: i
-  } = e, a = function(e, t) {
+  } = e, l = function(e, t) {
     if (null == e) return {};
     var r, n, i = function(e, t) {
       if (null == e) return {};
       var r, n, i = {},
-        a = Object.keys(e);
-      for (n = 0; n < a.length; n++) r = a[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
+        l = Object.keys(e);
+      for (n = 0; n < l.length; n++) r = l[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
       return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var a = Object.getOwnPropertySymbols(e);
-      for (n = 0; n < a.length; n++) r = a[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
+      var l = Object.getOwnPropertySymbols(e);
+      for (n = 0; n < l.length; n++) r = l[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
     }
     return i
   }(e, ["children", "className", "scrollerRef"]);
   return (0, n.jsx)(s.Ttm, v(m({
     ref: i,
-    className: l()(p.tabPanelScroller, r),
+    className: a()(p.tabPanelScroller, r),
     fade: true
-  }, a), {
+  }, l), {
     children: t
   }))
 }
@@ -84,8 +84,8 @@ function y(e) {
     user: t,
     currentUser: r,
     section: i,
-    subsection: a,
-    displayProfile: l,
+    subsection: l,
+    displayProfile: a,
     guildId: s,
     channelId: o,
     onClose: p
@@ -93,10 +93,10 @@ function y(e) {
   return i === h.oh.ACTIVITY ? (0, n.jsx)(c.Z, {
     user: t,
     currentUser: r,
-    displayProfile: l,
+    displayProfile: a,
     guildId: s,
     channelId: o,
-    subsection: a,
+    subsection: l,
     onClose: p
   }) : i === h.oh.MUTUAL_FRIENDS ? (0, n.jsx)(u.Z, {
     user: t,
@@ -119,8 +119,8 @@ function O(e) {
   var t;
   let {
     user: r,
-    currentUser: a,
-    displayProfile: l,
+    currentUser: l,
+    displayProfile: a,
     guildId: c,
     channelId: u,
     items: d,
@@ -180,8 +180,8 @@ function O(e) {
         }),
         children: (0, n.jsx)(y, {
           user: r,
-          currentUser: a,
-          displayProfile: l,
+          currentUser: l,
+          displayProfile: a,
           guildId: c,
           channelId: u,
           section: O,

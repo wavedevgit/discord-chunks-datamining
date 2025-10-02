@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 320149, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => C
+  Z: () => S
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -25,13 +25,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk952713 = require("./952713.js"),
   Chunk998603 = require("./998603.js");
 
-function C(e) {
+function S(e) {
   let {
     channel: t,
     baseChannelId: n
-  } = e, C = (0, O.ZP)(t), S = (0, f.K)(), T = (0, f.V)(), N = (0, l.e7)([d.Z], () => d.Z.isMessageRequest(t.id)), j = (0, l.e7)([p.Z], () => p.Z.isSpam(t.id)), P = (0, g.V)(t.id, t.getRecipientId()), x = i.useCallback(() => {
-    b.Z.closeChannelSidebar(_.uZ), N && S && (0, m.Kh)(t.id), j && T && (0, m.Kh)(t.id)
-  }, [t.id, j, T, N, S]), A = i.useCallback(() => {
+  } = e, S = (0, O.ZP)(t), C = (0, f.K)(), T = (0, f.V)(), N = (0, l.e7)([d.Z], () => d.Z.isMessageRequest(t.id)), j = (0, l.e7)([p.Z], () => p.Z.isSpam(t.id)), P = (0, g.V)(t.id, t.getRecipientId()), x = i.useCallback(() => {
+    b.Z.closeChannelSidebar(_.uZ), N && C && (0, m.Kh)(t.id), j && T && (0, m.Kh)(t.id)
+  }, [t.id, j, T, N, C]), A = i.useCallback(() => {
     (0, o.showToast)((0, o.createToast)(y.intl.string(y.t.pIQ3h4), o.ToastType.FAILURE))
   }, []), {
     markAsNotSpam: Z
@@ -51,7 +51,7 @@ function C(e) {
       "aria-label": y.intl.string(y.t.BIYAqa),
       children: (0, u.ud)({
         channel: t,
-        channelName: C,
+        channelName: S,
         inSidebar: true
       })
     }), j && (0, r.jsxs)("div", {

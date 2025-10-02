@@ -218,7 +218,7 @@ let ea = [14, 14, 12, 12, 10, 8, 6],
       name: a
     } = t, {
       data: o
-    } = (0, j.IX)(l), s = (0, C.Z)({
+    } = (0, j.IX)(l), s = (0, S.Z)({
       application: o,
       analyticsLocations: n
     }), c = (0, R.Nj)(u.z.CLOUD_PLAY_NEW_BADGE), d = (0, G.F)(l);
@@ -441,7 +441,7 @@ eO.Header = e_, eO.Body = e => {
     activity: a
   } = e, {
     analyticsLocations: o
-  } = (0, T.ZP)(S.Z.NOW_PLAYING_ITEM_GAME_SECTION);
+  } = (0, T.ZP)(C.Z.NOW_PLAYING_ITEM_GAME_SECTION);
   return (0, i.jsxs)(eu, {
     children: [(0, i.jsxs)("div", {
       className: er.gameSection,
@@ -470,7 +470,7 @@ eO.Header = e_, eO.Body = e => {
     user: s
   } = e, {
     analyticsLocations: c
-  } = (0, T.ZP)(S.Z.NOW_PLAYING_ITEM_RICH_PRESENCE_SECTION), {
+  } = (0, T.ZP)(C.Z.NOW_PLAYING_ITEM_RICH_PRESENCE_SECTION), {
     assets: u,
     details: d,
     state: p,

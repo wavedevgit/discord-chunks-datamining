@@ -131,11 +131,11 @@ let k = e => {
           analyticsLocations: O
         })
       }, [_, O, o, y, s]),
-      C = x.Z5c.COLLECTIBLES_SHOP;
+      S = x.Z5c.COLLECTIBLES_SHOP;
     return (0, r.jsxs)(r.Fragment, {
       children: [E && (0, r.jsx)(M, {}), (0, r.jsx)(d.Qj, R(L({
         selected: t,
-        route: C,
+        route: S,
         icon: null != a ? a : c.EOn,
         text: Z.intl.string(Z.t.pWG4zc),
         locationState: n
@@ -186,8 +186,8 @@ let k = e => {
     var l, o, u, d, h, g, m, b, _, O, E, v, {
         displayOptions: I
       } = e,
-      C = D(e, ["displayOptions"]);
-    let S = (0, a.e7)([f.Z], () => f.Z.useReducedMotion),
+      S = D(e, ["displayOptions"]);
+    let C = (0, a.e7)([f.Z], () => f.Z.useReducedMotion),
       [T, N] = i.useState(0),
       [j, P] = i.useState(false),
       x = (0, p.ZP)(),
@@ -204,7 +204,7 @@ let k = e => {
       text: (0, r.jsx)(B, {
         displayOptions: I,
         assetId: I.assetIds[T],
-        reducedMotion: S
+        reducedMotion: C
       }),
       tooltipClassName: w.marketingBadgeTooltip,
       position: "right",
@@ -214,7 +214,7 @@ let k = e => {
       "aria-label": "string" == typeof H ? H : Z.intl.string(Z.t.rSXaxc),
       children: e => (0, r.jsxs)(U, R(L(R(L({
         className: null != I.entryPointClassName ? (0, y.l)(w, I.entryPointClassName) : true
-      }, C), {
+      }, S), {
         icon: I.entryPointIcon
       }), e), {
         onMouseEnter: () => M(e.onMouseEnter),
@@ -294,7 +294,7 @@ let k = e => {
             "aria-hidden": true
           })
         }), (0, r.jsx)(k, {})]
-      })), (0, r.jsx)(C.Z, {
+      })), (0, r.jsx)(S.Z, {
         displayOptions: l,
         targetElementRef: c,
         onClick: () => a(A.L.TAKE_ACTION),
@@ -311,7 +311,7 @@ let k = e => {
       children: [(0, r.jsx)(U, R(L({}, n), {
         onClick: () => t(A.L.TAKE_ACTION),
         listItemRef: l
-      })), (0, r.jsx)(S.Z, {
+      })), (0, r.jsx)(C.Z, {
         targetElementRef: l,
         onClick: () => t(A.L.TAKE_ACTION),
         onRequestClose: () => t(A.L.USER_DISMISS)

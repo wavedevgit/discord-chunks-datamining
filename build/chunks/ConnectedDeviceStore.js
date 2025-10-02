@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 34828, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  X: () => C,
+  X: () => S,
   Z: () => N
 }), require("./35282.js");
 var r, Chunk392711 = require("./392711.js"),
@@ -41,7 +41,7 @@ let g = {
   },
   I = /\(([^)]+)\)/;
 
-function C(e) {
+function S(e) {
   if ((0, d.getPlatform)() === d.PlatformTypes.WINDOWS) {
     let t = e.name.match(I);
     if (null != t) return t[1]
@@ -49,7 +49,7 @@ function C(e) {
   return e.name
 }
 
-function S(e, t, n) {
+function C(e, t, n) {
   return null == e || e.displayName !== t ? {
     displayName: t,
     type: n
@@ -120,7 +120,7 @@ let N = new T(Chunk570140.Z, {
       outputDevices: n
     } = e, r = {};
     y.justChanged = false, t.forEach(e => {
-      if (r[C(e)] = e.id, e.id === f.w5) {
+      if (r[S(e)] = e.id, e.id === f.w5) {
         var t;
         let n = null != (t = e.originalId) ? t : e.originalName;
         n !== y.id && (y.justChanged = true), y.id = n
@@ -128,7 +128,7 @@ let N = new T(Chunk570140.Z, {
     });
     let i = {};
     if (v.justChanged = false, n.forEach(e => {
-        if (i[C(e)] = e.id, e.id === f.w5) {
+        if (i[S(e)] = e.id, e.id === f.w5) {
           var t;
           let n = null != (t = e.originalId) ? t : e.originalName;
           n !== v.id && (v.justChanged = true), v.id = n
@@ -144,9 +144,9 @@ let N = new T(Chunk570140.Z, {
       u = l().difference(a, o),
       d = l().difference(s, c);
     return u.length > 0 || d.length > 0 ? E = {} : (l().difference(o, a).forEach(e => {
-      E[e] = S(E[e], e, p.Q.INPUT)
+      E[e] = C(E[e], e, p.Q.INPUT)
     }), l().difference(c, s).forEach(e => {
-      E[e] = S(E[e], e, p.Q.OUTPUT)
+      E[e] = C(E[e], e, p.Q.OUTPUT)
     })), !(l().isEqual(a, o) && l().isEqual(s, c)) && (_ = r, O = i, true)
   },
   CONNECTED_DEVICE_SWITCH: function(e) {
