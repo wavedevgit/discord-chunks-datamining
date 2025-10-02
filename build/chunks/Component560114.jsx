@@ -481,11 +481,12 @@ class ev extends(l = Chunk647438.PureComponent) {
       inviteChannel: t,
       guild: n,
       showFriends: l,
-      isFriendsInVCInvitesEnabled: s
+      isFriendsInVCInvitesEnabled: s,
+      sections: r
     } = this.props;
     return (0, Chunk951288.jsx)("div", {
       className: a()({
-        [Chunk869306.isFriendsInVCInvitesExperiment]: Chunk647438,
+        [Chunk869306.isFriendsInVCInvitesExperiment]: Chunk647438 && null != Chunk120356,
         [Chunk869306.wrapper]: l
       }),
       children: (0, Chunk951288.jsx)(Chunk481060.Y0X, {
