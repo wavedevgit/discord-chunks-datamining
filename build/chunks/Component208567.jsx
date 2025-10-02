@@ -83,12 +83,12 @@ class v extends(i = Chunk647438.PureComponent) {
       className: C,
       imageClassName: N,
       iconClassName: w,
-      iconWrapperClassName: S,
-      icon: P,
+      iconWrapperClassName: P,
+      icon: S,
       hideSize: I,
       imageStyle: Z,
-      showRemoveButton: T,
-      maxFileSizeBytes: E,
+      showRemoveButton: E,
+      maxFileSizeBytes: T,
       onFileSizeError: k,
       onOpenImageSelectModal: A,
       "aria-label": D
@@ -107,7 +107,7 @@ class v extends(i = Chunk647438.PureComponent) {
         }),
         children: [i, _ && (0, Chunk951288.jsx)("div", {
           className: o()(Chunk903975.imageUploaderIcon, Chunk903975.imageUploaderIconDisabled, w),
-          children: P
+          children: S
         })]
       })
     });
@@ -127,7 +127,7 @@ class v extends(i = Chunk647438.PureComponent) {
       children: [(0, Chunk951288.jsx)(Chunk481060.tEY, {
         within: true,
         children: (0, Chunk951288.jsxs)("div", {
-          className: O ? o()(Chunk903975.imageUploaderIconWrapper, S) : true,
+          className: O ? o()(Chunk903975.imageUploaderIconWrapper, P) : true,
           children: [(0, Chunk951288.jsxs)("div", {
             className: o()(Chunk903975.imageUploaderInner, N),
             style: x(h({}, Z), {
@@ -146,7 +146,7 @@ class v extends(i = Chunk647438.PureComponent) {
               className: Chunk903975.imageUploaderFileInput,
               "aria-label": R,
               tabIndex: 0,
-              maxFileSizeBytes: E,
+              maxFileSizeBytes: T,
               onFileSizeError: k
             })]
           }), null != Chunk512722 && (0, Chunk951288.jsx)("div", {
@@ -155,10 +155,10 @@ class v extends(i = Chunk647438.PureComponent) {
             children: Chunk512722
           }), O && (0, Chunk951288.jsx)(j, {
             className: w,
-            icon: P
+            icon: S
           })]
         })
-      }), T ? Chunk647438 : null]
+      }), E ? Chunk647438 : null]
     })
   }
   constructor(...e) {

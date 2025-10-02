@@ -104,19 +104,19 @@ function w(e) {
     applicationIntegration: s,
     selectableWebhookChannels: d,
     editedWebhook: w,
-    errors: S,
-    canNavigate: P
+    errors: P,
+    canNavigate: S
   } = e, {
     application: I,
     integration: Z,
-    webhooks: T
-  } = s, [E, k] = (0, a.Wu)([m.Z], () => [m.Z.can(y.Plq.MANAGE_ROLES, n), null == I.bot || m.Z.canManageUser(y.Plq.MANAGE_GUILD, I.bot.id, n)], [I.bot, n]), A = (0, a.e7)([m.Z], () => m.Z.can(y.Plq.MANAGE_WEBHOOKS, n), [n]), D = r.useCallback(() => {
-    P() && (0, o.h7j)(e => (0, i.jsx)(N, C({
+    webhooks: E
+  } = s, [T, k] = (0, a.Wu)([m.Z], () => [m.Z.can(y.Plq.MANAGE_ROLES, n), null == I.bot || m.Z.canManageUser(y.Plq.MANAGE_GUILD, I.bot.id, n)], [I.bot, n]), A = (0, a.e7)([m.Z], () => m.Z.can(y.Plq.MANAGE_WEBHOOKS, n), [n]), D = r.useCallback(() => {
+    S() && (0, o.h7j)(e => (0, i.jsx)(N, C({
       guild: n,
       application: I,
       integration: Z
     }, e)))
-  }, [I, P, n, Z]), R = r.useMemo(() => {
+  }, [I, S, n, Z]), R = r.useMemo(() => {
     let e = [{
       icon: o.T39,
       text: O.intl.formatToPlainString(O.t.gcdJ8P, {
@@ -153,9 +153,9 @@ function w(e) {
     }), (null == I ? true : I.description) != null ? (0, i.jsx)(p.Z, {
       userBio: I.description,
       className: _.headerDescription
-    }) : null, E ? (0, i.jsx)(u.Z, {
+    }) : null, T ? (0, i.jsx)(u.Z, {
       application: I,
-      canNavigate: P,
+      canNavigate: S,
       guildId: n.id
     }) : null, (0, i.jsx)(o.izJ, {
       className: _.headerDivider
@@ -176,12 +176,12 @@ function w(e) {
           color: "currentColor"
         }),
         title: O.intl.string(O.t["t9ZX/P"])
-      }), T.length > 0 ? (0, i.jsx)(v.Z, {
-        webhooks: T,
+      }), E.length > 0 ? (0, i.jsx)(v.Z, {
+        webhooks: E,
         editedWebhook: w,
         selectableWebhookChannels: d,
-        errors: S,
-        canNavigate: P
+        errors: P,
+        canNavigate: S
       }) : (0, i.jsx)(o.Zbd, {
         className: _.emptyCard,
         editable: true,

@@ -32,10 +32,12 @@ function v() {
     viewBox: "0 0 68 68",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg",
-    children: [(0, Chunk951288.jsx)("circle", {
-      cx: "33.875",
-      cy: "33.875",
-      r: "32.875",
+    children: [(0, Chunk951288.jsx)("rect", {
+      x: "4",
+      y: "4",
+      width: "60",
+      height: "60",
+      rx: "8",
       stroke: "url(#paint0_linear_1368_16544)",
       "stroke-width": "2"
     }), (0, Chunk951288.jsx)("defs", {

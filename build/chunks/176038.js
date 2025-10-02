@@ -1,9 +1,9 @@
 /** Chunk was on 8345 **/
 /** chunk id: 176038, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  _Y: () => S,
+  _Y: () => N,
   aB: () => E,
-  th: () => N,
+  th: () => S,
   ub: () => T
 }), require("./388685.js"), require("./457542.js");
 var Chunk647438 = require("./647438.js"),
@@ -60,7 +60,7 @@ async function E() {
     }
   } catch (e) {}
 }
-async function N() {
+async function S() {
   let e = Chunk1870.Z.purchases,
     t = (0, Chunk884697.Ad)(module),
     n = (0, Chunk884697.jT)(module),
@@ -81,7 +81,7 @@ async function N() {
   } catch (e) {}
 }
 
-function S() {
+function N() {
   try {
     let e = C(Chunk981631.yqN.FONT_SIZES);
     (0, Chunk857595.oL)(module);
@@ -103,9 +103,9 @@ function T() {
       y = Chunk210887.Z.theme,
       C = Chunk981631.backgroundGradientPresetId,
       E = null == Chunk74538 || null == (e = Chunk74538.avatarDecoration) ? true : module.skuId,
-      N = null == Chunk74538 || null == (n = Chunk74538.collectibles) || null == (t = require.nameplate) ? true : exports.skuId,
-      S = null != E && null != (a = Chunk959517.find(e => e.skuId === E)) ? Chunk647438 : null,
-      T = null != N && null != (r = _.find(e => e.skuId === N)) ? Chunk524437 : null,
+      S = null == Chunk74538 || null == (n = Chunk74538.collectibles) || null == (t = require.nameplate) ? true : exports.skuId,
+      N = null != E && null != (a = Chunk959517.find(e => e.skuId === E)) ? Chunk647438 : null,
+      T = null != S && null != (r = _.find(e => e.skuId === S)) ? Chunk524437 : null,
       O = Chunk607070.Z.fontSize,
       P = Chunk607070.Z.messageGroupSpacing,
       k = Chunk695346.YC.getSetting();
@@ -115,7 +115,7 @@ function T() {
           theme: y,
           backgroundGradientPresetId: null != C ? C : true,
           customUserThemeSettings: true
-        }, Chunk675478.fy.INFREQUENT_USER_ACTION), (0, Chunk809206.cV)(S), (0, Chunk809206.Rx)(T);
+        }, Chunk675478.fy.INFREQUENT_USER_ACTION), (0, Chunk809206.cV)(N), (0, Chunk809206.Rx)(T);
         let e = Chunk25990.Z.getAllPending(),
           t = (0, Chunk164946.ED)(module);
         (0, Chunk809206.Mn)(exports).finally(Chunk809206.si), (0, Chunk857595.oL)(O), (0, Chunk857595.ZZ)(P), Chunk695346.YC.updateSetting(k)

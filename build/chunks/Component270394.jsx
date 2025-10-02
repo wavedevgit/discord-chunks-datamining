@@ -107,7 +107,7 @@ function z(e) {
         }), r && null != l && (0, i.jsx)(b.Text, {
           variant: "text-xs/normal",
           color: "header-secondary",
-          children: (0, _.F6)(l, k.default, E.Z, true)
+          children: (0, _.F6)(l, k.default, T.Z, true)
         })]
       })]
     }), (0, i.jsx)(N.Z, {
@@ -257,7 +257,7 @@ function q(e) {
       var t, n;
       return (null != (n = null == (t = e.inviter) ? true : t.username) ? n : "").toLowerCase()
     }).value(), [t, f]),
-    _ = (0, p.Wu)([T.Z], () => T.Z.getSortedLinkedChannelsForGuild(l.id).filter(e => null == u || e.id === u.id)),
+    _ = (0, p.Wu)([E.Z], () => E.Z.getSortedLinkedChannelsForGuild(l.id).filter(e => null == u || e.id === u.id)),
     C = r.useMemo(() => f ? [] : [...O.map(e => ({
       type: "invite",
       data: e
@@ -272,12 +272,12 @@ function q(e) {
         source: L.t4x.SETTINGS_INVITE
       })))
     },
-    [Z, E] = r.useState(62),
+    [Z, T] = r.useState(62),
     k = () => {
       let e = {
-        source: S.Zu.GUILD_SETTINGS
+        source: P.Zu.GUILD_SETTINGS
       };
-      (0, b.ZDy)(async () => t => (0, i.jsx)(P.default, G(H({}, t), {
+      (0, b.ZDy)(async () => t => (0, i.jsx)(S.default, G(H({}, t), {
         guildId: l.id,
         analyticsData: e
       })))
@@ -379,7 +379,7 @@ function q(e) {
       }, "header");
       if (2 === t) return (0, i.jsx)(R.Y, {
         hasInvites: O.length > 0,
-        setHeight: E,
+        setHeight: T,
         onShowDisableInvites: k,
         onShowInviteModal: w,
         hasInviteDisabledPermission: x,

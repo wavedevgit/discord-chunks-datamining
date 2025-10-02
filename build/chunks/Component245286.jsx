@@ -41,20 +41,20 @@ function C(e) {
   var t, {
       target: n
     } = e,
-    l = function(e, t) {
+    o = function(e, t) {
       if (null == e) return {};
-      var n, r, o = function(e, t) {
+      var n, r, l = function(e, t) {
         if (null == e) return {};
-        var n, r, o = {},
-          l = Object.keys(e);
-        for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
-        return o
+        var n, r, l = {},
+          o = Object.keys(e);
+        for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
+        return l
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var l = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
+        var o = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
       }
-      return o
+      return l
     }(e, ["target"]);
   let i = m.Z.useField("query"),
     {
@@ -62,7 +62,7 @@ function C(e) {
       directory: u
     } = (0, d.Z)(x.Z, i),
     b = (t = p.n.ACCOUNT_PANEL, null == u.entry(n) ? t : n),
-    v = o.useRef(null);
+    v = l.useRef(null);
   return (0, a.ZP)(() => {
     let e = f.Z.getSection();
     null != e && (O({
@@ -99,7 +99,7 @@ function C(e) {
       }), v.current = t)
     },
     target: b
-  }, l))
+  }, o))
 }
 
 function _() {

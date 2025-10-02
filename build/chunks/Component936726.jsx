@@ -1,7 +1,7 @@
 /** Chunk was on 98039 **/
 /** chunk id: 936726, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => S
 }), require("./35282.js"), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -58,7 +58,7 @@ function w(e, t) {
   }), e
 }
 
-function S(e, t) {
+function P(e, t) {
   return null != t && /^data:/.test(t) ? t : (0, h.ov)({
     id: e.id,
     avatar: t,
@@ -66,19 +66,19 @@ function S(e, t) {
   })
 }
 
-function P(e) {
+function S(e) {
   let {
     id: t,
     webhook: n,
     editedWebhook: l,
     channelOptions: h,
-    isExpanded: P,
+    isExpanded: S,
     isNew: I,
     errors: Z,
-    onToggleExpand: T
-  } = e, [E, k] = r.useState(false), [A] = r.useState(new s.V7);
+    onToggleExpand: E
+  } = e, [T, k] = r.useState(false), [A] = r.useState(new s.V7);
   r.useEffect(() => () => A.stop(), [A]);
-  let D = r.useMemo(() => S(n, n.avatar), [n]),
+  let D = r.useMemo(() => P(n, n.avatar), [n]),
     R = r.useCallback(() => {
       let e = "".concat((0, o.K0)(false)).concat(O.ANM.WEBHOOK_INTEGRATION(n.id, n.token));
       (0, x.JG)(e)
@@ -130,7 +130,7 @@ function P(e) {
     })
   });
   let B = null;
-  return P && null != l && (B = (0, i.jsxs)("div", {
+  return S && null != l && (B = (0, i.jsxs)("div", {
     className: C.body,
     children: [(0, i.jsx)(c.izJ, {
       className: C.topDivider
@@ -148,7 +148,7 @@ function P(e) {
                 avatar: e
               })
             },
-            makeURL: e => S(n, e),
+            makeURL: e => P(n, e),
             imageClassName: C.avatarUploaderInner,
             showIcon: true
           }), null != Z.avatar && "" !== Z.avatar ? (0, i.jsx)(c.Text, {
@@ -195,7 +195,7 @@ function P(e) {
         }), (0, i.jsxs)(m.Z, {
           children: [(0, i.jsx)(c.ua7, {
             text: _.intl.string(_.t.wwdb3t),
-            forceOpen: E,
+            forceOpen: T,
             color: c.FGA.GREEN,
             disableTooltipPointerEvents: true,
             children: e => {
@@ -253,8 +253,8 @@ function P(e) {
       direction: m.Z.Direction.VERTICAL,
       children: [(0, i.jsx)(c.P3F, {
         className: C.header,
-        "aria-expanded": P,
-        onClick: T,
+        "aria-expanded": S,
+        onClick: E,
         children: (0, i.jsxs)(m.Z, {
           align: m.Z.Align.CENTER,
           children: [(0, i.jsx)(y.Z, {
@@ -263,7 +263,7 @@ function P(e) {
             details: M
           }), (0, i.jsx)(f.Z, {
             className: C.expandIcon,
-            expanded: P,
+            expanded: S,
             "aria-hidden": true
           })]
         })

@@ -89,8 +89,8 @@ function W(e) {
     canManageWebhooks: el,
     canManageGuild: ea
   } = (0, c.cj)([_.Z], () => ({
-    canManageWebhooks: null != W && _.Z.can(E.Plq.MANAGE_WEBHOOKS, W) || null != H && _.Z.can(E.Plq.MANAGE_WEBHOOKS, H),
-    canManageGuild: null != W && null == H && _.Z.can(E.Plq.MANAGE_GUILD, W)
+    canManageWebhooks: null != W && _.Z.can(T.Plq.MANAGE_WEBHOOKS, W) || null != H && _.Z.can(T.Plq.MANAGE_WEBHOOKS, H),
+    canManageGuild: null != W && null == H && _.Z.can(T.Plq.MANAGE_GUILD, W)
   }), [W, H]), eo = (0, v.Y)(H), es = (0, g.q)(null == H || null == (t = H.linkedLobby) ? true : t.application_id), ec = (0, y.F)(null == W ? true : W.id), {
     availableTwitchIntegrations: ed,
     availableYoutubeIntegrations: eu,
@@ -112,9 +112,9 @@ function W(e) {
       showTwitchCard: false,
       showYoutubeCard: false
     };
-    let e = null == W ? true : W.features.has(E.oNc.COMMUNITY),
-      t = er.filter(e => e.type === E.ABu.TWITCH).length > 0,
-      n = er.filter(e => e.type === E.ABu.YOUTUBE).length > 0;
+    let e = null == W ? true : W.features.has(T.oNc.COMMUNITY),
+      t = er.filter(e => e.type === T.ABu.TWITCH).length > 0,
+      n = er.filter(e => e.type === T.ABu.YOUTUBE).length > 0;
     return {
       showTwitchCard: ed > 0 || !t && e,
       showYoutubeCard: eu > 0 || !n && e
@@ -128,8 +128,8 @@ function W(e) {
       } = t;
       return !!("" === (n = (n = et).trim().toLowerCase()) || i.id === n || e(n, i.name.toLowerCase()) || null != i.bot && e(n, i.bot.username.toLowerCase()))
     })
-  }, [G, ef, et]), ex = (0, c.e7)([T.Z], () => {
-    if (null != W) return eh.find(e => T.Z.canShowOverviewTooltip(W.id, e.integration.id))
+  }, [G, ef, et]), ex = (0, c.e7)([E.Z], () => {
+    if (null != W) return eh.find(e => E.Z.canShowOverviewTooltip(W.id, e.integration.id))
   }, [eh, W]), ej = r.useMemo(() => true !== ex ? [ex, ...eh.filter(e => e.integration.id !== ex.integration.id)] : eh, [eh, ex]), ev = (0, u.s9z)(u.JQI), [ey, eO] = r.useState(false), e_ = r.useRef(0), eC = () => {
     eO(true), clearTimeout(e_.current), e_.current = setTimeout(() => {
       eO(false)
@@ -147,13 +147,13 @@ function W(e) {
       return null != l.user ? a.push({
         icon: u.T39,
         text: A.intl.formatToPlainString(A.t.Nu9sam, {
-          timestamp: S.default.extractTimestamp(l.id),
-          user: P.ZP.getUserTag(l.user)
+          timestamp: P.default.extractTimestamp(l.id),
+          user: S.ZP.getUserTag(l.user)
         })
       }) : a.push({
         icon: u.T39,
         text: A.intl.formatToPlainString(A.t.gcdJ8P, {
-          timestamp: S.default.extractTimestamp(l.id)
+          timestamp: P.default.extractTimestamp(l.id)
         })
       }), (0, i.jsx)(Z.Z, {
         name: r.name,
@@ -162,10 +162,10 @@ function W(e) {
         buttonText: A.intl.string(A.t["Z/qRnJ"]),
         hasNextSection: true,
         onButtonClick: () => {
-          Q(r.id), C.default.track(E.rMx.APP_MANAGE_CTA_CLICKED, {
+          Q(r.id), C.default.track(T.rMx.APP_MANAGE_CTA_CLICKED, {
             application_id: r.id,
             guild_id: null == W ? true : W.id,
-            is_admin: null != W ? _.Z.can(E.Plq.ADMINISTRATOR, W) : true
+            is_admin: null != W ? _.Z.can(T.Plq.ADMINISTRATOR, W) : true
           })
         },
         details: a,
@@ -231,8 +231,8 @@ function W(e) {
       });
     return t > 0 ? l : a
   }(ee, ef, null == W ? true : W.id), ew = null);
-  let eS = w.Z.getArticleURL(E.BhN.INTEGRATIONS),
-    eP = null != H ? A.t.YV0vh4 : A.t.FnZEJi,
+  let eP = w.Z.getArticleURL(T.BhN.INTEGRATIONS),
+    eS = null != H ? A.t.YV0vh4 : A.t.FnZEJi,
     eI = [];
   if (el) {
     let e, t, r, a, o;
@@ -251,9 +251,9 @@ function W(e) {
           count: n
         })
       }]
-    }, "webhooks"))), (null == H ? true : H.type) === E.d4z.GUILD_VOICE || (null == H ? true : H.type) != null && E.TPd.GUILD_THREADS_ONLY.has(H.type) || eI.push((l = K.length, l > 0 ? (o = (0, i.jsx)(u.LJT, {
+    }, "webhooks"))), (null == H ? true : H.type) === T.d4z.GUILD_VOICE || (null == H ? true : H.type) != null && T.TPd.GUILD_THREADS_ONLY.has(H.type) || eI.push((l = K.length, l > 0 ? (o = (0, i.jsx)(u.LJT, {
       size: "xs"
-    }), a = X) : (r = A.intl.string(A.t["ZwSt+f"]), a = () => open(w.Z.getArticleURL(E.BhN.CHANNEL_FOLLOWING))), (0, i.jsx)(Z.Z, {
+    }), a = X) : (r = A.intl.string(A.t["ZwSt+f"]), a = () => open(w.Z.getArticleURL(T.BhN.CHANNEL_FOLLOWING))), (0, i.jsx)(Z.Z, {
       name: A.intl.string(A.t.OrV60t),
       icon: u.AsW,
       buttonText: r,
@@ -281,13 +281,13 @@ function W(e) {
       })
     }]
   }, "channels-syncing"))), eb && eI.push(function(e, t, n) {
-    let r, l, a, o, s = b.Z.get(E.ABu.TWITCH);
+    let r, l, a, o, s = b.Z.get(T.ABu.TWITCH);
     return e > 0 ? (o = (0, i.jsx)(u.LJT, {
       size: "xs"
     }), l = A.intl.formatToPlainString(A.t.FFpnT0, {
       count: t
-    }), a = () => n(E.ABu.TWITCH)) : (r = A.intl.string(A.t.bkvGkp), l = A.intl.string(A.t.Qq3X2N), a = () => (0, f.Z)({
-      platformType: E.ABu.TWITCH,
+    }), a = () => n(T.ABu.TWITCH)) : (r = A.intl.string(A.t.bkvGkp), l = A.intl.string(A.t.Qq3X2N), a = () => (0, f.Z)({
+      platformType: T.ABu.TWITCH,
       location: "Integration Settings"
     })), (0, i.jsx)(Z.Z, {
       name: A.intl.string(A.t.q4pBGx),
@@ -303,13 +303,13 @@ function W(e) {
       }]
     }, "integrations-twitch")
   }(ed, ep, J)), eg && eI.push(function(e, t, n) {
-    let r, l, a, o, s = b.Z.get(E.ABu.YOUTUBE);
+    let r, l, a, o, s = b.Z.get(T.ABu.YOUTUBE);
     return e > 0 ? (o = (0, i.jsx)(u.LJT, {
       size: "xs"
     }), l = A.intl.formatToPlainString(A.t.b2g5vL, {
       count: t
-    }), a = () => n(E.ABu.YOUTUBE)) : (r = A.intl.string(A.t.xEyQ3d), l = A.intl.string(A.t.T0ivgY), a = () => (0, f.Z)({
-      platformType: E.ABu.YOUTUBE,
+    }), a = () => n(T.ABu.YOUTUBE)) : (r = A.intl.string(A.t.xEyQ3d), l = A.intl.string(A.t.T0ivgY), a = () => (0, f.Z)({
+      platformType: T.ABu.YOUTUBE,
       location: "Integration Settings"
     })), (0, i.jsx)(Z.Z, {
       name: A.intl.string(A.t.aS6cKy),
@@ -330,8 +330,8 @@ function W(e) {
     className: a()(null != ew ? D.footerPlaceholder : null),
     children: [(0, i.jsx)(u.R94, {
       type: u.geA.DESCRIPTION,
-      children: A.intl.format(eP, {
-        helpdeskArticle: eS
+      children: A.intl.format(eS, {
+        helpdeskArticle: eP
       })
     }), (0, i.jsx)(u.izJ, {
       className: D.divider

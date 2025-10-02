@@ -4,9 +4,9 @@ require.d(exports, {
   Z: () => y
 });
 var Chunk951288 = require("./951288.js"),
+  Chunk657707 = require("./657707.js"),
   Chunk793030 = require("./793030.js"),
   Chunk692547 = require("./692547.js"),
-  Chunk73837 = require("./73837.jsx"),
   Chunk160913 = require("./160913.js"),
   Chunk813732 = require("./813732.jsx"),
   Chunk509613 = require("./509613.js"),
@@ -19,7 +19,7 @@ let T = (0, Chunk509613.x1)(Chunk313789.n.SUBSCRIPTIONS_PANE, {
     render: Chunk813732.Z
   }),
   y = (0, Chunk509613.wf)(Chunk313789.n.SUBSCRIPTIONS_PANEL, {
-    icon: Chunk73837.Sr,
+    icon: Chunk657707.SrA,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.trSpHR),
     buildLayout: () => [T],
     trailing: {

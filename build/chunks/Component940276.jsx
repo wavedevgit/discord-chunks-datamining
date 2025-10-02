@@ -23,44 +23,25 @@ function h(e) {
     isActivityRestricted: n,
     onToggleActivityRestrictedGuild: i
   } = e, l = (0, a.e7)([s.Z], () => s.Z.getMemberCount(t.id));
-  return (0, r.jsx)("li", {
-    children: (0, r.jsx)(o.j7V, {
-      className: p.guildRowWrapper,
-      value: !n,
+  return (0, r.jsxs)(o.Kqy, {
+    as: "li",
+    direction: "horizontal",
+    align: "center",
+    gap: 20,
+    children: [(0, r.jsx)(c.V, {
+      guild: t,
+      size: 48
+    }), (0, r.jsx)(o.rsf, {
+      label: t.name,
+      description: _.intl.format(_.t.zRl6XV, {
+        count: l
+      }),
+      checked: !n,
       onChange: e => i({
         checked: e,
         guildId: t.id
-      }),
-      hideBorder: true,
-      children: (0, r.jsxs)("div", {
-        className: p.guildRow,
-        children: [(0, r.jsx)("div", {
-          children: (0, r.jsx)(c.V, {
-            guild: t,
-            size: 48
-          })
-        }), (0, r.jsxs)("div", {
-          className: p.guildRowTextContainer,
-          children: [(0, r.jsx)(o.Text, {
-            variant: "text-md/medium",
-            lineClamp: 1,
-            color: "text-default",
-            children: t.name
-          }), (0, r.jsxs)("div", {
-            className: p.memberDetailsContainer,
-            children: [(0, r.jsx)("div", {
-              className: p.memberCountDot
-            }), (0, r.jsx)(o.Text, {
-              variant: "text-xs/normal",
-              color: "text-secondary",
-              children: _.intl.format(_.t.zRl6XV, {
-                count: l
-              })
-            })]
-          })]
-        })]
       })
-    })
+    })]
   })
 }
 let m = function() {

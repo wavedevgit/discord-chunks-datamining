@@ -177,15 +177,15 @@ function eq() {
   return (0, Chunk951288.jsxs)("div", {
     ref: module,
     className: Chunk239545.noiseCancellationPopout,
-    children: [(0, Chunk951288.jsx)(Chunk481060.j7V, {
-      hideBorder: true,
-      className: Chunk10198.marginBottom4,
-      value: exports,
+    children: [(0, Chunk951288.jsx)(Chunk481060.rsf, {
+      label: Chunk388032.intl.string(Chunk388032.t.WGWHv7),
+      checked: exports,
       onChange: () => Chunk846027.Z.setNoiseCancellation(!exports, {
         section: Chunk981631.jXE.NOISE_CANCELLATION_POPOUT
-      }),
-      note: Chunk388032.intl.string(Chunk388032.t.uKdWn5),
-      children: Chunk388032.intl.string(Chunk388032.t.WGWHv7)
+      })
+    }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+      variant: "text-sm/normal",
+      children: Chunk388032.intl.string(Chunk388032.t.uKdWn5)
     }), (0, Chunk951288.jsx)(Chunk284056.Z, {
       title: Chunk388032.intl.string(Chunk388032.t.JdUas7),
       notchBackground: Chunk284056._.BLACK,

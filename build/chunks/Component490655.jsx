@@ -29,7 +29,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk446856 = require("./446856.js");
 
-function P(e, t) {
+function S(e, t) {
   switch (e) {
     case N.b4C.APPLICATION:
       var n;
@@ -57,8 +57,8 @@ let I = Chunk647438.memo(function(e) {
     guild: l,
     channel: I,
     integrations: Z,
-    editedIntegration: T,
-    webhooks: E,
+    editedIntegration: E,
+    webhooks: T,
     editedWebhook: k,
     isFetchingWebhooks: A,
     refToScroller: D,
@@ -91,7 +91,7 @@ let I = Chunk647438.memo(function(e) {
             }, (null == (l = i.application.bot) ? true : l.id) !== true && (t[i.application.bot.id] = i.application.id)
           }
         } else i.type in n || (n[i.type] = []), n[i.type].push(i);
-    for (let t of E)(t.channel_id in U || t.channel_id in W) && (null != t.application_id && t.application_id in e ? e[t.application_id].webhooks.push(t) : t.type === N.ylB.CHANNEL_FOLLOWER ? r.push(t) : i.push(t));
+    for (let t of T)(t.channel_id in U || t.channel_id in W) && (null != t.application_id && t.application_id in e ? e[t.application_id].webhooks.push(t) : t.type === N.ylB.CHANNEL_FOLLOWER ? r.push(t) : i.push(t));
     return {
       applicationIntegrations: e,
       applicationBotIds: t,
@@ -99,7 +99,7 @@ let I = Chunk647438.memo(function(e) {
       customWebhooks: i,
       followedChannelWebhooks: r
     }
-  }, [Z, U, W, E]);
+  }, [Z, U, W, T]);
   r.useEffect(() => {
     if (!A) switch (t) {
       case N.b4C.TWITCH:
@@ -122,7 +122,7 @@ let I = Chunk647438.memo(function(e) {
       null != Y[N.ABu.TWITCH] && ($ = (0, i.jsx)(v.Z, {
         guild: l,
         integrations: Y[N.ABu.TWITCH],
-        editedIntegration: T,
+        editedIntegration: E,
         labelText: w.intl.string(w.t.q4pBGx),
         platformType: N.ABu.TWITCH,
         descriptionText: w.intl.string(w.t.V9kNqq),
@@ -140,7 +140,7 @@ let I = Chunk647438.memo(function(e) {
       null != Y[N.ABu.YOUTUBE] && ($ = (0, i.jsx)(v.Z, {
         guild: l,
         integrations: Y[N.ABu.YOUTUBE],
-        editedIntegration: T,
+        editedIntegration: E,
         labelText: w.intl.string(w.t.aS6cKy),
         platformType: N.ABu.YOUTUBE,
         descriptionText: w.intl.string(w.t["7Tv7JC"]),
@@ -244,22 +244,22 @@ let I = Chunk647438.memo(function(e) {
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(p.Z, {
       align: p.Z.Align.CENTER,
-      className: S.breadcrumbs,
+      className: P.breadcrumbs,
       children: t === N.b4C.OVERVIEW ? (0, i.jsx)(s.vwX, {
         tag: "h1",
-        children: P(N.b4C.OVERVIEW)
+        children: S(N.b4C.OVERVIEW)
       }) : (0, i.jsx)(s.OoM, {
         activeId: t.toString(),
         breadcrumbs: [N.b4C.OVERVIEW, t].map(e => ({
           id: e.toString(),
-          label: P(e, V[G])
+          label: S(e, V[G])
         })),
         onBreadcrumbClick: e => {
           t !== parseInt(e.id) && q(parseInt(e.id))
         },
         renderCustomBreadcrumb: (e, t) => (0, i.jsx)(s.vwX, {
           tag: "h1",
-          className: t ? S.breadcrumbActive : S.breadcrumbInactive,
+          className: t ? P.breadcrumbActive : P.breadcrumbInactive,
           children: e.label
         })
       })

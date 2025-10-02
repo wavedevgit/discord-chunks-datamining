@@ -1,7 +1,7 @@
 /** Chunk was on 98039 **/
 /** chunk id: 335049, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => S
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -46,7 +46,7 @@ function w(e) {
   return e
 }
 
-function S(e, t) {
+function P(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -59,7 +59,7 @@ function S(e, t) {
   }), e
 }
 
-function P(e) {
+function S(e) {
   let {
     guild: t,
     id: l,
@@ -73,7 +73,7 @@ function P(e) {
       let {
         default: e
       } = await n.e("5396").then(n.bind(n, 731646));
-      return t => (0, i.jsx)(e, S(w({}, t), {
+      return t => (0, i.jsx)(e, P(w({}, t), {
         id: l,
         label: C.intl.string(C.t.oJ1Mu7)
       }))
@@ -97,7 +97,7 @@ function P(e) {
         openEntryContextMenu: m
       });
     case p.Kw.USER:
-      return (0, i.jsx)(T, {
+      return (0, i.jsx)(E, {
         guild: t,
         id: l,
         isLocked: o,
@@ -151,7 +151,7 @@ function I(e) {
       className: N.tag,
       variant: "text-sm/normal",
       children: ["(", f, ")"]
-    }) : null, l ? (0, i.jsx)(E, {
+    }) : null, l ? (0, i.jsx)(T, {
       tooltipText: o
     }) : null]
   })
@@ -173,7 +173,7 @@ function Z(e) {
       let {
         default: e
       } = await n.e("14486").then(n.bind(n, 786746));
-      return t => (0, i.jsx)(e, S(w({}, t), {
+      return t => (0, i.jsx)(e, P(w({}, t), {
         guild: l,
         role: m
       }))
@@ -195,13 +195,13 @@ function Z(e) {
       color: "header-primary",
       variant: "text-md/normal",
       children: m.name
-    }), s ? (0, i.jsx)(E, {
+    }), s ? (0, i.jsx)(T, {
       tooltipText: p
     }) : null]
   })
 }
 
-function T(e) {
+function E(e) {
   let {
     guild: t,
     id: n,
@@ -229,19 +229,19 @@ function T(e) {
       className: N.tag,
       variant: "text-sm/normal",
       children: O.ZP.getUserTag(o)
-    }), r ? (0, i.jsx)(E, {
+    }), r ? (0, i.jsx)(T, {
       tooltipText: l
     }) : null]
   })
 }
 
-function E(e) {
+function T(e) {
   let {
     tooltipText: t
   } = e;
   return (0, i.jsx)(d.ua7, {
     text: t,
-    children: e => (0, i.jsx)("div", S(w({
+    children: e => (0, i.jsx)("div", P(w({
       className: N.lockIcon
     }, e), {
       children: (0, i.jsx)(d.mBM, {

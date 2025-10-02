@@ -16,22 +16,22 @@ var u, d, Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk245335 = require("./245335.js");
 let _ = new Set,
-  b = [],
-  S = new Map,
-  E = {
+  S = [],
+  E = new Map,
+  b = {
     numFriends: 0,
     numDms: 0,
     numGroupDms: 0,
     numChannels: 0
   };
 
-function O(e) {
+function T(e) {
   let t = new Set,
-    n = null == r || o === N.Iq.EMBEDDED_APPLICATION ? true : r.id,
+    n = null == r || o === j.Iq.EMBEDDED_APPLICATION ? true : r.id,
     l = (0, v.rh)(_, n);
   for (let e of (null == l || f.Z.isBlockedOrIgnored(l.id) || t.add(l.id), m.Z.getUserAffinities())) t.add(e.otherUserId);
   let i = new Set;
-  return o === N.Iq.EMBEDDED_APPLICATION && h.Z.getChannelHistory().map(e => x.Z.getChannel(e)).filter(p.lm).filter(e => e.type === j.d4z.GUILD_TEXT).filter(e => I.Z.can(j.Plq.SEND_MESSAGES, e)).slice(0, 3).forEach(e => i.add(e.id)), (0, v.an)({
+  return o === j.Iq.EMBEDDED_APPLICATION && h.Z.getChannelHistory().map(e => I.Z.getChannel(e)).filter(p.lm).filter(e => e.type === N.d4z.GUILD_TEXT).filter(e => x.Z.can(N.Plq.SEND_MESSAGES, e)).slice(0, 3).forEach(e => i.add(e.id)), (0, v.an)({
     query: e,
     omitUserIds: _,
     suggestedUserIds: t,
@@ -42,9 +42,9 @@ function O(e) {
   })
 }
 
-function T(e) {
-  b = e, S = new Map, e.forEach((e, t) => {
-    S.set(e, {
+function O(e) {
+  S = e, E = new Map, e.forEach((e, t) => {
+    E.set(e, {
       index: t
     })
   })
@@ -54,21 +54,21 @@ class y extends(u = Chunk442837.ZP.Store) {
     this.waitFor(Chunk699516.Z, Chunk752048.Z)
   }
   getInviteSuggestionRows() {
-    return b
+    return S
   }
   getTotalSuggestionsCount() {
     return l
   }
   getInitialCounts() {
-    return E
+    return b
   }
   getSelectedInviteMetadata(e) {
-    let t = S.get(e),
+    let t = E.get(e),
       n = m.Z.getUserAffinities().map(e => e.otherUserId);
     if (null != t) return {
       rowNum: t.index,
       isAffinitySuggestion: e.isSuggested,
-      numTotal: b.length,
+      numTotal: S.length,
       numAffinityConnections: n.length,
       isFiltered: i
     }
@@ -96,8 +96,8 @@ let C = new y(Chunk570140.Z, {
     let {
       rows: g,
       counts: h
-    } = O("");
-    T(g), E = h, l = b.length
+    } = T("");
+    O(g), b = h, l = S.length
   },
   INVITE_SUGGESTIONS_SEARCH: function(e) {
     let {
@@ -106,7 +106,7 @@ let C = new y(Chunk570140.Z, {
     i = "" !== t;
     let {
       rows: n
-    } = O(t);
-    n.sort((e, t) => null != e.score && null != t.score ? e.score - t.score : 0), T(n)
+    } = T(t);
+    n.sort((e, t) => null != e.score && null != t.score ? e.score - t.score : 0), O(n)
   }
 })

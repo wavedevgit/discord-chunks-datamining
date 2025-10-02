@@ -60,11 +60,11 @@ function x(e) {
   let {
     dismissibleContentTypes: t,
     badgeComponent: n,
-    visibleContent: o
-  } = e, l = null != o && t.includes(o), i = null != n ? (0, r.jsx)(n, {}) : (0, r.jsx)(s.IGR, {
+    visibleContent: l
+  } = e, o = null != l && t.includes(l), i = null != n ? (0, r.jsx)(n, {}) : (0, r.jsx)(s.IGR, {
     text: f.intl.string(f.t.y2b7CA)
   });
-  return l ? i : null
+  return o ? i : null
 }
 
 function v(e) {
@@ -100,14 +100,14 @@ function h(e) {
     node: t,
     visibleContent: n
   } = e, {
-    currentPanel: l,
+    currentPanel: o,
     navigateTo: i,
     setShowNavigationMobile: a
   } = (0, c.t)(), {
     useTitle: s,
     trailing: u,
     stronglyDiscouragedCustomTab: f
-  } = t, b = s(), m = o.useMemo(() => t.layout.flatMap(e => e.layout), [t]), p = (null == l ? true : l.key) === t.key, j = () => {
+  } = t, b = s(), m = l.useMemo(() => t.layout.flatMap(e => e.layout), [t]), p = (null == o ? true : o.key) === t.key, j = () => {
     i(t.key), a(false)
   };
   return null != f ? (0, r.jsx)(f, {
@@ -132,7 +132,7 @@ function h(e) {
 function g(e) {
   let {
     categories: t
-  } = e, [n, l] = o.useState(0), {
+  } = e, [n, o] = l.useState(0), {
     setShowNavigationMobile: u,
     navigateTo: d
   } = (0, c.t)(), [f, m] = (0, s.q_F)(() => ({
@@ -142,7 +142,7 @@ function g(e) {
       friction: 20,
       tension: 300
     }
-  })), p = o.useMemo(() => t.map(e => {
+  })), p = l.useMemo(() => t.map(e => {
     var t;
     return {
       title: null == (t = e.useTitle) ? true : t.call(e),
@@ -165,12 +165,12 @@ function g(e) {
     }), (0, r.jsx)("ul", {
       children: p.map((e, t) => {
         let {
-          title: o,
+          title: l,
           key: a
         } = e;
         return (0, r.jsx)(s.P3F, {
           onClick: () => {
-            l(t), m({
+            o(t), m({
               y: 36 * t
             }), u(false), d(a)
           },
@@ -178,7 +178,7 @@ function g(e) {
           className: i()({
             [b.active]: t === n
           }),
-          children: o
+          children: l
         }, a)
       })
     })]

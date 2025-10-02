@@ -22,11 +22,11 @@ function x(e) {
   let {
     root: t,
     header: n,
-    footer: l,
+    footer: o,
     onClose: b
   } = e, {
     showNavigationMobile: m
-  } = (0, d.t)(), x = o.useMemo(() => {
+  } = (0, d.t)(), x = l.useMemo(() => {
     let e = [];
     return t.layout.forEach(t => {
       let {
@@ -43,7 +43,7 @@ function x(e) {
         }
       })
     }), e
-  }, [t.layout]), [y, h] = o.useMemo(() => {
+  }, [t.layout]), [y, h] = l.useMemo(() => {
     let e = [],
       n = [];
     return t.layout.forEach(t => {
@@ -56,7 +56,7 @@ function x(e) {
       contentTypes: x,
       children: t => {
         let {
-          visibleContent: o
+          visibleContent: l
         } = t;
         return (0, r.jsxs)("div", {
           className: i()(j.sidebar, e, {
@@ -77,7 +77,7 @@ function x(e) {
             }), (0, r.jsx)("div", {
               children: y.map(e => (0, r.jsx)(v, {
                 section: e,
-                visibleContent: o
+                visibleContent: l
               }, e.key))
             }), null != n && (0, r.jsx)(n, {})]
           }), (0, r.jsxs)(s.zJl, {
@@ -87,9 +87,9 @@ function x(e) {
               className: j.nav,
               children: h.map(e => (0, r.jsx)(v, {
                 section: e,
-                visibleContent: o
+                visibleContent: l
               }, e.key))
-            }), null != l && (0, r.jsx)(l, {})]
+            }), null != o && (0, r.jsx)(o, {})]
           })]
         })
       }
@@ -101,22 +101,22 @@ function v(e) {
   var t;
   let {
     section: n,
-    visibleContent: o
-  } = e, l = null == (t = n.useLabel) ? true : t.call(n);
+    visibleContent: l
+  } = e, o = null == (t = n.useLabel) ? true : t.call(n);
   return (0, r.jsxs)("ul", {
     className: j.section,
-    children: [null != l && (0, r.jsx)("div", {
+    children: [null != o && (0, r.jsx)("div", {
       className: j.sectionLabel,
       children: (0, r.jsx)(s.X6q, {
         className: j.label,
         variant: "heading-sm/medium",
         color: "text-tertiary",
-        children: l
+        children: o
       })
     }), n.layout.map(e => (0, r.jsxs)("li", {
       children: [e.type === f.Jq.PANEL && (0, r.jsx)(b.Z, {
         node: e,
-        visibleContent: o
+        visibleContent: l
       }), e.type === f.Jq.SIDEBAR_ITEM && ("render" in e ? (0, r.jsx)(m.Z, {
         render: e.render
       }) : (0, r.jsx)(m.Z, {

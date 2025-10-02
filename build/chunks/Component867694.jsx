@@ -1,32 +1,33 @@
 /** Chunk was on 54573 **/
 /** chunk id: 867694, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  I: () => i
+  I: () => o
 });
 var Chunk951288 = require("./951288.js"),
-  Chunk471141 = require("./471141.jsx"),
-  Chunk601857 = require("./601857.js");
+  Chunk481060 = require("./481060.js");
 
-function i(e) {
+function o(e) {
   var t;
   let {
     node: n
   } = e, {
-    useValue: i,
-    setValue: a,
-    useTitle: s,
-    useSubtitle: c,
-    useDisabled: u,
-    useTooltip: d
-  } = n, f = s(), b = null == c ? true : c(), m = i(), p = null != (t = null == u ? true : u()) && t, j = null == d ? true : d();
-  return (0, r.jsx)(o.j, {
-    value: m,
-    onChange: e => a(e),
-    className: l.toggle,
-    note: b,
-    disabled: p,
-    tooltipNote: j,
-    hideBorder: true,
-    children: f
+    useValue: o,
+    setValue: i,
+    useTitle: a,
+    useSubtitle: s,
+    useDisabled: c,
+    useDisabledMessage: u
+  } = n, d = a(), f = null == s ? true : s(), b = o(), m = null != (t = null == c ? true : c()) && t, p = null == u ? true : u();
+  return (0, r.jsxs)(l.Kqy, {
+    children: [(0, r.jsx)(l.rsf, {
+      label: d,
+      description: f,
+      checked: b,
+      onChange: e => i(e),
+      disabled: m
+    }), m && null != p ? (0, r.jsx)(l.Wn, {
+      messageType: l.QYI.WARNING,
+      children: p
+    }) : null]
   })
 }

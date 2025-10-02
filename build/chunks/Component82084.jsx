@@ -18,20 +18,20 @@ function i(e) {
     } = e,
     f = function(e, t) {
       if (null == e) return {};
-      var n, r, o = function(e, t) {
+      var n, r, l = function(e, t) {
         if (null == e) return {};
-        var n, r, o = {},
-          l = Object.keys(e);
-        for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
-        return o
+        var n, r, l = {},
+          o = Object.keys(e);
+        for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
+        return l
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var l = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
+        var o = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
       }
-      return o
+      return l
     }(e, ["root", "directory", "target", "onPanelChange", "sidebarHeader", "sidebarFooter"]);
-  return (0, r.jsx)(o.A, (t = function(e) {
+  return (0, r.jsx)(l.A, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -49,7 +49,7 @@ function i(e) {
     }
     return e
   }({}, f), n = n = {
-    children: (0, r.jsx)(l.Z, {
+    children: (0, r.jsx)(o.Z, {
       onClose: f.onClose,
       root: i,
       directory: a,

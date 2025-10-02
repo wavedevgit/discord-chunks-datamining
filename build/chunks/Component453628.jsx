@@ -52,14 +52,15 @@ function g(e) {
     value: t = "PASSTHROUGH",
     onChange: n,
     labelledBy: i,
-    disabled: l = false
-  } = e, s = (0, o.Jb)({
+    disabled: l = false,
+    id: s
+  } = e, c = (0, o.Jb)({
     orientation: "horizontal",
     isDisabled: l,
     labelledBy: i
   }), {
-    ref: c
-  } = s, m = function(e, t) {
+    ref: m
+  } = c, g = function(e, t) {
     if (null == e) return {};
     var n, i, r = function(e, t) {
       if (null == e) return {};
@@ -73,13 +74,14 @@ function g(e) {
       for (i = 0; i < l.length; i++) n = l[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
     }
     return r
-  }(s, ["ref"]);
+  }(c, ["ref"]);
   return (0, r.jsx)("div", p(u({
     className: a()(d.group, {
       [d.disabled]: l
     }),
-    ref: c
-  }, m), {
+    ref: m,
+    id: s
+  }, g), {
     children: b.map(e => (0, r.jsx)(f, {
       type: e,
       isSelected: t === e,

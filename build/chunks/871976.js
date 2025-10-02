@@ -2,7 +2,6 @@
 /** chunk id: 871976, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 module.exports = {
-  presets: "presets_a00e6e",
   header: "header_a00e6e",
   headings: "headings_a00e6e",
   title: "title_a00e6e",

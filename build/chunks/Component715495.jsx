@@ -55,7 +55,7 @@ function j(e, t) {
 function _() {
   var e, t;
   let [n, i] = (0, Chunk647438.useState)(false), [s, d] = (0, Chunk647438.useState)(false), [h, f] = (0, Chunk647438.useState)(null), _ = (0, Chunk396821.ZP)(e => e.toolsCache), {
-    setToolsCache: S,
+    setToolsCache: N,
     removeToolsCache: T
   } = (0, Chunk396821.L3)(), {
     setImgCache: O
@@ -106,7 +106,7 @@ function _() {
         children: [require && (0, Chunk951288.jsx)(Chunk329013.i, {}), Chunk276264 && (0, Chunk951288.jsx)(Chunk711325.Z, {
           selected: null == Chunk996746 || null == (e = Chunk996746.palette) ? true : module.name,
           onSelect: e => {
-            (null == h ? true : h.src) != null && S(h.src, h.src, e), k(e)
+            (null == h ? true : h.src) != null && N(h.src, h.src, e), k(e)
           }
         })]
       })]
@@ -127,7 +127,7 @@ function _() {
             let t = URL.createObjectURL(e[0]),
               n = e[0],
               a = await n.arrayBuffer();
-            O(t, t, (0, p.xh)(a)), S(t, t, m.jD)
+            O(t, t, (0, p.xh)(a)), N(t, t, m.jD)
           }
         }), (0, Chunk951288.jsx)("div", {
           className: Chunk761804.uploadedArea,
@@ -141,7 +141,7 @@ function _() {
               removeAsset: I
             }, t)
           })
-        }), (0, Chunk951288.jsx)(N, {
+        }), (0, Chunk951288.jsx)(S, {
           label: "gradient override",
           onChange: e => k({
             name: m._j,
@@ -191,7 +191,7 @@ function y(e) {
       children: [(0, a.jsx)(l.Text, {
         variant: "text-sm/semibold",
         children: "Memberlist"
-      }), (0, a.jsx)(S, {
+      }), (0, a.jsx)(N, {
         nameplate: t
       }), (0, a.jsx)(l.Text, {
         variant: "text-sm/semibold",
@@ -264,7 +264,7 @@ function E(e) {
   })
 }
 
-function N(e) {
+function S(e) {
   let {
     label: t,
     onChange: n
@@ -284,7 +284,7 @@ function N(e) {
   })
 }
 
-function S(e) {
+function N(e) {
   let {
     nameplate: t
   } = e, n = (0, i.e7)([d.default], () => d.default.getCurrentUser());

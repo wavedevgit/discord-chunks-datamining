@@ -44,7 +44,7 @@ let I = (0, Chunk509613.x1)(Chunk313789.n.PROFILE_PANE, {
       let {
         active: n,
         onClick: s
-      } = e, a = (0, l.e7)([y.default], () => y.default.getCurrentUser()), {
+      } = e, a = (0, r.e7)([y.default], () => y.default.getCurrentUser()), {
         avatarSrc: o,
         avatarDecorationSrc: d
       } = (0, O.Z)({
@@ -60,7 +60,7 @@ let I = (0, Chunk509613.x1)(Chunk313789.n.PROFILE_PANE, {
             src: o,
             avatarDecoration: d,
             size: u.EFr.SIZE_48,
-            "aria-label": A.intl.string(A.t.lqaIxM)
+            "aria-label": S.intl.string(S.t.lqaIxM)
           }), (0, i.jsxs)("div", {
             className: g.textContainer,
             children: [(0, i.jsx)(u.Text, {
@@ -73,8 +73,8 @@ let I = (0, Chunk509613.x1)(Chunk313789.n.PROFILE_PANE, {
               children: [(0, i.jsx)(u.Text, {
                 variant: "text-sm/normal",
                 color: "currentColor",
-                children: A.intl.string(A.t.Ip9nBQ)
-              }), (0, i.jsx)(r.vdY, {
+                children: S.intl.string(S.t.Ip9nBQ)
+              }), (0, i.jsx)(l.vdY, {
                 size: "xxs",
                 color: "currentColor"
               })]

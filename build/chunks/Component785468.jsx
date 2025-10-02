@@ -100,7 +100,7 @@ function T(e, t, n, r) {
     tooltipText: C.intl.string(C.t.HeF1kZ)
   }
 }
-let w = (e, t) => n => {
+let Z = (e, t) => n => {
   let {
     value: r
   } = n, l = {
@@ -114,7 +114,7 @@ let w = (e, t) => n => {
   e(l)
 };
 
-function Z(e) {
+function w(e) {
   let {
     guildId: t,
     guildEvent: n,
@@ -168,7 +168,7 @@ function k(e) {
     guildId: t,
     guildEvent: n,
     onChange: i
-  } = e, a = (0, s.e7)([m.Z], () => m.Z.getGuild(t), [t]), u = (0, p.Z)(t, true), d = (0, p.Z)(t, N.d4z.GUILD_VOICE), x = (0, p.Z)(t, N.d4z.GUILD_STAGE_VOICE), g = (0, j.sR)(t, N.d4z.GUILD_VOICE), h = (0, f.q)(a), b = null == a ? true : a.features.has(N.oNc.COMMUNITY), y = (0, v.xt)(n), O = w(i, n), P = l.useMemo(() => {
+  } = e, a = (0, s.e7)([m.Z], () => m.Z.getGuild(t), [t]), u = (0, p.Z)(t, true), d = (0, p.Z)(t, N.d4z.GUILD_VOICE), x = (0, p.Z)(t, N.d4z.GUILD_STAGE_VOICE), g = (0, j.sR)(t, N.d4z.GUILD_VOICE), h = (0, f.q)(a), b = null == a ? true : a.features.has(N.oNc.COMMUNITY), y = (0, v.xt)(n), O = Z(i, n), P = l.useMemo(() => {
     let e = [S({
       name: C.intl.string(C.t.BVZqJi),
       value: E.WX.VOICE,
@@ -203,7 +203,7 @@ function D(e) {
     isSlideReady: o = false
   } = e, {
     entityType: u
-  } = l, d = (0, s.e7)([m.Z], () => m.Z.getGuild(t), [t]), g = (0, f.q)(d), h = (0, s.e7)([x.Z], () => x.Z.can(N.Plq.MANAGE_CHANNELS, d)), v = null == d ? true : d.features.has(N.oNc.COMMUNITY), p = w(a, l), j = v && u !== E.WX.EXTERNAL && 0 === g.length && h && null != u;
+  } = l, d = (0, s.e7)([m.Z], () => m.Z.getGuild(t), [t]), g = (0, f.q)(d), h = (0, s.e7)([x.Z], () => x.Z.can(N.Plq.MANAGE_CHANNELS, d)), v = null == d ? true : d.features.has(N.oNc.COMMUNITY), p = Z(a, l), j = v && u !== E.WX.EXTERNAL && 0 === g.length && h && null != u;
   return (0, r.jsxs)("div", {
     className: P.container,
     children: [(0, r.jsxs)(c.Kqy, {
@@ -220,7 +220,7 @@ function D(e) {
       guildId: t,
       guildEvent: l,
       onChange: a
-    }), (0, r.jsx)(Z, {
+    }), (0, r.jsx)(w, {
       guildId: t,
       guildEvent: l,
       isFocusReady: o,

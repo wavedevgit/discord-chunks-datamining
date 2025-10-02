@@ -32,7 +32,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk550971 = require("./550971.js");
 
-function T(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -51,7 +51,7 @@ function T(e) {
   return e
 }
 
-function E(e, t) {
+function T(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -75,8 +75,8 @@ function k(e) {
   } = e, f = (0, o.e7)([x.Z], () => x.Z.getGuild(l));
   a()(null != f, "");
   let v = (0, o.e7)([h.Z], () => h.Z.getSortedRoles(l)),
-    [w, S] = r.useState(new Set),
-    P = r.useMemo(() => {
+    [w, P] = r.useState(new Set),
+    S = r.useMemo(() => {
       let e = (0, m.bD)(l),
         t = v.toReversed().reduce((e, t, n) => (e[t.id] = n, e), {});
       return Object.values(u).filter(e => e.canRead).sort((n, i) => {
@@ -111,7 +111,7 @@ function k(e) {
     I = r.useCallback((e, t) => {
       n({}, [(0, N.rE)(e, t)])
     }, [n]),
-    T = r.useCallback((e, t, i) => {
+    E = r.useCallback((e, t, i) => {
       let r = (0, N.rE)(e, t);
       null != u[r] && n({
         [r]: {
@@ -123,18 +123,18 @@ function k(e) {
     }, [n, u]);
   r.useEffect(() => {
     let e = Object.values(u).filter(e => e.type === p.Kw.USER && !e.canRead && !w.has(e.id)).map(e => e.id);
-    0 !== e.length && (d.Z.requestMembersById(l, e, false), S(t => new Set([...t, ...e])))
-  }, [l, u, w, S]);
-  let E = (0, o.e7)([C.Z], () => C.Z.getApplicationId()),
-    k = (0, o.e7)([_.default], () => null == E ? true : _.default.integrations.find(e => {
+    0 !== e.length && (d.Z.requestMembersById(l, e, false), P(t => new Set([...t, ...e])))
+  }, [l, u, w, P]);
+  let T = (0, o.e7)([C.Z], () => C.Z.getApplicationId()),
+    k = (0, o.e7)([_.default], () => null == T ? true : _.default.integrations.find(e => {
       var t;
-      return (null == (t = e.application) ? true : t.id) === E
+      return (null == (t = e.application) ? true : t.id) === T
     })),
     D = (0, o.e7)([g.Z], () => true !== k && g.Z.canShowToggleTooltip(k.id));
-  return P.length > 0 ? P.map(e => (0, i.jsx)(A, {
+  return S.length > 0 ? S.map(e => (0, i.jsx)(A, {
     guild: f,
     commandId: t,
-    onChange: t => T(e.id, e.type, t),
+    onChange: t => E(e.id, e.type, t),
     onRemove: () => I(e.id, e.type),
     overwrite: e,
     integration: k,
@@ -171,7 +171,7 @@ function A(e) {
   r.useEffect(() => {
     if (A) {
       var e;
-      v.default.track(P.rMx.COMMANDS_MIGRATION_TOOLTIP_VIEWED, E(T({}, (0, u.hH)(o.id)), {
+      v.default.track(S.rMx.COMMANDS_MIGRATION_TOOLTIP_VIEWED, T(E({}, (0, u.hH)(o.id)), {
         application_id: null == j || null == (e = j.application) ? true : e.id,
         location: "toggle"
       }))
@@ -184,9 +184,9 @@ function A(e) {
       shouldShow: N,
       position: "left",
       hideOnClick: false,
-      children: e => (0, i.jsx)("div", E(T({}, e), {
+      children: e => (0, i.jsx)("div", T(E({}, e), {
         ref: R,
-        children: (0, i.jsx)(S.Z, {
+        children: (0, i.jsx)(P.Z, {
           isDisabled: N,
           currentValue: x.permission,
           onChange: A ? e => {

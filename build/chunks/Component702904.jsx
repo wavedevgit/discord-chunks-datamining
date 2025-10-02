@@ -530,7 +530,7 @@ function g() {
       url: "/debug/payment-source",
       rejectWithError: false
     }), await (0, Chunk355467.tZ)()
-  }, N = async () => {
+  }, S = async () => {
     await Chunk544891.tn.del({
       url: "/debug/rate-limits",
       rejectWithError: false
@@ -586,7 +586,7 @@ function g() {
           variant: "primary",
           size: "sm",
           text: "Reset API Rate limits and reload app",
-          onClick: N
+          onClick: S
         })]
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         style: {

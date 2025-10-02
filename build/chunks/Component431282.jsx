@@ -75,9 +75,9 @@ function p(e) {
       right: false,
       bottom: false
     }
-  }, N = r.useCallback(() => {
+  }, S = r.useCallback(() => {
     j(true)
-  }, []), S = r.useCallback(() => {
+  }, []), N = r.useCallback(() => {
     j(false)
   }, []), T = () => (0, a.jsxs)(a.Fragment, {
     children: [(0, a.jsx)("div", {
@@ -117,7 +117,7 @@ function p(e) {
         className: c.submenuIconWrapper,
         "aria-label": o.intl.string(o.t.PdRCRk)
       }, e), {
-        onClick: N,
+        onClick: S,
         focusProps: E,
         children: (0, a.jsx)(i.Fbu, {
           size: "xs",
@@ -127,7 +127,7 @@ function p(e) {
     }) : y ? (0, a.jsxs)(l.P3F, u(d({
       className: c.menuItemContent
     }, e), {
-      onClick: N,
+      onClick: S,
       focusProps: E,
       children: [T(), (0, a.jsx)("div", {
         className: c.submenuIconWrapper,
@@ -149,14 +149,14 @@ function p(e) {
   };
   return y ? (0, a.jsx)("li", {
     className: c.menuItem,
-    onMouseEnter: N,
-    onMouseLeave: S,
+    onMouseEnter: S,
+    onMouseLeave: N,
     children: (0, a.jsx)(l.yRy, {
       targetElementRef: _,
       spacing: 0,
       renderPopout: f,
       shouldShow: v,
-      onRequestClose: S,
+      onRequestClose: N,
       children: O
     })
   }) : (0, a.jsx)("li", {

@@ -23,15 +23,15 @@ let h = e => {
     onGenerateNewLink: m,
     onToggleTemporary: p,
     onSelectMaxAge: v,
-    onSelectMaxUses: x,
-    isGuestInviteCreationToggleEnabled: I,
+    onSelectMaxUses: I,
+    isGuestInviteCreationToggleEnabled: x,
     onSetInviteFlags: f
-  } = e, j = (0, s.ZP)(), {
-    maxAgeOptions: N,
+  } = e, N = (0, s.ZP)(), {
+    maxAgeOptions: j,
     maxAge: _,
-    maxUses: b,
-    temporary: S,
-    flags: E
+    maxUses: S,
+    temporary: E,
+    flags: b
   } = i;
   return (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsxs)(a.xBx, {
@@ -51,21 +51,21 @@ let h = e => {
       })]
     }), (0, l.jsx)(o.Z, {
       shouldHideTemporaryInviteToggle: h,
-      maxAgeOptions: N,
+      maxAgeOptions: j,
       maxAge: _,
-      maxUses: b,
-      temporary: S,
+      maxUses: S,
+      temporary: E,
       onToggleTemporary: p,
       onSelectMaxAge: v,
-      onSelectMaxUses: x,
+      onSelectMaxUses: I,
       onGenerateNewLink: m,
-      isGuestInviteCreationToggleEnabled: I,
+      isGuestInviteCreationToggleEnabled: x,
       onSetInviteFlags: f,
-      inviteFlags: E
+      inviteFlags: b
     }), (0, l.jsx)(a.mzw, {
       className: c.settingsFooter,
       children: (0, l.jsx)(u.Z, {
-        theme: j,
+        theme: N,
         onConfirm: () => {
           m(), t()
         },

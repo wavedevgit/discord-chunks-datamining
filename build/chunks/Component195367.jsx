@@ -35,8 +35,8 @@ function y(e) {
     entityType: S,
     channelId: I,
     description: T,
-    name: w,
-    image: Z,
+    name: Z,
+    image: w,
     scheduledEndTime: k,
     scheduledStartTime: D,
     recurrenceRule: R
@@ -117,7 +117,7 @@ function y(e) {
           },
           placeholder: f.intl.string(f.t["6/yarq"]),
           maxLength: p.p,
-          value: w,
+          value: Z,
           autoComplete: "off",
           inputRef: L
         }), (0, r.jsx)(v.Z, {
@@ -161,11 +161,11 @@ function y(e) {
         }), (0, r.jsx)(s.NIc, {
           label: f.intl.string(f.t.Ly121d),
           description: f.intl.string(f.t.B9C9bW),
-          children: null != Z ? (0, r.jsxs)(r.Fragment, {
+          children: null != w ? (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(o.Z, {
               className: b.imagePreview,
               iconWrapperClassName: b.imagePreviewInner,
-              image: Z,
+              image: w,
               makeURL: e => {
                 if (null == e) return null;
                 if (null != y) {

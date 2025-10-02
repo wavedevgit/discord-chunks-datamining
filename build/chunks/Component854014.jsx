@@ -6,7 +6,7 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  r = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk843816 = require("./843816.js");
 
@@ -14,14 +14,14 @@ function a(e) {
   let {
     onClick: t,
     active: n,
-    children: r
+    children: l
   } = e;
   return (0, i.jsx)(u.P3F, {
-    className: l()(s.item, {
+    className: r()(s.item, {
       [s.active]: n
     }),
     onClick: t,
-    children: r
+    children: l
   })
 }
 
@@ -29,25 +29,25 @@ function o(e) {
   var {
     onClick: t,
     active: n
-  } = e, r = function(e, t) {
+  } = e, l = function(e, t) {
     if (null == e) return {};
-    var n, i, r = function(e, t) {
+    var n, i, l = function(e, t) {
       if (null == e) return {};
-      var n, i, r = {},
-        l = Object.keys(e);
-      for (i = 0; i < l.length; i++) n = l[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
-      return r
+      var n, i, l = {},
+        r = Object.keys(e);
+      for (i = 0; i < r.length; i++) n = r[i], t.indexOf(n) >= 0 || (l[n] = e[n]);
+      return l
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var l = Object.getOwnPropertySymbols(e);
-      for (i = 0; i < l.length; i++) n = l[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
+      var r = Object.getOwnPropertySymbols(e);
+      for (i = 0; i < r.length; i++) n = r[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
     }
-    return r
+    return l
   }(e, ["onClick", "active"]);
-  if ("render" in r) {
+  if ("render" in l) {
     let {
       render: e
-    } = r;
+    } = l;
     return (0, i.jsx)(a, {
       onClick: t,
       active: n,
@@ -55,16 +55,16 @@ function o(e) {
     })
   }
   let {
-    icon: l,
+    icon: r,
     title: o,
     trailing: c
-  } = r;
+  } = l;
   return (0, i.jsxs)(a, {
     onClick: t,
     active: n,
     children: [(0, i.jsxs)("div", {
       className: s.itemContent,
-      children: [(0, i.jsx)(l, {
+      children: [(0, i.jsx)(r, {
         color: "currentColor",
         size: "refresh_sm",
         className: s.icon

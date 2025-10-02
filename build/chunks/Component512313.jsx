@@ -68,10 +68,10 @@ function x() {
     children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
       variant: "heading-lg/bold",
       children: "Settings Tree"
-    }), (0, Chunk951288.jsx)(Chunk481060.j7V, {
-      value: module,
+    }), (0, Chunk951288.jsx)(Chunk481060.rsf, {
+      checked: module,
       onChange: e => t(e),
-      children: "Show Legacy Settings Tree"
+      label: "Show Legacy Settings Tree"
     }), (0, Chunk951288.jsx)(h.Provider, {
       value: require,
       children: (0, Chunk951288.jsxs)("div", {

@@ -23,9 +23,9 @@ function _(e) {
     hideScroller: p = false,
     activeRecurrenceId: b
   } = e, {
-    recurrenceStartTimes: g,
-    canViewMoreRecurrences: f,
-    updateRecurrenceStartTimes: h
+    recurrenceStartTimes: h,
+    canViewMoreRecurrences: g,
+    updateRecurrenceStartTimes: f
   } = (0, c.Z)(i, n, t), m = p ? "div" : l.Ttm;
   return (0, r.jsxs)("div", {
     className: u.recurrences,
@@ -37,7 +37,7 @@ function _(e) {
       className: a()(u.scroller, {
         [u.showScroller]: !p
       }),
-      children: [g.map(e => {
+      children: [h.map(e => {
         let n = o.default.fromTimestamp(e.getTime());
         return (0, r.jsx)(s.Z, {
           recurrenceId: n,
@@ -46,11 +46,11 @@ function _(e) {
           onClick: _,
           isActive: n === b
         }, n)
-      }), f && (0, r.jsx)("div", {
+      }), g && (0, r.jsx)("div", {
         className: u.buttonContainer,
         children: (0, r.jsx)(l.Avr, {
           onClick: e => {
-            e.stopPropagation(), h()
+            e.stopPropagation(), f()
           },
           text: d.intl.string(d.t["8O7Hp6"]),
           size: "sm"

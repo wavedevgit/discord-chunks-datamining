@@ -31,7 +31,7 @@ function j(e) {
     name: N,
     image: C,
     description: P
-  } = O, S = (0, i.e7)([c.Z], () => c.Z.getChannel(E), [E]), I = (0, i.e7)([u.Z], () => u.Z.getGuild(j), [j]), T = (0, x.cS)(O), w = (0, i.e7)([d.default], () => null != f.creatorId ? d.default.getUser(f.creatorId) : d.default.getCurrentUser(), [f.creatorId]), Z = (0, i.e7)([o.Z], () => o.Z.isLurking(j), [j]), k = (0, s.KS)(S, I);
+  } = O, S = (0, i.e7)([c.Z], () => c.Z.getChannel(E), [E]), I = (0, i.e7)([u.Z], () => u.Z.getGuild(j), [j]), T = (0, x.cS)(O), Z = (0, i.e7)([d.default], () => null != f.creatorId ? d.default.getUser(f.creatorId) : d.default.getCurrentUser(), [f.creatorId]), w = (0, i.e7)([o.Z], () => o.Z.isLurking(j), [j]), k = (0, s.KS)(S, I);
   return (0, r.jsxs)("div", {
     className: p.content,
     children: [(0, r.jsx)(h.Z, {
@@ -39,12 +39,12 @@ function j(e) {
       guild: I,
       channel: S,
       location: null != T ? T : true,
-      creator: w,
+      creator: Z,
       name: N,
       description: P,
       imageSource: (n = (0, m.Gb)(f, j, b), null == C && null == n.image ? null : null != C && /^data:/.test(C) ? C : (0, g.Z)(n)),
       isActive: false,
-      isUserLurking: Z,
+      isUserLurking: w,
       speakers: [],
       speakerCount: 0,
       rsvped: true,

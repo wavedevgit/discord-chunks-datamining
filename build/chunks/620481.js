@@ -2,13 +2,13 @@
 /** chunk id: 620481, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   FB: () => _,
-  Jt: () => N,
+  Jt: () => S,
   OC: () => E,
   Sr: () => C,
   V_: () => T,
   lG: () => y,
   mo: () => j,
-  tb: () => S
+  tb: () => N
 }), require("./539854.js"), require("./388685.js"), require("./415506.js");
 var Chunk279779 = require("./279779.js"),
   Chunk933557 = require("./933557.js"),
@@ -158,7 +158,7 @@ function E() {
     g.info("frecency score: ".concat(o.Z.getScoreWithoutFetchingLatest(e.record.id))), v()
   }), g.info("END Quick Switcher State\n")
 }
-async function N() {
+async function S() {
   g.info("START User Search Worker State");
   let e = await Chunk279779.Z.requestDebugState();
   if (null == module) return void g.info("Unable to get debug state from User Search Worker");
@@ -170,7 +170,7 @@ async function N() {
     }), v()
   }), g.info("END User Search Worker State\n")
 }
-async function S() {
+async function N() {
   let e = await Chunk279779.Z.requestDebugState();
   if (null == module) throw Error("Unable to get debug state from User Search Worker");
   let t = JSON.parse(module.users),

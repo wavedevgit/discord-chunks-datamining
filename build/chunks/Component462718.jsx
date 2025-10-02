@@ -41,7 +41,7 @@ let E = (0, Chunk509613.m7)(Chunk313789.n.LOGOUT_SIDEBAR_ITEM, {
         cancelText: d.intl.string(d.t["ETE/oK"]),
         onCancel: e.onClose,
         onConfirm: () => {
-          r.flushSync(() => {
+          l.flushSync(() => {
             (0, u.Mr3)(c.USER_SETTINGS_MODAL_KEY)
           }), s.Z.logout("settings")
         }

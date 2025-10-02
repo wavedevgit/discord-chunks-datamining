@@ -53,14 +53,14 @@ function f(e) {
     sidebarHeader: x,
     sidebarFooter: v,
     onPanelChange: y
-  } = e, [h, g] = o.useState(true), [O, C] = o.useState(null == (t = m.entry(p)) ? true : t.parentPanel), [_, P] = o.useState(() => m.typedGet(O)), S = o.useCallback(() => N(true), []), [E, N] = o.useState({
+  } = e, [h, g] = l.useState(true), [O, C] = l.useState(null == (t = m.entry(p)) ? true : t.parentPanel), [_, P] = l.useState(() => m.typedGet(O)), S = l.useCallback(() => N(true), []), [E, N] = l.useState({
     target: p,
     targetAccordion: null == (n = m.entry(p)) ? true : n.parentAccordion,
     animateScroll: false,
     complete: S
   }), {
     navigateWithValidation: T
-  } = (0, a.Cu)(), k = o.useMemo(() => ({
+  } = (0, a.Cu)(), k = l.useMemo(() => ({
     currentPanel: m.typedGet(O),
     navigateTo: e => {
       let t = m.entry(e);
@@ -94,7 +94,7 @@ function f(e) {
         header: x,
         footer: v,
         onClose: w
-      }), (0, r.jsx)(l.Z, {
+      }), (0, r.jsx)(o.Z, {
         onClose: w,
         setting: null != (f = k.currentPanel) ? f : _
       })]

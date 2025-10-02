@@ -20,13 +20,13 @@ function s(e) {
     useDisabled: d,
     onClick: f
   } = t, b = s(), m = null == c ? true : c(), p = n(), j = null == u ? true : u(), x = null == d ? true : d();
-  return (0, r.jsx)(o.x, {
+  return (0, r.jsx)(l.x, {
     title: b,
     className: a.settingButtonContainer,
     children: (0, r.jsxs)("div", {
       className: a.settingButtonContent,
-      children: [null != m && (0, r.jsx)(l.R, {
-        type: l.g.DESCRIPTION,
+      children: [null != m && (0, r.jsx)(o.R, {
+        type: o.g.DESCRIPTION,
         children: m
       }), (0, r.jsx)(i.zxk, {
         onClick: f,

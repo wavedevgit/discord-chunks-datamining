@@ -50,7 +50,7 @@ function v(e) {
   if (null == j) return null;
   let {
     is_canceled: y = false
-  } = null != k ? k : {}, P = (null == k ? true : k.scheduled_start_time) != null ? new Date(null == k ? true : k.scheduled_start_time) : i, N = (0, p.DK)(j), O = y ? g.p1.CANCELED : g.p1.SCHEDULED;
+  } = null != k ? k : {}, P = (null == k ? true : k.scheduled_start_time) != null ? new Date(null == k ? true : k.scheduled_start_time) : i, N = (0, p.DK)(j), O = y ? h.p1.CANCELED : h.p1.SCHEDULED;
   N === n && (O = j.status);
   let E = (null == j ? true : j.scheduled_start_time) != null ? (0, p.lh)(k, P, new Date(null == j ? true : j.scheduled_start_time)) : null,
     S = e => {
@@ -68,10 +68,10 @@ function v(e) {
       })
     };
   return (0, r.jsxs)(o.kL8, {
-    className: a()(h.container, {
-      [h.canceled]: y,
-      [h.clickable]: null != x,
-      [h.active]: C
+    className: a()(f.container, {
+      [f.canceled]: y,
+      [f.clickable]: null != x,
+      [f.active]: C
     }),
     onClick: e => {
       e.stopPropagation(), y || null == x || x(n)
@@ -84,27 +84,27 @@ function v(e) {
       eventType: j.entity_type,
       guildEventId: j.id,
       recurrenceId: n,
-      className: h.timeStatus
+      className: f.timeStatus
     }), y && (0, r.jsx)(o.Text, {
       variant: "text-sm/semibold",
       color: "text-danger",
-      className: h.canceledStatus,
-      children: f.intl.string(f.t.fyBVRk)
+      className: f.canceledStatus,
+      children: g.intl.string(g.t.fyBVRk)
     }), (0, r.jsx)(o.ua7, {
-      text: f.intl.string(f.t.UKOtz8),
+      text: g.intl.string(g.t.UKOtz8),
       position: "top",
-      "aria-label": f.intl.string(f.t.bt75u7),
+      "aria-label": g.intl.string(g.t.bt75u7),
       children: e => {
         var n, t;
         return (0, r.jsx)(o.P3F, (n = m({}, e), t = t = {
           onClick: S,
-          className: h.iconButton,
+          className: f.iconButton,
           children: (0, r.jsx)(o.xhG, {
             size: "custom",
             color: "currentColor",
             width: 20,
             height: 20,
-            className: h.icon
+            className: f.icon
           })
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(t)) : (function(e, n) {
           var t = Object.keys(e);

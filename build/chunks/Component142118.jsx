@@ -17,10 +17,10 @@ let s = Chunk647438.memo(function(e) {
     render: c,
     init: u
   } = t, d = null == n ? true : n();
-  return (o.useEffect(() => {
+  return (l.useEffect(() => {
     null == u || u()
-  }, [u]), null != c) ? (0, r.jsx)(c, {}) : (0, r.jsx)(l.hjN, {
-    tag: l.RB0.H1,
+  }, [u]), null != c) ? (0, r.jsx)(c, {}) : (0, r.jsx)(o.hjN, {
+    tag: o.RB0.H1,
     className: a.category,
     title: d,
     titleClassName: a.categoryTitle,

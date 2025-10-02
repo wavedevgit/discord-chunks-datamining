@@ -61,27 +61,25 @@ let C = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
       }, (0, f.hH)(l.id))))
     }, M = _.EYA.ROLE_SUBSCRIPTION_STORE_PAGE(L), U = null != w && w === (null == c ? true : c.store_page_trailer_url), {
       shouldRestrictUpdatingCreatorMonetizationSettings: B
-    } = (0, h.gX)(l.id), F = B || !Z;
-    return (0, r.jsxs)("div", {
+    } = (0, h.gX)(l.id), F = B || !Z, H = !I && !a;
+    return (0, r.jsxs)(u.Kqy, {
+      gap: 24,
       children: [(0, r.jsx)(u.vwX, {
         tag: "h1",
         children: O.intl.string(O.t.N6Tg9P)
-      }), (0, r.jsx)(u.R94, {
-        type: u.R94.Types.DESCRIPTION,
-        children: O.intl.string(O.t["uU/69/"])
-      }), (0, r.jsx)(u.j7V, {
-        className: y.enableSwitch,
-        value: I,
-        disabled: B || !I && !a,
-        tooltipNote: I || a ? true : O.intl.string(O.t.mIgfEh),
-        hideBorder: true,
-        onChange: e => S(e),
-        children: (0, r.jsx)(u.Text, {
-          variant: "text-md/semibold",
-          color: "header-primary",
-          children: O.intl.string(O.t.lwvl1t)
-        })
-      }), (0, r.jsxs)(u.xJW, {
+      }), (0, r.jsxs)(u.Kqy, {
+        gap: 8,
+        children: [(0, r.jsx)(u.rsf, {
+          label: O.intl.string(O.t.lwvl1t),
+          checked: I,
+          disabled: B || H,
+          description: O.intl.string(O.t["uU/69/"]),
+          onChange: e => S(e)
+        }), H ? (0, r.jsx)(u.Wn, {
+          messageType: u.QYI.WARNING,
+          children: O.intl.string(O.t.mIgfEh)
+        }) : null]
+      }), (0, r.jsx)(u.izJ, {}), (0, r.jsxs)(u.xJW, {
         title: O.intl.string(O.t.N46WOj),
         disabled: B,
         children: [(0, r.jsx)(m.Z, {
@@ -99,16 +97,10 @@ let C = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
             disabled: B
           })
         })]
-      }), (0, r.jsx)(u.izJ, {
-        className: y.divider
-      }), (0, r.jsxs)(u.xJW, {
-        title: O.intl.string(O.t.W39uIC),
-        disabled: B,
-        children: [(0, r.jsx)(u.R94, {
-          disabled: B,
-          color: "text-secondary",
-          children: O.intl.string(O.t.B6XtEx)
-        }), (0, r.jsxs)("div", {
+      }), (0, r.jsx)(u.izJ, {}), (0, r.jsx)(u.NIc, {
+        label: O.intl.string(O.t.W39uIC),
+        description: O.intl.string(O.t.B6XtEx),
+        children: (0, r.jsxs)("div", {
           className: y.accentColorContainer,
           children: [(0, r.jsx)(u.Text, {
             variant: "text-md/medium",
@@ -128,60 +120,27 @@ let C = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
             colorContainerClassName: y.hideColorButtons,
             disabled: B
           })]
-        })]
-      }), (0, r.jsx)(u.izJ, {
-        className: y.divider
-      }), (0, r.jsx)(u.xJW, {
-        disabled: B,
-        children: (0, r.jsx)(u.oil, {
-          label: O.intl.string(O.t.k2yRvb),
-          description: O.intl.string(O.t["amd99/"]),
-          value: null != w ? w : true,
-          onChange: e => R("" === e ? null : e),
-          error: Z ? null : O.intl.string(O.t["1kL79f"]),
-          placeholder: O.intl.string(O.t["+I4gdX"]),
-          trailing: Z && U ? u.owK : true,
+        })
+      }), (0, r.jsx)(u.izJ, {}), (0, r.jsx)(u.oil, {
+        label: O.intl.string(O.t.k2yRvb),
+        description: O.intl.string(O.t["amd99/"]),
+        value: null != w ? w : true,
+        onChange: e => R("" === e ? null : e),
+        error: Z ? null : O.intl.string(O.t["1kL79f"]),
+        placeholder: O.intl.string(O.t["+I4gdX"]),
+        trailing: Z && U ? u.owK : true,
+        disabled: B
+      }), (0, r.jsx)(u.izJ, {}), (0, r.jsx)(u.C3N, {
+        label: O.intl.string(O.t.AU2HU1),
+        description: O.intl.string(O.t.iWBt3d),
+        children: (0, r.jsx)(u.rsf, {
+          label: O.intl.string(O.t.hJsAPj),
+          description: O.intl.string(O.t.hn65ER),
+          icon: u.tBG,
+          checked: D,
+          onChange: e => A(e),
           disabled: B
         })
-      }), (0, r.jsx)(u.izJ, {
-        className: y.divider
-      }), (0, r.jsxs)(u.xJW, {
-        title: O.intl.string(O.t.AU2HU1),
-        disabled: B,
-        children: [(0, r.jsx)(u.R94, {
-          disabled: B,
-          color: "text-secondary",
-          children: O.intl.string(O.t.iWBt3d)
-        }), (0, r.jsx)(u.j7V, {
-          className: y.premiumMemberCountSwitchContainer,
-          value: D,
-          hideBorder: true,
-          onChange: e => A(e),
-          disabled: B,
-          children: (0, r.jsxs)("div", {
-            className: y.iconSwitchLabel,
-            children: [(0, r.jsx)("div", {
-              className: y.iconContainer,
-              children: (0, r.jsx)(u.tBG, {
-                size: "custom",
-                color: "currentColor",
-                width: 28,
-                height: 28,
-                className: y.premiumMemberCountIcon
-              })
-            }), (0, r.jsxs)("div", {
-              children: [(0, r.jsx)(u.Text, {
-                variant: "text-md/medium",
-                color: "header-primary",
-                children: O.intl.string(O.t.hJsAPj)
-              }), (0, r.jsx)(u.Text, {
-                variant: "text-sm/normal",
-                color: "header-secondary",
-                children: O.intl.string(O.t.hn65ER)
-              })]
-            })]
-          })
-        })]
       }), (0, r.jsx)(d.W, {
         component: "div",
         className: y.contentRegion,

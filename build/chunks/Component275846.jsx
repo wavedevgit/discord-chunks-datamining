@@ -2,20 +2,19 @@
 /** chunk id: 275846, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  i: () => h
-}), require("./781311.js"), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
-  Chunk49800 = require("./49800.jsx"),
+  i: () => _
+}), require("./781311.js");
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
+var Chunk49800 = require("./49800.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk434333 = require("./434333.jsx"),
   Chunk540863 = require("./540863.jsx"),
   Chunk383838 = require("./383838.jsx"),
   Chunk789164 = require("./789164.jsx"),
-  Chunk471141 = require("./471141.jsx"),
   Chunk512983 = require("./512983.jsx"),
   Chunk231338 = require("./231338.js");
-let p = {
+let f = {
     id: "formnotice",
     name: "FormNotice",
     component: function(e) {
@@ -23,11 +22,11 @@ let p = {
         type: t,
         title: n,
         body: i,
-        hasButton: a
-      } = e, s = a ? (0, r.jsx)(o.zxk, {
+        hasButton: o
+      } = e, s = o ? (0, r.jsx)(a.zxk, {
         text: "Action"
       }) : true;
-      return (0, r.jsx)(c.To, {
+      return (0, r.jsx)(l.To, {
         type: t,
         title: n,
         body: i,
@@ -76,9 +75,9 @@ let p = {
       }
     }
   },
-  h = {
+  _ = {
     title: "Form Components",
-    stories: [p, {
+    stories: [f, {
       id: "formitem",
       name: "FormItem",
       component: function(e) {
@@ -86,16 +85,16 @@ let p = {
           title: t,
           errorMessage: n,
           disabled: i,
-          required: a,
-          tag: s
+          required: o,
+          tag: l
         } = e, c = (null == n ? true : n.trim()) === "" ? true : n;
-        return (0, r.jsx)(l.x, {
+        return (0, r.jsx)(s.x, {
           title: t,
           error: c,
           disabled: i,
-          required: a,
-          tag: s,
-          children: (0, r.jsx)(o.oil, {
+          required: o,
+          tag: l,
+          children: (0, r.jsx)(a.oil, {
             placeholder: "Enter text here..."
           })
         })
@@ -178,7 +177,7 @@ let p = {
                 color: "#666"
               },
               children: [e, ":"]
-            }), (0, r.jsx)(f.v, {
+            }), (0, r.jsx)(u.v, {
               tag: e,
               disabled: n,
               required: i,
@@ -212,63 +211,6 @@ let p = {
         }
       }
     }, {
-      id: "formswitch",
-      name: "FormSwitch",
-      component: function(e) {
-        let {
-          children: t,
-          disabled: n,
-          hideBorder: a,
-          note: o,
-          disabledText: s,
-          tooltipNote: l
-        } = e, [c, u] = i.useState(false), f = e => {
-          u(e)
-        };
-        return (0, r.jsx)(d.j, {
-          value: c,
-          disabled: n,
-          hideBorder: a,
-          onChange: f,
-          note: (null == o ? true : o.trim()) === "" ? true : o,
-          disabledText: "" === s.trim() ? true : s,
-          tooltipNote: "" === l.trim() ? true : l,
-          children: t
-        })
-      },
-      controls: {
-        children: {
-          type: "text",
-          label: "Label Text",
-          defaultValue: "Enable this feature"
-        },
-        disabled: {
-          type: "boolean",
-          label: "Disabled",
-          defaultValue: false
-        },
-        hideBorder: {
-          type: "boolean",
-          label: "Hide Border",
-          defaultValue: false
-        },
-        note: {
-          type: "text",
-          label: "Note",
-          defaultValue: ""
-        },
-        disabledText: {
-          type: "text",
-          label: "Disabled Text",
-          defaultValue: ""
-        },
-        tooltipNote: {
-          type: "text",
-          label: "Tooltip Note",
-          defaultValue: ""
-        }
-      }
-    }, {
       id: "formsection",
       name: "FormSection",
       component: function(e) {
@@ -277,14 +219,14 @@ let p = {
           disabled: n,
           tag: i
         } = e;
-        return (0, r.jsxs)(u.h, {
+        return (0, r.jsxs)(c.h, {
           title: t,
           disabled: n,
           tag: i,
-          children: [(0, r.jsx)(o.Text, {
+          children: [(0, r.jsx)(a.Text, {
             variant: "text-md/normal",
             children: "This is content within the form section."
-          }), (0, r.jsx)(o.oil, {
+          }), (0, r.jsx)(a.oil, {
             placeholder: "Enter text here..."
           })]
         })
@@ -327,11 +269,11 @@ let p = {
           children: t,
           backgroundColor: n,
           hasDismiss: i,
-          iconType: a
-        } = e, l = "check" === a ? o.owK : o.Mgn;
-        return (0, r.jsx)(s.k, {
+          iconType: s
+        } = e, l = "check" === s ? a.owK : a.Mgn;
+        return (0, r.jsx)(o.k, {
           backgroundColor: n,
-          onDismiss: i ? _.dG : true,
+          onDismiss: i ? d.dG : true,
           icon: l,
           children: t
         })

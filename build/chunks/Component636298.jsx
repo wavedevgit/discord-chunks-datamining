@@ -20,10 +20,10 @@ function p(e) {
   let {
     icon: t,
     label: n,
-    onClick: o
+    onClick: l
   } = e;
   return (0, r.jsx)(s.hU, {
-    onClick: o,
+    onClick: l,
     icon: t,
     size: "sm",
     variant: "icon-only",
@@ -36,17 +36,17 @@ function j(e) {
     title: t,
     onClose: n
   } = e, {
-    setShowNavigationMobile: o
-  } = (0, d.t)(), l = (0, u.Ll)();
+    setShowNavigationMobile: l
+  } = (0, d.t)(), o = (0, u.Ll)();
   return (0, r.jsx)(c.f6W, {
-    theme: l,
+    theme: o,
     children: e => (0, r.jsxs)("div", {
       className: i()(m.contentHeader, e),
       children: [(0, r.jsxs)("div", {
         className: m.contentHeaderLeft,
         children: [a.tq && (0, r.jsx)(p, {
           icon: c.yFM,
-          onClick: () => o(true),
+          onClick: () => l(true),
           label: b.intl.string(b.t["13/7kZ"])
         }), (0, r.jsx)(c.X6q, {
           variant: "heading-md/medium",
@@ -65,16 +65,16 @@ let x = Chunk647438.memo(function(e) {
   let {
     onClose: t,
     setting: n
-  } = e, o = null == n ? true : n.useTitle(), {
-    showNavigationMobile: l
+  } = e, l = null == n ? true : n.useTitle(), {
+    showNavigationMobile: o
   } = (0, d.t)();
   return (0, r.jsxs)("div", {
     className: i()(m.content, {
       [m.mobile]: a.tq,
-      [m.mobileNavigationOpen]: l
+      [m.mobileNavigationOpen]: o
     }),
     children: [(0, r.jsx)(j, {
-      title: o,
+      title: l,
       onClose: t
     }), (0, r.jsx)("div", {
       className: m.contentBody,

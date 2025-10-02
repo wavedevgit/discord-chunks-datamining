@@ -142,36 +142,24 @@ function v(e) {
         src: (0, o.wj)(m) ? v.icon.darkSVG : v.icon.lightSVG
       }), (0, r.jsxs)("div", {
         className: y.activitySettings,
-        children: [(0, r.jsxs)(s.j7V, {
-          className: y.visibilitySwitch,
-          hideBorder: true,
-          value: 1 === d,
-          onChange: g,
-          children: [(0, r.jsx)(s.Text, {
-            variant: "text-md/semibold",
-            color: "header-primary",
-            children: v.name
+        children: [(0, r.jsxs)("div", {
+          children: [(0, r.jsx)(s.rsf, {
+            checked: 1 === d,
+            onChange: g,
+            label: v.name
           }), I && (0, r.jsx)(O, {
             account: t,
             refreshed: a.includes(t.id),
             handleRefresh: n
           })]
-        }), I && (0, r.jsx)(s.j7V, {
-          className: y.additionalDetailsSwitch,
-          hideBorder: true,
+        }), I && (0, r.jsx)(s.rsf, {
           disabled: 1 !== d || null == t.metadata,
-          value: 1 === p,
+          checked: 1 === p,
           onChange: E,
-          children: (0, r.jsx)(s.Text, {
-            variant: "text-md/normal",
-            color: "header-secondary",
-            children: b.intl.string(b.t["3l78ws"])
-          })
+          label: b.intl.string(b.t["3l78ws"])
         })]
       })]
-    }), (0, r.jsx)("div", {
-      className: y.divider
-    })]
+    }), (0, r.jsx)(s.izJ, {})]
   })
 }
 
@@ -182,15 +170,13 @@ function I() {
     c = Chunk647438.useCallback(e => l.Z.refresh(e.type, e.id).finally(() => {
       o(t => [...t, e.id])
     }), []);
-  return 0 === exports.length ? null : (0, Chunk951288.jsxs)(Chunk481060.hjN, {
+  return 0 === exports.length ? null : (0, Chunk951288.jsx)(Chunk481060.C3N, {
     className: Chunk737823.container,
-    children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
-      className: Chunk737823.title,
-      children: Chunk388032.intl.string(Chunk388032.t.aw0GVV)
-    }), exports.map(e => (0, r.jsx)(v, {
+    label: Chunk388032.intl.string(Chunk388032.t.aw0GVV),
+    children: exports.map(e => (0, r.jsx)(v, {
       account: e,
       handleRefresh: c,
       refreshedAccountIds: n
-    }, e.id))]
+    }, e.id))
   })
 }

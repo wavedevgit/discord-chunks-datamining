@@ -38,7 +38,7 @@ function g(e) {
       tag: "span",
       children: e
     })
-  }), []), x = n instanceof a.Z ? n.code !== u.evJ.TOO_MANY_INVITES ? n.getAnyErrorMessage() : o.Z.can(u.Plq.MANAGE_GUILD, t) ? d.intl.format(d.t["H/RUY2"], {
+  }), []), I = n instanceof a.Z ? n.code !== u.evJ.TOO_MANY_INVITES ? n.getAnyErrorMessage() : o.Z.can(u.Plq.MANAGE_GUILD, t) ? d.intl.format(d.t["H/RUY2"], {
     inviteListHook: p,
     inviteHelpHook: v
   }) : d.intl.string(d.t["/FxH6O"]) : "message" in n ? n.message : d.intl.string(d.t.eAn6z8);
@@ -46,6 +46,6 @@ function g(e) {
     className: c.errorMessage,
     variant: "text-xs/normal",
     color: "text-danger",
-    children: x
+    children: I
   })
 }

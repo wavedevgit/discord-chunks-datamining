@@ -61,17 +61,17 @@ function E() {
     skuIDs: [],
     activeSubscription: null,
     children: (0, Chunk951288.jsxs)("div", {
-      children: [(0, Chunk951288.jsx)(N, {}), (0, Chunk951288.jsx)(Chunk481060.Text, {
+      children: [(0, Chunk951288.jsx)(S, {}), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         color: "text-feedback-info",
         className: Chunk634155.labelSpacing,
         children: "Payment-method-specific components and views may not appear for you unless your browser is supported for that payment method and they have been configured on your browser."
-      }), (0, Chunk951288.jsx)(S, {}), (0, Chunk951288.jsx)(I, {}), (0, Chunk951288.jsx)(M, {})]
+      }), (0, Chunk951288.jsx)(N, {}), (0, Chunk951288.jsx)(I, {}), (0, Chunk951288.jsx)(M, {})]
     })
   })
 }
 
-function N() {
+function S() {
   let [e, t] = Chunk647438.useState("discord://".concat(location.host, "/feature/apple-payment-link"));
   return (0, Chunk951288.jsxs)(Chunk237012.$0, {
     children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
@@ -99,7 +99,7 @@ function N() {
   })
 }
 
-function S() {
+function N() {
   return (0, Chunk951288.jsxs)(Chunk237012.$0, {
     children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
       variant: "heading-xl/semibold",

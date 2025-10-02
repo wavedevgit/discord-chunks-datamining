@@ -133,7 +133,7 @@ function U(e) {
     onSave: f,
     onClose: b,
     createdEvent: y
-  } = e, O = (0, x.Dt)(), E = i.useRef(n), N = !(0, a.isEqual)(E.current, n), w = i.useMemo(() => [{
+  } = e, O = (0, x.Dt)(), E = i.useRef(n), N = !(0, a.isEqual)(E.current, n), Z = i.useMemo(() => [{
     slideId: 0,
     label: D.intl.string(D.t["56QlKS"]),
     valid: null == d.entity,
@@ -147,7 +147,7 @@ function U(e) {
     slideId: 2,
     label: D.intl.string(D.t["8aJzT0"]),
     valid: true
-  }], [d, c, N]), Z = Object.keys(G).length, k = (0, j.xt)(n), A = e => Math.max(0, Math.min(e, Z - 1)), [_, z] = i.useState(+!!k), [U, L] = i.useState(false), V = i.useMemo(() => w.slice(0, _ + 1).map(e => e.valid).every(Boolean), [w, _]), F = _ >= w.length ? 3 : w[A(_)].slideId, X = 3 === F;
+  }], [d, c, N]), w = Object.keys(G).length, k = (0, j.xt)(n), A = e => Math.max(0, Math.min(e, w - 1)), [_, z] = i.useState(+!!k), [U, L] = i.useState(false), V = i.useMemo(() => Z.slice(0, _ + 1).map(e => e.valid).every(Boolean), [Z, _]), F = _ >= Z.length ? 3 : Z[A(_)].slideId, X = 3 === F;
   (0, C.l)(e => e.onUpdateCanCloseModal)(X);
   let W = (0, s.e7)([u.Z], () => u.Z.useReducedMotion),
     q = i.useRef(null),
@@ -180,7 +180,7 @@ function U(e) {
       scrollerRef: q,
       "data-migration-pending": true,
       children: [!X && (0, l.jsx)(m.Z, {
-        steps: w.map(e => e.label),
+        steps: Z.map(e => e.label),
         stepIndex: _,
         onClick: e => {
           e < _ ? K() : e > _ && H()
@@ -291,7 +291,7 @@ function L(e) {
         }, k.t4x.GUILD_EVENTS), n ? I(e) : u()
       })(e.body), e
     }),
-    M = i.useMemo(() => (0, w.Z)(v, P), [v, P]);
+    M = i.useMemo(() => (0, Z.Z)(v, P), [v, P]);
   return (0, l.jsx)(U, {
     guildId: t,
     guildEvent: v,
@@ -306,7 +306,7 @@ function L(e) {
         var n;
         let r = (0, E.xC)(e.entityType),
           [l] = (0, y.SU)(t, r);
-        e.channelId = null != (n = null == l ? true : l.id) ? n : null, e.entityType !== Z.WX.EXTERNAL && v.entityType === Z.WX.EXTERNAL && (e.entityMetadata = null)
+        e.channelId = null != (n = null == l ? true : l.id) ? n : null, e.entityType !== w.WX.EXTERNAL && v.entityType === w.WX.EXTERNAL && (e.entityMetadata = null)
       }
       C(t => A({}, t, e))
     },

@@ -535,15 +535,13 @@ function ec(e) {
           errors: tE,
           isTrustedName: eb || eX,
           noDivider: !tv && !tO && !ty && e4.enabled
-        }), tv ? (0, r.jsx)(m.j7V, {
-          hideBorder: true,
-          onChange: ez,
+        }), tv ? (0, r.jsx)("div", {
           className: et.mobilePushContainer,
-          note: ee.intl.string(ee.t.hw1nKS),
-          value: eK,
-          children: (0, r.jsx)(m.Text, {
-            variant: "text-sm/medium",
-            children: ee.intl.string(ee.t["Pkw//v"])
+          children: (0, r.jsx)(m.rsf, {
+            label: ee.intl.string(ee.t["Pkw//v"]),
+            onChange: ez,
+            description: ee.intl.string(ee.t.hw1nKS),
+            checked: eK
           })
         }) : null, (0, r.jsx)("div", {
           className: et.intObserver,

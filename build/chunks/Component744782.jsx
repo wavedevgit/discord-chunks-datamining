@@ -37,20 +37,20 @@ function O(e) {
   }, [C]), S = (0, l.e7)([d.Z], () => d.Z.getGuild(C), [C]), {
     channel_id: I,
     id: T
-  } = null != N ? N : {}, w = (0, l.e7)([m.Z], () => {
+  } = null != N ? N : {}, Z = (0, l.e7)([m.Z], () => {
     let e = null != I ? I : P;
     return null == e ? null : m.Z.getInvite(e)
   }, [I, P]);
   if (null == N) return E(), null;
-  let Z = null != (t = null == S ? true : S.vanityURLCode) ? t : null == w ? true : w.code,
-    k = null != Z ? (0, a.tV)({
-      baseCode: Z,
+  let w = null != (t = null == S ? true : S.vanityURLCode) ? t : null == Z ? true : Z.code,
+    k = null != w ? (0, a.tV)({
+      baseCode: w,
       guildScheduledEventId: T
     }) : null,
-    D = null == k || null == w,
+    D = null == k || null == Z,
     R = (0, s.Z)(null != k ? k : ""),
-    A = null != (n = null == w ? true : w.maxAge) ? n : b.value,
-    _ = null != (O = null == w ? true : w.maxUses) ? O : y.value;
+    A = null != (n = null == Z ? true : Z.maxAge) ? n : b.value,
+    _ = null != (O = null == Z ? true : Z.maxUses) ? O : y.value;
   return (0, r.jsxs)("div", {
     className: f.container,
     children: [(0, r.jsx)(i.P3F, {
@@ -95,7 +95,7 @@ function O(e) {
             channel: I,
             channel_type: t,
             location: p.t4x.GUILD_EVENTS,
-            code: w.code,
+            code: Z.code,
             guild_scheduled_event_id: null == N ? true : N.id
           })
         }

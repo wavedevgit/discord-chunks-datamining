@@ -20,9 +20,9 @@ function d(e) {
     showNotice: c,
     handleStoreUpdate: d
   } = (0, s.Cu)(), f = null == t ? true : t.stores;
-  o.useEffect(() => {
+  l.useEffect(() => {
     if (null != f) {
-      let e = new l.Fh(f, () => {
+      let e = new o.Fh(f, () => {
         d(f)
       });
       return e.attach("SettingPanelNotice"), d(f), () => {
@@ -30,7 +30,7 @@ function d(e) {
       }
     }
   }, [f, d]);
-  let b = o.useMemo(() => {
+  let b = l.useMemo(() => {
     if (null == t || !c) return null;
     let {
       element: e
@@ -51,7 +51,7 @@ function d(e) {
 function f(e) {
   let {
     node: t
-  } = e, n = t.render, l = o.useRef(null);
+  } = e, n = t.render, o = l.useRef(null);
   if (null != n) return (0, r.jsx)(n, {});
   if (1 !== t.layout.length) throw Error("Panels with multiple panes must define a render prop to handle the multiple panes");
   return (0, r.jsx)(d, {
@@ -60,9 +60,9 @@ function f(e) {
       className: u.scroller,
       children: (0, r.jsx)("div", {
         className: u.panel,
-        ref: l,
+        ref: o,
         children: (0, r.jsx)(a.JcV, {
-          containerRef: l,
+          containerRef: o,
           children: (0, r.jsx)(c.Z, {
             node: t.layout[0]
           })

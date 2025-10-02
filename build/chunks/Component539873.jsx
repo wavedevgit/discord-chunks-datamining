@@ -128,8 +128,13 @@ function A(e) {
               children: g.intl.string(g.t.IgENJi)
             })]
           }), null == v ? true : v()]
-        }), (0, r.jsx)("div", {
-          className: E.presets,
+        }), (0, r.jsx)(s.Kqy, {
+          direction: "horizontal",
+          wrap: true,
+          gap: 8,
+          style: {
+            marginTop: 16
+          },
           children: (0, h.wu)(A).filter(e => {
             let {
               isHidden: t

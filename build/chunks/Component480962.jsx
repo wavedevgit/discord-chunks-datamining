@@ -80,17 +80,28 @@ function g(e) {
   } = e, {
     focusIndex: m,
     isUsingKeyboardNavigation: g
-  } = d, E = h(d, ["focusIndex", "isUsingKeyboardNavigation"]), b = i.useRef(null), y = i.useRef(null), O = i.useRef(null), [v, I] = i.useState(false);
+  } = d, E = h(d, ["focusIndex", "isUsingKeyboardNavigation"]), b = i.useRef(null), y = i.useRef(null), O = i.useRef(null), v = i.useRef(null), [I, T] = i.useState(false);
   return i.useLayoutEffect(() => {
-    I(true)
+    T(true)
   }, []), i.useLayoutEffect(() => {
     var e;
     a && ((0, l.F)(b), null == (e = O.current) || e.focus())
-  }, [a]), (0, r.jsxs)("div", {
+  }, [a]), i.useLayoutEffect(() => {
+    if (null == O.current || !a || !I) return;
+    let e = new ResizeObserver(() => {
+      requestAnimationFrame(() => {
+        var e;
+        null == (e = v.current) || e.call(v)
+      })
+    });
+    return e.observe(O.current), () => {
+      e.disconnect(), v.current = null
+    }
+  }, [a, I]), (0, r.jsxs)("div", {
     ref: b,
     children: [(0, r.jsx)("div", {
       ref: y
-    }), n, a && v ? (0, r.jsx)(c.jRF, {
+    }), n, a && I ? (0, r.jsx)(c.jRF, {
       targetRef: y,
       autoInvert: true,
       nudgeAlignIntoViewport: true,
@@ -98,7 +109,7 @@ function g(e) {
       spacing: 4,
       position: "right",
       align: "top",
-      children: () => (0, r.jsx)("div", {
+      children: (e, n) => (v.current = n, (0, r.jsx)("div", {
         className: u.submenuPaddingContainer,
         children: (0, r.jsx)("div", p(f({
           className: o()(u.submenu, t)
@@ -109,7 +120,7 @@ function g(e) {
             children: _()
           })
         }))
-      })
+      }))
     }) : null]
   })
 }

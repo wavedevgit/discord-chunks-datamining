@@ -114,50 +114,48 @@ function en(e) {
     title: V.intl.string(V.t.G0neg4),
     children: (0, r.jsxs)(u.Kqy, {
       gap: 16,
-      children: [(0, r.jsx)(er, {}), (0, r.jsx)(C.F, {
+      children: [(0, r.jsx)(er, {}), (0, r.jsxs)(C.F, {
         setting: G.s6.ACCESSIBILITY_SATURATION,
-        children: (0, r.jsx)(ea, {})
-      }), (0, r.jsx)(u.izJ, {}), (0, r.jsx)(C.F, {
+        children: [(0, r.jsx)(ea, {}), (0, r.jsx)(u.izJ, {})]
+      }), (0, r.jsxs)(C.F, {
         setting: G.s6.ACCESSIBILITY_LINK_DECORATIONS,
-        children: (0, r.jsx)(eo, {})
-      }), (0, r.jsx)(u.izJ, {}), t ? (0, r.jsxs)(r.Fragment, {
+        children: [(0, r.jsx)(eo, {}), (0, r.jsx)(u.izJ, {})]
+      }), t ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(C.F, {
           setting: G.s6.ACCESSIBILITY_CUSTOM_CURSOR,
           children: (0, r.jsx)(es, {})
         }), (0, r.jsx)(u.izJ, {})]
-      }) : null, (0, r.jsx)(C.F, {
+      }) : null, (0, r.jsxs)(C.F, {
         setting: G.s6.ACCESSIBILITY_ROLE_STYLE,
-        children: (0, r.jsx)(el, {})
-      }), (0, r.jsx)(u.izJ, {}), n && (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(C.F, {
-          setting: G.s6.ACCESSIBILITY_DISPLAY_NAME_STYLES,
-          children: (0, r.jsx)(ec, {})
-        }), (0, r.jsx)(u.izJ, {})]
-      }), (0, r.jsx)(C.F, {
+        children: [(0, r.jsx)(el, {}), (0, r.jsx)(u.izJ, {})]
+      }), n && (0, r.jsxs)(C.F, {
+        setting: G.s6.ACCESSIBILITY_DISPLAY_NAME_STYLES,
+        children: [(0, r.jsx)(ec, {}), (0, r.jsx)(u.izJ, {})]
+      }), (0, r.jsxs)(C.F, {
         setting: G.s6.ACCESSIBILITY_PROFILE_COLORS,
-        children: (0, r.jsx)(eu, {})
-      }), (0, r.jsx)(u.izJ, {
-        gap: 4
-      }), (0, r.jsx)(C.F, {
+        children: [(0, r.jsx)(eu, {}), (0, r.jsx)(u.izJ, {
+          gap: 4
+        })]
+      }), (0, r.jsxs)(C.F, {
         setting: G.s6.ACCESSIBILITY_CONTRAST,
-        children: (0, r.jsx)(ed, {})
-      }), (0, r.jsx)(u.izJ, {
-        gap: 4
-      }), (0, r.jsx)(C.F, {
+        children: [(0, r.jsx)(ed, {}), (0, r.jsx)(u.izJ, {
+          gap: 4
+        })]
+      }), (0, r.jsxs)(C.F, {
         setting: G.s6.ACCESSIBILITY_STICKERS,
-        children: (0, r.jsx)(e_, {})
-      }), (0, r.jsx)(u.izJ, {
-        gap: 4
-      }), (0, r.jsx)(C.F, {
+        children: [(0, r.jsx)(e_, {}), (0, r.jsx)(u.izJ, {
+          gap: 4
+        })]
+      }), (0, r.jsxs)(C.F, {
         setting: G.s6.ACCESSIBILITY_REDUCED_MOTION,
-        children: (0, r.jsx)(ef, {})
-      }), (0, r.jsx)(u.izJ, {
-        gap: 4
-      }), (0, r.jsx)(C.F, {
+        children: [(0, r.jsx)(ef, {}), (0, r.jsx)(u.izJ, {
+          gap: 4
+        })]
+      }), (0, r.jsxs)(C.F, {
         setting: G.s6.ACCESSIBILITY_MESSAGES,
-        children: (0, r.jsx)(ep, {})
-      }), (0, r.jsx)(u.izJ, {
-        gap: 4
+        children: [(0, r.jsx)(ep, {}), (0, r.jsx)(u.izJ, {
+          gap: 4
+        })]
       }), (0, r.jsx)(eh, {}), (0, r.jsx)(C.F, {
         setting: G.s6.ACCESSIBILITY_APPEARANCE_UPSELL,
         children: (0, r.jsx)(u.Text, {
@@ -552,55 +550,55 @@ function eh() {
       t = () => Chunk392711(false);
     (0, Chunk196051.cP)(Chunk388032.intl.string(Chunk388032.t.PKaNJC), true, true, module, exports), Chunk392711(true)
   };
-  return (0, Chunk951288.jsxs)(Chunk481060.C3N, {
-    label: Chunk388032.intl.string(Chunk388032.t.VpSKeH),
-    children: [(0, Chunk951288.jsx)(Chunk921801.F, {
-      setting: Chunk726985.s6.ACCESSIBILITY_TEXT_TO_SPEECH,
-      children: (0, Chunk951288.jsx)(Chunk921801.F, {
+  return (0, Chunk951288.jsx)(Chunk921801.F, {
+    setting: Chunk726985.s6.ACCESSIBILITY_TEXT_TO_SPEECH,
+    children: (0, Chunk951288.jsxs)(Chunk481060.C3N, {
+      label: Chunk388032.intl.string(Chunk388032.t.VpSKeH),
+      children: [(0, Chunk951288.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.ACCESSIBILITY_TEXT_TO_SPEECH_TTS_COMMAND,
         children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
           label: Chunk388032.intl.string(Chunk388032.t.qvTIwc),
           checked: module,
           onChange: Chunk695346.OW.updateSetting
         })
-      })
-    }), (0, Chunk951288.jsx)(Chunk921801.F, {
-      setting: Chunk726985.s6.ACCESSIBILITY_TEXT_TO_SPEECH_RATE,
-      children: (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
-        gap: 16,
-        children: [(0, Chunk951288.jsx)(Chunk481060.iRW, {
-          label: Chunk388032.intl.string(Chunk388032.t.lsW5Eh),
-          markers: Chunk653477.q,
-          initialValue: exports,
-          defaultValue: 1,
-          stickToMarkers: true,
-          onValueChange: et,
-          onValueRender: e => "x".concat(e.toFixed(2)),
-          onMarkerRender: e => 0 === e ? (0, r.jsx)(u.Text, {
-            variant: "text-xs/medium",
-            color: "text-secondary",
-            children: V.intl.string(V.t["493lwc"])
-          }) : 10 === e ? (0, r.jsx)(u.Text, {
-            variant: "text-xs/medium",
-            color: "text-secondary",
-            children: V.intl.string(V.t.ZSZEdX)
-          }) : 1 === e ? (0, r.jsx)(u.Text, {
-            variant: "text-xs/medium",
-            color: "text-feedback-positive",
-            children: "x1.0"
-          }) : e % 1 == 0 ? "" : true,
-          "aria-labelledby": $
-        }), (0, Chunk951288.jsx)("div", {
-          className: Chunk133991.ttsPreviewWrapper,
-          children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
-            size: "sm",
-            icon: require ? Chunk481060.fpf : Chunk481060.o1U,
-            text: Chunk388032.intl.string(Chunk388032.t.hymc8v),
-            onClick: o,
-            "aria-label": "".concat(Chunk388032.intl.string(Chunk388032.t.hymc8v), " ").concat(Chunk388032.intl.string(Chunk388032.t.lsW5Eh))
-          })
-        })]
-      })
-    })]
+      }), (0, Chunk951288.jsx)(Chunk921801.F, {
+        setting: Chunk726985.s6.ACCESSIBILITY_TEXT_TO_SPEECH_RATE,
+        children: (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+          gap: 16,
+          children: [(0, Chunk951288.jsx)(Chunk481060.iRW, {
+            label: Chunk388032.intl.string(Chunk388032.t.lsW5Eh),
+            markers: Chunk653477.q,
+            initialValue: exports,
+            defaultValue: 1,
+            stickToMarkers: true,
+            onValueChange: et,
+            onValueRender: e => "x".concat(e.toFixed(2)),
+            onMarkerRender: e => 0 === e ? (0, r.jsx)(u.Text, {
+              variant: "text-xs/medium",
+              color: "text-secondary",
+              children: V.intl.string(V.t["493lwc"])
+            }) : 10 === e ? (0, r.jsx)(u.Text, {
+              variant: "text-xs/medium",
+              color: "text-secondary",
+              children: V.intl.string(V.t.ZSZEdX)
+            }) : 1 === e ? (0, r.jsx)(u.Text, {
+              variant: "text-xs/medium",
+              color: "text-feedback-positive",
+              children: "x1.0"
+            }) : e % 1 == 0 ? "" : true,
+            "aria-labelledby": $
+          }), (0, Chunk951288.jsx)("div", {
+            className: Chunk133991.ttsPreviewWrapper,
+            children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
+              size: "sm",
+              icon: require ? Chunk481060.fpf : Chunk481060.o1U,
+              text: Chunk388032.intl.string(Chunk388032.t.hymc8v),
+              onClick: o,
+              "aria-label": "".concat(Chunk388032.intl.string(Chunk388032.t.hymc8v), " ").concat(Chunk388032.intl.string(Chunk388032.t.lsW5Eh))
+            })
+          })]
+        })
+      })]
+    })
   })
 }
