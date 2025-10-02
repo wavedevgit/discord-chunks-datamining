@@ -221,7 +221,7 @@ class b extends Chunk442837.yh {
   }
   constructor(e, t = "typescript") {
     let n = {};
-    if ("typescript" === t || "typescript-libdiscore-dual-read" === t) {
+    if ("typescript" == (t = "typescript") || "typescript-libdiscore-dual-read" === t) {
       let t = false,
         r = {
           reset: e => {
@@ -337,13 +337,13 @@ class b extends Chunk442837.yh {
         n[i] = o
       }
     }
-    super(s.Z, n), d(this, "mode", true), d(this, "state", true), d(this, "shadowState", true), d(this, "nextVersion", true), this.mode = t, this.state = {
+    super(s.Z, n), d(this, "state", {
       root: {},
       derived: {
         numPartitions: 0,
         length: 0,
         memoized: {}
       }
-    }, this.shadowState = null, this.nextVersion = 0, f.info("".concat(this.getName(), " initialized in mode: ").concat(this.mode))
+    }), d(this, "shadowState", null), d(this, "mode", true), d(this, "nextVersion", 0), this.mode = t, f.info("".concat(this.getName(), " initialized in mode: ").concat(this.mode))
   }
 }

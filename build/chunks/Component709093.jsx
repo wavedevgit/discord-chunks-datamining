@@ -2,23 +2,21 @@
 /** chunk id: 709093, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => A
+  Z: () => T
 }), require("./361932.js"), require("./187205.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
-  Chunk410030 = require("./410030.js"),
   Chunk563132 = require("./563132.jsx"),
   Chunk409813 = require("./409813.js"),
   Chunk614223 = require("./614223.js"),
   Chunk493572 = require("./493572.jsx"),
-  Chunk756896 = require("./756896.jsx"),
-  Chunk589072 = require("./589072.jsx"),
   Chunk104494 = require("./104494.js"),
   Chunk573702 = require("./573702.jsx"),
   Chunk474936 = require("./474936.js"),
+  Chunk388032 = require("./388032.jsx"),
   Chunk491881 = require("./491881.js"),
   Chunk236078 = require("./236078.js"),
   Chunk278345 = require("./278345.js"),
@@ -27,7 +25,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk997892 = require("./997892.js"),
   Chunk234286 = require("./234286.js");
 
-function T(e) {
+function v(e) {
   let {
     isOneStepCheckout: t,
     headerText: n,
@@ -35,7 +33,7 @@ function T(e) {
     filteredBreadcrumbs: a
   } = e;
   if (t) return (0, r.jsx)("div", {
-    className: g.oneStepCheckoutTextWrapper,
+    className: h.oneStepCheckoutTextWrapper,
     children: (0, r.jsx)(o.X6q, {
       variant: "heading-md/bold",
       children: n
@@ -43,56 +41,56 @@ function T(e) {
   });
   let s = a.length > 1;
   return (0, r.jsxs)("div", {
-    className: g.headerTextWrapper,
+    className: h.headerTextWrapper,
     children: [(0, r.jsx)(o.Text, {
       variant: "text-lg/semibold",
       children: n
-    }), s && (0, r.jsx)(d.Z, {
+    }), s && (0, r.jsx)(u.Z, {
       activeId: i,
       breadcrumbs: a
     })]
   })
 }
 
-function S(e) {
+function I(e) {
   let {
     isTier2: t
-  } = e, n = t ? y : E, i = t ? O : b;
+  } = e, n = t ? E : m, i = t ? b : g;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("img", {
       src: n,
       alt: "",
-      className: g.bigCloud
+      className: h.bigCloud
     }), (0, r.jsx)("img", {
       src: i,
       alt: "",
-      className: g.mediumCloud
+      className: h.mediumCloud
     }), (0, r.jsx)("img", {
       src: i,
       alt: "",
-      className: g.smallCloud
+      className: h.smallCloud
     })]
   })
 }
-let A = function(e) {
+let T = function(e) {
   var t, n, i;
   let {
-    hideCloseButton: d = false,
-    hideCloseOnFullScreen: E,
-    onClose: b,
-    upgradeToPremiumType: y,
-    isEligibleForTrial: O = false,
-    showTrialBadge: A = false,
-    showDiscountBadge: C = false
-  } = e, N = (0, o.apv)((0, s.ZP)()), R = y === m.p9.TIER_2, P = (0, u.Fv)(O), w = (0, p.Ng)(), D = null == w || null == (t = w.discount) ? true : t.amount, L = R ? I : v, x = R ? _.Z : f.Z, {
-    step: j,
-    breadcrumbs: M,
-    startedPaymentFlowWithPaymentSourcesRef: k,
-    isDisplayingWowMomentConfirmation: U
-  } = (0, l.JL)();
-  if (null == M || 0 === M.length) return null;
-  let G = M.flatMap(e => {
-    let t = e.useBreadcrumbLabel(O),
+    hideCloseButton: u = false,
+    hideCloseOnFullScreen: m,
+    onClose: g,
+    upgradeToPremiumType: E,
+    isEligibleForTrial: b = false,
+    showTrialBadge: T = false,
+    showDiscountBadge: S = false
+  } = e, A = E === _.p9.TIER_2, C = (0, c.Fv)(b), N = (0, d.Ng)(), R = null == N || null == (t = N.discount) ? true : t.amount, P = A ? O : y, {
+    step: w,
+    breadcrumbs: D,
+    startedPaymentFlowWithPaymentSourcesRef: L,
+    isDisplayingWowMomentConfirmation: x
+  } = (0, s.JL)();
+  if (null == D || 0 === D.length) return null;
+  let j = D.flatMap(e => {
+    let t = e.useBreadcrumbLabel(b),
       n = e.sectionHeaderText;
     return null != t ? {
       id: e.id,
@@ -100,58 +98,61 @@ let A = function(e) {
       sectionHeaderText: n
     } : []
   });
-  if (0 === G.length) return null;
-  let B = (G = G.filter(e => {
-      let t = e.id !== c.h8.ADD_PAYMENT_STEPS,
-        n = e.id === c.h8.ADD_PAYMENT_STEPS && !k.current;
-      return !O || O && (t || n)
-    })).find(e => e.id === j),
-    Z = null != (i = null == B || null == (n = B.sectionHeaderText) ? true : n.call(B)) ? i : null == B ? true : B.label,
-    F = null != Z && null != j,
-    V = P && F && j === c.h8.REVIEW,
-    H = R ? "nitro-pink" : "nitro-green";
-  return U ? (0, r.jsx)("div", {
-    className: g.container,
+  if (0 === j.length) return null;
+  let M = (j = j.filter(e => {
+      let t = e.id !== l.h8.ADD_PAYMENT_STEPS,
+        n = e.id === l.h8.ADD_PAYMENT_STEPS && !L.current;
+      return !b || b && (t || n)
+    })).find(e => e.id === w),
+    k = null != (i = null == M || null == (n = M.sectionHeaderText) ? true : n.call(M)) ? i : null == M ? true : M.label,
+    U = null != k && null != w,
+    G = C && U && w === l.h8.REVIEW,
+    B = A ? "nitro-pink" : "nitro-green",
+    Z = A ? p.intl.string(p.t["lG6a5+"]) : p.intl.string(p.t["t9uG/v"]);
+  return x ? (0, r.jsx)("div", {
+    className: h.container,
     children: (0, r.jsx)(o.$1m, {
-      color: H,
-      className: g.headerContainer
+      color: B,
+      className: h.headerContainer
     })
   }) : (0, r.jsxs)("div", {
-    className: g.container,
+    className: h.container,
     children: [(0, r.jsxs)(o.$1m, {
-      color: H,
-      className: a()(g.headerContainer, {
-        [g.containerBottomPadding]: !F
+      color: B,
+      className: a()(h.headerContainer, {
+        [h.containerBottomPadding]: !U
       }),
-      children: [(0, r.jsx)(S, {
-        isTier2: R
-      }), !d && (0, r.jsx)(o.olH, {
+      children: [(0, r.jsx)(I, {
+        isTier2: A
+      }), !u && (0, r.jsx)(o.olH, {
         "data-migration-pending": true,
-        hideOnFullscreen: E,
-        onClick: b,
-        className: g.closeButtonPosition
+        hideOnFullscreen: m,
+        onClick: g,
+        className: h.closeButtonPosition
       }), (0, r.jsx)("img", {
-        src: L,
+        src: P,
         alt: "",
-        className: V ? g.bigWumpus : g.wumpus
+        className: G ? h.bigWumpus : h.wumpus
       }), (0, r.jsx)("div", {
-        className: g.textContainer,
-        children: (0, r.jsx)(x, {
-          color: N ? "black" : "white",
-          className: g.wordmark
+        className: h.textContainer,
+        children: (0, r.jsx)(o.Text, {
+          variant: "display-md",
+          color: "header-primary",
+          className: h.nitroText,
+          children: Z
         })
       })]
-    }), (A || C) && (0, r.jsx)(h.Z, {
-      discountAmount: D
-    }), F && (0, r.jsx)(T, {
-      isOneStepCheckout: P,
-      headerText: Z,
-      step: j,
-      filteredBreadcrumbs: G
-    }), V && (0, r.jsx)("div", {
-      className: g.bodyGradientContainer,
+    }), (T || S) && (0, r.jsx)(f.Z, {
+      discountAmount: R
+    }), U && (0, r.jsx)(v, {
+      isOneStepCheckout: C,
+      headerText: k,
+      step: w,
+      filteredBreadcrumbs: j
+    }), G && (0, r.jsx)("div", {
+      className: h.bodyGradientContainer,
       children: (0, r.jsx)("div", {
-        className: g.bodyGradient
+        className: h.bodyGradient
       })
     })]
   })

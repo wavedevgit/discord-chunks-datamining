@@ -2,11 +2,10 @@
 /** chunk id: 894276, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  IZ: () => _,
-  Ng: () => h,
+  Ng: () => p,
   Re: () => l,
-  fg: () => m,
-  j_: () => p
+  fg: () => h,
+  j_: () => _
 }), require("./953529.js"), require("./539854.js"), require("./388685.js");
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
@@ -120,8 +119,7 @@ class f extends u {
     super(...e), s(this, "MAX_EMISSIONS_PER_APP_LAUNCH", 5), s(this, "emissionsCount", 0)
   }
 }
-let _ = new d("2025-09-libdiscore-migrate-notestore", "NoteStore", "Kv"),
-  p = new d("2025-09-libdiscore-migrate-guildstore", "GuildStore", "Kv"),
-  h = new d("2025-09-libdiscore-guildrolestore", "GuildRoleStore", "Kkv"),
-  m = new d("2025-09-libdiscore-rawguildemojistore", "RawGuildEmojiStore", "Kkv");
+let _ = new d("2025-09-libdiscore-migrate-guildstore", "GuildStore", "Kv"),
+  p = new d("2025-09-libdiscore-guildrolestore", "GuildRoleStore", "Kkv"),
+  h = new d("2025-09-libdiscore-rawguildemojistore", "RawGuildEmojiStore", "Kkv");
 new f("2025-09-libdiscore-telemetry")
