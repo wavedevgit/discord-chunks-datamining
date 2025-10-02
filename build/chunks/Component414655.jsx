@@ -71,7 +71,7 @@ function b(e) {
       children: [(0, n.jsxs)("div", {
         className: v.teenDisclaimer,
         children: [(0, n.jsx)(s.Text, {
-          variant: "text-sm/normal",
+          variant: "text-xs/semibold",
           color: "text-secondary",
           children: m.intl.format(m.t.r6Y1Li, {
             count: S.items.length
