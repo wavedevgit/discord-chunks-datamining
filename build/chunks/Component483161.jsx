@@ -1,7 +1,7 @@
 /** Chunk was on 9452 **/
 /** chunk id: 483161, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => L
+  Z: () => I
 });
 var Chunk951288 = require("./951288.js"),
   Chunk657707 = require("./657707.js"),
@@ -21,14 +21,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk89449 = require("./89449.js");
-let I = (0, Chunk509613.x1)(Chunk313789.n.PROFILE_PANE, {
+let A = (0, Chunk509613.x1)(Chunk313789.n.PROFILE_PANE, {
     buildLayout: () => [],
     render: Chunk564344.Z
   }),
-  L = (0, Chunk509613.wf)(Chunk313789.n.PROFILE_PANEL, {
+  I = (0, Chunk509613.wf)(Chunk313789.n.PROFILE_PANEL, {
     icon: Chunk657707.tBG,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["vi7f+v"]),
-    buildLayout: () => [I],
+    buildLayout: () => [A],
     notice: {
       stores: [Chunk778825.Z, Chunk25990.Z],
       element: Chunk398140.Z
@@ -44,7 +44,7 @@ let I = (0, Chunk509613.x1)(Chunk313789.n.PROFILE_PANE, {
       let {
         active: n,
         onClick: s
-      } = e, a = (0, r.e7)([y.default], () => y.default.getCurrentUser()), {
+      } = e, a = (0, l.e7)([f.default], () => f.default.getCurrentUser()), {
         avatarSrc: o,
         avatarDecorationSrc: d
       } = (0, O.Z)({
@@ -55,26 +55,26 @@ let I = (0, Chunk509613.x1)(Chunk313789.n.PROFILE_PANE, {
         onClick: s,
         active: n,
         children: (0, i.jsxs)("div", {
-          className: g.profileCustomizationTab,
+          className: b.profileCustomizationTab,
           children: [(0, i.jsx)(u.qEK, {
             src: o,
             avatarDecoration: d,
             size: u.EFr.SIZE_48,
             "aria-label": S.intl.string(S.t.lqaIxM)
           }), (0, i.jsxs)("div", {
-            className: g.textContainer,
+            className: b.textContainer,
             children: [(0, i.jsx)(u.Text, {
               color: "header-primary",
               variant: "text-md/medium",
               lineClamp: 1,
               children: null != (t = a.globalName) ? t : a.username
             }), (0, i.jsxs)("div", {
-              className: g.editProfilesRow,
+              className: b.editProfilesRow,
               children: [(0, i.jsx)(u.Text, {
                 variant: "text-sm/normal",
                 color: "currentColor",
                 children: S.intl.string(S.t.Ip9nBQ)
-              }), (0, i.jsx)(l.vdY, {
+              }), (0, i.jsx)(r.vdY, {
                 size: "xxs",
                 color: "currentColor"
               })]

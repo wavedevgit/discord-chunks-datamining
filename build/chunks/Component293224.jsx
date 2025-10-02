@@ -239,7 +239,7 @@ function eu(e) {
           (0, x.Z)(c, s, ei.jXE.OVERLAY), (0, $.Ws)(ei.Odu.QUICK_ACTIONS, {
             type: $.Qu.MICROPHONE,
             value: p ? $.bk.ENABLED : $.bk.DISABLED,
-            userId: F.default.getId()
+            userId: H.default.getId()
           })
         },
         onPopoutClick: S(n),
@@ -277,7 +277,7 @@ function ec(e) {
       (0, S.Z)(s, ei.jXE.OVERLAY), (0, $.Ws)(ei.Odu.QUICK_ACTIONS, {
         type: $.Qu.AUDIO,
         value: s ? $.bk.ENABLED : $.bk.DISABLED,
-        userId: F.default.getId()
+        userId: H.default.getId()
       })
     },
     y = e => t => {
@@ -355,7 +355,7 @@ function ed(e) {
     h ? f ? g(true) : (0, V.Z)() : g(!s), (0, $.Ws)(ei.Odu.QUICK_ACTIONS, {
       type: $.Qu.CAMERA,
       value: s ? $.bk.DISABLED : $.bk.ENABLED,
-      userId: F.default.getId()
+      userId: H.default.getId()
     })
   }, {
     Component: E,
@@ -422,7 +422,7 @@ function ep(e) {
     u = (0, l.e7)([K.default], () => K.default.getCurrentUser()),
     c = (0, A.Z)(n),
     p = (0, l.cj)([B.Z], () => (0, C.Z)(B.Z)),
-    h = (0, l.e7)([H.Z], () => H.Z.getCurrentUserActiveStream()),
+    h = (0, l.e7)([F.Z], () => F.Z.getCurrentUserActiveStream()),
     f = (0, ee.P)({
       pid: (0, q.getPID)(),
       allowOneClickGoLive: true,
@@ -432,7 +432,7 @@ function ep(e) {
       f(), (0, $.Ws)(ei.Odu.QUICK_ACTIONS, {
         type: $.Qu.GO_LIVE,
         value: $.bk.ENABLED,
-        userId: F.default.getId()
+        userId: H.default.getId()
       })
     },
     g = null != h;
@@ -447,7 +447,7 @@ function ep(e) {
       if (g) return (0, $.Ws)(ei.Odu.QUICK_ACTIONS, {
         type: $.Qu.GO_LIVE,
         value: $.bk.DISABLED,
-        userId: F.default.getId()
+        userId: H.default.getId()
       }), (0, Z.Z)(h, false);
       m()
     },
@@ -547,7 +547,7 @@ function eh(e) {
       onMouseEnter: S,
       onMouseLeave: x
     }
-  } = (0, u.j)(), j = ea(a), I = (0, l.e7)([_.Z, F.default], () => _.Z.isUserPlayingSounds(F.default.getId()), []) ? "green" : true;
+  } = (0, u.j)(), j = ea(a), I = (0, l.e7)([_.Z, H.default], () => _.Z.isUserPlayingSounds(H.default.getId()), []) ? "green" : true;
   return (0, i.jsx)(d.yRy, {
     targetElementRef: s,
     clickTrap: true,
@@ -579,7 +579,7 @@ function eh(e) {
           b(), (0, $.Ws)(ei.Odu.QUICK_ACTIONS, {
             type: $.Qu.SOUNDBOARD,
             value: $.bk.PANEL_OPENED,
-            userId: F.default.getId()
+            userId: H.default.getId()
           }), n(e)
         },
         highlightedColor: I,
@@ -604,13 +604,13 @@ function ef(e) {
     (0, $.Ws)(ei.Odu.QUICK_ACTIONS, {
       type: $.Qu.CALL_BUTTON,
       value: $.bk.DISABLED,
-      userId: F.default.getId()
+      userId: H.default.getId()
     }), s && f.default.disconnect()
   }, c = (e, t) => {
     f.default.selectVoiceChannel(e), (0, $.Ws)(ei.Odu.QUICK_ACTIONS, {
       type: $.Qu.CALL_BUTTON,
       value: $.bk.ENABLED,
-      userId: F.default.getId(),
+      userId: H.default.getId(),
       secondaryValue: t
     })
   }, [p, h] = r.useTransition(), m = e => t => {

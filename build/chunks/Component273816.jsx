@@ -81,7 +81,7 @@ function E(e) {
     }, [Z, A, R]),
     [z, U] = r.useState(true),
     [W, G] = r.useState(true),
-    [H, F] = r.useState(true),
+    [F, H] = r.useState(true),
     [Y, B] = r.useState(true),
     [Q, X] = r.useState(true);
   return t && !n ? null : (0, i.jsxs)("div", {
@@ -124,13 +124,13 @@ function E(e) {
           children: [I.toFixed(2), "ms"]
         })]
       })]
-    }), (H || !t) && (0, i.jsxs)("div", {
+    }), (F || !t) && (0, i.jsxs)("div", {
       className: g.measurement,
       children: [!t && (0, i.jsx)("div", {
         className: g.measurementCheckbox,
         children: (0, i.jsx)(s.XZJ, {
-          checked: H,
-          onChange: e => F(e)
+          checked: F,
+          onChange: e => H(e)
         })
       }), (0, i.jsxs)(s.Text, {
         variant: "text-md/normal",

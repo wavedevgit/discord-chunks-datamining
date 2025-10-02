@@ -177,7 +177,7 @@ function eo() {
 function ea(e) {
   let {
     isEmbeddedActivity: t
-  } = e, n = (0, H.Z)(), {
+  } = e, n = (0, F.Z)(), {
     locked: l,
     focused: c,
     incompatibleApp: m,
@@ -239,17 +239,17 @@ function ea(e) {
       f = z.Z.isNotificationDisabled(_.OverlayNotificationDisabledSetting.GAME_ACTIVITY),
       m = [];
     p || (m.push({
-      type: F.nc.WELCOME
+      type: H.nc.WELCOME
     }), !h && (a && s ? m.push({
-      type: F.nc.GO_LIVE_VOICE,
+      type: H.nc.GO_LIVE_VOICE,
       game: t,
       voiceChannelId: n,
       voiceGuild: r
     }) : a && m.push({
-      type: F.nc.GO_LIVE_NON_VOICE,
+      type: H.nc.GO_LIVE_NON_VOICE,
       game: t
     })), u && !f && m.push({
-      type: F.nc.CONTENT_INVENTORY,
+      type: H.nc.CONTENT_INVENTORY,
       entries: []
     })), null != M.current && clearTimeout(M.current), M.current = setTimeout(() => {
       d.Z.overlayMounted(...m)

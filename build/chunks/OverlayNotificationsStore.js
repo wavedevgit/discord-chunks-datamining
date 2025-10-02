@@ -452,7 +452,7 @@ let eC = new eI(Chunk570140.Z, {
     eE((0, Chunk421824.f)(Chunk388032.intl.string(Chunk388032.t["1ZbZur"])))
   },
   STREAM_START: function(e) {
-    let t = (0, H.y)();
+    let t = (0, F.y)();
     null != t && eE(t)
   },
   VOICE_STATE_UPDATES: function(e) {
@@ -480,7 +480,7 @@ let eC = new eI(Chunk570140.Z, {
           let n = ej(t, r);
           if (null != ex[n]) continue;
           ex[n] = Date.now();
-          let i = (0, F.Z)(t, o, null != (l = ev(t)) ? l : true);
+          let i = (0, H.Z)(t, o, null != (l = ev(t)) ? l : true);
           if (null == i) continue;
           eE(i, {
             priority: z.Tu.NORMAL,
