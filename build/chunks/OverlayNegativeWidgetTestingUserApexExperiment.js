@@ -15,7 +15,6 @@ require.d(exports, {
   aq: () => I,
   dj: () => f,
   eV: () => C,
-  fn: () => R,
   hS: () => h,
   lj: () => v,
   mB: () => m,
@@ -316,7 +315,7 @@ let N = (0, Chunk427164.le)({
     videoWidgetDefaultUnpinned: false,
     disableWelcomeNotification: false,
     notificationsDefaultOff: false,
-    renderInvisibleOverlay: false
+    unlockedOnlyDefaultOverlay: false
   },
   variations: {
     1: {
@@ -324,41 +323,35 @@ let N = (0, Chunk427164.le)({
       videoWidgetDefaultUnpinned: false,
       disableWelcomeNotification: false,
       notificationsDefaultOff: false,
-      renderInvisibleOverlay: false
+      unlockedOnlyDefaultOverlay: false
     },
     2: {
       voiceWidgetDefaultUnpinned: false,
       videoWidgetDefaultUnpinned: true,
       disableWelcomeNotification: false,
       notificationsDefaultOff: false,
-      renderInvisibleOverlay: false
+      unlockedOnlyDefaultOverlay: false
     },
     3: {
       voiceWidgetDefaultUnpinned: false,
       videoWidgetDefaultUnpinned: false,
       disableWelcomeNotification: true,
       notificationsDefaultOff: false,
-      renderInvisibleOverlay: false
+      unlockedOnlyDefaultOverlay: false
     },
     4: {
       voiceWidgetDefaultUnpinned: false,
       videoWidgetDefaultUnpinned: false,
       disableWelcomeNotification: false,
       notificationsDefaultOff: true,
-      renderInvisibleOverlay: false
+      unlockedOnlyDefaultOverlay: false
     },
     5: {
       voiceWidgetDefaultUnpinned: false,
       videoWidgetDefaultUnpinned: false,
       disableWelcomeNotification: false,
       notificationsDefaultOff: false,
-      renderInvisibleOverlay: true
+      unlockedOnlyDefaultOverlay: true
     }
   }
-});
-
-function R(e) {
-  return N.getConfig({
-    location: e
-  })
-}
+})

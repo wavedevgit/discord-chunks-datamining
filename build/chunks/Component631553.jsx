@@ -3,7 +3,7 @@
 "use strict";
 let i;
 require.d(exports, {
-  Z: () => eC
+  Z: () => ej
 }), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -58,6 +58,7 @@ var Chunk266454 = require("./266454.js"),
   Chunk13140 = require("./13140.js"),
   Chunk145597 = require("./145597.js"),
   Chunk658785 = require("./658785.js"),
+  Chunk486016 = require("./486016.js"),
   Chunk454991 = require("./454991.js"),
   Chunk837268 = require("./837268.js"),
   Chunk32300 = require("./32300.js"),
@@ -69,13 +70,14 @@ var Chunk266454 = require("./266454.js"),
   Chunk923532 = require("./923532.jsx"),
   Chunk107200 = require("./107200.jsx"),
   Chunk983660 = require("./983660.jsx"),
+  Chunk624864 = require("./624864.js"),
   Chunk987650 = require("./987650.js"),
   Chunk757744 = require("./757744.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk735831 = require("./735831.js");
 
-function eO(e, t, n) {
+function ev(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -84,13 +86,13 @@ function eO(e, t, n) {
   }) : e[t] = n, e
 }
 Chunk442837.ZP.PersistedStore.disableWrites = __OVERLAY__, Chunk442837.ZP.initialize();
-let eb = null;
+let e_ = null;
 
-function ev(e) {
+function eE(e) {
   e.preventDefault()
 }
 
-function e_(e) {
+function ex(e) {
   (0, O.jW)(e, async () => {
     let {
       default: e
@@ -104,12 +106,12 @@ function e_(e) {
           "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
           }))), i.forEach(function(t) {
-            eO(e, t, n[t])
+            ev(e, t, n[t])
           })
         }
         return e
       }({}, t), i = i = {
-        version: ef.bv
+        version: em.bv
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -124,7 +126,7 @@ function e_(e) {
   })
 }
 Chunk358085.isPlatformEmbedded;
-let eE = e => {
+let eS = e => {
     let {
       keybind: t,
       onClick: n,
@@ -132,10 +134,10 @@ let eE = e => {
       locked: s
     } = e, o = s ? m.P3F : "div";
     return (0, r.jsx)(o, {
-      className: l()(ey.overlayBackground, {
-        [ey.overlayActive]: !s,
-        [ey.overlayLocked]: s,
-        [ey.previewMode]: !s && i
+      className: l()(eb.overlayBackground, {
+        [eb.overlayActive]: !s,
+        [eb.overlayLocked]: s,
+        [eb.previewMode]: !s && i
       }),
       onMouseDown: e => {
         let {
@@ -143,11 +145,11 @@ let eE = e => {
           target: i,
           button: r
         } = e;
-        r === eg.AeJ.PRIMARY && t === i && n()
+        r === ey.AeJ.PRIMARY && t === i && n()
       },
-      onContextMenu: e_,
+      onContextMenu: ex,
       children: s ? null : (0, r.jsx)("div", {
-        className: ey.closeContainer,
+        className: eb.closeContainer,
         children: (0, r.jsx)(v.Z, {
           variant: v.Z.Variants.BOLD,
           keybind: t,
@@ -156,7 +158,7 @@ let eE = e => {
       })
     })
   },
-  ex = e => {
+  eC = e => {
     let {
       keyCode: t,
       shiftKey: n,
@@ -172,7 +174,7 @@ let eE = e => {
       ctrlKey: s
     }
   };
-class eS extends Chunk647438.Component {
+class eZ extends Chunk647438.Component {
   handleLock() {
     (0, Chunk481060.$sL)() || Chunk574254.Z.isOpen() || Chunk13245.Z.setInputLocked(true, (0, Chunk145597.getPID)())
   }
@@ -189,14 +191,14 @@ class eS extends Chunk647438.Component {
     if (t) {
       if (t && !e.initialized) return void this.initialSetup();
       if (!e.locked && this.props.locked) {
-        if (window.addEventListener("contextmenu", ev, false), null != eb) {
-          let e = Date.now() - eb;
-          b.Z.track(eg.rMx.OVERLAY_LOCKED, {
+        if (window.addEventListener("contextmenu", eE, false), null != e_) {
+          let e = Date.now() - e_;
+          b.Z.track(ey.rMx.OVERLAY_LOCKED, {
             unlocked_duration: e
-          }), eb = null
+          }), e_ = null
         }
-        x.Z.disable(), this.activeKeyEventShapes = [], Y.default.isPinned(eg.Odu.TEXT) && (x.Z.setLayout(E.Xq), x.Z.enable())
-      } else e.locked && !this.props.locked && (window.removeEventListener("contextmenu", ev, false), null == eb && (eb = Date.now(), b.Z.track(eg.rMx.OVERLAY_UNLOCKED)), x.Z.disable(), this.activeKeyEventShapes = [], x.Z.setLayout(E.Sr), x.Z.enable());
+        x.Z.disable(), this.activeKeyEventShapes = [], Y.default.isPinned(ey.Odu.TEXT) && (x.Z.setLayout(E.Xq), x.Z.enable())
+      } else e.locked && !this.props.locked && (window.removeEventListener("contextmenu", eE, false), null == e_ && (e_ = Date.now(), b.Z.track(ey.rMx.OVERLAY_UNLOCKED)), x.Z.disable(), this.activeKeyEventShapes = [], x.Z.setLayout(E.Sr), x.Z.enable());
       e.keybindKeyCodes !== this.props.keybindKeyCodes && (this.lockEventShape = (0, $.d2)(this.props.keybindKeyCodes))
     }
   }
@@ -224,45 +226,50 @@ class eS extends Chunk647438.Component {
     let d = require && !i && null != Chunk120356,
       u = module && null != Chunk951288 && null != Chunk647438,
       h = (0, Chunk266454.zu)(Chunk704215.z.OVERLAY_OOP_WELCOME_SWITCH_FROM_IP_NUX),
-      p = {
+      p = Chunk624864.Z.isNotificationDisabled(Chunk486016.OverlayNotificationDisabledSetting.WELCOME_GENERAL),
+      f = Chunk624864.Z.isNotificationDisabled(Chunk486016.OverlayNotificationDisabledSetting.GO_LIVE_NUDGE),
+      m = [];
+    if (p || (Chunk481060.push({
         type: Chunk987650.nc.WELCOME
-      };
-    if (c ? p = {
+      }), c ? Chunk481060.push({
         type: Chunk987650.nc.OOP_WELCOME,
         game: null != Chunk120356 ? Chunk120356 : true,
         isFirstTimeNux: !Chunk498607
-      } : l ? p = {
+      }) : l ? Chunk481060.push({
         type: Chunk987650.nc.KEYBIND_INDICATORS,
         markAsDismissed: Chunk921738
-      } : Chunk954955 && u ? p = {
+      }) : Chunk954955 && u && !Chunk442837 ? Chunk481060.push({
         type: Chunk987650.nc.GO_LIVE_VOICE,
         game: Chunk120356,
         voiceChannelId: Chunk647438,
         voiceGuild: Chunk951288
-      } : Chunk954955 && (p = {
+      }) : Chunk954955 && !Chunk442837 && Chunk481060.push({
         type: Chunk987650.nc.GO_LIVE_NON_VOICE,
         game: Chunk120356
-      }), setTimeout(async () => {
-        await (0, Chunk378799.s5)(), Chunk13245.Z.overlayMounted(p)
-      }, 128), window.addEventListener("resize", this.handleWindowResize), exports && window.addEventListener("contextmenu", ev, false), Chunk358085.isPlatformEmbedded) {
+      })), setTimeout(async () => {
+        if (await (0, Chunk378799.s5)(), Chunk481060.length > 0) {
+          let e = Chunk481060[Chunk481060.length - 1];
+          Chunk13245.Z.overlayMounted(module)
+        } else Chunk13245.Z.overlayMounted()
+      }, 128), window.addEventListener("resize", this.handleWindowResize), exports && window.addEventListener("contextmenu", eE, false), Chunk358085.isPlatformEmbedded) {
       let e = (0, Chunk372679.M)();
       if (null == module) return;
       if (true !== module.setPerfInfoCallback) {
-        var f;
+        var O;
         module.setPerfInfoCallback(e => {
-          b.Z.track(eg.rMx.OVERLAY_PERF_INFO, e)
-        }), null == (f = module.broadcastCommand) || Chunk442837.call(module, {
+          b.Z.track(ey.rMx.OVERLAY_PERF_INFO, e)
+        }), null == (O = module.broadcastCommand) || Chunk239091.call(module, {
           message: "set_perf_report_interval",
           interval: 15 * Chunk70956.Z.Millis.MINUTE
         })
       }
       Chunk998502.ZP.on("REQUEST_OPEN_EXTERNAL_URL", (e, t) => {
         Y.default.getDisableExternalLinkAlert() || t === W.Z.getLastURL() ? J.ZP.send("OPEN_EXTERNAL_URL", t) : y.Z.show({
-          title: em.intl.string(em.t.WLx4Fx),
-          body: em.intl.string(em.t.H8O1TE),
-          secondaryConfirmText: em.intl.string(em.t.IwqGhY),
-          confirmText: em.intl.string(em.t["3PatS0"]),
-          cancelText: em.intl.string(em.t["ETE/oK"]),
+          title: eO.intl.string(eO.t.WLx4Fx),
+          body: eO.intl.string(eO.t.H8O1TE),
+          secondaryConfirmText: eO.intl.string(eO.t.IwqGhY),
+          confirmText: eO.intl.string(eO.t["3PatS0"]),
+          cancelText: eO.intl.string(eO.t["ETE/oK"]),
           onConfirmSecondary: () => {
             b.Z.disableExternalLinkAlert()
           },
@@ -273,7 +280,7 @@ class eS extends Chunk647438.Component {
     window.addEventListener("keydown", this.onKeyDownGlobal, true), window.addEventListener("keyup", this.onKeyUpGlobal, true)
   }
   componentWillUnmount() {
-    window.removeEventListener("resize", this.handleWindowResize), window.removeEventListener("keydown", this.onKeyDownGlobal, true), window.removeEventListener("keyup", this.onKeyUpGlobal, true), this.props.locked && window.removeEventListener("contextmenu", ev, false), Chunk377400.Z.terminate(), Chunk185666.Z.terminate(), Chunk329557.Z.terminate()
+    window.removeEventListener("resize", this.handleWindowResize), window.removeEventListener("keydown", this.onKeyDownGlobal, true), window.removeEventListener("keyup", this.onKeyUpGlobal, true), this.props.locked && window.removeEventListener("contextmenu", eE, false), Chunk377400.Z.terminate(), Chunk185666.Z.terminate(), Chunk329557.Z.terminate()
   }
   renderInvalidSizeMessage() {
     return (0, Chunk951288.jsx)(Chunk600164.Z, {
@@ -310,7 +317,7 @@ class eS extends Chunk647438.Component {
       children: [(0, Chunk951288.jsx)(Chunk708383.Z, {}), Chunk120356 && (0, Chunk951288.jsx)("header", {
         className: Chunk735831.previewingInGameHeader,
         children: Chunk388032.intl.string(Chunk388032.t.iOq96u)
-      }), i, (!module || Chunk921738.has(Chunk981631.O0n.TEXT_WIDGET)) && (0, Chunk951288.jsx)(eE, {
+      }), i, (!module || Chunk921738.has(Chunk981631.O0n.TEXT_WIDGET)) && (0, Chunk951288.jsx)(eS, {
         locked: module,
         keybind: exports,
         onClick: module ? this.handleDeactivate : this.handleLock,
@@ -333,12 +340,12 @@ class eS extends Chunk647438.Component {
     })
   }
   constructor(e) {
-    super(e), eO(this, "handleWindowResize", () => {
+    super(e), ev(this, "handleWindowResize", () => {
       H.default.isFocusedPidOutOfProcess() ? this.forceUpdate() : u()(() => {
         this.forceUpdate()
       }, 500)
-    }), eO(this, "activeKeyEventShapes", []), eO(this, "lockEventShape", (0, $.d2)(this.props.keybindKeyCodes)), eO(this, "getActiveKeyEventIndex", e => this.activeKeyEventShapes.findIndex(t => p()(t, e))), eO(this, "onKeyDownGlobal", e => {
-      let t = ex(e),
+    }), ev(this, "activeKeyEventShapes", []), ev(this, "lockEventShape", (0, $.d2)(this.props.keybindKeyCodes)), ev(this, "getActiveKeyEventIndex", e => this.activeKeyEventShapes.findIndex(t => p()(t, e))), ev(this, "onKeyDownGlobal", e => {
+      let t = eC(e),
         n = this.getActiveKeyEventIndex(t) > false,
         i = [16, 17, 18, 91].includes(e.keyCode);
       n || i || this.activeKeyEventShapes.push(t), this.activeKeyEventShapes.length === this.lockEventShape.length && this.lockEventShape.every(e => this.activeKeyEventShapes.some(t => p()(e, t))) && (e.preventDefault(), e.stopPropagation());
@@ -346,18 +353,18 @@ class eS extends Chunk647438.Component {
         locked: r,
         activeRegions: s
       } = this.props;
-      t.keyCode === c().codes.esc && r && s.has(eg.O0n.TEXT_WIDGET) && b.Z.deactivateAllRegions()
-    }), eO(this, "onKeyUpGlobal", e => {
-      let t = ex(e),
+      t.keyCode === c().codes.esc && r && s.has(ey.O0n.TEXT_WIDGET) && b.Z.deactivateAllRegions()
+    }), ev(this, "onKeyUpGlobal", e => {
+      let t = eC(e),
         n = this.getActiveKeyEventIndex(t);
       n > false && this.activeKeyEventShapes.splice(n, 1)
     });
-    let t = e.locked && Y.default.isPinned(eg.Odu.TEXT);
+    let t = e.locked && Y.default.isPinned(ey.Odu.TEXT);
     x.Z.setLayout(t ? E.Xq : E.Sr), t && x.Z.enable()
   }
 }
 
-function eC() {
+function ej() {
   var e, t;
   let {
     locked: n,
@@ -384,7 +391,7 @@ function eC() {
   } = (0, Chunk32300.J0)("OverlaySetup");
   return (0, Chunk951288.jsx)(Chunk906732.Gt, {
     value: Chunk239091,
-    children: (0, Chunk951288.jsx)(eS, {
+    children: (0, Chunk951288.jsx)(eZ, {
       locked: require,
       initialized: i,
       incompatibleApp: Chunk647438,

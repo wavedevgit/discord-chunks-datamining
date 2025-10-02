@@ -205,7 +205,9 @@ function D(e, t, n) {
       null != r && null != l && ((0, x.gI)(l.stream, m.L.COVER), (0, u.rn)(l.stream, {
         forceMultiple: true,
         noFocus: true
-      }), (0, a.xh)(r.id, true), (0, a.n6)(r.id), (0, b.Ws)(Z.Odu.GO_LIVE, {
+      }), (0, a.xh)(r.id, {
+        forcedPinnedState: true
+      }), (0, a.n6)(r.id), (0, b.Ws)(Z.Odu.GO_LIVE, {
         type: b.Qu.GO_LIVE,
         value: b.bk.ACCEPT_REQUEST,
         userId: l.user.id
