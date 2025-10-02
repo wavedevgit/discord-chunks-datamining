@@ -20,7 +20,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk538359 = require("./538359.js");
 
-function x(e) {
+function b(e) {
   let {
     subscribers: t
   } = e;
@@ -46,7 +46,7 @@ function x(e) {
   })
 }
 
-function b(e) {
+function x(e) {
   let {
     guildName: t,
     guildIcon: n,
@@ -69,7 +69,7 @@ function b(e) {
         variant: "heading-lg/semibold",
         color: "header-primary",
         children: t
-      }), null != l && (0, r.jsx)(x, {
+      }), null != l && (0, r.jsx)(b, {
         subscribers: l
       })]
     })]
@@ -178,13 +178,13 @@ function _(e) {
     guildName: g,
     guildAvatarUrl: p,
     subscriberCount: f,
-    emojisToShow: x,
+    emojisToShow: b,
     notShownEmojiCount: _,
     storePageUrl: O
   } = o.details;
   return (0, r.jsxs)("div", {
     className: h.guildCard,
-    children: [(0, r.jsx)(b, {
+    children: [(0, r.jsx)(x, {
       guildIcon: u,
       guildName: g,
       guildAvatarUrl: p,
@@ -194,7 +194,7 @@ function _(e) {
       quoteAttribution: l,
       quoteAttributionTitle: a
     }), (0, r.jsx)(v, {
-      emojisToShow: x,
+      emojisToShow: b,
       notShownEmojiCount: _,
       storePageUrl: O
     })]

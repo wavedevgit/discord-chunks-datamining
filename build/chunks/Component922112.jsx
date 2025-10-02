@@ -2,7 +2,7 @@
 /** chunk id: 922112, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => x
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -37,7 +37,7 @@ function h(e) {
   return e
 }
 
-function x(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -49,11 +49,11 @@ function x(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let b = function(e) {
+let x = function(e) {
   let {
     guildId: t,
     resourceChannel: l,
-    index: b,
+    index: x,
     onDragComplete: j,
     onDragStart: v,
     onDragReset: _
@@ -76,7 +76,7 @@ let b = function(e) {
     } = (0, o.Z)({
       type: "RESOURCE_CHANNEL",
       optionId: l.channelId,
-      index: b,
+      index: x,
       onDragStart: v,
       onDragComplete: j,
       onDragReset: _
@@ -94,7 +94,7 @@ let b = function(e) {
       let {
         default: e
       } = await n.e("76396").then(n.bind(n, 462499));
-      return n => (0, r.jsx)(e, x(h({}, n), {
+      return n => (0, r.jsx)(e, b(h({}, n), {
         guildId: t,
         resourceChannel: l,
         onSave: Z,
@@ -106,8 +106,8 @@ let b = function(e) {
     className: f.resourceChannelContainer,
     children: [(0, r.jsxs)("div", {
       className: s()(f.resourceChannel, {
-        [f.dropIndicatorBefore]: null != P && b < P,
-        [f.dropIndicatorAfter]: null != P && b > P,
+        [f.dropIndicatorBefore]: null != P && x < P,
+        [f.dropIndicatorAfter]: null != P && x > P,
         [f.resourceChannelError]: null != E
       }),
       ref: e => {
@@ -148,7 +148,7 @@ let b = function(e) {
         })]
       }), (0, r.jsx)(a.ua7, {
         text: p.intl.string(p.t.bt75u7),
-        children: e => (0, r.jsx)(a.hU, x(h({}, e), {
+        children: e => (0, r.jsx)(a.hU, b(h({}, e), {
           icon: a.vdY,
           size: "sm",
           variant: "primary",

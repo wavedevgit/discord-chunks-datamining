@@ -33,7 +33,7 @@ function y(e) {
     guild: n,
     prompt: l,
     disableAutofocus: u,
-    promptIndex: b,
+    promptIndex: x,
     dragIndex: y,
     includeCount: E,
     singleColumn: I,
@@ -52,12 +52,12 @@ function y(e) {
     onDragStart: T,
     onDragComplete: S,
     onDragReset: P
-  }), L = (0, a.cj)([x.Z], () => {
+  }), L = (0, a.cj)([b.Z], () => {
     var e;
-    return null != (e = x.Z.errors[b]) ? e : O
-  }), [k, G] = i.useState(false), [M, U] = i.useState(false), B = null != (t = L.options) ? t : L.optionErrors.filter(p.lm)[0], F = L.config, H = l.options.length >= j.fY, z = (0, m.kl)(n.id, Array.from(w), [l]).length - w.size, V = i.useRef(null), W = i.useRef(b);
+    return null != (e = b.Z.errors[x]) ? e : O
+  }), [k, G] = i.useState(false), [M, U] = i.useState(false), B = null != (t = L.options) ? t : L.optionErrors.filter(p.lm)[0], F = L.config, H = l.options.length >= j.fY, z = (0, m.kl)(n.id, Array.from(w), [l]).length - w.size, V = i.useRef(null), W = i.useRef(x);
   return (i.useEffect(() => {
-    W.current = b
+    W.current = x
   }), i.useLayoutEffect(() => {
     setTimeout(() => {
       if (0 === W.current && !u) {
@@ -72,8 +72,8 @@ function y(e) {
       onBlur: () => U(false),
       onMouseLeave: () => U(false),
       className: s()(_.container, {
-        [_.dropIndicatorBefore]: null != Z && b < Z,
-        [_.dropIndicatorAfter]: null != Z && b > Z,
+        [_.dropIndicatorBefore]: null != Z && x < Z,
+        [_.dropIndicatorAfter]: null != Z && x > Z,
         [_.containerFocused]: M
       }),
       ref: e => {
@@ -92,7 +92,7 @@ function y(e) {
         variant: "text-xs/semibold",
         color: "text-muted",
         children: v.intl.format(v.t.yjS3zs, {
-          index: b + 1
+          index: x + 1
         })
       }), (0, r.jsx)(c.Text, {
         variant: "text-lg/semibold",
@@ -127,8 +127,8 @@ function y(e) {
       onFocus: () => U(true),
       onBlur: () => U(false),
       className: s()(_.container, {
-        [_.dropIndicatorBefore]: null != Z && b < Z,
-        [_.dropIndicatorAfter]: null != Z && b > Z,
+        [_.dropIndicatorBefore]: null != Z && x < Z,
+        [_.dropIndicatorAfter]: null != Z && x > Z,
         [_.containerFocused]: M
       }),
       ref: e => {
@@ -147,7 +147,7 @@ function y(e) {
         gap: 16,
         children: [(0, r.jsx)(c.oil, {
           label: v.intl.formatToPlainString(v.t.yjS3zs, {
-            index: b + 1
+            index: x + 1
           }),
           inputRef: V,
           value: l.title,
@@ -171,7 +171,7 @@ function y(e) {
           children: [(0, r.jsx)(N, {
             guild: n,
             prompt: l,
-            promptIndex: b,
+            promptIndex: x,
             errors: L,
             singleColumn: I
           }), null != B ? (0, r.jsx)(c.pdY, {
@@ -277,7 +277,7 @@ function N(e) {
   }));
   return (0, r.jsxs)("div", {
     className: _.options,
-    children: [n.options.map((e, d) => (0, r.jsx)(b.Z, {
+    children: [n.options.map((e, d) => (0, r.jsx)(x.Z, {
       guild: t,
       prompt: n,
       promptIndex: i,
@@ -287,7 +287,7 @@ function N(e) {
       onDragComplete: c,
       onDragReset: o,
       hasError: null != s.optionErrors[d]
-    }, e.id)), n.options.length < j.qm ? (0, r.jsx)(b.B, {
+    }, e.id)), n.options.length < j.qm ? (0, r.jsx)(x.B, {
       guild: t,
       prompt: n,
       promptIndex: i,

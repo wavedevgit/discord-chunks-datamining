@@ -2,28 +2,27 @@
 /** chunk id: 449226, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => c
+  Z: () => o
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk298392 = require("./298392.js");
 
-function c(e) {
+function o(e) {
   var t, n;
   let {
     checked: i,
-    onChange: c,
-    disabled: d,
-    className: u,
-    tooltipProps: m
-  } = e, g = e => {
+    onChange: o,
+    disabled: c,
+    className: d,
+    tooltipProps: u
+  } = e, m = e => {
     e.stopPropagation(), e.preventDefault()
   };
-  return (0, r.jsx)(a.P3F, (t = function(e) {
+  return (0, r.jsx)(s.P3F, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -41,15 +40,15 @@ function c(e) {
     }
     return e
   }({
-    onClick: g,
-    onMouseDown: g,
-    onMouseUp: g,
-    className: l()(o.switch, u)
-  }, m), n = n = {
-    children: (0, r.jsx)(s.T2, {
+    onClick: m,
+    onMouseDown: m,
+    onMouseUp: m,
+    className: l()(a.switch, d)
+  }, u), n = n = {
+    children: (0, r.jsx)(s.rsf, {
       checked: i,
-      onChange: c,
-      disabled: d
+      onChange: o,
+      disabled: c
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);

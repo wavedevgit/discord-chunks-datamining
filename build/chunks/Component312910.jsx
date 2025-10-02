@@ -34,7 +34,7 @@ let O = {
       guild: t
     } = e, {
       analyticsLocations: n
-    } = (0, a.ZP)(), i = (0, u.Z)(t.id).available, s = b.oCV[b.Eu4.TIER_1] - i;
+    } = (0, a.ZP)(), i = (0, u.Z)(t.id).available, s = x.oCV[x.Eu4.TIER_1] - i;
     return (0, r.jsxs)("div", {
       className: _.upsellContainer,
       children: [(0, r.jsx)(l.X6q, {
@@ -62,7 +62,7 @@ let O = {
           onClick: () => (0, o.f)({
             guildId: t.id,
             location: {
-              section: b.jXE.GUILD_SETTINGS_STICKERS
+              section: x.jXE.GUILD_SETTINGS_STICKERS
             }
           })
         })]
@@ -95,20 +95,20 @@ let O = {
       d = (0, f.FZ)(a),
       u = (0, f.A3)(a),
       m = s.length;
-    return null == d || a === b.Eu4.TIER_3 || o > 0 ? null : (m > u ? (t = v.intl.formatToPlainString(v.t.ZtAY1d, {
+    return null == d || a === x.Eu4.TIER_3 || o > 0 ? null : (m > u ? (t = v.intl.formatToPlainString(v.t.ZtAY1d, {
       level: d
     }), n = v.intl.formatToPlainString(v.t["13hOWl"], {
       level: d
-    }), i = b.qAy.BOOST_UPSELL_BANNER_LOST_LEVEL) : (t = v.intl.string(v.t.zT9Sxc), n = v.intl.formatToPlainString(v.t.YaW9wM, {
+    }), i = x.qAy.BOOST_UPSELL_BANNER_LOST_LEVEL) : (t = v.intl.string(v.t.zT9Sxc), n = v.intl.formatToPlainString(v.t.YaW9wM, {
       level: d,
       numAdditional: (0, f.ig)(d)
-    }), i = b.qAy.BOOST_UPSELL_BANNER_SLOTS_FULL), (0, r.jsx)(c.Z, {
+    }), i = x.qAy.BOOST_UPSELL_BANNER_SLOTS_FULL), (0, r.jsx)(c.Z, {
       header: t,
       text: n,
       guild: l,
       analyticsLocation: {
-        page: b.ZY5.GUILD_SETTINGS,
-        section: b.jXE.GUILD_SETTINGS_STICKERS,
+        page: x.ZY5.GUILD_SETTINGS,
+        section: x.jXE.GUILD_SETTINGS_STICKERS,
         object: i,
         objectType: (0, f.ge)(d)
       }

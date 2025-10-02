@@ -97,7 +97,7 @@ function I(e) {
             cancelText: C.intl.string(C.t["ETE/oK"]),
             confirmText: C.intl.string(C.t["cY+Ooa"]),
             onConfirm: () => {
-              b.Z.migratePinPermission(t.id)
+              x.Z.migratePinPermission(t.id)
             }
           })
         },
@@ -138,7 +138,7 @@ function S(e) {
       color: "header-secondary",
       variant: "text-sm/normal",
       children: C.intl.format(C.t.xkC3YW, {
-        articleURL: x.Z.getArticleURL(_.BhN.PERMISSIONS_TUTORIAL)
+        articleURL: b.Z.getArticleURL(_.BhN.PERMISSIONS_TUTORIAL)
       })
     }), (0, r.jsx)("div", {
       className: N.rolesTable,

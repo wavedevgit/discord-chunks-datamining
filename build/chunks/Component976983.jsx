@@ -21,7 +21,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk802440 = require("./802440.js");
 
-function x(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -40,7 +40,7 @@ function x(e) {
   return e
 }
 
-function b(e, t) {
+function x(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -92,7 +92,7 @@ function j(e) {
       let {
         default: e
       } = await n.e("1862").then(n.bind(n, 801001));
-      return t => (0, r.jsx)(e, b(x({}, t), {
+      return t => (0, r.jsx)(e, x(b({}, t), {
         guild: j,
         prompt: v,
         option: y,
@@ -163,7 +163,7 @@ function v(e) {
       let {
         default: e
       } = await n.e("1862").then(n.bind(n, 801001));
-      return n => (0, r.jsx)(e, b(x({}, n), {
+      return n => (0, r.jsx)(e, x(b({}, n), {
         guild: t,
         prompt: i,
         onSave: e => (0, g.Kk)(t, i.id, {

@@ -1,7 +1,7 @@
 /** Chunk was on 58175 **/
 /** chunk id: 821312, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => O
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,12 +16,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk340528 = require("./340528.js");
 
-function g(t) {
+function O(t) {
   let {
     guildId: e,
     transitionState: n,
     onClose: l
-  } = t, [g, f] = i.useState([]), [h, _] = i.useState(), j = [{
+  } = t, [O, g] = i.useState([]), [h, _] = i.useState(), j = [{
     text: b.intl.string(b.t["//3pvr"]),
     value: u.C2.DM_SPAM
   }, {
@@ -42,7 +42,7 @@ function g(t) {
   }];
 
   function x(t) {
-    g.includes(t) ? f(e => e.filter(e => e !== t)) : f(e => [...e, t])
+    O.includes(t) ? g(e => e.filter(e => e !== t)) : g(e => [...e, t])
   }
   return null == e ? (l(), null) : (0, r.jsx)(s.Modal, {
     transitionState: n,
@@ -55,12 +55,12 @@ function g(t) {
       text: b.intl.string(b.t.nAt0rK),
       onClick: function() {
         (0, d.yw)(p.rMx.GUILD_RAID_LOCKDOWN_FEEDBACK, {
-          raid_lockdown_feedback_type: g,
+          raid_lockdown_feedback_type: O,
           raid_lockdown_feedback_other_reason: h,
           guild_id: e
         }), l()
       },
-      disabled: 0 === g.length
+      disabled: 0 === O.length
     }],
     onClose: l,
     children: (0, r.jsx)(c.Kqy, {
@@ -71,26 +71,26 @@ function g(t) {
           value: n
         } = t;
         return (0, r.jsxs)("div", {
-          className: a()(O.optionContainer, {
-            [O.optionContainerOther]: n === u.C2.OTHER
+          className: a()(f.optionContainer, {
+            [f.optionContainerOther]: n === u.C2.OTHER
           }),
           children: [(0, r.jsxs)(c.P3F, {
-            className: O.optionText,
+            className: f.optionText,
             onClick: () => x(n),
             children: [(0, r.jsx)("div", {
               children: (0, r.jsx)(o.$q, {
                 type: o.M0.INVERTED,
                 size: 20,
-                value: g.includes(n),
+                value: O.includes(n),
                 onChange: () => x(n)
               })
             }), (0, r.jsx)(c.Text, {
               variant: "text-md/medium",
-              color: g.includes(n) ? "interactive-active" : "interactive-normal",
+              color: O.includes(n) ? "interactive-active" : "interactive-normal",
               children: e
             })]
-          }), n === u.C2.OTHER && g.includes(u.C2.OTHER) && (0, r.jsx)("div", {
-            className: O.textboxContainer,
+          }), n === u.C2.OTHER && O.includes(u.C2.OTHER) && (0, r.jsx)("div", {
+            className: f.textboxContainer,
             children: (0, r.jsx)(c.Kx8, {
               placeholder: b.intl.string(b.t["PAM+JS"]),
               onChange: _,

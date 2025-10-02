@@ -40,7 +40,7 @@ let N = () => {
       if (null == module) return;
       let {
         id: t
-      } = module, n = Chunk103576.Z.editedRoleIds.map(e => x.Z.getRole(e)).filter(Chunk823379.lm), r = Chunk103576.Z.getSortDeltas(), i = null, l = null;
+      } = module, n = Chunk103576.Z.editedRoleIds.map(e => b.Z.getRole(e)).filter(Chunk823379.lm), r = Chunk103576.Z.getSortDeltas(), i = null, l = null;
       Chunk103576.Z.hasRoleConfigurationChanges && (l = Chunk103576.Z.editedRoleIdsForConfigurations, i = Chunk103576.Z.getEditedRoleConnectionConfigurationsMap()), (0, Chunk84058.Gf)(exports, require, Chunk951288, Chunk512722, Chunk647438)
     },
     submitting: exports === Chunk981631.QZA.SUBMITTING,
@@ -54,9 +54,9 @@ function E(e) {
   } = e, {
     guild: n,
     roles: l
-  } = (0, a.cj)([x.Z], () => ({
-    guild: x.Z.guild,
-    roles: x.Z.roles
+  } = (0, a.cj)([b.Z], () => ({
+    guild: b.Z.guild,
+    roles: b.Z.roles
   }), []);
   s()(null != n, "Guild cannot be null here");
   let c = i.useMemo(() => l.find(e => (0, u.fI)(e)), [l]);
@@ -68,7 +68,7 @@ function E(e) {
     y(h || g.length > 0)
   }, [h, g.length]), (0, d.ZP)(() => {
     let e = m.Z.getMemberCount(n.id);
-    null != e && e <= b.cm && o.Z.requestMembers(n.id, "", 0, false)
+    null != e && e <= x.cm && o.Z.requestMembers(n.id, "", 0, false)
   });
   let [N, E] = i.useState(O.ZI.DISPLAY);
   return (i.useEffect(() => {

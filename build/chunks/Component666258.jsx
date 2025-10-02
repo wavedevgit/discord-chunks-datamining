@@ -256,13 +256,13 @@ function F(e) {
     isTemporaryInviteAllowed: D,
     setError: F,
     analyticsLocation: B
-  } = e, [G, z] = i.useState(false), [H, q] = i.useState(false), Y = i.useRef(null), [W] = (0, d.Wu)([_.Z], () => [_.Z.hideInstantInvites]), K = (0, I.Dt)(), X = (0, I.Dt)(), Q = (0, I.Dt)(), $ = i.useMemo(() => f && null != r.vanityURLCode ? (0, O.Z)(r.vanityURLCode, false) : null, [r, f]), J = i.useCallback(async () => {
+  } = e, [G, z] = i.useState(false), [H, q] = i.useState(false), Y = i.useRef(null), [W] = (0, d.Wu)([_.Z], () => [_.Z.hideInstantInvites]), K = (0, I.Dt)(), X = (0, I.Dt)(), Q = (0, I.Dt)(), $ = i.useMemo(() => f && null != r.vanityURLCode ? (0, T.Z)(r.vanityURLCode, false) : null, [r, f]), J = i.useCallback(async () => {
     var e, t;
     if (j) return;
     null !== Y.current && clearTimeout(Y.current);
     let n = await v();
     o()(null != n, "Invite key could not be determined.");
-    let l = (0, O.Z)(n);
+    let l = (0, T.Z)(n);
     return (0, E.JG)(l, () => {
       z(true), Y.current = setTimeout(() => {
         z(false), Y.current = null
@@ -327,10 +327,10 @@ function F(e) {
         } = t;
         return n === e.max_uses
       });
-    return null == t || null == n ? null : t.value === T.ZP.INVITE_OPTIONS_FOREVER.value && n.value === T.ZP.INVITE_OPTIONS_UNLIMITED.value ? P.intl.string(P.t["5u4A6e"]) : t.value !== T.ZP.INVITE_OPTIONS_FOREVER.value && n.value !== T.ZP.INVITE_OPTIONS_UNLIMITED.value ? P.intl.formatToPlainString(P.t["Z5Vt5+"], {
+    return null == t || null == n ? null : t.value === O.ZP.INVITE_OPTIONS_FOREVER.value && n.value === O.ZP.INVITE_OPTIONS_UNLIMITED.value ? P.intl.string(P.t["5u4A6e"]) : t.value !== O.ZP.INVITE_OPTIONS_FOREVER.value && n.value !== O.ZP.INVITE_OPTIONS_UNLIMITED.value ? P.intl.formatToPlainString(P.t["Z5Vt5+"], {
       maxAge: t.label,
       maxUses: n.label
-    }) : n.value === T.ZP.INVITE_OPTIONS_UNLIMITED.value && t.value !== T.ZP.INVITE_OPTIONS_FOREVER.value ? t.label : n.value !== T.ZP.INVITE_OPTIONS_UNLIMITED.value && t.value === T.ZP.INVITE_OPTIONS_FOREVER.value ? n.label : null
+    }) : n.value === O.ZP.INVITE_OPTIONS_UNLIMITED.value && t.value !== O.ZP.INVITE_OPTIONS_FOREVER.value ? t.label : n.value !== O.ZP.INVITE_OPTIONS_UNLIMITED.value && t.value === O.ZP.INVITE_OPTIONS_FOREVER.value ? n.label : null
   }(b);
   return (0, l.jsxs)("div", {
     className: a()(t, Z.footer),
@@ -400,7 +400,7 @@ function F(e) {
               color: c.Z.colors.INTERACTIVE_NORMAL
             }))
           })]
-        }), (0, l.jsx)(g.T2, {
+        }), (0, l.jsx)(h.rsf, {
           id: K,
           checked: b.flags === u.$.IS_APPLICATION_BYPASS,
           onChange: () => en(u.$.IS_APPLICATION_BYPASS)
@@ -420,7 +420,7 @@ function F(e) {
               color: c.Z.colors.INTERACTIVE_NORMAL
             }))
           })]
-        }), (0, l.jsx)(g.T2, {
+        }), (0, l.jsx)(h.rsf, {
           id: X,
           checked: b.flags === u.$.IS_GUEST_INVITE,
           onChange: () => en(u.$.IS_GUEST_INVITE)
@@ -440,7 +440,7 @@ function F(e) {
               color: c.Z.colors.INTERACTIVE_NORMAL
             }))
           })]
-        }), (0, l.jsx)(g.T2, {
+        }), (0, l.jsx)(h.rsf, {
           id: Q,
           checked: !!b.temporary,
           onChange: e => el(e)

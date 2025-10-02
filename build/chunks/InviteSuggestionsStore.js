@@ -25,7 +25,7 @@ let _ = new Set,
     numChannels: 0
   };
 
-function T(e) {
+function O(e) {
   let t = new Set,
     n = null == r || o === N.Iq.EMBEDDED_APPLICATION ? true : r.id,
     l = (0, v.rh)(_, n);
@@ -42,7 +42,7 @@ function T(e) {
   })
 }
 
-function O(e) {
+function T(e) {
   S = e, b = new Map, e.forEach((e, t) => {
     b.set(e, {
       index: t
@@ -96,8 +96,8 @@ let C = new y(Chunk570140.Z, {
     let {
       rows: g,
       counts: h
-    } = T("");
-    O(g), E = h, l = S.length
+    } = O("");
+    T(g), E = h, l = S.length
   },
   INVITE_SUGGESTIONS_SEARCH: function(e) {
     let {
@@ -106,7 +106,7 @@ let C = new y(Chunk570140.Z, {
     i = "" !== t;
     let {
       rows: n
-    } = T(t);
-    n.sort((e, t) => null != e.score && null != t.score ? e.score - t.score : 0), O(n)
+    } = O(t);
+    n.sort((e, t) => null != e.score && null != t.score ? e.score - t.score : 0), T(n)
   }
 })

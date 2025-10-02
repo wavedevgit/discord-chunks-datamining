@@ -32,13 +32,13 @@ function g() {
       };
       (0, Chunk699553.pV)(module.id, exports)
     }, [module, g]),
-    x = Chunk647438.useCallback(() => {
+    b = Chunk647438.useCallback(() => {
       null != exports && Chunk434404.Z.init(exports)
     }, [exports]);
   return (0, Chunk951288.jsx)(Chunk852860.Z, {
     submitting: p,
     errorMessage: f,
     onSave: h,
-    onReset: x
+    onReset: b
   })
 }

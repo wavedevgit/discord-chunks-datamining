@@ -61,12 +61,12 @@ function y(e) {
     guildId: t,
     emojiData: n,
     onSelectEmoji: l
-  } = e, s = i.useRef(null), a = (0, o.e7)([p.ZP], () => null != n.id ? p.ZP.getCustomEmojiById(n.id) : true), u = (0, o.e7)([h.ZP], () => h.ZP.getDefaultChannel(t)), x = i.useCallback(e => {
+  } = e, s = i.useRef(null), a = (0, o.e7)([p.ZP], () => null != n.id ? p.ZP.getCustomEmojiById(n.id) : true), u = (0, o.e7)([h.ZP], () => h.ZP.getDefaultChannel(t)), b = i.useCallback(e => {
     let {
       closePopout: t
     } = e;
     return (0, r.jsx)(g.Z, {
-      pickerIntention: b.Hz.GUILD_ROLE_BENEFIT_EMOJI,
+      pickerIntention: x.Hz.GUILD_ROLE_BENEFIT_EMOJI,
       channel: u,
       closePopout: t,
       onNavigateAway: t,
@@ -96,7 +96,7 @@ function y(e) {
     targetElementRef: s,
     animation: c.yRy.Animation.NONE,
     position: "top",
-    renderPopout: x,
+    renderPopout: b,
     children: (e, t) => {
       let {
         isShown: n
@@ -132,14 +132,14 @@ function C(e) {
     onDelete: g,
     transitionState: p,
     onClose: f
-  } = e, h = (0, u.Dt)(), [x, b] = i.useState(null != (t = null == l ? true : l.description) ? t : ""), [v, _] = i.useState(() => ({
+  } = e, h = (0, u.Dt)(), [b, x] = i.useState(null != (t = null == l ? true : l.description) ? t : ""), [v, _] = i.useState(() => ({
     id: null == l ? true : l.emoji_id,
     name: null == l ? true : l.emoji_name
-  })), O = d && "" !== x && (null != v.id || null != v.name);
+  })), O = d && "" !== b && (null != v.id || null != v.name);
 
   function C(e) {
     e.preventDefault(), O && (m({
-      description: x,
+      description: b,
       emojiId: v.id,
       emojiName: v.name
     }), f())
@@ -175,10 +175,10 @@ function C(e) {
           titleId: h,
           children: (0, r.jsx)(c.Kx8, {
             placeholder: o,
-            value: x,
+            value: b,
             rows: 1,
             autosize: true,
-            onChange: b,
+            onChange: x,
             "aria-labelledby": h
           })
         }), (0, r.jsx)(c.hjN, {
@@ -212,7 +212,7 @@ function N(e) {
     }), (0, r.jsx)(c.hjN, {
       title: j.intl.string(j.t.GK18KC),
       titleId: f,
-      children: (0, r.jsx)(x.Z, {
+      children: (0, r.jsx)(b.Z, {
         guildId: t,
         value: g,
         initialChannelId: null == l ? true : l.ref_id,

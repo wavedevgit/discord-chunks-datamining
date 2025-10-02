@@ -2,44 +2,43 @@
 /** chunk id: 415236, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => o
+  Z: () => a
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk755721 = require("./755721.js"),
-  Chunk481060 = require("./481060.js"),
+var Chunk481060 = require("./481060.js"),
   Chunk600164 = require("./600164.jsx"),
   Chunk860856 = require("./860856.js");
 
-function o(e) {
+function a(e) {
   let {
     description: t,
     icon: n,
-    id: o,
-    label: c,
-    onChange: d,
-    value: u
+    id: a,
+    label: o,
+    onChange: c,
+    value: d
   } = e;
   return (0, i.jsxs)("div", {
-    className: a.cardContent,
-    children: [(0, i.jsxs)(s.Z, {
-      justify: s.Z.Justify.BETWEEN,
-      align: s.Z.Align.CENTER,
-      children: [n, (0, i.jsx)(s.Z.Child, {
+    className: s.cardContent,
+    children: [(0, i.jsxs)(r.Z, {
+      justify: r.Z.Justify.BETWEEN,
+      align: r.Z.Align.CENTER,
+      children: [n, (0, i.jsx)(r.Z.Child, {
         grow: 1,
-        children: (0, i.jsx)(r.Text, {
+        children: (0, i.jsx)(l.Text, {
           variant: "text-md/semibold",
-          children: c
+          children: o
         })
-      }), null != d && null != u && (0, i.jsx)(l.T2, {
-        id: o,
-        checked: u,
-        onChange: d
+      }), null != c && null != d && (0, i.jsx)(l.rsf, {
+        id: a,
+        checked: d,
+        onChange: c
       })]
-    }), (0, i.jsx)(r.Text, {
+    }), (0, i.jsx)(l.Text, {
       variant: "text-xs/normal",
       color: "text-default",
-      className: a.cardDescription,
+      className: s.cardDescription,
       children: t
     })]
   })

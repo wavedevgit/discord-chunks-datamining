@@ -2,14 +2,14 @@
 /** chunk id: 8426, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Hr: () => b,
+  Hr: () => x,
   Hz: () => y,
   To: () => I,
   XG: () => O,
   _N: () => f,
   ad: () => v,
   bj: () => P,
-  el: () => x,
+  el: () => b,
   hS: () => j,
   lq: () => C,
   mM: () => N,
@@ -45,7 +45,7 @@ function h(e) {
   })
 }
 
-function x(e, t) {
+function b(e, t) {
   s.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_UPDATE_NEW_MEMBER_ACTION",
     channelId: e,
@@ -53,7 +53,7 @@ function x(e, t) {
   })
 }
 
-function b(e) {
+function x(e) {
   s.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_DELETE_NEW_MEMBER_ACTION",
     channelId: e
@@ -204,7 +204,7 @@ function I(e, t) {
   }), n)))
 }
 async function S(e, t) {
-  var n, r, o, u, m, f, h, x, b;
+  var n, r, o, u, m, f, h, b, x;
   s.Z.dispatch({
     type: "GUILD_HOME_SETTINGS_UPDATE_START"
   });
@@ -226,11 +226,11 @@ async function S(e, t) {
       welcome_message_length: null != (m = null == a || null == (o = a.welcomeMessage) || null == (r = o.message) ? true : r.length) ? m : 0,
       member_action_channel_ids: (null != (f = null == a ? true : a.newMemberActions) ? f : []).map(e => e.channelId),
       member_action_channel_actions: (null != (h = null == a ? true : a.newMemberActions) ? h : []).map(e => e.actionType),
-      resource_channel_ids: (null != (x = null == a ? true : a.resourceChannels) ? x : []).map(e => e.channelId),
+      resource_channel_ids: (null != (b = null == a ? true : a.resourceChannels) ? b : []).map(e => e.channelId),
       enabled: null == a ? true : a.enabled
     }), i.body
   } catch (t) {
-    let e = i().flatMap(null != (b = t.body) ? b : {}, e => e);
+    let e = i().flatMap(null != (x = t.body) ? x : {}, e => e);
     s.Z.dispatch({
       type: "GUILD_HOME_SETTINGS_UPDATE_FAIL"
     }), a.Z.show({

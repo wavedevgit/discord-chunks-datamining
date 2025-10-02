@@ -57,7 +57,7 @@ function I(e) {
     })
   }, []), {
     memberCount: f,
-    onlineCount: x
+    onlineCount: b
   } = (0, s.cj)([m.Z], () => ({
     memberCount: m.Z.getMemberCount(n.id),
     onlineCount: m.Z.getOnlineCount(n.id)
@@ -132,7 +132,7 @@ function I(e) {
       className: N.preview,
       guild: n,
       memberCount: f,
-      presenceCount: x
+      presenceCount: b
     })]
   })
 }
@@ -169,7 +169,7 @@ function S(e) {
         children: C.intl.string(C.t.CE5Gyc)
       }), (0, r.jsx)("div", {
         className: N.editableSection,
-        children: (0, r.jsx)(b.E, {
+        children: (0, r.jsx)(x.E, {
           guildId: t.id,
           guildMetadata: n
         })
@@ -223,7 +223,7 @@ function T(e) {
       disabled: t,
       tooltipText: t ? C.intl.string(C.t.Xx7XeH) : true
     }
-  }), [n.keywords, n.primaryCategoryId, p]), x = null != s ? s : u, b = i.useMemo(() => n.keywords.map(e => ({
+  }), [n.keywords, n.primaryCategoryId, p]), b = null != s ? s : u, x = i.useMemo(() => n.keywords.map(e => ({
     id: e,
     label: e
   })), [n.keywords]);
@@ -235,18 +235,18 @@ function T(e) {
         label: C.intl.string(C.t["0PJZXl"]),
         description: C.intl.string(C.t.ztiTDA),
         tagsLabel: C.intl.string(C.t["0PJZXl"]),
-        tags: b,
+        tags: x,
         onRemoveTag: g,
         onAddTag: p,
         onAddTagError: m,
         maxTags: O.G7,
         maxTaxLength: O._0,
         placeholder: n.keywords.length < 1 ? C.intl.string(C.t.EL4Lho) : true
-      }), null != x ? (0, r.jsx)(a.Text, {
+      }), null != b ? (0, r.jsx)(a.Text, {
         color: "text-danger",
         variant: "text-sm/normal",
         className: N.error,
-        children: x
+        children: b
       }) : null]
     }), h.length > 0 ? (0, r.jsxs)("div", {
       children: [(0, r.jsx)(a.X6q, {
@@ -295,7 +295,7 @@ function P(e) {
         })
       })]
     }), (0, r.jsx)("div", {
-      children: (0, r.jsx)(x.k, {
+      children: (0, r.jsx)(b.k, {
         guild: t,
         discoverableGuild: null
       })

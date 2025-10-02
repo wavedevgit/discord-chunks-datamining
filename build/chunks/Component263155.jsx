@@ -83,8 +83,8 @@ let k = "WELCOME_CHANNEL",
       y = (0, u.e7)([N.Z], () => N.Z.getChannel(o.channel_id)),
       C = (0, u.e7)([j.ZP], () => null != o.emoji_id ? j.ZP.getUsableCustomEmojiById(o.emoji_id) : null),
       I = null != y && S.Uu(w.Plq.VIEW_CHANNEL, y),
-      T = null != (t = (0, b.KS)(y)) ? t : m.VL1,
-      P = (0, x.ZP)(y, false),
+      T = null != (t = (0, x.KS)(y)) ? t : m.VL1,
+      P = (0, b.ZP)(y, false),
       G = () => {
         (0, m.ZDy)(async () => {
           let {
@@ -185,7 +185,7 @@ let k = "WELCOME_CHANNEL",
     } = e, {
       welcomeSettings: l,
       originalWelcomeSettings: s
-    } = (0, u.e7)([C.Z], () => C.Z.getSettingsProps()), a = (0, u.e7)([h.Z], () => h.Z.useReducedMotion), [c, d] = i.useState(null), [g, p] = i.useState(false), [x, b] = i.useState(false), {
+    } = (0, u.e7)([C.Z], () => C.Z.getSettingsProps()), a = (0, u.e7)([h.Z], () => h.Z.useReducedMotion), [c, d] = i.useState(null), [g, p] = i.useState(false), [b, x] = i.useState(false), {
       description: j,
       channels: N,
       enabled: S
@@ -196,7 +196,7 @@ let k = "WELCOME_CHANNEL",
     }, k = e => {
       null != t && e !== s.enabled && ((0, y.Es)(t.id, {
         enabled: e
-      }), b(!a), p(true))
+      }), x(!a), p(true))
     }, M = (e, t, n) => {
       if (null == N) return;
       let r = N.indexOf(e),
@@ -262,7 +262,7 @@ let k = "WELCOME_CHANNEL",
         onToggle: S || (null == N ? true : N.length) !== 0 ? () => {
           k(!S)
         } : true,
-        animateStatus: x,
+        animateStatus: b,
         firstLine: S ? Z.intl.string(Z.t.JbB7Qk) : Z.intl.string(Z.t["/bd0Qk"]),
         secondLine: S ? Z.intl.string(Z.t["TA1g7+"]) : Z.intl.string(Z.t.nc6r1N)
       }), (0, r.jsxs)("div", {

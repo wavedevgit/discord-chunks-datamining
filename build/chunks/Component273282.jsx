@@ -2,7 +2,7 @@
 /** chunk id: 273282, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  c: () => x
+  c: () => b
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,13 +19,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk289059 = require("./289059.js");
 
-function x(e) {
+function b(e) {
   let {
     guild: t,
     canManageGuild: n,
-    buttonClassName: x
+    buttonClassName: b
   } = e, {
-    analyticsLocations: b
+    analyticsLocations: x
   } = (0, s.ZP)(), j = t.features.has(m.oNc.INVITE_SPLASH), v = n && j, _ = i.useRef(null), O = i.useCallback(e => {
     c.Z.updateGuild({
       splash: e
@@ -33,17 +33,17 @@ function x(e) {
   }, []), y = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), (0, d.E6)({
       guild: t,
-      analyticsLocations: b,
+      analyticsLocations: x,
       analyticsSection: m.jXE.GUILD_INVITE_BACKGROUND,
       analyticsObject: m.qAy.BUTTON_CTA,
       perks: (0, g.o9)()
     })
-  }, [b, t]), C = i.useCallback(() => {
+  }, [x, t]), C = i.useCallback(() => {
     var e;
     null == (e = _.current) || e.activateUploadDialogue()
   }, []);
   return j ? (0, r.jsxs)("div", {
-    className: x,
+    className: b,
     children: [(0, r.jsx)(l.zxk, {
       disabled: !v,
       variant: "primary",
@@ -62,7 +62,7 @@ function x(e) {
       })
     })]
   }) : (0, r.jsx)(u.P, {
-    className: x,
+    className: b,
     onClick: y
   })
 }

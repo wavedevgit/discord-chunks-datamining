@@ -2,7 +2,7 @@
 /** chunk id: 86126, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => x
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,15 +20,15 @@ var Chunk951288 = require("./951288.js"),
   Chunk851016 = require("./851016.js"),
   Chunk471709 = require("./471709.js");
 
-function b(e) {
+function x(e) {
   var t;
   let {
     onDeleteEditState: l
   } = e, {
-    editStateId: b,
+    editStateId: x,
     guildId: j,
     groupListingId: v
-  } = (0, m.N)(), _ = (0, a.e7)([u.Z], () => u.Z.getSubscriptionListing(b)), O = null == _ ? true : _.id, y = (0, g.Z)(j), C = i.useMemo(() => {
+  } = (0, m.N)(), _ = (0, a.e7)([u.Z], () => u.Z.getSubscriptionListing(x)), O = null == _ ? true : _.id, y = (0, g.Z)(j), C = i.useMemo(() => {
     var e;
     return null != y && null != _ && (null != (e = y[_.role_id]) ? e : 0)
   }, [y, _]), N = 0 === C, E = null == O, I = null != (t = null == _ ? true : _.archived) && t, {
@@ -64,7 +64,7 @@ function b(e) {
           gap: 16,
           children: [!N && (0, r.jsx)(o.Text, {
             variant: "text-sm/normal",
-            className: x.warning,
+            className: b.warning,
             children: f.intl.formatToPlainString(f.t.ABeonZ, {
               listingMemberCount: C
             })

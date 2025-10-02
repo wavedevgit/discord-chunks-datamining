@@ -121,7 +121,7 @@ function H(e) {
       children: e => (0, r.jsx)(u.P3F, {
         className: k.boostingIconWrapper,
         onClick: () => {
-          (0, x.f)({
+          (0, b.f)({
             guildId: i,
             location: {
               section: D.jXE.GUILD_SETTINGS_SOUNDBOARD,
@@ -209,14 +209,14 @@ function W(e) {
     return [null != (e = v.Z.getSoundsForGuild(t.id)) ? e : A.Hy, v.Z.isFetchingSounds() || v.Z.isFetchingDefaultSounds()]
   }), {
     canCreateExpressions: a
-  } = (0, b.XJ)(t), o = i.useRef(null), d = (0, p.ZP)(), m = t.premiumTier, g = (0, T.yw)(t, l, m);
+  } = (0, x.XJ)(t), o = i.useRef(null), d = (0, p.ZP)(), m = t.premiumTier, g = (0, T.yw)(t, l, m);
   i.useEffect(() => {
     (0, j.w)()
   }, []);
   let f = i.useMemo(() => l.reduce((e, t) => (e[t.soundId] = new Audio((0, _.Z)(t.soundId)), e), {}), [l]),
     h = 0 === l.length && !s;
 
-  function x(e) {
+  function b(e) {
     var t;
     null == (t = o.current) || t.pause();
     let n = f[e.soundId];
@@ -296,7 +296,7 @@ function W(e) {
           sound: e,
           isPlaying: false,
           guild: t,
-          onPlaySound: x
+          onPlaySound: b
         }, e.soundId))]
       })]
     })]
@@ -313,14 +313,14 @@ function K(e) {
     soundId: d,
     name: p,
     user: f,
-    userId: x,
+    userId: b,
     emojiId: v,
     emojiName: _
   } = t, {
     analyticsLocations: O
-  } = (0, h.ZP)(), N = (0, c.e7)([E.default], () => null != f ? f : E.default.getUser(x), [x, f]), {
+  } = (0, h.ZP)(), N = (0, c.e7)([E.default], () => null != f ? f : E.default.getUser(b), [b, f]), {
     canManageGuildExpression: I
-  } = (0, b.XJ)(o), T = i.useMemo(() => I(t), [t, I]), P = null != v || null != _, [R, Z] = i.useState(false), D = (0, y.z)(t, o.id);
+  } = (0, x.XJ)(o), T = i.useMemo(() => I(t), [t, I]), P = null != v || null != _, [R, Z] = i.useState(false), D = (0, y.z)(t, o.id);
   async function A() {
     if (!R) {
       Z(true);
@@ -334,9 +334,9 @@ function K(e) {
   i.useEffect(() => {
     null == N && e();
     async function e() {
-      await (0, m.PR)(x)
+      await (0, m.PR)(b)
     }
-  }, [N, x]);
+  }, [N, b]);
   let U = i.useCallback(() => {
       null != N && (0, C.openUserProfileModal)({
         userId: N.id,

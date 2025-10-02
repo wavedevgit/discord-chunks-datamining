@@ -63,7 +63,7 @@ function E(e) {
   let {
     pendingState: l,
     dirtyState: h,
-    originalGuild: b,
+    originalGuild: x,
     settingsGuild: E,
     settingsMetadata: I,
     settingsProfile: S
@@ -144,7 +144,7 @@ function E(e) {
       } = l, r = n.map(e => e.value.trim()).filter(e => "" !== e);
       k(async () => {
         if (h.verificationDirty && await U(t, r, e), h.guildDirty) {
-          (0, x.UA)(E, b);
+          (0, b.UA)(E, x);
           let e = new Set(E.features);
           e.add(_.oNc.DISCOVERABLE), e.delete(_.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL), await G({
             features: e,
@@ -162,7 +162,7 @@ function E(e) {
         }
       })
     }
-  }, [l, k, E, h, G, U, S, M, b, I]), F = i.useCallback(() => {
+  }, [l, k, E, h, G, U, S, M, x, I]), F = i.useCallback(() => {
     var e;
     if (l.joinType === j.A.INVITE || l.joinType === j.A.DISCOVERABLE) {
       let {

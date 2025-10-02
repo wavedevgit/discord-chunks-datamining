@@ -2,7 +2,7 @@
 /** chunk id: 196902, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => x
 });
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
@@ -19,12 +19,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk755032 = require("./755032.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk565744 = require("./565744.js");
-let b = function(e) {
+let x = function(e) {
   let {
     className: t,
     guildId: n,
     tag: i,
-    badge: b,
+    badge: x,
     primaryColor: j,
     secondaryColor: v,
     isDisabled: _ = false
@@ -32,20 +32,20 @@ let b = function(e) {
   return (0, r.jsxs)("div", {
     className: t,
     children: [(0, r.jsx)(o.vwX, {
-      className: x.sectionTitle,
+      className: b.sectionTitle,
       children: h.intl.string(f.default["tN+8pK"])
     }), (0, r.jsxs)("div", {
-      className: x.tagContainer,
+      className: b.tagContainer,
       children: [(0, r.jsx)("div", {
-        className: x.tagInputContainer,
+        className: b.tagInputContainer,
         children: (0, r.jsx)(a.Is, {
-          className: x.tagInputWrapper,
-          inputClassName: l()(x.tagInput, "heading-sm/semibold"),
+          className: b.tagInputWrapper,
+          inputClassName: l()(b.tagInput, "heading-sm/semibold"),
           maxLength: 4,
           autoFocus: true,
           placeholder: "WUMP",
           prefixElement: (0, r.jsx)(c.v, {
-            badge: b,
+            badge: x,
             width: 40,
             height: 40,
             primaryTintColor: j,
@@ -60,7 +60,7 @@ let b = function(e) {
           }
         })
       }), (0, r.jsx)("div", {
-        className: x.tagTooltip,
+        className: b.tagTooltip,
         children: (0, r.jsx)(o.Text, {
           variant: "text-xs/medium",
           color: "text-muted",
@@ -68,7 +68,7 @@ let b = function(e) {
         })
       })]
     }), y && (0, r.jsx)(d.Z, {
-      className: x.tagChangeInfoBox,
+      className: b.tagChangeInfoBox,
       children: (0, r.jsx)(o.Text, {
         variant: "text-xs/medium",
         children: h.intl.format(f.default["4ZKDXl"], {

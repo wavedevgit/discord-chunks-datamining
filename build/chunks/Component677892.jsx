@@ -2,15 +2,14 @@
 /** chunk id: 677892, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  $$: () => j,
-  P_: () => O,
-  ap: () => _,
-  ku: () => v
+  $$: () => x,
+  P_: () => _,
+  ap: () => v,
+  ku: () => j
 }), require("./953529.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk45966 = require("./45966.js"),
   Chunk637853 = require("./637853.js"),
@@ -22,12 +21,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk376933 = require("./376933.js");
 
-function x(e) {
+function h(e) {
   let t, {
     title: n,
     description: i,
     icon: l,
-    hasStarted: s,
+    hasStarted: a,
     status: o,
     onEdit: c,
     extra: d
@@ -35,80 +34,80 @@ function x(e) {
   switch (o) {
     case "good":
       t = (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(a.dz2, {
+        children: [(0, r.jsx)(s.dz2, {
           size: "xs",
           color: "currentColor",
-          className: h.checkmark
-        }), (0, r.jsx)(a.Text, {
+          className: f.checkmark
+        }), (0, r.jsx)(s.Text, {
           variant: "text-xs/semibold",
           color: "status-positive",
-          className: h.statusText,
-          children: f.intl.string(f.t.rPnzRU)
+          className: f.statusText,
+          children: p.intl.string(p.t.rPnzRU)
         })]
       });
       break;
     case "warning":
       t = (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(a.Mgn, {
+        children: [(0, r.jsx)(s.Mgn, {
           size: "xs",
           color: "currentColor",
-          className: h.warning
-        }), (0, r.jsx)(a.Text, {
+          className: f.warning
+        }), (0, r.jsx)(s.Text, {
           variant: "text-xs/semibold",
           color: "status-warning",
-          className: h.statusText,
-          children: f.intl.string(f.t["yTa+dn"])
+          className: f.statusText,
+          children: p.intl.string(p.t["yTa+dn"])
         })]
       });
       break;
     case "required":
       t = (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(a.Mgn, {
+        children: [(0, r.jsx)(s.Mgn, {
           size: "xs",
           color: "currentColor",
-          className: h.danger
-        }), (0, r.jsx)(a.Text, {
+          className: f.danger
+        }), (0, r.jsx)(s.Text, {
           variant: "text-xs/semibold",
           color: "status-danger",
-          className: h.statusText,
-          children: f.intl.string(f.t.EkokLy)
+          className: f.statusText,
+          children: p.intl.string(p.t.EkokLy)
         })]
       })
   }
   return (0, r.jsxs)("div", {
-    className: h.onboardingStepContainer,
+    className: f.onboardingStepContainer,
     children: [(0, r.jsxs)("div", {
-      className: h.leftContainer,
+      className: f.leftContainer,
       children: [(0, r.jsx)("div", {
-        className: h.iconContainer,
+        className: f.iconContainer,
         children: l
       }), (0, r.jsxs)("div", {
-        className: h.onboardingStepText,
-        children: [(0, r.jsx)(a.X6q, {
+        className: f.onboardingStepText,
+        children: [(0, r.jsx)(s.X6q, {
           variant: "heading-md/semibold",
           children: n
-        }), (0, r.jsx)(a.Text, {
+        }), (0, r.jsx)(s.Text, {
           variant: "text-xs/normal",
-          color: s && "required" === o ? "status-danger" : "text-default",
+          color: a && "required" === o ? "status-danger" : "text-default",
           children: i
         })]
       })]
     }), (0, r.jsxs)("div", {
-      className: h.rightContainer,
+      className: f.rightContainer,
       children: [t, d, (0, r.jsx)("div", {
-        className: h.cta,
-        children: s ? (0, r.jsx)(a.zxk, {
+        className: f.cta,
+        children: a ? (0, r.jsx)(s.zxk, {
           size: "sm",
           variant: "secondary",
           onClick: c,
-          text: f.intl.string(f.t.bt75u7)
-        }) : (0, r.jsx)(a.zxk, {
-          icon: a.ZSh,
+          text: p.intl.string(p.t.bt75u7)
+        }) : (0, r.jsx)(s.zxk, {
+          icon: s.ZSh,
           iconPosition: "end",
           size: "sm",
           variant: "secondary",
           onClick: c,
-          text: f.intl.string(f.t["0GWElZ"])
+          text: p.intl.string(p.t["0GWElZ"])
         })
       })]
     })]
@@ -116,42 +115,71 @@ function x(e) {
 }
 
 function b(e) {
-  let t = (0, l.e7)([o.Z], () => o.Z.getDefaultChannelIds(e)),
+  let t = (0, l.e7)([a.Z], () => a.Z.getDefaultChannelIds(e)),
     n = i.useMemo(() => new Set(t), [t]),
-    [r, s] = (0, c.VF)(e, n);
-  return s.length >= p.md && r.length >= p.X
+    [r, s] = (0, o.VF)(e, n);
+  return s.length >= g.md && r.length >= g.X
+}
+
+function x(e) {
+  let t = b(e),
+    n = (0, m.O4)(e);
+  return t || n
 }
 
 function j(e) {
-  let t = b(e),
-    n = (0, g.O4)(e);
-  return t || n
+  let {
+    guildId: t,
+    onEdit: n,
+    disableGoodStatus: c
+  } = e, d = (0, l.Wu)([a.Z], () => a.Z.getDefaultChannelIds(t)), u = (0, l.e7)([a.Z], () => (0, o.kl)(t, a.Z.getDefaultChannelIds(t), a.Z.getOnboardingPrompts(t)).length), x = i.useMemo(() => new Set(d), [d]), [, j] = (0, o.VF)(t, x), v = j.length, _ = b(t), O = (0, m.O4)(t), y = (0, l.e7)([a.Z], () => a.Z.isAdvancedMode(t)), C = y ? p.intl.formatToPlainString(p.t.nHwnLC, {
+    numDefaultChannels: v,
+    numFromQuestions: u - v
+  }) : _ ? p.intl.formatToPlainString(p.t.HxEwSk, {
+    numDefaultChannels: v
+  }) : p.intl.formatToPlainString(p.t.ey3uVV, {
+    numDefaultChannels: g.md,
+    numChattableChannels: g.X
+  });
+  return (0, r.jsx)(h, {
+    title: y ? p.intl.string(p.t.YZookZ) : p.intl.string(p.t["4GSygo"]),
+    description: C,
+    icon: (0, r.jsx)(s.VL1, {
+      size: "md",
+      color: "currentColor",
+      className: f.channelIcon
+    }),
+    hasStarted: v > 0 || y,
+    status: _ || O ? c ? "none" : "good" : "required",
+    onEdit: n
+  })
 }
 
 function v(e) {
   let {
     guildId: t,
     onEdit: n,
-    disableGoodStatus: s
-  } = e, d = (0, l.Wu)([o.Z], () => o.Z.getDefaultChannelIds(t)), u = (0, l.e7)([o.Z], () => (0, c.kl)(t, o.Z.getDefaultChannelIds(t), o.Z.getOnboardingPrompts(t)).length), m = i.useMemo(() => new Set(d), [d]), [, j] = (0, c.VF)(t, m), v = j.length, _ = b(t), O = (0, g.O4)(t), y = (0, l.e7)([o.Z], () => o.Z.isAdvancedMode(t)), C = y ? f.intl.formatToPlainString(f.t.nHwnLC, {
-    numDefaultChannels: v,
-    numFromQuestions: u - v
-  }) : _ ? f.intl.formatToPlainString(f.t.HxEwSk, {
-    numDefaultChannels: v
-  }) : f.intl.formatToPlainString(f.t.ey3uVV, {
-    numDefaultChannels: p.md,
-    numChattableChannels: p.X
-  });
-  return (0, r.jsx)(x, {
-    title: y ? f.intl.string(f.t.YZookZ) : f.intl.string(f.t["4GSygo"]),
-    description: C,
-    icon: (0, r.jsx)(a.VL1, {
+    disableGoodStatus: i
+  } = e, c = (0, l.Wu)([a.Z], () => a.Z.getDefaultChannelIds(t)), d = (0, l.Wu)([a.Z], () => a.Z.getOnboardingPrompts(t)), u = d.length, [m, g] = (0, o.dF)(t, d, c), b = m.length, x = m.length + g.length, j = b / x * 100, v = (0, l.e7)([a.Z], () => a.Z.isAdvancedMode(t)), _ = u > 0, O = "none";
+  return _ && (j >= 85 && !i ? O = "good" : j < 85 && (O = "warning")), (0, r.jsx)(h, {
+    title: v ? p.intl.string(p.t.AGjtFh) : p.intl.string(p.t.dqCzoa),
+    description: p.intl.format(p.t.iuNisr, {
+      numChannels: b,
+      numTotalChannels: x,
+      channelsHook: (e, t) => (0, r.jsx)("span", {
+        style: {
+          color: j > 85 ? "var(--header-primary)" : "var(--status-warning)"
+        },
+        children: e
+      }, t)
+    }),
+    icon: (0, r.jsx)(s.iFz, {
       size: "md",
       color: "currentColor",
-      className: h.channelIcon
+      className: f.channelIcon
     }),
-    hasStarted: v > 0 || y,
-    status: _ || O ? s ? "none" : "good" : "required",
+    hasStarted: _,
+    status: O,
     onEdit: n
   })
 }
@@ -160,61 +188,32 @@ function _(e) {
   let {
     guildId: t,
     onEdit: n,
-    disableGoodStatus: i
-  } = e, s = (0, l.Wu)([o.Z], () => o.Z.getDefaultChannelIds(t)), d = (0, l.Wu)([o.Z], () => o.Z.getOnboardingPrompts(t)), u = d.length, [m, g] = (0, c.dF)(t, d, s), p = m.length, b = m.length + g.length, j = p / b * 100, v = (0, l.e7)([o.Z], () => o.Z.isAdvancedMode(t)), _ = u > 0, O = "none";
-  return _ && (j >= 85 && !i ? O = "good" : j < 85 && (O = "warning")), (0, r.jsx)(x, {
-    title: v ? f.intl.string(f.t.AGjtFh) : f.intl.string(f.t.dqCzoa),
-    description: f.intl.format(f.t.iuNisr, {
-      numChannels: p,
-      numTotalChannels: b,
-      channelsHook: (e, t) => (0, r.jsx)("span", {
-        style: {
-          color: j > 85 ? "var(--header-primary)" : "var(--status-warning)"
-        },
-        children: e
-      }, t)
-    }),
-    icon: (0, r.jsx)(a.iFz, {
-      size: "md",
-      color: "currentColor",
-      className: h.channelIcon
-    }),
-    hasStarted: _,
-    status: O,
-    onEdit: n
-  })
-}
-
-function O(e) {
-  let {
-    guildId: t,
-    onEdit: n,
-    disableGoodStatus: c
-  } = e, g = (0, l.e7)([m.Z], () => m.Z.getSettings()), p = (0, l.e7)([o.Z], () => o.Z.getEnabled(t)), b = (0, d.uo)(g), j = g.enabled, v = i.useCallback(() => {
-    (0, u.To)(t, !j)
-  }, [t, j]), _ = !(0, d.av)(g), O = "none";
-  _ && (b && !c ? O = "good" : b || (O = "required"));
-  let y = f.intl.string(f.t.GMOwOD);
-  b ? _ || (y = f.intl.string(f.t.wHOoyM)) : y = f.intl.string(f.t.wXFbgY);
-  let C = null;
-  return _ && p && (C = (0, r.jsx)("div", {
-    className: h.inlineSwitch,
-    children: (0, r.jsx)(s.T2, {
-      checked: j,
-      onChange: v,
+    disableGoodStatus: o
+  } = e, m = (0, l.e7)([u.Z], () => u.Z.getSettings()), g = (0, l.e7)([a.Z], () => a.Z.getEnabled(t)), b = (0, c.uo)(m), x = m.enabled, j = i.useCallback(() => {
+    (0, d.To)(t, !x)
+  }, [t, x]), v = !(0, c.av)(m), _ = "none";
+  v && (b && !o ? _ = "good" : b || (_ = "required"));
+  let O = p.intl.string(p.t.GMOwOD);
+  b ? v || (O = p.intl.string(p.t.wHOoyM)) : O = p.intl.string(p.t.wXFbgY);
+  let y = null;
+  return v && g && (y = (0, r.jsx)("div", {
+    className: f.inlineSwitch,
+    children: (0, r.jsx)(s.rsf, {
+      checked: x,
+      onChange: j,
       disabled: !b
     })
-  })), (0, r.jsx)(x, {
-    title: f.intl.string(f.t.mRHqsr),
-    description: y,
-    icon: (0, r.jsx)(a.Vy8, {
+  })), (0, r.jsx)(h, {
+    title: p.intl.string(p.t.mRHqsr),
+    description: O,
+    icon: (0, r.jsx)(s.Vy8, {
       size: "md",
       color: "currentColor",
-      className: h.channelIcon
+      className: f.channelIcon
     }),
-    hasStarted: _,
-    status: O,
+    hasStarted: v,
+    status: _,
     onEdit: n,
-    extra: C
+    extra: y
   })
 }

@@ -111,7 +111,7 @@ function T(e) {
   } = e;
   if (0 === i.length) return (0, r.jsxs)("div", {
     className: C.noResultsContainer,
-    children: [(0, r.jsx)(x.Z, {
+    children: [(0, r.jsx)(b.Z, {
       className: C.noResults
     }), (0, r.jsx)(c.Text, {
       variant: "text-sm/normal",
@@ -161,8 +161,8 @@ function P(e) {
   })).filter(e => e.permissions.length > 0), {
     headerHeight: f,
     headerRef: h
-  } = (0, b.Z)(0), {
-    scrolledToTop: x,
+  } = (0, x.Z)(0), {
+    scrolledToTop: b,
     handleScroll: S
   } = (0, j.V)(), P = i.useRef(false);
   return i.useEffect(() => {
@@ -179,7 +179,7 @@ function P(e) {
       className: N.contentWidth,
       children: [(0, r.jsxs)("div", {
         className: s()(N.header, N.stickyHeader, {
-          [N.stickyHeaderElevated]: !x
+          [N.stickyHeaderElevated]: !b
         }),
         ref: h,
         children: [(0, r.jsx)(j.Z, {

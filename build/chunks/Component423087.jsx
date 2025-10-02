@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk565744 = require("./565744.js");
 
-function b(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -62,9 +62,9 @@ function v(e) {
     isSelected: i,
     label: (0, d.Z)(t.primary, t.secondary)
   });
-  return (0, r.jsx)(c.P3F, j(b({}, a), {
-    className: s()(x.pickerItem, {
-      [x.pickerItemSelected]: i
+  return (0, r.jsx)(c.P3F, j(x({}, a), {
+    className: s()(b.pickerItem, {
+      [b.pickerItemSelected]: i
     }),
     onClick: l,
     children: (0, r.jsx)(m.v, {
@@ -113,13 +113,13 @@ function _(e) {
     },
     shouldShow: d,
     onRequestClose: () => m(false),
-    children: e => (0, r.jsx)(c.P3F, j(b({}, e, v), {
+    children: e => (0, r.jsx)(c.P3F, j(x({}, e, v), {
       innerRef: g,
       onClick: () => {
         m(e => !e)
       },
-      className: s()(x.pickerItem, {
-        [x.pickerItemSelected]: l
+      className: s()(b.pickerItem, {
+        [b.pickerItemSelected]: l
       }),
       children: (0, r.jsx)(c.ilE, {
         size: "custom",
@@ -150,14 +150,14 @@ let O = function(e) {
     className: t,
     children: [(0, r.jsx)(c.vwX, {
       id: O,
-      className: x.sectionTitle,
+      className: b.sectionTitle,
       children: h.intl.string(f.default.zSbMdX)
     }), (0, r.jsx)(c.nn4, {
       id: y,
       children: h.intl.string(h.t.ovbW0d)
-    }), (0, r.jsxs)("div", j(b({}, N), {
+    }), (0, r.jsxs)("div", j(x({}, N), {
       "aria-describedby": y,
-      className: x.pickerGrid,
+      className: b.pickerGrid,
       children: [p.Ek.map(e => (0, r.jsx)(v, {
         palette: e,
         badge: l,

@@ -30,9 +30,9 @@ function g(e) {
   }), h = (0, c.e7)([u.Z], () => {
     var e, n;
     return null != (n = null == (e = u.Z.getDetectableGame(t)) ? true : e.name) ? n : ""
-  }), x = i.useCallback(() => {
+  }), b = i.useCallback(() => {
     null == l || l(t)
-  }, [t, l]), b = i.useMemo(() => p ? null : null == f ? (0, r.jsx)("div", {
+  }, [t, l]), x = i.useMemo(() => p ? null : null == f ? (0, r.jsx)("div", {
     className: m.gameUnknownImage,
     children: (0, r.jsx)(o.IMN, {
       size: "lg"
@@ -50,7 +50,7 @@ function g(e) {
     children: [(0, r.jsxs)(o.P3F, {
       "aria-disabled": g,
       tabIndex: g ? false : 0,
-      onClick: g ? true : x,
+      onClick: g ? true : b,
       className: s()(m.gameImageBackground, {
         [m.gameImageLoading]: p,
         [m.disabled]: g
@@ -61,7 +61,7 @@ function g(e) {
           displayOnly: true,
           value: n
         })
-      }), b]
+      }), x]
     }), (0, r.jsx)(o.Text, {
       className: m.gameName,
       variant: "text-xs/medium",

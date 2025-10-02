@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk28742 = require("./28742.js");
 
-function b(e) {
+function x(e) {
   let {
     guildId: t,
     emojiId: n,
@@ -32,39 +32,39 @@ function b(e) {
     index: u,
     dndName: g,
     onEdit: p,
-    onMove: b,
+    onMove: x,
     disabled: j = false
   } = e, v = i.useRef(null), _ = i.useRef(null), {
     drag: O,
     dragPreview: y,
     drop: C,
     isDragging: N
-  } = (0, f.Z)(v, d, u, b);
+  } = (0, f.Z)(v, d, u, x);
   return O(_), y(C(v)), (0, r.jsxs)("div", {
     ref: v,
-    className: s()(x.card, {
-      [x.cardDragging]: N,
-      [x.disabled]: j
+    className: s()(b.card, {
+      [b.cardDragging]: N,
+      [b.disabled]: j
     }),
     children: [(0, r.jsxs)("div", {
-      className: x.emojiWrapper,
+      className: b.emojiWrapper,
       children: [(0, r.jsx)(m.Z, {
         guildId: t,
         emojiId: n,
         emojiName: l,
-        className: x.emoji
+        className: b.emoji
       }), !j && (0, r.jsx)("div", {
         ref: _,
-        className: x.dragIconWrapper,
+        className: b.dragIconWrapper,
         "data-dnd-name": g,
         children: (0, r.jsx)(o.Vni, {
           size: "xs",
           color: "currentColor",
-          className: x.dragIcon
+          className: b.dragIcon
         })
       })]
     }), (0, r.jsxs)("div", {
-      className: x.cardText,
+      className: b.cardText,
       children: [(0, r.jsx)(o.Text, {
         color: "header-primary",
         variant: "text-md/semibold",
@@ -75,16 +75,16 @@ function b(e) {
         children: c
       })]
     }), (0, r.jsx)("div", {
-      className: x.cardActions,
+      className: b.cardActions,
       children: !j && (0, r.jsx)(o.P3F, {
-        className: x.cardActionButton,
+        className: b.cardActionButton,
         onClick: j ? true : p,
         "aria-label": h.intl.string(h.t.Eoo8h4),
         "aria-disabled": j,
         children: (0, r.jsx)(o.vdY, {
           size: "xs",
           color: "currentColor",
-          className: x.cardActionButtonIcon
+          className: b.cardActionButtonIcon
         })
       })
     })]
@@ -103,13 +103,13 @@ function j(e) {
     isDragging: e.getItemType() === m
   })), h = (0, u.mY)();
   return 0 === t.length ? null : (0, r.jsx)("div", {
-    className: s()(x.container, {
-      [x.isDragging]: f
+    className: s()(b.container, {
+      [b.isDragging]: f
     }),
     children: t.map((e, t) => (0, r.jsxs)(i.Fragment, {
       children: [t > 0 ? (0, r.jsx)("div", {
-        className: x.divider
-      }) : null, (0, r.jsx)(b, {
+        className: b.divider
+      }) : null, (0, r.jsx)(x, {
         guildId: o,
         emojiId: e.emoji_id,
         emojiName: e.emoji_name,
@@ -133,22 +133,22 @@ function v(e) {
     disabled: i = false
   } = e;
   return (0, r.jsx)(o.P3F, {
-    className: x.container,
+    className: b.container,
     onClick: i ? true : t,
     "aria-disabled": i,
     children: (0, r.jsxs)("div", {
-      className: s()(x.card, x.addBenefit, {
-        [x.disabled]: i
+      className: s()(b.card, b.addBenefit, {
+        [b.disabled]: i
       }),
       children: [(0, r.jsx)("div", {
-        className: x.emojiWrapper,
+        className: b.emojiWrapper,
         children: (0, r.jsx)(o.oFk, {
           size: "xs",
           color: "currentColor",
-          className: x.addBenefitIcon
+          className: b.addBenefitIcon
         })
       }), (0, r.jsx)("div", {
-        className: x.cardText,
+        className: b.cardText,
         children: (0, r.jsx)(o.Text, {
           color: "header-primary",
           variant: "text-md/normal",

@@ -208,7 +208,7 @@ let C = e => {
               return (0, r.jsxs)(r.Fragment, {
                 children: [null != s ? _.intl.formatToPlainString(_.t.I6YOjY, {
                   payoutDate: s
-                }) : _.intl.string(_.t.G5ATX1), (0, r.jsx)(x.Z, {
+                }) : _.intl.string(_.t.G5ATX1), (0, r.jsx)(b.Z, {
                   className: O.statusScheduledIcon
                 })]
               });
@@ -229,7 +229,7 @@ let C = e => {
                 })]
               });
               return (0, r.jsxs)(r.Fragment, {
-                children: [_.intl.string(_.t.OtZ5k5), (0, r.jsx)(b.Z, {
+                children: [_.intl.string(_.t.OtZ5k5), (0, r.jsx)(x.Z, {
                   className: O.statusDeferredIcon
                 })]
               })
@@ -246,7 +246,7 @@ let C = e => {
               return (0, r.jsxs)(r.Fragment, {
                 children: [null != s ? _.intl.formatToPlainString(_.t.I6YOjY, {
                   payoutDate: s
-                }) : _.intl.string(_.t.ubdQTk), (0, r.jsx)(x.Z, {
+                }) : _.intl.string(_.t.ubdQTk), (0, r.jsx)(b.Z, {
                   className: O.statusScheduledIcon
                 })]
               });
