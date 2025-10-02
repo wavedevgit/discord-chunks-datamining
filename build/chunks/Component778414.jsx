@@ -109,9 +109,9 @@ function _(e) {
   (0, b.s)(I);
   let {
     data: w
-  } = (0, d.O)(x), T = i.useRef(w);
-  return (T.current = w, i.useEffect(() => {
-    null !== T.current && (0, s.Xf)(C.McO.USER_APPLICATION_IDENTITIES(x))
+  } = (0, d.O)(x), A = i.useRef(w);
+  return (A.current = w, i.useEffect(() => {
+    null !== A.current && (0, s.Xf)(C.McO.USER_APPLICATION_IDENTITIES(x))
   }, [x]), j) ? (0, n.jsx)(E.Z, {}) : (0, n.jsxs)(n.Fragment, {
     children: [o && v && (0, n.jsx)(D, {}), l.map((e, i) => (0, n.jsx)(N, {
       widget: e,
@@ -135,8 +135,8 @@ function L(e) {
   return (0, n.jsxs)(w.F, {
     "data-scroller": true,
     scrollerRef: a,
-    className: l()(A.scroller, {
-      [A.hasToolbar]: s
+    className: l()(T.scroller, {
+      [T.hasToolbar]: s
     }),
     fade: true,
     children: [(0, n.jsx)(P.Z, {

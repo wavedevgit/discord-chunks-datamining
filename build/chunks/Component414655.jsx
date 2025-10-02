@@ -30,17 +30,17 @@ function b(e) {
     currentUser: f.default.getCurrentUser()
   })), {
     analyticsLocations: y
-  } = (0, c.ZP)(), O = (null == b ? true : b.id) === t.id, {
-    wishlist: j,
-    error: S
-  } = (0, d.k)(r), P = i.useCallback(() => {
+  } = (0, c.ZP)(), O = (null == b ? true : b.id) === t.id, j = false === t.nsfwAllowed, {
+    wishlist: S,
+    error: P
+  } = (0, d.k)(r), I = i.useCallback(() => {
     (0, l.pT)(), (0, u.mK)({
       analyticsLocations: y,
       analyticsSource: o.Z.USER_PROFILE_WISHLIST,
       openInLayer: false
     })
   }, [y]);
-  return null != S ? null : null == j || 0 === j.items.length ? (0, n.jsx)(h.F, {
+  return null != P ? null : null == S || 0 === S.items.length ? (0, n.jsx)(h.F, {
     fade: true,
     children: (0, n.jsxs)("div", {
       className: v.emptyStateContainer,
@@ -60,7 +60,7 @@ function b(e) {
         size: "sm",
         icon: s.EOn,
         text: m.intl.string(m.t.ZbS4QE),
-        onClick: P
+        onClick: I
       })]
     })
   }) : (0, n.jsxs)(h.F, {
@@ -68,27 +68,66 @@ function b(e) {
     fade: true,
     children: [(0, n.jsxs)("div", {
       className: v.headerRow,
-      children: [(0, n.jsx)(s.Text, {
-        variant: "text-sm/normal",
-        color: "text-secondary",
-        children: m.intl.format(m.t.r6Y1Li, {
-          count: j.items.length
-        })
+      children: [(0, n.jsxs)("div", {
+        className: v.teenDisclaimer,
+        children: [(0, n.jsx)(s.Text, {
+          variant: "text-sm/normal",
+          color: "text-secondary",
+          children: m.intl.format(m.t.r6Y1Li, {
+            count: S.items.length
+          })
+        }), j && (0, n.jsx)(s.ua7, {
+          text: m.intl.string(m.t.d78ChY),
+          children: e => {
+            var t, r;
+            return (0, n.jsx)(s.d3s, (t = function(e) {
+              for (var t = 1; t < arguments.length; t++) {
+                var r = null != arguments[t] ? arguments[t] : {},
+                  n = Object.keys(r);
+                "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+                  return Object.getOwnPropertyDescriptor(r, e).enumerable
+                }))), n.forEach(function(t) {
+                  var n;
+                  n = r[t], t in e ? Object.defineProperty(e, t, {
+                    value: n,
+                    enumerable: true,
+                    configurable: true,
+                    writable: true
+                  }) : e[t] = n
+                })
+              }
+              return e
+            }({}, e), r = r = {
+              size: "custom",
+              width: 16,
+              height: 16
+            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
+              var r = Object.keys(e);
+              if (Object.getOwnPropertySymbols) {
+                var n = Object.getOwnPropertySymbols(e);
+                r.push.apply(r, n)
+              }
+              return r
+            })(Object(r)).forEach(function(e) {
+              Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
+            }), t))
+          }
+        })]
       }), O ? (0, n.jsx)(s.zxk, {
         variant: "secondary",
         size: "sm",
         icon: s.qJs,
         text: m.intl.string(m.t.SDUwMz),
-        onClick: P
+        onClick: I
       }) : (0, n.jsx)(s.zxk, {
         variant: "secondary",
         size: "sm",
         icon: s.EOn,
         text: m.intl.string(m.t["i/yzHh"]),
-        onClick: P
+        onClick: I
       })]
     }), (0, n.jsx)(p.Z, {
-      items: j.items,
+      items: S.items,
       profileOwner: t,
       isOwner: O
     })]

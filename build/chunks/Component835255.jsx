@@ -77,13 +77,13 @@ function k(e) {
   };
   return (0, n.jsxs)("div", {
     ref: N,
-    className: A.container,
+    className: T.container,
     children: [(0, n.jsx)(o.u, {
       asContainer: true,
       text: t.skuName,
       children: (0, n.jsxs)("div", {
         ref: D,
-        className: A.card,
+        className: T.card,
         onClick: F,
         children: [(0, n.jsx)(c.nn4, {
           children: (0, n.jsx)(c.H, {
@@ -91,15 +91,15 @@ function k(e) {
               let e = _.type;
               switch (e) {
                 case l.Z.AVATAR_DECORATION:
-                  return T.intl.formatToPlainString(T.t.IQQYeX, {
+                  return A.intl.formatToPlainString(A.t.IQQYeX, {
                     itemName: t.skuName
                   });
                 case l.Z.PROFILE_EFFECT:
-                  return T.intl.formatToPlainString(T.t["x/MGW1"], {
+                  return A.intl.formatToPlainString(A.t["x/MGW1"], {
                     itemName: t.skuName
                   });
                 case l.Z.NAMEPLATE:
-                  return T.intl.formatToPlainString(T.t.eVNt6O, {
+                  return A.intl.formatToPlainString(A.t.eVNt6O, {
                     itemName: t.skuName
                   });
                 default:
@@ -108,12 +108,12 @@ function k(e) {
             })()
           })
         }), (0, n.jsx)("div", {
-          className: A.cardPreview,
+          className: T.cardPreview,
           children: (() => {
             switch (_.type) {
               case l.Z.PROFILE_EFFECT:
                 return (0, n.jsx)("div", {
-                  className: A.profileEffectPreview,
+                  className: T.profileEffectPreview,
                   children: (0, n.jsx)(y.Z, {
                     skuId: _.skuId,
                     isHovering: R,
@@ -123,7 +123,7 @@ function k(e) {
                 });
               case l.Z.AVATAR_DECORATION:
                 return (0, n.jsx)("div", {
-                  className: A.avatarDecorationPreview,
+                  className: T.avatarDecorationPreview,
                   children: (0, n.jsx)(p.R, {
                     item: _,
                     user: r,
@@ -134,9 +134,9 @@ function k(e) {
                 });
               case l.Z.NAMEPLATE:
                 return (0, n.jsxs)("div", {
-                  className: A.nameplatePreview,
+                  className: T.nameplatePreview,
                   children: [(0, n.jsx)("div", {
-                    className: A.nameplateTopLeft,
+                    className: T.nameplateTopLeft,
                     children: (0, n.jsx)(m.Z, {
                       user: r,
                       nameplate: _,
@@ -148,7 +148,7 @@ function k(e) {
                       width: 200
                     })
                   }), (0, n.jsx)("div", {
-                    className: A.nameplateBottomRight,
+                    className: T.nameplateBottomRight,
                     "aria-hidden": true,
                     children: (0, n.jsx)(m.Z, {
                       user: r,
@@ -167,14 +167,14 @@ function k(e) {
             }
           })()
         }), (0, n.jsx)("div", {
-          className: A.overlay,
+          className: T.overlay,
           children: (0, n.jsx)(c.zxk, {
             focusProps: {
               ringTarget: D
             },
             variant: "primary",
             size: "sm",
-            text: T.intl.string(Z ? T.t.FdGl5O : T.t.ilhtIS),
+            text: A.intl.string(Z ? A.t.FdGl5O : A.t.ilhtIS),
             icon: Z ? true : c.OgN,
             onClick: e => {
               e.stopPropagation(), F()
@@ -187,7 +187,7 @@ function k(e) {
       iconSize: "sm",
       item: t,
       wishlistId: k,
-      className: A.removeItemButton
+      className: T.removeItemButton
     })]
   })
 }
