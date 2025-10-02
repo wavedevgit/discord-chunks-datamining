@@ -21,7 +21,7 @@ function m(t) {
     slide: i
   } = t, {
     sidekicks: r
-  } = (0, l.e7)([c.Z], () => c.Z.getCheckpointData()), m = (0, n.useMemo)(() => r.map(t => {
+  } = (0, s.e7)([c.Z], () => c.Z.getCheckpointData()), m = (0, n.useMemo)(() => r.map(t => {
     let {
       userId: i
     } = t;
@@ -34,7 +34,7 @@ function m(t) {
         color: "text-primary",
         children: h.intl.string(p.default["4xZpq6"])
       }), m.slice(1).map(t => (0, e.jsxs)("div", {
-        children: [(0, e.jsx)(s.Z, {
+        children: [(0, e.jsx)(l.Z, {
           user: t,
           size: u.EF.SIZE_120
         }), (0, e.jsx)(a.xvT, {
@@ -48,7 +48,7 @@ function m(t) {
         variant: "display-md",
         color: "text-primary",
         children: h.intl.string(p.default.d5HUsL)
-      }), (0, e.jsx)(s.Z, {
+      }), (0, e.jsx)(l.Z, {
         user: m[0],
         size: u.EF.SIZE_120
       }), (0, e.jsx)(a.xvT, {
@@ -65,7 +65,7 @@ function m(t) {
       }), (0, e.jsx)(a.xvT, {
         variant: "display-sm",
         color: "text-primary",
-        children: h.intl.string(p.default.fQGHXl)
+        children: h.intl.string(p.default.wWKySE)
       }), (0, e.jsx)(a.xvT, {
         variant: "display-sm",
         color: "text-primary",
@@ -73,7 +73,7 @@ function m(t) {
       }), (0, e.jsx)(a.xvT, {
         variant: "display-sm",
         color: "text-primary",
-        children: h.intl.string(p.default.Vrdyam)
+        children: h.intl.string(p.default.lXT6np)
       }), (0, e.jsx)(a.xvT, {
         variant: "display-sm",
         color: "text-primary",

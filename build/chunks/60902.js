@@ -9,15 +9,16 @@ var Chunk442837 = require("./442837.js"),
   Chunk887614 = require("./887614.js"),
   Chunk981631 = require("./981631.js");
 let s = (0, Chunk442837.Kb)([Chunk887614.Z], {
-  queryId: e => o.McO.ACTIVITIES_DISCORD_CONFIG(e.definition.name),
+  getQueryId: e => e.getConfig({
+    location: "useActivitiesDiscordConfig"
+  }).enabled ? o.McO.ACTIVITIES_DISCORD_CONFIG(e.definition.name) : null,
   get: e => a.Z.getOne(e.definition.name),
-  load: async (e, t) => {
+  load: async e => {
     let {
-      enabled: n
-    } = t.getConfig({
+      enabled: t
+    } = e.getConfig({
       location: "useActivitiesDiscordConfig"
     });
-    n && await (0, i.t)(t.definition.name)
-  },
-  useStateHook: Chunk442837.e7
+    t && await (0, i.t)(e.definition.name)
+  }
 })

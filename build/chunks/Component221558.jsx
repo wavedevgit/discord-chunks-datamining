@@ -35,9 +35,9 @@ function p() {
         guildCount: require.length
       })
     }), require.map((i, r) => (0, e.jsxs)("div", {
-      children: [(0, e.jsx)(s.Z, {
+      children: [(0, e.jsx)(l.Z, {
         guild: i,
-        size: s.Z.Sizes.XLARGE
+        size: l.Z.Sizes.XLARGE
       }), (0, e.jsx)(a.xvT, {
         variant: "display-md",
         color: "text-primary",
@@ -50,7 +50,7 @@ function p() {
         }), (0, e.jsx)(a.xvT, {
           variant: "display-sm",
           color: "text-primary",
-          children: u.intl.string(x.default.nPTMHh)
+          children: u.intl.string(x.default.wWKySE)
         }), (0, e.jsx)(a.xvT, {
           variant: "display-md",
           color: "text-primary",
@@ -58,7 +58,7 @@ function p() {
         }), (0, e.jsx)(a.xvT, {
           variant: "display-sm",
           color: "text-primary",
-          children: u.intl.string(x.default["3NjdFR"])
+          children: u.intl.string(x.default.lXT6np)
         })]
       })]
     }, i.id))]

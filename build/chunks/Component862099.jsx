@@ -103,7 +103,7 @@ let B = Chunk647438.memo(function(e) {
   })
 });
 
-function H(e) {
+function V(e) {
   let {
     guildEvent: t,
     channel: n
@@ -133,7 +133,7 @@ function H(e) {
   })
 }
 
-function V(e) {
+function H(e) {
   let {
     guildEvent: t,
     noticeType: n
@@ -236,7 +236,7 @@ function F(e) {
         className: G.channelName,
         children: null != (t = null == u ? true : u.name) ? t : s
       })]
-    }), (0, i.jsx)(V, {
+    }), (0, i.jsx)(H, {
       guildEvent: n,
       noticeType: r
     })]
@@ -412,7 +412,7 @@ let X = Chunk647438.memo(function(e) {
     channel: r
   }) : l.entity_type === k.WX.EXTERNAL ? d = (0, i.jsx)(z, {
     guildEvent: l
-  }) : l.entity_type === k.WX.VOICE && null != r && (d = (0, i.jsx)(H, {
+  }) : l.entity_type === k.WX.VOICE && null != r && (d = (0, i.jsx)(V, {
     guildEvent: l,
     channel: r
   }));

@@ -20,13 +20,16 @@ function o() {
   } = (0, Chunk442837.e7)([Chunk5888.Z], () => Chunk5888.Z.getCheckpointData());
   return (0, Chunk951288.jsxs)(Chunk198358.Z, {
     children: [(0, Chunk951288.jsx)(Chunk793030.xvT, {
-      variant: "display-lg",
-      color: "text-primary",
-      children: module.toLocaleString()
-    }), (0, Chunk951288.jsx)(Chunk793030.xvT, {
       variant: "display-sm",
       color: "text-primary",
-      children: Chunk388032.intl.string(Chunk509950.default.nPTMHh)
+      children: Chunk388032.intl.format(Chunk509950.default.nPTMHh, {
+        numMessages: module,
+        messagesHook: (t, i) => (0, e.jsx)(n.xvT, {
+          variant: "display-lg",
+          color: "text-primary",
+          children: t
+        }, i)
+      })
     }), (0, Chunk951288.jsx)(Chunk793030.xvT, {
       variant: "display-sm",
       color: "text-primary",

@@ -477,20 +477,20 @@ function eb(e) {
     p = (0, c.e7)([B.Z], () => B.Z.getGuildDimensions(n).scrollTo),
     h = (0, c.e7)([Y.Z], () => Y.Z.getChannelId()),
     g = (0, c.e7)([W.Z], () => W.Z.can(ei.Plq.MANAGE_GUILD, o)),
-    m = (0, c.e7)([H.Z], () => H.Z.isUnavailable(n)),
+    m = (0, c.e7)([V.Z], () => V.Z.isUnavailable(n)),
     P = (0, c.e7)([K.default], () => K.default.getCurrentUser()),
     {
       enableStudyGroup: Z
     } = (0, A.s)(o),
     w = (0, v.ZP)(e => e.currentlyShown.has(u.z.NAGBAR_NOTICE_CONNECT_PLAYSTATION)),
     [k, M] = i.useState(!w),
-    V = (0, _.Z)(n),
+    H = (0, _.Z)(n),
     {
       analyticsLocations: J
     } = (0, E.ZP)(O.Z.GUILD_HEADER);
   i.useEffect(() => {
-    n !== V && M(!w)
-  }, [n, V, w]);
+    n !== H && M(!w)
+  }, [n, H, w]);
   let [$, ee] = (0, v.ZP)(e => [el.XN.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(ea.R.GUILD_HEADER_TOOLTIPS)], s.X), et = (0, y.Z)(o), en = (0, f.s9z)(f.JQI), er = (0, c.e7)([z.Z], () => z.Z.hasLayers()), eo = (0, c.e7)([U.Z], () => U.Z.shouldShow(eh)), es = (0, R.cT)(n, "GuildSidebar") && g && (null == o ? true : o.premiumProgressBarEnabled) === false && !X.s.isDisallowPopupsSet(), ec = (0, j.Z)(n), eu = (null == o ? true : o.features.has(ei.oNc.HUB)) === true, ed = g && (null == o ? true : o.features.has(ei.oNc.DISCOVERABLE)) === true, ep = (0, c.e7)([x.Z, z.Z], () => null != o && null != P && g && !z.Z.hasLayers() && x.Z.shouldShowGuildTemplateDirtyTooltip(n)), ef = (0, c.e7)([G.Z], () => G.Z.getChannel(a)), {
     isPopoutOpen: eg
   } = (0, C.y)(), eb = null != (t = null == o ? true : o.features.has(ei.oNc.COMMUNITY)) && t, e_ = Q.ZP.isNewUser(P), eO = k && !e_;

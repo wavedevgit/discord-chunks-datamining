@@ -198,10 +198,13 @@ let E = {
     fetchApplication: g
   },
   b = (0, Chunk442837.Kb)(Chunk812206.Z, {
-    queryId: e => u.McO.APPLICATIONS(e),
-    get: e => null != e ? c.Z.getApplication(e) : null,
-    load: (e, t) => null != t ? g(t, false, e).then(u.dG4) : Promise.resolve(),
-    useStateHook: Chunk442837.e7
+    getQueryId: Chunk981631.McO.APPLICATIONS,
+    get: e => {
+      var t;
+      return null != e && null != (t = c.Z.getApplication(e)) ? t : null
+    },
+    load: e => null != e ? g(e, false).then(u.dG4) : Promise.resolve(),
+    getIsLoading: e => null != e && c.Z.isFetchingApplication(e)
   });
 
 function y(e) {
@@ -219,6 +222,6 @@ function y(e) {
       return t
     }, [e, t]),
     isLoading: n,
-    error: i
+    error: null != i ? i : true
   }
 }

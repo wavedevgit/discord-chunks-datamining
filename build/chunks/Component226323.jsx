@@ -114,7 +114,7 @@ function P(e) {
     {
       icon: G,
       colorize: B,
-      getStatus: H
+      getStatus: V
     } = null != (l = function(e) {
       let {
         serverDeaf: t,
@@ -135,9 +135,9 @@ function P(e) {
       mute: A,
       localMute: R
     })) ? l : {},
-    V = null != H ? I.intl.formatToPlainString(I.t["1+MVBA"], {
+    H = null != V ? I.intl.formatToPlainString(I.t["1+MVBA"], {
       userName: U,
-      status: H()
+      status: V()
     }) : U;
 
   function F(e) {
@@ -175,7 +175,7 @@ function P(e) {
     position: "top",
     clickTrap: true,
     children: e => (0, r.jsx)(s.ua7, {
-      text: V,
+      text: H,
       children: t => (0, r.jsx)(s.P3F, T(C({}, t, e), {
         innerRef: d,
         onClick: t => {

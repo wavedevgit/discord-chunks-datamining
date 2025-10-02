@@ -505,7 +505,7 @@ class tp extends Chunk647438.PureComponent {
     } = e, o = "REPLACE" === t;
     ! function(e) {
       if (Q.Z.isConnected() || Q.Z.isTryingToConnect()) return;
-      let t = eV.default.getToken();
+      let t = eH.default.getToken();
       null != t && null != function(e) {
         for (let {
             path: t,

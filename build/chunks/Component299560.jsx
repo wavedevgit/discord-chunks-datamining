@@ -73,7 +73,7 @@ function j(e) {
   } = e, {
     placeholder: j,
     getAriaLabel: S
-  } = O[r], P = "small" === c, x = null == (t = (0, d.uV)().data) ? true : t.map(e => e.application_id), I = i.useMemo(() => {
+  } = O[r], P = "small" === c, x = null == (t = (0, d.uV)().data) ? true : t.map(e => e.application_id), w = i.useMemo(() => {
     switch (r) {
       case s.l.CURRENT_GAMES:
       case s.l.FAVORITE_GAMES:
@@ -91,16 +91,16 @@ function j(e) {
           applicationId: e
         })
     }
-  }, [r, x]), w = i.useCallback(() => {
-    u || null == I || ((0, h.qH)(r, I), b({
+  }, [r, x]), I = i.useCallback(() => {
+    u || null == w || ((0, h.qH)(r, w), b({
       action: "WIDGET_ADDED",
       widgetEdited: r
     }), (0, p.L$)(v.qb.WIDGET_ADDED), null == l || l())
-  }, [u, r, I, b, l]);
-  return null == I ? null : (0, n.jsxs)(o.P3F, {
+  }, [u, r, w, b, l]);
+  return null == w ? null : (0, n.jsxs)(o.P3F, {
     className: a()(y.addButtonContainer, P && y.sizeSmall, u && y.loading),
-    onClick: w,
-    "aria-label": S(I),
+    onClick: I,
+    "aria-label": S(w),
     "aria-busy": u,
     children: ["details" === j.variant ? (0, n.jsx)(m.i, {
       applicationId: j.applicationId,
@@ -117,7 +117,7 @@ function j(e) {
       }), (0, n.jsx)(o.Text, {
         variant: "text-md/medium",
         color: "header-primary",
-        children: (0, h.mR)(I)
+        children: (0, h.mR)(w)
       })]
     })]
   })

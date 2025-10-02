@@ -19,14 +19,28 @@ function o() {
     }
   } = (0, Chunk442837.e7)([Chunk5888.Z], () => Chunk5888.Z.getCheckpointData());
   return (0, Chunk951288.jsxs)(Chunk198358.Z, {
-    children: [(0, Chunk951288.jsx)(Chunk793030.xvT, {
-      variant: "display-lg",
-      color: "text-primary",
-      children: module.toLocaleString()
-    }), (0, Chunk951288.jsx)(Chunk793030.xvT, {
+    children: [module >= 1e3 ? (0, Chunk951288.jsx)(Chunk793030.xvT, {
       variant: "display-sm",
       color: "text-primary",
-      children: Chunk388032.intl.string(Chunk509950.default["3NjdFR"])
+      children: Chunk388032.intl.format(Chunk509950.default.Xu0Qsb, {
+        numHours: Math.floor(module / 60),
+        hoursHook: (t, i) => (0, e.jsx)(n.xvT, {
+          variant: "display-lg",
+          color: "text-primary",
+          children: t
+        }, i)
+      })
+    }) : (0, Chunk951288.jsx)(Chunk793030.xvT, {
+      variant: "display-sm",
+      color: "text-primary",
+      children: Chunk388032.intl.format(Chunk509950.default.UZbUtr, {
+        numMinutes: Math.floor(module),
+        minutesHook: (t, i) => (0, e.jsx)(n.xvT, {
+          variant: "display-lg",
+          color: "text-primary",
+          children: t
+        }, i)
+      })
     }), (0, Chunk951288.jsx)(Chunk793030.xvT, {
       variant: "display-sm",
       color: "text-primary",

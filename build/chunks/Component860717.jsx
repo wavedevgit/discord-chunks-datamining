@@ -1,4 +1,4 @@
-/** Chunk was on 53714 **/
+/** Chunk was on 80654 **/
 /** chunk id: 860717, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => X
@@ -69,7 +69,7 @@ function N(e) {
   let {
     component: t
   } = e;
-  if (Array.isArray(t)) return C(t);
+  if (Array.isArray(t)) return A(t);
   switch (t.type) {
     case "HERO":
       let {
@@ -89,17 +89,17 @@ function N(e) {
         }
         return i
       }(t, ["body"]);
-      return (0, r.jsx)(k, T(S({}, i), {
-        body: C(n)
+      return (0, r.jsx)(C, T(S({}, i), {
+        body: A(n)
       }));
     case "GRID":
-      return (0, r.jsx)(R, {
-        children: C(t.children)
+      return (0, r.jsx)(Z, {
+        children: A(t.children)
       });
     case "FIELD":
-      return (0, r.jsx)(Z, {
-        value: A(t.value),
-        name: A(t.name)
+      return (0, r.jsx)(R, {
+        value: k(t.value),
+        name: k(t.name)
       });
     case "TEXT":
       return (0, r.jsx)(L, S({}, t));
@@ -112,17 +112,17 @@ function N(e) {
   }
 }
 
-function A(e, t) {
+function k(e, t) {
   return (0, r.jsx)(N, {
     component: e
   }, t)
 }
 
-function C(e) {
-  return e.map((e, t) => A(e, t))
+function A(e) {
+  return e.map((e, t) => k(e, t))
 }
 
-function k(e) {
+function C(e) {
   let {
     title: t,
     body: n,
@@ -166,7 +166,7 @@ function k(e) {
   })
 }
 
-function R(e) {
+function Z(e) {
   let {
     children: t
   } = e;
@@ -176,7 +176,7 @@ function R(e) {
   })
 }
 
-function Z(e) {
+function R(e) {
   let {
     name: t,
     value: n

@@ -1,4 +1,4 @@
-/** Chunk was on 53714 **/
+/** Chunk was on 80654 **/
 /** chunk id: 750312, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -38,35 +38,35 @@ function j(e) {
   } = (0, g.KZ)(), N = (0, p.Z)({
     widgetType: n.type,
     onAction: D
-  }), A = E && null != j && !s, {
-    isDragging: C,
-    dragSourcePosition: k
+  }), k = E && null != j && !s, {
+    isDragging: A,
+    dragSourcePosition: C
   } = (0, f.q)({
     dropRef: S,
     dragRef: T,
     userId: t,
     widget: n,
     index: j,
-    disableInteraction: !A
-  }), [R, Z] = i.useState(false);
+    disableInteraction: !k
+  }), [Z, R] = i.useState(false);
   return (0, r.jsx)(h, {
     ref: S,
-    disableInteraction: !A,
-    onMouseEnter: () => Z(true),
-    onMouseLeave: () => Z(false),
-    dragSourcePosition: k,
+    disableInteraction: !k,
+    onMouseEnter: () => R(true),
+    onMouseLeave: () => R(false),
+    dragSourcePosition: C,
     index: null != j ? j : 0,
     children: (0, r.jsxs)("section", {
       ref: N,
       className: o()(y.container, O, {
-        [y.isDragging]: C
+        [y.isDragging]: A
       }),
       "aria-labelledby": I,
-      children: [A && (0, r.jsx)(b.Z, {
+      children: [k && (0, r.jsx)(b.Z, {
         buttonRef: T,
         widget: n,
         className: o()(y.dragHandleButton, {
-          [y.opacity]: R || C
+          [y.opacity]: Z || A
         }),
         additionalMenuItems: w
       }), (0, r.jsx)(m.Z, {

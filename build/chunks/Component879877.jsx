@@ -1,4 +1,4 @@
-/** Chunk was on 53714 **/
+/** Chunk was on 80654 **/
 /** chunk id: 879877, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -29,18 +29,18 @@ function O(e) {
     disableInteraction: O = false
   } = e, x = null != (t = null == n ? true : n.filter(e => null != (0, p.zK)(e))) ? t : [], _ = x.length > 0, P = l.qH, w = a && !O && (0, g.M8)(c) && x.length < P, {
     trackUserProfileAction: I
-  } = (0, d.KZ)(), E = (0, i.useRef)(new Map), S = (0, i.useRef)(null), T = (0, i.useRef)(null), [D, N] = (0, i.useState)(0), [A, C] = (0, i.useState)(false), k = v(S, T, x, E, N);
-  if ((0, i.useEffect)(() => (k(), window.addEventListener("resize", k), () => {
-      window.removeEventListener("resize", k)
-    }), [k, null == x ? true : x.join("")]), !_ && !w) return null;
-  let R = A ? x : x.slice(0, x.length - D);
+  } = (0, d.KZ)(), E = (0, i.useRef)(new Map), S = (0, i.useRef)(null), T = (0, i.useRef)(null), [D, N] = (0, i.useState)(0), [k, A] = (0, i.useState)(false), C = v(S, T, x, E, N);
+  if ((0, i.useEffect)(() => (C(), window.addEventListener("resize", C), () => {
+      window.removeEventListener("resize", C)
+    }), [C, null == x ? true : x.join("")]), !_ && !w) return null;
+  let Z = k ? x : x.slice(0, x.length - D);
   return (0, r.jsxs)("div", {
     className: o()(m.tagListContainer, u),
     children: [_ && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("ul", {
         className: m.tagList,
         "aria-label": b.intl.string(b.t.EfjTi4),
-        children: R.map(e => (0, r.jsx)(y, {
+        children: Z.map(e => (0, r.jsx)(y, {
           tag: e,
           isCurrentUser: a,
           applicationId: s,
@@ -50,16 +50,16 @@ function O(e) {
           },
           disableInteraction: O
         }, e))
-      }), D > 0 && (A ? (0, r.jsx)(h, {
+      }), D > 0 && (k ? (0, r.jsx)(h, {
         onClick: () => {
-          C(false), I({
+          A(false), I({
             action: "COLLAPSE_GAME_TAGS"
           })
         }
       }) : (0, r.jsx)(j, {
         numHidden: D,
         onClick: () => {
-          C(true), I({
+          A(true), I({
             action: "EXPAND_GAME_TAGS"
           })
         },

@@ -31,7 +31,7 @@ function g(e) {
     onHeaderTitleClick: I
   } = e, {
     data: T
-  } = (0, c.H)(y), S = T[0], {
+  } = (0, c.H)(y), S = null == T ? true : T[0], {
     data: A
   } = (0, l.Z)(y), C = i.useMemo(() => {
     var e;

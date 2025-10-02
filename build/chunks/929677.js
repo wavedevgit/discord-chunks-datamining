@@ -1,5 +1,6 @@
-/** Chunk was on 56848 **/
-/** chunk id: 929677, original params: e,t,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 929677, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   O: () => u
 });
@@ -11,35 +12,34 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js");
 let c = {
     async fetchUserApplicationIdentitiesWithProfiles(e, t) {
-      l.Z.dispatch({
+      a.Z.dispatch({
         type: "USER_APPLICATION_IDENTITY_FETCH_USER_START",
         userId: e
       });
       try {
-        let r = await i.tn.get({
-          url: o.ANM.USER_APPLICATION_IDENTITIES(e),
+        let n = await i.tn.get({
+          url: l.ANM.USER_APPLICATION_IDENTITIES(e),
           query: {
             with_profiles: true
           },
           rejectWithError: true,
           signal: t
         });
-        l.Z.dispatch({
+        a.Z.dispatch({
           type: "USER_APPLICATION_IDENTITY_FETCH_USER_SUCCESS",
           userId: e,
-          identities: r.body.identities
+          identities: n.body.identities
         })
       } catch (t) {
-        throw l.Z.dispatch({
+        throw a.Z.dispatch({
           type: "USER_APPLICATION_IDENTITY_FETCH_USER_FAILURE",
           userId: e
-        }), a.Z.captureException(t), t
+        }), o.Z.captureException(t), t
       }
     }
   },
   u = (0, Chunk442837.Kb)(Chunk380221.Z, {
-    queryId: e => o.McO.USER_APPLICATION_IDENTITIES(e),
+    getQueryId: Chunk981631.McO.USER_APPLICATION_IDENTITIES,
     get: e => s.Z.getUserIdentities(e),
-    load: (e, t) => c.fetchUserApplicationIdentitiesWithProfiles(t, e),
-    useStateHook: Chunk442837.e7
+    load: e => c.fetchUserApplicationIdentitiesWithProfiles(e)
   })

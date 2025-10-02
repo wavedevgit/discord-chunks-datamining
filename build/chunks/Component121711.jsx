@@ -280,7 +280,7 @@ let eh = function(e) {
   }, [l]), i.useEffect(() => {
     y.C.trigger()
   }, []);
-  let em = (0, H.T)({
+  let em = (0, V.T)({
     location: $.dr.QUEST_PREVIEW_TOOL_2
   });
   return i.useEffect(() => {
@@ -364,7 +364,7 @@ let eh = function(e) {
           }), (0, r.jsx)(S.Z, {
             children: w === k.e5.CLAIMED ? (0, r.jsx)(el, {
               onSelectTab: L
-            }) : w === k.e5.PREVIEW_TOOL ? (0, r.jsx)(V.Z, {}) : (0, r.jsx)(q.Z, {})
+            }) : w === k.e5.PREVIEW_TOOL ? (0, r.jsx)(H.Z, {}) : (0, r.jsx)(q.Z, {})
           })]
         })
       }) : (0, r.jsxs)(r.Fragment, {
@@ -412,7 +412,7 @@ let eh = function(e) {
                 })
               }), w === k.e5.CLAIMED ? (0, r.jsx)(el, {
                 onSelectTab: L
-              }) : w === k.e5.PREVIEW_TOOL ? (0, r.jsx)(V.Z, {}) : (0, r.jsx)(q.Z, {})]
+              }) : w === k.e5.PREVIEW_TOOL ? (0, r.jsx)(H.Z, {}) : (0, r.jsx)(q.Z, {})]
             })]
           })
         })]

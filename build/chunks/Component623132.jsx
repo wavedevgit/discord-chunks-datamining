@@ -1,7 +1,7 @@
-/** Chunk was on 53714 **/
+/** Chunk was on 80654 **/
 /** chunk id: 623132, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => C
+  Z: () => A
 }), require("./781311.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -150,7 +150,7 @@ function N(e) {
   })
 }
 
-function A(e) {
+function k(e) {
   let {
     text: t,
     user: n,
@@ -173,7 +173,7 @@ function A(e) {
       widgetEdited: d,
       gameId: g
     })
-  }, [d, g, h, t, O]), A = i.useCallback(e => {
+  }, [d, g, h, t, O]), k = i.useCallback(e => {
     v(e)
   }, []);
   return i.useEffect(() => {
@@ -193,7 +193,7 @@ function A(e) {
       id: f,
       value: h,
       placeholder: I,
-      onChange: A,
+      onChange: k,
       onBlur: N,
       rows: 3,
       autoFocus: "editing" === y,
@@ -233,7 +233,7 @@ function A(e) {
   })
 }
 
-function C(e) {
+function A(e) {
   let {
     user: t,
     guildId: n,
@@ -250,7 +250,7 @@ function C(e) {
   } = a, m = {
     variant: "heading-sm/medium",
     color: "text-default"
-  }, T = f.default.getCurrentUser(), D = (null == T ? true : T.id) === t.id, C = !l && D && o === c.l.FAVORITE_GAMES;
+  }, T = f.default.getCurrentUser(), D = (null == T ? true : T.id) === t.id, A = !l && D && o === c.l.FAVORITE_GAMES;
   return (0, O.kO)(g) ? (0, r.jsx)(j.i, {}) : (0, r.jsxs)("div", {
     className: w.card,
     children: [(0, r.jsx)(y.Z, {
@@ -269,7 +269,7 @@ function C(e) {
         applicationId: g,
         userId: t.id,
         gameName: u
-      }, m)), C ? (0, r.jsx)(A, {
+      }, m)), A ? (0, r.jsx)(k, {
         text: p,
         user: t,
         guildId: n,

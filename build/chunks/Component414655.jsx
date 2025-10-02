@@ -34,7 +34,7 @@ function y(e) {
   } = (0, c.ZP)(), j = (null == y ? true : y.id) === t.id, S = false === t.nsfwAllowed, {
     wishlist: P,
     error: x
-  } = (0, d.k)(r), I = i.useCallback(() => {
+  } = (0, d.k)(r), w = i.useCallback(() => {
     (0, a.pT)(), (0, u.mK)({
       analyticsLocations: O,
       analyticsSource: o.Z.USER_PROFILE_WISHLIST,
@@ -61,7 +61,7 @@ function y(e) {
         size: "sm",
         icon: s.EOn,
         text: v.intl.string(v.t.ZbS4QE),
-        onClick: I
+        onClick: w
       })]
     })
   }) : (0, n.jsxs)(h.F, {
@@ -121,7 +121,7 @@ function y(e) {
           size: "sm",
           icon: s.qJs,
           text: v.intl.string(v.t.SDUwMz),
-          onClick: I
+          onClick: w
         }), (0, n.jsx)(m.Z, {
           isOwner: j
         })]
@@ -130,7 +130,7 @@ function y(e) {
         size: "sm",
         icon: s.EOn,
         text: v.intl.string(v.t["i/yzHh"]),
-        onClick: I
+        onClick: w
       })]
     }), (0, n.jsx)(p.Z, {
       items: P.items,

@@ -181,7 +181,7 @@ let k = e => {
       })]
     })
   }),
-  H = e => {
+  V = e => {
     let t, n;
     var l, o, u, d, h, g, m, b, _, O, E, v, {
         displayOptions: I
@@ -199,7 +199,7 @@ let k = e => {
       G = i.useCallback(e => {
         P(false), null == e || e()
       }, []),
-      H = I.title();
+      V = I.title();
     return (0, r.jsx)(c.ua7, {
       text: (0, r.jsx)(B, {
         displayOptions: I,
@@ -211,7 +211,7 @@ let k = e => {
       delay: 100,
       allowOverflow: true,
       hideOnClick: false,
-      "aria-label": "string" == typeof H ? H : Z.intl.string(Z.t.rSXaxc),
+      "aria-label": "string" == typeof V ? V : Z.intl.string(Z.t.rSXaxc),
       children: e => (0, r.jsxs)(U, R(L(R(L({
         className: null != I.entryPointClassName ? (0, y.l)(w, I.entryPointClassName) : true
       }, S), {
@@ -236,7 +236,7 @@ let k = e => {
       }))
     })
   },
-  V = e => {
+  H = e => {
     var {
       displayOptions: t
     } = e, n = D(e, ["displayOptions"]);
@@ -339,11 +339,11 @@ let k = e => {
     };
     if (null != a) switch (a.type) {
       case j.k2.TOOLTIP:
-        return (0, r.jsx)(V, R(L({}, h), {
+        return (0, r.jsx)(H, R(L({}, h), {
           displayOptions: a
         }));
       case j.k2.COACHTIP:
-        return (0, r.jsx)(H, R(L({}, h), {
+        return (0, r.jsx)(V, R(L({}, h), {
           displayOptions: a
         }));
       case j.k2.BADGE:

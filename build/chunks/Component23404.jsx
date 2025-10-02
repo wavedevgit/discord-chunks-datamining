@@ -118,15 +118,15 @@ function A(e) {
     quest: b,
     questContent: g.jn.ACTIVITY_PANEL,
     sourceQuestContent: g.jn.ACTIVITY_PANEL
-  }), U = (null == (t = b.userStatus) ? true : t.enrolledAt) != null, G = (null == (n = b.userStatus) ? true : n.completedAt) != null, B = (0, f.Rf)(b), H = (0, m.DD)({
+  }), U = (null == (t = b.userStatus) ? true : t.enrolledAt) != null, G = (null == (n = b.userStatus) ? true : n.completedAt) != null, B = (0, f.Rf)(b), V = (0, m.DD)({
     quest: b,
     taskDetails: B,
     location: C.dr.ACTIVITY_PANEL,
     questContent: g.jn.ACTIVITY_PANEL,
     sourceQuestContent: g.jn.ACTIVITY_PANEL
-  }), V = (0, d.Rt)(b), F = (0, m.CR)({
+  }), H = (0, d.Rt)(b), F = (0, m.CR)({
     quest: b
-  }), z = V ? F : N.intl.string(N.t.l7E81t);
+  }), z = H ? F : N.intl.string(N.t.l7E81t);
   return (0, r.jsxs)("div", {
     ref: e => {
       c.current = e
@@ -179,7 +179,7 @@ function A(e) {
         children: (0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
           color: "text-default",
-          children: H
+          children: V
         })
       })]
     }), U && !G && (0, r.jsx)(S.Z, {
@@ -194,7 +194,7 @@ function A(e) {
       className: j.ctas,
       children: [!U && (0, r.jsxs)(s.hE2, {
         size: "sm",
-        direction: V ? "vertical" : "horizontal",
+        direction: H ? "vertical" : "horizontal",
         fullWidth: true,
         children: [(0, r.jsx)(s.zxk, {
           variant: "secondary",

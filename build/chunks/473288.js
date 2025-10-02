@@ -2,13 +2,12 @@
 /** chunk id: 473288, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => c
+  Z: () => l
 }), require("./388685.js");
-var Chunk442837 = require("./442837.js"),
-  Chunk147913 = require("./147913.js"),
-  Chunk981631 = require("./981631.js");
+var Chunk147913 = require("./147913.js"),
+  Chunk929677 = require("./929677.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -17,15 +16,15 @@ function o(e, t, n) {
   }) : e[t] = n, e
 }
 
-function s(e) {
-  (0, r.Xf)(a.McO.USER_APPLICATION_IDENTITIES(e.user_id))
+function o(e) {
+  i.O.refetch(e.user_id)
 }
-class l extends Chunk147913.Z {
+class s extends Chunk147913.Z {
   constructor(...e) {
-    super(...e), o(this, "actions", {
-      USER_APPLICATION_IDENTITY_UPDATE: s,
-      USER_APPLICATION_IDENTITY_REMOVE: s
+    super(...e), a(this, "actions", {
+      USER_APPLICATION_IDENTITY_UPDATE: o,
+      USER_APPLICATION_IDENTITY_REMOVE: o
     })
   }
 }
-let c = new l
+let l = new s

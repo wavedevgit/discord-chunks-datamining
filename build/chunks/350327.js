@@ -215,8 +215,7 @@ async function L() {
   }
 }
 let x = (0, Chunk442837.Kb)(Chunk621853.Z, {
-  queryId: () => Chunk981631.McO.APPLICATION_WIDGET_APPLICATION_CONFIGS,
+  getQueryId: Chunk981631.McO.APPLICATION_WIDGET_APPLICATION_CONFIGS,
   get: () => Chunk621853.Z.applicationWidgetApplicationConfigs,
-  load: () => L(),
-  useStateHook: Chunk442837.e7
+  load: () => L()
 })
