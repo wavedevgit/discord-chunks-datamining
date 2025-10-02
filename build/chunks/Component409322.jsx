@@ -29,7 +29,7 @@ function c(e) {
     x = null != b ? j.slice(0, b) : j,
     v = null != b ? j.slice(b) : [],
     y = null != m ? m : o.Fragment,
-    g = null != (t = null == p ? true : p(u, v.length)) ? t : (n = v.length, u ? s.intl.formatToPlainString(s.t["3SHL+f"], {
+    h = null != (t = null == p ? true : p(u, v.length)) ? t : (n = v.length, u ? s.intl.formatToPlainString(s.t["3SHL+f"], {
       count: n
     }) : s.intl.formatToPlainString(s.t["8JRFyc"], {
       count: n
@@ -40,7 +40,7 @@ function c(e) {
         node: e
       }), (t !== x.length - 1 || v.length > 0) && (0, r.jsx)(l.izJ, {})]
     }, e.key)), v.length > 0 && (0, r.jsx)(a.I, {
-      title: g,
+      title: h,
       isOpen: u,
       setIsOpen: d,
       compact: true,

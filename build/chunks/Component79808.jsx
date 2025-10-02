@@ -53,7 +53,7 @@ function f(e) {
     sidebarHeader: x,
     sidebarFooter: v,
     onPanelChange: y
-  } = e, [g, h] = o.useState(true), [O, C] = o.useState(null == (t = m.entry(p)) ? true : t.parentPanel), [_, P] = o.useState(() => m.typedGet(O)), S = o.useCallback(() => N(true), []), [E, N] = o.useState({
+  } = e, [h, g] = o.useState(true), [O, C] = o.useState(null == (t = m.entry(p)) ? true : t.parentPanel), [_, P] = o.useState(() => m.typedGet(O)), S = o.useCallback(() => N(true), []), [E, N] = o.useState({
     target: p,
     targetAccordion: null == (n = m.entry(p)) ? true : n.parentAccordion,
     animateScroll: false,
@@ -82,9 +82,9 @@ function f(e) {
       }))
     },
     navTransition: E,
-    showNavigationMobile: g,
-    setShowNavigationMobile: h
-  }), [m, O, E, g, S, T, y]), w = () => T(j);
+    showNavigationMobile: h,
+    setShowNavigationMobile: g
+  }), [m, O, E, h, S, T, y]), w = () => T(j);
   return (0, r.jsx)(s.j.Provider, {
     value: k,
     children: (0, r.jsxs)("div", {

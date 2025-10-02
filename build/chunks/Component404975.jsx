@@ -43,15 +43,15 @@ function x(e) {
         }
       })
     }), e
-  }, [t.layout]), [y, g] = o.useMemo(() => {
+  }, [t.layout]), [y, h] = o.useMemo(() => {
     let e = [],
       n = [];
     return t.layout.forEach(t => {
       t.hoisted ? e.push(t) : n.push(t)
     }), [e, n]
-  }, [t.layout]), h = (0, u.Ll)();
+  }, [t.layout]), g = (0, u.Ll)();
   return (0, r.jsx)(s.f6W, {
-    theme: h,
+    theme: g,
     children: e => (0, r.jsx)(c.ZP, {
       contentTypes: x,
       children: t => {
@@ -85,7 +85,7 @@ function x(e) {
             fade: true,
             children: [(0, r.jsx)("nav", {
               className: j.nav,
-              children: g.map(e => (0, r.jsx)(v, {
+              children: h.map(e => (0, r.jsx)(v, {
                 section: e,
                 visibleContent: o
               }, e.key))

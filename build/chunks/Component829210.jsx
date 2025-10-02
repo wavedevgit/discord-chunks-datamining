@@ -1,7 +1,7 @@
 /** Chunk was on 54573 **/
 /** chunk id: 829210, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => h
 }), require("./361932.js"), require("./187205.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -95,7 +95,7 @@ function y(e) {
   }
 }
 
-function g(e) {
+function h(e) {
   let {
     node: t,
     visibleContent: n
@@ -123,13 +123,13 @@ function g(e) {
         visibleContent: n
       }),
       onClick: j
-    }), p && m.length > 1 && (0, r.jsx)(h, {
+    }), p && m.length > 1 && (0, r.jsx)(g, {
       categories: m
     })]
   })
 }
 
-function h(e) {
+function g(e) {
   let {
     categories: t
   } = e, [n, l] = o.useState(0), {
