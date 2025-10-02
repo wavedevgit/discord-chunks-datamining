@@ -172,17 +172,17 @@ function Z(e) {
     }]
   }
   let X = (0, i.jsxs)(g.Z, {
-      className: P.header,
+      className: S.header,
       align: g.Z.Align.CENTER,
       children: [(0, i.jsx)(C.Z, {
         name: "".concat(l.name),
-        detailsClassName: P.description,
+        detailsClassName: S.description,
         details: t
       }), l.enabled ? (0, i.jsx)(g.Z.Child, {
         shrink: 0,
         grow: 0,
         children: (0, i.jsx)(y.Z, {
-          className: P.expandIcon,
+          className: S.expandIcon,
           expanded: Z && !A,
           "aria-hidden": true
         })
@@ -205,10 +205,10 @@ function Z(e) {
     }),
     Q = null;
   return Z && !A && null != o && (Q = (0, i.jsxs)(g.Z, {
-    className: P.body,
+    className: S.body,
     direction: g.Z.Direction.VERTICAL,
     children: [(0, i.jsx)(p.izJ, {
-      className: P.topDivider
+      className: S.topDivider
     }), function(e) {
       let {
         integration: t,
@@ -222,10 +222,10 @@ function Z(e) {
         children: [(0, i.jsxs)(g.Z.Child, {
           basis: "50%",
           children: [(0, i.jsx)(p.vwX, {
-            className: S.marginBottom8,
+            className: P.marginBottom8,
             children: w.intl.string(w.t.eBtNBQ)
           }), (0, i.jsx)(p.Text, {
-            className: P.syncedRole,
+            className: S.syncedRole,
             color: "header-primary",
             variant: "text-sm/normal",
             children: a
@@ -233,7 +233,7 @@ function Z(e) {
         }), (0, i.jsxs)(g.Z.Child, {
           basis: "50%",
           children: [(0, i.jsx)(p.vwX, {
-            className: S.marginBottom8,
+            className: P.marginBottom8,
             children: n
           }), (0, i.jsxs)(g.Z, {
             justify: g.Z.Justify.BETWEEN,
@@ -272,7 +272,7 @@ function Z(e) {
       roleLink: q,
       onSync: B
     }), (0, i.jsx)(p.izJ, {
-      className: P.midDivider
+      className: S.midDivider
     }), function(e) {
       let {
         integration: t,
@@ -284,7 +284,7 @@ function Z(e) {
         children: [(0, i.jsxs)(g.Z.Child, {
           basis: "50%",
           children: [(0, i.jsx)(p.vwX, {
-            className: S.marginBottom8,
+            className: P.marginBottom8,
             children: n
           }), (0, i.jsx)(p.q4e, {
             placeholder: n,
@@ -302,7 +302,7 @@ function Z(e) {
         }), (0, i.jsxs)(g.Z.Child, {
           basis: "50%",
           children: [(0, i.jsx)(p.vwX, {
-            className: S.marginBottom8,
+            className: P.marginBottom8,
             children: w.intl.string(w.t.uiXMo6)
           }), (0, i.jsx)(p.q4e, {
             placeholder: w.intl.string(w.t.uiXMo6),
@@ -341,14 +341,14 @@ function Z(e) {
       return (0, i.jsxs)(g.Z, {
         direction: g.Z.Direction.VERTICAL,
         children: [(0, i.jsx)(u.VL, {
-          className: a()(S.marginTop20, S.marginBottom8),
+          className: a()(P.marginTop20, P.marginBottom8),
           checked: t.enable_emoticons,
           disabled: t.syncing,
           onChange: e => r(e),
           label: w.intl.string(w.t["7r4OKi"])
         }), (0, i.jsx)(g.Z, {
           wrap: g.Z.Wrap.WRAP,
-          className: P.__invalid_twitchEmojis,
+          className: S.__invalid_twitchEmojis,
           children: n.map((e, t) => (0, i.jsx)(p.ua7, {
             text: e.name,
             children: t => (0, i.jsx)("img", I({
@@ -356,7 +356,7 @@ function Z(e) {
                 name: e.name
               }),
               draggable: false,
-              className: a()(P.emoji, "emoji", "jumboable"),
+              className: a()(S.emoji, "emoji", "jumboable"),
               src: O.ZP.getEmojiURL({
                 id: e.id,
                 animated: e.animated,
@@ -375,7 +375,7 @@ function Z(e) {
         })
       }
     }) : null, (0, i.jsx)(p.izJ, {
-      className: P.bottomDivider
+      className: S.bottomDivider
     }), (0, i.jsx)(g.Z, {
       children: (0, i.jsx)(p.zxk, {
         size: "sm",
@@ -386,11 +386,11 @@ function Z(e) {
     })]
   })), (0, i.jsx)(p.Zbd, {
     editable: true,
-    className: P.card,
+    className: S.card,
     children: (0, i.jsxs)(g.Z, {
       direction: g.Z.Direction.VERTICAL,
       children: [l.enabled ? (0, i.jsx)(p.P3F, {
-        className: P.expandableHeader,
+        className: S.expandableHeader,
         "aria-expanded": Z && !A,
         onClick: E,
         children: X

@@ -10,6 +10,8 @@ module.exports = {
   headerChannelContainer: "headerChannelContainer__67dba",
   channelIcon: "channelIcon__67dba",
   hubHeader: "hubHeader__67dba",
+  inviteSectionHeader: "inviteSectionHeader__67dba",
+  inviteSectionToggleIcon: "inviteSectionToggleIcon__67dba",
   inviteRow: "inviteRow__67dba",
   inviteRowAvatar: "inviteRowAvatar__67dba",
   inviteRowInfo: "inviteRowInfo__67dba",
@@ -31,5 +33,6 @@ module.exports = {
   welcomeSubheading: "welcomeSubheading__67dba",
   errorMessage: "errorMessage__67dba",
   errorLink: "errorLink__67dba",
-  acronym: "acronym__67dba"
+  acronym: "acronym__67dba",
+  isFriendsInVCInvitesExperiment: "isFriendsInVCInvitesExperiment__67dba"
 }

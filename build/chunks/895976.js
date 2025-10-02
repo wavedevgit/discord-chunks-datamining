@@ -17,7 +17,7 @@ function d(e) {
     inviteChannel: n,
     inviteTargetType: d,
     applicationId: c
-  } = e, [g, h, m, p] = (0, i.Wu)([a.Z, s.ZP], () => [a.Z.getInviteSuggestionRows(), a.Z.getTotalSuggestionsCount() >= 1, a.Z.getInitialCounts(), null == n ? null : s.ZP.getVoiceStatesForChannel(n)], [n]), v = l.useMemo(() => {
+  } = e, [g, h, m, p] = (0, i.Wu)([r.Z, a.ZP], () => [r.Z.getInviteSuggestionRows(), r.Z.getTotalSuggestionsCount() >= 1, r.Z.getInitialCounts(), null == n ? null : a.ZP.getVoiceStatesForChannel(n)], [n]), v = l.useMemo(() => {
     let e = new Set;
     return d === o.Iq.STREAM && null != p && p.forEach(t => {
       let {
@@ -27,7 +27,7 @@ function d(e) {
     }), e
   }, [n]);
   return l.useEffect(() => {
-    (0, r.x)({
+    (0, s.x)({
       omitUserIds: v,
       guild: t,
       channel: n,

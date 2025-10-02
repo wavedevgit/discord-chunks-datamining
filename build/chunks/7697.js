@@ -15,34 +15,34 @@ var Chunk647438 = require("./647438.js"),
   Chunk954313 = require("./954313.js");
 
 function p(e, n, t) {
-  let i = (0, l.e7)([u.ZP], () => u.ZP.getGuildScheduledEvent(e)),
+  let r = (0, l.e7)([u.ZP], () => u.ZP.getGuildScheduledEvent(e)),
     p = (0, o.Z)(t),
-    [b, h] = r.useState(null != t && null != i ? (0, _.PJ)(4, (0, _.Ho)(t), new Date(i.scheduled_start_time)) : []);
-  r.useEffect(() => {
-    if (null == p || null == t || null == i || a().isEqual(p, t)) return;
+    [b, g] = i.useState(null != t && null != r ? (0, _.PJ)(4, (0, _.Ho)(t), new Date(r.scheduled_start_time)) : []);
+  i.useEffect(() => {
+    if (null == p || null == t || null == r || a().isEqual(p, t)) return;
     let e = (0, _.Ho)(t);
-    h((0, _.PJ)(b.length, e, new Date(i.scheduled_start_time)))
-  }, [t, b.length, i, p]), r.useEffect(() => {
+    g((0, _.PJ)(b.length, e, new Date(r.scheduled_start_time)))
+  }, [t, b.length, r, p]), i.useEffect(() => {
     if (null == n) return;
     let t = b.map(e => s.default.fromTimestamp(Math.floor(e.getTime() / c.Z.Millis.SECOND) * c.Z.Millis.SECOND));
     d.Z.getGuildEventUserCounts(n, e, t)
   }, [e, n, b]);
-  let g = r.useMemo(() => {
-    if (null == t || 0 === b.length || (null == i ? true : i.scheduled_start_time) == null) returnfalse;
+  let h = i.useMemo(() => {
+    if (null == t || 0 === b.length || (null == r ? true : r.scheduled_start_time) == null) returnfalse;
     let e = new Date;
     e.setFullYear(e.getFullYear() + _.hn);
     let n = b[b.length - 1],
-      r = (0, _.Ho)(t).after(n);
-    return null != r && r <= e
-  }, [t, b, null == i ? true : i.scheduled_start_time]);
+      i = (0, _.Ho)(t).after(n);
+    return null != i && i <= e
+  }, [t, b, null == r ? true : r.scheduled_start_time]);
   return {
     recurrenceStartTimes: b,
-    canViewMoreRecurrences: g,
+    canViewMoreRecurrences: h,
     updateRecurrenceStartTimes: () => {
-      if (null == t || null == i) return;
+      if (null == t || null == r) return;
       let e = (0, _.Ho)(t),
         n = b[b.length - 1];
-      h([...b, ...(0, _.PJ)(4, e, n, true)])
+      g([...b, ...(0, _.PJ)(4, e, n, true)])
     }
   }
 }

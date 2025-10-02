@@ -275,9 +275,9 @@ function q(e) {
     [Z, T] = r.useState(62),
     k = () => {
       let e = {
-        source: P.Zu.GUILD_SETTINGS
+        source: S.Zu.GUILD_SETTINGS
       };
-      (0, b.ZDy)(async () => t => (0, i.jsx)(S.default, G(H({}, t), {
+      (0, b.ZDy)(async () => t => (0, i.jsx)(P.default, G(H({}, t), {
         guildId: l.id,
         analyticsData: e
       })))

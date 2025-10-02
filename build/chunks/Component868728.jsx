@@ -17,13 +17,13 @@ function u(e) {
     theme: u
   } = e;
   return (0, l.jsxs)(i.Fragment, {
-    children: [(0, l.jsx)(s.zxk, {
+    children: [(0, l.jsx)(a.zxk, {
       variant: "primary",
       text: o.intl.string(o.t.pz1lRE),
       onClick: t
-    }), (0, l.jsx)(a.zx, {
-      look: a.zx.Looks.LINK,
-      color: (0, r.ap)(u) ? a.zx.Colors.PRIMARY : a.zx.Colors.WHITE,
+    }), (0, l.jsx)(r.zx, {
+      look: r.zx.Looks.LINK,
+      color: (0, s.ap)(u) ? r.zx.Colors.PRIMARY : r.zx.Colors.WHITE,
       onClick: n,
       children: o.intl.string(o.t["ETE/oK"])
     })]

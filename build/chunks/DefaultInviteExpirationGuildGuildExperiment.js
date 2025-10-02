@@ -44,20 +44,20 @@ function d(e) {
     guildId: t,
     location: n
   } = e, i = u.useExperiment({
-    guildId: null != t ? t : s.lds,
+    guildId: null != t ? t : a.lds,
     location: n
-  }), d = (0, l.e7)([r.Z], () => r.Z.getGuild(t));
+  }), d = (0, l.e7)([s.Z], () => s.Z.getGuild(t));
   return null == t ? null : function(e) {
     var t;
     let {
       guild: n,
       experimentConfig: l
     } = e;
-    if (null == n ? true : n.features.has(s.oNc.HUB)) return a.ZP.INVITE_OPTIONS_FOREVER.value;
+    if (null == n ? true : n.features.has(a.oNc.HUB)) return r.ZP.INVITE_OPTIONS_FOREVER.value;
     let {
       defaultMaxAge: i
     } = null != l ? l : u.getCurrentConfig({
-      guildId: null != (t = null == n ? true : n.id) ? t : s.lds,
+      guildId: null != (t = null == n ? true : n.id) ? t : a.lds,
       location: "getDefaultInviteExpiration"
     });
     return null != i ? i : o
@@ -72,10 +72,10 @@ function c(e) {
     guildId: t,
     location: n
   } = e, l = u.useExperiment({
-    guildId: null != t ? t : s.lds,
+    guildId: null != t ? t : a.lds,
     location: n
   });
-  return a.ZP.getMaxAgeOptions({
+  return r.ZP.getMaxAgeOptions({
     includeExperimentalValues: [null == l ? true : l.defaultMaxAge]
   })
 }

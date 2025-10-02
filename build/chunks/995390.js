@@ -71,11 +71,11 @@ function O(e, t, n) {
     C = null != n ? n : t,
     N = null != n ? O : a,
     w = i.useMemo(() => null != _ ? _ : y({}, null != N ? N : {}), [_, N]),
-    P = i.useMemo(() => Object.keys(w).length, [w]),
-    S = i.useMemo(() => null == N || null == w ? null : !o().isEqual(N, w), [N, w]);
+    S = i.useMemo(() => Object.keys(w).length, [w]),
+    P = i.useMemo(() => null == N || null == w ? null : !o().isEqual(N, w), [N, w]);
   return i.useEffect(() => {
-    C === t && (S ? c.Z.startEditingCommandPermissions(C) : c.Z.stopEditingCommandPermissions(C))
-  }, [t, S, C]), {
+    C === t && (P ? c.Z.startEditingCommandPermissions(C) : c.Z.stopEditingCommandPermissions(C))
+  }, [t, P, C]), {
     originalApplicationPermissions: a,
     originalCommandPermissions: O,
     editedTargetPermissions: function(e, t) {
@@ -144,7 +144,7 @@ function O(e, t, n) {
         return l
       }, [O, n, r, o, t, _, C])
     }(e, w),
-    hasChanges: S,
-    selectedPermissionCount: P
+    hasChanges: P,
+    selectedPermissionCount: S
   }
 }

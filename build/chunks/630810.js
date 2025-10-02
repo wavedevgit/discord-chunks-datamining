@@ -14,7 +14,7 @@ let d = +Chunk70956.Z.Millis.SECOND + 10;
 var c = ((l = {})[l.GROUP_DM = 0] = "GROUP_DM", l[l.USER = 1] = "USER", l[l.CHANNEL = 2] = "CHANNEL", l);
 class g extends Chunk651655.Z {
   _sendInvite(e, t, n, l, i) {
-    r.Z.sendInvite(e.id, t, n, l).then(() => i(null, true), () => i(null, false))
+    s.Z.sendInvite(e.id, t, n, l).then(() => i(null, true), () => i(null, false))
   }
   drain(e, t) {
     let {
@@ -28,8 +28,8 @@ class g extends Chunk651655.Z {
         break;
       case 1:
         i.Z.ensurePrivateChannel(e.user.id).then(i => {
-          let r = s.Z.getChannel(i);
-          null != r && this._sendInvite(r, e.inviteKey, n, l, t)
+          let s = a.Z.getChannel(i);
+          null != s && this._sendInvite(s, e.inviteKey, n, l, t)
         }, () => t(null, false))
     }
   }

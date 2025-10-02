@@ -147,13 +147,13 @@ function W(e) {
       return null != l.user ? a.push({
         icon: u.T39,
         text: A.intl.formatToPlainString(A.t.Nu9sam, {
-          timestamp: P.default.extractTimestamp(l.id),
-          user: S.ZP.getUserTag(l.user)
+          timestamp: S.default.extractTimestamp(l.id),
+          user: P.ZP.getUserTag(l.user)
         })
       }) : a.push({
         icon: u.T39,
         text: A.intl.formatToPlainString(A.t.gcdJ8P, {
-          timestamp: P.default.extractTimestamp(l.id)
+          timestamp: S.default.extractTimestamp(l.id)
         })
       }), (0, i.jsx)(Z.Z, {
         name: r.name,
@@ -231,8 +231,8 @@ function W(e) {
       });
     return t > 0 ? l : a
   }(ee, ef, null == W ? true : W.id), ew = null);
-  let eP = w.Z.getArticleURL(T.BhN.INTEGRATIONS),
-    eS = null != H ? A.t.YV0vh4 : A.t.FnZEJi,
+  let eS = w.Z.getArticleURL(T.BhN.INTEGRATIONS),
+    eP = null != H ? A.t.YV0vh4 : A.t.FnZEJi,
     eI = [];
   if (el) {
     let e, t, r, a, o;
@@ -330,8 +330,8 @@ function W(e) {
     className: a()(null != ew ? D.footerPlaceholder : null),
     children: [(0, i.jsx)(u.R94, {
       type: u.geA.DESCRIPTION,
-      children: A.intl.format(eS, {
-        helpdeskArticle: eP
+      children: A.intl.format(eP, {
+        helpdeskArticle: eS
       })
     }), (0, i.jsx)(u.izJ, {
       className: D.divider

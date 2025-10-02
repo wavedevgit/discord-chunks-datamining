@@ -2,7 +2,7 @@
 /** chunk id: 462376, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   d: () => S,
-  k: () => _
+  k: () => j
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk869306 = require("./869306.js");
 
-function j(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -31,7 +31,7 @@ function j(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let _ = 44;
+let j = 44;
 class S extends Chunk647438.Component {
   shouldComponentUpdate(e, t) {
     return this.state.sending !== t.sending || this.state.invited !== t.invited || this.state.hovered !== t.hovered || this.props.user !== e.user || this.props.channel !== e.channel
@@ -39,7 +39,7 @@ class S extends Chunk647438.Component {
   renderUserOrChannel() {
     let e, t, n, {
       user: i,
-      channel: r
+      channel: s
     } = this.props;
     if (null != Chunk647438) t = Chunk647438.getAvatarURL(null == Chunk780384 ? true : Chunk780384.guild_id, 32), n = Chunk51144.ZP.getName(Chunk647438);
     else if (null != Chunk780384 && (t = (0, Chunk43267.x)(Chunk780384), n = (0, Chunk933557.F6)(Chunk780384, Chunk594174.default, Chunk699516.Z), null == exports && null != Chunk780384.guild_id)) {
@@ -72,7 +72,7 @@ class S extends Chunk647438.Component {
       } = this.props,
       {
         sending: i,
-        invited: s,
+        invited: a,
         hovered: o
       } = this.state;
     return e = Chunk481060 ? (0, Chunk951288.jsx)(Chunk755721.zx, {
@@ -103,19 +103,19 @@ class S extends Chunk647438.Component {
     })
   }
   constructor(...e) {
-    super(...e), j(this, "state", {
+    super(...e), _(this, "state", {
       sending: false,
       invited: false,
       hovered: false
-    }), j(this, "handleMouseEnter", () => {
+    }), _(this, "handleMouseEnter", () => {
       this.setState({
         hovered: true
       })
-    }), j(this, "handleMouseLeave", () => {
+    }), _(this, "handleMouseLeave", () => {
       this.setState({
         hovered: false
       })
-    }), j(this, "getInviteAnalyticsMetadata", () => {
+    }), _(this, "getInviteAnalyticsMetadata", () => {
       let {
         row: e,
         source: t
@@ -124,7 +124,7 @@ class S extends Chunk647438.Component {
         suggestionData: h.Z.getSelectedInviteMetadata(e),
         source: t
       }
-    }), j(this, "handleClickInvite", () => {
+    }), _(this, "handleClickInvite", () => {
       let {
         user: e,
         channel: t,

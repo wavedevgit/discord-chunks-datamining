@@ -1,7 +1,7 @@
 /** Chunk was on 98039 **/
 /** chunk id: 936726, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => P
 }), require("./35282.js"), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -58,7 +58,7 @@ function w(e, t) {
   }), e
 }
 
-function P(e, t) {
+function S(e, t) {
   return null != t && /^data:/.test(t) ? t : (0, h.ov)({
     id: e.id,
     avatar: t,
@@ -66,19 +66,19 @@ function P(e, t) {
   })
 }
 
-function S(e) {
+function P(e) {
   let {
     id: t,
     webhook: n,
     editedWebhook: l,
     channelOptions: h,
-    isExpanded: S,
+    isExpanded: P,
     isNew: I,
     errors: Z,
     onToggleExpand: E
   } = e, [T, k] = r.useState(false), [A] = r.useState(new s.V7);
   r.useEffect(() => () => A.stop(), [A]);
-  let D = r.useMemo(() => P(n, n.avatar), [n]),
+  let D = r.useMemo(() => S(n, n.avatar), [n]),
     R = r.useCallback(() => {
       let e = "".concat((0, o.K0)(false)).concat(O.ANM.WEBHOOK_INTEGRATION(n.id, n.token));
       (0, x.JG)(e)
@@ -130,7 +130,7 @@ function S(e) {
     })
   });
   let B = null;
-  return S && null != l && (B = (0, i.jsxs)("div", {
+  return P && null != l && (B = (0, i.jsxs)("div", {
     className: C.body,
     children: [(0, i.jsx)(c.izJ, {
       className: C.topDivider
@@ -148,7 +148,7 @@ function S(e) {
                 avatar: e
               })
             },
-            makeURL: e => P(n, e),
+            makeURL: e => S(n, e),
             imageClassName: C.avatarUploaderInner,
             showIcon: true
           }), null != Z.avatar && "" !== Z.avatar ? (0, i.jsx)(c.Text, {
@@ -253,7 +253,7 @@ function S(e) {
       direction: m.Z.Direction.VERTICAL,
       children: [(0, i.jsx)(c.P3F, {
         className: C.header,
-        "aria-expanded": S,
+        "aria-expanded": P,
         onClick: E,
         children: (0, i.jsxs)(m.Z, {
           align: m.Z.Align.CENTER,
@@ -263,7 +263,7 @@ function S(e) {
             details: M
           }), (0, i.jsx)(f.Z, {
             className: C.expandIcon,
-            expanded: S,
+            expanded: P,
             "aria-hidden": true
           })]
         })

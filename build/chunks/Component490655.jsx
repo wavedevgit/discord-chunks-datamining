@@ -29,7 +29,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk446856 = require("./446856.js");
 
-function S(e, t) {
+function P(e, t) {
   switch (e) {
     case N.b4C.APPLICATION:
       var n;
@@ -244,22 +244,22 @@ let I = Chunk647438.memo(function(e) {
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(p.Z, {
       align: p.Z.Align.CENTER,
-      className: P.breadcrumbs,
+      className: S.breadcrumbs,
       children: t === N.b4C.OVERVIEW ? (0, i.jsx)(s.vwX, {
         tag: "h1",
-        children: S(N.b4C.OVERVIEW)
+        children: P(N.b4C.OVERVIEW)
       }) : (0, i.jsx)(s.OoM, {
         activeId: t.toString(),
         breadcrumbs: [N.b4C.OVERVIEW, t].map(e => ({
           id: e.toString(),
-          label: S(e, V[G])
+          label: P(e, V[G])
         })),
         onBreadcrumbClick: e => {
           t !== parseInt(e.id) && q(parseInt(e.id))
         },
         renderCustomBreadcrumb: (e, t) => (0, i.jsx)(s.vwX, {
           tag: "h1",
-          className: t ? P.breadcrumbActive : P.breadcrumbInactive,
+          className: t ? S.breadcrumbActive : S.breadcrumbInactive,
           children: e.label
         })
       })

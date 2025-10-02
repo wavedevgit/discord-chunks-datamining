@@ -32,17 +32,17 @@ function i(e, t) {
   }), e
 }
 
-function r(e, t) {
-  var n, r, a, s, o, u, d;
+function s(e, t) {
+  var n, s, r, a, o, u, d;
   let c = i(l(i(l({
-    max_uses: null != (a = e.maxUses) ? a : null,
-    max_age: null != (s = e.maxAge) ? s : null,
+    max_uses: null != (r = e.maxUses) ? r : null,
+    max_age: null != (a = e.maxAge) ? a : null,
     temporary: null != (o = e.temporary) ? o : null
   }, (null == (n = e.targetUser) ? true : n.id) == null ? {} : {
     target_user_id: e.targetUser.id
   }), {
     target_type: null != (u = e.targetType) ? u : null
-  }), (null == (r = e.targetApplication) ? true : r.id) == null ? {} : {
+  }), (null == (s = e.targetApplication) ? true : s.id) == null ? {} : {
     target_application_id: e.targetApplication.id
   }), {
     flags: null != (d = e.flags) ? d : null
@@ -52,5 +52,5 @@ function r(e, t) {
   returntrue
 }
 require.d(exports, {
-  m: () => r
+  m: () => s
 }), require("./997841.js"), require("./388685.js")

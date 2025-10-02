@@ -1,7 +1,7 @@
 /** Chunk was on 7654 **/
 /** chunk id: 603236, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  I: () => j,
+  I: () => _,
   S: () => N
 }), require("./997841.js");
 var Chunk951288 = require("./951288.js"),
@@ -28,34 +28,34 @@ let N = Chunk442837.ZP.connectStores([Chunk246946.Z], () => ({
       value: t,
       autoFocus: n,
       hideValue: i,
-      onCopy: r,
-      disabled: a
+      onCopy: s,
+      disabled: r
     } = e;
     return (0, l.jsx)(u.Z, {
       value: t,
       hideMessage: i ? x.intl.string(x.t["6HzNgY"]) : null,
-      buttonColor: s.zx.Colors.BRAND,
-      onCopy: r,
+      buttonColor: a.zx.Colors.BRAND,
+      onCopy: s,
       autoFocus: n,
-      disabled: a
+      disabled: r
     })
   }),
-  j = e => {
+  _ = e => {
     let {
       guild: t,
       noInvitesAvailable: n,
-      showFriends: a,
-      onClose: s,
+      showFriends: r,
+      onClose: a,
       modalState: u,
       isApplicationBypassToggleEnabled: c,
-      setInviteFlags: j,
-      copyValue: _,
+      setInviteFlags: _,
+      copyValue: j,
       changePage: S,
-      inviteChannel: E,
-      source: b,
-      code: T,
-      guildScheduledEvent: O,
-      disabled: y,
+      inviteChannel: b,
+      source: E,
+      code: y,
+      guildScheduledEvent: T,
+      disabled: O,
       application: C
     } = e, {
       maxAge: P,
@@ -66,42 +66,42 @@ let N = Chunk442837.ZP.connectStores([Chunk246946.Z], () => ({
     } = u, R = i.useCallback(() => {
       g.default.track(I.rMx.COPY_INSTANT_INVITE, {
         server: d.Z.getGuildId(),
-        channel: null == E ? true : E.id,
-        channel_type: null == E ? true : E.type,
-        location: b,
-        code: T,
-        guild_scheduled_event_id: null == O ? true : O.id,
+        channel: null == b ? true : b.id,
+        channel_type: null == b ? true : b.type,
+        location: E,
+        code: y,
+        guild_scheduled_event_id: null == T ? true : T.id,
         application_id: null == C ? true : C.id
       })
-    }, [null == C ? true : C.id, E, b, T, O]);
+    }, [null == C ? true : C.id, b, E, y, T]);
     return (0, l.jsxs)(o.Kqy, {
       gap: 16,
       children: [(0, l.jsx)(N, {
-        value: _,
-        autoFocus: a,
+        value: j,
+        autoFocus: r,
         onCopy: R,
-        disabled: y
+        disabled: O
       }), c && (0, l.jsx)(o.rsf, {
-        checked: (0, h.yE)(w, r.$.IS_APPLICATION_BYPASS),
-        onChange: e => j((0, h.mB)(w, r.$.IS_APPLICATION_BYPASS, e)),
-        disabled: y,
+        checked: (0, h.yE)(w, s.$.IS_APPLICATION_BYPASS),
+        onChange: e => _((0, h.mB)(w, s.$.IS_APPLICATION_BYPASS, e)),
+        disabled: O,
         label: x.intl.string(x.t["1i1bUl"]),
         description: x.intl.string(x.t["jvd/LC"])
       }), n || M ? null : (0, l.jsxs)(o.Text, {
         variant: "text-xs/normal",
         className: f.footerText,
-        children: [(0, m.Vg)(P, Z), " ", a ? (0, l.jsx)(o.eee, {
+        children: [(0, m.Vg)(P, Z), " ", r ? (0, l.jsx)(o.eee, {
           onClick: () => S(v.RV.SETTINGS),
           children: x.intl.string(x.t.VNe8Pz)
         }) : null]
-      }), !n && a && M ? (0, l.jsxs)(o.Text, {
+      }), !n && r && M ? (0, l.jsxs)(o.Text, {
         variant: "text-xs/normal",
         className: f.footerText,
         children: [x.intl.string(x.t["0M2U9/"]), " "]
       }) : null, null != A ? (0, l.jsx)(p.W, {
         guild: t,
         error: A,
-        onClose: s
+        onClose: a
       }) : null]
     })
   }

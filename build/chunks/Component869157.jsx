@@ -75,8 +75,8 @@ function k(e) {
   } = e, f = (0, o.e7)([x.Z], () => x.Z.getGuild(l));
   a()(null != f, "");
   let v = (0, o.e7)([h.Z], () => h.Z.getSortedRoles(l)),
-    [w, P] = r.useState(new Set),
-    S = r.useMemo(() => {
+    [w, S] = r.useState(new Set),
+    P = r.useMemo(() => {
       let e = (0, m.bD)(l),
         t = v.toReversed().reduce((e, t, n) => (e[t.id] = n, e), {});
       return Object.values(u).filter(e => e.canRead).sort((n, i) => {
@@ -123,15 +123,15 @@ function k(e) {
     }, [n, u]);
   r.useEffect(() => {
     let e = Object.values(u).filter(e => e.type === p.Kw.USER && !e.canRead && !w.has(e.id)).map(e => e.id);
-    0 !== e.length && (d.Z.requestMembersById(l, e, false), P(t => new Set([...t, ...e])))
-  }, [l, u, w, P]);
+    0 !== e.length && (d.Z.requestMembersById(l, e, false), S(t => new Set([...t, ...e])))
+  }, [l, u, w, S]);
   let T = (0, o.e7)([C.Z], () => C.Z.getApplicationId()),
     k = (0, o.e7)([_.default], () => null == T ? true : _.default.integrations.find(e => {
       var t;
       return (null == (t = e.application) ? true : t.id) === T
     })),
     D = (0, o.e7)([g.Z], () => true !== k && g.Z.canShowToggleTooltip(k.id));
-  return S.length > 0 ? S.map(e => (0, i.jsx)(A, {
+  return P.length > 0 ? P.map(e => (0, i.jsx)(A, {
     guild: f,
     commandId: t,
     onChange: t => E(e.id, e.type, t),
@@ -171,7 +171,7 @@ function A(e) {
   r.useEffect(() => {
     if (A) {
       var e;
-      v.default.track(S.rMx.COMMANDS_MIGRATION_TOOLTIP_VIEWED, T(E({}, (0, u.hH)(o.id)), {
+      v.default.track(P.rMx.COMMANDS_MIGRATION_TOOLTIP_VIEWED, T(E({}, (0, u.hH)(o.id)), {
         application_id: null == j || null == (e = j.application) ? true : e.id,
         location: "toggle"
       }))
@@ -186,7 +186,7 @@ function A(e) {
       hideOnClick: false,
       children: e => (0, i.jsx)("div", T(E({}, e), {
         ref: R,
-        children: (0, i.jsx)(P.Z, {
+        children: (0, i.jsx)(S.Z, {
           isDisabled: N,
           currentValue: x.permission,
           onChange: A ? e => {

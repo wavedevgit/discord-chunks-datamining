@@ -31,8 +31,8 @@ function y(e) {
     iconBackgroundColor: C,
     iconClassName: N,
     iconWrapperClassName: w,
-    details: P,
-    integration: S,
+    details: S,
+    integration: P,
     buttonText: I,
     buttonDisabled: Z,
     hasNextSection: E,
@@ -41,7 +41,7 @@ function y(e) {
     isScrolling: A,
     canShowMigrationTooltip: D,
     trailing: R
-  } = e, [L, M] = r.useState(false), B = D && !A && !L && true !== k && null != S, U = r.useRef(null), W = r.useRef(null), H = null == I || null == T ? null : E ? (0, i.jsxs)(d.Kqy, {
+  } = e, [L, M] = r.useState(false), B = D && !A && !L && true !== k && null != P, U = r.useRef(null), W = r.useRef(null), H = null == I || null == T ? null : E ? (0, i.jsxs)(d.Kqy, {
     direction: "horizontal",
     fullWidth: false,
     align: "center",
@@ -83,7 +83,7 @@ function y(e) {
       }
       return e
     }({}, (0, u.hH)(k)), t = t = {
-      application_id: null == S ? true : S.application.id,
+      application_id: null == P ? true : P.application.id,
       location: "overview"
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
       var n = Object.keys(e);
@@ -95,13 +95,13 @@ function y(e) {
     })(Object(t)).forEach(function(n) {
       Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e))
-  }, [k, null == S ? true : S.application.id, B]);
+  }, [k, null == P ? true : P.application.id, B]);
   let G = B && (null != W.current || null != U.current) ? (0, i.jsx)(c.J2, {
       targetElementRef: E ? W : U,
       title: j.intl.string(j.t.ufFDiI),
       body: j.intl.string(j.t.TyMJwM),
       onRequestClose: () => {
-        M(true), h.Z.dismissOverviewTooltip(k, S.integration)
+        M(true), h.Z.dismissOverviewTooltip(k, P.integration)
       },
       position: "bottom",
       align: "center",
@@ -111,10 +111,10 @@ function y(e) {
     }) : null,
     z = (0, s.Wu)([m.Z], () => {
       var e;
-      return null != S && null != k && null != (e = m.Z.getApplicationEntitlementsForGuild(S.application.id, k)) ? e : []
+      return null != P && null != k && null != (e = m.Z.getApplicationEntitlementsForGuild(P.application.id, k)) ? e : []
     }),
     F = (0, p.LD)(k, true),
-    K = (null == S ? true : S.application) != null && Object.keys(null != (l = null == (n = F.result) || null == (t = n.sections[S.application.id]) ? true : t.commands) ? l : {}).length > 0,
+    K = (null == P ? true : P.application) != null && Object.keys(null != (l = null == (n = F.result) || null == (t = n.sections[P.application.id]) ? true : t.commands) ? l : {}).length > 0,
     q = (0, i.jsxs)(d.Kqy, {
       direction: "horizontal",
       align: "center",
@@ -125,7 +125,7 @@ function y(e) {
         iconBackgroundColor: C,
         iconClassName: N,
         iconWrapperClassName: w,
-        details: P,
+        details: S,
         isPremium: z.length > 0,
         children: function(e, t) {
           var n, r;
@@ -159,12 +159,12 @@ function y(e) {
               items: l
             })
           })
-        }(S, K)
+        }(P, K)
       }), G, H, R]
     });
   return E ? (0, i.jsx)(d.P3F, {
     onClick: () => {
-      D && null != k && null != S && h.Z.dismissOverviewTooltip(k, S.integration), null == T || T()
+      D && null != k && null != P && h.Z.dismissOverviewTooltip(k, P.integration), null == T || T()
     },
     children: (0, i.jsx)(d.Zbd, {
       editable: true,
