@@ -42,7 +42,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk856651 = require("./856651.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk465631 = require("./465631.js");
+  Chunk11049 = require("./11049.js");
 
 function F(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -471,7 +471,7 @@ function X() {
   }
   let t = (0, Chunk122021.fq)();
   return (0, Chunk951288.jsxs)("div", {
-    className: Chunk465631.connectionsContainer,
+    className: Chunk11049.connectionsContainer,
     children: [exports.slice(0, 10).map(e => (0, r.jsx)(m.Z, {
       type: e.type,
       className: Z.__invalid_accountButton,

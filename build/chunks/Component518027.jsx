@@ -1,4 +1,4 @@
-/** Chunk was on 67261 **/
+/** Chunk was on 26196 **/
 /** chunk id: 518027, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   J: () => b
@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk703558 = require("./703558.js"),
   Chunk135102 = require("./135102.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk337269 = require("./337269.js");
+  Chunk784562 = require("./784562.js");
 let b = () => {
   let {
     message: e,
@@ -43,7 +43,7 @@ let b = () => {
     shouldRefocus: false
   });
   return (0, Chunk951288.jsx)(Chunk893718.ZP, {
-    innerClassName: Chunk337269.messageInput,
+    innerClassName: Chunk784562.messageInput,
     onChange: C,
     placeholder: Chunk388032.intl.string(Chunk388032.t.ZroO3N),
     channel: exports,

@@ -1,9 +1,9 @@
-/** Chunk was on 81501 **/
+/** Chunk was on 74560 **/
 /** chunk id: 751648, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ZO: () => d,
   df: () => u,
-  qD: () => h
+  qD: () => _
 }), require("./415506.js");
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
@@ -11,7 +11,7 @@ var Chunk544891 = require("./544891.js"),
   Chunk710845 = require("./710845.js"),
   Chunk960048 = require("./960048.js"),
   Chunk981631 = require("./981631.js");
-let o = new Chunk710845.Z("VirtualCurrencyActionCreators");
+let c = new Chunk710845.Z("VirtualCurrencyActionCreators");
 async function d() {
   Chunk570140.Z.wait(() => {
     Chunk570140.Z.dispatch({
@@ -42,8 +42,8 @@ async function u(e) {
     loadId: n,
     onRedeemStart: l,
     onRedeemSucceed: u,
-    onRedeemFail: h,
-    shouldRefetchBalance: _ = true
+    onRedeemFail: _,
+    shouldRefetchBalance: h = true
   } = e;
   a.Z.wait(() => {
     a.Z.dispatch({
@@ -53,7 +53,7 @@ async function u(e) {
   }), null == l || l();
   try {
     let e = (await r.tn.post({
-      url: s.ANM.VIRTUAL_CURRENCY_SKU_REDEEM(t),
+      url: o.ANM.VIRTUAL_CURRENCY_SKU_REDEEM(t),
       body: {
         checkout_session_id: n
       },
@@ -62,7 +62,7 @@ async function u(e) {
     if (null == e || !Array.isArray(e)) {
       let t = "Could not read entitlements from Virtual Currency redemption response. Response: ",
         n = Error(t, e);
-      throw o.error(t, e), c.Z.captureException(n, {
+      throw c.error(t, e), s.Z.captureException(n, {
         tags: {
           app_context: "virtual_currency"
         }
@@ -72,18 +72,18 @@ async function u(e) {
       type: "VIRTUAL_CURRENCY_REDEEM_SUCCESS",
       skuId: t,
       entitlements: e
-    }), _ && d(), null == u || u(e), e
+    }), h && d(), null == u || u(e), e
   } catch (n) {
     let e = n instanceof i.HF ? n : new i.HF(n);
     a.Z.dispatch({
       type: "VIRTUAL_CURRENCY_REDEEM_FAIL",
       skuId: t,
       error: e
-    }), _ && d(), null == h || h(e)
+    }), h && d(), null == _ || _(e)
   }
 }
 
-function h(e) {
+function _(e) {
   return a.Z.dispatch({
     type: "VIRTUAL_CURRENCY_SET_BALANCE_PILL_OVERLAY",
     balancePillOverlay: e

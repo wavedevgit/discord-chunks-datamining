@@ -1,4 +1,4 @@
-/** Chunk was on 69310 **/
+/** Chunk was on 51727 **/
 /** chunk id: 279604, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   KE: () => y,
@@ -62,7 +62,7 @@ function y(e, t) {
       case m.Us.PERK: {
         let {
           default: i
-        } = await Promise.all([n.e("48776"), n.e("30378"), n.e("45854")]).then(n.bind(n, 326055));
+        } = await Promise.all([n.e("76692"), n.e("30378"), n.e("47285")]).then(n.bind(n, 326055));
         return n => (0, r.jsx)(i, _({
           guildId: e,
           powerup: t

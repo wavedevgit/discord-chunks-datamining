@@ -30,7 +30,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk292419 = require("./292419.js"),
   Chunk756043 = require("./756043.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk319194 = require("./319194.js");
+  Chunk975279 = require("./975279.js");
 
 function P(e) {
   let {
@@ -93,7 +93,7 @@ function P(e) {
 
 function w() {
   return (0, Chunk951288.jsxs)("div", {
-    className: o()(Chunk319194.mainWrapper, Chunk319194.mainBody),
+    className: o()(Chunk975279.mainWrapper, Chunk975279.mainBody),
     children: [(0, Chunk951288.jsx)(Chunk481060.owK, {
       color: Chunk481060.TVs.colors.ICON_PRIMARY,
       size: "refresh_sm"

@@ -1,0 +1,3 @@
+/** Chunk was on 56393 **/
+/** chunk id: 302573, original params: a (module,exports,require) **/
+module.exports = JSON.parse('{"+utqa2":["Varianta pozad\xed daru: ",[1,"giftStyle"]],"B9XqQk":"Krabice","AJ4iio":"Dort","P5keo6":"Truhla","w84vER":"K\xe1va","6dCq/v":"Š\xe1lek","+HMF8v":"Nitroween","vd1fu7":"Sv\xe1tečn\xed krabice","aubYGR":"Sv\xe1tečn\xed kol\xe1č","vjxYqa":"Sv\xe1tečn\xed truhla","bHuJLS":"Sv\xe1tečn\xed k\xe1va","M6cPwM":"Sněhov\xe1 koule","GzPel5":"Krabice"}')

@@ -12,9 +12,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk693587 = require("./693587.js"),
   Chunk943970 = require("./943970.js"),
   Chunk967647 = require("./967647.jsx"),
-  Chunk258640 = require("./258640.js"),
+  Chunk989308 = require("./989308.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk958751 = require("./958751.js");
+  Chunk961820 = require("./961820.js");
 
 function g(e) {
   let {
@@ -81,10 +81,10 @@ function b(e) {
     guildId: b,
     gameInstance: p,
     onClick: j
-  } = e, x = (0, a.e7)([c.Z], () => c.Z.getStateForGuild(b)), y = i.useMemo(() => {
+  } = e, x = (0, a.e7)([u.Z], () => u.Z.getStateForGuild(b)), y = i.useMemo(() => {
     var e;
     return null == x || null == (e = x.entitlements) ? true : e[p.entitlementId]
-  }, [null == x ? true : x.entitlements, p.entitlementId]), O = (null == y ? true : y.ends_at) != null, h = null == y || null == (d = y.sku) || null == (o = d.tenant_metadata) || null == (n = o.guild_monetization) || null == (t = n.game_server) ? true : t.boost_price, P = (0, u.Z)(p.gameId, "icon");
+  }, [null == x ? true : x.entitlements, p.entitlementId]), O = (null == y ? true : y.ends_at) != null, h = null == y || null == (d = y.sku) || null == (o = d.tenant_metadata) || null == (n = o.guild_monetization) || null == (t = n.game_server) ? true : t.boost_price, P = (0, c.Z)(p.gameId, "icon");
   return null == h ? null : (0, l.jsxs)(r.P3F, {
     className: f.game,
     onClick: () => j(p),

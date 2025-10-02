@@ -1,4 +1,4 @@
-/** Chunk was on 46592 **/
+/** Chunk was on 75962 **/
 /** chunk id: 781040, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -17,7 +17,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk872269 = require("./872269.js"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk640962 = require("./640962.js");
+  Chunk176870 = require("./176870.js");
 
 function m(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -70,7 +70,7 @@ let j = e => {
     })
   },
   v = () => (0, Chunk951288.jsxs)("div", {
-    className: Chunk640962.dragClickTooltipText,
+    className: Chunk176870.dragClickTooltipText,
     children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
       children: Chunk388032.intl.format(Chunk388032.t["7cdwho"], {

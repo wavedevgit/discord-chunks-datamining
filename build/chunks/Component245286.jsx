@@ -1,4 +1,4 @@
-/** Chunk was on 54573 **/
+/** Chunk was on 59739 **/
 /** chunk id: 245286, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => C
@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk839469 = require("./839469.js"),
   Chunk518596 = require("./518596.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk885684 = require("./885684.js");
+  Chunk942408 = require("./942408.js");
 
 function O(e) {
   let {
@@ -128,14 +128,14 @@ function _() {
     }, []);
   return (0, Chunk951288.jsxs)("div", {
     children: [(0, Chunk951288.jsxs)("div", {
-      className: Chunk885684.searchBarContainer,
+      className: Chunk942408.searchBarContainer,
       children: [(0, Chunk951288.jsx)(Chunk481060.E1j, {
         size: "md",
         query: module,
         onChange: Chunk88658,
         onClear: Chunk313789
       }), (0, Chunk951288.jsx)("div", {
-        className: Chunk885684.popoverAnchor,
+        className: Chunk942408.popoverAnchor,
         ref: Chunk493773
       }), (0, Chunk951288.jsx)(Chunk218353.Z, {
         dismissibleContentType: Chunk704215.z.USER_SETTINGS_REDESIGN_EDUCATION_POPOVER,
@@ -145,7 +145,7 @@ function _() {
         props: Chunk663389
       })]
     }), exports && 0 === require.length && (0, Chunk951288.jsxs)("div", {
-      className: Chunk885684.emptySearchResultsContainer,
+      className: Chunk942408.emptySearchResultsContainer,
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-sm/semibold",
         color: "text-primary",

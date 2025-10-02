@@ -22,8 +22,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk624864 = require("./624864.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk968175 = require("./968175.js"),
-  Chunk10198 = require("./10198.js");
+  Chunk476828 = require("./476828.js"),
+  Chunk197571 = require("./197571.js");
 
 function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -83,14 +83,14 @@ class Z extends Chunk647438.PureComponent {
       direction: Chunk600164.Z.Direction.VERTICAL,
       grow: 0,
       shrink: 0,
-      className: Chunk968175.header,
+      className: Chunk476828.header,
       children: [(0, Chunk951288.jsxs)(Chunk600164.Z, {
         children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
-          className: Chunk968175.headerTitle,
+          className: Chunk476828.headerTitle,
           tag: "h1",
           children: Chunk388032.intl.string(Chunk388032.t["35G2Mj"])
         }), (0, Chunk951288.jsx)(Chunk481060.olH, {
-          className: Chunk968175.headerClose,
+          className: Chunk476828.headerClose,
           onClick: this.props.onClose
         })]
       }), this.renderTabBar()]
@@ -101,21 +101,21 @@ class Z extends Chunk647438.PureComponent {
       selectedSection: e
     } = this.state, t = Chunk906467.Z.isDeveloper ? (0, Chunk951288.jsx)(Chunk481060.njP.Item, {
       id: "DEVELOPER",
-      className: Chunk968175.tabBarItem,
+      className: Chunk476828.tabBarItem,
       children: "Developer"
     }) : null;
     return (0, Chunk951288.jsxs)(Chunk481060.njP, {
       selectedItem: module,
       type: "top",
-      className: Chunk968175.__invalid_tabBar,
+      className: Chunk476828.__invalid_tabBar,
       onItemSelect: this.handleSelectSection,
       children: [(0, Chunk951288.jsx)(Chunk481060.njP.Item, {
         id: "GENERAL",
-        className: Chunk968175.tabBarItem,
+        className: Chunk476828.tabBarItem,
         children: Chunk388032.intl.string(Chunk388032.t["0FYxx8"])
       }), (0, Chunk951288.jsx)(Chunk481060.njP.Item, {
         id: "VOICE",
-        className: Chunk968175.tabBarItem,
+        className: Chunk476828.tabBarItem,
         children: Chunk388032.intl.string(Chunk388032.t["3WeSiI"])
       }), exports]
     })
@@ -135,7 +135,7 @@ class Z extends Chunk647438.PureComponent {
         e = this.renderGeneralSettings()
     }
     return (0, Chunk951288.jsx)(Chunk481060.hzk, {
-      className: Chunk968175.content,
+      className: Chunk476828.content,
       children: module
     }, exports)
   }
@@ -149,7 +149,7 @@ class Z extends Chunk647438.PureComponent {
     return (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
       children: [(0, Chunk951288.jsx)(Chunk481060.xJW, {
         title: Chunk388032.intl.string(Chunk388032.t.IQv8Eh),
-        className: Chunk10198.marginBottom20,
+        className: Chunk197571.marginBottom20,
         children: (0, Chunk951288.jsx)(Chunk212632.Z, {
           position: module,
           onChange: this.handleChangeNotificationPositionMode
@@ -223,7 +223,7 @@ class Z extends Chunk647438.PureComponent {
   }
   renderDeveloperSettings() {
     return (0, Chunk951288.jsx)("div", {
-      className: Chunk10198.marginBottom20,
+      className: Chunk197571.marginBottom20,
       children: (0, Chunk951288.jsx)(Chunk481060.q4e, {
         label: "Crashes",
         value: true,

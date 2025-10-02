@@ -30,8 +30,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk726985 = require("./726985.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk174546 = require("./174546.js"),
-  Chunk10198 = require("./10198.js");
+  Chunk85240 = require("./85240.js"),
+  Chunk197571 = require("./197571.js");
 
 function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -166,7 +166,7 @@ function U() {
   return (0, Chunk951288.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.ACTIVITY_PRIVACY_TOS,
     children: (0, Chunk951288.jsx)(Chunk481060.hjN, {
-      className: Chunk10198.marginBottom40,
+      className: Chunk197571.marginBottom40,
       children: (0, Chunk951288.jsx)(Chunk481060.ToO, {
         type: Chunk481060.ToO.Types.PRIMARY,
         body: Chunk388032.intl.format(Chunk388032.t.xvCsx8, {
