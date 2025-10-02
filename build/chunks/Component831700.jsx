@@ -182,8 +182,8 @@ class en extends Chunk98597.ZP {
       canReorderChannel: m,
       canMoveMembers: b,
       showTutorial: y,
-      hasActiveEvent: j,
-      embeddedApps: v,
+      hasActiveEvent: v,
+      embeddedApps: j,
       isSubscriptionGated: x,
       isFavoriteSuggestion: C,
       withGuildIcon: E,
@@ -234,9 +234,9 @@ class en extends Chunk98597.ZP {
                 ref: this.channelItemRef,
                 className: J.iconVisibility,
                 iconClassName: o()({
-                  [J.iconLive]: j || S
+                  [J.iconLive]: v || S
                 }),
-                hasActiveEvent: j,
+                hasActiveEvent: v,
                 channel: e,
                 selected: !C && t,
                 connected: n,
@@ -258,12 +258,12 @@ class en extends Chunk98597.ZP {
                   unread: i,
                   mentionCount: a,
                   userCount: Z,
-                  embeddedActivitiesCount: v.length,
+                  embeddedActivitiesCount: j.length,
                   isSubscriptionGated: x
                 }),
                 "aria-describedby": (0, O.Z)({
                   channel: e,
-                  embeddedApps: v
+                  embeddedApps: j
                 }),
                 withGuildIcon: E
               }, p), {
@@ -311,7 +311,7 @@ class en extends Chunk98597.ZP {
         shouldShowGuildVerificationPopout: true
       });
       let a = l && o > 0;
-      a && u.Z.updateChatOpen(n.id, true), j.Z.handleVoiceConnect({
+      a && u.Z.updateChatOpen(n.id, true), v.Z.handleVoiceConnect({
         channel: n,
         connected: t,
         needSubscriptionToAccess: i,
@@ -321,7 +321,7 @@ class en extends Chunk98597.ZP {
     }), $(this, "handleContextMenu", e => {
       let {
         channel: t
-      } = this.props, i = M.Z.getGuild(t.getGuildId());
+      } = this.props, i = L.Z.getGuild(t.getGuildId());
       null != i && (0, d.jW)(e, async () => {
         let {
           default: e
@@ -442,9 +442,9 @@ function ei(e) {
   } = e, u = (0, a.cj)([U.ZP], () => ({
     unread: U.ZP.hasUnread(n.id),
     mentionCount: U.ZP.getMentionCount(n.id)
-  })), d = (0, a.e7)([G.ZP], () => G.ZP.resolveUnreadSetting(n)), p = (0, a.cj)([D.Z, L.Z, k.Z], () => {
+  })), d = (0, a.e7)([G.ZP], () => G.ZP.resolveUnreadSetting(n)), p = (0, a.cj)([D.Z, M.Z, k.Z], () => {
     let e = D.Z.getChannel(n.parent_id),
-      r = L.Z.getCheck(n.guild_id);
+      r = M.Z.getCheck(n.guild_id);
     return {
       canManageChannel: k.Z.can(q.Plq.MANAGE_CHANNELS, n),
       canReorderChannel: true !== i && (t.id === X._ || (null != e ? k.Z.can(q.Plq.MANAGE_CHANNELS, e) : k.Z.can(q.Plq.MANAGE_CHANNELS, t))),
@@ -454,11 +454,11 @@ function ei(e) {
       unverifiedAccount: !r.canChat
     }
   }), f = (0, a.e7)([B.Z], () => B.Z.hasVideo(n.id)), g = (0, h.ZP)(n), _ = (0, y.ZP)(n), O = (0, P.qY)(n.id), {
-    enabled: j
+    enabled: v
   } = m.W.useExperiment({
     guildId: t.id,
     location: "VoiceChannel"
-  }), v = (0, a.e7)([b.Z], () => !!j && null != b.Z.getStartTime(n), [n, j]), {
+  }), j = (0, a.e7)([b.Z], () => !!v && null != b.Z.getStartTime(n), [n, v]), {
     isSubscriptionGated: C,
     needSubscriptionToAccess: E
   } = (0, S.Z)(n.id), I = (0, x.Z)(), w = (0, a.e7)([G.ZP], () => G.ZP.isFavorite(t.id, n.id)), T = e.connected || (null == I ? true : I.channelId) === n.id, {
@@ -468,7 +468,7 @@ function ei(e) {
     guildId: n.guild_id,
     location: "VoiceChannel"
   }), {
-    enableOpenTIVForPing: M
+    enableOpenTIVForPing: L
   } = Z.A.useExperiment({
     guildId: n.guild_id,
     location: "VoiceChannel"
@@ -500,8 +500,8 @@ function ei(e) {
     resolvedUnreadSetting: d,
     enableHangStatus: A,
     allowChannelTopic: R,
-    enableOpenTIVForPing: M,
+    enableOpenTIVForPing: L,
     hasChannelInfo: null != F,
-    hasStartTime: v
+    hasStartTime: j
   }))
 }

@@ -44,8 +44,8 @@ let I = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
       draggable: A = false,
       sorting: R = false,
       onDragStart: D,
-      onDragEnd: M,
-      onExpandCollapse: L,
+      onDragEnd: L,
+      onExpandCollapse: M,
       onContextMenu: k,
       renderChildNode: U,
       folderButtonSize: G,
@@ -69,7 +69,7 @@ let I = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
         nodeId: t.id
       }),
       end() {
-        null == M || M(), (0, f.V1)(g.ZP.getCompatibleGuildFolders())
+        null == L || L(), (0, f.V1)(g.ZP.getCompatibleGuildFolders())
       },
       collect: e => ({
         dragging: e.isDragging()
@@ -77,8 +77,8 @@ let I = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
     }), et = i.useCallback(e => {
       X(e)
     }, []), en = i.useCallback(e => {
-      ("ArrowRight" === e.key && !s || "ArrowLeft" === e.key && s) && L()
-    }, [L, s]), er = null != z && "" !== z ? z : null != T && "" !== T ? T : E.intl.string(E.t.xV9hVl), ei = (0, c.Ie)("".concat(H)), el = "folder-items-".concat(H), eo = function(e) {
+      ("ArrowRight" === e.key && !s || "ArrowLeft" === e.key && s) && M()
+    }, [M, s]), er = null != z && "" !== z ? z : null != T && "" !== T ? T : E.intl.string(E.t.xV9hVl), ei = (0, c.Ie)("".concat(H)), el = "folder-items-".concat(H), eo = function(e) {
       let t = (0, p.dQu)(p.TVs.modules.guildbar.FOLDER_SIZE),
         n = (0, p.dQu)(p.TVs.modules.guildbar.AVATAR_SIZE),
         r = (0, p.dQu)(p.TVs.space.SPACE_XS);
@@ -96,7 +96,7 @@ let I = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
       config: {
         duration: I
       }
-    }), es = i.useCallback(e => null == n ? true : n(H, e), [n, H]), ec = (0, r.jsxs)(v.H, {
+    }), es = i.useCallback(e => null == n ? true : n(H, e), [n, H]), ec = (0, r.jsxs)(j.H, {
       children: [(0, r.jsx)(_.Z, {
         disabled: $ || s,
         hovered: K,
@@ -117,7 +117,7 @@ let I = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
             [P.wobble]: !$ && q && !s
           }),
           "data-dnd-name": er,
-          children: $ ? (0, r.jsx)(j.Z, {
+          children: $ ? (0, r.jsx)(v.Z, {
             isFolder: true
           }) : (0, r.jsx)(O.Z, {
             folderNode: t,
@@ -128,7 +128,7 @@ let I = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
             isMentionLowImportance: w,
             tooltipName: er,
             folderGroupId: el,
-            onClick: L,
+            onClick: M,
             onContextMenu: k,
             onHoverChange: Y,
             onKeyDown: en,

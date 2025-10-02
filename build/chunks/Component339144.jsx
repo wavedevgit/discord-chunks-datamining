@@ -78,7 +78,7 @@ function R(e, t, n) {
 let D = Chunk647438.memo(function(e) {
     var t;
     let l, a, f, D, {
-        stream: L,
+        stream: M,
         canGoLive: k,
         guildId: U,
         isStreaming: G,
@@ -95,14 +95,14 @@ let D = Chunk647438.memo(function(e) {
       } = e,
       {
         showRefreshedGoLiveModal: Q
-      } = (0, v.a)({
+      } = (0, j.a)({
         location: "Activity Panel",
         autoTrackExposure: false
       }),
       {
         parentAnalyticsLocation: J
       } = (0, m.ZP)(),
-      $ = (0, j.P6)("ActivityPanelGameCard"),
+      $ = (0, v.P6)("ActivityPanelGameCard"),
       ee = R(K, W, H),
       et = i.useCallback(() => {
         var e;
@@ -129,8 +129,8 @@ let D = Chunk647438.memo(function(e) {
         })
       }, [J]),
       ei = i.useCallback(() => {
-        (0, x.Z)(L)
-      }, [L]),
+        (0, x.Z)(M)
+      }, [M]),
       el = i.useCallback(() => {
         let e = null != B && (0, C.vd)(B.type) ? B : null,
           t = null != e ? e.getGuildId() : U;
@@ -207,8 +207,8 @@ let D = Chunk647438.memo(function(e) {
         onClick: er(z.applicationId),
         icon: c.PBZ
       }),
-      eO = null == L ? null : (0, r.jsx)(O.Z, {}),
-      ey = ed && ea && !ec ? (0, r.jsx)(M, {
+      eO = null == M ? null : (0, r.jsx)(O.Z, {}),
+      ey = ed && ea && !ec ? (0, r.jsx)(L, {
         runningGame: V,
         startAuthorization: () => {
           eh(true), null != ep.current && clearTimeout(ep.current), ep.current = setTimeout(() => {
@@ -218,12 +218,12 @@ let D = Chunk647438.memo(function(e) {
         connectionApp: eu,
         ref: X
       }) : null,
-      ej = $ && null != W && (0, h.Z)(W) ? (0, r.jsx)(I.Z, {
+      ev = $ && null != W && (0, h.Z)(W) ? (0, r.jsx)(I.Z, {
         tooltipText: "Report Issue",
         onClick: eo,
         icon: c.xhG
       }) : null,
-      ev = ed && ea && !ec ? (0, r.jsx)(s.J2, {
+      ej = ed && ea && !ec ? (0, r.jsx)(s.J2, {
         title: w.intl.string(w.t.ULvRFR),
         body: w.intl.string(w.t.HJJDr6),
         targetElementRef: X,
@@ -237,12 +237,12 @@ let D = Chunk647438.memo(function(e) {
           eh(false), null != ep.current && (clearTimeout(ep.current), ep.current = null)
         }
       }) : null;
-    return null == eg && null == em && null == eb && null == e_ && null == ey && null == ej ? null : (0, r.jsxs)("div", {
+    return null == eg && null == em && null == eb && null == e_ && null == ey && null == ev ? null : (0, r.jsxs)("div", {
       className: Z.actions,
-      children: [null != ey ? ey : em, eg, null != (t = null != eb ? eb : e_) ? t : eO, ej, ev]
+      children: [null != ey ? ey : em, eg, null != (t = null != eb ? eb : e_) ? t : eO, ev, ej]
     })
   }),
-  M = Chunk647438.forwardRef(function(e, t) {
+  L = Chunk647438.forwardRef(function(e, t) {
     let {
       runningGame: n,
       startAuthorization: i,

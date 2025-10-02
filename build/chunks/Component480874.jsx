@@ -61,7 +61,7 @@ function N() {
       let {
         row: o
       } = e, s = t[o], c = null == (i = t[o + 1]) || null == (n = i.channel) ? true : n.id, u = s.channel.id;
-      return (0, r.jsx)(v.Z, {
+      return (0, r.jsx)(y.Z, {
         index: o,
         className: a()({
           [T.selected]: null != P && P === u,
@@ -135,7 +135,7 @@ function N() {
         }({
           className: T.list,
           innerRole: l,
-          innerAriaLabel: C.intl.string(C.t.e7GWjY),
+          innerAriaLabel: S.intl.string(S.t.e7GWjY),
           ref: t => {
             var n;
             e.current = t, i.current = null != (n = null == t ? true : t.getScrollerNode()) ? n : null

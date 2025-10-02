@@ -145,8 +145,8 @@ class K extends Chunk98597.ZP {
       mentionCount: O,
       isFavoriteSuggestion: y
     } = this.props, {
-      shouldShowGuildVerificationPopout: j
-    } = this.state, v = this.getVoiceStatesCount(), x = (0, Chunk951288.jsxs)("li", {
+      shouldShowGuildVerificationPopout: v
+    } = this.state, j = this.getVoiceStatesCount(), x = (0, Chunk951288.jsxs)("li", {
       className: o()(this.getModeClass(), {
         [Chunk33082.disabled]: this.isDisabled()
       }),
@@ -179,7 +179,7 @@ class K extends Chunk98597.ZP {
               }
               return i
             }(l, ["onClick", "onContextMenu"]);
-            return (0, r.jsxs)(L.ZP, W(z({
+            return (0, r.jsxs)(M.ZP, W(z({
               ref: this.channelItemRef,
               className: F.iconVisibility,
               iconClassName: o()({
@@ -205,7 +205,7 @@ class K extends Chunk98597.ZP {
                 channel: e,
                 unread: b,
                 mentionCount: O,
-                userCount: v,
+                userCount: j,
                 isSubscriptionGated: g,
                 needSubscriptionToAccess: m
               })
@@ -337,10 +337,10 @@ function q(e) {
       bypassLimit: w.Z.can(U.Plq.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
-  }), p = (0, a.e7)([S.Z], () => S.Z.isCollapsed(n.parent_id)), f = (0, E.ZP)(n.id), h = (0, a.e7)([x.Z], () => x.Z.getStageInstanceByChannel(n.id), [n.id]), g = (0, j.Rk)(n.id, v.pV.AUDIENCE), {
+  }), p = (0, a.e7)([S.Z], () => S.Z.isCollapsed(n.parent_id)), f = (0, E.ZP)(n.id), h = (0, a.e7)([x.Z], () => x.Z.getStageInstanceByChannel(n.id), [n.id]), g = (0, v.Rk)(n.id, j.pV.AUDIENCE), {
     isSubscriptionGated: m,
     needSubscriptionToAccess: _
-  } = (0, b.Z)(n.id), O = (0, a.e7)([T.ZP], () => T.ZP.isFavorite(t.id, n.id)), y = (0, C.xJ)(n.id), I = (0, M.Z)({
+  } = (0, b.Z)(n.id), O = (0, a.e7)([T.ZP], () => T.ZP.isFavorite(t.id, n.id)), y = (0, C.xJ)(n.id), I = (0, L.Z)({
     channel: n,
     isChannelSelected: false,
     isChannelCollapsed: o,

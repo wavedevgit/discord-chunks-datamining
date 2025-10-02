@@ -37,7 +37,7 @@ function I(e) {
       trailing: m,
       showUnread: P
     } = function(e, t, n) {
-      let l = (0, v.Z)(e).available,
+      let l = (0, j.Z)(e).available,
         {
           shouldShow: o
         } = (0, C._)(e, "useGuildPowerupsChannelListIndicators"),
@@ -73,7 +73,7 @@ function I(e) {
     I = function(e, t) {
       let [n, r] = (0, d.US)(null != t ? [a.z.GUILD_POWERUP_PERKS_COACHMARK] : []), o = n === a.z.GUILD_POWERUP_PERKS_COACHMARK, {
         available: s
-      } = (0, v.Z)(e), c = function(e, t) {
+      } = (0, j.Z)(e), c = function(e, t) {
         let n = (0, y.qI)(e, "GuildPowerupsChannelRow");
         return i.useMemo(() => {
           if (!Array.from(E.os[E.Du.GUILD_TAG_BADGE_PACKS_WAVE_ONE]).some(e => {
@@ -122,7 +122,7 @@ function I(e) {
               return null != n && !!(l >= n)
             }) ? [] : r.map(r => {
               let i = t.allPowerups[r];
-              return null == i || n < i.cost || (0, j.e)(e, i, "maybeGetPerkPurchaseablePopoutDCF") ? null : i
+              return null == i || n < i.cost || (0, v.e)(e, i, "maybeGetPerkPurchaseablePopoutDCF") ? null : i
             })).filter(h.lm);
           if (0 !== o.length) {
             if (1 === o.length && !(0, p.OY)(a.C.GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK, e)) return {

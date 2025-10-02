@@ -1,5 +1,6 @@
-/** Chunk was on 93886 **/
-/** chunk id: 541699, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 88614 **/
+/** chunk id: 541699, original params: e,t,r (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Q: () => c,
   Z: () => d
@@ -17,21 +18,21 @@ class d extends Chunk523080.Z {
   }
   constructor(e) {
     super(e),
-      function(e, t, n) {
+      function(e, t, r) {
         t in e ? Object.defineProperty(e, t, {
-          value: n,
+          value: r,
           enumerable: true,
           configurable: true,
           writable: true
-        }) : e[t] = n
+        }) : e[t] = r
       }(this, "collectiblesItem", true), this.skuProductLine = s.POd.COLLECTIBLES;
     let t = (e => {
       switch (e.type) {
-        case r.Z.AVATAR_DECORATION:
+        case n.Z.AVATAR_DECORATION:
           return i.Z.fromServer(e);
-        case r.Z.PROFILE_EFFECT:
+        case n.Z.PROFILE_EFFECT:
           return l.Z.fromServer(e);
-        case r.Z.NAMEPLATE:
+        case n.Z.NAMEPLATE:
           return a.Z.fromServer(e);
         default:
           return null

@@ -70,8 +70,8 @@ function y(e) {
     contentClassName: g,
     buttonCTA: m,
     secondaryButtonCTA: y,
-    onClick: j,
-    onSecondaryClick: v,
+    onClick: v,
+    onSecondaryClick: j,
     buttonProps: x = {
       color: s.zx.Colors.BRAND,
       look: s.zx.Looks.FILLED
@@ -109,13 +109,13 @@ function y(e) {
       children: [w ? (0, l.jsx)(s.zx, h(f({}, C), {
         fullWidth: 1 === N,
         onClick: () => {
-          null == v || v(), null == P || P(d.L.SECONDARY)
+          null == j || j(), null == P || P(d.L.SECONDARY)
         },
         children: y
       })) : null, null == m ? null : (0, l.jsx)(s.zx, h(f({}, x), {
         fullWidth: !w || 1 === N,
         onClick: e => {
-          j(e), null == P || P(d.L.PRIMARY)
+          v(e), null == P || P(d.L.PRIMARY)
         },
         children: m
       }))]

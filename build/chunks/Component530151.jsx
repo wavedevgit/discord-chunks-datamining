@@ -188,7 +188,7 @@ function F(e, t, n, r, i) {
     {
       unit: o,
       time: s
-    } = (0, C.CI)(null != e ? e / 60 : null, a);
+    } = (0, S.CI)(null != e ? e / 60 : null, a);
   if (null != l && null != o) {
     let e = l[o];
     return null != e ? e(n, r, i, s) : null
@@ -269,13 +269,13 @@ class W extends Chunk647438.PureComponent {
       foregroundGradientColor: i,
       message: l
     } = e;
-    return (0, r.jsxs)(v.Z, {
-      direction: v.Z.Direction.VERTICAL,
+    return (0, r.jsxs)(y.Z, {
+      direction: y.Z.Direction.VERTICAL,
       children: [(0, r.jsx)(f.Exd, {
         percent: t,
         size: f.Exd.Sizes.SMALL,
-        foregroundColor: (0, y.Lq)(n),
-        foregroundGradientColor: null != i ? [(0, y.Lq)(i[0]), (0, y.Lq)(i[1])] : true,
+        foregroundColor: (0, v.Lq)(n),
+        foregroundGradientColor: null != i ? [(0, v.Lq)(i[0]), (0, v.Lq)(i[1])] : true,
         animate: this.isFocused
       }), (0, r.jsx)("div", {
         className: k.progressCellText,
@@ -288,8 +288,8 @@ class W extends Chunk647438.PureComponent {
       percents: t,
       message: n
     } = e;
-    return (0, r.jsxs)(v.Z, {
-      direction: v.Z.Direction.VERTICAL,
+    return (0, r.jsxs)(y.Z, {
+      direction: y.Z.Direction.VERTICAL,
       children: [(0, r.jsx)(f.yGy, {
         percents: t,
         size: f.yGy.Sizes.SMALL,
@@ -498,12 +498,12 @@ let q = () => (0, Chunk951288.jsx)(B, {
   X = [{
     key: "name",
     cellClassName: Chunk180678.nameCell,
-    render: e => (0, r.jsxs)(v.Z, {
-      align: v.Z.Align.CENTER,
-      children: [(0, r.jsx)(S.Z, {
+    render: e => (0, r.jsxs)(y.Z, {
+      align: y.Z.Align.CENTER,
+      children: [(0, r.jsx)(C.Z, {
         game: e.application,
         className: k.__invalid_gameIcon,
-        size: S.A.SMALL
+        size: C.A.SMALL
       }), (0, r.jsx)("div", {
         className: k.nameCellText,
         children: e.application.name
@@ -536,8 +536,8 @@ let q = () => (0, Chunk951288.jsx)(B, {
         item: e
       })) : i = (0, r.jsx)(Q, {
         item: e
-      }), (0, r.jsxs)(v.Z, {
-        justify: v.Z.Justify.END,
+      }), (0, r.jsxs)(y.Z, {
+        justify: y.Z.Justify.END,
         children: [n, i]
       })
     }

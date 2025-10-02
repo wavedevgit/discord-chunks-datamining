@@ -66,7 +66,7 @@ function D(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let M = {
+let L = {
   analyticsSource: {
     page: Chunk981631.ZY5.GUILD_CHANNEL,
     section: Chunk981631.jXE.CHANNEL_LIST,
@@ -74,7 +74,7 @@ let M = {
   }
 };
 
-function L(e, t) {
+function M(e, t) {
   (0, h.jW)(e, async () => {
     let {
       default: e
@@ -100,7 +100,7 @@ let k = Chunk647438.memo(function(e) {
     unavailable: q = false,
     badge: X = 0,
     isMentionLowImportance: Q,
-    contextMenu: J = L,
+    contextMenu: J = M,
     draggable: $ = false,
     sorting: ee = false,
     preloadOnClick: et = true,
@@ -129,7 +129,7 @@ let k = Chunk647438.memo(function(e) {
         nodeId: U.id
       }),
       end() {
-        null == F || F(), (0, g.V1)(v.ZP.getCompatibleGuildFolders())
+        null == F || F(), (0, g.V1)(j.ZP.getCompatibleGuildFolders())
       },
       collect: e => ({
         dragging: e.isDragging()
@@ -140,14 +140,14 @@ let k = Chunk647438.memo(function(e) {
     em = !ee && eh,
     [eb, e_] = i.useState(false),
     [eO, ey] = i.useState(false),
-    [ej] = i.useState(() => new d.sW(70, () => ey(true)));
-  i.useEffect(() => () => ej.cancel(), [ej]);
-  let ev = i.useCallback(() => {
+    [ev] = i.useState(() => new d.sW(70, () => ey(true)));
+  i.useEffect(() => () => ev.cancel(), [ev]);
+  let ej = i.useCallback(() => {
       if (null != V) return void(0, _.uL)(V, {
-        state: M
+        state: L
       });
       (0, O.X)(eo, {
-        state: M
+        state: L
       })
     }, [eo, V]),
     ex = i.useCallback(() => {
@@ -155,7 +155,7 @@ let k = Chunk647438.memo(function(e) {
       let e = (0, b.V)(H.id);
       null != e && f.Z.preload(H.id, e)
     }, [V, H, q, et]),
-    eC = (0, u.e7)([j.ZP], () => j.ZP.isCurrentUserGuest(eo)),
+    eC = (0, u.e7)([v.ZP], () => v.ZP.isCurrentUserGuest(eo)),
     eE = i.useCallback(e => {
       null == H || eC || J(e, H)
     }, [H, J, eC]),
@@ -166,9 +166,9 @@ let k = Chunk647438.memo(function(e) {
       }
     }, [ea]),
     eP = i.useCallback(e => {
-      if (e) return void ej.delay();
-      ej.cancel(), ey(false)
-    }, [ej]),
+      if (e) return void ev.delay();
+      ev.cancel(), ey(false)
+    }, [ev]),
     eI = i.useCallback(e => {
       null == G || G(eo, e)
     }, [eo, G]),
@@ -190,7 +190,7 @@ let k = Chunk647438.memo(function(e) {
         mentions: X
       }),
       name: H.name,
-      onClick: ev,
+      onClick: ej,
       onMouseEnter: function() {
         ee || eg(true)
       },

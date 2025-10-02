@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 663701, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => eS,
+  Z: () => eC,
   d: () => eI
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -295,7 +295,7 @@ let ef = e => {
           } = e;
           return t === p.z.FAMILY_CENTER_NEW_BADGE ? (0, r.jsx)(g.IGR, {
             text: eo.intl.string(eo.t.y2b7CA),
-            color: v.Z.BG_BRAND
+            color: y.Z.BG_BRAND
           }) : null
         }
       })
@@ -303,7 +303,7 @@ let ef = e => {
   },
   eE = () => (0, Chunk51596.$Z)("DM_SEARCH");
 
-function ey(e) {
+function ev(e) {
   switch (e) {
     case er.Z5c.APPLICATION_LIBRARY:
       return er.ZY5.LIBRARY;
@@ -314,7 +314,7 @@ function ey(e) {
   }
   return e.startsWith(er.Z5c.APPLICATION_STORE) ? e === er.Z5c.APPLICATION_STORE ? er.ZY5.STORE_DIRECTORY_HOME : e.startsWith(er.Z5c.APPLICATION_STORE) ? er.ZY5.STORE_DIRECTORY_BROWSE : er.ZY5.STORE_LISTING : er.ZY5.DM_CHANNEL
 }
-let ev = Chunk647438.memo(function(e) {
+let ey = Chunk647438.memo(function(e) {
   let {
     showLibrary: t,
     hasLibraryApplication: n,
@@ -328,7 +328,7 @@ let ev = Chunk647438.memo(function(e) {
     createDMButtonVariant: g,
     selectedChannelId: m,
     path: b
-  } = e, _ = i.useRef(null), O = i.useRef(null), E = i.useRef(null), v = i.useRef(null);
+  } = e, _ = i.useRef(null), O = i.useRef(null), E = i.useRef(null), y = i.useRef(null);
   return (0, r.jsxs)("nav", {
     className: ec.privateChannels,
     "aria-label": eo.intl.string(eo.t.ZH9aPz),
@@ -366,25 +366,25 @@ let ev = Chunk647438.memo(function(e) {
         selected: null == b ? null != l && l.startsWith(er.Z5c.MESSAGE_REQUESTS) : b === er.Z5c.MESSAGE_REQUESTS
       }, "message-requests") : null, s ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(M.g, {
-          nitroTabButtonRef: v,
+          nitroTabButtonRef: y,
           selected: null == b ? o : b.startsWith(er.Z5c.APPLICATION_STORE),
           route: er.Z5c.APPLICATION_STORE,
           locationState: {
             analyticsSource: {
-              page: ey(l),
+              page: ev(l),
               section: er.jXE.NAVIGATION,
               object: er.qAy.NAVIGATION_LINK
             }
           }
         }, "premium"), c && (0, r.jsx)(k.F, {
-          targetElementRef: v
+          targetElementRef: y
         })]
-      }) : null, (0, r.jsx)(y.i, {
+      }) : null, (0, r.jsx)(v.i, {
         selected: b === er.Z5c.COLLECTIBLES_SHOP || (null == l ? true : l.startsWith(er.Z5c.COLLECTIBLES_SHOP)),
         listItemRef: O,
         locationState: {
           analyticsSource: {
-            page: ey(l),
+            page: ev(l),
             section: er.jXE.NAVIGATION,
             object: er.qAy.NAVIGATION_LINK
           }
@@ -393,7 +393,7 @@ let ev = Chunk647438.memo(function(e) {
         selected: null != l && l.startsWith(er.Z5c.FAMILY_CENTER) || null != b && b.startsWith(er.Z5c.FAMILY_CENTER)
       }, "family-center") : null, f ? (0, r.jsx)(B.Z, {
         selected: null == b ? null != l && l.startsWith(er.Z5c.QUEST_HOME_V2) : b === er.Z5c.QUEST_HOME_V2
-      }, "quests") : null, (0, r.jsx)(eI, {}, "section-divider-top"), (0, r.jsx)(S.Z, {}, "frequent-friends"), "full-width" === g && (0, r.jsx)(eg, {}, "create-dm")]
+      }, "quests") : null, (0, r.jsx)(eI, {}, "section-divider-top"), (0, r.jsx)(C.Z, {}, "frequent-friends"), "full-width" === g && (0, r.jsx)(eg, {}, "create-dm")]
     }))]
   })
 });
@@ -404,7 +404,7 @@ function eI() {
   })
 }
 
-function eS() {
+function eC() {
   let e = (0, Chunk442837.e7)([Chunk774343.Z], () => Chunk774343.Z.getHomeLink()),
     t = (0, Chunk442837.e7)([Chunk55563.Z], () => {
       if (module === Chunk981631.Z5c.APPLICATION_STORE) returntrue;
@@ -448,7 +448,7 @@ function eS() {
     } = Chunk937797.m8.useConfig({
       location: Chunk46140.dr.PRIVATE_CHANNELS_LIST
     });
-  return (0, Chunk951288.jsx)(ev, {
+  return (0, Chunk951288.jsx)(ey, {
     theme: Chunk647438,
     showLibrary: require,
     hasLibraryApplication: Chunk120356,

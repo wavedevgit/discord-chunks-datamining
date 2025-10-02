@@ -1,7 +1,7 @@
 /** Chunk was on 69310 **/
 /** chunk id: 222059, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  u: () => M
+  u: () => L
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -55,8 +55,8 @@ function D(e) {
     badge: f,
     link: h,
     showProgressBadge: b
-  } = e, [_, O] = i.useState(false), [y, j] = i.useState(false), [v, x] = i.useState(null), [C, w] = i.useState(0), D = (0, l.Ie)("home"), M = (0, p.oq)().activePanel === p.wh.APP_ICON, L = () => {
-    x(null), w(0), clearTimeout(v)
+  } = e, [_, O] = i.useState(false), [y, v] = i.useState(false), [j, x] = i.useState(null), [C, w] = i.useState(0), D = (0, l.Ie)("home"), L = (0, p.oq)().activePanel === p.wh.APP_ICON, M = () => {
+    x(null), w(0), clearTimeout(j)
   };
   if (null == d) return null;
   let k = T.intl.string(T.t.YUU0RE);
@@ -66,7 +66,7 @@ function D(e) {
     className: A.downloadProgress,
     determineOwnVisibility: false
   }));
-  let G = o || _ || M,
+  let G = o || _ || L,
     B = (0, r.jsx)(s.aRk, {
       selected: true,
       lowerBadge: f > 0 ? (0, I.Ne)(f) : null,
@@ -95,11 +95,11 @@ function D(e) {
         onMouseEnter: () => O(true),
         onMouseLeave: () => O(false),
         onClick: () => {
-          if (!__OVERLAY__ && (null != v && clearTimeout(v), x(setTimeout(L, 500)), w(C + 1), 15 === C)) {
-            L();
+          if (!__OVERLAY__ && (null != j && clearTimeout(j), x(setTimeout(M, 500)), w(C + 1), 15 === C)) {
+            M();
             let e = !a.K.get(N.wli);
-            a.K.set(N.wli, e), e && a.K.set(Z.O, true), e ? (0, g.GN)("discodo") : (0, g.GN)("user_leave"), j(true), setTimeout(() => {
-              j(false)
+            a.K.set(N.wli, e), e && a.K.set(Z.O, true), e ? (0, g.GN)("discodo") : (0, g.GN)("user_leave"), v(true), setTimeout(() => {
+              v(false)
             }, 1e3)
           }
         },
@@ -153,7 +153,7 @@ function D(e) {
   })
 }
 
-function M() {
+function L() {
   let e = (0, Chunk278464.n)(),
     t = (0, Chunk442837.e7)([Chunk941128.Z, Chunk417363.Z], () => {
       let e = (0, Chunk339149.E)(Chunk941128.Z.activeItems, Chunk417363.Z),

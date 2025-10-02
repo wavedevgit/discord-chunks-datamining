@@ -42,10 +42,10 @@ function N(e) {
     enableActivities: A,
     isSubscriptionGated: R,
     needSubscriptionToAccess: D,
-    isNewChannel: M,
-    muted: L,
+    isNewChannel: L,
+    muted: M,
     resolvedUnreadSetting: k
-  } = e, U = (0, i.e7)([m.ZP], () => m.ZP.getMentionCount(n.id)), G = (0, i.e7)([m.ZP], () => m.ZP.getIsMentionLowImportance(n.id)), B = (0, a.ZP)(n), F = (0, i.e7)([g.Z], () => !g.Z.can(E.Plq.CONNECT, n)), V = (0, s.P)(n), H = (0, i.e7)([b.Z], () => b.Z.hasVideo(n.id)), z = (0, p.PK)(n.id) && n.isGuildStageVoice(), W = (0, j.ZP)({
+  } = e, U = (0, i.e7)([m.ZP], () => m.ZP.getMentionCount(n.id)), G = (0, i.e7)([m.ZP], () => m.ZP.getIsMentionLowImportance(n.id)), B = (0, a.ZP)(n), F = (0, i.e7)([g.Z], () => !g.Z.can(E.Plq.CONNECT, n)), V = (0, s.P)(n), H = (0, i.e7)([b.Z], () => b.Z.hasVideo(n.id)), z = (0, p.PK)(n.id) && n.isGuildStageVoice(), W = (0, v.ZP)({
     channel: n,
     locked: F,
     video: (H || z) && null == V,
@@ -61,19 +61,19 @@ function N(e) {
   if ((0, d.O)(R)) return (0, r.jsx)(d.Z, {
     locked: D
   });
-  if (M) return (0, r.jsx)(o.IGR, {
+  if (L) return (0, r.jsx)(o.IGR, {
     text: P.intl.string(P.t.y2b7CA),
     color: l.Z.unsafe_rawColors.BRAND_260.css,
     className: I.newChannel
   });
-  if (!L && k === S.i.ALL_MESSAGES && n.isForumLikeChannel() && null != K && K > 0) return (0, r.jsx)(o.Text, {
+  if (!M && k === S.i.ALL_MESSAGES && n.isForumLikeChannel() && null != K && K > 0) return (0, r.jsx)(o.Text, {
     variant: "text-xs/semibold",
     color: "text-brand",
     children: P.intl.format(P.t.GkAbqa, {
       count: (0, o.NGo)(K)
     })
   });
-  if (!L && n.isForumLikeChannel() && null != Y && Y > 0) return (0, r.jsx)(o.Text, {
+  if (!M && n.isForumLikeChannel() && null != Y && Y > 0) return (0, r.jsx)(o.Text, {
     variant: "text-xs/semibold",
     color: "text-muted",
     children: (0, o.NGo)(Y)
@@ -91,8 +91,8 @@ function N(e) {
     entry: {
       start: V
     }
-  }) : null != A && A && (0, O.u)(B) ? (0, r.jsx)(v.Z, {
+  }) : null != A && A && (0, O.u)(B) ? (0, r.jsx)(j.Z, {
     embeddedApps: B,
-    muted: L
+    muted: M
   }) : null
 }

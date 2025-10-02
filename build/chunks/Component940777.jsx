@@ -66,7 +66,7 @@ function R() {
       favoriteAdded: R,
       clearFavoriteAdded: D
     } = (0, Chunk593214.up)(),
-    [M, L] = Chunk647438.useState(false),
+    [L, M] = Chunk647438.useState(false),
     {
       favoriteServerMuted: k,
       favoriteChannels: U
@@ -82,7 +82,7 @@ function R() {
       unread: H
     } = (0, Chunk919755.Z)(U),
     z = function(e) {
-      let t = (0, s.e7)([j.Z], () => j.Z.getVoiceChannelId()),
+      let t = (0, s.e7)([v.Z], () => v.Z.getVoiceChannelId()),
         n = null != t && null != e[t],
         r = (0, s.e7)([O.Z], () => {
           if (!n) returnfalse;
@@ -90,7 +90,7 @@ function R() {
           return null != t && null != e[t.channelId]
         }),
         i = (0, s.e7)([O.Z], () => O.Z.getAllApplicationStreams().some(t => null != e[t.channelId])),
-        l = (0, s.e7)([v.Z], () => n && null != t && v.Z.hasVideo(t), [n, t]),
+        l = (0, s.e7)([j.Z], () => n && null != t && j.Z.hasVideo(t), [n, t]),
         o = (0, s.Wu)([p.ZP], () => x.default.keys(e).reduce((e, t) => (e.push(...p.ZP.getEmbeddedActivitiesForChannel(t)), e), [])),
         a = (0, s.e7)([p.ZP], () => Array.from(p.ZP.getSelfEmbeddedActivities().values()).some(t => {
           let {
@@ -119,7 +119,7 @@ function R() {
   return (0, Chunk951288.jsxs)(Chunk682662.H, {
     children: [(0, Chunk951288.jsx)(Chunk276952.Z, {
       selected: F,
-      hovered: M,
+      hovered: L,
       unread: H && !k,
       className: Chunk492750.pill
     }), (0, Chunk951288.jsx)(Chunk603274.Z, {
@@ -139,9 +139,9 @@ function R() {
               pathname: Chunk981631.Z5c.CHANNEL(Chunk981631.I_8, G),
               state: A
             },
-            selected: F || M,
-            onMouseEnter: () => L(true),
-            onMouseLeave: () => L(false),
+            selected: F || L,
+            onMouseEnter: () => M(true),
+            onMouseLeave: () => M(false),
             onMouseDown: function() {
               null != B && Chunk493683.Z.preload(B.guild_id, B.id)
             },

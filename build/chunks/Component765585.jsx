@@ -25,8 +25,8 @@ let b = Chunk647438.forwardRef(function(e, t) {
     headerClassName: _,
     contentClassName: O,
     tryItText: y,
-    dismissText: j,
-    onTryFeature: v,
+    dismissText: v,
+    onTryFeature: j,
     onClose: x,
     className: C,
     inlineArt: E = false,
@@ -40,8 +40,8 @@ let b = Chunk647438.forwardRef(function(e, t) {
     isPremiumEarlyAccess: A = false,
     maxWidth: R = 280,
     hideDismissButton: D = false,
-    pointerClassName: M,
-    dismissIconClassName: L,
+    pointerClassName: L,
+    dismissIconClassName: M,
     dismissIcon: k,
     onDismissIconClick: U,
     tryItButtonColor: G
@@ -74,7 +74,7 @@ let b = Chunk647438.forwardRef(function(e, t) {
       }),
       children: [null != k && (0, r.jsx)(s.P3F, {
         onClick: U,
-        className: L,
+        className: M,
         children: k
       }), (0, r.jsxs)("div", {
         className: o()(b, E ? m.artInline : m.artAbsolute),
@@ -112,12 +112,12 @@ let b = Chunk647438.forwardRef(function(e, t) {
       }), (0, r.jsx)("div", {
         ref: H,
         className: F || !P ? m.buttonContainerVertical : m.buttonContainerHorizontal,
-        children: null != v ? (0, r.jsxs)(r.Fragment, {
+        children: null != j ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(a.zx, {
             className: m.button,
             size: B,
             onClick: e => {
-              null == x || x(e), v(e), W(h.L.PRIMARY)
+              null == x || x(e), j(e), W(h.L.PRIMARY)
             },
             color: null != G ? G : S || A ? a.zx.Colors.BRAND_INVERTED : a.zx.Colors.WHITE,
             children: null != y ? y : g.intl.string(g.t.IHf1RE)
@@ -129,7 +129,7 @@ let b = Chunk647438.forwardRef(function(e, t) {
             },
             color: S || A ? a.zx.Colors.WHITE : a.zx.Colors.BRAND,
             look: S || A ? a.zx.Looks.LINK : a.zx.Looks.FILLED,
-            children: null != j ? j : g.intl.string(g.t.om7Ovr)
+            children: null != v ? v : g.intl.string(g.t.om7Ovr)
           })]
         }) : (0, r.jsx)(a.zx, {
           className: m.button,
@@ -141,7 +141,7 @@ let b = Chunk647438.forwardRef(function(e, t) {
           children: g.intl.string(g.t.HU2IR0)
         })
       }), (0, r.jsx)("div", {
-        className: o()(m.pointer, M, {
+        className: o()(m.pointer, L, {
           [m.bottomPointer]: "top" === w,
           [m.centerLeftPointer]: "right" === w && "center" === Z,
           [m.topLeftPointer]: "right" === w && "top" === Z,

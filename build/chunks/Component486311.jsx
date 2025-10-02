@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk524707 = require("./524707.js");
 
-function j(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -40,7 +40,7 @@ function j(e) {
   }
   return e
 }
-let v = {
+let j = {
     animation: {
       BEG: 0,
       END: 75
@@ -61,19 +61,19 @@ let v = {
       var e;
       switch (null == x || null == (e = x.popout) ? true : e.type) {
         case f.J.LEVEL_REACHED:
-          return (0, r.jsx)(g.jG, j({
+          return (0, r.jsx)(g.jG, v({
             guildId: t
           }, x.popout));
         case f.J.PERKS_AVAILABLE:
-          return (0, r.jsx)(g.$h, j({
+          return (0, r.jsx)(g.$h, v({
             guildId: t
           }, x.popout));
         case f.J.PERKS_PURCHASABLE:
-          return (0, r.jsx)(g.yI, j({
+          return (0, r.jsx)(g.yI, v({
             guildId: t
           }, x.popout));
         case f.J.NEW_PERK_AVAILABLE:
-          return (0, r.jsx)(g.cO, j({
+          return (0, r.jsx)(g.cO, v({
             guildId: t
           }, x.popout));
         default:
@@ -96,7 +96,7 @@ let v = {
       renderPopout: E,
       children: e => {
         var i, a;
-        return (0, r.jsx)(u.m, (i = j({}, e), a = a = {
+        return (0, r.jsx)(u.m, (i = v({}, e), a = a = {
           ref: T,
           className: y.container,
           id: "skill-trees-".concat(t),
@@ -110,7 +110,7 @@ let v = {
             children: (0, r.jsx)(s.kci, {
               nextScene: w,
               className: y.lottie,
-              sceneSegments: v,
+              sceneSegments: j,
               importData: () => n.e("50821").then(n.t.bind(n, 548421, 19)),
               onScenePlay: Z,
               rendererSettings: {

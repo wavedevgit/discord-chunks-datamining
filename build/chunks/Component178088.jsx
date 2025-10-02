@@ -43,8 +43,8 @@ function w(e) {
     spacing: R,
     dialogClassName: D
   } = e, {
-    analyticsLocations: M
-  } = (0, p.ZP)(d.Z.NOTIFICATION_CENTER), [L, k] = i.useState(false), [U, G] = [(0, s.e7)([O.Z], () => {
+    analyticsLocations: L
+  } = (0, p.ZP)(d.Z.NOTIFICATION_CENTER), [M, k] = i.useState(false), [U, G] = [(0, s.e7)([O.Z], () => {
     var e, t;
     return null != (t = null == (e = O.Z.settings.inbox) ? true : e.currentTab) ? t : c.X.UNREADS
   }), i.useCallback(e => {
@@ -70,10 +70,10 @@ function w(e) {
       setSeenTutorial: n
     }
   }(U), V = i.useCallback(() => {
-    k(false), L && (null == n || n())
-  }, [n, L]), H = i.useCallback(() => {
-    k(!L), L ? null == n || n() : null == t || t()
-  }, [n, t, L]);
+    k(false), M && (null == n || n())
+  }, [n, M]), H = i.useCallback(() => {
+    k(!M), M ? null == n || n() : null == t || t()
+  }, [n, t, M]);
   i.useEffect(() => (y.S.subscribe(P.CkL.TOGGLE_INBOX, H), () => void y.S.unsubscribe(P.CkL.TOGGLE_INBOX, H)), [H]);
   let {
     enabled: z,
@@ -95,14 +95,14 @@ function w(e) {
       location: "ForYou"
     });
   return (0, r.jsx)(p.Gt, {
-    value: M,
+    value: L,
     children: (0, r.jsx)(u.yRy, {
       targetElementRef: A,
       animation: u.yRy.Animation.NONE,
       position: Z,
       align: T,
       autoInvert: false,
-      shouldShow: L,
+      shouldShow: M,
       onRequestClose: V,
       renderPopout: function() {
         return (0, r.jsx)(u.VqE, {
@@ -119,7 +119,7 @@ function w(e) {
                 badgeState: w,
                 closePopout: V
               }),
-              children: U === c.X.FOR_YOU ? (0, r.jsx)(j.ZP, {}) : U === c.X.MENTIONS ? (0, r.jsx)(v.Z, {
+              children: U === c.X.FOR_YOU ? (0, r.jsx)(v.ZP, {}) : U === c.X.MENTIONS ? (0, r.jsx)(j.Z, {
                 onJump: q
               }) : Y && U === c.X.GAME_INVITES ? (0, r.jsx)(S.Z, {}) : z && W && U === c.X.BOOKMARKS ? (0, r.jsx)(m.K, {
                 closePopout: V

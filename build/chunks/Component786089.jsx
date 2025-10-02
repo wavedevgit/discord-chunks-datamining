@@ -51,7 +51,7 @@ let j = (0, Chunk647438.memo)(function(e) {
   });
   let $ = (0, u.wj)(F),
     ee = (0, i.useMemo)(() => null != A.config.cosponsorMetadata, [A]),
-    et = (0, i.useMemo)(() => (0, y.fh)(A, y.eC.REWARD), [A]),
+    et = (0, i.useMemo)(() => (0, v.fh)(A, v.eC.REWARD), [A]),
     en = Z ? H + 8 : 0,
     er = (0, _.mH)(E.jn.TROPHY_CASE_CARD),
     {
@@ -74,7 +74,7 @@ let j = (0, Chunk647438.memo)(function(e) {
       return i
     }(er, ["content_position", "row_index"]),
     eo = () => {
-      w(true), b.default.track(C.rMx.QUEST_HOVER, function(e) {
+      w(true), b.default.track(S.rMx.QUEST_HOVER, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -97,7 +97,7 @@ let j = (0, Chunk647438.memo)(function(e) {
     },
     es = () => w(false),
     ec = e => {
-      k(true), b.default.track(C.rMx.QUEST_ASSET_LOADING_FAILURE, {
+      k(true), b.default.track(S.rMx.QUEST_ASSET_LOADING_FAILURE, {
         source: e,
         asset_id: e,
         quest_id: A.id
@@ -125,7 +125,7 @@ let j = (0, Chunk647438.memo)(function(e) {
           user: B,
           guildId: null
         })
-      }), Y ? (0, r.jsx)(v.Z, {
+      }), Y ? (0, r.jsx)(y.Z, {
         className: N.image
       }) : Q ? (0, r.jsx)(I.Z, {
         className: N.image
@@ -153,7 +153,7 @@ let j = (0, Chunk647438.memo)(function(e) {
         style: {
           transform: "translateY(-".concat(en, "px)")
         },
-        children: (0, r.jsx)(S.ZP, {
+        children: (0, r.jsx)(C.ZP, {
           logotypeClassName: a()(N.logo, {
             [N.logoWithCosponsor]: ee
           }),

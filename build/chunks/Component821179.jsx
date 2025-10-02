@@ -27,10 +27,10 @@ function b(e) {
     onSelect: O
   } = e, {
     theme: y,
-    themeType: j
-  } = (0, d.z)(), v = t.hasAvatarForGuild(b.id);
+    themeType: v
+  } = (0, d.z)(), j = t.hasAvatarForGuild(b.id);
   return (0, r.jsxs)(l.P3F, {
-    focusProps: j === h.l.MODAL_V2 ? {
+    focusProps: v === h.l.MODAL_V2 ? {
       offset: {
         top: 4,
         right: 4,
@@ -97,7 +97,7 @@ function b(e) {
       children: [(0, r.jsx)("div", {
         className: g.name,
         children: b.name
-      }), v && (0, r.jsxs)("div", {
+      }), j && (0, r.jsxs)("div", {
         className: g.nick,
         children: [(0, r.jsx)(l.qEK, {
           src: t.getAvatarURL(b.id, m),
@@ -111,7 +111,7 @@ function b(e) {
             children: null != _ ? _ : u.ZP.getName(b.id, true, t)
           })
         })]
-      }), !v && null != _ && (0, r.jsx)(l.Text, {
+      }), !j && null != _ && (0, r.jsx)(l.Text, {
         variant: "text-xs/medium",
         children: (0, r.jsx)(s.Z, {
           delay: p.vB,

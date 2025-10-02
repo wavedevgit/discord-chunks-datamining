@@ -27,11 +27,11 @@ let g = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
       imageMarginX: _,
       imageMarginTop: O,
       trackingSource: E,
-      undismissable: y,
-      onDismissed: v,
+      undismissable: v,
+      onDismissed: y,
       onClick: I,
-      cta: S,
-      ctaColor: C,
+      cta: C,
+      ctaColor: S,
       centerText: T,
       className: N
     } = e;
@@ -42,7 +42,7 @@ let g = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
       })
     }, [t.id, m]);
     let j = null;
-    "function" == typeof S ? j = S() : null != S && (j = (0, r.jsx)(s.zx, {
+    "function" == typeof C ? j = C() : null != C && (j = (0, r.jsx)(s.zx, {
       className: h.button,
       size: s.zx.Sizes.SMALL,
       onClick: () => {
@@ -53,8 +53,8 @@ let g = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
         }), null == I || I()
       },
       fullWidth: true,
-      color: C,
-      children: S
+      color: S,
+      children: C
     }));
     let P = null;
     "function" == typeof n ? P = n() : null != n && (P = (0, r.jsx)(c.Text, {
@@ -79,11 +79,11 @@ let g = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
     let A = null != _ ? "".concat(_, "px") : "16px";
     return (0, r.jsxs)("div", {
       className: a()(h.container, N),
-      children: [true === y ? null : (0, r.jsx)(c.P3F, {
+      children: [true === v ? null : (0, r.jsx)(c.P3F, {
         onClick: () => {
           u.ZP.trackWithMetadata(p.rMx.CHANNEL_NOTICE_CLOSED, {
             notice_type: m
-          }), null == v || v()
+          }), null == y || y()
         },
         className: h.close,
         "aria-label": f.intl.string(f.t.WAI6xs),

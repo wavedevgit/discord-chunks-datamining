@@ -86,17 +86,17 @@ let _ = ["1402418171662569542"],
           pid: g,
           activity: O
         }), Promise.resolve(O);
-        let y = {};
+        let v = {};
         O.name = a.application.name;
-        let v = a.application.id;
-        O.application_id = v;
+        let y = a.application.id;
+        O.application_id = y;
         let I = a.transport === m.He.POST_MESSAGE;
         O.platform = I ? b.M7m.EMBEDDED : b.M7m.DESKTOP;
-        let S = c.Z.getApplication(null != v ? v : true),
-          C = null != (r = O.instance) && r,
+        let C = c.Z.getApplication(null != y ? y : true),
+          S = null != (r = O.instance) && r,
           T = null == (t = O.party) ? true : t.privacy;
         delete O.instance, null == (n = O.party) || delete n.privacy;
-        let N = (0, s.S)(O, C, I, null != S && (0, u.g)(S) && I, T);
+        let N = (0, s.S)(O, S, I, null != C && (0, u.g)(C) && I, T);
         N > 0 && (O.flags = N);
         let {
           assets: j,
@@ -118,7 +118,7 @@ let _ = ["1402418171662569542"],
             errorCode: b.lTL.INVALID_ACTIVITY_SECRET
           }, "secrets cannot currently be sent with buttons")
         }
-        if (null != Z && (y.button_urls = Z.map(e => e.url), O.buttons = Z.map(e => e.label)), O.metadata = y, null != A)
+        if (null != Z && (v.button_urls = Z.map(e => e.url), O.buttons = Z.map(e => e.label)), O.metadata = v, null != A)
           for (let e of Object.keys(A)) Date.now().toString().length - A[e].toString().length > 2 && (A[e] = Math.floor(A[e] * f.Z.Millis.SECOND));
         if (null == j) l = Promise.resolve([]);
         else {

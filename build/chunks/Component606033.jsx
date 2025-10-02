@@ -23,8 +23,8 @@ let b = function(e) {
     questId: _,
     setQuestId: O,
     quest: E,
-    refreshQuest: y
-  } = e, [v, I] = i.useState(false), [S, C] = i.useState(false), T = i.useRef(null), N = (0, u.MP)(), j = (0, l.e7)([d.Z], () => null != _ ? d.Z.getFetchQuestPreviewError(_) : null, [_]), P = (0, l.e7)([d.Z], () => null != _ && d.Z.isFetchingQuestPreview(_), [_]), x = i.useMemo(() => {
+    refreshQuest: v
+  } = e, [y, I] = i.useState(false), [C, S] = i.useState(false), T = i.useRef(null), N = (0, u.MP)(), j = (0, l.e7)([d.Z], () => null != _ ? d.Z.getFetchQuestPreviewError(_) : null, [_]), P = (0, l.e7)([d.Z], () => null != _ && d.Z.isFetchingQuestPreview(_), [_]), x = i.useMemo(() => {
     let e = N.map(e => {
       var t, n, r;
       return {
@@ -92,7 +92,7 @@ let b = function(e) {
                 }] : n
               }
             }, "".concat(_, "-").concat(null != (b = null == E || null == (n = E.config) || null == (t = n.messages) ? true : t.questName) ? b : "")), (0, r.jsx)(a.hU, {
-              onClick: y,
+              onClick: v,
               "aria-label": g.intl.string(g.t.wzzjk5),
               icon: a.DuK,
               loading: P
@@ -106,26 +106,26 @@ let b = function(e) {
         className: m.controlButtons,
         children: [(0, r.jsx)(a.zxk, {
           onClick: A,
-          disabled: v,
-          loading: v,
+          disabled: y,
+          loading: y,
           variant: "secondary",
           text: g.intl.string(g.t.jQEfRU)
         }), (0, r.jsx)(a.zxk, {
           onClick: Z,
-          disabled: v,
-          loading: v,
+          disabled: y,
+          loading: y,
           variant: "secondary",
           text: g.intl.string(g.t.taqkwM)
         }), (0, r.jsx)(a.zxk, {
           onClick: w,
-          disabled: v,
-          loading: v,
+          disabled: y,
+          loading: y,
           variant: "secondary",
           text: g.intl.string(g.t.cKSLr6)
         }), (0, r.jsx)(a.yRy, {
           targetElementRef: T,
-          shouldShow: S,
-          onRequestClose: () => C(false),
+          shouldShow: C,
+          onRequestClose: () => S(false),
           position: "bottom",
           align: "center",
           renderPopout: () => (0, r.jsx)("div", {
@@ -140,7 +140,7 @@ let b = function(e) {
           }),
           children: () => (0, r.jsx)(a.hU, {
             buttonRef: T,
-            onClick: () => C(!S),
+            onClick: () => S(!C),
             "aria-label": g.intl.string(g.t.rNGQfH),
             icon: a.TIy,
             variant: "secondary"

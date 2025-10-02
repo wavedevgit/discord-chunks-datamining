@@ -42,7 +42,7 @@ function y(e) {
   })
 }
 
-function j(e) {
+function v(e) {
   let {
     showCurrentGame: t,
     shouldShowStatus: n = false,
@@ -83,7 +83,7 @@ function j(e) {
   })
 }
 
-function v(e) {
+function j(e) {
   let {
     children: t,
     closePopout: n
@@ -127,7 +127,7 @@ function x(e) {
   let {
     closePopout: t
   } = e, n = u.G6.useSetting();
-  return (0, i.jsxs)(v, {
+  return (0, i.jsxs)(j, {
     closePopout: t,
     children: [(0, i.jsx)(s.Text, {
       variant: "text-xs/normal",
@@ -138,7 +138,7 @@ function x(e) {
       })
     }), (0, i.jsx)("div", {
       className: _.toggleContainerWrapper,
-      children: (0, i.jsx)(j, {
+      children: (0, i.jsx)(v, {
         showCurrentGame: n,
         shouldShowCustomizeLink: true,
         closePopout: t
@@ -151,7 +151,7 @@ function C(e) {
   let {
     closePopout: t
   } = e;
-  return (0, i.jsxs)(v, {
+  return (0, i.jsxs)(j, {
     closePopout: t,
     children: [(0, i.jsx)(s.Text, {
       variant: "text-xs/normal",
@@ -170,7 +170,7 @@ function E(e) {
   let {
     closePopout: t
   } = e, n = u.G6.useSetting();
-  return (0, i.jsxs)(v, {
+  return (0, i.jsxs)(j, {
     closePopout: t,
     children: [(0, i.jsx)(s.Text, {
       variant: "text-xs/normal",
@@ -181,7 +181,7 @@ function E(e) {
       })
     }), (0, i.jsx)("div", {
       className: _.toggleContainerWrapper,
-      children: (0, i.jsx)(j, {
+      children: (0, i.jsx)(v, {
         showCurrentGame: n,
         shouldShowStatus: true,
         closePopout: t
@@ -196,8 +196,8 @@ function S(e) {
   } = e, n = u.G6.useSetting(), {
     showLinkToSettings: r
   } = (0, f.D)("popout");
-  return (0, i.jsxs)(v, {
-    children: [(0, i.jsx)(j, {
+  return (0, i.jsxs)(j, {
+    children: [(0, i.jsx)(v, {
       showCurrentGame: n,
       closePopout: t
     }), (0, i.jsx)(s.izJ, {
@@ -218,7 +218,7 @@ function P(e) {
   let {
     closePopout: t
   } = e;
-  return (0, i.jsxs)(v, {
+  return (0, i.jsxs)(j, {
     children: [(0, i.jsx)(o.X6q, {
       variant: "heading-sm/semibold",
       color: "header-primary",
@@ -242,8 +242,8 @@ function I(e) {
   } = e, n = u.G6.useSetting(), {
     showLinkToSettings: r
   } = (0, f.D)("popout");
-  return (0, i.jsxs)(v, {
-    children: [(0, i.jsx)(j, {
+  return (0, i.jsxs)(j, {
+    children: [(0, i.jsx)(v, {
       showCurrentGame: n,
       shouldShowStatus: true,
       closePopout: t

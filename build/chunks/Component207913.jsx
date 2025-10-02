@@ -82,7 +82,7 @@ function V(e) {
     isSelected: a,
     isUnread: s,
     groupedMessages: d
-  } = e, p = n.type === L.d4z.UNKNOWN ? u.VL1 : (0, h.KS)(n, null), m = (0, f.ZP)(n, false), b = (0, c.e7)([w.Z], () => w.Z.getGuild(n.getGuildId())), {
+  } = e, p = n.type === M.d4z.UNKNOWN ? u.VL1 : (0, h.KS)(n, null), m = (0, f.ZP)(n, false), b = (0, c.e7)([w.Z], () => w.Z.getGuild(n.getGuildId())), {
     nick: O,
     colorString: y
   } = (0, _.ZP)(t), {
@@ -93,7 +93,7 @@ function V(e) {
     size: u.EFr.SIZE_32,
     guildId: null == b ? true : b.id,
     animateOnHover: true
-  }), S = n.type !== L.d4z.GUILD_ANNOUNCEMENT || null == b, I = (0, j.x)({
+  }), S = n.type !== M.d4z.GUILD_ANNOUNCEMENT || null == b, I = (0, v.x)({
     channel: n,
     message: t,
     user: t.author,
@@ -102,7 +102,7 @@ function V(e) {
   }), Z = (0, r.jsx)("div", {
     className: G.usernameTagContainer,
     inert: true,
-    children: (0, r.jsx)(v.Z, {
+    children: (0, r.jsx)(j.Z, {
       channel: n,
       message: t,
       hideGuildTag: true,
@@ -125,14 +125,14 @@ function V(e) {
           width: "fit-content",
           marginTop: "4px"
         },
-        children: S ? (0, r.jsx)(M.q, {
+        children: S ? (0, r.jsx)(L.q, {
           "aria-label": "User Avatar",
           src: x,
           size: u.EFr.SIZE_32,
           cornerIconUrl: null != b ? (0, P.EB)(b, 24) : true,
           cornerIconOffsetX: 4,
           cornerIconOffsetY: 3
-        }) : (0, r.jsx)(M.E, {
+        }) : (0, r.jsx)(L.E, {
           "aria-label": "Guild Icon",
           src: (0, P.EB)(b, 32),
           size: u.EFr.SIZE_32,
@@ -295,32 +295,32 @@ function W(e) {
     });
     return (0, i.useMemo)(() => {
       let e = "" === t.content,
-        i = t.embeds.some(e => e.type === L.hBH.GIFV),
+        i = t.embeds.some(e => e.type === M.hBH.GIFV),
         s = function(e) {
-          let t = e.embeds.some(e => e.type === L.hBH.GIFV);
+          let t = e.embeds.some(e => e.type === M.hBH.GIFV);
           return e.attachments.length + +!!t
         }(t),
         c = (0, m.Z)(t),
         d = t.stickerItems.length > 0,
         p = t.isPoll(),
-        f = t.type === L.uaV.POLL_RESULT,
-        h = t.hasFlag(L.iLy.IS_VOICE_MESSAGE),
-        g = t.type === L.uaV.USER_JOIN,
+        f = t.type === M.uaV.POLL_RESULT,
+        h = t.hasFlag(M.iLy.IS_VOICE_MESSAGE),
+        g = t.type === M.uaV.USER_JOIN,
         _ = null;
       1 === s ? _ = u.XBm : s > 1 ? _ = u.Ka2 : c ? _ = b.Z : p || f ? _ = u.QDj : d ? _ = u.SlE : h && (_ = u.gj8);
       let y = true,
-        j = null;
+        v = null;
       if (e)
-        if (c) j = U.intl.string(U.t["9ddYKi"]);
+        if (c) v = U.intl.string(U.t["9ddYKi"]);
         else if (p) {
-        var v;
-        y = false, j = null == (v = t.poll) ? true : v.question.text
-      } else j = f ? U.intl.string(U.t.sad2PD) : i ? U.intl.string(U.t.p0oZm5) : s > 1 ? U.intl.formatToPlainString(U.t.rtfTKi, {
+        var j;
+        y = false, v = null == (j = t.poll) ? true : j.question.text
+      } else v = f ? U.intl.string(U.t.sad2PD) : i ? U.intl.string(U.t.p0oZm5) : s > 1 ? U.intl.formatToPlainString(U.t.rtfTKi, {
         count: s
       }) : 1 === s ? U.intl.string(U.t.tCcq5u) : d ? U.intl.format(U.t.zY4v1N, {
         stickerName: t.stickerItems[0].name
       }) : h ? U.intl.string(U.t.slFYgo) : g ? U.intl.string(U.t.Yvvfw8) : U.intl.string(U.t.sDqZHB);
-      else y = false, j = (0, r.jsx)(O.ZP, {
+      else y = false, v = (0, r.jsx)(O.ZP, {
         content: a,
         message: t,
         compact: false,
@@ -329,15 +329,15 @@ function W(e) {
           [G.selected]: l
         })
       });
-      return e && (j = (0, r.jsx)("div", {
+      return e && (v = (0, r.jsx)("div", {
         className: o()(G.message, {
           [G.unread]: n,
           [G.selected]: l,
           [G.descriptionMessage]: y
         }),
-        children: j
+        children: v
       })), {
-        previewContent: j,
+        previewContent: v,
         Icon: _
       }
     }, [t, a, n, l])
@@ -377,7 +377,7 @@ let K = (0, Chunk647438.memo)(function(e) {
     return null != e ? e : new S.nl({
       id: l.channelId,
       guild_id: l.guildId,
-      type: L.d4z.UNKNOWN,
+      type: M.d4z.UNKNOWN,
       name: U.intl.string(U.t.J90oLS)
     })
   }), b = (0, R.z)(e => {

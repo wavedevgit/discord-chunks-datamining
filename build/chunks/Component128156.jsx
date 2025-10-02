@@ -1,5 +1,5 @@
 /** Chunk was on 56848 **/
-/** chunk id: 128156, original params: e,t,r (module,exports,require) **/
+/** chunk id: 128156, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => C
 });
@@ -34,123 +34,123 @@ var Chunk442837 = require("./442837.js"),
 function C(e) {
   let {
     user: t,
-    currentUser: r,
+    currentUser: n,
     displayProfile: C,
-    guildId: A,
-    channelId: Z,
+    guildId: E,
+    channelId: A,
     subsection: T,
-    onClose: N
+    onClose: Z
   } = e, {
     voiceActivityStatusEnabled: D
   } = (0, s.U)({
     location: "UserProfileModalV2Activity"
   }), _ = (0, h.b)({
     location: "UserProfileModalV2Activity"
-  }), L = (0, c.P6)("UserProfileModalV2Activity"), {
-    live: R,
+  }), R = (0, c.P6)("UserProfileModalV2Activity"), {
+    live: L,
     recent: M,
     stream: U
   } = (0, p.Z)(t.id), {
     voiceChannel: F,
-    voiceActivity: W
+    voiceActivity: G
   } = (0, m.Z)({
     userId: t.id,
-    guildId: A
-  }), G = (0, i.e7)([o.Z], () => o.Z.isFetchingUserOutbox(t.id)), H = t.id === r.id, B = (0, i.e7)([f.Z, d.Z], () => {
-    let e = H ? f.Z.getStatus() : d.Z.getStatus(t.id);
+    guildId: E
+  }), W = (0, i.e7)([o.Z], () => o.Z.isFetchingUserOutbox(t.id)), B = t.id === n.id, z = (0, i.e7)([f.Z, d.Z], () => {
+    let e = B ? f.Z.getStatus() : d.Z.getStatus(t.id);
     return e === l.Skl.OFFLINE || e === l.Skl.INVISIBLE
-  }), z = R.length > 0 || null != U, V = D && null == U && null == W && null != F, Y = !B && (z || V), K = M.length > 0, q = R.some(e => (0, a.Z)(e));
-  if (!Y && !K && G) return (0, n.jsx)("div", {
+  }), H = L.length > 0 || null != U, V = D && null == U && null == G && null != F, Y = !z && (H || V), q = M.length > 0, K = L.some(e => (0, a.Z)(e));
+  if (!Y && !q && W) return (0, r.jsx)("div", {
     className: k.cards,
     children: Array.from({
       length: 8
-    }).map((e, t) => (0, n.jsxs)("div", {
+    }).map((e, t) => (0, r.jsxs)("div", {
       className: k.loadingItem,
-      children: [(0, n.jsx)(u.ZT, {
+      children: [(0, r.jsx)(u.ZT, {
         width: 60,
         opacity: .08
-      }), (0, n.jsx)(u.ZT, {
+      }), (0, r.jsx)(u.ZT, {
         width: 135,
         opacity: .08
       })]
     }, t))
   });
-  if (!Y && !K && !G) {
+  if (!Y && !q && !W) {
     var J;
-    return H ? (0, n.jsx)(S.Uf, {
-      onClose: N
-    }) : (0, n.jsx)(S.P9, {
+    return B ? (0, r.jsx)(x.Uf, {
+      onClose: Z
+    }) : (0, r.jsx)(x.P9, {
       user: t,
-      guildId: null != (J = null == C ? true : C.guildId) ? J : A,
-      channelId: Z,
-      onClose: N
+      guildId: null != (J = null == C ? true : C.guildId) ? J : E,
+      channelId: A,
+      onClose: Z
     })
   }
-  return (0, n.jsxs)(x.F, {
+  return (0, r.jsxs)(S.F, {
     className: k.scroller,
     fade: true,
     children: [(() => {
-      let e = H && L && !q;
-      return Y ? (0, n.jsx)(P.Z, {
-        heading: E.intl.string(E.t.J6STd3),
-        children: (0, n.jsxs)("ul", {
+      let e = B && R && !K;
+      return Y ? (0, r.jsx)(P.Z, {
+        heading: N.intl.string(N.t.J6STd3),
+        children: (0, r.jsxs)("ul", {
           className: k.cards,
-          children: [e && (0, n.jsx)("li", {
-            children: (0, n.jsx)(v.Z, {
+          children: [e && (0, r.jsx)("li", {
+            children: (0, r.jsx)(v.Z, {
               variant: "horizontal"
             })
-          }), !_ && V && (0, n.jsx)("li", {
-            children: (0, n.jsx)(j.Z, {
+          }), !_ && V && (0, r.jsx)("li", {
+            children: (0, r.jsx)(O.Z, {
               user: t,
-              currentUser: r,
+              currentUser: n,
               voiceChannel: F,
-              onClose: N
+              onClose: Z
             })
-          }), null != U && (0, n.jsx)("li", {
-            children: (0, n.jsx)(O.Z, {
+          }), null != U && (0, r.jsx)("li", {
+            children: (0, r.jsx)(j.Z, {
               user: t,
-              currentUser: r,
+              currentUser: n,
               stream: U,
-              onClose: N
+              onClose: Z
             })
-          }), R.map((e, i) => (0, n.jsx)("li", {
-            children: (0, n.jsx)(b.Z, {
+          }), L.map((e, i) => (0, r.jsx)("li", {
+            children: (0, r.jsx)(b.Z, {
               user: t,
-              currentUser: r,
+              currentUser: n,
               activity: e,
-              onClose: N
+              onClose: Z
             })
-          }, "live-".concat(i))), _ && V && (0, n.jsx)("li", {
-            children: (0, n.jsx)(j.Z, {
+          }, "live-".concat(i))), _ && V && (0, r.jsx)("li", {
+            children: (0, r.jsx)(O.Z, {
               user: t,
-              currentUser: r,
+              currentUser: n,
               voiceChannel: F,
-              onClose: N
+              onClose: Z
             })
           })]
         })
-      }) : e ? (0, n.jsx)(P.Z, {
-        heading: E.intl.string(E.t.J6STd3),
-        children: (0, n.jsx)(v.Z, {
+      }) : e ? (0, r.jsx)(P.Z, {
+        heading: N.intl.string(N.t.J6STd3),
+        children: (0, r.jsx)(v.Z, {
           variant: "horizontal"
         })
       }) : null
-    })(), K ? (0, n.jsx)(P.Z, {
-      heading: E.intl.string(E.t.jzgEoK),
-      introText: H ? E.intl.format(E.t["4bk9Ag"], {
-        learnMoreHook: (e, t) => (0, n.jsx)(l.eee, {
+    })(), q ? (0, r.jsx)(P.Z, {
+      heading: N.intl.string(N.t.jzgEoK),
+      introText: B ? N.intl.format(N.t["4bk9Ag"], {
+        learnMoreHook: (e, t) => (0, r.jsx)(l.eee, {
           href: g.Z.getArticleURL(I.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e
         }, t)
       }) : true,
       scrollIntoView: T === w.Tb.RECENT_ACTIVITY,
-      children: (0, n.jsx)("ul", {
+      children: (0, r.jsx)("ul", {
         className: k.cards,
-        children: M.map(e => (0, n.jsx)("li", {
-          children: (0, n.jsx)(y.Z, {
+        children: M.map(e => (0, r.jsx)("li", {
+          children: (0, r.jsx)(y.Z, {
             user: t,
             entry: e,
-            onClose: N
+            onClose: Z
           })
         }, e.id))
       })

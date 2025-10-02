@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk675999 = require("./675999.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk207972 = require("./207972.js");
-let v = {
+let j = {
   origin: {
     x: false,
     y: 0
@@ -90,10 +90,10 @@ function C(e) {
     icon: o.oFk
   });
   return t ? I : (0, r.jsx)("div", {
-    className: j.tutorialContainer,
+    className: v.tutorialContainer,
     children: (0, r.jsxs)(p.Z, {
       tutorialId: E ? "create-more-servers" : "create-first-server",
-      inlineSpecs: v,
+      inlineSpecs: j,
       position: "right",
       children: [I, null != n && (0, r.jsx)(m.ZP, {
         name: y.intl.string(y.t["45xjMz"]),

@@ -158,7 +158,7 @@ let eS = e => {
       })
     })
   },
-  eC = e => {
+  eZ = e => {
     let {
       keyCode: t,
       shiftKey: n,
@@ -174,7 +174,7 @@ let eS = e => {
       ctrlKey: s
     }
   };
-class eZ extends Chunk647438.Component {
+class eC extends Chunk647438.Component {
   handleLock() {
     (0, Chunk481060.$sL)() || Chunk574254.Z.isOpen() || Chunk13245.Z.setInputLocked(true, (0, Chunk145597.getPID)())
   }
@@ -345,7 +345,7 @@ class eZ extends Chunk647438.Component {
         this.forceUpdate()
       }, 500)
     }), ev(this, "activeKeyEventShapes", []), ev(this, "lockEventShape", (0, $.d2)(this.props.keybindKeyCodes)), ev(this, "getActiveKeyEventIndex", e => this.activeKeyEventShapes.findIndex(t => p()(t, e))), ev(this, "onKeyDownGlobal", e => {
-      let t = eC(e),
+      let t = eZ(e),
         n = this.getActiveKeyEventIndex(t) > false,
         i = [16, 17, 18, 91].includes(e.keyCode);
       n || i || this.activeKeyEventShapes.push(t), this.activeKeyEventShapes.length === this.lockEventShape.length && this.lockEventShape.every(e => this.activeKeyEventShapes.some(t => p()(e, t))) && (e.preventDefault(), e.stopPropagation());
@@ -355,7 +355,7 @@ class eZ extends Chunk647438.Component {
       } = this.props;
       t.keyCode === c().codes.esc && r && s.has(ey.O0n.TEXT_WIDGET) && b.Z.deactivateAllRegions()
     }), ev(this, "onKeyUpGlobal", e => {
-      let t = eC(e),
+      let t = eZ(e),
         n = this.getActiveKeyEventIndex(t);
       n > false && this.activeKeyEventShapes.splice(n, 1)
     });
@@ -391,7 +391,7 @@ function ej() {
   } = (0, Chunk32300.J0)("OverlaySetup");
   return (0, Chunk951288.jsx)(Chunk906732.Gt, {
     value: Chunk239091,
-    children: (0, Chunk951288.jsx)(eZ, {
+    children: (0, Chunk951288.jsx)(eC, {
       locked: require,
       initialized: i,
       incompatibleApp: Chunk647438,

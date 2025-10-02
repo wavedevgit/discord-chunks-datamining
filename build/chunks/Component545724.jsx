@@ -55,9 +55,9 @@ let g = function(e) {
     isFocused: _,
     isActive: O,
     onOtherHover: E,
-    className: y
-  } = e, [v, I] = i.useState(false), [S, C] = i.useState(false), T = () => {
-    I(true), !_ || O || S || null == E || E()
+    className: v
+  } = e, [y, I] = i.useState(false), [C, S] = i.useState(false), T = () => {
+    I(true), !_ || O || C || null == E || E()
   }, N = () => {
     I(false)
   };
@@ -69,12 +69,12 @@ let g = function(e) {
         right: false
       },
       children: (0, r.jsx)(o.Z.div, h(f({
-        className: a()(p.messageRequestItem, y, {
-          [p.active]: O || S,
+        className: a()(p.messageRequestItem, v, {
+          [p.active]: O || C,
           [p.firstItem]: 0 === t
         }),
         onContextMenu: e => {
-          null != g && (C(true), (0, u.jW)(e, async () => {
+          null != g && (S(true), (0, u.jW)(e, async () => {
             let {
               default: e
             } = await Promise.all([n.e("79695"), n.e("69220")]).then(n.bind(n, 881351));
@@ -83,7 +83,7 @@ let g = function(e) {
             }))
           }, {
             onClose: () => {
-              C(false)
+              S(false)
             }
           }))
         },
@@ -95,7 +95,7 @@ let g = function(e) {
           opacity: 1
         }
       }, e), {
-        children: l(v || O || S)
+        children: l(y || O || C)
       }))
     })
   })

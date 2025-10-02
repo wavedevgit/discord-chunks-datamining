@@ -214,7 +214,7 @@ function el(e) {
 let ea = e => {
   let t = (0, U.Z)();
   return (i.useEffect(() => {
-    (0, v.kk)(u.z.MESSAGE_REQUEST_SETTINGS_COACH_MARK)
+    (0, y.kk)(u.z.MESSAGE_REQUEST_SETTINGS_COACH_MARK)
   }, []), null == e.targetElementRef.current || R.Z.hasLayers() || (0, p.$sL)()) ? e.children : (0, r.jsx)(I.ZP, {
     contentTypes: [u.z.MESSAGE_REQUEST_SETTINGS_COACH_MARK],
     children: n => {
@@ -274,7 +274,7 @@ let es = (0, Chunk112724.Z)(function(e) {
   (0, m.ZP)(() => {
     f.Y(Q.Z5c.MESSAGE_REQUESTS), (0, P.e)("message-requests"), D.default.track(Q.rMx.MESSAGE_REQUESTS_VIEWED, {
       num_message_requests: n
-    }), C.Z.increment({
+    }), S.Z.increment({
       name: s.V.MESSAGE_REQUEST_VIEW
     })
   });
@@ -293,10 +293,10 @@ let es = (0, Chunk112724.Z)(function(e) {
   i.useEffect(() => {
     null != g && !_ && O && b && ((0, T.Kh)(g), N.Z.closeChannelSidebar(w.uZ))
   }, [g, O, b, _]);
-  let [v, I] = i.useState(K.pS.REQUESTS), A = e => {
+  let [y, I] = i.useState(K.pS.REQUESTS), A = e => {
     I(e)
   };
-  return (0, y.Tt)({
+  return (0, v.Tt)({
     location: $.intl.string($.t.e7GWjY)
   }), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
@@ -306,21 +306,21 @@ let es = (0, Chunk112724.Z)(function(e) {
       }),
       children: [(0, r.jsx)(p.f6W, {
         theme: l,
-        children: e => (0, r.jsxs)(S.Z, {
+        children: e => (0, r.jsxs)(C.Z, {
           className: e,
           toolbar: true,
-          children: [(0, r.jsx)(S.Z.Icon, {
+          children: [(0, r.jsx)(C.Z.Icon, {
             icon: p._XJ,
             "aria-hidden": true
           }), (0, r.jsx)(ea, {
             targetElementRef: E,
-            children: (0, r.jsx)(S.Z.Title, {
+            children: (0, r.jsx)(C.Z.Title, {
               ref: E,
               children: $.intl.string($.t.e7GWjY)
             })
-          }), (0, r.jsx)(S.Z.Divider, {}), (0, r.jsxs)(p.njP, {
+          }), (0, r.jsx)(C.Z.Divider, {}), (0, r.jsxs)(p.njP, {
             "aria-label": $.intl.string($.t.e7GWjY),
-            selectedItem: v,
+            selectedItem: y,
             type: "top-pill",
             onItemSelect: A,
             children: [(0, r.jsx)(p.njP.Item, {
@@ -339,7 +339,7 @@ let es = (0, Chunk112724.Z)(function(e) {
       }), (0, r.jsx)("div", {
         className: et.content,
         children: (0, r.jsx)(eo, {
-          section: v
+          section: y
         })
       })]
     }), b && (0, r.jsx)(el, {

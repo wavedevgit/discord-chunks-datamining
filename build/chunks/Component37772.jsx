@@ -77,7 +77,7 @@ let B = Chunk647438.memo(function e(t) {
       channel: l,
       message: s,
       compact: R = false,
-      className: L,
+      className: M,
       onContextMenu: B,
       onClick: V,
       disableInteraction: H = false,
@@ -106,7 +106,7 @@ let B = Chunk647438.memo(function e(t) {
       allowLinks: true,
       previewLinkTarget: true
     }),
-    el = (0, v.ZP)(s),
+    el = (0, j.ZP)(s),
     eo = (0, a.e7)([g.Z], () => s.hasFlag(D.iLy.HAS_THREAD) && g.Z.getChannel(b.default.castMessageIdAsChannelId(s.id))),
     ea = s.type === D.uaV.THREAD_STARTER_MESSAGE && Y.state === f.Y.LOADED && null != q,
     es = !ea && true === i,
@@ -123,14 +123,14 @@ let B = Chunk647438.memo(function e(t) {
     message: Y.message,
     channel: q,
     hasThread: false
-  })) : (m.Z.isBlockedForMessage(s) ? i = M.t["+FcYMz"] : m.Z.isIgnoredForMessage(s) ? i = M.t.VFWjc3 : (0, y.DQ)(s) && W && (i = M.t.xfkfTE), true !== i) ? (0, r.jsx)(F, {
-    className: L,
+  })) : (m.Z.isBlockedForMessage(s) ? i = L.t["+FcYMz"] : m.Z.isIgnoredForMessage(s) ? i = L.t.VFWjc3 : (0, y.DQ)(s) && W && (i = L.t.xfkfTE), true !== i) ? (0, r.jsx)(F, {
+    className: M,
     compact: R,
     count: 1,
     collapsedReason: i
   }) : (0, r.jsx)(C.Z, {
     compact: R,
-    className: o()(L, {
+    className: o()(M, {
       [k.ephemeral]: (0, O.Pv)(s),
       [k.disableInteraction]: H,
       [k.groupStart]: t.isGroupStart
@@ -170,11 +170,11 @@ let B = Chunk647438.memo(function e(t) {
     onClick: V,
     hasThread: false !== z && null != eo && s.hasFlag(D.iLy.HAS_THREAD),
     hasReply: s.type === D.uaV.REPLY,
-    isSystemMessage: (0, j.Z)(s),
+    isSystemMessage: (0, v.Z)(s),
     messageRef: ec,
     author: el,
     "aria-labelledby": ef,
-    "aria-roledescription": M.intl.string(M.t.BAB0yM)
+    "aria-roledescription": L.intl.string(L.t.BAB0yM)
   })
 });
 
@@ -191,15 +191,15 @@ function F(e) {
     role: "group",
     childrenMessageContent: (0, r.jsx)(R.Z, {
       compact: i,
-      className: L.blockedSystemMessage,
+      className: M.blockedSystemMessage,
       iconNode: (0, r.jsx)(s.Dio, {
         size: "md",
         color: "currentColor",
-        className: L.blockedIcon
+        className: M.blockedIcon
       }),
       children: (0, r.jsx)("div", {
-        className: L.blockedMessageText,
-        children: M.intl.format(l, {
+        className: M.blockedMessageText,
+        children: L.intl.format(l, {
           count: n
         })
       })

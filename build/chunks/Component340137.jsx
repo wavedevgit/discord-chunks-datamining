@@ -28,12 +28,12 @@ let I = {
     default: 0,
     compact: 0
   },
-  S = {
+  C = {
     cozy: 36,
     default: 24,
     compact: 14
   },
-  C = {
+  S = {
     cozy: 95,
     default: 84,
     compact: 72
@@ -53,7 +53,7 @@ function T(e) {
   } = (0, p.T)({
     location: "NotificationsInboxTitleBarButton"
   }), x = (0, r.jsx)(u.Dkj, {
-    className: v.icon,
+    className: y.icon,
     color: h || T ? u.TVs.colors.ICON_PRIMARY : u.TVs.colors.ICON_TERTIARY,
     size: j
   }), {
@@ -61,7 +61,7 @@ function T(e) {
     badgeType: Z
   } = (0, _.h6)({
     isSelected: E
-  }), w = (0, g.isDesktop)() && N, L = (0, f.A)(), R = (0, g.isMac)() ? I[L] : w ? S[L] : C[L];
+  }), w = (0, g.isDesktop)() && N, L = (0, f.A)(), R = (0, g.isMac)() ? I[L] : w ? C[L] : S[L];
   return (0, r.jsxs)(u.Kqy, {
     gap: 0,
     direction: "horizontal",
@@ -70,7 +70,7 @@ function T(e) {
       horizontal: true
     }), (0, r.jsx)(u.ua7, {
       shouldShow: !T,
-      text: y.intl.string(y.t.HcoRu7),
+      text: v.intl.string(v.t.HcoRu7),
       children: e => {
         var n, i;
         return (0, r.jsxs)(u.P3F, (n = function(e) {
@@ -92,8 +92,8 @@ function T(e) {
           return e
         }({
           innerRef: o,
-          className: a()(v.clickableContainer, {
-            [v.withHoverHighlight]: P
+          className: a()(y.clickableContainer, {
+            [y.withHoverHighlight]: P
           })
         }, s, e, l), i = i = {
           onMouseEnter: () => {
@@ -109,7 +109,7 @@ function T(e) {
             null == t || t(), null == l || null == (n = l.onClick) || n.call(l), null == (r = e.onClick) || r.call(e)
           },
           children: [(0, r.jsx)("div", {
-            className: a()(v.iconWrapper, null),
+            className: a()(y.iconWrapper, null),
             children: "unread" === Z ? (0, r.jsxs)(r.Fragment, {
               children: [(0, r.jsx)(d.ZP, {
                 width: c.Z[j],
@@ -117,7 +117,7 @@ function T(e) {
                 mask: d.ZP.Masks.HEADER_BAR_BADGE_BOTTOM,
                 children: x
               }), (0, r.jsx)("div", {
-                className: a()(v.unreadDot, v[j])
+                className: a()(y.unreadDot, y[j])
               })]
             }) : x
           }), A]

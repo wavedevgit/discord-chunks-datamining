@@ -1,5 +1,5 @@
 /** Chunk was on 56848 **/
-/** chunk id: 778567, original params: e,t,r (module,exports,require) **/
+/** chunk id: 778567, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
 }), require("./388685.js");
@@ -15,19 +15,19 @@ var Chunk951288 = require("./951288.js"),
 function d(e) {
   let {
     isOwner: t
-  } = e, r = i.useRef(null), {
+  } = e, n = i.useRef(null), {
     analyticsLocations: d
   } = (0, s.ZP)(a.Z.USER_PROFILE_WISHLIST), [f, g] = i.useState(true), h = i.useCallback(() => {
     g(!f)
-  }, [f]), p = i.useMemo(() => t ? (0, n.jsx)(l.kSQ, {
-    children: (0, n.jsx)(l.m76, {
+  }, [f]), p = i.useMemo(() => t ? (0, r.jsx)(l.kSQ, {
+    children: (0, r.jsx)(l.m76, {
       id: "wishlist-privacy-setting",
-      label: (0, n.jsxs)(n.Fragment, {
-        children: [(0, n.jsx)(l.Text, {
+      label: (0, r.jsxs)(r.Fragment, {
+        children: [(0, r.jsx)(l.Text, {
           variant: "text-sm/medium",
           color: "text-primary",
           children: c.intl.string(c.t.b2nFyM)
-        }), (0, n.jsx)(l.Text, {
+        }), (0, r.jsx)(l.Text, {
           className: u.menuItemDescription,
           variant: "text-xs/medium",
           color: "text-tertiary",
@@ -38,15 +38,15 @@ function d(e) {
       action: h
     })
   }) : null, [t, f, h]);
-  return null == p ? null : (0, n.jsx)(s.Gt, {
+  return null == p ? null : (0, r.jsx)(s.Gt, {
     value: d,
-    children: (0, n.jsx)(l.yRy, {
-      targetElementRef: r,
+    children: (0, r.jsx)(l.yRy, {
+      targetElementRef: n,
       renderPopout: e => {
         let {
           closePopout: t
         } = e;
-        return (0, n.jsx)(l.v2r, {
+        return (0, r.jsx)(l.v2r, {
           navId: "wishlist-overflow-menu",
           onSelect: true,
           onClose: t,
@@ -54,25 +54,25 @@ function d(e) {
           children: p
         })
       },
-      children: e => (0, n.jsx)(o.pt, function(e) {
+      children: e => (0, r.jsx)(o.pt, function(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {},
-            n = Object.keys(r);
-          "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(r, e).enumerable
-          }))), n.forEach(function(t) {
-            var n;
-            n = r[t], t in e ? Object.defineProperty(e, t, {
-              value: n,
+          var n = null != arguments[t] ? arguments[t] : {},
+            r = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(n, e).enumerable
+          }))), r.forEach(function(t) {
+            var r;
+            r = n[t], t in e ? Object.defineProperty(e, t, {
+              value: r,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[t] = n
+            }) : e[t] = r
           })
         }
         return e
       }({
-        buttonRef: r,
+        buttonRef: n,
         icon: l.xhG,
         tooltipText: c.intl.string(c.t.UKOtz8),
         action: "PRESS_OPTIONS"

@@ -185,7 +185,7 @@ class el extends Chunk647438.Component {
           textValue: n
         } = t.state,
         i = R.Z.getDraft(e.channel.id, R.d.ChannelMessage);
-      n !== i && "" === i && t.setState((0, C.eK)(i))
+      n !== i && "" === i && t.setState((0, Z.eK)(i))
     }), en(this, "handleTextareaKeyDown", e => {
       if (e.which === Q.yXg.ARROW_UP && !e.shiftKey && !e.altKey && !e.ctrlKey && !e.metaKey && 0 === this.state.textValue.length) {
         e.preventDefault();
@@ -237,7 +237,7 @@ class el extends Chunk647438.Component {
         let l = p.Z.getSendMessageOptionsForReply(i);
         return (p.Z.sendMessage(n.id, w.ZP.parse(n, t), true, er(ei({}, l), {
           location: $.dy.OVERLAY
-        })), this.setState((0, C.H2)()), (0, T.A6)(n.id), r) ? (f.Z.deactivateAllRegions(), {
+        })), this.setState((0, Z.H2)()), (0, T.A6)(n.id), r) ? (f.Z.deactivateAllRegions(), {
           shouldClear: false,
           shouldRefocus: false
         }) : {
@@ -253,16 +253,16 @@ class el extends Chunk647438.Component {
       this.setState({
         focused: false
       })
-    }), en(this, "renderAttachButton", (e, t) => (0, i.jsx)(Z.Z, {
+    }), en(this, "renderAttachButton", (e, t) => (0, i.jsx)(C.Z, {
       className: t,
       channel: this.props.channel,
       draftType: R.d.ChannelMessage,
       editorTextContent: this.state.textValue,
-      setValue: e => this.handleTextareaChange(null, e, (0, C.JM)(e)),
+      setValue: e => this.handleTextareaChange(null, e, (0, Z.JM)(e)),
       canOnlyUseTextCommands: e
     })), R.Z.addChangeListener(this.draftDidChange);
     let n = R.Z.getDraft(e.channel.id, R.d.ChannelMessage);
-    this.state = er(ei({}, (0, C.eK)(n)), {
+    this.state = er(ei({}, (0, Z.eK)(n)), {
       focused: false,
       contentWarningProps: null
     }), B.S.subscribe(Q.CkL.TEXTAREA_FOCUS, this.focusInput), B.S.subscribe(Q.CkL.TEXTAREA_BLUR, this.blurInput)

@@ -60,7 +60,7 @@ let Z = function(e) {
     {
       section: w,
       rows: L
-    } = (0, s.cj)([y.ZP], () => y.ZP.getState()),
+    } = (0, s.cj)([v.ZP], () => v.ZP.getState()),
     R = (0, s.e7)([g.Z], () => g.Z.getSuggestionCount()),
     D = i.useMemo(() => L.getRelationshipCounts(), [L]);
   i.useEffect(() => {
@@ -118,7 +118,7 @@ let Z = function(e) {
       ariaLabel: P.intl.string(P.t.j0wbEx),
       className: a()(x.item, x.addFriend)
     }],
-    B = v.o.useConfig({
+    B = y.o.useConfig({
       location: "friendstore"
     }).landOnProfilePage;
   B && G.unshift({
@@ -132,7 +132,7 @@ let Z = function(e) {
       className: x.nowPlayingColumn,
       children: (0, r.jsx)(_.Z, {})
     });
-  return w === N.pJs.ADD_FRIEND ? V = (0, r.jsx)(S.Z, {}) : w === N.pJs.YOU ? B ? V = (0, r.jsx)(T.Z, {}) : (V = (0, r.jsx)(c.Ttm, {
+  return w === N.pJs.ADD_FRIEND ? V = (0, r.jsx)(C.Z, {}) : w === N.pJs.YOU ? B ? V = (0, r.jsx)(T.Z, {}) : (V = (0, r.jsx)(c.Ttm, {
     className: x.nowPlayingFullWidth,
     children: (0, r.jsx)("div", {
       style: {
@@ -140,7 +140,7 @@ let Z = function(e) {
       },
       children: (0, r.jsx)(_.Z, {})
     })
-  }), H = null) : V = (0, r.jsx)(C.Z, {
+  }), H = null) : V = (0, r.jsx)(S.Z, {
     titleId: U
   }), (0, r.jsxs)("main", {
     className: x.container,

@@ -37,10 +37,10 @@ let x = 15 * Chunk70956.Z.Millis.MINUTE,
       onUserContextMenu: n,
       onChannelContextMenu: l,
       quest: a
-    } = e, o = i.useRef(null), c = (0, r.jsx)(v.Z, {
+    } = e, o = i.useRef(null), c = (0, r.jsx)(y.Z, {
       party: t,
       onUserContextMenu: n
-    }), d = (0, r.jsx)(y.Z, {
+    }), d = (0, r.jsx)(v.Z, {
       party: t,
       onChannelContextMenu: l,
       quest: a
@@ -49,7 +49,7 @@ let x = 15 * Chunk70956.Z.Millis.MINUTE,
       applicationStreams: f,
       currentActivities: h,
       voiceChannels: g
-    } = t, m = p.length, b = f.length, O = h.length, E = g.length > 0, C = i.useCallback(() => {
+    } = t, m = p.length, b = f.length, O = h.length, E = g.length > 0, S = i.useCallback(() => {
       let e = h.filter(e => {
         var t, n;
         return (null == (t = e.game) ? true : t.name) != null && (0, _.isGameApplicationType)(null == (n = e.game) ? true : n.type)
@@ -61,7 +61,7 @@ let x = 15 * Chunk70956.Z.Millis.MINUTE,
         in_voice_channel: E,
         games_detected: e
       })
-    }, [m, b, O, E, h]), N = s()(C, x);
+    }, [m, b, O, E, h]), N = s()(S, x);
     return null != c || null != d ? (0, r.jsx)(u.yRy, {
       targetElementRef: o,
       position: "left",
@@ -69,7 +69,7 @@ let x = 15 * Chunk70956.Z.Millis.MINUTE,
         let {
           closePopout: n
         } = e;
-        return (0, r.jsx)(S.Z, {
+        return (0, r.jsx)(C.Z, {
           party: t,
           close: n
         })

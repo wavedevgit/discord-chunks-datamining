@@ -235,11 +235,11 @@ function ec(e) {
   } = e, [s] = (0, p.Wu)([R.ZP], () => {
     let e = R.ZP.getGuildsTree();
     return [e, e.version]
-  }), d = (0, p.e7)([S.Z], () => S.Z.lurkingGuildIds()), f = i.useMemo(() => n ? [] : d, [d, n]), b = (0, p.e7)([v.Z], () => v.Z.isFullscreenInContext()), {
+  }), d = (0, p.e7)([S.Z], () => S.Z.lurkingGuildIds()), f = i.useMemo(() => n ? [] : d, [d, n]), b = (0, p.e7)([j.Z], () => j.Z.isFullscreenInContext()), {
     isSorting: O,
     startSorting: C,
     stopSorting: E
-  } = (0, M.Z)(), Z = i.useRef(false), [T] = i.useState(() => new h.V7), A = i.useRef(null), G = i.useRef(null), B = (0, u.OP)(), {
+  } = (0, L.Z)(), Z = i.useRef(false), [T] = i.useState(() => new h.V7), A = i.useRef(null), G = i.useRef(null), B = (0, u.OP)(), {
     ref: F
   } = B, V = function(e, t) {
     if (null == e) return {};
@@ -284,7 +284,7 @@ function ec(e) {
   }), [ef]);
   let {
     analyticsLocations: eh
-  } = (0, j.ZP)(y.Z.GUILDS_LIST), eg = el(ec);
+  } = (0, v.ZP)(y.Z.GUILDS_LIST), eg = el(ec);
   (0, _.Ng)(() => {
     if (!Z.current && 0 !== s.size) {
       if (!eg) {
@@ -319,7 +319,7 @@ function ec(e) {
   (0, k.Z)(ef.scrollToGuild);
   let eb = i.useCallback(function e(t, n, i) {
       switch (t.type) {
-        case L.eD.FOLDER:
+        case M.eD.FOLDER:
           return (0, r.jsx)(q.Z, {
             folderNode: t,
             setNodeRef: ef.setNodeRef,
@@ -331,7 +331,7 @@ function ec(e) {
             "aria-setsize": i,
             "aria-posinset": true !== n ? n + 1 : true
           }, t.id);
-        case L.eD.GUILD:
+        case M.eD.GUILD:
           return (0, r.jsx)(X.Z, {
             guildNode: t,
             setRef: ef.setNodeRef,
@@ -351,7 +351,7 @@ function ec(e) {
       className: et.discoveryIcon
     }),
     eO = ed === P.u3.SERVER_RAIL_BOTTOM;
-  return (0, r.jsx)(j.Gt, {
+  return (0, r.jsx)(v.Gt, {
     value: eh,
     children: (0, r.jsx)(m.f6W, {
       theme: a,

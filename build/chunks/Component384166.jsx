@@ -1,7 +1,7 @@
 /** Chunk was on 56848 **/
-/** chunk id: 384166, original params: e,t,r (module,exports,require) **/
+/** chunk id: 384166, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => O
 }), require("./388685.js"), require("./361932.js"), require("./187205.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,18 +22,18 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk973301 = require("./973301.js");
 
-function j(e) {
+function O(e) {
   let {
     className: t
   } = e, {
-    trackUserProfileEditSaved: r
-  } = (0, f.KZ)(), [l, j] = i.useState(false), S = (0, o.Wu)([p.Z], () => {
+    trackUserProfileEditSaved: n
+  } = (0, f.KZ)(), [l, O] = i.useState(false), x = (0, o.Wu)([p.Z], () => {
     var e;
     return null != (e = p.Z.getSaveablePendingWidgets()) ? e : []
-  }), P = (0, o.Wu)([p.Z], () => p.Z.getChangedWidgets()), x = (0, o.Wu)([p.Z], () => p.Z.getRemovedWidgets()), w = (0, o.e7)([p.Z], () => p.Z.hasSaveablePendingChanges()), I = (0, o.e7)([p.Z], () => p.Z.isSubmitting), E = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), k = (0, c.Yzy)(w, {
+  }), P = (0, o.Wu)([p.Z], () => p.Z.getChangedWidgets()), S = (0, o.Wu)([p.Z], () => p.Z.getRemovedWidgets()), w = (0, o.e7)([p.Z], () => p.Z.hasSaveablePendingChanges()), I = (0, o.e7)([p.Z], () => p.Z.isSubmitting), N = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), k = (0, c.Yzy)(w, {
     from: {
       opacity: 0,
-      y: 80 * !E
+      y: 80 * !N
     },
     enter: {
       opacity: 1,
@@ -41,14 +41,14 @@ function j(e) {
     },
     leave: {
       opacity: 0,
-      y: 80 * !E
+      y: 80 * !N
     }
   });
   i.useEffect(() => {
     let e = null;
 
     function t() {
-      j(true), e = setTimeout(() => j(false), 500)
+      O(true), e = setTimeout(() => O(false), 500)
     }
     return d.S.subscribe(b.CkL.EMPHASIZE_NOTICE, t), () => {
       d.S.unsubscribe(b.CkL.EMPHASIZE_NOTICE, t), null !== e && clearTimeout(e)
@@ -58,7 +58,7 @@ function j(e) {
   }, [w]);
   let C = i.useCallback(async () => {
       try {
-        await h.Z.savePendingWidgets(S)
+        await h.Z.savePendingWidgets(x)
       } catch (e) {
         (0, m.L$)(v.qb.WIDGET_SAVE_FAILURE);
         return
@@ -72,40 +72,40 @@ function j(e) {
           var t;
           return null != (t = e.tags) ? t : []
         }).map(e => e.toString()), t.numCharactersCommentary = e.games.reduce((e, t) => {
-          var r, n;
-          return e + (null != (n = null == (r = t.comment) ? true : r.length) ? n : 0)
-        }, 0)), r(t)
+          var n, r;
+          return e + (null != (r = null == (n = t.comment) ? true : n.length) ? r : 0)
+        }, 0)), n(t)
       }
-      for (let e of x) r({
+      for (let e of S) n({
         widgetEdited: e.type,
         isWidgetRemoved: true
       })
-    }, [S, P, x, r]),
-    A = i.useCallback(() => {
+    }, [x, P, S, n]),
+    E = i.useCallback(() => {
       h.Z.clearPendingWidgets()
     }, []);
-  return k((e, r) => r ? (0, n.jsx)(s.animated.div, {
+  return k((e, n) => n ? (0, r.jsx)(s.animated.div, {
     className: t,
     style: e,
-    children: (0, n.jsxs)("section", {
-      className: a()(O.content, {
-        [O.emphasized]: l
+    children: (0, r.jsxs)("section", {
+      className: a()(j.content, {
+        [j.emphasized]: l
       }),
       "aria-label": y.intl.string(y.t["odDw+/"]),
-      children: [(0, n.jsx)(c.Text, {
+      children: [(0, r.jsx)(c.Text, {
         variant: "text-md/medium",
         color: "text-primary",
-        className: O.message,
+        className: j.message,
         children: y.intl.string(y.t["/lQiX1"])
-      }), (0, n.jsxs)("div", {
-        className: O.actions,
-        children: [(0, n.jsx)(c.zxk, {
+      }), (0, r.jsxs)("div", {
+        className: j.actions,
+        children: [(0, r.jsx)(c.zxk, {
           size: "sm",
           variant: "secondary",
           text: y.intl.string(y.t.yBZMsb),
-          onClick: A,
+          onClick: E,
           disabled: !w || I
-        }), (0, n.jsx)(c.zxk, {
+        }), (0, r.jsx)(c.zxk, {
           size: "sm",
           variant: "primary",
           text: y.intl.string(y.t.R3BPHx),
