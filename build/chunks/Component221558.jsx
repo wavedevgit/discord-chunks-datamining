@@ -1,7 +1,7 @@
 /** Chunk was on 80448 **/
-/** chunk id: 221558, original params: e,i,t (module,exports,require) **/
+/** chunk id: 221558, original params: t,i,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => p
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -14,18 +14,18 @@ var Chunk951288 = require("./951288.js"),
   Chunk509950 = require("./509950.js"),
   Chunk388032 = require("./388032.jsx");
 
-function m() {
+function p() {
   let {
     guilds: {
-      guilds: e,
+      guilds: t,
       numGuildsJoined: i
     }
-  } = (0, Chunk442837.e7)([Chunk5888.Z], () => Chunk5888.Z.getCheckpointData()), t = (0, Chunk647438.useMemo)(() => module.map(e => {
+  } = (0, Chunk442837.e7)([Chunk5888.Z], () => Chunk5888.Z.getCheckpointData()), r = (0, Chunk647438.useMemo)(() => module.map(t => {
     let {
       guildId: i
-    } = e;
+    } = t;
     return d.Z.getGuild(i)
-  }).filter(e => null != e), [module]);
+  }).filter(t => null != t), [module]);
   return (0, Chunk951288.jsxs)(Chunk198358.Z, {
     children: [(0, Chunk951288.jsx)(Chunk793030.xvT, {
       variant: "display-sm",
@@ -34,28 +34,28 @@ function m() {
         joinedCount: exports,
         guildCount: require.length
       })
-    }), require.map((i, t) => (0, r.jsxs)("div", {
-      children: [(0, r.jsx)(a.Z, {
+    }), require.map((i, r) => (0, e.jsxs)("div", {
+      children: [(0, e.jsx)(s.Z, {
         guild: i,
-        size: a.Z.Sizes.XLARGE
-      }), (0, r.jsx)(s.xvT, {
+        size: s.Z.Sizes.XLARGE
+      }), (0, e.jsx)(a.xvT, {
         variant: "display-md",
         color: "text-primary",
         children: i.name
-      }), 0 === t && (0, r.jsxs)("div", {
-        children: [(0, r.jsx)(s.xvT, {
+      }), 0 === r && (0, e.jsxs)("div", {
+        children: [(0, e.jsx)(a.xvT, {
           variant: "display-md",
           color: "text-primary",
-          children: e[0].numMessagesSent
-        }), (0, r.jsx)(s.xvT, {
+          children: t[0].numMessagesSent
+        }), (0, e.jsx)(a.xvT, {
           variant: "display-sm",
           color: "text-primary",
           children: u.intl.string(x.default.nPTMHh)
-        }), (0, r.jsx)(s.xvT, {
+        }), (0, e.jsx)(a.xvT, {
           variant: "display-md",
           color: "text-primary",
-          children: e[0].numMinutesListening + e[0].numMinutesSpeaking
-        }), (0, r.jsx)(s.xvT, {
+          children: t[0].numMinutesListening + t[0].numMinutesSpeaking
+        }), (0, e.jsx)(a.xvT, {
           variant: "display-sm",
           color: "text-primary",
           children: u.intl.string(x.default["3NjdFR"])

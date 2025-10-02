@@ -1,7 +1,7 @@
 /** Chunk was on 80448 **/
-/** chunk id: 860277, original params: e,i,t (module,exports,require) **/
+/** chunk id: 860277, original params: t,i,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,68 +16,68 @@ var Chunk951288 = require("./951288.js"),
   Chunk509950 = require("./509950.js"),
   Chunk388032 = require("./388032.jsx");
 
-function h(e) {
+function m(t) {
   let {
     slide: i
-  } = e, {
-    sidekicks: t
-  } = (0, l.e7)([c.Z], () => c.Z.getCheckpointData()), h = (0, n.useMemo)(() => t.map(e => {
+  } = t, {
+    sidekicks: r
+  } = (0, l.e7)([c.Z], () => c.Z.getCheckpointData()), m = (0, n.useMemo)(() => r.map(t => {
     let {
       userId: i
-    } = e;
+    } = t;
     return d.default.getUser(i)
-  }).filter(e => null != e), [t]);
-  return (0, r.jsxs)(o.Z, {
-    children: [i === x.W.FRIENDS && (0, r.jsxs)("div", {
-      children: [(0, r.jsx)(s.xvT, {
+  }).filter(t => null != t), [r]);
+  return (0, e.jsxs)(o.Z, {
+    children: [i === x.W.FRIENDS && (0, e.jsxs)("div", {
+      children: [(0, e.jsx)(a.xvT, {
         variant: "display-md",
         color: "text-primary",
-        children: p.intl.string(m.default["4xZpq6"])
-      }), h.slice(1).map(e => (0, r.jsxs)("div", {
-        children: [(0, r.jsx)(a.Z, {
-          user: e,
+        children: h.intl.string(p.default["4xZpq6"])
+      }), m.slice(1).map(t => (0, e.jsxs)("div", {
+        children: [(0, e.jsx)(s.Z, {
+          user: t,
           size: u.EF.SIZE_120
-        }), (0, r.jsx)(s.xvT, {
+        }), (0, e.jsx)(a.xvT, {
           variant: "display-lg",
           color: "text-primary",
-          children: e.username
+          children: t.username
         })]
-      }, e.id))]
-    }), i === x.W.BEST_FRIEND && (0, r.jsxs)("div", {
-      children: [(0, r.jsx)(s.xvT, {
+      }, t.id))]
+    }), i === x.W.BEST_FRIEND && (0, e.jsxs)("div", {
+      children: [(0, e.jsx)(a.xvT, {
         variant: "display-md",
         color: "text-primary",
-        children: p.intl.string(m.default.d5HUsL)
-      }), (0, r.jsx)(a.Z, {
-        user: h[0],
+        children: h.intl.string(p.default.d5HUsL)
+      }), (0, e.jsx)(s.Z, {
+        user: m[0],
         size: u.EF.SIZE_120
-      }), (0, r.jsx)(s.xvT, {
+      }), (0, e.jsx)(a.xvT, {
         variant: "display-md",
         color: "text-primary",
-        children: p.intl.format(m.default.wz2JuL, {
-          user: h[0].username,
-          userHook: (e, i) => (0, r.jsx)(s.xvT, {
+        children: h.intl.format(p.default.wz2JuL, {
+          user: m[0].username,
+          userHook: (t, i) => (0, e.jsx)(a.xvT, {
             variant: "display-lg",
             color: "text-primary",
-            children: e
+            children: t
           }, i)
         })
-      }), (0, r.jsx)(s.xvT, {
+      }), (0, e.jsx)(a.xvT, {
         variant: "display-sm",
         color: "text-primary",
-        children: p.intl.string(m.default.fQGHXl)
-      }), (0, r.jsx)(s.xvT, {
+        children: h.intl.string(p.default.fQGHXl)
+      }), (0, e.jsx)(a.xvT, {
         variant: "display-sm",
         color: "text-primary",
-        children: t[0].numMessagesSent
-      }), (0, r.jsx)(s.xvT, {
+        children: r[0].numMessagesSent
+      }), (0, e.jsx)(a.xvT, {
         variant: "display-sm",
         color: "text-primary",
-        children: p.intl.string(m.default.Vrdyam)
-      }), (0, r.jsx)(s.xvT, {
+        children: h.intl.string(p.default.Vrdyam)
+      }), (0, e.jsx)(a.xvT, {
         variant: "display-sm",
         color: "text-primary",
-        children: t[0].numMinutesInVoice
+        children: r[0].numMinutesInVoice
       })]
     })]
   })

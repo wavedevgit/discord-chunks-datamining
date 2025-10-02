@@ -1,16 +1,16 @@
 /** Chunk was on 80448 **/
-/** chunk id: 198358, original params: e,i,t (module,exports,require) **/
+/** chunk id: 198358, original params: t,i,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => a
 });
 var Chunk951288 = require("./951288.js"),
   Chunk882455 = require("./882455.js");
 
-function s(e) {
+function a(t) {
   let {
     children: i
-  } = e;
-  return (0, r.jsx)("div", {
+  } = t;
+  return (0, e.jsx)("div", {
     className: n.container,
     children: i
   })
