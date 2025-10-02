@@ -3,7 +3,7 @@
 require.d(exports, {
   A3: () => A,
   f4: () => S,
-  f9: () => I,
+  f9: () => N,
   gY: () => C
 });
 var Chunk951288 = require("./951288.js"),
@@ -207,7 +207,7 @@ let x = e => {
       })]
     })
   },
-  I = e => {
+  N = e => {
     let {
       orbPriceAmount: t,
       orbBalance: r,

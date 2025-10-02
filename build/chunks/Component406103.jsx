@@ -28,35 +28,30 @@ let c = {
         value: "option1",
         description: null != u || "" === u ? u : true,
         leadingIcon: "leading" === d ? a.d3s : true,
-        trailingIcon: "trailing" === d ? a.d3s : true,
         disabled: !f && true
       }, {
         label: "Option 2",
         value: "option2",
         description: null != u || "" === u ? u : true,
         leadingIcon: "leading" === d ? a.d3s : true,
-        trailingIcon: "trailing" === d ? a.d3s : true,
         disabled: !!f || true
       }, {
         label: "Option 3",
         value: "option3",
         description: null != u || "" === u ? u : true,
         leadingIcon: "leading" === d ? a.d3s : true,
-        trailingIcon: "trailing" === d ? a.d3s : true,
         disabled: !f && true
       }, {
         label: "Option 4",
         value: "option4",
         description: null != u || "" === u ? u : true,
         leadingIcon: "leading" === d ? a.d3s : true,
-        trailingIcon: "trailing" === d ? a.d3s : true,
         disabled: !!f || true
       }, {
         label: "Option 5",
         value: "option5",
         description: null != u || "" === u ? u : true,
         leadingIcon: "leading" === d ? a.d3s : true,
-        trailingIcon: "trailing" === d ? a.d3s : true,
         disabled: !f && true
       }].slice(0, Math.max(1, Math.min(5, n))), [n, u, d, f]), m = i.useCallback(e => {
         p(e)
@@ -150,9 +145,6 @@ let c = {
         }, {
           label: "Leading",
           value: "leading"
-        }, {
-          label: "Trailing",
-          value: "trailing"
         }],
         defaultValue: "none"
       },

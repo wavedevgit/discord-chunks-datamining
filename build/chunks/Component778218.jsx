@@ -51,8 +51,7 @@ let c = {
           value: "checkbox-value",
           groupVariant: f,
           labelType: _,
-          leadingIcon: "leading" === p ? a.d3s : true,
-          trailingIcon: "trailing" === p ? a.d3s : true
+          leadingIcon: "leading" === p ? a.d3s : true
         }), (0, r.jsxs)(o.xvT, {
           variant: "text-sm/normal",
           children: ["Current state: ", h ? "Checked" : "Unchecked"]
@@ -140,9 +139,6 @@ let c = {
         }, {
           label: "Leading",
           value: "leading"
-        }, {
-          label: "Trailing",
-          value: "trailing"
         }],
         defaultValue: "none"
       }
