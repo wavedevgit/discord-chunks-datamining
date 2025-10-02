@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk820293 = require("./820293.js");
 
@@ -31,22 +31,22 @@ function c(e) {
     description: i,
     iconClassName: s,
     color: c,
-    listType: d = "icon",
-    completed: u = false,
+    listType: u = "icon",
+    completed: d = false,
     index: p
   } = e;
   return (0, r.jsxs)("div", {
     className: o.cell,
     children: [(() => {
-      if ("numbered" === d && null != p)
-        if (u) return (0, r.jsx)("div", {
+      if ("numbered" === u && null != p)
+        if (d) return (0, r.jsx)("div", {
           className: o.number,
-          children: (0, r.jsx)(l.sV5, {
+          children: (0, r.jsx)(a.sV5, {
             color: "green",
-            className: a()(o.icon, s)
+            className: l()(o.icon, s)
           })
         });
-        else return (0, r.jsx)(l.X6q, {
+        else return (0, r.jsx)(a.X6q, {
           variant: "heading-md/semibold",
           color: "text-brand",
           className: o.number,
@@ -56,23 +56,23 @@ function c(e) {
         className: o.iconContainer,
         children: (0, r.jsx)(t, {
           color: null != c ? c : "currentColor",
-          className: a()(o.icon, s)
+          className: l()(o.icon, s)
         })
       })
     })(), (0, r.jsxs)("div", {
       className: o.textContainer,
-      children: [(0, r.jsx)(l.Text, {
+      children: [(0, r.jsx)(a.Text, {
         variant: "text-md/semibold",
         color: "header-primary",
-        className: a()({
-          [o.completedText]: u
+        className: l()({
+          [o.completedText]: d
         }),
         children: n
-      }), null != i && (0, r.jsx)(l.Text, {
+      }), null != i && (0, r.jsx)(a.Text, {
         variant: "text-xs/medium",
         color: "text-secondary",
-        className: a()({
-          [o.completedText]: u
+        className: l()({
+          [o.completedText]: d
         }),
         children: i
       })]

@@ -1,7 +1,7 @@
-/** Chunk was on 86821 **/
-/** chunk id: 881410, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 46592 **/
+/** chunk id: 881410, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => g
 }), require("./388685.js"), require("./781311.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -13,108 +13,108 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk720641 = require("./720641.js");
 
-function g(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
+    var r = null != arguments[t] ? arguments[t] : {},
+      n = Object.keys(r);
+    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(r, e).enumerable
+    }))), n.forEach(function(t) {
+      var n;
+      n = r[t], t in e ? Object.defineProperty(e, t, {
+        value: n,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = r
+      }) : e[t] = n
     })
   }
   return e
 }
 
-function f(e) {
+function g(e) {
   let {
     disabled: t,
-    widgetType: n,
-    widget: f
-  } = e, [p] = (0, o.ynZ)(), [b, m] = i.useState(""), O = i.useRef(null), y = i.useRef(""), j = i.useMemo(() => new Set(f.games.map(e => e.applicationId)), [f.games]), {
-    trackUserProfileEditAction: h
-  } = (0, c.KZ)(), v = i.useCallback(e => {
-    (0, s.ES)(n, {
+    widgetType: r,
+    widget: g
+  } = e, [p] = (0, a.ynZ)(), [b, O] = i.useState(""), m = i.useRef(null), y = i.useRef(""), j = i.useMemo(() => new Set(g.games.map(e => e.applicationId)), [g.games]), {
+    trackUserProfileEditAction: v
+  } = (0, c.KZ)(), h = i.useCallback(e => {
+    (0, s.ES)(r, {
       applicationId: e
-    }), o.uvj.announce(u.intl.string(u.t.q0U3DA)), h({
+    }), a.uvj.announce(u.intl.string(u.t.q0U3DA)), v({
       action: "GAME_ADDED",
       gameId: e,
-      widgetEdited: n
+      widgetEdited: r
     })
-  }, [n, h]), {
+  }, [r, v]), {
     options: x,
     matchSorterOptions: _
-  } = (0, l.h)(), P = i.useCallback(e => {
-    var t, n;
-    return "" === e.trim() ? x : (0, a.Lu)(x, e, (t = g({}, _), n = n = {
-      threshold: a.Lu.rankings.CONTAINS
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-      var n = Object.keys(e);
+  } = (0, l.h)(), w = i.useCallback(e => {
+    var t, r;
+    return "" === e.trim() ? x : (0, o.Lu)(x, e, (t = f({}, _), r = r = {
+      threshold: o.Lu.rankings.CONTAINS
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
+      var r = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        n.push.apply(n, r)
+        var n = Object.getOwnPropertySymbols(e);
+        r.push.apply(r, n)
       }
-      return n
-    })(Object(n)).forEach(function(e) {
-      Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+      return r
+    })(Object(r)).forEach(function(e) {
+      Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
     }), t))
-  }, [x, _]), w = i.useCallback(e => {
-    "" === b.trim() && "" !== e.trim() && h({
+  }, [x, _]), P = i.useCallback(e => {
+    "" === b.trim() && "" !== e.trim() && v({
       action: "GAME_SEARCH_SESSION_STARTED",
-      widgetEdited: n,
+      widgetEdited: r,
       numCharacters: e.trim().length,
-      numResults: P(e).length
-    }), m(e), y.current = e
-  }, [b, h, n, P]), I = i.useMemo(() => "" !== b.trim() ? u.intl.format(u.t.ZoearK, {
+      numResults: w(e).length
+    }), O(e), y.current = e
+  }, [b, v, r, w]), E = i.useMemo(() => "" !== b.trim() ? u.intl.format(u.t.ZoearK, {
     searchTerm: b.trim(),
     surveyUrl: "https://discord.sjc1.qualtrics.com/jfe/form/SV_0TIqLrxbsfJYS4C"
   }) : u.intl.string(u.t.QwSXv7), [b]);
-  return (0, r.jsx)(o.yRy, {
-    targetElementRef: O,
+  return (0, n.jsx)(a.yRy, {
+    targetElementRef: m,
     position: "bottom",
     align: "center",
     onRequestOpen: () => {
-      h({
+      v({
         action: "PRESS_ADD_GAME",
-        widgetEdited: n
-      }), m(""), y.current = ""
+        widgetEdited: r
+      }), O(""), y.current = ""
     },
     onRequestClose: () => {
-      h({
+      v({
         action: "GAME_SEARCH_SESSION_ENDED",
-        widgetEdited: n,
+        widgetEdited: r,
         numCharacters: y.current.trim().length,
-        numResults: P(y.current).length
+        numResults: w(y.current).length
       })
     },
     renderPopout: e => {
       let {
         closePopout: t
       } = e;
-      return (0, r.jsx)(o.DBG, {
+      return (0, n.jsx)(a.DBG, {
         className: d.gameSearchCombobox,
         placeholder: u.intl.string(u.t["5h0QOD"]),
         autoFocus: true,
         value: p,
         onChange: e => {
-          v(e), t()
+          h(e), t()
         },
         multiSelect: false,
         maxVisibleItems: 7,
-        emptyStateText: I,
+        emptyStateText: E,
         emptyStateHeader: "",
-        onQueryChange: w,
-        children: e => P(e).map(e => (0, r.jsx)(o.lo1, {
+        onQueryChange: P,
+        children: e => w(e).map(e => (0, n.jsx)(a.lo1, {
           disabled: j.has(e.value),
           value: String(e.value),
-          children: (0, r.jsx)(o.lo1.Label, {
-            children: (0, r.jsx)(o.Text, {
+          children: (0, n.jsx)(a.lo1.Label, {
+            children: (0, n.jsx)(a.Text, {
               variant: "text-md/medium",
               color: "header-secondary",
               children: e.label
@@ -123,12 +123,12 @@ function f(e) {
         }, String(e.value)))
       })
     },
-    children: e => (0, r.jsx)("div", {
-      ref: O,
-      children: (0, r.jsx)(o.zxk, g({
+    children: e => (0, n.jsx)("div", {
+      ref: m,
+      children: (0, n.jsx)(a.zxk, f({
         variant: "secondary",
         size: "sm",
-        icon: o.qJs,
+        icon: a.qJs,
         text: u.intl.string(u.t.SgTOtb),
         disabled: t
       }, e))

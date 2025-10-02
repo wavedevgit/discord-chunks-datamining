@@ -25,7 +25,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk808578 = require("./808578.js");
 
-function C(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -44,7 +44,7 @@ function C(e) {
   return e
 }
 
-function S(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -122,7 +122,7 @@ function P(e) {
   } = e, {
     onClose: U,
     transitionState: G
-  } = n, B = (0, f.Dt)(), V = R.length % 2 == 0, H = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), [F, z] = i.useState(Date.now()), [W, q] = i.useState(0), [Y, K] = i.useState(0), [Q, X] = i.useState(false), [J, $] = i.useState(true), ee = i.useRef(F), et = i.useRef(W), en = i.useRef(Y), er = i.useRef(Q), ei = i.useRef(J), [el, ea] = i.useState(T), eo = i.useRef(false);
+  } = n, B = (0, f.Dt)(), H = R.length % 2 == 0, V = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), [F, z] = i.useState(Date.now()), [W, q] = i.useState(0), [Y, K] = i.useState(0), [Q, X] = i.useState(false), [J, $] = i.useState(true), ee = i.useRef(F), et = i.useRef(W), en = i.useRef(Y), er = i.useRef(Q), ei = i.useRef(J), [el, ea] = i.useState(T), eo = i.useRef(false);
 
   function es() {
     let e = Date.now(),
@@ -144,7 +144,7 @@ function P(e) {
               type: "text/vtt"
             }),
             i = URL.createObjectURL(r);
-          return S(C({}, e), {
+          return C(S({}, e), {
             src: i
           })
         });
@@ -181,7 +181,7 @@ function P(e) {
         change_log_id: D,
         seconds_open: Math.round((Date.now() - e) / 1e3)
       }), null != P && (0, g.Q3)(P, {
-        dismissAction: v.L.DISMISS
+        dismissAction: y.L.DISMISS
       })
     }
   }, [P, D]), (0, r.jsx)(c.Y0X, {
@@ -207,7 +207,7 @@ function P(e) {
           children: A
         }), "video" === l.type ? (0, r.jsx)(h.Z, {
           className: a()(I.video, N),
-          autoPlay: !H,
+          autoPlay: !V,
           loop: true,
           muted: true,
           controls: true,
@@ -230,7 +230,7 @@ function P(e) {
           },
           disablePictureInPicture: true,
           children: null == el ? true : el.map(e => {
-            let t = (0, y.getLanguages)().find(t => t.code === e.locale);
+            let t = (0, v.getLanguages)().find(t => t.code === e.locale);
             return null == t ? null : (0, r.jsx)("track", {
               label: t.englishName,
               kind: "captions",
@@ -271,10 +271,10 @@ function P(e) {
           children: M
         }), R.length > 0 && (0, r.jsx)("div", {
           className: a()(I.featureCardGroup, {
-            [I.wideStyle]: V
+            [I.wideStyle]: H
           }),
-          children: R.map((e, t) => (0, r.jsx)(j, S(C({}, e), {
-            wideStyle: V
+          children: R.map((e, t) => (0, r.jsx)(j, C(S({}, e), {
+            wideStyle: H
           }), "".concat(e.header, "_").concat(t)))
         }), (0, r.jsx)("div", {
           className: I.buttonContainer,

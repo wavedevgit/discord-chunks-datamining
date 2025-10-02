@@ -91,7 +91,7 @@ let U = e => {
     })
   };
 
-function V(e, t) {
+function H(e, t) {
   switch (t) {
     case R.f07.POST_INSTALL_SCRIPTS:
     case R.f07.PLANNING:
@@ -104,7 +104,7 @@ function V(e, t) {
       })
   }
 }
-let H = {
+let V = {
   [Chunk981631.vxO.INSTALLING]: {
     [Chunk707409.J6.NONE]: (e, t, n, r) => D.intl.formatToPlainString(D.t.JfJt9f, {
       percent: e,
@@ -183,12 +183,12 @@ let H = {
 };
 
 function F(e, t, n, r, i) {
-  let l = H[t],
+  let l = V[t],
     a = null != l ? Object.keys(l) : [],
     {
       unit: o,
       time: s
-    } = (0, S.CI)(null != e ? e / 60 : null, a);
+    } = (0, C.CI)(null != e ? e / 60 : null, a);
   if (null != l && null != o) {
     let e = l[o];
     return null != e ? e(n, r, i, s) : null
@@ -204,7 +204,7 @@ function z(e) {
     progress: i,
     total: l,
     secondsRemaining: a
-  } = e, o = V(l, n), s = V(i, n);
+  } = e, o = H(l, n), s = H(i, n);
   switch (n) {
     case R.f07.QUEUED:
       if (0 === i) return D.intl.string(D.t.RpfBqa);
@@ -269,13 +269,13 @@ class W extends Chunk647438.PureComponent {
       foregroundGradientColor: i,
       message: l
     } = e;
-    return (0, r.jsxs)(y.Z, {
-      direction: y.Z.Direction.VERTICAL,
+    return (0, r.jsxs)(v.Z, {
+      direction: v.Z.Direction.VERTICAL,
       children: [(0, r.jsx)(f.Exd, {
         percent: t,
         size: f.Exd.Sizes.SMALL,
-        foregroundColor: (0, v.Lq)(n),
-        foregroundGradientColor: null != i ? [(0, v.Lq)(i[0]), (0, v.Lq)(i[1])] : true,
+        foregroundColor: (0, y.Lq)(n),
+        foregroundGradientColor: null != i ? [(0, y.Lq)(i[0]), (0, y.Lq)(i[1])] : true,
         animate: this.isFocused
       }), (0, r.jsx)("div", {
         className: k.progressCellText,
@@ -288,8 +288,8 @@ class W extends Chunk647438.PureComponent {
       percents: t,
       message: n
     } = e;
-    return (0, r.jsxs)(y.Z, {
-      direction: y.Z.Direction.VERTICAL,
+    return (0, r.jsxs)(v.Z, {
+      direction: v.Z.Direction.VERTICAL,
       children: [(0, r.jsx)(f.yGy, {
         percents: t,
         size: f.yGy.Sizes.SMALL,
@@ -327,8 +327,8 @@ class W extends Chunk647438.PureComponent {
         stage: l
       } = require;
       if (null != Chunk951288 && null != Chunk647438) {
-        let n = V(Chunk647438, Chunk120356),
-          a = V(Chunk951288, Chunk120356),
+        let n = H(Chunk647438, Chunk120356),
+          a = H(Chunk951288, Chunk120356),
           o = Math.floor(t = Chunk780570.xI(Chunk951288, Chunk647438));
         e = Chunk120356 === Chunk981631.f07.PAUSING ? Chunk388032.intl.formatToPlainString(Chunk388032.t.vjxhWl, {
           percent: Chunk392711,
@@ -498,12 +498,12 @@ let q = () => (0, Chunk951288.jsx)(B, {
   X = [{
     key: "name",
     cellClassName: Chunk180678.nameCell,
-    render: e => (0, r.jsxs)(y.Z, {
-      align: y.Z.Align.CENTER,
-      children: [(0, r.jsx)(C.Z, {
+    render: e => (0, r.jsxs)(v.Z, {
+      align: v.Z.Align.CENTER,
+      children: [(0, r.jsx)(S.Z, {
         game: e.application,
         className: k.__invalid_gameIcon,
-        size: C.A.SMALL
+        size: S.A.SMALL
       }), (0, r.jsx)("div", {
         className: k.nameCellText,
         children: e.application.name
@@ -536,8 +536,8 @@ let q = () => (0, Chunk951288.jsx)(B, {
         item: e
       })) : i = (0, r.jsx)(Q, {
         item: e
-      }), (0, r.jsxs)(y.Z, {
-        justify: y.Z.Justify.END,
+      }), (0, r.jsxs)(v.Z, {
+        justify: v.Z.Justify.END,
         children: [n, i]
       })
     }

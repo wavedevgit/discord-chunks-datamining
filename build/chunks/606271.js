@@ -154,7 +154,7 @@ class j {
         layoutMode: n
       } = e;
       if (0 === this.rpcServer.subscriptions.length) return;
-      let r = n !== C.cE.FOCUSED;
+      let r = n !== S.cE.FOCUSED;
       this.rpcServer.dispatchToSubscriptions(I.zMe.ACTIVITY_PIP_MODE_UPDATE, e => e.socket.application.id === t, {
         is_pip_mode: r
       }), this.rpcServer.dispatchToSubscriptions(I.zMe.ACTIVITY_LAYOUT_MODE_UPDATE, e => e.socket.application.id === t, {
@@ -166,8 +166,8 @@ class j {
         layoutMode: n
       } = e;
       if (0 === this.rpcServer.subscriptions.length) return;
-      let r = n === S.U.PIP ? C.cE.PIP : C.cE.FOCUSED,
-        i = r !== C.cE.FOCUSED;
+      let r = n === C.U.PIP ? S.cE.PIP : S.cE.FOCUSED,
+        i = r !== S.cE.FOCUSED;
       this.rpcServer.dispatchToSubscriptions(I.zMe.ACTIVITY_PIP_MODE_UPDATE, e => e.socket.application.id === t, {
         is_pip_mode: i
       }), this.rpcServer.dispatchToSubscriptions(I.zMe.ACTIVITY_LAYOUT_MODE_UPDATE, e => e.socket.application.id === t, {
@@ -191,7 +191,7 @@ class j {
       })
     }), N(this, "handleEmbeddedActivityUpdate", () => {
       if (0 === this.rpcServer.subscriptions.length) return;
-      let e = (0, v.dO)();
+      let e = (0, y.dO)();
       this.rpcServer.dispatchToSubscriptions(I.zMe.ACTIVITY_INSTANCE_PARTICIPANTS_UPDATE, {}, e)
     }), N(this, "handleActivityMessage", e => {
       var t;
@@ -215,7 +215,7 @@ class j {
       switch (l.type) {
         case I.mFx.JOIN:
           this.rpcServer.dispatchToSubscriptions(I.zMe.ACTIVITY_INVITE, e => e.socket.application.id === c, {
-            user: (0, y.Z)(a),
+            user: (0, v.Z)(a),
             activity: s,
             type: l.type,
             channel_id: n,
@@ -224,7 +224,7 @@ class j {
           break;
         case I.mFx.JOIN_REQUEST:
           this.rpcServer.dispatchToSubscriptions(I.zMe.ACTIVITY_JOIN_REQUEST, e => e.socket.application.id === c, {
-            user: (0, y.Z)(a),
+            user: (0, v.Z)(a),
             activity: s,
             type: l.type,
             channel_id: n,

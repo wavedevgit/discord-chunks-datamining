@@ -24,9 +24,9 @@ function m(e) {
     channelId: m,
     onClose: v
   } = e, {
-    analyticsLocations: b
+    analyticsLocations: y
   } = (0, a.ZP)(), {
-    context: y,
+    context: b,
     trackUserProfileAction: j
   } = (0, o.KZ)(), {
     mutualFriends: O,
@@ -34,12 +34,12 @@ function m(e) {
   } = (0, c.Z)(t), P = (0, l.Z)();
   return i.useEffect(() => {
     (0, u.Z)(t.id, P)
-  }, [t.id, P]), (0, r.jsx)(h.F, {
-    className: p.scroller,
+  }, [t.id, P]), (0, r.jsx)(p.F, {
+    className: h.scroller,
     children: null == O ? Array.from({
       length: null != x ? x : 10
     }).map((e, t) => (0, r.jsxs)("div", {
-      className: p.friendsLoadingItem,
+      className: h.friendsLoadingItem,
       children: [(0, r.jsx)(s.ZT, {
         width: 40,
         opacity: .08
@@ -79,9 +79,9 @@ function m(e) {
               })
             }
             return e
-          }({}, y), t = t = {
+          }({}, b), t = t = {
             userId: i.id,
-            sourceAnalyticsLocations: b
+            sourceAnalyticsLocations: y
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {

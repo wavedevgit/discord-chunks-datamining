@@ -61,36 +61,36 @@ function j(e) {
       location: "Friends"
     })
   }, [n, l, t.id]), m = i.useCallback(() => {
-    let e = l ? S.intl.string(S.t["RLcE6+"]) : S.intl.string(S.t.cvSt1N);
+    let e = l ? C.intl.string(C.t["RLcE6+"]) : C.intl.string(C.t.cvSt1N);
     c.Z.show({
-      title: S.intl.formatToPlainString(S.t.fPLvZW, {
+      title: C.intl.formatToPlainString(C.t.fPLvZW, {
         name: b.ZP.getName(t)
       }),
-      body: S.intl.formatToPlainString(S.t.l5FFq6, {
+      body: C.intl.formatToPlainString(C.t.l5FFq6, {
         name: b.ZP.getName(t)
       }),
       confirmText: e,
       confirmVariant: "critical-primary",
-      cancelText: S.intl.string(S.t["ETE/oK"]),
+      cancelText: C.intl.string(C.t["ETE/oK"]),
       onConfirm: h
     })
-  }, [h, l, t]), O = (0, o.e7)([g.Z], () => g.Z.supports(C.AN.VIDEO)), E = t.isProvisional, v = l ? S.intl.string(S.t["RLcE6+"]) : S.intl.string(S.t.cvSt1N);
+  }, [h, l, t]), O = (0, o.e7)([g.Z], () => g.Z.supports(S.AN.VIDEO)), E = t.isProvisional, y = l ? C.intl.string(C.t["RLcE6+"]) : C.intl.string(C.t.cvSt1N);
   return (0, r.jsxs)(s.v2r, {
     navId: "friend-row",
-    "aria-label": S.intl.string(S.t.liqwPD),
+    "aria-label": C.intl.string(C.t.liqwPD),
     onClose: d.Zy,
     onSelect: a,
     children: [!E && O ? (0, r.jsx)(s.sNh, {
       id: "start-video-call",
-      label: S.intl.string(S.t.oCqlGB),
+      label: C.intl.string(C.t.oCqlGB),
       action: f
     }) : null, !E && (0, r.jsx)(s.sNh, {
       id: "start-voice-call",
-      label: S.intl.string(S.t.focH1t),
+      label: C.intl.string(C.t.focH1t),
       action: p
     }), (0, r.jsx)(s.sNh, {
       id: "remove-friend",
-      label: v,
+      label: y,
       action: m,
       color: "danger"
     })]
@@ -125,11 +125,11 @@ class P extends Chunk647438.PureComponent {
       onClick: this.handleOpenPrivateChannel,
       children: t => (0, r.jsxs)("div", {
         className: T.listItemContents,
-        children: [(0, r.jsx)(y.Z, {
+        children: [(0, r.jsx)(v.Z, {
           user: e,
           status: l,
           isMobile: a,
-          subText: (0, r.jsx)(v.Z, {
+          subText: (0, r.jsx)(y.Z, {
             hovered: t,
             activities: n,
             applicationStream: i,
@@ -148,12 +148,12 @@ class P extends Chunk647438.PureComponent {
             shouldHighlight: t
           }), (0, r.jsx)(O.Z, {
             icon: s.kBi,
-            tooltip: S.intl.string(S.t["g33r/P"]),
+            tooltip: C.intl.string(C.t["g33r/P"]),
             onClick: this.handleOpenPrivateChannel,
             shouldHighlight: t
           }), (0, r.jsx)(O.Z, {
             icon: s.Huf,
-            tooltip: S.intl.string(S.t.UKOtz8),
+            tooltip: C.intl.string(C.t.UKOtz8),
             onClick: this.handleOpenActionsMenu,
             shouldHighlight: t
           })]

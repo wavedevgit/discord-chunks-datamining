@@ -22,12 +22,12 @@ let u = function(e) {
     isDragging: e.isDragging(),
     item: e.getItem(),
     sourceClientOffset: e.getSourceClientOffset()
-  })), g = (0, l.e7)([s.default], () => s.default.getCurrentUser()), h = (0, a.zPA)();
+  })), g = (0, l.e7)([s.default], () => s.default.getCurrentUser()), p = (0, a.zPA)();
   if (true !== u || null == f || null == d.widget) return null;
-  let p = null == n || null == (t = n.current) ? true : t.getBoundingClientRect();
-  if (null == p || null == g) return null;
-  let m = f.x - p.left - 60 * !!h,
-    v = f.y - p.top;
+  let h = null == n || null == (t = n.current) ? true : t.getBoundingClientRect();
+  if (null == h || null == g) return null;
+  let m = f.x - h.left - 60 * !!p,
+    v = f.y - h.top;
   return (0, r.jsx)("div", {
     className: c.container,
     style: {

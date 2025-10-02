@@ -44,23 +44,23 @@ function u(e) {
       s(t, e)
     }, [s, e]);
   (0, c.qU)(f);
-  let h = (0, c.kN)(f),
-    [p, m] = r.useState([]),
+  let p = (0, c.kN)(f),
+    [h, m] = r.useState([]),
     v = (t = f.map(e => l.Z.isFetching(e)), r.useMemo(() => t.join("\x1f"), [t]));
   return r.useEffect(() => {
     let t = f.filter(e => l.Z.noDataAvailable(e));
     t.length > 0 && u(t, e)
-  }, [v, f, e, u, h]), r.useEffect(() => {
+  }, [v, f, e, u, p]), r.useEffect(() => {
     m(f.map(e => {
-      let t = h[e];
+      let t = p[e];
       return {
         applicationId: e,
         gameName: null == t ? true : t.name,
         imageSrc: null == t ? true : t.coverImageUrl
       }
     }))
-  }, [f, h, e, n, a]), {
-    games: p,
+  }, [f, p, e, n, a]), {
+    games: h,
     onAddGame: g
   }
 }

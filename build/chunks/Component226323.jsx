@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk188270 = require("./188270.js");
 
-function S(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -110,11 +110,11 @@ function P(e) {
     }),
     k = null != (t = O.getGuildId()) ? t : true,
     M = P.getAvatarURL(O.guild_id, 24),
-    U = null != x ? x : v.ZP.getName(P),
+    U = null != x ? x : y.ZP.getName(P),
     {
       icon: G,
       colorize: B,
-      getStatus: V
+      getStatus: H
     } = null != (l = function(e) {
       let {
         serverDeaf: t,
@@ -135,9 +135,9 @@ function P(e) {
       mute: A,
       localMute: R
     })) ? l : {},
-    H = null != V ? I.intl.formatToPlainString(I.t["1+MVBA"], {
+    V = null != H ? I.intl.formatToPlainString(I.t["1+MVBA"], {
       userName: U,
-      status: V()
+      status: H()
     }) : U;
 
   function F(e) {
@@ -145,7 +145,7 @@ function P(e) {
       let {
         default: e
       } = await Promise.all([n.e("79695"), n.e("98783"), n.e("8982"), n.e("7717"), n.e("19848")]).then(n.bind(n, 757387));
-      return t => (0, r.jsx)(e, T(S({}, t), {
+      return t => (0, r.jsx)(e, T(C({}, t), {
         user: P,
         guildId: k,
         channel: O,
@@ -158,7 +158,7 @@ function P(e) {
       let {
         default: e
       } = await Promise.all([n.e("79695"), n.e("69220")]).then(n.bind(n, 881351));
-      return t => (0, r.jsx)(e, T(S({}, t), {
+      return t => (0, r.jsx)(e, T(C({}, t), {
         user: P,
         showMediaItems: true,
         onInteraction: (0, m.u)("UserGenericContextMenu", f.Z.RTC_PANEL, {
@@ -175,28 +175,28 @@ function P(e) {
     position: "top",
     clickTrap: true,
     children: e => (0, r.jsx)(s.ua7, {
-      text: H,
-      children: t => (0, r.jsx)(s.P3F, T(S({}, t, e), {
+      text: V,
+      children: t => (0, r.jsx)(s.P3F, T(C({}, t, e), {
         innerRef: d,
         onClick: t => {
           e.onClick(t), (0, g.v)(p, g.d.VOICE_USER)
         },
-        className: C.avatarContainer,
+        className: S.avatarContainer,
         onContextMenu: F,
         focusProps: N,
         children: (0, r.jsx)(b.Z, {
-          shakeLocation: y.oZ.VOICE_USER,
+          shakeLocation: v.oZ.VOICE_USER,
           isShaking: D,
           children: (0, r.jsx)("div", {
-            className: a()(C.avatar, {
-              [C.speaking]: D
+            className: a()(S.avatar, {
+              [S.speaking]: D
             }),
             style: {
               backgroundImage: "url(".concat(M, ")")
             },
             children: null != G ? (0, r.jsx)(G, {
-              className: a()(C.avatarIconOverlay, {
-                [C.avatarIconRed]: B
+              className: a()(S.avatarIconOverlay, {
+                [S.avatarIconRed]: B
               }),
               color: "currentColor",
               size: "xs"
@@ -247,16 +247,16 @@ function x(e) {
       color: "currentColor"
     }),
     focusProps: N
-  }), v = b && c ? t : m;
-  return v.length <= 0 ? null : (0, r.jsx)(s.zJl, {
-    className: a()(C.scroller, l),
+  }), y = b && c ? t : m;
+  return y.length <= 0 ? null : (0, r.jsx)(s.zJl, {
+    className: a()(S.scroller, l),
     fade: true,
     children: (0, r.jsxs)("div", {
       ref: h,
-      className: a()(C.voiceUsers, !c && C.collapsed),
+      className: a()(S.voiceUsers, !c && S.collapsed),
       role: "group",
       "aria-label": I.intl.string(I.t["/ZgaVV"]),
-      children: [v.map(e => {
+      children: [y.map(e => {
         let {
           user: t,
           nick: i,

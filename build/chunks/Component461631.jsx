@@ -22,10 +22,10 @@ function g(e) {
     iconSize: i = "refresh_sm",
     className: g
   } = e, {
-    analyticsLocations: h
-  } = (0, s.ZP)(), p = async () => {
+    analyticsLocations: p
+  } = (0, s.ZP)(), h = async () => {
     try {
-      await o.Z.removeSkuFromWishlist(n, t.skuId, h)
+      await o.Z.removeSkuFromWishlist(n, t.skuId, p)
     } catch (e) {
       (0, c.L$)(u.qb.SOMETHING_WENT_WRONG)
     }
@@ -52,7 +52,7 @@ function g(e) {
         }
         return e
       }({}, e), n = n = {
-        onClick: p,
+        onClick: h,
         "aria-label": d.intl.string(d.t.jTW019),
         className: l()(g, f.clickable),
         children: (0, r.jsx)(a.XHJ, {

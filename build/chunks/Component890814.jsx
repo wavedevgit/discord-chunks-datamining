@@ -1,21 +1,21 @@
-/** Chunk was on 86821 **/
-/** chunk id: 890814, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 46592 **/
+/** chunk id: 890814, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => a
+  Z: () => o
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk82977 = require("./82977.js");
 
-function a(e) {
+function o(e) {
   let {
     games: t,
-    renderGame: n
+    renderGame: r
   } = e;
-  return (0, r.jsx)("ul", {
+  return (0, n.jsx)("ul", {
     className: i.coverList,
-    children: t.map((e, t) => (0, r.jsx)("li", {
-      children: n(e)
+    children: t.map((e, t) => (0, n.jsx)("li", {
+      children: r(e)
     }, "".concat(e.applicationId, "-").concat(t)))
   })
 }

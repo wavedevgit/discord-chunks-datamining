@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 106075, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => C
+  Z: () => S
 }), require("./781311.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -25,15 +25,15 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk680326 = require("./680326.js");
 
-function C() {
+function S() {
   let e = Chunk647438.useRef((0, Chunk726115.PM)()),
     {
       onScroll: t,
       scrollPosition: n,
-      resetScrollPosition: C
+      resetScrollPosition: S
     } = (0, Chunk979233.M)(),
     {
-      tabs: S,
+      tabs: C,
       selectedTab: T,
       setSelectedTab: N
     } = (0, Chunk29086.Y)(),
@@ -66,25 +66,25 @@ function C() {
     B = Chunk647438.useCallback(e => {
       N(e), L && Z()
     }, [L, Z, N]),
-    V = Chunk647438.useMemo(() => L ? S.filter(e => {
+    H = Chunk647438.useMemo(() => L ? C.filter(e => {
       let {
         id: t
       } = e;
       return !E.MU.has(t)
-    }) : S, [S, L]),
-    H = Chunk647438.useRef(new Chunk444324.Z(j)),
+    }) : C, [C, L]),
+    V = Chunk647438.useRef(new Chunk444324.Z(j)),
     {
       onGuildCardSeen: F,
       onGuildCardClick: z
     } = (0, Chunk750910.H)({
-      guildDiscoveryCardSeenManager: H.current,
+      guildDiscoveryCardSeenManager: V.current,
       loadId: module.current
     });
   return Chunk647438.useEffect(() => {
-    H.current.flushSeenGuilds(module.current)
+    V.current.flushSeenGuilds(module.current)
   }, [j]), Chunk647438.useEffect(() => {
-    C()
-  }, [T, C]), Chunk647438.useEffect(() => {
+    S()
+  }, [T, S]), Chunk647438.useEffect(() => {
     L || Chunk164991.Z.setState({
       scrollPosition: null
     })
@@ -101,7 +101,7 @@ function C() {
         icon: Chunk481060.QTo
       }), !L && (0, Chunk951288.jsx)(c.Z, {
         className: U,
-        tabs: V,
+        tabs: H,
         selectedTab: L ? null : T,
         onTabSelect: B,
         onAvailableWidthChange: D

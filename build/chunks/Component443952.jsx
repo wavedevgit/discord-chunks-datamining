@@ -42,7 +42,7 @@ var Chunk243814 = require("./243814.js"),
   Chunk701488 = require("./701488.js");
 async function U(e, t, n, r) {
   let i = arguments.length > 4 && true !== arguments[4] ? arguments[4] : "",
-    l = y.Z.getApplicationActivity(t);
+    l = v.Z.getApplicationActivity(t);
   if (null == l || null == l.secrets || !(0, A.t9)(r, l.party, l.secrets)) throw new x.Z({
     errorCode: k.lTL.NO_ELIGIBLE_ACTIVITY
   }, "No eligible activity for application. Ensure an activity includes a party and appropriate secret.");
@@ -93,7 +93,7 @@ let G = {
         args: {
           user_id: t
         }
-      } = e, n = v.Z.getDMFromUserId(t);
+      } = e, n = y.Z.getDMFromUserId(t);
       null != n && (0, u.In)(n, {
         section: k.jXE.CLOSE_ACTIVITY_JOIN_REQUEST_RPC_COMMAND,
         object: k.qAy.ACK_DECLINE_REQUEST_TO_JOIN,
@@ -193,7 +193,7 @@ let G = {
         if (c.applicationId !== i.id) throw new x.Z({
           errorCode: k.lTL.INVALID_COMMAND
         }, "Application is not currently mounted.");
-        let e = y.Z.getApplicationActivity(i.id);
+        let e = v.Z.getApplicationActivity(i.id);
         if (null != e)(0, s.h7)(e, false, p);
         else throw new x.Z({
           errorCode: k.lTL.NO_ELIGIBLE_ACTIVITY
@@ -262,7 +262,7 @@ let G = {
           if ((0, p.R)()) n = O.Z.getWindow(k.KJ3.ACTIVITY_POPOUT);
           else {
             var r;
-            let e = C.Z.getLastFocusedWindowId();
+            let e = S.Z.getLastFocusedWindowId();
             n = null == e ? null : null == (r = (0, _.g0)(e)) ? true : r.renderWindow
           }
           if (null == n) throw new x.Z({
@@ -311,7 +311,7 @@ let G = {
       if (null == i) throw new x.Z({
         errorCode: k.lTL.INVALID_COMMAND
       }, "No application.");
-      if (!(0, S.yE)(null != (t = n.application.flags) ? t : 0, k.udG.EMBEDDED)) throw new x.Z({
+      if (!(0, C.yE)(null != (t = n.application.flags) ? t : 0, k.udG.EMBEDDED)) throw new x.Z({
         errorCode: k.lTL.INVALID_COMMAND
       }, "This application cannot access this API");
       let l = (0, w.Z)();
@@ -350,7 +350,7 @@ let G = {
       if (!M.Cr.includes(p)) throw new x.Z({
         errorCode: k.lTL.INVALID_COMMAND
       }, "Unsupported application.");
-      if (!(0, S.yE)(null != (t = r.application.flags) ? t : 0, k.udG.EMBEDDED)) throw new x.Z({
+      if (!(0, C.yE)(null != (t = r.application.flags) ? t : 0, k.udG.EMBEDDED)) throw new x.Z({
         errorCode: k.lTL.INVALID_COMMAND
       }, "This application cannot access this API");
       let f = (0, w.Z)();

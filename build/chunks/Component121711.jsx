@@ -184,7 +184,7 @@ function ef(e) {
         children: (0, r.jsx)(ep, {
           onLoadComplete: t
         })
-      }), (0, r.jsx)(C.Z, {
+      }), (0, r.jsx)(S.Z, {
         children: (0, r.jsxs)("div", {
           className: ei.redirectNoticeContainer,
           children: [(0, r.jsx)(d.X6q, {
@@ -228,7 +228,7 @@ let eh = function(e) {
   let {
     onScroll: U,
     scrollPosition: F
-  } = (0, y.M)(), W = z.Z.getState().getUtmCurrentContext(), el = (0, M._)({
+  } = (0, v.M)(), W = z.Z.getState().getUtmCurrentContext(), el = (0, M._)({
     location: $.dr.QUEST_HOME_DESKTOP
   }) ? Y.Z : Y.j, ea = (0, K.z)(e => e.registerAssetLoad), eo = i.useRef(W);
   i.useEffect(() => {
@@ -278,9 +278,9 @@ let eh = function(e) {
   i.useEffect(() => {
     l && (0, p.Y)(ee.Z5c.QUEST_HOME_V2)
   }, [l]), i.useEffect(() => {
-    v.C.trigger()
+    y.C.trigger()
   }, []);
-  let em = (0, V.T)({
+  let em = (0, H.T)({
     location: $.dr.QUEST_PREVIEW_TOOL_2
   });
   return i.useEffect(() => {
@@ -361,10 +361,10 @@ let eh = function(e) {
             }), (0, r.jsx)(ed, {
               onLoadComplete: ea
             })]
-          }), (0, r.jsx)(C.Z, {
+          }), (0, r.jsx)(S.Z, {
             children: w === k.e5.CLAIMED ? (0, r.jsx)(el, {
               onSelectTab: L
-            }) : w === k.e5.PREVIEW_TOOL ? (0, r.jsx)(H.Z, {}) : (0, r.jsx)(q.Z, {})
+            }) : w === k.e5.PREVIEW_TOOL ? (0, r.jsx)(V.Z, {}) : (0, r.jsx)(q.Z, {})
           })]
         })
       }) : (0, r.jsxs)(r.Fragment, {
@@ -402,17 +402,17 @@ let eh = function(e) {
               }), (0, r.jsx)(ed, {
                 onLoadComplete: ea
               })]
-            }), (0, r.jsxs)(C.Z, {
+            }), (0, r.jsxs)(S.Z, {
               children: [(0, r.jsx)("div", {
                 className: ei.tabs,
-                children: (0, r.jsx)(S.Z, {
+                children: (0, r.jsx)(C.Z, {
                   tabs: D,
                   selectedTab: w,
                   onTabSelect: L
                 })
               }), w === k.e5.CLAIMED ? (0, r.jsx)(el, {
                 onSelectTab: L
-              }) : w === k.e5.PREVIEW_TOOL ? (0, r.jsx)(H.Z, {}) : (0, r.jsx)(q.Z, {})]
+              }) : w === k.e5.PREVIEW_TOOL ? (0, r.jsx)(V.Z, {}) : (0, r.jsx)(q.Z, {})]
             })]
           })
         })]

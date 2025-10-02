@@ -224,7 +224,7 @@ let tr = (0, Chunk951752.l)(e => {
   ta = (0, Chunk77987.e)(Chunk684572.default, null, {
     passProps: false
   }),
-  to = [Chunk981631.Z5c.GUILD_BOOSTING_MARKETING(Chunk893607.Hw.guildId()), ...Array.from(Chunk176505.Vg).map(e => e2.Z5c.CHANNEL(ey.Hw.guildId(), e))];
+  to = [Chunk981631.Z5c.GUILD_BOOSTING_MARKETING(Chunk893607.Hw.guildId()), ...Array.from(Chunk176505.Vg).map(e => e2.Z5c.CHANNEL(ev.Hw.guildId(), e))];
 
 function ts(e) {
   let {
@@ -505,7 +505,7 @@ class tp extends Chunk647438.PureComponent {
     } = e, o = "REPLACE" === t;
     ! function(e) {
       if (Q.Z.isConnected() || Q.Z.isTryingToConnect()) return;
-      let t = eH.default.getToken();
+      let t = eV.default.getToken();
       null != t && null != function(e) {
         for (let {
             path: t,
@@ -529,7 +529,7 @@ class tp extends Chunk647438.PureComponent {
         channelId: i,
         messageId: o,
         threadId: s
-      } = ts(n), c = (0, ey.Ss)(r), u = (0, ey.cq)(i), d = (0, ey.cq)(s), h = eX.Z.getGuildId(), g = h !== r;
+      } = ts(n), c = (0, ev.Ss)(r), u = (0, ev.cq)(i), d = (0, ev.cq)(s), h = eX.Z.getGuildId(), g = h !== r;
       if (c && g && p.Z.selectGuild(r), c && u) {
         let n = eQ.Z.getChannelId(h),
           a = n !== i;
@@ -584,8 +584,8 @@ class tp extends Chunk647438.PureComponent {
       guildId: r,
       channelId: i,
       threadId: l
-    } = ts(n), a = (0, ey.Ss)(r) && r !== e2.ME && r !== e2.I_8;
-    if (null != i && (0, ey.cq)(i) && !(0, e6.AB)(i) && a) {
+    } = ts(n), a = (0, ev.Ss)(r) && r !== e2.ME && r !== e2.I_8;
+    if (null != i && (0, ev.cq)(i) && !(0, e6.AB)(i) && a) {
       let n = ez.Z.getChannel(i);
       if (null == n) eZ.Z.loadThread(i).then(() => td({
         channelId: i,
@@ -597,7 +597,7 @@ class tp extends Chunk647438.PureComponent {
         state: e.state
       };
       if (null != l) {
-        if (!((0, ey.cq)(l) && !(0, e6.AB)(i))) return null;
+        if (!((0, ev.cq)(l) && !(0, e6.AB)(i))) return null;
         let n = ez.Z.getChannel(l);
         if (null == n) eZ.Z.loadThread(l).then(() => td({
           channelId: l,

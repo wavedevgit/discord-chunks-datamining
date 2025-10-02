@@ -29,17 +29,17 @@ function h(e) {
   }, [h.id, g]), {
     acceptMessageRequest: O,
     rejectMessageRequest: E,
-    isAcceptLoading: v,
-    isRejectLoading: y,
+    isAcceptLoading: y,
+    isRejectLoading: v,
     isUserProfileLoading: I,
-    isOptimisticAccepted: C,
-    isOptimisticRejected: S
+    isOptimisticAccepted: S,
+    isOptimisticRejected: C
   } = (0, u.m)({
     user: n,
     onAcceptSuccess: _,
     onRejectSuccess: b,
     onError: m
-  }), T = v || y || I || C || S;
+  }), T = y || v || I || S || C;
   return (0, r.jsxs)("div", {
     className: f.container,
     children: [(0, r.jsx)(d.Z, {
@@ -59,7 +59,7 @@ function h(e) {
             e.stopPropagation(), E(h.id)
           },
           disabled: T,
-          loading: y || S
+          loading: v || C
         })
       }), (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
@@ -72,7 +72,7 @@ function h(e) {
             e.stopPropagation(), O(h.id)
           },
           disabled: T,
-          loading: v || I || C
+          loading: y || I || S
         })
       })]
     })]

@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk662401 = require("./662401.js");
 
-function S(e) {
+function C(e) {
   let {
     tab: t
   } = e, {
@@ -52,14 +52,14 @@ function S(e) {
           color: "currentColor"
         })
     }
-  })(t, n), [t, n]), S = i.useMemo(() => (0, _.s)(t), [t]), T = l === t, N = i.useCallback(() => {
+  })(t, n), [t, n]), C = i.useMemo(() => (0, _.s)(t), [t]), T = l === t, N = i.useCallback(() => {
     switch (t) {
       case E.GlobalDiscoveryTab.QUESTS:
-        return T && g.Z.resetState(), m.default.track(v.rMx.DISCOVERY_QUEST_TAB_CLICKED, {
+        return T && g.Z.resetState(), m.default.track(y.rMx.DISCOVERY_QUEST_TAB_CLICKED, {
           client_ad_session_id: (0, u.Gy)().uuid
         }), (0, O.transitionToGlobalDiscovery)({
           tab: E.GlobalDiscoveryTab.QUESTS,
-          location: y.dr.DISCOVERY_SIDEBAR,
+          location: v.dr.DISCOVERY_SIDEBAR,
           questContent: o.j.DISCOVERY_SIDEBAR
         });
       case E.GlobalDiscoveryTab.APPS:
@@ -90,16 +90,16 @@ function S(e) {
   }, [t, T]);
   return (0, r.jsxs)(s.P3F, {
     onClick: N,
-    className: a()(C.navItem, {
-      [C.selected]: T
+    className: a()(S.navItem, {
+      [S.selected]: T
     }),
     children: [(0, r.jsx)("div", {
-      className: C.navItemIcon,
+      className: S.navItemIcon,
       children: I
     }), (0, r.jsx)(s.Text, {
       variant: "text-md/medium",
       color: "none",
-      children: S
+      children: C
     })]
   })
 }
@@ -114,7 +114,7 @@ let T = function() {
       })
     }), (0, Chunk951288.jsx)("nav", {
       className: Chunk662401.nav,
-      children: Chunk49898.GLOBAL_DISCOVERY_TABS.map(e => (0, r.jsx)(S, {
+      children: Chunk49898.GLOBAL_DISCOVERY_TABS.map(e => (0, r.jsx)(C, {
         tab: e
       }, e))
     })]

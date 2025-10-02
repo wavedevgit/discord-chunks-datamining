@@ -1,11 +1,11 @@
-/** Chunk was on 86821 **/
-/** chunk id: 747101, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 46592 **/
+/** chunk id: 747101, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   FX: () => b,
-  ZP: () => f,
+  ZP: () => g,
   kN: () => p,
   kO: () => d,
-  qU: () => g
+  qU: () => f
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
@@ -16,18 +16,18 @@ var Chunk647438 = require("./647438.js"),
 
 function s(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
+    var r = null != arguments[t] ? arguments[t] : {},
+      n = Object.keys(r);
+    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(r, e).enumerable
+    }))), n.forEach(function(t) {
+      var n;
+      n = r[t], t in e ? Object.defineProperty(e, t, {
+        value: n,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = r
+      }) : e[t] = n
     })
   }
   return e
@@ -35,32 +35,32 @@ function s(e) {
 
 function u(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var n = Object.keys(e);
+    var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
+      var n = Object.getOwnPropertySymbols(e);
+      r.push.apply(r, n)
     }
-    return n
-  })(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+    return r
+  })(Object(t)).forEach(function(r) {
+    Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
   }), e
 }
 
 function d(e) {
-  return (0, i.e7)([o.Z], () => o.Z.isFetching(e))
+  return (0, i.e7)([a.Z], () => a.Z.isFetching(e))
 }
 
-function g(e) {
-  r.useEffect(() => {
+function f(e) {
+  n.useEffect(() => {
     if (e.length > 0) {
-      let t = e.filter(e => o.Z.canFetch(e));
-      t.length > 0 && a.Z.getDetectableGamesSupplemental(t)
+      let t = e.filter(e => a.Z.canFetch(e));
+      t.length > 0 && o.Z.getDetectableGamesSupplemental(t)
     }
   }, [e])
 }
 
-function f(e) {
-  g(r.useMemo(() => (function(e) {
+function g(e) {
+  f(n.useMemo(() => (function(e) {
     let t = new Set;
     return e.forEach(e => {
       e.games.forEach(e => {
@@ -71,27 +71,27 @@ function f(e) {
 }
 
 function p(e) {
-  let [t, n] = (0, i.Wu)([o.Z], () => [o.Z.numNoDataAvailable(), o.Z.numSupplementalGames()]);
-  return r.useMemo(() => {
+  let [t, r] = (0, i.Wu)([a.Z], () => [a.Z.numNoDataAvailable(), a.Z.numSupplementalGames()]);
+  return n.useMemo(() => {
     let t = {};
     return e.forEach(e => {
-      t[e] = o.Z.getGame(e)
+      t[e] = a.Z.getGame(e)
     }), t
-  }, [e, t, n])
+  }, [e, t, r])
 }
 
 function b(e) {
   let t = p(e.games.map(e => e.applicationId));
-  return r.useMemo(() => new c.zy(u(s({}, e), {
+  return n.useMemo(() => new c.zy(u(s({}, e), {
     games: e.games.map(e => {
-      let n = t[e.applicationId];
-      if (null != n) return u(s({}, e), {
-        gameName: n.name,
-        imageSrc: n.coverImageUrl
+      let r = t[e.applicationId];
+      if (null != r) return u(s({}, e), {
+        gameName: r.name,
+        imageSrc: r.coverImageUrl
       });
-      let r = l.Z.getDetectableGame(e.applicationId);
+      let n = l.Z.getDetectableGame(e.applicationId);
       return u(s({}, e), {
-        gameName: null == r ? true : r.name
+        gameName: null == n ? true : n.name
       })
     })
   })), [e, t])

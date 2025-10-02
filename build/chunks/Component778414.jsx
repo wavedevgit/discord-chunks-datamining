@@ -1,8 +1,8 @@
 /** Chunk was on 56848 **/
 /** chunk id: 778414, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  C: () => _,
-  Z: () => T
+  C: () => R,
+  Z: () => _
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,6 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk351402 = require("./351402.js"),
   Chunk931847 = require("./931847.js"),
   Chunk836197 = require("./836197.js"),
+  Chunk880421 = require("./880421.js"),
   Chunk206599 = require("./206599.js"),
   Chunk5136 = require("./5136.js"),
   Chunk690760 = require("./690760.js"),
@@ -26,13 +27,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk430790 = require("./430790.jsx"),
   Chunk640078 = require("./640078.jsx"),
   Chunk190862 = require("./190862.jsx"),
+  Chunk682085 = require("./682085.jsx"),
   Chunk996921 = require("./996921.jsx"),
   Chunk661462 = require("./661462.jsx"),
   Chunk795990 = require("./795990.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk479283 = require("./479283.js");
 
-function E(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -51,7 +53,7 @@ function E(e) {
   return e
 }
 
-function A(e, t) {
+function Z(e, t) {
   if (null == e) return {};
   var n, r, i = function(e, t) {
     if (null == e) return {};
@@ -67,18 +69,18 @@ function A(e, t) {
   return i
 }
 
-function T(e) {
+function _(e) {
   var {
     widget: t
-  } = e, n = A(e, ["widget"]);
-  return t instanceof h.q ? (0, r.jsx)(O.Z, E({
+  } = e, n = Z(e, ["widget"]);
+  return t instanceof p.q ? (0, r.jsx)(x.Z, k({
     widget: t
-  }, n)) : t instanceof p.zy ? (0, r.jsx)(S.Z, E({
+  }, n)) : t instanceof h.zy ? (0, r.jsx)(I.Z, k({
     widget: t
   }, n)) : null
 }
 
-function Z() {
+function D() {
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk479283.ukTeenDisclaimer,
     children: [(0, Chunk951288.jsx)(Chunk481060.d3s, {
@@ -92,56 +94,61 @@ function Z() {
   })
 }
 
-function D(e) {
+function L(e) {
   let {
     user: t,
     guildId: n,
     channelId: l
-  } = e, a = (0, j.Z)(t.id), o = (0, s.e7)([f.default], () => f.default.getId() === t.id), v = (() => {
+  } = e, a = (0, O.Z)(t.id), o = (0, s.e7)([f.default], () => f.default.getId() === t.id), y = (() => {
     let [e, t] = (0, s.Wu)([g.Z], () => [g.Z.ipCountryCode, g.Z.ipCountryCodeRequest]), n = (0, u.U)();
     return i.useEffect(() => {
       null == e && null == t && n && (0, c.GE)()
     }, [e, t, n]), "GB" === e && n
-  })(), O = 0 === a.length && o, P = i.useMemo(() => a.filter(p.Wc), [a]), S = i.useMemo(() => a.filter(e => e instanceof h.q), [a]);
-  (0, y.ZP)(P), (0, m.J)(o, P);
-  var w = t.id;
-  (0, b.s)(S);
+  })(), x = (0, m.k)({
+    location: "UserProfileModalV2Widgets"
+  }), S = 0 === a.length && o, I = i.useMemo(() => a.filter(h.Wc), [a]), E = i.useMemo(() => a.filter(e => e instanceof p.q), [a]);
+  (0, j.ZP)(I), (0, v.J)(o, I);
+  var T = t.id;
+  (0, b.s)(E);
   let {
-    data: I,
-    refetch: k
-  } = (0, d.O)(w), C = i.useRef(I);
-  return (C.current = I, i.useEffect(() => {
-    null !== C.current && k()
-  }, [k]), O) ? (0, r.jsx)(N.Z, {}) : (0, r.jsxs)(r.Fragment, {
-    children: [o && v && (0, r.jsx)(Z, {}), a.map((e, i) => (0, r.jsx)(T, {
+    data: N,
+    refetch: C
+  } = (0, d.O)(T), k = i.useRef(N);
+  if (k.current = N, i.useEffect(() => {
+      null !== k.current && C()
+    }, [C]), S)
+    if (x) return (0, r.jsx)(w.Z, {});
+    else return (0, r.jsx)(A.Z, {});
+  return (0, r.jsxs)(r.Fragment, {
+    children: [o && y && (0, r.jsx)(D, {}), a.map((e, i) => (0, r.jsx)(_, {
       widget: e,
       user: t,
       guildId: n,
       channelId: l,
       index: i
-    }, e.type)), o && (0, r.jsx)(x.Z, {})]
+    }, e.type)), o && (0, r.jsx)(P.Z, {})]
   })
 }
 
-function _(e) {
+function R(e) {
   var {
     user: t
-  } = e, n = A(e, ["user"]);
+  } = e, n = Z(e, ["user"]);
   let l = i.useRef(null);
-  (0, v.r)({
+  (0, y.r)({
     container: l.current
   });
-  let s = (0, w.h)(t.id);
-  return (0, r.jsxs)(I.F, {
+  let s = (0, E.h)(t.id);
+  return (0, r.jsxs)(T.F, {
     "data-scroller": true,
     scrollerRef: l,
     className: a()(C.scroller, {
       [C.hasToolbar]: s
     }),
     fade: true,
-    children: [(0, r.jsx)(P.Z, {
+    children: [(0, r.jsx)(S.Z, {
       scrollerRef: l
-    }), (0, r.jsx)(D, E({
+    }), (0, r.jsx)(L, k({
       user: t
     }, n))]
   })

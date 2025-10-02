@@ -38,21 +38,21 @@ function _(e) {
 }
 let O = [],
   E = null,
-  v = false,
-  y = Chunk981631.QZA.CLOSED,
+  y = false,
+  v = Chunk981631.QZA.CLOSED,
   I = {},
-  C = false,
-  S = null;
+  S = false,
+  C = null;
 
 function T() {
   if (r = null != (i = Chunk388610.Z.getChannel()) ? Chunk430824.Z.getGuild(i.guild_id) : null, O = null != i && null != r && Chunk496675.Z.can(Chunk981631.Plq.MANAGE_WEBHOOKS, i) ? Chunk855674.Z.getWebhooksForChannel(r.id, i.id) : [], null != E) {
     let e = j(E.id);
     null != module && (E = module)
   }
-  y = Chunk981631.QZA.OPEN, I = {}, C = false
+  v = Chunk981631.QZA.OPEN, I = {}, S = false
 }
 let N = s().debounce(() => {
-  C && ((null == E || s().isEqual(E, j(E.id))) && (C = false), C || x.emitChange())
+  S && ((null == E || s().isEqual(E, j(E.id))) && (S = false), S || x.emitChange())
 }, 500);
 
 function j(e) {
@@ -68,7 +68,7 @@ class P extends(a = Chunk442837.ZP.Store) {
     this.waitFor(Chunk388610.Z, Chunk430824.Z, Chunk855674.Z, Chunk496675.Z)
   }
   hasChanges() {
-    return C
+    return S
   }
   get webhooks() {
     return O
@@ -77,7 +77,7 @@ class P extends(a = Chunk442837.ZP.Store) {
     return E
   }
   get formState() {
-    return y
+    return v
   }
   getWebhook(e) {
     return j(e)
@@ -87,13 +87,13 @@ class P extends(a = Chunk442837.ZP.Store) {
   }
   getProps() {
     return {
-      submitting: y === Chunk981631.QZA.SUBMITTING,
+      submitting: v === Chunk981631.QZA.SUBMITTING,
       webhooks: O,
       editedWebhook: E,
       section: l,
-      sectionId: S,
+      sectionId: C,
       hasChanges: this.hasChanges(),
-      isFetching: v,
+      isFetching: y,
       errors: I
     }
   }
@@ -110,7 +110,7 @@ let x = new P(Chunk570140.Z, __OVERLAY__ ? {} : {
       if (l = m.b4C.OVERVIEW, null == r) {
         let e = p.Z.getChannel(),
           t = null == e ? true : e.getGuildId();
-        null != e && null != t && (d.Z.fetchForChannel(t, e.id), v = true), T()
+        null != e && null != t && (d.Z.fetchForChannel(t, e.id), y = true), T()
       }
     },
     INTEGRATION_SETTINGS_SET_SECTION: function(e) {
@@ -118,27 +118,27 @@ let x = new P(Chunk570140.Z, __OVERLAY__ ? {} : {
         section: t,
         sectionId: n
       } = e;
-      l = t, S = n
+      l = t, C = n
     },
     INTEGRATION_SETTINGS_START_EDITING_WEBHOOK: function(e) {
       let {
         webhookId: t
       } = e, n = j(t);
       if (null == n) returnfalse;
-      E = n, I = {}, C = false
+      E = n, I = {}, S = false
     },
     INTEGRATION_SETTINGS_STOP_EDITING_WEBHOOK: function() {
-      E = null, I = {}, C = false
+      E = null, I = {}, S = false
     },
     INTEGRATION_SETTINGS_UPDATE_WEBHOOK: function(e) {
       let {
         settings: t
       } = e;
       if (null == E) returnfalse;
-      E = _({}, E), null != t.name && E.name !== t.name && (E.name = t.name, C = true), true !== t.avatar && E.avatar !== t.avatar && (E.avatar = t.avatar, C = true), null != t.channelId && E.channel_id !== t.channelId && (E.channel_id = t.channelId, C = true), C && N()
+      E = _({}, E), null != t.name && E.name !== t.name && (E.name = t.name, S = true), true !== t.avatar && E.avatar !== t.avatar && (E.avatar = t.avatar, S = true), null != t.channelId && E.channel_id !== t.channelId && (E.channel_id = t.channelId, S = true), S && N()
     },
     CHANNEL_SETTINGS_CLOSE: function() {
-      i = null, r = null, O = [], E = null, y = Chunk981631.QZA.CLOSED
+      i = null, r = null, O = [], E = null, v = Chunk981631.QZA.CLOSED
     },
     WEBHOOKS_UPDATE: function(e) {
       let {
@@ -146,7 +146,7 @@ let x = new P(Chunk570140.Z, __OVERLAY__ ? {} : {
         channelId: n,
         webhooks: l
       } = e;
-      if (v = false, null != r && t === r.id && null != i && n === i.id && null != l && y !== m.QZA.SUBMITTING) {
+      if (y = false, null != r && t === r.id && null != i && n === i.id && null != l && v !== m.QZA.SUBMITTING) {
         for (let e = O.length - 1; e >= 0; e--) {
           let t = O[e];
           if (null != n && (null == t ? true : t.channel_id) !== n) continue;
@@ -158,7 +158,7 @@ let x = new P(Chunk570140.Z, __OVERLAY__ ? {} : {
           });
           if (null != r) {
             let n = _({}, t, r);
-            O[e] = n, C || (null == E ? true : E.id) !== n.id || (E = n)
+            O[e] = n, S || (null == E ? true : E.id) !== n.id || (E = n)
           } else(null == E ? true : E.id) === t.id && (E = null), O.splice(e, 1)
         }
         for (let e of l) null == O.find(t => {
@@ -171,12 +171,12 @@ let x = new P(Chunk570140.Z, __OVERLAY__ ? {} : {
       }
     },
     INTEGRATION_SETTINGS_SUBMITTING: function() {
-      y = Chunk981631.QZA.SUBMITTING, I = {}
+      v = Chunk981631.QZA.SUBMITTING, I = {}
     },
     INTEGRATION_SETTINGS_SAVE_FAILURE: function(e) {
       var t;
-      if (y !== m.QZA.SUBMITTING) returnfalse;
-      y = m.QZA.OPEN, I = null != (t = e.errors) ? t : {}
+      if (v !== m.QZA.SUBMITTING) returnfalse;
+      v = m.QZA.OPEN, I = null != (t = e.errors) ? t : {}
     }
   }),
   A = x

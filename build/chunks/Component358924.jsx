@@ -218,7 +218,7 @@ let ea = [14, 14, 12, 12, 10, 8, 6],
       name: a
     } = t, {
       data: o
-    } = (0, j.IX)(l), s = (0, C.Z)({
+    } = (0, j.IX)(l), s = (0, S.Z)({
       application: o,
       analyticsLocations: n
     }), c = (0, R.Nj)(u.z.CLOUD_PLAY_NEW_BADGE), d = (0, G.F)(l);
@@ -387,7 +387,7 @@ eO.Header = e_, eO.Body = e => {
       ref: u,
       onContextMenu: e => c(e, r),
       children: [(0, i.jsx)(p.P3F, {
-        onClick: () => (0, H.X)(n.id),
+        onClick: () => (0, V.X)(n.id),
         "aria-hidden": true,
         tabIndex: false,
         children: (0, i.jsxs)("div", {
@@ -416,7 +416,7 @@ eO.Header = e_, eO.Body = e => {
         })
       }), (0, i.jsx)(p.P3F, {
         onClick: () => {
-          f.default.selectVoiceChannel(r.id), (0, V.Kh)(r.id)
+          f.default.selectVoiceChannel(r.id), (0, H.Kh)(r.id)
         },
         focusProps: {
           ringTarget: u
@@ -441,7 +441,7 @@ eO.Header = e_, eO.Body = e => {
     activity: a
   } = e, {
     analyticsLocations: o
-  } = (0, T.ZP)(S.Z.NOW_PLAYING_ITEM_GAME_SECTION);
+  } = (0, T.ZP)(C.Z.NOW_PLAYING_ITEM_GAME_SECTION);
   return (0, i.jsxs)(eu, {
     children: [(0, i.jsxs)("div", {
       className: er.gameSection,
@@ -470,7 +470,7 @@ eO.Header = e_, eO.Body = e => {
     user: s
   } = e, {
     analyticsLocations: c
-  } = (0, T.ZP)(S.Z.NOW_PLAYING_ITEM_RICH_PRESENCE_SECTION), {
+  } = (0, T.ZP)(C.Z.NOW_PLAYING_ITEM_RICH_PRESENCE_SECTION), {
     assets: u,
     details: d,
     state: p,
@@ -512,7 +512,7 @@ eO.Header = e_, eO.Body = e => {
           let {
             timestamps: e
           } = l;
-          return null == e || !(0, E.Z)(l) || (0, v.Z)(l) ? null : es((0, O.Z)(l) ? (0, i.jsx)(ec, {
+          return null == e || !(0, E.Z)(l) || (0, y.Z)(l) ? null : es((0, O.Z)(l) ? (0, i.jsx)(ec, {
             timestamps: e
           }) : (0, i.jsx)(U.ZP, {
             start: e.start,
@@ -597,7 +597,7 @@ eO.Header = e_, eO.Body = e => {
       assets: d,
       application_id: f
     } = r;
-  if (null != d && (0, y.Z)(r)) {
+  if (null != d && (0, v.Z)(r)) {
     var h;
     t = (0, i.jsx)(w.Z, {
       className: er.twitchSectionPreviewWrapper,

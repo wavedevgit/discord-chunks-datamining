@@ -1,12 +1,12 @@
-/** Chunk was on 86821 **/
-/** chunk id: 750312, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 46592 **/
+/** chunk id: 750312, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => j
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -23,87 +23,87 @@ var Chunk951288 = require("./951288.js"),
 function j(e) {
   let {
     userId: t,
-    widget: n,
-    children: a,
+    widget: r,
+    children: o,
     disableInteraction: s,
-    className: O,
+    className: m,
     index: j,
-    trailingContent: v,
+    trailingContent: h,
     headerTitle: x,
     headerSubtitle: _,
-    headerActionButtons: P,
-    dragHandleAdditionalMenuItems: w
-  } = e, I = (0, u.Dt)(), E = (0, c.e7)([d.default], () => d.default.getId() === t), S = i.useRef(null), T = i.useRef(null), {
+    headerActionButtons: w,
+    dragHandleAdditionalMenuItems: P
+  } = e, E = (0, u.Dt)(), I = (0, c.e7)([d.default], () => d.default.getId() === t), S = i.useRef(null), T = i.useRef(null), {
     trackUserProfileAction: D
-  } = (0, g.KZ)(), N = (0, p.Z)({
-    widgetType: n.type,
+  } = (0, f.KZ)(), k = (0, p.Z)({
+    widgetType: r.type,
     onAction: D
-  }), k = E && null != j && !s, {
-    isDragging: A,
-    dragSourcePosition: C
-  } = (0, f.q)({
+  }), N = I && null != j && !s, {
+    isDragging: C,
+    dragSourcePosition: A
+  } = (0, g.q)({
     dropRef: S,
     dragRef: T,
     userId: t,
-    widget: n,
+    widget: r,
     index: j,
-    disableInteraction: !k
+    disableInteraction: !N
   }), [Z, R] = i.useState(false);
-  return (0, r.jsx)(h, {
+  return (0, n.jsx)(v, {
     ref: S,
-    disableInteraction: !k,
+    disableInteraction: !N,
     onMouseEnter: () => R(true),
     onMouseLeave: () => R(false),
-    dragSourcePosition: C,
+    dragSourcePosition: A,
     index: null != j ? j : 0,
-    children: (0, r.jsxs)("section", {
-      ref: N,
-      className: o()(y.container, O, {
-        [y.isDragging]: A
+    children: (0, n.jsxs)("section", {
+      ref: k,
+      className: a()(y.container, m, {
+        [y.isDragging]: C
       }),
-      "aria-labelledby": I,
-      children: [k && (0, r.jsx)(b.Z, {
+      "aria-labelledby": E,
+      children: [N && (0, n.jsx)(b.Z, {
         buttonRef: T,
-        widget: n,
-        className: o()(y.dragHandleButton, {
-          [y.opacity]: Z || A
+        widget: r,
+        className: a()(y.dragHandleButton, {
+          [y.opacity]: Z || C
         }),
-        additionalMenuItems: w
-      }), (0, r.jsx)(m.Z, {
+        additionalMenuItems: P
+      }), (0, n.jsx)(O.Z, {
         userId: t,
-        headingId: I,
+        headingId: E,
         title: x,
         subtitle: _,
-        actionButtons: P,
-        widget: n,
+        actionButtons: w,
+        widget: r,
         disableInteraction: s
-      }), (0, r.jsxs)(l.y5t, {
-        children: [a, v]
+      }), (0, n.jsxs)(l.y5t, {
+        children: [o, h]
       })]
     })
   })
 }
-let h = e => {
+let v = e => {
   let {
     ref: t,
-    children: n,
+    children: r,
     disableInteraction: i,
-    onMouseEnter: a,
+    onMouseEnter: o,
     onMouseLeave: l,
     dragSourcePosition: c,
     index: u
-  } = e, d = (0, s.zPA)() && null != c, g = d && u < c, f = d && u > c;
-  return i ? n : (0, r.jsx)("div", {
+  } = e, d = (0, s.zPA)() && null != c, f = d && u < c, g = d && u > c;
+  return i ? r : (0, n.jsx)("div", {
     ref: t,
-    className: o()(y.dragAndDropHitbox, {
-      [y.dropIndicatorBefore]: g,
-      [y.dropIndicatorAfter]: f
+    className: a()(y.dragAndDropHitbox, {
+      [y.dropIndicatorBefore]: f,
+      [y.dropIndicatorAfter]: g
     }),
-    onMouseEnter: a,
+    onMouseEnter: o,
     onMouseLeave: l,
-    "aria-label": O.intl.formatToPlainString(O.t.YLczh4, {
+    "aria-label": m.intl.formatToPlainString(m.t.YLczh4, {
       positionNumber: u + 1
     }),
-    children: n
+    children: r
   })
 }

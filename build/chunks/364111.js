@@ -19,11 +19,11 @@ function f(e, t, n) {
     f = (0, l.e7)([a.Z], () => a.Z.hasLoadedExperiments),
     h = (0, l.e7)([c.Z], () => c.Z.skipNumCategories),
     g = (0, o.isDesktop)() || (0, o.isWeb)(),
-    [m, b, _, O, E, v, y, I] = (0, l.Wu)([u.Z], () => {
+    [m, b, _, O, E, y, v, I] = (0, l.Wu)([u.Z], () => {
       var t, n;
       return [u.Z.getShopBlocks(e), null != (t = u.Z.getLastSuccessfulFetch(e)) ? t : 0, null != (n = u.Z.getLastErrorTimestamp(e)) ? n : 0, u.Z.getLastFetchOptions(e), u.Z.getFetchShopHomeError(e), u.Z.getIsFetchingShopHome(e), u.Z.getHasKnownStaleData(e), u.Z.getShopHomeConfigOverride()]
     }),
-    C = (0, r.useMemo)(() => {
+    S = (0, r.useMemo)(() => {
       var e, n;
       return e = function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -60,19 +60,19 @@ function f(e, t, n) {
         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
       }), e
     }, [t, g, I, h]),
-    S = (0, r.useMemo)(() => !(0, s.oc)(O, C), [O, C]),
-    T = (0, d.J)(m, null != v && v, i),
+    C = (0, r.useMemo)(() => !(0, s.oc)(O, S), [O, S]),
+    T = (0, d.J)(m, null != y && y, i),
     N = (0, r.useMemo)(() => !T && Date.now() - b < 6e5, [b, T]);
   return (0, r.useEffect)(() => {
-    if (!f || v) return;
+    if (!f || y) return;
     let t = Date.now() - _ < 6e5;
-    (null == E || !t) && (S || !N || y) && (0, s.Ov)(e, C, n)
-  }, [f, v, E, _, N, y, S, C, e, n]), {
-    isFetchingShopHome: v,
+    (null == E || !t) && (C || !N || v) && (0, s.Ov)(e, S, n)
+  }, [f, y, E, _, N, v, C, S, e, n]), {
+    isFetchingShopHome: y,
     fetchShopHomeError: E,
     shopBlocks: m,
     refreshShopHome: (0, r.useCallback)(() => {
-      (0, s.Ov)(e, C, n)
-    }, [e, C, n])
+      (0, s.Ov)(e, S, n)
+    }, [e, S, n])
   }
 }

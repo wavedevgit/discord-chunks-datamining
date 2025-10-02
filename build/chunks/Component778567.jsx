@@ -17,9 +17,9 @@ function d(e) {
     isOwner: t
   } = e, n = i.useRef(null), {
     analyticsLocations: d
-  } = (0, s.ZP)(a.Z.USER_PROFILE_WISHLIST), [f, g] = i.useState(true), h = i.useCallback(() => {
+  } = (0, s.ZP)(a.Z.USER_PROFILE_WISHLIST), [f, g] = i.useState(true), p = i.useCallback(() => {
     g(!f)
-  }, [f]), p = i.useMemo(() => t ? (0, r.jsx)(l.kSQ, {
+  }, [f]), h = i.useMemo(() => t ? (0, r.jsx)(l.kSQ, {
     children: (0, r.jsx)(l.m76, {
       id: "wishlist-privacy-setting",
       label: (0, r.jsxs)(r.Fragment, {
@@ -35,10 +35,10 @@ function d(e) {
         })]
       }),
       checked: f,
-      action: h
+      action: p
     })
-  }) : null, [t, f, h]);
-  return null == p ? null : (0, r.jsx)(s.Gt, {
+  }) : null, [t, f, p]);
+  return null == h ? null : (0, r.jsx)(s.Gt, {
     value: d,
     children: (0, r.jsx)(l.yRy, {
       targetElementRef: n,
@@ -51,7 +51,7 @@ function d(e) {
           onSelect: true,
           onClose: t,
           "aria-label": c.intl.string(c.t.GdNkvL),
-          children: p
+          children: h
         })
       },
       children: e => (0, r.jsx)(o.pt, function(e) {

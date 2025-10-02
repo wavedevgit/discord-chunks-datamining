@@ -25,7 +25,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk294330 = require("./294330.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk17923 = require("./17923.js");
-let S = Object.freeze({
+let C = Object.freeze({
     top: 0,
     bottom: 0,
     left: 32,
@@ -60,17 +60,17 @@ function P(e) {
     searchCategoryId: x
   } = (0, b.f)({
     loadId: t
-  }), A = 0 === s.length && !f, Z = i.useContext(d.AnalyticsContext), [w, L] = i.useState((0, m.PM)()), [R, D] = i.useState(true), k = i.useRef(R), [M, U] = i.useState(3), G = i.useRef(M), B = i.useRef(null), V = i.useCallback(e => {
+  }), A = 0 === s.length && !f, Z = i.useContext(d.AnalyticsContext), [w, L] = i.useState((0, m.PM)()), [R, D] = i.useState(true), k = i.useRef(R), [M, U] = i.useState(3), G = i.useRef(M), B = i.useRef(null), H = i.useCallback(e => {
     if (null != e && !A && !f) 336 * (s.length / M) <= e.height && P()
-  }, [A, f, s.length, M, P]), H = i.useCallback(e => {
+  }, [A, f, s.length, M, P]), V = i.useCallback(e => {
     let t = e.contentRect;
     if (null == t) return;
     let n = t.width;
     n < 1024 && k.current ? (k.current = false, D(false)) : n > 1024 && !k.current && (k.current = true, D(true));
     let r = 1;
     for (n -= 450 * !!R, n -= 280; n > 0;) n -= 264, r += 1;
-    r !== G.current && (G.current = r, U(r)), V(t)
-  }, [R, V]), F = (0, u.y)(H, [R, V]);
+    r !== G.current && (G.current = r, U(r)), H(t)
+  }, [R, H]), F = (0, u.y)(V, [R, H]);
   i.useEffect(() => {
     L((0, m.PM)())
   }, [I]), i.useEffect(() => {
@@ -93,14 +93,14 @@ function P(e) {
               paddingLeft: n.left,
               width: n.width - 16
             },
-            className: a()(C.heading, {
-              [C.headingTopbar]: !R
+            className: a()(S.heading, {
+              [S.headingTopbar]: !R
             }),
             children: [!R && (0, r.jsxs)("div", {
-              className: C.headingFilters,
+              className: S.headingFilters,
               children: [(0, r.jsx)(O.Z, {
                 loadId: t
-              }), (0, r.jsx)(v.Z, {
+              }), (0, r.jsx)(y.Z, {
                 loadId: t
               })]
             }), A && (0, r.jsx)(E.Z, {
@@ -109,8 +109,8 @@ function P(e) {
           }, i);
         case 1:
           return (0, r.jsx)(c.$jN, {
-            className: a()(C.spinner, {
-              [C.spinnerWithSidebar]: R
+            className: a()(S.spinner, {
+              [S.spinnerWithSidebar]: R
             })
           }, i)
       }
@@ -160,7 +160,7 @@ function P(e) {
         let e = s[t];
         return (0, r.jsx)("div", {
           style: n,
-          children: (0, r.jsx)(y.ZP, {
+          children: (0, r.jsx)(v.ZP, {
             guildId: e,
             onClick: async e => await X(e, t, x, N),
             onView: e => z(e)
@@ -201,13 +201,13 @@ function P(e) {
     }, 100, {
       leading: true
     }), [P]),
-    ee = R ? S : T;
+    ee = R ? C : T;
   return (0, r.jsx)("div", {
-    className: C.container,
+    className: S.container,
     ref: F,
     children: (0, r.jsx)(c.GMG, {
       ref: B,
-      className: C.masonryList,
+      className: S.masonryList,
       sections: W,
       columns: M,
       itemGutter: 16,
@@ -220,15 +220,15 @@ function P(e) {
       chunkSize: 24,
       onScroll: $,
       renderAccessory: e => R ? (0, r.jsx)("div", {
-        className: C.sidebar,
+        className: S.sidebar,
         style: {
           height: e
         },
         children: (0, r.jsxs)("div", {
-          className: C.sidebarContent,
+          className: S.sidebarContent,
           children: [(0, r.jsx)("div", {
-            className: C.sidebarLanguageSelect,
-            children: (0, r.jsx)(v.Z, {
+            className: S.sidebarLanguageSelect,
+            children: (0, r.jsx)(y.Z, {
               loadId: t
             })
           }), (0, r.jsx)(_.Z, {

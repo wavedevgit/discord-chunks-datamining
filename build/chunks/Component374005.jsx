@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 374005, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  b: () => C
+  b: () => S
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -67,7 +67,7 @@ function I(e) {
     }), t))
   })
 }
-let C = Chunk647438.memo(function() {
+let S = Chunk647438.memo(function() {
   let e = Chunk647438.useRef(null);
   (0, Chunk393238.PM)(module, e => {
     let {

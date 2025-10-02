@@ -24,9 +24,9 @@ function g(e) {
     analyticsLocations: b
   } = (0, s.ZP)([...m, o.Z.ACTIVITY_DETAIL_PAGE]), {
     applicationId: _
-  } = g.params, [O] = (0, c.Z)([_]), E = null == O || null == (t = O.bot) ? true : t.id, v = (0, i.e7)([d.default], () => d.default.getCurrentUser());
+  } = g.params, [O] = (0, c.Z)([_]), E = null == O || null == (t = O.bot) ? true : t.id, y = (0, i.e7)([d.default], () => d.default.getCurrentUser());
   return r.useEffect(() => {
-    null != E && null != v && (async () => {
+    null != E && null != y && (async () => {
       try {
         var e;
         let t = new URL(location.href),
@@ -46,7 +46,7 @@ function g(e) {
         })
       } catch (e) {}
     })()
-  }, [b, _, E, v]), r.useEffect(() => {
+  }, [b, _, E, y]), r.useEffect(() => {
     let e = setTimeout(() => {
       null == E && l.Z.show({
         title: h.intl.string(h.t.PtobXV),

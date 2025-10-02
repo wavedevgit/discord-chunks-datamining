@@ -1,7 +1,7 @@
-/** Chunk was on 44559 **/
+/** Chunk was on 26146 **/
 /** chunk id: 186023, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => h
+  default: () => b
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,11 +18,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk255514 = require("./255514.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk731927 = require("./731927.js");
-let h = e => {
+let b = e => {
   let {
     reportType: t,
     menu: n,
-    modalProps: h,
+    modalProps: b,
     onSubmit: x,
     onNavigate: v,
     emailToken: j,
@@ -129,7 +129,7 @@ let h = e => {
     }, [C, I, S, Z]);
   return (0, r.jsx)(a.Y0X, {
     "data-migration-pending": true,
-    transitionState: h.transitionState,
+    transitionState: b.transitionState,
     "aria-labelledby": O,
     parentComponent: "InAppReportModal",
     children: (0, r.jsx)(a.MyZ, {
@@ -139,13 +139,13 @@ let h = e => {
       children: F.map(e => (0, r.jsx)(a.Mi4, {
         id: e.id,
         children: (0, r.jsx)("div", {
-          className: b.slideContainer,
+          className: h.slideContainer,
           children: (0, r.jsx)(g.Z, {
             node: e,
             reportType: t,
             reportSubType: B,
             history: D,
-            onModalClose: h.onClose,
+            onModalClose: b.onClose,
             onSelectChild: G,
             onNavigateBack: z,
             multiSelect: N,

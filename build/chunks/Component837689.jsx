@@ -26,7 +26,7 @@ var Chunk873546 = require("./873546.js"),
   Chunk318199 = require("./318199.jsx"),
   Chunk474936 = require("./474936.js");
 
-function C(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,7 +34,7 @@ function C(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let S = "PremiumServerDriveAnnouncementModal";
+let C = "PremiumServerDriveAnnouncementModal";
 class T extends Chunk317770.Z {
   _initialize() {
     Chunk570140.Z.subscribe("PREMIUM_MARKETING_DATA_READY", this.mayShowAnnouncementModal), Chunk570140.Z.subscribe("PREMIUM_MARKETING_PREVIEW", this.handlePreview)
@@ -43,12 +43,12 @@ class T extends Chunk317770.Z {
     Chunk570140.Z.unsubscribe("PREMIUM_MARKETING_DATA_READY", this.mayShowAnnouncementModal), Chunk570140.Z.unsubscribe("PREMIUM_MARKETING_PREVIEW", this.handlePreview)
   }
   constructor(...e) {
-    super(...e), C(this, "maybeOpenServerDriveAnnouncementModal", async (e, t) => {
-      let i = (0, y.r)({
+    super(...e), S(this, "maybeOpenServerDriveAnnouncementModal", async (e, t) => {
+      let i = (0, v.r)({
         content: e,
         isPreview: t
       });
-      if (null != i) return (false !== t || (null == i ? true : i.contentIdentifier) !== "summer_bogo_content" || !!await (0, E.k)()) && ((0, a.Mr3)(S), (0, a.ZDy)(async () => {
+      if (null != i) return (false !== t || (null == i ? true : i.contentIdentifier) !== "summer_bogo_content" || !!await (0, E.k)()) && ((0, a.Mr3)(C), (0, a.ZDy)(async () => {
         let {
           default: e
         } = await Promise.resolve().then(n.bind(n, 318199));
@@ -57,15 +57,15 @@ class T extends Chunk317770.Z {
           properties: i
         })
       }, {
-        modalKey: S
+        modalKey: C
       }), true);
       returnfalse
-    }), C(this, "handlePreview", e => {
+    }), S(this, "handlePreview", e => {
       let {
         properties: t
       } = e;
       this.maybeOpenServerDriveAnnouncementModal(t, true)
-    }), C(this, "getOfferFromStore", () => {
+    }), S(this, "getOfferFromStore", () => {
       let e = u.default.getCurrentUser();
       if ((0, p.I5)(e)) return {};
       let t = [I.hs, I.RU, I.rB, I.ih].map(e => d.Z.getUserDiscountOffer(e)).filter(e => null != e && !(0, _.kA)(e)).shift();
@@ -76,7 +76,7 @@ class T extends Chunk317770.Z {
       return null != n ? {
         userTrialOffer: n
       } : {}
-    }), C(this, "mayShowAnnouncementModal", async () => {
+    }), S(this, "mayShowAnnouncementModal", async () => {
       if (await (0, h.l2)(), f.s.isDisallowPopupsSet()) return;
       let e = this.getOfferFromStore(),
         t = b.Z.getCurrentConfig({
@@ -86,7 +86,7 @@ class T extends Chunk317770.Z {
         }).enabled,
         n = (0, c.zu)(l.z.Q2_2025_MARKETING_MOMENT_FOLLOW_UP_MODAL),
         r = u.default.getCurrentUser();
-      if (!t || n || (0, a.$sL)() || (0, p.I5)(r) || await (0, m.G)(e.userTrialOffer) && (0, v.Z)({
+      if (!t || n || (0, a.$sL)() || (0, p.I5)(r) || await (0, m.G)(e.userTrialOffer) && (0, y.Z)({
           upsellType: I.cd.REVERSE_TRIAL_FOLLOWUP_UPSELL
         }), (null == r || r.verified) && !(0, a.$sL)() && !i.tq) {
         for (let t of (await (0, O.He)(e)))

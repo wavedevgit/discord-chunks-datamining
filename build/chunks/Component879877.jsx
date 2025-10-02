@@ -1,12 +1,12 @@
-/** Chunk was on 86821 **/
-/** chunk id: 879877, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 46592 **/
+/** chunk id: 879877, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => m
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk624238 = require("./624238.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -18,56 +18,56 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk200344 = require("./200344.js");
 
-function O(e) {
+function m(e) {
   var t;
   let {
-    tags: n,
-    isCurrentUser: a,
+    tags: r,
+    isCurrentUser: o,
     widgetType: c,
     applicationId: s,
     className: u,
-    disableInteraction: O = false
-  } = e, x = null != (t = null == n ? true : n.filter(e => null != (0, p.zK)(e))) ? t : [], _ = x.length > 0, P = l.qH, w = a && !O && (0, g.M8)(c) && x.length < P, {
-    trackUserProfileAction: I
-  } = (0, d.KZ)(), E = (0, i.useRef)(new Map), S = (0, i.useRef)(null), T = (0, i.useRef)(null), [D, N] = (0, i.useState)(0), [k, A] = (0, i.useState)(false), C = v(S, T, x, E, N);
-  if ((0, i.useEffect)(() => (C(), window.addEventListener("resize", C), () => {
-      window.removeEventListener("resize", C)
-    }), [C, null == x ? true : x.join("")]), !_ && !w) return null;
-  let Z = k ? x : x.slice(0, x.length - D);
-  return (0, r.jsxs)("div", {
-    className: o()(m.tagListContainer, u),
-    children: [_ && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)("ul", {
-        className: m.tagList,
+    disableInteraction: m = false
+  } = e, x = null != (t = null == r ? true : r.filter(e => null != (0, p.zK)(e))) ? t : [], _ = x.length > 0, w = l.qH, P = o && !m && (0, f.M8)(c) && x.length < w, {
+    trackUserProfileAction: E
+  } = (0, d.KZ)(), I = (0, i.useRef)(new Map), S = (0, i.useRef)(null), T = (0, i.useRef)(null), [D, k] = (0, i.useState)(0), [N, C] = (0, i.useState)(false), A = h(S, T, x, I, k);
+  if ((0, i.useEffect)(() => (A(), window.addEventListener("resize", A), () => {
+      window.removeEventListener("resize", A)
+    }), [A, null == x ? true : x.join("")]), !_ && !P) return null;
+  let Z = N ? x : x.slice(0, x.length - D);
+  return (0, n.jsxs)("div", {
+    className: a()(O.tagListContainer, u),
+    children: [_ && (0, n.jsxs)(n.Fragment, {
+      children: [(0, n.jsx)("ul", {
+        className: O.tagList,
         "aria-label": b.intl.string(b.t.EfjTi4),
-        children: Z.map(e => (0, r.jsx)(y, {
+        children: Z.map(e => (0, n.jsx)(y, {
           tag: e,
-          isCurrentUser: a,
+          isCurrentUser: o,
           applicationId: s,
           widgetType: c,
           ref: t => {
-            null != t && E.current.set(e, t)
+            null != t && I.current.set(e, t)
           },
-          disableInteraction: O
+          disableInteraction: m
         }, e))
-      }), D > 0 && (k ? (0, r.jsx)(h, {
+      }), D > 0 && (N ? (0, n.jsx)(v, {
         onClick: () => {
-          A(false), I({
+          C(false), E({
             action: "COLLAPSE_GAME_TAGS"
           })
         }
-      }) : (0, r.jsx)(j, {
+      }) : (0, n.jsx)(j, {
         numHidden: D,
         onClick: () => {
-          A(true), I({
+          C(true), E({
             action: "EXPAND_GAME_TAGS"
           })
         },
         ref: S,
-        disableInteraction: O
+        disableInteraction: m
       }))]
-    }), w && (0, r.jsx)(f.Z, {
-      tags: n,
+    }), P && (0, n.jsx)(g.Z, {
+      tags: r,
       widgetType: c,
       applicationId: s,
       ref: T
@@ -77,74 +77,74 @@ function O(e) {
 let y = e => {
     let {
       tag: t,
-      isCurrentUser: n,
+      isCurrentUser: r,
       applicationId: i,
-      widgetType: a,
-      disableInteraction: o,
+      widgetType: o,
+      disableInteraction: a,
       ref: l
     } = e, {
       trackUserProfileEditAction: c
     } = (0, d.KZ)(), u = (0, p.zK)(t);
     if (null == u) return null;
     let {
-      getText: f,
-      icon: O
+      getText: g,
+      icon: m
     } = u, y = () => {
-      (0, g.RZ)(a, i, t), c({
+      (0, f.RZ)(o, i, t), c({
         action: "TAG_REMOVED",
-        widgetEdited: a,
+        widgetEdited: o,
         gameId: i
       })
     };
-    return (0, r.jsxs)("li", {
-      className: m.tag,
+    return (0, n.jsxs)("li", {
+      className: O.tag,
       ref: l,
-      children: [(0, r.jsx)(O, {
+      children: [(0, n.jsx)(m, {
         size: "xxs"
-      }), (0, r.jsx)(s.Text, {
+      }), (0, n.jsx)(s.Text, {
         variant: "text-xxs/medium",
         color: "text-secondary",
-        children: f()
-      }), n && !o && (0, r.jsx)(s.ua7, {
+        children: g()
+      }), r && !a && (0, n.jsx)(s.ua7, {
         text: b.intl.string(b.t.Otv9fH),
         children: e => {
-          var t, n;
-          return (0, r.jsx)(s.P3F, (t = function(e) {
+          var t, r;
+          return (0, n.jsx)(s.P3F, (t = function(e) {
             for (var t = 1; t < arguments.length; t++) {
-              var n = null != arguments[t] ? arguments[t] : {},
-                r = Object.keys(n);
-              "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                return Object.getOwnPropertyDescriptor(n, e).enumerable
-              }))), r.forEach(function(t) {
-                var r;
-                r = n[t], t in e ? Object.defineProperty(e, t, {
-                  value: r,
+              var r = null != arguments[t] ? arguments[t] : {},
+                n = Object.keys(r);
+              "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+                return Object.getOwnPropertyDescriptor(r, e).enumerable
+              }))), n.forEach(function(t) {
+                var n;
+                n = r[t], t in e ? Object.defineProperty(e, t, {
+                  value: n,
                   enumerable: true,
                   configurable: true,
                   writable: true
-                }) : e[t] = r
+                }) : e[t] = n
               })
             }
             return e
-          }({}, e), n = n = {
+          }({}, e), r = r = {
             onClick: y,
-            className: m.removeButton,
+            className: O.removeButton,
             "aria-label": b.intl.formatToPlainString(b.t.GCn1nZ, {
-              tag: f()
+              tag: g()
             }),
-            children: (0, r.jsx)(s.Dio, {
+            children: (0, n.jsx)(s.Dio, {
               size: "xxs",
               color: "currentColor"
             })
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-            var n = Object.keys(e);
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
+            var r = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
-              var r = Object.getOwnPropertySymbols(e);
-              n.push.apply(n, r)
+              var n = Object.getOwnPropertySymbols(e);
+              r.push.apply(r, n)
             }
-            return n
-          })(Object(n)).forEach(function(e) {
-            Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+            return r
+          })(Object(r)).forEach(function(e) {
+            Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
           }), t))
         }
       })]
@@ -153,26 +153,26 @@ let y = e => {
   j = e => {
     let {
       numHidden: t,
-      onClick: n,
+      onClick: r,
       disableInteraction: i,
-      ref: a
+      ref: o
     } = e;
-    return i ? (0, r.jsx)("div", {
-      className: m.expandButton,
-      children: (0, r.jsx)(s.Text, {
+    return i ? (0, n.jsx)("div", {
+      className: O.expandButton,
+      children: (0, n.jsx)(s.Text, {
         variant: "text-xxs/medium",
         color: "none",
         children: "+".concat(t)
       })
-    }) : (0, r.jsx)(c.u, {
+    }) : (0, n.jsx)(c.u, {
       asContainer: true,
       text: b.intl.string(b.t.mriLXF),
-      children: (0, r.jsx)(s.P3F, {
-        onClick: n,
-        className: m.expandButton,
-        innerRef: a,
+      children: (0, n.jsx)(s.P3F, {
+        onClick: r,
+        className: O.expandButton,
+        innerRef: o,
         "aria-label": b.intl.string(b.t.mriLXF),
-        children: (0, r.jsx)(s.Text, {
+        children: (0, n.jsx)(s.Text, {
           variant: "text-xxs/medium",
           color: "none",
           children: "+".concat(t)
@@ -180,49 +180,49 @@ let y = e => {
       })
     })
   },
-  h = e => {
+  v = e => {
     let {
       onClick: t
     } = e;
-    return (0, r.jsx)(c.u, {
+    return (0, n.jsx)(c.u, {
       asContainer: true,
       text: b.intl.string(b.t.z9VPra),
-      children: (0, r.jsx)(s.P3F, {
+      children: (0, n.jsx)(s.P3F, {
         onClick: t,
-        className: m.collapseButton,
+        className: O.collapseButton,
         "aria-label": b.intl.string(b.t.z9VPra),
-        children: (0, r.jsx)(u.Z, {
+        children: (0, n.jsx)(u.Z, {
           direction: u.Z.Directions.LEFT,
           width: 12,
           height: 12,
-          className: m.caret
+          className: O.caret
         })
       })
     })
   },
-  v = (e, t, n, r, a) => (0, i.useCallback)(() => {
-    var i, o, l, c;
-    if (null == n) return void a(0);
+  h = (e, t, r, n, o) => (0, i.useCallback)(() => {
+    var i, a, l, c;
+    if (null == r) return void o(0);
     let s = null != (l = null == (i = e.current) ? true : i.getBoundingClientRect().width) ? l : 0,
-      u = null != (c = null == (o = t.current) ? true : o.getBoundingClientRect().width) ? c : 0,
+      u = null != (c = null == (a = t.current) ? true : a.getBoundingClientRect().width) ? c : 0,
       d = u > 0 ? 8 : 4,
-      g = 0,
       f = 0,
-      p = r.current;
-    for (let e = 0; e < n.length; e++) {
-      let t = p.get(n[e]);
+      g = 0,
+      p = n.current;
+    for (let e = 0; e < r.length; e++) {
+      let t = p.get(r[e]);
       if (null != t) {
-        if ((f += t.offsetWidth + 4) > 296) break;
-        g++
+        if ((g += t.offsetWidth + 4) > 296) break;
+        f++
       }
     }
-    f = 0;
-    for (let e = g; e < n.length; e++) {
-      let t = p.get(n[e]);
+    g = 0;
+    for (let e = f; e < r.length; e++) {
+      let t = p.get(r[e]);
       if (null != t) {
-        if ((f += t.offsetWidth + 4) > 296 - s - u - d) break;
-        g++
+        if ((g += t.offsetWidth + 4) > 296 - s - u - d) break;
+        f++
       }
     }
-    a(n.length - g)
-  }, [e, t, null == n ? true : n.join(""), r, a])
+    o(r.length - f)
+  }, [e, t, null == r ? true : r.join(""), n, o])

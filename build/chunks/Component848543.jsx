@@ -88,16 +88,16 @@ function x(e) {
     L = A || Z || w,
     [R, D] = i.useState(false),
     k = t.getGuildId(),
-    M = (0, v.sR)({
+    M = (0, y.sR)({
       isSoundboardButtonDisabled: L
     }),
     [U, G] = (0, b.cv)(M),
     {
       analyticsLocations: B,
-      parentAnalyticsLocation: V
+      parentAnalyticsLocation: H
     } = (0, h.ZP)(f.Z.SOUNDBOARD_BUTTON);
 
-  function H(e) {
+  function V(e) {
     null != k && (0, p.jW)(e, async () => {
       let {
         default: e
@@ -121,7 +121,7 @@ function x(e) {
     L || D(!R)
   }, [L, R]);
   return (0, E.yp)({
-    event: C.CkL.TOGGLE_SOUNDBOARD,
+    event: S.CkL.TOGGLE_SOUNDBOARD,
     handler: Y
   }), (0, r.jsx)(h.Gt, {
     value: B,
@@ -142,7 +142,7 @@ function x(e) {
             guildId: k,
             channel: t,
             onClose: n,
-            gridNotice: U === s.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && (0, r.jsx)(y.o, {
+            gridNotice: U === s.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && (0, r.jsx)(v.o, {
               onClose: n,
               markAsDismissed: G
             }),
@@ -163,7 +163,7 @@ function x(e) {
             disabled: L,
             onClick: () => {
               var t;
-              null != U && U !== s.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && G(S.L.UNKNOWN), null == e || null == (t = e.onClick) || t.call(e), D(!R), z(), (0, g.v)(V, g.d.SOUNDBOARD)
+              null != U && U !== s.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && G(C.L.UNKNOWN), null == e || null == (t = e.onClick) || t.call(e), D(!R), z(), (0, g.v)(H, g.d.SOUNDBOARD)
             },
             onMouseEnter: t => {
               var n, r;
@@ -173,7 +173,7 @@ function x(e) {
               var n, r;
               null == (n = l.onMouseLeave) || n.call(l, t), null == e || null == (r = e.onMouseLeave) || r.call(e), q()
             },
-            onContextMenu: H,
+            onContextMenu: V,
             fullWidth: true,
             size: u.zx.Sizes.MEDIUM
           }), l), {

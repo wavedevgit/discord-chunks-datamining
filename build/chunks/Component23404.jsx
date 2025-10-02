@@ -100,7 +100,7 @@ function A(e) {
       questContent: g.jn.ACTIVITY_PANEL,
       questContentCTA: u.jZ.TRACK_PROGRESS,
       sourceQuestContent: g.jn.ACTIVITY_PANEL
-    }), (0, v.navigateToQuestHome)({
+    }), (0, y.navigateToQuestHome)({
       fromContent: g.jn.ACTIVITY_PANEL,
       questId: b.id
     }))
@@ -110,7 +110,7 @@ function A(e) {
       questContent: g.jn.ACTIVITY_PANEL,
       questContentCTA: u.jZ.LEARN_MORE,
       sourceQuestContent: g.jn.ACTIVITY_PANEL
-    }), (0, v.navigateToQuestHome)({
+    }), (0, y.navigateToQuestHome)({
       fromContent: g.jn.ACTIVITY_PANEL,
       questId: b.id
     })
@@ -118,15 +118,15 @@ function A(e) {
     quest: b,
     questContent: g.jn.ACTIVITY_PANEL,
     sourceQuestContent: g.jn.ACTIVITY_PANEL
-  }), U = (null == (t = b.userStatus) ? true : t.enrolledAt) != null, G = (null == (n = b.userStatus) ? true : n.completedAt) != null, B = (0, f.Rf)(b), V = (0, m.DD)({
+  }), U = (null == (t = b.userStatus) ? true : t.enrolledAt) != null, G = (null == (n = b.userStatus) ? true : n.completedAt) != null, B = (0, f.Rf)(b), H = (0, m.DD)({
     quest: b,
     taskDetails: B,
-    location: S.dr.ACTIVITY_PANEL,
+    location: C.dr.ACTIVITY_PANEL,
     questContent: g.jn.ACTIVITY_PANEL,
     sourceQuestContent: g.jn.ACTIVITY_PANEL
-  }), H = (0, d.Rt)(b), F = (0, m.CR)({
+  }), V = (0, d.Rt)(b), F = (0, m.CR)({
     quest: b
-  }), z = H ? F : N.intl.string(N.t.l7E81t);
+  }), z = V ? F : N.intl.string(N.t.l7E81t);
   return (0, r.jsxs)("div", {
     ref: e => {
       c.current = e
@@ -144,7 +144,7 @@ function A(e) {
       className: j.utils,
       children: [U ? (0, r.jsx)(x, {
         quest: b
-      }) : (0, r.jsx)(E.Z, {}), (0, r.jsx)(y.r, {
+      }) : (0, r.jsx)(E.Z, {}), (0, r.jsx)(v.r, {
         quest: b,
         questContent: g.jn.ACTIVITY_PANEL,
         shouldShowDisclosure: (null == (l = b.userStatus) ? true : l.enrolledAt) == null,
@@ -179,22 +179,22 @@ function A(e) {
         children: (0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
           color: "text-default",
-          children: V
+          children: H
         })
       })]
-    }), U && !G && (0, r.jsx)(C.Z, {
+    }), U && !G && (0, r.jsx)(S.Z, {
       autoplay: T,
       className: j.rewardTileWithInstructions,
       quest: b,
       questContent: g.jn.ACTIVITY_PANEL,
-      location: S.dr.ACTIVITY_PANEL,
+      location: C.dr.ACTIVITY_PANEL,
       taskDetails: B,
       sourceQuestContent: g.jn.ACTIVITY_PANEL
     }), (0, r.jsxs)("div", {
       className: j.ctas,
       children: [!U && (0, r.jsxs)(s.hE2, {
         size: "sm",
-        direction: H ? "vertical" : "horizontal",
+        direction: V ? "vertical" : "horizontal",
         fullWidth: true,
         children: [(0, r.jsx)(s.zxk, {
           variant: "secondary",
@@ -205,7 +205,7 @@ function A(e) {
           text: z,
           onClick: R,
           loading: O,
-          icon: b.config.features.includes(S.S7.CLOUD_GAMING_ACTIVITY) ? s.v3n : true
+          icon: b.config.features.includes(C.S7.CLOUD_GAMING_ACTIVITY) ? s.v3n : true
         })]
       }), U && !G && (0, r.jsx)(s.zxk, {
         variant: "primary",

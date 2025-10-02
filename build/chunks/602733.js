@@ -1,6 +1,5 @@
-/** Chunk was on 88614 **/
-/** chunk id: 602733, original params: e,t,r (module,exports,require) **/
-"use strict";
+/** Chunk was on 93886 **/
+/** chunk id: 602733, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   k: () => s,
   n: () => c
@@ -12,14 +11,14 @@ var Chunk647438 = require("./647438.js"),
   Chunk607550 = require("./607550.js");
 
 function s(e) {
-  let t = (0, a.S)({
+  let t = (0, l.S)({
       location: "UserProfileModalV2"
     }),
-    [r, s, c] = (0, i.Wu)([o.Z], () => null != e && t ? [o.Z.getWishlist(e), o.Z.isFetching(e), o.Z.getError(e)] : [null, false, true]);
-  return (0, n.useEffect)(() => {
-    null != e && null == r && !s && t && l.Z.fetchWishlist(e)
-  }, [e, r, s, t]), {
-    wishlist: r,
+    [n, s, c] = (0, i.Wu)([o.Z], () => null != e && t ? [o.Z.getWishlist(e), o.Z.isFetching(e), o.Z.getError(e)] : [null, false, true]);
+  return (0, r.useEffect)(() => {
+    null != e && null == n && !s && t && a.Z.fetchWishlist(e)
+  }, [e, n, s, t]), {
+    wishlist: n,
     isFetching: s,
     error: c
   }

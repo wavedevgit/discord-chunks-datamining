@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 512847, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => H
+  Z: () => V
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -37,7 +37,7 @@ function x(e, t, n, r) {
       l = new a.Fh(e, () => {
         let e = t(),
           l = n(i, e);
-        null == l || y.Z.isSoundDisabled(l) || (0, f.GN)(l, null != r ? r : .4), i = e
+        null == l || v.Z.isSoundDisabled(l) || (0, f.GN)(l, null != r ? r : .4), i = e
       });
     return l.attach("useSound"), () => l.detach()
   })
@@ -59,7 +59,7 @@ function A() {
       shouldSkipMuteUnmuteSound: a
     } = t;
     if (e.selfDeaf !== i) return i ? "deafen" : "undeafen";
-    if (l && (n || e.audioPermissionReady) && e.selfMute !== r) return a ? void v.Z.notifyMuteUnmuteSoundWasSkipped() : r ? "mute" : "unmute"
+    if (l && (n || e.audioPermissionReady) && e.selfMute !== r) return a ? void y.Z.notifyMuteUnmuteSoundWasSkipped() : r ? "mute" : "unmute"
   }), null
 }
 
@@ -118,8 +118,8 @@ function w() {
 function L() {
   return x([Chunk606304.Z], () => Chunk606304.Z.isCurrentUserSpeaking(), (e, t) => {
     if (e !== t) {
-      let e = v.Z.isSelfMute();
-      if (v.Z.getMode() === P.pM4.PUSH_TO_TALK && !e) return t ? "ptt_start" : "ptt_stop"
+      let e = y.Z.isSelfMute();
+      if (y.Z.getMode() === P.pM4.PUSH_TO_TALK && !e) return t ? "ptt_start" : "ptt_stop"
     }
   }), null
 }
@@ -135,8 +135,8 @@ function R() {
 function D() {
   return x([Chunk131951.Z], () => Chunk131951.Z.isSelfMutedTemporarily(), (e, t) => {
     if (e !== t) {
-      let e = v.Z.isSelfMute();
-      if (v.Z.getMode() === P.pM4.VOICE_ACTIVITY && !e) return t ? "ptt_stop" : "ptt_start"
+      let e = y.Z.isSelfMute();
+      if (y.Z.getMode() === P.pM4.VOICE_ACTIVITY && !e) return t ? "ptt_stop" : "ptt_start"
     }
   }), null
 }
@@ -144,8 +144,8 @@ function D() {
 function k() {
   return x([Chunk606304.Z], () => Chunk606304.Z.isCurrentUserPrioritySpeaker(), (e, t) => {
     if (e !== t) {
-      let e = v.Z.isSelfMute();
-      if (v.Z.getMode() === P.pM4.VOICE_ACTIVITY && !e) return t ? "ptt_start" : "ptt_stop"
+      let e = y.Z.isSelfMute();
+      if (y.Z.getMode() === P.pM4.VOICE_ACTIVITY && !e) return t ? "ptt_start" : "ptt_stop"
     }
   }), null
 }
@@ -268,7 +268,7 @@ function B() {
   }), null
 }
 
-function V() {
+function H() {
   return x([Chunk106301.Z, Chunk944486.Z], () => ({
     hangStatus: Chunk106301.Z.getCurrentHangStatus(),
     customHangStatus: Chunk106301.Z.getCustomHangStatus(),
@@ -285,8 +285,8 @@ function V() {
   }, .15), null
 }
 
-function H() {
+function V() {
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-    children: [(0, Chunk951288.jsx)(A, {}), (0, Chunk951288.jsx)(Z, {}), (0, Chunk951288.jsx)(w, {}), (0, Chunk951288.jsx)(L, {}), (0, Chunk951288.jsx)(D, {}), (0, Chunk951288.jsx)(M, {}), (0, Chunk951288.jsx)(G, {}), (0, Chunk951288.jsx)(U, {}), (0, Chunk951288.jsx)(B, {}), (0, Chunk951288.jsx)(R, {}), (0, Chunk951288.jsx)(k, {}), (0, Chunk951288.jsx)(V, {})]
+    children: [(0, Chunk951288.jsx)(A, {}), (0, Chunk951288.jsx)(Z, {}), (0, Chunk951288.jsx)(w, {}), (0, Chunk951288.jsx)(L, {}), (0, Chunk951288.jsx)(D, {}), (0, Chunk951288.jsx)(M, {}), (0, Chunk951288.jsx)(G, {}), (0, Chunk951288.jsx)(U, {}), (0, Chunk951288.jsx)(B, {}), (0, Chunk951288.jsx)(R, {}), (0, Chunk951288.jsx)(k, {}), (0, Chunk951288.jsx)(H, {})]
   })
 }

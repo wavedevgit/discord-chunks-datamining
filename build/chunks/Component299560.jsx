@@ -12,10 +12,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk812206 = require("./812206.js"),
   Chunk823379 = require("./823379.js"),
   Chunk804919 = require("./804919.js"),
-  Chunk350327 = require("./350327.js"),
   Chunk931847 = require("./931847.js"),
   Chunk836197 = require("./836197.js"),
   Chunk86419 = require("./86419.js"),
+  Chunk50130 = require("./50130.js"),
   Chunk872269 = require("./872269.js"),
   Chunk248554 = require("./248554.jsx"),
   Chunk70399 = require("./70399.jsx"),
@@ -70,73 +70,74 @@ let x = {
 };
 
 function P(e) {
-  var t;
-  let n, {
-      widgetType: l,
-      onAddWidget: c,
-      size: d = "default",
-      loading: j = false,
-      trackUserProfileEditAction: P
+  let t, {
+      widgetType: n,
+      onAddWidget: l,
+      size: c = "default",
+      loading: d = false,
+      trackUserProfileEditAction: j
     } = e,
     {
-      placeholder: S,
-      getAriaLabel: w,
+      placeholder: P,
+      getAriaLabel: S,
       icon: I
-    } = x[l],
-    N = "small" === d,
-    k = null == (t = (0, f.uV)().data) ? true : t.map(e => e.application_id),
-    C = i.useMemo(() => {
-      switch (l) {
+    } = x[n],
+    w = "small" === c,
+    {
+      config: E
+    } = (0, h.G)(),
+    T = i.useMemo(() => {
+      switch (n) {
         case s.l.CURRENT_GAMES:
         case s.l.FAVORITE_GAMES:
         case s.l.PLAYED_GAMES:
         case s.l.WANT_TO_PLAY_GAMES:
-          return new h.zy({
-            type: l,
+          return new g.zy({
+            type: n,
             games: []
           });
         case s.l.APPLICATION:
-          let e = null == k ? true : k[0];
+          let e = null == E ? true : E.application_id;
           if (null == e) return null;
-          return new g.q({
-            type: l,
+          return new f.q({
+            type: n,
             applicationId: e
           })
       }
-    }, [l, k]),
-    E = i.useCallback(() => {
-      j || null == C || ((0, p.qH)(l, C), P({
+    }, [n, null == E ? true : E.application_id]),
+    A = i.useCallback(() => {
+      d || null == T || ((0, p.qH)(n, T), j({
         action: "WIDGET_ADDED",
-        widgetEdited: l
-      }), (0, m.L$)(y.qb.WIDGET_ADDED), null == c || c())
-    }, [j, l, C, P, c]);
-  return (null != C && null != I && (n = I(C)), null == C) ? null : (0, r.jsxs)("div", {
+        widgetEdited: n
+      }), (0, m.L$)(b.qb.WIDGET_ADDED), null == l || l())
+    }, [d, n, T, j, l]);
+  return (null != T && null != I && (t = I(T)), null == T) ? null : (0, r.jsxs)("div", {
     className: O.addButtonContainer,
     children: [(0, r.jsxs)(o.P3F, {
-      className: a()(O.addButtonContent, N && O.sizeSmall, j && O.loading),
-      onClick: E,
-      "aria-label": w(C),
-      "aria-busy": j,
+      className: a()(O.addButtonContent, w && O.sizeSmall, d && O.loading),
+      onClick: A,
+      "aria-label": S(T),
+      "aria-busy": d,
       children: [(() => {
-        if (null == C) return null;
-        let e = S(C);
+        if (null == T) return null;
+        let e = P(T);
         switch (e.variant) {
           case "details":
             return (0, r.jsx)(v.i, {
               className: O.placeholderPadding,
               applicationId: e.applicationId,
-              size: d
+              size: c
             });
           case "grid":
             return (0, r.jsx)(v.c, {
               className: O.placeholderPadding,
               applicationIds: e.applicationIds,
-              size: d
+              size: c
             });
           case "application-widget":
-            return (0, r.jsx)(b.Z, {
+            return (0, r.jsx)(y.Z, {
               applicationId: e.applicationId,
-              size: d
+              size: c
             });
           default:
             return (0, u.vE)(e)
@@ -152,9 +153,9 @@ function P(e) {
           children: [(0, r.jsx)(o.Text, {
             variant: "text-md/medium",
             color: "header-primary",
-            children: (0, p.mR)(C)
-          }), null != n ? (0, r.jsx)("img", {
-            src: n,
+            children: (0, p.mR)(T)
+          }), null != t ? (0, r.jsx)("img", {
+            src: t,
             alt: "",
             width: 16,
             height: 16,
@@ -163,11 +164,11 @@ function P(e) {
         })]
       })]
     }), (() => {
-      if (null == C) return null;
-      let e = S(C);
-      return "application-widget" === e.variant ? (0, r.jsx)(b.T, {
+      if (null == T) return null;
+      let e = P(T);
+      return "application-widget" === e.variant ? (0, r.jsx)(y.T, {
         applicationId: e.applicationId,
-        size: d
+        size: c
       }) : null
     })()]
   })

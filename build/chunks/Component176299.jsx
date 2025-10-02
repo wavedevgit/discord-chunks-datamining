@@ -150,13 +150,13 @@ let eL = (0, Chunk608787.Un)({
     name: "ChannelsAndRolesPage",
     renderLoader: eR
   }),
-  eV = (0, Chunk608787.Un)({
+  eH = (0, Chunk608787.Un)({
     createPromise: () => Promise.all([require.e("8271"), require.e("15851"), require.e("51453"), require.e("845"), require.e("37709")]).then(require.bind(require, 599263)),
     webpackId: 599263,
     name: "GuildOnboardingPage",
     renderLoader: eR
   }),
-  eH = (0, Chunk608787.Un)({
+  eV = (0, Chunk608787.Un)({
     createPromise: () => Promise.all([require.e("48776"), require.e("44799")]).then(require.bind(require, 393357)),
     webpackId: 393357,
     name: "GuildPowerupsPage",
@@ -225,7 +225,7 @@ let eL = (0, Chunk608787.Un)({
           selectedSection: ex.l7.BROWSE
         });
       case ej.oC.GUILD_ONBOARDING:
-        return (0, r.jsx)(eV, {
+        return (0, r.jsx)(eH, {
           guildId: l
         });
       case ej.oC.CUSTOMIZE_COMMUNITY:
@@ -239,7 +239,7 @@ let eL = (0, Chunk608787.Un)({
         });
       case ej.oC.GUILD_BOOSTS:
         var g;
-        return (0, r.jsx)(eH, {
+        return (0, r.jsx)(eV, {
           guildId: l,
           powerupListingId: null != (g = n.get("powerupId")) ? g : n.get("powerupSkuId")
         });
@@ -248,7 +248,7 @@ let eL = (0, Chunk608787.Un)({
           guildId: l
         });
       case ej.oC.REPORT_TO_MOD:
-        return (0, r.jsx)(S.Z, {});
+        return (0, r.jsx)(C.Z, {});
       default:
         (0, e_.vE)(a)
     }
@@ -258,12 +258,12 @@ let eL = (0, Chunk608787.Un)({
     });
     if ((null == i ? true : i.type) === eN.d4z.GUILD_STORE) {
       let e = eO.default.cast(t.params.messageId);
-      return (0, r.jsx)(ev.Z, {
+      return (0, r.jsx)(ey.Z, {
         channel: i,
         inputSkuId: e
       }, i.id)
     }
-    return (0, r.jsx)(S.Z, {})
+    return (0, r.jsx)(C.Z, {})
   },
   eW = Chunk647438.memo(function() {
     let {
@@ -310,7 +310,7 @@ let eL = (0, Chunk608787.Un)({
     let {
       match: t
     } = e;
-    return null != t.params.guildId ? (0, r.jsx)(H.Z, {
+    return null != t.params.guildId ? (0, r.jsx)(V.Z, {
       guildId: t.params.guildId,
       inviteCode: t.params.inviteCode
     }) : null
@@ -337,7 +337,7 @@ function e8() {
     withTopBorder: true
   })
 }
-let e4 = e => (0, r.jsx)(y.Z, ew({}, e)),
+let e4 = e => (0, r.jsx)(v.Z, ew({}, e)),
   e3 = () => (0, Chunk951288.jsx)(Chunk270759.Z, {}),
   e5 = () => (0, Chunk951288.jsx)(Chunk745052.Z, {}),
   e2 = () => (0, Chunk951288.jsx)(Chunk179742.Z, {}),
@@ -447,14 +447,14 @@ function e9(e) {
   }), b.R6.trackExposure({
     location: u
   });
-  let g = (0, p.e7)([C.Z], () => C.Z.isFullscreenInContext()),
+  let g = (0, p.e7)([S.Z], () => S.Z.isFullscreenInContext()),
     m = (0, A.T)("ChannelSidebar"),
     E = (0, j.useAppSidebarState)(e => !e.isOpen) && m;
   i.useLayoutEffect(() => {
     if (m) {
       var e;
-      let t = parseInt(null != (e = f.K.get(eC.nT)) ? e : "");
-      Number.isNaN(t) && (t = eC.qO), t = Math.min(Math.max(t, eC.li), eC.zx), !m && t <= eC.p8 && (t = eC.qO), e7(t);
+      let t = parseInt(null != (e = f.K.get(eS.nT)) ? e : "");
+      Number.isNaN(t) && (t = eS.qO), t = Math.min(Math.max(t, eS.li), eS.zx), !m && t <= eS.p8 && (t = eS.qO), e7(t);
       let n = e => {
         e.metaKey && "b" === e.key && j.useAppSidebarState.setState(e => ({
           isOpen: !e.isOpen
@@ -465,40 +465,40 @@ function e9(e) {
       }
     }
   }, [m]), i.useLayoutEffect(() => {
-    if (E) e7(eC.p8);
+    if (E) e7(eS.p8);
     else {
       var e;
-      let t = parseInt(null != (e = f.K.get(eC.nT)) ? e : "");
-      Number.isNaN(t) && (t = eC.qO), e7(t)
+      let t = parseInt(null != (e = f.K.get(eS.nT)) ? e : "");
+      Number.isNaN(t) && (t = eS.qO), e7(t)
     }
   }, [E]);
-  let v = i.useRef(null),
-    y = i.useCallback((e, t) => {
+  let y = i.useRef(null),
+    v = i.useCallback((e, t) => {
       var n;
       e7(e);
-      let r = t < eC.li / 3;
-      t <= eC.li ? document.body.classList.add(eZ.draggingMin) : document.body.classList.remove(eZ.draggingMin), t >= eC.zx ? document.body.classList.add(eZ.draggingMax) : document.body.classList.remove(eZ.draggingMax);
+      let r = t < eS.li / 3;
+      t <= eS.li ? document.body.classList.add(eZ.draggingMin) : document.body.classList.remove(eZ.draggingMin), t >= eS.zx ? document.body.classList.add(eZ.draggingMax) : document.body.classList.remove(eZ.draggingMax);
       let i = t - e;
-      null == (n = v.current) || n.style.setProperty("--custom-overdrag", "".concat(1 + Math.min(Math.abs(i / eC.p8), .25))), m && (j.useAppSidebarState.setState({
+      null == (n = y.current) || n.style.setProperty("--custom-overdrag", "".concat(1 + Math.min(Math.abs(i / eS.p8), .25))), m && (j.useAppSidebarState.setState({
         isOpen: !r
-      }), r && e7(eC.p8))
+      }), r && e7(eS.p8))
     }, [m]),
     I = i.useCallback(() => {
       document.body.classList.add(eZ.dragging)
     }, []),
-    S = i.useCallback(e => {
+    C = i.useCallback(e => {
       var t;
-      document.body.classList.remove(eZ.dragging), document.body.classList.remove(eZ.draggingMin), document.body.classList.remove(eZ.draggingMax), document.body.classList.remove(eZ.collapsing), null == (t = v.current) || t.style.setProperty("--custom-overdrag", "0px"), f.K.set(eC.nT, e), eb.default.track(eN.rMx.CHANNEL_SIDEBAR_RESIZED, {
+      document.body.classList.remove(eZ.dragging), document.body.classList.remove(eZ.draggingMin), document.body.classList.remove(eZ.draggingMax), document.body.classList.remove(eZ.collapsing), null == (t = y.current) || t.style.setProperty("--custom-overdrag", "0px"), f.K.set(eS.nT, e), eb.default.track(eN.rMx.CHANNEL_SIDEBAR_RESIZED, {
         width: e
       })
     }, []),
     T = (0, O.Z)({
-      minDimension: eC.li,
-      maxDimension: eC.zx,
-      resizableDomNodeRef: v,
-      onElementResize: y,
+      minDimension: eS.li,
+      maxDimension: eS.zx,
+      resizableDomNodeRef: y,
+      onElementResize: v,
       onElementResizeStart: I,
-      onElementResizeEnd: S,
+      onElementResizeEnd: C,
       orientation: O.y.HORIZONTAL_RIGHT,
       throttleDuration: 0
     }),
@@ -508,7 +508,7 @@ function e9(e) {
       }))
     }, []);
   if (i.useLayoutEffect(() => {
-      E && e7(eC.p8)
+      E && e7(eS.p8)
     }, [E]), l) return null;
   let P = {
     className: a()(eZ.sidebarList, {
@@ -520,14 +520,14 @@ function e9(e) {
     children: e => {
       var t, i;
       return (0, r.jsxs)("div", {
-        ref: v,
+        ref: y,
         "data-collapsed": E,
         className: a()(eZ.sidebar, e, {
           [eZ.fullWidth]: d.tq,
           [eZ.hidden]: g,
           [eZ.channelListHidden]: o
         }),
-        children: [s && !c && (0, r.jsx)(V.Z, {
+        children: [s && !c && (0, r.jsx)(H.Z, {
           className: eZ.guilds,
           themeOverride: n
         }), !o && (0, r.jsxs)(r.Fragment, {
@@ -594,8 +594,8 @@ function te() {
     _ = Chunk647438.useCallback(() => Chunk285865.Z.openSidebar(), []),
     O = (0, Chunk540059.T)("AppView"),
     E = (0, Chunk267161.useAppSidebarState)(e => !e.isOpen),
-    y = (0, Chunk442837.e7)([Chunk358221.Z], () => Chunk358221.Z.isFullscreenInContext()),
-    S = (0, Chunk442837.e7)([Chunk591472.Z], () => Chunk591472.Z.isFrameActive());
+    v = (0, Chunk442837.e7)([Chunk358221.Z], () => Chunk358221.Z.isFullscreenInContext()),
+    C = (0, Chunk442837.e7)([Chunk591472.Z], () => Chunk591472.Z.isFrameActive());
   return (0, Chunk951288.jsx)("div", {
     className: Chunk861218.container,
     children: (0, Chunk951288.jsx)(Chunk372900.Z.Provider, {

@@ -55,7 +55,7 @@ class j extends Chunk647438.PureComponent {
       connected: l,
       soundpack: a
     } = this.props, o = l && n && !r && !i;
-    e.soundpack !== a && (this._connectedSound = this.createSound()), e.connected !== l || o ? (l && null != this.videoRef && u.K.get(C.wli) && this._connectedSound.play(), this.setState({
+    e.soundpack !== a && (this._connectedSound = this.createSound()), e.connected !== l || o ? (l && null != this.videoRef && u.K.get(S.wli) && this._connectedSound.play(), this.setState({
       problems: false,
       hide: l
     })) : t.hide !== r ? (r ? this.clearProblemsTimeout() : this.setProblemsTimeout(), this.setState({
@@ -138,12 +138,12 @@ class j extends Chunk647438.PureComponent {
   }
   constructor(e) {
     super(e), N(this, "videoRef", null), N(this, "_noProblemsTimeout", null), N(this, "_problemsTimeout", null), N(this, "_connectedSound", this.createSound()), N(this, "_loadingText", function() {
-      let e = [S.intl.string(S.t.Ex79Ky), S.intl.string(S.t["+v5zsb"]), S.intl.string(S.t["RLx6+f"]), S.intl.string(S.t.Q1PZkJ), S.intl.string(S.t.x7sfVl), S.intl.format(S.t.PHuQsb, {
+      let e = [C.intl.string(C.t.Ex79Ky), C.intl.string(C.t["+v5zsb"]), C.intl.string(C.t["RLx6+f"]), C.intl.string(C.t.Q1PZkJ), C.intl.string(C.t.x7sfVl), C.intl.format(C.t.PHuQsb, {
         tabHook: (e, t) => (0, r.jsx)(d.M2$, {
           shortcut: "tab",
           className: T.keybind
         }, t)
-      }), S.intl.string(S.t.UorX4e), S.intl.string(S.t["il/GZm"]), S.intl.string(S.t.HKBJv7), S.intl.format(S.t["FVVp7+"], {
+      }), C.intl.string(C.t.UorX4e), C.intl.string(C.t["il/GZm"]), C.intl.string(C.t.HKBJv7), C.intl.format(C.t["FVVp7+"], {
         F6Hook: (e, t) => (0, r.jsx)(d.M2$, {
           shortcut: "f6",
           className: T.keybind
@@ -152,24 +152,24 @@ class j extends Chunk647438.PureComponent {
           shortcut: "tab",
           className: T.keybind
         }, t)
-      }), S.intl.string(S.t["7Y1hFB"]), S.intl.string(S.t["UcCW7+"]), S.intl.string(S.t.E5GhfX), S.intl.string(S.t.bANqo6), S.intl.string(S.t.yOEVDg), S.intl.string(S.t["u0Ra/P"]), S.intl.string(S.t.un4cQ0), S.intl.string(S.t["2cyYx8"]), S.intl.string(S.t.KCmze3), S.intl.string(S.t.I98MEB), S.intl.format(S.t.c0YCIy, {}), S.intl.string(S.t.z8AvIC), S.intl.string(S.t.IjX3Pz), S.intl.string(S.t.lg3CkZ), S.intl.string(S.t["4GaLhY"]), S.intl.string(S.t.qHKbU1), S.intl.string(S.t.mJxKDw), S.intl.string(S.t.iiQBXF), S.intl.string(S.t.YPD46e), S.intl.string(S.t.O8BpgY), S.intl.string(S.t.xzFwfn), S.intl.string(S.t["4G3fsb"]), S.intl.string(S.t["/jPyKC"]), S.intl.string(S.t["8x7D5e"]), S.intl.string(S.t.G6Q8Hx), S.intl.string(S.t["9Cx+xM"]), S.intl.string(S.t.WsZ8dX), S.intl.string(S.t.btoe7O), S.intl.string(S.t.E6Y0j4), S.intl.string(S.t["7KZ819"]), S.intl.string(S.t.hm7OKi), S.intl.string(S.t.H535i4), S.intl.string(S.t["08WJUV"]), S.intl.string(S.t.hhtfys), S.intl.string(S.t.on980d), S.intl.string(S.t.AL6c09), S.intl.string(S.t.iLTeFx), S.intl.string(S.t.b3vSu7), S.intl.string(S.t["f8ao5+"]), S.intl.format(S.t["1v1h8v"], {
+      }), C.intl.string(C.t["7Y1hFB"]), C.intl.string(C.t["UcCW7+"]), C.intl.string(C.t.E5GhfX), C.intl.string(C.t.bANqo6), C.intl.string(C.t.yOEVDg), C.intl.string(C.t["u0Ra/P"]), C.intl.string(C.t.un4cQ0), C.intl.string(C.t["2cyYx8"]), C.intl.string(C.t.KCmze3), C.intl.string(C.t.I98MEB), C.intl.format(C.t.c0YCIy, {}), C.intl.string(C.t.z8AvIC), C.intl.string(C.t.IjX3Pz), C.intl.string(C.t.lg3CkZ), C.intl.string(C.t["4GaLhY"]), C.intl.string(C.t.qHKbU1), C.intl.string(C.t.mJxKDw), C.intl.string(C.t.iiQBXF), C.intl.string(C.t.YPD46e), C.intl.string(C.t.O8BpgY), C.intl.string(C.t.xzFwfn), C.intl.string(C.t["4G3fsb"]), C.intl.string(C.t["/jPyKC"]), C.intl.string(C.t["8x7D5e"]), C.intl.string(C.t.G6Q8Hx), C.intl.string(C.t["9Cx+xM"]), C.intl.string(C.t.WsZ8dX), C.intl.string(C.t.btoe7O), C.intl.string(C.t.E6Y0j4), C.intl.string(C.t["7KZ819"]), C.intl.string(C.t.hm7OKi), C.intl.string(C.t.H535i4), C.intl.string(C.t["08WJUV"]), C.intl.string(C.t.hhtfys), C.intl.string(C.t.on980d), C.intl.string(C.t.AL6c09), C.intl.string(C.t.iLTeFx), C.intl.string(C.t.b3vSu7), C.intl.string(C.t["f8ao5+"]), C.intl.format(C.t["1v1h8v"], {
         asterisks: "**"
-      }), S.intl.format(S.t.MUlAVV, {
+      }), C.intl.format(C.t.MUlAVV, {
         quickSwitcherHook: (e, t) => (0, r.jsx)(d.M2$, {
           shortcut: "mod+k",
           className: T.keybind
         }, t)
-      }), S.intl.format(S.t.aes5VF, {
+      }), C.intl.format(C.t.aes5VF, {
         markUnreadHook: (e, t) => (0, r.jsx)(d.M2$, {
           shortcut: "alt+click",
           className: T.keybind
         }, t)
-      }), S.intl.format(S.t.md9Svr, {
+      }), C.intl.format(C.t.md9Svr, {
         markServerUnreadHook: (e, t) => (0, r.jsx)(d.M2$, {
           shortcut: "shift+esc",
           className: T.keybind
         }, t)
-      }), S.intl.format(S.t["X0Tu+v"], {
+      }), C.intl.format(C.t["X0Tu+v"], {
         navigateUnreadHook: (e, t) => (0, r.jsx)(d.M2$, {
           shortcut: "shift+alt+up",
           className: T.keybind
@@ -178,35 +178,35 @@ class j extends Chunk647438.PureComponent {
           shortcut: "down",
           className: T.keybind
         }, t)
-      }), S.intl.format(S.t.AkoeIS, {
+      }), C.intl.format(C.t.AkoeIS, {
         keyboardShortcutsHook: (e, t) => (0, r.jsx)(d.M2$, {
           shortcut: "mod+/",
           className: T.keybind
         }, t)
-      }), S.intl.format(S.t.P9sfAA, {
+      }), C.intl.format(C.t.P9sfAA, {
         messageNewlineHook: (e, t) => (0, r.jsx)(d.M2$, {
           shortcut: "shift+return",
           className: T.keybind
         }, t)
-      }), S.intl.format(S.t["3Ox33d"], {
+      }), C.intl.format(C.t["3Ox33d"], {
         shiftHook: (e, t) => (0, r.jsx)(d.M2$, {
           shortcut: "shift",
           className: T.keybind
         }, t)
-      }), S.intl.format(S.t.enCV6e, {
+      }), C.intl.format(C.t.enCV6e, {
         upHook: (e, t) => (0, r.jsx)(d.M2$, {
           shortcut: "up",
           className: T.keybind
         }, t)
       })];
-      return _.default.locale.startsWith("en-") && e.push(S.intl.string(S.t.dQ9Wqq)), e[s().random(e.length - 1)]
+      return _.default.locale.startsWith("en-") && e.push(C.intl.string(C.t.dQ9Wqq)), e[s().random(e.length - 1)]
     }()), N(this, "_eventLoadingText", function() {
       let e = g.Z.getLoadingTips();
       if (null != e && e.length > 0) return e[s().random(e.length - 1)]
     }()), N(this, "handleReady", () => {
       this.setState({
         ready: true
-      }), (0, v.isDesktop)() && (y.ZP.send("UPDATED_QUOTES", ["Hold Tight — Loading Discord"]), y.ZP.send("UPDATE_OPEN_ON_STARTUP"))
+      }), (0, y.isDesktop)() && (v.ZP.send("UPDATED_QUOTES", ["Hold Tight — Loading Discord"]), v.ZP.send("UPDATE_OPEN_ON_STARTUP"))
     }), N(this, "setVideoRef", e => {
       this.videoRef = e
     }), N(this, "setProblemsTimeout", () => {

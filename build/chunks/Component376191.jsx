@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 376191, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => C
+  Z: () => S
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -23,24 +23,24 @@ var Chunk442837 = require("./442837.js"),
   Chunk81471 = require("./81471.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk418337 = require("./418337.js");
-let y = e => {
+let v = e => {
     let {
       userId: t
     } = e, n = (0, _.O)(t);
     return null == n || 0 === n.length ? (0, r.jsx)(l.Text, {
-      className: v.mutualGuilds,
+      className: y.mutualGuilds,
       variant: "text-sm/normal",
       color: "text-muted",
       children: E.intl.string(E.t.jpY0X1)
     }) : (0, r.jsxs)("div", {
-      className: v.mutualGuildsContainer,
+      className: y.mutualGuildsContainer,
       children: [(0, r.jsx)(f.Z, {
         guilds: n,
         maxGuilds: 3,
         size: c.Vj.Sizes.SMOL,
         hideOverflowCount: true
       }), (0, r.jsx)(l.Text, {
-        className: v.mutualGuilds,
+        className: y.mutualGuilds,
         variant: "text-sm/normal",
         color: "text-muted",
         children: E.intl.format(E.t.eE3oen, {
@@ -51,13 +51,13 @@ let y = e => {
   },
   I = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk481060.qEK;
 
-function C(e) {
+function S(e) {
   var t;
   let {
     channel: n,
     otherUser: c,
     active: f
-  } = e, m = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), _ = (0, i.e7)([h.Z], () => null == c ? null : h.Z.getNickname(c.id)), C = !m && f, S = (0, b.c)(n), {
+  } = e, m = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), _ = (0, i.e7)([h.Z], () => null == c ? null : h.Z.getNickname(c.id)), S = !m && f, C = (0, b.c)(n), {
     avatarDecorationSrc: T
   } = (0, d.Z)({
     user: c,
@@ -66,34 +66,34 @@ function C(e) {
   });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(I, {
-      className: v.avatar,
-      src: (0, p.x)(n, 40, C),
+      className: y.avatar,
+      src: (0, p.x)(n, 40, S),
       avatarDecoration: T,
       size: l.EFr.SIZE_40,
       "aria-label": null != (t = null == c ? true : c.username) ? t : E.intl.string(E.t["30mdIy"])
     }), (0, r.jsxs)("div", {
-      className: v.userPreview,
+      className: y.userPreview,
       children: [(0, r.jsxs)("div", {
-        className: v.userContainerWithPreview,
+        className: y.userContainerWithPreview,
         children: [(0, r.jsx)(a.Z, {
           nick: _,
           user: c,
           showAccountIdentifier: true,
-          className: v.tagContainer,
-          usernameClass: v.username,
-          discriminatorClass: null != g.ZP.getGlobalName(c) ? v.globalName : v.discriminator
+          className: y.tagContainer,
+          usernameClass: y.username,
+          discriminatorClass: null != g.ZP.getGlobalName(c) ? y.globalName : y.discriminator
         }), (0, r.jsx)(l.Text, {
-          className: v.timestampWithPreview,
+          className: y.timestampWithPreview,
           color: "text-muted",
           variant: "text-xs/normal",
-          children: S
+          children: C
         })]
       }), (0, r.jsx)(s.Z, {
         hoverText: (0, r.jsx)(O.Z, {
           channel: n
         }),
         forceHover: f,
-        children: (0, r.jsx)(y, {
+        children: (0, r.jsx)(v, {
           userId: c.id
         })
       })]

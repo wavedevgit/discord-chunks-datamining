@@ -136,9 +136,9 @@ let L = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
     bodyCellClassName: Chunk402723.textCell,
     render(e) {
       let t;
-      return t = e.isRunning ? P.intl.string(P.t.Md326u) : e.isNew ? P.intl.string(P.t["+F0Tho"]) : 0 !== e.lastPlayed ? (0, i.jsx)(v.ZP, {
+      return t = e.isRunning ? P.intl.string(P.t.Md326u) : e.isNew ? P.intl.string(P.t["+F0Tho"]) : 0 !== e.lastPlayed ? (0, i.jsx)(y.ZP, {
         end: e.lastPlayed,
-        location: v.ZP.Locations.GAME_LIBRARY_LAST_PLAYED
+        location: y.ZP.Locations.GAME_LIBRARY_LAST_PLAYED
       }) : P.intl.string(P.t.EoWLrq), (0, i.jsx)(_.Z, {
         align: _.Z.Align.CENTER,
         className: o()({
@@ -174,7 +174,7 @@ let L = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
             }),
             libraryApplication: e.libraryApplication
           })]
-        }), (0, S.Je)(e.libraryApplication) ? (0, i.jsx)(b.Z, {
+        }), (0, C.Je)(e.libraryApplication) ? (0, i.jsx)(b.Z, {
           analyticsListSort: (r = t.sortKey, a = t.sortDirection, "".concat(D[r], " ").concat(a === j.sHY.ASCENDING ? "ASC" : "DESC")),
           analyticsListIndex: n,
           source: j.Sbl.APPLICATION_LIBRARY,
@@ -427,16 +427,16 @@ class G extends(r = Chunk647438.PureComponent) {
 }
 
 function B(e) {
-  let t = l.useContext(C.AnalyticsContext),
+  let t = l.useContext(S.AnalyticsContext),
     n = (0, s.TH)(),
     {
       applicationViewItems: r,
       filterQuery: a,
       fetched: o
-    } = (0, c.cj)([y.Z], () => ({
-      applicationViewItems: y.Z.sortedFilteredLibraryApplicationViewItems,
-      filterQuery: y.Z.applicationFilterQuery,
-      fetched: y.Z.hasFetchedApplications
+    } = (0, c.cj)([v.Z], () => ({
+      applicationViewItems: v.Z.sortedFilteredLibraryApplicationViewItems,
+      filterQuery: v.Z.applicationFilterQuery,
+      fetched: v.Z.hasFetchedApplications
     })),
     {
       sortKey: u,

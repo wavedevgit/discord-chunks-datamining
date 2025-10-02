@@ -1,7 +1,7 @@
-/** Chunk was on 44559 **/
+/** Chunk was on 26146 **/
 /** chunk id: 157759, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => h
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,16 +17,16 @@ var Chunk951288 = require("./951288.js"),
   Chunk944486 = require("./944486.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let b = e => {
+let h = e => {
   let {
     application: t,
     reportId: n
-  } = e, [b, h] = i.useState(false), [x, v] = i.useState(false), j = (0, l.e7)([p.Z, u.Z], () => {
+  } = e, [h, b] = i.useState(false), [x, v] = i.useState(false), j = (0, l.e7)([p.Z, u.Z], () => {
     var e;
     return null == (e = u.Z.getChannel(p.Z.getChannelId())) ? true : e.guild_id
   }), [y, O] = i.useState(null);
   i.useEffect(() => {
-    null != y && (h(true), v(true))
+    null != y && (b(true), v(true))
   }, [y]), i.useEffect(() => {
     if (null == j) return;
     let e = false;
@@ -64,7 +64,7 @@ let b = e => {
         r = null == t.bot || m.Z.canManageUser(g.Plq.MANAGE_GUILD, t.bot.id, e);
       return n && r
     });
-  return null != t && null != j && b && I ? (0, r.jsx)(d.JZ, {
+  return null != t && null != j && h && I ? (0, r.jsx)(d.JZ, {
     title: f.intl.string(f.t["WV/CsL"]),
     description: f.intl.string(f.t["FlcC+/"]),
     buttonText: x ? f.intl.string(f.t.aCJlq6) : f.intl.string(f.t["6I1F3t"]),

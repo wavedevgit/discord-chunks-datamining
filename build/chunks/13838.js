@@ -40,7 +40,7 @@ function x(e) {
     },
     socket: n
   } = e, r = f.Z.getChannel(t);
-  if (null == r || !(0, v.zM)(r, n.application.id, n.authorization.scopes)) throw new E.Z({
+  if (null == r || !(0, y.zM)(r, n.application.id, n.authorization.scopes)) throw new E.Z({
     errorCode: j.lTL.INVALID_CHANNEL
   }, "Invalid channel id: ".concat(t));
   if ((0, s.ft)(r)) throw new E.Z({
@@ -124,7 +124,7 @@ let w = {
             userId: t
           } = e;
           return t
-        }).forEach(e => r((0, v.aE)(a, l.id, e))), o
+        }).forEach(e => r((0, y.aE)(a, l.id, e))), o
       }
     }
   },
@@ -157,7 +157,7 @@ let w = {
             userId: t
           } = e;
           return t
-        }).forEach(e => r((0, v.aE)(a, l.id, e))), o
+        }).forEach(e => r((0, y.aE)(a, l.id, e))), o
       }
     }
   },
@@ -184,7 +184,7 @@ let w = {
         } = e, l = f.Z.getChannel(t);
         if (null == l) return;
         let a = l.getGuildId(),
-          o = Object.values(O.Z.getVoiceStatesForChannel(l.id)).map(e => (0, v.aE)(a, l.id, e));
+          o = Object.values(O.Z.getVoiceStatesForChannel(l.id)).map(e => (0, y.aE)(a, l.id, e));
         return i().differenceWith(o, n, i().isEqual).forEach(e => r(e)), o
       }
     }
@@ -198,7 +198,7 @@ let w = {
         prevState: t,
         dispatch: n
       } = e, r = {
-        state: (0, v.zy)(b.Z.getState()),
+        state: (0, y.zy)(b.Z.getState()),
         hostname: b.Z.getHostname(),
         pings: b.Z.getPings(),
         average_ping: b.Z.getAveragePing(),
@@ -354,7 +354,7 @@ let w = {
         } = e, i = {
           currentGuildMember: h.ZP.getSelfMember(t)
         };
-        return null == i.currentGuildMember || null != n && (0, o.Z)(i, n) || r((0, S.Z)(i.currentGuildMember)), i
+        return null == i.currentGuildMember || null != n && (0, o.Z)(i, n) || r((0, C.Z)(i.currentGuildMember)), i
       }
     }
   },
@@ -379,7 +379,7 @@ let w = {
       let {
         prevState: n,
         dispatch: r
-      } = e, l = p.Z.getStreamerActiveStreamMetadata(), a = (null == l ? true : l.pid) != null ? u.ZP.getGameForPID(l.pid) : null, o = (null == a ? true : a.id) != null ? c.Z.getApplication(a.id) : null, s = null != o ? (0, C.Z)(o) : null, d = null == l ? true : l.sourceName, f = {
+      } = e, l = p.Z.getStreamerActiveStreamMetadata(), a = (null == l ? true : l.pid) != null ? u.ZP.getGameForPID(l.pid) : null, o = (null == a ? true : a.id) != null ? c.Z.getApplication(a.id) : null, s = null != o ? (0, S.Z)(o) : null, d = null == l ? true : l.sourceName, f = {
         active: null != l,
         pid: null != (t = null == l ? true : l.pid) ? t : null,
         application: null != s ? {

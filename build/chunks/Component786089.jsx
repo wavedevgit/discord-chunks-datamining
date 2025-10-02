@@ -33,8 +33,8 @@ let j = (0, Chunk647438.memo)(function(e) {
   let {
     quest: A
   } = e, [Z, w] = (0, i.useState)(false), [L, R] = (0, i.useState)(24), [D, k] = (0, i.useState)(false), M = (0, i.useRef)(null), U = (0, i.useRef)(null), G = (0, i.useRef)(null), B = (0, c.e7)([m.default], () => m.default.getCurrentUser()), {
-    ref: V,
-    height: H = 0
+    ref: H,
+    height: V = 0
   } = (0, p.ZP)(), F = (0, f.ZP)(), z = (0, O.B6)(null == (t = A.userStatus) ? true : t.claimedAt, {
     month: "numeric",
     day: "numeric"
@@ -51,8 +51,8 @@ let j = (0, Chunk647438.memo)(function(e) {
   });
   let $ = (0, u.wj)(F),
     ee = (0, i.useMemo)(() => null != A.config.cosponsorMetadata, [A]),
-    et = (0, i.useMemo)(() => (0, v.fh)(A, v.eC.REWARD), [A]),
-    en = Z ? H + 8 : 0,
+    et = (0, i.useMemo)(() => (0, y.fh)(A, y.eC.REWARD), [A]),
+    en = Z ? V + 8 : 0,
     er = (0, _.mH)(E.jn.TROPHY_CASE_CARD),
     {
       content_position: ei,
@@ -74,7 +74,7 @@ let j = (0, Chunk647438.memo)(function(e) {
       return i
     }(er, ["content_position", "row_index"]),
     eo = () => {
-      w(true), b.default.track(S.rMx.QUEST_HOVER, function(e) {
+      w(true), b.default.track(C.rMx.QUEST_HOVER, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -97,7 +97,7 @@ let j = (0, Chunk647438.memo)(function(e) {
     },
     es = () => w(false),
     ec = e => {
-      k(true), b.default.track(S.rMx.QUEST_ASSET_LOADING_FAILURE, {
+      k(true), b.default.track(C.rMx.QUEST_ASSET_LOADING_FAILURE, {
         source: e,
         asset_id: e,
         quest_id: A.id
@@ -125,7 +125,7 @@ let j = (0, Chunk647438.memo)(function(e) {
           user: B,
           guildId: null
         })
-      }), Y ? (0, r.jsx)(y.Z, {
+      }), Y ? (0, r.jsx)(v.Z, {
         className: N.image
       }) : Q ? (0, r.jsx)(I.Z, {
         className: N.image
@@ -153,7 +153,7 @@ let j = (0, Chunk647438.memo)(function(e) {
         style: {
           transform: "translateY(-".concat(en, "px)")
         },
-        children: (0, r.jsx)(C.ZP, {
+        children: (0, r.jsx)(S.ZP, {
           logotypeClassName: a()(N.logo, {
             [N.logoWithCosponsor]: ee
           }),
@@ -161,7 +161,7 @@ let j = (0, Chunk647438.memo)(function(e) {
           withGameTile: false
         })
       }), (0, r.jsxs)("div", {
-        ref: V,
+        ref: H,
         className: N.details,
         children: [(0, r.jsx)(d.X6q, {
           className: N.title,

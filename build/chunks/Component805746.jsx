@@ -1,4 +1,4 @@
-/** Chunk was on 44559 **/
+/** Chunk was on 26146 **/
 /** chunk id: 805746, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -22,24 +22,24 @@ let p = e => {
   i.useEffect(() => {
     null != f && g(true)
   }, [f]);
-  let b = i.useRef(false);
+  let h = i.useRef(false);
   i.useEffect(() => {
-    b.current || (a.Z.fetch(), b.current = true)
+    h.current || (a.Z.fetch(), h.current = true)
   }, []);
-  let h = (0, l.e7)([o.ZP], () => o.ZP.getSelfEmbeddedActivities()),
+  let b = (0, l.e7)([o.ZP], () => o.ZP.getSelfEmbeddedActivities()),
     x = i.useCallback(() => {
       if (g(false), c.ZP.trackWithMetadata(_.rMx.IAR_DEAUTHORIZE_APP_BUTTON_CLICKED, {
           application_id: t.id,
           report_id: n
         }), null == f) return;
       a.Z.delete(f.id);
-      let e = h.get(t.id);
+      let e = b.get(t.id);
       null != e && s.Z.leaveActivity({
         location: e.location,
         applicationId: t.id,
         showFeedback: false
       })
-    }, [t.id, f, h, n]);
+    }, [t.id, f, b, n]);
   return null == t ? null : (0, r.jsx)(d.JZ, {
     title: m.intl.string(m.t.ygG62N),
     description: m.intl.string(m.t.S51EKi),

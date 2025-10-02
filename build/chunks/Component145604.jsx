@@ -89,20 +89,20 @@ async function et(e) {
     voiceChannelBitrate: m,
     voiceChannelGuildId: b
   } = e, _ = await (0, x.hj)(a.pid), {
-    gameName: v,
-    gameId: y,
+    gameName: y,
+    gameId: v,
     exe: I,
-    distributor: C
-  } = (0, O.G8)(a), S = (0, j.NW)("ChatAutoAnalytics", false), P = d.enabledLegacy || S && d.enabledOOP, Z = T.v.legacyEnabled || S && T.v.oopEnabled, L = d.source;
+    distributor: S
+  } = (0, O.G8)(a), C = (0, j.NW)("ChatAutoAnalytics", false), P = d.enabledLegacy || C && d.enabledOOP, Z = T.v.legacyEnabled || C && T.v.oopEnabled, L = d.source;
   K.default.track(J.rMx.LAUNCH_GAME, {
-    game: v,
-    game_id: y,
+    game: y,
+    game_id: v,
     verified: null != o && (0, O.vp)(I, null == o ? true : o.executables),
     elevated: a.elevated,
     is_launcher: null != (r = null == a ? true : a.isLauncher) && r,
     game_platform: J.M7m.DESKTOP,
     detection_method: s,
-    distributor: C,
+    distributor: S,
     is_overlay_enabled: Z,
     is_overlay_game_enabled: P,
     is_overlay_game_source: L,
@@ -111,7 +111,7 @@ async function et(e) {
     overlay_method: null != (l = N.gl[p]) ? l : __OVERLAY__ ? N.gl[N.gl.Hook] : null,
     activity_status_enabled: w.G6.getSetting(),
     activity_status_shared_guilds: f,
-    current_user_status: H.Z.getStatus(),
+    current_user_status: V.Z.getStatus(),
     game_detection_enabled: (0, E.ik)(a),
     executable_path: I,
     voice_channel_id: h,
@@ -133,10 +133,10 @@ class en extends Chunk647438.PureComponent {
       voiceChannelBitrate: d,
       videoEnabled: f,
       isScreenSharing: g,
-      runningGame: v,
-      runningGamePid: y,
-      selectedChannelId: C,
-      selectedGuildId: S,
+      runningGame: y,
+      runningGamePid: v,
+      selectedChannelId: S,
+      selectedGuildId: C,
       connected: T
     } = this.props;
     if (e.voiceChannelId !== o && null != e.voiceChannelId) {
@@ -184,38 +184,38 @@ class en extends Chunk647438.PureComponent {
         join_voice_id: G.Z.getJoinVoiceId()
       }, (0, p.oG)(c, o), (0, p.kO)(c, o, f)))
     }
-    let j = null != v && null != v.distributor && null != v.sku && null != e.runningGame && e.runningGame.distributor === v.distributor && v.sku === e.runningGame.sku && v.name === e.runningGame.name,
-      x = null != e.runningGame && null != v && e.runningGame.isLauncher !== v.isLauncher;
-    if (e.runningGame !== v && null != v && !v.isLauncher && (!j || x)) {
+    let j = null != y && null != y.distributor && null != y.sku && null != e.runningGame && e.runningGame.distributor === y.distributor && y.sku === e.runningGame.sku && y.name === e.runningGame.name,
+      x = null != e.runningGame && null != y && e.runningGame.isLauncher !== y.isLauncher;
+    if (e.runningGame !== y && null != y && !y.isLauncher && (!j || x)) {
       let {
         gameId: e
-      } = (0, O.G8)(v), a = true !== e ? R.Z.getDetectableGame(e) : null, p = E.ZP.getOverrideForGame(v), f = k.Z.getGuildIds(), h = w.SE.getSetting(), g = f.filter(e => !h.includes(e)).slice(0, 200), m = null;
+      } = (0, O.G8)(y), a = true !== e ? R.Z.getDetectableGame(e) : null, p = E.ZP.getOverrideForGame(y), f = k.Z.getGuildIds(), h = w.SE.getSetting(), g = f.filter(e => !h.includes(e)).slice(0, 200), m = null;
       m = null != p ? "custom_override" : null != a ? "verified_game" : "launcher";
-      let b = P.default.getTrackedGameByPid(v.pid),
-        I = (0, E.b6)(v),
-        C = {
+      let b = P.default.getTrackedGameByPid(y.pid),
+        I = (0, E.b6)(y),
+        S = {
           enabledOOP: null != (t = null == b ? true : b.oopEnabled) ? t : I.enabledOOP,
           enabledLegacy: null != (n = null == b ? true : b.legacyEnabled) ? n : I.enabledLegacy,
           overlayMethod: null != (r = null == b ? true : b.overlayMethod) ? r : I.overlayMethod,
           source: null != (i = null == b ? true : b.source) ? i : I.source
         },
-        S = null != (l = P.default.getOverlayMethod(v.pid)) ? l : C.overlayMethod;
+        C = null != (l = P.default.getOverlayMethod(y.pid)) ? l : S.overlayMethod;
       if (setTimeout(() => {
-          (v.distributor === J.GQo.ROBLOX ? this.debouncedRobloxAnalytics : et)({
-            runningGame: v,
+          (y.distributor === J.GQo.ROBLOX ? this.debouncedRobloxAnalytics : et)({
+            runningGame: y,
             game: a,
             detectionMethod: m,
-            overlayStatus: C,
-            overlayMethod: S,
+            overlayStatus: S,
+            overlayMethod: C,
             sharedGuildIds: g,
             voiceChannelId: o,
             voiceChannelType: u,
             voiceChannelBitrate: d,
             voiceChannelGuildId: c
           })
-        }, 1e4), null != v.name && null != y && R.Z.shouldReport(v.name)) {
-        let e = v.name;
-        s.Z.identifyGame(y, e).then(e => s.Z.reportUnverifiedGame(e)).catch(e => new _.Z("AutoAnalytics").error("Cannot identify game", e))
+        }, 1e4), null != y.name && null != v && R.Z.shouldReport(y.name)) {
+        let e = y.name;
+        s.Z.identifyGame(v, e).then(e => s.Z.reportUnverifiedGame(e)).catch(e => new _.Z("AutoAnalytics").error("Cannot identify game", e))
       }
     }
     if ((e.videoEnabled !== f || e.isScreenSharing !== g) && null != o) {
@@ -229,7 +229,7 @@ class en extends Chunk647438.PureComponent {
         preview_enabled: w.qF.getSetting()
       }, n, this.getGameMetadata(), (0, p.AB)(o)))
     }
-    if (T && null != C && (!e.connected || C !== e.selectedChannelId || S !== e.selectedGuildId)) {
+    if (T && null != S && (!e.connected || S !== e.selectedChannelId || C !== e.selectedGuildId)) {
       let t = e.selectedChannelId,
         n = L.Z.getChannel(t),
         r = k.Z.getGuild(null == n ? true : n.getGuildId());

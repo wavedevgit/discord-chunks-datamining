@@ -1,5 +1,5 @@
-/** Chunk was on 86821 **/
-/** chunk id: 895652, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 46592 **/
+/** chunk id: 895652, original params: e,t,r (module,exports,require) **/
 module.exports = {
   widgetContainer: "widgetContainer__0ea1a",
   header: "header__0ea1a",
@@ -19,5 +19,6 @@ module.exports = {
   image: "image__0ea1a",
   imagePlaceholder: "imagePlaceholder__0ea1a",
   socialProof: "socialProof__0ea1a",
-  stillSyncing: "stillSyncing__0ea1a"
+  stillSyncing: "stillSyncing__0ea1a",
+  footer: "footer__0ea1a"
 }

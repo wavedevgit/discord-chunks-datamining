@@ -30,8 +30,8 @@ let I = Chunk647438.memo(function(e) {
     loaded: n,
     error: l,
     message: I
-  } = (0, b.a)(t), C = (0, u.p)(), {
-    isBlocked: S,
+  } = (0, b.a)(t), S = (0, u.p)(), {
+    isBlocked: C,
     isIgnored: T
   } = (0, o.cj)([m.Z], () => ({
     isBlocked: null != I && m.Z.isBlockedForMessage(I),
@@ -41,25 +41,25 @@ let I = Chunk647438.memo(function(e) {
   } = i.useMemo(() => (null == I ? true : I.content) != null && "" !== I.content ? (0, p.ZP)(I, {
     formatInline: true,
     noStyleAndInteraction: true,
-    shouldFilterKeywords: C
+    shouldFilterKeywords: S
   }) : {
     content: null
-  }, [I, C]), x = null;
+  }, [I, S]), x = null;
   if (l) x = (0, r.jsx)(s.Text, {
-    className: v.messageReplacement,
+    className: y.messageReplacement,
     variant: "text-sm/normal",
     color: "text-muted",
     children: E.intl.string(E.t.BZHld3)
   });
   else if (n)
-    if (null != I && S) x = (0, r.jsx)(s.Text, {
-      className: v.messageReplacement,
+    if (null != I && C) x = (0, r.jsx)(s.Text, {
+      className: y.messageReplacement,
       variant: "text-sm/normal",
       color: "text-muted",
       children: E.intl.string(E.t["WPe+xM"])
     });
     else if (null != I && T) x = (0, r.jsx)(s.Text, {
-    className: v.messageReplacement,
+    className: y.messageReplacement,
     variant: "text-sm/normal",
     color: "text-muted",
     children: E.intl.string(E.t.uxrh1N)
@@ -68,25 +68,25 @@ let I = Chunk647438.memo(function(e) {
     let {
       contentPlaceholder: e,
       renderedContent: t
-    } = (0, f.f)(I, P, S, T, a()(v.messageContent, y.inlineFormat), {
-      leadingIconClass: v.messageContentIcon,
-      trailingIconClass: v.messageContentIcon,
+    } = (0, f.f)(I, P, C, T, a()(y.messageContent, v.inlineFormat), {
+      leadingIconClass: y.messageContentIcon,
+      trailingIconClass: y.messageContentIcon,
       iconSize: O.WW
     });
     x = null != t ? (0, r.jsx)(s.Text, {
       variant: "text-sm/normal",
       color: "text-muted",
-      className: v.messageContent,
+      className: y.messageContent,
       children: t
     }) : (0, r.jsx)(s.Text, {
       tag: "span",
       variant: "text-sm/normal",
       color: "text-muted",
-      className: v.messageReplacement,
+      className: y.messageReplacement,
       children: e
     })
   } else x = (0, r.jsx)(s.Text, {
-    className: v.messageReplacement,
+    className: y.messageReplacement,
     variant: "text-sm/normal",
     color: "text-muted",
     children: E.intl.string(E.t["0KfDxM"])
@@ -95,7 +95,7 @@ let I = Chunk647438.memo(function(e) {
   return (0, r.jsx)(c.aQ.Provider, {
     value: (0, d.Z)(j, N),
     children: (0, r.jsx)(s.Rny, {
-      className: v.messageFocusBlock,
+      className: y.messageFocusBlock,
       children: x
     })
   })

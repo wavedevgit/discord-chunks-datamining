@@ -29,14 +29,14 @@ function b() {
   } = (0, Chunk113434.bA)(Chunk113434.e5.ALL, Chunk647438.useMemo(() => ({
     sortMethod: exports,
     filters: b
-  }), [exports, b])), v = Chunk647438.useCallback(() => {
+  }), [exports, b])), y = Chunk647438.useCallback(() => {
     _(m)
-  }, []), y = Chunk647438.useRef(null), I = Chunk647438.useRef(null);
+  }, []), v = Chunk647438.useRef(null), I = Chunk647438.useRef(null);
   return Chunk647438.useEffect(() => {
     module && (Chunk626135.default.track(Chunk981631.rMx.QUEST_HOME_SORT_METHOD_CHANGED, {
       sort_method: exports,
-      previous_sort_method: y.current
-    }), y.current = exports)
+      previous_sort_method: v.current
+    }), v.current = exports)
   }, [exports, module]), Chunk647438.useEffect(() => {
     var t;
     if (!module) return;
@@ -68,7 +68,7 @@ function b() {
       quests: O,
       isFetching: E,
       hasFiltersApplied: b.length > 0,
-      onClearFilters: v
+      onClearFilters: y
     })]
   })
 }

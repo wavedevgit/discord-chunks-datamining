@@ -1,7 +1,7 @@
 /** Chunk was on 56848 **/
 /** chunk id: 414655, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => b
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,33 +20,33 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk363725 = require("./363725.js");
 
-function y(e) {
+function b(e) {
   let {
     profileOwner: t
   } = e, {
     defaultWishlistId: n,
-    currentUser: y
+    currentUser: b
   } = (0, l.cj)([g.Z, f.default], () => ({
     defaultWishlistId: g.Z.getFirstWishlistId(t.id),
     currentUser: f.default.getCurrentUser()
   })), {
     analyticsLocations: j
-  } = (0, c.ZP)(), O = (null == y ? true : y.id) === t.id, x = false === t.nsfwAllowed, {
+  } = (0, c.ZP)(), O = (null == b ? true : b.id) === t.id, x = false === t.nsfwAllowed, {
     wishlist: P,
     error: S
-  } = (0, d.k)(n), w = i.useCallback(() => {
+  } = (0, d.k)(n), I = i.useCallback(() => {
     (0, a.pT)(), (0, u.mK)({
       analyticsLocations: j,
       analyticsSource: o.Z.USER_PROFILE_WISHLIST,
       openInLayer: false
     })
   }, [j]);
-  return null != S ? null : null == P || 0 === P.items.length ? (0, r.jsx)(h.F, {
+  return null != S ? null : null == P || 0 === P.items.length ? (0, r.jsx)(p.F, {
     fade: true,
     children: (0, r.jsxs)("div", {
-      className: b.emptyStateContainer,
+      className: y.emptyStateContainer,
       children: [(0, r.jsxs)("div", {
-        className: b.emptyStateText,
+        className: y.emptyStateText,
         children: [(0, r.jsx)(s.X6q, {
           variant: "heading-md/medium",
           color: "header-primary",
@@ -61,16 +61,16 @@ function y(e) {
         size: "sm",
         icon: s.EOn,
         text: v.intl.string(v.t.ZbS4QE),
-        onClick: w
+        onClick: I
       })]
     })
-  }) : (0, r.jsxs)(h.F, {
-    className: b.scroller,
+  }) : (0, r.jsxs)(p.F, {
+    className: y.scroller,
     fade: true,
     children: [(0, r.jsxs)("div", {
-      className: b.headerRow,
+      className: y.headerRow,
       children: [(0, r.jsxs)("div", {
-        className: b.teenDisclaimer,
+        className: y.teenDisclaimer,
         children: [(0, r.jsx)(s.Text, {
           variant: "text-xs/semibold",
           color: "text-secondary",
@@ -115,13 +115,13 @@ function y(e) {
           }
         })]
       }), O ? (0, r.jsxs)("div", {
-        className: b.headerActions,
+        className: y.headerActions,
         children: [(0, r.jsx)(s.zxk, {
           variant: "secondary",
           size: "sm",
           icon: s.qJs,
           text: v.intl.string(v.t.SDUwMz),
-          onClick: w
+          onClick: I
         }), (0, r.jsx)(m.Z, {
           isOwner: O
         })]
@@ -130,9 +130,9 @@ function y(e) {
         size: "sm",
         icon: s.EOn,
         text: v.intl.string(v.t["i/yzHh"]),
-        onClick: w
+        onClick: I
       })]
-    }), (0, r.jsx)(p.Z, {
+    }), (0, r.jsx)(h.Z, {
       items: P.items,
       profileOwner: t,
       isOwner: O

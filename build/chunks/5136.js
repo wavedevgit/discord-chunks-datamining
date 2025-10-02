@@ -31,10 +31,10 @@ function a(e) {
     c.current = r;
     let l = t.getBoundingClientRect(),
       u = f.y,
-      h = u - l.top,
-      p = l.bottom - u,
+      p = u - l.top,
+      h = l.bottom - u,
       m = 0;
-    h >= 0 && h < n ? m = -a * Math.pow(1 - h / n, s) : p >= 0 && p < n && (m = a * Math.pow(1 - p / n, s)), 0 !== m && (t.scrollTop += m * i)
+    p >= 0 && p < n ? m = -a * Math.pow(1 - p / n, s) : h >= 0 && h < n && (m = a * Math.pow(1 - h / n, s)), 0 !== m && (t.scrollTop += m * i)
   }), () => {
     null !== o.current && cancelAnimationFrame(o.current), o.current = null, c.current = 0
   }), [t, d, f, n, a, s, g])
