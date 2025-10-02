@@ -54,8 +54,8 @@ let O = new Set,
   y = false,
   v = null,
   I = null,
-  S = null,
   C = null,
+  S = null,
   T = null,
   N = null,
   j = Chunk433517.K.get(Chunk71080.kf) || false;
@@ -67,9 +67,9 @@ function P(e) {
 }
 
 function x() {
-  if (S = Chunk388610.Z.getChannel(), C = Chunk388610.Z.getCategory(), null == S) returnfalse;
-  let e = S.getGuildId();
-  I = v = P(S), null == v[T] && (T = module), i = null != C, r = Chunk700785.o4(S, C), N = null, y = false, E = Chunk981631.QZA.CLOSED, O.clear()
+  if (C = Chunk388610.Z.getChannel(), S = Chunk388610.Z.getCategory(), null == C) returnfalse;
+  let e = C.getGuildId();
+  I = v = P(C), null == v[T] && (T = module), i = null != S, r = Chunk700785.o4(C, S), N = null, y = false, E = Chunk981631.QZA.CLOSED, O.clear()
 }
 class A extends(l = Chunk442837.ZP.Store) {
   initialize() {
@@ -103,10 +103,10 @@ class A extends(l = Chunk442837.ZP.Store) {
     return r
   }
   get channel() {
-    return S
+    return C
   }
   get category() {
-    return C
+    return S
   }
   get advancedMode() {
     return j
@@ -118,7 +118,7 @@ let Z = new A(Chunk570140.Z, {
     let {
       section: t
     } = e;
-    if (null != S || t !== h.CoT.PERMISSIONS) returnfalse;
+    if (null != C || t !== h.CoT.PERMISSIONS) returnfalse;
     x()
   },
   CHANNEL_SETTINGS_PERMISSIONS_INIT: x,
@@ -128,13 +128,13 @@ let Z = new A(Chunk570140.Z, {
       allow: n,
       deny: i
     } = e, l = null == v ? true : v[t];
-    if (null == l || null == S) returnfalse;
+    if (null == l || null == C) returnfalse;
     l = _(b({}, l), {
       allow: n,
       deny: i
     }), v = _(b({}, v), {
       [t]: l
-    }), O.add(t), E = h.QZA.OPEN, y = !o().isEqual(v, I), r = d.o4(S, C)
+    }), O.add(t), E = h.QZA.OPEN, y = !o().isEqual(v, I), r = d.o4(C, S)
   },
   CHANNEL_SETTINGS_PERMISSIONS_SELECT_PERMISSION: function(e) {
     let {
@@ -142,7 +142,7 @@ let Z = new A(Chunk570140.Z, {
     } = e;
     if (null != v && null != v[t]) T = t;
     else {
-      if (null == S) returnfalse;
+      if (null == C) returnfalse;
       N = t
     }
   },
@@ -150,24 +150,24 @@ let Z = new A(Chunk570140.Z, {
     Chunk388610.Z.getSection() === Chunk981631.CoT.PERMISSIONS && x()
   },
   CHANNEL_SETTINGS_CLOSE: function() {
-    E = Chunk981631.QZA.CLOSED, v = null, I = null, S = null, C = null, y = false, O.clear(), T = null, N = null
+    E = Chunk981631.QZA.CLOSED, v = null, I = null, C = null, S = null, y = false, O.clear(), T = null, N = null
   },
   CHANNEL_UPDATES: function(e) {
     let {
       channels: t
     } = e;
-    if (null == S) returnfalse;
+    if (null == C) returnfalse;
     let n = false;
     for (let e of t) false !== function(e) {
-      if (null == S || S.id !== e || null == (S = f.Z.getChannel(e))) returnfalse;
-      C = p.Z.getCategory();
-      let t = S.getGuildId();
+      if (null == C || C.id !== e || null == (C = f.Z.getChannel(e))) returnfalse;
+      S = p.Z.getCategory();
+      let t = C.getGuildId();
       if (null == t) returnfalse;
-      I = P(S);
+      I = P(C);
       let n = {};
       return O.forEach(e => {
         null != v && (n[e] = v[e])
-      }), null == n[t] && null == S.permissionOverwrites[t] && (n[t] = d.we(t)), null == (v = b({}, S.permissionOverwrites, n))[T] ? T = t : null != N && null != v[N] && (T = N, N = null), r = d.o4(S, C), true
+      }), null == n[t] && null == C.permissionOverwrites[t] && (n[t] = d.we(t)), null == (v = b({}, C.permissionOverwrites, n))[T] ? T = t : null != N && null != v[N] && (T = N, N = null), r = d.o4(C, S), true
     }(e.id) && (n = true);
     return n
   },

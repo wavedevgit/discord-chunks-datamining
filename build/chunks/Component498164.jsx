@@ -85,7 +85,7 @@ let k = {
           code: t
         }
       } = e;
-      if (null == C.default.getCurrentUser()) return;
+      if (null == S.default.getCurrentUser()) return;
       let {
         guildTemplate: i
       } = await _.Z.resolveGuildTemplate(t);
@@ -319,11 +319,11 @@ let k = {
           state: l
         }
       } = e;
-      if (!S.Z.hasPendingAuthorizedState(l)) throw new x.Z({
+      if (!C.Z.hasPendingAuthorizedState(l)) throw new x.Z({
         errorCode: w.lTL.INVALID_CONNECTION_CALLBACK_STATE
       }, "Provider authorization did not originate from this discord client");
       try {
-        return S.Z.deletePendingAuthorizedState(l), await d.Z.callback(t, {
+        return C.Z.deletePendingAuthorizedState(l), await d.Z.callback(t, {
           code: n,
           openid_params: r,
           iss: i,

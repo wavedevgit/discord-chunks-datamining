@@ -25,7 +25,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk294330 = require("./294330.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk17923 = require("./17923.js");
-let C = Object.freeze({
+let S = Object.freeze({
     top: 0,
     bottom: 0,
     left: 32,
@@ -93,11 +93,11 @@ function P(e) {
               paddingLeft: n.left,
               width: n.width - 16
             },
-            className: a()(S.heading, {
-              [S.headingTopbar]: !R
+            className: a()(C.heading, {
+              [C.headingTopbar]: !R
             }),
             children: [!R && (0, r.jsxs)("div", {
-              className: S.headingFilters,
+              className: C.headingFilters,
               children: [(0, r.jsx)(O.Z, {
                 loadId: t
               }), (0, r.jsx)(y.Z, {
@@ -109,8 +109,8 @@ function P(e) {
           }, i);
         case 1:
           return (0, r.jsx)(c.$jN, {
-            className: a()(S.spinner, {
-              [S.spinnerWithSidebar]: R
+            className: a()(C.spinner, {
+              [C.spinnerWithSidebar]: R
             })
           }, i)
       }
@@ -201,13 +201,13 @@ function P(e) {
     }, 100, {
       leading: true
     }), [P]),
-    ee = R ? C : T;
+    ee = R ? S : T;
   return (0, r.jsx)("div", {
-    className: S.container,
+    className: C.container,
     ref: F,
     children: (0, r.jsx)(c.GMG, {
       ref: B,
-      className: S.masonryList,
+      className: C.masonryList,
       sections: W,
       columns: M,
       itemGutter: 16,
@@ -220,14 +220,14 @@ function P(e) {
       chunkSize: 24,
       onScroll: $,
       renderAccessory: e => R ? (0, r.jsx)("div", {
-        className: S.sidebar,
+        className: C.sidebar,
         style: {
           height: e
         },
         children: (0, r.jsxs)("div", {
-          className: S.sidebarContent,
+          className: C.sidebarContent,
           children: [(0, r.jsx)("div", {
-            className: S.sidebarLanguageSelect,
+            className: C.sidebarLanguageSelect,
             children: (0, r.jsx)(y.Z, {
               loadId: t
             })

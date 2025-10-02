@@ -1,4 +1,4 @@
-/** Chunk was on 204 **/
+/** Chunk was on 68255 **/
 /** chunk id: 409116, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   F: () => p
@@ -32,41 +32,41 @@ let p = e => {
     nitroIconSize: p = "md",
     className: f,
     discountOfferAmount: b,
-    discount: h = s.f_,
-    variant: g = "heading-md/semibold"
-  } = e, y = null != b, v = (0, o.qr)(t, r), m = h !== s.f_ && h.discountPercentage >= 5 && !y ? (0, n.jsxs)(n.Fragment, {
+    discount: y = s.f_,
+    variant: O = "heading-md/semibold"
+  } = e, v = null != b, g = (0, o.qr)(t, r), m = y !== s.f_ && y.discountPercentage >= 5 && !v ? (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsx)(a.nn4, {
       children: c.intl.format(c.t.niC6DA, {
-        price: v,
-        discountPercentage: h.discountPercentage
+        price: g,
+        discountPercentage: y.discountPercentage
       })
     }), (0, n.jsx)("span", {
       "aria-hidden": true,
-      children: v
+      children: g
     }), (0, n.jsxs)(a.Text, {
-      variant: g,
+      variant: O,
       color: "text-feedback-positive",
       className: u.discount,
       "aria-hidden": true,
-      children: ["(-", h.discountPercentage, "%)"]
+      children: ["(-", y.discountPercentage, "%)"]
     })]
   }) : (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsx)(a.nn4, {
       children: c.intl.format(c.t["6C36MD"], {
-        price: v
+        price: g
       })
     }), (0, n.jsx)("span", {
       "aria-hidden": true,
       className: i()({
-        [u.priceStrikethrough]: y
+        [u.priceStrikethrough]: v
       }, f),
-      children: v
+      children: g
     })]
   });
   return (0, n.jsxs)(a.Text, {
-    variant: g,
+    variant: O,
     className: i()({
-      [u.discountBackgroundColor]: y
+      [u.discountBackgroundColor]: v
     }, u.container, f),
     children: ["tooltip" === l ? (0, n.jsx)(a.ua7, {
       text: c.intl.string(c.t.MPFyJy),
@@ -113,7 +113,7 @@ let p = e => {
       size: p,
       color: "currentColor",
       className: u.nitroIcon
-    }) : null, m, y && (0, n.jsxs)(a.X6q, {
+    }) : null, m, v && (0, n.jsxs)(a.X6q, {
       variant: "heading-md/semibold",
       className: u.discountPill,
       children: [(0, n.jsx)(a.nn4, {

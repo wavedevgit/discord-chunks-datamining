@@ -30,8 +30,8 @@ function y(e) {
     quest: y
   } = e, v = (0, _.L)(), {
     voiceChannels: I,
-    currentActivities: S,
-    partiedMembers: C,
+    currentActivities: C,
+    partiedMembers: S,
     applicationStreams: T,
     guildContext: N
   } = t, j = (0, p.z1)(y), P = [], x = e => {
@@ -86,7 +86,7 @@ function y(e) {
         i.default.selectVoiceChannel(t.channelId), (0, l.iV)(t)
       }
     }, "application-stream-".concat(t.ownerId)))
-  }), S.forEach((e, t) => {
+  }), C.forEach((e, t) => {
     var n, i, l, p, m, _, v, T, P;
     let {
       activity: A,
@@ -95,7 +95,7 @@ function y(e) {
       activityUser: L
     } = e;
     if (null == A || null == A.type) return null;
-    if (S.length > 1 && A.type === E.IIU.PLAYING && !(0, a.Z)(A) && null != Z) x((0, r.jsx)(b.Z.GameSection, {
+    if (C.length > 1 && A.type === E.IIU.PLAYING && !(0, a.Z)(A) && null != Z) x((0, r.jsx)(b.Z.GameSection, {
       icon: Z.getIconURL(O.Z),
       name: Z.name,
       partySize: {
@@ -131,7 +131,7 @@ function y(e) {
       }, "streaming-".concat(null != (m = A.session_id) ? m : t)))
     } else(0, s.Z)(A) ? x((0, r.jsx)(b.Z.SpotifySection, {
       activity: A,
-      isSolo: 1 === C.length,
+      isSolo: 1 === S.length,
       partySize: {
         knownSize: w.length,
         unknownSize: 0,

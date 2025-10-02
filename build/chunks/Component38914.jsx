@@ -1,5 +1,6 @@
-/** Chunk was on 2026 **/
+/** Chunk was on 33907 **/
 /** chunk id: 38914, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   q: () => c
 });
@@ -29,7 +30,7 @@ let c = () => {
         }), (0, r.jsx)(i.Text, {
           variant: "text-sm/medium",
           color: "always-white",
-          children: a.intl.string(e)
+          children: l.intl.string(e)
         })]
       }, t))
     })]

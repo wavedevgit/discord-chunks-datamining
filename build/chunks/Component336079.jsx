@@ -1,4 +1,4 @@
-/** Chunk was on 204 **/
+/** Chunk was on 68255 **/
 /** chunk id: 336079, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   C: () => b,
@@ -29,41 +29,41 @@ let p = (0, Chunk647438.createContext)({
       analyticsLocations: i,
       onCheckoutSuccess: f,
       children: b
-    } = e, h = (0, a.e7)([c.default], () => u.ZP.canUseCollectibles(c.default.getCurrentUser())), {
-      product: g
-    } = (0, o.T)(t), y = (0, l.useMemo)(() => {
-      if (null == g) return null;
+    } = e, y = (0, a.e7)([c.default], () => u.ZP.canUseCollectibles(c.default.getCurrentUser())), {
+      product: O
+    } = (0, o.T)(t), v = (0, l.useMemo)(() => {
+      if (null == O) return null;
       let e = (0, s.T)({
-          product: g,
-          isPremiumUser: h
+          product: O,
+          isPremiumUser: y
         }),
         t = null !== e ? e.amount : null;
       return {
         orbPrice: e,
         orbPriceAmount: t,
-        product: g
+        product: O
       }
-    }, [g, h]), {
-      redeemVirtualCurrency: v,
+    }, [O, y]), {
+      redeemVirtualCurrency: g,
       isSubmitting: m,
-      error: O
-    } = (0, d.f)(), P = (0, l.useCallback)(e => {
-      v(t, r, r => {
+      error: j
+    } = (0, d.f)(), h = (0, l.useCallback)(e => {
+      g(t, r, r => {
         f({
           entitlements: r,
           skuId: t
         }), e()
       })
-    }, [t, r, v, f]);
+    }, [t, r, g, f]);
     return (0, n.jsx)(p.Provider, {
       value: {
         skuId: t,
         loadId: r,
         analyticsLocations: null != i ? i : [],
-        orbProductContext: y,
-        onRedeemVirtualCurrency: P,
+        orbProductContext: v,
+        onRedeemVirtualCurrency: h,
         isRedeeming: m,
-        orbRedemptionError: O
+        orbRedemptionError: j
       },
       children: b
     })

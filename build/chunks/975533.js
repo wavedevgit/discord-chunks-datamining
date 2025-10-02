@@ -161,7 +161,7 @@ let D = {
     },
     [Chunk981631.kg4.TOGGLE_OVERLAY_INPUT_LOCK]: {
       onTrigger(e, t) {
-        if (!(0, C.I1)(t.shortcut)) return;
+        if (!(0, S.I1)(t.shortcut)) return;
         let {
           renderInvisibleOverlay: n
         } = (0, b.fn)("KeyboardShortcutManager");

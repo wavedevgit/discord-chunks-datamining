@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 106075, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => C
 }), require("./781311.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -25,15 +25,15 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk680326 = require("./680326.js");
 
-function S() {
+function C() {
   let e = Chunk647438.useRef((0, Chunk726115.PM)()),
     {
       onScroll: t,
       scrollPosition: n,
-      resetScrollPosition: S
+      resetScrollPosition: C
     } = (0, Chunk979233.M)(),
     {
-      tabs: C,
+      tabs: S,
       selectedTab: T,
       setSelectedTab: N
     } = (0, Chunk29086.Y)(),
@@ -66,12 +66,12 @@ function S() {
     B = Chunk647438.useCallback(e => {
       N(e), L && Z()
     }, [L, Z, N]),
-    H = Chunk647438.useMemo(() => L ? C.filter(e => {
+    H = Chunk647438.useMemo(() => L ? S.filter(e => {
       let {
         id: t
       } = e;
       return !E.MU.has(t)
-    }) : C, [C, L]),
+    }) : S, [S, L]),
     V = Chunk647438.useRef(new Chunk444324.Z(j)),
     {
       onGuildCardSeen: F,
@@ -83,8 +83,8 @@ function S() {
   return Chunk647438.useEffect(() => {
     V.current.flushSeenGuilds(module.current)
   }, [j]), Chunk647438.useEffect(() => {
-    S()
-  }, [T, S]), Chunk647438.useEffect(() => {
+    C()
+  }, [T, C]), Chunk647438.useEffect(() => {
     L || Chunk164991.Z.setState({
       scrollPosition: null
     })

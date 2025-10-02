@@ -54,8 +54,8 @@ function _(e) {
         })
     }
   }(_), {
-    subtitle: S,
-    icon: C
+    subtitle: C,
+    icon: S
   } = function(e) {
     var t;
     let {
@@ -193,8 +193,8 @@ function _(e) {
     priorityUser: v,
     guildId: null == y ? true : y.id,
     title: I,
-    subtitle: S,
-    icon: C,
+    subtitle: C,
+    icon: S,
     onSubtitleClick: T,
     onIconClick: T,
     onContextMenu: e => O(e, v.user)

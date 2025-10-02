@@ -1,5 +1,6 @@
-/** Chunk was on 2026 **/
+/** Chunk was on 33907 **/
 /** chunk id: 765413, original params: e,t,n (module,exports,require) **/
+"use strict";
 module.exports = {
   container: "container__12f17",
   darkText: "darkText__12f17",

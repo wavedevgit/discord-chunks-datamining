@@ -1,5 +1,5 @@
 /** Chunk was on 56848 **/
-/** chunk id: 299560, original params: e,t,n (module,exports,require) **/
+/** chunk id: 299560, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => j
 });
@@ -54,9 +54,9 @@ let O = {
       variant: "details"
     },
     getAriaLabel: e => {
-      var t, n;
+      var t, r;
       return b.intl.formatToPlainString(b.t.KfGahI, {
-        applicationName: null != (n = null == (t = c.Z.getApplication(e.applicationId)) ? true : t.name) ? n : ""
+        applicationName: null != (r = null == (t = c.Z.getApplication(e.applicationId)) ? true : t.name) ? r : ""
       })
     }
   }
@@ -65,59 +65,59 @@ let O = {
 function j(e) {
   var t;
   let {
-    widgetType: n,
+    widgetType: r,
     onAddWidget: a,
     size: c = "default",
     loading: u = false,
     trackUserProfileEditAction: b
   } = e, {
     placeholder: j,
-    getAriaLabel: P
-  } = O[n], x = "small" === c, S = null == (t = (0, d.uV)().data) ? true : t.map(e => e.application_id), I = i.useMemo(() => {
-    switch (n) {
+    getAriaLabel: S
+  } = O[r], P = "small" === c, I = null == (t = (0, d.uV)().data) ? true : t.map(e => e.application_id), x = i.useMemo(() => {
+    switch (r) {
       case s.l.CURRENT_GAMES:
       case s.l.FAVORITE_GAMES:
       case s.l.PLAYED_GAMES:
       case s.l.WANT_TO_PLAY_GAMES:
         return new g.zy({
-          type: n,
+          type: r,
           games: []
         });
       case s.l.APPLICATION:
-        let e = null == S ? true : S[0];
+        let e = null == I ? true : I[0];
         if (null == e) return null;
         return new f.q({
-          type: n,
+          type: r,
           applicationId: e
         })
     }
-  }, [n, S]), w = i.useCallback(() => {
-    u || null == I || ((0, h.qH)(n, I), b({
+  }, [r, I]), w = i.useCallback(() => {
+    u || null == x || ((0, h.qH)(r, x), b({
       action: "WIDGET_ADDED",
-      widgetEdited: n
+      widgetEdited: r
     }), (0, p.L$)(v.qb.WIDGET_ADDED), null == a || a())
-  }, [u, n, I, b, a]);
-  return null == I ? null : (0, r.jsxs)(o.P3F, {
-    className: l()(y.addButtonContainer, x && y.sizeSmall, u && y.loading),
+  }, [u, r, x, b, a]);
+  return null == x ? null : (0, n.jsxs)(o.P3F, {
+    className: l()(y.addButtonContainer, P && y.sizeSmall, u && y.loading),
     onClick: w,
-    "aria-label": P(I),
+    "aria-label": S(x),
     "aria-busy": u,
-    children: ["details" === j.variant ? (0, r.jsx)(m.i, {
+    children: ["details" === j.variant ? (0, n.jsx)(m.i, {
       applicationId: j.applicationId,
       size: c
-    }) : (0, r.jsx)(m.c, {
+    }) : (0, n.jsx)(m.c, {
       applicationIds: j.applicationIds,
       size: c
-    }), (0, r.jsxs)("div", {
+    }), (0, n.jsxs)("div", {
       className: y.overlay,
-      children: [(0, r.jsx)(o.oFk, {
+      children: [(0, n.jsx)(o.oFk, {
         size: "md",
         color: "currentColor",
         className: y.addButton
-      }), (0, r.jsx)(o.Text, {
+      }), (0, n.jsx)(o.Text, {
         variant: "text-md/medium",
         color: "header-primary",
-        children: (0, h.mR)(I)
+        children: (0, h.mR)(x)
       })]
     })]
   })

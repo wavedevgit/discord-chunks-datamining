@@ -1,7 +1,7 @@
-/** Chunk was on 204 **/
+/** Chunk was on 68255 **/
 /** chunk id: 680942, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,20 +18,20 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx");
-let v = e => {
+let g = e => {
   let {
     product: t,
     primary: r,
-    selectedVariantIndex: v,
+    selectedVariantIndex: g,
     returnRef: m,
-    onSuccess: O,
-    tooltipDelay: P
+    onSuccess: j,
+    tooltipDelay: h
   } = e, {
-    analyticsLocations: j
-  } = (0, s.ZP)(), _ = l.useRef(null), E = (0, d.sp)(), x = (0, f.Z)();
+    analyticsLocations: P
+  } = (0, s.ZP)(), x = l.useRef(null), E = (0, d.sp)(), _ = (0, f.Z)();
   return (0, p.x6)(t) ? null : (0, n.jsx)(o.ua7, {
-    text: y.intl.string(y.t["JCFN//"]),
-    delay: P,
+    text: v.intl.string(v.t["JCFN//"]),
+    delay: h,
     children: e => {
       var l, s;
       return (0, n.jsx)(o.hU, (l = function(e) {
@@ -52,13 +52,13 @@ let v = e => {
         }
         return e
       }({}, e), s = s = {
-        "aria-label": y.intl.string(y.t["JCFN//"]),
-        buttonRef: _,
+        "aria-label": v.intl.string(v.t["JCFN//"]),
+        buttonRef: x,
         variant: r ? "primary" : "secondary",
         icon: o.OgN,
         size: "md",
         onClick: e => {
-          e.stopPropagation(), u.default.track(h.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+          e.stopPropagation(), u.default.track(y.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
             collectibles_shop_session_id: null == E ? true : E.sessionId,
             sku_id: t.skuId,
             page_section: null == E ? true : E.pageSection,
@@ -66,19 +66,19 @@ let v = e => {
             tile_type: i.Z[t.type],
             tile_position: String(null == E ? true : E.tilePosition),
             cta_name: "gift button",
-            page_type: x || "home"
+            page_type: _ || "home"
           }), (0, c.Z)({
             skuId: (0, b.S)({
               product: t,
-              selectedVariantIndex: v
+              selectedVariantIndex: g
             }),
             isGift: true,
-            giftingOrigin: g.Wt.SHOP_PAGE,
-            analyticsLocations: j,
+            giftingOrigin: O.Wt.SHOP_PAGE,
+            analyticsLocations: P,
             returnRef: m,
             variantsReturnStyle: a.v.VARIANTS_GROUP,
-            onClose: null != O ? e => {
-              e && O()
+            onClose: null != j ? e => {
+              e && j()
             } : true
           })
         }

@@ -1,5 +1,6 @@
-/** Chunk was on 2026 **/
+/** Chunk was on 33907 **/
 /** chunk id: 556971, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   b: () => i
 }), require("./388685.js");
@@ -9,11 +10,11 @@ function i(e) {
   let {
     slideCount: t,
     intervalMs: n = 3e3
-  } = e, [i, l] = (0, r.useState)(0), [a, o] = (0, r.useState)(false), s = (0, r.useCallback)(e => {
-    a || e < 0 || e >= t || (o(true), setTimeout(() => {
-      l(e), o(false)
+  } = e, [i, a] = (0, r.useState)(0), [l, o] = (0, r.useState)(false), s = (0, r.useCallback)(e => {
+    l || e < 0 || e >= t || (o(true), setTimeout(() => {
+      a(e), o(false)
     }, 300))
-  }, [a, t, 300]);
+  }, [l, t, 300]);
   return (0, r.useEffect)(() => {
     if (t <= 1) return;
     let e = setInterval(() => {
@@ -22,6 +23,6 @@ function i(e) {
     return () => clearInterval(e)
   }, [t, n, i, s]), {
     activeSlide: i,
-    isTransitioning: a
+    isTransitioning: l
   }
 }

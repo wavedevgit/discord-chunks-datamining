@@ -238,7 +238,7 @@ class em extends Chunk647438.PureComponent {
         animation: f.yRy.Animation.SCALE,
         shouldShow: n,
         onRequestClose: () => {
-          (0, C.l)(false)
+          (0, S.l)(false)
         },
         spacing: 4,
         children: i => {
@@ -352,7 +352,7 @@ class em extends Chunk647438.PureComponent {
       let {
         isHeaderPopoutOpen: t
       } = this.props;
-      e.stopPropagation(), (0, C.l)(!t), this.closeAllHeaderNotices()
+      e.stopPropagation(), (0, S.l)(!t), this.closeAllHeaderNotices()
     }), eu(this, "handleContextMenu", e => {
       let {
         guild: t
@@ -473,7 +473,7 @@ function eb(e) {
     selectedChannelId: a
   } = e, o = (0, c.e7)([F.Z], () => F.Z.getGuild(n));
   (0, b.J_)(n);
-  let d = (0, S.Z)(n),
+  let d = (0, C.Z)(n),
     p = (0, c.e7)([B.Z], () => B.Z.getGuildDimensions(n).scrollTo),
     h = (0, c.e7)([Y.Z], () => Y.Z.getChannelId()),
     g = (0, c.e7)([W.Z], () => W.Z.can(ei.Plq.MANAGE_GUILD, o)),
@@ -493,14 +493,14 @@ function eb(e) {
   }, [n, V, w]);
   let [$, ee] = (0, v.ZP)(e => [el.XN.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(ea.R.GUILD_HEADER_TOOLTIPS)], s.X), et = (0, y.Z)(o), en = (0, f.s9z)(f.JQI), er = (0, c.e7)([z.Z], () => z.Z.hasLayers()), eo = (0, c.e7)([U.Z], () => U.Z.shouldShow(eh)), es = (0, R.cT)(n, "GuildSidebar") && g && (null == o ? true : o.premiumProgressBarEnabled) === false && !X.s.isDisallowPopupsSet(), ec = (0, j.Z)(n), eu = (null == o ? true : o.features.has(ei.oNc.HUB)) === true, ed = g && (null == o ? true : o.features.has(ei.oNc.DISCOVERABLE)) === true, ep = (0, c.e7)([x.Z, z.Z], () => null != o && null != P && g && !z.Z.hasLayers() && x.Z.shouldShowGuildTemplateDirtyTooltip(n)), ef = (0, c.e7)([G.Z], () => G.Z.getChannel(a)), {
     isPopoutOpen: eg
-  } = (0, C.y)(), eb = null != (t = null == o ? true : o.features.has(ei.oNc.COMMUNITY)) && t, e_ = Q.ZP.isNewUser(P), eO = k && !e_;
+  } = (0, S.y)(), eb = null != (t = null == o ? true : o.features.has(ei.oNc.COMMUNITY)) && t, e_ = Q.ZP.isNewUser(P), eO = k && !e_;
   (0, T.Z)(o);
   let eE = (0, I.Nj)(u.z.PREMIUM_TUTORIAL_SERVER_MENU_TOOLTIP),
     ey = (0, L.Z)(n),
     ev = (0, N.Z)(n),
     eI = (0, c.e7)([Y.Z], () => Y.Z.getChannelId()),
-    eS = (0, c.e7)([q.Z], () => q.Z.desyncedVoiceStatesCount),
-    eC = (0, D.Z)(n);
+    eC = (0, c.e7)([q.Z], () => q.Z.desyncedVoiceStatesCount),
+    eS = (0, D.Z)(n);
   return (0, r.jsx)(em, {
     guildId: n,
     hideSelectedChannel: l,
@@ -511,7 +511,7 @@ function eb(e) {
     selectedVoiceChannelId: h,
     voiceStates: d,
     rtcConnectedChannelId: eI,
-    rtcDesyncedVoiceStatesCount: eS,
+    rtcDesyncedVoiceStatesCount: eC,
     isUnavailable: m,
     user: P,
     hasChannelNotice: null != et || $,
@@ -532,6 +532,6 @@ function eb(e) {
     headerAnalyticsLocations: J,
     isTutorialHighlightDismissed: eE,
     shouldRenderBurstCoachmark: eO,
-    shouldRenderGuildPowerupPerkCoachmark: false === eC
+    shouldRenderGuildPowerupPerkCoachmark: false === eS
   })
 }

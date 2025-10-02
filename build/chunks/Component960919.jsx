@@ -1,12 +1,13 @@
-/** Chunk was on 81501 **/
-/** chunk id: 960919, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 88614 **/
+/** chunk id: 960919, original params: e,t,r (module,exports,require) **/
+"use strict";
 require.d(exports, {
   M: () => u,
-  Z: () => h
+  Z: () => p
 });
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk780384 = require("./780384.js"),
   Chunk410030 = require("./410030.js"),
   Chunk779802 = require("./779802.js");
@@ -15,13 +16,13 @@ let Chunk17702 = require("./17702.js"),
   u = e => {
     let {
       customSize: t,
-      shouldUseThemeColor: n = false,
-      loading: a,
+      shouldUseThemeColor: r = false,
+      loading: i,
       className: u
-    } = e, h = (0, c.ZP)(), _ = n && (0, l.ap)(h) ? d : o;
-    return (0, r.jsx)("img", {
-      className: i()(s.orbIconSVG, u, {
-        [s.loading]: a
+    } = e, p = (0, o.ZP)(), _ = r && (0, l.ap)(p) ? d : c;
+    return (0, n.jsx)("img", {
+      className: a()(s.orbIconSVG, u, {
+        [s.loading]: i
       }),
       src: _,
       alt: "",
@@ -30,4 +31,4 @@ let Chunk17702 = require("./17702.js"),
       } : true
     })
   },
-  h = u
+  p = u

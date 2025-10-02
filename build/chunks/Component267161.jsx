@@ -61,7 +61,7 @@ function G(e) {
     selectedChannelId: t,
     withFastTravel: n,
     focusSectionProps: i
-  }) : (0, r.jsx)(C.Z, {
+  }) : (0, r.jsx)(S.Z, {
     searchContext: a,
     focusSectionProps: i
   })
@@ -72,7 +72,7 @@ function B(e) {
     withFastTravel: t,
     quickSwitcherInsteadOfTitle: n,
     focusSectionProps: i
-  } = e, l = (0, s.e7)([P.Z], () => P.Z.getChannelId()), a = (0, S.$)({
+  } = e, l = (0, s.e7)([P.Z], () => P.Z.getChannelId()), a = (0, C.$)({
     location: "TitleText"
   }), o = (0, s.e7)([j.Z], () => {
     let e = j.Z.getChannel(l);
@@ -110,12 +110,12 @@ let H = Chunk647438.memo(function() {
   } = (0, Chunk719961.T)({
     location: "AppTitleBar"
   }), {
-    hasBugReporterAccess: S
+    hasBugReporterAccess: C
   } = Chunk174556.Z.useExperiment({
     location: "HeaderBar"
   }, {
     autoTrackExposure: false
-  }), C = null !== module && exports === Chunk821020.u3.TITLE_BAR_LEFT, T = null === module;
+  }), S = null !== module && exports === Chunk821020.u3.TITLE_BAR_LEFT, T = null === module;
   Chunk647438.useLayoutEffect(() => {
     Chunk998502.ZP.setMinimumSize(Chunk741764.J, Chunk741764.N)
   }, []);
@@ -149,7 +149,7 @@ let H = Chunk647438.memo(function() {
           leading: (0, r.jsxs)(r.Fragment, {
             children: [o && (0, r.jsx)(h.Z, {
               firstElementFocusJumpSectionProps: "BACK_FORWARD_NAVIGATION" === x ? e : true
-            }), C && (0, r.jsx)(y.Z, {
+            }), S && (0, r.jsx)(y.Z, {
               focusSectionProps: "NOTIFICATIONS_INBOX" === x ? e : true
             })]
           }),
@@ -192,7 +192,7 @@ let H = Chunk647438.memo(function() {
               return n
             })(Object(a)).forEach(function(e) {
               Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(a, e))
-            }), i)), S ? (0, r.jsx)(_.Z, {
+            }), i)), C ? (0, r.jsx)(_.Z, {
               focusSectionProps: "HELP" === x ? e : true,
               className: L
             }) : (0, r.jsx)(b.Z, {

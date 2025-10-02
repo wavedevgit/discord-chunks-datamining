@@ -188,7 +188,7 @@ function F(e, t, n, r, i) {
     {
       unit: o,
       time: s
-    } = (0, C.CI)(null != e ? e / 60 : null, a);
+    } = (0, S.CI)(null != e ? e / 60 : null, a);
   if (null != l && null != o) {
     let e = l[o];
     return null != e ? e(n, r, i, s) : null
@@ -500,10 +500,10 @@ let q = () => (0, Chunk951288.jsx)(B, {
     cellClassName: Chunk180678.nameCell,
     render: e => (0, r.jsxs)(v.Z, {
       align: v.Z.Align.CENTER,
-      children: [(0, r.jsx)(S.Z, {
+      children: [(0, r.jsx)(C.Z, {
         game: e.application,
         className: k.__invalid_gameIcon,
-        size: S.A.SMALL
+        size: C.A.SMALL
       }), (0, r.jsx)("div", {
         className: k.nameCellText,
         children: e.application.name

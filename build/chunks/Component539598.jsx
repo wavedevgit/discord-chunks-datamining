@@ -1,7 +1,8 @@
-/** Chunk was on 2026 **/
+/** Chunk was on 33907 **/
 /** chunk id: 539598, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => p
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -23,19 +24,19 @@ function d() {
   }).apply(this, arguments)
 }
 
-function m(e) {
+function p(e) {
   let {
     product: t
-  } = e, n = (0, a.ql)(t, s.tuJ.PREMIUM_TIER_2);
+  } = e, n = (0, l.ql)(t, s.tuJ.PREMIUM_TIER_2);
   if (null == n) return null;
-  let m = (0, l.qr)(n.amount, n.currency);
+  let p = (0, a.qr)(n.amount, n.currency);
   return (0, r.jsxs)("div", {
     className: u.container,
     children: [(0, r.jsx)(i.ua7, {
       text: c.intl.string(c.t.MPFyJy),
       "aria-label": c.intl.string(c.t.X3Ekj4),
       children: e => {
-        var t, n, l = d({}, function(e) {
+        var t, n, a = d({}, function(e) {
           if (null == e) throw TypeError("Cannot destructure " + e);
           return e
         }(e));
@@ -59,7 +60,7 @@ function m(e) {
         }({
           size: "md",
           color: "currentColor"
-        }, l), n = n = {
+        }, a), n = n = {
           className: u.nitroIcon
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);
@@ -75,7 +76,7 @@ function m(e) {
     }), (0, r.jsx)(i.Text, {
       variant: "text-xs/medium",
       children: c.intl.format(c.t.Sv8iiY, {
-        price: m,
+        price: p,
         subscribeNowHook: e => (0, r.jsx)(o.F, {
           text: e
         })

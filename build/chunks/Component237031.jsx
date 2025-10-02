@@ -1,8 +1,8 @@
-/** Chunk was on 204 **/
+/** Chunk was on 40849 **/
 /** chunk id: 237031, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   T: () => a,
-  v: () => o
+  v: () => u
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -12,17 +12,17 @@ let i = "collectibles shop product details modal",
     let {
       product: t,
       category: a,
-      shouldCheckoutWithOrbs: o,
+      shouldCheckoutWithOrbs: u,
       analyticsSource: s,
       analyticsLocations: c,
-      returnRef: u,
+      returnRef: o,
       tab: d,
-      variantType: p
+      variantType: h
     } = e;
     (0, l.ZDy)(async () => {
       let {
         default: e
-      } = await r.e("2026").then(r.bind(r, 702370));
+      } = await Promise.all([r.e("68255"), r.e("33907")]).then(r.bind(r, 702370));
       return r => {
         var l, i;
         return (0, n.jsx)(e, (l = function(e) {
@@ -45,12 +45,12 @@ let i = "collectibles shop product details modal",
         }({}, r), i = i = {
           product: t,
           category: a,
-          shouldCheckoutWithOrbs: o,
+          shouldCheckoutWithOrbs: u,
           analyticsSource: s,
           analyticsLocations: c,
-          returnRef: u,
+          returnRef: o,
           tab: d,
-          variantType: p
+          variantType: h
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
           var r = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -66,6 +66,6 @@ let i = "collectibles shop product details modal",
       modalKey: i
     })
   },
-  o = () => {
+  u = () => {
     (0, Chunk481060.Mr3)(i)
   }

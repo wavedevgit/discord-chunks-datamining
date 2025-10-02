@@ -1,5 +1,5 @@
 /** Chunk was on 56848 **/
-/** chunk id: 248554, original params: e,t,n (module,exports,require) **/
+/** chunk id: 248554, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   c: () => f,
   i: () => d
@@ -17,14 +17,14 @@ function u(e) {
   let {
     applicationId: t
   } = e, {
-    coverImageUrl: n
+    coverImageUrl: r
   } = (0, l.$)(t);
-  return null != n && "" !== n ? (0, r.jsx)("div", {
+  return null != r && "" !== r ? (0, n.jsx)("div", {
     className: a()(o.coverContainer, c.placeholderCover),
-    children: (0, r.jsx)(s.o, {
-      imageSrc: n
+    children: (0, n.jsx)(s.o, {
+      imageSrc: r
     })
-  }) : (0, r.jsx)("div", {
+  }) : (0, n.jsx)("div", {
     className: a()(o.loadingCover, c.placeholderCover)
   })
 }
@@ -32,20 +32,20 @@ function u(e) {
 function d(e) {
   let {
     applicationId: t,
-    size: n = "default"
+    size: r = "default"
   } = e;
-  return (0, r.jsxs)("div", {
-    className: a()(c.container, c.placeholderDetailsCard, "small" === n && c.sizeSmall),
+  return (0, n.jsxs)("div", {
+    className: a()(c.container, c.placeholderDetailsCard, "small" === r && c.sizeSmall),
     "aria-hidden": true,
-    children: [null != t ? (0, r.jsx)(u, {
+    children: [null != t ? (0, n.jsx)(u, {
       applicationId: t
-    }) : (0, r.jsx)("div", {
+    }) : (0, n.jsx)("div", {
       className: o.loadingCover
-    }), (0, r.jsxs)("div", {
+    }), (0, n.jsxs)("div", {
       className: c.placeholderText,
-      children: [(0, r.jsx)("div", {
+      children: [(0, n.jsx)("div", {
         className: c.placeholderBar
-      }), (0, r.jsx)("div", {
+      }), (0, n.jsx)("div", {
         className: c.placeholderBar
       })]
     })]
@@ -55,12 +55,12 @@ function d(e) {
 function f(e) {
   let {
     applicationIds: t,
-    size: n = "default"
-  } = e, i = "small" === n, l = i ? t.slice(0, 3) : t.slice(0, 4);
-  return (0, r.jsx)("div", {
+    size: r = "default"
+  } = e, i = "small" === r, l = i ? t.slice(0, 3) : t.slice(0, 4);
+  return (0, n.jsx)("div", {
     className: a()(c.container, c.placeholderCoverGrid, i && c.sizeSmall),
     "aria-hidden": true,
-    children: l.map((e, t) => (0, r.jsx)(u, {
+    children: l.map((e, t) => (0, n.jsx)(u, {
       applicationId: e
     }, t))
   })

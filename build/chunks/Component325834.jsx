@@ -1,7 +1,7 @@
-/** Chunk was on 204 **/
+/** Chunk was on 68255 **/
 /** chunk id: 325834, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  r: () => O
+  r: () => j
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk253887 = require("./253887.js");
 
-function g(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -36,7 +36,7 @@ function g(e) {
   return e
 }
 
-function y(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -49,7 +49,7 @@ function y(e, t) {
   }), e
 }
 
-function v(e, t) {
+function g(e, t) {
   if (null == e) return {};
   var r, n, l = function(e, t) {
     if (null == e) return {};
@@ -71,58 +71,58 @@ let m = e => {
       variantIndex: i,
       totalVariants: u,
       selectedVariantIndex: m,
-      onEnter: O,
-      onLeave: P
+      onEnter: j,
+      onLeave: h
     } = e, {
-      isPurchased: j
-    } = (0, p.L)(r), _ = (0, o.JA)("shop-variants-group-".concat(t.storeListingId, "-").concat(i)), {
+      isPurchased: P
+    } = (0, p.L)(r), x = (0, o.JA)("shop-variants-group-".concat(t.storeListingId, "-").concat(i)), {
       onFocus: E
-    } = _, x = v(_, ["onFocus"]), C = l.useCallback(e => {
+    } = x, _ = g(x, ["onFocus"]), w = l.useCallback(e => {
       e.preventDefault(), e.stopPropagation(), (0, d.$)(t, i), E()
-    }, [E, t, i]), S = (0, f.SQ)(r);
+    }, [E, t, i]), C = (0, f.SQ)(r);
     return (0, n.jsx)(c.ua7, {
       text: b.intl.string(b.t["6cfuDg"]),
       "aria-label": false,
-      shouldShow: j,
-      children: e => (0, n.jsx)(c.P3F, y(g({}, x), {
+      shouldShow: P,
+      children: e => (0, n.jsx)(c.P3F, v(O({}, _), {
         tag: "li",
         onMouseEnter: () => {
           var t;
-          O(), null == (t = e.onMouseEnter) || t.call(e)
+          j(), null == (t = e.onMouseEnter) || t.call(e)
         },
         onMouseLeave: () => {
           var t;
-          P(), null == (t = e.onMouseLeave) || t.call(e)
+          h(), null == (t = e.onMouseLeave) || t.call(e)
         },
         onFocus: () => {
           var t;
-          O(), null == (t = e.onMouseEnter) || t.call(e)
+          j(), null == (t = e.onMouseEnter) || t.call(e)
         },
         onBlur: () => {
           var t;
-          P(), null == (t = e.onMouseLeave) || t.call(e)
+          h(), null == (t = e.onMouseLeave) || t.call(e)
         },
-        onClick: C,
+        onClick: w,
         onKeyDown: e => {
-          e.key === s.R8.ENTER && C(e)
+          e.key === s.R8.ENTER && w(e)
         },
-        className: h.thumbnailVariant,
+        className: y.thumbnailVariant,
         children: (0, n.jsxs)("div", {
-          className: a()(h.thumbnailImage, {
-            [h.selected]: i === m
+          className: a()(y.thumbnailImage, {
+            [y.selected]: i === m
           }),
           style: {
             zIndex: u - i
           },
-          children: [null != S && "" !== S && (0, n.jsx)("img", {
-            src: S,
+          children: [null != C && "" !== C && (0, n.jsx)("img", {
+            src: C,
             alt: r.variantLabel,
-            className: h.thumbnailImg,
+            className: y.thumbnailImg,
             onError: e => {
               e.target.style.display = "none"
             }
-          }), j ? (0, n.jsx)("div", {
-            className: h.purchasedIndicator,
+          }), P ? (0, n.jsx)("div", {
+            className: y.purchasedIndicator,
             children: (0, n.jsx)(c.kSu, {
               color: "var(--text-primary)"
             })
@@ -131,7 +131,7 @@ let m = e => {
       }))
     })
   },
-  O = e => {
+  j = e => {
     var t, r;
     let {
       variantGroupProduct: l,
@@ -139,24 +139,24 @@ let m = e => {
       previewingVariantIndexProps: d,
       setIsHoveringOnSwitch: p,
       selectedVariantIndex: f
-    } = e, b = d.previewingVariantIndex, O = null == (t = l.variants) ? true : t[f], P = null !== b ? null == (r = l.variants) ? true : r[b] : true, j = (0, u.Z)("shop-variants-group-".concat(l.storeListingId), s.hy.HORIZONTAL);
-    if (null == O) return null;
-    let _ = null != P ? P.variantLabel : null == O ? true : O.variantLabel;
+    } = e, b = d.previewingVariantIndex, j = null == (t = l.variants) ? true : t[f], h = null !== b ? null == (r = l.variants) ? true : r[b] : true, P = (0, u.Z)("shop-variants-group-".concat(l.storeListingId), s.hy.HORIZONTAL);
+    if (null == j) return null;
+    let x = null != h ? h.variantLabel : null == j ? true : j.variantLabel;
     return (0, n.jsx)(o.bG, {
-      navigator: j,
+      navigator: P,
       children: (0, n.jsx)(o.SJ, {
         children: e => {
           var {
             ref: t
-          } = e, r = v(e, ["ref"]);
-          return (0, n.jsxs)("div", y(g({
+          } = e, r = g(e, ["ref"]);
+          return (0, n.jsxs)("div", v(O({
             ref: t
           }, r), {
-            className: a()(h.variantsPanel, i, {}),
+            className: a()(y.variantsPanel, i, {}),
             onMouseEnter: () => null == p ? true : p(true),
             onMouseLeave: () => null == p ? true : p(false),
             children: [null != l.variants && l.variants.length > 0 && (0, n.jsx)("ol", {
-              className: h.variantsList,
+              className: y.variantsList,
               children: l.variants.map((e, t) => (0, n.jsx)(m, {
                 variantGroupProduct: l,
                 variant: e,
@@ -169,8 +169,8 @@ let m = e => {
             }), (0, n.jsx)(c.Text, {
               variant: "text-xs/medium",
               color: "text-secondary",
-              className: h.variantLabel,
-              children: _
+              className: y.variantLabel,
+              children: x
             })]
           }))
         }

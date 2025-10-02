@@ -1,5 +1,6 @@
-/** Chunk was on 70154 **/
-/** chunk id: 106867, original params: e,n,t (module,exports,require) **/
+/** Chunk was on 88614 **/
+/** chunk id: 106867, original params: e,t,r (module,exports,require) **/
+"use strict";
 module.exports = {
   nitroUpsellContainer: "nitroUpsellContainer_d0caf4",
   nitroWheel: "nitroWheel_d0caf4",

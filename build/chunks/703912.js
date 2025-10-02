@@ -43,7 +43,7 @@ function I(e) {
   return e
 }
 
-function S(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -55,14 +55,14 @@ function S(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let C = "CachedTokens";
+let S = "CachedTokens";
 async function T(e, t, n) {
   let r, l, o, s, c, {
     client_id: u,
     response_type: y = "code",
     redirect_uri: I,
-    code_challenge: S,
-    code_challenge_method: C,
+    code_challenge: C,
+    code_challenge_method: S,
     state: T,
     nonce: N,
     scope: j,
@@ -107,8 +107,8 @@ async function T(e, t, n) {
       scopes: M,
       responseType: y,
       redirectUri: I,
-      codeChallenge: S,
-      codeChallengeMethod: C,
+      codeChallenge: C,
+      codeChallengeMethod: S,
       state: T,
       integrationType: l,
       signal: D
@@ -128,8 +128,8 @@ async function T(e, t, n) {
       scopes: M,
       responseType: y,
       redirectUri: I,
-      codeChallenge: S,
-      codeChallengeMethod: C,
+      codeChallenge: C,
+      codeChallengeMethod: S,
       state: T,
       nonce: N,
       integrationType: l
@@ -154,8 +154,8 @@ async function T(e, t, n) {
     parsedPermissions: U,
     responseType: y,
     redirectUri: I,
-    codeChallenge: S,
-    codeChallengeMethod: C,
+    codeChallenge: C,
+    codeChallengeMethod: S,
     state: T,
     guildId: x,
     channelId: A,
@@ -201,7 +201,7 @@ function N(e, t) {
       type: "RPC_APP_AUTHENTICATED",
       socketId: e.id,
       application: e.application
-    }), S(I({}, n.body), {
+    }), C(I({}, n.body), {
       access_token: t
     })
   }, () => {
@@ -250,25 +250,25 @@ function j(e, t) {
               }
               return ! function(e, t, n, r) {
                 var i;
-                let l = null != (i = c.K.get(C)) ? i : {};
+                let l = null != (i = c.K.get(S)) ? i : {};
                 l[e] = {
                   accessToken: t,
                   scope: n,
                   expires: Date.now() + r
-                }, c.K.set(C, l)
+                }, c.K.set(S, l)
               }(n, l.access_token, l.scope, l.expires_in), N(i, l.access_token)
             });
           return null != (o = function(e, t) {
-            let n = c.K.get(C);
+            let n = c.K.get(S);
             if (null != n && null != n[e]) {
               let r = n[e];
               if (!(r.scope !== t || r.expires <= Date.now())) return r.accessToken;
-              delete n[e], c.K.set(C, n)
+              delete n[e], c.K.set(S, n)
             }
           }(n, s)) ? N(i, o).catch(() => {
             var e;
-            let t = null != (e = c.K.get(C)) ? e : {};
-            return delete t[n], c.K.set(C, t), u()
+            let t = null != (e = c.K.get(S)) ? e : {};
+            return delete t[n], c.K.set(S, t), u()
           }) : u()
         }
         if (null == o) throw new E.Z({
@@ -301,7 +301,7 @@ function j(e, t) {
           errorCode: v.lTL.INVALID_CLIENTID
         }, "Application does not match the connection's");
         let s = l.scopes || l.scope;
-        return delete l.scopes, T(S(I({}, l), {
+        return delete l.scopes, T(C(I({}, l), {
           scope: s,
           signal: i,
           isSocketRpcPrivateScope: o

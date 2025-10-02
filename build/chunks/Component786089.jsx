@@ -74,7 +74,7 @@ let j = (0, Chunk647438.memo)(function(e) {
       return i
     }(er, ["content_position", "row_index"]),
     eo = () => {
-      w(true), b.default.track(C.rMx.QUEST_HOVER, function(e) {
+      w(true), b.default.track(S.rMx.QUEST_HOVER, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -97,7 +97,7 @@ let j = (0, Chunk647438.memo)(function(e) {
     },
     es = () => w(false),
     ec = e => {
-      k(true), b.default.track(C.rMx.QUEST_ASSET_LOADING_FAILURE, {
+      k(true), b.default.track(S.rMx.QUEST_ASSET_LOADING_FAILURE, {
         source: e,
         asset_id: e,
         quest_id: A.id
@@ -153,7 +153,7 @@ let j = (0, Chunk647438.memo)(function(e) {
         style: {
           transform: "translateY(-".concat(en, "px)")
         },
-        children: (0, r.jsx)(S.ZP, {
+        children: (0, r.jsx)(C.ZP, {
           logotypeClassName: a()(N.logo, {
             [N.logoWithCosponsor]: ee
           }),

@@ -184,7 +184,7 @@ function ef(e) {
         children: (0, r.jsx)(ep, {
           onLoadComplete: t
         })
-      }), (0, r.jsx)(S.Z, {
+      }), (0, r.jsx)(C.Z, {
         children: (0, r.jsxs)("div", {
           className: ei.redirectNoticeContainer,
           children: [(0, r.jsx)(d.X6q, {

@@ -1,5 +1,6 @@
-/** Chunk was on 2026 **/
+/** Chunk was on 33907 **/
 /** chunk id: 281004, original params: e,t,n (module,exports,require) **/
+"use strict";
 module.exports = {
   container: "container__3a77d",
   headerAsset: "headerAsset__3a77d",

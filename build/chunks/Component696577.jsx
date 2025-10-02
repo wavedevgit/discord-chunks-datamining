@@ -91,7 +91,7 @@ function I(e) {
   })
 }
 
-function S(e) {
+function C(e) {
   let {
     isGameRelationship: t,
     applicationId: n,
@@ -120,7 +120,7 @@ function S(e) {
   })
 }
 
-function C(e) {
+function S(e) {
   let {
     user: t,
     hovered: n,
@@ -133,7 +133,7 @@ function C(e) {
     hovered: n,
     status: i,
     showAccountIdentifier: !l && !t.isProvisional,
-    subText: (0, r.jsx)(S, {
+    subText: (0, r.jsx)(C, {
       isGameRelationship: l,
       isProvisional: t.isProvisional,
       applicationId: a,
@@ -162,7 +162,7 @@ function T(e) {
     onClick: f,
     children: e => (0, r.jsxs)("div", {
       className: y.listItemContents,
-      children: [(0, r.jsx)(C, {
+      children: [(0, r.jsx)(S, {
         user: t,
         hovered: e,
         status: d,

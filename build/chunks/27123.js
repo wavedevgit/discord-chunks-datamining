@@ -1,4 +1,4 @@
-/** Chunk was on 204 **/
+/** Chunk was on 40849 **/
 /** chunk id: 27123, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   T: () => i,
@@ -9,9 +9,9 @@ let l = e => {
     var t, r, l, i;
     let {
       product: a,
-      isPremiumUser: o
+      isPremiumUser: u
     } = e;
-    return null != (i = null == (l = a.prices[o ? n.tuJ.PREMIUM_TIER_2 : n.tuJ.DEFAULT]) || null == (r = l.countryPrices) || null == (t = r.prices) ? true : t.slice(0, 2)) ? i : []
+    return null != (i = null == (l = a.prices[u ? n.tuJ.PREMIUM_TIER_2 : n.tuJ.DEFAULT]) || null == (r = l.countryPrices) || null == (t = r.prices) ? true : t.slice(0, 2)) ? i : []
   },
   i = e => {
     var t;

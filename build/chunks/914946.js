@@ -170,7 +170,7 @@ function F(e, t, n) {
   } = n, c = v.default.getUser(s);
   if (null == c) throw Error("Invalid user id: ".concat(s));
   return {
-    nick: C.ZP.getName(e, t, c),
+    nick: S.ZP.getName(e, t, c),
     mute: O.Z.isLocalMute(c.id),
     volume: O.Z.getLocalVolume(c.id),
     pan: O.Z.getLocalPan(c.id),

@@ -1,10 +1,10 @@
-/** Chunk was on 36288 **/
-/** chunk id: 235897, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 88614 **/
+/** chunk id: 235897, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => r
+  Z: () => n
 });
-let r = (0, require("./427164.js").le)({
+let n = (0, require("./427164.js").le)({
   name: "2025-09-lecinski-aa",
   kind: "user",
   defaultConfig: {

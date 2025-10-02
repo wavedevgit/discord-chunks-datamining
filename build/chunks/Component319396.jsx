@@ -1,5 +1,5 @@
 /** Chunk was on 56848 **/
-/** chunk id: 319396, original params: e,t,n (module,exports,require) **/
+/** chunk id: 319396, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => d
 });
@@ -15,13 +15,13 @@ var Chunk442837 = require("./442837.js"),
 function u(e) {
   let {
     item: t,
-    profileOwner: n,
+    profileOwner: r,
     wishlistId: i,
     isOwner: l
   } = e;
-  return (0, a.Q)(t) ? (0, r.jsx)(o.Z, {
+  return (0, a.Q)(t) ? (0, n.jsx)(o.Z, {
     item: t,
-    profileOwner: n,
+    profileOwner: r,
     wishlistId: i,
     isOwner: l
   }) : null
@@ -30,19 +30,19 @@ function u(e) {
 function d(e) {
   let {
     items: t,
-    profileOwner: n,
+    profileOwner: r,
     isOwner: a
   } = e, o = l.default.getCurrentUser(), {
     defaultWishlistId: d
   } = (0, i.cj)([s.Z], () => ({
-    defaultWishlistId: s.Z.getFirstWishlistId(n.id)
+    defaultWishlistId: s.Z.getFirstWishlistId(r.id)
   }));
-  return null == o || null == d ? null : (0, r.jsx)("ul", {
+  return null == o || null == d ? null : (0, n.jsx)("ul", {
     className: c.grid,
-    children: t.map(e => (0, r.jsx)("li", {
-      children: (0, r.jsx)(u, {
+    children: t.map(e => (0, n.jsx)("li", {
+      children: (0, n.jsx)(u, {
         item: e,
-        profileOwner: n,
+        profileOwner: r,
         wishlistId: d,
         isOwner: a
       })

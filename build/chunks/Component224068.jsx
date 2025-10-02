@@ -1,12 +1,13 @@
-/** Chunk was on 2026 **/
+/** Chunk was on 33907 **/
 /** chunk id: 224068, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => d
 }), require("./314940.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk278074 = require("./278074.js"),
   Chunk979554 = require("./979554.js"),
   Chunk481060 = require("./481060.js"),
@@ -19,10 +20,10 @@ function d(e) {
     product: n,
     isDarkText: i = false,
     isOrbExclusive: d = false
-  } = e, m = (t = n.type, d ? c.intl.string(c.t["0TmQRE"]) : (0, a.EQ)(t).with(o.Z.AVATAR_DECORATION, () => c.intl.string(c.t["7v0T9P"])).with(o.Z.PROFILE_EFFECT, () => c.intl.string(c.t.wR5wOj)).otherwise(() => null));
-  return null === m ? null : (0, r.jsx)(s.Text, {
+  } = e, p = (t = n.type, d ? c.intl.string(c.t["0TmQRE"]) : (0, l.EQ)(t).with(o.Z.AVATAR_DECORATION, () => c.intl.string(c.t["7v0T9P"])).with(o.Z.PROFILE_EFFECT, () => c.intl.string(c.t.wR5wOj)).otherwise(() => null));
+  return null === p ? null : (0, r.jsx)(s.Text, {
     variant: "text-xxs/normal",
-    className: l()([u.container, i ? u.darkText : u.lightText]),
-    children: m
+    className: a()([u.container, i ? u.darkText : u.lightText]),
+    children: p
   })
 }

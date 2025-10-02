@@ -1,5 +1,5 @@
 /** Chunk was on 204 **/
-/** chunk id: 642909, original params: e,t,r (module,exports,require) **/
+/** chunk id: 642909, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
   G: () => a
 });
@@ -10,11 +10,11 @@ var Chunk442837 = require("./442837.js"),
 function a(e) {
   let {
     enableShopTakeOver: t
-  } = i.Z.useConfig({
+  } = n.Z.useConfig({
     location: e
-  }), r = (0, n.e7)([l.Z], () => {
+  }), i = (0, l.e7)([r.Z], () => {
     var e;
-    return null == (e = l.Z.enableCustomCursor) || e
+    return null == (e = r.Z.enableCustomCursor) || e
   });
-  return t && r
+  return t && i
 }

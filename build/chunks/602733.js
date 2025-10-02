@@ -1,7 +1,7 @@
-/** Chunk was on 18539 **/
-/** chunk id: 602733, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 93886 **/
+/** chunk id: 602733, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  k: () => a,
+  k: () => s,
   n: () => c
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
@@ -10,20 +10,20 @@ var Chunk647438 = require("./647438.js"),
   Chunk277511 = require("./277511.js"),
   Chunk607550 = require("./607550.js");
 
-function a(e) {
-  let t = (0, s.S)({
+function s(e) {
+  let t = (0, a.S)({
       location: "UserProfileModalV2"
     }),
-    [r, a, c] = (0, i.Wu)([u.Z], () => null != e && t ? [u.Z.getWishlist(e), u.Z.isFetching(e), u.Z.getError(e)] : [null, false, true]);
-  return (0, n.useEffect)(() => {
-    null != e && null == r && !a && t && o.Z.fetchWishlist(e)
-  }, [e, r, a, t]), {
-    wishlist: r,
-    isFetching: a,
+    [n, s, c] = (0, i.Wu)([o.Z], () => null != e && t ? [o.Z.getWishlist(e), o.Z.isFetching(e), o.Z.getError(e)] : [null, false, true]);
+  return (0, r.useEffect)(() => {
+    null != e && null == n && !s && t && l.Z.fetchWishlist(e)
+  }, [e, n, s, t]), {
+    wishlist: n,
+    isFetching: s,
     error: c
   }
 }
 
 function c(e, t) {
-  return (0, i.e7)([u.Z], () => null != e && u.Z.hasSkuId(e, t))
+  return (0, i.e7)([o.Z], () => null != e && o.Z.hasSkuId(e, t))
 }
