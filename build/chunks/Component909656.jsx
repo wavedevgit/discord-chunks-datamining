@@ -143,8 +143,8 @@ function k(e) {
     error: H,
     updateSubscriptionsSettings: z
   } = (0, y.QV)(), {
-    imageCTA: V,
-    imageAriaLabel: W,
+    imageCTA: W,
+    imageAriaLabel: V,
     setFilename: K
   } = (0, N.Z)(null == a ? true : a.cover_image_asset), Y = (0, x.Dt)(), q = (0, x.Dt)(), X = (0, x.Dt)();
 
@@ -234,7 +234,7 @@ function k(e) {
         children: P.intl.string(P.t.i2rCwc)
       }), (0, r.jsx)(v.Z, {
         image: A,
-        hint: V,
+        hint: W,
         showIcon: true,
         showRemoveButton: false,
         hideSize: true,
@@ -243,15 +243,15 @@ function k(e) {
         imageClassName: w.coverImageUploaderInner,
         iconClassName: w.coverImageUploaderIcon,
         onChange: J,
-        "aria-label": W,
+        "aria-label": V,
         disabled: ee
       }), (0, r.jsx)(p.LZC, {
         size: 16
       }), (0, r.jsx)(j.Z, {
         onChange: J,
-        "aria-label": W,
+        "aria-label": V,
         disabled: ee,
-        text: V,
+        text: W,
         variant: "secondary",
         size: "md"
       })]

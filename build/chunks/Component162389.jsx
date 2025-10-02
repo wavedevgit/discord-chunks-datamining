@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk244736 = require("./244736.js");
 
-function x(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -62,7 +62,7 @@ function y(e) {
       let {
         default: e
       } = await n.e("21971").then(n.bind(n, 201049));
-      return n => (0, i.jsx)(e, v(x({}, n), {
+      return n => (0, i.jsx)(e, v(j({}, n), {
         channelId: t.id,
         guildId: t.guild_id
       }))
@@ -72,7 +72,7 @@ function y(e) {
       let {
         default: l
       } = await n.e("21971").then(n.bind(n, 201049));
-      return n => (0, i.jsx)(l, v(x({}, n), {
+      return n => (0, i.jsx)(l, v(j({}, n), {
         channelId: t.id,
         guildId: t.guild_id,
         tag: e
@@ -88,7 +88,7 @@ function y(e) {
     })
   });
   return (0, i.jsxs)("div", {
-    className: j.tags,
+    className: x.tags,
     children: [p ? t.availableTags.map(e => (0, i.jsx)(C, {
       tag: e,
       availableTags: t.availableTags,
@@ -99,8 +99,8 @@ function y(e) {
       onDragStart: S
     }, e.id)) : null, p ? (0, i.jsx)(c.P3F, {
       onClick: y,
-      className: s()(j.addTags, {
-        [j.disabled]: !r || u
+      className: s()(x.addTags, {
+        [x.disabled]: !r || u
       }),
       children: (0, i.jsx)(c.qJs, {
         size: "custom",
@@ -141,9 +141,9 @@ function C(e) {
     onDragReset: c
   });
   return (0, i.jsx)("div", {
-    className: s()(j.container, {
-      [j.dropIndicatorBefore]: null != g && d < g,
-      [j.dropIndicatorAfter]: null != g && d > g
+    className: s()(x.container, {
+      [x.dropIndicatorBefore]: null != g && d < g,
+      [x.dropIndicatorAfter]: null != g && d > g
     }),
     ref: e => {
       h(m(e))

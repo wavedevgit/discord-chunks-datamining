@@ -27,14 +27,13 @@ function f() {
   } = (0, Chunk906732.ZP)();
   return (0, Chunk951288.jsxs)(Chunk921801.F, {
     setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_SIDECHAIN_COMPRESSION,
-    children: [(0, Chunk951288.jsx)(Chunk481060.j7V, {
-      value: module,
+    children: [(0, Chunk951288.jsx)(Chunk481060.rsf, {
+      label: Chunk388032.intl.string(Chunk388032.t["/jwMtr"]),
+      description: Chunk388032.intl.string(Chunk388032.t.zlA23N),
+      checked: module,
       onChange: e => o.Z.setSidechainCompression(e, {
         analyticsLocations: n
-      }),
-      note: Chunk388032.intl.string(Chunk388032.t.zlA23N),
-      hideBorder: true,
-      children: Chunk388032.intl.string(Chunk388032.t["/jwMtr"])
+      })
     }), (0, Chunk951288.jsx)(Chunk481060.iRW, {
       label: Chunk388032.intl.string(Chunk388032.t.fhEzfn),
       initialValue: exports,

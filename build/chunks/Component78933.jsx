@@ -127,10 +127,10 @@ function es(e) {
     eP = (0, h.p)({
       location: "UserProfileAccountPopout"
     }),
-    eI = (0, y.b)({
+    ek = (0, y.b)({
       location: "UserProfileAccountPopout"
     }),
-    ek = r.useRef(null),
+    eI = r.useRef(null),
     ew = r.useRef((0, W.Z)(e => e.shouldRenderTenureLevelUp)),
     eR = r.useMemo(() => (0, x.Z)(), []),
     [eA, eZ] = r.useState(true);
@@ -188,7 +188,7 @@ function es(e) {
               themeType: en.l.POPOUT,
               onOpenProfile: em ? true : eD
             }), (0, a.jsx)(D.Z, {
-              ref: ek,
+              ref: eI,
               user: t,
               themeType: en.l.POPOUT,
               onCloseProfile: n,
@@ -213,7 +213,7 @@ function es(e) {
                 shouldGlowTenureBadge: ew.current
               }),
               nicknameIcons: (0, a.jsxs)(a.Fragment, {
-                children: [(0, a.jsx)(k.Z, {
+                children: [(0, a.jsx)(I.Z, {
                   userId: t.id
                 }), (0, a.jsx)(Z.Z, {
                   user: t,
@@ -235,12 +235,12 @@ function es(e) {
             }), (0, a.jsx)(P.Z, {
               isPremiumUser: eO,
               onInteraction: n
-            }), eI ? (0, a.jsx)(w.Z, {
+            }), ek ? (0, a.jsx)(w.Z, {
               user: t,
               currentUser: t,
               onOpenUserProfileModal: eD,
               onClose: n
-            }) : (0, a.jsx)(I.Z, {
+            }) : (0, a.jsx)(k.Z, {
               user: t,
               currentUser: t,
               onClose: n

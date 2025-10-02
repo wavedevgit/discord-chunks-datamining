@@ -1,8 +1,8 @@
-/** Chunk was on 89368 **/
+/** Chunk was on 27208 **/
 /** chunk id: 775666, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   EQ: () => p,
-  T5: () => L,
+  T5: () => E,
   ZP: () => N
 }), require("./388685.js"), require("./997841.js");
 var Chunk951288 = require("./951288.js"),
@@ -36,7 +36,7 @@ function p(e) {
     [g, u] = a.useState(d),
     [S, N] = a.useState(false),
     p = S ? c.s8.CUSTOM : n.preset,
-    E = L(e, () => N(false)),
+    L = E(e, () => N(false)),
     m = (0, s.e7)([l.ZP], () => l.ZP.getNewForumThreadsCreated(e)),
     f = "parent" === t.inheritedFrom ? b.intl.string(b.t.wlrV1d) : b.intl.string(b.t["1Wn2Mz"]);
   return e.type === h.d4z.GUILD_STAGE_VOICE ? (0, i.jsxs)(_.kSQ, {
@@ -101,11 +101,11 @@ function p(e) {
         checked: S || !t.inherited && p === c.s8.CUSTOM,
         action: () => (u(true), N(true))
       })]
-    }), (g || d) && E]
+    }), (g || d) && L]
   })
 }
 
-function L(e, n) {
+function E(e, n) {
   let {
     notification: t,
     unread: a

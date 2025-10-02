@@ -340,7 +340,7 @@ function k() {
   Chunk647438.useEffect(() => {
     B(z.current)
   }, [B]);
-  let V = Chunk647438.useMemo(() => {
+  let W = Chunk647438.useMemo(() => {
     var e;
     return null != (e = F[M.currentPage - 1]) ? module : []
   }, [F, M.currentPage]);
@@ -354,7 +354,7 @@ function k() {
       children: [!G && (0, Chunk951288.jsx)(A, {
         guild: Chunk239091,
         bans: Chunk246946,
-        sortedBans: V,
+        sortedBans: W,
         ref: Chunk84613
       }), !k && G && (0, Chunk951288.jsxs)(Chunk481060.ubH, {
         theme: Chunk51144,

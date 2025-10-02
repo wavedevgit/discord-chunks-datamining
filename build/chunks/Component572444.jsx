@@ -105,8 +105,8 @@ function _() {
     krispModels: T,
     krispModelOverride: O,
     inputMode: P,
-    echoCancellation: I,
-    autoThreshold: k,
+    echoCancellation: k,
+    autoThreshold: I,
     vadUseKrisp: w,
     vadKrispActivationThreshold: R,
     noiseCancellation: A,
@@ -211,35 +211,33 @@ function _() {
         }), (0, Chunk951288.jsx)(Chunk481060.hjN, {
           title: "Noise Cancellation Stats",
           tag: Chunk481060.RB0.H3,
-          children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
-            value: M,
-            onChange: e => d.Z.setNoiseCancellationEnableStats(e),
-            children: "Enable Stats"
+          children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
+            label: "Enable Stats",
+            checked: M,
+            onChange: e => d.Z.setNoiseCancellationEnableStats(e)
           })
         })]
       }), P === Chunk65154.pM.VOICE_ACTIVITY && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
         children: [(0, Chunk951288.jsx)(Chunk481060.hjN, {
           title: "VAD Auto Threshold",
           tag: Chunk481060.RB0.H3,
-          children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
-            hideBorder: true,
-            value: k,
+          children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
+            label: "Auto Threshold",
+            checked: I,
             onChange: e => d.Z.setMode(f.pM.VOICE_ACTIVITY, {
               autoThreshold: e
-            }),
-            children: "Auto Threshold"
+            })
           })
-        }), k && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+        }), I && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
           children: [(0, Chunk951288.jsx)(Chunk481060.hjN, {
             title: "VAD Krisp Auto Threshold",
             tag: Chunk481060.RB0.H3,
-            children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
-              hideBorder: true,
-              value: w,
+            children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
+              label: "Use Krisp VAD",
+              checked: w,
               onChange: e => d.Z.setMode(f.pM.VOICE_ACTIVITY, {
                 vadUseKrisp: e
-              }),
-              children: "Use Krisp VAD"
+              })
             })
           }), w && (0, Chunk951288.jsx)(Chunk481060.hjN, {
             title: "Krisp VAD Activation Threshold",
@@ -256,11 +254,10 @@ function _() {
         })]
       }), (0, Chunk951288.jsx)(Chunk481060.hjN, {
         tag: Chunk481060.RB0.H3,
-        children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
-          hideBorder: true,
-          value: I,
-          onChange: e => d.Z.setEchoCancellation(e),
-          children: "Echo Cancellation"
+        children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
+          label: "Echo Cancellation",
+          checked: k,
+          onChange: e => d.Z.setEchoCancellation(e)
         })
       }), (0, Chunk951288.jsx)(Chunk481060.hjN, {
         title: "Recorder",
@@ -285,7 +282,7 @@ function _() {
                 audioBuffer: i,
                 createdAt: Date.now(),
                 suppression: U,
-                echoCancellation: I,
+                echoCancellation: k,
                 krispSuppressionLevel: v
               }])
             })

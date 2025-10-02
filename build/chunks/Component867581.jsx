@@ -18,10 +18,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk927931 = require("./927931.js"),
   Chunk216019 = require("./216019.js"),
   Chunk286359 = require("./286359.js");
-let S = "hTKzmak",
-  O = (r = window.GLOBAL_ENV.INVITE_HOST, o = "", null == r && (r = location.host, o = Chunk981631.Z5c.INVITE("")), "".concat(location.protocol, "//").concat(r).concat(o, "/")),
-  b = [S, "".concat(O).concat(S), "".concat(O).concat("wumpus-friends")],
-  E = e => {
+let O = "hTKzmak",
+  S = (r = window.GLOBAL_ENV.INVITE_HOST, o = "", null == r && (r = location.host, o = Chunk981631.Z5c.INVITE("")), "".concat(location.protocol, "//").concat(r).concat(o, "/")),
+  E = [O, "".concat(S).concat(O), "".concat(S).concat("wumpus-friends")],
+  b = e => {
     let {
       onClick: t
     } = e;
@@ -64,7 +64,7 @@ function C(e) {
     var e;
     r && (null == (e = x.current) || e.focus())
   }, [r]);
-  let g = e => {
+  let h = e => {
     e.preventDefault();
     let t = o.trim();
     if ("" === t) return void C(f.intl.string(f.t.IRq5am));
@@ -116,7 +116,7 @@ function C(e) {
     }), (0, l.jsxs)(s.hzk, {
       className: I.__invalid_content,
       children: [(0, l.jsx)("form", {
-        onSubmit: g,
+        onSubmit: h,
         className: I.inputForm,
         children: (0, l.jsx)(s.oil, {
           label: f.intl.string(f.t.qreV29),
@@ -124,7 +124,7 @@ function C(e) {
           error: T,
           value: o,
           onChange: d,
-          placeholder: "".concat(O).concat(S),
+          placeholder: "".concat(S).concat(O),
           inputRef: x
         })
       }), (0, l.jsx)(s.Text, {
@@ -133,12 +133,12 @@ function C(e) {
         children: f.intl.string(f.t.Bnq46O)
       }), (0, l.jsx)("div", {
         className: I.sampleLinks,
-        children: b.map(e => (0, l.jsx)(s.P3F, {
+        children: E.map(e => (0, l.jsx)(s.P3F, {
           className: I.sampleLink,
           onClick: () => d(e),
           children: e
         }, e))
-      }), (0, l.jsx)(E, {
+      }), (0, l.jsx)(b, {
         onClick: n
       })]
     }), (0, l.jsxs)(s.mzw, {
@@ -147,7 +147,7 @@ function C(e) {
         variant: "primary",
         text: f.intl.string(f.t["Ts/9AQ"]),
         loading: m,
-        onClick: g
+        onClick: h
       }), (0, l.jsx)(a.zx, {
         color: a.zx.Colors.PRIMARY,
         look: a.zx.Looks.LINK,

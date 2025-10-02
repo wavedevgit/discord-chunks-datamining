@@ -79,17 +79,15 @@ function D(e) {
       children: T.intl.format(T.t.stagfH, {
         onEnableClick: () => u.Z.enable(true)
       })
-    }), y ? null : (0, r.jsx)(c.j7V, {
-      className: S.previewToggle,
-      hideBorder: true,
-      note: T.intl.string(T.t.WNbX4O),
+    }), y ? null : (0, r.jsx)(c.rsf, {
+      label: T.intl.string(T.t["3Ppr1t"]),
+      description: T.intl.string(T.t.WNbX4O),
+      checked: L,
       onChange: e => {
         m.qF.updateSetting(e), b.default.track(O.rMx.UPDATE_USER_SETTINGS_LOCAL, {
           always_preview_video: e
         })
-      },
-      value: L,
-      children: T.intl.string(T.t["3Ppr1t"])
+      }
     }), !t && (0, r.jsx)(h.F, {
       setting: v.s6.VOICE_AND_VIDEO_VIDEO_CAMERA_PREVIEW,
       children: (0, r.jsx)(_.j, {

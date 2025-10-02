@@ -28,11 +28,11 @@ function b(e) {
     enabled: i,
     subLabel: a
   } = e;
-  return (0, r.jsx)(c.j7V, {
-    value: !!i,
+  return (0, r.jsx)(c.rsf, {
+    label: t,
+    checked: !!i,
     onChange: n,
-    note: a,
-    children: t
+    description: a
   })
 }
 
@@ -66,10 +66,8 @@ function y() {
     setting: Chunk726985.s6.NOTIFICATIONS_EMAILS,
     children: [(0, Chunk951288.jsx)("div", {
       ref: exports
-    }), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
-      className: Chunk10198.marginTop40,
-      tag: Chunk481060.RB0.H1,
-      title: Chunk388032.intl.string(Chunk388032.t.TPchzM),
+    }), (0, Chunk951288.jsxs)(Chunk481060.C3N, {
+      label: Chunk388032.intl.string(Chunk388032.t.TPchzM),
       children: [Chunk930441.Od.map(e => {
         let {
           category: t,

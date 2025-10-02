@@ -2,14 +2,12 @@
 /** chunk id: 309739, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => H
+  Z: () => F
 }), require("./388685.js"), require("./781311.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
   Chunk658722 = require("./658722.js"),
-  l = require.n(Chunk658722),
+  o = require.n(Chunk658722),
   Chunk442837 = require("./442837.js"),
   Chunk524437 = require("./524437.js"),
   Chunk780384 = require("./780384.js"),
@@ -35,7 +33,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk174546 = require("./174546.js"),
   Chunk10198 = require("./10198.js");
 
-function L(e, t, n) {
+function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -44,20 +42,20 @@ function L(e, t, n) {
   }) : e[t] = n, e
 }
 
-function x(e) {
+function D(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      L(e, t, n[t])
+      w(e, t, n[t])
     })
   }
   return e
 }
 
-function j(e, t) {
+function L(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -68,42 +66,42 @@ function j(e, t) {
   return n
 }
 
-function M(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
+function x(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function k(e) {
+function j(e) {
   let t = () => {
-    A.SE.updateSetting(e ? O.Z.getGuildIds() : [])
+    T.SE.updateSetting(e ? b.Z.getGuildIds() : [])
   };
-  (0, _.h7j)(e => (0, r.jsx)(_.ConfirmModal, M(x({
-    header: P.intl.string(P.t["uUr+GR"]),
-    confirmText: P.intl.string(P.t.gm1Ven),
-    cancelText: P.intl.string(P.t.p89ACg),
+  (0, d.h7j)(e => (0, r.jsx)(d.ConfirmModal, x(D({
+    header: N.intl.string(N.t["uUr+GR"]),
+    confirmText: N.intl.string(N.t.gm1Ven),
+    cancelText: N.intl.string(N.t.p89ACg),
     onCancel: t,
-    confirmButtonColor: f.zx.Colors.BRAND
+    confirmButtonColor: u.zx.Colors.BRAND
   }, e), {
-    children: (0, r.jsx)(_.Text, {
+    children: (0, r.jsx)(d.Text, {
       variant: "text-md/normal",
-      children: P.intl.string(P.t.EFu2Ki)
+      children: N.intl.string(N.t.EFu2Ki)
     })
   })))
 }
 
-function U() {
+function M() {
   let e = Chunk695346.G6.useSetting(),
     t = Chunk695346.no.useSetting(),
     n = (0, Chunk362352.Yd)("activity privacy tab"),
     i = Chunk358085.isPlatformEmbedded ? Chunk388032.intl.string(Chunk388032.t.MznbeH) : Chunk388032.intl.string(Chunk388032.t.oKqC4u),
     a = e => {
-      A.no.updateSetting(e ? u.GI.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS : u.GI.ACTIVITY_STATUS_OFF), k(e)
+      T.no.updateSetting(e ? l.GI.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS : l.GI.ACTIVITY_STATUS_OFF), j(e)
     },
-    s = e => {
-      A.no.updateSetting(e), k(e !== u.GI.ACTIVITY_STATUS_OFF)
+    o = e => {
+      T.no.updateSetting(e), j(e !== l.GI.ACTIVITY_STATUS_OFF)
     },
-    l = [{
+    s = [{
       value: Chunk524437.GI.ACTIVITY_STATUS_ON,
       label: Chunk388032.intl.string(Chunk388032.t.UzGMHx)
     }, {
@@ -115,72 +113,56 @@ function U() {
     }];
   return (0, Chunk951288.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.ACTIVITY_PRIVACY_STATUS,
-    children: (0, Chunk951288.jsxs)(Chunk481060.hjN, {
-      children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
-        className: Chunk10198.marginBottom8,
-        children: Chunk388032.intl.string(Chunk388032.t["8ka8lp"])
-      }), (0, Chunk951288.jsx)(Chunk481060.j7V, {
-        value: module,
-        onChange: e => A.G6.updateSetting(e),
-        note: Chunk647438,
-        children: Chunk388032.intl.string(Chunk388032.t["4q/Ewc"])
-      }), require ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-        children: [(0, Chunk951288.jsxs)(Chunk481060.xJW, {
-          tag: Chunk481060.RB0.H3,
-          title: Chunk388032.intl.string(Chunk388032.t.ffGYGx),
-          children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
-            variant: "text-sm/normal",
-            color: "header-secondary",
-            className: Chunk10198.marginBottom8,
-            children: Chunk388032.intl.format(Chunk388032.t.aUxRra, {
-              helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.ACTIVITY_STATUS_SETTINGS)
-            })
-          }), (0, Chunk951288.jsx)(Chunk481060.q4e, {
-            options: l,
-            value: exports,
-            onChange: e => s(e)
-          })]
-        }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
-          className: o()(Chunk10198.marginBottom20, Chunk10198.marginTop20)
-        })]
-      }) : (0, Chunk951288.jsx)(Chunk481060.j7V, {
-        value: exports === Chunk524437.GI.ACTIVITY_STATUS_OFF,
-        note: Chunk388032.intl.format(Chunk388032.t["+5/xu7"], {
+    children: (0, Chunk951288.jsxs)(Chunk481060.C3N, {
+      label: Chunk388032.intl.string(Chunk388032.t["8ka8lp"]),
+      children: [(0, Chunk951288.jsx)(Chunk481060.rsf, {
+        label: Chunk388032.intl.string(Chunk388032.t["4q/Ewc"]),
+        description: Chunk647438,
+        checked: module,
+        onChange: e => T.G6.updateSetting(e)
+      }), require ? (0, Chunk951288.jsx)(Chunk481060.q4e, {
+        label: Chunk388032.intl.string(Chunk388032.t.ffGYGx),
+        description: Chunk388032.intl.format(Chunk388032.t.aUxRra, {
           helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.ACTIVITY_STATUS_SETTINGS)
         }),
-        onChange: e => a(!e),
-        children: Chunk388032.intl.string(Chunk388032.t.D5GXTU)
+        options: Chunk442837,
+        value: exports,
+        onChange: e => o(e)
+      }) : (0, Chunk951288.jsx)(Chunk481060.rsf, {
+        label: Chunk388032.intl.string(Chunk388032.t.D5GXTU),
+        description: Chunk388032.intl.format(Chunk388032.t["+5/xu7"], {
+          helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.ACTIVITY_STATUS_SETTINGS)
+        }),
+        checked: exports === Chunk524437.GI.ACTIVITY_STATUS_OFF,
+        onChange: e => a(!e)
       })]
     })
   })
 }
 
-function G() {
+function k() {
   let e = Chunk695346.cP.useSetting(),
     t = Chunk695346.Ou.useSetting();
   return (0, Chunk951288.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.ACTIVITY_PRIVACY_RICH_PRESENCE,
-    children: (0, Chunk951288.jsxs)(Chunk481060.hjN, {
-      className: Chunk10198.marginBottom40,
-      children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
-        className: Chunk10198.marginBottom8,
-        children: Chunk388032.intl.string(Chunk388032.t.VOszPD)
-      }), (0, Chunk951288.jsx)(Chunk481060.j7V, {
-        value: module,
-        note: Chunk388032.intl.string(Chunk388032.t.Hdh7sb),
-        onChange: e => A.cP.updateSetting(e),
-        children: Chunk388032.intl.string(Chunk388032.t.WEWQQk)
-      }), (0, Chunk951288.jsx)(Chunk481060.j7V, {
-        value: exports,
-        note: Chunk388032.intl.string(Chunk388032.t.Czr3Bg),
-        onChange: e => A.Ou.updateSetting(e),
-        children: Chunk388032.intl.string(Chunk388032.t.UUvJVl)
+    children: (0, Chunk951288.jsxs)(Chunk481060.C3N, {
+      label: Chunk388032.intl.string(Chunk388032.t.VOszPD),
+      children: [(0, Chunk951288.jsx)(Chunk481060.rsf, {
+        label: Chunk388032.intl.string(Chunk388032.t.WEWQQk),
+        description: Chunk388032.intl.string(Chunk388032.t.Hdh7sb),
+        checked: module,
+        onChange: e => T.cP.updateSetting(e)
+      }), (0, Chunk951288.jsx)(Chunk481060.rsf, {
+        label: Chunk388032.intl.string(Chunk388032.t.UUvJVl),
+        description: Chunk388032.intl.string(Chunk388032.t.Czr3Bg),
+        checked: exports,
+        onChange: e => T.Ou.updateSetting(e)
       })]
     })
   })
 }
 
-function B() {
+function U() {
   return (0, Chunk951288.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.ACTIVITY_PRIVACY_TOS,
     children: (0, Chunk951288.jsx)(Chunk481060.hjN, {
@@ -195,107 +177,94 @@ function B() {
     })
   })
 }
-let Z = e => {
+let G = e => {
   switch (e.type) {
-    case R.ABu.SPOTIFY:
-      return P.intl.format(P.t["5sYPnp"], {
+    case C.ABu.SPOTIFY:
+      return N.intl.format(N.t["5sYPnp"], {
         name: e.name
       });
-    case R.ABu.CRUNCHYROLL:
-      return P.intl.format(P.t.Ge29Z2, {
+    case C.ABu.CRUNCHYROLL:
+      return N.intl.format(N.t.Ge29Z2, {
         name: e.name
       });
     default:
-      return P.intl.format(P.t.nmMsys, {
+      return N.intl.format(N.t.nmMsys, {
         game: e.name
       })
   }
 };
 
-function F(e) {
+function B(e) {
   let {
     account: t
-  } = e, [n, a] = i.useState(t.showActivity), o = (0, h.ZP)();
+  } = e, [n, a] = i.useState(t.showActivity), o = (0, _.ZP)();
 
   function s(e) {
-    a(e), p.Z.setShowActivity(t.type, t.id, e)
+    a(e), f.Z.setShowActivity(t.type, t.id, e)
   }
   i.useEffect(() => {
     a(t.showActivity)
   }, [t]);
-  let l = m.Z.get(t.type);
+  let l = p.Z.get(t.type);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(_.j7V, {
-      className: w.switchRowContainer,
-      hideBorder: true,
-      value: n,
-      onChange: s,
-      children: (0, r.jsxs)("div", {
-        className: w.activitySwitchRow,
-        children: [(0, r.jsx)("img", {
-          alt: l.name,
-          className: w.connectionIcon,
-          src: (0, d.wj)(o) ? l.icon.darkSVG : l.icon.lightSVG
-        }), (0, r.jsxs)("div", {
-          children: [(0, r.jsx)(_.Text, {
-            variant: "text-md/semibold",
-            children: l.name
-          }), (0, r.jsxs)(_.Text, {
-            variant: "text-sm/normal",
-            color: "text-muted",
-            children: ['"', Z(l), '"']
-          })]
-        })]
-      })
-    }), (0, r.jsx)("div", {
-      className: w.divider
-    })]
+    children: [(0, r.jsxs)("div", {
+      className: R.connectedAccountToggle,
+      children: [(0, r.jsx)("img", {
+        alt: l.name,
+        className: R.connectionIcon,
+        src: (0, c.wj)(o) ? l.icon.darkSVG : l.icon.lightSVG
+      }), (0, r.jsx)(d.rsf, {
+        label: l.name,
+        description: '"'.concat(G(l), '"'),
+        checked: n,
+        onChange: s
+      })]
+    }), (0, r.jsx)(d.izJ, {})]
   })
 }
 
-function V() {
+function Z() {
   let e = (0, Chunk442837.e7)([Chunk553795.Z], () => Chunk553795.Z.getAccounts()),
-    t = Chunk647438.useMemo(() => module.filter(e => m.Z.isSupported(e.type) && R.vbS.has(e.type)), [module]),
+    t = Chunk647438.useMemo(() => module.filter(e => p.Z.isSupported(e.type) && C.vbS.has(e.type)), [module]),
     [n, a] = Chunk647438.useState(""),
-    o = Chunk647438.useMemo(() => {
+    l = Chunk647438.useMemo(() => {
       let e = require.trim().toLowerCase();
-      return "" === module ? exports : exports.filter(t => l()(e, m.Z.get(t.type).name.toLowerCase()))
+      return "" === module ? exports : exports.filter(t => o()(e, p.Z.get(t.type).name.toLowerCase()))
     }, [exports, require]);
   return 0 === exports.length ? null : (0, Chunk951288.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.ACTIVITY_PRIVACY_STATUS_DISPLAY,
-    children: (0, Chunk951288.jsx)(Chunk481060.hjN, {
-      className: Chunk10198.marginBottom40,
-      children: (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
-        gap: 12,
-        children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
-          className: Chunk10198.marginBottom8,
-          children: Chunk388032.intl.string(Chunk388032.t["4F2KoK"])
-        }), (0, Chunk951288.jsx)(Chunk481060.E1j, {
-          query: require,
-          onChange: Chunk120356,
-          placeholder: Chunk388032.intl.string(Chunk388032.t.WPrtoa)
-        }), o.map(e => (0, r.jsx)(F, {
-          account: e
-        }, e.id))]
-      })
+    children: (0, Chunk951288.jsxs)(Chunk481060.C3N, {
+      label: Chunk388032.intl.string(Chunk388032.t["4F2KoK"]),
+      children: [(0, Chunk951288.jsx)(Chunk481060.E1j, {
+        query: require,
+        onChange: Chunk658722,
+        placeholder: Chunk388032.intl.string(Chunk388032.t.WPrtoa)
+      }), Chunk524437.map(e => (0, r.jsx)(B, {
+        account: e
+      }, e.id))]
     })
   })
 }
 
-function H(e) {
+function F(e) {
   let {
     className: t,
     showHeader: n = true
   } = e, {
     showRedesign: i
-  } = S.b.useExperiment({
+  } = I.b.useExperiment({
     location: "activity privacy tab"
   }), {
     showUpdatedSettingsPage: a
-  } = (0, g.D)("activity privacy tab");
-  return a ? (0, r.jsx)(E.Z, {}) : (0, r.jsxs)(C.Z, {
+  } = (0, h.D)("activity privacy tab");
+  return a ? (0, r.jsx)(m.Z, {}) : (0, r.jsx)(S.Z, {
     className: t,
-    title: n ? P.intl.string(P.t.Cq98yM) : null,
-    children: [(0, r.jsx)(U, {}), (0, r.jsx)(G, {}), (0, r.jsx)(B, {}), i && (0, r.jsx)(V, {})]
+    title: n ? N.intl.string(N.t.Cq98yM) : null,
+    children: (0, r.jsxs)(d.Kqy, {
+      gap: 24,
+      children: [(0, r.jsx)(M, {}), (0, r.jsx)(d.izJ, {}), (0, r.jsx)(k, {}), (0, r.jsx)(U, {}), i && (0, r.jsxs)(r.Fragment, {
+        children: [(0, r.jsx)(d.izJ, {}), (0, r.jsx)(Z, {})]
+      })]
+    })
   })
 }

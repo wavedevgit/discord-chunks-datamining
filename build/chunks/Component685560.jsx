@@ -1,7 +1,7 @@
 /** Chunk was on 8345 **/
 /** chunk id: 685560, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => k
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk913527 = require("./913527.js"),
@@ -60,7 +60,7 @@ async function P(e) {
   })
 }
 
-function I() {
+function k() {
   let e = (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId()),
     t = (0, Chunk442837.e7)([Chunk430824.Z], () => {
       var t;
@@ -133,39 +133,30 @@ function I() {
         className: y.formSwitch,
         content: o.z[e]
       }, o.z[e]))]
-    }), (0, Chunk951288.jsxs)("div", {
+    }), (0, Chunk951288.jsx)("div", {
       className: Chunk736525.section,
-      children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
-        variant: "eyebrow",
-        className: Chunk736525.header,
-        children: "Reset Guild Level DCs"
-      }), E.map(t => (0, a.jsx)(c.j7V, {
-        className: y.formSwitch,
-        onChange: n => {
-          n ? (0, p.Qd)(t, e, false) : ((0, f.Z1)(o.z.GUILD_POWERUP_NOTIFICATION), (0, p.c7)(t, e))
-        },
-        value: n.includes(t),
-        children: (0, a.jsx)(c.Text, {
-          variant: "text-sm/normal",
-          children: T(t)
-        })
-      }, t))]
-    }), (0, Chunk951288.jsxs)("div", {
+      children: (0, Chunk951288.jsx)(Chunk481060.C3N, {
+        label: "Reset Guild Level DCs",
+        children: E.map(t => (0, a.jsx)(c.rsf, {
+          label: T(t),
+          checked: n.includes(t),
+          onChange: n => {
+            n ? (0, p.Qd)(t, e, false) : ((0, f.Z1)(o.z.GUILD_POWERUP_NOTIFICATION), (0, p.c7)(t, e))
+          }
+        }, t))
+      })
+    }), (0, Chunk951288.jsx)("div", {
       className: Chunk736525.section,
-      children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
-        variant: "eyebrow",
-        children: "Reset Server Tag Guild Level DCs"
-      }), N.map(t => (0, a.jsx)(c.j7V, {
-        className: y.formSwitch,
-        onChange: n => {
-          n ? (0, p.Qd)(t, e, false) : ((0, f.Z1)(o.z.GUILD_POWERUP_NOTIFICATION), (0, p.c7)(t, e))
-        },
-        value: n.includes(t),
-        children: (0, a.jsx)(c.Text, {
-          variant: "text-sm/normal",
-          children: T(t)
-        })
-      }, t))]
+      children: (0, Chunk951288.jsx)(Chunk481060.C3N, {
+        label: "Reset Server Tag Guild Level DCs",
+        children: N.map(t => (0, a.jsx)(c.rsf, {
+          label: T(t),
+          checked: n.includes(t),
+          onChange: n => {
+            n ? (0, p.Qd)(t, e, false) : ((0, f.Z1)(o.z.GUILD_POWERUP_NOTIFICATION), (0, p.c7)(t, e))
+          }
+        }, t))
+      })
     }), (0, Chunk951288.jsxs)("div", {
       className: Chunk736525.section,
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {

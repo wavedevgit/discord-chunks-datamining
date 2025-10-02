@@ -30,12 +30,12 @@ let m = Chunk647438.memo(function(e) {
       className: e,
       color: "currentColor"
     }),
-    text: f.intl.string(h.default.lH9Dio),
+    text: h.intl.string(f.default.lH9Dio),
     selected: n,
     onClick: _,
     trailing: m === l.z.GAME_SERVER_HOSTING_NEW_BADGE ? (0, r.jsx)(o.IGR, {
       disableColor: true,
-      text: f.intl.string(f.t.y2b7CA),
+      text: h.intl.string(h.t.y2b7CA),
       className: g.badge
     }) : null
   })

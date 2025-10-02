@@ -33,12 +33,12 @@ function g(e) {
     });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.nn4, {
-      children: h.intl.string(h.t.EJRzg4)
+      children: f.intl.string(f.t.EJRzg4)
     }), null != g && !n && (0, r.jsx)("div", {
       children: (0, r.jsx)(l.qEK, {
         status: m,
         isMobile: b,
-        className: f.avatar,
+        className: h.avatar,
         size: l.EFr.SIZE_20,
         "aria-label": d.ZP.getName(g),
         src: g.getAvatarURL(true, 20)
@@ -47,7 +47,7 @@ function g(e) {
       level: e.level,
       onClick: e.handleClick,
       onContextMenu: e.handleContextMenu,
-      className: null != e.handleClick ? f.cursorPointer : null,
+      className: null != e.handleClick ? h.cursorPointer : null,
       children: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(l.DY3, {
           text: O,
@@ -55,7 +55,7 @@ function g(e) {
           className: y,
           children: null != _ ? _ : d.ZP.getName(g)
         }), j && (0, r.jsx)(l.ua7, {
-          text: h.intl.string(h.t.QyZ4TU),
+          text: f.intl.string(f.t.QyZ4TU),
           children: e => {
             var t, n;
             return (0, r.jsx)(l.tQf, (t = function(e) {
@@ -77,9 +77,9 @@ function g(e) {
               return e
             }({}, e), n = n = {
               size: "xs",
-              "aria-label": h.intl.string(h.t.VHXh8f),
+              "aria-label": f.intl.string(f.t.VHXh8f),
               color: l.TVs.colors.INTERACTIVE_NORMAL,
-              className: f.secureFramesIcon
+              className: h.secureFramesIcon
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {

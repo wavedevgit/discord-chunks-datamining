@@ -38,30 +38,14 @@ function g() {
     }];
   return (0, Chunk951288.jsx)(Chunk481060.hjN, {
     className: Chunk61545.formSection,
-    children: (0, Chunk951288.jsxs)(Chunk481060.y5t, {
-      component: (0, Chunk951288.jsxs)("div", {
-        children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
-          className: Chunk61545.formTitle,
-          variant: "heading-lg/semibold",
-          color: "header-primary",
-          children: Chunk388032.intl.string(Chunk893867.default.TG0Qsb)
-        }), (0, Chunk951288.jsx)(Chunk481060.R94, {
-          className: Chunk61545.formDescription,
-          type: Chunk481060.R94.Types.DESCRIPTION,
-          children: Chunk388032.intl.string(Chunk893867.default.OO17Li)
-        })]
-      }),
-      children: [(0, Chunk951288.jsxs)("div", {
-        children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
-          className: Chunk61545.defaultSetting,
-          variant: "heading-md/medium",
-          color: "header-primary",
-          children: Chunk388032.intl.string(Chunk893867.default["/LHVbm"])
-        }), (0, Chunk951288.jsx)(Chunk538534.E, {
-          options: Chunk921801,
-          value: exports,
-          onChange: e => n(e)
-        })]
+    children: (0, Chunk951288.jsxs)(Chunk481060.C3N, {
+      label: Chunk388032.intl.string(Chunk893867.default.TG0Qsb),
+      description: Chunk388032.intl.string(Chunk893867.default.OO17Li),
+      children: [(0, Chunk951288.jsx)(Chunk538534.E, {
+        label: Chunk388032.intl.string(Chunk893867.default["/LHVbm"]),
+        options: Chunk921801,
+        value: exports,
+        onChange: e => n(e)
       }), (0, Chunk951288.jsxs)("div", {
         className: Chunk61545.myServersContainer,
         children: [(0, Chunk951288.jsxs)("div", {
@@ -88,16 +72,9 @@ function E() {
     t = Chunk695346.Ou.useSetting();
   return (0, Chunk951288.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.ACTIVITY_PRIVACY_RICH_PRESENCE,
-    children: (0, Chunk951288.jsxs)(Chunk481060.hjN, {
-      className: Chunk61545.formSection,
-      children: [(0, Chunk951288.jsx)("div", {
-        children: (0, Chunk951288.jsx)(Chunk481060.X6q, {
-          className: Chunk61545.formTitle,
-          variant: "heading-lg/semibold",
-          color: "header-primary",
-          children: Chunk388032.intl.string(Chunk893867.default["5rYBAQ"])
-        })
-      }), (0, Chunk951288.jsx)(Chunk481060.rsf, {
+    children: (0, Chunk951288.jsxs)(Chunk481060.C3N, {
+      label: Chunk388032.intl.string(Chunk893867.default["5rYBAQ"]),
+      children: [(0, Chunk951288.jsx)(Chunk481060.rsf, {
         label: Chunk388032.intl.string(Chunk893867.default.khuuzs),
         description: Chunk388032.intl.string(Chunk893867.default["8EWsJy"]),
         id: "allow-friends-to-join-my-game",

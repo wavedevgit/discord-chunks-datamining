@@ -34,36 +34,36 @@ function y(e) {
     transitionState: T,
     onSubmit: N,
     onClose: B
-  } = e, [R, M] = a.useState(C.Sc2), [j, D] = a.useState(C.d4z.GUILD_TEXT), [S, k] = a.useState(""), [Z, G] = a.useState(false), A = (0, o.e7)([f.Z], () => f.Z.getGuild(y), [y]), H = (0, m.m)(y), O = (0, h.Ui)(A), U = a.useMemo(() => (function(e) {
+  } = e, [R, M] = a.useState(C.Sc2), [j, D] = a.useState(C.d4z.GUILD_TEXT), [S, k] = a.useState(""), [Z, G] = a.useState(false), A = (0, o.e7)([f.Z], () => f.Z.getGuild(y), [y]), H = (0, b.m)(y), O = (0, m.Ui)(A), U = a.useMemo(() => (function(e) {
     let {
       canCreateStageChannel: t,
       canCreateMediaChannel: n
     } = e, a = [{
       icon: d.VL1,
-      label: I.intl.string(I.t.pnuRXF),
+      label: L.intl.string(L.t.pnuRXF),
       value: C.d4z.GUILD_TEXT,
-      description: I.intl.string(I.t.Hf5Lb2)
+      description: L.intl.string(L.t.Hf5Lb2)
     }, {
       icon: d.gj8,
-      label: I.intl.string(I.t.Sx55Oj),
+      label: L.intl.string(L.t.Sx55Oj),
       value: C.d4z.GUILD_VOICE,
-      description: I.intl.string(I.t.pqfkoK)
+      description: L.intl.string(L.t.pqfkoK)
     }];
     return t && a.push({
       icon: d.ewx,
-      label: I.intl.string(I.t.pNWst7),
+      label: L.intl.string(L.t.pNWst7),
       value: C.d4z.GUILD_STAGE_VOICE,
-      description: I.intl.string(I.t.VPAwgo)
+      description: L.intl.string(L.t.VPAwgo)
     }), a.push({
       icon: d.Mmi,
-      label: I.intl.string(I.t.eAVIDw),
+      label: L.intl.string(L.t.eAVIDw),
       value: C.d4z.GUILD_FORUM,
-      description: I.intl.string(I.t.iZ5pgo)
+      description: L.intl.string(L.t.iZ5pgo)
     }), n && a.push({
       icon: d.XBm,
-      label: I.intl.string(I.t["6x6fVl"]),
+      label: L.intl.string(L.t["6x6fVl"]),
       value: C.d4z.GUILD_MEDIA,
-      description: I.intl.string(I.t.JyCrwc),
+      description: L.intl.string(L.t.JyCrwc),
       isBeta: true
     }), a.map(e => {
       let {
@@ -75,9 +75,9 @@ function y(e) {
       } = e;
       return {
         name: (0, i.jsxs)("div", {
-          className: L.channelOptionWrapper,
+          className: I.channelOptionWrapper,
           children: [(0, i.jsx)(t, {
-            className: L.icon
+            className: I.icon
           }), (0, i.jsxs)("div", {
             children: [(0, i.jsxs)(d.Text, {
               variant: "text-md/normal",
@@ -147,15 +147,15 @@ function y(e) {
     },
     children: (0, i.jsx)(l.Modal, {
       transitionState: T,
-      title: I.intl.string(I.t["fUYU+v"]),
+      title: L.intl.string(L.t["fUYU+v"]),
       onClose: B,
       actionBarInput: (0, i.jsx)(d.Avr, {
-        text: I.intl.string(I.t["13/7kZ"]),
+        text: L.intl.string(L.t["13/7kZ"]),
         onClick: B
       }),
       actions: [{
         variant: "primary",
-        text: I.intl.string(I.t.R3BPHx),
+        text: L.intl.string(L.t.R3BPHx),
         loading: Z,
         disabled: !q,
         type: "submit"
@@ -163,13 +163,13 @@ function y(e) {
       children: (0, i.jsxs)(d.Kqy, {
         gap: 16,
         children: [(0, i.jsx)(d.q4e, {
-          label: I.intl.string(I.t.vHCZws),
-          placeholder: I.intl.string(I.t["g/Rr2d"]),
+          label: L.intl.string(L.t.vHCZws),
+          placeholder: L.intl.string(L.t["g/Rr2d"]),
           value: R,
           options: W,
           onChange: e => M(e)
         }), (0, i.jsx)(s.Gu, {
-          label: I.intl.string(I.t["7ZcXGx"]),
+          label: L.intl.string(L.t["7ZcXGx"]),
           options: U,
           value: j,
           onChange: e => {
@@ -179,13 +179,13 @@ function y(e) {
             return D(t)
           }
         }), (0, i.jsx)(d.oil, {
-          label: I.intl.string(I.t.PVbHDg),
+          label: L.intl.string(L.t.PVbHDg),
           value: S,
           onChange: function(e) {
-            (0, b.zi)(j) && (e = (0, x.Nj)(e)), k(e)
+            (0, h.zi)(j) && (e = (0, x.Nj)(e)), k(e)
           },
           maxLength: C.HN8,
-          placeholder: I.intl.string(I.t["bw/b8P"]),
+          placeholder: L.intl.string(L.t["bw/b8P"]),
           leading: F,
           autoFocus: true
         })]

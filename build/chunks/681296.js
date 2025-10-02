@@ -1,4 +1,4 @@
-/** Chunk was on 89368 **/
+/** Chunk was on 37554 **/
 /** chunk id: 681296, original params: e,n,t (module,exports,require) **/
 module.exports = {
   spacing: "spacing__856b5",
@@ -26,6 +26,5 @@ module.exports = {
   headerOption: "headerOption__856b5 header__856b5",
   channelNameContainer: "channelNameContainer__856b5",
   channelName: "channelName__856b5",
-  channelNameByline: "channelNameByline__856b5 lighten__856b5",
-  highlightsLink: "highlightsLink__856b5"
+  channelNameByline: "channelNameByline__856b5 lighten__856b5"
 }

@@ -102,12 +102,11 @@ function T() {
     let [t, n, {
       label: r
     }] = e;
-    return (0, a.jsx)(c.j7V, {
-      value: n,
-      onChange: e => (0, v.Z)(t, e),
-      hideBorder: true,
-      className: C.switch,
-      children: r
+    return (0, a.jsx)(c.rsf, {
+      label: r,
+      description: t,
+      checked: n,
+      onChange: e => (0, v.Z)(t, e)
     }, t)
   });
   return (0, Chunk951288.jsxs)("div", {

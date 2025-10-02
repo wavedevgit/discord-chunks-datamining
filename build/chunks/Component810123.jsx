@@ -29,38 +29,38 @@ let s = {
       hasActiveThreads: h
     } = e;
     if (null == b) return null;
-    let p = (0, d.EB)(b, 48),
+    let p = (0, c.EB)(b, 48),
       m = u[o],
-      w = s[o],
-      v = (0, r.KS)(_, b, {
+      v = s[o],
+      w = (0, r.KS)(_, b, {
         locked: g,
         hasActiveThreads: h
       });
-    if (null == v) return null;
-    let I = null != b ? (0, d.gM)(b) : "";
+    if (null == w) return null;
+    let I = null != b ? (0, c.gM)(b) : "";
     return (0, i.jsxs)("div", {
       role: "img",
       className: n,
-      children: [(0, i.jsx)(c.ZP, {
-        mask: c.QS.GUILD_ICON_WITH_CHANNEL_TYPE,
+      children: [(0, i.jsx)(d.ZP, {
+        mask: d.QS.GUILD_ICON_WITH_CHANNEL_TYPE,
         children: null != p ? (0, i.jsx)("img", {
           alt: "",
           src: p,
           className: l.channelGuildIcon,
           style: {
-            width: w,
-            height: w
+            width: v,
+            height: v
           }
         }) : (0, i.jsx)("div", {
           className: a()(l.channelGuildIcon, l.acronym),
           style: {
             fontSize: I.length - 1 > m.length ? m[m.length - 1] : m[I.length - 1],
-            width: w,
-            height: w
+            width: v,
+            height: v
           },
           children: I
         })
-      }), (0, i.jsx)(v, {
+      }), (0, i.jsx)(w, {
         className: a()(l.icon, l.iconWithGuildIcon, t),
         color: "currentColor"
       })]

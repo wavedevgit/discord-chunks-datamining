@@ -59,9 +59,9 @@ function b(e) {
   return (0, i.jsxs)(a.xJW, {
     children: [(0, i.jsx)(a.R94, {
       type: a.R94.Types.DESCRIPTION,
-      children: v.intl.string(v.t["2Y9ZfH"])
+      children: j.intl.string(j.t["2Y9ZfH"])
     }), (0, i.jsx)("div", {
-      className: j.input,
+      className: v.input,
       children: (0, i.jsx)(a.VcW, {
         value: p.lds,
         onChange: n,
@@ -77,7 +77,7 @@ function b(e) {
             subtitle: s
           })
         },
-        placeholder: v.intl.string(v.t["Z+oF8v"])
+        placeholder: j.intl.string(j.t["Z+oF8v"])
       })
     })]
   })

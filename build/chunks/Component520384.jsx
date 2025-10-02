@@ -24,12 +24,11 @@ function f() {
     }, [exports]);
   return (0, Chunk951288.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.VOICE_AND_VIDEO_STREAM_PREVIEWS,
-    children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
-      value: module,
-      onChange: require,
-      note: Chunk388032.intl.string(Chunk388032.t.jTNPHB),
-      hideBorder: true,
-      children: Chunk388032.intl.string(Chunk388032.t["1CzWUF"])
+    children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
+      label: Chunk388032.intl.string(Chunk388032.t["1CzWUF"]),
+      description: Chunk388032.intl.string(Chunk388032.t.jTNPHB),
+      checked: module,
+      onChange: require
     })
   })
 }

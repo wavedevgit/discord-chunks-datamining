@@ -93,6 +93,7 @@ let f = {
       return (0, r.jsx)("div", {
         children: (0, r.jsx)(i.NIc, c(s({}, n), {
           description: "" === t ? true : t,
+          icon: n.showIcon ? i.mBM : true,
           children: (0, r.jsx)("div", {
             className: a.placeholder,
             children: (0, r.jsx)(i.Text, {
@@ -141,6 +142,32 @@ let f = {
           label: "Horizontal",
           value: "horizontal"
         }]
+      },
+      badge: {
+        type: "select",
+        label: "Badge",
+        defaultValue: true,
+        options: [{
+          label: "None",
+          value: true
+        }, {
+          label: "New",
+          value: "new"
+        }, {
+          label: "Beta",
+          value: "beta"
+        }, {
+          label: "Early Access",
+          value: "early_access"
+        }, {
+          label: "Free Trial",
+          value: "free_trial"
+        }]
+      },
+      showIcon: {
+        type: "boolean",
+        label: "Show Icon",
+        defaultValue: false
       }
     }
   }]

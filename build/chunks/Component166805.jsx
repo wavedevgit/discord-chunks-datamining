@@ -55,12 +55,11 @@ function _(e) {
     T(true), await (0, h.c)(t, e, N), T(false)
   }, [N, t]);
   return y ? (0, r.jsxs)("div", {
-    children: [(0, r.jsx)(o.j7V, {
-      disabled: S,
-      value: C,
-      hideBorder: true,
+    children: [(0, r.jsx)(o.rsf, {
+      label: j.intl.string(j.t.NR6hub),
+      checked: C,
       onChange: R,
-      children: j.intl.string(j.t.NR6hub)
+      disabled: S
     }), w ? (0, r.jsx)(s.xvT, {
       variant: "text-sm/normal",
       color: "text-secondary",

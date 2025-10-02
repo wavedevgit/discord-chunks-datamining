@@ -214,17 +214,17 @@ function j(e) {
       maxValue: 5,
       onValueChange: e => (0, p.rd)(c, e, n),
       onMarkerRender: e => "".concat(e.toFixed(2))
-    }), (0, a.jsx)(d.j7V, {
-      note: "Renders the palette preview in a single column, useful for comparing the luminance of each step.",
-      value: g,
-      onChange: e => (0, p.KB)(c, e, n),
-      children: "Show columnar palette preview"
-    }), (0, a.jsx)(d.j7V, {
-      note: "Renders the palette preview in a single column, useful for comparing the luminance of each step.",
-      value: _,
+    }), (0, a.jsx)(d.rsf, {
+      label: "Show columnar palette preview",
+      description: "Renders the palette preview in a single column, useful for comparing the luminance of each step.",
+      checked: g,
+      onChange: e => (0, p.KB)(c, e, n)
+    }), (0, a.jsx)(d.rsf, {
+      label: "Use P3 Color Space",
+      description: "Renders the palette preview in a single column, useful for comparing the luminance of each step.",
+      checked: _,
       disabled: !p.S2,
-      onChange: e => (0, p.uF)(c, e, n),
-      children: "Use P3 Color Space"
+      onChange: e => (0, p.uF)(c, e, n)
     }), (0, a.jsx)(d.iRW, {
       label: "Steps",
       description: "Adjust the number of steps in the palette.",

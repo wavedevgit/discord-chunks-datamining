@@ -1,7 +1,7 @@
 /** Chunk was on 15068 **/
 /** chunk id: 599219, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => D
+  default: () => S
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -51,7 +51,7 @@ function F(e) {
   return e
 }
 
-function S(e, t) {
+function D(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -64,7 +64,7 @@ function S(e, t) {
   }), e
 }
 
-function D(e) {
+function S(e) {
   let t = (0, _.Dt)(),
     {
       onSlideChange: n
@@ -85,7 +85,7 @@ function D(e) {
       return o
     }(e, ["onSlideChange"]),
     {
-      onClose: D
+      onClose: S
     } = s,
     [L, w] = o.useState(false),
     k = (0, i.e7)([b.default], () => b.default.getCurrentUser()),
@@ -142,9 +142,9 @@ function D(e) {
   } = (0, A.Z)({
     onBack: () => U(O.F.CHOOSE_TEMPLATE),
     onComplete: () => {
-      D()
+      S()
     },
-    onConnect: D,
+    onConnect: S,
     isSlideReady: R === O.F.JOIN_GUILD
   }), eo = null;
   switch (P) {
@@ -164,19 +164,19 @@ function D(e) {
     ref: es,
     width: er
   } = (0, u.ZP)();
-  if (L) return (0, a.jsx)(c.Y0X, S(F({}, s), {
+  if (L) return (0, a.jsx)(c.Y0X, D(F({}, s), {
     size: c.CgR.MEDIUM,
     className: r()(G.modal, G.completed),
     "aria-labelledby": t,
     parentComponent: "NUFModal",
     children: (0, a.jsx)(T.Z, {
-      onComplete: D
+      onComplete: S
     })
   }));
   let el = {
     impression_group: l.ImpressionGroups.GUILD_ADD_NUF
   };
-  return (0, a.jsxs)(c.Y0X, S(F({}, s), {
+  return (0, a.jsxs)(c.Y0X, D(F({}, s), {
     size: c.CgR.MEDIUM,
     className: G.modal,
     "aria-labelledby": t,
@@ -204,9 +204,9 @@ function D(e) {
                 className: G.container,
                 children: (0, a.jsx)(x.Z, {
                   onComplete: () => {
-                    q ? D() : U(O.F.CHOOSE_TEMPLATE)
+                    q ? S() : U(O.F.CHOOSE_TEMPLATE)
                   },
-                  onClose: D
+                  onClose: S
                 })
               })
             }), (0, a.jsx)(c.Mi4, {
@@ -256,7 +256,7 @@ function D(e) {
             })]
           })
         }), P !== O.F.AGE_GATE ? (0, a.jsx)(c.olH, {
-          onClick: D,
+          onClick: S,
           className: G.closeButton
         }) : null, P === O.F.CHOOSE_TEMPLATE ? (0, a.jsx)(c.mzw, {
           justify: d.Z.Justify.BETWEEN,

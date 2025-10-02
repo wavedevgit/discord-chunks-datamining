@@ -4,7 +4,7 @@
 require.d(exports, {
   g: () => v,
   u: () => _
-}), require("./290780.js");
+}), require("./290780.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk106351 = require("./106351.js"),
@@ -84,9 +84,12 @@ function _(e) {
   let {
     canManageGuild: t,
     guildId: n,
-    systemChannelId: a
-  } = e, c = (0, s.e7)([m.Z], () => m.Z.getCategories(n)), d = i.useMemo(() => {
-    let e = (0, o.Z)(c._categories, c).filter(e => {
+    systemChannelId: a,
+    label: c,
+    description: d,
+    layout: u
+  } = e, g = (0, s.e7)([m.Z], () => m.Z.getCategories(n)), p = i.useMemo(() => {
+    let e = (0, o.Z)(g._categories, g).filter(e => {
       let {
         channel: t
       } = e;
@@ -101,17 +104,20 @@ function _(e) {
       value: b,
       label: h.intl.string(h.t.ibUhoa)
     }), e
-  }, [c]), u = i.useCallback(e => {
+  }, [g]), j = i.useCallback(e => {
     let t = e === b ? null : e;
     f.Z.updateGuild({
       systemChannelId: t
     })
   }, []);
   return (0, r.jsx)(O, {
+    label: c,
+    description: d,
+    layout: u,
     value: null != a ? a : b,
-    options: d,
+    options: p,
     canManageGuild: t,
-    onChange: u
+    onChange: j
   })
 }
 
@@ -120,18 +126,24 @@ function O(e) {
     value: t,
     options: n,
     canManageGuild: l,
-    onChange: s
-  } = e, o = i.useCallback(e => {
+    onChange: s,
+    label: o,
+    description: c,
+    layout: d
+  } = e, u = i.useCallback(e => {
     if (null != e) return (0, r.jsx)(j, {
       option: e
     })
-  }, []), c = i.useCallback(e => o(e[0]), [o]);
+  }, []), m = i.useCallback(e => u(e[0]), [u]);
   return (0, r.jsx)(a.q4e, {
+    label: o,
+    description: c,
     value: t,
     options: n,
     isDisabled: !l,
     onChange: s,
-    renderOptionLabel: o,
-    renderOptionValue: c
+    renderOptionLabel: u,
+    renderOptionValue: m,
+    layout: d
   })
 }

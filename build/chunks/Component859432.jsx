@@ -338,7 +338,7 @@ let Y = Chunk647438.memo(function(e) {
         action: () => (0, c.ZDy)(async () => {
           let {
             default: e
-          } = await Promise.all([n.e("15076"), n.e("54817")]).then(n.bind(n, 907941));
+          } = await Promise.all([n.e("15076"), n.e("37554")]).then(n.bind(n, 907941));
           return n => (0, i.jsx)(e, q(Q({}, n), {
             guildId: t.id
           }))

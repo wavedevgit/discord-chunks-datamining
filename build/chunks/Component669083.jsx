@@ -154,23 +154,20 @@ class C extends Chunk647438.PureComponent {
           position: module,
           onChange: this.handleChangeNotificationPositionMode
         })
-      }), (0, Chunk951288.jsx)(Chunk481060.j7V, {
-        value: Chunk755721 && Chunk600164,
+      }), (0, Chunk951288.jsx)(Chunk481060.rsf, {
+        label: Chunk388032.intl.string(Chunk388032.t.Fy5kPj),
+        checked: Chunk755721 && Chunk600164,
         onChange: this.handleToggleTextChatNotifications,
-        disabled: !Chunk600164,
-        hideBorder: true,
-        children: Chunk388032.intl.string(Chunk388032.t.Fy5kPj)
-      }), (0, Chunk951288.jsx)(Chunk481060.j7V, {
-        value: Chunk442837,
-        onChange: this.handleToggleInviteNotification,
-        hideBorder: true,
-        note: Chunk388032.intl.string(Chunk388032.t.W9DVVV),
-        children: Chunk388032.intl.string(Chunk388032.t["f+c48/"])
-      }), require && (0, Chunk951288.jsx)(Chunk481060.j7V, {
-        value: exports,
-        onChange: e => a.Z.setShowKeybindIndicators(e),
-        hideBorder: true,
-        children: Chunk388032.intl.string(Chunk388032.t.XZTl9v)
+        disabled: !Chunk600164
+      }), (0, Chunk951288.jsx)(Chunk481060.rsf, {
+        label: Chunk388032.intl.string(Chunk388032.t["f+c48/"]),
+        description: Chunk388032.intl.string(Chunk388032.t.W9DVVV),
+        checked: Chunk442837,
+        onChange: this.handleToggleInviteNotification
+      }), require && (0, Chunk951288.jsx)(Chunk481060.rsf, {
+        label: Chunk388032.intl.string(Chunk388032.t.XZTl9v),
+        checked: exports,
+        onChange: e => a.Z.setShowKeybindIndicators(e)
       })]
     })
   }

@@ -93,12 +93,11 @@ function v(e) {
       className: x.twoColumnContainer,
       children: [(0, r.jsxs)("div", {
         className: x.column,
-        children: [(0, r.jsx)(o.j7V, {
+        children: [(0, r.jsx)(o.rsf, {
+          label: b.intl.string(b.t["N/0239"]),
+          checked: N,
           onChange: I,
-          value: N,
-          hideBorder: true,
-          disabled: C,
-          children: b.intl.string(b.t["N/0239"])
+          disabled: C
         }), (0, r.jsx)(s.xvT, {
           variant: "text-sm/normal",
           color: "text-secondary",

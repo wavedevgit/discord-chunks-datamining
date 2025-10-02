@@ -26,9 +26,9 @@ function u(e) {
       label: (0, a.A)(e, false),
       value: e
     }))
-  }, [p, f]), j = l.useCallback(e => {
+  }, [p, f]), x = l.useCallback(e => {
     g(e), m(null)
-  }, [g]), x = l.useCallback(e => {
+  }, [g]), j = l.useCallback(e => {
     if ("" === e) return void m(null);
     let t = [],
       n = parseInt(e, 10);
@@ -47,8 +47,8 @@ function u(e) {
     helperText: n,
     className: d.marginBottom8,
     value: f,
-    onChange: j,
-    onSearchChange: x,
+    onChange: x,
+    onSearchChange: j,
     options: b,
     onBlur: v,
     placeholder: c.intl.string(c.t.dBqQu7)

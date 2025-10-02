@@ -60,7 +60,7 @@ function P(e) {
   })
 }
 
-function I(e) {
+function k(e) {
   let {
     name: t,
     children: n,
@@ -92,7 +92,7 @@ function I(e) {
     })]
   })
 }
-let k = new Set(["client_performance_cpu", "client_performance_memory"]),
+let I = new Set(["client_performance_cpu", "client_performance_memory"]),
   w = [{
     id: "details",
     name: "Details",
@@ -184,7 +184,7 @@ let k = new Set(["client_performance_cpu", "client_performance_memory"]),
           })]
         }), (0, a.jsx)(P, {
           children: Object.entries(n).map(e => {
-            let [n, r] = e, i = k.has(n) ? ((e, t, n) => {
+            let [n, r] = e, i = I.has(n) ? ((e, t, n) => {
               let a = e.filter(e => e.event === t);
               if (0 === a.length) return {
                 average: null,
@@ -202,7 +202,7 @@ let k = new Set(["client_performance_cpu", "client_performance_memory"]),
               }
             })(c, t, n) : null;
             return (0, a.jsxs)("div", {
-              children: [(0, a.jsx)(I, {
+              children: [(0, a.jsx)(k, {
                 name: "".concat(n, ":"),
                 copyValue: {
                   [n]: r || null
@@ -213,7 +213,7 @@ let k = new Set(["client_performance_cpu", "client_performance_memory"]),
                   className: S.emptyProperty,
                   children: "null"
                 })
-              }, n), null !== i && null !== i.average && (0, a.jsx)(I, {
+              }, n), null !== i && null !== i.average && (0, a.jsx)(k, {
                 name: "".concat(n, "_avg:"),
                 copyValue: {
                   [n]: r || null
@@ -285,7 +285,7 @@ function Z() {
     _ = Chunk594174.find(e => e.key === b),
     {
       TabBar: P,
-      renderSelectedTab: I
+      renderSelectedTab: k
     } = (0, Chunk621060.ZP)({
       tabs: w
     }, []);
@@ -340,7 +340,7 @@ function Z() {
       className: Chunk529554.subPanel,
       minHeight: 100,
       initialHeight: null != module.current ? module.current.clientHeight / 2 : 300,
-      children: [(0, Chunk951288.jsx)(P, {}), I({
+      children: [(0, Chunk951288.jsx)(P, {}), k({
         loggedEvent: Chunk257785,
         onClose: () => Chunk55935(true),
         filteredEvents: Chunk594174

@@ -31,15 +31,15 @@ let g = Chunk647438.memo(function(e) {
     return null == t || 0 === t.length ? 0 : i !== e.id ? 40 : 32 * t.length + 8
   });
   return (0, r.jsx)("li", {
-    className: f.container,
+    className: h.container,
     children: (0, r.jsxs)("ul", {
       role: "group",
-      "aria-label": h.intl.formatToPlainString(h.t.EiyIi4, {
+      "aria-label": f.intl.formatToPlainString(f.t.EiyIi4, {
         channelName: t.name
       }),
       children: [(0, r.jsx)("div", {
-        className: o()(f.spineBorder, {
-          [f.spineBorderWithGuildIcon]: g
+        className: o()(h.spineBorder, {
+          [h.spineBorderWithGuildIcon]: g
         }),
         style: {
           bottom: ("cozy" === m ? 28 : 24) + _

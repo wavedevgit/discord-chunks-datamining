@@ -52,8 +52,8 @@ function D(e) {
   let {
     selected: o,
     user: d,
-    badge: h,
-    link: f,
+    badge: f,
+    link: h,
     showProgressBadge: b
   } = e, [_, O] = i.useState(false), [y, j] = i.useState(false), [v, x] = i.useState(null), [C, w] = i.useState(0), D = (0, l.Ie)("home"), M = (0, p.oq)().activePanel === p.wh.APP_ICON, L = () => {
     x(null), w(0), clearTimeout(v)
@@ -69,10 +69,10 @@ function D(e) {
   let G = o || _ || M,
     B = (0, r.jsx)(s.aRk, {
       selected: true,
-      lowerBadge: h > 0 ? (0, I.Ne)(h) : null,
+      lowerBadge: f > 0 ? (0, I.Ne)(f) : null,
       upperBadge: U,
       lowerBadgeSize: {
-        width: (0, s.OVM)(h)
+        width: (0, s.OVM)(f)
       },
       children: (0, r.jsx)(s.LYs, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -109,7 +109,7 @@ function D(e) {
         "aria-selected": o
       }, D), n = n = {
         to: {
-          pathname: f,
+          pathname: h,
           state: {
             analyticsSource: {
               page: N.ZY5.GUILD_CHANNEL,

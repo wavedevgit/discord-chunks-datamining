@@ -1,4 +1,4 @@
-/** Chunk was on 54817 **/
+/** Chunk was on 37554 **/
 /** chunk id: 748756, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   V: () => d
@@ -12,15 +12,15 @@ var Chunk87051 = require("./87051.js"),
   Chunk526761 = require("./526761.js");
 
 function d(e, n) {
-  let t = i.ZP.getGuildFlags(e);
+  let t = _.ZP.getGuildFlags(e);
   n === c.s8.ALL_MESSAGES ? a.Z.updateGuildNotificationSettings(e, {
     message_notifications: r.bL.ALL_MESSAGES,
     flags: (0, o.Q4)(t, s.vc.UNREADS_ALL_MESSAGES)
-  }, _.ZB.PresetAll) : n === c.s8.MENTIONS ? a.Z.updateGuildNotificationSettings(e, {
+  }, i.ZB.PresetAll) : n === c.s8.MENTIONS ? a.Z.updateGuildNotificationSettings(e, {
     message_notifications: r.bL.ONLY_MENTIONS,
     flags: (0, o.Q4)(t, s.vc.UNREADS_ONLY_MENTIONS)
-  }, _.ZB.PresetMentions) : n === c.s8.NOTHING && a.Z.updateGuildNotificationSettings(e, {
+  }, i.ZB.PresetMentions) : n === c.s8.NOTHING && a.Z.updateGuildNotificationSettings(e, {
     message_notifications: r.bL.NO_MESSAGES,
     flags: (0, o.Q4)(t, s.vc.UNREADS_ONLY_MENTIONS)
-  }, _.ZB.PresetNothing)
+  }, i.ZB.PresetNothing)
 }

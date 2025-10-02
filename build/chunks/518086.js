@@ -1,5 +1,5 @@
 /** Chunk was on 95055 **/
-/** chunk id: 518086, original params: e,r,t (module,exports,require) **/
+/** chunk id: 518086, original params: e,r,n (module,exports,require) **/
 module.exports = {
   akaBadge: "akaBadge__5149c",
   header: "header__5149c",
@@ -14,6 +14,5 @@ module.exports = {
   fromToWrapper: "fromToWrapper__5149c spacing__5149c",
   from: "from__5149c",
   to: "to__5149c",
-  protectedText: "protectedText__5149c",
   roleSubscriptionText: "roleSubscriptionText__5149c"
 }

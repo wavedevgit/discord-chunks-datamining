@@ -75,16 +75,16 @@ function E(e) {
     setVoiceAudioEnabled: A,
     applicationAudioEnabled: I,
     setApplicationAudioEnabled: Z
-  } = (0, _.S)(), [B, M] = r.useState(null), {
+  } = (0, _.S)(), [M, B] = r.useState(null), {
     onShareClick: z
   } = (0, b.Z)({
     channelId: l,
-    setExporting: e => M(null != e ? "share" : null)
+    setExporting: e => B(null != e ? "share" : null)
   });
   async function H() {
     var e;
     let r = p.Z.getChannel(l);
-    M("export"), null == (e = T.current) || e.pause();
+    B("export"), null == (e = T.current) || e.pause();
     try {
       let e = await (0, x.rO)(t, N(S({}, D), {
         applicationAudio: I,
@@ -106,12 +106,12 @@ function E(e) {
         }))
       })
     } catch (e) {} finally {
-      M(null)
+      B(null)
     }
   }
   async function W() {
     var e;
-    M("export"), null == (e = T.current) || e.pause();
+    B("export"), null == (e = T.current) || e.pause();
     try {
       let e = await (0, x.rO)(t, N(S({}, D), {
           applicationAudio: I,
@@ -120,7 +120,7 @@ function E(e) {
         n = await e.arrayBuffer();
       await d.Z.fileManager.saveWithDialog(P.from(n), (0, w.EF)(t.id))
     } catch (e) {} finally {
-      M(null)
+      B(null)
     }
   }
 
@@ -157,16 +157,14 @@ function E(e) {
         placeholder: k.intl.string(k.t.Cyxddn)
       }), (0, a.jsxs)("div", {
         className: O.clipFormSwitches,
-        children: [(0, a.jsx)(u.j7V, {
-          onChange: Z,
-          value: I,
-          hideBorder: true,
-          children: k.intl.string(k.t.GnQui4)
-        }), (0, a.jsx)(u.j7V, {
-          onChange: A,
-          value: F,
-          hideBorder: true,
-          children: k.intl.string(k.t["5mVOCQ"])
+        children: [(0, a.jsx)(u.rsf, {
+          label: k.intl.string(k.t.GnQui4),
+          checked: I,
+          onChange: Z
+        }), (0, a.jsx)(u.rsf, {
+          label: k.intl.string(k.t["5mVOCQ"]),
+          checked: F,
+          onChange: A
         })]
       })]
     }), (0, a.jsxs)("div", {
@@ -180,8 +178,8 @@ function E(e) {
     }), (0, a.jsxs)("div", {
       className: O.clipFormFooter,
       children: [(0, a.jsx)(s.zx, {
-        submitting: "share" === B,
-        disabled: null != B && "share" !== B,
+        submitting: "share" === M,
+        disabled: null != M && "share" !== M,
         color: s.zx.Colors.BRAND,
         wrapperClassName: O.clipFormFooterButton,
         onClick: () => z({
@@ -199,9 +197,9 @@ function E(e) {
       }), (0, a.jsx)(s.zx, {
         size: s.zx.Sizes.ICON,
         className: O.clipFormFooterButton,
-        disabled: null != B,
+        disabled: null != M,
         wrapperClassName: i()(O.clipFormFooterButton, {
-          [O.submittingWrapperFix]: null != B
+          [O.submittingWrapperFix]: null != M
         }),
         color: s.zx.Colors.PRIMARY,
         onClick: L,
@@ -210,10 +208,10 @@ function E(e) {
         "aria-label": k.intl.string(k.t.PdRCRk),
         size: s.zx.Sizes.ICON,
         wrapperClassName: i()(O.clipFormFooterButton, {
-          [O.submittingWrapperFix]: null != B
+          [O.submittingWrapperFix]: null != M
         }),
-        submitting: "export" === B,
-        disabled: null != B && "export" !== B,
+        submitting: "export" === M,
+        disabled: null != M && "export" !== M,
         color: s.zx.Colors.PRIMARY,
         onClick: function(e) {
           (0, c.jW)(e, async () => {

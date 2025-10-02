@@ -694,13 +694,12 @@ function Z() {
       }), (0, Chunk951288.jsx)("div", {
         className: Chunk745776.toggleSwitch,
         children: (0, Chunk951288.jsx)(Chunk481060.xJW, {
-          children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
-            value: z,
+          children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
+            label: "Is Participating:",
+            checked: z,
             onChange: function(e) {
               G(e)
-            },
-            hideBorder: true,
-            children: "Is Participating:"
+            }
           })
         })
       }), (0, Chunk951288.jsxs)(Chunk456799.Z, {
@@ -717,11 +716,10 @@ function Z() {
       }), (0, Chunk951288.jsx)("div", {
         className: Chunk745776.toggleSwitch,
         children: (0, Chunk951288.jsx)(Chunk481060.xJW, {
-          children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
-            value: K,
-            onChange: Y,
-            hideBorder: true,
-            children: "Invalid Quests Embed:"
+          children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
+            label: "Invalid Quests Embed:",
+            checked: K,
+            onChange: Y
           })
         })
       }), ed && (0, Chunk951288.jsxs)(Chunk456799.Z, {

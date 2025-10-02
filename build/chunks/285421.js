@@ -14,6 +14,5 @@ module.exports = {
   participantName: "participantName__664ff",
   emptyStateContainer: "emptyStateContainer__664ff",
   emptyStateTitle: "emptyStateTitle__664ff",
-  emptyStateBody: "emptyStateBody__664ff",
-  toggle: "toggle__664ff"
+  emptyStateBody: "emptyStateBody__664ff"
 }

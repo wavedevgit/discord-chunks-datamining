@@ -26,17 +26,17 @@ function p(e) {
     onBack: f,
     onHubGuildInfoSet: j,
     onGuildCreated: h,
-    isSlideReady: _,
-    hasFooter: b = true,
+    isSlideReady: b,
+    hasFooter: _ = true,
     isCommunity: L = false
-  } = e, [I, v] = l.useState(u.Z.getGuildNameSuggestion()), [y, Z] = l.useState(null), [O, S] = l.useState(false), [N, T] = l.useState(null), E = !!(null == (t = d.default.getCurrentUser()) ? true : t.isStaff()), [M, G] = l.useState(E), H = (0, c.Dt)(), U = l.useRef(null);
+  } = e, [I, v] = l.useState(u.Z.getGuildNameSuggestion()), [y, Z] = l.useState(null), [O, S] = l.useState(false), [T, N] = l.useState(null), E = !!(null == (t = d.default.getCurrentUser()) ? true : t.isStaff()), [M, G] = l.useState(E), H = (0, c.Dt)(), U = l.useRef(null);
   l.useEffect(() => {
     var e;
-    _ && (null == (e = U.current) || e.focus())
-  }, [_]);
+    b && (null == (e = U.current) || e.focus())
+  }, [b]);
   let D = l.useCallback(async e => {
       if (e.preventDefault(), null != n) {
-        S(true), T(null);
+        S(true), N(null);
         try {
           if (null != j) j(I, y);
           else {
@@ -44,7 +44,7 @@ function p(e) {
             r.Z.transitionToGuildSync(e.id), null == h || h(e.id)
           }
         } catch (e) {
-          T(e)
+          N(e)
         }
         S(false)
       }
@@ -90,40 +90,38 @@ function p(e) {
             icon: y,
             onChange: Z
           })
-        }), (0, i.jsxs)("form", {
+        }), (0, i.jsx)("form", {
           onSubmit: D,
-          children: [(0, i.jsx)(s.oil, {
-            label: C.intl.string(C.t.dBih7e),
-            required: true,
-            error: null == N ? true : N.getFirstFieldErrorMessage("name"),
-            value: I,
-            maxLength: 100,
-            onChange: v,
-            inputRef: U,
-            id: H
-          }), E && (0, i.jsx)(s.j7V, {
-            hideBorder: true,
-            value: M,
-            onChange: e => G(e),
-            note: C.intl.string(C.t.edQ5vb),
-            className: g.formItemSpaced,
-            children: (0, i.jsx)(s.vwX, {
-              children: "Staff Only"
-            })
-          }), (0, i.jsx)(s.Text, {
-            variant: "text-xs/normal",
-            color: "text-muted",
-            className: g.guidelines,
-            children: C.intl.format(C.t["2bprX1"], {
-              guidelinesURL: x.EYA.GUIDELINES
-            })
-          })]
-        }), null == N || N.hasFieldErrors() ? null : (0, i.jsx)(s.Text, {
+          children: (0, i.jsxs)(s.Kqy, {
+            gap: 16,
+            children: [(0, i.jsx)(s.oil, {
+              label: C.intl.string(C.t.dBih7e),
+              required: true,
+              error: null == T ? true : T.getFirstFieldErrorMessage("name"),
+              value: I,
+              maxLength: 100,
+              onChange: v,
+              inputRef: U,
+              id: H
+            }), E && (0, i.jsx)(s.rsf, {
+              label: "Staff Only",
+              description: C.intl.string(C.t.edQ5vb),
+              checked: M,
+              onChange: e => G(e)
+            }), (0, i.jsx)(s.Text, {
+              variant: "text-xs/normal",
+              color: "text-muted",
+              children: C.intl.format(C.t["2bprX1"], {
+                guidelinesURL: x.EYA.GUIDELINES
+              })
+            })]
+          })
+        }), null == T || T.hasFieldErrors() ? null : (0, i.jsx)(s.Text, {
           variant: "text-xs/normal",
           color: "text-danger",
-          children: N.message
+          children: T.message
         })]
-      }), b && (0, i.jsx)(s.mzw, {
+      }), _ && (0, i.jsx)(s.mzw, {
         className: g.footer,
         children: w
       })]

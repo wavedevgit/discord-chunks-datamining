@@ -111,14 +111,14 @@ function j(e) {
     locations: n,
     settingsLocations: i,
     onChange: a
-  } = e, o = n.map(e => (0, r.jsx)(l.j7V, {
+  } = e, o = n.map(e => (0, r.jsx)(l.rsf, {
+    label: e.title,
+    description: e.description,
+    checked: i[e.location],
     disabled: t,
-    value: i[e.location],
-    note: e.description,
     onChange: t => a(C(S({}, i), {
       [e.location]: t
-    })),
-    children: e.title
+    }))
   }, e.location));
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.vwX, {
@@ -164,11 +164,11 @@ function k(e) {
       enabled: e
     })
   };
-  return (0, r.jsx)(l.j7V, {
-    value: t,
-    note: v.intl.string(v.t.KuYbWF),
-    onChange: s,
-    children: v.intl.string(v.t.vuiXm5)
+  return (0, r.jsx)(l.rsf, {
+    label: v.intl.string(v.t.vuiXm5),
+    description: v.intl.string(v.t.KuYbWF),
+    checked: t,
+    onChange: s
   })
 }
 
@@ -186,14 +186,14 @@ function U(e) {
   return (0, r.jsxs)(l.hjN, {
     tag: l.RB0.H1,
     title: v.intl.string(v.t.mqxwJC),
-    children: [(0, r.jsx)(l.j7V, {
+    children: [(0, r.jsx)(l.rsf, {
+      label: v.intl.string(v.t.s0KCgI),
+      description: v.intl.string(v.t.O1Vflp),
+      checked: n,
       disabled: !t,
-      value: n,
-      note: v.intl.string(v.t.O1Vflp),
       onChange: e => s({
         confettiEnabled: e
-      }, 0),
-      children: v.intl.string(v.t.s0KCgI)
+      }, 0)
     }), (0, r.jsxs)(l.xJW, {
       disabled: c,
       title: v.intl.string(v.t["vd0D8/"]),
@@ -254,22 +254,22 @@ function G(e) {
   return (0, r.jsxs)(l.hjN, {
     tag: l.RB0.H1,
     title: v.intl.string(v.t.Xz0olZ),
-    children: [(0, r.jsx)(l.j7V, {
+    children: [(0, r.jsx)(l.rsf, {
+      label: v.intl.string(v.t.o3iV7O),
+      description: v.intl.string(v.t["31Z8ER"]),
+      checked: n,
       disabled: !t,
-      value: n,
-      note: v.intl.string(v.t["31Z8ER"]),
       onChange: e => o({
         combosEnabled: e
-      }),
-      children: v.intl.string(v.t.o3iV7O)
-    }), (0, r.jsx)(l.j7V, {
+      })
+    }), (0, r.jsx)(l.rsf, {
+      label: v.intl.string(v.t["Ax+Ioa"]),
+      description: v.intl.string(v.t["9rgQEh"]),
+      checked: i,
       disabled: !t,
-      value: i,
-      note: v.intl.string(v.t["9rgQEh"]),
       onChange: e => o({
         comboSoundsEnabled: e
-      }),
-      children: v.intl.string(v.t["Ax+Ioa"])
+      })
     }), (0, r.jsxs)(l.xJW, {
       disabled: s,
       title: v.intl.string(v.t.L0oQur),
@@ -309,15 +309,15 @@ function B(e) {
   return (0, r.jsxs)(l.hjN, {
     tag: l.RB0.H1,
     title: v.intl.string(v.t.wVS5SU),
-    children: [(0, r.jsx)(l.j7V, {
+    children: [(0, r.jsx)(l.rsf, {
+      label: v.intl.string(v.t.N004zM),
+      description: v.intl.string(v.t.Qq5W3t),
+      helperText: u ? v.intl.string(v.t.GckHGx) : true,
+      checked: n && !u,
       disabled: !t || u,
-      tooltipNote: u ? v.intl.string(v.t.GckHGx) : null,
-      value: n && !u,
-      note: v.intl.string(v.t.Qq5W3t),
       onChange: e => s({
         screenshakeEnabled: e
-      }, 1),
-      children: v.intl.string(v.t.N004zM)
+      }, 1)
     }), (0, r.jsxs)(l.xJW, {
       disabled: d,
       title: v.intl.string(v.t.UxnnCw),

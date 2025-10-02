@@ -145,19 +145,19 @@ function O() {
       type: "SET_TRACK_TRIGGERS",
       enabled: e
     })
-  }, []), I = O ? "Stop Tracking" : "Start Tracking";
+  }, []), k = O ? "Stop Tracking" : "Start Tracking";
   return (0, Chunk951288.jsxs)("div", {
     ref: require,
     className: l()(Chunk866403.panel, Chunk529554.panel),
     children: [(0, Chunk951288.jsxs)("div", {
       className: Chunk529554.toolbar,
       children: [(0, Chunk951288.jsx)(Chunk681715.u, {
-        text: I,
+        text: k,
         children: (0, Chunk951288.jsx)(Chunk481060.hU, {
           size: "sm",
           variant: O ? "active" : "primary",
           icon: O ? Chunk481060.fpf : Chunk481060.o1U,
-          "aria-label": I,
+          "aria-label": k,
           onClick: () => P(!O)
         })
       }), (0, Chunk951288.jsx)(Chunk481060.E1j, {

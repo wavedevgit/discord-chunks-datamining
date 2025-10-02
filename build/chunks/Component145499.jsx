@@ -183,13 +183,13 @@ let w = e => {
           F = u.slice(M, U),
           H = F.length > 0,
           z = A < x.tier,
-          V = (i = u.length, i < (0, v.A3)(E.Eu4.NONE) ? E.Eu4.NONE : i < (0, v.A3)(E.Eu4.TIER_1) ? E.Eu4.TIER_1 : i < (0, v.A3)(E.Eu4.TIER_2) ? E.Eu4.TIER_2 : i < (0, v.A3)(E.Eu4.TIER_3) || null != t && t.features.has(E.oNc.MORE_STICKERS) && i < d.D.MAX_STICKER_SLOTS ? E.Eu4.TIER_3 : E.Eu4.NONE),
-          W = C && !z && V === x.tier && U !== F.length,
-          K = W || F.length > 0,
+          W = (i = u.length, i < (0, v.A3)(E.Eu4.NONE) ? E.Eu4.NONE : i < (0, v.A3)(E.Eu4.TIER_1) ? E.Eu4.TIER_1 : i < (0, v.A3)(E.Eu4.TIER_2) ? E.Eu4.TIER_2 : i < (0, v.A3)(E.Eu4.TIER_3) || null != t && t.features.has(E.oNc.MORE_STICKERS) && i < d.D.MAX_STICKER_SLOTS ? E.Eu4.TIER_3 : E.Eu4.NONE),
+          V = C && !z && W === x.tier && U !== F.length,
+          K = V || F.length > 0,
           Y = U - M,
           q = n(872732),
           X = B - F.length,
-          J = W ? Math.min(5 - (F.length + 0) % 5, X) : 0,
+          J = V ? Math.min(5 - (F.length + 0) % 5, X) : 0,
           Q = [];
         for (let e = 0; e < J; e++) Q.push((0, r.jsx)(R, {}, "placeholder-".concat(e)));
         let $ = t.premiumTier < x.tier && D >= E.oCV[x.tier],
@@ -214,8 +214,8 @@ let w = e => {
           let e = I.Cp[x.tier];
           null != e && (0, h.H6)(t.id, e)
         }, ee = S.intl.string(S.t.g7lkra), t.premiumTier + 1 !== x.tier && (en = true, l = S.intl.string(S.t.mTMkY2))) : (en = true, l = S.intl.string(S.t.hwPEJS)));
-        let er = V === O + 1 && V > A,
-          ei = W || er || O > A;
+        let er = W === O + 1 && W > A,
+          ei = V || er || O > A;
         return er ? a = (0, r.jsx)(g.Z, {
           guild: t,
           size: o.zx.Sizes.SMALL,
@@ -228,7 +228,7 @@ let w = e => {
             object: E.qAy.BOOST_UPSELL_NEXT_LEVEL_HEADER,
             objectType: (0, v.ge)(x.tier)
           }
-        }) : W && (a = (0, r.jsx)(Z, {
+        }) : V && (a = (0, r.jsx)(Z, {
           guild: t
         })), (0, r.jsxs)(N.Z, {
           subscriptionCount: L,
@@ -247,7 +247,7 @@ let w = e => {
               sticker: e,
               canManageSticker: w(e)
             }, e.id)), Q]
-          }), !z && !W && 0 === F.length && (0, r.jsx)("div", {
+          }), !z && !V && 0 === F.length && (0, r.jsx)("div", {
             className: s()(T.emptyTierWrapper, T.unusedTierWrapper),
             children: (0, r.jsx)(c.Text, {
               variant: "text-md/normal",

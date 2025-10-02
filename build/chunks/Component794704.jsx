@@ -856,10 +856,9 @@ function eH() {
           color: "text-muted",
           children: e_.intl.string(e.description)
         })]
-      }), (0, r.jsx)(h.j7V, {
-        value: !s.has(e.disabledSetting),
-        onChange: o(e.disabledSetting),
-        hideBorder: true
+      }), (0, r.jsx)(h.rsf, {
+        checked: !s.has(e.disabledSetting),
+        onChange: o(e.disabledSetting)
       })]
     }, e.disabledSetting))]
   })
@@ -1130,11 +1129,10 @@ function eX(e) {
   return (0, r.jsxs)("div", {
     className: ep.overlayEnabledSettingsContainer,
     children: [(0, r.jsx)(eF, {}), l && (0, r.jsx)(eD, {
-      children: (0, r.jsx)(h.j7V, {
-        value: u,
-        onChange: e => b.Z.setShowKeybindIndicators(e),
-        hideBorder: true,
-        children: e_.intl.string(e_.t.XZTl9v)
+      children: (0, r.jsx)(h.rsf, {
+        label: e_.intl.string(e_.t.XZTl9v),
+        checked: u,
+        onChange: e => b.Z.setShowKeybindIndicators(e)
       })
     }), null != a && (0, r.jsxs)(eD, {
       children: [(0, r.jsxs)("div", {
@@ -1148,11 +1146,10 @@ function eX(e) {
           color: "text-muted",
           children: e_.intl.string(e_.t["5SsyFx"])
         })]
-      }), (0, r.jsx)(h.j7V, {
-        value: o || s,
+      }), (0, r.jsx)(h.rsf, {
+        checked: o || s,
         disabled: s,
-        onChange: e => f(e),
-        hideBorder: true
+        onChange: e => f(e)
       })]
     }), (0, r.jsxs)(eD, {
       children: [(0, r.jsxs)("div", {
@@ -1166,10 +1163,9 @@ function eX(e) {
           color: "text-muted",
           children: e_.intl.string(e_.t.kivMAg)
         })]
-      }), (0, r.jsx)(h.j7V, {
-        value: !c,
-        onChange: d,
-        hideBorder: true
+      }), (0, r.jsx)(h.rsf, {
+        checked: !c,
+        onChange: d
       })]
     })]
   })

@@ -42,16 +42,14 @@ function p() {
     }), (0, Chunk951288.jsx)(Chunk481060.R94, {
       type: Chunk481060.R94.Types.DESCRIPTION,
       children: Chunk388032.intl.string(Chunk388032.t["0A/8Rk"])
-    }), (0, Chunk951288.jsx)(Chunk481060.j7V, {
-      value: exports,
-      onChange: t => o.Z.setAttenuation(e, t, n),
-      hideBorder: true,
-      children: Chunk388032.intl.string(Chunk388032.t["9dHxRU"])
-    }), (0, Chunk951288.jsx)(Chunk481060.j7V, {
-      value: require,
-      onChange: n => o.Z.setAttenuation(e, t, n),
-      hideBorder: true,
-      children: Chunk388032.intl.string(Chunk388032.t.SMt0Gh)
+    }), (0, Chunk951288.jsx)(Chunk481060.rsf, {
+      label: Chunk388032.intl.string(Chunk388032.t["9dHxRU"]),
+      checked: exports,
+      onChange: t => o.Z.setAttenuation(e, t, n)
+    }), (0, Chunk951288.jsx)(Chunk481060.rsf, {
+      label: Chunk388032.intl.string(Chunk388032.t.SMt0Gh),
+      checked: require,
+      onChange: n => o.Z.setAttenuation(e, t, n)
     })]
   })
 }

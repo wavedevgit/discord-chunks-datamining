@@ -1,11 +1,11 @@
-/** Chunk was on 89368 **/
+/** Chunk was on 27208 **/
 /** chunk id: 221259, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   IG: () => p,
   JK: () => N,
   ZA: () => u,
   _m: () => b,
-  ft: () => L,
+  ft: () => E,
   yN: () => S
 }), require("./388685.js");
 var Chunk399606 = require("./399606.js"),
@@ -75,7 +75,7 @@ function p(e, n, t) {
   }, r.UE.unreads(t))
 }
 
-function L(e, n, t) {
+function E(e, n, t) {
   a.Z.updateChannelOverrideSettings(e, n, {
     message_notifications: t
   }, r.UE.notifications(t))

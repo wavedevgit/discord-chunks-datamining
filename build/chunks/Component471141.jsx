@@ -27,7 +27,7 @@ function f(e) {
     children: g,
     disabledText: E,
     containerRef: b
-  } = e, y = i.useRef(null), O = i.useRef(null), v = i.useId(), I = (0, r.jsx)(c.T2P, {
+  } = e, y = i.useRef(null), O = i.useRef(null), v = i.useId(), I = (0, r.jsx)(c.rsf, {
     id: v,
     checked: t,
     onChange: _,

@@ -51,16 +51,16 @@ function I(e) {
         };
         let {
           unlockedPowerups: a
-        } = t, u = (0, x.h)(Object.values(a)), d = null != (i = null == n ? true : n.lastSeenWarningNotification) ? i : Date.now(), h = new Date(null == (e = u[u.length - 1]) ? true : e.ends_at).getTime(), f = null != (o = null == n ? true : n.lastBoostCount) ? o : 0;
-        return u.length > 0 && d < h || p ? {
+        } = t, u = (0, x.h)(Object.values(a)), d = null != (i = null == n ? true : n.lastSeenWarningNotification) ? i : Date.now(), f = new Date(null == (e = u[u.length - 1]) ? true : e.ends_at).getTime(), h = null != (o = null == n ? true : n.lastBoostCount) ? o : 0;
+        return u.length > 0 && d < f || p ? {
           trailing: (0, r.jsx)(s.Mgn, {
             color: s.TVs.colors.STATUS_WARNING,
             size: "sm"
           }),
           showUnread: true
-        } : l !== f && l - f > 0 ? {
+        } : l !== h && l - h > 0 ? {
           trailing: (0, r.jsx)(s.mAB, {
-            count: l - f,
+            count: l - h,
             color: c.Z.BACKGROUND_ACCENT
           }),
           showUnread: true
@@ -115,7 +115,7 @@ function I(e) {
         if (null != n) return n;
         let r = function(e, t, n) {
           var r, i;
-          let l = null != (i = null == (r = h.Z.getGuild(e)) ? true : r.premiumTier) ? i : S.Eu4.NONE,
+          let l = null != (i = null == (r = f.Z.getGuild(e)) ? true : r.premiumTier) ? i : S.Eu4.NONE,
             o = Array.from(E.Tg.values()).flatMap(r => r.length <= 0 || r.some(e => {
               if (null != t.unlockedPowerups[e]) returntrue;
               let n = E.Rx[e];
@@ -123,7 +123,7 @@ function I(e) {
             }) ? [] : r.map(r => {
               let i = t.allPowerups[r];
               return null == i || n < i.cost || (0, j.e)(e, i, "maybeGetPerkPurchaseablePopoutDCF") ? null : i
-            })).filter(f.lm);
+            })).filter(h.lm);
           if (0 !== o.length) {
             if (1 === o.length && !(0, p.OY)(a.C.GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK, e)) return {
               type: O.J.PERKS_PURCHASABLE,

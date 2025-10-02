@@ -82,7 +82,7 @@ function V(e) {
     isSelected: a,
     isUnread: s,
     groupedMessages: d
-  } = e, p = n.type === L.d4z.UNKNOWN ? u.VL1 : (0, f.KS)(n, null), m = (0, h.ZP)(n, false), b = (0, c.e7)([w.Z], () => w.Z.getGuild(n.getGuildId())), {
+  } = e, p = n.type === L.d4z.UNKNOWN ? u.VL1 : (0, h.KS)(n, null), m = (0, f.ZP)(n, false), b = (0, c.e7)([w.Z], () => w.Z.getGuild(n.getGuildId())), {
     nick: O,
     colorString: y
   } = (0, _.ZP)(t), {
@@ -303,11 +303,11 @@ function W(e) {
         c = (0, m.Z)(t),
         d = t.stickerItems.length > 0,
         p = t.isPoll(),
-        h = t.type === L.uaV.POLL_RESULT,
-        f = t.hasFlag(L.iLy.IS_VOICE_MESSAGE),
+        f = t.type === L.uaV.POLL_RESULT,
+        h = t.hasFlag(L.iLy.IS_VOICE_MESSAGE),
         g = t.type === L.uaV.USER_JOIN,
         _ = null;
-      1 === s ? _ = u.XBm : s > 1 ? _ = u.Ka2 : c ? _ = b.Z : p || h ? _ = u.QDj : d ? _ = u.SlE : f && (_ = u.gj8);
+      1 === s ? _ = u.XBm : s > 1 ? _ = u.Ka2 : c ? _ = b.Z : p || f ? _ = u.QDj : d ? _ = u.SlE : h && (_ = u.gj8);
       let y = true,
         j = null;
       if (e)
@@ -315,11 +315,11 @@ function W(e) {
         else if (p) {
         var v;
         y = false, j = null == (v = t.poll) ? true : v.question.text
-      } else j = h ? U.intl.string(U.t.sad2PD) : i ? U.intl.string(U.t.p0oZm5) : s > 1 ? U.intl.formatToPlainString(U.t.rtfTKi, {
+      } else j = f ? U.intl.string(U.t.sad2PD) : i ? U.intl.string(U.t.p0oZm5) : s > 1 ? U.intl.formatToPlainString(U.t.rtfTKi, {
         count: s
       }) : 1 === s ? U.intl.string(U.t.tCcq5u) : d ? U.intl.format(U.t.zY4v1N, {
         stickerName: t.stickerItems[0].name
-      }) : f ? U.intl.string(U.t.slFYgo) : g ? U.intl.string(U.t.Yvvfw8) : U.intl.string(U.t.sDqZHB);
+      }) : h ? U.intl.string(U.t.slFYgo) : g ? U.intl.string(U.t.Yvvfw8) : U.intl.string(U.t.sDqZHB);
       else y = false, j = (0, r.jsx)(O.ZP, {
         content: a,
         message: t,
@@ -369,10 +369,10 @@ let K = (0, Chunk647438.memo)(function(e) {
     message: l,
     groupedMessages: a,
     isUnread: p
-  } = e, h = l.message, f = (0, A.fJ)(), {
+  } = e, f = l.message, h = (0, A.fJ)(), {
     params: g
   } = (0, s.$B)(), m = (0, c.e7)([I.Z], () => {
-    if (null == h) return null;
+    if (null == f) return null;
     let e = I.Z.getChannel(l.channelId);
     return null != e ? e : new S.nl({
       id: l.channelId,
@@ -382,32 +382,32 @@ let K = (0, Chunk647438.memo)(function(e) {
     })
   }), b = (0, R.z)(e => {
     var t;
-    return e.isMenuOpenForMessage(null != (t = null == h ? true : h.id) ? t : null)
+    return e.isMenuOpenForMessage(null != (t = null == f ? true : f.id) ? t : null)
   }), {
     notificationCenterVariant: _
   } = (0, Z.pN)({
     location: "NotificationsInboxMessageUnit"
-  }), O = i.useMemo(() => "".concat(null == h ? true : h.author.username, ": ").concat(null == m ? true : m.name), [null == h ? true : h.author.username, null == m ? true : m.name]), y = null != (t = null == a ? true : a.map(e => e.message).filter(e => null != e)) ? t : [];
-  return null == h || null == m ? null : (0, r.jsx)(u.kL8, {
+  }), O = i.useMemo(() => "".concat(null == f ? true : f.author.username, ": ").concat(null == m ? true : m.name), [null == f ? true : f.author.username, null == m ? true : m.name]), y = null != (t = null == a ? true : a.map(e => e.message).filter(e => null != e)) ? t : [];
+  return null == f || null == m ? null : (0, r.jsx)(u.kL8, {
     "aria-label": O,
     className: o()(G.messageClickableContainer, {
-      [G.selected]: h.id === g.messageId,
+      [G.selected]: f.id === g.messageId,
       [G.actionMenuOpen]: b
     }),
     onClick: () => {
       T.Z.inboxItemClick({
-        message: h,
+        message: f,
         channel: m,
         isUnread: p,
         isSidebar: _ === Z.jP.SIDEBAR,
-        viewId: f
+        viewId: h
       })
     },
     onContextMenu: e => {
       e.preventDefault(), (0, A.Qz)({
         interactionType: A.s_.CONTEXT_MENU,
-        message: h,
-        viewId: f
+        message: f,
+        viewId: h
       }), (0, d.jW)(e, async () => {
         let {
           default: e
@@ -420,9 +420,9 @@ let K = (0, Chunk647438.memo)(function(e) {
       })
     },
     children: (0, r.jsx)(V, {
-      message: h,
+      message: f,
       channel: m,
-      isSelected: h.id === g.messageId,
+      isSelected: f.id === g.messageId,
       groupedMessages: y,
       isUnread: p
     })

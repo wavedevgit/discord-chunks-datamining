@@ -162,14 +162,12 @@ function G(e) {
         children: [(0, r.jsx)(u.xJW, {
           title: R.intl.string(R.t.XkaTrq),
           className: P.enableOverlayItem,
-          children: (0, r.jsx)(u.j7V, {
-            className: P.enableSwitch,
-            value: o,
+          children: (0, r.jsx)(u.rsf, {
+            label: R.intl.string(R.t.vSP6c3),
+            description: G ? R.intl.string(R.t.Eb0lnJ) : true,
+            checked: o,
             disabled: G,
-            note: G ? R.intl.string(R.t.Eb0lnJ) : null,
-            hideBorder: true,
-            onChange: B,
-            children: R.intl.string(R.t.vSP6c3)
+            onChange: B
           })
         }), (0, r.jsx)(u.xJW, {
           title: R.intl.string(R.t.VsAZcH),
@@ -223,11 +221,10 @@ function G(e) {
           value: A
         })
       }), k && (0, r.jsx)(U, {
-        children: (0, r.jsx)(u.j7V, {
-          value: L,
-          onChange: e => f.Z.setShowKeybindIndicators(e),
-          hideBorder: true,
-          children: R.intl.string(R.t.XZTl9v)
+        children: (0, r.jsx)(u.rsf, {
+          label: R.intl.string(R.t.XZTl9v),
+          checked: L,
+          onChange: e => f.Z.setShowKeybindIndicators(e)
         })
       })]
     }), (0, r.jsxs)(u.hjN, {
@@ -244,12 +241,11 @@ function G(e) {
           })
         })
       }), (0, r.jsx)(U, {
-        children: (0, r.jsx)(u.j7V, {
-          value: w !== N._vf.DISABLED && !C,
-          disabled: w === N._vf.DISABLED,
+        children: (0, r.jsx)(u.rsf, {
+          label: R.intl.string(R.t.Fy5kPj),
+          checked: w !== N._vf.DISABLED && !C,
           onChange: Z,
-          hideBorder: true,
-          children: R.intl.string(R.t.Fy5kPj)
+          disabled: w === N._vf.DISABLED
         })
       })]
     })]

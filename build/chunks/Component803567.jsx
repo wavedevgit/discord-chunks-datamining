@@ -138,54 +138,50 @@ function N() {
       children: Chunk388032.intl.string(Chunk388032.t["/Whuzs"])
     }), (0, Chunk951288.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_ECHO_CANCELLATION,
-      children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
-        value: require,
+      children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
+        label: Chunk388032.intl.string(Chunk388032.t.iWTwu7),
+        checked: require,
         onChange: e => l.Z.setEchoCancellation(e, {
           page: b.ZY5.USER_SETTINGS,
           section: b.jXE.SETTINGS_VOICE_AND_VIDEO
         }),
-        disabled: Chunk626135,
-        hideBorder: true,
-        children: Chunk388032.intl.string(Chunk388032.t.iWTwu7)
+        disabled: Chunk626135
       })
     }), (0, Chunk951288.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_NOISE_SUPPRESSION,
       children: (0, Chunk951288.jsx)(C, {})
     }), (0, Chunk951288.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_ADVANCED_VOICE_ACTIVITY,
-      children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
-        value: Chunk600164,
+      children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
+        label: Chunk388032.intl.string(Chunk388032.t.BbESsr),
+        description: Chunk388032.intl.string(Chunk388032.t.LoOB1N),
+        checked: Chunk600164,
         onChange: t => l.Z.setMode(e, {
           vadUseKrisp: t
         }),
-        note: Chunk388032.intl.string(Chunk388032.t.LoOB1N),
-        disabled: !Chunk775322,
-        hideBorder: true,
-        children: Chunk388032.intl.string(Chunk388032.t.BbESsr)
+        disabled: !Chunk775322
       })
     }), (0, Chunk951288.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_AUTOMATIC_GAIN_CONTROL,
-      children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
-        value: Chunk538534,
+      children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
+        label: Chunk388032.intl.string(Chunk388032.t.cUMdHx),
+        description: Chunk388032.intl.string(Chunk388032.t["6EjbvL"]),
+        checked: Chunk538534,
         onChange: e => l.Z.setAutomaticGainControl(e, {
           page: b.ZY5.USER_SETTINGS,
           section: b.jXE.SETTINGS_VOICE_AND_VIDEO
         }),
-        note: Chunk388032.intl.string(Chunk388032.t["6EjbvL"]),
-        disabled: Chunk210887,
-        hideBorder: true,
-        children: Chunk388032.intl.string(Chunk388032.t.cUMdHx)
+        disabled: Chunk210887
       })
     }), (0, Chunk951288.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_BYPASS_SYSTEM_INPUT_PROCESSING,
-      children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
-        value: Chunk313201,
+      children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
+        label: Chunk388032.intl.string(Chunk388032.t.DFPXIC),
+        description: Chunk388032.intl.string(Chunk388032.t["UyRX+P"]),
+        checked: Chunk313201,
         onChange: e => {
           l.Z.setBypassSystemInputProcessing(e)
-        },
-        note: Chunk388032.intl.string(Chunk388032.t["UyRX+P"]),
-        hideBorder: true,
-        children: Chunk388032.intl.string(Chunk388032.t.DFPXIC)
+        }
       })
     })]
   })

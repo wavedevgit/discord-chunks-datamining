@@ -200,11 +200,10 @@ let R = Chunk647438.memo(function(e) {
     let {
       channel: t
     } = e, [n, i] = (0, I.h)(t.id);
-    return (0, r.jsx)(d.j7V, {
-      className: P.toggle,
-      onChange: i,
-      value: n,
-      children: Z.intl.string(Z.t.GYCh0d)
+    return (0, r.jsx)(d.rsf, {
+      label: Z.intl.string(Z.t.GYCh0d),
+      checked: n,
+      onChange: i
     })
   }),
   D = Chunk647438.memo(function() {

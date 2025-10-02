@@ -29,8 +29,8 @@ let h = e => {
   } = e, j = (0, s.ZP)(), {
     maxAgeOptions: N,
     maxAge: _,
-    maxUses: S,
-    temporary: b,
+    maxUses: b,
+    temporary: S,
     flags: E
   } = i;
   return (0, l.jsxs)(l.Fragment, {
@@ -53,8 +53,8 @@ let h = e => {
       shouldHideTemporaryInviteToggle: h,
       maxAgeOptions: N,
       maxAge: _,
-      maxUses: S,
-      temporary: b,
+      maxUses: b,
+      temporary: S,
       onToggleTemporary: p,
       onSelectMaxAge: v,
       onSelectMaxUses: x,

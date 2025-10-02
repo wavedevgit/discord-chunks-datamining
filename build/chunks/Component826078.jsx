@@ -59,11 +59,11 @@ let y = function(e) {
     videoPlayerRef: P,
     cropData: S,
     setCropData: N
-  } = (0, v.S)(), [E, R] = r.useState(((k = !(null == (n = P.current) || null == (t = n.videoElement) ? true : t.paused), true), k)), L = r.useRef(null), [T, D] = r.useState(null), [F, A] = r.useState(), I = r.useRef(null), Z = r.useRef(null), [B, M] = r.useState(0), [z, H] = r.useState(false), [W, U] = r.useState(null);
+  } = (0, v.S)(), [E, R] = r.useState(((k = !(null == (n = P.current) || null == (t = n.videoElement) ? true : t.paused), true), k)), L = r.useRef(null), [T, D] = r.useState(null), [F, A] = r.useState(), I = r.useRef(null), Z = r.useRef(null), [M, B] = r.useState(0), [z, H] = r.useState(false), [W, U] = r.useState(null);
   (0, d.Z)(() => {
     var e;
     let t = null == (e = P.current) ? true : e.videoElement;
-    null != t && B !== t.currentTime && M(t.currentTime)
+    null != t && M !== t.currentTime && B(t.currentTime)
   });
   let V = r.useMemo(() => S.end - S.start, [S]);
   r.useEffect(() => {
@@ -203,7 +203,7 @@ let y = function(e) {
       })
     }()
   }, [Y, G, X, F, Q]);
-  let ei = B - S.start,
+  let ei = M - S.start,
     eo = null == (l = P.current) ? true : l.videoElement;
   return (0, a.jsx)("div", {
     className: x.centeringWrapper,
@@ -255,7 +255,7 @@ let y = function(e) {
             if (null != e) {
               if (A(e.duration), 0 === S.start && (0 === S.end || S.end === e.duration)) {
                 var t;
-                null == (t = P.current) || t.seek(e.duration / 2), M(e.duration / 2)
+                null == (t = P.current) || t.seek(e.duration / 2), B(e.duration / 2)
               }
               0 === S.end && N(t => j(b({}, t), {
                 end: e.duration

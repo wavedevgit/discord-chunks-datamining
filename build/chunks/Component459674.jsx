@@ -2,7 +2,7 @@
 /** chunk id: 459674, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => f
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -13,29 +13,21 @@ var Chunk442837 = require("./442837.js"),
   Chunk740492 = require("./740492.js"),
   Chunk569550 = require("./569550.js"),
   Chunk726985 = require("./726985.js"),
-  Chunk388032 = require("./388032.jsx"),
-  Chunk10198 = require("./10198.js");
+  Chunk388032 = require("./388032.jsx");
 
-function _() {
+function f() {
   let e = (0, Chunk442837.e7)([Chunk740492.ZP], () => Chunk740492.ZP.disableVoiceChannelChangeAlert);
   return (0, Chunk951288.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.VOICE_AND_VIDEO_SWITCH_CHANNEL_ALERT,
-    children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
-      className: Chunk10198.marginBottom20,
-      note: Chunk388032.intl.string(Chunk388032.t.YCCMkJ),
+    children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
+      label: Chunk388032.intl.string(Chunk388032.t.e7LIiY),
+      description: Chunk388032.intl.string(Chunk388032.t.YCCMkJ),
+      checked: !module,
       onChange: t => {
         (0, c.Z)("switch_channel_warning_enabled", t, !e), o.ZP.updatedUnsyncedSettings({
           disableVoiceChannelChangeAlert: !t
         })
-      },
-      value: !module,
-      hideBorder: true,
-      children: (0, Chunk951288.jsx)(Chunk481060.X6q, {
-        variant: "text-md/medium",
-        color: "header-primary",
-        className: Chunk10198.marginBottom8,
-        children: Chunk388032.intl.string(Chunk388032.t.e7LIiY)
-      })
+      }
     })
   })
 }

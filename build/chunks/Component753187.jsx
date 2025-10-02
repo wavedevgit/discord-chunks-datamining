@@ -2,11 +2,12 @@
 /** chunk id: 753187, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  N: () => _
+  N: () => p
 }), require("./953529.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk692547 = require("./692547.js"),
+  Chunk313666 = require("./313666.jsx"),
   Chunk635041 = require("./635041.jsx"),
   Chunk903788 = require("./903788.jsx"),
   Chunk22202 = require("./22202.jsx"),
@@ -14,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk993517 = require("./993517.js"),
   Chunk211189 = require("./211189.js");
 
-function f(e) {
+function _(e) {
   let {
     id: t,
     errorMessage: n,
@@ -34,120 +35,131 @@ function f(e) {
   }), [s, t, l, h, n, d, _, c, f, u])
 }
 
-function _(e) {
+function p(e) {
   let {
     label: t,
     hideLabel: n = false,
     required: i,
     disabled: a,
-    description: s,
-    helperText: l,
-    children: _,
-    errorMessage: h,
-    successMessage: m,
-    trailingContent: g,
-    role: E,
-    layout: b = "vertical"
-  } = e, y = f(e), {
-    labelId: O,
-    controlId: v,
-    errorMessageId: I,
-    describedById: T,
-    helperTextId: S,
-    descriptionId: A
-  } = y, C = "group" === E || "radiogroup" === E, N = C ? "span" : "label", R = C ? "fieldset" : "div", P = C ? (0, r.jsx)("legend", {
-    id: O,
-    children: (0, r.jsx)(o.n, {
+    description: l,
+    helperText: c,
+    children: p,
+    errorMessage: m,
+    successMessage: g,
+    trailingContent: E,
+    role: b,
+    layout: y = "vertical",
+    badge: O,
+    icon: v = null
+  } = e, I = _(e), {
+    labelId: T,
+    controlId: S,
+    errorMessageId: A,
+    describedById: C,
+    helperTextId: N,
+    descriptionId: R
+  } = I, P = "group" === b || "radiogroup" === b, w = P ? "span" : "label", D = P ? "fieldset" : "div", L = P ? (0, r.jsx)("legend", {
+    id: T,
+    children: (0, r.jsx)(s.n, {
       children: t
     })
-  }) : null, w = null != t && "" !== t, D = null != s && "" !== s, L = w ? (0, r.jsxs)(c.x, {
-    "aria-hidden": C,
-    id: O,
-    tag: N,
+  }) : null, x = null != t && "" !== t, j = null != l && "" !== l, M = x ? (0, r.jsxs)(u.x, {
+    "aria-hidden": P,
+    id: T,
+    tag: w,
     variant: "text-md/medium",
-    htmlFor: v,
-    className: d.label,
-    children: [t, i && (0, r.jsx)(c.x, {
+    htmlFor: S,
+    className: f.label,
+    children: [null != v ? (0, r.jsx)(v, {
+      "aria-hidden": true,
+      size: "xs",
+      className: f.icon
+    }) : null, t, i && (0, r.jsx)(u.x, {
       "aria-hidden": true,
       variant: "text-md/normal",
       color: "text-feedback-critical",
-      className: d.required,
+      className: f.required,
       children: "*"
-    })]
+    }), null != O ? (0, r.jsx)("span", {
+      className: f.badgeContainer,
+      children: (0, r.jsx)(o.C, {
+        type: O
+      })
+    }) : null]
   }) : null;
-  return (0, r.jsx)(u.U.Provider, {
-    value: y,
-    children: (0, r.jsxs)(R, {
-      role: E,
-      className: d.container,
-      "data-layout": b,
+  return (0, r.jsx)(d.U.Provider, {
+    value: I,
+    children: (0, r.jsxs)(D, {
+      role: b,
+      className: f.container,
+      "data-layout": y,
       "data-disabled": a,
-      "aria-describedby": C ? T : true,
-      disabled: C ? a : true,
-      children: [P, w || D ? (0, r.jsxs)("div", {
-        className: d.labelContainer,
-        children: [n ? (0, r.jsx)(o.n, {
-          children: L
-        }) : L, D && (0, r.jsx)(c.x, {
+      "aria-describedby": P ? C : true,
+      disabled: P ? a : true,
+      children: [L, x || j ? (0, r.jsxs)("div", {
+        className: f.labelContainer,
+        children: [n ? (0, r.jsx)(s.n, {
+          children: M
+        }) : M, j && (0, r.jsx)(u.x, {
           variant: "text-sm/normal",
           color: "text-secondary",
-          className: d.description,
-          id: A,
-          children: s
+          className: f.description,
+          id: R,
+          children: l
         })]
       }) : null, (0, r.jsxs)("div", {
-        className: d.control,
-        children: ["function" == typeof _ ? _(y) : _, (0, r.jsx)(p, {
-          successMessage: m,
-          errorMessage: h,
-          helperText: l,
-          trailingContent: g,
-          helperTextId: S,
-          errorMessageId: I
+        className: f.control,
+        children: ["function" == typeof p ? p(I) : p, (0, r.jsx)(h, {
+          successMessage: g,
+          errorMessage: m,
+          helperText: c,
+          trailingContent: E,
+          helperTextId: N,
+          errorMessageId: A
         })]
       })]
     })
   })
 }
 
-function p(e) {
+function h(e) {
   let {
     successMessage: t,
     errorMessage: n,
     helperText: i,
     trailingContent: o,
-    helperTextId: u,
-    errorMessageId: f
+    helperTextId: s,
+    errorMessageId: d
   } = e, _ = (0, r.jsx)("div", {}), p = null != o;
   return (null != t && "" !== t ? (p = true, _ = (0, r.jsxs)("div", {
-    className: d.statusMessageContainer,
-    children: [(0, r.jsx)(s.o, {
+    className: f.statusMessageContainer,
+    children: [(0, r.jsx)(l.o, {
       size: "xs",
       color: a.Z.colors.TEXT_FEEDBACK_POSITIVE
-    }), (0, r.jsx)(c.x, {
+    }), (0, r.jsx)(u.x, {
       variant: "text-xs/normal",
       color: "text-feedback-positive",
-      id: u,
+      id: s,
       children: t
     })]
   })) : null != n && "" !== n ? (p = true, _ = (0, r.jsxs)("div", {
-    className: d.statusMessageContainer,
-    children: [(0, r.jsx)(l.M, {
+    className: f.statusMessageContainer,
+    children: [(0, r.jsx)(c.M, {
       size: "xs",
       color: a.Z.colors.TEXT_FEEDBACK_CRITICAL
-    }), (0, r.jsx)(c.x, {
+    }), (0, r.jsx)(u.x, {
       variant: "text-xs/normal",
       color: "text-feedback-critical",
-      id: f,
+      id: d,
       children: n
     })]
-  })) : null != i && (p = true, _ = (0, r.jsx)(c.x, {
+  })) : null != i && (p = true, _ = (0, r.jsx)(u.x, {
     variant: "text-xs/normal",
     color: "text-secondary",
-    id: u,
+    id: s,
     children: i
   })), p) ? (0, r.jsxs)("div", {
-    className: d.helperTextContainer,
+    className: f.helperTextContainer,
     children: [_, o]
   }) : null
 }

@@ -130,9 +130,10 @@ let M = {
     },
     renderInput(e, t) {
       let {
-        onChange: n
-      } = e, r = b(e, ["onChange"]);
-      return (0, i.jsx)(c.VcW, E(m({}, r), {
+        onChange: n,
+        layout: r
+      } = e, a = b(e, ["onChange", "layout"]);
+      return (0, i.jsx)(c.VcW, E(m({}, a), {
         autoFocus: true,
         maxVisibleItems: 8,
         isDisabled: "edit" === t.mode,

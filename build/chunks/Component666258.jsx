@@ -93,7 +93,7 @@ let w = e => {
     let {
       guild: t,
       channel: n
-    } = e, i = (0, b.a5)({
+    } = e, i = (0, S.a5)({
       type: n.type
     }), r = (0, l.jsx)(h.Text, {
       variant: "text-xs/medium",
@@ -249,7 +249,7 @@ function F(e) {
     canUseVanityURL: f,
     disabled: j,
     hasSelection: N,
-    options: b,
+    options: S,
     setOptions: w,
     isApplicationBypassAllowed: R,
     isGuestInviteAllowed: k,
@@ -269,7 +269,7 @@ function F(e) {
       }, 1e3)
     }, e => {
       F(e)
-    }), S.default.track(C.rMx.COPY_INSTANT_INVITE, {
+    }), b.default.track(C.rMx.COPY_INSTANT_INVITE, {
       server: r.id,
       channel: null != (e = null == s ? true : s.id) ? e : null,
       channel_type: null != (t = null == s ? true : s.type) ? t : null,
@@ -288,12 +288,12 @@ function F(e) {
       max_uses: e
     })
   }, [w]), en = i.useCallback(e => {
-    b.flags === e ? w({
+    S.flags === e ? w({
       flags: true
     }) : w({
       flags: e
     })
-  }, [b, w]), el = i.useCallback(e => {
+  }, [S, w]), el = i.useCallback(e => {
     w({
       temporary: e
     })
@@ -309,12 +309,12 @@ function F(e) {
         default: e
       } = await n.e("84212").then(n.bind(n, 593851));
       return t => (0, l.jsx)(e, M(A({}, t), {
-        initialOptions: b,
+        initialOptions: S,
         onChangeMaxAge: ee,
         onChangeMaxUses: et
       }))
     })
-  }, [b, ee, et]), er = function(e) {
+  }, [S, ee, et]), er = function(e) {
     let t = y.H.find(t => {
         let {
           value: n
@@ -331,7 +331,7 @@ function F(e) {
       maxAge: t.label,
       maxUses: n.label
     }) : n.value === O.ZP.INVITE_OPTIONS_UNLIMITED.value && t.value !== O.ZP.INVITE_OPTIONS_FOREVER.value ? t.label : n.value !== O.ZP.INVITE_OPTIONS_UNLIMITED.value && t.value === O.ZP.INVITE_OPTIONS_FOREVER.value ? n.label : null
-  }(b);
+  }(S);
   return (0, l.jsxs)("div", {
     className: a()(t, Z.footer),
     children: [(0, l.jsxs)("div", {
@@ -402,7 +402,7 @@ function F(e) {
           })]
         }), (0, l.jsx)(h.rsf, {
           id: K,
-          checked: b.flags === u.$.IS_APPLICATION_BYPASS,
+          checked: S.flags === u.$.IS_APPLICATION_BYPASS,
           onChange: () => en(u.$.IS_APPLICATION_BYPASS)
         })]
       }), k && (0, l.jsxs)(U, {
@@ -422,7 +422,7 @@ function F(e) {
           })]
         }), (0, l.jsx)(h.rsf, {
           id: X,
-          checked: b.flags === u.$.IS_GUEST_INVITE,
+          checked: S.flags === u.$.IS_GUEST_INVITE,
           onChange: () => en(u.$.IS_GUEST_INVITE)
         })]
       }), D && (0, l.jsxs)(U, {
@@ -442,7 +442,7 @@ function F(e) {
           })]
         }), (0, l.jsx)(h.rsf, {
           id: Q,
-          checked: !!b.temporary,
+          checked: !!S.temporary,
           onChange: e => el(e)
         })]
       })]

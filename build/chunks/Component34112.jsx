@@ -191,8 +191,8 @@ function G(e) {
       roleId: d.id
     })
   }), [k, d]), [{
-    dragSourcePosition: V
-  }, W] = (0, o.L)(z), K = i.useCallback(e => {
+    dragSourcePosition: W
+  }, V] = (0, o.L)(z), K = i.useCallback(e => {
     (0, m.jW)(e, async () => {
       let {
         default: e
@@ -220,13 +220,13 @@ function G(e) {
   return (0, r.jsxs)(u.P3F, {
     className: s()(w.roleRow, {
       [w.roleRowDisableHover]: C,
-      [w.containerDragBefore]: null != V && x < V,
-      [w.containerDragAfter]: null != V && x > V
+      [w.containerDragBefore]: null != W && x < W,
+      [w.containerDragAfter]: null != W && x > W
     }),
     onClick: q,
     onContextMenu: K,
     innerRef: e => {
-      H(W(e))
+      H(V(e))
     },
     "data-dnd-name": d.name,
     "aria-label": P.intl.formatToPlainString(P.t.Vu0AcX, {

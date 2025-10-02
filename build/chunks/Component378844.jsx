@@ -52,9 +52,9 @@ let y = e => {
     newMember: E
   } = (0, l.e7)([p.Z], () => p.Z.getCheck(r), [r]), S = 0 === t ? m.intl.string(m.t["6zY8BA"]) : null, P = null, I = null;
   return (0 === t && (j ? (P = m.intl.string(m.t.IRxUlJ), I = m.intl.string(m.t.fiNVio)) : x ? (P = m.intl.string(m.t.vW8iUF), I = m.intl.string(m.t["50gfOj"])) : v ? (P = m.intl.string(m.t.vdSOp6), I = m.intl.string(m.t.lm1UKi)) : E ? (P = m.intl.formatToPlainString(m.t.v1ktYW, {
-    min: f.YeM.MEMBER_AGE
+    min: h.YeM.MEMBER_AGE
   }), I = m.intl.string(m.t.BddRzc)) : C && (P = m.intl.formatToPlainString(m.t["sncw4+"], {
-    min: f.YeM.ACCOUNT_AGE
+    min: h.YeM.ACCOUNT_AGE
   }), I = m.intl.string(m.t.BddRzc))), null == S || null == P) ? null : (0, i.jsxs)(a.VqE, {
     className: b.container,
     "aria-labelledby": y,
@@ -100,7 +100,7 @@ let y = e => {
                   children: (0, i.jsx)(a.Text, {
                     variant: "text-md/normal",
                     children: m.intl.format(m.t.azKEPz, {
-                      email: null == (t = h.default.getCurrentUser()) ? true : t.email
+                      email: null == (t = f.default.getCurrentUser()) ? true : t.email
                     })
                   })
                 }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {

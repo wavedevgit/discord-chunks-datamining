@@ -47,7 +47,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk10083 = require("./10083.js"),
   Chunk179517 = require("./179517.js"),
   Chunk79829 = require("./79829.js");
-let W = (0, Chunk663993.Un)({
+let V = (0, Chunk663993.Un)({
     createPromise: () => require.e("4848").then(require.bind(require, 797967)),
     webpackId: 797967
   }),
@@ -86,7 +86,7 @@ function q(e) {
       name: t.name
     },
     light: {
-      src: V,
+      src: W,
       name: t.name
     }
   };
@@ -228,7 +228,7 @@ function J(e) {
     children: [(0, r.jsx)(g.R94, {
       className: F.colorDescription,
       children: U.intl.string(U.t["9UCxlZ"])
-    }), (0, r.jsx)(W, {
+    }), (0, r.jsx)(V, {
       defaultColor: G.p6O,
       colors: s === T.g.GRADIENT && a ? M.tl : G.pmI,
       value: i.color,
@@ -268,7 +268,7 @@ function Q(e) {
     src: z,
     name: t.name
   }, d = {
-    src: V,
+    src: W,
     name: t.name
   }, u = (0, v.oC)(n, t), p = [G.BRd.DARK, G.BRd.DARKER, G.BRd.MIDNIGHT, G.BRd.LIGHT];
   return (0, r.jsx)(g.Rny, {
@@ -309,21 +309,19 @@ function $(e) {
     disabled: n
   } = e;
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(g.j7V, {
-      disabled: n,
-      value: t.hoist,
+    children: [(0, r.jsx)(g.rsf, {
+      label: U.intl.string(U.t.vceJPj),
+      checked: t.hoist,
       onChange: e => (0, S.we)(t.id, e, t.mentionable),
-      hideBorder: true,
-      children: U.intl.string(U.t.vceJPj)
+      disabled: n
     }), (0, r.jsx)(g.izJ, {
       className: F.divider
-    }), (0, r.jsx)(g.j7V, {
-      disabled: n,
-      value: t.mentionable,
+    }), (0, r.jsx)(g.rsf, {
+      label: U.intl.formatToPlainString(U.t.DTXoJS, {}),
+      description: U.intl.string(U.t.kRg5W1),
+      checked: t.mentionable,
       onChange: e => (0, S.we)(t.id, t.hoist, e),
-      note: U.intl.string(U.t.kRg5W1),
-      hideBorder: true,
-      children: U.intl.format(U.t.DTXoJS, {})
+      disabled: n
     })]
   })
 }

@@ -121,12 +121,11 @@ function _() {
           onClick: Chunk668757.$R
         })
       }), (0, Chunk951288.jsx)("div", {
-        className: i()(Chunk103088.buttonsContainer, Chunk10198.marginBottom8),
-        children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
-          value: require,
-          onChange: e => x.Rt.updateSetting(e),
-          hideBorder: true,
-          children: "Ignore profile speedbump disabled"
+        className: i()(Chunk103088.buttonsContainer, Chunk10198.marginBottom20),
+        children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
+          label: "Ignore profile speedbump disabled",
+          checked: require,
+          onChange: e => x.Rt.updateSetting(e)
         })
       })]
     })]

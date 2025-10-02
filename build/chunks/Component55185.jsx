@@ -50,7 +50,7 @@ function j(e) {
     closePopout: l
   } = e, o = (0, a.e7)([d.Z], () => d.Z.getStatus()), {
     showLinkToSettings: p
-  } = (0, h.D)("popout");
+  } = (0, f.D)("popout");
   return (0, i.jsxs)("div", {
     className: _.toggleContainer,
     children: [(0, i.jsxs)("div", {
@@ -69,7 +69,7 @@ function j(e) {
           color: "text-secondary",
           children: o === s.Skl.INVISIBLE ? b.intl.string(m.default.a3AofX) : b.intl.string(b.t.WbGtnJ)
         })]
-      }), r && p && (0, i.jsx)(f.K, {
+      }), r && p && (0, i.jsx)(h.K, {
         onClosePopout: l
       })]
     }), (0, i.jsx)(s.rsf, {
@@ -195,7 +195,7 @@ function S(e) {
     closePopout: t
   } = e, n = u.G6.useSetting(), {
     showLinkToSettings: r
-  } = (0, h.D)("popout");
+  } = (0, f.D)("popout");
   return (0, i.jsxs)(v, {
     children: [(0, i.jsx)(j, {
       showCurrentGame: n,
@@ -208,7 +208,7 @@ function S(e) {
       children: b.intl.format(m.default.nHDuwM, {
         learnMoreLink: p.Z.getArticleURL(g.BhN.ACTIVITY_STATUS_SETTINGS)
       })
-    }), r && (0, i.jsx)(f.y, {
+    }), r && (0, i.jsx)(h.y, {
       onClosePopout: t
     })]
   })
@@ -241,7 +241,7 @@ function I(e) {
     closePopout: t
   } = e, n = u.G6.useSetting(), {
     showLinkToSettings: r
-  } = (0, h.D)("popout");
+  } = (0, f.D)("popout");
   return (0, i.jsxs)(v, {
     children: [(0, i.jsx)(j, {
       showCurrentGame: n,
@@ -255,7 +255,7 @@ function I(e) {
       children: b.intl.format(m.default.nHDuwM, {
         learnMoreLink: p.Z.getArticleURL(g.BhN.ACTIVITY_STATUS_SETTINGS)
       })
-    }), r && (0, i.jsx)(f.y, {
+    }), r && (0, i.jsx)(h.y, {
       onClosePopout: t
     })]
   })

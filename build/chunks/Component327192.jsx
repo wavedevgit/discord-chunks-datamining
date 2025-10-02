@@ -2,7 +2,7 @@
 /** chunk id: 327192, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => $
+  Z: () => J
 }), require("./388685.js"), require("./539854.js"), require("./457542.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -42,10 +42,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk856651 = require("./856651.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk465631 = require("./465631.js"),
-  Chunk10198 = require("./10198.js");
+  Chunk465631 = require("./465631.js");
 
-function V(e, t, n) {
+function F(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -54,20 +53,20 @@ function V(e, t, n) {
   }) : e[t] = n, e
 }
 
-function H(e) {
+function V(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      V(e, t, n[t])
+      F(e, t, n[t])
     })
   }
   return e
 }
 
-function Y(e, t) {
+function H(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -78,12 +77,12 @@ function Y(e, t) {
   return n
 }
 
-function W(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Y(Object(t)).forEach(function(n) {
+function Y(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : H(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let K = e => {
+let W = e => {
   var t, n;
   let i, {
       integration: a
@@ -139,13 +138,13 @@ let K = e => {
   })
 };
 
-function z(e) {
+function K(e) {
   let {
     onDisconnect: t,
     account: n,
     theme: a,
     locale: o
-  } = e, [l, c] = i.useState(n.friendSync), [_, h] = i.useState(n.visibility), [m, g] = i.useState(n.metadataVisibility), [I, T] = i.useState(n.showActivity), [A, C] = i.useState(null), [N, R] = i.useState(null), [w, x] = i.useState(false), [G, F] = i.useState([]), V = (0, b.rR)(n.type), Y = E.Z.get(V);
+  } = e, [l, c] = i.useState(n.friendSync), [_, h] = i.useState(n.visibility), [m, g] = i.useState(n.metadataVisibility), [I, T] = i.useState(n.showActivity), [A, C] = i.useState(null), [N, R] = i.useState(null), [w, x] = i.useState(false), [G, F] = i.useState([]), H = (0, b.rR)(n.type), K = E.Z.get(H);
   i.useEffect(() => {
     c(n.friendSync), h(n.visibility), g(n.metadataVisibility), T(n.showActivity)
   }, [n]);
@@ -158,12 +157,12 @@ function z(e) {
   function X(e) {
     var t;
     let n = E.Z.get(e.type),
-      i = E.Z.get(V),
+      i = E.Z.get(H),
       o = "1" === (null != (t = e.metadata) ? t : {})[U.PC.TWITTER_VERIFIED],
       s = null;
     return n.type === k.ABu.TWITTER && o && (s = (0, r.jsx)(f.ua7, {
       text: B.intl.string(B.t.Jebrw8),
-      children: e => (0, r.jsx)(S.Z, W(H({}, e), {
+      children: e => (0, r.jsx)(S.Z, Y(V({}, e), {
         color: u.Z.unsafe_rawColors.TWITTER.css,
         children: (0, r.jsx)(f.kmB, {
           size: "xs",
@@ -251,7 +250,7 @@ function z(e) {
     }
     null !== a && (null == i && (i = []), null == i || i.push((0, r.jsx)(f.Text, {
       variant: "text-xs/normal",
-      color: "interactive-active",
+      color: "text-secondary",
       className: Z.connectedAccountVanityMetadataCreatedAt,
       children: B.intl.format(B.t["9rfonp"], {
         date: a
@@ -275,7 +274,7 @@ function z(e) {
       className: Z.metadataRefreshButton,
       children: (0, r.jsx)(f.zxk, {
         text: l,
-        variant: "primary",
+        variant: "secondary",
         size: "sm",
         loading: w,
         disabled: s,
@@ -297,51 +296,28 @@ function z(e) {
   function $(e) {
     var t;
     let i, a, o;
-    return k.BFP.has(n.type) && (i = (0, r.jsx)(f.j7V, {
-      className: Z.connectionOptionSwitch,
-      hideBorder: true,
-      value: l,
-      onChange: eo,
-      children: (0, r.jsx)(f.Text, {
-        variant: "text-sm/semibold",
-        children: B.intl.string(B.t["+KCMSk"])
-      })
-    })), k.vbS.has(n.type) && (a = (0, r.jsx)(f.j7V, {
-      className: Z.connectionOptionSwitch,
-      hideBorder: true,
-      value: I,
-      onChange: es,
-      children: (0, r.jsx)(f.Text, {
-        variant: "text-sm/semibold",
-        children: B.intl.format(B.t["6u6J0t"], {
-          platform: e.name
-        })
-      })
-    })), (null == (t = E.Z.get(n.type)) ? true : t.hasMetadata) === true && (o = (0, r.jsx)(f.j7V, {
-      className: Z.connectionOptionSwitch,
-      hideBorder: true,
-      value: 1 === m,
+    return k.BFP.has(n.type) && (i = (0, r.jsx)(f.rsf, {
+      label: B.intl.string(B.t["+KCMSk"]),
+      checked: l,
+      onChange: eo
+    })), k.vbS.has(n.type) && (a = (0, r.jsx)(f.rsf, {
+      label: B.intl.format(B.t["6u6J0t"], {
+        platform: e.name
+      }),
+      checked: I,
+      onChange: es
+    })), (null == (t = E.Z.get(n.type)) ? true : t.hasMetadata) === true && (o = (0, r.jsx)(f.rsf, {
+      label: B.intl.string(B.t.FYKGsL),
+      checked: 1 === m,
       onChange: ea,
-      disabled: 1 !== _ || null == n.metadata,
-      children: (0, r.jsx)(f.Text, {
-        variant: "text-sm/semibold",
-        children: B.intl.string(B.t.FYKGsL)
-      })
-    })), (0, r.jsx)("div", {
-      className: Z.connectionOptionsWrapper,
-      children: (0, r.jsxs)("div", {
-        className: Z.connectionOptions,
-        children: [(0, r.jsx)(f.j7V, {
-          className: Z.connectionOptionSwitch,
-          hideBorder: true,
-          value: 1 === _,
-          onChange: ei,
-          children: (0, r.jsx)(f.Text, {
-            variant: "text-sm/semibold",
-            children: B.intl.string(B.t.f7yOAQ)
-          })
-        }), o, a, i]
-      })
+      disabled: 1 !== _ || null == n.metadata
+    })), (0, r.jsxs)("div", {
+      className: Z.connectionOptions,
+      children: [(0, r.jsx)(f.rsf, {
+        label: B.intl.string(B.t.f7yOAQ),
+        checked: 1 === _,
+        onChange: ei
+      }), o, a, i]
     })
   }
 
@@ -362,7 +338,7 @@ function z(e) {
           children: B.intl.string(B.t.fOe3fX)
         })
       }), (0, r.jsx)("div", {
-        children: n.integrations.map(e => (0, r.jsx)(K, {
+        children: n.integrations.map(e => (0, r.jsx)(W, {
           integration: e
         }, e.id))
       })]
@@ -384,7 +360,7 @@ function z(e) {
 
   function er() {
     let e = E.Z.get(n.type);
-    (0, f.h7j)(i => (0, r.jsx)(s.Modal, W(H({
+    (0, f.h7j)(i => (0, r.jsx)(s.Modal, Y(V({
       title: B.intl.formatToPlainString(B.t.U5x12d, {
         name: e.name
       }),
@@ -457,33 +433,25 @@ function z(e) {
     null != e && (h(e), p.Z.setVisibility(n.type, n.id, e), C(null)), null != t && (g(t), p.Z.setMetadataVisibility(n.type, n.id, t), R(null))
   }, [n]), (0, r.jsxs)("div", {
     className: Z.connection,
-    children: [X(n), Q(n), J(n), $(Y), et(), ee()]
+    children: [X(n), Q(n), J(n), $(K), et(), ee()]
   })
 }
 
-function q() {
+function z() {
   return Chunk647438.useEffect(() => () => {
     (0, Chunk266454.Q3)(Chunk704215.z.NEW_CRUNCHYROLL_CONNECTION, {
       dismissAction: Chunk921944.L.AUTO
     })
-  }, []), (0, Chunk951288.jsxs)("div", {
-    className: Chunk465631.connectContainer,
-    children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
-      variant: "heading-md/bold",
-      color: "interactive-active",
-      className: Chunk465631.connectHeader,
-      children: Chunk388032.intl.string(Chunk388032.t.ZeDrUV)
-    }), (0, Chunk951288.jsx)(Chunk481060.Text, {
-      variant: "text-xs/normal",
-      color: "header-secondary",
-      children: Chunk388032.intl.format(Chunk388032.t["oYc+Gx"], {
-        privacyPolicyUrl: Chunk981631.EYA.PRIVACY
-      })
-    }), (0, Chunk951288.jsx)(Q, {})]
+  }, []), (0, Chunk951288.jsx)(Chunk481060.NIc, {
+    label: Chunk388032.intl.string(Chunk388032.t.ZeDrUV),
+    description: Chunk388032.intl.format(Chunk388032.t["oYc+Gx"], {
+      privacyPolicyUrl: Chunk981631.EYA.PRIVACY
+    }),
+    children: (0, Chunk951288.jsx)(X, {})
   })
 }
 
-function X(e) {
+function q(e) {
   let t = E.Z.get(e);
   (0, O.Z)({
     platformType: t.type
@@ -494,11 +462,11 @@ function X(e) {
   })
 }
 
-function Q() {
+function X() {
   function e() {
     Chunk570140.Z.dispatch({
       type: "CONNECTIONS_GRID_MODAL_SHOW",
-      onComplete: X
+      onComplete: q
     })
   }
   let t = (0, Chunk122021.fq)();
@@ -538,7 +506,7 @@ function Q() {
   })
 }
 
-function J(e) {
+function Q(e) {
   let t, {
     fetching: n,
     accounts: i,
@@ -554,16 +522,14 @@ function J(e) {
     p.Z.disconnect(t, n)
   }
   return t = n ? (0, r.jsx)(f.$jN, {
-    className: F.marginTop20,
     type: f.$jN.Type.SPINNING_CIRCLE
   }) : 0 === i.length ? (0, r.jsx)(f.ubH, {
-    className: F.marginTop40,
     theme: a,
     children: (0, r.jsx)(f.OZU, {
       note: B.intl.string(B.t.WenGZ2),
       children: B.intl.string(B.t["aoLS8/"])
     })
-  }) : i.filter(e => E.Z.isSupported(e.type)).map((e, t) => (0, r.jsx)(z, {
+  }) : i.filter(e => E.Z.isSupported(e.type)).map((e, t) => (0, r.jsx)(K, {
     theme: a,
     account: e,
     locale: o,
@@ -573,7 +539,7 @@ function J(e) {
     children: t
   })
 }
-let $ = () => {
+let J = () => {
   let e = (0, Chunk442837.e7)([Chunk246946.Z], () => Chunk246946.Z.hidePersonalInformation),
     t = (0, Chunk442837.e7)([Chunk553795.Z], () => Chunk553795.Z.isFetching()),
     n = (0, Chunk442837.e7)([Chunk553795.Z], () => Chunk553795.Z.getAccounts()),
@@ -583,7 +549,9 @@ let $ = () => {
     Chunk457330.Z.fetch()
   }, []), module) ? (0, Chunk951288.jsx)(Chunk497321.Z, {}) : (0, Chunk951288.jsxs)(Chunk273313.Z, {
     title: Chunk388032.intl.string(Chunk388032.t["3fe7U1"]),
-    children: [(0, Chunk951288.jsx)(q, {}), (0, Chunk951288.jsx)(J, {
+    children: [(0, Chunk951288.jsx)(z, {}), (0, Chunk951288.jsx)(Chunk481060.izJ, {
+      gap: 24
+    }), (0, Chunk951288.jsx)(Q, {
       fetching: exports,
       accounts: require,
       theme: Chunk120356,

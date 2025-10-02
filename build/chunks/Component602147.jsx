@@ -31,14 +31,14 @@ let m = Chunk647438.forwardRef(function(e, t) {
       case p.GlobalDiscoveryTab.QUESTS:
         return (0, c.transitionToGlobalDiscovery)({
           tab: p.GlobalDiscoveryTab.QUESTS,
-          location: f.dr.DISCOVERY_COMPASS,
+          location: h.dr.DISCOVERY_COMPASS,
           questContent: l.j.DISCOVERY_COMPASS,
           questId: b
         });
       case p.GlobalDiscoveryTab.SERVERS:
         return (0, c.transitionToGlobalDiscovery)({
           tab: p.GlobalDiscoveryTab.SERVERS,
-          entrypoint: h.Qq.GUILDS_BAR
+          entrypoint: f.Qq.GUILDS_BAR
         });
       case p.GlobalDiscoveryTab.APPS:
         return (0, c.transitionToGlobalDiscovery)({

@@ -160,9 +160,9 @@ let e_ = {
         };
       case ef.pNK.ROLES:
         return {
-          section: ef.pNK.ROLES, impressionName: i.ImpressionNames.GUILD_SETTINGS_ROLES, label: eb.intl.string(eb.t.LPJmLy), element: V.Z, type: o.bT.MINIMAL, ariaLabel: eb.intl.string(eb.t.KXcECw), notice: {
+          section: ef.pNK.ROLES, impressionName: i.ImpressionNames.GUILD_SETTINGS_ROLES, label: eb.intl.string(eb.t.LPJmLy), element: W.Z, type: o.bT.MINIMAL, ariaLabel: eb.intl.string(eb.t.KXcECw), notice: {
             stores: [z.Z],
-            element: V._
+            element: W._
           }, predicate: () => t.canManageRoles, icon: t.pinPermissionMigrationAvailable ? (0, r.jsx)("div", {
             className: ex.redDot
           }) : true
@@ -232,7 +232,7 @@ let e_ = {
         };
       case ef.pNK.BANS:
         return {
-          section: ef.pNK.BANS, impressionName: i.ImpressionNames.GUILD_SETTINGS_BANS, label: eb.intl.string(eb.t.ZbeITU), element: W.Z, predicate: () => t.canManageBans
+          section: ef.pNK.BANS, impressionName: i.ImpressionNames.GUILD_SETTINGS_BANS, label: eb.intl.string(eb.t.ZbeITU), element: V.Z, predicate: () => t.canManageBans
         };
       case ef.pNK.COMMUNITY:
         let eE = eb.intl.string(eb.t.ElKTeX);

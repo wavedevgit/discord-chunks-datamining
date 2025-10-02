@@ -55,10 +55,10 @@ let _ = e => {
     return (0, d.m$)({
       channelId: t.id
     }) ? (0, r.jsx)(l.ua7, {
-      text: f.intl.string(f.t.QyZ4TU),
+      text: h.intl.string(h.t.QyZ4TU),
       children: e => (0, r.jsx)(l.tQf, b(m({}, e), {
         size: "xs",
-        "aria-label": f.intl.string(f.t.VHXh8f),
+        "aria-label": h.intl.string(h.t.VHXh8f),
         color: l.TVs.colors.INTERACTIVE_NORMAL
       }))
     }) : null
@@ -69,7 +69,7 @@ let _ = e => {
     } = e, i = t.id, d = (0, s.ZP)(t);
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.ua7, {
-        text: f.intl.string(f.t["5Q9+/P"]),
+        text: h.intl.string(h.t["5Q9+/P"]),
         position: "bottom",
         children: e => {
           var {
@@ -108,13 +108,13 @@ let _ = e => {
             }),
             onDoubleClick: e => e.stopPropagation(),
             onMouseEnter: () => {
-              null == s || s(), p.default.track(h.rMx.GDM_EDIT_INTERACTED, {
+              null == s || s(), p.default.track(f.rMx.GDM_EDIT_INTERACTED, {
                 channel_id: t.id,
                 action: "entry_point_hovered",
                 location: a.Z.HEADER_BAR
               })
             },
-            "aria-label": f.intl.string(f.t["5Q9+/P"]),
+            "aria-label": h.intl.string(h.t["5Q9+/P"]),
             children: [(0, r.jsx)(c.Z, {
               className: g.gdmIcon,
               "aria-hidden": true,

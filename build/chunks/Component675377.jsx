@@ -83,7 +83,7 @@ function B() {
     children: (0, Chunk951288.jsx)(Chunk481060.hjN, {
       tag: Chunk481060.RB0.H1,
       title: Chunk388032.intl.string(Chunk388032.t.OWQNYm),
-      children: (0, Chunk951288.jsx)(W, {
+      children: (0, Chunk951288.jsx)(V, {
         guild: module
       })
     })
@@ -180,7 +180,7 @@ let z = e => {
       children: e => n(e, p)
     }))
   },
-  V = () => {
+  W = () => {
     let e = Chunk647438.useRef(null);
     return (0, Chunk951288.jsx)(z, {
       renderPopoutBody: () => (0, Chunk951288.jsx)(Chunk481060.Text, {
@@ -201,7 +201,7 @@ let z = e => {
     })
   };
 
-function W(e) {
+function V(e) {
   let {
     guild: t
   } = e, [l, s] = (0, c.Wu)([v.Z], () => {
@@ -240,7 +240,7 @@ function W(e) {
       })
     },
     disabled: g <= 0 || !a
-  }) : (0, r.jsx)(V, {});
+  }) : (0, r.jsx)(W, {});
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       children: [(0, r.jsx)(u.Text, {

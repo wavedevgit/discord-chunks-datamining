@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk102647 = require("./102647.js"),
   Chunk395530 = require("./395530.js");
 
-function f() {
+function h() {
   return (0, Chunk951288.jsx)("div", {
     className: o()(Chunk102647.row, Chunk102647.rowGuildName),
     children: (0, Chunk951288.jsx)("span", {
@@ -51,9 +51,9 @@ let g = Chunk647438.memo(function(e) {
     spacing: 12,
     position: "right",
     align: "center",
-    text: (0, r.jsx)(f, {}),
+    text: (0, r.jsx)(h, {}),
     "aria-label": t,
-    tooltipClassName: h.listItemTooltip,
+    tooltipClassName: f.listItemTooltip,
     children: e => {
       var t, i;
       return (0, r.jsx)("div", (t = function(e) {

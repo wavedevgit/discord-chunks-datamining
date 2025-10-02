@@ -109,7 +109,7 @@ function h(e) {
       addedGuilds: m,
       loading: p
     } = e,
-    [h, _] = l.useState(0);
+    [h, b] = l.useState(0);
   return t = p ? (0, i.jsx)("div", {
     className: C.emptyContainer,
     children: (0, i.jsx)(c.$jN, {})
@@ -153,7 +153,7 @@ function h(e) {
       controls: (0, i.jsxs)(c.njP, {
         className: C.tabBar,
         selectedItem: h,
-        onItemSelect: _,
+        onItemSelect: b,
         type: "top",
         look: "brand",
         children: [(0, i.jsx)(c.njP.Item, {

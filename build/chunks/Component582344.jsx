@@ -44,14 +44,14 @@ function h() {
           })]
         }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
           className: Chunk752519.divider
-        }), (0, Chunk951288.jsx)(Chunk481060.j7V, {
-          value: exports,
-          onChange: Chunk883904.Nj,
-          children: "Override Dismissible Content Daily Cap"
-        }), (0, Chunk951288.jsx)(Chunk481060.j7V, {
-          value: require,
-          onChange: Chunk883904.KC,
-          children: "Override Minimum User Account Age Requirement"
+        }), (0, Chunk951288.jsx)(Chunk481060.rsf, {
+          label: "Override Dismissible Content Daily Cap",
+          checked: exports,
+          onChange: Chunk883904.Nj
+        }), (0, Chunk951288.jsx)(Chunk481060.rsf, {
+          label: "Override Minimum User Account Age Requirement",
+          checked: require,
+          onChange: Chunk883904.KC
         })]
       }), (0, Chunk951288.jsx)(Chunk775195.Z, {}), (0, Chunk951288.jsx)(Chunk227157.Z, {}), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
         title: "All Dismissible Contents",

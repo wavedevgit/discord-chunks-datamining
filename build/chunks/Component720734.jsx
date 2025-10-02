@@ -181,7 +181,7 @@ function tm(e) {
     "data-jump-section": b
   } = e, v = r.useRef(null), j = null != t ? t : v, y = (0, eW.NZ)({
     avatarDecoration: x,
-    size: (0, k.y9)(f.EFr.SIZE_32)
+    size: (0, I.y9)(f.EFr.SIZE_32)
   }), {
     updateOpenPopoutRef: C,
     highlightBadge: E,
@@ -203,8 +203,8 @@ function tm(e) {
         } = t;
         null != r && a(r), null == (n = e.current) || n.call(e)
       };
-      return eY.S.subscribe(e7.CkL.SHOW_ACCOUNT_PROFILE_POPOUT, t), () => {
-        eY.S.unsubscribe(e7.CkL.SHOW_ACCOUNT_PROFILE_POPOUT, t)
+      return eY.S.subscribe(e9.CkL.SHOW_ACCOUNT_PROFILE_POPOUT, t), () => {
+        eY.S.unsubscribe(e9.CkL.SHOW_ACCOUNT_PROFILE_POPOUT, t)
       }
     }), {
       updateOpenPopoutRef: t,
@@ -213,9 +213,9 @@ function tm(e) {
     }
   }(), S = (0, er.A)(m);
   if (null == s) return null;
-  let T = h && p !== e7.I_8 && p !== e7.ME && null != p ? p : true;
+  let T = h && p !== e9.I_8 && p !== e9.ME && null != p ? p : true;
   return (0, a.jsx)(g.Z, {
-    object: e7.qAy.AVATAR,
+    object: e9.qAy.AVATAR,
     children: (0, a.jsx)(eh.Z, {
       user: s,
       targetElementRef: j,
@@ -270,7 +270,7 @@ function tm(e) {
           src: s.getAvatarURL(h ? p : true, 28, false),
           avatarDecoration: y,
           "aria-label": s.username,
-          status: i ? e7.Skl.STREAMING : o,
+          status: i ? e9.Skl.STREAMING : o,
           isSpeaking: n,
           className: tr.avatar
         }), (0, a.jsx)("div", {
@@ -347,7 +347,7 @@ class tp extends Chunk647438.PureComponent {
       let {
         type: t
       } = e;
-      return t === e7.IIU.CUSTOM_STATUS
+      return t === e9.IIU.CUSTOM_STATUS
     });
     return null != Chunk374470 ? (0, Chunk951288.jsx)(Chunk570928.Z, {
       hoverText: l,
@@ -509,16 +509,16 @@ class tp extends Chunk647438.PureComponent {
         suppress: t,
         selfMute: n
       } = this.props;
-      (0, F.Z)(e, t, e7.jXE.ACCOUNT_PANEL), (0, G.v)(T.Z.ACCOUNT, G.d.MIC, n)
+      (0, F.Z)(e, t, e9.jXE.ACCOUNT_PANEL), (0, G.v)(T.Z.ACCOUNT, G.d.MIC, n)
     }), ti(this, "handleToggleSelfDeaf", () => {
       let {
         serverDeaf: e,
         selfDeaf: t
       } = this.props;
-      (0, U.Z)(e, e7.jXE.ACCOUNT_PANEL), (0, G.v)(T.Z.ACCOUNT, G.d.DEAFEN, !t)
+      (0, U.Z)(e, e9.jXE.ACCOUNT_PANEL), (0, G.v)(T.Z.ACCOUNT, G.d.DEAFEN, !t)
     }), ti(this, "handleOpenAccountSettings", () => {
       this.dismissTooltips(), eU.Z.isConnected() ? (0, eg.openUserSettings)(ef.n.VOICE_AND_VIDEO_PANEL, {
-        section: e7.oAB.VOICE
+        section: e9.oAB.VOICE
       }) : (0, eg.openUserSettings)()
     }), ti(this, "handleOpenSettingsContextMenu", e => {
       let {
@@ -610,7 +610,7 @@ class tp extends Chunk647438.PureComponent {
       (0, eK.JG)(e0.ZP.getUserTag(e, {
         decoration: "never",
         identifiable: "always"
-      })), eH.default.track(e7.rMx.TEXT_COPIED, {
+      })), eH.default.track(e9.rMx.TEXT_COPIED, {
         type: "User Tag"
       });
       let a = {
@@ -798,7 +798,7 @@ function tf() {
           let {
             type: t
           } = e;
-          return t === e7.IIU.STREAMING
+          return t === e9.IIU.STREAMING
         }),
         status: Chunk885110.Z.getStatus()
       }
@@ -829,7 +829,7 @@ function tf() {
       return (0, Chunk865427.fD)() ? null == (e = Chunk304761.C.getCurrentBuildOverride().overrides) ? true : module.discord_web : null
     }),
     S = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription()),
-    k = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getSpeakingWhileMuted()),
+    I = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getSpeakingWhileMuted()),
     Z = (0, Chunk442837.e7)([Chunk358221.Z], () => Chunk358221.Z.isFullscreenInContext()),
     D = (0, Chunk442837.e7)([Chunk819640.Z], () => Chunk819640.Z.hasLayers()),
     L = (0, Chunk481060.s9z)(Chunk481060.JQI) || Chunk628581 || Chunk374023.s.isDisallowPopupsSet() || Chunk571250,
@@ -1024,15 +1024,15 @@ function tg(e) {
     S = r.useRef(null),
     P = (0, ew.b)(E),
     {
-      activeVoice: I,
-      mostRecentlyRequestedVoiceId: k,
+      activeVoice: k,
+      mostRecentlyRequestedVoiceId: I,
       lastInitAttemptMayHaveCrashed: w
     } = (0, eN.o)(),
     {
       showSilentLagWarning: R
     } = (0, eE.Y)(),
-    A = null != I,
-    Z = (0, eC.z)(I),
+    A = null != k,
+    Z = (0, eC.z)(k),
     U = (0, d.e7)([eU.Z], () => eU.Z.isConnected()),
     {
       Component: F,
@@ -1074,7 +1074,7 @@ function tg(e) {
       $(false)
     }, []);
   (0, eq.yp)({
-    event: e7.CkL.OPEN_VOICE_FILTER_POPOUT,
+    event: e9.CkL.OPEN_VOICE_FILTER_POPOUT,
     handler: () => {
       $(true)
     }
@@ -1271,7 +1271,7 @@ function tg(e) {
           let {
             closePopout: t
           } = e;
-          return (0, a.jsx)(eI.l, {
+          return (0, a.jsx)(ek.l, {
             onSettingsButtonClick: t
           })
         },
@@ -1347,7 +1347,7 @@ function tg(e) {
                   "aria-label": ta.intl.string(ta.t.Hapb4O),
                   disabled: o,
                   onClick: e => {
-                    i(te.L.INDIRECT_ACTION), n(e), null != k && !Q && w ? (0, ek.$)(() => $(true)) : $(!Q)
+                    i(te.L.INDIRECT_ACTION), n(e), null != I && !Q && w ? (0, eI.$)(() => $(true)) : $(!Q)
                   }
                 }, r));
                 return null != s ? (0, a.jsx)(f.yRy, {

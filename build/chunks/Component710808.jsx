@@ -160,34 +160,31 @@ function x() {
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_STREAM_INFO_OVERLAY,
-      children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
-        value: Chunk579806,
+      children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
+        label: Chunk388032.intl.string(Chunk388032.t["0CEP6e"]),
+        description: Chunk388032.intl.string(Chunk388032.t.kBXuW1),
+        checked: Chunk579806,
         onChange: e => {
           (0, y.Z)("stream_info_overlay_enabled", e, d), (0, c.y)({
             isStreamInfoOverlayEnabled: e
           })
-        },
-        note: Chunk388032.intl.string(Chunk388032.t.kBXuW1),
-        hideBorder: true,
-        children: Chunk388032.intl.string(Chunk388032.t["0CEP6e"])
+        }
       })
     }), (0, Chunk951288.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_AEC_DUMP,
-      children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
-        value: Chunk755721,
-        onChange: e => l.Z.setAecDump(e),
-        note: Chunk388032.intl.string(Chunk388032.t["xl9+Iy"]),
-        hideBorder: true,
-        children: Chunk388032.intl.string(Chunk388032.t["r6K+TE"])
+      children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
+        label: Chunk388032.intl.string(Chunk388032.t["r6K+TE"]),
+        description: Chunk388032.intl.string(Chunk388032.t["xl9+Iy"]),
+        checked: Chunk755721,
+        onChange: e => l.Z.setAecDump(e)
       })
     }), (0, Chunk951288.jsxs)(Chunk921801.F, {
       setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_CONNECTION_REPLAY,
-      children: [(0, Chunk951288.jsx)(Chunk481060.j7V, {
-        hideBorder: true,
-        value: Chunk458725,
-        onChange: e => u.TC(e),
-        note: Chunk388032.intl.string(Chunk388032.t.Lm72RU),
-        children: Chunk388032.intl.string(Chunk388032.t.U4FgFB)
+      children: [(0, Chunk951288.jsx)(Chunk481060.rsf, {
+        label: Chunk388032.intl.string(Chunk388032.t.U4FgFB),
+        description: Chunk388032.intl.string(Chunk388032.t.Lm72RU),
+        checked: Chunk458725,
+        onChange: e => u.TC(e)
       }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
         children: (0, Chunk951288.jsx)(Chunk600164.Z, {
           className: Chunk10198.marginBottom20,
@@ -206,12 +203,11 @@ function x() {
     }), (0, Chunk951288.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_LOGGING,
       children: (0, Chunk951288.jsxs)("div", {
-        children: [(0, Chunk951288.jsx)(Chunk481060.j7V, {
-          hideBorder: true,
-          value: require,
-          onChange: L,
-          note: Chunk388032.intl.string(Chunk388032.t["/7ak9f"]),
-          children: Chunk388032.intl.string(Chunk388032.t["726JHB"])
+        children: [(0, Chunk951288.jsx)(Chunk481060.rsf, {
+          label: Chunk388032.intl.string(Chunk388032.t["726JHB"]),
+          description: Chunk388032.intl.string(Chunk388032.t["/7ak9f"]),
+          checked: require,
+          onChange: L
         }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
           children: (0, Chunk951288.jsxs)(Chunk481060.hE2, {
             size: "sm",

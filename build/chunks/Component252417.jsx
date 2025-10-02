@@ -35,10 +35,10 @@ function j(e) {
   } = (0, g.z)(), P = i.useMemo(() => t.isNonUserBot() || (0, p.W)(t, x), [t, x]), {
     activities: I,
     isMobileOnline: N
-  } = (0, l.cj)([f.Z], () => ({
-    activities: f.Z.getActivities(t.id),
-    isMobileOnline: f.Z.isMobileOnline(t.id)
-  })), w = (0, h.Z)(t.id), {
+  } = (0, l.cj)([h.Z], () => ({
+    activities: h.Z.getActivities(t.id),
+    isMobileOnline: h.Z.isMobileOnline(t.id)
+  })), w = (0, f.Z)(t.id), {
     voiceActivityStatusEnabled: Z
   } = (0, c.a)({
     location: "UserProfileMutualFriendRow"

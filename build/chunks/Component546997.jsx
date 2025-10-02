@@ -95,28 +95,25 @@ function b() {
     setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE,
     children: [(0, Chunk951288.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE_VIDEO_HOOK,
-      children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
-        value: module,
-        onChange: e => s.Z.setVideoHook(e),
-        note: Chunk388032.intl.string(Chunk388032.t["Fj/xn5"]),
-        hideBorder: true,
-        children: Chunk388032.intl.string(Chunk388032.t.GmWk2N)
+      children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
+        label: Chunk388032.intl.string(Chunk388032.t.GmWk2N),
+        description: Chunk388032.intl.string(Chunk388032.t["Fj/xn5"]),
+        checked: module,
+        onChange: e => s.Z.setVideoHook(e)
       })
     }), require && Chunk755721 && (0, Chunk951288.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE_EXPERIMENTAL_SOUNDSHARE,
-      children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
-        value: exports,
-        onChange: e => s.Z.setExperimentalSoundshare(e),
-        hideBorder: true,
-        children: Chunk388032.intl.string(Chunk388032.t["4I0qzc"])
+      children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
+        label: Chunk388032.intl.string(Chunk388032.t["4I0qzc"]),
+        checked: exports,
+        onChange: e => s.Z.setExperimentalSoundshare(e)
       })
     }), (0, Chunk951288.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE_SYSTEM_PICKER,
-      children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
-        value: Chunk579806,
-        onChange: E,
-        hideBorder: true,
-        children: Chunk388032.intl.string(Chunk388032.t.ie1mgY)
+      children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
+        label: Chunk388032.intl.string(Chunk388032.t.ie1mgY),
+        checked: Chunk579806,
+        onChange: E
       })
     })]
   })

@@ -68,7 +68,7 @@ function Z(e) {
     guildId: t,
     selected: n,
     handleClick: i
-  } = e, u = (0, f.RF)(t, "guild_shop_channel_row"), g = (0, o.e7)([j.Z], () => j.Z.getGuild(t)), O = (null == g ? true : g.features.has(C.oNc.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE)) === true, E = "false" === s.K.get(S.tM, "false"), Z = (0, o.e7)([d.Z], () => d.Z.useReducedMotion);
+  } = e, u = (0, h.RF)(t, "guild_shop_channel_row"), g = (0, o.e7)([j.Z], () => j.Z.getGuild(t)), O = (null == g ? true : g.features.has(C.oNc.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE)) === true, E = "false" === s.K.get(S.tM, "false"), Z = (0, o.e7)([d.Z], () => d.Z.useReducedMotion);
   return (0, r.jsx)(x.m, {
     id: "shop-".concat(t),
     className: l()(I.previewChannelRow, {
@@ -91,7 +91,7 @@ function Z(e) {
         text: P.intl.string(P.t.y2b7CA),
         className: I.newBadge
       }) : (0, r.jsx)("img", {
-        src: (0, h.b)("server_products/storefront/money.gif"),
+        src: (0, f.b)("server_products/storefront/money.gif"),
         className: I.money,
         alt: ""
       }), n && (0, r.jsx)(c.P3F, {

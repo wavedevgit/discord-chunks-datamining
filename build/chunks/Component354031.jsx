@@ -37,13 +37,11 @@ function u(e) {
       children: c.intl.format(c.t["c6Cy/v"], {
         helpdeskArticle: s.Z.getArticleURL(o.BhN.CONVERSATION_SUMMARIES)
       })
-    }), (0, r.jsx)(l.j7V, {
-      className: d.switch,
+    }), (0, r.jsx)(l.rsf, {
+      label: c.intl.string(c.t.vmEDQk),
+      checked: t.has(o.oNc.SUMMARIES_ENABLED_BY_USER),
       onChange: u,
-      value: t.has(o.oNc.SUMMARIES_ENABLED_BY_USER),
-      hideBorder: true,
-      disabled: !n,
-      children: c.intl.string(c.t.vmEDQk)
+      disabled: !n
     })]
   })
 }

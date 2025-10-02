@@ -77,16 +77,14 @@ function I(e) {
     h.Z.setIsAgeRestricted(t, e)
   }, [t]), m = n === y.V_K.AGE_RESTRICTED && a !== y.V_K.AGE_RESTRICTED;
   return (0, r.jsx)(s.hjN, {
-    children: (0, r.jsx)(s.j7V, {
-      hideBorder: true,
-      className: N.contentLevelSetting,
-      onChange: c,
-      value: o,
-      disabled: m,
-      note: C.intl.format(C.t["iyQQ6+"], {
+    children: (0, r.jsx)(s.rsf, {
+      label: C.intl.string(C.t.N9xEJC),
+      description: C.intl.format(C.t["iyQQ6+"], {
         helpArticleLink: u.Z.getArticleURL(y.BhN.NSFW_SERVER_AGE_RESTRICTION)
       }),
-      children: C.intl.string(C.t.N9xEJC)
+      checked: o,
+      onChange: c,
+      disabled: m
     })
   })
 }

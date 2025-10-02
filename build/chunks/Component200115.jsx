@@ -22,24 +22,20 @@ function p(e) {
   var t, n;
   let {
     guildId: s
-  } = e, p = (0, r.e7)([d.Z], () => d.Z.getGuild(s)), v = (0, r.e7)([c.ZP], () => c.ZP.isMuted(s)), j = (0, r.e7)([c.ZP], () => c.ZP.getMuteConfig(s));
+  } = e, p = (0, r.e7)([d.Z], () => d.Z.getGuild(s)), j = (0, r.e7)([c.ZP], () => c.ZP.isMuted(s)), v = (0, r.e7)([c.ZP], () => c.ZP.getMuteConfig(s));
   return null == p ? null : (0, i.jsxs)(a.xJW, {
-    children: [(0, i.jsx)(a.j7V, {
-      hideBorder: true,
-      value: v,
+    children: [(0, i.jsx)(a.rsf, {
+      label: m.intl.format(m.t["J+7D9P"], {
+        name: p.name
+      }),
+      description: m.intl.string(m.t.IngcUl),
+      checked: j,
       onChange: e => {
         o.Z.updateGuildNotificationSettings(s, {
           muted: e
         }, u.UE.muted(e))
-      },
-      style: {
-        marginBottom: 0
-      },
-      note: m.intl.string(m.t.IngcUl),
-      children: m.intl.format(m.t["J+7D9P"], {
-        name: p.name
-      })
-    }), v && (0, i.jsxs)("div", {
+      }
+    }), j && (0, i.jsxs)("div", {
       className: x.mutedConfig,
       children: [(0, i.jsxs)("div", {
         children: [(0, i.jsx)(a.vwX, {
@@ -48,7 +44,7 @@ function p(e) {
         }), (0, i.jsx)(a.Text, {
           variant: "text-xs/normal",
           color: "text-muted",
-          children: null == (n = j) || null == n.end_time ? null : m.intl.formatToPlainString(m.t.j7h4AA, {
+          children: null == (n = v) || null == n.end_time ? null : m.intl.formatToPlainString(m.t.j7h4AA, {
             endTime: new Date(n.end_time).toLocaleString(m.intl.currentLocale, {
               month: "numeric",
               day: "numeric",
@@ -69,7 +65,7 @@ function p(e) {
           }, u.ZB.Muted)
         },
         options: (0, h.W9)(),
-        value: null != (t = null == j ? true : j.selected_time_window) ? t : g.Oe.ALWAYS
+        value: null != (t = null == v ? true : v.selected_time_window) ? t : g.Oe.ALWAYS
       })]
     })]
   })

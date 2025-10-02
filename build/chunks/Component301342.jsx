@@ -70,7 +70,7 @@ let N = Chunk647438.memo(function(e) {
     let t, {
         channel: l,
         connectChannelDragSource: c,
-        connectChannelDropTarget: f,
+        connectChannelDropTarget: h,
         disableManageChannels: j,
         position: v,
         sortingPosition: N,
@@ -87,7 +87,7 @@ let N = Chunk647438.memo(function(e) {
       M = i.useCallback(e => {
         if ("null" !== l.id) {
           let t = _.Z.getGuild(l.getGuildId());
-          null != t && (0, h.jW)(e, async () => {
+          null != t && (0, f.jW)(e, async () => {
             let {
               default: e
             } = await Promise.all([n.e("8965"), n.e("14280")]).then(n.bind(n, 139035));
@@ -214,7 +214,7 @@ let N = Chunk647438.memo(function(e) {
           })
         }), Z]
       });
-    return null != f && null != c ? f(c(H)) : H
+    return null != h && null != c ? h(c(H)) : H
   }),
   w = (0, Chunk146773.B)(N),
   Z = Chunk647438.memo(function(e) {

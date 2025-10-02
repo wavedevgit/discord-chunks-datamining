@@ -57,7 +57,7 @@ function j(e) {
   }, [L]), r.useEffect(() => () => {
     null != D && URL.revokeObjectURL(D)
   }, [D]);
-  let [I, Z] = r.useState(null == (_ = null == (t = O.editMetadata) ? true : t.voiceAudio) || _), [B, M] = r.useState(null == (w = null == (n = O.editMetadata) ? true : n.applicationAudio) || w), [z, H] = r.useState({
+  let [I, Z] = r.useState(null == (_ = null == (t = O.editMetadata) ? true : t.voiceAudio) || _), [M, B] = r.useState(null == (w = null == (n = O.editMetadata) ? true : n.applicationAudio) || w), [z, H] = r.useState({
     start: null != (C = null == (j = O.editMetadata) ? true : j.start) ? C : 0,
     end: null != (k = null == (y = O.editMetadata) ? true : y.end) ? k : 0
   }), [W, U] = r.useState(O.name), V = r.useRef({
@@ -66,7 +66,7 @@ function j(e) {
       start: z.start,
       end: z.end,
       voiceAudio: I,
-      applicationAudio: B
+      applicationAudio: M
     }
   });
   V.current = {
@@ -75,7 +75,7 @@ function j(e) {
       start: z.start,
       end: z.end,
       voiceAudio: I,
-      applicationAudio: B
+      applicationAudio: M
     }
   };
   let X = (0, f.l)(O);
@@ -110,13 +110,13 @@ function j(e) {
   let Y = r.useRef(null),
     G = r.useMemo(() => ({
       videoPlayerRef: Y,
-      applicationAudioEnabled: B,
-      setApplicationAudioEnabled: M,
+      applicationAudioEnabled: M,
+      setApplicationAudioEnabled: B,
       voiceAudioEnabled: I,
       setVoiceAudioEnabled: Z,
       cropData: z,
       setCropData: H
-    }), [B, I, z]);
+    }), [M, I, z]);
   return (0, a.jsx)(i.Y0X, {
     impression: {
       impressionName: l.ImpressionNames.CLIP_EDITOR_VIEWED

@@ -152,7 +152,7 @@ function ea(e) {
     onToggle: a,
     isSelected: s,
     disabled: o
-  } = e, u = i.useCallback(() => a(r.id), [a, r.id]), d = null != (t = (0, S.ZP)(r)) ? t : "", c = null != (n = (0, C._)(r)) ? n : "";
+  } = e, u = i.useCallback(() => a(r.id), [a, r.id]), d = null != (t = (0, b.ZP)(r)) ? t : "", c = null != (n = (0, C._)(r)) ? n : "";
   return (0, l.jsx)(ei, {
     icon: (0, l.jsx)(O.Z, {
       "aria-hidden": true,
@@ -175,7 +175,7 @@ function es(e) {
     onToggle: a,
     isSelected: s,
     disabled: o
-  } = e, u = (0, c.e7)([w.Z], () => w.Z.getGuild(null == r ? true : r.guild_id)), d = i.useCallback(() => a(r.id), [a, r.id]), g = null != (t = (0, S.ZP)(r)) ? t : "", h = null != (n = null == u ? true : u.name) ? n : "";
+  } = e, u = (0, c.e7)([w.Z], () => w.Z.getGuild(null == r ? true : r.guild_id)), d = i.useCallback(() => a(r.id), [a, r.id]), g = null != (t = (0, b.ZP)(r)) ? t : "", h = null != (n = null == u ? true : u.name) ? n : "";
   return (0, l.jsx)(ei, {
     icon: (0, l.jsx)(y.Z, {
       size: y.E.SMALL_32,
@@ -299,7 +299,7 @@ function eu(e) {
     source: g,
     streamUserId: v,
     applicationId: f,
-    analyticsLocation: S
+    analyticsLocation: b
   } = e, O = null;
   null != f ? O = X.Iq.EMBEDDED_APPLICATION : null != v && (O = X.Iq.STREAM);
   let y = (0, G.xU)({
@@ -357,7 +357,7 @@ function eu(e) {
     eN = (0, _.Z)(ef),
     e_ = (null == ef ? true : ef.type) === Q.d4z.GUILD_VOICE && !ej && !eN,
     {
-      enabled: eS
+      enabled: eb
     } = T.o.useExperiment({
       guildId: r.id,
       location: "instant_invite_modal"
@@ -365,10 +365,10 @@ function eu(e) {
       autoTrackExposure: e_
     }),
     {
-      canCreateApplicationBypassInvites: eb,
+      canCreateApplicationBypassInvites: eS,
       isManualApprovalGuild: eE
     } = (0, q.R)(r),
-    eO = eS && e_,
+    eO = eb && e_,
     {
       rows: eT,
       showFriends: ey,
@@ -393,7 +393,7 @@ function eu(e) {
         U.default.track(Q.rMx.OPEN_MODAL, {
           type: "Instant Invite Modal",
           source: g,
-          location: S,
+          location: b,
           application_id: f
         });
         break;
@@ -404,7 +404,7 @@ function eu(e) {
         U.default.track(Q.rMx.OPEN_MODAL, {
           type: "Send Stream Invite",
           source: g,
-          location: S,
+          location: b,
           other_user_id: v,
           application_id: null != t ? t.id : null,
           application_name: null != t ? t.name : null,
@@ -415,7 +415,7 @@ function eu(e) {
         U.default.track(Q.rMx.OPEN_MODAL, {
           type: "Instant Invite Modal",
           source: g,
-          location: S
+          location: b
         })
     }
   });
@@ -564,7 +564,7 @@ function eu(e) {
           disabled: eM
         })
       }), (0, l.jsxs)(h.mzw, {
-        direction: b.Z.Direction.VERTICAL,
+        direction: S.Z.Direction.VERTICAL,
         className: J.footer,
         children: [(0, l.jsx)(Y.f, {
           className: J.footerContent,
@@ -580,7 +580,7 @@ function eu(e) {
           setOptions: ev,
           isGuestInviteAllowed: eO,
           isTemporaryInviteAllowed: !eO && !eE,
-          isApplicationBypassAllowed: eb,
+          isApplicationBypassAllowed: eS,
           setError: ed,
           analyticsLocation: eh[0]
         }), null !== eu && (0, l.jsx)(W.W, {

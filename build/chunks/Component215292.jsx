@@ -26,12 +26,12 @@ function g(t) {
     onClose: g,
     onChannelPromptCompleted: x,
     isSlideReady: T
-  } = t, [E, h] = l.useState(""), [I, G] = l.useState(null), [D, y] = l.useState(false), U = (0, m.Dt)(), z = (0, a.e7)([u.Z], () => u.Z.getGuild(n), [n]), N = l.useRef(null);
+  } = t, [E, h] = l.useState(""), [I, G] = l.useState(null), [D, y] = l.useState(false), U = (0, m.Dt)(), z = (0, a.e7)([u.Z], () => u.Z.getGuild(n), [n]), f = l.useRef(null);
   l.useEffect(() => {
     var t;
-    T && (null == (t = N.current) || t.focus())
+    T && (null == (t = f.current) || t.focus())
   }, [T]);
-  let f = l.useCallback(async t => {
+  let j = l.useCallback(async t => {
       if (t.preventDefault(), null == z) return;
       y(true), G(null);
       let n = p.ZP.getDefaultChannel(z.id);
@@ -45,11 +45,11 @@ function g(t) {
       }
       y(false)
     }, [z, E, x]),
-    j = (0, i.jsxs)(i.Fragment, {
+    N = (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(r.zxk, {
         variant: "primary",
         text: _.intl.string(_.t.i4jeWV),
-        onClick: f,
+        onClick: j,
         disabled: 0 === E.length,
         loading: D
       }), (0, i.jsx)(s.zx, {
@@ -89,7 +89,7 @@ function g(t) {
       }), (0, i.jsxs)(r.hzk, {
         className: L.channelPrompt,
         children: [(0, i.jsx)("form", {
-          onSubmit: f,
+          onSubmit: j,
           children: (0, i.jsx)(r.oil, {
             label: _.intl.string(_.t.bY20tb),
             error: null == I ? true : I.getFieldMessage("name"),
@@ -98,7 +98,7 @@ function g(t) {
             id: U,
             onChange: h,
             placeholder: _.intl.string(_.t.xGOYAw),
-            inputRef: N
+            inputRef: f
           })
         }), null != I && 0 === Object.keys(I.fields).length && (0, i.jsx)(r.Text, {
           variant: "text-xs/normal",
@@ -106,10 +106,10 @@ function g(t) {
           children: I.message
         })]
       }), e && (0, i.jsx)(r.mzw, {
-        children: j
+        children: N
       })]
     }),
-    footer: j
+    footer: N
   }
 }
 

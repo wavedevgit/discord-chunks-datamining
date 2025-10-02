@@ -220,7 +220,7 @@ function A(e) {
     ariaControls: d,
     ariaExpanded: p,
     children: g
-  } = e, b = (0, c.e7)([m.Z], () => (0, h.b)(m.Z, o)), _ = i.useCallback(() => {
+  } = e, b = (0, c.e7)([m.Z], () => (0, f.b)(m.Z, o)), _ = i.useCallback(() => {
     b ? (0, u.ZDy)(async () => {
       let {
         default: e
@@ -273,7 +273,7 @@ function A(e) {
           color: "currentColor"
         })
       }))
-    }), o.id === y.STv && (0, r.jsx)(f.p, {})]
+    }), o.id === y.STv && (0, r.jsx)(h.p, {})]
   })
 }
 let R = Chunk647438.memo(function(e) {
@@ -283,8 +283,8 @@ let R = Chunk647438.memo(function(e) {
     controller: l,
     className: a,
     onClick: c,
-    onContextMenu: h,
-    onMouseDown: f,
+    onContextMenu: f,
+    onMouseDown: h,
     disableBannerAnimation: m,
     "aria-expanded": O,
     "aria-controls": j,
@@ -319,7 +319,7 @@ let R = Chunk647438.memo(function(e) {
       bannerVisible: n,
       guild: v,
       onClick: c,
-      onContextMenu: h,
+      onContextMenu: f,
       ariaControls: j,
       ariaExpanded: O,
       guildHeaderRef: W
@@ -341,9 +341,9 @@ let R = Chunk647438.memo(function(e) {
           [x.communityInfoVisible]: G || M && U,
           [x.invitesRefresh]: X.isGuildEntrypointEnabled
         }),
-        onMouseDown: f,
+        onMouseDown: h,
         onClick: X.isGuildEntrypointEnabled ? true : c,
-        onContextMenu: h,
+        onContextMenu: f,
         children: [(0, r.jsxs)("header", {
           className: o()(x.header, T, {
             [x.themedHeaderMobile]: s.tq

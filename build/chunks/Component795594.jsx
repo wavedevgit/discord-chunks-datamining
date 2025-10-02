@@ -430,35 +430,28 @@ let ed = e => {
         color: "header-primary",
         className: en.dmSettingsHeader,
         children: et.intl.string(et.t.NaZyYG)
-      }), null != L ? (0, r.jsx)(g.j7V, {
-        hideBorder: true,
-        onChange: eh,
-        className: en.dmSettingsSwitch,
-        note: (null == M ? true : M.end_time) != null ? et.intl.format(et.t.j7h4AA, {
-          endTime: new Date(M.end_time).toLocaleString(et.intl.currentLocale, {
-            month: "numeric",
-            day: "numeric",
-            hour: "numeric",
-            minute: "2-digit"
-          })
-        }) : true,
-        value: B,
-        children: (0, r.jsx)(g.Text, {
-          variant: "text-sm/medium",
-          children: et.intl.string(et.t.NkwaBg)
-        })
-      }) : null, v && C.enabled ? (0, r.jsx)(g.j7V, {
-        hideBorder: true,
-        onChange: ep,
-        className: en.dmSettingsSwitch,
-        note: et.intl.string(et.t.hw1nKS),
-        value: I,
-        disabled: B,
-        children: (0, r.jsx)(g.Text, {
-          variant: "text-sm/medium",
-          children: et.intl.string(et.t["Pkw//v"])
-        })
-      }) : null]
+      }), (0, r.jsxs)(g.Kqy, {
+        gap: 20,
+        children: [null != L ? (0, r.jsx)(g.rsf, {
+          label: et.intl.string(et.t.NkwaBg),
+          description: (null == M ? true : M.end_time) != null ? et.intl.format(et.t.j7h4AA, {
+            endTime: new Date(M.end_time).toLocaleString(et.intl.currentLocale, {
+              month: "numeric",
+              day: "numeric",
+              hour: "numeric",
+              minute: "2-digit"
+            })
+          }) : true,
+          checked: B,
+          onChange: eh
+        }) : null, v && C.enabled ? (0, r.jsx)(g.rsf, {
+          label: et.intl.string(et.t["Pkw//v"]),
+          description: et.intl.string(et.t.hw1nKS),
+          checked: I,
+          disabled: B,
+          onChange: ep
+        }) : null]
+      })]
     }) : null, eg = (0, z.O)(a.id), eE = (0, N.Z)(a), eb = (0, J.Z)(), ey = () => (0, r.jsxs)("div", {
       className: en.footer,
       children: [eE ? (0, r.jsx)(eu, {

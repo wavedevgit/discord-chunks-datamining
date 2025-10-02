@@ -26,15 +26,15 @@ function u(e) {
   i.useEffect(() => {
     g()
   }, [t, g]);
-  let N = [];
-  if (n === d.d4z.GUILD_ANNOUNCEMENT && (N.push(h.intl.format(h.t.tI7KNT, {
+  let b = [];
+  if (n === d.d4z.GUILD_ANNOUNCEMENT && (b.push(h.intl.format(h.t.tI7KNT, {
       documentationLink: c.Z.getArticleURL(d.BhN.ANNOUNCEMENT_CHANNELS)
     })), !C && !x)) {
     let e = h.intl.string(h.t["2Ab4IS"]);
-    N.push(e)
+    b.push(e)
   }
-  return 0 === N.length ? null : (0, r.jsx)(r.Fragment, {
-    children: N.map((e, t) => (0, r.jsx)(l.R94, {
+  return 0 === b.length ? null : (0, r.jsx)(r.Fragment, {
+    children: b.map((e, t) => (0, r.jsx)(l.R94, {
       className: u,
       type: l.R94.Types.DESCRIPTION,
       children: e

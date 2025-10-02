@@ -15,13 +15,16 @@ function d() {
   let e = (0, Chunk442837.e7)([Chunk91311.Z], () => Chunk91311.Z.allWithDescriptions(), [], Chunk442837.pF),
     t = Chunk647438.useMemo(() => module.map(e => {
       let [t, n, r] = e;
-      return (0, a.jsx)(l.j7V, {
-        value: n,
-        note: t,
-        onChange: e => (0, s.Z)(t, e),
-        hideBorder: true,
-        children: r
-      }, t)
+      return (0, a.jsxs)(a.Fragment, {
+        children: [(0, a.jsx)(l.rsf, {
+          label: r,
+          description: t,
+          checked: n,
+          onChange: e => (0, s.Z)(t, e)
+        }, t), (0, a.jsx)(l.izJ, {
+          gap: 16
+        })]
+      })
     }), [module]);
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk535548.container,

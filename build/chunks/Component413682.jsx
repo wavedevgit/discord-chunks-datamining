@@ -26,20 +26,15 @@ function g(e) {
   }, []);
   return (0, r.jsxs)(s.hjN, {
     className: d.container,
-    children: [(0, r.jsxs)("div", {
+    children: [(0, r.jsx)("div", {
       className: d.column,
-      children: [(0, r.jsx)(s.j7V, {
-        className: d.switch,
+      children: (0, r.jsx)(s.rsf, {
+        label: c.intl.string(c.t.Dl4mJS),
+        description: c.intl.string(c.t.xzHcoa),
+        checked: n,
         onChange: p,
-        value: n,
-        hideBorder: true,
-        disabled: !t,
-        children: c.intl.string(c.t.Dl4mJS)
-      }), (0, r.jsx)(s.Text, {
-        variant: "text-sm/medium",
-        color: "text-secondary",
-        children: c.intl.string(c.t.xzHcoa)
-      })]
+        disabled: !t
+      })
     }), (0, r.jsx)("div", {
       className: d.column,
       children: (0, r.jsx)("img", {

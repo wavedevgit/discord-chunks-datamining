@@ -18,12 +18,11 @@ function d() {
   let e = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getQoS());
   return (0, Chunk951288.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_QOS,
-    children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
-      value: module,
-      onChange: e => o.Z.setQoS(e),
-      note: Chunk388032.intl.string(Chunk388032.t.I1Eoqq),
-      hideBorder: true,
-      children: Chunk388032.intl.string(Chunk388032.t["3CqDxs"])
+    children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
+      label: Chunk388032.intl.string(Chunk388032.t["3CqDxs"]),
+      description: Chunk388032.intl.string(Chunk388032.t.I1Eoqq),
+      checked: module,
+      onChange: e => o.Z.setQoS(e)
     })
   })
 }

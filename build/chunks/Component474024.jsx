@@ -46,16 +46,12 @@ function x(e) {
     ref: _,
     children: [(0, r.jsxs)("div", {
       className: b.column,
-      children: [(0, r.jsx)(c.j7V, {
+      children: [(0, r.jsx)(c.rsf, {
+        label: h.intl.string(h.t.fjHWen),
+        description: h.intl.string(h.t.J1YOV1),
+        checked: !j,
         onChange: O,
-        value: !j,
-        hideBorder: true,
-        disabled: C || !l,
-        children: h.intl.string(h.t.fjHWen)
-      }), (0, r.jsx)(c.Text, {
-        variant: "text-sm/normal",
-        color: "text-secondary",
-        children: h.intl.string(h.t.J1YOV1)
+        disabled: C || !l
       }), C && (0, r.jsx)(c.Text, {
         variant: "text-xs/normal",
         color: "text-muted",

@@ -189,47 +189,48 @@ function w(e) {
     description: W,
     helperText: K,
     errorMessage: z,
-    successMessage: q
-  } = e, [X, Q] = i.useState(false), {
-    ref: J,
-    width: $,
-    height: ee
+    successMessage: q,
+    layout: X = "vertical"
+  } = e, [Q, J] = i.useState(false), {
+    ref: $,
+    width: ee,
+    height: et
   } = (0, _.ZP)();
   i.useLayoutEffect(() => {
-    s && Q(false)
+    s && J(false)
   }, [s]);
-  let et = i.useCallback(e => {
-      X === e || s || (Q(e), e ? null == A || A() : null == S || S())
-    }, [s, S, A, X]),
-    en = i.useCallback(e => {
-      X && !e && et(false)
-    }, [et, X]),
-    er = (0, p.O)(en),
-    ei = i.useCallback(e => {
+  let en = i.useCallback(e => {
+      Q === e || s || (J(e), e ? null == A || A() : null == S || S())
+    }, [s, S, A, Q]),
+    er = i.useCallback(e => {
+      Q && !e && en(false)
+    }, [en, Q]),
+    ei = (0, p.O)(er),
+    ea = i.useCallback(e => {
       if (k(e), M) {
         var t;
-        null == (t = J.current) || t.focus()
+        null == (t = $.current) || t.focus()
       }
-    }, [k, M, J]),
-    ea = i.useCallback(e => {
+    }, [k, M, $]),
+    eo = i.useCallback(e => {
       e.stopPropagation(), null == B || B()
     }, [B]),
-    eo = t.filter(e => U(e.value));
+    es = t.filter(e => U(e.value));
   return i.useLayoutEffect(() => {
     if (h) {
       var e;
-      null == (e = J.current) || e.focus()
+      null == (e = $.current) || e.focus()
     }
-  }, [h, J]), (0, r.jsx)(u.y, {
-    targetElementRef: J,
+  }, [h, $]), (0, r.jsx)(u.y, {
+    targetElementRef: $,
     spacing: 0,
     animation: u.y.Animation.NONE,
-    shouldShow: X,
+    shouldShow: Q,
     onRequestOpen: () => {
-      et(true)
+      en(true)
     },
     onRequestClose: () => {
-      et(false)
+      en(false)
     },
     renderPopout: e => {
       let {
@@ -241,11 +242,11 @@ function w(e) {
         className: w,
         closeOnSelect: M,
         maxVisibleItems: l,
-        width: "auto" === E ? true : null != E ? E : $,
+        width: "auto" === E ? true : null != E ? E : ee,
         isSelected: U,
         closePopout: n,
-        buttonHeight: null != ee ? ee : 0,
-        onSelect: ei,
+        buttonHeight: null != et ? et : 0,
+        onSelect: ea,
         options: t,
         serialize: G,
         renderOptionLabel: C,
@@ -270,6 +271,7 @@ function w(e) {
         helperText: K,
         errorMessage: z,
         successMessage: q,
+        layout: X,
         children: e => (0, r.jsxs)(d.U, O(b({
           as: f.P3F,
           tag: "div",
@@ -281,14 +283,15 @@ function w(e) {
           disabled: s,
           "aria-busy": F,
           "aria-disabled": s,
+          fullWidth: "horizontal" === X,
           innerRef: e => {
-            J.current = e, er.current = e
+            $.current = e, ei.current = e
           },
           onClick: s ? true : e => {
-            i(e), et(!X)
+            i(e), en(!Q)
           },
           onKeyDown: e => {
-            "ArrowDown" === e.key ? et(true) : "Escape" === e.key && _ && (e.stopPropagation(), et(false)), l(e)
+            "ArrowDown" === e.key ? en(true) : "Escape" === e.key && _ && (e.stopPropagation(), en(false)), l(e)
           }
         }, u), {
           containerClassName: o()(g.container, a),
@@ -299,10 +302,10 @@ function w(e) {
           "aria-expanded": _,
           "aria-label": V,
           "aria-labelledby": H,
-          children: [eo.length > 0 ? (0, r.jsx)(f.Text, {
+          children: [es.length > 0 ? (0, r.jsx)(f.Text, {
             className: g.value,
             variant: "text-md/medium",
-            children: N(eo)
+            children: N(es)
           }) : (0, r.jsx)("span", {
             className: g.placeholder,
             children: n
@@ -315,7 +318,7 @@ function w(e) {
               children: [y ? (0, r.jsx)(f.P3F, {
                 role: "button",
                 "aria-disabled": s,
-                onClick: ea,
+                onClick: eo,
                 "aria-label": m.intl.string(m.t.VkKicX),
                 children: (0, r.jsx)(f.Dio, {
                   size: "xs",

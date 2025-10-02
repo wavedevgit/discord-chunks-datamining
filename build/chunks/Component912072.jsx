@@ -21,12 +21,11 @@ function p(e) {
     let [t, n, {
       label: r
     }] = e;
-    return (0, a.jsx)(o.j7V, {
-      value: n,
-      onChange: e => (0, c.Z)(t, e),
-      hideBorder: true,
-      className: u.switch,
-      children: r
+    return (0, a.jsx)(o.rsf, {
+      label: r,
+      description: t,
+      checked: n,
+      onChange: e => (0, c.Z)(t, e)
     }, t)
   }), [n]);
   return (0, a.jsx)("div", {

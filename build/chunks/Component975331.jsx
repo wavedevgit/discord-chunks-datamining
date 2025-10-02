@@ -33,12 +33,11 @@ function x() {
   return (0, Chunk951288.jsxs)(Chunk783454.Z, {
     title: Chunk388032.intl.string(Chunk388032.t["6antoq"]),
     description: Chunk388032.intl.string(Chunk388032.t.urVijY),
-    children: [(0, Chunk951288.jsx)(Chunk481060.j7V, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.rsf, {
+      label: Chunk388032.intl.string(Chunk388032.t["+hTmdX"]),
+      checked: y,
       onChange: e => C(e),
-      value: y,
-      disabled: N,
-      hideBorder: true,
-      children: Chunk388032.intl.string(Chunk388032.t["+hTmdX"])
+      disabled: N
     }), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
       title: Chunk388032.intl.string(Chunk388032.t.m1KuWV),
       titleId: E,

@@ -55,14 +55,14 @@ function y(e) {
   }), L = (0, a.cj)([b.Z], () => {
     var e;
     return null != (e = b.Z.errors[x]) ? e : O
-  }), [k, G] = i.useState(false), [M, U] = i.useState(false), B = null != (t = L.options) ? t : L.optionErrors.filter(p.lm)[0], F = L.config, H = l.options.length >= j.fY, z = (0, m.kl)(n.id, Array.from(w), [l]).length - w.size, V = i.useRef(null), W = i.useRef(x);
+  }), [k, G] = i.useState(false), [M, U] = i.useState(false), B = null != (t = L.options) ? t : L.optionErrors.filter(p.lm)[0], F = L.config, H = l.options.length >= j.fY, z = (0, m.kl)(n.id, Array.from(w), [l]).length - w.size, W = i.useRef(null), V = i.useRef(x);
   return (i.useEffect(() => {
-    W.current = x
+    V.current = x
   }), i.useLayoutEffect(() => {
     setTimeout(() => {
-      if (0 === W.current && !u) {
+      if (0 === V.current && !u) {
         var e;
-        null == (e = V.current) || e.focus()
+        null == (e = W.current) || e.focus()
       }
     }, 0)
   }, [u]), k) ? (0, r.jsx)(c.tEY, {
@@ -149,7 +149,7 @@ function y(e) {
           label: v.intl.formatToPlainString(v.t.yjS3zs, {
             index: x + 1
           }),
-          inputRef: V,
+          inputRef: W,
           value: l.title,
           onChange: e => (0, h.Kk)(n, l.id, {
             title: e

@@ -93,12 +93,13 @@ class T extends Chunk647438.PureComponent {
     Chunk332148 && (e = (0, Chunk951288.jsx)(Chunk576855.Z, {
       className: Chunk498004.spacingTop,
       children: Chunk388032.intl.format(Chunk388032.t.IxY7Ex, {})
-    })), (0, Chunk970257.vc)(Chunk755721) && (t = (0, Chunk951288.jsx)(Chunk481060.j7V, {
-      value: require,
-      onChange: this.handleToggleReport,
-      hideBorder: true,
+    })), (0, Chunk970257.vc)(Chunk755721) && (t = (0, Chunk951288.jsx)("div", {
       className: Chunk498004.spacingTop,
-      children: Chunk388032.intl.string(Chunk388032.t.x0jzo6)
+      children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
+        label: Chunk388032.intl.string(Chunk388032.t.x0jzo6),
+        checked: require,
+        onChange: this.handleToggleReport
+      })
     }));
     let x = Chunk726521 ? Chunk388032.intl.string(Chunk388032.t["2kHABQ"]) : Chunk388032.intl.string(Chunk388032.t.AMvpS0),
       j = (0, Chunk951288.jsxs)(Chunk951288.Fragment, {

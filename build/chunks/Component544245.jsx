@@ -73,49 +73,48 @@ function h() {
       type: Chunk481060.geA.DESCRIPTION,
       className: Chunk575043.subtitle,
       children: "Uploading a snapshot of the client state can help us figure out what exactly is wrong with your search. You can opt out of uploading certain logs, but it may make it more difficult to debug your issue."
-    }), (0, Chunk951288.jsx)(Chunk481060.j7V, {
-      value: module,
+    }), (0, Chunk951288.jsx)(Chunk481060.rsf, {
+      label: "Frecency",
+      description: "Frecency is a measure of how often you visit a guild or channel. Includes frecency scores for guilds and channels along with the guild or channel IDs.",
+      checked: module,
       onChange: () => p.setState({
         includeFrecency: !module
-      }),
-      note: "Frecency is a measure of how often you visit a guild or channel. Includes frecency scores for guilds and channels along with the guild or channel IDs.",
-      children: "Frecency"
-    }), (0, Chunk951288.jsx)(Chunk481060.j7V, {
-      value: exports,
+      })
+    }), (0, Chunk951288.jsx)(Chunk481060.rsf, {
+      label: "Friends",
+      description: "Includes all Discord Friend usernames, global names, and nicknames.",
+      checked: exports,
       onChange: () => p.setState({
         includeFriends: !exports
-      }),
-      note: "Includes all Discord Friend usernames, global names, and nicknames.",
-      children: "Friends"
-    }), (0, Chunk951288.jsx)(Chunk481060.j7V, {
-      value: require,
+      })
+    }), (0, Chunk951288.jsx)(Chunk481060.rsf, {
+      label: "DMs",
+      description: "Includes recipient user ids, usernames, global names, nicknames for all DMs. Does NOT include any message data.",
+      checked: require,
       onChange: () => p.setState({
         includeDMs: !require
-      }),
-      note: "Includes recipient user ids, usernames, global names, nicknames for all DMs. Does NOT include any message data.",
-      children: "DMs"
-    }), (0, Chunk951288.jsx)(Chunk481060.j7V, {
-      value: Chunk972959,
+      })
+    }), (0, Chunk951288.jsx)(Chunk481060.rsf, {
+      label: "Group DMs",
+      description: "Includes recipient user ids, usernames, global names, nicknames, and custom channel names for all Group DMs. Does NOT include any message data.",
+      checked: Chunk972959,
       onChange: () => p.setState({
         includeGDMs: !Chunk972959
-      }),
-      note: "Includes recipient user ids, usernames, global names, nicknames, and custom channel names for all Group DMs. Does NOT include any message data.",
-      children: "Group DMs"
-    }), (0, Chunk951288.jsx)(Chunk481060.j7V, {
-      value: h,
+      })
+    }), (0, Chunk951288.jsx)(Chunk481060.rsf, {
+      label: "Quick Switcher Results",
+      description: "Includes the current QuickSwitcher query and results. If you include this, please ensure the QuickSwitcher is open when you click to Upload Snapshot Logs.",
+      checked: h,
       onChange: () => p.setState({
         includeQuickSwitcherState: !h
-      }),
-      note: "Includes the current QuickSwitcher query and results. If you include this, please ensure the QuickSwitcher is open when you click to Upload Snapshot Logs.",
-      children: "Quick Switcher Results"
-    }), (0, Chunk951288.jsx)(Chunk481060.j7V, {
-      value: x,
+      })
+    }), (0, Chunk951288.jsx)(Chunk481060.rsf, {
+      label: "User Search Worker",
+      description: "Includes all users that your client knows about. For each user, includes the user id, username, nickname, and any guild nicknames.",
+      checked: x,
       onChange: () => p.setState({
         includeUserSearchWorkerState: !x
-      }),
-      note: "Includes all users that your client knows about. For each user, includes the user id, username, nickname, and any guild nicknames.",
-      hideBorder: true,
-      children: "User Search Worker"
+      })
     }), (0, Chunk951288.jsx)(Chunk608934.a, {
       isUploading: f,
       isSuccess: b,

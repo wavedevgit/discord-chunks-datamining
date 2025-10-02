@@ -50,7 +50,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk52116 = require("./52116.js"),
   Chunk504401 = require("./504401.js");
 
-function W(e) {
+function V(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -118,16 +118,16 @@ let Y = d().throttle(Chunk80932.OQ, 1e3),
       }
     }), o ? "respect-motion-settings" : "animate-never"), v = L.ZP.useUserTag(n.user);
     return (0, r.jsxs)("div", {
-      className: s()(z.emojiRow, V.card),
+      className: s()(z.emojiRow, W.card),
       children: [(0, r.jsx)("div", {
         className: z.emojiColumn,
         children: (0, r.jsx)(f.ua7, {
           text: n.available ? null : H.intl.string(H.t["KUzI7+"]),
-          children: e => (0, r.jsx)(u.animated.div, K(W({}, e), {
+          children: e => (0, r.jsx)(u.animated.div, K(V({}, e), {
             className: s()(z.emojiImage, {
               [z.emojiDisabled]: !n.available
             }),
-            style: K(W({}, o ? g : {}, o ? p : {}), {
+            style: K(V({}, o ? g : {}, o ? p : {}), {
               backgroundImage: "url(".concat(m, ")")
             })
           }))
@@ -386,7 +386,7 @@ let Y = d().throttle(Chunk80932.OQ, 1e3),
       {
         maxEmojiSlots: L,
         availableEmojiSlots: F,
-        staticEmoji: V,
+        staticEmoji: W,
         totalStaticEmoji: K,
         animatedEmoji: q,
         totalAnimatedEmoji: J
@@ -469,7 +469,7 @@ let Y = d().throttle(Chunk80932.OQ, 1e3),
           let {
             default: t
           } = await n.e("16169").then(n.bind(n, 935333));
-          return n => (0, r.jsx)(t, W({
+          return n => (0, r.jsx)(t, V({
             processFiles: () => ea(e)
           }, n))
         })

@@ -2,13 +2,12 @@
 /** chunk id: 723136, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  z: () => h
+  z: () => f
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk688465 = require("./688465.jsx"),
   Chunk953252 = require("./953252.js"),
   Chunk496675 = require("./496675.js"),
   Chunk434404 = require("./434404.js"),
@@ -16,44 +15,31 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk304726 = require("./304726.js"),
   Chunk984734 = require("./984734.js");
-async function f(e, t) {
-  return await d.Z.saveGuild(e.id, {
+async function p(e, t) {
+  return await c.Z.saveGuild(e.id, {
     moderatorReportingEnabled: t
   })
 }
 
-function h(e) {
+function f(e) {
   let {
     guild: t
-  } = e, n = (0, l.e7)([c.Z], () => null != t && c.Z.can(u.Plq.MANAGE_GUILD, t), [t]), d = t.features.has(u.oNc.REPORT_TO_MOD_PILOT), [h, b] = i.useState((0, o.Z)(t) && d), x = i.useCallback(async e => {
-    b(e), await f(t, e)
+  } = e, n = (0, l.e7)([o.Z], () => null != t && o.Z.can(d.Plq.MANAGE_GUILD, t), [t]), c = t.features.has(d.oNc.REPORT_TO_MOD_PILOT), [f, h] = i.useState((0, a.Z)(t) && c), b = i.useCallback(async e => {
+    h(e), await p(t, e)
   }, [t]);
-  return d && n ? (0, r.jsxs)(r.Fragment, {
+  return c && n ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: p.setupContainer,
-      children: (0, r.jsx)(s.j7V, {
-        value: h,
-        onChange: x,
-        className: p.switchItem,
-        disabled: !n,
-        hideBorder: true,
-        children: (0, r.jsxs)("div", {
-          className: p.switchItemTextContent,
-          children: [(0, r.jsxs)(s.Text, {
-            color: "header-primary",
-            variant: "text-md/semibold",
-            children: [m.intl.string(g.default["/xIz7O"]), (0, r.jsx)(a.Z, {
-              className: p.betaTag
-            })]
-          }), (0, r.jsx)(s.Text, {
-            color: "header-secondary",
-            variant: "text-sm/normal",
-            children: m.intl.string(g.default.uUMXys)
-          })]
-        })
+      className: g.setupContainer,
+      children: (0, r.jsx)(s.rsf, {
+        label: u.intl.string(m.default["/xIz7O"]),
+        description: u.intl.string(m.default.uUMXys),
+        badge: "beta",
+        checked: f,
+        onChange: b,
+        disabled: !n
       })
     }), (0, r.jsx)(s.izJ, {
-      className: p.divider
+      className: g.divider
     })]
   }) : null
 }

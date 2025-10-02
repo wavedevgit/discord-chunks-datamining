@@ -150,16 +150,17 @@ function k() {
       gradientPreset: Chunk514361.Z.gradientPreset
     })),
     o = null != Chunk695346.L1.useSetting().customUserThemeSettings;
-  return exports !== Chunk981631.BRd.LIGHT ? null : (0, Chunk951288.jsx)(Chunk481060.j7V, {
-    hideBorder: true,
-    value: module && (0, Chunk780384.ap)(exports) && !require,
-    disabled: exports !== Chunk981631.BRd.LIGHT || require || null != Chunk647438 || Chunk704215,
-    onChange: Chunk857595.lq,
-    className: Chunk352334.darkSidebarToggle,
-    children: (0, Chunk951288.jsx)("span", {
-      className: Chunk352334.title,
-      children: Chunk388032.intl.string(Chunk388032.t.yF54Ki)
-    })
+  return exports !== Chunk981631.BRd.LIGHT ? null : (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.izJ, {
+      gap: 24
+    }), (0, Chunk951288.jsx)(Chunk481060.rsf, {
+      label: Chunk388032.intl.string(Chunk388032.t.yF54Ki),
+      checked: module && (0, Chunk780384.ap)(exports) && !require,
+      disabled: exports !== Chunk981631.BRd.LIGHT || require || null != Chunk647438 || Chunk704215,
+      onChange: Chunk857595.lq
+    }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
+      gap: 24
+    })]
   })
 }
 let U = () => (0, Chunk442837.e7)([Chunk514361.Z], () => Chunk514361.Z.isPreview) ? null : (0, Chunk951288.jsx)(Chunk481060.zxk, {

@@ -18,16 +18,15 @@ function d() {
   let e = Chunk695346.qF.useSetting();
   return (0, Chunk951288.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.VOICE_AND_VIDEO_VIDEO_CAMERA_PREVIEW,
-    children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
-      note: Chunk388032.intl.string(Chunk388032.t.WNbX4O),
+    children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
+      label: Chunk388032.intl.string(Chunk388032.t["3Ppr1t"]),
+      description: Chunk388032.intl.string(Chunk388032.t.WNbX4O),
+      checked: module,
       onChange: e => {
         s.qF.updateSetting(e), o.default.track(c.rMx.UPDATE_USER_SETTINGS_LOCAL, {
           always_preview_video: e
         })
-      },
-      value: module,
-      hideBorder: true,
-      children: Chunk388032.intl.string(Chunk388032.t["3Ppr1t"])
+      }
     })
   })
 }

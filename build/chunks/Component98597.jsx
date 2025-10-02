@@ -155,11 +155,11 @@ function A(e) {
     isDefaultChannel: r = false,
     locked: o,
     tabIndex: u,
-    forceShowButtons: f,
+    forceShowButtons: h,
     hasChannelInfo: b = false
   } = e, j = (0, p._k)({
     location: "channel_base"
-  }), v = (0, s.e7)([O.Z], () => O.Z.getGuild(t.getGuildId())), S = (0, s.e7)([g.Z], () => g.Z.getStageInstanceByChannel(t.id), [t.id]), N = (0, s.e7)([d.ZP], () => d.ZP.getActiveEventByChannel(t.id), [t.id]), w = (0, s.e7)([y.Z], () => (0, h.b)(y.Z, v, t, S)), Z = (0, s.e7)([y.Z], () => (null == t ? true : t.type) === x.d4z.GUILD_VOICE && j.isVoiceChannelEntrypointEnabled ? C.intl.string(C.t["EE+P0N"]) : j.isTextChannelEntrypointEnabled ? C.intl.string(C.t["0jeAXl"]) : y.Z.can(x.Plq.CREATE_INSTANT_INVITE, t) ? C.intl.string(C.t.zJrgTE) : C.intl.string(C.t.Sd8Ix8)), T = l.useRef(null);
+  }), v = (0, s.e7)([O.Z], () => O.Z.getGuild(t.getGuildId())), S = (0, s.e7)([g.Z], () => g.Z.getStageInstanceByChannel(t.id), [t.id]), N = (0, s.e7)([d.ZP], () => d.ZP.getActiveEventByChannel(t.id), [t.id]), w = (0, s.e7)([y.Z], () => (0, f.b)(y.Z, v, t, S)), Z = (0, s.e7)([y.Z], () => (null == t ? true : t.type) === x.d4z.GUILD_VOICE && j.isVoiceChannelEntrypointEnabled ? C.intl.string(C.t["EE+P0N"]) : j.isTextChannelEntrypointEnabled ? C.intl.string(C.t["0jeAXl"]) : y.Z.can(x.Plq.CREATE_INSTANT_INVITE, t) ? C.intl.string(C.t.zJrgTE) : C.intl.string(C.t.Sd8Ix8)), T = l.useRef(null);
   if (o || !w || t.isModeratorReportChannel()) return null;
 
   function A() {
@@ -197,7 +197,7 @@ function A(e) {
   })), (0, i.jsx)(c.ua7, {
     text: Z,
     children: e => (0, i.jsx)(c.P3F, I(P({
-      className: a()(E.iconItem, f ? E.alwaysShown : true, b ? E.iconWithChannelInfo : E.iconNoChannelInfo)
+      className: a()(E.iconItem, h ? E.alwaysShown : true, b ? E.iconWithChannelInfo : E.iconNoChannelInfo)
     }, e), {
       onClick: A,
       tabIndex: u,
@@ -211,7 +211,7 @@ function R(e) {
   let {
     channel: t
   } = e, n = () => {
-    (0, f._U)(t.guild_id, t.id)
+    (0, h._U)(t.guild_id, t.id)
   };
   return (0, i.jsx)(c.ua7, {
     text: C.intl.string(C.t.ROh4T0),
@@ -233,7 +233,7 @@ function D(e) {
   let {
     channel: t
   } = e, n = () => {
-    (0, f.dM)(t.guild_id, t.id, true, {
+    (0, h.dM)(t.guild_id, t.id, true, {
       section: x.jXE.CHANNEL_LIST
     })
   };

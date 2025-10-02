@@ -115,8 +115,8 @@ function es(e) {
   } = e, [a, o] = i.useState(""), [c, d] = i.useState({}), h = i.useRef(null), u = (0, p.e7)([B.Z], () => B.Z.getGuild(n)), g = s === q.d4z.GUILD_STAGE_VOICE, {
     roles: C,
     members: x,
-    getRichTag: N
-  } = (0, S.Q)(u, null, g ? G.yP : (0, Z.CG)(s), a, g), b = y.Z.useSections({
+    getRichTag: b
+  } = (0, S.Q)(u, null, g ? G.yP : (0, Z.CG)(s), a, g), N = y.Z.useSections({
     roles: C,
     members: x
   });
@@ -130,7 +130,7 @@ function es(e) {
     setPendingAdditions: d,
     roles: C,
     members: x,
-    getRichTag: N,
+    getRichTag: b,
     children: (0, r.jsxs)(m.hzk, {
       className: ee.addMembersContainer,
       children: [null != l && "" !== l ? (0, r.jsx)(m.Text, {
@@ -151,7 +151,7 @@ function es(e) {
         renderSection: y.Z.renderSection,
         rowHeight: y.Z.ROW_HEIGHT,
         renderRow: y.Z.renderRow,
-        sections: b,
+        sections: N,
         innerAriaOrientation: "vertical",
         innerRole: "listbox"
       })]
@@ -560,18 +560,14 @@ class ea extends Chunk647438.PureComponent {
           selectedSkuId: require,
           className: Chunk748280.storeChannelOptionSelector
         }, exports)]
-      }) : null, null != exports && Chunk512722 ? (0, Chunk951288.jsxs)(Chunk481060.j7V, {
-        hideBorder: true,
-        onChange: this.handleShowBranchesToggle,
-        value: l,
-        note: Chunk388032.intl.format(Chunk388032.t.UVXL1d, {
+      }) : null, null != exports && Chunk512722 ? (0, Chunk951288.jsx)(Chunk481060.rsf, {
+        label: Chunk388032.intl.string(Chunk388032.t["3e9mHx"]),
+        description: Chunk388032.intl.format(Chunk388032.t.UVXL1d, {
           devPortalUrl: Chunk981631.EYA.API_DOCS_GAME_AND_SERVER_MANAGEMENT
         }),
-        children: [(0, Chunk951288.jsx)(Chunk481060._m8, {
-          size: "md",
-          color: "currentColor",
-          className: Chunk748280.switchIcon
-        }), Chunk388032.intl.string(Chunk388032.t["3e9mHx"])]
+        icon: Chunk481060._m8,
+        onChange: this.handleShowBranchesToggle,
+        checked: l
       }) : null, null != exports ? (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
         children: [l ? (0, Chunk951288.jsx)(Chunk481060.vwX, {
           tag: "h5",
@@ -597,16 +593,12 @@ class ea extends Chunk647438.PureComponent {
     if (null != module || exports === Chunk981631.d4z.GUILD_ANNOUNCEMENT) return null;
     let i = exports === Chunk981631.d4z.GUILD_CATEGORY ? Chunk388032.intl.string(Chunk388032.t.lEPAZ2) : Chunk388032.intl.string(Chunk388032.t.aUI70t),
       s = exports === Chunk981631.d4z.GUILD_CATEGORY ? Chunk388032.intl.string(Chunk388032.t["RQUk6+"]) : Chunk388032.intl.string(Chunk388032.t.YguuKi);
-    return (0, Chunk951288.jsxs)(Chunk481060.j7V, {
-      hideBorder: true,
+    return (0, Chunk951288.jsx)(Chunk481060.rsf, {
+      label: Chunk647438,
+      description: Chunk120356,
+      icon: Chunk481060.mBM,
       onChange: this.handlePrivacyChange,
-      value: require,
-      note: Chunk120356,
-      children: [(0, Chunk951288.jsx)(Chunk481060.mBM, {
-        size: "md",
-        color: "currentColor",
-        className: Chunk748280.switchIcon
-      }), Chunk647438]
+      checked: require
     })
   }
   renderError(e) {
@@ -894,14 +886,14 @@ class ea extends Chunk647438.PureComponent {
         channelType: g,
         skuId: m,
         branchId: x,
-        isPrivate: N
-      } = this.state, b = this.getGuildId();
-      if (null != b) {
+        isPrivate: b
+      } = this.state, N = this.getGuildId();
+      if (null != N) {
         if (null != i) t = d().values(i.permissionOverwrites), n = i.bitrate, r = i.userLimit;
-        else if (g === q.d4z.GUILD_ANNOUNCEMENT) t = (0, F.rt)(b);
+        else if (g === q.d4z.GUILD_ANNOUNCEMENT) t = (0, F.rt)(N);
         else {
-          if (N) {
-            t = (0, F.oQ)(b, g, [], true);
+          if (b) {
+            t = (0, F.oQ)(N, g, [], true);
             let e = (0, v.Tj)(p, g);
             e.length > 0 && (t = t.concat(e));
             let n = null != h && l.id === h.id;
@@ -920,7 +912,7 @@ class ea extends Chunk647438.PureComponent {
         });
         try {
           let e = await C.Z.createChannel({
-            guildId: b,
+            guildId: N,
             type: g,
             name: u,
             permissionOverwrites: t,

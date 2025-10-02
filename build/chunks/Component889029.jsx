@@ -2,13 +2,11 @@
 /** chunk id: 889029, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => v
+  Z: () => b
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
-  Chunk442837 = require("./442837.js"),
+var Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk223245 = require("./223245.js"),
   Chunk921801 = require("./921801.js"),
@@ -20,10 +18,9 @@ var Chunk120356 = require("./120356.js"),
   Chunk726985 = require("./726985.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk459289 = require("./459289.js"),
-  Chunk10198 = require("./10198.js");
+  Chunk459289 = require("./459289.js");
 
-function y(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -32,30 +29,29 @@ function y(e, t, n) {
   }) : e[t] = n, e
 }
 
-function O(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      y(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
 }
 
-function v() {
+function b() {
   let {
     enabled: e,
     autoToggle: t,
-    hideInstantInvites: i,
-    hidePersonalInformation: y,
-    disableSounds: v,
-    disableNotifications: I,
-    enableContentProtection: T
-  } = (0, Chunk442837.cj)([Chunk246946.Z], () => O({}, Chunk246946.Z.getSettings())), S = (0, Chunk947889.Z)(), A = () => (0, Chunk951288.jsx)(Chunk481060.ToO, {
-    className: Chunk10198.marginBottom40,
+    hideInstantInvites: g,
+    hidePersonalInformation: b,
+    disableSounds: y,
+    disableNotifications: O,
+    enableContentProtection: v
+  } = (0, Chunk442837.cj)([Chunk246946.Z], () => E({}, Chunk246946.Z.getSettings())), I = (0, Chunk947889.Z)(), T = () => (0, Chunk951288.jsx)(Chunk481060.ToO, {
     iconClassName: Chunk459289.noticeIcon,
     type: Chunk481060.Dd5.PRIMARY,
     imageData: {
@@ -68,82 +64,87 @@ function v() {
     body: Chunk388032.intl.format(Chunk388032.t["4rmZn5"], {
       streamkitURL: Chunk981631.EYA.STREAMKIT
     })
-  }), C = () => {
-    if (Chunk358085.isPlatformEmbedded) return (0, Chunk951288.jsx)(Chunk481060.j7V, {
-      value: exports,
-      onChange: e => N("autoToggle", e),
-      note: Chunk388032.intl.string(Chunk388032.t.ZPi4lJ),
-      children: Chunk388032.intl.string(Chunk388032.t.PKDAJy)
+  }), S = () => {
+    if (Chunk358085.isPlatformEmbedded) return (0, Chunk951288.jsx)(Chunk481060.rsf, {
+      label: Chunk388032.intl.string(Chunk388032.t.PKDAJy),
+      description: Chunk388032.intl.string(Chunk388032.t.ZPi4lJ),
+      checked: exports,
+      onChange: e => A("autoToggle", e)
     })
-  }, N = (e, t) => {
-    l.Z.update({
+  }, A = (e, t) => {
+    o.Z.update({
       [e]: t
     })
-  }, R = () => {
-    S(Chunk313789.n.KEYBINDS_PANEL, {
+  }, C = () => {
+    I(Chunk313789.n.KEYBINDS_PANEL, {
       section: Chunk981631.oAB.KEYBINDS
     })
   };
-  return (0, Chunk951288.jsxs)(Chunk273313.Z, {
+  return (0, Chunk951288.jsx)(Chunk273313.Z, {
     title: Chunk388032.intl.string(Chunk388032.t.S5GfOT),
-    children: [(0, Chunk951288.jsx)(Chunk921801.F, {
-      setting: Chunk726985.s6.STREAMER_MODE_INTEGRATIONS,
-      children: A()
-    }), (0, Chunk951288.jsxs)(Chunk921801.F, {
-      setting: Chunk726985.s6.STREAMER_MODE_ENABLE,
-      children: [(0, Chunk951288.jsx)(Chunk481060.j7V, {
-        value: module,
-        onChange: e => N("enabled", e),
-        note: Chunk388032.intl.format(Chunk388032.t.MLVL2N, {
-          onClick: R
-        }),
-        children: Chunk388032.intl.string(Chunk388032.t.p9ZAJS)
-      }), C()]
-    }), (0, Chunk951288.jsxs)("div", {
-      children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
-        className: a()(Chunk10198.marginTop40, Chunk10198.marginBottom8, Chunk459289.sectionLabel),
-        children: Chunk388032.intl.string(Chunk388032.t["+1H47u"])
+    children: (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+      gap: 24,
+      children: [(0, Chunk951288.jsx)(Chunk921801.F, {
+        setting: Chunk726985.s6.STREAMER_MODE_INTEGRATIONS,
+        children: T()
       }), (0, Chunk951288.jsx)(Chunk921801.F, {
-        setting: Chunk726985.s6.STREAMER_MODE_HIDE_PERSONAL_INFORMATION,
-        children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
-          value: y,
-          onChange: e => N("hidePersonalInformation", e),
-          note: Chunk388032.intl.string(Chunk388032.t["+9Lra2"]),
-          children: Chunk388032.intl.string(Chunk388032.t.UpQziI)
+        setting: Chunk726985.s6.STREAMER_MODE_ENABLE,
+        children: (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+          gap: 16,
+          children: [(0, Chunk951288.jsx)(Chunk481060.rsf, {
+            label: Chunk388032.intl.string(Chunk388032.t.p9ZAJS),
+            description: Chunk388032.intl.format(Chunk388032.t.MLVL2N, {
+              onClick: C
+            }),
+            checked: module,
+            onChange: e => A("enabled", e)
+          }), S(), (0, Chunk951288.jsx)(Chunk481060.izJ, {})]
         })
-      }), (0, Chunk951288.jsx)(Chunk921801.F, {
-        setting: Chunk726985.s6.STREAMER_MODE_HIDE_INVITE_LINKS,
-        children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
-          value: Chunk120356,
-          onChange: e => N("hideInstantInvites", e),
-          note: Chunk388032.intl.string(Chunk388032.t.m7mS2d),
-          children: Chunk388032.intl.string(Chunk388032.t.q7WNGh)
-        })
-      }), (0, Chunk951288.jsx)(Chunk921801.F, {
-        setting: Chunk726985.s6.STREAMER_MODE_DISABLE_SOUNDS,
-        children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
-          value: v,
-          onChange: e => N("disableSounds", e),
-          note: Chunk388032.intl.string(Chunk388032.t.eAkaio),
-          children: Chunk388032.intl.string(Chunk388032.t.o56OZm)
-        })
-      }), (0, Chunk951288.jsx)(Chunk921801.F, {
-        setting: Chunk726985.s6.STREAMER_MODE_DISABLE_NOTIFICATIONS,
-        children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
-          value: I,
-          onChange: e => N("disableNotifications", e),
-          note: Chunk388032.intl.string(Chunk388032.t.ZAmpQ0),
-          children: Chunk388032.intl.string(Chunk388032.t.qmYiYW)
-        })
-      }), (0, Chunk951288.jsx)(Chunk921801.F, {
-        setting: Chunk726985.s6.STREAMER_MODE_HIDE_DISCORD_WINDOW_FROM_SCREEN_CAPTURE,
-        children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
-          value: T,
-          onChange: e => N("enableContentProtection", e),
-          note: Chunk388032.intl.string(Chunk388032.t.P4vj0t),
-          children: Chunk388032.intl.string(Chunk388032.t["iA81+f"])
-        })
+      }), (0, Chunk951288.jsxs)(Chunk481060.C3N, {
+        label: Chunk388032.intl.string(Chunk388032.t["+1H47u"]),
+        className: Chunk459289.sectionLabel,
+        children: [(0, Chunk951288.jsx)(Chunk921801.F, {
+          setting: Chunk726985.s6.STREAMER_MODE_HIDE_PERSONAL_INFORMATION,
+          children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
+            label: Chunk388032.intl.string(Chunk388032.t.UpQziI),
+            description: Chunk388032.intl.string(Chunk388032.t["+9Lra2"]),
+            checked: b,
+            onChange: e => A("hidePersonalInformation", e)
+          })
+        }), (0, Chunk951288.jsx)(Chunk921801.F, {
+          setting: Chunk726985.s6.STREAMER_MODE_HIDE_INVITE_LINKS,
+          children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
+            label: Chunk388032.intl.string(Chunk388032.t.q7WNGh),
+            description: Chunk388032.intl.string(Chunk388032.t.m7mS2d),
+            checked: g,
+            onChange: e => A("hideInstantInvites", e)
+          })
+        }), (0, Chunk951288.jsx)(Chunk921801.F, {
+          setting: Chunk726985.s6.STREAMER_MODE_DISABLE_SOUNDS,
+          children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
+            label: Chunk388032.intl.string(Chunk388032.t.o56OZm),
+            description: Chunk388032.intl.string(Chunk388032.t.eAkaio),
+            checked: y,
+            onChange: e => A("disableSounds", e)
+          })
+        }), (0, Chunk951288.jsx)(Chunk921801.F, {
+          setting: Chunk726985.s6.STREAMER_MODE_DISABLE_NOTIFICATIONS,
+          children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
+            label: Chunk388032.intl.string(Chunk388032.t.qmYiYW),
+            description: Chunk388032.intl.string(Chunk388032.t.ZAmpQ0),
+            checked: O,
+            onChange: e => A("disableNotifications", e)
+          })
+        }), (0, Chunk951288.jsx)(Chunk921801.F, {
+          setting: Chunk726985.s6.STREAMER_MODE_HIDE_DISCORD_WINDOW_FROM_SCREEN_CAPTURE,
+          children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
+            label: Chunk388032.intl.string(Chunk388032.t["iA81+f"]),
+            description: Chunk388032.intl.string(Chunk388032.t.P4vj0t),
+            checked: v,
+            onChange: e => A("enableContentProtection", e)
+          })
+        })]
       })]
-    })]
+    })
   })
 }

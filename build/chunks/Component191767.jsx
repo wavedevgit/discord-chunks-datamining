@@ -66,7 +66,7 @@ function E() {
         color: "text-feedback-info",
         className: Chunk634155.labelSpacing,
         children: "Payment-method-specific components and views may not appear for you unless your browser is supported for that payment method and they have been configured on your browser."
-      }), (0, Chunk951288.jsx)(S, {}), (0, Chunk951288.jsx)(k, {}), (0, Chunk951288.jsx)(M, {})]
+      }), (0, Chunk951288.jsx)(S, {}), (0, Chunk951288.jsx)(I, {}), (0, Chunk951288.jsx)(M, {})]
     })
   })
 }
@@ -206,7 +206,7 @@ function P(e) {
   })
 }
 
-function I(e) {
+function k(e) {
   let {
     children: t
   } = e;
@@ -219,7 +219,7 @@ function I(e) {
   })
 }
 
-function k() {
+function I() {
   let e = {
     onChooseType: () => {},
     onStripePaymentMethodReceived: e => {
@@ -233,7 +233,7 @@ function k() {
       children: "Choose Payment Source Type Component"
     }), (0, Chunk951288.jsx)(Chunk237012.E_, {
       label: "All Payment Request Wallets Enabled",
-      children: (0, Chunk951288.jsx)(I, {
+      children: (0, Chunk951288.jsx)(k, {
         children: (0, Chunk951288.jsx)(Chunk801937.Z, C(y({}, module), {
           onChooseType: () => {},
           paymentRequestWallets: ["googlePay", "applePay"]
@@ -241,7 +241,7 @@ function k() {
       })
     }), (0, Chunk951288.jsx)(Chunk237012.E_, {
       label: "No Payment Wallets Enabled",
-      children: (0, Chunk951288.jsx)(I, {
+      children: (0, Chunk951288.jsx)(k, {
         children: (0, Chunk951288.jsx)(Chunk801937.Z, C(y({}, module), {
           onChooseType: () => {},
           paymentRequestWallets: []
@@ -249,7 +249,7 @@ function k() {
       })
     }), (0, Chunk951288.jsx)(Chunk237012.E_, {
       label: "Is Eligible for Trial",
-      children: (0, Chunk951288.jsx)(I, {
+      children: (0, Chunk951288.jsx)(k, {
         children: (0, Chunk951288.jsx)(Chunk801937.Z, C(y({}, module), {
           isEligibleForTrial: true,
           onChooseType: () => {},
@@ -258,7 +258,7 @@ function k() {
       })
     }), (0, Chunk951288.jsx)(Chunk237012.E_, {
       label: "Only Stripe Card Enabled",
-      children: (0, Chunk951288.jsx)(I, {
+      children: (0, Chunk951288.jsx)(k, {
         children: (0, Chunk951288.jsx)(Chunk801937.Z, C(y({}, module), {
           onChooseType: () => {},
           paymentRequestWallets: [],

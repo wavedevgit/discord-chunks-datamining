@@ -18,11 +18,10 @@ function d() {
   let e = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getEnableSilenceWarning());
   return (0, Chunk951288.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_SILENCE_WARNING,
-    children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
-      value: module,
-      onChange: e => o.Z.setSilenceWarning(e),
-      hideBorder: true,
-      children: Chunk388032.intl.string(Chunk388032.t.jtiiCw)
+    children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
+      label: Chunk388032.intl.string(Chunk388032.t.jtiiCw),
+      checked: module,
+      onChange: e => o.Z.setSilenceWarning(e)
     })
   })
 }

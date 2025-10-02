@@ -1,7 +1,7 @@
 /** Chunk was on 78704 **/
 /** chunk id: 560602, original params: e,t,l (module,exports,require) **/
 require.d(exports, {
-  default: () => x
+  default: () => b
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -26,7 +26,7 @@ let g = e => {
     let {
       rolesRow: t
     } = e;
-    return (0, r.jsx)("div", {
+    return (0, n.jsx)("div", {
       "aria-hidden": true,
       className: v.roleCircle,
       style: {
@@ -34,50 +34,50 @@ let g = e => {
       }
     })
   },
-  x = e => {
+  b = e => {
     let {
       guild: t,
       channel: l,
-      permission: x,
-      onClose: b,
-      transitionState: j,
-      currentSelectedRoles: O = []
+      permission: b,
+      onClose: x,
+      transitionState: O,
+      currentSelectedRoles: j = []
     } = e, {
-      shouldEveryonePost: S,
-      setShouldEveryonePost: k
+      shouldEveryonePost: k,
+      setShouldEveryonePost: S
     } = ((e, t, l) => {
-      let r = h.Uu(l, t),
-        [i, a] = n.useState(r);
+      let n = h.Uu(l, t),
+        [i, a] = r.useState(n);
       return {
         shouldEveryonePost: i,
         setShouldEveryonePost: a
       }
-    })(0, l, x), C = function(e) {
+    })(0, l, b), C = function(e) {
       let t = (0, o.e7)([f.Z], () => f.Z.getSortedRoles(e.id));
-      return n.useMemo(() => (0, m.K)(t).filter(t => y(e.id)(t.id)), [e, t])
-    }(t), N = C.reduce((e, t) => (e.set(t.id, t), e), new Map), H = C.map(e => ({
+      return r.useMemo(() => (0, m.K)(t).filter(t => y(e.id)(t.id)), [e, t])
+    }(t), H = C.reduce((e, t) => (e.set(t.id, t), e), new Map), N = C.map(e => ({
       key: e.key,
       label: e.name,
       value: e.id
-    })), [E, P] = n.useState(O.map(e => e.id).filter(y(t.id))), [_, R] = n.useState(false), [Z, G] = n.useState(false), K = E.length > 0 || S, M = function(e, t) {
+    })), [E, P] = r.useState(j.map(e => e.id).filter(y(t.id))), [R, Z] = r.useState(false), [_, K] = r.useState(false), M = E.length > 0 || k, B = function(e, t) {
       let l = (0, o.e7)([f.Z], () => f.Z.getSortedRoles(e.id));
-      return n.useCallback((r, n) => {
+      return r.useCallback((n, r) => {
         let a = (0, m.K)(l),
-          o = new Set(n),
+          o = new Set(r),
           s = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var l = null != arguments[t] ? arguments[t] : {},
-                r = Object.keys(l);
-              "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(l).filter(function(e) {
+                n = Object.keys(l);
+              "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(l).filter(function(e) {
                 return Object.getOwnPropertyDescriptor(l, e).enumerable
-              }))), r.forEach(function(t) {
-                var r;
-                r = l[t], t in e ? Object.defineProperty(e, t, {
-                  value: r,
+              }))), n.forEach(function(t) {
+                var n;
+                n = l[t], t in e ? Object.defineProperty(e, t, {
+                  value: n,
                   enumerable: true,
                   configurable: true,
                   writable: true
-                }) : e[t] = r
+                }) : e[t] = n
               })
             }
             return e
@@ -85,81 +85,77 @@ let g = e => {
           p = [],
           f = [];
         return a.forEach(t => {
-          var l, n, a, u, m, w, v, y, g, x;
-          let b = t.id,
-            j = o.has(b);
-          j ? p.push({
-            id: b,
+          var l, r, a, u, m, w, v, y, g, b;
+          let x = t.id,
+            O = o.has(x);
+          O ? p.push({
+            id: x,
             type: c.BN.ROLE,
-            allow: j ? i.IH(null != (u = null == (l = s[b]) ? true : l.allow) ? u : h.Hn, r) : i.Od(null != (m = null == (n = s[b]) ? true : n.allow) ? m : h.Hn, r),
-            deny: i.Od(null != (w = null == (a = s[b]) ? true : a.deny) ? w : h.Hn, r)
-          }) : (0, d.pM)(e.id, b) ? p.push({
-            id: b,
+            allow: O ? i.IH(null != (u = null == (l = s[x]) ? true : l.allow) ? u : h.Hn, n) : i.Od(null != (m = null == (r = s[x]) ? true : r.allow) ? m : h.Hn, n),
+            deny: i.Od(null != (w = null == (a = s[x]) ? true : a.deny) ? w : h.Hn, n)
+          }) : (0, d.pM)(e.id, x) ? p.push({
+            id: x,
             type: c.BN.ROLE,
-            allow: i.Od(null != (g = null == (v = s[b]) ? true : v.allow) ? g : h.Hn, r),
-            deny: i.IH(null != (x = null == (y = s[b]) ? true : y.deny) ? x : h.Hn, r)
-          }) : b in s && f.push(b)
+            allow: i.Od(null != (g = null == (v = s[x]) ? true : v.allow) ? g : h.Hn, n),
+            deny: i.IH(null != (b = null == (y = s[x]) ? true : y.deny) ? b : h.Hn, n)
+          }) : x in s && f.push(x)
         }, []), (0, u.kU)(t.id, p, f)
       }, [e, l, t])
-    }(t, l), B = async () => {
-      if (!K) return;
-      R(true), G(false);
+    }(t, l), I = async () => {
+      if (!M) return;
+      Z(true), K(false);
       let e = [...E];
-      if (S) {
+      if (k) {
         let l = (0, p.lV)(t);
         e.push(l)
       }
       try {
-        await M(x, e), b()
+        await B(b, e), x()
       } catch (e) {
-        G(true)
+        K(true)
       } finally {
-        R(false)
+        Z(false)
       }
     };
-    return _ ? (0, r.jsx)(s.$jN, {}) : (0, r.jsxs)(a.Modal, {
+    return R ? (0, n.jsx)(s.$jN, {}) : (0, n.jsxs)(a.Modal, {
       title: w.intl.string(w.t.TFGnmp),
       actions: [{
         variant: "secondary",
         text: w.intl.string(w.t["ETE/oK"]),
-        onClick: b
+        onClick: x
       }, {
         variant: "primary",
         text: w.intl.string(w.t.R3BPHx),
-        onClick: B,
-        disabled: !K
+        onClick: I,
+        disabled: !M
       }],
-      onClose: b,
-      transitionState: j,
-      children: [(0, r.jsx)(s.VcW, {
+      onClose: x,
+      transitionState: O,
+      children: [(0, n.jsx)(s.VcW, {
         closeOnSelect: false,
         className: v.roleSelector,
         maxVisibleItems: 5,
         placeholder: w.intl.string(w.t["8kKqCQ"]),
         multi: true,
         value: E,
-        options: H,
+        options: N,
         onChange: e => {
           P(e)
         },
-        renderOptionPrefix: e => null != e ? (0, r.jsx)(g, {
-          rolesRow: N.get(e.value)
+        renderOptionPrefix: e => null != e ? (0, n.jsx)(g, {
+          rolesRow: H.get(e.value)
         }) : null
-      }), (0, r.jsxs)("div", {
+      }), (0, n.jsx)("div", {
         className: v.row,
-        children: [(0, r.jsx)(s.j7V, {
-          value: S,
-          hideBorder: true,
-          onChange: k,
-          className: v.switchGroup,
-          children: w.intl.string(w.t.kPwwAw)
-        }), (0, r.jsx)(s.Text, {
-          variant: "text-sm/normal",
-          children: w.intl.format(w.t.l7Ercn, {})
-        })]
-      }), Z ? (0, r.jsx)("div", {
+        children: (0, n.jsx)(s.rsf, {
+          label: w.intl.string(w.t.kPwwAw),
+          description: w.intl.format(w.t.l7Ercn, {}),
+          checked: k,
+          onChange: S
+        })
+      }), _ ? (0, n.jsx)("div", {
         className: v.row,
-        children: (0, r.jsx)(s.Text, {
+        children: (0, n.jsx)(s.Text, {
           className: v.error,
           variant: "text-sm/normal",
           children: w.intl.string(w.t.mgZKZG)

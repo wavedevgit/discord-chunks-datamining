@@ -2,7 +2,7 @@
 /** chunk id: 351123, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => J
+  Z: () => q
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -85,10 +85,10 @@ function W(e) {
     getRemoveTooltipHint: a
   } = e;
   return (0, i.jsx)(d.aVo, {
-    className: H.roleMemberList,
+    className: V.roleMemberList,
     sections: [n.length, l.length],
     renderRow: function(e) {
-      let c, g, x, {
+      let c, g, j, {
           section: v,
           row: y
         } = e,
@@ -96,22 +96,22 @@ function W(e) {
       switch (v) {
         case D.m$.ROLES:
           var S;
-          x = (g = n[y]).rowType === D.aC.ROLE && (null == (S = g.tags) ? true : S.guild_connections) === null ? (0, i.jsx)(b.Z, {
-            className: H.shield,
+          j = (g = n[y]).rowType === D.aC.ROLE && (null == (S = g.tags) ? true : S.guild_connections) === null ? (0, i.jsx)(b.Z, {
+            className: V.shield,
             color: g.colorString,
             size: 20
           }) : (0, i.jsx)(d.lZ8, {
             size: "custom",
-            className: H.shield,
+            className: V.shield,
             color: g.colorString,
             height: 20
           }), c = (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("div", {
-              className: H.rowHeight,
-              children: x
+              className: V.rowHeight,
+              children: j
             }), (0, i.jsx)(d.Text, {
               variant: "text-sm/normal",
-              className: H.rowLabel,
+              className: V.rowLabel,
               color: g.disabled ? "text-muted" : "text-default",
               children: g.name
             })]
@@ -124,15 +124,15 @@ function W(e) {
               size: d.EFr.SIZE_24,
               "aria-hidden": true
             }), (0, i.jsx)(d.Text, {
-              className: H.rowLabel,
+              className: V.rowLabel,
               variant: "text-sm/normal",
               children: g.name
             }), g.bot && (0, i.jsx)(f.Z, {
               verified: g.verifiedBot,
-              className: H.rowBotTag
+              className: V.rowBotTag
             }), null != g.nickname && (0, i.jsx)(d.Text, {
               color: "text-muted",
-              className: H.rowLabelSubText,
+              className: V.rowLabelSubText,
               variant: "text-sm/normal",
               children: g.username
             })]
@@ -143,14 +143,14 @@ function W(e) {
       }
       if (null == g) return null;
       let E = !N && null == r && null != g.id;
-      return (0, i.jsxs)(j.Z, {
-        justify: j.Z.Justify.BETWEEN,
-        align: j.Z.Align.CENTER,
-        className: H.memberRow,
-        children: [(0, i.jsx)(j.Z, {
-          justify: j.Z.Justify.START,
-          align: j.Z.Align.CENTER,
-          className: H.__invalid_memberRowBody,
+      return (0, i.jsxs)(x.Z, {
+        justify: x.Z.Justify.BETWEEN,
+        align: x.Z.Align.CENTER,
+        className: V.memberRow,
+        children: [(0, i.jsx)(x.Z, {
+          justify: x.Z.Justify.START,
+          align: x.Z.Align.CENTER,
+          className: V.__invalid_memberRowBody,
           children: c
         }), (0, i.jsx)(d.Text, {
           color: "text-muted",
@@ -163,11 +163,11 @@ function W(e) {
             onClick: () => {
               var e, n, i;
               return E && null != g && (e = g.id, n = g.name, i = g.rowType, void u.Z.show({
-                title: V.intl.string(V.t.GuPYQE),
-                body: V.intl.format(V.t.xERCnZ, {
+                title: H.intl.string(H.t.GuPYQE),
+                body: H.intl.format(H.t.xERCnZ, {
                   name: n
                 }),
-                cancelText: V.intl.string(V.t["ETE/oK"]),
+                cancelText: H.intl.string(H.t["ETE/oK"]),
                 onConfirm: () => (function(e, n) {
                   if (t.isGuildStageVoice()) {
                     let i = (0, C._L)(e, n === D.aC.ROLE ? m.BN.ROLE : m.BN.MEMBER, t);
@@ -177,12 +177,12 @@ function W(e) {
               }))
             },
             "aria-disabled": !E,
-            "aria-label": V.intl.string(V.t.N86XcH),
+            "aria-label": H.intl.string(H.t.N86XcH),
             children: (0, i.jsx)(d.k$p, {
               size: "md",
               color: "currentColor",
-              className: s()(H.removeIcon, {
-                [H.disabledRemoveIcon]: N || r
+              className: s()(V.removeIcon, {
+                [V.disabledRemoveIcon]: N || r
               })
             })
           })
@@ -197,11 +197,11 @@ function W(e) {
       switch (t) {
         case D.m$.ROLES:
           return (0, i.jsx)(X, {
-            title: V.intl.string(V.t.LPJmLy)
+            title: H.intl.string(H.t.LPJmLy)
           }, "roles-title");
         case D.m$.MEMBERS:
           return (0, i.jsx)(X, {
-            title: V.intl.string(V.t["9Oq93t"])
+            title: H.intl.string(H.t["9Oq93t"])
           }, "members-title")
       }
     },
@@ -209,7 +209,7 @@ function W(e) {
   })
 }
 
-function z(e) {
+function F(e) {
   let {
     guild: t,
     channel: l,
@@ -227,35 +227,35 @@ function z(e) {
     })
   }
   return (0, i.jsxs)("div", {
-    className: s()(H.settingCard, H.active),
+    className: s()(V.settingCard, V.active),
     children: [(0, i.jsx)(L.Z, {
-      label: V.intl.string(V.t.StpcFR),
-      description: V.intl.string(V.t.f7VbhI),
+      label: H.intl.string(H.t.StpcFR),
+      description: H.intl.string(H.t.f7VbhI),
       icon: (0, i.jsx)(d.ewx, {
         size: "custom",
         color: "currentColor",
-        className: H.cardIcon,
+        className: V.cardIcon,
         height: 20,
         width: 20
       }),
       id: "StageModeratorSettingCard"
     }), (0, i.jsxs)("div", {
-      className: H.cardFolder,
-      children: [(0, i.jsxs)(j.Z, {
-        justify: j.Z.Justify.BETWEEN,
-        align: j.Z.Align.CENTER,
-        className: H.folderHeader,
+      className: V.cardFolder,
+      children: [(0, i.jsxs)(x.Z, {
+        justify: x.Z.Justify.BETWEEN,
+        align: x.Z.Align.CENTER,
+        className: V.folderHeader,
         children: [(0, i.jsx)(d.vwX, {
           tag: "h5",
-          className: H.folderTitle,
-          children: V.intl.string(V.t["7BWDRU"])
+          className: V.folderTitle,
+          children: H.intl.string(H.t["7BWDRU"])
         }), (0, i.jsx)(d.ua7, {
-          text: V.intl.string(V.t.arRuER),
+          text: H.intl.string(H.t.arRuER),
           shouldShow: !h,
           children: e => (0, i.jsx)(d.zxk, G(U({
             variant: "primary",
             size: "sm",
-            text: V.intl.string(V.t.dMJ3Y2)
+            text: H.intl.string(H.t.dMJ3Y2)
           }, e), {
             onClick: g,
             disabled: !h
@@ -265,14 +265,14 @@ function z(e) {
         channel: l,
         roles: c,
         members: u,
-        disabledReason: h ? null : V.intl.string(V.t.arRuER),
+        disabledReason: h ? null : H.intl.string(H.t.arRuER),
         getRemoveTooltipHint: S.kk
       })]
     })]
   })
 }
 
-function F(e) {
+function z(e) {
   let {
     guild: t,
     channel: l,
@@ -289,11 +289,11 @@ function F(e) {
       } = await Promise.resolve().then(n.bind(n, 878678));
       return n => (0, i.jsx)(e, G(U({}, n), {
         confirmButtonColor: c.Tt.BRAND,
-        header: V.intl.string(V.t.ZzdgUl),
-        confirmText: V.intl.string(V.t.BddRzc),
+        header: H.intl.string(H.t.ZzdgUl),
+        confirmText: H.intl.string(H.t.BddRzc),
         children: (0, i.jsx)(d.Text, {
           variant: "text-md/normal",
-          children: V.intl.format(V.t.DwY2vL, {
+          children: H.intl.format(H.t.DwY2vL, {
             onClick: () => {
               y.Z.open(t.id, k.pNK.ONBOARDING), n.onClose()
             }
@@ -304,20 +304,20 @@ function F(e) {
     P.$e(l, e, r), r || null == s || h || P.Yh(l, e)
   }
   let f = {
-    title: V.intl.string(V.t.aUI70t),
-    subtitle: V.intl.string(V.t.hfbjIC),
-    formLabel: V.intl.string(V.t.P6eCbG)
+    title: H.intl.string(H.t.aUI70t),
+    subtitle: H.intl.string(H.t.hfbjIC),
+    formLabel: H.intl.string(H.t.P6eCbG)
   };
-  return l.isCategory() ? (f.title = V.intl.string(V.t.lEPAZ2), f.subtitle = V.intl.string(V.t["RQUk6+"]), f.formLabel = V.intl.string(V.t["8VIxJi"])) : l.type === k.d4z.GUILD_VOICE && (f.subtitle = V.intl.string(V.t.cLjvKi)), (0, i.jsxs)("div", {
-    className: s()(H.settingCard, {
-      [H.active]: r
+  return l.isCategory() ? (f.title = H.intl.string(H.t.lEPAZ2), f.subtitle = H.intl.string(H.t["RQUk6+"]), f.formLabel = H.intl.string(H.t["8VIxJi"])) : l.type === k.d4z.GUILD_VOICE && (f.subtitle = H.intl.string(H.t.cLjvKi)), (0, i.jsxs)("div", {
+    className: s()(V.settingCard, {
+      [V.active]: r
     }),
     children: [(0, i.jsx)(L.Z, {
       description: f.subtitle,
       icon: (0, i.jsx)(d.mBM, {
         size: "custom",
         color: "currentColor",
-        className: H.cardIcon,
+        className: V.cardIcon,
         height: 20,
         width: 20
       }),
@@ -326,32 +326,32 @@ function F(e) {
       onChange: m,
       value: r
     }), (0, i.jsxs)("div", {
-      className: H.cardFolder,
+      className: V.cardFolder,
       children: [p && (0, i.jsx)("div", {
-        className: H.adminWarning,
+        className: V.adminWarning,
         children: (0, i.jsx)(d.Wn, {
           messageType: d.QYI.WARNING,
-          children: V.intl.string(V.t["5f3HIC"])
+          children: H.intl.string(H.t["5f3HIC"])
         })
       }), !g && !p && !r && (0, i.jsx)("div", {
-        className: H.adminWarning,
+        className: V.adminWarning,
         children: (0, i.jsx)(d.Wn, {
           messageType: d.QYI.WARNING,
-          children: V.intl.string(V.t.ZAk4Q0)
+          children: H.intl.string(H.t.ZAk4Q0)
         })
       }), r && (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsxs)(j.Z, {
-          justify: j.Z.Justify.BETWEEN,
-          align: j.Z.Align.CENTER,
-          className: H.folderHeader,
+        children: [(0, i.jsxs)(x.Z, {
+          justify: x.Z.Justify.BETWEEN,
+          align: x.Z.Align.CENTER,
+          className: V.folderHeader,
           children: [(0, i.jsx)(d.vwX, {
             tag: "h5",
-            className: H.folderTitle,
+            className: V.folderTitle,
             children: f.formLabel
           }), (0, i.jsx)(d.zxk, {
             variant: "primary",
             size: "sm",
-            text: V.intl.string(V.t.dMJ3Y2),
+            text: H.intl.string(H.t.dMJ3Y2),
             onClick: function() {
               (0, d.ZDy)(async () => {
                 let {
@@ -381,15 +381,15 @@ function X(e) {
   } = e;
   return (0, i.jsxs)("div", {
     children: [(0, i.jsx)(d.izJ, {
-      className: H.divider
+      className: V.divider
     }), (0, i.jsx)(d.vwX, {
-      className: s()(H.folderTitle, H.sectionTitle),
+      className: s()(V.folderTitle, V.sectionTitle),
       tag: "h5",
       children: t
     })]
   })
 }
-let J = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk496675.Z, Chunk271383.ZP, Chunk430824.Z, Chunk485386.Z], () => {
+let q = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk496675.Z, Chunk271383.ZP, Chunk430824.Z, Chunk485386.Z], () => {
   let e, t = Chunk277053.Z.channel,
     n = Chunk277053.Z.category,
     i = [],
@@ -432,10 +432,10 @@ let J = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk496675.Z, Chunk271383.
   } = e, [m, f] = l.useState(!I.Uu(B.Pl.SEND_MESSAGES, s));
   if (null == s || null == c) return null;
   let b = {
-    title: V.intl.string(V.t.BAZMBg),
-    subtitle: V.intl.string(V.t.XLrZys)
+    title: H.intl.string(H.t.BAZMBg),
+    subtitle: H.intl.string(H.t.XLrZys)
   };
-  return s.isCategory() && (b.title = V.intl.string(V.t["/uELTk"]), b.subtitle = V.intl.string(V.t["8iAg3d"])), (0, i.jsxs)(i.Fragment, {
+  return s.isCategory() && (b.title = H.intl.string(H.t["/uELTk"]), b.subtitle = H.intl.string(H.t["8iAg3d"])), (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(d.vwX, {
       tag: "h1",
       children: b.title
@@ -444,14 +444,14 @@ let J = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk496675.Z, Chunk271383.
     }), null != r && t ? h ? (0, i.jsx)(M.Z, {
       canSync: false,
       icon: d.DuK,
-      noticeText: V.intl.format(V.t.ETJqLi, {
+      noticeText: H.intl.format(H.t.ETJqLi, {
         categoryName: r.name
       })
     }) : (0, i.jsx)(M.Z, {
-      buttonText: V.intl.string(V.t.NVwuHh),
+      buttonText: H.intl.string(H.t.NVwuHh),
       canSync: true,
       icon: (0, d.GSL)(_.Z),
-      noticeText: V.intl.format(V.t.OIhm0N, {
+      noticeText: H.intl.format(H.t.OIhm0N, {
         categoryName: r.name
       }),
       onClick: function() {
@@ -466,18 +466,18 @@ let J = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk496675.Z, Chunk271383.
               let {
                 guild_id: e
               } = r, t = U({}, r.permissionOverwrites);
-              null != e && null == t[e] && (t[e] = I.we(e)), await (0, x.u)(s, t[e].deny, t[e].allow) && (0, g.wk)(s.id, {
+              null != e && null == t[e] && (t[e] = I.we(e)), await (0, j.u)(s, t[e].deny, t[e].allow) && (0, g.wk)(s.id, {
                 permissionOverwrites: Object.values(t)
               })
             }
           }))
         })
       }
-    }) : null, s.isGuildStageVoice() ? (0, i.jsx)(z, {
+    }) : null, s.isGuildStageVoice() ? (0, i.jsx)(F, {
       guild: c,
       channel: s,
       permissionUpdates: p
-    }) : null, (0, i.jsx)(F, {
+    }) : null, (0, i.jsx)(z, {
       channel: s,
       guild: c,
       isPrivateGuildChannel: u,

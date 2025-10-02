@@ -88,8 +88,8 @@ function f(e) {
     isDragging: d,
     selectedItem: f,
     onItemSelect: b,
-    itemType: j,
-    locked: x,
+    itemType: x,
+    locked: j,
     lockTooltip: v,
     showContextMenu: y,
     theme: C,
@@ -104,7 +104,7 @@ function f(e) {
     id: l,
     selectedItem: f,
     onItemSelect: b,
-    itemType: j,
+    itemType: x,
     "aria-label": null != v ? "".concat(E, ", ").concat(v) : E,
     onContextMenu: S,
     children: (0, i.jsxs)("div", {
@@ -120,7 +120,7 @@ function f(e) {
         colors: O,
         className: g.roleCircle
       }), function() {
-        if (!x) return null;
+        if (!j) return null;
         let e = (0, a.wj)(C) ? n(27377) : n(514811);
         return (0, i.jsx)(o.ua7, {
           text: v,

@@ -28,11 +28,11 @@ function _(e, t) {
     }),
     a = (0, l.e7)([s.Z], () => s.Z.getStateForGuild(e)),
     u = null == a ? true : a.allPowerups[i.A$],
-    h = (0, d.ZP)(e, u),
+    f = (0, d.ZP)(e, u),
     _ = (0, c.q8)(e, t),
     O = null == u ? true : u.storeRemovalDate,
     y = null != (n = null == r ? true : r.has(g.oNc.PARTNERED)) && n,
-    j = _ && null != O && !y && h.type === f.A3.POWERUP_ACTIVATED,
+    j = _ && null != O && !y && f.type === h.A3.POWERUP_ACTIVATED,
     v = j ? {
       title: b.intl.formatToPlainString(m.default.mgoPkZ, {
         perkName: null == u ? true : u.title
@@ -65,8 +65,8 @@ function O(e, t) {
     Z = null != (y = null == w ? true : w.has(g.oNc.PARTNERED)) && y,
     {
       onActivate: T
-    } = (0, h._C)(e, N),
-    A = !v && x && C && null != S && !Z && P.type === f.A3.POWERUP_ACTIVATED && null != I && null != N && null != j,
+    } = (0, f._C)(e, N),
+    A = !v && x && C && null != S && !Z && P.type === h.A3.POWERUP_ACTIVATED && null != I && null != N && null != j,
     R = r.useCallback(e => {
       T(e)
     }, [T]),

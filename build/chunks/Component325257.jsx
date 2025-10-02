@@ -75,7 +75,7 @@ let M = {
 };
 
 function L(e, t) {
-  (0, f.jW)(e, async () => {
+  (0, h.jW)(e, async () => {
     let {
       default: e
     } = await Promise.all([n.e("36599"), n.e("7654"), n.e("58175"), n.e("48776"), n.e("8271"), n.e("15851"), n.e("51453"), n.e("845"), n.e("98039"), n.e("6850"), n.e("58227"), n.e("44686"), n.e("30378"), n.e("29679"), n.e("22516"), n.e("87154"), n.e("33213"), n.e("8209")]).then(n.bind(n, 545135));
@@ -85,7 +85,7 @@ function L(e, t) {
   })
 }
 let k = Chunk647438.memo(function(e) {
-  var t, n, l, f, k;
+  var t, n, l, h, k;
   let {
     guildNode: U,
     setRef: G,
@@ -112,9 +112,9 @@ let k = Chunk647438.memo(function(e) {
     id: eo,
     parentId: ea
   } = U, es = null != (t = e.upperBadge) ? t : q ? (0, w.Ny)() : null != Y ? (0, w.Or)(Y) : true, ec = null != (n = e.lowerBadge) ? n : true;
-  null == ec && X > 0 ? ec = null != (l = (0, w.Ne)(X, Q ? m.Z.BACKGROUND_ACCENT : m.Z.STATUS_DANGER)) ? l : true : null == ec && null != en && (ec = null != (f = (0, w.jt)({
+  null == ec && X > 0 ? ec = null != (l = (0, w.Ne)(X, Q ? m.Z.BACKGROUND_ACCENT : m.Z.STATUS_DANGER)) ? l : true : null == ec && null != en && (ec = null != (h = (0, w.jt)({
     guildJoinRequestStatus: en
-  })) ? f : true);
+  })) ? h : true);
   let eu = null != (k = e.lowerBadgeSize) ? k : {
       width: (0, p.OVM)(X)
     },
@@ -135,9 +135,9 @@ let k = Chunk647438.memo(function(e) {
         dragging: e.isDragging()
       })
     }),
-    eh = (0, c.Ie)(null != eo ? eo : Z.lds, null != ea ? 2 : 1),
-    [ef, eg] = i.useState(false),
-    em = !ee && ef,
+    ef = (0, c.Ie)(null != eo ? eo : Z.lds, null != ea ? 2 : 1),
+    [eh, eg] = i.useState(false),
+    em = !ee && eh,
     [eb, e_] = i.useState(false),
     [eO, ey] = i.useState(false),
     [ej] = i.useState(() => new d.sW(70, () => ey(true)));
@@ -153,7 +153,7 @@ let k = Chunk647438.memo(function(e) {
     ex = i.useCallback(() => {
       if (null != V || null == H || q || !et) return;
       let e = (0, b.V)(H.id);
-      null != e && h.Z.preload(H.id, e)
+      null != e && f.Z.preload(H.id, e)
     }, [V, H, q, et]),
     eC = (0, u.e7)([j.ZP], () => j.ZP.isCurrentUserGuest(eo)),
     eE = i.useCallback(e => {
@@ -202,7 +202,7 @@ let k = Chunk647438.memo(function(e) {
       onKeyDown: eS,
       icon: (0, y.EB)(H, 2 * eN, em && z, true),
       selected: W || em
-    }, eh), {
+    }, ef), {
       "aria-setsize": ei,
       "aria-posinset": el,
       "aria-selected": W

@@ -2,73 +2,90 @@
 /** chunk id: 982168, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Gi: () => y,
-  P0: () => E,
-  UD: () => h,
-  WF: () => b,
-  gT: () => g,
-  iZ: () => m,
-  iq: () => O,
-  sP: () => _
-}), require("./642613.js"), require("./149765.js");
-var Chunk294509 = require("./294509.js"),
+  Gi: () => A,
+  P0: () => T,
+  UD: () => O,
+  WF: () => S,
+  _5: () => b,
+  gT: () => I,
+  iZ: () => v,
+  iq: () => C,
+  sP: () => E
+}), require("./642613.js");
+var Chunk149765 = require("./149765.js"),
+  Chunk294509 = require("./294509.js"),
   Chunk629710 = require("./629710.js"),
   Chunk860164 = require("./860164.js"),
-  Chunk660189 = require("./660189.js");
-require("./241559.js");
-var Chunk182274 = require("./182274.js"),
+  Chunk660189 = require("./660189.js"),
+  Chunk241559 = require("./241559.js"),
+  Chunk182274 = require("./182274.js"),
   Chunk592125 = require("./592125.js"),
-  Chunk430824 = require("./430824.js");
-require("./594174.js"), require("./700785.js");
-var Chunk970257 = require("./970257.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk700785 = require("./700785.js"),
+  Chunk970257 = require("./970257.js"),
   Chunk893908 = require("./893908.js"),
-  Chunk953252 = require("./953252.js");
-
-function _(e) {
-  if (!(0, u.Fi)(e.author)) returnfalse;
-  let t = l.Z.getChannel(e.channel_id);
-  if (null == t) returnfalse;
-  let n = c.Z.getGuild(t.guild_id);
-  if (null == n) returnfalse;
-  let r = (0, f.Z)(n),
-    i = (0, d.Z)(n);
-  return r && null != i
-}
-
-function p(e) {
-  return E(l.Z.getChannel(e))
-}
-
-function h(e) {
-  return m(l.Z.getChannel(e))
-}
-
-function m(e) {
-  return null != e && e.isModeratorReportChannel() && e.isForumChannel()
-}
-
-function g(e) {
-  return null != e && e.isModeratorReportChannel() && e.isForumPost()
-}
+  Chunk953252 = require("./953252.js"),
+  Chunk806246 = require("./806246.js");
 
 function E(e) {
-  return null != e && (m(e) || g(e))
+  if (!(0, p.Fi)(e.author)) returnfalse;
+  let t = u.Z.getChannel(e.channel_id);
+  if (null == t) returnfalse;
+  let n = d.Z.getGuild(t.guild_id);
+  if (null == n) returnfalse;
+  let r = (0, m.Z)(n),
+    i = (0, h.Z)(n);
+  return r && null != i
 }
-
-function b(e) {
-  if (null == e || !(0, s.U)() || !p(e)) returntrue;
+let b = function(e) {
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [d.Z, f.default],
+    n = (0, l.cD)(e, t);
+  if (null == n) returnfalse;
   let {
-    loaded: t,
-    firstMessage: n
-  } = o.Z.getMessage(e);
-  return !t || null == n || !(0, i.X6)(n, r.qn.EXPLICIT)
-}
+    user: i,
+    guild: a
+  } = n;
+  return null != a && !!(0, m.Z)(a) && null != (0, h.Z)(a) && r.Db(_.uB({
+    user: i,
+    context: a,
+    checkElevated: false
+  }), g.I)
+};
 
-function y(e, t) {
-  return !!e.isFirstMessageInForumPost(t) && !!e.isSystemDM() && g(t)
+function y(e) {
+  return T(u.Z.getChannel(e))
 }
 
 function O(e) {
-  return e.sort((e, t) => e.id == a.a.MULTIPLE_REPORTS ? false : +(t.id == a.a.MULTIPLE_REPORTS))
+  return v(u.Z.getChannel(e))
 }
-require("./806246.js")
+
+function v(e) {
+  return null != e && e.isModeratorReportChannel() && e.isForumChannel()
+}
+
+function I(e) {
+  return null != e && e.isModeratorReportChannel() && e.isForumPost()
+}
+
+function T(e) {
+  return null != e && (v(e) || I(e))
+}
+
+function S(e) {
+  if (null == e || !(0, c.U)() || !y(e)) returntrue;
+  let {
+    loaded: t,
+    firstMessage: n
+  } = s.Z.getMessage(e);
+  return !t || null == n || !(0, a.X6)(n, i.qn.EXPLICIT)
+}
+
+function A(e, t) {
+  return !!e.isFirstMessageInForumPost(t) && !!e.isSystemDM() && I(t)
+}
+
+function C(e) {
+  return e.sort((e, t) => e.id == o.a.MULTIPLE_REPORTS ? false : +(t.id == o.a.MULTIPLE_REPORTS))
+}

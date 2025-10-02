@@ -101,18 +101,19 @@ class v extends Chunk647438.PureComponent {
     } = this.props;
     return (0, Chunk951288.jsxs)("div", {
       className: Chunk936390.body,
-      children: [(0, Chunk804739.Q)() ? (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
-        children: [(0, Chunk951288.jsx)(Chunk481060.j7V, {
-          value: exports,
-          onChange: this.handleToggleShortcutDesktop,
-          note: Chunk388032.intl.string(Chunk388032.t.vT61Nz),
-          children: Chunk388032.intl.string(Chunk388032.t["9ID+Ki"])
-        }), (0, Chunk951288.jsx)(Chunk481060.j7V, {
-          value: require,
-          onChange: this.handleToggleShortcutStartMenu,
-          note: Chunk388032.intl.string(Chunk388032.t.cpYp0N),
-          children: Chunk388032.intl.string(Chunk388032.t.vNpUMz)
-        }), (0, Chunk951288.jsx)(Chunk34305.Z, {})]
+      children: [(0, Chunk804739.Q)() ? (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+        gap: 16,
+        children: [(0, Chunk951288.jsx)(Chunk481060.rsf, {
+          label: Chunk388032.intl.string(Chunk388032.t["9ID+Ki"]),
+          description: Chunk388032.intl.string(Chunk388032.t.vT61Nz),
+          checked: exports,
+          onChange: this.handleToggleShortcutDesktop
+        }), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsx)(Chunk481060.rsf, {
+          label: Chunk388032.intl.string(Chunk388032.t.vNpUMz),
+          description: Chunk388032.intl.string(Chunk388032.t.cpYp0N),
+          checked: require,
+          onChange: this.handleToggleShortcutStartMenu
+        }), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsx)(Chunk34305.Z, {})]
       }) : null, (0, Chunk951288.jsx)(y, {
         restoreApplication: this.handleRestoreHiddenLibraryApplication,
         applicationViewItems: module

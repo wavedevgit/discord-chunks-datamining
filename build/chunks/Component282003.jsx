@@ -52,7 +52,7 @@ let g = () => {
     let [e, t] = Chunk647438.useState(Chunk474936.p9.TIER_0), [n, g] = Chunk647438.useState(Chunk45474.R.WHAT_YOU_LOSE), [j, _] = Chunk647438.useState(null), [y, C] = Chunk647438.useState(Chunk474936.Xh.PREMIUM_MONTH_TIER_0), [E, N] = Chunk647438.useState([]), [S, T] = Chunk647438.useState(() => {
       let e = new Date;
       return module.setMonth(module.getMonth() + 1), module
-    }), [O, P] = Chunk647438.useState(null), [I, k] = Chunk647438.useState(false), [w, R] = Chunk647438.useState(false), [A, Z] = Chunk647438.useState(false);
+    }), [O, P] = Chunk647438.useState(null), [k, I] = Chunk647438.useState(false), [w, R] = Chunk647438.useState(false), [A, Z] = Chunk647438.useState(false);
     (0, Chunk647438.useEffect)(() => {
       (0, Chunk821849.Y2)()
     }, []), (0, Chunk647438.useEffect)(() => {
@@ -138,7 +138,7 @@ let g = () => {
           intervalType: h.rV.MONTH,
           intervalCount: 1
         },
-        errorOnCancel: I,
+        errorOnCancel: k,
         errorOnRedeem: w,
         setActiveStep: e => {
           g(e), t.onClose()
@@ -167,7 +167,7 @@ let g = () => {
           pauseReason: p.Id.UNKNOWN
         }
       })))
-    }, [module, j, y, O, I, w, require, S]);
+    }, [module, j, y, O, k, w, require, S]);
     return (0, Chunk647438.useEffect)(() => {
       A && D()
     }, [require, A, D]), (0, Chunk951288.jsxs)(Chunk237012.$0, {
@@ -260,9 +260,9 @@ let g = () => {
           })
         }), (0, Chunk951288.jsx)(Chunk237012.BZ, {
           children: (0, Chunk951288.jsx)(Chunk481060.XZJ, {
-            checked: I,
+            checked: k,
             onChange: () => {
-              k(!I)
+              I(!k)
             },
             label: "Error on Cancel"
           })

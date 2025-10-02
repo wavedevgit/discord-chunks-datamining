@@ -202,21 +202,18 @@ class eo extends Chunk647438.Component {
       messageDisplayCompact: e,
       messageGroupSpacing: t
     } = this.props;
-    return (0, Chunk951288.jsx)("div", {
-      className: Chunk5874.messageGroupingSpacing,
-      children: (0, Chunk951288.jsx)(Chunk481060.iRW, {
-        label: Chunk388032.intl.string(Chunk388032.t.Q6lKkp),
-        description: Chunk388032.intl.string(Chunk388032.t.p7eUra),
-        initialValue: exports,
-        defaultValue: module ? Chunk959517.c8 : Chunk959517.pq,
-        markers: Chunk959517.fP,
-        stickToMarkers: true,
-        onValueChange: this.handleMessageSpacingChange,
-        onValueRender: this.handleSliderRenderPX,
-        onMarkerRender: this.handleSliderRenderPX,
-        getAriaValueText: this.handleSliderValueText,
-        "aria-labelledby": et
-      })
+    return (0, Chunk951288.jsx)(Chunk481060.iRW, {
+      label: Chunk388032.intl.string(Chunk388032.t.Q6lKkp),
+      description: Chunk388032.intl.string(Chunk388032.t.p7eUra),
+      initialValue: exports,
+      defaultValue: module ? Chunk959517.c8 : Chunk959517.pq,
+      markers: Chunk959517.fP,
+      stickToMarkers: true,
+      onValueChange: this.handleMessageSpacingChange,
+      onValueRender: this.handleSliderRenderPX,
+      onMarkerRender: this.handleSliderRenderPX,
+      getAriaValueText: this.handleSliderValueText,
+      "aria-labelledby": et
     })
   }
   renderPreview() {
@@ -352,44 +349,29 @@ class eo extends Chunk647438.Component {
       })]
     }), o = (0, Chunk951288.jsxs)(Chunk921801.F, {
       setting: Chunk726985.s6.APPEARANCE_MESSAGE_DISPLAY_COMPACT,
-      children: [(0, Chunk951288.jsxs)(Chunk481060.Kqy, {
-        gap: 8,
-        padding: {
-          bottom: 8
-        },
-        children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
-          variant: "text-lg/medium",
-          className: Chunk5874.title,
-          children: Chunk388032.intl.string(Chunk388032.t["2ed/sL"])
-        }), (0, Chunk951288.jsx)(Chunk481060.Text, {
-          variant: "text-sm/normal",
-          className: Chunk5874.subtext,
-          children: Chunk388032.intl.string(Chunk388032.t.u9N6Qk)
-        })]
-      }), (0, Chunk951288.jsx)(Chunk481060.FXm, {
-        label: Chunk388032.intl.string(Chunk388032.t.nKRoPj),
-        description: Chunk388032.intl.string(Chunk388032.t.QntEEB),
-        options: [{
-          name: Chunk388032.intl.string(Chunk388032.t.Jqj4cX),
-          value: J
-        }, {
-          name: Chunk388032.intl.string(Chunk388032.t["1JNcPT"]),
-          value: $
-        }],
-        onChange: e => this.handleMessageDisplayModeChange({
-          value: e
-        }),
-        value: this.props.messageDisplayCompact ? $ : J
-      }), this.props.messageDisplayCompact && (0, Chunk951288.jsx)(Chunk481060.j7V, {
-        className: Chunk5874.compactModeToggle,
-        hideBorder: true,
-        value: !this.props.displayCompactAvatars,
-        onChange: e => this.handleDisplayCompactAvatarsChanged(!e),
-        children: (0, Chunk951288.jsx)(Chunk481060.Text, {
-          variant: "text-md/medium",
-          children: Chunk388032.intl.string(Chunk388032.t["//vhWl"])
-        })
-      }), this.renderMessageGroupSpacingSlider(), (0, Chunk951288.jsx)(Chunk481060.izJ, {
+      children: [(0, Chunk951288.jsxs)(Chunk481060.C3N, {
+        label: Chunk388032.intl.string(Chunk388032.t["2ed/sL"]),
+        description: Chunk388032.intl.string(Chunk388032.t.u9N6Qk),
+        children: [(0, Chunk951288.jsx)(Chunk481060.FXm, {
+          label: Chunk388032.intl.string(Chunk388032.t.nKRoPj),
+          description: Chunk388032.intl.string(Chunk388032.t.QntEEB),
+          options: [{
+            name: Chunk388032.intl.string(Chunk388032.t.Jqj4cX),
+            value: J
+          }, {
+            name: Chunk388032.intl.string(Chunk388032.t["1JNcPT"]),
+            value: $
+          }],
+          onChange: e => this.handleMessageDisplayModeChange({
+            value: e
+          }),
+          value: this.props.messageDisplayCompact ? $ : J
+        }), this.props.messageDisplayCompact && (0, Chunk951288.jsx)(Chunk481060.rsf, {
+          label: Chunk388032.intl.string(Chunk388032.t["//vhWl"]),
+          checked: !this.props.displayCompactAvatars,
+          onChange: e => this.handleDisplayCompactAvatarsChanged(!e)
+        }), this.renderMessageGroupSpacingSlider()]
+      }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
         className: Chunk5874.divider
       })]
     }), s = (0, Chunk951288.jsxs)(Chunk921801.F, {

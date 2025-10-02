@@ -18,47 +18,47 @@ function b(t) {
   let {
     transitionState: b,
     onClose: g,
-    entry: p
-  } = t, [h, m] = l.useState(null != (e = p.description) ? e : ""), [I, _] = l.useState(null != (a = p.primaryCategoryId) ? a : c.AR.UNCATEGORIZED), [f, x] = l.useState(false), [C, v] = l.useState(null), y = async () => {
-    if (v(null), h !== p.description || I !== p.primaryCategoryId) {
-      x(true);
+    entry: h
+  } = t, [p, m] = i.useState(null != (e = h.description) ? e : ""), [x, I] = i.useState(null != (a = h.primaryCategoryId) ? a : c.AR.UNCATEGORIZED), [C, _] = i.useState(false), [f, v] = i.useState(null), y = async () => {
+    if (v(null), p !== h.description || x !== h.primaryCategoryId) {
+      _(true);
       try {
-        await (0, o.Dr)(p.channelId, p.guildId, h, I), x(false), g()
+        await (0, o.Dr)(h.channelId, h.guildId, p, x), _(false), g()
       } catch (t) {
-        x(false), v(new s.Z(t))
+        _(false), v(new s.Z(t))
       }
     }
   };
-  return (0, i.jsx)(n.Modal, {
+  return (0, l.jsx)(n.Modal, {
     transitionState: b,
     "aria-label": u.intl.string(u.t.eQ2bLi),
     onClose: g,
     title: u.intl.formatToPlainString(u.t.w9tsNj, {
-      guildName: p.name
+      guildName: h.name
     }),
     subtitle: u.intl.string(u.t["vEkX//"]),
     actions: [{
       variant: "primary",
       text: u.intl.string(u.t.R3BPHx),
       onClick: y,
-      loading: f
+      loading: C
     }],
-    children: (0, i.jsxs)("div", {
+    children: (0, l.jsxs)("div", {
       className: d.createGuild,
-      children: [(0, i.jsx)(r.Kx8, {
+      children: [(0, l.jsx)(r.Kx8, {
         label: u.intl.string(u.t.FFFAGh),
-        value: h,
+        value: p,
         maxLength: 200,
         placeholder: u.intl.string(u.t.VzuITE),
         onChange: m,
-        error: null == C ? true : C.getAnyErrorMessage()
-      }), (0, i.jsx)(r.q4e, {
+        error: null == f ? true : f.getAnyErrorMessage()
+      }), (0, l.jsx)(r.q4e, {
         label: u.intl.string(u.t.Olo8FB),
         placeholder: u.intl.string(u.t.XqMe3N),
-        options: (0, c.b7)(p.channelId),
+        options: (0, c.b7)(h.channelId),
         clearable: false,
-        value: I,
-        onChange: _,
+        value: x,
+        onChange: I,
         maxVisibleItems: 4
       })]
     })
