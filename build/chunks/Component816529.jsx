@@ -20,27 +20,29 @@ function d(e) {
     width: l,
     targetElementRef: d,
     isOpen: f,
-    onRequestClose: _
-  } = e, p = i.useRef(null);
+    onRequestClose: _,
+    dialog: p = true
+  } = e, h = i.useRef(null);
 
-  function h() {
-    return (0, r.jsx)(o.V, {
+  function m() {
+    let e = (0, r.jsx)("div", {
+      ref: h,
+      className: c.dropdownContainer,
+      style: {
+        width: l,
+        height: n
+      },
       children: (0, r.jsx)("div", {
-        ref: p,
-        className: c.dropdownContainer,
-        style: {
-          width: l,
-          height: n
-        },
-        children: (0, r.jsx)("div", {
-          className: c.dropdown,
-          children: (0, r.jsx)(a.w0Z, {
-            className: c.scroller,
-            children: t
-          })
+        className: c.dropdown,
+        children: (0, r.jsx)(a.w0Z, {
+          className: c.scroller,
+          children: t
         })
       })
-    })
+    });
+    return p ? (0, r.jsx)(o.V, {
+      children: e
+    }) : e
   }
   return (0, r.jsx)(s.H, {
     targetElementRef: d,
@@ -49,7 +51,7 @@ function d(e) {
     align: "left",
     autoInvert: true,
     scrollBehavior: "close",
-    renderPopout: h,
+    renderPopout: m,
     onRequestClose: _,
     children: u
   })

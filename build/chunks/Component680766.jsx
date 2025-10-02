@@ -2,16 +2,17 @@
 /** chunk id: 680766, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  W: () => h
+  W: () => m
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk35916 = require("./35916.jsx"),
   Chunk496600 = require("./496600.jsx"),
+  Chunk333200 = require("./333200.jsx"),
   Chunk673221 = require("./673221.jsx"),
   Chunk231338 = require("./231338.js");
 
-function l(e, t, n) {
+function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -20,20 +21,20 @@ function l(e, t, n) {
   }) : e[t] = n, e
 }
 
-function c(e) {
+function u(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      l(e, t, n[t])
+      c(e, t, n[t])
     })
   }
   return e
 }
 
-function u(e, t) {
+function d(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -44,15 +45,15 @@ function u(e, t) {
   return n
 }
 
-function d(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : u(Object(t)).forEach(function(n) {
+function f(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function f(e, t) {
+function _(e, t) {
   if (null == e) return {};
-  var n, r, i = _(e, t);
+  var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -60,14 +61,14 @@ function f(e, t) {
   return i
 }
 
-function _(e, t) {
+function p(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let p = [{
+let h = [{
     label: "Aardvark",
     value: "aardvark",
     id: "aardvark"
@@ -93,7 +94,7 @@ let p = [{
     id: "snake",
     disabled: true
   }],
-  h = {
+  m = {
     title: "Select",
     stories: [{
       id: "select",
@@ -101,11 +102,11 @@ let p = [{
       component: function(e) {
         var {
           selectionMode: t
-        } = e, n = f(e, ["selectionMode"]);
-        return (0, r.jsx)(o.P, d(c({}, n), {
+        } = e, n = _(e, ["selectionMode"]);
+        return (0, r.jsx)(s.P, f(u({}, n), {
           selectionMode: t,
-          options: p,
-          onSelectionChange: s.dG
+          options: h,
+          onSelectionChange: l.dG
         }))
       },
       controls: {
@@ -198,6 +199,103 @@ let p = [{
         }
       }
     }, {
+      id: "searchable-select",
+      name: "SearchableSelect",
+      component: function(e) {
+        var {
+          selectionMode: t
+        } = e, n = _(e, ["selectionMode"]);
+        return (0, r.jsx)(o.V, f(u({}, n), {
+          selectionMode: t,
+          onSelectionChange: l.dG,
+          options: h
+        }))
+      },
+      controls: {
+        selectionMode: {
+          label: "Selection Mode",
+          type: "select",
+          options: [{
+            label: "Single",
+            value: "single"
+          }, {
+            label: "Multiple",
+            value: "multiple"
+          }],
+          defaultValue: "single"
+        },
+        required: {
+          label: "Required",
+          type: "boolean",
+          defaultValue: false
+        },
+        disabled: {
+          type: "boolean",
+          label: "Disabled",
+          defaultValue: false
+        },
+        clearable: {
+          type: "boolean",
+          label: "Clearable",
+          defaultValue: false
+        },
+        loading: {
+          type: "boolean",
+          label: "Loading",
+          defaultValue: false
+        },
+        closeOnSelect: {
+          type: "boolean",
+          label: "Close on select",
+          defaultValue: false
+        },
+        shouldFocusWrap: {
+          type: "boolean",
+          label: "Should listbox focus wrap",
+          defaultValue: false
+        },
+        wrapTags: {
+          type: "boolean",
+          label: "Wrap tags",
+          defaultValue: false
+        },
+        maxOptionsVisible: {
+          type: "number",
+          label: "Max options visible",
+          defaultValue: 5
+        },
+        label: {
+          type: "text",
+          label: "Label",
+          defaultValue: "Sort by"
+        },
+        hideLabel: {
+          type: "boolean",
+          label: "Hide Label",
+          defaultValue: false
+        },
+        description: {
+          type: "text",
+          label: "Description",
+          defaultValue: "This is an example description"
+        },
+        helperText: {
+          type: "text",
+          label: "Helper Text",
+          defaultValue: "This is an example of helper text, which can be used to provide additional information about the field."
+        },
+        errorMessage: {
+          type: "text",
+          label: "Error Message",
+          defaultValue: ""
+        },
+        successMessage: {
+          type: "text",
+          label: "Success Message",
+          defaultValue: ""
+        }
+      }
+    }, {
       id: "combobox",
       name: "ComboBox",
       component: function(e) {
@@ -206,28 +304,30 @@ let p = [{
           label: n,
           hideLabel: i,
           description: o,
-          helperText: l,
-          errorMessage: u,
-          successMessage: _
-        } = e, h = f(e, ["selectionMode", "label", "hideLabel", "description", "helperText", "errorMessage", "successMessage"]);
+          helperText: s,
+          errorMessage: c,
+          successMessage: d,
+          wrapTags: p
+        } = e, m = _(e, ["selectionMode", "label", "hideLabel", "description", "helperText", "errorMessage", "successMessage", "wrapTags"]);
         let {
-          required: m,
-          disabled: g
-        } = h;
-        return (0, r.jsxs)(a.uz, d(c({
+          required: g,
+          disabled: E
+        } = m;
+        return (0, r.jsxs)(a.uz, f(u({
           selectionMode: t,
-          onSelectionChange: s.dG,
-          options: p
-        }, h), {
+          onSelectionChange: l.dG,
+          options: h
+        }, m), {
           children: [(0, r.jsx)(a.Ct, {
             label: n,
             hideLabel: i,
-            required: m,
-            disabled: g,
+            required: g,
+            disabled: E,
             description: o,
-            helperText: l,
-            errorMessage: u,
-            successMessage: _
+            helperText: s,
+            errorMessage: c,
+            successMessage: d,
+            wrapTags: p
           }), (0, r.jsx)(a.px, {})]
         }))
       },
@@ -274,6 +374,11 @@ let p = [{
           label: "Should listbox focus wrap",
           defaultValue: false
         },
+        wrapTags: {
+          type: "boolean",
+          label: "Wrap tags",
+          defaultValue: false
+        },
         label: {
           type: "text",
           label: "Label",
@@ -318,8 +423,8 @@ let p = [{
           selectionMode: t,
           required: n,
           shouldFocusWrap: a,
-          items: p,
-          onSelectionChange: s.dG
+          items: h,
+          onSelectionChange: l.dG
         })
       },
       controls: {

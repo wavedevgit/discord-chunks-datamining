@@ -75,11 +75,13 @@ function g(e) {
     label: t,
     layout: n,
     isDisabled: d,
-    icon: _
-  } = e, m = h(e, ["label", "layout", "isDisabled", "icon"]);
-  return (0, r.jsx)(i.Vp, p(f({}, m), {
+    icon: _,
+    accessibilityHint: m
+  } = e, g = h(e, ["label", "layout", "isDisabled", "icon", "accessibilityHint"]);
+  let E = [t, m].filter(Boolean).join(", ");
+  return (0, r.jsx)(i.Vp, p(f({}, g), {
     className: u.tag,
-    textValue: t,
+    textValue: E,
     isDisabled: d,
     children: e => {
       let {

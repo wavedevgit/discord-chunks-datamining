@@ -27,10 +27,9 @@ function d(e) {
     hasValue: m,
     showChevronButton: g = true,
     width: E,
-    leadingAccessory: b,
-    children: y,
-    handleToggle: O,
-    handleClear: v
+    children: b,
+    handleToggle: y,
+    handleClear: O
   } = e;
   return (0, r.jsxs)(s.U, {
     ref: t,
@@ -47,14 +46,17 @@ function d(e) {
     disabled: n,
     readOnly: i,
     fullWidth: c,
-    children: [b, y, (0, r.jsx)(f, {
+    children: [(0, r.jsx)("div", {
+      className: u.selectFieldContent,
+      children: b
+    }), (0, r.jsx)(f, {
       show: true === l && !h && true === m,
       iconSize: g ? "xs" : "sm",
-      onClick: v
+      onClick: O
     }), (0, r.jsx)(_, {
       show: true === g && !o,
       isOpen: d,
-      onClick: O
+      onClick: y
     }), (0, r.jsx)(p, {
       show: true === o
     })]
