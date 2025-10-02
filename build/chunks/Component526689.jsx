@@ -1,7 +1,7 @@
 /** Chunk was on 67261 **/
 /** chunk id: 526689, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  d: () => u
+  d: () => c
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -9,13 +9,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk72214 = require("./72214.js"),
   Chunk135102 = require("./135102.js"),
   Chunk924585 = require("./924585.js");
-let u = () => {
+let c = () => {
   let {
     selectedDestinations: e,
     maxDestinations: t,
     searchText: n,
-    message: u,
-    channel: c,
+    message: c,
+    channel: u,
     updateSelectShareDestinations: d
   } = (0, Chunk135102.C$)(), {
     results: _,
@@ -47,9 +47,8 @@ let u = () => {
     paddingBottom: 16,
     paddingTop: 16,
     rowData: _,
-    rowMode: Chunk757853.G.TOGGLE,
-    message: u,
-    originChannel: c,
+    message: c,
+    originChannel: u,
     handleToggleDestination: b,
     selectedDestinations: module,
     disableSelection: p,

@@ -33,7 +33,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk132358 = require("./132358.js"),
   Chunk621054 = require("./621054.js");
 
-function k(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       a = Object.keys(n);
@@ -69,8 +69,8 @@ function M(e) {
   var {
     message: t,
     initialSelectedDestinations: M,
-    forwardOptions: E,
-    onClose: F,
+    forwardOptions: F,
+    onClose: E,
     onRequestSent: N
   } = e, A = function(e, t) {
     if (null == e) return {};
@@ -90,10 +90,10 @@ function M(e) {
   let {
     channel_id: L,
     id: V
-  } = t, W = l.useMemo(() => (0, g.dL)(L), [L]), [G, U] = l.useState(false), B = (0, s.e7)([b.Z], () => {
+  } = t, W = l.useMemo(() => (0, g.dL)(L), [L]), [U, G] = l.useState(false), B = (0, s.e7)([_.Z], () => {
     var e;
-    return null != (e = b.Z.getMessage(t.channel_id, t.id)) ? e : t
-  }, [t]), K = (0, s.e7)([_.Z], () => _.Z.getChannel(L), [L]), H = (0, y.ZF)(), Q = (0, y.mh)(), Y = l.useRef(0), q = l.useRef(0), [X, z] = l.useState(M), J = X.length, $ = J >= S.G, ee = (0, x.nm)(X), et = (0, s.e7)([p.Z], () => p.Z.getDraft(B.channel_id, p.d.ForwardContextMessage)), [en, ea] = l.useState(() => (0, u.eK)(et)), el = (0, x.y)(X), er = (0, h.Z)(), [ei, es] = l.useState(""), {
+    return null != (e = _.Z.getMessage(t.channel_id, t.id)) ? e : t
+  }, [t]), K = (0, s.e7)([p.Z], () => p.Z.getChannel(L), [L]), H = (0, y.ZF)(), Q = (0, y.mh)(), Y = l.useRef(0), q = l.useRef(0), [X, z] = l.useState(M), J = X.length, $ = J >= S.G, ee = (0, x.nm)(X), et = (0, s.e7)([b.Z], () => b.Z.getDraft(B.channel_id, b.d.ForwardContextMessage)), [en, ea] = l.useState(() => (0, u.eK)(et)), el = (0, x.y)(X), er = (0, h.Z)(), [ei, es] = l.useState(""), {
     results: eo,
     updateSearchText: ec
   } = (0, f.s)({
@@ -112,8 +112,8 @@ function M(e) {
       messageId: V,
       numDestinationChanges: Y.current,
       numQueryChanges: q.current
-    }), await F()
-  }, [L, V, F]), eg = l.useRef(null);
+    }), await E()
+  }, [L, V, E]), eg = l.useRef(null);
   l.useEffect(() => {
     if ("" === ei) {
       var e;
@@ -126,7 +126,7 @@ function M(e) {
       leading: true,
       trailing: false
     }), []),
-    e_ = l.useCallback(e => {
+    ep = l.useCallback(e => {
       H(L, V, "" !== ei), z(t => {
         let n = t.findIndex(t => {
           let {
@@ -140,37 +140,37 @@ function M(e) {
         return a.splice(n, 1), Y.current += 1, a
       })
     }, [L, $, V, ei, eu, H]),
-    ep = l.useCallback(async function(e) {
+    eb = l.useCallback(async function(e) {
       var l;
       let {
         withMessage: r,
         transitionToDestination: i,
         closeAfterSend: s
-      } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, c = null != (l = b.Z.getMessage(L, V)) ? l : t;
+      } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, c = null != (l = _.Z.getMessage(L, V)) ? l : t;
       if (null == c) return void(0, o.showToast)((0, o.createToast)(Z.intl.string(Z.t.R0RpRU), o.ToastType.FAILURE));
-      U(true);
+      G(true);
       let u = (await Promise.all(e.map(g.qx))).filter(w.lm);
       if ((0, P.Z)(c, u) && !await new Promise(e => {
           (0, o.ZDy)(async () => {
             let {
               default: t
             } = await n.e("88643").then(n.bind(n, 466080));
-            return n => (0, a.jsx)(t, D(k({}, n), {
+            return n => (0, a.jsx)(t, D(T({}, n), {
               onConfirm: () => e(true),
               onBack: () => e(false)
             }))
           })
-        })) return void U(false);
+        })) return void G(false);
       s && (0, O.mc)(), null == N || N(), i && (await d.Z.fetchMessages({
         channelId: u[0]
       }), (0, m.Kh)(u[0], {
         openTextInVoiceIfVoiceChannel: true
       }));
-      let h = await v.Z.sendForwards(c, u, D(k({}, E), {
+      let h = await v.Z.sendForwards(c, u, D(T({}, F), {
           withMessage: r
         })),
         f = u.some(e => {
-          let t = _.Z.getChannel(e);
+          let t = p.Z.getChannel(e);
           return null != t && t.rateLimitPerUser > 0
         });
       if (h.every(e => {
@@ -200,32 +200,31 @@ function M(e) {
         numQueryChanges: q.current,
         anyDestinationHasSlowmode: f
       });
-      let p = e.filter((e, t) => "rejected" === h[t].status);
+      let b = e.filter((e, t) => "rejected" === h[t].status);
       (0, O.Np)({
         message: c,
-        failedDestinations: p,
-        forwardOptions: E
+        failedDestinations: b,
+        forwardOptions: F
       })
-    }, [L, E, V, t, N, ef]),
-    eb = l.useCallback(e => {
-      ep(X, {
+    }, [L, F, V, t, N, ef]),
+    e_ = l.useCallback(e => {
+      eb(X, {
         withMessage: e,
         transitionToDestination: 1 === X.length,
         closeAfterSend: true
       })
-    }, [ep, X]),
+    }, [eb, X]),
     ew = l.useCallback(() => {
-      c.Z.clearDraft(B.channel_id, p.d.ForwardContextMessage), eb(en.textValue)
-    }, [B.channel_id, en.textValue, eb]);
+      c.Z.clearDraft(B.channel_id, b.d.ForwardContextMessage), e_(en.textValue)
+    }, [B.channel_id, en.textValue, e_]);
   if (null == B || null == K) return null;
   let ev = eo.length > 0 ? (0, a.jsx)(C.F, {
       paddingBottom: 16,
       paddingTop: 16,
       rowData: eo,
-      rowMode: C.G.TOGGLE,
       message: B,
       originChannel: K,
-      handleToggleDestination: e_,
+      handleToggleDestination: ep,
       selectedDestinations: X,
       disableSelection: $
     }) : (0, a.jsx)(i.fef, {
@@ -233,7 +232,7 @@ function M(e) {
         className: R.noResults,
         children: [(0, a.jsx)("img", {
           className: R.noResultsImg,
-          src: T,
+          src: k,
           alt: ""
         }), (0, a.jsx)(o.Text, {
           variant: "text-md/normal",
@@ -245,7 +244,7 @@ function M(e) {
     ex = J <= 1 ? Z.intl.string(Z.t.TXNS7e) : Z.intl.formatToPlainString(Z.t.jWtYUl, {
       count: J
     });
-  return (0, a.jsx)(i.Modal, D(k({}, A), {
+  return (0, a.jsx)(i.Modal, D(T({}, A), {
     onClose: em,
     title: Z.intl.string(Z.t["+SkRRk"]),
     subtitle: $ ? Z.intl.formatToPlainString(Z.t["3Fbkio"], {
@@ -263,7 +262,7 @@ function M(e) {
     preview: (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsx)(I.O, {
         message: B,
-        forwardOptions: E,
+        forwardOptions: F,
         channel: ee
       }), el.length > 0 && en.textValue.length > 0 && (0, a.jsx)(o.Text, {
         className: R.slowmodeWarning,
@@ -279,8 +278,8 @@ function M(e) {
       message: B,
       canSend: J > 0,
       selectedDestinations: X,
-      isSending: G,
-      onSend: eb,
+      isSending: U,
+      onSend: e_,
       inputValue: en,
       setInputValue: ea
     }),
@@ -289,7 +288,7 @@ function M(e) {
       text: ex,
       onClick: ew,
       disabled: J <= 0 || en.textValue.length > er,
-      loading: G,
+      loading: U,
       icon: o.Uuj,
       iconPosition: "end"
     }],

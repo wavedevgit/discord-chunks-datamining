@@ -1,10 +1,10 @@
 /** Chunk was on 47051 **/
 /** chunk id: 784384, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  HY: () => x,
-  nm: () => E,
-  pU: () => v,
-  y: () => O
+  HY: () => v,
+  nm: () => S,
+  pU: () => Z,
+  y: () => j
 }), require("./388685.js"), require("./361932.js"), require("./187205.js");
 var Chunk647438 = require("./647438.js"),
   Chunk106351 = require("./106351.js"),
@@ -24,7 +24,7 @@ var Chunk647438 = require("./647438.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function E(e) {
+function S(e) {
   let t = e.map(u.hl).find(p.lm),
     n = (0, i.e7)([f.Z], () => f.Z.getChannel(t), [t]);
   return l.useMemo(() => null != n ? n : (0, d.kt)({
@@ -33,47 +33,47 @@ function E(e) {
   }), [n])
 }
 
-function x(e, t, n) {
+function v(e, t, n) {
   let l = n instanceof d.Sf;
   if ((0, s.Y3)(t) && !(l && (0, s.Y3)(n))) return {
-    label: S.intl.string(S.t.KgPx1N)
+    label: E.intl.string(E.t.KgPx1N)
   };
   if (l && (0, d.Km)(n.type)) {
     if ((e.attachments.length > 0 || e.messageSnapshots.some(e => e.message.attachments.length > 0)) && !h.Z.can(y.Plq.ATTACH_FILES, n)) return {
-      label: S.intl.string(S.t.P7yvbm)
+      label: E.intl.string(E.t.P7yvbm)
     };
     if ((e.embeds.length > 0 || e.messageSnapshots.some(e => e.message.embeds.length > 0)) && !(0, b.eC)(n, h.Z) && !(0, b.En)(e)) return {
-      label: S.intl.string(S.t.Wr4RIS)
+      label: E.intl.string(E.t.Wr4RIS)
     };
-    let t = [...(0, c.cv)(e), ...e.messageSnapshots.flatMap(e => {
+    let t = [...(0, o.cv)(e), ...e.messageSnapshots.flatMap(e => {
       let {
         message: t
       } = e;
-      return (0, c.cv)(t)
+      return (0, o.cv)(t)
     })];
     if (t.length > 0 && !h.Z.can(y.Plq.USE_EXTERNAL_STICKERS, n) && t.some(e => (function(e, t) {
-        let n = o.Z.getStickerById(e.id);
-        return null != n && !!(0, c.J8)(n) && (n.guild_id !== t.guild_id || true)
+        let n = c.Z.getStickerById(e.id);
+        return null != n && !!(0, o.J8)(n) && (n.guild_id !== t.guild_id || true)
       })(e, n))) return {
-      label: S.intl.string(S.t["0Yyrub"])
+      label: E.intl.string(E.t["0Yyrub"])
     };
     if ((e.hasFlag(y.iLy.IS_VOICE_MESSAGE) || e.messageSnapshots.some(e => e.message.hasFlag(y.iLy.IS_VOICE_MESSAGE))) && !h.Z.can(y.Plq.SEND_VOICE_MESSAGES, n)) return {
-      label: S.intl.string(S.t.quj4DQ)
+      label: E.intl.string(E.t.quj4DQ)
     }
   }
 }
 
-function v(e, t) {
+function Z(e, t) {
   return !!(null != e.rateLimitPerUser && e.rateLimitPerUser > 0) && !(t.can(y.Plq.MANAGE_CHANNELS, e) || t.can(y.Plq.MANAGE_MESSAGES, e))
 }
 
-function O(e) {
+function j(e) {
   let t = (0, i.Wu)([f.Z, h.Z], () => e.map(e => {
     let {
       type: t,
       id: n
     } = e;
     return "channel" === t ? f.Z.getChannel(n) : null
-  }).filter(p.lm).filter(e => v(e, h.Z)), [e]);
+  }).filter(p.lm).filter(e => Z(e, h.Z)), [e]);
   return (0, i.Wu)([g.default, m.Z], () => t.map(e => (0, a.F6)(e, g.default, m.Z, true)), [t])
 }

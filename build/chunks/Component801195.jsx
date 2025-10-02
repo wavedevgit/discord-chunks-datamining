@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-/** chunk id: 885149, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 801195, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
   c: () => u
@@ -42,7 +42,7 @@ function u(e) {
   }), (0, i.ZDy)(async () => {
     let {
       default: e
-    } = await n.e("97951").then(n.bind(n, 537509));
+    } = await n.e("57918").then(n.bind(n, 200220));
     return n => (0, r.jsx)(e, c({
       onConfirm: t
     }, n))

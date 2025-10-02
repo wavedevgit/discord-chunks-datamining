@@ -14,13 +14,13 @@ var Chunk991637 = require("./991637.js"),
 let d = async (e, t, n) => {
   let a = i.Z.getChannel(n);
   if (null == a) throw Error("Unable to find destination channel for message");
-  let l = o.ZP.parse(a, t);
+  let l = r.ZP.parse(a, t);
   return s.Z.sendMessage(a.id, l, false, {
-    location: c.dy.SHARE_CUSTOM_THEME,
+    location: u.dy.SHARE_CUSTOM_THEME,
     eagerDispatch: false,
     sharedCustomTheme: e
   })
 }, _ = async (e, t, n) => {
-  let a = (await Promise.all(e.map(r.qx))).filter(u.lm);
+  let a = (await Promise.all(e.map(o.qx))).filter(c.lm);
   return l()(a.map(async e => d(t, n, e)))
 }

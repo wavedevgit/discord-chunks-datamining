@@ -28,20 +28,20 @@ let C = e => {
     messageText: x,
     canSend: M,
     setSend: S,
-    updateMessage: w,
-    updateChannel: E
-  } = (0, s.o)(C), [I, O] = l.useState(false), {
-    colors: j,
-    chassisMixAmount: k,
+    updateMessage: I,
+    updateChannel: w
+  } = (0, s.o)(C), [E, j] = l.useState(false), {
+    colors: k,
+    chassisMixAmount: O,
     gradientAngle: v
-  } = (0, f.Ig)(), P = (0, r.e7)([c.Z], () => c.Z.theme), T = (0, l.useMemo)(() => ({
-    colors: j.map(e => e.replace("#", "")),
+  } = (0, f.Ig)(), P = (0, o.e7)([u.Z], () => u.Z.theme), D = (0, l.useMemo)(() => ({
+    colors: k.map(e => e.replace("#", "")),
     gradient_angle: v,
-    base_mix: k,
+    base_mix: O,
     base_theme: (0, b.h)(P)
-  }), [j, v, k, P]), D = l.useMemo(() => (0, d.kt)({
+  }), [k, v, O, P]), T = l.useMemo(() => (0, d.kt)({
     id: "1",
-    type: o.d.DM
+    type: r.d.DM
   }), []), R = l.useMemo(() => (0, i.e5)(function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -59,22 +59,22 @@ let C = e => {
       })
     }
     return e
-  }({}, (0, u.ZP)({
-    channelId: D.id,
+  }({}, (0, c.ZP)({
+    channelId: T.id,
     content: ""
-  }))), [D]);
+  }))), [T]);
   (0, l.useEffect)(() => {
-    w(R), E(D), O(true)
-  }, [R, D, w, E]);
+    I(R), w(T), j(true)
+  }, [R, T, I, w]);
   let Z = l.useCallback(async () => {
     if (!M()) return Promise.reject();
-    await (0, g.O)(y, T, x), _.default.track(m.rMx.CUSTOM_THEME_SHARED, {
+    await (0, g.O)(y, D, x), _.default.track(m.rMx.CUSTOM_THEME_SHARED, {
       num_destinations: y.length
     }), await n()
-  }, [T, y, x, M, n]);
+  }, [D, y, x, M, n]);
   return ((0, l.useEffect)(() => {
     S(Z)
-  }, [Z, S]), I) ? (0, a.jsx)(p.fm.Provider, {
+  }, [Z, S]), E) ? (0, a.jsx)(p.fm.Provider, {
     value: C,
     children: (0, a.jsx)(h._, {
       transitionState: t,

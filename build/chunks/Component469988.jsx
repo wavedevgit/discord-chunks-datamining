@@ -1,42 +1,41 @@
 /** Chunk was on 1272 **/
 /** chunk id: 469988, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => o
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk755721 = require("./755721.js"),
-  Chunk481060 = require("./481060.js"),
+var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk231690 = require("./231690.js");
-let s = e => {
+let o = e => {
   let {
     hasHub: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: o.container,
+    className: a.container,
     children: [(0, r.jsx)("div", {
-      className: o.iconContainer,
-      children: (0, r.jsx)(l.aVH, {
+      className: a.iconContainer,
+      children: (0, r.jsx)(i.aVH, {
         size: "md",
-        color: l.TVs.colors.WHITE.css
+        color: i.TVs.colors.WHITE.css
       })
-    }), (0, r.jsx)(l.Text, {
+    }), (0, r.jsx)(i.Text, {
       color: "header-primary",
       variant: "text-lg/semibold",
-      className: o.header,
-      children: t ? a.intl.string(a.t.hsSHh4) : a.intl.string(a.t.Wf6iio)
-    }), (0, r.jsx)(l.Text, {
+      className: a.header,
+      children: t ? l.intl.string(l.t.hsSHh4) : l.intl.string(l.t.Wf6iio)
+    }), (0, r.jsx)(i.Text, {
       color: "header-secondary",
       variant: "text-sm/normal",
-      className: o.__invalid_description,
-      children: t ? a.intl.string(a.t.FZ2J3d) : a.intl.string(a.t.TvHcv7)
+      className: a.__invalid_description,
+      children: t ? l.intl.string(l.t.FZ2J3d) : l.intl.string(l.t.TvHcv7)
     }), (0, r.jsx)("div", {
-      className: o.gap
-    }), (0, r.jsx)(i.zx, {
-      size: i.zx.Sizes.LARGE,
-      color: t ? i.zx.Colors.PRIMARY : i.zx.Colors.GREEN,
-      onClick: () => (0, l.ZDy)(async () => {
+      className: a.gap
+    }), (0, r.jsx)(i.zxk, {
+      fullWidth: true,
+      variant: t ? "secondary" : "active",
+      onClick: () => (0, i.ZDy)(async () => {
         let {
           default: e
         } = await Promise.resolve().then(n.bind(n, 650233));
@@ -59,12 +58,7 @@ let s = e => {
           return e
         }({}, t))
       }),
-      children: (0, r.jsx)(l.Text, {
-        variant: "text-sm/semibold",
-        className: o.addButton,
-        color: "none",
-        children: t ? a.intl.string(a.t.IyjHDw) : a.intl.string(a.t["KU/aNz"])
-      })
+      text: t ? l.intl.string(l.t.IyjHDw) : l.intl.string(l.t["KU/aNz"])
     })]
   })
 }

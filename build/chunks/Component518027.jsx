@@ -30,7 +30,7 @@ let b = () => {
       h({
         textValue: n,
         richValue: a
-      }), o.Z.saveDraft(e.channel_id, n, c.d.ChannelMessage)
+      }), r.Z.saveDraft(e.channel_id, n, u.d.ChannelMessage)
     }, [module]),
     [y, x] = Chunk647438.useState(false),
     M = Chunk647438.useCallback(() => x(true), []),
@@ -38,7 +38,7 @@ let b = () => {
   (0, Chunk647438.useEffect)(() => () => {
     Chunk430742.Z.clearDraft(module.channel_id, Chunk703558.d.ChannelMessage)
   }, [module]);
-  let w = async () => ({
+  let I = async () => ({
     shouldClear: true,
     shouldRefocus: false
   });
@@ -53,7 +53,7 @@ let b = () => {
     onBlur: S,
     onFocus: M,
     focused: y,
-    onSubmit: w,
+    onSubmit: I,
     parentModalKey: Chunk135102.tj,
     autoCompletePosition: "bottom",
     emojiPickerCloseOnModalOuterClick: true,

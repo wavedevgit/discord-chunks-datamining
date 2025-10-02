@@ -1,7 +1,7 @@
 /** Chunk was on 95468 **/
 /** chunk id: 247007, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => y
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -27,7 +27,7 @@ function N(e) {
     guildInfo: i,
     onClick: a,
     submitting: s
-  } = e, o = null != (t = f.ZP.getGuildIconURL({
+  } = e, o = null != (t = h.ZP.getGuildIconURL({
     id: i.id,
     icon: i.icon,
     size: 40
@@ -39,7 +39,7 @@ function N(e) {
       mask: m.ZP.Masks.AVATAR_DEFAULT,
       width: 40,
       height: 40,
-      children: (0, r.jsx)(h.Z, {
+      children: (0, r.jsx)(f.Z, {
         className: _.guildIcon,
         iconSrc: o,
         guild: (0, g.yS)((n = function(e) {
@@ -71,7 +71,7 @@ function N(e) {
         })(Object(l)).forEach(function(e) {
           Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(l, e))
         }), n)),
-        size: h.Z.Sizes.MEDIUM
+        size: f.Z.Sizes.MEDIUM
       })
     }), (0, r.jsx)(c.Text, {
       className: _.guildName,
@@ -82,32 +82,32 @@ function N(e) {
     }) : (0, r.jsx)("img", {
       className: _.__invalid_arrow,
       alt: "",
-      src: v
+      src: x
     })]
   })
 }
-let E = e => {
+let y = e => {
   let {
     setStep: t,
     email: n,
     guildsInfo: i,
     setGuildId: s,
     forceGuildScrollHeight: m
-  } = e, [h, f] = l.useState(null), [g, v] = l.useState(true), [E, S] = l.useState(null), y = () => t(p.tF.SUBMIT_SCHOOL), j = i;
+  } = e, [f, h] = l.useState(null), [g, x] = l.useState(true), [y, E] = l.useState(null), S = () => t(p.tF.SUBMIT_SCHOOL), j = i;
   return null != g && "" !== g && (j = i.filter(e => o()(g.toLowerCase(), e.name.toLowerCase()))), (0, r.jsxs)("div", {
     className: _.container,
     children: [(0, r.jsx)(c.X6q, {
       className: a()(_.centerText, _.header),
       variant: "heading-xl/semibold",
-      children: x.intl.string(x.t.mOMeiY)
+      children: v.intl.string(v.t.mOMeiY)
     }), (0, r.jsx)("div", {
       className: _.description,
       children: (0, r.jsx)(c.Text, {
         className: _.centerText,
         variant: "text-sm/normal",
         color: "header-secondary",
-        children: x.intl.format(x.t.dZeiTE, {
-          onJoinWaitlist: y
+        children: v.intl.format(v.t.dZeiTE, {
+          onJoinWaitlist: S
         })
       })
     }), (0, r.jsxs)("div", {
@@ -117,19 +117,19 @@ let E = e => {
       children: [(0, r.jsxs)("div", {
         className: _.searchContainer,
         children: [(0, r.jsx)(c.E1j, {
-          placeholder: x.intl.string(x.t["5h0QOD"]),
+          placeholder: v.intl.string(v.t["5h0QOD"]),
           onChange: e => {
-            v(e)
+            x(e)
           },
-          "aria-label": x.intl.string(x.t["5h0QOD"]),
+          "aria-label": v.intl.string(v.t["5h0QOD"]),
           query: null != g ? g : "",
           onClear: () => {
-            v(true)
+            x(true)
           }
         }), (0, r.jsx)(c.Text, {
           color: "text-danger",
           variant: "text-xs/normal",
-          children: null == h ? true : h.getAnyErrorMessage()
+          children: null == f ? true : f.getAnyErrorMessage()
         })]
       }), j.length > 0 ? (0, r.jsx)(c.zJl, {
         className: _.scroller,
@@ -138,16 +138,16 @@ let E = e => {
           return true === e ? null : (0, r.jsx)(N, {
             guildInfo: e,
             onClick: (l = e.id, async () => {
-              f(null), s(l), S(l);
+              h(null), s(l), E(l);
               try {
                 await d.Z.sendVerificationEmail(n, true, l), t(p.tF.VERIFY_PIN)
               } catch (e) {
-                f(new u.Hx(e))
+                h(new u.Hx(e))
               } finally {
-                S(null)
+                E(null)
               }
             }),
-            submitting: E === e.id
+            submitting: y === e.id
           }, e.id)
         })
       }) : (0, r.jsx)("div", {
@@ -159,12 +159,12 @@ let E = e => {
           }), (0, r.jsx)(c.X6q, {
             className: a()(_.centerText, _.header),
             variant: "heading-xl/semibold",
-            children: x.intl.string(x.t["1eUrDQ"])
+            children: v.intl.string(v.t["1eUrDQ"])
           }), (0, r.jsx)(c.Text, {
             className: _.centerText,
             variant: "text-md/normal",
-            children: x.intl.format(x.t.flgDKC, {
-              onJoinWaitlist: y
+            children: v.intl.format(v.t.flgDKC, {
+              onJoinWaitlist: S
             })
           })]
         })

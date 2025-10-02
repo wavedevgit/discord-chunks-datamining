@@ -21,20 +21,20 @@ function f(e) {
     message: t,
     canSend: n,
     selectedDestinations: f,
-    onSend: _,
-    inputValue: p,
-    setInputValue: b
+    onSend: p,
+    inputValue: b,
+    setInputValue: _
   } = e, w = (0, o.Z)(), v = (0, u.nm)(f), x = (0, d.Ad)(), {
     textValue: y,
     richValue: P
-  } = p, [C, j] = l.useState(false), O = l.useCallback(() => j(true), []), I = l.useCallback(() => j(false), []), S = l.useCallback((e, n, a) => {
-    b({
+  } = b, [C, j] = l.useState(false), O = l.useCallback(() => j(true), []), I = l.useCallback(() => j(false), []), S = l.useCallback((e, n, a) => {
+    _({
       textValue: n,
       richValue: a
     }), r.Z.saveDraft(t.channel_id, n, c.d.ForwardContextMessage), x(t.channel_id, t.id)
-  }, [x, t, b]), Z = l.useCallback(() => {
-    r.Z.clearDraft(t.channel_id, c.d.ForwardContextMessage), _(y)
-  }, [t.channel_id, _, y]), R = l.useCallback(() => (!n || y.length > w || Z(), Promise.resolve({
+  }, [x, t, _]), Z = l.useCallback(() => {
+    r.Z.clearDraft(t.channel_id, c.d.ForwardContextMessage), p(y)
+  }, [t.channel_id, p, y]), R = l.useCallback(() => (!n || y.length > w || Z(), Promise.resolve({
     shouldClear: false,
     shouldRefocus: true
   })), [Z, y, w, n]);

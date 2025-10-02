@@ -30,7 +30,7 @@ function w(e) {
     embeds: x,
     hasContent: y,
     contentMessage: P
-  } = (0, _.c)({
+  } = (0, p.c)({
     message: t,
     channel: r,
     forwardOptions: n
@@ -46,40 +46,40 @@ function w(e) {
     contentMessage: P
   }).content : null, [P, y, t, C]), O = v.length, I = null, S = null, Z = null;
   if (O > 0 || x.length > 0) {
-    var R, T, k, D;
+    var R, k, T, D;
     let e = (0, s.countBy)(v, e => (0, h.aw)(e, true)),
-      t = null != (k = e.IMAGE) ? k : 0,
+      t = null != (T = e.IMAGE) ? T : 0,
       n = null != (D = e.VIDEO) ? D : 0;
-    t > 0 && n > 0 ? (I = p.intl.formatToPlainString(p.t.Lr0Toq, {
+    t > 0 && n > 0 ? (I = b.intl.formatToPlainString(b.t.Lr0Toq, {
       image_count: t,
       video_count: n
-    }), S = o.Ka2) : n > 0 ? (I = p.intl.formatToPlainString(p.t.SJ6pPT, {
+    }), S = o.Ka2) : n > 0 ? (I = b.intl.formatToPlainString(b.t.SJ6pPT, {
       count: n
-    }), S = o.g8d) : t > 0 ? (I = p.intl.formatToPlainString(p.t.h4pFfX, {
+    }), S = o.g8d) : t > 0 ? (I = b.intl.formatToPlainString(b.t.h4pFfX, {
       count: t
-    }), S = 1 === t ? o.XBm : o.Ka2) : (I = p.intl.formatToPlainString(p.t["89ihS0"], {
+    }), S = 1 === t ? o.XBm : o.Ka2) : (I = b.intl.formatToPlainString(b.t["89ihS0"], {
       count: O
     }), S = o.Ujz), n > 0 && O === n ? Z = (0, a.jsxs)("div", {
-      className: i()(b.attachmentPreview, b.attachmentPreviewVideo),
+      className: i()(_.attachmentPreview, _.attachmentPreviewVideo),
       children: [(0, a.jsx)(d.ZP, {
-        className: b.thumbnail,
+        className: _.thumbnail,
         src: v[0].proxy_url,
         width: 56,
         height: 56
       }), (0, a.jsx)(o.g8d, {
-        className: b.playIcon,
+        className: _.playIcon,
         size: "md",
         color: "white"
       })]
     }) : O > 0 ? Z = (0, a.jsx)("div", {
-      className: b.attachmentPreview,
+      className: _.attachmentPreview,
       children: (0, a.jsx)(d.ZP, {
         src: v[0].proxy_url,
         width: 56,
         height: 56
       })
-    }) : (null == (T = x[0]) || null == (R = T.thumbnail) ? true : R.proxyURL) != null && (Z = (0, a.jsx)("div", {
-      className: b.attachmentPreview,
+    }) : (null == (k = x[0]) || null == (R = k.thumbnail) ? true : R.proxyURL) != null && (Z = (0, a.jsx)("div", {
+      className: _.attachmentPreview,
       children: (0, a.jsx)(d.ZP, {
         src: x[0].thumbnail.proxyURL,
         width: 56,
@@ -88,29 +88,29 @@ function w(e) {
     }))
   }
   return O > 1 && null != Z && (Z = (0, a.jsxs)("div", {
-    className: b.attachmentPreviewOverflow,
+    className: _.attachmentPreviewOverflow,
     children: [(0, a.jsx)(c.ZP, {
       mask: c.ZP.Masks.FORWARD_ATTACHMENT_PILE_OVERFLOW,
       width: 56,
       height: 56,
       children: Z
     }), (0, a.jsxs)(o.Text, {
-      className: b.overflowCount,
+      className: _.overflowCount,
       variant: "text-xs/semibold",
       color: "text-default",
       children: ["+", O - 1]
     })]
   })), (0, a.jsxs)("div", {
-    className: b.forwardPreview,
+    className: _.forwardPreview,
     children: [(0, a.jsxs)("div", {
-      className: b.contentWrapper,
+      className: _.contentWrapper,
       children: [y && (0, a.jsx)(g.ZP, {
-        className: i()(b.forwardPreviewMessage, O > 0 && b.hasAttachments),
+        className: i()(_.forwardPreviewMessage, O > 0 && _.hasAttachments),
         message: t,
         content: j,
         compact: w
       }), O > 0 && (0, a.jsxs)("div", {
-        className: b.attachmentRow,
+        className: _.attachmentRow,
         children: [null != S && (0, a.jsx)(S, {
           size: "custom",
           width: y ? 18 : 20,
