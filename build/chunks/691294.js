@@ -24,11 +24,11 @@ function l(e) {
 
 function c(e) {
   let t = new Image;
-  return t.src = e, t.crossOrigin = "anonymous", new Promise((e, n) => {
+  return t.src = e, t.crossOrigin = "anonymous", new Promise(e => {
     t.onload = () => {
       "" !== t.src && e(l(t))
-    }, t.onerror = e => {
-      r.Z.captureMessage("Failed to load notification avatar to circle crop: ".concat(e)), n(t.src)
+    }, t.onerror = n => {
+      r.Z.captureMessage("Failed to load notification avatar to circle crop: ".concat(n)), e(t.src)
     }
   })
 }
