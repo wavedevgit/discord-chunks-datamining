@@ -73,7 +73,7 @@ class D extends Chunk647438.PureComponent {
   renderChannelLink(e) {
     let {
       guild: t
-    } = this.props, n = (0, p.F6)(e, E.default, _.Z), r = null != t ? "".concat(n, " / ").concat(t.name) : n, s = null != t ? t.id : C.ME;
+    } = this.props, n = (0, h.F6)(e, E.default, v.Z), r = null != t ? "".concat(n, " / ").concat(t.name) : n, s = null != t ? t.id : C.ME;
     return (0, i.jsx)(l.rU, {
       to: C.Z5c.CHANNEL(s),
       onClick: t => {
@@ -96,8 +96,8 @@ class D extends Chunk647438.PureComponent {
       lastPing: a,
       hasVideo: d,
       connectionState: u,
-      deaf: h,
-      mute: p
+      deaf: p,
+      mute: h
     } = this.props;
     return null == Chunk120356 ? null : (0, Chunk951288.jsx)(Chunk518084.ZP.Bar, {
       className: o()(module, Chunk361979.controls, {
@@ -114,7 +114,7 @@ class D extends Chunk647438.PureComponent {
             position: "top",
             children: e => (0, i.jsx)(c.P3F, T(N({}, e), {
               innerRef: this.rtcConnectionStatusRef,
-              children: (0, i.jsx)(O.Z, {
+              children: (0, i.jsx)(_.Z, {
                 channelId: s.id,
                 quality: l,
                 lastPing: a,
@@ -195,10 +195,10 @@ function k(e) {
     }
     return r
   }(e, ["context", "lobbyId", "channel"]);
-  let o = (0, a.e7)([b.Z], () => b.Z.getGuild(null == r ? true : r.getGuildId())),
+  let o = (0, a.e7)([O.Z], () => O.Z.getGuild(null == r ? true : r.getGuildId())),
     l = (0, a.e7)([x.Z], () => null != r && x.Z.hasVideo(r.id)),
-    [c, d] = (0, a.Wu)([v.Z], () => [v.Z.isSelfMute(t) || v.Z.isSelfMutedTemporarily(t), v.Z.isSelfDeaf(t)]),
-    [u, h, p] = (0, a.Wu)([S.Z], () => [S.Z.getConnectionState(n), S.Z.getLastPing(n), S.Z.getQuality(n)]);
+    [c, d] = (0, a.Wu)([b.Z], () => [b.Z.isSelfMute(t) || b.Z.isSelfMutedTemporarily(t), b.Z.isSelfDeaf(t)]),
+    [u, p, h] = (0, a.Wu)([S.Z], () => [S.Z.getConnectionState(n), S.Z.getLastPing(n), S.Z.getQuality(n)]);
   return (0, i.jsx)(D, T(N({}, s), {
     context: t,
     lobbyId: n,
@@ -208,7 +208,7 @@ function k(e) {
     mute: c,
     deaf: d,
     connectionState: u,
-    lastPing: h,
-    quality: p
+    lastPing: p,
+    quality: h
   }))
 }

@@ -47,29 +47,30 @@ function p(e) {
   } = i.useContext(o.Sfi), {
     pendingAvatar: g,
     pendingBanner: E,
-    pendingThemeColors: b,
-    pendingPronouns: y,
-    pendingBio: O,
-    tryItOutThemeColors: v,
-    tryItOutAvatar: I,
-    tryItOutBanner: T,
-    tryItOutAvatarDecoration: S,
-    tryItOutProfileEffect: A
-  } = (0, a.cj)([c.Z], () => _({}, c.Z.getAllPending(), c.Z.getAllTryItOut())), C = (0, l.SD)({
+    pendingDisplayNameStyles: b,
+    pendingThemeColors: y,
+    pendingPronouns: O,
+    pendingBio: v,
+    tryItOutThemeColors: I,
+    tryItOutAvatar: T,
+    tryItOutBanner: S,
+    tryItOutAvatarDecoration: A,
+    tryItOutDisplayNameStyles: C
+  } = (0, a.cj)([c.Z], () => _({}, c.Z.getAllPending(), c.Z.getAllTryItOut())), N = (0, l.SD)({
     userId: f.id,
-    image: null != I ? I : g
-  }), N = (0, s.Z)(S, false);
+    image: null != T ? T : g
+  }), R = (0, s.Z)(A, false);
   return (0, r.jsx)(u.Z, {
     containerClassName: h,
     user: f,
-    pendingPronouns: y,
-    pendingBio: O,
-    pendingBanner: null != (t = null != T ? T : E) ? t : n(466045),
-    pendingAvatar: C,
-    pendingThemeColors: null != v ? v : b,
-    pendingAvatarDecoration: N,
-    pendingProfileEffect: A,
-    avatarClassName: null != I || null != g || m.enabled ? true : d.spinningAvatar,
+    pendingPronouns: O,
+    pendingBio: v,
+    pendingBanner: null != (t = null != S ? S : E) ? t : n(466045),
+    pendingDisplayNameStyles: null != C ? C : b,
+    pendingAvatar: N,
+    pendingThemeColors: null != I ? I : y,
+    pendingAvatarDecoration: R,
+    avatarClassName: null != T || null != g || m.enabled ? true : d.spinningAvatar,
     canUsePremiumCustomization: true,
     isTryItOutFlow: true,
     disabledInputs: p,

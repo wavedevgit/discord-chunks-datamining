@@ -64,7 +64,7 @@ function C(e) {
         let l = u.Z.getStreamParticipants(e).filter(e => {
           if (e.user.id === t) returnfalse;
           let i = h.Z.getActiveStreamForUser(e.user.id, e.stream.guildId);
-          return !(null != i && v.q.has(i.state)) && (!!n || r(e))
+          return !(null != i && E.q.has(i.state)) && (!!n || r(e))
         });
         return l.sort((e, t) => {
           if (i) {
@@ -82,8 +82,8 @@ function C(e) {
     }
   }(U, (0, l.e7)([p.default], () => p.default.getId()), z, R && V || k && D, !R && V || !k && D), B = G.length, Y = (0, l.e7)([d.Z], () => d.Z.getWindowState(x.$J), []), {
     tileWidth: Q,
-    tileHeight: X,
-    widgetWidth: K,
+    tileHeight: K,
+    widgetWidth: X,
     widgetHeight: J,
     containerRef: q,
     containerMinMaxSizes: $
@@ -102,14 +102,14 @@ function C(e) {
     borderWidth: _,
     widgetMinMaxSizes: $,
     containerSize: {
-      width: K,
+      width: X,
       height: J
     },
     orientedPosition: {
       top: 0,
       left: 0,
       bottom: null != (t = null == Y ? true : Y.height) ? t : J,
-      right: null != (n = null == Y ? true : Y.width) ? n : K
+      right: null != (n = null == Y ? true : Y.width) ? n : X
     },
     locked: w
   };
@@ -134,10 +134,10 @@ function C(e) {
       opacity: P
     },
     ref: q,
-    children: (0, i.jsx)(E.Z, {
+    children: (0, i.jsx)(v.Z, {
       widgetId: C,
       tileWidth: Q,
-      tileHeight: X,
+      tileHeight: K,
       locked: w,
       layout: M,
       activeStreams: F,

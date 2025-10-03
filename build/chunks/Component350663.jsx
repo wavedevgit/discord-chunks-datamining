@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk339882 = require("./339882.js");
 
-function E(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -39,7 +39,7 @@ function E(e) {
   return e
 }
 
-function v(e, t) {
+function E(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -80,10 +80,10 @@ let S = {
     })), T = (0, u.Z)(n), _ = (0, u.Z)(x), P = b === g.C5.VERTICAL, D = x || _ !== x || T !== n, A = r.useMemo(() => {
       let e = 0,
         t = 0;
-      return P ? w.map((t, n) => v(E({}, t), {
+      return P ? w.map((t, n) => E(v({}, t), {
         y: (e += t.height + (n > 0 ? N : 0)) - t.height,
         x: 0
-      })) : w.map((e, n) => v(E({}, e), {
+      })) : w.map((e, n) => E(v({}, e), {
         x: (t += e.width + (n > 0 ? N : 0)) - e.width,
         y: 0
       }))

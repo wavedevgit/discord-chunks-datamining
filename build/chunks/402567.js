@@ -24,16 +24,18 @@ function _() {
     {
       banner: d,
       themeColors: _,
-      avatarDecorationSkuId: p
+      avatarDecorationSkuId: p,
+      displayNameStyles: h
     } = (0, Chunk647438.useMemo)(() => {
       let n = (0, Chunk211712.Ib)(exports);
       return {
         banner: require.getBannerSrc(module),
         themeColors: require.themeColors,
-        avatarDecorationSkuId: require.avatarDecorationSkuId
+        avatarDecorationSkuId: require.avatarDecorationSkuId,
+        displayNameStyles: require.displayNameStyles
       }
     }, [exports, module]),
-    h = (0, Chunk442837.e7)([Chunk597688.Z], () => {
+    m = (0, Chunk442837.e7)([Chunk597688.Z], () => {
       if (null == p) return;
       let e = Chunk597688.Z.getProduct(p);
       if (null != module && 0 !== module.items.length) return module.items[0]
@@ -42,10 +44,11 @@ function _() {
     (0, Chunk350327.x3)({
       banner: d,
       themeColors: _,
-      avatarDecoration: h
+      avatarDecoration: m,
+      displayNameStyles: h
     })
-  }, [d, _, h]);
-  let m = (0, Chunk647438.useCallback)(() => {
+  }, [d, _, m, h]);
+  let g = (0, Chunk647438.useCallback)(() => {
     let e = f(exports);
     require(module), Chunk626135.default.track(Chunk981631.rMx.TRY_IT_OUT_PRESET_SHUFFLED, {
       preset: module
@@ -53,6 +56,6 @@ function _() {
   }, [exports]);
   return {
     preset: exports,
-    onShuffle: m
+    onShuffle: g
   }
 }

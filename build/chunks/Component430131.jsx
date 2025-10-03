@@ -2,55 +2,57 @@
 /** chunk id: 430131, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => m
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk594928 = require("./594928.js"),
+  Chunk612659 = require("./612659.js"),
   Chunk993413 = require("./993413.jsx"),
   Chunk235433 = require("./235433.jsx"),
   Chunk496675 = require("./496675.js"),
   Chunk52597 = require("./52597.js"),
   Chunk981631 = require("./981631.js"),
+  Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk473385 = require("./473385.js");
 
-function p(e) {
+function m(e) {
   let {
     errors: t,
     pendingNick: n,
-    currentNick: p,
-    username: h,
-    user: m,
-    guild: g
-  } = e, E = null != n ? n : p, b = (0, i.e7)([c.Z], () => c.Z.can(d.Plq.CHANGE_NICKNAME, g) || c.Z.can(d.Plq.MANAGE_NICKNAMES, g)), {
-    enabled: y
+    currentNick: m,
+    username: g,
+    user: E,
+    guild: b
+  } = e, y = null != n ? n : m, O = (0, i.e7)([u.Z], () => u.Z.can(f.Plq.CHANGE_NICKNAME, b) || u.Z.can(f.Plq.MANAGE_NICKNAMES, b)), v = (0, s.m)(_.p9.TIER_2), {
+    enabled: I
   } = o.wL.useConfig({
     location: "NicknameSection"
   });
 
-  function O(e) {
-    (0, u.wi)(e, p)
+  function T(e) {
+    (0, d.wi)(e, m)
   }
-  return (0, r.jsxs)(s.Z, {
-    title: f.intl.string(f.t.me1lRk),
+  return (0, r.jsxs)(l.Z, {
+    title: p.intl.string(p.t.me1lRk),
     errors: t,
     children: [(0, r.jsx)(a.oil, {
-      value: null != E ? E : "",
-      placeholder: h,
-      maxLength: d.l$U,
-      onChange: O,
-      disabled: !b
-    }), !b && (0, r.jsx)(a.R94, {
-      className: _.nicknameDisabled,
+      value: null != y ? y : "",
+      placeholder: g,
+      maxLength: f.l$U,
+      onChange: T,
+      disabled: !O
+    }), !O && (0, r.jsx)(a.R94, {
+      className: h.nicknameDisabled,
       type: a.R94.Types.DESCRIPTION,
-      children: f.intl.string(f.t.gzjxQk)
-    }), y && (0, r.jsx)(l.Z, {
-      user: m,
-      guildId: g.id,
-      className: _.displayNameStylesSection
+      children: p.intl.string(p.t.gzjxQk)
+    }), I && v && (0, r.jsx)(c.Z, {
+      user: E,
+      guildId: b.id,
+      className: h.displayNameStylesSection
     })]
   })
 }

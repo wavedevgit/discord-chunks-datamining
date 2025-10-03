@@ -7,7 +7,6 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk486016 = require("./486016.js"),
   Chunk804570 = require("./804570.jsx"),
   Chunk624864 = require("./624864.js"),
   Chunk388627 = require("./388627.js"),
@@ -15,23 +14,24 @@ var Chunk951288 = require("./951288.js"),
   Chunk380736 = require("./380736.jsx"),
   Chunk693091 = require("./693091.js"),
   Chunk371467 = require("./371467.js"),
+  Chunk987650 = require("./987650.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk63452 = require("./63452.js");
 let O = [];
 
-function E(e) {
+function v(e) {
   return e.notification.id
 }
 
-function v(e, t, n, r) {
+function E(e, t, n, r) {
   let {
     index: l,
     notification: o,
     locked: a,
     pinned: s
   } = t;
-  return (0, i.jsx)(h.Z, {
+  return (0, i.jsx)(d.Z, {
     index: l,
     notification: o,
     locked: a,
@@ -51,12 +51,12 @@ let b = Chunk647438.memo(function(e) {
   let {
     locked: t,
     pinned: n,
-    showEmpty: h = true
-  } = e, y = (0, l.e7)([f.Z, u.Z], () => {
-    if (u.Z.isNotificationDisabled(a.OverlayNotificationDisabledSetting.TEXT_CHAT)) return O;
+    showEmpty: d = true
+  } = e, y = (0, l.e7)([p.Z, s.Z], () => {
+    if (s.Z.isNotificationDisabled(f.n0.TextChat)) return O;
     let e = [],
       i = 0;
-    for (let r of f.Z.getNotifications()) {
+    for (let r of p.Z.getNotifications()) {
       if (i > 4) break;
       (!t || r.status !== m._1z.TIMED_OUT) && (e.push({
         index: i,
@@ -66,16 +66,16 @@ let b = Chunk647438.memo(function(e) {
       }), i++)
     }
     return e
-  }, [t, n], c.E6), b = r.useState(() => new p.AS(t))[0];
-  return (r.useLayoutEffect(() => b.updateState(y, t)), r.useLayoutEffect(() => (b.initialize((0, d.i)()), () => b.cleanUp()), [b]), 0 !== y.length || t) ? (0, i.jsx)(p.S4.Provider, {
+  }, [t, n], u.E6), b = r.useState(() => new h.AS(t))[0];
+  return (r.useLayoutEffect(() => b.updateState(y, t)), r.useLayoutEffect(() => (b.initialize((0, c.i)()), () => b.cleanUp()), [b]), 0 !== y.length || t) ? (0, i.jsx)(h.S4.Provider, {
     value: b,
     children: (0, i.jsx)(o.W3x, {
       items: y,
-      renderItem: v,
-      getItemKey: E,
+      renderItem: E,
+      getItemKey: v,
       wrapChildren: S
     })
-  }) : h ? t ? null : (0, i.jsx)(s.E, {
+  }) : d ? t ? null : (0, i.jsx)(a.E, {
     emptyText: g.intl.string(g.t.O1Nbjo),
     icon: o.Dkj,
     absolute: true

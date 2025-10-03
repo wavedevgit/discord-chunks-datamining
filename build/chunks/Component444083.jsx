@@ -31,8 +31,8 @@ function f(e) {
   let {
     guildId: n,
     instance: t
-  } = e, d = a.useRef(null), f = (0, l.Z)(n);
-  return (0, r.jsx)(i.yRy, {
+  } = e, d = a.useRef(null);
+  return (0, l.Z)(n) ? (0, r.jsx)(i.yRy, {
     targetElementRef: d,
     align: "top",
     position: "right",
@@ -55,7 +55,7 @@ function f(e) {
             icon: i.kBi,
             label: m.intl.string(u.default["TciV8/"]),
             action: () => {}
-          }), f && (0, r.jsx)(i.sNh, {
+          }), (0, r.jsx)(i.sNh, {
             id: "settings",
             icon: i.ewm,
             label: m.intl.string(u.default.NUTl4u),
@@ -110,5 +110,5 @@ function f(e) {
         Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(t, e))
       }), n))
     }
-  })
+  }) : null
 }

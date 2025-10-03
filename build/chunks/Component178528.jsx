@@ -85,7 +85,7 @@ class M extends Chunk647438.PureComponent {
     if (e.guild !== t) {
       let {
         scrollTop: e
-      } = O.Z.getGuildDimensions(n);
+      } = _.Z.getGuildDimensions(n);
       this.setAnimatedValue(null != e ? e : 0)
     }
   }
@@ -233,20 +233,20 @@ function z(e) {
   var t;
   let {
     guildId: n
-  } = e, r = (0, o.e7)([E.Z], () => E.Z.getGuild(n)), s = (0, o.e7)([v.ZP], () => v.ZP.getChannels(n)), l = (0, o.e7)([b.Z], () => b.Z.getCategories(n)), {
+  } = e, r = (0, o.e7)([E.Z], () => E.Z.getGuild(n)), s = (0, o.e7)([b.ZP], () => b.ZP.getChannels(n)), l = (0, o.e7)([O.Z], () => O.Z.getCategories(n)), {
     mutedChannels: d,
     collapseMuted: u
   } = (0, o.cj)([j.ZP], () => ({
     mutedChannels: j.ZP.getMutedChannels(n),
     collapseMuted: j.ZP.isGuildCollapsed(n)
-  })), h = (0, o.e7)([I.ZP], () => I.ZP.getVoiceStates(n)), p = (0, o.e7)([y.Z], () => y.Z.getCollapsed()), {
+  })), p = (0, o.e7)([I.ZP], () => I.ZP.getVoiceStates(n)), h = (0, o.e7)([y.Z], () => y.Z.getCollapsed()), {
     scrollTo: f
-  } = (0, o.e7)([O.Z], () => O.Z.getGuildDimensions(n)), P = (0, g.Z)(e => {
+  } = (0, o.e7)([_.Z], () => _.Z.getGuildDimensions(n)), P = (0, g.Z)(e => {
     let {
       channelId: t
     } = e;
     return t
-  }), w = (0, o.e7)([C.Z], () => C.Z.getVoiceChannelId()), N = (0, o.e7)([x.Z], () => x.Z.getGuildVersion(n)), D = (0, o.e7)([m.Z], () => m.Z.version), k = (0, o.e7)([_.default], () => _.default.getGuildChangeSentinel(n)), R = (0, a.QN)(null == r ? true : r.id), A = (0, c.gM)(null == r ? true : r.id), L = null != (t = null == r ? true : r.features.has(T.oNc.COMMUNITY)) && t, z = (0, o.e7)([Z.Z], () => Z.Z.getChannelId()), V = (0, o.e7)([S.Z], () => S.Z.desyncedVoiceStatesCount);
+  }), w = (0, o.e7)([C.Z], () => C.Z.getVoiceChannelId()), N = (0, o.e7)([x.Z], () => x.Z.getGuildVersion(n)), D = (0, o.e7)([m.Z], () => m.Z.version), k = (0, o.e7)([v.default], () => v.default.getGuildChangeSentinel(n)), R = (0, a.QN)(null == r ? true : r.id), A = (0, c.gM)(null == r ? true : r.id), L = null != (t = null == r ? true : r.features.has(T.oNc.COMMUNITY)) && t, z = (0, o.e7)([Z.Z], () => Z.Z.getChannelId()), V = (0, o.e7)([S.Z], () => S.Z.desyncedVoiceStatesCount);
   return (0, i.jsx)(M, {
     guildId: n,
     guild: r,
@@ -256,10 +256,10 @@ function z(e) {
     scrollToChannel: f,
     selectedChannelId: P,
     selectedVoiceChannelId: w,
-    voiceStates: h,
+    voiceStates: p,
     rtcConnectedChannelId: z,
     rtcDesyncedVoiceStatesCount: V,
-    collapsedChannels: p,
+    collapsedChannels: h,
     collapseMuted: u,
     guildReadStateSentinel: k,
     permissionVersion: N,

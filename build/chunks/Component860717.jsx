@@ -97,12 +97,12 @@ function C(e) {
         children: Z(t.children)
       });
     case "FIELD":
-      return (0, r.jsx)(R, {
+      return (0, r.jsx)(L, {
         value: k(t.value),
         name: k(t.name)
       });
     case "TEXT":
-      return (0, r.jsx)(L, T({}, t));
+      return (0, r.jsx)(R, T({}, t));
     case "TEXT_WITH_IMAGE":
       return (0, r.jsx)(U, T({}, t));
     case "SEPARATOR":
@@ -176,7 +176,7 @@ function _(e) {
   })
 }
 
-function R(e) {
+function L(e) {
   let {
     name: t,
     value: n
@@ -186,7 +186,7 @@ function R(e) {
   })
 }
 
-function L(e) {
+function R(e) {
   let {
     content: t
   } = e, n = i.useId(), l = (0, m._)();
@@ -218,7 +218,7 @@ function U(e) {
   });
   return (0, r.jsxs)("div", {
     className: E.textWithImage,
-    children: ["left" === i ? s : null, (0, r.jsx)(L, {
+    children: ["left" === i ? s : null, (0, r.jsx)(R, {
       content: t
     }), "right" === i ? s : null]
   })

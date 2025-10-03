@@ -145,11 +145,11 @@ class Z extends Chunk647438.Component {
         pinned: n
       } = this.props, s = n ? E.intl.string(E.t.cSu80t) : E.intl.string(E.t.cM8Vnp);
       return e ? null : (0, i.jsxs)(r.Fragment, {
-        children: [this.renderCallButton(), n ? (0, i.jsx)(h.Z.Icon, {
+        children: [this.renderCallButton(), n ? (0, i.jsx)(p.Z.Icon, {
           icon: a._S3,
           tooltip: E.intl.string(E.t.OVovCQ),
           onClick: this.handleOpenOpacitySettings
-        }) : null, (0, i.jsx)(h.Z.Icon, {
+        }) : null, (0, i.jsx)(p.Z.Icon, {
           icon: n ? a.QVc : a.k5M,
           tooltip: s,
           selected: n,
@@ -178,14 +178,14 @@ function C(e) {
     }
     return r
   }(e, ["channel"]);
-  let r = (0, l.e7)([b.Z, m.Z], () => {
-      let e = b.Z.getVoiceChannelId();
+  let r = (0, l.e7)([O.Z, m.Z], () => {
+      let e = O.Z.getVoiceChannelId();
       return m.Z.getChannel(e)
     }),
     s = (0, l.e7)([y.Z], () => y.Z.getGuild(t.guild_id)),
     o = (0, l.e7)([g.Z], () => g.Z.isCallActive(t.id)),
     a = (0, u.ZP)(t),
-    c = (0, l.e7)([O.Z], () => !!t.isDM() && null != t.getRecipientId() && O.Z.isBlocked(t.getRecipientId()));
+    c = (0, l.e7)([_.Z], () => !!t.isDM() && null != t.getRecipientId() && _.Z.isBlocked(t.getRecipientId()));
   return (0, i.jsx)(Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},

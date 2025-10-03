@@ -46,8 +46,8 @@ function N(e) {
     location: "UserProfileModalV2Activity"
   }), _ = (0, p.b)({
     location: "UserProfileModalV2Activity"
-  }), R = (0, c.P6)("UserProfileModalV2Activity"), {
-    live: L,
+  }), L = (0, c.P6)("UserProfileModalV2Activity"), {
+    live: R,
     recent: U,
     stream: G
   } = (0, h.Z)(t.id), {
@@ -59,7 +59,7 @@ function N(e) {
   }), F = (0, i.e7)([o.Z], () => o.Z.isFetchingUserOutbox(t.id)), B = t.id === n.id, z = (0, i.e7)([f.Z, d.Z], () => {
     let e = B ? f.Z.getStatus() : d.Z.getStatus(t.id);
     return e === l.Skl.OFFLINE || e === l.Skl.INVISIBLE
-  }), H = L.length > 0 || null != G, V = D && null == G && null == W && null != M, Y = !z && (H || V), q = U.length > 0, K = L.some(e => (0, a.Z)(e));
+  }), H = R.length > 0 || null != G, V = D && null == G && null == W && null != M, Y = !z && (H || V), q = U.length > 0, K = R.some(e => (0, a.Z)(e));
   if (!Y && !q && F) return (0, r.jsx)("div", {
     className: T.cards,
     children: Array.from({
@@ -90,7 +90,7 @@ function N(e) {
     className: T.scroller,
     fade: true,
     children: [(() => {
-      let e = B && R && !K;
+      let e = B && L && !K;
       return Y ? (0, r.jsx)(P.Z, {
         heading: E.intl.string(E.t.J6STd3),
         children: (0, r.jsxs)("ul", {
@@ -113,7 +113,7 @@ function N(e) {
               stream: G,
               onClose: Z
             })
-          }), L.map((e, i) => (0, r.jsx)("li", {
+          }), R.map((e, i) => (0, r.jsx)("li", {
             children: (0, r.jsx)(y.Z, {
               user: t,
               currentUser: n,

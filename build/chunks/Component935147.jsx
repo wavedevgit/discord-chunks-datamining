@@ -2,7 +2,7 @@
 /** chunk id: 935147, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => Y
+  Z: () => W
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -32,6 +32,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk296810 = require("./296810.jsx"),
   Chunk433411 = require("./433411.jsx"),
   Chunk532432 = require("./532432.jsx"),
+  Chunk235433 = require("./235433.jsx"),
   Chunk504983 = require("./504983.jsx"),
   Chunk134795 = require("./134795.jsx"),
   Chunk513901 = require("./513901.jsx"),
@@ -43,7 +44,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk553330 = require("./553330.js");
 
-function Z(e, t, n) {
+function F(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -52,20 +53,20 @@ function Z(e, t, n) {
   }) : e[t] = n, e
 }
 
-function F(e) {
+function V(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      Z(e, t, n[t])
+      F(e, t, n[t])
     })
   }
   return e
 }
 
-function V(e, t) {
+function H(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -76,164 +77,167 @@ function V(e, t) {
   return n
 }
 
-function H(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : V(Object(t)).forEach(function(n) {
+function Y(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : H(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function Y(e) {
+function W(e) {
   var t, n;
   let {
-    user: Z,
-    isVisible: V,
-    shouldShow: Y
-  } = e, W = C.ZP.isPremium(Z), {
-    pendingAvatar: K,
-    pendingThemeColors: z,
-    tryItOutThemeColors: q,
-    tryItOutAvatar: X,
-    tryItOutBanner: Q,
-    tryItOutProfileEffect: J,
-    tryItOutAvatarDecoration: $
+    user: F,
+    isVisible: H,
+    shouldShow: W
+  } = e, K = C.ZP.isPremium(F), {
+    pendingAvatar: z,
+    pendingThemeColors: q,
+    tryItOutThemeColors: X,
+    tryItOutAvatar: Q,
+    tryItOutBanner: J,
+    tryItOutProfileEffect: $,
+    tryItOutAvatarDecoration: ee
   } = (0, a.cj)([S.Z], () => {
     let e = S.Z.getAllPending(),
       t = S.Z.getErrors();
-    return H(F({}, e, S.Z.getAllTryItOut()), {
+    return Y(V({}, e, S.Z.getAllTryItOut()), {
       errors: t
     })
-  }), ee = (0, p.Z)(J), {
-    preset: et,
-    onShuffle: en
-  } = (0, g.Z)(), er = i.useRef(null);
-  (0, T.Z)(er, U.Y_.TRY_IT_OUT);
+  }), et = (0, p.Z)($), {
+    preset: en,
+    onShuffle: er
+  } = (0, g.Z)(), ei = i.useRef(null);
+  (0, T.Z)(ei, G.Y_.TRY_IT_OUT);
   let {
-    analyticsLocations: ei,
-    newestAnalyticsLocation: ea,
-    sourceAnalyticsLocations: eo
-  } = (0, c.ZP)(l.Z.USER_SETTINGS_TRY_OUT_PREMIUM), es = e => {
+    analyticsLocations: ea,
+    newestAnalyticsLocation: eo,
+    sourceAnalyticsLocations: es
+  } = (0, c.ZP)(l.Z.USER_SETTINGS_TRY_OUT_PREMIUM), el = e => {
     if (e) {
-      if ((0, s.I5)(X), (0, I.z5)(q), (0, I.ho)(Q), null != $) {
-        let e = d.Z.getProduct($.skuId);
-        null != e && (0, _.G1)(e) ? (0, u.fK)(e.skuId).then(() => (0, s.cV)($)) : null != f.Z.getPurchase($.skuId) && (0, s.cV)($)
+      if ((0, s.I5)(Q), (0, I.z5)(X), (0, I.ho)(J), null != ee) {
+        let e = d.Z.getProduct(ee.skuId);
+        null != e && (0, _.G1)(e) ? (0, u.fK)(e.skuId).then(() => (0, s.cV)(ee)) : null != f.Z.getPurchase(ee.skuId) && (0, s.cV)(ee)
       }
-      A.default.track(j.rMx.TRY_IT_OUT_PRESET_SELECTED, {
-        preset: et
+      A.default.track(k.rMx.TRY_IT_OUT_PRESET_SELECTED, {
+        preset: en
       })
     }
   };
   i.useEffect(() => {
-    V && A.default.track(j.rMx.PREMIUM_UPSELL_VIEWED, {
-      type: k.cd.PREMIUM_PROFILE_TRY_IT_OUT,
+    H && A.default.track(k.rMx.PREMIUM_UPSELL_VIEWED, {
+      type: U.cd.PREMIUM_PROFILE_TRY_IT_OUT,
       location: {
-        page: j.ZY5.USER_SETTINGS
+        page: k.ZY5.USER_SETTINGS
       },
-      location_stack: eo
+      location_stack: es
     })
-  }, [eo, Z, V]);
-  let el = (null == (n = (0, m.N)()) || null == (t = n.subscription_trial) ? true : t.sku_id) === k.Si.TIER_2,
-    ec = (0, h.Ng)(),
-    eu = (0, h.Wp)(ec, k.Si.TIER_2),
-    ed = () => W ? G.intl.string(G.t.AfRWIy) : eu ? G.intl.formatToPlainString(G.t.bkQ4bG, {
-      percent: null == ec ? true : ec.discount.amount
-    }) : G.intl.string(G.t.pj0XBA);
-  return Y ? (0, r.jsx)(c.Gt, {
-    value: ei,
-    children: (0, r.jsxs)(w.Z, {
-      ref: er,
-      className: B.tryItOutSection,
-      type: w.Y.PREMIUM,
+  }, [es, F, H]);
+  let ec = (null == (n = (0, m.N)()) || null == (t = n.subscription_trial) ? true : t.sku_id) === U.Si.TIER_2,
+    eu = (0, h.Ng)(),
+    ed = (0, h.Wp)(eu, U.Si.TIER_2),
+    ef = () => K ? B.intl.string(B.t.AfRWIy) : ed ? B.intl.formatToPlainString(B.t.bkQ4bG, {
+      percent: null == eu ? true : eu.discount.amount
+    }) : B.intl.string(B.t.pj0XBA);
+  return W ? (0, r.jsx)(c.Gt, {
+    value: ea,
+    children: (0, r.jsxs)(D.Z, {
+      ref: ei,
+      className: Z.tryItOutSection,
+      type: D.Y.PREMIUM,
       isShown: true,
       hasBackground: true,
       children: [(0, r.jsx)(N.Z, {
-        layoutClassName: B.tryItOutLayout,
+        layoutClassName: Z.tryItOutLayout,
         profilePreviewTitle: (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(o.SrA, {
             size: "md",
             color: "currentColor",
-            className: B.premiumIcon
-          }), G.intl.string(G.t.gMlDNT)]
+            className: Z.premiumIcon
+          }), B.intl.string(B.t.gMlDNT)]
         }),
         profilePreview: (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(E.Z, {
-            preset: et,
-            onShuffle: en
-          }), (0, r.jsx)(M.Z, {
-            user: Z
+            preset: en,
+            onShuffle: er
+          }), (0, r.jsx)(j.Z, {
+            user: F
           })]
         }),
         children: (0, r.jsxs)("div", {
-          className: B.editor,
+          className: Z.editor,
           children: [(0, r.jsxs)("div", {
             children: [(0, r.jsx)(o.X6q, {
               variant: "heading-xl/extrabold",
-              children: G.intl.string(G.t["2zGdAQ"])
+              children: B.intl.string(B.t["2zGdAQ"])
             }), (0, r.jsx)(o.Text, {
-              className: B.description,
+              className: Z.description,
               variant: "text-sm/normal",
-              children: G.intl.string(G.t.xeEC29)
+              children: B.intl.string(B.t.xeEC29)
             })]
-          }), (0, r.jsx)(x.Z, {
-            className: B.customizationSection,
-            user: Z,
+          }), (0, r.jsx)(M.Z, {
+            className: Z.customizationSection,
+            user: F,
             pendingAvatarSrc: (0, v.SD)({
-              userId: Z.id,
-              image: null != X ? X : K
+              userId: F.id,
+              image: null != Q ? Q : z
             }),
-            pendingColors: null != q ? q : z,
+            pendingColors: null != X ? X : q,
             onThemeColorsChange: I.rf,
             showPremiumIcon: false,
             preventDisabled: true
-          }), (0, r.jsx)(D.Z, {
-            className: B.customizationSection,
+          }), (0, r.jsx)(L.Z, {
+            className: Z.customizationSection,
             isTryItOutFlow: true,
-            showRemoveBannerButton: null != Q,
+            showRemoveBannerButton: null != J,
             onBannerChange: I.f4,
             showPremiumIcon: false
           }), (0, r.jsx)(P.Z, {
-            className: B.customizationSection,
+            className: Z.customizationSection,
             isTryItOutFlow: true,
             onAvatarChange: I.c_,
             showRemoveAvatarButton: false,
-            changeAvatarButtonText: G.intl.string(G.t["7z0D1d"]),
-            sectionTitle: G.intl.string(G.t.vtFfPT)
+            changeAvatarButtonText: B.intl.string(B.t["7z0D1d"]),
+            sectionTitle: B.intl.string(B.t.vtFfPT)
           }), (0, r.jsx)(R.Z, {
             isTryItOutFlow: true,
-            className: B.customizationSection,
-            user: Z,
-            sectionTitle: G.intl.string(G.t["7v0T9P"])
-          }, "decoration"), (0, r.jsx)(L.Z, {
-            className: B.customizationSection,
+            className: Z.customizationSection,
+            user: F,
+            sectionTitle: B.intl.string(B.t["7v0T9P"])
+          }, "decoration"), (0, r.jsx)(w.Z, {
+            user: F,
+            className: Z.customizationSection
+          }), (0, r.jsx)(x.Z, {
+            className: Z.customizationSection,
             isTryItOutFlow: true,
-            initialSelectedEffect: ee,
-            user: Z,
-            sectionTitle: G.intl.string(G.t.wR5wOj)
-          }, "effect"), !el && (0, r.jsx)(o.Text, {
+            initialSelectedEffect: et,
+            user: F,
+            sectionTitle: B.intl.string(B.t.wR5wOj)
+          }, "effect"), !ec && (0, r.jsx)(o.Text, {
             variant: "text-sm/normal",
-            children: G.intl.string(G.t["smo74+"])
+            children: B.intl.string(B.t["smo74+"])
           })]
         })
-      }), !el && (0, r.jsx)(b.p, {
-        onSubscribeModalClose: es,
-        className: B.floatingUpsell,
+      }), !ec && (0, r.jsx)(b.p, {
+        onSubscribeModalClose: el,
+        className: Z.floatingUpsell,
         showUpsell: true,
-        text: G.intl.format(G.t.TmfgIy, {
+        text: B.intl.format(B.t.TmfgIy, {
           onClick: () => {
             (0, O.y)({
-              analyticsSource: ea,
-              onSubscribeFinish: es
+              analyticsSource: eo,
+              onSubscribeFinish: el
             })
           }
         }),
-        button: ed(),
+        button: ef(),
         position: "inline",
         showShadow: false
-      }), el && (0, r.jsxs)("div", {
+      }), ec && (0, r.jsxs)("div", {
         children: [(0, r.jsx)("div", {
-          className: B.premiumTier2Divider
+          className: Z.premiumTier2Divider
         }), (0, r.jsx)(y.ZP, {
-          type: k.cd.CUSTOM_PROFILE_TRY_OUT_UPSELL,
-          subscriptionTier: k.Si.TIER_2
+          type: U.cd.CUSTOM_PROFILE_TRY_OUT_UPSELL,
+          subscriptionTier: U.Si.TIER_2
         })]
       })]
     })

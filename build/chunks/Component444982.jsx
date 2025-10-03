@@ -112,8 +112,8 @@ let j = {
         id: n.id,
         locked: l,
         pinned: n.pinned,
-        widget: v.Odu.VOICE_V3,
-        maxDisplayedVoiceStates: null != (t = n.meta.voiceStatesMaxShown) ? t : E.At,
+        widget: E.Odu.VOICE_V3,
+        maxDisplayedVoiceStates: null != (t = n.meta.voiceStatesMaxShown) ? t : v.At,
         isPreviewingInGame: false,
         showEmpty: o
       }) : null

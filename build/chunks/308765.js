@@ -193,6 +193,10 @@ let i = {
     actions: ["OVERLAY_SET_INPUT_LOCKED"],
     inlineRequire: () => require("./967031.js").Z
   },
+  OverlayNotificationAnalyticsManager: {
+    actions: ["OVERLAY_SET_NOTIFICATION_DISABLED_SETTING", "OVERLAY_MOUNTED", "OVERLAY_NOTIFICATION_EVENT"],
+    inlineRequire: () => require("./270538.js").Z
+  },
   OverlayStateTrackingManager: {
     actions: ["OVERLAY_TRACK_STATE_CHANGED", "RUNNING_GAMES_CHANGE"],
     inlineRequire: () => require("./700775.js").Z

@@ -55,7 +55,7 @@ function g(e, t) {
 }
 let y = 256,
   O = (e, t) => 2 * e + 2 * t,
-  E = e => {
+  v = e => {
     let {
       width: t,
       height: n
@@ -67,7 +67,7 @@ let y = 256,
     }
   };
 
-function v(e, t, n, i) {
+function E(e, t, n, i) {
   let r = arguments.length > 4 && true !== arguments[4] ? arguments[4] : y,
     l = {
       width: r,
@@ -103,7 +103,7 @@ function j(e) {
     padding: r,
     previousContainerSize: l,
     widgetMinMaxSizes: o
-  } = e, a = t === p.C5.VERTICAL, s = S(i, r, l, a), u = v(n, r, i, a, s);
+  } = e, a = t === p.C5.VERTICAL, s = S(i, r, l, a), u = E(n, r, i, a, s);
   return (0, h.Se)(u, {
     containerOffset: O(i, r),
     gapSize: r,
@@ -214,7 +214,7 @@ function Z(e) {
     width: p = s,
     height: m = d,
     ref: g
-  } = (0, o.ZP)(), E = (0, f.Z)(), b = (0, c.ZY)(E), j = (0, r.e7)([u.Z], () => u.Z.windowSize(b), [b]), I = function(e) {
+  } = (0, o.ZP)(), v = (0, f.Z)(), b = (0, c.ZY)(v), j = (0, r.e7)([u.Z], () => u.Z.windowSize(b), [b]), I = function(e) {
     let {
       tileCount: t,
       padding: n,
@@ -222,7 +222,7 @@ function Z(e) {
       windowWidth: r,
       windowHeight: l,
       isVertical: o
-    } = e, a = v(t, n, i, o), s = {
+    } = e, a = E(t, n, i, o), s = {
       maxX: null != r ? r : 2 * a.width / .75,
       maxY: null != l ? l : 2 * a.height / .75,
       minX: 0,
@@ -233,7 +233,7 @@ function Z(e) {
     }, c = (null != l ? l : 0) * x;
     return c = Math.max(a.height, c), c = Math.min(u.height, c), {
       minSize: a,
-      defaultSize: v(t, n, i, o, (0, h.eJ)(c)),
+      defaultSize: E(t, n, i, o, (0, h.eJ)(c)),
       maxSize: u,
       containerSpecs: s
     }
@@ -283,7 +283,7 @@ function N(e) {
       d = g(e, ["id", "widgetMinMaxSizes", "containerSize", "layout", "padding", "widget", "borderWidth", "locked"]);
     null != a && I(m({
       widgetId: t,
-      size: E(j({
+      size: v(j({
         layout: r,
         tileCount: Math.max(1, u),
         borderWidth: s,
@@ -292,7 +292,7 @@ function N(e) {
         widgetMinMaxSizes: n
       })),
       defaultSize: n.defaultSize,
-      minSize: E(n.minSize),
+      minSize: v(n.minSize),
       containerSpecs: n.containerSpecs,
       padding: o,
       borderWidth: s,
@@ -316,9 +316,9 @@ function N(e) {
         if (c) return;
         I(m({
           widgetId: t,
-          size: E(n.defaultSize),
+          size: v(n.defaultSize),
           defaultSize: n.defaultSize,
-          minSize: E(n.minSize),
+          minSize: v(n.minSize),
           padding: o,
           borderWidth: s,
           widget: a,
@@ -328,7 +328,7 @@ function N(e) {
       }
       I(m({
         widgetId: t,
-        size: E(j({
+        size: v(j({
           layout: r,
           tileCount: u,
           borderWidth: s,
@@ -336,7 +336,7 @@ function N(e) {
           previousContainerSize: i,
           widgetMinMaxSizes: n
         })),
-        minSize: E(n.minSize),
+        minSize: v(n.minSize),
         containerSpecs: n.containerSpecs,
         padding: o,
         borderWidth: s,
@@ -366,7 +366,7 @@ function N(e) {
         padding: l,
         previousContainerSize: o,
         widgetMinMaxSizes: a
-      } = e, s = S(r, l, o, t === p.C5.VERTICAL), u = v(i, l, r, n === p.C5.VERTICAL, s);
+      } = e, s = S(r, l, o, t === p.C5.VERTICAL), u = E(i, l, r, n === p.C5.VERTICAL, s);
       return (0, h.Se)(u, {
         containerOffset: O(r, l),
         gapSize: l,
@@ -387,8 +387,8 @@ function N(e) {
     });
     I(m({
       widgetId: t,
-      size: E(f),
-      minSize: E(i.minSize),
+      size: v(f),
+      minSize: v(i.minSize),
       containerSpecs: i.containerSpecs,
       padding: a,
       borderWidth: s,
@@ -405,9 +405,9 @@ function N(e) {
       o = g(e, ["id", "widgetMinMaxSizes", "widget", "padding"]);
     null != i && I(m({
       widgetId: t,
-      size: E(n.defaultSize),
+      size: v(n.defaultSize),
       defaultSize: n.defaultSize,
-      minSize: E(n.minSize),
+      minSize: v(n.minSize),
       containerSpecs: n.containerSpecs,
       padding: r,
       widget: i

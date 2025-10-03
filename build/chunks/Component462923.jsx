@@ -272,7 +272,7 @@ function Z(e) {
           className: P.serverActions,
           children: U
         })]
-      }), (0, r.jsx)("div", {
+      }), B && (0, r.jsx)("div", {
         className: P.overflowMenu,
         children: (0, r.jsx)(j.Z, {
           guildId: n,

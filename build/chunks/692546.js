@@ -30,25 +30,25 @@ let m = {
   },
   y = false;
 
-function O(e) {
+function _(e) {
   let {
     clientX: t,
     clientY: n
   } = e;
   y = true, m.x = t, m.y = n
 }
-let b = new Map;
+let O = new Map;
 
-function v(e, t) {
-  if (null == t) b.delete(e), 0 === b.size && (window.removeEventListener("mousemove", O), y = false);
+function b(e, t) {
+  if (null == t) O.delete(e), 0 === O.size && (window.removeEventListener("mousemove", _), y = false);
   else {
-    let n = b.get(e);
+    let n = O.get(e);
     if (null != n && (0, a.Z)(n.zone, t.zone)) return;
-    0 === b.size && window.addEventListener("mousemove", O), b.set(e, t)
+    0 === O.size && window.addEventListener("mousemove", _), O.set(e, t)
   }
   if (f.isPlatformEmbedded)
     if (u.default.isCurrentPidOutOfProcess()) {
-      let e = Array.from(b.values()).map(e => {
+      let e = Array.from(O.values()).map(e => {
         let {
           zone: t
         } = e;
@@ -63,29 +63,29 @@ function v(e, t) {
       d.Z.setClickZones(e)
     } else {
       var n;
-      let e = (0, h.M)();
+      let e = (0, p.M)();
       if (null == e) return;
       e.broadcastCommand({
         message: "set_click_zones",
-        zones: Array.from(b.values()).map(e => {
+        zones: Array.from(O.values()).map(e => {
           let {
             zone: t
           } = e;
           return t
         })
-      }), n = e, _ || (n.setClickZoneCallback((e, t, n) => {
-        let i = b.get(e);
+      }), n = e, v || (n.setClickZoneCallback((e, t, n) => {
+        let i = O.get(e);
         null != i && (y || (m.x = t, m.y = n), i.instance.click())
-      }), _ = true)
+      }), v = true)
     }
 }
-let _ = false;
+let v = false;
 class E extends(i = Chunk647438.PureComponent) {
   componentDidMount() {
     this.props.observe ? this.observeZone() : this.updateZone()
   }
   componentWillUnmount() {
-    this.interval.stop(), v(this.zone, null)
+    this.interval.stop(), b(this.zone, null)
   }
   componentDidUpdate(e) {
     let {
@@ -113,7 +113,7 @@ class E extends(i = Chunk647438.PureComponent) {
           right: i,
           bottom: r
         } = e.getBoundingClientRect();
-        v(this.zone, {
+        b(this.zone, {
           instance: this,
           zone: {
             name: this.zone,

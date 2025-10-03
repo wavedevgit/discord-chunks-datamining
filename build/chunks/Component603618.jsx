@@ -52,7 +52,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk847121 = require("./847121.js");
 
-function X(e) {
+function K(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -71,7 +71,7 @@ function X(e) {
   return e
 }
 
-function K(e, t) {
+function X(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -96,12 +96,12 @@ function J(e) {
       return () => clearTimeout(e)
     }
   }, [s]);
-  let E = null != n && (0, v.Z)(n, H.xjy.JOIN),
+  let v = null != n && (0, E.Z)(n, H.xjy.JOIN),
     S = async e => {
       if (null != a && "unsent" === s) {
         e.stopPropagation();
         try {
-          if (u("sending"), E) await f.Z.sendActivityInviteUser({
+          if (u("sending"), v) await f.Z.sendActivityInviteUser({
             type: H.mFx.JOIN,
             userId: a.id,
             activity: n,
@@ -151,7 +151,7 @@ function J(e) {
         value: G.bk.CHAT,
         userId: a.id
       })
-    }, x = E ? Y.intl.string(Y.t["3fRyS0"]) : Y.intl.string(Y.t.XHxDIS), I = E ? (0, i.jsx)(p.ejJ, {
+    }, x = v ? Y.intl.string(Y.t["3fRyS0"]) : Y.intl.string(Y.t.XHxDIS), I = v ? (0, i.jsx)(p.ejJ, {
       color: "currentColor",
       size: "sm"
     }) : (0, i.jsx)(p.Uuj, {
@@ -188,7 +188,7 @@ function q(e) {
     entry: n,
     currentUserActivity: l
   } = e, o = (0, c.e7)([L.default], () => L.default.getUser(n.author_id)), a = null != (t = null == l ? true : l.application_id) ? t : n.extra.application_id, s = (0, c.e7)([R.Z], () => null != o ? R.Z.getApplicationActivity(o.id, a) : null, [a, o]), [u, m] = r.useState("unsent");
-  if (!(null != s && (0, v.Z)(s, H.xjy.JOIN))) return null;
+  if (!(null != s && (0, E.Z)(s, H.xjy.JOIN))) return null;
   let g = async e => {
     if (null != o && "unsent" === u) {
       e.stopPropagation();
@@ -340,7 +340,7 @@ function en(e) {
     maxUserShowCount: n,
     userAffinityThresholdV2: i = .0029
   } = e, l = (0, I.Z)(t, "useLiveActivityRows");
-  (0, E.ZP)(() => {
+  (0, v.ZP)(() => {
     (0, w._)()
   });
   let o = (0, c.e7)([A.Z], () => null == t ? null : A.Z.getApplicationActivity(t), [t]),
@@ -382,7 +382,7 @@ function en(e) {
         }(T.Z.getUserAffinity(t), i, n)
       })
     }, [t, i]);
-  return (0, E.ZP)(() => (Z.L(), () => Z.v())), {
+  return (0, v.ZP)(() => (Z.L(), () => Z.v())), {
     entries: r.useMemo(() => {
       let e = l.filter(e => !d.some(t => t.activityUser.id === e.author_id)),
         t = [...d.map(e => (function(e) {
@@ -414,7 +414,7 @@ function en(e) {
 
 function ei(e) {
   let t = en(e);
-  return (0, i.jsx)(et, K(X({}, t), {
+  return (0, i.jsx)(et, X(K({}, t), {
     className: e.className
   }))
 }
@@ -424,7 +424,7 @@ function er(e) {
     activity: t,
     currentUser: n,
     showInviteButton: r = true
-  } = e, l = null != t && (0, v.Z)(t, H.xjy.JOIN), o = (0, S.q)(null == t ? true : t.application_id), a = null != o && (0, z.yE)(o.flags, H.udG.EMBEDDED);
+  } = e, l = null != t && (0, E.Z)(t, H.xjy.JOIN), o = (0, S.q)(null == t ? true : t.application_id), a = null != o && (0, z.yE)(o.flags, H.udG.EMBEDDED);
   return null == t || null == n ? null : (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(_.Z, {
       className: Q.activityCard,
@@ -451,7 +451,7 @@ function el(e) {
   let {
     locked: t
   } = e, n = (0, F.II)(), r = null == n ? true : n.id, l = null == n ? true : n.altId, o = (0, I.Z)(r, "ActivityWidget"), a = (0, c.e7)([L.default], () => L.default.getCurrentUser()), s = null != l ? l : r, u = (0, c.e7)([A.Z], () => null == s ? null : A.Z.getApplicationActivity(s), [s]);
-  (0, E.ZP)(() => (Z.L(), () => Z.v()));
+  (0, v.ZP)(() => (Z.L(), () => Z.v()));
   let d = en({
     gamingId: s,
     userAffinityThresholdV2: .00145,
@@ -462,7 +462,7 @@ function el(e) {
     children: [(0, i.jsx)(er, {
       activity: u,
       currentUser: a
-    }), (0, i.jsx)(et, K(X({}, d), {
+    }), (0, i.jsx)(et, X(K({}, d), {
       className: Q.contentInventoryContainer,
       hideHeader: true
     }))]

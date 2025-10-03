@@ -2,7 +2,7 @@
 /** chunk id: 158979, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => O
+  Z: () => _
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -62,22 +62,22 @@ function y() {
   })
 }
 
-function O(e) {
+function _(e) {
   switch (e.type) {
-    case h.nc.GO_LIVE_VOICE: {
+    case p.nc.GO_LIVE_VOICE: {
       let {
         game: t,
         voiceGuild: r
       } = e, {
         trackView: f,
-        trackClick: O
-      } = (0, d.R)(h.n0.GoLiveNudge, {
-        notif_type: h.n0.GoLiveNudge
+        trackClick: _
+      } = (0, d.R)(p.n0.GoLiveNudge, {
+        notif_type: p.n0.GoLiveNudge
       });
       return {
         icon: n(847881),
         title: null,
-        body: p.intl.formatToPlainString(p.t.z9znpa, {
+        body: h.intl.formatToPlainString(h.t.z9znpa, {
           game: t.name,
           server: r.name
         }),
@@ -87,10 +87,10 @@ function O(e) {
           f()
         },
         onNotificationClick: (e, t) => {
-          O("unlock"), o.Z.updateNotificationStatus(t);
+          _("unlock"), o.Z.updateNotificationStatus(t);
           let d = l.default.isOverlayOOPEnabledForPid((0, c.getPID)());
           if (d ? o.Z.setInputLocked(false, (0, c.getPID)()) : o.Z.setInstanceLocked(false), null == a.default.getCurrentUser()) return;
-          let h = d ? {
+          let p = d ? {
             contextKey: s.u1M
           } : true;
           (0, s.ZDy)(async () => {
@@ -103,26 +103,26 @@ function O(e) {
               guildId: r.id,
               analyticsLocation: u.Sbl.OVERLAY_NUDGE
             }))
-          }, h)
+          }, p)
         },
         onDismissClick: () => {
-          O("dismiss")
+          _("dismiss")
         }
       }
     }
-    case h.nc.GO_LIVE_NON_VOICE: {
+    case p.nc.GO_LIVE_NON_VOICE: {
       let {
         game: t
       } = e, {
         trackView: r,
         trackClick: a
-      } = (0, d.R)(h.n0.GoLiveNonVoiceNudge, {
-        notif_type: h.n0.GoLiveNonVoiceNudge
+      } = (0, d.R)(p.n0.GoLiveNonVoiceNudge, {
+        notif_type: p.n0.GoLiveNonVoiceNudge
       });
       return {
         icon: n(847881),
         title: null,
-        body: p.intl.formatToPlainString(p.t["0SVWgI"], {
+        body: h.intl.formatToPlainString(h.t["0SVWgI"], {
           game: t.name
         }),
         hint: () => (0, i.jsx)(y, {}),

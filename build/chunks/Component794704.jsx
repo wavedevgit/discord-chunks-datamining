@@ -152,7 +152,7 @@ function ew(e) {
     enabled: et.default.enabled,
     notifications_enabled: r,
     notifications_position: r ? n : null,
-    text_notifications_mode: U.Z.isNotificationDisabled(D.OverlayNotificationDisabledSetting.TEXT_CHAT) ? "DISABLED" : "ENABLED",
+    text_notifications_mode: U.Z.isNotificationDisabled(ed.n0.TextChat) ? "DISABLED" : "ENABLED",
     hotkey: null != i ? (0, eo.BB)(i.shortcut) : null,
     text_activation_hotkey: null != a ? (0, eo.BB)(a.shortcut) : null,
     text_opacity_slider: en.default.getTextWidgetOpacity(),
@@ -801,27 +801,27 @@ function eF() {
 let eV = (e, t, n, r) => [{
   title: e_.t.eVE4LS,
   description: e_.t["72WNqq"],
-  disabledSetting: D.OverlayNotificationDisabledSetting.TEXT_CHAT
+  disabledSetting: D.i.TEXT_CHAT
 }, r && {
   title: e_.t.oifnSk,
   description: e_.t.bgU5r6,
-  disabledSetting: D.OverlayNotificationDisabledSetting.WELCOME_GENERAL
+  disabledSetting: D.i.WELCOME_GENERAL
 }, {
   title: e_.t.hqsZJS,
   description: e_.t.kHjdqa,
-  disabledSetting: D.OverlayNotificationDisabledSetting.GO_LIVE_NUDGE
+  disabledSetting: D.i.GO_LIVE_NUDGE
 }, e && {
   title: e_.t.sop3rq,
   description: e_.t.pjgffX,
-  disabledSetting: D.OverlayNotificationDisabledSetting.GAME_ACTIVITY
+  disabledSetting: D.i.GAME_ACTIVITY
 }, t && {
   title: e_.t["2QVhbW"],
   description: e_.t.wQ4ilJ,
-  disabledSetting: D.OverlayNotificationDisabledSetting.NOW_PLAYING
+  disabledSetting: D.i.NOW_PLAYING
 }, n && {
   title: e_.t["5/21FR"],
   description: e_.t.EIzwfH,
-  disabledSetting: D.OverlayNotificationDisabledSetting.FRIEND_STREAM_WATCH_NUDGE
+  disabledSetting: D.i.FRIEND_STREAM_WATCH_NUDGE
 }].filter(e => false !== e).filter(Boolean);
 
 function eH() {

@@ -24,9 +24,9 @@ function O(e) {
     locked: t,
     pinned: n,
     anchorLeft: l
-  } = e, O = (0, a.e7)([h.Z], () => h.Z.getSocket()), E = (0, a.e7)([m.ZP], () => m.ZP.isGPUBoosted());
+  } = e, O = (0, a.e7)([h.Z], () => h.Z.getSocket()), v = (0, a.e7)([m.ZP], () => m.ZP.isGPUBoosted());
   (0, d.nU)();
-  let v = (0, a.e7)([p.Z], () => p.Z.getWindow(g.$J)),
+  let E = (0, a.e7)([p.Z], () => p.Z.getWindow(g.$J)),
     [S, b] = (0, d.m8)(O),
     {
       currentFPS: x,
@@ -39,7 +39,7 @@ function O(e) {
       frameCheckerEffect: T
     } = (0, d.d6)(true, S, true),
     [_, P, D] = (0, d.ZF)(O),
-    [A, R] = (0, d.Y5)(_, T, v),
+    [A, R] = (0, d.Y5)(_, T, E),
     k = performance.now() - b.current < d.MC,
     L = P(j, w.current);
   (0, c.ZP)(() => (A(), () => {
@@ -173,7 +173,7 @@ function O(e) {
           children: "(Main App Backgrounded)"
         })
       })
-    }), E && (0, i.jsx)(u.Text, {
+    }), v && (0, i.jsx)(u.Text, {
       tag: "span",
       variant: "code",
       color: "text-feedback-positive",

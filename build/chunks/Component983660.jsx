@@ -2,7 +2,7 @@
 /** chunk id: 983660, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => p
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -14,15 +14,15 @@ var Chunk951288 = require("./951288.js"),
   Chunk303010 = require("./303010.js"),
   Chunk215916 = require("./215916.js");
 
-function h(e) {
+function p(e) {
   let {
     locked: t
-  } = e, [n, h] = (0, l.US)(t ? [] : [s.z.OVERLAY_OOP_WELCOME_BACKGROUND_SWITCH_FROM_IP_NUX], true, true);
+  } = e, [n, p] = (0, l.US)(t ? [] : [s.z.OVERLAY_OOP_WELCOME_BACKGROUND_SWITCH_FROM_IP_NUX], true, true);
   return (r.useEffect(() => {
     if (!t && n === s.z.OVERLAY_OOP_WELCOME_BACKGROUND_SWITCH_FROM_IP_NUX) return () => {
-      n === s.z.OVERLAY_OOP_WELCOME_BACKGROUND_SWITCH_FROM_IP_NUX && h(a.L.AUTO_DISMISS)
+      n === s.z.OVERLAY_OOP_WELCOME_BACKGROUND_SWITCH_FROM_IP_NUX && p(a.L.AUTO_DISMISS)
     }
-  }, [t, h, n]), t || n !== s.z.OVERLAY_OOP_WELCOME_BACKGROUND_SWITCH_FROM_IP_NUX) ? null : (0, i.jsx)("div", {
+  }, [t, p, n]), t || n !== s.z.OVERLAY_OOP_WELCOME_BACKGROUND_SWITCH_FROM_IP_NUX) ? null : (0, i.jsx)("div", {
     className: d.overlayInprocessBackgroundNux,
     children: (0, i.jsxs)("div", {
       className: d.mainContainer,

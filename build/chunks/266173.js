@@ -174,7 +174,7 @@ class w {
       })
     }), g(this, "hasNotificationSetting", e => this._storage.hasNotificationSetting(e)), g(this, "initializeNotification", e => {
       if (this.hasNotificationSetting(e)) return;
-      let t = p.Z.isNotificationDisabled(e);
+      let t = p.Z.isNotificationDisabledBySetting(e);
       this.updateNotificationSetting(e, t)
     }), g(this, "disableNotification", async e => {
       this.initializeNotification(e), await o.Z.setNotificationDisabledSetting(e, S, T)
@@ -188,9 +188,9 @@ class w {
 }
 
 function D() {
-  return Object.values(Chunk486016.OverlayNotificationDisabledSetting)
+  return Object.values(Chunk486016.i)
 }
-let L = new Set([Chunk486016.OverlayNotificationDisabledSetting.WELCOME_GENERAL, Chunk486016.OverlayNotificationDisabledSetting.GO_LIVE_NUDGE, Chunk486016.OverlayNotificationDisabledSetting.GAME_ACTIVITY]);
+let L = new Set([Chunk486016.i.WELCOME_GENERAL, Chunk486016.i.GO_LIVE_NUDGE, Chunk486016.i.GAME_ACTIVITY]);
 class x extends Chunk147913.Z {
   constructor(...e) {
     super(...e), g(this, "_settings", new w), g(this, "_hasInitialized", false), g(this, "_isProcessing", false), g(this, "getWidgetExperimentSettings", () => {
@@ -221,7 +221,7 @@ class x extends Chunk147913.Z {
         disableWelcomeNotification: t,
         unlockedOnlyDefaultOverlay: n
       } = (0, _.Sy)("OverlayNegativeWidgetExperimentManager"), r = new Set, i = new Set;
-      for (let a of D()) n ? r.add(a) : t ? L.has(a) ? r.add(a) : i.add(a) : e && a !== f.OverlayNotificationDisabledSetting.WELCOME_GENERAL ? r.add(a) : i.add(a);
+      for (let a of D()) n ? r.add(a) : t ? L.has(a) ? r.add(a) : i.add(a) : e && a !== f.i.WELCOME_GENERAL ? r.add(a) : i.add(a);
       return {
         notificationsToOverride: r,
         notificationsToRestore: i

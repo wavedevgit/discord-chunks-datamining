@@ -16,7 +16,7 @@ var Chunk704215 = require("./704215.js"),
   Chunk312839 = require("./312839.js"),
   Chunk987650 = require("./987650.js"),
   Chunk388032 = require("./388032.jsx");
-let f = e => (0, l.QR)(e, (0, u.P)(), p.t["z8/sgI"]);
+let f = e => (0, l.QR)(e, (0, u.P)(), h.t["z8/sgI"]);
 
 function g(e) {
   let {
@@ -26,7 +26,7 @@ function g(e) {
     title: g,
     body: m,
     hint: y,
-    notifType: O
+    notifType: _
   } = function(e, t) {
     if (t.isFirstTimeNux) {
       var n, i;
@@ -48,8 +48,8 @@ function g(e) {
         }
         return e
       }({}, e), i = i = {
-        title: p.intl.string(p.t.xxADho),
-        body: p.intl.string(p.t.GtUrGB)
+        title: h.intl.string(h.t.xxADho),
+        body: h.intl.string(h.t.GtUrGB)
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -64,15 +64,15 @@ function g(e) {
     return e
   }({
     icon: n(639525),
-    title: p.intl.string(p.t.r0ObgY),
-    body: p.intl.string(p.t.hc6XFx),
+    title: h.intl.string(h.t.r0ObgY),
+    body: h.intl.string(h.t.hc6XFx),
     hint: f,
-    notifType: h.n0.OopWelcomeNudge
+    notifType: p.n0.OopWelcomeNudge
   }, e), {
-    trackView: b,
-    trackClick: v
-  } = (0, u.R)(O, {
-    notif_type: O
+    trackView: O,
+    trackClick: b
+  } = (0, u.R)(_, {
+    notif_type: _
   });
   return {
     icon: l,
@@ -84,20 +84,20 @@ function g(e) {
         textAlign: "center",
         padding: 2
       },
-      children: p.intl.string(p.t["9MyuT0"])
+      children: h.intl.string(h.t["9MyuT0"])
     }),
-    confirmText: t ? p.intl.string(p.t.TxyTbm) : true,
+    confirmText: t ? h.intl.string(h.t.TxyTbm) : true,
     onConfirmClick: t ? () => {
-      v("unlock"), s.Z.setInputLocked(false, (0, d.getPID)())
+      b("unlock"), s.Z.setInputLocked(false, (0, d.getPID)())
     } : true,
     onNotificationShow: () => {
-      b(), t && (0, o.Q3)(r.z.OVERLAY_OOP_WELCOME_SWITCH_FROM_IP_NUX)
+      O(), t && (0, o.Q3)(r.z.OVERLAY_OOP_WELCOME_SWITCH_FROM_IP_NUX)
     },
     onNotificationClick: (e, t) => {
-      v("unlock"), a.default.isOverlayOOPEnabledForPid((0, d.getPID)()) ? s.Z.setInputLocked(false, (0, d.getPID)()) : c.default.isInstanceLocked() && s.Z.setInstanceLocked(false)
+      b("unlock"), a.default.isOverlayOOPEnabledForPid((0, d.getPID)()) ? s.Z.setInputLocked(false, (0, d.getPID)()) : c.default.isInstanceLocked() && s.Z.setInstanceLocked(false)
     },
     onDismissClick: () => {
-      v("dismiss")
+      b("dismiss")
     }
   }
 }

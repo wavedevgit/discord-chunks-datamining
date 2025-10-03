@@ -2,14 +2,14 @@
 /** chunk id: 624864, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => O
+  Z: () => v
 }), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk237997 = require("./237997.js"),
   Chunk823379 = require("./823379.js"),
   Chunk486016 = require("./486016.js"),
-  Chunk981631 = require("./981631.js");
+  Chunk987650 = require("./987650.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -83,7 +83,40 @@ function b(e) {
   } = e;
   return n ? m.notificationSettings.add(t) : m.notificationSettings.delete(t), m.notificationSettings = new Set(m.notificationSettings), true
 }
-class y extends(r = Chunk442837.ZP.PersistedStore) {
+
+function y(e) {
+  switch (e) {
+    case c.n0.TextChat:
+      return l.i.TEXT_CHAT;
+    case c.n0.WelcomeNudge:
+    case c.n0.OopWelcomeNudge:
+      return l.i.WELCOME_GENERAL;
+    case c.n0.GoLiveNudge:
+    case c.n0.GoLiveNonVoiceNudge:
+      return l.i.GO_LIVE_NUDGE;
+    case c.n0.NowPlayingNotification:
+      return l.i.NOW_PLAYING;
+    case c.n0.StreamWatchNudge:
+      return l.i.FRIEND_STREAM_WATCH_NUDGE;
+    case c.n0.ClipsReminderNotification:
+    case c.n0.ClipsNotification:
+      return l.i.CLIPS;
+    case c.n0.RequestToStream:
+      return l.i.REQUEST_TO_STREAM;
+    case c.n0.ActivityUserJoin:
+    case c.n0.ActivityInvite:
+    case c.n0.SendGameInvitesNotification:
+      return l.i.GAME_ACTIVITY;
+    case c.n0.IncomingCall:
+    case c.n0.NewsNudge:
+    case c.n0.KeybindIndicatorsNotification:
+    case c.n0.OverlayCrashed:
+      return null;
+    default:
+      (0, s.vE)(e)
+  }
+}
+class O extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     var t;
     let n = h();
@@ -98,22 +131,22 @@ class y extends(r = Chunk442837.ZP.PersistedStore) {
     var t, n;
     return null != e && null != (n = null == (t = m.gameSettings[e]) ? true : t.limitedInteractionOverride) && n
   }
-  isNotificationDisabled(e) {
+  isNotificationDisabledBySetting(e) {
     return m.notificationSettings.has(e)
+  }
+  isNotificationDisabled(e) {
+    let t = y(e);
+    return null != t && m.notificationSettings.has(t)
   }
   getDisabledNotifications() {
     return m.notificationSettings
   }
+  getDisabledSettingByNotificationType(e) {
+    return y(e)
+  }
 }
-u(y, "displayName", "OverlaySettingsStore"), u(y, "persistKey", "OverlaySettingsStore"), u(y, "migrations", [e => {
-  var t;
-  let n = o.default.getTextChatNotificationMode() === c.Ypu.DISABLED,
-    r = false === o.default.showInviteNotification;
-  return _(d({}, e), {
-    notificationSettings: new Set([n ? l.OverlayNotificationDisabledSetting.TEXT_CHAT : true, r ? l.OverlayNotificationDisabledSetting.GAME_ACTIVITY : true, ...Array.from(null != (t = e.notificationSettings) ? t : [])].filter(s.lm))
-  })
-}]);
-let O = new y(Chunk570140.Z, {
+u(O, "displayName", "OverlaySettingsStore"), u(O, "persistKey", "OverlaySettingsStore");
+let v = new O(Chunk570140.Z, {
   LOGOUT: p,
   OVERLAY_SET_LIMITED_INTERACTION_OVERRIDE: E,
   OVERLAY_SET_NOTIFICATION_DISABLED_SETTING: b

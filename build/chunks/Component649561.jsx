@@ -81,13 +81,13 @@ class T extends Chunk647438.PureComponent {
       observe: false,
       children: (0, Chunk951288.jsx)(Chunk481060.f6W, {
         theme: Chunk981631.BRd.DARK,
-        children: r => (0, i.jsxs)(h.P3F, {
+        children: r => (0, i.jsxs)(p.P3F, {
           innerRef: this.contentDomRef,
           className: o()(r, I.container),
           onClick: e => e.stopPropagation(),
           children: [(0, i.jsx)(m.ZP, {
             expand: true,
-            icon: (0, i.jsx)(O.Z, {
+            icon: (0, i.jsx)(_.Z, {
               width: 40,
               height: 40,
               className: I.notificationIcon
@@ -129,7 +129,7 @@ class T extends Chunk647438.PureComponent {
     }), P(this, "handleReload", e => {
       this.setState({
         busy: true
-      }), N(), p.Z.track(C.rMx.NOTIFICATION_CLICKED, {
+      }), N(), h.Z.track(C.rMx.NOTIFICATION_CLICKED, {
         notif_type: Z.n0.OverlayCrashed,
         action_type: "reload"
       }, true), e.stopPropagation(), setTimeout(() => location.reload(true), 200)
@@ -159,11 +159,11 @@ class k extends Chunk647438.PureComponent {
       error: e,
       info: t
     });
-    let i = (0, v.getPID)(),
-      r = (0, v.getRPCAuthToken)();
+    let i = (0, b.getPID)(),
+      r = (0, b.getRPCAuthToken)();
     (0, f.lW)({
       type: C.BmY.DISPATCH,
-      pid: (0, v.getPID)(),
+      pid: (0, b.getPID)(),
       token: r,
       payloads: [{
         type: "OVERLAY_CRASHED",
@@ -175,10 +175,10 @@ class k extends Chunk647438.PureComponent {
         pid: i
       }]
     }), setImmediate(() => window.addEventListener("click", N));
-    let s = (0, _.V6)(e, E.gl.Hook, {
+    let s = (0, v.V6)(e, E.gl.Hook, {
       extra: t
     });
-    p.Z.track(C.rMx.APP_CRASHED, {
+    h.Z.track(C.rMx.APP_CRASHED, {
       path: n.pathname,
       extra: t,
       error_message: e.message,

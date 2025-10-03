@@ -1,8 +1,8 @@
 /** Chunk was on 50751 **/
 /** chunk id: 421824, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  f: () => m,
-  y: () => f
+  f: () => g,
+  y: () => m
 }), require("./35282.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -12,26 +12,27 @@ var Chunk481060 = require("./481060.js"),
   Chunk556296 = require("./556296.js"),
   Chunk13140 = require("./13140.js"),
   Chunk44359 = require("./44359.jsx"),
+  Chunk624864 = require("./624864.js"),
   Chunk620954 = require("./620954.js"),
   Chunk987650 = require("./987650.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function f() {
-  if (Chunk522474.Z.getWindowOpen(Chunk981631.KJ3.ACTIVITY_POPOUT)) return null;
+function m() {
+  if (Chunk624864.Z.isNotificationDisabled(Chunk987650.n0.ClipsReminderNotification) || Chunk522474.Z.getWindowOpen(Chunk981631.KJ3.ACTIVITY_POPOUT)) return null;
   let {
     trackView: e,
     trackClick: t
   } = (0, Chunk620954.R)(Chunk987650.n0.ClipsReminderNotification, {
     notif_type: Chunk987650.n0.ClipsReminderNotification
-  }), n = Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_CLIP), f = Chunk435064.Z.getSettings().clipsEnabled;
-  if (null == require || !f) return null;
-  let m = Chunk13140.BB(require.shortcut, true);
+  }), n = Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_CLIP), m = Chunk435064.Z.getSettings().clipsEnabled;
+  if (null == require || !m) return null;
+  let g = Chunk13140.BB(require.shortcut, true);
   return {
     title: Chunk388032.intl.format(Chunk388032.t.S5uhCA, {
-      keybind: m,
+      keybind: g,
       keybindHook: (e, t) => (0, i.jsx)(u.t, {
-        keybind: m.split("+")
+        keybind: g.split("+")
       }, t)
     }),
     icon: (0, Chunk951288.jsx)(Chunk481060.AlX, {
@@ -47,12 +48,12 @@ function f() {
   }
 }
 
-function m(e) {
+function g(e) {
   let {
     trackView: t,
     trackClick: n
-  } = (0, c.R)(d.n0.ClipsNotification, {
-    notif_type: d.n0.ClipsNotification
+  } = (0, d.R)(h.n0.ClipsNotification, {
+    notif_type: h.n0.ClipsNotification
   });
   return {
     title: e,

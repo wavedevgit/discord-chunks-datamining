@@ -26,9 +26,9 @@ function u(e) {
     shouldShow: a
   } = e, u = (0, r.e7)([o.ZP], () => o.ZP.getKeybindForAction(n, false, true));
   if (null == u || !a) return null;
-  let h = l.BB(u.shortcut),
-    p = d[n],
-    f = t ? p.slash : p.default;
+  let p = l.BB(u.shortcut),
+    h = d[n],
+    f = t ? h.slash : h.default;
   return (0, i.jsxs)("div", {
     className: c.keybindIndicator,
     children: [(0, i.jsx)(f, {
@@ -38,7 +38,7 @@ function u(e) {
     }), (0, i.jsx)(s.Text, {
       variant: "text-xxs/semibold",
       className: c.keybindIndicatorText,
-      children: h
+      children: p
     })]
   })
 }

@@ -1,7 +1,7 @@
 /** Chunk was on 50751 **/
 /** chunk id: 585708, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => b
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -15,6 +15,7 @@ var Chunk13245 = require("./13245.js"),
   Chunk358085 = require("./358085.js"),
   Chunk998502 = require("./998502.js"),
   Chunk145597 = require("./145597.js"),
+  Chunk624864 = require("./624864.js"),
   Chunk610394 = require("./610394.js"),
   Chunk516542 = require("./516542.jsx"),
   Chunk618373 = require("./618373.jsx"),
@@ -23,18 +24,19 @@ var Chunk13245 = require("./13245.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function S(e, t, n, S) {
-  var b;
+function b(e, t, n, b) {
+  var x;
+  if (f.Z.isNotificationDisabled(v.n0.TextChat)) return (0, u.GN)(c.Ay, c.yk), null;
   let {
-    icon: x,
-    title: j,
-    body: I
+    icon: j,
+    title: I,
+    body: C
   } = (0, a.Xi)(e, t, n), {
-    trackView: C,
-    trackClick: Z
-  } = (0, y.R)(O.n0.TextChat, {
-    notif_type: O.n0.TextChat,
-    notif_user_id: null == (b = t.author) ? true : b.id,
+    trackView: Z,
+    trackClick: N
+  } = (0, O.R)(v.n0.TextChat, {
+    notif_type: v.n0.TextChat,
+    notif_user_id: null == (x = t.author) ? true : x.id,
     message_id: t.id,
     message_type: t.type,
     guild_id: e.guild_id,
@@ -42,23 +44,23 @@ function S(e, t, n, S) {
     channel_type: e.type
   });
   return {
-    icon: x,
-    title: j,
+    icon: j,
+    title: I,
     body: t.content.length > 0 ? (0, o.ZP)(t, {
       noStyleAndInteraction: true,
       formatInline: true,
       hideSimpleEmbedContent: false
-    }).content : I,
-    hint: (e, t) => e && !t ? null : (0, g.Q)((0, y.P)(), v.t.ykjOAA, v.intl.string(v.t.jZkzVF)),
+    }).content : C,
+    hint: (e, t) => e && !t ? null : (0, y.Q)((0, O.P)(), S.t.ykjOAA, S.intl.string(S.t.jZkzVF)),
     maxBodyLines: 2,
-    renderFooter: (n, r, l) => n && !l ? (0, i.jsx)(m.Z, {
+    renderFooter: (n, r, l) => n && !l ? (0, i.jsx)(g.Z, {
       id: r,
       replyToMessageId: t.id,
       channel: e,
-      onSend: () => Z("send")
+      onSend: () => N("send")
     }) : null,
     onNotificationShow: () => {
-      S && (0, u.GN)(c.Ay, c.yk), C()
+      b && (0, u.GN)(c.Ay, c.yk), Z()
     },
     onNotificationClick: () => {
       let n = (0, p.getPID)();
@@ -66,10 +68,10 @@ function S(e, t, n, S) {
         section: E.jXE.OVERLAY,
         object: E.qAy.ACK_TEXT_CHAT_NOTIFICATION,
         objectType: E.Qqv.ACK_SEMI_AUTOMATIC
-      }, true, true, t.id), f.ZP.isInputLocked(n) ? (Z("unlock"), r.Z.setInputLocked(false, n)) : (Z("jump"), (0, s.uL)(E.Z5c.CHANNEL(e.guild_id, e.id, t.id)), d.isPlatformEmbedded && h.ZP.focus())
+      }, true, true, t.id), m.ZP.isInputLocked(n) ? (N("unlock"), r.Z.setInputLocked(false, n)) : (N("jump"), (0, s.uL)(E.Z5c.CHANNEL(e.guild_id, e.id, t.id)), d.isPlatformEmbedded && h.ZP.focus())
     },
     onDismissClick: () => {
-      Z("dismiss")
+      N("dismiss")
     }
   }
 }

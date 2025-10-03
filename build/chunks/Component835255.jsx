@@ -39,8 +39,8 @@ function A(e) {
     isOwner: C
   } = e, k = i.useRef(null), Z = i.useRef(null), D = t.collectiblesItem, {
     analyticsLocations: _
-  } = (0, d.ZP)(), R = (0, c.Z)(k), L = (0, l.TH)(), U = i.useCallback(() => {
-    if (L.pathname.startsWith(S.Z5c.COLLECTIBLES_SHOP)) {
+  } = (0, d.ZP)(), L = (0, c.Z)(k), R = (0, l.TH)(), U = i.useCallback(() => {
+    if (R.pathname.startsWith(S.Z5c.COLLECTIBLES_SHOP)) {
       let e = f.Z.getProduct(t.skuId),
         n = f.Z.getCategoryForProduct(t.skuId);
       if (null != e && null != n) {
@@ -59,7 +59,7 @@ function A(e) {
         return
       }
     }(0, x.closeUserProfileModal)(), (0, j.uL)("".concat(S.Z5c.COLLECTIBLES_SHOP, "#itemSkuId=").concat(t.skuId))
-  }, [L.pathname, t.skuId, _]), G = () => {
+  }, [R.pathname, t.skuId, _]), G = () => {
     (0, O.Er)({
       wishlistId: A,
       action: I.NW.WISHLIST_ITEM_CLICKED,
@@ -112,7 +112,7 @@ function A(e) {
                 className: N.profileEffectPreview,
                 children: (0, r.jsx)(y.Z, {
                   skuId: D.skuId,
-                  isHovering: R,
+                  isHovering: L,
                   isPurchased: false,
                   removeSetHeight: true
                 })
@@ -123,7 +123,7 @@ function A(e) {
                 children: (0, r.jsx)(p.R, {
                   item: D,
                   user: n,
-                  isHighlighted: R,
+                  isHighlighted: L,
                   isPurchased: false,
                   avatarSize: o.EFr.SIZE_80
                 })
@@ -136,7 +136,7 @@ function A(e) {
                   children: (0, r.jsx)(h.Z, {
                     user: n,
                     nameplate: D,
-                    isHighlighted: R,
+                    isHighlighted: L,
                     showPlaceholderUser: true,
                     showStatus: true,
                     isPurchased: false,
@@ -149,7 +149,7 @@ function A(e) {
                   children: (0, r.jsx)(h.Z, {
                     user: n,
                     nameplate: D,
-                    isHighlighted: R,
+                    isHighlighted: L,
                     showPlaceholderUser: true,
                     showStatus: true,
                     isPurchased: false,
