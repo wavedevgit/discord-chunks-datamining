@@ -433,7 +433,7 @@ class L extends Chunk839548.Z {
         this.pttReleaseDelay = t.pttReleaseDelay;
         break;
       case v.pM.VOICE_ACTIVITY:
-        this.vadThreshold = t.vadThreshold, this.vadAutoThreshold = t.vadAutoThreshold, this.vadUseKrisp = t.vadUseKrisp, this.vadLeading = t.vadLeading, this.vadTrailing = t.vadTrailing, this.vadKrispActivationThreshold = t.vadKrispActivationThreshold;
+        this.vadThreshold = t.vadThreshold, this.vadAutoThreshold = t.vadAutoThreshold, this.vadUseKrisp = t.vadUseKrisp, this.vadLeading = t.vadLeading, this.vadTrailing = t.vadTrailing, this.vadKrispActivationThreshold = t.vadKrispActivationThreshold, this.vadDuringPreProcess = t.vadDuringPreProcess;
         break;
       default:
         throw Error("Unknown Input Mode: ".concat(e))
@@ -671,7 +671,7 @@ class L extends Chunk839548.Z {
     switch (this.inputMode) {
       case Chunk149396.pM.VOICE_ACTIVITY:
         return {
-          vadThreshold: this.vadThreshold, vadAutoThreshold: this.vadAutoThreshold ? Chunk916057.a.VERY_AGGRESSIVE : Chunk916057.a.DISABLED, vadUseKrisp: this.vadUseKrisp, vadLeading: this.vadLeading, vadTrailing: this.vadTrailing, vadKrispActivationThreshold: this.vadKrispActivationThreshold
+          vadThreshold: this.vadThreshold, vadAutoThreshold: this.vadAutoThreshold ? Chunk916057.a.VERY_AGGRESSIVE : Chunk916057.a.DISABLED, vadUseKrisp: this.vadUseKrisp, vadLeading: this.vadLeading, vadTrailing: this.vadTrailing, vadKrispActivationThreshold: this.vadKrispActivationThreshold, vadDuringPreProcess: this.vadDuringPreProcess
         };
       case Chunk149396.pM.PUSH_TO_TALK:
         return {
@@ -838,7 +838,7 @@ class L extends Chunk839548.Z {
     this.conn.mergeUsers(e), this.emit(m.Sh.UsersMerged, e)
   }
   constructor(e, t, n) {
-    super(e, t), I(this, "mediaEngineConnectionId", "Native-".concat(P++)), I(this, "goLiveSourceIdentifier", true), I(this, "selfVideo", false), I(this, "forceAudioNormal", false), I(this, "forceAudioPriority", false), I(this, "codecs", []), I(this, "videoEncoderFallbackPending", false), I(this, "desktopDegradationPreference", (0, b.zS)().DegradationPreference.MAINTAIN_FRAMERATE), I(this, "sourceDesktopDegradationPreference", (0, b.zS)().DegradationPreference.DISABLED), I(this, "videoDegradationPreference", (0, b.zS)().DegradationPreference.BALANCED), I(this, "localPans", {}), I(this, "remoteAudioSSRCs", {}), I(this, "remoteVideoSSRCs", {}), I(this, "inputMode", v.pM.VOICE_ACTIVITY), I(this, "vadThreshold", false), I(this, "vadAutoThreshold", true), I(this, "vadKrispActivationThreshold", .5), I(this, "vadUseKrisp", true), I(this, "vadLeading", 5), I(this, "vadTrailing", 25), I(this, "pttReleaseDelay", 20), I(this, "soundshareActive", false), I(this, "soundshareId", null), I(this, "soundshareSentSpeakingEvent", false), I(this, "echoCancellation", true), I(this, "noiseSuppression", true), I(this, "automaticGainControl", {
+    super(e, t), I(this, "mediaEngineConnectionId", "Native-".concat(P++)), I(this, "goLiveSourceIdentifier", true), I(this, "selfVideo", false), I(this, "forceAudioNormal", false), I(this, "forceAudioPriority", false), I(this, "codecs", []), I(this, "videoEncoderFallbackPending", false), I(this, "desktopDegradationPreference", (0, b.zS)().DegradationPreference.MAINTAIN_FRAMERATE), I(this, "sourceDesktopDegradationPreference", (0, b.zS)().DegradationPreference.DISABLED), I(this, "videoDegradationPreference", (0, b.zS)().DegradationPreference.BALANCED), I(this, "localPans", {}), I(this, "remoteAudioSSRCs", {}), I(this, "remoteVideoSSRCs", {}), I(this, "inputMode", v.pM.VOICE_ACTIVITY), I(this, "vadThreshold", false), I(this, "vadAutoThreshold", true), I(this, "vadKrispActivationThreshold", .5), I(this, "vadUseKrisp", true), I(this, "vadLeading", 5), I(this, "vadTrailing", 25), I(this, "vadDuringPreProcess", false), I(this, "pttReleaseDelay", 20), I(this, "soundshareActive", false), I(this, "soundshareId", null), I(this, "soundshareSentSpeakingEvent", false), I(this, "echoCancellation", true), I(this, "noiseSuppression", true), I(this, "automaticGainControl", {
       enabled: true
     }), I(this, "noiseCancellation", false), I(this, "noiseCancellationDuringProcessing", false), I(this, "voiceFilterId", null), I(this, "experimentalEncoders", false), I(this, "hardwareH264", true), I(this, "softwareH264", true), I(this, "attenuationFactor", .5), I(this, "attenuateWhileSpeakingSelf", false), I(this, "attenuateWhileSpeakingOthers", true), I(this, "qos", true), I(this, "conn", true), I(this, "minimumJitterBufferLevel", 0), I(this, "postponeDecodeLevel", 100), I(this, "reconnectInterval", 6e4), I(this, "keyframeInterval", 0), I(this, "clipsKeyFrameInterval", 0), I(this, "videoQualityMeasurement", ""), I(this, "videoEncoderExperiments", ""), I(this, "numFastUdpReconnects", 0), I(this, "simulcastLQDisabledSsrc", true), I(this, "lastPreparedTransitionId", false), I(this, "lastExecutedTransitionId", false), I(this, "logger", true), I(this, "transportInfo", true), I(this, "beginInitializeAt", true), I(this, "onConnectCallbackAt", true), I(this, "onVideoCodecsCallbackAt", true), I(this, "onEncryptionModesCallbackAt", true), I(this, "handleSpeakingNative", (e, t) => {
       let n = v.Dg.NONE;
