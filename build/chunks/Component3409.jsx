@@ -373,7 +373,7 @@ function eP(e) {
       if (null == eX) return;
       await (0, d.tZ)();
       let n = U.Z.getPaymentSource(eX);
-      null != n && (e(n), t(false))
+      null != n && (e(n), t(false), M.Z.clearRedirectedPaymentSourceId())
     })()
   }, [eX]);
   let e0 = i.useCallback(function(e) {

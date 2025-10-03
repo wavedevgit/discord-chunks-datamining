@@ -158,6 +158,9 @@ class V extends(r = Chunk442837.ZP.Store) {
   get redirectedPaymentSourceId() {
     return C
   }
+  clearRedirectedPaymentSourceId() {
+    C = null
+  }
   getCreditCardInfo() {
     return {
       name: m
