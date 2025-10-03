@@ -96,15 +96,15 @@ let P = e => {
             let {
               default: e
             } = await n.e("36340").then(n.bind(n, 874533));
-            return n => (0, r.jsx)(e, E(x({}, n), {
-              product: t
+            return t => (0, r.jsx)(e, E(x({}, t), {
+              product: R
             }))
           }), T(j.L.USER_DISMISS))
         } catch (e) {
           U(null), (0, c.showToast)((0, c.createToast)(v.intl.string(v.t.F8FvU1), c.ToastType.FAILURE)), c.uvj.announce(v.intl.string(v.t.F8FvU1))
         }
       }
-    }, [I, Z, k, t, N, T, L, U]);
+    }, [I, Z, k, R, N, T, L, U]);
   if (!C && !Z || null == w || V) return null;
   if (z || G || H) {
     let e = v.intl.string(v.t["50TX9v"]);

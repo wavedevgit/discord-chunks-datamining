@@ -18,18 +18,18 @@ var Chunk951288 = require("./951288.js"),
   Chunk310582 = require("./310582.js");
 let C = e => {
   var t, n, C;
-  let _, {
-    category: h,
+  let h, {
+    category: _,
     subblock: m,
     badgeText: b,
     handleTransition: E
   } = e;
-  null != m && (_ = null == (t = c.Z.getCategoryByStoreListingId(null == m ? true : m.categoryStoreListingId)) ? true : t.skuId);
-  let S = null != (n = null != _ ? _ : null == h ? true : h.skuId) ? n : "",
+  null != m && (h = null == (t = c.Z.getCategoryByStoreListingId(null == m ? true : m.categoryStoreListingId)) ? true : t.skuId);
+  let S = null != (n = null != h ? h : null == _ ? true : _.skuId) ? n : "",
     {
       handleCardVisibilityChange: v
     } = (0, u.E)(S, "home", "marketing featured block"),
-    x = (0, d.YG)(h, m),
+    x = (0, d.YG)(_, m),
     O = l.useRef(null),
     T = null == m ? true : m.bodyText,
     y = (0, o.sp)();

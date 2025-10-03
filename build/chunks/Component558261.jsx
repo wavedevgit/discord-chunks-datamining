@@ -218,9 +218,9 @@ let N = e => {
       isPremiumUser: d,
       tab: c,
       hasDiscountOffer: F
-    }), U = (0, _.sp)(), {
+    }), U = (0, h.sp)(), {
       analyticsLocations: V
-    } = (0, o.ZP)(i.Z.COLLECTIBLES_SHOP_CARD), z = (0, x.J7)(t, i.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON), [G, K] = (0, a.Wu)([h.Z], () => [h.Z.isClaiming === t.skuId, null != h.Z.isClaiming && h.Z.isClaiming !== t.skuId]), {
+    } = (0, o.ZP)(i.Z.COLLECTIBLES_SHOP_CARD), z = (0, x.J7)(t, i.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON), [G, K] = (0, a.Wu)([_.Z], () => [_.Z.isClaiming === t.skuId, null != _.Z.isClaiming && _.Z.isClaiming !== t.skuId]), {
       handleUseNow: q,
       isApplying: Y
     } = (0, E.W)({

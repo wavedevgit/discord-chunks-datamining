@@ -43,7 +43,7 @@ function y(e) {
     currentPage: A,
     totalCount: R,
     isFetchingResults: Z
-  } = (0, _.a)(), w = (0, i.Wu)([g.Z], () => g.Z.getProductsBySkus(B)), H = l.useCallback(() => {
+  } = (0, h.a)(), w = (0, i.Wu)([g.Z], () => g.Z.getProductsBySkus(B)), H = l.useCallback(() => {
     var e;
     null == y || null == (e = y.current) || e.scrollToTop({
       animate: true
@@ -55,9 +55,9 @@ function y(e) {
   let D = (0, f.a)(),
     M = l.useMemo(() => D(w), [D, w]);
   l.useEffect(() => {
-    n || (0, h.n)({
+    n || (0, _.n)({
       sessionId: k,
-      checkpoint: h.a.SHOP_RENDERED,
+      checkpoint: _.a.SHOP_RENDERED,
       tab: j,
       isFullScreen: a,
       unpublishedCategoriesShown: P,

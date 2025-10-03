@@ -34,7 +34,7 @@ let S = e => {
     enabled: L
   } = (0, i.WX)({
     location: "product_card_price"
-  }), k = l.useMemo(() => (0, d.BH)(t, x), [t, x]), I = (0, h.Iw)(t), P = null != I, {
+  }), k = l.useMemo(() => (0, d.BH)(t, x), [t, x]), I = (0, _.Iw)(t), P = null != I, {
     displayPrices: N,
     hasSufficientOrbs: B
   } = (0, m.Ip)({
@@ -56,7 +56,7 @@ let S = e => {
     variant: "text-md/semibold",
     className: E.priceTag,
     children: b.intl.string(b.t.rt69oq)
-  }) : L ? (0, r.jsx)(_.e, {
+  }) : L ? (0, r.jsx)(h.e, {
     displayPrices: N,
     isPremiumUser: x,
     discount: k,

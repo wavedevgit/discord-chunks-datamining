@@ -2,7 +2,7 @@
 /** chunk id: 384067, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => h
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,13 +17,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk310582 = require("./310582.js");
-let _ = e => {
+let h = e => {
   var t, n, a;
   let {
-    wideBannerBlock: _,
-    handleTransition: h,
+    wideBannerBlock: h,
+    handleTransition: _,
     tab: m
-  } = e, b = null == (t = u.Z.getCategoryByStoreListingId(_.categoryStoreListingId)) ? true : t.skuId, E = l.useRef(null), S = l.useRef(null), [v, x] = l.useState();
+  } = e, b = null == (t = u.Z.getCategoryByStoreListingId(h.categoryStoreListingId)) ? true : t.skuId, E = l.useRef(null), S = l.useRef(null), [v, x] = l.useState();
   l.useEffect(() => {
     let e = S.current;
     if (null == e) return;
@@ -38,7 +38,7 @@ let _ = e => {
     {
       handleCardVisibilityChange: T
     } = (0, d.E)(O, "home", "marketing wide banner"),
-    y = _.bannerUrl;
+    y = h.bannerUrl;
   if (null == y) return null;
   let j = m === g.AW.ORBS;
   return (0, r.jsx)(i.$, {
@@ -57,7 +57,7 @@ let _ = e => {
         children: (0, r.jsx)("img", {
           ref: S,
           src: y,
-          alt: _.title,
+          alt: h.title,
           className: s()(C.wideBannerArt, {
             [C.wideBannerArtOrbs]: j
           }),
@@ -74,27 +74,27 @@ let _ = e => {
           className: C.wideBannerTextContainer,
           children: [(0, r.jsx)(o.X6q, {
             style: {
-              color: null != (n = _.bannerTextColor) ? n : "var(--header-primary)"
+              color: null != (n = h.bannerTextColor) ? n : "var(--header-primary)"
             },
             className: j ? C.wideBannerOrbsHeading : true,
             variant: j ? "heading-xl/bold" : "heading-lg/semibold",
-            children: _.title
+            children: h.title
           }), (0, r.jsx)(o.Text, {
             style: {
-              color: null != (a = _.bannerTextColor) ? a : "var(--text-muted)"
+              color: null != (a = h.bannerTextColor) ? a : "var(--text-muted)"
             },
             lineClamp: 2,
             variant: j ? "text-md/medium" : "text-sm/medium",
             children: j ? f.intl.format(f.t.SFFP7O, {
               helpdeskArticle: c.Z.getArticleURL(p.BhN.VIRTUAL_CURRENCY_LEARN_MORE)
-            }) : _.body
+            }) : h.body
           })]
         })
-      }), true !== _.disableCta && (0, r.jsx)("div", {
+      }), true !== h.disableCta && (0, r.jsx)("div", {
         className: C.wideBannerBlockButton,
         children: (0, r.jsx)(o.zxk, {
           variant: "overlay-primary",
-          onClick: () => h("shop wide banner", O),
+          onClick: () => _("shop wide banner", O),
           text: f.intl.string(f.t.jVcuVV)
         })
       })]

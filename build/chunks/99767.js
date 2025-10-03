@@ -28,21 +28,21 @@ let g = {
       setItemTypeFilter: p,
       reset: f,
       setCurrentTab: C
-    } = (0, o.S)(), _ = r.useMemo(() => e !== u.AW.ORBS || n ? (0, u.RE)(e) && a ? u.AW.CATALOG : e : u.AW.HOME, [e, n, a]), [h, m] = r.useState(_), [b, E] = r.useState(u.f7.VISIBLE);
+    } = (0, o.S)(), h = r.useMemo(() => e !== u.AW.ORBS || n ? (0, u.RE)(e) && a ? u.AW.CATALOG : e : u.AW.HOME, [e, n, a]), [_, m] = r.useState(h), [b, E] = r.useState(u.f7.VISIBLE);
     r.useEffect(() => {
-      C(h)
-    }, [h, C]), r.useEffect(() => {
-      m(_)
-    }, [_]);
+      C(_)
+    }, [_, C]), r.useEffect(() => {
+      m(h)
+    }, [h]);
     let {
       clearError: S
     } = (0, c.a)(), v = (0, l.k6)(), x = r.useCallback(async (e, n) => {
       if (S(), e === u.AW.CATALOG) f();
-      else if ((0, u.RE)(e) && e !== h) {
+      else if ((0, u.RE)(e) && e !== _) {
         let t = g[e];
         null != t ? p(t) : f()
       }
-      if (h === e) return;
+      if (_ === e) return;
       if (n) {
         let e;
         E(u.f7.OUT), await (e = 1.1 * u.lb, new Promise(t => setTimeout(t, e)))
@@ -51,9 +51,9 @@ let g = {
       m(r), n && E(u.f7.IN), t || v.push(d.Z5c.COLLECTIBLES_SHOP_WITH_TAB(r), {
         shallow: true
       }), E(u.f7.VISIBLE)
-    }, [v, t, a, p, f, h, S]);
+    }, [v, t, a, p, f, _, S]);
     return {
-      selectedTab: h,
+      selectedTab: _,
       transitionState: b,
       transitionToTab: x
     }

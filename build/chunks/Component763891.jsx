@@ -60,20 +60,20 @@ function A(e) {
   }, [Z, G]), X = (0, C.a)(), Q = l.useMemo(() => X(W.filter(e => {
     var t;
     return e.type === Y || e.type === a.Z.VARIANTS_GROUP && (null == (t = e.variants) ? true : t.some(e => e.type === Y)) === true
-  })), [W, Y, X]), J = (0, _.l)(Q);
+  })), [W, Y, X]), J = (0, h.l)(Q);
   l.useEffect(() => {
-    (0, h.n)({
+    (0, _.n)({
       sessionId: H,
-      checkpoint: h.a.SHOP_MOUNTED,
+      checkpoint: _.a.SHOP_MOUNTED,
       tab: Z,
       isFullScreen: A,
       unpublishedCategoriesShown: D,
       cacheDisabled: F
     })
   }, []), l.useEffect(() => {
-    n || (0, h.n)({
+    n || (0, _.n)({
       sessionId: H,
-      checkpoint: h.a.SHOP_RENDERED,
+      checkpoint: _.a.SHOP_RENDERED,
       tab: Z,
       isFullScreen: A,
       unpublishedCategoriesShown: D,

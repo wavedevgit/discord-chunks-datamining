@@ -96,7 +96,7 @@ let p = {
       peaking: t,
       transitioning: n,
       style: a
-    } = e, p = window.innerHeight, [C, _] = l.useState(false), h = f.map(e => {
+    } = e, p = window.innerHeight, [C, h] = l.useState(false), _ = f.map(e => {
       let {
         skuId: t
       } = e;
@@ -104,7 +104,7 @@ let p = {
     });
     return l.useEffect(() => {
       n && setTimeout(() => {
-        _(true)
+        h(true)
       }, d.lb)
     }, [n]), (0, r.jsx)("div", {
       style: a,
@@ -119,8 +119,8 @@ let p = {
           left: c,
           rotation: f,
           size: C,
-          skuId: _
-        } = e, m = null == (l = h[t]) ? true : l.items[0], b = null == (a = h[t]) ? true : a.type, E = b === i.Z.AVATAR_DECORATION ? 384 : 512;
+          skuId: h
+        } = e, m = null == (l = _[t]) ? true : l.items[0], b = null == (a = _[t]) ? true : a.type, E = b === i.Z.AVATAR_DECORATION ? 384 : 512;
         return (0, r.jsxs)("div", {
           className: g.asset,
           style: {
@@ -139,7 +139,7 @@ let p = {
             isPurchased: false,
             isHovering: true
           })]
-        }, _ + t)
+        }, h + t)
       })
     })
   }

@@ -34,9 +34,9 @@ let E = e => {
     product: t,
     isPartiallyOwnedBundle: j,
     isPurchased: y
-  }), P = (0, _.Iw)(t), {
+  }), P = (0, h.Iw)(t), {
     isOrbExclusive: N
-  } = (0, h.Ip)({
+  } = (0, _.Ip)({
     product: t,
     isPremiumUser: O,
     tab: v,

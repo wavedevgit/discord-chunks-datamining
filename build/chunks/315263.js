@@ -2,10 +2,11 @@
 /** chunk id: 315263, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  default: () => G
-}), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js"), require("./35282.js");
+  default: () => H
+}), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js"), require("./35282.js"), require("./784620.js"), require("./973216.js");
 var Chunk873546 = require("./873546.js"),
   Chunk636977 = require("./636977.js"),
+  Chunk948789 = require("./948789.js"),
   Chunk570140 = require("./570140.js"),
   Chunk493683 = require("./493683.js"),
   Chunk447543 = require("./447543.js"),
@@ -19,11 +20,14 @@ var Chunk873546 = require("./873546.js"),
   Chunk506895 = require("./506895.js"),
   Chunk960904 = require("./960904.js"),
   Chunk830121 = require("./830121.js"),
+  Chunk836768 = require("./836768.js"),
   Chunk15274 = require("./15274.jsx"),
   Chunk924301 = require("./924301.js"),
   Chunk543842 = require("./543842.js"),
   Chunk754688 = require("./754688.js"),
   Chunk336197 = require("./336197.js"),
+  Chunk937797 = require("./937797.js"),
+  Chunk36243 = require("./36243.js"),
   Chunk977156 = require("./977156.js"),
   Chunk110560 = require("./110560.jsx"),
   Chunk540709 = require("./540709.jsx"),
@@ -37,62 +41,63 @@ var Chunk873546 = require("./873546.js"),
   Chunk782568 = require("./782568.js"),
   Chunk981631 = require("./981631.js");
 require("./215023.js");
-var Chunk46140 = require("./46140.js");
-async function j(e, t) {
-  await a.Z.dispatch({
+var Chunk49898 = require("./49898.js"),
+  Chunk46140 = require("./46140.js");
+async function Z(e, t) {
+  await o.Z.dispatch({
     type: "INVITE_MODAL_OPEN",
     invite: e,
     code: t,
-    context: x.IlC.APP
+    context: U.IlC.APP
   })
 }
-async function k(e) {
+async function F(e) {
   var t;
-  let n = C.Z.getInvite(e.code);
+  let n = w.Z.getInvite(e.code);
   if (null == n) {
     let {
       invite: t
-    } = await s.ZP.resolveInvite(e.code, "Markdown Link");
+    } = await l.ZP.resolveInvite(e.code, "Markdown Link");
     n = t
   }
   if (null == n) return;
-  if (n.state === x.r2o.EXPIRED || n.state === x.r2o.BANNED || n.state === x.r2o.ERROR) return void await j(n, e.code);
-  let r = P.ZP.getFlattenedGuildIds(),
+  if (n.state === U.r2o.EXPIRED || n.state === U.r2o.BANNED || n.state === U.r2o.ERROR) return void await Z(n, e.code);
+  let r = x.ZP.getFlattenedGuildIds(),
     i = null == n || null == (t = n.guild) ? true : t.id;
-  null != i && r.includes(i) ? s.ZP.transitionToInviteSync(n) : await j(n, e.code)
+  null != i && r.includes(i) ? l.ZP.transitionToInviteSync(n) : await Z(n, e.code)
 }
-let U = {
+let V = {
   skipExtensionCheck: true,
   analyticsLocations: []
 };
 
-function G(e) {
+function H(e) {
   var t;
   let {
-    skipExtensionCheck: a,
-    analyticsLocations: s
-  } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : U, C = (0, g.zO)(e);
-  if (null != C && (C.type === m.g.INVITE || C.type === m.g.EMBEDDED_ACTIVITY_INVITE)) return e => (null == e || e.preventDefault(), k(C), true);
-  if (null != C && (C.type === m.g.APP_DIRECTORY_PROFILE || C.type === m.g.APP_DIRECTORY_STOREFRONT || C.type === m.g.APP_DIRECTORY_STOREFRONT_SKU)) return t => {
+    skipExtensionCheck: o,
+    analyticsLocations: l
+  } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : V, w = (0, E.zO)(e);
+  if (null != w && (w.type === g.g.INVITE || w.type === g.g.EMBEDDED_ACTIVITY_INVITE)) return e => (null == e || e.preventDefault(), F(w), true);
+  if (null != w && (w.type === g.g.APP_DIRECTORY_PROFILE || w.type === g.g.APP_DIRECTORY_STOREFRONT || w.type === g.g.APP_DIRECTORY_STOREFRONT_SKU)) return t => {
     var i, a;
     null == t || t.preventDefault();
     let {
       code: o
-    } = C, {
+    } = w, {
       applicationId: s,
       skuId: l
-    } = C.type === m.g.APP_DIRECTORY_PROFILE || C.type === m.g.APP_DIRECTORY_STOREFRONT ? {
+    } = w.type === g.g.APP_DIRECTORY_PROFILE || w.type === g.g.APP_DIRECTORY_STOREFRONT ? {
       applicationId: o,
       skuId: true
-    } : null != (i = (0, _.Q)(o)) ? i : {
+    } : null != (i = (0, p.Q)(o)) ? i : {
       applicationId: true,
       skuId: true
-    }, c = null != (a = R.Z.getGuildId()) ? a : true;
-    return null == s ? (0, L.Z)(e) : (w.default.track(x.rMx.APP_DIRECTORY_PROFILE_EMBED_URL_CLICKED, {
+    }, c = null != (a = L.Z.getGuildId()) ? a : true;
+    return null == s ? (0, k.Z)(e) : (M.default.track(U.rMx.APP_DIRECTORY_PROFILE_EMBED_URL_CLICKED, {
       application_id: s,
       device_platform: r.tq ? "mobile_web" : "desktop_web",
       guild_id: c,
-      channel_id: N.Z.getChannelId()
+      channel_id: D.Z.getChannelId()
     }), Promise.resolve().then(n.bind(n, 749681)).then(e => {
       let {
         transitionToGlobalDiscovery: t
@@ -104,58 +109,58 @@ function G(e) {
       t({
         tab: r.APPS,
         applicationId: s,
-        section: (0, y.Z)(i, C.type === m.g.APP_DIRECTORY_PROFILE ? i.ABOUT : i.STORE),
+        section: (0, v.Z)(i, w.type === g.g.APP_DIRECTORY_PROFILE ? i.ABOUT : i.STORE),
         skuId: l
       })
     })), true
   };
-  if (null != C && C.type === m.g.ACTIVITY_BOOKMARK) return e => {
+  if (null != w && w.type === g.g.ACTIVITY_BOOKMARK) return e => {
     var t, n;
     null == e || e.preventDefault();
     let {
       code: r,
       url: i
-    } = C, a = p.Z.getApplication(r), f = new URL(i), _ = null != (t = f.searchParams.get("referrer_id")) ? t : true, m = (0, d.Z)(), {
+    } = w, a = h.Z.getApplication(r), o = new URL(i), _ = null != (t = o.searchParams.get("referrer_id")) ? t : true, p = (0, f.Z)(), {
       currentChannelId: g,
       instanceId: E,
       isCurrentlyInInstance: b,
       canLaunchInChannel: y
-    } = (0, h.v)(r);
-    if (y) return !b && null != g && ((0, u.ur)(r, f.searchParams.get("link_id"), f.searchParams.get("custom_id")).then(async e => {
+    } = (0, m.v)(r);
+    if (y) return !b && null != g && ((0, d.ur)(r, o.searchParams.get("link_id"), o.searchParams.get("custom_id")).then(async e => {
       let {
         customId: t
       } = e;
-      await (0, l.G6)({
+      await (0, c.G6)({
         channelId: g,
         applicationId: r,
         isStart: null == E,
-        embeddedActivitiesManager: m,
+        embeddedActivitiesManager: p,
         customId: t,
         referrerId: _,
-        analyticsLocations: s
+        analyticsLocations: l
       })
     }).catch(() => {}), true);
     {
       let e = null == a || null == (n = a.bot) ? true : n.id;
-      return null != e && (o.Z.openPrivateChannel({
+      return null != e && (s.Z.openPrivateChannel({
         recipientIds: e
       }).then(async e => {
         let {
           customId: t
-        } = await (0, u.ur)(r, f.searchParams.get("link_id"), f.searchParams.get("custom_id"));
-        (0, c.Z)({
+        } = await (0, d.ur)(r, o.searchParams.get("link_id"), o.searchParams.get("custom_id"));
+        (0, u.Z)({
           targetApplicationId: r,
           channelId: e,
-          analyticsLocations: s,
+          analyticsLocations: l,
           customId: t,
           referrerId: _
         })
       }).catch(() => {}), true)
     }
   };
-  if (null != C && C.type === m.g.GUILD_PRODUCT) return e => {
+  if (null != w && w.type === g.g.GUILD_PRODUCT) return e => {
     null == e || e.preventDefault();
-    let [t, r] = C.code.split("-");
+    let [t, r] = w.code.split("-");
     return n.e("84239").then(n.bind(n, 838433)).then(e => {
       let {
         openGuildProductLink: n
@@ -163,27 +168,27 @@ function G(e) {
       n(t, r)
     }), true
   };
-  if (null != C && C.type === m.g.QUESTS_EMBED && (0, I.c)({
-      location: M.dr.EMBED_MOBILE
+  if (null != w && w.type === g.g.QUESTS_EMBED && (0, C.c)({
+      location: B.dr.EMBED_MOBILE
     })) return e => (null == e || e.preventDefault(), Promise.resolve().then(n.bind(n, 110560)).then(e => {
     let {
       navigateToQuestHome: t
     } = e;
     t({
       fromContent: i.j.QUEST_SHARE_LINK,
-      questId: C.code
+      questId: w.code
     })
   }), true);
   let {
-    host: P,
-    hostname: j,
-    pathname: G,
-    search: B,
-    hash: Z
-  } = null != (t = D.Z.toURLSafe(e)) ? t : {}, F = D.Z.isDiscordHostname(null != j ? j : null) || D.Z.isDiscordLocalhost(null != P ? P : null, null != j ? j : null);
-  if (F && ((null == G ? true : G.startsWith("/application-directory")) || (null == G ? true : G.startsWith("/discovery/applications")))) {
-    let e = G.split("/"),
-      t = null == G ? true : G.startsWith("/discovery/applications"),
+    host: x,
+    hostname: Z,
+    pathname: H,
+    search: Y,
+    hash: W
+  } = null != (t = j.Z.toURLSafe(e)) ? t : {}, K = j.Z.isDiscordHostname(null != Z ? Z : null) || j.Z.isDiscordLocalhost(null != x ? x : null, null != Z ? Z : null);
+  if (K && ((null == H ? true : H.startsWith("/application-directory")) || (null == H ? true : H.startsWith("/discovery/applications")))) {
+    let e = H.split("/"),
+      t = null == H ? true : H.startsWith("/discovery/applications"),
       r = e[t ? 3 : 2],
       i = "search" === r,
       a = t && "categories" === r && "featured" !== e[4];
@@ -191,7 +196,7 @@ function G(e) {
       let r, o, s;
       if (null == t || t.preventDefault(), i) {
         var l, c, u;
-        let e = new URLSearchParams(B);
+        let e = new URLSearchParams(Y);
         r = null != (l = e.get("q")) ? l : true, o = null != (c = e.get("category_id")) ? c : true, s = null != (u = e.get("page")) ? u : true
       } else a && (o = e[4]);
       return Promise.resolve().then(n.bind(n, 749681)).then(e => {
@@ -209,47 +214,69 @@ function G(e) {
       }), true
     }
   }
-  if (null != G && F && D.Z.isAppRoute(G)) {
+  if (null != H && K && j.Z.isAppRoute(H)) {
     let e = {
       navigationReplace: false,
       openChannel: true
     };
-    return null != B && (e.search = B), null != Z && (e.hash = Z), t => (null == t || t.preventDefault(), (0, v.Z)(G, e), true)
+    return null != Y && (e.search = Y), null != W && (e.hash = W), t => (null == t || t.preventDefault(), (0, T.Z)(H, e), true)
   }
-  if (null != G && F) {
+  if (null != H && K) {
     let {
       getOAuth2AuthorizeProps: t,
       openOAuth2ModalWithCreateGuildModal: r
     } = n(69580), i = t(e);
-    if (null != i) return e => (null == e || e.preventDefault(), null != C && C.type === m.g.APP_OAUTH2_LINK && f.ZP.trackWithMetadata(x.rMx.APP_OAUTH2_LINK_EMBED_URL_CLICKED, {
+    if (null != i) return e => (null == e || e.preventDefault(), null != w && w.type === g.g.APP_OAUTH2_LINK && _.ZP.trackWithMetadata(U.rMx.APP_OAUTH2_LINK_EMBED_URL_CLICKED, {
       application_id: i.clientId
     }), r(i), true)
   }
-  let V = (0, O.Ao)(G);
-  if (null != G && F && null != V) return e => {
+  let z = (0, I.Ao)(H);
+  if (null != H && K && null != z) return e => {
     null == e || e.preventDefault();
-    let t = R.Z.getGuildId();
-    null != V.guildId && "" !== V.guildId && V.guildId !== t && (0, v.Z)(x.Z5c.CHANNEL(V.guildId));
-    let n = b.ZP.getGuildScheduledEvent(V.guildEventId);
-    return null != n && (0, E.bO)({
+    let t = L.Z.getGuildId();
+    null != z.guildId && "" !== z.guildId && z.guildId !== t && (0, T.Z)(U.Z5c.CHANNEL(z.guildId));
+    let n = O.ZP.getGuildScheduledEvent(z.guildEventId);
+    return null != n && (0, y.bO)({
       eventId: n.id
     }), true
   };
-  if (F && (null == G ? true : G.startsWith("/settings/"))) {
+  if (K && (null == H ? true : H.startsWith("/settings/"))) {
     let {
       default: e
     } = n(722589), {
       openUserSettingsFromParsedUrl: t
-    } = n(518596), r = e(G, B);
+    } = n(518596), r = e(H, Y);
     if (null != r) return e => (null == e || e.preventDefault(), t({
       match: r,
-      analyticsLocations: s,
+      analyticsLocations: l,
       urlOrigin: "link_click"
     }), true)
   }
-  return F && (null == G ? true : G.startsWith("/discovery/quests")) ? e => (null == e || e.preventDefault(), (0, T.navigateToQuestHome)({
+  return K && (null == H ? true : H.startsWith("/discovery/quests")) ? e => (null == e || e.preventDefault(), (0, N.navigateToQuestHome)({
     fromContent: i.j.QUEST_BADGE
-  }), true) : F && (null == G ? true : G.startsWith("/discovery/servers")) ? e => (null == e || e.preventDefault(), Promise.resolve().then(n.bind(n, 749681)).then(e => {
+  }), true) : K && (null == H ? true : H.startsWith("/quest-home")) ? e => {
+    null == e || e.preventDefault();
+    let {
+      enabled: t
+    } = S.m8.getConfig({
+      location: B.dr.NAVIGATE_TO_QUEST_HOME_UTIL
+    });
+    return t || b.Z.setState({
+      selectedTab: G.GlobalDiscoveryTab.QUESTS
+    }), (0, a.uL)((t ? U.Z5c.QUEST_HOME_V2 : U.Z5c.QUEST_HOME) + (null != Y ? Y : "")), true
+  } : K && (null == H ? true : H.startsWith("/quest-preview")) ? e => {
+    null == e || e.preventDefault();
+    let {
+      enabled: t
+    } = S.m8.getConfig({
+      location: B.dr.NAVIGATE_TO_QUEST_HOME_UTIL
+    }), n = (0, A.T)({
+      location: B.dr.NAVIGATE_TO_QUEST_HOME_UTIL
+    });
+    if (t || b.Z.setState({
+        selectedTab: G.GlobalDiscoveryTab.QUESTS
+      }), n) return (0, a.uL)((t ? U.Z5c.QUEST_HOME_V2 : U.Z5c.QUEST_HOME) + "?tab=preview_tool&quest_id=".concat(H.split("/").at(false))), true
+  } : K && (null == H ? true : H.startsWith("/discovery/servers")) ? e => (null == e || e.preventDefault(), Promise.resolve().then(n.bind(n, 749681)).then(e => {
     let {
       transitionToGlobalDiscovery: t
     } = e, {
@@ -258,5 +285,5 @@ function G(e) {
     t({
       tab: r.SERVERS
     })
-  }), true) : a || null == (0, A.v)(e) ? true : t => (null == t || t.preventDefault(), S.Z.show(e), true)
+  }), true) : o || null == (0, P.v)(e) ? true : t => (null == t || t.preventDefault(), R.Z.show(e), true)
 }

@@ -67,12 +67,12 @@ let M = e => {
       {
         userProfile: H,
         wishlistId: W
-      } = (0, o.cj)([_.Z], () => ({
-        userProfile: null != c ? _.Z.getUserProfile(c.id) : null,
-        wishlistId: null != c ? _.Z.getFirstWishlistId(c.id) : null
+      } = (0, o.cj)([h.Z], () => ({
+        userProfile: null != c ? h.Z.getUserProfile(c.id) : null,
+        wishlistId: null != c ? h.Z.getFirstWishlistId(c.id) : null
       }), [c]);
     l.useEffect(() => {
-      null != c && null == H && (0, h.Z)(c.id, c.getAvatarURL(null, 80))
+      null != c && null == H && (0, _.Z)(c.id, c.getAvatarURL(null, 80))
     }, [c, H]), (0, m.k)(W);
     let U = (0, R.G)("CollectiblesShop"),
       {

@@ -2,7 +2,7 @@
 /** chunk id: 963278, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => h
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -18,15 +18,15 @@ var Chunk120356 = require("./120356.js"),
   Chunk653126 = require("./653126.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk310582 = require("./310582.js");
-let _ = e => {
+let h = e => {
   let {
     shelf: t,
     handleTransition: n,
     tab: l
-  } = e, _ = (0, s.e7)([o.default], () => o.default.getCurrentUser()), h = d.Z.useConfig({
+  } = e, h = (0, s.e7)([o.default], () => o.default.getCurrentUser()), _ = d.Z.useConfig({
     location: "ShelfBlock"
   }).showCardsV2;
-  return null == _ ? null : (0, r.jsxs)("div", {
+  return null == h ? null : (0, r.jsxs)("div", {
     className: a()(C.shelfBlockContainer, C.centeredSection),
     children: [(0, r.jsxs)("div", {
       className: C.blockHeader,
@@ -52,12 +52,12 @@ let _ = e => {
               pageSection: t.name,
               categoryPosition: 2
             },
-            children: h ? (0, r.jsx)(p.Z, {
+            children: _ ? (0, r.jsx)(p.Z, {
               skuId: e
             }, e) : (0, r.jsx)(g.Z, {
               product: s,
               category: a,
-              user: _,
+              user: h,
               tab: l
             }, e)
           }, e)

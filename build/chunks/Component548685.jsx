@@ -53,7 +53,7 @@ let P = e => {
   } = (0, O.Z)(P, H, A), G = (0, T.St)(W), K = (0, i.e7)([u.Z], () => u.Z.useReducedMotion), q = (0, i.e7)([g.Z], () => g.Z.isFocused()), Y = !K && q, {
     animationPhase: X,
     startAnimation: Q
-  } = (0, x.y)(), J = (0, _.sp)(), $ = null != (t = null == J ? true : J.sessionId) ? t : "", ee = l.useRef(null), et = l.useCallback(e => {
+  } = (0, x.y)(), J = (0, h.sp)(), $ = null != (t = null == J ? true : J.sessionId) ? t : "", ee = l.useRef(null), et = l.useCallback(e => {
     Q({
       isShuffling: false,
       onOutroComplete: () => M(e)
@@ -157,7 +157,7 @@ let P = e => {
       children: n ? (0, r.jsx)(r.Fragment, {
         children: [...Array(12)].map((e, t) => en ? (0, r.jsx)(v.Z, {}, t + 1) : (0, r.jsx)(b.K, {}, t + 1))
       }) : G.slice(0, N).map((e, t) => {
-        let n, l = h.Z.getCategoryForProduct(e.skuId);
+        let n, l = _.Z.getCategoryForProduct(e.skuId);
         if (null == e || null == l) return null;
         if (Y)
           if (X === x.g.SHUFFLE_OUT) return en ? (0, r.jsx)("div", {
@@ -172,7 +172,7 @@ let P = e => {
             })
           }, "".concat(e.skuId, "-").concat(t));
           else X === x.g.SORT_OUT ? n = I.sortChangedOutro : X === x.g.SHUFFLE_IN ? n = I.shuffleIntro : X === x.g.SORT_IN && (n = I.sortChangedIntro);
-        return (0, r.jsx)(_.k0, {
+        return (0, r.jsx)(h.k0, {
           newValue: {
             tilePosition: t,
             pageSection: "popular picks",

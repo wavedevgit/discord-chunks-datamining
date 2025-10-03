@@ -58,10 +58,10 @@ function A(e) {
     selected: n,
     displayText: a,
     handleTransition: i
-  } = e, [o, u] = l.useState(false), d = l.useRef(null), [g, _] = l.useState(0), h = l.useRef(false), m = e => {
-    clearTimeout(g), _(setTimeout(() => {
+  } = e, [o, u] = l.useState(false), d = l.useRef(null), [g, h] = l.useState(0), _ = l.useRef(false), m = e => {
+    clearTimeout(g), h(setTimeout(() => {
       u(e)
-    }, 100)), e && (h.current = f.Z.keyboardModeEnabled)
+    }, 100)), e && (_.current = f.Z.keyboardModeEnabled)
   }, b = e => {
     ("Enter" === e.key || " " === e.key) && (e.preventDefault(), m(true))
   };
@@ -77,7 +77,7 @@ function A(e) {
       onRequestOpen: () => m(true),
       onRequestClose: () => {
         var e;
-        h.current && !f.Z.keyboardModeEnabled && (0, p.Qj)(), m(false), null == (e = d.current) || e.focus()
+        _.current && !f.Z.keyboardModeEnabled && (0, p.Qj)(), m(false), null == (e = d.current) || e.focus()
       },
       renderPopout: e => {
         let {
@@ -154,7 +154,7 @@ function R(e) {
     enabled: w
   } = (0, E.WX)({
     location: "collectibles_shop_header_bar"
-  }), H = (0, h.Y)({
+  }), H = (0, _.Y)({
     location: "CollectiblesShopHeaderBar"
   }), F = [{
     tab: L.AW.HOME,
@@ -174,7 +174,7 @@ function R(e) {
         pageType: M,
         sectionType: k.jXE.ORBS_BALANCE_MENU,
         ctaObject: k.qAy.CTA_TO_QUEST_HOME
-      }), (0, _.navigateToQuestHome)({
+      }), (0, h.navigateToQuestHome)({
         fromContent: i.j.ORBS_BALANCE_MENU
       })
     }, [D, t, M]),

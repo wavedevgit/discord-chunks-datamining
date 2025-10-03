@@ -29,7 +29,7 @@ let S = e => {
     selectedVariantIndex: a
   } = e, S = (0, u.Nd)(), v = null == S ? true : S.tab, x = (0, m.zQ)(t), O = l.useRef(null), {
     handleCardVisibilityChange: T
-  } = (0, d.E)(t.skuId, v === b.AW.CATALOG ? "full" : v), y = (0, h.J7)(t, c.Z.COLLECTIBLES_SHOP_CARD);
+  } = (0, d.E)(t.skuId, v === b.AW.CATALOG ? "full" : v), y = (0, _.J7)(t, c.Z.COLLECTIBLES_SHOP_CARD);
   return (0, r.jsx)(i.$, {
     innerRef: O,
     onChange: T,
@@ -72,7 +72,7 @@ let S = e => {
                 product: t,
                 cardRef: O,
                 selectedVariantIndex: a
-              }), (0, r.jsx)(_.Z, {
+              }), (0, r.jsx)(h.Z, {
                 product: t,
                 cardRef: O,
                 selectedVariantIndex: a
