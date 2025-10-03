@@ -2,18 +2,19 @@
 /** chunk id: 488676, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  t: () => f
-}), require("./953529.js"), require("./388685.js");
+  t: () => _
+}), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk30717 = require("./30717.jsx"),
   Chunk895070 = require("./895070.jsx"),
   Chunk632140 = require("./632140.jsx"),
+  Chunk125455 = require("./125455.jsx"),
   Chunk966649 = require("./966649.jsx"),
   Chunk793030 = require("./793030.js"),
   Chunk538534 = require("./538534.jsx"),
   Chunk159691 = require("./159691.js");
-let f = {
+let _ = {
   title: "RadioGroup",
   stories: [{
     id: "radiogroup",
@@ -22,84 +23,84 @@ let f = {
       let {
         disabled: t,
         optionCount: n,
-        label: f,
-        description: _,
-        helperText: p,
-        required: h,
-        withDescriptions: m,
-        withIcons: g
-      } = e, [E, b] = i.useState(), y = i.useMemo(() => {
-        let e = [s.x, o.A, a.d, l.U];
+        label: _,
+        desc: p,
+        helperText: h,
+        required: m,
+        withDescriptions: g,
+        withIcons: E
+      } = e, [b, y] = i.useState(), O = i.useMemo(() => {
+        let e = [s.x, o.A, a.d, l.e, c.U];
         return [{
           name: "Option 1",
           value: "option1",
-          desc: m ? "This is the first option with some descriptive text" : null,
-          icon: g ? e[0] : true
+          desc: g ? "This is the first option with some descriptive text" : true,
+          leadingIcon: E ? e[0] : true
         }, {
           name: "Option 2",
           value: "option2",
-          desc: m ? "This is the second option with different content" : null,
-          icon: g ? e[1] : true
+          desc: g ? "This is the second option with different content" : true,
+          leadingIcon: E ? e[1] : true
         }, {
           name: "Option 3",
           value: "option3",
-          desc: m ? "This is the third option for comparison" : null,
-          icon: g ? e[2] : true
+          desc: g ? "This is the third option for comparison" : true,
+          leadingIcon: E ? e[2] : true
         }, {
           name: "Option 4",
           value: "option4",
-          desc: m ? "This is the fourth and final option" : null,
-          icon: g ? e[3] : true
+          desc: g ? "This is the fourth option" : true,
+          leadingIcon: E ? e[3] : true
         }, {
           name: "Option 5",
           value: "option5",
-          desc: m ? "This is the fifth option" : null,
-          icon: g ? e[4] : true
+          desc: g ? "This is the fifth option" : true,
+          leadingIcon: E ? e[4] : true
         }].slice(0, Math.max(1, Math.min(5, n)))
-      }, [n, m, g]), O = i.useCallback(e => {
-        b(e)
-      }, []), v = i.useCallback(() => {
-        y.length > 0 && b(y[0].value)
-      }, [y]), I = i.useCallback(() => {
-        y.length > 0 && b(y[y.length - 1].value)
-      }, [y]), T = i.useCallback(() => {
-        b(true)
+      }, [n, g, E]), v = i.useCallback(e => {
+        y(e)
+      }, []), I = i.useCallback(() => {
+        O.length > 0 && y(O[0].value)
+      }, [O]), T = i.useCallback(() => {
+        O.length > 0 && y(O[O.length - 1].value)
+      }, [O]), S = i.useCallback(() => {
+        y(true)
       }, []);
-      return (0, r.jsxs)(c.Kqy, {
+      return (0, r.jsxs)(u.Kqy, {
         direction: "vertical",
         gap: "md",
-        children: [(0, r.jsx)(u.E, {
-          value: E,
-          label: f,
-          description: _,
-          helperText: p,
-          required: h,
-          onChange: O,
-          options: y,
+        children: [(0, r.jsx)(d.E, {
+          value: b,
+          label: _,
+          description: p,
+          helperText: h,
+          required: m,
+          onChange: v,
+          options: O,
           disabled: t
-        }), (0, r.jsxs)(c.xvT, {
+        }), (0, r.jsxs)(u.xvT, {
           variant: "text-sm/normal",
-          children: ["Current selection: ", "string" == typeof E && "" !== E ? E : "None"]
-        }), (0, r.jsxs)(c.Kqy, {
+          children: ["Current selection: ", "string" == typeof b && "" !== b ? b : "None"]
+        }), (0, r.jsxs)(u.Kqy, {
           direction: "horizontal",
           gap: "sm",
-          children: [(0, r.jsx)(d.zxk, {
+          children: [(0, r.jsx)(f.zxk, {
             variant: "secondary",
             size: "sm",
             text: "Select First",
-            onClick: v,
-            disabled: t || 0 === y.length
-          }), (0, r.jsx)(d.zxk, {
+            onClick: I,
+            disabled: t || 0 === O.length
+          }), (0, r.jsx)(f.zxk, {
             variant: "secondary",
             size: "sm",
             text: "Select Last",
-            onClick: I,
-            disabled: t || 0 === y.length
-          }), (0, r.jsx)(d.zxk, {
+            onClick: T,
+            disabled: t || 0 === O.length
+          }), (0, r.jsx)(f.zxk, {
             variant: "primary",
             size: "sm",
             text: "Clear",
-            onClick: T,
+            onClick: S,
             disabled: t
           })]
         })]
@@ -109,9 +110,9 @@ let f = {
       label: {
         type: "text",
         label: "Label",
-        defaultValue: "Radio Group"
+        defaultValue: "Mana Radio Group"
       },
-      description: {
+      desc: {
         type: "text",
         label: "Description",
         defaultValue: "This is a description for the radio group"
@@ -132,9 +133,22 @@ let f = {
         defaultValue: false
       },
       optionCount: {
-        type: "number",
-        label: "Number of Options (max 5)",
-        defaultValue: 3
+        type: "select",
+        label: "Number of Options",
+        defaultValue: 3,
+        options: [{
+          label: "2 Options",
+          value: 2
+        }, {
+          label: "3 Options",
+          value: 3
+        }, {
+          label: "4 Options",
+          value: 4
+        }, {
+          label: "5 Options",
+          value: 5
+        }]
       },
       withDescriptions: {
         type: "boolean",

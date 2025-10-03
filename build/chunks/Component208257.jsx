@@ -2,12 +2,17 @@
 /** chunk id: 208257, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  t: () => o
-}), require("./388685.js");
+  t: () => d
+}), require("./953529.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk30717 = require("./30717.jsx"),
+  Chunk895070 = require("./895070.jsx"),
+  Chunk632140 = require("./632140.jsx"),
+  Chunk125455 = require("./125455.jsx"),
+  Chunk966649 = require("./966649.jsx"),
   Chunk695046 = require("./695046.jsx");
-let o = {
+let d = {
   title: "VoidRadioGroup",
   stories: [{
     id: "radiogroup",
@@ -16,37 +21,71 @@ let o = {
       let {
         optionCount: t,
         size: n,
-        disabled: o,
-        orientation: s,
-        radioPosition: l,
-        withTransparentBackground: c
-      } = e, [u, d] = i.useState("option1"), f = Array.from({
+        disabled: d,
+        orientation: f,
+        radioPosition: _,
+        withTransparentBackground: p,
+        label: h,
+        description: m,
+        withDescriptions: g,
+        withIcons: E
+      } = e, [b, y] = i.useState("option1"), O = [a.d, o.A, s.x, l.e, c.U], v = Array.from({
         length: t
       }, (e, t) => ({
         value: "option".concat(t + 1),
-        name: "Option ".concat(t + 1)
+        name: "Option ".concat(t + 1),
+        description: g ? "This is a description for option ".concat(t + 1) : true,
+        icon: E ? O[t % O.length] : true
       }));
-      return (0, r.jsx)(a.Gu, {
-        value: u,
+      return (0, r.jsx)(u.Gu, {
+        value: b,
         onChange: e => {
           let {
             value: t
           } = e;
-          return d(t)
+          return y(t)
         },
-        options: f,
+        options: v,
         size: n,
-        disabled: o,
-        orientation: s,
-        radioPosition: l,
-        withTransparentBackground: c
+        disabled: d,
+        orientation: f,
+        radioPosition: _,
+        withTransparentBackground: p,
+        label: h,
+        description: m
       })
     },
     controls: {
       optionCount: {
-        type: "number",
-        label: "Option Count",
-        defaultValue: 3
+        type: "select",
+        label: "Number of Options",
+        defaultValue: 3,
+        options: [{
+          label: "2 Options",
+          value: 2
+        }, {
+          label: "3 Options",
+          value: 3
+        }, {
+          label: "4 Options",
+          value: 4
+        }, {
+          label: "5 Options",
+          value: 5
+        }, {
+          label: "6 Options",
+          value: 6
+        }]
+      },
+      withDescriptions: {
+        type: "boolean",
+        label: "Show Descriptions",
+        defaultValue: true
+      },
+      withIcons: {
+        type: "boolean",
+        label: "Show Icons",
+        defaultValue: true
       },
       size: {
         type: "select",
@@ -71,7 +110,7 @@ let o = {
       orientation: {
         type: "select",
         label: "Orientation",
-        defaultValue: "horizontal",
+        defaultValue: "vertical",
         options: [{
           label: "Horizontal",
           value: "horizontal"
