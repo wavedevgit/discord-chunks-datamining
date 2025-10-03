@@ -1,7 +1,7 @@
 /** Chunk was on 41023 **/
 /** chunk id: 305815, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  default: () => E
+  default: () => T
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -34,11 +34,11 @@ function w(e) {
     onUseNow: i,
     user: l,
     mode: o
-  } = e, d = (0, h.fh)(t, h.eC.REWARD).url, u = (0, v.Qy)(t.config), m = (null == (n = l.avatarDecoration) ? true : n.skuId) != null && l.avatarDecoration.skuId === (null == a ? true : a.skuId);
+  } = e, d = (0, h.fh)(t, h.eC.REWARD).url, u = (0, x.Qy)(t.config), m = (null == (n = l.avatarDecoration) ? true : n.skuId) != null && l.avatarDecoration.skuId === (null == a ? true : a.skuId);
   return (0, r.jsxs)("div", {
-    className: b.contentContainer,
+    className: N.contentContainer,
     children: [(0, r.jsx)("div", {
-      className: b.previewContainer,
+      className: N.previewContainer,
       children: (0, r.jsx)(c.Z, {
         user: l,
         guildId: null,
@@ -47,12 +47,12 @@ function w(e) {
         questPreviewRewardAssetUrl: d
       })
     }), (0, r.jsxs)("div", {
-      className: b.copyContainer,
+      className: N.copyContainer,
       children: [(0, r.jsx)(s.X6q, {
-        variant: "heading-xl/bold",
+        variant: "heading-xl/semibold",
         color: "header-primary",
-        className: b.heading,
-        children: N.intl.string(N.t["0/Yz+f"])
+        className: N.heading,
+        children: b.intl.string(b.t["0/Yz+f"])
       }), (0, r.jsx)(s.Text, {
         variant: "text-sm/medium",
         color: "text-secondary",
@@ -61,7 +61,7 @@ function w(e) {
     }), (0, r.jsx)(s.zxk, {
       variant: "secondary",
       size: "sm",
-      text: m ? N.intl.string(N.t.hjaYYm) : N.intl.string(N.t.MAS7uL),
+      text: m ? b.intl.string(b.t.hjaYYm) : b.intl.string(b.t.MAS7uL),
       loading: "applying" === o,
       disabled: "claimed" !== o || m,
       onClick: i,
@@ -70,16 +70,16 @@ function w(e) {
   })
 }
 
-function E(e) {
+function T(e) {
   var n, t;
   let {
     quest: s,
     onClose: c,
-    transitionState: v,
+    transitionState: x,
     preview: h,
-    location: N,
-    sourceQuestContent: b
-  } = e, E = a.useMemo(() => (0, g.xn)(s.config), [s]), T = (0, l.e7)([p.default], () => p.default.getCurrentUser()), [A, P] = function(e) {
+    location: b,
+    sourceQuestContent: N
+  } = e, T = a.useMemo(() => (0, g.xn)(s.config), [s]), E = (0, l.e7)([p.default], () => p.default.getCurrentUser()), [A, P] = function(e) {
     let {
       product: n,
       isFetching: t
@@ -98,31 +98,31 @@ function E(e) {
       return (0, o.si)(), !!(null == t ? true : t.ok)
     };
     return [r, l]
-  }(null != (t = null == E ? true : E.skuId) ? t : null), D = (null == (n = s.userStatus) ? true : n.claimedAt) != null, O = !h && !D, [L, R] = a.useState(O ? "loading" : "claimed");
+  }(null != (t = null == T ? true : T.skuId) ? t : null), D = (null == (n = s.userStatus) ? true : n.claimedAt) != null, O = !h && !D, [L, S] = a.useState(O ? "loading" : "claimed");
   a.useEffect(() => {
-    O && (0, C.QB)(s.id, x.y$.CROSS_PLATFORM, N).then(() => R("claimed")).catch(() => R("error"))
-  }, [s.id, N, O]);
-  let S = true === h && null === A && (null == E ? true : E.skuId) !== "",
-    I = null == T,
-    k = I || null == A && true !== h || S || "loading" === L,
-    M = "error" === L || null == E,
+    O && (0, C.QB)(s.id, v.y$.CROSS_PLATFORM, b).then(() => S("claimed")).catch(() => S("error"))
+  }, [s.id, b, O]);
+  let R = true === h && null === A && (null == T ? true : T.skuId) !== "",
+    k = null == E,
+    I = k || null == A && true !== h || R || "loading" === L,
+    M = "error" === L || null == T,
     Z = async () => {
-      R("applying"), R(await P() ? "applied" : "claimed")
+      S("applying"), S(await P() ? "applied" : "claimed")
     };
   return (0, r.jsx)(j.Z, {
     onClose: c,
-    transitionState: v,
+    transitionState: x,
     quest: s,
-    sourceQuestContent: b,
-    location: _.dr.COLLECTIBLE_REWARD_MODAL,
-    isRewardContentLoading: k,
+    sourceQuestContent: N,
+    location: y.dr.COLLECTIBLE_REWARD_MODAL,
+    isRewardContentLoading: I,
     rewardContentHasError: M,
-    rewardContent: M || I ? null : (0, r.jsx)(y.Z, {
-      rewardName: E.messages.name,
+    rewardContent: M || k ? null : (0, r.jsx)(_.Z, {
+      rewardName: T.messages.name,
       children: (0, r.jsx)(w, {
         quest: s,
         avatarDeco: A,
-        user: T,
+        user: E,
         mode: L,
         onUseNow: Z
       })

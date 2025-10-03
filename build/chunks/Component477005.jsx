@@ -23,27 +23,29 @@ function p(e) {
     hideAssets: a,
     imageSize: p,
     containerClassName: h,
-    imageClassName: m
-  } = e, g = i.useMemo(() => (0, l.fh)(t, l.eC.HERO_IMAGE), [t]), E = i.useMemo(() => (0, l.fh)(t, l.eC.HERO_VIDEO), [t]), b = (0, s.h)(t, d.dr.QUEST_HOME_DESKTOP), {
-    onAssetLoadComplete: y
-  } = i.useContext(u.k), O = !b && n;
+    imageClassName: m,
+    assetRef: g
+  } = e, E = i.useMemo(() => (0, l.fh)(t, l.eC.HERO_IMAGE), [t]), b = i.useMemo(() => (0, l.fh)(t, l.eC.HERO_VIDEO), [t]), y = (0, s.h)(t, d.dr.QUEST_HOME_DESKTOP), {
+    onAssetLoadComplete: O
+  } = i.useContext(u.k), v = !y && n;
   return (0, r.jsx)("div", {
     className: o()(_.heroAssetCont, h),
     children: !a && (0, r.jsx)(c.K, {
-      imageAsset: null != g ? {
-        asset: g,
+      imageAsset: null != E ? {
+        asset: E,
         assetId: "QuestTileBanner",
         alt: f.intl.string(f.t.jnijW1),
         className: o()(_.heroAsset, m)
       } : true,
-      videoAsset: null != E ? {
-        asset: E,
+      videoAsset: null != b ? {
+        asset: b,
         assetId: "QuestTileBanner_heroAnimated",
         className: _.heroAssetVideo
       } : true,
-      showVideo: O,
+      showVideo: v,
       imageSize: p,
-      onLoadComplete: y
+      onLoadComplete: O,
+      assetRef: g
     })
   })
 }

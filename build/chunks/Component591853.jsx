@@ -179,20 +179,20 @@ function ey(e) {
     buttons: s = [],
     header: f,
     onVoiceChannelPreview: h
-  } = e, [m, g] = i.useState(false), [E, b] = i.useState(null), O = (0, c.e7)([G.Z], () => null != t && es.TPd.CONTENT_ENTRY_EMBEDS.has(t.type) && G.Z.can(es.Plq.SEND_MESSAGES, t)), [v, T] = i.useState(false), [S, A] = i.useState(false), {
-    voiceBar: C,
-    joinVoiceButton: N
+  } = e, [m, g] = i.useState(false), [E, b] = i.useState(null), O = i.useRef(null), v = (0, c.e7)([G.Z], () => null != t && es.TPd.CONTENT_ENTRY_EMBEDS.has(t.type) && G.Z.can(es.Plq.SEND_MESSAGES, t)), [T, S] = i.useState(false), [A, C] = i.useState(false), {
+    voiceBar: N,
+    joinVoiceButton: R
   } = eC({
     channel: t,
     entry: o,
     onVoiceChannelPreview: h
   }), {
-    embeddedActivity: R
-  } = (0, $.Z)(o), P = eA(R), w = null != N && 0 === s.length ? [N] : s, D = w.length > 0, L = w.length >= 2, [x, j] = i.useState(!D), M = K.ZP.getName(null == t ? true : t.guild_id, null == t ? true : t.id, n), U = null != t && m ? ec.intl.formatToPlainString(ec.t["8lzR/f"], {
+    embeddedActivity: P
+  } = (0, $.Z)(o), w = eA(P), D = null != R && 0 === s.length ? [R] : s, L = D.length > 0, x = D.length >= 2, [j, M] = i.useState(!L), U = K.ZP.getName(null == t ? true : t.guild_id, null == t ? true : t.id, n), B = null != t && m ? ec.intl.formatToPlainString(ec.t["8lzR/f"], {
     channel: "#".concat(t.name)
   }) : ec.intl.formatToPlainString(ec.t["4c+CAw"], {
-    channel: "@".concat(M)
-  }), B = m ? ec.intl.string(ec.t.Z2CUgo) : ec.intl.string(ec.t.XLGiTE), Z = async e => {
+    channel: "@".concat(U)
+  }), Z = m ? ec.intl.string(ec.t.Z2CUgo) : ec.intl.string(ec.t.XLGiTE), F = async e => {
     let r, {
       emoji: i
     } = e;
@@ -201,25 +201,25 @@ function ey(e) {
           surface_type: eo.Kd.GUILD_MEMBER_LIST,
           channel_id: null == t ? true : t.id,
           guild_id: null == t ? true : t.guild_id
-        }), (0, I.Q3)(u.z.CONTENT_INVENTORY_ONE_CLICK_REPLY_COACHTIP), T(true), A(false), m) l()(null != t, "shareToChannelMode should only be true if a valid channel is passed"), r = t;
+        }), (0, I.Q3)(u.z.CONTENT_INVENTORY_ONE_CLICK_REPLY_COACHTIP), S(true), C(false), m) l()(null != t, "shareToChannelMode should only be true if a valid channel is passed"), r = t;
       else {
         var o;
         let e = await p.Z.getOrEnsurePrivateChannel(n.id);
         r = null != (o = k.Z.getChannel(e)) ? o : null
       }
-      return l()(null != r, "Send channel must be defined"), V({
+      return l()(null != r, "Send channel must be defined"), H({
         reply: ":".concat(i.name, ":"),
         sendToChannel: r,
         onComplete: (e, t) => {
-          A(true), setTimeout(() => {
-            T(false), a(e, t)
+          C(true), setTimeout(() => {
+            S(false), a(e, t)
           }, 600)
         },
         interactionType: eo.xP.REACTION_EMOJI_REACT_SENT,
         requiresChannelReadiness: false
       })
     }
-  }, F = async e => {
+  }, V = async e => {
     let r;
     if ((0, I.Q3)(u.z.CONTENT_INVENTORY_ONE_CLICK_REPLY_COACHTIP), m) l()(null != t, "shareToChannelMode should only be true if a valid channel is passed"), r = t;
     else {
@@ -230,14 +230,14 @@ function ey(e) {
       l()(null != t, "DM channel must be defined"), r = t
     }
     let i = r.type === es.d4z.DM ? eo.xP.DM_REACTION_MESSAGE_SENT : eo.xP.CHANNEL_REACTION_MESSAGE_SENT;
-    return V({
+    return H({
       reply: e,
       sendToChannel: r,
       interactionType: i,
       onComplete: a,
       requiresChannelReadiness: true
     })
-  }, V = async e => {
+  }, H = async e => {
     let {
       reply: t,
       sendToChannel: n,
@@ -253,75 +253,81 @@ function ey(e) {
       doNotNotifyOnError: false,
       location: el.dy.CONTENT_INVENTORY_MEMBERLIST
     }), null == r || r(i, n)
-  }, H = null != f ? f : null != C ? C : null != P ? P : true, W = () => {
-    g(e => !e), x && (null == E || E.focus())
-  }, z = e => {
-    j(e), e && (null == E || E.focus())
+  }, W = null != f ? f : null != N ? N : null != w ? w : true, z = () => {
+    g(e => !e), j && (null == E || E.focus())
+  }, q = e => {
+    M(e), e && (null == E || E.focus())
   };
-  return (0, r.jsxs)("div", {
+  return (0, r.jsx)("div", {
+    ref: O,
     style: {
-      pointerEvents: v ? "none" : "all"
+      pointerEvents: T ? "none" : "all"
     },
-    children: [(0, r.jsx)(ea.Z, {
-      sent: S,
-      shown: v,
-      className: eu.toastContainer
-    }), null != H ? H : (0, r.jsx)(er.Z, {
+    children: (0, r.jsx)(_.EqS, {
+      containerRef: O,
       children: (0, r.jsxs)("div", {
-        className: eu.emojiHotrailShareToChannel,
-        children: [(0, r.jsx)(eO, {
-          channel: t,
-          onClickSuggestion: Z
-        }), (0, r.jsx)(y.dE, {
-          onSelectEmoji: Z
+        children: [(0, r.jsx)(ea.Z, {
+          sent: A,
+          shown: T,
+          className: eu.toastContainer
+        }), null != W ? W : (0, r.jsx)(er.Z, {
+          children: (0, r.jsxs)("div", {
+            className: eu.emojiHotrailShareToChannel,
+            children: [(0, r.jsx)(eO, {
+              channel: t,
+              onClickSuggestion: F
+            }), (0, r.jsx)(y.dE, {
+              onSelectEmoji: F
+            })]
+          })
+        }), (0, r.jsxs)("div", {
+          className: j ? eu.inputContainerShareToChannel : eu.hiddenButRenderedInputField,
+          children: [(0, r.jsx)(y.A7, {
+            placeholder: B,
+            onEnter: V,
+            setEditorRef: e => b(e),
+            channel: m ? t : true,
+            showEmojiButton: null != W,
+            className: eu.replyInput,
+            autoFocus: false,
+            renderAttachButton: v ? () => (0, r.jsx)(_.ua7, {
+              text: Z,
+              children: e => (0, r.jsx)(_.P3F, ep(ef({}, e), {
+                className: eu.shareToChannelButton,
+                onClick: z,
+                children: m ? (0, r.jsx)(_.VL1, {
+                  size: "custom",
+                  width: 20,
+                  height: 20
+                }) : (0, r.jsx)(_.lOy, {
+                  size: "custom",
+                  width: 20,
+                  height: 20
+                })
+              }))
+            }) : true
+          }), L && (0, r.jsx)(_.P3F, {
+            onClick: () => q(false),
+            className: eu.primaryActionPopoutMessageCloseIcon,
+            children: (0, r.jsx)(_.Dio, {
+              size: "custom",
+              width: 20,
+              height: 20,
+              color: d.Z.colors.ICON_PRIMARY
+            })
+          })]
+        }), false === j && (0, r.jsxs)("div", {
+          className: eu.primaryActionPopoutActionButtons,
+          children: [!x && (0, r.jsx)(_.zxk, {
+            fullWidth: true,
+            variant: "secondary",
+            onClick: () => q(true),
+            size: x ? "sm" : "md",
+            text: ec.intl.string(ec.t.OAJQlJ)
+          }, "toggleMessageMode"), D]
         })]
       })
-    }), (0, r.jsxs)("div", {
-      className: x ? eu.inputContainerShareToChannel : eu.hiddenButRenderedInputField,
-      children: [(0, r.jsx)(y.A7, {
-        placeholder: U,
-        onEnter: F,
-        setEditorRef: e => b(e),
-        channel: m ? t : true,
-        showEmojiButton: null != H,
-        className: eu.replyInput,
-        autoFocus: false,
-        renderAttachButton: O ? () => (0, r.jsx)(_.ua7, {
-          text: B,
-          children: e => (0, r.jsx)(_.P3F, ep(ef({}, e), {
-            className: eu.shareToChannelButton,
-            onClick: W,
-            children: m ? (0, r.jsx)(_.VL1, {
-              size: "custom",
-              width: 20,
-              height: 20
-            }) : (0, r.jsx)(_.lOy, {
-              size: "custom",
-              width: 20,
-              height: 20
-            })
-          }))
-        }) : true
-      }), D && (0, r.jsx)(_.P3F, {
-        onClick: () => z(false),
-        className: eu.primaryActionPopoutMessageCloseIcon,
-        children: (0, r.jsx)(_.Dio, {
-          size: "custom",
-          width: 20,
-          height: 20,
-          color: d.Z.colors.ICON_PRIMARY
-        })
-      })]
-    }), false === x && (0, r.jsxs)("div", {
-      className: eu.primaryActionPopoutActionButtons,
-      children: [!L && (0, r.jsx)(_.zxk, {
-        fullWidth: true,
-        variant: "secondary",
-        onClick: () => z(true),
-        size: L ? "sm" : "md",
-        text: ec.intl.string(ec.t.OAJQlJ)
-      }, "toggleMessageMode"), w]
-    })]
+    })
   })
 }
 let eO = e => {

@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk497505 = require("./497505.js"),
   Chunk475595 = require("./475595.js"),
   Chunk566078 = require("./566078.js"),
-  Chunk968435 = require("./968435.jsx"),
+  Chunk477005 = require("./477005.jsx"),
   Chunk78826 = require("./78826.jsx"),
   Chunk46140 = require("./46140.js"),
   Chunk231338 = require("./231338.js"),
@@ -28,27 +28,28 @@ function b(e) {
     quest: t,
     sourceQuestContent: n,
     onLoadComplete: b
-  } = e, _ = (0, s.ZP)(), w = (0, o.wjy)(_) ? v.BR.DARK : v.BR.LIGHT, O = (0, m.ly)(t), P = (0, u.aM)(), N = a.useMemo(() => {
+  } = e, _ = (0, s.ZP)(), w = (0, o.wjy)(_) ? x.BR.DARK : x.BR.LIGHT, O = (0, m.ly)(t), P = (0, u.aM)(), N = a.useMemo(() => {
     let e = f.r.build(t.config),
       n = e.defaultWatchVideoTask,
       r = null == n ? true : n.messages.videoEndCtaSubtitle;
-    return (0, l.Ew)(r) ? e.questType !== i.W.GAMEPLAY || t.config.features.includes(y.S7.NON_GAMING_PLAY_QUEST) || (0, d.Pb)(t) ? x.intl.string(x.t.y8Xf3t) : x.intl.string(x.t.wirwNz) : r
+    return (0, l.Ew)(r) ? e.questType !== i.W.GAMEPLAY || t.config.features.includes(y.S7.NON_GAMING_PLAY_QUEST) || (0, d.Pb)(t) ? v.intl.string(v.t.y8Xf3t) : v.intl.string(v.t.wirwNz) : r
   }, [t]), {
-    isLoading: E
+    isLoading: T
   } = (0, j.d7)();
   return a.useEffect(() => {
-    E || b()
-  }, [E, b]), (0, r.jsxs)("div", {
+    T || b()
+  }, [T, b]), (0, r.jsxs)("div", {
     className: g.container,
     children: [(0, r.jsx)(j.Fl, {
       id: "hero-display",
       children: e => (0, r.jsx)(h.Z, {
         quest: t,
-        dimensions: {
+        imageSize: {
           width: 908,
           height: 380
         },
-        className: g.heroDisplayContainer,
+        containerClassName: g.heroDisplayContainer,
+        isInteracting: true,
         assetRef: e
       })
     }), (0, r.jsx)("div", {
@@ -58,7 +59,7 @@ function b(e) {
         children: e => (0, r.jsx)("img", {
           ref: e,
           className: g.partnerLogotype,
-          alt: x.intl.formatToPlainString(x.t.rtm15O, {
+          alt: v.intl.formatToPlainString(v.t.rtm15O, {
             name: t.config.messages.gameTitle
           }),
           src: (0, C.fh)(t, C.eC.LOGO_TYPE, w).url
@@ -69,7 +70,7 @@ function b(e) {
       children: [(0, r.jsxs)("div", {
         className: g.partnerCopyContainer,
         children: [(0, r.jsx)(o.X6q, {
-          variant: "heading-lg/bold",
+          variant: "heading-md/semibold",
           color: "header-primary",
           className: g.partnerTitle,
           children: t.config.messages.questName
@@ -83,7 +84,7 @@ function b(e) {
         children: e => (0, r.jsx)("img", {
           ref: e,
           className: g.partnerGameTile,
-          alt: x.intl.formatToPlainString(x.t.rtm15O, {
+          alt: v.intl.formatToPlainString(v.t.rtm15O, {
             name: t.config.messages.gameTitle
           }),
           src: (0, C.fh)(t, C.eC.GAME_TILE, w).url

@@ -55,10 +55,10 @@ function w(e) {
   let {
     onVideoLoaded: t,
     isLoading: n
-  } = e, i = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), [u, m] = r.useState(!i), f = (0, c.ZP)(), C = (0, l.apv)(f), _ = C ? S.Z : A.Z, b = C ? L.Z : T.Z, h = r.useRef(null), y = r.useRef(null), [x, g] = r.useState(false), [j, E] = r.useState(false), [v, R] = r.useState(false);
+  } = e, i = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), [u, m] = r.useState(!i), f = (0, c.ZP)(), C = (0, l.apv)(f), _ = C ? S.Z : A.Z, b = C ? L.Z : T.Z, h = r.useRef(null), x = r.useRef(null), [y, g] = r.useState(false), [j, E] = r.useState(false), [v, R] = r.useState(false);
   r.useEffect(() => {
-    x && j && v && t()
-  }, [x, j, v, t]), r.useEffect(() => {
+    y && j && v && t()
+  }, [y, j, v, t]), r.useEffect(() => {
     n || i || setTimeout(() => {
       var e;
       null == (e = h.current) || e.play()
@@ -67,13 +67,13 @@ function w(e) {
   let O = r.useCallback(() => {
     if (!i) {
       var e;
-      m(false), null == (e = y.current) || e.play()
+      m(false), null == (e = x.current) || e.play()
     }
   }, [i]);
   return (0, a.jsxs)("div", {
     className: N.orbsContainer,
     children: [(0, a.jsx)(p.Z, {
-      ref: y,
+      ref: x,
       autoPlay: false,
       loop: true,
       muted: true,
@@ -141,7 +141,7 @@ function I(e) {
           shouldUseThemeColor: true,
           className: N.orbsIcon
         }), (0, a.jsx)(l.X6q, {
-          variant: "heading-xl/bold",
+          variant: "heading-xl/semibold",
           color: "header-primary",
           children: R.intl.format(R.t["/UTD6e"], {
             orbsEarned: r
@@ -151,7 +151,13 @@ function I(e) {
         variant: "text-sm/medium",
         color: "text-secondary",
         children: R.intl.format(R.t.g4t9a2, {
-          orbsBalance: i
+          orbsBalance: i,
+          orbsBalanceHook: (e, t) => (0, a.jsx)(l.Text, {
+            variant: "text-sm/medium",
+            color: "text-primary",
+            tag: "span",
+            children: e
+          }, t)
         })
       }) : null]
     }), (0, a.jsx)(l.zxk, {
@@ -179,11 +185,11 @@ function P(e) {
     E(true)
   }, []);
   r.useEffect(() => {
-    c || "loading" !== p || (0, h.QB)(n.id, y.y$.CROSS_PLATFORM, l).then(() => f("success")).catch(() => f("error"))
+    c || "loading" !== p || (0, h.QB)(n.id, x.y$.CROSS_PLATFORM, l).then(() => f("success")).catch(() => f("error"))
   }, [n.id, c, p, l]);
   let N = !_ || "loading" === p || null == d && null == u,
     A = "error" === p || null == m || null == d && null != u;
-  return (0, a.jsx)(x.Z, {
+  return (0, a.jsx)(y.Z, {
     onClose: i,
     transitionState: s,
     quest: n,

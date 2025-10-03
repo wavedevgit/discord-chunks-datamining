@@ -17,9 +17,9 @@ function s(e) {
     className: o.rewardPill,
     children: i.intl.format(i.t.loyTio, {
       rewardName: t,
-      verticalDivider: () => (0, r.jsx)("div", {
+      verticalDivider: (e, t) => (0, r.jsx)("div", {
         className: o.divider
-      })
+      }, t)
     })
   })
 }
