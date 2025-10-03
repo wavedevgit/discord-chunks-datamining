@@ -25,8 +25,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk617659 = require("./617659.js");
 let C = [Chunk704215.z.GUILD_POWERUP_PERKS_COACHMARK, Chunk704215.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK, Chunk704215.z.GUILD_POWERUP_NOTIFICATION, Chunk704215.z.GUILD_TAG_AVAILABLE_COACHMARK, Chunk704215.z.GUILD_POWERUP_NEW_PERK_AVAILABLE_COACHMARK],
   E = [Chunk704215.C.GUILD_POWERUP_LEVEL_1_COACHMARK, Chunk704215.C.GUILD_POWERUP_LEVEL_2_COACHMARK, Chunk704215.C.GUILD_POWERUP_LEVEL_3_COACHMARK, Chunk704215.C.GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK, Chunk704215.C.GUILD_POWERUP_CHOICE_SKU_PURCHASE_COACHMARK],
-  N = [Chunk704215.C.ADOPT_CLAN_IDENTITY_NOTICE],
-  S = [Chunk704215.z.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION, Chunk704215.z.VANITY_URL_POWERUP_ROLLBACK_MODAL, Chunk704215.z.VANITY_URL_POWERUP_EDUCATIONAL_POPOVER];
+  S = [Chunk704215.C.ADOPT_CLAN_IDENTITY_NOTICE],
+  N = [Chunk704215.z.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION, Chunk704215.z.VANITY_URL_POWERUP_ROLLBACK_MODAL, Chunk704215.z.VANITY_URL_POWERUP_EDUCATIONAL_POPOVER];
 
 function T(e) {
   switch (e) {
@@ -66,7 +66,7 @@ function k() {
       var t;
       return null == (t = Chunk430824.Z.getGuild(module)) ? true : exports.name
     }),
-    n = (0, Chunk442837.Wu)([Chunk581883.Z], () => [...E, ...N].filter(t => null != e && (0, p.OY)(t, e))),
+    n = (0, Chunk442837.Wu)([Chunk581883.Z], () => [...E, ...S].filter(t => null != e && (0, p.OY)(t, e))),
     r = (0, Chunk442837.Wu)([Chunk899667.Z], () => {
       var t;
       return null != module && null != (t = Chunk899667.Z.getAppliedGuildBoostsForGuild(module)) ? exports : []
@@ -152,7 +152,7 @@ function k() {
       className: Chunk617659.section,
       children: (0, Chunk951288.jsx)(Chunk481060.C3N, {
         label: "Reset Server Tag Guild Level DCs",
-        children: N.map(t => (0, a.jsx)(c.rsf, {
+        children: S.map(t => (0, a.jsx)(c.rsf, {
           label: T(t),
           checked: n.includes(t),
           onChange: n => {
@@ -166,7 +166,7 @@ function k() {
         variant: "eyebrow",
         className: Chunk617659.header,
         children: "Reset Powerup Rollback DCs"
-      }), S.map(e => (0, a.jsx)(u.Z, {
+      }), N.map(e => (0, a.jsx)(u.Z, {
         className: y.formSwitch,
         content: o.z[e]
       }, o.z[e]))]

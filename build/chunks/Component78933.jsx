@@ -118,8 +118,8 @@ function es(e) {
     ey = (0, s.e7)([B.Z], () => B.Z.hidePersonalInformation),
     eC = (0, g.p)(),
     eE = F.Sb.useSetting(),
-    eN = (0, J.I)(eg),
-    eS = (0, q.g)(n),
+    eS = (0, J.I)(eg),
+    eN = (0, q.g)(n),
     eT = (0, j.Z)({
       analyticsLocations: eh
     }),
@@ -140,12 +140,12 @@ function es(e) {
     }, 500)
   }, []);
   let eD = e => {
-      null == n || n(), (0, S.openUserProfileModal)(el({
+      null == n || n(), (0, N.openUserProfileModal)(el({
         customStatusPrompt: eR,
         sourceAnalyticsLocations: eh
       }, ex, e))
     },
-    eL = (0, N.Z)({
+    eL = (0, S.Z)({
       location: "UserProfileAccountPopout"
     }),
     eM = (null == ep ? true : ep.widgets) != null && ep.widgets.length > 0,
@@ -288,7 +288,7 @@ function es(e) {
                         className: er.statusPickerModalMenu,
                         "aria-label": ea.intl.string(ea.t.E13trK),
                         onClose: t,
-                        children: eN
+                        children: eS
                       })
                     },
                     onClick: i.tq ? () => {
@@ -324,7 +324,7 @@ function es(e) {
                             hideScroller: true,
                             onClose: r,
                             onSelect: true,
-                            children: eN
+                            children: eS
                           })
                         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
                           var n = Object.keys(e);
@@ -358,7 +358,7 @@ function es(e) {
                         navId: "switch-accounts-submenu",
                         "aria-label": ea.intl.string(ea.t.wFhVqK),
                         onClose: t,
-                        children: eS
+                        children: eN
                       })
                     }
                   }), !__OVERLAY__ && z.wS && eE && (0, a.jsx)(Y.V4, {

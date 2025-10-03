@@ -3,10 +3,10 @@
 require.d(exports, {
   Z: () => y
 });
-var a, r, Chunk951288 = require("./951288.js"),
+var r, a, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  c = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -20,35 +20,35 @@ var a, r, Chunk951288 = require("./951288.js"),
   Chunk401561 = require("./401561.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk134977 = require("./134977.js");
-let O = (a = function(e) {
+let O = (r = function(e) {
   for (var n = 1; n < arguments.length; n++) {
     var t = null != arguments[n] ? arguments[n] : {},
-      a = Object.keys(t);
-    "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+      r = Object.keys(t);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
       return Object.getOwnPropertyDescriptor(t, e).enumerable
-    }))), a.forEach(function(n) {
-      var a;
-      a = t[n], n in e ? Object.defineProperty(e, n, {
-        value: a,
+    }))), r.forEach(function(n) {
+      var r;
+      r = t[n], n in e ? Object.defineProperty(e, n, {
+        value: r,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[n] = a
+      }) : e[n] = r
     })
   }
   return e
-}({}, Chunk473682.T9), r = r = {
+}({}, Chunk473682.T9), a = a = {
   initialStep: Chunk473682.Vb.SERVER_SETTINGS
-}, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(r)) : (function(e, n) {
+}, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(a)) : (function(e, n) {
   var t = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    t.push.apply(t, a)
+    var r = Object.getOwnPropertySymbols(e);
+    t.push.apply(t, r)
   }
   return t
-})(Object(r)).forEach(function(e) {
-  Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(r, e))
-}), a);
+})(Object(a)).forEach(function(e) {
+  Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(a, e))
+}), r);
 
 function y(e) {
   let {
@@ -59,8 +59,8 @@ function y(e) {
   }, [n]);
   let t = (0, d.e7)([g.Z], () => g.Z.getStateForGuild(n)),
     {
-      catalog: a,
-      instances: r
+      catalog: r,
+      instances: a
     } = s.useMemo(() => {
       var e, n;
       return {
@@ -68,8 +68,8 @@ function y(e) {
         instances: Object.values(null != (n = null == t ? true : t.instances) ? n : {})
       }
     }, [null == t ? true : t.catalog, null == t ? true : t.instances]),
-    o = r.length >= v.zI;
-  return 0 === a.length ? (0, i.jsx)("div", {
+    o = a.length >= j.zI;
+  return 0 === r.length ? (0, i.jsx)("div", {
     className: h.container,
     children: (0, i.jsx)(u.$jN, {
       type: u.RAz.SPINNING_CIRCLE,
@@ -77,20 +77,20 @@ function y(e) {
     })
   }) : (0, i.jsxs)("div", {
     className: h.container,
-    children: [(0, i.jsx)(l.X6q, {
+    children: [(0, i.jsx)(c.X6q, {
       className: h.heading,
       variant: "heading-md/semibold",
-      children: _.intl.string(j.default.DG1SHB)
+      children: _.intl.string(v.default.DG1SHB)
     }), o && (0, i.jsx)("div", {
       className: h.maxInstancesWarning,
       children: (0, i.jsx)(x.Y, {})
-    }), (0, i.jsx)(l.zJl, {
-      className: c()(h.gameContainerWrapper, {
+    }), (0, i.jsx)(c.zJl, {
+      className: l()(h.gameContainerWrapper, {
         [h.disabled]: o
       }),
       children: (0, i.jsx)("div", {
         className: h.gameContainer,
-        children: a.map((e, t) => (0, i.jsx)(f.Z, {
+        children: r.map((e, t) => (0, i.jsx)(f.Z, {
           game: e,
           onClick: () => (0, p.Z)({
             guildId: n,

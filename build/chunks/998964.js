@@ -1,9 +1,9 @@
 /** Chunk was on 85683 **/
 /** chunk id: 998964, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => a
+  Z: () => r
 });
 
-function a(e) {
+function r(e) {
   return "".concat(e.serverIP, ":").concat(e.port)
 }

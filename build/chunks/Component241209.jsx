@@ -54,7 +54,7 @@ function j(e, t) {
 let _ = new RegExp("https?://".concat(null != (a = window.GLOBAL_ENV.CDN_HOST) ? a : ""));
 
 function y(e) {
-  return "string" == typeof e.content ? e.content : N(e.content)
+  return "string" == typeof e.content ? e.content : S(e.content)
 }
 let C = j(v({}, d().defaultRules), {
     heading: j(v({}, d().defaultRules.heading), {
@@ -146,8 +146,8 @@ let C = j(v({}, d().defaultRules), {
     })
   }),
   E = d().parserFor(C),
-  N = d().reactFor(d().ruleOutput(C, "react"));
-class S extends(r = Chunk647438.PureComponent) {
+  S = d().reactFor(d().ruleOutput(C, "react"));
+class N extends(r = Chunk647438.PureComponent) {
   render() {
     let {
       className: e,
@@ -164,8 +164,8 @@ class S extends(r = Chunk647438.PureComponent) {
     })
   }
 }
-g(S, "rules", C), g(S, "defaultProps", {
+g(N, "rules", C), g(N, "defaultProps", {
   parser: E,
-  output: N
+  output: S
 });
-let T = S
+let T = N

@@ -1,7 +1,7 @@
 /** Chunk was on 61222 **/
 /** chunk id: 782691, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => N
+  Z: () => S
 }), require("./388685.js"), require("./704826.js"), require("./35282.js"), require("./539854.js"), require("./49124.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -59,12 +59,12 @@ let C = {
     [Chunk489495.cq.REDUCED_MOTION]: null
   },
   E = "debug",
-  N = e => {
+  S = e => {
     let {
       effect: t
     } = e, {
       upsertConfig: n
-    } = (0, x.n6)(), i = (0, o.e7)([h.default], () => h.default.getCurrentUser()), [N, S] = r.useState(true), T = r.useRef(null), [O, P] = r.useState(false), [k, I] = r.useState(false), [w, R] = r.useState([]), [A, Z] = r.useState(C), D = r.useRef([]), [L, M] = r.useState(t.name), U = L.toLowerCase().replace(/\s+/g, "_"), F = r.useMemo(() => ({
+    } = (0, x.n6)(), i = (0, o.e7)([h.default], () => h.default.getCurrentUser()), [S, N] = r.useState(true), T = r.useRef(null), [O, P] = r.useState(false), [k, I] = r.useState(false), [w, R] = r.useState([]), [A, Z] = r.useState(C), D = r.useRef([]), [L, M] = r.useState(t.name), U = L.toLowerCase().replace(/\s+/g, "_"), F = r.useMemo(() => ({
       id: E,
       skuId: E,
       title: E,
@@ -140,7 +140,7 @@ let C = {
             src: O ? v : j,
             alt: "",
             width: 450
-          }), N && (0, a.jsx)(b.Z, {
+          }), S && (0, a.jsx)(b.Z, {
             config: F
           })]
         }), (0, a.jsxs)("div", {
@@ -238,7 +238,7 @@ let C = {
                 variant: "primary",
                 text: "Replay Animation",
                 onClick: () => {
-                  S(false), setTimeout(() => S(true), 100)
+                  N(false), setTimeout(() => N(true), 100)
                 }
               })
             })

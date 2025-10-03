@@ -29,8 +29,8 @@ let C = function(e) {
     entryPoint: n,
     onClose: C,
     onComplete: E,
-    dismissable: N
-  } = e, [S, T] = r.useState(s.z.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), O = r.useRef(S), [P, k] = (0, c.US)([S], true, true), I = r.useMemo(() => (0, i.Z)(), []), w = r.useRef(false);
+    dismissable: S
+  } = e, [N, T] = r.useState(s.z.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), O = r.useRef(N), [P, k] = (0, c.US)([N], true, true), I = r.useMemo(() => (0, i.Z)(), []), w = r.useRef(false);
   r.useEffect(() => {
     O.current = P
   }, [P]);
@@ -55,7 +55,7 @@ let C = function(e) {
     transitionState: t,
     onClose: C,
     gradientColor: "blue",
-    dismissable: N,
+    dismissable: S,
     graphic: {
       type: "image",
       src: y.Z

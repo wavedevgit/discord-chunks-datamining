@@ -59,8 +59,8 @@ function N(e) {
   }), W = (0, i.e7)([o.Z], () => o.Z.isFetchingUserOutbox(t.id)), B = t.id === n.id, z = (0, i.e7)([f.Z, d.Z], () => {
     let e = B ? f.Z.getStatus() : d.Z.getStatus(t.id);
     return e === l.Skl.OFFLINE || e === l.Skl.INVISIBLE
-  }), H = L.length > 0 || null != G, q = D && null == G && null == F && null != M, V = !z && (H || q), Y = U.length > 0, K = L.some(e => (0, a.Z)(e));
-  if (!V && !Y && W) return (0, r.jsx)("div", {
+  }), H = L.length > 0 || null != G, Y = D && null == G && null == F && null != M, q = !z && (H || Y), V = U.length > 0, K = L.some(e => (0, a.Z)(e));
+  if (!q && !V && W) return (0, r.jsx)("div", {
     className: T.cards,
     children: Array.from({
       length: 8
@@ -75,7 +75,7 @@ function N(e) {
       })]
     }, t))
   });
-  if (!V && !Y && !W) {
+  if (!q && !V && !W) {
     var X;
     return B ? (0, r.jsx)(x.Uf, {
       onClose: Z
@@ -91,7 +91,7 @@ function N(e) {
     fade: true,
     children: [(() => {
       let e = B && R && !K;
-      return V ? (0, r.jsx)(P.Z, {
+      return q ? (0, r.jsx)(P.Z, {
         heading: E.intl.string(E.t.J6STd3),
         children: (0, r.jsxs)("ul", {
           className: T.cards,
@@ -99,7 +99,7 @@ function N(e) {
             children: (0, r.jsx)(v.Z, {
               variant: "horizontal"
             })
-          }), !_ && q && (0, r.jsx)("li", {
+          }), !_ && Y && (0, r.jsx)("li", {
             children: (0, r.jsx)(O.Z, {
               user: t,
               currentUser: n,
@@ -120,7 +120,7 @@ function N(e) {
               activity: e,
               onClose: Z
             })
-          }, "live-".concat(i))), _ && q && (0, r.jsx)("li", {
+          }, "live-".concat(i))), _ && Y && (0, r.jsx)("li", {
             children: (0, r.jsx)(O.Z, {
               user: t,
               currentUser: n,
@@ -135,7 +135,7 @@ function N(e) {
           variant: "horizontal"
         })
       }) : null
-    })(), Y ? (0, r.jsx)(P.Z, {
+    })(), V ? (0, r.jsx)(P.Z, {
       heading: E.intl.string(E.t.jzgEoK),
       introText: B ? E.intl.format(E.t["4bk9Ag"], {
         learnMoreHook: (e, t) => (0, r.jsx)(l.eee, {

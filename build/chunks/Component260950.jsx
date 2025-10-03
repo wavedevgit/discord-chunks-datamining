@@ -60,17 +60,17 @@ function E() {
     t = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
     [n, i] = Chunk647438.useState("511651880837840896"),
     [p, v] = Chunk647438.useState([]),
-    [E, N] = Chunk647438.useState(false),
-    S = Chunk647438.useCallback(async () => {
+    [E, S] = Chunk647438.useState(false),
+    N = Chunk647438.useCallback(async () => {
       try {
-        N(true), await (0, Chunk355467.jg)(), await (0, Chunk232567.In)(exports.id), Chunk474936(await y())
+        S(true), await (0, Chunk355467.jg)(), await (0, Chunk232567.In)(exports.id), Chunk474936(await y())
       } finally {
-        N(false)
+        S(false)
       }
     }, [exports]);
   Chunk647438.useEffect(() => {
-    S()
-  }, [S]);
+    N()
+  }, [N]);
   let T = Chunk647438.useMemo(() => Chunk255078.filter(e => e.status !== g.O0b.ACTIVE).sort((e, t) => e.id > t.id ? false : 1), [Chunk255078]),
     O = async () => {
       await Chunk544891.tn.post({
@@ -79,12 +79,12 @@ function E() {
           plan_id: require
         },
         rejectWithError: false
-      }), await S()
+      }), await N()
     }, P = async () => {
       await Chunk544891.tn.del({
         url: "/debug/subscription",
         rejectWithError: false
-      }), await S()
+      }), await N()
     };
   return (0, Chunk951288.jsx)(Chunk481060.zJl, {
     className: Chunk451429.panel,
@@ -100,7 +100,7 @@ function E() {
           disabled: E,
           look: Chunk755721.zx.Looks.BLANK,
           size: Chunk755721.zx.Sizes.ICON,
-          onClick: S,
+          onClick: N,
           children: (0, Chunk951288.jsx)("span", {
             title: "Refresh",
             children: (0, Chunk951288.jsx)(Chunk481060.DuK, {
@@ -127,7 +127,7 @@ function E() {
         })
       }), null != module && (0, Chunk951288.jsx)(Chunk759027.Z, {
         subscription: module,
-        onUpdated: S
+        onUpdated: N
       }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
         variant: "heading-lg/semibold",
         className: Chunk451429.header,
@@ -147,7 +147,7 @@ function E() {
           children: "Previous Subscriptions"
         }), T.map(e => (0, a.jsx)(b.Z, {
           subscription: e,
-          onUpdated: S
+          onUpdated: N
         }, e.id))]
       })]
     })

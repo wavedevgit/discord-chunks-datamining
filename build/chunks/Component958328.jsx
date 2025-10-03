@@ -53,7 +53,7 @@ function j() {
     y = (0, Chunk933557.ZP)(require, true),
     C = null != require ? (0, Chunk71080.IG)(require, false) : null,
     E = null != Chunk120356 ? Chunk233608.Z.getGuildPermissionSpecMap(Chunk120356) : null,
-    N = Object.values(null != C ? C : {}).map(e => {
+    S = Object.values(null != C ? C : {}).map(e => {
       let {
         title: t,
         flag: n
@@ -63,7 +63,7 @@ function j() {
         can: r
       }, t)
     }),
-    S = Object.values(null != E ? E : {}).map(e => {
+    N = Object.values(null != E ? E : {}).map(e => {
       let {
         title: t,
         flag: n
@@ -82,13 +82,13 @@ function j() {
         children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
           variant: "heading-md/semibold",
           children: null != y ? "Permissions in ".concat(y) : "No channel selected"
-        }), N]
+        }), S]
       }), (0, Chunk951288.jsxs)("section", {
         className: Chunk989295.section,
         children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
           variant: "heading-md/semibold",
           children: null != Chunk120356 ? "Permissions in ".concat(Chunk120356.name) : "No guild selected"
-        }), S]
+        }), N]
       })]
     })
   })

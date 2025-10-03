@@ -2,7 +2,7 @@
 /** chunk id: 693587, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => A
 });
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -102,18 +102,32 @@ function m(e) {
   })
 }
 
-function g(e, t) {
+function g(e) {
+  let {
+    guildId: t,
+    instance: n
+  } = e, r = _(t);
+  d = u(l({}, d), {
+    [t]: u(l({}, r), {
+      instances: u(l({}, r.instances), {
+        [n.id]: n
+      })
+    })
+  })
+}
+
+function E(e, t) {
   return Object.values(t).reduce((e, t) => {
     var n, r, i, a, o;
     return e + (null != (o = null == (a = t.sku) || null == (i = a.tenant_metadata) || null == (r = i.guild_monetization) || null == (n = r.game_server) ? true : n.boost_price) ? o : 0)
   }, 0)
 }
 
-function E(e) {
+function b(e) {
   let {
     guildId: t,
     unlockedGameServers: n
-  } = e, r = g(t, n);
+  } = e, r = E(t, n);
   d = u(l({}, d), {
     [t]: u(l({}, _(t)), {
       entitlements: n,
@@ -122,7 +136,7 @@ function E(e) {
   })
 }
 
-function b(e) {
+function y(e) {
   let {
     guildId: t,
     gameServer: n
@@ -132,7 +146,7 @@ function b(e) {
   })
 }
 
-function y(e) {
+function O(e) {
   let {
     guildId: t,
     gameServerId: n
@@ -142,35 +156,35 @@ function y(e) {
   })
 }
 
-function O(e) {
-  let {
-    guildId: t,
-    entitlements: n
-  } = e, r = _(t);
-  n.forEach(e => {
-    r.entitlements[e.id] = e
-  }), I(t, r)
-}
-
 function v(e) {
   let {
     guildId: t,
     entitlements: n
   } = e, r = _(t);
   n.forEach(e => {
-    delete r.entitlements[e.id]
-  }), I(t, r)
+    r.entitlements[e.id] = e
+  }), T(t, r)
 }
 
-function I(e, t) {
-  let n = g(e, t.entitlements);
+function I(e) {
+  let {
+    guildId: t,
+    entitlements: n
+  } = e, r = _(t);
+  n.forEach(e => {
+    delete r.entitlements[e.id]
+  }), T(t, r)
+}
+
+function T(e, t) {
+  let n = E(e, t.entitlements);
   d = u(l({}, d), {
     [e]: u(l({}, t), {
       appliedBoosts: n
     })
   })
 }
-class T extends(r = Chunk442837.ZP.Store) {
+class S extends(r = Chunk442837.ZP.Store) {
   getState() {
     return d
   }
@@ -186,16 +200,17 @@ class T extends(r = Chunk442837.ZP.Store) {
     return null != e && (null == (t = d[e]) ? true : t.hasFetchedInstances) === true
   }
 }
-s(T, "displayName", "PortkeyStore");
-let S = new T(Chunk570140.Z, {
+s(S, "displayName", "PortkeyStore");
+let A = new S(Chunk570140.Z, {
   LOGOUT: f,
   PORTKEY_FETCH_CATALOG_SUCCESS: p,
   PORTKEY_FETCH_INSTANCES_SUCCESS: h,
   PORTKEY_FETCH_GAME_INSTRUCTIONS_SUCCESS: m,
-  GUILD_BOOST_ENTITLEMENTS_FETCH_SUCCESS: E,
-  GAME_SERVER_CREATE: b,
-  GAME_SERVER_UPDATE: b,
-  GAME_SERVER_DELETE: y,
-  GUILD_POWERUP_ENTITLEMENTS_CREATE: O,
-  GUILD_POWERUP_ENTITLEMENTS_DELETE: v
+  PORTKEY_UPDATE_INSTANCE_SUCCESS: g,
+  GUILD_BOOST_ENTITLEMENTS_FETCH_SUCCESS: b,
+  GAME_SERVER_CREATE: y,
+  GAME_SERVER_UPDATE: y,
+  GAME_SERVER_DELETE: O,
+  GUILD_POWERUP_ENTITLEMENTS_CREATE: v,
+  GUILD_POWERUP_ENTITLEMENTS_DELETE: I
 })

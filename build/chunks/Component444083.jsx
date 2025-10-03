@@ -31,8 +31,8 @@ function f(e) {
   let {
     guildId: n,
     instance: t
-  } = e, d = r.useRef(null), f = (0, c.Z)(n);
-  return (0, a.jsx)(i.yRy, {
+  } = e, d = a.useRef(null), f = (0, l.Z)(n);
+  return (0, r.jsx)(i.yRy, {
     targetElementRef: d,
     align: "top",
     position: "right",
@@ -40,27 +40,27 @@ function f(e) {
     disablePointerEvents: false,
     renderPopout: e => {
       let {
-        closePopout: r
+        closePopout: a
       } = e;
-      return (0, a.jsx)(i.v2r, {
+      return (0, r.jsx)(i.v2r, {
         navId: "portkey-popout-context-menu",
         onClose: () => {
-          (0, s.Zy)(), r()
+          (0, s.Zy)(), a()
         },
         "aria-label": b.intl.string(u.default.xCq1DA),
         onSelect: true,
-        children: (0, a.jsxs)(i.kSQ, {
-          children: [(0, a.jsx)(i.sNh, {
+        children: (0, r.jsxs)(i.kSQ, {
+          children: [(0, r.jsx)(i.sNh, {
             id: "get-support",
             icon: i.kBi,
             label: b.intl.string(u.default["TciV8/"]),
             action: () => {}
-          }), f && (0, a.jsx)(i.sNh, {
+          }), f && (0, r.jsx)(i.sNh, {
             id: "settings",
             icon: i.ewm,
             label: b.intl.string(u.default.NUTl4u),
             action: () => {
-              (0, l.Z)({
+              (0, c.Z)({
                 guildId: n,
                 stepConfig: g,
                 initialPortkeyInstance: t,
@@ -73,20 +73,20 @@ function f(e) {
     },
     children: e => {
       var n, t;
-      return (0, a.jsx)(i.P3F, (n = function(e) {
+      return (0, r.jsx)(i.P3F, (n = function(e) {
         for (var n = 1; n < arguments.length; n++) {
           var t = null != arguments[n] ? arguments[n] : {},
-            a = Object.keys(t);
-          "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+            r = Object.keys(t);
+          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
             return Object.getOwnPropertyDescriptor(t, e).enumerable
-          }))), a.forEach(function(n) {
-            var a;
-            a = t[n], n in e ? Object.defineProperty(e, n, {
-              value: a,
+          }))), r.forEach(function(n) {
+            var r;
+            r = t[n], n in e ? Object.defineProperty(e, n, {
+              value: r,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[n] = a
+            }) : e[n] = r
           })
         }
         return e
@@ -95,15 +95,15 @@ function f(e) {
         className: m.clickable
       }, e), t = t = {
         innerRef: d,
-        children: (0, a.jsx)(i.xhG, {
+        children: (0, r.jsx)(i.xhG, {
           color: "currentColor",
           size: "sm"
         })
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(t)) : (function(e, n) {
         var t = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var a = Object.getOwnPropertySymbols(e);
-          t.push.apply(t, a)
+          var r = Object.getOwnPropertySymbols(e);
+          t.push.apply(t, r)
         }
         return t
       })(Object(t)).forEach(function(e) {

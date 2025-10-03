@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk815660 = require("./815660.js"),
   Chunk388032 = require("./388032.jsx");
 
-function N(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       a = Object.keys(n);
@@ -45,7 +45,7 @@ function N(e) {
   return e
 }
 
-function S(e, t) {
+function N(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -79,7 +79,7 @@ function T() {
       let {
         default: e
       } = await require.e("35401").then(require.bind(require, 284549));
-      return t => (0, a.jsx)(e, N({}, t))
+      return t => (0, a.jsx)(e, S({}, t))
     }, {
       modalKey: Chunk308569.F0,
       Layer: Chunk429142.ZP
@@ -92,7 +92,7 @@ function T() {
       let {
         default: e
       } = await Promise.resolve().then(require.bind(require, 468026));
-      return t => (0, a.jsx)(e, S(N({}, t), {
+      return t => (0, a.jsx)(e, N(S({}, t), {
         title: E.intl.string(E.t.KLnLIC),
         body: E.intl.string(E.t.XGbCq6),
         confirmText: E.intl.string(E.t["3oK4q6"])
@@ -123,7 +123,7 @@ function T() {
         let {
           default: e
         } = await Promise.resolve().then(n.bind(n, 607018));
-        return t => (0, a.jsx)(e, N({
+        return t => (0, a.jsx)(e, S({
           layerContext: x.mK,
           reason: f.L.USER_ACTION_REQUIRED
         }, t))
@@ -138,7 +138,7 @@ function T() {
           ConfirmModal: e,
           Text: t
         } = await Promise.resolve().then(require.bind(require, 481060));
-        return n => (0, a.jsx)(e, S(N({
+        return n => (0, a.jsx)(e, N(S({
           header: E.intl.string(E.t["2jxGen"]),
           confirmText: E.intl.string(E.t["2jxGen"]),
           cancelText: E.intl.string(E.t["ETE/oK"]),
