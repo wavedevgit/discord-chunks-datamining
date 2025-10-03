@@ -1,7 +1,7 @@
 /** Chunk was on 9452 **/
-/** chunk id: 603569, original params: e,t,n (module,exports,require) **/
+/** chunk id: 603569, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  a: () => S
 });
 var Chunk951288 = require("./951288.js"),
   Chunk657707 = require("./657707.js"),
@@ -15,25 +15,29 @@ var Chunk951288 = require("./951288.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk345909 = require("./345909.js");
-let f = (0, Chunk509613.x1)(Chunk313789.n.FAMILY_CENTER_PANE, {
+let O = (0, Chunk509613.x1)(Chunk313789.n.FAMILY_CENTER_PANE, {
     useTitle: () => Chunk388032.intl.string(Chunk345909.default.RZqaJi),
     buildLayout: () => [],
     render: () => (0, Chunk951288.jsx)(Chunk54942.Z, {})
   }),
-  y = (0, Chunk509613.wf)(Chunk313789.n.FAMILY_CENTER_PANEL, {
+  A = (0, Chunk509613.wf)(Chunk313789.n.FAMILY_CENTER_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk345909.default.RZqaJi),
+    buildLayout: () => [O]
+  }),
+  S = (0, Chunk509613.m7)(Chunk313789.n.FAMILY_CENTER_SIDEBAR_ITEM, {
     icon: Chunk657707.BFJ,
-    buildLayout: () => [f],
+    useTitle: () => Chunk388032.intl.string(Chunk345909.default.RZqaJi),
     legacySearchKey: Chunk726985.s6.PRIVACY_FAMILY_CENTER,
+    buildLayout: () => [A],
     trailing: {
       type: Chunk28682.PU.STRONGLY_DISCOURAGED_CUSTOM,
       dismissibleContentTypes: [Chunk704215.z.FAMILY_CENTER_NEW_BADGE],
-      useDecoration: function(e) {
-        let t = (0, s.gU)();
-        return e === l.z.FAMILY_CENTER_NEW_BADGE ? (0, i.jsx)(u.IGR, {
-          text: O.intl.string(O.t.y2b7CA)
-        }) : t > 0 ? (0, i.jsx)(u.mAB, {
-          count: t
+      useDecoration: function(t) {
+        let e = (0, s.gU)();
+        return t === u.z.FAMILY_CENTER_NEW_BADGE ? (0, i.jsx)(r.IGR, {
+          text: T.intl.string(T.t.y2b7CA)
+        }) : e > 0 ? (0, i.jsx)(r.mAB, {
+          count: e
         }) : null
       }
     }

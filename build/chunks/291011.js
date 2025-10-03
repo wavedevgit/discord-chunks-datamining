@@ -1,5 +1,5 @@
 /** Chunk was on 9452 **/
-/** chunk id: 291011, original params: e,t,n (module,exports,require) **/
+/** chunk id: 291011, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   Z: () => a
 });
@@ -11,10 +11,10 @@ var Chunk392711 = require("./392711.js"),
 let a = (0, Chunk509613.Em)(Chunk313789.n.MOBILE_NOTIFICATION_DELAY, {
   useTitle: () => Chunk388032.intl.string(Chunk388032.t["8rHeOj"]),
   useSubtitle: () => Chunk388032.intl.string(Chunk388032.t["eJE6+P"]),
-  useOptions: () => Chunk392711.range(1, 11).map(e => ({
-    value: 60 * e,
+  useOptions: () => Chunk392711.range(1, 11).map(t => ({
+    value: 60 * t,
     label: s.intl.formatToPlainString(s.t.iXLF9f, {
-      minutes: e
+      minutes: t
     })
   })),
   useValue: Chunk695346.CM.useSetting,

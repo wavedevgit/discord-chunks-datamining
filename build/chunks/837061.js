@@ -1,7 +1,7 @@
 /** Chunk was on 9452 **/
-/** chunk id: 837061, original params: e,t,n (module,exports,require) **/
+/** chunk id: 837061, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => c
+  x: () => E
 });
 var Chunk657707 = require("./657707.js"),
   Chunk509613 = require("./509613.js"),
@@ -16,7 +16,11 @@ let o = (0, Chunk509613.x1)(Chunk313789.n.ACCOUNT_PANE, {
   }),
   c = (0, Chunk509613.wf)(Chunk313789.n.ACCOUNT_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["JAIM/v"]),
-    icon: Chunk657707.tBG,
-    legacySearchKey: Chunk726985.s6.ACCOUNT,
     buildLayout: () => [o]
+  }),
+  E = (0, Chunk509613.m7)(Chunk313789.n.ACCOUNT_SIDEBAR_ITEM, {
+    icon: Chunk657707.tBG,
+    useTitle: () => Chunk388032.intl.string(Chunk388032.t["JAIM/v"]),
+    legacySearchKey: Chunk726985.s6.ACCOUNT,
+    buildLayout: () => [c]
   })

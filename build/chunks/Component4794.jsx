@@ -1,4 +1,4 @@
-/** Chunk was on 59739 **/
+/** Chunk was on 75685 **/
 /** chunk id: 4794, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -17,19 +17,19 @@ let c = Chunk647438.memo(function(e) {
     layout: c,
     useSubtitle: u
   } = t, [d, f] = l.useState(false), {
-    navTransition: b
+    navTransition: m
   } = (0, o.t)();
   l.useEffect(() => {
     var e;
-    (null == b || null == (e = b.targetAccordion) ? true : e.key) === t.key && f(true)
-  }, [null == b ? true : b.targetAccordion, t.key]);
-  let m = null == n ? true : n(d),
-    p = null == u ? true : u();
+    (null == m || null == (e = m.targetAccordion) ? true : e.key) === t.key && f(true)
+  }, [null == m ? true : m.targetAccordion, t.key]);
+  let b = null == n ? true : n(d),
+    j = null == u ? true : u();
   return (0, r.jsx)("div", {
     className: s.accordion,
     children: (0, r.jsx)(a.I, {
-      title: m,
-      subtitle: p,
+      title: b,
+      subtitle: j,
       isOpen: d,
       setIsOpen: f,
       children: c.map(e => (0, r.jsx)(i.Z, {

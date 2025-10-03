@@ -1,4 +1,4 @@
-/** Chunk was on 59739 **/
+/** Chunk was on 75685 **/
 /** chunk id: 245286, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => C
@@ -28,7 +28,7 @@ function O(e) {
     destinationPanel: t,
     originPanel: n
   } = e;
-  (0, b.QB)({
+  (0, m.QB)({
     destinationPane: t,
     originPane: n,
     subsection: f.Z.getSubsection(),
@@ -56,12 +56,12 @@ function C(e) {
       }
       return l
     }(e, ["target"]);
-  let i = m.Z.useField("query"),
+  let i = b.Z.useField("query"),
     {
       node: s,
       directory: u
     } = (0, d.Z)(x.Z, i),
-    b = (t = p.n.ACCOUNT_PANEL, null == u.entry(n) ? t : n),
+    m = (t = j.n.ACCOUNT_PANEL, null == u.entry(n) ? t : n),
     v = l.useRef(null);
   return (0, a.ZP)(() => {
     let e = f.Z.getSection();
@@ -90,7 +90,7 @@ function C(e) {
     root: s,
     directory: u,
     sidebarHeader: _,
-    sidebarFooter: j.Z,
+    sidebarFooter: p.Z,
     onPanelChange: e => {
       let t = (0, y.getUserSettingsSectionsByWebUserSettings)().get(e);
       null != t && (O({
@@ -98,7 +98,7 @@ function C(e) {
         originPanel: v.current
       }), v.current = t)
     },
-    target: b
+    target: m
   }, o))
 }
 
@@ -116,12 +116,12 @@ function _() {
       align: "center",
       scrollBehavior: "sticky"
     }), []),
-    b = Chunk647438.useCallback(e => {
-      m.Z.setState({
+    m = Chunk647438.useCallback(e => {
+      b.Z.setState({
         query: e
       })
     }, []),
-    p = Chunk647438.useCallback(() => {
+    j = Chunk647438.useCallback(() => {
       Chunk996733.Z.setState({
         query: ""
       })

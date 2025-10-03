@@ -1,4 +1,4 @@
-/** Chunk was on 59739 **/
+/** Chunk was on 75685 **/
 /** chunk id: 211512, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   I: () => s
@@ -19,19 +19,19 @@ function s(e) {
     useVariant: u,
     useDisabled: d,
     onClick: f
-  } = t, b = s(), m = null == c ? true : c(), p = n(), j = null == u ? true : u(), x = null == d ? true : d();
+  } = t, m = s(), b = null == c ? true : c(), j = n(), p = null == u ? true : u(), x = null == d ? true : d();
   return (0, r.jsx)(l.x, {
-    title: b,
+    title: m,
     className: a.settingButtonContainer,
     children: (0, r.jsxs)("div", {
       className: a.settingButtonContent,
-      children: [null != m && (0, r.jsx)(o.R, {
+      children: [null != b && (0, r.jsx)(o.R, {
         type: o.g.DESCRIPTION,
-        children: m
+        children: b
       }), (0, r.jsx)(i.zxk, {
         onClick: f,
-        text: p,
-        variant: j,
+        text: j,
+        variant: p,
         disabled: x
       })]
     })

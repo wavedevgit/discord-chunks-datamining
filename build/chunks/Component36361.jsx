@@ -1,4 +1,4 @@
-/** Chunk was on 59739 **/
+/** Chunk was on 75685 **/
 /** chunk id: 36361, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -18,7 +18,7 @@ var Chunk28682 = require("./28682.js"),
   Chunk670304 = require("./670304.jsx"),
   Chunk357660 = require("./357660.jsx");
 
-function j(e) {
+function p(e) {
   let {
     node: t
   } = e;
@@ -28,15 +28,15 @@ function j(e) {
     case l.Jq.SIDEBAR_ITEM:
       throw Error("".concat(t.type, " nodes should never be rendered directly"));
     case l.Jq.PANEL:
-      return (0, r.jsx)(p.T, {
+      return (0, r.jsx)(j.T, {
         node: t
       });
     case l.Jq.PANE:
-      return (0, r.jsx)(m.Z, {
+      return (0, r.jsx)(b.Z, {
         node: t
       });
     case l.Jq.LIST:
-      return (0, r.jsx)(b.Z, {
+      return (0, r.jsx)(m.Z, {
         node: t
       });
     case l.Jq.CATEGORY:
@@ -75,11 +75,11 @@ function x(e) {
   let {
     node: t
   } = e;
-  return t.type === l.Jq.PANEL || t.type === l.Jq.PANE ? (0, r.jsx)(j, {
+  return t.type === l.Jq.PANEL || t.type === l.Jq.PANE ? (0, r.jsx)(p, {
     node: t
   }) : (0, r.jsx)(o.Z, {
     node: t,
-    children: (0, r.jsx)(j, {
+    children: (0, r.jsx)(p, {
       node: t
     })
   })

@@ -1,5 +1,5 @@
 /** Chunk was on 9452 **/
-/** chunk id: 736608, original params: e,t,n (module,exports,require) **/
+/** chunk id: 736608, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
 }), require("./388685.js");
@@ -14,7 +14,7 @@ let c = (0, Chunk509613.k4)(Chunk313789.n.NOTIFICATIONS_EMAIL_CATEGORY, {
   useTitle: () => Chunk388032.intl.string(Chunk388032.t["w/qqKC"]),
   init: function() {
     let {
-      initialized: e
+      initialized: t
     } = Chunk151662.Z.getEmailSettings();
     module || (0, Chunk960412.Y7)()
   },

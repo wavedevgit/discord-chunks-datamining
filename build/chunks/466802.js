@@ -1,7 +1,7 @@
 /** Chunk was on 9452 **/
-/** chunk id: 466802, original params: e,t,n (module,exports,require) **/
+/** chunk id: 466802, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  J: () => T
 });
 var Chunk657707 = require("./657707.js"),
   Chunk509613 = require("./509613.js"),
@@ -11,17 +11,21 @@ var Chunk657707 = require("./657707.js"),
   Chunk126848 = require("./126848.jsx"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx");
-let d = (0, Chunk509613.x1)(Chunk313789.n.NITRO_PANE, {
+let E = (0, Chunk509613.x1)(Chunk313789.n.NITRO_PANE, {
     buildLayout: () => [],
     render: Chunk748717.Z
   }),
-  E = (0, Chunk509613.wf)(Chunk313789.n.NITRO_PANEL, {
+  d = (0, Chunk509613.wf)(Chunk313789.n.NITRO_PANEL, {
+    useTitle: () => Chunk388032.intl.string(Chunk388032.t.Ipxkoq),
+    buildLayout: () => [E]
+  }),
+  T = (0, Chunk509613.m7)(Chunk313789.n.NITRO_SIDEBAR_ITEM, {
     icon: Chunk657707.SrA,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.Ipxkoq),
+    legacySearchKey: Chunk726985.s6.PREMIUM,
     buildLayout: () => [d],
     trailing: {
       type: Chunk28682.PU.STRONGLY_DISCOURAGED_CUSTOM,
       useDecoration: () => (0, Chunk126848.x)()
-    },
-    legacySearchKey: Chunk726985.s6.PREMIUM
+    }
   })

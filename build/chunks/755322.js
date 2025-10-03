@@ -1,7 +1,7 @@
 /** Chunk was on 9452 **/
-/** chunk id: 755322, original params: e,t,n (module,exports,require) **/
+/** chunk id: 755322, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  m: () => d
 });
 var Chunk657707 = require("./657707.js"),
   Chunk509613 = require("./509613.js"),
@@ -14,10 +14,14 @@ let c = (0, Chunk509613.x1)(Chunk313789.n.LEGACY_NOTIFICATIONS_PANE, {
     buildLayout: () => [],
     render: Chunk593648.Z
   }),
-  d = (0, Chunk509613.wf)(Chunk313789.n.LEGACY_NOTIFICATIONS_SETTINGS_PANEL, {
+  E = (0, Chunk509613.wf)(Chunk313789.n.LEGACY_NOTIFICATIONS_SETTINGS_PANEL, {
+    useTitle: () => Chunk388032.intl.string(Chunk388032.t.HcoRu7),
+    buildLayout: () => [c]
+  }),
+  d = (0, Chunk509613.m7)(Chunk313789.n.LEGACY_NOTIFICATIONS_SIDEBAR_ITEM, {
     icon: Chunk657707.Dkj,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.HcoRu7),
-    buildLayout: () => [c],
     legacySearchKey: Chunk726985.s6.NOTIFICATIONS,
-    usePredicate: () => !(0, Chunk526665.gj)("LegacyNotificationsPanel")
+    usePredicate: () => !(0, Chunk526665.gj)("LegacyNotificationsPanel"),
+    buildLayout: () => [E]
   })

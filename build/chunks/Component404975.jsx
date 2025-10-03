@@ -1,7 +1,7 @@
-/** Chunk was on 59739 **/
+/** Chunk was on 75685 **/
 /** chunk id: 404975, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  P: () => x
+  P: () => p
 }), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -13,27 +13,26 @@ var Chunk951288 = require("./951288.js"),
   Chunk984802 = require("./984802.js"),
   Chunk59662 = require("./59662.js"),
   Chunk28682 = require("./28682.js"),
-  Chunk829210 = require("./829210.jsx"),
   Chunk854014 = require("./854014.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk845435 = require("./845435.js");
 
-function x(e) {
+function p(e) {
   let {
     root: t,
     header: n,
     footer: o,
-    onClose: b
+    onClose: m
   } = e, {
-    showNavigationMobile: m
-  } = (0, d.t)(), x = l.useMemo(() => {
+    showNavigationMobile: p
+  } = (0, d.t)(), v = l.useMemo(() => {
     let e = [];
     return t.layout.forEach(t => {
       let {
         layout: n
       } = t;
       n.forEach(t => {
-        if (t.type === f.Jq.PANEL && null != t.trailing) switch (t.trailing.type) {
+        if (null != t.trailing) switch (t.trailing.type) {
           case f.PU.BADGE_NEW:
           case f.PU.STRONGLY_DISCOURAGED_CUSTOM:
             var n;
@@ -53,7 +52,7 @@ function x(e) {
   return (0, r.jsx)(s.f6W, {
     theme: g,
     children: e => (0, r.jsx)(c.ZP, {
-      contentTypes: x,
+      contentTypes: v,
       children: t => {
         let {
           visibleContent: l
@@ -61,7 +60,7 @@ function x(e) {
         return (0, r.jsxs)("div", {
           className: i()(j.sidebar, e, {
             [j.mobile]: a.tq,
-            [j.mobileNavigationOpen]: m
+            [j.mobileNavigationOpen]: p
           }),
           children: [(0, r.jsxs)("div", {
             className: j.fixedContent,
@@ -69,13 +68,13 @@ function x(e) {
               className: j.mobileCloseButton,
               children: (0, r.jsx)(s.hU, {
                 icon: s.Uz9,
-                onClick: b,
+                onClick: m,
                 variant: "icon-only",
                 size: "sm",
-                "aria-label": p.intl.string(p.t.cpT0Cg)
+                "aria-label": b.intl.string(b.t.cpT0Cg)
               })
             }), (0, r.jsx)("div", {
-              children: y.map(e => (0, r.jsx)(v, {
+              children: y.map(e => (0, r.jsx)(x, {
                 section: e,
                 visibleContent: l
               }, e.key))
@@ -85,7 +84,7 @@ function x(e) {
             fade: true,
             children: [(0, r.jsx)("nav", {
               className: j.nav,
-              children: h.map(e => (0, r.jsx)(v, {
+              children: h.map(e => (0, r.jsx)(x, {
                 section: e,
                 visibleContent: l
               }, e.key))
@@ -97,7 +96,7 @@ function x(e) {
   })
 }
 
-function v(e) {
+function x(e) {
   var t;
   let {
     section: n,
@@ -113,17 +112,11 @@ function v(e) {
         color: "text-tertiary",
         children: o
       })
-    }), n.layout.map(e => (0, r.jsxs)("li", {
-      children: [e.type === f.Jq.PANEL && (0, r.jsx)(b.Z, {
+    }), n.layout.map(e => (0, r.jsx)("li", {
+      children: (0, r.jsx)(m.y, {
         node: e,
         visibleContent: l
-      }), e.type === f.Jq.SIDEBAR_ITEM && ("render" in e ? (0, r.jsx)(m.Z, {
-        render: e.render
-      }) : (0, r.jsx)(m.Z, {
-        icon: e.icon,
-        title: e.useTitle(),
-        onClick: e.onClick
-      }))]
+      })
     }, e.key))]
   })
 }

@@ -1,5 +1,5 @@
 /** Chunk was on 9452 **/
-/** chunk id: 461982, original params: e,t,n (module,exports,require) **/
+/** chunk id: 461982, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   Z: () => o
 });
@@ -11,5 +11,5 @@ var Chunk509613 = require("./509613.js"),
   Chunk388032 = require("./388032.jsx");
 let o = (0, Chunk509613.vB)(Chunk313789.n.ACTIVITY_SECTION, {
   useLabel: () => Chunk388032.intl.string(Chunk388032.t.SmHCFR),
-  buildLayout: () => [Chunk199548.Z, Chunk191694.Z, Chunk215871.Z]
+  buildLayout: () => [Chunk199548.t, Chunk191694.q, Chunk215871.b]
 })

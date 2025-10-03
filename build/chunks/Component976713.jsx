@@ -1,4 +1,4 @@
-/** Chunk was on 59739 **/
+/** Chunk was on 75685 **/
 /** chunk id: 976713, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => a
@@ -17,7 +17,7 @@ function a(e) {
     useTitle: s,
     useSubtitle: c,
     useOptions: u
-  } = t, d = s(), f = null == c ? true : c(), b = n(), m = u();
+  } = t, d = s(), f = null == c ? true : c(), m = n(), b = u();
   return (0, r.jsx)(o.xJW, {
     title: d,
     className: i.radioContainer,
@@ -27,8 +27,8 @@ function a(e) {
         type: o.geA.DESCRIPTION,
         children: f
       }), (0, r.jsx)(l.Gu, {
-        options: m,
-        value: b,
+        options: b,
+        value: m,
         onChange: e => a(e.value)
       })]
     })

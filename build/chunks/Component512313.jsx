@@ -1,4 +1,4 @@
-/** Chunk was on 61222 **/
+/** Chunk was on 5588 **/
 /** chunk id: 512313, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -36,17 +36,17 @@ function p(e) {
   let {
     setting: t,
     depth: n
-  } = e, r = (0, s.Lk)(t) && (t.type === s.Jq.PANEL && t.layout.some(e => null != e.render) || t.type === s.Jq.PANE && null != t.render), i = null;
+  } = e, r = (0, s.Lk)(t) && (t.type === s.Jq.SIDEBAR_ITEM && t.layout.some(e => null == e ? true : e.layout.some(e => null != e.render)) || t.type === s.Jq.PANEL && t.layout.some(e => null != e.render) || t.type === s.Jq.PANE && null != t.render), i = null;
   if ((0, s.Lk)(t)) {
-    var l;
-    i = 0 === t.layout.length && (null == (l = t.parent) ? true : l.legacySearchKey) != null ? (0, a.jsx)(m, {
-      setting: t.parent.legacySearchKey,
+    var l, o;
+    0 === t.layout.length && (null == (o = t.parent) || null == (l = o.parent) ? true : l.legacySearchKey) != null ? i = (0, a.jsx)(m, {
+      setting: t.parent.parent.legacySearchKey,
       depth: n + 1,
       highlight: true
-    }) : t.layout.map(e => (0, a.jsx)(p, {
+    }) : t.layout.length > 0 && (i = t.layout.map(e => (0, a.jsx)(p, {
       setting: e,
       depth: n + 1
-    }, e.key))
+    }, e.key)))
   }
   return (0, a.jsx)(c.r, {
     title: t.key,

@@ -1,4 +1,4 @@
-/** Chunk was on 59739 **/
+/** Chunk was on 75685 **/
 /** chunk id: 924052, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Cu: () => u,
@@ -29,13 +29,13 @@ function c(e) {
       return
     }
     e()
-  }, [c]), b = l.useMemo(() => ({
+  }, [c]), m = l.useMemo(() => ({
     navigateWithValidation: f,
     showNotice: c,
     handleStoreUpdate: d
   }), [f, c, d]);
   return (0, r.jsx)(s.Provider, {
-    value: b,
+    value: m,
     children: t
   })
 }

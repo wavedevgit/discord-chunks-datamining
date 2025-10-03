@@ -1,7 +1,7 @@
 /** Chunk was on 9452 **/
-/** chunk id: 483161, original params: e,t,n (module,exports,require) **/
+/** chunk id: 483161, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  z: () => L
 });
 var Chunk951288 = require("./951288.js"),
   Chunk657707 = require("./657707.js"),
@@ -10,7 +10,6 @@ var Chunk951288 = require("./951288.js"),
   Chunk778825 = require("./778825.js"),
   Chunk398140 = require("./398140.jsx"),
   Chunk564344 = require("./564344.jsx"),
-  Chunk854014 = require("./854014.jsx"),
   Chunk509613 = require("./509613.js"),
   Chunk28682 = require("./28682.js"),
   Chunk518950 = require("./518950.js"),
@@ -21,66 +20,64 @@ var Chunk951288 = require("./951288.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk88651 = require("./88651.js");
-let A = (0, Chunk509613.x1)(Chunk313789.n.PROFILE_PANE, {
+let g = (0, Chunk509613.x1)(Chunk313789.n.PROFILE_PANE, {
     buildLayout: () => [],
     render: Chunk564344.Z
   }),
-  I = (0, Chunk509613.wf)(Chunk313789.n.PROFILE_PANEL, {
-    icon: Chunk657707.tBG,
+  b = (0, Chunk509613.wf)(Chunk313789.n.PROFILE_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["vi7f+v"]),
-    buildLayout: () => [A],
+    buildLayout: () => [g],
     notice: {
       stores: [Chunk778825.Z, Chunk25990.Z],
       element: Chunk398140.Z
+    }
+  }),
+  L = (0, Chunk509613.m7)(Chunk313789.n.PROFILE_SIDEBAR_ITEM, {
+    icon: Chunk657707.tBG,
+    useTitle: () => Chunk388032.intl.string(Chunk388032.t["vi7f+v"]),
+    legacySearchKey: Chunk726985.s6.PROFILE_CUSTOMIZATION,
+    buildLayout: () => [b],
+    stronglyDiscouragedCustomComponent: () => {
+      var t;
+      let e = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
+        {
+          avatarSrc: n,
+          avatarDecorationSrc: s
+        } = (0, Chunk518950.Z)({
+          userId: null == exports ? true : exports.id,
+          size: Chunk481060.EFr.SIZE_48
+        });
+      return null == exports ? null : (0, Chunk951288.jsxs)("div", {
+        className: Chunk88651.profileCustomizationTab,
+        children: [(0, Chunk951288.jsx)(Chunk481060.qEK, {
+          src: require,
+          avatarDecoration: Chunk778825,
+          size: Chunk481060.EFr.SIZE_48,
+          "aria-label": Chunk388032.intl.string(Chunk388032.t.lqaIxM)
+        }), (0, Chunk951288.jsxs)("div", {
+          className: Chunk88651.textContainer,
+          children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
+            color: "header-primary",
+            variant: "text-md/medium",
+            lineClamp: 1,
+            children: null != (t = exports.globalName) ? module : exports.username
+          }), (0, Chunk951288.jsxs)("div", {
+            className: Chunk88651.editProfilesRow,
+            children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
+              variant: "text-sm/normal",
+              color: "currentColor",
+              children: Chunk388032.intl.string(Chunk388032.t.Ip9nBQ)
+            }), (0, Chunk951288.jsx)(Chunk657707.vdY, {
+              size: "xxs",
+              color: "currentColor"
+            })]
+          })]
+        })]
+      })
     },
     trailing: {
       type: Chunk28682.PU.BADGE_NEW,
       dismissibleContentTypes: (0, Chunk620163.OF)(),
       badgeComponent: Chunk620163.W8
-    },
-    legacySearchKey: Chunk726985.s6.PROFILE_CUSTOMIZATION,
-    stronglyDiscouragedCustomTab: e => {
-      var t;
-      let {
-        active: n,
-        onClick: s
-      } = e, a = (0, l.e7)([f.default], () => f.default.getCurrentUser()), {
-        avatarSrc: o,
-        avatarDecorationSrc: d
-      } = (0, O.Z)({
-        userId: null == a ? true : a.id,
-        size: u.EFr.SIZE_48
-      });
-      return null == a ? null : (0, i.jsx)(c.C, {
-        onClick: s,
-        active: n,
-        children: (0, i.jsxs)("div", {
-          className: b.profileCustomizationTab,
-          children: [(0, i.jsx)(u.qEK, {
-            src: o,
-            avatarDecoration: d,
-            size: u.EFr.SIZE_48,
-            "aria-label": S.intl.string(S.t.lqaIxM)
-          }), (0, i.jsxs)("div", {
-            className: b.textContainer,
-            children: [(0, i.jsx)(u.Text, {
-              color: "header-primary",
-              variant: "text-md/medium",
-              lineClamp: 1,
-              children: null != (t = a.globalName) ? t : a.username
-            }), (0, i.jsxs)("div", {
-              className: b.editProfilesRow,
-              children: [(0, i.jsx)(u.Text, {
-                variant: "text-sm/normal",
-                color: "currentColor",
-                children: S.intl.string(S.t.Ip9nBQ)
-              }), (0, i.jsx)(r.vdY, {
-                size: "xxs",
-                color: "currentColor"
-              })]
-            })]
-          })]
-        })
-      })
     }
   })

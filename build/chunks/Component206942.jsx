@@ -1,7 +1,7 @@
 /** Chunk was on 9452 **/
-/** chunk id: 206942, original params: e,t,n (module,exports,require) **/
+/** chunk id: 206942, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  ZP: () => g
+  ZP: () => S
 }), require("./415506.js"), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,8 +15,8 @@ var Chunk292556 = require("./292556.js"),
   Chunk313789 = require("./313789.js"),
   Chunk388032 = require("./388032.jsx");
 require("./649926.js");
-let O = Chunk647438.createContext(true),
-  T = [{
+let T = Chunk647438.createContext(true),
+  I = [{
     useLabel: () => Chunk388032.intl.string(Chunk388032.t.jD1qzM),
     sound: "message1",
     useDisabled: Chunk734934.p,
@@ -90,68 +90,68 @@ let O = Chunk647438.createContext(true),
   }, {
     useLabel: () => Chunk388032.intl.string(Chunk388032.t.CP3DCw),
     sound: "reconnect"
-  }].map(e => ({
-    node: (0, a.qs)("".concat(d.n.SOUNDS_LIST_ITEM_PREFIX).concat(e.sound), {
-      useTitle: e.useLabel,
-      useSubtitle: () => E.intl.format(E.t.OOiGCA, {
+  }].map(t => ({
+    node: (0, a.qs)("".concat(E.n.SOUNDS_LIST_ITEM_PREFIX).concat(t.sound), {
+      useTitle: t.useLabel,
+      useSubtitle: () => d.intl.format(d.t.OOiGCA, {
         onClick: () => {
-          (0, o.GN)(e.sound)
+          (0, o.GN)(t.sound)
         }
       }),
       useValue: () => {
-        var t;
-        let n = (0, l.e7)([c.Z], () => c.Z.isSoundDisabled(e.sound)),
-          i = null == (t = e.useDisabled) ? true : t.call(e);
+        var e;
+        let n = (0, u.e7)([c.Z], () => c.Z.isSoundDisabled(t.sound)),
+          i = null == (e = t.useDisabled) ? true : e.call(t);
         return !n && !i
       },
-      setValue: t => {
-        let n = c.Z.getDisabledSounds().filter(t => t !== e.sound);
-        t || n.push(e.sound), u.default.setDisabledSounds(n)
+      setValue: e => {
+        let n = c.Z.getDisabledSounds().filter(e => e !== t.sound);
+        e || n.push(t.sound), r.default.setDisabledSounds(n)
       },
       useDisabled: () => {
-        var t;
-        let n = null == (t = e.useDisabled) ? true : t.call(e),
-          i = (0, l.e7)([c.Z], () => c.Z.getDisableAllSounds());
+        var e;
+        let n = null == (e = t.useDisabled) ? true : e.call(t),
+          i = (0, u.e7)([c.Z], () => c.Z.getDisableAllSounds());
         return n || i
       },
-      useDisabledMessage: e.useDisabledMessage
+      useDisabledMessage: t.useDisabledMessage
     })
   })),
-  f = (0, Chunk509613.qs)(Chunk313789.n.SELECTED_CHANNEL_NOTIFICATIONS, {
+  O = (0, Chunk509613.qs)(Chunk313789.n.SELECTED_CHANNEL_NOTIFICATIONS, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.TzjwV1),
     useValue: () => (0, Chunk442837.e7)([Chunk292959.Z], () => Chunk292959.Z.getNotifyMessagesInSelectedChannel()),
-    setValue: e => u.default.setNotifyMessagesInSelectedChannel(e)
+    setValue: t => r.default.setNotifyMessagesInSelectedChannel(t)
   }),
-  y = (0, Chunk509613.qs)(Chunk313789.n.DISABLE_ALL_NOTIFICATION_SOUNDS, {
+  A = (0, Chunk509613.qs)(Chunk313789.n.DISABLE_ALL_NOTIFICATION_SOUNDS, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["2ZhCOT"]),
     useSubtitle: () => Chunk388032.intl.string(Chunk388032.t["+B0XLC"]),
     useValue: () => (0, Chunk442837.e7)([Chunk292959.Z], () => Chunk292959.Z.getDisableAllSounds()),
-    setValue: e => u.default.toggleDisableAllSounds(e)
+    setValue: t => r.default.toggleDisableAllSounds(t)
   }),
-  g = (0, Chunk509613.$l)(Chunk313789.n.NOTIFICATION_SOUNDS_LIST, {
+  S = (0, Chunk509613.$l)(Chunk313789.n.NOTIFICATION_SOUNDS_LIST, {
     collapseAfter: 4,
-    useCollapsibleTitle: (e, t) => e ? E.intl.formatToPlainString(E.t["0JYT9/"], {
-      count: t
-    }) : E.intl.formatToPlainString(E.t.ji1uNj, {
-      count: t
+    useCollapsibleTitle: (t, e) => t ? d.intl.formatToPlainString(d.t["0JYT9/"], {
+      count: e
+    }) : d.intl.formatToPlainString(d.t.ji1uNj, {
+      count: e
     }),
-    ContextProvider: function(e) {
+    ContextProvider: function(t) {
       let {
-        children: t
-      } = e, n = r.useRef(null), l = r.useCallback((e, t) => {
-        t.stopPropagation(), t.preventDefault(), null != n.current && n.current.stop(), n.current = (0, o.GN)(e)
+        children: e
+      } = t, n = l.useRef(null), u = l.useCallback((t, e) => {
+        e.stopPropagation(), e.preventDefault(), null != n.current && n.current.stop(), n.current = (0, o.GN)(t)
       }, []);
-      r.useEffect(() => () => {
-        var e;
-        null == (e = n.current) || e.stop()
+      l.useEffect(() => () => {
+        var t;
+        null == (t = n.current) || t.stop()
       }, []);
-      let u = r.useMemo(() => ({
-        handlePreviewSound: l
-      }), [l]);
-      return (0, i.jsx)(O.Provider, {
-        value: u,
-        children: t
+      let r = l.useMemo(() => ({
+        handlePreviewSound: u
+      }), [u]);
+      return (0, i.jsx)(T.Provider, {
+        value: r,
+        children: e
       })
     },
-    buildLayout: () => [T[0].node, f, T[1].node, y, ...T.slice(2).map(e => e.node)]
+    buildLayout: () => [I[0].node, O, I[1].node, A, ...I.slice(2).map(t => t.node)]
   })

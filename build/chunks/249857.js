@@ -1,7 +1,7 @@
 /** Chunk was on 9452 **/
-/** chunk id: 249857, original params: e,t,n (module,exports,require) **/
+/** chunk id: 249857, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  R: () => d
 });
 var Chunk657707 = require("./657707.js"),
   Chunk509613 = require("./509613.js"),
@@ -14,10 +14,14 @@ let c = (0, Chunk509613.x1)(Chunk313789.n.WINDOWS_PANE, {
     buildLayout: () => [],
     render: Chunk200645.Z
   }),
-  d = (0, Chunk509613.wf)(Chunk313789.n.WINDOWS_PANEL, {
+  E = (0, Chunk509613.wf)(Chunk313789.n.WINDOWS_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.ZkDZoq),
+    buildLayout: () => [c]
+  }),
+  d = (0, Chunk509613.m7)(Chunk313789.n.WINDOWS_SIDEBAR_ITEM, {
     icon: Chunk657707.pzj,
-    buildLayout: () => [c],
+    useTitle: () => Chunk388032.intl.string(Chunk388032.t.ZkDZoq),
     legacySearchKey: Chunk726985.s6.WINDOW_SETTINGS,
-    usePredicate: () => Chunk358085.isPlatformEmbedded && (0, Chunk358085.isWindows)()
+    usePredicate: () => Chunk358085.isPlatformEmbedded && (0, Chunk358085.isWindows)(),
+    buildLayout: () => [E]
   })
