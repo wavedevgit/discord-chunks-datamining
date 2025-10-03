@@ -311,7 +311,7 @@ class $ extends Chunk647438.Component {
       case Chunk981631.wZ8.SUCCESS:
         null == Chunk533307 || Chunk533307(Chunk120356, true)
     }
-    let T = (0, Chunk164670.K)(module);
+    let T = (0, Chunk164670.K$)(module);
     return (0, Chunk951288.jsxs)("div", {
       ref: this.modalRef,
       children: [(0, Chunk951288.jsxs)(Chunk481060.Y0X, {

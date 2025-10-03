@@ -1,10 +1,10 @@
-/** Chunk was on 47051 **/
+/** Chunk was on 36653 **/
 /** chunk id: 784384, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  HY: () => v,
+  HY: () => Z,
   nm: () => S,
-  pU: () => Z,
-  y: () => j
+  pU: () => v,
+  y: () => P
 }), require("./388685.js"), require("./361932.js"), require("./187205.js");
 var Chunk647438 = require("./647438.js"),
   Chunk106351 = require("./106351.js"),
@@ -33,7 +33,7 @@ function S(e) {
   }), [n])
 }
 
-function v(e, t, n) {
+function Z(e, t, n) {
   let l = n instanceof d.Sf;
   if ((0, s.Y3)(t) && !(l && (0, s.Y3)(n))) return {
     label: E.intl.string(E.t.KgPx1N)
@@ -42,7 +42,7 @@ function v(e, t, n) {
     if ((e.attachments.length > 0 || e.messageSnapshots.some(e => e.message.attachments.length > 0)) && !h.Z.can(y.Plq.ATTACH_FILES, n)) return {
       label: E.intl.string(E.t.P7yvbm)
     };
-    if ((e.embeds.length > 0 || e.messageSnapshots.some(e => e.message.embeds.length > 0)) && !(0, b.eC)(n, h.Z) && !(0, b.En)(e)) return {
+    if ((e.embeds.length > 0 || e.messageSnapshots.some(e => e.message.embeds.length > 0)) && !(0, g.eC)(n, h.Z) && !(0, g.En)(e)) return {
       label: E.intl.string(E.t.Wr4RIS)
     };
     let t = [...(0, o.cv)(e), ...e.messageSnapshots.flatMap(e => {
@@ -63,17 +63,17 @@ function v(e, t, n) {
   }
 }
 
-function Z(e, t) {
+function v(e, t) {
   return !!(null != e.rateLimitPerUser && e.rateLimitPerUser > 0) && !(t.can(y.Plq.MANAGE_CHANNELS, e) || t.can(y.Plq.MANAGE_MESSAGES, e))
 }
 
-function j(e) {
+function P(e) {
   let t = (0, i.Wu)([f.Z, h.Z], () => e.map(e => {
     let {
       type: t,
       id: n
     } = e;
     return "channel" === t ? f.Z.getChannel(n) : null
-  }).filter(p.lm).filter(e => Z(e, h.Z)), [e]);
-  return (0, i.Wu)([g.default, m.Z], () => t.map(e => (0, a.F6)(e, g.default, m.Z, true)), [t])
+  }).filter(p.lm).filter(e => v(e, h.Z)), [e]);
+  return (0, i.Wu)([b.default, m.Z], () => t.map(e => (0, a.F6)(e, b.default, m.Z, true)), [t])
 }

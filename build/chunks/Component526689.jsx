@@ -18,22 +18,22 @@ let c = () => {
     channel: u,
     updateSelectShareDestinations: d
   } = (0, Chunk135102.C$)(), {
-    results: _,
-    updateSearchText: f
+    results: f,
+    updateSearchText: b
   } = (0, Chunk72214.s)({
     selectedDestinations: module,
     includeMissingDMs: true
   });
   (0, Chunk647438.useEffect)(() => {
-    f(require)
-  }, [f, require]);
-  let b = (0, Chunk647438.useCallback)(t => {
+    b(require)
+  }, [b, require]);
+  let p = (0, Chunk647438.useCallback)(t => {
       let n = e.findIndex(e => {
         let {
           type: n,
-          id: a
+          id: r
         } = e;
-        return n === t.type && a === t.id
+        return n === t.type && r === t.id
       });
       if (false !== n) {
         let t = [...e];
@@ -42,16 +42,16 @@ let c = () => {
       }
       d([...e, t])
     }, [module, d]),
-    p = module.length >= exports;
+    g = module.length >= exports;
   return (0, Chunk951288.jsx)(Chunk757853.F, {
     paddingBottom: 16,
     paddingTop: 16,
-    rowData: _,
+    rowData: f,
     message: c,
     originChannel: u,
-    handleToggleDestination: b,
+    handleToggleDestination: p,
     selectedDestinations: module,
-    disableSelection: p,
+    disableSelection: g,
     rowClassName: Chunk475495.rowContainer
   })
 }

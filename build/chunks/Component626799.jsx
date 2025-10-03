@@ -86,7 +86,7 @@ class w extends(r = Chunk647438.Component) {
       skuId: t,
       storeListing: n
     } = this.props;
-    (null == module || null == require) && (0, Chunk558381.km)(exports), (0, Chunk164670.K)(module) && null != require && null == require.headerBackground && (0, Chunk558381.rV)(require.id)
+    (null == module || null == require) && (0, Chunk558381.km)(exports), (0, Chunk164670.K$)(module) && null != require && null == require.headerBackground && (0, Chunk558381.rV)(require.id)
   }
   renderViewInStoreButton() {
     return (0, Chunk951288.jsx)(Chunk755721.zx.Link, {

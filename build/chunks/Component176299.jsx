@@ -121,9 +121,9 @@ let eL = (0, Chunk608787.Un)({
     renderLoader: eR
   }),
   ek = (0, Chunk608787.Un)({
-    createPromise: () => require.e("1434").then(require.bind(require, 967564)),
-    webpackId: 967564,
-    name: "SocialLayerStorefrontPage",
+    createPromise: () => require.e("77033").then(require.bind(require, 636409)),
+    webpackId: 636409,
+    name: "SocialLayerStorefront",
     renderLoader: eR
   }),
   eM = (0, Chunk608787.Un)({
@@ -206,7 +206,9 @@ let eL = (0, Chunk608787.Un)({
           guildId: l
         });
       case ej.oC.GUILD_SHOP:
-        return (0, eu.w)(u) ? (0, r.jsx)(ek, {}) : (0, r.jsx)(eD, {
+        return (0, eu.wK)(u) ? (0, r.jsx)(ek, {
+          guildId: l
+        }) : (0, r.jsx)(eD, {
           guildId: l,
           productId: o,
           initialTab: f

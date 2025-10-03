@@ -2,16 +2,17 @@
 /** chunk id: 659181, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => d
+  Z: () => _
 }), require("./388685.js"), require("./997841.js");
 var Chunk913527 = require("./913527.js"),
   i = require.n(Chunk913527),
   Chunk81825 = require("./81825.js"),
+  Chunk164670 = require("./164670.js"),
   Chunk630388 = require("./630388.js"),
   Chunk973616 = require("./973616.js"),
   Chunk981631 = require("./981631.js");
 
-function c(e, t, n) {
+function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -19,18 +20,24 @@ function c(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let u = ["500428425362931713", "451550535720501248", "471376328319303681", "466696214818193408"];
-class d extends Chunk81825.Z {
+let d = ["500428425362931713", "451550535720501248", "471376328319303681", "466696214818193408"];
+
+function f(e) {
+  if (null != e && null != e.social_layer) return {
+    socialLayer: (0, o.x6)(e.social_layer)
+  }
+}
+class _ extends Chunk81825.Z {
   static createFromServer(e) {
-    var t, n, r, a, o, l, c;
+    var t, n, r, a, o, s, c;
     let {
       price: u
     } = e;
-    return new d({
+    return new _({
       id: e.id,
       type: e.type,
       applicationId: e.application_id,
-      application: null != e.application ? s.ZP.createFromServer(e.application) : null,
+      application: null != e.application ? l.ZP.createFromServer(e.application) : null,
       eligiblePaymentGateways: null != (t = e.eligible_payment_gateways) ? t : null,
       productLine: e.product_line,
       name: null != (n = e.name) ? n : "",
@@ -63,8 +70,9 @@ class d extends Chunk81825.Z {
       locales: null != (o = e.locales) ? o : ["en-US"],
       flags: e.flags,
       externalPurchaseUrl: e.external_purchase_url,
-      deleted: null != (l = e.deleted) && l,
-      bundledSkuIds: null != (c = e.bundled_sku_ids) ? c : []
+      deleted: null != (s = e.deleted) && s,
+      bundledSkuIds: null != (c = e.bundled_sku_ids) ? c : [],
+      tenantMetadata: f(e.tenant_metadata)
     })
   }
   get supportedOperatingSystems() {
@@ -109,7 +117,7 @@ class d extends Chunk81825.Z {
     return !this.premium && null != module && module.amount > 0
   }
   get isTheGameAwardsWinner() {
-    return u.includes(this.id)
+    return d.includes(this.id)
   }
   get available() {
     return (0, Chunk630388.yE)(this.flags, Chunk981631.l4R.AVAILABLE) || null != this.externalPurchaseUrl
@@ -130,6 +138,6 @@ class d extends Chunk81825.Z {
     return null != this.preorderReleaseAt || null != this.preorderApproximateReleaseDate
   }
   constructor(e) {
-    super(), c(this, "id", true), c(this, "type", true), c(this, "applicationId", true), c(this, "application", true), c(this, "eligiblePaymentGateways", true), c(this, "productLine", true), c(this, "name", true), c(this, "releaseDate", true), c(this, "preorderReleaseAt", true), c(this, "preorderApproximateReleaseDate", true), c(this, "summary", true), c(this, "features", true), c(this, "genres", true), c(this, "dependentSkuId", true), c(this, "manifests", true), c(this, "availableRegions", true), c(this, "accessType", true), c(this, "systemRequirements", true), c(this, "contentRating", true), c(this, "contentRatingAgency", true), c(this, "legalNotice", true), c(this, "price", true), c(this, "premium", true), c(this, "showAgeGate", true), c(this, "restricted", true), c(this, "slug", true), c(this, "exclusive", true), c(this, "locales", true), c(this, "flags", true), c(this, "externalPurchaseUrl", true), c(this, "deleted", true), c(this, "bundledSkuIds", true), this.id = e.id, this.type = e.type, this.applicationId = e.applicationId, this.application = e.application, this.eligiblePaymentGateways = e.eligiblePaymentGateways, this.productLine = e.productLine, this.name = e.name, this.preorderReleaseAt = e.preorderReleaseAt, this.preorderApproximateReleaseDate = e.preorderApproximateReleaseDate, this.releaseDate = e.releaseDate, this.summary = e.summary, this.features = e.features, this.genres = e.genres, this.dependentSkuId = e.dependentSkuId, this.manifests = e.manifests, this.availableRegions = e.availableRegions, this.accessType = e.accessType, this.systemRequirements = e.systemRequirements, this.contentRating = e.contentRating, this.contentRatingAgency = e.contentRatingAgency, this.legalNotice = e.legalNotice, this.price = e.price, this.premium = e.premium, this.showAgeGate = e.showAgeGate, this.restricted = e.restricted, this.slug = e.slug, this.exclusive = e.exclusive, this.locales = e.locales, this.flags = e.flags, this.externalPurchaseUrl = e.externalPurchaseUrl || null, this.deleted = e.deleted, this.bundledSkuIds = e.bundledSkuIds
+    super(), u(this, "id", true), u(this, "type", true), u(this, "applicationId", true), u(this, "application", true), u(this, "eligiblePaymentGateways", true), u(this, "productLine", true), u(this, "name", true), u(this, "releaseDate", true), u(this, "preorderReleaseAt", true), u(this, "preorderApproximateReleaseDate", true), u(this, "summary", true), u(this, "features", true), u(this, "genres", true), u(this, "dependentSkuId", true), u(this, "manifests", true), u(this, "availableRegions", true), u(this, "accessType", true), u(this, "systemRequirements", true), u(this, "contentRating", true), u(this, "contentRatingAgency", true), u(this, "legalNotice", true), u(this, "price", true), u(this, "premium", true), u(this, "showAgeGate", true), u(this, "restricted", true), u(this, "slug", true), u(this, "exclusive", true), u(this, "locales", true), u(this, "flags", true), u(this, "externalPurchaseUrl", true), u(this, "deleted", true), u(this, "bundledSkuIds", true), u(this, "tenantMetadata", true), this.id = e.id, this.type = e.type, this.applicationId = e.applicationId, this.application = e.application, this.eligiblePaymentGateways = e.eligiblePaymentGateways, this.productLine = e.productLine, this.name = e.name, this.preorderReleaseAt = e.preorderReleaseAt, this.preorderApproximateReleaseDate = e.preorderApproximateReleaseDate, this.releaseDate = e.releaseDate, this.summary = e.summary, this.features = e.features, this.genres = e.genres, this.dependentSkuId = e.dependentSkuId, this.manifests = e.manifests, this.availableRegions = e.availableRegions, this.accessType = e.accessType, this.systemRequirements = e.systemRequirements, this.contentRating = e.contentRating, this.contentRatingAgency = e.contentRatingAgency, this.legalNotice = e.legalNotice, this.price = e.price, this.premium = e.premium, this.showAgeGate = e.showAgeGate, this.restricted = e.restricted, this.slug = e.slug, this.exclusive = e.exclusive, this.locales = e.locales, this.flags = e.flags, this.externalPurchaseUrl = e.externalPurchaseUrl || null, this.deleted = e.deleted, this.bundledSkuIds = e.bundledSkuIds, this.tenantMetadata = e.tenantMetadata
   }
 }

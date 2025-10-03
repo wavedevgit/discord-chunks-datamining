@@ -285,7 +285,7 @@ function q(e) {
       appId: b,
       sku: g
     })),
-    GiftButton: (0, O.K)(g) ? () => (0, r.jsx)(D.Z, {
+    GiftButton: (0, O.K$)(g) ? () => (0, r.jsx)(D.Z, {
       onGift: _,
       tooltipDelay: 250
     }) : true,

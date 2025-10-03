@@ -19,11 +19,11 @@ function c(e) {
     {
       shouldHideGuildPurchaseEntryPoints: u
     } = (0, r.uP)(null == e ? true : e.id);
-  return null != e && !u && (e.features.has(l.oNc.PRODUCTS_AVAILABLE_FOR_PURCHASE) || (0, a.w)(e) || t && n || c)
+  return null != e && !u && (e.features.has(l.oNc.PRODUCTS_AVAILABLE_FOR_PURCHASE) || (0, a.wK)(e) || t && n || c)
 }
 
 function u(e, t) {
   let n = (0, o.C4)(null == e ? true : e.id, "channel_list"),
     r = (0, i.on)(null == e ? true : e.id, t);
-  return null != e && (e.features.has(l.oNc.PRODUCTS_AVAILABLE_FOR_PURCHASE) || (0, a.w)(e) || n && r)
+  return null != e && (e.features.has(l.oNc.PRODUCTS_AVAILABLE_FOR_PURCHASE) || (0, a.wK)(e) || n && r)
 }

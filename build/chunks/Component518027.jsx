@@ -1,7 +1,7 @@
 /** Chunk was on 26196 **/
 /** chunk id: 518027, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  J: () => b
+  J: () => p
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -14,46 +14,46 @@ var Chunk951288 = require("./951288.js"),
   Chunk135102 = require("./135102.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk784562 = require("./784562.js");
-let b = () => {
+let p = () => {
   let {
     message: e,
     channel: t,
     updateMessageText: n
-  } = (0, Chunk135102.C$)(), b = (0, Chunk442837.e7)([Chunk703558.Z], () => Chunk703558.Z.getDraft(module.channel_id, Chunk703558.d.ChannelMessage)), [p, h] = Chunk647438.useState(() => (0, Chunk752305.eK)(b)), {
-    textValue: g,
+  } = (0, Chunk135102.C$)(), p = (0, Chunk442837.e7)([Chunk703558.Z], () => Chunk703558.Z.getDraft(module.channel_id, Chunk703558.d.ChannelMessage)), [g, h] = Chunk647438.useState(() => (0, Chunk752305.eK)(p)), {
+    textValue: _,
     richValue: m
-  } = p;
+  } = g;
   (0, Chunk647438.useEffect)(() => {
-    require(g)
-  }, [require, g]);
-  let C = Chunk647438.useCallback((t, n, a) => {
+    require(_)
+  }, [require, _]);
+  let y = Chunk647438.useCallback((t, n, r) => {
       h({
         textValue: n,
-        richValue: a
-      }), r.Z.saveDraft(e.channel_id, n, u.d.ChannelMessage)
+        richValue: r
+      }), l.Z.saveDraft(e.channel_id, n, u.d.ChannelMessage)
     }, [module]),
-    [y, x] = Chunk647438.useState(false),
-    M = Chunk647438.useCallback(() => x(true), []),
-    S = Chunk647438.useCallback(() => x(false), []);
+    [O, j] = Chunk647438.useState(false),
+    C = Chunk647438.useCallback(() => j(true), []),
+    w = Chunk647438.useCallback(() => j(false), []);
   (0, Chunk647438.useEffect)(() => () => {
     Chunk430742.Z.clearDraft(module.channel_id, Chunk703558.d.ChannelMessage)
   }, [module]);
-  let I = async () => ({
+  let v = async () => ({
     shouldClear: true,
     shouldRefocus: false
   });
   return (0, Chunk951288.jsx)(Chunk893718.ZP, {
     innerClassName: Chunk784562.messageInput,
-    onChange: C,
+    onChange: y,
     placeholder: Chunk388032.intl.string(Chunk388032.t.ZroO3N),
     channel: exports,
-    textValue: g,
+    textValue: _,
     richValue: m,
     type: Chunk541716.Ie.SHARE_CUSTOM_CLIENT_THEME_INPUT,
-    onBlur: S,
-    onFocus: M,
-    focused: y,
-    onSubmit: I,
+    onBlur: w,
+    onFocus: C,
+    focused: O,
+    onSubmit: v,
     parentModalKey: Chunk135102.tj,
     autoCompletePosition: "bottom",
     emojiPickerCloseOnModalOuterClick: true,
