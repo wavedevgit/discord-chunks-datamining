@@ -73,7 +73,7 @@ let R = Chunk647438.memo(function(e) {
       channel: r,
       context: l
     } = e, o = null == (t = n.user) ? true : t.id;
-    return (0, a.e7)([y.Z], () => null != n.user && null != l && null != r && y.Z.isLocalVideoDisabled(o, l), [o, n.user, l, r]) ? null : (0, i.jsx)(m.ZP, D({}, e))
+    return (0, a.e7)([O.Z], () => null != n.user && null != l && null != r && O.Z.isLocalVideoDisabled(o, l), [o, n.user, l, r]) ? null : (0, i.jsx)(m.ZP, D({}, e))
   }),
   k = Chunk647438.memo(function(e) {
     let {
@@ -162,18 +162,18 @@ let R = Chunk647438.memo(function(e) {
         isPreviewingInGame: false
       }, g)
     }, [a, u, g]);
-    let O = r.useMemo(() => ({
+    let y = r.useMemo(() => ({
         opacity: u.opacity
       }), [u.opacity]),
-      y = r.useMemo(() => o()({
+      O = r.useMemo(() => o()({
         [P.videoList]: true,
         [P.vertical]: !m,
         [P.hidden]: !g && a
       }), [m, g, a]);
     return 0 !== n.length || a ? null == c ? null : (0, i.jsx)("div", {
       ref: f,
-      className: y,
-      style: O,
+      className: O,
+      style: y,
       children: (0, i.jsx)(k, {
         context: t,
         participants: n,
@@ -220,10 +220,10 @@ let R = Chunk647438.memo(function(e) {
 
 function V(e) {
   var t, n, l, o;
-  let s = (0, a.e7)([E.Z, O.Z], () => O.Z.getChannel(E.Z.getVoiceChannelId())),
+  let s = (0, a.e7)([E.Z, y.Z], () => y.Z.getChannel(E.Z.getVoiceChannelId())),
     u = 2 * e.padding + 2 * e.borderWidth,
     h = null == s ? true : s.id,
-    [m, y] = (0, a.e7)([p.Z], () => null == h ? [
+    [m, O] = (0, a.e7)([p.Z], () => null == h ? [
       [], 0
     ] : [p.Z.getVideoParticipants(h), p.Z.getParticipantsVersion(h)], [h], b.Q),
     v = "boolean" != typeof e.widget.meta.horizontal || e.widget.meta.horizontal,
@@ -241,7 +241,7 @@ function V(e) {
       tileMargin: w.F$,
       limit: 8,
       cropSelfVideo: true,
-      version: y
+      version: O
     }),
     N = (0, a.e7)([f.Z], () => f.Z.getWindowState(w.$J)),
     T = {
@@ -321,7 +321,7 @@ function V(e) {
   }), (0, i.jsx)(L, A(D({}, e), {
     channel: s,
     participants: Z,
-    participantsVersion: y,
+    participantsVersion: O,
     width: v ? C : null != S ? S : e.width,
     height: v ? null != x ? x : e.height : C,
     containerRef: I

@@ -832,9 +832,7 @@ function eH() {
     enabled: n
   } = (0, Chunk32300.aq)("OverlayV3StreamWatchNudge"), {
     disableWelcomeNotification: i
-  } = Chunk32300.aZ.useConfig({
-    location: "OverlayNotificationSettings"
-  }), a = eV(module, exports, require, Chunk647438), o = e => t => {
+  } = (0, Chunk32300.pN)("OverlayNotificationSettings"), a = eV(module, exports, require, Chunk647438), o = e => t => {
     b.Z.setNotificationDisabledSetting(e, !t)
   }, s = (0, Chunk442837.e7)([Chunk624864.Z], () => Chunk624864.Z.getDisabledNotifications());
   return (0, Chunk951288.jsxs)("div", {

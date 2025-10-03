@@ -52,7 +52,7 @@ function f(e) {
     step: n,
     setFooterNode: t
   } = (0, c.aj)(), {
-    title: a,
+    title: l,
     subtitle: f
   } = function(e) {
     switch (e) {
@@ -69,9 +69,9 @@ function f(e) {
   return (0, r.jsxs)(i.IX, x(p({}, e), {
     size: "lg",
     children: [(0, r.jsx)(i.xBx, {
-      title: a,
+      title: l,
       subtitle: f
-    }), (0, r.jsx)(l.zJl, {
+    }), (0, r.jsx)(a.zJl, {
       className: g.modalContent,
       style: {
         width: d.M4
@@ -80,13 +80,13 @@ function f(e) {
         style: {
           padding: d.hK
         },
-        children: (0, r.jsxs)(l.MyZ, {
+        children: (0, r.jsxs)(a.MyZ, {
           width: d.Ne,
           activeSlide: n,
-          children: [(0, r.jsx)(l.Mi4, {
+          children: [(0, r.jsx)(a.Mi4, {
             id: d.Vb.SELECT_GAME,
             children: (0, r.jsx)(o.Z, {})
-          }, d.Vb.SELECT_GAME), (0, r.jsx)(l.Mi4, {
+          }, d.Vb.SELECT_GAME), (0, r.jsx)(a.Mi4, {
             id: d.Vb.SERVER_SETTINGS,
             children: (0, r.jsx)(s.Z, {})
           }, d.Vb.SERVER_SETTINGS)]
@@ -101,8 +101,8 @@ function f(e) {
 function _(e) {
   let {
     analyticsLocations: n
-  } = (0, a.ZP)();
-  return (0, r.jsx)(a.Gt, {
+  } = (0, l.ZP)();
+  return (0, r.jsx)(l.Gt, {
     value: n,
     children: (0, r.jsx)(c.KO, x(p({}, e), {
       children: (0, r.jsx)(f, p({}, e))

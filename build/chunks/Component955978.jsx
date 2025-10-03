@@ -1,7 +1,7 @@
 /** Chunk was on 50751 **/
 /** chunk id: 955978, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => y
 });
 var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
@@ -18,22 +18,22 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk439419 = require("./439419.js");
 
-function O(e, t, n) {
-  var O;
-  let y = d.default.getUser(e);
-  if (null == y) return null;
+function y(e, t, n) {
+  var y;
+  let O = d.default.getUser(e);
+  if (null == O) return null;
   let E = c.Z.getCurrentlySelectedChannelId(),
     v = u.Z.getChannel(E),
     b = o.Z.getApplication(t),
     S = a.ZP.getRunningGames().find(e => e.id === t),
-    x = null != (O = null == S ? true : S.name) ? O : null == b ? true : b.name,
-    j = (0, p.oY)(null == v ? true : v.guild_id, null == v ? true : v.id, y),
+    x = null != (y = null == S ? true : S.name) ? y : null == b ? true : b.name,
+    j = (0, p.oY)(null == v ? true : v.guild_id, null == v ? true : v.id, O),
     I = (0, i.jsxs)("div", {
       className: g.nowPlayingNotification,
       children: [(0, i.jsx)("div", {
         className: g.nowPlayingNotificationIcon,
         children: (0, i.jsx)(l.Z, {
-          user: y,
+          user: O,
           "aria-hidden": true,
           size: r.EFr.SIZE_24
         })
@@ -44,7 +44,7 @@ function O(e, t, n) {
           color: "interactive-normal",
           className: g.bodyText,
           children: m.intl.format(m.t["q7/rgo"], {
-            username: null != j ? j : y.username,
+            username: null != j ? j : O.username,
             gameName: x,
             gameIcon: () => null != b || null != S ? (0, i.jsx)(s.Z, {
               game: b,
@@ -61,7 +61,7 @@ function O(e, t, n) {
       trackClick: Z
     } = (0, h.R)(f.n0.NowPlayingNotification, {
       notif_type: f.n0.NowPlayingNotification,
-      notif_user_id: y.id,
+      notif_user_id: O.id,
       activity_type: n.type,
       activity_name: null != x ? x : n.name
     });

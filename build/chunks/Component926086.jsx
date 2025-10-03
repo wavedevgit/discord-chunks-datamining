@@ -25,7 +25,7 @@ function m(e) {
   let {
     locked: t,
     pinned: n
-  } = e, [l, a] = r.useState(0), [m, g] = r.useState(0), [O, y] = r.useState(0), E = r.useRef(0), [v, b] = r.useState(0), {
+  } = e, [l, a] = r.useState(0), [m, g] = r.useState(0), [y, O] = r.useState(0), E = r.useRef(0), [v, b] = r.useState(0), {
     timeToLiveMs: S,
     reappearTimeMs: x
   } = d.ZP.useState(e => ({
@@ -39,7 +39,7 @@ function m(e) {
     I.current = j
   }), r.useEffect(() => (E.current = setInterval(() => {
     let e = Date.now();
-    g(e), y(t => {
+    g(e), O(t => {
       if (0 === t) return e;
       let n = e - t,
         i = I.current.timeToLiveMs,
@@ -53,7 +53,7 @@ function m(e) {
       a(Date.now()), b(e => e + 1)
     },
     Z = l > 0 && m - l < 1e3,
-    w = (0, c.Yzy)(O > 0 && O < m && m - O < S, {
+    w = (0, c.Yzy)(y > 0 && y < m && m - y < S, {
       from: {
         opacity: 0
       },

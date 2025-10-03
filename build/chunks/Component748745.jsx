@@ -16,22 +16,22 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk961820 = require("./961820.js");
 
-function g(e) {
+function f(e) {
   let {
     guildId: t,
     gameInstance: n,
-    cost: i
+    cost: a
   } = e;
   return (0, l.jsx)(r.ua7, {
     "aria-label": v.intl.string(m.default.TZsu1d),
     text: (0, l.jsx)(o.Po, {
-      cost: i
+      cost: a
     }),
     children: e => {
-      var a, s;
+      var i, s;
       return (0, l.jsx)("div", {
-        className: f.disableButton,
-        children: (0, l.jsx)(r.zxk, (a = function(e) {
+        className: g.disableButton,
+        children: (0, l.jsx)(r.zxk, (i = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               l = Object.keys(n);
@@ -53,14 +53,14 @@ function g(e) {
             type: "icon",
             asset: r.mTd
           },
-          text: i.toString(),
+          text: a.toString(),
           variant: "secondary",
           size: "sm",
           "aria-label": v.intl.string(m.default.TZsu1d),
           onClick: e => {
             e.stopPropagation(), (0, d.Q)(t, n)
           }
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var l = Object.getOwnPropertySymbols(e);
@@ -68,8 +68,8 @@ function g(e) {
           }
           return n
         })(Object(s)).forEach(function(e) {
-          Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(s, e))
-        }), a))
+          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(s, e))
+        }), i))
       })
     }
   })
@@ -81,19 +81,19 @@ function b(e) {
     guildId: b,
     gameInstance: p,
     onClick: j
-  } = e, x = (0, a.e7)([u.Z], () => u.Z.getStateForGuild(b)), y = i.useMemo(() => {
+  } = e, x = (0, i.e7)([c.Z], () => c.Z.getStateForGuild(b)), y = a.useMemo(() => {
     var e;
     return null == x || null == (e = x.entitlements) ? true : e[p.entitlementId]
-  }, [null == x ? true : x.entitlements, p.entitlementId]), O = (null == y ? true : y.ends_at) != null, h = null == y || null == (d = y.sku) || null == (o = d.tenant_metadata) || null == (n = o.guild_monetization) || null == (t = n.game_server) ? true : t.boost_price, P = (0, c.Z)(p.gameId, "icon");
+  }, [null == x ? true : x.entitlements, p.entitlementId]), O = (null == y ? true : y.ends_at) != null, h = null == y || null == (d = y.sku) || null == (o = d.tenant_metadata) || null == (n = o.guild_monetization) || null == (t = n.game_server) ? true : t.boost_price, P = (0, u.Z)(p.gameId, "icon");
   return null == h ? null : (0, l.jsxs)(r.P3F, {
-    className: f.game,
+    className: g.game,
     onClick: () => j(p),
     children: [(0, l.jsx)("img", {
-      className: f.image,
+      className: g.image,
       alt: "",
       src: P
     }), (0, l.jsxs)("div", {
-      className: f.textContainer,
+      className: g.textContainer,
       children: [(0, l.jsx)(r.X6q, {
         variant: "heading-sm/semibold",
         children: p.name
@@ -102,7 +102,7 @@ function b(e) {
       }) : (0, l.jsx)(s.P2, {
         text: v.intl.string(m.default.FFLkm5)
       })]
-    }), (0, l.jsx)(g, {
+    }), (0, l.jsx)(f, {
       guildId: b,
       gameInstance: p,
       cost: h

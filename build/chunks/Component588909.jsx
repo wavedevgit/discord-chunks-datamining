@@ -74,7 +74,7 @@ function N(e, t) {
   let {
     trackView: u,
     trackClick: c
-  } = (0, y.R)(E.n0.WelcomeNudge, {
+  } = (0, O.R)(E.n0.WelcomeNudge, {
     notif_type: E.n0.WelcomeNudge,
     secondary_notif_types: t.map(e => E.nc[e.type])
   }), S = {};
@@ -152,7 +152,7 @@ function N(e, t) {
     icon: P,
     title: T,
     body: _,
-    hint: () => (0, O.Q)((0, y.P)(), x.t["z8/sgI"], x.intl.string(x.t.jZkzVF), {
+    hint: () => (0, y.Q)((0, O.P)(), x.t["z8/sgI"], x.intl.string(x.t.jZkzVF), {
       highlightAdminWarningIfElevated: true
     }),
     confirmText: N ? true : x.intl.string(x.t.TxyTbm),

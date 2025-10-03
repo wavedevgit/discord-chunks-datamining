@@ -52,15 +52,15 @@ function E(e) {
       "Escape" === e.key && o.Z.updateNotificationStatus(t, g._1z.ACTIVE)
     }, [t]),
     A = r.useCallback(() => (C.length > b || (l.Z.sendMessage(E.id, h.ZP.parse(E, C), false, {
-      location: O.dy.OVERLAY
+      location: y.dy.OVERLAY
     }), o.Z.setInputLocked(true, (0, m.getPID)()), o.Z.updateNotificationStatus(t, g._1z.DISMISSED), null == v || v(C)), Promise.resolve({
       shouldClear: false,
       shouldRefocus: true
     })), [C, b, E, t, v]);
   return (0, i.jsx)("div", {
-    className: y.container,
+    className: O.container,
     children: (0, i.jsx)(p.ZP, {
-      innerClassName: y.textArea,
+      innerClassName: O.textArea,
       onChange: P,
       placeholder: S,
       accessibilityLabel: x,

@@ -22,8 +22,8 @@ function h(e, t, n, h) {
     }),
     g = t.getAvatarURL(e.guild_id, 80),
     {
-      trackView: O,
-      trackClick: y
+      trackView: y,
+      trackClick: O
     } = (0, a.R)(s.n0.RequestToStream, {
       notif_type: s.n0.RequestToStream,
       notif_user_id: t.id,
@@ -37,22 +37,22 @@ function h(e, t, n, h) {
     confirmText: d.intl.string(p.default.UGbmBg),
     cancelText: d.intl.string(d.t.tpXzJy),
     onNotificationShow: () => {
-      O()
+      y()
     },
     onConfirmClick: (e, t) => {
       (0, l.Z)((0, o.getPID)(), {
         preset: c.tI.PRESET_VIDEO
-      }), y("request-to-stream"), i.Z.updateNotificationStatus(t)
+      }), O("request-to-stream"), i.Z.updateNotificationStatus(t)
     },
     onCancelClick: (t, n) => {
       (0, r.In)(e.id, {
         section: u.jXE.OVERLAY,
         object: u.qAy.ACK_DECLINE_REQUEST_TO_STREAM,
         objectType: u.Qqv.ACK_SEMI_AUTOMATIC
-      }, true, true), i.Z.updateNotificationStatus(n), y("decline")
+      }, true, true), i.Z.updateNotificationStatus(n), O("decline")
     },
     onDismissClick: () => {
-      y("dismiss")
+      O("dismiss")
     }
   }
 }

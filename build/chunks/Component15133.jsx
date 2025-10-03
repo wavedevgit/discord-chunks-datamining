@@ -1,7 +1,7 @@
 /** Chunk was on 85683 **/
 /** chunk id: 15133, original params: e,n,t (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => j
+  default: () => v
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk828843 = require("./828843.js");
 
-function j(e) {
+function v(e) {
   var n;
   let {
     guildId: t
@@ -27,9 +27,9 @@ function j(e) {
   a.useEffect(() => {
     (0, u.EC)(t), l.Z.getDetectableGames()
   }, [t]);
-  let j = (0, d.Z)(t),
-    v = (0, s.e7)([b.Z], () => b.Z.getStateForGuild(t)),
-    _ = Object.values(null != (n = null == v ? true : v.instances) ? n : {});
+  let v = (0, d.Z)(t),
+    j = (0, s.e7)([b.Z], () => b.Z.getStateForGuild(t)),
+    _ = Object.values(null != (n = null == j ? true : j.instances) ? n : {});
   return (0, r.jsxs)("div", {
     className: p.container,
     children: [(0, r.jsxs)(c.ZP, {
@@ -47,7 +47,7 @@ function j(e) {
       })]
     }), (0, r.jsxs)("div", {
       className: p.contentContainer,
-      children: [(null == v ? true : v.instances) != null ? (0, r.jsx)(o.zJl, {
+      children: [(null == j ? true : j.instances) != null ? (0, r.jsx)(o.zJl, {
         className: p.gameContainerWrapper,
         children: (0, r.jsx)("div", {
           className: p.gameContainer,
@@ -61,7 +61,7 @@ function j(e) {
         children: (0, r.jsx)(o.$jN, {
           type: o.RAz.SPINNING_CIRCLE
         })
-      }), j && (0, r.jsx)(g.Z, {
+      }), v && (0, r.jsx)(g.Z, {
         guildId: t
       })]
     })]

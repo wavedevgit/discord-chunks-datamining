@@ -130,7 +130,7 @@ let b = {
       trail: 100 * !D
     }, D ? "animate-never" : "respect-motion-settings"), M = (0, p.ee)(() => new Set(I.map(e => e.user.id)), [I, C]), V = (0, p.ee)(() => new Set(I.filter(e => j.has((0, c.V9)(e.stream))).map(e => e.user.id)), [I, j, C]);
     return r.useEffect(() => {
-      0 !== M.size && (0, p.zi)(O.Odu.GO_LIVE, {
+      0 !== M.size && (0, p.zi)(y.Odu.GO_LIVE, {
         locked: d.default.isInstanceLocked(),
         shownUserIds: Array.from(M),
         liveUserIds: Array.from(V),
@@ -138,9 +138,9 @@ let b = {
       })
     }, [M, V]), (0, i.jsx)("div", {
       className: o()({
-        [y.gridContainer]: true,
-        [y.vertical]: P,
-        [y.horizontal]: !P
+        [O.gridContainer]: true,
+        [O.vertical]: P,
+        [O.horizontal]: !P
       }),
       style: P ? {
         height: R
@@ -148,7 +148,7 @@ let b = {
         width: k
       },
       children: L((e, t, r, o) => (0, i.jsx)(a.animated.div, {
-        className: y.gridItem,
+        className: O.gridItem,
         style: Object.assign({}, e, {
           width: n,
           height: l,
@@ -163,7 +163,7 @@ let b = {
             pinned: o
           } = e;
           return (0, i.jsx)("div", {
-            className: y.tileContainer,
+            className: O.tileContainer,
             children: (0, i.jsx)(h.Z, {
               participant: t,
               width: n,

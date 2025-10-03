@@ -48,11 +48,11 @@ function u() {
           return (0, r.jsxs)(i.Fragment, {
             children: [(0, r.jsxs)("div", {
               className: d.statItem,
-              children: [(0, r.jsx)(l.X6q, {
+              children: [(0, r.jsx)(a.X6q, {
                 variant: "heading-sm/semibold",
                 color: "text-primary",
                 children: e.title
-              }), (0, r.jsx)(l.xvT, {
+              }), (0, r.jsx)(a.xvT, {
                 variant: "text-sm/medium",
                 color: "text-tertiary",
                 children: e.description

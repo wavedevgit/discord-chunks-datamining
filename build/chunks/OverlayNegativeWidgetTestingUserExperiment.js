@@ -2,16 +2,17 @@
 /** chunk id: 32300, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
+  F3: () => w,
   J0: () => b,
   NW: () => c,
   OV: () => o,
   RD: () => y,
   Rb: () => l,
   Se: () => p,
+  Sy: () => R,
   XE: () => u,
   YB: () => g,
   Yo: () => d,
-  aZ: () => N,
   aq: () => I,
   dj: () => f,
   eV: () => C,
@@ -19,6 +20,7 @@ require.d(exports, {
   lj: () => v,
   mB: () => m,
   o4: () => s,
+  pN: () => P,
   qA: () => E,
   tU: () => S,
   td: () => _
@@ -265,28 +267,37 @@ function I(e) {
     location: e
   })
 }
-let T = (0, Chunk427164.le)({
-  name: "2025-08-overlay-v3-one-click-go-live",
+let T = (0, Chunk818083.B)({
   kind: "user",
+  id: "2025-10_overlay_v3_one_click_go_live",
+  label: "Overlay V3 One Click Go Live",
   defaultConfig: {
     oneClickGoLiveEnabled: false,
     useStreamCtaCopy: false
   },
-  variations: {
-    1: {
+  treatments: [{
+    id: 1,
+    label: "Use Stream CTA Copy",
+    config: {
       oneClickGoLiveEnabled: false,
       useStreamCtaCopy: true
-    },
-    2: {
+    }
+  }, {
+    id: 2,
+    label: "Enable One Click Go Live with Stream CTA Copy",
+    config: {
       oneClickGoLiveEnabled: true,
       useStreamCtaCopy: true
     }
-  }
+  }]
 });
 
 function S(e) {
-  return T.getConfig({
+  let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
+  return T.getCurrentConfig({
     location: e
+  }, {
+    autoTrackExposure: t
   })
 }
 let A = (0, Chunk427164.le)({
@@ -307,9 +318,10 @@ function C(e) {
     location: e
   })
 }
-let N = (0, Chunk427164.le)({
-  name: "2025-09-overlay-negative-widget-testing",
+let N = (0, Chunk818083.B)({
   kind: "user",
+  id: "2025-10_overlay_negative_widget_testing",
+  label: "Overlay Negative Widget Testing",
   defaultConfig: {
     voiceWidgetDefaultUnpinned: false,
     videoWidgetDefaultUnpinned: false,
@@ -317,41 +329,74 @@ let N = (0, Chunk427164.le)({
     notificationsDefaultOff: false,
     unlockedOnlyDefaultOverlay: false
   },
-  variations: {
-    1: {
+  treatments: [{
+    id: 1,
+    label: "Voice Widget Default Unpinned",
+    config: {
       voiceWidgetDefaultUnpinned: true,
       videoWidgetDefaultUnpinned: false,
       disableWelcomeNotification: false,
       notificationsDefaultOff: false,
       unlockedOnlyDefaultOverlay: false
-    },
-    2: {
+    }
+  }, {
+    id: 2,
+    label: "Video Widget Default Unpinned",
+    config: {
       voiceWidgetDefaultUnpinned: false,
       videoWidgetDefaultUnpinned: true,
       disableWelcomeNotification: false,
       notificationsDefaultOff: false,
       unlockedOnlyDefaultOverlay: false
-    },
-    3: {
+    }
+  }, {
+    id: 3,
+    label: "Disable Welcome Notification",
+    config: {
       voiceWidgetDefaultUnpinned: false,
       videoWidgetDefaultUnpinned: false,
       disableWelcomeNotification: true,
       notificationsDefaultOff: false,
       unlockedOnlyDefaultOverlay: false
-    },
-    4: {
+    }
+  }, {
+    id: 4,
+    label: "Notifications Default Off",
+    config: {
       voiceWidgetDefaultUnpinned: false,
       videoWidgetDefaultUnpinned: false,
       disableWelcomeNotification: false,
       notificationsDefaultOff: true,
       unlockedOnlyDefaultOverlay: false
-    },
-    5: {
+    }
+  }, {
+    id: 5,
+    label: "Unlocked Only Default Overlay",
+    config: {
       voiceWidgetDefaultUnpinned: false,
       videoWidgetDefaultUnpinned: false,
       disableWelcomeNotification: false,
       notificationsDefaultOff: false,
       unlockedOnlyDefaultOverlay: true
     }
-  }
-})
+  }]
+});
+
+function R(e) {
+  let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
+  return N.getCurrentConfig({
+    location: e
+  }, {
+    autoTrackExposure: t
+  })
+}
+
+function P(e) {
+  return N.useExperiment({
+    location: e
+  })
+}
+
+function w() {
+  v("OVERLAY_INITIALIZED"), S("OVERLAY_INITIALIZED"), R("OVERLAY_INITIALIZED")
+}

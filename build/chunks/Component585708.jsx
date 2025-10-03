@@ -32,8 +32,8 @@ function b(e, t, n, b) {
   } = (0, a.Xi)(e, t, n), {
     trackView: C,
     trackClick: Z
-  } = (0, O.R)(y.n0.TextChat, {
-    notif_type: y.n0.TextChat,
+  } = (0, y.R)(O.n0.TextChat, {
+    notif_type: O.n0.TextChat,
     notif_user_id: null == (S = t.author) ? true : S.id,
     message_id: t.id,
     message_type: t.type,
@@ -49,7 +49,7 @@ function b(e, t, n, b) {
       formatInline: true,
       hideSimpleEmbedContent: false
     }).content : I,
-    hint: (e, t) => e && !t ? null : (0, g.Q)((0, O.P)(), v.t.ykjOAA, v.intl.string(v.t.jZkzVF)),
+    hint: (e, t) => e && !t ? null : (0, g.Q)((0, y.P)(), v.t.ykjOAA, v.intl.string(v.t.jZkzVF)),
     maxBodyLines: 2,
     renderFooter: (n, r, l) => n && !l ? (0, i.jsx)(m.Z, {
       id: r,

@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
 function m(e) {
   let {
     locked: t
-  } = e, n = (0, p.II)(), m = null == n ? true : n.id, g = null == n ? true : n.altId, O = (0, l.e7)([u.default], () => u.default.getCurrentUser()), y = null != g ? g : m, [E, v] = r.useState(new Set), [b, S] = r.useState(new Set), x = r.useCallback((e, t, n) => {
+  } = e, n = (0, p.II)(), m = null == n ? true : n.id, g = null == n ? true : n.altId, y = (0, l.e7)([u.default], () => u.default.getCurrentUser()), O = null != g ? g : m, [E, v] = r.useState(new Set), [b, S] = r.useState(new Set), x = r.useCallback((e, t, n) => {
     v(n => {
       if (t) {
         if (n.has(e)) return n;
@@ -48,7 +48,7 @@ function m(e) {
       contentInventoryIds: []
     })
   }, [j, I, t, C]);
-  let Z = (0, l.e7)([s.Z], () => null == y ? null : s.Z.getApplicationActivity(y), [y]),
+  let Z = (0, l.e7)([s.Z], () => null == O ? null : s.Z.getApplicationActivity(O), [O]),
     w = (0, r.useCallback)((e, t) => {
       let n = function(e) {
         switch (e) {
@@ -136,9 +136,9 @@ function m(e) {
     N = (0, r.useCallback)(() => {}, []),
     T = (0, r.useCallback)(() => (0, i.jsx)(d.lE, {
       activity: Z,
-      currentUser: O,
+      currentUser: y,
       showInviteButton: false
-    }), [Z, O]);
+    }), [Z, y]);
   return t ? null : (0, i.jsx)(a.r1, {
     containerClassName: f.container,
     listClassName: f.list,

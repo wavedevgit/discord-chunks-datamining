@@ -88,8 +88,8 @@ function $(e) {
         }
         return e
       }({}, t), r = r = {
-        layoutId: Y.$S,
-        version: Y.HN
+        layoutId: B.$S,
+        version: B.HN
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -120,7 +120,7 @@ let ee = Chunk647438.memo(function(e) {
           target: i,
           button: r
         } = e;
-        r === B.AeJ.PRIMARY && t === i && n()
+        r === Y.AeJ.PRIMARY && t === i && n()
       },
       onContextMenu: $,
       children: r ? null : (0, i.jsx)(M.Z, {
@@ -161,9 +161,9 @@ function er() {
 
 function el(e) {
   let t = U.ZP.isInputLocked((0, N.getPID)());
-  "alt" !== e.key.toLowerCase() || t || ("keyup" === e.type.toLowerCase() ? C.S.dispatch(B.CkL.OVERLAY_V3_SHOW_WIDGETS, {
+  "alt" !== e.key.toLowerCase() || t || ("keyup" === e.type.toLowerCase() ? C.S.dispatch(Y.CkL.OVERLAY_V3_SHOW_WIDGETS, {
     show: true
-  }) : "keydown" === e.type.toLowerCase() && C.S.dispatch(B.CkL.OVERLAY_V3_SHOW_WIDGETS, {
+  }) : "keydown" === e.type.toLowerCase() && C.S.dispatch(Y.CkL.OVERLAY_V3_SHOW_WIDGETS, {
     show: false
   }))
 }
@@ -198,7 +198,7 @@ function ea(e) {
     analyticsLocations: R
   } = (0, f.ZP)(h.Z.OVERLAY);
   (0, p.ZP)(() => {
-    (0, D.lj)("OVERLAY_INITIALIZED")
+    (0, D.F3)()
   }),
   function(e, t) {
     let n = r.useRef({
@@ -223,9 +223,9 @@ function ea(e) {
     var e;
     let t = (0, W.pL)(),
       n = b.Z.getVoiceChannelId(),
-      i = y.Z.getChannel(n),
+      i = O.Z.getChannel(n),
       r = null != i ? E.Z.getGuild(i.guild_id) : null,
-      l = null != O.Z.getCurrentUserActiveStream(),
+      l = null != y.Z.getCurrentUserActiveStream(),
       o = null != n,
       a = (0, g.Z)(v.Z) && !l && null != t,
       s = o && null != r && null != n,
@@ -257,12 +257,12 @@ function ea(e) {
   }), (0, p.zq)(() => {
     null != M.current && (clearTimeout(M.current), M.current = null)
   }), r.useEffect(() => {
-    if (C.S.dispatch(B.CkL.OVERLAY_V3_SHOW_WIDGETS, {
+    if (C.S.dispatch(Y.CkL.OVERLAY_V3_SHOW_WIDGETS, {
         show: true
       }), l) {
       if ((0, s.Ay)(u.u1M), n.addEventListener("contextmenu", q, false), null != J) {
         let e = Date.now() - J;
-        d.Z.track(B.rMx.OVERLAY_LOCKED, {
+        d.Z.track(Y.rMx.OVERLAY_LOCKED, {
           unlocked_duration: e
         }), J = null
       }
@@ -270,7 +270,7 @@ function ea(e) {
         n.removeEventListener("contextmenu", q, false)
       }
     }
-    n.removeEventListener("contextmenu", q, false), null == J && (J = Date.now(), d.Z.track(B.rMx.OVERLAY_UNLOCKED))
+    n.removeEventListener("contextmenu", q, false), null == J && (J = Date.now(), d.Z.track(Y.rMx.OVERLAY_UNLOCKED))
   }, [l, n]), (0, i.jsx)(f.Gt, {
     value: R,
     children: Z || m ? null : (0, i.jsxs)("div", {
@@ -291,7 +291,7 @@ function ea(e) {
       }), (0, i.jsx)(A.Z, {}), (0, i.jsx)(k.Z, {
         locked: l
       }), (0, i.jsx)(u.Ixi, {
-        appContext: B.IlC.OVERLAY
+        appContext: Y.IlC.OVERLAY
       }), (0, i.jsx)(eo, {})]
     })
   })

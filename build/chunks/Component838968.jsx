@@ -1,9 +1,9 @@
 /** Chunk was on 85683 **/
 /** chunk id: 838968, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  N4: () => j,
+  N4: () => v,
   P2: () => g,
-  Q9: () => v,
+  Q9: () => j,
   aB: () => _,
   c: () => x,
   rL: () => f,
@@ -110,7 +110,7 @@ function p(e) {
   })
 }
 
-function j(e) {
+function v(e) {
   let {
     children: n
   } = e;
@@ -120,7 +120,7 @@ function j(e) {
   })
 }
 
-function v(e) {
+function j(e) {
   let {
     title: n,
     textColor: t,

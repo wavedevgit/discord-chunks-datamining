@@ -1,7 +1,7 @@
 /** Chunk was on 50751 **/
 /** chunk id: 353038, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  B: () => y,
+  B: () => O,
   Z: () => C
 }), require("./388685.js"), require("./415506.js");
 var i, r, Chunk951288 = require("./951288.js"),
@@ -37,7 +37,7 @@ function g(e) {
   return e
 }
 
-function O(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -49,7 +49,7 @@ function O(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var y = ((r = {}).MOVE = "MOVE", r.RESIZE_NORTH = "RESIZE_NORTH", r.RESIZE_WEST = "RESIZE_WEST", r.RESIZE_EAST = "RESIZE_EAST", r.RESIZE_SOUTH = "RESIZE_SOUTH", r.RESIZE_NORTH_WEST = "RESIZE_NORTH_WEST", r.RESIZE_NORTH_EAST = "RESIZE_NORTH_EAST", r.RESIZE_SOUTH_WEST = "RESIZE_SOUTH_WEST", r.RESIZE_SOUTH_EAST = "RESIZE_SOUTH_EAST", r);
+var O = ((r = {}).MOVE = "MOVE", r.RESIZE_NORTH = "RESIZE_NORTH", r.RESIZE_WEST = "RESIZE_WEST", r.RESIZE_EAST = "RESIZE_EAST", r.RESIZE_SOUTH = "RESIZE_SOUTH", r.RESIZE_NORTH_WEST = "RESIZE_NORTH_WEST", r.RESIZE_NORTH_EAST = "RESIZE_NORTH_EAST", r.RESIZE_SOUTH_WEST = "RESIZE_SOUTH_WEST", r.RESIZE_SOUTH_EAST = "RESIZE_SOUTH_EAST", r);
 let E = new Set(["RESIZE_NORTH", "RESIZE_WEST", "RESIZE_EAST", "RESIZE_SOUTH", "RESIZE_NORTH_WEST", "RESIZE_NORTH_EAST", "RESIZE_SOUTH_WEST", "RESIZE_SOUTH_EAST"]);
 
 function v(e, t, n) {
@@ -181,9 +181,9 @@ class C extends(i = Chunk647438.Component) {
     let {
       width: m,
       height: g
-    } = x(n, this.size), O = t - h, y = e - d, E = (0, p.ou)((0, p.PY)({
-      top: O,
-      left: y,
+    } = x(n, this.size), y = t - h, O = e - d, E = (0, p.ou)((0, p.PY)({
+      top: y,
+      left: O,
       bottom: true,
       right: true
     }, r, l, m, g)), v = c ? (0, p.R)(E) : j("RESIZE_SOUTH_EAST", E);
@@ -216,7 +216,7 @@ class C extends(i = Chunk647438.Component) {
       }
     } = this, {
       startX: m,
-      startY: y
+      startY: O
     } = this.dragState, E = 0, v = 0;
     if (null == h) return;
     switch (e = Math.max(Math.min(r, e), o), t = Math.max(Math.min(l, t), a), h) {
@@ -234,12 +234,12 @@ class C extends(i = Chunk647438.Component) {
       case "RESIZE_SOUTH":
       case "RESIZE_SOUTH_WEST":
       case "RESIZE_SOUTH_EAST":
-        v -= y - t;
+        v -= O - t;
         break;
       case "RESIZE_NORTH":
       case "RESIZE_NORTH_WEST":
       case "RESIZE_NORTH_EAST":
-        v += y - t
+        v += O - t
     }
     let b = d({
         padding: 8,
@@ -257,7 +257,7 @@ class C extends(i = Chunk647438.Component) {
         orientedPosition: this.dragState.dragOrientedCoords
       }),
       S = (0, p.BL)((0, p.ou)((0, p.PY)(this.dragState.dragOrientedCoords, r, l, b.width, b.height)), this.dragState.dragOrientedCoords);
-    this.setDOMSize(O(g({}, b), {
+    this.setDOMSize(y(g({}, b), {
       fixed: this.size.fixed
     }), true), (0, c.Z)(S, this.dragState.dragOrientedCoords) || (this.dragState.dragOrientedCoords = S, this.setDOMPositions(this.dragState.dragOrientedCoords)), f || (null != s && s(), this.setState({
       operationStarted: true
@@ -530,7 +530,7 @@ class C extends(i = Chunk647438.Component) {
             y: t
           }
         }(c);
-        this.dragState = O(g({}, this.dragState), {
+        this.dragState = y(g({}, this.dragState), {
           startX: t,
           startY: n,
           offsetX: t - e,
@@ -538,7 +538,7 @@ class C extends(i = Chunk647438.Component) {
         })
       } else {
         let i = j(e, c);
-        this.setDOMPositions(i), this.dragState = O(g({}, this.dragState), {
+        this.setDOMPositions(i), this.dragState = y(g({}, this.dragState), {
           startX: t,
           startY: n,
           offsetWidth: s,
@@ -593,4 +593,4 @@ class C extends(i = Chunk647438.Component) {
     }), this.anchor = b(e.anchor), this.size = v(e.size, e.minSize.width, e.minSize.height)
   }
 }
-m(C, "Operations", y)
+m(C, "Operations", O)

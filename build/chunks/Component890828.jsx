@@ -63,7 +63,7 @@ let P = e => [e.userId, ... function(e) {
       channel: t,
       query: n
     } = e, [l] = (0, a.e7)([C.Z], () => [C.Z.getVoiceStatesForChannel(t.id), C.Z.getVoiceStateVersion()], [t.id], w.Q), [o, u] = r.useState([]);
-    (0, y.BO)(n, Object.values(l), u, A);
+    (0, O.BO)(n, Object.values(l), u, A);
     let c = (0, a.Wu)([C.Z, I.default, E.Z, j.Z], () => Object.values(C.Z.getVoiceStatesForChannel(t.id)).map(e => I.default.getUser(e.userId)).filter(Z.lm).sort((e, t) => {
         var i, r, l, a;
         if (o.length > 0 && "" !== n.trim()) {
@@ -129,7 +129,7 @@ let P = e => [e.userId, ... function(e) {
       onMouseOver: p,
       onMouseLeave: h,
       query: f
-    } = e, m = (0, a.e7)([v.Z], () => v.Z.getChannel(n), [n]), g = null == m ? true : m.getGuildId(), O = (0, a.e7)([S.Z], () => S.Z.getGuild(g), [g]), y = (0, c.KS)(m, O), E = (null == l ? true : l.id) === n, b = E ? "text-feedback-positive" : r ? "interactive-active" : "text-muted", x = E ? s.TVs.colors.TEXT_FEEDBACK_POSITIVE : r ? s.TVs.colors.INTERACTIVE_ACTIVE : s.TVs.colors.ICON_MUTED;
+    } = e, m = (0, a.e7)([v.Z], () => v.Z.getChannel(n), [n]), g = null == m ? true : m.getGuildId(), y = (0, a.e7)([S.Z], () => S.Z.getGuild(g), [g]), O = (0, c.KS)(m, y), E = (null == l ? true : l.id) === n, b = E ? "text-feedback-positive" : r ? "interactive-active" : "text-muted", x = E ? s.TVs.colors.TEXT_FEEDBACK_POSITIVE : r ? s.TVs.colors.INTERACTIVE_ACTIVE : s.TVs.colors.ICON_MUTED;
     return null == m ? null : (0, i.jsxs)(s.kL8, {
       className: o()(_.channelItemContainer, r && _.channelItemHighlighted),
       "aria-label": m.name,
@@ -145,7 +145,7 @@ let P = e => [e.userId, ... function(e) {
         className: _.channelItemNameContainer,
         children: [(0, i.jsxs)("div", {
           className: _.channelItemName,
-          children: [null != y ? (0, i.jsx)(y, {
+          children: [null != O ? (0, i.jsx)(O, {
             color: x,
             size: "xs",
             className: _.channelIcon
@@ -158,7 +158,7 @@ let P = e => [e.userId, ... function(e) {
         }), (0, i.jsx)(s.Text, {
           variant: E ? "text-xs/semibold" : "text-xs/medium",
           color: b,
-          children: null != (t = null == O ? true : O.name) ? t : m.name
+          children: null != (t = null == y ? true : y.name) ? t : m.name
         })]
       }), (0, i.jsx)("div", {
         className: _.channelItemAvatars,
@@ -304,7 +304,7 @@ function W(e) {
     channel: e,
     voiceStates: Object.values(C.Z.getVoiceStatesForChannel(e.id)).filter(e => j.Z.isFriend(e.userId))
   })), []), [d, p] = r.useState(""), [h, f] = r.useState([]);
-  (0, y.BO)(d, c, f, D);
+  (0, O.BO)(d, c, f, D);
   let m = r.useCallback(e => {
       "Escape" === e.key && o()
     }, [o]),
@@ -314,7 +314,7 @@ function W(e) {
   r.useEffect(() => (document.addEventListener("keydown", m, true), () => {
     document.removeEventListener("keydown", m, true)
   }), [o, m]);
-  let O = "" !== d.trim(),
+  let y = "" !== d.trim(),
     E = h.length > 20,
     v = {
       count: E ? 20 : h.length
@@ -363,7 +363,7 @@ function W(e) {
           "aria-label": T.intl.string(T.t.UyA6SU)
         }
       })
-    }), O ? (0, i.jsx)(V, {
+    }), y ? (0, i.jsx)(V, {
       sectionHeader: E ? T.intl.format(T.t.qdXiQ0, v) : T.intl.format(T.t["Aq+8wM"], v),
       channelIds: h.map(e => {
         let {
@@ -371,7 +371,7 @@ function W(e) {
         } = e;
         return t.id
       }).slice(0, 20),
-      hasQuery: O,
+      hasQuery: y,
       query: d,
       currentVoiceChannel: l,
       onSelect: e => g(e, "search channel")

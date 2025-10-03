@@ -160,7 +160,7 @@ function D(e, t, n) {
   if (null == o) return null;
   let {
     designVariant: c
-  } = (0, S.lj)("OverlayV3StreamWatchNudge"), f = null == n ? true : n.application_id, j = g.Z.getChannel(t), w = null != f ? d.Z.getApplication(f) : null, N = null != f ? O.Z.getDetectableGame(f) : null, T = null != f ? h.ZP.getRunningGames().find(e => e.id === f) : null, D = null != (l = null != (r = null == T ? true : T.name) ? r : null == N ? true : N.name) ? l : null == w ? true : w.name, A = (0, v.oY)(null == j ? true : j.guild_id, null == j ? true : j.id, o), {
+  } = (0, S.lj)("OverlayV3StreamWatchNudge"), f = null == n ? true : n.application_id, j = g.Z.getChannel(t), w = null != f ? d.Z.getApplication(f) : null, N = null != f ? y.Z.getDetectableGame(f) : null, T = null != f ? h.ZP.getRunningGames().find(e => e.id === f) : null, D = null != (l = null != (r = null == T ? true : T.name) ? r : null == N ? true : N.name) ? l : null == w ? true : w.name, A = (0, v.oY)(null == j ? true : j.guild_id, null == j ? true : j.id, o), {
     trackView: R,
     trackClick: k
   } = (0, I.R)(C.n0.StreamWatchNudge, {
@@ -201,7 +201,7 @@ function D(e, t, n) {
     maxBodyLines: 1,
     onNotificationClick: (n, i) => {
       k("overlay-watch-stream");
-      let [r] = y.Z.getWidgetsByType(Z.Odu.GO_LIVE), l = p.Z.getStreamParticipants(t).find(t => t.user.id === e);
+      let [r] = O.Z.getWidgetsByType(Z.Odu.GO_LIVE), l = p.Z.getStreamParticipants(t).find(t => t.user.id === e);
       null != r && null != l && ((0, x.gI)(l.stream, m.L.COVER), (0, u.rn)(l.stream, {
         forceMultiple: true,
         noFocus: true

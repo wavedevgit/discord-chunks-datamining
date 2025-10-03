@@ -223,7 +223,7 @@ function z(e) {
             color: "always-white",
             className: D.controlUserName,
             children: Z.ZP.getName(n.stream.guildId, n.stream.channelId, s)
-          }), (0, i.jsx)(y.ZP, {
+          }), (0, i.jsx)(O.ZP, {
             primaryGuild: c.primaryGuild,
             userId: c.id,
             containerClassName: D.guildTag,
@@ -304,7 +304,7 @@ let U = new Set([Chunk981631.jm8.ENDED, Chunk981631.jm8.FAILED, Chunk981631.jm8.
         })
       }) : (0, i.jsx)("div", {
         className: D.streamPreview,
-        children: (0, i.jsx)(O.Z, {
+        children: (0, i.jsx)(y.Z, {
           noText: true,
           className: D.absoluteFill,
           stream: t.stream

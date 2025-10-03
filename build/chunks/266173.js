@@ -198,9 +198,7 @@ class x extends Chunk147913.Z {
         voiceWidgetDefaultUnpinned: e,
         videoWidgetDefaultUnpinned: t,
         unlockedOnlyDefaultOverlay: n
-      } = _.aZ.getConfig({
-        location: "OverlayNegativeWidgetExperimentManager"
-      }), r = new Set, i = new Set, a = e || n, o = t || n;
+      } = (0, _.Sy)("OverlayNegativeWidgetExperimentManager"), r = new Set, i = new Set, a = e || n, o = t || n;
       return a ? (r.add(m.Odu.VOICE_V3), r.add(m.Odu.VOICE)) : (i.add(m.Odu.VOICE_V3), i.add(m.Odu.VOICE)), o ? r.add(m.Odu.VIDEO) : i.add(m.Odu.VIDEO), n ? r.add(m.Odu.NOTIFICATIONS) : i.add(m.Odu.NOTIFICATIONS), {
         widgetsToOverride: r,
         widgetsToRestore: i
@@ -222,9 +220,7 @@ class x extends Chunk147913.Z {
         notificationsDefaultOff: e,
         disableWelcomeNotification: t,
         unlockedOnlyDefaultOverlay: n
-      } = _.aZ.getConfig({
-        location: "OverlayNegativeWidgetExperimentManager"
-      }), r = new Set, i = new Set;
+      } = (0, _.Sy)("OverlayNegativeWidgetExperimentManager"), r = new Set, i = new Set;
       for (let a of D()) n ? r.add(a) : t ? L.has(a) ? r.add(a) : i.add(a) : e && a !== f.OverlayNotificationDisabledSetting.WELCOME_GENERAL ? r.add(a) : i.add(a);
       return {
         notificationsToOverride: r,

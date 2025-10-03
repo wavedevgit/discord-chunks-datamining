@@ -80,7 +80,7 @@ function C(e) {
       activeStreams: s,
       participantsVersion: d
     }
-  }(U, (0, l.e7)([h.default], () => h.default.getId()), z, R && V || k && D, !R && V || !k && D), Y = G.length, B = (0, l.e7)([d.Z], () => d.Z.getWindowState(x.$J), []), {
+  }(U, (0, l.e7)([h.default], () => h.default.getId()), z, R && V || k && D, !R && V || !k && D), B = G.length, Y = (0, l.e7)([d.Z], () => d.Z.getWindowState(x.$J), []), {
     tileWidth: Q,
     tileHeight: X,
     widgetWidth: K,
@@ -88,7 +88,7 @@ function C(e) {
     containerRef: q,
     containerMinMaxSizes: $
   } = (0, b.Bz)({
-    tileCount: Y,
+    tileCount: B,
     padding: T,
     borderWidth: _,
     isVertical: V,
@@ -108,8 +108,8 @@ function C(e) {
     orientedPosition: {
       top: 0,
       left: 0,
-      bottom: null != (t = null == B ? true : B.height) ? t : J,
-      right: null != (n = null == B ? true : B.width) ? n : K
+      bottom: null != (t = null == Y ? true : Y.height) ? t : J,
+      right: null != (n = null == Y ? true : Y.width) ? n : K
     },
     locked: N
   };
@@ -119,12 +119,12 @@ function C(e) {
     layout: M,
     widgetLayoutSpecs: ee
   });
-  let et = null == W || 0 === F.size && N || 0 === Y && !N;
+  let et = null == W || 0 === F.size && N || 0 === B && !N;
   return (r.useEffect(() => {
-    a.Z.setGpuBoostRequested(O.zS.OVERLAY_VIDEO_STREAM_RENDERING, !et)
+    a.Z.setGpuBoostRequested(y.zS.OVERLAY_VIDEO_STREAM_RENDERING, !et)
   }, [et]), (0, s.ZP)(() => () => {
-    a.Z.setGpuBoostRequested(O.zS.OVERLAY_VIDEO_STREAM_RENDERING, false)
-  }), (et || !A) && N) ? null : et && !N ? L ? N ? null : (0, i.jsx)(y.E, {
+    a.Z.setGpuBoostRequested(y.zS.OVERLAY_VIDEO_STREAM_RENDERING, false)
+  }), (et || !A) && N) ? null : et && !N ? L ? N ? null : (0, i.jsx)(O.E, {
     emptyText: j.intl.string(j.t["T6+rX1"]),
     icon: o.hGI,
     absolute: true

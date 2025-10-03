@@ -1,7 +1,7 @@
 /** Chunk was on 85683 **/
 /** chunk id: 331500, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => h
 });
 var r, a, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,7 +20,7 @@ var r, a, Chunk951288 = require("./951288.js"),
   Chunk401561 = require("./401561.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk134977 = require("./134977.js");
-let y = (r = function(e) {
+let O = (r = function(e) {
   for (var n = 1; n < arguments.length; n++) {
     var t = null != arguments[n] ? arguments[n] : {},
       r = Object.keys(t);
@@ -50,7 +50,7 @@ let y = (r = function(e) {
   Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(a, e))
 }), r);
 
-function O(e) {
+function h(e) {
   let {
     guildId: n
   } = e;
@@ -68,37 +68,37 @@ function O(e) {
         instances: Object.values(null != (n = null == t ? true : t.instances) ? n : {})
       }
     }, [null == t ? true : t.catalog, null == t ? true : t.instances]),
-    o = a.length >= j.zI;
+    o = a.length >= v.zI;
   return 0 === r.length ? (0, i.jsx)("div", {
-    className: h.container,
+    className: y.container,
     children: (0, i.jsx)(u.$jN, {
       type: u.RAz.SPINNING_CIRCLE,
-      className: h.spinner
+      className: y.spinner
     })
   }) : (0, i.jsxs)("div", {
-    className: h.container,
+    className: y.container,
     children: [(0, i.jsx)(c.X6q, {
-      className: h.heading,
+      className: y.heading,
       variant: "heading-md/semibold",
-      children: _.intl.string(v.default.DG1SHB)
+      children: _.intl.string(j.default.DG1SHB)
     }), o && (0, i.jsx)("div", {
-      className: h.maxInstancesWarning,
+      className: y.maxInstancesWarning,
       children: (0, i.jsx)(x.Y, {})
     }), (0, i.jsx)(c.zJl, {
-      className: l()(h.gameContainerWrapper, {
-        [h.disabled]: o
+      className: l()(y.gameContainerWrapper, {
+        [y.disabled]: o
       }),
       children: (0, i.jsx)("div", {
-        className: h.gameContainer,
+        className: y.gameContainer,
         children: r.map((e, t) => (0, i.jsx)(f.Z, {
           game: e,
           onClick: () => (0, p.Z)({
             guildId: n,
-            stepConfig: y,
+            stepConfig: O,
             initialPortkeyGame: e,
             analyticsLocation: b.Z.PORTKEY_OVERVIEW
           }),
-          imageClassName: h.image,
+          imageClassName: y.image,
           disabled: o
         }, "sidebar-game-".concat(t, "-").concat(e.id)))
       })

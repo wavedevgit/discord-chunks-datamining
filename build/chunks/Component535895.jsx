@@ -1,7 +1,7 @@
 /** Chunk was on 952 **/
 /** chunk id: 535895, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => f
 });
 var Chunk951288 = require("./951288.js"),
   Chunk793030 = require("./793030.js"),
@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk907623 = require("./907623.js"),
   Chunk895263 = require("./895263.js");
 
-function f() {
+function g() {
   let e = (0, Chunk410030.ZP)();
   return (0, Chunk951288.jsx)(Chunk793030.xvT, {
     variant: "text-sm/medium",
@@ -30,9 +30,9 @@ function f() {
   })
 }
 
-function g() {
+function f() {
   let {
     gameProvider: e
   } = (0, Chunk183369.aj)();
-  return module === Chunk473682.mg.SHOCKBYTE ? (0, Chunk951288.jsx)(f, {}) : null
+  return module === Chunk473682.mg.SHOCKBYTE ? (0, Chunk951288.jsx)(g, {}) : null
 }

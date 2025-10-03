@@ -6,7 +6,7 @@ require.d(exports, {
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function a(e, n, t) {
+function l(e, n, t) {
   return n in e ? Object.defineProperty(e, n, {
     value: t,
     enumerable: true,
@@ -28,7 +28,7 @@ class d extends(r = Chunk442837.ZP.Store) {
     return s
   }
 }
-a(d, "displayName", "PortkeyRegionStore");
+l(d, "displayName", "PortkeyRegionStore");
 let u = new d(Chunk570140.Z, {
   LOGOUT: c,
   PORTKEY_REGION_PING_STATE_UPDATE: function(e) {
@@ -44,7 +44,7 @@ let u = new d(Chunk570140.Z, {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
           return Object.getOwnPropertyDescriptor(t, e).enumerable
         }))), r.forEach(function(n) {
-          a(e, n, t[n])
+          l(e, n, t[n])
         })
       }
       return e

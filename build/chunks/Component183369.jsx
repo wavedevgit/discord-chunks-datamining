@@ -21,62 +21,62 @@ var Chunk951288 = require("./951288.js"),
 let [p, j] = (0, Chunk975104.Z)();
 
 function x(e) {
-  var t, n, c, j, x, y, O;
+  var t, n, u, j, x, y, O;
   let {
     guildId: h,
     initialPortkeyInstance: P,
     initialPortkeyGame: k,
     stepConfig: S = b.T9,
-    children: w,
-    onClose: C,
-    analyticsLocation: I
+    children: I,
+    onClose: w,
+    analyticsLocation: C
   } = e;
-  i.useEffect(() => {
+  a.useEffect(() => {
     (0, v.po)(h), (0, d.BN)(h, true), null == P && (0, v.EC)(h)
   }, [h, P]);
-  let Z = (0, a.e7)([f.Z], () => f.Z.getStateForGuild(h)),
-    N = (0, a.e7)([u.Z], () => u.Z.getGuild(h)),
+  let N = (0, i.e7)([g.Z], () => g.Z.getStateForGuild(h)),
+    Z = (0, i.e7)([c.Z], () => c.Z.getGuild(h)),
     {
       analyticsLocations: T
-    } = (0, r.ZP)(I),
-    [_, E] = i.useState(null != (n = S.initialStep) ? n : Object.keys(S.steps)[0]),
+    } = (0, r.ZP)(C),
+    [_, E] = a.useState(null != (n = S.initialStep) ? n : Object.keys(S.steps)[0]),
     D = (0, m.Td)(h, true),
     z = S.steps[_],
-    [G, B] = i.useState(null == k ? true : k.id);
-  i.useEffect(() => {
+    [B, G] = a.useState(null == k ? true : k.id);
+  a.useEffect(() => {
     var e, t, n;
-    if (null != G || (null == P ? true : P.entitlementId) == null) return;
-    let l = null == Z || null == (n = Z.entitlements) || null == (t = n[P.entitlementId]) || null == (e = t.sku) ? true : e.product_id;
-    null != l && B(l)
-  }, [null == Z ? true : Z.entitlements, null == P ? true : P.entitlementId, G]);
-  let [F, L] = i.useState(true), M = i.useMemo(() => {
+    if (null != B || (null == P ? true : P.entitlementId) == null) return;
+    let l = null == N || null == (n = N.entitlements) || null == (t = n[P.entitlementId]) || null == (e = t.sku) ? true : e.product_id;
+    null != l && G(l)
+  }, [null == N ? true : N.entitlements, null == P ? true : P.entitlementId, B]);
+  let [F, L] = a.useState(true), M = a.useMemo(() => {
     var e;
-    if (null != G) return Object.values(null != (e = null == Z ? true : Z.catalog) ? e : {}).find(e => e.id === G)
-  }, [null == Z ? true : Z.catalog, G]), [R, K] = i.useState(P), [A, V] = i.useState(null != (c = null == k || null == (t = k.plans[0]) ? true : t.id) ? c : null == P ? true : P.planId), Y = function(e, t, n, l) {
-    var i, r, s, o, u, c, d, m;
-    let v = (0, a.e7)([f.Z], () => {
+    if (null != B) return Object.values(null != (e = null == N ? true : N.catalog) ? e : {}).find(e => e.id === B)
+  }, [null == N ? true : N.catalog, B]), [R, K] = a.useState(P), [A, V] = a.useState(null != (u = null == k || null == (t = k.plans[0]) ? true : t.id) ? u : null == P ? true : P.planId), Y = function(e, t, n, l) {
+    var a, r, s, o, c, u, d, m;
+    let v = (0, i.e7)([g.Z], () => {
         var t;
-        return null == (t = f.Z.getStateForGuild(e)) ? true : t.entitlements
+        return null == (t = g.Z.getStateForGuild(e)) ? true : t.entitlements
       }),
-      g = null != (d = null == t || null == (i = t.plans.find(e => e.id === n)) ? true : i.cost) ? d : 0;
-    return null == l ? g : g - (null != (m = null == v || null == (c = v[l.entitlementId]) || null == (u = c.sku) || null == (o = u.tenant_metadata) || null == (s = o.guild_monetization) || null == (r = s.game_server) ? true : r.boost_price) ? m : 0)
-  }(h, M, A, R), q = i.useCallback((e, t) => {
+      f = null != (d = null == t || null == (a = t.plans.find(e => e.id === n)) ? true : a.cost) ? d : 0;
+    return null == l ? f : f - (null != (m = null == v || null == (u = v[l.entitlementId]) || null == (c = u.sku) || null == (o = c.tenant_metadata) || null == (s = o.guild_monetization) || null == (r = s.game_server) ? true : r.boost_price) ? m : 0)
+  }(h, M, A, R), q = a.useCallback((e, t) => {
     var n;
-    B(null == e ? true : e.id), V(null != t ? t : null == e || null == (n = e.plans[0]) ? true : n.id)
-  }, []), U = i.useCallback(e => {
+    G(null == e ? true : e.id), V(null != t ? t : null == e || null == (n = e.plans[0]) ? true : n.id)
+  }, []), U = a.useCallback(e => {
     var t, n, l;
     K(e);
-    let i = null == Z || null == (l = Z.entitlements) || null == (n = l[e.entitlementId]) || null == (t = n.sku) ? true : t.product_id;
-    null != i && B(i), V(e.planId), J(e.name), W(e.regionId)
-  }, [null == Z ? true : Z.entitlements]), [X, H] = i.useState(), [$, J] = i.useState(null != (j = null == P ? true : P.name) ? j : ""), [Q, W] = i.useState(null != (x = null == P ? true : P.regionId) ? x : ""), [ee, et] = i.useState(false), en = i.useCallback(() => {
-    if (L(true), null == N || null == M || "" === $ || "" === Q || null == A) return;
+    let a = null == N || null == (l = N.entitlements) || null == (n = l[e.entitlementId]) || null == (t = n.sku) ? true : t.product_id;
+    null != a && G(a), V(e.planId), J(e.name), W(e.regionId)
+  }, [null == N ? true : N.entitlements]), [X, H] = a.useState(), [$, J] = a.useState(null != (j = null == P ? true : P.name) ? j : ""), [Q, W] = a.useState(null != (x = null == P ? true : P.regionId) ? x : ""), [ee, et] = a.useState(false), en = a.useCallback(() => {
+    if (L(true), null == Z || null == M || "" === $ || "" === Q || null == A) return;
     let e = () => {
       et(true);
       let e = new Promise(e => {
         setTimeout(() => e(true), b.cF)
       });
-      Promise.all([null != R ? (0, v.EY)(N.id, R.entitlementId, A, $) : (0, v.NE)(N.id, A, $, Q), e]).then(() => {
-        C(), (null == R ? true : R.planId) !== A && (0, g.Z)(N.id, M, null == R ? "created" : "updated")
+      Promise.all([null != R ? (0, v.EY)(Z.id, R.entitlementId, A, $) : (0, v.NE)(Z.id, A, $, Q), e]).then(() => {
+        w(), (null == R ? true : R.planId) !== A && (0, f.Z)(Z.id, M, null == R ? "created" : "updated")
       }).catch(e => {
         var t, n;
         L(null != (n = null == (t = e.body) ? true : t.message) ? n : e.message)
@@ -85,20 +85,20 @@ function x(e) {
       })
     };
     D < Y ? (0, s.u)({
-      analyticsLocation: I,
+      analyticsLocation: C,
       numberOfBoostsToAdd: Y - D,
       analyticsLocations: T,
-      guild: N,
+      guild: Z,
       intent: o.P.PERK,
       onLoading: e => {
         et(e)
       },
       onSubscribeComplete: e
     }) : e()
-  }, [T, N, D, A, I, M, $, Q, C, Y, R]), el = i.useCallback(e => {
+  }, [T, Z, D, A, C, M, $, Q, w, Y, R]), el = a.useCallback(e => {
     switch (e.type) {
       case "close":
-        C();
+        w();
         break;
       case "go-to-step":
         E(e.step);
@@ -106,9 +106,9 @@ function x(e) {
       case "save":
         en()
     }
-  }, [C, en]), ei = i.useCallback(() => {
+  }, [w, en]), ea = a.useCallback(() => {
     null != z && el(z.onBack)
-  }, [z, el]), ea = i.useCallback(() => {
+  }, [z, el]), ei = a.useCallback(() => {
     null != z && el(z.onNext)
   }, [z, el]);
   return (0, l.jsx)(p.Provider, {
@@ -117,10 +117,10 @@ function x(e) {
       step: _,
       stepAction: z,
       stepLoading: ee,
-      onBack: ei,
-      onNext: ea,
-      portkeyGames: null != (y = null == Z ? true : Z.catalog) ? y : {},
-      instances: Object.values(null != (O = null == Z ? true : Z.instances) ? O : {}),
+      onBack: ea,
+      onNext: ei,
+      portkeyGames: null != (y = null == N ? true : N.catalog) ? y : {},
+      instances: Object.values(null != (O = null == N ? true : N.instances) ? O : {}),
       currentGame: M,
       setCurrentGame: q,
       portkeyInstance: R,
@@ -138,6 +138,6 @@ function x(e) {
       error: F,
       gameProvider: b.mg.SHOCKBYTE
     },
-    children: w
+    children: I
   })
 }

@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk681715 = require("./681715.js"),
   Chunk481060 = require("./481060.js"),
@@ -32,7 +32,7 @@ function N(e) {
   } = e;
   return null == n ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: a()(C.optionContainer, i),
+      className: l()(C.optionContainer, i),
       children: [(0, r.jsx)("span", {
         children: n.name
       }), (0, r.jsxs)("div", {
@@ -58,16 +58,16 @@ function O(e) {
     region: n,
     selected: t,
     disabled: i,
-    className: l
+    className: a
   } = e, {
     pingText: o,
     pingCircleStyle: s
   } = (0, j.t)(n.pingUrl);
   return null == n ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: a()(C.optionContainer, {
+      className: l()(C.optionContainer, {
         [C.disabled]: i
-      }, l),
+      }, a),
       children: [(0, r.jsx)("span", {
         children: n.name
       }), (0, r.jsx)("div", {
@@ -76,7 +76,7 @@ function O(e) {
           children: v.intl.string(b.default["1eK9GR"])
         }) : (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)("div", {
-            className: a()(C.pingCircle, s)
+            className: l()(C.pingCircle, s)
           }), (0, r.jsx)(c.Text, {
             variant: "text-xs/medium",
             children: o
@@ -94,27 +94,27 @@ function y() {
     guildId: e,
     currentGame: n,
     regionId: t,
-    portkeyInstance: l,
-    setRegionId: a,
+    portkeyInstance: a,
+    setRegionId: l,
     name: j,
     setName: y,
     planId: S,
     setPlanId: E,
     planCost: P,
     stepLoading: w,
-    error: T
+    error: I
   } = (0, Chunk183369.aj)();
   Chunk647438.useEffect(() => {
     (0, Chunk744993._k)(module)
   }, [module]);
-  let I = (0, Chunk442837.e7)([Chunk590383.Z], () => Chunk590383.Z.getRegions()),
+  let T = (0, Chunk442837.e7)([Chunk590383.Z], () => Chunk590383.Z.getRegions()),
     R = Chunk647438.useMemo(() => {
       var e;
-      return null != (e = I.map(e => ({
+      return null != (e = T.map(e => ({
         value: e,
         label: e.name
       }))) ? module : []
-    }, [I]),
+    }, [T]),
     k = Chunk647438.useMemo(() => {
       var e;
       return null != (e = null == exports ? true : exports.plans.map(e => ({
@@ -192,7 +192,7 @@ function y() {
             isDisabled: w || null != Chunk120356,
             options: R,
             optionClassName: Chunk149671.option,
-            select: e => a(e.id),
+            select: e => l(e.id),
             placeholder: Chunk388032.intl.string(Chunk401561.default["op6/kZ"]),
             renderOptionLabel: e => {
               var n;
@@ -272,10 +272,10 @@ function y() {
         }),
         helpCenterUrl: "https://google.com/help-center"
       })
-    }), null != T && (0, Chunk951288.jsx)(Chunk481060.Text, {
+    }), null != I && (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-xs/medium",
       color: "text-danger",
-      children: T
+      children: I
     }), (0, Chunk951288.jsxs)(Chunk422663.ok, {
       step: Chunk473682.Vb.SERVER_SETTINGS,
       className: Chunk149671.footerContainer,

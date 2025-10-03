@@ -118,11 +118,11 @@ function em() {
 function eg() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : 3;
   es.filter(e => e.type === z.kL.TEXT && e.status === q._1z.TIMED_OUT).sort((e, t) => t.timestamp - e.timestamp).forEach((t, n) => {
-    (n >= e || t.timestamp < Date.now() - el) && eO(t.id, q._1z.DISMISSED)
+    (n >= e || t.timestamp < Date.now() - el) && ey(t.id, q._1z.DISMISSED)
   })
 }
 
-function eO(e) {
+function ey(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : q._1z.DISMISSED;
   if (null == e) returnfalse;
   let n = es.findIndex(t => t.id === e);
@@ -140,7 +140,7 @@ function eO(e) {
   }), em()
 }
 
-function ey(e) {
+function eO(e) {
   let t = es.find(t => t.type === z.kL.INCOMING_CALL && t.channelId === e);
   return null != t ? t.id : null
 }
@@ -228,7 +228,7 @@ function eb() {
       gameId: i,
       lastSentTimestamp: Date.now()
     }), false;
-    let s = (0, B.Z)(e, i, r);
+    let s = (0, Y.Z)(e, i, r);
     return null != s && (ep(i, e, {
       userId: e,
       gameId: i,
@@ -260,8 +260,8 @@ function eS(e) {
   let {
     channelId: t,
     ringing: n
-  } = e, i = ey(t);
-  if (!n.includes(y.default.getId())) return eO(i);
+  } = e, i = eO(t);
+  if (!n.includes(O.default.getId())) return ey(i);
   if (null != i) returnfalse;
   let r = E.Z.getChannel(t);
   if (null == r || !r.isRingable() || "GUILD_RING_START" === e.type && !g.Z.getCurrentConfig({
@@ -269,7 +269,7 @@ function eS(e) {
       location: "OverlayV3StartRinging"
     }).enabled || Z.Z.getStatus() === q.Skl.DND || m.QZ.getSetting()) returnfalse;
   let l = es.find(e => e.type === z.kL.TEXT && e.channelId === t && e.messageType === q.uaV.CALL);
-  null != l && eO(l.id), eE((0, Y.Z)(r), {
+  null != l && ey(l.id), eE((0, B.Z)(r), {
     priority: z.Tu.HIGH,
     expirationExternallyManaged: true,
     type: z.kL.INCOMING_CALL,
@@ -303,7 +303,7 @@ let eC = new eI(Chunk570140.Z, {
       notificationId: t,
       status: n
     } = e;
-    eO(t, n)
+    ey(t, n)
   },
   OVERLAY_MOUNTED: function(e) {
     var t;
@@ -325,13 +325,13 @@ let eC = new eI(Chunk570140.Z, {
       locked: t
     } = e;
     if (t) {
-      for (let e of es) e.status === q._1z.FOCUSED && eO(e.id, q._1z.ACTIVE);
+      for (let e of es) e.status === q._1z.FOCUSED && ey(e.id, q._1z.ACTIVE);
       returntrue
     }
-    for (let e of (eg(), es)) e.type === z.kL.NUDGE ? eO(e.id, q._1z.DISMISSED) : e.status !== q._1z.ACTIVE || e.expirationExternallyManaged || (e.timer.stop(), e.timer.start(e.expirationExternallyManaged));
+    for (let e of (eg(), es)) e.type === z.kL.NUDGE ? ey(e.id, q._1z.DISMISSED) : e.status !== q._1z.ACTIVE || e.expirationExternallyManaged || (e.timer.stop(), e.timer.start(e.expirationExternallyManaged));
     if (es.length > 0) {
       var n;
-      return eO(null == (n = es.filter(e => e.type === z.kL.TEXT).sort((e, t) => t.timestamp - e.timestamp)[0]) ? true : n.id, q._1z.FOCUSED)
+      return ey(null == (n = es.filter(e => e.type === z.kL.TEXT).sort((e, t) => t.timestamp - e.timestamp)[0]) ? true : n.id, q._1z.FOCUSED)
     }
   },
   MESSAGE_CREATE: function(e) {
@@ -346,7 +346,7 @@ let eC = new eI(Chunk570140.Z, {
       let e = function(e, t, n) {
         var i;
         let r, o;
-        if (l()(null != t.activity, "received null message activity"), n.id === y.default.getId()) returnfalse;
+        if (l()(null != t.activity, "received null message activity"), n.id === O.default.getId()) returnfalse;
         let a = (0, U.pL)(),
           s = null != (i = null == a ? true : a.altId) ? i : null == a ? true : a.id;
         if (null == a || null == s) returnfalse;
@@ -381,7 +381,7 @@ let eC = new eI(Chunk570140.Z, {
         });
         let c = new Set;
         return es.filter(e => null != e.uniqueKey).sort((e, t) => t.timestamp - e.timestamp).forEach(e => {
-          null != e.uniqueKey && (c.has(e.uniqueKey) ? eO(e.id, q._1z.DISMISSED) : c.add(e.uniqueKey))
+          null != e.uniqueKey && (c.has(e.uniqueKey) ? ey(e.id, q._1z.DISMISSED) : c.add(e.uniqueKey))
         }), true
       }(a, o, s);
       if (false !== e) return e
@@ -413,7 +413,7 @@ let eC = new eI(Chunk570140.Z, {
     let {
       channelId: t
     } = e;
-    eO(ey(t))
+    ey(eO(t))
   },
   GUILD_RING_START: eS,
   GUILD_RING_STOP: function(e) {
@@ -426,7 +426,7 @@ let eC = new eI(Chunk570140.Z, {
         guildId: n,
         location: "OverlayV3StopRinging"
       }).enabled) returnfalse;
-    i.includes(y.default.getId()) && eO(ey(t))
+    i.includes(O.default.getId()) && ey(eO(t))
   },
   ACTIVITY_USER_ACTION: function(e) {
     let t, {
@@ -461,7 +461,7 @@ let eC = new eI(Chunk570140.Z, {
     } = e;
     if (M.Z.isNotificationDisabled(R.OverlayNotificationDisabledSetting.FRIEND_STREAM_WATCH_NUDGE)) returnfalse;
     let n = C.Z.getVoiceChannelId(),
-      i = y.default.getId(),
+      i = O.default.getId(),
       r = j.Z.getMediaSessionId();
     if (null != n && null != r)
       for (let e of t) {
