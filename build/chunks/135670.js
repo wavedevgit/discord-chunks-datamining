@@ -56,6 +56,9 @@ class c extends Chunk47770.Z {
     return Promise.resolve([])
   }
   setVideoInputDevice(e) {}
+  getVideoInputDeviceId() {
+    return Chunk65154.Av
+  }
   getSupportedVideoCodecs(e) {
     e([])
   }

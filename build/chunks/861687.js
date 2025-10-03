@@ -682,7 +682,8 @@ class eC extends Chunk47770.Z {
             automatic_audio_subsystem: t.automaticAudioSubsystem,
             media_session_id: this.getMediaSessionId(),
             participant_type: this.getVoiceParticipantType(),
-            join_voice_id: this.joinVoiceId
+            join_voice_id: this.joinVoiceId,
+            is_camera_enabled: M.Z.getMediaEngine().getVideoInputDeviceId() !== el.Av && h.context === el.Yn.DEFAULT
           }), this.stateHistory.getVoiceConnectionSuccessStats()));
           let r = performance.now(),
             i = (e, t) => null == e || null == t ? null : e - t;

@@ -170,7 +170,10 @@ class N extends Chunk47770.Z {
     return (0, Chunk740197.l0)()
   }
   setVideoInputDevice(e) {
-    this.eachConnection(t => t.setVideoSource(e), T.Yn.DEFAULT)
+    this.videoInputDeviceId = e, this.eachConnection(t => t.setVideoSource(e), T.Yn.DEFAULT)
+  }
+  getVideoInputDeviceId() {
+    return this.videoInputDeviceId
   }
   getSupportedVideoCodecs(e) {
     e([])
@@ -302,7 +305,7 @@ class N extends Chunk47770.Z {
     }) : (this.maxSupportedProtocolVersion = 0, Promise.reject(Error("WebAssembly is not supported on this platform."))) : (this.maxSupportedProtocolVersion = 0, Promise.reject(Error("Encoded transforms are not supported on this platform."))) : (this.maxSupportedProtocolVersion = 0, Promise.resolve())
   }
   constructor() {
-    super(), A(this, "Video", Chunk825040.Z), A(this, "Camera", Chunk582168.Z), A(this, "_audioContext", null), A(this, "outputVolume", Chunk65154.Qx), A(this, "sourceId", Chunk65154.w5), A(this, "sinkId", Chunk65154.w5), A(this, "enabled", false), A(this, "connections", new Set), A(this, "interacted", false), A(this, "loopback", null), A(this, "voiceActivityInput", null), A(this, "pendingDesktopInputs", {}), A(this, "enablePromise", null), A(this, "dave", null), A(this, "transientKeys", null), A(this, "maxSupportedProtocolVersion", null), A(this, "handleActiveSinksChange", (e, t) => {
+    super(), A(this, "Video", Chunk825040.Z), A(this, "Camera", Chunk582168.Z), A(this, "_audioContext", null), A(this, "outputVolume", Chunk65154.Qx), A(this, "sourceId", Chunk65154.w5), A(this, "sinkId", Chunk65154.w5), A(this, "videoInputDeviceId", Chunk65154.Av), A(this, "enabled", false), A(this, "connections", new Set), A(this, "interacted", false), A(this, "loopback", null), A(this, "voiceActivityInput", null), A(this, "pendingDesktopInputs", {}), A(this, "enablePromise", null), A(this, "dave", null), A(this, "transientKeys", null), A(this, "maxSupportedProtocolVersion", null), A(this, "handleActiveSinksChange", (e, t) => {
       this.connections.forEach(n => n.setHasActiveVideoOutputSink(e, t, "MediaEngineWebRTC.handleActiveSinksChange"))
     }), A(this, "handleNewListener", e => {
       switch (e) {
