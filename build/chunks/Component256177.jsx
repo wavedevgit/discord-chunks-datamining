@@ -22,23 +22,22 @@ let s = {
         size: c,
         align: u,
         shape: d,
-        label: f,
-        defaultChecked: _
-      } = e, [p, h] = i.useState(_), m = i.useCallback((e, t) => {
-        h(t)
+        label: f
+      } = e, [_, p] = i.useState(false), h = i.useCallback((e, t) => {
+        p(t)
+      }, []), m = i.useCallback(() => {
+        p(true)
       }, []), g = i.useCallback(() => {
-        h(true)
+        p(false)
       }, []), E = i.useCallback(() => {
-        h(false)
-      }, []), b = i.useCallback(() => {
-        h(e => !e)
+        p(e => !e)
       }, []);
       return (0, r.jsxs)(o.Kqy, {
         direction: "vertical",
         gap: "md",
         children: [(0, r.jsx)(a.$q, {
-          value: p,
-          onChange: m,
+          value: _,
+          onChange: h,
           disabled: t,
           readOnly: n,
           displayOnly: s,
@@ -52,7 +51,7 @@ let s = {
           })
         }), (0, r.jsxs)(o.Text, {
           variant: "text-sm/normal",
-          children: ["Current state: ", p ? "Checked" : "Unchecked"]
+          children: ["Current state: ", _ ? "Checked" : "Unchecked"]
         }), (0, r.jsxs)(o.Kqy, {
           direction: "horizontal",
           gap: "sm",
@@ -60,19 +59,19 @@ let s = {
             variant: "secondary",
             size: "sm",
             text: "Check",
-            onClick: g,
+            onClick: m,
             disabled: t || n
           }), (0, r.jsx)(o.zxk, {
             variant: "secondary",
             size: "sm",
             text: "Uncheck",
-            onClick: E,
+            onClick: g,
             disabled: t || n
           }), (0, r.jsx)(o.zxk, {
             variant: "primary",
             size: "sm",
             text: "Toggle",
-            onClick: b,
+            onClick: E,
             disabled: t || n
           })]
         })]
@@ -148,11 +147,6 @@ let s = {
           label: "Round",
           value: Chunk755721.zV.ROUND
         }]
-      },
-      defaultChecked: {
-        type: "boolean",
-        label: "Default Checked",
-        defaultValue: false
       }
     }
   }]

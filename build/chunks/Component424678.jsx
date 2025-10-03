@@ -43,7 +43,7 @@ class s extends Chunk647438.PureComponent {
 }
 class l extends Chunk647438.PureComponent {
   render() {
-    let e = this.props.artists.split(";");
+    let e = this.props.artists.split("; ");
     if (!this.props.canOpen) return module.join(", ");
     let t = module.length - 1;
     return module.map((e, n) => (0, r.jsx)(s, {

@@ -99,7 +99,7 @@ function L(e) {
   if (!(0, l.Z)(a)) return null;
   let V = () => {
       var e, n;
-      let l = null != (n = null == (e = a.state) ? true : e.split(";")) ? n : [];
+      let l = null != (n = null == (e = a.state) ? true : e.split("; ")) ? n : [];
       return 0 === l.length ? null : null == a.sync_id ? (0, r.jsx)(I.Z, {
         variant: "text-xs/normal",
         text: l.join(", ")

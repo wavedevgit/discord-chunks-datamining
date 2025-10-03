@@ -21,38 +21,31 @@ let c = {
         description: n,
         disabled: c,
         displayOnly: u,
-        defaultChecked: d,
-        labelType: f,
-        iconPosition: _
-      } = e, [p, h] = i.useState(d);
-      i.useEffect(() => {
-        h(d)
-      }, [d]);
-      let m = i.useCallback(() => {
-          h(true)
-        }, []),
-        g = i.useCallback(() => {
-          h(false)
-        }, []),
-        E = i.useCallback(() => {
-          h(e => !e)
-        }, []);
+        labelType: d,
+        iconPosition: f
+      } = e, [_, p] = i.useState(false), h = i.useCallback(() => {
+        p(true)
+      }, []), m = i.useCallback(() => {
+        p(false)
+      }, []), g = i.useCallback(() => {
+        p(e => !e)
+      }, []);
       return (0, r.jsxs)(o.Kqy, {
         direction: "vertical",
         gap: "md",
         children: [(0, r.jsx)(l.XZJ, {
-          checked: p,
-          onChange: e => h(e),
+          checked: _,
+          onChange: e => p(e),
           disabled: c,
           displayOnly: u,
           label: t,
           description: null != n || "" === n ? n : true,
           value: "checkbox-value",
-          labelType: f,
-          leadingIcon: "leading" === _ ? a.d3s : true
+          labelType: d,
+          leadingIcon: "leading" === f ? a.d3s : true
         }), (0, r.jsxs)(o.xvT, {
           variant: "text-sm/normal",
-          children: ["Current state: ", p ? "Checked" : "Unchecked"]
+          children: ["Current state: ", _ ? "Checked" : "Unchecked"]
         }), (0, r.jsxs)(o.Kqy, {
           direction: "horizontal",
           gap: "sm",
@@ -60,19 +53,19 @@ let c = {
             variant: "secondary",
             size: "sm",
             text: "Check",
-            onClick: m,
+            onClick: h,
             disabled: c
           }), (0, r.jsx)(s.zxk, {
             variant: "secondary",
             size: "sm",
             text: "Uncheck",
-            onClick: g,
+            onClick: m,
             disabled: c
           }), (0, r.jsx)(s.zxk, {
             variant: "primary",
             size: "sm",
             text: "Toggle",
-            onClick: E,
+            onClick: g,
             disabled: c
           })]
         })]
@@ -92,11 +85,6 @@ let c = {
       displayOnly: {
         type: "boolean",
         label: "Display Only",
-        defaultValue: false
-      },
-      defaultChecked: {
-        type: "boolean",
-        label: "Default Checked",
         defaultValue: false
       },
       labelType: {

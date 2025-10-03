@@ -38,7 +38,7 @@ function f(e) {
   };
   if ((0, l.Z)(e) && t && null != _) {
     var m;
-    let e = null == (m = _.split(";")) ? true : m.join(", ");
+    let e = null == (m = _.split("; ")) ? true : m.join(", ");
     return {
       text: p ? e : d.intl.format(d.t.Vnuxub, {
         name: e

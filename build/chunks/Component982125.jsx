@@ -19,18 +19,26 @@ var Chunk951288 = require("./951288.js"),
 function p(e) {
   let {
     checked: t,
-    defaultChecked: n,
-    description: a,
-    onChange: p,
-    disabled: h = false,
-    displayOnly: m,
-    label: g,
-    labeledBy: E,
-    leadingIcon: b,
-    value: y,
-    labelType: O = "primary"
-  } = e, v = i.useRef(null), I = i.useRef(null), T = i.useRef(null), S = null != g && "" !== g, A = null != a && "" !== a, C = null != b ? b : null, [N, R] = i.useState(false), P = e => {
-    e || R(true), null != p && p(e)
+    description: n,
+    onChange: a,
+    disabled: p = false,
+    displayOnly: h,
+    label: m,
+    labeledBy: g,
+    leadingIcon: E,
+    value: b,
+    labelType: y = "primary",
+    usageVariant: O = "single"
+  } = e, v = (0, i.useRef)(null), I = (0, i.useRef)(null), T = (0, i.useRef)(null), [S, A] = (0, i.useState)(true), C = (0, i.useRef)(false), N = null != m && "" !== m, R = null != n && "" !== n, P = null != E ? E : null;
+  (0, i.useEffect)(() => {
+    if (!C.current) {
+      C.current = true;
+      return
+    }
+    A(t ? "animateIn" : "animateOut")
+  }, [t]);
+  let w = e => {
+    null != a && a(e)
   };
   return (0, r.jsx)(c.tE, {
     focusTarget: I,
@@ -38,16 +46,15 @@ function p(e) {
     children: (0, r.jsx)(s.XZ, {
       ref: T,
       inputRef: I,
-      "aria-hidden": m || true,
-      "aria-labelledby": E,
+      "aria-hidden": h || true,
+      "aria-labelledby": g,
       isSelected: t,
-      defaultSelected: n,
-      onChange: P,
-      isDisabled: h,
-      isReadOnly: m,
+      onChange: w,
+      isDisabled: p,
+      isReadOnly: h,
       "data-mana-component": "checkbox",
-      className: o()(_.checkboxItem, N && _.animateOut),
-      value: String(y),
+      className: o()(_.checkboxItem, "string" == typeof S && _[S], "indicator" !== O && _.padding),
+      value: String(b),
       children: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)("div", {
           className: _.checkboxIndicator,
@@ -75,13 +82,13 @@ function p(e) {
             size: "refresh_sm",
             color: "currentColor"
           })]
-        }), S && (0, r.jsxs)(d.K, {
+        }), N && (0, r.jsxs)(d.K, {
           gap: 8,
           children: [(0, r.jsx)(l._, {
             className: _.label,
             children: (0, r.jsxs)("div", {
               className: _.labelContent,
-              children: [null != C && (0, r.jsx)(C, {
+              children: [null != P && (0, r.jsx)(P, {
                 className: _.leadingIcon,
                 size: "sm",
                 color: "currentColor",
@@ -89,14 +96,14 @@ function p(e) {
                 focusable: false
               }), (0, r.jsx)(f.x, {
                 variant: "text-md/normal",
-                color: "primary" === O ? "text-primary" : "text-secondary",
-                children: g
+                color: "primary" === y ? "text-primary" : "text-secondary",
+                children: m
               })]
             })
-          }), A && (0, r.jsx)(f.x, {
+          }), R && (0, r.jsx)(f.x, {
             variant: "text-sm/normal",
             color: "text-secondary",
-            children: a
+            children: n
           })]
         })]
       })
