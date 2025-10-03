@@ -55,10 +55,10 @@ function w(e) {
   let {
     onVideoLoaded: t,
     isLoading: n
-  } = e, i = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), [u, m] = r.useState(!i), f = (0, c.ZP)(), C = (0, l.apv)(f), _ = C ? S.Z : A.Z, b = C ? L.Z : T.Z, h = r.useRef(null), x = r.useRef(null), [y, g] = r.useState(false), [j, E] = r.useState(false), [v, R] = r.useState(false);
+  } = e, i = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), [u, m] = r.useState(!i), f = (0, c.ZP)(), _ = (0, l.apv)(f), C = _ ? S.Z : A.Z, b = _ ? L.Z : T.Z, h = r.useRef(null), x = r.useRef(null), [y, g] = r.useState(false), [j, v] = r.useState(false), [E, R] = r.useState(false);
   r.useEffect(() => {
-    y && j && v && t()
-  }, [y, j, v, t]), r.useEffect(() => {
+    y && j && E && t()
+  }, [y, j, E, t]), r.useEffect(() => {
     n || i || setTimeout(() => {
       var e;
       null == (e = h.current) || e.play()
@@ -82,7 +82,7 @@ function w(e) {
         [N.hidden]: u
       }),
       controls: false,
-      onCanPlayThrough: r.useCallback(() => E(true), []),
+      onCanPlayThrough: r.useCallback(() => v(true), []),
       children: (0, a.jsx)("source", {
         src: b,
         type: "video/webm"
@@ -97,7 +97,7 @@ function w(e) {
       onCanPlayThrough: r.useCallback(() => g(true), []),
       onEnded: O,
       children: (0, a.jsx)("source", {
-        src: _,
+        src: C,
         type: "video/webm"
       })
     }), (0, a.jsxs)("div", {
@@ -118,12 +118,12 @@ function I(e) {
     onVideoLoaded: s
   } = e, o = async () => {
     (0, f.Y)({
-      pageType: E.ZY5.GLOBAL_DISCOVERY_QUESTS,
-      sectionType: E.jXE.ORBS_REWARD_MODAL,
-      ctaObject: E.qAy.CTA_TO_ORBS_SHOP
+      pageType: v.ZY5.GLOBAL_DISCOVERY_QUESTS,
+      sectionType: v.jXE.ORBS_REWARD_MODAL,
+      ctaObject: v.qAy.CTA_TO_ORBS_SHOP
     }), await n(), (0, m.mK)({
       openInLayer: false,
-      tab: v.AW.ORBS,
+      tab: E.AW.ORBS,
       analyticsLocations: [],
       analyticsSource: u.Z.QUEST_REWARD_MODAL
     })
@@ -137,7 +137,7 @@ function I(e) {
       className: N.copyContainer,
       children: [(0, a.jsxs)("div", {
         className: N.heading,
-        children: [(0, a.jsx)(_.M, {
+        children: [(0, a.jsx)(C.M, {
           shouldUseThemeColor: true,
           className: N.orbsIcon
         }), (0, a.jsx)(l.X6q, {
@@ -181,13 +181,13 @@ function P(e) {
   } = e, c = (null == (t = n.userStatus) ? true : t.claimedAt) != null, {
     balance: d,
     error: u
-  } = (0, C.A)(), m = (0, b.LM)(n.config), [p, f] = r.useState(c ? "success" : "loading"), [_, E] = r.useState(false), v = r.useCallback(() => {
-    E(true)
+  } = (0, _.A)(), m = (0, b.LM)(n.config), [p, f] = r.useState(c ? "success" : "loading"), [C, v] = r.useState(false), E = r.useCallback(() => {
+    v(true)
   }, []);
   r.useEffect(() => {
     c || "loading" !== p || (0, h.QB)(n.id, x.y$.CROSS_PLATFORM, l).then(() => f("success")).catch(() => f("error"))
   }, [n.id, c, p, l]);
-  let N = !_ || "loading" === p || null == d && null == u,
+  let N = !C || "loading" === p || null == d && null == u,
     A = "error" === p || null == m || null == d && null != u;
   return (0, a.jsx)(y.Z, {
     onClose: i,
@@ -204,7 +204,7 @@ function P(e) {
         orbsEarned: m,
         orbsBalance: d,
         isLoading: N,
-        onVideoLoaded: v
+        onVideoLoaded: E
       })
     })
   })

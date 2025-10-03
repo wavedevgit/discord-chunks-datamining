@@ -41,7 +41,7 @@ var i, Chunk392711 = require("./392711.js"),
   Chunk145597 = require("./145597.js"),
   Chunk581567 = require("./581567.js"),
   Chunk624126 = require("./624126.js"),
-  Chunk220410 = require("./220410.js"),
+  Chunk272304 = require("./272304.js"),
   Chunk981631 = require("./981631.js"),
   Chunk987650 = require("./987650.js");
 
@@ -654,7 +654,7 @@ function e8(e) {
       })
     })
   }), e = module.filter(e => null != e.executables && e.executables.length > 0);
-  let u = Chunk220410.Tf.getConfig({
+  let u = Chunk272304.Tf.getConfig({
     location: "RunningGameStore.handleGamesDatabaseUpdate"
   }).useDetectionV2;
   Chunk998502.ZP.setObservedGamesCallback(module, Chunk433517, e => {

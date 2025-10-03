@@ -34,11 +34,11 @@ function w(e) {
     onUseNow: i,
     user: l,
     mode: o
-  } = e, d = (0, h.fh)(t, h.eC.REWARD).url, u = (0, x.Qy)(t.config), m = (null == (n = l.avatarDecoration) ? true : n.skuId) != null && l.avatarDecoration.skuId === (null == a ? true : a.skuId);
+  } = e, d = (0, h.fh)(t, h.eC.REWARD).url, u = (0, C.Qy)(t.config), m = (null == (n = l.avatarDecoration) ? true : n.skuId) != null && l.avatarDecoration.skuId === (null == a ? true : a.skuId);
   return (0, r.jsxs)("div", {
-    className: N.contentContainer,
+    className: b.contentContainer,
     children: [(0, r.jsx)("div", {
-      className: N.previewContainer,
+      className: b.previewContainer,
       children: (0, r.jsx)(c.Z, {
         user: l,
         guildId: null,
@@ -47,12 +47,12 @@ function w(e) {
         questPreviewRewardAssetUrl: d
       })
     }), (0, r.jsxs)("div", {
-      className: N.copyContainer,
+      className: b.copyContainer,
       children: [(0, r.jsx)(s.X6q, {
         variant: "heading-xl/semibold",
         color: "header-primary",
-        className: N.heading,
-        children: b.intl.string(b.t["0/Yz+f"])
+        className: b.heading,
+        children: N.intl.string(N.t["0/Yz+f"])
       }), (0, r.jsx)(s.Text, {
         variant: "text-sm/medium",
         color: "text-secondary",
@@ -61,7 +61,7 @@ function w(e) {
     }), (0, r.jsx)(s.zxk, {
       variant: "secondary",
       size: "sm",
-      text: m ? b.intl.string(b.t.hjaYYm) : b.intl.string(b.t.MAS7uL),
+      text: m ? N.intl.string(N.t.hjaYYm) : N.intl.string(N.t.MAS7uL),
       loading: "applying" === o,
       disabled: "claimed" !== o || m,
       onClick: i,
@@ -75,11 +75,11 @@ function T(e) {
   let {
     quest: s,
     onClose: c,
-    transitionState: x,
+    transitionState: C,
     preview: h,
-    location: b,
-    sourceQuestContent: N
-  } = e, T = a.useMemo(() => (0, g.xn)(s.config), [s]), E = (0, l.e7)([p.default], () => p.default.getCurrentUser()), [A, P] = function(e) {
+    location: N,
+    sourceQuestContent: b
+  } = e, T = a.useMemo(() => (0, x.xn)(s.config), [s]), E = (0, l.e7)([p.default], () => p.default.getCurrentUser()), [A, P] = function(e) {
     let {
       product: n,
       isFetching: t
@@ -100,8 +100,8 @@ function T(e) {
     return [r, l]
   }(null != (t = null == T ? true : T.skuId) ? t : null), D = (null == (n = s.userStatus) ? true : n.claimedAt) != null, O = !h && !D, [L, S] = a.useState(O ? "loading" : "claimed");
   a.useEffect(() => {
-    O && (0, C.QB)(s.id, v.y$.CROSS_PLATFORM, b).then(() => S("claimed")).catch(() => S("error"))
-  }, [s.id, b, O]);
+    O && (0, g.QB)(s.id, v.y$.CROSS_PLATFORM, N).then(() => S("claimed")).catch(() => S("error"))
+  }, [s.id, N, O]);
   let R = true === h && null === A && (null == T ? true : T.skuId) !== "",
     k = null == E,
     I = k || null == A && true !== h || R || "loading" === L,
@@ -111,9 +111,9 @@ function T(e) {
     };
   return (0, r.jsx)(j.Z, {
     onClose: c,
-    transitionState: x,
+    transitionState: C,
     quest: s,
-    sourceQuestContent: N,
+    sourceQuestContent: b,
     location: y.dr.COLLECTIBLE_REWARD_MODAL,
     isRewardContentLoading: I,
     rewardContentHasError: M,

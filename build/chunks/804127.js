@@ -1,7 +1,7 @@
 /** Chunk was on 96861 **/
 /** chunk id: 804127, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  G$: () => u,
+  G$: () => d,
   In: () => c,
   uL: () => l
 }), require("./388685.js");
@@ -20,8 +20,8 @@ function l(e) {
     requiresPlatformSelection: o,
     rewardCode: l,
     selectedPlatformType: c,
-    preview: u
-  } = e, [d, m] = r.useState(false), [p, C] = r.useState(false), f = r.useCallback(async (e, t, n) => {
+    preview: d
+  } = e, [u, m] = r.useState(false), [p, C] = r.useState(false), f = r.useCallback(async (e, t, n) => {
     try {
       C(true), await (0, s.QB)(e, t, n), m(false), C(false)
     } catch (e) {
@@ -36,11 +36,11 @@ function l(e) {
   }, []);
   return r.useEffect(() => {
     var e, r;
-    true === u || null != l || d || t || p || n || o || (m(false), (null == (e = i.userStatus) ? true : e.claimedAt) == null && null != c ? f(i.id, c, a) : (null == (r = i.userStatus) ? true : r.claimedAt) != null && h(i.id))
-  }, [f, h, d, t, p, n, a, i, o, l, c, u]), {
+    true === d || null != l || u || t || p || n || o || (m(false), (null == (e = i.userStatus) ? true : e.claimedAt) == null && null != c ? f(i.id, c, a) : (null == (r = i.userStatus) ? true : r.claimedAt) != null && h(i.id))
+  }, [f, h, u, t, p, n, a, i, o, l, c, d]), {
     claimCode: f,
     fetchCode: h,
-    hasError: d,
+    hasError: u,
     setHasError: m
   }
 }
@@ -52,9 +52,9 @@ function c(e) {
     questContent: s,
     questContentPosition: l,
     sourceQuestContent: c
-  } = e, u = (0, o.O5)();
+  } = e, d = (0, o.O5)();
   return r.useCallback(() => {
-    null != n && (u({
+    null != n && (d({
       questId: t.id,
       questContent: s,
       questContentCTA: o.jZ.REDEEM_REWARD,
@@ -63,7 +63,7 @@ function c(e) {
     }), (0, i.q)({
       href: n,
       onConfirm: () => {
-        u({
+        d({
           questId: t.id,
           questContent: s,
           questContentCTA: o.jZ.VISIT_REDEMPTION_LINK,
@@ -72,10 +72,10 @@ function c(e) {
         }), (0, a.Z)(n)
       }
     }))
-  }, [t.id, s, l, c, u, n])
+  }, [t.id, s, l, c, d, n])
 }
 
-function u(e) {
+function d(e) {
   var t;
   let {
     claimCode: n,
@@ -83,8 +83,8 @@ function u(e) {
     hasError: i,
     onDismiss: s,
     quest: l,
-    questContent: u,
-    questContentCTA: d = o.jZ.GET_REWARD_CODE,
+    questContent: d,
+    questContentCTA: u = o.jZ.GET_REWARD_CODE,
     questContentPosition: m,
     requiresPlatformSelection: p,
     selectedPlatformType: C,
@@ -93,18 +93,18 @@ function u(e) {
   } = e, j = (0, o.O5)(), y = c(e);
   return r.useCallback(() => {
     var e;
-    p && null != C ? (n(l.id, C, u), j({
+    p && null != C ? (n(l.id, C, d), j({
       questId: l.id,
-      questContent: u,
-      questContentCTA: d,
+      questContent: d,
+      questContentCTA: u,
       questContentPosition: m,
       sourceQuestContent: h
-    })) : i ? (null == (e = l.userStatus) ? true : e.claimedAt) != null ? a(l.id) : null != C && (n(l.id, C, u), j({
+    })) : i ? (null == (e = l.userStatus) ? true : e.claimedAt) != null ? a(l.id) : null != C && (n(l.id, C, d), j({
       questId: l.id,
-      questContent: u,
-      questContentCTA: d,
+      questContent: d,
+      questContentCTA: u,
       questContentPosition: m,
       sourceQuestContent: h
     })) : (null != f && y(), s())
-  }, [n, a, i, s, l.id, null == (t = l.userStatus) ? true : t.claimedAt, u, d, m, p, C, j, f, h, y])
+  }, [n, a, i, s, l.id, null == (t = l.userStatus) ? true : t.claimedAt, d, u, m, p, C, j, f, h, y])
 }

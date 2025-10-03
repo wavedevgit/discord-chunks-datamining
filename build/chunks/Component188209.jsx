@@ -39,15 +39,15 @@ function D(e) {
     questId: a,
     sourceQuestContent: i,
     className: l,
-    inputClassName: u
-  } = e, d = (0, o.e7)([f.Z], () => f.Z.hidePersonalInformation), m = (0, y.O5)();
+    inputClassName: d
+  } = e, u = (0, o.e7)([f.Z], () => f.Z.hidePersonalInformation), m = (0, y.O5)();
   return null == t ? null : (0, r.jsx)(c.Z, {
     className: l,
-    inputClassName: u,
-    value: d ? E.intl.string(E.t["0n2u0t"]) : t.code,
+    inputClassName: d,
+    value: u ? E.intl.string(E.t["0n2u0t"]) : t.code,
     buttonColor: s.Tt.PRIMARY,
     onCopy: () => {
-      d && (0, h.JG)(t.code), m({
+      u && (0, h.JG)(t.code), m({
         questId: a,
         questContent: n,
         questContentCTA: y.jZ.COPY_REWARD_CODE,
@@ -64,16 +64,16 @@ function A(e) {
     questContent: o,
     questContentPosition: s,
     sourceQuestContent: c,
-    rewardCode: u,
-    rewardPlatform: d,
+    rewardCode: d,
+    rewardPlatform: u,
     sharedQuestFields: m,
     onClose: p,
     transitionState: f,
     impressionRef: h
   } = e, y = null != (t = (0, x.C1)({
     quest: n,
-    rewardCode: u,
-    selectedPlatformType: d,
+    rewardCode: d,
+    selectedPlatformType: u,
     sharedQuestFields: m
   })) ? t : "", v = a.useMemo(() => {
     var e;
@@ -82,9 +82,9 @@ function A(e) {
       idx: 0
     })) ? true : e.redemptionLink;
     if ((0, j.Ew)(t)) return null;
-    let r = null == u ? true : u.code;
+    let r = null == d ? true : d.code;
     return (0, j.Ew)(r) ? t : t.replace(T.Dp, encodeURIComponent(r))
-  }, [n, null == u ? true : u.code]), g = (0, b.In)({
+  }, [n, null == d ? true : d.code]), g = (0, b.In)({
     quest: n,
     questContent: o,
     questContentPosition: s,
@@ -102,7 +102,7 @@ function A(e) {
         onClick: g
       } : {
         variant: "primary",
-        text: E.intl.string(E.t.i4jeWV),
+        text: E.intl.string(E.t["/g10LC"]),
         onClick: p
       }],
       preview: (0, r.jsxs)(r.Fragment, {
@@ -112,7 +112,7 @@ function A(e) {
           className: I.claimInstructionsCodeInputTitle,
           children: E.intl.string(E.t.srzsU1)
         }), (0, r.jsx)(D, {
-          rewardCode: u,
+          rewardCode: d,
           questContent: o,
           questId: n.id,
           sourceQuestContent: c
@@ -206,9 +206,9 @@ function R(e) {
     preview: s
   });
   ! function(e) {
-    let t = (0, d.Z)(e),
+    let t = (0, u.Z)(e),
       n = m.default.useIsCaptchaModalOpen(),
-      r = (0, u.Z)(n),
+      r = (0, d.Z)(n),
       i = !!(!n && r);
     a.useEffect(() => {
       i && t()
@@ -218,7 +218,7 @@ function R(e) {
   });
   let R = null == E && (x || O),
     S = I && !O && !x;
-  return (0, r.jsx)(P.Z, {
+  return (0, r.jsx)(N.Z, {
     onClose: n,
     transitionState: i,
     quest: t,
@@ -226,7 +226,7 @@ function R(e) {
     location: T.dr.REWARD_CODE_MODAL,
     isRewardContentLoading: R,
     rewardContentHasError: S,
-    rewardContent: S ? null : (0, r.jsx)(N.Z, {
+    rewardContent: S ? null : (0, r.jsx)(P.Z, {
       rewardName: f.defaultRewardName,
       children: (0, r.jsx)(q, {
         quest: t,
