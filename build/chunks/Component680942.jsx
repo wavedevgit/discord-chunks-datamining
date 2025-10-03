@@ -1,7 +1,7 @@
-/** Chunk was on 68255 **/
+/** Chunk was on 70820 **/
 /** chunk id: 680942, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => j
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,19 +18,19 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx");
-let g = e => {
+let j = e => {
   let {
     product: t,
     primary: r,
-    selectedVariantIndex: g,
-    returnRef: m,
-    onSuccess: j,
+    selectedVariantIndex: j,
+    returnRef: g,
+    onSuccess: v,
     tooltipDelay: h
   } = e, {
     analyticsLocations: P
-  } = (0, s.ZP)(), x = l.useRef(null), E = (0, d.sp)(), _ = (0, f.Z)();
+  } = (0, s.ZP)(), E = l.useRef(null), x = (0, d.sp)(), _ = (0, f.Z)();
   return (0, p.x6)(t) ? null : (0, n.jsx)(o.ua7, {
-    text: v.intl.string(v.t["JCFN//"]),
+    text: m.intl.string(m.t["JCFN//"]),
     delay: h,
     children: e => {
       var l, s;
@@ -52,33 +52,33 @@ let g = e => {
         }
         return e
       }({}, e), s = s = {
-        "aria-label": v.intl.string(v.t["JCFN//"]),
-        buttonRef: x,
+        "aria-label": m.intl.string(m.t["JCFN//"]),
+        buttonRef: E,
         variant: r ? "primary" : "secondary",
         icon: o.OgN,
         size: "md",
         onClick: e => {
           e.stopPropagation(), u.default.track(y.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-            collectibles_shop_session_id: null == E ? true : E.sessionId,
+            collectibles_shop_session_id: null == x ? true : x.sessionId,
             sku_id: t.skuId,
-            page_section: null == E ? true : E.pageSection,
-            page_category: null == E ? true : E.pageCategory,
+            page_section: null == x ? true : x.pageSection,
+            page_category: null == x ? true : x.pageCategory,
             tile_type: i.Z[t.type],
-            tile_position: String(null == E ? true : E.tilePosition),
+            tile_position: String(null == x ? true : x.tilePosition),
             cta_name: "gift button",
             page_type: _ || "home"
           }), (0, c.Z)({
             skuId: (0, b.S)({
               product: t,
-              selectedVariantIndex: g
+              selectedVariantIndex: j
             }),
             isGift: true,
             giftingOrigin: O.Wt.SHOP_PAGE,
             analyticsLocations: P,
-            returnRef: m,
+            returnRef: g,
             variantsReturnStyle: a.v.VARIANTS_GROUP,
-            onClose: null != j ? e => {
-              e && j()
+            onClose: null != v ? e => {
+              e && v()
             } : true
           })
         }

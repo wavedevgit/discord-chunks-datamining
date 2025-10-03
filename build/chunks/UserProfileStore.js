@@ -537,6 +537,11 @@ class em extends Chunk750041.Z {
     let t = this.getWishlistIds(e);
     return t.length > 0 ? t[0] : null
   }
+  getWishlistSettings(e, t) {
+    var n, r;
+    let i = w.get(e);
+    return null != (r = null == i || null == (n = i.wishlistSettings) ? true : n[t]) ? r : null
+  }
   takeSnapshot() {
     let e = Chunk314897.default.getId(),
       t = w.get(module);

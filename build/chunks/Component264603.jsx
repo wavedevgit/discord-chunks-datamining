@@ -1,4 +1,4 @@
-/** Chunk was on 51711 **/
+/** Chunk was on 61222 **/
 /** chunk id: 264603, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => C
@@ -46,10 +46,10 @@ function C() {
       var e, t;
       return null != (t = null == C || null == (e = C.linkedGames) ? true : module.map(e => m.Z.getApplication(e.id)).filter(e => null != e)) ? exports : []
     }),
-    S = (0, Chunk20471.FG)(C, {
+    N = (0, Chunk20471.FG)(C, {
       allowedFlows: [Chunk20471.ro.RPC]
     }),
-    N = (0, Chunk20471.FG)(C, {
+    S = (0, Chunk20471.FG)(C, {
       allowedFlows: [Chunk20471.ro.WEB]
     }),
     T = (0, Chunk20471.FG)(C),
@@ -124,13 +124,13 @@ function C() {
         color: "text-secondary",
         children: "This will start whichever authorization flow is available. RPC authorization takes precedence over web."
       }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
-        disabled: !S.canStartAuthorization,
-        onClick: S.startAuthorization,
+        disabled: !N.canStartAuthorization,
+        onClick: N.startAuthorization,
         variant: "secondary",
         text: "Start In-App Authorization"
       }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
-        disabled: !N.canStartAuthorization,
-        onClick: N.startAuthorization,
+        disabled: !S.canStartAuthorization,
+        onClick: S.startAuthorization,
         variant: "secondary",
         text: "Start Web Authorization"
       }), (0, Chunk951288.jsx)(Chunk481060.zxk, {

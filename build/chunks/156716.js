@@ -1,6 +1,5 @@
-/** Chunk was on 48785 **/
+/** Chunk was on 35791 **/
 /** chunk id: 156716, original params: e,t,n (module,exports,require) **/
-"use strict";
 module.exports = {
   container: "container__3a77d",
   headerAsset: "headerAsset__3a77d",

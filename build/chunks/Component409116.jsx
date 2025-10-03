@@ -1,4 +1,4 @@
-/** Chunk was on 68255 **/
+/** Chunk was on 70820 **/
 /** chunk id: 409116, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   F: () => p
@@ -34,15 +34,15 @@ let p = e => {
     discountOfferAmount: b,
     discount: y = s.f_,
     variant: O = "heading-md/semibold"
-  } = e, v = null != b, g = (0, o.qr)(t, r), m = y !== s.f_ && y.discountPercentage >= 5 && !v ? (0, n.jsxs)(n.Fragment, {
+  } = e, m = null != b, j = (0, o.qr)(t, r), g = y !== s.f_ && y.discountPercentage >= 5 && !m ? (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsx)(a.nn4, {
       children: c.intl.format(c.t.niC6DA, {
-        price: g,
+        price: j,
         discountPercentage: y.discountPercentage
       })
     }), (0, n.jsx)("span", {
       "aria-hidden": true,
-      children: g
+      children: j
     }), (0, n.jsxs)(a.Text, {
       variant: O,
       color: "text-feedback-positive",
@@ -53,20 +53,20 @@ let p = e => {
   }) : (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsx)(a.nn4, {
       children: c.intl.format(c.t["6C36MD"], {
-        price: g
+        price: j
       })
     }), (0, n.jsx)("span", {
       "aria-hidden": true,
       className: i()({
-        [u.priceStrikethrough]: v
+        [u.priceStrikethrough]: m
       }, f),
-      children: g
+      children: j
     })]
   });
   return (0, n.jsxs)(a.Text, {
     variant: O,
     className: i()({
-      [u.discountBackgroundColor]: v
+      [u.discountBackgroundColor]: m
     }, u.container, f),
     children: ["tooltip" === l ? (0, n.jsx)(a.ua7, {
       text: c.intl.string(c.t.MPFyJy),
@@ -113,7 +113,7 @@ let p = e => {
       size: p,
       color: "currentColor",
       className: u.nitroIcon
-    }) : null, m, v && (0, n.jsxs)(a.X6q, {
+    }) : null, g, m && (0, n.jsxs)(a.X6q, {
       variant: "heading-md/semibold",
       className: u.discountPill,
       children: [(0, n.jsx)(a.nn4, {

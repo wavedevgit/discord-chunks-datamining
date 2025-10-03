@@ -1,4 +1,4 @@
-/** Chunk was on 51711 **/
+/** Chunk was on 61222 **/
 /** chunk id: 918714, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -44,7 +44,7 @@ function _(e) {
 let y = function(e) {
   let {
     onClose: t
-  } = e, [n, u] = r.useState(null), [h, x] = r.useState(true), [y, C] = r.useState(null), [E, S] = r.useState(false), N = r.useCallback(async () => {
+  } = e, [n, u] = r.useState(null), [h, x] = r.useState(true), [y, C] = r.useState(null), [E, N] = r.useState(false), S = r.useCallback(async () => {
     x(true), C(null);
     try {
       var e;
@@ -72,23 +72,23 @@ let y = function(e) {
     }
   }, [t]), T = r.useCallback(async e => {
     if (null !== n) {
-      S(true);
+      N(true);
       try {
         let t = {
           task_id: n.task_id,
           flow_id: n.flow_context.flow_id,
           data: e
         };
-        await (0, d.Wl)(t), N()
+        await (0, d.Wl)(t), S()
       } catch (e) {
         C(g.intl.string(b.default["+QRSxc"]))
       } finally {
-        S(false)
+        N(false)
       }
     }
-  }, [n, N]);
+  }, [n, S]);
   (0, l.ZP)(() => {
-    N()
+    S()
   });
   let O = r.useMemo(() => (null == n ? true : n.task_type) === m.UA.AGE_VERIFICATION, [n]);
   return (0, a.jsxs)("div", {
@@ -149,7 +149,7 @@ let y = function(e) {
                 fullWidth: true,
                 text: g.intl.string(g.t["7NqTJi"]),
                 onClick: () => {
-                  N()
+                  S()
                 }
               })]
             })]

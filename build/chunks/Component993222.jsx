@@ -25,11 +25,11 @@ let h = e => {
   } = e, n = (0, c.Nd)(), h = null == n ? true : n.tab, {
     isPurchased: m,
     isPartiallyOwnedBundle: b
-  } = (0, d.L)(t), E = (0, l.e7)([o.Z], () => o.Z.getCategoryForProduct(t.skuId)), v = (0, l.e7)([i.default], () => i.default.getCurrentUser()), S = s.ZP.canUseCollectibles(v), x = (0, g.Iw)(t), {
+  } = (0, d.L)(t), E = (0, l.e7)([o.Z], () => o.Z.getCategoryForProduct(t.skuId)), S = (0, l.e7)([s.default], () => s.default.getCurrentUser()), v = i.ZP.canUseCollectibles(S), x = (0, g.Iw)(t), {
     isOrbExclusive: O
   } = (0, p.Ip)({
     product: t,
-    isPremiumUser: S,
+    isPremiumUser: v,
     tab: h,
     hasDiscountOffer: null != x
   }), T = (0, u.Yq)(t.skuId), y = (null == E ? true : E.skuId) === f.bu && (0, u.WW)(t.skuId);

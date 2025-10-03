@@ -1,7 +1,7 @@
-/** Chunk was on 40849 **/
+/** Chunk was on 18539 **/
 /** chunk id: 22494, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => a
 });
 var Chunk81825 = require("./81825.js"),
   Chunk523080 = require("./523080.js"),
@@ -16,29 +16,29 @@ function u(e, t, r) {
     writable: true
   }) : e[t] = r, e
 }
-class s extends Chunk81825.Z {
+class a extends Chunk81825.Z {
   static fromServer(e) {
     var t, r, {
         user_id: n,
         wishlist_items: c
       } = e,
-      o = function(e, t) {
+      l = function(e, t) {
         if (null == e) return {};
-        var r, n, l = function(e, t) {
+        var r, n, i = function(e, t) {
           if (null == e) return {};
-          var r, n, l = {},
-            i = Object.keys(e);
-          for (n = 0; n < i.length; n++) r = i[n], t.indexOf(r) >= 0 || (l[r] = e[r]);
-          return l
+          var r, n, i = {},
+            s = Object.keys(e);
+          for (n = 0; n < s.length; n++) r = s[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
+          return i
         }(e, t);
         if (Object.getOwnPropertySymbols) {
-          var i = Object.getOwnPropertySymbols(e);
-          for (n = 0; n < i.length; n++) r = i[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r])
+          var s = Object.getOwnPropertySymbols(e);
+          for (n = 0; n < s.length; n++) r = s[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
         }
-        return l
+        return i
       }(e, ["user_id", "wishlist_items"]);
-    let d = c.map(e => e.sku_product_line === a.POd.COLLECTIBLES ? i.Z.fromServer(e) : l.Z.fromServer(e));
-    return new s((t = function(e) {
+    let d = c.map(e => e.sku_product_line === o.POd.COLLECTIBLES ? s.Z.fromServer(e) : i.Z.fromServer(e));
+    return new a((t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var r = null != arguments[t] ? arguments[t] : {},
           n = Object.keys(r);
@@ -49,7 +49,7 @@ class s extends Chunk81825.Z {
         })
       }
       return e
-    }({}, o), r = r = {
+    }({}, l), r = r = {
       userId: n,
       items: d
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {

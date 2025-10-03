@@ -11,19 +11,19 @@ var Chunk442837 = require("./442837.js"),
   Chunk819640 = require("./819640.js"),
   Chunk562511 = require("./562511.js"),
   Chunk46140 = require("./46140.js");
-let d = 12633 == require.j ? 18e4 : null;
+let u = 12633 == require.j ? 18e4 : null;
 
 function p(e) {
   let t = (0, c.A2)(e),
     n = (0, r.e7)([a.Z], () => a.Z.isOpen()),
     p = (0, r.e7)([s.Z], () => s.Z.hasLayers()),
     {
-      isQuestBarEmpty: f,
-      hasLoadedQuestBar: _
+      isQuestBarEmpty: _,
+      hasLoadedQuestBar: f
     } = (0, o.Ws)({
-      location: u.dr.QUESTS_BAR
+      location: d.dr.QUESTS_BAR
     });
-  return (0, l.bf)(t && !n && !p && f && _ ? i.z.GUILD_TAG_AVAILABLE_COACHMARK : null, {
-    cooldownDurationMs: d
+  return (0, l.bf)(t && !n && !p && _ && f ? i.z.GUILD_TAG_AVAILABLE_COACHMARK : null, {
+    cooldownDurationMs: u
   })
 }

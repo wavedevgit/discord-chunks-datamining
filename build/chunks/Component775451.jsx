@@ -1,4 +1,4 @@
-/** Chunk was on 51711 **/
+/** Chunk was on 61222 **/
 /** chunk id: 775451, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   V9: () => b,
@@ -33,16 +33,16 @@ let f = {
       className: _
     } = e, {
       balance: y
-    } = (0, c.A)(), [C, E] = r.useState(d.b.DEFAULT), [S, N] = r.useState(false), [T, O] = r.useState(false), P = r.useRef(null), k = r.useCallback(() => {
-      let e = !S;
+    } = (0, c.A)(), [C, E] = r.useState(d.b.DEFAULT), [N, S] = r.useState(false), [T, O] = r.useState(false), P = r.useRef(null), k = r.useCallback(() => {
+      let e = !N;
       e && null != g && (0, o.Y)({
         pageType: g,
         sectionType: p.jXE.ORBS_BALANCE_MENU,
         ctaObject: p.qAy.OPEN_ORB_BALANCE_MENU_FROM_PILL
-      }), E(e ? d.b.SELECTED : d.b.DEFAULT), N(e)
-    }, [S, g]), I = r.useCallback(() => {
-      S && k()
-    }, [S, k]), w = (0, s.Z)(null, I), R = r.useMemo(() => (0, a.jsx)(u.L, {
+      }), E(e ? d.b.SELECTED : d.b.DEFAULT), S(e)
+    }, [N, g]), I = r.useCallback(() => {
+      N && k()
+    }, [N, k]), w = (0, s.Z)(null, I), R = r.useMemo(() => (0, a.jsx)(u.L, {
       analyticsPage: g,
       ctaText: n,
       ctaOnClick: () => {
@@ -65,7 +65,7 @@ let f = {
         },
         onClick: k,
         showNotificationBadge: t
-      }), S && (0, a.jsx)("div", {
+      }), N && (0, a.jsx)("div", {
         className: l()(x.cardContainer, j, {
           [x.hidden]: T,
           [x.visible]: !T

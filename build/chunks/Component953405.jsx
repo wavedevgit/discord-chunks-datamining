@@ -1,8 +1,7 @@
-/** Chunk was on 48785 **/
+/** Chunk was on 35791 **/
 /** chunk id: 953405, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
-  a: () => p
+  a: () => m
 });
 var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
@@ -36,39 +35,39 @@ function d(e) {
   })
 }
 
-function p(e) {
+function m(e) {
   var t;
   let {
     prices: n,
     isPremiumUser: i,
     discount: c,
-    product: p,
-    hasSufficientOrbs: m,
-    isProductDisabled: f,
-    discountOfferAmount: v
-  } = e, h = null != v;
+    product: m,
+    hasSufficientOrbs: p,
+    isProductDisabled: v,
+    discountOfferAmount: f
+  } = e, h = null != f;
   return 0 === n.length ? null : n[0].currency === s.pK.DISCORD_ORB ? (0, r.jsx)(d, {
     orbPrice: n[0],
-    isProductDisabled: f,
-    hasSufficientOrbs: m
+    isProductDisabled: v,
+    hasSufficientOrbs: p
   }) : (0, r.jsxs)("div", {
     className: u.priceLine,
     children: [(0, r.jsxs)("div", {
       className: u.priceTagContainer,
       children: [(0, r.jsx)(a.Z, {
-        product: p,
+        product: m,
         discount: c,
         isPremiumUser: i,
         hideStrikethroughPrice: !i || h,
         nitroIconType: "tooltip",
         nitroIconSize: "xs",
-        discountOfferAmount: v
+        discountOfferAmount: f
       }), i || h ? null : (0, r.jsx)(l.Z, {
-        product: p
+        product: m
       })]
     }), n.length > 1 && n[1].currency === s.pK.DISCORD_ORB && (0, r.jsx)(o.Z, {
       orbAmount: null != (t = n[1].amount) ? t : 1 / 0,
-      className: f || !m ? u.disabled : true
+      className: v || !p ? u.disabled : true
     })]
   })
 }

@@ -1,7 +1,7 @@
 /** Chunk was on 56848 **/
 /** chunk id: 128156, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => A
+  Z: () => N
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -31,36 +31,36 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk158069 = require("./158069.js");
 
-function A(e) {
+function N(e) {
   let {
     user: t,
     currentUser: n,
-    displayProfile: A,
-    guildId: N,
+    displayProfile: N,
+    guildId: A,
     channelId: C,
     subsection: k,
     onClose: Z
   } = e, {
-    voiceActivityStatusEnabled: _
+    voiceActivityStatusEnabled: D
   } = (0, s.U)({
     location: "UserProfileModalV2Activity"
-  }), D = (0, p.b)({
+  }), _ = (0, p.b)({
     location: "UserProfileModalV2Activity"
-  }), L = (0, c.P6)("UserProfileModalV2Activity"), {
-    live: R,
+  }), R = (0, c.P6)("UserProfileModalV2Activity"), {
+    live: L,
     recent: U,
-    stream: M
+    stream: G
   } = (0, h.Z)(t.id), {
-    voiceChannel: W,
+    voiceChannel: M,
     voiceActivity: F
   } = (0, m.Z)({
     userId: t.id,
-    guildId: N
-  }), G = (0, i.e7)([o.Z], () => o.Z.isFetchingUserOutbox(t.id)), H = t.id === n.id, B = (0, i.e7)([f.Z, d.Z], () => {
-    let e = H ? f.Z.getStatus() : d.Z.getStatus(t.id);
+    guildId: A
+  }), W = (0, i.e7)([o.Z], () => o.Z.isFetchingUserOutbox(t.id)), B = t.id === n.id, z = (0, i.e7)([f.Z, d.Z], () => {
+    let e = B ? f.Z.getStatus() : d.Z.getStatus(t.id);
     return e === l.Skl.OFFLINE || e === l.Skl.INVISIBLE
-  }), z = R.length > 0 || null != M, q = _ && null == M && null == F && null != W, V = !B && (z || q), K = U.length > 0, Y = R.some(e => (0, a.Z)(e));
-  if (!V && !K && G) return (0, r.jsx)("div", {
+  }), H = L.length > 0 || null != G, q = D && null == G && null == F && null != M, V = !z && (H || q), Y = U.length > 0, K = L.some(e => (0, a.Z)(e));
+  if (!V && !Y && W) return (0, r.jsx)("div", {
     className: T.cards,
     children: Array.from({
       length: 8
@@ -75,22 +75,22 @@ function A(e) {
       })]
     }, t))
   });
-  if (!V && !K && !G) {
+  if (!V && !Y && !W) {
     var X;
-    return H ? (0, r.jsx)(x.Uf, {
+    return B ? (0, r.jsx)(x.Uf, {
       onClose: Z
     }) : (0, r.jsx)(x.P9, {
       user: t,
-      guildId: null != (X = null == A ? true : A.guildId) ? X : N,
+      guildId: null != (X = null == N ? true : N.guildId) ? X : A,
       channelId: C,
       onClose: Z
     })
   }
-  return (0, r.jsxs)(S.F, {
+  return (0, r.jsxs)(I.F, {
     className: T.scroller,
     fade: true,
     children: [(() => {
-      let e = H && L && !Y;
+      let e = B && R && !K;
       return V ? (0, r.jsx)(P.Z, {
         heading: E.intl.string(E.t.J6STd3),
         children: (0, r.jsxs)("ul", {
@@ -99,32 +99,32 @@ function A(e) {
             children: (0, r.jsx)(v.Z, {
               variant: "horizontal"
             })
-          }), !D && q && (0, r.jsx)("li", {
+          }), !_ && q && (0, r.jsx)("li", {
             children: (0, r.jsx)(O.Z, {
               user: t,
               currentUser: n,
-              voiceChannel: W,
+              voiceChannel: M,
               onClose: Z
             })
-          }), null != M && (0, r.jsx)("li", {
-            children: (0, r.jsx)(j.Z, {
+          }), null != G && (0, r.jsx)("li", {
+            children: (0, r.jsx)(b.Z, {
               user: t,
               currentUser: n,
-              stream: M,
+              stream: G,
               onClose: Z
             })
-          }), R.map((e, i) => (0, r.jsx)("li", {
+          }), L.map((e, i) => (0, r.jsx)("li", {
             children: (0, r.jsx)(y.Z, {
               user: t,
               currentUser: n,
               activity: e,
               onClose: Z
             })
-          }, "live-".concat(i))), D && q && (0, r.jsx)("li", {
+          }, "live-".concat(i))), _ && q && (0, r.jsx)("li", {
             children: (0, r.jsx)(O.Z, {
               user: t,
               currentUser: n,
-              voiceChannel: W,
+              voiceChannel: M,
               onClose: Z
             })
           })]
@@ -135,19 +135,19 @@ function A(e) {
           variant: "horizontal"
         })
       }) : null
-    })(), K ? (0, r.jsx)(P.Z, {
+    })(), Y ? (0, r.jsx)(P.Z, {
       heading: E.intl.string(E.t.jzgEoK),
-      introText: H ? E.intl.format(E.t["4bk9Ag"], {
+      introText: B ? E.intl.format(E.t["4bk9Ag"], {
         learnMoreHook: (e, t) => (0, r.jsx)(l.eee, {
           href: g.Z.getArticleURL(w.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e
         }, t)
       }) : true,
-      scrollIntoView: k === I.Tb.RECENT_ACTIVITY,
+      scrollIntoView: k === S.Tb.RECENT_ACTIVITY,
       children: (0, r.jsx)("ul", {
         className: T.cards,
         children: U.map(e => (0, r.jsx)("li", {
-          children: (0, r.jsx)(b.Z, {
+          children: (0, r.jsx)(j.Z, {
             user: t,
             entry: e,
             onClose: Z

@@ -1,8 +1,7 @@
-/** Chunk was on 10352 **/
-/** chunk id: 653079, original params: e,t,r (module,exports,require) **/
-"use strict";
+/** Chunk was on 68691 **/
+/** chunk id: 653079, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
@@ -18,51 +17,51 @@ var Chunk951288 = require("./951288.js"),
   Chunk74538 = require("./74538.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk763740 = require("./763740.js");
-let f = e => {
+let g = e => {
   let {
     user: t,
-    guildId: r,
+    guildId: n,
     selectedNameplate: i
-  } = e, f = (0, l.e7)([_.Z], () => _.Z.getPendingGlobalName()), {
+  } = e, g = (0, l.e7)([_.Z], () => _.Z.getPendingGlobalName()), {
     product: b,
-    purchase: g
-  } = (0, c.Z)(null == i ? true : i.skuId), I = (0, p.kd)(b), x = m.ZP.canUseCollectibles(t), S = (0, s.qS)(g), C = (0, s.G1)(b), w = !x && S, y = null == g || w;
-  return (0, n.jsxs)("div", {
+    purchase: x
+  } = (0, c.Z)(null == i ? true : i.skuId), C = (0, p.kd)(b), f = m.ZP.canUseCollectibles(t), w = (0, s.qS)(x), I = (0, s.G1)(b), P = !f && w, y = null == x || P;
+  return (0, r.jsxs)("div", {
     className: a()(v.previewBorder, {
       [v.upsell]: null != i && y
     }),
-    children: [(0, n.jsx)("div", {
+    children: [(0, r.jsx)("div", {
       className: v.previewBox,
-      children: (0, n.jsxs)("div", {
+      children: (0, r.jsxs)("div", {
         className: v.previewContents,
-        children: [(0, n.jsx)(d.d, {
+        children: [(0, r.jsx)(d.d, {
           width: 124,
           opacity: .9
-        }), (0, n.jsx)(d.d, {
+        }), (0, r.jsx)(d.d, {
           width: 124,
           opacity: .9
-        }), (0, n.jsx)(u.Z, {
+        }), (0, r.jsx)(u.Z, {
           user: t,
-          guildId: r,
+          guildId: n,
           nameplate: i,
-          pendingGlobalName: f,
+          pendingGlobalName: g,
           isHighlighted: true
-        }), (0, n.jsx)(d.d, {
+        }), (0, r.jsx)(d.d, {
           width: 124,
           opacity: .9
-        }), (0, n.jsx)(d.d, {
+        }), (0, r.jsx)(d.d, {
           width: 124,
           opacity: .9
         })]
       })
-    }), null != i && (0, n.jsxs)("div", {
+    }), null != i && (0, r.jsxs)("div", {
       className: v.previewDescription,
-      children: [(0, n.jsx)(o.Text, {
+      children: [(0, r.jsx)(o.Text, {
         variant: "text-sm/semibold",
-        children: I
-      }), y && (0, n.jsx)(o.Text, {
+        children: C
+      }), y && (0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
-        children: w ? h.intl.string(h.t.nD78oa) : C && x ? h.intl.string(h.t.hmyYKy) : C ? h.intl.string(h.t.JY1i0t) : h.intl.string(h.t.fEGjVV)
+        children: P ? h.intl.string(h.t.nD78oa) : I && f ? h.intl.string(h.t.hmyYKy) : I ? h.intl.string(h.t.JY1i0t) : h.intl.string(h.t.fEGjVV)
       })]
     })]
   })

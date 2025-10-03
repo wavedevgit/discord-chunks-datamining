@@ -163,7 +163,7 @@ function A(e) {
           style: {
             left: Y.to({
               range: I,
-              output: [0, 0, 0, 24, 24, 24]
+              output: [1, 1, 1, 24, 24, 24]
             })
           },
           "aria-hidden": true,

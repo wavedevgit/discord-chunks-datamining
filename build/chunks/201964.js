@@ -1,12 +1,13 @@
-/** Chunk was on 204 **/
-/** chunk id: 201964, original params: e,t,i (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 201964, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  o: () => n
+  o: () => a
 });
 var Chunk979554 = require("./979554.js"),
   Chunk429368 = require("./429368.js");
-let n = (e, t, i) => {
-  let n = (0, r.o)(e, t),
-    a = null != i ? i : n;
-  return (null == e ? true : e.type) === l.Z.VARIANTS_GROUP && null != e.variants && e.variants.length > a ? e.variants[a].items[0] : e.items[0]
+let a = (e, t, n) => {
+  let a = (0, i.o)(e, t),
+    o = null != n ? n : a;
+  return (null == e ? true : e.type) === r.Z.VARIANTS_GROUP && null != e.variants && e.variants.length > o ? e.variants[o].items[0] : e.items[0]
 }

@@ -33,9 +33,9 @@ let u = () => 4 * Math.random() + 8,
   p = () => (0, Chunk951288.jsx)("div", {
     className: Chunk198501.skeletonsContainer,
     children: d.map(e => (0, r.jsxs)("div", {
-      className: s.cardsContainer,
+      className: i.cardsContainer,
       children: [(0, r.jsx)("div", {
-        className: a()(o.skeleton, o.bannerSkeleton, i.catalogBanner),
+        className: a()(o.skeleton, o.bannerSkeleton, s.catalogBanner),
         children: (0, r.jsx)("div", {
           className: o.bannerBody
         })

@@ -1,7 +1,7 @@
 /** Chunk was on 204 **/
 /** chunk id: 306092, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  e: () => u
+  e: () => d
 });
 var Chunk951288 = require("./951288.js"),
   Chunk409116 = require("./409116.jsx"),
@@ -14,22 +14,22 @@ function o(e) {
     price: t,
     isPremiumUser: i,
     discount: o,
-    hasSufficientOrbs: u,
-    discountOfferAmount: d
+    hasSufficientOrbs: d,
+    discountOfferAmount: u
   } = e;
   return t.currency === a.pK.DISCORD_ORB ? (0, l.jsx)(n.Z, {
     orbAmount: t.amount,
-    className: u ? true : s.disabled
+    className: d ? true : s.disabled
   }) : (0, l.jsx)(r.F, {
     price: t,
     discount: o,
     nitroIconType: i ? "default" : true,
     nitroIconSize: "md",
-    discountOfferAmount: d
+    discountOfferAmount: u
   })
 }
 
-function u(e) {
+function d(e) {
   let {
     displayPrices: t,
     isPremiumUser: i,

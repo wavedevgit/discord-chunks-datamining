@@ -1,4 +1,4 @@
-/** Chunk was on 51711 **/
+/** Chunk was on 61222 **/
 /** chunk id: 926976, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => Z
@@ -53,7 +53,7 @@ function P(e) {
     children: t
   } = e;
   return (0, a.jsx)(u.zJl, {
-    className: N.customPropertiesContainer,
+    className: S.customPropertiesContainer,
     children: (0, a.jsx)("dl", {
       children: t
     })
@@ -72,15 +72,15 @@ function k(e) {
       return () => clearTimeout(e)
     }
   }, [l]), (0, a.jsxs)("div", {
-    className: N.customProperty,
+    className: S.customProperty,
     children: [(0, a.jsx)("dt", {
-      className: N.customPropertiesName,
+      className: S.customPropertiesName,
       children: t
     }), (0, a.jsx)("dd", {
       children: n
     }), (0, a.jsx)(u.P3F, {
       tag: "span",
-      className: N.copyPropertyButton,
+      className: S.copyPropertyButton,
       onClick: () => (0, b.JG)(JSON.stringify(i), () => s(true)),
       children: l ? (0, a.jsx)(u.kmB, {
         color: "currentColor",
@@ -111,15 +111,15 @@ let I = new Set(["client_performance_cpu", "client_performance_memory"]),
       return (0, a.jsxs)("div", {
         "data-mtctest-ignore": "true",
         children: [(0, a.jsxs)(p.ZP, {
-          className: l()(T.headerBar, N.subPanelHeaderBar),
+          className: l()(T.headerBar, S.subPanelHeaderBar),
           children: [(0, a.jsx)(p.ZP.Icon, {
             icon: u.IeX,
             tooltip: t
           }), (0, a.jsxs)(p.ZP.Title, {
-            wrapperClassName: N.headerTitle,
+            wrapperClassName: S.headerTitle,
             children: [t, (0, a.jsx)(u.P3F, {
               tag: "span",
-              className: N.copyEventButton,
+              className: S.copyEventButton,
               onClick: () => (0, b.JG)(t),
               children: (0, a.jsx)(u.TIy, {
                 color: "currentColor",
@@ -160,7 +160,7 @@ let I = new Set(["client_performance_cpu", "client_performance_memory"]),
             onClick: s
           })]
         }), (0, a.jsxs)(_.E, {
-          className: N.commonProperties,
+          className: S.commonProperties,
           children: [(0, a.jsx)(_.Z9, {
             name: "Timestamp (local)",
             copyValue: r.toISOString(),
@@ -210,7 +210,7 @@ let I = new Set(["client_performance_cpu", "client_performance_memory"]),
                 children: null != r ? (0, a.jsx)("code", {
                   children: JSON.stringify(r)
                 }) : (0, a.jsx)("code", {
-                  className: N.emptyProperty,
+                  className: S.emptyProperty,
                   children: "null"
                 })
               }, n), null !== i && null !== i.average && (0, a.jsx)(k, {
@@ -314,7 +314,7 @@ function Z() {
         children: Object.entries(R).map(e => {
           let [t, n] = e;
           return (0, a.jsx)(u.P3F, {
-            className: l()(N.filter, s.includes(t) && N.activeFilter),
+            className: l()(S.filter, s.includes(t) && S.activeFilter),
             onClick: () => {
               o(e => e.includes(t) ? e.filter(e => e !== t) : [...e, t])
             },

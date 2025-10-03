@@ -1,8 +1,7 @@
-/** Chunk was on 48785 **/
+/** Chunk was on 35791 **/
 /** chunk id: 539598, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => m
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -24,12 +23,12 @@ function d() {
   }).apply(this, arguments)
 }
 
-function p(e) {
+function m(e) {
   let {
     product: t
   } = e, n = (0, l.ql)(t, s.tuJ.PREMIUM_TIER_2);
   if (null == n) return null;
-  let p = (0, a.qr)(n.amount, n.currency);
+  let m = (0, a.qr)(n.amount, n.currency);
   return (0, r.jsxs)("div", {
     className: u.container,
     children: [(0, r.jsx)(i.ua7, {
@@ -76,7 +75,7 @@ function p(e) {
     }), (0, r.jsx)(i.Text, {
       variant: "text-xs/medium",
       children: c.intl.format(c.t.Sv8iiY, {
-        price: p,
+        price: m,
         subscribeNowHook: e => (0, r.jsx)(o.F, {
           text: e
         })

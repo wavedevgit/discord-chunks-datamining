@@ -1,8 +1,8 @@
 /** Chunk was on 56848 **/
 /** chunk id: 778414, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  C: () => R,
-  Z: () => _
+  C: () => L,
+  Z: () => D
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -69,18 +69,18 @@ function Z(e, t) {
   return i
 }
 
-function _(e) {
+function D(e) {
   var {
     widget: t
   } = e, n = Z(e, ["widget"]);
   return t instanceof p.q ? (0, r.jsx)(x.Z, k({
     widget: t
-  }, n)) : t instanceof h.zy ? (0, r.jsx)(I.Z, k({
+  }, n)) : t instanceof h.zy ? (0, r.jsx)(S.Z, k({
     widget: t
   }, n)) : null
 }
 
-function D() {
+function _() {
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk830202.ukTeenDisclaimer,
     children: [(0, Chunk951288.jsx)(Chunk481060.d3s, {
@@ -94,7 +94,7 @@ function D() {
   })
 }
 
-function L(e) {
+function R(e) {
   let {
     user: t,
     guildId: n,
@@ -106,21 +106,21 @@ function L(e) {
     }, [e, t, n]), "GB" === e && n
   })(), x = (0, m.k)({
     location: "UserProfileModalV2Widgets"
-  }), S = 0 === a.length && o, I = i.useMemo(() => a.filter(h.Wc), [a]), E = i.useMemo(() => a.filter(e => e instanceof p.q), [a]);
-  (0, j.ZP)(I), (0, v.J)(o, I);
+  }), I = 0 === a.length && o, S = i.useMemo(() => a.filter(h.Wc), [a]), E = i.useMemo(() => a.filter(e => e instanceof p.q), [a]);
+  (0, b.ZP)(S), (0, v.J)(o, S);
   var T = t.id;
-  (0, b.s)(E);
+  (0, j.s)(E);
   let {
-    data: N,
+    data: A,
     refetch: C
-  } = (0, d.O)(T), k = i.useRef(N);
-  if (k.current = N, i.useEffect(() => {
+  } = (0, d.O)(T), k = i.useRef(A);
+  if (k.current = A, i.useEffect(() => {
       null !== k.current && C()
-    }, [C]), S)
+    }, [C]), I)
     if (x) return (0, r.jsx)(w.Z, {});
-    else return (0, r.jsx)(A.Z, {});
+    else return (0, r.jsx)(N.Z, {});
   return (0, r.jsxs)(r.Fragment, {
-    children: [o && y && (0, r.jsx)(D, {}), a.map((e, i) => (0, r.jsx)(_, {
+    children: [o && y && (0, r.jsx)(_, {}), a.map((e, i) => (0, r.jsx)(D, {
       widget: e,
       user: t,
       guildId: n,
@@ -130,7 +130,7 @@ function L(e) {
   })
 }
 
-function R(e) {
+function L(e) {
   var {
     user: t
   } = e, n = Z(e, ["user"]);
@@ -146,9 +146,9 @@ function R(e) {
       [C.hasToolbar]: s
     }),
     fade: true,
-    children: [(0, r.jsx)(S.Z, {
+    children: [(0, r.jsx)(I.Z, {
       scrollerRef: l
-    }), (0, r.jsx)(L, k({
+    }), (0, r.jsx)(R, k({
       user: t
     }, n))]
   })

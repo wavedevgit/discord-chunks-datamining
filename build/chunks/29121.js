@@ -2,25 +2,47 @@
 /** chunk id: 29121, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  To: () => a,
-  ag: () => o,
-  kd: () => i
+  To: () => s,
+  ag: () => l,
+  kd: () => o,
+  zQ: () => c
 });
-var Chunk388032 = require("./388032.jsx");
-let i = e => {
+var Chunk979554 = require("./979554.js"),
+  Chunk786040 = require("./786040.jsx"),
+  Chunk388032 = require("./388032.jsx");
+let o = e => {
     if (null == e) return "";
-    let t = r.intl.string(r.t.z7y5vL);
-    return "baseVariantName" in e && null != e.baseVariantName && e.variantLabel !== t ? r.intl.formatToPlainString(r.t.BZN5k5, {
+    let t = a.intl.string(a.t.z7y5vL);
+    return "baseVariantName" in e && null != e.baseVariantName && e.variantLabel !== t ? a.intl.formatToPlainString(a.t.BZN5k5, {
       baseVariantName: e.baseVariantName,
       variantLabel: e.variantLabel
     }) : e.name
   },
-  a = e => null == e ? "" : "baseVariantName" in e && null != e.baseVariantName ? e.baseVariantName : null != e.variants && e.variants.length > 0 ? e.variants[0].baseVariantName : e.name,
-  o = e => {
+  s = e => null == e ? "" : "baseVariantName" in e && null != e.baseVariantName ? e.baseVariantName : null != e.variants && e.variants.length > 0 ? e.variants[0].baseVariantName : e.name,
+  l = e => {
     if (null == e) return "";
-    let t = r.intl.string(r.t.z7y5vL);
-    return null != e.baseVariantName && e.variantLabel !== t ? r.intl.formatToPlainString(r.t.BZN5k5, {
+    let t = a.intl.string(a.t.z7y5vL);
+    return null != e.baseVariantName && e.variantLabel !== t ? a.intl.formatToPlainString(a.t.BZN5k5, {
       baseVariantName: e.baseVariantName,
       variantLabel: e.variantLabel
     }) : e.name
+  },
+  c = e => {
+    let t = s(e);
+    switch ((0, i.rC)(e)) {
+      case r.Z.AVATAR_DECORATION:
+        return a.intl.formatToPlainString(a.t.lvBzLi, {
+          product: t
+        });
+      case r.Z.PROFILE_EFFECT:
+        return a.intl.formatToPlainString(a.t.eR7moK, {
+          product: t
+        });
+      case r.Z.NAMEPLATE:
+        return a.intl.formatToPlainString(a.t.YFOwHh, {
+          product: t
+        });
+      default:
+        return t
+    }
   }

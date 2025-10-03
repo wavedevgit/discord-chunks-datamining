@@ -1,25 +1,25 @@
-/** Chunk was on 40849 **/
+/** Chunk was on 18539 **/
 /** chunk id: 607550, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => o
+  Z: () => l
 });
 var Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk960048 = require("./960048.js");
-let a = {},
+let o = {},
   u = () => ({
     data: null,
     status: "not_loaded"
   });
 
-function s(e) {
+function a(e) {
   var t;
-  return null != (t = a[e]) ? t : a[e] = u()
+  return null != (t = o[e]) ? t : o[e] = u()
 }
 class c extends Chunk442837.ZP.Store {
   get(e) {
     var t;
-    return null != (t = a[e]) ? t : u()
+    return null != (t = o[e]) ? t : u()
   }
   getWishlist(e) {
     return this.get(e).data
@@ -45,51 +45,63 @@ class c extends Chunk442837.ZP.Store {
     return this.get(e).error
   }
 }
-let o = new c(Chunk570140.Z, {
+let l = new c(Chunk570140.Z, {
   WISHLIST_FETCH_START: function(e) {
     let {
       wishlistId: t
-    } = e, r = s(t);
+    } = e, r = a(t);
     r.status = "fetching", r.error = true
   },
   WISHLIST_FETCH_SUCCESS: function(e) {
     let {
       wishlistId: t,
       wishlistData: r
-    } = e, n = s(t);
+    } = e, n = a(t);
     n.data = r, n.status = "success", n.error = true
   },
   WISHLIST_FETCH_FAILURE: function(e) {
     let {
       wishlistId: t,
       error: r
-    } = e, n = s(t);
+    } = e, n = a(t);
     n.status = "error", n.error = r
   },
   WISHLIST_ADD_SKU_SUCCESS: function(e) {
     let {
       wishlistId: t,
       wishlistData: r
-    } = e, n = s(t);
+    } = e, n = a(t);
     n.data = r, n.status = "success", n.error = true
   },
   WISHLIST_ADD_SKU_FAILURE: function(e) {
     let {
       error: t
     } = e;
-    i.Z.captureException(t)
+    s.Z.captureException(t)
   },
   WISHLIST_REMOVE_SKU_SUCCESS: function(e) {
     let {
       wishlistId: t,
       wishlistData: r
-    } = e, n = s(t);
+    } = e, n = a(t);
     n.data = r, n.status = "success", n.error = true
   },
   WISHLIST_REMOVE_SKU_FAILURE: function(e) {
     let {
       error: t
     } = e;
-    i.Z.captureException(t)
+    s.Z.captureException(t)
+  },
+  WISHLIST_UPDATE_VISIBILITY_SUCCESS: function(e) {
+    let {
+      wishlistId: t
+    } = e, r = a(t);
+    r.status = "success", r.error = true
+  },
+  WISHLIST_UPDATE_VISIBILITY_FAILURE: function(e) {
+    let {
+      error: t
+    } = e;
+    s.Z.captureException(t)
   }
 })

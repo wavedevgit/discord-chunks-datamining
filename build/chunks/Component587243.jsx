@@ -1,4 +1,4 @@
-/** Chunk was on 51711 **/
+/** Chunk was on 61222 **/
 /** chunk id: 587243, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   F: () => j,
@@ -169,17 +169,17 @@ function _(e) {
     status: p.Skl.IDLE,
     currentStatus: e,
     description: _(p.Skl.IDLE)
-  }), S = v({
+  }), N = v({
     status: p.Skl.DND,
     currentStatus: e,
     description: _(p.Skl.DND)
-  }), N = v({
+  }), S = v({
     status: p.Skl.INVISIBLE,
     currentStatus: e,
     description: _(p.Skl.INVISIBLE)
   });
   return (0, a.jsxs)(a.Fragment, {
-    children: [C, (0, a.jsx)(i.Clw, {}, "menu-separator-statuses"), E, S, N, u || d ? (0, a.jsxs)(a.Fragment, {
+    children: [C, (0, a.jsx)(i.Clw, {}, "menu-separator-statuses"), E, N, S, u || d ? (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsx)(i.Clw, {}, "menu-separator-statuses"), (0, a.jsx)(i.sNh, {
         id: "quiet-mode",
         "aria-label": "focus mode",

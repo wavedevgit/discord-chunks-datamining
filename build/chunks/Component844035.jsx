@@ -2,12 +2,12 @@
 /** chunk id: 844035, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => E
+  Z: () => S
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk622535 = require("./622535.js"),
   Chunk481060 = require("./481060.js"),
   Chunk100527 = require("./100527.js"),
@@ -19,61 +19,62 @@ var Chunk951288 = require("./951288.js"),
   Chunk558261 = require("./558261.jsx"),
   Chunk819882 = require("./819882.jsx"),
   Chunk786040 = require("./786040.jsx"),
+  Chunk29121 = require("./29121.js"),
   Chunk215023 = require("./215023.js"),
   Chunk217726 = require("./217726.js");
-let E = e => {
+let S = e => {
   let {
     product: t,
     variantSwitcher: n,
     selectedVariantIndex: a
-  } = e, E = (0, u.Nd)(), v = null == E ? true : E.tab, S = l.useRef(null), {
-    handleCardVisibilityChange: x
-  } = (0, d.E)(t.skuId, v === m.AW.CATALOG ? "full" : v), O = (0, h.J7)(t, c.Z.COLLECTIBLES_SHOP_CARD);
-  return (0, r.jsx)(s.$, {
-    innerRef: S,
-    onChange: x,
+  } = e, S = (0, u.Nd)(), v = null == S ? true : S.tab, x = (0, m.zQ)(t), O = l.useRef(null), {
+    handleCardVisibilityChange: T
+  } = (0, d.E)(t.skuId, v === b.AW.CATALOG ? "full" : v), y = (0, h.J7)(t, c.Z.COLLECTIBLES_SHOP_CARD);
+  return (0, r.jsx)(i.$, {
+    innerRef: O,
+    onChange: T,
     threshold: 0,
     children: (0, r.jsx)("div", {
-      className: b.baseProductCardHoverContainer,
+      className: E.baseProductCardHoverContainer,
       children: (0, r.jsx)(o.kL8, {
-        ref: S,
-        onClick: O,
-        "aria-label": (0, h.NT)(t),
-        className: b.baseProductCardContainer,
+        ref: O,
+        onClick: y,
+        "aria-label": x,
+        className: E.baseProductCardContainer,
         children: (0, r.jsxs)("div", {
-          className: b.baseProductCardContentContainer,
+          className: E.baseProductCardContentContainer,
           children: [(0, r.jsx)(g.Z, {
             product: t
           }), (0, r.jsxs)("div", {
-            className: b.innerContainer,
+            className: E.innerContainer,
             children: [(0, r.jsxs)("div", {
-              className: i()(b.baseProductCardDetailsContainer, {
-                [b.hasVariantSwitcher]: null != n
+              className: s()(E.baseProductCardDetailsContainer, {
+                [E.hasVariantSwitcher]: null != n
               }),
               children: [(0, r.jsx)(p.Z, {
                 product: t
               }), null != n && (0, r.jsx)("div", {
-                className: b.hoveredVariantSwitcher,
+                className: E.hoveredVariantSwitcher,
                 children: n
               })]
             }), (0, r.jsxs)("div", {
-              className: b.baseProductCardFooter,
+              className: E.baseProductCardFooter,
               children: [(0, r.jsx)(f.Z, {
                 product: t
               }), n]
             })]
           }), (0, r.jsx)("div", {
-            className: b.innerHover,
+            className: E.innerHover,
             children: (0, r.jsxs)(o.hE2, {
               wrap: false,
               fullWidth: true,
               children: [(0, r.jsx)(C.Z, {
                 product: t,
-                cardRef: S,
+                cardRef: O,
                 selectedVariantIndex: a
               }), (0, r.jsx)(_.Z, {
                 product: t,
-                cardRef: S,
+                cardRef: O,
                 selectedVariantIndex: a
               })]
             })

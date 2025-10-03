@@ -15,11 +15,11 @@ function c(e) {
   var t, n, {
       children: i,
       className: c,
-      innerClassName: u,
-      onChange: d,
+      innerClassName: d,
+      onChange: u,
       "aria-label": p,
-      "aria-describedby": f,
-      filters: _,
+      "aria-describedby": _,
+      filters: f,
       multiple: v = false,
       disabled: h = false,
       submitting: g = false
@@ -75,15 +75,15 @@ function c(e) {
       "aria-disabled": h,
       children: [(0, r.jsx)("span", {
         "aria-hidden": true,
-        className: u,
+        className: d,
         children: i
       }), (0, r.jsx)(s.Z, {
         tabIndex: 0,
-        onChange: d,
-        filters: _,
+        onChange: u,
+        filters: f,
         multiple: v,
         "aria-label": p,
-        "aria-describedby": f,
+        "aria-describedby": _,
         disabled: h
       })]
     })

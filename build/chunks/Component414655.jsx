@@ -1,7 +1,7 @@
 /** Chunk was on 56848 **/
 /** chunk id: 414655, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => j
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,28 +20,28 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk10094 = require("./10094.js");
 
-function b(e) {
+function j(e) {
   let {
     profileOwner: t
   } = e, {
     defaultWishlistId: n,
-    currentUser: b
+    currentUser: j
   } = (0, l.cj)([g.Z, f.default], () => ({
     defaultWishlistId: g.Z.getFirstWishlistId(t.id),
     currentUser: f.default.getCurrentUser()
   })), {
-    analyticsLocations: j
-  } = (0, c.ZP)(), O = (null == b ? true : b.id) === t.id, x = false === t.nsfwAllowed, {
+    analyticsLocations: b
+  } = (0, c.ZP)(), O = (null == j ? true : j.id) === t.id, x = false === t.nsfwAllowed, {
     wishlist: P,
-    error: S
-  } = (0, d.k)(n), I = i.useCallback(() => {
+    error: I
+  } = (0, d.k)(n), S = i.useCallback(() => {
     (0, a.pT)(), (0, u.mK)({
-      analyticsLocations: j,
+      analyticsLocations: b,
       analyticsSource: o.Z.USER_PROFILE_WISHLIST,
       openInLayer: false
     })
-  }, [j]);
-  return null != S ? null : null == P || 0 === P.items.length ? (0, r.jsx)(p.F, {
+  }, [b]);
+  return null != I ? null : null == P || 0 === P.items.length ? (0, r.jsx)(p.F, {
     fade: true,
     children: (0, r.jsxs)("div", {
       className: y.emptyStateContainer,
@@ -61,7 +61,7 @@ function b(e) {
         size: "sm",
         icon: s.EOn,
         text: v.intl.string(v.t.ZbS4QE),
-        onClick: I
+        onClick: S
       })]
     })
   }) : (0, r.jsxs)(p.F, {
@@ -121,16 +121,18 @@ function b(e) {
           size: "sm",
           icon: s.qJs,
           text: v.intl.string(v.t.SDUwMz),
-          onClick: I
+          onClick: S
         }), (0, r.jsx)(m.Z, {
-          isOwner: O
+          isOwner: O,
+          userId: t.id,
+          wishlistId: P.id
         })]
       }) : (0, r.jsx)(s.zxk, {
         variant: "secondary",
         size: "sm",
         icon: s.EOn,
         text: v.intl.string(v.t["i/yzHh"]),
-        onClick: I
+        onClick: S
       })]
     }), (0, r.jsx)(h.Z, {
       items: P.items,

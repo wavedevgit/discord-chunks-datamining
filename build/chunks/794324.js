@@ -1,12 +1,11 @@
-/** Chunk was on 48785 **/
+/** Chunk was on 35791 **/
 /** chunk id: 794324, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Oi: () => d,
   YG: () => u,
   hr: () => c,
-  kc: () => p,
-  mB: () => m
+  kc: () => m,
+  mB: () => p
 });
 var Chunk647438 = require("./647438.js"),
   Chunk264181 = require("./264181.js"),
@@ -49,7 +48,7 @@ let c = e => {
       catalogBannerAnimated: null != i ? i : null == (n = e.catalogBannerAsset) ? true : n.animated
     }
   },
-  p = e => {
+  m = e => {
     let t = (0, l.zL)(o.jE.PDP_BACKGROUND);
     if (null != t) return t;
     let n = e.pdpBg;
@@ -58,7 +57,7 @@ let c = e => {
       format: "jpg"
     })
   },
-  m = e => {
+  p = e => {
     let t = (0, l.zL)(o.jE.SHOP_BUTTON_BG_HOVER),
       n = (0, l.zL)(o.jE.SHOP_BUTTON_BG_HOVER_DARK),
       a = (0, l.zL)(o.jE.SHOP_BUTTON_BG_HOVER_LIGHT),
@@ -67,20 +66,20 @@ let c = e => {
       u = (0, l.zL)(o.jE.SHOP_BUTTON_BG_RESTING_LIGHT),
       d = (0, l.zL)(o.jE.COACHTIP_AVATAR);
     return r.useMemo(() => {
-      var r, l, o, p, m;
-      let f = [t, n, a, s, c, u, d].some(e => null != e);
+      var r, l, o, m, p;
+      let v = [t, n, a, s, c, u, d].some(e => null != e);
       if ((null == e ? true : e.type) === i.Z.COACHMARK) return {
         hasPreviewAssets: false
       };
-      let v = null == e || null == (r = e.refTargetBackground) ? true : r.asset,
-        h = null == v ? true : v.resting,
-        b = null == v ? true : v.hovered;
+      let f = null == e || null == (r = e.refTargetBackground) ? true : r.asset,
+        h = null == f ? true : f.resting,
+        _ = null == f ? true : f.hovered;
       return {
-        hasPreviewAssets: f,
-        buttonBGHoverDark: null != (l = null != n ? n : t) ? l : null == b ? true : b.dark,
-        buttonBGHoverLight: null != (o = null != a ? a : t) ? o : null == b ? true : b.light,
-        buttonBGRestingDark: null != (p = null != c ? c : s) ? p : null == h ? true : h.dark,
-        buttonBGRestingLight: null != (m = null != u ? u : s) ? m : null == h ? true : h.light,
+        hasPreviewAssets: v,
+        buttonBGHoverDark: null != (l = null != n ? n : t) ? l : null == _ ? true : _.dark,
+        buttonBGHoverLight: null != (o = null != a ? a : t) ? o : null == _ ? true : _.light,
+        buttonBGRestingDark: null != (m = null != c ? c : s) ? m : null == h ? true : h.dark,
+        buttonBGRestingLight: null != (p = null != u ? u : s) ? p : null == h ? true : h.light,
         coachtipAvatar: null != d ? d : null == e ? true : e.avatar
       }
     }, [t, n, a, s, c, u, d, e])

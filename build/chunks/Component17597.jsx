@@ -1,4 +1,4 @@
-/** Chunk was on 51711 **/
+/** Chunk was on 61222 **/
 /** chunk id: 17597, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => C
@@ -29,8 +29,8 @@ let C = function(e) {
     entryPoint: n,
     onClose: C,
     onComplete: E,
-    dismissable: S
-  } = e, [N, T] = r.useState(s.z.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), O = r.useRef(N), [P, k] = (0, c.US)([N], true, true), I = r.useMemo(() => (0, i.Z)(), []), w = r.useRef(false);
+    dismissable: N
+  } = e, [S, T] = r.useState(s.z.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), O = r.useRef(S), [P, k] = (0, c.US)([S], true, true), I = r.useMemo(() => (0, i.Z)(), []), w = r.useRef(false);
   r.useEffect(() => {
     O.current = P
   }, [P]);
@@ -55,7 +55,7 @@ let C = function(e) {
     transitionState: t,
     onClose: C,
     gradientColor: "blue",
-    dismissable: S,
+    dismissable: N,
     graphic: {
       type: "image",
       src: y.Z

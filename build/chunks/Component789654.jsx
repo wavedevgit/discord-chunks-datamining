@@ -1,8 +1,8 @@
-/** Chunk was on 51711 **/
+/** Chunk was on 61222 **/
 /** chunk id: 789654, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => T,
-  q: () => N
+  q: () => S
 }), require("./804061.js"), require("./704826.js"), require("./35282.js"), require("./388685.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./410992.js"), require("./227481.js"), require("./730884.js"), require("./20464.js"), require("./341884.js"), require("./364341.js"), require("./629680.js"), require("./505025.js"), require("./918970.js"), require("./121784.js"), require("./644351.js"), require("./146733.js"), require("./361932.js"), require("./187205.js"), require("./49124.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -62,11 +62,11 @@ function E(e) {
   return e.replaceAll(/_|\./g, "-").toLowerCase()
 }
 
-function S(e) {
+function N(e) {
   return e.replaceAll(/_|-/g, ".").toLowerCase()
 }
 
-function N(e, t) {
+function S(e, t) {
   let n = new Blob([t], {
       type: "application/json"
     }),
@@ -85,7 +85,7 @@ function T() {
     {
       semanticColorOverrides: g,
       rawColorOverrides: C,
-      tab: S,
+      tab: N,
       scales: T
     } = exports,
     P = Chunk647438.useMemo(() => {
@@ -144,7 +144,7 @@ function T() {
         className: Chunk416825.tabBar,
         type: "top",
         look: "brand",
-        selectedItem: S,
+        selectedItem: N,
         onItemSelect: e => {
           n(t => y(_({}, t), {
             tab: e
@@ -208,21 +208,21 @@ function T() {
           color: Chunk755721.zx.Colors.TRANSPARENT,
           look: Chunk755721.zx.Looks.BLANK,
           onClick: () => {
-            N("color-overrides", JSON.stringify(_({}, exports), null, 2))
+            S("color-overrides", JSON.stringify(_({}, exports), null, 2))
           },
           children: (0, Chunk951288.jsx)(Chunk481060._8t, {})
         })]
       })]
     }), (0, Chunk951288.jsx)("div", {
       className: Chunk416825.tab,
-      hidden: S !== Chunk500949.H8.TOKENS,
+      hidden: N !== Chunk500949.H8.TOKENS,
       children: (0, Chunk951288.jsx)(O, {
         state: exports,
         setState: require
       })
     }), (0, Chunk951288.jsx)("div", {
       className: Chunk416825.tab,
-      hidden: S !== Chunk500949.H8.PALETTES,
+      hidden: N !== Chunk500949.H8.PALETTES,
       children: (0, Chunk951288.jsx)(Chunk58755.P, {
         state: exports,
         setState: require
@@ -321,12 +321,12 @@ function O(e) {
       children: Object.entries(l).map(e => {
         let [t, r] = e, l = r.colors[i];
         if (null == l) return null;
-        let s = S(l.color),
+        let s = N(l.color),
           c = l.opacity,
           d = v.jC[t][i];
         return (0, a.jsx)(P, {
           title: E(t),
-          subtitle: 1 === d.opacity ? S(d.raw) : "".concat(S(d.raw), " @ ").concat(100 * d.opacity, "%"),
+          subtitle: 1 === d.opacity ? N(d.raw) : "".concat(N(d.raw), " @ ").concat(100 * d.opacity, "%"),
           highlight: r.highlight,
           onReset: () => {
             n(e => {

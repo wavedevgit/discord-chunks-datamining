@@ -1,4 +1,4 @@
-/** Chunk was on 51711 **/
+/** Chunk was on 61222 **/
 /** chunk id: 107606, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -25,8 +25,8 @@ function g() {
   (0, Chunk223143.mw)();
   let C = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
     E = Chunk695346.L1.useSetting(),
-    S = (0, Chunk442837.e7)([Chunk210887.Z], () => Chunk210887.Z.theme),
-    N = E.backgroundGradientPresetId,
+    N = (0, Chunk442837.e7)([Chunk210887.Z], () => Chunk210887.Z.theme),
+    S = E.backgroundGradientPresetId,
     T = (0, Chunk442837.e7)([Chunk1870.Z], () => Chunk1870.Z.purchases),
     O = (0, Chunk884697.Ad)(T),
     P = (0, Chunk884697.jT)(T),
@@ -70,10 +70,10 @@ function g() {
         children: "Current Settings"
       }), (0, Chunk951288.jsxs)(Chunk481060.Text, {
         variant: "text-md/normal",
-        children: ["Theme: ", S]
+        children: ["Theme: ", N]
       }), (0, Chunk951288.jsxs)(Chunk481060.Text, {
         variant: "text-md/normal",
-        children: ["Client Theme ID:", " ", null != N ? null == (g = Chunk469115.qt[N]) ? true : g.getName() : "None"]
+        children: ["Client Theme ID:", " ", null != S ? null == (g = Chunk469115.qt[S]) ? true : g.getName() : "None"]
       }), (0, Chunk951288.jsxs)(Chunk481060.Text, {
         variant: "text-md/normal",
         children: ["Avatar Decoration: ", null != (_ = null == A ? true : A.name) ? _ : "None"]

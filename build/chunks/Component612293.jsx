@@ -1,8 +1,7 @@
-/** Chunk was on 10352 **/
-/** chunk id: 612293, original params: e,t,r (module,exports,require) **/
-"use strict";
+/** Chunk was on 68691 **/
+/** chunk id: 612293, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => j
+  default: () => S
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -30,127 +29,127 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk886020 = require("./886020.js");
 
-function O(e) {
-  var t, r;
+function k(e) {
+  var t, n;
   let {
     currentUser: c,
     categories: _,
-    purchases: g,
-    analyticsLocations: I,
-    onClose: w,
-    guildId: O,
-    initialSelectedNameplate: j
-  } = e, T = (0, a.e7)([b.ZP], () => null != O && null != c ? b.ZP.getMember(O, c.id) : null), Z = null != T ? null == T || null == (t = T.collectibles) ? true : t.nameplate : null == c || null == (r = c.collectibles) ? true : r.nameplate, {
-    pendingNameplate: A
-  } = (0, f.Zx)(c, O), [k, L] = (0, i.useState)(() => {
+    purchases: x,
+    analyticsLocations: C,
+    onClose: P,
+    guildId: k,
+    initialSelectedNameplate: S
+  } = e, A = (0, a.e7)([b.ZP], () => null != k && null != c ? b.ZP.getMember(k, c.id) : null), T = null != A ? null == A || null == (t = A.collectibles) ? true : t.nameplate : null == c || null == (n = c.collectibles) ? true : n.nameplate, {
+    pendingNameplate: B
+  } = (0, g.Zx)(c, k), [Z, N] = (0, i.useState)(() => {
     var e;
-    return null != j ? j : true !== A ? A : null == Z ? null : null != (e = (0, u.Y)(g, _).find(e => {
+    return null != S ? S : true !== B ? B : null == T ? null : null != (e = (0, u.Y)(x, _).find(e => {
       let {
         skuId: t
       } = e;
-      return t === Z.skuId
+      return t === T.skuId
     })) ? e : null
   }), {
-    product: D,
-    purchase: N
-  } = (0, p.Z)(null == k ? true : k.skuId), M = x.ZP.canUseCollectibles(c), U = true === A ? (null == k ? true : k.skuId) === (null == Z ? true : Z.skuId) : (null == k ? true : k.skuId) === (null == A ? true : A.skuId), B = (0, i.useCallback)(e => {
-    w(), (0, d.mK)({
-      analyticsLocations: I,
+    product: O,
+    purchase: D
+  } = (0, p.Z)(null == Z ? true : Z.skuId), L = f.ZP.canUseCollectibles(c), M = true === B ? (null == Z ? true : Z.skuId) === (null == T ? true : T.skuId) : (null == Z ? true : Z.skuId) === (null == B ? true : B.skuId), U = (0, i.useCallback)(e => {
+    P(), (0, d.mK)({
+      analyticsLocations: C,
       analyticsSource: s.Z.EDIT_NAMEPLATE_MODAL,
       initialProductSkuId: e
     })
-  }, [I, w]);
-  return (0, n.jsxs)(n.Fragment, {
-    children: [(0, n.jsxs)(l.xBx, {
+  }, [C, P]);
+  return (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsxs)(l.xBx, {
       "data-migration-pending": true,
       separator: false,
-      className: E.header,
-      children: [(0, n.jsx)(l.X6q, {
+      className: j.header,
+      children: [(0, r.jsx)(l.X6q, {
         variant: "heading-lg/semibold",
-        children: P.intl.string(P.t.BwdeMz)
-      }), (0, n.jsx)(l.olH, {
+        children: E.intl.string(E.t.BwdeMz)
+      }), (0, r.jsx)(l.olH, {
         "data-migration-pending": true,
-        className: E.closeButton,
-        onClick: w
+        className: j.closeButton,
+        onClick: P
       })]
-    }), (0, n.jsxs)(l.hzk, {
+    }), (0, r.jsxs)(l.hzk, {
       "data-migration-pending": true,
-      className: E.content,
+      className: j.content,
       scrollbarType: "none",
-      children: [(0, n.jsx)(C.Z, {
+      children: [(0, r.jsx)(I.Z, {
         currentUser: c,
-        selectedNameplate: k,
-        guildId: O,
-        onSelect: L,
-        onOpenShop: B
-      }), (0, n.jsx)(S.Z, {
+        selectedNameplate: Z,
+        guildId: k,
+        onSelect: N,
+        onOpenShop: U
+      }), (0, r.jsx)(w.Z, {
         user: c,
-        guildId: O,
-        selectedNameplate: k
+        guildId: k,
+        selectedNameplate: Z
       })]
-    }), (0, n.jsxs)(l.mzw, {
+    }), (0, r.jsxs)(l.mzw, {
       "data-migration-pending": true,
-      className: E.modalFooter,
-      children: [null != N && (!(0, u.qS)(N) || M) || null === k ? (0, n.jsx)(l.zxk, {
+      className: j.modalFooter,
+      children: [null != D && (!(0, u.qS)(D) || L) || null === Z ? (0, r.jsx)(l.zxk, {
         variant: "primary",
-        text: P.intl.string(P.t.Jh8fJy),
+        text: E.intl.string(E.t.Jh8fJy),
         onClick: () => {
-          null != O ? (0, m.RH)(k) : (0, o.Rx)(k), w()
+          null != k ? (0, m.RH)(Z) : (0, o.Rx)(Z), P()
         },
-        disabled: U
-      }) : null == N && (M || !(0, u.G1)(D)) ? (0, n.jsx)(l.zxk, {
+        disabled: M
+      }) : null == D && (L || !(0, u.G1)(O)) ? (0, r.jsx)(l.zxk, {
         variant: "primary",
-        onClick: () => B(null == D ? true : D.skuId),
-        text: P.intl.string(P.t.fYfGgI)
-      }) : (0, n.jsx)(v.Z, {
+        onClick: () => U(null == O ? true : O.skuId),
+        text: E.intl.string(E.t.fYfGgI)
+      }) : (0, r.jsx)(v.Z, {
         subscriptionTier: y.Si.TIER_2,
-        showGradient: !M,
+        showGradient: !L,
         textOptions: {
-          textOverride: x.ZP.isPremium(c) ? P.intl.string(P.t.KXLX7u) : M ? P.intl.string(P.t.mr4K7O) : P.intl.string(P.t.pj0XBA)
+          textOverride: f.ZP.isPremium(c) ? E.intl.string(E.t.KXLX7u) : L ? E.intl.string(E.t.mr4K7O) : E.intl.string(E.t.pj0XBA)
         }
-      }), !M && (0, u.G1)(D) ? (0, n.jsx)(h.Z, {
-        product: D,
-        onClose: w
-      }) : (0, n.jsx)(l.zxk, {
+      }), !L && (0, u.G1)(O) ? (0, r.jsx)(h.Z, {
+        product: O,
+        onClose: P
+      }) : (0, r.jsx)(l.zxk, {
         variant: "secondary",
-        text: P.intl.string(P.t["ETE/oK"]),
-        onClick: w
+        text: E.intl.string(E.t["ETE/oK"]),
+        onClick: P
       })]
     })]
   })
 }
 
-function j(e) {
+function S(e) {
   let {
     transitionState: t,
-    analyticsLocations: r,
+    analyticsLocations: n,
     onClose: o,
     guildId: d,
     initialSelectedNameplate: u
-  } = e, p = (0, a.e7)([g.default], () => g.default.getCurrentUser()), {
+  } = e, p = (0, a.e7)([x.default], () => x.default.getCurrentUser()), {
     analyticsLocations: m
-  } = (0, c.ZP)(r, s.Z.EDIT_NAMEPLATE_MODAL), {
+  } = (0, c.ZP)(n, s.Z.EDIT_NAMEPLATE_MODAL), {
     categories: h,
     purchases: v,
-    isFetchingCategories: f,
+    isFetchingCategories: g,
     isFetchingPurchases: b
-  } = (0, _.ZP)(), x = f || b && 0 === v.size;
+  } = (0, _.ZP)(), f = g || b && 0 === v.size;
   return ((0, i.useEffect)(() => {
-    I.default.track(w.rMx.OPEN_MODAL, {
-      type: w.jXE.NAMEPLATE_CUSTOMIZATION,
+    C.default.track(P.rMx.OPEN_MODAL, {
+      type: P.jXE.NAMEPLATE_CUSTOMIZATION,
       location_stack: m
     })
-  }, [m]), null == p) ? null : (0, n.jsx)(c.Gt, {
+  }, [m]), null == p) ? null : (0, r.jsx)(c.Gt, {
     value: m,
-    children: (0, n.jsx)(l.Y0X, {
+    children: (0, r.jsx)(l.Y0X, {
       transitionState: t,
-      size: x ? l.CgR.DYNAMIC : l.CgR.MEDIUM,
+      size: f ? l.CgR.DYNAMIC : l.CgR.MEDIUM,
       parentComponent: "NameplateModal",
       "data-migration-pending": true,
-      children: x ? (0, n.jsx)(l.$jN, {
-        className: E.spinner,
+      children: f ? (0, r.jsx)(l.$jN, {
+        className: j.spinner,
         type: l.$jN.Type.SPINNING_CIRCLE
-      }) : (0, n.jsx)(O, {
+      }) : (0, r.jsx)(k, {
         currentUser: p,
         categories: h,
         purchases: v,

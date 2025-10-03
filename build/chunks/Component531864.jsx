@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk979554 = require("./979554.js"),
   Chunk876917 = require("./876917.jsx"),
   Chunk597688 = require("./597688.js"),
@@ -108,23 +108,23 @@ let p = {
       }, d.lb)
     }, [n]), (0, r.jsx)("div", {
       style: a,
-      className: i()(g.jumbleWrapper, {
+      className: s()(g.jumbleWrapper, {
         [g.peaking]: t,
         [g.transitioned]: C
       }),
       children: f.map((e, t) => {
         var l, a;
         let {
-          top: i,
+          top: s,
           left: c,
           rotation: f,
           size: C,
           skuId: _
-        } = e, m = null == (l = h[t]) ? true : l.items[0], b = null == (a = h[t]) ? true : a.type, E = b === s.Z.AVATAR_DECORATION ? 384 : 512;
+        } = e, m = null == (l = h[t]) ? true : l.items[0], b = null == (a = h[t]) ? true : a.type, E = b === i.Z.AVATAR_DECORATION ? 384 : 512;
         return (0, r.jsxs)("div", {
           className: g.asset,
           style: {
-            top: n ? -p - E : i,
+            top: n ? -p - E : s,
             left: n ? "".concat(c - 75 - 350 * Math.random()) : c,
             transform: "rotate(".concat(f, "deg)"),
             height: C.y,
@@ -132,9 +132,9 @@ let p = {
             transitionDelay: "".concat(Math.random() / 3, "s"),
             transitionDuration: "".concat(d.lb - 200 * Math.random(), "ms")
           },
-          children: [null != m && b === s.Z.AVATAR_DECORATION && (0, r.jsx)(u.R, {
+          children: [null != m && b === i.Z.AVATAR_DECORATION && (0, r.jsx)(u.R, {
             item: m
-          }), null != m && b === s.Z.PROFILE_EFFECT && (0, r.jsx)(o.Z, {
+          }), null != m && b === i.Z.PROFILE_EFFECT && (0, r.jsx)(o.Z, {
             skuId: m.skuId,
             isPurchased: false,
             isHovering: true

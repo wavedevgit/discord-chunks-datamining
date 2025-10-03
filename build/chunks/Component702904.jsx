@@ -1,4 +1,4 @@
-/** Chunk was on 51711 **/
+/** Chunk was on 61222 **/
 /** chunk id: 702904, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -530,7 +530,7 @@ function g() {
       url: "/debug/payment-source",
       rejectWithError: false
     }), await (0, Chunk355467.tZ)()
-  }, S = async () => {
+  }, N = async () => {
     await Chunk544891.tn.del({
       url: "/debug/rate-limits",
       rejectWithError: false
@@ -586,7 +586,7 @@ function g() {
           variant: "primary",
           size: "sm",
           text: "Reset API Rate limits and reload app",
-          onClick: S
+          onClick: N
         })]
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         style: {

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk622535 = require("./622535.js"),
   Chunk481060 = require("./481060.js"),
   Chunk63063 = require("./63063.js"),
@@ -23,9 +23,9 @@ let _ = e => {
     wideBannerBlock: _,
     handleTransition: h,
     tab: m
-  } = e, b = null == (t = u.Z.getCategoryByStoreListingId(_.categoryStoreListingId)) ? true : t.skuId, E = l.useRef(null), v = l.useRef(null), [S, x] = l.useState();
+  } = e, b = null == (t = u.Z.getCategoryByStoreListingId(_.categoryStoreListingId)) ? true : t.skuId, E = l.useRef(null), S = l.useRef(null), [v, x] = l.useState();
   l.useEffect(() => {
-    let e = v.current;
+    let e = S.current;
     if (null == e) return;
     let t = () => {
       e.naturalWidth > 0 && e.naturalHeight > 0 && x(1080 * (e.naturalHeight / e.naturalWidth))
@@ -41,34 +41,34 @@ let _ = e => {
     y = _.bannerUrl;
   if (null == y) return null;
   let L = m === g.AW.ORBS;
-  return (0, r.jsx)(s.$, {
+  return (0, r.jsx)(i.$, {
     innerRef: E,
     onChange: T,
     threshold: 0,
     children: (0, r.jsxs)("div", {
       ref: E,
-      className: i()(C.row, C.between, C.bannerBlockContainer, C.centeredSection, {
+      className: s()(C.row, C.between, C.bannerBlockContainer, C.centeredSection, {
         [C.extraRounded]: L
       }),
       children: [(0, r.jsx)("div", {
-        className: i()(C.wideBannerBackgroundImg, {
+        className: s()(C.wideBannerBackgroundImg, {
           [C.extraRounded]: L
         }),
         children: (0, r.jsx)("img", {
-          ref: v,
+          ref: S,
           src: y,
           alt: _.title,
-          className: i()(C.wideBannerArt, {
+          className: s()(C.wideBannerArt, {
             [C.wideBannerArtOrbs]: L
           }),
           style: {
-            height: null != S ? "".concat(S, "px") : "auto"
+            height: null != v ? "".concat(v, "px") : "auto"
           }
         })
       }), (0, r.jsx)("div", {
         className: C.wideBannerContentContainer,
         style: {
-          maxHeight: null != S ? "".concat(S, "px") : "auto"
+          maxHeight: null != v ? "".concat(v, "px") : "auto"
         },
         children: (0, r.jsxs)("div", {
           className: C.wideBannerTextContainer,

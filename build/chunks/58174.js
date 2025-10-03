@@ -1,6 +1,5 @@
-/** Chunk was on 48785 **/
+/** Chunk was on 35791 **/
 /** chunk id: 58174, original params: e,t,n (module,exports,require) **/
-"use strict";
 module.exports = {
   container: "container_f284f6",
   nitroIcon: "nitroIcon_f284f6"

@@ -25,7 +25,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk66582 = require("./66582.js");
 
-function S(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -44,7 +44,7 @@ function S(e) {
   return e
 }
 
-function I(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -67,8 +67,8 @@ function w() {
       config: T
     } = (0, Chunk50130.G)(),
     {
-      token: A,
-      loading: N
+      token: N,
+      loading: A
     } = (0, Chunk491662.o)(null == T ? true : T.application_id),
     C = Chunk647438.useMemo(() => (null == T ? true : T.application_id) != null ? new Chunk931847.q({
       type: Chunk296009.l.APPLICATION,
@@ -87,19 +87,19 @@ function w() {
         let {
           default: e
         } = await require.e("38576").then(require.bind(require, 925170));
-        return n => (0, r.jsx)(e, I(S({}, n), {
+        return n => (0, r.jsx)(e, S(I({}, n), {
           trackUserProfileEditAction: t
         }))
       }, {
         stackingBehavior: "stack"
       })
     }, [exports]);
-  if (null == module || null == w || null == C || N) return (0, Chunk951288.jsx)("div", {
+  if (null == module || null == w || null == C || A) return (0, Chunk951288.jsx)("div", {
     className: Chunk66582.loading,
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {})
   });
-  if (null == A) return (0, Chunk951288.jsx)(Chunk795990.Z, {});
-  let _ = (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+  if (null == N) return (0, Chunk951288.jsx)(Chunk795990.Z, {});
+  let D = (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
     gap: 4,
     className: Chunk66582.header,
     children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
@@ -129,7 +129,7 @@ function w() {
             align: "center",
             children: [(0, r.jsx)(o.LZC, {
               size: 32
-            }), _, (0, r.jsx)(m.Z, {
+            }), D, (0, r.jsx)(m.Z, {
               user: e,
               widget: C,
               cta: (0, r.jsx)(E, {
@@ -142,7 +142,7 @@ function w() {
                 buttons: (0, r.jsxs)(r.Fragment, {
                   children: [(0, r.jsx)(o.ua7, {
                     text: x.intl.string(x.t.WAI6xs),
-                    children: e => (0, r.jsx)(o.Yd2, I(S({}, e), {
+                    children: e => (0, r.jsx)(o.Yd2, S(I({}, e), {
                       variant: "secondary",
                       size: "sm",
                       icon: o.Dio,
@@ -153,7 +153,7 @@ function w() {
                     }))
                   }), (0, r.jsx)(o.ua7, {
                     text: x.intl.string(x.t.lBG2s7),
-                    children: e => (0, r.jsx)(o.Yd2, I(S({}, e), {
+                    children: e => (0, r.jsx)(o.Yd2, S(I({}, e), {
                       variant: "primary",
                       size: "sm",
                       icon: o.kmB,
@@ -175,7 +175,7 @@ function w() {
             align: "center",
             children: [(0, r.jsx)(o.LZC, {
               size: 128
-            }), _, (0, r.jsx)(o.zxk, {
+            }), D, (0, r.jsx)(o.zxk, {
               icon: o.qJs,
               text: x.intl.string(x.t.lBG2s7),
               size: "md",

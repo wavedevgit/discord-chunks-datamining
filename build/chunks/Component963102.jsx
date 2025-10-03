@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk636977 = require("./636977.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -35,7 +35,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk421200 = require("./421200.js");
 
-function A(e) {
+function B(e) {
   let {
     tab: t,
     displayText: n,
@@ -45,19 +45,19 @@ function A(e) {
   return (0, r.jsx)(C.Z.Title, {
     onClick: () => a(t),
     wrapperClassName: N.tabWrapper,
-    className: i()(N.tab, {
+    className: s()(N.tab, {
       [N.selected]: l
     }),
     children: n
   })
 }
 
-function B(e) {
+function A(e) {
   let {
     tab: t,
     selected: n,
     displayText: a,
-    handleTransition: s
+    handleTransition: i
   } = e, [o, u] = l.useState(false), d = l.useRef(null), [g, _] = l.useState(0), h = l.useRef(false), m = e => {
     clearTimeout(g), _(setTimeout(() => {
       u(e)
@@ -84,7 +84,7 @@ function B(e) {
           closePopout: t
         } = e;
         return (0, r.jsx)(y.Z, {
-          handleTransition: s,
+          handleTransition: i,
           onClose: t
         })
       },
@@ -112,10 +112,10 @@ function B(e) {
           return e
         }({}, e), u = u = {
           ref: d,
-          onClick: () => s(t),
+          onClick: () => i(t),
           onKeyDown: b,
           wrapperClassName: N.tabWrapper,
-          className: i()(N.tab, {
+          className: s()(N.tab, {
             [N.selected]: n
           }),
           children: (0, r.jsxs)("span", {
@@ -150,7 +150,7 @@ function R(e) {
     onClose: a,
     selectedTab: p,
     handleTransition: f
-  } = e, y = (0, g.ZP)(), R = (0, o.e7)([S.default], () => S.default.getCurrentUser()), Z = (null == R ? true : R.isStaff()) || (null == R ? true : R.isStaffPersonal()) || false, {
+  } = e, y = (0, g.ZP)(), R = (0, o.e7)([v.default], () => v.default.getCurrentUser()), Z = (null == R ? true : R.isStaff()) || (null == R ? true : R.isStaffPersonal()) || false, {
     enabled: w
   } = (0, E.WX)({
     location: "collectibles_shop_header_bar"
@@ -175,7 +175,7 @@ function R(e) {
         sectionType: k.jXE.ORBS_BALANCE_MENU,
         ctaObject: k.qAy.CTA_TO_QUEST_HOME
       }), (0, _.navigateToQuestHome)({
-        fromContent: s.j.ORBS_BALANCE_MENU
+        fromContent: i.j.ORBS_BALANCE_MENU
       })
     }, [M, t, D]),
     U = (0, T.eN)("collectibles_shop_header_bar"),
@@ -190,7 +190,7 @@ function R(e) {
     theme: y,
     children: e => (0, r.jsxs)(C.Z, {
       disableDoubleClick: true,
-      className: i()(e, N.headerBar, {
+      className: s()(e, N.headerBar, {
         [N.fullscreenHeaderBar]: t
       }),
       innerClassname: w ? N.headerBarInner : true,
@@ -211,12 +211,12 @@ function R(e) {
             tab: t,
             displayText: n
           } = e;
-          return t === j.AW.CATALOG ? (0, r.jsx)(B, {
+          return t === j.AW.CATALOG ? (0, r.jsx)(A, {
             tab: t,
             selected: (0, j.RE)(p) || p === t,
             displayText: n,
             handleTransition: f
-          }, t) : (0, r.jsx)(A, {
+          }, t) : (0, r.jsx)(B, {
             tab: t,
             displayText: n,
             selected: p === t,
@@ -236,10 +236,10 @@ function R(e) {
             size: "xs",
             color: "currentColor"
           })
-        }), w && (0, r.jsx)(v.V9, {
+        }), w && (0, r.jsx)(S.V9, {
           anchorPillType: t ? "SHOP_FULLSCREEN" : "SHOP",
           analyticsPage: D,
-          cardAlignment: v.V9.CardAlignment.END,
+          cardAlignment: S.V9.CardAlignment.END,
           ctaText: P.intl.string(P.t.VC4Mq6),
           ctaOnClick: W,
           className: N.balanceWidgetMenu

@@ -1,7 +1,7 @@
 /** Chunk was on 93886 **/
 /** chunk id: 893999, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => d
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js");
 let i = new Map,
@@ -36,7 +36,7 @@ function c(e, t) {
   e !== o(t) && (i.set(t, e), s(t).forEach(t => t(e)))
 }
 
-function u() {
+function d() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : window,
     [t, n] = Chunk647438.useState(o(module));
   return Chunk647438.useEffect(() => {

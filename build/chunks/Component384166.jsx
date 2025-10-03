@@ -30,7 +30,7 @@ function O(e) {
   } = (0, f.KZ)(), [l, O] = i.useState(false), x = (0, o.Wu)([h.Z], () => {
     var e;
     return null != (e = h.Z.getSaveablePendingWidgets()) ? e : []
-  }), P = (0, o.Wu)([h.Z], () => h.Z.getChangedWidgets()), S = (0, o.Wu)([h.Z], () => h.Z.getRemovedWidgets()), I = (0, o.e7)([h.Z], () => h.Z.hasSaveablePendingChanges()), w = (0, o.e7)([h.Z], () => h.Z.isSubmitting), E = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), T = (0, c.Yzy)(I, {
+  }), P = (0, o.Wu)([h.Z], () => h.Z.getChangedWidgets()), I = (0, o.Wu)([h.Z], () => h.Z.getRemovedWidgets()), S = (0, o.e7)([h.Z], () => h.Z.hasSaveablePendingChanges()), w = (0, o.e7)([h.Z], () => h.Z.isSubmitting), E = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), T = (0, c.Yzy)(S, {
     from: {
       opacity: 0,
       y: 80 * !E
@@ -54,9 +54,9 @@ function O(e) {
       d.S.unsubscribe(y.CkL.EMPHASIZE_NOTICE, t), null !== e && clearTimeout(e)
     }
   }, []), i.useEffect(() => {
-    I && c.uvj.announce(b.intl.string(b.t["0Y/qkJ"]))
-  }, [I]);
-  let A = i.useCallback(async () => {
+    S && c.uvj.announce(j.intl.string(j.t["0Y/qkJ"]))
+  }, [S]);
+  let N = i.useCallback(async () => {
       try {
         await p.Z.savePendingWidgets(x)
       } catch (e) {
@@ -76,42 +76,42 @@ function O(e) {
           return e + (null != (r = null == (n = t.comment) ? true : n.length) ? r : 0)
         }, 0)), n(t)
       }
-      for (let e of S) n({
+      for (let e of I) n({
         widgetEdited: e.type,
         isWidgetRemoved: true
       })
-    }, [x, P, S, n]),
-    N = i.useCallback(() => {
+    }, [x, P, I, n]),
+    A = i.useCallback(() => {
       p.Z.clearPendingWidgets()
     }, []);
   return T((e, n) => n ? (0, r.jsx)(s.animated.div, {
     className: t,
     style: e,
     children: (0, r.jsxs)("section", {
-      className: a()(j.content, {
-        [j.emphasized]: l
+      className: a()(b.content, {
+        [b.emphasized]: l
       }),
-      "aria-label": b.intl.string(b.t["odDw+/"]),
+      "aria-label": j.intl.string(j.t["odDw+/"]),
       children: [(0, r.jsx)(c.Text, {
         variant: "text-md/medium",
         color: "text-primary",
-        className: j.message,
-        children: b.intl.string(b.t["/lQiX1"])
+        className: b.message,
+        children: j.intl.string(j.t["/lQiX1"])
       }), (0, r.jsxs)("div", {
-        className: j.actions,
+        className: b.actions,
         children: [(0, r.jsx)(c.zxk, {
           size: "sm",
           variant: "secondary",
-          text: b.intl.string(b.t.yBZMsb),
-          onClick: N,
-          disabled: !I || w
+          text: j.intl.string(j.t.yBZMsb),
+          onClick: A,
+          disabled: !S || w
         }), (0, r.jsx)(c.zxk, {
           size: "sm",
           variant: "primary",
-          text: b.intl.string(b.t.R3BPHx),
-          onClick: A,
+          text: j.intl.string(j.t.R3BPHx),
+          onClick: N,
           loading: w,
-          disabled: !I || w
+          disabled: !S || w
         })]
       })]
     })

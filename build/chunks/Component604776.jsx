@@ -1,4 +1,4 @@
-/** Chunk was on 51711 **/
+/** Chunk was on 61222 **/
 /** chunk id: 604776, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   D: () => v,
@@ -80,8 +80,8 @@ function _() {
   let [e, t] = Chunk647438.useState(false), [n, i] = Chunk647438.useState(Chunk314794.a.PREMIUM_TIER_2_1_HOUR), [u, g] = Chunk647438.useState([]), [_, y] = Chunk647438.useState([]), {
     refreshEntitlementList: C,
     grantFractionalPremium: E,
-    deleteFractionalPremium: S,
-    triggerNextEntitlementFulfillment: N,
+    deleteFractionalPremium: N,
+    triggerNextEntitlementFulfillment: S,
     entitlements: T,
     loading: O
   } = (0, Chunk232867.m)();
@@ -171,14 +171,14 @@ function _() {
               size: Chunk755721.zx.Sizes.TINY,
               color: Chunk755721.zx.Colors.PRIMARY,
               look: Chunk755721.zx.Looks.OUTLINED,
-              onClick: () => N(),
+              onClick: () => S(),
               children: "Run fulfillment"
             }), (0, Chunk951288.jsx)(Chunk755721.zx, {
               disabled: O,
               size: Chunk755721.zx.Sizes.TINY,
               color: Chunk755721.zx.Colors.RED,
               look: Chunk755721.zx.Looks.OUTLINED,
-              onClick: () => S(),
+              onClick: () => N(),
               children: "Delete all"
             }), (0, Chunk951288.jsx)(Chunk755721.zx, {
               disabled: O,
@@ -205,7 +205,7 @@ function _() {
             children: Chunk55935.map(e => (0, a.jsx)(v, {
               entitlement: e,
               active: true,
-              onDelete: () => S(e.id)
+              onDelete: () => N(e.id)
             }, e.id))
           })]
         }), _.length > 0 && (0, Chunk951288.jsxs)("div", {

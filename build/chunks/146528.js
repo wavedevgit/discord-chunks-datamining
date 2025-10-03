@@ -35,6 +35,12 @@ class o extends Chunk81825.Z {
     var t;
     return null != (t = this.invoiceItems.find(t => t.subscriptionPlanId === e)) ? t : null
   }
+  getDiscountIdIfExists() {
+    let e = this.invoiceItems.find(e => e.discounts.length > 0);
+    if (null == module || 0 === module.discounts.length) return;
+    let t = module.discounts[0];
+    if (null != exports) return exports.discount_id
+  }
   constructor(e) {
     super(), a(this, "id", true), a(this, "invoiceItems", true), a(this, "total", true), a(this, "subtotal", true), a(this, "currency", true), a(this, "tax", true), a(this, "taxInclusive", true), a(this, "subscriptionPeriodStart", true), a(this, "subscriptionPeriodEnd", true), a(this, "status", true), this.id = e.id, this.invoiceItems = e.invoiceItems, this.total = e.total, this.subtotal = e.subtotal, this.currency = e.currency, this.tax = e.tax, this.taxInclusive = e.taxInclusive, this.subscriptionPeriodStart = e.subscriptionPeriodStart, this.subscriptionPeriodEnd = e.subscriptionPeriodEnd, this.status = e.status
   }

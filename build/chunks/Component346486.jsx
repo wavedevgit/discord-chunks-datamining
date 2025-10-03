@@ -10,7 +10,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk55935 = require("./55935.js"),
   Chunk388032 = require("./388032.jsx");
 
-function u(e, t, n) {
+function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -18,7 +18,7 @@ function u(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class d extends(r = Chunk647438.PureComponent) {
+class u extends(r = Chunk647438.PureComponent) {
   componentDidMount() {
     let {
       intervalDuration: e,
@@ -66,13 +66,13 @@ class d extends(r = Chunk647438.PureComponent) {
     return null != exports ? exports(Chunk647438, this.defaultRender.bind(this, Chunk647438)) : this.defaultRender(Chunk647438)
   }
   constructor(...e) {
-    super(...e), u(this, "_interval", true)
+    super(...e), d(this, "_interval", true)
   }
 }
-u(d, "defaultProps", {
+d(u, "defaultProps", {
   showDays: true,
   showUnits: false,
   stopAtOneSec: false,
   intervalDuration: 1e3
 });
-let p = d
+let p = u

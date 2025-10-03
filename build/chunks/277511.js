@@ -1,5 +1,5 @@
-/** Chunk was on 93886 **/
-/** chunk id: 277511, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 18539 **/
+/** chunk id: 277511, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => f
 });
@@ -21,48 +21,48 @@ let f = {
     });
     try {
       var t;
-      let n = await r.tn.get({
-        url: p.ANM.USER_WISHLIST(e),
+      let r = await n.tn.get({
+        url: S.ANM.USER_WISHLIST(e),
         rejectWithError: true
       });
-      (null == (t = n.body) ? true : t.wishlist_items) == null && u.Z.captureMessage("Wishlist items not found in response");
-      let l = d.Z.fromServer(n.body);
+      (null == (t = r.body) ? true : t.wishlist_items) == null && l.Z.captureMessage("Wishlist items not found in response");
+      let s = d.Z.fromServer(r.body);
       i.Z.dispatch({
         type: "WISHLIST_FETCH_SUCCESS",
         wishlistId: e,
-        wishlistData: l
+        wishlistData: s
       })
     } catch (t) {
       i.Z.dispatch({
         type: "WISHLIST_FETCH_FAILURE",
         wishlistId: e,
-        error: new a.Hx(t)
-      }), u.Z.captureException(t)
+        error: new o.Hx(t)
+      }), l.Z.captureException(t)
     }
   },
   async addSkuToWishlist(e, t) {
-    let n = null;
+    let r = null;
     try {
-      n = await r.tn.post({
-        url: p.ANM.USER_WISHLIST_ITEMS,
+      r = await n.tn.post({
+        url: S.ANM.USER_WISHLIST_ITEMS,
         body: {
           sku_id: e
         },
         rejectWithError: true
       });
-      let l = d.Z.fromServer(n.body);
+      let s = d.Z.fromServer(r.body);
       if (i.Z.dispatch({
           type: "WISHLIST_ADD_SKU_SUCCESS",
-          wishlistId: l.id,
+          wishlistId: s.id,
           skuId: e,
-          wishlistData: l
+          wishlistData: s
         }), null != t) try {
-        let n = l.getSkuIds();
-        c.default.track(p.rMx.WISHLIST_UPDATED, {
-          wishlist_id: l.id,
+        let r = s.getSkuIds();
+        c.default.track(S.rMx.WISHLIST_UPDATED, {
+          wishlist_id: s.id,
           action_type: "ADD",
           sku_id: e,
-          sku_ids: n,
+          sku_ids: r,
           location_stack: t
         })
       } catch (e) {}
@@ -70,44 +70,69 @@ let f = {
       throw i.Z.dispatch({
         type: "WISHLIST_ADD_SKU_FAILURE",
         skuId: e,
-        error: new a.Hx(t)
+        error: new o.Hx(t)
       }), t
     }
-    if (null == n) return;
-    let u = s.default.getCurrentUser();
-    if (null != u && null == o.Z.getFirstWishlistId(u.id)) try {
-      await (0, l.In)(u.id)
+    if (null == r) return;
+    let l = a.default.getCurrentUser();
+    if (null != l && null == u.Z.getFirstWishlistId(l.id)) try {
+      await (0, s.In)(l.id)
     } catch (e) {}
   },
-  async removeSkuFromWishlist(e, t, n) {
+  async removeSkuFromWishlist(e, t, r) {
     try {
-      let l = await r.tn.del({
-          url: p.ANM.USER_WISHLIST_ITEM(e, t),
+      let s = await n.tn.del({
+          url: S.ANM.USER_WISHLIST_ITEM(e, t),
           rejectWithError: true
         }),
-        a = d.Z.fromServer(l.body);
+        o = d.Z.fromServer(s.body);
       if (i.Z.dispatch({
           type: "WISHLIST_REMOVE_SKU_SUCCESS",
           wishlistId: e,
           skuId: t,
-          wishlistData: a
-        }), null != n) try {
-        let e = a.getSkuIds();
-        c.default.track(p.rMx.WISHLIST_UPDATED, {
-          wishlist_id: a.id,
+          wishlistData: o
+        }), null != r) try {
+        let e = o.getSkuIds();
+        c.default.track(S.rMx.WISHLIST_UPDATED, {
+          wishlist_id: o.id,
           action_type: "REMOVE",
           sku_id: t,
           sku_ids: e,
-          location_stack: n
+          location_stack: r
         })
       } catch (e) {}
-    } catch (n) {
+    } catch (r) {
       throw i.Z.dispatch({
         type: "WISHLIST_REMOVE_SKU_FAILURE",
         wishlistId: e,
         skuId: t,
-        error: new a.Hx(n)
-      }), n
+        error: new o.Hx(r)
+      }), r
+    }
+  },
+  async updateWishlistVisibility(e, t) {
+    let r = a.default.getCurrentUser();
+    if (null != r) try {
+      await n.tn.patch({
+        url: S.ANM.USER_WISHLIST_PATCH(e),
+        body: {
+          visibility: t
+        },
+        rejectWithError: true
+      }), i.Z.dispatch({
+        type: "WISHLIST_UPDATE_VISIBILITY_SUCCESS",
+        wishlistId: e,
+        visibility: t
+      });
+      try {
+        await (0, s.In)(r.id)
+      } catch (e) {}
+    } catch (t) {
+      throw i.Z.dispatch({
+        type: "WISHLIST_UPDATE_VISIBILITY_FAILURE",
+        wishlistId: e,
+        error: new o.Hx(t)
+      }), t
     }
   }
 }

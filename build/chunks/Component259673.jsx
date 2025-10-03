@@ -1,6 +1,5 @@
-/** Chunk was on 48785 **/
+/** Chunk was on 35791 **/
 /** chunk id: 259673, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   M: () => d
 });
@@ -16,9 +15,9 @@ let d = e => {
   var t, n;
   let {
     user: d
-  } = e, p = s.ZP.canUsePremiumProfileCustomization(d), m = (0, i.cj)([o.Z], () => o.Z.getAllPending()), {
-    pendingAvatar: f
-  } = m, v = function(e, t) {
+  } = e, m = s.ZP.canUsePremiumProfileCustomization(d), p = (0, i.cj)([o.Z], () => o.Z.getAllPending()), {
+    pendingAvatar: v
+  } = p, f = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -32,9 +31,9 @@ let d = e => {
       for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
-  }(m, ["pendingAvatar"]), h = (0, l.SD)({
+  }(p, ["pendingAvatar"]), h = (0, l.SD)({
     userId: d.id,
-    image: f
+    image: v
   });
   return (0, r.jsx)("div", {
     className: u.container,
@@ -55,11 +54,11 @@ let d = e => {
         })
       }
       return e
-    }({}, v), n = n = {
+    }({}, f), n = n = {
       pendingAvatar: h,
       user: d,
       pendingBadges: [(0, c.X)()],
-      canUsePremiumCustomization: p,
+      canUsePremiumCustomization: m,
       disabledInputs: true,
       hideExampleButton: true
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

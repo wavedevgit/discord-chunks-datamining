@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk782568 = require("./782568.js"),
@@ -39,20 +39,20 @@ let I = e => {
     sortedSkuIds: I,
     numVisibleItems: P,
     hasSorting: N,
-    prioritizeUserDiscounts: A,
-    tab: B,
+    prioritizeUserDiscounts: B,
+    tab: A,
     buttonContainerClassName: R
-  } = e, Z = (0, s.e7)([d.default], () => d.default.getCurrentUser()), w = C.ZP.canUseCollectibles(Z), F = (0, T.G)("FeedBlock"), {
+  } = e, Z = (0, i.e7)([d.default], () => d.default.getCurrentUser()), w = C.ZP.canUseCollectibles(Z), F = (0, T.G)("FeedBlock"), {
     sortType: H,
     setSortType: M,
     sortedItems: D,
     sortOptions: W,
     shuffleProducts: U,
     showRecommendationOption: V
-  } = (0, x.Z)(I, w, A), z = (0, O.St)(D), G = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), K = (0, s.e7)([g.Z], () => g.Z.isFocused()), q = !G && K, {
+  } = (0, x.Z)(I, w, B), z = (0, O.St)(D), G = (0, i.e7)([u.Z], () => u.Z.useReducedMotion), K = (0, i.e7)([g.Z], () => g.Z.isFocused()), q = !G && K, {
     animationPhase: Y,
     startAnimation: X
-  } = (0, S.y)(), Q = (0, _.sp)(), J = null != (t = null == Q ? true : Q.sessionId) ? t : "", $ = l.useRef(null), ee = l.useCallback(e => {
+  } = (0, v.y)(), Q = (0, _.sp)(), J = null != (t = null == Q ? true : Q.sessionId) ? t : "", $ = l.useRef(null), ee = l.useCallback(e => {
     X({
       isShuffling: false,
       onOutroComplete: () => M(e)
@@ -64,7 +64,7 @@ let I = e => {
     location: "FeedBlock"
   }).showCardsV2;
   return null == Z ? null : (0, r.jsxs)("div", {
-    className: i()(k.popularPicksSection, k.centeredSection),
+    className: s()(k.popularPicksSection, k.centeredSection),
     children: [(0, r.jsxs)("div", {
       className: k.blockHeader,
       children: [(0, r.jsxs)("div", {
@@ -114,7 +114,7 @@ let I = e => {
           }
         })]
       }), N ? (0, r.jsxs)("div", {
-        className: i()(k.headerRight, {
+        className: s()(k.headerRight, {
           [j.shopTakeOver]: F
         }),
         children: [(0, r.jsx)(o.Text, {
@@ -126,7 +126,7 @@ let I = e => {
             options: W,
             select: ee,
             className: k.sortSelect,
-            popoutClassName: i()({
+            popoutClassName: s()({
               [j.shopTakeOver]: F
             }),
             isSelected: e => e === H,
@@ -147,7 +147,7 @@ let I = e => {
                 page_session_id: J
               })
             },
-            disabled: Y !== S.g.MOUNTED && Y !== S.g.FINISHED
+            disabled: Y !== v.g.MOUNTED && Y !== v.g.FINISHED
           })
         })]
       }) : null]
@@ -159,23 +159,23 @@ let I = e => {
         let n, l = h.Z.getCategoryForProduct(e.skuId);
         if (null == e || null == l) return null;
         if (q)
-          if (Y === S.g.SHUFFLE_OUT) return (0, r.jsx)("div", {
+          if (Y === v.g.SHUFFLE_OUT) return (0, r.jsx)("div", {
             className: k.shuffleOutro
           }, "".concat(e.skuId, "-").concat(t));
-          else Y === S.g.SORT_OUT ? n = k.sortChangedOutro : Y === S.g.SHUFFLE_IN ? n = k.shuffleIntro : Y === S.g.SORT_IN && (n = k.sortChangedIntro);
+          else Y === v.g.SORT_OUT ? n = k.sortChangedOutro : Y === v.g.SHUFFLE_IN ? n = k.shuffleIntro : Y === v.g.SORT_IN && (n = k.sortChangedIntro);
         return (0, r.jsx)(_.k0, {
           newValue: {
             tilePosition: t,
             pageSection: "popular picks",
             categoryPosition: 2
           },
-          children: et ? (0, r.jsx)(v.Z, {
+          children: et ? (0, r.jsx)(S.Z, {
             skuId: null == e ? true : e.skuId
           }) : (0, r.jsx)(E.Z, {
             product: e,
             category: l,
             user: Z,
-            tab: B,
+            tab: A,
             className: n
           })
         }, null == e ? true : e.skuId)

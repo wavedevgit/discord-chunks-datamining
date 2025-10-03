@@ -1,4 +1,4 @@
-/** Chunk was on 51711 **/
+/** Chunk was on 61222 **/
 /** chunk id: 720734, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => tf,
@@ -185,7 +185,7 @@ function tm(e) {
   }), {
     updateOpenPopoutRef: C,
     highlightBadge: E,
-    setHighlightBadge: S
+    setHighlightBadge: N
   } = function() {
     let e = r.useRef(null),
       t = r.useCallback(t => {
@@ -211,7 +211,7 @@ function tm(e) {
       highlightBadge: i ? n : true,
       setHighlightBadge: a
     }
-  }(), N = (0, er.A)(m);
+  }(), S = (0, er.A)(m);
   if (null == s) return null;
   let T = h && p !== e5.I_8 && p !== e5.ME && null != p ? p : true;
   return (0, a.jsx)(g.Z, {
@@ -250,11 +250,11 @@ function tm(e) {
       fixed: true,
       ignoreModalClicks: true,
       onRequestClose: () => {
-        d(), S(true)
+        d(), N(true)
       },
       children: e => (C(e), (0, a.jsxs)(f.P3F, ts(tl({
         innerRef: j,
-        style: N
+        style: S
       }, e), {
         onClick: t => {
           var n;
@@ -710,10 +710,10 @@ function th(e) {
     shouldShowInputDeviceChangedTooltip: y = false,
     shouldShowOutputDeviceChangedTooltip: C = false,
     dismissTooltips: E
-  } = e, S = (0, er.A)(j);
+  } = e, N = (0, er.A)(j);
   return (0, a.jsxs)("div", {
     className: tr.buttons,
-    style: S,
+    style: N,
     children: [(0, a.jsx)(tg, {
       accountContainerRef: _,
       selfMute: n,
@@ -824,11 +824,11 @@ function tf() {
       selfDeaf: C,
       deaf: E
     } = (0, Chunk879815.Z)(Chunk239091),
-    S = (0, Chunk442837.e7)([Chunk304761.C], () => {
+    N = (0, Chunk442837.e7)([Chunk304761.C], () => {
       var e;
       return (0, Chunk865427.fD)() ? null == (e = Chunk304761.C.getCurrentBuildOverride().overrides) ? true : module.discord_web : null
     }),
-    N = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription()),
+    S = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription()),
     I = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getSpeakingWhileMuted()),
     Z = (0, Chunk442837.e7)([Chunk358221.Z], () => Chunk358221.Z.isFullscreenInContext()),
     D = (0, Chunk442837.e7)([Chunk819640.Z], () => Chunk819640.Z.hasLayers()),
@@ -1020,14 +1020,14 @@ function tg(e) {
       dismissTooltips: C
     } = e,
     E = n || s || i,
-    S = r.useRef(null),
     N = r.useRef(null),
+    S = r.useRef(null),
     P = (0, ew.b)(E),
     {
       activeVoice: k,
       mostRecentlyRequestedVoiceId: I,
       lastInitAttemptMayHaveCrashed: w
-    } = (0, eS.o)(),
+    } = (0, eN.o)(),
     {
       showSilentLagWarning: R
     } = (0, eE.Y)(),
@@ -1070,7 +1070,7 @@ function tg(e) {
     [Q, $] = r.useState(false),
     ee = r.useCallback(e => {
       var t;
-      if ((0, c.kK)(null == e ? true : e.target, Node) && (null == (t = S.current) ? true : t.contains(e.target))) return x.F;
+      if ((0, c.kK)(null == e ? true : e.target, Node) && (null == (t = N.current) ? true : t.contains(e.target))) return x.F;
       $(false)
     }, []);
   (0, eq.yp)({
@@ -1089,7 +1089,7 @@ function tg(e) {
     }
   }, [U]);
   let er = r.useCallback(() => {
-      w || (0, eN.r5)()
+      w || (0, eS.r5)()
     }, [w]),
     ei = E ? f.TVs.colors.STATUS_DANGER : R ? f.TVs.colors.STATUS_WARNING : "currentColor",
     el = E || R,
@@ -1112,7 +1112,7 @@ function tg(e) {
   return ed ? (0, a.jsx)(O.Gt, {
     value: q,
     children: (0, a.jsx)(f.yRy, {
-      targetElementRef: S,
+      targetElementRef: N,
       renderPopout: e => {
         let {
           closePopout: t
@@ -1149,7 +1149,7 @@ function tg(e) {
           isShown: i
         } = n, s = i ? f.u04 : f.CJ0;
         return (0, a.jsxs)("div", {
-          ref: S,
+          ref: N,
           className: l()(tr.micButtonParent, {
             [tr.hasColorGlow]: el,
             [tr.popoutOpen]: i
@@ -1223,7 +1223,7 @@ function tg(e) {
   }) : (0, a.jsx)(O.Gt, {
     value: q,
     children: (0, a.jsxs)("div", {
-      ref: S,
+      ref: N,
       className: l()(tr.micButtonParent, {
         [tr.hasColorGlow]: el
       }),
@@ -1317,7 +1317,7 @@ function tg(e) {
                   onCTA: () => $(true)
                 }));
                 let c = () => (0, a.jsx)(e6.Z, tl({
-                  ref: N,
+                  ref: S,
                   plated: null != v,
                   tooltipForceOpen: en,
                   tooltipColor: en ? f.FGA.GREEN : true,
@@ -1351,7 +1351,7 @@ function tg(e) {
                   }
                 }, r));
                 return null != s ? (0, a.jsx)(f.yRy, {
-                  targetElementRef: N,
+                  targetElementRef: S,
                   renderPopout: () => s,
                   animation: f.yRy.Animation.TRANSLATE,
                   animationPosition: "bottom",
@@ -1395,15 +1395,15 @@ function tv(e) {
     location: "HeadphonesButton"
   }), C = (0, Z.Z)(t, n, i), {
     analyticsLocations: E
-  } = (0, O.ZP)(T.Z.AUDIO_OUTPUT_BUTTON), S = r.useRef(null);
+  } = (0, O.ZP)(T.Z.AUDIO_OUTPUT_BUTTON), N = r.useRef(null);
   r.useEffect(() => () => b(), [h, b]);
-  let N = r.useCallback(e => {
+  let S = r.useCallback(e => {
     o(e, E)
   }, [o, E]);
   return y ? (0, a.jsx)(O.Gt, {
     value: E,
     children: (0, a.jsx)(f.yRy, {
-      targetElementRef: S,
+      targetElementRef: N,
       renderPopout: e => {
         let {
           closePopout: t
@@ -1430,7 +1430,7 @@ function tv(e) {
           isShown: o
         } = t, m = o ? f.u04 : f.CJ0;
         return (0, a.jsxs)("div", {
-          ref: S,
+          ref: N,
           className: l()(tr.micButtonParent, {
             [tr.hasColorGlow]: h,
             [tr.popoutOpen]: o
@@ -1508,7 +1508,7 @@ function tv(e) {
         className: c
       }),
       onClick: s,
-      onContextMenu: N,
+      onContextMenu: S,
       innerClassName: l()({
         [tr.redIcon]: n
       }),

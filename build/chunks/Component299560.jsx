@@ -62,7 +62,7 @@ let x = {
     },
     getAriaLabel: e => {
       var t, n;
-      return j.intl.formatToPlainString(j.t.KfGahI, {
+      return b.intl.formatToPlainString(b.t.KfGahI, {
         applicationName: null != (n = null == (t = c.Z.getApplication(e.applicationId)) ? true : t.name) ? n : ""
       })
     }
@@ -75,12 +75,12 @@ function P(e) {
       onAddWidget: l,
       size: c = "default",
       loading: d = false,
-      trackUserProfileEditAction: j
+      trackUserProfileEditAction: b
     } = e,
     {
       placeholder: P,
-      getAriaLabel: S,
-      icon: I
+      getAriaLabel: I,
+      icon: S
     } = x[n],
     w = "small" === c,
     {
@@ -105,18 +105,18 @@ function P(e) {
           })
       }
     }, [n, null == E ? true : E.application_id]),
-    A = i.useCallback(() => {
-      d || null == T || ((0, p.qH)(n, T), j({
+    N = i.useCallback(() => {
+      d || null == T || ((0, p.qH)(n, T), b({
         action: "WIDGET_ADDED",
         widgetEdited: n
-      }), (0, m.L$)(b.qb.WIDGET_ADDED), null == l || l())
-    }, [d, n, T, j, l]);
-  return (null != T && null != I && (t = I(T)), null == T) ? null : (0, r.jsxs)("div", {
+      }), (0, m.L$)(j.qb.WIDGET_ADDED), null == l || l())
+    }, [d, n, T, b, l]);
+  return (null != T && null != S && (t = S(T)), null == T) ? null : (0, r.jsxs)("div", {
     className: O.addButtonContainer,
     children: [(0, r.jsxs)(o.P3F, {
       className: a()(O.addButtonContent, w && O.sizeSmall, d && O.loading),
-      onClick: A,
-      "aria-label": S(T),
+      onClick: N,
+      "aria-label": I(T),
       "aria-busy": d,
       children: [(() => {
         if (null == T) return null;

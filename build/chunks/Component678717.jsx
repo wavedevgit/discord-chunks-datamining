@@ -1,8 +1,8 @@
-/** Chunk was on 51711 **/
+/** Chunk was on 61222 **/
 /** chunk id: 678717, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
   default: () => eP,
-  openDevToolsPopout: () => eS,
+  openDevToolsPopout: () => eN,
   useDevToolsTabConfig: () => eC
 }), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -362,7 +362,7 @@ function eE(e) {
   })
 }
 
-function eS() {
+function eN() {
   (0, Chunk788983.bA)(Chunk981631.KJ3.DEVTOOLS_POPOUT, () => (0, Chunk951288.jsx)(Chunk238246.Z, {
     windowKey: Chunk981631.KJ3.DEVTOOLS_POPOUT,
     title: "DevTools",
@@ -377,7 +377,7 @@ function eS() {
   })
 }
 
-function eN(e) {
+function eS(e) {
   var t;
   let {
     isPopout: n = false
@@ -407,7 +407,7 @@ function eN(e) {
         children: [(0, a.jsx)(h.ZP.Icon, {
           icon: c.rgF,
           tooltip: "Pop Out",
-          onClick: eS
+          onClick: eN
         }), (0, a.jsx)(h.ZP.Icon, {
           icon: c.Dio,
           tooltip: ej.intl.string(ej.t.cpT0Cg),
@@ -449,7 +449,7 @@ function eT() {
       onResizeEnd: l
     }), (0, Chunk951288.jsx)("div", {
       className: Chunk552883.sidebarContent,
-      children: (0, Chunk951288.jsx)(eN, {})
+      children: (0, Chunk951288.jsx)(eS, {})
     })]
   })
 }
@@ -459,7 +459,7 @@ function eO() {
     className: l()(Chunk552883.container, Chunk552883.mobileContainerExpanded),
     children: (0, Chunk951288.jsx)("div", {
       className: Chunk552883.sidebarContent,
-      children: (0, Chunk951288.jsx)(eN, {})
+      children: (0, Chunk951288.jsx)(eS, {})
     })
   }) : (0, Chunk951288.jsx)("div", {
     className: Chunk552883.container,
@@ -488,7 +488,7 @@ function eP(e) {
   } = e;
   return t ? (0, a.jsx)(eO, {}) : n ? (0, a.jsx)("div", {
     className: e_.popoutContainer,
-    children: (0, a.jsx)(eN, {
+    children: (0, a.jsx)(eS, {
       isPopout: true
     })
   }) : (0, a.jsx)(eT, {})

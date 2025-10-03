@@ -1,6 +1,5 @@
-/** Chunk was on 48785 **/
+/** Chunk was on 35791 **/
 /** chunk id: 224068, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => d
 }), require("./314940.js");
@@ -20,10 +19,10 @@ function d(e) {
     product: n,
     isDarkText: i = false,
     isOrbExclusive: d = false
-  } = e, p = (t = n.type, d ? c.intl.string(c.t["0TmQRE"]) : (0, l.EQ)(t).with(o.Z.AVATAR_DECORATION, () => c.intl.string(c.t["7v0T9P"])).with(o.Z.PROFILE_EFFECT, () => c.intl.string(c.t.wR5wOj)).otherwise(() => null));
-  return null === p ? null : (0, r.jsx)(s.Text, {
+  } = e, m = (t = n.type, d ? c.intl.string(c.t["0TmQRE"]) : (0, l.EQ)(t).with(o.Z.AVATAR_DECORATION, () => c.intl.string(c.t["7v0T9P"])).with(o.Z.PROFILE_EFFECT, () => c.intl.string(c.t.wR5wOj)).otherwise(() => null));
+  return null === m ? null : (0, r.jsx)(s.Text, {
     variant: "text-xxs/normal",
     className: a()([u.container, i ? u.darkText : u.lightText]),
-    children: p
+    children: m
   })
 }

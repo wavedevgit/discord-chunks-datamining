@@ -7,7 +7,7 @@ require.r(exports), require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk772848 = require("./772848.js"),
   Chunk399606 = require("./399606.js"),
   Chunk952265 = require("./952265.js"),
@@ -62,7 +62,7 @@ let D = e => {
       tab: n = Z.AW.HOME
     } = e;
     (0, C.z)(f.f), (0, L.f)();
-    let a = (0, g.Z)((0, s.Z)()),
+    let a = (0, g.Z)((0, i.Z)()),
       c = (0, o.e7)([E.default], () => E.default.getCurrentUser()),
       {
         userProfile: F,
@@ -77,7 +77,7 @@ let D = e => {
     let U = (0, R.G)("CollectiblesShop"),
       {
         onClose: V
-      } = (0, A.Db)(),
+      } = (0, B.Db)(),
       {
         currentTab: z,
         hasFilters: G
@@ -95,9 +95,9 @@ let D = e => {
       }),
       X = (0, y.O)(q),
       [Q, J] = l.useState(),
-      $ = (0, o.e7)([S.Z], () => {
+      $ = (0, o.e7)([v.Z], () => {
         var e;
-        return null == (e = S.Z.getCategory(Q)) ? true : e.name
+        return null == (e = v.Z.getCategory(Q)) ? true : e.name
       }),
       [ee, et] = l.useState();
     (0, P.Kp)();
@@ -111,14 +111,14 @@ let D = e => {
       } = (0, j.B)(K, t);
     (0, O.q3)(a, er, $, el, ee), (0, O.EB)(er, c);
     let {
-      dismissShopButtonDC: ei
-    } = (0, B.Z)();
+      dismissShopButtonDC: es
+    } = (0, A.Z)();
     l.useEffect(() => {
-      ei()
-    }, [ei]), l.useEffect(() => {
+      es()
+    }, [es]), l.useEffect(() => {
       t || (0, d.Y)(w.Z5c.COLLECTIBLES_SHOP)
     }, [t]);
-    let es = (0, o.e7)([b.Z], () => b.Z.getLayers().includes(w.S9g.COLLECTIBLES_SHOP)),
+    let ei = (0, o.e7)([b.Z], () => b.Z.getLayers().includes(w.S9g.COLLECTIBLES_SHOP)),
       eo = l.useRef(null),
       ec = l.useRef(null);
     (0, u.Tbt)(eo);
@@ -138,7 +138,7 @@ let D = e => {
     } = (0, O.MV)(er);
     return ed && !t ? null : (0, r.jsx)(p.Gt, {
       value: eg,
-      children: (0, r.jsx)(v.k0, {
+      children: (0, r.jsx)(S.k0, {
         newValue: {
           sessionId: a,
           pageCategory: $,
@@ -148,21 +148,21 @@ let D = e => {
           tab: er,
           children: (0, r.jsx)(D, {
             onClose: V,
-            shouldAddEventListener: t && !es,
+            shouldAddEventListener: t && !ei,
             children: (0, r.jsxs)("div", {
-              className: i()(H.shop, {
+              className: s()(H.shop, {
                 [M.shopTakeOver]: U
               }),
               ref: t ? eo : ec,
               tabIndex: false,
               children: [(0, r.jsx)(N.I, {
                 isFullScreen: t,
-                isLayer: es,
+                isLayer: ei,
                 onClose: V,
                 handleTransition: ea,
                 selectedTab: er
               }), (0, r.jsx)("div", {
-                className: i()(H.shopViewWrapper, {
+                className: s()(H.shopViewWrapper, {
                   [H.visible]: el === Z.f7.VISIBLE,
                   [H.in]: el === Z.f7.IN,
                   [H.out]: el === Z.f7.OUT

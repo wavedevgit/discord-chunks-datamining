@@ -1,4 +1,4 @@
-/** Chunk was on 51711 **/
+/** Chunk was on 61222 **/
 /** chunk id: 496025, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => T
@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk165432 = require("./165432.js"),
   Chunk451429 = require("./451429.js");
 
-function S() {
+function N() {
   var e;
   let t = (0, Chunk442837.Wu)([Chunk55589.Z], () => Chunk55589.Z.getSortedChannels()[1]),
     [n, i] = Chunk647438.useState(exports.length > 0 ? exports[0].channelId : true),
@@ -83,7 +83,7 @@ function S() {
   })
 }
 
-function N() {
+function S() {
   let e = Chunk647438.useCallback(() => {
     Chunk493683.Z.openPrivateChannel({
       recipientIds: [Chunk37812.I]
@@ -113,8 +113,8 @@ function T() {
     className: l()(Chunk451429.panel, Chunk165432.panel),
     children: [module, (0, Chunk951288.jsx)("div", {
       className: Chunk165432.divider
-    }), (0, Chunk951288.jsx)(S, {}), (0, Chunk951288.jsx)("div", {
+    }), (0, Chunk951288.jsx)(N, {}), (0, Chunk951288.jsx)("div", {
       className: Chunk165432.divider
-    }), (0, Chunk951288.jsx)(N, {})]
+    }), (0, Chunk951288.jsx)(S, {})]
   })
 }
