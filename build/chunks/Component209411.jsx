@@ -37,7 +37,7 @@ function x(e) {
     {
       isAuthenticated: E,
       loginStatus: v
-    } = (0, o.cj)([m.default], () => ({
+    } = (0, a.cj)([m.default], () => ({
       isAuthenticated: m.default.isAuthenticated(),
       loginStatus: m.default.getLoginStatus()
     })),
@@ -47,7 +47,7 @@ function x(e) {
     } = e,
     [I, N] = i.useState(E);
 
-  function O(e) {
+  function S(e) {
     let {
       handoffKey: t,
       handoffToken: n,
@@ -67,13 +67,13 @@ function x(e) {
       } = (0, l.parse)(b.search);
       if (null != e && null != t) {
         let n = null != j ? (0, d.L)(j) : true;
-        I ? a.Z.logout("handoff", null).finally(() => {
-          O({
+        I ? o.Z.logout("handoff", null).finally(() => {
+          S({
             handoffKey: e,
             handoffToken: t,
             handoffSource: n
           })
-        }) : O({
+        }) : S({
           handoffKey: e,
           handoffToken: t,
           handoffSource: n

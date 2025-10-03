@@ -49,7 +49,7 @@ function j(e) {
     className: v.storeContainer,
     children: [(0, r.jsx)(y, {
       application: t
-    }), (0, r.jsx)(O, {
+    }), (0, r.jsx)(S, {
       application: t
     })]
   })
@@ -128,7 +128,7 @@ function I(e) {
         }, {
           modalKey: d,
           onCloseCallback: () => {
-            S() || (0, _.Gp)(b.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t, f.GlobalDiscoveryAppsSections.STORE))
+            P() || (0, _.Gp)(b.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t, f.GlobalDiscoveryAppsSections.STORE))
           }
         });
       case b.epS.SUBSCRIPTION:
@@ -146,7 +146,7 @@ function I(e) {
         }, {
           modalKey: d,
           onCloseCallback: () => {
-            S() || (0, _.Gp)(b.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t, f.GlobalDiscoveryAppsSections.STORE))
+            P() || (0, _.Gp)(b.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t, f.GlobalDiscoveryAppsSections.STORE))
           }
         })
     }
@@ -155,7 +155,7 @@ function I(e) {
   }, [d]), null
 }
 
-function O(e) {
+function S(e) {
   let {
     application: t
   } = e, n = (0, g.nu)(), a = t.terms_of_service_url, l = t.privacy_policy_url;
@@ -182,6 +182,6 @@ function O(e) {
   })
 }
 
-function S() {
+function P() {
   return window.location.pathname.startsWith("/login")
 }

@@ -1,5 +1,5 @@
 /** Chunk was on 59054 **/
-/** chunk id: 54966, original params: e,t,n (module,exports,require) **/
+/** chunk id: 54966, original params: e,n,t (module,exports,require) **/
 module.exports = {
   scroller: "scroller_fcb628",
   connections: "connections_fcb628",

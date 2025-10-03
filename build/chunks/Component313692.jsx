@@ -36,7 +36,7 @@ function D(e) {
     location: L,
     className: U,
     onNavigate: M
-  } = e, b = l.useRef(null), v = (0, o.e7)([m.ZP], () => m.ZP.getGuildSidebarState(D), [D]), x = l.useRef(0), [P, j] = l.useState(null != (t = null == v ? true : v.details.additionalSearchQuery) ? t : {}), y = (0, h.z0)(i, D, {
+  } = e, x = l.useRef(null), v = (0, o.e7)([m.ZP], () => m.ZP.getGuildSidebarState(D), [D]), b = l.useRef(0), [P, j] = l.useState(null != (t = null == v ? true : v.details.additionalSearchQuery) ? t : {}), y = (0, O.z0)(i, D, {
     addtionalQuery: P,
     shouldDispatch: true
   }), G = (0, o.e7)([N.default], () => N.default.getUser(i), [i]), k = (0, o.e7)([g.ZP], () => g.ZP.getMember(D, i), [D, i]);
@@ -44,17 +44,17 @@ function D(e) {
     let e = null == v ? true : v.details.scrollOffset;
     if (null != e) {
       var t;
-      null == (t = b.current) || t.scrollTo({
+      null == (t = x.current) || t.scrollTo({
         to: e,
         animate: false
       })
     }
   });
   let F = l.useCallback(e => {
-      null != v && (x.current = e.target.scrollTop, (0, O.r)(D, i, v.baseChannelId, {
+      null != v && (b.current = e.target.scrollTop, (0, h.r)(D, i, v.baseChannelId, {
         modViewPanel: R.k.MESSAGE_HISTORY,
         additionalSearchQuery: P,
-        scrollOffset: x.current
+        scrollOffset: b.current
       }))
     }, [D, i, v, P]),
     w = (0, a.throttle)(F, 300),
@@ -90,10 +90,10 @@ function D(e) {
       })(Object(n)).forEach(function(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
       }), t);
-      j(r), (0, O.r)(D, i, v.baseChannelId, {
+      j(r), (0, h.r)(D, i, v.baseChannelId, {
         modViewPanel: R.k.MESSAGE_HISTORY,
         additionalSearchQuery: r,
-        scrollOffset: x.current
+        scrollOffset: b.current
       })
     }, [D, i, v, P]),
     V = null != (n = null == P ? true : P.offset) ? n : 0,
@@ -141,14 +141,14 @@ function D(e) {
       }
     }, [y.result, V]);
   return null == G || null == k || null == B ? null : (0, r.jsxs)("div", {
-    className: s()(p.container, U),
+    className: s()(C.container, U),
     children: [(0, r.jsx)(f.Z, {
       guildId: D,
       userId: i,
       onNavigate: M
     }), (0, r.jsx)(u.Den, {
-      className: C.innerContainer,
-      ref: b,
+      className: p.innerContainer,
+      ref: x,
       onScroll: w,
       children: (0, r.jsx)(T.Z, {
         messages: Z,

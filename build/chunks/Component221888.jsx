@@ -156,7 +156,7 @@ function L(e) {
     compact: b = false,
     disableInteraction: v = false,
     maxVisibleUsers: T = 3
-  } = e, A = i.useRef(null), R = (0, p.Z)(), [L, x] = i.useState(false), j = i.useRef(new u.sW(N, () => x(false))), M = (0, c.Wu)([m.Z, g.default], () => {
+  } = e, A = i.useRef(null), R = (0, p.Z)(), [L, x] = i.useState(false), M = i.useRef(new u.sW(N, () => x(false))), j = (0, c.Wu)([m.Z, g.default], () => {
     if (s.type === y.fO.STREAM) {
       let e = m.Z.getViewerIds(s.id);
       return e.length > 0 ? e.map(e => g.default.getUser(e)).filter(E.lm) : D
@@ -164,13 +164,13 @@ function L(e) {
     return s.type === y.fO.ACTIVITY && s.participants.length > 0 ? Array.from(s.participants).map(e => g.default.getUser(e.userId)).filter(E.lm) : D
   }, [s]);
   i.useEffect(() => {
-    R && (j.current.cancel(), x(false))
+    R && (M.current.cancel(), x(false))
   }, [R]);
   let k = i.useCallback(() => {
-      j.current.cancel(), x(true)
+      M.current.cancel(), x(true)
     }, []),
     U = i.useCallback(() => {
-      j.current.delay()
+      M.current.delay()
     }, []),
     G = i.useCallback((e, t) => {
       k(), (0, f.jW)(e, async () => {
@@ -184,24 +184,24 @@ function L(e) {
         onClose: U
       })
     }, [U, k]);
-  if (0 === M.length) return null;
+  if (0 === j.length) return null;
   if (b) return (0, r.jsx)(w, {
     maxVisibleUsers: T,
-    users: M,
+    users: j,
     guildId: a,
     channelId: t,
     className: h,
     participantType: s.type
   });
-  let B = l()(M).take(T).map(e => (0, r.jsx)(d.qEK, {
+  let B = l()(j).take(T).map(e => (0, r.jsx)(d.qEK, {
     src: e.getAvatarURL(a, 24),
     "aria-label": e.username,
     size: d.EFr.SIZE_24,
     className: I.viewer
   }, e.id)).value();
-  return M.length > T && (B[B.length - 1] = (0, r.jsxs)("div", {
+  return j.length > T && (B[B.length - 1] = (0, r.jsxs)("div", {
     className: I.overflow,
-    children: ["+", M.length - T + 1]
+    children: ["+", j.length - T + 1]
   }, "overflow")), (0, r.jsx)(_.Z, {
     section: O.jXE.STREAM_VIEWER_POPOUT,
     children: (0, r.jsx)("div", {
@@ -214,7 +214,7 @@ function L(e) {
           handleUserContextMenu: G,
           guildId: a,
           channelId: t,
-          users: M,
+          users: j,
           disableInteraction: v
         }),
         shouldShow: L && !R,

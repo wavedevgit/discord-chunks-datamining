@@ -597,13 +597,13 @@
             var e = v.buffer;
             a.HEAP8 = T = new Int8Array(e), a.HEAP16 = A = new Int16Array(e), a.HEAP32 = N = new Int32Array(e), a.HEAPU8 = S = new Uint8Array(e), a.HEAPU16 = C = new Uint16Array(e), a.HEAPU32 = R = new Uint32Array(e), a.HEAPF32 = P = new Float32Array(e), a.HEAPF64 = w = new Float64Array(e)
           }
-          var x, j = [],
-            M = [],
+          var x, M = [],
+            j = [],
             k = [];
 
           function U() {
             var e = a.preRun.shift();
-            j.unshift(e)
+            M.unshift(e)
           }
           var G = 0,
             B = null,
@@ -1014,7 +1014,7 @@
               ub(e, t, n) {
                 if (16384 == (61440 & e.mode)) {
                   try {
-                    var r = eM(t, n)
+                    var r = ej(t, n)
                   } catch (e) {}
                   if (r)
                     for (var i in r.j) throw new ew(55)
@@ -1025,7 +1025,7 @@
                 delete e.j[t], e.timestamp = Date.now()
               },
               vb(e, t) {
-                var n, r = eM(e, t);
+                var n, r = ej(e, t);
                 for (n in r.j) throw new ew(55);
                 delete e.j[t], e.timestamp = Date.now()
               },
@@ -1105,7 +1105,7 @@
               for (var n = eS, r = "/", i = 0; i < e.length; i++) {
                 var a = i === e.length - 1;
                 if (a && t.parent) break;
-                if (n = eM(n, e[i]), r = et(r + "/" + e[i]), n.wa && (!a || a && t.gb) && (n = n.wa.root), !a || t.fb) {
+                if (n = ej(n, e[i]), r = et(r + "/" + e[i]), n.wa && (!a || a && t.gb) && (n = n.wa.root), !a || t.fb) {
                   for (a = 0; 40960 == (61440 & n.mode);)
                     if (n = eX(r), n = eL(r = eo(en(r), n), {
                         Qa: t.Qa + 1
@@ -1123,20 +1123,20 @@
                 t = t ? `${e.name}/${t}` : e.name, e = e.parent
               }
             },
-            ej = (e, t) => {
+            eM = (e, t) => {
               for (var n = 0, r = 0; r < t.length; r++) n = (n << 5) - n + t.charCodeAt(r) | 0;
               return (e + n >>> 0) % eR.length
             },
-            eM = (e, t) => {
+            ej = (e, t) => {
               var n;
               if (n = (n = eG(e, "x")) ? n : 2 * !e.l.ka) throw new ew(n, e);
-              for (n = eR[ej(e.id, t)]; n; n = n.lc) {
+              for (n = eR[eM(e.id, t)]; n; n = n.lc) {
                 var r = n.name;
                 if (n.parent.id === e.id && r === t) return n
               }
               return e.l.ka(e, t)
             },
-            ek = (e, t, n, r) => (t = ej((e = new nh(e, t, n, r)).parent.id, e.name), e.lc = eR[t], eR[t] = e),
+            ek = (e, t, n, r) => (t = eM((e = new nh(e, t, n, r)).parent.id, e.name), e.lc = eR[t], eR[t] = e),
             eU = e => {
               var t = ["r", "w", "rw"][3 & e];
               return 512 & e && (t += "w"), t
@@ -1144,7 +1144,7 @@
             eG = (e, t) => eP ? 0 : t.includes("r") && !(292 & e.mode) || t.includes("w") && !(146 & e.mode) || t.includes("x") && !(73 & e.mode) ? 2 : 0,
             eB = (e, t) => {
               try {
-                return eM(e, t), 20
+                return ej(e, t), 20
               } catch (e) {}
               return eG(e, "wx")
             },
@@ -1549,7 +1549,7 @@
 
           function tx() {}
 
-          function tj(e, t, n) {
+          function tM(e, t, n) {
             if (true === e[t].B) {
               var r = e[t];
               e[t] = function() {
@@ -1558,8 +1558,8 @@
             }
           }
 
-          function tM(e, t, n) {
-            a.hasOwnProperty(e) ? ((true === n || true !== a[e].B && true !== a[e].B[n]) && e9(`Cannot register public name '${e}' twice`), tj(a, e, e), a.hasOwnProperty(n) && e9(`Cannot register multiple overloads of a function with the same number of arguments (${n})!`), a[e].B[n] = t) : (a[e] = t, true !== n && (a[e].Pc = n))
+          function tj(e, t, n) {
+            a.hasOwnProperty(e) ? ((true === n || true !== a[e].B && true !== a[e].B[n]) && e9(`Cannot register public name '${e}' twice`), tM(a, e, e), a.hasOwnProperty(n) && e9(`Cannot register multiple overloads of a function with the same number of arguments (${n})!`), a[e].B[n] = t) : (a[e] = t, true !== n && (a[e].Pc = n))
           }
 
           function tk(e, t, n, r, i, a, o, s) {
@@ -2340,7 +2340,7 @@
             _embind_register_class: function(e, t, n, r, i, a, o, s, l, c, u, d, f) {
               u = ta(u), a = tK(i, a), s && (s = tK(o, s)), c && (c = tK(l, c)), f = tK(d, f);
               var _ = e4(u);
-              tM(_, function() {
+              tj(_, function() {
                 tq(`Cannot construct ${u} due to unbound types`, [r])
               }), tR([e, t, n], r ? [r] : [], function(t) {
                 if (t = t[0], r) var n = t.i,
@@ -2377,7 +2377,7 @@
                 var i = `${e.name}.${t}`;
                 t.startsWith("@@") && (t = Symbol[t.substring(2)]);
                 var l = e.i.constructor;
-                return true === l[t] ? (r.ea = n - 1, l[t] = r) : (tj(l, t, i), l[t].B[n - 1] = r), tR([], s, function(r) {
+                return true === l[t] ? (r.ea = n - 1, l[t] = r) : (tM(l, t, i), l[t].B[n - 1] = r), tR([], s, function(r) {
                   if (r = tX(i, [r[0], null].concat(r.slice(1)), null, a, o), true === l[t].B ? (r.ea = n - 1, l[t] = r) : l[t].B[n - 1] = r, e.i.oa)
                     for (let n of e.i.oa) n.constructor.hasOwnProperty(t) || (n.constructor[t] = r);
                   return []
@@ -2436,7 +2436,7 @@
                 t.startsWith("@@") && (t = Symbol[t.substring(2)]), s && e.i.qb.push(t);
                 var c = e.i.N,
                   u = c[t];
-                return true === u || true === u.B && u.className !== e.name && u.ea === n - 2 ? (r.ea = n - 2, r.className = e.name, c[t] = r) : (tj(c, t, i), c[t].B[n - 2] = r), tR([], l, function(r) {
+                return true === u || true === u.B && u.className !== e.name && u.ea === n - 2 ? (r.ea = n - 2, r.className = e.name, c[t] = r) : (tM(c, t, i), c[t].B[n - 2] = r), tR([], l, function(r) {
                   return r = tX(i, r, e, a, o), true === c[t].B ? (r.ea = n - 2, c[t] = r) : c[t].B[n - 2] = r, []
                 }), []
               })
@@ -2507,7 +2507,7 @@
                 argPackAdvance: 8,
                 readValueFromPointer: t0(t, n, r),
                 K: null
-              }), tM(t, i)
+              }), tj(t, i)
             },
             _embind_register_enum_value: function(e, t, n) {
               var r = t_(e, "enum");
@@ -2536,7 +2536,7 @@
             },
             _embind_register_function: function(e, t, n, r, i, a) {
               var o = tQ(t, n);
-              e = ta(e), i = tK(r, i), tM(e, function() {
+              e = ta(e), i = tK(r, i), tj(e, function() {
                 tq(`Cannot call ${e} due to unbound types`, o)
               }, t - 1), tR([], o, function(n) {
                 return tV(e, tX(e, [n[0], null].concat(n.slice(1)), null, i, a), t - 1), []
@@ -2901,7 +2901,7 @@
           };
           ! function() {
             function e(e) {
-              if (v = (I = e = e.exports).memory, L(), x = I.__indirect_function_table, M.unshift(I.__wasm_call_ctors), G--, a.monitorRunDependencies && a.monitorRunDependencies(G), 0 == G && (null !== B && (clearInterval(B), B = null), Z)) {
+              if (v = (I = e = e.exports).memory, L(), x = I.__indirect_function_table, j.unshift(I.__wasm_call_ctors), G--, a.monitorRunDependencies && a.monitorRunDependencies(G), 0 == G && (null !== B && (clearInterval(B), B = null), Z)) {
                 var t = Z;
                 Z = null, t()
               }
@@ -2932,7 +2932,7 @@
           function nA() {
             function e() {
               if (!n && (n = true, a.calledRun = true, !D)) {
-                if (a.noFSInit || eO || (eO = true, e$(), a.stdin = a.stdin, a.stdout = a.stdout, a.stderr = a.stderr, a.stdin ? e0("stdin", a.stdin) : eq("/dev/tty", "/dev/stdin"), a.stdout ? e0("stdout", null, a.stdout) : eq("/dev/tty", "/dev/stdout"), a.stderr ? e0("stderr", null, a.stderr) : eq("/dev/tty1", "/dev/stderr"), eQ("/dev/stdin", 0), eQ("/dev/stdout", 1), eQ("/dev/stderr", 1)), eP = false, $(M), r(a), a.onRuntimeInitialized && a.onRuntimeInitialized(), a.postRun)
+                if (a.noFSInit || eO || (eO = true, e$(), a.stdin = a.stdin, a.stdout = a.stdout, a.stderr = a.stderr, a.stdin ? e0("stdin", a.stdin) : eq("/dev/tty", "/dev/stdin"), a.stdout ? e0("stdout", null, a.stdout) : eq("/dev/tty", "/dev/stdout"), a.stderr ? e0("stderr", null, a.stderr) : eq("/dev/tty1", "/dev/stderr"), eQ("/dev/stdin", 0), eQ("/dev/stdout", 1), eQ("/dev/stderr", 1)), eP = false, $(j), r(a), a.onRuntimeInitialized && a.onRuntimeInitialized(), a.postRun)
                   for ("function" == typeof a.postRun && (a.postRun = [a.postRun]); a.postRun.length;) {
                     var e = a.postRun.shift();
                     k.unshift(e)
@@ -2943,7 +2943,7 @@
             if (!(0 < G)) {
               if (a.preRun)
                 for ("function" == typeof a.preRun && (a.preRun = [a.preRun]); a.preRun.length;) U();
-              $(j), 0 < G || (a.setStatus ? (a.setStatus("Running..."), setTimeout(function() {
+              $(M), 0 < G || (a.setStatus ? (a.setStatus("Running..."), setTimeout(function() {
                 setTimeout(function() {
                   a.setStatus("")
                 }, 1), e()
@@ -3186,7 +3186,7 @@
   return (() => {
     n.r(r), n.d(r, {
       Alignment: () => t,
-      DataEnum: () => j,
+      DataEnum: () => M,
       EventType: () => o,
       Fit: () => module,
       Layout: () => O,
@@ -3199,7 +3199,7 @@
       StateMachineInputType: () => i,
       Testing: () => K,
       ViewModel: () => x,
-      ViewModelInstance: () => M,
+      ViewModelInstance: () => j,
       ViewModelInstanceBoolean: () => B,
       ViewModelInstanceColor: () => H,
       ViewModelInstanceEnum: () => F,
@@ -4125,7 +4125,7 @@
               if (null !== c) {
                 var u = c.defaultInstance();
                 if (null !== u) {
-                  var d = new M(u, null);
+                  var d = new j(u, null);
                   this.bindViewModelInstance(d)
                 }
               }
@@ -4540,7 +4540,7 @@
           if (null === this._dataEnums) {
             var e = this.file.enums();
             this._dataEnums = module.map(function(e) {
-              return new j(e)
+              return new M(e)
             })
           }
           return this._dataEnums
@@ -4570,16 +4570,16 @@
           configurable: true
         }), module.prototype.instanceByIndex = function(e) {
           var t = this._viewModel.instanceByIndex(e);
-          return null !== t ? new M(t, null) : null
+          return null !== t ? new j(t, null) : null
         }, module.prototype.instanceByName = function(e) {
           var t = this._viewModel.instanceByName(e);
-          return null !== t ? new M(t, null) : null
+          return null !== t ? new j(t, null) : null
         }, module.prototype.defaultInstance = function() {
           var e = this._viewModel.defaultInstance();
-          return null !== module ? new M(module, null) : null
+          return null !== module ? new j(module, null) : null
         }, module.prototype.instance = function() {
           var e = this._viewModel.instance();
-          return null !== module ? new M(module, null) : null
+          return null !== module ? new j(module, null) : null
         }, Object.defineProperty(module.prototype, "properties", {
           get: function() {
             return this._viewModel.getProperties()
@@ -4594,7 +4594,7 @@
           configurable: true
         }), module
       }(),
-      j = function() {
+      M = function() {
         function e(e) {
           this._dataEnum = e
         }
@@ -4615,7 +4615,7 @@
     ! function(e) {
       e.Number = "number", e.String = "string", e.Boolean = "boolean", e.Color = "color", e.Trigger = "trigger", e.Enum = "enum", e.List = "list"
     }(c || (c = {}));
-    var M = function() {
+    var j = function() {
         function e(e, t) {
           this._parents = [], this._children = [], this._viewModelInstances = new Map, this._propertiesWithCallbacks = [], this._referenceCount = 0, this._runtimeInstance = e, null !== t && this._parents.push(t)
         }
@@ -4920,7 +4920,7 @@
           this._viewModelInstanceValue.removeInstanceAt(e)
         }, t.prototype.instanceAt = function(e) {
           var t = this._viewModelInstanceValue.instanceAt(e);
-          return null != t ? new M(t, null) : null
+          return null != t ? new j(t, null) : null
         }, t.prototype.internalHandleCallback = function(e) {
           e()
         }, t

@@ -1,7 +1,7 @@
 /** Chunk was on 66201 **/
 /** chunk id: 596443, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => M
+  Z: () => x
 }), require("./953529.js"), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -10,6 +10,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk954955 = require("./954955.js"),
   o = require.n(Chunk954955),
   Chunk399606 = require("./399606.js"),
+  Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk79712 = require("./79712.jsx"),
   Chunk285173 = require("./285173.jsx"),
@@ -29,97 +30,67 @@ var Chunk951288 = require("./951288.js"),
   Chunk87819 = require("./87819.js"),
   Chunk625109 = require("./625109.js");
 
-function L(e) {
+function U(e) {
   var t, n, i, a;
   let {
     permission: o,
-    roleIds: I,
-    guild: g,
+    roleIds: m,
+    guild: N,
     specMap: O,
-    categoryTitle: h,
-    userId: f
-  } = e, C = (0, u.Wu)([m.Z], () => m.Z.getManyRoles(g.id, I)), L = S.Plq[o], U = null != (i = null == (t = O[L.toString()]) ? true : t.title) ? i : (0, A.wt)(L), M = null != (a = null == (n = O[L.toString()]) ? true : n.description) ? a : "", b = R._o.has(L), v = R.Qn.includes(o), x = I.length, P = (0, u.e7)([N.Z], () => N.Z.can(S.Plq.MANAGE_ROLES, g), [g]), j = l.useCallback(async e => {
-    P && (await _.Z.open(g.id, S.pNK.ROLES), await _.Z.selectRole(e))
-  }, [P, g.id]);
+    categoryTitle: f,
+    userId: R
+  } = e, D = (0, u.Wu)([g.Z], () => g.Z.getManyRoles(N.id, m)), U = C.Plq[o], M = null != (i = null == (t = O[U.toString()]) ? true : t.title) ? i : (0, T.wt)(U), x = null != (a = null == (n = O[U.toString()]) ? true : n.description) ? a : "", v = S._o.has(U), b = S.Qn.includes(o), P = m.length, j = (0, u.e7)([h.Z], () => h.Z.can(C.Plq.MANAGE_ROLES, N), [N]), y = l.useCallback(async e => {
+    j && (await A.Z.open(N.id, C.pNK.ROLES), await A.Z.selectRole(e))
+  }, [j, N.id]);
   return (0, r.jsxs)("div", {
-    className: s()(D.permissionItemContainer, {
-      [D.elevatedPermission]: b
+    className: s()(L.permissionItemContainer, {
+      [L.elevatedPermission]: v
     }),
     children: [(0, r.jsxs)("div", {
-      className: D.permissionItemHeader,
+      className: L.permissionItemHeader,
       children: [(0, r.jsxs)("div", {
-        className: D.permissionTitle,
-        children: [(0, r.jsx)(c.Text, {
+        className: L.permissionTitle,
+        children: [(0, r.jsx)(E.Text, {
           variant: "text-md/medium",
           color: "header-primary",
-          children: U
-        }), null != h && (0, r.jsxs)("div", {
-          className: D.permissionItemSubheader,
-          children: [(0, r.jsx)(c.Text, {
+          children: M
+        }), null != f && (0, r.jsxs)("div", {
+          className: L.permissionItemSubheader,
+          children: [(0, r.jsx)(E.Text, {
             variant: "text-xs/normal",
             color: "header-muted",
-            children: h
-          }), b && (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(E.Z, {
+            children: f
+          }), v && (0, r.jsxs)(r.Fragment, {
+            children: [(0, r.jsx)(d.Z, {
               height: 4,
               width: 4,
               "aria-hidden": "true",
-              color: c.TVs.colors.INTERACTIVE_MUTED.css
-            }), (0, r.jsx)(c.ua7, {
+              color: E.TVs.colors.INTERACTIVE_MUTED.css
+            }), (0, r.jsx)(c.u, {
               text: p.intl.string(p.t.GZvXuL),
-              children: e => {
-                var t, n;
-                return (0, r.jsxs)(c.P3F, (t = function(e) {
-                  for (var t = 1; t < arguments.length; t++) {
-                    var n = null != arguments[t] ? arguments[t] : {},
-                      r = Object.keys(n);
-                    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                      return Object.getOwnPropertyDescriptor(n, e).enumerable
-                    }))), r.forEach(function(t) {
-                      var r;
-                      r = n[t], t in e ? Object.defineProperty(e, t, {
-                        value: r,
-                        enumerable: true,
-                        configurable: true,
-                        writable: true
-                      }) : e[t] = r
-                    })
-                  }
-                  return e
-                }({
-                  className: D.elevatedPermissionContainer
-                }, e), n = n = {
-                  children: [(0, r.jsx)(c.tQf, {
-                    size: "custom",
-                    width: 12,
-                    height: 12,
-                    color: c.TVs.colors.TEXT_BRAND
-                  }), (0, r.jsx)(c.Text, {
-                    variant: "text-xs/normal",
-                    color: "text-brand",
-                    children: p.intl.string(p.t.k7Kqj4)
-                  })]
-                }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-                  var n = Object.keys(e);
-                  if (Object.getOwnPropertySymbols) {
-                    var r = Object.getOwnPropertySymbols(e);
-                    n.push.apply(n, r)
-                  }
-                  return n
-                })(Object(n)).forEach(function(e) {
-                  Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-                }), t))
-              }
+              children: (0, r.jsxs)(E.P3F, {
+                className: L.elevatedPermissionContainer,
+                children: [(0, r.jsx)(E.tQf, {
+                  size: "custom",
+                  width: 12,
+                  height: 12,
+                  color: E.TVs.colors.TEXT_BRAND
+                }), (0, r.jsx)(E.Text, {
+                  variant: "text-xs/normal",
+                  color: "text-brand",
+                  children: p.intl.string(p.t.k7Kqj4)
+                })]
+              })
             })]
-          }), !b && v && (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(E.Z, {
+          }), !v && b && (0, r.jsxs)(r.Fragment, {
+            children: [(0, r.jsx)(d.Z, {
               height: 4,
               width: 4,
               "aria-hidden": "true",
-              color: c.TVs.colors.INTERACTIVE_MUTED.css
+              color: E.TVs.colors.INTERACTIVE_MUTED.css
             }), (0, r.jsx)("div", {
-              className: D.elevatedPermissionContainer,
-              children: (0, r.jsx)(c.Text, {
+              className: L.elevatedPermissionContainer,
+              children: (0, r.jsx)(E.Text, {
                 variant: "text-xs/normal",
                 color: "header-muted",
                 children: p.intl.string(p.t.IfqUEB)
@@ -127,115 +98,115 @@ function L(e) {
             })]
           })]
         })]
-      }), (0, r.jsx)(c.Text, {
+      }), (0, r.jsx)(E.Text, {
         variant: "text-sm/medium",
         color: "text-default",
         children: p.intl.format(p.t.KmJI4O, {
-          roleCount: x
+          roleCount: P
         })
       })]
-    }), null != M && (0, r.jsx)("div", {
-      className: D.permissionItemDescription,
-      children: (0, r.jsx)(c.Text, {
+    }), null != x && (0, r.jsx)("div", {
+      className: L.permissionItemDescription,
+      children: (0, r.jsx)(E.Text, {
         variant: "text-sm/normal",
         color: "text-secondary",
-        children: M
+        children: x
       })
     }), (0, r.jsx)("div", {
-      className: D.permissionItemRoleContainer,
-      children: C.map(e => (0, R.Ov)(e.id, f) ? (0, r.jsx)("div", {
-        className: D.roleTooltipItem,
+      className: L.permissionItemRoleContainer,
+      children: D.map(e => (0, S.Ov)(e.id, R) ? (0, r.jsx)("div", {
+        className: L.roleTooltipItem,
         children: (0, r.jsx)("div", {
-          className: D.roleChiplet,
-          children: (0, r.jsx)(c.Text, {
+          className: L.roleChiplet,
+          children: (0, r.jsx)(E.Text, {
             variant: "text-xs/medium",
             color: "text-default",
             children: p.intl.string(p.t.pclUFB)
           })
         })
-      }, e.id) : (0, r.jsx)(c.P3F, {
-        className: s()(D.roleTooltipItem, {
-          [D.editable]: P && !(0, T.fI)(e)
+      }, e.id) : (0, r.jsx)(E.P3F, {
+        className: s()(L.roleTooltipItem, {
+          [L.editable]: j && !(0, I.fI)(e)
         }),
-        onClick: () => j(e.id),
-        children: (0, r.jsx)(d.Z, {
+        onClick: () => y(e.id),
+        children: (0, r.jsx)(_.Z, {
           role: e,
-          guildId: g.id,
-          className: D.roleChiplet
+          guildId: N.id,
+          className: L.roleChiplet
         })
       }, e.id))
     })]
   })
 }
 
-function U(e, t) {
+function M(e, t) {
   return t.toLowerCase().includes(e.toLowerCase())
 }
 
-function M(e) {
+function x(e) {
   let {
     userId: t,
     guildId: n,
     location: i,
     className: a,
-    onNavigate: E
-  } = e, d = (0, u.e7)([O.default], () => O.default.getUser(t), [t]), _ = (0, u.e7)([g.Z], () => g.Z.getGuild(n), [n]), T = (0, u.e7)([I.ZP], () => I.ZP.getMember(n, t), [n, t]), m = (0, R.B2)(t, n, R.pd), N = Object.keys(m).length, M = l.useMemo(() => null != _ ? h.Z.getGuildPermissionSpecMap(_) : null, [_]), b = l.useMemo(() => null != _ ? h.Z.generateGuildPermissionSpec(_) : null, [_]), [v, x] = l.useState(""), [P, j] = l.useState(""), y = l.useMemo(() => o()(j, 300), []), G = l.useCallback(e => {
-    x(e), y(e)
+    onNavigate: c
+  } = e, d = (0, u.e7)([O.default], () => O.default.getUser(t), [t]), _ = (0, u.e7)([N.Z], () => N.Z.getGuild(n), [n]), A = (0, u.e7)([m.ZP], () => m.ZP.getMember(n, t), [n, t]), I = (0, S.B2)(t, n, S.pd), g = Object.keys(I).length, h = l.useMemo(() => null != _ ? f.Z.getGuildPermissionSpecMap(_) : null, [_]), x = l.useMemo(() => null != _ ? f.Z.generateGuildPermissionSpec(_) : null, [_]), [v, b] = l.useState(""), [P, j] = l.useState(""), y = l.useMemo(() => o()(j, 300), []), G = l.useCallback(e => {
+    b(e), y(e)
   }, [y]), k = l.useCallback(() => {
-    x(""), j("")
+    b(""), j("")
   }, []), F = l.useMemo(() => {
-    if (null == _ || null == M || null == T) return null;
-    if (0 === N) return (0, r.jsx)(c.Text, {
+    if (null == _ || null == h || null == A) return null;
+    if (0 === g) return (0, r.jsx)(E.Text, {
       variant: "text-sm/normal",
       children: p.intl.string(p.t.DEBGqK)
     });
     let e = [];
-    return null == b || b.forEach(n => {
+    return null == x || x.forEach(n => {
       n.permissions.forEach(l => {
         let i = l.flag,
-          s = R.pd.find(e => S.Plq[e] === i);
+          s = S.pd.find(e => C.Plq[e] === i);
         if (null == s) return;
-        let a = m[s];
+        let a = I[s];
         if (null != a) {
           if (P.length > 0) {
             var o, u, c, E, d;
-            let e = null != (E = null == (o = M[i.toString()]) ? true : o.title) ? E : (0, A.wt)(i),
-              t = null != (d = null == (c = M[i.toString()]) || null == (u = c.description) ? true : u.toString()) ? d : "",
+            let e = null != (E = null == (o = h[i.toString()]) ? true : o.title) ? E : (0, T.wt)(i),
+              t = null != (d = null == (c = h[i.toString()]) || null == (u = c.description) ? true : u.toString()) ? d : "",
               r = n.title,
-              l = R._o.has(i),
-              a = R.Qn.includes(s),
+              l = S._o.has(i),
+              a = S.Qn.includes(s),
               _ = l ? p.intl.string(p.t.k7Kqj4) : a ? p.intl.string(p.t.IfqUEB) : null,
-              T = U(P, e),
-              I = U(P, t),
-              m = U(P, r),
-              g = null != _ && U(P, _);
-            if (!T && !I && !m && !g) return
+              A = M(P, e),
+              I = M(P, t),
+              m = M(P, r),
+              g = null != _ && M(P, _);
+            if (!A && !I && !m && !g) return
           }
-          e.push((0, r.jsx)(L, {
+          e.push((0, r.jsx)(U, {
             permission: s,
             roleIds: a,
             guild: _,
-            specMap: M,
+            specMap: h,
             categoryTitle: n.title,
             userId: t
           }, s))
         }
       })
     }), e
-  }, [_, M, T, N, b, m, P, t]);
-  return null == d || null == T ? null : (0, r.jsxs)("div", {
-    className: s()(C.container, a),
-    children: [(0, r.jsx)(f.Z, {
+  }, [_, h, A, g, x, I, P, t]);
+  return null == d || null == A ? null : (0, r.jsxs)("div", {
+    className: s()(D.container, a),
+    children: [(0, r.jsx)(R.Z, {
       guildId: n,
       userId: t,
-      onNavigate: E
-    }), (0, r.jsx)(c.Ttm, {
-      className: D.permissionsGroupContainer,
-      children: (0, r.jsx)(c.xJW, {
+      onNavigate: c
+    }), (0, r.jsx)(E.Ttm, {
+      className: L.permissionsGroupContainer,
+      children: (0, r.jsx)(E.xJW, {
         title: p.intl.string(p.t.BBWnpq),
         children: (0, r.jsxs)("div", {
-          className: D.permissionsItemContainer,
-          children: [(0, r.jsx)(c.E1j, {
+          className: L.permissionsItemContainer,
+          children: [(0, r.jsx)(E.E1j, {
             size: "sm",
             query: v,
             placeholder: p.intl.string(p.t["yD9+dH"]),

@@ -113,23 +113,23 @@ function V(e) {
   } = e, p = n.id, b = i.useRef(null), j = (0, o.e7)([C.ZP], () => C.ZP.getCurrentSidebarChannelId(n.parent_id) === n.id), {
     firstMessage: v,
     loaded: _
-  } = (0, S.cl)(n), {
+  } = (0, N.cl)(n), {
     messageCountText: y
-  } = (0, O.nP)(n), {
+  } = (0, S.nP)(n), {
     isNew: T,
     hasUnreads: w
-  } = (0, O.J$)(n), N = i.useRef(null), {
+  } = (0, S.J$)(n), O = i.useRef(null), {
     handleLeftClick: P,
     handleRightClick: R
   } = (0, A.Z)({
-    facepileRef: N,
+    facepileRef: O,
     goToThread: a,
     channel: n
   });
   i.useEffect(() => {
     null == x || x(b.current, p)
   }, [x, p]);
-  let Z = (0, O.xw)(n, s.z.CREATION_DATE, L.R6.POSTED_DURATION_AGO),
+  let Z = (0, S.xw)(n, s.z.CREATION_DATE, L.R6.POSTED_DURATION_AGO),
     F = (0, I.NN)(n),
     B = (0, k.nX)({
       id: t,
@@ -224,7 +224,7 @@ function V(e) {
         children: (0, r.jsx)(W, {
           channel: n,
           firstMessage: v,
-          facepileRef: N
+          facepileRef: O
         })
       })
     })]
@@ -271,13 +271,13 @@ function q(e) {
     coords: l
   } = e, s = (0, o.e7)([y.Z], () => y.Z.getChannel(t.parent_id)), {
     firstMedia: c
-  } = (0, O.mX)({
+  } = (0, S.mX)({
     firstMessage: n,
     formatInline: false,
     noStyleAndInteraction: false
   }), {
     hasUnreads: d
-  } = (0, O.J$)(t), u = (0, o.e7)([T.Z], () => T.Z.can(F.Plq.MANAGE_MESSAGES, t)), m = _.QK.useSetting(), h = _.cC.useSetting(), g = (0, b.Z)(h, u), f = (0, N.aU)(n, s, false), x = t.isMediaPost(), [p, j] = (0, E.rI)(l.width - 2 * E.LT, x ? E.Lv.SIXTEEN_BY_NINE : E.Lv.THREE_BY_TWO);
+  } = (0, S.J$)(t), u = (0, o.e7)([T.Z], () => T.Z.can(F.Plq.MANAGE_MESSAGES, t)), m = _.QK.useSetting(), h = _.cC.useSetting(), g = (0, b.Z)(h, u), f = (0, O.aU)(n, s, false), x = t.isMediaPost(), [p, j] = (0, E.rI)(l.width - 2 * E.LT, x ? E.Lv.SIXTEEN_BY_NINE : E.Lv.THREE_BY_TWO);
   return (null == n ? true : n.blocked) || null == (null != a ? a : c) ? (0, r.jsx)(Q, {
     channel: t,
     firstMessage: n,
@@ -373,7 +373,7 @@ let X = e => e.preventDefault(),
     } = e, {
       containsVideo: u,
       containsGif: m
-    } = i.useMemo(() => (0, N.cp)(t), [t]), b = i.useMemo(() => t.slice(R.$x, R.GV), [t]), j = (0, R.tu)({
+    } = i.useMemo(() => (0, O.cp)(t), [t]), b = i.useMemo(() => t.slice(R.$x, R.GV), [t]), j = (0, R.tu)({
       numAttachments: b.length,
       containerWidth: a,
       containerHeight: s
@@ -485,7 +485,7 @@ function Q(e) {
     hasUnreads: o
   } = e, c = _.jU.useSetting(), [u, m] = (0, E.rI)(s - 2 * E.LT), {
     content: h
-  } = (0, O.mX)({
+  } = (0, S.mX)({
     firstMessage: n,
     formatInline: false,
     noStyleAndInteraction: true

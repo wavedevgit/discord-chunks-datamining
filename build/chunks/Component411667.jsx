@@ -26,15 +26,15 @@ function d(e) {
       reapplyNoticeText: f
     } = (0, i.Z)(n),
     h = n.features.has(a.oNc.CREATOR_MONETIZABLE_RESTRICTED),
-    b = n.features.has(a.oNc.CREATOR_MONETIZABLE_PENDING_NEW_OWNER_ONBOARDING);
+    x = n.features.has(a.oNc.CREATOR_MONETIZABLE_PENDING_NEW_OWNER_ONBOARDING);
   if (null != u) return (0, r.jsx)(l.Z, {
     className: c.noticeContainer,
     children: u.getAnyErrorMessage()
   });
-  let x = null;
-  return null != p ? x = p : g ? x = o.intl.string(o.t.MyJpJS) : null != f ? (x = f, t = o.intl.string(o.t["YKw/NT"])) : b ? x = o.intl.string(o.t.e2g9sb) : h && (x = o.intl.string(o.t.rxI9sr)), null != x ? (0, r.jsx)(s.Z, {
+  let b = null;
+  return null != p ? b = p : g ? b = o.intl.string(o.t.MyJpJS) : null != f ? (b = f, t = o.intl.string(o.t["YKw/NT"])) : x ? b = o.intl.string(o.t.e2g9sb) : h && (b = o.intl.string(o.t.rxI9sr)), null != b ? (0, r.jsx)(s.Z, {
     className: c.noticeContainer,
-    notice: x,
+    notice: b,
     ctaLabel: t,
     ctaLoading: d,
     onClick: m

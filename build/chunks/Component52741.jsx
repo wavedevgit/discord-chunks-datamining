@@ -55,8 +55,8 @@ function v(e) {
     headerClassName: C,
     headingVariant: N = "heading-md/normal",
     headingColor: R
-  } = e, P = (0, l.e7)([d.Z], () => d.Z.getPremiumTypeSubscription()), w = (0, l.e7)([u.default], () => u.default.getCurrentUser()), D = (0, _.t7)(), L = (0, _.lr)(), x = n === E.p9.TIER_0 ? E.Si.TIER_0 : E.Si.TIER_2, j = (null == P ? true : P.hasActiveTrial) ? null == w ? true : w.premiumType : D ? E.p9.TIER_2 : null, M = (0, h.N)(), k = (0, p.Ng)(), U = null == M ? true : M.subscription_trial;
-  if (!S && !t && null != j && n === j && null != P && null != P.planIdFromItems) {
+  } = e, P = (0, l.e7)([d.Z], () => d.Z.getPremiumTypeSubscription()), w = (0, l.e7)([u.default], () => u.default.getCurrentUser()), D = (0, _.t7)(), L = (0, _.lr)(), x = n === E.p9.TIER_0 ? E.Si.TIER_0 : E.Si.TIER_2, M = (null == P ? true : P.hasActiveTrial) ? null == w ? true : w.premiumType : D ? E.p9.TIER_2 : null, j = (0, h.N)(), k = (0, p.Ng)(), U = null == j ? true : j.subscription_trial;
+  if (!S && !t && null != M && n === M && null != P && null != P.planIdFromItems) {
     let e = null != P.trialEndsAt ? s()(null == P ? true : P.trialEndsAt).diff(s()(), "d") : 0,
       t = E.GP[P.planIdFromItems],
       n = f.ZP.formatPriceString(f.ZP.getDefaultPrice(t.id), t.interval),

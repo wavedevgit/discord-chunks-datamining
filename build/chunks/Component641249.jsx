@@ -20,7 +20,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk605041 = require("./605041.js");
 
-function b(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,7 +39,7 @@ function b(e) {
   return e
 }
 
-function x(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -56,17 +56,17 @@ function j() {
   let {
     editStateId: e,
     guildId: t
-  } = (0, Chunk727843.N)(), [j, v] = Chunk290348.XZ(module, exports), _ = (0, Chunk971792.Z)(exports, module), {
-    setCurrentTab: O
-  } = (0, Chunk798680.dw)(), y = () => O(Chunk798680.ue.EMOJIS), C = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuild(exports)), N = null != C ? (0, Chunk443106.Z)(C) : true;
+  } = (0, Chunk727843.N)(), [j, _] = Chunk290348.XZ(module, exports), v = (0, Chunk971792.Z)(exports, module), {
+    setCurrentTab: C
+  } = (0, Chunk798680.dw)(), O = () => C(Chunk798680.ue.EMOJIS), y = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuild(exports)), N = null != y ? (0, Chunk443106.Z)(y) : true;
 
   function E(e) {
-    null == j ? v(new Set(e)) : v(new Set([...j, ...e]))
+    null == j ? _(new Set(e)) : _(new Set([...j, ...e]))
   }
 
   function I(e) {
     let t = new Set(j);
-    t.delete(e), v(t)
+    t.delete(e), _(t)
   }
   let S = (0, Chunk723047.mY)();
   return (0, Chunk951288.jsxs)(Chunk481060.hjN, {
@@ -79,17 +79,17 @@ function j() {
       children: [Chunk388032.intl.format(Chunk388032.t.zuwel5, {
         premiumEmojiMaximum: N
       }), (0, Chunk951288.jsx)("br", {}), Chunk388032.intl.format(Chunk388032.t.sEkgBg, {
-        handleTransitionToManageEmoji: y
+        handleTransitionToManageEmoji: O
       })]
     }), (0, Chunk951288.jsx)(Chunk331146.E, {
       tierEmojiIds: j,
       guildId: exports,
       onRemoveEmoji: function(e) {
-        e.roles.filter(e => e !== (null == _ ? true : _.id)).length > 0 ? I(e.id) : (0, l.ZDy)(async () => {
+        e.roles.filter(e => e !== (null == v ? true : v.id)).length > 0 ? I(e.id) : (0, l.ZDy)(async () => {
           let {
             default: t
           } = await n.e("59128").then(n.bind(n, 28564));
-          return n => (0, r.jsx)(t, x(b({}, n), {
+          return n => (0, r.jsx)(t, b(x({}, n), {
             onConfirmDelete: () => {
               I(e.id), n.onClose()
             }
@@ -104,12 +104,12 @@ function j() {
           let {
             EmojiAddModal: e
           } = await require.e("21112").then(require.bind(require, 301160));
-          return n => (0, r.jsx)(e, x(b({}, n), {
+          return n => (0, r.jsx)(e, b(x({}, n), {
             guildId: t,
             initialTierEmojiIds: j,
             onSubmit: E,
             transitionToManageEmoji: () => {
-              y(), n.onClose()
+              O(), n.onClose()
             }
           }))
         })

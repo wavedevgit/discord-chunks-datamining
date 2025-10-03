@@ -63,8 +63,8 @@ function Z(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: a()(o, {
-      [M.featureItem]: u,
-      [M.featureItemApplicationHome]: u && c
+      [j.featureItem]: u,
+      [j.featureItemApplicationHome]: u && c
     }),
     children: [(0, r.jsx)(t, {
       className: u ? k.smallIcon : k.icon,
@@ -230,8 +230,8 @@ function W(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [m && (0, r.jsx)(l.Text, {
       variant: "text-sm/bold",
-      className: s ? M.tier2ApplicationHomeSubheader : k.tier2ApplicationHomeSubheader,
-      children: j.intl.string(j.t.AozD3d)
+      className: s ? j.tier2ApplicationHomeSubheader : k.tier2ApplicationHomeSubheader,
+      children: M.intl.string(M.t.AozD3d)
     }), g.map((e, n) => {
       let {
         Icon: i,
@@ -260,18 +260,18 @@ function K(e) {
     isModal: _ = false,
     priceOptions: p,
     showPromotionalGiftBanner: h = false
-  } = e, g = (0, S.N)(), E = null == g || null == (t = g.subscription_trial) ? true : t.sku_id, b = (0, O.Nx)(), A = (0, T.Ng)(), N = null != g ? L.C.PREMIUM_TRIAL : null != A ? L.C.PREMIUM_DISCOUNT : null, R = (0, y.Vi)(), w = !f && b, D = null == (n = (0, v.Z)()) ? true : n.planSelection, x = null == D || null == (i = D.getBackgroundImageUrl) ? true : i.call(D), j = null == D || null == (o = D.getCardImageUrl) ? true : o.call(D), M = (0, C.W)();
+  } = e, g = (0, S.N)(), E = null == g || null == (t = g.subscription_trial) ? true : t.sku_id, b = (0, O.Nx)(), A = (0, T.Ng)(), N = null != g ? L.C.PREMIUM_TRIAL : null != A ? L.C.PREMIUM_DISCOUNT : null, R = (0, y.Vi)(), w = !f && b, D = null == (n = (0, v.Z)()) ? true : n.planSelection, x = null == D || null == (i = D.getBackgroundImageUrl) ? true : i.call(D), M = null == D || null == (o = D.getCardImageUrl) ? true : o.call(D), j = (0, C.W)();
   return (0, r.jsxs)("div", {
     className: a()(k.card, k.tier2, k.tier2ApplicationHomeBackground, d, {
       [k.withTier2Rim]: w,
       [k.withCardHover]: w,
       [k.withPromotionalGradientBanner]: h,
-      [k.withPromotionalCardImage]: h && null != j
+      [k.withPromotionalCardImage]: h && null != M
     }),
-    children: [h && null != j && (0, r.jsx)("img", {
+    children: [h && null != M && (0, r.jsx)("img", {
       className: k.promotionalCardImage,
       alt: "",
-      src: j
+      src: M
     }), h && null != x && (0, r.jsx)("img", {
       className: k.promotionalBackgroundImage,
       alt: "",
@@ -290,7 +290,7 @@ function K(e) {
           children: (0, r.jsx)(l.Text, {
             variant: "text-xs/bold",
             className: k.freeTrialPillInline,
-            children: M
+            children: j
           })
         }), (0, r.jsx)(P.Z, {
           isGift: f,
@@ -328,7 +328,7 @@ function z(e) {
     isModal: A = false,
     priceOptions: w,
     showPromotionalGiftBanner: D = false
-  } = e, j = (0, o.e7)([h.Z], () => h.Z.getPremiumTypeSubscription()), M = (0, o.e7)([p.default], () => p.default.getCurrentUser()), U = (0, S.N)(), G = null == U || null == (t = U.subscription_trial) ? true : t.sku_id, Z = (null == j ? true : j.hasActiveTrial) ? null == M ? true : M.premiumType : null, F = (0, O.Nx)(), V = (0, T.Ng)(), H = (0, O.t7)(), Y = null != G || null != Z ? L.C.PREMIUM_TRIAL : null != V || H ? L.C.PREMIUM_DISCOUNT : null, K = (0, y.Vi)(), z = !b && F, q = null == (n = (0, v.Z)()) ? true : n.planSelection, X = null == q || null == (i = q.getBackgroundImageUrl) ? true : i.call(q), Q = null == q || null == (u = q.getCardImageUrl) ? true : u.call(q), J = (0, C.W)(), $ = (0, s.ap)((0, c.ZP)()), ee = $ ? N.VE.PREMIUM_TIER_2_OLD_GRADIENT_FILL_LIGHT_MODE : N.VE.PREMIUM_TIER_2_WHITE_FILL, et = (0, N.A1)(H, Z, V, U, G), en = z && !$ ? k.rimGlowTier2 : true;
+  } = e, M = (0, o.e7)([h.Z], () => h.Z.getPremiumTypeSubscription()), j = (0, o.e7)([p.default], () => p.default.getCurrentUser()), U = (0, S.N)(), G = null == U || null == (t = U.subscription_trial) ? true : t.sku_id, Z = (null == M ? true : M.hasActiveTrial) ? null == j ? true : j.premiumType : null, F = (0, O.Nx)(), V = (0, T.Ng)(), H = (0, O.t7)(), Y = null != G || null != Z ? L.C.PREMIUM_TRIAL : null != V || H ? L.C.PREMIUM_DISCOUNT : null, K = (0, y.Vi)(), z = !b && F, q = null == (n = (0, v.Z)()) ? true : n.planSelection, X = null == q || null == (i = q.getBackgroundImageUrl) ? true : i.call(q), Q = null == q || null == (u = q.getCardImageUrl) ? true : u.call(q), J = (0, C.W)(), $ = (0, s.ap)((0, c.ZP)()), ee = $ ? N.VE.PREMIUM_TIER_2_OLD_GRADIENT_FILL_LIGHT_MODE : N.VE.PREMIUM_TIER_2_WHITE_FILL, et = (0, N.A1)(H, Z, V, U, G), en = z && !$ ? k.rimGlowTier2 : true;
   return (0, r.jsxs)("div", {
     className: a()(k.card, k.tier2, E, {
       [k.withTier2Rim]: z,
@@ -432,7 +432,7 @@ function X(e) {
       className: k.applicationHomeTierCardSectionHeader,
       variant: "display-md",
       color: "header-primary",
-      children: j.intl.string(j.t.vLz3Zm)
+      children: M.intl.string(M.t.vLz3Zm)
     }), (0, r.jsxs)("div", {
       ref: s,
       className: a()(k.premiumCards, i),

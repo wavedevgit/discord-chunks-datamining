@@ -63,7 +63,7 @@ function p(e) {
     children: (0, r.jsx)(s.n, {
       children: t
     })
-  }) : null, x = null != t && "" !== t, j = null != l && "" !== l, M = x ? (0, r.jsxs)(u.x, {
+  }) : null, x = null != t && "" !== t, M = null != l && "" !== l, j = x ? (0, r.jsxs)(u.x, {
     "aria-hidden": P,
     id: T,
     tag: w,
@@ -96,11 +96,11 @@ function p(e) {
       "data-disabled": a,
       "aria-describedby": P ? C : true,
       disabled: P ? a : true,
-      children: [L, x || j ? (0, r.jsxs)("div", {
+      children: [L, x || M ? (0, r.jsxs)("div", {
         className: f.labelContainer,
         children: [n ? (0, r.jsx)(s.n, {
-          children: M
-        }) : M, j && (0, r.jsx)(u.x, {
+          children: j
+        }) : j, M && (0, r.jsx)(u.x, {
           variant: "text-sm/normal",
           color: "text-secondary",
           className: f.description,

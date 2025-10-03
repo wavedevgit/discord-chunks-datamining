@@ -75,8 +75,8 @@ function E(e) {
   }, [O, S]), l()(null != D, "Unknown step for current payment flow.");
   let L = null != (c = null == D || null == (t = D.options) ? true : t.hideSlider) && c,
     x = null == D || null == (n = D.options) ? true : n.bodyClassName,
-    j = null == D || null == (a = D.options) ? true : a.sliderBodyClassName;
-  switch (true !== b && b && (j = p.sliderBodyLarge), O) {
+    M = null == D || null == (a = D.options) ? true : a.sliderBodyClassName;
+  switch (true !== b && b && (M = p.sliderBodyLarge), O) {
     case f.h8.ADD_PAYMENT_STEPS:
       m = 408;
       break;
@@ -104,7 +104,7 @@ function E(e) {
           children: v.filter(e => null != e.key).map(e => (0, r.jsx)(u.Mi4, {
             id: e.key,
             children: (0, r.jsx)("form", {
-              className: o()(p.sliderBody, j),
+              className: o()(p.sliderBody, M),
               ref: e => {
                 I(e)
               },

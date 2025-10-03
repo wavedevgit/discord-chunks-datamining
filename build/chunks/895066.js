@@ -339,7 +339,7 @@ class g extends Chunk47770.Z {
                 preemptiveExpanded: t.opPreemptiveExpand,
                 cng: t.opCNG
               },
-              j = {
+              M = {
                 passthroughCount: null != (l = t.passthroughCount) ? l : 0,
                 decryptSuccessCount: null != (c = t.decryptSuccessCount) ? c : 0,
                 decryptFailureCount: null != (u = t.decryptFailureCount) ? u : 0,
@@ -354,7 +354,7 @@ class g extends Chunk47770.Z {
                 a = C - e.packetsLost,
                 o = 0,
                 s = e.mosBuckets,
-                l = null != (m = e.decryptFailureBeforeSuccessCount) ? m : j.decryptSuccessCount > 0 ? j.decryptFailureCount : true;
+                l = null != (m = e.decryptFailureBeforeSuccessCount) ? m : M.decryptSuccessCount > 0 ? M.decryptFailureCount : true;
               r > 0 && a >= 0 && (o = this.calculateMos(S + D, i().clamp(a / (r + a), 0, 1)), s[Math.floor(o)]++), this.inboundStats[n] = f({
                 packetsReceived: A,
                 bytesReceived: N,
@@ -369,7 +369,7 @@ class g extends Chunk47770.Z {
                 bufferStats: L,
                 frameOpStats: x,
                 decryptFailureBeforeSuccessCount: l
-              }, j), this.periodicInboundStats[n] = {
+              }, M), this.periodicInboundStats[n] = {
                 previousTimestampMs: this.periodicInboundStats[n].previousTimestampMs,
                 previous: this.periodicInboundStats[n].previous,
                 currentTimestampMs: performance.now(),
@@ -393,7 +393,7 @@ class g extends Chunk47770.Z {
               mosBuckets: [0, 0, 0, 0, 0],
               bufferStats: L,
               frameOpStats: x
-            }, j), this.periodicInboundStats[n] = {
+            }, M), this.periodicInboundStats[n] = {
               previousTimestampMs: performance.now(),
               previous: x,
               currentTimestampMs: performance.now(),

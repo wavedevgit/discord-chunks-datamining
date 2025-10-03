@@ -1,7 +1,7 @@
 /** Chunk was on 66201 **/
 /** chunk id: 613464, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => C
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -26,29 +26,29 @@ var Chunk951288 = require("./951288.js"),
   Chunk327250 = require("./327250.jsx"),
   Chunk345226 = require("./345226.js");
 
-function p(e) {
+function C(e) {
   let {
     userId: t,
     guildId: n,
     onClose: i,
-    className: p,
-    infoPanelClassName: C,
+    className: C,
+    infoPanelClassName: p,
     style: D
-  } = e, L = (0, h.m)(n), U = (0, a.e7)([O.default], () => O.default.getUser(t), [t]), M = (0, a.e7)([N.ZP], () => N.ZP.getMember(n, t), [n, t]), [b, v] = l.useState(null == U || null == M), x = (0, c.Z)(M), P = l.useRef(null), {
+  } = e, L = (0, O.m)(n), U = (0, a.e7)([h.default], () => h.default.getUser(t), [t]), M = (0, a.e7)([N.ZP], () => N.ZP.getMember(n, t), [n, t]), [x, v] = l.useState(null == U || null == M), b = (0, c.Z)(M), P = l.useRef(null), {
     analyticsLocations: j
   } = (0, A.ZP)(_.Z.GUILD_MEMBER_MOD_VIEW), y = (0, I.ZP)(t, n), G = (0, E.ZP)();
   return (l.useEffect(() => {
     L || i()
   }, [L, i]), l.useEffect(() => {
-    null == x || null != M || b || i()
-  }, [b, M, i, x]), l.useEffect(() => {
+    null == b || null != M || x || i()
+  }, [x, M, i, b]), l.useEffect(() => {
     null != U && null != M && v(false)
   }, [U, M]), l.useEffect(() => {
     let e = null == M;
-    return !b && e && (P.current = window.setTimeout(i, 500)), () => {
+    return !x && e && (P.current = window.setTimeout(i, 500)), () => {
       null != P.current && window.clearTimeout(P.current)
     }
-  }, [b, M, i]), (0, d.$)({
+  }, [x, M, i]), (0, d.$)({
     [n]: [t]
   }, "GuildMemberModViewSidebar"), l.useEffect(() => {
     !async function() {
@@ -58,17 +58,17 @@ function p(e) {
       })];
       await Promise.all(e), v(false)
     }()
-  }, [n, t]), L) ? b || null == U || null == M ? (0, r.jsx)("div", {
-    className: s()(S.sidebarContainer, S.loadingContainer, p),
+  }, [n, t]), L) ? x || null == U || null == M ? (0, r.jsx)("div", {
+    className: s()(S.sidebarContainer, S.loadingContainer, C),
     style: D,
     children: (0, r.jsx)(o.$jN, {
       animated: true,
-      type: b ? o.$jN.Type.SPINNING_CIRCLE : o.$jN.Type.CHASING_DOTS
+      type: x ? o.$jN.Type.SPINNING_CIRCLE : o.$jN.Type.CHASING_DOTS
     })
   }) : (0, r.jsx)(A.Gt, {
     value: j,
     children: (0, r.jsx)("div", {
-      className: s()(S.sidebarContainer, p),
+      className: s()(S.sidebarContainer, C),
       style: D,
       children: (0, r.jsx)(g.Z, {
         user: U,
@@ -87,7 +87,7 @@ function p(e) {
             userId: t,
             guildId: n,
             onClose: i,
-            className: C
+            className: p
           })]
         })
       })

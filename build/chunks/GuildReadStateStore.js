@@ -88,12 +88,12 @@ function x(e) {
   return !(null == e || e.isGuildVocal() && 0 === t || e.hasFlag(v.zZ.IS_GUILD_RESOURCE_CHANNEL) || (0 === t || n) && (e.isThread() ? l.Z.isMuted(e.id) || b.ZP.isGuildOrCategoryOrChannelMuted(e.guild_id, e.parent_id) : b.ZP.isGuildOrCategoryOrChannelMuted(e.guild_id, e.id)) || !e.isPrivate() && (L(e, t, (0, a.r1)(e.guild_id)) || !m.Z.can(e.accessPermissions, e))) && (t > 0 || b.ZP.resolveUnreadSetting(e) === I.i.ALL_MESSAGES)
 }
 
-function j(e) {
+function M(e) {
   return "flags" in e
 }
 
-function M(e, t, n) {
-  return !((0, u.bw)(e.type) && 0 === t || !m.Z.canBasicChannel((0, u.Gz)(e.type), e) || L(e, t, n) || j(e) && e.hasFlag(v.zZ.IS_GUILD_RESOURCE_CHANNEL)) && (t > 0 || b.ZP.resolveUnreadSetting(e) === I.i.ALL_MESSAGES)
+function j(e, t, n) {
+  return !((0, u.bw)(e.type) && 0 === t || !m.Z.canBasicChannel((0, u.Gz)(e.type), e) || L(e, t, n) || M(e) && e.hasFlag(v.zZ.IS_GUILD_RESOURCE_CHANNEL)) && (t > 0 || b.ZP.resolveUnreadSetting(e) === I.i.ALL_MESSAGES)
 }
 
 function k(e) {
@@ -194,7 +194,7 @@ function Y(e, t) {
         _ = l > 0;
       if (!_ && a) continue;
       let p = !s && (!a || _) && d;
-      (p || _) && M(n, l, c) && (p && (r.unreadByType[I.W.CHANNEL] = true, r.unreadChannelId = t), _ && (f ? r.lowImportanceMentionCount += l : r.highImportanceMentionCount += l, r.mentionCounts[n.id] = {
+      (p || _) && j(n, l, c) && (p && (r.unreadByType[I.W.CHANNEL] = true, r.unreadChannelId = t), _ && (f ? r.lowImportanceMentionCount += l : r.highImportanceMentionCount += l, r.mentionCounts[n.id] = {
         count: l,
         isMentionLowImportance: f
       }))

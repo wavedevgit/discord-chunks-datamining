@@ -48,17 +48,17 @@ let p = {
       D = (0, o.Z)(w),
       L = t.modifiersData.popperOffsets,
       x = t.rects.reference,
-      j = t.rects.popper,
-      M = "function" == typeof A ? A(Object.assign({}, t.rects, {
+      M = t.rects.popper,
+      j = "function" == typeof A ? A(Object.assign({}, t.rects, {
         placement: t.placement
       })) : A,
-      k = "number" == typeof M ? {
-        mainAxis: M,
-        altAxis: M
+      k = "number" == typeof j ? {
+        mainAxis: j,
+        altAxis: j
       } : Object.assign({
         mainAxis: 0,
         altAxis: 0
-      }, M),
+      }, j),
       U = t.modifiersData.offset ? t.modifiersData.offset[t.placement] : null,
       G = {
         x: 0,
@@ -72,9 +72,9 @@ let p = {
           H = L[w],
           Y = H + C[Z],
           W = H - C[F],
-          K = T ? -j[V] / 2 : 0,
-          z = R === r.BL ? x[V] : j[V],
-          q = R === r.BL ? -j[V] : -x[V],
+          K = T ? -M[V] / 2 : 0,
+          z = R === r.BL ? x[V] : M[V],
+          q = R === r.BL ? -M[V] : -x[V],
           X = t.elements.arrow,
           Q = T && X ? (0, l.Z)(X) : {
             width: 0,
@@ -103,8 +103,8 @@ let p = {
           em = e_ - C[ef],
           eg = false !== [r.we, r.t$].indexOf(N),
           eE = null != (eu = null == U ? true : U[D]) ? eu : 0,
-          eb = eg ? eh : e_ - x[ep] - j[ep] - eE + k.altAxis,
-          ey = eg ? e_ + x[ep] + j[ep] - eE - k.altAxis : em,
+          eb = eg ? eh : e_ - x[ep] - M[ep] - eE + k.altAxis,
+          ey = eg ? e_ + x[ep] + M[ep] - eE - k.altAxis : em,
           eO = T && eg ? (0, s.q)(eb, e_, ey) : (0, s.u)(T ? eb : eh, e_, T ? ey : em);
         L[D] = eO, G[D] = eO - e_
       }

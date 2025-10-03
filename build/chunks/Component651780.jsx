@@ -54,9 +54,9 @@ function T(e) {
   let {
     appliedGuildBoosts: t,
     guildId: n
-  } = e, i = (0, O.gZ)(t, n), l = (0, O.nW)((0, O.Jh)(n));
+  } = e, i = (0, C.gZ)(t, n), l = (0, C.nW)((0, C.Jh)(n));
   if (null == i || null == l) return null;
-  let a = (0, O._k)(t, n);
+  let a = (0, C._k)(t, n);
   return (0, r.jsxs)(s.Wn, {
     messageType: s.QYI.WARNING,
     children: [(0, r.jsx)("div", {

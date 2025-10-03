@@ -260,11 +260,11 @@
     },
     x = t.createContext(null);
   x.displayName = "ElementsContext";
-  var j = function(e, t) {
+  var M = function(e, t) {
       if (!e) throw Error("Could not find Elements context; You need to wrap the part of your app that ".concat(t, " in an <Elements> provider."));
       return e
     },
-    M = function(e) {
+    j = function(e) {
       var n = e.stripe,
         r = e.options,
         i = e.children,
@@ -312,12 +312,12 @@
         value: s
       }, i)
     };
-  M.propTypes = {
+  j.propTypes = {
     stripe: O.any,
     options: O.object
   };
   var k = function(e) {
-      return j(t.useContext(x), e)
+      return M(t.useContext(x), e)
     },
     U = function() {
       return k("calls useElements()").elements
@@ -424,7 +424,7 @@
       var n = t.useContext(Z),
         r = t.useContext(x);
       if (n && r) throw Error("You cannot wrap the part of your app that ".concat(e, " in both <CheckoutProvider> and <Elements> providers."));
-      return n ? F(n, e) : j(r, e)
+      return n ? F(n, e) : M(r, e)
     },
     q = function() {
       K("calls useCheckout()");
@@ -494,13 +494,13 @@
               L.current = t, D(t), t && t.mount(x.current)
             }
           }, [C, N, u]);
-          var j = I(u);
+          var M = I(u);
           return t.useEffect(function() {
             if (L.current) {
-              var e = R(u, j, ["paymentRequest"]);
+              var e = R(u, M, ["paymentRequest"]);
               e && "update" in L.current && L.current.update(e)
             }
-          }, [u, j]), t.useLayoutEffect(function() {
+          }, [u, M]), t.useLayoutEffect(function() {
             return function() {
               if (L.current && "function" == typeof L.current.destroy) try {
                 L.current.destroy(), L.current = null
@@ -651,5 +651,5 @@
     eS = J("paymentMethodMessaging", $),
     eA = J("affirmMessage", $),
     eC = J("afterpayClearpayMessage", $);
-  e.AddressElement = eI, e.AffirmMessageElement = eA, e.AfterpayClearpayMessageElement = eC, e.AuBankAccountElement = el, e.CardCvcElement = ef, e.CardElement = ec, e.CardExpiryElement = ed, e.CardNumberElement = eu, e.CheckoutProvider = W, e.CurrencySelectorElement = ey, e.Elements = M, e.ElementsConsumer = G, e.EmbeddedCheckout = eo, e.EmbeddedCheckoutProvider = er, e.EpsBankElement = eg, e.ExpressCheckoutElement = eb, e.FpxBankElement = e_, e.IbanElement = ep, e.IdealBankElement = eh, e.LinkAuthenticationElement = ev, e.P24BankElement = em, e.PaymentElement = eE, e.PaymentMethodMessagingElement = eS, e.PaymentRequestButtonElement = eO, e.ShippingAddressElement = eT, e.useCheckout = q, e.useElements = U, e.useStripe = es
+  e.AddressElement = eI, e.AffirmMessageElement = eA, e.AfterpayClearpayMessageElement = eC, e.AuBankAccountElement = el, e.CardCvcElement = ef, e.CardElement = ec, e.CardExpiryElement = ed, e.CardNumberElement = eu, e.CheckoutProvider = W, e.CurrencySelectorElement = ey, e.Elements = j, e.ElementsConsumer = G, e.EmbeddedCheckout = eo, e.EmbeddedCheckoutProvider = er, e.EpsBankElement = eg, e.ExpressCheckoutElement = eb, e.FpxBankElement = e_, e.IbanElement = ep, e.IdealBankElement = eh, e.LinkAuthenticationElement = ev, e.P24BankElement = em, e.PaymentElement = eE, e.PaymentMethodMessagingElement = eS, e.PaymentRequestButtonElement = eO, e.ShippingAddressElement = eT, e.useCheckout = q, e.useElements = U, e.useStripe = es
 })

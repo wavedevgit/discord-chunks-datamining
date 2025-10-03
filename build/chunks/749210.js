@@ -73,9 +73,9 @@ function x(e, t) {
   }), e
 }
 
-function j(e, t) {
+function M(e, t) {
   if (null == e) return {};
-  var n, r, i = M(e, t);
+  var n, r, i = j(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -83,7 +83,7 @@ function j(e, t) {
   return i
 }
 
-function M(e, t) {
+function j(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -350,7 +350,7 @@ let F = {
     let {
       icon: r,
       unicodeEmoji: i
-    } = n, o = j(n, ["icon", "unicodeEmoji"]), s = null === r || (null == r ? true : r.startsWith("data:")) ? r : true, l = await a.tn.patch({
+    } = n, o = M(n, ["icon", "unicodeEmoji"]), s = null === r || (null == r ? true : r.startsWith("data:")) ? r : true, l = await a.tn.patch({
       url: N.ANM.GUILD_ROLE(e, t),
       body: x(D({}, o), {
         icon: s,

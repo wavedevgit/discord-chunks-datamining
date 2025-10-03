@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
 function g(e) {
   let {
     member: t
-  } = e, n = (0, i.e7)([E.Z], () => E.Z.getGuild(t.guildId), [t.guildId]), g = (0, u.mh)(t.userId, t.guildId), N = (0, u.mV)(t.userId, t.guildId), O = (0, u.LD)(t.userId), h = (0, u.wi)(t.userId, t.guildId);
+  } = e, n = (0, i.e7)([E.Z], () => E.Z.getGuild(t.guildId), [t.guildId]), g = (0, u.mh)(t.userId, t.guildId), N = (0, u.mV)(t.userId, t.guildId), h = (0, u.LD)(t.userId), O = (0, u.wi)(t.userId, t.guildId);
   return (l.useEffect(() => {
     (0, o.zO)(t.guildId)
   }, [t.guildId]), null == n) ? null : (0, r.jsx)(s.xJW, {
@@ -88,7 +88,7 @@ function g(e) {
         description: (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "text-default",
-          children: O
+          children: h
         })
       }), (0, r.jsx)(A._2, {
         icon: (0, r.jsx)(a.Vj, {
@@ -105,7 +105,7 @@ function g(e) {
         description: (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "text-default",
-          children: h
+          children: O
         })
       }), (0, r.jsx)(A._2, {
         icon: (0, r.jsx)(s.ejJ, {

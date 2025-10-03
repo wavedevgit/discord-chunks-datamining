@@ -2,14 +2,14 @@
 /** chunk id: 109161, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  F: () => h,
-  x: () => m
+  F: () => _,
+  x: () => p
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
-  Chunk981729 = require("./981729.jsx"),
+  Chunk28664 = require("./28664.jsx"),
   Chunk865672 = require("./865672.jsx"),
   Chunk218634 = require("./218634.js");
 
@@ -35,24 +35,7 @@ function d(e) {
   return e
 }
 
-function f(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function _(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-
-function p(e) {
+function f(e) {
   var t;
   let {
     color: n,
@@ -130,7 +113,7 @@ function p(e) {
   })
 }
 
-function h(e) {
+function _(e) {
   let {
     color: t,
     colors: n,
@@ -138,15 +121,15 @@ function h(e) {
     tooltip: a = true
   } = e;
   return null == t && null == n ? null : a ? (0, r.jsx)(s.u, {
-    text: i,
-    children: t => (0, r.jsx)("span", _(d({}, t), {
+    __unsupportedReactNodeAsText: i,
+    children: (0, r.jsx)("span", {
       "aria-hidden": true,
-      children: (0, r.jsx)(p, d({}, e))
-    }))
-  }) : (0, r.jsx)(p, d({}, e))
+      children: (0, r.jsx)(f, d({}, e))
+    })
+  }) : (0, r.jsx)(f, d({}, e))
 }
 
-function m(e) {
+function p(e) {
   let {
     color: t,
     colors: n,

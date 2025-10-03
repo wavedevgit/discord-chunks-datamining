@@ -51,28 +51,28 @@ function f(e, t) {
 function h(e) {
   var t, n, h;
   let {
-    rule: b,
-    onChangeRule: x
+    rule: x,
+    onChangeRule: b
   } = e, j = i.useCallback(e => {
-    x(f(p({}, b), {
-      triggerMetadata: f(p({}, b.triggerMetadata), {
+    b(f(p({}, x), {
+      triggerMetadata: f(p({}, x.triggerMetadata), {
         allowList: e
       })
     }))
-  }, [x, b]);
+  }, [b, x]);
   return (0, r.jsxs)("div", {
     className: g.cardContentsContainer,
     children: [(0, r.jsxs)(c.Z, {
       step: 1,
       header: m.intl.string(m.t.CX5YfX),
       children: [(0, r.jsx)(s.Z, {
-        rule: b,
-        onChangeRule: x
+        rule: x,
+        onChangeRule: b
       }), (0, r.jsx)(l.Z, {
         onChange: j,
-        initialValue: null == (t = b.triggerMetadata) ? true : t.allowList,
+        initialValue: null == (t = x.triggerMetadata) ? true : t.allowList,
         maxWordCount: u.I3,
-        collapsed: (null == (n = b.triggerMetadata) ? true : n.allowList) == null || (null == (h = b.triggerMetadata) ? true : h.allowList.length) === 0
+        collapsed: (null == (n = x.triggerMetadata) ? true : n.allowList) == null || (null == (h = x.triggerMetadata) ? true : h.allowList.length) === 0
       })]
     }), (0, r.jsx)(d.Z, {
       type: d.Z.Type.ARROW_DOWN
@@ -80,8 +80,8 @@ function h(e) {
       step: 2,
       header: m.intl.string(m.t["18TOiY"]),
       children: (0, r.jsx)(a.Z, {
-        rule: b,
-        onChangeRule: x
+        rule: x,
+        onChangeRule: b
       })
     }), (0, r.jsx)(d.Z, {
       type: d.Z.Type.CROSS
@@ -89,8 +89,8 @@ function h(e) {
       step: 3,
       header: m.intl.string(m.t.eq3gjo),
       children: (0, r.jsx)(o.Z, {
-        rule: b,
-        onChangeRule: x
+        rule: x,
+        onChangeRule: b
       })
     })]
   })

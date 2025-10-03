@@ -233,14 +233,14 @@ function x() {
   b.clear()
 }
 
-function j(e) {
+function M(e) {
   let {
     firstMessages: t
   } = e;
   return null != t && O(t, e => y(e))
 }
 
-function M(e) {
+function j(e) {
   let {
     threads: t
   } = e;
@@ -276,10 +276,10 @@ let U = new k(Chunk570140.Z, {
   LOAD_MESSAGES_AROUND_SUCCESS: v,
   SEARCH_MESSAGES_SUCCESS: T,
   MOD_VIEW_SEARCH_MESSAGES_SUCCESS: T,
-  LOAD_THREADS_SUCCESS: j,
-  LOAD_ARCHIVED_THREADS_SUCCESS: j,
+  LOAD_THREADS_SUCCESS: M,
+  LOAD_ARCHIVED_THREADS_SUCCESS: M,
   MESSAGE_EXPLICIT_CONTENT_SCAN_TIMEOUT: A,
-  LOAD_FORUM_POSTS: M,
+  LOAD_FORUM_POSTS: j,
   MESSAGE_CREATE: S,
   MESSAGE_UPDATE: C,
   MESSAGE_DELETE: w,

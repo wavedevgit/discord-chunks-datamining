@@ -1,5 +1,5 @@
 /** Chunk was on 76815 **/
-/** chunk id: 360649, original params: t,e,n (module,exports,require) **/
+/** chunk id: 360649, original params: t,n,e (module,exports,require) **/
 module.exports = {
   body: "body__7ce16",
   wumpus: "wumpus__7ce16",

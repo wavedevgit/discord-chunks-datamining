@@ -131,7 +131,7 @@ function L(e) {
     L = () => {
       (0, I.X)(t, I.B.STORE_EMBED)
     };
-  return (0, r.jsx)(j, {
+  return (0, r.jsx)(M, {
     appName: u.name,
     title: N.intl.formatToPlainString(N.t.XDRjs7, {
       appName: u.name
@@ -175,8 +175,8 @@ function x(e) {
     initialSubscribeForGuild: O
   });
   if (!w || null == b || null == m) return null;
-  let M = m.type === A.epS.SUBSCRIPTION,
-    k = !!M && (0, _.KW)(m.flags),
+  let j = m.type === A.epS.SUBSCRIPTION,
+    k = !!j && (0, _.KW)(m.flags),
     U = () => {
       (0, l.ZDy)(async () => {
         let {
@@ -192,8 +192,8 @@ function x(e) {
     },
     G = () => {
       (0, l.ZDy)(async () => {
-        let e = M ? (await Promise.resolve().then(n.bind(n, 519896))).SubscriptionDetailsModal : null,
-          t = M ? null : (await Promise.resolve().then(n.bind(n, 147496))).ItemDetailsModal;
+        let e = j ? (await Promise.resolve().then(n.bind(n, 519896))).SubscriptionDetailsModal : null,
+          t = j ? null : (await Promise.resolve().then(n.bind(n, 147496))).ItemDetailsModal;
         return n => {
           let i = () => {
             n.onClose(), U()
@@ -217,7 +217,7 @@ function x(e) {
       })
     },
     B = 12,
-    Z = M ? k ? (0, r.jsxs)(r.Fragment, {
+    Z = j ? k ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.tBG, {
         size: "custom",
         width: B,
@@ -255,7 +255,7 @@ function x(e) {
     Y = () => {
       (0, I.X)(b.id, I.B.SKU_EMBED, c)
     };
-  return (0, r.jsx)(j, {
+  return (0, r.jsx)(M, {
     appName: b.name,
     title: m.name,
     description: Z,
@@ -269,7 +269,7 @@ function x(e) {
         variant: "secondary",
         onClick: V,
         text: N.intl.string(N.t.DXYfjI)
-      }), M ? null != g ? (0, r.jsx)(S.pV, {
+      }), j ? null != g ? (0, r.jsx)(S.pV, {
         onClick: L,
         appId: b.id,
         subscriptionType: k ? "user" : "guild",
@@ -292,7 +292,7 @@ function x(e) {
   })
 }
 
-function j(e) {
+function M(e) {
   let {
     appName: t,
     title: n,

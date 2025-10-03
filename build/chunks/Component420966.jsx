@@ -33,17 +33,17 @@ function h(e) {
     guild: t,
     role: f,
     selectedSection: h,
-    setSelectedSection: b
-  } = e, x = i.useCallback(e => {
-    b(e)
-  }, [b]), j = (0, l.e7)([d.Z], () => {
+    setSelectedSection: x
+  } = e, b = i.useCallback(e => {
+    x(e)
+  }, [x]), j = (0, l.e7)([d.Z], () => {
     var e;
     return null == (e = d.Z.getRoleMemberCount(t.id)) ? true : e[f.id]
-  }, [f.id, t.id]), v = (0, c.fI)(f), _ = (0, u.Z)(t.id, f);
+  }, [f.id, t.id]), _ = (0, c.fI)(f), v = (0, u.Z)(t.id, f);
   i.useEffect(() => {
-    v && b(m.ZI.PERMISSIONS)
-  }, [v, b]);
-  let O = (0, o.e)(t, f);
+    _ && x(m.ZI.PERMISSIONS)
+  }, [_, x]);
+  let C = (0, o.e)(t, f);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: p.titleContainer,
@@ -54,7 +54,7 @@ function h(e) {
         children: g.intl.format(g.t.BUdGkJ, {
           roleName: f.name
         })
-      }), O ? (0, r.jsx)(s.P3F, {
+      }), C ? (0, r.jsx)(s.P3F, {
         className: p.menu,
         onClick: function(e) {
           (0, a.jW)(e, async () => {
@@ -102,20 +102,20 @@ function h(e) {
           color: "currentColor"
         })
       }) : null]
-    }), null != _ ? (0, r.jsx)(s.Wn, {
+    }), null != v ? (0, r.jsx)(s.Wn, {
       messageType: s.QYI.WARNING,
-      children: _
+      children: v
     }) : null, (0, r.jsxs)(s.njP, {
       className: p.tabBar,
       "aria-label": g.intl.string(g.t["+1H47u"]),
       selectedItem: h,
       type: "top",
       look: "brand",
-      onItemSelect: x,
+      onItemSelect: b,
       children: [(0, r.jsx)(s.njP.Item, {
         className: p.tabBarItem,
         id: m.ZI.DISPLAY,
-        disabled: v,
+        disabled: _,
         children: g.intl.string(g.t.hmdom5)
       }), (0, r.jsx)(s.njP.Item, {
         className: p.tabBarItem,
@@ -124,13 +124,13 @@ function h(e) {
       }), (0, r.jsx)(s.njP.Item, {
         className: p.tabBarItem,
         id: m.ZI.VERIFICATIONS,
-        disabled: v,
+        disabled: _,
         children: g.intl.string(g.t["5//Mur"])
       }), (0, r.jsx)(s.njP.Item, {
         className: p.tabBarItem,
         id: m.ZI.MEMBERS,
-        disabled: v,
-        children: v ? g.intl.string(g.t["kg//+/"]) : g.intl.formatToPlainString(g.t.bHnZWV, {
+        disabled: _,
+        children: _ ? g.intl.string(g.t["kg//+/"]) : g.intl.formatToPlainString(g.t.bHnZWV, {
           numMembers: String(j)
         })
       })]

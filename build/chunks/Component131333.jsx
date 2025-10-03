@@ -106,7 +106,7 @@ function x() {
   })
 }
 
-function j(e) {
+function M(e) {
   if (null == e) return "enter";
   switch (e) {
     case "enter":
@@ -117,7 +117,7 @@ function j(e) {
       return "enter"
   }
 }
-let M = Chunk647438.forwardRef(function(e, t) {
+let j = Chunk647438.forwardRef(function(e, t) {
   let {
     sprites: n
   } = e, [o, l] = i.useState(null), {
@@ -167,7 +167,7 @@ let M = Chunk647438.forwardRef(function(e, t) {
 function k(e) {
   let {
     children: t
-  } = e, n = i.useRef({}), [a, s] = i.useState(null), l = j(a), _ = i.useRef(null), [h, m] = i.useState(false), g = i.useRef("jack_o_lantern"), E = (0, u.bp)(), b = i.useCallback(e => {
+  } = e, n = i.useRef({}), [a, s] = i.useState(null), l = M(a), _ = i.useRef(null), [h, m] = i.useState(false), g = i.useRef("jack_o_lantern"), E = (0, u.bp)(), b = i.useCallback(e => {
     if (!h) {
       let t = D(e);
       null != t && (g.current = t, m(true), s(null))
@@ -195,7 +195,7 @@ function k(e) {
     value: y,
     children: [t, Object.keys(w).map(e => {
       let t = w[e];
-      return (0, r.jsx)(M, {
+      return (0, r.jsx)(j, {
         ref: t => {
           null != t ? n.current[e] = t : delete n.current[e]
         },

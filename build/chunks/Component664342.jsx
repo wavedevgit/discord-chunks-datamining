@@ -60,7 +60,7 @@ function Z(e, t) {
   }), e
 }
 
-function P(e) {
+function T(e) {
   let {
     channel: t
   } = e, [n, a] = i.useState(false), s = i.useRef(null);
@@ -78,7 +78,7 @@ function P(e) {
     autoInvert: false,
     onRequestClose: () => a(false),
     renderPopout: function(e) {
-      return (0, r.jsx)(T, Z(S({}, e), {
+      return (0, r.jsx)(P, Z(S({}, e), {
         channel: t
       }))
     },
@@ -98,18 +98,18 @@ function P(e) {
   })
 }
 
-function T(e) {
+function P(e) {
   let {
     channel: t,
     closePopout: n,
     onSelect: i
-  } = e, y = (0, c.Z)(t, "Sidebar Overflow"), _ = (0, u.Z)(t), x = (0, f.Z)(t), v = (0, g.Z)(t), C = (0, a.Z)(t), S = (0, d.Z)(t), Z = (0, h.Z)(t.id), P = (0, p.Z)(t), T = (0, o.Z)(t), N = (0, s.Z)(t), R = (0, b.Z)({
+  } = e, y = (0, c.Z)(t, "Sidebar Overflow"), _ = (0, u.Z)(t), O = (0, f.Z)(t), v = (0, g.Z)(t), C = (0, a.Z)(t), S = (0, d.Z)(t), Z = (0, h.Z)(t.id), T = (0, p.Z)(t), P = (0, o.Z)(t), N = (0, s.Z)(t), R = (0, b.Z)({
     id: t.id,
     label: E.intl.string(E.t.DQ797u)
   }), w = (0, m.Z)(t);
 
   function A() {
-    (0, O.Kh)(t.id)
+    (0, j.Kh)(t.id)
   }
   return (0, r.jsxs)(l.v2r, {
     navId: "thread-context",
@@ -123,9 +123,9 @@ function T(e) {
         action: A
       })]
     }), (0, r.jsxs)(l.kSQ, {
-      children: [x, v]
+      children: [O, v]
     }), (0, r.jsxs)(l.kSQ, {
-      children: [P, _, Z]
+      children: [T, _, Z]
     }), (0, r.jsxs)(l.kSQ, {
       children: [(0, r.jsx)(l.sNh, {
         id: "search",
@@ -133,7 +133,7 @@ function T(e) {
         icon: l.rgF,
         action: function() {
           A(), setTimeout(() => {
-            j.S.dispatch(I.CkL.FOCUS_SEARCH, {
+            x.S.dispatch(I.CkL.FOCUS_SEARCH, {
               prefillCurrentChannel: false
             })
           }, 2e3)
@@ -143,11 +143,11 @@ function T(e) {
         label: E.intl.string(E.t["2BSH7u"]),
         icon: l.rgF,
         action: function() {
-          A(), j.S.dispatch(I.CkL.TOGGLE_CHANNEL_PINS)
+          A(), x.S.dispatch(I.CkL.TOGGLE_CHANNEL_PINS)
         }
       })]
     }), (0, r.jsxs)(l.kSQ, {
-      children: [w, C, S, T]
+      children: [w, C, S, P]
     }), (0, r.jsxs)(l.kSQ, {
       children: [N, R]
     })]
@@ -162,9 +162,9 @@ function N(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [t.isForumPost() ? null : (0, r.jsx)(v.Z, {
       channel: t
-    }), t.isModeratorReportChannel() ? (0, r.jsx)(x.Z, {
+    }), t.isModeratorReportChannel() ? (0, r.jsx)(O.Z, {
       channel: t
-    }) : null, (0, r.jsx)(P, {
+    }) : null, (0, r.jsx)(T, {
       channel: t
     }), (0, r.jsx)(_.ZP.Icon, {
       icon: l.Dio,

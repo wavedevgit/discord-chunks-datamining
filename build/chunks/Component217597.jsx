@@ -2,66 +2,50 @@
 /** chunk id: 217597, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => s
+  Z: () => a
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk481060 = require("./481060.js"),
+var Chunk28664 = require("./28664.jsx"),
+  Chunk481060 = require("./481060.js"),
   Chunk49792 = require("./49792.js");
 
-function s(e) {
+function a(e) {
   let {
     label: t,
     sublabel: n,
-    value: s,
-    additionalContent: a,
-    tooltip: o
+    value: a,
+    additionalContent: o,
+    tooltip: c
   } = e;
   return (0, r.jsxs)("div", {
-    className: l.metricCard,
+    className: s.metricCard,
     "aria-label": t,
     children: [(0, r.jsxs)("div", {
-      className: l.metricCardLabelContainer,
-      children: [(0, r.jsx)(i.Text, {
-        className: l.metricCardLabel,
+      className: s.metricCardLabelContainer,
+      children: [(0, r.jsx)(l.Text, {
+        className: s.metricCardLabel,
         variant: "text-xs/medium",
         color: "interactive-normal",
         "aria-hidden": true,
         children: t
-      }), null != o && (0, r.jsx)(i.ua7, {
-        text: o,
-        children: e => (0, r.jsx)(i.d3s, function(e) {
-          for (var t = 1; t < arguments.length; t++) {
-            var n = null != arguments[t] ? arguments[t] : {},
-              r = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-              return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), r.forEach(function(t) {
-              var r;
-              r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: true,
-                configurable: true,
-                writable: true
-              }) : e[t] = r
-            })
-          }
-          return e
-        }({
+      }), null != c && (0, r.jsx)(i.u, {
+        text: c,
+        children: (0, r.jsx)(l.d3s, {
           size: "xs",
           color: "currentColor",
-          className: l.__invalid_labelTooltipIcon
-        }, e))
-      }), null != n ? (0, r.jsx)(i.Text, {
+          className: s.__invalid_labelTooltipIcon
+        })
+      }), null != n ? (0, r.jsx)(l.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
         children: n
       }) : null]
-    }), (0, r.jsx)(i.Text, {
+    }), (0, r.jsx)(l.Text, {
       tag: "span",
       variant: "heading-xl/medium",
       color: "header-primary",
-      children: s
-    }), a]
+      children: a
+    }), o]
   })
 }

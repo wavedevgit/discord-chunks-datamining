@@ -38,7 +38,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk666707 = require("./666707.js");
 
-function M(e, t, n) {
+function j(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -54,7 +54,7 @@ function k(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      M(e, t, n[t])
+      j(e, t, n[t])
     })
   }
   return e
@@ -112,17 +112,17 @@ function B(e) {
     } = n;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: o()(j.skuCard, j.promotionCard),
+      className: o()(M.skuCard, M.promotionCard),
       children: [(0, r.jsxs)("div", {
-        className: j.mainPromotionCardContainer,
+        className: M.mainPromotionCardContainer,
         children: [(0, r.jsxs)("div", {
-          className: j.promotionCardLeftContainer,
+          className: M.promotionCardLeftContainer,
           children: [(0, r.jsx)("div", {
-            className: j.promotionIcon,
+            className: M.promotionIcon,
             children: (0, r.jsx)("img", {
               alt: "",
               src: v,
-              className: j.promotionIconImage
+              className: M.promotionIconImage
             })
           }), (0, r.jsxs)("div", {
             children: [(0, r.jsx)(d.X6q, {
@@ -131,12 +131,12 @@ function B(e) {
             }), (0, r.jsx)(d.Text, {
               variant: "text-sm/normal",
               color: "text-default",
-              className: j.__invalid_promotionText,
+              className: M.__invalid_promotionText,
               children: t
             })]
           })]
         }), !l && (0, r.jsx)(u.zx, {
-          className: j.promotionCardButton,
+          className: M.promotionCardButton,
           color: u.zx.Colors.BRAND,
           size: u.zx.Sizes.SMALL,
           onClick: () => m(true),
@@ -144,7 +144,7 @@ function B(e) {
           children: S
         })]
       }), c && (0, r.jsx)(d.Text, {
-        className: j.promotionLegalese,
+        className: M.promotionLegalese,
         variant: "text-xs/normal",
         color: "header-secondary",
         children: h.Z.parse(N, false, {
@@ -183,7 +183,7 @@ let Z = function() {
     activeOutboundPromotions: g,
     claimedEndedOutboundPromotions: E,
     claimedOutboundPromotionCodeMap: y,
-    addClaimedOutboundPromotionCode: M
+    addClaimedOutboundPromotionCode: j
   } = (0, Chunk725727.lG)(), k = Chunk178100.length + Chunk518638.length > 0, U = Chunk163684.g.useExperiment({
     location: "EntitlementGifts"
   }, {
@@ -255,13 +255,13 @@ let Z = function() {
             return (0, r.jsx)(B, {
               outboundPromotion: n,
               code: t,
-              addClaimedOutboundPromotionCode: M,
+              addClaimedOutboundPromotionCode: j,
               disabled: !a
             }, n.id)
           }), Chunk178100.map(e => (0, r.jsx)(B, {
             outboundPromotion: e,
             code: y[e.id],
-            addClaimedOutboundPromotionCode: M,
+            addClaimedOutboundPromotionCode: j,
             disabled: !a
           }, e.id)), null != exports ? (0, Chunk951288.jsx)(Chunk317941.Z, {
             className: Chunk666707.skuCard,
@@ -320,7 +320,7 @@ let Z = function() {
             giftStyle: i
           } = (0, A.Z0)(e);
           return (0, r.jsx)(R.Z, {
-            className: j.skuCard,
+            className: M.skuCard,
             skuId: t,
             subscriptionPlanId: n,
             entitlements: s[e],

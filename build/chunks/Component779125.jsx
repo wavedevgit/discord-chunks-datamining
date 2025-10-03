@@ -2,11 +2,12 @@
 /** chunk id: 779125, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => y
+  Z: () => O
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk442837 = require("./442837.js"),
+  Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk475179 = require("./475179.js"),
   Chunk287734 = require("./287734.js"),
@@ -22,51 +23,43 @@ var Chunk442837 = require("./442837.js"),
   Chunk900849 = require("./900849.js"),
   Chunk981631 = require("./981631.js");
 
-function b(e, t) {
+function y(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
   if (null == e || null == t) return;
-  let r = _.Z.getGuild(e);
-  if ((null == r ? true : r.joinedAt) == null) return void g.Ub(e, {}, {
+  let r = p.Z.getGuild(e);
+  if ((null == r ? true : r.joinedAt) == null) return void E.Ub(e, {}, {
     channelId: t
   });
-  let i = f.Z.getChannel(t);
-  if (null != i && (0, d.bw)(i.type)) {
+  let i = _.Z.getChannel(t);
+  if (null != i && (0, f.bw)(i.type)) {
     if (n) {
-      o.Z.updateChatOpen(i.id, true), (0, u.uL)(E.Z5c.CHANNEL(e, t));
+      s.Z.updateChatOpen(i.id, true), (0, d.uL)(b.Z5c.CHANNEL(e, t));
       return
     }
-    s.default.selectVoiceChannel(i.id);
+    l.default.selectVoiceChannel(i.id);
     return
-  }(0, u.uL)(E.Z5c.CHANNEL(e, t))
+  }(0, d.uL)(b.Z5c.CHANNEL(e, t))
 }
 
-function y(e) {
+function O(e) {
   let {
     channel: t,
     onClick: n,
-    beforeTransition: o,
-    className: s,
-    openChatWithoutConnecting: u
-  } = e, d = (0, i.e7)([h.default, p.Z], () => null == t ? "" : (0, l.F6)(t, h.default, p.Z), [t]);
-  return (0, r.jsx)(a.ua7, {
-    text: d,
+    beforeTransition: s,
+    className: l,
+    openChatWithoutConnecting: d
+  } = e, f = (0, i.e7)([m.default, h.Z], () => null == t ? "" : (0, c.F6)(t, m.default, h.Z), [t]);
+  return (0, r.jsx)(a.u, {
+    __unsupportedReactNodeAsText: f,
     position: "top",
-    children: e => {
-      let {
-        onMouseEnter: i,
-        onMouseLeave: l
-      } = e;
-      return (0, r.jsx)(c.Z, {
-        role: "link",
-        className: s,
-        onClick: e => {
-          e.stopPropagation(), null != n ? n() : (null != o && o(), (0, a.pTH)(), b(null == t ? true : t.guild_id, null == t ? true : t.id, u))
-        },
-        onMouseEnter: i,
-        onMouseLeave: l,
-        iconType: (0, m.wl)(t),
-        children: d
-      })
-    }
+    children: (0, r.jsx)(u.Z, {
+      role: "link",
+      className: l,
+      onClick: e => {
+        e.stopPropagation(), null != n ? n() : (null != s && s(), (0, o.pTH)(), y(null == t ? true : t.guild_id, null == t ? true : t.id, d))
+      },
+      iconType: (0, g.wl)(t),
+      children: f
+    })
   })
 }

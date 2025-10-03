@@ -34,7 +34,6 @@ module.exports = {
   messageCountText: "messageCountText_faa96b",
   newMessageCount: "newMessageCount_faa96b",
   updateReactionButton: "updateReactionButton_faa96b",
-  timestampTooltip: "timestampTooltip_faa96b",
   blockedMessage: "blockedMessage_faa96b",
   withNewBadgeOverflow: "withNewBadgeOverflow_faa96b"
 }

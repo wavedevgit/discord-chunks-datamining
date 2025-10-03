@@ -55,7 +55,7 @@ function w(e) {
 
 function D(e) {
   N.has(e) || (N.add(e), s()(p.Z.getMutableGuildChannelsForGuild(e)).values().forEach(e => {
-    j(e) && C.set(e.id, e)
+    M(e) && C.set(e.id, e)
   }))
 }
 
@@ -63,7 +63,7 @@ function L(e) {
   let t = R[e];
   if (null != t) return t;
   let n = p.Z.getChannel(e);
-  return null != n && n.isGuildStageVoice() && (D(n.guild_id), j(n)) ? x(e) : null
+  return null != n && n.isGuildStageVoice() && (D(n.guild_id), M(n)) ? x(e) : null
 }
 
 function x(e) {
@@ -71,11 +71,11 @@ function x(e) {
   return null == t && (t = new v.ZP(e), R[e] = t, t.rebuild()), t
 }
 
-function j(e) {
+function M(e) {
   return null != e && e.isGuildStageVoice() && O.ZP.countVoiceStatesForChannel(e.id) > 0
 }
 
-function M(e, t) {
+function j(e, t) {
   let n = p.Z.getChannel(e);
   return null != n && n.isGuildStageVoice() ? 0 === t.size() ? B(n.id) : null == C.get(n.id) && C.set(n.id, n) : B(e)
 }
@@ -84,7 +84,7 @@ function k(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : w();
   return t.reduce((t, n) => {
     let r = x(n);
-    return e(r) ? (M(n, r), true) : t
+    return e(r) ? (j(n, r), true) : t
   }, false)
 }
 

@@ -1,7 +1,7 @@
 /** Chunk was on 73323 **/
 /** chunk id: 499692, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => S
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -73,7 +73,7 @@ function I(e) {
     })]
   })
 }
-let O = function(e) {
+let S = function(e) {
   let {
     onSelectApplication: t
   } = e, n = (0, u.e7)([h.default], () => h.default.onlyShowPreviewAppCollections) ? s.E.PREVIEW : s.E.ACTIVE, i = (0, u.e7)([_.Z], () => _.Z.getFetchState({

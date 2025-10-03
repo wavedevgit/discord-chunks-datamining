@@ -91,19 +91,19 @@ function S(e) {
         }))
       })
     },
-    j = (0, r.jsx)(s.Z, {
+    M = (0, r.jsx)(s.Z, {
       className: y.guildIcon,
       guild: N,
       size: s.Z.Sizes.MINI
     }),
-    M = (0, m.OY)(P, N.name);
+    j = (0, m.OY)(P, N.name);
   if (null != (null != (O = P.dmsDisabledUntil) ? O : P.invitesDisabledUntil) && w) return (0, r.jsxs)(o.qXd, {
     className: y.notice,
     color: o.DM8.NEUTRAL,
     children: [(0, r.jsx)(o.RyX, {
       onClick: I,
       noticeType: g.kVF.GUILD_RAID_NOTIFICATION
-    }), j, M, (0, r.jsx)(o.EyT, {
+    }), M, j, (0, r.jsx)(o.EyT, {
       className: y.actionButton,
       onClick: () => x(false),
       children: (0, r.jsxs)("div", {
@@ -131,7 +131,7 @@ function S(e) {
     children: [(0, r.jsx)(o.RyX, {
       onClick: I,
       noticeType: g.kVF.GUILD_RAID_NOTIFICATION
-    }), j, k, !U && (0, r.jsx)(o.EyT, {
+    }), M, k, !U && (0, r.jsx)(o.EyT, {
       className: y.actionButton,
       onClick: () => x(true),
       children: (0, r.jsx)("div", {

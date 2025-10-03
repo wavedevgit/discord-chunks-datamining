@@ -39,13 +39,13 @@ function c(e) {
       var r, n, i = function(e, t) {
         if (null == e) return {};
         var r, n, i = {},
-          o = Object.keys(e);
-        for (n = 0; n < o.length; n++) r = o[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
+          a = Object.keys(e);
+        for (n = 0; n < a.length; n++) r = a[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
         return i
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var o = Object.getOwnPropertySymbols(e);
-        for (n = 0; n < o.length; n++) r = o[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
+        var a = Object.getOwnPropertySymbols(e);
+        for (n = 0; n < a.length; n++) r = a[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
       }
       return i
     }(e, ["user", "widget", "containerClassName"]);
@@ -54,12 +54,12 @@ function c(e) {
     widget: s,
     className: u
   }, d), r = r = {
-    children: s.games.length > 0 ? (0, n.jsx)(a.Z, l({
+    children: s.games.length > 0 ? (0, n.jsx)(o.Z, l({
       userId: c.id,
       games: s.games,
       widgetType: s.type,
       disableInteraction: d.disableInteraction
-    }, d)) : (0, n.jsx)(o.Z, {
+    }, d)) : (0, n.jsx)(a.Z, {
       widgetType: s.type
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {

@@ -40,7 +40,7 @@ let b = Chunk647438.memo(function(e) {
   i.useLayoutEffect(() => {
     setTimeout(a, 350)
   }, [j, a]);
-  let [T, w] = i.useState(!j), O = (0, c.q_F)({
+  let [T, w] = i.useState(!j), S = (0, c.q_F)({
     opacity: +!!j,
     maxHeight: 500 * !!j,
     config: {
@@ -49,7 +49,7 @@ let b = Chunk647438.memo(function(e) {
     onRest: () => w(!j)
   });
   return null != t.topic && t.topic.length > 0 ? (0, r.jsx)(s.animated.div, {
-    style: O,
+    style: S,
     className: T ? x.hiddenVisually : true,
     children: (0, r.jsxs)("div", {
       className: x.container,

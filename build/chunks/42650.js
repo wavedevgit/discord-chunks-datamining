@@ -112,12 +112,12 @@ let v = (0, Chunk647438.createContext)(null),
       isFocused: D,
       isFocusVisible: L,
       focusProps: x
-    } = (0, _.F)(), j = N || R, {
-      hoverProps: M,
+    } = (0, _.F)(), M = N || R, {
+      hoverProps: j,
       isHovered: k
     } = (0, p.X)({
       ...e,
-      isDisabled: j
+      isDisabled: M
     }), U = (0, i.aX)({
       ...e,
       defaultClassName: "react-aria-Checkbox",
@@ -137,7 +137,7 @@ let v = (0, Chunk647438.createContext)(null),
       global: true
     });
     return delete G.id, delete G.onClick, O.createElement("label", {
-      ...(0, u.d)(G, S, M, U),
+      ...(0, u.d)(G, S, j, U),
       ref: t,
       slot: e.slot || true,
       "data-selected": C || true,

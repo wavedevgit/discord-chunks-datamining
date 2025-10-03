@@ -2,7 +2,7 @@
 /** chunk id: 399829, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => Z
+  Z: () => R
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -11,6 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk392711 = require("./392711.js"),
   o = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
+  Chunk28664 = require("./28664.jsx"),
   Chunk477690 = require("./477690.js"),
   Chunk481060 = require("./481060.js"),
   Chunk179360 = require("./179360.js"),
@@ -30,7 +31,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk744834 = require("./744834.js");
 
-function S(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -38,34 +39,8 @@ function S(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-
-function T(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      S(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function P(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
-    }
-    return n
-  })(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-let w = (0, Chunk624138.Mg)(Chunk477690.Z.GUILD_SETTINGS_PREMIUM_TIER_STATUS_PROGRESS_WITH_SUBSCRIPTIONS_MARGIN_TOP);
-class R extends Chunk647438.Component {
+let P = (0, Chunk624138.Mg)(Chunk477690.Z.GUILD_SETTINGS_PREMIUM_TIER_STATUS_PROGRESS_WITH_SUBSCRIPTIONS_MARGIN_TOP);
+class w extends Chunk647438.Component {
   componentDidMount() {
     this.measure();
     let {
@@ -96,7 +71,7 @@ class R extends Chunk647438.Component {
       a = e.map(e => {
         var n;
         return {
-          numRequired: N.oCV[e.tier],
+          numRequired: E.oCV[e.tier],
           name: (0, y.nW)(e.tier),
           y: null != (n = t[e.tier]) ? n : 0,
           key: e.tier
@@ -104,7 +79,7 @@ class R extends Chunk647438.Component {
       });
     return (0, r.jsx)(b.Z, {
       currentTier: l,
-      className: i > 0 ? I.progressWithSubscriptions : I.progress,
+      className: i > 0 ? S.progressWithSubscriptions : S.progress,
       progress: i,
       tiers: [s, ...a],
       initialAnimationDelay: 500,
@@ -167,7 +142,7 @@ class R extends Chunk647438.Component {
             tiers: l,
             tierIndex: i,
             onSetRef: this.setTierRef,
-            isAnimatedTo: N.oCV[this.state.animatedTier] >= N.oCV[r.tier],
+            isAnimatedTo: E.oCV[this.state.animatedTier] >= E.oCV[r.tier],
             subscriptionCount: n,
             guildId: e
           }))]
@@ -176,10 +151,10 @@ class R extends Chunk647438.Component {
     })
   }
   constructor(...e) {
-    super(...e), S(this, "tierRefs", {}), S(this, "defaultTierRef", i.createRef()), S(this, "subscribersPopoutTargetRef", i.createRef()), S(this, "state", {
+    super(...e), T(this, "tierRefs", {}), T(this, "defaultTierRef", i.createRef()), T(this, "subscribersPopoutTargetRef", i.createRef()), T(this, "state", {
       tierPositions: null,
-      animatedTier: N.Eu4.NONE
-    }), S(this, "measure", () => {
+      animatedTier: E.Eu4.NONE
+    }), T(this, "measure", () => {
       let {
         uniqueSubscriberCount: e
       } = this.props, t = this.defaultTierRef.current;
@@ -191,57 +166,79 @@ class R extends Chunk647438.Component {
         if (null == i) return;
         let {
           top: l
-        } = i.getBoundingClientRect(), s = e > 0 ? w : 0;
+        } = i.getBoundingClientRect(), s = e > 0 ? P : 0;
         r[t] = l - n + 32 - s
       }
       this.setState({
         tierPositions: r
       })
-    }), S(this, "setTierRef", (e, t) => {
+    }), T(this, "setTierRef", (e, t) => {
       this.tierRefs[t.tier] = e
-    }), S(this, "handleAnimatedTier", e => {
+    }), T(this, "handleAnimatedTier", e => {
       this.setState({
         animatedTier: e.key
       })
-    }), S(this, "renderSubscriber", (e, t, n) => {
+    }), T(this, "renderSubscriber", (e, t, n) => {
       var i;
-      return null == e ? null : (0, r.jsx)(u.ua7, {
-        text: (0, r.jsx)(g.Z, {
+      return null == e ? null : (0, r.jsx)(d.u, {
+        __unsupportedReactNodeAsText: (0, r.jsx)(p.Z, {
           user: e.user,
           nick: e.nick
         }),
         "aria-label": null != (i = e.nick) ? i : e.user.tag,
-        children: n => (0, r.jsx)(u.qEK, P(T({}, n), {
+        children: (0, r.jsx)(m.qEK, {
           tabIndex: false,
           src: null != e ? e.user.getAvatarURL(this.props.guildId, 32) : null,
-          className: s()(I.avatar, t, null != t ? I.subscriberMask : null),
-          size: u.EFr.SIZE_32
-        }))
+          className: s()(S.avatar, t, null != t ? S.subscriberMask : null),
+          size: m.EFr.SIZE_32
+        })
       }, n)
-    }), S(this, "renderSubscribersPopout", () => (0, r.jsx)(u.Ttm, {
-      className: I.subscribersPopout,
+    }), T(this, "renderSubscribersPopout", () => (0, r.jsx)(m.Ttm, {
+      className: S.subscribersPopout,
       children: this.props.subscribers.map(e => (0, r.jsxs)("div", {
-        className: I.subscribersPopoutUser,
-        children: [(0, r.jsx)(u.qEK, {
+        className: S.subscribersPopoutUser,
+        children: [(0, r.jsx)(m.qEK, {
           src: e.user.getAvatarURL(this.props.guildId, 32),
           "aria-label": e.user.username,
-          size: u.EFr.SIZE_32,
-          className: I.avatar
+          size: m.EFr.SIZE_32,
+          className: S.avatar
         }), (0, r.jsx)("div", {
-          className: I.subscribersPopoutUsername,
-          children: (0, r.jsx)(g.Z, {
+          className: S.subscribersPopoutUsername,
+          children: (0, r.jsx)(p.Z, {
             user: e.user,
             nick: e.nick
           })
         })]
       }, e.user.id))
-    })), S(this, "renderMoreSubscribers", (e, t, n) => (0, r.jsx)(u.yRy, {
+    })), T(this, "renderMoreSubscribers", (e, t, n) => (0, r.jsx)(m.yRy, {
       targetElementRef: this.subscribersPopoutTargetRef,
       renderPopout: this.renderSubscribersPopout,
       position: "bottom",
       autoInvert: false,
-      children: t => (0, r.jsx)("div", P(T({
-        className: I.moreSubscribers
+      children: t => (0, r.jsx)("div", function(e, t) {
+        return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+          var n = Object.keys(e);
+          if (Object.getOwnPropertySymbols) {
+            var r = Object.getOwnPropertySymbols(e);
+            n.push.apply(n, r)
+          }
+          return n
+        })(Object(t)).forEach(function(n) {
+          Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+        }), e
+      }(function(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var n = null != arguments[t] ? arguments[t] : {},
+            r = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(n, e).enumerable
+          }))), r.forEach(function(t) {
+            T(e, t, n[t])
+          })
+        }
+        return e
+      }({
+        className: S.moreSubscribers
       }, t), {
         ref: this.subscribersPopoutTargetRef,
         children: e
@@ -249,7 +246,7 @@ class R extends Chunk647438.Component {
     }, n))
   }
 }
-let Z = Chunk442837.ZP.connectStores([Chunk430824.Z, Chunk905128.Z, Chunk999382.Z, Chunk899667.Z, Chunk594174.default, Chunk271383.ZP], () => {
+let R = Chunk442837.ZP.connectStores([Chunk430824.Z, Chunk905128.Z, Chunk999382.Z, Chunk899667.Z, Chunk594174.default, Chunk271383.ZP], () => {
   var e, t;
   let n = Chunk999382.Z.getGuildId(),
     r = null != (t = null == (e = Chunk430824.Z.getGuild(require)) ? true : module.premiumTier) ? exports : Chunk981631.Eu4.NONE,
@@ -267,4 +264,4 @@ let Z = Chunk442837.ZP.connectStores([Chunk430824.Z, Chunk905128.Z, Chunk999382.
     subscribers: Chunk392711,
     uniqueSubscriberCount: s.size()
   }
-})(R)
+})(w)

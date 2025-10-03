@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk361623 = require("./361623.js"),
   Chunk583140 = require("./583140.js");
-let j = {
+let x = {
     [Chunk228168.qb.WIDGET_ADDED]: {
       message: Chunk388032.intl.string(Chunk388032.t.fFP1U1),
       icon: (0, Chunk951288.jsx)(Chunk481060.dz2, {
@@ -52,7 +52,7 @@ let j = {
       type: Chunk481060.ToastType.FAILURE
     }
   },
-  x = e => {
+  j = e => {
     let {
       message: n,
       icon: t,
@@ -77,7 +77,7 @@ let j = {
       onAutoHide: t
     } = e, r = (0, u.be)(), m = (0, a.e7)([d.Z], () => d.Z.useReducedMotion), [p, h] = i.useState(false), [v, g] = i.useState(null);
     i.useEffect(() => {
-      null !== r ? (h(true), g(j[r]), c.uvj.announce(j[r].message)) : h(false)
+      null !== r ? (h(true), g(x[r]), c.uvj.announce(x[r].message)) : h(false)
     }, [r]);
     let b = (0, c.Yzy)(p, {
       from: {
@@ -110,7 +110,7 @@ let j = {
       children: b((e, t) => t && null !== v && (0, l.jsx)(s.animated.div, {
         className: o()(n, f.toastContainer),
         style: e,
-        children: (0, l.jsx)(x, function(e) {
+        children: (0, l.jsx)(j, function(e) {
           for (var n = 1; n < arguments.length; n++) {
             var t = null != arguments[n] ? arguments[n] : {},
               l = Object.keys(t);

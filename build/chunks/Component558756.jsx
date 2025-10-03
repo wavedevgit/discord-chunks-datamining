@@ -1,4 +1,4 @@
-/** Chunk was on 9665 **/
+/** Chunk was on 50118 **/
 /** chunk id: 558756, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   W: () => c
@@ -14,8 +14,8 @@ let c = e => {
     className: t,
     channel: c,
     user: u
-  } = e, d = (0, i.e7)([o.ZP], () => o.ZP.isChannelMuted(null, c.id));
-  return u.bot ? (0, r.jsx)(l.zx, {
+  } = e, d = (0, r.e7)([o.ZP], () => o.ZP.isChannelMuted(null, c.id));
+  return u.bot ? (0, i.jsx)(l.zx, {
     className: t,
     size: l.Ph.SMALL,
     color: d ? l.zx.Colors.PRIMARY : l.zx.Colors.RED,
@@ -24,20 +24,20 @@ let c = e => {
         let {
           default: e
         } = await n.e("83545").then(n.bind(n, 53149));
-        return t => (0, r.jsx)(e, function(e) {
+        return t => (0, i.jsx)(e, function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
-              r = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              i = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
               return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), r.forEach(function(t) {
-              var r;
-              r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
+            }))), i.forEach(function(t) {
+              var i;
+              i = n[t], t in e ? Object.defineProperty(e, t, {
+                value: i,
                 enumerable: true,
                 configurable: true,
                 writable: true
-              }) : e[t] = r
+              }) : e[t] = i
             })
           }
           return e

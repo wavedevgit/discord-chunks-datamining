@@ -46,11 +46,11 @@ let D = 3e3,
   L = 800,
   x = {};
 
-function j(e) {
+function M(e) {
   return "".concat(e.channel_id, ":").concat(e.id)
 }
 
-function M() {
+function j() {
   Object.values(x).forEach(e => {
     let {
       timeout: t
@@ -61,7 +61,7 @@ function M() {
 
 function k(e, t) {
   if (null == e.id || null == e.channel_id) returnfalse;
-  let n = j(e);
+  let n = M(e);
   if (null != x[n]) {
     let {
       timeout: r,
@@ -126,7 +126,7 @@ let B = (e, t) => {
 };
 
 function Z(e) {
-  return null == x[j(e)]
+  return null == x[M(e)]
 }
 
 function F(e, t) {
@@ -135,7 +135,7 @@ function F(e, t) {
     jitter: r = false
   } = null != t ? t : {}, i = (null == t ? true : t.isMessageUpdate) ? e.filter(e => (0, A.MD)(e)).filter(Z) : e.filter(Z);
   i.forEach(e => {
-    let t = j(e);
+    let t = M(e);
     null == x[t] && (d.Z.increment({
       name: s.V.EXPLICIT_MEDIA_SCAN_CLIENT_TIMEOUT_CREATE
     }), x[t] = {
@@ -147,7 +147,7 @@ function F(e, t) {
   });
   let a = n || new Set(i.map(e => e.channel_id)).size > 1;
   r ? setTimeout(() => {
-    B(i.filter(e => null != x[j(e)]), a)
+    B(i.filter(e => null != x[M(e)]), a)
   }, Math.random() * L) : B(i, a)
 }
 
@@ -442,7 +442,7 @@ class eo extends Chunk147913.Z {
       SIDEBAR_VIEW_CHANNEL: et,
       MESSAGE_CREATE: q,
       MESSAGE_UPDATE: z,
-      LOGOUT: M,
+      LOGOUT: j,
       SEARCH_MESSAGES_SUCCESS: Q,
       MOD_VIEW_SEARCH_MESSAGES_SUCCESS: Q,
       CHANNEL_SELECT: en,

@@ -2,7 +2,7 @@
 /** chunk id: 159299, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => M
+  Z: () => j
 }), require("./388685.js"), require("./642613.js"), require("./539854.js");
 var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -243,7 +243,7 @@ function x(e) {
   for (let e in y) n.has(y[e].parentId) && (y[e].rebuild(), r = true);
   return r
 }
-class j extends(r = Chunk442837.ZP.Store) {
+class M extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk592125.Z, Chunk271383.ZP, Chunk797316.Z, Chunk158776.Z, Chunk885110.Z, Chunk594174.default), this.syncWith([Chunk797316.Z], () => {
       let e = Chunk797316.Z.getSubscribedThreadIds(),
@@ -271,8 +271,8 @@ class j extends(r = Chunk442837.ZP.Store) {
     return null != (i = null == o ? true : o.canViewChannel) && i
   }
 }
-b(j, "displayName", "ThreadMemberListStore");
-let M = new j(Chunk570140.Z, {
+b(M, "displayName", "ThreadMemberListStore");
+let j = new M(Chunk570140.Z, {
   CONNECTION_OPEN: v,
   THREAD_MEMBERS_UPDATE: I,
   THREAD_UPDATE: w,

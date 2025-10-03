@@ -383,7 +383,7 @@ function ex(e, t, n, r) {
   return null != e.id && null != el[e.id] && (i.overlayWarn = el[e.id].warn), i
 }
 
-function ej(e) {
+function eM(e) {
   return {
     name: e.name,
     exePath: e.exePath,
@@ -392,7 +392,7 @@ function ej(e) {
   }
 }
 
-function eM() {
+function ej() {
   let e = false;
   return $ = o().values(Chunk283595.Z.libraryApplications).reduce((t, n) => {
     let r = T.Z.getDetectableGame(n.id);
@@ -570,7 +570,7 @@ function e0(e) {
 function e1(e) {
   let t = eA(e.game),
     n = eo.gameOverrides[t];
-  null == n && ((n = ej(e.game)).add = true), n.name = e.newName;
+  null == n && ((n = eM(e.game)).add = true), n.name = e.newName;
   let r = eA(n);
   delete eo.gameOverrides[t], eo.gameOverrides[r] = n, eb(eo.enableOverlay, t, r), eb(eo.enableDetection, t, r), eb(ea, t, r), eo.gamesSeen.forEach(n => {
     eA(n) === t && (n.name = e.newName)
@@ -732,7 +732,7 @@ class e5 extends(i = Chunk442837.ZP.Store) {
         (0, I.le)(e) || (eo.gameOverrides[t] = e)
       }), eo.enableOverlay = null != (n = Chunk392711.enableOverlay) ? require : {}, eo.enableOverlayV3 = null != (r = Chunk392711.enableOverlayV3) ? r : {}, eo.enableDetection = null != (i = Chunk392711.enableDetection) ? i : {}, ek(), Array.isArray(Chunk392711.gamesSeen))
       for (let e of Chunk392711.gamesSeen) "number" == typeof module.id && (module.nativeProcessObserverId = module.id, delete module.id, s = true);
-    this.waitFor(Chunk77498.Z, Chunk353926.Z), K = Chunk392711.gamesSeen.filter(e => !(0, I.le)(e)), this.syncWith([Chunk353926.Z], e4), this.syncWith([Chunk283595.Z, Chunk77498.Z, Chunk417363.Z], o().throttle(eM, 1e3)), Chunk913527 && eL()
+    this.waitFor(Chunk77498.Z, Chunk353926.Z), K = Chunk392711.gamesSeen.filter(e => !(0, I.le)(e)), this.syncWith([Chunk353926.Z], e4), this.syncWith([Chunk283595.Z, Chunk77498.Z, Chunk417363.Z], o().throttle(ej, 1e3)), Chunk913527 && eL()
   }
   getVisibleGame() {
     return null == en || eD(en) ? en : null

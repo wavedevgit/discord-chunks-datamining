@@ -80,7 +80,7 @@ function q(e) {
     selectedStyle: i,
     disabled: l,
     shouldShowUpsell: a
-  } = e, o = (0, P.F)(U.intl.string(U.t.Mi9KbW)), d = (0, f.ZP)(), h = (0, v.oC)(n, t), x = {
+  } = e, o = (0, P.F)(U.intl.string(U.t.Mi9KbW)), d = (0, f.ZP)(), h = (0, _.oC)(n, t), b = {
     dark: {
       src: z,
       name: t.name
@@ -126,18 +126,18 @@ function q(e) {
           children: [(0, r.jsx)(g.Rny, {
             children: (0, r.jsx)("div", {
               className: F.roleStyleMessageContainer,
-              children: (0, r.jsx)(_.Z, {
+              children: (0, r.jsx)(v.Z, {
                 author: {
                   nick: o.author.username,
                   guildId: n,
                   authorId: o.author.id,
                   colorRoleId: t.id,
-                  colorStrings: (0, O.DX)(p),
+                  colorStrings: (0, C.DX)(p),
                   colorString: (0, c.Rf)(p.primary_color)
                 },
                 message: o,
                 preview: true,
-                roleIcon: null != h ? h : (0, m.ap)(d) ? x.light : x.dark,
+                roleIcon: null != h ? h : (0, m.ap)(d) ? b.light : b.dark,
                 isGroupStart: true,
                 disableInteraction: true,
                 previewGuildId: n
@@ -166,7 +166,7 @@ function q(e) {
         })]
       }), (0, r.jsx)(g.zxk, {
         onClick: function() {
-          (0, C.Z)(n, b.Z.GUILD_POWERUPS_GUILD_SETTINGS_ROLE_EDIT), (0, p.xf)()
+          (0, y.Z)(n, x.Z.GUILD_POWERUPS_GUILD_SETTINGS_ROLE_EDIT), (0, p.xf)()
         },
         variant: "expressive",
         icon: g.$Eu,
@@ -270,7 +270,7 @@ function Q(e) {
   }, d = {
     src: W,
     name: t.name
-  }, u = (0, v.oC)(n, t), p = [G.BRd.DARK, G.BRd.DARKER, G.BRd.MIDNIGHT, G.BRd.LIGHT];
+  }, u = (0, _.oC)(n, t), p = [G.BRd.DARK, G.BRd.DARKER, G.BRd.MIDNIGHT, G.BRd.LIGHT];
   return (0, r.jsx)(g.Rny, {
     children: (0, r.jsx)("div", {
       className: s()(F.previewContainer, {
@@ -284,7 +284,7 @@ function Q(e) {
           className: s()(t, F.messageWrapper),
           children: [(0, r.jsx)("div", {
             className: F.messageContainer,
-            children: (0, r.jsx)(_.Z, {
+            children: (0, r.jsx)(v.Z, {
               author: o,
               message: a,
               roleIcon: null != u ? u : (0, m.ap)(e) ? d : c,
@@ -332,11 +332,11 @@ function ee(e) {
     role: n,
     locked: i,
     setSelectedSection: l
-  } = e, a = (0, y.yH)(t.id, n), o = (0, d.e7)([T.Z], () => T.Z.getRoleStyleData(n.id)), c = !a, u = null != o && a ? o.currentStyle : T.g.SOLID, m = (0, E.fI)(n), p = i || m, f = (0, d.e7)([I.Z], () => I.Z.canImpersonateRole(t, n)), {
+  } = e, a = (0, O.yH)(t.id, n), o = (0, d.e7)([T.Z], () => T.Z.getRoleStyleData(n.id)), c = !a, u = null != o && a ? o.currentStyle : T.g.SOLID, m = (0, E.fI)(n), p = i || m, f = (0, d.e7)([I.Z], () => I.Z.canImpersonateRole(t, n)), {
     headerHeight: h,
-    headerRef: b
+    headerRef: x
   } = (0, w.Z)(0), {
-    scrolledToTop: x,
+    scrolledToTop: b,
     handleScroll: j
   } = (0, Z.V)();
   return (0, r.jsx)(g.yWw, {
@@ -349,9 +349,9 @@ function ee(e) {
       className: H.contentWidth,
       children: [(0, r.jsx)("div", {
         className: s()(H.header, H.stickyHeader, {
-          [H.stickyHeaderElevated]: !x
+          [H.stickyHeaderElevated]: !b
         }),
-        ref: b,
+        ref: x,
         children: (0, r.jsx)(Z.Z, {
           guild: t,
           role: n,

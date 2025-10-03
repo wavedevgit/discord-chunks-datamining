@@ -174,15 +174,15 @@ class em extends(r = Chunk647438.PureComponent) {
       },
       L = Chunk120356 ? r : require;
     if (Chunk120356 && null != Chunk647438) {
-      var j;
+      var M;
       let {
         accentColor: n,
         backgroundColor: r,
         opacity: i
-      } = Chunk647438, o = null != (j = (0, Chunk866442.wK)(null != r ? r : "", Chunk951288)) ? Chunk695346 : "";
+      } = Chunk647438, o = null != (M = (0, Chunk866442.wK)(null != r ? r : "", Chunk951288)) ? Chunk695346 : "";
       this.isMe() && (Chunk659215.borderColor = r), Chunk659215.background = Chunk120356, e = require, t = require
     }
-    let M = null == Chunk305325 ? true : Chunk305325.getBoundingClientRect(),
+    let j = null == Chunk305325 ? true : Chunk305325.getBoundingClientRect(),
       k = null != Chunk906411 && null != Chunk592125,
       U = null == Chunk906411;
     return (0, Chunk951288.jsx)(Chunk481060.yRy, {
@@ -231,7 +231,7 @@ class em extends(r = Chunk647438.PureComponent) {
                     messageId: O.id,
                     emoji: c,
                     startPosition: T,
-                    targetPosition: M
+                    targetPosition: j
                   }), U && (0, i.jsx)(Q.Z, {
                     count: r,
                     emoji: c,
@@ -287,7 +287,7 @@ class em extends(r = Chunk647438.PureComponent) {
         isLurking: o,
         isGuest: s,
         isForumToolbar: l
-      } = this.props, c = M.Z.getChannel(t.getChannelId());
+      } = this.props, c = j.Z.getChannel(t.getChannelId());
       if (o || s) {
         var u, d;
         null == (d = this.ctaRef) || null == (u = d.current) || u.focus();
@@ -367,7 +367,7 @@ class em extends(r = Chunk647438.PureComponent) {
       } = e, {
         message: n,
         isLurking: r
-      } = this.props, a = M.Z.getChannel(n.getChannelId()), o = k.Z.getGuild(null == a ? true : a.getGuildId());
+      } = this.props, a = j.Z.getChannel(n.getChannelId()), o = k.Z.getGuild(null == a ? true : a.getGuildId());
       return r && null != o ? (0, i.jsx)(R.Z, {
         ctaRef: this.ctaRef,
         type: R.s.REACTIONS,
@@ -393,7 +393,7 @@ class em extends(r = Chunk647438.PureComponent) {
         tooltipText: o,
         tooltipTextAria: l
       } = this.state, c = n => {
-        let r = M.Z.getChannel(t.getChannelId());
+        let r = j.Z.getChannel(t.getChannelId());
         null != r && (this.handleLeave(), ep(r, t, {
           emoji: e,
           reactionType: a ? Y.O.BURST : Y.O.NORMAL
@@ -496,7 +496,7 @@ class em extends(r = Chunk647438.PureComponent) {
         isPendingMember: t
       } = this.props;
       if (!t) return null;
-      let n = M.Z.getChannel(e.getChannelId()),
+      let n = j.Z.getChannel(e.getChannelId()),
         r = k.Z.getGuild(null == n ? true : n.getGuildId());
       null != r && (0, N.hk)(r.id)
     }), ea(this, "handleSetReactionRef", e => {
@@ -508,7 +508,7 @@ class em extends(r = Chunk647438.PureComponent) {
         emoji: e,
         message: t,
         type: n
-      } = this.props, r = B.default.getCurrentUser(), i = M.Z.getChannel(t.getChannelId()), a = n === Y.O.BURST, o = (0, V.I5)(r), s = a ? $.cd.EMOJI_IN_BURST_REACTION_HOVER : $.cd.EMOJI_IN_REACTION_HOVER;
+      } = this.props, r = B.default.getCurrentUser(), i = j.Z.getChannel(t.getChannelId()), a = n === Y.O.BURST, o = (0, V.I5)(r), s = a ? $.cd.EMOJI_IN_BURST_REACTION_HOVER : $.cd.EMOJI_IN_REACTION_HOVER;
       !a || this.userCanBurstReact() || o || (s = $.cd.EMOJI_IN_BURST_REACTION_HOVER_UPSELL), y.ZP.trackWithMetadata(J.rMx.EXPRESSION_TOOLTIP_VIEWED, {
         type: s,
         expression_id: e.id,
@@ -536,7 +536,7 @@ let eg = Chunk647438.memo(e => {
       burst_colors: n,
       message: r,
       emoji: a
-    } = e, o = t === Y.O.BURST, s = (0, S.v)(o && null != n ? n : []), l = (0, _.e7)([H.Z], () => true !== H.Z.getEffectForEmojiId(r.getChannelId(), r.id, a)), c = (0, _.e7)([E.Z], () => E.Z.useReducedMotion), u = j.Yk.useSetting(), d = B.default.getCurrentUser(), f = (0, V.I5)(d), p = (0, _.e7)([H.Z], () => H.Z.getReactionPickerAnimation(r.id, a.name, a.id)), h = o && (l || null != p);
+    } = e, o = t === Y.O.BURST, s = (0, S.v)(o && null != n ? n : []), l = (0, _.e7)([H.Z], () => true !== H.Z.getEffectForEmojiId(r.getChannelId(), r.id, a)), c = (0, _.e7)([E.Z], () => E.Z.useReducedMotion), u = M.Yk.useSetting(), d = B.default.getCurrentUser(), f = (0, V.I5)(d), p = (0, _.e7)([H.Z], () => H.Z.getReactionPickerAnimation(r.id, a.name, a.id)), h = o && (l || null != p);
     return (0, i.jsx)(em, el(eo({}, e), {
       colors: s,
       isBurstReaction: o,
@@ -653,8 +653,8 @@ let eg = Chunk647438.memo(e => {
           })]
         })
       },
-      j = E && (true !== u || true !== f),
-      M = () => (0, i.jsxs)(i.Fragment, {
+      M = E && (true !== u || true !== f),
+      j = () => (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
           className: et.reactionEmojiDetailsDivider
         }), null != D.emojiDescription && D.type !== W.$.UNAVAILABLE && (0, i.jsx)(h.Text, {
@@ -664,9 +664,9 @@ let eg = Chunk647438.memo(e => {
         })]
       });
     return (0, i.jsxs)("div", {
-      children: [j ? M() : x(), y ? (0, i.jsx)(z.SE, {
+      children: [M ? j() : x(), y ? (0, i.jsx)(z.SE, {
         className: et.emojiDetailsLoader
-      }) : j && (0, i.jsx)(eE, {
+      }) : M && (0, i.jsx)(eE, {
         emojiId: n,
         expressionSourceGuild: u,
         hasJoinedExpressionSourceGuild: C,

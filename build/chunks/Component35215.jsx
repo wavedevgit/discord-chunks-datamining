@@ -147,7 +147,7 @@ let C = 10,
       }))
     })
   },
-  j = () => (0, Chunk951288.jsxs)("svg", {
+  M = () => (0, Chunk951288.jsxs)("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: "75",
     height: "96",
@@ -175,7 +175,7 @@ let C = 10,
     })]
   });
 
-function M(e) {
+function j(e) {
   let {
     quest: t,
     applications: o,
@@ -238,7 +238,7 @@ function M(e) {
         onGameProfileModalClose: g
       }, e.applicationId)), Array.from({
         length: S
-      }, (e, t) => (0, r.jsx)(j, {}, "placeholder-".concat(t)))]
+      }, (e, t) => (0, r.jsx)(M, {}, "placeholder-".concat(t)))]
     })]
   })
 }
@@ -275,7 +275,7 @@ function k(e) {
       let {
         closePopout: t
       } = e;
-      return (0, r.jsx)(M, {
+      return (0, r.jsx)(j, {
         quest: u,
         applications: n,
         onClose: t,

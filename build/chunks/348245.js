@@ -128,7 +128,7 @@ function x(e) {
   return o.K.set(L, i), true
 }
 
-function j(e) {
+function M(e) {
   var t;
   if (null != r && r.channelId === e) return r;
   let n = (0, a.LX)(location.pathname, {
@@ -141,12 +141,12 @@ function j(e) {
   }
 }
 
-function M() {
+function j() {
   let e = Chunk944486.Z.getChannelId();
   if (null == module) return;
   let t = Chunk592125.Z.getChannel(module);
   if (null == exports) return;
-  let n = j(exports.id);
+  let n = M(exports.id);
   r = true, w({
     guildId: exports.getGuildId(),
     channelId: exports.id,
@@ -325,15 +325,15 @@ function q(e) {
 }
 class X extends Chunk147913.Z {
   _initialize() {
-    Chunk570140.Z.subscribe("CONNECTION_OPEN", M)
+    Chunk570140.Z.subscribe("CONNECTION_OPEN", j)
   }
   _terminate() {
-    Chunk570140.Z.unsubscribe("CONNECTION_OPEN", M)
+    Chunk570140.Z.unsubscribe("CONNECTION_OPEN", j)
   }
   constructor(...e) {
     super(...e), R(this, "fetchMessages", w), R(this, "loadSelectedChannelIfNecessary", k), R(this, "stores", new Map().set(E.ZP, F)), R(this, "actions", {
       APP_STATE_UPDATE: q,
-      OVERLAY_INITIALIZE: M,
+      OVERLAY_INITIALIZE: j,
       CHANNEL_SELECT: U,
       VOICE_CHANNEL_SELECT: G,
       THREAD_CREATE: H,

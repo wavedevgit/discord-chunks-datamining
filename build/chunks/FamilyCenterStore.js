@@ -107,7 +107,7 @@ function x(e) {
   true !== e && (y = e)
 }
 
-function j(e, t) {
+function M(e, t) {
   let n = t ? b : w();
   return b = e.reduce((e, t) => {
     let r = t.display_type;
@@ -115,7 +115,7 @@ function j(e, t) {
   }, n)
 }
 
-function M(e) {
+function j(e) {
   R = e.reduce((e, t) => {
     var n;
     return p(f({}, e), {
@@ -143,7 +143,7 @@ function U(e) {
     topUserActivities: c,
     topGuildActivities: u
   } = n;
-  h = o, m = l, j(r), x(a), M(i), L(t), C = c, N = u, T = false, S = s.default.fromTimestamp(Date.now()), I = true
+  h = o, m = l, M(r), x(a), j(i), L(t), C = c, N = u, T = false, S = s.default.fromTimestamp(Date.now()), I = true
 }
 
 function G(e) {
@@ -174,7 +174,7 @@ function Z(e) {
     topUserActivities: l,
     topGuildActivities: c
   } = t;
-  h = a, m = o, j(n), x(r), M(i), C = l, N = c, T = false, S = s.default.fromTimestamp(Date.now())
+  h = a, m = o, M(n), x(r), j(i), C = l, N = c, T = false, S = s.default.fromTimestamp(Date.now())
 }
 
 function F(e) {
@@ -184,7 +184,7 @@ function F(e) {
     actions: n,
     guilds: r
   } = t;
-  j(n, true), M(r)
+  M(n, true), j(r)
 }
 
 function V(e) {
@@ -270,7 +270,7 @@ class $ extends Chunk750041.Z {
   }
   loadCache() {
     let e = this.readSnapshot($.LATEST_SNAPSHOT_VERSION);
-    null != module && (L(module.linkedUsers), M(module.guilds), j(module.teenActivity), Q(module.teenActivityTotals))
+    null != module && (L(module.linkedUsers), j(module.guilds), M(module.teenActivity), Q(module.teenActivityTotals))
   }
   takeSnapshot() {
     return {

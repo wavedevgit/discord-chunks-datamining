@@ -25,7 +25,7 @@ function y(e) {
     onJump: y
   } = e, {
     items: _,
-    state: O
+    state: j
   } = (0, l.cj)([p.Z], () => {
     var e, n;
     let r = p.Z.getPins(t.id);
@@ -33,11 +33,11 @@ function y(e) {
       items: null != (e = null == r ? true : r.items) ? e : b,
       state: null != (n = null == r ? true : r.state) ? n : p.M.LOADING
     }
-  }), j = i.useMemo(() => _.map(e => e.message), [_]), x = (0, l.e7)([h.ZP], () => h.ZP.hasUnreadPins(t.id));
+  }), x = i.useMemo(() => _.map(e => e.message), [_]), O = (0, l.e7)([h.ZP], () => h.ZP.hasUnreadPins(t.id));
   i.useEffect(() => {
-    x && o.Z.ackPins(t.id)
-  }, [x, t.id]), (0, c.ZP)(() => {
-    j.some(d.k5) && o.Z.fetchPins(t.id, {
+    O && o.Z.ackPins(t.id)
+  }, [O, t.id]), (0, c.ZP)(() => {
+    x.some(d.k5) && o.Z.fetchPins(t.id, {
       reset: true
     })
   });
@@ -56,9 +56,9 @@ function y(e) {
     children: (0, r.jsx)(f.ZP, {
       channel: t,
       onFetch: v,
-      messages: j,
-      loading: O === p.M.LOADING,
-      hasMore: O === p.M.LOADED_HAS_MORE,
+      messages: x,
+      loading: j === p.M.LOADING,
+      hasMore: j === p.M.LOADED_HAS_MORE,
       analyticsName: "Channel Pins",
       renderEmptyState: function() {
         if (_.length > 0) return;

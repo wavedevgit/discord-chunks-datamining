@@ -1,7 +1,7 @@
 /** Chunk was on 66201 **/
 /** chunk id: 501801, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  mp: () => b,
+  mp: () => x,
   tP: () => v,
   xO: () => D
 }), require("./539854.js"), require("./953529.js");
@@ -52,13 +52,13 @@ function U(e) {
 
 function M(e, t) {
   return (0, r.jsx)("div", {
-    className: C.colorHook,
+    className: p.colorHook,
     style: {
       backgroundColor: t
     }
   }, e)
 }
-class b extends Chunk647438.PureComponent {
+class x extends Chunk647438.PureComponent {
   render() {
     let {
       actionType: e,
@@ -145,7 +145,7 @@ function v(e) {
               newValue: t
             } = e;
             return Array.isArray(t) ? t.map(e => (0, r.jsx)("div", {
-              className: C.subListItem,
+              className: p.subListItem,
               children: e.name
             }, e.id)) : null
           }(i);
@@ -154,7 +154,7 @@ function v(e) {
               newValue: n
             } = e;
             return Array.isArray(n) ? n.map((e, n) => (0, r.jsx)("div", {
-              className: C.subListItem,
+              className: p.subListItem,
               children: R.hQ(e, t)
             }, n)) : null
           }(i, t);
@@ -164,10 +164,10 @@ function v(e) {
               oldValue: n
             } = e, l = [];
             return (Array.isArray(n) && (l = l.concat(n.map(e => (0, r.jsx)("div", {
-              className: C.subListItem,
+              className: p.subListItem,
               children: R.cT(e)
             }, e)))), Array.isArray(t) && (l = l.concat(t.map(e => (0, r.jsx)("div", {
-              className: C.subListItem,
+              className: p.subListItem,
               children: R.em(e)
             }, e)))), l.length > 0) ? l : null
           }(i);
@@ -185,37 +185,37 @@ function v(e) {
               return null == n ? null : "#".concat(n)
             }, u = o().keyBy(null != i ? i : [], "id"), c = o().keyBy(null != l ? l : [], "id"), E = o().difference(Object.keys(c), Object.keys(u)).map(e => c[e]), _ = o().difference(Object.keys(u), Object.keys(c)).map(e => u[e]), A = o().intersection(Object.keys(c), Object.keys(u));
             return (0, r.jsxs)("ul", {
-              className: C.onboardingChangeLogContainer,
+              className: p.onboardingChangeLogContainer,
               children: [E.map(e => {
                 let {
                   role_ids: n,
                   channel_ids: l,
                   title: i,
                   id: o
-                } = e, u = (null != n ? n : []).map(s).filter(O.lm), c = (null != l ? l : []).map(a).filter(O.lm);
+                } = e, u = (null != n ? n : []).map(s).filter(h.lm), c = (null != l ? l : []).map(a).filter(h.lm);
                 return (0, r.jsxs)("li", {
                   children: [(0, r.jsxs)("div", {
-                    className: C.onboardingChangeLogItemTitle,
-                    children: [(0, r.jsx)(b, {
+                    className: p.onboardingChangeLogItemTitle,
+                    children: [(0, r.jsx)(x, {
                       actionType: S.vB8.CREATE,
                       targetType: t.targetType,
                       action: t.action
                     }), (0, r.jsx)(d.Text, {
                       variant: "text-md/normal",
-                      children: p.intl.format(p.t.CZ1tys, {
+                      children: C.intl.format(C.t.CZ1tys, {
                         title: i
                       })
                     })]
                   }), (0, r.jsxs)("div", {
-                    className: C.onboardingChangeLogItemChanges,
+                    className: p.onboardingChangeLogItemChanges,
                     children: [u.length > 0 && (0, r.jsx)(d.Text, {
                       variant: "text-md/normal",
-                      children: p.intl.format(p.t["gt/5z8"], {
+                      children: C.intl.format(C.t["gt/5z8"], {
                         roles: u.join(", ")
                       })
                     }), c.length > 0 && (0, r.jsx)(d.Text, {
                       variant: "text-md/normal",
-                      children: p.intl.format(p.t["4q006e"], {
+                      children: C.intl.format(C.t["4q006e"], {
                         channels: c.join(", ")
                       })
                     })]
@@ -223,14 +223,14 @@ function v(e) {
                 }, o)
               }), _.map(e => (0, r.jsx)("li", {
                 children: (0, r.jsxs)("div", {
-                  className: C.onboardingChangeLogItemTitle,
-                  children: [(0, r.jsx)(b, {
+                  className: p.onboardingChangeLogItemTitle,
+                  children: [(0, r.jsx)(x, {
                     actionType: S.vB8.DELETE,
                     targetType: t.targetType,
                     action: t.action
                   }), (0, r.jsx)(d.Text, {
                     variant: "text-md/normal",
-                    children: p.intl.format(p.t["m3dt+P"], {
+                    children: C.intl.format(C.t["m3dt+P"], {
                       title: e.title
                     })
                   })]
@@ -239,45 +239,45 @@ function v(e) {
                 let {
                   title: l,
                   id: i
-                } = n, u = e.role_ids.map(s).filter(O.lm), c = e.channel_ids.map(a).filter(O.lm), E = n.role_ids.map(s).filter(O.lm), _ = n.channel_ids.map(a).filter(O.lm), A = o().difference(E, u), T = o().difference(u, E), I = o().difference(_, c), m = o().difference(c, _), g = [];
+                } = n, u = e.role_ids.map(s).filter(h.lm), c = e.channel_ids.map(a).filter(h.lm), E = n.role_ids.map(s).filter(h.lm), _ = n.channel_ids.map(a).filter(h.lm), A = o().difference(E, u), T = o().difference(u, E), I = o().difference(_, c), m = o().difference(c, _), g = [];
                 return (o().isEqual(e.title, n.title) || g.push("title"), o().isEqual(e.description, n.description) || g.push("description"), 0 === A.length && 0 === T.length && 0 === I.length && 0 === m.length && 0 === g.length) ? null : (0, r.jsxs)("li", {
                   children: [(0, r.jsxs)("div", {
-                    className: C.onboardingChangeLogItemTitle,
-                    children: [(0, r.jsx)(b, {
+                    className: p.onboardingChangeLogItemTitle,
+                    children: [(0, r.jsx)(x, {
                       actionType: S.vB8.UPDATE,
                       targetType: t.targetType,
                       action: t.action
                     }), (0, r.jsx)(d.Text, {
                       variant: "text-md/normal",
-                      children: p.intl.format(p.t["WZO+iY"], {
+                      children: C.intl.format(C.t["WZO+iY"], {
                         title: l
                       })
                     })]
                   }), (0, r.jsxs)("div", {
-                    className: C.onboardingChangeLogItemChanges,
+                    className: p.onboardingChangeLogItemChanges,
                     children: [A.length > 0 && (0, r.jsx)(d.Text, {
                       variant: "text-md/normal",
-                      children: p.intl.format(p.t["R+km+f"], {
+                      children: C.intl.format(C.t["R+km+f"], {
                         roles: A.join(", ")
                       })
                     }), T.length > 0 && (0, r.jsx)(d.Text, {
                       variant: "text-md/normal",
-                      children: p.intl.format(p.t.xIVRoa, {
+                      children: C.intl.format(C.t.xIVRoa, {
                         roles: T.join(", ")
                       })
                     }), I.length > 0 && (0, r.jsx)(d.Text, {
                       variant: "text-md/normal",
-                      children: p.intl.format(p.t.iYowX1, {
+                      children: C.intl.format(C.t.iYowX1, {
                         channels: I.join(", ")
                       })
                     }), m.length > 0 && (0, r.jsx)(d.Text, {
                       variant: "text-md/normal",
-                      children: p.intl.format(p.t.JLdJpK, {
+                      children: C.intl.format(C.t.JLdJpK, {
                         channels: m.join(", ")
                       })
                     }), g.map((t, l) => (0, r.jsx)(d.Text, {
                       variant: "text-md/normal",
-                      children: p.intl.format(p.t["0698zc"], {
+                      children: C.intl.format(C.t["0698zc"], {
                         key: t,
                         oldValue: e[t],
                         newValue: n[t]
@@ -305,23 +305,23 @@ function v(e) {
                     u = g.default.getUser(null == (l = e.author_ids) ? true : l[0]),
                     c = (null == o ? true : o.id) !== (null == u ? true : u.id) ? (0, r.jsx)("li", {
                       children: (0, r.jsx)("div", {
-                        className: C.onboardingChangeLogItemTitle,
+                        className: p.onboardingChangeLogItemTitle,
                         children: (0, r.jsx)(d.Text, {
                           variant: "text-md/normal",
-                          children: p.intl.format(p.t.PrOzAw, {
-                            oldUser: null != (i = null == o ? true : o.username) ? i : p.intl.string(p.t.PoWNfX),
-                            newUser: null != (s = null == u ? true : u.username) ? s : p.intl.string(p.t.PoWNfX)
+                          children: C.intl.format(C.t.PrOzAw, {
+                            oldUser: null != (i = null == o ? true : o.username) ? i : C.intl.string(C.t.PoWNfX),
+                            newUser: null != (s = null == u ? true : u.username) ? s : C.intl.string(C.t.PoWNfX)
                           })
                         })
                       })
                     }) : null,
                     E = (null == t ? true : t.message) !== e.message ? (0, r.jsx)("li", {
                       children: (0, r.jsx)("div", {
-                        className: C.onboardingChangeLogItemTitle,
+                        className: p.onboardingChangeLogItemTitle,
                         children: (0, r.jsx)(d.Text, {
                           variant: "text-md/normal",
-                          children: p.intl.format(p.t.oB7rBQ, {
-                            oldMessage: null != (a = null == t ? true : t.message) ? a : p.intl.string(p.t.PoWNfX),
+                          children: C.intl.format(C.t.oB7rBQ, {
+                            oldMessage: null != (a = null == t ? true : t.message) ? a : C.intl.string(C.t.PoWNfX),
                             newMessage: e.message
                           })
                         })
@@ -342,28 +342,28 @@ function v(e) {
                   return (0, r.jsxs)("ul", {
                     children: [c.map(e => (0, r.jsx)("li", {
                       children: (0, r.jsxs)("div", {
-                        className: C.onboardingChangeLogItemTitle,
-                        children: [(0, r.jsx)(b, {
+                        className: p.onboardingChangeLogItemTitle,
+                        children: [(0, r.jsx)(x, {
                           actionType: S.vB8.CREATE,
                           targetType: s,
                           action: a
                         }), (0, r.jsx)(d.Text, {
                           variant: "text-md/normal",
-                          children: p.intl.format(p.t["oFSu6+"], {
+                          children: C.intl.format(C.t["oFSu6+"], {
                             name: e.title
                           })
                         })]
                       })
                     }, e.channel_id)), E.map(e => (0, r.jsx)("li", {
                       children: (0, r.jsxs)("div", {
-                        className: C.onboardingChangeLogItemTitle,
-                        children: [(0, r.jsx)(b, {
+                        className: p.onboardingChangeLogItemTitle,
+                        children: [(0, r.jsx)(x, {
                           actionType: S.vB8.DELETE,
                           targetType: s,
                           action: a
                         }), (0, r.jsx)(d.Text, {
                           variant: "text-md/normal",
-                          children: p.intl.format(p.t.GssWam, {
+                          children: C.intl.format(C.t.GssWam, {
                             name: e.title
                           })
                         })]
@@ -382,28 +382,28 @@ function v(e) {
                   return (0, r.jsxs)("ul", {
                     children: [c.map(e => (0, r.jsx)("li", {
                       children: (0, r.jsxs)("div", {
-                        className: C.onboardingChangeLogItemTitle,
-                        children: [(0, r.jsx)(b, {
+                        className: p.onboardingChangeLogItemTitle,
+                        children: [(0, r.jsx)(x, {
                           actionType: S.vB8.CREATE,
                           targetType: s,
                           action: a
                         }), (0, r.jsx)(d.Text, {
                           variant: "text-md/normal",
-                          children: p.intl.format(p.t.HlGndH, {
+                          children: C.intl.format(C.t.HlGndH, {
                             name: e.title
                           })
                         })]
                       })
                     }, e.channel_id)), E.map(e => (0, r.jsx)("li", {
                       children: (0, r.jsxs)("div", {
-                        className: C.onboardingChangeLogItemTitle,
-                        children: [(0, r.jsx)(b, {
+                        className: p.onboardingChangeLogItemTitle,
+                        children: [(0, r.jsx)(x, {
                           actionType: S.vB8.DELETE,
                           targetType: s,
                           action: a
                         }), (0, r.jsx)(d.Text, {
                           variant: "text-md/normal",
-                          children: p.intl.format(p.t["7pysg4"], {
+                          children: C.intl.format(C.t["7pysg4"], {
                             name: e.title
                           })
                         })]
@@ -416,7 +416,7 @@ function v(e) {
             }
           }(i, t);
           return null
-        })(), h = e[i.key];
+        })(), O = e[i.key];
         return function(e) {
           var t, n;
           let {
@@ -429,7 +429,7 @@ function v(e) {
             change: A
           } = e;
           if (null == i) return console.warn("No change string for", A), null;
-          let I = p.intl.format(i, {
+          let I = C.intl.format(i, {
             oldValue: u,
             newValue: c,
             count: Array.isArray(c) ? c.length : null,
@@ -442,9 +442,9 @@ function v(e) {
                 tertiary_color: s
               } = c;
               return (0, r.jsx)("span", {
-                children: [n, i, s].filter(O.lm).map((e, n) => (0, r.jsxs)(l.Fragment, {
+                children: [n, i, s].filter(h.lm).map((e, n) => (0, r.jsxs)(l.Fragment, {
                   children: [(0, r.jsx)("span", {
-                    className: C.colorsHook,
+                    className: p.colorsHook,
                     children: "".concat(n > 0 ? ", " : "").concat((0, E.Rf)(e).toUpperCase(), " ")
                   }), M(t, (0, E.Rf)(e))]
                 }, n))
@@ -473,13 +473,13 @@ function v(e) {
             }
           });
           return null == I ? null : (0, r.jsxs)("div", {
-            className: C.detail,
+            className: p.detail,
             style: {
               position: "relative",
               top: 1
             },
             children: [(0, r.jsxs)(d.Text, {
-              className: C.prefix,
+              className: p.prefix,
               variant: "code",
               color: function(e) {
                 switch (e) {
@@ -492,13 +492,13 @@ function v(e) {
                 }
               }(o.actionType),
               children: [a < 10 ? "0".concat(a) : a, (0, r.jsx)("span", {
-                className: C.dash,
+                className: p.dash,
                 children: "—"
               })]
             }), (0, r.jsxs)("div", {
-              className: C.change,
+              className: p.change,
               children: [(0, r.jsx)("div", {
-                className: C.changeStr,
+                className: p.changeStr,
                 children: I
               }), null != s ? (0, r.jsx)("div", {
                 children: s
@@ -506,7 +506,7 @@ function v(e) {
             })]
           }, a)
         }({
-          changeItem: "function" == typeof h ? h(i) : h,
+          changeItem: "function" == typeof O ? O(i) : O,
           subChanges: A,
           changeNumber: ++u,
           log: t,
@@ -514,10 +514,10 @@ function v(e) {
           newValue: a,
           change: i
         })
-      })).filter(O.lm);
+      })).filter(h.lm);
     return (0, r.jsx)(d.P3F, {
       onClick: i,
-      className: s()(C.changeDetails, a),
+      className: s()(p.changeDetails, a),
       children: A
     })
   }, [t, n, i, a]);

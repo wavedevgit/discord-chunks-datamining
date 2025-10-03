@@ -47,8 +47,8 @@ module.exports = function(e, t) {
       }
       return
     }
-    var j = O.getSelection(),
-      M = j.merge({
+    var M = O.getSelection(),
+      j = M.merge({
         anchorOffset: N,
         focusOffset: R,
         isBackward: false
@@ -58,15 +58,15 @@ module.exports = function(e, t) {
       G = null != U ? U.getMutability() : null,
       B = "MUTABLE" === G,
       Z = B ? "spellcheck-change" : "apply-entity",
-      F = r.replaceText(P, M, y, w.getInlineStyleAt(N), B ? w.getEntityAt(N) : null);
+      F = r.replaceText(P, j, y, w.getInlineStyleAt(N), B ? w.getEntityAt(N) : null);
     if (d) n = h.anchorOffset, p = (c = N + Math.min(n, o = h.focusOffset)) + Math.abs(n - o), n = c, o = p;
     else {
       var V = y.length - D.length;
-      c = j.getStartOffset(), p = j.getEndOffset(), n = g ? p + V : c, o = p + V
+      c = M.getStartOffset(), p = M.getEndOffset(), n = g ? p + V : c, o = p + V
     }
     var H = F.merge({
       selectionBefore: P.getSelectionAfter(),
-      selectionAfter: j.merge({
+      selectionAfter: M.merge({
         anchorOffset: n,
         focusOffset: o
       })

@@ -127,14 +127,14 @@ function P(e, t) {
     D = null == (r = u.Z.getChannel(e.getChannelId())) || null == (n = r.getGuildId) ? true : n.call(r),
     L = null != D ? d.ZP.getSelfMember(D) : null,
     x = (0, l.EY)(L),
-    j = (0, c.b)(L),
-    M = !E && A && !N && _ && !x && !j;
+    M = (0, c.b)(L),
+    j = !E && A && !N && _ && !x && !M;
   return {
     poll: s,
     canTapAnswers: w,
     canRemoveVote: N && _ && !h,
     canShowVoteCounts: P,
-    canSubmitVote: M,
+    canSubmitVote: j,
     expirationLabel: p,
     hasSelectedAnswer: A,
     hasVoted: N,
@@ -178,8 +178,8 @@ function w(e, t) {
     canShowVoteCounts: D,
     canSubmitVote: L,
     expirationLabel: x = T.intl.string(T.t["e+J3JS"]),
-    hasSelectedAnswer: j,
-    hasVoted: M,
+    hasSelectedAnswer: M,
+    hasVoted: j,
     isEditingVote: k,
     isExpired: U,
     isInteractive: G,
@@ -202,10 +202,10 @@ function w(e, t) {
       u = 0 === Y ? 0 : c / Y,
       d = Z.has(o),
       f = c >= K && 0 !== c,
-      _ = M && null != (a = null == l ? true : l.me_vote) && a,
+      _ = j && null != (a = null == l ? true : l.me_vote) && a,
       h = C({
         didSelfVote: _,
-        hasVoted: M,
+        hasVoted: j,
         isExpired: U,
         isSelected: d,
         isLeader: f,
@@ -234,7 +234,7 @@ function w(e, t) {
   }), q = (0, r.EQ)({
     isExpired: U,
     canSubmitVote: L,
-    hasVoted: M,
+    hasVoted: j,
     isEditingVote: k,
     canRemoveVote: w,
     isInteractive: G,
@@ -248,7 +248,7 @@ function w(e, t) {
   }, () => ({
     label: T.intl.string(T.t.JwkNU1),
     presentation: "button",
-    enabled: j,
+    enabled: M,
     type: "submit"
   })).with({
     canRemoveVote: true
@@ -295,7 +295,7 @@ function w(e, t) {
     presentation: "text",
     enabled: true,
     type: "showVoterDetails"
-  })), J = !G || U || M || H ? true : {
+  })), J = !G || U || j || H ? true : {
     label: T.intl.string(T.t["/KHAUF"]),
     presentation: "textButton",
     enabled: true,
@@ -339,9 +339,9 @@ function w(e, t) {
     isInteractive: G,
     canTapAnswers: R,
     canSelectMultipleAnswers: $,
-    hasSelectedAnswer: j,
+    hasSelectedAnswer: M,
     canShowVoteCounts: D,
-    hasVoted: M,
+    hasVoted: j,
     isExpired: U,
     myAvatarUrl: g,
     secondaryAction: Q,

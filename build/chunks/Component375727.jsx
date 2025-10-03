@@ -33,15 +33,15 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk342745 = require("./342745.js");
-let A = new Chunk710845.Z("EmojiStudio");
+let M = new Chunk710845.Z("EmojiStudio");
 
-function M(e) {
+function P(e) {
   var t, n;
   if (null == e) return "";
   let r = null != (n = null == e || null == (t = e.file) ? true : t.name) ? n : "",
     i = r.lastIndexOf("."),
     l = false === i ? r : r.substring(0, i);
-  return O.ZP.sanitizeEmojiName(l)
+  return _.ZP.sanitizeEmojiName(l)
 }
 let R = e => {
     var t;
@@ -51,7 +51,7 @@ let R = e => {
       let e = b.Z.getGuildId(),
         t = v.Z.getGuild(e);
       return x.Z.can(S.Plq.CREATE_GUILD_EXPRESSIONS, t) && null != t ? t.id : null
-    }), [W, B] = i.useState(null != n ? n : F), [H, V] = i.useState(null), [J, Y] = i.useState(null), [K, X] = i.useState(M(L)), [q, $] = i.useState(null), [Q, ee] = i.useState(() => Date.now()), et = i.useRef(0), en = i.useRef(0), er = i.useRef(false);
+    }), [W, B] = i.useState(null != n ? n : F), [H, V] = i.useState(null), [J, Y] = i.useState(null), [K, X] = i.useState(P(L)), [q, $] = i.useState(null), [Q, ee] = i.useState(() => Date.now()), et = i.useRef(0), en = i.useRef(0), er = i.useRef(false);
     i.useEffect(() => {
       if (null == g) return;
       let e = p.Z.getEmojiRawAsset(g.id);
@@ -62,7 +62,7 @@ let R = e => {
       U(true), (0, N.Q)(g).then(e => {
         z(e), $(e.data), X(g.name), U(false)
       }).catch(e => {
-        A.error("Failed to fetch emoji image", e), V(_.ze.MISSING_IMAGE_DATA), U(false)
+        M.error("Failed to fetch emoji image", e), V(O.ze.MISSING_IMAGE_DATA), U(false)
       })
     }, [g]);
     let ei = i.useCallback(e => {
@@ -85,8 +85,8 @@ let R = e => {
       })
     });
     let el = i.useCallback(async () => {
-        if (V(null), null == W) return void V(_.ze.MISSING_GUILD);
-        if (null == L || (null == L ? true : L.file) == null || null == q) return void V(_.ze.MISSING_IMAGE_DATA);
+        if (V(null), null == W) return void V(O.ze.MISSING_GUILD);
+        if (null == L || (null == L ? true : L.file) == null || null == q) return void V(O.ze.MISSING_IMAGE_DATA);
         let e = null;
         try {
           e = await (0, h.rS)({
@@ -118,7 +118,7 @@ let R = e => {
             }({}, L)
           })
         } catch (e) {
-          V((0, D.zg)(e)), A.error("Failed to upload emoji.", e);
+          V((0, D.zg)(e)), M.error("Failed to upload emoji.", e);
           return
         }
         if (null != g) try {
@@ -129,13 +129,13 @@ let R = e => {
             body: T.intl.string(T.t["Whhv4+"])
           });
           else {
-            V((0, D.zg)(e)), A.error("Failed to delete emoji.", e);
+            V((0, D.zg)(e)), M.error("Failed to delete emoji.", e);
             return
           }
         }
         ei({
           reason: "uploaded"
-        }), er.current = true, (0, c.Mr3)(_.Hj), (0, y.y)({
+        }), er.current = true, (0, c.Mr3)(O.Hj), (0, y.y)({
           emoji: e,
           guildId: W
         })
@@ -151,46 +151,46 @@ let R = e => {
           imageDataTimestamp: n = 0,
           error: r
         } = e, i = null;
-        null != t && O.ZP.isDataTooBig(t) && (i = _.ze.TOO_BIG), V(null != r ? r : i), n < et.current || null != t && ($(t), et.current = n)
+        null != t && _.ZP.isDataTooBig(t) && (i = O.ze.TOO_BIG), V(null != r ? r : i), n < et.current || null != t && ($(t), et.current = n)
       }, []),
       eo = i.useCallback(() => {
         en.current++
       }, []),
       eu = i.useCallback(e => {
         var t;
-        z(e), X(t => "" !== t ? t : M(e)), $(null != (t = null == e ? true : e.data) ? t : null)
+        z(e), X(t => "" !== t ? t : P(e)), $(null != (t = null == e ? true : e.data) ? t : null)
       }, []),
       ec = R ? T.intl.string(T.t.FOYn8f) : T.intl.string(T.t.iMJO39),
       ed = R ? T.intl.string(T.t.FOYn8f) : T.intl.string(T.t.DU0dy8);
     return G ? (0, r.jsxs)("main", {
-      className: P.main,
+      className: A.main,
       children: [(0, r.jsx)(c.X6q, {
         variant: "heading-lg/medium",
         color: "header-primary",
-        className: P.heading,
+        className: A.heading,
         children: ec
       }), (0, r.jsx)("div", {
-        className: P.editor
+        className: A.editor
       }), (0, r.jsx)("div", {
-        className: P.closeButton,
+        className: A.closeButton,
         children: (0, r.jsx)(c.PZ7, {
           size: "sm",
-          onClick: () => (0, c.Mr3)(_.Hj)
+          onClick: () => (0, c.Mr3)(O.Hj)
         })
       })]
     }) : (0, r.jsxs)("main", {
-      className: a()(P.main, {
-        [P.checkerboard]: null != L
+      className: a()(A.main, {
+        [A.checkerboard]: null != L
       }),
       children: [(0, r.jsx)(c.X6q, {
         variant: "heading-lg/medium",
         color: "header-primary",
-        className: P.heading,
+        className: A.heading,
         children: ec
       }), null == L ? (0, r.jsx)(w.u, {
         setImage: eu
       }) : (0, r.jsx)("div", {
-        className: P.editor,
+        className: A.editor,
         children: (0, r.jsx)(I.v, {
           file: L.file,
           imageUri: L.data,
@@ -198,15 +198,15 @@ let R = e => {
           onThrottledEdit: eo
         })
       }), (0, r.jsxs)("aside", {
-        className: P.aside,
+        className: A.aside,
         children: [(0, r.jsxs)("div", {
-          className: P.preview,
+          className: A.preview,
           children: [(0, r.jsx)("label", {
             children: T.intl.string(T.t.JmuIb2)
           }), (0, r.jsxs)("ul", {
             children: [(0, r.jsx)("li", {
               children: (0, r.jsxs)("div", {
-                className: P.reactions,
+                className: A.reactions,
                 children: [(0, r.jsx)(Z, {
                   src: q,
                   alt: T.intl.string(T.t["zS0K+v"])
@@ -216,7 +216,7 @@ let R = e => {
               })
             }), (0, r.jsx)("li", {
               children: (0, r.jsx)("div", {
-                className: P.jumbo,
+                className: A.jumbo,
                 children: (0, r.jsx)(Z, {
                   src: q,
                   alt: T.intl.string(T.t["tE41+f"])
@@ -243,13 +243,13 @@ let R = e => {
             errorMessage: null != J ? (0, D.e$)(J) : true
           })
         }), (0, r.jsxs)("div", {
-          className: P.foot,
+          className: A.foot,
           children: [null != H && (0, r.jsx)(D.H4, {
             error: H,
             variant: "text-sm/normal",
             color: "text-danger"
           }), (0, r.jsx)(u.zx, {
-            className: P.submit,
+            className: A.submit,
             onClick: el,
             fullWidth: true,
             disabled: null == L || null == W || K.length < 2 || null != J,
@@ -259,10 +259,10 @@ let R = e => {
       }), null != L ? (0, r.jsx)(k, {
         back: ea
       }) : (0, r.jsx)("div", {
-        className: P.closeButton,
+        className: A.closeButton,
         children: (0, r.jsx)(c.PZ7, {
           size: "sm",
-          onClick: () => (0, c.Mr3)(_.Hj)
+          onClick: () => (0, c.Mr3)(O.Hj)
         })
       })]
     })
@@ -275,8 +275,8 @@ let R = e => {
       "aria-label": T.intl.string(T.t["13/7kZ"]),
       onClick: t,
       look: u.zx.Looks.BLANK,
-      innerClassName: P.backButtonInnner,
-      className: P.backButton,
+      innerClassName: A.backButtonInnner,
+      className: A.backButton,
       children: (0, r.jsx)(c.j9r, {
         color: "currentColor",
         size: "md"
@@ -289,7 +289,7 @@ let R = e => {
       alt: n
     } = e;
     return null == t || "" === t ? (0, r.jsx)("div", {
-      className: P.previewPlaceholder
+      className: A.previewPlaceholder
     }) : (0, r.jsx)("img", {
       src: t,
       alt: n

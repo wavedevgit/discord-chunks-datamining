@@ -5,7 +5,8 @@ require.d(exports, {
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk481060 = require("./481060.js"),
+var Chunk28664 = require("./28664.jsx"),
+  Chunk481060 = require("./481060.js"),
   Chunk98278 = require("./98278.js"),
   Chunk740594 = require("./740594.jsx"),
   Chunk612659 = require("./612659.js"),
@@ -16,97 +17,66 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk679101 = require("./679101.js");
 
-function f(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      }) : e[t] = r
-    })
-  }
-  return e
-}
-
 function g(e) {
   let {
     onApply: t,
     onSurpriseMe: n,
     onClose: g,
     canApply: h
-  } = e, b = (0, i.m)(d.p9.TIER_2), x = (0, r.jsx)(o.zxk, {
+  } = e, x = (0, s.m)(u.p9.TIER_2), _ = (0, o.jsx)(r.zxk, {
     variant: "secondary",
     size: "md",
     onClick: n,
-    icon: o.$2U,
-    text: p.intl.string(u.default.NOGFdn)
-  }), j = (0, r.jsxs)("div", {
-    className: m.subscriberButtonContainer,
-    children: [x, (0, r.jsx)(o.ua7, {
-      text: p.intl.string(u.default.cVTpnp),
+    icon: r.$2U,
+    text: m.intl.string(p.default.NOGFdn)
+  }), b = (0, o.jsxs)("div", {
+    className: f.subscriberButtonContainer,
+    children: [_, (0, o.jsx)(l.u, {
+      text: m.intl.string(p.default.cVTpnp),
       shouldShow: !h,
-      children: e => {
-        var n, l;
-        return (0, r.jsx)(o.zxk, (n = f({}, e), l = l = {
-          onClick: t,
-          disabled: !h,
-          text: p.intl.string(p.t["1Qm829"]),
-          variant: "primary",
-          size: "md",
-          fullWidth: true
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
-          var n = Object.keys(e);
-          if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
-          }
-          return n
-        })(Object(l)).forEach(function(e) {
-          Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(l, e))
-        }), n))
-      }
+      children: (0, o.jsx)(r.zxk, {
+        onClick: t,
+        disabled: !h,
+        text: m.intl.string(m.t["1Qm829"]),
+        variant: "primary",
+        size: "md",
+        fullWidth: true
+      })
     })]
-  }), _ = (0, r.jsxs)("div", {
-    className: m.upsell,
-    children: [(0, r.jsxs)("div", {
-      className: m.descriptionContainer,
-      children: [(0, r.jsx)(o.ua7, {
-        text: p.intl.string(p.t["5AFxuL"]),
-        children: e => (0, r.jsx)(o.SrA, f({
+  }), S = (0, o.jsxs)("div", {
+    className: f.upsell,
+    children: [(0, o.jsxs)("div", {
+      className: f.descriptionContainer,
+      children: [(0, o.jsx)(l.u, {
+        text: m.intl.string(m.t["5AFxuL"]),
+        children: (0, o.jsx)(r.SrA, {
           size: "md",
-          color: o.TVs.colors.ICON_PRIMARY
-        }, e))
-      }), (0, r.jsx)(o.Text, {
+          color: r.TVs.colors.ICON_PRIMARY
+        })
+      }), (0, o.jsx)(r.Text, {
         variant: "text-md/medium",
         color: "text-default",
-        className: m.description,
-        children: p.intl.format(u.default.PWf0xc, {
+        className: f.description,
+        children: m.intl.format(p.default.PWf0xc, {
           onClickNitro: () => {
-            s.default.track(c.rMx.DISPLAY_NAME_STYLES_NITRO_CLICKED), (0, l.$)(g)
+            c.default.track(d.rMx.DISPLAY_NAME_STYLES_NITRO_CLICKED), (0, a.$)(g)
           }
         })
       })]
-    }), (0, r.jsxs)("div", {
-      className: m.buttonContainer,
-      children: [x, (0, r.jsx)(a.Z, {
+    }), (0, o.jsxs)("div", {
+      className: f.buttonContainer,
+      children: [_, (0, o.jsx)(i.Z, {
         premiumModalAnalyticsLocation: {
-          section: c.jXE.DISPLAY_NAME_STYLES_MODAL_FOOTER,
-          object: c.qAy.PREMIUM_UPSELL_BUTTON
+          section: d.jXE.DISPLAY_NAME_STYLES_MODAL_FOOTER,
+          object: d.qAy.PREMIUM_UPSELL_BUTTON
         },
-        subscriptionTier: d.Si.TIER_2
+        subscriptionTier: u.Si.TIER_2
       })]
     })]
   });
-  return (0, r.jsx)(o.mzw, {
+  return (0, o.jsx)(r.mzw, {
     "data-migration-pending": true,
-    className: m.footer,
-    children: b ? j : _
+    className: f.footer,
+    children: x ? b : S
   })
 }

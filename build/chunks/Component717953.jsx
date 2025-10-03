@@ -80,13 +80,13 @@ function I(e) {
     return e.length > 1 && (n = "linear-gradient(".concat(t, "deg, ").concat(e.join(", "), ")")), {
       background: "var(--background-gradient), ".concat(n)
     }
-  }, [N, a, R]), L = (0, f.Sl)(E.Il.WHITE).hex, x = (0, f.Sl)(E.Il.RED_430).hex, j = w ? L : true, M = i.useCallback(() => {
+  }, [N, a, R]), L = (0, f.Sl)(E.Il.WHITE).hex, x = (0, f.Sl)(E.Il.RED_430).hex, M = w ? L : true, j = i.useCallback(() => {
     I && T(), null == n || n()
   }, [I, T, n]);
   return (0, r.jsxs)("div", {
     className: O.badgeContainer,
     children: [(0, r.jsxs)(m.S4, {
-      onSelect: t ? true : M,
+      onSelect: t ? true : j,
       isSelected: false,
       showSelectionCircle: P,
       name: y.intl.string(b.default.KSBBpK),
@@ -97,7 +97,7 @@ function I(e) {
       children: [!S && !w && (0, r.jsx)(v, {}), (0, r.jsx)("div", {
         className: O.borderOverlay
       }), (0, r.jsx)(s.V3v, {
-        color: j,
+        color: M,
         className: O.paletteIcon
       })]
     }), I && (0, r.jsx)(u.IGR, {

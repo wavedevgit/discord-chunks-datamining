@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Ds: () => U,
-  YB: () => M,
+  YB: () => j,
   of: () => G,
   q5: () => k
 });
@@ -41,7 +41,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk702952 = require("./702952.js"),
   Chunk186880 = require("./186880.js");
 
-function j(e) {
+function M(e) {
   let {
     onClick: t,
     isExpanded: n
@@ -56,7 +56,7 @@ function j(e) {
   })
 }
 
-function M(e) {
+function j(e) {
   var t, n, i;
   let {
     channel: a,
@@ -65,8 +65,8 @@ function M(e) {
     onMouseMove: I,
     onMouseLeave: N,
     onJumpToChannel: D,
-    idle: j,
-    selectedParticipant: M,
+    idle: M,
+    selectedParticipant: j,
     embeddedActivity: k
   } = e, U = (0, p.bp)() === P.IlC.POPOUT, G = (0, o.e7)([S.Z], () => S.Z.isVideoEnabled()), B = (0, o.e7)([S.Z], () => Object.values(S.Z.getVideoDevices())[0]), Z = false === (null == (t = null == B ? true : B.disabled) || t), F = (0, u.Z)([s])[0], V = (0, m.Z)(a), {
     parentAnalyticsLocation: H
@@ -89,7 +89,7 @@ function M(e) {
     children: [(0, r.jsx)("div", {
       className: x.topControls,
       children: (0, r.jsx)(b.r, {
-        idle: j,
+        idle: M,
         title: null != (i = null != (n = null == F ? true : F.name) ? n : null == a ? true : a.name) ? i : "",
         onJumpToChannel: D,
         preventIdleComponent: E.Z
@@ -113,7 +113,7 @@ function M(e) {
             channelId: a.id,
             guildId: a.getGuildId(),
             className: x.__invalid_leftTrayIcon,
-            participant: M,
+            participant: j,
             compact: true
           })
         })]
@@ -232,7 +232,7 @@ function G(e) {
           preventIdleComponent: E.Z
         }), (0, r.jsxs)("div", {
           className: L.pipHeaderButtonsRight,
-          children: [m ? null : (0, r.jsx)(j, {
+          children: [m ? null : (0, r.jsx)(M, {
             isExpanded: h,
             onClick: p
           }), (0, r.jsx)(O.Z, {

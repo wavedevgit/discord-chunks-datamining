@@ -61,11 +61,11 @@ function x() {
   })
 }
 
-function j(e) {
+function M(e) {
   r = e.sessionId, x()
 }
 
-function M() {
+function j() {
   r = null, x()
 }
 
@@ -330,8 +330,8 @@ class Q extends(i = Chunk442837.ZP.Store) {
 }
 T(Q, "displayName", "StreamRTCConnectionStore");
 let J = new Q(Chunk570140.Z, !Chunk131951.Z.isSupported() || __OVERLAY__ ? {} : {
-  CONNECTION_OPEN: j,
-  CONNECTION_CLOSED: M,
+  CONNECTION_OPEN: M,
+  CONNECTION_CLOSED: j,
   RTC_CONNECTION_STATE: Y,
   RTC_CONNECTION_PING: Y,
   RTC_CONNECTION_LOSS_RATE: Y,

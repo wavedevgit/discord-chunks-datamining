@@ -2,8 +2,8 @@
 /** chunk id: 578053, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  g: () => v,
-  u: () => _
+  g: () => _,
+  u: () => v
 }), require("./290780.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,9 +19,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk594174 = require("./594174.js"),
   Chunk434404 = require("./434404.js"),
   Chunk388032 = require("./388032.jsx");
-let b = "NO_CHANNEL";
+let x = "NO_CHANNEL";
 
-function x(e) {
+function b(e) {
   return {
     value: e.id,
     label: (0, c.F6)(e, p.default, g.Z),
@@ -45,7 +45,7 @@ function j(e) {
   })
 }
 
-function v(e) {
+function _(e) {
   let {
     canManageGuild: t,
     guildId: n,
@@ -60,27 +60,27 @@ function v(e) {
       let {
         channel: t
       } = e;
-      return x(t)
+      return b(t)
     });
     return e.unshift({
-      value: b,
+      value: x,
       label: h.intl.string(h.t.wGiHkJ)
     }), e
   }, [c]), u = i.useCallback(e => {
-    let t = e === b ? null : e;
+    let t = e === x ? null : e;
     f.Z.updateGuild({
       afkChannelId: t
     })
   }, []);
-  return (0, r.jsx)(O, {
-    value: null != a ? a : b,
+  return (0, r.jsx)(C, {
+    value: null != a ? a : x,
     options: d,
     canManageGuild: t,
     onChange: u
   })
 }
 
-function _(e) {
+function v(e) {
   let {
     canManageGuild: t,
     guildId: n,
@@ -98,30 +98,30 @@ function _(e) {
       let {
         channel: t
       } = e;
-      return x(t)
+      return b(t)
     });
     return e.unshift({
-      value: b,
+      value: x,
       label: h.intl.string(h.t.ibUhoa)
     }), e
   }, [g]), j = i.useCallback(e => {
-    let t = e === b ? null : e;
+    let t = e === x ? null : e;
     f.Z.updateGuild({
       systemChannelId: t
     })
   }, []);
-  return (0, r.jsx)(O, {
+  return (0, r.jsx)(C, {
     label: c,
     description: d,
     layout: u,
-    value: null != a ? a : b,
+    value: null != a ? a : x,
     options: p,
     canManageGuild: t,
     onChange: j
   })
 }
 
-function O(e) {
+function C(e) {
   let {
     value: t,
     options: n,

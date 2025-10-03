@@ -40,7 +40,7 @@ function E(e) {
   } = e, u = i.useRef(null);
   i.useEffect(() => {
     var e, t;
-    c(null != (t = null == (e = u.current) ? true : e.offsetHeight) ? t : v.Cl)
+    c(null != (t = null == (e = u.current) ? true : e.offsetHeight) ? t : _.Cl)
   }, [c]);
   let m = i.useCallback(() => {
     s(n.id)
@@ -49,12 +49,12 @@ function E(e) {
     ref: u,
     children: [(0, r.jsx)(d.vwX, {
       tag: d.RB0.H1,
-      children: C.intl.string(C.t.LPJmLy)
+      children: y.intl.string(y.t.LPJmLy)
     }), (0, r.jsx)(d.Text, {
       className: N.description,
       color: "header-secondary",
       variant: "text-sm/normal",
-      children: C.intl.string(C.t["1ydhVl"])
+      children: y.intl.string(y.t["1ydhVl"])
     }), (0, r.jsx)(I, {
       guild: t
     }), (0, r.jsx)(S, {
@@ -74,30 +74,30 @@ function I(e) {
   } = e;
   i.useEffect(() => {
     (0, g.wE)(c.z.GUILD_PIN_PERMISSION_MIGRATION_NOTIFICATION, t.id, {
-      dismissAction: O.L.INDIRECT_ACTION,
+      dismissAction: C.L.INDIRECT_ACTION,
       guildId: t.id,
       forceTrack: true
     })
   }, [t]);
-  let n = (0, h.vc)(o()(_.zQD), "LL"),
-    l = t.features.has(_.oNc.PIN_PERMISSION_MIGRATION_COMPLETE) ? (0, r.jsx)(d.Text, {
+  let n = (0, h.vc)(o()(v.zQD), "LL"),
+    l = t.features.has(v.oNc.PIN_PERMISSION_MIGRATION_COMPLETE) ? (0, r.jsx)(d.Text, {
       variant: "text-sm/normal",
-      children: C.intl.format(C.t.Vg2oTE, {
+      children: y.intl.format(y.t.Vg2oTE, {
         breakingChangeDate: n
       })
-    }) : f.Z.can(y.Pl.ADMINISTRATOR, t) ? (0, r.jsx)(d.Text, {
+    }) : f.Z.can(O.Pl.ADMINISTRATOR, t) ? (0, r.jsx)(d.Text, {
       variant: "text-sm/normal",
-      children: C.intl.format(C.t.HYM8OD, {
+      children: y.intl.format(y.t.HYM8OD, {
         onClickMigrate: () => {
           u.Z.show({
-            title: C.intl.string(C.t.nFE8dH),
-            body: C.intl.format(C.t["1PAzQ0"], {
+            title: y.intl.string(y.t.nFE8dH),
+            body: y.intl.format(y.t["1PAzQ0"], {
               guildName: t.name
             }),
-            cancelText: C.intl.string(C.t["ETE/oK"]),
-            confirmText: C.intl.string(C.t["cY+Ooa"]),
+            cancelText: y.intl.string(y.t["ETE/oK"]),
+            confirmText: y.intl.string(y.t["cY+Ooa"]),
             onConfirm: () => {
-              x.Z.migratePinPermission(t.id)
+              b.Z.migratePinPermission(t.id)
             }
           })
         },
@@ -105,7 +105,7 @@ function I(e) {
       })
     }) : (0, r.jsx)(d.Text, {
       variant: "text-sm/normal",
-      children: C.intl.format(C.t.cAuU1d, {
+      children: y.intl.format(y.t.cAuU1d, {
         breakingChangeDate: n
       })
     });
@@ -137,8 +137,8 @@ function S(e) {
       className: N.helpText,
       color: "header-secondary",
       variant: "text-sm/normal",
-      children: C.intl.format(C.t.xkC3YW, {
-        articleURL: b.Z.getArticleURL(_.BhN.PERMISSIONS_TUTORIAL)
+      children: y.intl.format(y.t.xkC3YW, {
+        articleURL: x.Z.getArticleURL(v.BhN.PERMISSIONS_TUTORIAL)
       })
     }), (0, r.jsx)("div", {
       className: N.rolesTable,
@@ -149,13 +149,13 @@ function S(e) {
         }), (0, r.jsx)(d.Text, {
           className: s()(N.tableTitle, N.roleNameSpacing),
           variant: "text-sm/normal",
-          children: C.intl.format(C.t["38N3V1"], {
+          children: y.intl.format(y.t["38N3V1"], {
             numRoles: String(i.length)
           })
         }), (0, r.jsx)(d.Text, {
           className: s()(N.tableTitle, N.memberSpacing),
           variant: "text-sm/normal",
-          children: C.intl.string(C.t["9Oq93t"])
+          children: y.intl.string(y.t["9Oq93t"])
         }), (0, r.jsx)("div", {
           className: N.buttonsSpacing
         })]
@@ -184,13 +184,13 @@ function T(e) {
         query: n,
         onChange: o,
         onClear: c,
-        placeholder: C.intl.string(C.t.Sojqsr),
-        "aria-label": C.intl.string(C.t.Sojqsr)
+        placeholder: y.intl.string(y.t.Sojqsr),
+        "aria-label": y.intl.string(y.t.Sojqsr)
       }), (0, r.jsx)(d.zxk, {
         size: "sm",
         onClick: u,
         loading: s,
-        text: C.intl.string(C.t.JZZjQE)
+        text: y.intl.string(y.t.JZZjQE)
       })]
     })
   })

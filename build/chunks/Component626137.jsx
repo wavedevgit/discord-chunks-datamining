@@ -48,10 +48,10 @@ function N(e) {
 let E = function(e, t, n) {
     let r = arguments.length > 3 && true !== arguments[3] && arguments[3],
       i = null;
-    return null == t || Number.isNaN(t) ? (null == t || Number.isNaN(t)) && null != e && (i = y.intl.string(y.t.xO2msb)) : i = y.intl.formatToPlainString(y.t.nskeMz, {
+    return null == t || Number.isNaN(t) ? (null == t || Number.isNaN(t)) && null != e && (i = O.intl.string(O.t.xO2msb)) : i = O.intl.formatToPlainString(O.t.nskeMz, {
       percentage: (0, s.o)(Math.abs(t), n)
     }), {
-      localizedNumber: null != e ? "".concat((0, s.o)(e, n)).concat(r ? "%" : "") : y.intl.string(y.t.jHpxws),
+      localizedNumber: null != e ? "".concat((0, s.o)(e, n)).concat(r ? "%" : "") : O.intl.string(O.t.jHpxws),
       subtext: i,
       isTrendingUp: t > 0,
       isTrendingDown: t < 0
@@ -59,14 +59,14 @@ let E = function(e, t, n) {
   },
   I = function(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
-    return t || e === _.evJ.NOT_ENOUGH_GUILD_MEMBERS ? (0, r.jsx)(c.kzN, {
+    return t || e === v.evJ.NOT_ENOUGH_GUILD_MEMBERS ? (0, r.jsx)(c.kzN, {
       icon: c.d3s,
-      className: C.notEnoughMembersError,
+      className: y.notEnoughMembersError,
       backgroundColor: c.mTc.BACKGROUND_ACCENT,
-      children: y.intl.string(y.t["FsgE/P"])
+      children: O.intl.string(O.t["FsgE/P"])
     }) : null == e ? null : (0, r.jsx)(c.kzN, {
       backgroundColor: c.mTc.BACKGROUND_ACCENT,
-      children: y.intl.string(y.t.Iju63d)
+      children: O.intl.string(O.t.Iju63d)
     })
   },
   S = () => {
@@ -79,13 +79,13 @@ let E = function(e, t, n) {
         text: Chunk388032.intl.string(Chunk388032.t.Uskgx8),
         onClick: () => {
           exports(true), (function(e) {
-            b.default.track(_.rMx.GUILD_INSIGHTS_SETTINGS_CTA_CLICKED, {
+            x.default.track(v.rMx.GUILD_INSIGHTS_SETTINGS_CTA_CLICKED, {
               guild_id: e
             });
-            let t = null == e ? _.E07.DEVELOPER_PORTAL : _.E07.DEVELOPER_PORTAL_GUILD_ANALYTICS(e),
+            let t = null == e ? v.E07.DEVELOPER_PORTAL : v.E07.DEVELOPER_PORTAL_GUILD_ANALYTICS(e),
               n = (0, l.Z)();
             return o.tn.post({
-              url: _.ANM.HANDOFF,
+              url: v.ANM.HANDOFF,
               body: {
                 key: n
               },
@@ -93,7 +93,7 @@ let E = function(e, t, n) {
               rejectWithError: true
             }).then(e => {
               let r = e.body.handoff_token;
-              window.open(_.EYA.DEVELOPER_PORTAL_LOGIN_HANDOFF(n, r, t))
+              window.open(v.EYA.DEVELOPER_PORTAL_LOGIN_HANDOFF(n, r, t))
             }, () => {
               window.open(t)
             })
@@ -117,7 +117,7 @@ let E = function(e, t, n) {
         analytics: null != module ? Chunk743676.Z.getOverviewAnalytics(module) : null,
         errorCode: Chunk743676.Z.getError()
       })),
-      b = (0, Chunk442837.e7)([Chunk246946.Z], () => Chunk246946.Z.getSettings().enabled),
+      x = (0, Chunk442837.e7)([Chunk246946.Z], () => Chunk246946.Z.getSettings().enabled),
       T = null == exports || null == require || null != exports && exports < 500 && null != require && !require.features.has(Chunk981631.oNc.PARTNERED) && !require.features.has(Chunk981631.oNc.VERIFIED);
     Chunk647438.useEffect(() => {
       null == module || T || ((0, Chunk798528.Vk)(module), (0, Chunk798528.SR)(module), (0, Chunk798528.xl)(module))

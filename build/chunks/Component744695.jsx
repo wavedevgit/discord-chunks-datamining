@@ -148,8 +148,8 @@ function x(e) {
     null == d || d(t - n)
   }, [v, d]);
   (0, c.s)(y, I);
-  let O = 0 !== u,
-    S = j.some(e => e.id === n);
+  let S = 0 !== u,
+    P = j.some(e => e.id === n);
   return (0, r.jsxs)("div", {
     className: l()(h.container, t),
     ref: y,
@@ -170,10 +170,10 @@ function x(e) {
           tabs: j,
           onTabSelect: o,
           selectedTab: n,
-          selected: S
+          selected: P
         })
       })]
-    }), O && (0, r.jsxs)("div", {
+    }), S && (0, r.jsxs)("div", {
       className: h.tabs,
       children: [C.map(e => (0, r.jsx)(f, {
         id: e.id,
@@ -184,7 +184,7 @@ function x(e) {
         tabs: j,
         onTabSelect: o,
         selectedTab: n,
-        selected: S
+        selected: P
       }) : null]
     })]
   })

@@ -9,7 +9,7 @@ require.d(exports, {
   JQ: () => A,
   NE: () => b,
   RG: () => L,
-  Xb: () => M,
+  Xb: () => j,
   Xu: () => O,
   Y: () => G,
   cD: () => v,
@@ -120,7 +120,7 @@ function R(e, t, n) {
 
 function P(e) {
   let t = (0, o.e7)([p.Z], () => N(e, p.Z)),
-    n = M(e);
+    n = j(e);
   return R(e, t, n)
 }
 
@@ -146,18 +146,18 @@ function x(e) {
   return e.isArchivedLockedThread() && !t
 }
 
-function j(e, t) {
+function M(e, t) {
   return null != e && t.can(g.Plq.MANAGE_THREADS, e)
 }
 
-function M(e) {
+function j(e) {
   return (0, o.e7)([p.Z], () => k(e, [p.Z]))
 }
 
 function k(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [p.Z],
     [n] = t;
-  return j(e, n)
+  return M(e, n)
 }
 
 function U(e) {
@@ -184,6 +184,6 @@ function G(e) {
 }
 
 function B(e) {
-  let t = M(e);
+  let t = j(e);
   return e.isLockedThread() && !t
 }

@@ -2,7 +2,7 @@
 /** chunk id: 262212, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ZP: () => j,
-  ms: () => O
+  ms: () => y
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -49,7 +49,7 @@ function _(e) {
   return e
 }
 
-function O(e) {
+function y(e) {
   let {
     className: t,
     guildId: n,
@@ -57,13 +57,13 @@ function O(e) {
     onClick: a
   } = e, s = (0, d.Z)(n, i), {
     onShowMore: c
-  } = (0, p.ZP)(n, i), u = f.uc.has(i.skuId);
+  } = (0, p.ZP)(n, i), u = h.uc.has(i.skuId);
   return (0, r.jsx)("div", {
     className: l()(m.primaryButton, t),
     children: (0, r.jsx)(o.zxk, {
       variant: "primary",
       fullWidth: true,
-      text: u ? g.intl.string(h.default["g5Ds6+"]) : g.intl.string(g.t["0Q61kJ"]),
+      text: u ? g.intl.string(f.default["g5Ds6+"]) : g.intl.string(g.t["0Q61kJ"]),
       onClick: e => {
         null == a || a(e), u ? null == s || s(e) : null == c || c()
       }
@@ -71,7 +71,7 @@ function O(e) {
   })
 }
 
-function y(e) {
+function O(e) {
   let {
     className: t,
     guildId: n,
@@ -86,7 +86,7 @@ function y(e) {
       children: (0, r.jsx)(o.zxk, {
         variant: "primary",
         fullWidth: true,
-        text: i.type === f.Us.LEVEL ? g.intl.string(g.t["0Q61kJ"]) : g.intl.string(g.t.Xa11Eh),
+        text: i.type === h.Us.LEVEL ? g.intl.string(g.t["0Q61kJ"]) : g.intl.string(g.t.Xa11Eh),
         onClick: a
       })
     })
@@ -99,16 +99,16 @@ function v(e) {
     guildId: n,
     powerup: i,
     onError: o
-  } = e, s = (0, c.ZP)(n, i).type !== f.A3.INACTIVE, d = (0, a.Z)(n, i, "GuildPowerupCardFooterAdmin"), p = s || !d, h = !s;
+  } = e, s = (0, c.ZP)(n, i).type !== h.A3.INACTIVE, d = (0, a.Z)(n, i, "GuildPowerupCardFooterAdmin"), p = s || !d, f = !s;
   return (0, r.jsxs)("div", {
     className: l()(m.container, t),
     children: [p && (0, r.jsx)(u.ZP, {
       guildId: n,
       powerup: i,
       onError: o,
-      grow: h,
-      compact: !h
-    }), s && (0, r.jsx)(O, {
+      grow: f,
+      compact: !f
+    }), s && (0, r.jsx)(y, {
       guildId: n,
       powerup: i
     })]
@@ -120,5 +120,5 @@ function j(e) {
     if (null == e) throw TypeError("Cannot destructure " + e);
     return e
   }(e));
-  return (0, s.Z)(t.guildId) ? (0, r.jsx)(v, _({}, t)) : (0, r.jsx)(y, _({}, t))
+  return (0, s.Z)(t.guildId) ? (0, r.jsx)(v, _({}, t)) : (0, r.jsx)(O, _({}, t))
 }

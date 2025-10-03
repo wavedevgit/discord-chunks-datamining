@@ -110,7 +110,7 @@ async function v(e, t) {
     r = await b(e, t);
   await s.tn.post({
     url: _.ANM.SUBMIT_REPORT_MENU(n),
-    body: M(r, e, [{
+    body: j(r, e, [{
       nodeRef: r.root_node_id,
       destination: ["", r.success_node_id]
     }]),
@@ -125,13 +125,13 @@ function I(e, t, n) {
 function T(e, t, n) {
   return s.tn.post({
     url: _.ANM.SUBMIT_REPORT_MENU(D(t)),
-    body: M(e, t, n),
+    body: j(e, t, n),
     rejectWithError: false
   })
 }
 
 function S(e, t, n) {
-  let r = j(e, t, n);
+  let r = M(e, t, n);
   return s.tn.post({
     url: x(t),
     body: r,
@@ -148,7 +148,7 @@ function A(e, t, n, r) {
   let i = w(t);
   return s.tn.post({
     url: _.ANM.SUBMIT_UNAUTHENTICATED_REPORT_MENU(i),
-    body: M(e, t, n, r),
+    body: j(e, t, n, r),
     rejectWithError: false
   })
 }
@@ -209,7 +209,7 @@ function x(e) {
   if (a()(o.s.REPORT_TO_MOD.has(e.name), "Invalid report type ".concat(e.name)), e.name === f.xw.MESSAGE) return _.ANM.SUBMIT_MODERATOR_MESSAGE_REPORT(e.record.channel_id, e.record.id);
   throw Error("Invalid report type ".concat(e.name))
 }
-let j = (e, t, n) => {
+let M = (e, t, n) => {
     let {
       version: r,
       variant: i,
@@ -251,7 +251,7 @@ let j = (e, t, n) => {
     }
     return null
   },
-  M = (e, t, n, r) => {
+  j = (e, t, n, r) => {
     let {
       version: i,
       variant: a,

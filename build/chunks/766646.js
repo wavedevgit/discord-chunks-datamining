@@ -40,7 +40,7 @@ function L() {
   C.stop(), null != r && (Chunk649754.Z.removeSink(r, A), r = null)
 }
 let x = s().debounce((e, t, n, r) => {
-  M(e, (0, y.V9)({
+  j(e, (0, y.V9)({
     streamType: null != t ? O.lo.GUILD : O.lo.CALL,
     guildId: t,
     channelId: n,
@@ -48,7 +48,7 @@ let x = s().debounce((e, t, n, r) => {
   }))
 }, 500);
 
-function j(e) {
+function M(e) {
   let t = Math.min(P / e.width, w / e.height),
     n = e.width * t,
     r = e.height * t;
@@ -61,12 +61,12 @@ function j(e) {
     null == D || D.drawImage(i, 0, 0, e.width, e.height, 0, 0, n, r), t()
   })
 }
-async function M(e, t) {
+async function j(e, t) {
   if (r !== e || (0, E.isWeb)() && h.I0.getSetting() || m.Z.getIsActiveStreamPreviewDisabled(t)) return;
-  let n = () => M(e, t);
+  let n = () => j(e, t);
   if (!N) try {
     let n = await k(e, 60);
-    await j(n);
+    await M(n);
     let r = R.toDataURL("image/jpeg");
     if (_.Z.dispatch({
         type: "STREAM_PREVIEW_FETCH_SUCCESS",

@@ -84,11 +84,11 @@ function x(e, t) {
   return e > 0 ? "" : null != (r = null == (n = P[t]) ? true : n.id) ? r : ""
 }
 
-function j(e) {
+function M(e) {
   return e === u.EO.VIDEO
 }
 
-function M(e) {
+function j(e) {
   return ((0, E._M)(e) || (0, E.MO)(e)) && (e.pathname.toLowerCase().endsWith(".webp") || e.pathname.toLowerCase().endsWith(".avif"))
 }
 
@@ -99,7 +99,7 @@ function k(e) {
 function U(e) {
   let t = y.Z.toURLSafe(e),
     n = null != t && k(t);
-  return null != t && (M(t) || n) ? (n && t.searchParams.set("format", "webp"), t.searchParams.set("animated", "true"), t.toString()) : e
+  return null != t && (j(t) || n) ? (n && t.searchParams.set("format", "webp"), t.searchParams.set("animated", "true"), t.toString()) : e
 }
 class G extends Chunk647438.PureComponent {
   componentDidMount() {
@@ -177,7 +177,7 @@ class G extends Chunk647438.PureComponent {
       style: A({
         backgroundColor: Chunk392711 ? true : o
       }, Chunk647438),
-      children: [j(require) ? null : this.renderGIF(), null != exports ? exports(module) : null]
+      children: [M(require) ? null : this.renderGIF(), null != exports ? exports(module) : null]
     })
   }
   constructor(e) {
@@ -201,7 +201,7 @@ class G extends Chunk647438.PureComponent {
     this.state = {
       color: null == n ? l().sample(C) : n,
       loaded: false
-    }, j(t) || (this._image = r.getElement(), this._image.onload = () => this.setState({
+    }, M(t) || (this._image = r.getElement(), this._image.onload = () => this.setState({
       loaded: true
     }), this._image.src = e.src)
   }

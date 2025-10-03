@@ -109,7 +109,7 @@ function P(e) {
     }));
     return e
   }
-  let j = g.value;
+  let M = g.value;
   if (null != g.value) switch (g.type) {
     case c.jw.USER: {
       let e = g.value.toString(),
@@ -172,10 +172,10 @@ function P(e) {
       break;
     default: {
       let e = null == D || null == (s = D.choices) ? true : s.find(e => e.value === g.value);
-      null != e && (j = null != (u = e.name_localized) ? u : e.name)
+      null != e && (M = null != (u = e.name_localized) ? u : e.name)
     }
   }
-  return null == f && (f = R(null == j ? true : j.toString())), [(0, r.jsxs)(i.Fragment, {
+  return null == f && (f = R(null == M ? true : M.toString())), [(0, r.jsxs)(i.Fragment, {
     children: [(0, r.jsxs)(l.Text, A(T({}, C), {
       children: [" ", null != (d = null == D ? true : D.name_localized) ? d : g.name, ": "]
     })), f]

@@ -136,8 +136,8 @@ let eb = new Chunk710845.Z("AutocompleteUtils"),
   eD = 8,
   eL = 1,
   ex = 1e3,
-  ej = .2,
-  eM = .1,
+  eM = .2,
+  ej = .1,
   ek = 50,
   eU = () => true,
   eG = /(\t|\s)/,
@@ -192,8 +192,8 @@ function eW(e) {
       }
     } else o[n] = 1 + r / i
   }
-  for (let e of K.Z.getFriendIDs()) o[e] = (null != (t = o[e]) ? t : 1) + ej;
-  for (let e of k.Z.getDMUserIds()) o[e] = (null != (n = o[e]) ? n : 1) + eM;
+  for (let e of K.Z.getFriendIDs()) o[e] = (null != (t = o[e]) ? t : 1) + eM;
+  for (let e of k.Z.getDMUserIds()) o[e] = (null != (n = o[e]) ? n : 1) + ej;
   return o
 }
 let eK = [Chunk984933.sH, Chunk984933.Zb, Chunk981631.d4z.GUILD_CATEGORY];
@@ -245,7 +245,7 @@ function eJ(e) {
   for (; m < h;) {
     var E, b, y, O, v, I, T, S, A;
     let e, r, f = n[m];
-    f instanceof j.Z ? (r = f, e = null == (b = Z.ZP.getNick(c, r.id)) ? true : b.toLocaleLowerCase()) : (e = null == (y = f.nick) ? true : y.toLocaleLowerCase(), r = l[f.userId]);
+    f instanceof M.Z ? (r = f, e = null == (b = Z.ZP.getNick(c, r.id)) ? true : b.toLocaleLowerCase()) : (e = null == (y = f.nick) ? true : y.toLocaleLowerCase(), r = l[f.userId]);
     let h = null == (E = es.ZP.getGlobalName(r)) ? true : E.toLocaleLowerCase();
     if (null != r && (null == i || i(r))) {
       let n = r.username.toLocaleLowerCase(),
@@ -1077,12 +1077,12 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
           userId: e,
           nick: null != (t = K.Z.getNickname(e)) ? t : null
         }
-      }) : Z.ZP.getMembers(n.guild_id).filter(eX), s = M.default.getId(), l = X.default.getUsers(), c = q.Z.getGuildId(), u = t.toLocaleLowerCase(), d = (0, eo.Fv)(u), _ = [];
+      }) : Z.ZP.getMembers(n.guild_id).filter(eX), s = j.default.getId(), l = X.default.getUsers(), c = q.Z.getGuildId(), u = t.toLocaleLowerCase(), d = (0, eo.Fv)(u), _ = [];
       c: for (let e of o) {
         var p, h, m, g;
         let t, o;
         if (_.length >= r) break;
-        e instanceof j.Z ? (o = e, t = null == (m = Z.ZP.getNick(c, o.id)) ? true : m.toLocaleLowerCase()) : (t = null == (g = e.nick) ? true : g.toLocaleLowerCase(), o = l[e.userId]);
+        e instanceof M.Z ? (o = e, t = null == (m = Z.ZP.getNick(c, o.id)) ? true : m.toLocaleLowerCase()) : (t = null == (g = e.nick) ? true : g.toLocaleLowerCase(), o = l[e.userId]);
         let f = null == (p = K.Z.getNickname(o.id)) ? true : p.toLocaleLowerCase(),
           E = null == (h = es.ZP.getGlobalName(o)) ? true : h.toLocaleLowerCase();
         if (null == o || o.id === s || !er.BT({

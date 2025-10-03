@@ -29,36 +29,36 @@ function b(e) {
       style: o
     } = e,
     b = (0, l.e7)([c.Z], () => c.Z.getWindow(_.KJ3.CHANNEL_CALL_POPOUT)),
-    v = (0, p.Z)(),
-    E = (0, l.e7)([u.ZP], () => u.ZP.getActivityPanelMode());
-  if (null == v || (0, f.Z)((0, d.p)(v.location)) || E !== m.Ez.PANEL) {
+    E = (0, p.Z)(),
+    v = (0, l.e7)([u.ZP], () => u.ZP.getActivityPanelMode());
+  if (null == E || (0, f.Z)((0, d.p)(E.location)) || v !== m.Ez.PANEL) {
     var h;
     t = null != (h = null == b ? true : b.window) ? h : window
   } else t = window;
-  let y = i.useRef(null),
-    S = i.useMemo(() => {
+  let S = i.useRef(null),
+    y = i.useMemo(() => {
       let e = null;
       return () => {
         null == e && (e = t.requestAnimationFrame(() => {
           var t, r;
-          g(n, null != (r = null == (t = y.current) ? true : t.getBoundingClientRect()) ? r : null), e = null
+          g(n, null != (r = null == (t = S.current) ? true : t.getBoundingClientRect()) ? r : null), e = null
         }))
       }
     }, [n, t]);
-  return i.useEffect(() => (t.addEventListener("resize", S), s.S.subscribe(_.CkL.REMEASURE_TARGET, S), () => {
-    t.removeEventListener("resize", S), s.S.unsubscribe(_.CkL.REMEASURE_TARGET, S)
-  }), [S, t]), i.useLayoutEffect(() => {
-    let e = y.current;
+  return i.useEffect(() => (t.addEventListener("resize", y), s.S.subscribe(_.CkL.REMEASURE_TARGET, y), () => {
+    t.removeEventListener("resize", y), s.S.unsubscribe(_.CkL.REMEASURE_TARGET, y)
+  }), [y, t]), i.useLayoutEffect(() => {
+    let e = S.current;
     if (null == e) return;
     let t = e.ownerDocument.defaultView;
     if (null == t) return;
-    S();
-    let r = new t.ResizeObserver(S);
+    y();
+    let r = new t.ResizeObserver(y);
     return r.observe(e), () => {
       r.disconnect(), g(n, null)
     }
-  }, [n, S]), (0, r.jsx)("div", {
-    ref: y,
+  }, [n, y]), (0, r.jsx)("div", {
+    ref: S,
     style: o,
     className: a
   })

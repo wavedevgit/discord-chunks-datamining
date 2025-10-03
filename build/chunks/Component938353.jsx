@@ -196,7 +196,7 @@ let e7 = [Chunk981631.hBH.GIFV],
       height: a,
       flags: o
     } = e, s = (0, ev.yE)(o, W.hR.IS_ANIMATED);
-    return null != r && null != a && (K.uo.test(n) || s && (K.YG.test(n) || K.FH.test(n))) ? (0, i.jsx)(eM.Z, {
+    return null != r && null != a && (K.uo.test(n) || s && (K.YG.test(n) || K.FH.test(n))) ? (0, i.jsx)(ej.Z, {
       width: r,
       height: a,
       src: n,
@@ -542,7 +542,7 @@ class tr extends(r = Chunk647438.Component) {
     })
   }
   renderEphemeralAccessories(e) {
-    return (0, eC.Pv)(e) ? (0, i.jsx)(ej.Z, {
+    return (0, eC.Pv)(e) ? (0, i.jsx)(eM.Z, {
       message: e,
       onDeleteMessage: () => {
         _.Z.dismissAutomatedMessage(e)
@@ -814,7 +814,7 @@ function ti(e) {
   } = (0, c.cj)([em.Z], () => ({
     canAddNewReactions: p && em.Z.can(eX.Plq.ADD_REACTIONS, n),
     canManageMessages: em.Z.can(eX.Plq.MANAGE_MESSAGES, n)
-  }), [p, n]), y = (0, j.ux)(n.guild_id), [, O] = (0, M.AB)(n.guild_id), v = (0, ec.$R)(n), I = (s === r.author.id || b) && r.author.id !== eX.LAt && false !== a && !(0, ev.yE)(r.flags, eX.iLy.EPHEMERAL) && v && 1 === (0, eP.Z)(r), T = s === r.author.id && v && !o, S = r.author.id === s, A = r.isFirstMessageInForumPost(n), N = (0, eD.Z)({
+  }), [p, n]), y = (0, M.ux)(n.guild_id), [, O] = (0, j.AB)(n.guild_id), v = (0, ec.$R)(n), I = (s === r.author.id || b) && r.author.id !== eX.LAt && false !== a && !(0, ev.yE)(r.flags, eX.iLy.EPHEMERAL) && v && 1 === (0, eP.Z)(r), T = s === r.author.id && v && !o, S = r.author.id === s, A = r.isFirstMessageInForumPost(n), N = (0, eD.Z)({
     channel: n,
     canChat: p,
     renderReactions: f,

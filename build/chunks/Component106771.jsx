@@ -22,9 +22,9 @@ function h(e) {
     command: n,
     application: h,
     onClick: v,
-    query: y,
-    searchResultsPosition: x
-  } = e, b = i.useCallback(e => {
+    query: x,
+    searchResultsPosition: y
+  } = e, g = i.useCallback(e => {
     if ((0, s.BQ)(h)) {
       let t = h instanceof o.ZP ? h : o.ZP.createFromServer(h);
       (0, a.vq)(e, e => (0, l.jsx)(u.Z, function(e) {
@@ -49,22 +49,22 @@ function h(e) {
       }, e)))
     }
   }, [h]), {
-    iconURL: g,
-    name: j,
-    description: N
+    iconURL: b,
+    name: N,
+    description: j
   } = i.useMemo(() => (0, s.sl)(h, {
     fakeAppIconURL: f
   }), [h]), C = i.useMemo(() => {
     var e;
-    let t = null != (e = null == n ? true : n.displayDescription) ? e : N;
+    let t = null != (e = null == n ? true : n.displayDescription) ? e : j;
     return null == t ? null : (0, c.ae)(t, true)
-  }, [N, null == n ? true : n.displayDescription]), {
+  }, [j, null == n ? true : n.displayDescription]), {
     trackSearchResultsItemImpressionRef: E
   } = (0, p.Z)({
     applicationId: h.id,
     commandId: null == n ? true : n.id,
-    query: y,
-    searchResultsPosition: x
+    query: x,
+    searchResultsPosition: y
   });
   return (0, l.jsx)(r.P3F, {
     className: m.clickable,
@@ -72,11 +72,11 @@ function h(e) {
       E.current = e
     },
     onClick: v,
-    onContextMenu: b,
+    onContextMenu: g,
     children: (0, l.jsxs)(r.Rny, {
       className: m.focusBlock,
       children: [(0, l.jsx)(d.Z, {
-        src: g,
+        src: b,
         className: m.icon,
         "aria-hidden": true,
         rendersPlaceholder: true
@@ -86,7 +86,7 @@ function h(e) {
           variant: "heading-md/semibold",
           color: "header-primary",
           lineClamp: 1,
-          children: null != (t = null == n ? true : n.displayName) ? t : j
+          children: null != (t = null == n ? true : n.displayName) ? t : N
         }), (0, l.jsx)(r.Text, {
           variant: "text-sm/normal",
           color: "text-secondary",
@@ -97,7 +97,7 @@ function h(e) {
         className: m.cmdAppName,
         variant: "text-sm/normal",
         color: "text-secondary",
-        children: j
+        children: N
       }) : null, (0, l.jsx)("div", {
         className: m.underline
       })]

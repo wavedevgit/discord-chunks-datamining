@@ -68,12 +68,12 @@ function x(e, t) {
   return n
 }
 
-function j(e, t) {
+function M(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let M = 190,
+let j = 190,
   k = 178,
   U = "MESSAGE_CONFETTI_POTION_MODAL_KEY",
   G = e => {
@@ -91,7 +91,7 @@ let M = 190,
       let {
         default: e
       } = await Promise.resolve().then(n.bind(n, 135793));
-      return t => (0, r.jsx)(e, j(L({}, t), {
+      return t => (0, r.jsx)(e, M(L({}, t), {
         channel: d,
         message: i,
         onRedeem: a,
@@ -178,11 +178,11 @@ function Z(e) {
       }
       return 0
     }, [E, R, s]),
-    j = (0, i.useMemo)(() => 0 === x ? 1 : u ? 2 : 3 * (null == _), [u, _, x]);
+    M = (0, i.useMemo)(() => 0 === x ? 1 : u ? 2 : 3 * (null == _), [u, _, x]);
   return (0, r.jsx)(F, {
     channel: t,
     buttonPurchaseState: x,
-    buttonDisabledState: j,
+    buttonDisabledState: M,
     price: p,
     onActionClick: L,
     loading: P,
@@ -422,7 +422,7 @@ let F = e => {
       tooltipContentClassName: P.tooltip,
       text: u,
       shouldShow: !!s,
-      children: e => (0, r.jsx)(c.zxk, j(L({}, e), {
+      children: e => (0, r.jsx)(c.zxk, M(L({}, e), {
         onClick: o,
         disabled: s,
         text: l
@@ -436,7 +436,7 @@ let F = e => {
       children: [(0, Chunk951288.jsx)(Chunk481060.Eep, {
         src: Chunk99713,
         width: k,
-        height: M
+        height: j
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         children: Chunk388032.intl.string(Chunk388032.t.oKJdSk)

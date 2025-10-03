@@ -68,7 +68,7 @@ function N(e) {
     isFocused: a
   } = e, s = null != l ? l : 16, c = function(e, t) {
     switch (e) {
-      case g.gq.BOT:
+      case j.gq.BOT:
         return (0, r.jsx)(C.wGt, {
           size: "custom",
           color: "currentColor",
@@ -76,7 +76,7 @@ function N(e) {
           height: t,
           width: t
         });
-      case g.gq.INTEGRATION:
+      case j.gq.INTEGRATION:
         return (0, r.jsx)(C.tYf, {
           size: "custom",
           color: "currentColor",
@@ -84,7 +84,7 @@ function N(e) {
           height: t,
           width: t
         });
-      case g.gq.DISCOVERY:
+      case j.gq.DISCOVERY:
         return (0, r.jsx)(C.Jmo, {
           size: "custom",
           color: "currentColor",
@@ -92,7 +92,7 @@ function N(e) {
           height: t,
           width: t
         });
-      case g.gq.HUB:
+      case j.gq.HUB:
         return (0, r.jsx)(C.aVH, {
           size: "custom",
           color: "currentColor",
@@ -100,8 +100,8 @@ function N(e) {
           height: t,
           width: t
         });
-      case g.gq.INVITE:
-      case g.gq.VANITY_URL:
+      case j.gq.INVITE:
+      case j.gq.VANITY_URL:
         return (0, r.jsx)(C.xPt, {
           size: "custom",
           color: "currentColor",
@@ -109,13 +109,13 @@ function N(e) {
           height: t,
           width: t
         });
-      case g.gq.MANUAL_MEMBER_VERIFICATION:
+      case j.gq.MANUAL_MEMBER_VERIFICATION:
         return (0, r.jsx)(p.Z, {
           className: O.icon,
           height: t,
           width: t
         });
-      case g.gq.SOCIAL_LAYER_INTEGRATION_LINKED_CHANNEL:
+      case j.gq.SOCIAL_LAYER_INTEGRATION_LINKED_CHANNEL:
         return (0, r.jsx)(C.iWm, {
           size: "custom",
           color: "currentColor",
@@ -126,7 +126,7 @@ function N(e) {
       default:
         return null
     }
-  }(t, s), u = (0, g.bE)(t, i);
+  }(t, s), u = (0, j.bE)(t, i);
   return (0, r.jsxs)("div", {
     className: O.labelWithIconContainer,
     "aria-label": u,
@@ -147,43 +147,43 @@ function Z(e) {
     onClose: i
   } = e, a = (0, d.e7)([h.Z], () => h.Z.getSearchStateByGuildId(n), [n], u()), {
     inviteCodes: c
-  } = (0, x.s)(n), p = (0, d.e7)([m.Z], () => m.Z.getGuild(n)), Z = null != (t = null == p ? true : p.vanityURLCode) ? t : null, [D, L] = l.useState(false), {
-    selectedSourceInviteCode: R,
-    selectedJoinSourceType: P
-  } = a, I = null != P && P !== g.gq.UNSPECIFIED, M = (0, d.e7)([b.Z], () => b.Z.hideInstantInvites, []);
-  M && (c = []);
-  let V = s()(e => {
+  } = (0, x.s)(n), p = (0, d.e7)([m.Z], () => m.Z.getGuild(n)), Z = null != (t = null == p ? true : p.vanityURLCode) ? t : null, [D, R] = l.useState(false), {
+    selectedSourceInviteCode: L,
+    selectedJoinSourceType: I
+  } = a, P = null != I && I !== j.gq.UNSPECIFIED, V = (0, d.e7)([b.Z], () => b.Z.hideInstantInvites, []);
+  V && (c = []);
+  let M = s()(e => {
     let t = e.trim();
-    (0, j.Dr)(n, {
+    (0, g.Dr)(n, {
       selectedSourceInviteCode: "" !== t ? t : true,
       selectedJoinSourceType: true
     })
   }, 300);
   l.useEffect(() => () => {
-    V.cancel()
-  }, [V]);
+    M.cancel()
+  }, [M]);
   let E = l.useCallback(e => {
       let t = e.trim();
-      (0, j.Dr)(n, {
+      (0, g.Dr)(n, {
         selectedSourceInviteCode: "" !== t ? t : true,
         selectedJoinSourceType: true
       })
     }, [n]),
     T = l.useCallback(e => {
-      e === P ? (0, j.Dr)(n, {
+      e === I ? (0, g.Dr)(n, {
         selectedSourceInviteCode: true,
         selectedJoinSourceType: true
-      }) : (0, j.Dr)(n, {
+      }) : (0, g.Dr)(n, {
         selectedSourceInviteCode: null,
         selectedJoinSourceType: e
-      }), L(false)
-    }, [n, P]),
+      }), R(false)
+    }, [n, I]),
     k = l.useCallback(e => {
-      (0, j.Dr)(n, {
+      (0, g.Dr)(n, {
         selectedSourceInviteCode: e,
         selectedJoinSourceType: true
-      }), V(e)
-    }, [n, V]);
+      }), M(e)
+    }, [n, M]);
   return (0, r.jsx)(C.v2r, {
     navId: "members-table-join-method-menu",
     onClose: () => {
@@ -194,7 +194,7 @@ function Z(e) {
     children: D ? (0, r.jsxs)(C.kSQ, {
       children: [(0, r.jsx)(C.sNh, {
         id: "back",
-        action: () => L(false),
+        action: () => R(false),
         render: e => (0, r.jsxs)("span", w(_({}, e), {
           className: O.customLabelContainer,
           children: [(0, r.jsx)(C.V7D, {
@@ -214,9 +214,9 @@ function Z(e) {
         label: t => (0, r.jsx)(N, w(_({}, t), {
           type: e,
           vanityUrl: Z,
-          text: (0, g.bE)(e, Z, M)
+          text: (0, j.bE)(e, Z, V)
         })),
-        checked: P === e,
+        checked: I === e,
         disabled: false,
         action: () => T(e),
         group: "join-source-type-options"
@@ -225,7 +225,7 @@ function Z(e) {
       children: [(0, r.jsx)(C.II_, {
         id: "members-table-invite-code-search",
         control: (e, t) => (0, r.jsx)(C.ne, w(_({}, e), {
-          query: null != R ? R : "",
+          query: null != L ? L : "",
           onChange: k,
           ref: t,
           placeholder: y.intl.string(y.t.YwJnGx)
@@ -233,24 +233,24 @@ function Z(e) {
       }, "invite-code-filter-search"), (0, r.jsx)(C.Clw, {}), (0, r.jsx)(C.k5B, {
         id: "join-source-type-option-all",
         label: y.intl.string(y.t.an9Ry8),
-        checked: null == R && null == P,
+        checked: null == L && null == I,
         disabled: false,
         action: () => T(null),
         group: "join-source-type-options"
       }, "join-source-type-option-all"), c.map(e => (0, r.jsx)(C.k5B, {
         id: "join-source-type-option-".concat(e),
         label: t => (0, r.jsx)(N, w(_({}, t), {
-          type: g.gq.INVITE,
+          type: j.gq.INVITE,
           vanityUrl: Z,
           text: e
         })),
-        checked: R === e,
+        checked: L === e,
         disabled: false,
         action: () => E(e),
         group: "join-source-type-options"
       }, "join-source-type-option-".concat(e))), (0, r.jsx)(C.Clw, {}), (0, r.jsx)(C.sNh, {
         id: "other-join-methods",
-        action: () => L(true),
+        action: () => R(true),
         render: e => (0, r.jsxs)("div", {
           className: o()(O.containerWithRightCaret, O.customLabelContainer),
           children: [(0, r.jsxs)("div", {
@@ -261,16 +261,16 @@ function Z(e) {
                 [O.focused]: e.isFocused
               }),
               children: y.intl.string(y.t["Kz/cho"])
-            }), I ? (0, r.jsx)("div", {
+            }), P ? (0, r.jsx)("div", {
               className: O.selectedOption,
               children: (0, r.jsx)(N, w(_({}, e), {
                 size: 12,
-                text: (0, g.bE)(P, Z, M),
-                type: P,
+                text: (0, j.bE)(I, Z, V),
+                type: I,
                 vanityUrl: Z
               }))
             }) : null]
-          }), I ? (0, r.jsx)(f.Z, {
+          }), P ? (0, r.jsx)(f.Z, {
             background: O.__invalid_radio,
             foreground: O.radioSelection,
             width: 16,

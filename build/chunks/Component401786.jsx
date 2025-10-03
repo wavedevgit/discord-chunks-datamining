@@ -97,7 +97,7 @@ async function x(e, t, n, r) {
   }, (0, S.UX)(a, e.currency, e.paymentSourceId), n)
 }
 
-function j(e) {
+function M(e) {
   var t, n, a;
   let {
     premiumSubscription: o,
@@ -106,7 +106,7 @@ function j(e) {
     onBack: d,
     onNext: p,
     onClose: O
-  } = e, [I, T] = i.useState(false), [R, D] = i.useState(null), [L, j] = i.useMemo(() => {
+  } = e, [I, T] = i.useState(false), [R, D] = i.useState(null), [L, M] = i.useMemo(() => {
     try {
       return [(0, g.g)(o, false), false]
     } catch (e) {
@@ -114,12 +114,12 @@ function j(e) {
         [], true
       ]
     }
-  }, [o]), M = i.useRef(O);
+  }, [o]), j = i.useRef(O);
   i.useEffect(() => {
-    M.current = O
+    j.current = O
   }), i.useEffect(() => {
-    j && M.current()
-  }, [j]);
+    M && j.current()
+  }, [M]);
   let {
     premiumSubscriptionPlan: k,
     premiumGuildPlan: U
@@ -225,7 +225,7 @@ function j(e) {
   })
 }
 
-function M(e) {
+function j(e) {
   let {
     premiumSubscription: t,
     fractionalPremiumInfo: n,
@@ -292,7 +292,7 @@ function k(e) {
         "data-migration-pending": true,
         transitionState: a,
         parentComponent: "GuildBoostSlotCancellationModal",
-        children: (0, r.jsx)(j, {
+        children: (0, r.jsx)(M, {
           premiumSubscription: s,
           guildBoostSlotId: n.id,
           fractionalPremiumInfo: d,
@@ -303,7 +303,7 @@ function k(e) {
       });
       break;
     case 3:
-      t = (0, r.jsx)(M, {
+      t = (0, r.jsx)(j, {
         premiumSubscription: s,
         fractionalPremiumInfo: d,
         onClose: o,

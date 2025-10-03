@@ -36,9 +36,9 @@ var Chunk664751 = require("./664751.js"),
   Chunk388032 = require("./388032.jsx");
 let L = 3,
   x = 20,
-  j = new Chunk710845.Z("GamesActionCreators");
+  M = new Chunk710845.Z("GamesActionCreators");
 
-function M(e) {
+function j(e) {
   let {
     applicationId: t,
     secret: n,
@@ -57,13 +57,13 @@ function M(e) {
       try {
         if (r.startsWith("http")) {
           let e = window.open(r, "_blank");
-          (null == e || e.closed || true === e.closed) && (j.warn("Deep link popup was blocked by browser, trying location.href", {
+          (null == e || e.closed || true === e.closed) && (M.warn("Deep link popup was blocked by browser, trying location.href", {
             applicationId: t
           }), window.location.href = r)
         } else window.location.href = r;
         return Promise.resolve()
       } catch (e) {
-        j.warn("Failed to open deep link, falling back to desktop launch", {
+        M.warn("Failed to open deep link, falling back to desktop launch", {
           applicationId: t,
           error: e.message
         })
@@ -236,7 +236,7 @@ let B = {
   },
   identifyGame: (e, t) => (0, d.Z)().then(t => new Promise((n, r) => {
     if (null == t) return void r(Error("Game utils module not loaded"));
-    t.identifyGame(e, (t, i) => (j.log("Identified game: ", {
+    t.identifyGame(e, (t, i) => (M.log("Identified game: ", {
       status: t,
       name: i.name,
       iconHash: i.iconHash,
@@ -343,7 +343,7 @@ let B = {
       sku: a,
       executableName: s
     } = e, c = (0, d.F)(s);
-    j.log("Reporting unverified game: ", {
+    M.log("Reporting unverified game: ", {
       name: t,
       executableName: s,
       iconHash: n,
@@ -431,7 +431,7 @@ let B = {
     try {
       let e = (0, S.platformPrefersDeepLink)(),
         l = await C.Z.getJoinSecret(t, n, r, i, a);
-      return null == f && M({
+      return null == f && j({
         applicationId: r,
         secret: l,
         channelId: i,
@@ -449,5 +449,5 @@ let B = {
       }), false
     }
   },
-  joinWithSecret: M
+  joinWithSecret: j
 }

@@ -105,7 +105,7 @@ let N = {
     description: Chunk388032.intl.string(Chunk388032.t["mqfw/P"])
   }];
 
-function j(e) {
+function M(e) {
   let {
     disabled: t,
     locations: n,
@@ -127,7 +127,7 @@ function j(e) {
   })
 }
 
-function M(e) {
+function j(e) {
   let {
     children: t
   } = e;
@@ -198,7 +198,7 @@ function U(e) {
       disabled: c,
       title: v.intl.string(v.t["vd0D8/"]),
       className: I.formItem,
-      children: [(0, r.jsx)(M, {
+      children: [(0, r.jsx)(j, {
         children: v.intl.string(v.t.a18Sur)
       }), (0, r.jsx)(l.iRW, {
         disabled: c,
@@ -216,7 +216,7 @@ function U(e) {
       disabled: c,
       title: v.intl.string(v.t.sPO3io),
       className: I.formItem,
-      children: [(0, r.jsx)(M, {
+      children: [(0, r.jsx)(j, {
         children: v.intl.string(v.t.xoldVl)
       }), (0, r.jsx)(l.iRW, {
         disabled: c,
@@ -230,7 +230,7 @@ function U(e) {
         }, 0),
         onValueRender: e => "".concat(e)
       })]
-    }), (0, r.jsx)(j, {
+    }), (0, r.jsx)(M, {
       disabled: c,
       locations: L(),
       settingsLocations: o,
@@ -274,7 +274,7 @@ function G(e) {
       disabled: s,
       title: v.intl.string(v.t.L0oQur),
       className: I.formItem,
-      children: [(0, r.jsx)(M, {
+      children: [(0, r.jsx)(j, {
         children: v.intl.string(v.t["/OOFpK"])
       }), (0, r.jsx)(l.iRW, {
         disabled: s,
@@ -322,7 +322,7 @@ function B(e) {
       disabled: d,
       title: v.intl.string(v.t.UxnnCw),
       className: I.formItem,
-      children: [(0, r.jsx)(M, {
+      children: [(0, r.jsx)(j, {
         children: v.intl.string(v.t.CEOEOT)
       }), (0, r.jsx)(l.iRW, {
         disabled: d,
@@ -337,7 +337,7 @@ function B(e) {
         }, 1),
         onMarkerRender: e => e === P[P.length - 1] ? v.intl.string(v.t["4rbMWV"]) : "".concat(100 * e, "%")
       })]
-    }), (0, r.jsx)(j, {
+    }), (0, r.jsx)(M, {
       disabled: d,
       locations: x(),
       settingsLocations: a,

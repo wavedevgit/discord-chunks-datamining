@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk395760 = require("./395760.js");
 
-function O(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,7 +39,7 @@ function O(e) {
   return e
 }
 
-function j(e, t) {
+function O(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -58,12 +58,12 @@ let h = e => 1 - Math.pow(1 - e, 4),
     tension: 1e3,
     clamp: true
   },
-  P = {
+  _ = {
     mass: 1,
     friction: 64,
     tension: 1e3
   },
-  _ = {
+  P = {
     mass: 1,
     friction: 35,
     tension: 1e3
@@ -73,13 +73,13 @@ function w(e) {
   var t;
   let {} = e, {
     activeVoice: n
-  } = (0, y.o)(), o = (0, d.Z)(n), w = (0, b.z)(n), {
+  } = (0, g.o)(), o = (0, d.Z)(n), w = (0, b.z)(n), {
     toggleLoopback: C,
     isLoopbackEnabled: E
   } = function() {
     let {
       activeVoice: e
-    } = (0, y.o)(), t = (0, s.e7)([m.Z], () => m.Z.getVoiceFilterPlaybackEnabled()), n = i.useCallback(() => {
+    } = (0, g.o)(), t = (0, s.e7)([m.Z], () => m.Z.getVoiceFilterPlaybackEnabled()), n = i.useCallback(() => {
       (0, p.GN)(t ? "voice_filter_loopback_off" : "voice_filter_loopback_on"), (0, f._j)(!t)
     }, [t]);
     return i.useEffect(() => (u.Z.setLoopback("voice_filter_preview", null != e && t), () => {
@@ -144,7 +144,7 @@ function w(e) {
       config: e => "opacity" === e ? {
         easing: h,
         duration: 200
-      } : P,
+      } : _,
       delay: R ? 50 - 50 * e : 200 + 50 * e
     }), "respect-motion-settings", [n]),
     U = (0, c.Yzy)(null == w ? true : w.iconURL, {
@@ -169,7 +169,7 @@ function w(e) {
       config: e => "opacity" === e ? {
         easing: h,
         duration: 200
-      } : k ? x : _
+      } : k ? x : P
     }, "respect-motion-settings"),
     Y = (0, c.Yzy)(null == w ? true : w.name, {
       key: Z,
@@ -187,7 +187,7 @@ function w(e) {
         config: e => "opacity" === e ? {
           easing: h,
           duration: 200
-        } : A ? x : P
+        } : A ? x : _
       },
       leave: {
         opacity: 0,
@@ -197,68 +197,68 @@ function w(e) {
         config: e => "opacity" === e ? {
           easing: h,
           duration: 200
-        } : A ? x : P
+        } : A ? x : _
       }
     }, "respect-motion-settings"),
-    H = g.intl.string(E ? g.t.esVyo6 : g.t.UQqFCA);
+    H = v.intl.string(E ? v.t.esVyo6 : v.t.UQqFCA);
   return (0, r.jsxs)(a.animated.div, {
-    className: v.voiceFilterHero,
+    className: y.voiceFilterHero,
     "aria-hidden": M,
     style: V,
     children: [(0, r.jsx)("div", {
-      className: l()([v.bgGradient, v.bgGradientHighlight])
+      className: l()([y.bgGradient, y.bgGradientHighlight])
     }), F(e => (0, r.jsx)(a.animated.div, {
-      className: v.bgGradient,
+      className: y.bgGradient,
       style: e
     })), (0, r.jsx)("div", {
-      className: v.iconWrapper,
+      className: y.iconWrapper,
       children: U((e, t) => (0, r.jsx)(a.animated.img, {
-        className: v.activeVoiceIcon,
+        className: y.activeVoiceIcon,
         style: e,
         alt: "",
         src: t
       }, t))
     }), (0, r.jsx)("div", {
-      className: v.descriptionWrapper,
+      className: y.descriptionWrapper,
       children: Y((e, t) => (0, r.jsxs)(a.animated.div, {
-        className: v.description,
+        className: y.description,
         style: e,
         children: [(0, r.jsx)(c.Text, {
           variant: "text-xs/normal",
           color: "always-white",
-          className: v.offWhiteText,
-          children: g.intl.string(g.t.WW5DAA)
+          className: y.offWhiteText,
+          children: v.intl.string(v.t.WW5DAA)
         }), (0, r.jsx)(c.Text, {
           variant: "text-md/medium",
           color: "always-white",
-          children: null != t ? g.intl.string(t) : ""
+          children: null != t ? v.intl.string(t) : ""
         })]
       }))
     }), (0, r.jsxs)("div", {
-      className: v.buttonWrapper,
+      className: y.buttonWrapper,
       children: [(0, r.jsx)(c.ua7, {
         "aria-label": H,
-        tooltipClassName: v.tooltip,
-        tooltipContentClassName: v.tooltipContent,
+        tooltipClassName: y.tooltip,
+        tooltipContentClassName: y.tooltipContent,
         shouldShow: k,
         text: (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(c.X6q, {
             variant: "heading-sm/normal",
             color: "header-primary",
-            className: v.tooltipHeader,
+            className: y.tooltipHeader,
             children: H
           }), (0, r.jsx)(c.Text, {
             variant: "text-xs/normal",
             color: "header-muted",
-            children: g.intl.string(E ? g.t.Sg6cfn : g.t.ZKhtw8)
+            children: v.intl.string(E ? v.t.Sg6cfn : v.t.ZKhtw8)
           })]
         }),
         children: e => (0, r.jsx)(a.animated.div, {
-          className: v.buttonWrapper,
+          className: y.buttonWrapper,
           style: L[0],
-          children: (0, r.jsx)(c.P3F, j(O({
-            className: l()(v.button, {
-              [v.loopbackEnabled]: E
+          children: (0, r.jsx)(c.P3F, O(j({
+            className: l()(y.button, {
+              [y.loopbackEnabled]: E
             }),
             "aria-hidden": M,
             focusProps: {
@@ -277,12 +277,12 @@ function w(e) {
         })
       }), (0, r.jsx)(c.ua7, {
         shouldShow: k,
-        text: g.intl.string(g.t.UvMx7O),
+        text: v.intl.string(v.t.UvMx7O),
         children: e => (0, r.jsx)(a.animated.div, {
-          className: v.buttonWrapper,
+          className: y.buttonWrapper,
           style: L[1],
-          children: (0, r.jsx)(c.P3F, j(O({
-            className: v.button,
+          children: (0, r.jsx)(c.P3F, O(j({
+            className: y.button,
             "aria-hidden": M,
             focusProps: {
               enabled: k

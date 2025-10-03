@@ -48,11 +48,11 @@ let x = {
     [Chunk981631.NYg.ACTIVITY]: Chunk866885.Z,
     [Chunk981631.NYg.FRAME]: Chunk857096.Z
   },
-  j = {
+  M = {
     minWidth: Chunk354459.Rv[Chunk354459.cL.VIDEO],
     maxWidth: Chunk354459.$i[Chunk354459.cL.VIDEO]
   },
-  M = [];
+  j = [];
 class k extends Chunk647438.PureComponent {
   render() {
     let {
@@ -86,7 +86,7 @@ class k extends Chunk647438.PureComponent {
         onWindowResize: this.handleWindowResize,
         appContext: Chunk988980,
         roundCorners: Chunk16609,
-        resizeConfig: j,
+        resizeConfig: M,
         getDockedRectPositionY: Chunk917107
       }), (0, Chunk951288.jsx)(Chunk522501.mK, {
         className: Chunk442917 ? Chunk639965.belowSidebar : true
@@ -111,9 +111,9 @@ let U = Chunk442837.ZP.connectStores([Chunk928518.Z, Chunk317381.ZP, Chunk451478
     D = b.Z.getWindowOpen(N.KJ3.ACTIVITY_POPOUT),
     L = s.ZP.getCurrentEmbeddedActivity(),
     x = (0, c.p)(null == L ? true : L.location),
-    j = null != L && !(0, u.Z)(x, I.Z, S.Z),
+    M = null != L && !(0, u.Z)(x, I.Z, S.Z),
     k = s.ZP.getActivityPanelMode(),
-    U = j && k === R.Ez.PANEL,
+    U = M && k === R.Ez.PANEL,
     G = null != L && null != x && (null == (t = f.Z.getSelectedParticipant(x)) ? true : t.type) === P.fO.ACTIVITY,
     B = p.Z.getConnectedFrame(),
     Z = p.Z.getFrameLayoutMode() === w.U.FOCUSED,
@@ -132,7 +132,7 @@ let U = Chunk442837.ZP.connectStores([Chunk928518.Z, Chunk317381.ZP, Chunk451478
     }) ? e - (0, _.Y7)({
       isPopoutWindow: F
     }) : e;
-  h = null != L && D || F && j || F && null != B ? null : F || !v || j || null != B ? null != L && U ? null != (n = T.Z.pipActivityWindow) ? n : T.Z.pipVideoWindow : null != B && Z ? null != (i = null != (r = T.Z.pipFrameWindow) ? r : T.Z.pipVideoWindow) ? i : T.Z.pipActivityWindow : null != (o = null != (a = T.Z.pipVideoWindow) ? a : T.Z.pipActivityWindow) ? o : T.Z.pipFrameWindow : null;
+  h = null != L && D || F && M || F && null != B ? null : F || !v || M || null != B ? null != L && U ? null != (n = T.Z.pipActivityWindow) ? n : T.Z.pipVideoWindow : null != B && Z ? null != (i = null != (r = T.Z.pipFrameWindow) ? r : T.Z.pipVideoWindow) ? i : T.Z.pipActivityWindow : null != (o = null != (a = T.Z.pipVideoWindow) ? a : T.Z.pipActivityWindow) ? o : T.Z.pipFrameWindow : null;
   let z = Array.from(T.Z.pipWindows.values()),
     q = T.Z.pipWidth(P.cL.VIDEO),
     X = z.find(e => e.component === N.NYg.VIDEO),
@@ -147,7 +147,7 @@ let U = Chunk442837.ZP.connectStores([Chunk928518.Z, Chunk317381.ZP, Chunk451478
     ea = !er && null != h && et && en;
   return {
     selectedPIPWindow: h,
-    pipWindows: 0 === J.length ? M : J,
+    pipWindows: 0 === J.length ? j : J,
     pipWidth: q,
     maxX: Y.width - (ea ? $ : 0),
     maxY: Y.height,

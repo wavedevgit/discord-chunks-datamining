@@ -1,5 +1,5 @@
 /** Chunk was on 70820 **/
-/** chunk id: 290175, original params: e,t,r (module,exports,require) **/
+/** chunk id: 290175, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   G: () => o
 });
@@ -12,7 +12,7 @@ let o = e => {
     let e = i.Z.getPremiumSubscription();
     return (null == e ? true : e.isPurchasedExternally) === true
   });
-  return e === n.a.PREMIUM_TIER_2_3_DAY ? {
+  return e === r.a.PREMIUM_TIER_2_3_DAY ? {
     isDisabled: t,
     disabledReason: t ? a.intl.string(a.t.NbveHB) : null
   } : {

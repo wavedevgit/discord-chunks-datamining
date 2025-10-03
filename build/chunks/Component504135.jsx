@@ -80,18 +80,18 @@ function E(e) {
     iconProps: L
   } = e, {
     onSelect: x,
-    onInteraction: j
-  } = i.useContext(c.p), M = i.useRef(null), k = i.useCallback(e => {
+    onInteraction: M
+  } = i.useContext(c.p), j = i.useRef(null), k = i.useCallback(e => {
     var t;
-    if (null == j || j({
+    if (null == M || M({
         type: c.U.DEFAULT
       }), null == S) returnfalse;
     e.shiftKey && w || D || A(), e.persist(), null == x || x(), (null != (t = e.nativeEvent.view) ? t : window).requestAnimationFrame(() => S(e))
-  }, [S, A, x, w, D, j]);
+  }, [S, A, x, w, D, M]);
   return i.useEffect(() => {
-    I && ((0, u.F)(M), null == C || C())
+    I && ((0, u.F)(j), null == C || C())
   }, [I, C]), (0, r.jsxs)(s.P3F, g(h({
-    innerRef: M,
+    innerRef: j,
     className: o()(_.item, _.labelContainer, f._[t], N, {
       [_.disabled]: v,
       [_.focused]: I,

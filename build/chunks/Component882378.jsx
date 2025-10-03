@@ -22,35 +22,35 @@ var Chunk951288 = require("./951288.js"),
 let _ = Chunk647438.memo(function(e) {
   let {
     channel: t
-  } = e, _ = (0, d.h)(t.id), O = (0, u.o)(t.id), j = (0, p.M)(t.id), x = (0, a.f9)(), v = (0, l.e7)([f.Z], () => f.Z.hasLayers()), C = i.useCallback(() => O ? b.intl.string(b.t["16QyDg"]) : null != j ? b.intl.string(b.t.kCN9i4) : null, [O, j]), I = i.useMemo(() => (O || null != j) && !x && !v, [O, j, x, v]), [E, S] = i.useState(C());
+  } = e, _ = (0, d.h)(t.id), j = (0, u.o)(t.id), x = (0, p.M)(t.id), O = (0, a.f9)(), v = (0, l.e7)([f.Z], () => f.Z.hasLayers()), C = i.useCallback(() => j ? b.intl.string(b.t["16QyDg"]) : null != x ? b.intl.string(b.t.kCN9i4) : null, [j, x]), I = i.useMemo(() => (j || null != x) && !O && !v, [j, x, O, v]), [E, S] = i.useState(C());
   i.useEffect(() => {
-    null != j && null != _ && (s.uvj.announce(b.intl.string(b.t.acsXuL)), setTimeout(() => {
-      (0, c.T)(t.id, [j.id])
+    null != x && null != _ && (s.uvj.announce(b.intl.string(b.t.acsXuL)), setTimeout(() => {
+      (0, c.T)(t.id, [x.id])
     }, 5e3), (0, h.KQ)({
       channelId: t.id,
       senderId: t.getRecipientId(),
-      warningId: j.id,
-      warningType: j.type,
-      isNudgeWarning: null != j,
+      warningId: x.id,
+      warningType: x.type,
+      isNudgeWarning: null != x,
       viewName: h.pb.SAFETY_TOOLS_NUDGE_TOOLTIP
-    })), O && (s.uvj.announce(b.intl.string(b.t["1dxCqK"])), setTimeout(() => {
+    })), j && (s.uvj.announce(b.intl.string(b.t["1dxCqK"])), setTimeout(() => {
       (0, c.Ot)(t.id)
     }, 5e3))
-  }, [t, j, _, O]), (0, o.ZP)(() => {
+  }, [t, x, _, j]), (0, o.ZP)(() => {
     null != _ && (0, h.KQ)({
       channelId: t.id,
       senderId: t.getRecipientId(),
       warningId: _.id,
       warningType: _.type,
-      isNudgeWarning: null != j,
+      isNudgeWarning: null != x,
       viewName: h.pb.SAFETY_TOOLS_BUTTON
     })
   }), i.useEffect(() => {
     let e = C();
     null != e && S(e)
-  }, [O, j, C]);
+  }, [j, x, C]);
   let Z = i.useCallback(() => {
-    null != j && (0, c.T)(t.id, [j.id]), null != _ && ((0, s.ZDy)(async () => {
+    null != x && (0, c.T)(t.id, [x.id]), null != _ && ((0, s.ZDy)(async () => {
       let {
         default: e
       } = await Promise.all([n.e("37031"), n.e("89650"), n.e("37157")]).then(n.bind(n, 611446));
@@ -76,9 +76,9 @@ let _ = Chunk647438.memo(function(e) {
       warningId: _.id,
       warningType: _.type,
       cta: h.NM.USER_SAFETY_TOOLS_BUTTON_CLICK,
-      isNudgeWarning: null != j
+      isNudgeWarning: null != x
     }))
-  }, [j, _, t]);
+  }, [x, _, t]);
   return null == _ ? null : (0, r.jsx)(s.ua7, {
     forceOpen: I,
     text: E,
@@ -90,7 +90,7 @@ let _ = Chunk647438.memo(function(e) {
       icon: s.b7C,
       onClick: Z,
       tooltip: b.intl.string(b.t.rpc2qq),
-      tooltipDisabled: null != j
+      tooltipDisabled: null != x
     })
   })
 })

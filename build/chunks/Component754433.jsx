@@ -1,5 +1,5 @@
 /** Chunk was on 70820 **/
-/** chunk id: 754433, original params: e,t,r (module,exports,require) **/
+/** chunk id: 754433, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   y: () => u
 });
@@ -15,19 +15,19 @@ let u = e => {
   let {
     price: {
       amount: t,
-      currency: r
+      currency: n
     },
     className: l,
     variant: u = "heading-md/semibold"
-  } = e, d = (0, o.qr)(t, r);
-  return (0, n.jsxs)(a.Text, {
+  } = e, d = (0, o.qr)(t, n);
+  return (0, r.jsxs)(a.Text, {
     variant: u,
     className: i()(c.striked, l),
-    children: [(0, n.jsx)(a.nn4, {
+    children: [(0, r.jsx)(a.nn4, {
       children: s.intl.format(s.t["2CEGlp"], {
         price: d
       })
-    }), (0, n.jsx)("span", {
+    }), (0, r.jsx)("span", {
       "aria-hidden": true,
       children: d
     })]

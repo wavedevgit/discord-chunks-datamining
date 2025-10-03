@@ -45,7 +45,7 @@ function x(e, t, n) {
   }) : e[t] = n, e
 }
 
-function j(e) {
+function M(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -58,7 +58,7 @@ function j(e) {
   return e
 }
 
-function M(e, t) {
+function j(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -70,7 +70,7 @@ function M(e, t) {
 }
 
 function k(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -108,10 +108,10 @@ let H = e => {
   W = {
     newline: o().defaultRules.newline,
     paragraph: o().defaultRules.paragraph,
-    escape: k(j({}, o().defaultRules.escape), {
+    escape: k(M({}, o().defaultRules.escape), {
       match: (e, t, n) => false === t.allowEscape ? null : o().defaultRules.escape.match(e, t, n)
     }),
-    blockQuote: k(j({}, o().defaultRules.blockQuote), {
+    blockQuote: k(M({}, o().defaultRules.blockQuote), {
       requiredFirstCharacters: [" ", ">"],
       match(e, t) {
         let {
@@ -143,14 +143,14 @@ let H = e => {
       }
     }),
     link: Chunk772096.ZP,
-    autolink: k(j({}, o().defaultRules.autolink), {
+    autolink: k(M({}, o().defaultRules.autolink), {
       parse: V
     }),
-    mailto: k(j({}, o().defaultRules.mailto), {
+    mailto: k(M({}, o().defaultRules.mailto), {
       match: o().inlineRegex(/^<([^\s<>@]+@[^\s<>@]+\.[^\s<>@]+)>/),
       requiredFirstCharacters: ["<"]
     }),
-    tel: k(j({}, o().defaultRules.mailto), {
+    tel: k(M({}, o().defaultRules.mailto), {
       requiredFirstCharacters: ["<"],
       match: o().inlineRegex(/^<((?:(?:tel|sms):\+?|\+)(?:(?:[0-9]|\([0-9]+\)))(?:[- .\/]?(?:[0-9]|\([0-9]+\)))+)>/),
       parse(e) {
@@ -166,7 +166,7 @@ let H = e => {
         }
       }
     }),
-    url: k(j({}, o().defaultRules.url), {
+    url: k(M({}, o().defaultRules.url), {
       requiredFirstCharacters: ["h", "s"],
       match(e, t) {
         if (!t.inline) return null;
@@ -193,10 +193,10 @@ let H = e => {
     u: o().defaultRules.u,
     br: o().defaultRules.br,
     text: Chunk594199.ZP,
-    inlineCode: k(j({}, o().defaultRules.inlineCode), {
+    inlineCode: k(M({}, o().defaultRules.inlineCode), {
       parse(e, t, n) {
         let r = o().defaultRules.inlineCode.parse(e, t, n);
-        returntrue === n.parseInlineCodeChildContent ? k(j({}, r), {
+        returntrue === n.parseInlineCodeChildContent ? k(M({}, r), {
           validationChildContent: t(r.content, n)
         }) : r
       }
@@ -500,7 +500,7 @@ let er = 10,
       parse(e, t, n) {
         var r;
         let i = null != (r = n.parseDepth) ? r : 0,
-          a = k(j({}, n), {
+          a = k(M({}, n), {
             parseDepth: i + 1
           }),
           o = t(e[2], a),

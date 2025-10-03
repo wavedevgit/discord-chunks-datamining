@@ -112,8 +112,8 @@ function T(e) {
     application: D,
     selectedPlan: L,
     hasAcceptedTerms: x,
-    purchaseType: j,
-    paymentSourceId: M,
+    purchaseType: M,
+    paymentSourceId: j,
     activeSubscription: k,
     devShelfFetchState: U,
     hasPaymentSources: G
@@ -122,14 +122,14 @@ function T(e) {
   } = _.Z.useConfig({
     location: "SubscriptionReviewButton"
   }), Z = v({
-    purchaseType: j,
+    purchaseType: M,
     plan: L,
     premiumSubscription: E,
     isGift: y,
     planGroup: T,
     isPrepaidPaymentSource: S,
     inReverseTrial: R,
-    paymentSourceId: M,
+    paymentSourceId: j,
     hasPaymentSources: G
   }), {
     analyticsLocations: F
@@ -197,11 +197,11 @@ function T(e) {
       "data-testid": "submitButton"
     }))
   });
-  else if (R && null != k && null != M) return (0, r.jsx)(p.Z, {
+  else if (R && null != k && null != j) return (0, r.jsx)(p.Z, {
     activeSubscription: k,
     onNext: P,
     isSubmitting: m,
-    paymentSourceId: M,
+    paymentSourceId: j,
     buttonLabel: Z,
     analyticsLocations: F
   });

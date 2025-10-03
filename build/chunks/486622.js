@@ -1,4 +1,4 @@
-/** Chunk was on 9665 **/
+/** Chunk was on 50118 **/
 /** chunk id: 486622, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   m: () => b
@@ -22,9 +22,9 @@ function b(e) {
   let {
     user: t,
     onAcceptSuccess: n,
-    onRejectSuccess: i,
+    onRejectSuccess: r,
     onError: b
-  } = e, y = (0, f.Z)(), [C, _] = r.useState(false), [v, x] = r.useState(false), [O, j] = r.useState(false), [E, S] = r.useState(false), [P, I] = r.useState(false), Z = C || v || O, N = r.useCallback(async e => {
+  } = e, C = (0, f.Z)(), [y, _] = i.useState(false), [v, x] = i.useState(false), [O, j] = i.useState(false), [E, S] = i.useState(false), [P, I] = i.useState(false), Z = y || v || O, N = i.useCallback(async e => {
     if (!Z) {
       _(true);
       try {
@@ -36,11 +36,11 @@ function b(e) {
         _(false)
       }
     }
-  }, [Z, n, b]), T = r.useCallback(async e => {
+  }, [Z, n, b]), T = i.useCallback(async e => {
     if (!Z) {
       x(true);
       try {
-        await (0, p.gN)(e), I(true), null == i || i()
+        await (0, p.gN)(e), I(true), null == r || r()
       } catch (t) {
         let e = new a.Hx(t);
         null == b || b(e)
@@ -48,20 +48,20 @@ function b(e) {
         x(false)
       }
     }
-  }, [Z, i, b]), A = r.useCallback(async e => {
+  }, [Z, r, b]), A = i.useCallback(async e => {
     if (Z) return;
     x(true);
     let t = l()(e, m.t$);
     try {
       for (let e of t) await (0, p.r_)(e);
-      I(true), null == i || i()
+      I(true), null == r || r()
     } catch (t) {
       let e = new a.Hx(t);
       null == b || b(e)
     } finally {
       x(false)
     }
-  }, [Z, i, b]), w = r.useCallback(async e => {
+  }, [Z, r, b]), w = i.useCallback(async e => {
     if (Z) return;
     if (null != t && null == s.Z.getMutualGuilds(t.id)) {
       j(true);
@@ -76,11 +76,11 @@ function b(e) {
     }
     let n = async () => {
       var n;
-      let r = null != t ? null == (n = s.Z.getMutualGuilds(t.id)) ? true : n.map(e => e.guild.id) : [];
+      let i = null != t ? null == (n = s.Z.getMutualGuilds(t.id)) ? true : n.map(e => e.guild.id) : [];
       d.default.track(g.rMx.MESSAGE_REQUEST_ACTION, {
         action: m.cl.ACCEPT_CONFIRMATION_PROMPT,
         channel_id: e,
-        mutual_guild_ids: null != r ? r : [],
+        mutual_guild_ids: null != i ? i : [],
         other_user_id: null == t ? true : t.id
       }), await N(e)
     };
@@ -89,42 +89,42 @@ function b(e) {
       onConfirm: n,
       onCancel: () => {
         var n;
-        let r = null != t ? null == (n = s.Z.getMutualGuilds(t.id)) ? true : n.map(e => e.guild.id) : [];
+        let i = null != t ? null == (n = s.Z.getMutualGuilds(t.id)) ? true : n.map(e => e.guild.id) : [];
         d.default.track(g.rMx.MESSAGE_REQUEST_ACTION, {
           action: m.cl.DISMISS_CONFIRMATION_PROMPT,
           channel_id: e,
-          mutual_guild_ids: null != r ? r : [],
+          mutual_guild_ids: null != i ? i : [],
           other_user_id: null == t ? true : t.id
         })
       }
     })
-  }, [N, Z, t]), M = r.useCallback((e, t, n) => {
-    let r = (r, i) => {
-        i && u.kJ.updateSetting(r), r && null != t && (0, o.zd)(t), N(e.id), d.default.track(g.rMx.MESSAGE_REQUEST_ACTION, {
+  }, [N, Z, t]), M = i.useCallback((e, t, n) => {
+    let i = (i, r) => {
+        r && u.kJ.updateSetting(i), i && null != t && (0, o.zd)(t), N(e.id), d.default.track(g.rMx.MESSAGE_REQUEST_ACTION, {
           action: m.cl.ACCEPT_HAM_CONFIRMATION_PROMPT,
           channel_id: e.id,
-          is_dont_show_again_checked: i,
-          non_spam_retraining_opt_in: r
+          is_dont_show_again_checked: r,
+          non_spam_retraining_opt_in: i
         }), null != n && n()
       },
-      i = u.kJ.getSetting();
-    null == i ? (0, h.V)({
+      r = u.kJ.getSetting();
+    null == r ? (0, h.V)({
       channel: e,
-      onConfirm: r,
+      onConfirm: i,
       onCancel: () => {
         d.default.track(g.rMx.MESSAGE_REQUEST_ACTION, {
           action: m.cl.DISMISS_HAM_CONFIRMATION_PROMPT,
           channel_id: e.id
         })
       }
-    }) : r(i)
+    }) : i(r)
   }, [N]);
   return {
-    acceptMessageRequest: y ? w : N,
+    acceptMessageRequest: C ? w : N,
     rejectMessageRequest: T,
     rejectAll: A,
     markAsNotSpam: M,
-    isAcceptLoading: C,
+    isAcceptLoading: y,
     isRejectLoading: v,
     isUserProfileLoading: O,
     isOptimisticAccepted: E,

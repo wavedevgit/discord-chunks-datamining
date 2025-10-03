@@ -167,7 +167,7 @@ function x(e) {
   }
 }
 
-function j(e) {
+function M(e) {
   switch (e.categoryInfo.type) {
     case g.bg.FAVORITES:
       return v.intl.string(v.t.k8fFjo);
@@ -182,7 +182,7 @@ function j(e) {
   }
 }
 
-function M(e) {
+function j(e) {
   let {
     category: t,
     categoryIndex: n,
@@ -192,7 +192,7 @@ function M(e) {
   } = e, l = (0, s.JA)("soundboard_guild_".concat(n));
   return (0, r.jsx)(c.ua7, {
     text: x(t),
-    "aria-label": j(t),
+    "aria-label": M(t),
     position: "right",
     children: e => L(t, i, a, e, l, o)
   })
@@ -220,7 +220,7 @@ function k(e) {
           pack_id: null
         }), n()
       };
-    return (0, r.jsx)(M, {
+    return (0, r.jsx)(j, {
       category: e,
       categoryIndex: t,
       onClick: l,

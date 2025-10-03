@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
-  Chunk481060 = require("./481060.js"),
+  Chunk28664 = require("./28664.jsx"),
   Chunk55935 = require("./55935.js"),
   Chunk543388 = require("./543388.jsx"),
   Chunk223021 = require("./223021.js"),
@@ -81,14 +81,12 @@ let E = Chunk647438.memo(function(e) {
         [f.timestampInline]: E,
         [f.alt]: m
       }),
-      children: null == v ? (0, r.jsx)(s.ua7, {
-        text: () => (0, l.vc)(T, "LLLL"),
+      children: null == v ? (0, r.jsx)(s.u, {
+        __unsupportedReactNodeAsText: (0, l.vc)(T, "LLLL"),
         "aria-label": N,
-        tooltipClassName: f.timestampTooltip,
         position: I,
         delay: 750,
-        children: e => (0, r.jsx)(b, {
-          tooltipProps: e,
+        children: (0, r.jsx)(b, {
           timeFormatted: A,
           timestamp: T,
           id: y,

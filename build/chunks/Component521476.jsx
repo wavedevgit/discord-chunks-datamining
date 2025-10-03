@@ -1,4 +1,4 @@
-/** Chunk was on 9665 **/
+/** Chunk was on 50118 **/
 /** chunk id: 521476, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   h: () => v
@@ -21,31 +21,31 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk216390 = require("./216390.js");
 
-function C(e) {
+function y(e) {
   var t;
   let {
     guild: n
-  } = e, i = (0, c.Z)({
+  } = e, r = (0, c.Z)({
     scrollPosition: g.Y_.GUILD_TAG
   });
-  return (0, r.jsx)("div", {
-    children: (0, r.jsx)(s.i, {
-      bannerIcon: (0, r.jsx)(l.ics, {
+  return (0, i.jsx)("div", {
+    children: (0, i.jsx)(s.i, {
+      bannerIcon: (0, i.jsx)(l.ics, {
         size: "lg",
         color: "currentColor",
-        className: y.bannerIcon
+        className: C.bannerIcon
       }),
       bannerHeader: b.intl.format(b.t.GgMwjo, {
         guildName: null != (t = null == n ? true : n.name) ? t : ""
       }),
       bannerSubtext: b.intl.string(b.t.ONjwDw),
-      textStyles: y.bannerContainer,
-      headerStyles: y.bannerHeader,
-      children: (0, r.jsx)(l.zxk, {
+      textStyles: C.bannerContainer,
+      headerStyles: C.bannerHeader,
+      children: (0, i.jsx)(l.zxk, {
         variant: "primary",
         size: "sm",
         text: b.intl.string(b.t.Viksoq),
-        onClick: () => i()
+        onClick: () => r()
       })
     })
   })
@@ -54,27 +54,27 @@ function C(e) {
 function _(e) {
   var t, n;
   let {
-    guild: i
+    guild: r
   } = e, {
     analyticsLocations: c
   } = (0, o.ZP)(a.Z.AUTOMOD_PROFILE_QUARANTINE_ALERT), [u, d] = (0, h.ww)({
-    guildId: null != (t = null == i ? true : i.id) ? t : f.lds,
+    guildId: null != (t = null == r ? true : r.id) ? t : f.lds,
     analyticsLocations: c
   }), p = d ? b.intl.string(b.t["9ph2v7"]) : b.intl.string(b.t.ldh9Cg), m = d ? b.intl.string(b.t["/PGQf3"]) : b.intl.string(b.t.WikgZ2);
-  return (0, r.jsx)("div", {
-    children: (0, r.jsx)(s.i, {
-      bannerIcon: (0, r.jsx)(l.ics, {
+  return (0, i.jsx)("div", {
+    children: (0, i.jsx)(s.i, {
+      bannerIcon: (0, i.jsx)(l.ics, {
         size: "lg",
         color: "currentColor",
-        className: y.bannerIcon
+        className: C.bannerIcon
       }),
       bannerHeader: b.intl.format(b.t.kcYdTk, {
-        guildName: null != (n = null == i ? true : i.name) ? n : ""
+        guildName: null != (n = null == r ? true : r.name) ? n : ""
       }),
       bannerSubtext: p,
-      textStyles: y.bannerContainer,
-      headerStyles: y.bannerHeader,
-      children: (0, r.jsx)(l.zxk, {
+      textStyles: C.bannerContainer,
+      headerStyles: C.bannerHeader,
+      children: (0, i.jsx)(l.zxk, {
         variant: "primary",
         size: "sm",
         text: m,
@@ -89,16 +89,16 @@ function _(e) {
 function v(e) {
   let {
     guild: t
-  } = e, n = (0, i.e7)([u.default, d.ZP], () => {
+  } = e, n = (0, r.e7)([u.default, d.ZP], () => {
     if (null == t) return new Set;
     let e = u.default.getId();
     return (0, p.no)(d.ZP.getMember(t.id, e))
   }, [t]);
-  return n.has(m.q.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) || n.has(m.q.AUTOMOD_QUARANTINED_BIO) ? (0, r.jsx)(_, {
+  return n.has(m.q.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) || n.has(m.q.AUTOMOD_QUARANTINED_BIO) ? (0, i.jsx)(_, {
     guild: t
-  }) : n.has(m.q.AUTOMOD_QUARANTINED_SERVER_TAG) ? (0, r.jsx)(C, {
+  }) : n.has(m.q.AUTOMOD_QUARANTINED_SERVER_TAG) ? (0, i.jsx)(y, {
     guild: t
-  }) : (0, r.jsx)(_, {
+  }) : (0, i.jsx)(_, {
     guild: t
   })
 }

@@ -39,17 +39,17 @@ function E(e) {
     }
   }, [n]);
   switch (t.joinType) {
-    case O.A.INVITE:
+    case C.A.INVITE:
       return (0, r.jsx)(j.A, {
         requireTerms: t.requireTerms,
         rules: t.termRules
       });
-    case O.A.APPLY:
-      return (0, r.jsx)(b.r, {
+    case C.A.APPLY:
+      return (0, r.jsx)(x.r, {
         pendingFields: t.pendingVerificationFields
       });
-    case O.A.DISCOVERABLE:
-      return (0, r.jsx)(x.c, {
+    case C.A.DISCOVERABLE:
+      return (0, r.jsx)(b.c, {
         fetchDiscoveryData: l,
         settingsView: t.settingsView,
         requireTerms: t.requireTerms,
@@ -70,17 +70,17 @@ function I(e) {
       nsfwLevel: null == (e = d.Z.getGuild(t)) ? true : e.nsfwLevel,
       ownerConfiguredContentLevel: null == (n = d.Z.getGuild(t)) ? true : n.ownerConfiguredContentLevel
     }
-  }), o = (0, l.e7)([v.Z], () => {
+  }), o = (0, l.e7)([_.Z], () => {
     var e;
-    return null == (e = v.Z.pendingState) ? true : e.isAgeRestricted
+    return null == (e = _.Z.pendingState) ? true : e.isAgeRestricted
   }), c = i.useCallback(e => {
     h.Z.setIsAgeRestricted(t, e)
-  }, [t]), m = n === y.V_K.AGE_RESTRICTED && a !== y.V_K.AGE_RESTRICTED;
+  }, [t]), m = n === O.V_K.AGE_RESTRICTED && a !== O.V_K.AGE_RESTRICTED;
   return (0, r.jsx)(s.hjN, {
     children: (0, r.jsx)(s.rsf, {
-      label: C.intl.string(C.t.N9xEJC),
-      description: C.intl.format(C.t["iyQQ6+"], {
-        helpArticleLink: u.Z.getArticleURL(y.BhN.NSFW_SERVER_AGE_RESTRICTION)
+      label: y.intl.string(y.t.N9xEJC),
+      description: y.intl.format(y.t["iyQQ6+"], {
+        helpArticleLink: u.Z.getArticleURL(O.BhN.NSFW_SERVER_AGE_RESTRICTION)
       }),
       checked: o,
       onChange: c,

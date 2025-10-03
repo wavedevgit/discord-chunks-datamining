@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk547990 = require("./547990.js");
 
-function T(e) {
+function v(e) {
   let {
     badgeText: t,
     badgeColor: r
@@ -105,41 +105,41 @@ function C(e) {
     },
     X = (0, n.jsxs)(n.Fragment, {
       children: [(0, n.jsxs)("div", {
-        className: v.verification,
+        className: T.verification,
         children: [z > 0 && (0, n.jsx)(c.Wn, {
           messageType: c.QYI.INFO,
-          className: v.helpMessage,
+          className: T.helpMessage,
           children: j.intl.format(j.t.uZDkz8, {
             count: z
           })
         }), (0, n.jsxs)("div", {
-          className: v.header,
+          className: T.header,
           children: [(0, n.jsx)(c.X6q, {
             variant: "text-sm/bold",
             color: "header-primary",
             children: j.intl.string(j.t["/WPGnJ"])
           }), null != M && (0, n.jsx)(_.H, {
-            className: v.copyIcon,
+            className: T.copyIcon,
             chunks: M,
             color: c.TVs.colors.INTERACTIVE_NORMAL,
             onCopy: U
           }), (0, n.jsx)("div", {
-            className: v.codeStatus,
+            className: T.codeStatus,
             children: null == M ? (0, n.jsx)(c.$jN, {
-              className: v.spinner,
+              className: T.spinner,
               type: c.RAz.SPINNING_CIRCLE
-            }) : (0, n.jsx)(T, {
+            }) : (0, n.jsx)(v, {
               badgeText: Y,
               badgeColor: B
             })
           })]
         }), (0, n.jsx)(S.b, {
-          className: v.code,
+          className: T.code,
           chunks: M,
           columns: N.ak
         })]
       }), (0, n.jsx)(c.Text, {
-        className: v.footer,
+        className: T.footer,
         variant: "text-sm/normal",
         color: "text-muted",
         children: J

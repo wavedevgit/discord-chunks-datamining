@@ -1,7 +1,7 @@
 /** Chunk was on 43342 **/
 /** chunk id: 639539, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  J: () => v
+  J: () => y
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -136,7 +136,7 @@ let f = e => {
       })]
     })
   },
-  y = e => {
+  g = e => {
     let {
       digits: t
     } = e;
@@ -154,23 +154,23 @@ let f = e => {
       })]
     })
   },
-  g = e => {
+  v = e => {
     let {
       countdown: t
     } = e;
     return (0, r.jsxs)("div", {
       className: p.digitsContainer,
-      children: [(0, r.jsx)(y, {
+      children: [(0, r.jsx)(g, {
         digits: t.hours
-      }), (0, r.jsx)(b, {}), (0, r.jsx)(y, {
+      }), (0, r.jsx)(b, {}), (0, r.jsx)(g, {
         digits: t.minutes
-      }), (0, r.jsx)(b, {}), (0, r.jsx)(y, {
+      }), (0, r.jsx)(b, {}), (0, r.jsx)(g, {
         digits: t.seconds
       })]
     })
   };
 
-function v(e) {
+function y(e) {
   let {
     textVariant: t,
     className: n,
@@ -205,7 +205,7 @@ function v(e) {
       })]
     }), (0, r.jsx)("div", {
       className: p.digitsContainer,
-      children: (0, r.jsx)(g, {
+      children: (0, r.jsx)(v, {
         countdown: s
       })
     })]

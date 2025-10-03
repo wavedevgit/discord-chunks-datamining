@@ -76,9 +76,9 @@ function x(e, t) {
   }), e
 }
 
-function j(e, t) {
+function M(e, t) {
   if (null == e) return {};
-  var n, r, i = M(e, t);
+  var n, r, i = j(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -86,7 +86,7 @@ function j(e, t) {
   return i
 }
 
-function M(e, t) {
+function j(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -102,7 +102,7 @@ function G(e) {
 let B = e => {
     var {
       entry: t
-    } = e, n = j(e, ["entry"]);
+    } = e, n = M(e, ["entry"]);
     switch (t.content_type) {
       case l.s.PLAYED_GAME:
         return (0, r.jsx)(E.Z, x(D({}, n), {
@@ -137,7 +137,7 @@ let B = e => {
         entry: n,
         targetElementRef: i
       } = e,
-      a = j(e, ["entry", "targetElementRef"]);
+      a = M(e, ["entry", "targetElementRef"]);
     return n.content_type === l.s.PLAYED_GAME ? (0, r.jsx)(y.Z, {
       entry: n,
       targetElementRef: i,
@@ -147,7 +147,7 @@ let B = e => {
   F = e => {
     var {
       closePopout: t
-    } = e, n = j(e, ["closePopout"]);
+    } = e, n = M(e, ["closePopout"]);
     return (0, r.jsx)(V, D({
       onReaction: (e, r) => {
         n.trackRankingItemInteraction(e, {
@@ -167,7 +167,7 @@ let B = e => {
   V = e => {
     var {
       entry: t
-    } = e, n = j(e, ["entry"]);
+    } = e, n = M(e, ["entry"]);
     switch (t.content_type) {
       case l.s.PLAYED_GAME:
         return (0, r.jsx)(b.Z, x(D({}, n), {
@@ -203,7 +203,7 @@ let B = e => {
         index: a,
         ref: l
       } = e,
-      _ = j(e, ["index", "ref"]);
+      _ = M(e, ["index", "ref"]);
     let m = i.useRef(null),
       [g, E] = i.useState("default"),
       [b, y] = i.useState(false),
@@ -223,10 +223,10 @@ let B = e => {
       A = i.useRef(false),
       [C, N] = i.useState(false),
       [w, L] = i.useState(false),
-      M = (0, c.e7)([f.Z], () => f.Z.keyboardModeEnabled);
+      j = (0, c.e7)([f.Z], () => f.Z.keyboardModeEnabled);
     i.useEffect(() => {
-      C && M && L(true)
-    }, [C, M]), i.useLayoutEffect(() => {
+      C && j && L(true)
+    }, [C, j]), i.useLayoutEffect(() => {
       null != m.current && y(true)
     }, []);
     let k = i.useCallback(e => {
@@ -255,7 +255,7 @@ let B = e => {
       }), []),
       W = () => {
         A.current = false, setTimeout(() => {
-          A.current || (N(false), L(M))
+          A.current || (N(false), L(j))
         }, 100)
       };
     return (0, r.jsxs)(r.Fragment, {

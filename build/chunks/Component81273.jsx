@@ -37,8 +37,8 @@ let D = "MMM DD, YYYY",
   L = (e, t, n, a) => {
     let s, L = (0, c.e7)([E.Z], () => E.Z.isLurking(t)),
       x = (0, g.J)(t),
-      j = (0, c.e7)([m.Z], () => null != t ? m.Z.getRequest(t) : null),
-      M = (null == j ? true : j.applicationStatus) === h.wB.SUBMITTED,
+      M = (0, c.e7)([m.Z], () => null != t ? m.Z.getRequest(t) : null),
+      j = (null == M ? true : M.applicationStatus) === h.wB.SUBMITTED,
       k = null == e ? true : e.subscription_plans[0],
       U = null == k ? true : k.id,
       G = (null == e ? true : e.published) === true,
@@ -64,8 +64,8 @@ let D = "MMM DD, YYYY",
         analyticsLocations: J
       } = (0, _.ZP)(),
       $ = (null == F ? true : F.paymentGateway) === P.gg$.APPLE_PARTNER,
-      ee = !L && null != Z && H && !M && !K && !z && !$;
-    M || L && !x ? s = w.intl.string(w.t.pQK5ho) : W === U ? s = w.intl.formatToPlainString(w.t.UlBRTk, {
+      ee = !L && null != Z && H && !j && !K && !z && !$;
+    j || L && !x ? s = w.intl.string(w.t.pQK5ho) : W === U ? s = w.intl.formatToPlainString(w.t.UlBRTk, {
       changeDate: null != F ? l()(F.currentPeriodEnd).format(D) : ""
     }) : K ? s = w.intl.string(w.t.ePFYOT) : z ? s = w.intl.string(w.t["0lPoT0"]) : $ && (s = w.intl.string(w.t.cEMaCg));
     let et = (0, f.Z)(R.iP);

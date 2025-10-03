@@ -2,7 +2,7 @@
 /** chunk id: 213956, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => y
+  Z: () => O
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -25,17 +25,17 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk824804 = require("./824804.js");
 
-function y() {
+function O() {
   let e, t = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuildId()),
     n = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuild(exports)),
-    y = (0, Chunk442837.e7)([Chunk392885.Z], () => Chunk392885.Z.getCurrentPage());
+    O = (0, Chunk442837.e7)([Chunk392885.Z], () => Chunk392885.Z.getCurrentPage());
   if (Chunk647438.useEffect(() => {
       (0, Chunk266454.Q3)(Chunk704215.z.COMMUNITY_GUILD_SETTINGS_SAFETY, {
         dismissAction: Chunk921944.L.AUTO
       })
     }, []), null == require) return null;
-  let C = (0, Chunk598622.Q)(require);
-  switch (y) {
+  let y = (0, Chunk598622.Q)(require);
+  switch (O) {
     case Chunk740903.u.OVERVIEW:
       e = (0, Chunk951288.jsx)(Chunk464610.Z, {
         guild: require
@@ -44,13 +44,13 @@ function y() {
     case Chunk740903.u.CAPTCHA_AND_RAID_PROTECTION:
       e = (0, Chunk951288.jsx)(Chunk733629.Z, {
         title: Chunk388032.intl.string(Chunk388032.t["53eF5u"]),
-        settings: C[Chunk740903.u.CAPTCHA_AND_RAID_PROTECTION]
+        settings: y[Chunk740903.u.CAPTCHA_AND_RAID_PROTECTION]
       });
       break;
     case Chunk740903.u.DM_AND_SPAM_PROTECTION:
       e = (0, Chunk951288.jsx)(Chunk733629.Z, {
         title: Chunk388032.intl.string(Chunk388032.t.O0SfFx),
-        settings: C[Chunk740903.u.DM_AND_SPAM_PROTECTION]
+        settings: y[Chunk740903.u.DM_AND_SPAM_PROTECTION]
       });
       break;
     case Chunk740903.u.AUTOMOD:
@@ -61,11 +61,11 @@ function y() {
     case Chunk740903.u.PERMISSIONS:
       e = (0, Chunk951288.jsx)(Chunk733629.Z, {
         title: Chunk388032.intl.string(Chunk388032.t.BXoNiY),
-        settings: C[Chunk740903.u.PERMISSIONS]
+        settings: y[Chunk740903.u.PERMISSIONS]
       })
   }
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-    children: [y !== Chunk740903.u.OVERVIEW && (0, Chunk951288.jsxs)(Chunk755721.zx, {
+    children: [O !== Chunk740903.u.OVERVIEW && (0, Chunk951288.jsxs)(Chunk755721.zx, {
       className: Chunk824804.back,
       innerClassName: Chunk824804.backButton,
       look: Chunk755721.zx.Looks.BLANK,

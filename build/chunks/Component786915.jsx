@@ -1,7 +1,7 @@
-/** Chunk was on 9665 **/
+/** Chunk was on 50118 **/
 /** chunk id: 786915, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => C
+  Z: () => y
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -20,30 +20,30 @@ var Chunk512722 = require("./512722.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function y(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      i = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
+    }))), i.forEach(function(t) {
+      var i;
+      i = n[t], t in e ? Object.defineProperty(e, t, {
+        value: i,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = r
+      }) : e[t] = i
     })
   }
   return e
 }
 
-function C(e) {
+function y(e) {
   var {
     applicationId: t,
-    stream: i,
-    channel: C,
+    stream: r,
+    channel: y,
     exitFullScreen: _,
     appContext: v,
     analyticsLocation: x,
@@ -57,46 +57,46 @@ function C(e) {
     color: N
   } = e, T = function(e, t) {
     if (null == e) return {};
-    var n, r, i = function(e, t) {
+    var n, i, r = function(e, t) {
       if (null == e) return {};
-      var n, r, i = {},
+      var n, i, r = {},
         l = Object.keys(e);
-      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-      return i
+      for (i = 0; i < l.length; i++) n = l[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
+      return r
     }(e, t);
     if (Object.getOwnPropertySymbols) {
       var l = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+      for (i = 0; i < l.length; i++) n = l[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
     }
-    return i
+    return r
   }(e, ["applicationId", "stream", "channel", "exitFullScreen", "appContext", "analyticsLocation", "guildScheduledEvent", "shouldPrioritizeGroupPlusIcon", "isRichPresenceInvite", "iconClassName", "look", "size", "buttonText", "color"]);
   let A = (0, d.bp)(),
     {
       parentAnalyticsLocation: w
     } = (0, c.ZP)(),
-    M = null == C ? true : C.getGuildId(),
+    M = null == y ? true : y.getGuildId(),
     R = (0, a.e7)([p.Z], () => null != M ? p.Z.getGuild(M) : null, [M]),
     k = (0, a.e7)([h.Z], () => null != t ? h.Z.getApplicationActivity(t) : true),
-    D = null == t || j ? o.ejJ : o.gQj,
-    L = null != t ? b.intl.string(b.t["OzOM/v"]) : b.intl.string(b.t["6F9ivr"]);
-  return null != k && E ? (0, r.jsx)(m.Z, {
+    L = null == t || j ? o.ejJ : o.gQj,
+    D = null != t ? b.intl.string(b.t["OzOM/v"]) : b.intl.string(b.t["6F9ivr"]);
+  return null != k && E ? (0, i.jsx)(m.Z, {
     onClick: () => {
       null != w && (0, u.v)(w, u.d.INVITE), s.h7(k, false, A)
     },
-    iconComponent: D,
-    label: L,
+    iconComponent: L,
+    label: D,
     iconClassName: S,
     look: P,
     size: I,
     buttonText: Z,
     color: null != N ? N : true
-  }) : null != R && null != C && f.Z.can(g.Plq.CREATE_INSTANT_INVITE, C) ? (0, r.jsx)(m.Z, y({
+  }) : null != R && null != y && f.Z.can(g.Plq.CREATE_INSTANT_INVITE, y) ? (0, i.jsx)(m.Z, C({
     onClick: () => {
-      l()(null != R, "guild cannot be null"), l()(null != C, "channel cannot be null"), null != w && (0, u.v)(w, u.d.INVITE),
+      l()(null != R, "guild cannot be null"), l()(null != y, "channel cannot be null"), null != w && (0, u.v)(w, u.d.INVITE),
         function(e) {
           let {
             guild: t,
-            channel: i,
+            channel: r,
             streamUserId: l,
             applicationId: a,
             appContext: s,
@@ -110,19 +110,19 @@ function C(e) {
             } = await Promise.all([n.e("7654"), n.e("49049"), n.e("98953")]).then(n.bind(n, 560114));
             return n => {
               var o, s;
-              return (0, r.jsx)(e, (o = y({}, n), s = s = {
+              return (0, i.jsx)(e, (o = C({}, n), s = s = {
                 guild: t,
-                channel: i,
+                channel: r,
                 streamUserId: l,
                 applicationId: a,
                 analyticsLocation: u,
-                source: i.isGuildStageVoice() ? g.t4x.STAGE_CHANNEL : g.t4x.STREAM_INVITE,
+                source: r.isGuildStageVoice() ? g.t4x.STAGE_CHANNEL : g.t4x.STREAM_INVITE,
                 guildScheduledEvent: d
               }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
-                  var r = Object.getOwnPropertySymbols(e);
-                  n.push.apply(n, r)
+                  var i = Object.getOwnPropertySymbols(e);
+                  n.push.apply(n, i)
                 }
                 return n
               })(Object(s)).forEach(function(e) {
@@ -135,8 +135,8 @@ function C(e) {
           })
         }({
           guild: R,
-          channel: C,
-          streamUserId: null == i ? true : i.ownerId,
+          channel: y,
+          streamUserId: null == r ? true : r.ownerId,
           applicationId: t,
           appContext: null != v ? v : A,
           exitFullScreen: _,
@@ -144,8 +144,8 @@ function C(e) {
           guildScheduledEvent: O
         })
     },
-    iconComponent: D,
-    label: L,
+    iconComponent: L,
+    label: D,
     iconClassName: S,
     look: P,
     size: I,

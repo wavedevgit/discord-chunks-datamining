@@ -2,7 +2,7 @@
 /** chunk id: 194774, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  h: () => b
+  h: () => x
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,17 +19,17 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk308212 = require("./308212.js");
 
-function b(e) {
+function x(e) {
   let {
     guild: t,
     canManageGuild: n
-  } = e, b = t.features.has(m.oNc.INVITE_SPLASH), x = n && b, {
+  } = e, x = t.features.has(m.oNc.INVITE_SPLASH), b = n && x, {
     analyticsLocations: j
-  } = (0, s.ZP)(), v = i.useCallback(e => {
+  } = (0, s.ZP)(), _ = i.useCallback(e => {
     d.Z.updateGuild({
       splash: e
     })
-  }, []), _ = i.useCallback(e => {
+  }, []), v = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), (0, u.E6)({
       guild: t,
       analyticsLocations: j,
@@ -37,24 +37,24 @@ function b(e) {
       analyticsObject: m.qAy.UPLOAD_IMAGE,
       perks: (0, g.o9)()
     })
-  }, [j, t]), O = (0, r.jsx)(o.Z, {
+  }, [j, t]), C = (0, r.jsx)(o.Z, {
     image: t.splash,
     makeURL: e => null != e ? c.ZP.getGuildSplashURL({
       id: t.id,
       splash: e
     }) : null,
-    disabled: !x,
-    onChange: v,
+    disabled: !b,
+    onChange: _,
     hint: f.intl.string(f.t.uPvxqK),
-    enabled: x,
+    enabled: b,
     maxFileSizeBytes: p.B,
     onFileSizeError: () => (0, a.Z)(p.B)
   });
-  return b ? O : (0, r.jsx)(l.P3F, {
+  return x ? C : (0, r.jsx)(l.P3F, {
     "aria-hidden": true,
     tabIndex: false,
     className: h.upsell,
-    onClick: _,
-    children: O
+    onClick: v,
+    children: C
   })
 }

@@ -93,7 +93,7 @@ function z(e) {
     orientation: d.y.VERTICAL_TOP
   });
   (0, L.useSyncMessages)(F.messagesLoader);
-  let Q = (0, s.e7)([h.default], () => (0, P.I5)(h.default.getCurrentUser())),
+  let Q = (0, s.e7)([h.default], () => (0, _.I5)(h.default.getCurrentUser())),
     J = (0, s.e7)([E.Z], () => E.Z.getCatalogUpdateTime()),
     [$, ee] = i.useState(false),
     [et, en] = i.useState(false),
@@ -141,7 +141,7 @@ function z(e) {
   });
   let ec = i.useCallback(() => B(""), [B]),
     eu = i.useRef(null),
-    ed = (0, y.bp)() !== M.IlC.OVERLAY;
+    ed = (0, g.bp)() !== M.IlC.OVERLAY;
   return (0, r.jsx)(m.Gt, {
     value: W,
     children: (0, r.jsxs)("div", {
@@ -196,11 +196,11 @@ function z(e) {
               y: el.y,
               opacity: el.y.to(e => +(50 !== e))
             },
-            children: (0, r.jsx)(v.p, {
+            children: (0, r.jsx)(y.p, {
               showUpsell: true,
               text: L.intl.format(L.t["XMDm8/"], {
-                nitroTierName: (0, _.Px)(R.p9.TIER_2),
-                onClick: () => (0, O.i)()
+                nitroTierName: (0, P.Px)(R.p9.TIER_2),
+                onClick: () => (0, j.i)()
               }),
               button: L.intl.string(L.t.cRCCJy),
               buttonAnalyticsObject: {
@@ -219,17 +219,17 @@ function z(e) {
         className: l()(U.voiceFiltersFooter, {
           [U.hasActiveVoice]: null != er
         }),
-        children: [(0, r.jsx)(g.j, {
+        children: [(0, r.jsx)(v.j, {
           deviceType: V.h7.AUDIO_INPUT,
           location: "VoiceFiltersPopout",
           onOpen: () => {
             var e;
             x.default.track(M.rMx.VOICE_FILTER_MIC_SELECTOR_OPENED, {
-              active_voice_filter_id: null != (e = j.Z.getActiveVoiceFilter()) ? e : null
+              active_voice_filter_id: null != (e = O.Z.getActiveVoiceFilter()) ? e : null
             })
           },
           popoutPosition: "top"
-        }), o && (0, r.jsx)(g.j, {
+        }), o && (0, r.jsx)(v.j, {
           deviceType: V.h7.AUDIO_OUTPUT,
           location: "VoiceFiltersPopout",
           popoutPosition: "top"

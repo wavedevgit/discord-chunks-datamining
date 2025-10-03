@@ -260,7 +260,7 @@ let eL = (0, Chunk608787.Un)({
     });
     if ((null == i ? true : i.type) === eN.d4z.GUILD_STORE) {
       let e = eO.default.cast(t.params.messageId);
-      return (0, r.jsx)(ey.Z, {
+      return (0, r.jsx)(ev.Z, {
         channel: i,
         inputSkuId: e
       }, i.id)
@@ -339,7 +339,7 @@ function e8() {
     withTopBorder: true
   })
 }
-let e4 = e => (0, r.jsx)(v.Z, ew({}, e)),
+let e4 = e => (0, r.jsx)(y.Z, ew({}, e)),
   e3 = () => (0, Chunk951288.jsx)(Chunk270759.Z, {}),
   e5 = () => (0, Chunk951288.jsx)(Chunk745052.Z, {}),
   e2 = () => (0, Chunk951288.jsx)(Chunk179742.Z, {}),
@@ -474,14 +474,14 @@ function e9(e) {
       Number.isNaN(t) && (t = eS.qO), e7(t)
     }
   }, [E]);
-  let y = i.useRef(null),
-    v = i.useCallback((e, t) => {
+  let v = i.useRef(null),
+    y = i.useCallback((e, t) => {
       var n;
       e7(e);
       let r = t < eS.li / 3;
       t <= eS.li ? document.body.classList.add(eZ.draggingMin) : document.body.classList.remove(eZ.draggingMin), t >= eS.zx ? document.body.classList.add(eZ.draggingMax) : document.body.classList.remove(eZ.draggingMax);
       let i = t - e;
-      null == (n = y.current) || n.style.setProperty("--custom-overdrag", "".concat(1 + Math.min(Math.abs(i / eS.p8), .25))), m && (j.useAppSidebarState.setState({
+      null == (n = v.current) || n.style.setProperty("--custom-overdrag", "".concat(1 + Math.min(Math.abs(i / eS.p8), .25))), m && (j.useAppSidebarState.setState({
         isOpen: !r
       }), r && e7(eS.p8))
     }, [m]),
@@ -490,15 +490,15 @@ function e9(e) {
     }, []),
     C = i.useCallback(e => {
       var t;
-      document.body.classList.remove(eZ.dragging), document.body.classList.remove(eZ.draggingMin), document.body.classList.remove(eZ.draggingMax), document.body.classList.remove(eZ.collapsing), null == (t = y.current) || t.style.setProperty("--custom-overdrag", "0px"), f.K.set(eS.nT, e), eb.default.track(eN.rMx.CHANNEL_SIDEBAR_RESIZED, {
+      document.body.classList.remove(eZ.dragging), document.body.classList.remove(eZ.draggingMin), document.body.classList.remove(eZ.draggingMax), document.body.classList.remove(eZ.collapsing), null == (t = v.current) || t.style.setProperty("--custom-overdrag", "0px"), f.K.set(eS.nT, e), eb.default.track(eN.rMx.CHANNEL_SIDEBAR_RESIZED, {
         width: e
       })
     }, []),
     T = (0, O.Z)({
       minDimension: eS.li,
       maxDimension: eS.zx,
-      resizableDomNodeRef: y,
-      onElementResize: v,
+      resizableDomNodeRef: v,
+      onElementResize: y,
       onElementResizeStart: I,
       onElementResizeEnd: C,
       orientation: O.y.HORIZONTAL_RIGHT,
@@ -522,7 +522,7 @@ function e9(e) {
     children: e => {
       var t, i;
       return (0, r.jsxs)("div", {
-        ref: y,
+        ref: v,
         "data-collapsed": E,
         className: a()(eZ.sidebar, e, {
           [eZ.fullWidth]: d.tq,
@@ -596,7 +596,7 @@ function te() {
     _ = Chunk647438.useCallback(() => Chunk285865.Z.openSidebar(), []),
     O = (0, Chunk540059.T)("AppView"),
     E = (0, Chunk267161.useAppSidebarState)(e => !e.isOpen),
-    v = (0, Chunk442837.e7)([Chunk358221.Z], () => Chunk358221.Z.isFullscreenInContext()),
+    y = (0, Chunk442837.e7)([Chunk358221.Z], () => Chunk358221.Z.isFullscreenInContext()),
     C = (0, Chunk442837.e7)([Chunk591472.Z], () => Chunk591472.Z.isFrameActive());
   return (0, Chunk951288.jsx)("div", {
     className: Chunk981028.container,

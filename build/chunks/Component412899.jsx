@@ -127,7 +127,7 @@ function K(e) {
       }), (0, r.jsx)("div", {
         className: k.overflowRolesPopoutHeaderText,
         id: a,
-        children: M.intl.format(M.t.PCs0oq, {
+        children: j.intl.format(j.t.PCs0oq, {
           numRoles: t.length
         })
       })]
@@ -161,14 +161,14 @@ let z = Chunk647438.forwardRef(function(e, t) {
     D = (0, _.e7)([b.Z], () => b.Z.roleStyle),
     L = (0, A._f)(I, E, E.colorStrings),
     x = (null == (a = E.tags) ? true : a.guild_connections) === null,
-    j = i.useCallback(e => {
+    M = i.useCallback(e => {
       (0, m.jW)(e, async () => {
         let {
           default: e
         } = await n.e("5396").then(n.bind(n, 731646));
         return t => (0, r.jsx)(e, Z(G({}, t), {
           id: E.id,
-          label: M.intl.string(M.t.sMsaLi)
+          label: j.intl.string(j.t.sMsaLi)
         }))
       })
     }, [E.id]),
@@ -203,7 +203,7 @@ let z = Chunk647438.forwardRef(function(e, t) {
       ref: t,
       className: o()(k.role, g),
       style: W,
-      onContextMenu: j,
+      onContextMenu: M,
       onMouseDown: C,
       "aria-label": E.name,
       tabIndex: R
@@ -216,7 +216,7 @@ let z = Chunk647438.forwardRef(function(e, t) {
           focusClassName: k.roleRemoveIconFocused
         },
         "aria-hidden": !d,
-        "aria-label": M.intl.formatToPlainString(M.t.QrxwhY, {
+        "aria-label": j.intl.formatToPlainString(j.t.QrxwhY, {
           roleName: E.name
         }),
         children: [c, d ? (0, r.jsx)(h.Dio, {
@@ -308,7 +308,7 @@ function X(e) {
         ref: t
       }, e), {
         className: o()(k.addButton, l, c),
-        "aria-label": M.intl.string(M.t.e3Wly8),
+        "aria-label": j.intl.string(j.t.e3Wly8),
         type: "button"
       }), f), {
         children: (0, r.jsx)(h.qJs, {
@@ -370,7 +370,7 @@ function Q(e) {
   }, [f, p, R]);
   let U = D.default.getCurrentUser();
   l()(null != U, "MemberRolesList: currentUser cannot be undefined");
-  let B = !m && w.Z.can(j.Plq.MANAGE_ROLES, a),
+  let B = !m && w.Z.can(M.Plq.MANAGE_ROLES, a),
     V = L.e9(a, U.id),
     K = i.useMemo(() => "roles-".concat((0, c.Z)()), []),
     Q = (0, d.ZP)({
@@ -405,7 +405,7 @@ function Q(e) {
         } = e, i = F(e, ["ref"]);
         return (0, r.jsxs)("div", Z(G({
           className: o()(k.root, h),
-          "aria-label": M.intl.formatToPlainString(M.t.PCs0oq, {
+          "aria-label": j.intl.formatToPlainString(j.t.PCs0oq, {
             numRoles: s.length
           }),
           ref: n

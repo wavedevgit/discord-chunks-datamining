@@ -37,7 +37,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk126683 = require("./126683.js");
 let L = 24,
   x = 5,
-  j = e => {
+  M = e => {
     let {
       benefits: t,
       header: n,
@@ -71,7 +71,7 @@ let L = 24,
       })]
     })
   },
-  M = e => {
+  j = e => {
     let {
       guildId: t,
       listingId: n
@@ -136,15 +136,15 @@ let L = 24,
           guildId: n,
           className: D.roleMessagePreview
         })]
-      }), (0, r.jsx)(j, {
+      }), (0, r.jsx)(M, {
         header: w.intl.string(w.t.LtfhAg),
         benefits: l,
         guildId: n
-      }), (0, r.jsx)(j, {
+      }), (0, r.jsx)(M, {
         header: w.intl.string(w.t["8oxWpK"]),
         benefits: u,
         guildId: n
-      }), (0, r.jsx)(M, {
+      }), (0, r.jsx)(j, {
         guildId: n,
         listingId: t
       })]
@@ -177,7 +177,7 @@ let L = 24,
     } = (0, N.Z)(p, n, a, d), S = (0, s.e7)([_.Z], () => _.Z.isSyncing), {
       activeSubscription: L,
       activeSubscriptionListing: x
-    } = (0, E.Z)(a), j = (null == x ? true : x.id) === t, M = (null == L ? true : L.status) === P.O0b.CANCELED, [G, B] = i.useState(false), [Z, F] = i.useState(false), V = i.useCallback(e => {
+    } = (0, E.Z)(a), M = (null == x ? true : x.id) === t, j = (null == L ? true : L.status) === P.O0b.CANCELED, [G, B] = i.useState(false), [Z, F] = i.useState(false), V = i.useCallback(e => {
       let t = false;
       null != e && (t = e.scrollHeight - e.clientHeight > 1), F(t)
     }, []), [H] = g._T(t), [Y] = g.PK(t), [W] = g.TT(t), [K] = g.F2(t), z = (0, b.Z)(n, t), q = null != W && null == L && z, X = () => B(e => !e), Q = (0, u.Z)(R.iP), [J, $] = i.useState(false), ee = J || !Q, et = () => $(e => !e), en = (0, s.e7)([f.Z], () => f.Z.isViewingServerShop(n)), er = (null == p ? true : p.published) === true, ei = (null == p ? true : p.soft_deleted) === true, ea = w.intl.string(w.t.KzmEAw);
@@ -217,11 +217,11 @@ let L = 24,
             gap: 16,
             children: [Q && (0, r.jsx)("div", {
               className: D.divider
-            }), j ? (0, r.jsx)(c.zxk, {
+            }), M ? (0, r.jsx)(c.zxk, {
               disabled: true,
               fullWidth: true,
-              variant: M ? "secondary" : "primary",
-              text: M ? w.intl.string(w.t.iKHmu7) : w.intl.string(w.t.XvAuMj)
+              variant: j ? "secondary" : "primary",
+              text: j ? w.intl.string(w.t.iKHmu7) : w.intl.string(w.t.XvAuMj)
             }) : (0, r.jsxs)(r.Fragment, {
               children: [O ? null : (0, r.jsx)(c.Wn, {
                 className: D.helpMessage,

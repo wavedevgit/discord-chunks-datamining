@@ -59,14 +59,14 @@ let O = [],
   E = Chunk647438.memo(function(e) {
     let {
       className: t
-    } = e, n = (0, h.Z)(), d = (0, l.e7)([s.Z], () => s.Z.windowSize((0, u.ZY)(n))), E = (0, l.e7)([a.Z], () => {
+    } = e, n = (0, p.Z)(), d = (0, l.e7)([s.Z], () => s.Z.windowSize((0, u.ZY)(n))), E = (0, l.e7)([a.Z], () => {
       let e = a.Z.getLayout(f.$S);
       if (null == e) return O;
       let t = [];
       for (let n of e.widgets) {
         let e = a.Z.getWidget(n);
         if (null == e) continue;
-        let i = p.Z[e.type];
+        let i = h.Z[e.type];
         null != i && (null == i.predicate || i.predicate()) && t.push(m({
           widget: e
         }, i))

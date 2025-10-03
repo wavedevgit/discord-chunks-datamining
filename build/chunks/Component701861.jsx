@@ -74,7 +74,7 @@ function j(e) {
       cancelText: C.intl.string(C.t["ETE/oK"]),
       onConfirm: h
     })
-  }, [h, l, t]), O = (0, o.e7)([g.Z], () => g.Z.supports(S.AN.VIDEO)), E = t.isProvisional, y = l ? C.intl.string(C.t["RLcE6+"]) : C.intl.string(C.t.cvSt1N);
+  }, [h, l, t]), O = (0, o.e7)([g.Z], () => g.Z.supports(S.AN.VIDEO)), E = t.isProvisional, v = l ? C.intl.string(C.t["RLcE6+"]) : C.intl.string(C.t.cvSt1N);
   return (0, r.jsxs)(s.v2r, {
     navId: "friend-row",
     "aria-label": C.intl.string(C.t.liqwPD),
@@ -90,7 +90,7 @@ function j(e) {
       action: p
     }), (0, r.jsx)(s.sNh, {
       id: "remove-friend",
-      label: y,
+      label: v,
       action: m,
       color: "danger"
     })]
@@ -125,11 +125,11 @@ class P extends Chunk647438.PureComponent {
       onClick: this.handleOpenPrivateChannel,
       children: t => (0, r.jsxs)("div", {
         className: T.listItemContents,
-        children: [(0, r.jsx)(v.Z, {
+        children: [(0, r.jsx)(y.Z, {
           user: e,
           status: l,
           isMobile: a,
-          subText: (0, r.jsx)(y.Z, {
+          subText: (0, r.jsx)(v.Z, {
             hovered: t,
             activities: n,
             applicationStream: i,

@@ -1,4 +1,4 @@
-/** Chunk was on 9665 **/
+/** Chunk was on 50118 **/
 /** chunk id: 45430, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -15,16 +15,16 @@ function u(e) {
   let {
     channelId: t
   } = e;
-  return (0, r.jsxs)("div", {
+  return (0, i.jsxs)("div", {
     className: c.container,
-    children: [(0, r.jsx)(o.Z, {}), (0, r.jsxs)("div", {
+    children: [(0, i.jsx)(o.Z, {}), (0, i.jsxs)("div", {
       className: c.content,
-      children: [(0, r.jsx)(l.X6q, {
+      children: [(0, i.jsx)(l.X6q, {
         variant: "heading-lg/normal",
         children: s.intl.format(s.t.ilLVLi, {})
-      }), (0, r.jsx)(i.zx, {
-        size: i.zx.Sizes.LARGE,
-        color: i.zx.Colors.PRIMARY,
+      }), (0, i.jsx)(r.zx, {
+        size: r.zx.Sizes.LARGE,
+        color: r.zx.Colors.PRIMARY,
         onClick: e => {
           e.stopPropagation(), a.Z.toggleVoiceParticipantsHidden(t, false)
         },

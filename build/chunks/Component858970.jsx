@@ -1,7 +1,7 @@
 /** Chunk was on 31553 **/
 /** chunk id: 858970, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => Z
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk442837 = require("./442837.js"),
@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk220566 = require("./220566.js");
 
-function O(e) {
+function I(e) {
   for (var n = 1; n < arguments.length; n++) {
     var t = null != arguments[n] ? arguments[n] : {},
       l = Object.keys(t);
@@ -42,47 +42,47 @@ function O(e) {
   return e
 }
 
-function I(e) {
+function Z(e) {
   let {
     user: n,
     guildId: t,
-    channelId: I,
-    messageId: Z,
-    roleId: P,
-    transitionState: N,
-    openedAt: T,
+    channelId: Z,
+    messageId: O,
+    roleId: N,
+    transitionState: T,
+    openedAt: P,
     onHide: A,
     sourceAnalyticsLocations: E = []
   } = e, S = t === v.ME ? true : t, C = (0, i.e7)([c.Z], () => c.Z.isBlocked(n.id)), {
-    analyticsLocations: w
-  } = (0, s.ZP)([...E, C ? o.Z.BLOCKED_PROFILE_MODAL : o.Z.IGNORED_PROFILE_MODAL]), _ = (0, u.ZB)({
+    analyticsLocations: _
+  } = (0, s.ZP)([...E, C ? o.Z.BLOCKED_PROFILE_MODAL : o.Z.IGNORED_PROFILE_MODAL]), w = (0, u.ZB)({
     layout: "MODAL_V2",
     userId: n.id,
     showGuildProfile: true,
     guildId: S,
-    channelId: I,
-    messageId: Z,
-    roleId: P
+    channelId: Z,
+    messageId: O,
+    roleId: N
   }), D = [{
     icon: r.owK,
     description: b.intl.string(b.t.kcuWvb)
   }, {
     icon: r.owK,
     description: b.intl.string(C ? b.t.QxrDY2 : b.t.W6fjkZ)
-  }], R = (0, p.ZP)(n.id, S), L = d.ZP.getName(null == R ? true : R.guildId, I, n), M = b.intl.formatToPlainString(b.t.KRe1Fh, {
+  }], R = (0, p.ZP)(n.id, S), L = d.ZP.getName(null == R ? true : R.guildId, Z, n), M = b.intl.formatToPlainString(b.t.KRe1Fh, {
     name: L
   });
   return (0, l.jsx)(s.Gt, {
-    value: w,
+    value: _,
     children: (0, l.jsx)(u.Mt, {
-      value: _,
-      openedAt: T,
+      value: w,
+      openedAt: P,
       fetchStartedAt: null == R ? true : R.fetchStartedAt,
       fetchEndedAt: null == R ? true : R.fetchEndedAt,
       isLoaded: null == R ? true : R.isLoaded,
       children: (0, l.jsx)(r.Y0X, {
         "data-migration-pending": true,
-        transitionState: N,
+        transitionState: T,
         className: y.root,
         "aria-label": M,
         parentComponent: "RestrictedUserProfileModalV2",
@@ -126,22 +126,22 @@ function I(e) {
               })
             }), (0, l.jsxs)(r.Kqy, {
               align: "center",
-              children: [(0, l.jsx)(x.Z, {
+              children: [(0, l.jsx)(j.Z, {
                 size: "md",
                 isBlocked: C,
                 onClick: () => {
-                  A(), (0, m.pQ)(O({
+                  A(), (0, m.pQ)(I({
                     action: C ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
-                    analyticsLocations: w
-                  }, _))
+                    analyticsLocations: _
+                  }, w))
                 }
-              }), (0, l.jsx)(j.Z, {
+              }), (0, l.jsx)(x.Z, {
                 userId: n.id,
                 onClick: () => {
-                  A(), (0, m.pQ)(O({
+                  A(), (0, m.pQ)(I({
                     action: "DONT_SHOW_AGAIN_IGNORED_PROFILE",
-                    analyticsLocations: w
-                  }, _))
+                    analyticsLocations: _
+                  }, w))
                 }
               })]
             })]

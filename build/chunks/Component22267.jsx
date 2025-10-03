@@ -45,8 +45,8 @@ let C = {
       showStatus: D,
       showPlaceholderUser: L,
       pendingGlobalName: x,
-      pendingDisplayNameStyles: j,
-      avatarDecorationOverride: M,
+      pendingDisplayNameStyles: M,
+      avatarDecorationOverride: j,
       nameplatePreviewSize: k = "default",
       isPurchased: U = false,
       skipEffectDisplayName: G = false,
@@ -58,7 +58,7 @@ let C = {
       guildMember: W
     }) : true, z = C[k], q = (0, f.Y)({
       location: "NameplatePreview"
-    }), X = true !== j ? j : null == t ? true : t.displayNameStyles;
+    }), X = true !== M ? M : null == t ? true : t.displayNameStyles;
     return (0, r.jsx)("div", {
       role: "img",
       "aria-label": I.intl.string(I.t.SZeUdX),
@@ -90,8 +90,8 @@ let C = {
                 avatarSize: z,
                 status: D ? V : true,
                 "aria-hidden": true,
-                avatarDecorationOverride: null != M ? {
-                  asset: M.asset
+                avatarDecorationOverride: null != j ? {
+                  asset: j.asset
                 } : true
               }),
               decorators: (0, r.jsx)(h.ZP, {

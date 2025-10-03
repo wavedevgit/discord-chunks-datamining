@@ -3,7 +3,7 @@
 "use strict";
 require.r(exports), require.d(exports, {
   ASSISTANT_WUMPUS_VOICE_USER: () => I,
-  default: () => eM,
+  default: () => ej,
   mergeUser: () => R,
   transformUser: () => C,
   users: () => O
@@ -173,7 +173,7 @@ function x(e) {
   }))
 }
 
-function j(e) {
+function M(e) {
   let {
     guilds: t,
     lazyPrivateChannels: n
@@ -190,13 +190,13 @@ function j(e) {
   })
 }
 
-function M(e) {
+function j(e) {
   return !("incomplete" in e)
 }
 
 function k(e) {
   if (null != e.users)
-    for (let t of e.users) t.id in O && M(t) || (O[t.id] = new _.Z(t))
+    for (let t of e.users) t.id in O && j(t) || (O[t.id] = new _.Z(t))
 }
 
 function U(e) {
@@ -650,25 +650,25 @@ function ex(e) {
   } = e;
   return D(t, true)
 }
-class ej extends Chunk750041.Z {
+class eM extends Chunk750041.Z {
   initialize() {
     this.waitFor(Chunk314897.default, Chunk502087.Z)
   }
   takeSnapshot() {
     let e = this.getCurrentUser();
     return {
-      version: ej.LATEST_SNAPSHOT_VERSION,
+      version: eM.LATEST_SNAPSHOT_VERSION,
       data: {
         users: [module].filter(Chunk823379.lm)
       }
     }
   }
   handleLoadCache(e) {
-    let t = this.readSnapshot(ej.LATEST_SNAPSHOT_VERSION);
+    let t = this.readSnapshot(eM.LATEST_SNAPSHOT_VERSION);
     if (null != t)
       for (let e of t.users) O[e.id] = new _.Z(e);
     if (null != e.users)
-      for (let t of e.users) t.id in O && M(t) || (O[t.id] = new _.Z(t));
+      for (let t of e.users) t.id in O && j(t) || (O[t.id] = new _.Z(t));
     for (let t of [e.privateChannels, e.initialGuildChannels])
       for (let e of t) {
         var n;
@@ -709,7 +709,7 @@ class ej extends Chunk750041.Z {
   constructor() {
     super({
       CONNECTION_OPEN: x,
-      CONNECTION_OPEN_SUPPLEMENTAL: j,
+      CONNECTION_OPEN_SUPPLEMENTAL: M,
       UPDATE_CLIENT_PREMIUM_TYPE: Z,
       OVERLAY_INITIALIZE: k,
       CACHE_LOADED: e => this.handleLoadCache(e),
@@ -775,5 +775,5 @@ class ej extends Chunk750041.Z {
     })
   }
 }
-y(ej, "displayName", "UserStore"), y(ej, "LATEST_SNAPSHOT_VERSION", 1);
-let eM = new ej
+y(eM, "displayName", "UserStore"), y(eM, "LATEST_SNAPSHOT_VERSION", 1);
+let ej = new eM

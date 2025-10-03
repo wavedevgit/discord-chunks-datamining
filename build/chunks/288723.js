@@ -37,9 +37,9 @@ let d = {
           }) : n)
         }, []), N = t.rects.reference, R = t.rects.popper, P = new Map, w = true, D = C[0], L = 0; L < C.length; L++) {
         var x = C[L],
-          j = (0, i.Z)(x),
-          M = (0, c.Z)(x) === l.BL,
-          k = [l.we, l.I].indexOf(j) >= 0,
+          M = (0, i.Z)(x),
+          j = (0, c.Z)(x) === l.BL,
+          k = [l.we, l.I].indexOf(M) >= 0,
           U = k ? "width" : "height",
           G = (0, o.Z)(t, {
             placement: x,
@@ -48,11 +48,11 @@ let d = {
             altBoundary: b,
             padding: m
           }),
-          B = k ? M ? l.F2 : l.t$ : M ? l.I : l.we;
+          B = k ? j ? l.F2 : l.t$ : j ? l.I : l.we;
         N[U] > R[U] && (B = (0, r.Z)(B));
         var Z = (0, r.Z)(B),
           F = [];
-        if (f && F.push(G[j] <= 0), p && F.push(G[B] <= 0, G[Z] <= 0), F.every(function(e) {
+        if (f && F.push(G[M] <= 0), p && F.push(G[B] <= 0, G[Z] <= 0), F.every(function(e) {
             return e
           })) {
           D = x, w = false;

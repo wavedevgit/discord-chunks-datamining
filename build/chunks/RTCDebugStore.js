@@ -146,7 +146,7 @@ function x(e) {
   h = e.section
 }
 
-function j(e) {
+function M(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
     n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : Date.now(),
     r = {};
@@ -159,12 +159,12 @@ function j(e) {
         for (let e = 0; e < a.length; e++) {
           let r = t[e],
             i = "object" == typeof r ? r : {};
-          o.push(j(a[e], i, n))
+          o.push(M(a[e], i, n))
         }
       } else r[i] = a;
     else if ("object" == typeof a && null !== a) {
       let t = "object" == typeof e && null !== e ? e : {};
-      r[i] = j(a, t, n)
+      r[i] = M(a, t, n)
     } else if (i in E && "number" == typeof a) {
       let t = r[i] = Array.isArray(e) ? e : [];
       t.push({
@@ -176,7 +176,7 @@ function j(e) {
   return r
 }
 
-function M(e) {
+function j(e) {
   let {
     connectionStats: t
   } = e;
@@ -212,7 +212,7 @@ function k(e) {
       } = n;
       Object.keys(e).includes(a) || (h = p)
     }
-    i[r] = j(n, i[r])
+    i[r] = M(n, i[r])
   } else delete i[r]
 }
 
@@ -310,5 +310,5 @@ let H = new V(Chunk570140.Z, {
   RTC_DEBUG_SET_SIMULCAST_OVERRIDE: F,
   VOICE_CHANNEL_SELECT: D,
   RTC_CONNECTION_VIDEO: L,
-  MEDIA_ENGINE_CONNECTION_STATS: M
+  MEDIA_ENGINE_CONNECTION_STATS: j
 })

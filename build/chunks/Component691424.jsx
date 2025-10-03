@@ -141,18 +141,18 @@ function Y(e, t, n) {
   let r = T.Z.getGuild(e);
   if (null == e || null == r) return;
   let i = t => {
-    r.features.has(j.oNc.COMMUNITY) && (0, O.uL)(j.Z5c.CHANNEL(e, t))
+    r.features.has(M.oNc.COMMUNITY) && (0, O.uL)(M.Z5c.CHANNEL(e, t))
   };
   switch (t) {
     case "home":
     case "guide":
-      i(M.oC.GUILD_HOME);
+      i(j.oC.GUILD_HOME);
       break;
     case "browse":
-      i(M.oC.CHANNEL_BROWSER);
+      i(j.oC.CHANNEL_BROWSER);
       break;
     case "customize":
-      i(M.oC.CUSTOMIZE_COMMUNITY);
+      i(j.oC.CUSTOMIZE_COMMUNITY);
       break;
     case "linked-roles":
       if (null != n) {

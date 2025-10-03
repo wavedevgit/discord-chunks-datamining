@@ -41,17 +41,17 @@ function E(e, t, n) {
   } = r.Co.get(t), D = (0, i.mp)(), L = (0, f.useRef)(null), x = () => {
     var e;
     null === n.current || (null == L.current || S.key === L.current) && (null == (e = n.current) ? true : e.contains(document.activeElement)) || (0, u.e)(n.current)
-  }, j = {}, M = e.hasChildItems, k = t.selectionManager.isLink(S.key);
+  }, M = {}, j = e.hasChildItems, k = t.selectionManager.isLink(S.key);
   if (null != S && "expandedKeys" in t) {
     let e = null == (O = (v = t.collection).getChildren) ? true : O.call(v, S.key);
-    M = M || [...null != e ? e : []].length > 1, null == N && !k && "none" === t.selectionManager.selectionMode && M && (N = () => t.toggleKey(S.key));
-    let n = M ? t.expandedKeys.has(S.key) : true,
+    j = j || [...null != e ? e : []].length > 1, null == N && !k && "none" === t.selectionManager.selectionMode && j && (N = () => t.toggleKey(S.key));
+    let n = j ? t.expandedKeys.has(S.key) : true,
       r = 1;
     if (S.level > 0 && (null == S ? true : S.parentKey) != null) {
       let e = t.collection.getItem(S.parentKey);
       e && (r = [...null == (I = (T = t.collection).getChildren) ? true : I.call(T, e.key)].filter(e => "item" === e.type).length)
     } else r = [...t.collection].filter(e => 0 === e.level && "item" === e.type).length;
-    j = {
+    M = {
       "aria-expanded": n,
       "aria-level": S.level + 1,
       "aria-posinset": (null == S ? true : S.index) + 1,
@@ -74,10 +74,10 @@ function E(e, t, n) {
     if (!e.currentTarget.contains(e.target) || !n.current || !document.activeElement) return;
     let r = (0, d.QL)(n.current);
     if (r.currentNode = document.activeElement, "expandedKeys" in t && document.activeElement === n.current) {
-      if (e.key === m[C] && t.selectionManager.focusedKey === S.key && M && !t.expandedKeys.has(S.key)) {
+      if (e.key === m[C] && t.selectionManager.focusedKey === S.key && j && !t.expandedKeys.has(S.key)) {
         t.toggleKey(S.key), e.stopPropagation();
         return
-      } else if (e.key === g[C] && t.selectionManager.focusedKey === S.key && M && t.expandedKeys.has(S.key)) {
+      } else if (e.key === g[C] && t.selectionManager.focusedKey === S.key && j && t.expandedKeys.has(S.key)) {
         t.toggleKey(S.key), e.stopPropagation();
         return
       }
@@ -156,7 +156,7 @@ function E(e, t, n) {
   };
   return {
     rowProps: {
-      ...(0, c.d)(Y, j)
+      ...(0, c.d)(Y, M)
     },
     gridCellProps: W,
     descriptionProps: {

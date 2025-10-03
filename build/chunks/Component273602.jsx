@@ -45,8 +45,8 @@ async function E(e) {
     let t = (0, v.dg)(g.id);
     e.currentSize > t && (x.cancel(), r(false), p(), (0, C.G)(a, (0, S.KZ)(o)))
   });
-  let T = m.Z.getMessage(a.id, f),
-    w = null != T ? T.attachments : [];
+  let w = m.Z.getMessage(a.id, f),
+    T = null != w ? w.attachments : [];
   r(true);
   try {
     s = await x.uploadFiles(o)
@@ -54,7 +54,7 @@ async function E(e) {
     r(false);
     return
   }
-  let F = [...w, ...null != (t = s.map((e, t) => (0, y.B)(e, t))) ? t : []];
+  let F = [...T, ...null != (t = s.map((e, t) => (0, y.B)(e, t))) ? t : []];
   try {
     await l.tn.patch({
       url: O.ANM.MESSAGE(a.id, f),
@@ -82,8 +82,8 @@ function P(e) {
   }, [v]);
   let C = null != v && null != _ ? {
       src: _,
-      width: T.TJ,
-      height: T.Lp,
+      width: w.TJ,
+      height: w.Lp,
       spoiler: l[0].spoiler,
       alt: l[0].description
     } : null,
@@ -127,9 +127,9 @@ function P(e) {
       onClick: M,
       autoFocus: true
     }],
-    children: (0, n.jsx)(w.oL, {
+    children: (0, n.jsx)(T.oL, {
       channel: m,
-      children: (0, n.jsx)(T.ZP, {
+      children: (0, n.jsx)(w.ZP, {
         threadId: i,
         goToThread: F.dG,
         overrideMedia: C,

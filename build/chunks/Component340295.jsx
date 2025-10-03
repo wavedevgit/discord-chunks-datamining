@@ -1,4 +1,4 @@
-/** Chunk was on 9665 **/
+/** Chunk was on 50118 **/
 /** chunk id: 340295, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -20,17 +20,17 @@ let m = function(e) {
     participants: t,
     channel: n,
     hasConnectPermission: m
-  } = e, g = t.filter(p.Io), b = (0, s.J)(n.guild_id), y = i.useCallback(() => {
+  } = e, g = t.filter(p.Io), b = (0, s.J)(n.guild_id), C = r.useCallback(() => {
     b ? (0, o.hk)(n.guild_id, () => a.default.selectVoiceChannel(n.id)) : a.default.selectVoiceChannel(n.id)
-  }, [n.id, n.guild_id, b]), C = 4 === g.length ? 2 : 3;
-  return (0, r.jsxs)("div", {
+  }, [n.id, n.guild_id, b]), y = 4 === g.length ? 2 : 3;
+  return (0, i.jsxs)("div", {
     className: f.container,
-    children: [(0, r.jsx)(d.Z, {}), (0, r.jsx)("div", {
+    children: [(0, i.jsx)(d.Z, {}), (0, i.jsx)("div", {
       className: f.tiles,
       style: {
-        maxWidth: 168 * C
+        maxWidth: 168 * y
       },
-      children: g.slice(0, 5).map(e => (0, r.jsx)(u.ZP, {
+      children: g.slice(0, 5).map(e => (0, i.jsx)(u.ZP, {
         participant: e,
         channel: n,
         className: f.tile,
@@ -39,13 +39,13 @@ let m = function(e) {
         inPopout: false,
         width: 48
       }, e.id))
-    }), (0, r.jsx)(l.X6q, {
+    }), (0, i.jsx)(l.X6q, {
       className: f.channelName,
       variant: "heading-xxl/semibold",
       children: n.name
-    }), (0, r.jsx)("div", {
+    }), (0, i.jsx)("div", {
       className: f.participantsRow,
-      children: (0, r.jsx)(l.Text, {
+      children: (0, i.jsx)(l.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
         children: 0 === g.length ? h.intl.string(h.t.zSqdra) : 1 === g.length ? h.intl.formatToPlainString(h.t.BUyJIC, {
@@ -59,12 +59,12 @@ let m = function(e) {
           n: g.length - 2
         }) : true
       })
-    }), (0, r.jsx)("div", {
+    }), (0, i.jsx)("div", {
       className: f.joinButton,
-      children: (0, r.jsx)(l.zxk, {
+      children: (0, i.jsx)(l.zxk, {
         variant: "overlay-primary",
         text: m ? h.intl.string(h.t["96ANUF"]) : h.intl.string(h.t.TVBCKS),
-        onClick: y,
+        onClick: C,
         disabled: !m
       })
     })]

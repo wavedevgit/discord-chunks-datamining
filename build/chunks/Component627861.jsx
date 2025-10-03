@@ -295,7 +295,7 @@ function em(e) {
     onView: D,
     partyStatusElement: L,
     presenceActivity: x
-  } = e, j = (0, v.A)(A), M = (0, p.ye)(A), {
+  } = e, M = (0, v.A)(A), j = (0, p.ye)(A), {
     bot: B
   } = A, Z = G.ZP.getApplicationIconURL({
     id: A.id,
@@ -328,8 +328,8 @@ function em(e) {
     currentUserId: N,
     message: w,
     application: A,
-    isEmbeddedApplication: M,
-    isFrameApplication: j,
+    isEmbeddedApplication: j,
+    isFrameApplication: M,
     isGameLaunchable: em
   }), eO = ef(x, R, w, A), ev = (0, z.g)(R, x), eI = (0, Y.L)(x, w, A, N), eT = (0, l.e7)([k.Z], () => null != x && null != x.application_id && k.Z.getState(x.application_id, ei.mFx.JOIN) === ei.OcF.LOADING), eS = i.useMemo(() => eb ? {
     label: es.intl.string(es.t.VJlc0d),
@@ -390,10 +390,10 @@ function em(e) {
     onClick: () => {
       d.Z.launch({
         applicationId: e_,
-        embedded: M
+        embedded: j
       })
     }
-  } : null != eE ? eE : true, [M, em, e_, eE]), eC = (0, b.G)(A), eN = i.useMemo(() => null != ed ? ed : null != eC && M ? eC : true, [M, ed, eC]), eR = i.useMemo(() => {
+  } : null != eE ? eE : true, [j, em, e_, eE]), eC = (0, b.G)(A), eN = i.useMemo(() => null != ed ? ed : null != eC && j ? eC : true, [j, ed, eC]), eR = i.useMemo(() => {
     let e = [];
     return ec || null == eS ? ec && null != eA && e.push(eA) : e.push(eS), e
   }, [eA, ec, eS]), eP = i.useMemo(() => eR.some(e => e.trackingArea === m.j_.CLOUD_PLAY), [eR]);
@@ -448,7 +448,7 @@ function em(e) {
     })
   }
   let ex = null != (I = null == x || null == (s = x.timestamps) ? true : s.start) ? I : null == x ? true : x.created_at,
-    ej = null != ex ? (0, r.jsxs)("div", {
+    eM = null != ex ? (0, r.jsxs)("div", {
       className: el.timestampContainer,
       children: [(0, r.jsx)(c.iWm, {
         size: "xxs",
@@ -463,16 +463,16 @@ function em(e) {
         textFontCode: false
       })]
     }) : null,
-    eM = (0, r.jsxs)(c.Text, {
+    ej = (0, r.jsxs)(c.Text, {
       variant: "text-xs/normal",
       className: el.tagline,
       color: "none",
       lineClamp: 2,
-      children: [eu ? (0, V.$v)(w, A, C, N, ec) : ej, eu ? null : eD]
+      children: [eu ? (0, V.$v)(w, A, C, N, ec) : eM, eu ? null : eD]
     }),
     ek = (0, r.jsxs)("div", {
       className: el.info,
-      children: [eM, P || eu ? null : L]
+      children: [ej, P || eu ? null : L]
     });
   return (0, r.jsx)(h.W, {
     header: ew,
@@ -513,9 +513,9 @@ function eg(e) {
       let e = c.author.id;
       return (0, K.H)(c) && (e = e === _ && s.isPrivate() ? s.getRecipientId() : _), x.Z.getApplicationActivity(e, c.application.id)
     }
-  }, [c, s, _]), h = (0, l.e7)([L.Z, j.Z], () => {
+  }, [c, s, _]), h = (0, l.e7)([L.Z, M.Z], () => {
     var e;
-    return null != (e = L.Z.getApplicationActivity(f.id)) ? e : j.Z.getApplicationActivity(f.id, true)
+    return null != (e = L.Z.getApplicationActivity(f.id)) ? e : M.Z.getApplicationActivity(f.id, true)
   }, [f.id]), m = (0, l.Wu)([D.Z], () => {
     var e;
     return null == p || null == p.party ? [] : Array.from(null != (e = D.Z.getParty(p.party.id)) ? e : [])
@@ -523,7 +523,7 @@ function eg(e) {
     partySize: E,
     maxPartySize: b
   } = (0, q._)(p), y = i.useMemo(() => m.map(e => {
-    let t = M.default.getUser(e);
+    let t = j.default.getUser(e);
     return null != t ? t : en.ag
   }), [m]), O = (0, eo.Ps)(null == p || null == (t = p.party) ? true : t.id) || f.id === P.r9.id, v = (0, r.jsx)(eu, {
     partyMembers: y,

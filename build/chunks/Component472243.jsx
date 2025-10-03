@@ -2,13 +2,14 @@
 /** chunk id: 472243, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => I
+  Z: () => y
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
+  Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk100527 = require("./100527.js"),
   Chunk906732 = require("./906732.jsx"),
@@ -22,96 +23,56 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk781990 = require("./781990.js");
 
-function b(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
 function y(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      b(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function O(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function v(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-
-function I(e) {
-  var t, n, i, b;
+  var t, n, i, y;
   let {
     type: O,
-    textValue: I,
-    maxCharacterCount: T,
-    showRemainingCharsAfterCount: S,
-    className: A
-  } = e, C = (0, o.e7)([f.default], () => _.ZP.canUseIncreasedMessageLength(f.default.getCurrentUser())), N = (0, u.Z)(), R = null != T ? T : N, P = null != (b = null != S ? S : T) ? b : N / 10, w = I.length, D = null != O.upsellLongMessages && (null != w ? w : 0) > h.J6R && C, L = null != O.upsellLongMessages && !C, x = (null == (n = (0, d.N)()) || null == (t = n.subscription_trial) ? true : t.sku_id) === m.Si.TIER_2, j = R - w, M = j > P, k = j < 0 && x, U = 0 === j ? g.intl.string(g.t.tU6YQ0) : j > 0 ? g.intl.formatToPlainString(g.t.qH8uFR, {
-    count: j
-  }) : g.intl.string(g.t.YSRIqa), {
-    analyticsLocations: G
-  } = (0, c.ZP)(l.Z.CHARACTER_COUNT);
-  if (!(D && j >= 0 || !M || L && !M)) return null;
-  let B = j >= 0;
-  return (0, r.jsx)(c.Gt, {
-    value: G,
+    textValue: v,
+    maxCharacterCount: I,
+    showRemainingCharsAfterCount: T,
+    className: S
+  } = e, A = (0, o.e7)([_.default], () => p.ZP.canUseIncreasedMessageLength(_.default.getCurrentUser())), C = (0, d.Z)(), N = null != I ? I : C, R = null != (y = null != T ? T : I) ? y : C / 10, P = v.length, w = null != O.upsellLongMessages && (null != P ? P : 0) > m.J6R && A, D = null != O.upsellLongMessages && !A, L = (null == (n = (0, f.N)()) || null == (t = n.subscription_trial) ? true : t.sku_id) === g.Si.TIER_2, x = N - P, M = x > R, j = x < 0 && L, k = 0 === x ? E.intl.string(E.t.tU6YQ0) : x > 0 ? E.intl.formatToPlainString(E.t.qH8uFR, {
+    count: x
+  }) : E.intl.string(E.t.YSRIqa), {
+    analyticsLocations: U
+  } = (0, u.ZP)(c.Z.CHARACTER_COUNT);
+  if (!(w && x >= 0 || !M || D && !M)) return null;
+  let G = x >= 0;
+  return (0, r.jsx)(u.Gt, {
+    value: U,
     children: (0, r.jsxs)("div", {
-      className: a()(A, E.characterCount),
+      className: a()(S, b.characterCount),
       children: [(0, r.jsxs)("div", {
-        className: E.flairContainer,
-        children: [D && B ? (0, r.jsx)(s.ua7, {
-          text: g.intl.formatToPlainString(g.t.vcvHa2, {
-            maxLength: R
+        className: b.flairContainer,
+        children: [w && G ? (0, r.jsx)(s.u, {
+          text: E.intl.formatToPlainString(E.t.vcvHa2, {
+            maxLength: N
           }),
           position: "top",
-          children: e => (0, r.jsx)(s.SrA, y({
+          children: (0, r.jsx)(l.SrA, {
             size: "md",
             color: "currentColor",
-            className: E.premiumFlair
-          }, e))
-        }) : null, M || k ? null : (0, r.jsx)(s.ua7, {
-          text: U,
+            className: b.premiumFlair
+          })
+        }) : null, M || j ? null : (0, r.jsx)(s.u, {
+          text: k,
           position: "top",
-          children: e => (0, r.jsx)(s.Text, v(y({
+          children: (0, r.jsx)(l.Text, {
             variant: "text-sm/semibold",
             tabularNumbers: true,
-            "aria-hidden": true
-          }, e), {
-            color: B ? "text-default" : "text-danger",
-            children: j
-          }))
+            "aria-hidden": true,
+            color: G ? "text-default" : "text-danger",
+            children: x
+          })
         })]
-      }), (0, r.jsx)(s.nn4, {
-        children: g.intl.format(g.t.qH8uFR, {
-          count: j
+      }), (0, r.jsx)(l.nn4, {
+        children: E.intl.format(E.t.qH8uFR, {
+          count: x
         })
-      }), L && !M ? (0, r.jsx)(p.Z, {
-        className: E.upsell,
+      }), D && !M ? (0, r.jsx)(h.Z, {
+        className: b.upsell,
         iconOnly: (null == (i = O.upsellLongMessages) ? true : i.iconOnly) || false,
-        remaining: j
+        remaining: x
       }) : null]
     })
   })

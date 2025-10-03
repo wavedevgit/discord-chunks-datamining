@@ -44,13 +44,13 @@ let A = e => {
       analyticsLocations: D
     } = (0, f.ZP)(d.Z.PREMIUM_SUBSCRIBER_NITRO_HOME),
     [L, x] = i.useState(false),
-    j = (0, s.e7)([u.Z], () => u.Z.useReducedMotion),
-    M = (0, O.mN)(),
+    M = (0, s.e7)([u.Z], () => u.Z.useReducedMotion),
+    j = (0, O.mN)(),
     {
       fractionalState: k
     } = (0, _.Z)(),
     U = (0, h.W)();
-  M ? (t = I.intl.string(I.t["+vt7w8"]), n = I.intl.string(I.t.LgHbnJ)) : (t = I.intl.string(I.t.LgHbnJ), n = I.intl.string(I.t["+vt7w8"]));
+  j ? (t = I.intl.string(I.t["+vt7w8"]), n = I.intl.string(I.t.LgHbnJ)) : (t = I.intl.string(I.t.LgHbnJ), n = I.intl.string(I.t["+vt7w8"]));
   let G = () => {
     A(false), p.default.track(v.rMx.NITRO_HOME_NAVIGATION, {
       current_component: y.MQ.SEE_ALL,
@@ -61,7 +61,7 @@ let A = e => {
   return (0, r.jsx)(c.yWw, {
     className: o()(T.allPerksScroller, {
       [T.open]: a,
-      [T.openCloseReduceMotion]: j
+      [T.openCloseReduceMotion]: M
     }),
     ref: R,
     children: (0, r.jsx)(c.$1m, {
@@ -90,7 +90,7 @@ let A = e => {
             cards: (0, O.ZM)({
               perksCards: w,
               variant: y.gM.CARD_CAROUSEL_FIRST_ROW,
-              isPremiumSubscriber: M,
+              isPremiumSubscriber: j,
               hideCardsOnNarrowScreen: true,
               fractionalState: k,
               isInReverseTrial: U
@@ -106,7 +106,7 @@ let A = e => {
             cards: (0, O.ZM)({
               perksCards: w,
               variant: y.gM.CARD_CAROUSEL_SECOND_ROW,
-              isPremiumSubscriber: M,
+              isPremiumSubscriber: j,
               hideCardsOnNarrowScreen: true,
               fractionalState: k,
               isInReverseTrial: U
@@ -122,7 +122,7 @@ let A = e => {
             cards: (0, O.ZM)({
               perksCards: w,
               variant: y.gM.CARD_CAROUSEL_THIRD_ROW,
-              isPremiumSubscriber: M,
+              isPremiumSubscriber: j,
               hideCardsOnNarrowScreen: true,
               fractionalState: k,
               isInReverseTrial: U

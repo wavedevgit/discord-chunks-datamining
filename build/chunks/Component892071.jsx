@@ -51,7 +51,7 @@ function g(e) {
     highContrastMode: R,
     isPopoutWindow: P,
     children: w
-  } = e, D = window.CSS.supports("selector(::-webkit-scrollbar)"), L = (0, l.e7)([u.Z], () => u.Z.zoom), x = P ? "" : "--custom-zoom: ".concat(L, ";"), j = "font-size: ".concat(E, "%; --saturation-factor: ").concat(v, "; ").concat(x), M = (0, p.Z)("highlight_mana_buttons"), k = (0, p.Z)("highlight_mana_components"), U = (0, p.Z)("highlight_void_toggleables"), G = (0, p.Z)("highlight_void_buttons"), B = o()((0, d.Z)(), (0, c.QeD)(a), "density-".concat(m), b, {
+  } = e, D = window.CSS.supports("selector(::-webkit-scrollbar)"), L = (0, l.e7)([u.Z], () => u.Z.zoom), x = P ? "" : "--custom-zoom: ".concat(L, ";"), M = "font-size: ".concat(E, "%; --saturation-factor: ").concat(v, "; ").concat(x), j = (0, p.Z)("highlight_mana_buttons"), k = (0, p.Z)("highlight_mana_components"), U = (0, p.Z)("highlight_void_toggleables"), G = (0, p.Z)("highlight_void_buttons"), B = o()((0, d.Z)(), (0, c.QeD)(a), "density-".concat(m), b, {
     "low-saturation": v <= c.AEw,
     "keyboard-mode": O,
     "decorate-links": C,
@@ -70,17 +70,17 @@ function g(e) {
     "visual-refresh-chat-input": false,
     "mana-toggle-inputs": (0, _.A)("RootElementContextProvider"),
     "mana-text-inputs": (0, f.U)("RootElementContextProvider"),
-    "highlight-mana-buttons": M,
+    "highlight-mana-buttons": j,
     "highlight-mana-components": k,
     "highlight-void-toggleables": U,
     "highlight-void-buttons": G,
     "high-contrast-mode": R
   }, t), Z = i.useMemo(() => ({
     lang: n,
-    style: j,
+    style: M,
     className: B,
     focused: g
-  }), [n, j, B, g]);
+  }), [n, M, B, g]);
   return (0, r.jsx)(h.Provider, {
     value: Z,
     children: w

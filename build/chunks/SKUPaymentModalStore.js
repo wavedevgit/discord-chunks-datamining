@@ -107,11 +107,11 @@ function x(e) {
   N.delete(t)
 }
 
-function j() {
+function M() {
   O = true
 }
 
-function M(e) {
+function j(e) {
   let {
     entitlements: t,
     giftCode: n
@@ -202,8 +202,8 @@ let H = new V(Chunk570140.Z, {
   SKU_PURCHASE_PREVIEW_FETCH: D,
   SKU_PURCHASE_PREVIEW_FETCH_SUCCESS: L,
   SKU_PURCHASE_PREVIEW_FETCH_FAILURE: x,
-  SKU_PURCHASE_START: j,
-  SKU_PURCHASE_SUCCESS: M,
+  SKU_PURCHASE_START: M,
+  SKU_PURCHASE_SUCCESS: j,
   SKU_PURCHASE_FAIL: U,
   SKU_PURCHASE_SHOW_CONFIRMATION_STEP: G,
   SKU_PURCHASE_CLEAR_ERROR: B,

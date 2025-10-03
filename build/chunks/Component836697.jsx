@@ -1,7 +1,7 @@
 /** Chunk was on 51727 **/
 /** chunk id: 836697, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => O
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,22 +20,22 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk264096 = require("./264096.js");
 
-function O(e) {
+function y(e) {
   let {
     onActivate: t,
     children: n
   } = e, s = i.useRef(null), d = (0, l.e7)([u.Z], () => u.Z.hasJoinRequestCoackmark()), p = i.useCallback(() => {
     c.ZP.clearCoachmark()
-  }, []), f = (0, a.Z)(d), h = i.useRef(null);
+  }, []), h = (0, a.Z)(d), f = i.useRef(null);
   return i.useEffect(() => {
-    if (d && d !== f) {
+    if (d && d !== h) {
       var e, n, r, i, l;
-      t(), null == (l = h.current) || null == (i = l.ref) || null == (r = i.current) || null == (n = r.layerRef) || null == (e = n.current) || e.updatePosition()
+      t(), null == (l = f.current) || null == (i = l.ref) || null == (r = i.current) || null == (n = r.layerRef) || null == (e = n.current) || e.updatePosition()
     }
-  }, [h, d, f, t]), (0, r.jsxs)("div", {
+  }, [f, d, h, t]), (0, r.jsxs)("div", {
     className: _.container,
     children: [(0, r.jsx)(o.yRy, {
-      ref: h,
+      ref: f,
       targetElementRef: s,
       shouldShow: d,
       renderPopout: () => (0, r.jsxs)("div", {
@@ -104,17 +104,17 @@ function O(e) {
   })
 }
 
-function y(e) {
+function O(e) {
   let {
     onActivate: t
-  } = e, [n, y] = i.useState(false), v = (0, l.e7)([d.Z], () => d.Z.getGuildId()), j = (0, l.e7)([u.Z], () => u.Z.hasFetchedRequestToJoinGuilds), x = (0, h.Z)(), C = (0, a.Z)(v), E = i.useMemo(() => {
-    let e = (0, f.qQ)({
+  } = e, [n, O] = i.useState(false), v = (0, l.e7)([d.Z], () => d.Z.getGuildId()), j = (0, l.e7)([u.Z], () => u.Z.hasFetchedRequestToJoinGuilds), x = (0, f.Z)(), C = (0, a.Z)(v), E = i.useMemo(() => {
+    let e = (0, h.qQ)({
       folderId: p.S.PENDING_JOIN_REQUESTS_FOLDER,
       folderName: b.intl.string(b.t["scsU+v"]),
       expanded: n,
       guildIds: []
     });
-    for (let t of x) e.children.push((0, f.Mg)(t, e.id));
+    for (let t of x) e.children.push((0, h.Mg)(t, e.id));
     return e
   }, [x, n]);
   i.useEffect(() => {
@@ -122,8 +122,8 @@ function y(e) {
   }, [n, j]);
   let S = null != v && x.includes(v);
   return (i.useEffect(() => {
-    !n && S && C !== v && y(true)
-  }, [n, S, C, v]), 0 === x.length) ? null : (0, r.jsx)(O, {
+    !n && S && C !== v && O(true)
+  }, [n, S, C, v]), 0 === x.length) ? null : (0, r.jsx)(y, {
     onActivate: t,
     children: (0, r.jsx)(g.Z, {
       folderNode: E,
@@ -132,7 +132,7 @@ function y(e) {
       draggable: false,
       sorting: false,
       onExpandCollapse: () => {
-        y(!n), c.ZP.clearCoachmark()
+        O(!n), c.ZP.clearCoachmark()
       },
       folderButtonSize: "icon",
       folderButtonContent: (0, r.jsx)("div", {
@@ -143,7 +143,7 @@ function y(e) {
         })
       }),
       renderChildNode: function(e, t, n) {
-        return e.type !== f.eD.GUILD ? null : (0, r.jsx)(m.Z, {
+        return e.type !== h.eD.GUILD ? null : (0, r.jsx)(m.Z, {
           guildNode: e,
           "aria-setsize": n,
           "aria-posinset": t

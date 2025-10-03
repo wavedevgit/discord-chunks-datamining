@@ -42,14 +42,14 @@ function L(e) {
     getAcceptInviteContext: L
   } = e, {
     invite: x,
-    inviteError: j
+    inviteError: M
   } = (0, a.cj)([y.Z], () => ({
     invite: y.Z.getInvite(t),
     inviteError: y.Z.getInviteError(t)
-  }), [t]), M = null == x;
+  }), [t]), j = null == x;
   i.useEffect(() => {
-    M && o.ZP.resolveInvite(t)
-  }, [t, M]);
+    j && o.ZP.resolveInvite(t)
+  }, [t, j]);
   let k = null != x ? x : {
       state: w.r2o.RESOLVING,
       code: ""
@@ -108,7 +108,7 @@ function L(e) {
     case w.r2o.ERROR:
       Y = (0, r.jsx)(I.Z, {
         author: n.author,
-        inviteError: j
+        inviteError: M
       });
       break;
     default:

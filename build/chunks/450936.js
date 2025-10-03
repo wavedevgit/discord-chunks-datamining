@@ -1,4 +1,4 @@
-/** Chunk was on 9665 **/
+/** Chunk was on 50118 **/
 /** chunk id: 450936, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -21,33 +21,33 @@ let g = [Chunk911969.yU.PRIMARY_ENTRY_POINT, Chunk911969.yU.CHAT, Chunk911969.yU
 function b(e) {
   var t, n, b;
   let {
-    context: y
-  } = e, C = y.channel, _ = r.useMemo(() => {
-    if (true !== C.isDM()) return null;
-    let e = f.default.getUser(C.getRecipientId());
+    context: C
+  } = e, y = C.channel, _ = i.useMemo(() => {
+    if (true !== y.isDM()) return null;
+    let e = f.default.getUser(y.getRecipientId());
     return true === e || true !== e.bot ? null : e
-  }, [C]), v = (0, i.e7)([d.Z], () => {
+  }, [y]), v = (0, r.e7)([d.Z], () => {
     var e;
     return d.Z.isFetchingProfile(null != (e = null == _ ? true : _.id) ? e : m.lds)
-  }), x = (0, o.Z)(v), O = (0, i.e7)([c.Z], () => c.Z.getAppIdForBotUserId(null == _ ? true : _.id)), j = (0, i.e7)([d.Z], () => {
+  }), x = (0, o.Z)(v), O = (0, r.e7)([c.Z], () => c.Z.getAppIdForBotUserId(null == _ ? true : _.id)), j = (0, r.e7)([d.Z], () => {
     var e;
     return null !== _ ? null == (e = d.Z.getUserProfile(null == _ ? true : _.id)) ? true : e.application : true
   }), E = null != O ? O : null == j ? true : j.id;
-  r.useEffect(() => {
+  i.useEffect(() => {
     if (null == E) {
       var e;
       (0, p.Z)(null != (e = null == _ ? true : _.id) ? e : m.lds, true, {
         withMutualGuilds: true
       })
     }
-  }, [_, E]), r.useEffect(() => {
+  }, [_, E]), i.useEffect(() => {
     (null == _ ? true : _.id) != null && l.Z.dispatch({
       type: "APP_DM_OPEN",
       botUserId: _.id
     })
   }, [null == _ ? true : _.id]);
   let S = (0, s.v1)({
-      channel: C,
+      channel: y,
       type: "channel"
     }, {
       commandTypes: g
@@ -63,7 +63,7 @@ function b(e) {
       var t;
       return (null == (t = e.application) ? true : t.id) === E
     })) ? true : t.application,
-    T = r.useMemo(() => null != N ? h.ZP.createFromServer(N) : true, [N]),
+    T = i.useMemo(() => null != N ? h.ZP.createFromServer(N) : true, [N]),
     A = (0, u.q)(null == T ? E : true),
     w = null != (n = null != T ? T : A) ? n : true,
     M = null == w || Z && 0 === I.length;
@@ -75,7 +75,7 @@ function b(e) {
     isProfileFetching: v,
     wasProfileFetching: null != x ? x : null,
     applicationId: E,
-    channelId: C.id,
+    channelId: y.id,
     commands: I
   }
 }

@@ -2,7 +2,7 @@
 /** chunk id: 433355, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  D5: () => M,
+  D5: () => j,
   ZP: () => en,
   uZ: () => A
 });
@@ -73,7 +73,7 @@ let A = "message_requests",
   L = false,
   x = null;
 
-function j(e) {
+function M(e) {
   if (null == e) return null;
   if ((0, y.AB)(e)) {
     let t = g.Z.getGuildId();
@@ -82,14 +82,14 @@ function j(e) {
   return e
 }
 
-function M(e) {
+function j(e) {
   return [u.tI.VIEW_CHANNEL, u.tI.VIEW_THREAD, u.tI.VIEW_MESSAGE_REQUEST, u.tI.VIEW_MOD_REPORT].includes(e.type)
 }
 
 function k(e) {
   let t = false;
   L && (L = false, t = true);
-  let n = j(m.Z.getChannelId());
+  let n = M(m.Z.getChannelId());
   return null != n && n in P && (delete P[n], t = true), t && e ? e : !e
 }
 
@@ -113,7 +113,7 @@ function Z(e) {
     details: i
   } = e;
   L = false;
-  let a = j(r);
+  let a = M(r);
   return null != a && (w[n] = {
     type: t,
     baseChannelId: a,
@@ -137,7 +137,7 @@ function V(e) {
     details: i
   } = e;
   L = false;
-  let a = j(n);
+  let a = M(n);
   if (null == a) returnfalse;
   let o = {
     type: t,
@@ -156,7 +156,7 @@ function H(e) {
     location: r
   } = e;
   L = false;
-  let i = j(t);
+  let i = M(t);
   null != i && (P[i] = {
     type: u.tI.CREATE_THREAD,
     parentChannelId: t,
@@ -214,7 +214,7 @@ function z() {
 function q(e) {
   let {
     baseChannelId: t
-  } = e, n = j(t);
+  } = e, n = M(t);
   null != n && delete P[n]
 }
 
@@ -274,25 +274,25 @@ class et extends(r = Chunk442837.ZP.PersistedStore) {
   }
   getSection(e, t) {
     if (L) return b.ULH.SEARCH;
-    let n = j(e);
+    let n = M(e);
     return null != n && null != P[n] ? b.ULH.SIDEBAR_CHAT : t && R ? b.ULH.PROFILE : N ? b.ULH.SUMMARIES : C ? b.ULH.MEMBERS : b.ULH.NONE
   }
   getSidebarState(e) {
-    let t = j(e);
+    let t = M(e);
     return null == t ? true : P[t]
   }
   getGuildSidebarState(e) {
     return null == e ? true : w[e]
   }
   getCurrentSidebarChannelId(e) {
-    let t = j(e);
+    let t = M(e);
     if (null == t || L) return null;
     let n = P[t];
     return null == n ? null : n.type === u.tI.VIEW_THREAD || n.type === u.tI.VIEW_CHANNEL || n.type === u.tI.VIEW_MOD_REPORT ? n.channelId : null
   }
   getCurrentSidebarMessageId(e) {
     var t;
-    let n = j(e);
+    let n = M(e);
     if (null == n || L) return null;
     let r = P[n];
     return null == r ? null : r.type === u.tI.VIEW_THREAD || r.type === u.tI.VIEW_CHANNEL || r.type === u.tI.VIEW_MOD_REPORT ? null == (t = r.details) ? true : t.initialMessageId : null

@@ -1,7 +1,7 @@
 /** Chunk was on 22173 **/
 /** chunk id: 360004, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  d: () => l
+  d: () => r
 });
 var Chunk818083 = require("./818083.js"),
   Chunk987338 = require("./987338.js");
@@ -22,15 +22,15 @@ let s = (0, Chunk818083.B)({
   }]
 });
 
-function l(e, t) {
+function r(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
     {
-      enabled: r
+      enabled: l
     } = s.useExperiment({
       guildId: e,
       location: t
     }, {
       autoTrackExposure: n
     });
-  return r
+  return l
 }

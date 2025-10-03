@@ -1,7 +1,7 @@
 /** Chunk was on 91053 **/
 /** chunk id: 801405, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => j
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -21,13 +21,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk228488 = require("./228488.js"),
   Chunk981631 = require("./981631.js");
 
-function O(e) {
+function j(e) {
   let {
     channel: t,
     appContext: n,
-    popoutOpen: O,
-    popoutWindow: j,
-    currentWindow: x
+    popoutOpen: j,
+    popoutWindow: x,
+    currentWindow: O
   } = e, {
     parentAnalyticsLocation: v
   } = (0, c.ZP)(), C = n === _.IlC.POPOUT, I = i.useRef(null), {
@@ -46,40 +46,40 @@ function O(e) {
   i.useEffect(() => {
     I.current = S
   });
-  let P = i.useRef(E),
+  let T = i.useRef(E),
     {
-      currentDocument: T,
+      currentDocument: P,
       rootNode: N
     } = i.useMemo(() => {
-      let e = null != j && C ? j.document : document,
-        t = x.document.getElementById("app-mount");
+      let e = null != x && C ? x.document : document,
+        t = O.document.getElementById("app-mount");
       return {
-        currentWindow: x,
+        currentWindow: O,
         currentDocument: e,
         rootNode: t
       }
-    }, [j, C, x]),
-    R = O && !C,
+    }, [x, C, O]),
+    R = j && !C,
     w = S === _.WtW.VIDEO && Z && !R,
     A = i.useCallback((e, r) => {
       r !== e && (s.Z.updateLayout(t.id, r, n), r === _.AEg.FULL_SCREEN && t.isPrivate() && m.S.dispatch(_.CkL.TEXTAREA_BLUR))
     }, [n, t]),
     D = i.useCallback(e => {
-      null != N && e === _.AEg.FULL_SCREEN && (A(e, P.current), (0, y.Pr)(e => {
-        P.current = e
-      }, T))
-    }, [T, A, N]),
+      null != N && e === _.AEg.FULL_SCREEN && (A(e, T.current), (0, y.Pr)(e => {
+        T.current = e
+      }, P))
+    }, [P, A, N]),
     L = i.useCallback(e => () => {
-      null != N && ((0, u.v)(v, u.d.FULL_SCREEN, e !== _.AEg.FULL_SCREEN), e !== _.AEg.FULL_SCREEN ? (P.current = e, A(e, _.AEg.FULL_SCREEN), (0, y.Dj)(N)) : D(e))
+      null != N && ((0, u.v)(v, u.d.FULL_SCREEN, e !== _.AEg.FULL_SCREEN), e !== _.AEg.FULL_SCREEN ? (T.current = e, A(e, _.AEg.FULL_SCREEN), (0, y.Dj)(N)) : D(e))
     }, [A, D, N, v]);
   i.useEffect(() => {
     let e = () => {
-      null != N && ((0, y.rB)(N, T) || E !== _.AEg.FULL_SCREEN || L(E)())
+      null != N && ((0, y.rB)(N, P) || E !== _.AEg.FULL_SCREEN || L(E)())
     };
-    return T.addEventListener(y.NO, e), () => {
-      T.removeEventListener(y.NO, e)
+    return P.addEventListener(y.NO, e), () => {
+      P.removeEventListener(y.NO, e)
     }
-  }, [T, E, L, N]);
+  }, [P, E, L, N]);
   let M = {
       channel: t,
       maybeLeaveFullScreen: D
@@ -115,13 +115,13 @@ function O(e) {
       C && (0, b.isMac)() || t(E)
     }
   }, [E, C]), i.useEffect(() => {
-    null != N && I.current === _.WtW.VIDEO && S === _.WtW.VOICE && (0, y.Pr)(N, T)
-  }, [T, S, I, N]), i.useEffect(() => {
+    null != N && I.current === _.WtW.VIDEO && S === _.WtW.VOICE && (0, y.Pr)(N, P)
+  }, [P, S, I, N]), i.useEffect(() => {
     !Z && C && a.Z.wait(() => p.xv(_.KJ3.CHANNEL_CALL_POPOUT))
   }, [Z, C]), w) ? (0, r.jsx)(h.Z, {
     themeable: false,
     node: N,
-    guestWindow: j,
+    guestWindow: x,
     onClick: L(E)
   }) : null
 }

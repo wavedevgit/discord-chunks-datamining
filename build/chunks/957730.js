@@ -57,7 +57,7 @@ function x(e) {
   return e
 }
 
-function j(e, t) {
+function M(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -68,8 +68,8 @@ function j(e, t) {
   return n
 }
 
-function M(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
+function j(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -178,7 +178,7 @@ let Z = Chunk428595.Z.RULES,
         if (/^[^ ]+@[^ ]+\.[^ .]+/.test(r)) return null;
         let i = k("@", e, t.users, "mention");
         if (i || (i = k("@", e, t.mentionableRoles, "roleMention"))) return i;
-        if (!(i = k("@", e, t.users.map(e => M(x({}, e), {
+        if (!(i = k("@", e, t.users.map(e => j(x({}, e), {
             text: e.text.split("#")[0]
           })), "mention"))) return null;
         let a = z.exec(e);
@@ -256,7 +256,7 @@ let Z = Chunk428595.Z.RULES,
         }
       }
     },
-    text: M(x({}, F), {
+    text: j(x({}, F), {
       match: (e, t) => "string" == typeof t.textExclusions && "" !== t.textExclusions ? (0, f.T9)(t.textExclusions).exec(e) : null != F.match ? F.match(e, t, "") : null
     })
   },
@@ -378,7 +378,7 @@ let Z = Chunk428595.Z.RULES,
         content: "<id:".concat(e[1], ">")
       })
     },
-    timestamp: M(x({}, Z.timestamp), {
+    timestamp: j(x({}, Z.timestamp), {
       parse() {
         for (var e = arguments.length, t = Array(module), n = 0; require < module; require++) exports[require] = arguments[require];
         let r = Z.timestamp.parse(...exports);

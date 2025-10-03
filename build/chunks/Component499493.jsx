@@ -1,7 +1,7 @@
 /** Chunk was on 89311 **/
-/** chunk id: 499493, original params: e,t,r (module,exports,require) **/
+/** chunk id: 499493, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => j
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,124 +19,124 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk192025 = require("./192025.js"),
   Chunk226788 = require("./226788.js");
-let h = e => {
+let j = e => {
   let {
     entry: t,
-    onClose: r,
+    onClose: n,
     onReaction: l,
-    onRequestOpen: h,
-    disableActivityProfileLinks: v,
-    customCTA: b,
-    popoutClassname: y,
-    popoutPosition: P = "right"
-  } = e, w = i.useRef(null), I = (0, s.e7)([u.Z, c.Z], () => c.Z.getChannel(u.Z.getChannelId())), E = (0, s.e7)([d.default], () => d.default.getUser(t.author_id)), {
-    nick: N,
+    onRequestOpen: j,
+    disableActivityProfileLinks: O,
+    customCTA: y,
+    popoutClassname: I,
+    popoutPosition: b = "right"
+  } = e, E = i.useRef(null), N = (0, s.e7)([d.Z, c.Z], () => c.Z.getChannel(d.Z.getChannelId())), P = (0, s.e7)([u.default], () => u.default.getUser(t.author_id)), {
+    nick: w,
     avatar: S
   } = i.useMemo(() => {
-    let e = null == E ? true : E.getAvatarURL(null == I ? true : I.guild_id, 48, false);
+    let e = null == P ? true : P.getAvatarURL(null == N ? true : N.guild_id, 48, false);
     return {
-      nick: m.ZP.getName(null == I ? true : I.guild_id, null == I ? true : I.id, E),
+      nick: m.ZP.getName(null == N ? true : N.guild_id, null == N ? true : N.id, P),
       avatar: e
     }
-  }, [E, I]);
-  return null == E ? null : (0, n.jsx)(o.yRy, {
-    targetElementRef: w,
-    position: P,
+  }, [P, N]);
+  return null == P ? null : (0, r.jsx)(o.yRy, {
+    targetElementRef: E,
+    position: b,
     renderPopout: e => {
       let {
         closePopout: i,
         updatePosition: a
       } = e;
-      return (0, n.jsx)("div", {
-        className: y,
-        children: (0, n.jsx)(p.J, {
+      return (0, r.jsx)("div", {
+        className: I,
+        children: (0, r.jsx)(f.J, {
           entry: t,
           closePopout: i,
           updatePopoutPosition: a,
           onReaction: () => {
-            null == l || l(), r(), i()
+            null == l || l(), n(), i()
           },
           onUserPopoutClosed: () => i(),
           disableGameProfileLinks: true,
-          disableActivityProfileLinks: v
+          disableActivityProfileLinks: O
         })
       })
     },
     positionKey: "'content-entry-".concat(t.id),
     onRequestOpen: () => {
-      null == h || h()
+      null == j || j()
     },
     children: e => {
-      var r, i;
-      return (0, n.jsx)(o.P3F, (r = function(e) {
+      var n, i;
+      return (0, r.jsx)(o.P3F, (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {},
-            n = Object.keys(r);
-          "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(r, e).enumerable
-          }))), n.forEach(function(t) {
-            var n;
-            n = r[t], t in e ? Object.defineProperty(e, t, {
-              value: n,
+          var n = null != arguments[t] ? arguments[t] : {},
+            r = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(n, e).enumerable
+          }))), r.forEach(function(t) {
+            var r;
+            r = n[t], t in e ? Object.defineProperty(e, t, {
+              value: r,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[t] = n
+            }) : e[t] = r
           })
         }
         return e
       }({
-        innerRef: w
+        innerRef: E
       }, e), i = i = {
-        className: x.profileEntryCard,
-        children: (0, n.jsx)(o.tEY, {
+        className: h.profileEntryCard,
+        children: (0, r.jsx)(o.tEY, {
           offset: {
             top: 4,
             bottom: 4,
             left: 4,
             right: 4
           },
-          children: (0, n.jsxs)(n.Fragment, {
-            children: [(0, n.jsx)("img", {
-              className: x.avatar,
+          children: (0, r.jsxs)(r.Fragment, {
+            children: [(0, r.jsx)("img", {
+              className: h.avatar,
               src: S,
-              alt: j.intl.formatToPlainString(j.t.IzVXxc, {
-                userName: N
+              alt: g.intl.formatToPlainString(g.t.IzVXxc, {
+                userName: w
               })
-            }), (0, n.jsx)("div", {
-              className: x.playerInfo,
-              children: (0, n.jsxs)("div", {
-                className: a()(O.column, O.gapXs),
-                children: [(0, n.jsx)(o.Text, {
+            }), (0, r.jsx)("div", {
+              className: h.playerInfo,
+              children: (0, r.jsxs)("div", {
+                className: a()(v.column, v.gapXs),
+                children: [(0, r.jsx)(o.Text, {
                   variant: "text-md/medium",
                   color: "text-primary",
                   lineClamp: 1,
-                  children: N
-                }), (0, n.jsx)(g.Gk, {
-                  location: g.Gt.APP_LAUNCHER,
-                  children: f.W.map((e, r) => (0, n.jsx)(e, {
+                  children: w
+                }), (0, r.jsx)(x.Gk, {
+                  location: x.Gt.APP_LAUNCHER,
+                  children: p.W.map((e, n) => (0, r.jsx)(e, {
                     entry: t
-                  }, r))
+                  }, n))
                 })]
               })
-            }), null != b ? b : (0, n.jsx)("div", {
-              className: x.reactions,
-              children: (0, n.jsx)(o.n$P, {
+            }), null != y ? y : (0, r.jsx)("div", {
+              className: h.reactions,
+              children: (0, r.jsx)(o.n$P, {
                 size: "sm"
               })
             })]
           })
         })
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
-        var r = Object.keys(e);
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+        var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e);
-          r.push.apply(r, n)
+          var r = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, r)
         }
-        return r
+        return n
       })(Object(i)).forEach(function(e) {
-        Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
-      }), r))
+        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
+      }), n))
     }
   })
 }

@@ -138,7 +138,7 @@ let L = function(e) {
       })), T.set(e.id, a)
     }
   },
-  j = (e, t, n) => {
+  M = (e, t, n) => {
     v.set(e.id, e);
     let r = [...S];
     if (t) {
@@ -146,7 +146,7 @@ let L = function(e) {
       false !== t ? r[t] = e : r.push(e), S = r
     }(t || n) && e.stickers.forEach(e => L(e))
   },
-  M = () => {
+  j = () => {
     N.forEach((e, t) => {
       let n = _.Z.getGuild(t);
       null != n && e.forEach(e => x(e, n))
@@ -195,14 +195,14 @@ let F = () => {
     let {
       packs: t
     } = e;
-    t.forEach(e => j(e, true)), A = Date.now(), C = false
+    t.forEach(e => M(e, true)), A = Date.now(), C = false
   },
   Y = e => {
     let {
       pack: t,
       ingestStickers: n
     } = e;
-    j(t, false, n)
+    M(t, false, n)
   },
   W = e => {
     let {
@@ -253,7 +253,7 @@ class X extends(r = Chunk442837.ZP.Store) {
     return O
   }
   get stickerMetadata() {
-    return w(), null == T && (T = new Map, M()), T
+    return w(), null == T && (T = new Map, j()), T
   }
   get hasLoadedStickerPacks() {
     return null != A && A + P > Date.now()

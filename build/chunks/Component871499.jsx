@@ -216,17 +216,17 @@ function A(e) {
     D = null != s ? s : w,
     L = (0, u.Z)("(max-width: 456px)"),
     x = i.useRef(null),
-    j = i.useContext(f.h9);
+    M = i.useContext(f.h9);
   i.useEffect(() => {
-    null != x.current && (j ? x.current.pause() : x.current.play())
-  }, [j]);
-  let M = null != (t = P.onContextMenu) ? t : v,
+    null != x.current && (M ? x.current.pause() : x.current.play())
+  }, [M]);
+  let j = null != (t = P.onContextMenu) ? t : v,
     k = null == v && !N,
     U = null != v && !N,
     G = N && null != v,
     B = (0, r.jsx)(I, y(E({}, P), {
       grow: false,
-      onContextMenu: M,
+      onContextMenu: j,
       iconClassName: o()(b, m.centerIcon, k && m.fullRegionIcon),
       className: o()(L || R ? g : null, l && m.active, m.centerButton, S[w], k && m.fullRegionButton, G && m.attachedButton)
     }));

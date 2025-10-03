@@ -1,4 +1,4 @@
-/** Chunk was on 9665 **/
+/** Chunk was on 50118 **/
 /** chunk id: 775685, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -29,38 +29,38 @@ let x = Chunk647438.forwardRef(function(e, t) {
       animateRef: f
     } = e, m = (0, o.e7)([p.Z], () => p.Z.shouldShowPopup() && p.Z.activeViewType() === u), {
       Component: b,
-      events: y,
+      events: C,
       play: x
     } = (0, g.Z)("ChannelAppLauncherButton");
-    i.useImperativeHandle(f, () => ({
+    r.useImperativeHandle(f, () => ({
       animate: () => {
-        y.onMouseEnter()
+        C.onMouseEnter()
       }
-    }), [y]);
-    let O = i.useCallback(() => {
+    }), [C]);
+    let O = r.useCallback(() => {
         m ? d.yT(h.ti.DISMISSED) : (d.__(h._b.TEXT, u), c.ux()), x()
       }, [m, u, x]),
-      j = (0, r.jsx)(b, {
+      j = (0, i.jsx)(b, {
         size: "refresh_sm",
         color: "currentColor"
       });
-    return (0, r.jsx)("div", {
-      className: a()(v.buttonContainer, C.t4),
+    return (0, i.jsx)("div", {
+      className: a()(v.buttonContainer, y.t4),
       ref: t,
-      children: (0, r.jsx)(s.zx, (n = function(e) {
+      children: (0, i.jsx)(s.zx, (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            i = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-              value: r,
+          }))), i.forEach(function(t) {
+            var i;
+            i = n[t], t in e ? Object.defineProperty(e, t, {
+              value: i,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[t] = r
+            }) : e[t] = i
           })
         }
         return e
@@ -84,13 +84,13 @@ let x = Chunk647438.forwardRef(function(e, t) {
           }
         },
         innerClassName: v.buttonContents
-      }, y), l = l = {
+      }, C), l = l = {
         children: j
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, r)
+          var i = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, i)
         }
         return n
       })(Object(l)).forEach(function(e) {
@@ -104,22 +104,22 @@ let x = Chunk647438.forwardRef(function(e, t) {
       type: n,
       animateRef: l,
       entryPointCommandButtonRef: a
-    } = e, s = i.useRef(null), c = (0, m.R)({
+    } = e, s = r.useRef(null), c = (0, m.R)({
       channel: t,
       chatInputType: n
-    }), d = (0, y.Z)({
+    }), d = (0, C.Z)({
       type: n
     }), h = (0, u.Z)(t), g = (0, o.e7)([p.Z], () => p.Z.appDMChannelsWithFailedLoads().has(t.id)), {
-      visible: C
+      visible: y
     } = (0, b.xL)();
-    return c ? (0, r.jsxs)("div", {
+    return c ? (0, i.jsxs)("div", {
       className: v.channelAppLauncher,
-      children: [(0, r.jsx)(x, {
+      children: [(0, i.jsx)(x, {
         type: n,
         ref: s,
         animateRef: l
-      }), d ? (0, r.jsx)(f.Z, {
-        positionTargetRef: h && !g && C ? a : s,
+      }), d ? (0, i.jsx)(f.Z, {
+        positionTargetRef: h && !g && y ? a : s,
         channel: t
       }) : null]
     }) : null

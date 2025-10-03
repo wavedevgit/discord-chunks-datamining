@@ -2,11 +2,12 @@
 /** chunk id: 174161, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => b
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
+  Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk358555 = require("./358555.jsx"),
   Chunk769654 = require("./769654.js"),
@@ -19,148 +20,92 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk212229 = require("./212229.js");
 
-function g(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
 function E(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      g(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function b(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-
-function O(e, t) {
-  if (null == e) return {};
-  var n, r, i = v(e, t);
-  if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
-  }
-  return i
-}
-
-function v(e, t) {
-  if (null == e) return {};
-  var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-  return i
-}
-
-function I(e) {
-  var {
+  let {
     profile: t,
     disableGuildNameClick: n
-  } = e, s = O(e, ["profile", "disableGuildNameClick"]);
-  let c = t.id,
-    f = (0, a.e7)([d.ZP, u.default], () => {
-      var e;
-      return (null == (e = d.ZP.getMember(c, u.default.getId())) ? true : e.joinedAt) != null
-    }, [c]),
-    _ = i.useCallback(e => {
-      f && (e.stopPropagation(), (0, l.X)(t.id))
-    }, [f, t.id]);
-  return !f || n ? (0, r.jsx)(o.X6q, y(E({}, s), {
-    className: m.guildName,
-    variant: "heading-md/semibold",
-    color: "header-primary",
-    children: t.name
-  })) : (0, r.jsx)(o.P3F, y(E({}, s), {
-    className: m.guildNameContainer,
-    onClick: _,
-    children: (0, r.jsx)(o.X6q, {
-      className: m.guildName,
+  } = e, l = t.id, u = (0, a.e7)([f.ZP, d.default], () => {
+    var e;
+    return (null == (e = f.ZP.getMember(l, d.default.getId())) ? true : e.joinedAt) != null
+  }, [l]), _ = i.useCallback(e => {
+    u && (e.stopPropagation(), (0, c.X)(t.id))
+  }, [u, t.id]);
+  return !u || n ? (0, r.jsx)(o.u, {
+    text: t.name,
+    overflowOnly: true,
+    children: (0, r.jsx)(s.X6q, {
+      className: g.guildName,
       variant: "heading-md/semibold",
       color: "header-primary",
       children: t.name
     })
-  }))
+  }) : (0, r.jsx)(s.P3F, {
+    className: g.guildNameContainer,
+    onClick: _,
+    children: (0, r.jsx)(o.u, {
+      text: t.name,
+      overflowOnly: true,
+      children: (0, r.jsx)(s.X6q, {
+        className: g.guildName,
+        variant: "heading-md/semibold",
+        color: "header-primary",
+        children: t.name
+      })
+    })
+  })
 }
 
-function T(e) {
+function b(e) {
   let {
     profile: t,
     disableGuildNameClick: n
-  } = e, l = (0, a.e7)([c.default], () => c.default.locale), u = (0, p.M)(_.default.extractTimestamp(t.id), l), d = i.useMemo(() => {
-    let e = (0, f.$5)(t);
-    return (0, r.jsx)(s.Z, {
+  } = e, o = (0, a.e7)([u.default], () => u.default.locale), c = (0, h.M)(p.default.extractTimestamp(t.id), o), d = i.useMemo(() => {
+    let e = (0, _.$5)(t);
+    return (0, r.jsx)(l.Z, {
       guild: e,
       isBannerVisible: false
     })
   }, [t]);
   return (0, r.jsxs)("div", {
-    className: m.header,
+    className: g.header,
     children: [(0, r.jsxs)("div", {
-      className: m.nameContainer,
-      children: [(0, r.jsx)(o.ua7, {
-        text: t.name,
-        overflowOnly: true,
-        children: e => (0, r.jsx)(I, y(E({}, e), {
-          profile: t,
-          disableGuildNameClick: n
-        }))
+      className: g.nameContainer,
+      children: [(0, r.jsx)(E, {
+        profile: t,
+        disableGuildNameClick: n
       }), d]
     }), (0, r.jsxs)("div", {
-      className: m.members,
+      className: g.members,
       children: [(0, r.jsxs)("div", {
-        className: m.memberCount,
+        className: g.memberCount,
         children: [(0, r.jsx)("div", {
-          className: m.dotOnline
-        }), (0, r.jsx)(o.Text, {
+          className: g.dotOnline
+        }), (0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
           color: "text-secondary",
-          children: h.intl.format(h.t["LC+S+v"], {
+          children: m.intl.format(m.t["LC+S+v"], {
             membersOnline: t.onlineCount
           })
         })]
       }), (0, r.jsxs)("div", {
-        className: m.memberCount,
+        className: g.memberCount,
         children: [(0, r.jsx)("div", {
-          className: m.dot
-        }), (0, r.jsx)(o.Text, {
+          className: g.dot
+        }), (0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
           color: "text-secondary",
-          children: h.intl.format(h.t.zRl6XV, {
+          children: m.intl.format(m.t.zRl6XV, {
             count: t.memberCount
           })
         })]
       })]
     }), (0, r.jsx)("div", {
-      className: m.established,
-      children: (0, r.jsx)(o.Text, {
+      className: g.established,
+      children: (0, r.jsx)(s.Text, {
         variant: "text-sm/normal",
         color: "text-secondary",
-        children: h.intl.format(h.t["zb2Q5+"], {
-          createdAtDate: u
+        children: m.intl.format(m.t["zb2Q5+"], {
+          createdAtDate: c
         })
       })
     })]

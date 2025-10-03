@@ -1,9 +1,9 @@
-/** Chunk was on 9665 **/
+/** Chunk was on 50118 **/
 /** chunk id: 360787, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => C
 }), require("./388685.js"), require("./539854.js");
-var r, i, Chunk442837 = require("./442837.js"),
+var i, r, Chunk442837 = require("./442837.js"),
   Chunk846519 = require("./846519.js"),
   Chunk570140 = require("./570140.js"),
   Chunk278323 = require("./278323.js"),
@@ -29,43 +29,43 @@ function m(e) {
 function g() {
   p = {}, h = {}
 }
-class b extends(r = Chunk442837.ZP.Store) {
+class b extends(i = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk158776.Z)
   }
   isSubscribed(e) {
     return m(e)
   }
-}(i = "displayName") in b ? Object.defineProperty(b, i, {
+}(r = "displayName") in b ? Object.defineProperty(b, r, {
   value: "PresenceSubscriptionsStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : b[i] = "PresenceSubscriptionsStore";
-let y = new b(Chunk570140.Z, {
+}) : b[r] = "PresenceSubscriptionsStore";
+let C = new b(Chunk570140.Z, {
   PRESENCE_SUBSCRIPTIONS_ADD: function(e) {
     let {
       subscription: t
     } = e, n = function() {
       let e = false,
         t = Date.now();
-      for (let [n, r] of Object.entries(p)) r.expiresAt < t && (delete p[n], e = true);
-      for (let [n, r] of Object.entries(h)) r.expiresAt < t && (delete h[n], e = true);
+      for (let [n, i] of Object.entries(p)) i.expiresAt < t && (delete p[n], e = true);
+      for (let [n, i] of Object.entries(h)) i.expiresAt < t && (delete h[n], e = true);
       return e
     }(), {
-      userId: r,
-      applicationId: i,
+      userId: i,
+      applicationId: r,
       partyId: l,
       messageId: a,
       channelId: o,
       inviteTime: s
     } = t;
     if (m(t) || s + u.$y < Date.now()) return n;
-    let c = d(i, l),
+    let c = d(r, l),
       g = u.$y + Date.now();
     return h[c] = {
-      userId: r,
-      applicationId: i,
+      userId: i,
+      applicationId: r,
       partyId: l,
       messageId: a,
       channelId: o,

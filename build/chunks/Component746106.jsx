@@ -80,8 +80,8 @@ function D(e) {
     fontScale: D,
     fontScaleClass: L,
     keyboardModeEnabled: x,
-    saturation: j,
-    desaturateUserColors: M,
+    saturation: M,
+    desaturateUserColors: j,
     useForcedColors: k,
     systemForcedColors: U,
     useReducedMotion: G,
@@ -112,7 +112,7 @@ function D(e) {
   }, {
     autoTrackExposure: true
   }).enabled, H = (0, m.Z)(P, __OVERLAY__ || R), Y = 0;
-  1 !== j && (Y = (0, u.OdO)(Y, u.bgu.REDUCE_SATURATION_ENABLED));
+  1 !== M && (Y = (0, u.OdO)(Y, u.bgu.REDUCE_SATURATION_ENABLED));
   let W = (0, C.A)(),
     K = (0, g.Ml)("RootThemeContextProvider"),
     z = (0, g.CL)("RootThemeContextProvider"),
@@ -125,7 +125,7 @@ function D(e) {
     $ = (0, h.On)({
       isPopoutWindow: o
     }),
-    ee = w(y, j, i.useMemo(() => {
+    ee = w(y, M, i.useMemo(() => {
       let e = [];
       return K && e.push("refresh-fast-follow-avatars"), z && e.push("refresh-fast-follow-guild-bg"), q && e.push("refresh-fast-follow-distinct-borders"), X && e.push("mana-text-inputs"), Q && e.push("mana-toggle-inputs"), e
     }, [K, z, q, X, Q]), R);
@@ -134,7 +134,7 @@ function D(e) {
     children: (0, r.jsx)(u.wMY, {
       theme: y,
       flags: Y,
-      saturation: j,
+      saturation: M,
       density: W,
       children: (0, r.jsx)(N.cE, {
         lang: _,
@@ -145,8 +145,8 @@ function D(e) {
         fontScaleClass: L,
         keyboardModeEnabled: x,
         mouseMode: H,
-        saturation: j,
-        desaturateUserColors: M,
+        saturation: M,
+        desaturateUserColors: j,
         useForcedColors: k,
         systemForcedColors: U,
         useReducedMotion: G,

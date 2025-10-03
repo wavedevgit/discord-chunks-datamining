@@ -1,8 +1,8 @@
 /** Chunk was on 51727 **/
 /** chunk id: 378844, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  R: () => O,
-  Z: () => y
+  R: () => y,
+  Z: () => O
 });
 var r, Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -38,26 +38,26 @@ function _(e) {
   }
   return e
 }
-var O = ((r = {})[r.VOICE = 0] = "VOICE", r);
-let y = e => {
+var y = ((r = {})[r.VOICE = 0] = "VOICE", r);
+let O = e => {
   let {
     type: t,
     guildId: r,
-    closePopout: O
-  } = e, y = (0, u.Dt)(), {
+    closePopout: y
+  } = e, O = (0, u.Dt)(), {
     notClaimed: v,
     notEmailVerified: j,
     notPhoneVerified: x,
     newAccount: C,
     newMember: E
-  } = (0, l.e7)([p.Z], () => p.Z.getCheck(r), [r]), S = 0 === t ? m.intl.string(m.t["6zY8BA"]) : null, P = null, I = null;
-  return (0 === t && (v ? (P = m.intl.string(m.t.IRxUlJ), I = m.intl.string(m.t.fiNVio)) : x ? (P = m.intl.string(m.t.vW8iUF), I = m.intl.string(m.t["50gfOj"])) : j ? (P = m.intl.string(m.t.vdSOp6), I = m.intl.string(m.t.lm1UKi)) : E ? (P = m.intl.formatToPlainString(m.t.v1ktYW, {
-    min: h.YeM.MEMBER_AGE
-  }), I = m.intl.string(m.t.BddRzc)) : C && (P = m.intl.formatToPlainString(m.t["sncw4+"], {
-    min: h.YeM.ACCOUNT_AGE
-  }), I = m.intl.string(m.t.BddRzc))), null == S || null == P) ? null : (0, i.jsxs)(a.VqE, {
+  } = (0, l.e7)([p.Z], () => p.Z.getCheck(r), [r]), S = 0 === t ? m.intl.string(m.t["6zY8BA"]) : null, I = null, P = null;
+  return (0 === t && (v ? (I = m.intl.string(m.t.IRxUlJ), P = m.intl.string(m.t.fiNVio)) : x ? (I = m.intl.string(m.t.vW8iUF), P = m.intl.string(m.t["50gfOj"])) : j ? (I = m.intl.string(m.t.vdSOp6), P = m.intl.string(m.t.lm1UKi)) : E ? (I = m.intl.formatToPlainString(m.t.v1ktYW, {
+    min: f.YeM.MEMBER_AGE
+  }), P = m.intl.string(m.t.BddRzc)) : C && (I = m.intl.formatToPlainString(m.t["sncw4+"], {
+    min: f.YeM.ACCOUNT_AGE
+  }), P = m.intl.string(m.t.BddRzc))), null == S || null == I) ? null : (0, i.jsxs)(a.VqE, {
     className: b.container,
-    "aria-labelledby": y,
+    "aria-labelledby": O,
     children: [(0, i.jsx)("img", {
       alt: "",
       className: b.image,
@@ -66,20 +66,20 @@ let y = e => {
       className: b.content,
       children: [(0, i.jsx)(a.X6q, {
         variant: "heading-md/semibold",
-        id: y,
+        id: O,
         children: S
       }), (0, i.jsx)(a.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
-        children: P
+        children: I
       }), (0, i.jsxs)("div", {
         className: b.buttonContainer,
-        children: [null != I ? (0, i.jsx)("div", {
+        children: [null != P ? (0, i.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
           className: b.primaryButton,
           children: (0, i.jsx)(a.zxk, {
             variant: "primary",
-            text: I,
+            text: P,
             onClick: () => {
               v ? c.j() : x ? (0, a.ZDy)(async () => {
                 let {
@@ -100,7 +100,7 @@ let y = e => {
                   children: (0, i.jsx)(a.Text, {
                     variant: "text-md/normal",
                     children: m.intl.format(m.t.azKEPz, {
-                      email: null == (t = f.default.getCurrentUser()) ? true : t.email
+                      email: null == (t = h.default.getCurrentUser()) ? true : t.email
                     })
                   })
                 }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
@@ -113,11 +113,11 @@ let y = e => {
                 })(Object(r)).forEach(function(e) {
                   Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
                 }), n))
-              })), O()
+              })), y()
             }
           })
         }) : null, v || x || j ? (0, i.jsx)(o.zx, {
-          onClick: O,
+          onClick: y,
           look: o.zx.Looks.BLANK,
           className: b.cancel,
           children: m.intl.string(m.t.oEAioK)

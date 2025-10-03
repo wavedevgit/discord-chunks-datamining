@@ -67,26 +67,26 @@ function T(e) {
     channelId: T,
     messageId: S,
     roleId: A
-  }), x = i.useRef(null), j = (0, _.ZP)(t.id, n);
+  }), x = i.useRef(null), M = (0, _.ZP)(t.id, n);
   i.useEffect(() => {
     null == v || v(null == x ? true : x.current)
   }, [x, v]);
-  let M = w ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
+  let j = w ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
     k = P ? "div" : o.VqE;
   return (0, r.jsx)(l.Gt, {
     value: D,
     children: (0, r.jsx)(d.Mt, {
       value: L,
       openedAt: C,
-      fetchStartedAt: null == j ? true : j.fetchStartedAt,
-      fetchEndedAt: null == j ? true : j.fetchEndedAt,
-      isLoaded: null == j ? true : j.isLoaded,
+      fetchStartedAt: null == M ? true : M.fetchStartedAt,
+      fetchEndedAt: null == M ? true : M.fetchEndedAt,
+      isLoaded: null == M ? true : M.isLoaded,
       children: (0, r.jsx)(k, {
         ref: x,
         "aria-label": t.username,
         children: (0, r.jsx)(h.Z, {
           user: t,
-          displayProfile: j,
+          displayProfile: M,
           themeType: E.l.POPOUT,
           children: (0, r.jsxs)("div", {
             className: y.container,
@@ -117,7 +117,7 @@ function T(e) {
                   isBlocked: w,
                   onClick: () => {
                     N(), (0, f.pQ)(I({
-                      action: M,
+                      action: j,
                       analyticsLocations: D
                     }, L))
                   }

@@ -202,7 +202,7 @@ function X() {
   }, [Chunk120356, Chunk210887]), Chunk647438.useEffect(() => {
     Chunk695346 && (0, Chunk758119.mN)(Chunk723359.L0.FAMILY_CENTER)
   }, [Chunk695346]);
-  let j = e => {
+  let M = e => {
     h(e)
   };
   return Chunk695346 ? null : (0, Chunk951288.jsxs)("main", {
@@ -234,8 +234,8 @@ function Q() {
     familyCenterInitialized: Chunk914788.Z.getIsInitialized(),
     isLoading: Chunk914788.Z.isLoading()
   })), L = (0, Chunk652262.M)(), x = (0, Chunk399606.e7)([Chunk210887.Z], () => Chunk210887.Z.theme), {
-    selectedTab: j,
-    handleTabChange: M
+    selectedTab: M,
+    handleTabChange: j
   } = (0, Chunk841409.Z)(), k = (0, Chunk313201.Dt)(), Y = Chunk594174.default.getCurrentUser(), z = null != exports, X = Chunk873546 && null != Y && !z;
   (0, Chunk493773.ZP)(() => {
     Chunk150063.Y(Chunk981631.Z5c.FAMILY_CENTER), (0, Chunk108427.e)("family-center"), !Chunk984370 && Chunk914788.Z.canRefetch() && Chunk260722.ZP.initialPageLoad(), Chunk120356 || (0, Chunk266454.Q3)(Chunk704215.z.FAMILY_CENTER_NEW_BADGE, {
@@ -277,7 +277,7 @@ function Q() {
     X && (0, Chunk758119.mN)(Chunk723359.L0.FAMILY_CENTER)
   }, [X]);
   let $ = e => {
-    M(e)
+    j(e)
   };
   if (X) return null;
   let ee = Chunk830746 !== Chunk292352.dG.SETTINGS ? Chunk830746 : Chunk292352.dG.ACTIVITY,

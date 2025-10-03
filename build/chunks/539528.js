@@ -4,7 +4,7 @@
 require.d(exports, {
   Ep: () => _,
   Hp: () => h,
-  PP: () => j,
+  PP: () => M,
   lX: () => A,
   ob: () => p,
   q_: () => L
@@ -175,15 +175,15 @@ function A(e) {
   }
 
   function D(e) {
-    v(e) || j(N(e.state))
+    v(e) || M(N(e.state))
   }
 
   function L() {
-    j(N(S()))
+    M(N(S()))
   }
   var x = false;
 
-  function j(e) {
+  function M(e) {
     if (x) x = false, w();
     else {
       var t = "POP";
@@ -191,12 +191,12 @@ function A(e) {
         n ? w({
           action: t,
           location: e
-        }) : M(e)
+        }) : j(e)
       })
     }
   }
 
-  function M(e) {
+  function j(e) {
     var t = X.location,
       n = U.indexOf(t.key);
     false === n && (n = 0);
@@ -389,11 +389,11 @@ function L(e) {
       var n = v(),
         r = J.location;
       if (!S && L(r, n) || A === _(n)) return;
-      A = null, j(n)
+      A = null, M(n)
     }
   }
 
-  function j(e) {
+  function M(e) {
     if (S) S = false, T();
     else {
       var t = "POP";
@@ -401,12 +401,12 @@ function L(e) {
         n ? T({
           action: t,
           location: e
-        }) : M(e)
+        }) : j(e)
       })
     }
   }
 
-  function M(e) {
+  function j(e) {
     var t = J.location,
       n = B.lastIndexOf(_(t));
     false === n && (n = 0);
@@ -520,7 +520,7 @@ function x(e, t, n) {
   return Math.min(Math.max(e, t), n)
 }
 
-function j(e) {
+function M(e) {
   true === e && (e = {});
   var t = e,
     n = t.getUserConfirmation,

@@ -25,17 +25,17 @@ function p(e) {
     onClick: u
   } = e;
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(a.Ee, {
+    children: [(0, r.jsx)(o.Ee, {
       src: n(689411)
-    }), (0, r.jsx)(a.Dx, {
+    }), (0, r.jsx)(o.Dx, {
       className: l()(m.marginTop20, m.marginBottom8, g.flexCenter),
       children: d.intl.string(d.t.eL5z0t)
-    }), (0, r.jsx)(a.DK, {
+    }), (0, r.jsx)(o.DK, {
       className: m.marginBottom40,
       children: d.intl.string(d.t["poAv6+"])
-    }), (0, r.jsxs)(o.Zbd, {
+    }), (0, r.jsxs)(a.Zbd, {
       className: h.card,
-      type: o.Zbd.Types.CUSTOM,
+      type: a.Zbd.Types.CUSTOM,
       children: [(0, r.jsx)("img", {
         alt: "",
         className: h.cardAccentLeft,
@@ -49,7 +49,7 @@ function p(e) {
         direction: c.Z.Direction.VERTICAL,
         align: c.Z.Align.STRETCH,
         grow: 0,
-        children: [(0, r.jsx)(o.Text, {
+        children: [(0, r.jsx)(a.Text, {
           tag: "strong",
           className: h.buttonTitle,
           variant: "text-md/normal",
@@ -57,7 +57,7 @@ function p(e) {
             color: s.Z.unsafe_rawColors.PRIMARY_300.css
           },
           children: t
-        }), (0, r.jsx)(a.zx, {
+        }), (0, r.jsx)(o.zx, {
           className: h.button,
           onClick: u,
           children: i
@@ -74,7 +74,7 @@ function f(e) {
     theme: i = u.BRd.DARK,
     onClick: l
   } = e;
-  return (0, r.jsx)(a.ZP, {
+  return (0, r.jsx)(o.ZP, {
     theme: i,
     children: (0, r.jsx)(p, {
       text: t,

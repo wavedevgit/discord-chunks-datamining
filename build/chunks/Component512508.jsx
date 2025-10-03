@@ -1,8 +1,8 @@
 /** Chunk was on 6850 **/
 /** chunk id: 512508, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  PM: () => M,
-  WG: () => I,
+  PM: () => V,
+  WG: () => P,
   ZP: () => k
 }), require("./388685.js"), require("./781311.js");
 var Chunk951288 = require("./951288.js"),
@@ -79,18 +79,18 @@ function N(e) {
 }
 let Z = (0, Chunk313201.hQ)(),
   D = (0, Chunk313201.hQ)(),
-  L = "text-sm/medium";
+  R = "text-sm/medium";
 
-function R(e) {
+function L(e) {
   return 1 === e.type
 }
 
-function P(e) {
+function I(e) {
   return 0 === e.type
 }
 
-function I(e) {
-  let t = "".concat(!e.name.includes(j.CR) ? "@" : "").concat(e.name);
+function P(e) {
+  let t = "".concat(!e.name.includes(g.CR) ? "@" : "").concat(e.name);
   return {
     tag: {
       type: d.F.ROLE,
@@ -105,7 +105,7 @@ function I(e) {
   }
 }
 
-function M(e) {
+function V(e) {
   let t = (0, C.F6)(e, y.default, v.Z);
   return {
     tag: {
@@ -120,7 +120,7 @@ function M(e) {
     }
   }
 }
-let V = Chunk647438.memo(function(e) {
+let M = Chunk647438.memo(function(e) {
   var t;
   let {
     row: n,
@@ -133,12 +133,12 @@ let V = Chunk647438.memo(function(e) {
     guildId: l,
     roleId: a,
     size: 16
-  }), C = (0, c.e7)([x.Z], () => x.Z.getRole(l, a)), m = s.includes(j.CR) ? "" : "@", p = (0, u.dQu)(u.TVs.unsafe_rawColors.PRIMARY_300).hsl(), g = null != (t = null == C ? true : C.colorString) ? t : p, v = (0, h._f)(l, C, null == C ? true : C.colorStrings);
+  }), C = (0, c.e7)([x.Z], () => x.Z.getRole(l, a)), m = s.includes(g.CR) ? "" : "@", p = (0, u.dQu)(u.TVs.unsafe_rawColors.PRIMARY_300).hsl(), j = null != (t = null == C ? true : C.colorString) ? t : p, v = (0, h._f)(l, C, null == C ? true : C.colorStrings);
   return (0, r.jsxs)("div", {
     className: o()(H.rowLabel, H.roleTagContainer, i),
     children: [(0, r.jsx)(u.FhE, {
       className: H.__invalid_roleDot,
-      color: g,
+      color: j,
       colors: v,
       background: false,
       tooltip: false
@@ -147,7 +147,7 @@ let V = Chunk647438.memo(function(e) {
     }, d), {
       enableTooltip: false
     })) : m, (0, r.jsx)(u.Text, {
-      variant: L,
+      variant: R,
       className: H.roleTagLabel,
       children: s
     })]
@@ -169,18 +169,18 @@ function E(e) {
       color: "currentColor",
       className: H.channelIcon
     }), (0, r.jsx)(u.Text, {
-      variant: t.isCategory() ? "eyebrow" : L,
+      variant: t.isCategory() ? "eyebrow" : R,
       children: n.display
     })]
   })
 }
 
 function T(e, t, n) {
-  return R(e) ? (0, r.jsx)(V, {
+  return L(e) ? (0, r.jsx)(M, {
     row: e,
     guildId: t,
     className: n
-  }, e.record.id) : P(e) ? (0, r.jsx)(E, {
+  }, e.record.id) : I(e) ? (0, r.jsx)(E, {
     row: e,
     channel: e.record,
     className: n
@@ -198,16 +198,16 @@ function k(e) {
     placeholder: b,
     helperText: p,
     className: f
-  } = e, h = (0, c.e7)([x.Z], () => x.Z.getRolesSnapshot(t)), j = l.useMemo(() => (function(e, t, n) {
+  } = e, h = (0, c.e7)([x.Z], () => x.Z.getRolesSnapshot(t)), g = l.useMemo(() => (function(e, t, n) {
     if (null == e) return {};
     let r = {};
     return e.forEach(e => {
-      let t = g.Z.getChannel(e);
-      null != t && (r[e] = M(t))
+      let t = j.Z.getChannel(e);
+      null != t && (r[e] = V(t))
     }), t.forEach(e => {
-      e in n && (r[e] = I(n[e]))
+      e in n && (r[e] = P(n[e]))
     }), r
-  })(a, C, h), [a, C, h]), v = l.useMemo(() => Object.keys(j), [j]), [y, N] = l.useState(""), [L, V] = l.useState(false), [E, k] = l.useState(false), [A, U] = l.useState(false), F = l.useRef(null), {
+  })(a, C, h), [a, C, h]), v = l.useMemo(() => Object.keys(g), [g]), [y, N] = l.useState(""), [R, M] = l.useState(false), [E, k] = l.useState(false), [A, U] = l.useState(false), F = l.useRef(null), {
     sections: B,
     sectionCounts: q
   } = l.useMemo(() => {
@@ -225,32 +225,32 @@ function k(e) {
         let {
           row: t
         } = e;
-        return P(t)
+        return I(t)
       }).map(e => e.row.record.id),
       r = t.filter(e => {
         let {
           row: t
         } = e;
-        return R(t)
+        return L(t)
       }).map(e => e.row.record.id);
     m(new Set(n), new Set(r))
   }, [m]), G = () => {
-    V(false), k(false)
+    M(false), k(false)
   };
   l.useEffect(() => {
     let e = setTimeout(() => {
-      U(L || E)
+      U(R || E)
     }, 32);
     return () => {
       clearTimeout(e)
     }
-  }, [L, E]);
+  }, [R, E]);
   let Y = (e, t, n) => {
-      n.stopPropagation(), n.preventDefault(), 2 === t ? V(e) : (1 === t || V(e), k(e))
+      n.stopPropagation(), n.preventDefault(), 2 === t ? M(e) : (1 === t || M(e), k(e))
     },
     W = l.useCallback(e => {
-      let t = _({}, j);
-      P(e) ? t[e.id] = M(e.record) : R(e) && (t[e.id] = I(e.record)), z(t), N(""), G(), setTimeout(() => {
+      let t = _({}, g);
+      I(e) ? t[e.id] = V(e.record) : L(e) && (t[e.id] = P(e.record)), z(t), N(""), G(), setTimeout(() => {
         var e;
         let t = null == (e = F.current) ? true : e.containerRef.current,
           n = null == t ? true : t.firstChild;
@@ -259,7 +259,7 @@ function k(e) {
           behavior: "smooth"
         })
       }, 16)
-    }, [z, j]),
+    }, [z, g]),
     K = l.useCallback(e => {
       let {
         section: n,
@@ -278,10 +278,10 @@ function k(e) {
     }, [t, W, B]),
     Q = l.useMemo(() => v.map(e => {
       var n;
-      return n = j[e], w(_({}, n.tag), {
+      return n = g[e], w(_({}, n.tag), {
         label: T(n.row, t, H.noIndent)
       })
-    }), [j, v, t]);
+    }), [g, v, t]);
   return (0, r.jsxs)("div", {
     className: o()(H.searchContainer, f),
     children: [(0, r.jsxs)("div", {
@@ -296,7 +296,7 @@ function k(e) {
           let t = v[e],
             {
               [t]: n
-            } = j;
+            } = g;
           z(function(e, t) {
             if (null == e) return {};
             var n, r, l = function(e, t) {
@@ -311,7 +311,7 @@ function k(e) {
               for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
             }
             return l
-          }(j, [t].map(S))), N(""), G()
+          }(g, [t].map(S))), N(""), G()
         },
         onQueryChange: e => {
           N(e.trim().toLocaleLowerCase())

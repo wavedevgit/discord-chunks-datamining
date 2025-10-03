@@ -13,6 +13,5 @@ module.exports = {
   rolePopout: "rolePopout__75297",
   roleHeader: "roleHeader__75297",
   roleScroller: "roleScroller__75297",
-  timestamp: "timestamp__75297",
-  timestampTooltip: "timestampTooltip__75297"
+  timestamp: "timestamp__75297"
 }

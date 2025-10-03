@@ -23,7 +23,7 @@ require.d(exports, {
   F$: () => T,
   F_: () => c,
   GP: () => R,
-  HO: () => eM,
+  HO: () => ej,
   IW: () => S,
   Lw: () => eC,
   M_: () => e2,
@@ -44,7 +44,7 @@ require.d(exports, {
   TD: () => eY,
   TL: () => Q,
   Tp: () => ez,
-  UA: () => M,
+  UA: () => j,
   UD: () => O,
   Ue: () => U,
   Uq: () => eR,
@@ -57,13 +57,13 @@ require.d(exports, {
   YQ: () => m,
   Z1: () => v,
   Zh: () => u,
-  _k: () => ej,
+  _k: () => eM,
   a$: () => e6,
   a1: () => eW,
   a7: () => $,
   b6: () => d,
   bg: () => eF,
-  cb: () => j,
+  cb: () => M,
   cd: () => eT,
   dB: () => ef,
   dJ: () => y,
@@ -328,8 +328,8 @@ let R = Object.freeze({
   D = 8,
   L = 5,
   x = 30,
-  j = 2,
-  M = 3,
+  M = 2,
+  j = 3,
   k = 28,
   U = 30,
   G = 30,
@@ -442,13 +442,13 @@ let eA = Object.freeze({
     [Chunk981631.Eu4.TIER_2]: eL[Chunk981631.Eu4.NONE] + eL[Chunk981631.Eu4.TIER_1] + eL[Chunk981631.Eu4.TIER_2],
     [Chunk981631.Eu4.TIER_3]: eL[Chunk981631.Eu4.NONE] + eL[Chunk981631.Eu4.TIER_1] + eL[Chunk981631.Eu4.TIER_2] + eL[Chunk981631.Eu4.TIER_3]
   },
-  ej = {
+  eM = {
     [Chunk981631.Eu4.NONE]: eO,
     [Chunk981631.Eu4.TIER_1]: 24,
     [Chunk981631.Eu4.TIER_2]: 36,
     [Chunk981631.Eu4.TIER_3]: 48
   },
-  eM = Object.freeze({
+  ej = Object.freeze({
     [Chunk981631.Eu4.NONE]: {
       features: [],
       limits: {
@@ -457,7 +457,7 @@ let eA = Object.freeze({
         fileSize: Chunk981631.mBz,
         screenShareQualityFramerate: 30,
         screenShareQualityResolution: "720p",
-        soundboardSounds: ej[Chunk981631.Eu4.NONE],
+        soundboardSounds: eM[Chunk981631.Eu4.NONE],
         stickers: ex[Chunk981631.Eu4.NONE],
         stageVideoUsers: Chunk981631.B9o
       }
@@ -470,7 +470,7 @@ let eA = Object.freeze({
         fileSize: Chunk981631.mBz,
         screenShareQualityFramerate: 60,
         screenShareQualityResolution: "720p",
-        soundboardSounds: ej[Chunk981631.Eu4.TIER_1],
+        soundboardSounds: eM[Chunk981631.Eu4.TIER_1],
         stickers: ex[Chunk981631.Eu4.TIER_1],
         stageVideoUsers: Chunk981631.B9o
       }
@@ -483,7 +483,7 @@ let eA = Object.freeze({
         fileSize: eP,
         screenShareQualityFramerate: 60,
         screenShareQualityResolution: "1080p",
-        soundboardSounds: ej[Chunk981631.Eu4.TIER_2],
+        soundboardSounds: eM[Chunk981631.Eu4.TIER_2],
         stickers: ex[Chunk981631.Eu4.TIER_2],
         stageVideoUsers: Chunk981631.eez
       }
@@ -496,7 +496,7 @@ let eA = Object.freeze({
         fileSize: ew,
         screenShareQualityFramerate: 60,
         screenShareQualityResolution: "1080p",
-        soundboardSounds: ej[Chunk981631.Eu4.TIER_3],
+        soundboardSounds: eM[Chunk981631.Eu4.TIER_3],
         stickers: ex[Chunk981631.Eu4.TIER_3],
         stageVideoUsers: Chunk981631.RcX
       }

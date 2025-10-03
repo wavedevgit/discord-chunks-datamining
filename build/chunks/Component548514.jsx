@@ -1,7 +1,7 @@
 /** Chunk was on 73323 **/
 /** chunk id: 548514, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => k
+  Z: () => D
 }), require("./388685.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -88,11 +88,11 @@ function w(e) {
     onClickInstallApplication: o,
     canInstall: d
   } = function(e) {
-    let t = (0, S.nu)(),
+    let t = (0, P.nu)(),
       n = a.useCallback(() => {
         var t;
-        let n = null != (t = P.z8.getField("guildId")) ? t : true;
-        (0, O.L)({
+        let n = null != (t = O.z8.getField("guildId")) ? t : true;
+        (0, S.L)({
           applicationId: e.id,
           customInstallUrl: e.custom_install_url,
           installParams: e.install_params,
@@ -110,10 +110,10 @@ function w(e) {
       }
     }, [t, n]), {
       onClickInstallApplication: a.useCallback(() => {
-        if ((0, S.zZ)(N.rMx.APP_DIRECTORY_INSTALL_CLICKED, {
+        if ((0, P.zZ)(N.rMx.APP_DIRECTORY_INSTALL_CLICKED, {
             application_id: e.id
           }), (s.tq || s.Em) && null == e.custom_install_url) {
-          let t = (0, O.E)({
+          let t = (0, S.E)({
             applicationId: e.id,
             customInstallUrl: e.custom_install_url,
             installParams: e.install_params,
@@ -123,14 +123,14 @@ function w(e) {
         }
         if (t) n();
         else {
-          let t = P.z8.getField("guildId");
+          let t = O.z8.getField("guildId");
           y.default.track(N.rMx.APPLICATION_ADD_TO_SERVER_CLICKED, {
             application_id: e.id,
             guild_id: t,
             auth_type: null != e.custom_install_url ? "custom_url" : "in_app",
             source: "product_page",
             device_platform: s.tq ? "mobile_web" : "desktop_web"
-          }), (0, S.rf)({
+          }), (0, P.rf)({
             [L]: "true"
           })
         }
@@ -158,7 +158,7 @@ function w(e) {
   })
 }
 
-function D(e) {
+function k(e) {
   let {
     size: t,
     contentWidth: n,
@@ -180,7 +180,7 @@ function D(e) {
     loading: i
   })
 }
-let k = Chunk647438.forwardRef(function(e, t) {
+let D = Chunk647438.forwardRef(function(e, t) {
   let {
     application: n,
     size: i
@@ -192,23 +192,23 @@ let k = Chunk647438.forwardRef(function(e, t) {
     analyticsLocations: f
   } = (0, m.ZP)(), y = a.useCallback(() => {
     let e;
-    (0, S.zZ)(N.rMx.APP_DIRECTORY_APPLICATION_LINK_COPIED, {
+    (0, P.zZ)(N.rMx.APP_DIRECTORY_APPLICATION_LINK_COPIED, {
       application_id: n.id
     }), (0, I.JG)((e = n.id, "".concat(location.protocol, "//").concat(location.host).concat(N.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE(e))), () => (0, c.showToast)((0, c.createToast)(T.intl.string(T.t["L/PwZW"]), c.ToastType.SUCCESS)))
-  }, [n.id]), O = (0, o.e7)([C.default], () => C.default.locale), P = a.useCallback(() => {
+  }, [n.id]), S = (0, o.e7)([C.default], () => C.default.locale), O = a.useCallback(() => {
     (0, d.Z)((0, E.G)({
       id: n.id,
       name: n.name,
-      locale: O
+      locale: S
     }))
-  }, [O, n]), L = (0, b.Z)({
+  }, [S, n]), L = (0, b.Z)({
     id: n.id,
     label: T.intl.string(T.t["FfCL+/"]),
     onSuccess: () => (0, c.showToast)((0, c.createToast)(T.intl.string(T.t.eNjAam), c.ToastType.SUCCESS))
-  }), k = (0, x.Z)({
+  }), D = (0, x.Z)({
     application: n,
     onItemClick: () => {
-      (0, S.zZ)(N.rMx.APP_DIRECTORY_APPLICATION_LINK_COPIED, {
+      (0, P.zZ)(N.rMx.APP_DIRECTORY_APPLICATION_LINK_COPIED, {
         application_id: n.id
       })
     }
@@ -218,7 +218,7 @@ let k = Chunk647438.forwardRef(function(e, t) {
     onClose: t,
     onSelect: true,
     children: [s && (0, r.jsx)(c.kSQ, {
-      children: k
+      children: D
     }), e ? (0, r.jsx)(c.kSQ, {
       children: (0, r.jsx)(c.sNh, {
         id: "copy",
@@ -231,12 +231,12 @@ let k = Chunk647438.forwardRef(function(e, t) {
         id: "report",
         label: T.intl.string(T.t.NgA5vr),
         color: "danger",
-        action: P
+        action: O
       })
     }), null != L ? (0, r.jsx)(c.kSQ, {
       children: L
     }) : null]
-  }), [L, P, y, s, k]), {
+  }), [L, O, y, s, D]), {
     onClickLaunchActivity: G,
     isSubmitting: B
   } = function(e, t) {
@@ -245,7 +245,7 @@ let k = Chunk647438.forwardRef(function(e, t) {
       i = null == e || null == (n = e.bot) ? true : n.id,
       l = null != i && (0, _.BQ)(e) && (0, _.ye)(e),
       [s, c] = a.useState(false),
-      d = (0, S.nu)(),
+      d = (0, P.nu)(),
       m = (0, o.e7)([j.default], () => j.default.getCurrentUser()),
       h = (0, o.e7)([u.ZP], () => u.ZP.getCurrentEmbeddedActivity()),
       f = a.useCallback(async (t, n, r) => {
@@ -275,9 +275,9 @@ let k = Chunk647438.forwardRef(function(e, t) {
     }, [d, l, i, r, t, m, f]);
     let b = a.useCallback(async () => {
       if (null != i) {
-        if ((0, S.zZ)(N.rMx.APP_DIRECTORY_LAUNCH_CLICKED, {
+        if ((0, P.zZ)(N.rMx.APP_DIRECTORY_LAUNCH_CLICKED, {
             application_id: r
-          }), !d) return void(0, S.rf)({
+          }), !d) return void(0, P.rf)({
           [R]: "true"
         });
         await f(i, r, t)
@@ -292,7 +292,7 @@ let k = Chunk647438.forwardRef(function(e, t) {
     ref: t,
     children: [(0, r.jsxs)("div", {
       className: l()(A.actionContainer, A.wide),
-      children: [z && (0, r.jsx)(D, {
+      children: [z && (0, r.jsx)(k, {
         size: i,
         contentWidth: "normal",
         onClick: G,
@@ -314,7 +314,7 @@ let k = Chunk647438.forwardRef(function(e, t) {
       })]
     }), (0, r.jsxs)("div", {
       className: l()(A.actionContainer, A.small),
-      children: [z && (0, r.jsx)(D, {
+      children: [z && (0, r.jsx)(k, {
         size: i,
         contentWidth: "small",
         onClick: G,
@@ -330,7 +330,7 @@ let k = Chunk647438.forwardRef(function(e, t) {
       })]
     }), (0, r.jsxs)("div", {
       className: l()(A.actionContainer, A.tiny),
-      children: [z && (0, r.jsx)(D, {
+      children: [z && (0, r.jsx)(k, {
         size: i,
         contentWidth: "icon",
         onClick: G,

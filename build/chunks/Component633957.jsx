@@ -79,7 +79,7 @@ function B(e) {
     J = null == Q ? true : Q.details,
     $ = i.useMemo(() => {
       let e = new T.ZP(d);
-      return null == e.embeddedActivityConfig && (e.embeddedActivityConfig = M.wT), e
+      return null == e.embeddedActivityConfig && (e.embeddedActivityConfig = j.wT), e
     }, [d]),
     ee = (0, h.s5)({
       userId: Y,
@@ -96,7 +96,7 @@ function B(e) {
     er = i.useId(),
     ei = null != z && z.isLaunching && z.componentId === er,
     ea = async () => {
-      R.default.track(j.rMx.ACTIVITY_INSTANCE_EMBED_CLICKED, {
+      R.default.track(M.rMx.ACTIVITY_INSTANCE_EMBED_CLICKED, {
         application_id: d.id,
         channel_id: I,
         channel_type: null == V ? true : V.type,
@@ -117,7 +117,7 @@ function B(e) {
         componentId: er
       })
     }, eo = en.disabled ? U.intl.string(U.t.JBnc7O) : U.intl.string(U.t.cX9uLS), es = (0, v.G)($, () => {
-      R.default.track(j.rMx.ACTIVITY_INSTANCE_EMBED_CLICKED, {
+      R.default.track(M.rMx.ACTIVITY_INSTANCE_EMBED_CLICKED, {
         application_id: d.id,
         channel_id: I,
         channel_type: null == V ? true : V.type,

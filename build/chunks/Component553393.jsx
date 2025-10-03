@@ -56,8 +56,8 @@ function L(e) {
   return e
 }
 let x = "8px",
-  j = "11px",
-  M = 222;
+  M = "11px",
+  j = 222;
 
 function k(e) {
   var t, I, D, k, U;
@@ -211,7 +211,7 @@ function k(e) {
     "aria-expanded": er,
     className: w.wrapper,
     style: {
-      width: null != (U = null == (k = B.current) ? true : k.clientWidth) ? U : M,
+      width: null != (U = null == (k = B.current) ? true : k.clientWidth) ? U : j,
       height: es.height,
       overflow: er ? "visible" : "hidden",
       borderRadius: eu
@@ -246,8 +246,8 @@ function k(e) {
             }), (0, r.jsx)(u.idN, {
               size: "custom",
               className: w.helpIcon,
-              width: j,
-              height: j,
+              width: M,
+              height: M,
               color: u.TVs.colors.INTERACTIVE_NORMAL
             })]
           })]

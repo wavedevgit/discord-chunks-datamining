@@ -2,7 +2,7 @@
 /** chunk id: 327192, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => J
+  Z: () => $
 }), require("./388685.js"), require("./539854.js"), require("./457542.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -12,6 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
   Chunk692547 = require("./692547.js"),
+  Chunk28664 = require("./28664.jsx"),
   Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
   Chunk570140 = require("./570140.js"),
@@ -44,7 +45,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk11049 = require("./11049.js");
 
-function F(e, t, n) {
+function V(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -53,20 +54,20 @@ function F(e, t, n) {
   }) : e[t] = n, e
 }
 
-function V(e) {
+function H(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      F(e, t, n[t])
+      V(e, t, n[t])
     })
   }
   return e
 }
 
-function H(e, t) {
+function Y(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -77,12 +78,12 @@ function H(e, t) {
   return n
 }
 
-function Y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : H(Object(t)).forEach(function(n) {
+function W(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Y(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let W = e => {
+let K = e => {
   var t, n;
   let i, {
       integration: a
@@ -91,112 +92,112 @@ let W = e => {
       isJoining: o,
       joinErrorMessage: s,
       showJoinErrorMessage: c
-    } = (0, l.cj)([A.Z], () => ({
-      isJoining: A.Z.isJoining(a.id),
-      joinErrorMessage: "" === A.Z.joinErrorMessage(a.id) ? B.intl.string(B.t.j2d6Ki) : A.Z.joinErrorMessage(a.id),
-      showJoinErrorMessage: true !== A.Z.joinErrorMessage(a.id)
+    } = (0, l.cj)([C.Z], () => ({
+      isJoining: C.Z.isJoining(a.id),
+      joinErrorMessage: "" === C.Z.joinErrorMessage(a.id) ? Z.intl.string(Z.t.j2d6Ki) : C.Z.joinErrorMessage(a.id),
+      showJoinErrorMessage: true !== C.Z.joinErrorMessage(a.id)
     }), [a.id]);
 
   function u() {
-    p.Z.joinServer(a.id, () => {})
+    h.Z.joinServer(a.id, () => {})
   }
-  return null == (0, l.e7)([C.Z], () => C.Z.getGuild(a.guild.id), [a.guild.id]) && (i = (0, r.jsx)(f.zxk, {
+  return null == (0, l.e7)([N.Z], () => N.Z.getGuild(a.guild.id), [a.guild.id]) && (i = (0, r.jsx)(_.zxk, {
     size: "sm",
     onClick: u,
     disabled: o,
     variant: "primary",
-    text: o ? B.intl.string(B.t.RXvQQk) : B.intl.string(B.t.XpeFYm)
+    text: o ? Z.intl.string(Z.t.RXvQQk) : Z.intl.string(Z.t.XpeFYm)
   })), (0, r.jsxs)("div", {
-    className: Z.integrationWrapper,
+    className: F.integrationWrapper,
     children: [(0, r.jsxs)("div", {
-      className: Z.integration,
-      children: [(0, r.jsx)(T.Z, {
-        size: T.Z.Sizes.SMALL,
+      className: F.integration,
+      children: [(0, r.jsx)(S.Z, {
+        size: S.Z.Sizes.SMALL,
         guild: a.guild,
-        className: Z.guildIcon
+        className: F.guildIcon
       }), (0, r.jsxs)("div", {
-        className: Z.integrationInner,
-        children: [(0, r.jsx)(f.Text, {
+        className: F.integrationInner,
+        children: [(0, r.jsx)(_.Text, {
           variant: "text-md/semibold",
           color: "header-primary",
           children: a.guild.name
-        }), (0, r.jsx)(f.eee, {
-          href: null == (n = E.Z.get(a.type)) || null == (t = n.getPlatformUserUrl) ? true : t.call(n, a.account),
-          children: (0, r.jsx)(f.Text, {
+        }), (0, r.jsx)(_.eee, {
+          href: null == (n = b.Z.get(a.type)) || null == (t = n.getPlatformUserUrl) ? true : t.call(n, a.account),
+          children: (0, r.jsx)(_.Text, {
             variant: "text-xs/normal",
             color: "header-secondary",
             children: a.account.name
           })
         })]
       }), i]
-    }), c && (0, r.jsx)(f.Text, {
+    }), c && (0, r.jsx)(_.Text, {
       variant: "text-xs/normal",
       color: "text-danger",
-      className: Z.integrationError,
+      className: F.integrationError,
       children: s
     })]
   })
 };
 
-function K(e) {
+function z(e) {
   let {
     onDisconnect: t,
     account: n,
     theme: a,
     locale: o
-  } = e, [l, c] = i.useState(n.friendSync), [_, h] = i.useState(n.visibility), [m, g] = i.useState(n.metadataVisibility), [I, T] = i.useState(n.showActivity), [A, C] = i.useState(null), [N, R] = i.useState(null), [w, x] = i.useState(false), [G, F] = i.useState([]), H = (0, b.rR)(n.type), K = E.Z.get(H);
+  } = e, [l, c] = i.useState(n.friendSync), [p, m] = i.useState(n.visibility), [g, E] = i.useState(n.metadataVisibility), [T, S] = i.useState(n.showActivity), [C, N] = i.useState(null), [R, P] = i.useState(null), [D, M] = i.useState(false), [B, V] = i.useState([]), Y = (0, y.rR)(n.type), z = b.Z.get(Y);
   i.useEffect(() => {
-    c(n.friendSync), h(n.visibility), g(n.metadataVisibility), T(n.showActivity)
+    c(n.friendSync), m(n.visibility), E(n.metadataVisibility), S(n.showActivity)
   }, [n]);
-  let z = {
-      inProgressVisibility: A,
-      inProgressMetadataVisibility: N
+  let q = {
+      inProgressVisibility: C,
+      inProgressMetadataVisibility: R
     },
-    q = i.useRef(z);
+    X = i.useRef(q);
 
-  function X(e) {
+  function Q(e) {
     var t;
-    let n = E.Z.get(e.type),
-      i = E.Z.get(H),
-      o = "1" === (null != (t = e.metadata) ? t : {})[U.PC.TWITTER_VERIFIED],
+    let n = b.Z.get(e.type),
+      i = b.Z.get(Y),
+      o = "1" === (null != (t = e.metadata) ? t : {})[G.PC.TWITTER_VERIFIED],
       s = null;
-    return n.type === k.ABu.TWITTER && o && (s = (0, r.jsx)(f.ua7, {
-      text: B.intl.string(B.t.Jebrw8),
-      children: e => (0, r.jsx)(S.Z, Y(V({}, e), {
+    return n.type === U.ABu.TWITTER && o && (s = (0, r.jsx)(d.u, {
+      text: Z.intl.string(Z.t.Jebrw8),
+      children: (0, r.jsx)(A.Z, {
         color: u.Z.unsafe_rawColors.TWITTER.css,
-        children: (0, r.jsx)(f.kmB, {
+        children: (0, r.jsx)(_.kmB, {
           size: "xs",
           color: u.Z.unsafe_rawColors.WHITE_500.css
         })
-      }))
+      })
     })), (0, r.jsxs)("div", {
-      className: Z.connectionHeader,
+      className: F.connectionHeader,
       children: [(0, r.jsx)("img", {
         alt: i.name,
-        className: Z.connectionIcon,
-        src: (0, d.wj)(a) ? i.icon.darkSVG : i.icon.lightSVG
+        className: F.connectionIcon,
+        src: (0, f.wj)(a) ? i.icon.darkSVG : i.icon.lightSVG
       }), (0, r.jsxs)("div", {
         children: [(0, r.jsxs)("div", {
-          className: Z.connectionAccountLabelContainer,
-          children: [(0, r.jsx)(f.Text, {
+          className: F.connectionAccountLabelContainer,
+          children: [(0, r.jsx)(_.Text, {
             color: "header-primary",
             variant: "text-md/semibold",
-            className: Z.connectionAccountValue,
+            className: F.connectionAccountValue,
             children: e.name
           }), null != s && (0, r.jsx)("div", {
-            className: Z.connectionAccountLabelVerified,
+            className: F.connectionAccountLabelVerified,
             children: s
           })]
-        }), (0, r.jsx)(f.Text, {
+        }), (0, r.jsx)(_.Text, {
           variant: "text-xs/normal",
           color: "header-secondary",
-          className: Z.connectionAccountLabel,
+          className: F.connectionAccountLabel,
           children: i.name
         })]
-      }), (0, r.jsx)(f.P3F, {
-        className: Z.connectionDelete,
-        onClick: er,
-        "aria-label": B.intl.string(B.t.ppppRE),
+      }), (0, r.jsx)(_.P3F, {
+        className: F.connectionDelete,
+        onClick: ei,
+        "aria-label": Z.intl.string(Z.t.ppppRE),
         focusProps: {
           offset: {
             top: false,
@@ -204,7 +205,7 @@ function K(e) {
             right: false
           }
         },
-        children: (0, r.jsx)(f.Dio, {
+        children: (0, r.jsx)(_.Dio, {
           size: "xs",
           color: "currentColor"
         })
@@ -212,193 +213,179 @@ function K(e) {
     })
   }
 
-  function Q(e) {
-    return e.twoWayLink ? null : e.type === k.ABu.XBOX ? (0, r.jsx)("div", {
-      className: Z.upsellWrapper,
-      children: (0, r.jsx)(M.Y, {})
-    }) : e.type === k.ABu.PLAYSTATION ? (0, r.jsx)("div", {
-      className: Z.upsellWrapper,
+  function J(e) {
+    return e.twoWayLink ? null : e.type === U.ABu.XBOX ? (0, r.jsx)("div", {
+      className: F.upsellWrapper,
+      children: (0, r.jsx)(k.Y, {})
+    }) : e.type === U.ABu.PLAYSTATION ? (0, r.jsx)("div", {
+      className: F.upsellWrapper,
       children: (0, r.jsx)(j.t, {})
     }) : null
   }
 
-  function J(e) {
+  function $(e) {
     var t;
     let n = null != (t = e.metadata) ? t : {},
       i = null,
-      a = (0, y.FI)(n[U.PC.CREATED_AT], o);
+      a = (0, O.FI)(n[G.PC.CREATED_AT], o);
     switch (e.type) {
-      case k.ABu.REDDIT:
-        i = (0, v.oP)(n, Z.metadataItem);
+      case U.ABu.REDDIT:
+        i = (0, I.oP)(n, F.metadataItem);
         break;
-      case k.ABu.STEAM:
-        i = (0, v.Dq)(n, Z.metadataItem);
+      case U.ABu.STEAM:
+        i = (0, I.Dq)(n, F.metadataItem);
         break;
-      case k.ABu.BLUESKY:
-      case k.ABu.TWITTER:
-      case k.ABu.MASTODON:
-        i = (0, v.rJ)(n, Z.metadataItem);
+      case U.ABu.BLUESKY:
+      case U.ABu.TWITTER:
+      case U.ABu.MASTODON:
+        i = (0, I.rJ)(n, F.metadataItem);
         break;
-      case k.ABu.EBAY:
-        i = (0, v.ul)(n, Z.metadataItem);
+      case U.ABu.EBAY:
+        i = (0, I.ul)(n, F.metadataItem);
         break;
-      case k.ABu.PAYPAL:
-        i = (0, v.li)(n, Z.metadataItem);
+      case U.ABu.PAYPAL:
+        i = (0, I.li)(n, F.metadataItem);
         break;
-      case k.ABu.TIKTOK:
-        i = (0, v.hf)(n, Z.metadataItem)
+      case U.ABu.TIKTOK:
+        i = (0, I.hf)(n, F.metadataItem)
     }
-    null !== a && (null == i && (i = []), null == i || i.push((0, r.jsx)(f.Text, {
+    null !== a && (null == i && (i = []), null == i || i.push((0, r.jsx)(_.Text, {
       variant: "text-xs/normal",
       color: "text-secondary",
-      className: Z.connectedAccountVanityMetadataCreatedAt,
-      children: B.intl.format(B.t["9rfonp"], {
+      className: F.connectedAccountVanityMetadataCreatedAt,
+      children: Z.intl.format(Z.t["9rfonp"], {
         date: a
       })
     }, "member-since")));
-    let s = G.includes(e.id),
-      l = B.intl.string(B.t.wzzjk5);
+    let s = B.includes(e.id),
+      l = Z.intl.string(Z.t.wzzjk5);
     if (null == i || 0 === i.length)
-      if (true !== E.Z.get(e.type).hasMetadata) return null;
-      else i = [(0, r.jsx)(f.IGR, {
-        className: Z.connectionMetadataUpsellTag,
-        text: B.intl.string(B.t.y2b7CA)
-      }, "badge"), (0, r.jsx)(f.Text, {
+      if (true !== b.Z.get(e.type).hasMetadata) return null;
+      else i = [(0, r.jsx)(_.IGR, {
+        className: F.connectionMetadataUpsellTag,
+        text: Z.intl.string(Z.t.y2b7CA)
+      }, "badge"), (0, r.jsx)(_.Text, {
         variant: "text-xs/normal",
-        className: Z.connectionMetadataUpsellDescription,
-        children: B.intl.format(B.t.Up2ni4, {
-          helpdeskUrl: P.Z.getArticleURL(k.BhN.CONNECTION_DETAILS)
+        className: F.connectionMetadataUpsellDescription,
+        children: Z.intl.format(Z.t.Up2ni4, {
+          helpdeskUrl: w.Z.getArticleURL(U.BhN.CONNECTION_DETAILS)
         })
-      }, "label")], l = B.intl.string(B.t["LVh3//"]);
-    return s && (l = B.intl.string(B.t.i4jeWV)), i.push((0, r.jsx)("div", {
-      className: Z.metadataRefreshButton,
-      children: (0, r.jsx)(f.zxk, {
+      }, "label")], l = Z.intl.string(Z.t["LVh3//"]);
+    return s && (l = Z.intl.string(Z.t.i4jeWV)), i.push((0, r.jsx)("div", {
+      className: F.metadataRefreshButton,
+      children: (0, r.jsx)(_.zxk, {
         text: l,
         variant: "secondary",
         size: "sm",
-        loading: w,
+        loading: D,
         disabled: s,
-        "aria-label": B.intl.string(B.t.sCkLYG),
+        "aria-label": Z.intl.string(Z.t.sCkLYG),
         onClick: s ? true : () => {
-          x(true), p.Z.refresh(e.type, e.id).finally(() => {
+          M(true), h.Z.refresh(e.type, e.id).finally(() => {
             setTimeout(() => {
-              G.push(e.id), F(G), x(false)
+              B.push(e.id), V(B), M(false)
             }, 2e3)
           })
         }
       })
     }, "refresh-button")), (0, r.jsx)("div", {
-      className: Z.metadataContainer,
+      className: F.metadataContainer,
       children: i
     })
   }
 
-  function $(e) {
+  function ee(e) {
     var t;
     let i, a, o;
-    return k.BFP.has(n.type) && (i = (0, r.jsx)(f.rsf, {
-      label: B.intl.string(B.t["+KCMSk"]),
+    return U.BFP.has(n.type) && (i = (0, r.jsx)(_.rsf, {
+      label: Z.intl.string(Z.t["+KCMSk"]),
       checked: l,
-      onChange: eo
-    })), k.vbS.has(n.type) && (a = (0, r.jsx)(f.rsf, {
-      label: B.intl.format(B.t["6u6J0t"], {
+      onChange: es
+    })), U.vbS.has(n.type) && (a = (0, r.jsx)(_.rsf, {
+      label: Z.intl.format(Z.t["6u6J0t"], {
         platform: e.name
       }),
-      checked: I,
-      onChange: es
-    })), (null == (t = E.Z.get(n.type)) ? true : t.hasMetadata) === true && (o = (0, r.jsx)(f.rsf, {
-      label: B.intl.string(B.t.FYKGsL),
-      checked: 1 === m,
-      onChange: ea,
-      disabled: 1 !== _ || null == n.metadata
+      checked: T,
+      onChange: el
+    })), (null == (t = b.Z.get(n.type)) ? true : t.hasMetadata) === true && (o = (0, r.jsx)(_.rsf, {
+      label: Z.intl.string(Z.t.FYKGsL),
+      checked: 1 === g,
+      onChange: eo,
+      disabled: 1 !== p || null == n.metadata
     })), (0, r.jsxs)("div", {
-      className: Z.connectionOptions,
-      children: [(0, r.jsx)(f.rsf, {
-        label: B.intl.string(B.t.f7yOAQ),
-        checked: 1 === _,
-        onChange: ei
+      className: F.connectionOptions,
+      children: [(0, r.jsx)(_.rsf, {
+        label: Z.intl.string(Z.t.f7yOAQ),
+        checked: 1 === p,
+        onChange: ea
       }), o, a, i]
     })
   }
 
-  function ee() {
+  function et() {
     return n.revoked ? (0, r.jsx)("div", {
-      className: Z.integrationsWrapper,
-      children: (0, r.jsx)(f.R94, {
-        className: Z.integrationRevoked,
-        children: B.intl.format(B.t["6C4lgI"], {
-          onReconnect: en
+      className: F.integrationsWrapper,
+      children: (0, r.jsx)(_.R94, {
+        className: F.integrationRevoked,
+        children: Z.intl.format(Z.t["6C4lgI"], {
+          onReconnect: er
         })
       })
     }) : n.integrations.length > 0 ? (0, r.jsxs)("div", {
-      className: Z.integrationsWrapper,
-      children: [(0, r.jsx)(f.vwX, {
-        children: (0, r.jsx)(f.Text, {
+      className: F.integrationsWrapper,
+      children: [(0, r.jsx)(_.vwX, {
+        children: (0, r.jsx)(_.Text, {
           variant: "text-xs/semibold",
-          children: B.intl.string(B.t.fOe3fX)
+          children: Z.intl.string(Z.t.fOe3fX)
         })
       }), (0, r.jsx)("div", {
-        children: n.integrations.map(e => (0, r.jsx)(W, {
+        children: n.integrations.map(e => (0, r.jsx)(K, {
           integration: e
         }, e.id))
       })]
     }) : true
   }
 
-  function et() {
-    if (n.revoked || n.integrations.length > 0) return (0, r.jsx)(f.izJ, {
-      className: Z.connectedAccountSeparator
+  function en() {
+    if (n.revoked || n.integrations.length > 0) return (0, r.jsx)(_.izJ, {
+      className: F.connectedAccountSeparator
     })
   }
 
-  function en() {
-    (0, O.Z)({
+  function er() {
+    (0, v.Z)({
       platformType: n.type,
       location: "User Settings"
     })
   }
 
-  function er() {
-    let e = E.Z.get(n.type);
-    (0, f.h7j)(i => (0, r.jsx)(s.Modal, Y(V({
-      title: B.intl.formatToPlainString(B.t.U5x12d, {
+  function ei() {
+    let e = b.Z.get(n.type);
+    (0, _.h7j)(i => (0, r.jsx)(s.Modal, W(H({
+      title: Z.intl.formatToPlainString(Z.t.U5x12d, {
         name: e.name
       }),
-      subtitle: B.intl.format(B.t.VgqIPj, {
+      subtitle: Z.intl.format(Z.t.VgqIPj, {
         provider: e.name
       }),
       actions: [{
-        text: B.intl.string(B.t["ETE/oK"]),
+        text: Z.intl.string(Z.t["ETE/oK"]),
         onClick: i.onClose,
         variant: "secondary"
       }, {
-        text: B.intl.string(B.t.bsbMV1),
+        text: Z.intl.string(Z.t.bsbMV1),
         onClick: () => {
           t(), i.onClose()
         },
         variant: "primary"
       }]
     }, i), {
-      children: (0, D.Z)(n) && (0, r.jsx)(L.Z, {
-        children: B.intl.format(B.t.COW3Xl, {
+      children: (0, L.Z)(n) && (0, r.jsx)(x.Z, {
+        children: Z.intl.format(Z.t.COW3Xl, {
           platformName: e.name
         })
       })
     })))
-  }
-
-  function ei(e) {
-    let {
-      verified: t
-    } = n, r = +!!e;
-    if (e && !t) {
-      C(r), (0, O.Z)({
-        platformType: n.type,
-        location: "User Settings"
-      });
-      return
-    }
-    h(r), p.Z.setVisibility(n.type, n.id, r)
   }
 
   function ea(e) {
@@ -406,38 +393,52 @@ function K(e) {
       verified: t
     } = n, r = +!!e;
     if (e && !t) {
-      R(r), (0, O.Z)({
+      N(r), (0, v.Z)({
         platformType: n.type,
         location: "User Settings"
       });
       return
     }
-    g(r), p.Z.setMetadataVisibility(n.type, n.id, r)
+    m(r), h.Z.setVisibility(n.type, n.id, r)
   }
 
   function eo(e) {
-    c(e), p.Z.setFriendSync(n.type, n.id, e)
+    let {
+      verified: t
+    } = n, r = +!!e;
+    if (e && !t) {
+      P(r), (0, v.Z)({
+        platformType: n.type,
+        location: "User Settings"
+      });
+      return
+    }
+    E(r), h.Z.setMetadataVisibility(n.type, n.id, r)
   }
 
   function es(e) {
-    T(e), p.Z.setShowActivity(n.type, n.id, e)
+    c(e), h.Z.setFriendSync(n.type, n.id, e)
+  }
+
+  function el(e) {
+    S(e), h.Z.setShowActivity(n.type, n.id, e)
   }
   return i.useEffect(() => {
-    q.current = z
+    X.current = q
   }), i.useEffect(() => {
     if (false === n.verified) return;
     let {
       inProgressVisibility: e,
       inProgressMetadataVisibility: t
-    } = q.current;
-    null != e && (h(e), p.Z.setVisibility(n.type, n.id, e), C(null)), null != t && (g(t), p.Z.setMetadataVisibility(n.type, n.id, t), R(null))
+    } = X.current;
+    null != e && (m(e), h.Z.setVisibility(n.type, n.id, e), N(null)), null != t && (E(t), h.Z.setMetadataVisibility(n.type, n.id, t), P(null))
   }, [n]), (0, r.jsxs)("div", {
-    className: Z.connection,
-    children: [X(n), Q(n), J(n), $(K), et(), ee()]
+    className: F.connection,
+    children: [Q(n), J(n), $(n), ee(z), en(), et()]
   })
 }
 
-function z() {
+function q() {
   return Chunk647438.useEffect(() => () => {
     (0, Chunk266454.Q3)(Chunk704215.z.NEW_CRUNCHYROLL_CONNECTION, {
       dismissAction: Chunk921944.L.AUTO
@@ -447,66 +448,58 @@ function z() {
     description: Chunk388032.intl.format(Chunk388032.t["oYc+Gx"], {
       privacyPolicyUrl: Chunk981631.EYA.PRIVACY
     }),
-    children: (0, Chunk951288.jsx)(X, {})
+    children: (0, Chunk951288.jsx)(Q, {})
   })
 }
 
-function q(e) {
-  let t = E.Z.get(e);
-  (0, O.Z)({
+function X(e) {
+  let t = b.Z.get(e);
+  (0, v.Z)({
     platformType: t.type
-  }), R.default.track(k.rMx.ACCOUNT_LINK_STEP, {
+  }), P.default.track(U.rMx.ACCOUNT_LINK_STEP, {
     previous_step: "desktop connections",
     current_step: "desktop oauth",
     platform_type: t.type
   })
 }
 
-function X() {
+function Q() {
   function e() {
     Chunk570140.Z.dispatch({
       type: "CONNECTIONS_GRID_MODAL_SHOW",
-      onComplete: q
+      onComplete: X
     })
   }
   let t = (0, Chunk122021.fq)();
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk11049.connectionsContainer,
-    children: [exports.slice(0, 10).map(e => (0, r.jsx)(m.Z, {
+    children: [exports.slice(0, 10).map(e => (0, r.jsx)(g.Z, {
       type: e.type,
-      className: Z.__invalid_accountButton,
-      innerClassName: Z.accountButtonInner
-    }, e.type)), (0, Chunk951288.jsx)(Chunk481060.ua7, {
+      className: F.__invalid_accountButton,
+      innerClassName: F.accountButtonInner
+    }, e.type)), (0, Chunk951288.jsx)(Chunk28664.u, {
       text: Chunk388032.intl.string(Chunk388032.t.QqTz8f),
-      children: t => {
-        let {
-          onMouseEnter: n,
-          onMouseLeave: i
-        } = t;
-        return (0, r.jsx)("div", {
-          className: o()(Z.accountAddWrapper, Z.__invalid_accountButton),
-          children: (0, r.jsx)(f.tEY, {
-            children: (0, r.jsx)("button", {
-              onMouseEnter: n,
-              onMouseLeave: i,
-              className: o()(Z.accountAddInner, Z.accountButtonInner),
-              type: "button",
-              onClick: e,
-              "aria-label": B.intl.string(B.t.Zhcj9f),
-              children: (0, r.jsx)(f.Fbu, {
-                color: "currentColor",
-                size: "md",
-                "aria-label": B.intl.string(B.t.QqTz8f)
-              })
+      children: (0, Chunk951288.jsx)("div", {
+        className: o()(Chunk11049.accountAddWrapper, Chunk11049.__invalid_accountButton),
+        children: (0, Chunk951288.jsx)(Chunk481060.tEY, {
+          children: (0, Chunk951288.jsx)("button", {
+            className: o()(Chunk11049.accountAddInner, Chunk11049.accountButtonInner),
+            type: "button",
+            onClick: module,
+            "aria-label": Chunk388032.intl.string(Chunk388032.t.Zhcj9f),
+            children: (0, Chunk951288.jsx)(Chunk481060.Fbu, {
+              color: "currentColor",
+              size: "md",
+              "aria-label": Chunk388032.intl.string(Chunk388032.t.QqTz8f)
             })
           })
         })
-      }
+      })
     })]
   })
 }
 
-function Q(e) {
+function J(e) {
   let t, {
     fetching: n,
     accounts: i,
@@ -519,27 +512,27 @@ function Q(e) {
       type: t,
       id: n
     } = e;
-    p.Z.disconnect(t, n)
+    h.Z.disconnect(t, n)
   }
-  return t = n ? (0, r.jsx)(f.$jN, {
-    type: f.$jN.Type.SPINNING_CIRCLE
-  }) : 0 === i.length ? (0, r.jsx)(f.ubH, {
+  return t = n ? (0, r.jsx)(_.$jN, {
+    type: _.$jN.Type.SPINNING_CIRCLE
+  }) : 0 === i.length ? (0, r.jsx)(_.ubH, {
     theme: a,
-    children: (0, r.jsx)(f.OZU, {
-      note: B.intl.string(B.t.WenGZ2),
-      children: B.intl.string(B.t["aoLS8/"])
+    children: (0, r.jsx)(_.OZU, {
+      note: Z.intl.string(Z.t.WenGZ2),
+      children: Z.intl.string(Z.t["aoLS8/"])
     })
-  }) : i.filter(e => E.Z.isSupported(e.type)).map((e, t) => (0, r.jsx)(K, {
+  }) : i.filter(e => b.Z.isSupported(e.type)).map((e, t) => (0, r.jsx)(z, {
     theme: a,
     account: e,
     locale: o,
     onDisconnect: () => s(e)
   }, t)), (0, r.jsx)("div", {
-    className: Z.connectionList,
+    className: F.connectionList,
     children: t
   })
 }
-let J = () => {
+let $ = () => {
   let e = (0, Chunk442837.e7)([Chunk246946.Z], () => Chunk246946.Z.hidePersonalInformation),
     t = (0, Chunk442837.e7)([Chunk553795.Z], () => Chunk553795.Z.isFetching()),
     n = (0, Chunk442837.e7)([Chunk553795.Z], () => Chunk553795.Z.getAccounts()),
@@ -549,9 +542,9 @@ let J = () => {
     Chunk457330.Z.fetch()
   }, []), module) ? (0, Chunk951288.jsx)(Chunk497321.Z, {}) : (0, Chunk951288.jsxs)(Chunk273313.Z, {
     title: Chunk388032.intl.string(Chunk388032.t["3fe7U1"]),
-    children: [(0, Chunk951288.jsx)(z, {}), (0, Chunk951288.jsx)(Chunk481060.izJ, {
+    children: [(0, Chunk951288.jsx)(q, {}), (0, Chunk951288.jsx)(Chunk481060.izJ, {
       gap: 24
-    }), (0, Chunk951288.jsx)(Q, {
+    }), (0, Chunk951288.jsx)(J, {
       fetching: exports,
       accounts: require,
       theme: Chunk120356,

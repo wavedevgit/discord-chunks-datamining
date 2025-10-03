@@ -1,4 +1,4 @@
-/** Chunk was on 9665 **/
+/** Chunk was on 50118 **/
 /** chunk id: 817608, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -23,12 +23,12 @@ function h(e) {
     moderatorReport: f
   } = h, m = null == f ? true : f.reported_user_id, g = (0, l.e7)([o.default], () => null != m ? o.default.getUser(m) : null), b = (0, l.e7)([a.Z], () => a.Z.getGuild(t.guild_id));
   (0, s.Cv)(n);
-  let y = (0, c.Z)({
+  let C = (0, c.Z)({
       channel: t,
       user: g,
       guild: b
     }),
-    C = (0, d.Z)({
+    y = (0, d.Z)({
       channel: t,
       user: g,
       guild: b
@@ -38,13 +38,13 @@ function h(e) {
       message: n,
       user: g,
       guild: b
-    }), y, C, (0, p.Z)({
+    }), C, y, (0, p.Z)({
       channel: t,
       user: g,
       guild: b
     })].filter(e => null != e);
-  return t.isModeratorReportChannel() && 0 !== _.length ? (0, r.jsx)(r.Fragment, {
-    children: _.map((e, t) => (0, r.jsx)(i.Fragment, {
+  return t.isModeratorReportChannel() && 0 !== _.length ? (0, i.jsx)(i.Fragment, {
+    children: _.map((e, t) => (0, i.jsx)(r.Fragment, {
       children: e
     }, t))
   }) : null
@@ -55,11 +55,11 @@ function f(e) {
     message: t,
     channel: n
   } = e;
-  return (0, r.jsx)(r.Fragment, {
-    children: t.messageSnapshots.map((e, i) => (0, r.jsx)(h, {
+  return (0, i.jsx)(i.Fragment, {
+    children: t.messageSnapshots.map((e, r) => (0, i.jsx)(h, {
       channel: n,
       message: t,
       snapshot: e
-    }, i))
+    }, r))
   })
 }

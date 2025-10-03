@@ -94,8 +94,8 @@ let A = {},
       message_notifications: Chunk981631.bL.ONLY_MENTIONS
     })
   },
-  j = {},
   M = {},
+  j = {},
   k = "null",
   U = new Set,
   G = new Set,
@@ -112,12 +112,12 @@ function F(e, t) {
     });
   w.clearTimer(e), a().forEach(i, e => {
     D.clearTimer(e.channel_id)
-  }), V(e, s), A[e] = s, j[e] = ef(A[e]);
+  }), V(e, s), A[e] = s, M[e] = ef(A[e]);
   let l = a().filter(s.channel_overrides, e => {
     var t;
     return _.yE(null != (t = e.flags) ? t : 0, O.ic.OPT_IN_ENABLED)
   });
-  M[e] = new Set(l.map(e => e.channel_id)), H(e), delete C[e]
+  j[e] = new Set(l.map(e => e.channel_id)), H(e), delete C[e]
 }
 
 function V(e, t) {
@@ -144,7 +144,7 @@ function V(e, t) {
 function H(e) {
   var t;
   if (null == e) return;
-  let n = new Set(M[e]),
+  let n = new Set(j[e]),
     r = null != (t = B[e]) ? t : {};
   for (let e in r) {
     let t = r[e];
@@ -215,7 +215,7 @@ function J(e) {
 }
 
 function $(e) {
-  null != e.userGuildSettings && 0 !== e.userGuildSettings.length && (A = {}, j = {}, M = {}, e.userGuildSettings.forEach(e => {
+  null != e.userGuildSettings && 0 !== e.userGuildSettings.length && (A = {}, M = {}, j = {}, e.userGuildSettings.forEach(e => {
     let t = e.guild_id;
     A[t] = e;
     let n = new Set,
@@ -225,12 +225,12 @@ function $(e) {
       let a = e.channel_overrides[t];
       (0, l.m$)(a) && n.add(t), _.yE(null != (i = a.flags) ? i : 0, O.ic.OPT_IN_ENABLED) && r.add(t)
     }
-    j[t] = n, M[t] = r
+    M[t] = n, j[t] = r
   }))
 }
 
 function ee(e) {
-  er(e.notificationSettings), w.reset(), D.reset(), e.userGuildSettings.partial || (A = {}, j = {}, M = {});
+  er(e.notificationSettings), w.reset(), D.reset(), e.userGuildSettings.partial || (A = {}, M = {}, j = {});
   let t = new Set;
   for (let n in e.userGuildSettings.entries.forEach(e => {
       let n = e;
@@ -246,10 +246,10 @@ function et(e) {
     mutedChannels: r,
     optedInChannelsByGuild: i
   } = t;
-  A = I({}, n), j = {}, M = {}, p.default.keys(r).forEach(e => {
-    j[e] = new Set(r[e])
+  A = I({}, n), M = {}, j = {}, p.default.keys(r).forEach(e => {
+    M[e] = new Set(r[e])
   }), p.default.keys(i).forEach(e => {
-    M[e] = new Set(i[e])
+    j[e] = new Set(i[e])
   })
 }
 
@@ -360,8 +360,8 @@ class eh extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     if (this.waitFor(g.default, m.Z, c.Z, d.Z), null != e) {
       var t, n;
-      N = null != (t = e.useNewNotifications) && t, "userGuildSettings" in e && (A = e.userGuildSettings, M = a().mapValues(null != (n = e.optedInChannelsByGuild) ? n : {}, e => new Set(e)), a().forEach(A, (e, t) => {
-        j[t] = ef(e)
+      N = null != (t = e.useNewNotifications) && t, "userGuildSettings" in e && (A = e.userGuildSettings, j = a().mapValues(null != (n = e.optedInChannelsByGuild) ? n : {}, e => new Set(e)), a().forEach(A, (e, t) => {
+        M[t] = ef(e)
       }))
     }
   }
@@ -419,7 +419,7 @@ class eh extends(r = Chunk442837.ZP.PersistedStore) {
   }
   getMutedChannels(e) {
     var t;
-    return null != (t = j[e]) ? t : U
+    return null != (t = M[e]) ? t : U
   }
   isChannelMuted(e, t) {
     var n;
@@ -468,8 +468,8 @@ class eh extends(r = Chunk442837.ZP.PersistedStore) {
   getAllSettings() {
     return {
       userGuildSettings: A,
-      mutedChannels: j,
-      optedInChannelsByGuild: M
+      mutedChannels: M,
+      optedInChannelsByGuild: j
     }
   }
   getChannelIdFlags(e, t) {
@@ -508,7 +508,7 @@ class eh extends(r = Chunk442837.ZP.PersistedStore) {
   }
   getOptedInChannels(e) {
     var t, n;
-    return c.Z.isFullServerPreview(e) ? null != (t = c.Z.getViewingChannels(e)) ? t : G : null != (n = M[e]) ? n : G
+    return c.Z.isFullServerPreview(e) ? null != (t = c.Z.getViewingChannels(e)) ? t : G : null != (n = j[e]) ? n : G
   }
   getOptedInChannelsWithPendingUpdates(e) {
     return Z[e]
@@ -543,7 +543,7 @@ class eh extends(r = Chunk442837.ZP.PersistedStore) {
   }
   getAddedToMessages() {
     var e;
-    return null != (e = M[k]) ? module : G
+    return null != (e = j[k]) ? module : G
   }
   get accountNotificationSettings() {
     return P

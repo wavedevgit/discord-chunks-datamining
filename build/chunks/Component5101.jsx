@@ -1,4 +1,4 @@
-/** Chunk was on 9665 **/
+/** Chunk was on 50118 **/
 /** chunk id: 5101, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   F: () => u,
@@ -18,8 +18,8 @@ function d(e) {
     transitionState: t,
     onClose: n,
     handleResolveFlag: d
-  } = e, [p, h] = i.useState(false);
-  return (0, r.jsx)(l.Modal, {
+  } = e, [p, h] = r.useState(false);
+  return (0, i.jsx)(l.Modal, {
     transitionState: t,
     onClose: n,
     title: c.intl.string(s.default["8R4eur"]),
@@ -30,7 +30,7 @@ function d(e) {
         p && a.K.set(u, true), n(), d()
       }
     }],
-    actionBarInput: (0, r.jsx)(o.XZJ, {
+    actionBarInput: (0, i.jsx)(o.XZJ, {
       checked: p,
       onChange: e => h(e),
       label: c.intl.string(s.default["3puq5e"])

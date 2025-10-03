@@ -20,9 +20,9 @@ let o = e => {
       maxTaxLength: p,
       maxTags: f,
       disabled: h,
-      placeholder: b
+      placeholder: x
     } = e,
-    x = function(e, t) {
+    b = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -37,16 +37,16 @@ let o = e => {
       }
       return i
     }(e, ["tags", "tagsLabel", "value", "onRemoveTag", "onAddTag", "onAddTagError", "maxTaxLength", "maxTags", "disabled", "placeholder"]);
-  let [j, v] = i.useState(null != d ? d : ""), _ = i.useCallback(() => {
+  let [j, _] = i.useState(null != d ? d : ""), v = i.useCallback(() => {
     let e = j.trim();
     if (0 !== e.length) {
       if (null != f && o.length >= f) {
         null == g || g(a.intl.string(a.t.Xx7XeH));
         return
       }
-      m(e), v("")
+      m(e), _("")
     }
-  }, [j, f, m, g, o.length]), O = i.useCallback(e => {
+  }, [j, f, m, g, o.length]), C = i.useCallback(e => {
     switch (e.keyCode) {
       case s.yXg.BACKSPACE:
         0 === j.length && o.length > 0 && (e.preventDefault(), e.stopPropagation(), null == u || u(new Set([o[o.length - 1].id])));
@@ -54,9 +54,9 @@ let o = e => {
       case s.yXg.ENTER:
       case s.yXg.TAB:
       case s.yXg.COMMA:
-        e.preventDefault(), e.stopPropagation(), _()
+        e.preventDefault(), e.stopPropagation(), v()
     }
-  }, [_, j.length, u, o]);
+  }, [v, j.length, u, o]);
   return (0, r.jsx)(l.oil, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -81,14 +81,14 @@ let o = e => {
       items: o,
       onRemove: u
     }
-  }, x), n = n = {
+  }, b), n = n = {
     value: j,
-    onKeyDown: O,
-    onChange: v,
+    onKeyDown: C,
+    onChange: _,
     maxLength: p,
     disabled: h,
-    onBlur: _,
-    placeholder: b
+    onBlur: v,
+    placeholder: x
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {

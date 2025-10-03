@@ -1,4 +1,4 @@
-/** Chunk was on 9665 **/
+/** Chunk was on 50118 **/
 /** chunk id: 453470, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   M: () => x
@@ -28,7 +28,7 @@ function x(e) {
     channelId: t,
     warningId: x,
     senderId: O
-  } = e, j = (0, y.E4)(), E = i.useCallback(() => {
+  } = e, j = (0, C.E4)(), E = r.useCallback(() => {
     (0, p.T)(t, [x])
   }, [t, x]), S = (0, b.t)({
     location: _.zr
@@ -43,8 +43,8 @@ function x(e) {
       cta: e
     }), E()
   };
-  return (i.useEffect(() => {
-    S && ((0, f.MC)(C.rMx.SAFETY_WARNING_VIEWED, {
+  return (r.useEffect(() => {
+    S && ((0, f.MC)(y.rMx.SAFETY_WARNING_VIEWED, {
       channelId: t,
       warningId: x,
       senderId: O,
@@ -52,7 +52,7 @@ function x(e) {
     }), s.Z.increment({
       name: l.V.SAFETY_WARNING_VIEW
     }))
-  }, [t, x, O, S]), S) ? (0, r.jsx)(m.Q, {
+  }, [t, x, O, S]), S) ? (0, i.jsx)(m.Q, {
     channelId: t,
     warningId: x,
     senderId: O,
@@ -70,23 +70,23 @@ function x(e) {
           } = await n.e("59385").then(n.bind(n, 480884));
           return n => {
             let {
-              transitionState: i,
+              transitionState: r,
               onClose: l
             } = n;
-            return (0, r.jsx)(e, {
-              transitionState: i,
+            return (0, i.jsx)(e, {
+              transitionState: r,
               onClose: l,
               channelId: t,
               warningId: x,
               senderId: O,
               description: v.intl.string(v.t["/uid3t"]),
-              safetyTipRows: j.map((e, t) => (0, r.jsx)(u.q, {
+              safetyTipRows: j.map((e, t) => (0, i.jsx)(u.q, {
                 listType: "numbered",
                 index: t,
                 title: e.title,
                 description: e.description
               }, t)),
-              actionRows: [(0, r.jsx)(d.JZ, {
+              actionRows: [(0, i.jsx)(d.JZ, {
                 title: v.intl.string(v.t.ftIK2N),
                 description: v.intl.string(v.t.w2ve0t),
                 buttonText: v.intl.string(v.t.ftIK2N),
@@ -94,7 +94,7 @@ function x(e) {
                   P(f.NM.USER_MODAL_MUTE), l()
                 }
               }, "likely-ato-mute")],
-              learnMore: (0, r.jsx)(a.P3F, {
+              learnMore: (0, i.jsx)(a.P3F, {
                 onClick: () => (0, f.qc)({
                   channelId: t,
                   warningId: x,
@@ -102,11 +102,11 @@ function x(e) {
                   warningType: h.pj.LIKELY_ATO,
                   cta: f.NM.USER_MODAL_LEARN_MORE
                 }),
-                children: (0, r.jsx)(a.X6q, {
+                children: (0, i.jsx)(a.X6q, {
                   variant: "heading-sm/medium",
                   color: "text-link",
                   children: v.intl.format(v.t.UkH129, {
-                    learnMoreLink: y.D8
+                    learnMoreLink: C.D8
                   })
                 })
               })

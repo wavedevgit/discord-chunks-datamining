@@ -43,19 +43,19 @@ function A(e) {
     isFullScreen: A,
     scrollerRef: R,
     tab: Z
-  } = e, w = (0, g.sp)(), F = null != (t = null == w ? true : w.sessionId) ? t : "", {
-    noCache: H,
-    includeUnpublished: M
-  } = (0, S.Z)(), D = (0, s.e7)([u.default], () => u.default.getCurrentUser()), W = (0, s.e7)([p.Z], () => p.Z.productsWithVariantsAsGroup), [U, V] = l.useState(1), z = (0, c.Fg)(), G = (0, i.ap)(z), [K, q, Y] = l.useMemo(() => {
+  } = e, w = (0, g.sp)(), H = null != (t = null == w ? true : w.sessionId) ? t : "", {
+    noCache: F,
+    includeUnpublished: D
+  } = (0, S.Z)(), M = (0, s.e7)([u.default], () => u.default.getCurrentUser()), W = (0, s.e7)([p.Z], () => p.Z.productsWithVariantsAsGroup), [U, V] = l.useState(1), z = (0, c.Fg)(), G = (0, i.ap)(z), [K, q, Y] = l.useMemo(() => {
     switch (Z) {
       case v.AW.AVATAR_DECORATIONS:
-        return [O.intl.string(O.t.dRZYND), G ? k.Z : j.Z, a.Z.AVATAR_DECORATION];
+        return [O.intl.string(O.t.dRZYND), G ? k.Z : L.Z, a.Z.AVATAR_DECORATION];
       case v.AW.PROFILE_EFFECTS:
         return [O.intl.string(O.t["1cNjt7"]), G ? B.Z : N.Z, a.Z.PROFILE_EFFECT];
       case v.AW.NAMEPLATES:
         return [O.intl.string(O.t.V68Fq6), G ? P.Z : I.Z, a.Z.NAMEPLATE];
       case v.AW.BUNDLES:
-        return [O.intl.string(O.t.FYFppq), G ? L.Z : y.Z, a.Z.BUNDLE]
+        return [O.intl.string(O.t.FYFppq), G ? j.Z : y.Z, a.Z.BUNDLE]
     }
   }, [Z, G]), X = (0, C.a)(), Q = l.useMemo(() => X(W.filter(e => {
     var t;
@@ -63,27 +63,27 @@ function A(e) {
   })), [W, Y, X]), J = (0, _.l)(Q);
   l.useEffect(() => {
     (0, h.n)({
-      sessionId: F,
+      sessionId: H,
       checkpoint: h.a.SHOP_MOUNTED,
       tab: Z,
       isFullScreen: A,
-      unpublishedCategoriesShown: M,
-      cacheDisabled: H
+      unpublishedCategoriesShown: D,
+      cacheDisabled: F
     })
   }, []), l.useEffect(() => {
     n || (0, h.n)({
-      sessionId: F,
+      sessionId: H,
       checkpoint: h.a.SHOP_RENDERED,
       tab: Z,
       isFullScreen: A,
-      unpublishedCategoriesShown: M,
-      cacheDisabled: H
+      unpublishedCategoriesShown: D,
+      cacheDisabled: F
     })
-  }, [F, A, M, H, n, Z]);
+  }, [H, A, D, F, n, Z]);
   let $ = f.Z.useConfig({
     location: "CollectiblesFilterableShop"
   }).showCardsV2;
-  return n || null == D ? (0, r.jsx)(m.Z, {}) : (0, r.jsxs)(r.Fragment, {
+  return n || null == M ? (0, r.jsx)(m.Z, {}) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       style: {
         backgroundImage: "url(".concat(q, ")")
@@ -105,7 +105,7 @@ function A(e) {
             skuId: e.skuId
           }, e.skuId) : (0, r.jsx)(b.Z, {
             product: e,
-            user: D,
+            user: M,
             category: n,
             tab: Z
           }, e.skuId)

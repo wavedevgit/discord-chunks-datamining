@@ -37,23 +37,23 @@ function C(e) {
   let {
     user: t,
     guildId: C,
-    channelId: w,
-    messageId: _,
+    channelId: _,
+    messageId: w,
     roleId: D,
     sessionId: R,
     transitionState: L,
     openedAt: M,
     onClose: U,
     sourceAnalyticsLocations: k = []
-  } = e, B = C === P.ME ? true : C, F = (0, p.ZP)(t.id, B), V = u.ZP.getName(B, w, t), G = (0, c.Dt)(), {
+  } = e, B = C === N.ME ? true : C, F = (0, p.ZP)(t.id, B), V = u.ZP.getName(B, _, t), G = (0, c.Dt)(), {
     analyticsLocations: z
   } = (0, a.ZP)([...k, s.Z.USER_PROFILE_MODAL]), K = (0, m.ZB)({
     layout: "MODAL",
     userId: t.id,
     sourceSessionId: R,
     guildId: B,
-    channelId: w,
-    messageId: _,
+    channelId: _,
+    messageId: w,
     roleId: D
   }), W = i.useRef(null), Y = (0, o.Z)(W);
   return (0, l.jsx)(a.Gt, {
@@ -75,7 +75,7 @@ function C(e) {
           component: (0, l.jsx)(r.nn4, {
             children: (0, l.jsx)(r.H, {
               id: G,
-              children: T.intl.format(T.t.KRe1Fh, {
+              children: P.intl.format(P.t.KRe1Fh, {
                 name: V
               })
             })
@@ -83,25 +83,25 @@ function C(e) {
           children: (0, l.jsxs)(b.Z, {
             user: t,
             displayProfile: F,
-            themeType: N.l.MODAL,
+            themeType: T.l.MODAL,
             ref: (null == F ? true : F.profileEffect) != null ? W : true,
-            children: [(0, l.jsx)(I.Z, {
-              children: (0, l.jsx)(O.Z, {
+            children: [(0, l.jsx)(Z.Z, {
+              children: (0, l.jsx)(I.Z, {
                 user: t
               })
             }), (0, l.jsxs)("div", {
-              children: [(0, l.jsx)(j.Z, {
+              children: [(0, l.jsx)(x.Z, {
                 user: t,
                 displayProfile: F,
-                themeType: N.l.MODAL
+                themeType: T.l.MODAL
               }), (0, l.jsx)("div", {
                 className: A.headerInner,
                 children: (0, l.jsx)(f.Z, {
                   user: t,
                   displayProfile: F,
                   guildId: B,
-                  channelId: w,
-                  themeType: N.l.MODAL
+                  channelId: _,
+                  themeType: T.l.MODAL
                 })
               })]
             }), (0, l.jsxs)("div", {
@@ -114,7 +114,7 @@ function C(e) {
                 nicknameVariant: "heading-xl/bold",
                 tags: (0, l.jsx)(h.Z, {
                   displayProfile: F,
-                  themeType: N.l.MODAL,
+                  themeType: T.l.MODAL,
                   onClose: U
                 })
               }), (0, l.jsxs)("div", {
@@ -122,30 +122,30 @@ function C(e) {
                 children: [(0, l.jsx)(r.njP, {
                   className: S.tabBar,
                   type: "top",
-                  selectedItem: Z.oh.BOT_INFO,
-                  onItemSelect: P.dG4,
+                  selectedItem: O.oh.BOT_INFO,
+                  onItemSelect: N.dG4,
                   children: (0, l.jsx)(r.njP.Item, {
                     className: S.tabBarItem,
-                    id: Z.oh.BOT_INFO,
-                    "aria-label": T.intl.string(T.t.jGoPJS),
+                    id: O.oh.BOT_INFO,
+                    "aria-label": P.intl.string(P.t.jGoPJS),
                     children: (0, l.jsx)(r.Text, {
                       variant: "text-sm/normal",
-                      children: T.intl.string(T.t.jGoPJS)
+                      children: P.intl.string(P.t.jGoPJS)
                     })
-                  }, Z.oh.BOT_INFO)
+                  }, O.oh.BOT_INFO)
                 }), (0, l.jsxs)(r.zJl, {
                   fade: true,
                   className: E.scroller,
-                  children: [(0, l.jsx)(x.Z, {
+                  children: [(0, l.jsx)(j.Z, {
                     userId: t.id,
                     userBio: null == F ? true : F.bio,
                     setLineClamp: false
                   }), (0, l.jsx)(g.Z, {
-                    heading: T.intl.string(T.t["A//N4u"]),
+                    heading: P.intl.string(P.t["A//N4u"]),
                     children: (0, l.jsx)(v.Z, {
                       userId: t.id,
                       guildId: B,
-                      tooltipDelay: Z.vB
+                      tooltipDelay: O.vB
                     })
                   })]
                 })]

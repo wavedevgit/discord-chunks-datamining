@@ -1,5 +1,5 @@
 /** Chunk was on 59054 **/
-/** chunk id: 878449, original params: e,t,n (module,exports,require) **/
+/** chunk id: 878449, original params: e,n,t (module,exports,require) **/
 module.exports = {
   empty: "empty__9d78f",
   emptyIcon: "emptyIcon__9d78f",

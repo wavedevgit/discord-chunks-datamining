@@ -1,13 +1,13 @@
 /** Chunk was on 91053 **/
 /** chunk id: 406326, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => j
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
-  Chunk681715 = require("./681715.js"),
+  Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk63063 = require("./63063.js"),
   Chunk607802 = require("./607802.js"),
@@ -51,14 +51,14 @@ function _(e, t) {
   }), e
 }
 
-function O(e) {
+function j(e) {
   let {
     searchContext: t,
     searchMode: l,
     onSearchModeChange: s,
     totalResults: c,
-    isIndexing: O,
-    isSearching: x,
+    isIndexing: j,
+    isSearching: O,
     documentsIndexed: v
   } = e, C = (0, u.UX)({
     location: "SearchHeader"
@@ -67,8 +67,8 @@ function O(e) {
   }), S = (0, p.KS)({
     location: "SearchHeader"
   }), Z = (0, f.I)(t), {
-    totalFilters: P
-  } = (0, h.p4)(Z, t), T = i.useMemo(() => {
+    totalFilters: T
+  } = (0, h.p4)(Z, t), P = i.useMemo(() => {
     if (t.type === g.aib.DMS && C) {
       var e, n;
       let t = null != (n = null == (e = (0, d.$G)(Z).channel_id) ? true : e.length) ? n : 0;
@@ -86,21 +86,21 @@ function O(e) {
         searchContext: t
       }))
     })
-  }, [t]), R = i.useMemo(() => P > 0 ? m.intl.format(m.t.uaR4sL, {
-    filterCount: P
-  }) : m.intl.string(m.t.UdhTtr), [P]);
+  }, [t]), R = i.useMemo(() => T > 0 ? m.intl.format(m.t.uaR4sL, {
+    filterCount: T
+  }) : m.intl.string(m.t.UdhTtr), [T]);
   return (0, r.jsxs)("header", {
     className: a()(b.searchHeader, {
-      [b.searchHeaderWithSubtitle]: null != T
+      [b.searchHeaderWithSubtitle]: null != P
     }),
     children: [(0, r.jsx)("div", {
       className: b.totalResults,
       role: "status",
-      children: (0, r.jsx)(j, {
+      children: (0, r.jsx)(x, {
         totalResults: c,
-        subtitle: T,
-        isIndexing: O,
-        isSearching: x,
+        subtitle: P,
+        isIndexing: j,
+        isSearching: O,
         documentsIndexed: v
       })
     }), I || S ? (0, r.jsxs)("div", {
@@ -137,7 +137,7 @@ function O(e) {
   })
 }
 
-function j(e) {
+function x(e) {
   let {
     totalResults: t,
     subtitle: n,
@@ -153,7 +153,7 @@ function j(e) {
   })
 }
 
-function x() {
+function O() {
   return (0, Chunk951288.jsx)("div", {
     className: Chunk865239.spinnerWrapper,
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {
@@ -183,7 +183,7 @@ function v(e) {
           href: c.Z.getArticleURL(g.BhN.SEARCH_INDEXING),
           children: m.intl.string(m.t["G3EA+/"])
         })
-      }), (0, r.jsx)(x, {})]
+      }), (0, r.jsx)(O, {})]
     })
   })
 }
@@ -194,7 +194,7 @@ function C() {
       variant: "text-md/medium",
       color: "header-secondary",
       children: Chunk388032.intl.string(Chunk388032.t.uixzLS)
-    }), (0, Chunk951288.jsx)(x, {})]
+    }), (0, Chunk951288.jsx)(O, {})]
   })
 }
 

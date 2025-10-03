@@ -2,10 +2,11 @@
 /** chunk id: 374425, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => A
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk28664 = require("./28664.jsx"),
   Chunk477690 = require("./477690.js"),
   Chunk481060 = require("./481060.js"),
   Chunk100527 = require("./100527.js"),
@@ -21,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk474936 = require("./474936.js"),
   Chunk205844 = require("./205844.js");
 
-function b(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -30,20 +31,20 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
 }
 
-function O(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -54,75 +55,75 @@ function O(e, t) {
   return n
 }
 
-function v(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
+function I(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let I = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
-  T = e => {
-    null != e && l.ZP.trackWithMetadata(m.rMx.EXPRESSION_TOOLTIP_VIEWED, {
-      type: g.cd.STICKER_IN_MESSAGE_HOVER,
+let T = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
+  S = e => {
+    null != e && c.ZP.trackWithMetadata(g.rMx.EXPRESSION_TOOLTIP_VIEWED, {
+      type: E.cd.STICKER_IN_MESSAGE_HOVER,
       expression_id: e.id,
       expression_name: e.name,
-      is_animated: (0, _.aQ)(e.format_type),
-      is_custom: (0, _.z)(e.type)
+      is_animated: (0, p.aQ)(e.format_type),
+      is_custom: (0, p.z)(e.type)
     })
   },
-  S = e => {
+  A = e => {
     let {
       renderableSticker: t,
       channel: n,
-      isInteracting: a
-    } = e, l = i.useRef(null), [d, _] = i.useState(true), [m, g] = i.useState(String(Date.now())), [b] = (0, f.XW)(t, a), {
-      analyticsLocations: O
-    } = (0, c.ZP)(s.Z.STICKER_MESSAGE), S = (0, r.jsxs)("span", {
-      className: E.stickerName,
-      children: [(0, r.jsx)(o.B7q, {
+      isInteracting: o
+    } = e, c = i.useRef(null), [f, p] = i.useState(true), [g, E] = i.useState(String(Date.now())), [y] = (0, _.XW)(t, o), {
+      analyticsLocations: v
+    } = (0, u.ZP)(l.Z.STICKER_MESSAGE), A = (0, r.jsxs)("span", {
+      className: b.stickerName,
+      children: [(0, r.jsx)(s.B7q, {
         size: "xs",
         color: "currentColor",
-        className: E.stickerIcon
-      }), (null != b ? b : t).name]
+        className: b.stickerIcon
+      }), (null != y ? y : t).name]
     });
-    return (0, r.jsx)(c.Gt, {
-      value: O,
-      children: (0, r.jsx)(o.yRy, {
+    return (0, r.jsx)(u.Gt, {
+      value: v,
+      children: (0, r.jsx)(s.yRy, {
         align: "center",
-        animation: o.yRy.Animation.TRANSLATE,
-        positionKey: m,
+        animation: s.yRy.Animation.TRANSLATE,
+        positionKey: g,
         onRequestClose: () => {
-          _(true)
+          p(true)
         },
-        renderPopout: e => (0, r.jsx)(h.Z, v(y({}, e), {
+        renderPopout: e => (0, r.jsx)(m.Z, I(O({}, e), {
           renderableSticker: t,
           channel: n,
-          refreshPositionKey: () => g(String(Date.now()))
+          refreshPositionKey: () => E(String(Date.now()))
         })),
-        targetElementRef: l,
+        targetElementRef: c,
         children: e => {
           let {
             onClick: n
           } = e;
-          return (0, r.jsx)(o.ua7, v(y({}, u.b_), {
-            shouldShow: d,
-            text: (0, u.Y)(S),
+          return (0, r.jsx)(a.u, I(O({}, d.b_), {
+            shouldShow: f,
+            __unsupportedReactNodeAsText: (0, d.Y)(A),
             "aria-label": false,
             onTooltipShow: () => {
-              T(b)
+              S(y)
             },
-            children: e => (0, r.jsx)(o.P3F, v(y({}, e), {
-              innerRef: l,
-              className: E.clickableSticker,
+            children: (0, r.jsx)(s.P3F, {
+              innerRef: c,
+              className: b.clickableSticker,
               onClick: e => {
-                _(!d), n(e)
+                p(!f), n(e)
               },
               tag: "span",
-              children: (0, r.jsx)(p.Z, {
-                isInteracting: a,
-                size: I,
-                sticker: null != b ? b : t
+              children: (0, r.jsx)(h.Z, {
+                isInteracting: o,
+                size: T,
+                sticker: null != y ? y : t
               })
-            }))
+            })
           }))
         }
       })

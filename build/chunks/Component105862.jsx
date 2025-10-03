@@ -1,7 +1,7 @@
 /** Chunk was on 35755 **/
 /** chunk id: 105862, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => x
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,14 +18,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk983008 = require("./983008.js"),
   Chunk478408 = require("./478408.js");
 
-function y(e) {
+function x(e) {
   let {
     showImage: t = true,
     padding: n = false
-  } = e, y = (0, o.ZP)(), x = (0, r.ap)(y) ? v : h, b = i.useCallback(() => {
+  } = e, x = (0, o.ZP)(), y = (0, r.ap)(x) ? v : h, g = i.useCallback(() => {
     (0, s.Z)(c.Z.getAppsSupportURL(p.BhN.APPS_LEARN_MORE))
   }, []), {
-    trackSectionImpressionRef: g
+    trackSectionImpressionRef: b
   } = (0, d.Z)({
     sectionName: u.L3.NEW_TO_APPS,
     numItems: 1,
@@ -35,12 +35,12 @@ function y(e) {
     className: n ? f.containerPadding : true,
     children: (0, l.jsxs)("div", {
       ref: e => {
-        g.current = e
+        b.current = e
       },
       className: f.container,
       children: [t && (0, l.jsx)("img", {
         className: f.image,
-        src: x,
+        src: y,
         alt: "",
         "aria-hidden": true
       }), (0, l.jsxs)("div", {
@@ -61,7 +61,7 @@ function y(e) {
           sectionTitle: m.intl.string(m.t["kw8/ER"]),
           sectionBody: m.intl.string(m.t.GZoV1N)
         }),
-        onClick: b
+        onClick: g
       })]
     })
   })

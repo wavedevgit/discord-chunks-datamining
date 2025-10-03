@@ -128,19 +128,19 @@ function N(e) {
     } = i.useContext(u.Sfi),
     L = i.useContext(p.Z),
     x = C[R].impressionName,
-    j = O(b({}, C[R].impressionProperties), {
+    M = O(b({}, C[R].impressionProperties), {
       location_stack: N
     });
   L({
     type: l.ImpressionTypes.MODAL,
     name: x,
-    properties: j,
+    properties: M,
     _stackContext: {
       isSlide: true
     }
   });
   let {
-    ref: M,
+    ref: j,
     width: k = 0,
     height: U = 0
   } = (0, f.ZP)(R), G = b({}, T, I.springConfig, D.enabled ? {
@@ -196,7 +196,7 @@ function N(e) {
         opacity: e.value.to(e => 1 - Math.abs(e))
       };
       return (0, r.jsx)(s.animated.div, {
-        ref: t === R ? M : null,
+        ref: t === R ? j : null,
         style: b({
           position: "absolute",
           display: E,

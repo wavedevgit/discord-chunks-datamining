@@ -1,4 +1,4 @@
-/** Chunk was on 9665 **/
+/** Chunk was on 50118 **/
 /** chunk id: 351248, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk149715 = require("./149715.js"),
   Chunk162130 = require("./162130.js");
 
-function C(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -65,10 +65,10 @@ class v extends Chunk647438.PureComponent {
     let {
       scaleAnimation: t,
       spriteAnimation: n,
-      spriteOpacity: r,
-      widthAnimation: i
+      spriteOpacity: i,
+      widthAnimation: r
     } = this;
-    r.setValue(1), n.setValue(0);
+    i.setValue(1), n.setValue(0);
     let l = [];
     for (let e = 0; e < 23; e++) l.push(o.Z.timing(n, {
       toValue: false * e,
@@ -78,7 +78,7 @@ class v extends Chunk647438.PureComponent {
       toValue: 0,
       duration: _.DURATION_OUT,
       easing: _.EASING_OUT
-    }), o.Z.sequence(l), o.Z.timing(i, {
+    }), o.Z.sequence(l), o.Z.timing(r, {
       toValue: 0,
       duration: 125
     })]).start(e)
@@ -120,7 +120,7 @@ class v extends Chunk647438.PureComponent {
       theme: e,
       children: t,
       className: n
-    } = this.props, i = (0, Chunk780384.wj)(module), l = a()(Chunk907894.sprite, {
+    } = this.props, r = (0, Chunk780384.wj)(module), l = a()(Chunk907894.sprite, {
       [Chunk162130.crossWhite]: Chunk647438,
       [Chunk162130.crossGrey]: !Chunk647438
     });
@@ -140,7 +140,7 @@ class v extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), C(this, "scaleAnimation", new o.Z.Value(0)), C(this, "spriteAnimation", new o.Z.Value(0)), C(this, "spriteOpacity", new o.Z.Value(0)), C(this, "widthAnimation", new o.Z.Value(0))
+    super(...e), y(this, "scaleAnimation", new o.Z.Value(0)), y(this, "spriteAnimation", new o.Z.Value(0)), y(this, "spriteOpacity", new o.Z.Value(0)), y(this, "widthAnimation", new o.Z.Value(0))
   }
 }
 
@@ -148,12 +148,12 @@ function x(e) {
   var t;
   let {
     participants: n,
-    onContextMenu: i,
+    onContextMenu: r,
     className: l,
     onClick: o,
     width: u,
     guildId: b
-  } = e, y = (0, p.ZP)(), C = (t = n.length, ((0, d.pxk)(d.EFr.SIZE_80) + 16) * t > u ? d.EFr.SIZE_40 : d.EFr.SIZE_80), _ = (0, s.e7)([h.Z], () => h.Z.isFocused()), x = n.map(e => {
+  } = e, C = (0, p.ZP)(), y = (t = n.length, ((0, d.pxk)(d.EFr.SIZE_80) + 16) * t > u ? d.EFr.SIZE_40 : d.EFr.SIZE_80), _ = (0, s.e7)([h.Z], () => h.Z.isFocused()), x = n.map(e => {
     var t, n;
     if (e.type !== m.fO.USER) return null;
     let {
@@ -162,24 +162,24 @@ function x(e) {
       speaking: s,
       ringing: c
     } = e;
-    return (0, r.jsx)(v, {
+    return (0, i.jsx)(v, {
       className: g.participant,
-      width: (0, d.pxk)(C),
-      theme: y,
-      children: (0, r.jsx)(f.Z, {
+      width: (0, d.pxk)(y),
+      theme: C,
+      children: (0, i.jsx)(f.Z, {
         userId: l.id,
-        src: l.getAvatarURL(b, (0, d.pxk)(C), s && _),
-        size: C,
+        src: l.getAvatarURL(b, (0, d.pxk)(y), s && _),
+        size: y,
         muted: null != (t = null == a ? true : a.isVoiceMuted()) && t,
         deafen: null != (n = null == a ? true : a.isVoiceDeafened()) && n,
         speaking: s,
         ringing: c,
         onClick: t => null == o ? true : o(e, t),
-        onContextMenu: t => null == i ? true : i(e, t)
+        onContextMenu: t => null == r ? true : r(e, t)
       }, e.id)
     }, l.id)
   });
-  return (0, r.jsx)(c.W, {
+  return (0, i.jsx)(c.W, {
     component: "div",
     className: a()(g.root, l),
     children: x

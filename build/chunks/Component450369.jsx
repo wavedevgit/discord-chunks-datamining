@@ -129,16 +129,16 @@ let k = 16 / 9,
     } = i.useContext(c.Sfi), {
       id: g,
       blocked: b,
-      ignored: j
+      ignored: x
     } = t, v = (0, o.Wu)([I.Z], () => I.Z.getAllActiveStreams(), []), {
       selectedParticipant: C,
       largeStream: E
     } = (0, o.cj)([m.Z], () => ({
       selectedParticipant: null != l ? m.Z.getSelectedParticipant(l.id) : null,
       largeStream: null != l && m.Z.getStageStreamSize(l.id)
-    })), T = i.useCallback((e, t) => {
+    })), P = i.useCallback((e, t) => {
       if (e.type === A.fO.STREAM && 0 === v.filter(t => (0, _.V9)(t) === e.id && t.state !== w.jm8.ENDED).length) {
-        if (!(0, O.p9)(l, P.Z, S.Z, Z.Z, y.Z)[0]) return;
+        if (!(0, j.p9)(l, T.Z, S.Z, Z.Z, y.Z)[0]) return;
         (0, p.rn)((0, _.my)(e.id), {
           forceMultiple: t.shiftKey
         })
@@ -147,14 +147,14 @@ let k = 16 / 9,
     return (0, r.jsx)(N.Z, {
       participant: n,
       aspectRatio: k,
-      fit: n.type === A.fO.USER ? x.L.COVER : true,
+      fit: n.type === A.fO.USER ? O.L.COVER : true,
       blocked: b,
-      ignored: j,
+      ignored: x,
       channel: l,
       className: D.tile,
       inCall: true,
       inPopout: h,
-      onClick: T,
+      onClick: P,
       onContextMenu: u,
       pulseSpeakingIndicator: !f.enabled,
       width: a,
@@ -169,19 +169,19 @@ let k = 16 / 9,
       width: c
     } = e, {
       newestAnalyticsLocation: d
-    } = (0, f.ZP)(h.Z.STAGE_TILE), p = (0, j.bp)(), y = l.getGuildId(), _ = E.default.getId();
+    } = (0, f.ZP)(h.Z.STAGE_TILE), p = (0, x.bp)(), y = l.getGuildId(), _ = E.default.getId();
     a()(null != y, "Channel cannot be guildless");
     let {
-      user: O
-    } = i, x = (0, o.e7)([m.Z], () => m.Z.getParticipant(l.id, i.id), [l.id, i.id]), C = (0, o.e7)([T.ZP], () => T.ZP.isModerator(O.id, l.id), [l.id, O.id]);
-    if (null == x || x.type === A.fO.ACTIVITY) return null;
+      user: j
+    } = i, O = (0, o.e7)([m.Z], () => m.Z.getParticipant(l.id, i.id), [l.id, i.id]), C = (0, o.e7)([P.ZP], () => P.ZP.isModerator(j.id, l.id), [l.id, j.id]);
+    if (null == O || O.type === A.fO.ACTIVITY) return null;
     let I = e => {
         (0, g.h)({
           type: s.ImpressionTypes.MENU,
           name: s.ImpressionNames.CALL_TILE_CONTEXT_MENU,
           properties: {
             location: "StageTile",
-            is_tile_owner: O.id === _,
+            is_tile_owner: j.id === _,
             tile_type: e
           }
         })
@@ -200,7 +200,7 @@ let k = 16 / 9,
                 exitFullscreen: () => {},
                 onInteraction: (0, b.u)("StreamContextMenu", d, {
                   entrypoint: a,
-                  targetUserId: O.id,
+                  targetUserId: j.id,
                   tileType: A.TH.STREAM
                 })
               }))
@@ -210,13 +210,13 @@ let k = 16 / 9,
             return;
           case A.fO.USER:
           default:
-            if (I(A.TH.USER), i) return (0, v.D)(t, O, l, {
+            if (I(A.TH.USER), i) return (0, v.D)(t, j, l, {
               context: p
             }, (e, t) => (0, b.o)({
               menuName: e,
               menuItemProps: t,
               entrypoint: A.A5.THREE_DOT,
-              targetUserId: O.id,
+              targetUserId: j.id,
               location: d,
               tileType: A.TH.USER
             }));
@@ -225,14 +225,14 @@ let k = 16 / 9,
                 default: e
               } = await Promise.all([n.e("79695"), n.e("98783"), n.e("8982"), n.e("7717"), n.e("52021")]).then(n.bind(n, 757387));
               return t => (0, r.jsx)(e, M(L({}, t), {
-                user: O,
+                user: j,
                 guildId: y,
                 channel: l,
                 showMediaItems: true,
                 showStageChannelItems: true,
                 showChatItems: false,
                 onInteraction: (0, b.u)("GuildChannelUserContextMenu", d, {
-                  targetUserId: O.id,
+                  targetUserId: j.id,
                   tileType: A.TH.USER
                 })
               }))
@@ -241,22 +241,22 @@ let k = 16 / 9,
             })
         }
       };
-    return x.type !== A.fO.USER || (null == (t = x.voiceState) ? true : t.selfVideo) ? (0, r.jsx)(G, {
+    return O.type !== A.fO.USER || (null == (t = O.voiceState) ? true : t.selfVideo) ? (0, r.jsx)(G, {
       stageParticipant: i,
-      rtcParticipant: x,
+      rtcParticipant: O,
       channel: l,
       guildId: y,
-      user: O,
+      user: j,
       width: c,
       isModerator: C,
       onContextMenu: S,
       inPopout: p === w.IlC.POPOUT
     }) : (0, r.jsx)(U, {
       stageParticipant: i,
-      rtcParticipant: x,
+      rtcParticipant: O,
       channel: l,
       guildId: y,
-      user: O,
+      user: j,
       width: c,
       isModerator: C,
       onContextMenu: S,

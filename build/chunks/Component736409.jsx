@@ -1,7 +1,7 @@
 /** Chunk was on 51727 **/
 /** chunk id: 736409, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  j: () => O
+  j: () => y
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,27 +19,27 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk46140 = require("./46140.js");
-let O = e => {
+let y = e => {
   let {
     children: t,
     isForceShowSharingPopout: n,
-    setIsForceShowSharingPopout: O,
-    popoutTargetRef: y
+    setIsForceShowSharingPopout: y,
+    popoutTargetRef: O
   } = e, v = function(e) {
     let {
       isForceShowSharingPopout: t
     } = e, {
       isEnabled: n,
       showActivitySharingIndicatorWhenSharing: r
-    } = (0, h.D)("SharingPrivacyPopout"), {
+    } = (0, f.D)("SharingPrivacyPopout"), {
       isQuestBarEmpty: i,
       hasLoadedQuestBar: o
     } = (0, c.Ws)({
       location: _.dr.CONFLICT_CHECKS
-    }), a = u.G6.useSetting(), f = (0, l.e7)([d.Z], () => d.Z.getLayers().includes(m.S9g.USER_SETTINGS)), b = (0, l.e7)([p.Z], () => p.Z.getStatus()), {
-      isOpen: O
+    }), a = u.G6.useSetting(), h = (0, l.e7)([d.Z], () => d.Z.getLayers().includes(m.S9g.USER_SETTINGS)), b = (0, l.e7)([p.Z], () => p.Z.getStatus()), {
+      isOpen: y
     } = (0, s.Z)();
-    if ((i && o || t) && !f && !O && !__OVERLAY__ && n) {
+    if ((i && o || t) && !h && !y && !__OVERLAY__ && n) {
       if (r && a && b !== m.Skl.INVISIBLE) return t ? g.NK.Activity : null;
       if (!a && b === m.Skl.INVISIBLE) return t ? g.NK.ActivityAndStatus : g.NK.ActivityAndStatusNux;
       if (!a) return t ? g.NK.Activity : g.NK.ActivityNux;
@@ -50,7 +50,7 @@ let O = e => {
     isForceShowSharingPopout: n
   });
   (0, i.useEffect)(() => {
-    n && f.default.track(m.rMx.OPEN_POPOUT, {
+    n && h.default.track(m.rMx.OPEN_POPOUT, {
       type: "SharingPrivacyPopout"
     })
   }, [n]);
@@ -66,9 +66,9 @@ let O = e => {
         showPopout: a,
         popoutState: v,
         handleClose: () => {
-          l(b.L.USER_DISMISS), O(false)
+          l(b.L.USER_DISMISS), y(false)
         },
-        popoutTargetRef: y,
+        popoutTargetRef: O,
         children: t
       })
     }

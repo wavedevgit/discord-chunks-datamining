@@ -119,7 +119,7 @@ let v = e => {
         showVoiceFiltersCard: D,
         showCustomThemesCard: L
       }),
-      j = x.some(e => null != e.pillText);
+      M = x.some(e => null != e.pillText);
     return (0, r.jsxs)("div", {
       ref: T,
       className: o()(g.section, {
@@ -138,7 +138,7 @@ let v = e => {
           [g.subtitle]: null == y || E,
           [g.subtitleWithButton]: null != y && !E,
           [g.fullWidth]: S || E,
-          [g.moreSubtitleMargin]: j,
+          [g.moreSubtitleMargin]: M,
           [g.leftAlignSubtitle]: E,
           [g.centerAlignSubtitle]: !E
         }),

@@ -68,12 +68,12 @@ function x(e, t) {
   return n
 }
 
-function j(e, t) {
+function M(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let M = "https://support.discord.com/hc/en-us";
+let j = "https://support.discord.com/hc/en-us";
 var k = function(e) {
   return e[e.LOADING = 0] = "LOADING", e[e.DONE = 1] = "DONE", e[e.ERROR = 2] = "ERROR", e
 }({});
@@ -90,8 +90,8 @@ function U(e) {
   } = p, {
     appId: L,
     plan: x,
-    storeListing: j,
-    price: M,
+    storeListing: M,
+    price: j,
     isGuildSubscription: k,
     subscriptionForGuild: U,
     sku: Y,
@@ -154,11 +154,11 @@ function U(e) {
         })]
       }), (0, r.jsx)("div", {
         className: w.headerButtons,
-        children: null != z && null != j && null != Y && false === en && (0, r.jsx)(F, {
+        children: null != z && null != M && null != Y && false === en && (0, r.jsx)(F, {
           subscription: p,
           app: z,
           sku: Y,
-          storeListing: j,
+          storeListing: M,
           isCancelled: W,
           navigateToSwitchPlan: E,
           renewalSkuId: null == K ? true : K.skuId
@@ -211,9 +211,9 @@ function U(e) {
             size: "xs"
           }), P.intl.string(P.t["6anEVl"])]
         })
-      }), null != M && (0, r.jsx)(B, {
+      }), null != j && (0, r.jsx)(B, {
         title: P.intl.string(P.t.KI7ER0),
-        content: M
+        content: j
       }), (0, r.jsx)(B, {
         title: P.intl.string(P.t.dnUzb2),
         content: (0, C.p)(null != (_ = p.createdAt) ? _ : p.currentPeriodStart)
@@ -228,9 +228,9 @@ function U(e) {
       loadingState: b,
       isDeleted: X,
       isCancelled: W
-    }), null != z && (null == j ? true : j.benefits) != null && j.benefits.length > 0 && (0, r.jsx)(V, {
+    }), null != z && (null == M ? true : M.benefits) != null && M.benefits.length > 0 && (0, r.jsx)(V, {
       appId: z.id,
-      listingBenefits: j.benefits
+      listingBenefits: M.benefits
     })]
   })
 }
@@ -315,7 +315,7 @@ function F(e) {
       let {
         default: e
       } = await n.e("6284").then(n.bind(n, 257514));
-      return n => (0, r.jsx)(e, j(L({}, n), {
+      return n => (0, r.jsx)(e, M(L({}, n), {
         application: t,
         storeListing: o,
         subscription: u,
@@ -333,7 +333,7 @@ function F(e) {
         let {
           default: t
         } = await n.e("18879").then(n.bind(n, 389262));
-        return n => (0, r.jsx)(t, j(L({}, n), {
+        return n => (0, r.jsx)(t, M(L({}, n), {
           storeListing: o,
           subscription: b.Z.createFromServer(e)
         }))
@@ -432,7 +432,7 @@ function H(e) {
       children: [P.intl.format(P.t.IIHUUF, {
         subscriptionId: t.id
       }), (0, r.jsx)("br", {}), P.intl.format(P.t.fh65ER, {
-        helpLink: M
+        helpLink: j
       })]
     })
   }) : (0, r.jsxs)("div", {

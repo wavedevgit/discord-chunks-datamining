@@ -203,7 +203,7 @@ let L = function(e) {
       }(A, W[e].length, e);
       return A === C.pJs.PENDING && 0 === e ? (0, r.jsxs)("div", {
         className: N.sectionTitle,
-        children: [(0, r.jsx)(v.Z, {
+        children: [(0, r.jsx)(y.Z, {
           id: t,
           title: n
         }), Y && (0, r.jsx)("div", {
@@ -217,7 +217,7 @@ let L = function(e) {
         })]
       }, n) : (0, r.jsx)("div", {
         className: N.sectionTitle,
-        children: (0, r.jsx)(v.Z, {
+        children: (0, r.jsx)(y.Z, {
           id: t,
           title: n
         })
@@ -235,7 +235,7 @@ let L = function(e) {
     value: n,
     children: (0, r.jsxs)(c.Z, {
       section: C.jXE.FRIENDS_LIST,
-      children: [D && (0, r.jsx)(y.R, {}), (0, r.jsx)("div", {
+      children: [D && (0, r.jsx)(v.R, {}), (0, r.jsx)("div", {
         className: N.searchBar,
         children: (0, r.jsx)(a.E1j, {
           query: k[A],

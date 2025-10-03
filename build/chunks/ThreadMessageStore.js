@@ -140,14 +140,14 @@ function x(e) {
   N(t)
 }
 
-function j(e) {
+function M(e) {
   let {
     guild: t
   } = e;
   T(t.id)
 }
 
-function M(e) {
+function j(e) {
   let {
     channel: t
   } = e;
@@ -319,9 +319,9 @@ let X = new q(Chunk570140.Z, {
   CONNECTION_OPEN: D,
   OVERLAY_INITIALIZE: L,
   GUILD_CREATE: x,
-  GUILD_DELETE: j,
-  THREAD_CREATE: M,
-  THREAD_UPDATE: M,
+  GUILD_DELETE: M,
+  THREAD_CREATE: j,
+  THREAD_UPDATE: j,
   THREAD_LIST_SYNC: k,
   LOAD_THREADS_SUCCESS: U,
   LOAD_ARCHIVED_THREADS_SUCCESS: U,

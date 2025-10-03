@@ -30,8 +30,8 @@ let S = e => {
   } = (0, g.G)(t.skuId), {
     isPurchased: T,
     isPartiallyOwnedBundle: y
-  } = (0, p.L)(t), L = (0, d.G1)(t), {
-    enabled: j
+  } = (0, p.L)(t), j = (0, d.G1)(t), {
+    enabled: L
   } = (0, i.WX)({
     location: "product_card_price"
   }), k = l.useMemo(() => (0, d.BH)(t, x), [t, x]), I = (0, h.Iw)(t), P = null != I, {
@@ -52,11 +52,11 @@ let S = e => {
   }) : T || y ? (0, r.jsx)(f.U, {
     className: E.priceTag,
     isPartiallyPurchased: y
-  }) : L ? (0, r.jsx)(s.Text, {
+  }) : j ? (0, r.jsx)(s.Text, {
     variant: "text-md/semibold",
     className: E.priceTag,
     children: b.intl.string(b.t.rt69oq)
-  }) : j ? (0, r.jsx)(_.e, {
+  }) : L ? (0, r.jsx)(_.e, {
     displayPrices: N,
     isPremiumUser: x,
     discount: k,

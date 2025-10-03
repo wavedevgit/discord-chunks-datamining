@@ -34,7 +34,7 @@ function y(e) {
     selectedSkuId: b
   } = (0, d.JL)(), [y, O] = i.useState(n), [v, I] = i.useState(), [T, S] = i.useState(false), A = (0, u.pO)(y), C = m;
   A && (C = null != f ? f : h);
-  let [N, R] = i.useState(C), P = (0, l.iE)(), w = (0, l.yX)(), [D, L] = i.useState(), [x, j] = i.useState(t && (0, u.MY)(y) === u.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && null == c ? p.intl.string(p.t.ZkOo1d) : c), [M, k] = i.useState(true), [U, G] = i.useState(true), B = (0, u.E5)(b, t), [Z, F] = i.useState(false), [V, H] = i.useState(false), [Y, W] = i.useState(), K = i.useCallback(e => {
+  let [N, R] = i.useState(C), P = (0, l.iE)(), w = (0, l.yX)(), [D, L] = i.useState(), [x, M] = i.useState(t && (0, u.MY)(y) === u.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && null == c ? p.intl.string(p.t.ZkOo1d) : c), [j, k] = i.useState(true), [U, G] = i.useState(true), B = (0, u.E5)(b, t), [Z, F] = i.useState(false), [V, H] = i.useState(false), [Y, W] = i.useState(), K = i.useCallback(e => {
     let {
       onSubscriptionConfirmation: t
     } = e;
@@ -55,12 +55,12 @@ function y(e) {
       setGiftRecipientError: I,
       validatingGiftRecipient: T,
       setValidatingGiftRecipient: S,
-      soundEffect: M,
+      soundEffect: j,
       setSoundEffect: k,
       emojiConfetti: U,
       setEmojiConfetti: G,
       customGiftMessage: x,
-      setCustomGiftMessage: j,
+      setCustomGiftMessage: M,
       selectedGiftStyle: N,
       setSelectedGiftStyle: R,
       sendGiftMessage: K,

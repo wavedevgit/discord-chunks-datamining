@@ -6,6 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
+  Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk570140 = require("./570140.js"),
   Chunk45114 = require("./45114.js"),
@@ -22,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk361584 = require("./361584.js");
 
-function v(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -41,7 +42,7 @@ function v(e) {
   return e
 }
 
-function j(e, t) {
+function x(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -53,7 +54,7 @@ function j(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let x = {
+let C = {
   [Chunk982183.ln.MENTION]: [Chunk982183.r0.SETTINGS],
   [Chunk982183.ln.REPLY]: [Chunk982183.r0.SETTINGS],
   [Chunk982183.ln.REACTION]: [Chunk982183.r0.SETTINGS],
@@ -61,110 +62,112 @@ let x = {
   [Chunk982183.ln.MESSAGE]: [Chunk982183.r0.SETTINGS]
 };
 
-function C(e) {
+function E(e) {
   let {
     label: t,
     onClick: n,
     message: l,
-    Icon: a,
-    interactionType: s
-  } = e, [c, u] = (0, i.useState)(false), d = (0, h.fJ)();
-  return (0, r.jsx)(o.ua7, {
+    Icon: s,
+    interactionType: c
+  } = e, [u, d] = (0, i.useState)(false), p = (0, g.fJ)();
+  return (0, r.jsx)(o.u, {
     text: t,
     position: "top",
     spacing: 4,
-    onTooltipShow: () => u(true),
-    onTooltipHide: () => u(false),
-    children: e => (0, r.jsx)(o.P3F, j(v({}, e), {
-      className: y.action,
+    asContainer: true,
+    onTooltipShow: () => d(true),
+    onTooltipHide: () => d(false),
+    children: (0, r.jsx)(a.P3F, {
+      className: v.action,
       onClick: e => {
-        (0, h.Qz)({
+        (0, g.Qz)({
           message: l,
-          interactionType: s,
-          viewId: d
+          interactionType: c,
+          viewId: p
         }), e.stopPropagation(), n(l)
       },
-      children: (0, r.jsx)(a, {
-        size: c ? "sm" : "xs",
-        className: y.actionIcon
+      children: (0, r.jsx)(s, {
+        size: u ? "sm" : "xs",
+        className: v.actionIcon
       })
-    }))
+    })
   })
 }
 
-function E(e) {
+function S(e) {
   let {
     channel: t,
     message: n,
     label: l,
-    Icon: a,
-    Menu: s,
-    interactionType: c,
-    actionType: u
-  } = e, d = (0, h.fJ)(), [p, f] = (0, i.useState)(false), [g, b] = (0, i.useState)(false), _ = (0, i.useRef)(null), {
+    Icon: s,
+    Menu: c,
+    interactionType: u,
+    actionType: d
+  } = e, p = (0, g.fJ)(), [h, f] = (0, i.useState)(false), [m, _] = (0, i.useState)(false), y = (0, i.useRef)(null), {
     openMenu: O,
-    closeMenu: x
-  } = (0, m.z)();
-  return (0, r.jsx)(o.yRy, {
-    shouldShow: g,
-    animation: o.yRy.Animation.NONE,
+    closeMenu: C
+  } = (0, b.z)();
+  return (0, r.jsx)(a.yRy, {
+    shouldShow: m,
+    animation: a.yRy.Animation.NONE,
     position: "right",
     align: "top",
     autoInvert: false,
-    targetElementRef: _,
+    targetElementRef: y,
     onRequestClose: () => {
-      b(false), x(n.id, u)
+      _(false), C(n.id, d)
     },
-    renderPopout: e => (0, r.jsx)(o.VqE, {
+    renderPopout: e => (0, r.jsx)(a.VqE, {
       onClick: e => e.stopPropagation(),
-      returnRef: _,
-      children: (0, r.jsx)(s, {
+      returnRef: y,
+      children: (0, r.jsx)(c, {
         renderPopoutProps: e,
         channel: t,
         message: n
       })
     }),
-    children: e => (0, r.jsx)(o.ua7, {
+    children: e => (0, r.jsx)(o.u, {
       text: l,
       position: "top",
       spacing: 4,
+      asContainer: true,
       onTooltipShow: () => f(true),
       onTooltipHide: () => f(false),
-      children: t => (0, r.jsx)(o.P3F, j(v({}, t), {
-        innerRef: _,
-        className: y.action,
+      children: (0, r.jsx)(a.P3F, {
+        innerRef: y,
+        className: v.action,
         onClick: e => {
-          (0, h.Qz)({
+          (0, g.Qz)({
             message: n,
-            interactionType: c,
-            viewId: d
+            interactionType: u,
+            viewId: p
           }), e.stopPropagation();
-          let t = !g;
-          b(t), t ? O(n.id, u) : x(n.id, u)
+          let t = !m;
+          _(t), t ? O(n.id, d) : C(n.id, d)
         },
-        children: (0, r.jsx)(a, j(v({}, e), {
+        children: (0, r.jsx)(s, x(j({}, e), {
           message: n,
           "aria-label": l,
-          className: y.actionIcon,
-          size: p ? "sm" : "xs"
+          className: v.actionIcon,
+          size: h ? "sm" : "xs"
         }))
-      }))
+      })
     })
   })
 }
-let S = {
+let I = {
   [Chunk982183.r0.ACK]: {
     type: "standard",
     Icon: Chunk481060.dz2,
     label: Chunk388032.intl.string(Chunk388032.t.e6RscX),
     onClick: e => {
-      a.Z.dispatch({
+      s.Z.dispatch({
         type: "NOTIFICATIONS_INBOX_ITEM_ACK",
         messageId: e.id,
         channelId: e.channel_id
-      }), s.In(e.channel_id, {
-        object: _.qAy.MARK_MESSAGE_AS_READ_BUTTON,
-        objectType: _.Qqv.ACK_MANUAL
+      }), c.In(e.channel_id, {
+        object: y.qAy.MARK_MESSAGE_AS_READ_BUTTON,
+        objectType: y.Qqv.ACK_MANUAL
       }, true, true, e.id)
     },
     interactionType: Chunk804932.s_.ACK
@@ -172,41 +175,41 @@ let S = {
   [Chunk982183.r0.BOOKMARK]: {
     type: "menu",
     label: Chunk388032.intl.string(Chunk388032.t["9p3D9v"]),
-    Icon: e => null != p.Z.getSavedMessage(e.message.channel_id, e.message.id) ? (0, r.jsx)(o.plf, v({}, e)) : (0, r.jsx)(o.gt9, v({}, e)),
+    Icon: e => null != h.Z.getSavedMessage(e.message.channel_id, e.message.id) ? (0, r.jsx)(a.plf, j({}, e)) : (0, r.jsx)(a.gt9, j({}, e)),
     interactionType: Chunk804932.s_.BOOKMARK,
     Menu: e => {
       let {
         message: t,
         renderPopoutProps: n
-      } = e, i = (0, l.e7)([p.Z], () => p.Z.getSavedMessage(t.channel_id, t.id)), a = (0, u.x)({
+      } = e, i = (0, l.e7)([h.Z], () => h.Z.getSavedMessage(t.channel_id, t.id)), o = (0, d.x)({
         message: t,
         savedMessage: i
       });
-      return (0, r.jsxs)(o.v2r, j(v({}, n), {
+      return (0, r.jsxs)(a.v2r, x(j({}, n), {
         navId: "message-reminder-create",
         "aria-label": O.intl.string(O.t.mJ3P0N),
         onClose: n.closePopout,
         onSelect: () => null,
-        children: [null != i ? (0, r.jsx)(o.sNh, {
+        children: [null != i ? (0, r.jsx)(a.sNh, {
           id: "remove-from-for-later",
           label: O.intl.string(O.t.SvXS1d),
-          icon: o.plf,
-          action: () => (0, d.x)({
+          icon: a.plf,
+          action: () => (0, p.x)({
             channelId: t.channel_id,
             messageId: t.id,
             dueAt: i.saveData.dueAt,
             displayToast: true
           })
-        }) : (0, r.jsx)(o.sNh, {
+        }) : (0, r.jsx)(a.sNh, {
           id: "create-bookmark",
           label: O.intl.string(O.t["9p3D9v"]),
-          icon: o.gt9,
-          action: () => (0, d.z)({
+          icon: a.gt9,
+          action: () => (0, p.z)({
             channelId: t.channel_id,
             messageId: t.id,
             displayToast: true
           })
-        }), (0, r.jsx)(o.Clw, {}), a]
+        }), (0, r.jsx)(a.Clw, {}), o]
       }))
     }
   },
@@ -220,11 +223,11 @@ let S = {
         channel: t,
         renderPopoutProps: n
       } = e;
-      return t.isThread() ? (0, r.jsx)(f.Z, j(v({}, n), {
+      return t.isThread() ? (0, r.jsx)(f.Z, x(j({}, n), {
         channel: t,
         navId: "thread-context",
         label: O.intl.string(O.t["1NBjqa"])
-      })) : (0, r.jsx)(c.Z, j(v({}, n), {
+      })) : (0, r.jsx)(u.Z, x(j({}, n), {
         channel: t,
         navId: "channel-context",
         label: O.intl.string(O.t.Xm41aW)
@@ -238,30 +241,30 @@ function P(e) {
     message: t,
     channel: n,
     isUnread: l
-  } = e, a = ((e, t) => {
-    let n = (0, g.ux)();
+  } = e, o = ((e, t) => {
+    let n = (0, m.ux)();
     return (0, i.useMemo)(() => {
-      let e = b.ln.MENTION,
+      let e = _.ln.MENTION,
         r = new Set;
-      return t && r.add(b.r0.ACK), n && r.add(b.r0.BOOKMARK), x[e].forEach(e => r.add(e)), Array.from(r)
+      return t && r.add(_.r0.ACK), n && r.add(_.r0.BOOKMARK), C[e].forEach(e => r.add(e)), Array.from(r)
     }, [e, t, n])
   })(t, l);
-  return (0, r.jsx)(o.Kqy, {
+  return (0, r.jsx)(a.Kqy, {
     direction: "horizontal",
     gap: 4,
     align: "center",
     justify: "center",
-    className: y.actions,
-    children: a.map(e => {
-      let i = S[e];
+    className: v.actions,
+    children: o.map(e => {
+      let i = I[e];
       switch (i.type) {
         case "standard":
-          return (0, r.jsx)(C, j(v({}, i), {
+          return (0, r.jsx)(E, x(j({}, i), {
             actionType: e,
             message: t
           }), e);
         case "menu":
-          return (0, r.jsx)(E, j(v({}, i), {
+          return (0, r.jsx)(S, x(j({}, i), {
             actionType: e,
             channel: n,
             message: t

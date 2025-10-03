@@ -2,16 +2,17 @@
 /** chunk id: 670451, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk386019 = require("./386019.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk704543 = require("./704543.js");
 
-function c(e, t, n) {
+function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -20,20 +21,20 @@ function c(e, t, n) {
   }) : e[t] = n, e
 }
 
-function u(e) {
+function d(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      c(e, t, n[t])
+      u(e, t, n[t])
     })
   }
   return e
 }
 
-function d(e, t) {
+function f(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -44,34 +45,32 @@ function d(e, t) {
   return n
 }
 
-function f(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function _(e) {
+function p(e) {
   let t = i.useRef(null);
-  return (0, r.jsx)(o.Z, f(u({}, e), {
+  return (0, r.jsx)(s.Z, _(d({}, e), {
     targetElementRef: t,
-    children: e => (0, r.jsx)(a.ua7, {
+    children: e => (0, r.jsx)(a.u, {
       targetElementRef: t,
-      text: s.intl.string(s.t.UKOtz8),
+      text: l.intl.string(l.t.UKOtz8),
       "aria-label": false,
-      children: n => (0, r.jsx)(a.P3F, f(u({}, n, e), {
+      children: (0, r.jsx)(o.P3F, _(d({}, e), {
         innerRef: t,
-        "aria-label": s.intl.string(s.t.UKOtz8),
+        "aria-label": l.intl.string(l.t.UKOtz8),
         onClick: t => {
-          var r;
-          t.stopPropagation(), null == (r = n.onClick) || r.call(n), e.onClick(t)
+          t.stopPropagation(), e.onClick(t)
         },
         onContextMenu: t => {
-          var r;
-          t.preventDefault(), null == (r = n.onClick) || r.call(n), e.onClick(t)
+          t.preventDefault(), e.onClick(t)
         },
-        className: l.contextMenu,
-        children: (0, r.jsx)(a.xhG, {
-          color: a.TVs.colors.INTERACTIVE_NORMAL,
+        className: c.contextMenu,
+        children: (0, r.jsx)(o.xhG, {
+          color: o.TVs.colors.INTERACTIVE_NORMAL,
           size: "xs"
         })
       }))

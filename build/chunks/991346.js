@@ -89,32 +89,32 @@ function F(e) {
     showRedesignedThirdPartyAccessSettings: n
   } = e, r = O.Z.isDeveloper, i = [{
     header: k.intl.string(k.t.cduTBA),
-    settings: n ? [j.s6.ACCOUNT, j.s6.GAMES, j.s6.PROFILE_CUSTOMIZATION, j.s6.CONTENT_SOCIAL, j.s6.DATA_PRIVACY, j.s6.PRIVACY_FAMILY_CENTER, j.s6.THIRD_PARTY_ACCESS, j.s6.SESSIONS, j.s6.CLIPS] : [j.s6.ACCOUNT, j.s6.GAMES, j.s6.PROFILE_CUSTOMIZATION, j.s6.CONTENT_SOCIAL, j.s6.DATA_PRIVACY, j.s6.PRIVACY_FAMILY_CENTER, j.s6.AUTHORIZED_APPS, j.s6.SESSIONS, j.s6.CONNECTIONS, j.s6.CLIPS]
+    settings: n ? [M.s6.ACCOUNT, M.s6.GAMES, M.s6.PROFILE_CUSTOMIZATION, M.s6.CONTENT_SOCIAL, M.s6.DATA_PRIVACY, M.s6.PRIVACY_FAMILY_CENTER, M.s6.THIRD_PARTY_ACCESS, M.s6.SESSIONS, M.s6.CLIPS] : [M.s6.ACCOUNT, M.s6.GAMES, M.s6.PROFILE_CUSTOMIZATION, M.s6.CONTENT_SOCIAL, M.s6.DATA_PRIVACY, M.s6.PRIVACY_FAMILY_CENTER, M.s6.AUTHORIZED_APPS, M.s6.SESSIONS, M.s6.CONNECTIONS, M.s6.CLIPS]
   }, {
     header: k.intl.string(k.t["4uOdGh"]),
     divider: true,
-    settings: [j.s6.PREMIUM, j.s6.GUILD_BOOSTING, j.s6.SUBSCRIPTIONS, j.s6.GIFT_INVENTORY, j.s6.BILLING]
+    settings: [M.s6.PREMIUM, M.s6.GUILD_BOOSTING, M.s6.SUBSCRIPTIONS, M.s6.GIFT_INVENTORY, M.s6.BILLING]
   }, {
     header: k.intl.string(k.t.f2n1TE),
     divider: true,
-    settings: [j.s6.APPEARANCE, j.s6.ACCESSIBILITY, j.s6.VOICE_AND_VIDEO, j.s6.POGGERMODE, j.s6.CHAT, j.s6.NOTIFICATIONS, j.s6.KEYBINDS, j.s6.LANGUAGE, j.s6.WINDOW_SETTINGS, j.s6.LINUX_SETTINGS, j.s6.STREAMER_MODE, j.s6.SETTINGS_ADVANCED]
+    settings: [M.s6.APPEARANCE, M.s6.ACCESSIBILITY, M.s6.VOICE_AND_VIDEO, M.s6.POGGERMODE, M.s6.CHAT, M.s6.NOTIFICATIONS, M.s6.KEYBINDS, M.s6.LANGUAGE, M.s6.WINDOW_SETTINGS, M.s6.LINUX_SETTINGS, M.s6.STREAMER_MODE, M.s6.SETTINGS_ADVANCED]
   }, {
     divider: true,
-    settings: [j.s6.CHANGELOG, j.s6.MERCHANDISE]
+    settings: [M.s6.CHANGELOG, M.s6.MERCHANDISE]
   }, {
     header: "Developer Only",
     divider: true,
-    settings: r ? [j.s6.EXPERIMENTS, j.s6.DEVELOPER_OPTIONS] : []
+    settings: r ? [M.s6.EXPERIMENTS, M.s6.DEVELOPER_OPTIONS] : []
   }, {
     divider: true,
-    settings: [j.s6.LOGOUT]
+    settings: [M.s6.LOGOUT]
   }, {
     divider: true,
-    settings: [j.s6.SOCIAL_LINKS, j.s6.TEMP_DEVELOPER_EDUCATION_SIDEBAR_ITEM, j.s6.CLIENT_DEBUG_INFO]
+    settings: [M.s6.SOCIAL_LINKS, M.s6.TEMP_DEVELOPER_EDUCATION_SIDEBAR_ITEM, M.s6.CLIENT_DEBUG_INFO]
   }], a = {
     header: k.intl.string(k.t.SmHCFR),
     divider: true,
-    settings: [j.s6.ACTIVITY_PRIVACY, j.s6.REGISTERED_GAMES, j.s6.OVERLAY]
+    settings: [M.s6.ACTIVITY_PRIVACY, M.s6.REGISTERED_GAMES, M.s6.OVERLAY]
   };
   return t ? i : i.toSpliced(3, 0, a)
 }
@@ -148,7 +148,7 @@ function H() {
   let O = (0, Chunk725727.YO)().length,
     R = (0, Chunk160913.U)(),
     x = (0, Chunk442837.e7)([Chunk663389.Z], () => Chunk663389.Z.getSearchParams()),
-    j = (0, Chunk631885.gU)(),
+    M = (0, Chunk631885.gU)(),
     k = (0, Chunk168308.bC)(),
     U = (0, Chunk924557.Go)(),
     [G] = (0, Chunk706140.cv)(U ? [Chunk704215.z.CLIPS_SETTINGS_BETA_TAG] : []),
@@ -273,7 +273,7 @@ function Y(e) {
 }
 
 function W(e, t, n) {
-  return e === j.s6.SEARCH_NO_RESULTS && 0 === t.size || n.has(e) || t.has(e)
+  return e === M.s6.SEARCH_NO_RESULTS && 0 === t.size || n.has(e) || t.has(e)
 }
 
 function K(e, t, n) {
@@ -335,7 +335,7 @@ function X(e) {
 function Q(e) {
   return new Map(Object.entries(e).filter(e => {
     let [t, n] = e;
-    return (n.section !== o.ID.CUSTOM || t === j.s6.TEMP_DEVELOPER_EDUCATION_SIDEBAR_ITEM) && null != n.searchableTitles && (null == n.predicate || n.predicate())
+    return (n.section !== o.ID.CUSTOM || t === M.s6.TEMP_DEVELOPER_EDUCATION_SIDEBAR_ITEM) && null != n.searchableTitles && (null == n.predicate || n.predicate())
   }))
 }
 

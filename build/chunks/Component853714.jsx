@@ -139,7 +139,7 @@ let G = Chunk647438.forwardRef((e, t) => {
       switch (t.targetType) {
         case T.KFR.CHANNEL:
         case T.KFR.CHANNEL_OVERWRITE:
-          let i = x.Z.getChannel(t.targetId),
+          let i = b.Z.getChannel(t.targetId),
             s = j.Z.getGuild(l);
           if (null != i && null != s) return (0, m.jW)(e, async () => {
             let {
@@ -159,7 +159,7 @@ let G = Chunk647438.forwardRef((e, t) => {
             }))
           });
         case T.KFR.USER:
-          let o = _.default.getUser(t.targetId);
+          let o = v.default.getUser(t.targetId);
           if (null != o && null != l) return (0, m.jW)(e, async () => {
             let {
               default: e
@@ -395,7 +395,7 @@ class U extends Chunk647438.PureComponent {
       }, null != (n = e.key) ? n : t)
     }), D(this, "renderUserQuickSelectItem", (e, t) => {
       var n;
-      if (e.user instanceof b.Z) {
+      if (e.user instanceof x.Z) {
         let t = e.user;
         return (0, r.jsxs)(d.lo1, {
           value: t.id,
@@ -410,7 +410,7 @@ class U extends Chunk647438.PureComponent {
           }), (0, r.jsxs)(d.lo1.Label, {
             children: [(0, r.jsx)(d.Text, {
               variant: "text-sm/normal",
-              children: y.ZP.getUserTag(t, {
+              children: O.ZP.getUserTag(t, {
                 mode: "username"
               })
             }), !t.hasUniqueUsername() && (0, r.jsxs)(d.Text, {
@@ -456,7 +456,7 @@ class U extends Chunk647438.PureComponent {
           valueLabel: P.intl.string(P.t.an9Ry8),
           value: null
         },
-        m = [u, ...a].map(e => e instanceof b.Z ? function(e) {
+        m = [u, ...a].map(e => e instanceof x.Z ? function(e) {
           return {
             label: e.username,
             value: e.id,
@@ -564,7 +564,7 @@ let B = Chunk442837.ZP.connectStores([Chunk233857.Z, Chunk999382.Z, Chunk430824.
   return {
     guildId: module,
     guild: exports,
-    moderators: Chunk233857.Z.userIds.map(e => _.default.getUser(e)).filter(Chunk823379.lm),
+    moderators: Chunk233857.Z.userIds.map(e => v.default.getUser(e)).filter(Chunk823379.lm),
     isInitialLoading: Chunk233857.Z.isInitialLoading,
     isLoading: Chunk233857.Z.isLoading,
     isLoadingNextPage: Chunk233857.Z.isLoadingNextPage,

@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 340137, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => N
+  Z: () => j
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -10,6 +10,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk948789 = require("./948789.js"),
   Chunk442837 = require("./442837.js"),
   Chunk212605 = require("./212605.js"),
+  Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk686546 = require("./686546.jsx"),
   Chunk719961 = require("./719961.js"),
@@ -23,120 +24,117 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk445202 = require("./445202.js");
-let I = {
+let S = {
     cozy: 0,
     default: 0,
     compact: 0
   },
-  S = {
+  C = {
     cozy: 36,
     default: 24,
     compact: 14
   },
-  C = {
+  T = {
     cozy: 95,
     default: 84,
     compact: 72
   };
 
-function T(e) {
+function N(e) {
+  var t, n;
   let {
-    onClick: t,
-    selectedOverride: n = false,
-    popoutProps: l,
-    ref: o,
-    focusSectionProps: s
-  } = e, [h, m] = i.useState(false), O = (0, b.D)(), E = n || O, T = n || E, {
-    backForwardButtons: N,
-    titlebarIconSize: j,
-    titlebarHoverHighlight: P
-  } = (0, p.T)({
+    onClick: l,
+    selectedOverride: o = false,
+    popoutProps: s,
+    ref: g,
+    focusSectionProps: b
+  } = e, [E, v] = i.useState(false), N = (0, _.D)(), j = o || N, P = o || j, {
+    backForwardButtons: x,
+    titlebarIconSize: A,
+    titlebarHoverHighlight: Z
+  } = (0, f.T)({
     location: "NotificationsInboxTitleBarButton"
-  }), x = (0, r.jsx)(u.Dkj, {
-    className: v.icon,
-    color: h || T ? u.TVs.colors.ICON_PRIMARY : u.TVs.colors.ICON_TERTIARY,
-    size: j
+  }), w = (0, r.jsx)(d.Dkj, {
+    className: I.icon,
+    color: E || P ? d.TVs.colors.ICON_PRIMARY : d.TVs.colors.ICON_TERTIARY,
+    size: A
   }), {
-    badge: A,
-    badgeType: Z
-  } = (0, _.h6)({
-    isSelected: E
-  }), w = (0, g.isDesktop)() && N, L = (0, f.A)(), R = (0, g.isMac)() ? I[L] : w ? S[L] : C[L];
-  return (0, r.jsxs)(u.Kqy, {
+    badge: L,
+    badgeType: R
+  } = (0, O.h6)({
+    isSelected: j
+  }), D = (0, m.isDesktop)() && x, k = (0, h.A)(), M = (0, m.isMac)() ? S[k] : D ? C[k] : T[k];
+  return (0, r.jsxs)(d.Kqy, {
     gap: 0,
     direction: "horizontal",
-    children: [(0, r.jsx)(u.LZC, {
-      size: R,
+    children: [(0, r.jsx)(d.LZC, {
+      size: M,
       horizontal: true
-    }), (0, r.jsx)(u.ua7, {
-      shouldShow: !T,
+    }), (0, r.jsx)(u.u, {
+      asContainer: true,
+      shouldShow: !P,
       text: y.intl.string(y.t.HcoRu7),
-      children: e => {
-        var n, i;
-        return (0, r.jsxs)(u.P3F, (n = function(e) {
-          for (var t = 1; t < arguments.length; t++) {
-            var n = null != arguments[t] ? arguments[t] : {},
-              r = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-              return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), r.forEach(function(t) {
-              var r;
-              r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: true,
-                configurable: true,
-                writable: true
-              }) : e[t] = r
-            })
-          }
-          return e
-        }({
-          innerRef: o,
-          className: a()(v.clickableContainer, {
-            [v.withHoverHighlight]: P
+      children: (0, r.jsxs)(d.P3F, (t = function(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var n = null != arguments[t] ? arguments[t] : {},
+            r = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(n, e).enumerable
+          }))), r.forEach(function(t) {
+            var r;
+            r = n[t], t in e ? Object.defineProperty(e, t, {
+              value: r,
+              enumerable: true,
+              configurable: true,
+              writable: true
+            }) : e[t] = r
           })
-        }, s, e, l), i = i = {
-          onMouseEnter: () => {
-            var t;
-            m(true), null == (t = e.onMouseEnter) || t.call(e)
-          },
-          onMouseLeave: () => {
-            var t;
-            m(false), null == (t = e.onMouseLeave) || t.call(e)
-          },
-          onClick: () => {
-            var n, r;
-            null == t || t(), null == l || null == (n = l.onClick) || n.call(l), null == (r = e.onClick) || r.call(e)
-          },
-          children: [(0, r.jsx)("div", {
-            className: a()(v.iconWrapper, null),
-            children: "unread" === Z ? (0, r.jsxs)(r.Fragment, {
-              children: [(0, r.jsx)(d.ZP, {
-                width: c.Z[j],
-                height: c.Z[j],
-                mask: d.ZP.Masks.HEADER_BAR_BADGE_BOTTOM,
-                children: x
-              }), (0, r.jsx)("div", {
-                className: a()(v.unreadDot, v[j])
-              })]
-            }) : x
-          }), A]
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
-          var n = Object.keys(e);
-          if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
-          }
-          return n
-        })(Object(i)).forEach(function(e) {
-          Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
-        }), n))
-      }
+        }
+        return e
+      }({
+        innerRef: g,
+        className: a()(I.clickableContainer, {
+          [I.withHoverHighlight]: Z
+        })
+      }, b, s), n = n = {
+        onMouseEnter: () => {
+          v(true)
+        },
+        onMouseLeave: () => {
+          v(false)
+        },
+        onClick: () => {
+          var e;
+          null == l || l(), null == s || null == (e = s.onClick) || e.call(s)
+        },
+        children: [(0, r.jsx)("div", {
+          className: a()(I.iconWrapper, null),
+          children: "unread" === R ? (0, r.jsxs)(r.Fragment, {
+            children: [(0, r.jsx)(p.ZP, {
+              width: c.Z[A],
+              height: c.Z[A],
+              mask: p.ZP.Masks.HEADER_BAR_BADGE_BOTTOM,
+              children: w
+            }), (0, r.jsx)("div", {
+              className: a()(I.unreadDot, I[A])
+            })]
+          }) : w
+        }), L]
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+        var n = Object.keys(e);
+        if (Object.getOwnPropertySymbols) {
+          var r = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, r)
+        }
+        return n
+      })(Object(n)).forEach(function(e) {
+        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+      }), t))
     })]
   })
 }
 
-function N() {
+function j() {
   let {
     focusSectionProps: e
   } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, t = Chunk647438.useRef(null), {
@@ -144,7 +142,7 @@ function N() {
   } = (0, Chunk821020.pN)({
     location: "NotificationsInboxButton"
   }), l = (0, Chunk442837.e7)([Chunk944486.Z], () => Chunk944486.Z.getChannelId()), a = Chunk647438.useMemo(() => Chunk981631.Z5c.CHANNEL(Chunk981631.STv, null != Chunk120356 ? Chunk120356 : true), [Chunk120356]), c = (0, Chunk128008.mv)();
-  return require === Chunk821020.jP.SIDEBAR ? (0, Chunk951288.jsx)(T, {
+  return require === Chunk821020.jP.SIDEBAR ? (0, Chunk951288.jsx)(N, {
     onClick: () => {
       Chunk212605(), (0, Chunk948789.uL)(a)
     },
@@ -154,7 +152,7 @@ function N() {
     popoutPosition: "bottom",
     popoutAlign: "left",
     spacing: 2,
-    children: (n, i, l) => (0, r.jsx)(T, {
+    children: (n, i, l) => (0, r.jsx)(N, {
       ref: t,
       selectedOverride: i,
       onClick: () => {

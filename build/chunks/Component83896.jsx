@@ -1,4 +1,4 @@
-/** Chunk was on 9665 **/
+/** Chunk was on 50118 **/
 /** chunk id: 83896, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   I: () => S
@@ -28,17 +28,17 @@ var Chunk951288 = require("./951288.js"),
 function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      i = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
+    }))), i.forEach(function(t) {
+      var i;
+      i = n[t], t in e ? Object.defineProperty(e, t, {
+        value: i,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = r
+      }) : e[t] = i
     })
   }
   return e
@@ -48,8 +48,8 @@ function E(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
+      var i = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, i)
     }
     return n
   })(Object(t)).forEach(function(n) {
@@ -63,16 +63,16 @@ function S(e) {
     channel: n,
     userId: l,
     setPopoutRef: S
-  } = e, P = i.useRef(null), I = (0, o.e7)([d.Z], () => d.Z.getVoiceChannelId() === n.id), Z = (0, o.e7)([u.Z], () => u.Z.can(_.Plq.CONNECT, n)), N = (null == t ? true : t.emoji) == null || (0, m.K)(t.emoji, n);
-  i.useEffect(() => {
+  } = e, P = r.useRef(null), I = (0, o.e7)([d.Z], () => d.Z.getVoiceChannelId() === n.id), Z = (0, o.e7)([u.Z], () => u.Z.can(_.Plq.CONNECT, n)), N = (null == t ? true : t.emoji) == null || (0, m.K)(t.emoji, n);
+  r.useEffect(() => {
     null == S || S(null == P ? true : P.current)
-  }, [P, S]), i.useEffect(() => {
+  }, [P, S]), r.useEffect(() => {
     p.default.track(_.rMx.VIEW_HANG_STATUS, j({
       source: "HangStatusPopout",
       other_user_id: l
     }, (0, g.Z)(n.id)))
   }, [n.guild_id, n.id, l]);
-  let T = i.useCallback(() => {
+  let T = r.useCallback(() => {
       !I && Z && (c.default.selectVoiceChannel(n.id), p.default.track(_.rMx.HANG_STATUS_CTA_CLICKED, E(j({
         source: "HangStatusPopout"
       }, (0, g.Z)(n.id)), {
@@ -80,11 +80,11 @@ function S(e) {
         cta_type: "join"
       })))
     }, [I, Z, n.id, l]),
-    A = i.useCallback(() => {
+    A = r.useCallback(() => {
       if (!I || !N || null == t.state) return;
       let [e] = (0, b.F)(l, t.state);
       if (null != e) {
-        if (e === C.tN.CUSTOM) {
+        if (e === y.tN.CUSTOM) {
           if (null == t.details || null == t.emoji) return;
           (0, h._s)(t.details, t.emoji, true)
         } else(0, h.Zx)(e, true);
@@ -96,22 +96,22 @@ function S(e) {
         }))
       }
     }, [I, N, t, n.id, l]);
-  return (0, r.jsxs)("div", {
+  return (0, i.jsxs)("div", {
     ref: P,
     className: a()(O.popover, x.container),
-    children: [(0, r.jsx)(y.Z, {
+    children: [(0, i.jsx)(C.Z, {
       userId: l,
       size: 32,
       className: x.icon,
       hangStatusActivity: t
-    }), (0, r.jsx)(s.Text, {
+    }), (0, i.jsx)(s.Text, {
       variant: "text-md/medium",
       className: x.statusText,
       children: (0, f.O8)(l, t)
-    }), I ? (0, r.jsx)(s.ua7, {
+    }), I ? (0, i.jsx)(s.ua7, {
       text: N ? true : v.intl.string(v.t["0LMpW1"]),
-      children: e => (0, r.jsx)("div", E(j({}, e), {
-        children: (0, r.jsx)(s.zxk, {
+      children: e => (0, i.jsx)("div", E(j({}, e), {
+        children: (0, i.jsx)(s.zxk, {
           size: "sm",
           variant: "secondary",
           text: v.intl.string(v.t["0eHzpq"]),
@@ -119,7 +119,7 @@ function S(e) {
           disabled: !N
         })
       }))
-    }) : Z && (0, r.jsx)(s.zxk, {
+    }) : Z && (0, i.jsx)(s.zxk, {
       size: "sm",
       variant: "secondary",
       text: v.intl.string(v.t["B/dHXF"]),

@@ -48,7 +48,7 @@ function C(e) {
     x = i.useCallback(() => {
       C && (p || m(true))
     }, [p, C]),
-    j = i.useMemo(() => {
+    M = i.useMemo(() => {
       var e;
       return C && (null == (e = f.current) ? true : e.clientHeight) != null ? {
         height: p ? T : f.current.clientHeight + S + A,
@@ -60,7 +60,7 @@ function C(e) {
       [I.clickable]: C && p
     }),
     onClick: L,
-    style: j,
+    style: M,
     children: [(0, r.jsxs)("div", {
       className: I.cardHeightMeasure,
       ref: f,

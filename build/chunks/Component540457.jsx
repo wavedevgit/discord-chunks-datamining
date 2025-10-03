@@ -2,75 +2,47 @@
 /** chunk id: 540457, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => s
+  A: () => a
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk481060 = require("./481060.js"),
+var Chunk28664 = require("./28664.jsx"),
+  Chunk481060 = require("./481060.js"),
   Chunk409483 = require("./409483.js");
 
-function s(e) {
+function a(e) {
   let {
     text: t,
     tooltipText: n,
-    onClick: s,
-    disabled: a
+    onClick: a,
+    disabled: o
   } = e;
-  return a ? (0, r.jsxs)("div", {
-    className: l.container,
-    children: [(0, r.jsx)(i.qJs, {
+  return o ? (0, r.jsxs)("div", {
+    className: s.container,
+    children: [(0, r.jsx)(l.qJs, {
       size: "md",
       color: "currentColor",
-      className: l.icon
-    }), (0, r.jsx)(i.Text, {
+      className: s.icon
+    }), (0, r.jsx)(l.Text, {
       color: "interactive-active",
       variant: "text-md/semibold",
       children: t
     })]
-  }) : (0, r.jsx)(i.ua7, {
+  }) : (0, r.jsx)(i.u, {
     text: n,
     shouldShow: null != n,
-    children: e => {
-      var n, a;
-      return (0, r.jsxs)(i.P3F, (n = function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-              value: r,
-              enumerable: true,
-              configurable: true,
-              writable: true
-            }) : e[t] = r
-          })
-        }
-        return e
-      }({}, e), a = a = {
-        className: l.container,
-        onClick: s,
-        children: [(0, r.jsx)(i.qJs, {
-          size: "md",
-          color: "currentColor",
-          className: l.icon
-        }), (0, r.jsx)(i.Text, {
-          color: "interactive-active",
-          variant: "text-md/semibold",
-          children: t
-        })]
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, r)
-        }
-        return n
-      })(Object(a)).forEach(function(e) {
-        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(a, e))
-      }), n))
-    }
+    children: (0, r.jsxs)(l.P3F, {
+      className: s.container,
+      onClick: a,
+      children: [(0, r.jsx)(l.qJs, {
+        size: "md",
+        color: "currentColor",
+        className: s.icon
+      }), (0, r.jsx)(l.Text, {
+        color: "interactive-active",
+        variant: "text-md/semibold",
+        children: t
+      })]
+    })
   })
 }

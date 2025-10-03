@@ -1,7 +1,7 @@
 /** Chunk was on 50751 **/
 /** chunk id: 585708, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => S
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -23,8 +23,8 @@ var Chunk13245 = require("./13245.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function b(e, t, n, b) {
-  var S;
+function S(e, t, n, S) {
+  var b;
   let {
     icon: x,
     title: j,
@@ -34,7 +34,7 @@ function b(e, t, n, b) {
     trackClick: Z
   } = (0, y.R)(O.n0.TextChat, {
     notif_type: O.n0.TextChat,
-    notif_user_id: null == (S = t.author) ? true : S.id,
+    notif_user_id: null == (b = t.author) ? true : b.id,
     message_id: t.id,
     message_type: t.type,
     guild_id: e.guild_id,
@@ -58,15 +58,15 @@ function b(e, t, n, b) {
       onSend: () => Z("send")
     }) : null,
     onNotificationShow: () => {
-      b && (0, u.GN)(c.Ay, c.yk), C()
+      S && (0, u.GN)(c.Ay, c.yk), C()
     },
     onNotificationClick: () => {
-      let n = (0, h.getPID)();
+      let n = (0, p.getPID)();
       (0, l.In)(e.id, {
         section: E.jXE.OVERLAY,
         object: E.qAy.ACK_TEXT_CHAT_NOTIFICATION,
         objectType: E.Qqv.ACK_SEMI_AUTOMATIC
-      }, true, true, t.id), f.ZP.isInputLocked(n) ? (Z("unlock"), r.Z.setInputLocked(false, n)) : (Z("jump"), (0, s.uL)(E.Z5c.CHANNEL(e.guild_id, e.id, t.id)), d.isPlatformEmbedded && p.ZP.focus())
+      }, true, true, t.id), f.ZP.isInputLocked(n) ? (Z("unlock"), r.Z.setInputLocked(false, n)) : (Z("jump"), (0, s.uL)(E.Z5c.CHANNEL(e.guild_id, e.id, t.id)), d.isPlatformEmbedded && h.ZP.focus())
     },
     onDismissClick: () => {
       Z("dismiss")

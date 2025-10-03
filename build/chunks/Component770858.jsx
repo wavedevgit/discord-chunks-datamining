@@ -35,15 +35,15 @@ function E(e) {
   let {
     onClick: d,
     selectedOverride: p = false,
-    popoutProps: h,
+    popoutProps: f,
     ref: _
-  } = e, j = (0, l.Ie)("notifications-inbox"), [E, S] = i.useState(false), P = (0, m.D)(), I = p || P, {
+  } = e, j = (0, l.Ie)("notifications-inbox"), [E, S] = i.useState(false), I = (0, m.D)(), P = p || I, {
     notificationCenterVariant: N
   } = (0, g.pN)({
     location: "NotificationsInboxButtonInner"
   }), {
-    badge: w,
-    badgeDimensions: Z,
+    badge: Z,
+    badgeDimensions: w,
     unreadChannelsCount: T
   } = function(e) {
     let {
@@ -61,38 +61,38 @@ function E(e) {
     return t === g.jP.LEGACY ? {
       badge: i ? (0, r.jsx)(a.fWl, {
         style: {
-          height: y.zw,
-          width: y.zw,
+          height: O.zw,
+          width: O.zw,
           position: "relative"
         },
         color: s.Z.STATUS_DANGER
       }) : null,
       unreadChannelsCount: 0,
       badgeDimensions: {
-        height: y.zw,
-        width: y.zw
+        height: O.zw,
+        width: O.zw
       }
     } : {
       badge: l,
       unreadChannelsCount: n.length,
       badgeDimensions: o
     }
-  }(I), A = N === g.jP.LEGACY ? a.xx7 : a.Dkj, R = (0, o.e7)([f.Z], () => f.Z.getChannelId()), D = i.useMemo(() => {
+  }(P), A = N === g.jP.LEGACY ? a.xx7 : a.Dkj, R = (0, o.e7)([h.Z], () => h.Z.getChannelId()), D = i.useMemo(() => {
     if (N === g.jP.SIDEBAR) return v.Z5c.CHANNEL(v.STv, R)
   }, [N, R]);
   return (0, r.jsxs)(u.H, {
     ref: _,
     children: [(0, r.jsx)(c.Z, {
-      selected: I && N === g.jP.SIDEBAR,
+      selected: P && N === g.jP.SIDEBAR,
       hovered: E && N === g.jP.SIDEBAR,
       unread: T > 0,
       className: x.pill,
       disabled: N === g.jP.LEGACY
-    }), (0, r.jsx)(O.Z, {
+    }), (0, r.jsx)(y.Z, {
       children: (0, r.jsx)(a.aRk, {
-        selected: I || E,
-        lowerBadge: w,
-        lowerBadgeSize: Z,
+        selected: P || E,
+        lowerBadge: Z,
+        lowerBadgeSize: w,
         children: (0, r.jsx)(a.LYs, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -110,10 +110,10 @@ function E(e) {
             })
           }
           return e
-        }({}, j, h), n = n = {
+        }({}, j, f), n = n = {
           onClick: d,
           to: D,
-          selected: I || E,
+          selected: P || E,
           onMouseEnter: () => S(true),
           onMouseLeave: () => S(false),
           children: (0, r.jsx)(A, {

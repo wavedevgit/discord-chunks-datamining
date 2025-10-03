@@ -32,7 +32,7 @@ function d(e) {
       onInviteClick: n,
       canInvite: t,
       isChannelPublic: i
-    } = e, c = new a.V7, [d, u] = r.useState(false);
+    } = e, c = new r.V7, [d, u] = a.useState(false);
     return ((0, o.ZP)(() => () => {
       c.stop()
     }), null == n) ? null : t && i ? {
@@ -55,8 +55,8 @@ function d(e) {
     onInviteClick: h,
     canInvite: d,
     isChannelPublic: u
-  }), j = [];
-  if (null != C && j.push(C), n && _ !== c.WX.EXTERNAL && j.push({
+  }), I = [];
+  if (null != C && I.push(C), n && _ !== c.WX.EXTERNAL && I.push({
       variant: "active",
       size: "sm",
       onClick: p,
@@ -73,14 +73,14 @@ function d(e) {
         isVoiceChannel: _ === c.WX.VOICE
       }),
       disabled: !x
-    }), t && null != f && j.push({
+    }), t && null != f && I.push({
       variant: "active",
       size: "sm",
       text: s.intl.string(s.t["2BP08P"]),
       onClick: f
     }), !t && !n && null != b) {
     let e = i && !t;
-    j.push({
+    I.push({
       variant: e ? "active" : "secondary",
       size: "sm",
       icon: e ? l.dz2 : l.Dkj,
@@ -89,17 +89,17 @@ function d(e) {
       disabled: t
     })
   }
-  return n || null == g || j.push({
+  return n || null == g || I.push({
     variant: "primary",
     size: "sm",
     onClick: g,
     text: s.intl.string(s.t.I0v0Qk)
-  }), n && null != m && j.push({
+  }), n && null != m && I.push({
     variant: "secondary",
     size: "sm",
     onClick: m,
     text: s.intl.string(s.t.qaYzPD)
-  }), j
+  }), I
 }
 
 function u(e) {

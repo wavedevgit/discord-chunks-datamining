@@ -136,7 +136,7 @@ class ex {
   }
 }
 
-function ej(e) {
+function eM(e) {
   let {
     content: t,
     channelId: n,
@@ -151,7 +151,7 @@ function ej(e) {
       code: c,
       url: u
     } = e;
-    if (t === b.g.INVITE) eM({
+    if (t === b.g.INVITE) ej({
       inviteKey: c,
       channelId: n,
       messageId: r,
@@ -199,7 +199,7 @@ function ej(e) {
   })
 }
 
-function eM(e) {
+function ej(e) {
   var t, n;
   let {
     inviteKey: r,
@@ -516,7 +516,7 @@ let eB = {
         oldFormErrors: true,
         rejectWithError: false
       }).then(e => {
-        if (e.body.length > 0) return (0, j.e5)(e.body[0])
+        if (e.body.length > 0) return (0, M.e5)(e.body[0])
       })
     },
     fetchMessages(e) {
@@ -715,7 +715,7 @@ let eB = {
       });
       let s = () => eZ._sendMessage(e, t, i),
         l = x.ZP.backgroundify(s, true);
-      return (M.Z.recordMessageSendAttempt(e, o, i), es.Z.isReady(e)) ? l() : r && e !== E.V ? (eD.info("Waiting for channel ".concat(e, " to be ready before sending.")), new Promise((t, n) => {
+      return (j.Z.recordMessageSendAttempt(e, o, i), es.Z.isReady(e)) ? l() : r && e !== E.V ? (eD.info("Waiting for channel ".concat(e, " to be ready before sending.")), new Promise((t, n) => {
         es.Z.whenReady(e, () => {
           eD.info("Channel ".concat(e, " is ready for sending now.")), l().then(t, n)
         })
@@ -888,8 +888,8 @@ let eB = {
           announcementSendOptions: D
         } = n,
         x = null != (i = n.flags) ? i : 0,
-        [j, Y] = (0, ee.Z)(d);
-      j && (d = Y, x = (0, ep.pj)(x, eO.iLy.SUPPRESS_NOTIFICATIONS));
+        [M, Y] = (0, ee.Z)(d);
+      M && (d = Y, x = (0, ep.pj)(x, eO.iLy.SUPPRESS_NOTIFICATIONS));
       let Q = false,
         J = (null == (r = n.messageReference) ? true : r.type) === eO.Uvt.FORWARD;
       if ("" === d && null == h && null == E && null == I && null == T && null == S && !J && (null == R || 0 === R.length) && (null == t.components || 0 === t.components.length))
@@ -1007,7 +1007,7 @@ let eB = {
                 joinRequestUserId: n
               })
             }
-            M.Z.recordMessageSendApiResponse(en), s.Z.dispatch({
+            j.Z.recordMessageSendApiResponse(en), s.Z.dispatch({
               type: "SLOWMODE_RESET_COOLDOWN",
               slowmodeType: ed.S.SendMessage,
               channelId: e
@@ -1023,7 +1023,7 @@ let eB = {
                 channel_id: e,
                 author: ef.default.getCurrentUser()
               }
-            }), ej({
+            }), eM({
               content: d,
               channelId: e,
               messageId: o.body.id,
@@ -1247,6 +1247,6 @@ let eB = {
         confirmText: eS.intl.string(eS.t.BddRzc)
       })
     }),
-    trackInvite: eM
+    trackInvite: ej
   },
   eF = eZ

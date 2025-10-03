@@ -1,7 +1,7 @@
 /** Chunk was on 51727 **/
 /** chunk id: 324081, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => P
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -28,14 +28,14 @@ var Chunk120356 = require("./120356.js"),
   Chunk594174 = require("./594174.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk888097 = require("./888097.js");
-let P = {
+let I = {
   top: 8,
   bottom: 8,
   left: false,
   right: false
 };
 
-function I(e) {
+function P(e) {
   var t, n;
   let {
     channel: i,
@@ -46,7 +46,7 @@ function I(e) {
     toggleCollapsed: d
   } = e, p = (0, o.JA)("recents-header-".concat(i.id, "-").concat((0, b.Dt)()));
   return (0, r.jsx)(s.tEY, {
-    offset: P,
+    offset: I,
     children: (0, r.jsxs)("div", (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -98,20 +98,20 @@ function N(e) {
     channel: t,
     gotoChannel: n
   } = e;
-  return t.isPrivate() ? (0, r.jsx)(w, {
+  return t.isPrivate() ? (0, r.jsx)(Z, {
     channel: t,
     gotoChannel: n
-  }) : (0, r.jsx)(Z, {
+  }) : (0, r.jsx)(w, {
     channel: t,
     gotoChannel: n
   })
 }
 
-function w(e) {
+function Z(e) {
   let {
     channel: t,
     gotoChannel: n
-  } = e, i = (0, a.e7)([C.default], () => t.isDM() ? C.default.getUser(t.getRecipientId()) : null), l = null == i ? (0, f.x)(t) : i.getAvatarURL(true, 40);
+  } = e, i = (0, a.e7)([C.default], () => t.isDM() ? C.default.getUser(t.getRecipientId()) : null), l = null == i ? (0, h.x)(t) : i.getAvatarURL(true, 40);
   return (0, r.jsx)(s.P3F, {
     onClick: n,
     tabIndex: false,
@@ -124,7 +124,7 @@ function w(e) {
   })
 }
 
-function Z(e) {
+function w(e) {
   let {
     channel: t,
     gotoChannel: n
@@ -145,14 +145,14 @@ function T(e) {
     channel: t,
     gotoChannel: n,
     mentionCount: i
-  } = e, o = (0, a.e7)([v.Z], () => v.Z.getGuild(t.guild_id)), c = (0, a.e7)([y.Z], () => y.Z.getChannel(t.parent_id)), u = (0, a.e7)([x.ZP], () => x.ZP.getIsMentionLowImportance(t.id)), d = (0, g.KS)(t, o), p = (0, h.ZP)(t, false), f = null == c ? null == o ? true : o.name : "".concat(null == o ? true : o.name, " › ").concat(c.name), b = t.isMultiUserDM() ? E.intl.formatToPlainString(E.t.CxSA5O, {
+  } = e, o = (0, a.e7)([v.Z], () => v.Z.getGuild(t.guild_id)), c = (0, a.e7)([O.Z], () => O.Z.getChannel(t.parent_id)), u = (0, a.e7)([x.ZP], () => x.ZP.getIsMentionLowImportance(t.id)), d = (0, g.KS)(t, o), p = (0, f.ZP)(t, false), h = null == c ? null == o ? true : o.name : "".concat(null == o ? true : o.name, " › ").concat(c.name), b = t.isMultiUserDM() ? E.intl.formatToPlainString(E.t.CxSA5O, {
     members: t.recipients.length + 1
   }) : t.isPrivate() ? (0, r.jsx)(A, {
     channel: t
   }) : (0, r.jsx)(s.P3F, {
     className: l()(S.subtext, S.guildName),
     onClick: n,
-    children: f
+    children: h
   });
   return (0, r.jsxs)("div", {
     className: S.channelNameSection,
@@ -196,34 +196,34 @@ function A(e) {
     status: i,
     activities: l,
     applicationStream: o
-  } = (0, a.cj)([C.default, j.Z, O.Z], () => {
+  } = (0, a.cj)([C.default, j.Z, y.Z], () => {
     let e = C.default.getUser(t.getRecipientId());
     return {
       user: e,
       status: null != e ? j.Z.getStatus(e.id) : null,
       activities: null != e ? j.Z.getActivities(e.id) : null,
-      applicationStream: null != e ? O.Z.getAnyStreamForUser(e.id) : null
+      applicationStream: null != e ? y.Z.getAnyStreamForUser(e.id) : null
     }
   }), {
     voiceActivityStatusEnabled: s
   } = (0, c.U)({
     location: "RecentsChannelHeader"
   }), {
-    voiceChannel: f
+    voiceChannel: h
   } = (0, d.Z)({
     userId: null == n ? true : n.id
-  }), h = s ? f : true;
+  }), f = s ? h : true;
   return (0, u.Z)({
     activities: l,
     status: i,
     applicationStream: o,
-    voiceChannel: h
+    voiceChannel: f
   }) ? (0, r.jsx)(p.Z, {
     location: "RecentsChannelHeader",
     user: n,
     activities: l,
     applicationStream: o,
-    voiceChannel: h,
+    voiceChannel: f,
     hideTooltip: true
   }) : null
 }

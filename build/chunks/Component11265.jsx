@@ -22,15 +22,15 @@ let m = Chunk647438.memo(function(e) {
     isStuck: p,
     onExpand: f,
     disableAnimation: h,
-    disableBackground: b
-  } = e, [x, j] = i.useState(true), [v, _] = i.useState(false), {
-    ref: O,
-    height: y = 0
-  } = (0, c.ZP)(), {
+    disableBackground: x
+  } = e, [b, j] = i.useState(true), [_, v] = i.useState(false), {
     ref: C,
+    height: O = 0
+  } = (0, c.ZP)(), {
+    ref: y,
     height: N = 0
   } = (0, c.ZP)(), [E, I] = i.useState(g), S = (0, o.q_F)({
-    height: E ? N + y : y,
+    height: E ? N + O : O,
     config: (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -61,14 +61,14 @@ let m = Chunk647438.memo(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t),
     onStart: () => {
-      _(false)
+      v(false)
     },
     onRest: () => {
-      _(true)
+      v(true)
     }
-  }, x || h ? "animate-never" : "respect-motion-settings");
+  }, b || h ? "animate-never" : "respect-motion-settings");
   return i.useLayoutEffect(() => {
-    _(false), I(g)
+    v(false), I(g)
   }, [g]), i.useLayoutEffect(() => {
     let e = setTimeout(() => {
       j(false)
@@ -77,15 +77,15 @@ let m = Chunk647438.memo(function(e) {
   }, []), (0, r.jsx)(o.P3F, {
     className: s()(u.editCard, {
       [u.toggled]: g,
-      [u.noBackground]: b
+      [u.noBackground]: x
     }),
     children: (0, r.jsxs)(a.animated.div, {
       className: s()(u.contentExpandContainer, {
-        [u.showOverflow]: g && v
+        [u.showOverflow]: g && _
       }),
       style: S,
       children: [(0, r.jsx)(o.P3F, {
-        innerRef: O,
+        innerRef: C,
         onClick: p ? true : f,
         className: s()(u.innerHeader, {
           [u.toggled]: g && p
@@ -93,7 +93,7 @@ let m = Chunk647438.memo(function(e) {
         "aria-label": d.intl.string(d.t.dcl9MT),
         children: l
       }), (0, r.jsx)("div", {
-        ref: C,
+        ref: y,
         children: m
       })]
     })

@@ -1,5 +1,5 @@
 /** Chunk was on 77803 **/
-/** chunk id: 78673, original params: e,t,n (module,exports,require) **/
+/** chunk id: 78673, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   I: () => c
 }), require("./953529.js");
@@ -14,16 +14,16 @@ var Chunk120356 = require("./120356.js"),
 
 function c(e) {
   let {
-    title: t,
-    description: n,
+    title: n,
+    description: t,
     headerImage: i,
     onDetails: c,
     onPurchase: d,
     PurchaseButton: p,
-    GiftButton: b,
-    availabilityLabel: m
+    GiftButton: m,
+    availabilityLabel: b
   } = e;
-  return (0, r.jsx)(o.tE, {
+  return (0, r.jsx)(s.tE, {
     children: (0, r.jsxs)("div", {
       className: l()(u.wrapper, a.hoverCard),
       tabIndex: 0,
@@ -38,7 +38,7 @@ function c(e) {
         style: null != i ? {
           backgroundImage: null != i ? "url(".concat(i.toString(), ")") : true
         } : true,
-        children: null == i && (0, r.jsx)(s.Prq, {
+        children: null == i && (0, r.jsx)(o.Prq, {
           color: "white",
           size: "custom",
           height: 80,
@@ -46,29 +46,29 @@ function c(e) {
         })
       }), (0, r.jsxs)("div", {
         className: u.details,
-        children: [(0, r.jsx)(s.xvT, {
+        children: [(0, r.jsx)(o.xvT, {
           color: "header-primary",
           variant: "text-md/semibold",
-          children: t
-        }), null != n && (0, r.jsx)(s.xvT, {
+          children: n
+        }), null != t && (0, r.jsx)(o.xvT, {
           className: u.description,
           color: "text-muted",
           variant: "text-sm/normal",
-          children: n
+          children: t
         })]
-      }), (null != p || null != b) && (0, r.jsxs)("div", {
+      }), (null != p || null != m) && (0, r.jsxs)("div", {
         className: u.footer,
-        children: [null != p && (0, r.jsx)(s.xvT, {
+        children: [null != p && (0, r.jsx)(o.xvT, {
           color: "interactive-normal",
           variant: "text-sm/normal",
-          children: m
+          children: b
         }), (0, r.jsxs)("div", {
           className: u.buttonGroup,
           children: [null != p && (0, r.jsx)(p, {
             onClick: e => {
               e.stopPropagation(), null == d || d()
             }
-          }), null != b && (0, r.jsx)(b, {})]
+          }), null != m && (0, r.jsx)(m, {})]
         })]
       })]
     })

@@ -6,15 +6,15 @@ require.d(exports, {
 var Chunk647438 = require("./647438.js");
 
 function a(e, t, n) {
-  let a = r.useRef(null),
-    [s, l] = r.useState(false),
-    i = r.useCallback(() => {
+  let a = l.useRef(null),
+    [s, r] = l.useState(false),
+    i = l.useCallback(() => {
       if (e && null !== a.current) {
         var n;
-        l((null == (n = a.current) ? true : n.offsetHeight) > 2.5 * t)
+        r((null == (n = a.current) ? true : n.offsetHeight) > 2.5 * t)
       }
-    }, [l, e, t]);
-  return r.useLayoutEffect(() => {
+    }, [r, e, t]);
+  return l.useLayoutEffect(() => {
     i()
   }, [i, e, n]), {
     postTitleRef: a,

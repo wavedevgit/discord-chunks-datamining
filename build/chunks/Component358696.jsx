@@ -2,67 +2,29 @@
 /** chunk id: 358696, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  E: () => y,
-  J: () => g
+  E: () => g,
+  J: () => p
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
+  Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk686546 = require("./686546.jsx"),
   Chunk442550 = require("./442550.jsx"),
   Chunk264832 = require("./264832.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk255332 = require("./255332.js");
-
-function f(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function _(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      f(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function p(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-let m = {
+let _ = {
   none: true,
   default: Chunk255332.aspectRatio,
   crunchyroll: a()(Chunk255332.aspectRatio, Chunk255332.crunchyroll)
 };
-var g = function(e) {
+var p = function(e) {
   return e.SIZE_60 = "size-60", e.SIZE_72 = "size-72", e.SIZE_100 = "size-100", e
 }({});
-let E = {
+let h = {
   "size-60": {
     imageSize: 60,
     smallImageSize: 24,
@@ -80,84 +42,81 @@ let E = {
   }
 };
 
-function b(e) {
+function m(e) {
   let {
     children: t,
     onClick: n
   } = e;
-  return null == n ? t : (0, r.jsx)(o.P3F, {
+  return null == n ? t : (0, r.jsx)(s.P3F, {
     onClick: n,
-    className: d.clickable,
+    className: f.clickable,
     children: t
   })
 }
 
-function y(e) {
-  var t, n;
+function g(e) {
+  var t, n, i;
   let {
-    image: i,
-    smallImage: f,
-    aspectRatio: p,
-    onClick: g,
-    size: y,
-    className: O
+    image: s,
+    smallImage: p,
+    aspectRatio: g,
+    onClick: E,
+    size: b,
+    className: y
   } = e, {
-    imageSize: v,
-    smallImageSize: I,
-    mask: T
-  } = E[y];
-  if (null == i) return (0, r.jsx)(l.f, {
+    imageSize: O,
+    smallImageSize: v,
+    mask: I
+  } = h[b];
+  if (null == s) return (0, r.jsx)(c.f, {
     src: true,
-    alt: u.intl.string(u.t["2B/phI"]),
-    size: v,
-    className: a()(d.contentImage, m[null != p ? p : "default"], O),
+    alt: d.intl.string(d.t["2B/phI"]),
+    size: O,
+    className: a()(f.contentImage, _[null != g ? g : "default"], y),
     constrain: "width"
   });
-  let S = (0, r.jsx)(l.f, {
-    src: i.src,
-    alt: null != (n = null != (t = i.alt) ? t : i.text) ? n : u.intl.string(u.t["2B/phI"]),
-    size: v,
-    className: a()(d.contentImage, m[null != p ? p : "default"]),
+  let T = (0, r.jsx)(c.f, {
+    src: s.src,
+    alt: null != (n = null != (t = s.alt) ? t : s.text) ? n : d.intl.string(d.t["2B/phI"]),
+    size: O,
+    className: a()(f.contentImage, _[null != g ? g : "default"]),
     constrain: "width"
   });
   return (0, r.jsxs)("div", {
-    className: a()(d.imagePosition, O),
-    children: [(0, r.jsx)(o.ua7, {
-      text: i.text,
-      children: e => (0, r.jsx)(b, {
-        onClick: g,
-        children: (0, r.jsx)(c._, {
-          href: i.url,
-          children: null != f ? (0, r.jsx)(s.ZP, h(_({}, e), {
-            className: d.imageContainer,
-            mask: T,
-            width: v,
-            height: v,
-            children: S
-          })) : (0, r.jsx)("div", h(_({}, e), {
-            className: d.imageContainer,
-            children: S
-          }))
+    className: a()(f.imagePosition, y),
+    children: [(0, r.jsx)(o.u, {
+      text: s.text,
+      children: (0, r.jsx)(m, {
+        onClick: E,
+        children: (0, r.jsx)(u._, {
+          href: s.url,
+          children: null != p ? (0, r.jsx)(l.ZP, {
+            className: f.imageContainer,
+            mask: I,
+            width: O,
+            height: O,
+            children: T
+          }) : (0, r.jsx)("div", {
+            className: f.imageContainer,
+            children: T
+          })
         })
       })
-    }), null != f && (0, r.jsx)(o.ua7, {
-      text: f.text,
-      children: e => {
-        var t;
-        return (0, r.jsx)(c._, {
-          href: f.url,
-          children: (0, r.jsx)("div", h(_({}, e), {
-            className: d.smallImageContainer,
-            children: (0, r.jsx)(l.f, {
-              src: f.src,
-              alt: null != (t = f.alt) ? t : f.text,
-              size: I,
-              className: d.contentImage,
-              constrain: "width"
-            })
-          }))
+    }), null != p && (0, r.jsx)(o.u, {
+      text: p.text,
+      children: (0, r.jsx)(u._, {
+        href: p.url,
+        children: (0, r.jsx)("div", {
+          className: f.smallImageContainer,
+          children: (0, r.jsx)(c.f, {
+            src: p.src,
+            alt: null != (i = p.alt) ? i : p.text,
+            size: v,
+            className: f.contentImage,
+            constrain: "width"
+          })
         })
-      }
+      })
     })]
   })
 }

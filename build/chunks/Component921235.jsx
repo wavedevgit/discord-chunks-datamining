@@ -1,4 +1,4 @@
-/** Chunk was on 9665 **/
+/** Chunk was on 50118 **/
 /** chunk id: 921235, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -28,17 +28,17 @@ function O(e) {
   var t;
   let {
     channel: n
-  } = e, [l, O] = i.useState("");
-  i.useEffect(() => {
+  } = e, [l, O] = r.useState("");
+  r.useEffect(() => {
     (0, u.FQ)("847199849233514549", true)
   }, []);
-  let j = (0, o.e7)([f.Z, h.default], () => !!a()(f.Z.getMessages(n.id).toArray()).reverse().find(e => e.author.id !== h.default.getId() && e.state === C.yb.SENT && !(0, y.Z)(e))),
+  let j = (0, o.e7)([f.Z, h.default], () => !!a()(f.Z.getMessages(n.id).toArray()).reverse().find(e => e.author.id !== h.default.getId() && e.state === y.yb.SENT && !(0, C.Z)(e))),
     E = (0, o.e7)([m.default], () => m.default.getUser(n.isPrivate() ? n.getRecipientId() : null)),
     S = null != (t = b.ZP.useName(E)) ? t : _.intl.string(_.t.y1Wu2d),
     P = (0, o.e7)([d.Z], () => d.Z.getStickerById(x)),
-    I = i.useCallback(async () => {
+    I = r.useCallback(async () => {
       if (null == l || "" === l) try {
-        await c.Z.sendGreetMessage(n.id, x), g.default.track(C.rMx.DM_EMPTY_ACTION, {
+        await c.Z.sendGreetMessage(n.id, x), g.default.track(y.rMx.DM_EMPTY_ACTION, {
           channel_id: n.id,
           channel_type: n.type,
           source: "Wave",
@@ -51,34 +51,34 @@ function O(e) {
     Z = _.intl.formatToPlainString(_.t.m0zYbW, {
       username: S
     }),
-    N = null != l && "" !== l ? (0, r.jsx)(s.Text, {
+    N = null != l && "" !== l ? (0, i.jsx)(s.Text, {
       className: v.error,
       color: "text-danger",
       variant: "text-sm/normal",
       children: l
     }) : null;
-  return j ? (0, r.jsxs)("div", {
+  return j ? (0, i.jsxs)("div", {
     className: v.containerCompact,
-    children: [(0, r.jsxs)(s.P3F, {
+    children: [(0, i.jsxs)(s.P3F, {
       className: null != l && "" !== l ? v.compactButtonDisabled : v.compactButton,
       "aria-label": _.intl.string(_.t.pJObYG),
       onClick: I,
-      children: [(0, r.jsx)(p.Z, {
+      children: [(0, i.jsx)(p.Z, {
         sticker: P,
         size: 24
-      }), (0, r.jsx)(s.Text, {
+      }), (0, i.jsx)(s.Text, {
         className: v.text,
         variant: "text-md/medium",
         children: Z
       })]
     }), N]
-  }) : (0, r.jsxs)("div", {
+  }) : (0, i.jsxs)("div", {
     className: v.containerExpanded,
-    children: [(0, r.jsx)(p.Z, {
+    children: [(0, i.jsx)(p.Z, {
       sticker: P,
       size: 160,
       className: v.stickerExpanded
-    }), (0, r.jsx)(s.zxk, {
+    }), (0, i.jsx)(s.zxk, {
       fullWidth: true,
       variant: "primary",
       size: "md",

@@ -436,9 +436,9 @@ class ei extends Chunk647438.PureComponent {
       })
     }), Z(this, "handleDateChange", e => {
       let t = (0, P.Tm)(this.props.searchContext);
-      (0, M.bh)({
+      (0, j.bh)({
         searchContext: this.props.searchContext,
-        searchQuery: j.Z.getSearchResultsQuery(t),
+        searchQuery: M.Z.getSearchResultsQuery(t),
         searchQueryString: L.Z.getSearchInputText(this.props.searchContext),
         searchTokenType: this.props.resultsState.mode.filter,
         searchAutocompleteGroup: U.rtL.DATES,
@@ -509,7 +509,7 @@ class ei extends Chunk647438.PureComponent {
         let e = i.find(e => (null == e ? true : e.group) === U.rtL.HISTORY);
         if (null != e) {
           let t = r - (l - e.results.length);
-          (0, M.$z)({
+          (0, j.$z)({
             searchContext: this.props.searchContext,
             searchHistoryIndex: t,
             searchHistoryTotalResults: e.results.length
@@ -528,9 +528,9 @@ class ei extends Chunk647438.PureComponent {
           f = s.result.channel,
           _ = d === U.dCx.FILTER_IN && null != f && f.id === I.Z.getChannelId(),
           p = (0, P.Tm)(this.props.searchContext);
-        (0, M.bh)({
+        (0, j.bh)({
           searchContext: this.props.searchContext,
-          searchQuery: j.Z.getSearchResultsQuery(p),
+          searchQuery: M.Z.getSearchResultsQuery(p),
           searchQueryString: L.Z.getSearchInputText(this.props.searchContext),
           searchTokenType: d,
           searchAutocompleteGroup: null != (u = s.group) ? u : a,
@@ -584,7 +584,7 @@ class ei extends Chunk647438.PureComponent {
         searchContext: i
       } = this.props;
       if (!this.shouldShowSearchInSelectedChannel() || null == r) returnfalse;
-      (0, M.tA)({
+      (0, j.tA)({
         searchContext: i,
         searchAutocompleteSelectAction: n
       });

@@ -24,15 +24,15 @@ let p = e => {
       onSelectEmoji: p,
       onClearPressed: f,
       reasonMinLength: h,
-      reasonMaxLength: b,
-      placeholder: x,
+      reasonMaxLength: x,
+      placeholder: b,
       position: j
-    } = e, v = i.useRef(null), [_, O] = i.useState(false), y = (0, l.e7)([u.Z], () => u.Z.isGuildMetadataLoaded()), C = (0, r.jsx)(s.yRy, {
-      targetElementRef: v,
+    } = e, _ = i.useRef(null), [v, C] = i.useState(false), O = (0, l.e7)([u.Z], () => u.Z.isGuildMetadataLoaded()), y = (0, r.jsx)(s.yRy, {
+      targetElementRef: _,
       onRequestClose: () => {
-        O(false)
+        C(false)
       },
-      shouldShow: _,
+      shouldShow: v,
       position: "right",
       align: "top",
       animation: s.yRy.Animation.NONE,
@@ -55,25 +55,25 @@ let p = e => {
       children: () => (0, r.jsx)(o.Z, {
         active: false,
         onClick: () => {
-          O(true)
+          C(true)
         },
         tabIndex: 0,
         renderButtonContents: null != d ? () => (0, r.jsx)(a.Z, {
           emojiName: d,
           animated: false
         }) : null,
-        ref: v
+        ref: _
       })
     });
     return (0, r.jsx)(s.oil, {
-      placeholder: x,
+      placeholder: b,
       value: n,
       minLength: h,
-      maxLength: b,
+      maxLength: x,
       defaultDirty: (null == n ? true : n.length) > 0,
       leading: {
         type: "emoji",
-        button: C
+        button: y
       },
       onChange: e => {
         g(e)
@@ -82,7 +82,7 @@ let p = e => {
         show: (null != (t = null == n ? true : n.length) ? t : 0) > 0 || null != d
       },
       onClear: f
-    }, "text-input-".concat(j, "-").concat(y))
+    }, "text-input-".concat(j, "-").concat(O))
   },
   f = e => {
     let {

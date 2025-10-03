@@ -22,7 +22,7 @@ function A(e) {
     if (null == e) return null;
     let t = new Date(e).getTime();
     return (0, u.fv)(t, u.jq.JOINED_AT)
-  }, []), g = l.useMemo(() => null == t ? null : m(I), [t, m, I]), N = l.useMemo(() => (0, o.J)(t.communicationDisabledUntil), [t.communicationDisabledUntil]), O = l.useMemo(() => null == t.communicationDisabledUntil ? new Date : new Date(t.communicationDisabledUntil), [t.communicationDisabledUntil]);
+  }, []), g = l.useMemo(() => null == t ? null : m(I), [t, m, I]), N = l.useMemo(() => (0, o.J)(t.communicationDisabledUntil), [t.communicationDisabledUntil]), h = l.useMemo(() => null == t.communicationDisabledUntil ? new Date : new Date(t.communicationDisabledUntil), [t.communicationDisabledUntil]);
   return null != I || N ? (0, r.jsx)(s.xJW, {
     title: d.intl.string(d.t["7V375+"]),
     titleClassName: _.infoTitle,
@@ -44,7 +44,7 @@ function A(e) {
           color: "text-default",
           children: g
         })
-      }), N && null != O && (0, r.jsx)(E._2, {
+      }), N && null != h && (0, r.jsx)(E._2, {
         icon: (0, r.jsx)(s.YlB, {
           size: "custom",
           color: "currentColor",
@@ -60,7 +60,7 @@ function A(e) {
           variant: "text-sm/semibold",
           color: "text-default",
           children: (0, r.jsx)(a.Z, {
-            deadline: O,
+            deadline: h,
             showUnits: true,
             stopAtOneSec: true
           })

@@ -104,10 +104,10 @@ let ei = 5 * Chunk70956.Z.Millis.SECOND,
   ec = [],
   ed = {};
 
-function ep(e, t, n) {
+function eh(e, t, n) {
   null == ed[e] && (ed[e] = {}), ed[e][t] = n
 }
-let eh = 30 * Chunk70956.Z.Millis.MINUTE,
+let ep = 30 * Chunk70956.Z.Millis.MINUTE,
   ef = 2 * Chunk70956.Z.Millis.MINUTE;
 
 function em() {
@@ -187,13 +187,13 @@ function eE(e, t) {
 
 function ev(e) {
   var t;
-  let n = S.Z.getUserGame(e);
+  let n = b.Z.getUserGame(e);
   if (null == n) return null;
-  let i = null == (t = S.Z.getNowPlaying(n.gameId)[e]) ? true : t.activity;
+  let i = null == (t = b.Z.getNowPlaying(n.gameId)[e]) ? true : t.activity;
   return null == i || i.type !== q.IIU.PLAYING ? null : i
 }
 
-function eb() {
+function eS() {
   if (!(0, Chunk32300.Yo)("OverlayNotificationStore") || Chunk624864.Z.isNotificationDisabled(Chunk486016.OverlayNotificationDisabledSetting.NOW_PLAYING)) returnfalse;
   let e = Chunk649974.Z.usersPlaying,
     t = new Set,
@@ -222,14 +222,14 @@ function eb() {
     if (! function(e, t) {
         var n, i;
         let r = null === (n = null == (i = ed[e]) ? true : i[t]) || true === n ? true : n.lastSentTimestamp;
-        return null == r || Date.now() - r > eh
-      }(i, e)) return ep(i, e, {
+        return null == r || Date.now() - r > ep
+      }(i, e)) return eh(i, e, {
       userId: e,
       gameId: i,
       lastSentTimestamp: Date.now()
     }), false;
     let s = (0, Y.Z)(e, i, r);
-    return null != s && (ep(i, e, {
+    return null != s && (eh(i, e, {
       userId: e,
       gameId: i,
       lastSentTimestamp: Date.now()
@@ -256,7 +256,7 @@ function eb() {
     } return i
 }
 
-function eS(e) {
+function eb(e) {
   let {
     channelId: t,
     ringing: n
@@ -283,7 +283,7 @@ function ej(e, t) {
 }
 class eI extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk592125.Z, Chunk594174.default, Chunk649974.Z, Chunk624864.Z, Chunk199902.Z, Chunk944486.Z, Chunk358221.Z, Chunk19780.Z), this.syncWith([Chunk649974.Z], eb),
+    this.waitFor(Chunk592125.Z, Chunk594174.default, Chunk649974.Z, Chunk624864.Z, Chunk199902.Z, Chunk944486.Z, Chunk358221.Z, Chunk19780.Z), this.syncWith([Chunk649974.Z], eS),
       function() {
         let e = Chunk944486.Z.getVoiceChannelId(),
           t = Chunk314897.default.getId(),
@@ -339,10 +339,10 @@ let eC = new eI(Chunk570140.Z, {
     let {
       channelId: r,
       message: o
-    } = e, a = E.Z.getChannel(r), s = N.default.getUser(null == (t = o.author) ? true : t.id);
+    } = e, a = E.Z.getChannel(r), s = w.default.getUser(null == (t = o.author) ? true : t.id);
     if (null == a || null == s) returnfalse;
     if ([q.mFx.JOIN, q.mFx.JOIN_REQUEST, q.mFx.STREAM_REQUEST].includes(null == (n = o.activity) ? true : n.type)) {
-      if (!(0, h.eF)(o, r, true, true)) returnfalse;
+      if (!(0, p.eF)(o, r, true, true)) returnfalse;
       let e = function(e, t, n) {
         var i;
         let r, o;
@@ -386,9 +386,9 @@ let eC = new eI(Chunk570140.Z, {
       }(a, o, s);
       if (false !== e) return e
     }
-    if (M.Z.isNotificationDisabled(R.OverlayNotificationDisabledSetting.TEXT_CHAT) || w.Z.disableNotifications || !(0, h.eF)(o, r)) returnfalse;
-    let u = !b.Z.isSoundDisabled(_.Ay),
-      c = null != (i = v.Z.getMessage(r, o.id)) ? i : (0, p.e5)(o);
+    if (M.Z.isNotificationDisabled(R.OverlayNotificationDisabledSetting.TEXT_CHAT) || N.Z.disableNotifications || !(0, p.eF)(o, r)) returnfalse;
+    let u = !S.Z.isSoundDisabled(_.Ay),
+      c = null != (i = v.Z.getMessage(r, o.id)) ? i : (0, h.e5)(o);
     eE((0, K.Z)(a, c, s, u), {
       type: z.kL.TEXT,
       channelId: a.id,
@@ -407,15 +407,15 @@ let eC = new eI(Chunk570140.Z, {
     }(t)
   },
   MESSAGE_ACK: function() {},
-  CALL_CREATE: eS,
-  CALL_UPDATE: eS,
+  CALL_CREATE: eb,
+  CALL_UPDATE: eb,
   CALL_DELETE: function(e) {
     let {
       channelId: t
     } = e;
     ey(eO(t))
   },
-  GUILD_RING_START: eS,
+  GUILD_RING_START: eb,
   GUILD_RING_STOP: function(e) {
     let {
       channelId: t,

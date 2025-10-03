@@ -107,7 +107,7 @@ let P = e => {
 
 function w(e, t) {
   var n, r;
-  let a = i.useContext(M),
+  let a = i.useContext(j),
     o = i.useCallback(t => {
       var n;
       let r = (0, v.Z)(e, t, null != a.modal ? "modal" : "message");
@@ -190,12 +190,12 @@ function x(e) {
   }
 }
 
-function j(e) {
+function M(e) {
   return () => {
     throw Error("".concat(e, " does not support parents"))
   }
 }
-let M = Chunk647438.createContext(null);
+let j = Chunk647438.createContext(null);
 
 function k(e) {
   let {
@@ -233,25 +233,25 @@ function k(e) {
       validators: s,
       validationErrors: l,
       setValidationErrors: c,
-      getParents: j("ApplicationWidget")
+      getParents: M("ApplicationWidget")
     };
     throw Error("ComponentStateContextProvider requires at least one of message, modal, or applicationWidget")
   }, [n, a, o, u, s, l, c]);
-  return (0, r.jsx)(M.Provider, {
+  return (0, r.jsx)(j.Provider, {
     value: d,
     children: t
   })
 }
 
 function U(e, t) {
-  return i.useContext(M).useComponentState(e, t)
+  return i.useContext(j).useComponentState(e, t)
 }
 
 function G() {
-  return Chunk647438.useContext(M)
+  return Chunk647438.useContext(j)
 }
 
 function B(e) {
   var t, n;
-  return null != (n = null == (t = i.useContext(M).validationErrors) ? true : t[e.id]) ? n : null
+  return null != (n = null == (t = i.useContext(j).validationErrors) ? true : t[e.id]) ? n : null
 }

@@ -44,8 +44,8 @@ function S(e) {
     giftRecipient: L
   } = (0, f.wD)(), x = D && (0, h.pO)(L);
   s()(null != w, "Missing subscriptionPlan");
-  let j = null != t && t.planId === n,
-    M = j || n === v.Xh.PREMIUM_MONTH_TIER_2 && null != t && [v.Xh.PREMIUM_YEAR_TIER_0, v.Xh.PREMIUM_YEAR_TIER_1].includes(t.planId),
+  let M = null != t && t.planId === n,
+    j = M || n === v.Xh.PREMIUM_MONTH_TIER_2 && null != t && [v.Xh.PREMIUM_YEAR_TIER_0, v.Xh.PREMIUM_YEAR_TIER_1].includes(t.planId),
     k = v.nH[n],
     {
       enabled: U
@@ -77,10 +77,10 @@ function S(e) {
         discount: (0, m.T3)(P, k / 100)
       })
     }),
-    K = () => V ? Y() : w.interval === v.rV.YEAR && null != t || Z && !j ? w.interval === v.rV.YEAR && null != t ? (0, r.jsxs)("span", {
+    K = () => V ? Y() : w.interval === v.rV.YEAR && null != t || Z && !M ? w.interval === v.rV.YEAR && null != t ? (0, r.jsxs)("span", {
       className: T.planOptionMonthsFree,
       children: ["(", I.intl.string(I.t["122kWF"]), ")"]
-    }) : Z && !j ? W() : true : null,
+    }) : Z && !M ? W() : true : null,
     z = () => (0, r.jsxs)("div", {
       children: [(0, r.jsxs)("div", {
         className: a()(T.planOptionInterval, {
@@ -126,14 +126,14 @@ function S(e) {
         bottom: 0
       }
     },
-    onClick: M ? true : () => i(n),
+    onClick: j ? true : () => i(n),
     className: a()(T.planOptionClickableContainer, {
       [T.selectedPlan]: x && o,
       [T.selectionBox]: x
     }),
     children: [(0, r.jsxs)("div", {
       className: a()(T.planOption, {
-        [T.planOptionDisabled]: M
+        [T.planOptionDisabled]: j
       }),
       children: [(0, r.jsxs)("div", {
         className: T.planOptionClickable,
@@ -145,7 +145,7 @@ function S(e) {
           color: c.Z.unsafe_rawColors.BRAND_500.css,
           type: u.M0.INVERTED,
           className: T.planOptionCheckbox
-        }), z(), j && (0, r.jsxs)("span", {
+        }), z(), M && (0, r.jsxs)("span", {
           className: T.planOptionCurrentPlan,
           children: ["(", I.intl.string(I.t.ymSxh4), ")"]
         }), !x && K()]

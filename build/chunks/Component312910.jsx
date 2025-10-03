@@ -24,52 +24,52 @@ var Chunk442837 = require("./442837.js"),
   Chunk611480 = require("./611480.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk96761 = require("./96761.js");
-let O = {
+let C = {
     page: Chunk981631.ZY5.GUILD_SETTINGS,
     section: Chunk981631.jXE.GUILD_SETTINGS_STICKERS,
     object: Chunk981631.qAy.BOOSTING_BANNER
   },
-  y = e => {
+  O = e => {
     let {
       guild: t
     } = e, {
       analyticsLocations: n
-    } = (0, a.ZP)(), i = (0, u.Z)(t.id).available, s = x.oCV[x.Eu4.TIER_1] - i;
+    } = (0, a.ZP)(), i = (0, u.Z)(t.id).available, s = b.oCV[b.Eu4.TIER_1] - i;
     return (0, r.jsxs)("div", {
-      className: _.upsellContainer,
+      className: v.upsellContainer,
       children: [(0, r.jsx)(l.X6q, {
-        className: _.upsellHeader,
+        className: v.upsellHeader,
         variant: "heading-xl/semibold",
-        children: v.intl.string(v.t.hzCkys)
+        children: _.intl.string(_.t.hzCkys)
       }), (0, r.jsx)(l.Text, {
-        className: _.upsellDescription,
+        className: v.upsellDescription,
         variant: "text-md/normal",
-        children: v.intl.string(v.t.jcesAA)
+        children: _.intl.string(_.t.jcesAA)
       }), (0, r.jsxs)(l.hE2, {
-        className: _.upsellButtons,
+        className: v.upsellButtons,
         children: [(0, r.jsx)(l.zxk, {
           variant: "overlay-primary",
-          text: v.intl.string(v.t.Q5dbTk),
+          text: _.intl.string(_.t.Q5dbTk),
           onClick: () => (0, d.Z)({
             analyticsLocations: n,
-            analyticsLocation: O,
+            analyticsLocation: C,
             guildId: t.id,
             totalNumberOfSlotsToAssign: s
           })
         }), (0, r.jsx)(l.zxk, {
           variant: "overlay-primary",
-          text: v.intl.string(v.t.hvVgAQ),
+          text: _.intl.string(_.t.hvVgAQ),
           onClick: () => (0, o.f)({
             guildId: t.id,
             location: {
-              section: x.jXE.GUILD_SETTINGS_STICKERS
+              section: b.jXE.GUILD_SETTINGS_STICKERS
             }
           })
         })]
       })]
     })
   },
-  C = () => (0, Chunk951288.jsxs)(Chunk481060.hjN, {
+  y = () => (0, Chunk951288.jsxs)(Chunk481060.hjN, {
     title: Chunk388032.intl.string(Chunk388032.t["9N2OWF"]),
     children: [(0, Chunk951288.jsx)(Chunk481060.R94, {
       type: Chunk481060.geA.DESCRIPTION,
@@ -95,20 +95,20 @@ let O = {
       d = (0, f.FZ)(a),
       u = (0, f.A3)(a),
       m = s.length;
-    return null == d || a === x.Eu4.TIER_3 || o > 0 ? null : (m > u ? (t = v.intl.formatToPlainString(v.t.ZtAY1d, {
+    return null == d || a === b.Eu4.TIER_3 || o > 0 ? null : (m > u ? (t = _.intl.formatToPlainString(_.t.ZtAY1d, {
       level: d
-    }), n = v.intl.formatToPlainString(v.t["13hOWl"], {
+    }), n = _.intl.formatToPlainString(_.t["13hOWl"], {
       level: d
-    }), i = x.qAy.BOOST_UPSELL_BANNER_LOST_LEVEL) : (t = v.intl.string(v.t.zT9Sxc), n = v.intl.formatToPlainString(v.t.YaW9wM, {
+    }), i = b.qAy.BOOST_UPSELL_BANNER_LOST_LEVEL) : (t = _.intl.string(_.t.zT9Sxc), n = _.intl.formatToPlainString(_.t.YaW9wM, {
       level: d,
       numAdditional: (0, f.ig)(d)
-    }), i = x.qAy.BOOST_UPSELL_BANNER_SLOTS_FULL), (0, r.jsx)(c.Z, {
+    }), i = b.qAy.BOOST_UPSELL_BANNER_SLOTS_FULL), (0, r.jsx)(c.Z, {
       header: t,
       text: n,
       guild: l,
       analyticsLocation: {
-        page: x.ZY5.GUILD_SETTINGS,
-        section: x.jXE.GUILD_SETTINGS_STICKERS,
+        page: b.ZY5.GUILD_SETTINGS,
+        section: b.jXE.GUILD_SETTINGS_STICKERS,
         object: i,
         objectType: (0, f.ge)(d)
       }
@@ -134,8 +134,8 @@ let O = {
           children: [(0, Chunk951288.jsx)(N, {
             guild: module,
             guildStickers: exports
-          }), (0, Chunk951288.jsx)(C, {})]
-        }) : (0, Chunk951288.jsx)(y, {
+          }), (0, Chunk951288.jsx)(y, {})]
+        }) : (0, Chunk951288.jsx)(O, {
           guild: module
         }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
           className: Chunk96761.divider

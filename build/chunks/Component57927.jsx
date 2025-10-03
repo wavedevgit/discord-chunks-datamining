@@ -1,7 +1,7 @@
 /** Chunk was on 53512 **/
 /** chunk id: 57927, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => C
+  Z: () => N
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -10,6 +10,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk392711 = require("./392711.js"),
   c = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
+  Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk367907 = require("./367907.js"),
   Chunk565138 = require("./565138.jsx"),
@@ -22,69 +23,37 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk865311 = require("./865311.js");
 
-function p(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      i = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), i.forEach(function(t) {
-      var i;
-      i = n[t], t in e ? Object.defineProperty(e, t, {
-        value: i,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      }) : e[t] = i
-    })
-  }
-  return e
-}
-
-function N(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, i)
-    }
-    return n
-  })(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-
-function C(e) {
+function N(e) {
   let {
     guildPlans: t,
     overrideGuild: n
-  } = e, r = (0, d.e7)([u.ZP], () => u.ZP.getFlattenedGuildIds()), [a, l] = s.useMemo(() => c()(t).values().sortBy(e => {
+  } = e, r = (0, d.e7)([j.ZP], () => j.ZP.getFlattenedGuildIds()), [a, l] = s.useMemo(() => c()(t).values().sortBy(e => {
     let t = r.indexOf(e.guildId);
     return false === t ? r.length : t
   }).partition(e => {
     var t;
-    return (null != (t = e.overrideMode) ? t : e.mode) === _.AR.UseGreyDot
+    return (null != (t = e.overrideMode) ? t : e.mode) === b.AR.UseGreyDot
   }).value(), [t, r]), o = s.useCallback(e => {
     var i;
-    return n(e, (null != (i = t[e].overrideMode) ? i : t[e].mode) === _.AR.UseGreyDot ? _.AR.KeepAsIs : _.AR.UseGreyDot)
+    return n(e, (null != (i = t[e].overrideMode) ? i : t[e].mode) === b.AR.UseGreyDot ? b.AR.KeepAsIs : b.AR.UseGreyDot)
   }, [n, t]);
   return (0, i.jsxs)("div", {
-    className: v.container,
-    children: [(0, i.jsx)(y, {
-      header: f.intl.string(f.t.tGGAdX),
-      subheader: f.intl.string(f.t["e+d/vr"]),
+    className: p.container,
+    children: [(0, i.jsx)(C, {
+      header: v.intl.string(v.t.tGGAdX),
+      subheader: v.intl.string(v.t["e+d/vr"]),
       guildPlans: l,
       onClick: o
-    }), (0, i.jsx)(y, {
-      header: f.intl.string(f.t.f6pf39),
-      subheader: f.intl.string(f.t.izeB6e),
+    }), (0, i.jsx)(C, {
+      header: v.intl.string(v.t.f6pf39),
+      subheader: v.intl.string(v.t.izeB6e),
       guildPlans: a,
       onClick: o
     })]
   })
 }
 
-function y(e) {
+function C(e) {
   let {
     header: t,
     subheader: n,
@@ -92,24 +61,24 @@ function y(e) {
     onClick: r
   } = e;
   return (0, i.jsxs)("div", {
-    className: v.column,
+    className: p.column,
     children: [(0, i.jsxs)("div", {
-      className: v.header,
-      children: [(0, i.jsxs)(o.Text, {
-        className: v.__invalid_sectionTitle,
+      className: p.header,
+      children: [(0, i.jsxs)(m.Text, {
+        className: p.__invalid_sectionTitle,
         variant: "text-md/medium",
         color: "header-primary",
         children: [t, " (", s.length, ")"]
-      }), (0, i.jsx)(o.Text, {
+      }), (0, i.jsx)(m.Text, {
         variant: "text-xs/normal",
         color: "header-secondary",
         children: n
       })]
-    }), (0, i.jsx)(o.Ttm, {
-      className: v.scroller,
+    }), (0, i.jsx)(m.Ttm, {
+      className: p.scroller,
       children: (0, i.jsx)("div", {
-        className: v.guilds,
-        children: s.map(e => (0, i.jsx)(T, {
+        className: p.guilds,
+        children: s.map(e => (0, i.jsx)(y, {
           plan: e,
           onClick: r
         }, e.guildId))
@@ -118,78 +87,103 @@ function y(e) {
   })
 }
 
-function T(e) {
+function y(e) {
   var t;
   let {
     plan: n,
     onClick: s
-  } = e, r = (0, d.e7)([h.Z], () => h.Z.getGuild(n.guildId));
+  } = e, r = (0, d.e7)([u.Z], () => u.Z.getGuild(n.guildId));
   if (null == r) return null;
-  let l = (null != (t = n.overrideMode) ? t : n.mode) === _.AR.UseGreyDot;
-
-  function c() {
-    g.default.track(b.rMx.NOTIFICATION_MIGRATION_GUILD_CHANGED, N(p({}, (0, m.hH)(n.guildId)), {
-      is_selected: !l,
-      is_muted: j.ZP.isMuted(n.guildId),
-      notification_setting: j.ZP.getMessageNotifications(n.guildId)
-    })), s(n.guildId)
-  }
-  return (0, i.jsx)(o.ua7, {
-    text: (0, i.jsxs)("div", {
-      children: [(0, i.jsx)(o.Text, {
+  let l = (null != (t = n.overrideMode) ? t : n.mode) === b.AR.UseGreyDot;
+  return (0, i.jsx)(o.u, {
+    asContainer: true,
+    __unsupportedReactNodeAsText: (0, i.jsxs)("div", {
+      children: [(0, i.jsx)(m.Text, {
         variant: "text-md/semibold",
         color: "header-primary",
         children: r.name
       }), (0, i.jsxs)("div", {
-        className: v.tooltipRow,
-        children: [(0, i.jsx)(o.kBi, {
+        className: p.tooltipRow,
+        children: [(0, i.jsx)(m.kBi, {
           size: "xxs",
           color: "currentColor"
-        }), (0, i.jsx)(o.Text, {
+        }), (0, i.jsx)(m.Text, {
           variant: "text-xs/medium",
           color: "text-muted",
-          children: n.messagePain ? f.intl.string(f.t["3EQSoK"]) : f.intl.string(f.t["CaR/Eh"])
+          children: n.messagePain ? v.intl.string(v.t["3EQSoK"]) : v.intl.string(v.t["CaR/Eh"])
         })]
       }), (0, i.jsxs)("div", {
-        className: v.tooltipRow,
-        children: [(0, i.jsx)(o.iFz, {
+        className: p.tooltipRow,
+        children: [(0, i.jsx)(m.iFz, {
           size: "xxs",
           color: "currentColor"
-        }), (0, i.jsx)(o.Text, {
+        }), (0, i.jsx)(m.Text, {
           variant: "text-xs/medium",
           color: "text-muted",
-          children: n.visitsALot ? f.intl.string(f.t["6dgvsb"]) : f.intl.string(f.t.fgedbG)
+          children: n.visitsALot ? v.intl.string(v.t["6dgvsb"]) : v.intl.string(v.t.fgedbG)
         })]
       }), (0, i.jsxs)("div", {
-        className: v.tooltipRow,
-        children: [(0, i.jsx)(o.Dkj, {
+        className: p.tooltipRow,
+        children: [(0, i.jsx)(m.Dkj, {
           size: "xxs",
           color: "currentColor"
-        }), (0, i.jsx)(o.Text, {
+        }), (0, i.jsx)(m.Text, {
           variant: "text-xs/medium",
           color: "text-muted",
-          children: n.muted ? f.intl.string(f.t.rdTrHx) : f.intl.string(f.t.sdFUj4)
+          children: n.muted ? v.intl.string(v.t.rdTrHx) : v.intl.string(v.t.sdFUj4)
         })]
       })]
     }),
     "aria-label": n.debugReason,
-    tooltipClassName: v.tooltip,
-    children: e => (0, i.jsxs)(o.P3F, N(p({}, e), {
-      className: a()(v.guild, l ? v.selected : true),
-      onClick: c,
-      children: [(0, i.jsx)(o.owK, {
+    children: (0, i.jsxs)(m.P3F, {
+      className: a()(p.guild, l ? p.selected : true),
+      onClick: function() {
+        var e, t;
+        _.default.track(f.rMx.NOTIFICATION_MIGRATION_GUILD_CHANGED, (e = function(e) {
+          for (var t = 1; t < arguments.length; t++) {
+            var n = null != arguments[t] ? arguments[t] : {},
+              i = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              return Object.getOwnPropertyDescriptor(n, e).enumerable
+            }))), i.forEach(function(t) {
+              var i;
+              i = n[t], t in e ? Object.defineProperty(e, t, {
+                value: i,
+                enumerable: true,
+                configurable: true,
+                writable: true
+              }) : e[t] = i
+            })
+          }
+          return e
+        }({}, (0, x.hH)(n.guildId)), t = t = {
+          is_selected: !l,
+          is_muted: g.ZP.isMuted(n.guildId),
+          notification_setting: g.ZP.getMessageNotifications(n.guildId)
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+          var n = Object.keys(e);
+          if (Object.getOwnPropertySymbols) {
+            var i = Object.getOwnPropertySymbols(e);
+            n.push.apply(n, i)
+          }
+          return n
+        })(Object(t)).forEach(function(n) {
+          Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+        }), e)), s(n.guildId)
+      },
+      children: [(0, i.jsx)(m.owK, {
         size: "xs",
         color: "currentColor",
-        className: v.checkmark,
+        className: p.checkmark,
         secondaryColor: "white"
-      }), (0, i.jsx)(x.Z, {
+      }), (0, i.jsx)(h.Z, {
         "aria-hidden": true,
-        className: v.guildIcon,
+        className: p.guildIcon,
         guild: r,
-        size: x.Z.Sizes.MEDIUM,
+        size: h.Z.Sizes.MEDIUM,
         active: true,
         tabIndex: false
       })]
-    }))
+    })
   })
 }

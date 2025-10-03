@@ -58,7 +58,7 @@ function x(e) {
   return e
 }
 
-function j(e, t) {
+function M(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -69,8 +69,8 @@ function j(e, t) {
   return n
 }
 
-function M(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
+function j(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -101,7 +101,7 @@ let G = new Chunk710845.Z("ConnectionStore"),
     };
     let r = (0, b.q_)(t),
       i = v.Z.getChannel(t.id),
-      a = null == i ? true : i.merge(M(x({}, r), {
+      a = null == i ? true : i.merge(j(x({}, r), {
         recipients: i.recipients,
         bitrate: null != (n = r.bitrate) ? n : i.bitrate
       }));
@@ -1070,7 +1070,7 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id
     type: "MESSAGE_REACTION_ADD_MANY",
     channelId: e.channel_id,
     messageId: e.message_id,
-    reactions: e.votes.map(e => M(x({}, e), {
+    reactions: e.votes.map(e => j(x({}, e), {
       emoji: {
         id: e.answer_id,
         name: ""

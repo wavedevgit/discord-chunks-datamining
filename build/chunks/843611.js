@@ -7,8 +7,8 @@ require.d(exports, {
   EN: () => D,
   F0: () => m,
   LX: () => N,
-  TH: () => j,
-  UO: () => M,
+  TH: () => M,
+  UO: () => j,
   k6: () => x,
   l_: () => I,
   rs: () => w,
@@ -259,17 +259,17 @@ function x() {
   return L(p)
 }
 
-function j() {
+function M() {
   return L(h).location
 }
 
-function M() {
+function j() {
   var e = L(h).match;
   return module ? module.params : {}
 }
 
 function k(e) {
-  var t = j(),
+  var t = M(),
     n = L(h).match;
   return e ? N(t.pathname, e) : n
 }

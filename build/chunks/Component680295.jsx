@@ -65,14 +65,14 @@ let I = e => {
     } = E, [w, D] = i.useState(-v), {
       stop: L,
       reset: x,
-      ticking: j
+      ticking: M
     } = (0, p.Z)(e => {
       D(t => t + e)
-    }), M = i.useRef(v);
+    }), j = i.useRef(v);
     i.useEffect(() => {
-      M.current = v
+      j.current = v
     }), i.useEffect(() => {
-      D(-M.current), S((0, m.H)(E.effects))
+      D(-j.current), S((0, m.H)(E.effects))
     }, [E]), i.useEffect(() => {
       let e = 0,
         t = 1 / 0;
@@ -83,8 +83,8 @@ let I = e => {
     }, [R, T]);
     let [k, U] = i.useState(false);
     return i.useEffect(() => {
-      true === u || l || (L(), D(0)), !l && k && j.current && (L(), D(0)), a && l && !j.current && (x(), E.animationType === s.y.ANIMATION_TYPE_PERSISTENT ? D(d === _.Q.FromStart ? 0 : A) : D(0))
-    }, [l, k, A, a, L, x, j, E.animationType, u, d]), (0, r.jsx)("div", {
+      true === u || l || (L(), D(0)), !l && k && M.current && (L(), D(0)), a && l && !M.current && (x(), E.animationType === s.y.ANIMATION_TYPE_PERSISTENT ? D(d === _.Q.FromStart ? 0 : A) : D(0))
+    }, [l, k, A, a, L, x, M, E.animationType, u, d]), (0, r.jsx)("div", {
       ref: I,
       className: o()(y.profileEffects, {
         [y.hovered]: l && c
@@ -94,7 +94,7 @@ let I = e => {
       children: (0, r.jsx)("div", {
         className: O ? y.innerNoRadius : y.inner,
         children: T.map((e, i) => {
-          if (!j.current && E.animationType === s.y.ANIMATION_TYPE_PERSISTENT && null != E.staticFrameSrc && 0 === i && true === u) {
+          if (!M.current && E.animationType === s.y.ANIMATION_TYPE_PERSISTENT && null != E.staticFrameSrc && 0 === i && true === u) {
             var a, o, l, c;
             let {
               staticFrameSrc: n
@@ -113,7 +113,7 @@ let I = e => {
           return (0, r.jsx)(g.Z, {
             layerConfig: e,
             animationType: E.animationType,
-            ticking: j.current,
+            ticking: M.current,
             time: w,
             hasPlayedThrough: k,
             setHasPlayedThrough: U,

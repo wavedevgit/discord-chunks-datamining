@@ -32,22 +32,22 @@ function b(e) {
     channelId: a,
     onClose: c
   } = e;
-  return n === j.oh.ACTIVITY ? (0, l.jsx)(m.Z, {
+  return n === x.oh.ACTIVITY ? (0, l.jsx)(m.Z, {
     user: i,
     currentUser: r,
     guildId: s,
     onClose: c
-  }) : n === j.oh.MUTUAL_FRIENDS ? (0, l.jsx)(f.Z, {
+  }) : n === x.oh.MUTUAL_FRIENDS ? (0, l.jsx)(f.Z, {
     user: i,
     guildId: s,
     channelId: a,
     onClose: c
-  }) : n === j.oh.MUTUAL_GUILDS ? (0, l.jsx)(h.Z, {
+  }) : n === x.oh.MUTUAL_GUILDS ? (0, l.jsx)(h.Z, {
     user: i,
     onClose: c
-  }) : n === j.oh.BOT_DATA_ACCESS ? (0, l.jsx)(d.Z, {
+  }) : n === x.oh.BOT_DATA_ACCESS ? (0, l.jsx)(d.Z, {
     user: i
-  }) : n === j.oh.BOT_INFO ? (0, l.jsx)(u.Z, {
+  }) : n === x.oh.BOT_INFO ? (0, l.jsx)(u.Z, {
     user: i,
     currentUser: r,
     displayProfile: o,
@@ -71,14 +71,14 @@ function y(e) {
     displayProfile: p,
     guildId: f,
     items: h,
-    initialSection: y = j.oh.USER_INFO,
-    initialSubsection: O,
-    onClose: I
+    initialSection: y = x.oh.USER_INFO,
+    initialSubsection: I,
+    onClose: Z
   } = e, {
-    trackUserProfileAction: Z
-  } = (0, c.KZ)(), P = (0, r.e7)([a.Z], () => a.Z.hidePersonalInformation), [{
-    section: N,
-    subsection: T
+    trackUserProfileAction: O
+  } = (0, c.KZ)(), N = (0, r.e7)([a.Z], () => a.Z.hidePersonalInformation), [{
+    section: T,
+    subsection: P
   }, A] = i.useState({
     section: null != (d = null == (n = h.find(e => {
       let {
@@ -86,24 +86,24 @@ function y(e) {
       } = e;
       return n === y
     })) ? true : n.section) ? d : null == (t = h[0]) ? true : t.section,
-    subsection: O
+    subsection: I
   });
   i.useEffect(() => {
-    null == h.find(e => e.section === N) && A({
+    null == h.find(e => e.section === T) && A({
       section: h[0].section,
       subsection: true
     })
-  }, [h, N]);
+  }, [h, T]);
   let E = i.useCallback(e => {
-    Z({
+    O({
       action: "PRESS_SECTION",
       section: e
     }), A({
       section: e,
       subsection: true
     })
-  }, [Z, A]);
-  return P ? (0, l.jsx)("div", {
+  }, [O, A]);
+  return N ? (0, l.jsx)("div", {
     className: g.container,
     children: (0, l.jsxs)("div", {
       className: v.empty,
@@ -111,7 +111,7 @@ function y(e) {
         className: v.emptyIconStreamerMode
       }), (0, l.jsx)("div", {
         className: v.emptyText,
-        children: x.intl.string(x.t.Br1ls7)
+        children: j.intl.string(j.t.Br1ls7)
       })]
     })
   }) : (0, l.jsxs)("div", {
@@ -119,7 +119,7 @@ function y(e) {
     children: [(0, l.jsx)(o.n, {
       className: g.tabBar,
       type: "top",
-      selectedItem: N,
+      selectedItem: T,
       onItemSelect: E,
       children: h.map(e => {
         let {
@@ -138,13 +138,13 @@ function y(e) {
       })
     }), (0, l.jsx)(b, {
       items: h,
-      section: N,
-      subsection: T,
+      section: T,
+      subsection: P,
       user: u,
       currentUser: m,
       displayProfile: p,
       guildId: f,
-      onClose: I
+      onClose: Z
     })]
   })
 }

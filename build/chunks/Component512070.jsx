@@ -1,14 +1,15 @@
 /** Chunk was on 47495 **/
 /** chunk id: 512070, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => _
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  r = require.n(Chunk120356),
   Chunk342905 = require("./342905.js"),
   Chunk793030 = require("./793030.js"),
+  Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk594928 = require("./594928.js"),
   Chunk131016 = require("./131016.js"),
@@ -19,66 +20,59 @@ var Chunk120356 = require("./120356.js"),
   Chunk959389 = require("./959389.js"),
   Chunk204469 = require("./204469.js");
 
-function b(e) {
+function _(e) {
   let {
     selectedFontId: t,
     setSelectedFontId: n,
-    displayName: o,
-    className: b
-  } = e, x = t !== a.C.DEFAULT, j = (0, d.mR)(o), {
-    enabled: _
-  } = c.wL.useConfig({
+    displayName: l,
+    className: _
+  } = e, b = t !== a.C.DEFAULT, S = (0, u.mR)(l), {
+    enabled: j
+  } = d.wL.useConfig({
     location: "DisplayNameStylesFontSelection"
   });
-  return (0, r.jsxs)("div", {
-    className: b,
-    children: [(0, r.jsxs)(i.X6q, {
+  return (0, o.jsxs)("div", {
+    className: _,
+    children: [(0, o.jsxs)(i.X6q, {
       variant: "heading-md/semibold",
-      className: g.selectorHeading,
-      children: [f.intl.string(m.default.nP0ngY), (0, r.jsx)(s.SrA, {
+      className: h.selectorHeading,
+      children: [g.intl.string(f.default.nP0ngY), (0, o.jsx)(c.SrA, {
         size: "xs",
-        color: s.TVs.colors.TEXT_DEFAULT
+        color: c.TVs.colors.TEXT_DEFAULT
       })]
-    }), (0, r.jsx)(i.Kqy, {
+    }), (0, o.jsx)(i.Kqy, {
       direction: "horizontal",
       align: "center",
       wrap: true,
-      children: p.P$.map(e => {
-        let o = (0, u.U)(e),
+      children: m.P$.map(e => {
+        let l = (0, p.U)(e),
           a = e === t;
-        return (0, r.jsx)(s.ua7, {
-          text: f.intl.string(o.name),
-          children: t => {
-            let {
-              onMouseEnter: c,
-              onMouseLeave: d
-            } = t;
-            return (0, r.jsx)(s.P3F, {
-              className: l()(h.fontButton, {
-                [h.selected]: a
-              }),
-              onClick: () => n(e),
-              "aria-label": f.intl.string(o.name),
-              onMouseEnter: c,
-              onMouseLeave: d,
-              children: (0, r.jsx)(i.xvT, {
-                variant: "text-lg/semibold",
-                color: a ? "text-primary" : "text-default",
-                className: l()(h.fontText, o.className),
-                children: "Gg"
-              })
+        return (0, o.jsx)(s.u, {
+          text: g.intl.string(l.name),
+          asContainer: true,
+          children: (0, o.jsx)(c.P3F, {
+            className: r()(x.fontButton, {
+              [x.selected]: a
+            }),
+            onClick: () => n(e),
+            "aria-label": g.intl.string(l.name),
+            children: (0, o.jsx)(i.xvT, {
+              variant: "text-lg/semibold",
+              color: a ? "text-primary" : "text-default",
+              className: r()(x.fontText, l.className),
+              children: "Gg"
             })
-          }
+          })
         }, e)
       })
-    }), x && j && _ && (0, r.jsxs)("div", {
-      className: h.nonLatinDisclaimer,
-      children: [(0, r.jsx)(i.d3s, {
+    }), b && S && j && (0, o.jsxs)("div", {
+      className: x.nonLatinDisclaimer,
+      children: [(0, o.jsx)(i.d3s, {
         size: "lg"
-      }), (0, r.jsx)(i.xvT, {
+      }), (0, o.jsx)(i.xvT, {
         variant: "text-sm/normal",
         color: "text-secondary",
-        children: f.intl.string(m.default["+O1xLy"])
+        children: g.intl.string(f.default["+O1xLy"])
       })]
     })]
   })

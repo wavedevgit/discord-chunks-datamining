@@ -66,12 +66,12 @@ function x(e, t) {
   return n
 }
 
-function j(e, t) {
+function M(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class M {
+class j {
   constructor() {
     D(this, "gpuBoostRequests", new Set), D(this, "isGPUBoosted", false), D(this, "isDisabledGPUBoost", false), D(this, "toggleGPUBoost", (e, t) => {
       t ? this.gpuBoostRequests.add(e) : this.gpuBoostRequests.delete(e), this.flushGPUBoostRequests()
@@ -107,7 +107,7 @@ function G(e, t, n) {
 let B = new Set,
   Z = new Set,
   F = {},
-  V = new M,
+  V = new j,
   H = new Set,
   Y = null,
   W = false,
@@ -383,7 +383,7 @@ async function eS(e) {
     ef(e, n), eo(), Q = null, U(e, "renderer_window_mounting_started", {
       mountingAnalyticsData: n,
       popoutInitializationStages: ea
-    }), await (0, C.f)(en), ea = j(L({}, ea), {
+    }), await (0, C.f)(en), ea = M(L({}, ea), {
       popoutOpened: true
     });
     let r = {
@@ -406,7 +406,7 @@ async function eS(e) {
       popoutInitializationStages: ea
     }), ef(e, a), eY(false), S.Z.resetWindowState(), (null == Y ? true : Y.setOnWindowHandleInitializedCallback) == null && eV(true), i
   } catch (t) {
-    k.error("failed to create out of process overlay host window", t), em(e, t), c.Z.updateOverlayState(e, I.mM.OVERLAY_CRASHED_DISABLED), ea = j(L({}, ea), {
+    k.error("failed to create out of process overlay host window", t), em(e, t), c.Z.updateOverlayState(e, I.mM.OVERLAY_CRASHED_DISABLED), ea = M(L({}, ea), {
       errorMessage: "Error in _createOutOfProcessOverlayHostWindow: " + t
     }), U(e, "renderer_window_mounting_failed", {
       error: t,
@@ -510,13 +510,13 @@ function ex() {
   ew(null, true), tr.emitChange()
 }
 
-function ej(e) {
+function eM(e) {
   return G(null != K ? K : null, "overlay_focused", {
     focusedPID: e.pid
   }), K = e.pid, true
 }
 
-function eM(e) {
+function ej(e) {
   if (!H.has(e) || !ea.allDone) return;
   let t = ed(e).mounting_started_at;
   ef(e, {
@@ -527,16 +527,16 @@ function eM(e) {
 
 function ek() {
   var e;
-  ea = j(L({}, ea), {
+  ea = M(L({}, ea), {
     showInactiveCalled: true
   }), null == Y || null == (e = Y.onPopoutShowInactive) || module.call(Y)
 }
 
 function eU() {
-  ea = j(L({}, ea), {
+  ea = M(L({}, ea), {
     allDone: true
   }), H.forEach(e => {
-    eM(e)
+    ej(e)
   })
 }
 
@@ -563,11 +563,11 @@ function eZ(e) {
 }
 
 function eF(e) {
-  U(e, "_successfullyShownCallback"), H.add(e), eM(e)
+  U(e, "_successfullyShownCallback"), H.add(e), ej(e)
 }
 
 function eV(e) {
-  ea = j(L({}, ea), {
+  ea = M(L({}, ea), {
     windowHandleSentToNative: e
   }), e && c.Z.updateOverlayState((0, b.getPID)(), I.mM.WAITING_FOR_REACT_INITIALIZATION), tr.emitChange()
 }
@@ -827,7 +827,7 @@ let tr = new tn(Chunk570140.Z, __OVERLAY__ ? {} : {
     OVERLAY_UPDATE_OVERLAY_STATE: e0,
     OVERLAY_SET_GPU_BOOST_REQUESTED: eX,
     OVERLAY_CRASHED: eq,
-    OVERLAY_FOCUSED: ej,
+    OVERLAY_FOCUSED: eM,
     OVERLAY_SET_MODULE_LOGGING: te,
     OVERLAY_SET_STATE_DEBUGGING: tt,
     OVERLAY_OOP_UI_INITIALIZED: eU,

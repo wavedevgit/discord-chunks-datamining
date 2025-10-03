@@ -2,8 +2,8 @@
 /** chunk id: 293979, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  X9: () => j,
-  b8: () => M,
+  X9: () => M,
+  b8: () => j,
   hz: () => L
 }), require("./388685.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js");
 var Chunk647438 = require("./647438.js"),
@@ -67,7 +67,7 @@ function x(e) {
   }, [e.id, e.icon, e.name, e.bot])
 }
 
-function j(e, t) {
+function M(e, t) {
   let {
     application: n,
     customId: i,
@@ -101,7 +101,7 @@ function j(e, t) {
   }
 }
 
-function M(e) {
+function j(e) {
   let {
     application: t,
     customId: n

@@ -1,4 +1,4 @@
-/** Chunk was on 9665 **/
+/** Chunk was on 50118 **/
 /** chunk id: 821415, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -30,14 +30,14 @@ function x(e) {
       userId: a
     } = e,
     u = (0, d.IX)(n.application_id).data,
-    [p, h] = i.useState(false),
-    [m, g] = i.useState(0),
+    [p, h] = r.useState(false),
+    [m, g] = r.useState(0),
     b = (0, o.e7)([f.Z], () => f.Z.getChannelId() !== l.id);
   async function x() {
     g(1);
     try {
       await c.Z.sendActivityInvite({
-        type: y.mFx.STREAM_REQUEST,
+        type: C.mFx.STREAM_REQUEST,
         channelId: l.id,
         activity: n,
         content: "<@".concat(a, ">"),
@@ -50,38 +50,38 @@ function x(e) {
     }
     g(2)
   }
-  if (b && (t = _.intl.string(C.default.qRXatr)), n.type === y.IIU.PLAYING) {
+  if (b && (t = _.intl.string(y.default.qRXatr)), n.type === C.IIU.PLAYING) {
     let e = null == u ? true : u.getIconURL(46);
-    return (0, r.jsxs)("div", {
+    return (0, i.jsxs)("div", {
       className: v.activityRow,
-      children: [(0, r.jsxs)("div", {
+      children: [(0, i.jsxs)("div", {
         className: v.activityRowContent,
-        children: [p || null == e ? (0, r.jsx)(s.IMN, {
+        children: [p || null == e ? (0, i.jsx)(s.IMN, {
           size: "custom",
           width: 46,
           height: 46
-        }) : (0, r.jsx)("img", {
+        }) : (0, i.jsx)("img", {
           src: e,
           alt: n.name,
           onError: () => h(true)
-        }), (0, r.jsxs)("div", {
-          children: [(0, r.jsx)(s.Text, {
+        }), (0, i.jsxs)("div", {
+          children: [(0, i.jsx)(s.Text, {
             variant: "text-sm/medium",
             color: "text-tertiary",
             children: _.intl.string(_.t.BMTj29)
-          }), (0, r.jsx)(s.Text, {
+          }), (0, i.jsx)(s.Text, {
             variant: "text-md/medium",
             children: n.name
           })]
         })]
-      }), (0, r.jsx)(s.zxk, {
+      }), (0, i.jsx)(s.zxk, {
         loading: 1 === m,
         disabled: b || 2 === m,
         fullWidth: true,
         size: "sm",
-        text: 2 === m ? _.intl.string(C.default["8HU1Mz"]) : _.intl.string(C.default.DKHheX),
+        text: 2 === m ? _.intl.string(y.default["8HU1Mz"]) : _.intl.string(y.default.DKHheX),
         onClick: x
-      }), null != t && (0, r.jsx)(s.Text, {
+      }), null != t && (0, i.jsx)(s.Text, {
         className: v.disabledReason,
         variant: "text-xs/normal",
         color: "text-muted",
@@ -95,25 +95,25 @@ function O(e) {
   let {
     userId: t,
     channel: n
-  } = e, s = (0, o.e7)([m.default], () => m.default.getUser(t)), c = (0, b.Z)(t, n.guild_id), d = (0, g.Z)(t, n.id), f = i.useMemo(() => l.uniqWith(c, (e, t) => {
+  } = e, s = (0, o.e7)([m.default], () => m.default.getUser(t)), c = (0, b.Z)(t, n.guild_id), d = (0, g.Z)(t, n.id), f = r.useMemo(() => l.uniqWith(c, (e, t) => {
     if (e.application_id === t.application_id) returntrue;
     let n = h.Z.getGameByName(e.name),
-      r = h.Z.getGameByName(t.name);
-    return null != n && n === r || e.name === t.name
-  }), [c]), y = null == s || !d || 0 === f.length;
+      i = h.Z.getGameByName(t.name);
+    return null != n && n === i || e.name === t.name
+  }), [c]), C = null == s || !d || 0 === f.length;
   return ((0, u.Z)({
     type: a.ImpressionTypes.POPOUT,
     name: a.ImpressionNames.VOICE_USER_ACTIVITY_POPOUT,
     properties: {}
   }, {
-    disableTrack: y
-  }), y) ? null : (0, r.jsx)(p.Z.Provider, {
+    disableTrack: C
+  }), C) ? null : (0, i.jsx)(p.Z.Provider, {
     value: n.guild_id,
-    children: (0, r.jsx)("div", {
+    children: (0, i.jsx)("div", {
       className: v.root,
-      children: (0, r.jsx)("div", {
+      children: (0, i.jsx)("div", {
         className: v.activityList,
-        children: f.map(e => (0, r.jsx)(x, {
+        children: f.map(e => (0, i.jsx)(x, {
           activity: e,
           channel: n,
           userId: t

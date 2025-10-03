@@ -35,7 +35,7 @@ function g(e, t) {
   if (m === f) return L(e, t, h, p);
   if (m === _) return x(e, h, p);
   let g = e.getUint8(h);
-  return m === l ? M(e, t, h + i, p) : m === c ? (0, a.I)(e, g, h + i, p) : m === u ? U(e, t, g, h + i, p) : m === d ? B(e, t, g, h + i, p) : {
+  return m === l ? j(e, t, h + i, p) : m === c ? (0, a.I)(e, g, h + i, p) : m === u ? U(e, t, g, h + i, p) : m === d ? B(e, t, g, h + i, p) : {
     type: true,
     length: p
   }
@@ -171,12 +171,12 @@ function L(e, t, n, r) {
 function x(e, t, n) {
   return {
     type: "colr",
-    icc: j(e, t),
+    icc: M(e, t),
     length: n
   }
 }
 
-function j(e, t) {
+function M(e, t) {
   let n = 4,
     r = (0, i.oH)(e, t, n);
   if ("prof" === r || "rICC" === r) return {
@@ -187,7 +187,7 @@ function j(e, t) {
   }
 }
 
-function M(e, t, n, r) {
+function j(e, t, n, r) {
   return {
     type: "meta",
     subBoxes: k(e, n + 3, r - (n + 3 - t)),

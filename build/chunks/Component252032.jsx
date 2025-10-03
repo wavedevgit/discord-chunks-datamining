@@ -1,4 +1,4 @@
-/** Chunk was on 9665 **/
+/** Chunk was on 50118 **/
 /** chunk id: 252032, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -46,7 +46,7 @@ function j(e) {
     id: c
   } = t, {
     id: u
-  } = n, m = t.getGuildId(), b = (0, l.e7)([h.Z], () => h.Z.getGuild(m), [m]), y = t.type === _.d4z.GUILD_ANNOUNCEMENT, j = null != b && b.features.has(_.oNc.NEWS), S = y && j, {
+  } = n, m = t.getGuildId(), b = (0, l.e7)([h.Z], () => h.Z.getGuild(m), [m]), C = t.type === _.d4z.GUILD_ANNOUNCEMENT, j = null != b && b.features.has(_.oNc.NEWS), S = C && j, {
     editingMessage: P,
     editingTextValue: I,
     editingRichValue: Z
@@ -54,10 +54,10 @@ function j(e) {
     editingMessage: p.Z.getEditingMessage(c),
     editingTextValue: p.Z.getEditingTextValue(c),
     editingRichValue: p.Z.getEditingRichValue(c)
-  }), [c]), N = (0, l.e7)([d.default], () => d.default.getId()), T = i.useCallback((e, r, i) => {
+  }), [c]), N = (0, l.e7)([d.default], () => d.default.getId()), T = r.useCallback((e, i, r) => {
     let {
       content: l
-    } = i, c = f.Z.can(_.Plq.MANAGE_MESSAGES, t), u = null != P && null != P.author ? P.author.id : null, d = S && (u === N || c), p = {
+    } = r, c = f.Z.can(_.Plq.MANAGE_MESSAGES, t), u = null != P && null != P.author ? P.author.id : null, d = S && (u === N || c), p = {
       content: l,
       components: true
     };
@@ -71,23 +71,23 @@ function j(e) {
         id: "".concat(v.Kb)
       }), p.content = "", p.components = t
     }
-    return d && null != P && (0, g.yE)(P.flags, _.iLy.CROSSPOSTED) ? o.Z.confirmEdit(e, r, p) : a.Z.editMessage(e, r, p), Promise.resolve()
-  }, [P, S, N, t, n]), A = i.useCallback(e => {
+    return d && null != P && (0, g.yE)(P.flags, _.iLy.CROSSPOSTED) ? o.Z.confirmEdit(e, i, p) : a.Z.editMessage(e, i, p), Promise.resolve()
+  }, [P, S, N, t, n]), A = r.useCallback(e => {
     var t, n;
-    return (0, i.createElement)(E, (t = function(e) {
+    return (0, r.createElement)(E, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
-          r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          i = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-          var r;
-          r = n[t], t in e ? Object.defineProperty(e, t, {
-            value: r,
+        }))), i.forEach(function(t) {
+          var i;
+          i = n[t], t in e ? Object.defineProperty(e, t, {
+            value: i,
             enumerable: true,
             configurable: true,
             writable: true
-          }) : e[t] = r
+          }) : e[t] = i
         })
       }
       return e
@@ -97,15 +97,15 @@ function j(e) {
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        n.push.apply(n, r)
+        var i = Object.getOwnPropertySymbols(e);
+        n.push.apply(n, i)
       }
       return n
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t))
   }, [u]);
-  return null != I && null != Z ? (0, r.jsx)(C.Z, {
+  return null != I && null != Z ? (0, i.jsx)(y.Z, {
     ref: true,
     channel: t,
     message: n,
@@ -130,10 +130,10 @@ function E(e) {
     onSubmit: s,
     onKeyDown: d,
     renderLeftAccessories: p
-  } = e, [h, f] = i.useState(true), g = i.useCallback(() => f(true), []), b = i.useCallback(() => f(false), []);
-  return i.useEffect(() => (m.S.subscribe(_.CkL.TEXTAREA_FOCUS, g), m.S.subscribe(_.CkL.TEXTAREA_BLUR, b), () => {
+  } = e, [h, f] = r.useState(true), g = r.useCallback(() => f(true), []), b = r.useCallback(() => f(false), []);
+  return r.useEffect(() => (m.S.subscribe(_.CkL.TEXTAREA_FOCUS, g), m.S.subscribe(_.CkL.TEXTAREA_BLUR, b), () => {
     m.S.unsubscribe(_.CkL.TEXTAREA_FOCUS, g), m.S.unsubscribe(_.CkL.TEXTAREA_BLUR, b)
-  }), [g, b]), (0, r.jsx)(u.ZP, {
+  }), [g, b]), (0, i.jsx)(u.ZP, {
     className: x.channelTextArea,
     textValue: t,
     richValue: n,
@@ -156,15 +156,15 @@ function E(e) {
 
 function S(e, t, n) {
   let {
-    message: i,
+    message: r,
     channel: l,
     compact: a
   } = e;
-  return n ? (0, r.jsx)(j, {
+  return n ? (0, i.jsx)(j, {
     channel: l,
-    message: i
-  }) : (0, r.jsx)(y.ZP, {
-    message: i,
+    message: r
+  }) : (0, i.jsx)(C.ZP, {
+    message: r,
     content: t,
     compact: null != a && a
   })

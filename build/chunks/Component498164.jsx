@@ -196,7 +196,7 @@ let k = {
         case Z.jE.QUEST_HOME: {
           let {
             enabled: e
-          } = y.m8.getConfig({
+          } = v.m8.getConfig({
             location: L.dr.QUEST_DEEP_LINK_UTIL
           });
           null != n ? ((0, I.dL)({
@@ -206,7 +206,7 @@ let k = {
           break
         }
         case Z.jE.QUEST_PREVIEW_TOOL:
-          if ((0, v.T)({
+          if ((0, y.T)({
               location: L.dr.QUEST_PREVIEW_TOOL_2
             }) && null != n) {
             let e = new URLSearchParams;

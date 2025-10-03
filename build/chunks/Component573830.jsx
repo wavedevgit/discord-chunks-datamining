@@ -106,7 +106,7 @@ function A(e) {
     innerRef: y
   } = e, {
     reducedMotion: O
-  } = i.useContext(u.S), v = (0, c.d)(s.Z.colors.SWITCH_BACKGROUND_DEFAULT).spring(), A = (0, c.d)(s.Z.colors.SWITCH_BACKGROUND_DEFAULT).spring(), C = (0, c.d)(s.Z.colors.SWITCH_BACKGROUND_DEFAULT_SELECTED).spring(), N = (0, c.d)(s.Z.colors.SWITCH_BACKGROUND_ACTIVE).spring(), R = (0, c.d)(s.Z.colors.SWITCH_BORDER_DEFAULT).spring(), P = (0, c.d)(s.Z.colors.SWITCH_BORDER_DEFAULT_SELECTED).spring(), w = (0, c.d)(s.Z.colors.SWITCH_BACKGROUND_HOVER).spring(), D = (0, c.d)(s.Z.colors.SWITCH_BACKGROUND_HOVER_SELECTED).spring(), L = (0, c.d)(s.Z.colors.SWITCH_BORDER_HOVER).spring(), x = (0, c.d)(s.Z.colors.SWITCH_BORDER_HOVER_SELECTED).spring(), j = (0, c.d)(s.Z.colors.SWITCH_THUMB_FOREGROUND_DEFAULT).spring(), M = (0, c.d)(s.Z.colors.SWITCH_THUMB_FOREGROUND_ACTIVE).spring(), k = (0, c.d)(s.Z.colors.SWITCH_THUMB_BACKGROUND_DEFAULT).spring(), U = (0, c.d)(s.Z.colors.SWITCH_THUMB_BACKGROUND_DEFAULT_SELECTED).spring(), [G, B] = i.useState(false), [Z, F] = i.useState(false), V = i.useRef(null), H = i.useRef(null), {
+  } = i.useContext(u.S), v = (0, c.d)(s.Z.colors.SWITCH_BACKGROUND_DEFAULT).spring(), A = (0, c.d)(s.Z.colors.SWITCH_BACKGROUND_DEFAULT).spring(), C = (0, c.d)(s.Z.colors.SWITCH_BACKGROUND_DEFAULT_SELECTED).spring(), N = (0, c.d)(s.Z.colors.SWITCH_BACKGROUND_ACTIVE).spring(), R = (0, c.d)(s.Z.colors.SWITCH_BORDER_DEFAULT).spring(), P = (0, c.d)(s.Z.colors.SWITCH_BORDER_DEFAULT_SELECTED).spring(), w = (0, c.d)(s.Z.colors.SWITCH_BACKGROUND_HOVER).spring(), D = (0, c.d)(s.Z.colors.SWITCH_BACKGROUND_HOVER_SELECTED).spring(), L = (0, c.d)(s.Z.colors.SWITCH_BORDER_HOVER).spring(), x = (0, c.d)(s.Z.colors.SWITCH_BORDER_HOVER_SELECTED).spring(), M = (0, c.d)(s.Z.colors.SWITCH_THUMB_FOREGROUND_DEFAULT).spring(), j = (0, c.d)(s.Z.colors.SWITCH_THUMB_FOREGROUND_ACTIVE).spring(), k = (0, c.d)(s.Z.colors.SWITCH_THUMB_BACKGROUND_DEFAULT).spring(), U = (0, c.d)(s.Z.colors.SWITCH_THUMB_BACKGROUND_DEFAULT_SELECTED).spring(), [G, B] = i.useState(false), [Z, F] = i.useState(false), V = i.useRef(null), H = i.useRef(null), {
     state: Y,
     opacity: W
   } = (0, l.q)({
@@ -192,7 +192,7 @@ function A(e) {
               range: I,
               output: [8, 5, 5, 5, 5, 8]
             })
-          }), E && S(Y, j, M, O.enabled)]
+          }), E && S(Y, M, j, O.enabled)]
         })
       })
     })

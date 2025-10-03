@@ -77,14 +77,14 @@ var Chunk260674 = require("./260674.js"),
       A = E ? L.sort(E) : L
     }
     var x = f ? String(n).replace(/\./g, "%2E") : String(n),
-      j = o && l(C) && 1 === C.length ? x + "[]" : x;
-    if (s && l(C) && 0 === C.length) return j + "[]";
-    for (var M = 0; M < A.length; ++M) {
-      var k = A[M],
+      M = o && l(C) && 1 === C.length ? x + "[]" : x;
+    if (s && l(C) && 0 === C.length) return M + "[]";
+    for (var j = 0; j < A.length; ++j) {
+      var k = A[j],
         U = "object" == typeof k && k && true !== k.value ? k.value : C[k];
       if (!d || null !== U) {
         var G = b && f ? String(k).replace(/\./g, "%2E") : String(k),
-          B = l(C) ? "function" == typeof a ? a(j, G) : j : j + (b ? "." + G : "[" + G + "]");
+          B = l(C) ? "function" == typeof a ? a(M, G) : M : M + (b ? "." + G : "[" + G + "]");
         S.set(t, R);
         var Z = r();
         Z.set(h, S), u(D, e(U, B, a, o, s, c, d, f, "comma" === a && I && l(C) ? null : m, g, E, b, y, O, v, I, T, Z))

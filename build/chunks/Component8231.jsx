@@ -123,7 +123,7 @@ let w = () => (0, Chunk951288.jsx)("div", {
       })]
     })
   },
-  j = e => {
+  M = e => {
     let {
       label: t,
       tier0ColumnData: n,
@@ -158,7 +158,7 @@ let w = () => (0, Chunk951288.jsx)("div", {
       })]
     })
   },
-  M = e => {
+  j = e => {
     let {
       title: t,
       rows: n
@@ -174,7 +174,7 @@ let w = () => (0, Chunk951288.jsx)("div", {
             variant: "text-lg/bold"
           })
         }), (0, r.jsx)("td", {}), (0, r.jsx)("td", {})]
-      }), n.map((e, t) => (0, r.jsx)(j, P(N({}, e), {
+      }), n.map((e, t) => (0, r.jsx)(M, P(N({}, e), {
         withBottomMargin: t === n.length - 1
       }), e.id))]
     })
@@ -266,7 +266,7 @@ let w = () => (0, Chunk951288.jsx)("div", {
       R = null != C && (0, m.Wp)(C, y.Si.TIER_2),
       L = (0, E.Aq)(y.Xh.PREMIUM_MONTH_TIER_2),
       x = "".concat(L, "/").concat((0, h.eP)(y.rV.MONTH)),
-      j = (0, h.CY)(y.Xh.PREMIUM_MONTH_TIER_0),
+      M = (0, h.CY)(y.Xh.PREMIUM_MONTH_TIER_0),
       k = (0, h.CY)(y.Xh.PREMIUM_MONTH_TIER_2),
       B = (0, b.e)();
     if (!I || !T) return null;
@@ -294,11 +294,11 @@ let w = () => (0, Chunk951288.jsx)("div", {
             className: v.table,
             children: [(0, r.jsx)(U, {}), (0, r.jsxs)("tbody", {
               children: [(0, r.jsx)(G, {
-                tier0MonthlyPrice: j,
+                tier0MonthlyPrice: M,
                 tier2MonthlyPrice: k,
                 shouldUseDiscountPrice: R,
                 tier2DiscountedPriceString: x
-              }), B.map(e => (0, i.createElement)(M, P(N({}, e), {
+              }), B.map(e => (0, i.createElement)(j, P(N({}, e), {
                 key: e.id
               })))]
             })]

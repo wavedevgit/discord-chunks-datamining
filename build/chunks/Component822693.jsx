@@ -18,8 +18,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk800223 = require("./800223.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let b = "NO_CHANNEL",
-  x = Chunk149765.$e(Chunk981631.Plq.VIEW_CHANNEL, Chunk981631.Plq.CREATE_INSTANT_INVITE);
+let x = "NO_CHANNEL",
+  b = Chunk149765.$e(Chunk981631.Plq.VIEW_CHANNEL, Chunk981631.Plq.CREATE_INSTANT_INVITE);
 
 function j(e) {
   let {
@@ -28,8 +28,8 @@ function j(e) {
     widgetChannelId: l,
     className: f,
     enableLocalUpdate: j
-  } = e, v = (0, s.e7)([c.ZP], () => c.ZP.getChannels(t)), _ = i.useMemo(() => {
-    let e = [...v[c.sH], ...v[c.Zb]].filter(e => {
+  } = e, _ = (0, s.e7)([c.ZP], () => c.ZP.getChannels(t)), v = i.useMemo(() => {
+    let e = [..._[c.sH], ..._[c.Zb]].filter(e => {
       let {
         channel: n
       } = e;
@@ -38,7 +38,7 @@ function j(e) {
       let {
         channel: t
       } = e;
-      return t.id === l || d.Z.can(x, t)
+      return t.id === l || d.Z.can(b, t)
     }).map(e => {
       let {
         channel: t
@@ -49,16 +49,16 @@ function j(e) {
       }
     });
     return e.unshift({
-      value: b,
+      value: x,
       label: h.intl.string(h.t.u197b2)
     }), e
-  }, [v, t, l]), O = i.useCallback(e => {
-    j ? (0, p.c)(t, n, e !== b ? e : null) : g.Z.updateEmbed(t, n, e !== b ? e : null)
+  }, [_, t, l]), C = i.useCallback(e => {
+    j ? (0, p.c)(t, n, e !== x ? e : null) : g.Z.updateEmbed(t, n, e !== x ? e : null)
   }, [t, n, j]);
   return (0, r.jsx)(a.q4e, {
-    options: _,
+    options: v,
     value: l,
-    onChange: O,
+    onChange: C,
     className: f
   })
 }

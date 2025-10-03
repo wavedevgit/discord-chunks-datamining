@@ -47,7 +47,7 @@ function x(e, t, n) {
   }) : e[t] = n, e
 }
 
-function j(e) {
+function M(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -60,7 +60,7 @@ function j(e) {
   return e
 }
 
-function M(e, t) {
+function j(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -72,7 +72,7 @@ function M(e, t) {
 }
 
 function k(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -207,7 +207,7 @@ let Y = function(e) {
     paymentSource: _,
     busy: C,
     analyticsLocation: x
-  } = e, M = "subscription_header", {
+  } = e, j = "subscription_header", {
     analyticsLocations: H
   } = (0, d.ZP)(u.Z.SUBSCRIPTION_HEADER), {
     fractionalState: Y
@@ -216,7 +216,7 @@ let Y = function(e) {
   }), W = Y === P.a$.FP_SUB_PAUSED, {
     enabled: K
   } = (0, S.ZP)({
-    location: M
+    location: j
   });
   P.pj.has(i.planId) && w.JwP.ALL_PAUSEABLE.has(i.status) && !W || (K = false);
   let z = (0, A.Ng)(),
@@ -238,7 +238,7 @@ let Y = function(e) {
         let {
           PremiumBrandRefreshSubscriptionCancellationModal: t
         } = await Promise.all([n.e("17938"), n.e("69432"), n.e("26526"), n.e("46573")]).then(n.bind(n, 48813));
-        return n => (0, r.jsx)(t, k(j({}, n), {
+        return n => (0, r.jsx)(t, k(M({}, n), {
           premiumSubscription: i,
           analyticsLocation: x,
           analyticsLocations: H,
@@ -341,7 +341,7 @@ let Y = function(e) {
             })
           }), (0, r.jsx)(l.ua7, {
             text: t,
-            children: t => (0, r.jsx)(N.Z, k(j({}, t), {
+            children: t => (0, r.jsx)(N.Z, k(M({}, t), {
               className: a()(L.toolsButton, L.premiumSettingsPushButton),
               disabled: e,
               onClick: () => {

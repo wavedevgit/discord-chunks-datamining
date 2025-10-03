@@ -63,19 +63,19 @@ let I = Chunk647438.memo(function(e) {
     renderButtons: I,
     resizeValidation: C,
     className: Z,
-    dragContainerClassName: w
-  } = e, N = (0, a.e7)([c.Z], () => c.Z.getWidgetConfig(t.type), [t.type]), T = (0, E.xZ)(t.id, E.bc), _ = (0, a.e7)([d.default], () => d.default.isLocked((0, f.getPID)())), P = (0, v.Z)(), D = (0, a.e7)([p.Z], () => p.Z.windowSize((0, m.ZY)(P))), A = r.useCallback((e, t, n, i, r) => {
-    let l = p.Z.windowSize((0, m.ZY)((0, v.i)())),
-      o = (0, h.jL)(n, l),
-      a = (0, h.Ox)(i, l);
+    dragContainerClassName: N
+  } = e, w = (0, a.e7)([c.Z], () => c.Z.getWidgetConfig(t.type), [t.type]), T = (0, E.xZ)(t.id, E.bc), _ = (0, a.e7)([d.default], () => d.default.isLocked((0, f.getPID)())), P = (0, v.Z)(), D = (0, a.e7)([h.Z], () => h.Z.windowSize((0, m.ZY)(P))), A = r.useCallback((e, t, n, i, r) => {
+    let l = h.Z.windowSize((0, m.ZY)((0, v.i)())),
+      o = (0, p.jL)(n, l),
+      a = (0, p.Ox)(i, l);
     (0, s.Os)(t), (0, s.nv)({
       widgetId: t,
       anchor: o,
       size: a
     });
     let d = e === y.B.MOVE,
-      f = (0, h.PY)(n, l.width, l.height, r.width, r.height);
-    u.Z.track(b.rMx.OVERLAY_LAYOUT_UPDATED, {
+      f = (0, p.PY)(n, l.width, l.height, r.width, r.height);
+    u.Z.track(S.rMx.OVERLAY_LAYOUT_UPDATED, {
       was_resized: !d,
       was_dragged: d,
       widget_type: c.Z.getWidgetType(t),
@@ -95,11 +95,11 @@ let I = Chunk647438.memo(function(e) {
     size: V,
     anchor: z,
     minSize: U
-  } = t, W = r.useMemo(() => (0, h.w_)(V, D), [V, D]), G = (0, h.KR)(z, D), {
+  } = t, W = r.useMemo(() => (0, p.w_)(V, D), [V, D]), G = (0, p.KR)(z, D), {
     resizeX: F,
     resizeY: H,
     dragAnywhere: B
-  } = null != N ? N : {}, Y = L || !_, Q = r.useMemo(() => ({
+  } = null != w ? w : {}, Y = L || !_, Q = r.useMemo(() => ({
     minX: 0,
     minY: 0,
     maxX: D.width,
@@ -109,7 +109,7 @@ let I = Chunk647438.memo(function(e) {
     dragging: null != e.dragOperation,
     className: Z
   })), [t, n, Z]), K = r.useCallback(e => null != l || null != I ? (0, i.jsxs)("div", {
-    className: o()(S.extrasContainer, T && S.fullFlex),
+    className: o()(b.extrasContainer, T && b.fullFlex),
     children: [null == l ? true : l(t), null == I ? true : I(t, e)]
   }) : null, [t, l, T, I]), J = (0, a.e7)([O.ZP], () => O.ZP.hasRenderDebugMode(g.GO.WidgetAreas)), q = r.useMemo(() => {
     if (null != C) return e => C(j(x({}, e), {
@@ -118,10 +118,10 @@ let I = Chunk647438.memo(function(e) {
   }, [C, t]);
   return (0, i.jsx)(y.Z, {
     className: o()({
-      [S.debug]: J,
-      [S.debugUnpinned]: J && !L,
-      [S.debugPinned]: J && L
-    }, w),
+      [b.debug]: J,
+      [b.debugUnpinned]: J && !L,
+      [b.debugPinned]: J && L
+    }, N),
     id: k,
     size: W,
     anchor: G,

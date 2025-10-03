@@ -95,7 +95,7 @@ function E(e, t, n, r, o) {
     }), null == (u = t.fields) || u.forEach(e => {
       b.field(e.name, e.value)
     }), null != t.context) {
-    let e = j(t.context);
+    let e = M(t.context);
     null != e && b.set("X-Context-Properties", e)
   }
   null != t.retried && 0 !== t.retried && b.set("X-Failed-Requests", "".concat(t.retried)), null != t.timeout && 0 !== t.timeout && b.timeout(t.timeout), t.binary && b.responseType("blob"), null != t.onRequestProgress && b.on("progress", e => {
@@ -266,7 +266,7 @@ function x(e) {
   L = e
 }
 
-function j(e) {
+function M(e) {
   try {
     return u.from(JSON.stringify(e)).toString("base64")
   } catch (e) {

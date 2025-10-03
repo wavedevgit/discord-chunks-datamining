@@ -14,7 +14,7 @@ require.d(exports, {
   G6: () => e_,
   H1: () => L,
   HV: () => e1,
-  I0: () => M,
+  I0: () => j,
   JG: () => eZ,
   JN: () => er,
   JT: () => ea,
@@ -64,7 +64,7 @@ require.d(exports, {
   h2: () => X,
   hg: () => eX,
   iG: () => z,
-  iH: () => eM,
+  iH: () => ej,
   j7: () => ez,
   jU: () => ee,
   kJ: () => K,
@@ -75,7 +75,7 @@ require.d(exports, {
   nc: () => eI,
   nh: () => eH,
   no: () => ek,
-  qF: () => j,
+  qF: () => M,
   rN: () => eT,
   tU: () => eb,
   uL: () => U,
@@ -176,13 +176,13 @@ let A = (0, Chunk560997.Zc)("notifications", "enableVoiceActivityNotifications",
   }, e => o.D5.create({
     value: e
   })),
-  j = (0, Chunk560997.Zc)("voiceAndVideo", "alwaysPreviewVideo", e => {
+  M = (0, Chunk560997.Zc)("voiceAndVideo", "alwaysPreviewVideo", e => {
     var t;
     return null != (t = null == e ? true : e.value) && t
   }, e => o.D5.create({
     value: e
   })),
-  M = (0, Chunk560997.Zc)("voiceAndVideo", "disableStreamPreviews", e => null == e ? true : e.value, e => o.D5.create({
+  j = (0, Chunk560997.Zc)("voiceAndVideo", "disableStreamPreviews", e => null == e ? true : e.value, e => o.D5.create({
     value: e
   })),
   k = (0, Chunk560997.Zc)("notifications", "notifyFriendsOnGoLive", e => null == e ? true : e.value, e => o.D5.create({
@@ -521,8 +521,8 @@ let eC = (0, Chunk560997.KM)((0, Chunk560997.Zc)("appearance", "developerMode", 
   ex = (0, Chunk560997.Zc)("privacy", "activityRestrictedGuildIds", e => null != e ? e : eD, e => e, {
     delay: Chunk526761.fy.FREQUENT_USER_ACTION
   }),
-  ej = [],
-  eM = (0, Chunk560997.Zc)("privacy", "activityJoiningRestrictedGuildIds", e => null != e ? e : ej, e => e);
+  eM = [],
+  ej = (0, Chunk560997.Zc)("privacy", "activityJoiningRestrictedGuildIds", e => null != e ? e : eM, e => e);
 (0, Chunk560997.TG)({
   baseSetting: (0, Chunk560997.Zc)("privacy", "defaultGuildsActivityRestricted", e => e, e => null != e ? e : a.E5.OFF),
   isEligible: () => (0, Chunk362352.o0)("user_settings"),

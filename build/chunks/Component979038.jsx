@@ -57,8 +57,8 @@ function C(e) {
     activity: C,
     onAction: N
   });
-  let j = w === A.l.MODAL || w === A.l.MODAL_V2;
-  return L || !D || null == P || j ? (0, i.Z)(C, S.xjy.JOIN) || (0, a.Z)(C) ? (0, r.jsx)(b.Z, {
+  let M = w === A.l.MODAL || w === A.l.MODAL_V2;
+  return L || !D || null == P || M ? (0, i.Z)(C, S.xjy.JOIN) || (0, a.Z)(C) ? (0, r.jsx)(b.Z, {
     user: n,
     activity: C,
     onAction: N,

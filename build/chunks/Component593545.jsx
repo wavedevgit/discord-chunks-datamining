@@ -2,13 +2,14 @@
 /** chunk id: 593545, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => P
+  Z: () => w
 }), require("./35282.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk608787 = require("./608787.jsx"),
+  Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk40330 = require("./40330.jsx"),
   Chunk571989 = require("./571989.js"),
@@ -19,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk409077 = require("./409077.js"),
   Chunk154257 = require("./154257.js");
 
-function g(e, t, n) {
+function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -28,20 +29,20 @@ function g(e, t, n) {
   }) : e[t] = n, e
 }
 
-function E(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      g(e, t, n[t])
+      E(e, t, n[t])
     })
   }
   return e
 }
 
-function b(e, t) {
+function y(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -52,13 +53,13 @@ function b(e, t) {
   return n
 }
 
-function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
+function O(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function O(e) {
+function v(e) {
   var t;
   let n = "utf-8",
     r = null != (t = null == e ? true : e.split("charset=").slice(false)[0]) ? t : n;
@@ -70,7 +71,7 @@ function O(e) {
   }
 }
 
-function v(e, t) {
+function I(e, t) {
   let [n, r] = i.useState(false), [a, o] = i.useState(null), [s, l] = i.useState(1);
   return i.useEffect(() => {
     let n = 5e4;
@@ -83,7 +84,7 @@ function v(e, t) {
               Accept: "text/plain"
             }
           }),
-          c = O(t).decode(await s.arrayBuffer()),
+          c = v(t).decode(await s.arrayBuffer()),
           u = null != (i = s.headers.get("content-range")) ? i : "0",
           d = null != (a = s.headers.get("content-length")) ? a : "1",
           f = parseInt(u.split("/")[1]) - parseInt(d);
@@ -99,13 +100,13 @@ function v(e, t) {
   }
 }
 
-function I(e) {
+function T(e) {
   let {
     text: t,
     language: i
   } = e, a = () => (0, r.jsx)("pre", {
     children: (0, r.jsx)("code", {
-      className: o()(m.scrollbarGhostHairline, h.codeView, "hljs"),
+      className: o()(g.scrollbarGhostHairline, m.codeView, "hljs"),
       children: t
     })
   });
@@ -117,7 +118,7 @@ function I(e) {
       let n = e.highlight(i, t, true);
       return null == n ? a() : (0, r.jsx)("pre", {
         children: (0, r.jsx)("code", {
-          className: o()(m.scrollbarGhostHairline, h.codeView, "hljs", n.language),
+          className: o()(g.scrollbarGhostHairline, m.codeView, "hljs", n.language),
           dangerouslySetInnerHTML: {
             __html: n.value
           }
@@ -128,171 +129,172 @@ function I(e) {
   })
 }
 
-function T(e) {
+function S(e) {
   let {
     expanded: t,
     setExpanded: n,
     isWholeFile: i,
     numLines: a
-  } = e, o = p.intl.formatToPlainString(i ? p.t.Go5Vvr : p.t.yJcYam, {
+  } = e, o = h.intl.formatToPlainString(i ? h.t.Go5Vvr : h.t.yJcYam, {
     lines: a
   });
-  return (0, r.jsx)(l.ua7, {
-    text: "".concat(t ? p.intl.string(p.t.iTcumZ) : p.intl.string(p.t.dcl9MT), " (").concat(o, ")"),
-    children: e => (0, r.jsxs)(l.P3F, y(E({}, e), {
-      className: h.toggleExpandSection,
+  return (0, r.jsx)(l.u, {
+    asContainer: true,
+    text: "".concat(t ? h.intl.string(h.t.iTcumZ) : h.intl.string(h.t.dcl9MT), " (").concat(o, ")"),
+    children: (0, r.jsxs)(c.P3F, {
+      className: m.toggleExpandSection,
       onClick: () => {
         n(!t)
       },
-      children: [(0, r.jsx)(f.Z, {
-        direction: t ? f.Z.Directions.UP : f.Z.Directions.DOWN
-      }), t ? p.intl.string(p.t.iTcumZ) : p.intl.string(p.t.dcl9MT)]
-    }))
-  })
-}
-
-function S(e) {
-  let {
-    url: t,
-    fileName: n,
-    fileSize: i
-  } = e, a = "".concat(n, " (").concat((0, _.IC)(i), ")");
-  return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(l.ua7, {
-      text: a,
-      children: e => (0, r.jsx)("span", y(E({}, e), {
-        className: o()(h.downloadSection, h.attachmentName),
-        children: n
-      }))
-    }), (0, r.jsx)(l.ua7, {
-      text: a,
-      children: e => (0, r.jsx)("span", y(E({}, e), {
-        className: o()(h.downloadSection, h.formattedSize),
-        children: (0, _.IC)(i)
-      }))
-    }), (0, r.jsx)(l.ua7, {
-      text: "".concat(p.intl.string(p.t["1WjMbG"]), " ").concat(a),
-      children: e => (0, r.jsx)(l.eee, y(E({}, e), {
-        className: h.downloadSection,
-        href: t,
-        target: "_blank",
-        rel: "noreferrer noopener",
-        children: (0, r.jsx)(l._8t, {
-          size: "md",
-          color: "currentColor",
-          className: h.downloadButton
-        })
-      }))
-    })]
+      children: [(0, r.jsx)(_.Z, {
+        direction: t ? _.Z.Directions.UP : _.Z.Directions.DOWN
+      }), t ? h.intl.string(h.t.iTcumZ) : h.intl.string(h.t.dcl9MT)]
+    })
   })
 }
 
 function A(e) {
   let {
+    url: t,
+    fileName: n,
+    fileSize: i
+  } = e, a = "".concat(n, " (").concat((0, p.IC)(i), ")");
+  return (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(l.u, {
+      text: a,
+      children: (0, r.jsx)("span", {
+        className: o()(m.downloadSection, m.attachmentName),
+        children: n
+      })
+    }), (0, r.jsx)(l.u, {
+      text: a,
+      children: (0, r.jsx)("span", {
+        className: o()(m.downloadSection, m.formattedSize),
+        children: (0, p.IC)(i)
+      })
+    }), (0, r.jsx)(l.u, {
+      text: "".concat(h.intl.string(h.t["1WjMbG"]), " ").concat(a),
+      children: (0, r.jsx)(c.eee, {
+        className: m.downloadSection,
+        href: t,
+        target: "_blank",
+        rel: "noreferrer noopener",
+        children: (0, r.jsx)(c._8t, {
+          size: "md",
+          color: "currentColor",
+          className: m.downloadButton
+        })
+      })
+    })]
+  })
+}
+
+function C(e) {
+  let {
     language: t,
     setLanguage: n
   } = e, a = i.useRef(null);
-  return (0, r.jsx)(l.yRy, {
+  return (0, r.jsx)(c.yRy, {
     targetElementRef: a,
     position: "left",
     renderPopout: e => {
       let {
         closePopout: i
       } = e;
-      return (0, r.jsx)(l.VqE, {
-        "aria-label": p.intl.string(p.t.utm4qq),
-        children: (0, r.jsx)(l.hQY, {
-          className: h.languageSelector,
+      return (0, r.jsx)(c.VqE, {
+        "aria-label": h.intl.string(h.t.utm4qq),
+        children: (0, r.jsx)(c.hQY, {
+          className: m.languageSelector,
           multiSelect: false,
-          placeholder: p.intl.string(p.t.Gofftb),
+          placeholder: h.intl.string(h.t.Gofftb),
           value: new Set([t]),
           autoFocus: true,
           onChange: e => {
             n(e), i()
           },
-          children: e => Array.from(d.u).filter(t => t.toLowerCase().includes(e.toLowerCase())).map(e => (0, r.jsx)(l.lo1, {
+          children: e => Array.from(f.u).filter(t => t.toLowerCase().includes(e.toLowerCase())).map(e => (0, r.jsx)(c.lo1, {
             value: e,
-            children: (0, r.jsx)(l.lo1.Label, {
+            children: (0, r.jsx)(c.lo1.Label, {
               children: e
             })
           }, e))
         })
       })
     },
-    children: e => (0, r.jsx)(l.ua7, {
-      text: p.intl.string(p.t.utm4qq),
-      children: t => (0, r.jsx)(l.nF$, y(E({
+    children: e => (0, r.jsx)(l.u, {
+      text: h.intl.string(h.t.utm4qq),
+      children: (0, r.jsx)(c.nF$, O(b({}, e), {
         size: "md",
-        color: "currentColor"
-      }, t, e), {
-        className: h.codeIcon,
+        color: "currentColor",
+        className: m.codeIcon,
         ref: a
       }))
     })
   })
 }
 
-function C(e) {
-  return (0, r.jsx)(l.ua7, {
-    text: p.intl.string(p.t["0PQYk5"]),
-    children: t => (0, r.jsx)(l.P3F, y(E({}, t), {
-      className: h.openFullPreviewSection,
+function N(e) {
+  return (0, r.jsx)(l.u, {
+    asContainer: true,
+    text: h.intl.string(h.t["0PQYk5"]),
+    children: (0, r.jsx)(c.P3F, {
+      className: m.openFullPreviewSection,
       onClick: () => {
-        (0, l.h7j)(t => (0, r.jsx)(R, E({}, e, t)))
+        (0, c.h7j)(t => (0, r.jsx)(P, b({}, e, t)))
       },
-      children: (0, r.jsx)(l.bJT, {
+      children: (0, r.jsx)(c.bJT, {
         size: "xs",
         color: "currentColor"
       })
-    }))
+    })
   })
 }
 
-function N(e) {
+function R(e) {
   var t;
   let {
     url: n,
     fileName: i,
     fileSize: a,
     fileContents: s,
-    expanded: c,
-    setExpanded: d,
+    expanded: l,
+    setExpanded: u,
     language: f,
-    setLanguage: m,
+    setLanguage: _,
     bytesLeft: g,
     className: E
-  } = e, b = null == s ? true : s.split("\n"), y = null != (t = null == b ? true : b.length) ? t : 0, O = c ? 100 : 6, v = 0 === g, N = "";
-  v && c && y > O ? N = "\n..." : v || (N = "..."), "" !== N && (v ? N += " " + p.intl.formatToPlainString(p.t.DQnFp6, {
+  } = e, b = null == s ? true : s.split("\n"), y = null != (t = null == b ? true : b.length) ? t : 0, O = l ? 100 : 6, v = 0 === g, I = "";
+  v && l && y > O ? I = "\n..." : v || (I = "..."), "" !== I && (v ? I += " " + h.intl.formatToPlainString(h.t.DQnFp6, {
     lines: y - O
-  }) : N += " " + p.intl.formatToPlainString(p.t["1+gGcH"], {
-    formattedBytes: (0, _.IC)(g)
+  }) : I += " " + h.intl.formatToPlainString(h.t["1+gGcH"], {
+    formattedBytes: (0, p.IC)(g)
   }));
-  let R = (null == b ? true : b.slice(0, O).join("\n")) + N,
-    P = (0, u.nM)(R),
-    w = c || O < y;
+  let R = (null == b ? true : b.slice(0, O).join("\n")) + I,
+    P = (0, d.nM)(R),
+    w = l || O < y;
   return (0, r.jsxs)("div", {
-    className: o()(E, h.container),
+    className: o()(E, m.container),
     children: [(0, r.jsx)("div", {
-      className: o()(h.textContainer, {
-        [h.expanded]: c
+      className: o()(m.textContainer, {
+        [m.expanded]: l
       }),
-      children: null == s ? (0, r.jsx)(l.$jN, {
-        className: h.spinner
-      }) : (0, r.jsx)(I, {
+      children: null == s ? (0, r.jsx)(c.$jN, {
+        className: m.spinner
+      }) : (0, r.jsx)(T, {
         text: P,
         language: f
       })
-    }), (0, r.jsxs)(l.Text, {
+    }), (0, r.jsxs)(c.Text, {
       color: "header-secondary",
-      className: h.footer,
+      className: m.footer,
       variant: "text-sm/normal",
       children: [w ? (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(T, {
-          expanded: c,
-          setExpanded: d,
+        children: [(0, r.jsx)(S, {
+          expanded: l,
+          setExpanded: u,
           isWholeFile: v,
           numLines: y
-        }), (0, r.jsx)(C, {
+        }), (0, r.jsx)(N, {
           url: n,
           fileName: i,
           fileSize: a,
@@ -301,58 +303,58 @@ function N(e) {
           bytesLeft: g
         })]
       }) : null, (0, r.jsx)("div", {
-        className: h.footerGap
-      }), (0, r.jsx)(S, {
+        className: m.footerGap
+      }), (0, r.jsx)(A, {
         url: n,
         fileName: i,
         fileSize: a
-      }), (0, r.jsx)(A, {
+      }), (0, r.jsx)(C, {
         language: f,
-        setLanguage: m
+        setLanguage: _
       })]
     })]
   })
 }
 
-function R(e) {
+function P(e) {
   let {
     url: t,
     fileName: n,
     fileSize: a,
     transitionState: o,
     language: s,
-    fileContents: c,
+    fileContents: l,
     bytesLeft: u
-  } = e, [d, f] = i.useState(s), m = null != c ? c : "";
-  return 0 !== u && (m += "... ".concat(p.intl.formatToPlainString(p.t["1+gGcH"], {
-    formattedBytes: (0, _.IC)(u)
-  }))), (0, r.jsx)(l.Y0X, {
+  } = e, [d, f] = i.useState(s), _ = null != l ? l : "";
+  return 0 !== u && (_ += "... ".concat(h.intl.formatToPlainString(h.t["1+gGcH"], {
+    formattedBytes: (0, p.IC)(u)
+  }))), (0, r.jsx)(c.Y0X, {
     transitionState: o,
-    "aria-label": p.intl.string(p.t.qxQjc3),
-    size: l.CgR.LARGE,
-    className: h.modalRoot,
+    "aria-label": h.intl.string(h.t.qxQjc3),
+    size: c.CgR.LARGE,
+    className: m.modalRoot,
     parentComponent: "PlaintextFilePreview",
     children: (0, r.jsxs)("div", {
-      className: h.modalContent,
-      children: [(0, r.jsx)(l.zJl, {
-        className: h.modalTextContainer,
-        children: null == c ? (0, r.jsx)(l.$jN, {
-          className: h.spinner
-        }) : (0, r.jsx)(I, {
-          text: m,
+      className: m.modalContent,
+      children: [(0, r.jsx)(c.zJl, {
+        className: m.modalTextContainer,
+        children: null == l ? (0, r.jsx)(c.$jN, {
+          className: m.spinner
+        }) : (0, r.jsx)(T, {
+          text: _,
           language: d
         })
-      }), (0, r.jsxs)(l.Text, {
+      }), (0, r.jsxs)(c.Text, {
         color: "header-secondary",
-        className: h.footer,
+        className: m.footer,
         variant: "text-sm/normal",
         children: [(0, r.jsx)("div", {
-          className: h.footerGap
-        }), (0, r.jsx)(S, {
+          className: m.footerGap
+        }), (0, r.jsx)(A, {
           url: t,
           fileName: n,
           fileSize: a
-        }), (0, r.jsx)(A, {
+        }), (0, r.jsx)(C, {
           language: d,
           setLanguage: f
         })]
@@ -360,28 +362,28 @@ function R(e) {
     })
   })
 }
-let P = Chunk647438.memo(function(e) {
+let w = Chunk647438.memo(function(e) {
   let {
     url: t,
     fileName: n,
     fileSize: a,
     contentType: s,
     className: l,
-    onClick: u,
+    onClick: c,
     onContextMenu: d
-  } = e, [f, _] = i.useState(false), [p, m] = i.useState(n.split(".").slice(false)[0]), {
+  } = e, [f, _] = i.useState(false), [p, h] = i.useState(n.split(".").slice(false)[0]), {
     fileContents: g,
     bytesLeft: E,
     hadError: b
-  } = v(t, s);
-  return b ? (0, r.jsx)(c.Z, {
+  } = I(t, s);
+  return b ? (0, r.jsx)(u.Z, {
     url: t,
     fileName: n,
     fileSize: a,
-    onClick: u,
+    onClick: c,
     onContextMenu: d,
     className: l
-  }) : (0, r.jsx)(N, {
+  }) : (0, r.jsx)(R, {
     url: t,
     fileName: n,
     fileSize: a,
@@ -390,7 +392,7 @@ let P = Chunk647438.memo(function(e) {
     expanded: f,
     setExpanded: _,
     language: p,
-    setLanguage: m,
-    className: o()(h.newMosaicStyle, l)
+    setLanguage: h,
+    className: o()(m.newMosaicStyle, l)
   })
 }, (e, t) => e.url === t.url && e.className === t.className)

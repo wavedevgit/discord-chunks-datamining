@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   $2: () => b,
-  Ad: () => j,
+  Ad: () => M,
   BH: () => N,
   Cs: () => w,
   G1: () => E,
@@ -180,9 +180,9 @@ let E = e => (null == e ? true : e.premiumType) != null,
     let l = f.ANM.APPLICATION_ASSET(f.XAJ, e, s);
     return "".concat(location.protocol).concat(i).concat(l, "?size=").concat(o)
   },
-  j = e => D(e, i.Z.AVATAR_DECORATION),
-  M = e => L(e, i.Z.AVATAR_DECORATION),
-  k = (e, t) => (0, r.uniqBy)([...j(e), ...M(t)], "id"),
+  M = e => D(e, i.Z.AVATAR_DECORATION),
+  j = e => L(e, i.Z.AVATAR_DECORATION),
+  k = (e, t) => (0, r.uniqBy)([...M(e), ...j(t)], "id"),
   U = e => D(e, i.Z.PROFILE_EFFECT),
   G = e => L(e, i.Z.PROFILE_EFFECT),
   B = (e, t) => (0, r.uniqBy)([...U(e), ...G(t)], "id"),

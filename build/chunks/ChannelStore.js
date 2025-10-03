@@ -2,7 +2,7 @@
 /** chunk id: 592125, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => ej,
+  Z: () => eM,
   o: () => K
 }), require("./388685.js"), require("./825670.js"), require("./415506.js"), require("./642613.js"), require("./583741.js");
 var r, Chunk392711 = require("./392711.js"),
@@ -71,8 +71,8 @@ let N = new Chunk710845.Z("ChannelStore"),
   D = {},
   L = null,
   x = {},
-  j = {},
   M = {},
+  j = {},
   k = 0,
   U = {},
   G = {},
@@ -156,7 +156,7 @@ function X(e) {
     for (let t of b.default.keys(w[e])) delete P[t];
     delete w[e]
   }
-  null != j[e] && delete j[e]
+  null != M[e] && delete M[e]
 }
 
 function Q(e) {
@@ -175,7 +175,7 @@ function $(e) {
 
 function ee(e) {
   if (null != e.recipients.find(e => (0, p.Z)(e))) returnfalse;
-  D[e.id] = e, e.type === I.d4z.DM && (M[e.getRecipientId()] = e.id), k += 1
+  D[e.id] = e, e.type === I.d4z.DM && (j[e.getRecipientId()] = e.id), k += 1
 }
 
 function et(e) {
@@ -195,7 +195,7 @@ function en(e) {
     id: a,
     guild_id: o
   } = e;
-  P[a] = e, w[o] = null != (t = w[o]) ? t : {}, w[o][a] = e, U[o] = (null != (n = U[o]) ? n : 0) + 1, null != e.linkedLobby ? (j[o] = null != (r = j[o]) ? r : {}, j[o][a] = e) : null == (i = j[o]) || delete i[a]
+  P[a] = e, w[o] = null != (t = w[o]) ? t : {}, w[o][a] = e, U[o] = (null != (n = U[o]) ? n : 0) + 1, null != e.linkedLobby ? (M[o] = null != (r = M[o]) ? r : {}, M[o][a] = e) : null == (i = M[o]) || delete i[a]
 }
 
 function er(e) {
@@ -212,7 +212,7 @@ function ei(e) {
 
 function ea(e) {
   let t = w;
-  for (let n of (M = {}, P = {}, w = {}, j = {}, x = {}, U = {}, V = {}, Z = {}, F = Date.now(), L = e.initialPrivateChannels, e.initialPrivateChannels.forEach(ee), e.guilds)) "partial" === n.dataMode && (a().forEach(t[n.id], en), N.fileOnly("Restoring guild channels for ".concat(n.id, " #:").concat(ex(n.id)))), eo(n);
+  for (let n of (j = {}, P = {}, w = {}, M = {}, x = {}, U = {}, V = {}, Z = {}, F = Date.now(), L = e.initialPrivateChannels, e.initialPrivateChannels.forEach(ee), e.guilds)) "partial" === n.dataMode && (a().forEach(t[n.id], en), N.fileOnly("Restoring guild channels for ".concat(n.id, " #:").concat(ex(n.id)))), eo(n);
   ew()
 }
 
@@ -245,7 +245,7 @@ function el(e) {
   let {
     guilds: t
   } = e, n = w;
-  P = {}, w = {}, U = {}, j = {}, t.forEach(e => {
+  P = {}, w = {}, U = {}, M = {}, t.forEach(e => {
     if ("unavailable" === e.data_mode) N.fileOnly("Restoring guild channels b/c unavailable in bg sync, for ".concat(e.id, " #:").concat(ex(e.id))), a().forEach(n[e.id], en);
     else if ("partial" === e.data_mode) {
       var t, r;
@@ -267,7 +267,7 @@ function ec(e) {
 }
 
 function eu() {
-  N.fileOnly("initializeClear()"), M = {}, P = {}, w = {}, U = {}, j = {}, D = {}, V = {}, x = {}, B = new Set, Z = {}, F = Date.now()
+  N.fileOnly("initializeClear()"), j = {}, P = {}, w = {}, U = {}, M = {}, D = {}, V = {}, x = {}, B = new Set, Z = {}, F = Date.now()
 }
 
 function ed(e) {
@@ -361,13 +361,13 @@ function ey(e) {
 function eO(e) {
   if ("basicPermissions" in e || e.type !== I.d4z.DM) return;
   let t = e.getRecipientId();
-  M[t] === e.id && delete M[t]
+  j[t] === e.id && delete j[t]
 }
 
 function ev(e) {
   if (null == e) return;
   let t = e.guild_id;
-  e.id in D && delete D[e.id], e.id in P && delete P[e.id], e.id in x && delete x[e.id], null != t && (null != w[t] && e.id in w[t] && delete w[t][e.id], null != j[t] && e.id in j[t] && delete j[t][e.id]), ei(e)
+  e.id in D && delete D[e.id], e.id in P && delete P[e.id], e.id in x && delete x[e.id], null != t && (null != w[t] && e.id in w[t] && delete w[t][e.id], null != M[t] && e.id in M[t] && delete M[t][e.id]), ei(e)
 }
 
 function eI(e) {
@@ -476,22 +476,22 @@ class eL extends(r = Chunk442837.ZP.Store) {
   }
   getSortedLinkedChannelsForGuild(e) {
     var t;
-    return a().values(null != (t = j[e]) ? t : R).sort((e, t) => b.default.compare(e.id, t.id))
+    return a().values(null != (t = M[e]) ? t : R).sort((e, t) => b.default.compare(e.id, t.id))
   }
   getSortedPrivateChannels() {
     return a()(D).values().sort((e, t) => b.default.compare(e.lastMessageId, t.lastMessageId)).reverse().value()
   }
   getDMFromUserId(e) {
-    if (null != e) return M[e]
+    if (null != e) return j[e]
   }
   getDMChannelFromUserId(e) {
-    if (null != e) return this.getChannel(M[e])
+    if (null != e) return this.getChannel(j[e])
   }
   getMutableDMsByUserIds() {
-    return M
+    return j
   }
   getDMUserIds() {
-    return Chunk709054.default.keys(M)
+    return Chunk709054.default.keys(j)
   }
   getPrivateChannelsVersion() {
     return k
@@ -522,7 +522,7 @@ function ex(e) {
   return null == w[e] ? null : Object.keys(w[e]).length
 }
 T(eL, "displayName", "ChannelStore");
-let ej = new eL(Chunk570140.Z, {
+let eM = new eL(Chunk570140.Z, {
   BACKGROUND_SYNC: el,
   CACHE_LOADED_LAZY: e_,
   CACHE_LOADED: ed,

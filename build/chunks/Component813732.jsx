@@ -98,7 +98,7 @@ function X(e, t) {
       variant: "text-md/normal",
       className: K.accountCreditDescription,
       children: W.intl.format(W.t["7Zi06e"], {
-        helpCenterLink: j.Z.getArticleURL(V.BhN.FRACTIONAL_PREMIUM_ABOUT)
+        helpCenterLink: M.Z.getArticleURL(V.BhN.FRACTIONAL_PREMIUM_ABOUT)
       })
     }), (0, r.jsx)(U.Z, {
       className: K.accountCredit,
@@ -124,11 +124,11 @@ let J = function() {
     b = (0, Chunk442837.e7)([Chunk351402.Z], () => Chunk351402.Z.isBusy),
     y = (0, Chunk15640.V)(),
     L = (0, Chunk442837.e7)([Chunk663389.Z], () => Chunk663389.Z.getSubsection()),
-    j = (0, Chunk442837.e7)([Chunk78839.Z], () => {
+    M = (0, Chunk442837.e7)([Chunk78839.Z], () => {
       var e, t;
       return null != (t = null == (e = Chunk78839.Z.getActiveApplicationSubscriptions()) ? true : module.length) ? exports : 0
     }),
-    M = (0, Chunk442837.e7)([Chunk78839.Z], () => {
+    j = (0, Chunk442837.e7)([Chunk78839.Z], () => {
       var e;
       return Object.values(null != (e = Chunk78839.Z.getSubscriptions()) ? module : {}).filter(e => e.type === V.NYc.GUILD).filter(e => e.status !== V.O0b.ENDED).length
     }),

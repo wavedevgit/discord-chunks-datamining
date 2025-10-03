@@ -2,15 +2,15 @@
 /** chunk id: 731971, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   NQ: () => b,
-  U1: () => y,
+  U1: () => O,
   XW: () => d,
   _J: () => m,
-  aP: () => h,
+  aP: () => f,
   e7: () => g,
   h6: () => _,
-  oE: () => f,
+  oE: () => h,
   pB: () => p,
-  y: () => O,
+  y: () => y,
   yr: () => v
 }), require("./781311.js");
 var Chunk879690 = require("./879690.js"),
@@ -106,10 +106,10 @@ let d = (0, Chunk879690.U)(e => ({
   p = (e, t, n) => {
     d.getState().initialize(e, t, n)
   },
-  f = () => {
+  h = () => {
     d.getState().reset()
   },
-  h = () => {
+  f = () => {
     let e = d.getState();
     return module.nickname !== c.nickname || module.dmsAllowed !== c.dmsAllowed || module.showActivity !== u(module.guildSize)
   },
@@ -117,8 +117,8 @@ let d = (0, Chunk879690.U)(e => ({
   m = () => d.getState().guildId,
   b = () => d.getState().touched,
   _ = () => d.getState().dmsAllowed,
-  O = () => d.getState().nickname,
-  y = () => d.getState().showActivity,
+  y = () => d.getState().nickname,
+  O = () => d.getState().showActivity,
   v = () => {
     var e, t;
     let {

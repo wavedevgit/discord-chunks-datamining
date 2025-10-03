@@ -71,13 +71,13 @@ function R(e, t, n) {
   if (null != n) return n.applicationId === e.id;
   if (null != t) {
     var r;
-    return (t.application_id === e.id || (null == (r = e.linkedGames) ? true : r.some(e => e.id === t.application_id))) && t.type === N.IIU.PLAYING && (0, f.Z)(t, N.xjy.JOIN)
+    return (t.application_id === e.id || (null == (r = e.linkedGames) ? true : r.some(e => e.id === t.application_id))) && t.type === N.IIU.PLAYING && (0, h.Z)(t, N.xjy.JOIN)
   }
   returnfalse
 }
 let D = Chunk647438.memo(function(e) {
     var t;
-    let l, a, f, D, {
+    let l, a, h, D, {
         stream: M,
         canGoLive: k,
         guildId: U,
@@ -124,7 +124,7 @@ let D = Chunk647438.memo(function(e) {
         })
       }, [J]),
       er = i.useCallback(e => () => {
-        (0, _.v)(J, _.d.LEAVE_ACTIVITY), y.Z.stopFrame({
+        (0, _.v)(J, _.d.LEAVE_ACTIVITY), O.Z.stopFrame({
           applicationId: e
         })
       }, [J]),
@@ -166,80 +166,80 @@ let D = Chunk647438.memo(function(e) {
       } = (0, b.FG)(K, {
         allowedFlows: [b.ro.RPC]
       }),
-      ed = P.Z.useConfig({
+      ed = I.Z.useConfig({
         location: "ActivityActions"
       }).enabled,
       ep = i.useRef(null),
-      [ef, eh] = i.useState(false);
+      [eh, ef] = i.useState(false);
     i.useEffect(() => () => {
       null != ep.current && clearTimeout(ep.current)
     }, []), i.useEffect(() => {
-      ec && (eh(false), null != ep.current && (clearTimeout(ep.current), ep.current = null))
+      ec && (ef(false), null != ep.current && (clearTimeout(ep.current), ep.current = null))
     }, [ec]);
     let eg = (null != V || null == H || (0, p.R)()) && (G || k) ? (G ? (l = false, a = () => {
         ei(), (0, _.v)(J, _.d.STREAM, false)
-      }, f = c.g5r, D = w.intl.string(w.t.S5anIS)) : F ? (l = false, a = () => {
+      }, h = c.g5r, D = Z.intl.string(Z.t.S5anIS)) : F ? (l = false, a = () => {
         el(), (0, _.v)(J, _.d.STREAM, true)
-      }, f = c.hGI, D = null != V ? w.intl.formatToPlainString(w.t.AB5gT0, {
+      }, h = c.hGI, D = null != V ? Z.intl.formatToPlainString(Z.t.AB5gT0, {
         game: V.name
-      }) : w.intl.string(w.t.FeUKeH)) : (l = true, a = null, f = c.hGI, D = null != B && (0, C.vd)(B.type) ? w.intl.string(w.t.uQn9Bw) : null != U ? w.intl.string(w.t.fBXEoK) : w.intl.string(w.t.n3feND)), (0, r.jsx)("div", {
-        className: Z.panelButtonContainer,
-        children: (0, r.jsx)(I.Z, {
+      }) : Z.intl.string(Z.t.FeUKeH)) : (l = true, a = null, h = c.hGI, D = null != B && (0, C.vd)(B.type) ? Z.intl.string(Z.t.uQn9Bw) : null != U ? Z.intl.string(Z.t.fBXEoK) : Z.intl.string(Z.t.n3feND)), (0, r.jsx)("div", {
+        className: w.panelButtonContainer,
+        children: (0, r.jsx)(P.Z, {
           tooltipText: D,
           disabled: l,
           onClick: a,
-          icon: f
+          icon: h
         })
       })) : null,
-      em = ee && null == H ? (0, r.jsx)(I.Z, {
+      em = ee && null == H ? (0, r.jsx)(P.Z, {
         ref: q,
-        tooltipText: w.intl.string(w.t["hC/Ze3"]),
+        tooltipText: Z.intl.string(Z.t["hC/Ze3"]),
         onClick: et,
         icon: c.ejJ
       }) : null,
-      eb = null == H ? null : (0, r.jsx)(I.Z, {
-        tooltipText: w.intl.string(w.t["R/FK4O"]),
+      eb = null == H ? null : (0, r.jsx)(P.Z, {
+        tooltipText: Z.intl.string(Z.t["R/FK4O"]),
         onClick: en(H.applicationId, H.location),
         icon: c.PBZ
       }),
-      e_ = null == z ? null : (0, r.jsx)(I.Z, {
-        tooltipText: w.intl.string(w.t["R/FK4O"]),
+      e_ = null == z ? null : (0, r.jsx)(P.Z, {
+        tooltipText: Z.intl.string(Z.t["R/FK4O"]),
         onClick: er(z.applicationId),
         icon: c.PBZ
       }),
-      eO = null == M ? null : (0, r.jsx)(O.Z, {}),
-      ey = ed && ea && !ec ? (0, r.jsx)(L, {
+      ey = null == M ? null : (0, r.jsx)(y.Z, {}),
+      eO = ed && ea && !ec ? (0, r.jsx)(L, {
         runningGame: V,
         startAuthorization: () => {
-          eh(true), null != ep.current && clearTimeout(ep.current), ep.current = setTimeout(() => {
-            eh(false)
+          ef(true), null != ep.current && clearTimeout(ep.current), ep.current = setTimeout(() => {
+            ef(false)
           }, 9e4), es()
         },
         connectionApp: eu,
         ref: X
       }) : null,
-      ev = $ && null != W && (0, h.Z)(W) ? (0, r.jsx)(I.Z, {
+      ev = $ && null != W && (0, f.Z)(W) ? (0, r.jsx)(P.Z, {
         tooltipText: "Report Issue",
         onClick: eo,
         icon: c.xhG
       }) : null,
       ej = ed && ea && !ec ? (0, r.jsx)(s.J2, {
-        title: w.intl.string(w.t.ULvRFR),
-        body: w.intl.string(w.t.HJJDr6),
+        title: Z.intl.string(Z.t.ULvRFR),
+        body: Z.intl.string(Z.t.HJJDr6),
         targetElementRef: X,
         position: "top",
         align: "center",
         caretConfig: {
           align: "center"
         },
-        shouldShow: ef,
+        shouldShow: eh,
         onRequestClose: () => {
-          eh(false), null != ep.current && (clearTimeout(ep.current), ep.current = null)
+          ef(false), null != ep.current && (clearTimeout(ep.current), ep.current = null)
         }
       }) : null;
-    return null == eg && null == em && null == eb && null == e_ && null == ey && null == ev ? null : (0, r.jsxs)("div", {
-      className: Z.actions,
-      children: [null != ey ? ey : em, eg, null != (t = null != eb ? eb : e_) ? t : eO, ev, ej]
+    return null == eg && null == em && null == eb && null == e_ && null == eO && null == ev ? null : (0, r.jsxs)("div", {
+      className: w.actions,
+      children: [null != eO ? eO : em, eg, null != (t = null != eb ? eb : e_) ? t : ey, ev, ej]
     })
   }),
   L = Chunk647438.forwardRef(function(e, t) {
@@ -248,7 +248,7 @@ let D = Chunk647438.memo(function(e) {
       startAuthorization: i,
       connectionApp: l
     } = e;
-    return (0, r.jsx)(I.Z, {
+    return (0, r.jsx)(P.Z, {
       ref: t,
       onClick: () => {
         var e, t;
@@ -259,6 +259,6 @@ let D = Chunk647438.memo(function(e) {
         }), i()
       },
       icon: a.u,
-      tooltipText: w.intl.string(w.t.sbdnp6)
+      tooltipText: Z.intl.string(Z.t.sbdnp6)
     })
   })

@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 665307, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => B
+  Z: () => H
 }), require("./415506.js"), require("./388685.js");
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -10,6 +10,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk843611 = require("./843611.js"),
   Chunk442837 = require("./442837.js"),
   Chunk846519 = require("./846519.js"),
+  Chunk28664 = require("./28664.jsx"),
   Chunk477690 = require("./477690.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -31,7 +32,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk117554 = require("./117554.js");
 
-function A(e, t, n) {
+function Z(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -40,20 +41,20 @@ function A(e, t, n) {
   }) : e[t] = n, e
 }
 
-function Z(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      A(e, t, n[t])
+      Z(e, t, n[t])
     })
   }
   return e
 }
 
-function w(e, t) {
+function L(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -65,53 +66,53 @@ function w(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let L = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
-  R = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_LINKED_TO_GLOW_DURATION),
-  D = Object.freeze({
+let R = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
+  D = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_LINKED_TO_GLOW_DURATION),
+  k = Object.freeze({
     [Chunk981631.iEv.PLATFORM]: "Platform",
     [Chunk981631.iEv.LAST_PLAYED]: "Last Played",
     [Chunk981631.iEv.NAME]: "Name"
   }),
-  k = e => {
+  M = e => {
     let {
       flag: t,
       icon: n,
       item: r,
       tooltip: l
     } = e, a = r.libraryApplication.hasFlag(t);
-    return (0, i.jsx)(f.ua7, {
+    return (0, i.jsxs)(d.u, {
       text: l,
-      children: e => (0, i.jsx)(n, Z({
-        className: o()(x.settingIcon, {
-          [x.hidden]: !a
+      children: ["(", (0, i.jsx)(n, {
+        className: o()(A.settingIcon, {
+          [A.hidden]: !a
         })
-      }, e))
+      }), ")"]
     })
   },
-  M = [{
+  U = [{
     key: Chunk981631.iEv.NAME,
     renderHeader: () => Chunk388032.intl.string(Chunk388032.t.dBfWfX),
     sort: true,
     cellClassName: Chunk117554.nameCell,
     bodyCellClassName: Chunk117554.nameBodyCell,
-    render: e => (0, i.jsxs)(_.Z, {
-      align: _.Z.Align.CENTER,
-      children: [(0, i.jsx)(E.Z, {
+    render: e => (0, i.jsxs)(O.Z, {
+      align: O.Z.Align.CENTER,
+      children: [(0, i.jsx)(v.Z, {
         game: e.application,
-        size: E.A.SMALL,
-        className: x.gameIcon
+        size: v.A.SMALL,
+        className: A.gameIcon
       }), (0, i.jsxs)("div", {
-        className: x.nameCellInfo,
+        className: A.nameCellInfo,
         children: [(0, i.jsx)("div", {
-          className: x.nameCellText,
+          className: A.nameCellText,
           children: e.libraryApplication.getBranchedName(e.application)
-        }), e.libraryApplication.hasFlag(j.eHb.PREMIUM) ? (0, i.jsx)(f.ua7, {
-          text: P.intl.string(P.t.tG2SzM),
-          children: e => (0, i.jsx)(f.SrA, Z({
+        }), e.libraryApplication.hasFlag(P.eHb.PREMIUM) ? (0, i.jsxs)(d.u, {
+          text: x.intl.string(x.t.tG2SzM),
+          children: ["(", (0, i.jsx)(h.SrA, {
             size: "md",
             color: "currentColor",
-            className: x.nitroIcon
-          }, e))
+            className: A.nitroIcon
+          }), ")"]
         }) : null]
       })]
     })
@@ -123,9 +124,9 @@ let L = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
     bodyCellClassName: Chunk117554.textCell,
     render(e) {
       let t = e.libraryApplication.getDistributor();
-      return (0, i.jsx)(_.Z, {
-        align: _.Z.Align.CENTER,
-        children: null != t ? j.EOG[t] : P.intl.string(P.t["F+l3Ji"])
+      return (0, i.jsx)(O.Z, {
+        align: O.Z.Align.CENTER,
+        children: null != t ? P.EOG[t] : x.intl.string(x.t["F+l3Ji"])
       })
     }
   }, {
@@ -136,13 +137,13 @@ let L = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
     bodyCellClassName: Chunk117554.textCell,
     render(e) {
       let t;
-      return t = e.isRunning ? P.intl.string(P.t.Md326u) : e.isNew ? P.intl.string(P.t["+F0Tho"]) : 0 !== e.lastPlayed ? (0, i.jsx)(y.ZP, {
+      return t = e.isRunning ? x.intl.string(x.t.Md326u) : e.isNew ? x.intl.string(x.t["+F0Tho"]) : 0 !== e.lastPlayed ? (0, i.jsx)(y.ZP, {
         end: e.lastPlayed,
         location: y.ZP.Locations.GAME_LIBRARY_LAST_PLAYED
-      }) : P.intl.string(P.t.EoWLrq), (0, i.jsx)(_.Z, {
-        align: _.Z.Align.CENTER,
+      }) : x.intl.string(x.t.EoWLrq), (0, i.jsx)(O.Z, {
+        align: O.Z.Align.CENTER,
         className: o()({
-          [x.lastPlayedCellNew]: e.isNew
+          [A.lastPlayedCellNew]: e.isNew
         }),
         children: t
       })
@@ -157,31 +158,31 @@ let L = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
       let s = e.key === t.activeRowKey;
       return (0, i.jsxs)(l.Fragment, {
         children: [(0, i.jsxs)("div", {
-          className: x.settingIcons,
-          children: [(0, i.jsx)(k, {
-            flag: j.eHb.PRIVATE,
+          className: A.settingIcons,
+          children: [(0, i.jsx)(M, {
+            flag: P.eHb.PRIVATE,
             item: e,
-            icon: f.kZF,
-            tooltip: P.intl.string(P.t.NozAoq)
-          }), (0, i.jsx)(k, {
-            flag: j.eHb.OVERLAY_DISABLED,
+            icon: h.kZF,
+            tooltip: x.intl.string(x.t.NozAoq)
+          }), (0, i.jsx)(M, {
+            flag: P.eHb.OVERLAY_DISABLED,
             item: e,
-            icon: f.o8v,
-            tooltip: P.intl.string(P.t.Az9eqq)
-          }), (0, i.jsx)(N.Z, {
-            className: o()(x.settingIcon, {
-              [x.hidden]: !e.supportsCloudSync
+            icon: h.o8v,
+            tooltip: x.intl.string(x.t.Az9eqq)
+          }), (0, i.jsx)(j.Z, {
+            className: o()(A.settingIcon, {
+              [A.hidden]: !e.supportsCloudSync
             }),
             libraryApplication: e.libraryApplication
           })]
-        }), (0, C.Je)(e.libraryApplication) ? (0, i.jsx)(b.Z, {
-          analyticsListSort: (r = t.sortKey, a = t.sortDirection, "".concat(D[r], " ").concat(a === j.sHY.ASCENDING ? "ASC" : "DESC")),
+        }), (0, T.Je)(e.libraryApplication) ? (0, i.jsx)(_.Z, {
+          analyticsListSort: (r = t.sortKey, a = t.sortDirection, "".concat(k[r], " ").concat(a === P.sHY.ASCENDING ? "ASC" : "DESC")),
           analyticsListIndex: n,
-          source: j.Sbl.APPLICATION_LIBRARY,
+          source: P.Sbl.APPLICATION_LIBRARY,
           libraryApplication: e.libraryApplication,
-          color: s ? p.zx.Colors.GREEN : p.zx.Colors.PRIMARY,
-          isPlayShiny: s && e.defaultAction === j.apO.PLAY,
-          size: x.actionButtonSize,
+          color: s ? f.zx.Colors.GREEN : f.zx.Colors.PRIMARY,
+          isPlayShiny: s && e.defaultAction === P.apO.PLAY,
+          size: A.actionButtonSize,
           hideProgress: null != e.defaultAction,
           onDropdownOpen: () => null != t && t.setActiveRowKey(e),
           onDropdownClose: () => null != t && t.clearActiveRowKey()
@@ -191,7 +192,7 @@ let L = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
       })
     }
   }],
-  U = e => {
+  G = e => {
     var {
       item: t,
       activeRowKey: n,
@@ -219,10 +220,10 @@ let L = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
       p = t.key === r;
     return (0, i.jsx)("div", {
       className: o()({
-        [x.rowWrapperActive]: d && !p,
-        [x.rowWrapperGlow]: p,
-        [x.rowWrapper]: !d && !p,
-        [x.rowWrapperDim]: !d && !t.isLaunchable
+        [A.rowWrapperActive]: d && !p,
+        [A.rowWrapperGlow]: p,
+        [A.rowWrapper]: !d && !p,
+        [A.rowWrapperDim]: !d && !t.isLaunchable
       }),
       ref: e => {
         c(e, t.key)
@@ -230,10 +231,10 @@ let L = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
       onMouseEnter: () => l(t),
       onMouseLeave: a,
       onContextMenu: e => s(e, t),
-      children: (0, i.jsx)("div", Z({}, u))
+      children: (0, i.jsx)("div", w({}, u))
     })
   };
-class G extends(r = Chunk647438.PureComponent) {
+class B extends(r = Chunk647438.PureComponent) {
   componentDidMount() {
     let {
       fetched: e
@@ -248,14 +249,14 @@ class G extends(r = Chunk647438.PureComponent) {
     let t = this.props.activeRowKey;
     if (null != t && e.activeRowKey !== t && this.props.isNavigatingByKeyboard) {
       let e = this._rowRefs[t];
-      null != e && (h.Z.wait(g.Zy), this.props.scrollToRow(e, L))
+      null != e && (g.Z.wait(m.Zy), this.props.scrollToRow(e, R))
     }
   }
   handleHighlightedApplicationKey() {
     let {
       highlightedApplicationKey: e
     } = this.state;
-    null != module && null != this._rowRefs[module] && (this.props.scrollToRow(this._rowRefs[module], L), new Chunk846519.V7().start(R, () => {
+    null != module && null != this._rowRefs[module] && (this.props.scrollToRow(this._rowRefs[module], R), new Chunk846519.V7().start(D, () => {
       this._didUnmount || this.setState({
         highlightedApplicationKey: null
       })
@@ -305,12 +306,12 @@ class G extends(r = Chunk647438.PureComponent) {
       }
       module.num_applications_total++
     }
-    Chunk626135.default.track(Chunk981631.rMx.LIBRARY_VIEWED, w(Z({}, module), {
+    Chunk626135.default.track(Chunk981631.rMx.LIBRARY_VIEWED, L(w({}, module), {
       load_id: exports.loadId
     }))
   }
   handleSort(e, t) {
-    m.fS(e, t)
+    b.fS(e, t)
   }
   renderImportHelp() {
     let e, {
@@ -354,10 +355,10 @@ class G extends(r = Chunk647438.PureComponent) {
     } = this.state;
     return (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
       children: [require.length > 0 ? (0, Chunk951288.jsx)(Chunk167533.Z, {
-        columns: M,
+        columns: U,
         data: require,
         sortData: false,
-        rowComponent: U,
+        rowComponent: G,
         className: Chunk117554.table,
         headerClassName: Chunk120356 ? Chunk117554.stickyHeader : Chunk117554.header,
         headerCellClassName: Chunk117554.headerCell,
@@ -388,33 +389,33 @@ class G extends(r = Chunk647438.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), A(this, "_didUnmount", false), A(this, "_rowRefs", {}), A(this, "state", {
+    super(...e), Z(this, "_didUnmount", false), Z(this, "_rowRefs", {}), Z(this, "state", {
       overflowMenuRowKey: null,
       highlightedApplicationKey: null != this.props.location.state ? this.props.location.state.applicationId : null
-    }), A(this, "setActiveRowKey", e => {
+    }), Z(this, "setActiveRowKey", e => {
       this.setState({
         overflowMenuRowKey: e.key
       })
-    }), A(this, "clearActiveRowKey", () => {
+    }), Z(this, "clearActiveRowKey", () => {
       this._didUnmount || this.setState({
         overflowMenuRowKey: null
       })
-    }), A(this, "handleRowMouseEnter", e => {
-      this.props.isNavigatingByKeyboard || m.wX(e.key)
-    }), A(this, "handleRowMouseLeave", () => {
-      this.props.isNavigatingByKeyboard || m.wX(null)
-    }), A(this, "setRowRef", (e, t) => {
+    }), Z(this, "handleRowMouseEnter", e => {
+      this.props.isNavigatingByKeyboard || b.wX(e.key)
+    }), Z(this, "handleRowMouseLeave", () => {
+      this.props.isNavigatingByKeyboard || b.wX(null)
+    }), Z(this, "setRowRef", (e, t) => {
       this._rowRefs[t] = e
-    }), A(this, "handleApplicationContextMenu", (e, t) => {
+    }), Z(this, "handleApplicationContextMenu", (e, t) => {
       this.setActiveRowKey(t);
       let {
         analyticsContext: r
       } = this.props;
-      (0, g.jW)(e, async () => {
+      (0, m.jW)(e, async () => {
         let {
           default: e
         } = await n.e("98335").then(n.bind(n, 485292));
-        return n => (0, i.jsx)(e, w(Z({}, n), {
+        return n => (0, i.jsx)(e, L(w({}, n), {
           applicationId: t.libraryApplication.id,
           branchId: t.libraryApplication.branchId,
           analyticsContext: r
@@ -426,30 +427,30 @@ class G extends(r = Chunk647438.PureComponent) {
   }
 }
 
-function B(e) {
-  let t = l.useContext(S.AnalyticsContext),
+function H(e) {
+  let t = l.useContext(C.AnalyticsContext),
     n = (0, s.TH)(),
     {
       applicationViewItems: r,
       filterQuery: a,
       fetched: o
-    } = (0, c.cj)([v.Z], () => ({
-      applicationViewItems: v.Z.sortedFilteredLibraryApplicationViewItems,
-      filterQuery: v.Z.applicationFilterQuery,
-      fetched: v.Z.hasFetchedApplications
+    } = (0, c.cj)([I.Z], () => ({
+      applicationViewItems: I.Z.sortedFilteredLibraryApplicationViewItems,
+      filterQuery: I.Z.applicationFilterQuery,
+      fetched: I.Z.hasFetchedApplications
     })),
     {
       sortKey: u,
       sortDirection: d,
       activeRowKey: p,
       isNavigatingByKeyboard: f
-    } = (0, c.cj)([I.Z], () => ({
-      sortKey: I.Z.sortKey,
-      sortDirection: I.Z.sortDirection,
-      activeRowKey: I.Z.activeRowKey,
-      isNavigatingByKeyboard: I.Z.isNavigatingByKeyboard
+    } = (0, c.cj)([S.Z], () => ({
+      sortKey: S.Z.sortKey,
+      sortDirection: S.Z.sortDirection,
+      activeRowKey: S.Z.activeRowKey,
+      isNavigatingByKeyboard: S.Z.isNavigatingByKeyboard
     }));
-  return (0, i.jsx)(G, w(Z({}, e), {
+  return (0, i.jsx)(B, L(w({}, e), {
     analyticsContext: t,
     location: n,
     applicationViewItems: r,
@@ -461,6 +462,6 @@ function B(e) {
     isNavigatingByKeyboard: f
   }))
 }
-A(G, "defaultProps", {
+Z(B, "defaultProps", {
   stickyHeader: false
 })

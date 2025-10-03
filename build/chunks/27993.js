@@ -40,10 +40,10 @@ function v(e) {
       allowsTabNavigation: D = false,
       isVirtualized: L,
       scrollRef: x = I,
-      linkBehavior: j = "action"
+      linkBehavior: M = "action"
     } = e,
     {
-      direction: M
+      direction: j
     } = (0, O.j)(),
     k = (0, a.tv)(),
     U = e => {
@@ -51,7 +51,7 @@ function v(e) {
       if (e.altKey && "Tab" === e.key && e.preventDefault(), !(null == (t = I.current) ? true : t.contains(e.target))) return;
       let y = (t, i) => {
         if (null != t) {
-          if (n.isLink(t) && "selection" === j && R && !(0, r.FJ)(e)) {
+          if (n.isLink(t) && "selection" === M && R && !(0, r.FJ)(e)) {
             (0, g.flushSync)(() => {
               n.setFocusedKey(t, i)
             });
@@ -60,7 +60,7 @@ function v(e) {
             a && k.open(a, e, o.href, o.routerOptions);
             return
           }
-          n.setFocusedKey(t, i), n.isLink(t) && "override" === j || (e.shiftKey && "multiple" === n.selectionMode ? n.extendSelection(t) : R && !(0, r.FJ)(e) && n.replaceSelection(t))
+          n.setFocusedKey(t, i), n.isLink(t) && "override" === M || (e.shiftKey && "multiple" === n.selectionMode ? n.extendSelection(t) : R && !(0, r.FJ)(e) && n.replaceSelection(t))
         }
       };
       switch (e.key) {
@@ -79,13 +79,13 @@ function v(e) {
         case "ArrowLeft":
           if (v.getKeyLeftOf) {
             let t = null != n.focusedKey ? null == (f = v.getKeyLeftOf) ? true : f.call(v, n.focusedKey) : null;
-            null == t && S && (t = "rtl" === M ? null == (_ = v.getFirstKey) ? true : _.call(v, n.focusedKey) : null == (p = v.getLastKey) ? true : p.call(v, n.focusedKey)), null != t && (e.preventDefault(), y(t, "rtl" === M ? "first" : "last"))
+            null == t && S && (t = "rtl" === j ? null == (_ = v.getFirstKey) ? true : _.call(v, n.focusedKey) : null == (p = v.getLastKey) ? true : p.call(v, n.focusedKey)), null != t && (e.preventDefault(), y(t, "rtl" === j ? "first" : "last"))
           }
           break;
         case "ArrowRight":
           if (v.getKeyRightOf) {
             let t = null != n.focusedKey ? null == (m = v.getKeyRightOf) ? true : m.call(v, n.focusedKey) : null;
-            null == t && S && (t = "rtl" === M ? null == (E = v.getLastKey) ? true : E.call(v, n.focusedKey) : null == (b = v.getFirstKey) ? true : b.call(v, n.focusedKey)), null != t && (e.preventDefault(), y(t, "rtl" === M ? "last" : "first"))
+            null == t && S && (t = "rtl" === j ? null == (E = v.getLastKey) ? true : E.call(v, n.focusedKey) : null == (b = v.getFirstKey) ? true : b.call(v, n.focusedKey)), null != t && (e.preventDefault(), y(t, "rtl" === j ? "last" : "first"))
           }
           break;
         case "Home":

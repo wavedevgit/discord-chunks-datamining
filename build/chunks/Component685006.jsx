@@ -1,4 +1,4 @@
-/** Chunk was on 9665 **/
+/** Chunk was on 50118 **/
 /** chunk id: 685006, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ZP: () => S,
@@ -47,12 +47,12 @@ function S(e) {
     primaryEntryPointCommand: s
   } = (0, h.Z)({
     context: t
-  }), c = null == o ? true : o.id, f = (0, C.Z)({
+  }), c = null == o ? true : o.id, f = (0, y.Z)({
     type: l
   }), {
     sectionCommands: v
-  } = (0, b.If)(t, null != c ? c : ""), x = i.useCallback(() => {
-    f ? m.yT(g.ti.DISMISSED) : (m.__(g._b.TEXT, y.Ie.NORMAL, {
+  } = (0, b.If)(t, null != c ? c : ""), x = r.useCallback(() => {
+    f ? m.yT(g.ti.DISMISSED) : (m.__(g._b.TEXT, C.Ie.NORMAL, {
       applicationId: c
     }), (0, p.yw)(_.rMx.APPLICATION_COMMAND_SECTION_SELECTED, {
       application_id: c,
@@ -60,9 +60,9 @@ function S(e) {
       source: g._b.TEXT
     }))
   }, [c, f]), O = null != v && v.filter(e => e.type === u.yU.CHAT || e.type === u.yU.PRIMARY_ENTRY_POINT).length > 0, E = !a && null != o && true === O;
-  return (i.useEffect(() => (j(E), () => {
+  return (r.useEffect(() => (j(E), () => {
     j(false)
-  }), [E]), E) ? (0, r.jsx)(P, {
+  }), [E]), E) ? (0, i.jsx)(P, {
     context: t,
     application: o,
     primaryEntryPointCommand: s,
@@ -76,11 +76,11 @@ function P(e) {
   let {
     context: t,
     application: n,
-    primaryEntryPointCommand: i,
+    primaryEntryPointCommand: r,
     onOpenButtonPress: l,
     entryPointCommandButtonRef: o,
     type: s
-  } = e, u = (0, C.Z)({
+  } = e, u = (0, y.Z)({
     type: s
   }), {
     isExecutingLaunchInteraction: d,
@@ -89,11 +89,11 @@ function P(e) {
     isEmbeddedApp: m,
     currentEmbeddedActivity: g,
     channelRecipientUserId: b,
-    setIsExecutingLaunchInteraction: y,
+    setIsExecutingLaunchInteraction: C,
     analyticsLocations: _
   } = (0, f.Z)({
     context: t,
-    primaryEntryPointCommand: i,
+    primaryEntryPointCommand: r,
     application: n,
     showAppLauncherPopup: u
   }), O = (0, f.J)({
@@ -104,12 +104,12 @@ function P(e) {
     currentEmbeddedActivity: g,
     onOpenButtonPress: l,
     channelRecipientUserId: b,
-    setIsExecutingLaunchInteraction: y,
+    setIsExecutingLaunchInteraction: C,
     analyticsLocations: _
   }), j = h ? "critical-primary" : "primary";
-  return (0, r.jsx)("div", {
+  return (0, i.jsx)("div", {
     className: a()(x.entryPointAppCommandButtonContainer, v.Id),
-    children: (0, r.jsx)(c.zxk, {
+    children: (0, i.jsx)(c.zxk, {
       variant: j,
       loading: d,
       onClick: O,

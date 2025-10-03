@@ -2,7 +2,7 @@
 /** chunk id: 703558, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => j,
+  Z: () => M,
   d: () => E
 }), require("./388685.js"), require("./781311.js");
 var r, Chunk392711 = require("./392711.js"),
@@ -257,7 +257,7 @@ _(x, "displayName", "DraftStore"), _(x, "persistKey", "DraftStore"), _(x, "migra
   for (let t in e) r[t] = e[t];
   return n
 }]);
-let j = new x(Chunk570140.Z, {
+let M = new x(Chunk570140.Z, {
   CONNECTION_OPEN: C,
   LOGOUT: w,
   MULTI_ACCOUNT_REMOVE_ACCOUNT: D,

@@ -146,7 +146,7 @@ function h(e) {
     null == u || u(t - n)
   }, [v, u]);
   (0, c.s)(y, I);
-  let O = 0 !== h;
+  let S = 0 !== h;
   return (0, r.jsxs)("div", {
     className: l()(p.container, t),
     ref: y,
@@ -172,7 +172,7 @@ function h(e) {
           selectedTab: n
         })
       })]
-    }), O && (0, r.jsxs)(o.njP, {
+    }), S && (0, r.jsxs)(o.njP, {
       type: "top",
       look: "brand",
       selectedItem: n,

@@ -2,7 +2,7 @@
 /** chunk id: 474366, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  q: () => O
+  q: () => S
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -111,7 +111,7 @@ function w(e) {
   })
 }
 
-function O() {
+function S() {
   let e = Chunk647438.useRef(null);
   return (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
     className: Chunk65766.container,

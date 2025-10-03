@@ -101,7 +101,7 @@ function er(e, t) {
 }
 
 function ei(e) {
-  let t = M.Z.toURLSafe(e);
+  let t = j.Z.toURLSafe(e);
   return null == t ? e : (t.searchParams.set("format", "png"), t.toString())
 }
 
@@ -133,8 +133,8 @@ function ea(e) {
     onMute: P,
     href: D,
     placeholder: L,
-    placeholderVersion: j,
-    sourceMetadata: M
+    placeholderVersion: M,
+    sourceMetadata: j
   } = e, [U, G] = a.useState(b), Z = null != d && null == d.proxyURL, F = a.useCallback(() => G(false), [G]), H = e => {
     e.preventDefault(), e.stopPropagation(), null == I || I(false), G(true), Z && (w.S.dispatch(B.CkL.VIDEO_EMBED_PLAYBACK_STARTED), w.S.subscribeOnce(B.CkL.VIDEO_EMBED_PLAYBACK_STARTED, F))
   };
@@ -160,7 +160,7 @@ function ea(e) {
       poster: z,
       src: d.proxyURL,
       placeholder: L,
-      placeholderVersion: j,
+      placeholderVersion: M,
       width: Y,
       height: W,
       responsive: p,
@@ -177,7 +177,7 @@ function ea(e) {
       onMute: P,
       onControlsHide: A,
       onControlsShow: C,
-      sourceMetadata: M
+      sourceMetadata: j
     })
   });
   if (U && null != d) {
@@ -244,9 +244,9 @@ function ea(e) {
       containerClassName: V.embedVideoImageComponent,
       imageClassName: V.embedVideoImageComponentInner,
       placeholder: L,
-      placeholderVersion: j,
+      placeholderVersion: M,
       onClick: E && null != d ? H : null,
-      sourceMetadata: M,
+      sourceMetadata: j,
       analyticsSource: "EmbedVideo"
     }), (0, i.jsx)("div", {
       className: V.embedVideoActions,
@@ -256,8 +256,8 @@ function ea(e) {
           onPlay: null != d ? H : null,
           externalURL: D,
           renderLinkComponent: g,
-          messageId: null == M || null == (t = M.message) ? true : t.id,
-          channelId: null == M || null == (n = M.message) ? true : n.channel_id
+          messageId: null == j || null == (t = j.message) ? true : t.id,
+          channelId: null == j || null == (n = j.message) ? true : n.channel_id
         }) : null
       })
     })]
@@ -1042,7 +1042,7 @@ class es extends(r = Chunk647438.PureComponent) {
       }
     }
     let f = en / (u.Z.fontScale / 100),
-      _ = (null != s ? (0, j.TZ)(s) : 0) >= f,
+      _ = (null != s ? (0, M.TZ)(s) : 0) >= f,
       p = (null != (n = null == s ? true : s.split("\n").length) ? n : 0) >= et,
       h = _ || p;
     return {

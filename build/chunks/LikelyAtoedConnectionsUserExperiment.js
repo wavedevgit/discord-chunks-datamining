@@ -1,9 +1,9 @@
-/** Chunk was on 9665 **/
+/** Chunk was on 50118 **/
 /** chunk id: 276060, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  t: () => i
+  t: () => r
 });
-let r = (0, require("./818083.js").B)({
+let i = (0, require("./818083.js").B)({
   kind: "user",
   id: "2024-09_likely_atoed_connections",
   label: "Likely ATO Warning",
@@ -19,16 +19,16 @@ let r = (0, require("./818083.js").B)({
   }]
 });
 
-function i(e) {
+function r(e) {
   let {
     location: t,
     autoTrackExposure: n = true
   } = e, {
-    enabled: i
-  } = r.useExperiment({
+    enabled: r
+  } = i.useExperiment({
     location: t
   }, {
     autoTrackExposure: n
   });
-  return i
+  return r
 }

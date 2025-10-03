@@ -72,13 +72,13 @@
 
   function x() {}
 
-  function j(e, t) {
+  function M(e, t) {
     t = t || 0;
     for (var n = Math.max(0, e.length - t), r = Array(n), i = 0; i < n; i++) r[i] = e[i + t];
     return r
   }
 
-  function M(e) {
+  function j(e) {
     return true === e.size && (e.size = e.__iterate(U)), e.size
   }
 
@@ -88,7 +88,7 @@
       if ("" + n !== t || 0xffffffff === n) return NaN;
       t = n
     }
-    return t < 0 ? M(e) + t : t
+    return t < 0 ? j(e) + t : t
   }
 
   function U() {
@@ -512,7 +512,7 @@
     return e >>> 1 & 0x40000000 | 0xbfffffff & e
   }
 
-  function ej(e) {
+  function eM(e) {
     if (false === e || null == e || "function" == typeof e.valueOf && (false === (e = e.valueOf()) || null == e)) return 0;
     if (true === e) return 1;
     var t = typeof e;
@@ -521,14 +521,14 @@
       for (n !== e && (n ^= 0xffffffff * e); e > 0xffffffff;) e /= 0xffffffff, n ^= e;
       return ex(n)
     }
-    if ("string" === t) return e.length > eY ? eM(e) : ek(e);
+    if ("string" === t) return e.length > eY ? ej(e) : ek(e);
     if ("function" == typeof e.hashCode) return e.hashCode();
     if ("object" === t) return eU(e);
     if ("function" == typeof e.toString) return ek(e.toString());
     throw Error("Value type " + t + " cannot be hashed.")
   }
 
-  function eM(e) {
+  function ej(e) {
     var t = ez[e];
     return true === t && (t = ek(e), eK === eW && (eK = 0, ez = {}), eK++, ez[e] = t), t
   }
@@ -644,9 +644,9 @@
       return "function" == typeof e.mergeDeep ? e.mergeDeep.apply(e, t) : t[t.length - 1]
     })
   }, eX.prototype.sort = function(e) {
-    return tj(t3(this, e))
+    return tM(t3(this, e))
   }, eX.prototype.sortBy = function(e, t) {
-    return tj(t3(this, t, e))
+    return tM(t3(this, t, e))
   }, eX.prototype.withMutations = function(e) {
     var t = this.asMutable();
     return e(t), t.wasAltered() ? t.__ensureOwner(this.__ownerID) : this
@@ -748,7 +748,7 @@
 
   function ti(e, t, n, r) {
     e || (e = new x);
-    for (var i = new e4(e, ej(n), [n, r]), a = 0; a < t.length; a++) {
+    for (var i = new e4(e, eM(n), [n, r]), a = 0; a < t.length; a++) {
       var o = t[a];
       i = i.update(e, 0, true, o[0], o[1])
     }
@@ -825,7 +825,7 @@
   }
 
   function t_(e, t, n, r) {
-    var i = r ? e : j(e);
+    var i = r ? e : M(e);
     return i[t] = n, i
   }
 
@@ -853,16 +853,16 @@
     if (L(o), (s || !d) && L(a), !s || 1 !== l.length) {
       if (!d && !s && l.length >= tm) return ti(e, l, r, i);
       var f = e && e === this.ownerID,
-        _ = f ? l : j(l);
+        _ = f ? l : M(l);
       return (d ? s ? c === u - 1 ? _.pop() : _[c] = _.pop() : _[c] = [r, i] : _.push([r, i]), f) ? (this.entries = _, this) : new e0(e, _)
     }
   }, e1.prototype.get = function(e, t, n, r) {
-    true === t && (t = ej(n));
+    true === t && (t = eM(n));
     var i = 1 << ((0 === e ? t : t >>> e) & N),
       a = this.bitmap;
     return (a & i) == 0 ? r : this.nodes[tf(a & i - 1)].get(e + A, t, n, r)
   }, e1.prototype.update = function(e, t, n, r, i, a, o) {
-    true === n && (n = ej(r));
+    true === n && (n = eM(r));
     var s = (0 === t ? n : n >>> t) & N,
       l = 1 << s,
       c = this.bitmap,
@@ -881,12 +881,12 @@
       g = u ? p ? t_(f, d, p, h) : th(f, d, h) : tp(f, d, p, h);
     return h ? (this.bitmap = m, this.nodes = g, this) : new e1(e, m, g)
   }, e2.prototype.get = function(e, t, n, r) {
-    true === t && (t = ej(n));
+    true === t && (t = eM(n));
     var i = (0 === e ? t : t >>> e) & N,
       a = this.nodes[i];
     return a ? a.get(e + A, t, n, r) : r
   }, e2.prototype.update = function(e, t, n, r, i, a, o) {
-    true === n && (n = ej(r));
+    true === n && (n = eM(r));
     var s = (0 === t ? n : n >>> t) & N,
       l = i === R,
       c = this.nodes,
@@ -906,7 +906,7 @@
       if (eT(n, i[a][0])) return i[a][1];
     return r
   }, e3.prototype.update = function(e, t, n, r, i, a, o) {
-    true === n && (n = ej(r));
+    true === n && (n = eM(r));
     var s = i === R;
     if (n !== this.keyHash) return s ? this : (L(o), L(a), tr(this, e, t, n, [r, i]));
     for (var l = this.entries, c = 0, u = l.length; c < u && !eT(r, l[c][0]); c++);
@@ -914,14 +914,14 @@
     if (d ? l[c][1] === i : s) return this;
     if (L(o), (s || !d) && L(a), s && 2 === u) return new e4(e, this.keyHash, l[1 ^ c]);
     var f = e && e === this.ownerID,
-      _ = f ? l : j(l);
+      _ = f ? l : M(l);
     return (d ? s ? c === u - 1 ? _.pop() : _[c] = _.pop() : _[c] = [r, i] : _.push([r, i]), f) ? (this.entries = _, this) : new e3(e, this.keyHash, _)
   }, e4.prototype.get = function(e, t, n, r) {
     return eT(n, this.entry[0]) ? this.entry[1] : r
   }, e4.prototype.update = function(e, t, n, r, i, a, o) {
     var s = i === R,
       l = eT(r, this.entry[0]);
-    return (l ? i === this.entry[1] : s) ? this : (L(o), s) ? void L(a) : l ? e && e === this.ownerID ? (this.entry[1] = i, this) : new e4(e, this.keyHash, [r, i]) : (L(a), tr(this, e, t, ej(r), [r, i]))
+    return (l ? i === this.entry[1] : s) ? this : (L(o), s) ? void L(a) : l ? e && e === this.ownerID ? (this.entry[1] = i, this) : new e4(e, this.keyHash, [r, i]) : (L(a), tr(this, e, t, eM(r), [r, i]))
   }, e0.prototype.iterate = e3.prototype.iterate = function(e, t) {
     for (var n = this.entries, r = 0, i = n.length - 1; r <= i; r++)
       if (false === e(n[t ? i - r : r])) returnfalse
@@ -1205,8 +1205,8 @@
     return e < C ? 0 : e - 1 >>> A << A
   }
 
-  function tj(e) {
-    return null == e ? tU() : tM(e) ? e : tU().withMutations(function(t) {
+  function tM(e) {
+    return null == e ? tU() : tj(e) ? e : tU().withMutations(function(t) {
       var n = _(e);
       eq(n.size), n.forEach(function(e, n) {
         return t.set(n, e)
@@ -1214,12 +1214,12 @@
     })
   }
 
-  function tM(e) {
+  function tj(e) {
     return eQ(e) && y(e)
   }
 
   function tk(e, t, n, r) {
-    var i = Object.create(tj.prototype);
+    var i = Object.create(tM.prototype);
     return i.size = e ? e.size : 0, i._map = e, i._list = t, i.__ownerID = n, i.__hash = r, i
   }
 
@@ -1386,7 +1386,7 @@
 
   function tq(e, t, n) {
     var r = g(e),
-      i = (y(e) ? tj() : eX()).asMutable();
+      i = (y(e) ? tM() : eX()).asMutable();
     e.__iterate(function(a, o) {
       i.update(t.call(n, a, o, e), function(e) {
         return (e = e || []).push(r ? [o, a] : a), e
@@ -1636,7 +1636,7 @@
   }
 
   function t9(e) {
-    return eq(e.size), M(e)
+    return eq(e.size), j(e)
   }
 
   function ne(e) {
@@ -1678,34 +1678,34 @@
       i = r.prototype = Object.create(no);
     return i.constructor = r, r
   }
-  d(tj, eX), tj.of = function() {
+  d(tM, eX), tM.of = function() {
     return this(arguments)
-  }, tj.prototype.toString = function() {
+  }, tM.prototype.toString = function() {
     return this.__toString("OrderedMap {", "}")
-  }, tj.prototype.get = function(e, t) {
+  }, tM.prototype.get = function(e, t) {
     var n = this._map.get(e);
     return true !== n ? this._list.get(n)[1] : t
-  }, tj.prototype.clear = function() {
+  }, tM.prototype.clear = function() {
     return 0 === this.size ? this : this.__ownerID ? (this.size = 0, this._map.clear(), this._list.clear(), this) : tU()
-  }, tj.prototype.set = function(e, t) {
+  }, tM.prototype.set = function(e, t) {
     return tG(this, e, t)
-  }, tj.prototype.remove = function(e) {
+  }, tM.prototype.remove = function(e) {
     return tG(this, e, R)
-  }, tj.prototype.wasAltered = function() {
+  }, tM.prototype.wasAltered = function() {
     return this._map.wasAltered() || this._list.wasAltered()
-  }, tj.prototype.__iterate = function(e, t) {
+  }, tM.prototype.__iterate = function(e, t) {
     var n = this;
     return this._list.__iterate(function(t) {
       return t && e(t[1], t[0], n)
     }, t)
-  }, tj.prototype.__iterator = function(e, t) {
+  }, tM.prototype.__iterator = function(e, t) {
     return this._list.fromEntrySeq().__iterator(e, t)
-  }, tj.prototype.__ensureOwner = function(e) {
+  }, tM.prototype.__ensureOwner = function(e) {
     if (e === this.__ownerID) return this;
     var t = this._map.__ensureOwner(e),
       n = this._list.__ensureOwner(e);
     return e ? tk(t, n, e, this.__hash) : (this.__ownerID = e, this._map = t, this._list = n, this)
-  }, tj.isOrderedMap = tM, tj.prototype[T] = true, tj.prototype[S] = tj.prototype.remove, d(tB, ei), tB.prototype.get = function(e, t) {
+  }, tM.isOrderedMap = tj, tM.prototype[T] = true, tM.prototype[S] = tM.prototype.remove, d(tB, ei), tB.prototype.get = function(e, t) {
     return this._iter.get(e, t)
   }, tB.prototype.has = function(e) {
     return this._iter.has(e)
@@ -2112,7 +2112,7 @@
       }), module
     },
     toOrderedMap: function() {
-      return tj(this.toKeyedSeq())
+      return tM(this.toKeyedSeq())
     },
     toOrderedSet: function() {
       return nE(g(this) ? this.valueSeq() : this)
@@ -2224,7 +2224,7 @@
       })
     },
     count: function(e, t) {
-      return M(e ? this.toSeq().filter(e, t) : this)
+      return j(e ? this.toSeq().filter(e, t) : this)
     },
     countBy: function(e, t) {
       return tz(this, e, t)
@@ -2300,10 +2300,10 @@
       return t4(this, t, e)
     },
     min: function(e) {
-      return t4(this, e ? nj(e) : nU)
+      return t4(this, e ? nM(e) : nU)
     },
     minBy: function(e, t) {
-      return t4(this, t ? nj(t) : nU, e)
+      return t4(this, t ? nM(t) : nU, e)
     },
     rest: function() {
       return this.slice(1)
@@ -2343,7 +2343,7 @@
     }
   });
   var nP = f.prototype;
-  nP[O] = true, nP[z] = nP.values, nP.__toJS = nP.toArray, nP.__toStringMapper = nM, nP.inspect = nP.toSource = function() {
+  nP[O] = true, nP[z] = nP.values, nP.__toJS = nP.toArray, nP.__toStringMapper = nj, nP.inspect = nP.toSource = function() {
       return this.toString()
     }, nP.chain = nP.flatMap, nP.contains = nP.includes,
     function() {
@@ -2413,18 +2413,18 @@
     }
   }
 
-  function nj(e) {
+  function nM(e) {
     return function() {
       return -e.apply(this, arguments)
     }
   }
 
-  function nM(e) {
+  function nj(e) {
     return "string" == typeof e ? JSON.stringify(e) : e
   }
 
   function nk() {
-    return j(arguments)
+    return M(arguments)
   }
 
   function nU(e, t) {
@@ -2437,13 +2437,13 @@
       n = g(e),
       r = +!!t;
     return nB(e.__iterate(n ? t ? function(e, t) {
-      r = 31 * r + nZ(ej(e), ej(t)) | 0
+      r = 31 * r + nZ(eM(e), eM(t)) | 0
     } : function(e, t) {
-      r = r + nZ(ej(e), ej(t)) | 0
+      r = r + nZ(eM(e), eM(t)) | 0
     } : t ? function(e) {
-      r = 31 * r + ej(e) | 0
+      r = 31 * r + eM(e) | 0
     } : function(e) {
-      r = r + ej(e) | 0
+      r = r + eM(e) | 0
     }), r)
   }
 
@@ -2455,7 +2455,7 @@
     return e ^ t + 0x9e3779b9 + (e << 6) + (e >> 2)
   }
   return nw[v] = true, nw[z] = nP.entries, nw.__toJS = nP.toObject, nw.__toStringMapper = function(e, t) {
-    return JSON.stringify(t) + ": " + nM(e)
+    return JSON.stringify(t) + ": " + nj(e)
   }, nR(p, {
     toKeyedSeq: function() {
       return new tB(this, false)
@@ -2486,7 +2486,7 @@
       if (t = Math.max(0 | t, 0), 0 === n || 2 === n && !t) return this;
       e = B(e, e < 0 ? this.count() : this.size);
       var r = this.slice(0, e);
-      return t6(this, 1 === n ? r : r.concat(j(arguments, 2), this.slice(e + t)))
+      return t6(this, 1 === n ? r : r.concat(M(arguments, 2), this.slice(e + t)))
     },
     findLastIndex: function(e, t) {
       var n = this.toKeyedSeq().findLastKey(e, t);
@@ -2510,7 +2510,7 @@
       return t6(this, t2(this, e))
     },
     interleave: function() {
-      var e = [this].concat(j(arguments)),
+      var e = [this].concat(M(arguments)),
         t = t5(this.toSeq(), ea.of, module),
         n = t.flatten(true);
       return t.size && (n.size = t.size * module.length), t6(this, n)
@@ -2522,11 +2522,11 @@
       return t6(this, tJ(this, e, t, false))
     },
     zip: function() {
-      var e = [this].concat(j(arguments));
+      var e = [this].concat(M(arguments));
       return t6(this, t5(this, nk, module))
     },
     zipWith: function(e) {
-      var t = j(arguments);
+      var t = M(arguments);
       return t[0] = this, t6(this, t5(this, e, t))
     }
   }), p.prototype[I] = true, p.prototype[T] = true, nR(h, {
@@ -2544,7 +2544,7 @@
     Seq: er,
     Collection: eR,
     Map: eX,
-    OrderedMap: tj,
+    OrderedMap: tM,
     List: tb,
     Stack: nI,
     Set: nd,

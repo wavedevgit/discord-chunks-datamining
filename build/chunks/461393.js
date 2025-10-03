@@ -8,7 +8,7 @@ require.d(exports, {
   bj: () => u,
   eJ: () => s,
   f8: () => c,
-  hJ: () => p
+  hJ: () => h
 });
 let i = 9 / 16,
   r = 16 / 9,
@@ -44,8 +44,8 @@ function d(e, t, n) {
     isVertical: s
   } = t, {
     maxWidth: d,
-    maxHeight: p
-  } = n, h = Math.max(1, a), f = e.width > d, m = e.height > p;
+    maxHeight: h
+  } = n, p = Math.max(1, a), f = e.width > d, m = e.height > h;
   if (!f && !m) return e;
   let g = u(a, r),
     {
@@ -56,20 +56,20 @@ function d(e, t, n) {
       height: e.height,
       containerOffset: i,
       gapSize: r,
-      tileCount: h,
+      tileCount: p,
       isVertical: s
     }),
     E = e.width - i,
     v = e.height - i,
-    b = d - i,
-    S = p - i;
-  return s ? (S -= g, v -= g) : (b -= g, E -= g), f && m && (e.width > e.height ? v = l(E = b, y) : E = o(v = S, O), f = E > b, m = v > S), f && (v = l(E = b, y)), m && (E = o(v = S, O)), s ? v += u(a, r) : E += u(a, r), {
+    S = d - i,
+    b = h - i;
+  return s ? (b -= g, v -= g) : (S -= g, E -= g), f && m && (e.width > e.height ? v = l(E = S, y) : E = o(v = b, O), f = E > S, m = v > b), f && (v = l(E = S, y)), m && (E = o(v = b, O)), s ? v += u(a, r) : E += u(a, r), {
     width: E + i,
     height: v + i
   }
 }
 
-function p(e, t) {
+function h(e, t) {
   let {
     maxWidth: n,
     maxHeight: i

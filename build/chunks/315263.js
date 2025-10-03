@@ -38,7 +38,7 @@ var Chunk873546 = require("./873546.js"),
   Chunk981631 = require("./981631.js");
 require("./215023.js");
 var Chunk46140 = require("./46140.js");
-async function M(e, t) {
+async function j(e, t) {
   await a.Z.dispatch({
     type: "INVITE_MODAL_OPEN",
     invite: e,
@@ -56,10 +56,10 @@ async function k(e) {
     n = t
   }
   if (null == n) return;
-  if (n.state === x.r2o.EXPIRED || n.state === x.r2o.BANNED || n.state === x.r2o.ERROR) return void await M(n, e.code);
+  if (n.state === x.r2o.EXPIRED || n.state === x.r2o.BANNED || n.state === x.r2o.ERROR) return void await j(n, e.code);
   let r = P.ZP.getFlattenedGuildIds(),
     i = null == n || null == (t = n.guild) ? true : t.id;
-  null != i && r.includes(i) ? s.ZP.transitionToInviteSync(n) : await M(n, e.code)
+  null != i && r.includes(i) ? s.ZP.transitionToInviteSync(n) : await j(n, e.code)
 }
 let U = {
   skipExtensionCheck: true,
@@ -164,7 +164,7 @@ function G(e) {
     }), true
   };
   if (null != C && C.type === m.g.QUESTS_EMBED && (0, I.c)({
-      location: j.dr.EMBED_MOBILE
+      location: M.dr.EMBED_MOBILE
     })) return e => (null == e || e.preventDefault(), Promise.resolve().then(n.bind(n, 110560)).then(e => {
     let {
       navigateToQuestHome: t
@@ -176,11 +176,11 @@ function G(e) {
   }), true);
   let {
     host: P,
-    hostname: M,
+    hostname: j,
     pathname: G,
     search: B,
     hash: Z
-  } = null != (t = D.Z.toURLSafe(e)) ? t : {}, F = D.Z.isDiscordHostname(null != M ? M : null) || D.Z.isDiscordLocalhost(null != P ? P : null, null != M ? M : null);
+  } = null != (t = D.Z.toURLSafe(e)) ? t : {}, F = D.Z.isDiscordHostname(null != j ? j : null) || D.Z.isDiscordLocalhost(null != P ? P : null, null != j ? j : null);
   if (F && ((null == G ? true : G.startsWith("/application-directory")) || (null == G ? true : G.startsWith("/discovery/applications")))) {
     let e = G.split("/"),
       t = null == G ? true : G.startsWith("/discovery/applications"),

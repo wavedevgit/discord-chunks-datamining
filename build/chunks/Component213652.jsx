@@ -1,7 +1,7 @@
-/** Chunk was on 9665 **/
+/** Chunk was on 50118 **/
 /** chunk id: 213652, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => C
+  Z: () => y
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,12 +20,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk591868 = require("./591868.js");
 
-function C(e) {
+function y(e) {
   let {
     channel: t
   } = e, {
     parentAnalyticsLocation: n
-  } = (0, o.ZP)(), C = (0, l.e7)([f.Z], () => f.Z.getSelectedParticipant(t.id)), _ = (null == C ? true : C.type) === g.fO.STREAM, v = (0, l.e7)([p.Z], () => _ ? p.Z.getActiveStreamForStreamKey(C.id) : null), {
+  } = (0, o.ZP)(), y = (0, l.e7)([f.Z], () => f.Z.getSelectedParticipant(t.id)), _ = (null == y ? true : y.type) === g.fO.STREAM, v = (0, l.e7)([p.Z], () => _ ? p.Z.getActiveStreamForStreamKey(y.id) : null), {
     ignoreSenderPreference: x
   } = u.Z.useExperiment({
     location: "ActionBarClipsButton"
@@ -37,22 +37,22 @@ function C(e) {
   } = (0, l.cj)([s.Z], () => ({
     viewerClippingAllowed: null != v && (s.Z.isViewerClippingAllowedForUser(v.ownerId) || x),
     isAtMaxSavingClipOperations: s.Z.getIsAtMaxSaveClipOperations()
-  })), E = s.Z.getSettings().clipsEnabled, S = (null == v ? true : v.ownerId) === h.default.getId(), P = !E || !(S || O) || j || null == C, I = i.useCallback(e => {
+  })), E = s.Z.getSettings().clipsEnabled, S = (null == v ? true : v.ownerId) === h.default.getId(), P = !E || !(S || O) || j || null == y, I = r.useCallback(e => {
     var t, n;
-    return (0, r.jsx)(a.xmR, (t = function(e) {
+    return (0, i.jsx)(a.xmR, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
-          r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          i = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-          var r;
-          r = n[t], t in e ? Object.defineProperty(e, t, {
-            value: r,
+        }))), i.forEach(function(t) {
+          var i;
+          i = n[t], t in e ? Object.defineProperty(e, t, {
+            value: i,
             enumerable: true,
             configurable: true,
             writable: true
-          }) : e[t] = r
+          }) : e[t] = i
         })
       }
       return e
@@ -61,18 +61,18 @@ function C(e) {
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        n.push.apply(n, r)
+        var i = Object.getOwnPropertySymbols(e);
+        n.push.apply(n, i)
       }
       return n
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t))
   }, []);
-  return (0, r.jsx)(d.Z, {
-    className: y.actionBarButton,
+  return (0, i.jsx)(d.Z, {
+    className: C.actionBarButton,
     onClick: () => {
-      P || ((0, m.v)(n, m.d.CLIP), S ? (0, c.C1)() : (0, c.C1)(C.id))
+      P || ((0, m.v)(n, m.d.CLIP), S ? (0, c.C1)() : (0, c.C1)(y.id))
     },
     disabled: P,
     iconComponent: I,

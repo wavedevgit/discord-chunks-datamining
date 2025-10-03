@@ -41,7 +41,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk350013 = require("./350013.js"),
   Chunk97009 = require("./97009.js");
 
-function G(e) {
+function L(e) {
   let {
     guild: t,
     currentTab: n,
@@ -61,7 +61,7 @@ function G(e) {
       "aria-hidden": true
     }), (0, l.jsx)(p.Z.Title, {
       children: s
-    }), i && (0, l.jsx)(M.Z, {
+    }), i && (0, l.jsx)(O.Z, {
       guildId: t.id,
       currentTab: n,
       onTabSelect: r
@@ -76,7 +76,7 @@ function q(e) {
   } = e, i = null != (t = (0, g.A)({
     guildId: n
   })) ? t : 0, [u, h] = r.useState(i > 0 ? N.e.PENDING : N.e.ALL_MEMBERS), p = (0, s.e7)([E.Z], () => E.Z.getGuild(n)), {
-    analyticsLocations: M
+    analyticsLocations: O
   } = (0, d.ZP)(c.Z.MEMBER_SAFETY_PAGE), D = (0, f.C)({
     guildId: n
   }), {
@@ -115,12 +115,12 @@ function q(e) {
   }, [p, q]);
   let K = (0, s.e7)([_.ZP], () => null != _.ZP.getGuildSidebarState(n), [n]);
   return null != p && q ? (0, l.jsxs)(d.Gt, {
-    value: M,
+    value: O,
     children: [(0, l.jsxs)("div", {
-      className: a()(L.chat, B.page, {
-        [L.threadSidebarOpen]: K
+      className: a()(G.chat, B.page, {
+        [G.threadSidebarOpen]: K
       }),
-      children: [(0, l.jsx)(G, {
+      children: [(0, l.jsx)(L, {
         guild: p,
         currentTab: u,
         onTabSelect: J
@@ -129,7 +129,7 @@ function q(e) {
         ref: U,
         orientation: "vertical",
         children: (0, l.jsx)("div", {
-          className: a()(L.content, B.container),
+          className: a()(G.content, B.container),
           children: u === N.e.ALL_MEMBERS ? (0, l.jsxs)(l.Fragment, {
             children: [(0, l.jsx)(Z.Z, {
               guild: p
@@ -141,10 +141,10 @@ function q(e) {
             currentTab: u
           })
         })
-      }), (0, l.jsx)(w.Z, {
+      }), (0, l.jsx)(M.Z, {
         guildId: p.id
       })]
-    }), F && (u === N.e.ALL_MEMBERS ? (0, l.jsx)(O.Z, {
+    }), F && (u === N.e.ALL_MEMBERS ? (0, l.jsx)(w.Z, {
       guildId: p.id
     }) : (0, l.jsx)(R.Z, {
       guildId: p.id

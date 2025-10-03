@@ -19,11 +19,11 @@ var Chunk647438 = require("./647438.js"),
 let g = 1e3 / 60;
 
 function b(e, t, n, b) {
-  let v = (0, a.dQu)(l.Z.unsafe_rawColors.BRAND_500).hex(),
-    E = (0, a.dQu)(l.Z.unsafe_rawColors.BLACK_500).hex(),
+  let E = (0, a.dQu)(l.Z.unsafe_rawColors.BRAND_500).hex(),
+    v = (0, a.dQu)(l.Z.unsafe_rawColors.BLACK_500).hex(),
     h = (0, a.dQu)(l.Z.unsafe_rawColors.WHITE_500).hex(),
-    y = r.useRef({}),
-    S = r.useRef(new i.Xp),
+    S = r.useRef({}),
+    y = r.useRef(new i.Xp),
     O = r.useCallback(t => {
       let n = u.Z.getDrawables(t);
       (0, f.UN)(e),
@@ -46,9 +46,9 @@ function b(e, t, n, b) {
         let {
           width: g,
           height: b
-        } = f.getBoundingClientRect(), v = [];
+        } = f.getBoundingClientRect(), E = [];
         n.forEach(e => {
-          if (null == c.Z.getVoiceStateForChannel(a, e.userId)) return void v.push(e);
+          if (null == c.Z.getVoiceStateForChannel(a, e.userId)) return void E.push(e);
           ! function(e) {
             let {
               drawable: t,
@@ -97,21 +97,21 @@ function b(e, t, n, b) {
             outlineColorDark: o,
             outlineColorLight: u,
             linesDrawnAt: i,
-            deadDrawables: v,
+            deadDrawables: E,
             streamerId: l
           })
-        }), v.length > 0 && (0, s.fW)(v, l)
+        }), E.length > 0 && (0, s.fW)(E, l)
       }({
         canvasRef: e,
         drawables: n,
-        fallbackColor: v,
-        linesDrawnAt: y,
+        fallbackColor: E,
+        linesDrawnAt: S,
         streamerId: t,
-        outlineColorDark: E,
+        outlineColorDark: v,
         outlineColorLight: h,
         channelId: b
       })
-    }, [e, b, v, E, h]);
+    }, [e, b, E, v, h]);
   r.useEffect(() => {
     let t = new ResizeObserver(() => {
       let t = e.current;
@@ -128,10 +128,10 @@ function b(e, t, n, b) {
     let t = u.Z.getDrawables(n),
       r = p.U.getState().particles,
       i = t.length > 0 || Object.keys(r).length > 0;
-    i && null == S.current._ref && (null == S.current._ref ? (O(n), S.current.start(g, () => O(n))) : i || null == S.current._ref || (S.current.stop(), (0, f.UN)(e)))
+    i && null == y.current._ref && (null == y.current._ref ? (O(n), y.current.start(g, () => O(n))) : i || null == y.current._ref || (y.current.stop(), (0, f.UN)(e)))
   }, [e, O, n]);
   r.useEffect(() => {
-    let e = S.current;
+    let e = y.current;
     return u.Z.addChangeListener(I), I(), (0, o.vM)(t.getAvatarURL(null, _.Ks)), () => {
       u.Z.removeChangeListener(I), e.stop()
     }

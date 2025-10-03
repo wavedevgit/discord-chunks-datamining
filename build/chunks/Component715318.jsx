@@ -2,17 +2,18 @@
 /** chunk id: 715318, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => h
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk239091 = require("./239091.js"),
   Chunk299206 = require("./299206.jsx"),
   Chunk858042 = require("./858042.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function u(e, t, n) {
+function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -21,20 +22,20 @@ function u(e, t, n) {
   }) : e[t] = n, e
 }
 
-function d(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      u(e, t, n[t])
+      d(e, t, n[t])
     })
   }
   return e
 }
 
-function f(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -45,26 +46,26 @@ function f(e, t) {
   return n
 }
 
-function _(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
+function p(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function p(e) {
+function h(e) {
   let {
     applicationId: t,
     className: n,
-    viewId: u
-  } = e, f = i.useRef(null), p = (0, s.Z)({
+    viewId: d
+  } = e, _ = i.useRef(null), h = (0, l.Z)({
     id: t,
-    label: c.intl.string(c.t["FfCL+/"])
-  }), h = (0, l.M)({
+    label: u.intl.string(u.t["FfCL+/"])
+  }), m = (0, c.M)({
     applicationId: t,
-    viewId: u
+    viewId: d
   });
-  return null == p && null == h ? null : (0, r.jsx)(a.yRy, {
-    targetElementRef: f,
+  return null == h && null == m ? null : (0, r.jsx)(o.yRy, {
+    targetElementRef: _,
     align: "top",
     position: "right",
     disablePointerEvents: false,
@@ -72,31 +73,31 @@ function p(e) {
       let {
         closePopout: t
       } = e;
-      return (0, r.jsx)(a.v2r, {
+      return (0, r.jsx)(o.v2r, {
         navId: "game-profile-context",
         onClose: () => {
-          (0, o.Zy)(), t()
+          (0, s.Zy)(), t()
         },
-        "aria-label": c.intl.string(c.t.PNeFgY),
+        "aria-label": u.intl.string(u.t.PNeFgY),
         onSelect: () => {},
         children: (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(a.kSQ, {
-            children: p
-          }), (0, r.jsx)(a.kSQ, {
+          children: [(0, r.jsx)(o.kSQ, {
             children: h
+          }), (0, r.jsx)(o.kSQ, {
+            children: m
           })]
         })
       })
     },
-    children: e => (0, r.jsx)(a.ua7, {
-      text: c.intl.string(c.t.UKOtz8),
-      children: t => (0, r.jsx)(a.P3F, _(d({
-        innerRef: f,
+    children: e => (0, r.jsx)(a.u, {
+      text: u.intl.string(u.t.UKOtz8),
+      children: (0, r.jsx)(o.P3F, p(f({
+        innerRef: _,
         className: n
-      }, t, e), {
-        children: (0, r.jsx)(a.xhG, {
+      }, e), {
+        children: (0, r.jsx)(o.xhG, {
           size: "xs",
-          color: a.TVs.colors.WHITE
+          color: o.TVs.colors.WHITE
         })
       }))
     })

@@ -77,7 +77,7 @@ function x(e, t) {
   return v.findIndex(e => e.comboId === n)
 }
 
-function j(e, t, n, r) {
+function M(e, t, n, r) {
   let i = (0, _.Tu)(e, t),
     a = {
       comboId: i,
@@ -89,7 +89,7 @@ function j(e, t, n, r) {
   0 !== s && (n ? false === s && (v.push(a), L()) : (s > 0 && v.splice(s, 1), v.unshift(a), L())), !n && T && p.Z.resume(), w()
 }
 
-function M(e, t) {
+function j(e, t) {
   let n = (0, _.Tu)(e, t),
     r = I.indexOf(n);
   false !== r && I.splice(r, 1);
@@ -102,7 +102,7 @@ function k(e) {
     applicationId: t,
     branchId: n
   } = e;
-  N.set((0, _.Tu)(t, n), "Install"), j(t, n, false, "Patch")
+  N.set((0, _.Tu)(t, n), "Install"), M(t, n, false, "Patch")
 }
 
 function U(e) {
@@ -114,7 +114,7 @@ function G(e) {
     applicationId: t,
     branchId: n
   } = e;
-  N.set((0, _.Tu)(t, n), "Repair"), j(t, n, false, "Repair")
+  N.set((0, _.Tu)(t, n), "Repair"), M(t, n, false, "Repair")
 }
 
 function B(e) {
@@ -123,7 +123,7 @@ function B(e) {
     branchId: n,
     automatic: r
   } = e;
-  j(t, n, r, "Patch")
+  M(t, n, r, "Patch")
 }
 
 function Z(e) {
@@ -131,7 +131,7 @@ function Z(e) {
     applicationId: t,
     branchId: n
   } = e;
-  M(t, n)
+  j(t, n)
 }
 
 function F(e) {
@@ -206,7 +206,7 @@ function W(e) {
           application_id: t,
           branch_id: n
         } = e;
-        M(t, n)
+        j(t, n)
       }
     }
   }

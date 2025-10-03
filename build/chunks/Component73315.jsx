@@ -18,12 +18,12 @@ let c = e => {
   switch (t) {
     case i.wk.EXPLICIT_CONTENT:
     case i.wk.GORE_CONTENT:
-      return (0, r.jsx)(l.fFY, {
+      return (0, l.jsx)(r.fFY, {
         className: s()(n, o.obscuredIcon),
         color: "white"
       });
     case i.wk.SPOILER:
-      return (0, r.jsx)(l.tEF, {
+      return (0, l.jsx)(r.tEF, {
         size: "md",
         color: "currentColor",
         className: n

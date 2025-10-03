@@ -13,13 +13,13 @@ require.d(exports, {
   Uq: () => G,
   Y4: () => B,
   hn: () => b,
-  iA: () => j,
+  iA: () => M,
   ib: () => R,
   lh: () => J,
   mF: () => q,
   ub: () => D,
   v1: () => k,
-  x6: () => M,
+  x6: () => j,
   zi: () => X
 }), require("./388685.js"), require("./539854.js");
 var Chunk392711 = require("./392711.js"),
@@ -127,7 +127,7 @@ function x(e, t) {
   }, null != t && (n.endDate = a()(t))), n
 }
 
-function j(e, t) {
+function M(e, t) {
   let n = U(t),
     r = a()(u.default.extractTimestamp(e)),
     i = (null == n ? true : n.endDate) != null ? r.clone().add(n.endDate.diff(n.startDate)) : true;
@@ -137,7 +137,7 @@ function j(e, t) {
   }
 }
 
-function M(e, t) {
+function j(e, t) {
   var n;
   if (null == t) return e;
   let r = null != (n = t.scheduled_end_time) ? n : e.endDate;

@@ -2,7 +2,7 @@
 /** chunk id: 464610, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => x
 }), require("./472816.js"), require("./794429.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -53,24 +53,24 @@ function h(e) {
   })
 }
 
-function b(e) {
+function x(e) {
   let {
     guild: t
   } = e;
   (0, s.RD)(t.id);
   let d = (0, a.Z6)(t.id),
     {
-      rulesByTriggerType: b
+      rulesByTriggerType: x
     } = (0, s.pH)(t.id),
     {
-      numEnabledRules: x,
+      numEnabledRules: b,
       numRules: j
     } = i.useMemo(() => {
       let e = 0,
         t = 0;
-      return null == b || Object.values(d).flat().forEach(n => {
+      return null == x || Object.values(d).flat().forEach(n => {
         var r;
-        let i = null == (r = b[n]) ? true : r.filter(c.lm);
+        let i = null == (r = x[n]) ? true : r.filter(c.lm);
         if (null == i || 0 === i.length) return void t++;
         i.forEach(n => {
           n.enabled && e++, t++
@@ -79,12 +79,12 @@ function b(e) {
         numEnabledRules: e,
         numRules: t
       }
-    }, [d, b]),
-    v = (0, g.Q)(t),
-    _ = v[u.u.CAPTCHA_AND_RAID_PROTECTION],
-    O = v[u.u.DM_AND_SPAM_PROTECTION],
-    y = v[u.u.PERMISSIONS],
-    C = (0, o.pr)(t.id);
+    }, [d, x]),
+    _ = (0, g.Q)(t),
+    v = _[u.u.CAPTCHA_AND_RAID_PROTECTION],
+    C = _[u.u.DM_AND_SPAM_PROTECTION],
+    O = _[u.u.PERMISSIONS],
+    y = (0, o.pr)(t.id);
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(l.X6q, {
       variant: "heading-lg/semibold",
@@ -99,8 +99,8 @@ function b(e) {
         icon: n(14215),
         title: p.intl.string(p.t["53eF5u"]),
         subtitle: p.intl.formatToPlainString(p.t.TG7NYG, {
-          enabled: _.filter(e => e.enabled).length,
-          total: _.length
+          enabled: v.filter(e => e.enabled).length,
+          total: v.length
         }),
         page: u.u.CAPTCHA_AND_RAID_PROTECTION
       }), (0, r.jsx)("div", {
@@ -109,18 +109,18 @@ function b(e) {
         icon: n(128724),
         title: p.intl.string(p.t.O0SfFx),
         subtitle: p.intl.formatToPlainString(p.t.TG7NYG, {
-          enabled: O.filter(e => e.enabled).length,
-          total: O.length
+          enabled: C.filter(e => e.enabled).length,
+          total: C.length
         }),
         page: u.u.DM_AND_SPAM_PROTECTION
       }), (0, r.jsx)("div", {
         className: f.divider
-      }), C && (0, r.jsxs)(r.Fragment, {
+      }), y && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(h, {
           icon: n(145136),
           title: p.intl.string(p.t.uRelg4),
           subtitle: p.intl.formatToPlainString(p.t.TG7NYG, {
-            enabled: x,
+            enabled: b,
             total: j
           }),
           page: u.u.AUTOMOD
@@ -131,8 +131,8 @@ function b(e) {
         icon: n(913414),
         title: p.intl.string(p.t.xrmhRU),
         subtitle: p.intl.formatToPlainString(p.t.TG7NYG, {
-          enabled: y.filter(e => e.enabled).length,
-          total: y.length
+          enabled: O.filter(e => e.enabled).length,
+          total: O.length
         }),
         page: u.u.PERMISSIONS
       })]

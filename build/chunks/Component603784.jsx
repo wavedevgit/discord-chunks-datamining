@@ -88,7 +88,7 @@ let w = Chunk647438.forwardRef((e, t) => {
       log: l,
       className: o,
       expanded: f,
-      guildId: _,
+      guildId: v,
       guild: w,
       onChannelContextMenu: R,
       onContentClick: Z,
@@ -102,7 +102,7 @@ let w = Chunk647438.forwardRef((e, t) => {
       let {
         changes: e
       } = l;
-      return (l.actionType !== N.vB8.DELETE || l.action === N.rsA.MEMBER_BAN_ADD || l.action === N.rsA.MEMBER_KICK || l.action === N.rsA.MEMBER_PRUNE) && null != e && e.some(e => !(0, C.xO)(l, e))
+      return (l.actionType !== N.vB8.DELETE || l.action === N.rsA.MEMBER_BAN_ADD || l.action === N.rsA.MEMBER_KICK || l.action === N.rsA.MEMBER_PRUNE) && null != e && e.some(e => !(0, y.xO)(l, e))
     }(),
     U = I.headerDefault;
   f ? U = I.headerExpanded : M && (U = I.headerClickable);
@@ -128,7 +128,7 @@ let w = Chunk647438.forwardRef((e, t) => {
         "aria-expanded": f,
         onClick: H
       }, e), {
-        children: [(0, r.jsx)(C.mp, {
+        children: [(0, r.jsx)(y.mp, {
           action: l.action,
           actionType: l.actionType,
           targetType: l.targetType
@@ -143,7 +143,7 @@ let w = Chunk647438.forwardRef((e, t) => {
           if (null != e && null != t) return (0, r.jsx)(p.Z, {
             targetElementRef: G,
             user: e,
-            guildId: _,
+            guildId: v,
             newAnalyticsLocations: [m.Z.AVATAR],
             children: e => {
               var t;
@@ -153,7 +153,7 @@ let w = Chunk647438.forwardRef((e, t) => {
                   t.stopPropagation(), e.onClick(t)
                 },
                 className: I.avatar,
-                src: l.action === N.rsA.AUTO_MODERATION_BLOCK_MESSAGE || l.action === N.rsA.AUTO_MODERATION_FLAG_TO_CHANNEL || l.action === N.rsA.AUTO_MODERATION_USER_COMMUNICATION_DISABLED || l.action === N.rsA.AUTO_MODERATION_QUARANTINE_USER ? (0, O.j)() : null == (t = l.user) ? true : t.getAvatarURL(_, 40),
+                src: l.action === N.rsA.AUTO_MODERATION_BLOCK_MESSAGE || l.action === N.rsA.AUTO_MODERATION_FLAG_TO_CHANNEL || l.action === N.rsA.AUTO_MODERATION_USER_COMMUNICATION_DISABLED || l.action === N.rsA.AUTO_MODERATION_QUARANTINE_USER ? (0, C.j)() : null == (t = l.user) ? true : t.getAvatarURL(v, 40),
                 "aria-hidden": true,
                 size: d.EFr.SIZE_40
               }))
@@ -182,8 +182,8 @@ let w = Chunk647438.forwardRef((e, t) => {
                 target: n,
                 options: i
               } = l;
-              e = (0, v.lM)(n) ? n.name : n.toString();
-              let s = y.N5(l);
+              e = (0, _.lM)(n) ? n.name : n.toString();
+              let s = O.N5(l);
               return null != s ? (0, r.jsx)("div", {
                 className: I.overflowEllipsis,
                 children: E.intl.format(s, {
@@ -209,7 +209,7 @@ let w = Chunk647438.forwardRef((e, t) => {
                     children: e
                   }, t),
                   count: i.count,
-                  channel: null == i.channel || "string" == typeof i.channel ? i.channel : (0, g.F6)(i.channel, x.default, b.Z, true),
+                  channel: null == i.channel || "string" == typeof i.channel ? i.channel : (0, g.F6)(i.channel, b.default, x.Z, true),
                   channelHook: (e, t) => (0, r.jsx)("span", {
                     onContextMenu: R,
                     children: e
@@ -227,7 +227,7 @@ let w = Chunk647438.forwardRef((e, t) => {
         }) : null]
       })), f ? (0, r.jsx)("div", {
         className: I.divider
-      }) : null, f && null != w ? (0, r.jsx)(C.tP, {
+      }) : null, f && null != w ? (0, r.jsx)(y.tP, {
         log: l,
         guild: w,
         onContentClick: Z

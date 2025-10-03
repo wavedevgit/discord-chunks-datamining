@@ -2,7 +2,7 @@
 /** chunk id: 210887, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => M
+  Z: () => j
 });
 var r, Chunk442837 = require("./442837.js"),
   Chunk780384 = require("./780384.js"),
@@ -124,7 +124,7 @@ function x() {
   return T = null, A()
 }
 
-function j() {
+function M() {
   return A()
 }
 m(C, "displayName", "ThemeStore"), m(C, "persistKey", "ThemeStore"), m(C, "migrations", [e => {
@@ -133,7 +133,7 @@ m(C, "displayName", "ThemeStore"), m(C, "persistKey", "ThemeStore"), m(C, "migra
     theme: t
   })
 }, e => e]);
-let M = new C(Chunk570140.Z, {
+let j = new C(Chunk570140.Z, {
   CACHE_LOADED: A,
   CONNECTION_OPEN: N,
   LOGOUT: P,
@@ -147,5 +147,5 @@ let M = new C(Chunk570140.Z, {
   UPDATE_THEME_PREFERENCES: D,
   SET_THEME_OVERRIDE: L,
   CLEAR_THEME_OVERRIDE: x,
-  REFRESH_THEME: j
+  REFRESH_THEME: M
 })

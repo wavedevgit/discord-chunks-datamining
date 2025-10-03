@@ -1,10 +1,10 @@
 /** Chunk was on 70820 **/
-/** chunk id: 813083, original params: e,t,r (module,exports,require) **/
+/** chunk id: 813083, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f,
   k: () => p
 }), require("./314940.js");
-var n, Chunk951288 = require("./951288.js");
+var r, Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk278074 = require("./278074.js"),
   Chunk685816 = require("./685816.js"),
@@ -13,12 +13,12 @@ var Chunk278074 = require("./278074.js"),
   Chunk410030 = require("./410030.js"),
   Chunk884697 = require("./884697.js"),
   Chunk388032 = require("./388032.jsx"),
-  p = ((n = {}).BANNER = "banner", n.MODAL = "modal", n.CARD = "card", n);
+  p = ((r = {}).BANNER = "banner", r.MODAL = "modal", r.CARD = "card", r);
 let f = e => {
   let {
     category: t,
-    display: r,
-    className: n,
+    display: n,
+    className: r,
     shopBlockType: p
   } = e, f = (0, c.ZP)();
   if (null == t.unpublishedAt) return null;
@@ -28,7 +28,7 @@ let f = e => {
     return (0, l.jsx)(s.IGR, {
       disableColor: true,
       text: e,
-      className: n,
+      className: r,
       style: (0, o.wj)(f) ? {
         color: "var(--black-500)",
         backgroundColor: "var(--white-500)"
@@ -38,7 +38,7 @@ let f = e => {
       }
     })
   }
-  return (0, i.EQ)([r, b > 1]).with(["card", true], () => null != p && p === a.z.HERO ? y(d.intl.formatToPlainString(d.t.Io7ozs, {
+  return (0, i.EQ)([n, b > 1]).with(["card", true], () => null != p && p === a.z.HERO ? y(d.intl.formatToPlainString(d.t.Io7ozs, {
     days: b
   })) : null).with(["banner", true], () => y(d.intl.formatToPlainString(d.t["8gsP5O"], {
     days: b

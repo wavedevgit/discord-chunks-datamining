@@ -74,11 +74,11 @@ function C(e, t, n, r) {
     }
     return i(n)
   }, e.isInline = e => !!T.has(e.type) || d(e), e.isVoid = e => !!("applicationCommandOption" === e.type && S.has(e.optionType)) || f(e), e.deleteBackward = t => {
-    j(e, () => p(t))
+    M(e, () => p(t))
   }, e.deleteForward = t => {
-    j(e, () => h(t))
+    M(e, () => h(t))
   }, e.deleteFragment = t => {
-    j(e, () => m(t))
+    M(e, () => m(t))
   };
   let E = null,
     b = null,
@@ -161,7 +161,7 @@ function N(e) {
     let e = y.bN.richValue(i)[0],
       t = e.children[0];
     if (A.has(e.type) && y.LC.isText(t)) {
-      let e = M(t.text, s);
+      let e = j(t.text, s);
       if (null != e) return a.Po({
         channelId: s.id,
         command: e.command,
@@ -410,7 +410,7 @@ function x(e) {
   }
 }
 
-function j(e, t) {
+function M(e, t) {
   let n = m.cu(e)[0];
   t();
   let r = y.M8.toPoint(e.selection);
@@ -425,7 +425,7 @@ function j(e, t) {
   }) && b.Q.insertText(e, " ")
 }
 
-function M(e, t) {
+function j(e, t) {
   if (!e.startsWith("/")) return null;
   let n = (0, f.hV)(t, e.substring(1));
   if (!n.hasSpaceTerminator) return null;

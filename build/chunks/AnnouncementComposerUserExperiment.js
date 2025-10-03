@@ -1,9 +1,9 @@
-/** Chunk was on 9665 **/
+/** Chunk was on 50118 **/
 /** chunk id: 680835, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => i
+  Z: () => r
 });
-let r = (0, require("./818083.js").B)({
+let i = (0, require("./818083.js").B)({
   kind: "user",
   id: "2025-07_announcement_composer",
   label: "announcement composer",
@@ -19,8 +19,8 @@ let r = (0, require("./818083.js").B)({
   }]
 });
 
-function i(e) {
-  return r.useExperiment({
+function r(e) {
+  return i.useExperiment({
     location: e
   }, {
     autoTrackExposure: true

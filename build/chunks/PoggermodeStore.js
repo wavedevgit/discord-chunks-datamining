@@ -2,7 +2,7 @@
 /** chunk id: 843693, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => M,
+  ZP: () => j,
   wU: () => D
 }), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
@@ -138,10 +138,10 @@ function N(e) {
         null == (t = e.decayInterval) || t.stop(), e.value <= 0 && (N(E(m({}, e), {
           value: 0,
           multiplier: 1
-        })), j.emitChange())
+        })), M.emitChange())
       } else N(E(m({}, e), {
         value: e.value - 1
-      })), j.emitChange()
+      })), M.emitChange()
     }
   }))
 }
@@ -232,9 +232,9 @@ class x extends(r = Chunk442837.ZP.Store) {
   }
 }
 h(x, "displayName", "PoggermodeStore");
-let j = new x(Chunk570140.Z, {
+let M = new x(Chunk570140.Z, {
     POGGERMODE_UPDATE_COMBO: P,
     POGGERMODE_UPDATE_MESSAGE_COMBO: w,
     MESSAGE_CREATE: L
   }),
-  M = j
+  j = M

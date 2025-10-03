@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk374470 = require("./374470.js"),
   Chunk481060 = require("./481060.js"),
   Chunk239091 = require("./239091.js"),
@@ -42,7 +42,7 @@ function g(e) {
 function _(e) {
   return e.matches("a") || "highlight" === e.className || e.className.includes("mention")
 }
-class y extends Chunk647438.Component {
+class v extends Chunk647438.Component {
   render() {
     let {
       channel: e
@@ -51,7 +51,7 @@ class y extends Chunk647438.Component {
     let t = null != module.topic && module.topic.length > 0;
     return null != module.linkedLobby || exports ? (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
       children: [(0, Chunk951288.jsx)(Chunk984370.Z.Divider, {}), (0, Chunk951288.jsxs)("div", {
-        className: a()(Chunk413140.topic, Chunk413140.expandable, Chunk430864.markup),
+        className: o()(Chunk413140.topic, Chunk413140.expandable, Chunk430864.markup),
         onMouseDown: this.onMouseDown,
         onMouseMove: this.onMouseMove,
         onMouseUp: this.onMouseUp,
@@ -121,4 +121,4 @@ class y extends Chunk647438.Component {
     })
   }
 }
-let j = y
+let j = v

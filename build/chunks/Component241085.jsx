@@ -159,9 +159,9 @@ function L(e) {
     uploadIds: v,
     setUploadIds: L,
     currentUploads: x,
-    error: j
-  } = (0, C.t)(e), M = (0, c.e7)([b.Z], () => b.Z.getBasicChannel(E));
-  l()(null != M, "FileUploadActionComponent requires a valid channel");
+    error: M
+  } = (0, C.t)(e), j = (0, c.e7)([b.Z], () => b.Z.getBasicChannel(E));
+  l()(null != j, "FileUploadActionComponent requires a valid channel");
   let k = i.useCallback(e => {
       var t;
       e.preventDefault(), (null == (t = e.dataTransfer) ? true : t.types.includes("Files")) && m(true)
@@ -177,7 +177,7 @@ function L(e) {
           maxValues: a
         })
       });
-      if ((0, T.Bf)(e, M.guild_id)) return (0, I.G)(M, e);
+      if ((0, T.Bf)(e, j.guild_id)) return (0, I.G)(j, e);
       let n = e.map(e => {
         let n = (0, A.VD)(O),
           r = {
@@ -194,7 +194,7 @@ function L(e) {
         }), n
       });
       L(v.concat(n))
-    }, [v, a, M, L, O, E]),
+    }, [v, a, j, L, O, E]),
     B = i.useCallback(e => {
       var t, n;
       e.preventDefault(), m(false), G(Array.from(null != (n = null == (t = e.dataTransfer) ? true : t.files) ? n : []), "drag_drop")
@@ -219,14 +219,14 @@ function L(e) {
     ref: u,
     className: o()(R.container, {
       [R.dropping]: h,
-      [R.error]: null != j
+      [R.error]: null != M
     }),
     children: [v.length >= a ? (0, r.jsx)(w, {}) : (0, r.jsx)(P, {
       dropping: h,
       fileInputRef: s,
       minValues: n,
       maxValues: a,
-      guildId: M.guild_id
+      guildId: j.guild_id
     }), x.length > 0 && (0, r.jsx)("div", {
       className: R.files,
       children: x.map(e => (0, r.jsx)(D, {

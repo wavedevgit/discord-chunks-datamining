@@ -188,7 +188,7 @@ function ey(e) {
     onVoiceChannelPreview: h
   }), {
     embeddedActivity: P
-  } = (0, $.Z)(o), w = eA(P), D = null != R && 0 === s.length ? [R] : s, L = D.length > 0, x = D.length >= 2, [j, M] = i.useState(!L), U = K.ZP.getName(null == t ? true : t.guild_id, null == t ? true : t.id, n), B = null != t && m ? ec.intl.formatToPlainString(ec.t["8lzR/f"], {
+  } = (0, $.Z)(o), w = eA(P), D = null != R && 0 === s.length ? [R] : s, L = D.length > 0, x = D.length >= 2, [M, j] = i.useState(!L), U = K.ZP.getName(null == t ? true : t.guild_id, null == t ? true : t.id, n), B = null != t && m ? ec.intl.formatToPlainString(ec.t["8lzR/f"], {
     channel: "#".concat(t.name)
   }) : ec.intl.formatToPlainString(ec.t["4c+CAw"], {
     channel: "@".concat(U)
@@ -254,9 +254,9 @@ function ey(e) {
       location: el.dy.CONTENT_INVENTORY_MEMBERLIST
     }), null == r || r(i, n)
   }, W = null != f ? f : null != N ? N : null != w ? w : true, z = () => {
-    g(e => !e), j && (null == E || E.focus())
+    g(e => !e), M && (null == E || E.focus())
   }, q = e => {
-    M(e), e && (null == E || E.focus())
+    j(e), e && (null == E || E.focus())
   };
   return (0, r.jsx)("div", {
     ref: O,
@@ -281,7 +281,7 @@ function ey(e) {
             })]
           })
         }), (0, r.jsxs)("div", {
-          className: j ? eu.inputContainerShareToChannel : eu.hiddenButRenderedInputField,
+          className: M ? eu.inputContainerShareToChannel : eu.hiddenButRenderedInputField,
           children: [(0, r.jsx)(y.A7, {
             placeholder: B,
             onEnter: V,
@@ -316,7 +316,7 @@ function ey(e) {
               color: d.Z.colors.ICON_PRIMARY
             })
           })]
-        }), false === j && (0, r.jsxs)("div", {
+        }), false === M && (0, r.jsxs)("div", {
           className: eu.primaryActionPopoutActionButtons,
           children: [!x && (0, r.jsx)(_.zxk, {
             fullWidth: true,
@@ -587,7 +587,7 @@ function eS(e) {
       smallImage: x
     } = (0, z.YC)(S, null != w ? w : D),
     {
-      largeImage: j
+      largeImage: M
     } = (0, z.rv)({
       entry: y
     });
@@ -596,7 +596,7 @@ function eS(e) {
     children: [(0, r.jsx)(ev, ep(ef({}, h), {
       onUserPopoutClosed: f
     })), (0, r.jsxs)(eE, {
-      backgroundImgSrc: null == j ? true : j.src,
+      backgroundImgSrc: null == M ? true : M.src,
       className: eu.streamingPopoutHero,
       children: [(0, r.jsx)(eI, {
         onClick: b ? () => {
@@ -659,7 +659,7 @@ function eA(e) {
       var t, n;
       return null != (n = null == e || null == (t = e.participants) ? true : t.map(e => F.default.getUser(e.userId))) ? n : []
     });
-  return null != e && null != t && null != n && M.sR.has(n.type) ? (0, r.jsxs)(r.Fragment, {
+  return null != e && null != t && null != n && j.sR.has(n.type) ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: eu.voiceChannelPopoutReactorHeader,
       children: [(0, r.jsxs)(_.P3F, {
@@ -683,7 +683,7 @@ function eA(e) {
           className: eu.voiceChannelName,
           children: null == n ? true : n.name
         })]
-      }), (0, r.jsx)(j.Z, {
+      }), (0, r.jsx)(M.Z, {
         guildId: t.id,
         users: i,
         max: 3,
@@ -792,7 +792,7 @@ function eC(e) {
               children: s.name
             })]
           }))
-        }), (0, r.jsx)(j.Z, {
+        }), (0, r.jsx)(M.Z, {
           guildId: u.id,
           users: f,
           max: 3,

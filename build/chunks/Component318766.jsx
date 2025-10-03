@@ -105,11 +105,11 @@ let P = function(e) {
     "aria-controls": T,
     focusProps: S,
     ref: P
-  } = e, [w, D] = i.useState(false), [L, x] = i.useState(50), j = w || y, M = (0, h.l)(b, "emojiButton", j ? "Hovered" : "Normal"), k = R(L), U = i.useCallback(() => {
-    if (j) return;
+  } = e, [w, D] = i.useState(false), [L, x] = i.useState(50), M = w || y, j = (0, h.l)(b, "emojiButton", M ? "Hovered" : "Normal"), k = R(L), U = i.useCallback(() => {
+    if (M) return;
     let e = Math.floor(Math.random() * A);
     D(true), x(e), (0, _.x)(g.qR.EmojiButtonMouseEntered)
-  }, [j, D, x]), G = i.useCallback(() => {
+  }, [M, D, x]), G = i.useCallback(() => {
     D(false)
   }, [D]), B = i.useCallback(() => (0, _.x)(g.qR.EmojiButtonFocused), []), Z = (0, p.B4)(), [F, V] = (0, f.US)(Z ? [c.z.TRIAL_NUX_EMOJI_BUTTON] : [], true, true), H = F === c.z.TRIAL_NUX_EMOJI_BUTTON, Y = !y && H, W = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), K = i.useRef(null), z = null != P ? P : K;
   return (0, r.jsx)(u.ua7, {
@@ -123,7 +123,7 @@ let P = function(e) {
     children: e => (0, r.jsx)(u.P3F, {
       innerRef: z,
       tabIndex: t,
-      className: o()(M, n),
+      className: o()(j, n),
       onMouseEnter: () => {
         var t;
         U(), null == (t = e.onMouseEnter) || t.call(e)
@@ -147,7 +147,7 @@ let P = function(e) {
       children: null != a ? a() : (0, r.jsx)(u.AMe, {
         config: C,
         to: {
-          value: +!!j
+          value: +!!M
         },
         children: e => {
           let {
@@ -159,9 +159,9 @@ let P = function(e) {
               transform: t.to([0, 1], [1, 1.14]).to(e => "scale(".concat(e, ")"))
             }),
             children: [(0, r.jsx)("div", {
-              className: o()(b.sprite, b.spriteColored, j ? b.active : b.inactive)
+              className: o()(b.sprite, b.spriteColored, M ? b.active : b.inactive)
             }), (0, r.jsx)("div", {
-              className: o()(b.sprite, H ? b.spritePremiumColored : b.spriteGreyscale, j ? b.inactive : b.active, {
+              className: o()(b.sprite, H ? b.spritePremiumColored : b.spriteGreyscale, M ? b.inactive : b.active, {
                 [b.reducedMotion]: W
               })
             })]

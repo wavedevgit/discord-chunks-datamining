@@ -43,8 +43,8 @@ function L(e, t, n) {
   }) : e[t] = n, e
 }
 let x = 5,
-  j = c()().subtract(1, "week"),
-  M = [],
+  M = c()().subtract(1, "week"),
+  j = [],
   k = "",
   U = false;
 
@@ -55,7 +55,7 @@ function G(e, t) {
 }
 
 function B(e, t) {
-  return null != e && c()(e.createdAt).isAfter(j) && 0 === t
+  return null != e && c()(e.createdAt).isAfter(M) && 0 === t
 }
 let Z = {
     [Chunk981631.iEv.NAME]: G,
@@ -157,7 +157,7 @@ function Q() {
     }),
     i = Object.values(Chunk283595.Z.getAllLibraryApplications()).map(r => q(r, n, t, e, true)).filter(Chunk823379.lm),
     a = [...r.map(r => X(r, n, t, e)).filter(Chunk823379.lm), ...Chunk658722].sort((e, t) => e.lastPlayed === t.lastPlayed ? 0 : e.lastPlayed > t.lastPlayed ? false : 1);
-  return U = null != Chunk77498.Z.lastFetched && Chunk283595.Z.fetched, !s().isEqual(a, M) && (M = a, Chunk358085.isPlatformEmbedded && Chunk998502.ZP.setSystemTrayApplications(V(M).map(e => e.application).slice(0, x)), true)
+  return U = null != Chunk77498.Z.lastFetched && Chunk283595.Z.fetched, !s().isEqual(a, j) && (j = a, Chunk358085.isPlatformEmbedded && Chunk998502.ZP.setSystemTrayApplications(V(j).map(e => e.application).slice(0, x)), true)
 }
 class J extends(r = Chunk442837.ZP.Store) {
   initialize() {
@@ -167,13 +167,13 @@ class J extends(r = Chunk442837.ZP.Store) {
     return k
   }
   get applicationViewItems() {
-    return M
+    return j
   }
   get launchableApplicationViewItems() {
-    return V(M)
+    return V(j)
   }
   get libraryApplicationViewItems() {
-    return F(M)
+    return F(j)
   }
   get filteredLibraryApplicationViewItems() {
     return H(this.libraryApplicationViewItems, k)
@@ -182,7 +182,7 @@ class J extends(r = Chunk442837.ZP.Store) {
     return Y(this.filteredLibraryApplicationViewItems, Chunk799777.Z.sortKey, Chunk799777.Z.sortDirection, Chunk706454.default.locale)
   }
   get hiddenLibraryApplicationViewItems() {
-    return W(M)
+    return W(j)
   }
   get hasFetchedApplications() {
     return U

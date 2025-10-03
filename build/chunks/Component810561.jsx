@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  r = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk709054 = require("./709054.js"),
   Chunk7697 = require("./7697.js"),
@@ -18,7 +18,7 @@ function _(e) {
   let {
     guildId: n,
     recurrenceRule: t,
-    guildEventId: r,
+    guildEventId: a,
     onRecurrenceClick: _,
     hideScroller: p = false,
     activeRecurrenceId: b
@@ -26,7 +26,7 @@ function _(e) {
     recurrenceStartTimes: g,
     canViewMoreRecurrences: h,
     updateRecurrenceStartTimes: m
-  } = (0, c.Z)(r, n, t), f = p ? "div" : l.Ttm;
+  } = (0, c.Z)(a, n, t), f = p ? "div" : l.Ttm;
   return (0, i.jsxs)("div", {
     className: u.recurrences,
     children: [(0, i.jsx)(l.X6q, {
@@ -34,7 +34,7 @@ function _(e) {
       className: u.heading,
       children: d.intl.string(d.t["D/jjoa"])
     }), (0, i.jsxs)(f, {
-      className: a()(u.scroller, {
+      className: r()(u.scroller, {
         [u.showScroller]: !p
       }),
       children: [g.map(e => {
@@ -42,7 +42,7 @@ function _(e) {
         return (0, i.jsx)(s.Z, {
           recurrenceId: n,
           originalScheduledStartTime: e,
-          guildEventId: r,
+          guildEventId: a,
           onClick: _,
           isActive: n === b
         }, n)

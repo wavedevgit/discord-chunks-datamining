@@ -86,22 +86,22 @@ function x() {
   return new Set(l().weekdays().map(e => e.toLowerCase()))
 }
 
-function j() {
+function M() {
   let e = new Date().getFullYear();
   return new Set(o().range(2015, module + 1).map(e => e.toString()))
 }
 
-function M(e, t) {
+function j(e, t) {
   return [e, e.clone().add(1, t)]
 }
 
 function k(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 0;
-  return M(l()().startOf(e).add(t, e), e)
+  return j(l()().startOf(e).add(t, e), e)
 }
 
 function U(e, t, n) {
-  return M(l()(e, t).local(), n)
+  return j(l()(e, t).local(), n)
 }
 
 function G() {
@@ -137,7 +137,7 @@ function z(e) {
 function q(e, t) {
   let n, r, i = e.getFullMatch().trim().toLowerCase(),
     a = G()[i];
-  return null != a ? [n, r] = a() : L().has(i) ? [n, r] = U(i, "MMMM", "month") : x().has(i) ? [n, r] = U(i, "dddd", "day") : j().has(i) ? [n, r] = U(i, "YYYY", "year") : [n, r] = U(i, C.b2L, "day"), !!(n.isValid() && r.isValid()) && ("before" === t ? (r = n, n = null) : "after" === t && (n = r, r = null), e.setData("start", n), e.setData("end", r), true)
+  return null != a ? [n, r] = a() : L().has(i) ? [n, r] = U(i, "MMMM", "month") : x().has(i) ? [n, r] = U(i, "dddd", "day") : M().has(i) ? [n, r] = U(i, "YYYY", "year") : [n, r] = U(i, C.b2L, "day"), !!(n.isValid() && r.isValid()) && ("before" === t ? (r = n, n = null) : "after" === t && (n = r, r = null), e.setData("start", n), e.setData("end", r), true)
 }
 
 function X(e, t, n) {
@@ -208,7 +208,7 @@ function ee(e) {
 }
 
 function et() {
-  return [...Array.from(L()), ...Array.from(x()), ...Array.from(j()), ...Object.keys(G())]
+  return [...Array.from(L()), ...Array.from(x()), ...Array.from(M()), ...Object.keys(G())]
 }
 
 function en() {

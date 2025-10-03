@@ -143,8 +143,8 @@ function et(e) {
   } = e;
   c = Date.now(), r = false, o = new Map;
   let a = new Map;
-  for (let e of t) o.set(e.id, e), a.set(e.id, (0, D.zi)(e)), e.targetedContent.includes(L.jn.QUEST_BAR) && (0, j.T)({
-    location: M.dr.QUESTS_STORE
+  for (let e of t) o.set(e.id, e), a.set(e.id, (0, D.zi)(e)), e.targetedContent.includes(L.jn.QUEST_BAR) && (0, M.T)({
+    location: j.dr.QUESTS_STORE
   }).log("Delivered ".concat(e.config.messages.questName, " (").concat(e.id, ")"));
   for (let e of (s = new Map, n)) s.set(e.id, e);
   for (let e of null == S ? true : S.values()) o.has(e.id) || (o.set(e.id, e), a.set(e.id, (0, D.zi)(e)));
@@ -337,8 +337,8 @@ function eC(e) {
 function eN(e) {
   let {
     user_status: t
-  } = e, n = (0, j.T)({
-    location: M.dr.QUESTS_STORE
+  } = e, n = (0, M.T)({
+    location: j.dr.QUESTS_STORE
   });
   n.log("Received user status update for ".concat(t.quest_id), t);
   let r = (0, D.U3)(t);
@@ -415,14 +415,14 @@ function ex(e) {
   })
 }
 
-function ej(e) {
+function eM(e) {
   let {
     placement: t
   } = e;
   v.delete(t), u = Date.now(), i = false
 }
 
-function eM() {
+function ej() {
   let e = false,
     t = new Map(I);
   o.forEach((n, r) => {
@@ -431,8 +431,8 @@ function eM() {
 }
 
 function ek() {
-  null === F && (eM(), F = setInterval(() => {
-    eM()
+  null === F && (ej(), F = setInterval(() => {
+    ej()
   }, H))
 }
 
@@ -544,7 +544,7 @@ let eZ = new eB(Chunk570140.Z, {
     QUESTS_FETCH_CLAIMED_QUESTS_FAILURE: ec,
     QUESTS_FETCH_QUEST_TO_DELIVER_BEGIN: er,
     QUESTS_FETCH_QUEST_TO_DELIVER_SUCCESS: ex,
-    QUESTS_FETCH_QUEST_TO_DELIVER_FAILURE: ej,
+    QUESTS_FETCH_QUEST_TO_DELIVER_FAILURE: eM,
     QUESTS_FETCH_PREVIEW_BEGIN: ei,
     QUESTS_FETCH_PREVIEW_SUCCESS: ea,
     QUESTS_FETCH_PREVIEW_FAILURE: eo,

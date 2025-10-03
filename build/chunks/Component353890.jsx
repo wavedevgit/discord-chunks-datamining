@@ -2,7 +2,7 @@
 /** chunk id: 353890, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => x
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -20,7 +20,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk628682 = require("./628682.js");
 
-function b(e) {
+function x(e) {
   let {
     guild: t,
     scrollToQuestions: n
@@ -35,14 +35,14 @@ function b(e) {
       })
     }), (0, r.jsxs)("div", {
       className: h.channelList,
-      children: [(0, r.jsx)(v, {}), 0 === l.length && (0, r.jsx)(x, {}), (0, r.jsx)(j, {
+      children: [(0, r.jsx)(_, {}), 0 === l.length && (0, r.jsx)(b, {}), (0, r.jsx)(j, {
         channels: l
       })]
     })]
   })
 }
 
-function x() {
+function b() {
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk628682.emptyState,
     children: [(0, Chunk951288.jsx)("div", {
@@ -65,21 +65,21 @@ function j(e) {
     channels: t
   } = e;
   return (0, r.jsx)(r.Fragment, {
-    children: t.map(e => e.isCategory() ? (0, r.jsx)(_, {
+    children: t.map(e => e.isCategory() ? (0, r.jsx)(v, {
       label: e.name
-    }, e.id) : (0, r.jsx)(O, {
+    }, e.id) : (0, r.jsx)(C, {
       channel: e
     }, e.id))
   })
 }
 
-function v() {
+function _() {
   return (0, Chunk951288.jsx)("div", {
     className: Chunk628682.divider
   })
 }
 
-function _(e) {
+function v(e) {
   let {
     label: t
   } = e;
@@ -99,7 +99,7 @@ function _(e) {
   })
 }
 
-function O(e) {
+function C(e) {
   var t;
   let {
     channel: n

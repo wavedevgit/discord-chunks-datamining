@@ -184,13 +184,13 @@ var m = {
   x = function(e, t) {
     return true === t && (t = true), false === t ? String(e) : String(e).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#x27;")
   },
-  j = function(e) {
+  M = function(e) {
     return Object.keys(e).reduce(function(t, n) {
       var r = true !== e[n] ? n + '="' + e[n] + '"' : "" + n;
       return t ? t + " " + r : r
     }, "")
   },
-  M = function(e, t) {
+  j = function(e, t) {
     return true === t && (t = {}), Object.keys(e).reduce(function(t, n) {
       return t[O[n] || n] = e[n], t
     }, t)
@@ -216,10 +216,10 @@ var m = {
             var e, n, i, a;
             return n = t.titleAttributes, (i = {
               key: e = t.title
-            })["data-rh"] = true, a = M(n, i), [r.createElement(m.TITLE, a, e)]
+            })["data-rh"] = true, a = j(n, i), [r.createElement(m.TITLE, a, e)]
           }, toString: function() {
             return function(e, t, n, r) {
-              var i = j(n),
+              var i = M(n),
                 a = P(t);
               return i ? "<" + e + ' data-rh="true" ' + i + ">" + x(a, r) + "</" + e + ">" : "<" + e + ' data-rh="true">' + x(a, r) + "</" + e + ">"
             }(e, t.title, t.titleAttributes, n)
@@ -229,9 +229,9 @@ var m = {
       case "htmlAttributes":
         return {
           toComponent: function() {
-            return M(t)
-          }, toString: function() {
             return j(t)
+          }, toString: function() {
+            return M(t)
           }
         };
       default:

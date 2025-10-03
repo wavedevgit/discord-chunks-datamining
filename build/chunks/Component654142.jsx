@@ -67,11 +67,11 @@ let _ = Chunk647438.memo(function(e) {
     return i
   }(e, ["folderNode"]);
   let {
-    id: O,
-    name: y,
+    id: y,
+    name: O,
     color: v,
     children: j
-  } = t, x = j.map(e => e.id), C = (0, s.Z)(e => e.guildId), E = (0, l.e7)([c.Z], () => c.Z.isFolderExpanded(O)), S = function(e) {
+  } = t, x = j.map(e => e.id), C = (0, s.Z)(e => e.guildId), E = (0, l.e7)([c.Z], () => c.Z.isFolderExpanded(y)), S = function(e) {
     let t = e.children.map(e => {
         let t = e.id,
           n = d.Z.getGuild(t);
@@ -81,39 +81,39 @@ let _ = Chunk647438.memo(function(e) {
       r = [];
     for (let e of t)(e.length < n || 0 === r.length) && (r.push(e), n -= e.length);
     return "".concat(r.join(", ")).concat(r.length < t.length ? ", ..." : "")
-  }(t), P = (0, h.Z)(t), {
-    mentionCount: I,
+  }(t), I = (0, f.Z)(t), {
+    mentionCount: P,
     isMentionLowImportance: N,
-    unread: w
+    unread: Z
   } = (0, l.cj)([u.default], () => ({
     mentionCount: x.map(e => u.default.getMentionCount(e)).reduce((e, t) => e + t, 0),
     isMentionLowImportance: x.every(e => u.default.getIsMentionLowImportance(e)),
     unread: x.some(e => u.default.hasUnread(e))
-  })), Z = i.useCallback(() => {
-    a.Z.toggleGuildFolderExpand(O)
-  }, [O]), T = i.useCallback(e => {
+  })), w = i.useCallback(() => {
+    a.Z.toggleGuildFolderExpand(y)
+  }, [y]), T = i.useCallback(e => {
     (0, o.jW)(e, async () => {
       let {
         default: e
       } = await n.e("52590").then(n.bind(n, 205784));
       return t => (0, r.jsx)(e, b(m({}, t), {
-        folderId: O,
-        folderName: y,
+        folderId: y,
+        folderName: O,
         folderColor: v,
-        unread: w || I > 0
+        unread: Z || P > 0
       }))
     })
-  }, [O, y, v, w, I]);
-  return (0, r.jsx)(f.Z, b(m({}, _), {
+  }, [y, O, v, Z, P]);
+  return (0, r.jsx)(h.Z, b(m({}, _), {
     folderNode: t,
     expanded: E,
     selected: null != C && x.includes(C),
-    mentionCount: I,
+    mentionCount: P,
     isMentionLowImportance: N,
-    unread: w,
-    mediaState: P,
+    unread: Z,
+    mediaState: I,
     defaultFolderName: S,
-    onExpandCollapse: Z,
+    onExpandCollapse: w,
     onContextMenu: T
   }))
 })

@@ -88,8 +88,8 @@ function Y(e) {
     reason: n
   } = e;
   if (!(0, P.n)()) return;
-  let r = j.a(),
-    i = M.Pf(),
+  let r = M.a(),
+    i = j.Pf(),
     a = m.Z.getState(),
     o = i.length > 0 ? "".concat(n, " + ").concat(i) : n,
     s = r ? "paused" : "request_state";
@@ -105,7 +105,7 @@ function Y(e) {
       client_app_state: m.Z.getState(),
       skip_context: s,
       original_connect_reason: o,
-      gateway_connect_reasons: M.Pf()
+      gateway_connect_reasons: j.Pf()
     })
   }, 200)
 }
@@ -201,8 +201,8 @@ class ei extends Chunk183139.Z {
   }
   _connect(e) {
     if (!this.willReconnect()) return void V.verbose("Skipping _connect because willReconnect is false");
-    let t = j.a();
-    if ((t || !M.RZ()) && (V.info("Skipping _connect because socket is paused"), Y({
+    let t = M.a();
+    if ((t || !j.RZ()) && (V.info("Skipping _connect because socket is paused"), Y({
         reason: e
       }), t)) return;
     this.connectionState = C.Z.CONNECTING, this.nextReconnectIsImmediate = false;
@@ -527,7 +527,7 @@ class ei extends Chunk183139.Z {
   }
   networkStateChange(e, t) {
     let n = !(arguments.length > 2) || true === arguments[2] || arguments[2];
-    M.RZ() || Y({
+    j.RZ() || Y({
       reason: t,
       actuallySkipped: false
     }), this.expeditedHeartbeat(e, t, n, false)

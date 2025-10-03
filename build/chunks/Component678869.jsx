@@ -103,8 +103,8 @@ function x(e) {
   let n, m, T, {
       channel: R,
       entry: x,
-      closePopout: j,
-      onReaction: M,
+      closePopout: M,
+      onReaction: j,
       onVoiceChannelPreview: k
     } = e,
     {
@@ -169,7 +169,7 @@ function x(e) {
         onOpenSpotifyArtist: e
       }), (null == K ? true : K.syncDisabled) === false) {
       let e = () => {
-        (0, _.Z)(K, C.kG.USER_ACTIVITY_SYNC), j()
+        (0, _.Z)(K, C.kG.USER_ACTIVITY_SYNC), M()
       };
       X.push((0, r.jsx)(l.zxk, {
         variant: "primary",
@@ -202,7 +202,7 @@ function x(e) {
   return (0, r.jsxs)(I.yR, {
     children: [Q, (0, r.jsx)(I.St, {
       children: (0, r.jsx)(I.WT, {
-        onReaction: M,
+        onReaction: j,
         onVoiceChannelPreview: k,
         user: V,
         channel: R,

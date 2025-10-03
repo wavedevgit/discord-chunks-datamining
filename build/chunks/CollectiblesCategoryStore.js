@@ -46,14 +46,14 @@ let m = new Map,
     } = e;
     (R = new Set(R)).add(t), (P = new Map(P)).delete(t), (w = new Map(w)).delete(t)
   },
-  j = e => {
+  M = e => {
     let {
       skuId: t,
       error: n
     } = e;
     (R = new Set(R)).delete(t), (P = new Map(P)).set(t, n), (w = new Map(w)).set(t, Date.now())
   },
-  M = e => {
+  j = e => {
     let {
       skuId: t,
       product: n
@@ -195,8 +195,8 @@ let z = new K(Chunk570140.Z, {
   COLLECTIBLES_CATEGORIES_V2_FETCH_SUCCESS: B,
   COLLECTIBLES_CATEGORIES_FETCH_FAILURE: U,
   COLLECTIBLES_PRODUCT_FETCH: x,
-  COLLECTIBLES_PRODUCT_FETCH_SUCCESS: M,
-  COLLECTIBLES_PRODUCT_FETCH_FAILURE: j,
+  COLLECTIBLES_PRODUCT_FETCH_SUCCESS: j,
+  COLLECTIBLES_PRODUCT_FETCH_FAILURE: M,
   COLLECTIBLES_SHOP_HOME_FETCH_SUCCESS: F,
   COLLECTIBLES_SKIP_NUM_CATEGORIES: W,
   LOGOUT: H

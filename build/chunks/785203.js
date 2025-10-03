@@ -28,10 +28,10 @@ function b(e) {
     O = u.Z.useShouldShowChannelNotice(n),
     E = (0, d.h6)(e),
     {
-      enableStudyGroup: y
+      enableStudyGroup: v
     } = (0, c.s)(e),
-    v = E.length > 0,
-    I = y && !(null == e ? true : e.features.has(g.oNc.HUB)),
+    y = E.length > 0,
+    I = v && !(null == e ? true : e.features.has(g.oNc.HUB)),
     S = (0, s.Vm)(n);
   if (i.useEffect(() => {
       a.Z.getGuildEventsForCurrentUser(n)
@@ -40,7 +40,7 @@ function b(e) {
   if (b || null != S) return 2;
   if (_) return 3;
   if (O) return 4;
-  else if (v) return 5;
+  else if (y) return 5;
   else if (I) return 6;
   return null
 }

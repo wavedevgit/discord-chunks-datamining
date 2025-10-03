@@ -58,7 +58,7 @@ let B = () => (0, Chunk951288.jsx)("div", {
     let {
       markAsDismissed: t
     } = e, n = (0, D.q)(), i = () => {
-      null != t && t(M.L.DISMISS), n(j.rMx.CLIENT_THEME_PREVIEW_CLOSED), (0, w.C)()
+      null != t && t(j.L.DISMISS), n(M.rMx.CLIENT_THEME_PREVIEW_CLOSED), (0, w.C)()
     };
     return (0, r.jsxs)("div", {
       className: G.editorHeader,
@@ -91,7 +91,7 @@ let B = () => (0, Chunk951288.jsx)("div", {
       intervalType: null == p || null == (t = p.subscription_trial) ? true : t.interval,
       intervalCount: null == p || null == (n = p.subscription_trial) ? true : n.interval_count
     }), b = f ? U.intl.string(U.t.IJI7ys) : (null == p || null == (i = p.subscription_trial) ? true : i.sku_id) === k.Si.TIER_2 ? E : U.intl.string(U.t.mr4K7O), I = e => {
-      e && (null == a || a(), null != o && o(M.L.PRIMARY), null != u && ((0, x.Yk)({
+      e && (null == a || a(), null != o && o(j.L.PRIMARY), null != u && ((0, x.Yk)({
         isPersisted: true,
         themeName: c.Us[u.id],
         analyticsLocations: s
@@ -104,8 +104,8 @@ let B = () => (0, Chunk951288.jsx)("div", {
       subscriptionTier: k.Si.TIER_2,
       defaultTextOverride: b,
       premiumModalAnalyticsLocation: {
-        object: j.qAy.BUTTON_CTA,
-        objectType: j.Qqv.BUY
+        object: M.qAy.BUTTON_CTA,
+        objectType: M.Qqv.BUY
       },
       onSubscribeModalClose: I,
       fullWidth: true
@@ -131,8 +131,8 @@ let B = () => (0, Chunk951288.jsx)("div", {
     } = P.Mc.useExperiment({
       location: "ClientThemesEditor"
     }), [c, d] = i.useState(false), f = (0, D.q)(), _ = () => {
-      null != t && t(M.L.DISMISS), f(j.rMx.CLIENT_THEME_PREVIEW_CLOSED), (0, w.C)(), n || (0, S.openUserSettings)(T.n.APPEARANCE_PANEL, {
-        section: j.oAB.APPEARANCE
+      null != t && t(j.L.DISMISS), f(M.rMx.CLIENT_THEME_PREVIEW_CLOSED), (0, w.C)(), n || (0, S.openUserSettings)(T.n.APPEARANCE_PANEL, {
+        section: M.oAB.APPEARANCE
       })
     }, p = (0, b.B)({
       no: U.t["3D5yo6"],
@@ -183,14 +183,14 @@ function H(e) {
     isPreview: R.Z.isPreview,
     shouldEditorAnimate: n && !h.Z.useReducedMotion
   })), d = (0, E.oq)().activePanel === E.wh.CLIENT_THEMES, _ = (0, D.q)();
-  i.useEffect(() => _(j.rMx.CLIENT_THEME_PREVIEW_VIEWED), [_]), i.useEffect(() => {
-    c && C.default.track(j.rMx.PREMIUM_UPSELL_VIEWED, {
+  i.useEffect(() => _(M.rMx.CLIENT_THEME_PREVIEW_VIEWED), [_]), i.useEffect(() => {
+    c && C.default.track(M.rMx.PREMIUM_UPSELL_VIEWED, {
       type: k.cd.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
       location_stack: a
     })
   }, [c, a]);
   let b = (0, D.J)(),
-    y = (0, p.Z)(null, c ? b : j.dG4);
+    y = (0, p.Z)(null, c ? b : M.dG4);
   return i.useEffect(() => {
     if (c && !d) return b
   }, [c, d, b]), (0, r.jsx)(g.Gt, {

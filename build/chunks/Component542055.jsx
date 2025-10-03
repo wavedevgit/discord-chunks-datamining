@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk658722 = require("./658722.js"),
   i = require.n(Chunk658722),
   Chunk392711 = require("./392711.js"),
-  c = require.n(Chunk392711),
+  s = require.n(Chunk392711),
   Chunk990547 = require("./990547.js"),
   Chunk442837 = require("./442837.js"),
   Chunk952265 = require("./952265.js"),
@@ -61,62 +61,62 @@ function w(e, t) {
 function N(e) {
   let {
     channelId: t,
-    onClose: a,
+    onClose: r,
     transitionState: o
-  } = e, [N, E] = r.useState(""), [S, T] = r.useState("descending"), [k, I] = r.useState(true), [D, Z] = r.useState(null), L = r.useDeferredValue(N), M = (0, u.e7)([h.Z], () => h.Z.getClips()), R = (0, u.e7)([h.Z], () => h.Z.getPendingClips()), B = (0, u.e7)([h.Z], () => h.Z.getSettings().storageLocation), A = (0, u.Wu)([h.Z], () => h.Z.getNewClipIds()), {
-    analyticsLocations: H
-  } = (0, f.ZP)(m.Z.CLIPS_GALLERY), z = r.useMemo(() => [...R, ...M], [M, R]);
-  (0, b.Z)({
-    type: s.ImpressionTypes.MODAL,
-    name: s.ImpressionNames.CLIP_GALLERY_VIEWED,
+  } = e, [N, T] = a.useState(""), [E, I] = a.useState("descending"), [S, k] = a.useState(true), [Z, D] = a.useState(null), L = a.useDeferredValue(N), M = (0, u.e7)([h.Z], () => h.Z.getClips()), R = (0, u.e7)([h.Z], () => h.Z.getPendingClips()), A = (0, u.e7)([h.Z], () => h.Z.getSettings().storageLocation), H = (0, u.Wu)([h.Z], () => h.Z.getNewClipIds()), {
+    analyticsLocations: z
+  } = (0, f.ZP)(m.Z.CLIPS_GALLERY), B = a.useMemo(() => [...R, ...M], [M, R]);
+  (0, g.Z)({
+    type: c.ImpressionTypes.MODAL,
+    name: c.ImpressionNames.CLIP_GALLERY_VIEWED,
     properties: {
-      number_of_clips_loaded: z.length
+      number_of_clips_loaded: B.length
     }
   }, {
-    disableTrack: k
-  }, [z.length, k]), r.useEffect(() => ((0, y.eL)(), () => {
-    (0, y.eL)(), (0, y.zq)()
+    disableTrack: S
+  }, [B.length, S]), a.useEffect(() => ((0, x.eL)(), () => {
+    (0, x.eL)(), (0, x.zq)()
   }), []);
-  let V = r.useMemo(() => c()(z).filter(e => {
+  let V = a.useMemo(() => s()(B).filter(e => {
     if ("" === L.trim()) returntrue;
     let t = L.toLowerCase();
     return null != e.name && "" !== e.name && i()(t, e.name.toLowerCase()) || i()(t, e.applicationName.toLowerCase())
-  }).sort((e, t) => "ascending" === S ? g.default.compare(e.id, t.id) : "descending" === S ? g.default.compare(t.id, e.id) : 0).chunk(3).value(), [z, L, S]);
-  r.useEffect(() => {
+  }).sort((e, t) => "ascending" === E ? b.default.compare(e.id, t.id) : "descending" === E ? b.default.compare(t.id, e.id) : 0).chunk(3).value(), [B, L, E]);
+  a.useEffect(() => {
     !async function() {
-      I(true);
+      k(true);
       try {
-        await y.jv(B)
+        await x.jv(A)
       } finally {
-        I(false)
+        k(false)
       }
     }()
-  }, [B]);
-  let F = r.useCallback(e => {
+  }, [A]);
+  let F = a.useCallback(e => {
       (0, p.ZDy)(async () => {
         let {
-          default: r
+          default: a
         } = await n.e("61526").then(n.bind(n, 22989));
-        return n => (0, l.jsx)(r, w(P({}, n), {
+        return n => (0, l.jsx)(a, w(P({}, n), {
           channelId: t,
           clip: e
         }))
       }, {
-        modalKey: _.Ut
+        modalKey: C.Ut
       })
     }, [t]),
     {
       onShareClick: G
-    } = (0, x.Z)({
+    } = (0, j.Z)({
       channelId: t,
-      setExporting: Z
+      setExporting: D
     }),
-    K = r.useCallback((e, t) => {
+    K = a.useCallback((e, t) => {
       (0, p.ZDy)(async () => {
         let {
-          default: r
+          default: a
         } = await n.e("15915").then(n.bind(n, 799677));
-        return n => (0, l.jsx)(r, w(P({
+        return n => (0, l.jsx)(a, w(P({
           clip: e
         }, n), {
           onBeforeDelete: t,
@@ -124,55 +124,55 @@ function N(e) {
         }))
       })
     }, []),
-    Y = r.useCallback(e => {
+    Y = a.useCallback(e => {
       let {
         row: t
       } = e, n = V[t];
       return (0, l.jsx)("div", {
-        className: C.clipsRow,
+        className: O.clipsRow,
         children: n.map(e => {
           let t = 0 === e.length;
-          return (0, l.jsx)(j.Z, {
-            actionsDisabled: null != D || t,
-            exporting: D === e.id,
-            isNew: A.includes(e.id),
+          return (0, l.jsx)(y.Z, {
+            actionsDisabled: null != Z || t,
+            exporting: Z === e.id,
+            isNew: H.includes(e.id),
             onDelete: K,
             onEdit: F,
             onShare: e => G({
               clip: e,
-              onShareComplete: () => d.Mr(_.Qr)
+              onShareComplete: () => d.Mr(C.Qr)
             }),
             clip: e
           }, e.id)
         })
       }, "clips-gallery-".concat(t))
-    }, [V, A, D, G, K, F]),
-    U = k || 0 !== V.length ? k ? (0, l.jsx)("div", {
-      className: C.spinnerContainer,
+    }, [V, H, Z, G, K, F]),
+    U = S || 0 !== V.length ? S ? (0, l.jsx)("div", {
+      className: O.spinnerContainer,
       children: (0, l.jsx)(p.$jN, {})
     }) : (0, l.jsx)(p.aVo, {
-      className: C.clipGrid,
+      className: O.clipGrid,
       sections: [V.length],
       sectionHeight: 0,
       rowHeight: 328.25,
       renderRow: Y
-    }) : (0, l.jsx)(v.Z, {
-      isEmptyBecauseQuery: z.length > 0,
-      closePopout: a
+    }) : (0, l.jsx)(_.Z, {
+      isEmptyBecauseQuery: B.length > 0,
+      closePopout: r
     });
   return (0, l.jsx)(p.Y0X, {
     size: p.CgR.DYNAMIC,
     transitionState: o,
-    className: C.root,
+    className: O.root,
     parentComponent: "ClipsGalleryModal",
     children: (0, l.jsxs)(f.Gt, {
-      value: H,
-      children: [(0, l.jsx)(O.Z, {
-        onClose: a,
+      value: z,
+      children: [(0, l.jsx)(v.Z, {
+        onClose: r,
         filterQuery: N,
-        setFilterQuery: E,
-        sortOrder: S,
-        setSortOrder: T
+        setFilterQuery: T,
+        sortOrder: E,
+        setSortOrder: I
       }), U]
     })
   })

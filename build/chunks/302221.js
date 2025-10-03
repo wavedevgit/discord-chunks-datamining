@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   AZ: () => N,
-  BM: () => j,
+  BM: () => M,
   Cj: () => d,
   WY: () => C,
   YD: () => D,
@@ -324,7 +324,7 @@ function x(e) {
   return null == i ? null == n ? true : n.hex() : null == (t = R(i.hue, i.saturation * r, i.lightness)) ? true : t.toHexString()
 }
 
-function j(e, t, n) {
+function M(e, t, n) {
   let r = parseInt(e.substring(1, 3), 16),
     i = parseInt(e.substring(3, 5), 16),
     a = parseInt(e.substring(5, 7), 16),

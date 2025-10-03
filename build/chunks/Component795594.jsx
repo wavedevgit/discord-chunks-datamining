@@ -249,15 +249,15 @@ let ed = e => {
       return null == (r = K.Z.settings.applications) || null == (n = r.appSettings) || null == (t = n[E]) || null == (e = t.appDmSettings) ? true : e.allowMobilePush
     }, [E]), C = S.w.useExperiment({
       location: "oauth2_authorize"
-    }), L = a.bot, j = (0, p.e7)([x.Z], () => x.Z.getDMFromUserId(null == L ? true : L.id)), {
-      appDMChannelMuteConfig: M,
+    }), L = a.bot, M = (0, p.e7)([x.Z], () => x.Z.getDMFromUserId(null == L ? true : L.id)), {
+      appDMChannelMuteConfig: j,
       dmChannelMuted: B
-    } = (0, p.cj)([k.ZP], () => null == j ? {
+    } = (0, p.cj)([k.ZP], () => null == M ? {
       appDMChannelMuteConfig: null,
       dmChannelMuted: false
     } : {
-      appDMChannelMuteConfig: k.ZP.getChannelMuteConfig(null, j),
-      dmChannelMuted: k.ZP.isChannelMuted(null, j)
+      appDMChannelMuteConfig: k.ZP.getChannelMuteConfig(null, M),
+      dmChannelMuted: k.ZP.isChannelMuted(null, M)
     }), [V, H] = i.useState(false), [q, X] = i.useState(false), ea = () => {
       let e = [];
       for (let n of t) e.push(...(0, w.CI)(n, t)), n === f.x.APPLICATIONS_COMMANDS && e.push(et.intl.string(et.t.Ls2XRk));
@@ -411,7 +411,7 @@ let ed = e => {
       })
     }, eh = i.useCallback(async () => {
       u()(null != L, "dm channel mute setting requires having a bot user");
-      let e = j;
+      let e = M;
       null == e && (e = await b.Z.ensurePrivateChannel(L.id)), B ? y.Z.updateAppDMOverrideSettings(null, e, a.id, {
         muted: false
       }, Z.ZB.Unmuted) : (0, g.ZDy)(async () => {
@@ -423,7 +423,7 @@ let ed = e => {
           applicationId: a.id
         }, n))
       })
-    }, [j, L, B, a.id]), em = () => C.enabled ? (0, r.jsxs)("div", {
+    }, [M, L, B, a.id]), em = () => C.enabled ? (0, r.jsxs)("div", {
       className: en.directMessagesSection,
       children: [(0, r.jsx)(g.X6q, {
         variant: "heading-sm/medium",
@@ -434,8 +434,8 @@ let ed = e => {
         gap: 20,
         children: [null != L ? (0, r.jsx)(g.rsf, {
           label: et.intl.string(et.t.NkwaBg),
-          description: (null == M ? true : M.end_time) != null ? et.intl.format(et.t.j7h4AA, {
-            endTime: new Date(M.end_time).toLocaleString(et.intl.currentLocale, {
+          description: (null == j ? true : j.end_time) != null ? et.intl.format(et.t.j7h4AA, {
+            endTime: new Date(j.end_time).toLocaleString(et.intl.currentLocale, {
               month: "numeric",
               day: "numeric",
               hour: "numeric",

@@ -70,8 +70,8 @@ function x(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let j = [],
-  M = {};
+let M = [],
+  j = {};
 
 function k() {
   var e, t;
@@ -85,7 +85,7 @@ function k() {
     type: Chunk981631.IIU.STREAMING
   }, Chunk392711));
   let l = new Set;
-  s().forEach(M, e => {
+  s().forEach(j, e => {
     let [, t] = e;
     null != t.application_id && (l.add(t.name), n.push(t))
   });
@@ -126,11 +126,11 @@ function k() {
       emoji: null == module ? true : module.emoji
     })
   }
-  a()(j, require) || (j = require)
+  a()(M, require) || (M = require)
 }
 
 function U() {
-  M = {}, k()
+  j = {}, k()
 }
 
 function G(e) {
@@ -140,28 +140,28 @@ function G(e) {
     activity: r,
     partyPrivacy: i
   } = e;
-  if (a()(M[t], [n, r, i])) returnfalse;
-  null != r ? M[t] = [n, r, i] : delete M[t], k()
+  if (a()(j[t], [n, r, i])) returnfalse;
+  null != r ? j[t] = [n, r, i] : delete j[t], k()
 }
 
 function B(e) {
   let {
     socketId: t
   } = e;
-  delete M[t], k()
+  delete j[t], k()
 }
 
 function Z(e) {
   let {
     localActivities: t
   } = e;
-  M = D({}, t), k()
+  j = D({}, t), k()
 }
 
 function F() {
   let e = {},
     t = false;
-  for (let [i, [a, o, s]] of Object.entries(M)) {
+  for (let [i, [a, o, s]] of Object.entries(j)) {
     var n, r;
     let l = null != (n = Chunk392711.flags) ? require : 0,
       c = (0, Chunk212517.S)(Chunk392711, (0, Chunk630388.yE)(null != (r = null == Chunk392711 ? true : Chunk392711.flags) ? r : 0, Chunk981631.xjy.INSTANCE), Chunk392711.platform === Chunk981631.M7m.EMBEDDED, (0, Chunk212517.D)(Chunk392711), s);
@@ -169,7 +169,7 @@ function F() {
       flags: Chunk570140
     }), s], t = true) : module[Chunk348327] = [a, Chunk392711, s]
   }
-  return exports ? (M = module, "APPLICATION_ACTIVITIES_CHANGED") : "NO_CHANGES"
+  return exports ? (j = module, "APPLICATION_ACTIVITIES_CHANGED") : "NO_CHANGES"
 }
 
 function V() {
@@ -180,10 +180,10 @@ class H extends(r = Chunk442837.ZP.Store) {
     this.waitFor(Chunk594190.ZP, Chunk317381.ZP, Chunk272053.Z, Chunk199902.Z, Chunk768419.Z, Chunk581883.Z, Chunk77498.Z, Chunk106301.Z, Chunk797258.Z, Chunk812206.Z), this.syncWith([Chunk406066.Z, Chunk106301.Z], () => k())
   }
   getActivities() {
-    return j
+    return M
   }
   getPrimaryActivity() {
-    return j[0]
+    return M[0]
   }
   getApplicationActivity(e) {
     return this.findActivity(t => t.application_id === e)
@@ -192,13 +192,13 @@ class H extends(r = Chunk442837.ZP.Store) {
     return this.findActivity(e => e.type === P.IIU.CUSTOM_STATUS)
   }
   findActivity(e) {
-    return j.find(e)
+    return M.find(e)
   }
   getApplicationActivities() {
-    return M
+    return j
   }
   getActivityForPID(e) {
-    for (let [t, n] of Object.values(M))
+    for (let [t, n] of Object.values(j))
       if (t === e) return n;
     return null
   }

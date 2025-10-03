@@ -71,9 +71,9 @@ function x(e, t) {
   }), e
 }
 
-function j(e, t) {
+function M(e, t) {
   if (null == e) return {};
-  var n, r, i = M(e, t);
+  var n, r, i = j(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -81,7 +81,7 @@ function j(e, t) {
   return i
 }
 
-function M(e, t) {
+function j(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -115,7 +115,7 @@ function U(e) {
       children: e => {
         var {
           ref: t
-        } = e, a = j(e, ["ref"]);
+        } = e, a = M(e, ["ref"]);
         return (0, i.jsx)(b.Z, x(D({
           className: R.verticalFit,
           currentPageIndex: c,

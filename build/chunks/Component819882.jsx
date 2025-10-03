@@ -29,10 +29,10 @@ let E = e => {
     cardRef: E
   } = e, S = (0, d.Nd)(), v = null == S ? true : S.tab, x = (0, a.e7)([o.default], () => o.default.getCurrentUser()), O = c.ZP.canUseCollectibles(x), T = (0, u.sp)(), {
     isPurchased: y,
-    isPartiallyOwnedBundle: L
-  } = (0, p.L)(t), j = (0, g.rN)(t), k = (0, g.G1)(t), I = (0, g.ne)({
+    isPartiallyOwnedBundle: j
+  } = (0, p.L)(t), L = (0, g.rN)(t), k = (0, g.G1)(t), I = (0, g.ne)({
     product: t,
-    isPartiallyOwnedBundle: L,
+    isPartiallyOwnedBundle: j,
     isPurchased: y
   }), P = (0, _.Iw)(t), {
     isOrbExclusive: N
@@ -42,7 +42,7 @@ let E = e => {
     tab: v,
     hasDiscountOffer: null != P
   }), B = (0, C.J7)(t, i.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON);
-  return k || l.tq || N || !I || v === m.AW.ORBS ? null : j ? (0, r.jsx)(s.hU, {
+  return k || l.tq || N || !I || v === m.AW.ORBS ? null : L ? (0, r.jsx)(s.hU, {
     variant: "primary",
     "aria-label": b.intl.string(b.t.SKNnqq),
     icon: s.tEF,

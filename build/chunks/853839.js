@@ -62,23 +62,23 @@ var Chunk98405 = require("./98405.js"),
       get: e
     }
   },
-  j = function(e) {
+  M = function(e) {
     return x(function() {
       return R(this)[e]
     })
   };
-Chunk507604 && (Chunk573078(L, "code", j("code")), Chunk573078(L, "message", j("message")), Chunk573078(L, "name", j("name"))), c(L, "constructor", Chunk530575(1, D));
-var M = Chunk621523(function() {
+Chunk507604 && (Chunk573078(L, "code", M("code")), Chunk573078(L, "message", M("message")), Chunk573078(L, "name", M("name"))), c(L, "constructor", Chunk530575(1, D));
+var j = Chunk621523(function() {
     return !(new S instanceof T)
   }),
-  k = M || Chunk621523(function() {
+  k = j || Chunk621523(function() {
     return C.toString !== Chunk266101 || "2: 1" !== String(new S(1, 2))
   }),
-  U = M || Chunk621523(function() {
+  U = j || Chunk621523(function() {
     return 25 !== new S(1, "DataCloneError").code
   }),
-  G = M || 25 !== S[I] || 25 !== A[I],
-  B = Chunk511696 ? k || U || G : M;
+  G = j || 25 !== S[I] || 25 !== A[I],
+  B = Chunk511696 ? k || U || G : j;
 Chunk98405({
   global: true,
   constructor: true,

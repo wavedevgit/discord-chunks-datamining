@@ -87,12 +87,12 @@ function I(e) {
     x = (0, r.jsx)(v, {
       url: t
     }),
-    j = null;
-  return (1 === w && null != P ? j = (0, r.jsx)(o.Text, {
+    M = null;
+  return (1 === w && null != P ? M = (0, r.jsx)(o.Text, {
     variant: "text-xs/normal",
     color: "text-muted",
     children: P.label
-  }) : null != C && (j = (0, r.jsxs)(o.Text, {
+  }) : null != C && (M = (0, r.jsxs)(o.Text, {
     variant: "text-xs/normal",
     color: "text-muted",
     children: ["Server Config: ", N]
@@ -115,7 +115,7 @@ function I(e) {
               children: [(0, r.jsx)(o.Text, {
                 variant: "text-md/semibold",
                 children: T.title
-              }), j]
+              }), M]
             })]
           }), x]
         })

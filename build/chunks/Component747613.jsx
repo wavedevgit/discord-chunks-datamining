@@ -87,9 +87,9 @@ let P = 20,
   D = (0, Chunk313201.hQ)(),
   L = Chunk336317.Z.convert.fromCodePoint("1f44f"),
   x = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_EMOJI_CONTAINER_PADDING_VERTICAL),
-  j = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_DIVERSITY_EMOJI_SIZE);
+  M = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_DIVERSITY_EMOJI_SIZE);
 
-function M(e) {
+function j(e) {
   switch (d.Z.convert.toCodePoint(e)) {
     case "1f3fb":
       return v.intl.string(v.t.BVK5b2);
@@ -125,7 +125,7 @@ let k = e => {
       onClick: () => i(n),
       className: I.diversityEmojiItem,
       children: (0, r.jsx)(c.animated.div, {
-        "aria-label": M(n),
+        "aria-label": j(n),
         className: I.diversityEmojiItemImage,
         style: S({
           backgroundImage: 'url("'.concat(l, '")')
@@ -139,9 +139,9 @@ let k = e => {
       selectedSurrogate: n,
       onClick: a
     } = e, o = (0, m.Z)("diversity"), s = (0, _.q_F)({
-      height: (j + 2 * x) * (E.gw.length + 1),
+      height: (M + 2 * x) * (E.gw.length + 1),
       from: {
-        height: j
+        height: M
       },
       config: {
         duration: w

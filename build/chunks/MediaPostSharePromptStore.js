@@ -1,9 +1,9 @@
-/** Chunk was on 9665 **/
+/** Chunk was on 50118 **/
 /** chunk id: 48929, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
 }), require("./388685.js");
-var r, i, Chunk442837 = require("./442837.js"),
+var i, r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk430198 = require("./430198.js"),
   Chunk314897 = require("./314897.js"),
@@ -11,16 +11,16 @@ var r, i, Chunk442837 = require("./442837.js"),
   Chunk709054 = require("./709054.js"),
   Chunk522579 = require("./522579.js");
 let p = new Set;
-class h extends(r = Chunk442837.ZP.Store) {
+class h extends(i = Chunk442837.ZP.Store) {
   shouldDisplayPrompt(e) {
     return p.has(e)
   }
-}(i = "displayName") in h ? Object.defineProperty(h, i, {
+}(r = "displayName") in h ? Object.defineProperty(h, r, {
   value: "MediaPostSharePromptStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : h[i] = "MediaPostSharePromptStore";
+}) : h[r] = "MediaPostSharePromptStore";
 let f = new h(Chunk570140.Z, {
   CONNECTION_OPEN: function() {
     p = new Set
@@ -30,8 +30,8 @@ let f = new h(Chunk570140.Z, {
     if (e.isPushNotification) return;
     let n = e.message;
     if (s.default.getId() !== (null == (t = n.author) ? true : t.id) || !(0, d.z9)(n.id, n.channel_id)) return;
-    let r = c.Z.getChannel(n.channel_id);
-    null != r && null != r.parent_id && o.Z.isChannelGated(r.guild_id, r.parent_id) && p.add(u.default.castMessageIdAsChannelId(e.message.id))
+    let i = c.Z.getChannel(n.channel_id);
+    null != i && null != i.parent_id && o.Z.isChannelGated(i.guild_id, i.parent_id) && p.add(u.default.castMessageIdAsChannelId(e.message.id))
   },
   DISMISS_MEDIA_POST_SHARE_PROMPT: function(e) {
     let {

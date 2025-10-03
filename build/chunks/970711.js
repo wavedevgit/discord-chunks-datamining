@@ -28,7 +28,7 @@ require.d(exports, {
   KJ: () => ta,
   Mc: () => ed,
   OU: () => eK,
-  On: () => eM,
+  On: () => ej,
   Or: () => tg,
   R7: () => e$,
   RC: () => eo,
@@ -51,11 +51,11 @@ require.d(exports, {
   Zk: () => K,
   Zs: () => X,
   a9: () => eS,
-  aQ: () => ej,
+  aQ: () => eM,
   am: () => eW,
   d$: () => Q,
   dE: () => e7,
-  dJ: () => j,
+  dJ: () => M,
   dN: () => eb,
   eD: () => eR,
   eW: () => S,
@@ -290,7 +290,7 @@ let w = ["bytes"],
     register: () => {},
     unregister: () => {}
   } : new FinalizationRegistry(e => r.__wbg_blockeddomainsstore_free(e >>> 0, 1));
-class j {
+class M {
   __destroy_into_raw() {
     let e = this.__wbg_ptr;
     return this.__wbg_ptr = 0, x.unregister(this), module
@@ -311,14 +311,14 @@ class j {
     r.blockeddomainsstore_startFetchingBlockedDomains(t, n)
   }
 }
-let M = "undefined" == typeof FinalizationRegistry ? {
+let j = "undefined" == typeof FinalizationRegistry ? {
   register: () => {},
   unregister: () => {}
 } : new FinalizationRegistry(e => r.__wbg_experimentcacher_free(e >>> 0, 1));
 class k {
   __destroy_into_raw() {
     let e = this.__wbg_ptr;
-    return this.__wbg_ptr = 0, M.unregister(this), module
+    return this.__wbg_ptr = 0, j.unregister(this), module
   }
   free() {
     let e = this.__destroy_into_raw();
@@ -678,13 +678,13 @@ function ex(e) {
   return e.next
 }
 
-function ej() {
+function eM() {
   return u(function(e) {
     return e.next()
   }, arguments)
 }
 
-function eM(e, t, n) {
+function ej(e, t, n) {
   return e.open(l(t, n))
 }
 

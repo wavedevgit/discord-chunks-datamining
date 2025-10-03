@@ -148,11 +148,11 @@ function x(e) {
   })
 }
 
-function j(e) {
+function M(e) {
   P(T(e))
 }
 
-function M(e) {
+function j(e) {
   return null != e && e.length > 1
 }
 
@@ -162,7 +162,7 @@ function k(e) {
     {
       query: r
     } = e;
-  if (M(r)) {
+  if (j(r)) {
     let [e, n] = (0, p.C)(r);
     e.length > 0 && (t.usernames = {
       or_query: e
@@ -361,13 +361,13 @@ class K extends Chunk147913.Z {
     let {
       guildId: t
     } = e;
-    return j(t), H(t)
+    return M(t), H(t)
   }
   handleGuildDelete(e) {
     let {
       guild: t
     } = e;
-    return j(t.id)
+    return M(t.id)
   }
   handleSearchStateUpdate(e) {
     let {

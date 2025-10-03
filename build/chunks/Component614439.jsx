@@ -105,7 +105,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
     let z = (0, Chunk442837.e7)([Chunk999382.Z], () => null != Chunk852860 ? Chunk999382.Z.getErrors() : null);
     if (null == Chunk852860 || null == D) return null;
     let W = e => {
-        v.Z.updateGuild({
+        _.Z.updateGuild({
           discoverySplash: e
         })
       },
@@ -133,7 +133,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
             reasonsToJoin: D.reasonsToJoin,
             socialLinks: D.socialLinks,
             about: D.about
-          }), v.Z.saveGuild(d.id, {
+          }), _.Z.saveGuild(d.id, {
             discoverySplash: d.discoverySplash,
             description: d.description
           })
@@ -284,7 +284,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                           })]
                         }), (0, Chunk951288.jsx)(Chunk208567.Z, {
                           image: Chunk852860.discoverySplash,
-                          makeURL: e => x.ZP.getGuildDiscoverySplashURL({
+                          makeURL: e => b.ZP.getGuildDiscoverySplashURL({
                             id: d.id,
                             splash: e,
                             size: 512 * (0, p.x_)()
@@ -316,7 +316,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                       placeholder: Chunk388032.intl.string(Chunk388032.t.rFa9Ul),
                       onChange: e => {
                         var t;
-                        v.Z.updateGuild({
+                        _.Z.updateGuild({
                           description: null != (t = null == e ? true : e.replaceAll("\n", "")) ? t : ""
                         })
                       },

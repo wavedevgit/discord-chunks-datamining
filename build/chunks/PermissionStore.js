@@ -83,13 +83,13 @@ function x(e) {
   }
 }
 
-function j() {
+function M() {
   for (let e in C = {}, N = {}, R) R[module] += 1;
   P += 1
 }
 
-function M() {
-  j()
+function j() {
+  M()
 }
 
 function k() {
@@ -97,7 +97,7 @@ function k() {
 }
 
 function U() {
-  j()
+  M()
 }
 
 function G(e) {
@@ -106,7 +106,7 @@ function G(e) {
     user: n
   } = e;
   if (n.id !== (null == (t = I.default.getCurrentUser()) ? true : t.id)) returnfalse;
-  j()
+  M()
 }
 
 function B(e) {
@@ -329,11 +329,11 @@ function $() {
 }
 A(J, "displayName", "PermissionStore");
 let ee = new J(Chunk570140.Z, {
-  BACKGROUND_SYNC: M,
-  CONNECTION_OPEN: M,
-  OVERLAY_INITIALIZE: M,
-  CACHE_LOADED: M,
-  CACHE_LOADED_LAZY: M,
+  BACKGROUND_SYNC: j,
+  CONNECTION_OPEN: j,
+  OVERLAY_INITIALIZE: j,
+  CACHE_LOADED: j,
+  CACHE_LOADED_LAZY: j,
   CONNECTION_CLOSED: k,
   GUILD_CREATE: U,
   GUILD_UPDATE: U,

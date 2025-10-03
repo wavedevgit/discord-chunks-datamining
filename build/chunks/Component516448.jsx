@@ -2,7 +2,7 @@
 /** chunk id: 516448, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => v
+  Z: () => _
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,39 +22,39 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk605041 = require("./605041.js");
 
-function v(e) {
+function _(e) {
   let {
     allSubscriptionListings: t
   } = e, {
     editStateId: n,
-    guildId: v
-  } = (0, o.N)(), [_, O] = c.UE(n), [y, C] = c.R7(n), N = i.useMemo(() => t.filter(e => e.id !== n), [t, n]), {
+    guildId: _
+  } = (0, o.N)(), [v, C] = c.UE(n), [O, y] = c.R7(n), N = i.useMemo(() => t.filter(e => e.id !== n), [t, n]), {
     isFullServerGating: E
-  } = (0, d.Z)(v), I = (0, s.Dt)(), S = (0, a.mY)();
+  } = (0, d.Z)(_), I = (0, s.Dt)(), S = (0, a.mY)();
   return (0, r.jsxs)(u.Z, {
-    title: x.intl.string(x.t.YNw2Sk),
-    description: x.intl.string(x.t.zMW5r6),
+    title: b.intl.string(b.t.YNw2Sk),
+    description: b.intl.string(b.t.zMW5r6),
     children: [(0, r.jsxs)(l.hjN, {
-      title: x.intl.string(x.t.DFlDaG),
+      title: b.intl.string(b.t.DFlDaG),
       disabled: S,
       children: [(0, r.jsx)(l.R94, {
         type: l.R94.Types.DESCRIPTION,
         className: j.formDescription,
         disabled: S,
-        children: x.intl.string(x.t.kHalVF)
+        children: b.intl.string(b.t.kHalVF)
       }), (0, r.jsx)(m.Z, {
-        channelBenefits: _,
-        intangibleBenefits: y,
+        channelBenefits: v,
+        intangibleBenefits: O,
         subscriptionListings: N,
         onImport: function(e, t) {
-          O(t => t.concat(e)), C(e => e.concat(t))
+          C(t => t.concat(e)), y(e => e.concat(t))
         }
       }), (0, r.jsx)(l.LZC, {
         size: 8
       }), (0, r.jsx)(m.w, {
-        guildId: v,
+        guildId: _,
         onImport: function(e) {
-          O(t => {
+          C(t => {
             let n = new Set(t.map(e => {
               let {
                 ref_id: t
@@ -63,7 +63,7 @@ function v(e) {
             }));
             return [...t, ...e.filter(e => !n.has(e)).map(e => ({
               ref_id: e,
-              ref_type: b.Qs.CHANNEL
+              ref_type: x.Qs.CHANNEL
             }))]
           })
         },
@@ -72,14 +72,14 @@ function v(e) {
     }), (0, r.jsx)(l.LZC, {
       size: 24
     }), (0, r.jsxs)(l.hjN, {
-      title: x.intl.string(x.t.S2kKzM),
+      title: b.intl.string(b.t.S2kKzM),
       titleId: I,
       disabled: S,
       children: [(0, r.jsx)(l.R94, {
         type: l.R94.Types.DESCRIPTION,
         className: j.formDescription,
         disabled: S,
-        children: x.intl.string(x.t["5a4Axc"])
+        children: b.intl.string(b.t["5a4Axc"])
       }), E && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(g.Z, {
           "aria-labelledby": I,
@@ -91,13 +91,13 @@ function v(e) {
     }), (0, r.jsx)(l.LZC, {
       size: 24
     }), (0, r.jsxs)(l.hjN, {
-      title: x.intl.string(x.t.RdwKw8),
+      title: b.intl.string(b.t.RdwKw8),
       disabled: S,
       children: [(0, r.jsx)(l.R94, {
         type: l.R94.Types.DESCRIPTION,
         className: j.formDescription,
         disabled: S,
-        children: x.intl.string(x.t.zAww7e)
+        children: b.intl.string(b.t.zAww7e)
       }), (0, r.jsx)(h.Z, {})]
     }), (0, r.jsx)(l.LZC, {
       size: 24

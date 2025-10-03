@@ -116,11 +116,11 @@ let D = new Chunk759174.h(w, e => "".concat(e.joinRequestId)),
   L = new Chunk759174.h(w, e => "".concat(e.joinRequestId)),
   x = new Chunk759174.h(w, e => "".concat(e.actionedAt));
 
-function j(e) {
+function M(e) {
   return D.get(e)
 }
 
-function M(e) {
+function j(e) {
   delete K[e], D.delete(e), L.delete(e), x.delete(e)
 }
 
@@ -135,7 +135,7 @@ function U(e) {
     request: r
   } = e, i = (0, _.j)(r), a = c.default.getCurrentUser();
   if (null == a || i.userId === a.id) returnfalse;
-  let o = null == (t = j(i.joinRequestId)) ? true : t.applicationStatus;
+  let o = null == (t = M(i.joinRequestId)) ? true : t.applicationStatus;
   return I(n, i.applicationStatus, o), k(i), true
 }
 
@@ -143,8 +143,8 @@ function G(e) {
   let {
     id: t,
     guildId: n
-  } = e, r = j(t);
-  null != r && (I(n, E, r.applicationStatus), M(t))
+  } = e, r = M(t);
+  null != r && (I(n, E, r.applicationStatus), j(t))
 }
 
 function B(e) {
@@ -221,7 +221,7 @@ class q extends(r = Chunk442837.ZP.Store) {
   }
   getSelectedGuildJoinRequest(e) {
     let t = Y[e];
-    return null != t ? j(t.joinRequestId) : null
+    return null != t ? M(t.joinRequestId) : null
   }
 }
 p(q, "displayName", "GuildJoinRequestStoreV2");

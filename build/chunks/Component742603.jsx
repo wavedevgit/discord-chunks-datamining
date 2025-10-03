@@ -1,13 +1,14 @@
-/** Chunk was on 9665 **/
+/** Chunk was on 50118 **/
 /** chunk id: 742603, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => G
+  Z: () => F
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
+  Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk99690 = require("./99690.jsx"),
   Chunk657305 = require("./657305.js"),
@@ -41,68 +42,36 @@ var Chunk120356 = require("./120356.js"),
   Chunk39219 = require("./39219.js"),
   Chunk430864 = require("./430864.js");
 
-function U(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      }) : e[t] = r
-    })
-  }
-  return e
-}
-
-function B(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
-    }
-    return n
-  })(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-
-function H(e) {
+function B(e) {
   let {
     focusedParticipant: t,
     channel: n
-  } = e, i = (0, v.bp)(), l = (0, a.e7)([P.Z], () => P.Z.getLayout(n.id, i));
-  return (0, r.jsx)(S.Z, {
-    children: (0, r.jsx)(T.Z, {
+  } = e, r = (0, x.bp)(), l = (0, a.e7)([I.Z], () => I.Z.getLayout(n.id, r));
+  return (0, i.jsx)(P.Z, {
+    children: (0, i.jsx)(A.Z, {
       participant: t,
       maxVisibleUsers: 5,
       guildId: n.getGuildId(),
       channelId: n.id,
-      disableInteraction: i === M.IlC.POPOUT || l === M.AEg.FULL_SCREEN
+      disableInteraction: r === R.IlC.POPOUT || l === R.AEg.FULL_SCREEN
     })
   })
 }
 
-function V(e) {
+function H(e) {
   let {
     user: t,
     channel: n,
-    stream: i,
+    stream: r,
     color: l
-  } = e, a = (0, E.Z)(n, t, i);
-  return null == t || null == i ? null : (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(s.Z, {
+  } = e, a = (0, S.Z)(n, t, r);
+  return null == t || null == r ? null : (0, i.jsxs)(i.Fragment, {
+    children: [(0, i.jsx)(c.Z, {
       className: D.avatar,
-      size: o.EFr.SIZE_24,
+      size: s.EFr.SIZE_24,
       user: t,
       animate: false
-    }), (0, r.jsx)(o.Text, {
+    }), (0, i.jsx)(s.Text, {
       className: D.playingText,
       variant: "text-md/medium",
       color: l,
@@ -111,163 +80,179 @@ function V(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   let t, {
       focusedApplication: n,
-      focusedParticipant: i,
+      focusedParticipant: r,
       channel: l
     } = e,
-    a = (0, Z.Z)(l, true),
-    s = (0, m.qY)(l.id),
-    u = null != s ? (0, g.DK)(s) : null,
-    d = null != s;
-  if ((null == i ? true : i.type) === w.fO.ACTIVITY) null != n && (t = (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(y.ZP.Divider, {
+    a = (0, N.Z)(l, true),
+    o = (0, g.qY)(l.id),
+    c = null != o ? (0, b.DK)(o) : null,
+    d = null != o;
+  if ((null == r ? true : r.type) === M.fO.ACTIVITY) null != n && (t = (0, i.jsxs)(i.Fragment, {
+    children: [(0, i.jsx)(y.ZP.Divider, {
       className: D.divider
-    }), (0, r.jsx)(f.Z, {
+    }), (0, i.jsx)(m.Z, {
       game: n,
       className: D.activityIcon
-    }), (0, r.jsx)(o.Text, {
+    }), (0, i.jsx)(s.Text, {
       className: D.playingText,
       variant: "text-md/normal",
       color: "none",
-      children: (0, c.Z)(n.name)
-    }), a && (0, r.jsx)(H, {
+      children: (0, u.Z)(n.name)
+    }), a && (0, i.jsx)(B, {
       channel: l,
-      focusedParticipant: i
+      focusedParticipant: r
     })]
   }));
-  else if ((null == i ? true : i.type) === w.fO.STREAM) {
-    let e = i.user,
-      n = i.stream;
-    t = (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(y.ZP.Divider, {
+  else if ((null == r ? true : r.type) === M.fO.STREAM) {
+    let e = r.user,
+      n = r.stream;
+    t = (0, i.jsxs)(i.Fragment, {
+      children: [(0, i.jsx)(y.ZP.Divider, {
         className: D.divider
-      }), (0, r.jsx)(V, {
+      }), (0, i.jsx)(H, {
         user: e,
         channel: l,
         stream: n,
         color: a ? "header-primary" : "none"
-      }), a && (0, r.jsx)(H, {
+      }), a && (0, i.jsx)(B, {
         channel: l,
-        focusedParticipant: i
+        focusedParticipant: r
       })]
     })
-  } else d && (t = (0, r.jsx)(b.Z, {
-    guildEvent: s,
-    recurrenceId: u
+  } else d && (t = (0, i.jsx)(C.Z, {
+    guildEvent: o,
+    recurrenceId: c
   }));
-  return (0, r.jsx)("div", {
+  return (0, i.jsx)("div", {
     className: D.container,
     children: t
   })
 }
 
-function G(e) {
+function F(e) {
   let {
     channel: t,
-    guild: i,
-    appContext: s,
-    inCall: c,
-    isChatOpen: f,
-    exitFullScreen: m
+    guild: r,
+    appContext: c,
+    inCall: u,
+    isChatOpen: m,
+    exitFullScreen: g
   } = e, {
-    focusedParticipant: g
-  } = (0, a.cj)([P.Z], () => ({
-    focusedParticipant: P.Z.getSelectedParticipant(t.id),
-    participantsOpen: P.Z.getParticipantsOpen(t.id)
-  }), [t.id]), b = (0, p.ZP)(t), v = (0, h.KS)(t), [E] = (0, u.Z)((null == g ? true : g.type) === w.fO.ACTIVITY ? [g.applicationId] : []), S = k.intl.string(k.t.BVZqJi);
-  t.isDM() ? S = k.intl.string(k.t.jN2DfX) : t.isGroupDM() && (S = k.intl.string(k.t["e5y+go"]));
-  let Z = (0, a.e7)([d.Z], () => d.Z.getChannelStatus(t)),
-    T = t.isGuildVoice() && c && null != Z && Z.length > 0,
-    M = (0, I.ZP)(t),
-    H = T ? (0, r.jsx)(o.ua7, {
-      text: k.intl.string(k.t.Mgpxi4),
+    focusedParticipant: b
+  } = (0, a.cj)([I.Z], () => ({
+    focusedParticipant: I.Z.getSelectedParticipant(t.id),
+    participantsOpen: I.Z.getParticipantsOpen(t.id)
+  }), [t.id]), C = (0, h.ZP)(t), x = (0, f.KS)(t), [S] = (0, d.Z)((null == b ? true : b.type) === M.fO.ACTIVITY ? [b.applicationId] : []), P = L.intl.string(L.t.BVZqJi);
+  t.isDM() ? P = L.intl.string(L.t.jN2DfX) : t.isGroupDM() && (P = L.intl.string(L.t["e5y+go"]));
+  let N = (0, a.e7)([p.Z], () => p.Z.getChannelStatus(t)),
+    A = t.isGuildVoice() && u && null != N && N.length > 0,
+    R = (0, Z.ZP)(t),
+    B = A ? (0, i.jsx)(o.u, {
+      asContainer: true,
+      text: L.intl.string(L.t.Mgpxi4),
       delay: 500,
       position: "bottom",
-      shouldShow: M,
-      children: e => (0, r.jsxs)(o.P3F, B(U({}, e), {
+      shouldShow: R,
+      children: (0, i.jsxs)(s.P3F, {
         className: l()(D.channelStatusClickable, {
-          [D.hoverable]: M
+          [D.hoverable]: R
         }),
-        onClick: M ? V : true,
-        children: [(0, r.jsx)(o.Text, {
+        onClick: R ? function() {
+          (0, s.ZDy)(async () => {
+            let {
+              default: e
+            } = await Promise.resolve().then(n.bind(n, 339340));
+            return n => (0, i.jsx)(e, function(e) {
+              for (var t = 1; t < arguments.length; t++) {
+                var n = null != arguments[t] ? arguments[t] : {},
+                  i = Object.keys(n);
+                "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                  return Object.getOwnPropertyDescriptor(n, e).enumerable
+                }))), i.forEach(function(t) {
+                  var i;
+                  i = n[t], t in e ? Object.defineProperty(e, t, {
+                    value: i,
+                    enumerable: true,
+                    configurable: true,
+                    writable: true
+                  }) : e[t] = i
+                })
+              }
+              return e
+            }({
+              channel: t
+            }, n))
+          }, {
+            modalKey: w.a
+          })
+        } : true,
+        children: [(0, i.jsx)(s.Text, {
           variant: "text-xs/normal",
-          className: l()(D.channelStatus, L.markup, {
-            [D.hoverable]: M
+          className: l()(D.channelStatus, U.markup, {
+            [D.hoverable]: R
           }),
-          children: x.Z.parseVoiceChannelStatus(Z, true, {
+          children: O.Z.parseVoiceChannelStatus(N, true, {
             channelId: t.id
           })
-        }), M && (0, r.jsx)(o.vdY, {
+        }), R && (0, i.jsx)(s.vdY, {
           size: "custom",
           color: "currentColor",
           className: l()(D.pencilIcon, D.hoverable),
           width: 14,
           height: 14
         })]
-      }))
-    }) : null;
-
-  function V() {
-    (0, o.ZDy)(async () => {
-      let {
-        default: e
-      } = await Promise.resolve().then(n.bind(n, 339340));
-      return n => (0, r.jsx)(e, U({
-        channel: t
-      }, n))
-    }, {
-      modalKey: A.a
-    })
-  }
-  let G = (0, j.m$)({
-    channelId: t.id
-  });
-  return (0, r.jsxs)("div", {
+      })
+    }) : null,
+    H = (0, E.m$)({
+      channelId: t.id
+    });
+  return (0, i.jsxs)("div", {
     className: D.subtitleContainer,
-    children: [(0, r.jsx)(o.f6W, {
-      theme: R.BR.DARK,
-      children: e => (0, r.jsxs)(y.ZP, {
-        onDoubleClick: C.O,
+    children: [(0, i.jsx)(s.f6W, {
+      theme: k.BR.DARK,
+      children: e => (0, i.jsxs)(y.ZP, {
+        onDoubleClick: _.O,
         transparent: true,
         className: l()(e, D.headerBar),
         innerClassName: D.headerBarChildren,
         toolbarClassName: D.toolbar,
-        childrenBottom: H,
-        toolbar: (0, r.jsx)(N.Z, {
+        childrenBottom: B,
+        toolbar: (0, i.jsx)(T.Z, {
           channel: t,
-          appContext: s,
-          inCall: c,
-          isChatOpen: f,
-          exitFullScreen: m
+          appContext: c,
+          inCall: u,
+          isChatOpen: m,
+          exitFullScreen: g
         }),
-        children: [(0, r.jsx)(y.ZP.Title, {
+        children: [(0, i.jsx)(y.ZP.Title, {
           wrapperClassName: D.title,
-          children: (0, r.jsxs)(r.Fragment, {
-            children: [null != v ? (0, r.jsx)(y.ZP.ChannelIcon, {
-              icon: v,
-              "aria-label": S
-            }) : null, b, G && (0, r.jsx)(o.ua7, {
-              text: k.intl.string(k.t.QyZ4TU),
-              children: e => (0, r.jsx)(o.tQf, B(U({}, e), {
+          children: (0, i.jsxs)(i.Fragment, {
+            children: [null != x ? (0, i.jsx)(y.ZP.ChannelIcon, {
+              icon: x,
+              "aria-label": P
+            }) : null, C, H && (0, i.jsx)(o.u, {
+              text: L.intl.string(L.t.QyZ4TU),
+              children: (0, i.jsx)(s.tQf, {
                 size: "xs",
-                "aria-label": k.intl.string(k.t.VHXh8f),
-                color: o.TVs.colors.INTERACTIVE_NORMAL,
+                "aria-label": L.intl.string(L.t.VHXh8f),
+                color: s.TVs.colors.INTERACTIVE_NORMAL,
                 className: D.secureFramesIcon
-              }))
+              })
             })]
           })
-        }), (0, r.jsx)(_.TS, {
+        }), (0, i.jsx)(v.TS, {
           channel: t,
-          guild: i
-        }), (0, r.jsx)(F, {
-          focusedApplication: E,
-          focusedParticipant: g,
+          guild: r
+        }), (0, i.jsx)(V, {
+          focusedApplication: S,
+          focusedParticipant: b,
           channel: t
         })]
       })
-    }), (0, r.jsx)(O.Z, {
+    }), (0, i.jsx)(j.Z, {
       channelId: t.id
     })]
   })

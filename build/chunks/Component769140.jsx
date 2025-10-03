@@ -92,7 +92,7 @@ function Z(e) {
         children: [(0, r.jsx)("img", {
           alt: "",
           src: H === x.BRd.LIGHT ? B : G
-        }), V !== j.l.MODAL && V !== j.l.MODAL_V2 && (0, r.jsxs)(r.Fragment, {
+        }), V !== M.l.MODAL && V !== M.l.MODAL_V2 && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(s.Text, {
             className: U.overlayText,
             variant: "text-sm/medium",
@@ -100,7 +100,7 @@ function Z(e) {
             children: (0, b.P9)(et)
           }), (0, r.jsx)(s.Text, {
             variant: "text-sm/medium",
-            children: er ? M.intl.string(M.t.uQZTBQ) : M.intl.string(M.t.pgUTZG)
+            children: er ? j.intl.string(j.t.uQZTBQ) : j.intl.string(j.t.pgUTZG)
           })]
         })]
       }) : (0, r.jsxs)(s.P3F, {
@@ -112,7 +112,7 @@ function Z(e) {
           alt: "",
           src: ea,
           className: U.image
-        }), V !== j.l.MODAL && V !== j.l.MODAL_V2 && (0, r.jsxs)(r.Fragment, {
+        }), V !== M.l.MODAL && V !== M.l.MODAL_V2 && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(s.Text, {
             className: U.overlayText,
             variant: "text-sm/medium",
@@ -126,7 +126,7 @@ function Z(e) {
         })]
       })
     },
-    es = () => V !== j.l.MODAL && V !== j.l.MODAL_V2 ? null : (0, r.jsxs)("div", {
+    es = () => V !== M.l.MODAL && V !== M.l.MODAL_V2 ? null : (0, r.jsxs)("div", {
       className: k.details,
       children: [(0, r.jsx)(P.Z, {
         channel: W,
@@ -147,10 +147,10 @@ function Z(e) {
         onUserClick: e => e.stopPropagation(),
         disableUserPopout: e => e === t.id,
         overflowCountColor: "text-muted",
-        "aria-label": M.intl.string(M.t.jNqDh4)
-      }), V === j.l.MODAL_V2 && ec()]
+        "aria-label": j.intl.string(j.t.jNqDh4)
+      }), V === M.l.MODAL_V2 && ec()]
     }),
-    el = () => V === j.l.MODAL || V === j.l.MODAL_V2 ? null : (0, r.jsx)(w.Z, {
+    el = () => V === M.l.MODAL || V === M.l.MODAL_V2 ? null : (0, r.jsx)(w.Z, {
       user: t,
       guild: Y,
       channel: W,
@@ -165,9 +165,9 @@ function Z(e) {
         onClose: F
       })
     }),
-    eu = null != z ? M.intl.formatToPlainString(M.t["4CQq9f"], {
+    eu = null != z ? j.intl.formatToPlainString(j.t["4CQq9f"], {
       name: z.name
-    }) : M.intl.string(M.t["Jpkr/v"]);
+    }) : j.intl.string(j.t["Jpkr/v"]);
   return (0, r.jsx)(h.Gt, {
     value: q,
     children: (0, r.jsxs)(N.Z, {
@@ -190,9 +190,9 @@ function Z(e) {
         className: k.body,
         children: [(0, r.jsxs)("div", {
           className: k.content,
-          children: [eo(), es(), V === j.l.MODAL && ec()]
+          children: [eo(), es(), V === M.l.MODAL && ec()]
         }), el()]
-      }), V !== j.l.MODAL && V !== j.l.MODAL_V2 && ec()]
+      }), V !== M.l.MODAL && V !== M.l.MODAL_V2 && ec()]
     })
   })
 }

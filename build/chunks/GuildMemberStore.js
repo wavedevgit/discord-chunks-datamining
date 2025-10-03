@@ -72,8 +72,8 @@ let P = new Chunk710845.Z("GuildMemberStore"),
   D = {},
   L = {},
   x = {},
-  j = {},
-  M = false,
+  M = {},
+  j = false,
   k = 0,
   U = 0,
   G = {},
@@ -86,15 +86,15 @@ let P = new Chunk710845.Z("GuildMemberStore"),
 function F(e, t) {
   if (null == t.communicationDisabledUntil || !(0, p.b)(t)) return V(e, t.userId);
   let n = W(e, t.userId);
-  j[n] !== t.communicationDisabledUntil && (0, p.b)(t) && (j[n] = t.communicationDisabledUntil, H(n))
+  M[n] !== t.communicationDisabledUntil && (0, p.b)(t) && (M[n] = t.communicationDisabledUntil, H(n))
 }
 
 function V(e, t) {
   if (null != t) {
     let n = W(e, t);
-    null != j[n] && H(n), Y(W(e, t))
+    null != M[n] && H(n), Y(W(e, t))
   } else
-    for (let t in j) {
+    for (let t in M) {
       let n = t;
       z(n) === e && (H(t), Y(n))
     }
@@ -105,7 +105,7 @@ function H(e) {
 }
 
 function Y(e) {
-  K(e) === O.default.getId() && (0, h.l)(z(e)), delete j[e]
+  K(e) === O.default.getId() && (0, h.l)(z(e)), delete M[e]
 }
 
 function W(e, t) {
@@ -207,7 +207,7 @@ function X(e) {
 }
 
 function Q(e) {
-  M ? M = false : (w = {}, D = {}), j = {}, $(e)
+  j ? j = false : (w = {}, D = {}), M = {}, $(e)
 }
 
 function J(e) {
@@ -241,7 +241,7 @@ function et(e) {
     guildMembers: t,
     guilds: n
   } = e;
-  M = true, w = C({}, t), D = {}, x = {}, er(n)
+  j = true, w = C({}, t), D = {}, x = {}, er(n)
 }
 
 function en(e) {
@@ -266,9 +266,9 @@ function er(e) {
 function ei(e) {
   var t, n;
   if (null == e.guildId || null == T.Z.getGuild(e.guildId)) returnfalse;
-  M = true, w[e.guildId] = null != (t = w[e.guildId]) ? t : {};
+  j = true, w[e.guildId] = null != (t = w[e.guildId]) ? t : {};
   let r = false;
-  for (let t of (M = true, w[e.guildId] = null != (n = w[e.guildId]) ? n : {}, e.members)) null == w[e.guildId][t.userId] && (r = true, w[e.guildId][t.userId] = t);
+  for (let t of (j = true, w[e.guildId] = null != (n = w[e.guildId]) ? n : {}, e.members)) null == w[e.guildId][t.userId] && (r = true, w[e.guildId][t.userId] = t);
   return r
 }
 
@@ -698,7 +698,7 @@ function ex(e) {
   })
 }
 
-function ej(e) {
+function eM(e) {
   let {
     data: t
   } = e, n = [];
@@ -716,7 +716,7 @@ function ej(e) {
   })
 }
 
-function eM(e) {
+function ej(e) {
   let {
     location: t,
     participants: n
@@ -818,7 +818,7 @@ class eU extends(r = Chunk442837.ZP.Store) {
     return null != n ? n.nick : null
   }
   getCommunicationDisabledUserMap() {
-    return j
+    return M
   }
   getCommunicationDisabledVersion() {
     return k
@@ -872,9 +872,9 @@ let eG = new eU(Chunk570140.Z, {
   LOAD_MESSAGES_AROUND_SUCCESS: eL,
   LOAD_RECENT_MENTIONS_SUCCESS: eL,
   LOAD_PINNED_MESSAGES_SUCCESS: ex,
-  SEARCH_MESSAGES_SUCCESS: ej,
-  MOD_VIEW_SEARCH_MESSAGES_SUCCESS: ej,
+  SEARCH_MESSAGES_SUCCESS: eM,
+  MOD_VIEW_SEARCH_MESSAGES_SUCCESS: eM,
   MEMBER_SAFETY_GUILD_MEMBER_SEARCH_SUCCESS: eg,
-  EMBEDDED_ACTIVITY_UPDATE_V2: eM,
+  EMBEDDED_ACTIVITY_UPDATE_V2: ej,
   INTERACTION_MODAL_CREATE: ek
 })

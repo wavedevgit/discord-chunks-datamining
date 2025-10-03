@@ -66,11 +66,11 @@ function x(e) {
   p = false, h = false, m = t
 }
 
-function j(e) {
+function M(e) {
   f[e.classificationId] = l.OY.PENDING, p = true
 }
 
-function M(e) {
+function j(e) {
   let {
     classification: t,
     accountStanding: n,
@@ -268,8 +268,8 @@ let en = new et(Chunk570140.Z, {
   SAFETY_HUB_FETCH_START: D,
   SAFETY_HUB_FETCH_SUCCESS: L,
   SAFETY_HUB_FETCH_FAILURE: x,
-  SAFETY_HUB_FETCH_CLASSIFICATION_START: j,
-  SAFETY_HUB_FETCH_CLASSIFICATION_SUCCESS: M,
+  SAFETY_HUB_FETCH_CLASSIFICATION_START: M,
+  SAFETY_HUB_FETCH_CLASSIFICATION_SUCCESS: j,
   SAFETY_HUB_FETCH_CLASSIFICATION_FAILURE: k,
   SAFETY_HUB_APPEAL_OPEN: U,
   SAFETY_HUB_APPEAL_CLOSE: G,

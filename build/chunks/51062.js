@@ -64,7 +64,7 @@ function v(e, t, n) {
   let {
     channel: w,
     type: D
-  } = e, [L, x] = r.useState(() => (0, p.PA)()), j = (0, i.Z)(), M = (0, a.e7)([u.ZP, _.default], () => {
+  } = e, [L, x] = r.useState(() => (0, p.PA)()), M = (0, i.Z)(), j = (0, a.e7)([u.ZP, _.default], () => {
     var e, t;
     let n = _.default.getCurrentUser();
     return null != (t = null != w.guild_id && null != n ? null == (e = u.ZP.getMember(w.guild_id, n.id)) ? true : e.isPending : null) && t
@@ -72,9 +72,9 @@ function v(e, t, n) {
     canMentionEveryone: k,
     hidePersonalInformation: U
   } = (0, a.cj)([d.Z, f.Z], () => ({
-    canMentionEveryone: w.isPrivate() || M || D === l.Ie.RULES_INPUT || d.Z.can(m.Plq.MENTION_EVERYONE, w),
+    canMentionEveryone: w.isPrivate() || j || D === l.Ie.RULES_INPUT || d.Z.can(m.Plq.MENTION_EVERYONE, w),
     hidePersonalInformation: f.Z.hidePersonalInformation
-  }), [w, D, M]), {
+  }), [w, D, j]), {
     activeCommand: G,
     activeCommandOption: B
   } = (0, a.cj)([s.Z], () => ({
@@ -109,10 +109,10 @@ function v(e, t, n) {
     W.updateProps(Y)
   }), r.useImperativeHandle(t, () => W, [W]), r.useEffect(() => {
     let e = e => x(e);
-    return W.on("change", e), W.on("update", j), () => {
-      W.off("change", e), W.off("update", j)
+    return W.on("change", e), W.on("update", M), () => {
+      W.off("change", e), W.off("update", M)
     }
-  }, [j, W]), r.useEffect(() => {
+  }, [M, W]), r.useEffect(() => {
     var e;
     let t = null == (e = L.query) ? true : e.typeInfo.stores;
     if (null != t) {

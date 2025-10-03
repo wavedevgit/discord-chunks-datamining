@@ -22,14 +22,14 @@ var Chunk951288 = require("./951288.js"),
 function m(e, t, n, r) {
   let i = "compact" === r ? 8 : p.$k;
   if (e === u.wZ) return i;
-  if (e === u.wd) return t.features.has(f.oNc.HUB) ? 0 : i;
+  if (e === u.wd) return t.features.has(h.oNc.HUB) ? 0 : i;
   if (e === n.voiceChannelsSectionNumber) {
     var l;
     let t = n.getCategoryFromSection(e);
     if (null == t || t.isEmpty()) return 0;
     if (t.isCollapsed) return p.Pw + 9;
     let r = null == (l = n.getChannelFromSectionRow(e, 0)) ? true : l.channel;
-    return null == r || r.record.type === f.d4z.GUILD_CATEGORY ? 9 : 25
+    return null == r || r.record.type === h.d4z.GUILD_CATEGORY ? 9 : 25
   }
   return "compact" === r ? 32 : p.Pw
 }
@@ -60,9 +60,9 @@ let _ = Chunk647438.memo(function(e) {
     guildChannels: m,
     guildChannelsVersion: b,
     selectedChannelId: _,
-    disableManageChannels: O
+    disableManageChannels: y
   } = e, {
-    isFavoritesPerk: y
+    isFavoritesPerk: O
   } = (0, a.z)("ChannelListSection"), v = i.useCallback(() => {
     let e = m.getCategoryFromSection(m.recentsSectionNumber);
     if (null == e) return;
@@ -80,7 +80,7 @@ let _ = Chunk647438.memo(function(e) {
         }
       });
     case u.wd:
-      if (n.features.has(f.oNc.HUB)) return null;
+      if (n.features.has(h.oNc.HUB)) return null;
       return (0, r.jsx)("div", {
         style: {
           height: x
@@ -88,11 +88,11 @@ let _ = Chunk647438.memo(function(e) {
       });
     case u.p2:
       return (0, r.jsx)(d.P, {
-        name: y ? h.intl.string(h.t.mlPMCw) : h.intl.string(h.t.k8fFjo)
+        name: O ? f.intl.string(f.t.mlPMCw) : f.intl.string(f.t.k8fFjo)
       });
     case m.recentsSectionNumber:
       return (0, r.jsx)(d.P, {
-        name: h.intl.string(h.t.gKcrqK),
+        name: f.intl.string(f.t.gKcrqK),
         onDismiss: v
       });
     case m.voiceChannelsSectionNumber: {
@@ -115,7 +115,7 @@ let _ = Chunk647438.memo(function(e) {
       return (0, r.jsx)(d.ZP, {
         channel: e.record,
         position: e.position,
-        disableManageChannels: O,
+        disableManageChannels: y,
         children: (0, r.jsx)(c.Z, {
           inlineSpecs: p.MF,
           arrowAlignment: o.cy.TOP,
@@ -130,7 +130,7 @@ let _ = Chunk647438.memo(function(e) {
       return (0, r.jsx)(d.ZP, {
         channel: e.record,
         position: e.position,
-        disableManageChannels: O
+        disableManageChannels: y
       })
     }
   }

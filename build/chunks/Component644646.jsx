@@ -58,8 +58,8 @@ let S = function(e) {
     D = (0, _.O5)(),
     L = (0, l.e7)([f.Z], () => f.Z.isFocused()),
     x = (0, l.e7)([u.Z], () => u.Z.useReducedMotion),
-    j = i.useMemo(() => (0, m.fh)(a, m.eC.REWARD), [a]),
-    M = i.useMemo(() => (0, m.fh)(a, m.eC.REWARD_IMAGE), [a]),
+    M = i.useMemo(() => (0, m.fh)(a, m.eC.REWARD), [a]),
+    j = i.useMemo(() => (0, m.fh)(a, m.eC.REWARD_IMAGE), [a]),
     k = i.useCallback(t => {
       var n;
       (0, s.kK)(t.currentTarget, HTMLElement) && t.currentTarget.blur(), D({
@@ -78,13 +78,13 @@ let S = function(e) {
     B = (0, p.Bg)(a.config);
   return i.useEffect(() => {
     if (null != U.current) {
-      if (!j.isAnimated || x) {
+      if (!M.isAnimated || x) {
         U.current.currentTime = 0, U.current.pause();
         return
       }
       h && !G.current ? U.current.play() : !h && G.current && (U.current.currentTime = 0, U.current.pause()), G.current = h
     }
-  }, [h, j, x]), t = B ? (0, r.jsx)(O.Fl, {
+  }, [h, M, x]), t = B ? (0, r.jsx)(O.Fl, {
     id: "QuestRewardTile_rewardTileNitro",
     children: e => (0, r.jsx)(b.Z, {
       ref: e,
@@ -92,19 +92,19 @@ let S = function(e) {
     })
   }) : N ? (0, r.jsx)(E.K, {
     showVideo: h,
-    imageAsset: null != M ? {
-      asset: M,
+    imageAsset: null != j ? {
+      asset: j,
       assetId: "QuestRewardTile_rewardTileStatic",
       className: I.imageVideoOverlay,
       alt: v.intl.string(v.t.UMclVF)
     } : true,
     videoAsset: {
-      asset: j,
+      asset: M,
       assetId: "QuestRewardTile_rewardTileAnimated",
       className: o()(I.questRewardTileAsset, I.questRewardTileAssetLazyVideo)
     },
     onLoadComplete: e.onLoadComplete
-  }) : j.isAnimated ? (0, r.jsx)(O.Fl, {
+  }) : M.isAnimated ? (0, r.jsx)(O.Fl, {
     id: "QuestRewardTile_rewardTileAnimated",
     children: t => {
       var n;
@@ -120,8 +120,8 @@ let S = function(e) {
         controls: false,
         onProgress: e.onLoadComplete,
         children: (0, r.jsx)("source", {
-          src: j.url,
-          type: null != (n = j.mimetype) ? n : true
+          src: M.url,
+          type: null != (n = M.mimetype) ? n : true
         })
       })
     }
@@ -131,7 +131,7 @@ let S = function(e) {
       ref: t,
       alt: g.r.build(a.config).defaultRewardName,
       className: o()(I.questRewardTileAsset, I.questRewardTileAssetStatic),
-      src: j.url,
+      src: M.url,
       onLoad: e.onLoadComplete
     })
   }), null == S ? (0, r.jsx)("div", {

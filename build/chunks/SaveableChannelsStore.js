@@ -2,7 +2,7 @@
 /** chunk id: 40455, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => M
+  ZP: () => j
 }), require("./388685.js");
 var Chunk592125 = require("./592125.js"),
   Chunk650774 = require("./650774.js"),
@@ -106,7 +106,7 @@ class S extends Chunk750041.Z {
   }
   constructor() {
     super({
-      CACHE_LOADED_LAZY_NO_CACHE: j,
+      CACHE_LOADED_LAZY_NO_CACHE: M,
       CACHE_LOADED_LAZY: () => this.loadCache(),
       CHANNEL_DELETE: P,
       CHANNEL_UPDATES: R,
@@ -159,8 +159,8 @@ function x(e) {
   v.clear(), I.clear(), T = false
 }
 
-function j(e) {
+function M(e) {
   T = true
 }
 p(S, "displayName", "SaveableChannelsStore"), p(S, "LATEST_SNAPSHOT_VERSION", 1);
-let M = new S
+let j = new S

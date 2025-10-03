@@ -151,8 +151,8 @@ function v(e) {
     onMouseLeave: D,
     onKeyDown: L,
     children: x,
-    rel: j,
-    buttonRef: M,
+    rel: M,
+    buttonRef: j,
     focusProps: k,
     "aria-label": U,
     submittingStartedLabel: G,
@@ -171,7 +171,7 @@ function v(e) {
     children: (0, r.jsxs)("button", p(f({}, F ? null : Z), {
       "aria-label": U,
       "aria-busy": !!m || true,
-      ref: M,
+      ref: j,
       onClick: F ? e => e.preventDefault() : C,
       onDoubleClick: F ? e => e.preventDefault() : N,
       onMouseUp: _ ? true : P,
@@ -182,7 +182,7 @@ function v(e) {
       type: v,
       disabled: _,
       style: I,
-      rel: j,
+      rel: M,
       className: o()(S, O({
         look: t,
         color: n,

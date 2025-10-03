@@ -28,7 +28,7 @@
       a = null,
       l = false,
       c = false;
-    return "string" == typeof e && (e = K(e)), "object" == typeof e && (W(e.r) && W(e.g) && W(e.b) ? (t = d(e.r, e.g, e.b), l = true, c = "%" === String(e.r).substr(false) ? "prgb" : "rgb") : W(e.h) && W(e.s) && W(e.v) ? (r = F(e.s), i = F(e.v), t = h(e.h, r, i), l = true, c = "hsv") : W(e.h) && W(e.s) && W(e.l) && (r = F(e.s), a = F(e.l), t = _(e.h, r, a), l = true, c = "hsl"), e.hasOwnProperty("a") && (n = e.a)), n = j(n), {
+    return "string" == typeof e && (e = K(e)), "object" == typeof e && (W(e.r) && W(e.g) && W(e.b) ? (t = d(e.r, e.g, e.b), l = true, c = "%" === String(e.r).substr(false) ? "prgb" : "rgb") : W(e.h) && W(e.s) && W(e.v) ? (r = F(e.s), i = F(e.v), t = h(e.h, r, i), l = true, c = "hsv") : W(e.h) && W(e.s) && W(e.l) && (r = F(e.s), a = F(e.l), t = _(e.h, r, a), l = true, c = "hsl"), e.hasOwnProperty("a") && (n = e.a)), n = M(n), {
       ok: l,
       format: e.format || c,
       r: o(255, s(t.r, 0)),
@@ -40,15 +40,15 @@
 
   function d(e, t, n) {
     return {
-      r: 255 * M(e, 255),
-      g: 255 * M(t, 255),
-      b: 255 * M(n, 255)
+      r: 255 * j(e, 255),
+      g: 255 * j(t, 255),
+      b: 255 * j(n, 255)
     }
   }
 
   function f(e, t, n) {
-    e = M(e, 255);
-    var r, i, a = s(e, t = M(t, 255), n = M(n, 255)),
+    e = j(e, 255);
+    var r, i, a = s(e, t = j(t, 255), n = j(n, 255)),
       l = o(e, t, n),
       c = (a + l) / 2;
     if (a == l) r = i = 0;
@@ -79,7 +79,7 @@
     function o(e, t, n) {
       return (n < 0 && (n += 1), n > 1 && (n -= 1), n < 1 / 6) ? e + (t - e) * 6 * n : n < .5 ? t : n < 2 / 3 ? e + (t - e) * (2 / 3 - n) * 6 : e
     }
-    if (e = M(e, 360), t = M(t, 100), n = M(n, 100), 0 === t) r = i = a = n;
+    if (e = j(e, 360), t = j(t, 100), n = j(n, 100), 0 === t) r = i = a = n;
     else {
       var s = n < .5 ? n * (1 + t) : n + t - n * t,
         l = 2 * n - s;
@@ -93,8 +93,8 @@
   }
 
   function p(e, t, n) {
-    e = M(e, 255);
-    var r, i, a = s(e, t = M(t, 255), n = M(n, 255)),
+    e = j(e, 255);
+    var r, i, a = s(e, t = j(t, 255), n = j(n, 255)),
       l = o(e, t, n),
       c = a,
       u = a - l;
@@ -120,7 +120,7 @@
   }
 
   function h(e, n, r) {
-    e = 6 * M(e, 360), n = M(n, 100), r = M(r, 100);
+    e = 6 * j(e, 360), n = j(n, 100), r = j(r, 100);
     var i = t.floor(e),
       a = e - i,
       o = r * (1 - n),
@@ -285,7 +285,7 @@
       return e = o.r / 255, n = o.g / 255, r = o.b / 255, i = e <= .03928 ? e / 12.92 : t.pow((e + .055) / 1.055, 2.4), .2126 * i + .7152 * (n <= .03928 ? n / 12.92 : t.pow((n + .055) / 1.055, 2.4)) + .0722 * (a = r <= .03928 ? r / 12.92 : t.pow((r + .055) / 1.055, 2.4))
     },
     setAlpha: function(e) {
-      return this._a = j(e), this._roundA = a(100 * this._a) / 100, this
+      return this._a = M(e), this._roundA = a(100 * this._a) / 100, this
     },
     toHsv: function() {
       var e = p(this._r, this._g, this._b);
@@ -344,14 +344,14 @@
     },
     toPercentageRgb: function() {
       return {
-        r: a(100 * M(this._r, 255)) + "%",
-        g: a(100 * M(this._g, 255)) + "%",
-        b: a(100 * M(this._b, 255)) + "%",
+        r: a(100 * j(this._r, 255)) + "%",
+        g: a(100 * j(this._g, 255)) + "%",
+        b: a(100 * j(this._b, 255)) + "%",
         a: this._a
       }
     },
     toPercentageRgbString: function() {
-      return 1 == this._a ? "rgb(" + a(100 * M(this._r, 255)) + "%, " + a(100 * M(this._g, 255)) + "%, " + a(100 * M(this._b, 255)) + "%)" : "rgba(" + a(100 * M(this._r, 255)) + "%, " + a(100 * M(this._g, 255)) + "%, " + a(100 * M(this._b, 255)) + "%, " + this._roundA + ")"
+      return 1 == this._a ? "rgb(" + a(100 * j(this._r, 255)) + "%, " + a(100 * j(this._g, 255)) + "%, " + a(100 * j(this._b, 255)) + "%)" : "rgba(" + a(100 * j(this._r, 255)) + "%, " + a(100 * j(this._g, 255)) + "%, " + a(100 * j(this._b, 255)) + "%, " + this._roundA + ")"
     },
     toName: function() {
       return 0 === this._a ? "transparent" : !(this._a < 1) && (L[m(this._r, this._g, this._b, true)] || false)
@@ -635,11 +635,11 @@
     return t
   }
 
-  function j(e) {
+  function M(e) {
     return (isNaN(e = parseFloat(e)) || e < 0 || e > 1) && (e = 1), e
   }
 
-  function M(e, n) {
+  function j(e, n) {
     G(e) && (e = "100%");
     var r = B(e);
     return (e = o(n, s(0, parseFloat(e))), r && (e = parseInt(e * n, 10) / 100), 1e-6 > t.abs(e - n)) ? 1 : e % n / parseFloat(n)

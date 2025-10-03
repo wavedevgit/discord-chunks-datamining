@@ -285,7 +285,7 @@ class eo extends Chunk647438.Component {
         name: Chunk388032.intl.string(Chunk388032.t["+o/sOj"]),
         value: Chunk524437.hg.H23
       }],
-      onChange: e => j.hg.updateSetting(e),
+      onChange: e => M.hg.updateSetting(e),
       value: module
     })
   }
@@ -409,12 +409,12 @@ class eo extends Chunk647438.Component {
       let {
         value: t
       } = e;
-      j.jU.updateSetting(t === $), (0, h.ZZ)()
+      M.jU.updateSetting(t === $), (0, h.ZZ)()
     }), z(this, "handleUIDensityChange", e => {
       let {
         value: t
       } = e;
-      t !== c.Pi.UNSET_UI_DENSITY && j.YC.updateSetting(t)
+      t !== c.Pi.UNSET_UI_DENSITY && M.YC.updateSetting(t)
     })
   }
 }

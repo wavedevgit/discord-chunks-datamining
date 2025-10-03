@@ -1,4 +1,4 @@
-/** Chunk was on 9665 **/
+/** Chunk was on 50118 **/
 /** chunk id: 616286, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   T: () => j
@@ -27,15 +27,15 @@ function x(e) {
   let t = (0, s.e7)([m.Z], () => !(0, o.isEmpty)(m.Z.getTypingUsers(e)), [e]),
     n = (0, s.e7)([f.Z], () => f.Z.getVoiceChannelId() === e, [e]),
     {
-      unreadCount: r,
-      mentionCount: i
+      unreadCount: i,
+      mentionCount: r
     } = (0, s.cj)([h.ZP], () => ({
       unreadCount: h.ZP.getUnreadCount(e),
       mentionCount: h.ZP.getMentionCount(e)
     }), [e]);
   return {
-    unreadCount: r,
-    mentionCount: i,
+    unreadCount: i,
+    mentionCount: r,
     voiceChannelIsSelected: n,
     isTyping: t
   }
@@ -46,14 +46,14 @@ function O(e) {
     className: t,
     channelId: n
   } = e, {
-    unreadCount: i,
+    unreadCount: r,
     mentionCount: l,
     isTyping: a,
     voiceChannelIsSelected: o
   } = x(n);
-  return (0, r.jsx)(y.Z, {
+  return (0, i.jsx)(C.Z, {
     className: t,
-    unreadCount: i,
+    unreadCount: r,
     mentionCount: l,
     isTyping: a,
     canBadge: o
@@ -69,27 +69,27 @@ function j(e) {
     onClick: h,
     inPopout: f,
     showRequestToSpeakSidebar: m,
-    toggleRequestToSpeakSidebar: y
+    toggleRequestToSpeakSidebar: C
   } = e, j = function(e, t) {
     if (null == e) return {};
-    var n, r, i = function(e, t) {
+    var n, i, r = function(e, t) {
       if (null == e) return {};
-      var n, r, i = {},
+      var n, i, r = {},
         l = Object.keys(e);
-      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-      return i
+      for (i = 0; i < l.length; i++) n = l[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
+      return r
     }(e, t);
     if (Object.getOwnPropertySymbols) {
       var l = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+      for (i = 0; i < l.length; i++) n = l[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
     }
-    return i
+    return r
   }(e, ["channelId", "className", "showingClassName", "onClick", "inPopout", "showRequestToSpeakSidebar", "toggleRequestToSpeakSidebar"]);
   let {
     parentAnalyticsLocation: E
   } = (0, u.ZP)(), {
     disabled: S
-  } = j, P = i.useRef(null), I = (0, s.e7)([d.Z], () => d.Z.getChatOpen(n), [n]), {
+  } = j, P = r.useRef(null), I = (0, s.e7)([d.Z], () => d.Z.getChatOpen(n), [n]), {
     isShowing: Z,
     unreadCount: N,
     mentionCount: T
@@ -97,9 +97,9 @@ function j(e) {
     let {
       unreadCount: t,
       mentionCount: n,
-      isTyping: r
-    } = x(e), [l, a] = i.useState(false);
-    return i.useEffect(() => {
+      isTyping: i
+    } = x(e), [l, a] = r.useState(false);
+    return r.useEffect(() => {
       a(t > 0);
       let e = setTimeout(() => {
         a(false)
@@ -108,21 +108,21 @@ function j(e) {
         clearTimeout(e), a(false)
       }
     }, [t]), {
-      isShowing: l || n > 0 || r,
+      isShowing: l || n > 0 || i,
       unreadCount: t,
       mentionCount: n
     }
-  }(n), A = i.useCallback(() => {
-    (0, p.v)(E, p.d.CHAT, !I), null == h || h(), !I && m && (null == y || y()), c.Z.updateChatOpen(n, !I)
-  }, [n, I, h, m, y, E]), w = i.useCallback(e => {
+  }(n), A = r.useCallback(() => {
+    (0, p.v)(E, p.d.CHAT, !I), null == h || h(), !I && m && (null == C || C()), c.Z.updateChatOpen(n, !I)
+  }, [n, I, h, m, C, E]), w = r.useCallback(e => {
     let {
       className: t
     } = e;
-    return (0, r.jsx)(O, {
+    return (0, i.jsx)(O, {
       className: t,
       channelId: n
     })
-  }, [n]), M = i.useCallback(() => {
+  }, [n]), M = r.useCallback(() => {
     var e;
     null == (e = P.current) || e.focus()
   }, []);
@@ -130,13 +130,13 @@ function j(e) {
     event: _.CkL.FOCUS_CHAT_BUTTON,
     handler: S ? null : M
   });
-  let [R, k] = i.useState(false), D = i.useCallback(() => {
+  let [R, k] = r.useState(false), L = r.useCallback(() => {
     f && k(true)
   }, [f]);
   (0, g.yp)({
     event: _.CkL.SHOW_TEXT_IN_VOICE_POPOUT_COMING_SOON_TIP,
-    handler: D
-  }), i.useEffect(() => {
+    handler: L
+  }), r.useEffect(() => {
     let e;
     return R && (e = setTimeout(() => {
       k(false)
@@ -144,23 +144,23 @@ function j(e) {
       clearTimeout(e)
     }
   }, [R]);
-  let L = [t = f && S ? v.intl.string(v.t.DPgc5u) : I ? v.intl.string(v.t.nthdxM) : v.intl.string(v.t["5KxXrK"])];
-  return T > 0 && L.push(v.intl.formatToPlainString(v.t["3l1GOz"], {
+  let D = [t = f && S ? v.intl.string(v.t.DPgc5u) : I ? v.intl.string(v.t.nthdxM) : v.intl.string(v.t["5KxXrK"])];
+  return T > 0 && D.push(v.intl.formatToPlainString(v.t["3l1GOz"], {
     mentionCount: T
-  })), N > 0 && L.push(v.intl.string(v.t.x5zAGR)), (0, r.jsx)(C.Z, function(e) {
+  })), N > 0 && D.push(v.intl.string(v.t.x5zAGR)), (0, i.jsx)(y.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
-        r = Object.keys(n);
-      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        i = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
         return Object.getOwnPropertyDescriptor(n, e).enumerable
-      }))), r.forEach(function(t) {
-        var r;
-        r = n[t], t in e ? Object.defineProperty(e, t, {
-          value: r,
+      }))), i.forEach(function(t) {
+        var i;
+        i = n[t], t in e ? Object.defineProperty(e, t, {
+          value: i,
           enumerable: true,
           configurable: true,
           writable: true
-        }) : e[t] = r
+        }) : e[t] = i
       })
     }
     return e
@@ -168,7 +168,7 @@ function j(e) {
     buttonRef: P,
     onClick: A,
     label: t,
-    "aria-label": L.join(", "),
+    "aria-label": D.join(", "),
     iconComponent: w,
     tooltipPosition: "bottom",
     wrapperClassName: a()(l, null != o && {

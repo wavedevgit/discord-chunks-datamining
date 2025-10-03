@@ -1,4 +1,4 @@
-/** Chunk was on 9665 **/
+/** Chunk was on 50118 **/
 /** chunk id: 993766, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => s
@@ -17,16 +17,16 @@ function s(e) {
     channelId: c,
     commands: u
   } = e;
-  r.useEffect(() => {
+  i.useEffect(() => {
     !t && n && null == s && (0, l.Tv)(c)
-  }, [t, n, s, c]), r.useEffect(() => {
+  }, [t, n, s, c]), i.useEffect(() => {
     (0, l.Hm)(c)
   }, [c]);
-  let d = (0, i.e7)([a.ZP], () => {
+  let d = (0, r.e7)([a.ZP], () => {
       var e, t;
       return null != (t = null == (e = a.ZP.getApplicationState(s)) ? true : e.fetchState.fetching) && t
     }),
-    p = (0, i.e7)([a.ZP, o.Z], () => {
+    p = (0, r.e7)([a.ZP, o.Z], () => {
       var e, t;
       let n = o.Z.getChannel(c);
       return null != (t = null == (e = a.ZP.getContextState(null != n ? {
@@ -36,15 +36,15 @@ function s(e) {
         type: "contextless"
       })) ? true : e.fetchState.fetching) && t
     }),
-    h = r.useRef(false),
-    f = r.useRef(false);
-  r.useEffect(() => {
+    h = i.useRef(false),
+    f = i.useRef(false);
+  i.useEffect(() => {
     h.current = false, f.current = false
-  }, [c]), r.useEffect(() => {
+  }, [c]), i.useEffect(() => {
     d && (h.current = true)
-  }, [d]), r.useEffect(() => {
+  }, [d]), i.useEffect(() => {
     p && (f.current = true)
-  }, [p]), r.useEffect(() => {
+  }, [p]), i.useEffect(() => {
     !d && !p && h.current && f.current && 0 === u.length && (0, l.Tv)(c)
   }, [d, p, u, c])
 }

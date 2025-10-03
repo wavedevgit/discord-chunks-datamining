@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   g: () => U,
-  i: () => M
+  i: () => j
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -37,13 +37,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk505575 = require("./505575.js");
-let j = () => {
+let M = () => {
     (0, Chunk266454.Q3)(Chunk704215.z.CLIENT_THEMES_SPARKLE_PREVIEW, {
       dismissAction: Chunk921944.L.PRIMARY,
       forceTrack: true
     }), (0, Chunk550385.XO)(Chunk550385.wh.CLIENT_THEMES), (0, Chunk342386.default)()
   },
-  M = () => {
+  j = () => {
     var e, t;
     let {
       analyticsLocations: n
@@ -61,7 +61,7 @@ let j = () => {
         children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "secondary",
           text: Chunk388032.intl.string(Chunk388032.t["E+COuL"]),
-          onClick: () => j()
+          onClick: () => M()
         }), (0, Chunk951288.jsx)(Chunk638212.Z, {
           subscriptionTier: Chunk474936.Si.TIER_2,
           defaultTextOverride: module,
@@ -76,7 +76,7 @@ let j = () => {
         children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "secondary",
           text: Chunk388032.intl.string(Chunk388032.t["E+COuL"]),
-          onClick: () => j()
+          onClick: () => M()
         }), (0, Chunk951288.jsx)(Chunk767714.Z, {
           showGradient: false,
           subscriptionTier: Chunk474936.Si.TIER_2,
@@ -100,7 +100,7 @@ let j = () => {
             variant: "secondary",
             fullWidth: true,
             text: Chunk388032.intl.string(Chunk388032.t["E+COuL"]),
-            onClick: () => j()
+            onClick: () => M()
           })
         }), (0, Chunk951288.jsx)("div", {
           className: Chunk505575.premiumTier2Divider
@@ -166,5 +166,5 @@ function k() {
 let U = () => (0, Chunk442837.e7)([Chunk514361.Z], () => Chunk514361.Z.isPreview) ? null : (0, Chunk951288.jsx)(Chunk481060.zxk, {
   variant: "primary",
   text: Chunk388032.intl.string(Chunk388032.t.qYXrkZ),
-  onClick: j
+  onClick: M
 })

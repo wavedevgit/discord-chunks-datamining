@@ -94,8 +94,8 @@ function T(e) {
       label: D,
       hideLabel: L,
       description: x,
-      helperText: j,
-      successMessage: M,
+      helperText: M,
+      successMessage: j,
       inputRef: k
     } = e,
     U = y(e, ["value", "placeholder", "autoFocus", "autosize", "minLength", "maxLength", "error", "defaultDirty", "showCharacterCount", "showRemainingCharacterCount", "rows", "disabled", "label", "hideLabel", "description", "helperText", "successMessage", "inputRef"]);
@@ -128,8 +128,8 @@ function T(e) {
     label: D,
     hideLabel: L,
     description: x,
-    helperText: j,
-    successMessage: M,
+    helperText: M,
+    successMessage: j,
     trailingContent: V,
     errorMessage: B.hasError && null != (t = B.errorMessage) ? t : true,
     children: (0, r.jsxs)(u.U, {

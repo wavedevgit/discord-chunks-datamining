@@ -246,23 +246,23 @@ function w(e) {
         } = await I.open();
         L(e)
       } catch (e) {}
-    }, j = i.useCallback(e => {
+    }, M = i.useCallback(e => {
       D(t => O(b({}, t), {
         pending: e,
         input: e.hex
       })), n && a((0, c._i)(e.hex))
-    }, [n, a]), M = e => {
+    }, [n, a]), j = e => {
       a((0, c._i)(e))
     }, k = (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(i.Suspense, {
         fallback: null,
         children: (0, r.jsx)(T, {
-          onChange: j,
+          onChange: M,
           onChangeComplete: e => {
             let {
               hex: t
             } = e;
-            return M(t)
+            return j(t)
           },
           color: w.pending.hsl
         })

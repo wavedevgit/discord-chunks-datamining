@@ -38,7 +38,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk969016 = require("./969016.js");
 
-function M(e, t, n) {
+function j(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -54,7 +54,7 @@ function k(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      M(e, t, n[t])
+      j(e, t, n[t])
     })
   }
   return e
@@ -84,31 +84,31 @@ function B(e) {
     textColor: i
   } = e, a = [];
   return null != n && n > 0 && a.push((0, r.jsxs)("div", {
-    className: j.statusWrapper,
+    className: M.statusWrapper,
     children: [(0, r.jsx)("i", {
-      className: j.statusOnline
+      className: M.statusOnline
     }), (0, r.jsx)(u.Text, {
       variant: "text-xs/normal",
-      className: j.count,
+      className: M.count,
       color: i,
       children: x.intl.format(x.t["LC+S+v"], {
         membersOnline: n
       })
     })]
   }, "onlineCount")), null != t && a.push((0, r.jsxs)("div", {
-    className: j.statusWrapper,
+    className: M.statusWrapper,
     children: [(0, r.jsx)("i", {
-      className: j.statusOffline
+      className: M.statusOffline
     }), (0, r.jsx)(u.Text, {
       variant: "text-xs/normal",
-      className: j.count,
+      className: M.count,
       color: i,
       children: x.intl.format(x.t.zRl6XV, {
         count: t
       })
     })]
   }, "memberCount")), (0, r.jsx)("div", {
-    className: j.statusCounts,
+    className: M.statusCounts,
     children: a
   })
 }
@@ -123,11 +123,11 @@ function Z(e) {
   if (null != t && null != n) {
     let e = (0, O.KS)(t, n);
     return (0, r.jsxs)("div", {
-      className: o()(j.channel, {
-        [j.ended]: i
+      className: o()(M.channel, {
+        [M.ended]: i
       }),
       children: [null != e ? (0, r.jsx)(e, {
-        className: j.channelIcon,
+        className: M.channelIcon,
         size: "xs",
         color: "currentColor"
       }) : null, (0, r.jsx)(v.Z, {
@@ -143,8 +143,8 @@ function Z(e) {
     })
   }
   return null != n ? (0, r.jsx)("div", {
-    className: o()(j.channel, {
-      [j.ended]: i
+    className: o()(M.channel, {
+      [M.ended]: i
     }),
     children: (0, r.jsx)(v.Z, {
       children: (0, r.jsx)(u.Text, {
@@ -185,7 +185,7 @@ function F(e) {
       var e;
       return (null == s ? true : s.channel) != null && (null == (e = f.ZP.getSelfEmbeddedActivityForChannel(s.channel.id)) ? true : e.applicationId) === b.id
     }),
-    j = (0, c.e7)([f.ZP], () => {
+    M = (0, c.e7)([f.ZP], () => {
       var e;
       return ((null == (e = s.channel) ? true : e.id) != null ? f.ZP.getEmbeddedActivitiesForChannel(s.channel.id) : []).some(e => {
         let {
@@ -194,12 +194,12 @@ function F(e) {
         return b.id === t
       })
     }),
-    M = I.Z.getChannel(null == (n = s.channel) ? true : n.id),
-    k = (0, c.e7)([S.Z], () => null != M && S.Z.can(w.Plq.USE_EMBEDDED_ACTIVITIES, M), [M]),
+    j = I.Z.getChannel(null == (n = s.channel) ? true : n.id),
+    k = (0, c.e7)([S.Z], () => null != j && S.Z.can(w.Plq.USE_EMBEDDED_ACTIVITIES, j), [j]),
     {
       analyticsLocations: U
     } = (0, p.ZP)(_.Z.INVITE_EMBED),
-    G = (0, c.Wu)([f.ZP], () => null != M ? f.ZP.getEmbeddedActivitiesForChannel(M.id).filter(e => e.applicationId === b.id).flatMap(e => Array.from(e.userIds)) : [], [M, b.id]),
+    G = (0, c.Wu)([f.ZP], () => null != j ? f.ZP.getEmbeddedActivitiesForChannel(j.id).filter(e => e.applicationId === b.id).flatMap(e => Array.from(e.userIds)) : [], [j, b.id]),
     B = (0, c.Wu)([A.default], () => G.map(e => A.default.getUser(e)).filter(e => null != e), [G]),
     Z = i.useCallback(() => {
       (0, d.r$)({
@@ -219,7 +219,7 @@ function F(e) {
     if (null == s.guild) return (0, r.jsx)(P.Z, {});
     v = (0, R.Qs)(s.guild)
   }
-  a = H ? D ? x.intl.string(x.t.DPfdsr) : j ? x.intl.string(x.t.sqe0ho) : x.intl.string(x.t.RscU7O) : x.intl.string(x.t["2BP08P"]);
+  a = H ? D ? x.intl.string(x.t.DPfdsr) : M ? x.intl.string(x.t.sqe0ho) : x.intl.string(x.t.RscU7O) : x.intl.string(x.t["2BP08P"]);
   let Y = H && !k || H && D;
   return (k || (o = x.intl.string(x.t.hHGrW1)), null == s.code || "" === s.code || null == N) ? null : (0, r.jsx)(p.Gt, {
     value: U,
@@ -227,12 +227,12 @@ function F(e) {
       app: N,
       activityUsers: B,
       isMember: H,
-      channel: M,
+      channel: j,
       guild: v,
       message: u,
       members: m,
       membersOnline: g,
-      isActivityActive: j,
+      isActivityActive: M,
       submitting: F,
       buttonLabel: a,
       disabled: Y,
@@ -282,7 +282,7 @@ function V(e) {
   }, C), {
     onClickBanner: A,
     info: (0, r.jsxs)("div", {
-      className: j.infoWrapper,
+      className: M.infoWrapper,
       children: [(0, r.jsx)(Z, {
         channel: o,
         guild: s,

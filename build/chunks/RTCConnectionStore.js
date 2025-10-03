@@ -190,11 +190,11 @@ function x() {
   b = null
 }
 
-function j() {
+function M() {
   y = null
 }
 
-function M(e) {
+function j(e) {
   let {
     guild: t
   } = e;
@@ -391,8 +391,8 @@ let q = new z(Chunk570140.Z, __OVERLAY__ ? {} : {
   VOICE_SERVER_UPDATE: L,
   CLEAR_REMOTE_DISCONNECT_VOICE_CHANNEL_ID: x,
   REMOTE_SESSION_CONNECT: x,
-  CLEAR_LAST_SESSION_VOICE_CHANNEL_ID: j,
-  GUILD_DELETE: M,
+  CLEAR_LAST_SESSION_VOICE_CHANNEL_ID: M,
+  GUILD_DELETE: j,
   CHANNEL_DELETE: U,
   THREAD_DELETE: U,
   CALL_DELETE: k,

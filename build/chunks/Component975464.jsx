@@ -2,8 +2,8 @@
 /** chunk id: 975464, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  C: () => v,
-  Z: () => _
+  C: () => _,
+  Z: () => v
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk581050 = require("./581050.js"),
   Chunk169400 = require("./169400.js");
 
-function v(e) {
+function _(e) {
   let {
     onboardingMarketing: t,
     onboardingMarketingError: n
@@ -38,40 +38,40 @@ function v(e) {
     })
   }, l = (0, r.jsx)(i, {
     children: (0, r.jsx)(h.Z, {})
-  }, x.q.HOW_IT_WORKS), a = (0, r.jsx)(i, {
+  }, b.q.HOW_IT_WORKS), a = (0, r.jsx)(i, {
     children: (0, r.jsx)(p.Z, {})
-  }, x.q.BENEFITS);
+  }, b.q.BENEFITS);
   return null != n || (null == t ? true : t.sections) == null ? (0, r.jsxs)(r.Fragment, {
     children: [l, a]
   }) : (0, r.jsx)(r.Fragment, {
     children: t.sections.map(e => {
       switch (e.type) {
-        case x.q.HOW_IT_WORKS:
+        case b.q.HOW_IT_WORKS:
           return l;
-        case x.q.BENEFITS:
+        case b.q.BENEFITS:
           return a;
-        case x.q.OTHER_CREATORS:
+        case b.q.OTHER_CREATORS:
           return (0, r.jsx)(i, {
             children: (0, r.jsx)(f.Z, {
               highlightedCreators: e.creators
             })
-          }, x.q.OTHER_CREATORS)
+          }, b.q.OTHER_CREATORS)
       }
     })
   })
 }
 
-function _(e) {
+function v(e) {
   let {
     guild: t
   } = e, n = (0, u.Z)(t), {
     eligibilityLoading: p,
     eligibilityError: f,
     eligibility: h
-  } = n, x = (0, c.j)(h), {
-    isLoading: _,
-    error: O,
-    creatorMonetizationOnboardingMarketing: y
+  } = n, b = (0, c.j)(h), {
+    isLoading: v,
+    error: C,
+    creatorMonetizationOnboardingMarketing: O
   } = (0, d.Z)(t.id);
   return (i.useEffect(() => {
     (0, o.k)(t.id)
@@ -82,11 +82,11 @@ function _(e) {
       guild_id: t.id,
       is_owner: n.isGuildOwner,
       is_eligible: n.eligibleForMonetization,
-      ineligible_reasons: x
+      ineligible_reasons: b
     }
   }, {
     disableTrack: null == t.id || null == h
-  }), p || null == h || _) ? (0, r.jsx)(s.$jN, {}) : h.actionRequired ? (0, r.jsx)(b.Z, {
+  }), p || null == h || v) ? (0, r.jsx)(s.$jN, {}) : h.actionRequired ? (0, r.jsx)(x.Z, {
     guild: t
   }) : null != f ? (0, r.jsx)(m.Z, {
     children: f.message
@@ -95,9 +95,9 @@ function _(e) {
     children: [(0, r.jsx)(g.Z, {
       guild: t,
       monetizationEligibility: n
-    }), (0, r.jsx)(v, {
-      onboardingMarketing: y,
-      onboardingMarketingError: O
+    }), (0, r.jsx)(_, {
+      onboardingMarketing: O,
+      onboardingMarketingError: C
     })]
   })
 }

@@ -13,10 +13,10 @@ var Chunk224706 = require("./224706.js"),
 function u(e, t, n, u, c) {
   if (null == t.activity || null == u.id) return null;
   let d = t.activity.type,
-    p = c.session_id;
-  if (null == p) return null;
+    h = c.session_id;
+  if (null == h) return null;
   let {
-    icon: h,
+    icon: p,
     title: f,
     body: m
   } = (0, l.Xi)(e, t, n), {
@@ -34,7 +34,7 @@ function u(e, t, n, u, c) {
     activity_name: c.name
   });
   return {
-    icon: h,
+    icon: p,
     title: f,
     body: m,
     onNotificationShow: () => {
@@ -45,7 +45,7 @@ function u(e, t, n, u, c) {
       var a;
       i.Z.join({
         userId: n.id,
-        sessionId: p,
+        sessionId: h,
         applicationId: null != (a = u.altId) ? a : u.id,
         channelId: e.id,
         messageId: t.id

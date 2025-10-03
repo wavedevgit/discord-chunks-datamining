@@ -40,12 +40,12 @@ let I = function(e) {
   let [P, w] = (0, h.US)(R, O.R.SIDEBAR, true), D = P === a.z.CLIENT_THEMES_COACHMARK, L = P === a.z.CUSTOM_THEME_COACHMARK;
   if ((0, d.HA)(S, P), n) return null;
   let x = A ? _.Z : f.Z,
-    j = C === b.wh.CLIENT_THEMES || D,
-    M = C === b.wh.APP_ICON,
+    M = C === b.wh.CLIENT_THEMES || D,
+    j = C === b.wh.APP_ICON,
     k = C === b.wh.CUSTOM_THEME || L;
-  if (!(j || M || k)) return null;
+  if (!(M || j || k)) return null;
   let U = () => (0, r.jsxs)(r.Fragment, {
-    children: [j && (0, r.jsx)(u.Z, {
+    children: [M && (0, r.jsx)(u.Z, {
       markAsDismissed: D ? w : () => {
         (0, p.Q3)(a.z.CLIENT_THEMES_COACHMARK, {
           dismissAction: O.L.INDIRECT_ACTION,
@@ -53,7 +53,7 @@ let I = function(e) {
         })
       },
       showClientThemesCoachmark: D
-    }), M && (0, r.jsx)(o.Z, {
+    }), j && (0, r.jsx)(o.Z, {
       isCoachmark: false,
       markAsDismissed: w
     }), k && (0, r.jsx)(x, {

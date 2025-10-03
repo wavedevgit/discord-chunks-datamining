@@ -4,7 +4,7 @@
 require.d(exports, {
   GY: () => x,
   PI: () => A,
-  RT: () => j,
+  RT: () => M,
   XM: () => D,
   bc: () => C,
   ls: () => L,
@@ -192,7 +192,7 @@ function x(e) {
   })
 }
 
-function j(e) {
+function M(e) {
   let {
     id: t,
     pinned: n

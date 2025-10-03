@@ -47,7 +47,7 @@ function P(e) {
 }
 
 function w(e, t) {
-  return /^\w+:\/\//.test(e) ? "undefined" != typeof fetch ? D(e, t) : L(e, t) : j(e) ? Promise.resolve((0, r.u0)(e)) : M(e, t)
+  return /^\w+:\/\//.test(e) ? "undefined" != typeof fetch ? D(e, t) : L(e, t) : M(e) ? Promise.resolve((0, r.u0)(e)) : j(e, t)
 }
 
 function D(e, {
@@ -81,11 +81,11 @@ function x(e) {
   return /^https:\/\//.test(e) ? require("https").get : require("http").get
 }
 
-function j(e) {
+function M(e) {
   return /^data:[^;,]*(;base64)?,/.test(e)
 }
 
-function M(e, {
+function j(e, {
   length: t
 } = {}) {
   return new Promise((n, r) => {
@@ -171,8 +171,8 @@ function V(e, {
       tiffHeaderOffset: D,
       iptcDataOffset: L,
       xmpChunks: x,
-      iccChunks: j,
-      mpfDataOffset: M,
+      iccChunks: M,
+      mpfDataOffset: j,
       pngHeaderOffset: k,
       pngTextChunks: U,
       pngChunkOffsets: G,
@@ -207,7 +207,7 @@ function V(e, {
       let e = p.Z.read(n.PhotoshopSettings.value, i);
       t ? C.photoshop = e : C = (0, r.wB)({}, C, e)
     }
-    if (a.Z.USE_TIFF && a.Z.USE_ICC && n.ICC_Profile && !X(j)) {
+    if (a.Z.USE_TIFF && a.Z.USE_ICC && n.ICC_Profile && !X(M)) {
       let e = h.Z.read(n.ICC_Profile.value, [{
         offset: 0,
         length: n.ICC_Profile.value.length,
@@ -237,14 +237,14 @@ function V(e, {
     let n = _.Z.read(e, x, o);
     t ? C.xmp = n : (delete n._raw, C = (0, r.wB)({}, C, n))
   }
-  if ((a.Z.USE_JPEG || a.Z.USE_WEBP) && a.Z.USE_ICC && X(j)) {
+  if ((a.Z.USE_JPEG || a.Z.USE_WEBP) && a.Z.USE_ICC && X(M)) {
     A = true;
-    let t = h.Z.read(e, j, n);
+    let t = h.Z.read(e, M, n);
     t instanceof Promise ? N.push(t.then(eo)) : eo(t)
   }
-  if (a.Z.USE_MPF && $(M)) {
+  if (a.Z.USE_MPF && $(j)) {
     A = true;
-    let n = c.Z.read(e, M, i);
+    let n = c.Z.read(e, j, i);
     t ? C.mpf = n : C = (0, r.wB)({}, C, n)
   }
   if (a.Z.USE_PNG && a.Z.USE_PNG_FILE && ee(k)) {

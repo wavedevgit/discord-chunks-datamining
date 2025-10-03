@@ -1,8 +1,8 @@
 /** Chunk was on 39476 **/
 /** chunk id: 868643, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  a: () => f,
-  h: () => p
+  a: () => p,
+  h: () => f
 }), require("./997841.js");
 var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
@@ -17,22 +17,22 @@ function d(e) {
   return e.state !== c.yb.SEND_FAILED && !!c.V$x.FORWARDABLE.has(e.type) && null == e.poll && null == e.sharedClientTheme && null == e.activity && null == e.call && null == e.activityInstance && 0 === (0, s.Ge)(e.flags, u) && true
 }
 
-function p(e) {
+function f(e) {
   var t;
   if (!d(e)) returnfalse;
-  let n = null == (t = o.Z.getChannel(e.channel_id)) ? true : t.guild_id;
+  let n = null == (t = a.Z.getChannel(e.channel_id)) ? true : t.guild_id;
   return !(null != n && l.Z.isChannelOrThreadParentGated(n, e.channel_id))
 }
 
-function f(e) {
-  let t = (0, i.e7)([a.Z, l.Z, o.Z], () => {
-    var t, n, r;
+function p(e) {
+  let t = (0, r.e7)([o.Z, l.Z, a.Z], () => {
+    var t, n, i;
     if (null == e) returntrue;
-    let i = null == (t = o.Z.getChannel(e.channel_id)) ? true : t.guild_id;
-    if (null != i && (null == (n = a.Z.getGuild(i)) ? true : n.features.has(c.oNc.FORWARDING_DISABLED))) returntrue;
-    let s = null != i && l.Z.isChannelOrThreadParentGated(i, e.channel_id),
-      u = null != e && (null == (r = o.Z.getChannel(e.channel_id)) ? true : r.isModeratorReportChannel());
+    let r = null == (t = a.Z.getChannel(e.channel_id)) ? true : t.guild_id;
+    if (null != r && (null == (n = o.Z.getGuild(r)) ? true : n.features.has(c.oNc.FORWARDING_DISABLED))) returntrue;
+    let s = null != r && l.Z.isChannelOrThreadParentGated(r, e.channel_id),
+      u = null != e && (null == (i = a.Z.getChannel(e.channel_id)) ? true : i.isModeratorReportChannel());
     return s || u
   });
-  return r.useMemo(() => !t && null != e && d(e), [t, e])
+  return i.useMemo(() => !t && null != e && d(e), [t, e])
 }

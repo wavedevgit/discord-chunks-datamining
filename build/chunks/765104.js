@@ -67,18 +67,18 @@ let P = {},
   D = {},
   L = [],
   x = {},
-  j = {
+  M = {
     status: "ok",
     lastRequest: null,
     lastResponse: null
   },
-  M = [],
+  j = [],
   k = [],
   U = 75,
   G = 25;
 
 function B() {
-  M = Chunk823385.Z.getProps().results.filter(e => e.type === _.h8.TEXT_CHANNEL && 0 === e.record.type).map(e => e.record.id)
+  j = Chunk823385.Z.getProps().results.filter(e => e.type === _.h8.TEXT_CHANNEL && 0 === e.record.type).map(e => e.record.id)
 }
 class Z extends(s = Chunk442837.ZP.PersistedStore) {
   getState() {
@@ -140,10 +140,10 @@ class Z extends(s = Chunk442837.ZP.PersistedStore) {
     return x
   }
   channelAffinitiesStatus() {
-    return j
+    return M
   }
   shouldFetchChannelAffinities() {
-    return !("fetching" === j.status || null != j.lastResponse && Date.now() - j.lastResponse < 30 * Chunk70956.Z.Millis.SECOND)
+    return !("fetching" === M.status || null != M.lastResponse && Date.now() - M.lastResponse < 30 * Chunk70956.Z.Millis.SECOND)
   }
   defaultChannelIds(e) {
     let {
@@ -152,7 +152,7 @@ class Z extends(s = Chunk442837.ZP.PersistedStore) {
       withUnreads: r,
       numChannels: i = G
     } = e, a = [];
-    return t && (a = a.concat(M)), n && (a = a.concat(L.map(e => e.channel_id))), r && (a = a.filter(e => {
+    return t && (a = a.concat(j)), n && (a = a.concat(L.map(e => e.channel_id))), r && (a = a.filter(e => {
       let t = m.Z.getChannel(e);
       return null != t && !y.ZP.isChannelMuted(t.guild_id, e) && E.ZP.hasUnread(e)
     })), (a = a.filter(e => {
@@ -283,7 +283,7 @@ let V = new Z(Chunk570140.Z, {
     null != n ? D[t.id] = n : delete D[t.id]
   },
   REQUEST_CHANNEL_AFFINITIES() {
-    j = R(C({}, j), {
+    M = R(C({}, M), {
       status: "fetching",
       lastRequest: Date.now()
     })
@@ -295,13 +295,13 @@ let V = new Z(Chunk570140.Z, {
       error: r
     } = e;
     if (null != r) {
-      L = [], x = {}, j = R(C({}, j), {
+      L = [], x = {}, M = R(C({}, M), {
         status: "error",
         lastResponse: Date.now()
       });
       return
     }
-    L = null != n ? n : [], x = null != (t = null == n ? true : n.reduce((e, t) => (e[t.channel_id] = t.affinity, e), {})) ? t : {}, j = R(C({}, j), {
+    L = null != n ? n : [], x = null != (t = null == n ? true : n.reduce((e, t) => (e[t.channel_id] = t.affinity, e), {})) ? t : {}, M = R(C({}, M), {
       status: "ok",
       lastResponse: Date.now()
     })

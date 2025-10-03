@@ -109,7 +109,7 @@ function R(e) {
     hideSearch: w,
     showDivider: D,
     disableDoubleClick: L
-  } = e, x = null == s || (0, y.AB)(s) ? null : s, j = (0, a.e7)([h.Z], () => h.Z.isInChannel(x) || false), M = (0, a.e7)([c.Z], () => null != x && c.Z.getParticipantsListOpen(x)), {
+  } = e, x = null == s || (0, y.AB)(s) ? null : s, M = (0, a.e7)([h.Z], () => h.Z.isInChannel(x) || false), j = (0, a.e7)([c.Z], () => null != x && c.Z.getParticipantsListOpen(x)), {
     enabled: k,
     inInbox: U
   } = d.Z.useExperiment({
@@ -128,10 +128,10 @@ function R(e) {
         guildId: m,
         channelId: s,
         className: O.search
-      }, null != m ? m : s) : null, D && (0, r.jsx)(E.ZP.Divider, {}), k && !U ? (0, r.jsx)(f.Z, {}) : null, G && j && null != x && !M && l === b.d4z.GROUP_DM && (0, r.jsxs)("div", {
+      }, null != m ? m : s) : null, D && (0, r.jsx)(E.ZP.Divider, {}), k && !U ? (0, r.jsx)(f.Z, {}) : null, G && M && null != x && !j && l === b.d4z.GROUP_DM && (0, r.jsxs)("div", {
         className: O.controlButtonWrapper,
         children: [(0, r.jsx)(E.ZP.Divider, {}), (0, r.jsx)(p.Z, {
-          onClick: () => o.Z.toggleParticipantsList(x, !M)
+          onClick: () => o.Z.toggleParticipantsList(x, !j)
         })]
       })]
     })

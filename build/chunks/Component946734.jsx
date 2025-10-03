@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk130370 = require("./130370.js");
 
-function w(e, t, n) {
+function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,7 +34,7 @@ function w(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class C {
+class w {
   updateData(e) {
     let {
       userId: t,
@@ -49,15 +49,15 @@ class C {
   }
   renderNicknamePairs(e) {
     return this.getNicknameGuildPairs().map((t, n) => {
-      let [o, a] = t, l = (0, r.jsx)(c.P3F, {
+      let [a, o] = t, l = (0, r.jsx)(c.P3F, {
         tag: "span",
         onClick: this.handleClick,
-        children: o
+        children: a
       });
-      return a.length > 0 && (l = (0, r.jsx)(s.u, {
+      return o.length > 0 && (l = (0, r.jsx)(s.u, {
         asContainer: true,
         tag: "span",
-        text: a.join(", "),
+        text: o.join(", "),
         position: "bottom",
         shouldShow: e,
         delay: 50,
@@ -73,9 +73,9 @@ class C {
     channelId: n,
     analyticsLocations: i
   }) {
-    w(this, "userId", true), w(this, "user", true), w(this, "channelId", true), w(this, "analyticsLocations", true), w(this, "generateNicknameGuildPairs", (0, y.oH)(e => {
+    C(this, "userId", true), C(this, "user", true), C(this, "channelId", true), C(this, "analyticsLocations", true), C(this, "generateNicknameGuildPairs", (0, v.oH)(e => {
       var t;
-      return a()(m.ZP.getNicknameGuildsMapping(null != (t = null == e ? true : e.id) ? t : this.userId)).toPairs().map(e => {
+      return o()(m.ZP.getNicknameGuildsMapping(null != (t = null == e ? true : e.id) ? t : this.userId)).toPairs().map(e => {
         let [t, n] = e;
         return [t, n.map(e => {
           var t;
@@ -85,10 +85,10 @@ class C {
         let [n] = t;
         return n !== (null == e ? true : e.globalName)
       }).value()
-    })), w(this, "renderMoreAvatars", () => (0, r.jsx)(s.u, {
+    })), C(this, "renderMoreAvatars", () => (0, r.jsx)(s.u, {
       asContainer: true,
       tag: "span",
-      text: x.intl.string(x.t.UTjREx),
+      text: O.intl.string(O.t.UTjREx),
       position: "bottom",
       children: (0, r.jsx)(c.P3F, {
         className: P.moreAvatars,
@@ -99,12 +99,12 @@ class C {
           className: P.plusIcon
         })
       })
-    }, "more-avatars")), w(this, "handleClick", () => {
+    }, "more-avatars")), C(this, "handleClick", () => {
       (0, h.openUserProfileModal)({
         userId: this.userId,
         channelId: this.channelId,
         sourceAnalyticsLocations: this.analyticsLocations,
-        section: O.oh.MUTUAL_GUILDS
+        section: x.oh.MUTUAL_GUILDS
       })
     }), this.userId = e, this.user = t, this.channelId = n, this.analyticsLocations = i
   }
@@ -113,53 +113,53 @@ class C {
 function k(e) {
   let {
     channel: t
-  } = e, n = t.getRecipientId(), o = (0, f.gc)(n), a = Array(o.length).fill(null), {
+  } = e, n = t.getRecipientId(), a = (0, f.gc)(n), o = Array(a.length).fill(null), {
     analyticsLocations: h
   } = (0, b.ZP)(d.Z.AKA), m = function(e) {
     let {
       userId: t,
       channelId: n,
       analyticsLocations: r
-    } = e, o = (0, l.e7)([_.default], () => _.default.getUser(t), [t]), [a] = i.useState(() => new C({
-      user: o,
+    } = e, a = (0, l.e7)([_.default], () => _.default.getUser(t), [t]), [o] = i.useState(() => new w({
+      user: a,
       userId: t,
       channelId: n,
       analyticsLocations: r
     }));
-    return a.updateData({
+    return o.updateData({
       userId: t,
-      user: o,
+      user: a,
       channelId: n,
       analyticsLocations: r
-    }), a
+    }), o
   }({
     userId: n,
     analyticsLocations: h,
     channelId: t.id
-  }), [y, j] = i.useState(false), O = i.useCallback(() => {
+  }), [v, j] = i.useState(false), x = i.useCallback(() => {
     j(true)
-  }, [j]), w = i.useCallback(() => {
+  }, [j]), C = i.useCallback(() => {
     j(false)
   }, [j]);
-  return 0 === m.getNicknameGuildPairs().length && 0 === o.length ? (0, r.jsx)("div", {
+  return 0 === m.getNicknameGuildPairs().length && 0 === a.length ? (0, r.jsx)("div", {
     className: P.spacer
   }) : (0, r.jsxs)(b.Gt, {
     value: h,
-    children: [(0, r.jsx)(v.iz, {
+    children: [(0, r.jsx)(y.iz, {
       className: P.divider
     }), (0, r.jsx)(c.IGR, {
-      text: x.intl.string(x.t.l1QVfn),
+      text: O.intl.string(O.t.l1QVfn),
       disableColor: true,
       className: P.akaBadge
-    }), o.length > 0 ? (0, r.jsx)(u.ZP, {
+    }), a.length > 0 ? (0, r.jsx)(u.ZP, {
       size: 16,
-      users: a,
+      users: o,
       showUserPopout: false,
       renderUser: (e, t, n) => {
         var i;
-        let a = m.user,
-          l = o[n];
-        return null == l || null == a ? null : (0, r.jsx)(s.u, {
+        let o = m.user,
+          l = a[n];
+        return null == l || null == o ? null : (0, r.jsx)(s.u, {
           asContainer: true,
           text: null == (i = g.Z.getGuild(l)) ? true : i.name,
           position: "bottom",
@@ -167,7 +167,7 @@ function k(e) {
             alt: "",
             className: P.avatar,
             onClick: m.handleClick,
-            src: a.getAvatarURL(l, 16),
+            src: o.getAvatarURL(l, 16),
             "aria-hidden": true
           })
         }, l[1])
@@ -180,9 +180,9 @@ function k(e) {
       position: "bottom",
       className: P.nicknames,
       delay: 0,
-      onTooltipShow: O,
-      onTooltipHide: w,
-      children: m.renderNicknamePairs(!y)
+      onTooltipShow: x,
+      onTooltipHide: C,
+      children: m.renderNicknamePairs(!v)
     }) : null]
   })
 }

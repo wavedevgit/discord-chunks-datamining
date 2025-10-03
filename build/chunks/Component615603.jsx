@@ -2,7 +2,7 @@
 /** chunk id: 615603, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => M
+  Z: () => j
 }), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -150,12 +150,12 @@ function x(e) {
   })))
 }
 
-function j(e) {
+function M(e) {
   (0, c.ZDy)(async () => t => (0, r.jsx)(h.default, w(R({}, t), {
     guildBoostSlotId: e.id
   })))
 }
-let M = function(e) {
+let j = function(e) {
   let t, n, a, {
       guildBoostSlots: l
     } = e,
@@ -170,7 +170,7 @@ let M = function(e) {
     N = p && !T,
     {
       appliedGuildBoostSlots: P,
-      unappliedGuildBoostSlots: M,
+      unappliedGuildBoostSlots: j,
       numActiveGuildBoostSlots: k,
       hasCooldownBoosts: U,
       allGuildBoostsAreOnCooldown: G
@@ -203,9 +203,9 @@ let M = function(e) {
       }, t));
       return e
     }, [H, v]),
-    W = i.useMemo(() => M.find(e => e.isAvailable()), [M]);
-  if (0 === M.length) return null;
-  let K = M.length;
+    W = i.useMemo(() => j.find(e => e.isAvailable()), [j]);
+  if (0 === j.length) return null;
+  let K = j.length;
   if (t = V ? A.intl.formatToPlainString(G ? A.t["3DW6DQ"] : A.t["/u15QU"], {
       numUnappliedGuildBoostSlots: K
     }) : A.intl.formatToPlainString(G ? A.t["3DW6DQ"] : A.t.BPadnJ, {
@@ -269,11 +269,11 @@ let M = function(e) {
         })]
       }), (!V || U) && (0, r.jsx)("ul", {
         className: C.unappliedBoostSlots,
-        children: M.map(e => (0, r.jsx)(D, {
+        children: j.map(e => (0, r.jsx)(D, {
           guildBoostSlot: e,
           isCancellable: F,
           onCancel: x,
-          onUncancel: j,
+          onUncancel: M,
           premiumSubscription: _,
           useReducedMotion: v,
           fractionalState: h

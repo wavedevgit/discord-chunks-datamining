@@ -36,8 +36,8 @@ function N(e) {
   let {
     channel: n,
     isChannelSelected: N,
-    isChannelCollapsed: w,
-    voiceStates: Z,
+    isChannelCollapsed: Z,
+    voiceStates: w,
     enableConnectedUserLimit: T,
     enableActivities: A,
     isSubscriptionGated: R,
@@ -50,11 +50,11 @@ function N(e) {
     locked: F,
     video: (H || z) && null == V,
     selected: N
-  }), K = (0, i.e7)([f.Z], () => f.Z.getNewThreadCount(n.guild_id, n.id)), Y = (0, u.n2)(n.guild_id, n.id), q = (0, i.e7)([h.Z], () => {
+  }), K = (0, i.e7)([h.Z], () => h.Z.getNewThreadCount(n.guild_id, n.id)), Y = (0, u.n2)(n.guild_id, n.id), q = (0, i.e7)([f.Z], () => {
     var e, t;
-    return null != (t = null == (e = h.Z.getGuild(n.guild_id)) ? true : e.features.has(E.oNc.COMMUNITY)) && t
+    return null != (t = null == (e = f.Z.getGuild(n.guild_id)) ? true : e.features.has(E.oNc.COMMUNITY)) && t
   });
-  if ((0, y.Z)(U)) return (0, r.jsx)(C.Z, {
+  if ((0, O.Z)(U)) return (0, r.jsx)(C.Z, {
     mentionsCount: U,
     isMentionLowImportance: G
   });
@@ -62,14 +62,14 @@ function N(e) {
     locked: D
   });
   if (L) return (0, r.jsx)(o.IGR, {
-    text: P.intl.string(P.t.y2b7CA),
+    text: I.intl.string(I.t.y2b7CA),
     color: l.Z.unsafe_rawColors.BRAND_260.css,
-    className: I.newChannel
+    className: P.newChannel
   });
   if (!M && k === S.i.ALL_MESSAGES && n.isForumLikeChannel() && null != K && K > 0) return (0, r.jsx)(o.Text, {
     variant: "text-xs/semibold",
     color: "text-brand",
-    children: P.intl.format(P.t.GkAbqa, {
+    children: I.intl.format(I.t.GkAbqa, {
       count: (0, o.NGo)(K)
     })
   });
@@ -78,20 +78,20 @@ function N(e) {
     color: "text-muted",
     children: (0, o.NGo)(Y)
   });
-  let X = null != (t = null == Z ? true : Z.length) ? t : 0;
+  let X = null != (t = null == w ? true : w.length) ? t : 0;
   return null != T && T && W ? (0, r.jsx)(x.Z, {
     userCount: X,
     video: H || z,
     channel: n
-  }) : w && (0, _.a)(Z) && q ? (0, r.jsx)(o.IGR, {
-    text: P.intl.string(P.t.dI3q4u),
+  }) : Z && (0, _.a)(w) && q ? (0, r.jsx)(o.IGR, {
+    text: I.intl.string(I.t.dI3q4u),
     color: l.Z.unsafe_rawColors.RED_400.css
   }) : null != V ? (0, r.jsx)(c.x3, {
     textColor: "text-feedback-positive",
     entry: {
       start: V
     }
-  }) : null != A && A && (0, O.u)(B) ? (0, r.jsx)(j.Z, {
+  }) : null != A && A && (0, y.u)(B) ? (0, r.jsx)(j.Z, {
     embeddedApps: B,
     muted: M
   }) : null

@@ -1,11 +1,12 @@
 /** Chunk was on 93338 **/
 /** chunk id: 217314, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk399606 = require("./399606.js"),
+  Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk7284 = require("./7284.js"),
   Chunk210975 = require("./210975.js"),
@@ -17,80 +18,51 @@ var Chunk399606 = require("./399606.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk97009 = require("./97009.js");
 
-function h(e) {
+function m(e) {
   let t = e.channel.getRecipientId(),
     n = e.channel.isSystemDM(),
-    h = (0, i.e7)([u.default], () => u.default.getUser(t)),
-    m = (0, i.e7)([s.Z], () => s.Z.getStatus(t)),
-    g = (0, i.e7)([s.Z], () => s.Z.isMobileOnline(t)),
-    _ = (0, i.e7)([c.Z], () => c.Z.getNickname(t)),
-    y = d.ZP.useUserTag(h),
-    j = (0, a.j)({
-      displayNameStyles: null == h ? true : h.displayNameStyles
+    m = (0, i.e7)([d.default], () => d.default.getUser(t)),
+    g = (0, i.e7)([c.Z], () => c.Z.getStatus(t)),
+    _ = (0, i.e7)([c.Z], () => c.Z.isMobileOnline(t)),
+    v = (0, i.e7)([u.Z], () => u.Z.getNickname(t)),
+    j = b.ZP.useUserTag(m),
+    y = (0, l.j)({
+      displayNameStyles: null == m ? true : m.displayNameStyles
     }),
-    v = (0, l.m$)({
+    x = (0, s.m$)({
       channelId: e.channel.id
     });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(o.nn4, {
-      children: p.intl.string(p.t.EJRzg4)
-    }), null != h && !n && (0, r.jsx)("div", {
+      children: f.intl.string(f.t.EJRzg4)
+    }), null != m && !n && (0, r.jsx)("div", {
       children: (0, r.jsx)(o.qEK, {
-        status: m,
-        isMobile: g,
-        className: f.avatar,
+        status: g,
+        isMobile: _,
+        className: h.avatar,
         size: o.EFr.SIZE_20,
-        "aria-label": d.ZP.getName(h),
-        src: h.getAvatarURL(true, 20)
+        "aria-label": b.ZP.getName(m),
+        src: m.getAvatarURL(true, 20)
       })
-    }), (0, r.jsx)(b.Z.Title, {
+    }), (0, r.jsx)(p.Z.Title, {
       level: e.level,
       onClick: e.handleClick,
       onContextMenu: e.handleContextMenu,
-      className: null != e.handleClick ? f.cursorPointer : null,
+      className: null != e.handleClick ? h.cursorPointer : null,
       children: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(o.DY3, {
-          text: y,
+          text: j,
           position: "bottom",
-          className: j,
-          children: null != _ ? _ : d.ZP.getName(h)
-        }), v && (0, r.jsx)(o.ua7, {
-          text: p.intl.string(p.t.QyZ4TU),
-          children: e => {
-            var t, n;
-            return (0, r.jsx)(o.tQf, (t = function(e) {
-              for (var t = 1; t < arguments.length; t++) {
-                var n = null != arguments[t] ? arguments[t] : {},
-                  r = Object.keys(n);
-                "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                  return Object.getOwnPropertyDescriptor(n, e).enumerable
-                }))), r.forEach(function(t) {
-                  var r;
-                  r = n[t], t in e ? Object.defineProperty(e, t, {
-                    value: r,
-                    enumerable: true,
-                    configurable: true,
-                    writable: true
-                  }) : e[t] = r
-                })
-              }
-              return e
-            }({}, e), n = n = {
-              size: "xs",
-              "aria-label": p.intl.string(p.t.VHXh8f),
-              color: o.TVs.colors.INTERACTIVE_NORMAL,
-              className: f.secureFramesIcon
-            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-              var n = Object.keys(e);
-              if (Object.getOwnPropertySymbols) {
-                var r = Object.getOwnPropertySymbols(e);
-                n.push.apply(n, r)
-              }
-              return n
-            })(Object(n)).forEach(function(e) {
-              Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-            }), t))
-          }
+          className: y,
+          children: null != v ? v : b.ZP.getName(m)
+        }), x && (0, r.jsx)(a.u, {
+          text: f.intl.string(f.t.QyZ4TU),
+          children: (0, r.jsx)(o.tQf, {
+            size: "xs",
+            "aria-label": f.intl.string(f.t.VHXh8f),
+            color: o.TVs.colors.INTERACTIVE_NORMAL,
+            className: h.secureFramesIcon
+          })
         })]
       })
     })]

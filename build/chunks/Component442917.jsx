@@ -243,7 +243,7 @@ class ef extends Chunk647438.PureComponent {
       timeout: 1800,
       children: e => {
         var t;
-        return (0, r.jsx)(j.Z, ed(ec({
+        return (0, r.jsx)(M.Z, ed(ec({
           title: o,
           backgroundKey: null != (t = null == n ? true : n.id) ? t : "",
           screenMessage: null == l ? this.getScreenMessage() : null,
@@ -312,7 +312,7 @@ class ef extends Chunk647438.PureComponent {
       return (0, r.jsxs)(r.Fragment, {
         children: [a ? this.renderViewersIcon() : null, e ? this.renderSettingsIcon() : null, t ? this.renderPopoutIcon() : null, i ? this.renderStopStreamButton() : null, n ? this.renderDisconnectButton() : null]
       })
-    }), el(this, "renderDisconnectButton", () => (0, r.jsx)(M.Z, {
+    }), el(this, "renderDisconnectButton", () => (0, r.jsx)(j.Z, {
       className: eo.rightTrayIcon,
       onClick: () => (0, v.v)(g.Z.VIDEO_PIP, v.d.DISCONNECT)
     })), el(this, "renderStopStreamButton", () => {

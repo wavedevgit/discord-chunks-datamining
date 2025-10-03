@@ -93,10 +93,10 @@ let O = "US",
 var x = function(e) {
     return e.MODAL_US = "modalUS", e.MODAL_INTL = "modalInternational", e.MODAL_US_WITH_NAME = "modalUSWithName", e.MODAL_INTL_WITH_NAME = "modalInternationalWithName", e.SETTINGS_US = "settingsUS", e.SETTINGS_INTL = "settingsInternational", e.SETTINGS_INTL_NO_NAME = "settingsInternationalWithoutName", e.SETTINGS_US_MOBILE = "settingsUSMobile", e.SETTINGS_INTL_MOBILE = "settingsInternationalMobile", e.SETTINGS_INTL_NO_NAME_MOBILE = "settingsInternationalWithoutNameMobile", e
   }(x || {}),
-  j = function(e) {
+  M = function(e) {
     return e.EDIT = "edit", e.CREATE = "create", e
-  }(j || {});
-let M = {
+  }(M || {});
+let j = {
     [O]: Chunk971809.G,
     [v]: Chunk588391.X
   },
@@ -264,7 +264,7 @@ let M = {
         }
       },
       renderInput(t) {
-        let n = M[e],
+        let n = j[e],
           r = null == t.value || "" === t.value || null != n && null != n.find(e => {
             let {
               value: n
@@ -476,7 +476,7 @@ class W extends(r = Chunk647438.PureComponent) {
     })
   }
 }
-h(W, "Layouts", x), h(W, "Modes", j), h(W, "defaultProps", {
+h(W, "Layouts", x), h(W, "Modes", M), h(W, "defaultProps", {
   name: "",
   country: "",
   line1: "",

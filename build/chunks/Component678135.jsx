@@ -43,8 +43,8 @@ function v(e) {
     pendingProfileEffect: D,
     pendingLegacyUsernameDisabled: L,
     pendingDisplayNameStyles: x,
-    avatarClassName: j,
-    containerClassName: M,
+    avatarClassName: M,
+    containerClassName: j,
     isTryItOutFlow: k = false,
     disabledInputs: U = false,
     hideCustomStatus: G = false,
@@ -80,7 +80,7 @@ function v(e) {
     displayProfile: W,
     themeType: b.l.POPOUT,
     pendingThemeColors: w,
-    className: a()(O.container, M),
+    className: a()(O.container, j),
     forceShowPremium: i,
     children: [(0, r.jsxs)("div", {
       className: O.header,
@@ -105,7 +105,7 @@ function v(e) {
         previewAvatarDecoration: z,
         previewTheme: X,
         previewPrimaryColor: Q,
-        className: j,
+        className: M,
         disabledInputs: U,
         isTryItOutFlow: k,
         onUpsellClick: () => null == v ? true : v({

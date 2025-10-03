@@ -7,7 +7,7 @@ require.d(exports, {
   H9: () => A,
   Kd: () => k,
   UR: () => v,
-  d2: () => M,
+  d2: () => j,
   dU: () => T
 }), require("./388685.js"), require("./704826.js"), require("./35282.js"), require("./415506.js"), require("./539854.js"), require("./781311.js");
 var Chunk921738 = require("./921738.js"),
@@ -211,11 +211,11 @@ function x(e) {
   return "meta" === e || "shift" === e || "alt" === e || "ctrl" === e
 }
 
-function j(e) {
+function M(e) {
   return e + "Key"
 }
 
-function M(e) {
+function j(e) {
   let t = {
     keyCode: 0,
     key: "",
@@ -231,7 +231,7 @@ function M(e) {
     if (null == r) return e.push(h(_({}, i), {
       combo: n
     })), e;
-    if (L.test(r) && x(r)) return t[j(r)] = true, e.map(e => (e[j(r)] = true, e));
+    if (L.test(r) && x(r)) return t[M(r)] = true, e.map(e => (e[M(r)] = true, e));
     {
       let t = C(r, d.Cg.BROWSER);
       return null != t && (i.keyCode = t), e.push(i), e

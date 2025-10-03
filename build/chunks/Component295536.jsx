@@ -1,4 +1,4 @@
-/** Chunk was on 9665 **/
+/** Chunk was on 50118 **/
 /** chunk id: 295536, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   d: () => p
@@ -17,16 +17,16 @@ function p(e) {
   var t;
   let {
     guildId: n
-  } = e, p = (0, i.e7)([s.default], () => s.default.getId()), h = (0, o.Z)(p, n)[0], f = null != (t = (0, l.IX)(null == h ? true : h.application_id).data) ? t : true;
-  return null == f ? null : (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(u.L, {
+  } = e, p = (0, r.e7)([s.default], () => s.default.getId()), h = (0, o.Z)(p, n)[0], f = null != (t = (0, l.IX)(null == h ? true : h.application_id).data) ? t : true;
+  return null == f ? null : (0, i.jsxs)(i.Fragment, {
+    children: [(0, i.jsx)(u.L, {
       label: f.name,
-      icon: (0, r.jsx)(a.Z, {
+      icon: (0, i.jsx)(a.Z, {
         game: f,
         className: d.icon
       }),
       setStatus: () => (0, c.XE)(f.id, true)
-    }), (0, r.jsx)("div", {
+    }), (0, i.jsx)("div", {
       role: "separator",
       className: d.separator
     })]

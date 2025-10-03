@@ -66,7 +66,7 @@ function w(e) {
       onOpenProfile: L,
       tags: (0, r.jsx)(m.Z, {
         displayProfile: w,
-        themeType: T.l.SIDEBAR
+        themeType: P.l.SIDEBAR
       }),
       nicknameIcons: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(_.Z, {
@@ -77,14 +77,14 @@ function w(e) {
           onOpenProfile: L
         })]
       })
-    }), M === P.OGo.PENDING_INCOMING && (0, r.jsx)(E.Z.Overlay, {
-      children: (0, r.jsx)(j.Z, {
+    }), M === T.OGo.PENDING_INCOMING && (0, r.jsx)(E.Z.Overlay, {
+      children: (0, r.jsx)(x.Z, {
         user: t,
         channelId: A.id,
         applicationId: k
       })
     }), U.map(e => (0, r.jsx)(E.Z.Overlay, {
-      children: (0, r.jsx)(j.Z, {
+      children: (0, r.jsx)(x.Z, {
         user: t,
         isGameRelationship: true,
         applicationId: e.applicationId,
@@ -132,13 +132,13 @@ function w(e) {
       }), G.length > 0 && (0, r.jsx)(C.Z, {
         heading: N.intl.string(N.t["Uv/eT0"]),
         headingColor: "header-primary",
-        children: (0, r.jsx)(O.Z, {
+        children: (0, r.jsx)(j.Z, {
           applicationIds: G
         })
       }), (0, r.jsx)(C.Z, {
         heading: t.bot ? N.intl.string(N.t["A//N4u"]) : N.intl.string(N.t.a6XYDw),
         headingColor: "header-primary",
-        children: (0, r.jsx)(x.Z, {
+        children: (0, r.jsx)(O.Z, {
           userId: t.id
         })
       })]

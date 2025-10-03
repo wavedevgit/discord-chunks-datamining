@@ -118,7 +118,7 @@ function R(e) {
       children: e
     }, t)
   }
-  let j = g ? (0, r.jsxs)(r.Fragment, {
+  let M = g ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(h, {
       lineClamp: R || 2 === E ? 2 : 3,
       children: (0, r.jsx)(l.Text, {
@@ -173,7 +173,7 @@ function R(e) {
           })
         }), (0, r.jsx)(l.LZC, {
           size: 9
-        }), j]
+        }), M]
       })]
     }), (0, r.jsx)(N, {
       coverImageAsset: null == o ? true : o.cover_image_asset,

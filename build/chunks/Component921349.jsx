@@ -93,7 +93,7 @@ function x(e) {
   return e.label
 }
 
-function j(e) {
+function M(e) {
   let {
     active: t,
     loadableOptions: n,
@@ -150,7 +150,7 @@ function j(e) {
   }
 }
 
-function M(e, t) {
+function j(e, t) {
   return null == t ? [] : (Array.isArray(t) ? t : [t]).map(t => "object" == typeof t && (null == t || "value" in t) ? t : e.find(e => e.value === t)).filter(Boolean)
 }
 let k = Chunk647438.forwardRef(function(e, t) {
@@ -209,14 +209,14 @@ let k = Chunk647438.forwardRef(function(e, t) {
     ref: ev,
     width: eI
   } = (0, y.ZP)(), eT = i.useRef(null), [eS, eA] = i.useState(null), [eC, eN] = i.useState(false), [eR, eP] = i.useState(null), [ew, eD] = i.useState(false), eL = i.useRef(null), ex = i.useRef(null), {
-    options: ej,
-    loading: eM,
+    options: eM,
+    loading: ej,
     onQueryChange: ek
-  } = j({
+  } = M({
     active: eC,
     loadableOptions: n,
     debounceTime: W
-  }), eU = i.useMemo(() => M(ej, a), [ej, a]), eG = i.useMemo(() => eU.map(e => e.value), [eU]), eB = eU[eU.length - 1], eZ = (0, I.Z)(eB), eF = i.useId(), eV = i.useId(), eH = i.useCallback(e => {
+  }), eU = i.useMemo(() => j(eM, a), [eM, a]), eG = i.useMemo(() => eU.map(e => e.value), [eU]), eB = eU[eU.length - 1], eZ = (0, I.Z)(eB), eF = i.useId(), eV = i.useId(), eH = i.useCallback(e => {
     eC === e || R || (eN(e), e ? null == E || E() : null == v || v())
   }, [R, v, E, eC]), eY = i.useCallback(e => {
     eC && !e && eH(false)
@@ -259,11 +259,11 @@ let k = Chunk647438.forwardRef(function(e, t) {
       disableClickOnSpace: true
     }),
     eQ = (0, I.Z)(eX),
-    eJ = (0, I.Z)(ej);
+    eJ = (0, I.Z)(eM);
   i.useEffect(() => {
     let e = eJ.current,
       t = eZ.current;
-    eC && null != t && !eM && requestAnimationFrame(() => {
+    eC && null != t && !ej && requestAnimationFrame(() => {
       let n = eL.current,
         r = e.indexOf(t);
       null == n || n.scrollToIndex({
@@ -271,9 +271,9 @@ let k = Chunk647438.forwardRef(function(e, t) {
         row: r
       })
     })
-  }, [eC, eM, eJ, eZ]), i.useEffect(() => {
+  }, [eC, ej, eJ, eZ]), i.useEffect(() => {
     let e = eQ.current;
-    if (eC && !eM) {
+    if (eC && !ej) {
       var t;
       let n = eT.current;
       if (null != n) {
@@ -289,7 +289,7 @@ let k = Chunk647438.forwardRef(function(e, t) {
         n = null != t ? String(t.value) : null;
       e.setFocus(n), eA(null)
     }
-  }, [eC, eM, eQ, eZ]), i.useLayoutEffect(() => {
+  }, [eC, ej, eQ, eZ]), i.useLayoutEffect(() => {
     eC || (_ ? eP("") : null != eB && eP(eB.label))
   }, [_, eB, eC]), i.useLayoutEffect(() => {
     _ && eP("")
@@ -298,7 +298,7 @@ let k = Chunk647438.forwardRef(function(e, t) {
     let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
     if (null == e) return void l(_ ? [] : true);
     let r = "function" == typeof n,
-      i = r ? ej.find(t => t.value === e) : e;
+      i = r ? eM.find(t => t.value === e) : e;
     if (_) {
       let n = null != a ? a : [];
       if (n.some(t => (r ? t.value : t) === e) ? l(n.filter(t => (r ? t.value : t) !== e)) : l([...n, i]), t) {
@@ -307,7 +307,7 @@ let k = Chunk647438.forwardRef(function(e, t) {
       }
     } else l(i);
     eA(null), (!_ || m) && eH(false), eD(false), ea && eP("")
-  }, [n, ej, _, m, ea, l, a, eH]);
+  }, [n, eM, _, m, ea, l, a, eH]);
   i.useLayoutEffect(() => {
     if (k) {
       var e;
@@ -327,13 +327,13 @@ let k = Chunk647438.forwardRef(function(e, t) {
           eH(true)
       }
     }, [eH, eC]),
-    e2 = ej;
-  ew && null != eR && false !== V && (e2 = "function" == typeof V ? V(ej, eR) : (0, s.Lu)(ej, eR, null != ei ? ei : L)), i.useEffect(() => {
+    e2 = eM;
+  ew && null != eR && false !== V && (e2 = "function" == typeof V ? V(eM, eR) : (0, s.Lu)(eM, eR, null != ei ? ei : L)), i.useEffect(() => {
     let e = eL.current;
     null == e || e.scrollToTop()
   }, [eR]), i.useEffect(() => {
-    !eM && ew && null !== eR && requestAnimationFrame(() => eX.focusFirstVisibleItem())
-  }, [eM, ew, eR, eX]);
+    !ej && ew && null !== eR && requestAnimationFrame(() => eX.focusFirstVisibleItem())
+  }, [ej, ew, eR, eX]);
   let e3 = _ ? Y : H,
     e4 = i.useRef(null),
     {
@@ -356,7 +356,7 @@ let k = Chunk647438.forwardRef(function(e, t) {
           updatePosition: i
         } = e;
         return (0, r.jsx)(U, {
-          loading: eM,
+          loading: ej,
           multi: !!_,
           listRef: eL,
           listId: eF,
@@ -437,7 +437,7 @@ let k = Chunk647438.forwardRef(function(e, t) {
                     children: (0, r.jsx)(e3, {
                       query: eR,
                       selectedOptions: eU,
-                      loading: eM,
+                      loading: ej,
                       renderOptionPrefix: q,
                       renderOptionSuffix: X,
                       isDisabled: R,

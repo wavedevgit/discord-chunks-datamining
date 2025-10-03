@@ -97,8 +97,8 @@ let A = Chunk647438.forwardRef((e, t) => {
     mediaLayoutType: D,
     limitResponsiveWidth: L = true,
     accessory: x,
-    zoomable: j = true,
-    original: M,
+    zoomable: M = true,
+    original: j,
     children: k = e => {
       let {
         src: t,
@@ -158,18 +158,18 @@ let A = Chunk647438.forwardRef((e, t) => {
     children: (0, r.jsxs)("div", I(O({
       ref: t,
       className: o()("imageWrapper", g.imageWrapper, {
-        [g.imageZoom]: j,
+        [g.imageZoom]: M,
         [g.imageWrapperBackground]: c !== p.zo9.READY,
         [g.clickable]: null != G
       }, a),
       style: N(K, L, F, D)
     }, H), {
-      children: [null != M && (0, r.jsx)("a", {
+      children: [null != j && (0, r.jsx)("a", {
         tabIndex: false,
         onClick: G,
         "aria-hidden": true,
         className: g.originalLink,
-        href: M,
+        href: j,
         ref: Y,
         "data-role": "img",
         "data-safe-src": null != Z ? Z : f

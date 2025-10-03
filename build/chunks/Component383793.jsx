@@ -2,7 +2,7 @@
 /** chunk id: 383793, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  z: () => C
+  z: () => y
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk856521 = require("./856521.js");
 
-function O(e) {
+function C(e) {
   let {
     originalVanityURLCode: t
   } = e;
@@ -33,8 +33,8 @@ function O(e) {
     return (0, r.jsx)(s.Text, {
       variant: "text-sm/medium",
       color: "text-secondary",
-      className: _.vanityInfo,
-      children: v.intl.format(v.t["1qTOvr"], {
+      className: v.vanityInfo,
+      children: _.intl.format(_.t["1qTOvr"], {
         urlText: e,
         urlValue: e
       })
@@ -43,14 +43,14 @@ function O(e) {
   return null
 }
 
-function y(e) {
+function O(e) {
   let {
     guild: t,
     vanityURLCode: n,
     vanityURLUses: l,
     originalVanityURLCode: a,
     errorDetails: o
-  } = e, c = (null == t ? true : t.features.has(x.oNc.VANITY_URL)) === true, d = i.useCallback(() => {
+  } = e, c = (null == t ? true : t.features.has(b.oNc.VANITY_URL)) === true, d = i.useCallback(() => {
     (0, g.Gy)("")
   }, []), u = i.useCallback(e => {
     (0, g.Gy)(e)
@@ -59,37 +59,37 @@ function y(e) {
   let m = null != o ? (0, p.i)(o.code) : null;
   return (0, r.jsxs)(s.Zbd, {
     editable: true,
-    className: _.editVanityUrlCard,
+    className: v.editVanityUrlCard,
     children: [(0, r.jsxs)("div", {
-      className: _.formTitleField,
+      className: v.formTitleField,
       children: [(0, r.jsx)(s.X6q, {
         variant: "heading-sm/semibold",
         color: "text-default",
-        children: v.intl.string(v.t["6oJyq6"])
+        children: _.intl.string(_.t["6oJyq6"])
       }), n.length > 0 ? (0, r.jsx)(s.Text, {
         variant: "text-sm/medium",
         color: "text-secondary",
-        children: v.intl.format(v.t.MVWOUV, {
+        children: _.intl.format(_.t.MVWOUV, {
           uses: l
         })
       }) : null]
-    }), (0, r.jsx)(b.Z, {
+    }), (0, r.jsx)(x.Z, {
       value: n,
       onChange: u,
       error: m,
       disabled: !c
     }), null != a && a.length > 0 ? (0, r.jsx)("div", {
-      className: _.removeVanityUrlButton,
+      className: v.removeVanityUrlButton,
       children: (0, r.jsx)(s.zxk, {
         variant: "critical-secondary",
         onClick: d,
-        text: v.intl.string(v.t["3ggb6O"])
+        text: _.intl.string(_.t["3ggb6O"])
       })
     }) : null]
   })
 }
 
-function C(e) {
+function y(e) {
   let {
     guild: t,
     vanityURLCode: n,
@@ -97,28 +97,28 @@ function C(e) {
     originalVanityURLCode: c,
     errorDetails: g
   } = e, {
-    analyticsLocations: b
-  } = (0, o.ZP)(), v = (0, d.g1)(t.id, "GuildSettingsBoostPerks"), C = i.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), v ? (m.Z.close(), (0, u.Z)(t.id, a.Z.GUILD_POWERUPS_GUILD_SETTINGS_VANITY_URL, l.A$)) : (0, f.E6)({
+    analyticsLocations: x
+  } = (0, o.ZP)(), _ = (0, d.g1)(t.id, "GuildSettingsBoostPerks"), y = i.useCallback(e => {
+    e.preventDefault(), e.stopPropagation(), _ ? (m.Z.close(), (0, u.Z)(t.id, a.Z.GUILD_POWERUPS_GUILD_SETTINGS_VANITY_URL, l.A$)) : (0, f.E6)({
       guild: t,
-      analyticsLocations: b,
-      analyticsSection: x.jXE.GUILD_SETTINGS_VANITY_URL,
-      analyticsObject: x.qAy.BUTTON_CTA,
+      analyticsLocations: x,
+      analyticsSection: b.jXE.GUILD_SETTINGS_VANITY_URL,
+      analyticsObject: b.qAy.BUTTON_CTA,
       perks: (0, j.WW)(),
-      targetPremiumGuildTier: x.Eu4.TIER_3
+      targetPremiumGuildTier: b.Eu4.TIER_3
     })
-  }, [b, t, v]);
+  }, [x, t, _]);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, p.p)(t) ? (0, r.jsx)(y, {
+    children: [(0, p.p)(t) ? (0, r.jsx)(O, {
       guild: t,
       vanityURLCode: n,
       vanityURLUses: s,
       originalVanityURLCode: c,
       errorDetails: g
     }) : (0, r.jsx)(h.P, {
-      onClick: C,
-      className: _.upsellButton
-    }), (0, r.jsx)(O, {
+      onClick: y,
+      className: v.upsellButton
+    }), (0, r.jsx)(C, {
       originalVanityURLCode: c
     })]
   })

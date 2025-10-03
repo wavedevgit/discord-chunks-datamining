@@ -157,8 +157,8 @@ class I extends(r = Chunk647438.PureComponent) {
       getAriaValueText: D,
       barClassName: L,
       grabberClassName: x,
-      grabberStyles: j = {},
-      markerPosition: M = 0,
+      grabberStyles: M = {},
+      markerPosition: j = 0,
       "aria-hidden": k,
       "aria-label": U,
       "aria-labelledby": G,
@@ -179,8 +179,8 @@ class I extends(r = Chunk647438.PureComponent) {
         return (0, i.jsx)("div", {
           className: s()(h.mark, {
             [h.defaultValue]: r,
-            [h.markAbove]: 0 === M,
-            [h.markBelow]: 1 === M
+            [h.markAbove]: 0 === j,
+            [h.markBelow]: 1 === j
           }),
           style: {
             left: "".concat(e, "%")
@@ -266,7 +266,7 @@ class I extends(r = Chunk647438.PureComponent) {
                   forceOpen: n || r && p.Z.keyboardModeEnabled,
                   children: e => (0, i.jsx)("div", b(g({}, e), {
                     className: s()(h.grabber, x),
-                    style: b(g({}, j), {
+                    style: b(g({}, M), {
                       left: z
                     }),
                     onMouseDown: this.handleMouseDown,

@@ -127,15 +127,15 @@ function C(e) {
     onQueryChange: P
   } = e, [w, D] = i.useState(""), L = i.useCallback(e => {
     D(e), null == P || P(e)
-  }, [P]), [x] = i.useState(true), [j, M] = i.useState(null), k = i.useId(), U = i.useRef(null);
+  }, [P]), [x] = i.useState(true), [M, j] = i.useState(null), k = i.useId(), U = i.useRef(null);
   i.useLayoutEffect(() => {
-    let e = document.querySelector("[".concat(y, '="').concat(j, '"]')),
+    let e = document.querySelector("[".concat(y, '="').concat(M, '"]')),
       t = U.current;
     null != t && null != e && t.scrollIntoViewNode({
       node: e,
       padding: 12
     })
-  }, [j]);
+  }, [M]);
   let G = n(w),
     B = 0 === G.length,
     Z = null != R ? R : f.intl.string(f.t["4o4z3d"]),
@@ -155,7 +155,7 @@ function C(e) {
       })
     }), []),
     Y = i.useCallback((e, t) => {
-      M(t);
+      j(t);
       let n = document.querySelector(e),
         r = U.current;
       null != r && null != n && r.scrollIntoViewNode({
@@ -196,11 +196,11 @@ function C(e) {
               query: w,
               onChange: L,
               onKeyDown: i,
-              onBlur: () => M(null),
+              onBlur: () => j(null),
               onClear: () => L(""),
               inputProps: {
                 "aria-multiline": false,
-                "aria-activedescendant": null != j ? j : true
+                "aria-activedescendant": null != M ? M : true
               }
             })
           }), (0, r.jsx)("div", {
@@ -216,7 +216,7 @@ function C(e) {
               })]
             }) : (0, r.jsx)(A.Provider, {
               value: {
-                activeDescendant: j,
+                activeDescendant: M,
                 selected: a,
                 setSelected: u,
                 itemToString: C

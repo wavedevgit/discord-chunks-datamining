@@ -2,7 +2,7 @@
 /** chunk id: 88751, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => j
+  ZP: () => M
 }), require("./388685.js");
 var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -165,7 +165,7 @@ class x extends(r = Chunk442837.ZP.Store) {
   }
 }
 g(x, "displayName", "StageChannelRoleStore");
-let j = new x(Chunk570140.Z, {
+let M = new x(Chunk570140.Z, {
   CHANNEL_UPDATES: C,
   CONNECTION_OPEN: D,
   GUILD_MEMBER_REMOVE: R,

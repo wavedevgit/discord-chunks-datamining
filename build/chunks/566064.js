@@ -90,18 +90,18 @@ function f(e) {
       let a = u(c(t, n, r));
       null != a && (R(true), w(a))
     }, [g, f, _, m, t, w]),
-    [x, j] = r.useState(false);
+    [x, M] = r.useState(false);
   r.useEffect(() => {
     if (!x || !T) return;
-    j(false);
+    M(false);
     let e = u(c(t, f, _));
     if (null != e) return void w(e);
     S(false);
     let n = u(c(t));
     null != n && w(n)
   }, [t, x, T, w, f, _]);
-  let M = r.useCallback(e => {
-    v.current && null == e && j(true)
+  let j = r.useCallback(e => {
+    v.current && null == e && M(true)
   }, []);
   r.useEffect(() => {
     T && A && null != I && (w(I), C(false))
@@ -162,8 +162,8 @@ function f(e) {
         tabIndex: E && e === f && n === _ ? 0 : false,
         onFocus: P.get("".concat(e, ",").concat(n))
       };
-      return e === f && n === _ && (r.ref = M), r
-    }, [t, E, f, _, P, M]),
+      return e === f && n === _ && (r.ref = j), r
+    }, [t, E, f, _, P, j]),
     V = r.useCallback(e => ({
       role: "row",
       "aria-rowindex": e + 1

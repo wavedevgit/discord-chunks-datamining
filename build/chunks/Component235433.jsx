@@ -44,9 +44,9 @@ function v(e) {
       analyticsLocations: S,
       guildId: n
     })
-  }, [S, D, n]), j = (0, i.useCallback)(() => {
+  }, [S, D, n]), M = (0, i.useCallback)(() => {
     (0, s.NI)(null), _.default.track(g.rMx.DISPLAY_NAME_STYLES_REMOVED)
-  }, []), M = (0, i.useCallback)(() => {
+  }, []), j = (0, i.useCallback)(() => {
     (0, f.N_)(null)
   }, []);
   return I || R ? (0, r.jsx)(m.Z, {
@@ -69,12 +69,12 @@ function v(e) {
         variant: "secondary",
         size: "sm",
         text: b.intl.string(y.default.ymq8WV),
-        onClick: j
+        onClick: M
       }), null != n && R && (0, r.jsx)(o.zxk, {
         variant: "secondary",
         size: "sm",
         text: b.intl.string(y.default["j/KRxc"]),
-        onClick: M
+        onClick: j
       })]
     })
   }) : null

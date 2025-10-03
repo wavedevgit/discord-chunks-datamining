@@ -38,8 +38,8 @@ function C(e) {
     user: n,
     currentUser: t,
     guildId: C,
-    channelId: w,
-    messageId: _,
+    channelId: _,
+    messageId: w,
     roleId: D,
     sessionId: R,
     initialSection: L,
@@ -48,17 +48,17 @@ function C(e) {
     openedAt: k,
     onClose: B,
     sourceAnalyticsLocations: F = []
-  } = e, V = C === T.ME ? true : C, G = (0, u.ZP)(n.id, V), z = c.ZP.getName(V, w, n), K = (0, a.Dt)(), {
+  } = e, V = C === P.ME ? true : C, G = (0, u.ZP)(n.id, V), z = c.ZP.getName(V, _, n), K = (0, a.Dt)(), {
     analyticsLocations: W
   } = (0, s.ZP)([...F, o.Z.USER_PROFILE_MODAL]), Y = (0, d.ZB)({
     layout: "MODAL",
     userId: n.id,
     sourceSessionId: R,
     guildId: V,
-    channelId: w,
-    messageId: _,
+    channelId: _,
+    messageId: w,
     roleId: D
-  }), H = (0, P.Z)(n);
+  }), H = (0, N.Z)(n);
   return (0, l.jsx)(s.Gt, {
     value: W,
     children: (0, l.jsx)(d.Mt, {
@@ -83,7 +83,7 @@ function C(e) {
               })
             })
           }),
-          children: (0, l.jsxs)(j.Z, {
+          children: (0, l.jsxs)(x.Z, {
             user: n,
             displayProfile: G,
             themeType: A.l.MODAL,
@@ -104,9 +104,9 @@ function C(e) {
                   user: n,
                   displayProfile: G,
                   guildId: V,
-                  channelId: w,
+                  channelId: _,
                   themeType: A.l.MODAL
-                }), (0, l.jsx)(I.Z, {
+                }), (0, l.jsx)(Z.Z, {
                   user: n,
                   themeType: A.l.MODAL,
                   hasEntered: U === i.Dvm.ENTERED,
@@ -114,12 +114,12 @@ function C(e) {
                   disableToolbar: true
                 }), (0, l.jsxs)("div", {
                   className: S.headerButtons,
-                  children: [(0, l.jsx)(O.Z, {
+                  children: [(0, l.jsx)(I.Z, {
                     type: "text",
                     userId: n.id,
                     onClose: r.Z.popAll,
                     className: S.messageTextButton
-                  }), (0, l.jsx)(O.Z, {
+                  }), (0, l.jsx)(I.Z, {
                     type: "icon",
                     userId: n.id,
                     onClose: r.Z.popAll,
@@ -134,7 +134,7 @@ function C(e) {
               })]
             }), (0, l.jsxs)("div", {
               className: S.body,
-              children: [(0, l.jsx)(x.Z, {
+              children: [(0, l.jsx)(j.Z, {
                 className: S.username,
                 user: n,
                 nickname: z,
@@ -149,13 +149,13 @@ function C(e) {
                   themeType: A.l.MODAL,
                   onClose: B
                 })
-              }), (0, l.jsx)(Z.Z, {
+              }), (0, l.jsx)(O.Z, {
                 user: n,
                 currentUser: t,
                 displayProfile: G,
                 guildId: V,
                 items: H,
-                initialSection: null != L ? L : N.oh.BOT_INFO,
+                initialSection: null != L ? L : T.oh.BOT_INFO,
                 initialSubsection: M,
                 onClose: B
               })]

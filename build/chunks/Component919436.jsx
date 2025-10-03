@@ -38,7 +38,7 @@ function N(e, t, n) {
   }) : e[t] = n, e
 }
 
-function w(e) {
+function Z(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -51,7 +51,7 @@ function w(e) {
   return e
 }
 
-function Z(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -72,11 +72,11 @@ function A(e) {
   switch (e) {
     case "height":
     case "opacity":
-      return w({
+      return Z({
         duration: 150
       }, T);
     case "scale":
-      return w({}, T);
+      return Z({}, T);
     default:
       throw Error("DirectMessage: getSpringConfigs() - Invalid spring ".concat(String(e)))
   }
@@ -159,11 +159,11 @@ class R extends(r = Chunk647438.PureComponent) {
       isCurrentUserInThisDMCall: u,
       unread: d,
       isGDMFacepileEnabled: p,
-      treeItemProps: f
+      treeItemProps: h
     } = this.props, {
-      hovered: h,
+      hovered: f,
       animating: m
-    } = this.state, b = module.isMultiUserDM() && null == module.icon && Chunk43267, _ = () => (0, Chunk951288.jsx)(Chunk481060.LYs, w({
+    } = this.state, b = module.isMultiUserDM() && null == module.icon && Chunk43267, _ = () => (0, Chunk951288.jsx)(Chunk481060.LYs, Z({
       to: Chunk981631.Z5c.CHANNEL(Chunk981631.ME, module.id),
       onMouseEnter: () => this.setState({
         hovered: true
@@ -230,12 +230,12 @@ class R extends(r = Chunk647438.PureComponent) {
     }), N(this, "handleContextMenu", e => {
       let {
         channel: t
-      } = this.props, r = t.type === S.d4z.DM ? y.default.getUser(t.getRecipientId()) : null;
+      } = this.props, r = t.type === S.d4z.DM ? O.default.getUser(t.getRecipientId()) : null;
       null != r ? (0, u.jW)(e, async () => {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("98783"), n.e("56826"), n.e("31899")]).then(n.bind(n, 131404));
-        return n => (0, i.jsx)(e, Z(w({}, n), {
+        return n => (0, i.jsx)(e, w(Z({}, n), {
           channel: t,
           user: r
         }))
@@ -243,7 +243,7 @@ class R extends(r = Chunk647438.PureComponent) {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("25421")]).then(n.bind(n, 354741));
-        return n => (0, i.jsx)(e, Z(w({}, n), {
+        return n => (0, i.jsx)(e, w(Z({}, n), {
           channel: t,
           selected: false
         }))
@@ -259,16 +259,16 @@ N(R, "defaultProps", {
 });
 let D = Chunk647438.forwardRef(function(e, t) {
   let n = e.channel.id,
-    r = (0, f.ZP)(e.channel),
+    r = (0, h.ZP)(e.channel),
     l = (0, a.Ie)(n, 2),
     o = (0, s.e7)([b.Z], () => b.Z.getChannelId(), []),
     u = (0, s.e7)([d.Z], () => null != o ? d.Z.getMode(o) : S.WtW.VOICE, [o]),
     p = (0, s.e7)([m.Z], () => m.Z.getAllApplicationStreamsForChannel(n).length > 0),
-    g = (0, s.e7)([O.Z], () => O.Z.getChannelId(), []),
-    y = (0, s.e7)([_.ZP], () => _.ZP.getMentionCount(n), [n]),
+    g = (0, s.e7)([y.Z], () => y.Z.getChannelId(), []),
+    O = (0, s.e7)([_.ZP], () => _.ZP.getMentionCount(n), [n]),
     {
       isFacepileEnabled: v
-    } = h.Z.useExperiment({
+    } = f.Z.useExperiment({
       location: "unread_direct_message"
     }, {
       autoTrackExposure: false
@@ -278,12 +278,12 @@ let D = Chunk647438.forwardRef(function(e, t) {
     C = false;
   j && (x = u === S.WtW.VOICE, C = u === S.WtW.VIDEO);
   let E = (0, c.dQu)(c.TVs.modules.guildbar.AVATAR_SIZE);
-  return (0, i.jsx)(R, Z(w({}, e), {
+  return (0, i.jsx)(R, w(Z({}, e), {
     ref: t,
     channelName: r,
-    unread: y > 0,
+    unread: O > 0,
     selected: g === n,
-    badge: y,
+    badge: O,
     audio: x,
     video: C,
     stream: p,

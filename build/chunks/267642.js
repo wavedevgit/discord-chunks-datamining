@@ -22,9 +22,9 @@ require.d(exports, {
   ig: () => A,
   nL: () => H,
   nW: () => P,
-  tb: () => j,
+  tb: () => M,
   tl: () => K,
-  vx: () => M,
+  vx: () => j,
   y4: () => Y,
   yw: () => V
 }), require("./583741.js"), require("./415506.js"), require("./388685.js"), require("./642613.js");
@@ -278,11 +278,11 @@ function x(e) {
   return null != n ? n : g.Eu4.NONE
 }
 
-function j(e, t) {
+function M(e, t) {
   return null == t || null != e && e >= t
 }
 
-function M(e) {
+function j(e) {
   return i().values(e).filter(e => e.isAvailable())
 }
 
@@ -291,7 +291,7 @@ function k(e) {
     fractionalState: t
   } = e, n = d.Z.getPremiumTypeSubscription();
   u.Z.hasFetched || u.Z.isFetching || (0, o.X8)();
-  let r = M(u.Z.boostSlots),
+  let r = j(u.Z.boostSlots),
     i = null == n ? true : n.isPausedOrPausePending,
     a = r.length > 0;
   if (i && t === b.a$.NONE && !a) return y.intl.string(y.t.mOWsFx);

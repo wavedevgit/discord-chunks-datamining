@@ -2,13 +2,14 @@
 /** chunk id: 220779, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A7: () => T,
-  dE: () => A
+  A7: () => S,
+  dE: () => C
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
+  Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk410030 = require("./410030.js"),
   Chunk541716 = require("./541716.js"),
@@ -22,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk608476 = require("./608476.js");
 
-function b(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -31,20 +32,20 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
 }
 
-function O(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -55,59 +56,59 @@ function O(e, t) {
   return n
 }
 
-function v(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
+function I(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let I = (0, Chunk131704.kt)({
+let T = (0, Chunk131704.kt)({
   id: "1",
   type: Chunk981631.d4z.DM
 });
 
-function T(e) {
+function S(e) {
   let {
     placeholder: t,
     onEnter: n,
     setEditorRef: a,
     showEmojiButton: s = false,
     renderAttachButton: l,
-    autoFocus: f = true,
+    autoFocus: c = true,
     onFocus: _,
     channel: p,
-    className: m
-  } = e, [g, b] = i.useState(""), [O, T] = i.useState((0, u.JM)("")), S = () => {
-    b(""), T((0, u.JM)(""))
-  }, A = c.Ie.ATOMIC_REACTOR_REPLY_INPUT, C = i.useRef(null), N = () => {
+    className: h
+  } = e, [g, E] = i.useState(""), [y, v] = i.useState((0, d.JM)("")), S = () => {
+    E(""), v((0, d.JM)(""))
+  }, A = u.Ie.ATOMIC_REACTOR_REPLY_INPUT, C = i.useRef(null), N = () => {
     if (null == C.current) return "top";
     let e = C.current.getBoundingClientRect(),
       t = window.innerHeight;
     return e.top < t / 2 ? "bottom" : "top"
   };
-  return (0, r.jsx)(d.ZP, {
+  return (0, r.jsx)(f.ZP, {
     ref: C,
     placeholder: t,
-    editorClassName: m,
-    className: o()(E.replyInput, m),
+    editorClassName: h,
+    className: o()(b.replyInput, h),
     showRemainingCharsAfterCount: false,
     allowNewLines: false,
-    maxCharacterCount: h.z,
-    channel: null != p ? p : I,
+    maxCharacterCount: m.z,
+    channel: null != p ? p : T,
     onChange: (e, t, n) => {
-      b(t), T(n)
+      E(t), v(n)
     },
-    type: s ? v(y({}, A), {
+    type: s ? I(O({}, A), {
       emojis: {
         button: true
       }
     }) : A,
     textValue: g,
-    richValue: O,
+    richValue: y,
     onSubmit: e => {
       let {
         value: t
       } = e;
-      return t.length > h.z ? Promise.resolve({
+      return t.length > m.z ? Promise.resolve({
         shouldClear: false,
         shouldRefocus: true
       }) : (n(t), S(), Promise.resolve({
@@ -116,7 +117,7 @@ function T(e) {
       }))
     },
     setEditorRef: a,
-    focused: f,
+    focused: c,
     onFocus: _,
     disableThemedBackground: true,
     emojiPickerCloseOnModalOuterClick: true,
@@ -125,7 +126,7 @@ function T(e) {
     renderAttachButton: l
   })
 }
-let S = (e, t) => {
+let A = (e, t) => {
     i.useEffect(() => {
       let n = t => {
           "Escape" === t.key && e()
@@ -139,27 +140,27 @@ let S = (e, t) => {
       }
     }, [e, t])
   },
-  A = e => {
+  C = e => {
     let {
       onSelectEmoji: t,
       onClick: n
-    } = e, a = (0, l.ZP)(), [o, c] = i.useState(false), u = i.useRef(null), d = i.useRef(null);
-    return S(() => c(false), u), (0, r.jsx)(s.yRy, {
-      targetElementRef: d,
+    } = e, a = (0, c.ZP)(), [o, u] = i.useState(false), d = i.useRef(null), f = i.useRef(null);
+    return A(() => u(false), d), (0, r.jsx)(l.yRy, {
+      targetElementRef: f,
       align: "right",
       position: "top",
       shouldShow: o,
       disablePointerEvents: false,
-      renderPopout: () => (0, r.jsx)(s.f6W, {
+      renderPopout: () => (0, r.jsx)(l.f6W, {
         theme: a,
         children: e => (0, r.jsx)("div", {
           className: e,
-          ref: u,
-          children: (0, r.jsx)(_.$, {
-            messageId: m.lds,
-            channel: I,
+          ref: d,
+          children: (0, r.jsx)(p.$, {
+            messageId: g.lds,
+            channel: T,
             closePopout: () => {
-              c(false)
+              u(false)
             },
             onSelectEmoji: e => {
               let {
@@ -171,25 +172,24 @@ let S = (e, t) => {
                 emoji: n,
                 willClose: r,
                 isBurst: i
-              }), c(false))
+              }), u(false))
             }
           })
         })
       }),
-      children: () => (0, r.jsx)(s.ua7, {
-        text: g.intl.string(g.t.lfIHs7),
-        children: e => (0, r.jsx)("div", v(y({
-          ref: d
-        }, e), {
-          className: E.reaction,
-          children: (0, r.jsx)(f.Z, {
+      children: () => (0, r.jsx)(s.u, {
+        text: E.intl.string(E.t.lfIHs7),
+        children: (0, r.jsx)("div", {
+          ref: f,
+          className: b.reaction,
+          children: (0, r.jsx)(_.Z, {
             active: false,
             tabIndex: 0,
             onClick: () => {
-              null == n || n(), c(true)
+              null == n || n(), u(true)
             }
           })
-        }))
+        })
       })
     })
   }

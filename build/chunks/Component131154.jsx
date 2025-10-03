@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  r = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk140764 = require("./140764.js");
@@ -15,10 +15,10 @@ function s(e) {
   let {
     guild: n,
     speakers: t,
-    speakerCount: r,
+    speakerCount: a,
     className: s
   } = e, d = t.slice(0, 5), u = d.map(e => {
-    var t, r;
+    var t, a;
     return (0, i.jsxs)("div", {
       className: c.speakerContainer,
       children: [(0, i.jsx)(l.qEK, {
@@ -35,10 +35,10 @@ function s(e) {
           children: null == e ? true : e.userNick
         })
       })]
-    }, null == e || null == (r = e.user) ? true : r.id)
-  }), _ = r - d.length;
+    }, null == e || null == (a = e.user) ? true : a.id)
+  }), _ = a - d.length;
   return (0, i.jsxs)("div", {
-    className: a()(c.grid, s),
+    className: r()(c.grid, s),
     children: [u, _ > 0 && (0, i.jsxs)("div", {
       className: c.speakerContainer,
       children: [(0, i.jsx)("div", {

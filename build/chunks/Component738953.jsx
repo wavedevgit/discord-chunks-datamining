@@ -137,7 +137,7 @@ function Z(e) {
     },
     ed = () => K ? null : (0, r.jsx)(s.sNh, {
       id: "view-profile",
-      label: j.intl.string(j.t["+Xp3ho"]),
+      label: M.intl.string(M.t["+Xp3ho"]),
       action: () => {
         eu(), (0, b.pQ)(U({
           action: "PRESS_VIEW_PROFILE",
@@ -164,7 +164,7 @@ function Z(e) {
           children: [(0, r.jsx)(s.nn4, {
             children: (0, r.jsx)(s.H, {
               id: e_,
-              children: j.intl.format(j.t.KRe1Fh, {
+              children: M.intl.format(M.t.KRe1Fh, {
                 name: ep
               })
             })
@@ -174,7 +174,7 @@ function Z(e) {
             themeType: x.l.POPOUT,
             children: [null != ei.interactionType && (0, r.jsx)(a.animated.div, {
               style: ea,
-              className: M.backdrop
+              className: j.backdrop
             }), (0, r.jsxs)(C.Z, {
               children: [(0, r.jsx)(R.Z, {
                 shouldShowTooltip: null === ei.interactionType,
@@ -195,7 +195,7 @@ function Z(e) {
                 appContext: q
               })]
             }), (0, r.jsxs)("div", {
-              className: M.header,
+              className: j.header,
               children: [(0, r.jsx)(T.Z, {
                 user: n,
                 displayProfile: en,
@@ -203,7 +203,7 @@ function Z(e) {
                 themeType: x.l.POPOUT
               }), (0, r.jsx)(S.Z, {
                 userId: n.id,
-                className: M.toast,
+                className: j.toast,
                 onClose: Y
               }), (0, r.jsx)(I.Z, {
                 user: n,

@@ -32,7 +32,7 @@ function S(e) {
   } = e, S = (0, O.ZP)(t), C = (0, f.K)(), T = (0, f.V)(), N = (0, l.e7)([d.Z], () => d.Z.isMessageRequest(t.id)), j = (0, l.e7)([p.Z], () => p.Z.isSpam(t.id)), P = (0, g.V)(t.id, t.getRecipientId()), x = i.useCallback(() => {
     b.Z.closeChannelSidebar(_.uZ), N && C && (0, m.Kh)(t.id), j && T && (0, m.Kh)(t.id)
   }, [t.id, j, T, N, C]), A = i.useCallback(() => {
-    (0, o.showToast)((0, o.createToast)(y.intl.string(y.t.pIQ3h4), o.ToastType.FAILURE))
+    (0, o.showToast)((0, o.createToast)(v.intl.string(v.t.pIQ3h4), o.ToastType.FAILURE))
   }, []), {
     markAsNotSpam: Z
   } = (0, h.m)({
@@ -42,13 +42,13 @@ function S(e) {
   if (null == t || !t.isDM()) return null;
   let w = [(0, r.jsx)(c.ZP.Icon, {
     icon: o.Dio,
-    tooltip: y.intl.string(y.t.cpT0Cg),
+    tooltip: v.intl.string(v.t.cpT0Cg),
     onClick: () => b.Z.closeChannelSidebar(n)
   }, "close")];
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.ZP, {
       toolbar: w,
-      "aria-label": y.intl.string(y.t.BIYAqa),
+      "aria-label": v.intl.string(v.t.BIYAqa),
       children: (0, u.ud)({
         channel: t,
         channelName: S,
@@ -59,15 +59,15 @@ function S(e) {
       children: [(0, r.jsx)(o.Text, {
         className: I.__invalid_hamBannerText,
         variant: "text-sm/normal",
-        children: y.intl.string(y.t.XVOKgo)
+        children: v.intl.string(v.t.XVOKgo)
       }), (0, r.jsx)(a.zx, {
         className: I.hamBannerButton,
         size: a.Ph.SMALL,
         onClick: () => Z(t, P),
-        children: y.intl.string(y.t.koqL3d)
+        children: v.intl.string(v.t.koqL3d)
       })]
     }), (0, r.jsx)("div", {
-      className: v.chat,
+      className: y.chat,
       children: (0, r.jsx)(E.Z, {
         channel: t,
         guild: null,

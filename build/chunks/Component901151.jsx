@@ -2,12 +2,13 @@
 /** chunk id: 901151, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w
+  Z: () => N
 }), require("./642613.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk524437 = require("./524437.js"),
   Chunk538534 = require("./538534.jsx"),
+  Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk768581 = require("./768581.js"),
   Chunk63063 = require("./63063.js"),
@@ -23,138 +24,99 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk42101 = require("./42101.js");
+let I = 3,
+  T = 3;
 
-function v(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function I(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      v(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function T(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function S(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-let A = 3,
-  C = 3;
-
-function N(e) {
+function S(e) {
   let {
     applications: t
-  } = e, n = i.useMemo(() => t.sort((e, t) => u.default.compare(t.id, e.id)), [t]), a = i.useMemo(() => {
+  } = e, n = i.useMemo(() => t.sort((e, t) => d.default.compare(t.id, e.id)), [t]), a = i.useMemo(() => {
     let e = [];
-    for (let t = 0; t < A; t++) {
+    for (let t = 0; t < I; t++) {
       let r = n[t];
       if (null == r) break;
       e.push(r.name)
     }
     let t = e.join(", "),
-      i = n.length - A;
-    return i > 0 ? y.intl.format(y.t.sHFdTk, {
+      i = n.length - I;
+    return i > 0 ? O.intl.format(O.t.sHFdTk, {
       gameList: t,
-      plusMoreHook: (e, t) => (0, r.jsx)(s.Text, {
+      plusMoreHook: (e, t) => (0, r.jsx)(l.Text, {
         tag: "span",
         variant: "text-sm/medium",
         color: "text-muted",
-        children: y.intl.format(y.t["EADv+/"], {
+        children: O.intl.format(O.t["EADv+/"], {
           count: i
         })
       }, t)
     }) : e.join(", ")
   }, [n]), o = i.useMemo(() => {
     let e = [];
-    for (let t = 0; t < C; t++) {
+    for (let t = 0; t < T; t++) {
       let i = n[t];
       if (null == i) break;
       let {
         icon: a,
         name: o,
-        id: c
-      } = i, u = l.ZP.getApplicationIconURL({
-        id: c,
+        id: l
+      } = i, u = c.ZP.getApplicationIconURL({
+        id: l,
         icon: a
       });
-      e.push((0, r.jsx)(s.ua7, {
-        text: o,
-        children: e => (0, r.jsx)("img", S(I({}, e), {
+      e.push((0, r.jsx)(s.u, {
+        __unsupportedReactNodeAsText: o,
+        children: (0, r.jsx)("img", {
           src: u,
           "aria-label": o,
-          className: O.icon
-        }))
-      }, c))
+          className: v.icon
+        })
+      }, l))
     }
-    let t = n.length - C;
+    let t = n.length - T;
     return t > 0 && e.push((0, r.jsx)("div", {
-      className: O.moreIcon,
-      children: (0, r.jsx)(s.Text, {
+      className: v.moreIcon,
+      children: (0, r.jsx)(l.Text, {
         variant: "text-xs/medium",
         color: "text-default",
         children: "+".concat(t)
       })
     }, "omitted")), e
-  }, [n]), c = (0, p.Z)(), d = i.useCallback(() => {
-    c(f.n.AUTHORIZED_APPS_PANEL, {
-      section: b.oAB.AUTHORIZED_APPS
+  }, [n]), u = (0, h.Z)(), f = i.useCallback(() => {
+    u(_.n.AUTHORIZED_APPS_PANEL, {
+      section: y.oAB.AUTHORIZED_APPS
     })
-  }, [c]);
+  }, [u]);
   return (0, r.jsxs)("div", {
-    className: O.header,
+    className: v.header,
     children: [(0, r.jsxs)("div", {
-      className: O.gameNamesHeader,
-      children: [(0, r.jsx)(s.Text, {
+      className: v.gameNamesHeader,
+      children: [(0, r.jsx)(l.Text, {
         variant: "text-md/normal",
         color: "header-primary",
         children: a
-      }), (0, r.jsxs)(s.P3F, {
-        onClick: d,
-        className: O.manageGamesLink,
-        children: [(0, r.jsx)(s.Text, {
+      }), (0, r.jsxs)(l.P3F, {
+        onClick: f,
+        className: v.manageGamesLink,
+        children: [(0, r.jsx)(l.Text, {
           variant: "text-xs/normal",
           color: "interactive-normal",
-          children: y.intl.format(y.t.oYaYOT, {})
-        }), (0, r.jsx)(s.Fbu, {
+          children: O.intl.format(O.t.oYaYOT, {})
+        }), (0, r.jsx)(l.Fbu, {
           size: "xxs",
-          color: s.TVs.colors.INTERACTIVE_NORMAL,
-          className: O.manageGamesChevron
+          color: l.TVs.colors.INTERACTIVE_NORMAL,
+          className: v.manageGamesChevron
         })]
       })]
     }), (0, r.jsx)("div", {
-      className: O.divider
+      className: v.divider
     }), (0, r.jsx)("div", {
-      className: O.gameIcons,
+      className: v.gameIcons,
       children: o
     })]
   })
 }
 
-function R() {
+function A() {
   let e = Chunk695346._j.useSetting();
   return (0, Chunk951288.jsx)(Chunk838436.U, {
     setting: Chunk726985.s6.PRIVACY_AND_SAFETY_ALLOW_GAME_FRIEND_DMS,
@@ -169,7 +131,7 @@ function R() {
   })
 }
 
-function P() {
+function C() {
   let e = Chunk695346.JG.useSetting(),
     t = module === Chunk524437.O_.SLAYER_SDK_RECEIVE_IN_GAME_DMS_UNSET ? Chunk524437.O_.SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL : module,
     n = [{
@@ -190,23 +152,23 @@ function P() {
     }), (0, Chunk951288.jsx)(Chunk538534.E, {
       value: exports,
       options: require,
-      onChange: e => d.JG.updateSetting(e)
+      onChange: e => f.JG.updateSetting(e)
     })]
   })
 }
 
-function w() {
+function N() {
   let {
     showLoadingIndicator: e,
     slayerSdkApplications: t
   } = (0, Chunk749876.Z)(true);
   return (0, Chunk951288.jsx)(Chunk546957.Z, {
     children: module ? (0, Chunk951288.jsx)(Chunk481060.$jN, {}) : exports.length > 0 ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-      children: [(0, Chunk951288.jsx)(N, {
+      children: [(0, Chunk951288.jsx)(S, {
         applications: exports
-      }), (0, Chunk951288.jsx)(R, {}), (0, Chunk951288.jsx)("div", {
+      }), (0, Chunk951288.jsx)(A, {}), (0, Chunk951288.jsx)("div", {
         className: Chunk42101.divider
-      }), (0, Chunk951288.jsx)(P, {})]
+      }), (0, Chunk951288.jsx)(C, {})]
     }) : (0, Chunk951288.jsxs)("div", {
       className: Chunk42101.emptyContainer,
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {

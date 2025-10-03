@@ -127,24 +127,24 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
       applicationStream: g,
       status: y,
       channel: _,
-      guildId: O,
-      isTyping: j,
-      isMobileOnline: x,
+      guildId: j,
+      isTyping: x,
+      isMobileOnline: O,
       premiumSince: v,
       nameplate: C
-    } = e, I = J(e, ["colorString", "colorStrings", "colorRoleName", "colorRoleId", "isOwner", "nick", "user", "currentUser", "activities", "applicationStream", "status", "channel", "guildId", "isTyping", "isMobileOnline", "premiumSince", "nameplate"]), E = i.useRef(null), [S, Z] = i.useState(false), P = null != v ? new Date(v) : null, N = i.useCallback(e => {
+    } = e, I = J(e, ["colorString", "colorStrings", "colorRoleName", "colorRoleId", "isOwner", "nick", "user", "currentUser", "activities", "applicationStream", "status", "channel", "guildId", "isTyping", "isMobileOnline", "premiumSince", "nameplate"]), E = i.useRef(null), [S, Z] = i.useState(false), T = null != v ? new Date(v) : null, N = i.useCallback(e => {
       (0, f.jW)(e, async () => {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("98783"), n.e("8982"), n.e("7717"), n.e("52021")]).then(n.bind(n, 757387)), t = H.Z.isInChannel(k.Z.getVoiceChannelId(), d.id);
         return n => (0, r.jsx)(e, X(Q({}, n), {
           user: d,
-          guildId: O,
+          guildId: j,
           channel: _,
           showMediaItems: t
         }))
       })
-    }, [d, O, _]), R = i.useCallback(() => {
+    }, [d, j, _]), R = i.useCallback(() => {
       let e = "@".concat(z.ZP.getUserTag(d, {
           decoration: "never"
         })),
@@ -156,18 +156,18 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
         rawText: t
       }), m.Z.startTyping(_.id)
     }, [d, _.id]), w = i.useCallback(e => {
-      null != O && (e.stopPropagation(), (0, T.f)({
-        guildId: O,
+      null != j && (e.stopPropagation(), (0, P.f)({
+        guildId: j,
         location: {
           section: W.jXE.MEMBER_LIST,
           object: W.qAy.BOOST_GEM_ICON
         }
       }))
-    }, [O]);
+    }, [j]);
     return (0, r.jsx)(A.Z, {
       targetElementRef: E,
       user: d,
-      guildId: O,
+      guildId: j,
       channelId: _.id,
       roleId: s,
       position: u.tq ? "window_center" : "left",
@@ -194,14 +194,14 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
           activities: h,
           applicationStream: g,
           isOwner: o,
-          premiumSince: P,
+          premiumSince: T,
           colorString: t,
           colorStrings: l,
           colorRoleName: a,
-          isTyping: j,
+          isTyping: x,
           channel: _,
-          guildId: O,
-          isMobile: x,
+          guildId: j,
+          isMobile: O,
           onClickPremiumGuildIcon: w,
           selected: S,
           itemProps: I,
@@ -329,7 +329,7 @@ class el extends Chunk647438.Component {
       sectionHeight: i
     } = this.props;
     return (0, Chunk951288.jsx)(Chunk481060.Wdt, {
-      children: l => (0, r.jsx)(P.FG, {
+      children: l => (0, r.jsx)(T.FG, {
         children: s => (0, r.jsx)("aside", {
           className: a()(q.membersWrap, q.hiddenMembers),
           "aria-labelledby": s,
@@ -560,7 +560,7 @@ class el extends Chunk647438.Component {
         num_users_visible_with_avatar_decoration: 0,
         num_users_visible_with_nameplate: 0
       });
-      this.lastReportedAnalyticsChannel = this.props.channel.id, O.ZP.trackWithMetadata(W.rMx.MEMBER_LIST_VIEWED, Q({}, i))
+      this.lastReportedAnalyticsChannel = this.props.channel.id, j.ZP.trackWithMetadata(W.rMx.MEMBER_LIST_VIEWED, Q({}, i))
     })
   }
 }
@@ -571,7 +571,7 @@ function ea(e) {
     className: n
   } = e, {
     analyticsLocations: l
-  } = (0, j.ZP)(_.Z.MEMBER_LIST), s = (0, p.e7)([y.Z], () => y.Z.keyboardModeEnabled), o = (0, p.cj)([L.ZP], () => L.ZP.getProps(t.guild_id, t.id)), {
+  } = (0, x.ZP)(_.Z.MEMBER_LIST), s = (0, p.e7)([y.Z], () => y.Z.keyboardModeEnabled), o = (0, p.cj)([L.ZP], () => L.ZP.getProps(t.guild_id, t.id)), {
     rows: u,
     groups: f,
     version: g,
@@ -580,7 +580,7 @@ function ea(e) {
     memberStoreProps: o,
     channelId: t.id,
     guildId: t.guild_id
-  }), b = i.useRef(null), O = (0, h.UBm)("lg") + (0, h.UBm)("xxs"), x = i.useCallback((e, t) => {
+  }), b = i.useRef(null), j = (0, h.UBm)("lg") + (0, h.UBm)("xxs"), O = i.useCallback((e, t) => {
     let n = b.current;
     if (null == n) return;
     let r = parseInt(t, 10),
@@ -614,12 +614,12 @@ function ea(e) {
     })
   }), []), I = (0, d.ZP)({
     id: "members-".concat(t.id),
-    setFocus: x,
+    setFocus: O,
     isEnabled: s,
     scrollToStart: v,
     scrollToEnd: C
   });
-  return (0, r.jsx)(j.Gt, {
+  return (0, r.jsx)(x.Gt, {
     value: l,
     children: (0, r.jsx)("div", {
       className: a()(q.container, n),
@@ -631,7 +631,7 @@ function ea(e) {
           rows: u,
           listRef: b,
           updateMaxContentFeedRowSeen: m,
-          sectionHeight: 18 + O,
+          sectionHeight: 18 + j,
           rowHeight: 42
         }))
       })

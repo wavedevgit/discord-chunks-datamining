@@ -19,11 +19,11 @@ require.d(exports, {
   X3: () => q,
   b7: () => S,
   cl: () => Z,
-  g9: () => M,
+  g9: () => j,
   i3: () => G,
   jW: () => D,
   kG: () => V,
-  nI: () => j,
+  nI: () => M,
   nl: () => X,
   qc: () => k,
   s5: () => T,
@@ -257,11 +257,11 @@ function x(e) {
   return (null == e ? true : e.contents) != null && e.contents.length > 0 ? null == e || null == (t = e.contents) ? true : t.map(e => e.split("|").slice(1).join("|")).join(" ") : null == e ? true : e.content
 }
 
-function j(e) {
+function M(e) {
   return e.map(e => e.type === a.ZP.NON_TOKEN_TYPE ? e.getFullMatch() : "").join(" ").trim()
 }
 
-function M(e, t, n) {
+function j(e, t, n) {
   let r, i, a = e.find((a, o) => t >= a.start && t <= a.end && n >= a.start && n <= a.end ? (null != e[o + 1] && (i = e[o + 1]), true) : (r = a, false));
   return null == a ? null : {
     previousToken: r,

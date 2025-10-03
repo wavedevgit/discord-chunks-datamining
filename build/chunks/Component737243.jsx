@@ -1,4 +1,4 @@
-/** Chunk was on 9665 **/
+/** Chunk was on 50118 **/
 /** chunk id: 737243, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -21,8 +21,8 @@ let h = Chunk647438.memo(function(e) {
     compact: m = false,
     interactionUsernameProfile: g,
     interactionAvatarProfile: b,
-    interactionData: y,
-    referencedUsernameProfile: C,
+    interactionData: C,
+    referencedUsernameProfile: y,
     referencedAvatarProfile: _,
     setPopout: v
   } = e, {
@@ -31,7 +31,7 @@ let h = Chunk647438.memo(function(e) {
   } = (0, l.cj)([c.Z], () => ({
     isInteractionUserBlocked: c.Z.isBlockedForMessage(h),
     isInteractionUserIgnored: c.Z.isIgnoredForMessage(h)
-  }), [h]), j = (0, l.e7)([s.Z], () => s.Z.getMessageByReference(null == h ? true : h.messageReference)), E = (0, d.wq)(null == (t = h.interaction) ? true : t.user.id, f.id), S = (0, d.Nk)(h.interaction, f, g, v), P = (0, d.NU)(b, v), I = (0, o.t0)(h), Z = (null == I ? true : I.type) === a.B8.APPLICATION_COMMAND ? null == (n = I.target_user) ? true : n.id : true, N = (0, d.wq)(Z, f.id), T = (0, d.JC)(Z, f, C, v), A = (0, d.rY)(_, v), w = (0, d.Xn)(y, v), M = i.useCallback(() => {
+  }), [h]), j = (0, l.e7)([s.Z], () => s.Z.getMessageByReference(null == h ? true : h.messageReference)), E = (0, d.wq)(null == (t = h.interaction) ? true : t.user.id, f.id), S = (0, d.Nk)(h.interaction, f, g, v), P = (0, d.NU)(b, v), I = (0, o.t0)(h), Z = (null == I ? true : I.type) === a.B8.APPLICATION_COMMAND ? null == (n = I.target_user) ? true : n.id : true, N = (0, d.wq)(Z, f.id), T = (0, d.JC)(Z, f, y, v), A = (0, d.rY)(_, v), w = (0, d.Xn)(C, v), M = r.useCallback(() => {
     v({
       interactionUsernameProfile: false,
       interactionAvatarProfile: false,
@@ -39,19 +39,19 @@ let h = Chunk647438.memo(function(e) {
       referencedUsernameProfile: false,
       referencedAvatarProfile: false
     })
-  }, [v]), R = i.useCallback(() => (0, p.Z)({
+  }, [v]), R = r.useCallback(() => (0, p.Z)({
     message: h,
     channel: f,
     compact: m,
     setPopout: v,
     referencedAvatarProfile: _,
-    referencedUsernameProfile: C,
+    referencedUsernameProfile: y,
     replyReference: h.messageReference,
     replyMessage: j,
     isReplySpineClickable: false,
     showReplySpine: false
-  }), [f, m, h, _, j, C, v]);
-  return (0, r.jsx)(u.Z, {
+  }), [f, m, h, _, j, y, v]);
+  return (0, i.jsx)(u.Z, {
     message: h,
     channel: f,
     compact: m,
@@ -59,9 +59,9 @@ let h = Chunk647438.memo(function(e) {
     isInteractionUserIgnored: O,
     showAvatarPopout: b,
     showUsernamePopout: g,
-    showDataPopout: y,
+    showDataPopout: C,
     showTargetAvatarPopout: _,
-    showTargetUsernamePopout: C,
+    showTargetUsernamePopout: y,
     onClickAvatar: P,
     onClickUsername: S,
     onClickCommand: w,
@@ -76,29 +76,29 @@ let h = Chunk647438.memo(function(e) {
 
 function f(e, t, n) {
   let {
-    message: i,
+    message: r,
     channel: l,
     compact: a
   } = e;
-  return null != i.interaction && "" !== i.interaction.displayName ? (0, r.jsx)(h, function(e) {
+  return null != r.interaction && "" !== r.interaction.displayName ? (0, i.jsx)(h, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
-        r = Object.keys(n);
-      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        i = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
         return Object.getOwnPropertyDescriptor(n, e).enumerable
-      }))), r.forEach(function(t) {
-        var r;
-        r = n[t], t in e ? Object.defineProperty(e, t, {
-          value: r,
+      }))), i.forEach(function(t) {
+        var i;
+        i = n[t], t in e ? Object.defineProperty(e, t, {
+          value: i,
           enumerable: true,
           configurable: true,
           writable: true
-        }) : e[t] = r
+        }) : e[t] = i
       })
     }
     return e
   }({
-    message: i,
+    message: r,
     channel: l,
     compact: a,
     setPopout: t

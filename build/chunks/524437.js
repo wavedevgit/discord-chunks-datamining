@@ -30,12 +30,12 @@ require.d(exports, {
   n9: () => A,
   nI: () => d,
   o8: () => D,
-  os: () => M,
+  os: () => j,
   p5: () => H,
   sf: () => ef,
   tA: () => em,
   v_: () => en,
-  yX: () => eM
+  yX: () => ej
 }), require("./980754.js"), require("./388685.js"), require("./415506.js"), require("./410992.js"), require("./227481.js"), require("./730884.js"), require("./20464.js"), require("./341884.js"), require("./364341.js"), require("./629680.js"), require("./505025.js"), require("./918970.js"), require("./121784.js"), require("./644351.js"), require("./146733.js"), require("./539854.js");
 var Chunk230367 = require("./230367.js"),
   Chunk320215 = require("./320215.js"),
@@ -128,7 +128,7 @@ class w extends Chunk495852.C {
           a.inbox = x.internalBinaryRead(e, e.uint32(), n, a.inbox);
           break;
         case 3:
-          a.guilds = M.internalBinaryRead(e, e.uint32(), n, a.guilds);
+          a.guilds = j.internalBinaryRead(e, e.uint32(), n, a.guilds);
           break;
         case 4:
           a.userContent = X.internalBinaryRead(e, e.uint32(), n, a.userContent);
@@ -206,7 +206,7 @@ class w extends Chunk495852.C {
     return a
   }
   internalBinaryWrite(e, t, n) {
-    e.versions && c.L.internalBinaryWrite(e.versions, t.tag(1, r.TD.LengthDelimited).fork(), n).join(), e.inbox && x.internalBinaryWrite(e.inbox, t.tag(2, r.TD.LengthDelimited).fork(), n).join(), e.guilds && M.internalBinaryWrite(e.guilds, t.tag(3, r.TD.LengthDelimited).fork(), n).join(), e.userContent && X.internalBinaryWrite(e.userContent, t.tag(4, r.TD.LengthDelimited).fork(), n).join(), e.voiceAndVideo && en.internalBinaryWrite(e.voiceAndVideo, t.tag(5, r.TD.LengthDelimited).fork(), n).join(), e.textAndImages && eu.internalBinaryWrite(e.textAndImages, t.tag(6, r.TD.LengthDelimited).fork(), n).join(), e.notifications && ef.internalBinaryWrite(e.notifications, t.tag(7, r.TD.LengthDelimited).fork(), n).join(), e.privacy && ep.internalBinaryWrite(e.privacy, t.tag(8, r.TD.LengthDelimited).fork(), n).join(), e.debug && em.internalBinaryWrite(e.debug, t.tag(9, r.TD.LengthDelimited).fork(), n).join(), e.gameLibrary && eE.internalBinaryWrite(e.gameLibrary, t.tag(10, r.TD.LengthDelimited).fork(), n).join(), e.status && ey.internalBinaryWrite(e.status, t.tag(11, r.TD.LengthDelimited).fork(), n).join(), e.localization && eT.internalBinaryWrite(e.localization, t.tag(12, r.TD.LengthDelimited).fork(), n).join(), e.appearance && eN.internalBinaryWrite(e.appearance, t.tag(13, r.TD.LengthDelimited).fork(), n).join(), e.guildFolders && ex.internalBinaryWrite(e.guildFolders, t.tag(14, r.TD.LengthDelimited).fork(), n).join(), e.favorites && eU.internalBinaryWrite(e.favorites, t.tag(15, r.TD.LengthDelimited).fork(), n).join(), e.audioContextSettings && eH.internalBinaryWrite(e.audioContextSettings, t.tag(16, r.TD.LengthDelimited).fork(), n).join(), e.communities && eW.internalBinaryWrite(e.communities, t.tag(17, r.TD.LengthDelimited).fork(), n).join(), e.broadcast && eJ.internalBinaryWrite(e.broadcast, t.tag(18, r.TD.LengthDelimited).fork(), n).join(), e.clips && e0.internalBinaryWrite(e.clips, t.tag(19, r.TD.LengthDelimited).fork(), n).join(), e.forLater && e4.internalBinaryWrite(e.forLater, t.tag(20, r.TD.LengthDelimited).fork(), n).join(), e.safetySettings && e2.internalBinaryWrite(e.safetySettings, t.tag(21, r.TD.LengthDelimited).fork(), n).join(), e.icymiSettings && e5.internalBinaryWrite(e.icymiSettings, t.tag(22, r.TD.LengthDelimited).fork(), n).join(), e.applications && e7.internalBinaryWrite(e.applications, t.tag(23, r.TD.LengthDelimited).fork(), n).join(), e.ads && to.internalBinaryWrite(e.ads, t.tag(24, r.TD.LengthDelimited).fork(), n).join(), e.inAppFeedbackSettings && tf.internalBinaryWrite(e.inAppFeedbackSettings, t.tag(25, r.TD.LengthDelimited).fork(), n).join();
+    e.versions && c.L.internalBinaryWrite(e.versions, t.tag(1, r.TD.LengthDelimited).fork(), n).join(), e.inbox && x.internalBinaryWrite(e.inbox, t.tag(2, r.TD.LengthDelimited).fork(), n).join(), e.guilds && j.internalBinaryWrite(e.guilds, t.tag(3, r.TD.LengthDelimited).fork(), n).join(), e.userContent && X.internalBinaryWrite(e.userContent, t.tag(4, r.TD.LengthDelimited).fork(), n).join(), e.voiceAndVideo && en.internalBinaryWrite(e.voiceAndVideo, t.tag(5, r.TD.LengthDelimited).fork(), n).join(), e.textAndImages && eu.internalBinaryWrite(e.textAndImages, t.tag(6, r.TD.LengthDelimited).fork(), n).join(), e.notifications && ef.internalBinaryWrite(e.notifications, t.tag(7, r.TD.LengthDelimited).fork(), n).join(), e.privacy && ep.internalBinaryWrite(e.privacy, t.tag(8, r.TD.LengthDelimited).fork(), n).join(), e.debug && em.internalBinaryWrite(e.debug, t.tag(9, r.TD.LengthDelimited).fork(), n).join(), e.gameLibrary && eE.internalBinaryWrite(e.gameLibrary, t.tag(10, r.TD.LengthDelimited).fork(), n).join(), e.status && ey.internalBinaryWrite(e.status, t.tag(11, r.TD.LengthDelimited).fork(), n).join(), e.localization && eT.internalBinaryWrite(e.localization, t.tag(12, r.TD.LengthDelimited).fork(), n).join(), e.appearance && eN.internalBinaryWrite(e.appearance, t.tag(13, r.TD.LengthDelimited).fork(), n).join(), e.guildFolders && ex.internalBinaryWrite(e.guildFolders, t.tag(14, r.TD.LengthDelimited).fork(), n).join(), e.favorites && eU.internalBinaryWrite(e.favorites, t.tag(15, r.TD.LengthDelimited).fork(), n).join(), e.audioContextSettings && eH.internalBinaryWrite(e.audioContextSettings, t.tag(16, r.TD.LengthDelimited).fork(), n).join(), e.communities && eW.internalBinaryWrite(e.communities, t.tag(17, r.TD.LengthDelimited).fork(), n).join(), e.broadcast && eJ.internalBinaryWrite(e.broadcast, t.tag(18, r.TD.LengthDelimited).fork(), n).join(), e.clips && e0.internalBinaryWrite(e.clips, t.tag(19, r.TD.LengthDelimited).fork(), n).join(), e.forLater && e4.internalBinaryWrite(e.forLater, t.tag(20, r.TD.LengthDelimited).fork(), n).join(), e.safetySettings && e2.internalBinaryWrite(e.safetySettings, t.tag(21, r.TD.LengthDelimited).fork(), n).join(), e.icymiSettings && e5.internalBinaryWrite(e.icymiSettings, t.tag(22, r.TD.LengthDelimited).fork(), n).join(), e.applications && e7.internalBinaryWrite(e.applications, t.tag(23, r.TD.LengthDelimited).fork(), n).join(), e.ads && to.internalBinaryWrite(e.ads, t.tag(24, r.TD.LengthDelimited).fork(), n).join(), e.inAppFeedbackSettings && tf.internalBinaryWrite(e.inAppFeedbackSettings, t.tag(25, r.TD.LengthDelimited).fork(), n).join();
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.z.onWrite : i)(this.typeName, e, t), t
   }
@@ -225,7 +225,7 @@ class w extends Chunk495852.C {
       no: 3,
       name: "guilds",
       kind: "message",
-      T: () => M
+      T: () => j
     }, {
       no: 4,
       name: "user_content",
@@ -392,7 +392,7 @@ class L extends Chunk495852.C {
   }
 }
 let x = new L;
-class j extends Chunk495852.C {
+class M extends Chunk495852.C {
   create(e) {
     let t = {
       guilds: {}
@@ -454,7 +454,7 @@ class j extends Chunk495852.C {
     }])
   }
 }
-let M = new j;
+let j = new M;
 class k extends Chunk495852.C {
   create(e) {
     let t = {
@@ -2836,7 +2836,7 @@ class eL extends Chunk495852.C {
       let [t, i] = e.tag();
       switch (t) {
         case 1:
-          a.folders.push(eM.internalBinaryRead(e, e.uint32(), n));
+          a.folders.push(ej.internalBinaryRead(e, e.uint32(), n));
           break;
         case 2:
           if (i === r.TD.LengthDelimited)
@@ -2853,7 +2853,7 @@ class eL extends Chunk495852.C {
     return a
   }
   internalBinaryWrite(e, t, n) {
-    for (let i = 0; i < e.folders.length; i++) eM.internalBinaryWrite(e.folders[i], t.tag(1, r.TD.LengthDelimited).fork(), n).join();
+    for (let i = 0; i < e.folders.length; i++) ej.internalBinaryWrite(e.folders[i], t.tag(1, r.TD.LengthDelimited).fork(), n).join();
     if (e.guildPositions.length) {
       t.tag(2, r.TD.LengthDelimited).fork();
       for (let n = 0; n < e.guildPositions.length; n++) t.fixed64(e.guildPositions[n]);
@@ -2868,7 +2868,7 @@ class eL extends Chunk495852.C {
       name: "folders",
       kind: "message",
       repeat: 1,
-      T: () => eM
+      T: () => ej
     }, {
       no: 2,
       name: "guild_positions",
@@ -2879,7 +2879,7 @@ class eL extends Chunk495852.C {
   }
 }
 let ex = new eL;
-class ej extends Chunk495852.C {
+class eM extends Chunk495852.C {
   create(e) {
     let t = {
       guildIds: []
@@ -2953,7 +2953,7 @@ class ej extends Chunk495852.C {
     }])
   }
 }
-let eM = new ej;
+let ej = new eM;
 class ek extends Chunk495852.C {
   create(e) {
     let t = {

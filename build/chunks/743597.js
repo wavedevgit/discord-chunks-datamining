@@ -86,11 +86,11 @@ function m(e, t, n) {
         lastUpdatedAt: Date.now()
       }), e, n), l.current.stop()
     }, [t, n, e]),
-    v = r.useCallback((e, t, n) => g(e, t, n), [g]);
+    E = r.useCallback((e, t, n) => g(e, t, n), [g]);
   return r.useMemo(() => ({
     handleMouseDown: _,
     handleMouseMove: g,
     handleMouseUp: b,
-    handleMouseEnter: v
-  }), [_, v, g, b])
+    handleMouseEnter: E
+  }), [_, E, g, b])
 }

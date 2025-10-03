@@ -26,7 +26,7 @@ function j(e) {
   return (0, i.wj)(e) ? c.revenueSharePercentageDark : c.revenueSharePercentageLight
 }
 
-function v() {
+function _() {
   let e = (0, Chunk410030.ZP)(),
     t = {
       backgroundColor: (0, Chunk780384.wj)(module) ? "#2e3638" : "var(--background-base-low)"
@@ -54,7 +54,7 @@ function v() {
   })
 }
 
-function _() {
+function v() {
   let e = (0, Chunk410030.ZP)();
 
   function t(e) {
@@ -149,7 +149,7 @@ function _() {
   })
 }
 
-function O() {
+function C() {
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk570734.earningBenefitCard,
     children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
@@ -158,13 +158,13 @@ function O() {
       children: Chunk388032.intl.string(Chunk388032.t["9CdmS0"])
     }), (0, Chunk951288.jsx)(Chunk481060.LZC, {
       size: 32
-    }), (0, Chunk951288.jsx)(v, {}), (0, Chunk951288.jsx)(Chunk481060.LZC, {
+    }), (0, Chunk951288.jsx)(_, {}), (0, Chunk951288.jsx)(Chunk481060.LZC, {
       size: 24
-    }), (0, Chunk951288.jsx)(_, {})]
+    }), (0, Chunk951288.jsx)(v, {})]
   })
 }
 
-function y() {
+function O() {
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk570734.followerBenefitCard,
     children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
@@ -184,7 +184,7 @@ function y() {
   })
 }
 
-function C() {
+function y() {
   let e = (0, Chunk410030.ZP)();
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk570734.revenueShareBenefitCard,
@@ -220,7 +220,7 @@ function N() {
       size: 24
     }), (0, Chunk951288.jsxs)("div", {
       className: Chunk570734.creatorBenefitsContainer,
-      children: [(0, Chunk951288.jsx)(O, {}), (0, Chunk951288.jsx)(y, {}), (0, Chunk951288.jsx)(C, {})]
+      children: [(0, Chunk951288.jsx)(C, {}), (0, Chunk951288.jsx)(O, {}), (0, Chunk951288.jsx)(y, {})]
     })]
   })
 }

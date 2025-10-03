@@ -354,7 +354,7 @@ class eh {
         let {
           guildId: o
         } = e;
-        null != this.groupedCustomEmojis[o] ? this.groupedCustomEmojis[o].push(r) : this.groupedCustomEmojis[o] = [r], j.default.compare(e.id, $) >= 0 && (null != this.newlyAddedEmoji[o] ? this.newlyAddedEmoji[o].push(r) : this.newlyAddedEmoji[o] = [r]), this.disambiguatedEmoji.push(r)
+        null != this.groupedCustomEmojis[o] ? this.groupedCustomEmojis[o].push(r) : this.groupedCustomEmojis[o] = [r], M.default.compare(e.id, $) >= 0 && (null != this.newlyAddedEmoji[o] ? this.newlyAddedEmoji[o].push(r) : this.newlyAddedEmoji[o] = [r]), this.disambiguatedEmoji.push(r)
       },
       o = e => {
         Object.prototype.hasOwnProperty.call(this.emoticonsByName, e.name) || (n.push(x.Z.escape(e.name)), this.emoticonsByName[e.name] = e)
@@ -364,7 +364,7 @@ class eh {
       let t = ei[null == e ? F.kod : e];
       null != t && (s().each(t.usableEmojis, i), s().each(t.emoticons, o))
     };
-    for (let e in l(this.guildId), this.newlyAddedEmoji) null != this.newlyAddedEmoji[e] ? this.newlyAddedEmoji[e] = this.newlyAddedEmoji[e].sort((e, t) => j.default.compare(t.id, e.id)).slice(0, 3) : this.newlyAddedEmoji[e] = [];
+    for (let e in l(this.guildId), this.newlyAddedEmoji) null != this.newlyAddedEmoji[e] ? this.newlyAddedEmoji[e] = this.newlyAddedEmoji[e].sort((e, t) => M.default.compare(t.id, e.id)).slice(0, 3) : this.newlyAddedEmoji[e] = [];
     R.ZP.getFlattenedGuildIds().forEach(e => {
       e !== this.guildId && l(e)
     }), this.escapedEmoticonNames = n.join("|")
@@ -449,7 +449,7 @@ function ew(e) {
   if (!e.optimistic) returnfalse;
   let t = null != e.emoji.id && "0" !== e.emoji.id ? e.emoji : U.ZP.getByName(U.ZP.convertSurrogateToName(e.emoji.name, false));
   if (null == t) returnfalse;
-  ek([t]), eM([t])
+  ek([t]), ej([t])
 }
 
 function eD(e, t) {
@@ -484,14 +484,14 @@ function ex(e) {
   X.pendingUsages = [], X.emojiReactionPendingUsages = []
 }
 
-function ej(e) {
+function eM(e) {
   let {
     emojiUsed: t
   } = e;
-  eM(t)
+  ej(t)
 }
 
-function eM(e) {
+function ej(e) {
   if (null == e) returnfalse;
   for (let r of e) {
     var t, n;
@@ -641,7 +641,7 @@ class eZ extends(r = Chunk442837.ZP.PersistedStore) {
           intention: a,
           forceIncludeExternalGuilds: o
         });
-        return r !== Z.Z5.PREMIUM_LOCKED || l ? null != r || l && t.type !== M.B.UNICODE || e.unlocked.push(t) : e.locked.push(t), e
+        return r !== Z.Z5.PREMIUM_LOCKED || l ? null != r || l && t.type !== j.B.UNICODE || e.unlocked.push(t) : e.locked.push(t), e
       }, {
         unlocked: [],
         locked: []
@@ -687,7 +687,7 @@ let eF = new eZ(Chunk570140.Z, {
   GUILD_EMOJIS_UPDATE: eN,
   GUILD_DELETE: eR,
   MESSAGE_REACTION_ADD: ew,
-  EMOJI_TRACK_USAGE: ej,
+  EMOJI_TRACK_USAGE: eM,
   USER_SETTINGS_PROTO_UPDATE: ex,
   GUILD_ROLE_CREATE: eU,
   GUILD_ROLE_UPDATE: eU,

@@ -120,7 +120,7 @@ function x(e) {
   O[r] = n, I.delete(r)
 }
 
-function j(e) {
+function M(e) {
   let {
     applicationId: t,
     branchId: n,
@@ -129,7 +129,7 @@ function j(e) {
   S[(0, d.Tu)(t, n)] = r, C()
 }
 
-function M(e) {
+function j(e) {
   let {
     applicationId: t,
     branchId: n
@@ -235,8 +235,8 @@ let V = new F(Chunk570140.Z, {
   LIBRARY_APPLICATION_FLAGS_UPDATE_START: L,
   LIBRARY_APPLICATION_FLAGS_UPDATE_SUCCESS: x,
   LIBRARY_APPLICATION_UPDATE: x,
-  LIBRARY_APPLICATION_ACTIVE_LAUNCH_OPTION_UPDATE: j,
-  LIBRARY_APPLICATION_ACTIVE_BRANCH_UPDATE: M,
+  LIBRARY_APPLICATION_ACTIVE_LAUNCH_OPTION_UPDATE: M,
+  LIBRARY_APPLICATION_ACTIVE_BRANCH_UPDATE: j,
   LIBRARY_APPLICATIONS_TEST_MODE_ENABLED: k,
   DEVELOPER_TEST_MODE_RESET: U
 })

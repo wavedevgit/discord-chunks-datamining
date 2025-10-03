@@ -89,7 +89,7 @@ let T = function(e) {
     isDisplayingWowMomentConfirmation: x
   } = (0, s.JL)();
   if (null == D || 0 === D.length) return null;
-  let j = D.flatMap(e => {
+  let M = D.flatMap(e => {
     let t = e.useBreadcrumbLabel(b),
       n = e.sectionHeaderText;
     return null != t ? {
@@ -98,13 +98,13 @@ let T = function(e) {
       sectionHeaderText: n
     } : []
   });
-  if (0 === j.length) return null;
-  let M = (j = j.filter(e => {
+  if (0 === M.length) return null;
+  let j = (M = M.filter(e => {
       let t = e.id !== l.h8.ADD_PAYMENT_STEPS,
         n = e.id === l.h8.ADD_PAYMENT_STEPS && !L.current;
       return !b || b && (t || n)
     })).find(e => e.id === w),
-    k = null != (i = null == M || null == (n = M.sectionHeaderText) ? true : n.call(M)) ? i : null == M ? true : M.label,
+    k = null != (i = null == j || null == (n = j.sectionHeaderText) ? true : n.call(j)) ? i : null == j ? true : j.label,
     U = null != k && null != w,
     G = C && U && w === l.h8.REVIEW,
     B = A ? "nitro-pink" : "nitro-green",
@@ -148,7 +148,7 @@ let T = function(e) {
       isOneStepCheckout: C,
       headerText: k,
       step: w,
-      filteredBreadcrumbs: j
+      filteredBreadcrumbs: M
     }), G && (0, r.jsx)("div", {
       className: h.bodyGradientContainer,
       children: (0, r.jsx)("div", {

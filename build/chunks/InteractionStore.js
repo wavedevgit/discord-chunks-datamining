@@ -102,7 +102,7 @@ function C(e) {
   let {
     nonce: t
   } = e;
-  M(t)
+  j(t)
 }
 
 function N(e) {
@@ -149,7 +149,7 @@ function w(e) {
   let {
     nonce: t
   } = e;
-  M(t)
+  j(t)
 }
 
 function D(e) {
@@ -157,7 +157,7 @@ function D(e) {
     application: t,
     nonce: n
   } = e;
-  i = t.id, M(n)
+  i = t.id, j(n)
 }
 
 function L() {
@@ -171,7 +171,7 @@ function x(e) {
   r = t
 }
 
-function j(e) {
+function M(e) {
   let t, n, {
       participants: r
     } = e,
@@ -183,7 +183,7 @@ function j(e) {
   null == s ? (t = v[o.nonce], n = y[o.nonce]) : (t = s.messageId, n = s.interaction), null != n && null != t && (k(o.nonce), null != t && "channelId" in n.data && l.Z.deleteMessage(n.data.channelId, t, true))
 }
 
-function M(e) {
+function j(e) {
   var t;
   if (null == e) returnfalse;
   let n = y[e];
@@ -240,5 +240,5 @@ let G = new U(Chunk570140.Z, {
   INTERACTION_IFRAME_MODAL_CLOSE: L,
   INTERACTION_IFRAME_MODAL_KEY_CREATE: x,
   INTERACTION_MODAL_CREATE: w,
-  EMBEDDED_ACTIVITY_UPDATE_V2: j
+  EMBEDDED_ACTIVITY_UPDATE_V2: M
 })

@@ -81,8 +81,8 @@ function L() {
     } = (0, Chunk442837.cj)([Chunk435064.Z], () => Chunk435064.Z.getSettings()),
     L = (0, Chunk442837.e7)([Chunk435064.Z], () => Chunk435064.Z.getHardwareClassification()),
     x = (0, Chunk442837.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_CLIP, true)),
-    j = Chunk435064.Z.isDecoupledGameClippingEnabled(),
-    M = (0, Chunk779618.Z)(Chunk131951.Z),
+    M = Chunk435064.Z.isDecoupledGameClippingEnabled(),
+    j = (0, Chunk779618.Z)(Chunk131951.Z),
     {
       showClipsHeaderEntrypoint: k
     } = Chunk924557.NV.useExperiment({
@@ -181,7 +181,7 @@ function L() {
       }), module && (0, Chunk951288.jsx)(Chunk494620.Z, {
         children: Chunk388032.intl.string(Chunk388032.t["Z+Mfqa"])
       })]
-    }), j && M && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+    }), M && j && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsx)(Chunk481060.hjN, {
         disabled: !module,
         children: (0, Chunk951288.jsx)(Chunk481060.rsf, {

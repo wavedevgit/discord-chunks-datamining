@@ -60,7 +60,7 @@ let Z = function(e) {
     {
       section: w,
       rows: L
-    } = (0, s.cj)([y.ZP], () => y.ZP.getState()),
+    } = (0, s.cj)([v.ZP], () => v.ZP.getState()),
     R = (0, s.e7)([g.Z], () => g.Z.getSuggestionCount()),
     D = i.useMemo(() => L.getRelationshipCounts(), [L]);
   i.useEffect(() => {
@@ -118,7 +118,7 @@ let Z = function(e) {
       ariaLabel: P.intl.string(P.t.j0wbEx),
       className: a()(x.item, x.addFriend)
     }],
-    B = v.o.useConfig({
+    B = y.o.useConfig({
       location: "friendstore"
     }).landOnProfilePage;
   B && G.unshift({

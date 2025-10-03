@@ -1,7 +1,7 @@
 /** Chunk was on 50751 **/
 /** chunk id: 333727, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => h
 });
 var Chunk278323 = require("./278323.js"),
   Chunk13245 = require("./13245.js"),
@@ -13,8 +13,8 @@ var Chunk278323 = require("./278323.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function p(e, t, n, p) {
-  let h = t.username,
+function h(e, t, n, h) {
+  let p = t.username,
     f = d.intl.format(d.t.VDODnp, {
       username: "",
       game: n.name
@@ -27,11 +27,11 @@ function p(e, t, n, p) {
       notif_type: u.n0.ActivityInvite,
       notif_user_id: t.id,
       activity_type: c.mFx.JOIN_REQUEST,
-      activity_name: p.name
+      activity_name: h.name
     });
   return {
     icon: m,
-    title: h,
+    title: p,
     body: f,
     confirmText: d.intl.string(d.t["fgP/wc"]),
     cancelText: d.intl.string(d.t.tpXzJy),
@@ -42,7 +42,7 @@ function p(e, t, n, p) {
       i.Z.sendActivityInvite({
         channelId: e.id,
         type: c.mFx.JOIN,
-        activity: p,
+        activity: h,
         location: o.default.isLocked((0, a.getPID)()) ? c.Sbl.LOCKED_OVERLAY : c.Sbl.UNLOCKED_OVERLAY
       }), y("join"), r.Z.updateNotificationStatus(n)
     },

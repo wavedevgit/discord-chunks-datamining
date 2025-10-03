@@ -115,8 +115,8 @@ let es = (e, t) => ei({
       assetUrl: e ? w.Z : L.Z
     },
     yourSpace: {
-      thumbnail: j.Z,
-      assetUrl: e ? x.Z : M.Z
+      thumbnail: M.Z,
+      assetUrl: e ? x.Z : j.Z
     },
     emojis: {
       thumbnail: I.Z,

@@ -30,43 +30,43 @@ function C(e) {
     context: n,
     application: s,
     sectionName: c
-  } = e, C = "channel" === n.type ? n.channel : true, P = (0, r.e7)([p.Z], () => p.Z.entrypoint()), O = null != (t = (0, d.q)(s.id === b.bi.BUILT_IN ? null : s.id)) ? t : s, A = (0, f.ye)(O) ? E : x.Z, _ = i.useRef(null), [I, S] = i.useState(false), {
+  } = e, C = "channel" === n.type ? n.channel : true, P = (0, r.e7)([p.Z], () => p.Z.entrypoint()), A = null != (t = (0, d.q)(s.id === g.bi.BUILT_IN ? null : s.id)) ? t : s, _ = (0, f.ye)(A) ? E : y.Z, O = i.useRef(null), [I, S] = i.useState(false), {
     iconURL: T,
     name: L
-  } = i.useMemo(() => (0, f.sl)(O, {
-    fakeAppIconURL: N,
+  } = i.useMemo(() => (0, f.sl)(A, {
+    fakeAppIconURL: j,
     size: 84
-  }), [O]), R = (0, u.PL)(true, true), Z = (0, u.LD)(null == C ? true : C.guild_id, true), w = i.useMemo(() => (0, u.If)(n, O.id), [R, Z, n, O.id]), k = !w.isGuildInstalled && !w.isUserInstalled;
+  }), [A]), R = (0, u.PL)(true, true), Z = (0, u.LD)(null == C ? true : C.guild_id, true), w = i.useMemo(() => (0, u.If)(n, A.id), [R, Z, n, A.id]), k = !w.isGuildInstalled && !w.isUserInstalled;
   return i.useEffect(() => {
-    k && u.ZP.queryInstallOnDemandApp(O.id, null == C ? true : C.id)
-  }, [O.id, null == C ? true : C.id, k]), (0, l.jsxs)(o.u2D, {
-    className: j.container,
+    k && u.ZP.queryInstallOnDemandApp(A.id, null == C ? true : C.id)
+  }, [A.id, null == C ? true : C.id, k]), (0, l.jsxs)(o.u2D, {
+    className: N.container,
     fade: true,
-    ref: _,
+    ref: O,
     role: "region",
-    "aria-label": g.intl.formatToPlainString(g.t["4OP4Ul"], {
+    "aria-label": b.intl.formatToPlainString(b.t["4OP4Ul"], {
       applicationName: L
     }),
-    children: [(0, l.jsx)(y.Z, {
-      application: O,
+    children: [(0, l.jsx)(x.Z, {
+      application: A,
       context: n,
       name: L,
       iconURL: T,
-      scrollerRef: _,
+      scrollerRef: O,
       sectionName: c
     }), null != T && (0, l.jsx)(h.Z, {
       src: T,
-      className: j.appIcon
+      className: N.appIcon
     }), (0, l.jsx)(a.Z, {
       size: 54
-    }), (0, l.jsx)(A, {
+    }), (0, l.jsx)(_, {
       context: n,
-      application: O,
+      application: A,
       sectionName: c,
       hasCommands: I
     }), P === m._b.TEXT ? (0, l.jsx)(v.Z, {
       context: n,
-      application: O,
+      application: A,
       sectionName: c,
       installOnDemand: k,
       setHasCommands: S
@@ -85,7 +85,7 @@ function E(e) {
     size: 2048,
     names: ["embedded_cover"]
   }), o = (0, f.yJ)(n), u = null != o && null != o.activity_preview_video_asset_id ? (0, s.Z)(n.id, o.activity_preview_video_asset_id) : null;
-  return (0, l.jsx)(x.Z, {
+  return (0, l.jsx)(y.Z, {
     context: t,
     application: n,
     imageCoverUrl: a.url,

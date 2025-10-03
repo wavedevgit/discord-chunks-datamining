@@ -83,8 +83,8 @@ function P(e) {
   } = (0, b.z)(), {
     analyticsLocations: x
   } = (0, d.ZP)(u.Z.AVATAR), {
-    trackUserProfileAction: j
-  } = (0, m.KZ)(), M = p.ZP.isPremiumAtLeast(null == n ? true : n.premiumType, v.p9.TIER_2), k = i.useMemo(() => t.isNonUserBot() || (0, f.W)(t, h), [t, h]), {
+    trackUserProfileAction: M
+  } = (0, m.KZ)(), j = p.ZP.isPremiumAtLeast(null == n ? true : n.premiumType, v.p9.TIER_2), k = i.useMemo(() => t.isNonUserBot() || (0, f.W)(t, h), [t, h]), {
     live: U
   } = (0, g.Z)(t.id), [G] = U, {
     status: B,
@@ -108,7 +108,7 @@ function P(e) {
     "aria-label": t.username,
     imageClassName: null != P ? T.overlay : true,
     status: k ? O.Skl.UNKNOWN : F,
-    statusBackdropColor: M && !k ? (0, l.QFD)(L) : true,
+    statusBackdropColor: j && !k ? (0, l.QFD)(L) : true,
     isMobile: Z,
     statusTooltip: true,
     statusTooltipDelay: y.vB
@@ -122,7 +122,7 @@ function P(e) {
       ringClassName: T.focusRing
     },
     onClick: () => {
-      j({
+      M({
         action: "PRESS_VIEW_PROFILE",
         analyticsLocations: x
       }), null == P || P()

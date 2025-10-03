@@ -92,27 +92,27 @@ function ei(e) {
   } = e;
   return (0, l.jsxs)(h.P3F, {
     "aria-disabled": a,
-    className: $.recipientRow,
+    className: J.recipientRow,
     onClick: s,
     children: [(0, l.jsx)("div", {
-      className: $.recipientAsset,
+      className: J.recipientAsset,
       children: t
     }), (0, l.jsxs)("div", {
-      className: $.recipientLabels,
+      className: J.recipientLabels,
       children: [(0, l.jsx)(h.Text, {
-        className: $.recipientLabel,
+        className: J.recipientLabel,
         variant: "text-md/medium",
         lineClamp: 1,
         children: n
       }), true !== i ? (0, l.jsx)(h.Text, {
-        className: $.recipientSublabel,
+        className: J.recipientSublabel,
         variant: "text-xs/normal",
         color: "text-muted",
         children: i
       }) : null]
     }), (0, l.jsx)(g.VL, {
       checked: r,
-      className: $.checkbox,
+      className: J.checkbox,
       isIndicator: true
     })]
   })
@@ -128,7 +128,7 @@ function es(e) {
   } = e, o = B.ZP.useName(n), u = B.ZP.useUserTag(n, {
     decoration: "never"
   }), [d, g] = (0, c.Wu)([L.Z, D.Z], () => [L.Z.getNickname(n.id), D.Z.getStatus(n.id)], [n]), m = i.useCallback(() => s(n.id), [s, n.id]), p = [u];
-  M.ZP.isMember(t.id, n.id) && p.push(J.intl.string(J.t.u1sEf3));
+  M.ZP.isMember(t.id, n.id) && p.push($.intl.string($.t.u1sEf3));
   let I = p.join("\xa0\xa0•\xa0\xa0");
   return (0, l.jsx)(ei, {
     icon: (0, l.jsx)(v.Z, {
@@ -238,7 +238,7 @@ function eo(e) {
     }
   }, [t, n, r, s, o]), m = i.useCallback(() => 48, []);
   return 0 === n.length ? (0, l.jsx)(h.OZU, {
-    children: J.intl.string(J.t.ojoWgY)
+    children: $.intl.string($.t.ojoWgY)
   }) : (0, l.jsx)(d.bG, {
     navigator: c,
     children: (0, l.jsx)(d.SJ, {
@@ -262,7 +262,7 @@ function eo(e) {
             return i
           }(e, ["ref"]);
         return (0, l.jsx)(h.YAO, (t = ee({
-          className: $.recipientList,
+          className: J.recipientList,
           style: {
             "--custom-recipient-row-height": "".concat(48, "px")
           },
@@ -503,7 +503,7 @@ function eu(e) {
           })
         });
         if (await Promise.allSettled(n), n.length > 0) {
-          let e = C.length > 1 ? J.intl.string(J.t["4pl/xs"]) : J.intl.string(J.t.sVwWdX);
+          let e = C.length > 1 ? $.intl.string($.t["4pl/xs"]) : $.intl.string($.t.sVwWdX);
           (0, h.showToast)((0, h.createToast)(e, h.ToastType.INVITE))
         }
         e = true
@@ -516,8 +516,8 @@ function eu(e) {
   return (0, l.jsx)(_.Gt, {
     value: eh,
     children: (0, l.jsxs)(h.Y0X, {
-      className: r()($.modal, {
-        [$.disabled]: eM
+      className: r()(J.modal, {
+        [J.disabled]: eM
       }),
       transitionState: t,
       impression: {
@@ -529,17 +529,17 @@ function eu(e) {
       },
       parentComponent: "InstantInviteRefreshModal",
       children: [(0, l.jsxs)(h.xBx, {
-        className: $.header,
+        className: J.header,
         children: [(0, l.jsxs)("div", {
-          className: $.titleLine,
+          className: J.titleLine,
           children: [(0, l.jsx)("div", {
-            className: $.title,
+            className: J.title,
             children: (0, l.jsx)(h.X6q, {
               variant: "heading-lg/semibold",
-              children: J.intl.string(J.t.BN75l5)
+              children: $.intl.string($.t.BN75l5)
             })
           }), (0, l.jsx)(h.olH, {
-            className: $.closeButton,
+            className: J.closeButton,
             onClick: eP
           })]
         }), (0, l.jsx)(h.E1j, {
@@ -547,13 +547,13 @@ function eu(e) {
           query: w,
           onChange: em,
           onClear: ep,
-          placeholder: J.intl.string(J.t["5h0QOD"]),
-          "aria-label": J.intl.string(J.t["5h0QOD"]),
+          placeholder: $.intl.string($.t["5h0QOD"]),
+          "aria-label": $.intl.string($.t["5h0QOD"]),
           autoFocus: true
         })]
       }), (0, l.jsx)(h.hzk, {
-        className: r()($.body, {
-          [$.empty]: 0 === eT.length
+        className: r()(J.body, {
+          [J.empty]: 0 === eT.length
         }),
         children: (0, l.jsx)(eo, {
           guild: s,
@@ -565,9 +565,9 @@ function eu(e) {
         })
       }), (0, l.jsxs)(h.mzw, {
         direction: b.Z.Direction.VERTICAL,
-        className: $.footer,
+        className: J.footer,
         children: [(0, l.jsx)(W.f, {
-          className: $.footerContent,
+          className: J.footerContent,
           guild: s,
           channel: null != a ? a : null,
           applicationId: null != f ? f : null,

@@ -107,7 +107,7 @@ function O(e) {
       null == T || T()
     }, [T]);
   if (!A || null == P) return null;
-  let j = m({
+  let M = m({
     text: null != (a = null == (t = P.action) ? true : t.text) ? a : w ? _.intl.string(_.t.i4jeWV) : _.intl.string(_.t.PDTjLC),
     variant: null != (h = null == (n = P.action) ? true : n.variant) ? h : "primary",
     onClick: D
@@ -146,7 +146,7 @@ function O(e) {
             })
           }), (0, r.jsx)(l.zxk, m({
             size: "sm"
-          }, j))]
+          }, M))]
         })
       }), (0, r.jsx)(u.$, {
         caretConfig: O

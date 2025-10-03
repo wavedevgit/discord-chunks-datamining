@@ -267,7 +267,7 @@ function e_(e) {
         size: "md",
         fullWidth: true,
         onClick: () => {
-          j.default.track(ee.rMx.PREMIUM_SETTINGS_INTERACTED, {
+          M.default.track(ee.rMx.PREMIUM_SETTINGS_INTERACTED, {
             cta_type: ec,
             target: eu
           })
@@ -344,7 +344,7 @@ let eh = function() {
     note: null
   });
   if (!Chunk947889 && !Chunk483444 || l) return (0, Chunk951288.jsx)(Chunk481060.$jN, {});
-  let M = !!(null == Chunk120356 ? true : Chunk120356.hasActiveTrial);
+  let j = !!(null == Chunk120356 ? true : Chunk120356.hasActiveTrial);
   return (0, Chunk951288.jsx)(Chunk906732.Gt, {
     value: require,
     children: (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
@@ -363,7 +363,7 @@ let eh = function() {
       }), (0, Chunk951288.jsx)(Chunk622535.$, {
         innerRef: Chunk607070,
         onChange: e => {
-          e && !R && (j.default.track(ee.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+          e && !R && (M.default.track(ee.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
             location_stack: n
           }), P(true))
         },

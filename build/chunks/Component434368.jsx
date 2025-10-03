@@ -1,7 +1,7 @@
 /** Chunk was on 6850 **/
 /** chunk id: 434368, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -49,27 +49,27 @@ function h(e, t) {
   }), e
 }
 
-function j(e) {
+function g(e) {
   let {
     guildId: t,
     onClose: n
-  } = e, i = (0, a.e7)([d.Z], () => d.Z.getSearchStateByGuildId(t), [t], o()), j = (0, u.dW)(t), g = l.useCallback(() => {
-    i.requireUnusualDmActivity || j(u.aY.UNUSUAL_DM_ACTIVITY), (0, C.Dr)(t, h(f({}, i), {
+  } = e, i = (0, a.e7)([d.Z], () => d.Z.getSearchStateByGuildId(t), [t], o()), g = (0, u.dW)(t), j = l.useCallback(() => {
+    i.requireUnusualDmActivity || g(u.aY.UNUSUAL_DM_ACTIVITY), (0, C.Dr)(t, h(f({}, i), {
       requireUnusualDmActivity: !i.requireUnusualDmActivity
     }))
-  }, [t, i, j]), x = l.useCallback(() => {
-    i.requireCommunicationDisabled || j(u.aY.COMMUNICATION_DISABLED), (0, C.Dr)(t, h(f({}, i), {
+  }, [t, i, g]), x = l.useCallback(() => {
+    i.requireCommunicationDisabled || g(u.aY.COMMUNICATION_DISABLED), (0, C.Dr)(t, h(f({}, i), {
       requireCommunicationDisabled: !i.requireCommunicationDisabled
     }))
-  }, [t, i, j]), v = l.useCallback(() => {
-    i.requireUnusualAccountActivity || j(u.aY.UNUSUAL_ACCOUNT_ACTIVITY), (0, C.Dr)(t, h(f({}, i), {
+  }, [t, i, g]), v = l.useCallback(() => {
+    i.requireUnusualAccountActivity || g(u.aY.UNUSUAL_ACCOUNT_ACTIVITY), (0, C.Dr)(t, h(f({}, i), {
       requireUnusualAccountActivity: !i.requireUnusualAccountActivity
     }))
-  }, [t, i, j]), y = l.useCallback(() => {
-    i.requireUsernameQuarantined || j(u.aY.USERNAME_QUARANTINED), (0, C.Dr)(t, h(f({}, i), {
+  }, [t, i, g]), y = l.useCallback(() => {
+    i.requireUsernameQuarantined || g(u.aY.USERNAME_QUARANTINED), (0, C.Dr)(t, h(f({}, i), {
       requireUsernameQuarantined: !i.requireUsernameQuarantined
     }))
-  }, [t, i, j]);
+  }, [t, i, g]);
   return (0, r.jsx)(s.v2r, {
     navId: "member-safety-flags",
     onClose: n,
@@ -88,7 +88,7 @@ function j(e) {
             className: p.unusualDMLabelIcon
           }), b.intl.string(b.t.ZRnONz)]
         }),
-        action: g,
+        action: j,
         checked: i.requireUnusualDmActivity
       }), (0, r.jsx)(s.S89, {
         id: "toggle-require-communication-disabled",

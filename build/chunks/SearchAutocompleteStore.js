@@ -112,12 +112,12 @@ function x(e) {
   null != n && (n.context.destroy(), n.results = [], A.delete(t)), S.delete(t), T = null
 }
 
-function j(e) {
+function M(e) {
   return null != e && (e === O.dCx.FILTER_FROM || e === O.dCx.FILTER_MENTIONS)
 }
 
-function M(e) {
-  let t = j(e.filter);
+function j(e) {
+  let t = M(e.filter);
   return e.type === O.Sap.FILTER_ALL || e.type === O.Sap.FILTER && t
 }
 
@@ -125,7 +125,7 @@ function k(e, t) {
   let {
     results: n
   } = t, r = (0, E.Tm)(e), i = A.get(r), a = S.get(r);
-  if (null == i || null == a || !M(a.mode)) return;
+  if (null == i || null == a || !j(a.mode)) return;
   i.results = U(n, a.mode.type === O.Sap.FILTER ? C : N);
   let {
     query: o,
@@ -183,7 +183,7 @@ function Z(e) {
     l = S.get(s),
     c = true;
   if (null != l && a === l.query && (null == l.mode || l.mode.filter === o.filter)) t = l.autocompletes, c = false;
-  else if (M(o)) {
+  else if (j(o)) {
     var u, d;
     let e = w(n),
       i = o.token,
@@ -226,7 +226,7 @@ function F(e) {
   let c = null,
     u = null != (n = null == a || null == (t = a.getFullMatch()) ? true : t.trim()) ? n : "",
     d = 0 === u.length;
-  if ((0, E.b7)(o) && j(i) && !d) c = w(o).results;
+  if ((0, E.b7)(o) && M(i) && !d) c = w(o).results;
   else {
     let e = null == (r = y.ZP[i]) ? true : r.getAutocompletions;
     c = null != e ? e({
@@ -236,7 +236,7 @@ function F(e) {
       tokens: l
     }) : []
   }
-  if (null != c && j(i) && (0, y.co)(u)) {
+  if (null != c && M(i) && (0, y.co)(u)) {
     let e = p.default.getCurrentUser();
     null != e && (c = c.filter(t => {
       let {

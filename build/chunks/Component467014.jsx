@@ -23,7 +23,7 @@ function A(e) {
     messagesCount: T,
     linksCount: I,
     mediaCount: m
-  } = (0, u.P2)(t, n), g = new Intl.NumberFormat(d.intl.currentLocale).format(T), N = new Intl.NumberFormat(d.intl.currentLocale).format(I), O = new Intl.NumberFormat(d.intl.currentLocale).format(m), h = l.useCallback(async e => {
+  } = (0, u.P2)(t, n), g = new Intl.NumberFormat(d.intl.currentLocale).format(T), N = new Intl.NumberFormat(d.intl.currentLocale).format(I), h = new Intl.NumberFormat(d.intl.currentLocale).format(m), O = l.useCallback(async e => {
     if (null == A) return;
     let r = (0, u.Ow)(t, e, {
       include_nsfw: true
@@ -57,7 +57,7 @@ function A(e) {
           color: "interactive-normal",
           children: g
         }),
-        onNavigate: T > 0 ? () => h(u.mw.MESSAGES) : true
+        onNavigate: T > 0 ? () => O(u.mw.MESSAGES) : true
       }), (0, r.jsx)(c._2, {
         icon: (0, r.jsx)(s.xPt, {
           size: "custom",
@@ -77,7 +77,7 @@ function A(e) {
           color: "interactive-normal",
           children: N
         }),
-        onNavigate: I > 0 ? () => h(u.mw.LINKS) : true
+        onNavigate: I > 0 ? () => O(u.mw.LINKS) : true
       }), (0, r.jsx)(c._2, {
         icon: (0, r.jsx)(s.Ka2, {
           size: "custom",
@@ -95,9 +95,9 @@ function A(e) {
         }) : (0, r.jsx)(s.Text, {
           variant: "text-sm/semibold",
           color: "interactive-normal",
-          children: O
+          children: h
         }),
-        onNavigate: m > 0 ? () => h(u.mw.MEDIA) : true
+        onNavigate: m > 0 ? () => O(u.mw.MEDIA) : true
       })]
     })
   })

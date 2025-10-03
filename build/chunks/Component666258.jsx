@@ -256,7 +256,7 @@ function F(e) {
     isTemporaryInviteAllowed: k,
     setError: F,
     analyticsLocation: B
-  } = e, [z, G] = i.useState(false), [H, q] = i.useState(false), W = i.useRef(null), [Y] = (0, d.Wu)([j.Z], () => [j.Z.hideInstantInvites]), K = (0, x.Dt)(), X = (0, x.Dt)(), Q = (0, x.Dt)(), J = i.useMemo(() => f && null != s.vanityURLCode ? (0, T.Z)(s.vanityURLCode, false) : null, [s, f]), $ = i.useCallback(async () => {
+  } = e, [z, G] = i.useState(false), [H, q] = i.useState(false), W = i.useRef(null), [Y] = (0, d.Wu)([j.Z], () => [j.Z.hideInstantInvites]), K = (0, x.Dt)(), X = (0, x.Dt)(), Q = (0, x.Dt)(), $ = i.useMemo(() => f && null != s.vanityURLCode ? (0, T.Z)(s.vanityURLCode, false) : null, [s, f]), J = i.useCallback(async () => {
     var e, t;
     if (N) return;
     null !== W.current && clearTimeout(W.current);
@@ -450,8 +450,8 @@ function F(e) {
       className: Z.buttonRow,
       children: [(0, l.jsx)(h.ua7, {
         position: "top",
-        text: J,
-        shouldShow: null !== J && !Y,
+        text: $,
+        shouldShow: null !== $ && !Y,
         children: e => (0, l.jsx)(g.zx, M(A({
           className: Z.button,
           innerClassName: Z.buttonInner,
@@ -459,7 +459,7 @@ function F(e) {
         }, e), {
           onClick: () => {
             var t;
-            null == e || null == (t = e.onClick) || t.call(e), $()
+            null == e || null == (t = e.onClick) || t.call(e), J()
           },
           disabled: N,
           children: z ? (0, l.jsxs)(l.Fragment, {

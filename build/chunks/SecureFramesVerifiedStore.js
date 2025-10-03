@@ -1,7 +1,7 @@
 /** Chunk was on 92592 **/
 /** chunk id: 98369, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => w
+  Z: () => C
 }), require("./388685.js"), require("./410992.js"), require("./227481.js"), require("./730884.js"), require("./20464.js"), require("./341884.js"), require("./364341.js"), require("./629680.js"), require("./505025.js"), require("./918970.js"), require("./121784.js"), require("./644351.js"), require("./146733.js");
 var r, i, Chunk442837 = require("./442837.js"),
   Chunk46973 = require("./46973.js"),
@@ -16,8 +16,8 @@ var r, i, Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js");
 let g = new Map,
   b = new Map,
-  v = false,
-  E = null;
+  E = false,
+  v = null;
 
 function h() {
   return Chunk959457.Z.getAllActiveStreamKeys().reduce((e, t) => {
@@ -28,7 +28,7 @@ function h() {
   }, false)
 }
 
-function y() {
+function S() {
   var e;
   let t = null != (e = Chunk19780.Z.getUserIds()) ? module : new Set,
     n = Chunk314897.default.getId(),
@@ -37,11 +37,11 @@ function y() {
     if (require !== module && true !== g.get(module)) {
       r = false;
       break
-    } let i = r !== v;
-  return v = r, i
+    } let i = r !== E;
+  return E = r, i
 }
 
-function S(e) {
+function y(e) {
   let {
     userId: t
   } = e;
@@ -57,19 +57,19 @@ function S(e) {
       return g.set(e, l), a
     }(t),
     r = h(),
-    i = y();
+    i = S();
   return n || r || i
 }
 
 function O() {
-  g.clear(), b.clear(), v = false
+  g.clear(), b.clear(), E = false
 }
 class I extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk729303.Z, Chunk651941.Z, Chunk19780.Z, Chunk959457.Z)
   }
   isCallVerified() {
-    return v
+    return E
   }
   isStreamVerified(e) {
     return b.get(e)
@@ -83,14 +83,14 @@ class I extends(r = Chunk442837.ZP.Store) {
   configurable: true,
   writable: true
 }) : I[i] = "SecureFramesVerifiedStore";
-let w = new I(Chunk570140.Z, {
+let C = new I(Chunk570140.Z, {
   CONNECTION_OPEN: O,
   VOICE_CHANNEL_SELECT: function(e) {
     let {
       channelId: t
     } = e;
-    if (t === E) returnfalse;
-    E = t, O()
+    if (t === v) returnfalse;
+    v = t, O()
   },
   RTC_CONNECTION_STATE: function(e) {
     let {
@@ -102,7 +102,7 @@ let w = new I(Chunk570140.Z, {
     switch (r) {
       case a.Yn.STREAM:
         if (null == t) returnfalse;
-        return b.delete(t), y();
+        return b.delete(t), S();
       case a.Yn.DEFAULT:
         O()
     }
@@ -110,14 +110,14 @@ let w = new I(Chunk570140.Z, {
   RTC_CONNECTION_ROSTER_MAP_UPDATE: function(e) {
     let {
       userIds: t
-    } = e, n = s.default.getId(), r = t.reduce((e, t) => n === t ? e : !!S({
+    } = e, n = s.default.getId(), r = t.reduce((e, t) => n === t ? e : !!y({
       userId: t
-    }) || e, false), i = h(), l = y();
+    }) || e, false), i = h(), l = S();
     return r || i || l
   },
-  SECURE_FRAMES_TRANSIENT_KEY_CREATE: S,
-  SECURE_FRAMES_TRANSIENT_KEY_DELETE: S,
-  SECURE_FRAMES_VERIFIED_KEY_CREATE: S,
-  SECURE_FRAMES_VERIFIED_KEY_DELETE: S,
-  SECURE_FRAMES_USER_VERIFIED_KEYS_DELETE: S
+  SECURE_FRAMES_TRANSIENT_KEY_CREATE: y,
+  SECURE_FRAMES_TRANSIENT_KEY_DELETE: y,
+  SECURE_FRAMES_VERIFIED_KEY_CREATE: y,
+  SECURE_FRAMES_VERIFIED_KEY_DELETE: y,
+  SECURE_FRAMES_USER_VERIFIED_KEYS_DELETE: y
 })

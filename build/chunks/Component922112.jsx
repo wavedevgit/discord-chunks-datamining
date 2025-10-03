@@ -8,6 +8,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
+  Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk603211 = require("./603211.js"),
   Chunk734893 = require("./734893.js"),
@@ -17,149 +18,146 @@ var Chunk951288 = require("./951288.js"),
   Chunk969632 = require("./969632.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk197530 = require("./197530.js");
-
-function h(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      }) : e[t] = r
-    })
-  }
-  return e
-}
-
-function b(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
-    }
-    return n
-  })(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
 let x = function(e) {
   let {
     guildId: t,
     resourceChannel: l,
     index: x,
-    onDragComplete: j,
-    onDragStart: v,
+    onDragComplete: b,
+    onDragStart: j,
     onDragReset: _
   } = e, {
-    title: O,
-    channelId: y,
-    description: C
-  } = l, N = d.Z.getChannel(y), E = null;
-  null != N && (0, c.k3)(N) || (E = p.intl.string(p.t.kTdL8f));
-  let I = null == C || 0 === C.length,
-    S = u.ZP.getResourceChannelIconURL({
+    title: v,
+    channelId: C,
+    description: O
+  } = l, y = u.Z.getChannel(C), N = null;
+  null != y && (0, d.k3)(y) || (N = f.intl.string(f.t.kTdL8f));
+  let E = null == O || 0 === O.length,
+    I = m.ZP.getResourceChannelIconURL({
       channelId: l.channelId,
       icon: l.icon
     }),
     {
-      drag: T,
-      dragSourcePosition: P,
-      drop: w,
-      setIsDraggable: R
-    } = (0, o.Z)({
+      drag: S,
+      dragSourcePosition: T,
+      drop: P,
+      setIsDraggable: w
+    } = (0, c.Z)({
       type: "RESOURCE_CHANNEL",
       optionId: l.channelId,
       index: x,
-      onDragStart: v,
-      onDragComplete: j,
+      onDragStart: j,
+      onDragComplete: b,
       onDragReset: _
     }),
-    Z = i.useCallback(e => {
-      (0, m.XG)(l.channelId, e)
+    R = i.useCallback(e => {
+      (0, g.XG)(l.channelId, e)
     }, [l.channelId]),
-    D = i.useCallback((e, n) => {
-      let r = g.Z.getSettings();
-      null != r && ((0, m.XG)(l.channelId, e), (0, m.oo)(t, r).then(() => {
-        (0, m.mM)(t, e.channelId, n)
+    Z = i.useCallback((e, n) => {
+      let r = p.Z.getSettings();
+      null != r && ((0, g.XG)(l.channelId, e), (0, g.oo)(t, r).then(() => {
+        (0, g.mM)(t, e.channelId, n)
       }))
     }, [t, l]),
-    A = i.useCallback(() => (0, a.ZDy)(async () => {
+    D = i.useCallback(() => (0, o.ZDy)(async () => {
       let {
         default: e
       } = await n.e("84725").then(n.bind(n, 462499));
-      return n => (0, r.jsx)(e, b(h({}, n), {
-        guildId: t,
-        resourceChannel: l,
-        onSave: Z,
-        onDelete: () => (0, m.Hz)(l.channelId),
-        onIconUpload: D
-      }))
-    }), [t, l, Z, D]);
-  return null == N ? null : (0, r.jsxs)("div", {
-    className: f.resourceChannelContainer,
+      return n => {
+        var i, s;
+        return (0, r.jsx)(e, (i = function(e) {
+          for (var t = 1; t < arguments.length; t++) {
+            var n = null != arguments[t] ? arguments[t] : {},
+              r = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              return Object.getOwnPropertyDescriptor(n, e).enumerable
+            }))), r.forEach(function(t) {
+              var r;
+              r = n[t], t in e ? Object.defineProperty(e, t, {
+                value: r,
+                enumerable: true,
+                configurable: true,
+                writable: true
+              }) : e[t] = r
+            })
+          }
+          return e
+        }({}, n), s = s = {
+          guildId: t,
+          resourceChannel: l,
+          onSave: R,
+          onDelete: () => (0, g.Hz)(l.channelId),
+          onIconUpload: Z
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
+          var n = Object.keys(e);
+          if (Object.getOwnPropertySymbols) {
+            var r = Object.getOwnPropertySymbols(e);
+            n.push.apply(n, r)
+          }
+          return n
+        })(Object(s)).forEach(function(e) {
+          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(s, e))
+        }), i))
+      }
+    }), [t, l, R, Z]);
+  return null == y ? null : (0, r.jsxs)("div", {
+    className: h.resourceChannelContainer,
     children: [(0, r.jsxs)("div", {
-      className: s()(f.resourceChannel, {
-        [f.dropIndicatorBefore]: null != P && x < P,
-        [f.dropIndicatorAfter]: null != P && x > P,
-        [f.resourceChannelError]: null != E
+      className: s()(h.resourceChannel, {
+        [h.dropIndicatorBefore]: null != T && x < T,
+        [h.dropIndicatorAfter]: null != T && x > T,
+        [h.resourceChannelError]: null != N
       }),
       ref: e => {
-        T(w(e))
+        S(P(e))
       },
       children: [(0, r.jsx)("div", {
-        className: f.dragContainer,
-        onMouseEnter: () => R(true),
-        onMouseLeave: () => R(false),
-        children: (0, r.jsx)(a.Vni, {
+        className: h.dragContainer,
+        onMouseEnter: () => w(true),
+        onMouseLeave: () => w(false),
+        children: (0, r.jsx)(o.Vni, {
           size: "xs",
           color: "currentColor",
-          className: f.dragIcon
+          className: h.dragIcon
         })
-      }), null != S && (0, r.jsx)("div", {
-        className: f.iconWrapper,
+      }), null != I && (0, r.jsx)("div", {
+        className: h.iconWrapper,
         children: (0, r.jsx)("img", {
-          src: S,
-          className: f.icon,
+          src: I,
+          className: h.icon,
           width: 32,
           height: 32,
           alt: "",
           "aria-hidden": true
         })
       }), (0, r.jsxs)("div", {
-        className: f.resourceChannelContent,
-        children: [(0, r.jsx)(a.Text, {
-          className: f.resourceChannelTitle,
+        className: h.resourceChannelContent,
+        children: [(0, r.jsx)(o.Text, {
+          className: h.resourceChannelTitle,
           variant: "text-md/semibold",
           color: "header-primary",
-          children: O
-        }), !I && (0, r.jsx)(a.Text, {
-          className: f.resourceChannelDescription,
+          children: v
+        }), !E && (0, r.jsx)(o.Text, {
+          className: h.resourceChannelDescription,
           variant: "text-xs/medium",
           color: "text-muted",
           lineClamp: 1,
-          children: C
+          children: O
         })]
-      }), (0, r.jsx)(a.ua7, {
-        text: p.intl.string(p.t.bt75u7),
-        children: e => (0, r.jsx)(a.hU, b(h({}, e), {
-          icon: a.vdY,
+      }), (0, r.jsx)(a.u, {
+        text: f.intl.string(f.t.bt75u7),
+        children: (0, r.jsx)(o.hU, {
+          icon: o.vdY,
           size: "sm",
           variant: "primary",
-          onClick: A,
-          "aria-label": p.intl.string(p.t.bt75u7)
-        }))
+          onClick: D,
+          "aria-label": f.intl.string(f.t.bt75u7)
+        })
       })]
-    }), null != E && (0, r.jsx)(a.Text, {
+    }), null != N && (0, r.jsx)(o.Text, {
       variant: "text-xs/medium",
       color: "text-danger",
-      children: E
+      children: N
     })]
   })
 }

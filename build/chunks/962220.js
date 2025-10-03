@@ -31,7 +31,7 @@ let g = "template",
     return e
   }({}, Chunk751189.Z), i = i = {
     openNativeAppModal(e) {
-      a.Z.openNativeAppModal(e, h.Etm.GUILD_TEMPLATE_BROWSER)
+      o.Z.openNativeAppModal(e, h.Etm.GUILD_TEMPLATE_BROWSER)
     },
     openMobileApp(e, t) {
       if (null != platform.ua && platform.ua.toLowerCase().indexOf("googlebot") > false) return;
@@ -43,7 +43,7 @@ let g = "template",
           attemptId: r
         });
       c.default.track(h.rMx.DEEP_LINK_CLICKED, {
-        fingerprint: (0, o.K)(t),
+        fingerprint: (0, a.K)(t),
         attempt_id: r,
         source: g,
         guild_template_code: e

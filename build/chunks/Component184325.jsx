@@ -58,7 +58,7 @@ function x(e) {
   return e
 }
 
-function j(e, t) {
+function M(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -69,8 +69,8 @@ function j(e, t) {
   return n
 }
 
-function M(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
+function j(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -96,7 +96,7 @@ function U(e) {
     badgeClassName: d,
     displayProfile: g,
     onClose: L,
-    shouldOpenBadgeTooltip: j,
+    shouldOpenBadgeTooltip: M,
     shouldGlowTenureBadge: U
   } = e, {
     analyticsLocations: G
@@ -155,7 +155,7 @@ function U(e) {
           if (null != n) return null == L || L(), n(t)
         },
         v = () => {
-          e.id === T.i && b.default.track(C.rMx.QUEST_CONTENT_VIEWED, M(x({}, (0, _.mH)(p.jn.QUEST_BADGE)), {
+          e.id === T.i && b.default.track(C.rMx.QUEST_CONTENT_VIEWED, j(x({}, (0, _.mH)(p.jn.QUEST_BADGE)), {
             is_targeted: false
           })), Z({
             action: "HOVER_BADGE"
@@ -172,7 +172,7 @@ function U(e) {
       return (0, r.jsx)(o.DY3, {
         text: S,
         "aria-label": e.description,
-        forceOpen: null != j && j(e.id),
+        forceOpen: null != M && M(e.id),
         delay: A.vB,
         children: (0, r.jsx)(o.eee, {
           onClick: y,

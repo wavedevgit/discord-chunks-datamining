@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   EO: () => G,
-  LY: () => M,
+  LY: () => j,
   Nj: () => Chunk90463.Z,
   a5: () => x,
   c4: () => L,
@@ -15,7 +15,7 @@ require.d(exports, {
   rY: () => P,
   rt: () => R,
   wR: () => k,
-  wl: () => j
+  wl: () => M
 }), require("./415506.js"), require("./539854.js"), require("./388685.js");
 var Chunk149765 = require("./149765.js"),
   Chunk911969 = require("./911969.js"),
@@ -170,7 +170,7 @@ function x(e) {
   }
 }
 
-function j(e) {
+function M(e) {
   if (null == e) return "text";
   let t = e.isMediaChannel();
   if (e.type === g.d4z.GUILD_VOICE) return f.Z.can(g.Plq.CONNECT, e) ? "voice" : "voice-locked";
@@ -181,7 +181,7 @@ function j(e) {
   else if (c.sR.has(e.type)) return "text"
 }
 
-function M(e) {
+function j(e) {
   let t, n = u.Z.getChannel(_.Z.getLastSelectedChannelId());
   if (null != n && n.getGuildId() === e && n.type === g.d4z.GUILD_TEXT) t = n.id;
   else {

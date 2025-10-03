@@ -3,7 +3,7 @@
 let r;
 require.d(exports, {
   H: () => g,
-  Z: () => y
+  Z: () => S
 }), require("./388685.js"), require("./290780.js");
 var i, l, Chunk392711 = require("./392711.js"),
   Chunk442837 = require("./442837.js"),
@@ -22,8 +22,8 @@ let p = [],
     })
   },
   b = [],
-  v = 10 * Chunk70956.Z.Millis.SECOND,
-  E = (0, Chunk392711.debounce)(() => {
+  E = 10 * Chunk70956.Z.Millis.SECOND,
+  v = (0, Chunk392711.debounce)(() => {
     let e = (0, Chunk963838.cX)(_);
     Chunk780384.uv.announce(module, "polite"), _ = []
   }, 500);
@@ -46,7 +46,7 @@ class h extends(i = Chunk442837.ZP.Store) {
   configurable: true,
   writable: true
 }) : h[l] = "VoiceChannelEffectsStore";
-let y = new h(Chunk570140.Z, {
+let S = new h(Chunk570140.Z, {
   VOICE_CHANNEL_EFFECT_CLEAR: e => {
     let {
       userId: t
@@ -72,14 +72,14 @@ let y = new h(Chunk570140.Z, {
     }, _ = [..._, {
       emojiName: t.name,
       userId: n
-    }], E())
+    }], v())
   },
   VOICE_CHANNEL_EFFECT_SENT_LOCAL: () => {
     let e = new Date;
     if ((b = [module, ...b].slice(0, 20)).length >= 20) {
       let t = b[b.length - 1],
         n = module.getTime() - exports.getTime();
-      require < v && (r = new Date(module.getTime() + v - require))
+      require < E && (r = new Date(module.getTime() + E - require))
     }
   },
   VOICE_CHANNEL_EFFECT_UPDATE_TIME_STAMP: e => {

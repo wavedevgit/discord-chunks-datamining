@@ -37,7 +37,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk823708 = require("./823708.js"),
   Chunk527455 = require("./527455.js");
 
-function j(e, t, n) {
+function M(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -46,14 +46,14 @@ function j(e, t, n) {
   }) : e[t] = n, e
 }
 
-function M(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      j(e, t, n[t])
+      M(e, t, n[t])
     })
   }
   return e
@@ -77,7 +77,7 @@ function U(e, t) {
 }
 
 function G(e) {
-  var t, n, a, j;
+  var t, n, a, M;
   let {
     embedUrl: k,
     message: G,
@@ -130,7 +130,7 @@ function G(e) {
       roleId: er,
       avatarUrl: V.avatarUrl,
       newAnalyticsLocations: [d.Z.USERNAME],
-      children: e => (0, r.jsx)(u.rz2, U(M({}, e), {
+      children: e => (0, r.jsx)(u.rz2, U(j({}, e), {
         ref: Z,
         name: V.authorName,
         colorString: et,
@@ -212,7 +212,7 @@ function G(e) {
           children: e => (0, r.jsx)("div", {
             onMouseEnter: e_,
             onMouseLeave: e_,
-            children: (0, r.jsx)(u.qEK, U(M({}, e), {
+            children: (0, r.jsx)(u.qEK, U(j({}, e), {
               ref: F,
               size: u.EFr.SIZE_40,
               src: ef,
@@ -234,7 +234,7 @@ function G(e) {
               children: (0, r.jsx)(u.X6q, {
                 variant: "heading-md/semibold",
                 color: "header-primary",
-                children: null != (j = V.channelName) ? j : V.guildName
+                children: null != (M = V.channelName) ? M : V.guildName
               })
             })]
           }), null != V.authorName && (0, r.jsx)(u.Text, {

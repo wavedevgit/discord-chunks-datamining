@@ -91,7 +91,7 @@ i.prototype.parse = function(e, t, n) {
       for (var w = this.hostname.split(/\./), N = 0, D = w.length; N < D; N++) {
         var L = w[N];
         if (L && !L.match(f)) {
-          for (var x = "", j = 0, M = L.length; j < M; j++) L.charCodeAt(j) > 127 ? x += "x" : x += L[j];
+          for (var x = "", M = 0, j = L.length; M < j; M++) L.charCodeAt(M) > 127 ? x += "x" : x += L[M];
           if (!x.match(f)) {
             var k = w.slice(0, N),
               U = w.slice(N + 1),

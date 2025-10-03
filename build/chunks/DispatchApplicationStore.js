@@ -70,8 +70,8 @@ let T = 200,
   D = 0,
   L = 0,
   x = [],
-  j = [],
   M = [],
+  j = [],
   k = false;
 
 function U() {
@@ -206,10 +206,10 @@ function V(e) {
 }
 
 function H(e) {
-  j = (j = [{
+  M = (M = [{
     bytes: e,
     timestamp: Date.now()
-  }, ...j]).slice(0, S)
+  }, ...M]).slice(0, S)
 }
 
 function Y(e) {
@@ -227,10 +227,10 @@ function Y(e) {
 }
 
 function W(e) {
-  M = (M = [{
+  j = (j = [{
     bytes: e,
     timestamp: Date.now()
-  }, ...M]).slice(0, S)
+  }, ...j]).slice(0, S)
 }
 let K = a().throttle(H, T),
   z = a().throttle(Y, T),
@@ -339,10 +339,10 @@ class J extends(r = Chunk442837.ZP.Store) {
     return x
   }
   getHistoricalTotalBytesDownloaded() {
-    return j
+    return M
   }
   getHistoricalTotalBytesWritten() {
-    return M
+    return j
   }
   whenInitialized(e) {
     this.addConditionalChangeListener(() => {

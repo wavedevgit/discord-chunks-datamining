@@ -34,7 +34,7 @@ function d(e) {
     eventCapture: C
   } = e, N = i.useContext(l.S), R = (0, s.C)(), P = null != (a = null == (t = (n = (0, c.ZF)()).isWindowFocused) ? true : t.call(n)) ? a : R, [w, D] = i.useState(true), L = i.useRef(null), {
     rive: x,
-    RiveComponent: j
+    RiveComponent: M
   } = (0, o.useRive)({
     eventTarget: null == E ? true : E.current,
     buffer: d,
@@ -86,12 +86,12 @@ function d(e) {
       autoBind: true
     }), x.setupRiveListeners())
   }, [x, _, w, b]);
-  let M = i.useRef(0);
+  let j = i.useRef(0);
   i.useEffect(() => {
     if (null == x) return;
     x.play();
     let e = t => {
-      null != t.data && "number" == typeof t.data && (M.current = t.data, t.data > 0 && ("halt" === y && N.reducedMotion.enabled && x.isPlaying && x.pause(), x.off(o.EventType.Advance, e)))
+      null != t.data && "number" == typeof t.data && (j.current = t.data, t.data > 0 && ("halt" === y && N.reducedMotion.enabled && x.isPlaying && x.pause(), x.off(o.EventType.Advance, e)))
     };
     return x.on(o.EventType.Advance, e), () => {
       x.off(o.EventType.Advance, e)
@@ -99,10 +99,10 @@ function d(e) {
   }, [x, N.reducedMotion.enabled, y]);
   let k = i.useRef(false);
   return i.useEffect(() => {
-    if (null != x) return !P && k.current && x.isPlaying && M.current > 0 ? x.pause() : P && !x.isPlaying && k.current && x.play(), () => {
+    if (null != x) return !P && k.current && x.isPlaying && j.current > 0 ? x.pause() : P && !x.isPlaying && k.current && x.play(), () => {
       null != x && P && (k.current = null != x.frameRequestId)
     }
-  }, [x, P]), (0, r.jsx)(j, {
+  }, [x, P]), (0, r.jsx)(M, {
     className: p,
     style: g
   })

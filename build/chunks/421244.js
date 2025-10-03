@@ -35,7 +35,7 @@ var Chunk98405 = require("./98405.js"),
   x = !!L && !Chunk621523(function() {
     L("a", /./)
   }),
-  j = Chunk280481(function(e, t, n, r) {
+  M = Chunk280481(function(e, t, n, r) {
     N(this, {
       type: C,
       regexp: e,
@@ -52,12 +52,12 @@ var Chunk98405 = require("./98405.js"),
       r = Chunk820616(exports, require);
     return null === Chunk98405 ? (module.done = true, Chunk682564(true, true)) : (module.global ? "" === Chunk382698(Chunk98405[0]) && (exports.lastIndex = Chunk857168(require, Chunk554148(exports.lastIndex), module.unicode)) : module.done = true, Chunk682564(Chunk98405, false))
   }),
-  M = function(e) {
+  j = function(e) {
     var t, n, r, i = d(this),
       a = u(e),
       o = y(i, RegExp),
       s = u(h(i));
-    return t = new o(o === RegExp ? i.source : i, s), n = !!~D(s, "g"), r = !!~D(s, "u"), t.lastIndex = c(i.lastIndex), new j(t, a, n, r)
+    return t = new o(o === RegExp ? i.source : i, s), n = !!~D(s, "g"), r = !!~D(s, "u"), t.lastIndex = c(i.lastIndex), new M(t, a, n, r)
   };
 Chunk98405({
   target: "String",
@@ -71,8 +71,8 @@ Chunk98405({
     } else {
       if (p(e) && !~D(u(l(h(e))), "g")) throw new w("`.matchAll` does not allow non-global regexes");
       if (x) return L(a, e);
-      if (true === (n = m(e, S)) && T && "RegExp" === _(e) && (n = M), n) return i(n, e, a)
+      if (true === (n = m(e, S)) && T && "RegExp" === _(e) && (n = j), n) return i(n, e, a)
     }
-    return t = u(a), r = RegExp(e, "g"), T ? i(M, r, t) : r[S](t)
+    return t = u(a), r = RegExp(e, "g"), T ? i(j, r, t) : r[S](t)
   }
-}), Chunk511696 || S in P || Chunk556585(P, S, M)
+}), Chunk511696 || S in P || Chunk556585(P, S, j)

@@ -34,10 +34,10 @@ var Chunk98405 = require("./98405.js"),
   Chunk992914 = require("./992914.js"),
   L = Chunk751736("iterator"),
   x = "URLSearchParams",
-  j = x + "Iterator",
-  M = Chunk199838.set,
+  M = x + "Iterator",
+  j = Chunk199838.set,
   k = Chunk199838.getterFor(x),
-  U = Chunk199838.getterFor(j),
+  U = Chunk199838.getterFor(M),
   G = Chunk242606("fetch"),
   B = Chunk242606("Request"),
   Z = Chunk242606("Headers"),
@@ -143,8 +143,8 @@ var Chunk98405 = require("./98405.js"),
     return J(Y(e), ed, e_)
   },
   eh = Chunk280481(function(e, t) {
-    M(this, {
-      type: j,
+    j(this, {
+      type: M,
       target: k(e).entries,
       index: 0,
       kind: t
@@ -208,7 +208,7 @@ em.prototype = {
 var eg = function() {
     Chunk170322(this, eE);
     var e = arguments.length > 0 ? arguments[0] : true,
-      t = M(this, new em(module));
+      t = j(this, new em(module));
     Chunk507604 || (this.size = exports.entries.length)
   },
   eE = eg.prototype;

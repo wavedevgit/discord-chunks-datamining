@@ -1,7 +1,7 @@
 /** Chunk was on 51727 **/
 /** chunk id: 178088, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  k: () => w
+  k: () => Z
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -31,22 +31,22 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk253107 = require("./253107.js");
 
-function w(e) {
+function Z(e) {
   let {
     onOpen: t,
     onClose: n,
     children: l,
-    badgeState: w,
-    popoutPosition: Z,
+    badgeState: Z,
+    popoutPosition: w,
     popoutAlign: T,
     targetElementRef: A,
     spacing: R,
     dialogClassName: D
   } = e, {
     analyticsLocations: L
-  } = (0, p.ZP)(d.Z.NOTIFICATION_CENTER), [M, k] = i.useState(false), [U, G] = [(0, s.e7)([O.Z], () => {
+  } = (0, p.ZP)(d.Z.NOTIFICATION_CENTER), [M, k] = i.useState(false), [U, G] = [(0, s.e7)([y.Z], () => {
     var e, t;
-    return null != (t = null == (e = O.Z.settings.inbox) ? true : e.currentTab) ? t : c.X.UNREADS
+    return null != (t = null == (e = y.Z.settings.inbox) ? true : e.currentTab) ? t : c.X.UNREADS
   }), i.useCallback(e => {
     _.hW.updateAsync("inbox", t => {
       if (t.currentTab === e) returnfalse;
@@ -56,9 +56,9 @@ function w(e) {
     showTutorial: B,
     setSeenTutorial: F
   } = function(e) {
-    let t = (0, s.e7)([O.Z], () => {
+    let t = (0, s.e7)([y.Z], () => {
         var e, t;
-        return null != (t = null == (e = O.Z.settings.inbox) ? true : e.viewedTutorial) && t
+        return null != (t = null == (e = y.Z.settings.inbox) ? true : e.viewedTutorial) && t
       }),
       n = i.useCallback(() => {
         _.hW.updateAsync("inbox", e => {
@@ -74,15 +74,15 @@ function w(e) {
   }, [n, M]), H = i.useCallback(() => {
     k(!M), M ? null == n || n() : null == t || t()
   }, [n, t, M]);
-  i.useEffect(() => (y.S.subscribe(P.CkL.TOGGLE_INBOX, H), () => void y.S.unsubscribe(P.CkL.TOGGLE_INBOX, H)), [H]);
+  i.useEffect(() => (O.S.subscribe(I.CkL.TOGGLE_INBOX, H), () => void O.S.unsubscribe(I.CkL.TOGGLE_INBOX, H)), [H]);
   let {
     enabled: z,
     inInbox: W
-  } = h.Z.useExperiment({
+  } = f.Z.useExperiment({
     location: "RecentsPopout"
   }), K = (0, s.e7)([g.Z], () => g.Z.hasOverdueReminder(), []) && z && W, {
     enabled: Y
-  } = f.Z.useExperiment({
+  } = h.Z.useExperiment({
     location: "RecentsPopout"
   });
   i.useEffect(() => {
@@ -99,14 +99,14 @@ function w(e) {
     children: (0, r.jsx)(u.yRy, {
       targetElementRef: A,
       animation: u.yRy.Animation.NONE,
-      position: Z,
+      position: w,
       align: T,
       autoInvert: false,
       shouldShow: M,
       onRequestClose: V,
       renderPopout: function() {
         return (0, r.jsx)(u.VqE, {
-          "aria-label": I.intl.string(I.t.GSmTKC),
+          "aria-label": P.intl.string(P.t.GSmTKC),
           className: D,
           children: (0, r.jsx)("div", {
             className: o()(N.container, {
@@ -116,7 +116,7 @@ function w(e) {
               component: (0, r.jsx)(x.Z, {
                 tab: U,
                 setTab: G,
-                badgeState: w,
+                badgeState: Z,
                 closePopout: V
               }),
               children: U === c.X.FOR_YOU ? (0, r.jsx)(v.ZP, {}) : U === c.X.MENTIONS ? (0, r.jsx)(j.Z, {

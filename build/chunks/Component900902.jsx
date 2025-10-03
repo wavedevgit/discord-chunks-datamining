@@ -1,4 +1,4 @@
-/** Chunk was on 9665 **/
+/** Chunk was on 50118 **/
 /** chunk id: 900902, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -25,14 +25,14 @@ let p = Chunk647438.memo(function(e) {
       author: m,
       repliedMessage: g,
       roleIcon: b
-    } = e, y = (0, u.wq)(t.author.id, n.id), C = (0, u.XO)(t, n, p, f), _ = (0, u.R9)(h, f), v = i.useCallback(() => {
+    } = e, C = (0, u.wq)(t.author.id, n.id), y = (0, u.XO)(t, n, p, f), _ = (0, u.R9)(h, f), v = r.useCallback(() => {
       f({
         usernameProfile: false,
         avatarProfile: false,
         referencedUsernameProfile: false
       })
     }, [f]);
-    return (0, r.jsx)(o.ZP, {
+    return (0, i.jsx)(o.ZP, {
       guildId: n.guild_id,
       message: t,
       channel: n,
@@ -45,8 +45,8 @@ let p = Chunk647438.memo(function(e) {
       showAvatarPopout: h,
       showUsernamePopout: p,
       onClickAvatar: _,
-      onClickUsername: C,
-      onContextMenu: y,
+      onClickUsername: y,
+      onContextMenu: C,
       onPopoutRequestClose: v,
       roleIcon: b
     })
@@ -57,7 +57,7 @@ function f(e) {
   let {
     messageProps: t,
     setPopout: n,
-    messagePopouts: i,
+    messagePopouts: r,
     replyReference: o,
     author: s,
     repliedMessage: c,
@@ -69,24 +69,24 @@ function f(e) {
     groupId: g
   } = t, {
     usernameProfile: b,
-    avatarProfile: y
-  } = i;
+    avatarProfile: C
+  } = r;
   if ((0, l.Z)(d)) return null;
-  let C = d.id === g;
-  return C || f || null != o ? (0, r.jsx)(p, {
+  let y = d.id === g;
+  return y || f || null != o ? (0, i.jsx)(p, {
     message: d,
     channel: m,
     compact: f,
     subscribeToGroupId: g,
-    isGroupStart: C,
+    isGroupStart: y,
     groupId: g,
     setPopout: n,
     usernameProfile: b,
-    avatarProfile: y,
+    avatarProfile: C,
     author: s,
     repliedMessage: c,
     roleIcon: u
-  }) : (0, r.jsx)(h, {
+  }) : (0, i.jsx)(h, {
     compact: true,
     timestamp: d.timestamp,
     isInline: false,

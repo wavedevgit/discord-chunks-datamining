@@ -1,4 +1,4 @@
-/** Chunk was on 9665 **/
+/** Chunk was on 50118 **/
 /** chunk id: 575464, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -21,11 +21,11 @@ var Chunk120356 = require("./120356.js"),
 function g(e) {
   var t, n;
   let {
-    user: i,
+    user: r,
     row: g,
     hideDiscriminator: b,
-    comparator: y,
-    selected: C,
+    comparator: C,
+    selected: y,
     checked: _,
     disabled: v = false,
     inlineUsername: x = true,
@@ -33,21 +33,21 @@ function g(e) {
     onMouseEnter: j,
     "aria-setsize": E,
     "aria-posinset": S
-  } = e, P = (0, o.e7)([h.Z], () => h.Z.getStatus(i.id)), I = (0, a.JA)(String(i.id));
-  return (0, r.jsx)(c.P3F, (t = function(e) {
+  } = e, P = (0, o.e7)([h.Z], () => h.Z.getStatus(r.id)), I = (0, a.JA)(String(r.id));
+  return (0, i.jsx)(c.P3F, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
-        r = Object.keys(n);
-      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        i = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
         return Object.getOwnPropertyDescriptor(n, e).enumerable
-      }))), r.forEach(function(t) {
-        var r;
-        r = n[t], t in e ? Object.defineProperty(e, t, {
-          value: r,
+      }))), i.forEach(function(t) {
+        var i;
+        i = n[t], t in e ? Object.defineProperty(e, t, {
+          value: i,
           enumerable: true,
           configurable: true,
           writable: true
-        }) : e[t] = r
+        }) : e[t] = i
       })
     }
     return e
@@ -57,7 +57,7 @@ function g(e) {
       [m.disabled]: v
     }),
     onClick: () => {
-      null != O && O(i.id)
+      null != O && O(r.id)
     },
     onMouseEnter: () => {
       null != j && j(g)
@@ -68,31 +68,31 @@ function g(e) {
     "aria-disabled": v,
     "aria-setsize": E,
     "aria-posinset": S,
-    children: (0, r.jsxs)(p.Z, {
+    children: (0, i.jsxs)(p.Z, {
       align: p.Z.Align.CENTER,
       className: l()(m.friend, {
-        [m.friendSelected]: C,
+        [m.friendSelected]: y,
         [m.twoRows]: !x
       }),
-      children: [(0, r.jsx)(d.Z, {
-        user: i,
+      children: [(0, i.jsx)(d.Z, {
+        user: r,
         status: P,
         className: m.avatar
-      }), (0, r.jsxs)(p.Z, {
+      }), (0, i.jsxs)(p.Z, {
         className: m.match,
         align: p.Z.Align.BASELINE,
         direction: x ? p.Z.Direction.HORIZONTAL : p.Z.Direction.VERTICAL,
-        children: [(0, r.jsx)(c.Text, {
+        children: [(0, i.jsx)(c.Text, {
           tag: "strong",
           className: m.nickname,
           "aria-hidden": true,
           variant: "text-md/medium",
-          children: null != y && y === i.tag ? f.ZP.getName(i) : null != y && "" !== y ? y : f.ZP.getName(i)
-        }), (0, r.jsx)(c.Text, {
+          children: null != C && C === r.tag ? f.ZP.getName(r) : null != C && "" !== C ? C : f.ZP.getName(r)
+        }), (0, i.jsx)(c.Text, {
           variant: "text-xs/normal",
           color: "text-muted",
-          children: (0, r.jsx)(u.Z, {
-            user: i,
+          children: (0, i.jsx)(u.Z, {
+            user: r,
             hideDiscriminator: b,
             className: m.discordTag,
             usernameClass: m.__invalid_weightMedium,
@@ -100,7 +100,7 @@ function g(e) {
             forceUsername: true
           })
         })]
-      }), (0, r.jsx)(s.$q, {
+      }), (0, i.jsx)(s.$q, {
         displayOnly: true,
         size: 22,
         value: _,
@@ -111,8 +111,8 @@ function g(e) {
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
+      var i = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, i)
     }
     return n
   })(Object(n)).forEach(function(e) {

@@ -2,7 +2,7 @@
 /** chunk id: 590965, original params: e,t,n (module,exports,require) **/
 let r;
 require.d(exports, {
-  Z: () => P
+  Z: () => I
 }), require("./388685.js"), require("./539854.js");
 var i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -19,7 +19,7 @@ var i, Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk176505 = require("./176505.js");
 
-function O(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -28,14 +28,14 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      O(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
@@ -64,8 +64,8 @@ class S extends(i = Chunk442837.ZP.Store) {
     }
   }
 }
-O(S, "displayName", "InviteModalStore");
-let P = new S(Chunk570140.Z, {
+y(S, "displayName", "InviteModalStore");
+let I = new S(Chunk570140.Z, {
   OVERLAY_INITIALIZE: E,
   CONNECTION_OPEN: E,
   CONNECTION_CLOSED: function() {
@@ -92,7 +92,7 @@ let P = new S(Chunk570140.Z, {
             } = e;
             if (null != t) {
               let e = u.Z.getChannel(t.id);
-              if (f.Z.can(b.Plq.VIEW_CHANNEL, e)) return t.id
+              if (h.Z.can(b.Plq.VIEW_CHANNEL, e)) return t.id
             }
             return null
           }(t);
@@ -129,7 +129,7 @@ let P = new S(Chunk570140.Z, {
         type: s,
         is_nickname_changeable: d
       };
-      return null != c && (p.channel = y({}, c)), null != u && (p.guild = (0, g.Qs)(u)), null != e.inviter && (p.inviter = y({}, e.inviter)), p
+      return null != c && (p.channel = O({}, c)), null != u && (p.guild = (0, g.Qs)(u)), null != e.inviter && (p.inviter = O({}, e.inviter)), p
     }(t);
     C.push([n, e.resolve])
   },

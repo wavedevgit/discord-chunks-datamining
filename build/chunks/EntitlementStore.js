@@ -86,7 +86,7 @@ function x() {
   y = true
 }
 
-function j(e) {
+function M(e) {
   let {
     entitlements: t,
     excludeEnded: n
@@ -94,7 +94,7 @@ function j(e) {
   for (let e of (O = true, y = false, v = !n, t)) C(e)
 }
 
-function M() {
+function j() {
   O = false, y = false, v = false
 }
 
@@ -242,6 +242,6 @@ let F = new Z(Chunk570140.Z, {
   ENTITLEMENT_DELETE: B,
   LOGOUT: A,
   ENTITLEMENTS_FETCH_FOR_USER_START: x,
-  ENTITLEMENTS_FETCH_FOR_USER_SUCCESS: j,
-  ENTITLEMENTS_FETCH_FOR_USER_FAIL: M
+  ENTITLEMENTS_FETCH_FOR_USER_SUCCESS: M,
+  ENTITLEMENTS_FETCH_FOR_USER_FAIL: j
 })

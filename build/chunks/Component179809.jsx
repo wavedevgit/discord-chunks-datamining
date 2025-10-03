@@ -1,7 +1,7 @@
 /** Chunk was on 51727 **/
 /** chunk id: 179809, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => w
+  Z: () => Z
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -28,9 +28,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk106663 = require("./106663.js"),
   Chunk534175 = require("./534175.js");
-let I = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
+let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
   N = (0, Chunk137317.animated)(Chunk481060.Kqy),
-  w = Chunk647438.memo(function(e) {
+  Z = Chunk647438.memo(function(e) {
     let {
       folderNode: t,
       setNodeRef: n,
@@ -38,8 +38,8 @@ let I = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
       expanded: s,
       mediaState: d,
       mentionCount: m = 0,
-      isMentionLowImportance: w,
-      unread: Z = false,
+      isMentionLowImportance: Z,
+      unread: w = false,
       defaultFolderName: T,
       draggable: A = false,
       sorting: R = false,
@@ -56,7 +56,7 @@ let I = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
       id: H,
       name: z,
       children: W
-    } = t, [K, Y] = i.useState(false), [q, X] = i.useState(false), Q = K || q, J = (0, h.Ml)("FolderItem");
+    } = t, [K, Y] = i.useState(false), [q, X] = i.useState(false), Q = K || q, J = (0, f.Ml)("FolderItem");
     i.useEffect(() => {
       R && Y(false)
     }, [R]);
@@ -69,7 +69,7 @@ let I = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
         nodeId: t.id
       }),
       end() {
-        null == L || L(), (0, f.V1)(g.ZP.getCompatibleGuildFolders())
+        null == L || L(), (0, h.V1)(g.ZP.getCompatibleGuildFolders())
       },
       collect: e => ({
         dragging: e.isDragging()
@@ -94,15 +94,15 @@ let I = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
         height: 0
       },
       config: {
-        duration: I
+        duration: P
       }
     }), es = i.useCallback(e => null == n ? true : n(H, e), [n, H]), ec = (0, r.jsxs)(j.H, {
       children: [(0, r.jsx)(_.Z, {
         disabled: $ || s,
         hovered: K,
         selected: l,
-        unread: Z,
-        className: P.pill
+        unread: w,
+        className: I.pill
       }), (0, r.jsx)(x.Z, {
         text: er,
         disabled: R,
@@ -114,18 +114,18 @@ let I = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
           } : true,
           className: o()(S.folderHeader, {
             [S.folderHeaderSmall]: "icon" === G || J,
-            [P.wobble]: !$ && q && !s
+            [I.wobble]: !$ && q && !s
           }),
           "data-dnd-name": er,
           children: $ ? (0, r.jsx)(v.Z, {
             isFolder: true
-          }) : (0, r.jsx)(O.Z, {
+          }) : (0, r.jsx)(y.Z, {
             folderNode: t,
             expanded: s,
             sorting: R,
             mediaState: d,
             mentionCount: m,
-            isMentionLowImportance: w,
+            isMentionLowImportance: Z,
             tooltipName: er,
             folderGroupId: el,
             onClick: M,
@@ -138,7 +138,7 @@ let I = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
             "aria-posinset": V
           })
         })
-      }), A ? (0, r.jsx)(y.ZP, {
+      }), A ? (0, r.jsx)(O.ZP, {
         name: er,
         targetNode: t,
         onDragOverChanged: et
@@ -172,7 +172,7 @@ let I = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
           "aria-label": t.name,
           children: W.map((t, n) => U(t, n, W.length, e.height))
         }, l)
-      }), A && s ? (0, r.jsx)(y.Zu, {
+      }), A && s ? (0, r.jsx)(O.Zu, {
         name: er,
         targetNode: t
       }) : null]

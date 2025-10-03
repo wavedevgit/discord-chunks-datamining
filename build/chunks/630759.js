@@ -9,9 +9,9 @@ require.d(exports, {
   ZU: () => L,
   Zn: () => x,
   aZ: () => R,
-  bo: () => j,
+  bo: () => M,
   fz: () => W,
-  kK: () => M,
+  kK: () => j,
   lg: () => Y,
   om: () => F,
   pL: () => P,
@@ -95,7 +95,7 @@ function x(e) {
   })
 }
 
-function j(e) {
+function M(e) {
   let t = s()(e),
     n = s()().diff(t, "s");
   if (n > 12 * m.Z.Seconds.DAYS_30) {
@@ -138,7 +138,7 @@ function j(e) {
   }
 }
 
-function M(e) {
+function j(e) {
   let {
     isCurrentUserKeyPersistent: t,
     isOtherUserKeyPersistent: n,

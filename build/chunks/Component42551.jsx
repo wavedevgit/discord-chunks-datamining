@@ -42,7 +42,7 @@ function H(e) {
           children: [(0, r.jsx)("div", {
             className: o()(v.labelBackground, n && v.selected)
           }), (0, r.jsx)(b.lo1.Label, {
-            children: (0, r.jsx)(g.Z, {
+            children: (0, r.jsx)(j.Z, {
               className: y.roleTooltipItem,
               role: l,
               guildId: t
@@ -57,7 +57,7 @@ function H(e) {
       })
     }, l.id)
   }, w = l.useCallback(e => {
-    (0, j.Dr)(t, {
+    (0, g.Dr)(t, {
       selectedRoleIds: e
     }), i(e)
   }, [t, i]), S = l.useMemo(() => u()(w, 300), [w]), N = l.useCallback(e => {

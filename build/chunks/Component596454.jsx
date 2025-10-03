@@ -101,8 +101,8 @@ function A(e) {
       registerAnimatedElementRef: L,
       surrogate: x
     } = e,
-    j = I(e, ["src", "alt", "className", "emojiId", "emojiName", "channelId", "messageId", "animated", "size", "isInteracting", "shouldAnimate", "onMouseEnter", "onMouseLeave", "canSelect", "autoplay", "registerInnerRef", "registerAnimatedElementRef", "surrogate"]);
-  let [M, k] = i.useState(false), [U, G] = i.useState(true), B = i.useRef(true), {
+    M = I(e, ["src", "alt", "className", "emojiId", "emojiName", "channelId", "messageId", "animated", "size", "isInteracting", "shouldAnimate", "onMouseEnter", "onMouseLeave", "canSelect", "autoplay", "registerInnerRef", "registerAnimatedElementRef", "surrogate"]);
+  let [j, k] = i.useState(false), [U, G] = i.useState(true), B = i.useRef(true), {
     triggerAnimation: Z,
     untriggerAnimation: F
   } = i.useContext(u.Rm), V = _.Yk.useSetting(), H = S(), Y = null == w ? V : w, W = E.kV[T], K = i.useRef(null), z = i.useMemo(() => {
@@ -111,13 +111,13 @@ function A(e) {
       let e = true === C && Y;
       return h.ZP.getEmojiURL({
         id: f,
-        animated: H && true === O && (e || M || true === A),
+        animated: H && true === O && (e || j || true === A),
         size: W
       })
     }
     if (null != p) return m.ZP.getURL(p);
     throw Error("Unknown Src for Emoji")
-  }, [O, Y, f, p, W, H, M, A, C, a]), q = i.useCallback(() => {
+  }, [O, Y, f, p, W, H, j, A, C, a]), q = i.useCallback(() => {
     null != z && (B.current = (0, d.po)(z, e => {
       e || G(Date.now())
     }))
@@ -131,7 +131,7 @@ function A(e) {
     } : {
       "data-name": p
     };
-    return y(v(y({}, j), {
+    return y(v(y({}, M), {
       className: o()("emoji", c, {
         jumboable: "jumbo" === T
       }),
@@ -140,7 +140,7 @@ function A(e) {
       onMouseLeave: Q,
       "data-type": "emoji"
     }), e)
-  }, [c, f, p, X, Q, q, j, T]);
+  }, [c, f, p, X, Q, q, M, T]);
   i.useEffect(() => () => {
     var e;
     return null == (e = B.current) ? true : e.call(B)

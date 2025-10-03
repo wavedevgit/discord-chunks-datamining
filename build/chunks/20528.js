@@ -65,7 +65,7 @@ function x(e) {
   null == (t = N[e]) || t.stop(), delete N[e]
 }
 
-function j(e, t) {
+function M(e, t) {
   if (m.Z.getVoiceChannelId() !== e) returnfalse;
   let n = _.Z.getChannel(e);
   if (null == n || !n.isDM() && !n.isGuildStageVoice() || null != d.Z.getActiveStreamForUser(t, n.getGuildId())) returnfalse;
@@ -77,7 +77,7 @@ function j(e, t) {
   }), true)
 }
 
-function M(e, t) {
+function j(e, t) {
   let n = null != t ? t : h.Z.getPreferredRegion();
   null != n && n !== h.Z.getRegion(g.Z.getHostname(e)) && (0, o.dV)(e, n)
 }
@@ -164,7 +164,7 @@ class U extends Chunk147913.Z {
         } = e;
         return t !== f.default.getId()
       })[0];
-      null != n && j(t, n.ownerId)
+      null != n && M(t, n.ownerId)
     }), T(this, "handleVoiceStateUpdates", e => {
       let {
         voiceStates: t
@@ -177,7 +177,7 @@ class U extends Chunk147913.Z {
           selfStream: a
         } = e;
         if (this.platformHandleVoiceStateUpdate(e), t !== f.default.getId() && null != n) {
-          if (a && j(n, t)) return;
+          if (a && M(n, t)) return;
           let e = d.Z.getActiveStreamForUser(t, r);
           if (null != e && e.channelId === n) {
             if (!a && e.state !== I.jm8.ENDED) {
@@ -200,13 +200,13 @@ class U extends Chunk147913.Z {
         channelId: t,
         region: n
       } = e, r = d.Z.getCurrentUserActiveStream();
-      (null == r ? true : r.channelId) === t && M((0, O.V9)(r), n)
+      (null == r ? true : r.channelId) === t && j((0, O.V9)(r), n)
     }), T(this, "handleChannelUpdates", e => {
       let {
         channels: t
       } = e, n = d.Z.getCurrentUserActiveStream();
       if (null != n)
-        for (let e of t) n.channelId === e.id && M((0, O.V9)(n), e.rtcRegion)
+        for (let e of t) n.channelId === e.id && j((0, O.V9)(n), e.rtcRegion)
     }), T(this, "actions", {
       STREAM_WATCH: this.handleStreamWatch,
       STREAM_START: this.handleStreamStart,

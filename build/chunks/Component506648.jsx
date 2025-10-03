@@ -1,10 +1,11 @@
 /** Chunk was on 1272 **/
 /** chunk id: 506648, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => _
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk770146 = require("./770146.jsx"),
   Chunk863969 = require("./863969.jsx"),
@@ -14,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk126373 = require("./126373.js");
-let h = [{
+let g = [{
     feature: Chunk981631.Qa3.SINGLE_PLAYER,
     getText: () => Chunk388032.intl.string(Chunk388032.t["V+/FjI"]),
     getTooltip: () => Chunk388032.intl.string(Chunk388032.t["w+X9sb"]),
@@ -80,51 +81,34 @@ let h = [{
     getTooltip: () => Chunk388032.intl.string(Chunk388032.t.VudViI),
     IconComponent: Chunk39377.Z
   }],
-  g = e => {
+  m = e => {
     let {
       IconComponent: t,
       text: n,
       tooltip: i
     } = e;
     return (0, r.jsxs)("div", {
-      className: f.row,
-      children: [(0, r.jsx)(l.ua7, {
+      className: h.row,
+      children: [(0, r.jsx)(l.u, {
         text: i,
-        children: e => (0, r.jsx)(t, function(e) {
-          for (var t = 1; t < arguments.length; t++) {
-            var n = null != arguments[t] ? arguments[t] : {},
-              r = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-              return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), r.forEach(function(t) {
-              var r;
-              r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: true,
-                configurable: true,
-                writable: true
-              }) : e[t] = r
-            })
-          }
-          return e
-        }({
-          className: f.featureIcon
-        }, e))
+        children: (0, r.jsx)(t, {
+          className: h.featureIcon
+        })
       }), (0, r.jsx)("span", {
-        className: f.featureText,
+        className: h.featureText,
         children: n
-      }), (0, r.jsx)(l.dz2, {
+      }), (0, r.jsx)(a.dz2, {
         size: "md",
         color: "currentColor",
-        className: f.checkmarkIcon
+        className: h.checkmarkIcon
       })]
     })
   };
-class m extends Chunk647438.PureComponent {
+class b extends Chunk647438.PureComponent {
   render() {
     let {
       sku: e
-    } = this.props, t = h.filter(t => {
+    } = this.props, t = g.filter(t => {
       let {
         feature: n
       } = t;
@@ -136,7 +120,7 @@ class m extends Chunk647438.PureComponent {
         getText: i,
         getTooltip: l
       } = e;
-      return (0, r.jsx)(g, {
+      return (0, r.jsx)(m, {
         IconComponent: n,
         text: i(),
         tooltip: l()
@@ -150,4 +134,4 @@ class m extends Chunk647438.PureComponent {
     })
   }
 }
-let b = m
+let _ = b

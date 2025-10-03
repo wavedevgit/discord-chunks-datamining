@@ -1,7 +1,7 @@
-/** Chunk was on 9665 **/
+/** Chunk was on 50118 **/
 /** chunk id: 644914, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  TE: () => C,
+  TE: () => y,
   h_: () => _
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
@@ -21,12 +21,12 @@ var Chunk647438 = require("./647438.js"),
   Chunk709054 = require("./709054.js"),
   Chunk981631 = require("./981631.js");
 
-function C(e, t) {
+function y(e, t) {
   return (0, a.cj)([g.Z], () => ({
     canInvite: (0, o.b)(g.Z, t, e),
-    canManageGuild: null != t && g.Z.can(y.Plq.MANAGE_GUILD, t),
-    canMessage: null != e && g.Z.can(y.Plq.SEND_MESSAGES, e),
-    canCreateChannel: null != t && g.Z.can(y.Plq.MANAGE_CHANNELS, t)
+    canManageGuild: null != t && g.Z.can(C.Plq.MANAGE_GUILD, t),
+    canMessage: null != e && g.Z.can(C.Plq.SEND_MESSAGES, e),
+    canCreateChannel: null != t && g.Z.can(C.Plq.MANAGE_CHANNELS, t)
   }), [t, e])
 }
 
@@ -37,18 +37,18 @@ function _(e) {
         n = (0, a.Wu)([m.Z], () => null != t ? m.Z.getMessages(t.id).toArray() : []);
       return (0, a.e7)([p.Z], () => {
         var t;
-        let r = null != (t = p.Z.getMemberCount(null == e ? true : e.id)) ? t : 0,
-          i = n.some(e => e.type === y.uaV.USER_JOIN);
-        return r > 1 || i
+        let i = null != (t = p.Z.getMemberCount(null == e ? true : e.id)) ? t : 0,
+          r = n.some(e => e.type === C.uaV.USER_JOIN);
+        return i > 1 || r
       }, [e, n])
     }(e),
     guildMessaged: function(e) {
       let t = (0, a.e7)([u.Z], () => null != e ? u.Z.getMutableBasicGuildChannelsForGuild(e.id) : null);
-      var n = r.useMemo(() => null == t ? [] : l().values(t), [t]);
-      let i = (0, a.e7)([c.default], () => c.default.getId());
+      var n = i.useMemo(() => null == t ? [] : l().values(t), [t]);
+      let r = (0, a.e7)([c.default], () => c.default.getId());
       return (0, a.e7)([m.Z], () => l().some(n, e => {
         let t = m.Z.getMessages(e.id).toArray();
-        return l().some(t, e => e.author.id === i && !(0, s.Z)(e))
+        return l().some(t, e => e.author.id === r && !(0, s.Z)(e))
       }))
     }(e),
     guildPersonalized: function(e) {
@@ -60,10 +60,10 @@ function _(e) {
       let t = d.ZP.getChannels(null == e ? true : e.id),
         n = t[d.Zb];
 
-      function r(t) {
+      function i(t) {
         return null != e && b.default.extractTimestamp(t.channel.id) - b.default.extractTimestamp(e.id) > 500
       }
-      return t[d.sH].some(r) || n.some(r)
+      return t[d.sH].some(i) || n.some(i)
     }, [e])
   }
 }

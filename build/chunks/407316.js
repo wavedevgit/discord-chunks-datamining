@@ -11,5 +11,5 @@ function i(e) {
   let t = l.Z.getChannel(e),
     n = null == t ? true : t.isPrivate(),
     i = null == t ? true : t.isForumChannel();
-  return n || r.Z.can(a.Plq.ATTACH_FILES, t) && r.Z.can(a.Plq.SEND_MESSAGES, t) && !i
+  return n || a.Z.can(r.Plq.ATTACH_FILES, t) && a.Z.can(r.Plq.SEND_MESSAGES, t) && !i
 }

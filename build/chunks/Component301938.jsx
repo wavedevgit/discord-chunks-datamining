@@ -25,7 +25,7 @@ function x(e) {
     setSlide: l,
     ready: x,
     token: E
-  } = e, [v, b] = i.useState(false), [j, I] = i.useState(null), [N, O] = i.useState(null), [S, y] = i.useState(""), C = i.useRef(null);
+  } = e, [v, b] = i.useState(false), [j, I] = i.useState(null), [N, S] = i.useState(null), [O, y] = i.useState(""), C = i.useRef(null);
   return i.useEffect(() => {
     if (x) {
       var e;
@@ -37,7 +37,7 @@ function x(e) {
       className: s()(_.marginBottom20, _.marginTop8)
     }), (0, r.jsx)(u.Dx, {
       children: p.intl.string(p.t["IfBQ5+"])
-    }), null != N && "" !== N ? (0, r.jsx)(a.Text, {
+    }), null != N && "" !== N ? (0, r.jsx)(o.Text, {
       variant: "text-sm/normal",
       color: "text-danger",
       children: N
@@ -49,7 +49,7 @@ function x(e) {
         label: p.intl.string(p.t["8dM4FB"]),
         setRef: C,
         className: _.marginBottom20,
-        value: S,
+        value: O,
         onChange: y,
         error: j,
         autoComplete: "new-password",
@@ -59,18 +59,18 @@ function x(e) {
         className: _.marginTop8,
         onClick: () => {
           if (!v) {
-            if (0 === S.length) {
+            if (0 === O.length) {
               I(p.intl.string(p.t.R98xDw)), d.S.dispatch(m.CkL.WAVE_EMPHASIZE);
               return
             }
-            return null != N && O(null), null != j && I(null), t(""), b(true), h.Z.post({
+            return null != N && S(null), null != j && I(null), t(""), b(true), h.Z.post({
               url: m.ANM.ACCOUNT_REVERT,
               body: {
                 token: E,
-                password: S
+                password: O
               },
               trackedActionData: {
-                event: o.NetworkActionNames.ACCOUNT_REVERT
+                event: a.NetworkActionNames.ACCOUNT_REVERT
               },
               rejectWithError: false
             }).then(e => {
@@ -81,12 +81,12 @@ function x(e) {
               } = e;
               y(""), t(n), l(g.n.SUCCESS)
             }).catch(e => {
-              if (e instanceof Error) O(p.intl.formatToPlainString(p.t.aTVNen, {
+              if (e instanceof Error) S(p.intl.formatToPlainString(p.t.aTVNen, {
                 statusPageURL: m.yXt.STATUS
               }));
               else {
                 let t = new c.Z(e);
-                t.hasFieldErrors() ? I(t.getAnyErrorMessage()) : O((function(e) {
+                t.hasFieldErrors() ? I(t.getAnyErrorMessage()) : S((function(e) {
                   switch (e) {
                     case m.evJ.ACCOUNT_REVERT_INVALID_TOKEN:
                       return p.intl.string(p.t["11zzGR"]);

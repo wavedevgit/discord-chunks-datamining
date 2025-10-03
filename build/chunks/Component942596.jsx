@@ -105,7 +105,7 @@ function Q(e) {
   let {
     activity: t
   } = e, n = null;
-  return (0, j.Z)(t) && (n = B.ABu.SPOTIFY), null != t.platform && [B.M7m.PS4, B.M7m.PS5].includes(t.platform) && (n = B.ABu.PLAYSTATION), n
+  return (0, M.Z)(t) && (n = B.ABu.SPOTIFY), null != t.platform && [B.M7m.PS4, B.M7m.PS5].includes(t.platform) && (n = B.ABu.PLAYSTATION), n
 }
 
 function J(e) {
@@ -228,7 +228,7 @@ class $ extends(r = Chunk647438.PureComponent) {
     } = e;
     if (null == f || null == f.large_image && null == f.small_image) return null;
     (0, k.Z)(e) && (o = q[u]);
-    let p = (0, j.Z)(e),
+    let p = (0, M.Z)(e),
       h = null != f.large_image ? (0, i.jsx)("img", {
         alt: null != (t = f.large_text) ? t : "",
         src: (0, N.xF)(_, f.large_image, null != o ? o : [G.Si.LARGE, G.Si.LARGE]),
@@ -341,7 +341,7 @@ class $ extends(r = Chunk647438.PureComponent) {
     return (o === B.IIU.HANG_STATUS ? u = (0, v.O8)(t.id, e) : l && null != n ? u = (0, i.jsx)("span", {
       className: F.activityName,
       children: u
-    }) : !l && (c = a, u = a, (0, j.Z)(e) && null != e.sync_id && null != a ? u = (0, i.jsx)(d.eee, {
+    }) : !l && (c = a, u = a, (0, M.Z)(e) && null != e.sync_id && null != a ? u = (0, i.jsx)(d.eee, {
       className: F.bodyLink,
       onClick: this.handleOpenSpotifyTrack,
       children: a
@@ -369,7 +369,7 @@ class $ extends(r = Chunk647438.PureComponent) {
       (0, S.X)(a.id)
     };
     else if (!(0, x.Z)(e)) {
-      if (o = r, s = r, (0, j.Z)(e) && null != r) {
+      if (o = r, s = r, (0, M.Z)(e) && null != r) {
         let t = (t, n) => (0, i.jsx)(A.Z, {
           artists: r,
           linkClassName: F.bodyLink,
@@ -394,7 +394,7 @@ class $ extends(r = Chunk647438.PureComponent) {
       children: o
     }) : (0, i.jsx)("div", {
       title: null != s ? s : true,
-      className: (0, k.Z)(e) || (0, j.Z)(e) ? F.detailsWrap : F.details,
+      className: (0, k.Z)(e) || (0, M.Z)(e) ? F.detailsWrap : F.details,
       children: o
     })
   }
@@ -405,12 +405,12 @@ class $ extends(r = Chunk647438.PureComponent) {
       channel: r
     } = this.props;
     return n && null != t ? null == r ? (0, i.jsx)("div", {
-      className: (0, k.Z)(e) || (0, j.Z)(e) ? F.detailsWrap : F.details,
+      className: (0, k.Z)(e) || (0, M.Z)(e) ? F.detailsWrap : F.details,
       children: Z.intl.format(Z.t["hq/Qzc"], {
         guildName: t.name
       })
     }) : (0, i.jsxs)("div", {
-      className: s()((0, k.Z)(e) || (0, j.Z)(e) ? F.detailsWrap : F.details, F.guildDetails),
+      className: s()((0, k.Z)(e) || (0, M.Z)(e) ? F.detailsWrap : F.details, F.guildDetails),
       children: [(0, i.jsx)(O.Z, {
         guild: t,
         size: O.Z.Sizes.SMOL,
@@ -434,7 +434,7 @@ class $ extends(r = Chunk647438.PureComponent) {
     let {
       activityGuild: t
     } = this.props;
-    if (!(0, x.Z)(e) || (0, j.Z)(e)) return null;
+    if (!(0, x.Z)(e) || (0, M.Z)(e)) return null;
     let {
       timestamps: n
     } = e;
@@ -448,7 +448,7 @@ class $ extends(r = Chunk647438.PureComponent) {
     })
   }
   renderTimeBar(e) {
-    if (!(0, j.Z)(e)) return null;
+    if (!(0, M.Z)(e)) return null;
     let {
       timestamps: t
     } = e;
@@ -473,7 +473,7 @@ class $ extends(r = Chunk647438.PureComponent) {
       } = e,
       c = o,
       u = o;
-    if (!(0, x.Z)(e) && (c = null == l ? true : l.large_text, u = null == l ? true : l.large_text, (0, j.Z)(e) && null != c)) {
+    if (!(0, x.Z)(e) && (c = null == l ? true : l.large_text, u = null == l ? true : l.large_text, (0, M.Z)(e) && null != c)) {
       let t = (t, n) => null != e.sync_id && null != u ? (0, i.jsx)(d.eee, {
         className: F.bodyLink,
         onClick: this.handleOpenSpotifyAlbum,

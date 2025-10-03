@@ -1,9 +1,9 @@
 /** Chunk was on 51727 **/
 /** chunk id: 933104, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  $h: () => I,
-  cO: () => w,
-  jG: () => P,
+  $h: () => P,
+  cO: () => Z,
+  jG: () => I,
   yI: () => N
 });
 var Chunk951288 = require("./951288.js");
@@ -32,13 +32,13 @@ var Chunk120356 = require("./120356.js"),
   Chunk283902 = require("./283902.js"),
   Chunk225375 = require("./225375.js");
 
-function P(e) {
+function I(e) {
   let {
     guildId: t,
     powerup: n,
     markAsDismissed: i
   } = e;
-  return (0, r.jsx)(Z, {
+  return (0, r.jsx)(w, {
     asset: (0, r.jsx)(m.g, {
       className: x.image
     }),
@@ -54,12 +54,12 @@ function P(e) {
   })
 }
 
-function I(e) {
+function P(e) {
   let {
     guildId: t,
     markAsDismissed: n
-  } = e, i = (0, h.Z)(t);
-  return (0, r.jsx)(Z, {
+  } = e, i = (0, f.Z)(t);
+  return (0, r.jsx)(w, {
     asset: (0, r.jsx)("img", {
       alt: "",
       src: C.Z,
@@ -71,7 +71,7 @@ function I(e) {
     onClick: () => i ? (0, g.Z)(t, u.Z.GUILD_POWERUPS_COACHMARK_NEW_PERKS) : (0, d.f)({
       guildId: t,
       location: {
-        section: O.jXE.GUILD_POWERUPS_NEW_PERKS_COACHMARK
+        section: y.jXE.GUILD_POWERUPS_NEW_PERKS_COACHMARK
       }
     }),
     markAsDismissed: n,
@@ -84,9 +84,9 @@ function N(e) {
     guildId: t,
     powerups: n,
     markAsDismissed: i
-  } = e, l = (0, s.e7)([f.Z], () => {
+  } = e, l = (0, s.e7)([h.Z], () => {
     var e;
-    return null == (e = f.Z.getGuild(t)) ? true : e.name
+    return null == (e = h.Z.getGuild(t)) ? true : e.name
   }), {
     onActivate: o
   } = (0, b.ZP)(t, n[0]);
@@ -101,7 +101,7 @@ function N(e) {
       perk: n[0].title
     }),
     c = 1 === n.length;
-  return (0, r.jsx)(Z, {
+  return (0, r.jsx)(w, {
     asset: 1 === n.length ? (0, r.jsx)(m.m, {
       className: x.image,
       powerup: n[0]
@@ -118,13 +118,13 @@ function N(e) {
   })
 }
 
-function w(e) {
+function Z(e) {
   let {
     guildId: t,
     powerups: n,
     markAsDismissed: i
   } = e, l = n.find(e => e.skuId === o.A$);
-  if (null != l) return (0, r.jsx)(Z, {
+  if (null != l) return (0, r.jsx)(w, {
     header: j.intl.string(v.default.Ygpx4e),
     content: j.intl.string(v.default.mmNkUF),
     asset: (0, r.jsx)("img", {
@@ -137,7 +137,7 @@ function w(e) {
     buttonCTA: j.intl.string(j.t.RzWDqa)
   });
   let a = n.find(e => _.NL.has(e.skuId));
-  return null != a ? (0, r.jsx)(Z, {
+  return null != a ? (0, r.jsx)(w, {
     header: j.intl.string(v.default["kA2c+v"]),
     content: j.intl.string(v.default.TUilLi),
     asset: (0, r.jsx)("img", {
@@ -151,7 +151,7 @@ function w(e) {
   }) : null
 }
 
-function Z(e) {
+function w(e) {
   var {
     asset: t,
     header: n,
@@ -174,7 +174,7 @@ function Z(e) {
     return i
   }(e, ["asset", "header", "content", "caretPosition", "markAsDismissed"]);
   let d = null != o ? o : p.DF.LEFT_TOP,
-    f = d === p.DF.TOP_CENTER || d === p.DF.LEFT_TOP ? x[d] : "";
+    h = d === p.DF.TOP_CENTER || d === p.DF.LEFT_TOP ? x[d] : "";
   return (0, r.jsx)(p.ZP, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -199,7 +199,7 @@ function Z(e) {
       children: [t, (0, r.jsx)(c.olH, {
         "data-migration-pending": true,
         className: x.close,
-        onClick: () => null == s ? true : s(y.L.USER_DISMISS)
+        onClick: () => null == s ? true : s(O.L.USER_DISMISS)
       })]
     }),
     header: (0, r.jsx)(a.xvT, {
@@ -211,7 +211,7 @@ function Z(e) {
       color: "text-muted",
       children: i
     }),
-    className: l()(x.container, f),
+    className: l()(x.container, h),
     headerClassName: x.header,
     contentClassName: x.header,
     caretPosition: d,

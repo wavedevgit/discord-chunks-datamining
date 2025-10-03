@@ -2,7 +2,7 @@
 /** chunk id: 202905, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  r: () => v
+  r: () => _
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -40,22 +40,22 @@ let j = {
   badgeColorSecondary: null
 };
 
-function v(e) {
+function _(e) {
   let {
     pendingFields: t
   } = e, {
     guild: n,
-    guildProfile: v
+    guildProfile: _
   } = (0, a.cj)([g.Z], () => ({
     guild: g.Z.getGuild(),
     guildProfile: g.Z.getGuildProfile()
-  })), _ = null == n ? true : n.id, O = (0, a.e7)([c.Z], () => c.Z.get(_)), {
-    fetchGuildProfile: y
-  } = (0, d.u)(_), C = (null == v ? true : v.visibility) == null || !l.Y.VISIBLE.has(null == v ? true : v.visibility), N = (null == v ? true : v.visibility) === l.k.PUBLIC_WITH_RECRUITMENT;
+  })), v = null == n ? true : n.id, C = (0, a.e7)([c.Z], () => c.Z.get(v)), {
+    fetchGuildProfile: O
+  } = (0, d.u)(v), y = (null == _ ? true : _.visibility) == null || !l.Y.VISIBLE.has(null == _ ? true : _.visibility), N = (null == _ ? true : _.visibility) === l.k.PUBLIC_WITH_RECRUITMENT;
   i.useEffect(() => {
-    null != _ && y()
-  }, [_, y]);
-  let E = i.useMemo(() => null == n || null == v ? j : v, [n, v]),
+    null != v && O()
+  }, [v, O]);
+  let E = i.useMemo(() => null == n || null == _ ? j : _, [n, _]),
     I = i.useCallback(() => {
       (null == n ? true : n.id) != null && (N ? m.Z.updateGuildProfile(n.id, {
         visibility: l.k.PUBLIC
@@ -67,45 +67,45 @@ function v(e) {
       m.Z.setSection(h.pNK.PROFILE)
     }, []);
   if (null == n) return null;
-  let T = null != t ? t : null == O ? true : O.formFields;
+  let T = null != t ? t : null == C ? true : C.formFields;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.X6q, {
       variant: "heading-md/semibold",
       color: "header-primary",
-      children: b.intl.string(b.t.AHJddH)
+      children: x.intl.string(x.t.AHJddH)
     }), (0, r.jsx)(s.xvT, {
       tag: "p",
       variant: "text-sm/medium",
       color: "text-secondary",
-      className: x.applicationBody,
-      children: b.intl.string(b.t.Z7TCtb)
+      className: b.applicationBody,
+      children: x.intl.string(x.t.Z7TCtb)
     }), (0, r.jsx)(f.c, {
       guildId: n.id
     }), (0, r.jsx)("div", {
-      className: x.form,
+      className: b.form,
       children: null != T ? (0, r.jsx)(p.y, {
         guild: n,
         formFields: T
       }) : (0, r.jsx)(o.$jN, {})
     }), (0, r.jsx)("div", {
-      className: x.divider
+      className: b.divider
     }), (0, r.jsxs)(o.hjN, {
-      className: x.twoColumnContainer,
+      className: b.twoColumnContainer,
       children: [(0, r.jsxs)("div", {
-        className: x.column,
+        className: b.column,
         children: [(0, r.jsx)(o.rsf, {
-          label: b.intl.string(b.t["N/0239"]),
+          label: x.intl.string(x.t["N/0239"]),
           checked: N,
           onChange: I,
-          disabled: C
+          disabled: y
         }), (0, r.jsx)(s.xvT, {
           variant: "text-sm/normal",
           color: "text-secondary",
-          children: b.intl.string(b.t["3TSZYG"])
-        }), C && (0, r.jsx)(s.xvT, {
+          children: x.intl.string(x.t["3TSZYG"])
+        }), y && (0, r.jsx)(s.xvT, {
           variant: "text-xs/normal",
           color: "text-muted",
-          children: b.intl.format(b.t.Bk0VOj, {
+          children: x.intl.format(x.t.Bk0VOj, {
             profileLink: (e, t) => (0, r.jsx)(o.eee, {
               onClick: S,
               children: e
@@ -113,18 +113,18 @@ function v(e) {
           })
         })]
       }), (0, r.jsx)("div", {
-        className: x.column,
+        className: b.column,
         children: (0, r.jsxs)("div", {
-          className: x.previewWrapper,
+          className: b.previewWrapper,
           children: [(0, r.jsx)("div", {
-            className: x.gradient
+            className: b.gradient
           }), (0, r.jsx)(u.ZP, {
-            className: x.preview,
+            className: b.preview,
             profile: E,
             CTAOverride: (0, r.jsx)(s.zxk, {
               variant: "active",
               size: "sm",
-              text: b.intl.string(b.t["7XdMW1"]),
+              text: x.intl.string(x.t["7XdMW1"]),
               fullWidth: true
             }),
             disableGuildNameClick: true

@@ -60,8 +60,8 @@ let T = 26,
   x = {
     state: "uninitialized"
   },
-  j = Chunk19780.Z.getState(),
-  M = (0, Chunk127438.H)(),
+  M = Chunk19780.Z.getState(),
+  j = (0, Chunk127438.H)(),
   k = Chunk314897.default.getToken();
 
 function U() {
@@ -146,7 +146,7 @@ function H() {}
 
 function Y() {
   let e = [];
-  return null != k && (M && module.push("foregrounded"), j !== Chunk981631.hes.DISCONNECTED && j !== Chunk981631.hes.RTC_DISCONNECTED && module.push("rtc_connected")), {
+  return null != k && (j && module.push("foregrounded"), M !== Chunk981631.hes.DISCONNECTED && M !== Chunk981631.hes.RTC_DISCONNECTED && module.push("rtc_connected")), {
     active: module.length > 0,
     ver: T,
     reasons: module
@@ -209,25 +209,25 @@ function ee() {
 
 function et() {
   let e = Chunk19780.Z.getState();
-  j !== module && (j = module, K())
+  M !== module && (M = module, K())
 }
 
 function en(e) {
   let {
     focused: t
   } = e;
-  M !== t && (M = t, K())
+  j !== t && (j = t, K())
 }
 
 function er(e) {
   let {
     state: t
   } = e, n = t === O.$7l.ACTIVE;
-  M !== n && (M = n, K())
+  j !== n && (j = n, K())
 }
 
 function ei() {
-  j = Chunk19780.Z.getState(), M = (0, Chunk127438.H)(), ee()
+  M = Chunk19780.Z.getState(), j = (0, Chunk127438.H)(), ee()
 }
 
 function ea() {

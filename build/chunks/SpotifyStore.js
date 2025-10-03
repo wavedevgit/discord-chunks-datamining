@@ -64,12 +64,12 @@ function x(e, t) {
   return n
 }
 
-function j(e, t) {
+function M(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let M = Chunk726542.Z.get(Chunk981631.ABu.SPOTIFY),
+let j = Chunk726542.Z.get(Chunk981631.ABu.SPOTIFY),
   k = "wss://dealer.spotify.com/?access_token=",
   U = "hm://pusher/v1/connections/",
   G = 30 * Chunk70956.Z.Millis.SECOND,
@@ -483,7 +483,7 @@ function ex(e) {
   }, false)
 }
 
-function ej(e) {
+function eM(e) {
   let {
     accountId: t,
     isPremium: n
@@ -492,7 +492,7 @@ function ej(e) {
   r.isPremium = n, $.info("Profile updated for ".concat(t, ": isPremium = ").concat(n))
 }
 
-function eM(e) {
+function ej(e) {
   let {
     settings: t
   } = e;
@@ -502,7 +502,7 @@ function eM(e) {
       sourceId: e,
       sound: n
     } = null == t ? true : t.desktopSettings;
-    null != e && E.ZP.getObservedAppNameForWindow(e) === M.name && n ? (ec = new f.Xp).start(B, ew) : (null == ec || ec.stop(), ec = null)
+    null != e && E.ZP.getObservedAppNameForWindow(e) === j.name && n ? (ec = new f.Xp).start(B, ew) : (null == ec || ec.stop(), ec = null)
   } else null == t && (null == ec || ec.stop(), ec = null)
 }
 
@@ -546,7 +546,7 @@ function ek(e, t, n) {
     artists: [],
     isLocal: false
   });
-  if (null != y && true !== y.is_active && (y = j(L({}, y), {
+  if (null != y && true !== y.is_active && (y = M(L({}, y), {
       is_active: true
     })), null != S && [P.Hw.PLAYLIST, P.Hw.ALBUM].includes(S.type)) {
     let n = eB.getPlayerState(e);
@@ -676,7 +676,7 @@ class eG extends(o = Chunk442837.ZP.Store) {
         button_urls: []
       },
       y = {
-        name: M.name,
+        name: j.name,
         assets: Chunk726542,
         details: Chunk710845,
         state: module,
@@ -697,7 +697,7 @@ let eB = new eG(Chunk570140.Z, {
     CONNECTION_OPEN: eO,
     SPOTIFY_ACCOUNT_ACCESS_TOKEN: ev,
     SPOTIFY_ACCOUNT_ACCESS_TOKEN_REVOKE: eI,
-    SPOTIFY_PROFILE_UPDATE: ej,
+    SPOTIFY_PROFILE_UPDATE: eM,
     SPOTIFY_PLAYER_STATE: eT,
     SPOTIFY_PLAYER_PLAY: eS,
     ACTIVITY_PLAY: eN,
@@ -707,6 +707,6 @@ let eB = new eG(Chunk570140.Z, {
     SPOTIFY_SET_ACTIVE_DEVICE: eC,
     SPEAKING: eL,
     VOICE_STATE_UPDATES: ex,
-    MEDIA_ENGINE_SET_GO_LIVE_SOURCE: eM
+    MEDIA_ENGINE_SET_GO_LIVE_SOURCE: ej
   }),
   eZ = eB

@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk239336 = require("./239336.js");
 
-function x(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var l = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(l);
@@ -59,20 +59,20 @@ function b(e) {
     emojiId: y,
     emojiName: E,
     isRequiredField: I = true,
-    shouldUpdateBothEmojiFields: w = false,
+    shouldUpdateBothEmojiFields: N = false,
     setEmojiId: S,
-    setEmojiName: O
-  } = e, N = (0, g.Z)({
+    setEmojiName: w
+  } = e, C = (0, g.Z)({
     emojiId: y,
     emojiName: E
-  }), C = (0, r.e7)([f.ZP], () => null != l ? f.ZP.getDefaultChannel(l) : null), P = i.useRef(null), k = (0, c.Z)(P), D = () => {
-    O(true), S(true)
+  }), O = (0, s.e7)([f.ZP], () => null != l ? f.ZP.getDefaultChannel(l) : null), k = i.useRef(null), D = (0, c.Z)(k), P = () => {
+    w(true), S(true)
   }, Z = e => {
-    e.stopPropagation(), D()
+    e.stopPropagation(), P()
   }, R = i.useMemo(() => {
     let e = null != y && "" !== y,
       t = null != E && "" !== E,
-      l = null != N && "" !== N,
+      l = null != C && "" !== C,
       n = t && !Number.isNaN(parseInt(E)) && !l && !e;
     return {
       hasEmojiId: e,
@@ -80,7 +80,7 @@ function b(e) {
       hasEmojiDisplayName: l,
       isDeletedCustomEmoji: n
     }
-  }, [y, E, N]), T = !R.isDeletedCustomEmoji && R.hasEmojiDisplayName;
+  }, [y, E, C]), T = !R.isDeletedCustomEmoji && R.hasEmojiDisplayName;
   return (0, n.jsx)("div", {
     className: t,
     children: (0, n.jsx)(a.NIc, {
@@ -88,7 +88,7 @@ function b(e) {
       label: j.intl.string(j.t["3BQmiI"]),
       errorMessage: null != b ? b : true,
       children: (0, n.jsx)(a.yRy, {
-        targetElementRef: P,
+        targetElementRef: k,
         animation: a.yRy.Animation.NONE,
         position: "top",
         renderPopout: e => {
@@ -104,19 +104,19 @@ function b(e) {
                 emoji: l,
                 willClose: n
               } = e, i = (null == l ? true : l.id) == null;
-              D(), i ? O(null == l ? true : l.optionallyDiverseSequence) : (w && O(null == l ? true : l.name), S(null == l ? true : l.id)), n && t()
+              P(), i ? w(null == l ? true : l.optionallyDiverseSequence) : (N && w(null == l ? true : l.name), S(null == l ? true : l.id)), n && t()
             },
             guildId: l,
-            channel: C
+            channel: O
           })
         },
         children: (e, t) => {
           let {
             isShown: l
           } = t;
-          return (0, n.jsxs)(s.U, h(x({}, e), {
-            className: v.emojiInput,
-            ref: P,
+          return (0, n.jsxs)(r.U, h(v({}, e), {
+            className: x.emojiInput,
+            ref: k,
             children: [(0, n.jsx)(d.Z, {
               active: l,
               tabIndex: 0,
@@ -128,8 +128,8 @@ function b(e) {
               variant: "text-md/normal",
               lineClamp: 1,
               color: T ? "text-default" : "text-muted",
-              children: T ? ":".concat(N, ":") : j.intl.string(j.t.QTK0TE)
-            }), T && k && (0, n.jsx)(u.Z, h(x({}, e), {
+              children: T ? ":".concat(C, ":") : j.intl.string(j.t.QTK0TE)
+            }), T && D && (0, n.jsx)(u.Z, h(v({}, e), {
               onClick: Z
             }))]
           }))

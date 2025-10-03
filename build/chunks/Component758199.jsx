@@ -89,7 +89,7 @@ function O(e) {
         messageId: T.messageId
       }), w.current = true
     }
-  }, true), L = null != h, x = null != E && false === P, j = L || x, M = 0 === O ? g.bannerAspectRatioBot : g.bannerAspectRatioActivity, k = i.useRef(null), U = i.useCallback(() => {
+  }, true), L = null != h, x = null != E && false === P, M = L || x, j = 0 === O ? g.bannerAspectRatioBot : g.bannerAspectRatioActivity, k = i.useRef(null), U = i.useCallback(() => {
     let e = k.current;
     null != e && ("hidden" === getComputedStyle(e).visibility ? e.pause() : e.play())
   }, []), G = i.useMemo(() => !!x && new URL(E).pathname.endsWith(".gif"), [x, E]), B = i.useMemo(() => {
@@ -104,9 +104,9 @@ function O(e) {
   return (0, r.jsxs)("div", {
     ref: D,
     className: g.embed,
-    children: [j && (0, r.jsxs)(y, {
+    children: [M && (0, r.jsxs)(y, {
       onClick: Z,
-      className: o()(g.bannerWrapper, M, {
+      className: o()(g.bannerWrapper, j, {
         [g.showVideoOnFocus]: x
       }),
       children: [x && (G ? (0, r.jsx)("div", {

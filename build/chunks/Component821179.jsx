@@ -24,13 +24,13 @@ function g(e) {
     user: t,
     guild: g,
     nick: _,
-    onSelect: y
+    onSelect: v
   } = e, {
     theme: j,
-    themeType: v
-  } = (0, d.z)(), O = t.hasAvatarForGuild(g.id);
-  return (0, r.jsxs)(o.P3F, {
-    focusProps: v === f.l.MODAL_V2 ? {
+    themeType: y
+  } = (0, d.z)(), x = t.hasAvatarForGuild(g.id);
+  return (0, r.jsxs)(a.P3F, {
+    focusProps: y === f.l.MODAL_V2 ? {
       offset: {
         top: 4,
         right: 4,
@@ -42,9 +42,9 @@ function g(e) {
       }
     },
     className: h.row,
-    onClick: y,
+    onClick: v,
     onContextMenu: e => {
-      (0, a.jW)(e, async () => {
+      (0, o.jW)(e, async () => {
         let {
           default: e
         } = await Promise.all([n.e("57804"), n.e("13599"), n.e("36599"), n.e("7654"), n.e("58175"), n.e("76692"), n.e("8271"), n.e("15851"), n.e("51453"), n.e("845"), n.e("49049"), n.e("63575"), n.e("58511"), n.e("6850"), n.e("58227"), n.e("62856"), n.e("44686"), n.e("38697"), n.e("30378"), n.e("64982"), n.e("66201"), n.e("93375"), n.e("39206"), n.e("22516"), n.e("89442"), n.e("87154"), n.e("33213"), n.e("74124")]).then(n.bind(n, 545135));
@@ -88,7 +88,7 @@ function g(e) {
       showBadge: true,
       className: null != g.icon ? h.icon : h.noIcon,
       badgeStrokeColor: (0, l.Lq)((0, i.wj)(j) ? p.Ilk.PRIMARY_600 : p.Ilk.WHITE_500),
-      badgeTooltipColor: o.FGA.PRIMARY,
+      badgeTooltipColor: a.FGA.PRIMARY,
       badgeTooltipDelay: b.vB,
       size: c.Z.Sizes.MEDIUM,
       active: true
@@ -97,21 +97,21 @@ function g(e) {
       children: [(0, r.jsx)("div", {
         className: h.name,
         children: g.name
-      }), O && (0, r.jsxs)("div", {
+      }), x && (0, r.jsxs)("div", {
         className: h.nick,
-        children: [(0, r.jsx)(o.qEK, {
+        children: [(0, r.jsx)(a.qEK, {
           src: t.getAvatarURL(g.id, m),
-          size: o.EFr.SIZE_16,
+          size: a.EFr.SIZE_16,
           className: h.avatar,
           "aria-hidden": true
-        }), (0, r.jsx)(o.Text, {
+        }), (0, r.jsx)(a.Text, {
           variant: "text-xs/medium",
           children: (0, r.jsx)(s.Z, {
             delay: b.vB,
             children: null != _ ? _ : u.ZP.getName(g.id, true, t)
           })
         })]
-      }), !O && null != _ && (0, r.jsx)(o.Text, {
+      }), !x && null != _ && (0, r.jsx)(a.Text, {
         variant: "text-xs/medium",
         children: (0, r.jsx)(s.Z, {
           delay: b.vB,

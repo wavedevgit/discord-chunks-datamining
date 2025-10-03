@@ -133,7 +133,7 @@ function x(e) {
   }))
 }
 
-function j(e) {
+function M(e) {
   let {
     className: t,
     onClick: n,
@@ -153,7 +153,7 @@ function j(e) {
   })
 }
 
-function M(e) {
+function j(e) {
   let t, {
     className: n,
     children: i,
@@ -253,7 +253,7 @@ function U(e) {
         children: a
       });
     case 1:
-      return (0, r.jsx)(M, {
+      return (0, r.jsx)(j, {
         className: o()(t, f),
         onClick: p,
         isSelected: _,
@@ -262,7 +262,7 @@ function U(e) {
         children: a
       });
     case 2:
-      return (0, r.jsx)(j, {
+      return (0, r.jsx)(M, {
         className: o()(t, f),
         onClick: p,
         isSelected: _,

@@ -376,26 +376,26 @@ class Y extends Chunk647438.PureComponent {
                 a = (0, m.U6)(e),
                 s = V[e];
               return (0, r.jsxs)("div", {
-                className: j.defaultKeybindGroup,
+                className: M.defaultKeybindGroup,
                 children: [(0, r.jsx)(d.X6q, {
                   variant: "heading-deprecated-12/semibold",
-                  className: o()(j.defaultKeybindGroupHeader, {
-                    [j.defaultKeybindGroupWithDescription]: null != a
+                  className: o()(M.defaultKeybindGroupHeader, {
+                    [M.defaultKeybindGroupWithDescription]: null != a
                   }),
                   children: n
                 }), null != a && (0, r.jsx)(d.Text, {
                   color: "header-secondary",
-                  className: j.defaultKeybindGroupDescription,
+                  className: M.defaultKeybindGroupDescription,
                   variant: "text-sm/normal",
                   children: a
                 }), (0, r.jsx)(d.izJ, {}), s.map(e => (0, r.jsxs)(i.Fragment, {
                   children: [(0, r.jsxs)("div", {
-                    className: j.defaultKeybind,
+                    className: M.defaultKeybind,
                     children: [(0, r.jsx)(d.Text, {
                       variant: "text-md/normal",
                       children: e.description
                     }), (0, r.jsx)("div", {
-                      className: j.defaultKeybindShortcutGroup,
+                      className: M.defaultKeybindShortcutGroup,
                       children: e.binds.map(e => (0, r.jsx)(d.M2$, {
                         shortcut: e
                       }, e))

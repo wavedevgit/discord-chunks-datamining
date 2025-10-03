@@ -277,8 +277,8 @@ function ex(e) {
     }
   })
 }
-let ej = new Set([Chunk837268.mM.INITIALIZING, Chunk837268.mM.WAITING_FOR_SCREEN_TYPE_RESOLUTION, Chunk837268.mM.WAITING_FOR_MODULE_TRACKING, Chunk837268.mM.WAITING_FOR_OVERLAY_OPEN, Chunk837268.mM.WAITING_FOR_POPOUT_OPEN, Chunk837268.mM.WAITING_FOR_MODULE_POPOUT_CAPTURE, Chunk837268.mM.WAITING_FOR_REACT_INITIALIZATION, Chunk837268.mM.WAITING_FOR_PID_FOCUS]),
-  eM = e => {
+let eM = new Set([Chunk837268.mM.INITIALIZING, Chunk837268.mM.WAITING_FOR_SCREEN_TYPE_RESOLUTION, Chunk837268.mM.WAITING_FOR_MODULE_TRACKING, Chunk837268.mM.WAITING_FOR_OVERLAY_OPEN, Chunk837268.mM.WAITING_FOR_POPOUT_OPEN, Chunk837268.mM.WAITING_FOR_MODULE_POPOUT_CAPTURE, Chunk837268.mM.WAITING_FOR_REACT_INITIALIZATION, Chunk837268.mM.WAITING_FOR_PID_FOCUS]),
+  ej = e => {
     e.preventDefault(), e.stopPropagation()
   };
 
@@ -287,7 +287,7 @@ function ek(e) {
   let {
     runningGame: o,
     runningGameApplication: s
-  } = e, c = null == o ? true : o.pid, u = (0, _.e7)([M.default], () => null == o || null == c ? null : M.default.getTrackedGameByPid(c), [o, c], l()), {
+  } = e, c = null == o ? true : o.pid, u = (0, _.e7)([j.default], () => null == o || null == c ? null : j.default.getTrackedGameByPid(c), [o, c], l()), {
     enabledLegacy: d,
     enabledOOP: f
   } = (0, _.cj)([X.Z, J.Z], () => {
@@ -312,8 +312,8 @@ function ek(e) {
     {
       legacyEnabled: D,
       oopEnabled: x
-    } = (0, _.cj)([M.default], () => M.default.getGlobalEnabledStatus()),
-    j = (e, t) => {
+    } = (0, _.cj)([j.default], () => j.default.getGlobalEnabledStatus()),
+    M = (e, t) => {
       var n, r, i;
       if (null == o) return;
       let a = false,
@@ -373,7 +373,7 @@ function ek(e) {
     V = !y && !x && g && !N,
     H = (null == u ? true : u.overlayMethod) === L.gl.Disabled,
     Y = (null == u ? true : u.state) === L.mM.OVERLAY_RENDERING && !H,
-    K = (null == u ? true : u.state) != null && ej.has(u.state) && !H,
+    K = (null == u ? true : u.state) != null && eM.has(u.state) && !H,
     z = (null == u ? true : u.overlayMethod) === L.gl.OutOfProcess,
     q = (null == u ? true : u.overlayMethod) === L.gl.OutOfProcessLimitedInteraction,
     Q = (null == u ? true : u.overlayMethod) === L.gl.Hook,
@@ -504,7 +504,7 @@ function ek(e) {
     }),
     "aria-label": e_.intl.string(e_.t["87O5GB"]),
     action: (0, r.jsx)(h.P3F, {
-      onClick: e => eM(e),
+      onClick: e => ej(e),
       children: (0, r.jsx)(h.rsf, {
         checked: g && x || y && D,
         disabled: G,
@@ -527,7 +527,7 @@ function ek(e) {
           checked: g && x,
           disabled: N,
           onChange: e => {
-            e && !x ? j(e, w.AE.OOP) : j(e, w.AE.OOP_GAME)
+            e && !x ? M(e, w.AE.OOP) : M(e, w.AE.OOP_GAME)
           }
         }), (0, r.jsx)("div", {
           className: ep.emptySpacer
@@ -543,7 +543,7 @@ function ek(e) {
           checked: y && D,
           disabled: C,
           onChange: e => {
-            e && !D ? j(e, w.AE.LEGACY) : j(e, w.AE.LEGACY_GAME)
+            e && !D ? M(e, w.AE.LEGACY) : M(e, w.AE.LEGACY_GAME)
           }
         }), (0, r.jsx)("div", {
           className: ep.emptySpacer
@@ -640,7 +640,7 @@ function eB() {
     description: Chunk392711,
     "aria-label": Chunk388032.intl.string(Chunk388032.t.BfFpW1),
     action: (0, Chunk951288.jsx)(Chunk481060.P3F, {
-      onClick: e => eM(e),
+      onClick: e => ej(e),
       children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
         checked: require,
         disabled: l,
@@ -713,7 +713,7 @@ function eZ() {
     description: Chunk392711,
     "aria-label": Chunk388032.intl.string(Chunk388032.t["7BlVIi"]),
     action: (0, Chunk951288.jsx)(Chunk481060.P3F, {
-      onClick: e => eM(e),
+      onClick: e => ej(e),
       children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
         checked: require,
         disabled: o,
@@ -1107,7 +1107,7 @@ function eX(e) {
   let {
     runningGame: t,
     runningGameApplication: n
-  } = e, a = null == n ? true : n.id, o = (0, _.e7)([U.Z], () => U.Z.isLimitedInteractionOverrideEnabled(a), [a]), s = i.useMemo(() => null != t && (0, k.H8)(t.pid), [t]), l = (0, j.Z)({
+  } = e, a = null == n ? true : n.id, o = (0, _.e7)([U.Z], () => U.Z.isLimitedInteractionOverrideEnabled(a), [a]), s = i.useMemo(() => null != t && (0, k.H8)(t.pid), [t]), l = (0, M.Z)({
     location: "overlay_user_settings"
   }), {
     disableClickableRegions: c,

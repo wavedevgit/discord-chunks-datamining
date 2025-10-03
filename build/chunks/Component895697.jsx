@@ -42,7 +42,7 @@ function R(e) {
     onOpenProfile: D,
     channelId: L,
     onClose: x
-  } = e, j = c.ZP.getName(null == P ? true : P.id, L, t), M = (0, i.e7)([u.Z], () => {
+  } = e, M = c.ZP.getName(null == P ? true : P.id, L, t), j = (0, i.e7)([u.Z], () => {
     var e;
     return null == (e = u.Z.getUserProfile(t.id)) ? true : e.application
   }), k = (0, i.e7)([o.Z, s.Z], () => o.Z.getChannel(s.Z.getChannelId())), U = (0, i.e7)([l.Z], () => l.Z.hidePersonalInformation), G = (0, d.b)({
@@ -54,7 +54,7 @@ function R(e) {
     children: [(0, r.jsx)(E.Z, {
       user: t,
       onOpenProfile: D,
-      nickname: j,
+      nickname: M,
       pronouns: null == R ? true : R.pronouns,
       tags: (0, r.jsx)(_.Z, {
         displayProfile: R,
@@ -102,9 +102,9 @@ function R(e) {
       currentUser: n,
       guildId: null == P ? true : P.id,
       onClose: x
-    }), (null == M ? true : M.popularApplicationCommandIds) != null && null != k && (0, r.jsx)(f.Z, {
-      applicationId: M.id,
-      commandIds: M.popularApplicationCommandIds,
+    }), (null == j ? true : j.popularApplicationCommandIds) != null && null != k && (0, r.jsx)(f.Z, {
+      applicationId: j.id,
+      commandIds: j.popularApplicationCommandIds,
       channel: k,
       guildId: null == P ? true : P.id,
       onClick: x

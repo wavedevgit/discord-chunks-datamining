@@ -1,4 +1,4 @@
-/** Chunk was on 9665 **/
+/** Chunk was on 50118 **/
 /** chunk id: 753898, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -33,54 +33,54 @@ function x(e) {
     avatarDecorationSrc: S,
     eventHandlers: P,
     isAnimating: I
-  } = (0, y.Z)({
+  } = (0, C.Z)({
     userId: null == O ? true : O.id,
     size: o.EFr.SIZE_80,
     animateOnHover: true
-  }), [Z, N] = i.useState(false), T = i.useCallback(() => {
+  }), [Z, N] = r.useState(false), T = r.useCallback(() => {
     P.onMouseEnter(), N(true)
-  }, [P]), A = i.useCallback(() => {
+  }, [P]), A = r.useCallback(() => {
     P.onMouseLeave(), N(false)
   }, [P]), w = !n.isMultiUserDM() && (null == O ? true : O.displayNameStyles) != null;
-  return (0, r.jsxs)(C.ZP, {
+  return (0, i.jsxs)(y.ZP, {
     channelId: n.id,
     onMouseEnter: T,
     onMouseLeave: A,
     children: [(() => {
       let e = !j && I;
-      return n.isMultiUserDM() ? (0, r.jsx)(m.v, {
+      return n.isMultiUserDM() ? (0, i.jsx)(m.v, {
         channel: n,
         editable: true,
         location: c.Z.EMPTY_GROUP_DM,
-        children: (0, r.jsx)(f.Z, {
+        children: (0, i.jsx)(f.Z, {
           channel: n,
           size: o.EFr.SIZE_80,
           experimentLocation: "empty_messages",
           animated: e,
           "aria-label": E
         })
-      }) : (0, r.jsx)(o.qEK, {
+      }) : (0, i.jsx)(o.qEK, {
         "aria-label": E,
         size: o.EFr.SIZE_80,
         src: (0, u.x)(n, 80, e),
         avatarDecoration: S
       })
-    })(), (0, r.jsx)(C.Ot, {
-      children: w ? (0, r.jsx)(h.Z, {
+    })(), (0, i.jsx)(y.Ot, {
+      children: w ? (0, i.jsx)(h.Z, {
         userName: E,
         displayNameStyles: null == O ? true : O.displayNameStyles,
         effectDisplayType: Z ? p.F.ANIMATED : p.F.STATIC,
         loop: true
       }) : E
-    }), (0, r.jsx)(C.jz, {
+    }), (0, i.jsx)(y.jz, {
       children: x
-    }), n.isMultiUserDM() && (0, r.jsxs)(a.hE2, {
+    }), n.isMultiUserDM() && (0, i.jsxs)(a.hE2, {
       className: v.buttonContainer,
-      children: [(0, r.jsx)(b.l, {
+      children: [(0, i.jsx)(b.l, {
         channel: n,
         text: _.intl.string(_.t["6Qgren"]),
         icon: o.ejJ
-      }), (0, r.jsx)(a.zxk, {
+      }), (0, i.jsx)(a.zxk, {
         icon: o.vdY,
         variant: "secondary",
         text: _.intl.string(_.t["5Q9+/P"]),

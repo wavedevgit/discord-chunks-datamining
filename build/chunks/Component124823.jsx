@@ -89,8 +89,8 @@ function w(e) {
               user: n
             })
           }), (0, r.jsxs)("div", {
-            className: T.header,
-            children: [(0, r.jsx)(O.Z, {
+            className: P.header,
+            children: [(0, r.jsx)(j.Z, {
               user: n,
               displayProfile: D,
               themeType: Z.l.SIDEBAR,
@@ -116,25 +116,25 @@ function w(e) {
             }), (0, r.jsxs)(C.Z.Overlay, {
               className: N.overlay,
               children: [(0, r.jsx)(v.Z, {
-                heading: P.intl.string(P.t["61W33d"]),
+                heading: T.intl.string(T.t["61W33d"]),
                 headingColor: "header-primary",
-                children: (0, r.jsx)(j.Z, {
+                children: (0, r.jsx)(x.Z, {
                   userBio: null == D ? true : D.bio,
                   userId: n.id,
                   animateOnHover: true,
                   isHovering: H
                 })
               }), (0, r.jsx)(v.Z, {
-                heading: P.intl.string(P.t["A//N4u"]),
+                heading: T.intl.string(T.t["A//N4u"]),
                 headingColor: "header-primary",
-                children: (0, r.jsx)(x.Z, {
+                children: (0, r.jsx)(O.Z, {
                   userId: n.id
                 })
               })]
             })]
           })]
         }), !A && (0, r.jsx)("div", {
-          className: T.footer,
+          className: P.footer,
           children: (0, r.jsx)(a.P3F, {
             onClick: () => {
               F(), (0, g.pQ)(R({
@@ -142,8 +142,8 @@ function w(e) {
                 analyticsLocations: k
               }, U))
             },
-            className: T.footerButton,
-            children: P.intl.string(P.t["+Xp3ho"])
+            className: P.footerButton,
+            children: T.intl.string(T.t["+Xp3ho"])
           })
         }), (null == D ? true : D.profileEffect) != null && (0, r.jsx)(p.Z, {
           skuId: null == D || null == (t = D.profileEffect) ? true : t.skuId,

@@ -2,7 +2,7 @@
 /** chunk id: 221292, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Er: () => j,
+  Er: () => M,
   NE: () => P,
   Of: () => L,
   QN: () => A,
@@ -325,7 +325,7 @@ let v = e => {
       is_widget_removed: c
     }))
   },
-  j = e => {
+  M = e => {
     let {
       guildId: t,
       channelId: n,

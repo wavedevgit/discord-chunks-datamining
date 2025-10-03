@@ -2,7 +2,7 @@
 /** chunk id: 75733, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => v
+  Z: () => _
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -39,7 +39,7 @@ let h = {
   label: ""
 };
 
-function b(e) {
+function x(e) {
   let {
     emoji: t,
     disabled: n,
@@ -94,7 +94,7 @@ function b(e) {
   })
 }
 
-function x(e) {
+function b(e) {
   let {
     guildId: t,
     trait: n,
@@ -128,7 +128,7 @@ function x(e) {
       maxLength: 24,
       leading: {
         type: "emoji",
-        button: (0, r.jsx)(b, {
+        button: (0, r.jsx)(x, {
           emoji: m,
           disabled: o,
           handleSelectEmoji: d
@@ -143,7 +143,7 @@ function x(e) {
 }
 let j = [0, 1, 2, 3, 4];
 
-function v(e) {
+function _(e) {
   let {
     profile: t,
     canManageGuild: n
@@ -167,7 +167,7 @@ function v(e) {
       className: g.grid,
       children: j.map(e => {
         var i;
-        return (0, r.jsx)(x, {
+        return (0, r.jsx)(b, {
           guildId: t.id,
           trait: null != (i = s[e]) ? i : h,
           index: e,

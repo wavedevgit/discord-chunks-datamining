@@ -213,7 +213,7 @@ module.exports = function(e) {
       });
     if (r.getParentKey()) return L;
     var x = T(r, a).Element,
-      j = A(r, p, P, l, w, this.wrapperRef);
-    return d.createElement(x, j, L)
+      M = A(r, p, P, l, w, this.wrapperRef);
+    return d.createElement(x, M, L)
   }, t
 }(Chunk647438.Component)

@@ -114,11 +114,11 @@ function x() {
   S.length = 0, A.clear(), C = {}
 }
 
-function j() {
+function M() {
   x()
 }
 
-function M() {
+function j() {
   T = I(), x()
 }
 
@@ -247,8 +247,8 @@ m(z, "displayName", "PremiumGiftingIntentStore"), m(z, "persistKey", "PremiumGif
   }
 }]);
 let q = new z(Chunk570140.Z, {
-  CONNECTION_OPEN: j,
-  LOGOUT: M,
+  CONNECTION_OPEN: M,
+  LOGOUT: j,
   MESSAGE_GIFT_INTENT_SHOWN: U,
   FRIENDS_LIST_GIFT_INTENTS_SHOWN: k,
   FRIENDS_TAB_BADGE_DISMISS: G,

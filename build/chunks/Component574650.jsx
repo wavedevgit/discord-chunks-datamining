@@ -102,19 +102,19 @@ let A = () => {
     D = null,
     L = null,
     x = null,
-    j = [Chunk342891.notice, Chunk226910.notice];
+    M = [Chunk342891.notice, Chunk226910.notice];
   switch (w) {
     case Chunk246364.wB.SUBMITTED:
       D = Chunk388032.intl.string(Chunk388032.t["5iLvS0"]), L = Chunk388032.intl.string(Chunk388032.t.mqtdmZ), x = R;
       break;
     case Chunk246364.wB.REJECTED:
-      D = Chunk388032.intl.string(Chunk388032.t.lk30cX), L = Chunk388032.intl.string(Chunk388032.t["8RrsHh"]), x = P, j.push(Chunk342891.error);
+      D = Chunk388032.intl.string(Chunk388032.t.lk30cX), L = Chunk388032.intl.string(Chunk388032.t["8RrsHh"]), x = P, M.push(Chunk342891.error);
       break;
     default:
       D = Chunk388032.intl.string(Chunk388032.t.G5YKXF), L = Chunk388032.intl.string(Chunk388032.t["r8/DT0"]), x = N
   }
   return (0, Chunk951288.jsxs)("div", {
-    className: a()(...j),
+    className: a()(...M),
     children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
       className: Chunk342891.header,
       variant: "text-sm/normal",

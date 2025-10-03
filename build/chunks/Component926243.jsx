@@ -157,8 +157,8 @@ function w(e) {
     isMediumSize: D,
     isLargeSize: L,
     pulseItemKey: x,
-    allowAnimatedEmoji: j,
-    setPulseItemKey: M,
+    allowAnimatedEmoji: M,
+    setPulseItemKey: j,
     messageId: k,
     isBurstReaction: U,
     rowPosition: G,
@@ -171,7 +171,7 @@ function w(e) {
   } = t, X = e => {
     if (e.stopPropagation(), y.current || v.current) return;
     let n = e.altKey;
-    n && !d.ZP.getDisambiguatedEmojiContext().isFavoriteEmojiWithoutFetchingLatest(W) && M(a), (0, h.Kw)(h.v6.FAVORITE_EMOJI_TOOLTIP), E(t, {
+    n && !d.ZP.getDisambiguatedEmojiContext().isFavoriteEmojiWithoutFetchingLatest(W) && j(a), (0, h.Kw)(h.v6.FAVORITE_EMOJI_TOOLTIP), E(t, {
       isFinalSelection: !e.shiftKey,
       toggleFavorite: n
     })
@@ -206,13 +206,13 @@ function w(e) {
       isInspected: o,
       isDisabled: z,
       showPulse: x === a,
-      allowAnimatedEmoji: j,
+      allowAnimatedEmoji: M,
       onFocus: null != u ? u : Q,
       onMouseMove: Q,
       onMouseEnter: t,
       onMouseLeave: n,
       onClick: e => {
-        if (null != Y.current && null != G && null != k && !e.shiftKey && null != W.name && U && !V && j) {
+        if (null != Y.current && null != G && null != k && !e.shiftKey && null != W.name && U && !V && M) {
           let e = null == W.id ? _.ZP.convertNameToSurrogate(W.name) : W.name,
             t = Y.current.getBoundingClientRect();
           t.x = G.x + (q + 1) * K, F(R(q, f)), (0, m.U)(k, e, W.id, t)

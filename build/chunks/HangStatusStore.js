@@ -162,7 +162,7 @@ function x(e) {
   return false === a && i.length < S ? (i.push(o), r = true) : a >= 0 && (i.splice(a, 1), r = true), !!r && (C.favoritedStatuses = i, true)
 }
 
-function j() {
+function M() {
   if (null == o) returnfalse;
   if (!Chunk594190.ZP.getRunningVerifiedApplicationIds().includes(o)) {
     var e;
@@ -171,7 +171,7 @@ function j() {
   returnfalse
 }
 
-function M(e) {
+function j(e) {
   let {
     statuses: t
   } = e, n = [...C.recentStatuses], s = [...C.favoritedStatuses];
@@ -185,7 +185,7 @@ function M(e) {
 }
 class k extends(s = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    C = v({}, N(), null != e ? e : {}), this.waitFor(m.ZP), this.syncWith([m.ZP], j)
+    C = v({}, N(), null != e ? e : {}), this.waitFor(m.ZP), this.syncWith([m.ZP], M)
   }
   getState() {
     return C
@@ -232,7 +232,7 @@ let U = new k(Chunk570140.Z, {
   UPDATE_HANG_STATUS: P,
   UPDATE_HANG_STATUS_CUSTOM: w,
   UPDATE_HANG_STATUS_GAME_ACTIVITY: D,
-  DELETE_INVALID_HANG_STATUSES: M,
+  DELETE_INVALID_HANG_STATUSES: j,
   CLEAR_HANG_STATUS: L,
   UPDATE_FAVORITE_HANG_STATUS: x,
   RESET_HANG_STATUS_STATE: R

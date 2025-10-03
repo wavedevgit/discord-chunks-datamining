@@ -126,10 +126,10 @@ function O(e, t, n) {
     case "utf-8":
       return D(this, t, n);
     case "ascii":
-      return j(this, t, n);
+      return M(this, t, n);
     case "latin1":
     case "binary":
-      return M(this, t, n);
+      return j(this, t, n);
     case "base64":
       return w(this, t, n);
     case "ucs2":
@@ -414,14 +414,14 @@ function x(e) {
   return n
 }
 
-function j(e, t, n) {
+function M(e, t, n) {
   var r = "";
   n = Math.min(e.length, n);
   for (var i = t; i < n; ++i) r += String.fromCharCode(127 & e[i]);
   return r
 }
 
-function M(e, t, n) {
+function j(e, t, n) {
   var r = "";
   n = Math.min(e.length, n);
   for (var i = t; i < n; ++i) r += String.fromCharCode(e[i]);

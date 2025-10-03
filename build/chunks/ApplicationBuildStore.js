@@ -58,18 +58,18 @@ function x() {
   Chunk570140.Z.wait(() => Chunk274616.o(exports))
 }
 
-function j() {
+function M() {
   if (!(0, Chunk804739.Q)()) returnfalse;
   for (let e of A) {
     let {
       applicationId: t,
       branchId: n
     } = (0, Chunk780570.CP)(module);
-    null != Chunk812206.Z.getApplication(exports) && (A.delete(module), M(exports, require))
+    null != Chunk812206.Z.getApplication(exports) && (A.delete(module), j(exports, require))
   }
 }
 
-function M(e, t) {
+function j(e, t) {
   if (null != I[t] && g.Z.shouldBeInstalled(e, t)) {
     let n = I[t],
       r = n.manifestIds,
@@ -109,7 +109,7 @@ function U(e) {
     branchId: n,
     locale: r,
     manifestIds: a
-  }, M(t, n)
+  }, j(t, n)
 }
 
 function G(e) {
@@ -209,7 +209,7 @@ class K extends(r = Chunk442837.ZP.Store) {
 O(K, "displayName", "ApplicationBuildStore");
 let z = new K(Chunk570140.Z, {
   CONNECTION_OPEN: L,
-  GAMES_DATABASE_UPDATE: j,
+  GAMES_DATABASE_UPDATE: M,
   APPLICATION_BUILD_FETCH_START: k,
   APPLICATION_BUILD_FETCH_SUCCESS: U,
   APPLICATION_BUILD_NOT_FOUND: G,

@@ -1,7 +1,7 @@
-/** Chunk was on 9665 **/
+/** Chunk was on 50118 **/
 /** chunk id: 248789, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Y: () => y
+  Y: () => C
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,17 +20,17 @@ var Chunk951288 = require("./951288.js"),
 function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      i = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
+    }))), i.forEach(function(t) {
+      var i;
+      i = n[t], t in e ? Object.defineProperty(e, t, {
+        value: i,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = r
+      }) : e[t] = i
     })
   }
   return e
@@ -40,8 +40,8 @@ function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
+      var i = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, i)
     }
     return n
   })(Object(t)).forEach(function(n) {
@@ -49,88 +49,88 @@ function b(e, t) {
   }), e
 }
 
-function y(e) {
+function C(e) {
   let {
     channelId: t,
-    warningId: y,
-    senderId: C
-  } = e, _ = i.useCallback(() => {
-    (0, u.T)(t, [y])
-  }, [t, y]), v = (0, a.e7)([c.Z], () => c.Z.isBlocked(C)), x = i.useMemo(() => ({
+    warningId: C,
+    senderId: y
+  } = e, _ = r.useCallback(() => {
+    (0, u.T)(t, [C])
+  }, [t, C]), v = (0, a.e7)([c.Z], () => c.Z.isBlocked(y)), x = r.useMemo(() => ({
     channelId: t,
-    warningId: y,
-    senderId: C,
+    warningId: C,
+    senderId: y,
     warningType: d.pj.INAPPROPRIATE_CONVERSATION_TIER_2
-  }), [t, y, C]);
-  i.useEffect(() => {
+  }), [t, C, y]);
+  r.useEffect(() => {
     (0, p.KQ)(b(g({}, x), {
       viewName: p.pb.SAFETY_WARNING_BANNER
     })), s.Z.increment({
       name: l.V.SAFETY_WARNING_VIEW
     })
   }, [x]);
-  let O = i.useCallback(e => {
+  let O = r.useCallback(e => {
       (0, p.qc)(b(g({}, x), {
         cta: e
       }))
     }, [x]),
-    j = i.useCallback(() => {
+    j = r.useCallback(() => {
       (0, o.ZDy)(async () => {
         let {
           default: e
         } = await Promise.all([n.e("37031"), n.e("89650"), n.e("899")]).then(n.bind(n, 611446));
         return n => {
           let {
-            transitionState: i,
+            transitionState: r,
             onClose: l
           } = n;
-          return (0, r.jsx)(e, {
-            otherUserId: C,
+          return (0, i.jsx)(e, {
+            otherUserId: y,
             channelId: t,
-            warningId: y,
+            warningId: C,
             warningType: d.pj.INAPPROPRIATE_CONVERSATION_TIER_2,
-            transitionState: i,
+            transitionState: r,
             onClose: l
           })
         }
       }, {
         modalKey: f.X_
       }), O(p.NM.USER_BANNER_OPEN_SAFETY_TOOLS)
-    }, [t, C, y, O]),
-    E = i.useCallback(() => {
+    }, [t, y, C, O]),
+    E = r.useCallback(() => {
       _(), O(p.NM.USER_BANNER_BLOCK_CONFIRM)
     }, [_, O]),
-    S = i.useCallback(() => {
+    S = r.useCallback(() => {
       _(), O(p.NM.USER_BANNER_BLOCK_AND_REPORT_CONFIRM)
     }, [_, O]),
-    P = i.useCallback(() => {
+    P = r.useCallback(() => {
       (0, o.ZDy)(async () => {
         let {
           default: e
         } = await n.e("19538").then(n.bind(n, 699783));
         return n => {
           let {
-            transitionState: i,
+            transitionState: r,
             onClose: l
           } = n;
-          return (0, r.jsx)(e, {
-            transitionState: i,
+          return (0, i.jsx)(e, {
+            transitionState: r,
             onBlock: E,
             onBlockAndReport: S,
             onCancel: () => {
               null == l || l(), O(p.NM.USER_BANNER_BLOCK_CANCEL)
             },
             onClose: l,
-            userId: C,
+            userId: y,
             channelId: t
           })
         }
       })
-    }, [E, S, C, t, O]);
-  return (0, r.jsx)(h.Q, {
+    }, [E, S, y, t, O]);
+  return (0, i.jsx)(h.Q, {
     channelId: t,
-    warningId: y,
-    senderId: C,
+    warningId: C,
+    senderId: y,
     warningType: d.pj.INAPPROPRIATE_CONVERSATION_TIER_2,
     header: m.intl.string(m.t.ZzlB5u),
     description: m.intl.string(m.t["D1aU+v"]),

@@ -16,12 +16,12 @@ require.d(exports, {
   XY: () => w,
   ZF: () => S,
   bj: () => U,
-  kk: () => j,
+  kk: () => M,
   mA: () => B,
   oK: () => L,
   po: () => I,
   qN: () => G,
-  u9: () => M,
+  u9: () => j,
   wH: () => Z,
   wx: () => y,
   z2: () => v
@@ -186,7 +186,7 @@ function L(e, t) {
 }
 let x = new Set([Chunk704215.z.ACCOUNT_LINK_INVITE_FRIENDS, Chunk704215.z.POST_ACCOUNT_CONNECTION_RTC_POPOVER, Chunk704215.z.ACCOUNT_LINK_PROMPT]);
 
-function j(e, t, n, r) {
+function M(e, t, n, r) {
   if ((0, h.cI)(e) || p.Z.hasUserHitDCCap(e, null == t ? true : t.guildId)) return;
   let o = d.Z.getConfig({
     location: "requestMarkDismissibleContentAsShown"
@@ -214,7 +214,7 @@ function j(e, t, n, r) {
   }))
 }
 
-function M(e, t) {
+function j(e, t) {
   ((0, h.cI)(e) || t.forceTrack) && H(e, t), (0, _.Vr)(e)
 }
 
@@ -244,15 +244,15 @@ function B(e, t) {
 }
 async function Z(e, t, n) {
   let r = B(e, n);
-  M(e, n), await O(e, t, r), k(e, n)
+  j(e, n), await O(e, t, r), k(e, n)
 }
 async function F(e, t, n) {
   let r = B(e, n);
-  M(e, n), await I(e, t, r), k(e, n)
+  j(e, n), await I(e, t, r), k(e, n)
 }
 async function V(e, t) {
   let n = B(e, t);
-  M(e, t), await v(e, n), k(e, t)
+  j(e, t), await v(e, n), k(e, t)
 }
 
 function H(e, t) {

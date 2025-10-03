@@ -88,7 +88,7 @@ let L = () => {
       r = exports
     }
   },
-  j = () => {
+  M = () => {
     if (!Chunk238514.Z.shouldSync("appearance") || (0, Chunk866419.zu)()) returnfalse;
     let e = Chunk695346.L1.getSetting().backgroundGradientPresetId;
     if (Chunk740492.ZP.useSystemTheme === Chunk874893.KW.ON && null != module && (0, Chunk781391.hi)(Chunk874893.KW.OFF), null == module) {
@@ -99,7 +99,7 @@ let L = () => {
       n = (null == r ? true : r.id) === (null == exports ? true : exports.id);
     null == exports || require || (r = exports)
   };
-class M extends(a = Chunk442837.ZP.PersistedStore) {
+class j extends(a = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     null != e && (r = (null == e ? true : e.gradientPresetId) != null ? I.qt[e.gradientPresetId] : true), this.waitFor(E.default, f.Z, g.Z, u.Z, h.Z), this.syncWith([E.default], L), this.syncWith([u.Z], x)
   }
@@ -132,18 +132,18 @@ class M extends(a = Chunk442837.ZP.PersistedStore) {
     }])
   }
 }
-S(M, "displayName", "ClientThemesBackgroundStore"), S(M, "persistKey", "ClientThemesBackgroundStore");
-let k = new M(Chunk570140.Z, {
+S(j, "displayName", "ClientThemesBackgroundStore"), S(j, "persistKey", "ClientThemesBackgroundStore");
+let k = new j(Chunk570140.Z, {
   UPDATE_BACKGROUND_GRADIENT_PRESET: N,
   UPDATE_MOBILE_PENDING_THEME_INDEX: R,
   RESET_PREVIEW_CLIENT_THEME: P,
   CLIENT_THEMES_EDITOR_CLOSE: D,
   CHANNEL_SELECT: w,
   LOGOUT: D,
-  CACHE_LOADED: j,
-  CONNECTION_OPEN: j,
-  OVERLAY_INITIALIZE: j,
-  SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE: j,
-  UNSYNCED_USER_SETTINGS_UPDATE: j,
-  USER_SETTINGS_PROTO_UPDATE: j
+  CACHE_LOADED: M,
+  CONNECTION_OPEN: M,
+  OVERLAY_INITIALIZE: M,
+  SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE: M,
+  UNSYNCED_USER_SETTINGS_UPDATE: M,
+  USER_SETTINGS_PROTO_UPDATE: M
 })

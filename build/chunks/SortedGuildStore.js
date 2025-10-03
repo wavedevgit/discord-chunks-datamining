@@ -177,7 +177,7 @@ function x(e) {
   return o !== a.joinedAt && null != o && N()
 }
 
-function j(e) {
+function M(e) {
   let {
     folderId: t
   } = e, n = T.getNode(t), r = p.Z.isFolderExpanded(t);
@@ -185,7 +185,7 @@ function j(e) {
   U(n, r)
 }
 
-function M(e) {
+function j(e) {
   let {
     folderId: t,
     expanded: n
@@ -264,8 +264,8 @@ class V extends Chunk750041.Z {
       GUILD_FOLDER_CREATE_LOCAL: w,
       GUILD_FOLDER_EDIT_LOCAL: D,
       GUILD_FOLDER_DELETE_LOCAL: L,
-      TOGGLE_GUILD_FOLDER_EXPAND: j,
-      SET_GUILD_FOLDER_EXPANDED: M,
+      TOGGLE_GUILD_FOLDER_EXPAND: M,
+      SET_GUILD_FOLDER_EXPANDED: j,
       GUILD_FOLDER_COLLAPSE: k
     }), O(this, "loadCache", () => {
       let e = this.readSnapshot(V.LATEST_SNAPSHOT_VERSION),

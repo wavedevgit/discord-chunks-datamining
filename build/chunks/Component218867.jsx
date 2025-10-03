@@ -40,7 +40,7 @@ let d = Chunk647438.memo(Chunk647438.forwardRef((e, t) => {
     fade: C = false,
     initialScrollTop: N = 0,
     role: R = "list"
-  } = e, [P, w] = i.useState(false), [D, L] = i.useState(false), x = i.useRef(null), j = i.useRef(0), M = i.useRef(false);
+  } = e, [P, w] = i.useState(false), [D, L] = i.useState(false), x = i.useRef(null), M = i.useRef(0), j = i.useRef(false);
   (0, l.Ng)(() => {
     var e;
     let t = null == (e = x.current) ? true : e.getScrollerNode();
@@ -138,11 +138,11 @@ let d = Chunk647438.memo(Chunk647438.forwardRef((e, t) => {
     var e;
     let t = null == (e = x.current) ? true : e.getScrollerNode(),
       r = u(x);
-    null != t && null != r && (r.cancelAnimationFrame(M.current), M.current = r.requestAnimationFrame(() => {
+    null != t && null != r && (r.cancelAnimationFrame(j.current), j.current = r.requestAnimationFrame(() => {
       let {
         scrollTop: e
       } = t;
-      j.current = e, null == n || n(e), w(e)
+      M.current = e, null == n || n(e), w(e)
     }))
   }, [n]);
   i.useImperativeHandle(t, () => ({
@@ -173,18 +173,18 @@ let d = Chunk647438.memo(Chunk647438.forwardRef((e, t) => {
             top: s,
             bottom: l
           }
-        } = i, c = G(o), u = s - (T ? c : 0) - r <= j.current, d = l + r >= j.current + D;
+        } = i, c = G(o), u = s - (T ? c : 0) - r <= M.current, d = l + r >= M.current + D;
         if (u) {
-          let i = j.current + c - s,
-            a = T ? j.current - i : s;
+          let i = M.current + c - s,
+            a = T ? M.current - i : s;
           null == (t = x.current) || t.scrollTo({
             to: 0 === e ? 0 : a - r,
             animate: n
           })
         } else if (d) {
-          let e = l - (j.current + D);
+          let e = l - (M.current + D);
           null == (a = x.current) || a.scrollTo({
-            to: j.current + e + r,
+            to: M.current + e + r,
             animate: n
           })
         }

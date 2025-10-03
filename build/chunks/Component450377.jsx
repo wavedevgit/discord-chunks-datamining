@@ -72,9 +72,9 @@ function P(e) {
       value: n
     } = e;
     try {
-      await v.Z.saveGuild(t.id, {
+      await _.Z.saveGuild(t.id, {
         verificationLevel: n
-      }), v.Z.updateGuild({
+      }), _.Z.updateGuild({
         verificationLevel: n
       })
     } catch (e) {
@@ -99,7 +99,7 @@ function P(e) {
         variant: "text-sm/normal",
         children: E.intl.format(E.t.iuRk2t, {})
       })]
-    }), (0, r.jsx)(y.Z, {
+    }), (0, r.jsx)(O.Z, {
       changeTitle: E.intl.string(E.t.TxESJC),
       value: null == a ? true : a.value,
       options: s,
@@ -119,9 +119,9 @@ function w(e) {
       value: n
     } = e;
     try {
-      await v.Z.saveGuild(t.id, {
+      await _.Z.saveGuild(t.id, {
         explicitContentFilter: n
-      }), v.Z.updateGuild({
+      }), _.Z.updateGuild({
         explicitContentFilter: n
       })
     } catch (e) {
@@ -148,10 +148,10 @@ function w(e) {
           color: "header-secondary",
           variant: "text-sm/normal",
           children: E.intl.format(E.t.BI4ukJ, {
-            helpdeskArticle: x.Z.getArticleURL(N.BhN.SAFE_DIRECT_MESSAGING)
+            helpdeskArticle: b.Z.getArticleURL(N.BhN.SAFE_DIRECT_MESSAGING)
           })
         })]
-      }), (0, r.jsx)(y.Z, {
+      }), (0, r.jsx)(O.Z, {
         changeTitle: E.intl.string(E.t["eBd+Ul"]),
         value: null == m ? true : m.value,
         options: u,
@@ -164,7 +164,7 @@ function w(e) {
 async function R(e, t) {
   if (e.features.has(N.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY) === t) return;
   let n = e.features;
-  return t ? n.add(N.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY) : n.delete(N.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY), await v.Z.saveGuild(e.id, {
+  return t ? n.add(N.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY) : n.delete(N.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY), await _.Z.saveGuild(e.id, {
     features: n
   })
 }
@@ -200,7 +200,7 @@ function D(e) {
   let {
     guild: t,
     mfaLevel: n
-  } = e, l = (0, o.e7)([f.Z], () => null != t && f.Z.can(N.Plq.MANAGE_GUILD, t), [t]), s = (0, o.e7)([b.default], () => b.default.getCurrentUser()), {
+  } = e, l = (0, o.e7)([f.Z], () => null != t && f.Z.can(N.Plq.MANAGE_GUILD, t), [t]), s = (0, o.e7)([x.default], () => x.default.getCurrentUser()), {
     isGuildOwnerWithMFA: d,
     showMFAUserTooltip: u
   } = i.useMemo(() => null == s ? {
@@ -209,8 +209,8 @@ function D(e) {
   } : {
     isGuildOwnerWithMFA: (0, p.yn)(t, s),
     showMFAUserTooltip: !s.mfaEnabled && (0, p.eM)(t, s)
-  }, [s, t]), h = n === N.BpS.ELEVATED, x = (0, a.throttle)(async e => {
-    d && (u || await v.Z.updateMFALevel({
+  }, [s, t]), h = n === N.BpS.ELEVATED, b = (0, a.throttle)(async e => {
+    d && (u || await _.Z.updateMFALevel({
       guildId: t.id,
       level: e ? N.BpS.ELEVATED : N.BpS.NONE,
       isEnabled: !e
@@ -225,7 +225,7 @@ function D(e) {
         label: E.intl.string(E.t.lbBfER),
         description: E.intl.string(E.t.REr5AA),
         checked: h,
-        onChange: x,
+        onChange: b,
         disabled: !d
       }), u && (0, r.jsx)(c.Wn, {
         messageType: c.QYI.INFO,

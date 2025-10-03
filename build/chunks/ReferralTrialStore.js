@@ -79,11 +79,11 @@ function x(e) {
   for (let e of ((0, l.C$)(), t)) b.set(e.id, e), p.add(e.user_id)
 }
 
-function j(e) {
+function M(e) {
   g.add(e)
 }
 
-function M(e) {
+function j(e) {
   let {
     userTrialOffer: t
   } = e;
@@ -115,13 +115,13 @@ function B(e) {
   let {
     userTrialOfferId: t
   } = e;
-  m || (0, l.C$)(), g.has(t) || (j(t), o.Z.wait(() => (0, l.IB)(t).catch(u.VqG)))
+  m || (0, l.C$)(), g.has(t) || (M(t), o.Z.wait(() => (0, l.IB)(t).catch(u.VqG)))
 }
 
 function Z(e) {
   let t = e.type === i.u.PREMIUM_REFERRAL ? e.content : null;
   if (null == t) returnfalse;
-  E.has(t) || g.has(t) || (j(t), o.Z.wait(() => (0, l.IB)(t).catch(u.VqG)))
+  E.has(t) || g.has(t) || (M(t), o.Z.wait(() => (0, l.IB)(t).catch(u.VqG)))
 }
 
 function F() {
@@ -194,7 +194,7 @@ let W = new Y(Chunk570140.Z, {
   BILLING_REFERRALS_REMAINING_FETCH_FAIL: D,
   BILLING_CREATE_REFERRAL_SUCCESS: L,
   CREATE_REFERRALS_SUCCESS: x,
-  BILLING_REFERRAL_RESOLVE_SUCCESS: M,
+  BILLING_REFERRAL_RESOLVE_SUCCESS: j,
   BILLING_REFERRAL_RESOLVE_FAIL: k,
   REFERRALS_FETCH_ELIGIBLE_USER_START: F,
   REFERRALS_FETCH_ELIGIBLE_USER_SUCCESS: V,

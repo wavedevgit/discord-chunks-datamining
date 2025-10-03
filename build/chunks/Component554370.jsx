@@ -141,7 +141,7 @@ let ee = Chunk647438.memo(function(e) {
     return t && n ? (0, i.jsx)(M.Z, {
       className: Q.closeContainer,
       children: (0, i.jsx)(R.Z, {
-        onClick: () => d.Z.setInputLocked(false, (0, N.getPID)()),
+        onClick: () => d.Z.setInputLocked(false, (0, w.getPID)()),
         IconComponent: u.d$P
       })
     }) : null
@@ -160,7 +160,7 @@ function er() {
 }
 
 function el(e) {
-  let t = U.ZP.isInputLocked((0, N.getPID)());
+  let t = U.ZP.isInputLocked((0, w.getPID)());
   "alt" !== e.key.toLowerCase() || t || ("keyup" === e.type.toLowerCase() ? C.S.dispatch(Y.CkL.OVERLAY_V3_SHOW_WIDGETS, {
     show: true
   }) : "keydown" === e.type.toLowerCase() && C.S.dispatch(Y.CkL.OVERLAY_V3_SHOW_WIDGETS, {
@@ -183,21 +183,21 @@ function ea(e) {
     incompatibleApp: m,
     hasZeroSizeDimension: Z,
     keybind: P
-  } = (0, a.cj)([U.ZP, j.default, I.Z, S.ZP], () => {
+  } = (0, a.cj)([U.ZP, j.default, I.Z, b.ZP], () => {
     let e = I.Z.windowSize((0, T.ZY)(n)),
-      t = S.ZP.getOverlayKeybind(),
-      i = (0, N.getPID)();
+      t = b.ZP.getOverlayKeybind(),
+      i = (0, w.getPID)();
     return {
       locked: U.ZP.isInputLocked(i),
       focused: U.ZP.isFocused(i),
       incompatibleApp: j.default.incompatibleApp,
       hasZeroSizeDimension: 0 === e.height || 0 === e.width,
-      keybind: null != t ? (0, w.BB)(t.shortcut, true) : "???"
+      keybind: null != t ? (0, N.BB)(t.shortcut, true) : "???"
     }
   }, [n]), {
     analyticsLocations: R
-  } = (0, f.ZP)(h.Z.OVERLAY);
-  (0, p.ZP)(() => {
+  } = (0, f.ZP)(p.Z.OVERLAY);
+  (0, h.ZP)(() => {
     (0, D.F3)()
   }),
   function(e, t) {
@@ -214,15 +214,15 @@ function ea(e) {
       n.current.unmount()
     }), [])
   }(() => {
-    d.Z.overlayReady((0, N.getPID)()), n.addEventListener("keydown", el), n.addEventListener("keyup", el), X && (n.document.hasFocus() && d.Z.setFocusedPID(N.DEV_PID), n.addEventListener("focus", ei), n.addEventListener("blur", er))
+    d.Z.overlayReady((0, w.getPID)()), n.addEventListener("keydown", el), n.addEventListener("keyup", el), X && (n.document.hasFocus() && d.Z.setFocusedPID(w.DEV_PID), n.addEventListener("focus", ei), n.addEventListener("blur", er))
   }, () => {
     n.removeEventListener("keydown", el), n.removeEventListener("keyup", el), X && (n.removeEventListener("focus", ei), n.removeEventListener("blur", er))
   });
   let M = r.useRef(null);
-  return (0, p.ZP)(() => {
+  return (0, h.ZP)(() => {
     var e;
     let t = (0, W.pL)(),
-      n = b.Z.getVoiceChannelId(),
+      n = S.Z.getVoiceChannelId(),
       i = O.Z.getChannel(n),
       r = null != i ? E.Z.getGuild(i.guild_id) : null,
       l = null != y.Z.getCurrentUserActiveStream(),
@@ -232,15 +232,15 @@ function ea(e) {
       {
         allowActivityWidget: u
       } = (0, D.Rb)("overlay"),
-      c = null != (e = x.default.getFocusedPID()) ? e : (0, N.getPID)();
+      c = null != (e = x.default.getFocusedPID()) ? e : (0, w.getPID)();
     if (V.default.hasChangedRenderMode(c)) return;
-    let p = z.Z.isNotificationDisabled(_.OverlayNotificationDisabledSetting.WELCOME_GENERAL),
-      h = z.Z.isNotificationDisabled(_.OverlayNotificationDisabledSetting.GO_LIVE_NUDGE),
+    let h = z.Z.isNotificationDisabled(_.OverlayNotificationDisabledSetting.WELCOME_GENERAL),
+      p = z.Z.isNotificationDisabled(_.OverlayNotificationDisabledSetting.GO_LIVE_NUDGE),
       f = z.Z.isNotificationDisabled(_.OverlayNotificationDisabledSetting.GAME_ACTIVITY),
       m = [];
-    p || (m.push({
+    h || (m.push({
       type: H.nc.WELCOME
-    }), !h && (a && s ? m.push({
+    }), !p && (a && s ? m.push({
       type: H.nc.GO_LIVE_VOICE,
       game: t,
       voiceChannelId: n,
@@ -254,7 +254,7 @@ function ea(e) {
     })), null != M.current && clearTimeout(M.current), M.current = setTimeout(() => {
       d.Z.overlayMounted(...m)
     }, 1e3)
-  }), (0, p.zq)(() => {
+  }), (0, h.zq)(() => {
     null != M.current && (clearTimeout(M.current), M.current = null)
   }), r.useEffect(() => {
     if (C.S.dispatch(Y.CkL.OVERLAY_V3_SHOW_WIDGETS, {

@@ -25,7 +25,7 @@ function p(e) {
     title: n.name,
     channelId: n.id,
     contentClassName: b.popoutContent,
-    children: (0, r.jsx)(a.Z.Provider, {
+    children: (0, r.jsx)(o.Z.Provider, {
       value: n.guild_id,
       children: (0, r.jsx)(u.Z, {
         providedChannel: n
@@ -36,7 +36,7 @@ function p(e) {
 
 function f(e, t) {
   let n = (0, c.P)(t),
-    a = i.useCallback(() => {
+    o = i.useCallback(() => {
       s.bA("".concat(d.KJ3.CHANNEL_POPOUT, "-").concat(e.id), t => (0, r.jsx)(p, {
         windowKey: t,
         channel: e
@@ -45,9 +45,9 @@ function f(e, t) {
         defaultHeight: 480
       })
     }, [e]);
-  return n ? (0, r.jsx)(o.sNh, {
+  return n ? (0, r.jsx)(a.sNh, {
     id: "channel-pop-out",
     label: "Open in Popout",
-    action: () => a()
+    action: () => o()
   }) : null
 }

@@ -593,10 +593,10 @@ var w = Chunk647438.forwardRef(function(e, t) {
         var o, s = R(null != (o = e.id) ? o : (0, i.Z)(), e, n, r, a);
         return L(s, t), s
       }, [L]),
-      j = r.useCallback(function(e) {
+      M = r.useCallback(function(e) {
         A.current.delete(e)
       }, []),
-      M = r.useCallback(function() {
+      j = r.useCallback(function() {
         return A.current.clear()
       }, []),
       k = r.useCallback(function() {
@@ -606,14 +606,14 @@ var w = Chunk647438.forwardRef(function(e, t) {
       return {
         createConfetti: x,
         addConfetti: L,
-        deleteConfetti: j,
-        clearConfetti: M,
+        deleteConfetti: M,
+        clearConfetti: j,
         getCanvas: k,
         addReadyListener: I,
         removeReadyListener: T,
         isReady: v
       }
-    }, [x, L, j, M, k, I, T, v]);
+    }, [x, L, M, j, k, I, T, v]);
     var U = r.useCallback(function(e, t) {
         var n, r, i = t.clickHandler,
           o = t.mouseHandler;

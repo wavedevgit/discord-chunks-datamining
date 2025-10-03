@@ -2,7 +2,7 @@
 /** chunk id: 978395, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => M
 });
 var Chunk951288 = require("./951288.js"),
   Chunk442837 = require("./442837.js"),
@@ -37,17 +37,17 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk116649 = require("./116649.js");
 
-function j(e) {
+function M(e) {
   let {
     user: t,
     currentUser: n,
-    displayProfile: j,
-    guild: M,
+    displayProfile: M,
+    guild: j,
     isHovering: k,
     onOpenProfile: U,
     channelId: G,
     onClose: B
-  } = e, Z = u.ZP.useName(null == M ? true : M.id, G, t), {
+  } = e, Z = u.ZP.useName(null == j ? true : j.id, G, t), {
     relationshipType: F,
     originApplicationId: V
   } = (0, i.cj)([l.Z], () => ({
@@ -57,7 +57,7 @@ function j(e) {
     location: "UserProfilePopoutBody"
   }), K = t.id === n.id, z = (0, _.Z)({
     location: "UserProfilePopoutBody"
-  }), q = (null == j ? true : j.widgets) != null && j.widgets.length > 0, X = z && q, Q = (0, d.I5)(n);
+  }), q = (null == M ? true : M.widgets) != null && M.widgets.length > 0, X = z && q, Q = (0, d.I5)(n);
   return (0, r.jsxs)(a.Ttm, {
     fade: true,
     className: x.body,
@@ -65,14 +65,14 @@ function j(e) {
       user: t,
       onOpenProfile: U,
       onClose: B,
-      usernameIcon: t.hasAvatarForGuild(null == M ? true : M.id) && (0, r.jsx)(C.Z, {
+      usernameIcon: t.hasAvatarForGuild(null == j ? true : j.id) && (0, r.jsx)(C.Z, {
         user: t,
         nickname: Z
       }),
       nickname: Z,
-      pronouns: null == j ? true : j.pronouns,
+      pronouns: null == M ? true : M.pronouns,
       tags: (0, r.jsx)(p.Z, {
-        displayProfile: j,
+        displayProfile: M,
         themeType: D.l.POPOUT,
         onClose: B
       }),
@@ -88,7 +88,7 @@ function j(e) {
     }), F === w.OGo.PENDING_INCOMING && (0, r.jsx)(v.Z.Overlay, {
       children: (0, r.jsx)(E.Z, {
         user: t,
-        guildId: null == M ? true : M.id,
+        guildId: null == j ? true : j.id,
         channelId: G,
         applicationId: V
       })
@@ -121,11 +121,11 @@ function j(e) {
       })
     }) : (0, r.jsx)(A.Z, {
       user: t,
-      bio: null == j ? true : j.bio,
+      bio: null == M ? true : M.bio,
       hidePersonalInformation: Y,
       onClose: B
     }), X && (0, r.jsx)(S.Z, {
-      widgets: null == j ? true : j.widgets,
+      widgets: null == M ? true : M.widgets,
       onClick: () => {
         null == U || U({
           section: P.oh.WIDGETS
@@ -137,18 +137,18 @@ function j(e) {
     }), W ? (0, r.jsx)(O.Z, {
       user: t,
       currentUser: n,
-      guildId: null == M ? true : M.id,
+      guildId: null == j ? true : j.id,
       onOpenUserProfileModal: U,
       onClose: B
     }) : (0, r.jsx)(m.Z, {
       user: t,
       currentUser: n,
-      guildId: null == M ? true : M.id,
+      guildId: null == j ? true : j.id,
       onClose: B
-    }), null != M && (0, r.jsx)(N.Z, {
+    }), null != j && (0, r.jsx)(N.Z, {
       user: t,
       currentUser: n,
-      guild: M
+      guild: j
     })]
   })
 }

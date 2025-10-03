@@ -2,7 +2,7 @@
 /** chunk id: 179118, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => M
+  Z: () => j
 }), require("./388685.js"), require("./642613.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -36,9 +36,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk769212 = require("./769212.js");
-let j = 1500;
+let M = 1500;
 
-function M(e) {
+function j(e) {
   let {
     giftCode: t,
     application: n,
@@ -50,11 +50,11 @@ function M(e) {
     giftRecipient: p,
     giftMessageError: g,
     isSendingMessage: y
-  } = e, [O, I] = i.useState(f.kO8.Modes.DEFAULT), S = (0, c.e7)([T.Z], () => T.Z.enabled), M = _ || null != l && null != p, U = (null == a ? true : a.productLine) === w.POd.COLLECTIBLES, G = (0, E.Z)(), {
+  } = e, [O, I] = i.useState(f.kO8.Modes.DEFAULT), S = (0, c.e7)([T.Z], () => T.Z.enabled), j = _ || null != l && null != p, U = (null == a ? true : a.productLine) === w.POd.COLLECTIBLES, G = (0, E.Z)(), {
     selectedGiftingPromotionReward: B
   } = (0, P.wD)(), Z = null == G ? true : G.giftPurchaseConfirmation, F = (0, b.tK)(null == B ? true : B.skuId), V = (0, b.a5)(s) && null != F && null != Z, H = () => null != s ? s.skuId : null != a ? a.id : null, Y = () => {
     let e;
-    return null != g ? L.intl.string(L.t.qB8ayc) : null == s ? null : (e = s.interval === D.rV.MONTH ? M ? V ? Z.monthGiftText : L.t["4ZJ+7e"] : L.t["P+z55e"] : M ? V ? Z.yearGiftText : L.t.p0pZXF : L.t.bXqk3t, L.intl.format(e, {
+    return null != g ? L.intl.string(L.t.qB8ayc) : null == s ? null : (e = s.interval === D.rV.MONTH ? j ? V ? Z.monthGiftText : L.t["4ZJ+7e"] : L.t["P+z55e"] : j ? V ? Z.yearGiftText : L.t.p0pZXF : L.t.bXqk3t, L.intl.format(e, {
       skuName: (0, N.aq)(s.id),
       intervalCount: s.intervalCount
     }))
@@ -64,7 +64,7 @@ function M(e) {
       maxUses: 1
     }), a), (0, A.JG)(e, () => I(f.kO8.Modes.SUCCESS), () => I(f.kO8.Modes.ERROR)), setTimeout(() => {
       I(f.kO8.Modes.DEFAULT)
-    }, j)
+    }, M)
   }, z = () => {
     let e;
     if (null == t) return null;
@@ -154,7 +154,7 @@ function M(e) {
         [x.headerCustomGifting]: null != l && !U
       }),
       children: W()
-    }), _ && null != p && null == g || M ? X() : q()]
+    }), _ && null != p && null == g || j ? X() : q()]
   })
 }
 let k = e => {

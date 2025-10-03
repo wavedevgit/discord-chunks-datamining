@@ -2,7 +2,7 @@
 /** chunk id: 86126, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => b
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,18 +20,18 @@ var Chunk951288 = require("./951288.js"),
   Chunk605041 = require("./605041.js"),
   Chunk654321 = require("./654321.js");
 
-function x(e) {
+function b(e) {
   var t;
   let {
     onDeleteEditState: l
   } = e, {
-    editStateId: x,
+    editStateId: b,
     guildId: j,
-    groupListingId: v
-  } = (0, m.N)(), _ = (0, a.e7)([u.Z], () => u.Z.getSubscriptionListing(x)), O = null == _ ? true : _.id, y = (0, g.Z)(j), C = i.useMemo(() => {
+    groupListingId: _
+  } = (0, m.N)(), v = (0, a.e7)([u.Z], () => u.Z.getSubscriptionListing(b)), C = null == v ? true : v.id, O = (0, g.Z)(j), y = i.useMemo(() => {
     var e;
-    return null != y && null != _ && (null != (e = y[_.role_id]) ? e : 0)
-  }, [y, _]), N = 0 === C, E = null == O, I = null != (t = null == _ ? true : _.archived) && t, {
+    return null != O && null != v && (null != (e = O[v.role_id]) ? e : 0)
+  }, [O, v]), N = 0 === y, E = null == C, I = null != (t = null == v ? true : v.archived) && t, {
     error: S,
     deleteSubscriptionListing: T,
     submitting: P
@@ -42,7 +42,7 @@ function x(e) {
   } = (0, d._1)(), {
     allowSelfRemoveMonetization: D
   } = (0, c.gX)(j);
-  return null == _ ? null : (0, r.jsx)(p.Z, {
+  return null == v ? null : (0, r.jsx)(p.Z, {
     title: f.intl.string(f.t["7Si8Ul"]),
     children: (0, r.jsxs)(o.Kqy, {
       gap: 16,
@@ -64,15 +64,15 @@ function x(e) {
           gap: 16,
           children: [!N && (0, r.jsx)(o.Text, {
             variant: "text-sm/normal",
-            className: b.warning,
+            className: x.warning,
             children: f.intl.formatToPlainString(f.t.ABeonZ, {
-              listingMemberCount: C
+              listingMemberCount: y
             })
           }), (0, r.jsx)(o.zxk, {
             variant: "critical-primary",
             onClick: () => {
               let e = async () => {
-                (E || (s()(null != v, "group listing doesnt exist"), s()(null != O, "subscription listing doesnt exist"), await T(j, v, O))) && (null == l || l())
+                (E || (s()(null != _, "group listing doesnt exist"), s()(null != C, "subscription listing doesnt exist"), await T(j, _, C))) && (null == l || l())
               };
               (0, o.ZDy)(async () => {
                 let {
@@ -116,7 +116,7 @@ function x(e) {
         }), (0, r.jsx)(o.zxk, {
           variant: "critical-primary",
           onClick: () => {
-            s()(null != v, "group listing doesnt exist"), s()(null != O, "subscription listing doesnt exist"), (0, o.ZDy)(async () => {
+            s()(null != _, "group listing doesnt exist"), s()(null != C, "subscription listing doesnt exist"), (0, o.ZDy)(async () => {
               let {
                 Modal: e
               } = await Promise.resolve().then(n.bind(n, 793030));
@@ -132,7 +132,7 @@ function x(e) {
                   text: f.intl.string(f.t.RL0wjo),
                   variant: "critical-primary",
                   onClick: async () => {
-                    await R(j, v, O), t.onClose()
+                    await R(j, _, C), t.onClose()
                   }
                 }],
                 children: (0, r.jsx)(o.Text, {

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => P,
-  _: () => S
+  _: () => N
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -37,12 +37,12 @@ let y = {
     scale: 1,
     opacity: 1
   },
-  O = {
+  S = {
     tension: 2400,
     friction: 52
   };
 
-function S(e) {
+function N(e) {
   let {
     channelId: t,
     onClick: n,
@@ -87,7 +87,7 @@ function S(e) {
   })
 }
 
-function N(e) {
+function O(e) {
   let {
     channelId: t,
     closePopout: n
@@ -96,7 +96,7 @@ function N(e) {
   } = i.useContext(c.Sfi), f = (0, c.q_F)({
     from: d.enabled ? T : y,
     to: w,
-    config: O
+    config: S
   }, "animate-always"), x = (0, o.e7)([u.Z], () => u.Z.keyboardModeEnabled), b = (0, o.e7)([p.Z], () => p.Z.getUploads(t, m.Ie.CREATE_FORUM_POST.drafts.type));
   return (0, r.jsx)(s.animated.div, {
     className: C.popoutContainer,
@@ -109,7 +109,7 @@ function N(e) {
       className: C.popout,
       paddingFix: false,
       fade: true,
-      children: [(0, r.jsx)(S, {
+      children: [(0, r.jsx)(N, {
         channelId: t,
         onClick: () => {
           l(true)
@@ -153,10 +153,10 @@ function P(e) {
         className: C.badge,
         children: s
       })]
-    }) : (0, r.jsx)(S, {
+    }) : (0, r.jsx)(N, {
       onMouseEnter: d,
       channelId: t
-    }), n && (0, r.jsx)(N, {
+    }), n && (0, r.jsx)(O, {
       channelId: t,
       closePopout: () => {
         a(false)

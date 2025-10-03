@@ -256,7 +256,7 @@ class Y extends Chunk647438.PureComponent {
         focused: r
       } = this.state;
       if (e.preventDefault(), e.stopPropagation(), "" === y.Sq(t)) return void this.focusEditor();
-      t = y.Hl(t, 0), this.setEditorState(t), (0, M.cy)({
+      t = y.Hl(t, 0), this.setEditorState(t), (0, j.cy)({
         searchContext: n
       }), r || Promise.resolve().then(() => this.blurEditor())
     }), Z(this, "handleFocusSearch", e => {
@@ -278,7 +278,7 @@ class Y extends Chunk647438.PureComponent {
       if (r.isPrivate() && !s) return void this.focusEditor();
       let l = (0, T.X3)(r);
       if (null == l) return void this.focusEditor();
-      (0, M.PJ)({
+      (0, j.PJ)({
         searchContext: a
       }), Promise.resolve().then(() => {
         let {
@@ -308,7 +308,7 @@ class Y extends Chunk647438.PureComponent {
       } = this.props;
       this.setState({
         focused: true
-      }), t || (0, M.I1)({
+      }), t || (0, j.I1)({
         searchContext: e
       })
     }), Z(this, "handleBlur", e => {
@@ -319,7 +319,7 @@ class Y extends Chunk647438.PureComponent {
       this.setState({
         focused: false
       }, () => {
-        n || e || (0, M.IZ)({
+        n || e || (0, j.IZ)({
           searchContext: t
         }), y.xb(this.props.editorState) && this.clearSearch()
       })
@@ -465,7 +465,7 @@ function W(e) {
     searchBarClassName: o,
     searchPopoutClassName: s,
     popoutAlignment: l
-  } = e, c = (0, T.Tm)(t), d = (0, u.e7)([p.Z], () => p.Z.keyboardModeEnabled), f = (0, u.e7)([j.Z], () => null != c ? j.Z.getEditorState(c) : null), _ = (0, u.e7)([j.Z], () => j.Z.getIsSearchTokensInitialized()), h = i.useRef(_);
+  } = e, c = (0, T.Tm)(t), d = (0, u.e7)([p.Z], () => p.Z.keyboardModeEnabled), f = (0, u.e7)([M.Z], () => null != c ? M.Z.getEditorState(c) : null), _ = (0, u.e7)([M.Z], () => M.Z.getIsSearchTokensInitialized()), h = i.useRef(_);
   i.useEffect(() => {
     _ && h.current !== _ && (h.current = _, D.Z.ensureSearchInputDecorators(t))
   }, [_, t]);
@@ -484,7 +484,7 @@ function W(e) {
     }),
     A = i.useRef(v);
   i.useEffect(() => {
-    A.current && !v && (A.current = false, (0, M.IZ)({
+    A.current && !v && (A.current = false, (0, j.IZ)({
       searchContext: t
     })), !A.current && v && (A.current = true)
   }, [v, t]);
@@ -494,7 +494,7 @@ function W(e) {
         query: r,
         searchEverywhere: i
       } = e;
-      N.ZP.refreshSearchQueryAnalyticsId(t), (0, M.tI)({
+      N.ZP.refreshSearchQueryAnalyticsId(t), (0, j.tI)({
         searchContext: t,
         query: r,
         queryString: n

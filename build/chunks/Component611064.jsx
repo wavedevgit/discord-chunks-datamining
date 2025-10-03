@@ -29,8 +29,8 @@ let y = Chunk647438.memo(function(e) {
       expanded: y,
       expandedCount: _
     } = e,
-    O = (0, l.e7)([d.Z], () => d.Z.hidden),
-    j = i.useCallback(e => {
+    j = (0, l.e7)([d.Z], () => d.Z.hidden),
+    x = i.useCallback(e => {
       (0, s.jW)(e, async () => {
         let {
           MemberListContentSettingsMenu: e
@@ -49,9 +49,9 @@ let y = Chunk647438.memo(function(e) {
       })
     }), (0, r.jsxs)(a.P3F, {
       onClick: e => {
-        if (e.currentTarget === e.target || e.currentTarget.contains(e.target)) return O ? (0, c.lY)() : _ > 3 ? b() : (0, h.dG4)()
+        if (e.currentTarget === e.target || e.currentTarget.contains(e.target)) return j ? (0, c.lY)() : _ > 3 ? b() : (0, h.dG4)()
       },
-      onContextMenu: j,
+      onContextMenu: x,
       tag: "span",
       "aria-hidden": true,
       className: g.headerContainer,
@@ -60,7 +60,7 @@ let y = Chunk647438.memo(function(e) {
         children: [(0, r.jsxs)("span", {
           children: [p, " — ", _]
         }), (0, r.jsx)(u.Z, {})]
-      }), _ <= 3 && !O ? null : (t = O ? (0, r.jsx)(a.u04, {
+      }), _ <= 3 && !j ? null : (t = j ? (0, r.jsx)(a.u04, {
         className: g.toggleExpandIcon
       }) : y ? (0, r.jsx)(a.CJ0, {
         className: g.toggleExpandIcon

@@ -57,7 +57,7 @@ function x(e) {
   return e
 }
 
-function j(e, t) {
+function M(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -68,8 +68,8 @@ function j(e, t) {
   return n
 }
 
-function M(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
+function j(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -145,7 +145,7 @@ function F(e) {
   } = (0, s.cj)([h.ZP], () => ({
     canToggleDetection: null == I || h.ZP.isDetectionEnabled(I),
     isCurrentGameDetectionEnabled: h.ZP.isDetectionEnabled(T)
-  })), P = (0, p.P6)("UserSettingsGameActivity"), D = (0, s.e7)([h.ZP], () => h.ZP.getVisibleGame()), [L, j] = i.useState(false), k = i.useMemo(() => (0, b.le)(T) ? E ? T.gameName : N.intl.formatToPlainString(N.t.G6BGd3, {
+  })), P = (0, p.P6)("UserSettingsGameActivity"), D = (0, s.e7)([h.ZP], () => h.ZP.getVisibleGame()), [L, M] = i.useState(false), k = i.useMemo(() => (0, b.le)(T) ? E ? T.gameName : N.intl.formatToPlainString(N.t.G6BGd3, {
     subgameName: T.gameName
   }) : T.name, [T, E]), [B, Z] = i.useState(null != k ? k : "???"), V = o()(w.flexCenter, {
     [R.game]: !a,
@@ -178,7 +178,7 @@ function F(e) {
       let {
         Modal: e
       } = await Promise.resolve().then(n.bind(n, 793030));
-      return t => (0, r.jsx)(e, M(x({}, t), {
+      return t => (0, r.jsx)(e, j(x({}, t), {
         title: N.intl.formatToPlainString(N.t.PZ4fKS, {
           platform: k
         }),
@@ -206,13 +206,13 @@ function F(e) {
     v.default.track(C.rMx.USER_SETTINGS_REPORT_INCORRECT_GAME_DETECTION, {
       application_id: null == e ? true : e.id,
       game_name: (0, b.le)(T) ? T.gameName : T.name
-    }), P ? (j(true), (0, u.ZDy)(async () => {
+    }), P ? (M(true), (0, u.ZDy)(async () => {
       let {
         default: t
       } = await n.e("82077").then(n.bind(n, 953848));
       return n => {
         var i, a, o;
-        return (0, r.jsx)(t, M(x({}, n), {
+        return (0, r.jsx)(t, j(x({}, n), {
           detectedActivity: {
             name: null != (i = T.name) ? i : "",
             application_id: null != (o = null != (a = null == e ? true : e.id) ? a : T.id) ? o : true,
@@ -223,7 +223,7 @@ function F(e) {
       }
     })) : ((0, u.showToast)((0, u.createToast)(N.intl.formatToPlainString(N.t["6klMOj"], {
       gameName: (0, b.le)(T) ? T.gameName : T.name
-    }), u.ToastType.SUCCESS)), j(true))
+    }), u.ToastType.SUCCESS)), M(true))
   }
 
   function X() {
@@ -234,7 +234,7 @@ function F(e) {
         children: k
       }), (0, r.jsx)(u.ua7, {
         text: N.intl.string(N.t["4PJP5u"]),
-        children: e => (0, r.jsx)(g.Z, M(x({
+        children: e => (0, r.jsx)(g.Z, j(x({
           className: R.gameVerifiedIcon,
           size: G,
           color: l.Z.unsafe_rawColors.BRAND_500.css
@@ -511,7 +511,7 @@ let Y = (0, Chunk251625.oH)(function() {
           },
           align: "center",
           position: "bottom",
-          children: e => (0, r.jsx)(u.Avr, M(x({}, e), {
+          children: e => (0, r.jsx)(u.Avr, j(x({}, e), {
             buttonRef: _,
             variant: "primary",
             textVariant: "text-sm/medium",

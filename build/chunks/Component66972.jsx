@@ -22,7 +22,7 @@ function f() {
   let {
     editStateId: e,
     guildId: t
-  } = (0, Chunk727843.N)(), [, f] = Chunk290348.p9(module, exports), [h, b] = Chunk290348.Ek(module, exports), x = Chunk290348.qs(module, exports);
+  } = (0, Chunk727843.N)(), [, f] = Chunk290348.p9(module, exports), [h, x] = Chunk290348.Ek(module, exports), b = Chunk290348.qs(module, exports);
 
   function j() {
     (0, Chunk481060.ZDy)(async () => {
@@ -71,7 +71,7 @@ function f() {
       }
     })
   }
-  let v = (0, Chunk723047.mY)();
+  let _ = (0, Chunk723047.mY)();
   return (0, Chunk951288.jsx)(Chunk783454.Z, {
     title: Chunk388032.intl.string(Chunk388032.t["Ah+sQ0"]),
     description: Chunk388032.intl.string(Chunk388032.t.ixbWiI),
@@ -80,32 +80,32 @@ function f() {
       gap: 24,
       children: [(0, Chunk951288.jsx)(Chunk481060.hjN, {
         title: Chunk388032.intl.string(Chunk388032.t["6OUqDQ"]),
-        disabled: v,
+        disabled: _,
         children: (0, Chunk951288.jsx)(Chunk619326.Z, {
           value: h,
-          onChange: b,
-          disabled: v
+          onChange: x,
+          disabled: _
         })
       }), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
         title: Chunk388032.intl.string(Chunk388032.t["zn8/AQ"]),
-        disabled: v,
+        disabled: _,
         children: [(0, Chunk951288.jsx)(Chunk481060.R94, {
           type: Chunk481060.R94.Types.DESCRIPTION,
           className: Chunk605041.formDescription,
-          disabled: v,
+          disabled: _,
           children: Chunk388032.intl.string(Chunk388032.t.AqHUra)
         }), (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
           direction: "horizontal",
           gap: 16,
           children: [(0, Chunk951288.jsx)(Chunk553204.Z, {
-            role: x,
+            role: b,
             "aria-label": Chunk388032.intl.string(Chunk388032.t.mD1oGB),
             onClick: j,
-            disabled: v
+            disabled: _
           }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
             variant: "secondary",
             onClick: j,
-            disabled: v,
+            disabled: _,
             text: Chunk388032.intl.string(Chunk388032.t.mD1oGB)
           })]
         })]
@@ -115,12 +115,12 @@ function f() {
           "aria-hidden": true,
           children: [(0, Chunk951288.jsx)(Chunk893729.Z, {
             guildId: exports,
-            role: x,
+            role: b,
             className: Chunk549556.messageContainer,
             theme: "light"
           }), (0, Chunk951288.jsx)(Chunk893729.Z, {
             guildId: exports,
-            role: x,
+            role: b,
             className: Chunk549556.messageContainer,
             theme: "dark"
           })]

@@ -118,8 +118,8 @@ let eR = new Chunk710845.Z("MediaEngineStore"),
   eD = 1,
   eL = 1,
   ex = 1,
-  ej = 1,
-  eM = .5,
+  eM = 1,
+  ej = .5,
   ek = {
     left: 1,
     right: 1
@@ -138,7 +138,7 @@ function eH() {
       threshold: eB,
       autoThreshold: Chunk358085.isPlatformEmbedded || __OVERLAY__,
       vadUseKrisp: true,
-      vadKrispActivationThreshold: eM,
+      vadKrispActivationThreshold: ej,
       vadLeading: 5,
       vadTrailing: 25,
       delay: 20,
@@ -304,7 +304,7 @@ function tx() {
   })
 }
 
-function tj(e) {
+function tM(e) {
   var t, n;
   let r = tx(e.context);
   e.setInputMode(r.mode, {
@@ -319,7 +319,7 @@ function tj(e) {
   })
 }
 
-function tM(e) {
+function tj(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : eI.Qx;
   return p().clamp(e, 0, t)
 }
@@ -396,7 +396,7 @@ function tB(e) {
 }
 
 function tZ(e) {
-  let t = (0, j.U)({
+  let t = (0, M.U)({
     location: "getAutomaticGainControlConfig",
     disable: !e
   }).noiseCancellationConfig;
@@ -411,14 +411,14 @@ function tF(e, t) {
 async function tV(e, t) {
   if ((0, ea.isIOS)() || (0, ea.isMac)()) {
     let e = await eW.getSystemMicrophoneMode();
-    "" !== e && "standard" !== e && M.Z.getConfig({
+    "" !== e && "standard" !== e && j.Z.getConfig({
       location: "setNoiseCancellation"
     }).disabledModes.includes(e) && (t = false)
   }
   e.setNoiseCancellation(t);
   let {
     noiseCancellationDuringProcessing: n
-  } = (0, j.U)({
+  } = (0, M.U)({
     location: "setNoiseCancellation",
     disable: !t
   });
@@ -442,7 +442,7 @@ function tY() {
 function tW() {
   eW.on(Chunk46973.aB.Connection, e => {
     var t;
-    tj(e), tk(e), tH(e);
+    tM(e), tk(e), tH(e);
     let n = tx();
     e.setAttenuation(n.attenuation, n.attenuateWhileSpeakingSelf, n.attenuateWhileSpeakingOthers), e.setQoS(n.qos), e.setExperimentalEncoders(n.experimentalEncoders), e.setHardwareH264(tY()), e.setSoftwareH264(null == (t = n.openH264) || t);
     let i = ep.Z.getGuildId(),
@@ -779,7 +779,7 @@ function t$() {
       var t;
       e.vadThrehsoldMigrated = true, (null == (t = e.modeOptions) ? true : t.threshold) === false && (e.modeOptions.threshold = eB)
     }
-    eW.supports(eI.AN.SIDECHAIN_COMPRESSION) && e.sidechainCompressionSettingVersion < ej && (e.sidechainCompressionSettingVersion = ej, e.sidechainCompression = true), (0, ea.isWeb)() ? e.ncUseKrispjsSettingVersion !== eL && (e.ncUseKrispjsSettingVersion = eL, e.noiseSuppression = false, e.noiseCancellation = true) : e.ncUseKrispSettingVersion !== eD && (e.ncUseKrispSettingVersion = eD, e.noiseSuppression = false, e.noiseCancellation = true), e.hardwareEnabledVersion !== ex && (e.hardwareH264 = true, e.hardwareEnabledVersion = ex), null == e.hardwareEncoding && (e.hardwareEncoding = e.hardwareH264)
+    eW.supports(eI.AN.SIDECHAIN_COMPRESSION) && e.sidechainCompressionSettingVersion < eM && (e.sidechainCompressionSettingVersion = eM, e.sidechainCompression = true), (0, ea.isWeb)() ? e.ncUseKrispjsSettingVersion !== eL && (e.ncUseKrispjsSettingVersion = eL, e.noiseSuppression = false, e.noiseCancellation = true) : e.ncUseKrispSettingVersion !== eD && (e.ncUseKrispSettingVersion = eD, e.noiseSuppression = false, e.noiseCancellation = true), e.hardwareEnabledVersion !== ex && (e.hardwareH264 = true, e.hardwareEnabledVersion = ex), null == e.hardwareEncoding && (e.hardwareEncoding = e.hardwareH264)
   }), t2()
 }
 
@@ -1191,7 +1191,7 @@ function nv(e) {
   t0({
     mode: n,
     modeOptions: r
-  }, t), eW.eachConnection(tj), tJ.update()
+  }, t), eW.eachConnection(tM), tJ.update()
 }
 
 function nI(e) {
@@ -1199,7 +1199,7 @@ function nI(e) {
     volume: t
   } = e;
   t0({
-    inputVolume: tM(t)
+    inputVolume: tj(t)
   }), eW.setInputVolume(t)
 }
 
@@ -1248,7 +1248,7 @@ function nN(e) {
   });
   let n = tx();
   eW.eachConnection(e => {
-    tj(e), tF(e, n.automaticGainControl), e.setEchoCancellation(n.echoCancellation), e.setExperimentalEncoders(n.experimentalEncoders), tV(e, n.noiseCancellation), e.setNoiseSuppression(n.noiseSuppression)
+    tM(e), tF(e, n.automaticGainControl), e.setEchoCancellation(n.echoCancellation), e.setExperimentalEncoders(n.experimentalEncoders), tV(e, n.noiseCancellation), e.setNoiseSuppression(n.noiseSuppression)
   }), eW.setAudioInputBypassSystemProcessing(n.bypassSystemInputProcessing), tJ.update(), nG()
 }
 
@@ -1271,7 +1271,7 @@ function nw(e) {
     outputVolume: n
   } = e;
   t0({
-    inputVolume: tM(t),
+    inputVolume: tj(t),
     outputVolume: n
   })
 }
@@ -1304,17 +1304,17 @@ function nL(e) {
 }
 
 function nx(e) {
-  nM(e.enabled)
+  nj(e.enabled)
 }
 
-function nj(e) {
+function nM(e) {
   let t = t0({
     sidechainCompressionStrength: e.strength
   });
   eW.setSidechainCompressionStrength(t.sidechainCompressionStrength)
 }
 
-function nM(e) {
+function nj(e) {
   let t = t0({
     sidechainCompression: e
   });
@@ -2261,7 +2261,7 @@ class rw extends(u = Chunk442837.ZP.Store) {
   }
   getKrispVadActivationThreshold() {
     var e;
-    return null != (e = tx().modeOptions.vadKrispActivationThreshold) ? module : eM
+    return null != (e = tx().modeOptions.vadKrispActivationThreshold) ? module : ej
   }
   hasActiveCallKitCall() {
     return tR
@@ -2370,7 +2370,7 @@ let rL = r = new rw(Chunk570140.Z, {
   AUDIO_SET_ACTIVE_INPUT_PROFILE: nN,
   AUDIO_SET_ECHO_CANCELLATION: nL,
   AUDIO_SET_SIDECHAIN_COMPRESSION: nx,
-  AUDIO_SET_SIDECHAIN_COMPRESSION_STRENGTH: nj,
+  AUDIO_SET_SIDECHAIN_COMPRESSION_STRENGTH: nM,
   AUDIO_SET_LOOPBACK: nk,
   AUDIO_SET_NOISE_SUPPRESSION: nZ,
   AUDIO_SET_AUTOMATIC_GAIN_CONTROL: nF,

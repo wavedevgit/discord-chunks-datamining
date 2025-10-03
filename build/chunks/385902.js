@@ -1,7 +1,7 @@
 /** Chunk was on 51727 **/
 /** chunk id: 385902, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  K: () => O,
+  K: () => y,
   _: () => _
 });
 var Chunk647438 = require("./647438.js"),
@@ -28,17 +28,17 @@ function _(e, t) {
     }),
     a = (0, l.e7)([s.Z], () => s.Z.getStateForGuild(e)),
     u = null == a ? true : a.allPowerups[i.A$],
-    f = (0, d.ZP)(e, u),
+    h = (0, d.ZP)(e, u),
     _ = (0, c.q8)(e, t),
-    O = null == u ? true : u.storeRemovalDate,
-    y = null != (n = null == r ? true : r.has(g.oNc.PARTNERED)) && n,
-    v = _ && null != O && !y && f.type === h.A3.POWERUP_ACTIVATED,
+    y = null == u ? true : u.storeRemovalDate,
+    O = null != (n = null == r ? true : r.has(g.oNc.PARTNERED)) && n,
+    v = _ && null != y && !O && h.type === f.A3.POWERUP_ACTIVATED,
     j = v ? {
       title: b.intl.formatToPlainString(m.default.mgoPkZ, {
         perkName: null == u ? true : u.title
       }),
       description: b.intl.formatToPlainString(m.default.UT9pkJ, {
-        dateString: (0, p.Z)(O)
+        dateString: (0, p.Z)(y)
       })
     } : null;
   return {
@@ -47,32 +47,32 @@ function _(e, t) {
   }
 }
 
-function O(e, t) {
-  var n, _, O, y;
+function y(e, t) {
+  var n, _, y, O;
   let v = (0, l.e7)([o.Z], () => o.Z.getGuild(e)),
     j = (0, l.e7)([a.Z], () => a.Z.hasLayers()),
-    x = null != (O = (0, u.Z)(e)) && O,
+    x = null != (y = (0, u.Z)(e)) && y,
     C = (0, c.q8)(e, t),
     E = (0, l.e7)([s.Z], () => s.Z.getStateForGuild(e)),
     S = null == E || null == (n = E.allPowerups) ? true : n[i.A$],
-    P = (0, d.ZP)(e, S),
-    I = null == S ? true : S.storeRemovalDate,
+    I = (0, d.ZP)(e, S),
+    P = null == S ? true : S.storeRemovalDate,
     N = null == E || null == (_ = E.allPowerups) ? true : _[i.XW],
-    w = (0, l.e7)([o.Z], () => {
+    Z = (0, l.e7)([o.Z], () => {
       var t;
       return null == (t = o.Z.getGuild(e)) ? true : t.features
     }),
-    Z = null != (y = null == w ? true : w.has(g.oNc.PARTNERED)) && y,
+    w = null != (O = null == Z ? true : Z.has(g.oNc.PARTNERED)) && O,
     {
       onActivate: T
-    } = (0, f._C)(e, N),
-    A = !j && x && C && null != S && !Z && P.type === h.A3.POWERUP_ACTIVATED && null != I && null != N && null != v,
+    } = (0, h._C)(e, N),
+    A = !j && x && C && null != S && !w && I.type === f.A3.POWERUP_ACTIVATED && null != P && null != N && null != v,
     R = r.useCallback(e => {
       T(e)
     }, [T]),
     D = r.useMemo(() => {
       if (!A) return null;
-      let e = (0, p.Z)(I),
+      let e = (0, p.Z)(P),
         t = v.premiumTier === g.Eu4.TIER_2 ? b.intl.string(m.default["0uo/LC"]) : true;
       return {
         firstHeader: S.title,
@@ -90,7 +90,7 @@ function O(e, t) {
         primaryButtonText: t,
         onPrimaryClick: null != t ? R : true
       }
-    }, [A, S, I, v, R]);
+    }, [A, S, P, v, R]);
   return {
     shouldShow: A,
     modalConfig: D

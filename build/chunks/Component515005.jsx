@@ -95,8 +95,8 @@ let R = (0, Chunk468194.Mg)(Chunk940992.__invalid_stickerPickerPreviewDimensions
       isScrolling: D,
       isUsingKeyboardNavigation: L,
       onInspect: x,
-      onSelect: j,
-      rowIndex: M,
+      onSelect: M,
+      rowIndex: j,
       stickerClassName: k,
       stickerDescriptors: U,
       stickerPadding: G = P,
@@ -121,7 +121,7 @@ let R = (0, Chunk468194.Mg)(Chunk940992.__invalid_stickerPickerPreviewDimensions
     return (0, r.jsx)("div", A(T({
       className: v.row,
       style: z
-    }, null == I ? true : I(M)), {
+    }, null == I ? true : I(j)), {
       children: U.map(e => {
         var d;
         let f = e.visibleRowIndex === (null == N ? true : N.rowIndex) && e.columnIndex === (null == N ? true : N.columnIndex),
@@ -129,7 +129,7 @@ let R = (0, Chunk468194.Mg)(Chunk940992.__invalid_stickerPickerPreviewDimensions
           S = t => {
             if ((null == D ? true : D.current) === true || (null == L ? true : L.current) === true) return;
             let n = t.altKey;
-            n && e.type === m.al.STICKER && !(0, g.gM)(e.sticker.id) && Q(e.sticker.id), null == j || j(e, n)
+            n && e.type === m.al.STICKER && !(0, g.gM)(e.sticker.id) && Q(e.sticker.id), null == M || M(e, n)
           },
           R = (0, s.throttle)(() => {
             (null == D ? true : D.current) === true || (null == L ? true : L.current) === true || f || null == x || x(e)
@@ -147,7 +147,7 @@ let R = (0, Chunk468194.Mg)(Chunk940992.__invalid_stickerPickerPreviewDimensions
               }, n))
             }))
           },
-          U = null != (d = null == l ? true : l(e.columnIndex, M)) ? d : {},
+          U = null != (d = null == l ? true : l(e.columnIndex, j)) ? d : {},
           {
             ref: G,
             tabIndex: K,

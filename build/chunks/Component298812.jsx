@@ -1,7 +1,7 @@
 /** Chunk was on 15076 **/
 /** chunk id: 298812, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => M
+  Z: () => T
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -32,16 +32,16 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk960359 = require("./960359.js");
-let M = Chunk647438.forwardRef(function(e, t) {
+let T = Chunk647438.forwardRef(function(e, t) {
   let {
     guildId: n
-  } = e, [l, r] = s.useState(null), o = (0, a.Wu)([j.Z, b.ZP], () => (0, E.OD)(b.ZP.getChannelOverrides(n), {
+  } = e, [l, r] = s.useState(null), o = (0, a.Wu)([v.Z, N.ZP], () => (0, O.OD)(N.ZP.getChannelOverrides(n), {
     ignoreMute: true,
     ignoreUnreadSetting: false,
     ignoreNotificationSetting: false
-  }).map(e => j.Z.getChannel(e)).filter(S.lm)), d = (0, a.e7)([v.Z], () => v.Z.getCategories(n)), u = o.map((e, t) => (0, i.jsxs)("div", {
+  }).map(e => v.Z.getChannel(e)).filter(b.lm)), d = (0, a.e7)([j.Z], () => j.Z.getCategories(n)), u = o.map((e, t) => (0, i.jsxs)("div", {
     className: w.channelRow,
-    children: [(0, i.jsx)(T, {
+    children: [(0, i.jsx)(P, {
       channel: e,
       categories: d,
       autoFocus: l === e.id
@@ -51,16 +51,16 @@ let M = Chunk647438.forwardRef(function(e, t) {
   }, e.id));
   return (0, i.jsxs)("div", {
     ref: t,
-    children: [(0, i.jsx)(L.Z, {
+    children: [(0, i.jsx)(_.Z, {
       guildId: n,
       onSelected: e => {
         if (null != o.find(t => t.id === e)) return;
-        let t = j.Z.getChannel(e);
+        let t = v.Z.getChannel(e);
         null != t && (h.Z.updateChannelOverrideSettings(n, e, {
           muted: false,
-          message_notifications: b.ZP.resolvedMessageNotifications(t),
-          flags: (0, Z.pq)(b.ZP.getChannelIdFlags(t.guild_id, t.id), b.ZP.resolveUnreadSetting(t))
-        }, O.ZB.OverrideCreated), r(e))
+          message_notifications: N.ZP.resolvedMessageNotifications(t),
+          flags: (0, C.pq)(N.ZP.getChannelIdFlags(t.guild_id, t.id), N.ZP.resolveUnreadSetting(t))
+        }, E.ZB.OverrideCreated), r(e))
       }
     }), u.length > 0 && (0, i.jsxs)("div", {
       className: w.table,
@@ -70,27 +70,27 @@ let M = Chunk647438.forwardRef(function(e, t) {
           variant: "text-xs/bold",
           color: "text-muted",
           className: w.rowName,
-          children: P.intl.string(P.t.uShwWl)
+          children: M.intl.string(M.t.uShwWl)
         }), (0, i.jsx)(c.Text, {
           variant: "text-xs/bold",
           color: "text-muted",
           className: w.rowOption,
-          children: P.intl.string(P.t.hZrr6u)
+          children: M.intl.string(M.t.hZrr6u)
         }), (0, i.jsx)(c.Text, {
           variant: "text-xs/bold",
           color: "text-muted",
           className: w.rowOption,
-          children: P.intl.string(P.t.y59NJi)
+          children: M.intl.string(M.t.y59NJi)
         }), (0, i.jsx)(c.Text, {
           variant: "text-xs/bold",
           color: "text-muted",
           className: w.rowOption,
-          children: P.intl.string(P.t["pGn/bG"])
+          children: M.intl.string(M.t["pGn/bG"])
         }), (0, i.jsx)(c.Text, {
           variant: "text-xs/bold",
           color: "text-muted",
           className: w.rowOption,
-          children: P.intl.string(P.t["32yow8"])
+          children: M.intl.string(M.t["32yow8"])
         })]
       }), u.length > 0 && (0, i.jsx)("div", {
         className: w.channels,
@@ -100,35 +100,35 @@ let M = Chunk647438.forwardRef(function(e, t) {
   })
 });
 
-function T(e) {
+function P(e) {
   let {
     channel: t,
     categories: n,
     autoFocus: l
-  } = e, h = (0, c.dQu)(o.Z.unsafe_rawColors.GREEN_360).hex(), v = (0, a.e7)([j.Z], () => j.Z.getChannel(null == t ? true : t.parent_id)), b = (0, y.ZA)(t), S = s.useRef(null), [O, E] = s.useState(false);
+  } = e, h = (0, c.dQu)(o.Z.unsafe_rawColors.GREEN_360).hex(), j = (0, a.e7)([v.Z], () => v.Z.getChannel(null == t ? true : t.parent_id)), N = (0, Z.ZA)(t), b = s.useRef(null), [E, O] = s.useState(false);
   if (s.useEffect(() => {
       if (l) {
         var e;
-        null == (e = S.current) || e.scrollIntoView({
+        null == (e = b.current) || e.scrollIntoView({
           behavior: "smooth"
         })
       }
     }, []), null == t) return null;
-  let Z = P.intl.string(P.t.uIzfCA),
-    L = (0, p.KS)(t);
-  t.type === _.d4z.GUILD_CATEGORY && null != t.guild_id && "" !== t.guild_id ? Z = P.intl.formatToPlainString(P.t["2KzH8/"], {
+  let C = M.intl.string(M.t.uIzfCA),
+    _ = (0, p.KS)(t);
+  t.type === y.d4z.GUILD_CATEGORY && null != t.guild_id && "" !== t.guild_id ? C = M.intl.formatToPlainString(M.t["2KzH8/"], {
     num: null != n[t.id] ? n[t.id].length : 0
-  }) : null != v && (Z = P.intl.formatToPlainString(P.t.L1zJgY, {
-    categoryName: (0, m.F6)(v, N.default, f.Z)
+  }) : null != j && (C = M.intl.formatToPlainString(M.t.L1zJgY, {
+    categoryName: (0, m.F6)(j, S.default, f.Z)
   }));
-  let M = O ? C.s8.CUSTOM : b.preset;
+  let T = E ? L.s8.CUSTOM : N.preset;
   return (0, i.jsx)("div", {
-    ref: S,
+    ref: b,
     children: (0, i.jsxs)("div", {
       className: r()(w.row, w.channel),
       children: [(0, i.jsxs)("div", {
         className: r()(w.rowName, w.modColor),
-        children: [null != L ? (0, i.jsx)(L, {
+        children: [null != _ ? (0, i.jsx)(_, {
           size: "custom",
           color: "currentColor",
           height: 20,
@@ -138,11 +138,11 @@ function T(e) {
           children: [(0, i.jsx)(c.Text, {
             variant: "text-md/semibold",
             className: w.modColor,
-            children: (0, m.F6)(t, N.default, f.Z)
+            children: (0, m.F6)(t, S.default, f.Z)
           }), (0, i.jsx)(c.Text, {
             variant: "text-xs/medium",
             className: w.modColor,
-            children: Z
+            children: C
           })]
         })]
       }), (0, i.jsx)("div", {
@@ -152,8 +152,8 @@ function T(e) {
             color: h,
             shape: d.zV.ROUND,
             type: d.M0.INVERTED,
-            value: M === C.s8.ALL_MESSAGES,
-            onChange: () => ((0, y._m)(t.guild_id, t.id, C.s8.ALL_MESSAGES), E(false))
+            value: T === L.s8.ALL_MESSAGES,
+            onChange: () => ((0, Z._m)(t.guild_id, t.id, L.s8.ALL_MESSAGES), O(false))
           })
         })
       }), (0, i.jsx)("div", {
@@ -163,8 +163,8 @@ function T(e) {
             color: h,
             shape: d.zV.ROUND,
             type: d.M0.INVERTED,
-            value: M === C.s8.MENTIONS,
-            onChange: () => ((0, y._m)(t.guild_id, t.id, C.s8.MENTIONS), E(false))
+            value: T === L.s8.MENTIONS,
+            onChange: () => ((0, Z._m)(t.guild_id, t.id, L.s8.MENTIONS), O(false))
           })
         })
       }), (0, i.jsx)("div", {
@@ -174,8 +174,8 @@ function T(e) {
             color: h,
             shape: d.zV.ROUND,
             type: d.M0.INVERTED,
-            value: M === C.s8.NOTHING,
-            onChange: () => ((0, y._m)(t.guild_id, t.id, C.s8.NOTHING), E(false))
+            value: T === L.s8.NOTHING,
+            onChange: () => ((0, Z._m)(t.guild_id, t.id, L.s8.NOTHING), O(false))
           })
         })
       }), (0, i.jsx)("div", {
@@ -185,21 +185,21 @@ function T(e) {
             onClick: e => {
               (0, u.vq)(e, () => (0, i.jsx)(c.v2r, {
                 navId: "ChannelNotificationCustomSettingsItems",
-                "aria-label": P.intl.string(P.t.kMdneX),
+                "aria-label": M.intl.string(M.t.kMdneX),
                 onClose: () => {},
                 onSelect: () => {},
-                children: (0, x.T5)(t, () => E(false))
+                children: (0, x.T5)(t, () => O(false))
               }))
             },
             color: h,
             shape: d.zV.ROUND,
             type: d.M0.INVERTED,
-            value: M === C.s8.CUSTOM,
-            onChange: () => E(true)
+            value: T === L.s8.CUSTOM,
+            onChange: () => O(true)
           })
         })
       }), (0, i.jsx)(g.Z, {
-        onClick: () => (0, y.JK)(t.guild_id, t.id),
+        onClick: () => (0, Z.JK)(t.guild_id, t.id),
         className: w.removeButton
       })]
     })

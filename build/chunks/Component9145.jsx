@@ -75,7 +75,7 @@ function Y(e) {
     maxHeight: q,
     connectedLocation: K,
     renderExternalHeader: Q
-  } = e, X = (0, w.Z)(), J = (0, s.Wu)([S.ZP], () => S.ZP.getEmbeddedActivitiesForLocation(K), [K]), $ = (0, N.p)(K), ee = (0, s.e7)([O.Z], () => O.Z.getChannel($)), et = (0, P.gb)(J), en = (0, P.uF)(et), er = i.useCallback(() => {
+  } = e, X = (0, w.Z)(), J = (0, s.Wu)([S.ZP], () => S.ZP.getEmbeddedActivitiesForLocation(K), [K]), $ = (0, N.p)(K), ee = (0, s.e7)([j.Z], () => j.Z.getChannel($)), et = (0, T.gb)(J), en = (0, T.uF)(et), er = i.useCallback(() => {
     (0, E.tg)(G.Ez.PIP)
   }, []), ei = i.useRef(null), el = (0, s.e7)([S.ZP], () => S.ZP.getFocusedLayout()), ea = el !== G.MI.NO_CHAT, [es, eo] = i.useState(null != (l = null != (t = m.ZP.activityPanelHeight) ? t : q) ? l : null), ec = i.useCallback(e => {
     u.ZP.updatedUnsyncedSettings({
@@ -99,25 +99,25 @@ function Y(e) {
   let eh = eu.width / Math.max(eu.height, 1) < G.I0,
     ef = 0,
     eg = 0,
-    em = (0, T.Z)(null == X ? true : X.id);
+    em = (0, P.Z)(null == X ? true : X.id);
   if (!em) {
     let e = eu.width,
       t = eu.height;
     eh ? ((t = eu.width / G.I0) > eu.height && (e = (t = eu.height) * G.I0), eg = (eu.height - t) / 2) : ((e = Math.min(eu.height * G.I0)) > eu.width && (t = (e = eu.width) / G.I0), ef = (eu.width - e) / 2)
   }
   let eb = en.get(null != (Y = null == X ? true : X.id) ? Y : ""),
-    ey = (0, s.e7)([x.Z], () => x.Z.getChannelId()),
-    e_ = (0, s.Wu)([j.ZP], () => {
+    ey = (0, s.e7)([O.Z], () => O.Z.getChannelId()),
+    e_ = (0, s.Wu)([x.ZP], () => {
       var e;
-      return null == ee ? [] : Array.from(null != (e = null == eb ? true : eb.embeddedActivity.userIds) ? e : []).map(e => j.ZP.getMember(ee.guild_id, e))
+      return null == ee ? [] : Array.from(null != (e = null == eb ? true : eb.embeddedActivity.userIds) ? e : []).map(e => x.ZP.getMember(ee.guild_id, e))
     }, [eb, ee]),
-    eO = i.useMemo(() => {
+    ej = i.useMemo(() => {
       let e = new Map;
       return e_.forEach(t => {
         null != t && true !== t && e.set(t.userId, t)
       }), e
     }, [e_]),
-    ej = function(e, t, n) {
+    ex = function(e, t, n) {
       let r = (0, p.Z)(e),
         l = e !== r,
         [a, s] = i.useState(false);
@@ -150,7 +150,7 @@ function Y(e) {
         }), r) : l
       }, [o, e, n, t])
     }(ea, es, q),
-    ex = (0, k.y)(),
+    eO = (0, k.y)(),
     {
       data: ev
     } = (0, R.K)(Z.B);
@@ -161,7 +161,7 @@ function Y(e) {
   let eE = e => {
     var t;
     if (null == e || true === e || e === D.ag) return null;
-    let n = eO.get(e.id),
+    let n = ej.get(e.id),
       i = null != (t = null == n ? true : n.nick) ? t : I.ZP.getName(e);
     return (0, r.jsx)(c.u, {
       asContainer: true,
@@ -179,7 +179,7 @@ function Y(e) {
     children: e => (0, r.jsxs)("div", {
       className: a()(B.wrapper, W[el], e),
       ref: ei,
-      style: ej,
+      style: ex,
       children: [null == Q ? true : Q(), (0, r.jsxs)("div", {
         className: B.activityPanelContainer,
         children: [ea ? null : (0, r.jsx)("div", {
@@ -251,7 +251,7 @@ function Y(e) {
               text: F.intl.string(F.t["36gY4e"]),
               variant: "color-mix"
             })
-          }), ex ? (0, r.jsx)(_.Z, {
+          }), eO ? (0, r.jsx)(_.Z, {
             popoutOpen: false,
             onOpenPopout: () => {
               (0, f.yw)(H.rMx.ACTIVITY_POPOUT_POP_OUT_BUTTON_CLICKED), (0, L.Z)({

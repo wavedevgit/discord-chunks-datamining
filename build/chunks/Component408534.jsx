@@ -1,4 +1,4 @@
-/** Chunk was on 9665 **/
+/** Chunk was on 50118 **/
 /** chunk id: 408534, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -36,23 +36,23 @@ function j(e) {
   } = e, P = (0, s.bp)(), {
     id: I,
     type: Z
-  } = j, N = (0, i.e7)([u.Z], () => u.Z.getGuild(j.guild_id), [j.guild_id]), T = (0, i.e7)([d.Z], () => d.Z.getSelectedParticipant(I)), A = (null == T ? true : T.type) === _.fO.STREAM ? T.stream : null, w = (0, i.e7)([a.Z], () => (null == T ? true : T.type) === _.fO.ACTIVITY ? a.Z.getApplication(T.applicationId) : true), M = (0, h.Z)(I), R = (0, y.Z)(I), k = (0, m.Z)(j, N, null == A ? true : A.ownerId, null == w ? true : w.id), D = (0, p.Z)(I), L = (0, C.Z)(), U = (0, c.$A)(I), B = (0, c.j8)(I), H = (0, b.Z)(A, P), V = (0, g.Z)(w, I), F = (0, f.Z)(), G = (0, o.Z)(j);
-  return (0, r.jsxs)(l.v2r, {
+  } = j, N = (0, r.e7)([u.Z], () => u.Z.getGuild(j.guild_id), [j.guild_id]), T = (0, r.e7)([d.Z], () => d.Z.getSelectedParticipant(I)), A = (null == T ? true : T.type) === _.fO.STREAM ? T.stream : null, w = (0, r.e7)([a.Z], () => (null == T ? true : T.type) === _.fO.ACTIVITY ? a.Z.getApplication(T.applicationId) : true), M = (0, h.Z)(I), R = (0, C.Z)(I), k = (0, m.Z)(j, N, null == A ? true : A.ownerId, null == w ? true : w.id), L = (0, p.Z)(I), D = (0, y.Z)(), U = (0, c.$A)(I), B = (0, c.j8)(I), H = (0, b.Z)(A, P), V = (0, g.Z)(w, I), F = (0, f.Z)(), G = (0, o.Z)(j);
+  return (0, i.jsxs)(l.v2r, {
     className: O.menu,
     onClose: t,
     onSelect: n,
     onInteraction: S,
     navId: "more-settings-context",
     "aria-label": x.intl.string(x.t.FTLzdX),
-    children: [(0, r.jsx)(l.kSQ, {
+    children: [(0, i.jsx)(l.kSQ, {
       children: Z !== v.d4z.GUILD_STAGE_VOICE ? k : null
-    }), (0, r.jsxs)(l.kSQ, {
-      children: [Z === v.d4z.GUILD_STAGE_VOICE ? U : null, Z === v.d4z.GUILD_STAGE_VOICE ? B : null, E || Z === v.d4z.GUILD_STAGE_VOICE ? null : D, F, Z !== v.d4z.GUILD_STAGE_VOICE ? M : null, Z === v.d4z.GUILD_STAGE_VOICE || Z === v.d4z.GUILD_VOICE ? R : null]
-    }), (0, r.jsx)(l.kSQ, {
+    }), (0, i.jsxs)(l.kSQ, {
+      children: [Z === v.d4z.GUILD_STAGE_VOICE ? U : null, Z === v.d4z.GUILD_STAGE_VOICE ? B : null, E || Z === v.d4z.GUILD_STAGE_VOICE ? null : L, F, Z !== v.d4z.GUILD_STAGE_VOICE ? M : null, Z === v.d4z.GUILD_STAGE_VOICE || Z === v.d4z.GUILD_VOICE ? R : null]
+    }), (0, i.jsx)(l.kSQ, {
       children: G
-    }), (0, r.jsx)(l.kSQ, {
-      children: L
-    }), (0, r.jsxs)(l.kSQ, {
+    }), (0, i.jsx)(l.kSQ, {
+      children: D
+    }), (0, i.jsxs)(l.kSQ, {
       children: [null != A ? H : null, null != w ? V : null]
     })]
   })

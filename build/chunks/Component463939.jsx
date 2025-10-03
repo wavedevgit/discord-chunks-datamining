@@ -2,7 +2,7 @@
 /** chunk id: 463939, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => I
+  Z: () => S
 });
 var r, i, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -10,6 +10,7 @@ var r, i, Chunk951288 = require("./951288.js"),
   o = require.n(Chunk512722),
   Chunk913527 = require("./913527.js"),
   d = require.n(Chunk913527),
+  Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk264451 = require("./264451.js"),
   Chunk759178 = require("./759178.js"),
@@ -44,14 +45,14 @@ let y = e => {
   let {
     dateUtc: t
   } = e;
-  return (0, l.jsx)(u.Text, {
+  return (0, l.jsx)(m.Text, {
     variant: "text-md/medium",
     color: "interactive-active",
     children: d()(t).utc().format("MMMM YYYY")
   })
 };
 
-function C(e) {
+function N(e) {
   let {
     item: t
   } = e, {
@@ -59,87 +60,87 @@ function C(e) {
     payoutStatus: r,
     ppgDeferralReasons: i,
     periodEndDate: s
-  } = (0, h.j0)(t), a = null != s ? d()(s).add(15, "days").toISOString() : true, o = (0, m.Zo)(a, "MMM D");
+  } = (0, x.j0)(t), a = null != s ? d()(s).add(15, "days").toISOString() : true, o = (0, g.Zo)(a, "MMM D");
   switch (n) {
-    case j.x_.OPEN:
+    case _.x_.OPEN:
       return (0, l.jsxs)(l.Fragment, {
         children: [null != o ? v.intl.formatToPlainString(v.t.I6YOjY, {
           payoutDate: o
-        }) : v.intl.string(v.t.G5ATX1), (0, l.jsx)(p.Z, {
-          className: _.statusScheduledIcon
+        }) : v.intl.string(v.t.G5ATX1), (0, l.jsx)(f.Z, {
+          className: C.statusScheduledIcon
         })]
       });
-    case j.x_.CANCELED:
+    case _.x_.CANCELED:
       return (0, l.jsxs)(l.Fragment, {
-        children: [v.intl.string(v.t["0SrNPz"]), (0, l.jsx)(u.k$p, {
+        children: [v.intl.string(v.t["0SrNPz"]), (0, l.jsx)(m.k$p, {
           size: "md",
           color: "currentColor",
-          className: _.statusErrorIcon
+          className: C.statusErrorIcon
         })]
       });
-    case j.x_.PAYOUT_DEFERRED:
-      if ((null == i ? true : i.includes(j.XL.PAYOUT_SEIZED)) === true) return (0, l.jsxs)(l.Fragment, {
-        children: [v.intl.string(v.t["0SrNPz"]), (0, l.jsx)(u.k$p, {
+    case _.x_.PAYOUT_DEFERRED:
+      if ((null == i ? true : i.includes(_.XL.PAYOUT_SEIZED)) === true) return (0, l.jsxs)(l.Fragment, {
+        children: [v.intl.string(v.t["0SrNPz"]), (0, l.jsx)(m.k$p, {
           size: "md",
           color: "currentColor",
-          className: _.statusErrorIcon
+          className: C.statusErrorIcon
         })]
       });
       return (0, l.jsxs)(l.Fragment, {
-        children: [v.intl.string(v.t.OtZ5k5), (0, l.jsx)(f.Z, {
-          className: _.statusDeferredIcon
+        children: [v.intl.string(v.t.OtZ5k5), (0, l.jsx)(h.Z, {
+          className: C.statusDeferredIcon
         })]
       })
   }
   switch (r) {
-    case j.jw.MANUAL:
-    case j.jw.OPEN:
-    case j.jw.PENDING:
-    case j.jw.PROCESSING:
-    case j.jw.SUBMITTED:
-    case j.jw.PENDING_FUNDS:
-    case j.jw.CANCELED:
-    case j.jw.ERROR:
+    case _.jw.MANUAL:
+    case _.jw.OPEN:
+    case _.jw.PENDING:
+    case _.jw.PROCESSING:
+    case _.jw.SUBMITTED:
+    case _.jw.PENDING_FUNDS:
+    case _.jw.CANCELED:
+    case _.jw.ERROR:
       return (0, l.jsxs)(l.Fragment, {
         children: [null != o ? v.intl.formatToPlainString(v.t.I6YOjY, {
           payoutDate: o
-        }) : v.intl.string(v.t.ubdQTk), (0, l.jsx)(p.Z, {
-          className: _.statusScheduledIcon
+        }) : v.intl.string(v.t.ubdQTk), (0, l.jsx)(f.Z, {
+          className: C.statusScheduledIcon
         })]
       });
-    case j.jw.PAID:
+    case _.jw.PAID:
       return (0, l.jsxs)(l.Fragment, {
-        children: [v.intl.string(v.t.eoSslJ), (0, l.jsx)(u.owK, {
+        children: [v.intl.string(v.t.eoSslJ), (0, l.jsx)(m.owK, {
           size: "md",
           color: "currentColor",
-          className: _.statusPaidIcon
+          className: C.statusPaidIcon
         })]
       });
-    case j.jw.DEFERRED:
-    case j.jw.DEFERRED_INTERNAL:
-    case j.jw.REJECTED:
-    case j.jw.RISK_REVIEW:
+    case _.jw.DEFERRED:
+    case _.jw.DEFERRED_INTERNAL:
+    case _.jw.REJECTED:
+    case _.jw.RISK_REVIEW:
       return (0, l.jsxs)(l.Fragment, {
-        children: [g.Z.getStatusErrorText(r), (0, l.jsx)(u.k$p, {
+        children: [p.Z.getStatusErrorText(r), (0, l.jsx)(m.k$p, {
           size: "md",
           color: "currentColor",
-          className: _.statusErrorIcon
+          className: C.statusErrorIcon
         })]
       })
   }
   return null
 }
-let N = (0, Chunk755930.i$)({
+let E = (0, Chunk755930.i$)({
     key: "AMOUNT ",
     cellClassName: Chunk744277.amountColumn,
     renderHeader() {
-      let e = (0, Chunk951288.jsx)(Chunk481060.ua7, {
+      let e = (0, Chunk951288.jsx)(Chunk28664.u, {
         text: Chunk388032.intl.string(Chunk388032.t.q3PkLy),
-        children: e => (0, l.jsx)(u.d3s, O({
+        children: (0, Chunk951288.jsx)(Chunk481060.d3s, {
           size: "xs",
           color: "currentColor",
-          className: _.amountDisclaimer
-        }, e))
+          className: Chunk744277.amountDisclaimer
+        })
       });
       return (0, Chunk951288.jsxs)(Chunk755930.qN, {
         children: [Chunk388032.intl.string(Chunk388032.t.VodAGR), module]
@@ -147,7 +148,7 @@ let N = (0, Chunk755930.i$)({
     },
     getAmount: e => e.amount
   }),
-  E = (0, Chunk334820.rM)([(0, Chunk334820.Fd)({
+  I = (0, Chunk334820.rM)([(0, Chunk334820.Fd)({
     key: "PERIOD",
     cellClassName: Chunk744277.periodColumn,
     renderHeader: () => (0, Chunk951288.jsx)(Chunk755930.qN, {
@@ -165,9 +166,9 @@ let N = (0, Chunk755930.i$)({
         listingId: e.listingId
       })
     }
-  }), (0, Chunk334820.Fd)((r = O({}, N), i = i = {
-    renderContent: N.render,
-    renderExpandedContent: (e, t) => N.render(e, t)
+  }), (0, Chunk334820.Fd)((r = O({}, E), i = i = {
+    renderContent: E.render,
+    renderExpandedContent: (e, t) => E.render(e, t)
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -181,21 +182,21 @@ let N = (0, Chunk755930.i$)({
     key: "STATUS ",
     cellClassName: Chunk744277.statusColumn,
     renderHeader() {
-      let e = (0, Chunk951288.jsx)(Chunk481060.ua7, {
+      let e = (0, Chunk951288.jsx)(Chunk28664.u, {
         text: Chunk388032.intl.string(Chunk388032.t.cIGvZG),
-        children: e => (0, l.jsx)(u.d3s, O({
+        children: (0, Chunk951288.jsx)(Chunk481060.d3s, {
           size: "xs",
           color: "currentColor",
-          className: _.statusDisclaimer
-        }, e))
+          className: Chunk744277.statusDisclaimer
+        })
       });
       return (0, Chunk951288.jsxs)(Chunk755930.qN, {
         children: [Chunk388032.intl.string(Chunk388032.t.oypxx8), module]
       })
     },
     renderContent: e => (0, l.jsx)(b.bL, {
-      className: _.statusCell,
-      children: (0, l.jsx)(C, {
+      className: C.statusCell,
+      children: (0, l.jsx)(N, {
         item: e
       })
     })
@@ -203,14 +204,14 @@ let N = (0, Chunk755930.i$)({
     expandableToggleColumnKey: "DROPDOWN"
   });
 
-function I(e) {
+function S(e) {
   let {
     ListingIdLabel: t,
     payoutsByPeriod: n
   } = e, {
     cellProps: r,
     data: i
-  } = (0, x.GN)(n, {
+  } = (0, j.GN)(n, {
     generateExpandedRows: e => Object.keys(e.ppgs).map(t => {
       var n;
       return {
@@ -223,7 +224,7 @@ function I(e) {
     ListingIdLabel: t
   }, r), [r, t]);
   return (0, l.jsx)(b.ZP, {
-    columns: E,
+    columns: I,
     data: i,
     cellProps: a
   })

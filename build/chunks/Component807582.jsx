@@ -2,90 +2,62 @@
 /** chunk id: 807582, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => g
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
+  Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk158638 = require("./158638.js"),
   Chunk267642 = require("./267642.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk552461 = require("./552461.js");
-let m = e => {
+let g = e => {
   let t, n, i, {
-      guildFeature: m,
-      guild: g,
-      className: p,
-      hideTooltip: f = false,
-      tooltipPosition: h = "left",
+      guildFeature: g,
+      guild: p,
+      className: f,
+      hideTooltip: h = false,
+      tooltipPosition: x = "left",
       onClick: b
     } = e,
-    x = g.features.has(m),
-    j = (0, a.AR)(g.id, "GuildSettingsBoostPerks"),
-    v = (0, o._p)(m);
-  return !x && m === c.oNc.VANITY_URL && j ? null : (x ? (null != v && (i = d.intl.string(d.t.hUgjyM)), t = (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(s.$Eu, {
-      color: s.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
-      className: u.unlockedIcon
-    }), (0, r.jsx)(s.X6q, {
+    j = p.features.has(g),
+    _ = (0, o.AR)(p.id, "GuildSettingsBoostPerks"),
+    v = (0, c._p)(g);
+  return !j && g === d.oNc.VANITY_URL && _ ? null : (j ? (null != v && (i = u.intl.string(u.t.hUgjyM)), t = (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(a.$Eu, {
+      color: a.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
+      className: m.unlockedIcon
+    }), (0, r.jsx)(a.X6q, {
       variant: "eyebrow",
-      className: u.description,
-      children: d.intl.string(d.t["0O+87u"])
+      className: m.description,
+      children: u.intl.string(u.t["0O+87u"])
     })]
-  })) : (null != v && (i = d.intl.string(d.t.L2wYYm)), t = (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(s.$Eu, {
+  })) : (null != v && (i = u.intl.string(u.t.L2wYYm)), t = (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(a.$Eu, {
       color: "currentColor",
-      className: u.icon
-    }), (0, r.jsx)(s.X6q, {
+      className: m.icon
+    }), (0, r.jsx)(a.X6q, {
       variant: "eyebrow",
-      className: u.description,
-      children: null != v && (0, o.e9)(v)
+      className: m.description,
+      children: null != v && (0, c.e9)(v)
     })]
-  })), n = f || null == i ? (0, r.jsx)("div", {
-    className: l()(u.availabilityIndicator, p),
+  })), n = h || null == i ? (0, r.jsx)("div", {
+    className: l()(m.availabilityIndicator, f),
     children: t
-  }) : (0, r.jsx)(s.ua7, {
-    position: h,
+  }) : (0, r.jsx)(s.u, {
+    position: x,
     text: i,
-    children: e => {
-      var n, i;
-      return (0, r.jsx)("div", (n = function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-              value: r,
-              enumerable: true,
-              configurable: true,
-              writable: true
-            }) : e[t] = r
-          })
-        }
-        return e
-      }({}, e), i = i = {
-        className: l()(u.availabilityIndicator, p),
-        children: t
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, r)
-        }
-        return n
-      })(Object(i)).forEach(function(e) {
-        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
-      }), n))
-    }
-  }), null == b || x) ? n : (0, r.jsx)(s.P3F, {
+    children: (0, r.jsx)("div", {
+      className: l()(m.availabilityIndicator, f),
+      children: t
+    })
+  }), null == b || j) ? n : (0, r.jsx)(a.P3F, {
     onClick: b,
-    className: u.clickable,
+    className: m.clickable,
     children: n
   })
 }

@@ -83,7 +83,7 @@ function E(e) {
   i.useEffect(() => () => l.Z.wait(() => c.q$()), []);
   let L = null != u && u === y,
     x = L ? N : C,
-    j = i.useMemo(() => [{
+    M = i.useMemo(() => [{
       loading: b,
       disabled: !A || 0 === y.length || "localhost" === T && 0 === v.length,
       variant: L ? "critical-primary" : "active",
@@ -93,7 +93,7 @@ function E(e) {
   return (0, r.jsxs)(a.Modal, {
     title: _.intl.string(_.t.f8fzk5),
     subtitle: _.intl.string(_.t.a6Vilp),
-    actions: j,
+    actions: M,
     onClose: t,
     transitionState: n,
     children: [w(), (0, r.jsxs)(d.Z, {

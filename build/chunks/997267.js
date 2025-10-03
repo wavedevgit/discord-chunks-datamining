@@ -15,6 +15,5 @@ module.exports = {
   ctaTooltipText: "ctaTooltipText__2055a",
   root: "root__2055a",
   rewardTileWrapper: "rewardTileWrapper__2055a",
-  rewardTileExpired: "rewardTileExpired__2055a",
-  rewardTileExpirationTooltip: "rewardTileExpirationTooltip__2055a"
+  rewardTileExpired: "rewardTileExpired__2055a"
 }

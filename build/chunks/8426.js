@@ -2,20 +2,20 @@
 /** chunk id: 8426, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Hr: () => x,
-  Hz: () => y,
+  Hr: () => b,
+  Hz: () => O,
   To: () => I,
-  XG: () => O,
+  XG: () => C,
   _N: () => f,
-  ad: () => v,
+  ad: () => _,
   bj: () => P,
-  el: () => b,
+  el: () => x,
   hS: () => j,
-  lq: () => C,
+  lq: () => y,
   mM: () => N,
   oo: () => E,
   q6: () => T,
-  r2: () => _,
+  r2: () => v,
   vR: () => h
 }), require("./361932.js"), require("./187205.js");
 var Chunk392711 = require("./392711.js"),
@@ -45,7 +45,7 @@ function h(e) {
   })
 }
 
-function b(e, t) {
+function x(e, t) {
   s.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_UPDATE_NEW_MEMBER_ACTION",
     channelId: e,
@@ -53,7 +53,7 @@ function b(e, t) {
   })
 }
 
-function x(e) {
+function b(e) {
   s.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_DELETE_NEW_MEMBER_ACTION",
     channelId: e
@@ -66,7 +66,7 @@ function j(e) {
     actions: e
   })
 }
-async function v(e, t, n, r) {
+async function _(e, t, n, r) {
   if (!r) return Promise.resolve();
   try {
     let r = await l.tn.patch({
@@ -97,14 +97,14 @@ async function v(e, t, n, r) {
   }
 }
 
-function _(e) {
+function v(e) {
   s.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_ADD_RESOURCE_CHANNEL",
     resourceChannel: e
   })
 }
 
-function O(e, t) {
+function C(e, t) {
   s.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_UPDATE_RESOURCE_CHANNEL",
     channelId: e,
@@ -112,14 +112,14 @@ function O(e, t) {
   })
 }
 
-function y(e) {
+function O(e) {
   s.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_DELETE_RESOURCE_CHANNEL",
     resourceChannelId: e
   })
 }
 
-function C(e) {
+function y(e) {
   s.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_REORDER_RESOURCE_CHANNEL",
     resourceChannels: e
@@ -204,7 +204,7 @@ function I(e, t) {
   }), n)))
 }
 async function S(e, t) {
-  var n, r, o, u, m, f, h, b, x;
+  var n, r, o, u, m, f, h, x, b;
   s.Z.dispatch({
     type: "GUILD_HOME_SETTINGS_UPDATE_START"
   });
@@ -226,11 +226,11 @@ async function S(e, t) {
       welcome_message_length: null != (m = null == a || null == (o = a.welcomeMessage) || null == (r = o.message) ? true : r.length) ? m : 0,
       member_action_channel_ids: (null != (f = null == a ? true : a.newMemberActions) ? f : []).map(e => e.channelId),
       member_action_channel_actions: (null != (h = null == a ? true : a.newMemberActions) ? h : []).map(e => e.actionType),
-      resource_channel_ids: (null != (b = null == a ? true : a.resourceChannels) ? b : []).map(e => e.channelId),
+      resource_channel_ids: (null != (x = null == a ? true : a.resourceChannels) ? x : []).map(e => e.channelId),
       enabled: null == a ? true : a.enabled
     }), i.body
   } catch (t) {
-    let e = i().flatMap(null != (x = t.body) ? x : {}, e => e);
+    let e = i().flatMap(null != (b = t.body) ? b : {}, e => e);
     s.Z.dispatch({
       type: "GUILD_HOME_SETTINGS_UPDATE_FAIL"
     }), a.Z.show({

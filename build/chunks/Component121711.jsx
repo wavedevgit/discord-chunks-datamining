@@ -228,7 +228,7 @@ let eh = function(e) {
   let {
     onScroll: U,
     scrollPosition: F
-  } = (0, v.M)(), W = z.Z.getState().getUtmCurrentContext(), el = (0, M._)({
+  } = (0, y.M)(), W = z.Z.getState().getUtmCurrentContext(), el = (0, M._)({
     location: $.dr.QUEST_HOME_DESKTOP
   }) ? Y.Z : Y.j, ea = (0, K.z)(e => e.registerAssetLoad), eo = i.useRef(W);
   i.useEffect(() => {
@@ -278,7 +278,7 @@ let eh = function(e) {
   i.useEffect(() => {
     l && (0, p.Y)(ee.Z5c.QUEST_HOME_V2)
   }, [l]), i.useEffect(() => {
-    y.C.trigger()
+    v.C.trigger()
   }, []);
   let em = (0, H.T)({
     location: $.dr.QUEST_PREVIEW_TOOL_2

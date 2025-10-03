@@ -3,7 +3,7 @@
 require.d(exports, {
   QP: () => N,
   ZP: () => S,
-  h6: () => I
+  h6: () => P
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -30,18 +30,18 @@ var Chunk951288 = require("./951288.js"),
   Chunk915087 = require("./915087.js");
 
 function S(e) {
-  var t, n, l, a, O, S, I;
+  var t, n, l, a, y, S, P;
   let {
     onJump: N,
-    showTutorial: w,
-    setSeenTutorial: Z,
+    showTutorial: Z,
+    setSeenTutorial: w,
     closePopout: T
   } = e, A = i.useRef(null), [R, D] = (0, j.ZP)(A), {
     loadState: L,
     channels: M
   } = R, {
     maybeLoadMore: k
-  } = D, U = (0, u.e7)([h.Z], () => h.Z.messageGroupSpacing);
+  } = D, U = (0, u.e7)([f.Z], () => f.Z.messageGroupSpacing);
   t = A, n = R, l = D, i.useLayoutEffect(() => {
     var e;
     let {
@@ -63,15 +63,15 @@ function S(e) {
     (a.offsetTop < s || a.offsetTop > s + c) && i.scrollTo({
       to: a.offsetTop
     })
-  }), a = R, O = D, i.useEffect(() => {
+  }), a = R, y = D, i.useEffect(() => {
     let e = () => {
       let e = a.channels.find(e => !e.collapsed);
-      null != e && O.markChannelRead(e)
+      null != e && y.markChannelRead(e)
     };
     return b.S.subscribe(x.CkL.MARK_TOP_INBOX_CHANNEL_READ, e), () => {
       b.S.unsubscribe(x.CkL.MARK_TOP_INBOX_CHANNEL_READ, e)
     }
-  }, [O, a.channels]), S = D, i.useEffect(() => {
+  }, [y, a.channels]), S = D, i.useEffect(() => {
     let e = e => {
       ((0, _.isMac)() || (0, _.isMacWeb)() ? e.metaKey : e.ctrlKey) && !e.shiftKey && !e.altKey && "z" === e.key && S.undoMarkChannelRead()
     };
@@ -84,15 +84,15 @@ function S(e) {
     })
   }, []), i.useEffect(() => (p.Z.subscribe("CONNECTION_OPEN", T), () => {
     p.Z.unsubscribe("CONNECTION_OPEN", T)
-  }), [T]), (0, f.ZP)(() => (b.S.subscribe(x.CkL.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead), () => {
+  }), [T]), (0, h.ZP)(() => (b.S.subscribe(x.CkL.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead), () => {
     b.S.unsubscribe(x.CkL.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead)
   }));
   let G = (0, g.Z)("unreads", A);
   if (0 === M.length) {
-    return (0, r.jsx)(y.Z, {
+    return (0, r.jsx)(O.Z, {
       Icon: d.xx7,
       header: C.intl.string(C.t["6XMM+P"]),
-      tip: (null == (I = s().os) ? true : I.family) === "OS X" ? C.intl.string(C.t.w9uDOT) : C.intl.string(C.t.BiUJCw)
+      tip: (null == (P = s().os) ? true : P.family) === "OS X" ? C.intl.string(C.t.w9uDOT) : C.intl.string(C.t.BiUJCw)
     })
   }
   return (0, r.jsx)(c.bG, {
@@ -142,8 +142,8 @@ function S(e) {
         }, l), n = n = {
           onScroll: L === j.jd.Done ? true : k,
           className: o()(E.scroller, "group-spacing-".concat(U)),
-          children: [w ? (0, r.jsx)(P, {
-            setSeenTutorial: Z
+          children: [Z ? (0, r.jsx)(I, {
+            setSeenTutorial: w
           }) : null, (0, v.Z)(M, D, N), L === j.jd.Done ? null : (0, r.jsx)(d.$jN, {
             className: E.spinner
           })]
@@ -162,7 +162,7 @@ function S(e) {
   })
 }
 
-function P(e) {
+function I(e) {
   let {
     setSeenTutorial: t
   } = e;
@@ -197,7 +197,7 @@ function P(e) {
   })
 }
 
-function I() {
+function P() {
   return (0, Chunk951288.jsx)(Chunk240126.Z, {
     Icon: Chunk481060.xx7,
     disableStars: true,

@@ -2,13 +2,14 @@
 /** chunk id: 400251, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => N,
-  m: () => P
+  m: () => T
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
+  Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk239091 = require("./239091.js"),
   Chunk749210 = require("./749210.js"),
@@ -28,7 +29,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk706800 = require("./706800.js"),
   Chunk883760 = require("./883760.js");
 
-function E(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,7 +48,7 @@ function E(e) {
   return e
 }
 
-function S(e, t) {
+function Z(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -59,80 +60,58 @@ function S(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-
-function Z(e, t) {
-  if (null == e) return {};
-  var n, r, i = function(e, t) {
-    if (null == e) return {};
-    var n, r, i = {},
-      l = Object.keys(e);
-    for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-    return i
-  }(e, t);
-  if (Object.getOwnPropertySymbols) {
-    var l = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
-  }
-  return i
-}
-let P = e => {
+let T = e => {
   let {
     onClick: t
   } = e;
-  return (0, r.jsxs)(o.P3F, {
+  return (0, r.jsxs)(c.P3F, {
     onClick: t,
-    className: C.addEntryCard,
+    className: I.addEntryCard,
     children: [(0, r.jsx)("img", {
       alt: "",
-      src: I
-    }), (0, r.jsx)(o.Text, {
+      src: E
+    }), (0, r.jsx)(c.Text, {
       variant: "text-sm/semibold",
       color: "header-primary",
-      className: C.addServerText,
-      children: v.intl.string(v.t.H9jxS0)
+      className: I.addServerText,
+      children: C.intl.string(C.t.H9jxS0)
     })]
   })
 };
 
-function T(e) {
+function P(e) {
   let {
     entry: t
-  } = e, [l, s] = i.useState(false), c = i.useRef(null), {
-    canEdit: d
-  } = (0, O.Z)(t);
+  } = e, [l, s] = i.useState(false), d = i.useRef(null), {
+    canEdit: u
+  } = (0, x.Z)(t);
   return (0, r.jsx)("div", {
-    className: a()(C.actionButtonsContainer, {
-      [C.forceButtonsShow]: l
+    className: a()(I.actionButtonsContainer, {
+      [I.forceButtonsShow]: l
     }),
-    children: (0, r.jsxs)(p.ZP, {
-      children: [d ? (0, r.jsx)(o.ua7, {
-        text: v.intl.string(v.t.XnuOvL),
-        hideOnClick: true,
-        children: e => {
-          var {
-            onClick: i
-          } = e, l = Z(e, ["onClick"]);
-          return (0, r.jsx)(p.zx, S(E({}, l), {
-            onClick: () => {
-              null == i || i(), (0, o.ZDy)(async () => {
-                let {
-                  default: e
-                } = await n.e("34191").then(n.bind(n, 303647));
-                return n => (0, r.jsx)(e, S(E({}, n), {
-                  entry: t
-                }))
-              })
-            },
-            "aria-label": v.intl.string(v.t.XnuOvL),
-            children: (0, r.jsx)(o.vdY, {
-              size: "xs",
-              color: "currentColor",
-              className: C.overflowIcon
+    children: (0, r.jsxs)(h.ZP, {
+      children: [u ? (0, r.jsx)(o.u, {
+        text: C.intl.string(C.t.XnuOvL),
+        children: (0, r.jsx)(h.zx, {
+          onClick: () => {
+            (0, c.ZDy)(async () => {
+              let {
+                default: e
+              } = await n.e("34191").then(n.bind(n, 303647));
+              return n => (0, r.jsx)(e, Z(S({}, n), {
+                entry: t
+              }))
             })
-          }))
-        }
-      }) : null, (0, r.jsx)(j.Z, {
-        targetElementRef: c,
+          },
+          "aria-label": C.intl.string(C.t.XnuOvL),
+          children: (0, r.jsx)(c.vdY, {
+            size: "xs",
+            color: "currentColor",
+            className: I.overflowIcon
+          })
+        })
+      }) : null, (0, r.jsx)(O.Z, {
+        targetElementRef: d,
         onRequestOpen: () => s(true),
         onRequestClose: () => s(false),
         entry: t,
@@ -140,27 +119,35 @@ function T(e) {
         children: e => {
           var {
             onClick: t
-          } = e, n = Z(e, ["onClick"]);
-          return (0, r.jsx)(o.ua7, {
-            text: v.intl.string(v.t.UKOtz8),
-            hideOnClick: true,
-            children: e => {
-              var {
-                onClick: i
-              } = e, l = Z(e, ["onClick"]);
-              return (0, r.jsx)(p.zx, S(E({}, n, l), {
-                ref: c,
-                onClick: e => {
-                  null == i || i(), t(e)
-                },
-                "aria-label": v.intl.string(v.t.UKOtz8),
-                children: (0, r.jsx)(o.xhG, {
-                  size: "md",
-                  color: "currentColor",
-                  className: C.overflowIcon
-                })
-              }))
+          } = e, n = function(e, t) {
+            if (null == e) return {};
+            var n, r, i = function(e, t) {
+              if (null == e) return {};
+              var n, r, i = {},
+                l = Object.keys(e);
+              for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+              return i
+            }(e, t);
+            if (Object.getOwnPropertySymbols) {
+              var l = Object.getOwnPropertySymbols(e);
+              for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
             }
+            return i
+          }(e, ["onClick"]);
+          return (0, r.jsx)(o.u, {
+            text: C.intl.string(C.t.UKOtz8),
+            children: (0, r.jsx)(h.zx, Z(S({}, n), {
+              onClick: e => {
+                t(e)
+              },
+              ref: d,
+              "aria-label": C.intl.string(C.t.UKOtz8),
+              children: (0, r.jsx)(c.xhG, {
+                size: "md",
+                color: "currentColor",
+                className: I.overflowIcon
+              })
+            }))
           })
         }
       })]
@@ -171,118 +158,117 @@ let N = e => {
   var t;
   let {
     entry: l
-  } = e, [a, p] = i.useState(false), O = null != (0, s.e7)([b.Z], () => b.Z.getGuild(l.guildId)), j = async () => {
-    p(true);
+  } = e, [a, o] = i.useState(false), h = null != (0, s.e7)([y.Z], () => y.Z.getGuild(l.guildId)), x = async () => {
+    o(true);
     try {
-      O ? (0, m.X)(l.guildId) : await d.Z.joinGuild(l.guildId, {
-        source: x.vtS.DIRECTORY_ENTRY
+      h ? (0, b.X)(l.guildId) : await u.Z.joinGuild(l.guildId, {
+        source: v.vtS.DIRECTORY_ENTRY
       })
     } finally {
-      p(false)
+      o(false)
     }
-  }, I = y.ZP.getGuildSplashURL({
+  }, O = _.ZP.getGuildSplashURL({
     id: l.guildId,
     splash: l.splash,
-    size: 300 * (0, g.x_)()
-  }), Z = null != (t = y.ZP.getGuildIconURL({
+    size: 300 * (0, m.x_)()
+  }), E = null != (t = _.ZP.getGuildIconURL({
     id: l.guildId,
     icon: l.icon,
     size: 40
-  })) ? t : true, P = v.intl.string(v.t.VJlc0d);
-  return O && (P = v.intl.string(v.t.cqWE2d)), (0, r.jsxs)("div", {
-    className: C.card,
+  })) ? t : true, T = C.intl.string(C.t.VJlc0d);
+  return h && (T = C.intl.string(C.t.cqWE2d)), (0, r.jsxs)("div", {
+    className: I.card,
     onContextMenu: e => {
-      (0, c.jW)(e, async () => {
+      (0, d.jW)(e, async () => {
         let {
           default: e
         } = await Promise.resolve().then(n.bind(n, 643560));
-        return t => (0, r.jsx)(e, S(E({}, t), {
+        return t => (0, r.jsx)(e, Z(S({}, t), {
           entry: l
         }))
       })
     },
     children: [(0, r.jsxs)("div", {
-      className: C.cardHeader,
+      className: I.cardHeader,
       children: [(0, r.jsx)("div", {
-        className: C.splash,
-        children: null != I && (0, r.jsx)("img", {
-          src: I,
+        className: I.splash,
+        children: null != O && (0, r.jsx)("img", {
+          src: O,
           alt: "",
-          className: C.splashImage
+          className: I.splashImage
         })
       }), (0, r.jsx)("div", {
-        className: C.guildIcon,
-        children: (0, r.jsx)(u.ZP, {
-          mask: u.ZP.Masks.SQUIRCLE,
+        className: I.guildIcon,
+        children: (0, r.jsx)(p.ZP, {
+          mask: p.ZP.Masks.SQUIRCLE,
           width: 48,
           height: 48,
           children: (0, r.jsx)("div", {
-            className: C.iconMask,
-            children: (0, r.jsx)(h.Z, {
-              className: C.icon,
-              iconSrc: Z,
-              guild: (0, _.e)(l),
-              size: h.Z.Sizes.MEDIUM,
+            className: I.iconMask,
+            children: (0, r.jsx)(f.Z, {
+              className: I.icon,
+              iconSrc: E,
+              guild: (0, j.e)(l),
+              size: f.Z.Sizes.MEDIUM,
               active: true
             })
           })
         })
       })]
     }), (0, r.jsxs)("div", {
-      className: C.guildInfo,
+      className: I.guildInfo,
       children: [(0, r.jsxs)("div", {
-        className: C.title,
-        children: [(0, r.jsx)(f.Z, {
-          className: C.guildBadge,
-          guild: l,
-          tooltipColor: o.ua7.Colors.PRIMARY
-        }), (0, r.jsx)(o.Text, {
-          className: C.guildName,
+        className: I.title,
+        children: [(0, r.jsx)(g.Z, {
+          className: I.guildBadge,
+          guild: l
+        }), (0, r.jsx)(c.Text, {
+          className: I.guildName,
           variant: "heading-md/semibold",
           color: "header-primary",
           children: l.name
         })]
-      }), (0, r.jsx)(o.Text, {
-        className: C.description,
+      }), (0, r.jsx)(c.Text, {
+        className: I.description,
         variant: "text-sm/normal",
         color: "header-secondary",
         children: l.description
       }), (0, r.jsxs)("div", {
-        className: C.memberInfo,
+        className: I.memberInfo,
         children: [null != l.approximatePresenceCount && (0, r.jsxs)("div", {
-          className: C.memberCount,
+          className: I.memberCount,
           children: [(0, r.jsx)("div", {
-            className: C.dotOnline
-          }), (0, r.jsx)(o.Text, {
+            className: I.dotOnline
+          }), (0, r.jsx)(c.Text, {
             variant: "text-xs/normal",
             color: "header-secondary",
-            children: v.intl.format(v.t["LC+S+v"], {
+            children: C.intl.format(C.t["LC+S+v"], {
               membersOnline: l.approximatePresenceCount
             })
           })]
         }), null != l.approximateMemberCount && (0, r.jsxs)("div", {
-          className: C.memberCount,
+          className: I.memberCount,
           children: [(0, r.jsx)("div", {
-            className: C.dotOffline
-          }), (0, r.jsx)(o.Text, {
+            className: I.dotOffline
+          }), (0, r.jsx)(c.Text, {
             variant: "text-xs/normal",
             color: "header-secondary",
-            children: v.intl.format(v.t.zRl6XV, {
+            children: C.intl.format(C.t.zRl6XV, {
               count: l.approximateMemberCount
             })
           })]
         })]
       }), (0, r.jsx)("div", {
-        className: C.joinButton,
-        children: (0, r.jsx)(o.zxk, {
+        className: I.joinButton,
+        children: (0, r.jsx)(c.zxk, {
           loading: a,
-          variant: O ? "secondary" : "active",
-          onClick: j,
-          text: P,
+          variant: h ? "secondary" : "active",
+          onClick: x,
+          text: T,
           fullWidth: true
         })
       })]
-    }), (0, r.jsx)(T, {
+    }), (0, r.jsx)(P, {
       entry: l
     })]
   })

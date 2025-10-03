@@ -1,4 +1,4 @@
-/** Chunk was on 9665 **/
+/** Chunk was on 50118 **/
 /** chunk id: 360328, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   s: () => p
@@ -14,9 +14,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx");
 
 function p(e, t, p, h) {
-  let [f, m] = i.useState(false), g = (0, l.e7)([s.Z], () => s.Z.getChannel(h)), b = i.useCallback(() => {
+  let [f, m] = r.useState(false), g = (0, l.e7)([s.Z], () => s.Z.getChannel(h)), b = r.useCallback(() => {
     (0, a.showToast)((0, a.createToast)(d.intl.string(d.t.R0RpRU), a.ToastType.FAILURE))
-  }, []), y = i.useCallback(async () => {
+  }, []), C = r.useCallback(async () => {
     if (!f && null != e && null != t && null != p) {
       if (null != g) return void o.default.selectPrivateChannel(g.id);
       if (!f) {
@@ -47,9 +47,9 @@ function p(e, t, p, h) {
     rejectRequest: () => {
       null != e && null != t && null != p && (0, a.ZDy)(async () => {
         let {
-          default: i
+          default: r
         } = await n.e("56496").then(n.bind(n, 113886));
-        return n => (0, r.jsx)(i, {
+        return n => (0, i.jsx)(r, {
           modalProps: n,
           guildId: e,
           userId: t,
@@ -59,6 +59,6 @@ function p(e, t, p, h) {
       })
     },
     submitting: f,
-    handleOpenInterview: y
+    handleOpenInterview: C
   }
 }

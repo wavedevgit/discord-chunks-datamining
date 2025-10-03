@@ -42,7 +42,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk295907 = require("./295907.js"),
   Chunk887353 = require("./887353.js"),
   Chunk345213 = require("./345213.js");
-let D = e => {
+let M = e => {
     let {
       children: t,
       shouldAddEventListener: n,
@@ -51,7 +51,7 @@ let D = e => {
     return l.useEffect(() => {
       if (!n || a) return;
       let e = e => {
-        e.key === F.mR.Escape && r()
+        e.key === H.mR.Escape && r()
       };
       return window.addEventListener("keydown", e), () => window.removeEventListener("keydown", e)
     }, [n, a, r]), t
@@ -61,19 +61,19 @@ let D = e => {
       isFullScreen: t = true,
       tab: n = Z.AW.HOME
     } = e;
-    (0, C.z)(f.f), (0, L.f)();
+    (0, C.z)(f.f), (0, j.f)();
     let a = (0, g.Z)((0, i.Z)()),
       c = (0, o.e7)([E.default], () => E.default.getCurrentUser()),
       {
-        userProfile: F,
+        userProfile: H,
         wishlistId: W
       } = (0, o.cj)([_.Z], () => ({
         userProfile: null != c ? _.Z.getUserProfile(c.id) : null,
         wishlistId: null != c ? _.Z.getFirstWishlistId(c.id) : null
       }), [c]);
     l.useEffect(() => {
-      null != c && null == F && (0, h.Z)(c.id, c.getAvatarURL(null, 80))
-    }, [c, F]), (0, m.k)(W);
+      null != c && null == H && (0, h.Z)(c.id, c.getAvatarURL(null, 80))
+    }, [c, H]), (0, m.k)(W);
     let U = (0, R.G)("CollectiblesShop"),
       {
         onClose: V
@@ -108,7 +108,7 @@ let D = e => {
         selectedTab: er,
         transitionState: el,
         transitionToTab: ea
-      } = (0, j.B)(K, t);
+      } = (0, L.B)(K, t);
     (0, O.q3)(a, er, $, el, ee), (0, O.EB)(er, c);
     let {
       dismissShopButtonDC: es
@@ -146,12 +146,12 @@ let D = e => {
         },
         children: (0, r.jsx)(x.ni, {
           tab: er,
-          children: (0, r.jsx)(D, {
+          children: (0, r.jsx)(M, {
             onClose: V,
             shouldAddEventListener: t && !ei,
             children: (0, r.jsxs)("div", {
-              className: s()(H.shop, {
-                [M.shopTakeOver]: U
+              className: s()(F.shop, {
+                [D.shopTakeOver]: U
               }),
               ref: t ? eo : ec,
               tabIndex: false,
@@ -162,10 +162,10 @@ let D = e => {
                 handleTransition: ea,
                 selectedTab: er
               }), (0, r.jsx)("div", {
-                className: s()(H.shopViewWrapper, {
-                  [H.visible]: el === Z.f7.VISIBLE,
-                  [H.in]: el === Z.f7.IN,
-                  [H.out]: el === Z.f7.OUT
+                className: s()(F.shopViewWrapper, {
+                  [F.visible]: el === Z.f7.VISIBLE,
+                  [F.in]: el === Z.f7.IN,
+                  [F.out]: el === Z.f7.OUT
                 }),
                 children: (0, r.jsx)(I.Z, {
                   tab: er,

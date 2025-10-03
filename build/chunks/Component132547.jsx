@@ -2,7 +2,7 @@
 /** chunk id: 132547, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => M
 }), require("./388685.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -36,7 +36,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk677599 = require("./677599.js"),
   Chunk865215 = require("./865215.js");
-let j = e => {
+let M = e => {
   let {
     userId: t
   } = e;
@@ -49,9 +49,9 @@ let j = e => {
   }, []), (0, p.z)(_.X);
   let n = i.useRef(null),
     a = i.useRef(null),
-    j = (0, s.e7)([g.Z], () => g.Z.getPremiumTypeSubscription()),
+    M = (0, s.e7)([g.Z], () => g.Z.getPremiumTypeSubscription()),
     {
-      enabled: M
+      enabled: j
     } = b.b.useConfig({
       location: "NitroTabButton"
     }),
@@ -60,8 +60,8 @@ let j = e => {
     B = i.useRef(null),
     [Z, F] = i.useState(false),
     [V, H] = i.useState(false),
-    Y = M && null != G && null != j && j.status === w.O0b.CANCELED,
-    W = (0, v.W7)(P.Xh.PREMIUM_MONTH_TIER_2, G, j),
+    Y = j && null != G && null != M && M.status === w.O0b.CANCELED,
+    W = (0, v.W7)(P.Xh.PREMIUM_MONTH_TIER_2, G, M),
     K = !V && Y,
     {
       analyticsLocations: z
@@ -144,7 +144,7 @@ let j = e => {
         })
       }), Y && null != W && (0, r.jsx)(I.Z, {
         isVisible: K && k,
-        premiumSubscription: j,
+        premiumSubscription: M,
         churnDiscountOffer: G,
         discountedPrice: W
       })]

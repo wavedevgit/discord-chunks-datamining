@@ -23,7 +23,7 @@ require.d(exports, {
   Rt: () => eV,
   T4: () => Y,
   U2: () => B,
-  UV: () => tM,
+  UV: () => tj,
   UX: () => z,
   Ue: () => eq,
   V7: () => ed,
@@ -59,11 +59,11 @@ require.d(exports, {
   uZ: () => em,
   v6: () => eR,
   v9: () => e0,
-  xG: () => tj,
+  xG: () => tM,
   yd: () => Chunk111361.yd,
   yg: () => tR,
   zL: () => ec,
-  zV: () => eM
+  zV: () => ej
 }), require("./415506.js"), require("./49124.js"), require("./388685.js"), require("./290780.js"), require("./539854.js");
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
@@ -128,12 +128,12 @@ function x(e, t) {
   return n
 }
 
-function j(e, t) {
+function M(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let M = {
+let j = {
     PAYMENT_SOURCE_MANAGEMENT: "https://support.apple.com/HT201266",
     BILLING_HISTORY: "https://support.apple.com/HT201266",
     SUBSCRIPTION_MANAGEMENT: "https://support.apple.com/HT202039"
@@ -205,7 +205,7 @@ function V(e) {
       planId: e,
       currency: null != o ? o : "unknown"
     },
-    extra: j(L({}, r), {
+    extra: M(L({}, r), {
       isGift: n
     })
   }), s
@@ -533,15 +533,15 @@ function es(e) {
     activeDiscountInfo: b,
     renewalInvoicePreview: O,
     hasFractionalPremiumWithSub: v
-  } = e, I = R.GP[h], T = tv(F(I.id), I.interval), S = ej(_) || null == _.paymentSourceId && !_.isPurchasedExternally && !(null == (t = p.default.getCurrentUser()) ? true : t.hasFreePremium()), A = null != m && null == _.paymentGateway, N = _.status === C.O0b.UNPAID && null !== _.latestInvoice && (null == (n = _.latestInvoice) ? true : n.status) === C.hUK.OPEN, P = S ? C.O0b.CANCELED : N ? C.O0b.UNPAID : _.status, D = null == (a = null != (i = null == O ? true : O.taxInclusive) ? i : null == (r = _.latestInvoice) ? true : r.taxInclusive) || a, L = R.cb + (g ? ep(_.additionalPlans) : 0), x = A ? D ? w.intl.format(w.t["cd+hqK"], {
+  } = e, I = R.GP[h], T = tv(F(I.id), I.interval), S = eM(_) || null == _.paymentSourceId && !_.isPurchasedExternally && !(null == (t = p.default.getCurrentUser()) ? true : t.hasFreePremium()), A = null != m && null == _.paymentGateway, N = _.status === C.O0b.UNPAID && null !== _.latestInvoice && (null == (n = _.latestInvoice) ? true : n.status) === C.hUK.OPEN, P = S ? C.O0b.CANCELED : N ? C.O0b.UNPAID : _.status, D = null == (a = null != (i = null == O ? true : O.taxInclusive) ? i : null == (r = _.latestInvoice) ? true : r.taxInclusive) || a, L = R.cb + (g ? ep(_.additionalPlans) : 0), x = A ? D ? w.intl.format(w.t["cd+hqK"], {
     price: m
   }) : w.intl.format(w.t.NUkcpK, {
     price: m
-  }) : w.intl.string(w.t.zYx3Y2), j = A ? D ? w.intl.format(w.t.VsKcFB, {
+  }) : w.intl.string(w.t.zYx3Y2), M = A ? D ? w.intl.format(w.t.VsKcFB, {
     price: m
   }) : w.intl.format(w.t.hJ5xER, {
     price: m
-  }) : w.intl.string(w.t["8rSipK"]), M = A ? D ? w.intl.format(w.t["jRy6/P"], {
+  }) : w.intl.string(w.t["8rSipK"]), j = A ? D ? w.intl.format(w.t["jRy6/P"], {
     price: m,
     num: L
   }) : w.intl.format(w.t.tTNE8P, {
@@ -617,7 +617,7 @@ function es(e) {
             pauseDate: _.currentPeriodEnd
           });
         case C.O0b.PAUSED:
-          if (v) return j;
+          if (v) return M;
           return w.intl.format(w.t["6RTdZG"], {
             resumeDate: _.pauseEndsAt
           });
@@ -629,7 +629,7 @@ function es(e) {
             }
           });
         default:
-          return j
+          return M
       }
     case R.Xh.PREMIUM_MONTH_TIER_2:
     case R.Xh.PREMIUM_YEAR_TIER_2:
@@ -669,7 +669,7 @@ function es(e) {
             pauseDate: _.currentPeriodEnd
           });
         case C.O0b.PAUSED:
-          if (v) return M;
+          if (v) return j;
           return w.intl.format(w.t["6RTdZG"], {
             resumeDate: _.pauseEndsAt
           });
@@ -696,7 +696,7 @@ function es(e) {
             percent: null != (d = null == b ? true : b.percentage) ? d : R.M_,
             regularPrice: T,
             numMonths: null != (f = null == b ? true : b.duration) ? f : R.rt
-          }) : M
+          }) : j
       }
     default:
       throw Error("Invalid planId ".concat(h))
@@ -1129,7 +1129,7 @@ function ex(e, t) {
   return (null == r || (0, _.Q0)(r.subscriptionPlanId)) && (n = C.O0b.CANCELED), n
 }
 
-function ej(e) {
+function eM(e) {
   let {
     status: t,
     renewalMutations: n
@@ -1137,7 +1137,7 @@ function ej(e) {
   return t === C.O0b.CANCELED || null != n && (0, _.Q0)(n.planId) && !e.isPurchasedExternally
 }
 
-function eM(e) {
+function ej(e) {
   return e === C.O0b.PAST_DUE || e === C.O0b.ACCOUNT_HOLD || e === C.O0b.BILLING_RETRY
 }
 
@@ -1373,7 +1373,7 @@ function eW(e, t) {
   switch (e) {
     case C.gg$.APPLE_PARTNER:
     case C.gg$.APPLE:
-      return M[t];
+      return j[t];
     case C.gg$.GOOGLE:
       return k[t]
   }
@@ -1381,7 +1381,7 @@ function eW(e, t) {
 }
 
 function eK(e, t) {
-  return (0, S.I5)(e) || eM(null == t ? true : t.status)
+  return (0, S.I5)(e) || ej(null == t ? true : t.status)
 }
 
 function ez(e, t) {
@@ -1403,7 +1403,7 @@ function eX(e, t, n, r) {
   var a, o;
   i()(r.has(t), "Expected planId in group");
   let s = false,
-    l = (null != (o = null == (a = e.renewalMutations) ? true : a.items) ? o : e.items).map(e => r.has(e.planId) ? (s = true, j(L({}, e), {
+    l = (null != (o = null == (a = e.renewalMutations) ? true : a.items) ? o : e.items).map(e => r.has(e.planId) ? (s = true, M(L({}, e), {
       quantity: n,
       planId: t
     })) : e);
@@ -1436,7 +1436,7 @@ function e$(e) {
       let r = g.Z.get(e.planId);
       i()(null != r, "Missing plan");
       let a = g.Z.getForSkuAndInterval(r.skuId, t.interval, t.intervalCount);
-      return i()(null != a, "Missing planForInterval"), j(L({}, e), {
+      return i()(null != a, "Missing planForInterval"), M(L({}, e), {
         planId: a.id
       })
     })
@@ -1647,10 +1647,10 @@ function tL(e) {
 }
 
 function tx(e) {
-  return tj(e.map(e => e.skuId))
+  return tM(e.map(e => e.skuId))
 }
 
-function tj(e) {
+function tM(e) {
   return e.reduce((e, t) => {
     let [n, r] = R.Cx[t], i = 1;
     switch (n) {
@@ -1664,7 +1664,7 @@ function tj(e) {
   }, 0)
 }
 
-function tM(e) {
+function tj(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
     n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {};
   if (e.interval !== R.rV.YEAR) return;
@@ -1710,7 +1710,7 @@ let tU = Object.freeze({
   isNoneSubscription: Chunk301766.Q0,
   getPlanIdFromInvoice: eL,
   getStatusFromInvoice: ex,
-  isBaseSubscriptionCanceled: ej,
+  isBaseSubscriptionCanceled: eM,
   getPremiumGuildIntervalPrice: eU,
   hasAccountCredit: eG,
   getBillingReviewSubheader: eB,
@@ -1724,7 +1724,7 @@ let tU = Object.freeze({
   getPremiumGradientColor: e5,
   getUnactivatedFractionalPremiumHours: tx,
   castPremiumSubscriptionAsSkuId: tI,
-  calculateDiscountPercentageForYearlyPlan: tM,
+  calculateDiscountPercentageForYearlyPlan: tj,
   canUseAnimatedEmojis: e6,
   canUseEmojisEverywhere: e7,
   canUseSoundboardEverywhere: e9,

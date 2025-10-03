@@ -1,7 +1,7 @@
 /** Chunk was on 35755 **/
 /** chunk id: 421591, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => g
 }), require("./388685.js"), require("./482853.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,14 +17,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk314734 = require("./314734.js"),
   Chunk981631 = require("./981631.js"),
   Chunk487303 = require("./487303.js");
-let y = {
+let x = {
     width: Chunk314734.Gy,
     height: Chunk314734.lv
   },
-  x = {
+  y = {
     height: Chunk314734.lv
   },
-  b = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
+  g = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
     let {
       context: n,
       entrypoint: r,
@@ -49,14 +49,14 @@ let y = {
     }, [r]), (0, l.jsx)("div", {
       className: v.drawerSizingWrapper,
       ref: t,
-      style: y,
+      style: x,
       children: (0, l.jsx)("div", {
         className: v.contentWrapper,
         children: (0, l.jsx)(s.Gt, {
           value: d,
-          children: (0, l.jsx)(g, {
+          children: (0, l.jsx)(b, {
             initHistory: u,
-            children: (0, l.jsx)(j, {
+            children: (0, l.jsx)(N, {
               context: n,
               entrypoint: r
             })
@@ -66,7 +66,7 @@ let y = {
     })
   }));
 
-function g(e) {
+function b(e) {
   let {
     initHistory: t,
     children: n
@@ -127,7 +127,7 @@ function g(e) {
   })
 }
 
-function j(e) {
+function N(e) {
   let {
     context: t,
     entrypoint: n
@@ -152,27 +152,27 @@ function j(e) {
     }
   }(a), {
     currentView: h,
-    getMostRecentHistoryItemByType: y,
-    setSlideReady: b
+    getMostRecentHistoryItemByType: x,
+    setSlideReady: g
   } = (0, u.hH)();
   i.useEffect(() => {
-    b(false)
-  }, [null == h ? true : h.type, b]);
-  let g = i.useCallback(() => {
-    b(true)
-  }, [b]);
+    g(false)
+  }, [null == h ? true : h.type, g]);
+  let b = i.useCallback(() => {
+    g(true)
+  }, [g]);
   if (null == h) return null;
-  let j = y(u.gc.LIST),
-    N = y(u.gc.APPLICATION);
+  let N = x(u.gc.LIST),
+    j = x(u.gc.APPLICATION);
   return (0, l.jsxs)(r.MyZ, {
     activeSlide: h.type,
     width: f.Gy,
-    onSlideReady: g,
+    onSlideReady: b,
     children: [(0, l.jsx)(r.Mi4, {
       id: u.gc.HOME,
       children: (0, l.jsx)("div", {
         className: v.slideContent,
-        style: x,
+        style: y,
         children: (0, l.jsx)(p.Z, {
           isScrollCloseToBottom: c,
           setScroller: s,
@@ -186,26 +186,26 @@ function j(e) {
       id: u.gc.LIST,
       children: (0, l.jsx)("div", {
         className: v.slideContent,
-        style: x,
-        children: null != j && (0, l.jsx)(m.Z, {
+        style: y,
+        children: null != N && (0, l.jsx)(m.Z, {
           context: t,
           entrypoint: n,
-          title: j.title,
-          look: j.look,
-          items: j.items,
-          sectionName: j.sectionName,
-          sectionOverallPosition: j.sectionOverallPosition
+          title: N.title,
+          look: N.look,
+          items: N.items,
+          sectionName: N.sectionName,
+          sectionOverallPosition: N.sectionOverallPosition
         })
       })
     }), (0, l.jsx)(r.Mi4, {
       id: u.gc.APPLICATION,
       children: (0, l.jsx)("div", {
         className: v.slideContent,
-        style: x,
-        children: null != N && (0, l.jsx)(d.Z, {
+        style: y,
+        children: null != j && (0, l.jsx)(d.Z, {
           context: t,
-          application: N.application,
-          sectionName: N.sectionName
+          application: j.application,
+          sectionName: j.sectionName
         })
       })
     })]

@@ -2,7 +2,7 @@
 /** chunk id: 230171, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  O: () => M,
+  O: () => j,
   U: () => Chunk967249.U
 }), require("./539854.js"), require("./784620.js"), require("./973216.js"), require("./953529.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -39,7 +39,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk217648 = require("./217648.js");
 
-function M(e) {
+function j(e) {
   var t;
   let {
     app: n,
@@ -58,8 +58,8 @@ function M(e) {
   }), {
     staticBannerSrc: N,
     videoBannerSrc: L,
-    bannerAspectRatio: j
-  } = (0, w.E)(n), M = (0, s.e7)([b.default], () => null != l ? l : b.default.getId(), [l]), {
+    bannerAspectRatio: M
+  } = (0, w.E)(n), j = (0, s.e7)([b.default], () => null != l ? l : b.default.getId(), [l]), {
     analyticsLocations: G
   } = (0, f.ZP)(d.Z.APP_MESSAGE_EMBED), {
     currentChannelId: B,
@@ -84,7 +84,7 @@ function M(e) {
           isStart: null == Z,
           embeddedActivitiesManager: H,
           customId: o,
-          referrerId: M,
+          referrerId: j,
           analyticsLocations: G
         })
       },
@@ -98,11 +98,11 @@ function M(e) {
           botId: v,
           analyticsLocations: G,
           customId: o,
-          referrerId: M
+          referrerId: j
         })
       }
     })) : null != q && e.push(q), e
-  }, [K, W, Z, F, B, n.id, H, o, M, G, I, q, v]), Q = I ? (0, r.jsx)(U, {
+  }, [K, W, Z, F, B, n.id, H, o, j, G, I, q, v]), Q = I ? (0, r.jsx)(U, {
     app: n
   }) : (0, r.jsx)(k, {
     app: n
@@ -112,7 +112,7 @@ function M(e) {
     staticBannerSrc: N,
     videoBannerSrc: L,
     onClickBanner: z,
-    bannerAspectRatio: j,
+    bannerAspectRatio: M,
     iconSrc: S,
     info: Q,
     actions: X,
@@ -120,7 +120,7 @@ function M(e) {
     trackingConfig: {
       id: n.id,
       linkType: a,
-      referrerId: M,
+      referrerId: j,
       activityCustomId: o,
       onView: g,
       guildId: null == (t = y.Z.getChannel(m.channel_id)) ? true : t.guild_id,
@@ -153,12 +153,12 @@ function k(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [null != _ && (0, r.jsx)(l.Text, {
       variant: "text-xs/medium",
-      className: j.description,
+      className: M.description,
       color: "none",
       children: _
     }), null != f && (0, r.jsxs)(l.Text, {
       variant: "text-xs/normal",
-      className: j.tagline,
+      className: M.tagline,
       color: "none",
       lineClamp: 1,
       children: [(0, r.jsx)(l.Jmo, {
@@ -214,16 +214,16 @@ function U(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [n.length > 0 && (0, r.jsx)(l.Text, {
       variant: "text-xs/medium",
-      className: j.description,
+      className: M.description,
       color: "none",
       lineClamp: 1,
       children: n.map((e, t) => (0, r.jsx)("span", {
-        className: j.tag,
+        className: M.tag,
         children: e
       }, t))
     }), (0, r.jsx)(l.Text, {
       variant: "text-xs/normal",
-      className: j.tagline,
+      className: M.tagline,
       color: "none",
       lineClamp: 1,
       children: f

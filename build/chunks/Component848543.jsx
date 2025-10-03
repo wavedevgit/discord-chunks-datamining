@@ -88,7 +88,7 @@ function x(e) {
     L = A || Z || w,
     [R, D] = i.useState(false),
     k = t.getGuildId(),
-    M = (0, y.sR)({
+    M = (0, v.sR)({
       isSoundboardButtonDisabled: L
     }),
     [U, G] = (0, b.cv)(M),
@@ -142,7 +142,7 @@ function x(e) {
             guildId: k,
             channel: t,
             onClose: n,
-            gridNotice: U === s.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && (0, r.jsx)(v.o, {
+            gridNotice: U === s.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && (0, r.jsx)(y.o, {
               onClose: n,
               markAsDismissed: G
             }),

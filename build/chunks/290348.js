@@ -15,9 +15,9 @@ require.d(exports, {
   UE: () => H,
   XZ: () => q,
   Xo: () => es,
-  _T: () => j,
+  _T: () => M,
   d9: () => U,
-  mR: () => M,
+  mR: () => j,
   p9: () => G,
   qs: () => B,
   rU: () => J
@@ -112,7 +112,7 @@ function x(e, t) {
   return r.useMemo(() => i(n), [n, i])
 }
 
-function j(e) {
+function M(e) {
   let t = x(e, e => {
     var t;
     return null != (t = null == e ? true : e.name) ? t : ""
@@ -120,7 +120,7 @@ function j(e) {
   return L(e, "name", t)
 }
 
-function M(e) {
+function j(e) {
   let t = x(e, e => {
     var t;
     return null == e || null == (t = e.subscription_plans[0]) ? true : t.price

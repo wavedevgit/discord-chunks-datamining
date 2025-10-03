@@ -84,8 +84,8 @@ function L() {
   return "+" === exports ? t = "plus" : 0 === exports.length && (t = "`"), "shift+".concat(exports)
 }
 let x = "1001",
-  j = 10,
-  M = function(e) {
+  M = 10,
+  j = function(e) {
     let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
     return {
       id: x,
@@ -138,13 +138,13 @@ let B = () => {
     let e = L();
     "shift" === module && (U("Default overlay keybind is only shift", module, null), e = "shift+`");
     let t = G(module);
-    if (null == exports) return M([], false);
-    if (k(exports)) return M(exports, true);
+    if (null == exports) return j([], false);
+    if (k(exports)) return j(exports, true);
     let n = (0, Chunk13140.UR)("shift"),
       r = (0, Chunk378799.T_)("`");
     return 0 === exports.length ? U("Default overlay keybind combo is empty", module, exports) : null == require ? U("Unable to get shift code", module, exports, {
       shiftCode: require
-    }) : null == r && U("Unable to get backtick code", module, exports), M(exports, false)
+    }) : null == r && U("Unable to get backtick code", module, exports), j(exports, false)
   },
   Z = {},
   F = {},
@@ -204,9 +204,9 @@ function $(e, t) {
     } finally {
       setTimeout(() => {
         q.includes(e) && q.splice(q.indexOf(e), 1)
-      }, j)
+      }, M)
     }
-  }, j)
+  }, M)
 }
 
 function ee() {

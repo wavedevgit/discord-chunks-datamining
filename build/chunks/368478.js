@@ -1,7 +1,7 @@
-/** Chunk was on 9665 **/
+/** Chunk was on 50118 **/
 /** chunk id: 368478, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  J: () => y,
+  J: () => C,
   Z: () => b
 }), require("./388685.js"), require("./997841.js");
 var Chunk647438 = require("./647438.js"),
@@ -25,7 +25,7 @@ function b(e) {
     primaryEntryPointCommand: n,
     application: a,
     showAppLauncherPopup: s = false
-  } = e, [p, b] = r.useState(false), y = (0, i.e7)([l.ZP], () => l.ZP.getCurrentEmbeddedActivity()), C = s ? g.t.cpT0Cg : g.t["0hKkS0"], _ = r.useMemo(() => null != n ? (0, d.XZ)(n.displayName) : g.intl.string(g.t["3xjX0d"]), [n]), v = true !== a.flags && (0, f.yE)(a.flags, m.udG.EMBEDDED), x = null != y && y.applicationId === a.id && (0, o.p)(y.location) === t.channel.id, {
+  } = e, [p, b] = i.useState(false), C = (0, r.e7)([l.ZP], () => l.ZP.getCurrentEmbeddedActivity()), y = s ? g.t.cpT0Cg : g.t["0hKkS0"], _ = i.useMemo(() => null != n ? (0, d.XZ)(n.displayName) : g.intl.string(g.t["3xjX0d"]), [n]), v = true !== a.flags && (0, f.yE)(a.flags, m.udG.EMBEDDED), x = null != C && C.applicationId === a.id && (0, o.p)(C.location) === t.channel.id, {
     analyticsLocations: O
   } = (0, u.ZP)(c.Z.APP_DMS_ENTRY_POINT_COMMAND_BUTTON), j = null != t.channel.recipients ? t.channel.recipients[0] : true;
   return {
@@ -34,21 +34,21 @@ function b(e) {
       context: t,
       applicationId: a.id,
       botUserId: j
-    }) && v ? x ? g.intl.string(g.t["Hi1/aW"]) : null != _ ? _ : g.intl.string(g.t.zKX8Nj) : g.intl.string(C),
+    }) && v ? x ? g.intl.string(g.t["Hi1/aW"]) : null != _ ? _ : g.intl.string(g.t.zKX8Nj) : g.intl.string(y),
     hasActiveMatchingEmbeddedActivity: x,
     isEmbeddedApp: v,
-    currentEmbeddedActivity: y,
+    currentEmbeddedActivity: C,
     channelRecipientUserId: j,
     setIsExecutingLaunchInteraction: b,
     analyticsLocations: O
   }
 }
 
-function y(e) {
+function C(e) {
   let {
     context: t,
     application: n,
-    isEmbeddedApp: i,
+    isEmbeddedApp: r,
     hasActiveMatchingEmbeddedActivity: l,
     currentEmbeddedActivity: o,
     onOpenButtonPress: c,
@@ -59,7 +59,7 @@ function y(e) {
     context: t,
     applicationId: n.id,
     botUserId: u
-  }), g = r.useCallback(() => {
+  }), g = i.useCallback(() => {
     l && null != o ? (0, s.Z)().leaveActivity({
       location: o.location,
       applicationId: o.applicationId
@@ -73,5 +73,5 @@ function y(e) {
       commandOrigin: p.bB.APP_DMS_ENTRY_POINT_COMMAND_BUTTON
     }))
   }, [l, t.channel.id, n.id, o, f, d]);
-  return m && i ? g : c
+  return m && r ? g : c
 }

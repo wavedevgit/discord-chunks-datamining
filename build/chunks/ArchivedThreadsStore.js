@@ -64,14 +64,14 @@ function L(e) {
     hasMoreThreads: e.hasMore,
     filterTagIds: Array.from(e.tagFilter),
     sortOrder: e.sortOrder
-  }), j(), I = e.hasMore, N = e.offset + y, O = false, v = false
+  }), M(), I = e.hasMore, N = e.offset + y, O = false, v = false
 }
 
 function x(e) {
-  return (null == S || null == e.channelId || S === e.channelId) && j()
+  return (null == S || null == e.channelId || S === e.channelId) && M()
 }
 
-function j() {
+function M() {
   if (null == S) returnfalse;
   let e = !I,
     t = Chunk592125.Z.getChannel(C[C.length - 1]),
@@ -94,7 +94,7 @@ function j() {
   }).sort((e, t) => g.default.compare(w(e, A), w(t, A))).map(e => e.id).reverse().value()
 }
 
-function M(e) {
+function j(e) {
   if (e.channelId !== S || e.sortOrder !== A || !(0, c.O)(e.tagFilter, r) || e.tagSetting !== R) returnfalse;
   O = false, T = true, v = false
 }
@@ -151,6 +151,6 @@ let V = new F(Chunk570140.Z, {
   CHANNEL_DELETE: k,
   LOAD_ARCHIVED_THREADS: D,
   LOAD_ARCHIVED_THREADS_SUCCESS: L,
-  LOAD_ARCHIVED_THREADS_FAIL: M,
+  LOAD_ARCHIVED_THREADS_FAIL: j,
   RESORT_THREADS: x
 })

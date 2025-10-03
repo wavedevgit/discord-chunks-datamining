@@ -28,45 +28,45 @@ function g(e) {
     displayProfile: g,
     guildId: b,
     subsection: y,
-    onClose: O
+    onClose: I
   } = e, {
-    trackUserProfileAction: I
-  } = (0, c.KZ)(), Z = (0, i.e7)([d.Z], () => {
+    trackUserProfileAction: Z
+  } = (0, c.KZ)(), O = (0, i.e7)([d.Z], () => {
     var e;
     return null == (e = d.Z.getUserProfile(n.id)) ? true : e.application
-  }), P = (0, i.e7)([s.Z, a.Z], () => s.Z.getChannel(a.Z.getChannelId()));
+  }), N = (0, i.e7)([s.Z, a.Z], () => s.Z.getChannel(a.Z.getChannelId()));
   return (0, l.jsxs)(r.zJl, {
     fade: true,
     className: v.scroller,
     children: [(null == g ? true : g.bio) != null && (null == g ? true : g.bio) !== "" && (0, l.jsx)(m.Z, {
       userBio: g.bio,
       setLineClamp: false
-    }), (null == Z ? true : Z.popularApplicationCommandIds) != null && null != P && (0, l.jsx)(u.Z, {
-      applicationId: Z.id,
-      commandIds: Z.popularApplicationCommandIds,
-      channel: P,
+    }), (null == O ? true : O.popularApplicationCommandIds) != null && null != N && (0, l.jsx)(u.Z, {
+      applicationId: O.id,
+      commandIds: O.popularApplicationCommandIds,
+      channel: N,
       guildId: b,
-      onClick: O
+      onClick: I
     }), (null == g ? true : g.guildId) != null && (0, l.jsx)(h.Z, {
       user: n,
       currentUser: t,
       guildId: g.guildId,
-      scrollIntoView: y === j.Tb.ROLES
+      scrollIntoView: y === x.Tb.ROLES
     }), (0, l.jsx)(f.Z, {
-      heading: x.intl.string(x.t["A//N4u"]),
+      heading: j.intl.string(j.t["A//N4u"]),
       children: (0, l.jsx)(p.Z, {
         userId: n.id,
         guildId: b,
-        tooltipDelay: j.vB
+        tooltipDelay: x.vB
       })
     }), (0, l.jsx)(f.Z, {
-      heading: x.intl.string(x.t["mQKv+v"]),
-      scrollIntoView: y === j.Tb.NOTE,
+      heading: j.intl.string(j.t["mQKv+v"]),
+      scrollIntoView: y === x.Tb.NOTE,
       children: (0, l.jsx)(o.Z, {
         userId: n.id,
         className: v.note,
-        autoFocus: y === j.Tb.NOTE,
-        onUpdate: () => I({
+        autoFocus: y === x.Tb.NOTE,
+        onUpdate: () => Z({
           action: "SET_NOTE"
         })
       })

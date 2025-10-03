@@ -71,14 +71,14 @@ let m = "x-science-test",
   D = 0,
   L = Number.MAX_SAFE_INTEGER,
   x = 0,
-  j = 0,
-  M = null,
+  M = 0,
+  j = null,
   k = false,
   U = null,
   G = null;
 
 function B() {
-  C = 0, N = 0, R = 0, D = 0, L = Number.MAX_SAFE_INTEGER, x = 0, j = 0, w = Date.now(), P = A
+  C = 0, N = 0, R = 0, D = 0, L = Number.MAX_SAFE_INTEGER, x = 0, M = 0, w = Date.now(), P = A
 }
 
 function Z(e) {
@@ -137,7 +137,7 @@ let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
       let e = Y.slice();
       Y = [], D = Z(D);
       let t = e.length;
-      L = Math.min(L, t), x = Math.max(x, t), j = Z(j, t);
+      L = Math.min(L, t), x = Math.max(x, t), M = Z(M, t);
       let n = ee(e);
       return n.then(() => {
         e.forEach(e => {
@@ -195,7 +195,7 @@ let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
           event_queue_batch_count: D,
           event_queue_batch_min_size: L === Number.MAX_SAFE_INTEGER ? 0 : L,
           event_queue_batch_max_size: x,
-          event_queue_batch_avg_size: D > 0 ? j / D : 0,
+          event_queue_batch_avg_size: D > 0 ? M / D : 0,
           science_request_id: G,
           science_response: U,
           launch_signature: q()
@@ -205,32 +205,32 @@ let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
     }
 
     function en() {
-      if (null == M) returnfalse;
-      switch (M.type) {
+      if (null == j) returnfalse;
+      switch (j.type) {
         case "timeout":
-          clearTimeout(M.id);
+          clearTimeout(j.id);
           break;
         case "interval":
-          clearInterval(M.id);
+          clearInterval(j.id);
           break;
         default:
-          M.type
+          j.type
       }
-      return M = null, true
+      return j = null, true
     }
 
     function er() {
-      if (null != M) return;
+      if (null != j) return;
       let e = () => {
         let t = .1 * v;
-        M = {
+        j = {
           type: "timeout",
           id: setTimeout(() => {
             et(), e()
           }, Math.max(v + (Math.floor(Math.random() * t * 2) - t), I))
         }
       };
-      M = {
+      j = {
         type: "timeout",
         id: setTimeout(() => {
           et(), e()

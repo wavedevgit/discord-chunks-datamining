@@ -137,7 +137,7 @@ function es(e) {
 }
 
 function el(e) {
-  let t = M.Z.getVoiceStateForUser(e);
+  let t = j.Z.getVoiceStateForUser(e);
   return (null == t ? true : t.channelId) != null && D.Z.canWithPartialContext(U.Plq.VIEW_CHANNEL, {
     channelId: t.channelId
   }) ? t.channelId : null
@@ -162,7 +162,7 @@ function ed(e) {
 }
 
 function ef(e, t, n) {
-  let r, i = j.default.getCurrentUser(),
+  let r, i = M.default.getCurrentUser(),
     o = O.Z.getUserAffinitiesMap(),
     s = (0, I.C)(t, o, "NowPlayingViewStore - partiedMembers"),
     d = s.map(e => e.id),
@@ -193,11 +193,11 @@ function ef(e, t, n) {
           activity: r,
           userId: e.id,
           application: d,
-          channelId: null == (A = M.Z.getVoiceStateForUser(e.id)) ? true : A.channelId,
+          channelId: null == (A = j.Z.getVoiceStateForUser(e.id)) ? true : A.channelId,
           currentUser: i,
           isActivitiesEnabledForCurrentPlatform: t,
           ChannelStore: N.Z,
-          VoiceStateStore: M.Z,
+          VoiceStateStore: j.Z,
           PermissionStore: D.Z,
           GuildStore: w.Z
         }) !== c.Fw.CAN_JOIN) continue
@@ -207,7 +207,7 @@ function ef(e, t, n) {
     (null == f || f.id !== d.id) && (r = null);
     let O = [];
     O = null != r && null != r.party && null != r.party.id ? Array.from(null != (R = P.Z.getParty(r.party.id)) ? R : []).reduce((e, t) => {
-      let n = j.default.getUser(t);
+      let n = M.default.getUser(t);
       return null != n && e.push(n), e
     }, []) : s.filter(e => {
       let t = en(e.id),
@@ -232,7 +232,7 @@ function ef(e, t, n) {
       o = w.Z.getGuild(i);
     if (Z.has(i) && B.has(t) || null == n || null == o || n.id === o.afkChannelId) null == n && (r = null, U = true);
     else {
-      let e = M.Z.getVoiceStatesForChannel(n.id),
+      let e = j.Z.getVoiceStatesForChannel(n.id),
         l = (0, v.HG)("NowPlayingViewStore - voiceMembers"),
         c = ed;
       null != l && (c = e => {
@@ -244,7 +244,7 @@ function ef(e, t, n) {
         let {
           userId: t
         } = e;
-        return j.default.getUser(t)
+        return M.default.getUser(t)
       }).filter(k.lm).orderBy([c], ["desc"]).value();
       u.filter(e => !d.includes(e.id)).forEach(e => s.push(e)), U ? Z.has(i) || (r = null) : (r = o, U = true), Z.add(i), B.add(t), G.push({
         channel: n,
@@ -340,7 +340,7 @@ function eO() {
 function ev() {
   if (!eO()) returnfalse;
   $.clear(), X = eb(q = eE(ep(e_(ec(Array.from(et()).reduce((e, t) => {
-    let n = j.default.getUser(t);
+    let n = M.default.getUser(t);
     return null == n || n.bot || e.push(n), e
   }, [])))))), ey(), z = true
 }

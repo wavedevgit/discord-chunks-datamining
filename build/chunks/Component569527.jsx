@@ -38,8 +38,8 @@ function T(e) {
     onScroll: T
   } = e, A = (0, o.e7)([m.default], () => m.default.isAuthenticated()), L = a.useRef(null), R = (0, i.TH)(), Z = a.useRef(null), {
     query: w,
-    page: D,
-    categoryId: k
+    page: k,
+    categoryId: D
   } = a.useMemo(() => {
     var e, t;
     let n = new URLSearchParams(R.search),
@@ -48,18 +48,18 @@ function T(e) {
     return {
       query: null != (e = n.get("q")) ? e : "",
       page: a,
-      categoryId: null != (t = Number(n.get("category_id"))) ? t : P.GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID
+      categoryId: null != (t = Number(n.get("category_id"))) ? t : O.GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID
     }
-  }, [R.search]), M = (0, o.e7)([f.Z], () => f.Z.getCategories()), G = a.useMemo(() => null == M ? true : M.find(e => e.id === k), [M, k]), B = a.useCallback(e => {
+  }, [R.search]), M = (0, o.e7)([f.Z], () => f.Z.getCategories()), G = a.useMemo(() => null == M ? true : M.find(e => e.id === D), [M, D]), B = a.useCallback(e => {
     (0, v.zZ)(E.rMx.APP_DIRECTORY_SEARCHED, {
       search_term: w,
       num_results: e,
       current_page: y.m_.SEARCH,
-      result_page: D,
+      result_page: k,
       category: null == G ? true : G.name,
       category_id: null == G ? true : G.id
     })
-  }, [w, D, null == G ? true : G.name, null == G ? true : G.id]);
+  }, [w, k, null == G ? true : G.name, null == G ? true : G.id]);
   a.useEffect(() => {
     var e;
     null == (e = L.current) || e.scrollTo({
@@ -72,30 +72,30 @@ function T(e) {
     })), h.yC({
       query: w,
       options: {
-        categoryId: k,
-        page: D,
-        pageSize: P.PAGE_SIZE,
+        categoryId: D,
+        page: k,
+        pageSize: O.PAGE_SIZE,
         source: s.F.APP_DIRECTORY
       },
       onSuccessCallback: B
     })
-  }, [k, D, w, B]);
+  }, [D, k, w, B]);
   let {
     fetchState: z,
     searchResults: U
   } = (0, o.cj)([b.Z], () => ({
     fetchState: b.Z.getFetchState({
       query: w,
-      categoryId: k,
-      page: D,
-      pageSize: P.PAGE_SIZE,
+      categoryId: D,
+      page: k,
+      pageSize: O.PAGE_SIZE,
       source: s.F.APP_DIRECTORY
     }),
     searchResults: b.Z.getSearchResults({
       query: w,
-      categoryId: k,
-      page: D,
-      pageSize: P.PAGE_SIZE,
+      categoryId: D,
+      page: k,
+      pageSize: O.PAGE_SIZE,
       source: s.F.APP_DIRECTORY
     })
   })), F = (0, o.cj)([b.Z], () => {
@@ -126,10 +126,10 @@ function T(e) {
   }), V = (0, d.Z)(U), H = a.useMemo(() => z === _.M.FETCHING ? V : U, [z, V, U]), Y = a.useCallback(e => {
     (0, I.pR)({
       query: w,
-      categoryId: k,
+      categoryId: D,
       page: e
     })
-  }, [k, w]), W = a.useCallback(e => {
+  }, [D, w]), W = a.useCallback(e => {
     (0, v.zZ)(E.rMx.APP_DIRECTORY_CATEGORY_CLICKED, {
       category: e.name,
       category_id: e.id,
@@ -161,15 +161,15 @@ function T(e) {
             className: N.contentContainer,
             children: [(0, r.jsx)("div", {
               className: N.topFilterContainer,
-              children: (0, r.jsx)(O.V, {
+              children: (0, r.jsx)(S.V, {
                 countsByCategory: F,
-                selectedCategoryId: k,
+                selectedCategoryId: D,
                 onSelectCategory: W
               })
             }), (0, r.jsx)(C.Z, {
               loading: z === _.M.FETCHING,
-              children: z === _.M.FETCHED && (null == H || (null == H ? true : H.results.length) === 0) ? (0, r.jsx)(S.Z, {
-                selectedCategoryId: null != k ? k : q.id,
+              children: z === _.M.FETCHED && (null == H || (null == H ? true : H.results.length) === 0) ? (0, r.jsx)(P.Z, {
+                selectedCategoryId: null != D ? D : q.id,
                 searchAllCategories: () => W(q)
               }) : (0, r.jsx)("div", {
                 className: N.content,
@@ -187,11 +187,11 @@ function T(e) {
               })
             }), (0, r.jsx)(c.DsT, {
               className: N.paginationInput,
-              totalCount: Math.min((null != (t = null == H ? true : H.totalPages) ? t : 0) * P.PAGE_SIZE, P.MAX_PAGES * P.PAGE_SIZE),
-              pageSize: P.PAGE_SIZE,
+              totalCount: Math.min((null != (t = null == H ? true : H.totalPages) ? t : 0) * O.PAGE_SIZE, O.MAX_PAGES * O.PAGE_SIZE),
+              pageSize: O.PAGE_SIZE,
               disablePaginationGap: true,
               hideMaxPage: true,
-              currentPage: D,
+              currentPage: k,
               onPageChange: Y
             })]
           })
@@ -201,9 +201,9 @@ function T(e) {
       className: N.sideFilterContainer,
       children: (0, r.jsx)("div", {
         className: N.sideFilterContent,
-        children: (0, r.jsx)(O.Z, {
+        children: (0, r.jsx)(S.Z, {
           countsByCategory: F,
-          selectedCategoryId: k,
+          selectedCategoryId: D,
           onSelectCategory: W
         })
       })

@@ -129,7 +129,7 @@ function ex(e) {
   K.Z.captureException(e), new p.Z("SystemMessage").error("", e)
 }
 
-function ej(e) {
+function eM(e) {
   let {
     message: t,
     compact: n,
@@ -137,7 +137,7 @@ function ej(e) {
   } = e, {
     id: s,
     author: l
-  } = t, u = M.default.getId(), d = t.getChannelId(), f = (0, a.e7)([k.Z], () => k.Z.isCallActive(d, s), [d, s]), _ = (0, a.e7)([H.Z], () => H.Z.getVoiceState(eC.ME, u)), p = !f && null != t.call && !t.call.participants.includes(u), h = f && (null == _ || _.channelId !== d), m = i.useCallback(() => c.default.selectVoiceChannel(d), [d]), g = (0, ee.l)({
+  } = t, u = j.default.getId(), d = t.getChannelId(), f = (0, a.e7)([k.Z], () => k.Z.isCallActive(d, s), [d, s]), _ = (0, a.e7)([H.Z], () => H.Z.getVoiceState(eC.ME, u)), p = !f && null != t.call && !t.call.participants.includes(u), h = f && (null == _ || _.channelId !== d), m = i.useCallback(() => c.default.selectVoiceChannel(d), [d]), g = (0, ee.l)({
     user: l,
     channelId: d,
     guildId: o.guild_id,
@@ -154,7 +154,7 @@ function ej(e) {
   })
 }
 
-function eM(e) {
+function ej(e) {
   let {
     message: t,
     compact: n,
@@ -362,7 +362,7 @@ function eF(e) {
       message: t,
       compact: n,
       usernameHook: s
-    }), (0, r.jsx)(j.f, {
+    }), (0, r.jsx)(M.f, {
       channel: i,
       message: t
     })]
@@ -784,8 +784,8 @@ let tn = Object.freeze({
   [Chunk981631.uaV.CONTEXT_MENU_COMMAND]: true,
   [Chunk981631.uaV.RECIPIENT_ADD]: eG,
   [Chunk981631.uaV.RECIPIENT_REMOVE]: eZ,
-  [Chunk981631.uaV.CALL]: ej,
-  [Chunk981631.uaV.CHANNEL_NAME_CHANGE]: eM,
+  [Chunk981631.uaV.CALL]: eM,
+  [Chunk981631.uaV.CHANNEL_NAME_CHANGE]: ej,
   [Chunk981631.uaV.CHANNEL_ICON_CHANGE]: ek,
   [Chunk981631.uaV.CHANNEL_PINNED_MESSAGE]: eU,
   [Chunk981631.uaV.USER_JOIN]: eF,

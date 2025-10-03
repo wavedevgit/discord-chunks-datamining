@@ -21,8 +21,8 @@ let d = Chunk647438.forwardRef(function(e, t) {
     icon: f,
     iconForeground: m,
     innerClassName: b,
-    className: v,
-    redGlow: O,
+    className: O,
+    redGlow: v,
     orangeGlow: y,
     tooltipClassName: h,
     onMouseEnter: g,
@@ -96,14 +96,14 @@ let d = Chunk647438.forwardRef(function(e, t) {
         size: o.zx.Sizes.NONE,
         disabled: p,
         innerClassName: b,
-        wrapperClassName: a()(u.button, v),
-        className: a()(u.button, v, {
-          [u.redGlow]: O,
+        wrapperClassName: a()(u.button, O),
+        className: a()(u.button, O, {
+          [u.redGlow]: v,
           [u.orangeGlow]: y,
           [u.disabled]: p,
           [u.enabled]: !p,
           [u.plated]: T,
-          [u.plateMuted]: O && T
+          [u.plateMuted]: v && T
         }),
         onClick: e => {
           null != f && f(), null != d && d(e)

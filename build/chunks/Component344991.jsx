@@ -88,13 +88,13 @@ function I(e) {
     type: b,
     maxValues: v,
     disabled: I
-  } = t, T = (0, p.Wo)(t), [S, A] = i.useState(false), [C, N] = i.useState(false), [R, P] = i.useState(new Map(null == g ? true : g.map(e => [e.value, e]))), [w, D] = i.useState(new Set(R.keys())), [L, x] = i.useState(() => (null != g ? g : []).map(e => e.value)), [j, M] = i.useState(0);
+  } = t, T = (0, p.Wo)(t), [S, A] = i.useState(false), [C, N] = i.useState(false), [R, P] = i.useState(new Map(null == g ? true : g.map(e => [e.value, e]))), [w, D] = i.useState(new Set(R.keys())), [L, x] = i.useState(() => (null != g ? g : []).map(e => e.value)), [M, j] = i.useState(0);
   i.useEffect(() => {
     let e = (null != g ? g : []).map(e => e.value);
     if (e.every(e => L.includes(e)) && L.every(t => e.includes(t))) return;
     x(e);
     let t = new Map(null == g ? true : g.map(e => [e.value, e]));
-    P(t), D(new Set(t.keys())), M(e => e + 1)
+    P(t), D(new Set(t.keys())), j(e => e + 1)
   }, [g, L]);
   let k = (0, f.CJ)();
   l()(null != k, "SearchableSelectActionComponent must be rendered inside a ComponentStateContext");
@@ -168,11 +168,11 @@ function I(e) {
           [h.hidden]: !Q
         }),
         closeOnSelect: false
-      }, J), j) : (0, r.jsx)(c.VcW, E({
+      }, J), M) : (0, r.jsx)(c.VcW, E({
         value: [...R.values()][0],
         onChange: z,
         clearable: true
-      }, J), j)
+      }, J), M)
     }), null == F || V ? null : (0, r.jsx)(d.st, y(E({}, (0, d.c4)(F)), {
       className: m.error
     }))]

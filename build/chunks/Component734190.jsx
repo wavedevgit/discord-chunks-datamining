@@ -135,17 +135,17 @@ function L(e) {
     thread: t
   } = e, n = i.useMemo(() => {
     var e;
-    return null != (e = (0, f.KS)(t)) ? e : c.or_
-  }, [t]), l = (0, f.bT)(t);
+    return null != (e = (0, h.KS)(t)) ? e : c.or_
+  }, [t]), l = (0, h.bT)(t);
   return (0, r.jsx)(c.ua7, {
     text: l,
     delay: 500,
     children: e => (0, r.jsx)("div", R(A({}, e), {
       role: "img",
       "aria-label": "".concat(l, " icon"),
-      className: Z.iconContainer,
+      className: w.iconContainer,
       children: (0, r.jsx)(n, {
-        className: Z.icon,
+        className: w.icon,
         color: "currentColor"
       })
     }))
@@ -155,10 +155,10 @@ let M = Chunk647438.memo(function(e) {
   let {
     thread: t,
     isSelectedChannel: l,
-    isSelectedVoice: f,
+    isSelectedVoice: h,
     isLast: T,
     withGuildIcon: M
-  } = e, k = (0, s.e7)([v.ZP], () => v.ZP.getVoiceStatesForChannel(t), [t]), U = (0, s.e7)([y.Z], () => y.Z.hasVideo(t.id)), {
+  } = e, k = (0, s.e7)([v.ZP], () => v.ZP.getVoiceStatesForChannel(t), [t]), U = (0, s.e7)([O.Z], () => O.Z.hasVideo(t.id)), {
     unread: G,
     mentionCount: B,
     isMentionLowImportance: F
@@ -168,8 +168,8 @@ let M = Chunk647438.memo(function(e) {
     isMentionLowImportance: _.ZP.getIsMentionLowImportance(t.id)
   })), V = (0, s.e7)([g.Z], () => g.Z.isMuted(t.id)), H = (0, j.p)({
     location: "GuildSidebarThreadListEntry"
-  }), z = (0, s.e7)([O.default], () => O.default.getUser(t.ownerId)), W = i.useCallback(e => {
-    (0, m.ok)(t, !e.shiftKey, I.on.CHANNEL_LIST)
+  }), z = (0, s.e7)([y.default], () => y.default.getUser(t.ownerId)), W = i.useCallback(e => {
+    (0, m.ok)(t, !e.shiftKey, P.on.CHANNEL_LIST)
   }, [t]), K = i.useCallback(() => {
     u.Z.preload(t.guild_id, t.id)
   }, [t.guild_id, t.id]), Y = i.useCallback(e => {
@@ -208,8 +208,8 @@ let M = Chunk647438.memo(function(e) {
   });
   return (0, r.jsxs)("li", {
     role: Q,
-    className: o()(w.containerDefault, {
-      [w.selected]: l
+    className: o()(Z.containerDefault, {
+      [Z.selected]: l
     }),
     children: [(0, r.jsx)(D, {
       withGuildIcon: M
@@ -228,31 +228,31 @@ let M = Chunk647438.memo(function(e) {
         right: 4
       },
       children: (0, r.jsxs)("div", {
-        className: o()(w.iconVisibility, Z.wrapper, Z.typeThread, {
-          [Z.modeSelected]: l,
-          [Z.modeMuted]: !l && V,
-          [Z.modeUnreadImportant]: !V && !l && G,
-          [Z.withGuildIcon]: M,
-          [Z.threadsInChannelListQoLExperiment]: H.enabled,
-          [Z.withThreadAvatar]: "icon-with-avatar" === H.variant,
-          [Z.withThreadIconInBubble]: "icon-in-bubble" === H.variant
+        className: o()(Z.iconVisibility, w.wrapper, w.typeThread, {
+          [w.modeSelected]: l,
+          [w.modeMuted]: !l && V,
+          [w.modeUnreadImportant]: !V && !l && G,
+          [w.withGuildIcon]: M,
+          [w.threadsInChannelListQoLExperiment]: H.enabled,
+          [w.withThreadAvatar]: "icon-with-avatar" === H.variant,
+          [w.withThreadIconInBubble]: "icon-in-bubble" === H.variant
         }),
         onMouseDown: K,
         onContextMenu: Y,
         children: [!G || V || l ? null : (0, r.jsx)("div", {
-          className: o()(Z.unread, Z.unreadImportant)
+          className: o()(w.unread, w.unreadImportant)
         }), (0, r.jsx)(c.P3F, R(A({}, J), {
           innerRef: $,
-          className: Z.link,
+          className: w.link,
           onClick: W,
           "aria-label": ee,
           focusProps: {
             enabled: false
           },
           children: (0, r.jsxs)("div", {
-            className: o()(Z.linkTop, Z.__invalid_threadMainContent),
+            className: o()(w.linkTop, w.__invalid_threadMainContent),
             children: ["icon-with-avatar" === H.variant ? (0, r.jsxs)("div", {
-              className: Z.threadIconWithAvatar,
+              className: w.threadIconWithAvatar,
               children: [(0, r.jsx)(L, {
                 thread: t
               }), null == z ? null : (0, r.jsx)(p.Z, {
@@ -261,12 +261,12 @@ let M = Chunk647438.memo(function(e) {
               })]
             }) : null, "icon-in-bubble" === H.variant ? (0, r.jsx)(L, {
               thread: t
-            }) : null, (0, r.jsx)(h.Z, {
-              className: Z.name,
+            }) : null, (0, r.jsx)(f.Z, {
+              className: w.name,
               "aria-hidden": true,
               children: t.name
             }), (0, r.jsxs)("div", {
-              className: Z.children,
+              className: w.children,
               children: [q > 0 && t.userLimit > 0 ? (0, r.jsx)(C.Z, {
                 userCount: q,
                 video: U,
@@ -281,10 +281,10 @@ let M = Chunk647438.memo(function(e) {
       })
     }), (0, r.jsx)(S.Z, {
       channel: t,
-      collapsed: !f,
+      collapsed: !h,
       collapsedMax: 6,
       voiceStates: k,
-      location: P.Sbl.GUILD_CHANNEL_LIST
+      location: I.Sbl.GUILD_CHANNEL_LIST
     })]
   })
 })

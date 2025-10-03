@@ -1,7 +1,7 @@
 /** Chunk was on 31553 **/
 /** chunk id: 116906, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => Z
+  Z: () => O
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -26,15 +26,15 @@ var Chunk442837 = require("./442837.js"),
   Chunk7994 = require("./7994.js"),
   Chunk878449 = require("./878449.js");
 
-function Z(e) {
+function O(e) {
   let {
     user: n,
     currentUser: t,
-    guildId: Z,
-    subsection: P,
-    onClose: N
+    guildId: O,
+    subsection: N,
+    onClose: T
   } = e, {
-    voiceActivityStatusEnabled: T
+    voiceActivityStatusEnabled: P
   } = (0, o.U)({
     location: "UserProfileModalActivity"
   }), A = (0, u.b)({
@@ -44,42 +44,42 @@ function Z(e) {
     recent: S,
     stream: C
   } = (0, m.Z)(n.id), {
-    voiceChannel: w,
-    voiceActivity: _
+    voiceChannel: _,
+    voiceActivity: w
   } = (0, p.Z)({
     userId: n.id,
-    guildId: Z
+    guildId: O
   }), D = (0, i.e7)([s.Z], () => s.Z.isFetchingUserOutbox(n.id)), R = n.id === t.id, L = (0, i.e7)([c.Z, a.Z], () => {
     let e = R ? c.Z.getStatus() : a.Z.getStatus(n.id);
     return e === r.Skl.OFFLINE || e === r.Skl.INVISIBLE
-  }), M = E.length > 0 || null != C, U = T && null == C && null == _ && null != w, k = !L && (M || U), B = S.length > 0;
+  }), M = E.length > 0 || null != C, U = P && null == C && null == w && null != _, k = !L && (M || U), B = S.length > 0;
   return k || B || !D ? (0, l.jsxs)(r.zJl, {
-    className: O.scroller,
+    className: I.scroller,
     fade: true,
     children: [k ? (0, l.jsx)(f.Z, {
       "aria-label": y.intl.string(y.t.J6STd3),
       children: (0, l.jsxs)("ul", {
-        className: O.activityList,
+        className: I.activityList,
         children: [!A && U && (0, l.jsx)("li", {
           children: (0, l.jsx)(v.Z, {
             user: n,
             currentUser: t,
-            voiceChannel: w,
-            onClose: N
+            voiceChannel: _,
+            onClose: T
           })
         }), null != C && (0, l.jsx)("li", {
-          children: (0, l.jsx)(x.Z, {
+          children: (0, l.jsx)(j.Z, {
             user: n,
             currentUser: t,
             stream: C,
-            onClose: N
+            onClose: T
           })
         }), E.map((e, i) => (0, l.jsx)("li", {
           children: (0, l.jsx)(h.Z, {
             user: n,
             currentUser: t,
             activity: e,
-            onClose: N
+            onClose: T
           })
         }, "live-".concat(i)))]
       })
@@ -91,20 +91,20 @@ function Z(e) {
           children: e
         }, n)
       }) : true,
-      scrollIntoView: P === g.Tb.RECENT_ACTIVITY,
+      scrollIntoView: N === g.Tb.RECENT_ACTIVITY,
       children: (0, l.jsx)("ul", {
-        className: O.activityList,
+        className: I.activityList,
         children: S.map(e => (0, l.jsx)("li", {
-          children: (0, l.jsx)(j.Z, {
+          children: (0, l.jsx)(x.Z, {
             user: n,
             entry: e,
-            onClose: N
+            onClose: T
           })
         }, e.id))
       })
     }) : null]
   }) : (0, l.jsx)("div", {
-    className: I.empty,
+    className: Z.empty,
     children: (0, l.jsx)(r.$jN, {})
   })
 }

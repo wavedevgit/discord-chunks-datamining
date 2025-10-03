@@ -1,12 +1,13 @@
 /** Chunk was on 91053 **/
 /** chunk id: 14338, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => x
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
+  Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk239091 = require("./239091.js"),
   Chunk586902 = require("./586902.js"),
@@ -18,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk768581 = require("./768581.js"),
   Chunk374379 = require("./374379.js");
 
-function b(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,7 +38,7 @@ function b(e) {
   return e
 }
 
-function y(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -50,80 +51,80 @@ function y(e, t) {
   }), e
 }
 
-function _(e) {
+function j(e) {
   let {
     channel: t,
     speaker: l,
-    className: f
-  } = e, _ = i.useRef(null), {
-    newestAnalyticsLocation: O
-  } = (0, d.ZP)(), j = (0, p.bp)(), {
-    reducedMotion: x
-  } = i.useContext(s.Sfi), v = (0, c.Z)({
+    className: g
+  } = e, j = i.useRef(null), {
+    newestAnalyticsLocation: x
+  } = (0, u.ZP)(), O = (0, h.bp)(), {
+    reducedMotion: v
+  } = i.useContext(o.Sfi), C = (0, d.Z)({
     userId: l.id
-  }), C = null != l.member ? (0, g.CA)(l.member) : null, I = e => {
-    (0, o.jW)(e, async () => {
+  }), I = null != l.member ? (0, m.CA)(l.member) : null, E = e => {
+    (0, c.jW)(e, async () => {
       let {
         default: e
       } = await Promise.all([n.e("79695"), n.e("98783"), n.e("8982"), n.e("7717"), n.e("52021")]).then(n.bind(n, 757387));
-      return n => (0, r.jsx)(e, y(b({}, n), {
+      return n => (0, r.jsx)(e, _(y({}, n), {
         user: l.user,
         guildId: t.guild_id,
         channel: t,
         showMediaItems: true,
         showStageChannelItems: true,
         showChatItems: false,
-        onInteraction: (0, u.u)("GuildChannelUserContextMenu", O)
+        onInteraction: (0, p.u)("GuildChannelUserContextMenu", x)
       }))
     }, {
-      context: j
+      context: O
     })
   };
-  return (0, r.jsx)(h.Z, {
-    targetElementRef: _,
+  return (0, r.jsx)(f.Z, {
+    targetElementRef: j,
     user: l.user,
     guildId: t.guild_id,
     channelId: t.id,
     clickTrap: true,
-    children: e => (0, r.jsx)(s.ua7, {
-      targetElementRef: _,
-      text: l.userNick,
+    children: e => (0, r.jsx)(s.u, {
+      targetElementRef: j,
+      __unsupportedReactNodeAsText: l.userNick,
       position: "bottom",
-      children: n => (0, r.jsx)(s.P3F, y(b({}, n, e), {
-        innerRef: _,
+      children: (0, r.jsx)(o.P3F, _(y({}, e), {
+        innerRef: j,
         onClick: t => {
           t.stopPropagation(), e.onClick(t)
         },
-        onContextMenu: I,
-        children: (0, r.jsx)(s.qEK, {
-          src: null != C ? C : l.user.getAvatarURL(t.guild_id, 24),
-          size: s.EFr.SIZE_24,
-          className: a()(m.avatar, f),
+        onContextMenu: E,
+        children: (0, r.jsx)(o.qEK, {
+          src: null != I ? I : l.user.getAvatarURL(t.guild_id, 24),
+          size: o.EFr.SIZE_24,
+          className: a()(b.avatar, g),
           "aria-label": l.userNick,
-          isSpeaking: v && !x.enabled
+          isSpeaking: C && !v.enabled
         })
       }))
     })
   })
 }
 
-function O(e) {
+function x(e) {
   let {
     speakers: t,
     channel: n
   } = e;
-  return (0, r.jsx)(f.Z, {
-    className: m.summary,
+  return (0, r.jsx)(g.Z, {
+    className: b.summary,
     guildId: n.guild_id,
     users: t,
     max: 10,
-    renderUser: (e, t, i) => (0, r.jsx)(_, {
+    renderUser: (e, t, i) => (0, r.jsx)(j, {
       channel: n,
       speaker: e,
       className: t
     }, i),
     renderMoreUsers: (e, t, n) => (0, r.jsx)("div", {
-      className: a()(m.speakers, t),
+      className: a()(b.speakers, t),
       children: e
     }, n)
   })

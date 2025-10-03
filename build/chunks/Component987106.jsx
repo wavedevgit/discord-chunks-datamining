@@ -116,7 +116,7 @@ function S(e) {
     D = null != g,
     L = null != w && w.length > 0,
     x = i === d.ZJ.LINK && null != b && b.length > 0,
-    j = A === m.gH.LOADING || R && null == N;
+    M = A === m.gH.LOADING || R && null == N;
   return t = x ? () => {
     (0, p.q)({
       href: null != b ? b : "",
@@ -136,10 +136,10 @@ function S(e) {
     role: x ? "link" : "button",
     children: [(0, r.jsxs)("div", {
       className: a()(E.content, {
-        [E.hidden]: j,
+        [E.hidden]: M,
         [E.premium]: R
       }),
-      "aria-hidden": j,
+      "aria-hidden": M,
       children: [R ? (0, r.jsx)("div", {
         className: E.shopIcon,
         children: (0, r.jsx)(l.EOn, {
@@ -162,7 +162,7 @@ function S(e) {
         color: "currentColor",
         className: E.launchIcon
       }) : null]
-    }), j ? (0, r.jsx)("div", {
+    }), M ? (0, r.jsx)("div", {
       className: E.loading,
       children: (0, r.jsx)(l.bbz, {
         dotRadius: 3.5,

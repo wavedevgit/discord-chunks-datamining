@@ -18,15 +18,15 @@ var Chunk481060 = require("./481060.js"),
 async function f(e, t) {
   let {
     channelId: f,
-    editMetadata: b,
-    analyticsLocations: g
-  } = t, h = a.Z.getChannel(f);
+    editMetadata: g,
+    analyticsLocations: b
+  } = t, h = r.Z.getChannel(f);
   if (null != h) try {
-    var y;
-    let t = await (0, d.rO)(e, b),
-      n = null != (y = e.name) ? y : (0, p.yl)(c.default.extractTimestamp(e.id)),
+    var x;
+    let t = await (0, d.rO)(e, g),
+      n = null != (x = e.name) ? x : (0, p.yl)(s.default.extractTimestamp(e.id)),
       l = (0, u.Z)(n);
-    (0, s.d)([new File([t], "".concat("" !== l ? l : "clip", ".mp4"), {
+    (0, c.d)([new File([t], "".concat("" !== l ? l : "clip", ".mp4"), {
       type: "video/mp4"
     })], h, i.d.ChannelMessage, {
       filesMetadata: [{
@@ -34,7 +34,7 @@ async function f(e, t) {
       }],
       origin: "unknown:clip_share"
     }), o.default.track(m.rMx.CLIP_SHARED, {
-      location_stack: g,
+      location_stack: b,
       guild_id: h.guild_id,
       channel_id: h.id,
       channel_type: h.type,
@@ -43,13 +43,13 @@ async function f(e, t) {
     })
   } catch (e) {
     throw p.jF.error(e), e
-  } else(0, r.ZDy)(async () => {
+  } else(0, a.ZDy)(async () => {
     let {
       default: t
     } = await n.e("99617").then(n.bind(n, 502801));
     return n => {
-      var r, a;
-      return (0, l.jsx)(t, (r = function(e) {
+      var a, r;
+      return (0, l.jsx)(t, (a = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             l = Object.keys(n);
@@ -66,19 +66,19 @@ async function f(e, t) {
           })
         }
         return e
-      }({}, n), a = a = {
+      }({}, n), r = r = {
         clip: e,
-        editMetadata: b
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+        editMetadata: g
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var l = Object.getOwnPropertySymbols(e);
           n.push.apply(n, l)
         }
         return n
-      })(Object(a)).forEach(function(e) {
-        Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(a, e))
-      }), r))
+      })(Object(r)).forEach(function(e) {
+        Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(r, e))
+      }), a))
     }
   })
 }

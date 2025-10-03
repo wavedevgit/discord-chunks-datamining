@@ -29,14 +29,14 @@ function E(e) {
     onBeforeShowModal: o,
     onOneClickGoLive: u,
     appContext: g
-  } = e, y = (0, l.e7)([f.Z], () => f.Z.getVoiceChannelId()), O = (0, l.e7)([c.Z], () => c.Z.getChannel(y), [y]), E = (0, l.e7)([m.default], () => m.default.getCurrentUser()), v = null == O ? true : O.getGuildId(), S = (0, l.e7)([p.Z], () => (0, s.Z)(p.Z)), x = (0, l.e7)([d.Z, h.Z], () => null != O && (0, a.JL)(O, d.Z, h.Z));
+  } = e, y = (0, l.e7)([f.Z], () => f.Z.getVoiceChannelId()), O = (0, l.e7)([c.Z], () => c.Z.getChannel(y), [y]), E = (0, l.e7)([m.default], () => m.default.getCurrentUser()), v = null == O ? true : O.getGuildId(), b = (0, l.e7)([h.Z], () => (0, s.Z)(h.Z)), x = (0, l.e7)([d.Z, p.Z], () => null != O && (0, a.JL)(O, d.Z, p.Z));
   return r.useCallback(async () => {
-    await b({
+    await S({
       pid: t,
       voiceChannelId: y,
       user: E,
       targetGuildId: v,
-      canGoLive: S,
+      canGoLive: b,
       canStream: x,
       analyticsLocation: n,
       allowOneClickGoLive: i,
@@ -44,7 +44,7 @@ function E(e) {
       onOneClickGoLive: u,
       appContext: g
     })
-  }, [t, y, E, v, S, x, n, i, o, u, g])
+  }, [t, y, E, v, b, x, n, i, o, u, g])
 }
 async function v(e) {
   let {
@@ -54,8 +54,8 @@ async function v(e) {
     onBeforeShowModal: r,
     onOneClickGoLive: l,
     appContext: o
-  } = e, u = f.Z.getVoiceChannelId(), g = c.Z.getChannel(u), y = m.default.getCurrentUser(), O = null == g ? true : g.getGuildId(), E = null != g && (0, a.JL)(g, d.Z, h.Z), v = (0, s.Z)(p.Z);
-  await b({
+  } = e, u = f.Z.getVoiceChannelId(), g = c.Z.getChannel(u), y = m.default.getCurrentUser(), O = null == g ? true : g.getGuildId(), E = null != g && (0, a.JL)(g, d.Z, p.Z), v = (0, s.Z)(h.Z);
+  await S({
     pid: t,
     voiceChannelId: u,
     user: y,
@@ -69,7 +69,7 @@ async function v(e) {
     appContext: o
   })
 }
-async function b(e) {
+async function S(e) {
   let {
     pid: t,
     voiceChannelId: r,
@@ -78,13 +78,13 @@ async function b(e) {
     canGoLive: s,
     canStream: c,
     analyticsLocation: d,
-    allowOneClickGoLive: p,
-    onBeforeShowModal: h,
+    allowOneClickGoLive: h,
+    onBeforeShowModal: p,
     onOneClickGoLive: f,
     appContext: m
   } = e;
   if (s && c) {
-    if (p && null !== r) {
+    if (h && null !== r) {
       let [e] = await (0, u.Z)(t);
       if (e) {
         null == f || f();
@@ -94,7 +94,7 @@ async function b(e) {
     if (null == l) return void(0, o.showToast)((0, o.createToast)(O.intl.string(O.t.OKnWyc), o.ToastType.FAILURE, {
       appContext: y.IlC.OVERLAY
     }));
-    null == h || h(), (0, o.ZDy)(async () => {
+    null == p || p(), (0, o.ZDy)(async () => {
       let {
         default: e
       } = await Promise.all([n.e("38697"), n.e("46746"), n.e("53448")]).then(n.bind(n, 60594));

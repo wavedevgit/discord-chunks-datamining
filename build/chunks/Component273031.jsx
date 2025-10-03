@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
-  Chunk481060 = require("./481060.js"),
+  Chunk28664 = require("./28664.jsx"),
   Chunk951394 = require("./951394.jsx"),
   Chunk820230 = require("./820230.js");
 
@@ -21,28 +21,18 @@ function u(e) {
     className: d,
     "aria-label": f
   } = e;
-  return (0, r.jsx)(s.ua7, {
+  return (0, r.jsx)(s.u, {
     text: a,
-    hideOnClick: true,
-    children: e => {
-      let {
-        onMouseEnter: s,
-        onMouseLeave: _,
-        onClick: p
-      } = e;
-      return (0, r.jsx)(l.zx, {
-        onMouseEnter: s,
-        onMouseLeave: _,
-        onClick: e => {
-          e.stopPropagation(), null == p || p(), t(e)
-        },
-        dangerous: u,
-        "aria-label": null != f ? f : a,
-        className: d,
-        children: i.Children.map(n, e => i.isValidElement(e) ? i.cloneElement(e, {
-          className: o()(e.props.className, c.actionBarIcon)
-        }) : e)
-      })
-    }
+    children: (0, r.jsx)(l.zx, {
+      onClick: e => {
+        e.stopPropagation(), t(e)
+      },
+      dangerous: u,
+      "aria-label": null != f ? f : a,
+      className: d,
+      children: i.Children.map(n, e => i.isValidElement(e) ? i.cloneElement(e, {
+        className: o()(e.props.className, c.actionBarIcon)
+      }) : e)
+    })
   })
 }

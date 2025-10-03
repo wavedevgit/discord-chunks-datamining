@@ -15,7 +15,6 @@ module.exports = {
   isOverflowing: "isOverflowing__3b3ff",
   chipletInput: "chipletInput__3b3ff",
   errorValue: "errorValue__3b3ff",
-  errorTooltip: "errorTooltip__3b3ff",
   errorOverflowValue: "errorOverflowValue__3b3ff",
   closeIconContainer: "closeIconContainer__3b3ff",
   closeIcon: "closeIcon__3b3ff"

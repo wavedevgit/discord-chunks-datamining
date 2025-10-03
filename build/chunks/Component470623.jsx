@@ -1,7 +1,7 @@
 /** Chunk was on 91053 **/
 /** chunk id: 470623, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  AF: () => O,
+  AF: () => j,
   oL: () => y,
   xH: () => _
 }), require("./388685.js"), require("./781311.js");
@@ -157,7 +157,7 @@ function _(e, t) {
   return a()(null != n, "[useForumPostComposerStore] Context should not be null"), n(e, t)
 }
 
-function O() {
+function j() {
   let e = Chunk647438.useContext(b);
   return a()(null != module, "[useForumPostComposerStore] Context should not be null"), module
 }

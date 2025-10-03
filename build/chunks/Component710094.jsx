@@ -2,7 +2,7 @@
 /** chunk id: 710094, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  l: () => j
+  l: () => M
 }), require("./388685.js"), require("./415506.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -37,11 +37,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk108626 = require("./108626.js");
 let x = 500;
 
-function j(e) {
+function M(e) {
   var t, n;
   let a, {
-      handleStepChange: j,
-      trialId: M,
+      handleStepChange: M,
+      trialId: j,
       trialFooterMessageOverride: k,
       reviewWarningMessage: U,
       planGroup: G,
@@ -95,7 +95,7 @@ function j(e) {
   o()(null != eu, "Step should be set");
   let eA = i.useRef(null),
     [eC, eN] = (0, l.Z)(false, x),
-    eR = null != (n = null != M ? M : V) ? n : null,
+    eR = null != (n = null != j ? j : V) ? n : null,
     eP = null != eR && (!ef || P.nG[eR].skus.includes(ei)) ? eR : null,
     ew = (0, f.N)(V),
     eD = (0, d.Ng)(),
@@ -108,15 +108,15 @@ function j(e) {
     })
   }, [ee]);
   let ex = i.useCallback((e, t, n) => {
-      z(e), null != t && eh(t), null != n && em(n), j(E.h8.CONFIRM, {
+      z(e), null != t && eh(t), null != n && em(n), M(E.h8.CONFIRM, {
         fulfillment: {
           subscription: e,
           entitlements: t
         }
       })
-    }, [j, z, eh, em]),
-    ej = (0, A.m)(J, Q),
-    eM = null != er && P.o4.has(er.id) && null != ej && !(0, c.aQ)(ej) ? Error(D.intl.string(D.t["2ik8io"])) : null,
+    }, [M, z, eh, em]),
+    eM = (0, A.m)(J, Q),
+    ej = null != er && P.o4.has(er.id) && null != eM && !(0, c.aQ)(eM) ? Error(D.intl.string(D.t["2ik8io"])) : null,
     ek = i.useRef(null),
     [eU, eG] = i.useState(null),
     eB = !eO && null != ew && null != ei && P.nG[ew.trial_id].skus.includes(ei),
@@ -133,17 +133,17 @@ function j(e) {
     eW = eO && ep === w.GZ.ONE_TIME,
     eK = eW || (eY ? eH && ef : ef),
     ez = (0, u.id)(er, eO, eT),
-    eq = i.useCallback(() => eY ? void j(E.h8.SKU_SELECT) : ez ? void j(E.h8.SELECT_FREE_SKU) : eW ? j(E.h8.GIFT_CUSTOMIZATION) : j(E.h8.PLAN_SELECT), [j, eY, eW, ez]),
+    eq = i.useCallback(() => eY ? void M(E.h8.SKU_SELECT) : ez ? void M(E.h8.SELECT_FREE_SKU) : eW ? M(E.h8.GIFT_CUSTOMIZATION) : M(E.h8.PLAN_SELECT), [M, eY, eW, ez]),
     eX = false,
     eQ = () => {
-      j(E.h8.ADD_PAYMENT_STEPS)
+      M(E.h8.ADD_PAYMENT_STEPS)
     };
   return ep === w.GZ.ONE_TIME ? (eX = null == ea && null != Q || null != et, a = (0, r.jsx)(S.Z, {
     hasLegalTermsFlash: eC,
     legalTermsNodeRef: ek,
     onPaymentSourceChange: e => es(null != e ? e.id : null),
-    handlePaymentSourceAdd: () => j(E.h8.ADD_PAYMENT_STEPS)
-  })) : (eX = null == eE || !eO && null != ej && ep === w.GZ.SUBSCRIPTION && eB && !ej.canRedeemTrial(), null == K || eb || eO ? (o()(null != er, "Expected plan to be selected"), a = (0, r.jsx)(_.Z, {
+    handlePaymentSourceAdd: () => M(E.h8.ADD_PAYMENT_STEPS)
+  })) : (eX = null == eE || !eO && null != eM && ep === w.GZ.SUBSCRIPTION && eB && !eM.canRedeemTrial(), null == K || eb || eO ? (o()(null != er, "Expected plan to be selected"), a = (0, r.jsx)(_.Z, {
     selectedPlanId: er.id,
     planGroup: G,
     paymentSources: J,
@@ -151,7 +151,7 @@ function j(e) {
     priceOptions: $,
     currencies: X,
     onCurrencyChange: e => eo(e),
-    handlePaymentSourceAdd: () => j(E.h8.ADD_PAYMENT_STEPS),
+    handlePaymentSourceAdd: () => M(E.h8.ADD_PAYMENT_STEPS),
     setHasAcceptedTerms: e_,
     legalTermsNodeRef: ek,
     hasLegalTermsFlash: eC,
@@ -160,7 +160,7 @@ function j(e) {
     reviewWarningMessage: U,
     purchaseState: ed,
     referralTrialOfferId: V,
-    isTrial: eB || null != M && null != k,
+    isTrial: eB || null != j && null != k,
     isDiscount: eF,
     handleClose: W
   })) : (o()(null != er, "Expected plan to be selected"), a = (0, r.jsx)(p.Z, {
@@ -205,7 +205,7 @@ function j(e) {
         legalTermsNodeRef: ek,
         flashLegalTerms: () => eN(true),
         invoiceError: eU,
-        planError: eM,
+        planError: ej,
         analyticsLocation: F,
         baseAnalyticsData: Z,
         flowStartTime: q.startTime,

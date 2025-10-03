@@ -25,12 +25,12 @@ function m(e) {
     hasChanges: p,
     editingRule: f,
     errorMessage: h,
-    saveEditingRule: b
+    saveEditingRule: x
   } = (0, c.w)(), {
-    updateRule: x
-  } = (0, o.pH)(t), j = null != f, v = j && !(0, a.Vb)(f), _ = j || p || v, O = async () => {
-    if (!p && !v) return m();
-    null == f || v || x(f);
+    updateRule: b
+  } = (0, o.pH)(t), j = null != f, _ = j && !(0, a.Vb)(f), v = j || p || _, C = async () => {
+    if (!p && !_) return m();
+    null == f || _ || b(f);
     let e = n.find(e => {
       let {
         id: t
@@ -38,15 +38,15 @@ function m(e) {
       return t === (null == f ? true : f.id)
     });
     try {
-      let e = await b(n);
-      null != e && x(e)
+      let e = await x(n);
+      null != e && b(e)
     } catch (t) {
-      null != e && x(e)
+      null != e && b(e)
     }
-  }, y = d.intl.string(d.t["ETE/oK"]), C = !p && j ? d.intl.formatToPlainString(d.t.nula39, {
+  }, O = d.intl.string(d.t["ETE/oK"]), y = !p && j ? d.intl.formatToPlainString(d.t.nula39, {
     ruleName: null == f ? true : f.name
   }) : true;
-  return null != h && (C = (0, r.jsx)(l.Text, {
+  return null != h && (y = (0, r.jsx)(l.Text, {
     variant: "text-md/normal",
     color: "text-danger",
     className: u.message,
@@ -54,14 +54,14 @@ function m(e) {
   })), (0, r.jsx)(i.W, {
     component: "div",
     className: u.saveNoticeContainer,
-    children: _ && (0, r.jsx)(l.oXn, {
+    children: v && (0, r.jsx)(l.oXn, {
       children: (0, r.jsx)(s.Z, {
         submitting: g,
         disabled: g,
-        onSave: O,
+        onSave: C,
         onReset: m,
-        onResetText: y,
-        message: C
+        onResetText: O,
+        message: y
       })
     })
   })

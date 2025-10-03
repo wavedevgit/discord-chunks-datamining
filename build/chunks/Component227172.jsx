@@ -80,7 +80,7 @@ let k = {
       participant1: et,
       participant2: en,
       numOtherParticipants: er
-    } = (0, I.Z)(y, 3), ei = y.extra.platform, ea = null != ei ? k[ei] : null, eo = ei === a.z.XBOX ? j.ABu.XBOX : ei === a.z.PLAYSTATION ? j.ABu.PLAYSTATION : true, es = (0, N.Z)(eo), {
+    } = (0, I.Z)(y, 3), ei = y.extra.platform, ea = null != ei ? k[ei] : null, eo = ei === a.z.XBOX ? M.ABu.XBOX : ei === a.z.PLAYSTATION ? M.ABu.PLAYSTATION : true, es = (0, N.Z)(eo), {
       data: el
     } = (0, m.IX)(y.extra.application_id), ec = (0, d.q)(el, "MemberListGamingContentPopout"), eu = (0, g.L)(null != (n = null != (t = null == K ? true : K.application_id) ? t : null == z ? true : z.applicationId) ? n : null == el ? true : el.id), ed = i.useCallback(e => {
       if ((null == V ? true : V.src) == null || null == b || null == H) return;
@@ -112,9 +112,9 @@ let k = {
         headerIcons: null == ea ? null : (0, r.jsx)(L.Z, {
           onClick: es,
           Icon: ea,
-          "aria-label": M.intl.string(M.t.YR4cHB)
+          "aria-label": j.intl.string(j.t.YR4cHB)
         }),
-        userDescription: (0, S.kr)(y) ? M.t.vPg1JS : M.t.rPqqtr,
+        userDescription: (0, S.kr)(y) ? j.t.vPg1JS : j.t.rPqqtr,
         title: W,
         subtitle: Y,
         badges: ef,
@@ -127,7 +127,7 @@ let k = {
         title: y.extra.game_name,
         subtitle: Y,
         badges: ef,
-        userDescription: M.t["6oWFUF"],
+        userDescription: j.t["6oWFUF"],
         entry: y,
         stream: $,
         onUserPopoutClosed: Z,
@@ -137,7 +137,7 @@ let k = {
         application: el,
         analyticsLocation: h.Z.MEMBER_LIST_GAMING_CONTENT_POPOUT
       }, "cloud-play") : null,
-      eh = [null == ep && ((0, l.Z)(K, j.xjy.JOIN) || (0, c.Z)(K)) ? (0, r.jsx)(_.Z, {
+      eh = [null == ep && ((0, l.Z)(K, M.xjy.JOIN) || (0, c.Z)(K)) ? (0, r.jsx)(_.Z, {
         activity: K,
         user: H,
         variant: "primary",

@@ -120,15 +120,15 @@ let q = e => {
     duration: n
   } = e, r = null != t ? K(t) : V, i = null != n ? K(n) : V;
   return r = r.padStart(i.length, "0"), (0, a.jsxs)("div", {
-    className: j.durationTimeWrapper,
+    className: M.durationTimeWrapper,
     children: [(0, a.jsx)("span", {
-      className: j.durationTimeDisplay,
+      className: M.durationTimeDisplay,
       children: r
     }), (0, a.jsx)("span", {
-      className: j.durationTimeSeparator,
+      className: M.durationTimeSeparator,
       children: "/"
     }), (0, a.jsx)("span", {
-      className: j.durationTimeDisplay,
+      className: M.durationTimeDisplay,
       children: i
     })]
   })
@@ -286,23 +286,23 @@ function Q(e) {
     hideDownloadButton: s
   } = e;
   return (0, a.jsxs)("div", {
-    className: j.audioMetadata,
+    className: M.audioMetadata,
     children: [(0, a.jsxs)("div", {
-      className: j.metadataContent,
+      className: M.metadataContent,
       children: [i ? t : (0, a.jsx)(m.Z, {
         href: r,
-        className: j.metadataDownload,
-        iconClassName: j.metadataIcon,
+        className: M.metadataDownload,
+        iconClassName: M.metadataIcon,
         mimeType: o,
         fileName: t
       }), (0, a.jsx)("div", {
-        className: j.metadataSize,
+        className: M.metadataSize,
         children: n
       })]
     }), !s && (0, a.jsx)(m.Z, {
       href: r,
-      className: j.metadataDownload,
-      iconClassName: j.metadataIcon,
+      className: M.metadataDownload,
+      iconClassName: M.metadataIcon,
       mimeType: o
     })]
   })

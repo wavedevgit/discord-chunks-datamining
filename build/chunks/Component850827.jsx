@@ -44,24 +44,24 @@ let D = (0, Chunk730749.Z)(e => {
     guildId: D,
     channelId: L,
     source: x,
-    buttonVariant: j,
-    type: M,
+    buttonVariant: M,
+    type: j,
     onAction: k
   } = e, U = (0, l.e7)([h.default], () => {
     let e = h.default.getCurrentUser();
     return s()(null != e, "UserActivityActions: currentUser cannot be undefined"), e
-  }), G = M === b.Y.STREAM_PREVIEW || null != o, B = (0, g.Z)(t), Z = B || G ? f.Z.Direction.HORIZONTAL : f.Z.Direction.VERTICAL, F = (null == t ? true : t.type) === P.IIU.HANG_STATUS, V = (0, l.e7)([m.Z, p.Z], () => {
+  }), G = j === b.Y.STREAM_PREVIEW || null != o, B = (0, g.Z)(t), Z = B || G ? f.Z.Direction.HORIZONTAL : f.Z.Direction.VERTICAL, F = (null == t ? true : t.type) === P.IIU.HANG_STATUS, V = (0, l.e7)([m.Z, p.Z], () => {
     var e;
     return F ? p.Z.getChannel(null == (e = m.Z.getVoiceStateForUser(i.id)) ? true : e.channelId) : null
   }), H = () => {
     if ((0, E.Z)(t)) return (0, r.jsx)(y.Z, {
       platform: d.Z.get(P.ABu.XBOX),
-      variant: j,
+      variant: M,
       onAction: k,
       icon: c.Mko
     });
     if ((null == t ? true : t.platform) === P.M7m.PS4 || (null == t ? true : t.platform) === P.M7m.PS5) return (0, r.jsx)(y.Z, {
-      variant: j,
+      variant: M,
       platform: d.Z.get(P.ABu.PLAYSTATION),
       onAction: k,
       icon: c.Tsp
@@ -92,7 +92,7 @@ let D = (0, Chunk730749.Z)(e => {
       return null == e ? null : (0, r.jsx)(T.Z, {
         guildId: e.guildId,
         channelId: e.channelId,
-        variant: j,
+        variant: M,
         onAction: k
       })
     }
@@ -102,29 +102,29 @@ let D = (0, Chunk730749.Z)(e => {
       onAction: k
     }) : F && null != V ? (0, r.jsx)(I.Z, {
       userId: i.id,
-      variant: j,
+      variant: M,
       hangStatusChannel: V,
       onAction: k
     }) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(N.Z, {
         activity: t,
-        variant: j,
+        variant: M,
         onAction: k
       }), (0, r.jsx)(v.Z, {
         activity: t,
         embeddedActivity: n,
         user: i,
-        variant: j,
+        variant: M,
         onAction: k
       }), (0, r.jsx)(S.Z, {
         activity: t,
         user: i,
-        variant: j,
+        variant: M,
         onAction: k
       }), (0, r.jsx)(O.Z, {
         user: i,
         activity: t,
-        variant: j,
+        variant: M,
         onAction: k
       })]
     })

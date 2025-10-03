@@ -308,12 +308,12 @@ let N = {
   D = false,
   L = "",
   x = false,
-  j = false,
-  M = [],
+  M = false,
+  j = [],
   k = e => e._config && e._config.installationMethod ? e._config.installationMethod : e._gtm ? "web-gtm" : e._segment ? "web-segment" : "web-snippet",
   U = e => {
     var t;
-    null != (t = null == e ? true : e.blockedURI) && t.includes(window.UserLeap._API_URL) && (j = true, console.warn(`[Sprig] ${e.blockedURI} is blocked by Content-Security-Policy`))
+    null != (t = null == e ? true : e.blockedURI) && t.includes(window.UserLeap._API_URL) && (M = true, console.warn(`[Sprig] ${e.blockedURI} is blocked by Content-Security-Policy`))
   },
   G = (e = "") => {
     D = true, L = e
@@ -338,7 +338,7 @@ let Z = async ({
   };
   {
     let e = new C(t);
-    return M.push(e), e.promise
+    return j.push(e), e.promise
   }
 }, F = async (e, t) => {
   let {
@@ -372,7 +372,7 @@ let Z = async ({
       }
       return Z(o)
     }
-    if (x = false, M.length && (M.map(e => {
+    if (x = false, j.length && (j.map(e => {
         let t = e.payload;
         F(t.url, {
           ...t.options,
@@ -381,7 +381,7 @@ let Z = async ({
         }).then(t => {
           e.resolveRequest(t)
         })
-      }), M = []), t.ok) {
+      }), j = []), t.ok) {
       if (249 === t.status) return G(), s;
       let n = await t.text();
       try {
@@ -397,7 +397,7 @@ let Z = async ({
     return t
   } catch (r) {
     let t = n + 1;
-    return t > 5 || j ? {
+    return t > 5 || M ? {
       ok: false,
       reportError: false,
       error: r

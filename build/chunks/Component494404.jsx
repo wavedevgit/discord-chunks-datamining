@@ -89,8 +89,8 @@ function x(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let j = 43,
-  M = 25,
+let M = 43,
+  j = 25,
   k = 40,
   U = 250;
 
@@ -288,7 +288,7 @@ function H(e) {
       })
     }) : null,
     z = {
-      maxHeight: Z.height - j - M - 48
+      maxHeight: Z.height - M - j - 48
     };
   B && (z.maxHeight -= k);
   let q = null != _ && a;

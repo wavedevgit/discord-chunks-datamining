@@ -30,7 +30,7 @@ function u(e) {
       ref: e,
       height: t
     }
-  })(), h = (0, a.q_F)({
+  })(), h = (0, o.q_F)({
     from: {
       height: 0,
       paddingBottom: "0px",
@@ -45,7 +45,7 @@ function u(e) {
       tension: 170,
       friction: 26
     }
-  }), g = (0, a.q_F)({
+  }), g = (0, o.q_F)({
     from: {
       opacity: 0
     },
@@ -57,14 +57,14 @@ function u(e) {
       easing: t ? e => e ** 4 : e => e * (2 - e)
     }
   });
-  return (0, i.jsx)(o.animated.div, {
+  return (0, i.jsx)(a.animated.div, {
     style: {
       overflow: "hidden",
       height: h.height,
       paddingBottom: h.paddingBottom,
       marginTop: h.marginTop
     },
-    children: (0, i.jsx)(o.animated.div, {
+    children: (0, i.jsx)(a.animated.div, {
       style: {
         opacity: g.opacity
       },

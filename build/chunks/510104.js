@@ -45,20 +45,20 @@ function f(e, t) {
     }),
     L = (0, s.Z)(Object.assign({}, N, D)),
     x = O === l.k5 ? L : w,
-    j = {
+    M = {
       top: P.top - x.top + A.top,
       bottom: x.bottom - P.bottom + A.bottom,
       left: P.left - x.left + A.left,
       right: x.right - P.right + A.right
     },
-    M = e.modifiersData.offset;
-  if (O === l.k5 && M) {
-    var k = M[_];
-    Object.keys(j).forEach(function(e) {
+    j = e.modifiersData.offset;
+  if (O === l.k5 && j) {
+    var k = j[_];
+    Object.keys(M).forEach(function(e) {
       var t = [l.F2, l.I].indexOf(e) >= 0 ? 1 : false,
         n = [l.we, l.I].indexOf(e) >= 0 ? "y" : "x";
-      j[e] += k[n] * t
+      M[e] += k[n] * t
     })
   }
-  return j
+  return M
 }

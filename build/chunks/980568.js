@@ -8,11 +8,11 @@ var Chunk570140 = require("./570140.js"),
   Chunk981631 = require("./981631.js");
 let l = {
   dismissForApplicationId(e) {
-    r.Z.dispatch({
+    i.Z.dispatch({
       type: "ACTIVITY_INVITE_EDUCATION_DISMISS",
       key: e,
       value: true
-    }), i.default.track(o.rMx.CLOSE_TUTORIAL, {
+    }), r.default.track(o.rMx.CLOSE_TUTORIAL, {
       tutorial: "activity-invite-nux-inline",
       application_id: e,
       acknowledged: true

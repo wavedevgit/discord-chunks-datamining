@@ -1,7 +1,7 @@
-/** Chunk was on 9665 **/
+/** Chunk was on 50118 **/
 /** chunk id: 3861, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => C
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,13 +18,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk354459 = require("./354459.js"),
   Chunk394024 = require("./394024.js");
-let y = (0, Chunk112724.Z)(e => {
+let C = (0, Chunk112724.Z)(e => {
   let {
     participants: t,
     filteredParticipants: n,
     selectedParticipant: l,
-    participantsVersion: y,
-    layout: C,
+    participantsVersion: C,
+    layout: y,
     onSelectParticipant: _,
     onContextMenuParticipant: v,
     onFullscreenParticipant: x,
@@ -41,29 +41,29 @@ let y = (0, Chunk112724.Z)(e => {
     awaitingRemoteSessionInfo: w,
     callContainerDimensions: M
   } = e;
-  i.useEffect(() => {
+  r.useEffect(() => {
     c.S.dispatch(m.CkL.REMEASURE_TARGET)
   }, [I, Z, M.width, M.height]);
-  let R = i.useMemo(() => n.filter(e => e.type !== g.fO.ACTIVITY || !e.participants.some(e => (0, a.J)(e))), [n, y]);
-  return (null == w ? true : w.channelId) === O.id ? (0, r.jsx)(d.Z, {
+  let R = r.useMemo(() => n.filter(e => e.type !== g.fO.ACTIVITY || !e.participants.some(e => (0, a.J)(e))), [n, C]);
+  return (null == w ? true : w.channelId) === O.id ? (0, i.jsx)(d.Z, {
     height: Z
-  }) : (null == O ? true : O.isGuildVocal()) && !S ? (0, r.jsx)(u.Z, {
+  }) : (null == O ? true : O.isGuildVocal()) && !S ? (0, i.jsx)(u.Z, {
     channel: O,
     participants: t,
     hasConnectPermission: j
-  }) : T === m.WtW.VOICE ? (0, r.jsx)(o.Z, {
+  }) : T === m.WtW.VOICE ? (0, i.jsx)(o.Z, {
     guildId: O.guild_id,
     width: I,
     className: b.voiceCallWrapper,
     participants: t,
     onContextMenu: v
-  }) : (n = S ? n : t, null == l) ? 0 === n.length ? (0, r.jsx)(f.Z, {
+  }) : (n = S ? n : t, null == l) ? 0 === n.length ? (0, i.jsx)(f.Z, {
     channelId: O.id
-  }) : (0, r.jsx)(s.Z, {
+  }) : (0, i.jsx)(s.Z, {
     className: b.videoGridWrapper,
     justify: s.Z.Justify.CENTER,
     align: s.Z.Align.CENTER,
-    children: (0, r.jsx)(p.Z, {
+    children: (0, i.jsx)(p.Z, {
       channel: O,
       className: b.videoGrid,
       participants: R,
@@ -73,7 +73,7 @@ let y = (0, Chunk112724.Z)(e => {
       onContextMenu: v,
       inCall: S
     })
-  }) : (0, r.jsx)(h.Z, {
+  }) : (0, i.jsx)(h.Z, {
     onFullscreenParticipant: x,
     onContextMenuParticipant: v,
     onSelectParticipant: _,
@@ -85,7 +85,7 @@ let y = (0, Chunk112724.Z)(e => {
     idle: N,
     height: Z,
     width: I,
-    layout: C,
+    layout: y,
     inCall: S,
     channel: O,
     showParticipants: P

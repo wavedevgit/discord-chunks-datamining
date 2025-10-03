@@ -43,9 +43,9 @@ let T = false,
   D = Object.freeze([]),
   L = Object.freeze([]),
   x = [],
-  j = [];
+  M = [];
 
-function M(e) {
+function j(e) {
   if (0 === e.length) return e;
   let t = [],
     n = [];
@@ -94,11 +94,11 @@ function Z() {
   S === Chunk981631.Skl.ONLINE && C > 0 && (S = Chunk981631.Skl.IDLE);
   let t = false,
     n = w || S === Chunk981631.Skl.INVISIBLE ? [] : Chunk293273.Z.getActivities().filter(G);
-  a()(N, require) || (N = require, R = M(require), t = true);
+  a()(N, require) || (N = require, R = j(require), t = true);
   let r = Chunk797258.Z.getRemoteActivities();
   D !== r && (D = r, t = true);
   let i = Chunk797258.Z.getHiddenActivities();
-  L !== Chunk348327 && (L = Chunk348327), exports && (j = M(x = s()([...N, ...D.filter(e => e.type !== v.IIU.CUSTOM_STATUS)].sort(Chunk158776.f)).uniqBy(e => "".concat(e.type, ":").concat(e.application_id, ":").concat(e.name)).value()))
+  L !== Chunk348327 && (L = Chunk348327), exports && (M = j(x = s()([...N, ...D.filter(e => e.type !== v.IIU.CUSTOM_STATUS)].sort(Chunk158776.f)).uniqBy(e => "".concat(e.type, ":").concat(e.application_id, ":").concat(e.name)).value()))
 }
 
 function F(e) {
@@ -133,7 +133,7 @@ class W extends(r = Chunk442837.ZP.Store) {
   }
   getActivities() {
     let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];
-    return module ? j : R
+    return module ? M : R
   }
   getUnfilteredActivities() {
     let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];

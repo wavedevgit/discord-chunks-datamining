@@ -21,20 +21,20 @@ var Chunk647438 = require("./647438.js"),
 function h(e) {
   let t, n = (0, c.Ob)(e),
     h = null == e ? true : e.features.has(p.oNc.CREATOR_MONETIZABLE_PROVISIONAL),
-    b = null == e ? true : e.features.has(p.oNc.CREATOR_MONETIZABLE),
-    x = (0, i.e7)([a.default], () => {
+    x = null == e ? true : e.features.has(p.oNc.CREATOR_MONETIZABLE),
+    b = (0, i.e7)([a.default], () => {
       let t = a.default.getCurrentUser();
       return null != e && (0, s.eM)(e, t)
     }),
     {
       error: j,
-      loading: v,
-      createEnableRequest: _,
-      submittedRequest: O
+      loading: _,
+      createEnableRequest: v,
+      submittedRequest: C
     } = (0, d.Z)(null == e ? true : e.id),
     {
-      loading: y,
-      error: C,
+      loading: O,
+      error: y,
       refresh: N,
       eligibility: E
     } = (0, u.Z)(null == e ? true : e.id),
@@ -46,7 +46,7 @@ function h(e) {
     {
       isMonetizationReapplicationDisabled: P
     } = (0, l.eC)(null == e ? true : e.id),
-    w = O || (null == E ? true : E.isApplicationPending) === true,
+    w = C || (null == E ? true : E.isApplicationPending) === true,
     R = (null == E ? true : E.canApply) === true,
     Z = f.intl.format(f.t.aJUdOj, {
       faqUrl: o.Z.getArticleURL(p.BhN.CREATOR_FAQ)
@@ -59,20 +59,20 @@ function h(e) {
     requestCooldownDuration: S,
     creatorRevenuePolicyUrl: o.Z.getArticleURL(p.BhN.CREATOR_POLICY)
   }));
-  let D = n && x && false === b,
+  let D = n && b && false === x,
     A = n && false === h,
     L = (0, g.f)(),
-    k = I && R && x ? f.intl.format(f.t.wbVIUF, {}) : true;
+    k = I && R && b ? f.intl.format(f.t.wbVIUF, {}) : true;
   return r.useEffect(() => {
     D && N()
   }, [N, D]), {
-    resubmittingEnableRequest: v,
+    resubmittingEnableRequest: _,
     resubmissionError: j,
-    isGuildOwner: x,
-    createEnableRequest: _,
-    resubmittedRequest: O,
-    eligibilityLoading: y,
-    eligibilityError: C,
+    isGuildOwner: b,
+    createEnableRequest: v,
+    resubmittedRequest: C,
+    eligibilityLoading: O,
+    eligibilityError: y,
     refreshEligibility: N,
     eligibility: E,
     eligibleForMonetization: R,

@@ -228,7 +228,7 @@ class F extends(r = Chunk647438.Component) {
     null != module && null != exports && exports.indexOf(module) >= 0 && this.scrollToChannel(module), this.reportAnalytics()
   }
   shouldComponentUpdate(e) {
-    return !(0, f.Z)(this.props, e, ["children"])
+    return !(0, h.Z)(this.props, e, ["children"])
   }
   componentDidUpdate(e) {
     let {
@@ -278,8 +278,8 @@ class F extends(r = Chunk647438.Component) {
           }
           return i
         }(r, ["ref", "role"]);
-        return (0, i.jsx)(h.Wdt, {
-          children: r => (0, i.jsx)(h.aVo, U({
+        return (0, i.jsx)(f.Wdt, {
+          children: r => (0, i.jsx)(f.aVo, U({
             fade: true,
             innerRole: o,
             innerAriaLabel: L.intl.string(L.t.YUU0RE),
@@ -328,7 +328,7 @@ class F extends(r = Chunk647438.Component) {
           num_users_visible: a.length,
           num_users_visible_with_mobile_indicator: s.filter(e => null != e && T.Z.isMobileOnline(e)).length
         };
-      this.hasReportedAnalytics = true, _.ZP.trackWithMetadata(D.rMx.DM_LIST_VIEWED, G(U({}, u, (0, y.X)()), {
+      this.hasReportedAnalytics = true, _.ZP.trackWithMetadata(D.rMx.DM_LIST_VIEWED, G(U({}, u, (0, O.X)()), {
         visible_user_ids: s.filter(e => null != e),
         changelog_dm_visible: c
       }))
@@ -396,11 +396,11 @@ class F extends(r = Chunk647438.Component) {
           popoutAlign: "left",
           className: M.privateChannelRecipientsInviteButtonIconContainer,
           iconClassName: M.privateChannelRecipientsInviteButtonIcon,
-          icon: h.BRu,
+          icon: f.BRu,
           subscribeToGlobalHotkey: true
         }), "side" === r && (0, i.jsx)(S.l, {
           popoutAlign: "left",
-          icon: h.kL_,
+          icon: f.kL_,
           text: L.intl.string(L.t["6Urw1t"]),
           size: "sm",
           subscribeToGlobalHotkey: true
@@ -430,26 +430,26 @@ k(F, "defaultProps", {
 let V = e => {
   let {
     density: t
-  } = (0, h.TCT)(), {
+  } = (0, f.TCT)(), {
     version: n,
     theme: r,
     children: o,
     showDMHeader: a,
     listScrollerRef: s,
     createDMCTAButtonVariant: c
-  } = e, f = l.Children.count(o), g = Z.Z.getMutablePrivateChannels(), _ = (0, I.k1)(g), y = (0, p.Wu)([A.Z, P.Z, N.Z], () => {
+  } = e, h = l.Children.count(o), g = w.Z.getMutablePrivateChannels(), _ = (0, P.k1)(g), O = (0, p.Wu)([A.Z, I.Z, N.Z], () => {
     let e = A.Z.getPrivateChannelIds();
-    return (0, I.tU)(e, [P.Z, N.Z])
+    return (0, P.tU)(e, [I.Z, N.Z])
   }, []);
   (0, E.z)(C.R);
   let {
     analyticsLocations: v
-  } = (0, O.ZP)(b.Z.CONTACTS_LIST), j = (0, w.Ll)(), {
+  } = (0, y.ZP)(b.Z.CONTACTS_LIST), j = (0, Z.Ll)(), {
     keyboardModeEnabled: S,
     version: T
-  } = (0, p.cj)([m.Z, Z.Z], () => ({
+  } = (0, p.cj)([m.Z, w.Z], () => ({
     keyboardModeEnabled: m.Z.keyboardModeEnabled,
-    version: null != n ? "".concat(n, ":").concat(Z.Z.getPrivateChannelsVersion()) : Z.Z.getPrivateChannelsVersion()
+    version: null != n ? "".concat(n, ":").concat(w.Z.getPrivateChannelsVersion()) : w.Z.getPrivateChannelsVersion()
   })), R = l.useRef(null), D = null != s ? s : R, L = l.useCallback(e => {
     let t = D.current,
       n = document.querySelector(e);
@@ -483,17 +483,17 @@ let V = e => {
     isEnabled: S,
     scrollToStart: M,
     scrollToEnd: k,
-    defaultFocused: (f + +!!a).toString(),
+    defaultFocused: (h + +!!a).toString(),
     setFocus: L
   });
-  return (0, i.jsx)(O.Gt, {
+  return (0, i.jsx)(y.Gt, {
     value: v,
     children: (0, i.jsx)(u.bG, {
       navigator: V,
       children: (0, i.jsx)(F, G(U({}, e), {
         density: t,
         channels: _,
-        privateChannelIds: y,
+        privateChannelIds: O,
         listRef: D,
         theme: null != j ? j : r,
         version: T,

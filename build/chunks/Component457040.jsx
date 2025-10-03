@@ -183,7 +183,7 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
         onGridItemSelect: eN,
         store: p.ZN,
         setInspectedStickerPosition: p.ZN.setInspectedExpressionPosition,
-        gridNavigatorId: M.Vr
+        gridNavigatorId: j.Vr
       });
     i.useEffect(() => p.ZN.resetStoreState, []);
     let ex = () => {
@@ -212,7 +212,7 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       var e;
       null == (e = er.current) || e.focus()
     }, []);
-    let ej = i.useCallback(() => {
+    let eM = i.useCallback(() => {
       G(), O.default.track(k.rMx.PREMIUM_PROMOTION_OPENED, {
         location_section: k.jXE.STICKER_PICKER_UPSELL
       }), (0, g.z)()
@@ -234,7 +234,7 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
         children: [(0, r.jsx)("div", F(B({
           ref: X,
           className: U.listWrapper,
-          id: M.Vr
+          id: j.Vr
         }, ew), {
           children: null != eu ? (0, r.jsx)(D.Z, {
             ref: ee,
@@ -256,15 +256,15 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
           stickersListRef: ee,
           channel: c
         })]
-      }), ei && (0, r.jsx)(j.C, {
-        onLearnMore: ej
+      }), ei && (0, r.jsx)(M.C, {
+        onLearnMore: eM
       })]
     })
   }),
   ei = (e, t) => ((0, A.fP)(), (0, r.jsx)("div", {
     className: U.wrapper,
-    id: M.nZ,
-    "aria-labelledby": M.ED,
+    id: j.nZ,
+    "aria-labelledby": j.ED,
     role: "tabpanel",
     children: e.isLoading ? (0, r.jsx)(u.$jN, {
       className: U.loadingIndicator

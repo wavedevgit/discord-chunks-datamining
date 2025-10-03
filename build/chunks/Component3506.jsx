@@ -73,11 +73,11 @@ function x(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let j = k(null);
+let M = k(null);
 
-function M() {
-  let e = k(j);
-  s().isEqual(module, j) || (Chunk626135.default.track(Chunk981631.rMx.OVERLAY_SETTINGS_UPDATED, module), j = module)
+function j() {
+  let e = k(M);
+  s().isEqual(module, M) || (Chunk626135.default.track(Chunk981631.rMx.OVERLAY_SETTINGS_UPDATED, module), M = module)
 }
 
 function k(e) {
@@ -131,7 +131,7 @@ function G(e) {
     notificationPositionMode: S.default.getNotificationPositionMode(),
     shouldShowKeybindIndicators: S.default.showKeybindIndicators,
     textChatDisabled: O.Z.isNotificationDisabled(E.OverlayNotificationDisabledSetting.TEXT_CHAT)
-  })), j = (0, l.e7)([I.ZP], () => I.ZP.getOverlayKeybind()), k = (0, b.Z)({
+  })), M = (0, l.e7)([I.ZP], () => I.ZP.getOverlayKeybind()), k = (0, b.Z)({
     location: "overlay_user_settings"
   }), G = (0, p.$1)();
 
@@ -148,11 +148,11 @@ function G(e) {
   }
 
   function F(e) {
-    a()(null != j, "Keybind should never be undefined"), d.Z.setKeybind(x(D({}, j), {
+    a()(null != M, "Keybind should never be undefined"), d.Z.setKeybind(x(D({}, M), {
       shortcut: e
     }))
   }
-  return M(), (0, r.jsxs)(r.Fragment, {
+  return j(), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(u.hjN, {
       className: t,
       tag: u.RB0.H1,
@@ -174,7 +174,7 @@ function G(e) {
           className: P.enableOverlayItem,
           children: (0, r.jsx)(_.Z, {
             disabled: !o,
-            defaultValue: null != j ? j.shortcut : [],
+            defaultValue: null != M ? M.shortcut : [],
             onChange: F
           })
         })]

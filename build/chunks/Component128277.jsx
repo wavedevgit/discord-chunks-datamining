@@ -78,8 +78,8 @@ function L(e) {
     className: R,
     onClose: w
   } = e, L = (0, p.Dt)(), x = (0, p.Dt)(), {
-    themeType: j
-  } = (0, b.z)(), M = (0, _.Z)({
+    themeType: M
+  } = (0, b.z)(), j = (0, _.Z)({
     activity: a,
     user: t
   }), k = (0, E.Z)(a), U = null != k.text && "" !== k.text, {
@@ -90,7 +90,7 @@ function L(e) {
     display: "live",
     user: t,
     activity: a,
-    entry: M,
+    entry: j,
     analyticsLocations: B
   }), F = (0, g.Z)({
     userId: t.id,
@@ -155,7 +155,7 @@ function L(e) {
           display: "live",
           user: t,
           activity: a,
-          entry: M,
+          entry: j,
           onClose: w
         })
       })), (0, r.jsx)("div", {
@@ -164,7 +164,7 @@ function L(e) {
           className: N.content,
           children: [(0, r.jsx)(f.E, {
             image: G,
-            size: j === C.l.MODAL_V2 ? f.J.SIZE_100 : f.J.SIZE_60,
+            size: M === C.l.MODAL_V2 ? f.J.SIZE_100 : f.J.SIZE_60,
             className: N.clickableImage,
             onClick: e => {
               e.stopPropagation(), Z({
@@ -188,10 +188,10 @@ function L(e) {
               user: t,
               activity: a,
               className: N.badges
-            }), H(), j === C.l.MODAL_V2 && Y()]
-          }), j === C.l.MODAL && Y()]
+            }), H(), M === C.l.MODAL_V2 && Y()]
+          }), M === C.l.MODAL && Y()]
         })
-      }), j !== C.l.MODAL && j !== C.l.MODAL_V2 && Y()]
+      }), M !== C.l.MODAL && M !== C.l.MODAL_V2 && Y()]
     })
   })
 }

@@ -31,19 +31,19 @@ let v = {
       categoryId: n,
       onSelectApplication: C,
       resetScroll: j
-    } = e, [y, I] = a.useState(1), O = a.useCallback(e => {
+    } = e, [y, I] = a.useState(1), S = a.useCallback(e => {
       I(e)
     }, []);
     a.useEffect(() => {
       I(1)
     }, [n]);
-    let S = a.useMemo(() => ({
+    let P = a.useMemo(() => ({
         query: f.EMPTY_QUERY,
         page: y,
         pageSize: f.PAGE_SIZE,
         categoryId: n
       }), [y, n]),
-      P = (0, l.e7)([u.Z], () => u.Z.getFetchState({
+      O = (0, l.e7)([u.Z], () => u.Z.getFetchState({
         query: f.EMPTY_QUERY,
         page: y,
         pageSize: f.PAGE_SIZE,
@@ -51,14 +51,14 @@ let v = {
       })),
       E = (0, l.cj)([u.Z], () => {
         var e;
-        return null != (e = u.Z.getSearchResults(S)) ? e : v
+        return null != (e = u.Z.getSearchResults(P)) ? e : v
       }),
       N = null != (t = (0, o.Z)(E)) ? t : v,
       {
         results: T,
         totalPages: A,
         loadId: L
-      } = a.useMemo(() => P === d.M.FETCHING ? N : E, [P, N, E]),
+      } = a.useMemo(() => O === d.M.FETCHING ? N : E, [O, N, E]),
       R = a.useMemo(() => null == T ? true : T.filter(e => e.type === i.s.APPLICATION), [T]),
       Z = a.useCallback(e => {
         let {
@@ -97,13 +97,13 @@ let v = {
         position: t
       }), C(e)
     }, [L, C]);
-    return P === d.M.ERROR ? (0, r.jsx)("div", {
+    return O === d.M.ERROR ? (0, r.jsx)("div", {
       className: x.errorContainer,
       children: (0, r.jsx)(g.Z, {
         className: x.error
       })
     }) : (0, r.jsxs)(m.Z, {
-      loading: P === d.M.FETCHING,
+      loading: O === d.M.FETCHING,
       children: [(0, r.jsx)("div", {
         className: x.content,
         children: null == R ? true : R.map((e, t) => {
@@ -123,7 +123,7 @@ let v = {
         disablePaginationGap: true,
         hideMaxPage: true,
         currentPage: y,
-        onPageChange: O
+        onPageChange: S
       })]
     })
   }

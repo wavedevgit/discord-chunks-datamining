@@ -98,7 +98,7 @@ let Z = () => {
         premiumType: n
       } = e,
       i = (0, d.ZP)();
-    t = n === P.p9.TIER_0 ? (0, l.wj)(i) ? L : x : (0, l.wj)(i) ? j : M;
+    t = n === P.p9.TIER_0 ? (0, l.wj)(i) ? L : x : (0, l.wj)(i) ? M : j;
     let a = (0, E.Px)(n);
     return (0, r.jsx)("img", {
       src: t,
@@ -174,8 +174,8 @@ let Z = () => {
         hideCTAs: C = false,
         headingOverride: L,
         hidePill: x = false,
-        selectedPlanColumnClassName: j,
-        selectedPlanTier: M = P.p9.TIER_2
+        selectedPlanColumnClassName: M,
+        selectedPlanTier: j = P.p9.TIER_2
       } = e,
       {
         analyticsLocations: k
@@ -269,7 +269,7 @@ let Z = () => {
       className: D.freeTrialPillWithSparkles,
       colorOptions: J === P.Si.TIER_0 ? z ? N.VE.PREMIUM_TIER_0_GRADIENT_FILL : N.VE.PREMIUM_TIER_0_WHITE_FILL : z ? X ? N.VE.PREMIUM_TIER_2_OLD_GRADIENT_FILL : N.VE.PREMIUM_TIER_2_NEW_GRADIENT_FILL : N.VE.PREMIUM_TIER_2_WHITE_FILL
     }) : el ? (0, r.jsx)(Z, {}) : (0, r.jsx)(F, {});
-    let ef = J === P.Si.TIER_0 || $ === P.p9.TIER_0 || M === P.p9.TIER_0;
+    let ef = J === P.Si.TIER_0 || $ === P.p9.TIER_0 || j === P.p9.TIER_0;
     return (0, r.jsx)(_.Gt, {
       value: k,
       children: (0, r.jsxs)("div", {
@@ -282,7 +282,7 @@ let Z = () => {
         }), (0, r.jsxs)("div", {
           className: D.tableWrapper,
           children: [(0, r.jsx)("div", {
-            className: o()(j, {
+            className: o()(M, {
               [D.tier0ColumnOuter]: ef,
               [D.tier2ColumnOuter]: !ef
             }),

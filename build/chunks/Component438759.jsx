@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  r = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk481060 = require("./481060.js"),
   Chunk821795 = require("./821795.js"),
@@ -22,23 +22,23 @@ function h(e) {
   let {
     selectedEffectId: t,
     setSelectedEffectId: n,
-    className: o
+    className: l
   } = e;
-  return (0, r.jsxs)("div", {
-    className: o,
-    children: [(0, r.jsxs)(a.X6q, {
+  return (0, o.jsxs)("div", {
+    className: l,
+    children: [(0, o.jsxs)(a.X6q, {
       variant: "heading-md/semibold",
       className: f.selectorHeading,
-      children: [m.intl.string(p.default["1wilMz"]), (0, r.jsx)(i.SrA, {
+      children: [m.intl.string(p.default["1wilMz"]), (0, o.jsx)(i.SrA, {
         size: "xs",
         color: i.TVs.colors.TEXT_DEFAULT
       })]
-    }), (0, r.jsx)(a.Kqy, {
+    }), (0, o.jsx)(a.Kqy, {
       direction: "horizontal",
       align: "center",
       wrap: true,
       gap: 8,
-      children: u.mH.map(e => (0, r.jsx)(b, {
+      children: u.mH.map(e => (0, o.jsx)(x, {
         effectId: e,
         selected: e === t,
         onClick: () => n(e)
@@ -47,18 +47,18 @@ function h(e) {
   })
 }
 
-function b(e) {
+function x(e) {
   let {
     effectId: t,
     selected: n,
-    onClick: o
+    onClick: l
   } = e, a = (0, d.R)(t);
-  return (0, r.jsx)(i.P3F, {
-    className: l()(g.effectContainer, {
+  return (0, o.jsx)(i.P3F, {
+    className: r()(g.effectContainer, {
       [g.selected]: n
     }),
-    onClick: o,
-    children: (0, r.jsx)(c.Z, {
+    onClick: l,
+    children: (0, o.jsx)(c.Z, {
       userName: a.name,
       effectDisplayType: s.F.STATIC,
       displayNameStyles: a.previewStyles,

@@ -70,8 +70,8 @@ function w(e, t) {
 let D = new Chunk710845.Z("ChannelRTCStore"),
   L = Object.freeze([]),
   x = [],
-  j = {},
   M = {},
+  j = {},
   k = {},
   U = {},
   G = {},
@@ -83,8 +83,8 @@ let D = new Chunk710845.Z("ChannelRTCStore"),
   Y = {};
 
 function W(e) {
-  let t = j[e];
-  return null == t && (t = new S.ZP(e), j[e] = t), t
+  let t = M[e];
+  return null == t && (t = new S.ZP(e), M[e] = t), t
 }
 
 function K() {
@@ -119,12 +119,12 @@ function Q(e) {
   var t;
   let n = E.Z.getChannel(e),
     r = (null == n ? true : n.isDM()) && 1 ? A.dF.AUTO : A.dF.NONE;
-  return null != (t = M[e]) ? t : [r, A.dF.NONE]
+  return null != (t = j[e]) ? t : [r, A.dF.NONE]
 }
 
 function J(e) {
-  if (null == M[e]) returnfalse;
-  let [t] = M[e];
+  if (null == j[e]) returnfalse;
+  let [t] = j[e];
   return t !== A.dF.NONE
 }
 
@@ -148,7 +148,7 @@ function $(e) {
 function ee(e, t) {
   $(e);
   let n = J(e);
-  null == t ? delete M[e] : M[e] = t, n !== J(e) && k[e].toggleCount++
+  null == t ? delete j[e] : j[e] = t, n !== J(e) && k[e].toggleCount++
 }
 
 function et(e) {
@@ -182,12 +182,12 @@ function en(e) {
 function er(e) {
   let t = W(e);
   if (0 === t.size()) return;
-  let n = ej(e) || et(t) ? C.WtW.VIDEO : C.WtW.VOICE;
+  let n = eM(e) || et(t) ? C.WtW.VIDEO : C.WtW.VOICE;
   n === C.WtW.VOICE ? (delete U[e], delete G[e]) : U[e] = n
 }
 
 function ei(e) {
-  delete j[e], delete M[e], delete U[e], delete G[e]
+  delete M[e], delete j[e], delete U[e], delete G[e]
 }
 
 function ea() {
@@ -476,11 +476,11 @@ function ex(e) {
   return r.forEach(e => i.updateGuildRingingUsers(e, false)), q(e => e.rebuild(), [t])
 }
 
-function ej(e) {
+function eM(e) {
   var t;
   return !!(null == (t = E.Z.getChannel(e)) ? true : t.isGuildVocal())
 }
-class eM extends(r = Chunk442837.ZP.PersistedStore) {
+class ej extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     this.waitFor(h.Z, m.default, g.Z, E.Z, u.ZP, b.Z, y.Z, O.Z, v.default, I.Z, T.Z), this.syncWith([u.ZP], ec), this.syncWith([b.Z], eu), this.syncWith([f.Z], ea), (null == e ? true : e.voiceParticipantsHidden) !== true && Object.assign(Z, null == e ? true : e.voiceParticipantsHidden)
   }
@@ -551,13 +551,13 @@ class eM extends(r = Chunk442837.ZP.PersistedStore) {
   }
   getMode(e) {
     var t;
-    return null != (t = U[e]) ? t : ej(e) ? C.WtW.VIDEO : C.WtW.VOICE
+    return null != (t = U[e]) ? t : eM(e) ? C.WtW.VIDEO : C.WtW.VOICE
   }
   getLayout(e) {
     var t, n;
     let r = arguments.length > 1 && true !== arguments[1] ? arguments[1] : C.IlC.APP;
     if (__OVERLAY__) return C.AEg.NORMAL;
-    let i = ej(e);
+    let i = eM(e);
     return null != (n = null == (t = G[e]) ? true : t[r]) ? n : i ? C.AEg.NO_CHAT : C.AEg.NORMAL
   }
   getChatOpen(e) {
@@ -582,8 +582,8 @@ class eM extends(r = Chunk442837.ZP.PersistedStore) {
     return Y[e]
   }
 }
-N(eM, "displayName", "ChannelRTCStore"), N(eM, "persistKey", "ChannelRTCStore");
-let ek = new eM(Chunk570140.Z, {
+N(ej, "displayName", "ChannelRTCStore"), N(ej, "persistKey", "ChannelRTCStore");
+let ek = new ej(Chunk570140.Z, {
   CONNECTION_OPEN: K,
   CONNECTION_OPEN_SUPPLEMENTAL: ea,
   THREAD_LIST_SYNC: ea,

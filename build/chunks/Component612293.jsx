@@ -51,8 +51,8 @@ function k(e) {
     })) ? e : null
   }), {
     product: O,
-    purchase: D
-  } = (0, p.Z)(null == Z ? true : Z.skuId), L = f.ZP.canUseCollectibles(c), M = true === B ? (null == Z ? true : Z.skuId) === (null == T ? true : T.skuId) : (null == Z ? true : Z.skuId) === (null == B ? true : B.skuId), U = (0, i.useCallback)(e => {
+    purchase: L
+  } = (0, p.Z)(null == Z ? true : Z.skuId), D = f.ZP.canUseCollectibles(c), M = true === B ? (null == Z ? true : Z.skuId) === (null == T ? true : T.skuId) : (null == Z ? true : Z.skuId) === (null == B ? true : B.skuId), U = (0, i.useCallback)(e => {
     P(), (0, d.mK)({
       analyticsLocations: C,
       analyticsSource: s.Z.EDIT_NAMEPLATE_MODAL,
@@ -90,24 +90,24 @@ function k(e) {
     }), (0, r.jsxs)(l.mzw, {
       "data-migration-pending": true,
       className: j.modalFooter,
-      children: [null != D && (!(0, u.qS)(D) || L) || null === Z ? (0, r.jsx)(l.zxk, {
+      children: [null != L && (!(0, u.qS)(L) || D) || null === Z ? (0, r.jsx)(l.zxk, {
         variant: "primary",
         text: E.intl.string(E.t.Jh8fJy),
         onClick: () => {
           null != k ? (0, m.RH)(Z) : (0, o.Rx)(Z), P()
         },
         disabled: M
-      }) : null == D && (L || !(0, u.G1)(O)) ? (0, r.jsx)(l.zxk, {
+      }) : null == L && (D || !(0, u.G1)(O)) ? (0, r.jsx)(l.zxk, {
         variant: "primary",
         onClick: () => U(null == O ? true : O.skuId),
         text: E.intl.string(E.t.fYfGgI)
       }) : (0, r.jsx)(v.Z, {
         subscriptionTier: y.Si.TIER_2,
-        showGradient: !L,
+        showGradient: !D,
         textOptions: {
-          textOverride: f.ZP.isPremium(c) ? E.intl.string(E.t.KXLX7u) : L ? E.intl.string(E.t.mr4K7O) : E.intl.string(E.t.pj0XBA)
+          textOverride: f.ZP.isPremium(c) ? E.intl.string(E.t.KXLX7u) : D ? E.intl.string(E.t.mr4K7O) : E.intl.string(E.t.pj0XBA)
         }
-      }), !L && (0, u.G1)(O) ? (0, r.jsx)(h.Z, {
+      }), !D && (0, u.G1)(O) ? (0, r.jsx)(h.Z, {
         product: O,
         onClose: P
       }) : (0, r.jsx)(l.zxk, {

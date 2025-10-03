@@ -63,7 +63,7 @@ function T(e) {
   } = e, D = (0, i.e7)([u.Z], () => u.Z.getGuild(n), [n]), L = (0, i.e7)([c.Z], () => {
     var e;
     return c.Z.getRole(n, null != (e = null == t ? true : t.role_id) ? e : y.lds)
-  }), x = (0, o.U)(t, I), j = (0, m.C)(t), M = (0, f.SO)(D), {
+  }), x = (0, o.U)(t, I), M = (0, m.C)(t), j = (0, f.SO)(D), {
     shouldHideGuildPurchaseEntryPoints: k
   } = (0, l.uP)(n), U = (0, m.k)(t), G = (0, E.Z)({
     guildId: n,
@@ -90,13 +90,13 @@ function T(e) {
     H = (0, r.jsx)(g.m, {
       product: t,
       guildId: n,
-      showEditProduct: M,
+      showEditProduct: j,
       showUnpublishProduct: false,
       showCopyLink: true,
       showTestDownload: false,
       showDeleteProduct: false,
       showReportProduct: true,
-      onEditProduct: M ? Z : () => {},
+      onEditProduct: j ? Z : () => {},
       onUnpublishProduct: () => {},
       onDeleteProduct: () => {},
       onReportProduct: F,
@@ -110,7 +110,7 @@ function T(e) {
     formattedPrice: U,
     role: L,
     ctaComponent: (0, r.jsx)(a.zxk, v({}, G)),
-    productType: j,
+    productType: M,
     shouldShowFullDescriptionButton: T,
     onShowFullDescription: B,
     onTapCard: B,

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   D$: () => P,
-  N4: () => M,
+  N4: () => j,
   UI: () => R,
   Uu: () => S,
   cS: () => w,
@@ -143,15 +143,15 @@ function x(e) {
   })
 }
 
-function j(e, t) {
+function M(e, t) {
   var n, r, i, a;
   let s = null != (a = null == (i = e.embeds[0]) || null == (r = i.fields) || null == (n = r.find(e => "poll_question_text" === e.rawName)) ? true : n.rawValue) ? a : "";
   return null != t ? (0, o.aF)(s, t) : s
 }
 
-function M(e) {
+function j(e) {
   let t = (0, u.ZH)(e),
-    n = j(e, E.Dv);
+    n = M(e, E.Dv);
   return y.intl.format(y.t.Vn97KS, {
     username: t.nick,
     title: n

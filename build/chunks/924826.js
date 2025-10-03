@@ -109,7 +109,7 @@ function u(e) {
       I.current = true
     }
   }, [u, t, g, N, m, R, P]);
-  let j = r.useMemo(() => ({
+  let M = r.useMemo(() => ({
       wrap: b,
       get from() {
         if (!E) return;
@@ -121,23 +121,23 @@ function u(e) {
         return
       }
     }), [E, b]),
-    M = r.useCallback(async () => {
-      let e = await w.getNextFocusableElement(j),
+    j = r.useCallback(async () => {
+      let e = await w.getNextFocusableElement(M),
         t = null == e ? true : e.getAttribute(l.ie);
       null != t ? P(t) : null == e && null != p && p()
-    }, [w, j, p, P]),
+    }, [w, M, p, P]),
     k = r.useCallback(async () => {
-      let e = await w.getPreviousFocusableElement(j),
+      let e = await w.getPreviousFocusableElement(M),
         t = null == e ? true : e.getAttribute(l.ie);
       null != t ? P(t) : null == e && null != _ && _()
-    }, [w, j, _, P]),
+    }, [w, M, _, P]),
     U = r.useCallback(e => {
       if (!S.current || !E && !x.current) return;
       let n = y === s.hy.HORIZONTAL ? s.R8.RIGHT : s.R8.DOWN,
         r = y === s.hy.HORIZONTAL ? s.R8.LEFT : s.R8.UP;
       switch (e.key) {
         case n:
-          e.stopPropagation(), e.preventDefault(), M();
+          e.stopPropagation(), e.preventDefault(), j();
           return;
         case r:
           e.stopPropagation(), e.preventDefault(), k();
@@ -170,7 +170,7 @@ function u(e) {
           }
         }
       }
-    }, [M, k, t, y, f, d, P, E]),
+    }, [j, k, t, y, f, d, P, E]),
     G = r.useCallback(e => {
       v.current = null != e ? (0, l.jb)(t, e) : null, (0, a.h)(t, e, g)
     }, [t, g]);
@@ -194,10 +194,10 @@ function u(e) {
       null !== n && P(n)
     },
     focusPreviousItem: k,
-    focusNextItem: M,
+    focusNextItem: j,
     focusedItemId() {
       let e = v.current;
       return e ? (0, l.x3)(e) : null
     }
-  }), [t, U, y, D, g, G, k, M, P])
+  }), [t, U, y, D, g, G, k, j, P])
 }

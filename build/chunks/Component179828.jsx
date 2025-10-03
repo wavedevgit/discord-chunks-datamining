@@ -25,7 +25,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk798925 = require("./798925.js");
 
-function Z(e) {
+function O(e) {
   for (var n = 1; n < arguments.length; n++) {
     var t = null != arguments[n] ? arguments[n] : {},
       l = Object.keys(t);
@@ -44,7 +44,7 @@ function Z(e) {
   return e
 }
 
-function P(e, n) {
+function N(e, n) {
   return n = null != n ? n : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, n) {
     var t = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -57,7 +57,7 @@ function P(e, n) {
   }), e
 }
 
-function N(e, n) {
+function T(e, n) {
   if (null == e) return {};
   var t, l, i = function(e, n) {
     if (null == e) return {};
@@ -73,7 +73,7 @@ function N(e, n) {
   return i
 }
 
-function T(e) {
+function P(e) {
   let {
     user: n,
     currentUser: t,
@@ -84,13 +84,13 @@ function T(e) {
     canManageRoles: m,
     onAddRole: p,
     onRemoveRole: f
-  } = e, j = m && null != c, x = i.useRef(null), g = i.useMemo(() => "roles-".concat((0, r.Z)()), []), T = (0, o.ZP)({
+  } = e, x = m && null != c, j = i.useRef(null), g = i.useMemo(() => "roles-".concat((0, r.Z)()), []), P = (0, o.ZP)({
     id: g,
     isEnabled: true,
     scrollToStart: y.Cyb,
     scrollToEnd: y.Cyb,
     wrap: true
-  }), A = d.length, E = 0 === A ? O.intl.string(O.t["vR7M+/"]) : O.intl.formatToPlainString(O.t.PCs0oq, {
+  }), A = d.length, E = 0 === A ? I.intl.string(I.t["vR7M+/"]) : I.intl.formatToPlainString(I.t.PCs0oq, {
     numRoles: A
   }), S = d.map(e => {
     var i;
@@ -103,19 +103,19 @@ function T(e) {
     }, e.id)
   });
   return (0, l.jsx)(s.bG, {
-    navigator: T,
+    navigator: P,
     children: (0, l.jsx)(s.SJ, {
       children: e => {
         var {
           ref: n
-        } = e, t = N(e, ["ref"]);
-        return (0, l.jsxs)("div", P(Z({
-          className: I.root,
+        } = e, t = T(e, ["ref"]);
+        return (0, l.jsxs)("div", N(O({
+          className: Z.root,
           "aria-label": E,
           ref: n
         }, t), {
-          children: [S, j && (0, l.jsx)(b.Z, {
-            buttonRef: x,
+          children: [S, x && (0, l.jsx)(b.Z, {
+            buttonRef: j,
             guild: a,
             guildMember: c,
             numRoles: A,
@@ -133,29 +133,29 @@ function A(e) {
     user: n,
     currentUser: t,
     guildId: r
-  } = e, o = N(e, ["user", "currentUser", "guildId"]);
+  } = e, o = T(e, ["user", "currentUser", "guildId"]);
   let {
     trackUserProfileAction: s
-  } = (0, j.KZ)(), v = (0, a.e7)([p.Z], () => p.Z.getGuild(r)), b = (0, a.e7)([u.ZP], () => u.ZP.getMember(r, n.id)), I = null == b ? true : b.roles, A = (0, a.Wu)([m.Z], () => m.Z.getManyRoles(r, null != I ? I : []).sort(x.Z), [I, r]), [E] = (0, a.Wu)([f.Z], () => [f.Z.can(y.Plq.MANAGE_ROLES, v), f.Z.getGuildVersion(r)]), S = i.useCallback(e => {
+  } = (0, x.KZ)(), v = (0, a.e7)([p.Z], () => p.Z.getGuild(r)), b = (0, a.e7)([u.ZP], () => u.ZP.getMember(r, n.id)), Z = null == b ? true : b.roles, A = (0, a.Wu)([m.Z], () => m.Z.getManyRoles(r, null != Z ? Z : []).sort(j.Z), [Z, r]), [E] = (0, a.Wu)([f.Z], () => [f.Z.can(y.Plq.MANAGE_ROLES, v), f.Z.getGuildVersion(r)]), S = i.useCallback(e => {
     var t, l;
     s({
       action: "REMOVE_ROLE"
     });
-    let i = null != (l = null == I ? true : I.filter(n => n !== e.id)) ? l : [];
+    let i = null != (l = null == Z ? true : Z.filter(n => n !== e.id)) ? l : [];
     (null == (t = e.tags) ? true : t.guild_connections) === null ? c.Z.unassignGuildRoleConnection(r, e.id) : d.Z.updateMemberRoles(r, n.id, i, [], [e.id])
-  }, [I, r, n.id, s]), C = i.useCallback(e => {
+  }, [Z, r, n.id, s]), C = i.useCallback(e => {
     s({
       action: "ADD_ROLE"
     });
-    let t = null != I ? I : [];
+    let t = null != Z ? Z : [];
     t.includes(e) || (t = [...t, e]), d.Z.updateMemberRoles(r, n.id, t, [e], [])
-  }, [I, r, n.id, s]);
+  }, [Z, r, n.id, s]);
   if (null == v) return null;
-  let w = E && null != b;
-  return 0 !== A.length || w ? (0, l.jsx)(g.Z, P(Z({
-    heading: O.intl.string(O.t.LPJmLy)
+  let _ = E && null != b;
+  return 0 !== A.length || _ ? (0, l.jsx)(g.Z, N(O({
+    heading: I.intl.string(I.t.LPJmLy)
   }, o), {
-    children: (0, l.jsx)(T, {
+    children: (0, l.jsx)(P, {
       user: n,
       currentUser: t,
       guild: v,

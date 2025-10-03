@@ -104,7 +104,7 @@ let C = Chunk647438.memo(function(e) {
     containerRef: w,
     className: D,
     wrapperClassName: L
-  } = e, [x, j] = i.useState(false), M = n || x || P === g._1z.FOCUSED, k = (0, l.e7)([h.ZP], () => h.ZP.isInputLocked((0, f.getPID)()));
+  } = e, [x, M] = i.useState(false), j = n || x || P === g._1z.FOCUSED, k = (0, l.e7)([h.ZP], () => h.ZP.isInputLocked((0, f.getPID)()));
   i.useEffect(() => {
     null == a || a()
   }, [a]);
@@ -118,10 +118,10 @@ let C = Chunk647438.memo(function(e) {
       e.stopPropagation(), null == m || m(e)
     }, [m]),
     Z = i.useCallback(() => {
-      j(true)
+      M(true)
     }, []),
     F = i.useCallback(() => {
-      j(false)
+      M(false)
     }, []);
 
   function V() {
@@ -133,7 +133,7 @@ let C = Chunk647438.memo(function(e) {
   }
 
   function H() {
-    let e = "function" == typeof O ? O(M, k) : O;
+    let e = "function" == typeof O ? O(j, k) : O;
     return null != O ? (0, r.jsx)(u.Text, {
       className: b.hint,
       color: "text-muted",
@@ -175,7 +175,7 @@ let C = Chunk647438.memo(function(e) {
   }
 
   function K() {
-    let e = null == N ? true : N(M, k);
+    let e = null == N ? true : N(j, k);
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)(s.animated.div, {
         className: b.iconAndDetails,
@@ -192,7 +192,7 @@ let C = Chunk647438.memo(function(e) {
           }), null != S ? (0, r.jsx)(u.Text, {
             color: "interactive-normal",
             variant: "text-sm/normal",
-            lineClamp: null != t ? t * (M ? 2 : 1) : true,
+            lineClamp: null != t ? t * (j ? 2 : 1) : true,
             children: S
           }) : null, H(), Y()]
         })]
@@ -321,8 +321,8 @@ function D(e) {
   }, [h, c]), L = i.useCallback((e, t) => null == g ? true : g(e, c, t), [g, c]), {
     props: {
       onNotificationShow: x,
-      onDismissClick: j,
-      renderFooter: M,
+      onDismissClick: M,
+      renderFooter: j,
       onNotificationClick: k,
       onConfirmClick: U,
       onCancelClick: G,

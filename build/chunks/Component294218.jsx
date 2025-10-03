@@ -2,7 +2,7 @@
 /** chunk id: 294218, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => M
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -96,13 +96,13 @@ function x(e) {
     onContextMenu: P,
     onClick: L,
     hideSimpleEmbedContent: x = true,
-    channel: j,
-    isGroupStart: M,
+    channel: M,
+    isGroupStart: j,
     animateAvatar: k,
     subscribeToComponentDispatch: U,
     renderThreadAccessory: G,
     trackAnnouncementViews: B = false
-  } = e, Z = D(e, ["message", "compact", "className", "onContextMenu", "onClick", "hideSimpleEmbedContent", "channel", "isGroupStart", "animateAvatar", "subscribeToComponentDispatch", "renderThreadAccessory", "trackAnnouncementViews"]), F = i.type === A.uaV.POLL_RESULT || null != (t = e.disableInteraction) && t, V = i.isFirstMessageInForumPost(j), H = (0, u.A)((null != (n = i.editedTimestamp) ? n : i.timestamp).valueOf()), {
+  } = e, Z = D(e, ["message", "compact", "className", "onContextMenu", "onClick", "hideSimpleEmbedContent", "channel", "isGroupStart", "animateAvatar", "subscribeToComponentDispatch", "renderThreadAccessory", "trackAnnouncementViews"]), F = i.type === A.uaV.POLL_RESULT || null != (t = e.disableInteraction) && t, V = i.isFirstMessageInForumPost(M), H = (0, u.A)((null != (n = i.editedTimestamp) ? n : i.timestamp).valueOf()), {
     content: Y,
     hasSpoilerEmbeds: W
   } = (0, E.Z)(i, {
@@ -112,11 +112,11 @@ function x(e) {
     allowLinks: true,
     previewLinkTarget: true
   }), K = i.type === A.uaV.REPLY ? i.messageReference : true, z = (0, l.e7)([d.Z], () => d.Z.getMessageByReference(K)), q = (0, s.JA)(i.id), X = (0, h.ZP)(i), Q = (0, l.e7)([f.Z], () => i.hasFlag(A.iLy.HAS_THREAD) && f.Z.getChannel(_.default.castMessageIdAsChannelId(i.id))), J = (0, c.p9)({
-    guildId: j.guild_id,
+    guildId: M.guild_id,
     roleId: X.iconRoleId
   }), $ = (0, b.Z)({
     message: i,
-    channel: j,
+    channel: M,
     enabled: B
   }), ee = (0, g.iG)(i), et = (0, g.Gx)(i);
   return (0, r.jsx)(m.Z, R({
@@ -126,10 +126,10 @@ function x(e) {
       [C.disableInteraction]: F
     }),
     disableInteraction: F,
-    childrenRepliedMessage: (0, S.Z)(i, j, K, z, a),
-    childrenExecutedCommand: (0, T.Z)(i, j, a),
+    childrenRepliedMessage: (0, S.Z)(i, M, K, z, a),
+    childrenExecutedCommand: (0, T.Z)(i, M, a),
     childrenHeader: (0, v.Z)(w(R({}, e), {
-      guildId: j.guild_id,
+      guildId: M.guild_id,
       author: X,
       roleIcon: J
     })),
@@ -148,4 +148,4 @@ function x(e) {
     author: X
   }, q, Z))
 }
-let j = Chunk647438.memo(x)
+let M = Chunk647438.memo(x)

@@ -21,8 +21,8 @@ let f = e => {
     guild: t,
     transitionState: n,
     onClose: i
-  } = e, [f, h] = l.useState(7), [j, g] = l.useState(null), [x, v] = l.useState([]), y = l.useCallback(async () => {
-    g(null), g(await u.Z.updateEstimate(t.id, f, x))
+  } = e, [f, h] = l.useState(7), [g, j] = l.useState(null), [x, v] = l.useState([]), y = l.useCallback(async () => {
+    j(null), j(await u.Z.updateEstimate(t.id, f, x))
   }, [f, t.id, x]);
   l.useEffect(() => {
     y()
@@ -86,10 +86,10 @@ let f = e => {
         type: c.R94.Types.DESCRIPTION,
         className: p.spacing,
         children: x.length > 0 ? b.intl.format(b.t["5WxHHh"], {
-          members: j,
+          members: g,
           days: f
         }) : b.intl.format(b.t.f13az8, {
-          members: j,
+          members: g,
           days: f
         })
       })]

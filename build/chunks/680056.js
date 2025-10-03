@@ -13,28 +13,28 @@ let o = e => {
     setExporting: n
   } = e, {
     analyticsLocations: o
-  } = (0, r.ZP)();
+  } = (0, a.ZP)();
   return {
     onShareClick: l.useCallback(async e => {
       let {
         clip: l,
-        cropData: r,
-        applicationAudioEnabled: c,
-        voiceAudioEnabled: s,
+        cropData: a,
+        applicationAudioEnabled: s,
+        voiceAudioEnabled: c,
         onShareComplete: u
       } = e;
       n(l.id);
       try {
-        var d, p, m, f, b, g, h, y, x, j;
-        let e = (0, a.W)(t);
+        var d, p, m, f, g, b, h, x, j, y;
+        let e = (0, r.W)(t);
         await (0, i.e)(l, {
           channelId: e ? t : true,
           analyticsLocations: o,
           editMetadata: {
-            start: null != (g = null != (b = null == r ? true : r.start) ? b : null == (d = l.editMetadata) ? true : d.start) ? g : 0,
-            end: null != (y = null != (h = null == r ? true : r.end) ? h : null == (p = l.editMetadata) ? true : p.end) ? y : l.length / 1e3,
-            applicationAudio: null == (x = null != c ? c : null == (m = l.editMetadata) ? true : m.applicationAudio) || x,
-            voiceAudio: null == (j = null != s ? s : null == (f = l.editMetadata) ? true : f.voiceAudio) || j
+            start: null != (b = null != (g = null == a ? true : a.start) ? g : null == (d = l.editMetadata) ? true : d.start) ? b : 0,
+            end: null != (x = null != (h = null == a ? true : a.end) ? h : null == (p = l.editMetadata) ? true : p.end) ? x : l.length / 1e3,
+            applicationAudio: null == (j = null != s ? s : null == (m = l.editMetadata) ? true : m.applicationAudio) || j,
+            voiceAudio: null == (y = null != c ? c : null == (f = l.editMetadata) ? true : f.voiceAudio) || y
           }
         })
       } catch (e) {} finally {

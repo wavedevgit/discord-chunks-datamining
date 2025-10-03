@@ -24,7 +24,7 @@ function g(e) {
     avError: l
   } = e, g = "", {
     text: b,
-    node: v
+    node: E
   } = function(e) {
     var t;
     if (null == e) return {
@@ -48,16 +48,16 @@ function g(e) {
     }
   }(l);
   null != t && null != b ? g = "".concat(t, " ").concat(b) : null != t && (g = t);
-  let [E] = i.useState(new o.V7), [h, y] = i.useState(false);
+  let [v] = i.useState(new o.V7), [h, S] = i.useState(false);
 
-  function S() {
-    E.start(250, () => {
-      y(false)
+  function y() {
+    v.start(250, () => {
+      S(false)
     })
   }
 
   function O() {
-    E.stop(), y(true)
+    v.stop(), S(true)
   }
   return (0, r.jsx)(c.ua7, {
     forceOpen: h,
@@ -65,12 +65,12 @@ function g(e) {
     text: (0, r.jsx)(f.Z, {
       children: (0, r.jsxs)("div", {
         onMouseEnter: O,
-        onMouseLeave: S,
-        children: [t, null != v && (0, r.jsx)(c.Text, {
+        onMouseLeave: y,
+        children: [t, null != E && (0, r.jsx)(c.Text, {
           variant: "text-sm/semibold",
           color: "text-muted",
           className: _.errorCodeMessage,
-          children: v
+          children: E
         })]
       })
     }),
@@ -98,12 +98,12 @@ function g(e) {
         return e
       }({}, e), i = i = {
         onMouseEnter: O,
-        onMouseLeave: S,
+        onMouseLeave: y,
         className: a()(n, _.root),
         children: (0, r.jsx)(f.Z, {
           children: (0, r.jsx)(c.Mgn, {
             onMouseEnter: O,
-            onMouseLeave: S,
+            onMouseLeave: y,
             size: "custom",
             width: 20,
             height: 20,

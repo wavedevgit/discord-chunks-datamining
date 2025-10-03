@@ -9,6 +9,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
+  Chunk28664 = require("./28664.jsx"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk555573 = require("./555573.js"),
@@ -25,8 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk689079 = require("./689079.js"),
   Chunk761652 = require("./761652.js"),
-  Chunk388032 = require("./388032.jsx"),
-  Chunk549518 = require("./549518.js");
+  Chunk388032 = require("./388032.jsx");
 
 function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -69,33 +69,33 @@ function C(e, t) {
 
 function N(e, t, n, i, a) {
   if (null == e) return;
-  let d = () => {
-    let r = p.Z.getChannel(e);
+  let o = () => {
+    let r = h.Z.getChannel(e);
     if (null == r) return;
     let {
       command: o,
       application: s
-    } = c.Xq({
+    } = u.Xq({
       channel: r,
       type: "channel"
     }, n, a);
     if (null != o && o.untranslatedName === t) {
-      var d, f;
-      E.S.dispatch(b.CkL.FOCUS_CHANNEL_TEXT_AREA, {
+      var l, f;
+      b.S.dispatch(y.CkL.FOCUS_CHANNEL_TEXT_AREA, {
         channelId: e
       });
       let t = null != s ? {
-        type: u.Qi.APPLICATION,
+        type: d.Qi.APPLICATION,
         id: s.id,
         icon: s.icon,
-        name: null != (f = null == s || null == (d = s.bot) ? true : d.username) ? f : s.name,
+        name: null != (f = null == s || null == (l = s.bot) ? true : l.username) ? f : s.name,
         application: s
       } : null;
-      l.Po({
+      c.Po({
         channelId: e,
         command: null,
         section: null
-      }), l.Po({
+      }), c.Po({
         channelId: e,
         command: o,
         section: t,
@@ -103,23 +103,23 @@ function N(e, t, n, i, a) {
       })
     }
   };
-  "" !== h.Z.getDraft(e, h.d.ChannelMessage) ? (0, s.h7j)(t => (0, r.jsx)(s.ConfirmModal, C(S({
-    header: v.intl.string(v.t.pe26Cg),
-    confirmText: v.intl.string(v.t.VkKicX),
-    cancelText: v.intl.string(v.t["ETE/oK"]),
-    onConfirm: () => d(),
-    confirmButtonColor: o.zx.Colors.BRAND,
+  "" !== m.Z.getDraft(e, m.d.ChannelMessage) ? (0, l.h7j)(t => (0, r.jsx)(l.ConfirmModal, C(S({
+    header: I.intl.string(I.t.pe26Cg),
+    confirmText: I.intl.string(I.t.VkKicX),
+    cancelText: I.intl.string(I.t["ETE/oK"]),
+    onConfirm: () => o(),
+    confirmButtonColor: s.zx.Colors.BRAND,
     onCloseCallback: () => {
-      E.S.dispatch(b.CkL.FOCUS_CHANNEL_TEXT_AREA, {
+      b.S.dispatch(y.CkL.FOCUS_CHANNEL_TEXT_AREA, {
         channelId: e
       })
     }
   }, t), {
-    children: (0, r.jsx)(s.Text, {
+    children: (0, r.jsx)(l.Text, {
       variant: "text-md/normal",
-      children: v.intl.string(v.t["+awCIy"])
+      children: I.intl.string(I.t["+awCIy"])
     })
-  }))) : d()
+  }))) : o()
 }
 
 function R(e) {
@@ -128,37 +128,37 @@ function R(e) {
     node: n,
     stateKey: o,
     children: s
-  } = e, l = (0, a.e7)([p.Z, g.Z], () => {
+  } = e, l = (0, a.e7)([h.Z, E.Z], () => {
     var e;
-    return p.Z.getChannel(null != (e = n.channelId) ? e : g.Z.getChannelId())
+    return h.Z.getChannel(null != (e = n.channelId) ? e : E.Z.getChannelId())
   }, [n.channelId]), {
-    hasSendMessagePerm: h,
-    hasUseAppCommandsPerm: E
-  } = (0, a.cj)([m.Z], () => ({
-    hasSendMessagePerm: m.Z.can(b.Plq.SEND_MESSAGES, l),
-    hasUseAppCommandsPerm: m.Z.can(b.Plq.USE_APPLICATION_COMMANDS, l)
-  })), v = true !== l ? {
+    hasSendMessagePerm: c,
+    hasUseAppCommandsPerm: m
+  } = (0, a.cj)([g.Z], () => ({
+    hasSendMessagePerm: g.Z.can(y.Plq.SEND_MESSAGES, l),
+    hasUseAppCommandsPerm: g.Z.can(y.Plq.USE_APPLICATION_COMMANDS, l)
+  })), b = true !== l ? {
     type: "channel",
     channel: l
   } : {
     type: "contextless"
   }, {
     command: I
-  } = c.YZ(v, null != (t = n.commandKey) ? t : ""), T = _.dN.useSetting(), S = i.useMemo(() => {
+  } = u.YZ(b, null != (t = n.commandKey) ? t : ""), T = p.dN.useSetting(), S = i.useMemo(() => {
     if (null == I || null == l || I.untranslatedName !== n.commandName || T) returnfalse;
     let e = l.isPrivate();
-    if ((0, f.xl)(l) || !e && !h) returnfalse;
-    let t = (null == I ? true : I.applicationId) === y.bi.BUILT_IN;
-    return !!e || !!t || !!E
-  }, [l, I, h, E, n.commandName, T]), A = i.useCallback(e => {
-    null == e || e.stopPropagation(), null != l && null != n.commandName && null != n.commandKey && N(l.id, n.commandName, n.commandKey, u.Vh.MENTION)
+    if ((0, _.xl)(l) || !e && !c) returnfalse;
+    let t = (null == I ? true : I.applicationId) === O.bi.BUILT_IN;
+    return !!e || !!t || !!m
+  }, [l, I, c, m, n.commandName, T]), A = i.useCallback(e => {
+    null == e || e.stopPropagation(), null != l && null != n.commandName && null != n.commandKey && N(l.id, n.commandName, n.commandKey, d.Vh.MENTION)
   }, [l, n.commandKey, n.commandName]);
-  return S ? (0, r.jsxs)(d.Z, {
+  return S ? (0, r.jsxs)(f.Z, {
     role: "link",
     onClick: A,
-    children: [O.GI, s]
+    children: [v.GI, s]
   }, o) : (0, r.jsxs)("span", {
-    children: [O.GI, s]
+    children: [v.GI, s]
   })
 }
 
@@ -169,27 +169,18 @@ function P(e) {
     commandDescription: i,
     applicationId: l,
     onClick: c
-  } = e, d = (0, a.e7)([g.Z], () => g.Z.getChannelId()), f = e => {
-    null == e || e.stopPropagation(), N(d, n, t, u.Vh.POPULAR_COMMANDS, l), null == c || c(t)
+  } = e, u = (0, a.e7)([E.Z], () => E.Z.getChannelId()), f = e => {
+    null == e || e.stopPropagation(), N(u, n, t, d.Vh.POPULAR_COMMANDS, l), null == c || c(t)
   };
-  return (0, r.jsx)(s.ua7, {
+  return (0, r.jsx)(o.u, {
     text: i,
     position: "top",
-    tooltipContentClassName: I.tooltip,
-    children: e => {
-      let {
-        onMouseEnter: t,
-        onMouseLeave: i
-      } = e;
-      return (0, r.jsxs)(o.zx, {
-        color: o.Tt.PRIMARY,
-        size: o.Ph.ICON,
-        onClick: f,
-        onMouseEnter: t,
-        onMouseLeave: i,
-        children: [O.GI, n]
-      })
-    }
+    children: (0, r.jsxs)(s.zx, {
+      onClick: f,
+      color: s.Tt.PRIMARY,
+      size: s.Ph.ICON,
+      children: [v.GI, n]
+    })
   })
 }
 

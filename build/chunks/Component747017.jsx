@@ -56,15 +56,15 @@ function v(e) {
     }, [n]);
   if ((0, l.e7)([_.Z], () => _.Z.isBlockedOrIgnored(null == t ? true : t.id))) return null;
   let x = (null == t ? true : t.bot) === true,
-    j = ((null == L ? true : L.state) != null || null != D) && "xs" === S,
-    M = () => {
+    M = ((null == L ? true : L.state) != null || null != D) && "xs" === S,
+    j = () => {
       if (null != P) return (0, r.jsx)(h.Z, {
         stream: P,
         game: null == n ? true : n.find(c.Z),
         textVariant: "text-".concat(S, "/medium"),
         textClassName: I,
         iconClassName: T,
-        hideText: j,
+        hideText: M,
         hideIcon: x,
         hideTooltip: R
       });
@@ -79,7 +79,7 @@ function v(e) {
         textVariant: "text-".concat(S, "/medium"),
         textClassName: I,
         iconClassName: T,
-        hideText: j,
+        hideText: M,
         hideIcon: x,
         hideTooltip: R
       }) : null != v ? (0, r.jsx)(E.Z, {
@@ -87,7 +87,7 @@ function v(e) {
         textVariant: "text-".concat(S, "/medium"),
         textClassName: I,
         iconClassName: T,
-        hideText: j,
+        hideText: M,
         hideTooltip: R
       }) : null
     },
@@ -110,7 +110,7 @@ function v(e) {
     });
   return (0, r.jsxs)("div", {
     className: k,
-    children: [M(), (0, r.jsx)(s.xvT, {
+    children: [j(), (0, r.jsx)(s.xvT, {
       variant: "text-".concat(S, "/normal"),
       className: o()(O.truncated, O.dot, I),
       children: b.l

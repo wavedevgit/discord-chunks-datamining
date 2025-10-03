@@ -13,7 +13,7 @@ require.d(exports, {
   Bz: () => ts,
   C1: () => tg,
   C9: () => tm,
-  Dr: () => eM,
+  Dr: () => ej,
   F9: () => tP,
   FI: () => tS,
   FX: () => eO,
@@ -28,7 +28,7 @@ require.d(exports, {
   LM: () => eR,
   Mo: () => tG,
   NI: () => tU,
-  Nj: () => ej,
+  Nj: () => eM,
   PB: () => tn,
   PM: () => eh,
   Pb: () => eG,
@@ -54,7 +54,7 @@ require.d(exports, {
   f2: () => eH,
   fY: () => tu,
   gI: () => td,
-  hF: () => tM,
+  hF: () => tj,
   hQ: () => el,
   iQ: () => ee,
   il: () => e1,
@@ -69,7 +69,7 @@ require.d(exports, {
   qe: () => tL,
   t2: () => em,
   u7: () => tI,
-  uN: () => tj,
+  uN: () => tM,
   vB: () => tB,
   vQ: () => eA,
   vR: () => eP,
@@ -216,7 +216,7 @@ function ee(e) {
 function et(e) {
   return (0, a.EQ)(e).with({
     config_version: 2
-  }, e => (0, j.Q)(e)).exhaustive()
+  }, e => (0, M.Q)(e)).exhaustive()
 }
 
 function en(e) {
@@ -307,7 +307,7 @@ function es(e) {
       secondary: e.colors.secondary
     },
     rewards: e.rewards.map(eo),
-    cosponsorMetadata: (0, j.s)(e.cosponsor_metadata)
+    cosponsorMetadata: (0, M.s)(e.cosponsor_metadata)
   }
 }
 
@@ -422,13 +422,13 @@ function eg(e) {
 }
 
 function eE(e) {
-  return Object.keys(M.a_).includes(w.jn[e])
+  return Object.keys(j.a_).includes(w.jn[e])
 }
 
 function eb(e, t) {
   if (!eE(t)) returnfalse;
   let n = w.jn[t];
-  return (0, S.yE)(e.dismissedQuestContent, M.a_[n])
+  return (0, S.yE)(e.dismissedQuestContent, j.a_[n])
 }
 
 function ey(e) {
@@ -534,14 +534,14 @@ function ex(e) {
   return null != e.taskConfigV2.tasks[o.X.PLAY_ON_DESKTOP]
 }
 
-function ej(e) {
+function eM(e) {
   let {
     quest: t
   } = e;
   return ex(t.config)
 }
 
-function eM(e) {
+function ej(e) {
   let {
     quest: t
   } = e;
@@ -553,7 +553,7 @@ function ek(e) {
 }
 
 function eU(e) {
-  return null != e && ej({
+  return null != e && eM({
     quest: e
   })
 }
@@ -566,7 +566,7 @@ function eG(e) {
 
 function eB(e) {
   let t = x.r.build(e.config).application.id;
-  return ek(e) && t === M.Ts
+  return ek(e) && t === j.Ts
 }
 
 function eZ(e, t) {
@@ -735,7 +735,7 @@ function e4(e) {
 }
 
 function e8(e) {
-  return (e4(e) || ek(e)) && e.config.features.includes(M.S7.START_QUEST_CTA)
+  return (e4(e) || ek(e)) && e.config.features.includes(j.S7.START_QUEST_CTA)
 }
 
 function e5(e) {
@@ -902,14 +902,14 @@ function tE(e) {
 }
 
 function tb(e) {
-  let t = ej({
+  let t = eM({
       quest: e
-    }) || eM({
+    }) || ej({
       quest: e
     }),
     n = te(e),
     r = [];
-  return t && r.push(M.cd.DESKTOP), n && r.push(M.cd.CONSOLE), r
+  return t && r.push(j.cd.DESKTOP), n && r.push(j.cd.CONSOLE), r
 }
 
 function ty(e) {
@@ -961,7 +961,7 @@ function tA(e) {
 
 function tC(e) {
   let t = tA(e);
-  return null != t && M.v6.has(t)
+  return null != t && j.v6.has(t)
 }
 let tN = "landscape";
 
@@ -991,7 +991,7 @@ function tL(e, t) {
     quest: r,
     adDecisionData: i
   } = null != (n = P.Z.questToDeliverForPlacement.get(tA(t))) ? n : {};
-  return null != i && (null == r ? true : r.id) === e ? i : M.Jp
+  return null != i && (null == r ? true : r.id) === e ? i : j.Jp
 }
 
 function tx(e) {
@@ -1002,7 +1002,7 @@ function tx(e) {
   return n
 }
 
-function tj(e) {
+function tM(e) {
   var t;
   let {
     adContext: n
@@ -1010,7 +1010,7 @@ function tj(e) {
   return n
 }
 
-function tM(e) {
+function tj(e) {
   var t, n;
   let r = null != (n = null == (t = e.userStatus) ? true : t.claimedTier) ? n : 0;
   return "rewardsConfig" in e.config ? e.config.rewardsConfig.rewards[r] : e.config.rewards[r]
@@ -1023,7 +1023,7 @@ function tk(e) {
 function tU(e, t) {
   let n = new Map;
   for (let [r, i] of e)
-    if (!(eG(i) || eZ(i, M.S7.NON_GAMING_PLAY_QUEST))) {
+    if (!(eG(i) || eZ(i, j.S7.NON_GAMING_PLAY_QUEST))) {
       for (let e of tk(i))
         if (t.has(e)) {
           n.set(r, i);

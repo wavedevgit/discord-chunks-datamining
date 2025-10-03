@@ -62,8 +62,8 @@ function P(e) {
     roleId: D,
     openedAt: L,
     setPopoutRef: x,
-    closePopout: j,
-    disableUserProfileLink: M = __OVERLAY__,
+    closePopout: M,
+    disableUserProfileLink: j = __OVERLAY__,
     newAnalyticsLocations: k = [],
     disableAutoFocus: U = false
   } = e, G = (0, h.ZP)(n.id, N), {
@@ -80,12 +80,12 @@ function P(e) {
     null == x || x(null == F ? true : F.current)
   }, [F, x]);
   let H = () => {
-      null == j || j(), (0, m.openUserProfileModal)(R({
+      null == M || M(), (0, m.openUserProfileModal)(R({
         sourceAnalyticsLocations: B,
         hideRestrictedProfile: true
       }, Z))
     },
-    Y = !M && (0, c.Z)(n.id),
+    Y = !j && (0, c.Z)(n.id),
     W = () => Y ? (0, r.jsx)(a.sNh, {
       id: "view-profile",
       label: A.intl.string(A.t["+Xp3ho"]),
@@ -151,7 +151,7 @@ function P(e) {
               tags: (0, r.jsx)(E.Z, {
                 displayProfile: G,
                 themeType: S.l.POPOUT,
-                onClose: j
+                onClose: M
               })
             }), (0, r.jsx)(y.Z, {
               userId: n.id,

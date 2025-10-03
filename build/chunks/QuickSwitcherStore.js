@@ -43,8 +43,8 @@ let w = "seenQSTutorial",
   D = 5,
   L = 100,
   x = [Chunk212819.h8.USER, Chunk212819.h8.GROUP_DM, Chunk212819.h8.TEXT_CHANNEL, Chunk212819.h8.GUILD, Chunk212819.h8.APPLICATION, Chunk212819.h8.LINK, Chunk212819.h8.IN_APP_NAVIGATION],
-  j = 0,
-  M = false,
+  M = 0,
+  j = false,
   k = false,
   U = null,
   G = [],
@@ -179,10 +179,10 @@ function q(e, t) {
     default:
       G = e
   }
-  if (t !== B) B = t, Z = Math.max(t.length, Z), j = (0, u.gJ)(u.a8.DOWN, false, G);
+  if (t !== B) B = t, Z = Math.max(t.length, Z), M = (0, u.gJ)(u.a8.DOWN, false, G);
   else {
-    let e = G[j];
-    null != e && e.type === u.h8.HEADER && (j = (0, u.gJ)(u.a8.DOWN, j, G))
+    let e = G[M];
+    null != e && e.type === u.h8.HEADER && (M = (0, u.gJ)(u.a8.DOWN, M, G))
   }
   ea.emitChange()
 }
@@ -255,17 +255,17 @@ function et(e) {
 }
 
 function en(e) {
-  j = e.selectedIndex
+  M = e.selectedIndex
 }
 
 function er() {
-  if (M) returnfalse;
-  M = true, Chunk433517.K.set(w, true)
+  if (j) returnfalse;
+  j = true, Chunk433517.K.set(w, true)
 }
 class ei extends(i = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     var t;
-    this.waitFor(b.ZP, y.Z, m.Z), this.syncWith([p.Z], () => true), M = l.K.get(w) || false, V = null != (t = null == e ? true : e.channelHistory) ? t : []
+    this.waitFor(b.ZP, y.Z, m.Z), this.syncWith([p.Z], () => true), j = l.K.get(w) || false, V = null != (t = null == e ? true : e.channelHistory) ? t : []
   }
   getState() {
     return {
@@ -300,8 +300,8 @@ class ei extends(i = Chunk442837.ZP.PersistedStore) {
       query: null != r ? r.query : "",
       queryMode: U,
       results: G,
-      selectedIndex: j,
-      seenTutorial: M,
+      selectedIndex: M,
+      seenTutorial: j,
       maxQueryLength: Z
     }
   }

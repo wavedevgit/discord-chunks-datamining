@@ -91,11 +91,11 @@ let N = Chunk647438.forwardRef(function(e, t) {
       disableBorderColor: L,
       onMouseDown: x
     } = e,
-    j = (0, s.JA)(P.id),
+    M = (0, s.JA)(P.id),
     {
-      tabIndex: M
-    } = j,
-    k = A(j, ["tabIndex"]),
+      tabIndex: j
+    } = M,
+    k = A(M, ["tabIndex"]),
     U = (0, E.p9)({
       roleId: P.id,
       size: 16,
@@ -149,7 +149,7 @@ let N = Chunk647438.forwardRef(function(e, t) {
       children: (0, r.jsxs)(f.P3F, {
         className: o()(O.roleRemoveButtonCanRemove, O.roleRemoveButton),
         onClick: w,
-        tabIndex: M,
+        tabIndex: j,
         focusProps: {
           focusClassName: O.roleRemoveIconFocused
         },
@@ -184,7 +184,7 @@ let N = Chunk647438.forwardRef(function(e, t) {
       onContextMenu: Z,
       onMouseDown: x,
       "aria-label": P.name,
-      tabIndex: M
+      tabIndex: j
     }, k), {
       children: [q(), null != U ? (0, r.jsx)(g.Z, S(I({
         className: O.roleIcon

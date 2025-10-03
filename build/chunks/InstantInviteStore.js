@@ -100,10 +100,10 @@ function x(e) {
   }), r = null != (t = o()(l()(u()(Object.values(b), "createdAt")))) ? t : null, y = false
 }
 
-function j(e) {
+function M(e) {
   delete m[e.channelId]
 }
-class M extends(i = Chunk442837.ZP.Store) {
+class j extends(i = Chunk442837.ZP.Store) {
   getInvite(e) {
     var t, n;
     let {
@@ -123,8 +123,8 @@ class M extends(i = Chunk442837.ZP.Store) {
     return null != r && !O && !v
   }
 }
-h(M, "displayName", "InstantInviteStore");
-let k = new M(Chunk570140.Z, {
+h(j, "displayName", "InstantInviteStore");
+let k = new j(Chunk570140.Z, {
   CONNECTION_OPEN: I,
   CHANNEL_DELETE: T,
   FRIEND_INVITE_CREATE_SUCCESS: N,
@@ -137,5 +137,5 @@ let k = new M(Chunk570140.Z, {
   FRIEND_INVITE_CREATE_REQUEST: D,
   FRIEND_INVITES_FETCH_REQUEST: L,
   FRIEND_INVITES_FETCH_RESPONSE: x,
-  INSTANT_INVITE_CLEAR: j
+  INSTANT_INVITE_CLEAR: M
 })

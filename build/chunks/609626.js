@@ -18,7 +18,7 @@ function s(e, t) {
     c = a.intl.string(a.t.WRj1Wl),
     {
       trackView: d,
-      trackClick: p
+      trackClick: h
     } = (0, r.R)(l.n0.ActivityUserJoin, {
       notif_type: l.n0.ActivityUserJoin,
       notif_user_id: e.id,
@@ -34,7 +34,7 @@ function s(e, t) {
       d()
     },
     onDismissClick: () => {
-      p("dismiss")
+      h("dismiss")
     }
   }
 }

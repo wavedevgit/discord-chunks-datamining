@@ -76,15 +76,15 @@ function S(e) {
   }, []);
   let L = (0, a.cj)([d.Z], () => D ? d.Z.videoFilterAssets : {}),
     x = i.useMemo(() => Object.values(L).filter(e => e.type === m.xV.BACKGROUND), [L]),
-    j = (0, s.O)(),
-    M = {
+    M = (0, s.O)(),
+    j = {
       isVideoBackgroundSupported: w,
       onSelectBackgroundOption: I,
       selectedBackgroundOption: O
     },
-    k = i.useRef(M);
+    k = i.useRef(j);
   i.useEffect(() => {
-    k.current = M
+    k.current = j
   }), i.useEffect(() => {
     let {
       isVideoBackgroundSupported: e,
@@ -109,10 +109,10 @@ function S(e) {
     },
     G = e => {
       I(e), (0, _.FU)(e, S, {
-        location: j.location
+        location: M.location
       }).then(() => P(null)).catch(() => {
         P(b.intl.string(b.t.ejrSLS)), (0, _.FU)(null, S, {
-          location: j.location
+          location: M.location
         })
       })
     },
@@ -123,7 +123,7 @@ function S(e) {
         } = await n.e("87200").then(n.bind(n, 592163));
         return n => (0, r.jsx)(e, T(v({}, n), {
           onLearnMore: t,
-          analyticsSource: T(v({}, j.location), {
+          analyticsSource: T(v({}, M.location), {
             object: g.qAy.BUTTON_CTA
           })
         }))

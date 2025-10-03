@@ -49,7 +49,7 @@ function f(e, t) {
 }
 let h = [];
 
-function b() {
+function x() {
   return (0, Chunk951288.jsx)("div", {
     className: Chunk197530.actionItemContainer,
     children: (0, Chunk951288.jsxs)("div", {
@@ -74,7 +74,7 @@ function b() {
   })
 }
 
-function x(e) {
+function b(e) {
   let {
     guildId: t,
     onAddAction: l
@@ -118,15 +118,15 @@ let j = function(e) {
     var t;
     let r = null == (t = n[e]) ? true : t.channelId;
     null != r && (0, c.Hr)(r)
-  }, [n]), v = n.map(e => f(p({}, e), {
+  }, [n]), _ = n.map(e => f(p({}, e), {
     id: e.channelId
-  })), _ = i.useCallback(e => {
+  })), v = i.useCallback(e => {
     (0, c.hS)(e)
   }, []), {
-    handleDragStart: O,
-    handleDragReset: y,
-    handleDragComplete: C
-  } = (0, a.Z)(v, _);
+    handleDragStart: C,
+    handleDragReset: O,
+    handleDragComplete: y
+  } = (0, a.Z)(_, v);
   return (0, r.jsxs)("div", {
     className: g.section,
     children: [n.map((e, n) => (0, r.jsx)(u.Z, {
@@ -135,10 +135,10 @@ let j = function(e) {
       actionIndex: n,
       onChange: m,
       onDelete: j,
-      onDragStart: O,
-      onDragReset: y,
-      onDragComplete: C
-    }, e.channelId)), (0, r.jsx)(b, {}), n.length < o.O9 && (0, r.jsx)(x, {
+      onDragStart: C,
+      onDragReset: O,
+      onDragComplete: y
+    }, e.channelId)), (0, r.jsx)(x, {}), n.length < o.O9 && (0, r.jsx)(b, {
       guildId: t,
       onAddAction: s
     })]

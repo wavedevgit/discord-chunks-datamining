@@ -32,7 +32,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk809946 = require("./809946.js");
 
-function Z(e) {
+function w(e) {
   e.stopPropagation()
 }
 
@@ -45,8 +45,8 @@ function T(e) {
   return (0, r.jsx)(p.P3F, {
     "aria-expanded": n,
     onClick: i,
-    className: o()(w.messagesGroupHeaderWrap, {
-      [w.collapsed]: !n
+    className: o()(Z.messagesGroupHeaderWrap, {
+      [Z.collapsed]: !n
     }),
     children: (0, r.jsxs)(p.Kqy, {
       gap: 4,
@@ -55,11 +55,11 @@ function T(e) {
       children: [(0, r.jsx)(p.X6q, {
         variant: "text-sm/medium",
         color: "text-secondary",
-        className: w.messagesGroupHeader,
+        className: Z.messagesGroupHeader,
         children: (0, a.capitalize)(N.intl.string(S.Vv[t]).toLowerCase())
       }), (0, r.jsx)(p.CJ0, {
         size: "xxs",
-        className: w.chevron
+        className: Z.chevron
       })]
     })
   })
@@ -110,14 +110,14 @@ function D(e) {
     loadMore: l,
     renderLoadingState: a,
     renderMessageGroup: d,
-    scrollerClassName: h,
+    scrollerClassName: f,
     className: g,
-    listName: I,
+    listName: P,
     ignoreGrouping: N = false
-  } = e, D = (0, y.fJ)(), L = i.useRef(null), M = (0, f.Z)(I, L), {
+  } = e, D = (0, O.fJ)(), L = i.useRef(null), M = (0, h.Z)(P, L), {
     entrypoint: k,
     notificationCenterVariant: U
-  } = (0, O.pN)({
+  } = (0, y.pN)({
     location: "NotificationsInboxSidebarList"
   }), {
     isLoading: G,
@@ -159,8 +159,8 @@ function D(e) {
         animate: true
       })
     }
-    return b.S.subscribe(P.CkL.SCROLL_PAGE_DOWN, t), b.S.subscribe(P.CkL.SCROLL_PAGE_UP, e), () => {
-      b.S.unsubscribe(P.CkL.SCROLL_PAGE_DOWN, t), b.S.unsubscribe(P.CkL.SCROLL_PAGE_UP, e)
+    return b.S.subscribe(I.CkL.SCROLL_PAGE_DOWN, t), b.S.subscribe(I.CkL.SCROLL_PAGE_UP, e), () => {
+      b.S.unsubscribe(I.CkL.SCROLL_PAGE_DOWN, t), b.S.unsubscribe(I.CkL.SCROLL_PAGE_UP, e)
     }
   }, []);
   let K = i.useCallback(() => {
@@ -210,7 +210,7 @@ function D(e) {
           isOpen: H[t],
           toggleOpenedState: () => {
             let e = H[t];
-            z(t), (0, y.RZ)({
+            z(t), (0, O.RZ)({
               section: t,
               enabled: !e,
               viewId: D
@@ -256,7 +256,7 @@ function D(e) {
       size: e
     })
   }, [en]);
-  return (0, y.vU)({
+  return (0, O.vU)({
     notificationCenterVariant: U,
     entrypoint: k,
     messages: t,
@@ -264,9 +264,9 @@ function D(e) {
     messagesByCategory: Y,
     viewId: D
   }), (0, r.jsx)("div", {
-    className: o()(g, w.messagesPopoutWrap),
-    onClick: Z,
-    onDoubleClick: Z,
+    className: o()(g, Z.messagesPopoutWrap),
+    onClick: w,
+    onDoubleClick: w,
     "aria-label": e["aria-label"],
     children: (0, r.jsx)(c.bG, {
       navigator: M,
@@ -312,7 +312,7 @@ function D(e) {
               var t;
               L.current = e, i.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
             },
-            className: o()(w.messagesPopout, h),
+            className: o()(Z.messagesPopout, f),
             onScroll: K,
             fade: true
           }, l), n = n = {

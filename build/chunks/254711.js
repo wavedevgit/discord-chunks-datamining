@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Kh: () => B,
-  Tm: () => M
+  Tm: () => j
 }), require("./388685.js"), require("./781311.js"), require("./415506.js");
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
@@ -72,11 +72,11 @@ function L(e, t) {
   }), e
 }
 let x = require("./227419.jsx").Z,
-  j = (e, t) => {
+  M = (e, t) => {
     var n;
     return null == (n = e.find(e => e.name === t)) ? true : n.value
   },
-  M = {
+  j = {
     [Chunk689079.bi.BUILT_IN]: {
       id: Chunk689079.bi.BUILT_IN,
       type: Chunk895924.Qi.BUILT_IN,
@@ -118,7 +118,7 @@ let x = require("./227419.jsx").Z,
     }],
     execute: e => {
       var t;
-      let n = null != (t = j(e, "message")) ? t : "";
+      let n = null != (t = M(e, "message")) ? t : "";
       return {
         content: "".concat(n, " \xaf\\_(ツ)_/\xaf").trim()
       }
@@ -149,7 +149,7 @@ let x = require("./227419.jsx").Z,
     }],
     execute: e => {
       var t;
-      let n = null != (t = j(e, "message")) ? t : "";
+      let n = null != (t = M(e, "message")) ? t : "";
       return {
         content: "".concat(n, " (╯\xb0□\xb0)╯︵ ┻━┻").trim()
       }
@@ -180,7 +180,7 @@ let x = require("./227419.jsx").Z,
     }],
     execute: e => {
       var t;
-      let n = null != (t = j(e, "message")) ? t : "";
+      let n = null != (t = M(e, "message")) ? t : "";
       return {
         content: "".concat(n, " ┬─┬ノ( \xba _ \xbaノ)").trim()
       }
@@ -219,7 +219,7 @@ let x = require("./227419.jsx").Z,
     execute: e => {
       var t;
       return {
-        content: null != (t = j(e, "message")) ? t : "",
+        content: null != (t = M(e, "message")) ? t : "",
         tts: true
       }
     }
@@ -250,7 +250,7 @@ let x = require("./227419.jsx").Z,
     }],
     execute: e => {
       var t;
-      let n = null != (t = j(e, "message")) ? t : "";
+      let n = null != (t = M(e, "message")) ? t : "";
       return {
         content: "_".concat(n, "_")
       }
@@ -282,7 +282,7 @@ let x = require("./227419.jsx").Z,
     }],
     execute: e => {
       var t;
-      let n = null != (t = j(e, "message")) ? t : "";
+      let n = null != (t = M(e, "message")) ? t : "";
       return {
         content: (0, A.XmY)(n).trim()
       }
@@ -324,7 +324,7 @@ let x = require("./227419.jsx").Z,
         channel: i
       } = t;
       if (null == r || null == i) return;
-      let a = null != (n = j(e, "new_nick")) ? n : "";
+      let a = null != (n = M(e, "new_nick")) ? n : "";
       l.Z.changeNickname(r.id, i.id, A.ME, a || "")
     }
   }, {
@@ -373,7 +373,7 @@ let x = require("./227419.jsx").Z,
       var n, r;
       let {
         channel: i
-      } = t, a = null != (n = j(e, "name")) ? n : "", o = null != (r = j(e, "message")) ? r : "", l = await (0, m.gK)(i, a, s.d.PUBLIC_THREAD, (0, h.WD)(i, null), "Slash Command");
+      } = t, a = null != (n = M(e, "name")) ? n : "", o = null != (r = M(e, "message")) ? r : "", l = await (0, m.gK)(i, a, s.d.PUBLIC_THREAD, (0, h.WD)(i, null), "Slash Command");
       d.Z.sendMessage(l.id, p.ZP.parse(l, o), true, {
         location: N.dy.THREAD_CREATION
       })
@@ -427,13 +427,13 @@ let x = require("./227419.jsx").Z,
         channel: i
       } = t;
       if (null == r || null == i) return;
-      let a = null != (n = j(e, "user")) ? n : "";
+      let a = null != (n = M(e, "user")) ? n : "";
       if (!y.Z.canManageUser(A.Plq.KICK_MEMBERS, a, r)) return void d.Z.sendBotMessage(i.id, R.intl.string(R.t["6RIwPD"]));
       (async () => {
         var t;
         let n = O.default.getUser(a);
         if (null == n) throw Error();
-        await u.Z.kickUser(r.id, a, null != (t = j(e, "reason")) ? t : ""), d.Z.sendBotMessage(i.id, R.intl.formatToPlainString(R.t["9wzHDQ"], {
+        await u.Z.kickUser(r.id, a, null != (t = M(e, "reason")) ? t : ""), d.Z.sendBotMessage(i.id, R.intl.formatToPlainString(R.t["9wzHDQ"], {
           user: I.ZP.getUserTag(n)
         }))
       })().catch(() => {
@@ -531,13 +531,13 @@ let x = require("./227419.jsx").Z,
         channel: i
       } = t;
       if (null == r || null == i) return;
-      let a = null != (n = j(e, "user")) ? n : "";
+      let a = null != (n = M(e, "user")) ? n : "";
       if (!y.Z.canManageUser(A.Plq.BAN_MEMBERS, a, r)) return void d.Z.sendBotMessage(i.id, R.intl.string(R.t.R27LJi));
       (async () => {
         var t, n;
         if ("" === a) throw Error();
-        let o = null != (t = j(e, "delete_messages")) ? t : 0,
-          s = null != (n = j(e, "reason")) ? n : "",
+        let o = null != (t = M(e, "delete_messages")) ? t : 0,
+          s = null != (n = M(e, "reason")) ? n : "",
           l = O.default.getUser(a);
         await u.Z.banUser(r.id, a, o, s), d.Z.sendBotMessage(i.id, R.intl.formatToPlainString(R.t.YflWdH, {
           user: null != l ? I.ZP.getUserTag(l) : a
@@ -611,12 +611,12 @@ let x = require("./227419.jsx").Z,
         channel: r
       } = t;
       if (null == n || null == r) return;
-      let i = j(e, "user");
+      let i = M(e, "user");
       if (!(0, _.F)(n.id, i)) return void d.Z.sendBotMessage(r.id, R.intl.string(R.t.F5pqSU));
       (async () => {
         var t, a;
-        let s = null != (t = j(e, "duration")) ? t : "",
-          l = null != (a = j(e, "reason")) ? a : "",
+        let s = null != (t = M(e, "duration")) ? t : "",
+          l = null != (a = M(e, "reason")) ? a : "",
           c = O.default.getUser(i);
         if (null == c) throw Error();
         await u.Z.setCommunicationDisabledUntil({
@@ -679,8 +679,8 @@ let x = require("./227419.jsx").Z,
         channel: r
       } = t;
       if (null == r) return;
-      let a = j(e, "user"),
-        o = null != (n = j(e, "message")) ? n : "";
+      let a = M(e, "user"),
+        o = null != (n = M(e, "message")) ? n : "";
       (async () => {
         await c.Z.openPrivateChannel({
           recipientIds: a

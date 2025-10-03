@@ -57,7 +57,7 @@ function N(e) {
         isFrameInFocusedMode: f.Z.getFrameLayoutMode() === I.U.FOCUSED
       }
     }),
-    U = null != k ? y.ZP.getApplicationIconURL({
+    U = null != k ? v.ZP.getApplicationIconURL({
       id: k.id,
       icon: k.icon,
       bot: k.bot
@@ -80,17 +80,17 @@ function N(e) {
     className: T.guildIcon
   }), t = Z.name) : null != x && (x.isDM() || x.isGroupDM()) ? (t = S.intl.string(S.t.YUU0RE), G = (0, r.jsx)(c.gw7, {
     size: R
-  })) : N.pathname.startsWith(v.Z5c.GLOBAL_DISCOVERY) ? (t = S.intl.string(S.t["4nEZLi"]), G = (0, r.jsx)(c.Jmo, {
+  })) : N.pathname.startsWith(y.Z5c.GLOBAL_DISCOVERY) ? (t = S.intl.string(S.t["4nEZLi"]), G = (0, r.jsx)(c.Jmo, {
     size: R
-  })) : N.pathname.startsWith(v.Z5c.NITRO_HOME) ? (t = S.intl.string(S.t.Ipxkoq), G = (0, r.jsx)(c.SrA, {
+  })) : N.pathname.startsWith(y.Z5c.NITRO_HOME) ? (t = S.intl.string(S.t.Ipxkoq), G = (0, r.jsx)(c.SrA, {
     size: R
-  })) : N.pathname.startsWith(v.Z5c.COLLECTIBLES_SHOP) ? (t = S.intl.string(S.t.pWG4zc), G = (0, r.jsx)(c.EOn, {
+  })) : N.pathname.startsWith(y.Z5c.COLLECTIBLES_SHOP) ? (t = S.intl.string(S.t.pWG4zc), G = (0, r.jsx)(c.EOn, {
     size: R
-  })) : N.pathname.startsWith(v.Z5c.FRIENDS) ? (t = S.intl.string(S.t.TdEu5e), G = (0, r.jsx)(c.iFz, {
+  })) : N.pathname.startsWith(y.Z5c.FRIENDS) ? (t = S.intl.string(S.t.TdEu5e), G = (0, r.jsx)(c.iFz, {
     size: R
-  })) : N.pathname.startsWith(v.Z5c.FAMILY_CENTER) ? (t = S.intl.string(C.default.RZqaJi), G = (0, r.jsx)(c.BFJ, {
+  })) : N.pathname.startsWith(y.Z5c.FAMILY_CENTER) ? (t = S.intl.string(C.default.RZqaJi), G = (0, r.jsx)(c.BFJ, {
     size: R
-  })) : N.pathname.startsWith(v.Z5c.QUEST_HOME_V2) && (t = S.intl.string(S.t.JALI2N), G = (0, r.jsx)(c.qDn, {
+  })) : N.pathname.startsWith(y.Z5c.QUEST_HOME_V2) && (t = S.intl.string(S.t.JALI2N), G = (0, r.jsx)(c.qDn, {
     size: R
   }));
   let B = i.useCallback(e => {

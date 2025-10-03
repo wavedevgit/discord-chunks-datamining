@@ -43,8 +43,8 @@ function x(e) {
     onBack: a,
     onNext: s,
     legalTermsNodeRef: x,
-    flashLegalTerms: j,
-    invoiceError: M,
+    flashLegalTerms: M,
+    invoiceError: j,
     planError: k,
     onPurchaseError: U,
     baseAnalyticsData: G,
@@ -100,14 +100,14 @@ function x(e) {
     eD = eP || eI,
     eL = (0, m.U)(),
     ex = (0, c.e7)([C.Z], () => C.Z.currentOrderId),
-    ej = null,
-    eM = null;
+    eM = null,
+    ej = null;
   if (et === P.GZQ.ONE_TIME) {
     var ek;
-    l()(null != ei, "SKU must be selected for one-time purchases"), ej = null != (ek = ea[ei]) ? ek : null, l()(null != ej, "SKU must exist and be fetched.");
+    l()(null != ei, "SKU must be selected for one-time purchases"), eM = null != (ek = ea[ei]) ? ek : null, l()(null != eM, "SKU must exist and be fetched.");
     let e = eo[ei],
       t = null != en ? en : y.c;
-    eM = null != e ? e[t] : null
+    ej = null != e ? e[t] : null
   }
   let eU = (0, _.Iw)(et === P.GZQ.ONE_TIME ? f.Z.getProduct(ei) : true),
     eG = null !== eU,
@@ -134,8 +134,8 @@ function x(e) {
         premiumSubscription: t,
         onNext: s,
         metadata: W,
-        sku: ej,
-        skuPricePreview: eM,
+        sku: eM,
+        skuPricePreview: ej,
         purchaseType: et,
         referralCode: es,
         loadId: el.loadId,
@@ -176,10 +176,10 @@ function x(e) {
       className: D.discountFooterBackground
     }), (0, r.jsx)(b.Z, {
       legalTermsNodeRef: x,
-      invoiceError: M,
+      invoiceError: j,
       planError: k,
       disablePurchase: z,
-      flashLegalTerms: j,
+      flashLegalTerms: M,
       isSubmitting: eA,
       premiumSubscription: t,
       isGift: ef,

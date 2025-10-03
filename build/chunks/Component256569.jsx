@@ -77,11 +77,11 @@ function h(e) {
     tagErrors: u = {},
     placeholder: p,
     className: h,
-    maxTags: b
-  } = e, x = i.useRef(null), j = i.useRef(null), v = i.useRef(null), _ = (0, m.V)(n), {
-    handlePasteEvent: O,
-    handleInputChange: y,
-    handleKeyDown: C,
+    maxTags: x
+  } = e, b = i.useRef(null), j = i.useRef(null), _ = i.useRef(null), v = (0, m.V)(n), {
+    handlePasteEvent: C,
+    handleInputChange: O,
+    handleKeyDown: y,
     handleContainerKeyUp: N,
     handleRemoveTag: E,
     handleTagChangeEvent: I,
@@ -89,9 +89,9 @@ function h(e) {
     handleUnselectTag: T,
     handleResetTagSelections: P,
     handleInputBlurEvent: w
-  } = (0, m.Q)(_, {
-    scrollerRef: v,
-    mainInputRef: x,
+  } = (0, m.Q)(v, {
+    scrollerRef: _,
+    mainInputRef: b,
     mainContainerRef: j
   }), {
     state: {
@@ -100,9 +100,9 @@ function h(e) {
       selections: D,
       isSelecting: A
     }
-  } = _, L = (0, o.Z)(Z), [k, G] = i.useState(false), M = i.useCallback(() => {
+  } = v, L = (0, o.Z)(Z), [k, G] = i.useState(false), M = i.useCallback(() => {
     var e;
-    G(false), P(), null == (e = x.current) || e.focus({
+    G(false), P(), null == (e = b.current) || e.focus({
       preventScroll: true
     })
   }, [P]);
@@ -119,9 +119,9 @@ function h(e) {
       if (t) {
         var n;
         let t = D.includes(Z[e]);
-        null == (n = x.current) || n.focus(), t ? T(e) : (S(e), setImmediate(() => {
+        null == (n = b.current) || n.focus(), t ? T(e) : (S(e), setImmediate(() => {
           var e;
-          null == (e = x.current) || e.blur(), setTimeout(() => {
+          null == (e = b.current) || e.blur(), setTimeout(() => {
             var e;
             return null == (e = j.current) ? true : e.focus()
           }, 16)
@@ -134,7 +134,7 @@ function h(e) {
     tabIndex: 0,
     onKeyUp: N,
     children: [(0, r.jsxs)(f, {
-      ref: v,
+      ref: _,
       onClick: M,
       children: [Z.map((e, t) => (0, r.jsx)(d.Z, {
         value: e,
@@ -150,19 +150,19 @@ function h(e) {
         className: s()(g.mainTextInput, {
           [g.isEditingOtherNodes]: k
         }),
-        ref: x,
-        onChange: y,
-        onKeyDownCapture: C,
-        onPaste: O,
+        ref: b,
+        onChange: O,
+        onKeyDownCapture: y,
+        onPaste: C,
         onBlur: w,
         placeholder: 0 === Z.length ? p : true,
         value: R
       })]
-    }), null != b && (0, r.jsxs)(a.Text, {
+    }), null != x && (0, r.jsxs)(a.Text, {
       variant: "text-xs/normal",
       color: "text-muted",
       className: g.maxTags,
-      children: [null != (t = null == Z ? true : Z.length) ? t : 0, "/", b]
+      children: [null != (t = null == Z ? true : Z.length) ? t : 0, "/", x]
     })]
   })
 }

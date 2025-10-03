@@ -1,12 +1,13 @@
 /** Chunk was on 1272 **/
 /** chunk id: 824138, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => S
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
+  Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk100527 = require("./100527.js"),
   Chunk600164 = require("./600164.jsx"),
@@ -20,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk79822 = require("./79822.js");
 
-function O(e, t, n) {
+function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -29,14 +30,14 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 
-function E(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      O(e, t, n[t])
+      E(e, t, n[t])
     })
   }
   return e
@@ -54,7 +55,7 @@ function y(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class v extends Chunk647438.PureComponent {
+class I extends Chunk647438.PureComponent {
   isHost() {
     let {
       currentUser: e,
@@ -111,54 +112,45 @@ class v extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), O(this, "partyMemberAvatarRef", i.createRef()), O(this, "partyMemberOverflowRef", i.createRef()), O(this, "renderPartyMember", (e, t) => {
+    super(...e), E(this, "partyMemberAvatarRef", i.createRef()), E(this, "partyMemberOverflowRef", i.createRef()), E(this, "renderPartyMember", (e, t) => {
       let n;
       if (null == e) return null;
       let {
         host: l,
-        onUserContextMenu: c
+        onUserContextMenu: u
       } = this.props;
-      return n = (null == l ? true : l.id) === e.id ? b.intl.string(b.t.N9bqDw) : b.intl.string(b.t.Z2Y4c3), (0, r.jsx)(u.Z, {
+      return n = (null == l ? true : l.id) === e.id ? _.intl.string(_.t.N9bqDw) : _.intl.string(_.t.Z2Y4c3), (0, r.jsx)(d.Z, {
         targetElementRef: this.partyMemberAvatarRef,
         user: e,
-        newAnalyticsLocations: [s.Z.AVATAR],
+        newAnalyticsLocations: [c.Z.AVATAR],
         position: "top",
         align: "center",
         clickTrap: true,
-        children: l => (0, r.jsx)(o.ua7, {
+        children: l => (0, r.jsx)(o.u, {
           text: n,
-          children: n => {
-            let {
-              onMouseEnter: r,
-              onMouseLeave: s
-            } = n;
-            return (0, i.createElement)(o.qEK, y(E({}, l), {
-              key: e.id,
-              src: e.getAvatarURL(true, 24),
-              size: o.EFr.SIZE_24,
-              className: a()(_.avatar, t),
-              "aria-label": e.username,
-              onMouseEnter: r,
-              onMouseLeave: s,
-              onContextMenu: t => void(null != e && (null == c || c(t, e))),
-              avatarContentRef: this.partyMemberAvatarRef
-            }))
-          }
+          children: (0, i.createElement)(s.qEK, y(v({}, l), {
+            key: e.id,
+            src: e.getAvatarURL(true, 24),
+            size: s.EFr.SIZE_24,
+            className: a()(O.avatar, t),
+            "aria-label": e.username,
+            onContextMenu: t => void(null != e && (null == u || u(t, e))),
+            avatarContentRef: this.partyMemberAvatarRef
+          }))
         })
       }, e.id)
-    }), O(this, "renderPartyMemberOverflow", (e, t, n) => {
+    }), E(this, "renderPartyMemberOverflow", (e, t, n) => {
       let {
         renderOverflowPopout: i
       } = this.props;
-      return (0, r.jsx)(o.yRy, {
+      return (0, r.jsx)(s.yRy, {
         renderPopout: i,
         targetElementRef: this.partyMemberOverflowRef,
-        children: n => (0, r.jsx)(o.ua7, {
-          text: b.intl.string(b.t.Zf4NPT),
-          children: i => (0, r.jsx)("div", y(E({
+        children: n => (0, r.jsx)(o.u, {
+          text: _.intl.string(_.t.Zf4NPT),
+          children: (0, r.jsx)("div", y(v({}, n), {
             ref: this.partyMemberOverflowRef,
-            className: a()(_.overflow, t)
-          }, i, n), {
+            className: a()(O.overflow, t),
             children: e
           }))
         })
@@ -166,4 +158,4 @@ class v extends Chunk647438.PureComponent {
     })
   }
 }
-let I = v
+let S = I

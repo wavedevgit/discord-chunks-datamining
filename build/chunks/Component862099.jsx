@@ -107,7 +107,7 @@ function H(e) {
   let {
     guildEvent: t,
     channel: n
-  } = e, r = (0, s.Wu)([v.ZP], () => v.ZP.getVoiceStatesForChannel(n).map(e => {
+  } = e, r = (0, s.Wu)([y.ZP], () => y.ZP.getVoiceStatesForChannel(n).map(e => {
     let {
       user: t
     } = e;
@@ -351,7 +351,7 @@ function Q(e) {
     channel: t,
     speakers: n,
     voiceType: r
-  } = e, a = t.getGuildId(), d = l.useMemo(() => n.slice(0, 3), [n]), p = (0, s.e7)([y.Z], () => y.Z.can(M.Plq.CONNECT, t)), f = (0, E.Z)(t.id), h = U.intl.string(U.t.VJlc0d);
+  } = e, a = t.getGuildId(), d = l.useMemo(() => n.slice(0, 3), [n]), p = (0, s.e7)([v.Z], () => v.Z.can(M.Plq.CONNECT, t)), f = (0, E.Z)(t.id), h = U.intl.string(U.t.VJlc0d);
   switch (r) {
     case 1:
       h = U.intl.string(U.t.VJlc0d);

@@ -53,25 +53,25 @@ function p(e) {
     dropHoveredIndex: t,
     formField: p,
     guild: f,
-    index: b,
-    isDragEnabled: x,
+    index: x,
+    isDragEnabled: b,
     submittedGuildJoinRequestsCount: j,
-    removeFormField: v,
-    updateFormField: _,
-    updateFormFieldOrder: O,
-    canRemove: y,
-    actionsLocation: C,
+    removeFormField: _,
+    updateFormField: v,
+    updateFormFieldOrder: C,
+    canRemove: O,
+    actionsLocation: y,
     fieldStyle: N
   } = e, E = async () => {
-    await v(b)
+    await _(x)
   }, I = async e => {
-    await _(b, e)
+    await v(x, e)
   }, S = async (e, t, n) => {
-    await O(e, t, n)
-  }, T = (0, i.uniqueId)(), P = t === b, w = {
+    await C(e, t, n)
+  }, T = (0, i.uniqueId)(), P = t === x, w = {
     key: T,
-    index: b,
-    isDragEnabled: x,
+    index: x,
+    isDragEnabled: b,
     isDropHovered: P,
     onEdit: () => {
       0 === j ? h(p, I, f) : (0, l.ZDy)(async () => {
@@ -87,8 +87,8 @@ function p(e) {
     },
     onRemove: E,
     onDrop: S,
-    canRemove: y,
-    actionsLocation: C,
+    canRemove: O,
+    actionsLocation: y,
     fieldStyle: N
   };
   switch (p.field_type) {

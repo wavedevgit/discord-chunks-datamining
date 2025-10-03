@@ -211,8 +211,8 @@ let C = e => {
       D = (0, h.Aq)(E.Xh.PREMIUM_MONTH_TIER_2),
       L = "".concat(D, "/").concat((0, d.eP)(E.rV.MONTH)),
       x = (0, d.CY)(E.Xh.PREMIUM_MONTH_TIER_0),
-      j = (0, d.CY)(E.Xh.PREMIUM_MONTH_TIER_2),
-      M = (0, g.e)();
+      M = (0, d.CY)(E.Xh.PREMIUM_MONTH_TIER_2),
+      j = (0, g.e)();
     if (s) n = null;
     else {
       let e = null != S ? b.intl.string(b.t.IBYG5e) : b.intl.string(b.t.TR2B4e);
@@ -256,10 +256,10 @@ let C = e => {
             className: y.table,
             children: [(0, r.jsx)(w, {
               tier0Price: x,
-              tier2Price: j,
+              tier2Price: M,
               shouldUseDiscountPrice: P,
               tier2DiscountedPriceString: L
-            }), M.map(e => (0, i.createElement)(R, A(T({}, e), {
+            }), j.map(e => (0, i.createElement)(R, A(T({}, e), {
               key: e.id
             })))]
           })]

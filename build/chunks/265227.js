@@ -10,6 +10,5 @@ module.exports = {
   rightContent: "rightContent__58ae6",
   headerContainer: "headerContainer__58ae6",
   guildRow: "guildRow__58ae6",
-  buttonContainer: "buttonContainer__58ae6",
-  tooltip: "tooltip__58ae6"
+  buttonContainer: "buttonContainer__58ae6"
 }

@@ -67,10 +67,10 @@ let k = function(e) {
   }, [X]), i.useEffect(() => {
     c.Z.wait(async () => {
       let e = Date.now();
-      await Promise.all([u.jg(), u.tZ(), (0, d.Y2)(null, null, j.JjL.DISCOVERY)]), K.current = Date.now() - e, W(false)
+      await Promise.all([u.jg(), u.tZ(), (0, d.Y2)(null, null, M.JjL.DISCOVERY)]), K.current = Date.now() - e, W(false)
     })
   }, []), i.useEffect(() => {
-    Y || S.default.track(j.rMx.PREMIUM_MARKETING_PAGE_VIEWED, {
+    Y || S.default.track(M.rMx.PREMIUM_MARKETING_PAGE_VIEWED, {
       location_stack: a,
       load_duration_ms: K.current
     })
@@ -85,7 +85,7 @@ let k = function(e) {
         userId: Z
       })
     }) : U && H && G ? null : (0, r.jsx)("div", {
-      className: o()(M.container, M.loading),
+      className: o()(j.container, j.loading),
       children: (0, r.jsx)(l.$jN, {})
     });
   return null != $ ? (0, r.jsxs)(r.Fragment, {

@@ -66,14 +66,14 @@ function E(e) {
       }), null == v || v()
     }, [b, v, E]);
   if (O === m.IlC.POPOUT) return null;
-  let j = [];
-  return D && S && j.push((0, r.jsx)(o.sNh, {
+  let M = [];
+  return D && S && M.push((0, r.jsx)(o.sNh, {
     id: "manage-server-integration",
     label: g.intl.string(g.t.IuSJT0),
     action: L
-  }, "manage-server-integration")), w && P && j.push((0, r.jsx)(o.sNh, {
+  }, "manage-server-integration")), w && P && M.push((0, r.jsx)(o.sNh, {
     id: "manage-authorized-app",
     label: g.intl.string(g.t.V8ruv7),
     action: x
-  }, "manage-authorized-app")), j
+  }, "manage-authorized-app")), M
 }

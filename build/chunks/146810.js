@@ -74,8 +74,8 @@ function C(e) {
     shouldCancelOnPointerExit: w,
     allowTextSelectionOnPress: L,
     ref: x,
-    ...j
-  } = O(e), [M, k] = (0, y.useState)(false), U = (0, y.useRef)({
+    ...M
+  } = O(e), [j, k] = (0, y.useState)(false), U = (0, y.useRef)({
     isPressed: false,
     ignoreEmulatedMouseEvents: false,
     didFirePressStart: false,
@@ -255,8 +255,8 @@ function C(e) {
       e.disposables = []
     }
   }, [L]), {
-    isPressed: v || M,
-    pressProps: (0, c.d)(j, z, {
+    isPressed: v || j,
+    pressProps: (0, c.d)(M, z, {
       [A]: true
     })
   }

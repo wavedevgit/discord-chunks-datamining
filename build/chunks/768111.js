@@ -1,7 +1,7 @@
 /** Chunk was on 31553 **/
 /** chunk id: 768111, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => j
 }), require("./539854.js");
 var Chunk607550 = require("./607550.js"),
   Chunk699516 = require("./699516.js"),
@@ -18,42 +18,42 @@ var Chunk607550 = require("./607550.js"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx");
 
-function x(e) {
+function j(e) {
   let {
     user: n,
     currentUser: t
   } = e, {
-    mutualFriendsCount: x,
+    mutualFriendsCount: j,
     mutualGuilds: v
   } = (0, u.Z)(n), g = null == v ? true : v.length, b = (0, d.Z)(n), y = (0, a.Z)({
     location: "useUserProfileModalV2TabBarItems"
-  }), O = (0, c.Z)({
+  }), I = (0, c.Z)({
     location: "useUserProfileModalV2TabBarItems"
-  }), I = (0, m.Z)(n.id), Z = (0, o.S)({
+  }), Z = (0, m.Z)(n.id), O = (0, o.S)({
     location: "useUserProfileModalV2TabBarItems"
-  }), P = (0, s.Z)(n.id), N = [], T = n.id === (null == t ? true : t.id), A = r.Z.getFirstWishlistId(n.id), E = (null != A ? l.Z.getWishlistItems(A) : []).length > 0, S = I.length > 0;
-  (T && y || S && O) && N.push({
-    text: j.intl.string(j.t.laViw8),
+  }), N = (0, s.Z)(n.id), T = [], P = n.id === (null == t ? true : t.id), A = r.Z.getFirstWishlistId(n.id), E = (null != A ? l.Z.getWishlistItems(A) : []).length > 0, S = Z.length > 0;
+  (P && y || S && I) && T.push({
+    text: x.intl.string(x.t.laViw8),
     section: h.oh.WIDGETS,
     subsection: true
-  }), N.push({
-    text: j.intl.string(j.t.chq59f),
+  }), T.push({
+    text: x.intl.string(x.t.chq59f),
     section: h.oh.ACTIVITY,
     subsection: true
   });
   let C = false === n.nsfwAllowed,
-    w = i.Z.isFriend(n.id);
-  return Z && (T || E && P && (!C || C && w)) && N.push({
-    text: j.intl.string(j.t["7lZ31N"]),
+    _ = i.Z.isFriend(n.id);
+  return O && (P || E && N && (!C || C && _)) && T.push({
+    text: x.intl.string(x.t["7lZ31N"]),
     section: h.oh.WISHLIST,
     subsection: true
-  }), n.id !== (null == t ? true : t.id) && b && (N.push({
-    text: (0, p.Z)(x),
+  }), n.id !== (null == t ? true : t.id) && b && (T.push({
+    text: (0, p.Z)(j),
     section: h.oh.MUTUAL_FRIENDS,
     subsection: true
-  }), N.push({
+  }), T.push({
     text: (0, f.Z)(g),
     section: h.oh.MUTUAL_GUILDS,
     subsection: true
-  })), N
+  })), T
 }

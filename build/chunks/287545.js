@@ -59,7 +59,7 @@ let Z = 2e3,
 function Y(e) {
   var t;
   return {
-    releasePhase: null == e || null == (t = e.activity) ? true : t.client_platform_config[(0, j.Z)((0, I.getOS)())].release_phase
+    releasePhase: null == e || null == (t = e.activity) ? true : t.client_platform_config[(0, M.Z)((0, I.getOS)())].release_phase
   }
 }
 
@@ -176,13 +176,13 @@ function Q(e) {
   if (null == P || w) return;
   let D = (0, i.Z)(),
     L = "location" in c ? 2 : 1,
-    j = y.default.getCurrentUser();
-  if (null == j) return;
-  let M = C.ZP.getShelfActivities(I),
+    M = y.default.getCurrentUser();
+  if (null == M) return;
+  let j = C.ZP.getShelfActivities(I),
     k = S.Z.getState().shelfOrder,
     G = (0, N.Z)({
       applicationId: r,
-      activityConfigs: M
+      activityConfigs: j
     }),
     B = 1 + k.findIndex(e => e === r),
     {
@@ -206,7 +206,7 @@ function Q(e) {
     activity_session_id: P,
     application_id: r,
     location_stack: null == z ? true : z.locations,
-    user_premium_tier: j.premiumType,
+    user_premium_tier: M.premiumType,
     raw_thermal_state: H,
     n_participants: null != A ? _.Z.getUserParticipantCount(A.id) : null,
     is_activity_start: o,
@@ -370,7 +370,7 @@ class $ extends Chunk317770.Z {
       if ((null == u ? true : u.applicationId) === a) return;
       let d = await f.ZP.fetchApplication(a);
       if (!(0, D.a)()) return void this.showLaunchErrorModal(G.intl.string(G.t.UXoQTk));
-      if (!(0, M.Z)(null == d || null == (t = d.embedded_activity_config) ? true : t.supported_platforms)) return void this.showLaunchErrorModal(G.intl.string(G.t.uGDCc3));
+      if (!(0, j.Z)(null == d || null == (t = d.embedded_activity_config) ? true : t.supported_platforms)) return void this.showLaunchErrorModal(G.intl.string(G.t.uGDCc3));
       let _ = null != (n = null == c ? true : c.getGuildId()) ? n : true,
         {
           activityConfigs: p,

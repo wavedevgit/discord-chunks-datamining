@@ -79,19 +79,19 @@ function x(e) {
   returntrue
 }
 
-function j(e) {
+function M(e) {
   let t = O.Z.getChannel(e.channelId);
   if (null == t) return k();
   C = v.QZA.OPEN, o = a = t, D = "location" in e && null != e.location ? e.location : null, i = "subsection" in e ? e.subsection : null, null != o && (o = o.set("nsfw", o.isNSFW())), s = O.Z.getChannel(o.parent_id), l = o.getGuildId();
   let n = o.isModeratorReportChannel() ? v.CoT.PERMISSIONS : v.CoT.OVERVIEW;
-  return N = {}, M({
+  return N = {}, j({
     type: "CHANNEL_SETTINGS_SET_SECTION",
     section: null != r ? r : n,
     subsection: i
   }), true
 }
 
-function M(e) {
+function j(e) {
   r = e.section, i = e.subsection, null != o && r === v.CoT.INSTANT_INVITES && (P = true, h.tn.get({
     url: v.ANM.INSTANT_INVITES(o.id),
     oldFormErrors: true,
@@ -282,7 +282,7 @@ class J extends(c = Chunk442837.ZP.Store) {
 }
 I(J, "displayName", "ChannelSettingsStore");
 let $ = new J(Chunk570140.Z, {
-    CHANNEL_SETTINGS_INIT: j,
+    CHANNEL_SETTINGS_INIT: M,
     CHANNEL_SETTINGS_SUBMIT: U,
     CHANNEL_SETTINGS_SUBMIT_SUCCESS: G,
     CHANNEL_SETTINGS_SUBMIT_FAILURE: B,
@@ -291,7 +291,7 @@ let $ = new J(Chunk570140.Z, {
     CHANNEL_PERMISSIONS_DELETE_OVERWRITE_SUCCESS: q,
     CHANNEL_SETTINGS_OVERWRITE_SELECT: Q,
     CHANNEL_SETTINGS_UPDATE: F,
-    CHANNEL_SETTINGS_SET_SECTION: M,
+    CHANNEL_SETTINGS_SET_SECTION: j,
     CHANNEL_SETTINGS_LOADED_INVITES: H,
     CHANNEL_UPDATES: z,
     CHANNEL_DELETE: X,

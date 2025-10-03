@@ -283,7 +283,7 @@ function z(e) {
       start: e,
       end: t
     } = i.timestamps;
-    return (0, r.jsx)(M.Z, {
+    return (0, r.jsx)(j.Z, {
       start: e,
       end: t
     })
@@ -297,7 +297,7 @@ function z(e) {
       }), e_(e)
     },
     children: [eh(), em(), eg()]
-  }), eO = () => null == W || null == z ? null : (0, r.jsx)(j.Z, {
+  }), eO = () => null == W || null == z ? null : (0, r.jsx)(M.Z, {
     user: t,
     guild: W,
     channel: z,

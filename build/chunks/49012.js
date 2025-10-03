@@ -61,13 +61,13 @@ function R(e, t) {
     });
     return
   }
-  let j = x;
+  let M = x;
   try {
     decodeURI(x)
   } catch (e) {
-    j = encodeURI(x)
+    M = encodeURI(x)
   }
-  let M = null,
+  let j = null,
     k = false,
     U = D,
     G = L,
@@ -76,10 +76,10 @@ function R(e, t) {
     var Z, F, V;
     let e = v.Z.getMessage(L, D),
       t = E.Z.getBasicChannel(L);
-    M = null != (V = null == t ? true : t.guild_id) ? V : null;
-    let n = b.Z.getGuild(M),
-      r = (null == e || null == (Z = e.messageReference) ? true : Z.guild_id) != null && (null == e ? true : e.webhookId) != null && (null == e ? true : e.hasFlag(A.iLy.IS_CROSSPOST)) && null != M;
-    r && (null == e || null == (F = e.messageReference) ? true : F.guild_id) != null ? (U = e.messageReference.message_id, G = e.messageReference.channel_id, B = e.messageReference.guild_id) : B = M;
+    j = null != (V = null == t ? true : t.guild_id) ? V : null;
+    let n = b.Z.getGuild(j),
+      r = (null == e || null == (Z = e.messageReference) ? true : Z.guild_id) != null && (null == e ? true : e.webhookId) != null && (null == e ? true : e.hasFlag(A.iLy.IS_CROSSPOST)) && null != j;
+    r && (null == e || null == (F = e.messageReference) ? true : F.guild_id) != null ? (U = e.messageReference.message_id, G = e.messageReference.channel_id, B = e.messageReference.guild_id) : B = j;
     let i = (null == t ? true : t.type) === A.d4z.GUILD_ANNOUNCEMENT && (null == n ? true : n.features.has(A.oNc.COMMUNITY)) === true,
       a = (null == e ? true : e.hasFlag(A.iLy.EPHEMERAL)) === true;
     k = null != e && !a && (r || i)
@@ -88,20 +88,20 @@ function R(e, t) {
     let e = E.Z.getChannel(L),
       t = b.Z.getGuild(null == e ? true : e.getGuildId());
     null != e && null != t && t.features.has(A.oNc.DISCOVERABLE) && S.default.track(A.rMx.URL_CLICKED, {
-      url_domain: (0, O.F)(j),
+      url_domain: (0, O.F)(M),
       guild_id: t.id,
       channel_id: e.id
     }), (0, u.Z)(L) && S.default.track(A.rMx.CHANGE_LOG_CTA_CLICKED, {
       cta_type: "inline_link",
-      target: j
+      target: M
     })
   }
-  if (_.Z.trackLinkClicked(j), null != N) {
+  if (_.Z.trackLinkClicked(M), null != N) {
     if (N(t)) return
   } else {
     let {
       default: e
-    } = n(315263), i = e(j, {
+    } = n(315263), i = e(M, {
       skipExtensionCheck: true,
       analyticsLocations: r
     });
@@ -111,37 +111,37 @@ function R(e, t) {
       if (k && _.Z.trackAnnouncementMessageLinkClicked({
           messageId: U,
           channelId: L,
-          guildId: M,
+          guildId: j,
           sourceChannelId: G,
           sourceGuildId: B
         }), null != R) return void R();
-      (0, s.Z)(j)
+      (0, s.Z)(M)
     },
     Y = null != P ? P : () => {};
-  if (null !== c.Z.isBlockedDomain(j)) {
-    null == t || t.preventDefault(), l.Z.show(j);
+  if (null !== c.Z.isBlockedDomain(M)) {
+    null == t || t.preventDefault(), l.Z.show(M);
     return
   }
-  if (null != (0, g.v)(j)) {
-    null == t || t.preventDefault(), m.Z.show(j);
+  if (null != (0, g.v)(M)) {
+    null == t || t.preventDefault(), m.Z.show(M);
     return
   }
-  if ((0, f.I)(j)) {
-    null == t || t.preventDefault(), d.Z.show(j);
+  if ((0, f.I)(M)) {
+    null == t || t.preventDefault(), d.Z.show(M);
     return
   }
   let W = "function" == typeof T ? T() : T,
-    K = (0, O.E)(j),
+    K = (0, O.E)(M),
     z = "http:" !== K && "https:" !== K;
-  if (!z && (W || y.Z.isTrustedDomain(j)) || z && y.Z.isTrustedProtocol(j)) return void(null == t || null != w && w ? H() : k && _.Z.trackAnnouncementMessageLinkClicked({
+  if (!z && (W || y.Z.isTrustedDomain(M)) || z && y.Z.isTrustedProtocol(M)) return void(null == t || null != w && w ? H() : k && _.Z.trackAnnouncementMessageLinkClicked({
     messageId: U,
     channelId: L,
-    guildId: M,
+    guildId: j,
     sourceChannelId: G,
     sourceGuildId: B
   }));
   if (null != t && t.preventDefault(), z) h.Z.show({
-    url: j,
+    url: M,
     trustUrl: o.u,
     onConfirm: H,
     onCancel: Y,
@@ -149,8 +149,8 @@ function R(e, t) {
     contextKey: I
   });
   else {
-    let e = (0, p.yw)(j),
-      t = null != e ? e.displayTarget : j;
+    let e = (0, p.yw)(M),
+      t = null != e ? e.displayTarget : M;
     h.Z.show({
       url: t,
       trustUrl: o.o,

@@ -1,9 +1,9 @@
-/** Chunk was on 9665 **/
+/** Chunk was on 50118 **/
 /** chunk id: 5200, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Y: () => _
 }), require("./388685.js");
-var r, Chunk951288 = require("./951288.js"),
+var i, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
@@ -17,19 +17,19 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk748788 = require("./748788.js");
 let b = ["embedded_cover"],
-  y = {
+  C = {
     tension: 800,
     friction: 24
   };
-var C = ((r = C || {})[r.THIRTEEN_BY_ELEVEN = 0] = "THIRTEEN_BY_ELEVEN", r[r.SIXTEEN_BY_NINE = 1] = "SIXTEEN_BY_NINE", r);
+var y = ((i = y || {})[i.THIRTEEN_BY_ELEVEN = 0] = "THIRTEEN_BY_ELEVEN", i[i.SIXTEEN_BY_NINE = 1] = "SIXTEEN_BY_NINE", i);
 
 function _(e) {
   var t;
   let {
     context: n,
-    activityItem: r,
+    activityItem: i,
     onClick: a,
-    aspectRatio: C = 0,
+    aspectRatio: y = 0,
     animatedDivClass: _,
     commandOrigin: v
   } = e, {
@@ -39,7 +39,7 @@ function _(e) {
     labelType: E
   } = (0, u.ZP)({
     context: n,
-    activityItem: r,
+    activityItem: i,
     guildId: null != (t = n.channel.getGuildId()) ? t : true,
     locationObject: {},
     onActivityItemSelected: a,
@@ -50,22 +50,22 @@ function _(e) {
     P(true)
   }, [P]), Z = l.useCallback(() => {
     P(false)
-  }, [P]), N = l.useMemo(() => (0, i.jsx)("div", {
+  }, [P]), N = l.useMemo(() => (0, r.jsx)("div", {
     className: g.overlayBadge,
-    children: (0, i.jsx)("div", {
+    children: (0, r.jsx)("div", {
       className: g.badgeContainer,
-      children: (0, i.jsx)(p.Z, {
+      children: (0, r.jsx)(p.Z, {
         labelType: E
       })
     })
   }), [E]), T = l.useMemo(() => {
     switch (j) {
       case u.JS.JOIN:
-        return (0, i.jsx)("div", {
+        return (0, r.jsx)("div", {
           className: g.activityAction,
-          children: (0, i.jsx)("div", {
+          children: (0, r.jsx)("div", {
             className: g.activityActionButton,
-            children: (0, i.jsx)(c.Text, {
+            children: (0, r.jsx)(c.Text, {
               variant: "text-sm/medium",
               color: "always-white",
               children: m.intl.string(m.t.VJlc0d)
@@ -73,11 +73,11 @@ function _(e) {
           })
         });
       case u.JS.LEAVE:
-        return (0, i.jsx)("div", {
+        return (0, r.jsx)("div", {
           className: g.activityAction,
-          children: (0, i.jsx)("div", {
+          children: (0, r.jsx)("div", {
             className: o()(g.activityActionButton, g.activityActionButtonDanger),
-            children: (0, i.jsx)(c.Text, {
+            children: (0, r.jsx)(c.Text, {
               variant: "text-sm/medium",
               color: "always-white",
               children: m.intl.string(m.t["wH/wDA"])
@@ -89,15 +89,15 @@ function _(e) {
         return null
     }
   }, [j]);
-  return (0, i.jsx)(c.P3F, {
+  return (0, r.jsx)(c.P3F, {
     onClick: x,
     onFocus: I,
     onBlur: Z,
     onMouseEnter: I,
     onMouseLeave: Z,
     className: g.activityItemButtonInnerClass,
-    children: (0, i.jsx)(c.AMe, {
-      config: y,
+    children: (0, r.jsx)(c.AMe, {
+      config: C,
       from: {
         value: 0
       },
@@ -108,19 +108,19 @@ function _(e) {
         let {
           value: t
         } = e;
-        return (0, i.jsx)(c.f6W, {
+        return (0, r.jsx)(c.f6W, {
           theme: f.BRd.DARK,
-          children: e => (0, i.jsxs)(s.animated.div, {
+          children: e => (0, r.jsxs)(s.animated.div, {
             className: o()(e, g.activityItem, _, {
-              [g.activityItem_13_11]: 0 === C,
-              [g.activityItem_16_9]: 1 === C
+              [g.activityItem_13_11]: 0 === y,
+              [g.activityItem_16_9]: 1 === y
             }),
             style: {
               transform: t.to([0, 1], [1, 1.05]).to(e => "scale(".concat(e, ")"))
             },
-            children: [(0, i.jsx)(d.Z, {
+            children: [(0, r.jsx)(d.Z, {
               imageBackground: O,
-              applicationName: r.application.name,
+              applicationName: i.application.name,
               imageClassName: g.activitySuggestionImage,
               imageNotFoundClassName: g.brokenImageIconWrapper
             }), N, T]
@@ -130,4 +130,4 @@ function _(e) {
     })
   })
 }
-_.AspectRatio = C
+_.AspectRatio = y

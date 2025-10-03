@@ -1,4 +1,4 @@
-/** Chunk was on 9665 **/
+/** Chunk was on 50118 **/
 /** chunk id: 955384, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -30,7 +30,7 @@ class h extends Chunk647438.PureComponent {
       className: e,
       textValue: t,
       richValue: n,
-      message: i,
+      message: r,
       channel: l,
       onCancel: a,
       children: o
@@ -58,7 +58,7 @@ class h extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), d(this, "node", i.createRef()), d(this, "onClickSave", () => {
+    super(...e), d(this, "node", r.createRef()), d(this, "onClickSave", () => {
       let {
         textValue: e
       } = this.props;
@@ -67,21 +67,21 @@ class h extends Chunk647438.PureComponent {
       let {
         message: t,
         channel: n,
-        onConfirmDelete: r,
-        onCancel: i,
+        onConfirmDelete: i,
+        onCancel: r,
         saveMessage: c,
         validateEdit: u
       } = this.props;
-      return 0 === e.length ? (r(n, t), i(n.id), Promise.resolve({
+      return 0 === e.length ? (i(n, t), r(n.id), Promise.resolve({
         shouldClear: false,
         shouldRefocus: false
       })) : u({
         value: e,
         channel: n
-      }).then(r => {
+      }).then(i => {
         let {
           valid: u
-        } = r;
+        } = i;
         if (!u) return Promise.resolve({
           shouldClear: false,
           shouldRefocus: false
@@ -94,24 +94,24 @@ class h extends Chunk647438.PureComponent {
           let t = o.ZP.parse(this.props.channel, e),
             n = this.props.message.components.filter(e => e.type === l.re.TEXT_DISPLAY);
           if (1 === n.length) {
-            let r = n[0];
-            e !== r.content && c(this.props.channel.id, this.props.message.id, t)
+            let i = n[0];
+            e !== i.content && c(this.props.channel.id, this.props.message.id, t)
           }
         } else {
           let t = o.ZP.parse(this.props.channel, e);
           t.content !== this.props.message.content && c(this.props.channel.id, this.props.message.id, t)
         }
-        return i(n.id), Promise.resolve({
+        return r(n.id), Promise.resolve({
           shouldClear: true,
           shouldRefocus: true
         })
       })
     }), d(this, "onChange", (e, t, n) => {
       let {
-        channel: r,
-        onChange: i
+        channel: i,
+        onChange: r
       } = this.props;
-      i(r.id, t, n)
+      r(i.id, t, n)
     }), d(this, "onKeyDown", e => {
       if (e.keyCode === s.yXg.ESCAPE && !e.shiftKey) {
         let {

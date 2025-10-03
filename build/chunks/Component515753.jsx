@@ -1,10 +1,10 @@
 /** Chunk was on 51333 **/
 /** chunk id: 515753, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Qj: () => ep,
-  RS: () => ef,
-  ZP: () => em,
-  bU: () => es
+  Qj: () => ef,
+  RS: () => em,
+  ZP: () => eb,
+  bU: () => ec
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,6 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk873546 = require("./873546.js"),
   Chunk893999 = require("./893999.js"),
   Chunk442837 = require("./442837.js"),
+  Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk493683 = require("./493683.js"),
   Chunk239091 = require("./239091.js"),
@@ -61,7 +62,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk800525 = require("./800525.js");
 
-function er(e) {
+function ei(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -80,7 +81,7 @@ function er(e) {
   return e
 }
 
-function ei(e, t) {
+function el(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -93,7 +94,7 @@ function ei(e, t) {
   }), e
 }
 
-function el(e, t) {
+function ea(e, t) {
   if (null == e) return {};
   var n, r, i = function(e, t) {
     if (null == e) return {};
@@ -108,28 +109,28 @@ function el(e, t) {
   }
   return i
 }
-let ea = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk481060.qEK,
-  eo = {
+let eo = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk481060.qEK,
+  es = {
     offset: {
       top: 2,
       bottom: 2,
       right: 4
     }
   },
-  es = e => {
+  ec = e => {
     var {
       nameplate: t,
       icon: n,
       forceShow: i = false,
       reducedClickTarget: l = false,
       visibleElementRef: o
-    } = e, s = el(e, ["nameplate", "icon", "forceShow", "reducedClickTarget", "visibleElementRef"]);
-    let c = (0, F.A)(t);
-    return (0, r.jsx)(b.P3F, ei(er({
-      className: a()(en.closeButton, {
-        [en.closeButtonPlated]: null != t,
-        [en.closeButtonForceShow]: i,
-        [en.reducedClickTarget]: l
+    } = e, s = ea(e, ["nameplate", "icon", "forceShow", "reducedClickTarget", "visibleElementRef"]);
+    let c = (0, G.A)(t);
+    return (0, r.jsx)(O.P3F, el(ei({
+      className: a()(er.closeButton, {
+        [er.closeButtonPlated]: null != t,
+        [er.closeButtonForceShow]: i,
+        [er.reducedClickTarget]: l
       }),
       style: c
     }, s), {
@@ -144,34 +145,34 @@ let ea = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chun
       children: (0, r.jsx)("div", {
         ref: o,
         className: a()({
-          [en.innerCloseButtonPlated]: null != t
+          [er.innerCloseButtonPlated]: null != t
         }),
         children: (0, r.jsx)(n, {
           size: "sm",
           color: "currentColor",
-          className: a()(en.closeIcon, {
-            [en.closeIconPlated]: null != t
+          className: a()(er.closeIcon, {
+            [er.closeIconPlated]: null != t
           })
         })
       })
     }))
   },
-  ec = () => (0, Chunk951288.jsx)(Chunk481060.r7p, {
+  eu = () => (0, Chunk951288.jsx)(Chunk481060.r7p, {
     size: "xs",
     color: "currentColor",
     className: Chunk800525.favoriteIcon
   }),
-  eu = () => (0, Chunk951288.jsx)(Chunk481060.kZF, {
+  ed = () => (0, Chunk951288.jsx)(Chunk481060.kZF, {
     size: "xs",
     color: "currentColor",
     className: Chunk800525.favoriteIcon
   }),
-  ed = () => (0, Chunk951288.jsx)(Chunk481060.t6m, {
+  ep = () => (0, Chunk951288.jsx)(Chunk481060.t6m, {
     size: "xs",
     color: "currentColor",
     className: Chunk800525.favoriteIcon
   }),
-  ep = e => {
+  ef = e => {
     var {
       route: t,
       selected: n,
@@ -183,117 +184,117 @@ let ea = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chun
       locationState: d,
       onClick: f,
       className: m,
-      role: v,
-      "aria-posinset": O,
+      role: b,
+      "aria-posinset": v,
       "aria-setsize": y,
       listItemRef: h
-    } = e, g = el(e, ["route", "selected", "icon", "iconClassName", "interactiveClassName", "text", "children", "locationState", "onClick", "className", "role", "aria-posinset", "aria-setsize", "listItemRef"]);
-    return (0, r.jsx)(Z.Z, {
-      className: a()(en.channel, {
-        [en.fullWidth]: p.tq
+    } = e, g = ea(e, ["route", "selected", "icon", "iconClassName", "interactiveClassName", "text", "children", "locationState", "onClick", "className", "role", "aria-posinset", "aria-setsize", "listItemRef"]);
+    return (0, r.jsx)(T.Z, {
+      className: a()(er.channel, {
+        [er.fullWidth]: p.tq
       }, m),
       onClick: f,
-      role: v,
-      focusProps: er({
+      role: b,
+      focusProps: ei({
         within: true
-      }, eo),
-      "aria-posinset": O,
+      }, es),
+      "aria-posinset": v,
       "aria-setsize": y,
       ref: h,
-      children: (0, r.jsx)(b.vjx, {
+      children: (0, r.jsx)(O.vjx, {
         as: "div",
         selected: n,
-        className: a()(o, en.interactive, en.linkButton, {
-          [en.interactiveSelected]: n
+        className: a()(o, er.interactive, er.linkButton, {
+          [er.interactiveSelected]: n
         }),
-        children: (0, r.jsxs)(c.rU, ei(er({
+        children: (0, r.jsxs)(c.rU, el(ei({
           to: {
             pathname: t,
             state: d
           },
-          className: en.link
+          className: er.link
         }, g), {
-          children: [(0, r.jsx)(S.Z, {
+          children: [(0, r.jsx)(P.Z, {
             muted: false,
             avatar: (0, r.jsx)(i, {
               size: "refresh_sm",
-              className: a()(en.linkButtonIcon, l),
+              className: a()(er.linkButtonIcon, l),
               color: "currentColor"
             }),
             name: s,
-            innerClassName: en.avatarWithText
+            innerClassName: er.avatarWithText
           }), u]
         }))
       })
     })
   };
 
-function ef(e) {
+function em(e) {
   let {
     channel: t,
     isGDMFacepileEnabled: l,
     selected: o = false,
     user: p,
-    activities: h,
-    applicationStream: j,
-    voiceChannel: _,
-    isTyping: A,
-    status: F,
-    isMobile: K,
-    nameplate: W,
-    ref: V,
-    "aria-posinset": J,
-    "aria-setsize": X
-  } = e, [$, ep] = i.useState(false), [ef, em] = i.useState(false), [eb, ev] = i.useState(false), eO = i.useRef(null), ey = i.useRef(null), eh = null != V ? V : ey, {
-    avatarSrc: eg,
-    avatarDecorationSrc: ej,
-    eventHandlers: ex
-  } = (0, H.Z)({
+    activities: g,
+    applicationStream: x,
+    voiceChannel: R,
+    isTyping: F,
+    status: G,
+    isMobile: W,
+    nameplate: Q,
+    ref: q,
+    "aria-posinset": X,
+    "aria-setsize": $
+  } = e, [ee, ef] = i.useState(false), [em, eb] = i.useState(false), [eO, ev] = i.useState(false), ey = i.useRef(null), eh = i.useRef(null), eg = null != q ? q : eh, {
+    avatarSrc: ej,
+    avatarDecorationSrc: ex,
+    eventHandlers: eN
+  } = (0, K.Z)({
     userId: null == p ? true : p.id,
-    size: b.EFr.SIZE_32,
-    animateOnHover: !(o || $ || ef || eb)
-  }), eN = t.isMultiUserDM(), eS = t.isSystemDM(), eP = (0, z.Q)(), eC = !eN && !eS && t.type === ee.d4z.DM, eE = eC && (null == p ? true : p.primaryGuild) != null, ew = (0, m.e7)([q.ZP], () => q.ZP.isChannelMuted(t.getGuildId(), t.id)), {
-    ignored: eZ,
-    blocked: eT
-  } = (0, m.cj)([Y.Z], () => ({
-    ignored: Y.Z.isIgnored(t.getRecipientId()),
-    blocked: Y.Z.isBlocked(t.getRecipientId())
-  })), eI = eC && eZ, eM = eC && eT, ek = (ew || eI || eM) && !(o || $), eD = (0, m.e7)([Q.ZP], () => Q.ZP.getMentionCount(t.id) > 0), e_ = (0, w.ZP)(t), eR = (0, m.e7)([D.Z], () => D.Z.isFavorite(t.id)), {
-    dotsInsteadOfCloseButton: eL,
-    rearrangeContextMenu: eU
-  } = R.Z.useExperiment({
+    size: O.EFr.SIZE_32,
+    animateOnHover: !(o || ee || em || eO)
+  }), eS = t.isMultiUserDM(), eP = t.isSystemDM(), eC = (0, H.Q)(), eE = !eS && !eP && t.type === et.d4z.DM, ew = eE && (null == p ? true : p.primaryGuild) != null, eZ = (0, m.e7)([J.ZP], () => J.ZP.isChannelMuted(t.getGuildId(), t.id)), {
+    ignored: eT,
+    blocked: eI
+  } = (0, m.cj)([V.Z], () => ({
+    ignored: V.Z.isIgnored(t.getRecipientId()),
+    blocked: V.Z.isBlocked(t.getRecipientId())
+  })), eM = eE && eT, eD = eE && eI, ek = (eZ || eM || eD) && !(o || ee), e_ = (0, m.e7)([Y.ZP], () => Y.ZP.getMentionCount(t.id) > 0), eR = (0, Z.ZP)(t), eL = (0, m.e7)([_.Z], () => _.Z.isFavorite(t.id)), {
+    dotsInsteadOfCloseButton: eU,
+    rearrangeContextMenu: eA
+  } = L.Z.useExperiment({
     location: "private_channel"
   }, {
     autoTrackExposure: true
-  }), eA = i.useRef(null), eF = null != W && (o || $ || eb), eG = () => {
-    ep(true)
-  }, eB = () => {
-    ep(false)
+  }), eF = i.useRef(null), eG = null != Q && (o || ee || eO), eB = () => {
+    ef(true)
   }, ez = () => {
-    em(true)
+    ef(false)
   }, eH = () => {
-    em(false)
-  }, eK = function(e) {
+    eb(true)
+  }, eK = () => {
+    eb(false)
+  }, eW = function(e) {
     let n = arguments.length > 1 && true !== arguments[1] && arguments[1];
     null != e && (e.preventDefault(), e.stopPropagation()), v.Z.closePrivateChannel(t.id, o, n)
-  }, eW = () => {
-    v.Z.preload(ee.ME, t.id)
-  }, eQ = e => {
-    e.stopPropagation()
+  }, eQ = () => {
+    v.Z.preload(et.ME, t.id)
   }, eY = e => {
+    e.stopPropagation()
+  }, eV = e => {
     if (e.target === e.currentTarget) {
       var t;
-      null == (t = eO.current) || t.click()
+      null == (t = ey.current) || t.click()
     }
-  }, eV = e => {
+  }, eq = e => {
     let i = "contextmenu" === e.type,
-      l = eU && !i,
+      l = eA && !i,
       a = i ? u.ImpressionNames.DM_LIST_RIGHT_CLICK_MENU_SHOWN : u.ImpressionNames.DM_LIST_KEBAB_MENU_SHOWN;
-    ev(true), t.isMultiUserDM() ? (0, O.jW)(e, async () => {
+    ev(true), t.isMultiUserDM() ? (0, y.jW)(e, async () => {
       let {
         default: e
       } = await Promise.all([n.e("79695"), n.e("90508"), n.e("25421"), n.e("89183")]).then(n.bind(n, 354741));
-      return n => (0, r.jsx)(e, ei(er({}, n), {
+      return n => (0, r.jsx)(e, el(ei({}, n), {
         channel: t,
         selected: o
       }))
@@ -301,11 +302,11 @@ function ef(e) {
       impressionName: a,
       noBlurEvent: true,
       onClose: () => ev(false)
-    }) : (0, O.jW)(e, async () => {
+    }) : (0, y.jW)(e, async () => {
       let {
         default: e
       } = l ? await Promise.all([n.e("90508"), n.e("56167")]).then(n.bind(n, 416951)) : await Promise.all([n.e("79695"), n.e("90508"), n.e("98783"), n.e("56826"), n.e("36084"), n.e("92998")]).then(n.bind(n, 131404));
-      return n => (0, r.jsx)(e, ei(er({}, n), {
+      return n => (0, r.jsx)(e, el(ei({}, n), {
         user: p,
         channel: t,
         channelSelected: o
@@ -314,199 +315,195 @@ function ef(e) {
       impressionName: a,
       onClose: () => ev(false)
     })
-  }, eq = e => {
+  }, eJ = e => {
     e.preventDefault(), e.stopPropagation();
-    let i = et.intl.formatToPlainString(et.t.hJ5Ap6, {
-        name: e_
+    let i = en.intl.formatToPlainString(en.t.hJ5Ap6, {
+        name: eR
       }),
-      l = et.intl.format(et.t.SSIVOj, {
-        name: e_
+      l = en.intl.format(en.t.SSIVOj, {
+        name: eR
       });
-    t.isManaged() && (i = et.intl.formatToPlainString(et.t.hVGjER, {
-      name: e_
-    }), l = et.intl.format(et.t.IK1Qvr, {
-      name: e_
-    })), (0, b.ZDy)(async () => {
+    t.isManaged() && (i = en.intl.formatToPlainString(en.t.hVGjER, {
+      name: eR
+    }), l = en.intl.format(en.t.IK1Qvr, {
+      name: eR
+    })), (0, O.ZDy)(async () => {
       let {
         default: e
       } = await n.e("14604").then(n.bind(n, 960670));
-      return t => (0, r.jsx)(e, er({
+      return t => (0, r.jsx)(e, ei({
         header: i,
         body: l,
-        onSubmit: eK
+        onSubmit: eW
       }, t))
     })
-  }, eJ = (0, r.jsx)(k.Z, {
-    userName: e_,
+  }, eX = (0, r.jsx)(k.Z, {
+    userName: eR,
     displayNameStyles: null == p ? true : p.displayNameStyles,
-    effectDisplayType: $ || o || eb ? M.F.ANIMATED : M.F.PLAIN,
-    loop: $,
+    effectDisplayType: ee || o || eO ? D.F.ANIMATED : D.F.PLAIN,
+    loop: ee,
     boldFontOpacity: .9
-  }), eX = eE ? (0, r.jsxs)(r.Fragment, {
-    children: [eJ, (0, r.jsx)(U.ZP, {
+  }), e$ = ew ? (0, r.jsxs)(r.Fragment, {
+    children: [eX, (0, r.jsx)(A.ZP, {
       primaryGuild: null == p ? true : p.primaryGuild,
       userId: null == p ? true : p.id,
       inline: true,
       disableGuildProfile: true,
-      className: a()(en.clanTag, {
-        [en.clanTagMuted]: ek
+      className: a()(er.clanTag, {
+        [er.clanTagMuted]: ek
       })
     })]
-  }) : eJ, e$ = i.useRef(null), e0 = (0, I.Y)({
+  }) : eX, e0 = i.useRef(null), e1 = (0, M.Y)({
     location: "PrivateChannel"
-  }) && (null == p ? true : p.displayNameStyles) != null, e1 = (0, f.Z)();
+  }) && (null == p ? true : p.displayNameStyles) != null, e8 = (0, f.Z)();
   return (0, r.jsx)(d.mh, {
     id: t.id,
     children: e => {
       var {
         role: n
-      } = e, i = el(e, ["role"]);
-      return (0, r.jsxs)(Z.Z, {
-        className: a()(en.channel, en.dm),
+      } = e, i = ea(e, ["role"]);
+      return (0, r.jsxs)(T.Z, {
+        className: a()(er.channel, er.dm),
         role: n,
-        focusProps: ei(er({}, eo), {
-          focusTarget: eO,
-          ringTarget: eh
+        focusProps: el(ei({}, es), {
+          focusTarget: ey,
+          ringTarget: eg
         }),
-        ref: eh,
-        onMouseEnter: eG,
-        onMouseLeave: eB,
-        onMouseDown: eW,
-        onFocus: ez,
-        onBlur: eH,
-        onContextMenu: eV,
-        "aria-setsize": X,
-        "aria-posinset": J,
-        children: [eD ? (0, r.jsx)("div", {
-          className: a()(en.unreadPill, {
-            [en.muted]: ek
+        ref: eg,
+        onMouseEnter: eB,
+        onMouseLeave: ez,
+        onMouseDown: eQ,
+        onFocus: eH,
+        onBlur: eK,
+        onContextMenu: eq,
+        "aria-setsize": $,
+        "aria-posinset": X,
+        children: [e_ ? (0, r.jsx)("div", {
+          className: a()(er.unreadPill, {
+            [er.muted]: ek
           })
-        }) : null, (0, r.jsxs)(b.vjx, {
-          className: a()(en.interactive, {
-            [en.interactiveSystemDM]: eP && eS,
-            [en.interactiveSelected]: o || eb
+        }) : null, (0, r.jsxs)(O.vjx, {
+          className: a()(er.interactive, {
+            [er.interactiveSystemDM]: eC && eP,
+            [er.interactiveSelected]: o || eO
           }),
           as: "div",
-          onClick: eY,
+          onClick: eV,
           muted: ek,
           selected: o,
-          children: [(0, r.jsx)(B.Z, {
-            nameplate: eF ? W : true,
+          children: [(0, r.jsx)(z.Z, {
+            nameplate: eG ? Q : true,
             selected: o,
-            hovered: $,
-            content: e$,
-            placement: G.i.CHANNEL
-          }), (0, r.jsx)(c.rU, ei(er({
-            innerRef: eO,
-            to: ee.Z5c.CHANNEL(ee.ME, t.id),
-            className: en.link,
-            "aria-label": (0, C.ZP)({
+            hovered: ee,
+            content: e0,
+            placement: B.i.CHANNEL
+          }), (0, r.jsx)(c.rU, el(ei({
+            innerRef: ey,
+            to: et.Z5c.CHANNEL(et.ME, t.id),
+            className: er.link,
+            "aria-label": (0, E.ZP)({
               channel: t,
-              unread: eD
+              unread: e_
             })
           }, i), {
-            children: (0, r.jsx)(S.Z, {
-              ref: e$,
+            children: (0, r.jsx)(P.Z, {
+              ref: e0,
               avatar: (() => {
-                let e = b.EFr.SIZE_32;
+                let e = O.EFr.SIZE_32;
                 if (t.isMultiUserDM())
-                  if (t.recipients.length >= 2 && l && null == t.icon) return (0, r.jsx)(L.Z, {
+                  if (t.recipients.length >= 2 && l && null == t.icon) return (0, r.jsx)(U.Z, {
                     "aria-hidden": true,
                     recipients: t.recipients,
                     size: e,
-                    isTyping: A,
-                    status: F
+                    isTyping: F,
+                    status: G
                   });
-                  else return (0, r.jsx)(ea, ei(er({}, ex), {
-                    src: (0, E.x)(t),
+                  else return (0, r.jsx)(eo, el(ei({}, eN), {
+                    src: (0, w.x)(t),
                     "aria-hidden": true,
                     size: e,
-                    status: A ? ee.Skl.ONLINE : F,
-                    isTyping: A
+                    status: F ? et.Skl.ONLINE : G,
+                    isTyping: F
                   }));
                 s()(null != p, "PrivateChannel.renderAvatar: Invalid prop configuration - no user or channel");
                 let n = null;
-                return p.isSystemUser() || (n = (0, y.Z)(h) ? ee.Skl.STREAMING : F), (0, r.jsx)(ea, ei(er({}, ex), {
-                  size: b.EFr.SIZE_32,
-                  src: eg,
-                  avatarDecoration: ej,
+                return p.isSystemUser() || (n = (0, h.Z)(g) ? et.Skl.STREAMING : G), (0, r.jsx)(eo, el(ei({}, eN), {
+                  size: O.EFr.SIZE_32,
+                  src: ej,
+                  avatarDecoration: ex,
                   status: n,
-                  isMobile: K,
-                  isTyping: A,
+                  isMobile: W,
+                  isTyping: F,
                   "aria-label": p.username,
                   statusTooltip: true
                 }))
               })(),
-              highlighted: eD && !ek,
+              highlighted: e_ && !ek,
               muted: ek,
               subText: t.isSystemDM() ? (0, r.jsx)("div", {
-                className: en.subtext,
-                children: (0, P.Z)(t.id) ? et.intl.string(et.t.FL5T09) : et.intl.string(et.t.NnY5lZ)
+                className: er.subtext,
+                children: (0, C.Z)(t.id) ? en.intl.string(en.t.FL5T09) : en.intl.string(en.t.NnY5lZ)
               }) : t.isMultiUserDM() ? (0, r.jsx)("div", {
-                className: en.subtext,
-                children: et.intl.format(et.t.CxSA5O, {
+                className: er.subtext,
+                children: en.intl.format(en.t.CxSA5O, {
                   members: t.recipients.length + 1
                 })
-              }) : (0, g.Z)({
-                activities: h,
-                status: F,
-                applicationStream: j,
-                voiceChannel: _
-              }) ? (0, r.jsx)(x.Z, {
+              }) : (0, j.Z)({
+                activities: g,
+                status: G,
+                applicationStream: x,
+                voiceChannel: R
+              }) ? (0, r.jsx)(N.Z, {
                 location: "PrivateChannel",
                 user: p,
-                activities: h,
-                voiceChannel: _,
-                applicationStream: j,
-                animateEmoji: $ || ef || eb,
-                textClassName: en.activityStatusText,
-                iconClassName: ek ? en.mutedIcon : true
+                activities: g,
+                voiceChannel: R,
+                applicationStream: x,
+                animateEmoji: ee || em || eO,
+                textClassName: er.activityStatusText,
+                iconClassName: ek ? er.mutedIcon : true
               }) : null,
-              name: (0, r.jsx)(T.Z, {
-                className: a()(en.overflowTooltip, {
-                  [en.withDisplayNameStyles]: e0
+              name: (0, r.jsx)(I.Z, {
+                className: a()(er.overflowTooltip, {
+                  [er.withDisplayNameStyles]: e1
                 }),
-                children: eX
+                children: e$
               }),
-              decorators: t.isSystemDM() ? (0, r.jsx)(N.Z, {
-                className: en.decorator,
-                type: N.Z.Types.SYSTEM_DM,
+              decorators: t.isSystemDM() ? (0, r.jsx)(S.Z, {
+                className: er.decorator,
+                type: S.Z.Types.SYSTEM_DM,
                 verified: true
               }) : null,
-              withDisplayNameStyles: e0
+              withDisplayNameStyles: e1
             })
           })), (0, r.jsxs)("div", {
-            className: a()(en.iconsContainer, {
-              [en.nameplated]: eF
+            className: a()(er.iconsContainer, {
+              [er.nameplated]: eG
             }),
-            children: [eR && !eb ? (0, r.jsx)(ec, {}) : null, eI ? (0, r.jsx)(eu, {}) : null, eM ? (0, r.jsx)(ed, {}) : null, eL && !e1 ? (0, r.jsx)(b.ua7, {
-              text: et.intl.string(eN ? et.t.Et8qws : et.t["d+e27u"]),
+            children: [eL && !eO ? (0, r.jsx)(eu, {}) : null, eM ? (0, r.jsx)(ed, {}) : null, eD ? (0, r.jsx)(ep, {}) : null, eU && !e8 ? (0, r.jsx)(b.u, {
+              asContainer: true,
+              text: en.intl.string(eS ? en.t.Et8qws : en.t["d+e27u"]),
               delay: 500,
-              targetElementRef: eA,
-              children: e => {
-                var {
-                  onClick: t
-                } = e, n = el(e, ["onClick"]);
-                return (0, r.jsx)(es, ei(er({}, n), {
-                  icon: b.xhG,
-                  "aria-label": et.intl.string(et.t.PdRCRk),
-                  onClick: e => {
-                    null == t || t(), eV(e)
-                  },
-                  onMouseDown: eQ,
-                  nameplate: W,
-                  forceShow: eb,
-                  visibleElementRef: eA
-                }))
-              }
-            }) : (0, r.jsx)(es, {
-              icon: b.Dio,
-              "aria-label": eN ? et.intl.string(et.t["26C4oq"]) : et.intl.string(et.t.jsvgc3),
-              onClick: eN ? eq : eK,
-              onMouseDown: eQ,
-              nameplate: W,
+              targetElementRef: eF,
+              children: (0, r.jsx)(ec, {
+                icon: O.xhG,
+                "aria-label": en.intl.string(en.t.PdRCRk),
+                onClick: e => {
+                  eq(e)
+                },
+                onMouseDown: eY,
+                nameplate: Q,
+                forceShow: eO,
+                visibleElementRef: eF
+              })
+            }) : (0, r.jsx)(ec, {
+              icon: O.Dio,
+              "aria-label": eS ? en.intl.string(en.t["26C4oq"]) : en.intl.string(en.t.jsvgc3),
+              onClick: eS ? eJ : eW,
+              onMouseDown: eY,
+              nameplate: Q,
               reducedClickTarget: true,
-              visibleElementRef: eA
+              visibleElementRef: eF
             })]
           })]
         })]
@@ -514,66 +511,66 @@ function ef(e) {
     }
   })
 }
-let em = 12633 == require.j ? e => {
+let eb = 12633 == require.j ? e => {
   var {
     channel: t,
     selected: n
-  } = e, i = el(e, ["channel", "selected"]);
-  let l = (0, m.e7)([J.default], () => J.default.getUser(t.getRecipientId())),
+  } = e, i = ea(e, ["channel", "selected"]);
+  let l = (0, m.e7)([X.default], () => X.default.getUser(t.getRecipientId())),
     {
       isStatusIndicatorEnabled: a,
       isTypingIndicatorEnabled: o,
       isFacepileEnabled: s
-    } = _.Z.useExperiment({
+    } = R.Z.useExperiment({
       location: "private_channel"
     }, {
       autoTrackExposure: true
     }),
     c = null == l ? true : l.id,
-    u = (0, m.cj)([W.Z, K.Z], () => {
+    u = (0, m.cj)([Q.Z, W.Z], () => {
       let e;
       if (t.isMultiUserDM()) {
         if (a) {
-          let n = W.Z.getState().statuses;
-          t.recipients.some(e => n[e] === ee.Skl.ONLINE) && (e = ee.Skl.ONLINE)
+          let n = Q.Z.getState().statuses;
+          t.recipients.some(e => n[e] === et.Skl.ONLINE) && (e = et.Skl.ONLINE)
         }
-      } else null != c && (e = W.Z.getStatus(c));
+      } else null != c && (e = Q.Z.getStatus(c));
       return {
         status: e,
-        activities: null != c ? W.Z.getActivities(c) : null,
-        applicationStream: null != c ? K.Z.getAnyStreamForUser(c) : null,
-        isMobile: null != c && W.Z.isMobileOnline(c)
+        activities: null != c ? Q.Z.getActivities(c) : null,
+        applicationStream: null != c ? W.Z.getAnyStreamForUser(c) : null,
+        isMobile: null != c && Q.Z.isMobileOnline(c)
       }
     }, [t, c, a]),
     {
       voiceActivityStatusEnabled: d
-    } = (0, h.U)({
+    } = (0, g.U)({
       location: "PrivateChannel"
     }),
     {
       voiceChannel: p
-    } = (0, j.Z)({
+    } = (0, x.Z)({
       userId: c
     }),
-    f = (0, A.K)({
+    f = (0, F.K)({
       user: l
     }),
-    b = (0, m.e7)([J.default, V.Z], () => {
+    b = (0, m.e7)([X.default, q.Z], () => {
       if (t.isMultiUserDM())
-        if (o) return X.default.keys(V.Z.getTypingUsers(t.id)).some(e => {
+        if (o) return $.default.keys(q.Z.getTypingUsers(t.id)).some(e => {
           var t;
-          return e !== (null == (t = J.default.getCurrentUser()) ? true : t.id)
+          return e !== (null == (t = X.default.getCurrentUser()) ? true : t.id)
         });
         else returnfalse;
-      return null != l && V.Z.isTyping(t.id, t.getRecipientId())
+      return null != l && q.Z.isTyping(t.id, t.getRecipientId())
     }, [t, l, o]);
-  return t.isMultiUserDM() ? (0, r.jsx)(ef, er({
+  return t.isMultiUserDM() ? (0, r.jsx)(em, ei({
     channel: t,
     selected: n,
     isTyping: b,
-    status: u.status === ee.Skl.ONLINE ? ee.Skl.ONLINE : true,
+    status: u.status === et.Skl.ONLINE ? et.Skl.ONLINE : true,
     isGDMFacepileEnabled: s
-  }, i)) : (0, r.jsx)(ef, er({
+  }, i)) : (0, r.jsx)(em, ei({
     channel: t,
     selected: n,
     user: l,

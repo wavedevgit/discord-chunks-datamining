@@ -2,7 +2,7 @@
 /** chunk id: 318374, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => v
+  Z: () => I
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -10,6 +10,7 @@ var Chunk951288 = require("./951288.js"),
   o = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   l = require.n(Chunk392711),
+  Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk239091 = require("./239091.js"),
   Chunk751688 = require("./751688.jsx"),
@@ -18,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk581143 = require("./581143.js");
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -27,20 +28,20 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
 }
 
-function E(e, t) {
+function b(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -51,13 +52,13 @@ function E(e, t) {
   return n
 }
 
-function b(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
+function y(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function y() {
+function O() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk481060.EFr.SIZE_24;
   switch (module) {
     case Chunk481060.EFr.SIZE_16:
@@ -70,7 +71,7 @@ function y() {
   }
 }
 
-function O() {
+function v() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk481060.EFr.SIZE_24;
   switch (module) {
     case Chunk481060.EFr.SIZE_16:
@@ -82,124 +83,124 @@ function O() {
   }
 }
 
-function v(e) {
+function I(e) {
   let {
     users: t,
     maxUsers: a,
     guildId: s,
-    channelId: m,
-    className: E,
-    size: v = c.EFr.SIZE_24,
-    overflowCountVariant: I,
-    overflowCountColor: T = "interactive-normal",
-    overflowCountClassName: S,
-    hideOverflowCount: A = false,
-    disableUsernameTooltip: C = false,
-    disableUserPopout: N = false,
-    onClickOverflow: R,
-    onFocusOverflow: P,
-    onUserClick: w,
-    onUserPopoutRequestClose: D,
-    "aria-label": L,
-    "aria-labelledby": x,
+    channelId: g,
+    className: b,
+    size: I = u.EFr.SIZE_24,
+    overflowCountVariant: T,
+    overflowCountColor: S = "interactive-normal",
+    overflowCountClassName: A,
+    hideOverflowCount: C = false,
+    disableUsernameTooltip: N = false,
+    disableUserPopout: R = false,
+    onClickOverflow: P,
+    onFocusOverflow: w,
+    onUserClick: D,
+    onUserPopoutRequestClose: L,
+    "aria-label": x,
+    "aria-labelledby": M,
     "aria-hidden": j
-  } = e, [M, k] = i.useState(false), U = y(v), G = i.useRef(null), B = t.length - a, Z = B + 1, F = B > 0 && !A && !j, V = () => (0, r.jsx)(c.VqE, {
-    className: h.popoutWrapper,
-    "aria-label": L,
-    "aria-labelledby": x,
-    children: (0, r.jsx)(c.Ttm, {
-      className: h.scroller,
-      children: t.map(e => (0, r.jsx)(d.Z, {
+  } = e, [k, U] = i.useState(false), G = O(I), B = i.useRef(null), Z = t.length - a, F = Z + 1, V = Z > 0 && !C && !j, H = () => (0, r.jsx)(u.VqE, {
+    className: m.popoutWrapper,
+    "aria-label": x,
+    "aria-labelledby": M,
+    children: (0, r.jsx)(u.Ttm, {
+      className: m.scroller,
+      children: t.map(e => (0, r.jsx)(f.Z, {
         user: e,
         guildId: s,
-        channelId: m,
-        nick: f.ZP.getNickname(s, m, e),
-        disablePopout: "function" == typeof N ? N(e.id) : N,
-        onClick: w,
+        channelId: g,
+        nick: _.ZP.getNickname(s, g, e),
+        disablePopout: "function" == typeof R ? R(e.id) : R,
+        onClick: D,
         onPopoutRequestClose: () => {
-          k(false), null == D || D()
+          U(false), null == L || L()
         },
-        onContextMenu: t => (0, u.jW)(t, async () => {
+        onContextMenu: t => (0, d.jW)(t, async () => {
           let {
             default: t
           } = await Promise.all([n.e("79695"), n.e("69220")]).then(n.bind(n, 881351));
-          return n => (0, r.jsx)(t, b(g({}, n), {
+          return n => (0, r.jsx)(t, y(E({}, n), {
             user: e,
             guildId: s,
-            channelId: m
+            channelId: g
           }))
         }, {
-          onClose: () => k(false)
+          onClose: () => U(false)
         })
       }, e.id))
     })
-  }), H = () => {
-    let e = F ? a - 1 : Math.min(t.length, a),
+  }), Y = () => {
+    let e = V ? a - 1 : Math.min(t.length, a),
       n = e - 1,
       i = l()(t).take(e).map((e, t) => {
-        let i = f.ZP.getNickname(s, m, e),
-          a = null != i ? i : _.ZP.getName(e),
-          l = t === n && !F,
-          u = o()(h.avatar, U, l && h.isLast),
-          d = (0, r.jsx)(c.qEK, {
+        let i = _.ZP.getNickname(s, g, e),
+          a = null != i ? i : p.ZP.getName(e),
+          l = t === n && !V,
+          d = o()(m.avatar, G, l && m.isLast),
+          f = (0, r.jsx)(u.qEK, {
             src: e.getAvatarURL(s, 24),
-            size: v,
+            size: I,
             "aria-hidden": true
           });
         return (0, r.jsx)("li", {
-          className: u,
-          children: C ? (0, r.jsx)("span", {
+          className: d,
+          children: N ? (0, r.jsx)("span", {
             role: "img",
             "aria-label": a,
-            children: d
-          }) : (0, r.jsx)(c.ua7, {
-            text: a,
+            children: f
+          }) : (0, r.jsx)(c.u, {
+            __unsupportedReactNodeAsText: a,
             "aria-label": false,
-            children: e => (0, r.jsx)("span", b(g({}, e), {
+            children: (0, r.jsx)("span", {
               role: "img",
               "aria-label": a,
-              children: d
-            }))
+              children: f
+            })
           })
         }, e.id)
       }).value();
     return (0, r.jsx)("ul", {
-      className: h.avatars,
+      className: m.avatars,
       children: i
     })
-  }, Y = () => {
-    if (!F) return null;
-    let e = null != I ? I : O(v);
-    return (0, r.jsx)(c.yRy, {
-      targetElementRef: G,
-      renderPopout: V,
-      shouldShow: M,
+  }, W = () => {
+    if (!V) return null;
+    let e = null != T ? T : v(I);
+    return (0, r.jsx)(u.yRy, {
+      targetElementRef: B,
+      renderPopout: H,
+      shouldShow: k,
       position: "bottom",
-      onRequestClose: () => k(false),
-      children: t => (0, r.jsx)(c.P3F, b(g({}, t), {
-        innerRef: G,
-        className: o()(h.overflow, U, S),
-        onFocus: P,
+      onRequestClose: () => U(false),
+      children: t => (0, r.jsx)(u.P3F, y(E({}, t), {
+        innerRef: B,
+        className: o()(m.overflow, G, A),
+        onFocus: w,
         onClick: e => {
-          null == R || R(e), k(true)
+          null == P || P(e), U(true)
         },
-        "aria-label": p.intl.formatToPlainString(p.t.R8Z8Qk, {
-          count: Z
+        "aria-label": h.intl.formatToPlainString(h.t.R8Z8Qk, {
+          count: F
         }),
-        children: (0, r.jsx)(c.Text, {
+        children: (0, r.jsx)(u.Text, {
           variant: e,
-          color: T,
-          children: Z > 99 ? ">99" : "+".concat(Z)
+          color: S,
+          children: F > 99 ? ">99" : "+".concat(F)
         })
       }))
     }, "overflow")
   };
   return t.length <= 0 ? null : (0, r.jsxs)("div", {
     role: "group",
-    "aria-label": L,
-    "aria-labelledby": x,
-    className: o()(E, h.avatars),
+    "aria-label": x,
+    "aria-labelledby": M,
+    className: o()(b, m.avatars),
     "aria-hidden": j,
-    children: [H(), Y()]
+    children: [Y(), W()]
   })
 }

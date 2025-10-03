@@ -56,12 +56,12 @@ var s = function(e, t) {
     var D = h[w],
       L = D.getBoundingClientRect(),
       x = L.height,
-      j = L.width,
-      M = L.top,
+      M = L.width,
+      j = L.top,
       k = L.right,
       U = L.bottom,
       G = L.left;
-    if ("if-needed" === i && T >= 0 && C >= 0 && A <= E && S <= g && T >= M && A <= U && C >= G && S <= k) break;
+    if ("if-needed" === i && T >= 0 && C >= 0 && A <= E && S <= g && T >= j && A <= U && C >= G && S <= k) break;
     var B = getComputedStyle(D),
       Z = parseInt(B.borderLeftWidth, 10),
       F = parseInt(B.borderTopWidth, 10),
@@ -71,14 +71,14 @@ var s = function(e, t) {
       W = 0,
       K = "offsetWidth" in D ? D.offsetWidth - D.clientWidth - Z - V : 0,
       z = "offsetHeight" in D ? D.offsetHeight - D.clientHeight - F - H : 0,
-      q = "offsetWidth" in D ? 0 === D.offsetWidth ? 0 : j / D.offsetWidth : 0,
+      q = "offsetWidth" in D ? 0 === D.offsetWidth ? 0 : M / D.offsetWidth : 0,
       X = "offsetHeight" in D ? 0 === D.offsetHeight ? 0 : x / D.offsetHeight : 0;
     if (p === D) Y = "start" === s ? N : "end" === s ? N - E : "nearest" === s ? o(y, y + E, E, F, H, y + N, y + N + v, v) : N - E / 2, W = "start" === l ? R : "center" === l ? R - g / 2 : "end" === l ? R - g : o(b, b + g, g, Z, V, b + R, b + R + I, I), Y = Math.max(0, Y + y), W = Math.max(0, W + b);
     else {
-      Y = "start" === s ? N - M - F : "end" === s ? N - U + H + z : "nearest" === s ? o(M, U, x, F, H + z, N, N + v, v) : N - (M + x / 2) + z / 2, W = "start" === l ? R - G - Z : "center" === l ? R - (G + j / 2) + K / 2 : "end" === l ? R - k + V + K : o(G, k, j, Z, V + K, R, R + I, I);
+      Y = "start" === s ? N - j - F : "end" === s ? N - U + H + z : "nearest" === s ? o(j, U, x, F, H + z, N, N + v, v) : N - (j + x / 2) + z / 2, W = "start" === l ? R - G - Z : "center" === l ? R - (G + M / 2) + K / 2 : "end" === l ? R - k + V + K : o(G, k, M, Z, V + K, R, R + I, I);
       var Q = D.scrollLeft,
         J = D.scrollTop;
-      N += J - (Y = Math.max(0, Math.min(J + Y / X, D.scrollHeight - x / X + z))), R += Q - (W = Math.max(0, Math.min(Q + W / q, D.scrollWidth - j / q + K)))
+      N += J - (Y = Math.max(0, Math.min(J + Y / X, D.scrollHeight - x / X + z))), R += Q - (W = Math.max(0, Math.min(Q + W / q, D.scrollWidth - M / q + K)))
     }
     P.push({
       el: D,

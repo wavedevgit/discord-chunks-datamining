@@ -4,11 +4,11 @@
 require.d(exports, {
   Cg: () => C,
   Y0: () => P,
-  YA: () => M,
+  YA: () => j,
   fM: () => R,
   hz: () => L,
   mz: () => x,
-  ol: () => j,
+  ol: () => M,
   xB: () => w
 });
 var Chunk951288 = require("./951288.js"),
@@ -133,10 +133,10 @@ function P(e) {
       clamp: true
     },
     onRest: O
-  }, "animate-always"), L = i.useRef(null), x = null != R["aria-label"], j = null != R["aria-labelledby"], M = i.useId(), k = null != (t = R["aria-labelledby"]) ? t : M, U = i.useMemo(() => ({
+  }, "animate-always"), L = i.useRef(null), x = null != R["aria-label"], M = null != R["aria-labelledby"], j = i.useId(), k = null != (t = R["aria-labelledby"]) ? t : j, U = i.useMemo(() => ({
     headerId: k,
-    headerIdIsManaged: j
-  }), [k, j]);
+    headerIdIsManaged: M
+  }), [k, M]);
   return (0, r.jsx)(g.zM.Provider, {
     value: U,
     children: (0, r.jsx)(_.V, T(v({
@@ -230,7 +230,7 @@ function x(e) {
   })
 }
 
-function j(e) {
+function M(e) {
   return (0, r.jsx)(f.zx, {
     "data-migration-pending": true,
     focusProps: e.focusProps,
@@ -253,7 +253,7 @@ function j(e) {
   })
 }
 
-function M(e) {
+function j(e) {
   var {
     className: t,
     scrollerRef: n

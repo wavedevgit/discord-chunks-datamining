@@ -7,21 +7,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk846519 = require("./846519.js"),
+  Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk293245 = require("./293245.js"),
   Chunk863969 = require("./863969.jsx"),
   Chunk563593 = require("./563593.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-
-function f(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
 let h = (0, Chunk481060.GSL)(Chunk863969.Z),
   g = (0, Chunk481060.GSL)(Chunk563593.Z),
   m = new Set([Chunk981631.TzF.PUSHING, Chunk981631.TzF.PULLING]),
@@ -39,7 +31,7 @@ class _ extends Chunk647438.PureComponent {
     this.getIsRecentlySynced() && this.setRecentlySyncedTimeout()
   }
   componentDidUpdate(e) {
-    null != this.props.cloudSyncState && this.props.cloudSyncState.type === d.TzF.DONE && null != this.props.cloudSyncState.timestamp && (null == e.cloudSyncState || null == e.cloudSyncState.timestamp) && this.setRecentlySyncedTimeout()
+    null != this.props.cloudSyncState && this.props.cloudSyncState.type === p.TzF.DONE && null != this.props.cloudSyncState.timestamp && (null == e.cloudSyncState || null == e.cloudSyncState.timestamp) && this.setRecentlySyncedTimeout()
   }
   componentWillUnmount() {
     this._doneTimer.stop()
@@ -59,7 +51,7 @@ class _ extends Chunk647438.PureComponent {
   }
   getStop(e, t) {
     if (t) return 1;
-    if (e.type === d.TzF.PUSHING || e.type === d.TzF.PULLING) {
+    if (e.type === p.TzF.PUSHING || e.type === p.TzF.PULLING) {
       let {
         progress: t,
         total: n
@@ -70,20 +62,20 @@ class _ extends Chunk647438.PureComponent {
   }
   getTooltip(e, t) {
     switch (e.type) {
-      case d.TzF.DONE:
-        if (t) return p.intl.string(p.t.atpo0d);
-        return p.intl.string(p.t.ZCw6zs);
-      case d.TzF.CONFLICT:
-      case d.TzF.ERROR:
-        return p.intl.string(p.t.ZCw6zs);
-      case d.TzF.PLANNING:
-        return p.intl.string(p.t.ERQ0VF);
-      case d.TzF.PREPARING:
-        return p.intl.string(p.t.n5feu7);
-      case d.TzF.PUSHING:
-        return p.intl.string(p.t.oCBh0N);
-      case d.TzF.PULLING:
-        return p.intl.string(p.t.RTLNqK);
+      case p.TzF.DONE:
+        if (t) return f.intl.string(f.t.atpo0d);
+        return f.intl.string(f.t.ZCw6zs);
+      case p.TzF.CONFLICT:
+      case p.TzF.ERROR:
+        return f.intl.string(f.t.ZCw6zs);
+      case p.TzF.PLANNING:
+        return f.intl.string(f.t.ERQ0VF);
+      case p.TzF.PREPARING:
+        return f.intl.string(f.t.n5feu7);
+      case p.TzF.PUSHING:
+        return f.intl.string(f.t.oCBh0N);
+      case p.TzF.PULLING:
+        return f.intl.string(f.t.RTLNqK);
       default:
         return null
     }
@@ -95,34 +87,26 @@ class _ extends Chunk647438.PureComponent {
       className: n
     } = this.props, i = null == module ? {
       type: Chunk981631.TzF.DONE
-    } : module, l = this.getIsRecentlySynced(), a = {};
-    (m.has(Chunk647438.type) || Chunk442837) && (Chunk846519.gradientConfig = {
-      id: exports.id,
-      startColor: "rgba(199, 208, 240, 1)",
-      stopColor: "rgba(114, 137, 218, 1)",
-      stop: this.getStop(Chunk647438, Chunk442837)
-    });
-    let s = Chunk442837 ? g : b[Chunk647438.type];
-    return (0, Chunk951288.jsx)(Chunk481060.ua7, {
+    } : module, l = this.getIsRecentlySynced();
+    (m.has(Chunk647438.type) || Chunk442837) && (exports.id, this.getStop(Chunk647438, Chunk442837));
+    let a = Chunk442837 ? g : b[Chunk647438.type];
+    return (0, Chunk951288.jsx)(Chunk28664.u, {
       text: this.getTooltip(Chunk647438, Chunk442837),
-      children: e => (0, r.jsx)(s, function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), r.forEach(function(t) {
-            f(e, t, n[t])
-          })
-        }
-        return e
-      }({
-        className: n
-      }, a, e))
+      children: (0, Chunk951288.jsx)(Chunk846519, {
+        className: require
+      })
     })
   }
   constructor(...e) {
-    super(...e), f(this, "_doneTimer", new a.V7)
+    super(...e),
+      function(e, t, n) {
+        t in e ? Object.defineProperty(e, t, {
+          value: n,
+          enumerable: true,
+          configurable: true,
+          writable: true
+        }) : e[t] = n
+      }(this, "_doneTimer", new a.V7)
   }
 }
 let O = Chunk442837.ZP.connectStores([Chunk293245.Z], e => {
@@ -130,6 +114,6 @@ let O = Chunk442837.ZP.connectStores([Chunk293245.Z], e => {
     libraryApplication: t
   } = e;
   return {
-    cloudSyncState: s.Z.getState(t.id, t.branchId)
+    cloudSyncState: c.Z.getState(t.id, t.branchId)
   }
 })(_)

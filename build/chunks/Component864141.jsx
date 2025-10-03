@@ -2,13 +2,14 @@
 /** chunk id: 864141, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w
+  Z: () => N
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
+  Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk100527 = require("./100527.js"),
   Chunk906732 = require("./906732.jsx"),
@@ -30,126 +31,87 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk704543 = require("./704543.js");
 
-function C(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
 function N(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      C(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function R(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function P(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-
-function w(e) {
   let {
     user: t,
     currentUser: n,
     voiceChannel: i,
-    className: C,
+    className: N,
     onClose: R
   } = e, {
-    themeType: w
-  } = (0, m.z)(), {
-    analyticsLocations: D
-  } = (0, c.ZP)(l.Z.USER_PROFILE_VOICE_ACTIVITY_CARD), L = (0, p.Z)({
+    themeType: P
+  } = (0, g.z)(), {
+    analyticsLocations: w
+  } = (0, u.ZP)(c.Z.USER_PROFILE_VOICE_ACTIVITY_CARD), D = (0, h.Z)({
     display: "voice",
     activity: {
       type: "VOICE"
     },
     voiceChannelId: i.id,
     user: t,
-    analyticsLocations: D
-  }), x = (0, h.Z)({
+    analyticsLocations: w
+  }), L = (0, m.Z)({
     userId: t.id,
-    onAction: L
-  }), j = (0, o.e7)([d.Z], () => d.Z.getGuild(i.guild_id)), M = (0, _.Z)(i), k = (0, u.ZP)(i), {
-    channelStatusEnabled: U
-  } = (0, f.D)({
+    onAction: D
+  }), x = (0, o.e7)([f.Z], () => f.Z.getGuild(i.guild_id)), M = (0, p.Z)(i), j = (0, d.ZP)(i), {
+    channelStatusEnabled: k
+  } = (0, _.D)({
     location: "UserProfileVoiceActivityCard"
-  }), G = () => {
+  }), U = () => {
     if (t.id !== n.id) return null;
-    let e = i.isDM() || i.isGroupDM() ? S.intl.string(S.t["+DsWbW"]) : S.intl.string(S.t.xOVEjY);
-    return (0, r.jsx)(s.ua7, {
+    let e = i.isDM() || i.isGroupDM() ? A.intl.string(A.t["+DsWbW"]) : A.intl.string(A.t.xOVEjY);
+    return (0, r.jsx)(s.u, {
       text: e,
-      children: e => (0, r.jsx)(s.d3s, P(N({}, e), {
+      children: (0, r.jsx)(l.d3s, {
         size: "xxs"
-      }))
+      })
     })
-  }, B = () => (0, r.jsx)("div", {
-    className: A.actions,
-    children: (0, r.jsx)(v.Z, {
+  }, G = () => (0, r.jsx)("div", {
+    className: C.actions,
+    children: (0, r.jsx)(I.Z, {
       channel: i,
-      onAction: L,
+      onAction: D,
       onClose: R
     })
-  }), Z = i.isDM() || i.isGroupDM() ? S.intl.string(S.t["9FaEzs"]) : i.isGuildStageVoice() ? S.intl.string(S.t.QygGCA) : S.intl.string(S.t.msxteH);
-  return (0, r.jsx)(c.Gt, {
-    value: D,
-    children: (0, r.jsxs)(g.Z, {
-      ref: x,
-      className: a()(A.card, C),
-      onAction: L,
+  }), B = i.isDM() || i.isGroupDM() ? A.intl.string(A.t["9FaEzs"]) : i.isGuildStageVoice() ? A.intl.string(A.t.QygGCA) : A.intl.string(A.t.msxteH);
+  return (0, r.jsx)(u.Gt, {
+    value: w,
+    children: (0, r.jsxs)(E.Z, {
+      ref: L,
+      className: a()(C.card, N),
+      onAction: D,
       onClose: R,
-      "aria-label": "".concat(Z, ", ").concat(k),
-      children: [(0, r.jsx)(E.Z, {
-        text: Z,
-        tags: G(),
-        contextMenu: (0, r.jsx)(I.Z, {
+      "aria-label": "".concat(B, ", ").concat(j),
+      children: [(0, r.jsx)(b.Z, {
+        text: B,
+        tags: U(),
+        contextMenu: (0, r.jsx)(T.Z, {
           display: "voice",
           user: t,
           onClose: R
         })
       }), (0, r.jsx)("div", {
-        className: A.body,
+        className: C.body,
         children: (0, r.jsxs)("div", {
-          className: A.content,
-          children: [(0, r.jsx)(y.Z, {
+          className: C.content,
+          children: [(0, r.jsx)(O.Z, {
             users: M,
             channel: i
           }), (0, r.jsxs)("div", {
-            className: A.details,
-            children: [(0, r.jsx)(b.Z, {
+            className: C.details,
+            children: [(0, r.jsx)(y.Z, {
               channel: i,
-              guild: j,
-              onAction: L,
+              guild: x,
+              onAction: D,
               onClose: R
-            }), U && i.isGuildVoice() && (0, r.jsx)(O.Z, {
+            }), k && i.isGuildVoice() && (0, r.jsx)(v.Z, {
               voiceChannel: i,
-              onAction: L,
+              onAction: D,
               onClose: R
-            }), w === T.l.MODAL_V2 && B()]
-          }), w === T.l.MODAL && B()]
+            }), P === S.l.MODAL_V2 && G()]
+          }), P === S.l.MODAL && G()]
         })
-      }), w !== T.l.MODAL && w !== T.l.MODAL_V2 && B()]
+      }), P !== S.l.MODAL && P !== S.l.MODAL_V2 && G()]
     })
   })
 }

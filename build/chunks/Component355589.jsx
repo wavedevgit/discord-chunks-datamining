@@ -341,7 +341,7 @@ let Y = e => {
                 }
               }),
               clickHandler: () => {
-                X(D.ZI.CREATE_POST), S.S.dispatch(z.CkL.FOCUS_COMPOSER_TITLE)
+                X(D.ZI.CREATE_POST), N.S.dispatch(z.CkL.FOCUS_COMPOSER_TITLE)
               },
               isDone: a
             })), s
@@ -352,7 +352,7 @@ let Y = e => {
         })(a.id), _ = i.useRef(0);
         return i.useEffect(() => (c || !j || v ? clearTimeout(_.current) : _.current = setTimeout(() => {
           s()
-        }, 60 * N.Z.Millis.SECOND), () => clearTimeout(_.current)), [j, v, s, c]), {
+        }, 60 * O.Z.Millis.SECOND), () => clearTimeout(_.current)), [j, v, s, c]), {
           onboardingSteps: p,
           isHidden: x,
           isDismissed: u,
@@ -378,7 +378,7 @@ let Y = e => {
         guildId: a,
         channel: l
       } = e, s = (0, h.e7)([T.Z], () => null != a ? T.Z.partitionVersion(a) : true), o = i.useCallback(() => {
-        S.S.dispatch(z.CkL.REMEASURE_TARGET)
+        N.S.dispatch(z.CkL.REMEASURE_TARGET)
       }, []);
       i.useEffect(() => {
         o()
@@ -461,7 +461,7 @@ let Y = e => {
                   className: B.stepStatus
                 }) : (0, r.jsx)(g.G2e, {
                   disableColor: true,
-                  icon: (0, g.GSL)(O.Z),
+                  icon: (0, g.GSL)(S.Z),
                   style: q,
                   className: l()(B.stepStatus, B.completed)
                 }), (0, r.jsxs)("div", {

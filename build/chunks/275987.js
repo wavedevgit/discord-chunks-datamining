@@ -87,8 +87,8 @@ module.exports = function(e) {
         L = true,
         x = true;
       w && (D = w.component, L = w.props, x = w.editable);
-      var j = g || v.get(R),
-        M = c.encode(R, 0, 0),
+      var M = g || v.get(R),
+        j = c.encode(R, 0, 0),
         k = {
           contentState: E,
           block: N,
@@ -97,9 +97,9 @@ module.exports = function(e) {
           customStyleMap: o,
           customStyleFn: s,
           decorator: O,
-          direction: j,
+          direction: M,
           forceSelection: y,
-          offsetKey: M,
+          offsetKey: j,
           preventScroll: m,
           selection: b,
           tree: d.getBlockTree(R)
@@ -111,14 +111,14 @@ module.exports = function(e) {
         F = "";
       if (r && (F = r(N)), "li" === B) {
         var V = A !== G || null === S || Z > S;
-        F = f(F, p(P, Z, V, j))
+        F = f(F, p(P, Z, V, M))
       }
       var H = D || l,
         Y = {
           className: F,
           "data-block": true,
           "data-editor": h,
-          "data-offset-key": M,
+          "data-offset-key": j,
           key: R
         };
       true !== x && (Y = a({}, Y, {
@@ -132,7 +132,7 @@ module.exports = function(e) {
         block: W,
         wrapperTemplate: G,
         key: R,
-        offsetKey: M
+        offsetKey: j
       }), S = G ? N.getDepth() : null, A = G
     }
     for (var K = [], z = 0; z < T.length;) {

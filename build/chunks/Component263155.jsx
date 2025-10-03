@@ -76,15 +76,15 @@ let k = "WELCOME_CHANNEL",
         welcomeChannel: o,
         onEdit: f,
         onChannelReorder: h,
-        isDropHovered: v,
-        index: _
+        isDropHovered: _,
+        index: v
       } = e,
-      O = i.useRef(null),
-      y = (0, u.e7)([N.Z], () => N.Z.getChannel(o.channel_id)),
-      C = (0, u.e7)([j.ZP], () => null != o.emoji_id ? j.ZP.getUsableCustomEmojiById(o.emoji_id) : null),
-      I = null != y && S.Uu(w.Plq.VIEW_CHANNEL, y),
-      T = null != (t = (0, x.KS)(y)) ? t : m.VL1,
-      P = (0, b.ZP)(y, false),
+      C = i.useRef(null),
+      O = (0, u.e7)([N.Z], () => N.Z.getChannel(o.channel_id)),
+      y = (0, u.e7)([j.ZP], () => null != o.emoji_id ? j.ZP.getUsableCustomEmojiById(o.emoji_id) : null),
+      I = null != O && S.Uu(w.Plq.VIEW_CHANNEL, O),
+      T = null != (t = (0, b.KS)(O)) ? t : m.VL1,
+      P = (0, x.ZP)(O, false),
       G = () => {
         (0, m.ZDy)(async () => {
           let {
@@ -104,7 +104,7 @@ let k = "WELCOME_CHANNEL",
         type: k,
         item: {
           channel: o,
-          index: _
+          index: v
         },
         end: (e, t) => {
           null == e || t.didDrop() || h(e.channel, null, true)
@@ -113,18 +113,18 @@ let k = "WELCOME_CHANNEL",
       [, U] = (0, d.L)({
         accept: k,
         hover: e => {
-          h(e.channel, _, false)
+          h(e.channel, v, false)
         },
         drop: e => {
-          h(e.channel, _, true)
+          h(e.channel, v, true)
         }
       });
-    return i.useLayoutEffect(() => (M(U(O)), () => {
+    return i.useLayoutEffect(() => (M(U(C)), () => {
       M(null), U(null)
-    }), [M, U]), l = I ? null != C || null != o.emoji_name ? (0, r.jsx)(p.Z, {
-      emojiId: null == C ? true : C.id,
-      emojiName: null != C ? C.name : o.emoji_name,
-      animated: !!(null == C ? true : C.animated)
+    }), [M, U]), l = I ? null != y || null != o.emoji_name ? (0, r.jsx)(p.Z, {
+      emojiId: null == y ? true : y.id,
+      emojiName: null != y ? y.name : o.emoji_name,
+      animated: !!(null == y ? true : y.animated)
     }) : (0, r.jsx)(T, {
       size: "md",
       color: "currentColor",
@@ -135,9 +135,9 @@ let k = "WELCOME_CHANNEL",
       className: D.warningIcon
     }), (0, r.jsxs)("div", {
       className: s()(D.welcomeChannel, {
-        [D.dragging]: v
+        [D.dragging]: _
       }),
-      ref: O,
+      ref: C,
       "data-dnd-name": o.description,
       onContextMenu: e => {
         (0, g.jW)(e, async () => {
@@ -149,7 +149,7 @@ let k = "WELCOME_CHANNEL",
             welcomeChannel: o,
             onChannelReorder: h,
             onShowDeleteModal: G,
-            index: _
+            index: v
           }))
         })
       },
@@ -185,23 +185,23 @@ let k = "WELCOME_CHANNEL",
     } = e, {
       welcomeSettings: l,
       originalWelcomeSettings: s
-    } = (0, u.e7)([C.Z], () => C.Z.getSettingsProps()), a = (0, u.e7)([h.Z], () => h.Z.useReducedMotion), [c, d] = i.useState(null), [g, p] = i.useState(false), [b, x] = i.useState(false), {
+    } = (0, u.e7)([y.Z], () => y.Z.getSettingsProps()), a = (0, u.e7)([h.Z], () => h.Z.useReducedMotion), [c, d] = i.useState(null), [g, p] = i.useState(false), [x, b] = i.useState(false), {
       description: j,
       channels: N,
       enabled: S
     } = l, R = e => {
-      null != t && (o()(e, s.channels) || ((0, y.Es)(t.id, {
+      null != t && (o()(e, s.channels) || ((0, O.Es)(t.id, {
         channels: e
       }), p(true)))
     }, k = e => {
-      null != t && e !== s.enabled && ((0, y.Es)(t.id, {
+      null != t && e !== s.enabled && ((0, O.Es)(t.id, {
         enabled: e
-      }), x(!a), p(true))
+      }), b(!a), p(true))
     }, M = (e, t, n) => {
       if (null == N) return;
       let r = N.indexOf(e),
         i = [...N];
-      null != t && t !== r && (i.splice(r, 1), i.splice(t, 0, e), (0, y.VP)({
+      null != t && t !== r && (i.splice(r, 1), i.splice(t, 0, e), (0, O.VP)({
         channels: i
       })), n ? (R(i), d(null)) : d(t)
     }, U = i.useRef(false);
@@ -223,7 +223,7 @@ let k = "WELCOME_CHANNEL",
           is_enabled: S
         })
       }
-    }, [g, N, j, S, t]), i.useEffect(() => () => (0, y.sm)(), []);
+    }, [g, N, j, S, t]), i.useEffect(() => () => (0, O.sm)(), []);
     let B = i.useCallback(() => {
       null != t && T.Z.open(t.id, w.pNK.ONBOARDING)
     }, [t]);
@@ -237,7 +237,7 @@ let k = "WELCOME_CHANNEL",
           children: [(0, r.jsx)(E.Z, {
             className: D.noticeIcon
           }), Z.intl.format(Z.t.oj2vi4, {
-            onboardingLink: e => (0, r.jsx)(O.Z, {
+            onboardingLink: e => (0, r.jsx)(C.Z, {
               onClick: B,
               children: e
             })
@@ -262,15 +262,15 @@ let k = "WELCOME_CHANNEL",
         onToggle: S || (null == N ? true : N.length) !== 0 ? () => {
           k(!S)
         } : true,
-        animateStatus: b,
+        animateStatus: x,
         firstLine: S ? Z.intl.string(Z.t.JbB7Qk) : Z.intl.string(Z.t["/bd0Qk"]),
         secondLine: S ? Z.intl.string(Z.t["TA1g7+"]) : Z.intl.string(Z.t.nc6r1N)
       }), (0, r.jsxs)("div", {
         className: D.previewContainer,
         children: [(0, r.jsxs)("div", {
           className: D.welcomeHeader,
-          children: [(0, r.jsx)(v.Z, {
-            size: v.Z.Sizes.LARGER,
+          children: [(0, r.jsx)(_.Z, {
+            size: _.Z.Sizes.LARGER,
             className: D.icon,
             guild: t,
             animate: true,
@@ -281,7 +281,7 @@ let k = "WELCOME_CHANNEL",
             children: Z.intl.format(Z.t["0aydCA"], {
               guildName: t.name,
               guildNameHook: (e, n) => (0, r.jsxs)("span", {
-                children: [(0, r.jsx)(_.Z, {
+                children: [(0, r.jsx)(v.Z, {
                   guild: t,
                   className: D.headerGuildBadge,
                   flowerStarClassName: D.flowerStar
@@ -295,12 +295,12 @@ let k = "WELCOME_CHANNEL",
             children: (0, r.jsx)(m.Kx8, {
               placeholder: Z.intl.string(Z.t.qzZHaW),
               onChange: e => {
-                (0, y.VP)({
+                (0, O.VP)({
                   description: e
                 })
               },
               onBlur: () => {
-                null != t && j !== s.description && ((0, y.Es)(t.id, {
+                null != t && j !== s.description && ((0, O.Es)(t.id, {
                   description: null == j ? true : j.trim()
                 }), p(true))
               },
@@ -327,9 +327,9 @@ let k = "WELCOME_CHANNEL",
             welcomeChannel: e,
             onEdit: e => {
               let t = [...null != N ? N : []];
-              null == e ? t.splice(n, 1) : t[n] = e, (0, y.VP)({
+              null == e ? t.splice(n, 1) : t[n] = e, (0, O.VP)({
                 channels: t
-              }), R(t), 0 === t.length && S && ((0, y.VP)({
+              }), R(t), 0 === t.length && S && ((0, O.VP)({
                 enabled: false
               }), k(false))
             },

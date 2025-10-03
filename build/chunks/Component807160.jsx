@@ -738,12 +738,12 @@ function em(e) {
     applicationStatistics: p,
     gameApplication: h,
     paymentSources: g
-  } = (0, f.cj)([j.Z, k.Z, m.Z], () => {
+  } = (0, f.cj)([M.Z, k.Z, m.Z], () => {
     var e, t;
     return {
       applicationStatistics: null != u ? k.Z.getCurrentUserStatisticsForApplication(u) : null,
       gameApplication: null != (t = m.Z.getApplication(null != u ? u : "")) ? t : null == (e = r.sku) ? true : e.application,
-      paymentSources: j.Z.paymentSources
+      paymentSources: M.Z.paymentSources
     }
   }), E = (0, f.e7)([m.Z], () => null != d ? m.Z.getApplication(d) : null), b = null;
   a.useEffect(() => {
@@ -752,7 +752,7 @@ function em(e) {
   let y = (0, f.e7)([x.Z], () => x.Z.getGuild(null == h ? true : h.guildId)),
     O = c ? h : true,
     v = r.subscription,
-    I = (0, f.e7)([M.Z], () => null != v && v.type !== Y.NYc.PREMIUM ? M.Z.get(v.items[0].planId) : null);
+    I = (0, f.e7)([j.Z], () => null != v && v.type !== Y.NYc.PREMIUM ? j.Z.get(v.items[0].planId) : null);
   return (0, i.jsx)(eh, {
     applicationStatistics: p,
     application: _ ? E : O,

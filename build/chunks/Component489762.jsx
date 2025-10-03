@@ -141,7 +141,7 @@ let Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
         } = e;
         if (null == s) return;
         let l = H(F({}, a.location), {
-          object: "" === o ? M.qAy.STICKER_PICKER_VIEW_ALL : M.qAy.STICKER_SEARCH_VIEW_ALL
+          object: "" === o ? j.qAy.STICKER_PICKER_VIEW_ALL : j.qAy.STICKER_SEARCH_VIEW_ALL
         });
         if (null != s && !(0, A.kl)(s, r, n)) {
           let e = (0, w.J8)(s);
@@ -151,7 +151,7 @@ let Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
         if (i) return void((0, w.gM)(s.id) ? (0, C.hW)(s.id) : ((0, N.cQ)({
           sticker: s,
           location: H(F({}, l), {
-            object: M.qAy.STICKER
+            object: j.qAy.STICKER
           })
         }), (0, C.SA)(s.id)));
         t(e)
@@ -185,7 +185,7 @@ let Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       y._O.updateSetting(Array.from(e))
     }, []), V = i.useCallback(e => {
       let t = m[e];
-      return null != t ? (0, r.jsx)(j.Z, {
+      return null != t ? (0, r.jsx)(M.Z, {
         getStickerItemProps: s,
         getStickerRowProps: c,
         gutterWidth: d,
@@ -210,7 +210,7 @@ let Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       let {
         isStickerPack: n = true
       } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, r = new Set(t), i = t.has(e);
-      i ? r.delete(e) : r.add(e), I.default.track(M.rMx.EXPRESSION_PICKER_CATEGORY_COLLAPSE_TOGGLED, {
+      i ? r.delete(e) : r.add(e), I.default.track(j.rMx.EXPRESSION_PICKER_CATEGORY_COLLAPSE_TOGGLED, {
         location: null == A ? true : A.location,
         tab: k.X1.STICKER,
         collapsed: !i,
@@ -358,8 +358,8 @@ let Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
     } = e, A = i.useRef(false), C = i.useRef(null), [N, P] = h.ZN.useStore(e => [e.activeCategoryIndex, e.inspectedExpressionPosition], a.X), {
       analyticsLocations: w
     } = (0, f.ZP)(d.Z.STICKER_PICKER), D = (0, m.Iu)(e => e.searchQuery), L = (0, o.e7)([R.Z], () => R.Z.getPremiumPacks()), {
-      renderRow: j,
-      renderSection: M,
+      renderRow: M,
+      renderSection: j,
       renderSectionFooter: k,
       sectionFooterHeight: Z,
       renderSectionHeader: F,
@@ -442,8 +442,8 @@ let Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
           role: "none presentation",
           listPadding: null != l ? el : es,
           onScroll: H,
-          renderRow: j,
-          renderSection: null == l ? M : true,
+          renderRow: M,
+          renderSection: null == l ? j : true,
           renderSectionHeader: F,
           renderSectionFooter: k,
           rowCount: O,

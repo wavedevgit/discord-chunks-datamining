@@ -60,8 +60,8 @@ let C = "recentMentionFilterSettings",
     roleFilter: true
   }),
   x = false,
-  j = 0,
-  M = false;
+  M = 0,
+  j = false;
 
 function k(e) {
   R = {}, e.forEach(e => {
@@ -129,7 +129,7 @@ function F(e) {
     addedMessages: i
   }), r ? N = N.concat(i) : (N = i, P = {}), a().forEach(i, e => {
     P[e.id] = true
-  }), w = false, D = t, j = (0, l.zO)(), x = true
+  }), w = false, D = t, M = (0, l.zO)(), x = true
 }
 
 function V() {
@@ -152,12 +152,12 @@ function H(e) {
     userId: r,
     suppressEveryone: i,
     suppressRoles: a
-  }) ? (M && b.ZP.ackMessageId(n.id) !== e.id && (0, f.ZP)({
+  }) ? (j && b.ZP.ackMessageId(n.id) !== e.id && (0, f.ZP)({
     message: e,
     userId: r,
     suppressEveryone: v.ZP.isSuppressEveryoneEnabled(n.getGuildId()),
     suppressRoles: v.ZP.isSuppressRolesEnabled(n.getGuildId())
-  }) && (M = false), e) : null
+  }) && (j = false), e) : null
 }
 
 function Y(e) {
@@ -241,7 +241,7 @@ function Q() {
 }
 
 function J() {
-  N = [], P = {}, x = false, M = false, R = {}
+  N = [], P = {}, x = false, j = false, R = {}
 }
 
 function $(e) {
@@ -287,7 +287,7 @@ function er(e) {
 }
 
 function ei(e) {
-  M = true
+  j = true
 }
 class ea extends(r = Chunk442837.ZP.Store) {
   initialize() {
@@ -297,7 +297,7 @@ class ea extends(r = Chunk442837.ZP.Store) {
     return x
   }
   get lastLoaded() {
-    return j
+    return M
   }
   getMentions() {
     return x || N.length > 0 ? N : null
@@ -324,7 +324,7 @@ class ea extends(r = Chunk442837.ZP.Store) {
     return L.roleFilter
   }
   get mentionsAreStale() {
-    return M
+    return j
   }
   get mentionCountByChannel() {
     return R

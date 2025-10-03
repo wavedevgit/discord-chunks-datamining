@@ -121,11 +121,11 @@ function x(e) {
   })
 }
 
-function j(e) {
+function M(e) {
   P(e.relationship.id), null != h[e.relationship.id] && (h = u({}, h), delete h[e.relationship.id]), null != m[e.relationship.id] && (m = u({}, m), delete m[e.relationship.id]), null != y[e.relationship.id] && (y = u({}, y), delete y[e.relationship.id]), e.relationship.userIgnored || E.delete(e.relationship.id), b.delete(e.relationship.id), g.delete(e.relationship.id), w()
 }
 
-function M(e) {
+function j(e) {
   let {
     relationship: t
   } = e;
@@ -262,8 +262,8 @@ let B = new G(Chunk570140.Z, {
   CONNECTION_OPEN: D,
   OVERLAY_INITIALIZE: L,
   RELATIONSHIP_ADD: x,
-  RELATIONSHIP_REMOVE: j,
-  RELATIONSHIP_UPDATE: M,
+  RELATIONSHIP_REMOVE: M,
+  RELATIONSHIP_UPDATE: j,
   RELATIONSHIP_PENDING_INCOMING_REMOVED: k,
   UPDATE_STRANGER_STATUS: U
 })

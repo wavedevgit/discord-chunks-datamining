@@ -96,8 +96,8 @@ function R(e) {
     analyticsLocation: D,
     analyticsSourceLocation: L,
     confirmationFooter: x,
-    paymentModalBanner: j,
-    isGift: M = false,
+    paymentModalBanner: M,
+    isGift: j = false,
     giftMessage: k,
     giftStyle: U,
     giftingOrigin: G,
@@ -124,7 +124,7 @@ function R(e) {
         loadId: Q,
         subscriptionTier: B,
         skuId: et,
-        isGift: M,
+        isGift: j,
         giftMessage: k,
         giftStyle: U,
         giftingOrigin: G,
@@ -135,7 +135,7 @@ function R(e) {
           if (en) return;
           en = true, g.S.dispatch(O.CkL.PREMIUM_PAYMENT_MODAL_CLOSED);
           let r = () => {
-            n(), null == S || S(e), e && (null == R || R(), (0, p.M)(M, $, t) && g.S.dispatch(O.CkL.PREMIUM_SUBSCRIPTION_CREATED)), l.Z.dispatch({
+            n(), null == S || S(e), e && (null == R || R(), (0, p.M)(j, $, t) && g.S.dispatch(O.CkL.PREMIUM_SUBSCRIPTION_CREATED)), l.Z.dispatch({
               type: "PREMIUM_PAYMENT_MODAL_CLOSE",
               didSucceed: e
             })
@@ -145,7 +145,7 @@ function R(e) {
           }, y.P) : r()
         },
         onComplete: e => {
-          X = true, null == N || N(), (0, p.M)(M, $, (0, E.k5)(null == e ? true : e.subscription)) && (0, f.H)(true)
+          X = true, null == N || N(), (0, p.M)(j, $, (0, E.k5)(null == e ? true : e.subscription)) && (0, f.H)(true)
         },
         onSubscriptionConfirmation: R,
         analyticsLocations: P,
@@ -153,7 +153,7 @@ function R(e) {
         analyticsLocation: D,
         analyticsSourceLocation: L,
         confirmationFooter: x,
-        paymentModalBanner: j,
+        paymentModalBanner: M,
         trialId: Z,
         postSuccessGuild: F,
         planGroup: v.Y1,
@@ -180,7 +180,7 @@ function R(e) {
         location: null != D ? D : w,
         source: L,
         subscription_type: O.NYc.PREMIUM,
-        is_gift: M,
+        is_gift: j,
         sku_id: et,
         eligible_for_trial: null != Z,
         application_id: H,

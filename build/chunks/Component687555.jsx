@@ -42,7 +42,7 @@ function O(e) {
   return (0, a.jsxs)(a.Fragment, {
     children: [(0, a.jsxs)("div", {
       className: b.title,
-      children: [(0, a.jsx)(B, {
+      children: [(0, a.jsx)(M, {
         className: b.titleImage
       }), (0, a.jsx)(x.X6q, {
         variant: "heading-xl/bold",
@@ -57,7 +57,7 @@ function O(e) {
   })
 }
 
-function E() {
+function U() {
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsx)("div", {
       className: Chunk107785.title,
@@ -74,7 +74,7 @@ function E() {
   })
 }
 
-function U() {
+function E() {
   return (0, Chunk951288.jsx)("div", {
     className: Chunk107785.erroredContent,
     children: (0, Chunk951288.jsx)(Chunk481060.Eep, {
@@ -124,7 +124,7 @@ function R(e) {
   })
 }
 
-function M(e) {
+function B(e) {
   let {
     onShare: t
   } = e, r = (0, d.e7)([g.Z], () => g.Z.getRecipientStatus()), [s, l] = i.useState([]), [o, C] = i.useState(new Set), [h, f] = i.useState(false);
@@ -143,7 +143,7 @@ function M(e) {
       className: n()(b.remindHeader, b.headerSeparator),
       children: [(0, a.jsxs)("div", {
         className: b.title,
-        children: [(0, a.jsx)(B, {
+        children: [(0, a.jsx)(M, {
           className: b.titleImage
         }), (0, a.jsx)(x.X6q, {
           variant: "heading-xl/bold",
@@ -182,7 +182,7 @@ function M(e) {
   })
 }
 
-function B(e) {
+function M(e) {
   let {
     className: t
   } = e;
@@ -205,7 +205,7 @@ let k = function(e) {
   } = e, s = (0, d.e7)([g.Z], () => g.Z.getReferralsRemaining()), [l, p] = i.useState(""), m = (0, f.Z)(l, 400), [_, y] = i.useState(new Map), [w, N] = i.useState(false), {
     eligibleUsers: Z,
     fetchUsers: F,
-    hasError: B,
+    hasError: M,
     isFetching: k,
     resendUsers: A
   } = (0, L.q)({
@@ -216,17 +216,17 @@ let k = function(e) {
   let G = (0, u.O)(e => {
     e && !k && F()
   });
-  if (B) return (0, a.jsx)(R, {
+  if (M) return (0, a.jsx)(R, {
     onClose: t
   });
-  if (0 === s) return (0, a.jsx)(M, {
+  if (0 === s) return (0, a.jsx)(B, {
     onShare: r
   });
   let I = m.length > 0 && 0 === Z.length;
   return (0, a.jsxs)("div", {
     children: [(0, a.jsxs)("div", {
       className: n()(b.header, b.headerSeparator),
-      children: [I ? (0, a.jsx)(E, {}) : (0, a.jsx)(O, {
+      children: [I ? (0, a.jsx)(U, {}) : (0, a.jsx)(O, {
         numOfSelectedUsers: P.length,
         anySelected: _.size > 0
       }), (0, a.jsx)(h.Z, {
@@ -244,7 +244,7 @@ let k = function(e) {
         },
         onQueryChange: p
       })]
-    }), I ? (0, a.jsx)(U, {}) : (0, a.jsxs)(C.w0Z, {
+    }), I ? (0, a.jsx)(E, {}) : (0, a.jsxs)(C.w0Z, {
       className: b.list,
       children: [Z.map(e => (0, a.jsx)(v.Z, {
         disabled: [..._.values()].filter(e => !A.has(e.id)).length >= s && !_.has(e.id) && !A.has(e.id),

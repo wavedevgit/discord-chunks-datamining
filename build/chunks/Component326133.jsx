@@ -2,7 +2,7 @@
 /** chunk id: 326133, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => M
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -87,8 +87,8 @@ let P = 490,
   D = 245,
   L = 200,
   x = 120,
-  j = Chunk647438.forwardRef(function(e, t) {
-    var n, a, T, A, R, j, M, k;
+  M = Chunk647438.forwardRef(function(e, t) {
+    var n, a, T, A, R, M, j, k;
     let {
       channel: U,
       type: G,
@@ -136,8 +136,8 @@ let P = 490,
         [I.minimal]: (null == (a = K.query) ? true : a.type) === b.eq.MENTION_SUGGESTIONS
       },
       er = P;
-    null != J && (er = (null == (R = G.autocomplete) ? true : R.small) ? L : (null == (j = K.query) ? true : j.type) === b.eq.EMOJIS_AND_STICKERS ? w : D);
-    let ei = Math.max(B, null != (M = null == F || null == (T = F.current) ? true : T.clientHeight) ? M : 0),
+    null != J && (er = (null == (R = G.autocomplete) ? true : R.small) ? L : (null == (M = K.query) ? true : M.type) === b.eq.EMOJIS_AND_STICKERS ? w : D);
+    let ei = Math.max(B, null != (j = null == F || null == (T = F.current) ? true : T.clientHeight) ? j : 0),
       ea = Math.min(.5 * window.innerHeight, ei);
     er = Math.min(window.innerHeight - x - ea - (null != V ? V : 0), er);
     let eo = (0, r.jsx)(_.ZP, {

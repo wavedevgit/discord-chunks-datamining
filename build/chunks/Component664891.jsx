@@ -167,16 +167,16 @@ function K(e) {
     preventFetch: e_
   }));
   let eE = null == n ? true : n.eligiblePaymentGateways,
-    eb = null != eE && eE.length > 0 && (es === C.c || null === el) && ei ? j.w.SELECT_PAYMENT_METHOD : true;
+    eb = null != eE && eE.length > 0 && (es === C.c || null === el) && ei ? M.w.SELECT_PAYMENT_METHOD : true;
   return (0, r.jsxs)("div", {
     className: F.stepBody,
-    children: [(0, r.jsx)(j.Y, {
+    children: [(0, r.jsx)(M.Y, {
       paymentRestrictionBannerType: eb
     }), !eh && ep && (0, r.jsxs)("div", {
       children: [(0, r.jsx)(D.UN, {
         negativeMarginBottom: true,
         negativeMarginTop: true
-      }), (0, r.jsx)(w.Z, {}), (0, r.jsx)(M.O, {
+      }), (0, r.jsx)(w.Z, {}), (0, r.jsx)(j.O, {
         planOptions: em,
         eligibleForMultiMonthPlans: false,
         selectedPlanId: P,

@@ -47,8 +47,8 @@ let w = e => {
   D = Chunk647438.memo(function(e) {
     let t, D, L, {
         className: x,
-        emojiGrid: j,
-        guildId: M,
+        emojiGrid: M,
+        guildId: j,
         pickerIntention: k,
         channel: U
       } = e,
@@ -66,8 +66,8 @@ let w = e => {
           rowIndex: t,
           columnIndex: n
         } = B;
-        return null == (e = j[t]) ? true : e[n]
-      }, [j, B]);
+        return null == (e = M[t]) ? true : e[n]
+      }, [M, B]);
     switch (null == Z ? true : Z.type) {
       case S.ld.EMOJI:
         t = null == Z ? true : Z.emoji;
@@ -94,11 +94,11 @@ let w = e => {
       V = (0, a.e7)([E.Z], () => E.Z.isFocused()),
       H = (0, a.e7)([l.Z], () => l.Z.useReducedMotion, []),
       Y = m.Yk.useSetting(),
-      W = (0, v.C1)(M, P(t) ? t : null),
+      W = (0, v.C1)(j, P(t) ? t : null),
       K = (0, a.e7)([c.ZP], () => c.ZP.expandedSectionsByGuildIds),
       {
         newlyAddedEmojis: z
-      } = (0, I.Z)(M, k),
+      } = (0, I.Z)(j, k),
       q = (null == Z ? true : Z.type) === S.ld.EMOJI ? Z.subCategory : A.t0.NONE;
     if (i.useEffect(() => {
         let e = Date.now();
@@ -107,7 +107,7 @@ let w = e => {
             emoji: t,
             subCategory: q,
             position: Z.columnIndex + 1,
-            newlyAddedHighlight: q === A.t0.NEWLY_ADDED_EMOJI && d.Z.isNewerThanLastSeen(M, t.id)
+            newlyAddedHighlight: q === A.t0.NEWLY_ADDED_EMOJI && d.Z.isNewerThanLastSeen(j, t.id)
           }))
         }
       }), null == t) return null;
@@ -158,7 +158,7 @@ let w = e => {
     let $ = G && "CREATE_EMOJI" === t.type ? C.intl.string(C.t["Z/r7IS"]) : w({
       inspectedEmoji: t,
       channel: U,
-      guildId: M,
+      guildId: j,
       intention: k,
       guild: F
     });

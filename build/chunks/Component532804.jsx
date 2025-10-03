@@ -22,42 +22,42 @@ function f(e) {
   let {
     changeTitle: f,
     value: h,
-    options: b,
-    className: x,
+    options: x,
+    className: b,
     onChange: j
-  } = e, [v, _] = i.useState(h), [O, y] = i.useState(false), [C, N] = i.useState(false), E = i.useRef(null);
+  } = e, [_, v] = i.useState(h), [C, O] = i.useState(false), [y, N] = i.useState(false), E = i.useRef(null);
   i.useEffect(() => {
-    _(h)
+    v(h)
   }, [h]), i.useEffect(() => () => {
     clearTimeout(E.current)
   }, []);
-  let I = b.find(e => e.value === v);
+  let I = x.find(e => e.value === _);
   return (0, r.jsx)(u.Z, {
-    title: O ? f : null != (t = null == I ? true : I.title) ? t : f,
-    description: O ? "(".concat(null != (n = null == I ? true : I.title) ? n : g.intl.string(g.t.PoWNfX), ")") : null != (l = null == I ? true : I.description) ? l : "",
-    highlightColor: O ? d.q.NONE : null == I ? true : I.highlightColor,
+    title: C ? f : null != (t = null == I ? true : I.title) ? t : f,
+    description: C ? "(".concat(null != (n = null == I ? true : I.title) ? n : g.intl.string(g.t.PoWNfX), ")") : null != (l = null == I ? true : I.description) ? l : "",
+    highlightColor: C ? d.q.NONE : null == I ? true : I.highlightColor,
     action: (0, r.jsx)(a.zx, {
       look: a.zx.Looks.LINK,
       size: a.zx.Sizes.MIN,
       color: a.zx.Colors.LINK,
       children: g.intl.string(g.t.GEgsAw)
     }),
-    loading: C,
-    className: x,
-    children: b.map((e, t) => (0, r.jsx)(m.Z, {
+    loading: y,
+    className: b,
+    children: x.map((e, t) => (0, r.jsx)(m.Z, {
       title: e.title,
       description: e.description,
       highlightColor: e.highlightColor,
-      className: s()(p.groupCollapsedRow, v === e.value && p.selected),
-      selected: v === e.value,
-      action: v === e.value ? (0, r.jsx)(c.Z, {
+      className: s()(p.groupCollapsedRow, _ === e.value && p.selected),
+      selected: _ === e.value,
+      action: _ === e.value ? (0, r.jsx)(c.Z, {
         className: p.radioItem
       }) : (0, r.jsx)(o.Z, {
         className: p.radioItem
       }),
       onClick: () => {
-        e.disabled || e.value === v || (N(true), null == j || j(e), _(e.value), E.current = setTimeout(() => {
-          N(false), y(false)
+        e.disabled || e.value === _ || (N(true), null == j || j(e), v(e.value), E.current = setTimeout(() => {
+          N(false), O(false)
         }, 1e3))
       },
       disabled: e.disabled

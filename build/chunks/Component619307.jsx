@@ -175,8 +175,8 @@ function w(e) {
     popoutClassName: w,
     popoutPosition: L = "bottom",
     popoutLayerContext: x,
-    optionClassName: j,
-    closeOnSelect: M,
+    optionClassName: M,
+    closeOnSelect: j,
     select: k,
     isSelected: U,
     serialize: G,
@@ -207,11 +207,11 @@ function w(e) {
     }, [en, Q]),
     ei = (0, p.O)(er),
     ea = i.useCallback(e => {
-      if (k(e), M) {
+      if (k(e), j) {
         var t;
         null == (t = $.current) || t.focus()
       }
-    }, [k, M, $]),
+    }, [k, j, $]),
     eo = i.useCallback(e => {
       e.stopPropagation(), null == B || B()
     }, [B]),
@@ -240,7 +240,7 @@ function w(e) {
       } = e;
       return (0, r.jsx)(D, {
         className: w,
-        closeOnSelect: M,
+        closeOnSelect: j,
         maxVisibleItems: l,
         width: "auto" === E ? true : null != E ? E : ee,
         isSelected: U,
@@ -250,7 +250,7 @@ function w(e) {
         options: t,
         serialize: G,
         renderOptionLabel: C,
-        optionClassName: j,
+        optionClassName: M,
         updatePosition: a,
         popoutPosition: i
       })
@@ -388,7 +388,7 @@ function D(e) {
         serialize: E
       }, null != (n = e.key) ? n : t)
     }), [D, d, y, f, m, E]),
-    j = f.length <= p ? c.xVE : c.h21;
+    M = f.length <= p ? c.xVE : c.h21;
   return (0, r.jsx)(l.bG, {
     navigator: P,
     children: (0, r.jsx)(l.SJ, {
@@ -397,7 +397,7 @@ function D(e) {
           ref: n
         } = e, i = v(e, ["ref"]);
         return (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(j, O(b({
+          children: [(0, r.jsx)(M, O(b({
             className: o()(g.popout, t, {
               [g.popoutPositionTop]: "top" === S
             }),

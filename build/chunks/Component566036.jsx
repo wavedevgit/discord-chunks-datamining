@@ -43,7 +43,7 @@ function h(e) {
   })
 }
 
-function b(e) {
+function x(e) {
   let {
     gameApplicationIds: t,
     onRemoveGame: n,
@@ -59,14 +59,14 @@ function b(e) {
     }, e))
   })
 }
-let x = [];
+let b = [];
 
 function j(e) {
   var t;
   let {
     profile: n,
     canManageGuild: l
-  } = e, o = n.id, d = null != (t = null == n ? true : n.gameApplicationIds) ? t : x, f = i.useCallback(e => {
+  } = e, o = n.id, d = null != (t = null == n ? true : n.gameApplicationIds) ? t : b, f = i.useCallback(e => {
     c.Z.updateGuildProfile(o, {
       gameApplicationIds: e
     })
@@ -75,7 +75,7 @@ function j(e) {
     c.Z.updateGuildProfile(o, {
       gameApplicationIds: t
     })
-  }, [o, d]), v = i.useRef(d), _ = i.useMemo(() => (s().isEqual(new Set(d), new Set(v.current)) || (v.current = [...d]), v.current), [d]);
+  }, [o, d]), _ = i.useRef(d), v = i.useMemo(() => (s().isEqual(new Set(d), new Set(_.current)) || (_.current = [...d]), _.current), [d]);
   return (0, r.jsxs)(a.hjN, {
     className: p.section,
     children: [(0, r.jsxs)("div", {
@@ -92,8 +92,8 @@ function j(e) {
         gameApplicationIds: d,
         handleChange: f,
         disabled: !l
-      }), (0, r.jsx)(b, {
-        gameApplicationIds: _,
+      }), (0, r.jsx)(x, {
+        gameApplicationIds: v,
         onRemoveGame: j,
         disabled: !l
       }), (0, r.jsx)(u.Z, {

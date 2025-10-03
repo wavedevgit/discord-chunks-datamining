@@ -210,7 +210,7 @@ class K extends Chunk647438.Component {
       sku: r
     } = this.props;
     return this.isCustomGiftMessage() && !n ? G.intl.formatToPlainString(G.t.t1SOIS, {
-      recipientDisplayName: j.ZP.getName(t)
+      recipientDisplayName: M.ZP.getName(t)
     }) : null == r ? null : e.isSubscription ? n ? G.intl.string(G.t["2PJ1ND"]) : G.intl.string(G.t.hrnGnp) : n ? G.intl.string(G.t.QLEMlZ) : G.intl.string(G.t.W4DBc3)
   }
   renderBody(e) {
@@ -246,11 +246,11 @@ class K extends Chunk647438.Component {
     });
     if (e.isExistingPremiumSubscriptionDisallowed) return G.intl.string(G.t["UCIU9/"]);
     if (e.hasMultipleCopies) return null != i ? e.isSubscription ? G.intl.format(G.t.l3VxgI, {
-      username: j.ZP.getUserTag(i),
+      username: M.ZP.getUserTag(i),
       maxUses: e.maxUses,
       skuName: s
     }) : G.intl.format(G.t["9cYrw8"], {
-      username: j.ZP.getUserTag(i),
+      username: M.ZP.getUserTag(i),
       totalCopies: e.maxUses,
       skuName: s
     }) : e.isSubscription ? G.intl.formatToPlainString(G.t.svrO3d, {
@@ -265,7 +265,7 @@ class K extends Chunk647438.Component {
       if (null != i) {
         let e = a.interval === U.rV.MONTH ? G.t["/RDIEB"] : G.t["3CX6Eh"];
         return G.intl.format(e, {
-          username: j.ZP.getUserTag(i),
+          username: M.ZP.getUserTag(i),
           skuName: s,
           intervalCount: a.intervalCount
         })
@@ -277,7 +277,7 @@ class K extends Chunk647438.Component {
       })
     }
     return null != i ? G.intl.format(G.t["3HsdQ0"], {
-      username: j.ZP.getUserTag(i)
+      username: M.ZP.getUserTag(i)
     }) : G.intl.string(G.t.Jdnjjo)
   }
   renderPromotionActions() {

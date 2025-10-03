@@ -218,7 +218,7 @@ function D(e) {
     onBlur: N,
     onKeyDown: P,
     wrapTags: w
-  } = e, D = i.useRef(null), L = i.useRef(null), x = i.useRef(null), j = i.useRef(null), M = i.useContext(u.U), {
+  } = e, D = i.useRef(null), L = i.useRef(null), x = i.useRef(null), M = i.useRef(null), j = i.useContext(u.U), {
     state: k,
     setState: U,
     selectionMode: G,
@@ -273,7 +273,7 @@ function D(e) {
       }, 500)
     }, [N, U]);
   i.useEffect(() => {
-    clearTimeout(x.current), clearTimeout(j.current), et && !w && (j.current = setTimeout(() => {
+    clearTimeout(x.current), clearTimeout(M.current), et && !w && (M.current = setTimeout(() => {
       var e;
       null == (e = L.current) || e.scrollIntoView({
         behavior: "smooth",
@@ -421,10 +421,10 @@ function D(e) {
               "aria-controls": Y,
               "aria-expanded": !Q || k.isOpen,
               "aria-activedescendant": en,
-              "aria-labelledby": "".concat(null == M ? true : M.labelId),
-              "aria-describedby": "".concat(null == M ? true : M.describedById),
-              "aria-errormessage": null == M ? true : M.errorMessageId,
-              "aria-invalid": (null == M ? true : M.errorMessageId) != null,
+              "aria-labelledby": "".concat(null == j ? true : j.labelId),
+              "aria-describedby": "".concat(null == j ? true : j.describedById),
+              "aria-errormessage": null == j ? true : j.errorMessageId,
+              "aria-invalid": (null == j ? true : j.errorMessageId) != null,
               value: null != (t = k.query) ? t : "",
               onChange: ed,
               onFocus: ea,

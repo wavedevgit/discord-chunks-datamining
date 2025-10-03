@@ -122,8 +122,8 @@ function A(e) {
     name: D,
     form: L,
     autoComplete: x,
-    maxOptionsVisible: j = 5,
-    options: M,
+    maxOptionsVisible: M = 5,
+    options: j,
     renderOption: k,
     onSelectionChange: U,
     value: G,
@@ -138,7 +138,7 @@ function A(e) {
     longestLabelCharCount: 5,
     width: "200px",
     dropDownHeight: "auto"
-  }), Y = i.useContext(s.U), W = i.useRef(null), K = i.useRef(null), z = null != N ? N : "multiple" !== t, q = V.selectedItems.length > 0, X = V.listItems.length > j, Q = !V.isInitialized || b || O || I, J = i.useCallback(() => {
+  }), Y = i.useContext(s.U), W = i.useRef(null), K = i.useRef(null), z = null != N ? N : "multiple" !== t, q = V.selectedItems.length > 0, X = V.listItems.length > M, Q = !V.isInitialized || b || O || I, J = i.useCallback(() => {
     Q || H(e => v(y({}, e), {
       isOpen: !e.isOpen
     }))
@@ -166,7 +166,7 @@ function A(e) {
   i.useLayoutEffect(() => {
     let e = [],
       t = 6,
-      n = M.map(n => {
+      n = j.map(n => {
         let r = en(n);
         return t = Math.max(t, r.label.length), !V.isInitialized && (null != G || null != B) && (0, h._s)(r.value, null != G ? G : B) && e.push(r), r
       });
@@ -176,7 +176,7 @@ function A(e) {
       longestLabelCharCount: t,
       selectedItems: r.isInitialized ? r.selectedItems : e
     }))
-  }, [M, en]), i.useEffect(() => {
+  }, [j, en]), i.useEffect(() => {
     !Q && Z && (null == G ? H(e => v(y({}, e), {
       selectedItems: []
     })) : H(e => v(y({}, e), {
@@ -193,13 +193,13 @@ function A(e) {
         let e = "multiple" === t ? 1.5 : 1;
         a = "calc((".concat(V.longestLabelCharCount, "ch + 20px + 24px + 36px) * ").concat(e, ")")
       }
-      X && (o = (null != (i = null == (r = K.current) ? true : r.getBoundingClientRect().height) ? i : 40) * j), H(e => v(y({}, e), {
+      X && (o = (null != (i = null == (r = K.current) ? true : r.getBoundingClientRect().height) ? i : 40) * M), H(e => v(y({}, e), {
         width: a,
         dropDownHeight: o
       }))
     }, 500));
     return e.observe(K.current), () => e.disconnect()
-  }, [A, t, j, X, V.longestLabelCharCount]);
+  }, [A, t, M, X, V.longestLabelCharCount]);
   let er = i.useCallback(e => {
     if (Q) return;
     let n = Array.from(e);

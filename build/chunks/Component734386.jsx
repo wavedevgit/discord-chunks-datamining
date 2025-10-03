@@ -1,4 +1,4 @@
-/** Chunk was on 9665 **/
+/** Chunk was on 50118 **/
 /** chunk id: 734386, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => M
@@ -38,10 +38,10 @@ var Chunk951288 = require("./951288.js"),
 function M(e) {
   let {
     channel: t
-  } = e, [n, l] = i.useState(false), o = (0, f.ZP)(t, true), M = t.guild_id, R = (0, u.e7)([v.Z], () => null != M ? v.Z.getSortedRoles(M) : true), k = (0, u.e7)([j.default, x.Z], () => {
+  } = e, [n, l] = r.useState(false), o = (0, f.ZP)(t, true), M = t.guild_id, R = (0, u.e7)([v.Z], () => null != M ? v.Z.getSortedRoles(M) : true), k = (0, u.e7)([j.default, x.Z], () => {
     var e;
     return j.default.getUser(null == (e = x.Z.getGuild(M)) ? true : e.ownerId)
-  }), D = i.useMemo(() => null != R ? R.filter(e => !(0, _.fI)(e)) : [], [R]), L = i.useMemo(() => s()(D).filter(e => {
+  }), L = r.useMemo(() => null != R ? R.filter(e => !(0, _.fI)(e)) : [], [R]), D = r.useMemo(() => s()(L).filter(e => {
     if (null == M) returnfalse;
     let n = E.I0({
       forceRoles: {
@@ -50,7 +50,7 @@ function M(e) {
       context: t
     });
     return c.Db(n, c.$e(N.Plq.ADMINISTRATOR, N.Plq.VIEW_CHANNEL))
-  }).value(), [t, M, D]), U = (0, u.Wu)([j.default], () => {
+  }).value(), [t, M, L]), U = (0, u.Wu)([j.default], () => {
     let e = {};
     for (let n of (null != k && (e[k.id] = k), Object.values(t.permissionOverwrites))) {
       if (n.type !== h.BN.MEMBER || null != e[n.id]) continue;
@@ -59,56 +59,56 @@ function M(e) {
     }
     return s()(e).filter(e => {
       var n;
-      let r = E.BT({
+      let i = E.BT({
           permission: N.Plq.ADMINISTRATOR,
           user: e,
           context: t
         }),
-        i = null != (n = t.permissionOverwrites[e.id]) ? n : E.Hn,
-        l = c.e$(i.allow, N.Plq.VIEW_CHANNEL);
-      return r || l
+        r = null != (n = t.permissionOverwrites[e.id]) ? n : E.Hn,
+        l = c.e$(r.allow, N.Plq.VIEW_CHANNEL);
+      return i || l
     }).value()
-  }, [t, k]), B = O.Z.can(N.Plq.MANAGE_CHANNELS, t) || O.Z.can(N.Plq.MANAGE_ROLES, t), H = i.useCallback(() => l(false), []);
-  return (0, r.jsxs)(I.ZP, {
+  }, [t, k]), B = O.Z.can(N.Plq.MANAGE_CHANNELS, t) || O.Z.can(N.Plq.MANAGE_ROLES, t), H = r.useCallback(() => l(false), []);
+  return (0, i.jsxs)(I.ZP, {
     channelId: t.id,
-    children: [(0, r.jsx)(I.Kq, {
+    children: [(0, i.jsx)(I.Kq, {
       locked: true,
       channelType: t.type
-    }), (0, r.jsx)(I.Ot, {
+    }), (0, i.jsx)(I.Ot, {
       children: T.intl.format(T.t.I3R7Vl, {
         channelName: o
       })
-    }), (0, r.jsx)(I.jz, {
+    }), (0, i.jsx)(I.jz, {
       className: w.markup,
       children: T.intl.format(T.t.QuwqjI, {
         channelName: o,
-        topicHook: () => C.Z.parseTopic(t.topic, true, {
+        topicHook: () => y.Z.parseTopic(t.topic, true, {
           channelId: t.id
         })
       })
-    }), B ? (0, r.jsxs)("div", {
+    }), B ? (0, i.jsxs)("div", {
       className: A.channelSettingButtons,
-      children: [(0, r.jsx)(P.Z, {
+      children: [(0, i.jsx)(P.Z, {
         label: T.intl.string(T.t.dMJ3Y2),
         onClick: () => l(true),
-        icon: (0, r.jsx)(d.BFJ, {
+        icon: (0, i.jsx)(d.BFJ, {
           size: "xs",
           color: "currentColor"
         })
-      }), (0, r.jsx)(P.Z, {
+      }), (0, i.jsx)(P.Z, {
         label: T.intl.string(T.t["3gUsJS"]),
         onClick: function() {
           p.ZP.open(t.id)
         },
-        icon: (0, r.jsx)(d.vdY, {
+        icon: (0, i.jsx)(d.vdY, {
           size: "xs",
           color: "currentColor"
         })
       })]
-    }) : null, (0, r.jsxs)("div", {
+    }) : null, (0, i.jsxs)("div", {
       className: A.members,
       children: [function() {
-        if (1 !== U.length || L.length > 0) return (0, r.jsx)(Z.Z, {
+        if (1 !== U.length || D.length > 0) return (0, i.jsx)(Z.Z, {
           guildId: t.guild_id,
           className: A.avatars,
           maxUsers: 5,
@@ -116,80 +116,80 @@ function M(e) {
         });
         let e = U[0],
           n = S.ZP.getName(e);
-        return (0, r.jsxs)("div", {
+        return (0, i.jsxs)("div", {
           className: A.avatars,
-          children: [(0, r.jsx)(d.qEK, {
+          children: [(0, i.jsx)(d.qEK, {
             src: e.getAvatarURL(t.guild_id, 24),
             "aria-label": n,
             size: d.EFr.SIZE_24
-          }), (0, r.jsx)(d.Text, {
+          }), (0, i.jsx)(d.Text, {
             tag: "span",
             className: A.singleUserName,
             variant: "text-md/normal",
             children: n
-          }), "\xa0", (0, r.jsx)(d.Text, {
+          }), "\xa0", (0, i.jsx)(d.Text, {
             tag: "span",
             variant: "text-md/normal",
             color: "text-muted",
             children: T.intl.string(T.t.rt0ERU)
           })]
         })
-      }(), L.map((e, n) => {
-        var i, l;
+      }(), D.map((e, n) => {
+        var r, l;
         let o = null != (l = e.colorString) ? l : N.Pbq,
-          s = (null == (i = e.tags) ? true : i.guild_connections) !== true;
-        return B ? (0, r.jsx)(g.Z, {
+          s = (null == (r = e.tags) ? true : r.guild_connections) !== true;
+        return B ? (0, i.jsx)(g.Z, {
           className: a()(A.role, {
-            [A.last]: n === L.length - 1
+            [A.last]: n === D.length - 1
           }),
           roleName: e.name,
           roleColor: o,
           disabled: !B,
           verified: s,
           onClick: () => {
-            y.Z.open(t.guild_id, N.pNK.MEMBERS), y.Z.selectRole(e.id)
+            C.Z.open(t.guild_id, N.pNK.MEMBERS), C.Z.selectRole(e.id)
           }
-        }, e.id) : (0, r.jsx)(b.Z, {
+        }, e.id) : (0, i.jsx)(b.Z, {
           className: a()(A.role, {
-            [A.last]: n === L.length - 1
+            [A.last]: n === D.length - 1
           }),
           roleName: e.name,
           roleColor: o,
           verified: s
         }, e.id)
       })]
-    }), n ? (0, r.jsx)(d.u_l, {
+    }), n ? (0, i.jsx)(d.u_l, {
       renderModal: e => {
-        var n, i;
-        return (0, r.jsx)(m.default, (n = function(e) {
+        var n, r;
+        return (0, i.jsx)(m.default, (n = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
-              r = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              i = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
               return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), r.forEach(function(t) {
-              var r;
-              r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
+            }))), i.forEach(function(t) {
+              var i;
+              i = n[t], t in e ? Object.defineProperty(e, t, {
+                value: i,
                 enumerable: true,
                 configurable: true,
                 writable: true
-              }) : e[t] = r
+              }) : e[t] = i
             })
           }
           return e
-        }({}, e), i = i = {
+        }({}, e), r = r = {
           onClose: () => (H(), e.onClose()),
           channelId: t.id
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
+            var i = Object.getOwnPropertySymbols(e);
+            n.push.apply(n, i)
           }
           return n
-        })(Object(i)).forEach(function(e) {
-          Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
+        })(Object(r)).forEach(function(e) {
+          Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
         }), n))
       },
       onCloseRequest: () => l(false)

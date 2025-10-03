@@ -214,18 +214,7 @@ function F(e) {
     guild: t,
     channel: l,
     permissionUpdates: r
-  } = e, o = (0, a.e7)([Z.Z], () => Z.Z.getSortedRoles(t.id)), c = P.RZ(t, o, l, N.yP, r), u = (0, a.e7)([O.ZP], () => P.cR(O.ZP.getMemberIds(t.id), l, t, N.yP, r)), h = (0, C.nG)(l.id);
-
-  function g() {
-    (0, d.ZDy)(async () => {
-      let {
-        default: e
-      } = await n.e("46786").then(n.bind(n, 388131));
-      return t => (0, i.jsx)(e, G(U({}, t), {
-        channelId: l.id
-      }))
-    })
-  }
+  } = e, c = (0, a.e7)([Z.Z], () => Z.Z.getSortedRoles(t.id)), u = P.RZ(t, c, l, N.yP, r), h = (0, a.e7)([O.ZP], () => P.cR(O.ZP.getMemberIds(t.id), l, t, N.yP, r)), g = (0, C.nG)(l.id);
   return (0, i.jsxs)("div", {
     className: s()(V.settingCard, V.active),
     children: [(0, i.jsx)(L.Z, {
@@ -249,23 +238,31 @@ function F(e) {
           tag: "h5",
           className: V.folderTitle,
           children: H.intl.string(H.t["7BWDRU"])
-        }), (0, i.jsx)(d.ua7, {
+        }), (0, i.jsx)(o.u, {
           text: H.intl.string(H.t.arRuER),
-          shouldShow: !h,
-          children: e => (0, i.jsx)(d.zxk, G(U({
+          shouldShow: !g,
+          children: (0, i.jsx)(d.zxk, {
             variant: "primary",
             size: "sm",
-            text: H.intl.string(H.t.dMJ3Y2)
-          }, e), {
-            onClick: g,
-            disabled: !h
-          }))
+            text: H.intl.string(H.t.dMJ3Y2),
+            onClick: function() {
+              (0, d.ZDy)(async () => {
+                let {
+                  default: e
+                } = await n.e("46786").then(n.bind(n, 388131));
+                return t => (0, i.jsx)(e, G(U({}, t), {
+                  channelId: l.id
+                }))
+              })
+            },
+            disabled: !g
+          })
         })]
       }), (0, i.jsx)(W, {
         channel: l,
-        roles: c,
-        members: u,
-        disabledReason: h ? null : H.intl.string(H.t.arRuER),
+        roles: u,
+        members: h,
+        disabledReason: g ? null : H.intl.string(H.t.arRuER),
         getRemoveTooltipHint: S.kk
       })]
     })]

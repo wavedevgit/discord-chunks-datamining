@@ -62,7 +62,7 @@ function y(e) {
   } = (0, f.Z)(t), _ = O.size > 0, w = async (e, t, n, r) => {
     try {
       let l = await c.Z.banMultipleUsers(e, t, n, r);
-      (0, s.showToast)((0, s.createToast)(j.intl.string(j.t.AsCe5O), s.ToastType.SUCCESS)), m.default.track(h.rMx.BULK_MODERATION_ACTION_COMPLETED, v(x({}, (0, d.hH)(e)), {
+      (0, s.showToast)((0, s.createToast)(g.intl.string(g.t.AsCe5O), s.ToastType.SUCCESS)), m.default.track(h.rMx.BULK_MODERATION_ACTION_COMPLETED, v(x({}, (0, d.hH)(e)), {
         action_type: b.jQ.BAN,
         target_user_ids: [...O],
         mod_user_id: C.default.getId(),
@@ -70,13 +70,13 @@ function y(e) {
         location
       }))
     } catch (e) {
-      (0, s.showToast)((0, s.createToast)(j.intl.string(j.t.mICAWV), s.ToastType.FAILURE))
+      (0, s.showToast)((0, s.createToast)(g.intl.string(g.t.mICAWV), s.ToastType.FAILURE))
     }
     H()
   }, S = l.useCallback(() => {
     H()
   }, [H]), N = (0, r.jsxs)("span", {
-    className: g.messageContainer,
+    className: j.messageContainer,
     children: [(0, r.jsx)(s.tBG, {
       size: "custom",
       width: 24,
@@ -85,15 +85,15 @@ function y(e) {
     }), (0, r.jsx)(s.Text, {
       variant: "heading-md/bold",
       color: "text-default",
-      children: j.intl.format(j.t.TstoSU, {
+      children: g.intl.format(g.t.TstoSU, {
         count: O.size
       })
     }), (0, r.jsx)(s.Avr, {
-      text: j.intl.string(j.t.yW6ZdH),
+      text: g.intl.string(g.t.yW6ZdH),
       onClick: S
     })]
   }), Z = (0, r.jsxs)("span", {
-    className: g.buttonContainer,
+    className: j.buttonContainer,
     children: [(0, r.jsx)(s.pgN, {
       size: "custom",
       color: "currentColor",
@@ -102,12 +102,12 @@ function y(e) {
     }), (0, r.jsx)(s.Text, {
       variant: "text-sm/semibold",
       color: "currentColor",
-      children: j.intl.string(j.t["2a50fH"])
+      children: g.intl.string(g.t["2a50fH"])
     })]
   });
   return y ? (0, r.jsx)(o.W, {
     component: "div",
-    className: g.saveNoticeContainer,
+    className: j.saveNoticeContainer,
     children: _ && (0, r.jsx)(s.oXn, {
       children: (0, r.jsx)(u.Z, {
         onSave: () => {

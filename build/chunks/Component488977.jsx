@@ -70,20 +70,20 @@ function L(e) {
     context: L,
     className: R,
     sectionName: Z
-  } = e, w = i.useRef(null), k = (0, o.e7)([C.Z], () => C.Z.entrypoint()), M = (0, E.L1)(r), U = (0, m.Eb)(M), D = (0, d.R)(r.id), H = (0, o.e7)([y.Z], () => {
+  } = e, w = i.useRef(null), k = (0, o.e7)([C.Z], () => C.Z.entrypoint()), M = (0, E.L1)(r), U = (0, m.Eb)(M), D = (0, d.R)(r.id), H = (0, o.e7)([x.Z], () => {
     var e;
-    return null != (e = y.Z.getGuildId()) ? e : true
+    return null != (e = x.Z.getGuildId()) ? e : true
   }, []), V = {
     location: u.Vh.APP_LAUNCHER_APPLICATION_VIEW_MORE_MENU,
     application_id: r.id,
     section_name: Z,
     source: C.Z.lastShownEntrypoint()
-  }, B = x.default.getCurrentUser(), W = (0, f.Z)({
+  }, B = y.default.getCurrentUser(), W = (0, f.Z)({
     id: r.id,
-    label: _.intl.string(_.t["+NP/b2"])
+    label: O.intl.string(O.t["+NP/b2"])
   }), F = (0, P.P)({
     application: r
-  }), G = (0, j.yE)(null != (t = r.flags) ? t : 0, A.udG.EMBEDDED), q = "channel" === L.type ? L.channel : true;
+  }), G = (0, N.yE)(null != (t = r.flags) ? t : 0, _.udG.EMBEDDED), q = "channel" === L.type ? L.channel : true;
   return (0, l.jsxs)("div", {
     className: I.container,
     children: [(0, l.jsx)(s.P3F, {
@@ -94,13 +94,13 @@ function L(e) {
         }) : (0, p.J)(S({
           id: r.id
         }, M));
-        (0, g.JG)(e, () => (0, s.showToast)((0, s.createToast)(_.intl.string(_.t["L/PwZW"]), s.ToastType.SUCCESS))), b.default.track(A.rMx.APP_LAUNCHER_APPLICATION_LINK_COPIED, {
+        (0, b.JG)(e, () => (0, s.showToast)((0, s.createToast)(O.intl.string(O.t["L/PwZW"]), s.ToastType.SUCCESS))), g.default.track(_.rMx.APP_LAUNCHER_APPLICATION_LINK_COPIED, {
           application_id: r.id,
           source: k
         })
       },
       className: a()(I.clickable, R),
-      "aria-label": _.intl.string(_.t.WqhZsr),
+      "aria-label": O.intl.string(O.t.WqhZsr),
       children: (0, l.jsx)(s.xPt, {
         size: "sm",
         color: s.TVs.colors.INTERACTIVE_ACTIVE
@@ -112,15 +112,15 @@ function L(e) {
           closePopout: t
         } = e;
         return (0, l.jsxs)(s.v2r, {
-          className: O.NN,
+          className: A.NN,
           navId: "app-details-more-menu",
           onClose: t,
-          "aria-label": _.intl.string(_.t.AXIHpa),
+          "aria-label": O.intl.string(O.t.AXIHpa),
           onSelect: true,
           children: [(0, l.jsxs)(s.kSQ, {
             children: [D && (0, l.jsx)(s.sNh, {
               id: "open-storefront",
-              label: _.intl.string(_.t.kRvlKC),
+              label: O.intl.string(O.t.kRvlKC),
               action: () => {
                 (0, s.ZDy)(async () => {
                   let {
@@ -136,14 +136,14 @@ function L(e) {
               }
             }), U ? (0, l.jsx)(s.sNh, {
               id: "add-app",
-              label: _.intl.string(_.t.NgXl3N),
+              label: O.intl.string(O.t.NgXl3N),
               action: () => {
-                null == M.customInstallUrl && (0, c.yw)(A.rMx.APP_LAUNCHER_OAUTH2_AUTHORIZE_OPENED, V), (0, N.L)(T(S({}, M), {
+                null == M.customInstallUrl && (0, c.yw)(_.rMx.APP_LAUNCHER_OAUTH2_AUTHORIZE_OPENED, V), (0, j.L)(T(S({}, M), {
                   oauth2Callback: e => {
                     let {
                       location: t
                     } = e;
-                    null != t && (0, c.yw)(A.rMx.APP_LAUNCHER_OAUTH2_AUTHORIZE_SUCCEEDED, V)
+                    null != t && (0, c.yw)(_.rMx.APP_LAUNCHER_OAUTH2_AUTHORIZE_SUCCEEDED, V)
                   },
                   source: "app_launcher_app_details"
                 }))
@@ -151,7 +151,7 @@ function L(e) {
             }) : null, r instanceof v.ZP ? (0, l.jsx)(s.sNh, {
               id: "report-app",
               color: "danger",
-              label: _.intl.string(_.t.jhJze3),
+              label: O.intl.string(O.t.jhJze3),
               action: () => {
                 var e;
                 (0, h.uu)({
@@ -174,7 +174,7 @@ function L(e) {
       }, e), {
         onClick: e.onClick,
         className: a()(I.clickable, R),
-        "aria-label": _.intl.string(_.t.UKOtz8),
+        "aria-label": O.intl.string(O.t.UKOtz8),
         children: (0, l.jsx)(s.xhG, {
           size: "sm",
           color: s.TVs.colors.INTERACTIVE_ACTIVE

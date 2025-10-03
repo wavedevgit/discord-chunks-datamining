@@ -97,9 +97,9 @@ function L(e) {
       return (0, i.jsx)(u.P3F, R(A({}, r), {
         className: D.controlAction,
         onClick: e => {
-          null == n || n(), (0, h.g)((0, g.V9)(t.stream), false), e.stopPropagation(), (0, w.Ws)(_.Odu.GO_LIVE, {
-            type: w.Qu.SCREEN_SHARE,
-            value: w.bk.DISABLED,
+          null == n || n(), (0, p.g)((0, g.V9)(t.stream), false), e.stopPropagation(), (0, N.Ws)(_.Odu.GO_LIVE, {
+            type: N.Qu.SCREEN_SHARE,
+            value: N.bk.DISABLED,
             userId: t.user.id
           })
         },
@@ -120,11 +120,11 @@ function M(e) {
     return I.Z.isLocalMute(t.user.id, e)
   }, [t]), o = (0, a.e7)([j.default], () => j.default.getId()), {
     hasVideo: d
-  } = (0, S.Z)(t, o), p = l && d, h = r.useCallback(() => {
+  } = (0, b.Z)(t, o), h = l && d, p = r.useCallback(() => {
     c.Z.toggleLocalMute(n, s.Yn.STREAM)
   }, [n]);
   return (0, i.jsx)(u.ua7, {
-    text: p ? P.intl.string(P.t.YqAjX1) : P.intl.string(P.t["w4m94+"]),
+    text: h ? P.intl.string(P.t.YqAjX1) : P.intl.string(P.t["w4m94+"]),
     children: e => {
       var {
         onClick: n
@@ -132,13 +132,13 @@ function M(e) {
       return (0, i.jsx)(u.P3F, R(A({}, r), {
         className: D.controlAction,
         onClick: e => {
-          e.stopPropagation(), (0, w.Ws)(_.Odu.GO_LIVE, {
-            type: w.Qu.AUDIO,
-            value: p ? w.bk.ENABLED : w.bk.DISABLED,
+          e.stopPropagation(), (0, N.Ws)(_.Odu.GO_LIVE, {
+            type: N.Qu.AUDIO,
+            value: h ? N.bk.ENABLED : N.bk.DISABLED,
             userId: t.user.id
-          }), null == n || n(), h()
+          }), null == n || n(), p()
         },
-        children: p ? (0, i.jsx)(u.OyP, {
+        children: h ? (0, i.jsx)(u.OyP, {
           size: "sm",
           color: "currentColor"
         }) : (0, i.jsx)(u.gj8, {
@@ -152,9 +152,9 @@ function M(e) {
 
 function V(e, t, r) {
   return l => {
-    (0, w.Ws)(_.Odu.GO_LIVE, {
-      type: w.Qu.GO_LIVE,
-      value: w.bk.SETTINGS_OPENED,
+    (0, N.Ws)(_.Odu.GO_LIVE, {
+      type: N.Qu.GO_LIVE,
+      value: N.bk.SETTINGS_OPENED,
       userId: e.user.id
     }), l.stopPropagation(), null == r || r(), (0, d.jW)(l, async () => {
       let {
@@ -178,8 +178,8 @@ function z(e) {
     var e;
     return null != (e = C.default.getUser(s.id)) ? e : s
   }, [s]), d = t ? P.intl.string(P.t.tLxK4u) : P.intl.string(P.t.E5RDnJ), {
-    enabled: p
-  } = (0, N.aq)("GoLiveTile");
+    enabled: h
+  } = (0, w.aq)("GoLiveTile");
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)("div", {
       className: o()(D.controlBackground, {
@@ -193,12 +193,12 @@ function z(e) {
           className: D.watchButton,
           onClick: () => {
             var t;
-            null == (t = e.onClick) || t.call(e), (0, h.rn)(n.stream, {
+            null == (t = e.onClick) || t.call(e), (0, p.rn)(n.stream, {
               forceMultiple: true,
               noFocus: true
-            }), r(), (0, w.Ws)(_.Odu.GO_LIVE, {
-              type: w.Qu.GO_LIVE,
-              value: w.bk.ENABLED,
+            }), r(), (0, N.Ws)(_.Odu.GO_LIVE, {
+              type: N.Qu.GO_LIVE,
+              value: N.bk.ENABLED,
               userId: n.user.id
             })
           },
@@ -229,9 +229,9 @@ function z(e) {
             containerClassName: D.guildTag,
             inline: false,
             onShowProfile: () => {
-              (0, w.Ws)(_.Odu.GO_LIVE, {
-                type: w.Qu.GO_LIVE,
-                value: w.bk.GUILD_PROFILE_OPENED,
+              (0, N.Ws)(_.Odu.GO_LIVE, {
+                type: N.Qu.GO_LIVE,
+                value: N.bk.GUILD_PROFILE_OPENED,
                 userId: n.user.id
               })
             }
@@ -240,7 +240,7 @@ function z(e) {
       }), (0, i.jsx)("div", {
         className: D.controlActions,
         children: t && (0, i.jsxs)(i.Fragment, {
-          children: [p && (0, i.jsx)(L, {
+          children: [h && (0, i.jsx)(L, {
             participant: n
           }), (0, i.jsx)(M, {
             participant: n
@@ -273,13 +273,13 @@ let U = new Set([Chunk981631.jm8.ENDED, Chunk981631.jm8.FAILED, Chunk981631.jm8.
       locked: r,
       widgetId: l,
       pinned: o
-    } = e, s = (0, a.e7)([x.Z], () => x.Z.getActiveStreamForUser(t.user.id, t.stream.guildId), [t.user.id, t.stream.guildId]), c = (0, E.bp)(), d = null != s && U.has(s.state), h = null != s, f = (0, T.yA)(t.stream), g = (0, T.xN)(t.stream);
-    return !h && r || d ? null : (0, i.jsxs)("div", {
+    } = e, s = (0, a.e7)([x.Z], () => x.Z.getActiveStreamForUser(t.user.id, t.stream.guildId), [t.user.id, t.stream.guildId]), c = (0, E.bp)(), d = null != s && U.has(s.state), p = null != s, f = (0, T.yA)(t.stream), g = (0, T.xN)(t.stream);
+    return !p && r || d ? null : (0, i.jsxs)("div", {
       className: D.tile,
-      children: [h && !r && (0, i.jsx)(m.ZP, {
+      children: [p && !r && (0, i.jsx)(m.ZP, {
         size: m.ZP.Sizes.SMALL,
         className: D.liveIndicator
-      }), h ? (0, i.jsx)("div", {
+      }), p ? (0, i.jsx)("div", {
         className: D.streamTile,
         children: (0, i.jsx)(u.kL8, {
           "aria-label": P.intl.formatToPlainString(P.t.gHPz3d, {
@@ -291,7 +291,7 @@ let U = new Set([Chunk981631.jm8.ENDED, Chunk981631.jm8.FAILED, Chunk981631.jm8.
           style: {
             transform: "scale(".concat(f, ")")
           },
-          children: (0, i.jsx)(b.Z, {
+          children: (0, i.jsx)(S.Z, {
             participant: t,
             width: n,
             fit: null != g ? g : v.L.CONTAIN,
@@ -311,9 +311,9 @@ let U = new Set([Chunk981631.jm8.ENDED, Chunk981631.jm8.FAILED, Chunk981631.jm8.
         })
       }), r ? null : (0, i.jsx)(z, {
         participant: t,
-        hasActiveStream: h,
+        hasActiveStream: p,
         onEnablePin: () => {
-          o || (0, p.xh)(l)
+          o || (0, h.xh)(l)
         }
       })]
     })

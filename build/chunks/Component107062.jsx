@@ -70,8 +70,8 @@ let C = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
     }), {
       user: L,
       details: x,
-      activity: j,
-      embeddedActivity: M
+      activity: M,
+      embeddedActivity: j
     } = (0, T.n)(n), {
       primaryColor: k,
       secondaryColor: U
@@ -125,10 +125,10 @@ let C = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
         onClickSubtitle: w ? true : H,
         onClickThumbnail: w ? true : H
       }),
-      q = (0, l.Z)(j, S.xjy.JOIN) || (0, c.Z)(j),
+      q = (0, l.Z)(M, S.xjy.JOIN) || (0, c.Z)(M),
       X = q ? (0, r.jsx)(u.Z, {
-        embeddedActivity: M,
-        activity: j,
+        embeddedActivity: j,
+        activity: M,
         user: L,
         variant: "primary",
         size: "md",

@@ -36,14 +36,14 @@ function I(e) {
       selectedSection: I,
       setSelectedSection: S
     } = e,
-    T = (0, a.e7)([b.Z], () => b.Z.guild, []);
+    T = (0, a.e7)([x.Z], () => x.Z.guild, []);
   s()(null != T, "guildId cannot be null here");
   let {
     role: P,
     permissionSearchQuery: w
-  } = (0, a.cj)([b.Z], () => ({
-    role: b.Z.getRole(n),
-    permissionSearchQuery: b.Z.getPermissionSearchQuery()
+  } = (0, a.cj)([x.Z], () => ({
+    role: x.Z.getRole(n),
+    permissionSearchQuery: x.Z.getPermissionSearchQuery()
   }), [n]);
   i.useEffect(() => {
     null == P && l(null)
@@ -64,7 +64,7 @@ function I(e) {
       let {
         role: n,
         editRoleId: r
-      } = k.current, i = (0, x.UT)(I), l = null != (t = null == (e = f.Z.getRoleMemberCount(T.id)) ? true : e[r]) ? t : 0;
+      } = k.current, i = (0, b.UT)(I), l = null != (t = null == (e = f.Z.getRoleMemberCount(T.id)) ? true : e[r]) ? t : 0;
       g.default.track(N.rMx.ROLE_PAGE_VIEWED, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -95,8 +95,8 @@ function I(e) {
       (null == P ? true : P.id) != null && (0, u.sE)(T.id, P.id)
     }, [T.id, null == P ? true : P.id]), null == P) return null;
   switch (I) {
-    case C.ZI.DISPLAY:
-      t = (0, r.jsx)(v.ZP, {
+    case y.ZI.DISPLAY:
+      t = (0, r.jsx)(_.ZP, {
         guild: T,
         role: P,
         locked: Z,
@@ -104,8 +104,8 @@ function I(e) {
         setSelectedSection: S
       });
       break;
-    case C.ZI.PERMISSIONS:
-      t = (0, r.jsx)(O.ZP, {
+    case y.ZI.PERMISSIONS:
+      t = (0, r.jsx)(C.ZP, {
         guild: T,
         role: P,
         locked: Z,
@@ -113,7 +113,7 @@ function I(e) {
         initialSearchQuery: w
       });
       break;
-    case C.ZI.VERIFICATIONS:
+    case y.ZI.VERIFICATIONS:
       t = (0, r.jsx)(j.Z, {
         guild: T,
         role: P,
@@ -122,8 +122,8 @@ function I(e) {
         integrations: null != A ? A : true
       });
       break;
-    case C.ZI.MEMBERS:
-      t = (0, r.jsx)(_.ZP, {
+    case y.ZI.MEMBERS:
+      t = (0, r.jsx)(v.ZP, {
         guild: T,
         role: P,
         locked: Z,
@@ -135,7 +135,7 @@ function I(e) {
   }
   return (0, r.jsxs)(o.hjN, {
     className: E.page,
-    children: [(0, r.jsx)(y.Z, {
+    children: [(0, r.jsx)(O.Z, {
       guild: T,
       currentRoleId: n,
       setCurrentRoleId: l,

@@ -202,7 +202,7 @@ function x(e) {
   e.o || (e.o = h(e.t))
 }
 
-function j(e, t, n) {
+function M(e, t, n) {
   var r = f(t) ? b("MapSet").F(t, n) : _(t) ? b("MapSet").T(t, n) : e.O ? function(e, t) {
     var n = Array.isArray(e),
       r = {
@@ -229,7 +229,7 @@ function j(e, t, n) {
   return (n ? n.A : O()).p.push(r), r
 }
 
-function M(e) {
+function j(e) {
   return i(e) || r(22, e),
     function e(t) {
       if (!a(t)) return t;
@@ -288,7 +288,7 @@ var U, G, B = "undefined" != typeof Symbol && "symbol" == typeof Symbol("x"),
         return i ? "value" in i ? i.value : null == (r = i.get) ? true : r.call(e.k) : true
       }(e, n, t);
       var r = n[t];
-      return e.I || !a(r) ? r : r === w(e.t, t) ? (x(e), e.o[t] = j(e.A.h, r, e)) : r
+      return e.I || !a(r) ? r : r === w(e.t, t) ? (x(e), e.o[t] = M(e.A.h, r, e)) : r
     },
     has: function(e, t) {
       return t in p(e)
@@ -361,7 +361,7 @@ var ee = new(function() {
         }
         if ("function" != typeof n && r(6), true !== i && "function" != typeof i && r(7), a(e)) {
           var c = S(t),
-            u = j(t, e, true),
+            u = M(t, e, true),
             d = true;
           try {
             o = n(u), d = false
@@ -400,9 +400,9 @@ var ee = new(function() {
     }
     var t = module.prototype;
     return exports.createDraft = function(e) {
-      a(e) || r(8), i(e) && (e = M(e));
+      a(e) || r(8), i(e) && (e = j(e));
       var t = S(this),
-        n = j(this, e, true);
+        n = M(this, e, true);
       return n[W].C = true, T(t), n
     }, exports.finishDraft = function(e, t) {
       var n = (e && e[W]).A;

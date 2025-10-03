@@ -22,11 +22,11 @@ function h(e) {
   let {
     guild: t,
     canManageGuild: n
-  } = e, h = t.features.has(d.oNc.BANNER), b = t.features.has(d.oNc.ANIMATED_BANNER), x = h && n, {
+  } = e, h = t.features.has(d.oNc.BANNER), x = t.features.has(d.oNc.ANIMATED_BANNER), b = h && n, {
     analyticsLocations: j
-  } = (0, s.ZP)(), v = i.useCallback((e, n) => {
+  } = (0, s.ZP)(), _ = i.useCallback((e, n) => {
     (0, c.f4)(t, j, e, n)
-  }, [j, t]), _ = i.useCallback(e => {
+  }, [j, t]), v = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), (0, c.E6)({
       guild: t,
       analyticsLocations: j,
@@ -34,14 +34,14 @@ function h(e) {
       analyticsObject: d.qAy.UPLOAD_IMAGE,
       perks: (0, u.XO)()
     })
-  }, [j, t]), O = (0, r.jsx)(a.Z, {
+  }, [j, t]), C = (0, r.jsx)(a.Z, {
     image: t.banner,
     makeURL: e => null != e ? o.ZP.getGuildBannerURL({
       id: t.id,
       banner: e
-    }, b) : null,
-    disabled: !x,
-    onChange: v,
+    }, x) : null,
+    disabled: !b,
+    onChange: _,
     hint: p.intl.string(p.t.uPvxqK),
     onOpenImageSelectModal: () => (0, c.mw)({
       uploadType: m.pC.GUILD_BANNER,
@@ -51,7 +51,7 @@ function h(e) {
           imageUri: t,
           file: n
         } = e;
-        return v(t, n)
+        return _(t, n)
       },
       analyticsLocation: {
         page: d.ZY5.GUILD_SETTINGS,
@@ -59,13 +59,13 @@ function h(e) {
       },
       analyticsLocations: j
     }),
-    enabled: x
+    enabled: b
   });
-  return h ? O : (0, r.jsx)(l.P3F, {
+  return h ? C : (0, r.jsx)(l.P3F, {
     "aria-hidden": true,
     tabIndex: false,
     className: f.upsell,
-    onClick: _,
-    children: O
+    onClick: v,
+    children: C
   })
 }

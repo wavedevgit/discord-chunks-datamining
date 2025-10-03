@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk700582 = require("./700582.jsx"),
@@ -19,31 +19,31 @@ var Chunk951288 = require("./951288.js"),
   Chunk545093 = require("./545093.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk774846 = require("./774846.js");
-let E = Chunk647438.memo(function(e) {
+let g = Chunk647438.memo(function(e) {
   let {
     message: t
-  } = e, n = (0, a.e7)([f.Z], () => f.Z.getChannel(t.channel_id));
-  return null == n ? null : (0, r.jsx)(m.ZP, {
-    children: e => (0, r.jsxs)(u.Z.Provider, {
+  } = e, n = (0, o.e7)([p.Z], () => p.Z.getChannel(t.channel_id));
+  return null == n ? null : (0, i.jsx)(y.ZP, {
+    children: e => (0, i.jsxs)(u.Z.Provider, {
       value: n.guild_id,
-      children: [(0, r.jsx)(c.Z, {
+      children: [(0, i.jsx)(c.Z, {
         user: t.author,
         size: s.EFr.SIZE_40,
-        className: o()(g.authorAvatar, e)
-      }), (0, r.jsxs)("div", {
-        className: o()(g.author, e),
-        children: [(0, r.jsx)(s.Rny, {
-          children: (0, r.jsx)("div", {
-            className: g.authorNameWrapper,
-            children: (0, r.jsx)(p.Z, {
-              className: g.authorName,
+        className: a()(E.authorAvatar, e)
+      }), (0, i.jsxs)("div", {
+        className: a()(E.author, e),
+        children: [(0, i.jsx)(s.Rny, {
+          children: (0, i.jsx)("div", {
+            className: E.authorNameWrapper,
+            children: (0, i.jsx)(f.Z, {
+              className: E.authorName,
               message: t,
               channel: n
             })
           })
-        }), (0, r.jsx)(d.Z, {
+        }), (0, i.jsx)(d.Z, {
           timestamp: t.timestamp,
-          className: g.timestamp,
+          className: E.timestamp,
           tooltipPosition: "bottom"
         })]
       })]
@@ -55,23 +55,23 @@ function h(e) {
   var t;
   let {
     item: n,
-    hideMediaOptions: i,
+    hideMediaOptions: r,
     onClose: l
-  } = e, a = null == (t = n.sourceMetadata) ? true : t.message;
-  return (0, r.jsxs)("div", {
-    className: g.topBar,
-    children: [null != a && (0, r.jsx)(E, {
-      message: a
-    }), (0, r.jsx)(y.Z, {
+  } = e, o = null == (t = n.sourceMetadata) ? true : t.message;
+  return (0, i.jsxs)("div", {
+    className: E.topBar,
+    children: [null != o && (0, i.jsx)(g, {
+      message: o
+    }), (0, i.jsx)(m.Z, {
       item: n,
-      hideMediaOptions: i
-    }), (0, r.jsx)(m.ZP, {
-      mode: m.lx.PINNED,
-      children: e => (0, r.jsx)(O.Z, {
+      hideMediaOptions: r
+    }), (0, i.jsx)(y.ZP, {
+      mode: y.lx.PINNED,
+      children: e => (0, i.jsx)(O.Z, {
         onClick: l,
         icon: s.Dio,
         tooltip: b.intl.string(b.t.cpT0Cg),
-        className: o()(g.closeButton, e)
+        className: a()(E.closeButton, e)
       })
     })]
   })

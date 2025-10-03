@@ -121,7 +121,7 @@ function ed(e) {
     }
   }, c.X), [p, b] = i.useState(null), j = i.useContext(B.oo), v = i.useCallback(() => {
     j.bumpDispatchPriority()
-  }, [j]), _ = (0, g.e7)([F.Z], () => F.Z.can(er.Plq.ATTACH_FILES, t)), C = (0, g.Wu)([z.Z], () => z.Z.getUploads(t.id, L.d.FirstThreadMessage)), y = f && _ && u, T = (null == t ? true : t.isMediaChannel()) === true, N = function(e, t) {
+  }, [j]), _ = (0, g.e7)([F.Z], () => F.Z.can(er.Plq.ATTACH_FILES, t)), C = (0, g.Wu)([z.Z], () => z.Z.getUploads(t.id, L.d.FirstThreadMessage)), y = f && _ && u, T = (null == t ? true : t.isMediaChannel()) === true, O = function(e, t) {
     let n = (0, Q.AF)(),
       r = (0, X.ql)(e);
     return i.useCallback(() => {
@@ -167,7 +167,7 @@ function ed(e) {
       null == t && (t = l.textValue), t = t.trim();
       let {
         content: s
-      } = S.ZP.parse(e, t);
+      } = N.ZP.parse(e, t);
       if (t = s, null == r || 0 === r.length) {
         var o;
         r = null == (o = E.Z.getStickerPreview(e.id, ec.drafts.type)) ? true : o.map(e => e.id)
@@ -256,7 +256,7 @@ function ed(e) {
       className: l()(el.container, {
         [el.collapsed]: !f
       }),
-      onClick: !f && u ? N : true,
+      onClick: !f && u ? O : true,
       children: (0, r.jsxs)("form", {
         onMouseDown: v,
         onFocus: v,
@@ -285,7 +285,7 @@ function ed(e) {
               submit: P,
               disabled: !u
             }), x && (0, r.jsx)(ex, {})]
-          }), y && (T ? (0, r.jsx)(O._, {
+          }), y && (T ? (0, r.jsx)(S._, {
             parentChannel: t
           }) : (0, r.jsx)(J.Z, {
             channelId: t.id
@@ -512,7 +512,7 @@ let eg = Chunk647438.memo(function(e) {
       content: n
     }), {
       content: a
-    } = (0, N.Z)(i, {
+    } = (0, O.Z)(i, {
       hideSimpleEmbedContent: true,
       isInteracting: false,
       formatInline: false,

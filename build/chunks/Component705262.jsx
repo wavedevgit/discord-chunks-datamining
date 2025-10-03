@@ -132,10 +132,10 @@ let Y = Object.freeze({
       type: "EDITOR",
       isCoachmark: true,
       isPreview: true
-    }, () => M.intl.string(M.t.D29k19)).with({
+    }, () => j.intl.string(j.t.D29k19)).with({
       type: "EDITOR",
       isCoachmark: true
-    }, () => M.intl.string(M.t["8+vbqa"])).otherwise(() => M.intl.string(M.t.hjV0fX));
+    }, () => j.intl.string(j.t["8+vbqa"])).otherwise(() => j.intl.string(j.t.hjV0fX));
     return (0, r.jsxs)("div", {
       className: k.title,
       children: [(0, r.jsx)(c.X6q, {
@@ -163,19 +163,19 @@ let Y = Object.freeze({
     }).with({
       type: "EDITOR",
       isPreview: true
-    }, () => M.intl.format(M.t.G8yQXl, {
+    }, () => j.intl.format(j.t.G8yQXl, {
       onPremiumClick: () => m.z
     })).with({
       type: "EDITOR",
       isCoachmark: true
-    }, () => M.intl.string(M.t.jmZiNj)).with({
+    }, () => j.intl.string(j.t.jmZiNj)).with({
       type: "EDITOR",
       isPreview: false
-    }, () => M.intl.string(M.t.dqDFwc)).with({
+    }, () => j.intl.string(j.t.dqDFwc)).with({
       isPreview: true
-    }, () => M.intl.format(M.t.DWIjJy, {
+    }, () => j.intl.format(j.t.DWIjJy, {
       onPremiumClick: () => m.z
-    })).otherwise(() => M.intl.string(M.t["np0X/v"]));
+    })).otherwise(() => j.intl.string(j.t["np0X/v"]));
     return (0, r.jsx)(c.X6q, {
       variant: "text-sm/normal",
       className: k.subtext,
@@ -193,7 +193,7 @@ let Y = Object.freeze({
     return "EDITOR" === l && c && u ? (0, r.jsx)(E.ZP, {
       type: D.cd.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
       subscriptionTier: D.Si.TIER_2,
-      children: M.intl.format(M.t.G8yQXl, {
+      children: j.intl.format(j.t.G8yQXl, {
         onPremiumClick: () => m.z
       })
     }) : (0, r.jsxs)("div", {
@@ -236,7 +236,7 @@ let Y = Object.freeze({
             isPersisted: !g,
             analyticsLocations: m,
             themeName: s.Us[e.id]
-          }), g && a.v2EditorEnabled && "SETTINGS" === l ? j(e) : (0, u.ZI)({
+          }), g && a.v2EditorEnabled && "SETTINGS" === l ? M(e) : (0, u.ZI)({
             backgroundGradientPresetId: e.id,
             theme: e.theme,
             useSystemTheme: g ? L.KW.OFF : true
@@ -245,13 +245,13 @@ let Y = Object.freeze({
           v(e => e + 1)
         }
       },
-      j = async e => {
+      M = async e => {
         await (0, u.ZI)({
           backgroundGradientPresetId: e.id,
           theme: e.theme,
           useSystemTheme: g ? L.KW.OFF : true
         }, x.fy.SLOW_USER_ACTION), (0, p.XO)(p.wh.CLIENT_THEMES), (0, I.default)()
-      }, M = () => {
+      }, j = () => {
         if (!b) return null;
         let e = P.qt[s.Us.EASTER_EGG];
         if (null == e) return null;
@@ -295,7 +295,7 @@ let Y = Object.freeze({
         tabIndex: 0 !== n || t ? true : 0,
         showBadge: false,
         showLockedBadge: false
-      }, e.id)), M()]
+      }, e.id)), j()]
     })
   },
   J = e => {
@@ -346,21 +346,21 @@ let Y = Object.freeze({
         isSelected: c && d,
         onSelect: () => p("system")
       }), (0, r.jsx)(R.bD, {
-        theme: j.BR.LIGHT,
-        isSelected: c && !d && l === j.BR.LIGHT,
-        onSelect: () => p(j.BR.LIGHT)
+        theme: M.BR.LIGHT,
+        isSelected: c && !d && l === M.BR.LIGHT,
+        onSelect: () => p(M.BR.LIGHT)
       }), (0, r.jsx)(R.bD, {
-        theme: j.BR.DARK,
-        isSelected: c && !d && l === j.BR.DARK,
-        onSelect: () => p(j.BR.DARK)
+        theme: M.BR.DARK,
+        isSelected: c && !d && l === M.BR.DARK,
+        onSelect: () => p(M.BR.DARK)
       }), (0, r.jsx)(R.bD, {
-        theme: j.BR.DARKER,
-        isSelected: c && !d && l === j.BR.DARKER,
-        onSelect: () => p(j.BR.DARKER)
+        theme: M.BR.DARKER,
+        isSelected: c && !d && l === M.BR.DARKER,
+        onSelect: () => p(M.BR.DARKER)
       }), (0, r.jsx)(R.bD, {
-        theme: j.BR.MIDNIGHT,
-        isSelected: c && !d && l === j.BR.MIDNIGHT,
-        onSelect: () => p(j.BR.MIDNIGHT)
+        theme: M.BR.MIDNIGHT,
+        isSelected: c && !d && l === M.BR.MIDNIGHT,
+        onSelect: () => p(M.BR.MIDNIGHT)
       }), !n && !t && (0, r.jsx)(R.bD, {
         theme: "system",
         isSelected: c && d,
@@ -383,7 +383,7 @@ let Y = Object.freeze({
       }), t && a && (0, r.jsx)(c.X6q, {
         className: k.upsellText,
         variant: "heading-sm/semibold",
-        children: M.intl.string(M.t.POSLGR)
+        children: j.intl.string(j.t.POSLGR)
       }), (0, r.jsxs)(c.Kqy, {
         direction: "horizontal",
         wrap: true,

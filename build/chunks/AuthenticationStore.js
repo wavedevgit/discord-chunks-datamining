@@ -42,8 +42,8 @@ let N = new Chunk710845.Z("AuthenticationStore"),
   D = null,
   L = null,
   x = null,
-  j = null,
   M = null,
+  j = null,
   k = null,
   U = Chunk981631.u34.NONE,
   G = false,
@@ -70,8 +70,8 @@ function Q(e) {
 
 function J() {
   let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];
-  if (j = Chunk433517.K.get(R), null != W) return W;
-  let t = null != j ? j : Chunk213919.getToken();
+  if (M = Chunk433517.K.get(R), null != W) return W;
+  let t = null != M ? M : Chunk213919.getToken();
   !(0, Chunk703656.m1)() || !module && null != exports || Chunk117240.Z.isHandoffAvailable() || $({
     withGuildExperiments: true
   })
@@ -81,7 +81,7 @@ function $(e) {
   let {
     withGuildExperiments: t
   } = e, n = {}, r = y.default.getSuperPropertiesBase64();
-  null != r && (n["X-Super-Properties"] = r), null != j && (n["X-Fingerprint"] = j), W = c.tn.get({
+  null != r && (n["X-Super-Properties"] = r), null != M && (n["X-Fingerprint"] = M), W = c.tn.get({
     url: S.ANM.EXPERIMENTS,
     query: {
       with_guild_experiments: t
@@ -116,7 +116,7 @@ function $(e) {
 }
 
 function ee() {
-  M = j, j = null, Chunk433517.K.remove(R)
+  j = M, M = null, Chunk433517.K.remove(R)
 }
 
 function et(e, t) {
@@ -223,11 +223,11 @@ function eg(e) {
 
 function eE(e) {
   let t = e.fingerprint;
-  null == j ? null != t ? (y.default.track(S.rMx.USER_FINGERPRINT_CHANGED, {
-    old_fingerprint: null != M ? (0, s.s)(M) : null,
+  null == M ? null != t ? (y.default.track(S.rMx.USER_FINGERPRINT_CHANGED, {
+    old_fingerprint: null != j ? (0, s.s)(j) : null,
     new_fingerprint: (0, s.s)(t)
-  }), j = t, M = t, u.K.set(R, j)) : J() : null != t && j !== t && y.default.track(S.rMx.EXTERNAL_FINGERPRINT_DROPPED, {
-    fingerprint: (0, s.s)(j),
+  }), M = t, j = t, u.K.set(R, M)) : J() : null != t && M !== t && y.default.track(S.rMx.EXTERNAL_FINGERPRINT_DROPPED, {
+    fingerprint: (0, s.s)(M),
     dropped_fingerprint: (0, s.s)(t)
   })
 }
@@ -359,7 +359,7 @@ class eD extends(a = Chunk442837.ZP.Store) {
     return (0, Chunk449934.$8)()
   }
   getFingerprint() {
-    return j
+    return M
   }
   getAnalyticsToken() {
     return null != k ? k : Chunk213919.getAnalyticsToken()

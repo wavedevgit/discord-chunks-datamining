@@ -255,8 +255,8 @@ function b(e) {
     D = u(P),
     L = null != c ? c : {},
     x = L.maxX,
-    j = L.maxY,
-    M = r.useCallback(function() {
+    M = L.maxY,
+    j = r.useCallback(function() {
       var e, t, n, r, i = null != (t = null == (e = a.current) ? true : e.clientWidth) ? t : 0,
         o = null != (r = null == (n = a.current) ? true : n.clientHeight) ? r : 0;
       return C && c ? {
@@ -266,10 +266,10 @@ function b(e) {
         width: i,
         height: o
       }
-    }, [a, C, x, j]);
+    }, [a, C, x, M]);
   r.useEffect(function() {
     if (N && a.current && n) {
-      var e = M(),
+      var e = j(),
         t = e.width,
         r = e.height,
         o = false;
@@ -295,7 +295,7 @@ function b(e) {
       }
       l && (S || o) && l && l(), S && A(false)
     }
-  }, [i, a, w, D, M, S, A, O, v, p, h, l, N, C, R, n]), r.useEffect(function() {
+  }, [i, a, w, D, j, S, A, O, v, p, h, l, N, C, R, n]), r.useEffect(function() {
     I({
       width: 0,
       height: 0

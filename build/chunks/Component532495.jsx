@@ -46,7 +46,7 @@ function x(e, t, n) {
   }) : e[t] = n, e
 }
 
-function j(e) {
+function M(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -59,7 +59,7 @@ function j(e) {
   return e
 }
 
-function M(e, t) {
+function j(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -71,13 +71,13 @@ function M(e, t) {
 }
 
 function k(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
 function U() {
-  var e, t, n, i, x, M, U, G;
+  var e, t, n, i, x, j, U, G;
   let B = (0, Chunk442837.e7)([Chunk594174.default], () => {
       let e = Chunk594174.default.getCurrentUser();
       return a()(null != module, "DefaultCustomizationSections: user cannot be undefined"), module
@@ -97,7 +97,7 @@ function U() {
     } = (0, Chunk442837.cj)([Chunk25990.Z], () => {
       let e = Chunk25990.Z.getAllPending(),
         t = Chunk25990.Z.getErrors();
-      return k(j({}, module), {
+      return k(M({}, module), {
         errors: exports
       })
     }),
@@ -112,7 +112,7 @@ function U() {
     er = (0, Chunk687158.ZP)(B.id),
     ei = null == er ? true : er.getLegacyUsername(),
     ea = (null != (n = null == (e = Q.global_name) ? true : module.length) ? require : 0) > 0 ? Q.global_name : null != (i = null == $ ? true : $.nick) ? Chunk512722 : [],
-    eo = (null != (x = null == (t = Q.bio) ? true : exports.length) ? x : 0) > 0 ? Q.bio : null != (M = null == $ ? true : $.bio) ? M : [],
+    eo = (null != (x = null == (t = Q.bio) ? true : exports.length) ? x : 0) > 0 ? Q.bio : null != (j = null == $ ? true : $.bio) ? j : [],
     es = (0, Chunk396402.w)(),
     el = (0, Chunk477448.Z)({
       location: "DefaultCustomizationSections"

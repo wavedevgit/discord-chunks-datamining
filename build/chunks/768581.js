@@ -7,7 +7,7 @@ require.d(exports, {
   CA: () => D,
   F8: () => $,
   JM: () => w,
-  NZ: () => j,
+  NZ: () => M,
   ZP: () => et,
   aN: () => x,
   ay: () => Q,
@@ -17,7 +17,7 @@ require.d(exports, {
   pK: () => b,
   pU: () => en,
   rI: () => K,
-  tp: () => M,
+  tp: () => j,
   xR: () => X
 }), require("./35282.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js");
 var Chunk654861 = require("./654861.js"),
@@ -209,7 +209,7 @@ function x(e) {
   return "webp" === c && i && X(r) && (u.animated = true), t += "?".concat(o.stringify(u))
 }
 
-function j(e) {
+function M(e) {
   let {
     avatarDecoration: t,
     size: n,
@@ -228,7 +228,7 @@ function j(e) {
   return u.searchParams.set("size", "".concat((0, l.oO)(n * (0, l.x_)()))), u.searchParams.set("passthrough", "".concat(r)), u.toString()
 }
 
-function M(e) {
+function j(e) {
   let t, {
     id: n,
     guildId: r,
@@ -476,9 +476,9 @@ let et = {
   getGuildMemberAvatarURL: D,
   getGuildMemberAvatarURLSimple: w,
   getGuildMemberAvatarSource: L,
-  getGuildMemberBannerURL: M,
+  getGuildMemberBannerURL: j,
   getUserBannerURL: x,
-  getAvatarDecorationURL: j,
+  getAvatarDecorationURL: M,
   hasAnimatedGuildIcon: function e(e) {
     return X(null == e ? true : e.icon)
   },

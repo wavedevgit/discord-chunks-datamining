@@ -2,7 +2,7 @@
 /** chunk id: 670638, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  r: () => j
+  r: () => M
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -99,8 +99,8 @@ function x(e) {
     {
       handleComplete: L,
       handleProgress: x,
-      handleResetDismissibilityClick: j,
-      handleResetStatusClick: M,
+      handleResetDismissibilityClick: M,
+      handleResetStatusClick: j,
       handleOverrideDeliveryClick: k
     } = (0, E.kJ)(e.quest.id),
     U = () => {
@@ -161,7 +161,7 @@ function x(e) {
     W = () => (0, g.CS)(e.quest.id, true).catch(Y),
     K = () => (0, g.is)(e.quest.id).catch(Y),
     z = () => {
-      M(), K()
+      j(), K()
     },
     q = false,
     X = i.useMemo(() => {
@@ -222,7 +222,7 @@ function x(e) {
       children: [!(q || X) && Q, (0, r.jsx)(o.sNh, {
         id: "dismiss",
         label: C.intl.string(C.t["JF6W6+"]),
-        action: j
+        action: M
       }), (0, r.jsx)(o.sNh, {
         id: "enrollment",
         label: C.intl.string(C.t.taqkwM),
@@ -268,7 +268,7 @@ function x(e) {
   })
 }
 
-function j(e) {
+function M(e) {
   let {
     children: t,
     onOpen: n,

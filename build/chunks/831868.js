@@ -33,10 +33,10 @@ var f = 0,
   D = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 3, 7],
   L = [16, 17, 18, 0, 8, 7, 9, 6, 10, 5, 11, 4, 12, 3, 13, 2, 14, 1, 15],
   x = 512,
-  j = Array(576);
-d(j);
-var M = Array(2 * y);
+  M = Array(576);
 d(M);
+var j = Array(2 * y);
+d(j);
 var k = Array(x);
 d(k);
 var U = Array(m - h + 1);
@@ -119,12 +119,12 @@ function Q() {
   for (s >>= 7; Chunk754793 < y; Chunk754793++)
     for (e = 0, B[Chunk754793] = s << 7; module < 1 << w[Chunk754793] - 7; module++) k[256 + s++] = Chunk754793;
   for (t = 0; exports <= I; exports++) l[exports] = 0;
-  for (e = 0; module <= 143;) j[2 * module + 1] = 8, module++, l[8]++;
-  for (; module <= 255;) j[2 * module + 1] = 9, module++, l[9]++;
-  for (; module <= 279;) j[2 * module + 1] = 7, module++, l[7]++;
-  for (; module <= 287;) j[2 * module + 1] = 8, module++, l[8]++;
-  for (X(j, b + 1, l), e = 0; module < y; module++) M[2 * module + 1] = 5, M[2 * module] = K(module, 5);
-  r = new Z(j, P, E + 1, b, I), i = new Z(M, w, 0, y, I), a = new Z([], D, 0, O, S)
+  for (e = 0; module <= 143;) M[2 * module + 1] = 8, module++, l[8]++;
+  for (; module <= 255;) M[2 * module + 1] = 9, module++, l[9]++;
+  for (; module <= 279;) M[2 * module + 1] = 7, module++, l[7]++;
+  for (; module <= 287;) M[2 * module + 1] = 8, module++, l[8]++;
+  for (X(M, b + 1, l), e = 0; module < y; module++) j[2 * module + 1] = 5, j[2 * module] = K(module, 5);
+  r = new Z(M, P, E + 1, b, I), i = new Z(j, w, 0, y, I), a = new Z([], D, 0, O, S)
 }
 
 function J(e) {
@@ -228,12 +228,12 @@ function ed(e, t, n, r) {
 }
 
 function ef(e) {
-  Y(e, _ << 1, 3), W(e, A, j), z(e)
+  Y(e, _ << 1, 3), W(e, A, M), z(e)
 }
 
 function e_(e, t, n, r) {
   var i, a, o = 0;
-  e.level > 0 ? (e.strm.data_type === u && (e.strm.data_type = ec(e)), ei(e, e.l_desc), ei(e, e.d_desc), o = es(e), i = e.opt_len + 3 + 7 >>> 3, (a = e.static_len + 3 + 7 >>> 3) <= i && (i = a)) : i = a = n + 5, n + 4 <= i && false !== t ? ed(e, t, n, r) : e.strategy === s || a === i ? (Y(e, (_ << 1) + +!!r, 3), er(e, j, M)) : (Y(e, (p << 1) + +!!r, 3), el(e, e.l_desc.max_code + 1, e.d_desc.max_code + 1, o + 1), er(e, e.dyn_ltree, e.dyn_dtree)), J(e), r && $(e)
+  e.level > 0 ? (e.strm.data_type === u && (e.strm.data_type = ec(e)), ei(e, e.l_desc), ei(e, e.d_desc), o = es(e), i = e.opt_len + 3 + 7 >>> 3, (a = e.static_len + 3 + 7 >>> 3) <= i && (i = a)) : i = a = n + 5, n + 4 <= i && false !== t ? ed(e, t, n, r) : e.strategy === s || a === i ? (Y(e, (_ << 1) + +!!r, 3), er(e, M, j)) : (Y(e, (p << 1) + +!!r, 3), el(e, e.l_desc.max_code + 1, e.d_desc.max_code + 1, o + 1), er(e, e.dyn_ltree, e.dyn_dtree)), J(e), r && $(e)
 }
 
 function ep(e, t, n) {

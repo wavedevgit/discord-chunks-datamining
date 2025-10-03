@@ -52,15 +52,15 @@ function D(e) {
   let {
     selected: o,
     user: d,
-    badge: f,
-    link: h,
+    badge: h,
+    link: f,
     showProgressBadge: b
-  } = e, [_, O] = i.useState(false), [y, v] = i.useState(false), [j, x] = i.useState(null), [C, w] = i.useState(0), D = (0, l.Ie)("home"), L = (0, p.oq)().activePanel === p.wh.APP_ICON, M = () => {
-    x(null), w(0), clearTimeout(j)
+  } = e, [_, y] = i.useState(false), [O, v] = i.useState(false), [j, x] = i.useState(null), [C, Z] = i.useState(0), D = (0, l.Ie)("home"), L = (0, p.oq)().activePanel === p.wh.APP_ICON, M = () => {
+    x(null), Z(0), clearTimeout(j)
   };
   if (null == d) return null;
   let k = T.intl.string(T.t.YUU0RE);
-  y && (k = a.K.get(N.wli) ? T.intl.string(T.t.nkq1l5) : T.intl.string(T.t.Be8Q5O));
+  O && (k = a.K.get(N.wli) ? T.intl.string(T.t.nkq1l5) : T.intl.string(T.t.Be8Q5O));
   let U = null;
   !o && b && (U = (0, r.jsx)(c.Z, {
     className: A.downloadProgress,
@@ -69,10 +69,10 @@ function D(e) {
   let G = o || _ || L,
     B = (0, r.jsx)(s.aRk, {
       selected: true,
-      lowerBadge: f > 0 ? (0, I.Ne)(f) : null,
+      lowerBadge: h > 0 ? (0, P.Ne)(h) : null,
       upperBadge: U,
       lowerBadgeSize: {
-        width: (0, s.OVM)(f)
+        width: (0, s.OVM)(h)
       },
       children: (0, r.jsx)(s.LYs, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -92,13 +92,13 @@ function D(e) {
         }
         return e
       }({
-        onMouseEnter: () => O(true),
-        onMouseLeave: () => O(false),
+        onMouseEnter: () => y(true),
+        onMouseLeave: () => y(false),
         onClick: () => {
-          if (!__OVERLAY__ && (null != j && clearTimeout(j), x(setTimeout(M, 500)), w(C + 1), 15 === C)) {
+          if (!__OVERLAY__ && (null != j && clearTimeout(j), x(setTimeout(M, 500)), Z(C + 1), 15 === C)) {
             M();
             let e = !a.K.get(N.wli);
-            a.K.set(N.wli, e), e && a.K.set(Z.O, true), e ? (0, g.GN)("discodo") : (0, g.GN)("user_leave"), v(true), setTimeout(() => {
+            a.K.set(N.wli, e), e && a.K.set(w.O, true), e ? (0, g.GN)("discodo") : (0, g.GN)("user_leave"), v(true), setTimeout(() => {
               v(false)
             }, 1e3)
           }
@@ -109,7 +109,7 @@ function D(e) {
         "aria-selected": o
       }, D), n = n = {
         to: {
-          pathname: h,
+          pathname: f,
           state: {
             analyticsSource: {
               page: N.ZY5.GUILD_CHANNEL,
@@ -141,7 +141,7 @@ function D(e) {
           selected: o,
           hovered: _,
           className: A.pill
-        }), (0, r.jsx)(P.Z, {
+        }), (0, r.jsx)(I.Z, {
           color: s.ua7.Colors.PRIMARY,
           hideOnClick: true,
           text: k,

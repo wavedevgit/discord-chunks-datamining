@@ -109,10 +109,10 @@ async function v(e) {
   }, {
     contextKey: L
   });
-  let j = [];
-  u.Z.isLoadedForPremiumSKUs() || j.push((0, s.Y2)()), c.Z.hasFetched || (j.push(a.jg()), j.push((0, o.X8)())), j.length > 0 && (null == I || I(true), await Promise.allSettled(j), null == I || I(false));
-  let M = (0, f.vx)(c.Z.boostSlots),
-    k = M.length,
+  let M = [];
+  u.Z.isLoadedForPremiumSKUs() || M.push((0, s.Y2)()), c.Z.hasFetched || (M.push(a.jg()), M.push((0, o.X8)())), M.length > 0 && (null == I || I(true), await Promise.allSettled(M), null == I || I(false));
+  let j = (0, f.vx)(c.Z.boostSlots),
+    k = j.length,
     U = e => {
       null == v || v(), null == N || N(e)
     },
@@ -124,7 +124,7 @@ async function v(e) {
     };
   if (k > 0 && (null == y || k >= y)) {
     let e;
-    1 === k ? e = M.slice(0, 1) : null != y && (e = M.slice(0, y)), await (0, i.ZDy)(async () => {
+    1 === k ? e = j.slice(0, 1) : null != y && (e = j.slice(0, y)), await (0, i.ZDy)(async () => {
       let {
         default: t
       } = await Promise.resolve().then(n.bind(n, 760558));

@@ -55,40 +55,44 @@ let d = Chunk647438.forwardRef(function(e, t) {
     style: d,
     focusProps: f,
     onClick: _,
-    onDoubleClick: p,
-    onContextMenu: h,
-    onKeyDown: m,
-    onFocus: g,
-    onBlur: E,
-    onMouseOver: b,
-    onMouseDown: y,
-    onMouseLeave: O,
-    buttonProps: v,
-    "aria-label": I
-  } = e, T = i.useRef(null);
-  return i.useImperativeHandle(t, () => T.current), (0, r.jsxs)(n, {
-    ref: T,
+    onMouseEnter: p,
+    onDoubleClick: h,
+    onContextMenu: m,
+    onKeyDown: g,
+    onFocus: E,
+    onBlur: b,
+    onMouseOver: y,
+    onMouseDown: O,
+    onMouseLeave: v,
+    buttonProps: I,
+    "aria-label": T,
+    "aria-describedby": S
+  } = e, A = i.useRef(null);
+  return i.useImperativeHandle(t, () => A.current), (0, r.jsxs)(n, {
+    ref: A,
     className: c,
     style: d,
     onClick: _,
-    onMouseOver: b,
-    onMouseLeave: O,
-    onDoubleClick: p,
-    onMouseDown: y,
-    onContextMenu: h,
-    children: [(0, r.jsx)(a.P, u(l({}, v), {
+    onMouseEnter: p,
+    onMouseOver: y,
+    onMouseLeave: v,
+    onDoubleClick: h,
+    onMouseDown: O,
+    onContextMenu: m,
+    children: [(0, r.jsx)(a.P, u(l({}, I), {
       focusProps: l({
-        ringTarget: T
+        ringTarget: A
       }, f),
       className: o.focusTarget,
-      "aria-label": I,
+      "aria-label": T,
+      "aria-describedby": S,
       onClick: e => {
         e.stopPropagation(), null == _ || _(e)
       },
-      onKeyDown: m,
-      onFocus: g,
-      onBlur: E,
-      onMouseDown: y
+      onKeyDown: g,
+      onFocus: E,
+      onBlur: b,
+      onMouseDown: O
     })), s]
   })
 })

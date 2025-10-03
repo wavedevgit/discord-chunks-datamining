@@ -43,7 +43,7 @@ function _(e, t) {
       let {
         nodeId: i
       } = e;
-      r && t.type !== p.eD.FOLDER && d.default.track(h.rMx.GUILD_FOLDER_CREATED), u.Z.moveById(i, t.id, n, r)
+      r && t.type !== p.eD.FOLDER && d.default.track(f.rMx.GUILD_FOLDER_CREATED), u.Z.moveById(i, t.id, n, r)
     },
     collect: e => ({
       canDrop: e.canDrop(),
@@ -52,7 +52,7 @@ function _(e, t) {
   }
 }
 
-function O(e) {
+function y(e) {
   let {
     name: t,
     targetNode: n,
@@ -61,13 +61,13 @@ function O(e) {
   } = e, a = i.useMemo(() => _([p.eD.GUILD, p.eD.FOLDER], n, o, l), [n, o, l]), [{
     canDrop: s,
     isOver: u
-  }, d] = (0, c.L)(a), f = b([
+  }, d] = (0, c.L)(a), h = b([
     [s, m.autoPointerEvents],
     [u, m.dragOver]
   ]);
   return (0, r.jsx)("div", {
     ref: e => {
-      f.current = e, d(e)
+      h.current = e, d(e)
     },
     "data-dnd-name": g.intl.formatToPlainString(g.t.A5aDw8, {
       itemName: t
@@ -76,7 +76,7 @@ function O(e) {
   })
 }
 
-function y(e) {
+function O(e) {
   let {
     name: t,
     targetNode: n,
@@ -92,7 +92,7 @@ function y(e) {
     [a, m.autoPointerEvents],
     [s, m.dragOver]
   ]);
-  return (0, r.jsx)(f.Z, {
+  return (0, r.jsx)(h.Z, {
     text: t,
     shouldShow: s,
     forceOpen: s,
@@ -120,11 +120,11 @@ let v = Chunk647438.memo(function(e) {
   return (0, r.jsxs)("div", {
     className: m.wrapper,
     "aria-hidden": true,
-    children: [(0, r.jsx)(O, {
+    children: [(0, r.jsx)(y, {
       name: t,
       targetNode: n,
       below: l
-    }), a ? (0, r.jsx)(y, {
+    }), a ? (0, r.jsx)(O, {
       name: t,
       targetNode: n,
       onDragOverChanged: o

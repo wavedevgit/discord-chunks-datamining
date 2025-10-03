@@ -50,15 +50,15 @@ let I = [Chunk342905.C.CHERRY_BOMB, Chunk342905.C.CHICLE],
       includeNonProfile: x
     } = m.fN.useExperiment({
       location: "useDisplayNameStylesFont"
-    }), j = (0, g.Y)({
+    }), M = (0, g.Y)({
       location: "UserNameWithEffects"
-    }), M = (0, _.dQu)(_.TVs.colors.BACKGROUND_BASE_LOW).hex(), k = null != (t = null == a ? true : a.effectId) ? t : c.m.SOLID, U = (0, y.R)(k), G = (0, _.qgQ)(n), B = (0, f.EJ)(G, k === c.m.TOON ? v.emoji : true), Z = i.useMemo(() => null != a && j ? a.colors.map(e => (0, h.wh)({
+    }), j = (0, _.dQu)(_.TVs.colors.BACKGROUND_BASE_LOW).hex(), k = null != (t = null == a ? true : a.effectId) ? t : c.m.SOLID, U = (0, y.R)(k), G = (0, _.qgQ)(n), B = (0, f.EJ)(G, k === c.m.TOON ? v.emoji : true), Z = i.useMemo(() => null != a && M ? a.colors.map(e => (0, h.wh)({
       foreground: o()(e),
-      background: k === c.m.TOON ? o()("#333") : o()(M),
+      background: k === c.m.TOON ? o()("#333") : o()(j),
       ratio: U.minContrastRatio,
       saturationFactor: L
-    }).hex()) : [], [a, j, k, U.minContrastRatio, L, M]);
-    if (!j || !T && !x || null == a) return n;
+    }).hex()) : [], [a, M, k, U.minContrastRatio, L, j]);
+    if (!M || !T && !x || null == a) return n;
     let F = (0, b.K)(k, Z, {
         shouldWrap: N,
         fontOpacity: I.includes(a.fontId) ? R : 1

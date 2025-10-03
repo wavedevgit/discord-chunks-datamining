@@ -37,23 +37,23 @@ function g(e) {
     disabled: t,
     widgetType: r,
     widget: g
-  } = e, [p] = (0, a.ynZ)(), [b, O] = i.useState(""), m = i.useRef(null), y = i.useRef(""), j = i.useMemo(() => new Set(g.games.map(e => e.applicationId)), [g.games]), {
+  } = e, [p] = (0, o.ynZ)(), [b, m] = i.useState(""), O = i.useRef(null), y = i.useRef(""), j = i.useMemo(() => new Set(g.games.map(e => e.applicationId)), [g.games]), {
     trackUserProfileEditAction: v
-  } = (0, c.KZ)(), h = i.useCallback(e => {
+  } = (0, c.KZ)(), x = i.useCallback(e => {
     (0, s.ES)(r, {
       applicationId: e
-    }), a.uvj.announce(u.intl.string(u.t.q0U3DA)), v({
+    }), o.uvj.announce(u.intl.string(u.t.q0U3DA)), v({
       action: "GAME_ADDED",
       gameId: e,
       widgetEdited: r
     })
   }, [r, v]), {
-    options: x,
+    options: h,
     matchSorterOptions: _
   } = (0, l.h)(), w = i.useCallback(e => {
     var t, r;
-    return "" === e.trim() ? x : (0, o.Lu)(x, e, (t = f({}, _), r = r = {
-      threshold: o.Lu.rankings.CONTAINS
+    return "" === e.trim() ? h : (0, a.Lu)(h, e, (t = f({}, _), r = r = {
+      threshold: a.Lu.rankings.CONTAINS
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
       var r = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -64,26 +64,26 @@ function g(e) {
     })(Object(r)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
     }), t))
-  }, [x, _]), P = i.useCallback(e => {
+  }, [h, _]), P = i.useCallback(e => {
     "" === b.trim() && "" !== e.trim() && v({
       action: "GAME_SEARCH_SESSION_STARTED",
       widgetEdited: r,
       numCharacters: e.trim().length,
       numResults: w(e).length
-    }), O(e), y.current = e
-  }, [b, v, r, w]), E = i.useMemo(() => "" !== b.trim() ? u.intl.format(u.t.ZoearK, {
+    }), m(e), y.current = e
+  }, [b, v, r, w]), I = i.useMemo(() => "" !== b.trim() ? u.intl.format(u.t.ZoearK, {
     searchTerm: b.trim(),
     surveyUrl: "https://discord.sjc1.qualtrics.com/jfe/form/SV_0TIqLrxbsfJYS4C"
   }) : u.intl.string(u.t.QwSXv7), [b]);
-  return (0, n.jsx)(a.yRy, {
-    targetElementRef: m,
+  return (0, n.jsx)(o.yRy, {
+    targetElementRef: O,
     position: "bottom",
     align: "center",
     onRequestOpen: () => {
       v({
         action: "PRESS_ADD_GAME",
         widgetEdited: r
-      }), O(""), y.current = ""
+      }), m(""), y.current = ""
     },
     onRequestClose: () => {
       v({
@@ -97,24 +97,24 @@ function g(e) {
       let {
         closePopout: t
       } = e;
-      return (0, n.jsx)(a.DBG, {
+      return (0, n.jsx)(o.DBG, {
         className: d.gameSearchCombobox,
         placeholder: u.intl.string(u.t["5h0QOD"]),
         autoFocus: true,
         value: p,
         onChange: e => {
-          h(e), t()
+          x(e), t()
         },
         multiSelect: false,
         maxVisibleItems: 7,
-        emptyStateText: E,
+        emptyStateText: I,
         emptyStateHeader: "",
         onQueryChange: P,
-        children: e => w(e).map(e => (0, n.jsx)(a.lo1, {
+        children: e => w(e).map(e => (0, n.jsx)(o.lo1, {
           disabled: j.has(e.value),
           value: String(e.value),
-          children: (0, n.jsx)(a.lo1.Label, {
-            children: (0, n.jsx)(a.Text, {
+          children: (0, n.jsx)(o.lo1.Label, {
+            children: (0, n.jsx)(o.Text, {
               variant: "text-md/medium",
               color: "header-secondary",
               children: e.label
@@ -124,11 +124,11 @@ function g(e) {
       })
     },
     children: e => (0, n.jsx)("div", {
-      ref: m,
-      children: (0, n.jsx)(a.zxk, f({
+      ref: O,
+      children: (0, n.jsx)(o.zxk, f({
         variant: "secondary",
         size: "sm",
-        icon: a.qJs,
+        icon: o.qJs,
         text: u.intl.string(u.t.SgTOtb),
         disabled: t
       }, e))

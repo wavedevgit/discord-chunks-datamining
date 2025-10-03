@@ -1,7 +1,7 @@
 /** Chunk was on 50751 **/
 /** chunk id: 350663, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => b
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -51,25 +51,25 @@ function v(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let b = {
+let S = {
     mass: 1,
     tension: 250,
     friction: 18,
     clamp: true
   },
-  S = Chunk647438.memo(function(e) {
+  b = Chunk647438.memo(function(e) {
     let {
       widgetId: t,
       tileWidth: n,
       tileHeight: l,
-      layout: S,
+      layout: b,
       locked: x,
       activeStreams: j,
       streamParticipants: I,
       participantsVersion: C,
       pinned: Z,
-      padding: w
-    } = e, N = I.map(e => ({
+      padding: N
+    } = e, w = I.map(e => ({
       participant: e,
       key: e.user.id,
       width: n,
@@ -77,17 +77,17 @@ let b = {
       locked: x,
       widgetId: t,
       pinned: Z
-    })), T = (0, u.Z)(n), _ = (0, u.Z)(x), P = S === g.C5.VERTICAL, D = x || _ !== x || T !== n, A = r.useMemo(() => {
+    })), T = (0, u.Z)(n), _ = (0, u.Z)(x), P = b === g.C5.VERTICAL, D = x || _ !== x || T !== n, A = r.useMemo(() => {
       let e = 0,
         t = 0;
-      return P ? N.map((t, n) => v(E({}, t), {
-        y: (e += t.height + (n > 0 ? w : 0)) - t.height,
+      return P ? w.map((t, n) => v(E({}, t), {
+        y: (e += t.height + (n > 0 ? N : 0)) - t.height,
         x: 0
-      })) : N.map((e, n) => v(E({}, e), {
-        x: (t += e.width + (n > 0 ? w : 0)) - e.width,
+      })) : w.map((e, n) => v(E({}, e), {
+        x: (t += e.width + (n > 0 ? N : 0)) - e.width,
         y: 0
       }))
-    }, [N, w, P]), R = r.useMemo(() => 0 === A.length ? (0, m.MH)(f.bt) : A.reduce((e, t) => e + t.height, 0) + (P ? w * (A.length - 1) : 0), [A, P, w]), k = r.useMemo(() => 0 === A.length ? f.bt : A.reduce((e, t) => e + t.width, 0) + (P ? 0 : w * (A.length - 1)), [A, P, w]), L = (0, s.Yzy)(A, {
+    }, [w, N, P]), R = r.useMemo(() => 0 === A.length ? (0, m.MH)(f.bt) : A.reduce((e, t) => e + t.height, 0) + (P ? N * (A.length - 1) : 0), [A, P, N]), k = r.useMemo(() => 0 === A.length ? f.bt : A.reduce((e, t) => e + t.width, 0) + (P ? 0 : N * (A.length - 1)), [A, P, N]), L = (0, s.Yzy)(A, {
       key: e => e.key,
       from: {
         height: 0,
@@ -126,11 +126,11 @@ let b = {
           height: r
         }
       },
-      config: b,
+      config: S,
       trail: 100 * !D
-    }, D ? "animate-never" : "respect-motion-settings"), M = (0, p.ee)(() => new Set(I.map(e => e.user.id)), [I, C]), V = (0, p.ee)(() => new Set(I.filter(e => j.has((0, c.V9)(e.stream))).map(e => e.user.id)), [I, j, C]);
+    }, D ? "animate-never" : "respect-motion-settings"), M = (0, h.ee)(() => new Set(I.map(e => e.user.id)), [I, C]), V = (0, h.ee)(() => new Set(I.filter(e => j.has((0, c.V9)(e.stream))).map(e => e.user.id)), [I, j, C]);
     return r.useEffect(() => {
-      0 !== M.size && (0, p.zi)(y.Odu.GO_LIVE, {
+      0 !== M.size && (0, h.zi)(y.Odu.GO_LIVE, {
         locked: d.default.isInstanceLocked(),
         shownUserIds: Array.from(M),
         liveUserIds: Array.from(V),
@@ -152,7 +152,7 @@ let b = {
         style: Object.assign({}, e, {
           width: n,
           height: l,
-          zIndex: N.length - o
+          zIndex: w.length - o
         }),
         children: (e => {
           let {
@@ -164,7 +164,7 @@ let b = {
           } = e;
           return (0, i.jsx)("div", {
             className: O.tileContainer,
-            children: (0, i.jsx)(h.Z, {
+            children: (0, i.jsx)(p.Z, {
               participant: t,
               width: n,
               locked: r,

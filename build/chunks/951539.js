@@ -17,13 +17,13 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js");
 
 function b(e) {
-  let [n, t, i, b] = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [o.ZP, l.Z, c.Z, a.Z];
+  let [n, t, i, b] = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [o.ZP, l.Z, c.Z, r.Z];
   if ((0, u.Z2)(e)) returnfalse;
   let {
     guild_id: g,
     channel_id: h
   } = e, m = e.entity_type === _.WX.EXTERNAL ? n.getDefaultChannel(e.guild_id) : t.getChannel(h), f = i.getGuild(g), v = b.getStageInstanceByChannel(h);
-  return !!(0, r.b)(s.Z, f, m, v) && null != m && function(e) {
+  return !!(0, a.b)(s.Z, f, m, v) && null != m && function(e) {
     let [n] = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [l.Z], {
       entityType: t,
       channelId: i
@@ -32,11 +32,11 @@ function b(e) {
       channelId: e.channel_id
     } : e;
     if (t === _.WX.EXTERNAL) returntrue;
-    let r = n.getChannel(i);
-    return null != r && d.Uu(p.Plq.VIEW_CHANNEL, r)
+    let a = n.getChannel(i);
+    return null != a && d.Uu(p.Plq.VIEW_CHANNEL, a)
   }(e, [t])
 }
 
 function g(e) {
-  return (0, i.e7)([o.ZP, l.Z, c.Z, a.Z], () => b(e, [o.ZP, l.Z, c.Z, a.Z]), [e])
+  return (0, i.e7)([o.ZP, l.Z, c.Z, r.Z], () => b(e, [o.ZP, l.Z, c.Z, r.Z]), [e])
 }

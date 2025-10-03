@@ -1,7 +1,7 @@
 /** Chunk was on 15076 **/
 /** chunk id: 569658, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => N
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -29,7 +29,7 @@ let f = e => {
   return (0, u.r8)(t) || t === p.d4z.GUILD_CATEGORY
 };
 
-function b(e) {
+function N(e) {
   let {
     guildId: t,
     onSelected: n
@@ -42,7 +42,7 @@ function b(e) {
       channels: (0, o.Z)(e._categories, e, f),
       categories: e
     }
-  }), b = l()(s).filter(e => {
+  }), N = l()(s).filter(e => {
     let {
       channel: t
     } = e;
@@ -59,13 +59,13 @@ function b(e) {
   return (0, i.jsxs)(a.xJW, {
     children: [(0, i.jsx)(a.R94, {
       type: a.R94.Types.DESCRIPTION,
-      children: j.intl.string(j.t["2Y9ZfH"])
+      children: v.intl.string(v.t["2Y9ZfH"])
     }), (0, i.jsx)("div", {
-      className: v.input,
+      className: j.input,
       children: (0, i.jsx)(a.VcW, {
         value: p.lds,
         onChange: n,
-        options: b,
+        options: N,
         renderOptionLabel: e => {
           let t = h.Z.getChannel(e.value);
           if (null == t) return e.label;
@@ -77,7 +77,7 @@ function b(e) {
             subtitle: s
           })
         },
-        placeholder: j.intl.string(j.t["Z+oF8v"])
+        placeholder: v.intl.string(v.t["Z+oF8v"])
       })
     })]
   })

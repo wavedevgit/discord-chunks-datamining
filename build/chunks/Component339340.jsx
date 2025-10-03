@@ -34,7 +34,7 @@ function S(e) {
     transitionState: n,
     sourceAnalyticsLocations: S,
     onClose: A
-  } = e, C = (0, o.e7)([d.Z], () => d.Z.getChannelStatus(t)), N = (0, o.e7)([m.Z], () => m.Z.getMediaSessionId()), [R, P] = i.useState(null != C ? C : ""), [w, D] = i.useState(false), [L, x] = i.useState(null), j = (0, o.e7)([g.default], () => g.default.getCurrentUser()), M = R.length > T;
+  } = e, C = (0, o.e7)([d.Z], () => d.Z.getChannelStatus(t)), N = (0, o.e7)([m.Z], () => m.Z.getMediaSessionId()), [R, P] = i.useState(null != C ? C : ""), [w, D] = i.useState(false), [L, x] = i.useState(null), M = (0, o.e7)([g.default], () => g.default.getCurrentUser()), j = R.length > T;
   i.useEffect(() => {
     E.default.track(b.rMx.OPEN_MODAL, {
       type: "Voice Channel Topic Modal",
@@ -52,7 +52,7 @@ function S(e) {
       if (null != n && n.length > 0) {
         let {
           errorMessage: e
-        } = u.Z.validateMessage(n, j, t.id);
+        } = u.Z.validateMessage(n, M, t.id);
         return x(e), D(false), {
           hasErrors: true
         }
@@ -87,7 +87,7 @@ function S(e) {
       }
     }, [B, Z] = i.useState((0, _.JM)(R)), F = (e, t, n) => {
       P(t), Z(n)
-    }, V = async () => (M || w || await G(), Promise.resolve({
+    }, V = async () => (j || w || await G(), Promise.resolve({
       shouldClear: false,
       shouldRefocus: true
     })), H = (0, r.jsxs)(l.hjN, {
@@ -132,7 +132,7 @@ function S(e) {
     }, {
       variant: "primary",
       loading: w,
-      disabled: M,
+      disabled: j,
       text: y.intl.string(y.t.XqK2Iy),
       onClick: G
     }],

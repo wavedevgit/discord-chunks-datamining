@@ -58,12 +58,12 @@ function T(e) {
     } = e,
     x = L === D.author.id,
     {
-      channel: j,
-      approximate_member_count: M,
+      channel: M,
+      approximate_member_count: j,
       approximate_presence_count: k
     } = w,
     U = w.state === b.r2o.ACCEPTING,
-    G = null != j ? (0, p.jD)(j) : null,
+    G = null != M ? (0, p.jD)(M) : null,
     B = null != P,
     Z = null != G,
     F = null != G && G.isGuildVocal(),
@@ -142,8 +142,8 @@ function T(e) {
         isBannerVisible: false
       })
     })]
-  })) : null != M && M >= 5 || null != k && k > 0 ? S = (0, r.jsx)(_.Z.Data, {
-    members: M,
+  })) : null != j && j >= 5 || null != k && k > 0 ? S = (0, r.jsx)(_.Z.Data, {
+    members: j,
     membersOnline: k
   }) : Z && (S = (0, r.jsx)(_.Z.Channel, {
     channel: G,

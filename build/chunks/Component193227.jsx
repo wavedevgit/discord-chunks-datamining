@@ -63,7 +63,7 @@ function y(e) {
   })
 }
 
-function L(e) {
+function j(e) {
   let {
     category: t
   } = e, n = (0, C.l)(t.products), l = (0, f.a)()(n);
@@ -73,7 +73,7 @@ function L(e) {
   })
 }
 
-function j(e) {
+function L(e) {
   let {
     category: t,
     isFullScreen: n
@@ -85,7 +85,7 @@ function j(e) {
     ref: i,
     children: [(0, r.jsx)(h.Z, {
       category: t
-    }), (0, r.jsx)(L, {
+    }), (0, r.jsx)(j, {
       category: t
     })]
   })
@@ -141,7 +141,7 @@ function k(e) {
         newValue: {
           categoryPosition: t
         },
-        children: (0, r.jsx)(j, {
+        children: (0, r.jsx)(L, {
           category: e,
           isFullScreen: i
         })

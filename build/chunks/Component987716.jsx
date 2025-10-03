@@ -95,7 +95,7 @@ let A = e => {
     orientation: "horizontal"
   }), {
     ref: x
-  } = L, j = T(L, ["ref"]), M = (0, d.MY)(y, t), k = M === d.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD, U = M !== d.xr.DEFAULT, G = (0, p.m)(), B = (0, _.ZP)({
+  } = L, M = T(L, ["ref"]), j = (0, d.MY)(y, t), k = j === d.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD, U = j !== d.xr.DEFAULT, G = (0, p.m)(), B = (0, _.ZP)({
     location: "GiftAnimationOptions"
   }), Z = e => {
     null != R && R(null == e ? true : e)
@@ -130,7 +130,7 @@ let A = e => {
       className: o()(b.giftBoxOptionContainer, a),
       "aria-label": E.intl.string(E.t.v54NrK),
       ref: x
-    }, j), {
+    }, M), {
       children: null != G && !B && G.map((e, t) => (0, r.jsx)(g.m, {
         isSelected: v === e,
         giftStyle: e,

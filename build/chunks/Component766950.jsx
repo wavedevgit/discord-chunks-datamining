@@ -1,7 +1,7 @@
 /** Chunk was on 47495 **/
 /** chunk id: 766950, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => A
+  default: () => I
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -36,116 +36,116 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk300119 = require("./300119.js");
 
-function A(e) {
-  var t, n, A, I;
+function I(e) {
+  var t, n, I, w;
   let {
     transitionState: B,
     analyticsLocations: M,
     guildId: Z,
     onClose: G
-  } = e, Y = (0, s.e7)([_.default], () => _.default.getCurrentUser()), H = null != (t = C.ZP.useName(Y)) ? t : "", z = (0, s.e7)([h.Z, j.Z, x.ZP], () => {
+  } = e, Y = (0, s.e7)([S.default], () => S.default.getCurrentUser()), H = null != (t = C.ZP.useName(Y)) ? t : "", z = (0, s.e7)([h.Z, b.Z, _.ZP], () => {
     var e, t, n;
-    return null != Z ? null != (t = null != (e = h.Z.getPendingNickname()) ? e : x.ZP.getNick(Z, null == Y ? true : Y.id)) ? t : H : null != (n = j.Z.getPendingGlobalName()) ? n : H
+    return null != Z ? null != (t = null != (e = h.Z.getPendingNickname()) ? e : _.ZP.getNick(Z, null == Y ? true : Y.id)) ? t : H : null != (n = b.Z.getPendingGlobalName()) ? n : H
   }, [Z, Y, H]), {
     currentDisplayNameStyles: F,
     pendingDisplayNameStyles: U
-  } = (0, b.mD)(Y, Z), q = true !== U ? U : F, [K, X] = o.useState(null != (n = null == q ? true : q.fontId) ? n : i.C.DEFAULT), [V, W] = o.useState(null != (A = null == q ? true : q.effectId) ? A : a.m.SOLID), $ = (0, T.R)(V), J = (0, T.R)(a.m.GRADIENT), Q = null != (I = null == q ? true : q.colors) ? I : [], [ee, et] = o.useState(Q.length > 0 && V !== a.m.GRADIENT ? Q[0] : $.defaultColors[0]), [en, er] = o.useState(Q.length > 0 && V === a.m.GRADIENT ? Q : J.defaultColors);
+  } = (0, x.mD)(Y, Z), q = true !== U ? U : F, [K, X] = l.useState(null != (n = null == q ? true : q.fontId) ? n : i.C.DEFAULT), [V, W] = l.useState(null != (I = null == q ? true : q.effectId) ? I : a.m.SOLID), $ = (0, E.R)(V), J = (0, E.R)(a.m.GRADIENT), Q = null != (w = null == q ? true : q.colors) ? w : [], [ee, et] = l.useState(Q.length > 0 && V !== a.m.GRADIENT ? Q[0] : $.defaultColors[0]), [en, eo] = l.useState(Q.length > 0 && V === a.m.GRADIENT ? Q : J.defaultColors);
   (0, f.Z)({
-    type: l.ImpressionTypes.POPOUT,
-    name: l.ImpressionNames.DISPLAY_NAME_STYLES_MODAL
+    type: r.ImpressionTypes.POPOUT,
+    name: r.ImpressionNames.DISPLAY_NAME_STYLES_MODAL
   }, {
     trackOnInitialLoad: true
   });
   let {
-    analyticsLocations: eo
-  } = (0, m.ZP)(M, p.Z.EDIT_DISPLAY_NAME_STYLES_MODAL), el = o.useMemo(() => V === a.m.GRADIENT ? en : [ee], [V, en, ee]), ea = o.useMemo(() => {
+    analyticsLocations: el
+  } = (0, m.ZP)(M, p.Z.EDIT_DISPLAY_NAME_STYLES_MODAL), er = l.useMemo(() => V === a.m.GRADIENT ? en : [ee], [V, en, ee]), ea = l.useMemo(() => {
     var e;
-    return K !== (null == q ? true : q.fontId) || V !== (null == q ? true : q.effectId) || !(0, c.E)(el, null != (e = null == q ? true : q.colors) ? e : [])
-  }, [q, K, V, el]), ei = o.useCallback(() => {
+    return K !== (null == q ? true : q.fontId) || V !== (null == q ? true : q.effectId) || !(0, c.E)(er, null != (e = null == q ? true : q.colors) ? e : [])
+  }, [q, K, V, er]), ei = l.useCallback(() => {
     if (ea) {
-      let e = el;
-      V === a.m.SOLID && el.length > 0 && el[0] === $.defaultColors[0] && (e = []);
+      let e = er;
+      V === a.m.SOLID && er.length > 0 && er[0] === $.defaultColors[0] && (e = []);
       let t = {
         fontId: K,
         effectId: V,
         colors: e
       };
-      null != Z ? (0, g.N_)(t) : (0, u.NI)(t), S.default.track(D.rMx.DISPLAY_NAME_STYLES_APPLIED, {
+      null != Z ? (0, g.N_)(t) : (0, u.NI)(t), j.default.track(D.rMx.DISPLAY_NAME_STYLES_APPLIED, {
         font_name: i.C[K],
         effect_name: a.m[V],
-        colors: el
+        colors: er
       }), G()
     }
-  }, [ea, K, V, el, $, G, Z]), es = o.useCallback(() => {
+  }, [ea, K, V, er, $, G, Z]), es = l.useCallback(() => {
     let {
       fontId: e,
       effectId: t,
       colors: n
-    } = (0, v.aY)();
-    X(e), W(t), t === a.m.GRADIENT ? er(n) : et(n[0]), S.default.track(D.rMx.DISPLAY_NAME_STYLES_SURPRISE_ME)
-  }, [er, et]), ec = o.useCallback(e => {
+    } = (0, P.aY)();
+    X(e), W(t), t === a.m.GRADIENT ? eo(n) : et(n[0]), j.default.track(D.rMx.DISPLAY_NAME_STYLES_SURPRISE_ME)
+  }, [eo, et]), ec = l.useCallback(e => {
     W(e)
-  }, [W]), ed = o.useCallback(e => {
-    V === a.m.GRADIENT ? er(e) : et(e[0])
-  }, [V, er, et]);
-  return null == Y ? null : (0, r.jsx)(m.Gt, {
-    value: eo,
-    children: (0, r.jsx)(O.k.Provider, {
+  }, [W]), ed = l.useCallback(e => {
+    V === a.m.GRADIENT ? eo(e) : et(e[0])
+  }, [V, eo, et]);
+  return null == Y ? null : (0, o.jsx)(m.Gt, {
+    value: el,
+    children: (0, o.jsx)(v.k.Provider, {
       value: {
         overrideSettings: true
       },
-      children: (0, r.jsxs)(d.Y0X, {
+      children: (0, o.jsxs)(d.Y0X, {
         "data-migration-pending": true,
         transitionState: B,
         size: d.CgR.LARGE,
         parentComponent: "DisplayNameStylesModal",
-        className: w.modalRoot,
-        children: [(0, r.jsxs)(d.hzk, {
+        className: A.modalRoot,
+        children: [(0, o.jsxs)(d.hzk, {
           "data-migration-pending": true,
-          className: w.modalContent,
+          className: A.modalContent,
           style: {
             overflow: "hidden auto"
           },
-          children: [(0, r.jsxs)("div", {
-            className: w.selectionSection,
-            children: [(0, r.jsx)(d.xBx, {
+          children: [(0, o.jsxs)("div", {
+            className: A.selectionSection,
+            children: [(0, o.jsx)(d.xBx, {
               "data-migration-pending": true,
               separator: false,
-              className: w.sectionHeader,
-              children: (0, r.jsx)(d.X6q, {
+              className: A.sectionHeader,
+              children: (0, o.jsx)(d.X6q, {
                 variant: "heading-lg/semibold",
                 children: L.intl.string(R.default.ZPMAlZ)
               })
-            }), (0, r.jsx)(k.Z, {
+            }), (0, o.jsx)(y.Z, {
               selectedFontId: K,
               setSelectedFontId: X,
               displayName: z,
-              className: w.selectionSubSection
-            }), (0, r.jsx)(P.Z, {
+              className: A.selectionSubSection
+            }), (0, o.jsx)(k.Z, {
               selectedEffectId: V,
               setSelectedEffectId: ec,
-              className: w.selectionSubSection
-            }), (0, r.jsx)(y.Z, {
-              selectedColors: el,
+              className: A.selectionSubSection
+            }), (0, o.jsx)(N.Z, {
+              selectedColors: er,
               setSelectedColors: ed,
               selectedEffectId: V,
-              className: w.selectionSubSection,
+              className: A.selectionSubSection,
               defaultColor: $.defaultColors[0]
             })]
-          }), (0, r.jsx)(E.Z, {
+          }), (0, o.jsx)(T.Z, {
             user: Y,
             displayName: z,
             selectedFontId: K,
             selectedEffectId: V,
-            selectedColors: V === a.m.SOLID && (0, c.E)(el, $.defaultColors) ? [] : el,
+            selectedColors: V === a.m.SOLID && (0, c.E)(er, $.defaultColors) ? [] : er,
             onClose: G
           })]
-        }), (0, r.jsx)(N.B, {
+        }), (0, o.jsx)(O.B, {
           onApply: ei,
           onSurpriseMe: es,
           onClose: G,
           canApply: ea,
-          analyticsLocations: eo
+          analyticsLocations: el
         })]
       })
     })

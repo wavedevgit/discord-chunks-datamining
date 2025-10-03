@@ -56,31 +56,31 @@ function E(e) {
   });
   let F = (0, h.Z)(t),
     L = (0, m.M)({
-      deviceType: _.h7.AUDIO_INPUT,
+      deviceType: P.h7.AUDIO_INPUT,
       analyticsLocations: V,
       asSubmenu: true
     }),
     U = (0, m.M)({
-      deviceType: _.h7.AUDIO_OUTPUT,
+      deviceType: P.h7.AUDIO_OUTPUT,
       analyticsLocations: V,
       asSubmenu: true
     }),
-    Y = (0, o.e7)([g.Z], () => g.Z.getActiveInputProfile()),
+    Y = (0, o.e7)([v.Z], () => v.Z.getActiveInputProfile()),
     H = (0, b.Z)(V),
     z = (0, f.Z)(V),
-    q = (0, y.Z)(V),
+    q = (0, g.Z)(V),
     B = l.Yn.DEFAULT,
-    W = g.Z.isSelfDeaf(B),
-    X = (0, o.e7)([g.Z], () => g.Z.getMode()),
+    W = v.Z.isSelfDeaf(B),
+    X = (0, o.e7)([v.Z], () => v.Z.getMode()),
     K = X === x.pM4.VOICE_ACTIVITY ? x.pM4.PUSH_TO_TALK : x.pM4.VOICE_ACTIVITY,
-    G = (0, o.e7)([g.Z, O.ZP], () => {
+    G = (0, o.e7)([v.Z, j.ZP], () => {
       var e;
-      let t = (null == (e = g.Z.getModeOptions().shortcut) ? true : e.length) > 0,
-        n = null != O.ZP.getKeybindForAction(x.kg4.PUSH_TO_TALK, false, true),
-        r = null != O.ZP.getKeybindForAction(x.kg4.PUSH_TO_TALK_PRIORITY, false, true);
+      let t = (null == (e = v.Z.getModeOptions().shortcut) ? true : e.length) > 0,
+        n = null != j.ZP.getKeybindForAction(x.kg4.PUSH_TO_TALK, false, true),
+        r = null != j.ZP.getKeybindForAction(x.kg4.PUSH_TO_TALK_PRIORITY, false, true);
       return t || n || r
     }),
-    Q = (0, o.e7)([v.Z], () => null != v.Z.getChannelId());
+    Q = (0, o.e7)([y.Z], () => null != y.Z.getChannelId());
   return (0, r.jsx)(u.Z, {
     object: x.qAy.CONTEXT_MENU,
     children: (0, r.jsxs)(a.v2r, {
@@ -107,14 +107,14 @@ function E(e) {
           })
         }), Z && q]
       }), (0, r.jsxs)(a.kSQ, {
-        children: [S && j.isPlatformEmbedded && G ? (0, r.jsx)(a.S89, {
+        children: [S && O.isPlatformEmbedded && G ? (0, r.jsx)(a.S89, {
           checked: X === x.pM4.PUSH_TO_TALK,
           id: "input-mode",
           label: w.intl.string(w.t.Q8gkVF),
           action: () => s.Z.setMode(K, true, true, {
             analyticsLocations: V
           }),
-          disabled: Y === P._.STUDIO
+          disabled: Y === _._.STUDIO
         }) : null, T && (0, r.jsx)(a.S89, {
           id: "deafen",
           label: w.intl.string(w.t.wjcRFR),

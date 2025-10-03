@@ -110,7 +110,7 @@ function x(e) {
   S.clearWithoutFlushing(t.id, true)
 }
 
-function j(e) {
+function M(e) {
   let {
     guildId: t,
     userIds: n
@@ -120,7 +120,7 @@ function j(e) {
   }), false
 }
 
-function M(e) {
+function j(e) {
   let {
     guildId: t,
     userIds: n
@@ -252,8 +252,8 @@ let q = new z(Chunk570140.Z, {
   CHANNEL_SELECT: F,
   GUILD_CREATE: L,
   GUILD_DELETE: x,
-  GUILD_SUBSCRIPTIONS_MEMBERS_ADD: j,
-  GUILD_SUBSCRIPTIONS_MEMBERS_REMOVE: M,
+  GUILD_SUBSCRIPTIONS_MEMBERS_ADD: M,
+  GUILD_SUBSCRIPTIONS_MEMBERS_REMOVE: j,
   GUILD_SUBSCRIPTIONS_ADD_MEMBER_UPDATES: k,
   GUILD_SUBSCRIPTIONS_REMOVE_MEMBER_UPDATES: U,
   GUILD_SUBSCRIPTIONS_CHANNEL: B,

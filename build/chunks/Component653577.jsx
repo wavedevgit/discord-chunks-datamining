@@ -25,20 +25,20 @@ function _(e) {
     connected: n,
     hovered: l,
     subtitle: _,
-    onClick: O,
-    enableHangStatus: y,
+    onClick: y,
+    enableHangStatus: O,
     allowChannelTopic: v
-  } = e, j = (0, a.e7)([u.Z], () => u.Z.getChannelStatus(t)), x = null != j && j.length > 0, C = (0, c.ZP)(t, true), E = (!y || !!v) && C, S = null != _ && _.length > 0;
+  } = e, j = (0, a.e7)([u.Z], () => u.Z.getChannelStatus(t)), x = null != j && j.length > 0, C = (0, c.ZP)(t, true), E = (!O || !!v) && C, S = null != _ && _.length > 0;
   if (i.useEffect(() => {
-      x && f.default.track(h.rMx.VOICE_CHANNEL_TOPIC_VIEWED, {
+      x && h.default.track(f.rMx.VOICE_CHANNEL_TOPIC_VIEWED, {
         channel_id: t.id,
         guild_id: t.guild_id
       })
     }, [x, t.id, t.guild_id]), null == t.guild_id) return null;
-  let P = o()(m.statusDiv, n && E ? m.hoverable : null);
+  let I = o()(m.statusDiv, n && E ? m.hoverable : null);
   return x ? (0, r.jsx)(s.P3F, {
-    className: P,
-    onClick: E ? O : true,
+    className: I,
+    onClick: E ? y : true,
     children: (0, r.jsx)(s.Text, {
       variant: "text-xs/medium",
       className: o()(m.statusText, b.markup),
@@ -49,8 +49,8 @@ function _(e) {
       })
     })
   }) : n && E && (!S || l) ? (0, r.jsxs)(s.P3F, {
-    className: P,
-    onClick: O,
+    className: I,
+    onClick: y,
     children: [(0, r.jsx)(s.Text, {
       variant: "text-xs/medium",
       className: m.statusText,

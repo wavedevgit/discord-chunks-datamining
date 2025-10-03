@@ -115,7 +115,7 @@ let G = (e, t, n) => (0, i.wj)(e) ? t : n,
       moreGuilds: {
         title: _.intl.string(_.t.Bv8Pfn),
         description: _.intl.string(_.t.JMfaTU),
-        imageSource: G(i, g, j),
+        imageSource: G(i, g, M),
         imageClassName: t.moreGuildsImage
       },
       moreGuildsAlt: {
@@ -140,19 +140,19 @@ let G = (e, t, n) => (0, i.wj)(e) ? t : n,
       stickers: {
         title: _.intl.string(_.t["1c+xwc"]),
         description: _.intl.string(_.t.hJG8ZG),
-        imageSource: G(i, S, M),
+        imageSource: G(i, S, j),
         imageClassName: t.stickersImage
       },
       stickersBurst: {
         title: _.intl.string(_.t.tzdIwM),
         description: _.intl.string(_.t.hJG8ZG),
-        imageSource: G(i, S, M),
+        imageSource: G(i, S, j),
         imageClassName: t.stickersImage
       },
       stickersPremiumPerk: {
         title: _.intl.string(_.t.tzdIwM),
         description: _.intl.string(_.t.FXlU29),
-        imageSource: G(i, S, M),
+        imageSource: G(i, S, j),
         imageClassName: t.stickersImage
       },
       streaming: {

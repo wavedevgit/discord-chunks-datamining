@@ -2,7 +2,7 @@
 /** chunk id: 373370, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  CR: () => j,
+  CR: () => M,
   DD: () => D
 }), require("./953529.js");
 var Chunk647438 = require("./647438.js"),
@@ -352,7 +352,7 @@ function x(e) {
   return r.useMemo(() => L(e), [e])
 }
 
-function j(e) {
+function M(e) {
   let {
     quest: t
   } = e;

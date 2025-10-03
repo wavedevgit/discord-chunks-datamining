@@ -136,7 +136,7 @@ let Q = (e, t, i) => {
       {
         visibilityPercentageRef: ee,
         visibilityPercentage: et
-      } = (0, M.E)(!$);
+      } = (0, j.E)(!$);
     return (0, r.jsx)("div", {
       className: a()(H.container, i),
       "data-testid": "subscriber-nitro-home-hero-header",
@@ -150,7 +150,7 @@ let Q = (e, t, i) => {
             containerVisibilityPercentage: et
           }), W && L && null != y.expires_at && (0, r.jsx)(D.Z, {
             expiresAt: y.expires_at
-          }), (0, r.jsx)(j.Z, {
+          }), (0, r.jsx)(M.Z, {
             children: W ? F.intl.format(F.t["3yZP0N"], {
               percent: y.discount.amount
             }) : m
@@ -202,7 +202,7 @@ let Q = (e, t, i) => {
       showCountdown: O
     } = v.b.useConfig({
       location: "Hero Heading"
-    }), S = (0, o.e7)([h.Z], () => h.Z.getPremiumTypeSubscription()), A = null != S && S.status === Z.O0b.CANCELED && null != p && y, C = (0, T.N)(), w = (0, I.Ng)(), L = (0, I.Wp)(w, B.Si.TIER_2) ? B.Si.TIER_2 : true, j = null != S && S.status !== Z.O0b.ACCOUNT_HOLD && S.hasAnyPremiumNitro, M = (0, _.Z)().isFractionalPremiumActive && !j && !A;
+    }), S = (0, o.e7)([h.Z], () => h.Z.getPremiumTypeSubscription()), A = null != S && S.status === Z.O0b.CANCELED && null != p && y, C = (0, T.N)(), w = (0, I.Ng)(), L = (0, I.Wp)(w, B.Si.TIER_2) ? B.Si.TIER_2 : true, M = null != S && S.status !== Z.O0b.ACCOUNT_HOLD && S.hasAnyPremiumNitro, j = (0, _.Z)().isFractionalPremiumActive && !M && !A;
     return (0, r.jsxs)("div", {
       className: a()(V.container, i),
       "data-testid": "subscriber-nitro-home-hero-header",
@@ -233,7 +233,7 @@ let Q = (e, t, i) => {
           })
         }), (0, r.jsxs)("div", {
           className: V.heroHeadingOriginalButtonContainer,
-          children: [M && (0, r.jsx)(R.Z, {
+          children: [j && (0, r.jsx)(R.Z, {
             color: s.Tt.BRAND,
             className: a()(V.button, V.subscribeButton),
             subscriptionTier: null != (n = null == C || null == (t = C.subscription_trial) ? true : t.sku_id) ? n : L

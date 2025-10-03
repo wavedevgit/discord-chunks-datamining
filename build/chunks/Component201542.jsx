@@ -92,10 +92,10 @@ let N = Chunk647438.memo(function(e) {
       playbackCacheKey: L
     } = e,
     x = i.useRef(null),
-    j = i.useMemo(() => null != L ? d.ZP.getPlaybackPosition(L) : 0, [L]),
-    M = (0, s.e7)([d.ZP], () => d.ZP.getPlaybackRate(d.Ir.VOICE_MESSAGE)),
-    [k, U] = i.useState(j > 0),
-    [G, B] = i.useState(j),
+    M = i.useMemo(() => null != L ? d.ZP.getPlaybackPosition(L) : 0, [L]),
+    j = (0, s.e7)([d.ZP], () => d.ZP.getPlaybackRate(d.Ir.VOICE_MESSAGE)),
+    [k, U] = i.useState(M > 0),
+    [G, B] = i.useState(M),
     [Z, F] = i.useState(y),
     [V, H] = i.useState(false),
     [Y, W] = i.useState(false),
@@ -166,8 +166,8 @@ let N = Chunk647438.memo(function(e) {
   i.useEffect(() => {
     eg.current = em
   }), i.useEffect(() => {
-    j > 0 && el(j)
-  }, [j, el]), i.useEffect(() => {
+    M > 0 && el(M)
+  }, [M, el]), i.useEffect(() => {
     let e;
     return Y && !K && (e = setInterval(() => {
       var e, t;
@@ -196,9 +196,9 @@ let N = Chunk647438.memo(function(e) {
   let eE = Y ? l.fpf : l.o1U,
     eb = Y ? O.intl.string(O.t.ZcgDJS) : O.intl.string(O.t.RscU7O),
     ey = O.intl.formatToPlainString(O.t.LgCPMj, {
-      playbackRate: M
+      playbackRate: j
     }),
-    eO = "".concat(M.toString().replace(/^0/, ""), "X");
+    eO = "".concat(j.toString().replace(/^0/, ""), "X");
   t = "Safari" === platform.name ? (0, r.jsx)(i.Suspense, {
     children: (0, r.jsx)(I, {
       ref: x,
@@ -211,7 +211,7 @@ let N = Chunk647438.memo(function(e) {
       onError: ec,
       muted: V,
       volume: $,
-      playbackRate: M
+      playbackRate: j
     })
   }) : (0, r.jsx)(f.Z, {
     ref: x,
@@ -223,7 +223,7 @@ let N = Chunk647438.memo(function(e) {
     onError: ec,
     muted: V,
     volume: $,
-    playbackRate: M,
+    playbackRate: j,
     playing: Y && !K,
     children: (0, r.jsx)("source", {
       src: n
@@ -267,7 +267,7 @@ let N = Chunk647438.memo(function(e) {
       duration: Z
     }), (0, r.jsx)(l.P3F, {
       className: v.playbackRateContainer,
-      onClick: () => T(M),
+      onClick: () => T(j),
       "aria-label": ey,
       children: (0, r.jsx)(l.Text, {
         variant: "text-xs/semibold",

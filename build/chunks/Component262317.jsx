@@ -1,7 +1,7 @@
-/** Chunk was on 9665 **/
+/** Chunk was on 50118 **/
 /** chunk id: 262317, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  XX: () => L,
+  XX: () => D,
   ZP: () => B,
   ul: () => U
 }), require("./388685.js");
@@ -42,28 +42,28 @@ var Chunk951288 = require("./951288.js"),
 function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      i = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
+    }))), i.forEach(function(t) {
+      var i;
+      i = n[t], t in e ? Object.defineProperty(e, t, {
+        value: i,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = r
+      }) : e[t] = i
     })
   }
   return e
 }
 
-function D(e, t) {
+function L(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
+      var i = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, i)
     }
     return n
   })(Object(t)).forEach(function(n) {
@@ -71,13 +71,13 @@ function D(e, t) {
   }), e
 }
 
-function L(e) {
+function D(e) {
   let {
     numUsers: t
   } = e;
-  return (0, r.jsx)("div", {
+  return (0, i.jsx)("div", {
     className: R.moreContainer,
-    children: (0, r.jsxs)(o.Text, {
+    children: (0, i.jsxs)(o.Text, {
       color: "text-muted",
       variant: "text-sm/medium",
       children: ["+", t]
@@ -89,24 +89,24 @@ function U(e) {
   let {
     numAudience: t,
     collapsed: n
-  } = e, i = n ? t : M.intl.formatToPlainString(M.t["+v2pNz"], {
+  } = e, r = n ? t : M.intl.formatToPlainString(M.t["+v2pNz"], {
     count: t
   });
-  return (0, r.jsxs)("div", {
+  return (0, i.jsxs)("div", {
     className: a()(R.audienceContainer, {
       [R.audienceContainerCollapsed]: n
     }),
-    children: [(0, r.jsx)("div", {
+    children: [(0, i.jsx)("div", {
       className: R.audienceIconContainer,
-      children: (0, r.jsx)(o.VWR, {
+      children: (0, i.jsx)(o.VWR, {
         size: "md",
         color: "currentColor",
         className: R.audienceIcon
       })
-    }), (0, r.jsx)(o.Text, {
+    }), (0, i.jsx)(o.Text, {
       color: "text-muted",
       variant: "text-sm/medium",
-      children: i
+      children: r
     })]
   })
 }
@@ -115,7 +115,7 @@ let B = (0, Chunk888651.$)(function(e) {
   let {
     collapsed: l,
     user: p,
-    channel: L,
+    channel: D,
     mute: U,
     localMute: B,
     localVideoDisabled: H,
@@ -125,8 +125,8 @@ let B = (0, Chunk888651.$)(function(e) {
     serverMute: z,
     serverDeaf: W,
     nick: q,
-    ringing: Y,
-    speaking: K,
+    ringing: K,
+    speaking: Y,
     disconnected: X,
     connectUserDragSource: J,
     canDrag: Q,
@@ -134,8 +134,8 @@ let B = (0, Chunk888651.$)(function(e) {
     isWatching: ee,
     isGuest: et,
     priority: en,
-    showPreview: er,
-    hidePreview: ei,
+    showPreview: ei,
+    hidePreview: er,
     shouldShowHoverPopout: el,
     previewIsOpen: ea,
     otherClientSessionType: eo,
@@ -148,79 +148,79 @@ let B = (0, Chunk888651.$)(function(e) {
     hangStatusActivity: ef,
     requestToStreamActivity: em,
     showHangStatus: eg
-  } = e, eb = i.useRef(null), [ey, eC] = i.useState(false), [e_, ev] = i.useState(false), [ex, eO] = i.useState(false), [ej, eE] = i.useState(false), eS = ex || ej, eP = e_ || eS, eI = (null == em ? true : em.session_id) != null, eZ = () => {
-    eC(!ey)
+  } = e, eb = r.useRef(null), [eC, ey] = r.useState(false), [e_, ev] = r.useState(false), [ex, eO] = r.useState(false), [ej, eE] = r.useState(false), eS = ex || ej, eP = e_ || eS, eI = (null == em ? true : em.session_id) != null, eZ = () => {
+    ey(!eC)
   }, eN = (e, t) => {
     let n = new Set(["system:click_outside", "user:escape", "user:explicit"]);
     ej && null != t && n.has(t) && eE(false), eT()
   }, eT = () => {
-    ($ || eg || eI) && (null == ei || ei(p.id))
+    ($ || eg || eI) && (null == er || er(p.id))
   }, eA = e => {
     e && ea && ev(true)
   }, ew = e => {
     e && ev(false)
   }, eM = () => {
-    if (!($ && (0, C.p9)(L, T.Z, I.Z, Z.Z, g.Z)[0])) return;
+    if (!($ && (0, y.p9)(D, T.Z, I.Z, Z.Z, g.Z)[0])) return;
     let e = {
       streamType: w.lo.GUILD,
       ownerId: p.id,
-      channelId: L.id,
-      guildId: L.guild_id
+      channelId: D.id,
+      guildId: D.guild_id
     };
-    P.default.getId() !== p.id && u.default.selectVoiceChannel(L.id), ee ? ((0, _.Z)(e), s.Z.selectParticipant(e.channelId, (0, y.V9)(e))) : (0, d.iV)(e), null == ei || ei(p.id)
+    P.default.getId() !== p.id && u.default.selectVoiceChannel(D.id), ee ? ((0, _.Z)(e), s.Z.selectParticipant(e.channelId, (0, C.V9)(e))) : (0, d.iV)(e), null == er || er(p.id)
   }, eR = e => {
     (0, c.jW)(e, async () => {
       let {
         default: e
       } = await Promise.all([n.e("79695"), n.e("98783"), n.e("8982"), n.e("7717"), n.e("96306")]).then(n.bind(n, 757387));
-      return t => (0, r.jsx)(e, D(k({}, t), {
+      return t => (0, i.jsx)(e, L(k({}, t), {
         user: p,
-        guildId: L.guild_id,
-        channel: L,
+        guildId: D.guild_id,
+        channel: D,
         showMediaItems: true,
-        showStageChannelItems: L.isGuildStageVoice(),
+        showStageChannelItems: D.isGuildStageVoice(),
         onInteraction: (0, m.u)("GuildChannelUserContextMenu", f.Z.VOICE_USER, {
           targetUserId: p.id
         })
       }))
     })
-  }, ek = e => ep ? (0, r.jsx)(x.$, D(k({}, e), {
-    channel: L,
+  }, ek = e => ep ? (0, i.jsx)(x.$, L(k({}, e), {
+    channel: D,
     setIsHangStatusInputFocused: eO
-  })) : null != ef ? (0, r.jsx)(O.I, D(k({}, e), {
+  })) : null != ef ? (0, i.jsx)(O.I, L(k({}, e), {
     hangStatusActivity: ef,
-    channel: L,
+    channel: D,
     userId: p.id
-  })) : null, eD = () => (0, r.jsx)(j.Z, {
+  })) : null, eL = () => (0, i.jsx)(j.Z, {
     userId: p.id,
-    channel: L
-  }), eL = () => (0, h.dl)() && (0, h.zd)(L.id) ? null : (0, r.jsx)(v.Z, {
+    channel: D
+  }), eD = () => (0, h.dl)() && (0, h.zd)(D.id) ? null : (0, i.jsx)(v.Z, {
     user: p,
-    channel: L,
+    channel: D,
     onWatch: eM,
     previewIsOpen: ea,
     location: ed
-  }), eU = (0, r.jsx)("div", {
+  }), eU = (0, i.jsx)("div", {
     className: R.draggable,
-    "data-dnd-name": L.name,
+    "data-dnd-name": D.name,
     onMouseEnter: ec ? true : () => {
-      ($ || eg || eI) && !ey && (null == er || er(p.id))
+      ($ || eg || eI) && !eC && (null == ei || ei(p.id))
     },
     onMouseLeave: ec ? true : eT,
-    children: (0, r.jsx)(E.Z, {
-      clickTrap: (null == p ? true : p.id) === (null == (t = N.default.getCurrentUser()) ? true : t.id) && ey,
+    children: (0, i.jsx)(E.Z, {
+      clickTrap: (null == p ? true : p.id) === (null == (t = N.default.getCurrentUser()) ? true : t.id) && eC,
       targetElementRef: eb,
       user: p,
-      guildId: L.guild_id,
-      channelId: L.id,
+      guildId: D.guild_id,
+      channelId: D.id,
       newAnalyticsLocations: [f.Z.VOICE_USER],
-      shouldShow: ey,
-      onRequestClose: () => eC(false),
+      shouldShow: eC,
+      onRequestClose: () => ey(false),
       children: e => (e => {
         let t = A.al.has(null != eo ? eo : ""),
           n = {
             user: p,
-            speaking: K,
+            speaking: Y,
             disconnected: X,
             mute: U,
             localMute: B,
@@ -229,7 +229,7 @@ let B = (0, Chunk888651.$)(function(e) {
             isGuest: et,
             video: F,
             priority: en,
-            ringing: Y,
+            ringing: K,
             deaf: V,
             nick: q,
             collapsed: l,
@@ -244,56 +244,56 @@ let B = (0, Chunk888651.$)(function(e) {
               [R.userAvatar]: true
             }),
             disabled: ec && !t,
-            selected: ey,
+            selected: eC,
             onClick: t ? true : eZ,
             onDoubleClick: eM,
             onContextMenu: eR,
-            guildId: L.guild_id,
+            guildId: D.guild_id,
             isSelf: ep,
             application: eh,
-            channelId: L.id,
+            channelId: D.id,
             hangStatusActivity: ef,
             showHangStatus: eg
           };
         if (ec) {
-          var i;
-          return (0, r.jsx)(o.ua7, {
-            text: null != (i = (0, b.Z)(eo)) ? i : M.intl.string(M.t.IyYqqa),
+          var r;
+          return (0, i.jsx)(o.ua7, {
+            text: null != (r = (0, b.Z)(eo)) ? r : M.intl.string(M.t.IyYqqa),
             children: e => {
               var {
                 onClick: t,
-                onContextMenu: i
+                onContextMenu: r
               } = e, l = function(e, t) {
                 if (null == e) return {};
-                var n, r, i = function(e, t) {
+                var n, i, r = function(e, t) {
                   if (null == e) return {};
-                  var n, r, i = {},
+                  var n, i, r = {},
                     l = Object.keys(e);
-                  for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-                  return i
+                  for (i = 0; i < l.length; i++) n = l[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
+                  return r
                 }(e, t);
                 if (Object.getOwnPropertySymbols) {
                   var l = Object.getOwnPropertySymbols(e);
-                  for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+                  for (i = 0; i < l.length; i++) n = l[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
                 }
-                return i
+                return r
               }(e, ["onClick", "onContextMenu"]);
-              return (0, r.jsx)(S.ZP, k({
+              return (0, i.jsx)(S.ZP, k({
                 ref: eb
               }, n, l))
             }
           })
         }
         let s = () => null;
-        return eg && eP ? s = ek : $ ? s = eL : eI && p.id !== P.default.getId() && (s = eD), (0, r.jsx)(o.yRy, {
+        return eg && eP ? s = ek : $ ? s = eD : eI && p.id !== P.default.getId() && (s = eL), (0, i.jsx)(o.yRy, {
           targetElementRef: eb,
           position: "right",
           renderPopout: s,
-          shouldShow: (el || eg && eS) && !ey,
+          shouldShow: (el || eg && eS) && !eC,
           onRequestClose: eN,
           align: eg && eP && !ep ? "center" : true,
           spacing: eg && eP ? 8 : 0,
-          children: () => (0, r.jsx)(S.ZP, D(k({}, n), {
+          children: () => (0, i.jsx)(S.ZP, L(k({}, n), {
             ref: eb,
             onMouseDown: e.onMouseDown,
             onKeyDown: e.onKeyDown,

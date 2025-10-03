@@ -60,17 +60,17 @@ function S(e) {
     }
   }, [w, C, S]);
   let x = null != a && null != n && null != P ? A.find(e => P.roles.includes(e.id)) : true,
-    j = i.useMemo(() => null != a && null != n ? A.filter(e => !(0, d.fI)(e)).filter(e => {
+    M = i.useMemo(() => null != a && null != n ? A.filter(e => !(0, d.fI)(e)).filter(e => {
       var t;
       return !R || (null == (t = e.tags) ? true : t.subscription_listing_id) != null
     }).filter(e => (null == x ? true : x.id) === e.id || m.r6(a, n.id, x, e)) : [], [a, n, R, x, A]);
   if (null == n || null == a || null == P) return null;
-  let M = {};
+  let j = {};
   return (P.roles.forEach(e => {
     let t = S[e];
-    null != t && (M[t.id] = t)
+    null != t && (j[t.id] = t)
   }), s.e$(m.I0({
-    forceRoles: M,
+    forceRoles: j,
     context: a
   }), s.$e(O.Plq.MANAGE_GUILD, O.Plq.MANAGE_ROLES)) || (0, u.eM)(a, n)) ? (0, r.jsx)("div", {
     className: I.container,
@@ -80,7 +80,7 @@ function S(e) {
       onChange: D,
       autoFocus: true,
       children: e => {
-        let t = j.reduce((t, n) => (o()(e.toLowerCase(), n.name.toLowerCase()) && t.push((0, r.jsxs)(c.lo1, {
+        let t = M.reduce((t, n) => (o()(e.toLowerCase(), n.name.toLowerCase()) && t.push((0, r.jsxs)(c.lo1, {
             value: n.id,
             children: [(0, r.jsx)(c.lo1.Label, {
               children: T(n)

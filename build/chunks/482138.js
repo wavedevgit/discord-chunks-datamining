@@ -33,8 +33,8 @@ var r, Chunk98405 = require("./98405.js"),
   D = Math.pow,
   L = Chunk46015("".charAt),
   x = Chunk46015(/./.exec),
-  j = Chunk46015([].join),
-  M = Chunk46015(1..toString),
+  M = Chunk46015([].join),
+  j = Chunk46015(1..toString),
   k = Chunk46015([].pop),
   U = Chunk46015([].push),
   G = Chunk46015("".replace),
@@ -137,10 +137,10 @@ var r, Chunk98405 = require("./98405.js"),
     var t, n, r, i;
     if ("number" == typeof e) {
       for (n = 0, t = []; n < 4; n++) H(t, e % 256), e = w(e / 256);
-      return j(t, ".")
+      return M(t, ".")
     }
     if ("object" == typeof e) {
-      for (n = 0, t = "", r = ec(e); n < 8; n++)(!i || 0 !== e[n]) && (i && (i = false), r === n ? (t += n ? ":" : "::", i = true) : (t += M(e[n], 16), n < 7 && (t += ":")));
+      for (n = 0, t = "", r = ec(e); n < 8; n++)(!i || 0 !== e[n]) && (i && (i = false), r === n ? (t += n ? ":" : "::", i = true) : (t += j(e[n], 16), n < 7 && (t += ":")));
       return "[" + t + "]"
     }
     return e
@@ -211,8 +211,8 @@ var r, Chunk98405 = require("./98405.js"),
   eD = {},
   eL = {},
   ex = {},
-  ej = {},
   eM = {},
+  ej = {},
   ek = {},
   eU = {},
   eG = {},
@@ -334,7 +334,7 @@ eF.prototype = {
         case ew:
         case eD:
           if (t && "file" === l.scheme) {
-            c = eM;
+            c = ej;
             continue
           }
           if (":" !== a || p)
@@ -366,7 +366,7 @@ eF.prototype = {
           }
           break;
         case ex:
-          if (l.scheme = "file", "/" === a || "\\" === a) c = ej;
+          if (l.scheme = "file", "/" === a || "\\" === a) c = eM;
           else if (n && "file" === n.scheme) switch (a) {
             case r:
               l.host = n.host, l.path = m(n.path), l.query = n.query;
@@ -378,21 +378,21 @@ eF.prototype = {
               l.host = n.host, l.path = m(n.path), l.query = n.query, l.fragment = "", c = eZ;
               break;
             default:
-              eE(j(m(i, u), "")) || (l.host = n.host, l.path = m(n.path), l.shortenPath()), c = eU;
+              eE(M(m(i, u), "")) || (l.host = n.host, l.path = m(n.path), l.shortenPath()), c = eU;
               continue
           } else {
             c = eU;
             continue
           }
           break;
-        case ej:
+        case eM:
           if ("/" === a || "\\" === a) {
-            c = eM;
+            c = ej;
             break
           }
-          n && "file" === n.scheme && !eE(j(m(i, u), "")) && (eg(n.path[0], true) ? U(l.path, n.path[0]) : l.host = n.host), c = eU;
+          n && "file" === n.scheme && !eE(M(m(i, u), "")) && (eg(n.path[0], true) ? U(l.path, n.path[0]) : l.host = n.host), c = eU;
           continue;
-        case eM:
+        case ej:
           if (a === r || "/" === a || "\\" === a || "?" === a || "#" === a) {
             if (!t && eg(d)) c = eU;
             else if ("" === d) {
@@ -474,7 +474,7 @@ eF.prototype = {
       s = module.query,
       l = module.fragment,
       c = exports + ":";
-    return null !== Chunk98405 ? (c += "//", module.includesCredentials() && (c += require + (r ? ":" + r : "") + "@"), c += eu(Chunk98405), null !== Chunk507604 && (c += ":" + Chunk507604)) : "file" === exports && (c += "//"), c += module.cannotBeABaseURL ? Chunk394227[0] : Chunk394227.length ? "/" + j(Chunk394227, "/") : "", null !== Chunk127849 && (c += "?" + Chunk127849), null !== Chunk48657 && (c += "#" + Chunk48657), Chunk46015
+    return null !== Chunk98405 ? (c += "//", module.includesCredentials() && (c += require + (r ? ":" + r : "") + "@"), c += eu(Chunk98405), null !== Chunk507604 && (c += ":" + Chunk507604)) : "file" === exports && (c += "//"), c += module.cannotBeABaseURL ? Chunk394227[0] : Chunk394227.length ? "/" + M(Chunk394227, "/") : "", null !== Chunk127849 && (c += "?" + Chunk127849), null !== Chunk48657 && (c += "#" + Chunk48657), Chunk46015
   },
   setHref: function(e) {
     var t = this.parse(e);
@@ -541,7 +541,7 @@ eF.prototype = {
   },
   getPathname: function() {
     var e = this.path;
-    return this.cannotBeABaseURL ? module[0] : module.length ? "/" + j(module, "/") : ""
+    return this.cannotBeABaseURL ? module[0] : module.length ? "/" + M(module, "/") : ""
   },
   setPathname: function(e) {
     this.cannotBeABaseURL || (this.path = [], this.parse(e, ek))

@@ -1,7 +1,7 @@
 /** Chunk was on 92592 **/
 /** chunk id: 673125, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => S
 }), require("./539854.js"), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -37,9 +37,9 @@ let m = {},
   _ = {},
   g = {},
   b = true,
-  v = null;
+  E = null;
 
-function E(e) {
+function v(e) {
   if (null == _[e]) {
     let t = o.default.getUser(e);
     if (null == t) return;
@@ -62,11 +62,11 @@ class h extends(r = Chunk442837.ZP.Store) {
     return g[e]
   }
   getDrawMode() {
-    return v
+    return E
   }
 }
 f(h, "displayName", "SharedCanvasStore");
-let y = new h(Chunk570140.Z, {
+let S = new h(Chunk570140.Z, {
   SHARED_CANVAS_UPDATE_LINE_POINTS: function(e) {
     let {
       lineId: t,
@@ -89,7 +89,7 @@ let y = new h(Chunk570140.Z, {
         points: n
       }) : (0, u.P7)(e) && e.points.push(...n)
     }
-    E(r)
+    v(r)
   },
   SHARED_CANVAS_UPDATE_EMOJI_HOSE: function(e) {
     var t, n, r, i, l;
@@ -123,7 +123,7 @@ let y = new h(Chunk570140.Z, {
         animated: false
       }, d.qh)
     }
-    E(f)
+    v(f)
   },
   SHARED_CANVAS_CLEAR_DRAWABLES: function(e) {
     let {
@@ -139,7 +139,7 @@ let y = new h(Chunk570140.Z, {
     let {
       drawMode: t
     } = e;
-    v = t
+    E = t
   },
   TOGGLE_OVERLAY_CANVAS: function(e) {
     let {} = e;

@@ -57,7 +57,7 @@ function x(e) {
   return e
 }
 
-function j(e, t) {
+function M(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -68,8 +68,8 @@ function j(e, t) {
   return n
 }
 
-function M(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
+function j(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -329,7 +329,7 @@ class U extends Chunk647438.PureComponent {
       let e = O.Z.getVerificationKey();
       await u.Z.confirmViewBackupCodes(e, true)
     }), L(this, "sendMFABackupCodesVerificationKeyEmail", () => {
-      (0, c.h7j)(e => (0, r.jsx)(p.Z, M(x({}, e), {
+      (0, c.h7j)(e => (0, r.jsx)(p.Z, j(x({}, e), {
         handleSubmit: e => u.Z.sendMFABackupCodesVerificationKeyEmail(e).then(() => {
           this.viewBackupCodes(e)
         }),
@@ -337,7 +337,7 @@ class U extends Chunk647438.PureComponent {
         actionText: P.intl.string(P.t.ajkYcH)
       })))
     }), L(this, "viewBackupCodes", e => {
-      (0, c.h7j)(t => (0, r.jsx)(_.Z, M(x({}, t), {
+      (0, c.h7j)(t => (0, r.jsx)(_.Z, j(x({}, t), {
         handleSubmit: e => u.Z.confirmViewBackupCodes(e, false).then(() => t.onClose()),
         maxLength: 8,
         title: P.intl.string(P.t.mGppp6),
@@ -371,7 +371,7 @@ class U extends Chunk647438.PureComponent {
         onAddedPhone: u.Z.enableSMS
       }) : u.Z.enableSMS()
     }), L(this, "handleDisableSMS", () => {
-      (0, c.h7j)(e => (0, r.jsx)(p.Z, M(x({}, e), {
+      (0, c.h7j)(e => (0, r.jsx)(p.Z, j(x({}, e), {
         handleSubmit: u.Z.disableSMS,
         title: P.intl.string(P.t.KLWnio),
         children: P.intl.string(P.t["W0/Dub"])

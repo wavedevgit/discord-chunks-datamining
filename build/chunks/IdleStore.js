@@ -79,7 +79,7 @@ function R() {
 function P(e) {
   d.Z.getConfig({
     location: "handlePowerEvent"
-  }).power_events ? j({}) : (e && (r = Date.now()), N())
+  }).power_events ? M({}) : (e && (r = Date.now()), N())
 }
 if (!__OVERLAY__) {
   Chunk358085.isPlatformEmbedded && (null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.remotePowerMonitor) != null ? (R(), Chunk579806.Z.remotePowerMonitor.on("resume", () => {
@@ -94,7 +94,7 @@ if (!__OVERLAY__) {
   let e = o()(() => {
     Chunk491966.Z.getConfig({
       location: "handleGenericInput"
-    }).generic_inputs && j({})
+    }).generic_inputs && M({})
   }, 500);
   window.addEventListener("mouseup", module), window.addEventListener("wheel", module), window.addEventListener("keypress", module)
 }
@@ -112,7 +112,7 @@ function L(e) {
     userId: t,
     speakingFlags: n
   } = e;
-  return n !== g.Dg.NONE && t === h.default.getId() && j({}), false
+  return n !== g.Dg.NONE && t === h.default.getId() && M({}), false
 }
 
 function x(e) {
@@ -122,7 +122,7 @@ function x(e) {
   return T = t === m.$7l.BACKGROUND, r = null, b = Date.now(), N(), false
 }
 
-function j(e) {
+function M(e) {
   let {
     timestamp: t,
     type: n
@@ -133,11 +133,11 @@ function j(e) {
   }) : N(), false)
 }
 
-function M() {
+function j() {
   if (!Chunk491966.Z.getConfig({
       location: "handleSettingsProtoUpdate"
     }).settings_updates) returnfalse;
-  j({})
+  M({})
 }
 class k extends(i = Chunk442837.ZP.Store) {
   isIdle() {
@@ -162,11 +162,11 @@ let U = new k(Chunk570140.Z, {
   AFK: D,
   SPEAKING: L,
   APP_STATE_UPDATE: x,
-  OVERLAY_SET_NOT_IDLE: j,
-  CHANNEL_SELECT: j,
-  VOICE_CHANNEL_SELECT: j,
-  WINDOW_FOCUS: j,
-  OVERLAY_INITIALIZE: j,
-  OVERLAY_SET_INPUT_LOCKED: j,
-  USER_SETTINGS_PROTO_UPDATE: M
+  OVERLAY_SET_NOT_IDLE: M,
+  CHANNEL_SELECT: M,
+  VOICE_CHANNEL_SELECT: M,
+  WINDOW_FOCUS: M,
+  OVERLAY_INITIALIZE: M,
+  OVERLAY_SET_INPUT_LOCKED: M,
+  USER_SETTINGS_PROTO_UPDATE: j
 })

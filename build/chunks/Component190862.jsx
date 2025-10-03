@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk272289 = require("./272289.jsx"),
   Chunk39642 = require("./39642.js");
 
-function m(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -42,13 +42,13 @@ function y(e, t) {
   var r, n, i = function(e, t) {
     if (null == e) return {};
     var r, n, i = {},
-      o = Object.keys(e);
-    for (n = 0; n < o.length; n++) r = o[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
+      a = Object.keys(e);
+    for (n = 0; n < a.length; n++) r = a[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
     return i
   }(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (n = 0; n < o.length; n++) r = o[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
+    var a = Object.getOwnPropertySymbols(e);
+    for (n = 0; n < a.length; n++) r = a[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
   }
   return i
 }
@@ -58,19 +58,19 @@ let j = e => {
     } = e, r = y(e, ["widget"]);
     switch (t.type) {
       case i.l.FAVORITE_GAMES:
-        return (0, n.jsx)(f.Z, m({
+        return (0, n.jsx)(f.Z, O({
           widget: t
         }, r));
       case i.l.CURRENT_GAMES:
-        return (0, n.jsx)(d.Z, m({
+        return (0, n.jsx)(d.Z, O({
           widget: t
         }, r));
       case i.l.WANT_TO_PLAY_GAMES:
-        return (0, n.jsx)(p.Z, m({
+        return (0, n.jsx)(p.Z, O({
           widget: t
         }, r));
       case i.l.PLAYED_GAMES:
-        return (0, n.jsx)(g.Z, m({
+        return (0, n.jsx)(g.Z, O({
           widget: t
         }, r));
       default:
@@ -88,29 +88,29 @@ let j = e => {
         shouldShowSuggestions: g,
         handleDismissSuggestions: p
       } = (0, s.h)(f),
-      v = (0, o.e7)([a.default], () => a.default.getId() === r.id),
-      h = v && !i && g,
-      x = (0, l.mR)(f),
+      v = (0, a.e7)([o.default], () => o.default.getId() === r.id),
+      x = v && !i && g,
+      h = (0, l.mR)(f),
       _ = (0, l.Hy)(f, {
         isCurrentUser: v
       }),
       w = (0, l.kQ)(f);
-    return (0, n.jsx)(j, m({
+    return (0, n.jsx)(j, O({
       widget: f,
       user: r,
       disableInteraction: i,
-      headerTitle: x,
+      headerTitle: h,
       headerSubtitle: _,
       headerActionButtons: v ? [(0, n.jsx)(u.Z, {
         disabled: w,
         widgetType: f.type,
         widget: f
       }, "".concat(f.type, "-browse-games-popout"))] : true,
-      trailingContent: h && (0, n.jsx)(b.Z, {
+      trailingContent: x && (0, n.jsx)(b.Z, {
         userId: r.id,
         widgetType: f.type,
         onDismiss: p,
-        className: O.suggestedGames
+        className: m.suggestedGames
       })
     }, d))
   }

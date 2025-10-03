@@ -45,16 +45,16 @@ function p(e) {
       } = e;
       return t
     }).filter(e => !(e.id in o.Tm) && h.has(e.id))
-  }, [null == (t = p.result) ? true : t.sections, h]), y = (0, u.h)(v);
+  }, [null == (t = p.result) ? true : t.sections, h]), x = (0, u.h)(v);
   return {
-    appsInThisServer: l.useMemo(() => r().compact(y.map(e => {
+    appsInThisServer: l.useMemo(() => r().compact(x.map(e => {
       let {
         application: t
       } = e;
       return t
     })).map(e => ({
       application: e
-    })), [y]),
+    })), [x]),
     isLoading: p.fetchState.fetching || f
   }
 }

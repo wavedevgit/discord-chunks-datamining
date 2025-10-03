@@ -122,15 +122,15 @@ async function* x(...e) {
   for (D.set(n, t), g.set(n, I(t)); t;) yield n, t = await (w.get(n) || t.continue()), w.delete(n)
 }
 
-function j(e, t) {
+function M(e, t) {
   return t === Symbol.asyncIterator && p(e, [IDBIndex, IDBObjectStore, IDBCursor]) || "iterate" === t && p(e, [IDBIndex, IDBObjectStore])
 }
 b(e => ({
   ...e,
-  get: (t, n, r) => j(t, n) ? x : e.get(t, n, r),
-  has: (t, n) => j(t, n) || e.has(t, n)
+  get: (t, n, r) => M(t, n) ? x : e.get(t, n, r),
+  has: (t, n) => M(t, n) || e.has(t, n)
 }));
-let M = "sprigReplayIframeLoaded",
+let j = "sprigReplayIframeLoaded",
   k = "sprigReplayIframeSettings",
   U = "sprigReplayIframeTakeFullSnapshot",
   G = "sprigReplayTeardown",
@@ -559,8 +559,8 @@ let ev = new class {
   eD = 0,
   eL = false,
   ex = false,
-  ej = [],
-  eM = false,
+  eM = [],
+  ej = false,
   ek = () => eL && !ew && Date.now() <= eA,
   eU = ({
     apiUrl: e,
@@ -568,7 +568,7 @@ let ev = new class {
     triggerSnapshot: n,
     forceInit: r = false
   }) => {
-    eL && !r || (l.a.isStorageAvailable ? (eP = [], ej.splice(0), eI.splice(0), eD = 0, eN = n, eS = e, eT = {
+    eL && !r || (l.a.isStorageAvailable ? (eP = [], eM.splice(0), eI.splice(0), eD = 0, eN = n, eS = e, eT = {
       responseGroupUuid: t.responseGroupUuid,
       surveyId: t.surveyId,
       userAgent: t.userAgent,
@@ -584,11 +584,11 @@ let ev = new class {
     let e = eI[0].timestamp;
     Date.now() - module > 35e3 && (null == eN || eN())
   }, eV = async () => {
-    if (eP.length || eM) return;
-    eM = true;
+    if (eP.length || ej) return;
+    ej = true;
     let e = await ez();
     if (!module) return void(ew = true);
-    ej.splice(0, module.length).forEach(t => t(e.shift())), module.forEach(e => eP.push(e)), eM = false
+    eM.splice(0, module.length).forEach(t => t(e.shift())), module.forEach(e => eP.push(e)), ej = false
   }, eH = () => {
     let e = Chunk555256.a.getItem("sprig.alwayson.info");
     if (module) {
@@ -649,7 +649,7 @@ let ev = new class {
   }, eq = async () => {
     if (eP.length) return eP.shift();
     let e = new Promise(e => {
-      ej.push(e)
+      eM.push(e)
     });
     return eV(), module
   }, eX = e => {
@@ -1122,7 +1122,7 @@ let eJ = async (e, t) => {
       }), el.isRecording = !!el.stopRecording, el.isRecording && (((e, t) => {
         window.addEventListener("message", n => {
           var r;
-          n.data.type === M && (B.push({
+          n.data.type === j && (B.push({
             source: n.source,
             origin: n.origin
           }), null == (r = n.source) || r.postMessage({

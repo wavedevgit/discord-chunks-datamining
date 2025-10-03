@@ -2,7 +2,7 @@
 /** chunk id: 877865, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  U: () => D
+  U: () => R
 }), require("./388685.js"), require("./781311.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -14,6 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk866442 = require("./866442.js"),
   Chunk19602 = require("./19602.jsx"),
   Chunk490236 = require("./490236.jsx"),
+  Chunk28664 = require("./28664.jsx"),
   Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk408886 = require("./408886.js"),
@@ -24,94 +25,55 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk531604 = require("./531604.js");
 
-function v(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function I(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      v(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function T(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function S(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-
-function A() {
+function I() {
   return (0, Chunk951288.jsx)("div", {
     className: Chunk531604.loader,
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {})
   })
 }
-let C = (0, Chunk608787.Un)({
+let T = (0, Chunk608787.Un)({
     createPromise: () => Promise.all([require.e("3115"), require.e("24530")]).then(require.bind(require, 932329)),
     webpackId: 932329,
     name: "CustomThemeColorPickerControl",
-    renderLoader: A
+    renderLoader: I
   }),
-  N = 5;
+  S = 5;
 
-function R(e, t) {
+function A(e, t) {
   return e.length < 1 ? 0 : t / (e.length - 1) * 80 + 10
 }
 
-function P(e) {
+function C(e) {
   let {
     colors: t,
     selectedIndex: n,
     onColorSelect: a
   } = e, [o, s] = i.useMemo(() => {
-    let e = t.map((e, n) => R(t, n)),
+    let e = t.map((e, n) => A(t, n)),
       n = t.map((t, n) => "".concat(t, " ").concat(e[n], "%")).join(", ");
     return [e, {
       background: "linear-gradient(to right, ".concat(n, ")")
     }]
   }, [t]);
   return (0, r.jsx)("div", {
-    className: O.gradientBar,
+    className: v.gradientBar,
     style: s,
     children: t.map((e, t) => {
       let s = o[t],
         l = t === n;
       return (0, r.jsxs)(i.Fragment, {
-        children: [(0, r.jsx)(p.P3F, {
-          className: O.colorCircle,
+        children: [(0, r.jsx)(h.P3F, {
+          className: v.colorCircle,
           style: {
             left: "".concat(s, "%"),
             backgroundColor: e
           },
           onClick: () => a(t),
           children: (0, r.jsx)("div", {
-            className: O.colorCircleInner
+            className: v.colorCircleInner
           })
         }), l && (0, r.jsx)("div", {
-          className: O.colorCircleSelectedTriangle,
+          className: v.colorCircleSelectedTriangle,
           style: {
             left: "".concat(s, "%")
           }
@@ -121,45 +83,45 @@ function P(e) {
   })
 }
 
-function w(e) {
+function N(e) {
   if (!(0, u.FX)(e)) return e;
   let t = o()(e);
   return t.set("hsl.h", (t.get("hsl.h") + 15) % 360).hex()
 }
 
-function D(e) {
+function R(e) {
   let {
     value: t,
     onChange: n,
     className: a,
     colors: o,
     setColors: s
-  } = e, c = (0, h.Z)(), [v, T] = i.useState(0), [A, R] = i.useState(t);
+  } = e, c = (0, m.Z)(), [I, A] = i.useState(0), [R, P] = i.useState(t);
   i.useEffect(() => {
-    if (o.length > 0 && v < o.length) {
-      let e = o[v];
-      (0, u.FX)(e) && (R(e), n(e))
+    if (o.length > 0 && I < o.length) {
+      let e = o[I];
+      (0, u.FX)(e) && (P(e), n(e))
     }
-    v >= o.length && T(0)
-  }, [v, o, n]);
-  let D = e => {
+    I >= o.length && A(0)
+  }, [I, o, n]);
+  let w = e => {
       let t = e.trim();
       return t.startsWith("#") ? t : t.length > 0 ? "#".concat(t) : t
     },
-    L = e => {
-      let t = D(e);
-      if (R(t), (0, u.FX)(t) && ((0, E.zW)(), n(t), o.length > 0)) {
+    D = e => {
+      let t = w(e);
+      if (P(t), (0, u.FX)(t) && ((0, b.zW)(), n(t), o.length > 0)) {
         let e = [...o];
-        e[v] = t, s(e)
+        e[I] = t, s(e)
       }
     },
-    x = i.useCallback(e => {
-      R(e.hex)
+    L = i.useCallback(e => {
+      P(e.hex)
     }, []),
-    j = e => {
-      if ((0, E.P0)(), n(e.hex), o.length > 0) {
+    x = e => {
+      if ((0, b.P0)(), n(e.hex), o.length > 0) {
         let t = [...o];
-        t[v] = e.hex, s(t)
+        t[I] = e.hex, s(t)
       }
     },
     M = async () => {
@@ -167,85 +129,84 @@ function D(e) {
         let {
           sRGBHex: e
         } = await c.open();
-        (0, E.J4)(), L(e)
+        (0, b.J4)(), D(e)
       } catch (e) {}
-    }, k = () => {
-      if (o.length === N) return;
-      0 === o.length && (0, g.ft)(), (0, E.gG)();
-      let e = o.length > 0 ? o[o.length - 1] : A,
-        t = o.length > 0 ? w(e) : e,
+    }, j = () => {
+      if (o.length === S) return;
+      0 === o.length && (0, E.ft)(), (0, b.gG)();
+      let e = o.length > 0 ? o[o.length - 1] : R,
+        t = o.length > 0 ? N(e) : e,
         n = [...o, t];
-      s(n), T(n.length - 1)
-    }, U = e => {
+      s(n), A(n.length - 1)
+    }, k = e => {
       if (o.length > 1) {
-        (0, E.JL)();
+        (0, b.JL)();
         let t = o.filter((t, n) => n !== e);
-        s(t), v >= t.length ? T(t.length - 1) : v > e && T(v - 1)
+        s(t), I >= t.length ? A(t.length - 1) : I > e && A(I - 1)
       }
-    }, G = e => {
-      T(e), (0, E.w8)()
-    }, B = o.length > 1;
+    }, U = e => {
+      A(e), (0, b.w8)()
+    }, G = o.length > 1;
   return (0, r.jsxs)("div", {
-    className: l()(O.container, a),
+    className: l()(v.container, a),
     children: [(0, r.jsxs)("div", {
-      className: O.headerContainer,
-      children: [(0, r.jsx)(p.Text, {
+      className: v.headerContainer,
+      children: [(0, r.jsx)(h.Text, {
         variant: "text-sm/medium",
-        children: y.intl.string(b.default["8ZcEfn"])
-      }), (0, r.jsx)(p.ua7, {
-        text: y.intl.string(b.default["61KGaW"]),
-        shouldShow: o.length === N,
-        children: e => (0, r.jsx)(p.P3F, S(I({}, e), {
-          onClick: o.length === N ? true : k,
-          className: l()(O.addColorButton, {
-            [O.disabled]: o.length === N
+        children: O.intl.string(y.default["8ZcEfn"])
+      }), (0, r.jsx)(_.u, {
+        asContainer: true,
+        text: O.intl.string(y.default["61KGaW"]),
+        shouldShow: o.length === S,
+        children: (0, r.jsx)(h.P3F, {
+          onClick: o.length === S ? true : j,
+          className: l()(v.addColorButton, {
+            [v.disabled]: o.length === S
           }),
-          children: (0, r.jsx)(p.Text, {
+          children: (0, r.jsx)(h.Text, {
             variant: "text-sm/medium",
-            className: O.addColorButtonText,
-            children: y.intl.string(b.default["+tTysr"])
+            className: v.addColorButtonText,
+            children: O.intl.string(y.default["+tTysr"])
           })
-        }))
+        })
       })]
-    }), B && (0, r.jsx)(P, {
+    }), G && (0, r.jsx)(C, {
       colors: o,
-      selectedIndex: v,
-      onColorSelect: G
-    }), (0, r.jsx)(C, {
-      onChange: x,
-      onChangeComplete: j,
-      color: A
+      selectedIndex: I,
+      onColorSelect: U
+    }), (0, r.jsx)(T, {
+      onChange: L,
+      onChangeComplete: x,
+      color: R
     }), (0, r.jsxs)("div", {
-      className: O.hexInputContainer,
+      className: v.hexInputContainer,
       children: [(0, r.jsx)("input", {
-        className: O.hexInput,
-        value: A.toUpperCase(),
-        onChange: e => L(e.target.value),
+        className: v.hexInput,
+        value: R.toUpperCase(),
+        onChange: e => D(e.target.value),
         maxLength: 7,
-        placeholder: m.Dp,
+        placeholder: g.Dp,
         type: "text"
       }), (0, r.jsxs)("div", {
-        className: O.trailingIcons,
-        children: [null != c && (0, r.jsx)(p.ua7, {
-          text: y.intl.string(b.default["8QXO8v"]),
-          tooltipClassName: O.eyeDropperTooltip,
-          children: e => (0, r.jsx)(_.hU, S(I({
-            variant: "icon-only",
-            size: "sm"
-          }, e), {
-            onClick: M,
-            icon: d.i,
-            "aria-label": y.intl.string(b.default["8QXO8v"])
-          }))
-        }), B && (0, r.jsx)(p.ua7, {
-          text: y.intl.string(b.default["rTik5+"]),
-          children: e => (0, r.jsx)(_.hU, S(I({}, e), {
+        className: v.trailingIcons,
+        children: [null != c && (0, r.jsx)(_.u, {
+          text: O.intl.string(y.default["8QXO8v"]),
+          children: (0, r.jsx)(p.hU, {
             variant: "icon-only",
             size: "sm",
-            onClick: () => U(v),
+            onClick: M,
+            icon: d.i,
+            "aria-label": O.intl.string(y.default["8QXO8v"])
+          })
+        }), G && (0, r.jsx)(_.u, {
+          text: O.intl.string(y.default["rTik5+"]),
+          children: (0, r.jsx)(p.hU, {
+            variant: "icon-only",
+            size: "sm",
+            onClick: () => k(I),
             icon: f.X,
-            "aria-label": y.intl.string(b.default["rTik5+"])
-          }))
+            "aria-label": O.intl.string(y.default["rTik5+"])
+          })
         })]
       })]
     })]

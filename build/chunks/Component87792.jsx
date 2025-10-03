@@ -46,7 +46,7 @@ function x(e, t, n) {
   }) : e[t] = n, e
 }
 
-function j(e) {
+function M(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -58,7 +58,7 @@ function j(e) {
   }
   return e
 }
-let M = 65;
+let j = 65;
 
 function k() {
   let e = Chunk647438.useCallback(() => {
@@ -66,7 +66,7 @@ function k() {
       let {
         default: e
       } = await require.e("66462").then(require.bind(require, 756226));
-      return t => (0, r.jsx)(e, j({}, t))
+      return t => (0, r.jsx)(e, M({}, t))
     })
   }, []);
   return (0, Chunk951288.jsx)(Chunk481060.P3F, {
@@ -135,7 +135,7 @@ function U(e) {
     children: [L(), (0, r.jsx)("div", {
       className: D.actions,
       style: {
-        maxHeight: x.length * M
+        maxHeight: x.length * j
       },
       children: x.map((e, t) => R({
         row: t

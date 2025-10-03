@@ -100,15 +100,15 @@ let v = Chunk647438.memo(function(e) {
     L = (0, u.y)(D, _.aO),
     x = {};
   if (N && null != P) {
-    var j;
+    var M;
     let {
       accentColor: e,
       backgroundColor: r,
       opacity: i
-    } = P, a = null != (j = (0, s.wK)(null != r ? r : "", i)) ? j : "";
+    } = P, a = null != (M = (0, s.wK)(null != r ? r : "", i)) ? M : "";
     R && (x.borderColor = r), x.background = a, t = e, n = e
   }
-  let M = {
+  let j = {
     minWidth: L,
     color: t,
     borderColor: n
@@ -129,7 +129,7 @@ let v = Chunk647438.memo(function(e) {
       animated: N && c.animated
     }), (0, r.jsx)("div", {
       className: w.reactionCount,
-      style: M,
+      style: j,
       children: D
     })]
   })

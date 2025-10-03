@@ -157,9 +157,9 @@ function R(e, t) {
     case p.l.Embed:
       return x(e.media, n);
     case p.l.Attachment:
-      return j(e.media, n);
-    case p.l.GenericMedia:
       return M(e.media, n);
+    case p.l.GenericMedia:
+      return j(e.media, n);
     default:
       returnfalse
   }
@@ -217,7 +217,7 @@ function x(e, t) {
   })).length || "video" in e && null != e.video && (null == (n = e.video) ? true : n.width) === 0 && (null == (r = e.video) ? true : r.height) === 0 || "thumbnail" in e && null != e.thumbnail && (null == (i = e.thumbnail) ? true : i.width) === 0 && (null == (a = e.thumbnail) ? true : a.height) === 0 || "image" in e && null != e.image && (null == (o = e.image) ? true : o.width) === 0 && (null == (s = e.image) ? true : s.height) === 0 || "images" in e && (null == (l = e.images) ? true : l.some(e => null != e && 0 === e.width && 0 === e.height))) && k(B(e), t)
 }
 
-function j(e, t) {
+function M(e, t) {
   var n;
   return 0 !== t.length && 0 !== t.filter(t => !P(t, {
     type: p.l.Attachment,
@@ -225,7 +225,7 @@ function j(e, t) {
   })).length && k(null != (n = e.content_scan_version) ? n : e.contentScanVersion, t)
 }
 
-function M(e, t) {
+function j(e, t) {
   var n;
   return 0 !== t.length && 0 !== t.filter(t => !P(t, {
     type: p.l.GenericMedia,

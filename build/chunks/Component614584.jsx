@@ -1,4 +1,4 @@
-/** Chunk was on 9665 **/
+/** Chunk was on 50118 **/
 /** chunk id: 614584, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => P
@@ -28,17 +28,17 @@ var Chunk951288 = require("./951288.js"),
 function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      i = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
+    }))), i.forEach(function(t) {
+      var i;
+      i = n[t], t in e ? Object.defineProperty(e, t, {
+        value: i,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = r
+      }) : e[t] = i
     })
   }
   return e
@@ -48,8 +48,8 @@ function E(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
+      var i = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, i)
     }
     return n
   })(Object(t)).forEach(function(n) {
@@ -68,9 +68,9 @@ let S = Chunk647438.memo(function(e) {
     setPopout: T,
     isReplySpineClickable: A,
     showReplySpine: w
-  } = e, M = S.state === f.Y.LOADED ? S.message : true, R = (0, y.Uj)(M), k = (0, u.p)(), D = s.d.useExperiment({
+  } = e, M = S.state === f.Y.LOADED ? S.message : true, R = (0, C.Uj)(M), k = (0, u.p)(), L = s.d.useExperiment({
     location: "repliedMessage"
-  }).enabled, L = (0, d.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), U = i.useMemo(() => {
+  }).enabled, D = (0, d.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), U = r.useMemo(() => {
     if (null == M) return null;
     let e = (0, o.Z)(M);
     if (e.type === x.uaV.USER_JOIN) return (0, a.Rp)(O.intl.formatToParts(g.Z.getSystemMessageUserJoin(e.id), {
@@ -105,29 +105,29 @@ let S = Chunk647438.memo(function(e) {
           noStyleAndInteraction: true,
           allowHeading: true,
           allowList: true,
-          allowGameMentions: D
+          allowGameMentions: L
         }) : E(j({}, t), {
           formatInline: true,
-          allowHeading: L,
-          allowList: L,
-          allowGameMentions: D
+          allowHeading: D,
+          allowList: D,
+          allowGameMentions: L
         });
       return (0, b.ZP)(e, n).content
     }
     return null
-  }, [M, R, P, L, k, D]), {
+  }, [M, R, P, D, k, L]), {
     isReplyAuthorBlocked: B,
     isReplyAuthorIgnored: H
   } = (0, l.cj)([m.Z], () => ({
     isReplyAuthorBlocked: null != M && m.Z.isBlockedForMessage(M),
     isReplyAuthorIgnored: null != M && m.Z.isIgnoredForMessage(M)
-  }), [M]), V = (0, v.wq)(null == M ? true : M.author.id, P.id), F = (0, v.$3)(n, M), G = (0, v.Wl)(M, P, Z, T), z = (0, v.rY)(N, T), W = i.useCallback(() => {
+  }), [M]), V = (0, v.wq)(null == M ? true : M.author.id, P.id), F = (0, v.$3)(n, M), G = (0, v.Wl)(M, P, Z, T), z = (0, v.rY)(N, T), W = r.useCallback(() => {
     T({
       referencedUsernameProfile: false,
       referencedAvatarProfile: false
     })
-  }, [T]), q = (0, y.Uj)(n);
-  return (0, r.jsx)(C.Z, {
+  }, [T]), q = (0, C.Uj)(n);
+  return (0, i.jsx)(y.Z, {
     repliedAuthor: R,
     baseMessage: n,
     channel: P,
@@ -154,7 +154,7 @@ function P(e) {
   let {
     message: t,
     channel: n,
-    compact: i,
+    compact: r,
     setPopout: l,
     referencedUsernameProfile: a,
     referencedAvatarProfile: o,
@@ -163,12 +163,12 @@ function P(e) {
     isReplySpineClickable: u,
     showReplySpine: d = true
   } = e;
-  return null != s && (0, r.jsx)(S, {
+  return null != s && (0, i.jsx)(S, {
     baseMessage: t,
     replyReference: s,
     referencedMessage: c,
     channel: n,
-    compact: i,
+    compact: r,
     setPopout: l,
     referencedUsernameProfile: a,
     referencedAvatarProfile: o,

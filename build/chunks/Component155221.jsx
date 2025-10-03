@@ -73,12 +73,12 @@ function x(e, t) {
   }), e
 }
 require("./928518.js"), require("./972830.js"), require("./704806.js");
-let j = (0, Chunk663993.Un)({
+let M = (0, Chunk663993.Un)({
     createPromise: () => require.e("47620").then(require.bind(require, 576184)),
     webpackId: 576184,
     name: "UnsupportedBrowser"
   }),
-  M = (0, Chunk663993.Un)({
+  j = (0, Chunk663993.Un)({
     createPromise: () => Promise.all([require.e("32996"), require.e("74023")]).then(require.bind(require, 431583)),
     webpackId: 431583,
     name: "DownloadApps"
@@ -119,7 +119,7 @@ let j = (0, Chunk663993.Un)({
     name: "ActivateDevice"
   }),
   H = (0, Chunk663993.Un)({
-    createPromise: () => Promise.all([require.e("57804"), require.e("13599"), require.e("50448"), require.e("80451"), require.e("75387"), require.e("35535"), require.e("54628"), require.e("258"), require.e("33034"), require.e("90508"), require.e("49049"), require.e("63575"), require.e("33285"), require.e("46154"), require.e("62856"), require.e("64838"), require.e("38697"), require.e("17938"), require.e("66201"), require.e("43342"), require.e("93375"), require.e("91315"), require.e("30474"), require.e("24358"), require.e("36084"), require.e("38342"), require.e("52407"), require.e("91689"), require.e("39206"), require.e("91053"), require.e("17013"), require.e("35755"), require.e("22516"), require.e("92592"), require.e("37220"), require.e("70820"), require.e("89442"), require.e("22173"), require.e("30634"), require.e("95546"), require.e("9665"), require.e("3688"), require.e("60831"), require.e("75962"), require.e("9452"), require.e("204"), require.e("24920"), require.e("51333"), require.e("83243"), require.e("93964"), require.e("77803"), require.e("69432"), require.e("51727"), require.e("5588"), require.e("73323"), require.e("31553"), require.e("95468"), require.e("29709"), require.e("32996"), require.e("1272")]).then(require.bind(require, 457094)),
+    createPromise: () => Promise.all([require.e("57804"), require.e("13599"), require.e("50448"), require.e("80451"), require.e("75387"), require.e("35535"), require.e("54628"), require.e("258"), require.e("33034"), require.e("90508"), require.e("49049"), require.e("63575"), require.e("33285"), require.e("46154"), require.e("62856"), require.e("64838"), require.e("38697"), require.e("17938"), require.e("66201"), require.e("43342"), require.e("93375"), require.e("91315"), require.e("30474"), require.e("24358"), require.e("36084"), require.e("38342"), require.e("52407"), require.e("91689"), require.e("39206"), require.e("91053"), require.e("17013"), require.e("35755"), require.e("22516"), require.e("92592"), require.e("37220"), require.e("70820"), require.e("89442"), require.e("22173"), require.e("30634"), require.e("95546"), require.e("50118"), require.e("3688"), require.e("60831"), require.e("75962"), require.e("9452"), require.e("204"), require.e("24920"), require.e("51333"), require.e("83243"), require.e("93964"), require.e("77803"), require.e("69432"), require.e("51727"), require.e("5588"), require.e("73323"), require.e("31553"), require.e("95468"), require.e("29709"), require.e("32996"), require.e("1272")]).then(require.bind(require, 457094)),
     webpackId: 457094,
     name: "ViewsWithMainInterface",
     memo: true,
@@ -146,7 +146,7 @@ let j = (0, Chunk663993.Un)({
     name: "MobileWebHandoffFallback"
   }),
   q = (0, Chunk663993.Un)({
-    createPromise: () => Promise.all([require.e("57804"), require.e("13599"), require.e("75387"), require.e("35535"), require.e("258"), require.e("90508"), require.e("49049"), require.e("63575"), require.e("33285"), require.e("46154"), require.e("62856"), require.e("64838"), require.e("38697"), require.e("66201"), require.e("43342"), require.e("93375"), require.e("91315"), require.e("30474"), require.e("24358"), require.e("36084"), require.e("38342"), require.e("39206"), require.e("91053"), require.e("35755"), require.e("92592"), require.e("37220"), require.e("89442"), require.e("22173"), require.e("95546"), require.e("9665"), require.e("60831"), require.e("24920"), require.e("51333"), require.e("51727"), require.e("63141")]).then(require.bind(require, 290161)),
+    createPromise: () => Promise.all([require.e("57804"), require.e("13599"), require.e("75387"), require.e("35535"), require.e("258"), require.e("90508"), require.e("49049"), require.e("63575"), require.e("33285"), require.e("46154"), require.e("62856"), require.e("64838"), require.e("38697"), require.e("66201"), require.e("43342"), require.e("93375"), require.e("91315"), require.e("30474"), require.e("24358"), require.e("36084"), require.e("38342"), require.e("39206"), require.e("91053"), require.e("35755"), require.e("92592"), require.e("37220"), require.e("89442"), require.e("22173"), require.e("95546"), require.e("50118"), require.e("60831"), require.e("24920"), require.e("51333"), require.e("51727"), require.e("63141")]).then(require.bind(require, 290161)),
     webpackId: 290161,
     name: "Overlay"
   }),
@@ -202,7 +202,7 @@ class ea extends Chunk647438.Component {
     } = this.props;
     return e = require === Chunk554608.P.IN_PROGRESS ? null : !Chunk436620.KO || Chunk442837 ? (0, Chunk951288.jsx)(Chunk843611.rs, {
       children: (0, Chunk951288.jsx)(Chunk765717.Z, {
-        component: j
+        component: M
       })
     }) : Chunk358085.isPlatformEmbedded ? (0, Chunk951288.jsxs)(Chunk843611.rs, {
       children: [exports ? null : (0, Chunk951288.jsx)(Chunk843611.AW, {
@@ -215,7 +215,7 @@ class ea extends Chunk647438.Component {
       }), (0, Chunk951288.jsx)(Chunk765717.Z, {
         exact: true,
         path: Chunk981631.Z5c.APPS,
-        component: M
+        component: j
       }), (0, Chunk951288.jsx)(Chunk843611.AW, {
         path: ei([Chunk981631.Z5c.LOGIN, Chunk981631.Z5c.REGISTER, Chunk981631.Z5c.INVITE(":inviteCode"), Chunk981631.Z5c.INVITE_LOGIN(":inviteCode"), Chunk981631.Z5c.GIFT_CODE(":giftCode"), Chunk981631.Z5c.GIFT_CODE_LOGIN(":giftCode"), Chunk981631.Z5c.RESET], Chunk188785.a),
         component: Y

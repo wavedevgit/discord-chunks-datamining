@@ -173,11 +173,11 @@ let D = e => {
     scale: 1,
     opacity: 0
   },
-  j = {
+  M = {
     scale: 1,
     opacity: 1
   },
-  M = e => {
+  j = e => {
     var {
       isVisible: t,
       onAnimationRest: n,
@@ -190,7 +190,7 @@ let D = e => {
       keys: e => e ? "tooltip" : "empty",
       config: p.F,
       from: s.enabled ? x : L,
-      enter: j,
+      enter: M,
       leave: s.enabled ? x : L,
       onRest: n
     }, "animate-always")((e, t) => t ? (0, i.jsx)(D, y({
@@ -272,7 +272,7 @@ class k extends(r = Chunk647438.Component) {
       hideOnClick: p,
       tooltipPointerClassName: h
     } = this.props, m = (Chunk873546.tq || Chunk873546.Em) && true === Chunk846519 && Chunk377527, g = false !== Chunk137317 && !Chunk607070 || true === Chunk137317, E = this.shouldShowTooltip(this.props, this.state) && this.hasDomElement, b = null;
-    return b = module instanceof Function ? Chunk503011 ? module() : null : module, (0, Chunk951288.jsx)(M, {
+    return b = module instanceof Function ? Chunk503011 ? module() : null : module, (0, Chunk951288.jsx)(j, {
       disableTooltipPointerEvents: Chunk314910,
       targetElementRef: this.domElementRef,
       tooltipStyle: s,

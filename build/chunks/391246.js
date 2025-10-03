@@ -33,9 +33,9 @@ var Chunk127849 = require("./127849.js"),
   D = "Wrong index",
   L = Chunk199838.getterFor(N),
   x = Chunk199838.getterFor(R),
-  j = Chunk199838.set,
-  M = Chunk127849[N],
-  k = M,
+  M = Chunk199838.set,
+  j = Chunk127849[N],
+  k = j,
   U = k && k[P],
   G = Chunk127849[R],
   B = G && G[P],
@@ -91,16 +91,16 @@ var Chunk127849 = require("./127849.js"),
     for (var u = o.bytes, d = s + o.byteOffset, f = 0; f < t; f++) u[d + f] = l[c ? f : t - f - 1]
   };
 if (Chunk848120) {
-  var er = A && M.name !== N;
+  var er = A && j.name !== N;
   !Chunk621523(function() {
-    M(1)
+    j(1)
   }) || !Chunk621523(function() {
-    new M(false)
+    new j(false)
   }) || Chunk621523(function() {
-    return new M, new M(1.5), new M(NaN), 1 !== M.length || er && !C
+    return new j, new j(1.5), new j(NaN), 1 !== j.length || er && !C
   }) ? ((k = function(e) {
-    return f(this, U), v(new M(h(e)), this, k)
-  })[P] = U, U.constructor = k, Chunk190289(k, M)) : er && C && Chunk436207(M, "name", N), Chunk769827 && Chunk961050(B) !== Z && Chunk769827(B, Z);
+    return f(this, U), v(new j(h(e)), this, k)
+  })[P] = U, U.constructor = k, Chunk190289(k, j)) : er && C && Chunk436207(j, "name", N), Chunk769827 && Chunk961050(B) !== Z && Chunk769827(B, Z);
   var ei = new G(new k(2)),
     ea = Chunk46015(B.setInt8);
   ei.setInt8(0, 0x80000000), ei.setInt8(1, 0x80000001), (ei.getInt8(0) || !ei.getInt8(1)) && Chunk477732(B, {
@@ -116,7 +116,7 @@ if (Chunk848120) {
 } else U = (k = function(e) {
   f(this, U);
   var t = h(e);
-  j(this, {
+  M(this, {
     type: N,
     bytes: H(F(t), 0),
     byteLength: t
@@ -128,7 +128,7 @@ if (Chunk848120) {
     o = _(t);
   if (o < 0 || o > i) throw new V("Wrong offset");
   if (n = true === n ? i - o : p(n), o + n > i) throw new V(w);
-  j(this, {
+  M(this, {
     type: R,
     buffer: e,
     byteLength: n,

@@ -123,7 +123,7 @@ function Z(e) {
   })
 }
 
-function M(e) {
+function O(e) {
   let {
     user: t,
     guildId: n,
@@ -155,7 +155,7 @@ function M(e) {
   })
 }
 
-function O(e) {
+function w(e) {
   var t;
   let {
     joinRequest: n
@@ -201,7 +201,7 @@ function O(e) {
   })
 }
 
-function w(e) {
+function M(e) {
   var t;
   let {
     joinRequest: n
@@ -305,13 +305,13 @@ function A(e) {
             user: o,
             guildId: t,
             joinRequest: n
-          }), n.applicationStatus === j.wB.SUBMITTED && (0, l.jsx)(M, {
+          }), n.applicationStatus === j.wB.SUBMITTED && (0, l.jsx)(O, {
             user: o,
             guildId: t,
             joinRequest: n
-          }), n.applicationStatus === j.wB.REJECTED && (0, l.jsx)(O, {
+          }), n.applicationStatus === j.wB.REJECTED && (0, l.jsx)(w, {
             joinRequest: n
-          }), n.applicationStatus === j.wB.APPROVED && (0, l.jsx)(w, {
+          }), n.applicationStatus === j.wB.APPROVED && (0, l.jsx)(M, {
             joinRequest: n
           })]
         }), (0, l.jsxs)("div", {

@@ -494,7 +494,7 @@ class el extends ei {
         return 4 === n || t > 0 && Date.now() - t < el.MAX_TIMESTAMP_DELTA
       }).sortBy(e => {
         let [, t, n] = e;
-        return -(t - (4 === n ? 0 : j.DISCORD_EPOCH))
+        return -(t - (4 === n ? 0 : M.DISCORD_EPOCH))
       }).take(el.MAX_RECENT_CHANNELS).sortBy(e => {
         let [, t] = e;
         return -t
@@ -524,7 +524,7 @@ V(el, "MIN_READABLE_CHANNELS", 7), V(el, "MAX_RECENT_CHANNELS", 10), V(el, "MAX_
 class ec extends ei {
   updateAllChannels(e) {
     let t = false;
-    return j.default.keys(this.channels).forEach(n => {
+    return M.default.keys(this.channels).forEach(n => {
       this.updateChannel(this.channels[n].record, e) && (t = true)
     }), t
   }
@@ -805,7 +805,7 @@ function ey(e, t, n) {
         name: r.name
       };
       let i = L.ZP.getVoiceStatesForChannel(e);
-      if (n && t && (0, M.a)(i)) return {
+      if (n && t && (0, j.a)(i)) return {
         type: "go-live"
       };
       let a = c.Z.getChannelStatus(e);
@@ -887,7 +887,7 @@ function eS(e, t, n) {
     if (R.ZP.getMentionCount(e) > 0 || R.ZP.hasUnread(e) || R.ZP.hasRecentlyVisitedAndRead(e)) returntrue;
   if (e.mutedChannelIds.has(t.id) || null != t.parent_id && e.mutedChannelIds.has(t.parent_id)) returnfalse;
   let a = E.Z.getNewChannelIds(e.id),
-    s = Array.from(a).sort((e, t) => j.default.compare(t, e));
+    s = Array.from(a).sort((e, t) => M.default.compare(t, e));
   return !!(a.has(t.id) && s.indexOf(t.id) < z || R.ZP.hasRecentlyVisitedAndRead(t.id))
 }
 let eA = new Set(Object.values(Chunk443063.z));

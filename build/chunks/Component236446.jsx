@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  o = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk388905 = require("./388905.jsx"),
   Chunk362762 = require("./362762.js"),
@@ -94,7 +94,7 @@ class w extends Chunk647438.PureComponent {
     let {
       guildTemplate: e
     } = this.props;
-    return (a()(null != module, "guild template must not be null"), module.state === Chunk260539.Rj.RESOLVING) ? (0, Chunk951288.jsx)(Chunk388905.ZP, {
+    return (o()(null != module, "guild template must not be null"), module.state === Chunk260539.Rj.RESOLVING) ? (0, Chunk951288.jsx)(Chunk388905.ZP, {
       className: Chunk160033.authBox,
       children: (0, Chunk951288.jsx)(Chunk306453.Z, {
         guildTemplate: module

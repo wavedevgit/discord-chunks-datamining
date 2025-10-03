@@ -110,7 +110,7 @@ function I(e) {
     x = i.useCallback(() => {
       null !== P.current && P.current.pause(), null == C || C()
     }, [C]),
-    j = i.useCallback(() => {
+    M = i.useCallback(() => {
       null !== P.current && P.current.pause();
       let e = D();
       (0, l.K)({
@@ -120,7 +120,7 @@ function I(e) {
         shouldHideMediaOptions: true
       }), null == C || C(), null == A || A()
     }, [D, A, C]),
-    M = w ? (0, r.jsx)(a.zsu, {
+    j = w ? (0, r.jsx)(a.zsu, {
       type: "image",
       src: b
     }) : (0, r.jsxs)(r.Fragment, {
@@ -141,7 +141,7 @@ function I(e) {
           playing: false,
           size: "sm",
           "aria-label": h.intl.string(p.default.YpT3kp),
-          onClick: j
+          onClick: M
         })
       })]
     });
@@ -156,7 +156,7 @@ function I(e) {
         caretConfig: I
       }), (0, r.jsx)("div", {
         className: m.assetContainer,
-        children: M
+        children: j
       }), (0, r.jsx)(f.Y, {
         title: t,
         body: n,

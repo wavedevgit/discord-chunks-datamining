@@ -100,8 +100,8 @@ let O = function(e) {
     hasReply: D,
     author: L,
     onMouseEnter: x,
-    onMouseLeave: j
-  } = e, M = b(e, ["className", "compact", "contentOnly", "zalgo", "preview", "disableInteraction", "childrenRepliedMessage", "childrenExecutedCommand", "childrenHeader", "childrenSystemMessage", "childrenButtons", "childrenMessageContent", "childrenAccessories", "messageRef", "focusProps", "hasThread", "isSystemMessage", "hasReply", "author", "onMouseEnter", "onMouseLeave"]);
+    onMouseLeave: M
+  } = e, j = b(e, ["className", "compact", "contentOnly", "zalgo", "preview", "disableInteraction", "childrenRepliedMessage", "childrenExecutedCommand", "childrenHeader", "childrenSystemMessage", "childrenButtons", "childrenMessageContent", "childrenAccessories", "messageRef", "focusProps", "hasThread", "isSystemMessage", "hasReply", "author", "onMouseEnter", "onMouseLeave"]);
   let k = (0, s.e7)([_.Z], () => (null == L ? true : L.guildId) == null || (null == L ? true : L.colorRoleId) == null ? null : _.Z.getRole(L.guildId, L.colorRoleId)),
     U = (0, f.yH)(null == L ? true : L.guildId, k) && (0, d.S2)(L),
     [G, B] = i.useState(false),
@@ -109,8 +109,8 @@ let O = function(e) {
       B(true), null == x || x(e)
     }, [x]),
     F = i.useCallback(e => {
-      B(false), null == j || j(e)
-    }, [j]),
+      B(false), null == M || M(e)
+    }, [M]),
     V = (0, u.Y)({
       location: "BaseMessage"
     }),
@@ -135,7 +135,7 @@ let O = function(e) {
             [p.hasReply]: D
           }),
           ref: N
-        }, M), {
+        }, j), {
           role: "article",
           onMouseEnter: Z,
           onMouseLeave: F,

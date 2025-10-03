@@ -218,11 +218,11 @@ function $(e) {
   }, [ex, ef, Q, ey, eN]), i.useEffect(() => {
     eb && null != eg && eg.length > 0 && eE(eg[0])
   }, [eg, eE, eb]);
-  let ej = (0, u.Jb)(),
+  let eM = (0, u.Jb)(),
     {
-      ref: eM
-    } = ej,
-    ek = X(ej, ["ref"]),
+      ref: ej
+    } = eM,
+    ek = X(eM, ["ref"]),
     eU = (null == eC ? true : eC.id) != null ? (0, I.aS)(eC.id, false, ef, eR) : true,
     {
       ipCountryCode: eG
@@ -284,7 +284,7 @@ function $(e) {
       })]
     }),
     eK = () => (0, r.jsx)("div", q(K({
-      ref: eM
+      ref: ej
     }, ek), {
       children: Q.map(e => (0, r.jsx)(G.Z, {
         planId: e,
@@ -307,7 +307,7 @@ function $(e) {
     eX = eP.isFractionalPremiumActive && (null == E || eq) && !ef && null != k && Z.dJ.has(k);
   if (ef) {
     let e = () => {
-        if ((0, O.MY)(e_) === O.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && null != em) return (0, r.jsx)(j.Z, {
+        if ((0, O.MY)(e_) === O.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && null != em) return (0, r.jsx)(M.Z, {
           sectionTitle: H.intl.string(H.t.B3miEx),
           className: Y.customGiftMessageWrapper,
           innerClassName: Y.customGiftMessage,
@@ -326,7 +326,7 @@ function $(e) {
       className: Y.stepBodyCustomGift,
       children: [(0, r.jsx)("div", {
         className: ed ? Y.bodyColumnMiddleCentered : Y.bodyColumnMiddle,
-        children: null != ep && (0, r.jsx)(M.q, {})
+        children: null != ep && (0, r.jsx)(j.q, {})
       }), (0, r.jsxs)("div", {
         className: Y.bodyColumnRight,
         children: [(0, r.jsx)(B.s, {

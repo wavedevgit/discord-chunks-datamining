@@ -64,18 +64,18 @@ function T(e) {
     children: [(0, r.jsx)(u.X6q, {
       className: N.headerHeading,
       variant: "eyebrow",
-      children: C.intl.string(C.t.nMir29)
+      children: y.intl.string(y.t.nMir29)
     }), (0, r.jsx)(u.Text, {
       variant: "text-sm/normal",
       color: "header-secondary",
       className: N.headerNoConfigSubtitle,
-      children: C.intl.format(C.t.q5f7tL, {
-        helpdeskArticleUrl: p.Z.getArticleURL(O.BhN.CONNECTION_DETAILS_ADMIN)
+      children: y.intl.format(y.t.q5f7tL, {
+        helpdeskArticleUrl: p.Z.getArticleURL(C.BhN.CONNECTION_DETAILS_ADMIN)
       })
     }), (0, r.jsx)(u.zxk, {
       disabled: n,
       onClick: t,
-      text: C.intl.string(C.t["OSvW5+"]),
+      text: y.intl.string(y.t["OSvW5+"]),
       fullWidth: true,
       variant: "primary"
     })]
@@ -92,15 +92,15 @@ function P(e) {
   } = e, {
     headerHeight: P,
     headerRef: w
-  } = (0, x.Z)(0), {
+  } = (0, b.Z)(0), {
     scrolledToTop: R,
     handleScroll: Z
-  } = (0, v.V)(), D = (0, c.e7)([f.Z], () => {
+  } = (0, _.V)(), D = (0, c.e7)([f.Z], () => {
     var e;
     return null == (e = f.Z.getRoleMemberCount(t.id)) ? true : e[n.id]
-  }, [n.id, t.id]), A = (0, c.Wu)([b.Z], () => {
+  }, [n.id, t.id]), A = (0, c.Wu)([x.Z], () => {
     var e;
-    return null != (e = b.Z.getEditedRoleConnectionConfigurationsMap().get(n.id)) ? e : []
+    return null != (e = x.Z.getEditedRoleConnectionConfigurationsMap().get(n.id)) ? e : []
   }), L = A.length > 1 ? g.O1.OR : g.O1.AND, k = i.useMemo(() => L === g.O1.OR ? A.flat() : null != A && A.length > 0 ? A[0] : [], [L, A]), G = i.useMemo(() => new Set(k.map(e => e.connectionType)), [k]);
 
   function M(e) {
@@ -121,7 +121,7 @@ function P(e) {
       onComplete: e => M(e),
       excludedPlatformTypes: G,
       integrations: o,
-      onCompleteApplication: e => M(y.Kt, e)
+      onCompleteApplication: e => M(O.Kt, e)
     })
   }
   let B = null;
@@ -135,7 +135,7 @@ function P(e) {
     k.length < 10 && (e = (0, r.jsx)(u.zxk, {
       disabled: l,
       onClick: U,
-      text: C.intl.string(C.t["OSvW5+"]),
+      text: y.intl.string(y.t["OSvW5+"]),
       icon: u.oFk,
       fullWidth: true,
       variant: "secondary"
@@ -147,30 +147,30 @@ function P(e) {
             className: N.headerTitleTextContainer,
             children: (0, r.jsx)(u.X6q, {
               variant: "eyebrow",
-              children: C.intl.string(C.t.nMir29)
+              children: y.intl.string(y.t.nMir29)
             })
           }), (0, r.jsx)(u.Avr, {
             variant: "critical",
             onClick: F,
             disabled: l,
-            text: C.intl.string(C.t.ntW1cX),
+            text: y.intl.string(y.t.ntW1cX),
             textVariant: "text-sm/semibold"
           })]
         }), (0, r.jsx)(u.Text, {
           variant: "text-sm/normal",
-          children: C.intl.format(C.t.q5f7tL, {
-            helpdeskArticleUrl: p.Z.getArticleURL(O.BhN.CONNECTION_DETAILS_ADMIN)
+          children: y.intl.format(y.t.q5f7tL, {
+            helpdeskArticleUrl: p.Z.getArticleURL(C.BhN.CONNECTION_DETAILS_ADMIN)
           })
         })]
       })), function(e, t, n, i, l) {
         let s = S(i, g.O1.OR);
         return (0, r.jsx)(d.E, {
-          label: C.intl.string(C.t.Xs7PHR),
+          label: y.intl.string(y.t.Xs7PHR),
           options: [{
-            name: C.intl.string(C.t["W3iY5+"]),
+            name: y.intl.string(y.t["W3iY5+"]),
             value: g.O1.OR
           }, {
-            name: C.intl.string(C.t.gHXS9P),
+            name: y.intl.string(y.t.gHXS9P),
             value: g.O1.AND
           }],
           onChange: e => l(i, e),
@@ -254,10 +254,10 @@ function P(e) {
           [E.stickyHeaderElevated]: !R
         }),
         ref: w,
-        children: (0, r.jsx)(v.Z, {
+        children: (0, r.jsx)(_.Z, {
           guild: t,
           role: n,
-          selectedSection: _.ZI.VERIFICATIONS,
+          selectedSection: v.ZI.VERIFICATIONS,
           setSelectedSection: a
         })
       }), (null != D ? D : 0) > 0 ? (0, r.jsxs)("div", {
@@ -271,7 +271,7 @@ function P(e) {
         }), (0, r.jsx)(u.Text, {
           variant: "text-sm/normal",
           color: "text-default",
-          children: C.intl.string(C.t["2aFeeX"])
+          children: y.intl.string(y.t["2aFeeX"])
         })]
       }) : null, B]
     })

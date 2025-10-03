@@ -3,8 +3,8 @@
 "use strict";
 let r;
 require.d(exports, {
-  Jc: () => M,
-  dx: () => j,
+  Jc: () => j,
+  dx: () => M,
   tE: () => G
 });
 var i, Chunk647438 = require("./647438.js"),
@@ -341,7 +341,7 @@ function L() {
   null == module || R(module, D) ? null != w && cancelAnimationFrame(w) : (D = module, null == r || r.invalidate()), w = requestAnimationFrame(L)
 }
 let x = false,
-  j = {
+  M = {
     get ringsEnabled() {
       return x
     },
@@ -356,7 +356,7 @@ let x = false,
     }
   };
 
-function M(e) {
+function j(e) {
   let {
     containerRef: t,
     children: n,
@@ -375,7 +375,7 @@ function k() {
     [, t] = Chunk647438.useState({});
   return Chunk647438.useEffect(() => (module.invalidate = () => exports({}), () => {
     module.invalidate = () => null
-  }), [module]), j.ringsEnabled && module.visible ? (0, Chunk951288.jsx)("div", {
+  }), [module]), M.ringsEnabled && module.visible ? (0, Chunk951288.jsx)("div", {
     className: d("focus-rings-ring", module.className),
     style: module.getStyle()
   }) : null

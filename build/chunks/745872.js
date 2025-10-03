@@ -135,7 +135,7 @@ if (Chunk143988) try {
   var x = Chunk143988(Chunk143988(module));
   L["%Error.prototype%"] = x
 }
-var j = function e(t) {
+var M = function e(t) {
     var n;
     if ("%AsyncFunction%" === t) n = y("async function () {}");
     else if ("%GeneratorFunction%" === t) n = y("function* () {}");
@@ -149,7 +149,7 @@ var j = function e(t) {
     }
     return L[t] = n, n
   },
-  M = {
+  j = {
     __proto__: null,
     "%ArrayBufferPrototype%": ["ArrayBuffer", "prototype"],
     "%ArrayPrototype%": ["Array", "prototype"],
@@ -224,9 +224,9 @@ var j = function e(t) {
   },
   K = function(e, t) {
     var n, r = e;
-    if (U(M, r) && (r = "%" + (n = M[r])[0] + "%"), U(L, r)) {
+    if (U(j, r) && (r = "%" + (n = j[r])[0] + "%"), U(L, r)) {
       var i = L[r];
-      if (i === w && (i = j(r)), true === i && !t) throw new u("intrinsic " + e + " exists, but is not available. Please file an issue!");
+      if (i === w && (i = M(r)), true === i && !t) throw new u("intrinsic " + e + " exists, but is not available. Please file an issue!");
       return {
         alias: n,
         name: r,

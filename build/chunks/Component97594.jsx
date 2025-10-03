@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk466377 = require("./466377.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk376641 = require("./376641.js"),
@@ -36,20 +36,20 @@ function S(e) {
     transitionState: v
   } = e, T = function(e, t) {
     if (null == e) return {};
-    var n, r, i = function(e, t) {
+    var n, i, r = function(e, t) {
       if (null == e) return {};
-      var n, r, i = {},
+      var n, i, r = {},
         l = Object.keys(e);
-      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-      return i
+      for (i = 0; i < l.length; i++) n = l[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
+      return r
     }(e, t);
     if (Object.getOwnPropertySymbols) {
       var l = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+      for (i = 0; i < l.length; i++) n = l[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
     }
-    return i
+    return r
   }(e, ["onClose", "items", "startingIndex", "enabledContentHarmTypeFlags", "shouldHideMediaOptions", "transitionState"]);
-  let [j, C] = i.useState(null != l ? l : 0), [D, P] = i.useState(false), [x, w] = (0, s.q_F)(() => ({
+  let [j, C] = r.useState(null != l ? l : 0), [D, x] = r.useState(false), [P, L] = (0, s.q_F)(() => ({
     scale: d.Z.useReducedMotion ? 1 : .9,
     x: 0,
     y: 0,
@@ -57,105 +57,105 @@ function S(e) {
       friction: 30,
       tension: 300
     }
-  })), L = i.useRef(null);
-  i.useEffect(() => {
-    if (null != t) return p.S.subscribe(b.CkL.MEDIA_MODAL_CLOSE, t), () => {
-      p.S.unsubscribe(b.CkL.MEDIA_MODAL_CLOSE, t)
+  })), R = r.useRef(null);
+  r.useEffect(() => {
+    if (null != t) return f.S.subscribe(b.CkL.MEDIA_MODAL_CLOSE, t), () => {
+      f.S.unsubscribe(b.CkL.MEDIA_MODAL_CLOSE, t)
     }
-  }, [t]), i.useEffect(() => {
+  }, [t]), r.useEffect(() => {
     var e, t;
-    v === s.Dvm.ENTERING && h(x.scale, 1), v === s.Dvm.ENTERED && (u.Z.disable(), u.Z.enableTemp(c.P)), v === s.Dvm.HIDDEN && (h(x.scale, .9), u.Z.disable(), u.Z.enableTemp(c.v)), v === s.Dvm.EXITING && h(x.scale, .9);
+    v === s.Dvm.ENTERING && h(P.scale, 1), v === s.Dvm.ENTERED && (u.Z.disable(), u.Z.enableTemp(c.P)), v === s.Dvm.HIDDEN && (h(P.scale, .9), u.Z.disable(), u.Z.enableTemp(c.v)), v === s.Dvm.EXITING && h(P.scale, .9);
     let n = () => {
         u.Z.disable(), v === s.Dvm.ENTERED ? u.Z.enableTemp(c.P) : u.Z.enableTemp(c.v)
       },
-      r = () => {
+      i = () => {
         u.Z.disableTemp()
       },
-      i = null == (t = L.current) || null == (e = t.ownerDocument) ? true : e.defaultView;
-    return null == i || i.addEventListener("focus", n), null == i || i.addEventListener("blur", r), () => {
-      null == i || i.removeEventListener("focus", n), null == i || i.removeEventListener("blur", r), u.Z.disableTemp()
+      r = null == (t = R.current) || null == (e = t.ownerDocument) ? true : e.defaultView;
+    return null == r || r.addEventListener("focus", n), null == r || r.addEventListener("blur", i), () => {
+      null == r || r.removeEventListener("focus", n), null == r || r.removeEventListener("blur", i), u.Z.disableTemp()
     }
-  }, [v, x]);
-  let R = i.useCallback(e => {
-      C(e), (0, f.yg)(f.uG.SELECTED_ITEM_CHANGE)
+  }, [v, P]);
+  let M = r.useCallback(e => {
+      C(e), (0, p.yg)(p.uG.SELECTED_ITEM_CHANGE)
     }, []),
-    M = i.useMemo(() => ({
-      scale: x.scale,
-      x: x.x,
-      y: x.y,
+    I = r.useMemo(() => ({
+      scale: P.scale,
+      x: P.x,
+      y: P.y,
       setScale(e, t) {
-        h(x.scale, e, null == t ? true : t.immediate)
+        h(P.scale, e, null == t ? true : t.immediate)
       },
       setOffset(e, t, n) {
-        h(x.x, e, null == n ? true : n.immediate), h(x.y, t, null == n ? true : n.immediate)
+        h(P.x, e, null == n ? true : n.immediate), h(P.y, t, null == n ? true : n.immediate)
       },
       zoomed: D,
       setZoomed(e) {
-        P(e), h(x.scale, e ? 2.5 : 1), e || (h(x.x, 0), h(x.y, 0))
+        x(e), h(P.scale, e ? 2.5 : 1), e || (h(P.x, 0), h(P.y, 0))
       }
-    }), [D, x]);
-  return (0, r.jsx)(s.f6W, {
+    }), [D, P]);
+  return (0, i.jsx)(s.f6W, {
     theme: b.BRd.MIDNIGHT,
     children: e => {
-      var i, l;
-      return (0, r.jsx)(s.Y0X, (i = function(e) {
+      var r, l;
+      return (0, i.jsx)(s.Y0X, (r = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            i = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-              value: r,
+          }))), i.forEach(function(t) {
+            var i;
+            i = n[t], t in e ? Object.defineProperty(e, t, {
+              value: i,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[t] = r
+            }) : e[t] = i
           })
         }
         return e
       }({
         "data-migration-pending": true,
         hideShadow: true,
-        className: o()(E.carouselModal, e),
+        className: a()(g.carouselModal, e),
         transitionState: v
       }, T), l = l = {
         size: s.CgR.DYNAMIC,
-        animation: a.fM.SUBTLE,
+        animation: o.fM.SUBTLE,
         fullscreenOnMobile: false,
         onClick: t,
-        "aria-label": g.intl.string(g.t.AMTX3t),
+        "aria-label": E.intl.string(E.t.AMTX3t),
         parentComponent: "MediaViewerModal",
-        children: (0, r.jsxs)(y.z.Provider, {
-          value: M,
-          children: [(0, r.jsx)(O.Z, {
+        children: (0, i.jsxs)(m.z.Provider, {
+          value: I,
+          children: [(0, i.jsx)(O.Z, {
             item: n[j],
             hideMediaOptions: _,
             onClose: t
-          }), (0, r.jsx)("div", {
+          }), (0, i.jsx)("div", {
             style: {
               display: "none"
             },
-            ref: L
-          }), (0, r.jsx)(m.ZP, {
+            ref: R
+          }), (0, i.jsx)(y.ZP, {
             items: n,
             startIndex: j,
-            onIndexChange: R,
+            onIndexChange: M,
             enabledContentHarmTypeFlags: S,
             shouldHideMediaOptions: _
           })]
         })
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, r)
+          var i = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, i)
         }
         return n
       })(Object(l)).forEach(function(e) {
-        Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
-      }), i))
+        Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(l, e))
+      }), r))
     }
   })
 }

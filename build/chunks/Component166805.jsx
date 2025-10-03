@@ -2,7 +2,7 @@
 /** chunk id: 166805, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  P: () => O
+  P: () => C
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -23,16 +23,16 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk356086 = require("./356086.js");
 
-function _(e) {
+function v(e) {
   let {
     guildId: t
   } = e, {
     guildProfile: c,
     fetchGuildProfile: g,
-    fetchStatus: _
-  } = (0, m.u)(t), O = _ !== u.a.FETCHED, {
-    fetchedEmbed: y,
-    embedEnabled: C,
+    fetchStatus: v
+  } = (0, m.u)(t), C = v !== u.a.FETCHED, {
+    fetchedEmbed: O,
+    embedEnabled: y,
     embedChannelId: N
   } = (0, a.cj)([f.Z], () => {
     let {
@@ -45,52 +45,52 @@ function _(e) {
       embedEnabled: t,
       embedChannelId: n
     }
-  }), E = i.useMemo(() => (0, b.S)(t), [t]), I = i.useMemo(() => (0, b.a)(t), [t]), [S, T] = i.useState(false), P = null != c && l.Y.VISIBLE.has(c.visibility), w = !O && !P && !C;
+  }), E = i.useMemo(() => (0, x.S)(t), [t]), I = i.useMemo(() => (0, x.a)(t), [t]), [S, T] = i.useState(false), P = null != c && l.Y.VISIBLE.has(c.visibility), w = !C && !P && !y;
   i.useEffect(() => {
-    y || (0, p.R)(t)
-  }, [y, t]), i.useEffect(() => {
+    O || (0, p.R)(t)
+  }, [O, t]), i.useEffect(() => {
     g()
   }, [t, g]);
   let R = i.useCallback(async e => {
     T(true), await (0, h.c)(t, e, N), T(false)
   }, [N, t]);
-  return y ? (0, r.jsxs)("div", {
+  return O ? (0, r.jsxs)("div", {
     children: [(0, r.jsx)(o.rsf, {
       label: j.intl.string(j.t.NR6hub),
-      checked: C,
+      checked: y,
       onChange: R,
       disabled: S
     }), w ? (0, r.jsx)(s.xvT, {
       variant: "text-sm/normal",
       color: "text-secondary",
-      className: v.subtext,
+      className: _.subtext,
       children: j.intl.string(j.t.zCGuJy)
-    }) : null, C ? (0, r.jsxs)(r.Fragment, {
+    }) : null, y ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
-        className: v.divider
+        className: _.divider
       }), (0, r.jsx)(o.vwX, {
         children: j.intl.string(j.t.LUo0Q0)
-      }), (0, r.jsx)(x.m, {
+      }), (0, r.jsx)(b.m, {
         guildId: t,
-        widgetEnabled: C,
+        widgetEnabled: y,
         widgetChannelId: N,
         enableLocalUpdate: true
       }), (0, r.jsx)(s.xvT, {
         variant: "text-sm/medium",
         color: "text-secondary",
-        className: v.subtext,
+        className: _.subtext,
         children: j.intl.string(j.t.LxVR9P)
       }), (0, r.jsxs)("div", {
-        className: v.twoColumns,
+        className: _.twoColumns,
         children: [(0, r.jsxs)("div", {
-          className: v.column,
+          className: _.column,
           children: [(0, r.jsx)(o.vwX, {
             children: j.intl.string(j.t.TRyLUl)
           }), (0, r.jsx)(d.Z, {
             value: t
           })]
         }), (0, r.jsxs)("div", {
-          className: v.column,
+          className: _.column,
           children: [(0, r.jsx)(o.vwX, {
             children: j.intl.string(j.t.VECJcH)
           }), (0, r.jsx)(d.Z, {
@@ -98,11 +98,11 @@ function _(e) {
           })]
         })]
       }), (0, r.jsx)("div", {
-        className: v.divider
+        className: _.divider
       }), (0, r.jsxs)("div", {
-        className: v.twoColumns,
+        className: _.twoColumns,
         children: [(0, r.jsxs)("div", {
-          className: v.column,
+          className: _.column,
           children: [(0, r.jsx)(o.vwX, {
             children: j.intl.string(j.t.XVGbn5)
           }), (0, r.jsx)(d.Z, {
@@ -110,11 +110,11 @@ function _(e) {
           }), (0, r.jsx)(s.xvT, {
             variant: "text-sm/medium",
             color: "text-secondary",
-            className: v.subtext,
+            className: _.subtext,
             children: j.intl.string(j.t["+baN19"])
           })]
         }), (0, r.jsx)("img", {
-          className: v.column,
+          className: _.column,
           "data-accessibility": "desaturate",
           alt: "",
           src: n(329488)
@@ -124,7 +124,7 @@ function _(e) {
   }) : (0, r.jsx)(o.$jN, {})
 }
 
-function O(e) {
+function C(e) {
   let {
     guildId: t
   } = e, n = (0, a.e7)([g.Z], () => g.Z.enabled);
@@ -133,9 +133,9 @@ function O(e) {
     children: [(0, r.jsx)(s.xvT, {
       variant: "text-sm/medium",
       color: "text-secondary",
-      className: v.description,
+      className: _.description,
       children: j.intl.string(j.t["dNn/1t"])
-    }), n ? (0, r.jsx)(c.Z, {}) : (0, r.jsx)(_, {
+    }), n ? (0, r.jsx)(c.Z, {}) : (0, r.jsx)(v, {
       guildId: t
     })]
   })

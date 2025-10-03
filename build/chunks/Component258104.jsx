@@ -1,7 +1,7 @@
 /** Chunk was on 47435 **/
 /** chunk id: 258104, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => N
+  Z: () => Z
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -10,6 +10,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk512722 = require("./512722.js"),
   l = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
+  Chunk28664 = require("./28664.jsx"),
   Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
   Chunk493683 = require("./493683.js"),
@@ -27,7 +28,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk436931 = require("./436931.js");
-let w = e => {
+let N = e => {
     let {
       user: t,
       trialCreationResult: r,
@@ -35,13 +36,13 @@ let w = e => {
     } = e, {
       avatarSrc: n,
       eventHandlers: l
-    } = (0, h.Z)({
+    } = (0, f.Z)({
       userId: null == t ? true : t.id,
-      size: d.EFr.SIZE_56
-    }), o = m.ZP.getName(t), C = t.username !== o && r === j.Fz.SUCCESS, p = r === j.Fz.FAIL;
+      size: c.EFr.SIZE_56
+    }), o = j.ZP.getName(t), d = t.username !== o && r === _.Fz.SUCCESS, h = r === _.Fz.FAIL;
     return (0, a.jsxs)("div", {
-      className: b.referredUserRowContainer,
-      children: [(0, a.jsx)(d.qEK, function(e) {
+      className: w.referredUserRowContainer,
+      children: [(0, a.jsx)(c.qEK, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {},
             a = Object.keys(r);
@@ -60,99 +61,92 @@ let w = e => {
         return e
       }({
         imageClassName: s()({
-          [b.erroredAvatar]: p
+          [w.erroredAvatar]: h
         }),
         src: n,
         "aria-label": o,
-        size: d.EFr.SIZE_56
+        size: c.EFr.SIZE_56
       }, l)), (0, a.jsxs)("div", {
-        className: b.referredUserRowBody,
-        children: [p ? (0, a.jsxs)(a.Fragment, {
-          children: [(0, a.jsx)(d.Text, {
-            className: b.errorDisplayName,
+        className: w.referredUserRowBody,
+        children: [h ? (0, a.jsxs)(a.Fragment, {
+          children: [(0, a.jsx)(c.Text, {
+            className: w.errorDisplayName,
             variant: "text-md/medium",
             children: o
-          }), (0, a.jsx)(d.Text, {
+          }), (0, a.jsx)(c.Text, {
             variant: "text-md/medium",
-            className: b.userName,
-            children: S.intl.format(S.t.RO3T4O, {
+            className: w.userName,
+            children: b.intl.format(b.t.RO3T4O, {
               userName: o
             })
           })]
-        }) : (0, a.jsx)(d.ua7, {
-          text: S.intl.string(S.t.xkVQPD),
+        }) : (0, a.jsx)(C.u, {
+          asContainer: true,
+          text: b.intl.string(b.t.xkVQPD),
           position: "right",
-          children: e => {
-            let {
-              onMouseEnter: r,
-              onMouseLeave: s
-            } = e;
-            return (0, a.jsx)(d.P3F, {
-              onClick: () => {
-                var e;
-                return e = t.id, void(f.Z.hasLayers() && (0, x.xf)(), c.Z.openPrivateChannel({
-                  recipientIds: e
-                }), i())
-              },
-              className: b.displayNameClickableContainer,
-              onMouseEnter: r,
-              onMouseLeave: s,
-              children: (0, a.jsx)(d.Text, {
-                variant: "text-md/medium",
-                className: b.displayName,
-                children: o
-              })
+          children: (0, a.jsx)(c.P3F, {
+            onClick: () => {
+              var e;
+              return e = t.id, void(u.Z.hasLayers() && (0, p.xf)(), x.Z.openPrivateChannel({
+                recipientIds: e
+              }), i())
+            },
+            className: w.displayNameClickableContainer,
+            children: (0, a.jsx)(c.Text, {
+              variant: "text-md/medium",
+              className: w.displayName,
+              children: o
             })
-          }
-        }), C && (0, a.jsx)(d.Text, {
+          })
+        }), d && (0, a.jsx)(c.Text, {
           variant: "text-md/medium",
-          className: b.userName,
+          className: w.userName,
           children: t.username
         })]
       })]
     })
   },
-  N = e => {
+  Z = e => {
     let {
       selectedUsers: t,
       trialCreationResult: r,
       onClose: i
-    } = e, s = [...t].map(e => (0, a.jsx)(w, {
+    } = e, s = [...t].map(e => (0, a.jsx)(N, {
       user: e,
       trialCreationResult: r.get(e.id),
       onClose: i
-    }, e.id)), n = (0, o.e7)([_.Z], () => _.Z.getReferralsRemaining());
+    }, e.id)), n = (0, o.e7)([g.Z], () => g.Z.getReferralsRemaining());
     l()(null !== n, "Referrals remaining should not be null");
-    let c = (0, p.Fg)(),
-      x = (0, C.ap)(c) ? L.Z : g.Z,
-      h = S.intl.string(S.t.Pcb7KC),
-      f = [...r.values()].filter(e => e === j.Fz.SUCCESS).length;
-    return n > 0 && (h = S.intl.formatToPlainString(S.t.iWtOfH, {
+    let C = (0, h.Fg)(),
+      x = (0, d.ap)(C) ? y.Z : L.Z,
+      p = b.intl.string(b.t.Pcb7KC),
+      f = [...r.values()].filter(e => e === _.Fz.SUCCESS).length;
+    return n > 0 && (p = b.intl.formatToPlainString(b.t.iWtOfH, {
       numReferrals: f
-    })), 0 === f && (h = S.intl.string(S.t["7VBEub"])), (0, a.jsxs)("div", {
-      className: b.confrimationContainer,
-      children: [(0, a.jsx)(d.P3F, {
+    })), 0 === f && (p = b.intl.string(b.t["7VBEub"])), (0, a.jsxs)("div", {
+      className: w.confrimationContainer,
+      children: [(0, a.jsx)(c.P3F, {
         onClick: i,
-        className: b.closeButtonContainer,
-        children: (0, a.jsx)(d.Dio, {
+        className: w.closeButtonContainer,
+        children: (0, a.jsx)(c.Dio, {
           size: "custom",
           width: 20,
           height: 20
         })
       }), (0, a.jsx)(x, {
-        className: b.headerIcon
-      }), (0, a.jsx)(d.X6q, {
+        className: w.headerIcon
+      }), (0, a.jsx)(c.X6q, {
         variant: "heading-lg/bold",
-        className: b.heading,
-        children: h
+        className: w.heading,
+        children: p
       }), (0, a.jsx)("div", {
-        className: b.confirmedUserContainer,
+        className: w.confirmedUserContainer,
         children: s
-      }), (0, a.jsx)(d.Text, {
+      }), (0, a.jsx)(c.Text, {
         variant: "text-md/medium",
-        children: S.intl.format(S.t.CZaMHh, {
-          days: y.p,
-          helpdeskArticle: u.Z.getArticleURL(v.BhN.REFERRAL_PROGRAM)
+        children: b.intl.format(b.t.CZaMHh, {
+          days: v.p,
+          helpdeskArticle: m.Z.getArticleURL(S.BhN.REFERRAL_PROGRAM)
         })
       })]
     })

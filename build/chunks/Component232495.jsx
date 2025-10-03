@@ -1,4 +1,4 @@
-/** Chunk was on 9665 **/
+/** Chunk was on 50118 **/
 /** chunk id: 232495, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   k: () => p
@@ -30,23 +30,23 @@ let u = () => (0, Chunk951288.jsx)(Chunk951288.Fragment, {
   },
   p = e => {
     var t, n;
-    let i = null != (t = ({
+    let r = null != (t = ({
       VOICE_CONVERSATIONS: {
-        title: (0, r.jsx)("div", {
+        title: (0, i.jsx)("div", {
           className: c.voiceChannelsTitle,
           children: s.intl.string(s.t.w5HAlp)
         }),
         body: s.intl.string(s.t.Ww4hho)
       },
       WRITING_MESSAGES: {
-        title: (0, r.jsx)("div", {
+        title: (0, i.jsx)("div", {
           className: c.writingMessagesTitle,
           children: s.intl.string(s.t.nkP0l5)
         }),
-        body: (0, r.jsx)(d, {})
+        body: (0, i.jsx)(d, {})
       },
       ORGANIZE_BY_TOPIC: {
-        title: (0, r.jsx)("div", {
+        title: (0, i.jsx)("div", {
           className: c.channelsTitle,
           children: s.intl.string(s.t["j/5+IS"])
         }),
@@ -58,7 +58,7 @@ let u = () => (0, Chunk951288.jsx)(Chunk951288.Fragment, {
       },
       INSTANT_INVITE: {
         title: s.intl.string(s.t.XcehY2),
-        body: (0, r.jsx)(u, {})
+        body: (0, i.jsx)(u, {})
       },
       SERVER_SETTINGS: {
         title: s.intl.string(s.t.wc8wi4),
@@ -82,8 +82,8 @@ let u = () => (0, Chunk951288.jsx)(Chunk951288.Fragment, {
       }
     })[e.replace(/-/g, "_").toUpperCase()]) ? t : {};
     return {
-      title: i.title,
-      body: i.body,
-      isLongText: null != (n = i.isLongText) && n
+      title: r.title,
+      body: r.body,
+      isLongText: null != (n = r.isLongText) && n
     }
   }

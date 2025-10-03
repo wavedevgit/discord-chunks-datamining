@@ -46,8 +46,8 @@ function x(e) {
     recipientUser: a,
     onMouseEnter: L,
     onMouseLeave: x,
-    popoutPosition: j,
-    analyticsPage: M,
+    popoutPosition: M,
+    analyticsPage: j,
     analyticsSection: k,
     glow: U,
     giftIntentSecondaryAction: G
@@ -94,7 +94,7 @@ function x(e) {
         analyticsLocation: "system_message" === n ? r.chat : r.actionButtonCoachmark,
         analyticsLocations: Z,
         analyticsObject: {
-          page: M,
+          page: j,
           section: k,
           object: N.qAy.BUTTON_CTA,
           objectType: N.Qqv.GIFT
@@ -205,10 +205,10 @@ function x(e) {
             })]
           })
         })]
-      }), null != j && (0, r.jsx)("div", {
+      }), null != M && (0, r.jsx)("div", {
         className: o()(D.connector, {
-          [D.leftPopoutConnector]: "left" === j,
-          [D.rightPopoutConnector]: "right" === j
+          [D.leftPopoutConnector]: "left" === M,
+          [D.rightPopoutConnector]: "right" === M
         })
       })]
     })

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Eb: () => D,
-  Fx: () => M,
+  Fx: () => j,
   IM: () => L,
   J2: () => F,
   r$: () => w
@@ -162,18 +162,18 @@ function x(e, t, n) {
   return null == R || R.identifyTime !== e || null != t && t.some(e => e.id === R.guild.id) ? null : n(R.guild)
 }
 
-function j(e) {
+function M(e) {
   let t = p.Z.getGuildEmojis(e);
   return null != t ? Object.values(t) : null
 }
 
-function M(e, t) {
+function j(e, t) {
   var n;
   let r = E.Z.getGuild(e.id),
     i = F(e, null == r ? true : {
       properties: b.dS(r),
       roles: g.Z.getRolesSnapshot(r.id),
-      emojis: j(r.id),
+      emojis: M(r.id),
       stickers: null != (n = h.Z.getRawStickersByGuild().get(r.id)) ? n : null
     });
   return R = {
@@ -205,7 +205,7 @@ function G(e) {
     i.id in e.guildVersions && e.guildChannels.has(i.id) && (N[i.id] = {
       properties: b.dS(i),
       roles: g.Z.getRolesSnapshot(i.id),
-      emojis: j(i.id),
+      emojis: M(i.id),
       stickers: null != (r = n.get(i.id)) ? r : null
     })
   }

@@ -173,14 +173,14 @@ function T(e) {
     Z = (0, j.L)({
       guildId: n
     }),
-    M = r.useMemo(() => i === v.e.ALL_MEMBERS ? I : null != Z && null != Z.user, [i, I, Z]),
-    O = r.useMemo(() => N.slice(0, S + 1), [S, N]),
-    w = r.useMemo(() => N.slice(S + 1), [S, N]),
+    O = r.useMemo(() => i === v.e.ALL_MEMBERS ? I : null != Z && null != Z.user, [i, I, Z]),
+    w = r.useMemo(() => N.slice(0, S + 1), [S, N]),
+    M = r.useMemo(() => N.slice(S + 1), [S, N]),
     y = (0, m.Z)(e => {
       let t = e.contentRect.width;
       null != t && T.current !== t && (x(t), T.current = t)
     });
-  return (0, u.s)(C, y, [M]), (0, l.jsxs)(l.Fragment, {
+  return (0, u.s)(C, y, [O]), (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsx)(b.Z.Divider, {
       className: p.divider
     }), (0, l.jsxs)("div", {
@@ -199,7 +199,7 @@ function T(e) {
         }, e.id)), (0, l.jsx)("div", {
           ref: R,
           children: (0, l.jsx)(_, {
-            tabs: w,
+            tabs: M,
             onTabSelect: a,
             selectedTab: i
           })
@@ -209,12 +209,12 @@ function T(e) {
         selectedItem: i,
         type: "top-pill",
         onItemSelect: a,
-        children: [O.map(e => (0, l.jsx)(d.njP.Item, {
+        children: [w.map(e => (0, l.jsx)(d.njP.Item, {
           id: e.id,
           "aria-label": e.label,
           children: e.label
-        }, e.id)), 0 !== w.length ? (0, l.jsx)(_, {
-          tabs: w,
+        }, e.id)), 0 !== M.length ? (0, l.jsx)(_, {
+          tabs: M,
           onTabSelect: a,
           selectedTab: i
         }) : null]

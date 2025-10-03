@@ -2,7 +2,7 @@
 /** chunk id: 608579, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => M
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -72,15 +72,15 @@ function x(e, t) {
   }), e
 }
 
-function j(e) {
+function M(e) {
   var t;
   let {
     onClose: n,
     onComplete: a,
     onStepChange: w,
     transitionState: L,
-    loadId: j,
-    skuId: M,
+    loadId: M,
+    skuId: j,
     isGift: k = false,
     giftRecipient: U,
     giftMessage: G,
@@ -91,8 +91,8 @@ function j(e) {
     analyticsLocations: V
   } = (0, d.ZP)([...Z, u.Z.COLLECTIBLES_PAYMENT_MODAL]), H = i.useRef(new s.qA), [Y, W] = i.useState(null), [K, z] = i.useState(false), q = i.useMemo(() => (0, C.UY)({
     purchaseType: N.o8.FIAT,
-    skuId: M
-  }), [M]), X = (0, l.Wu)([f.Z], () => f.Z.recommendedGiftSkuIds, []), Q = null != M ? [M] : X, J = null != (t = Q[0]) ? t : null, $ = null != M && p.Rm.has(M), ee = i.useCallback(() => {
+    skuId: j
+  }), [j]), X = (0, l.Wu)([f.Z], () => f.Z.recommendedGiftSkuIds, []), Q = null != j ? [j] : X, J = null != (t = Q[0]) ? t : null, $ = null != j && p.Rm.has(j), ee = i.useCallback(() => {
     z(true), null == a || a()
   }, [a]), et = i.useCallback(e => {
     z(false), n(e), c.Z.dispatch({
@@ -130,7 +130,7 @@ function j(e) {
         [P.hidden]: !K
       })
     }), (0, r.jsx)(m.PaymentContextProvider, {
-      loadId: j,
+      loadId: M,
       stepConfigs: er,
       applicationId: A.XAJ,
       skuIDs: Q,

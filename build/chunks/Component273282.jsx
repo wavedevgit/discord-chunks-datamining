@@ -2,7 +2,7 @@
 /** chunk id: 273282, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  c: () => b
+  c: () => x
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,42 +19,42 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk43628 = require("./43628.js");
 
-function b(e) {
+function x(e) {
   let {
     guild: t,
     canManageGuild: n,
-    buttonClassName: b
+    buttonClassName: x
   } = e, {
-    analyticsLocations: x
-  } = (0, s.ZP)(), j = t.features.has(m.oNc.INVITE_SPLASH), v = n && j, _ = i.useRef(null), O = i.useCallback(e => {
+    analyticsLocations: b
+  } = (0, s.ZP)(), j = t.features.has(m.oNc.INVITE_SPLASH), _ = n && j, v = i.useRef(null), C = i.useCallback(e => {
     c.Z.updateGuild({
       splash: e
     })
-  }, []), y = i.useCallback(e => {
+  }, []), O = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), (0, d.E6)({
       guild: t,
-      analyticsLocations: x,
+      analyticsLocations: b,
       analyticsSection: m.jXE.GUILD_INVITE_BACKGROUND,
       analyticsObject: m.qAy.BUTTON_CTA,
       perks: (0, g.o9)()
     })
-  }, [x, t]), C = i.useCallback(() => {
+  }, [b, t]), y = i.useCallback(() => {
     var e;
-    null == (e = _.current) || e.activateUploadDialogue()
+    null == (e = v.current) || e.activateUploadDialogue()
   }, []);
   return j ? (0, r.jsxs)("div", {
-    className: b,
+    className: x,
     children: [(0, r.jsx)(l.zxk, {
-      disabled: !v,
+      disabled: !_,
       variant: "primary",
       text: f.intl.string(f.t.yG2pUl),
-      onClick: C
+      onClick: y
     }), (0, r.jsx)("div", {
       className: h.hiddenInputContainer,
       children: (0, r.jsx)(o.ZP, {
-        ref: _,
-        disabled: !v,
-        onChange: O,
+        ref: v,
+        disabled: !_,
+        onChange: C,
         maxFileSizeBytes: p.B,
         onFileSizeError: () => (0, a.Z)(p.B),
         tabIndex: false,
@@ -62,7 +62,7 @@ function b(e) {
       })
     })]
   }) : (0, r.jsx)(u.P, {
-    className: b,
-    onClick: y
+    className: x,
+    onClick: O
   })
 }

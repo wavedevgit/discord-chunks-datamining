@@ -19,7 +19,7 @@ require.d(exports, {
   i0: () => b,
   kN: () => P,
   lb: () => S,
-  o0: () => M,
+  o0: () => j,
   o8: () => L,
   pv: () => N,
   rL: () => _,
@@ -67,8 +67,8 @@ let x = {
     ORB_PROFILE_BADGE: "1342211853484429445",
     FRACTIONAL_PREMIUM: Chunk314794.a.PREMIUM_TIER_2_3_DAY
   },
-  j = new Set(Object.values(x)),
-  M = e => j.has(e),
+  M = new Set(Object.values(x)),
+  j = e => M.has(e),
   k = [Chunk335818.G.AVATAR_DECORATION, Chunk335818.G.PROFILE_EFFECT, Chunk335818.G.NAMEPLATE, Chunk335818.G.BUNDLE],
   U = [{
     sortType: Chunk792091.E.RELEVANCE,

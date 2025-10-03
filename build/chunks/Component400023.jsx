@@ -1,7 +1,7 @@
-/** Chunk was on 9665 **/
+/** Chunk was on 50118 **/
 /** chunk id: 400023, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => K
+  Z: () => Y
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -48,17 +48,17 @@ var Chunk951288 = require("./951288.js"),
 function G(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      i = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
+    }))), i.forEach(function(t) {
+      var i;
+      i = n[t], t in e ? Object.defineProperty(e, t, {
+        value: i,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = r
+      }) : e[t] = i
     })
   }
   return e
@@ -68,8 +68,8 @@ function z(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
+      var i = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, i)
     }
     return n
   })(Object(t)).forEach(function(n) {
@@ -79,21 +79,21 @@ function z(e, t) {
 
 function W(e, t) {
   if (null == e) return {};
-  var n, r, i = function(e, t) {
+  var n, i, r = function(e, t) {
     if (null == e) return {};
-    var n, r, i = {},
+    var n, i, r = {},
       l = Object.keys(e);
-    for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-    return i
+    for (i = 0; i < l.length; i++) n = l[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
+    return r
   }(e, t);
   if (Object.getOwnPropertySymbols) {
     var l = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    for (i = 0; i < l.length; i++) n = l[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
   }
-  return i
+  return r
 }
 let q = (0, Chunk137317.animated)(Chunk481060.eTT),
-  Y = Chunk647438.memo(function(e) {
+  K = Chunk647438.memo(function(e) {
     var t, n;
     let {
       className: l,
@@ -102,8 +102,8 @@ let q = (0, Chunk137317.animated)(Chunk481060.eTT),
       channel: m,
       messages: g,
       unreadCount: b,
-      showNewMessagesBar: y,
-      messageDisplayCompact: C,
+      showNewMessagesBar: C,
+      messageDisplayCompact: y,
       channelStream: v,
       uploads: x,
       hasUnreads: j,
@@ -115,7 +115,7 @@ let q = (0, Chunk137317.animated)(Chunk481060.eTT),
       hideSummaries: A = false,
       jumpBarClassName: M,
       typingGradient: R
-    } = e, [D, Y] = i.useState(null != (n = E.Z.isAtBottom(m.id)) && n), K = i.useMemo(() => C ? (0, k.aJ)({
+    } = e, [L, K] = r.useState(null != (n = E.Z.isAtBottom(m.id)) && n), Y = r.useMemo(() => y ? (0, k.aJ)({
       compact: true,
       messageGroups: 30,
       groupRange: 4,
@@ -129,18 +129,18 @@ let q = (0, Chunk137317.animated)(Chunk481060.eTT),
       attachments: 8,
       fontSize: P,
       groupSpacing: o
-    }), [C, P, o]), X = (0, U.ZP)({
+    }), [y, P, o]), X = (0, U.ZP)({
       messages: g,
       channel: m,
-      compact: C,
+      compact: y,
       hasUnreads: j,
       focusId: S,
-      placeholderHeight: K.totalHeight,
+      placeholderHeight: Y.totalHeight,
       canLoadMore: null == N,
-      handleScrollToBottom: i.useCallback(() => Y(true), [Y]),
-      handleScrollFromBottom: i.useCallback(() => Y(false), [Y]),
+      handleScrollToBottom: r.useCallback(() => K(true), [K]),
+      handleScrollFromBottom: r.useCallback(() => K(false), [K]),
       additionalMessagePadding: 48
-    }), J = (0, L.Z)({
+    }), J = (0, D.Z)({
       scrollerRef: X.ref,
       isEditing: null != S,
       keyboardModeEnabled: I,
@@ -150,18 +150,18 @@ let q = (0, Chunk137317.animated)(Chunk481060.eTT),
       newMessagesBar: ee,
       jumpToPresentBar: et,
       forumPostActionBar: en,
-      safetyWarningBanner: er
+      safetyWarningBanner: ei
     } = (0, B.Z)({
       channel: m,
       messages: g,
       unreadCount: b,
-      showNewMessagesBar: y,
-      messageDisplayCompact: C,
+      showNewMessagesBar: C,
+      messageDisplayCompact: y,
       channelStream: v,
       uploads: x,
       loadMore: X.loadMore,
       scrollManager: X,
-      specs: K,
+      specs: Y,
       filterAfterTimestamp: null != N ? N : Q,
       showingQuarantineBanner: T,
       hideSummaries: A,
@@ -176,17 +176,17 @@ let q = (0, Chunk137317.animated)(Chunk481060.eTT),
       jumpBarClassName: M
     });
     ! function(e) {
-      let t = i.useCallback(() => {
+      let t = r.useCallback(() => {
           var t;
           return null == (t = e.current) ? true : t.scrollToBottom()
         }, [e]),
-        n = i.useCallback(() => {
+        n = r.useCallback(() => {
           var t;
           return null == (t = e.current) ? true : t.scrollPageUp({
             animate: !f.Z.useReducedMotion
           })
         }, [e]),
-        r = i.useCallback(() => {
+        i = r.useCallback(() => {
           var t;
           return null == (t = e.current) ? true : t.scrollPageDown({
             animate: !f.Z.useReducedMotion
@@ -200,10 +200,10 @@ let q = (0, Chunk137317.animated)(Chunk481060.eTT),
         handler: n
       }), (0, w.yp)({
         event: H.CkL.SCROLL_PAGE_DOWN,
-        handler: r
+        handler: i
       })
     }(X.ref);
-    let ei = (0, u.mFp)(),
+    let er = (0, u.mFp)(),
       el = (0, s.l2)(J),
       {
         ref: ea
@@ -218,13 +218,13 @@ let q = (0, Chunk137317.animated)(Chunk481060.eTT),
         let t = null == (e = O.Z.settings.appearance) ? true : e.clientThemeSettings;
         return (null == t ? true : t.backgroundGradientPresetId) != null || (null == t ? true : t.customUserThemeSettings) != null
       }),
-      eu = i.useMemo(() => R ? D ? F.chatTypingGradientAtBottom : F.chatTypingGradientNotAtBottom : F.chatGradient, [R, D]),
-      ed = i.useMemo(() => R ? D ? F.typingGradientAtBottom : F.typingGradientNotAtBottom : F.gradientDefault, [R, D]);
-    return (0, r.jsxs)(s.bG, {
+      eu = r.useMemo(() => R ? L ? F.chatTypingGradientAtBottom : F.chatTypingGradientNotAtBottom : F.chatGradient, [R, L]),
+      ed = r.useMemo(() => R ? L ? F.typingGradientAtBottom : F.typingGradientNotAtBottom : F.gradientDefault, [R, L]);
+    return (0, i.jsxs)(s.bG, {
       navigator: J,
-      children: [null != er && er, (0, r.jsxs)("div", {
+      children: [null != ei && ei, (0, i.jsxs)("div", {
         className: a()(F.messagesWrapper, l, "group-spacing-".concat(o)),
-        children: [null == er && ee, (0, r.jsxs)(q, z(G({
+        children: [null == ei && ee, (0, i.jsxs)(q, z(G({
           ref: es,
           customTheme: true,
           className: a()(p, F.scroller, ec ? ed : true),
@@ -233,10 +233,10 @@ let q = (0, Chunk137317.animated)(Chunk481060.eTT),
           onScroll: X.handleScroll,
           onMouseDown: X.handleMouseDown,
           onMouseUp: X.handleMouseUp
-        }, ei), {
+        }, er), {
           tabIndex: false,
           role: "group",
-          children: [en, (0, r.jsxs)("ol", z(G({
+          children: [en, (0, i.jsxs)("ol", z(G({
             className: a()(F.scrollerInner, {
               [F.scrollerAllowSticky]: m.isModeratorReportChannel()
             }),
@@ -244,12 +244,12 @@ let q = (0, Chunk137317.animated)(Chunk481060.eTT),
               channelName: m.name
             })
           }, eo), {
-            children: [(0, r.jsx)("span", {
+            children: [(0, i.jsx)("span", {
               className: F.navigationDescription,
               id: "messagesNavigationDescription",
               "aria-hidden": true,
               children: V.intl.string(V.t.Spb3s7)
-            }), $, (0, r.jsx)("div", {
+            }), $, (0, i.jsx)("div", {
               className: a()({
                 [F.scrollerSpacer]: !T,
                 [F.empty]: 0 === g.length && !g.loadingMore,
@@ -257,13 +257,13 @@ let q = (0, Chunk137317.animated)(Chunk481060.eTT),
               })
             })]
           }))]
-        })), ec ? null : (0, r.jsx)("div", {
+        })), ec ? null : (0, i.jsx)("div", {
           className: eu
         }), et]
       })]
     })
   }, (e, t) => null != e.isHidden && null != t.isHidden && e.isHidden && t.isHidden),
-  K = Chunk647438.memo(function(e) {
+  Y = Chunk647438.memo(function(e) {
     var {
       channel: t,
       showingQuarantineBanner: n,
@@ -280,30 +280,30 @@ let q = (0, Chunk137317.animated)(Chunk481060.eTT),
       let t = e.getGuildId(),
         n = (0, c.e7)([P.Z], () => null == t || P.Z.canChatInGuild(t), [t]),
         {
-          canManageMessages: r,
-          permissionVersion: i
+          canManageMessages: i,
+          permissionVersion: r
         } = (0, c.cj)([Z.Z], () => ({
           canManageMessages: Z.Z.can(H.Plq.MANAGE_MESSAGES, e),
           permissionVersion: null != t ? Z.Z.getGuildVersion(t) : null
         }), [e, t]);
       return {
         canChat: n,
-        permissionVersion: i,
-        canManageMessages: r
+        permissionVersion: r,
+        canManageMessages: i
       }
     }(t), {
       messageGroupSpacing: O,
       fontSize: E,
       messageDisplayCompact: w,
       renderSpoilers: k,
-      keyboardModeEnabled: L
+      keyboardModeEnabled: D
     } = function() {
       let e = x.jU.useSetting(),
         t = x.cC.useSetting(),
         {
           messageGroupSpacing: n,
-          fontSize: r,
-          keyboardModeEnabled: i
+          fontSize: i,
+          keyboardModeEnabled: r
         } = (0, c.cj)([f.Z], () => {
           let {
             messageGroupSpacing: e,
@@ -320,8 +320,8 @@ let q = (0, Chunk137317.animated)(Chunk481060.eTT),
         messageGroupSpacing: n,
         messageDisplayCompact: e,
         renderSpoilers: t,
-        fontSize: r,
-        keyboardModeEnabled: i
+        fontSize: i,
+        keyboardModeEnabled: r
       }
     }(), {
       messages: U,
@@ -330,46 +330,46 @@ let q = (0, Chunk137317.animated)(Chunk481060.eTT),
       editingMessageId: F
     } = function(e) {
       var t, n;
-      let r = (0, c.e7)([I.Z], () => I.Z.getMessages(e.id), [e.id]),
+      let i = (0, c.e7)([I.Z], () => I.Z.getMessages(e.id), [e.id]),
         l = (0, c.e7)([N.ZP], () => {
           var t;
           return null != (t = N.ZP.getOldestUnreadMessageId(e.id)) ? t : null
         }, [e.id]),
         {
           enabled: a
-        } = C.Z.useExperiment({
+        } = y.Z.useExperiment({
           location: "41de6d_1"
         }, {
           autoTrackExposure: false
         }),
         o = null != (n = null == (t = A.default.getUser(j.default.getId())) ? true : t.hasFlag(H.xW$.SPAMMER)) && n,
         s = (0, p.ts)(e),
-        u = (0, y.Z)("use_topic_dividers_in_chat"),
+        u = (0, C.Z)("use_topic_dividers_in_chat"),
         d = (0, c.Wu)([v.Z], () => {
           var t;
           return s && u && null != (t = v.Z.summaries(e.id)) ? t : []
         }, [s, e.id, u]),
         h = (0, c.e7)([v.Z], () => s ? v.Z.selectedSummary(e.id) : null, [s, e.id]),
         f = function(e) {
-          let t = i.useMemo(() => {
+          let t = r.useMemo(() => {
             let t = new Set;
             return e.forEach(e => {
               null != e.applicationId && null == e.application && t.add(e.applicationId)
             }), Array.from(t)
           }, [e]);
           return (0, g.Z)(t)
-        }(r);
-      (0, m.Z)(r, e);
-      let b = i.useMemo(() => (0, R.Z)({
+        }(i);
+      (0, m.Z)(i, e);
+      let b = r.useMemo(() => (0, R.Z)({
         channel: e,
-        messages: r,
+        messages: i,
         oldestUnreadMessageId: l,
         treatSpam: a && !o,
         summaries: d,
         selectedSummary: h
-      }), [r, e, l, a, d, h, f, o]);
+      }), [i, e, l, a, d, h, f, o]);
       return {
-        messages: r,
+        messages: i,
         channelStream: b,
         oldestUnreadMessageId: l,
         editingMessageId: (0, c.e7)([S.Z], () => {
@@ -378,10 +378,10 @@ let q = (0, Chunk137317.animated)(Chunk481060.eTT),
         })
       }
     }(t);
-    return (0, r.jsx)(b.aQ.Provider, {
+    return (0, i.jsx)(b.aQ.Provider, {
       value: (0, M.Z)(k, d),
-      children: (0, r.jsx)(D.v, {
-        children: (0, r.jsx)(Y, z(G({}, u), {
+      children: (0, i.jsx)(L.v, {
+        children: (0, i.jsx)(K, z(G({}, u), {
           messageGroupSpacing: O,
           showNewMessagesBar: true,
           channel: t,
@@ -395,7 +395,7 @@ let q = (0, Chunk137317.animated)(Chunk481060.eTT),
           canChat: _,
           editingMessageId: F,
           fontSize: E,
-          keyboardModeEnabled: L,
+          keyboardModeEnabled: D,
           showingQuarantineBanner: n,
           hideSummaries: l,
           typingGradient: s

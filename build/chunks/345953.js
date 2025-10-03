@@ -147,13 +147,13 @@ function x(e, t, n) {
   }), L()
 }
 
-function j(e, t, n) {
+function M(e, t, n) {
   (0, h.RF)(e, t, {
     muted: n
   }), L.cancel(), U()
 }
 
-function M(e, t, n) {
+function j(e, t, n) {
   (0, h.RF)(e, t, {
     soundboardMuted: n
   }), L.cancel(), U()
@@ -193,7 +193,7 @@ function B(e) {
     context: t,
     userId: n
   } = e;
-  n !== f.default.getId() && j(t, n, _.Z.isLocalMute(n, t))
+  n !== f.default.getId() && M(t, n, _.Z.isLocalMute(n, t))
 }
 
 function Z(e) {
@@ -201,7 +201,7 @@ function Z(e) {
     context: t,
     userId: n
   } = e;
-  n !== f.default.getId() && M(t, n, d.Z.isLocalSoundboardMuted(n))
+  n !== f.default.getId() && j(t, n, d.Z.isLocalSoundboardMuted(n))
 }
 
 function F(e) {

@@ -20,8 +20,8 @@ function d(e) {
     widget: f,
     index: g,
     disableInteraction: p = false
-  } = e, b = (0, u.Z)(d), O = (0, c.zPA)(), {
-    isDragging: m,
+  } = e, b = (0, u.Z)(d), m = (0, c.zPA)(), {
+    isDragging: O,
     currentItem: y
   } = (0, i.f)(e => ({
     isDragging: e.isDragging(),
@@ -30,7 +30,7 @@ function d(e) {
     let r = b.slice(),
       [n] = r.splice(e, 1);
     r.splice(t, 0, n), s.Z.setPendingWidgets(r)
-  }, [b]), [, v, h] = (0, o.c)({
+  }, [b]), [, v, x] = (0, a.c)({
     type: "WIDGET",
     item: {
       widgetType: f.type,
@@ -45,13 +45,13 @@ function d(e) {
     })
   });
   (0, n.useEffect)(() => {
-    h((0, l.r)(), {
+    x((0, l.r)(), {
       captureDraggingState: true
     })
-  }, [h]);
+  }, [x]);
   let [{
-    dragSourcePosition: x
-  }, _] = (0, a.L)({
+    dragSourcePosition: h
+  }, _] = (0, o.L)({
     accept: "WIDGET",
     canDrop: () => !p,
     collect: e => {
@@ -68,25 +68,25 @@ function d(e) {
     },
     hover: (e, r) => {
       var n;
-      if (p || O || null == t.current || !r.isOver({
+      if (p || m || null == t.current || !r.isOver({
           shallow: true
         })) return;
       let i = e.index,
-        o = null != g ? g : 0;
-      if (i === o) return;
-      let a = null == (n = t.current) ? true : n.getBoundingClientRect(),
-        l = (a.bottom - a.top) / 2,
+        a = null != g ? g : 0;
+      if (i === a) return;
+      let o = null == (n = t.current) ? true : n.getBoundingClientRect(),
+        l = (o.bottom - o.top) / 2,
         c = r.getClientOffset();
       if (null == c) return;
-      let s = c.y - a.top;
-      (!(i < o) || !(s < l)) && (i > o && s > l || (j(i, o), e.index = o))
+      let s = c.y - o.top;
+      (!(i < a) || !(s < l)) && (i > a && s > l || (j(i, a), e.index = a))
     }
   });
   return null == g || p ? {
     isDragging: false,
     dragSourcePosition: null
   } : (v(r), _(t), {
-    isDragging: m && (null == y ? true : y.widgetType) === f.type,
-    dragSourcePosition: x
+    isDragging: O && (null == y ? true : y.widgetType) === f.type,
+    dragSourcePosition: h
   })
 }

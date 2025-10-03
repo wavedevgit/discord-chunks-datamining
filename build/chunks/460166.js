@@ -206,20 +206,20 @@ function L(e) {
 function x(e) {
   let t = {};
   for (let n in e) try {
-    N(n) || (t[R(n)] = j(e[n], n))
+    N(n) || (t[R(n)] = M(e[n], n))
   } catch (e) {}
   return t
 }
 
-function j(e, t) {
-  return k(e) ? U(e, t) : M(e) ? {
+function M(e, t) {
+  return k(e) ? U(e, t) : j(e) ? {
     value: "",
     attributes: {},
     description: ""
   } : G(e) ? B(e, t) : H(e) ? Y(e, t) : W(e) ? K(e, t) : z(e) ? X(e, t) : J(e, t)
 }
 
-function M(e) {
+function j(e) {
   return "Resource" === e.attributes["rdf:parseType"] && "string" == typeof e.value && "" === e.value.trim()
 }
 

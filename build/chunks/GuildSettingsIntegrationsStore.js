@@ -106,11 +106,11 @@ function x(e) {
   O = m({}, O), null != t.name && O.name !== t.name && (O.name = t.name, A = true), true !== t.avatar && O.avatar !== t.avatar && (O.avatar = t.avatar, A = true), null != t.channelId && O.channel_id !== t.channelId && (O.channel_id = t.channelId, A = true), A && D()
 }
 
-function j() {
+function M() {
   T = Chunk981631.QZA.SUBMITTING, S = {}
 }
 
-function M(e) {
+function j(e) {
   var t;
   if (T !== p.QZA.SUBMITTING) returnfalse;
   T = p.QZA.OPEN, S = null != (t = e.errors) ? t : {}
@@ -317,7 +317,7 @@ let X = new q(Chunk570140.Z, __OVERLAY__ ? {} : {
     GUILD_SETTINGS_CLOSE: w,
     GUILD_SETTINGS_LOADED_INTEGRATIONS: k,
     WEBHOOKS_UPDATE: U,
-    INTEGRATION_SETTINGS_SUBMITTING: j,
-    INTEGRATION_SETTINGS_SAVE_FAILURE: M
+    INTEGRATION_SETTINGS_SUBMITTING: M,
+    INTEGRATION_SETTINGS_SAVE_FAILURE: j
   }),
   Q = X

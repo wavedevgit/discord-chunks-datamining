@@ -2,7 +2,7 @@
 /** chunk id: 965288, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => N,
-  y: () => T
+  y: () => P
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -81,14 +81,14 @@ let Z = Chunk647438.memo(function(e) {
         className: I.text,
         variant: "text-sm/normal",
         color: "header-primary",
-        children: x.ZP.getName(t, n, i)
+        children: O.ZP.getName(t, n, i)
       }), l ? (0, r.jsx)(p.$Eu, {
         className: I.boost,
         color: u.Z.unsafe_rawColors.GUILD_BOOSTING_PINK
       }) : null]
     })
   }),
-  P = Chunk647438.memo(function(e) {
+  T = Chunk647438.memo(function(e) {
     var t;
     let {
       participant: n,
@@ -128,7 +128,7 @@ let Z = Chunk647438.memo(function(e) {
       })]
     })
   }),
-  T = () => (0, Chunk951288.jsx)("div", {
+  P = () => (0, Chunk951288.jsx)("div", {
     className: Chunk383519.tileBaseContainer
   }),
   N = Chunk647438.memo(function(e) {
@@ -138,13 +138,13 @@ let Z = Chunk647438.memo(function(e) {
     } = e, {
       user: s,
       blocked: u
-    } = t, x = l.getGuildId(), v = O.default.getId(), {
+    } = t, O = l.getGuildId(), v = j.default.getId(), {
       newestAnalyticsLocation: Z
-    } = (0, g.ZP)(f.Z.AUDIENCE_TILE), T = (0, y.bp)(), N = (0, d.e7)([j.ZP], () => {
+    } = (0, g.ZP)(f.Z.AUDIENCE_TILE), P = (0, y.bp)(), N = (0, d.e7)([x.ZP], () => {
       var e;
-      return null != x && (null == (e = j.ZP.getMember(x, s.id)) ? true : e.premiumSince) != null
-    }, [x, s.id]), R = i.useRef(null);
-    o()(null != x, "Channel cannot be guildless");
+      return null != O && (null == (e = x.ZP.getMember(O, s.id)) ? true : e.premiumSince) != null
+    }, [O, s.id]), R = i.useRef(null);
+    o()(null != O, "Channel cannot be guildless");
     let w = i.useCallback(e => {
       (0, m.h)({
         type: c.ImpressionTypes.MENU,
@@ -160,7 +160,7 @@ let Z = Chunk647438.memo(function(e) {
         } = await Promise.all([n.e("79695"), n.e("98783"), n.e("8982"), n.e("7717"), n.e("52021")]).then(n.bind(n, 757387));
         return t => (0, r.jsx)(e, S(E({}, t), {
           user: s,
-          guildId: x,
+          guildId: O,
           channel: l,
           showMediaItems: true,
           showStageChannelItems: true,
@@ -171,9 +171,9 @@ let Z = Chunk647438.memo(function(e) {
           })
         }))
       }, {
-        context: T
+        context: P
       })
-    }, [s, v, T, x, l, Z]);
+    }, [s, v, P, O, l, Z]);
     return (0, r.jsx)(_.Z, {
       targetElementRef: R,
       user: s,
@@ -188,9 +188,9 @@ let Z = Chunk647438.memo(function(e) {
         }),
         onContextMenu: w
       }, e), {
-        children: (0, r.jsx)(P, {
+        children: (0, r.jsx)(T, {
           participant: t,
-          guildId: x,
+          guildId: O,
           channel: l,
           isPremium: N
         })

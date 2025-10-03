@@ -2,7 +2,7 @@
 /** chunk id: 178106, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => M
+  Z: () => j
 }), require("./539854.js"), require("./388685.js");
 var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -142,7 +142,7 @@ function x() {
     autoTrackExposure: false
   }).canSeeFrequentlyPlayed
 }
-class j extends(r = Chunk442837.ZP.PersistedStore) {
+class M extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     this.waitFor(f.default, p.Z), (null == e ? true : e.recentlyHeardCache) != null && I.load(e.recentlyHeardCache), (null == e ? true : e.playedEventsPendingFlush) != null && (v = e.playedEventsPendingFlush), this.syncWith([d.Z], w)
   }
@@ -165,8 +165,8 @@ class j extends(r = Chunk442837.ZP.PersistedStore) {
     return T.frequently
   }
 }
-E(j, "displayName", "SoundboardEventStore"), E(j, "persistKey", "SoundboardEventStore");
-let M = new j(Chunk570140.Z, {
+E(M, "displayName", "SoundboardEventStore"), E(M, "persistKey", "SoundboardEventStore");
+let j = new M(Chunk570140.Z, {
   GUILD_SOUNDBOARD_SOUND_PLAY_LOCALLY: S,
   GUILD_SOUNDBOARD_SOUND_PLAY_START: A,
   USER_SETTINGS_PROTO_UPDATE: D

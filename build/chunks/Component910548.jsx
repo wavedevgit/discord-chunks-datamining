@@ -94,14 +94,14 @@ let w = ["TOP_LEFT", "TOP_RIGHT"],
   D = (0, Chunk468194.Mg)(Chunk477690.Z.USER_PREMIUM_GUILD_SUBSCRIPTION_EASTER_EGG_SIZE),
   L = 11,
   x = 125,
-  j = {
+  M = {
     leafPosition: {
       x: 85,
       y: 125
     },
     leafRotationDirection: 1
   },
-  M = 10,
+  j = 10,
   k = 80,
   U = 80,
   G = 180,
@@ -138,7 +138,7 @@ let w = ["TOP_LEFT", "TOP_RIGHT"],
       },
       leafRotationDirection: false
     },
-    BOTTOM_LEFT: C(S({}, j), {
+    BOTTOM_LEFT: C(S({}, M), {
       getConfettiPosition: e => ({
         x: e - L,
         y: x
@@ -148,7 +148,7 @@ let w = ["TOP_LEFT", "TOP_RIGHT"],
         y: false
       }
     }),
-    BOTTOM_RIGHT: C(S({}, j), {
+    BOTTOM_RIGHT: C(S({}, M), {
       getConfettiPosition: e => ({
         x: L,
         y: x
@@ -269,7 +269,7 @@ function et(e) {
         velocity: {
           type: "static-random",
           minValue: {
-            x: M * e.x,
+            x: j * e.x,
             y: U * e.y
           },
           maxValue: {
@@ -400,10 +400,10 @@ function en(e) {
           T(t.left + t.width / 2, t.top + t.height / 2)
         } else C(true)
     }, [T, P, A]),
-    j = i.useCallback(() => {
+    M = i.useCallback(() => {
       C(false)
     }, []),
-    M = i.useCallback(() => {
+    j = i.useCallback(() => {
       (0, p.AI)({
         settingsVisible: true
       }), (0, g.openUserSettings)(m.n.POGGERMODE_PANEL, {
@@ -411,8 +411,8 @@ function en(e) {
       }), C(false)
     }, []),
     k = i.useCallback((e, t) => {
-      (null == t ? true : t.id.startsWith(V)) && M()
-    }, [M]);
+      (null == t ? true : t.id.startsWith(V)) && j()
+    }, [j]);
   i.useEffect(() => S(k));
   let U = (0, r.jsx)(d.P3F, {
     className: I.iconWrapper,
@@ -436,8 +436,8 @@ function en(e) {
       children: (0, r.jsx)("div", {
         className: I.cannonWrapper,
         children: (0, r.jsx)(et, {
-          onAnimationComplete: j,
-          onClick: M
+          onAnimationComplete: M,
+          onClick: j
         })
       })
     }) : null]

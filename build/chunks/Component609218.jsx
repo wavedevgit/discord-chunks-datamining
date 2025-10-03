@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => k,
-  p: () => M
+  p: () => j
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -38,7 +38,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk42948 = require("./42948.js"),
   Chunk109194 = require("./109194.js"),
   Chunk352812 = require("./352812.js"),
-  M = function(e) {
+  j = function(e) {
     return e[e.NONE = 0] = "NONE", e[e.PARENT_CONTAINER = 1] = "PARENT_CONTAINER", e[e.TAB_PARENT_CONTAINER = 2] = "TAB_PARENT_CONTAINER", e
   }({});
 
@@ -47,7 +47,7 @@ function k(e) {
     containerContext: t,
     image: n,
     title: a,
-    description: M,
+    description: j,
     enableSocialProof: k,
     analyticsLocationSection: U,
     upsellViewedTrackingData: G,
@@ -84,7 +84,7 @@ function k(e) {
     ee = (0, T.Z)(A.Si.TIER_2);
   if ($) {
     let e;
-    e = V ? (0, m.rO)() ? D.Z : L.Z : (0, m.rO)() ? x.Z : j.Z;
+    e = V ? (0, m.rO)() ? D.Z : L.Z : (0, m.rO)() ? x.Z : M.Z;
     let t = V ? "nitro-pink" : "green";
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(u.ZMr, {
@@ -124,7 +124,7 @@ function k(e) {
               variant: "text-md/medium",
               color: "text-secondary",
               className: R.body,
-              children: M
+              children: j
             })]
           })]
         }), (0, r.jsx)("div", {
@@ -182,7 +182,7 @@ function k(e) {
         }), (0, r.jsx)(u.Text, {
           variant: "text-sm/medium",
           className: P.body,
-          children: M
+          children: j
         })]
       }), (0, r.jsxs)("div", {
         className: P.ctaContainer,

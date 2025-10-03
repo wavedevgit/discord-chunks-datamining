@@ -84,7 +84,7 @@ function S(e) {
       let {
         isShown: n
       } = t;
-      return (0, r.jsx)(O.ZP.Icon, E(I({}, e), {
+      return (0, r.jsx)(j.ZP.Icon, E(I({}, e), {
         ref: a,
         onClick: s,
         tooltip: n ? null : c,
@@ -101,17 +101,17 @@ function Z(e) {
     channel: t,
     closePopout: n,
     onSelect: i
-  } = e, l = (0, c.Z)(t), O = (0, f.Z)(t), I = (0, b.Z)(t.id), E = (0, m.Z)(t), S = (0, _.Z)({
+  } = e, l = (0, c.Z)(t), j = (0, f.Z)(t), I = (0, b.Z)(t.id), E = (0, m.Z)(t), S = (0, _.Z)({
     id: t.id,
     label: C.intl.string(C.t.DQ797u)
-  }), Z = (0, d.Z)(t), P = (0, u.Z)(t), T = (0, p.Z)(t, "Toolbar Overflow"), N = (0, g.Z)(t), R = (0, h.Z)(t), w = (0, y.Z)(t), A = j.vF.useSetting(), D = (0, s.e7)([x.Z], () => !a().isEmpty(x.Z.getVoiceStatesForChannel(t.id)));
+  }), Z = (0, d.Z)(t), T = (0, u.Z)(t), P = (0, p.Z)(t, "Toolbar Overflow"), N = (0, g.Z)(t), R = (0, h.Z)(t), w = (0, y.Z)(t), A = x.vF.useSetting(), D = (0, s.e7)([O.Z], () => !a().isEmpty(O.Z.getVoiceStatesForChannel(t.id)));
   return (0, r.jsxs)(o.v2r, {
     navId: "thread-context",
     onClose: n,
     "aria-label": C.intl.string(C.t["1NBjqa"]),
     onSelect: i,
     children: [(0, r.jsxs)(o.kSQ, {
-      children: [T, R]
+      children: [P, R]
     }), (0, r.jsxs)(o.kSQ, {
       children: [E, N, I, A && !D ? (0, r.jsx)(o.sNh, {
         id: "open",
@@ -121,7 +121,7 @@ function Z(e) {
         }
       }) : null]
     }), (0, r.jsxs)(o.kSQ, {
-      children: [w, l, O, P]
+      children: [w, l, j, T]
     }), (0, r.jsxs)(o.kSQ, {
       children: [Z, S]
     })]

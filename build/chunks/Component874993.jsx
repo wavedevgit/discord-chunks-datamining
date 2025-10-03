@@ -2,7 +2,7 @@
 /** chunk id: 874993, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => y
 }), require("./388685.js"), require("./472816.js"), require("./794429.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -26,10 +26,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk894780 = require("./894780.js");
 
-function C(e) {
+function y(e) {
   var t, n;
   let {
-    guildId: C,
+    guildId: y,
     setPreventNavigation: N = () => {}
   } = e, {
     editingRule: E,
@@ -37,11 +37,11 @@ function C(e) {
   } = (0, h.V)(), {
     guild: S,
     subsection: T
-  } = (0, l.cj)([o.Z], () => o.Z.getProps()), P = null != (n = null != (t = null == S ? true : S.id) ? t : C) ? n : _.lds, w = null != E, [R] = (0, g.RD)(P), {
+  } = (0, l.cj)([o.Z], () => o.Z.getProps()), P = null != (n = null != (t = null == S ? true : S.id) ? t : y) ? n : v.lds, w = null != E, [R] = (0, g.RD)(P), {
     rulesByTriggerType: Z
   } = (0, g.pH)(P), D = {
-    [p.vh.MEMBERS]: O.intl.string(O.t.sx4E5u),
-    [p.vh.CONTENT]: O.intl.string(O.t.fphZb2)
+    [p.vh.MEMBERS]: C.intl.string(C.t.sx4E5u),
+    [p.vh.CONTENT]: C.intl.string(C.t.fphZb2)
   }, A = i.useMemo(() => Object.values(null != Z ? Z : {}).flat().filter(d.lm), [Z]), L = {
     isInEditMode: w,
     setEditingRule: I
@@ -76,46 +76,46 @@ function C(e) {
   }, [N, w, M]);
   let U = (0, p.Z6)(P);
   return (0, r.jsxs)(a.hjN, {
-    title: O.intl.string(O.t.uRelg4),
+    title: C.intl.string(C.t.uRelg4),
     tag: "h1",
     children: [(0, r.jsxs)("div", {
-      className: y.descriptionContainer,
+      className: O.descriptionContainer,
       children: [(0, r.jsxs)(a.hjN, {
         tag: "h3",
-        className: y.description,
-        titleClassName: y.descriptionHeader,
+        className: O.description,
+        titleClassName: O.descriptionHeader,
         children: [(0, r.jsx)(a.Text, {
           variant: "text-md/medium",
           color: "header-secondary",
-          children: O.intl.string(O.t.EwuSCQ)
+          children: C.intl.string(C.t.EwuSCQ)
         }), (0, r.jsx)(a.Text, {
           variant: "text-sm/medium",
-          className: y.helpUrl,
-          children: O.intl.format(O.t["B+sgGh"], {
-            helpUrl: u.Z.getArticleURL(_.BhN.GUILD_AUTOMOD_BLOCKED_MESSAGE)
+          className: O.helpUrl,
+          children: C.intl.format(C.t["B+sgGh"], {
+            helpUrl: u.Z.getArticleURL(v.BhN.GUILD_AUTOMOD_BLOCKED_MESSAGE)
           })
         })]
       }), (0, r.jsxs)("div", {
-        className: y.descriptionAvatarContainer,
+        className: O.descriptionAvatarContainer,
         children: [(0, r.jsx)(a.qEK, {
           src: (0, m.j)(),
           size: a.EFr.SIZE_80,
-          "aria-label": O.intl.string(O.t.hG1StL)
+          "aria-label": C.intl.string(C.t.hG1StL)
         }), (0, r.jsx)(a.IGR, {
           text: (0, r.jsxs)("div", {
-            className: y.automodBadgeText,
+            className: O.automodBadgeText,
             children: [(0, r.jsx)(a.sV5, {
               size: "xxs",
               color: "currentColor",
-              className: y.checkmarkIcon
+              className: O.checkmarkIcon
             }), (0, r.jsx)(a.Text, {
               variant: "text-xs/bold",
-              className: y.automodText,
-              children: O.intl.string(O.t.hG1StL)
+              className: O.automodText,
+              children: C.intl.string(C.t.hG1StL)
             })]
           }),
           color: s.Z.unsafe_rawColors.BRAND_500.css,
-          className: y.textBadge
+          className: O.textBadge
         })]
       })]
     }), R ? (0, r.jsx)(f.Z, {}) : Object.entries(U).map(e => {
@@ -123,7 +123,7 @@ function C(e) {
       if (0 === n.length) return (0, r.jsx)(i.Fragment, {}, t);
       let l = null != D[t] ? (0, r.jsx)(a.hjN, {
         tag: "h3",
-        className: y.categoryHeader,
+        className: O.categoryHeader,
         children: (0, r.jsx)(a.Text, {
           variant: "text-lg/normal",
           color: "header-primary",
@@ -131,15 +131,15 @@ function C(e) {
         })
       }) : null;
       return (0, r.jsxs)("div", {
-        className: y.categoryContainer,
+        className: O.categoryContainer,
         children: [l, (0, r.jsx)(r.Fragment, {
           children: n.map(e => {
             var t;
-            return (0, r.jsx)(x.Z, {
+            return (0, r.jsx)(b.Z, {
               guildId: P,
               triggerType: e,
               rules: null != (t = Z[e]) ? t : [],
-              initWithEdit: T === _.KsC.AUTOMOD_MENTION_SPAM && e === v.fX.MENTION_SPAM
+              initWithEdit: T === v.KsC.AUTOMOD_MENTION_SPAM && e === _.fX.MENTION_SPAM
             }, e)
           })
         })]
@@ -147,12 +147,12 @@ function C(e) {
     }), null != S && (0, r.jsx)(c.k0, {
       guild: S,
       withDivider: false,
-      className: y.explicitContentFilterSection
-    }), (0, r.jsx)(b.Z, {
+      className: O.explicitContentFilterSection
+    }), (0, r.jsx)(x.Z, {
       guildId: P,
       existingRules: A
     }), w && (0, r.jsx)("div", {
-      className: y.endSpacer
+      className: O.endSpacer
     })]
   })
 }

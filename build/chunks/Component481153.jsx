@@ -41,14 +41,14 @@ let N = Chunk442837.ZP.connectStores([Chunk55563.Z, Chunk812206.Z, Chunk509545.Z
     error: t,
     giftCode: n,
     gifter: l,
-    sku: o,
+    sku: a,
     application: c,
     subscriptionPlan: m
   } = e, p = null == l ? v.intl.string(v.t.lTGZAg) : v.intl.formatToPlainString(v.t.TjWdPT, {
     username: l.username
-  }), f = o.name;
+  }), f = a.name;
   return null != m && (f = v.intl.formatToPlainString(m.interval === E.rV.MONTH ? v.t.CTpcCQ : v.t.rgPWGx, {
-    skuName: o.name,
+    skuName: a.name,
     intervalCount: m.intervalCount
   })), (0, r.jsxs)(i.Fragment, {
     children: [null != n.giftStyle ? (0, r.jsx)(g.Z, {
@@ -57,7 +57,7 @@ let N = Chunk442837.ZP.connectStores([Chunk55563.Z, Chunk812206.Z, Chunk509545.Z
       className: b.seasonalIcon
     }) : (0, r.jsx)(u.qE, {
       src: null != l ? l.getAvatarURL(true, 100) : null,
-      size: a.EFr.DEPRECATED_SIZE_100,
+      size: o.EFr.DEPRECATED_SIZE_100,
       className: I.marginBottom20
     }), null != t ? (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(u.DK, {
@@ -70,11 +70,11 @@ let N = Chunk442837.ZP.connectStores([Chunk55563.Z, Chunk812206.Z, Chunk509545.Z
         children: p
       }), (0, r.jsxs)(u.Dx, {
         className: s()(I.marginTop8, j.flexCenter),
-        children: [o.productLine !== x.POd.COLLECTIBLES && (0, r.jsx)(d.Z, {
+        children: [a.productLine !== x.POd.COLLECTIBLES && (0, r.jsx)(d.Z, {
           size: d.A.MEDIUM,
           className: b.applicationIcon,
           game: c,
-          skuId: o.id
+          skuId: a.id
         }), f]
       })]
     })]

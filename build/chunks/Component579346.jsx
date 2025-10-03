@@ -22,39 +22,39 @@ function h(e) {
   let {
     selectedColors: n,
     setSelectedColors: h,
-    defaultColor: b,
-    selectedEffectId: x,
-    className: j
-  } = e, _ = x === l.m.GRADIENT, S = (0, o.useCallback)(e => {
+    defaultColor: x,
+    selectedEffectId: _,
+    className: b
+  } = e, S = _ === r.m.GRADIENT, j = (0, l.useCallback)(e => {
     h([e]), c.default.track(u.rMx.DISPLAY_NAME_STYLES_COLOR_SELECTED, {
-      default: e === b,
+      default: e === x,
       colors: [e]
     })
-  }, [h, b]), C = (0, o.useCallback)(e => {
+  }, [h, x]), C = (0, l.useCallback)(e => {
     h(e), c.default.track(u.rMx.DISPLAY_NAME_STYLES_COLOR_SELECTED, {
       default: false,
       colors: e
     })
   }, [h]);
-  return (0, r.jsxs)("div", {
-    className: j,
-    children: [(0, r.jsxs)(a.X6q, {
+  return (0, o.jsxs)("div", {
+    className: b,
+    children: [(0, o.jsxs)(a.X6q, {
       variant: "heading-md/semibold",
       className: g.selectorHeading,
-      children: [m.intl.string(p.default["JOpi7+"]), (0, r.jsx)(i.SrA, {
+      children: [m.intl.string(p.default["JOpi7+"]), (0, o.jsx)(i.SrA, {
         size: "xs",
         color: i.TVs.colors.TEXT_DEFAULT
       })]
-    }), (0, r.jsx)(s.default, {
+    }), (0, o.jsx)(s.default, {
       className: f.colorPicker,
       colorContainerClassName: f.colorPickerContainer,
-      defaultColor: b,
-      colors: _ ? d.vK : d.gD,
+      defaultColor: x,
+      colors: S ? d.vK : d.gD,
       value: n[0],
       secondaryValue: null != (t = n[1]) ? t : true,
-      onChange: S,
+      onChange: j,
       onChangeGradientColors: C,
-      isGradient: _,
+      isGradient: S,
       gradientButtonClassName: f.gradientPicker,
       gradientDegrees: 90,
       allowBlackCustomColor: true,

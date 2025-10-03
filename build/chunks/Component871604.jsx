@@ -98,8 +98,8 @@ function R(e) {
     x = w ? T.intl.string(T.t["Cia+Aw"]) : T.intl.string(T.t.NgXl3N);
   if (null == R || !(0, d.Eb)(R)) return null;
   let {
-    customInstallUrl: j
-  } = R, M = null == j || E.Z.isDiscordUrl(j) ? o.qJs : o.Gr1, k = w ? true : M;
+    customInstallUrl: M
+  } = R, j = null == M || E.Z.isDiscordUrl(M) ? o.qJs : o.Gr1, k = w ? true : j;
   return g.wS ? (0, r.jsx)(o.yRy, {
     targetElementRef: N,
     renderPopout: e => {

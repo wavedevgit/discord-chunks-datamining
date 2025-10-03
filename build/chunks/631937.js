@@ -1,4 +1,4 @@
-/** Chunk was on 9665 **/
+/** Chunk was on 50118 **/
 /** chunk id: 631937, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -16,24 +16,24 @@ var Chunk647438 = require("./647438.js"),
 
 function h(e) {
   let t = (0, u.Z)(e),
-    n = (0, i.e7)([a.default], () => a.default.locale),
-    h = (0, i.e7)([c.Z], () => c.Z.getChangelog(null != t ? t : "", n), [t, n]),
+    n = (0, r.e7)([a.default], () => a.default.locale),
+    h = (0, r.e7)([c.Z], () => c.Z.getChangelog(null != t ? t : "", n), [t, n]),
     f = (0, d.Z)(e),
-    m = r.useRef(f ? Date.now() : null),
-    g = (0, i.e7)([o.ZP], () => o.ZP.getUnreadCount(e), [e]),
-    b = r.useRef(g);
-  r.useEffect(() => {
+    m = i.useRef(f ? Date.now() : null),
+    g = (0, r.e7)([o.ZP], () => o.ZP.getUnreadCount(e), [e]),
+    b = i.useRef(g);
+  i.useEffect(() => {
     b.current = g
-  }), r.useEffect(() => {
+  }), i.useEffect(() => {
     m.current = Date.now()
-  }, [f]), r.useEffect(() => {
+  }, [f]), i.useEffect(() => {
     f && null != t && l.Z.fetchChangelog(t, n, true)
-  }, [t, n, f]), r.useEffect(() => {
+  }, [t, n, f]), i.useEffect(() => {
     f && null != h && s.default.track(p.rMx.CHANGE_LOG_OPENED, {
       change_log_id: "".concat(h.date, ":").concat(h.revision),
       unread_count: b.current
     })
-  }, [f, h]), r.useEffect(() => {
+  }, [f, h]), i.useEffect(() => {
     let e = m.current;
     return () => {
       f && null != h && null != e && (s.default.track(p.rMx.CHANGE_LOG_CLOSED, {

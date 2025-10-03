@@ -22,22 +22,22 @@ let d = e => {
   } = e, {
     user: g,
     author: f
-  } = (0, o.AJ)(d), b = null != (n = null != (t = null == f ? true : f.nick) ? t : null == g ? true : g.username) ? n : "", p = (0, i.l)({
+  } = (0, o.AJ)(d), x = null != (n = null != (t = null == f ? true : f.nick) ? t : null == g ? true : g.username) ? n : "", j = (0, i.l)({
     user: null == a ? true : a.author,
     channelId: d.id,
     guildId: d.guild_id,
     messageId: null == a ? true : a.id,
     stopPropagation: true,
     ariaLabel: c.intl.formatToPlainString(c.t.CSIeU1, {
-      name: b
+      name: x
     })
-  })(null != f ? f : true)(b, d.id);
-  return (0, r.jsxs)(l.Text, {
+  })(null != f ? f : true)(x, d.id);
+  return (0, l.jsxs)(r.Text, {
     tag: "span",
     className: s()(u.author, {
       [u.hasUnreads]: h
     }),
     variant: "text-sm/semibold",
-    children: [p, true === m ? ": " : null]
+    children: [j, true === m ? ": " : null]
   })
 }

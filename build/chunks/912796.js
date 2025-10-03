@@ -236,7 +236,7 @@ let I = /\b\B/,
   x = {
     begin: /\b(a|an|the|are|I'm|isn't|don't|doesn't|won't|but|just|should|pretty|simply|enough|gonna|going|wtf|so|such|will|you|your|they|like|more)\b/
   },
-  j = function(e, t, n = {}) {
+  M = function(e, t, n = {}) {
     let r = i({
       scope: "comment",
       begin: e,
@@ -255,9 +255,9 @@ let I = /\b\B/,
       begin: m(/[ ]+/, "(", a, /[.]?[:]?([.][ ]|[ ])/, "){3}")
     }), r
   },
-  M = j("//", "$"),
-  k = j("/\\*", "\\*/"),
-  U = j("#", "$"),
+  j = M("//", "$"),
+  k = M("/\\*", "\\*/"),
+  U = M("#", "$"),
   G = {
     scope: "regexp",
     begin: /\/(?=[^/\n]*\/)/,
@@ -289,9 +289,9 @@ var F = Object.freeze({
     relevance: 0
   },
   BINARY_NUMBER_RE: N,
-  COMMENT: j,
+  COMMENT: M,
   C_BLOCK_COMMENT_MODE: k,
-  C_LINE_COMMENT_MODE: M,
+  C_LINE_COMMENT_MODE: j,
   C_NUMBER_MODE: {
     scope: "number",
     begin: C,
@@ -630,7 +630,7 @@ let em = r,
             i = u(w, r);
           if (i) {
             let [e, a] = i;
-            if (L.addText(n), n = "", l[r] = (l[r] || 0) + 1, l[r] <= eb && (j += a), e.startsWith("_")) n += t[0];
+            if (L.addText(n), n = "", l[r] = (l[r] || 0) + 1, l[r] <= eb && (M += a), e.startsWith("_")) n += t[0];
             else {
               let n = C.classNameAliases[e] || e;
               p(t[0], n)
@@ -648,7 +648,7 @@ let em = r,
           if (!r[w.subLanguage]) return void L.addText(x);
           e = b(w.subLanguage, x, true, D[w.subLanguage]), D[w.subLanguage] = e._top
         } else e = v(x, w.subLanguage.length ? w.subLanguage : null);
-        w.relevance > 0 && (j += e.relevance), L.__addSublanguage(e._emitter, e.language)
+        w.relevance > 0 && (M += e.relevance), L.__addSublanguage(e._emitter, e.language)
       }
 
       function _() {
@@ -716,7 +716,7 @@ let em = r,
         if (!i) return eE;
         let a = w;
         w.endScope && w.endScope._wrap ? (_(), p(n, w.endScope._wrap)) : w.endScope && w.endScope._multi ? (_(), h(w.endScope, e)) : a.skip ? x += n : (a.returnEnd || a.excludeEnd || (x += n), _(), a.excludeEnd && (x = n));
-        do w.scope && L.closeNode(), w.skip || w.subLanguage || (j += w.relevance), w = w.parent; while (w !== i.parent);
+        do w.scope && L.closeNode(), w.skip || w.subLanguage || (M += w.relevance), w = w.parent; while (w !== i.parent);
         return i.starts && m(i.starts, e), a.returnEnd ? 0 : n.length
       }
 
@@ -760,27 +760,27 @@ let em = r,
         L = new c.__emitter(c);
       T();
       let x = "",
-        j = 0,
         M = 0,
+        j = 0,
         k = 0,
         U = false;
       try {
         if (C.__emitTokens) C.__emitTokens(t, L);
         else {
           for (w.matcher.considerAll();;) {
-            k++, U ? U = false : w.matcher.considerAll(), w.matcher.lastIndex = M;
+            k++, U ? U = false : w.matcher.considerAll(), w.matcher.lastIndex = j;
             let e = w.matcher.exec(t);
             if (!e) break;
-            let n = t.substring(M, e.index),
+            let n = t.substring(j, e.index),
               r = A(n, e);
-            M = e.index + r
+            j = e.index + r
           }
-          A(t.substring(M))
+          A(t.substring(j))
         }
         return L.finalize(), R = L.toHTML(), {
           language: e,
           value: R,
-          relevance: j,
+          relevance: M,
           illegal: false,
           _emitter: L,
           _top: w
@@ -793,8 +793,8 @@ let em = r,
           relevance: 0,
           _illegalBy: {
             message: n.message,
-            index: M,
-            context: t.slice(M - 100, M + 100),
+            index: j,
+            context: t.slice(j - 100, j + 100),
             mode: n.mode,
             resultSoFar: R
           },
@@ -942,7 +942,7 @@ let em = r,
       })
     }
 
-    function j(e) {
+    function M(e) {
       return ei("10.7.0", "highlightBlock will be removed entirely in v12.0"), ei("10.7.0", "Please use highlightElement now."), T(e)
     }
     for (let n in Object.assign(e, {
@@ -950,7 +950,7 @@ let em = r,
         highlightAuto: v,
         highlightAll: N,
         highlightElement: T,
-        highlightBlock: j,
+        highlightBlock: M,
         configure: function(e) {
           c = eg(c, e)
         },

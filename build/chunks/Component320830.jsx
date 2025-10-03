@@ -43,7 +43,7 @@ let p = (0, Chunk624138.Mg)(Chunk477690.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
   _ = function(e) {
     return class extends i.Component {
       componentDidMount() {
-        a.tq || (window.addEventListener("resize", this.handleResizeDebounced), this.handleResize())
+        o.tq || (window.addEventListener("resize", this.handleResizeDebounced), this.handleResize())
       }
       componentWillUnmount() {
         clearTimeout(this.timeout), window.removeEventListener("resize", this.handleResizeDebounced)
@@ -58,7 +58,7 @@ let p = (0, Chunk624138.Mg)(Chunk477690.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
         this.state.shouldAnimate ? this.animateTo(0, e) : e()
       }
       animateTo(e, t) {
-        o.Z.spring(this.anim, m({
+        a.Z.spring(this.anim, m({
           toValue: e
         }, f)).start(t)
       }
@@ -88,7 +88,7 @@ let p = (0, Chunk624138.Mg)(Chunk477690.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
               let {
                 reducedMotion: n
               } = t;
-              return (0, r.jsx)(o.Z.div, {
+              return (0, r.jsx)(a.Z.div, {
                 className: h.animatedDiv,
                 style: this.getAnimatedStyle(n.enabled),
                 children: (0, r.jsx)(e, m({}, this.props))
@@ -98,8 +98,8 @@ let p = (0, Chunk624138.Mg)(Chunk477690.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
         })
       }
       constructor(...e) {
-        super(...e), g(this, "timeout", true), g(this, "anim", new o.Z.Value(0)), g(this, "state", {
-          shouldAnimate: !a.tq
+        super(...e), g(this, "timeout", true), g(this, "anim", new a.Z.Value(0)), g(this, "state", {
+          shouldAnimate: !o.tq
         }), g(this, "handleResize", () => {
           let e = window.innerWidth > p;
           !this.state.shouldAnimate && e && this.anim.setValue(1), this.setState({

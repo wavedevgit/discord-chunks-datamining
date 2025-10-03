@@ -429,7 +429,7 @@ function R(e) {
     minSize: a,
     defaultSize: o
   } = e;
-  return N(t, (e, t) => j({
+  return N(t, (e, t) => M({
     widget: e,
     anchor: n,
     size: r,
@@ -485,7 +485,7 @@ function x(e) {
   })
 }
 
-function j(e) {
+function M(e) {
   let {
     widget: t,
     anchor: n,
@@ -509,7 +509,7 @@ function j(e) {
   }
 }
 
-function M(e) {
+function j(e) {
   i = O(b({}, i), {
     [e.id]: e.merge({
       showExtrasHintTimestamp: Date.now()
@@ -522,7 +522,7 @@ function k(e) {
     widgetId: t
   } = e;
   return N(t, (e, t) => {
-    M(e)
+    j(e)
   })
 }
 

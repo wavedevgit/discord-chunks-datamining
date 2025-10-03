@@ -1,11 +1,11 @@
 /** Chunk was on 39476 **/
 /** chunk id: 822869, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Ad: () => y,
+  Ad: () => m,
   Lb: () => c,
-  ZF: () => p,
+  ZF: () => f,
   gP: () => d,
-  mh: () => f,
+  mh: () => p,
   sF: () => u
 });
 var Chunk647438 = require("./647438.js"),
@@ -16,7 +16,7 @@ var Chunk647438 = require("./647438.js"),
   Chunk981631 = require("./981631.js");
 
 function c(e, t, n) {
-  a.default.track(s.rMx.FORWARD_MESSAGE_STARTED, {
+  o.default.track(s.rMx.FORWARD_MESSAGE_STARTED, {
     channel_id: e,
     message_id: t,
     source: n
@@ -27,14 +27,14 @@ function u(e) {
   let {
     channelId: t,
     messageId: n,
-    numDestinationChanges: r,
-    numQueryChanges: i
+    numDestinationChanges: i,
+    numQueryChanges: r
   } = e;
-  a.default.track(s.rMx.FORWARD_MESSAGE_CANCELLED, {
+  o.default.track(s.rMx.FORWARD_MESSAGE_CANCELLED, {
     channel_id: t,
     message_id: n,
-    num_destination_changes: r,
-    num_query_changes: i
+    num_destination_changes: i,
+    num_query_changes: r
   })
 }
 
@@ -42,39 +42,39 @@ function d(e) {
   let {
     channelId: t,
     messageId: n,
-    hasError: r,
-    hasContextMessage: i,
+    hasError: i,
+    hasContextMessage: r,
     numDestinations: c,
     numDestinationChanges: u,
     numQueryChanges: d,
-    anyDestinationHasSlowmode: p,
-    source: f
+    anyDestinationHasSlowmode: f,
+    source: p
   } = e;
-  if (a.default.track(s.rMx.FORWARD_MESSAGE_SENT, {
+  if (o.default.track(s.rMx.FORWARD_MESSAGE_SENT, {
       channel_id: t,
       message_id: n,
-      has_error: r,
-      has_context_message: i,
+      has_error: i,
+      has_context_message: r,
       num_destinations: c,
       num_destination_changes: u,
       num_query_changes: d,
-      any_destination_has_slowmode: p
-    }), "message-shortcut" === f) {
-    let e = o.Z.getChannel(t);
-    a.default.track(s.rMx.MESSAGE_SHORTCUT_ACTION_SENT, function(e) {
+      any_destination_has_slowmode: f
+    }), "message-shortcut" === p) {
+    let e = a.Z.getChannel(t);
+    o.default.track(s.rMx.MESSAGE_SHORTCUT_ACTION_SENT, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
-          r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          i = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-          var r;
-          r = n[t], t in e ? Object.defineProperty(e, t, {
-            value: r,
+        }))), i.forEach(function(t) {
+          var i;
+          i = n[t], t in e ? Object.defineProperty(e, t, {
+            value: i,
             enumerable: true,
             configurable: true,
             writable: true
-          }) : e[t] = r
+          }) : e[t] = i
         })
       }
       return e
@@ -85,9 +85,9 @@ function d(e) {
   }
 }
 
-function p() {
+function f() {
   return Chunk647438.useMemo(() => (0, Chunk392711.once)((e, t, n) => {
-    a.default.track(s.rMx.FORWARD_ADD_RECIPIENT, {
+    o.default.track(s.rMx.FORWARD_ADD_RECIPIENT, {
       channel_id: e,
       message_id: t,
       has_query: n
@@ -95,18 +95,18 @@ function p() {
   }), [])
 }
 
-function f() {
+function p() {
   return Chunk647438.useMemo(() => (0, Chunk392711.once)((e, t) => {
-    a.default.track(s.rMx.FORWARD_EDIT_SEARCH, {
+    o.default.track(s.rMx.FORWARD_EDIT_SEARCH, {
       channel_id: e,
       message_id: t
     })
   }), [])
 }
 
-function y() {
+function m() {
   return Chunk647438.useMemo(() => (0, Chunk392711.once)((e, t) => {
-    a.default.track(s.rMx.FORWARD_EDIT_CONTEXT_MESSAGE, {
+    o.default.track(s.rMx.FORWARD_EDIT_CONTEXT_MESSAGE, {
       channel_id: e,
       message_id: t
     })

@@ -37,10 +37,10 @@ let x = 15 * Chunk70956.Z.Millis.MINUTE,
       onUserContextMenu: n,
       onChannelContextMenu: l,
       quest: a
-    } = e, o = i.useRef(null), c = (0, r.jsx)(v.Z, {
+    } = e, o = i.useRef(null), c = (0, r.jsx)(y.Z, {
       party: t,
       onUserContextMenu: n
-    }), d = (0, r.jsx)(y.Z, {
+    }), d = (0, r.jsx)(v.Z, {
       party: t,
       onChannelContextMenu: l,
       quest: a

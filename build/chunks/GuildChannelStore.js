@@ -50,11 +50,11 @@ let T = "SELECTABLE",
       name: "Uncategorized"
     })
   },
-  L = M(Chunk981631.kod),
+  L = j(Chunk981631.kod),
   x = [],
-  j = {};
+  M = {};
 
-function M(e) {
+function j(e) {
   return {
     id: e,
     [T]: [],
@@ -130,7 +130,7 @@ function H() {
 }
 
 function Y(e) {
-  let t = M(e);
+  let t = j(e);
   return C[e] = t, w[e] = [], V(t), G(t), W(t), en(e), t
 }
 
@@ -354,7 +354,7 @@ class el extends(r = Chunk442837.ZP.Store) {
   }
   getTextChannelNameDisambiguations(e) {
     var t;
-    return null != e && null != (t = N[e]) ? t : j
+    return null != e && null != (t = N[e]) ? t : M
   }
 }
 I(el, "displayName", "GuildChannelStore");

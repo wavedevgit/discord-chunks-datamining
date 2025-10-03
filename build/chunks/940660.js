@@ -52,8 +52,8 @@ var a, Chunk76466 = require("./76466.js"),
   D = RegExp("&#8203;?", "g"),
   L = ["bold", "bolder", "500", "600", "700", "800", "900"],
   x = ["light", "lighter", "normal", "100", "200", "300", "400"],
-  j = ["className", "href", "rel", "target", "title"],
-  M = ["alt", "className", "height", "src", "width"],
+  M = ["className", "href", "rel", "target", "title"],
+  j = ["alt", "className", "height", "src", "width"],
   k = (i(a = {}, Chunk606166("public/DraftStyleDefault/depth0"), 0), i(a, Chunk606166("public/DraftStyleDefault/depth1"), 1), i(a, Chunk606166("public/DraftStyleDefault/depth2"), 2), i(a, Chunk606166("public/DraftStyleDefault/depth3"), 3), i(a, Chunk606166("public/DraftStyleDefault/depth4"), 4), a),
   U = E({
     b: "BOLD",
@@ -210,7 +210,7 @@ var a, Chunk76466 = require("./76466.js"),
       if (I(e)) {
         var n = e,
           r = {};
-        M.forEach(function(e) {
+        j.forEach(function(e) {
           var t = n.getAttribute(e);
           t && (r[e] = t)
         }), this.currentEntity = this.entityMap.__create("IMAGE", "IMMUTABLE", r), h("draftjs_fix_paste_for_img") ? "presentation" !== n.getAttribute("role") && this._appendText("\uD83D\uDCF7", t) : this._appendText("\uD83D\uDCF7", t), this.currentEntity = null
@@ -219,7 +219,7 @@ var a, Chunk76466 = require("./76466.js"),
       if (y(e)) {
         var r = e,
           i = {};
-        j.forEach(function(e) {
+        M.forEach(function(e) {
           var t = r.getAttribute(e);
           t && (i[e] = t)
         }), i.url = new d(r.href).toString(), this.currentEntity = this.entityMap.__create("LINK", "MUTABLE", i || {}), t.push.apply(t, this._toBlockConfigs(Array.from(e.childNodes), n)), this.currentEntity = null

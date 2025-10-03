@@ -52,41 +52,41 @@ function h(e) {
   let {
     guildId: t,
     triggerType: n
-  } = e, h = i.useMemo(() => () => (0, o.ep)(t, n), [t, n]), [b] = i.useState(h), [x, j] = i.useState(false), {
-    editingRule: v,
-    createNewEditingRule: _
+  } = e, h = i.useMemo(() => () => (0, o.ep)(t, n), [t, n]), [x] = i.useState(h), [b, j] = i.useState(false), {
+    editingRule: _,
+    createNewEditingRule: v
   } = (0, d.V)(), {
-    getDefaultRuleName: O
-  } = c.I6[n], y = !(0, o.Vb)(v) && (null == v ? true : v.triggerType) === n, [C, N] = i.useState(y ? v : b), E = (0, a.q_F)({
-    opacity: +!y,
-    pointerEvents: y ? "none" : "all",
+    getDefaultRuleName: C
+  } = c.I6[n], O = !(0, o.Vb)(_) && (null == _ ? true : _.triggerType) === n, [y, N] = i.useState(O ? _ : x), E = (0, a.q_F)({
+    opacity: +!O,
+    pointerEvents: O ? "none" : "all",
     config: f(p({}, l.config.stiff), {
       clamp: true
     })
   }), I = (0, a.q_F)({
-    opacity: +!!y,
-    pointerEvents: y ? "all" : "none",
+    opacity: +!!O,
+    pointerEvents: O ? "all" : "none",
     config: f(p({}, l.config.stiff), {
       clamp: true
     }),
     onStart: () => {
-      N(y ? v : b)
+      N(O ? _ : x)
     },
     onRest: () => {
-      N(y ? v : b), j(y)
+      N(O ? _ : x), j(O)
     }
   });
-  return null == v || y ? (0, r.jsxs)("div", {
+  return null == _ || O ? (0, r.jsxs)("div", {
     className: g.mainRuleContainer,
     style: {
-      height: y ? "auto" : "60px"
+      height: O ? "auto" : "60px"
     },
     children: [(0, r.jsx)(l.animated.div, {
       className: g.animatedRuleCardContainer,
       style: I,
       children: (0, r.jsx)(u.Z, {
-        rule: C,
-        persistEdit: x
+        rule: y,
+        persistEdit: b
       })
     }), (0, r.jsx)(l.animated.div, {
       className: g.animatedNewRuleContainer,
@@ -94,7 +94,7 @@ function h(e) {
       children: (0, r.jsxs)(a.P3F, {
         className: g.addAnotherRuleCardContainer,
         onClick: () => {
-          _(t, n)
+          v(t, n)
         },
         children: [(0, r.jsx)(a.oFk, {
           size: "custom",
@@ -106,7 +106,7 @@ function h(e) {
           variant: "text-md/semibold",
           color: "text-link",
           children: m.intl.format(m.t.dNjRAQ, {
-            ruleName: O()
+            ruleName: C()
           })
         })]
       })

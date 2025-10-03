@@ -10,6 +10,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
+  Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk456100 = require("./456100.js"),
   Chunk317381 = require("./317381.js"),
@@ -25,16 +26,15 @@ var Chunk120356 = require("./120356.js"),
   Chunk853856 = require("./853856.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk132789 = require("./132789.js"),
-  Chunk78480 = require("./78480.js");
+  Chunk132789 = require("./132789.js");
 
 function S(e, t) {
   return 0 === t.length ? null : (0, r.jsxs)("div", {
-    className: C.row,
+    className: E.row,
     children: [(0, r.jsx)(e, {
-      className: C.activityIcon,
+      className: E.activityIcon,
       color: "currentColor"
-    }), (0, r.jsx)(p.ZP, {
+    }), (0, r.jsx)(h.ZP, {
       guildId: true,
       users: t,
       max: 6
@@ -42,30 +42,30 @@ function S(e, t) {
   })
 }
 
-function P() {
-  let e = (0, Chunk442837.Wu)([Chunk853856.Z, Chunk592125.Z], () => Chunk709054.default.keys(Chunk853856.Z.getFavoriteChannels()).map(e => m.Z.getChannel(e)).filter(Chunk823379.lm)),
+function I() {
+  let e = (0, Chunk442837.Wu)([Chunk853856.Z, Chunk592125.Z], () => Chunk709054.default.keys(Chunk853856.Z.getFavoriteChannels()).map(e => b.Z.getChannel(e)).filter(Chunk823379.lm)),
     t = module.map(e => e.id),
-    n = module.filter(e => e.type === j.d4z.GUILD_VOICE),
-    i = module.filter(e => e.type === j.d4z.GUILD_STAGE_VOICE).map(e => e.id),
-    l = (0, Chunk442837.Wu)([Chunk938475.ZP], () => a().flatMap(require, e => _.ZP.getVoiceStatesForChannel(e).map(e => {
+    n = module.filter(e => e.type === x.d4z.GUILD_VOICE),
+    i = module.filter(e => e.type === x.d4z.GUILD_STAGE_VOICE).map(e => e.id),
+    l = (0, Chunk442837.Wu)([Chunk938475.ZP], () => a().flatMap(require, e => y.ZP.getVoiceStatesForChannel(e).map(e => {
       let {
         user: t
       } = e;
       return t
     })), [require]),
-    o = (0, Chunk442837.Wu)([Chunk565799.Z], () => a().flatMap(Chunk120356, e => f.Z.getMutableParticipants(e, h.pV.SPEAKER).filter(e => e.type === h.Ui.VOICE).map(e => {
+    o = (0, Chunk442837.Wu)([Chunk565799.Z], () => a().flatMap(Chunk120356, e => f.Z.getMutableParticipants(e, g.pV.SPEAKER).filter(e => e.type === g.Ui.VOICE).map(e => {
       let {
         user: t
       } = e;
       return t
     }))),
-    x = (0, Chunk442837.e7)([Chunk565799.Z], () => {
+    c = (0, Chunk442837.e7)([Chunk565799.Z], () => {
       let e = 0;
       for (let t of Chunk120356) e += Chunk565799.Z.getParticipantCount(exports, Chunk501655.pV.AUDIENCE);
       return module
     }),
-    E = (0, Chunk442837.Wu)([Chunk199902.Z], () => Chunk199902.Z.getAllApplicationStreams().filter(e => t.includes(e.channelId)).map(e => e.ownerId), [exports]),
-    P = (0, Chunk442837.Wu)([Chunk317381.ZP], () => {
+    C = (0, Chunk442837.Wu)([Chunk199902.Z], () => Chunk199902.Z.getAllApplicationStreams().filter(e => t.includes(e.channelId)).map(e => e.ownerId), [exports]),
+    I = (0, Chunk442837.Wu)([Chunk317381.ZP], () => {
       let e = Chunk317381.ZP.getEmbeddedActivitiesByChannel(),
         n = [];
       for (let l of exports) {
@@ -74,10 +74,10 @@ function P() {
       }
       return require
     }, [exports]),
-    I = (0, Chunk442837.Wu)([Chunk594174.default], () => P.map(e => b.default.getUser(e)), [P]),
-    N = (0, Chunk442837.Wu)([Chunk594174.default], () => Chunk78480.map(e => b.default.getUser(e)), [Chunk78480]),
-    w = S(Chunk481060.gj8, l.filter(e => !E.includes(e.id) && !P.includes(e.id))),
-    Z = 0 === Chunk392711.length ? null : (0, Chunk951288.jsxs)("div", {
+    P = (0, Chunk442837.Wu)([Chunk594174.default], () => I.map(e => _.default.getUser(e)), [I]),
+    N = (0, Chunk442837.Wu)([Chunk594174.default], () => Chunk388032.map(e => _.default.getUser(e)), [Chunk388032]),
+    Z = S(Chunk481060.gj8, l.filter(e => !C.includes(e.id) && !I.includes(e.id))),
+    w = 0 === Chunk392711.length ? null : (0, Chunk951288.jsxs)("div", {
       className: Chunk132789.row,
       children: [(0, Chunk951288.jsx)(Chunk481060.ewx, {
         size: "lg",
@@ -96,11 +96,11 @@ function P() {
           className: Chunk132789.stageListenerCount,
           color: "text-default",
           variant: "text-xs/medium",
-          children: Chunk388032
+          children: Chunk28664
         })]
       })]
     }),
-    T = S(Chunk481060.hGI, N.filter(e => null != e && !P.includes(e.id))),
+    T = S(Chunk481060.hGI, N.filter(e => null != e && !I.includes(e.id))),
     {
       enabled: A
     } = Chunk456100.c.useExperiment({
@@ -108,13 +108,13 @@ function P() {
     }, {
       autoTrackExposure: true
     }),
-    R = S(A ? Chunk481060.iWm : Chunk481060.nG3, I);
+    R = S(A ? Chunk481060.iWm : Chunk481060.nG3, P);
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-    children: [Z, w, T, R]
+    children: [w, Z, T, R]
   })
 }
 
-function I() {
+function P() {
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsx)("div", {
       className: l()(Chunk132789.row, Chunk132789.rowGuildName),
@@ -122,7 +122,7 @@ function I() {
         className: l()(Chunk132789.guildNameText, Chunk132789.guildNameTextLimitedSize),
         children: Chunk388032.intl.string(Chunk388032.t.wMWycn)
       })
-    }), (0, Chunk951288.jsx)(P, {})]
+    }), (0, Chunk951288.jsx)(I, {})]
   })
 }
 
@@ -132,45 +132,14 @@ function N(e) {
     onShow: n,
     children: i
   } = e;
-  return (0, r.jsx)(c.ua7, {
-    hideOnClick: true,
+  return (0, r.jsx)(c.u, {
     spacing: 12,
     position: "right",
-    text: (0, r.jsx)(I, {}),
+    __unsupportedReactNodeAsText: (0, r.jsx)(P, {}),
     "aria-label": t,
-    tooltipClassName: E.listItemTooltip,
     onTooltipShow: n,
-    children: e => {
-      var t, n;
-      return (0, r.jsx)("div", (t = function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-              value: r,
-              enumerable: true,
-              configurable: true,
-              writable: true
-            }) : e[t] = r
-          })
-        }
-        return e
-      }({}, e), n = n = {
-        children: i
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, r)
-        }
-        return n
-      })(Object(n)).forEach(function(e) {
-        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-      }), t))
-    }
+    children: (0, r.jsx)("div", {
+      children: i
+    })
   })
 }

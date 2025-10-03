@@ -1,4 +1,4 @@
-/** Chunk was on 9665 **/
+/** Chunk was on 50118 **/
 /** chunk id: 199649, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -22,12 +22,12 @@ function g(e) {
   var t, g;
   let {
     channel: b,
-    children: y
-  } = e, C = (0, i.e7)([c.Z], () => c.Z.isBlocked(b.getRecipientId()));
+    children: C
+  } = e, y = (0, r.e7)([c.Z], () => c.Z.isBlocked(b.getRecipientId()));
   (0, o.Z)(b.id);
   let _ = (0, s.Z)(b.id),
     v = b.isSystemDM(),
-    x = C && !v && !b.isMultiUserDM(),
+    x = y && !v && !b.isMultiUserDM(),
     O = {};
   if (v) {
     let e = _ ? m.intl.string(m.t["+KSnWV"]) : m.intl.string(m.t.hvVgAQ);
@@ -44,30 +44,30 @@ function g(e) {
   } else x && (O.message = m.intl.string(m.t["9T6N5+"]), O.buttonText = m.intl.string(m.t.XyHpKC), O.onButtonClick = () => {
     a.Z.unblockUser(b.getRecipientId())
   });
-  return (0, r.jsx)(p.Z, (t = function(e) {
+  return (0, i.jsx)(p.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
-        r = Object.keys(n);
-      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        i = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
         return Object.getOwnPropertyDescriptor(n, e).enumerable
-      }))), r.forEach(function(t) {
-        var r;
-        r = n[t], t in e ? Object.defineProperty(e, t, {
-          value: r,
+      }))), i.forEach(function(t) {
+        var i;
+        i = n[t], t in e ? Object.defineProperty(e, t, {
+          value: i,
           enumerable: true,
           configurable: true,
           writable: true
-        }) : e[t] = r
+        }) : e[t] = i
       })
     }
     return e
   }({}, O), g = g = {
-    children: y
+    children: C
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(g)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
+      var i = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, i)
     }
     return n
   })(Object(g)).forEach(function(e) {

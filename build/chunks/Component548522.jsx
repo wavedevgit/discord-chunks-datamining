@@ -22,33 +22,33 @@ function f(e) {
   let {
     guild: n,
     formFields: c
-  } = e, [f, b] = i.useState(c);
-  i.useEffect(() => b(c), [c]);
-  let x = null != (t = (0, a.A)({
+  } = e, [f, x] = i.useState(c);
+  i.useEffect(() => x(c), [c]);
+  let b = null != (t = (0, a.A)({
       guildId: n.id
     })) ? t : 0,
-    [j, v] = i.useState(null),
-    _ = i.useMemo(() => null == f ? true : f.some(e => (0, s.J)(e)), [f]),
-    O = i.useMemo(() => f.length === m.nx, [f]),
-    y = i.useCallback(e => {
-      u.Z.setPendingMemberVerificationRules(n.id, e), b(e), null != j && v(null)
+    [j, _] = i.useState(null),
+    v = i.useMemo(() => null == f ? true : f.some(e => (0, s.J)(e)), [f]),
+    C = i.useMemo(() => f.length === m.nx, [f]),
+    O = i.useCallback(e => {
+      u.Z.setPendingMemberVerificationRules(n.id, e), x(e), null != j && _(null)
     }, [j, n.id]),
-    C = i.useCallback(e => {
-      y([...f, e])
-    }, [f, y]),
+    y = i.useCallback(e => {
+      O([...f, e])
+    }, [f, O]),
     N = i.useCallback(e => {
-      y([...f.slice(0, e), ...f.slice(e + 1)])
-    }, [f, y]),
+      O([...f.slice(0, e), ...f.slice(e + 1)])
+    }, [f, O]),
     E = i.useCallback((e, t) => {
       if (f[e] === t) return;
       let n = [...f];
-      n[e] = t, y(n)
-    }, [f, y]),
+      n[e] = t, O(n)
+    }, [f, O]),
     I = i.useCallback((e, t, n) => {
       let r = f.indexOf(e),
         i = [...f];
-      null != t && t !== r && (i.splice(r, 1), i.splice(t, 0, e), b(i)), n ? (y(i), null !== j && v(null)) : j !== t && v(t)
-    }, [j, f, y]);
+      null != t && t !== r && (i.splice(r, 1), i.splice(t, 0, e), x(i)), n ? (O(i), null !== j && _(null)) : j !== t && _(t)
+    }, [j, f, O]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.X6q, {
       variant: "text-xs/bold",
@@ -64,22 +64,22 @@ function f(e) {
       guild: n,
       index: f.indexOf(e),
       isDragEnabled: f.length > 1,
-      submittedGuildJoinRequestsCount: x,
+      submittedGuildJoinRequestsCount: b,
       removeFormField: N,
       updateFormField: E,
       updateFormFieldOrder: I,
       canRemove: f.length > 1,
       actionsLocation: "side",
       fieldStyle: s.it.COMPACT
-    })), !O && (0, r.jsx)("div", {
+    })), !C && (0, r.jsx)("div", {
       className: p.addQuestionsContainer,
       children: (0, r.jsx)(o.Z, {
-        addFormField: C,
+        addFormField: y,
         guild: n,
-        allowTerms: !_
+        allowTerms: !v
       })
-    }), !O && (0, r.jsx)(h, {
-      addFormField: C
+    }), !C && (0, r.jsx)(h, {
+      addFormField: y
     })]
   })
 }

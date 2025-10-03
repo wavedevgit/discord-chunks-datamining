@@ -57,14 +57,14 @@ function p(e) {
     afterDate: p,
     beforeDate: f,
     optionId: h
-  } = o, j = h === d.Ol.CUSTOM, g = j && null != p ? a()(p).format(d.N2) : null, x = j && null != f ? a()(f).format(d.N2) : null;
+  } = o, g = h === d.Ol.CUSTOM, j = g && null != p ? a()(p).format(d.N2) : null, x = g && null != f ? a()(f).format(d.N2) : null;
   return (0, r.jsx)(d.ZP, {
-    startDateLabel: g,
+    startDateLabel: j,
     endDateLabel: x,
     afterDate: p,
     beforeDate: f,
     selectedOption: h,
-    isCustomDateRange: j,
+    isCustomDateRange: g,
     menuName: "joined-date",
     accessibilityLabel: C.intl.string(C.t.XMVinZ),
     onClose: n,
@@ -82,8 +82,8 @@ function p(e) {
       (0, u.Dr)(t, b(m({}, l), {
         selectedJoinDateOption: {
           optionId: d.Ol.CUSTOM,
-          afterDate: j ? p : null,
-          beforeDate: j ? f : null
+          afterDate: g ? p : null,
+          beforeDate: g ? f : null
         }
       }))
     },

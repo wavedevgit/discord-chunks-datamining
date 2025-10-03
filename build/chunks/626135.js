@@ -105,8 +105,8 @@ let A = {
   D = 3e5,
   L = 9e5,
   x = 36e5,
-  j = 864e5,
-  M = .001,
+  M = 864e5,
+  j = .001,
   k = performance.now(),
   U = (0, Chunk668757.X6)() ? (0, Chunk668757.Ub)((0, Chunk548345.R)()) : null;
 Chunk990547.extendSuperProperties({
@@ -164,7 +164,7 @@ let Z = {
     throttleKeys: e => null != e.channel_static_route ? [e.guild_id, e.channel_static_route, e.channel_view] : [e.channel_id, e.channel_view]
   },
   [Chunk981631.rMx.TEXT_IN_VOICE_OPENED]: {
-    throttlePeriod: j,
+    throttlePeriod: M,
     throttleKeys: e => [e.channel_id]
   },
   [Chunk981631.rMx.NOTIFICATION_VIEWED]: {
@@ -219,25 +219,25 @@ let Z = {
     throttleKeys: () => []
   },
   [Chunk981631.rMx.RPC_SERVER_ERROR_CAUGHT]: {
-    throttlePeriod: j,
+    throttlePeriod: M,
     throttleKeys: () => []
   },
   [Chunk981631.rMx.RPC_COMMAND_SENT]: {
-    throttlePeriod: j,
+    throttlePeriod: M,
     throttleKeys: e => [e.application_id, e.command],
-    throttlePercent: M
+    throttlePercent: j
   },
   [Chunk981631.rMx.RPC_SUBSCRIPTION_REQUESTED]: {
-    throttlePeriod: j,
+    throttlePeriod: M,
     throttleKeys: e => [e.application_id, e.event],
-    throttlePercent: M
+    throttlePercent: j
   },
   [Chunk981631.rMx.ACTIVITY_HANDSHAKE]: {
-    throttlePeriod: j,
+    throttlePeriod: M,
     throttleKeys: e => [e.application_id]
   },
   [Chunk981631.rMx.CHANNEL_BANNER_VIEWED]: {
-    throttlePeriod: j,
+    throttlePeriod: M,
     throttleKeys: e => [e.banner_type, e.channel_id]
   },
   [Chunk981631.rMx.PREMIUM_UPSELL_VIEWED]: {
@@ -343,11 +343,11 @@ let Z = {
     throttleKeys: e => [e.search_type]
   },
   [Chunk981631.rMx.AD_IDENTIFIER_FETCHED]: {
-    throttlePeriod: j,
+    throttlePeriod: M,
     throttleKeys: () => []
   },
   [Chunk981631.rMx.ACTIVITY_PANEL_SDK_LINK_VIEWED]: {
-    throttlePeriod: j,
+    throttlePeriod: M,
     throttleKeys: e => [e.application_id]
   },
   [Chunk981631.rMx.LIBDISCORE_SLOW_TIMERS]: {

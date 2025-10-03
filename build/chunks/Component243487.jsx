@@ -141,10 +141,10 @@ let K = Chunk647438.memo(function(e) {
     isSettingsPreview: m = false,
     anchorLeft: g,
     avatarSizeMode: b,
-    maxDisplayedVoiceStates: y = j.At
+    maxDisplayedVoiceStates: y = M.At
   } = e, O = (0, w.ee)(() => W(o), [o]), [v, I] = o, T = I.length > 0 && null != n && null != a && (!d || f), S = (0, s.Wu)([E.Z], () => Array.from(O).map(e => E.Z.getStreamForUser(e, _)).filter(C.lm).map(e => e.ownerId), [_, O]);
   i.useEffect(() => {
-    T && (0, w.zi)(M.Odu.VOICE_V3, {
+    T && (0, w.zi)(j.Odu.VOICE_V3, {
       locked: A.default.isInstanceLocked(),
       shownUserIds: Array.from(O),
       liveUserIds: S,
@@ -155,10 +155,10 @@ let K = Chunk647438.memo(function(e) {
       emptyText: U.intl.string(U.t.hEh0l5),
       icon: l.gj8
     }),
-    R = y !== j.Og ? I.slice(0, y) : I,
-    P = y !== j.Og ? I.slice(y) : [],
+    R = y !== M.Og ? I.slice(0, y) : I,
+    P = y !== M.Og ? I.slice(y) : [],
     L = v.get(P[0]),
-    B = u === M.OYC.ALWAYS && y !== j.Og;
+    B = u === j.OYC.ALWAYS && y !== M.Og;
   return T ? (0, r.jsxs)("div", {
     className: G.voiceUserContainer,
     children: [R.map(e => {
@@ -216,7 +216,7 @@ function z(e, t) {
       } = e;
       return t.id
     })));
-    if (t === j.Og || n.length <= t) return n;
+    if (t === M.Og || n.length <= t) return n;
     let r = new Map;
     for (let t of n) {
       let n = (0, c.O)({

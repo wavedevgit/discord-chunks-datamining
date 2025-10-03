@@ -65,9 +65,9 @@ function D(e, t) {
 }
 let L = null,
   x = {},
-  j = null;
+  M = null;
 
-function M() {
+function j() {
   r = new Map, i = {}, a = {}, o = {}
 }
 
@@ -336,7 +336,7 @@ function en(e) {
   let {
     intent: t
   } = e;
-  j = t
+  M = t
 }
 
 function er(e, t) {
@@ -349,7 +349,7 @@ function ei(e) {
   let t = y.Z.getBasicChannel(e.channelId);
   return null != t && (0, h.p9)(t, A.Z, O.Z, I.Z, f.Z)[0]
 }
-M();
+j();
 class ea extends(c = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     this.syncWith([I.Z], () => true), this.waitFor(_.ZP, I.Z), (null == e ? true : e.selfStreamParticipantsHidden) !== true && Object.assign(x, null == e ? true : e.selfStreamParticipantsHidden)
@@ -445,7 +445,7 @@ class ea extends(c = Chunk442837.ZP.PersistedStore) {
     return null != n ? n.viewerIds : []
   }
   getCurrentAppIntent() {
-    return j
+    return M
   }
   getStreamingState() {
     return (0, Chunk139656.Z)(Chunk131951.Z) ? {
@@ -479,7 +479,7 @@ let eo = new ea(Chunk570140.Z, {
   SET_STREAM_APP_INTENT: en,
   RTC_CONNECTION_STATE: ee,
   CHANNEL_RTC_SELECT_PARTICIPANT: Q,
-  CONNECTION_OPEN: M,
-  CONNECTION_CLOSED: M,
-  LOGOUT: M
+  CONNECTION_OPEN: j,
+  CONNECTION_CLOSED: j,
+  LOGOUT: j
 })

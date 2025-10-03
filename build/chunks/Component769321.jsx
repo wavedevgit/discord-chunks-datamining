@@ -44,7 +44,7 @@ function g(e) {
         className: v.connectedAppRoleAccountClickable,
         onClick: () => {
           null == i || i(), (0, d.transitionToGlobalDiscovery)({
-            tab: j.GlobalDiscoveryTab.APPS,
+            tab: x.GlobalDiscoveryTab.APPS,
             applicationId: n.application.id,
             newSessionState: {
               entrypoint: {
@@ -66,7 +66,7 @@ function g(e) {
           variant: "text-xxs/normal",
           color: "text-default",
           className: v.connectedAppRoleAccountPoweredBy,
-          children: x.intl.format(x.t.zIT9YG, {
+          children: j.intl.format(j.t.zIT9YG, {
             applicationHook: () => n.application.name
           })
         })]

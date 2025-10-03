@@ -150,7 +150,7 @@ function v(e) {
     S(true)
   }, C = () => {
     S(false)
-  }, N = null != m, R = null != O, P = i.useId(), w = "".concat(P, "-upper_badge_masks"), D = "".concat(P, "-lower_badge_masks"), L = "".concat(P, "-blob_mask"), x = "".concat(P, "-stroke_mask"), j = "".concat(P, "-highlight_mask"), M = (null == f ? true : f.width) != null ? f.width : g, k = (null == f ? true : f.height) != null ? f.height : g, U = {
+  }, N = null != m, R = null != O, P = i.useId(), w = "".concat(P, "-upper_badge_masks"), D = "".concat(P, "-lower_badge_masks"), L = "".concat(P, "-blob_mask"), x = "".concat(P, "-stroke_mask"), M = "".concat(P, "-highlight_mask"), j = (null == f ? true : f.width) != null ? f.width : g, k = (null == f ? true : f.height) != null ? f.height : g, U = {
     width: d ? n : n + 8,
     height: d ? n : n + 8,
     x: d ? 0 : false,
@@ -175,7 +175,7 @@ function v(e) {
       children: [(0, r.jsxs)("defs", {
         children: [_ && (0, r.jsx)("path", {
           d: B,
-          id: j
+          id: M
         }), (0, r.jsx)("path", {
           d: B,
           id: L
@@ -189,9 +189,9 @@ function v(e) {
           ry: G / 2
         }) : null, null != O ? (0, r.jsx)("rect", {
           id: D,
-          x: n - (M + 2 * p) + p,
+          x: n - (j + 2 * p) + p,
           y: n - (k + 2 * p) + p,
-          width: M + 2 * p,
+          width: j + 2 * p,
           height: k + 2 * p,
           rx: h / 2,
           ry: h / 2
@@ -204,7 +204,7 @@ function v(e) {
         width: n,
         height: n,
         children: [_ && (0, r.jsx)("use", {
-          href: "#".concat(j),
+          href: "#".concat(M),
           fill: "black"
         }), (0, r.jsx)("use", {
           href: "#".concat(L),

@@ -1,8 +1,6 @@
 /** Chunk was on 66201 **/
 /** chunk id: 536037, original params: e,t,n (module,exports,require) **/
 module.exports = {
-  roleTooltipContainer: "roleTooltipContainer__1ef77",
-  roleTooltipContentContainer: "roleTooltipContentContainer__1ef77",
   roleTooltipItem: "roleTooltipItem__1ef77",
   permissionsContainer: "permissionsContainer__1ef77",
   permissionChiplet: "permissionChiplet__1ef77",

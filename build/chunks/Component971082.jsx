@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk313201 = require("./313201.js"),
   Chunk318374 = require("./318374.jsx"),
@@ -17,26 +17,26 @@ function u(e) {
     label: t,
     visuallyHideLabel: r = false,
     className: i,
-    size: u = a.EFr.SIZE_16,
+    size: u = o.EFr.SIZE_16,
     maxUsers: d = 4
   } = e, f = function(e, t) {
     if (null == e) return {};
     var r, n, i = function(e, t) {
       if (null == e) return {};
       var r, n, i = {},
-        o = Object.keys(e);
-      for (n = 0; n < o.length; n++) r = o[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
+        a = Object.keys(e);
+      for (n = 0; n < a.length; n++) r = a[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
       return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var o = Object.getOwnPropertySymbols(e);
-      for (n = 0; n < o.length; n++) r = o[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
+      var a = Object.getOwnPropertySymbols(e);
+      for (n = 0; n < a.length; n++) r = a[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
     }
     return i
   }(e, ["label", "visuallyHideLabel", "className", "size", "maxUsers"]);
   let g = (0, l.Dt)();
   return (0, n.jsxs)("div", {
-    className: o()(i, s.container),
+    className: a()(i, s.container),
     children: [(0, n.jsx)(c.Z, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var r = null != arguments[t] ? arguments[t] : {},
@@ -59,10 +59,10 @@ function u(e) {
       overflowCountClassName: s.overflowButton,
       size: u,
       maxUsers: d
-    }, f)), r ? (0, n.jsx)(a.nn4, {
+    }, f)), r ? (0, n.jsx)(o.nn4, {
       id: g,
       children: t
-    }) : (0, n.jsx)(a.Text, {
+    }) : (0, n.jsx)(o.Text, {
       variant: "text-xs/normal",
       color: "text-secondary",
       id: g,

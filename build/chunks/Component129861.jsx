@@ -2,14 +2,14 @@
 /** chunk id: 129861, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => I
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
-  Chunk481060 = require("./481060.js"),
+  Chunk28664 = require("./28664.jsx"),
   Chunk385499 = require("./385499.jsx"),
   Chunk181430 = require("./181430.js"),
   Chunk821795 = require("./821795.js"),
@@ -43,25 +43,8 @@ function E(e) {
 }
 
 function b(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-
-function O(e, t) {
   if (null == e) return {};
-  var n, r, i = v(e, t);
+  var n, r, i = y(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -69,7 +52,7 @@ function O(e, t) {
   return i
 }
 
-function v(e, t) {
+function y(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -77,10 +60,10 @@ function v(e, t) {
   return i
 }
 
-function I(e) {
+function O(e) {
   return e.isSystemUser() ? f.J.SYSTEM_DM : e.bot ? f.J.BOT : null
 }
-let T = e => {
+let v = e => {
     let {
       primary: t,
       secondary: n,
@@ -91,27 +74,27 @@ let T = e => {
       usernameClass: _,
       botClass: p,
       showStreamerModeTooltip: g,
-      displayNameStyles: b,
-      displayNameStylesType: O
-    } = e, v = (0, c.Y)({
+      displayNameStyles: E,
+      displayNameStylesType: b
+    } = e, y = (0, c.Y)({
       location: "DiscordTag"
     });
     return (0, r.jsxs)("div", {
       className: a()(m.info, {
-        [m.withDisplayNameStyles]: v && null != b
+        [m.withDisplayNameStyles]: y && null != E
       }, f),
-      children: [(0, r.jsx)(s.ua7, {
+      children: [(0, r.jsx)(s.u, {
         text: h.intl.string(h.t.Br1ls7),
         shouldShow: g,
         "aria-label": !!g && true,
-        children: e => (0, r.jsx)("span", y(E({}, e), {
+        children: (0, r.jsx)("span", {
           className: a()(m.__invalid_username, _),
-          children: null != b ? (0, r.jsx)(d.Z, {
+          children: null != E ? (0, r.jsx)(d.Z, {
             userName: t,
-            displayNameStyles: b,
-            effectDisplayType: O
+            displayNameStyles: E,
+            effectDisplayType: b
           }) : t
-        }))
+        })
       }), null != n ? (0, r.jsx)("span", {
         className: a()(m.infoSpacing, u),
         children: n
@@ -122,7 +105,7 @@ let T = e => {
       })]
     })
   },
-  S = e => {
+  I = e => {
     var {
       user: t,
       nick: n,
@@ -133,34 +116,34 @@ let T = e => {
       hideBotTag: c = false,
       hideDiscriminator: d = false,
       displayNameStylesType: h = u.F.PLAIN
-    } = e, m = O(e, ["user", "nick", "forceUsername", "showAccountIdentifier", "overrideDiscriminator", "forcePomelo", "hideBotTag", "hideDiscriminator", "displayNameStylesType"]);
+    } = e, m = b(e, ["user", "nick", "forceUsername", "showAccountIdentifier", "overrideDiscriminator", "forcePomelo", "hideBotTag", "hideDiscriminator", "displayNameStylesType"]);
     let g = (0, o.e7)([_.Z], () => _.Z.hidePersonalInformation),
-      b = g || d || t.isNonUserBot(),
-      y = t.toString(),
-      v = c ? null : I(t),
+      y = g || d || t.isNonUserBot(),
+      I = t.toString(),
+      T = c ? null : O(t),
       S = t.isVerifiedBot(),
       A = p.ZP.getName(t),
-      C = i ? y : null != n ? n : A,
+      C = i ? I : null != n ? n : A,
       N = t.hasUniqueUsername() || l;
-    if (N || C !== y) {
-      let e = C === y && N && i ? p.ZP.getUserTag(t, {
+    if (N || C !== I) {
+      let e = C === I && N && i ? p.ZP.getUserTag(t, {
           forcePomelo: l
         }) : C,
-        n = a && e !== "@".concat(y) ? p.ZP.getUserTag(t) : true;
-      return (0, r.jsx)(T, E({
+        n = a && e !== "@".concat(I) ? p.ZP.getUserTag(t) : true;
+      return (0, r.jsx)(v, E({
         primary: e,
         secondary: n,
-        botType: v,
+        botType: T,
         botVerified: S,
         showStreamerModeTooltip: g && p.ZP.isNameConcealed(e),
-        displayNameStyles: C !== y ? t.displayNameStyles : null,
+        displayNameStyles: C !== I ? t.displayNameStyles : null,
         displayNameStylesType: h
       }, m))
     }
     return (0, r.jsx)(f.Z, E({
       name: C,
-      botType: v,
+      botType: T,
       botVerified: S,
-      discriminator: b || C !== y ? null : null != s ? s : t.discriminator
+      discriminator: y || C !== I ? null : null != s ? s : t.discriminator
     }, m))
   }

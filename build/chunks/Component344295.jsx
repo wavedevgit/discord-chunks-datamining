@@ -95,7 +95,7 @@ class H extends Chunk647438.PureComponent {
     else if (this.getMode() === V && r !== e.authenticated && r) {
       let e = N.default.getFingerprint();
       if (null != e) {
-        let t = (0, a.s)(e);
+        let t = (0, o.s)(e);
         this.track(w.rMx.INVITE_LOGIN_SUCCESSFUL, true, {
           prev_user_id: t
         })
@@ -114,7 +114,7 @@ class H extends Chunk647438.PureComponent {
       if (null != e)
         if ((0, b.c)(k.M5.INVITE_UNCLAIMED), null != t.guild) {
           var s, c, u;
-          let e = (0, C.yE)(null != (u = t.flags) ? u : 0, o.$.IS_APPLICATION_BYPASS),
+          let e = (0, C.yE)(null != (u = t.flags) ? u : 0, a.$.IS_APPLICATION_BYPASS),
             n = (null == (s = t.guild.features) ? true : s.includes(w.oNc.MEMBER_VERIFICATION_GATE_ENABLED)) && (null == (c = t.guild.features) ? true : c.includes(w.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL));
           i(!e && n ? w.Z5c.GUILD_MEMBER_VERIFICATION(t.guild.id) : w.Z5c.APP_WITH_INVITE_AND_GUILD_ONBOARDING(t.code))
         } else d.ZP.transitionToInvite(t, i)
@@ -358,10 +358,10 @@ let W = Chunk442837.ZP.connectStores([Chunk701190.Z, Chunk896797.Z, Chunk314897.
     inviteKey: n
   } = e;
   return {
-    invite: null != (t = S.Z.getInvite(n)) ? t : {},
+    invite: null != (t = O.Z.getInvite(n)) ? t : {},
     nativeAppState: x.Z.getState(n),
     authenticated: N.default.isAuthenticated(),
-    defaultRoute: O.Z.defaultRoute,
+    defaultRoute: S.Z.defaultRoute,
     isUnderage: g.Z.isUnderageAnonymous()
   }
 })(H)

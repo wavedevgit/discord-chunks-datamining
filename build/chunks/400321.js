@@ -29,7 +29,7 @@ function a(e) {
     _(t.points[t.points.length - 1]) || f.push(t);
     return
   }
-  let v = (e, t) => {
+  let E = (e, t) => {
       let r = null;
       n.lineWidth = t * window.devicePixelRatio, n.strokeStyle = e, n.beginPath(), n.moveTo(b.x, b.y);
       for (let e = 1; e < p.length; e++) {
@@ -39,10 +39,10 @@ function a(e) {
       return n.stroke(), r
     },
     {
-      fillColor: E,
+      fillColor: v,
       outlineColor: h
     } = (0, r.bg)(t.userId, s, u, c),
-    y = v(h, 6 + l.q2),
-    S = null != y && g(y);
-  S && (0, i.I)(n, y.x, y.y, h, l.q2), v(E, 6), S && (0, i.T)(n, y.x, y.y, t.userId)
+    S = E(h, 6 + l.q2),
+    y = null != S && g(S);
+  y && (0, i.I)(n, S.x, S.y, h, l.q2), E(v, 6), y && (0, i.T)(n, S.x, S.y, t.userId)
 }

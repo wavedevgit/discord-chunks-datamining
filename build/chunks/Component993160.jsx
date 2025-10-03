@@ -22,8 +22,8 @@ function h(e) {
     user: n,
     currentUser: t,
     guildId: h,
-    channelId: j,
-    displayProfile: x,
+    channelId: x,
+    displayProfile: j,
     relationshipType: v,
     onClose: g
   } = e, {
@@ -31,16 +31,16 @@ function h(e) {
   } = (0, o.ZP)(), y = (0, s.Z)({
     user: n,
     guildId: h,
-    channelId: j,
-    displayProfile: x,
+    channelId: x,
+    displayProfile: j,
     onClose: g
   }), {
-    gameFriends: O,
-    hasOutgoingPendingGameFriends: I,
-    hasIncomingPendingGameFriends: Z
+    gameFriends: I,
+    hasOutgoingPendingGameFriends: Z,
+    hasIncomingPendingGameFriends: O
   } = (0, p.H)({
     userId: n.id
-  }), P = O.length > 0 || I || Z;
+  }), N = I.length > 0 || Z || O;
   return v === f.OGo.BLOCKED ? null : n.id === t.id ? (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsx)(a.Z, {
       user: n,
@@ -102,7 +102,7 @@ function h(e) {
       viewProfileItem: y,
       themeColor: "secondary"
     })]
-  }) : v === f.OGo.NONE && P ? (0, l.jsxs)(l.Fragment, {
+  }) : v === f.OGo.NONE && N ? (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsx)(c.Z, {
       type: "text",
       userId: n.id,
@@ -113,12 +113,12 @@ function h(e) {
       user: n,
       analyticsLocation: b,
       themeColor: "secondary",
-      gameFriends: O,
+      gameFriends: I,
       tooltipPosition: "top",
       tooltipAlign: "center",
       shouldShowTooltip: true,
-      hasIncomingPendingGameFriends: Z,
-      hasOutgoingPendingGameFriends: I
+      hasIncomingPendingGameFriends: O,
+      hasOutgoingPendingGameFriends: Z
     }), (0, l.jsx)(d.Z, {
       type: "icon",
       user: n,

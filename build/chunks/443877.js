@@ -17,12 +17,12 @@ var Chunk442837 = require("./442837.js"),
 function f(e) {
   var t, n;
   let f = null == e ? true : e.guild_id,
-    O = (0, r.e7)([a.Z], () => null == f || a.Z.canChatInGuild(f), [f]),
-    b = (0, r.e7)([l.Z], () => null != f && l.Z.isLurking(f), [f]),
-    y = (0, r.e7)([c.ZP], () => null != f && c.ZP.isCurrentUserGuest(f), [f]),
-    g = (0, r.e7)([u.Z], () => O && u.Z.can(p.Plq.ADD_REACTIONS, e), [O, e]),
-    h = (0, i.ux)(f),
-    [, m] = (0, o.AB)(f),
+    O = (0, i.e7)([c.Z], () => null == f || c.Z.canChatInGuild(f), [f]),
+    b = (0, i.e7)([l.Z], () => null != f && l.Z.isLurking(f), [f]),
+    h = (0, i.e7)([a.ZP], () => null != f && a.ZP.isCurrentUserGuest(f), [f]),
+    m = (0, i.e7)([u.Z], () => O && u.Z.can(p.Plq.ADD_REACTIONS, e), [O, e]),
+    g = (0, r.ux)(f),
+    [, y] = (0, o.AB)(f),
     v = (0, s.$R)(e);
   return null == e ? {
     disableReactionReads: true,
@@ -34,17 +34,17 @@ function f(e) {
   } : (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
-        r = Object.keys(n);
-      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        i = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
         return Object.getOwnPropertyDescriptor(n, e).enumerable
-      }))), r.forEach(function(t) {
-        var r;
-        r = n[t], t in e ? Object.defineProperty(e, t, {
-          value: r,
+      }))), i.forEach(function(t) {
+        var i;
+        i = n[t], t in e ? Object.defineProperty(e, t, {
+          value: i,
           enumerable: true,
           configurable: true,
           writable: true
-        }) : e[t] = r
+        }) : e[t] = i
       })
     }
     return e
@@ -52,21 +52,21 @@ function f(e) {
     channel: e,
     canChat: O,
     renderReactions: true,
-    canAddNewReactions: g,
+    canAddNewReactions: m,
     isLurking: b,
-    isGuest: y,
-    communicationDisabled: m,
+    isGuest: h,
+    communicationDisabled: y,
     isActiveChannelOrUnarchivableThread: v,
-    isAutomodQuarantined: h
+    isAutomodQuarantined: g
   })), n = n = {
     isLurking: b,
-    isGuest: y,
+    isGuest: h,
     isPendingMember: false
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
+      var i = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, i)
     }
     return n
   })(Object(n)).forEach(function(e) {

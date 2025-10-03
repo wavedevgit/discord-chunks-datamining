@@ -2,7 +2,7 @@
 /** chunk id: 332538, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Wj: () => N,
-  ZP: () => I
+  ZP: () => P
 }), require("./388685.js"), require("./361932.js"), require("./187205.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -30,12 +30,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js");
 
-function I(e) {
+function P(e) {
   let t = (0, o.e7)([b.Z], () => b.Z.getNotificationStateForGuild(e), [e]),
     n = (0, o.e7)([_.Z], () => _.Z.getStateForGuild(e)),
     {
       trailing: m,
-      showUnread: P
+      showUnread: I
     } = function(e, t, n) {
       let l = (0, j.Z)(e).available,
         {
@@ -51,16 +51,16 @@ function I(e) {
         };
         let {
           unlockedPowerups: a
-        } = t, u = (0, x.h)(Object.values(a)), d = null != (i = null == n ? true : n.lastSeenWarningNotification) ? i : Date.now(), f = new Date(null == (e = u[u.length - 1]) ? true : e.ends_at).getTime(), h = null != (o = null == n ? true : n.lastBoostCount) ? o : 0;
-        return u.length > 0 && d < f || p ? {
+        } = t, u = (0, x.h)(Object.values(a)), d = null != (i = null == n ? true : n.lastSeenWarningNotification) ? i : Date.now(), h = new Date(null == (e = u[u.length - 1]) ? true : e.ends_at).getTime(), f = null != (o = null == n ? true : n.lastBoostCount) ? o : 0;
+        return u.length > 0 && d < h || p ? {
           trailing: (0, r.jsx)(s.Mgn, {
             color: s.TVs.colors.STATUS_WARNING,
             size: "sm"
           }),
           showUnread: true
-        } : l !== h && l - h > 0 ? {
+        } : l !== f && l - f > 0 ? {
           trailing: (0, r.jsx)(s.mAB, {
-            count: l - h,
+            count: l - f,
             color: c.Z.BACKGROUND_ACCENT
           }),
           showUnread: true
@@ -70,11 +70,11 @@ function I(e) {
         }
       }, [l, null == n ? true : n.lastBoostCount, null == n ? true : n.lastSeenWarningNotification, t, p])
     }(e, n, t),
-    I = function(e, t) {
+    P = function(e, t) {
       let [n, r] = (0, d.US)(null != t ? [a.z.GUILD_POWERUP_PERKS_COACHMARK] : []), o = n === a.z.GUILD_POWERUP_PERKS_COACHMARK, {
         available: s
       } = (0, j.Z)(e), c = function(e, t) {
-        let n = (0, y.qI)(e, "GuildPowerupsChannelRow");
+        let n = (0, O.qI)(e, "GuildPowerupsChannelRow");
         return i.useMemo(() => {
           if (!Array.from(E.os[E.Du.GUILD_TAG_BADGE_PACKS_WAVE_ONE]).some(e => {
               var n;
@@ -105,7 +105,7 @@ function I(e) {
           let i = E.Cp[n],
             l = null != i ? t.allPowerups[i] : true;
           if (null != l) return {
-            type: O.J.LEVEL_REACHED,
+            type: y.J.LEVEL_REACHED,
             powerup: l,
             markAsDismissed: t => {
               (0, p.Qd)(r, e, true, t)
@@ -115,7 +115,7 @@ function I(e) {
         if (null != n) return n;
         let r = function(e, t, n) {
           var r, i;
-          let l = null != (i = null == (r = f.Z.getGuild(e)) ? true : r.premiumTier) ? i : S.Eu4.NONE,
+          let l = null != (i = null == (r = h.Z.getGuild(e)) ? true : r.premiumTier) ? i : S.Eu4.NONE,
             o = Array.from(E.Tg.values()).flatMap(r => r.length <= 0 || r.some(e => {
               if (null != t.unlockedPowerups[e]) returntrue;
               let n = E.Rx[e];
@@ -123,17 +123,17 @@ function I(e) {
             }) ? [] : r.map(r => {
               let i = t.allPowerups[r];
               return null == i || n < i.cost || (0, v.e)(e, i, "maybeGetPerkPurchaseablePopoutDCF") ? null : i
-            })).filter(h.lm);
+            })).filter(f.lm);
           if (0 !== o.length) {
             if (1 === o.length && !(0, p.OY)(a.C.GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK, e)) return {
-              type: O.J.PERKS_PURCHASABLE,
+              type: y.J.PERKS_PURCHASABLE,
               powerups: o,
               markAsDismissed: t => {
                 (0, p.Qd)(a.C.GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK, e, true, t)
               }
             };
             if (o.length > 1 && !(0, p.OY)(a.C.GUILD_POWERUP_CHOICE_SKU_PURCHASE_COACHMARK, e)) return {
-              type: O.J.PERKS_PURCHASABLE,
+              type: y.J.PERKS_PURCHASABLE,
               powerups: o,
               markAsDismissed: t => {
                 (0, p.Qd)(a.C.GUILD_POWERUP_CHOICE_SKU_PURCHASE_COACHMARK, e, true, t)
@@ -143,12 +143,12 @@ function I(e) {
         }(e, t, s);
         if (null != r) return r
       }, [e, t, o, b, s]), [x, C] = (0, d.bf)(null != _ ? a.z.GUILD_POWERUP_NOTIFICATION : null, {
-        cooldownDurationMs: O.d
+        cooldownDurationMs: y.d
       });
       return i.useMemo(() => {
         if (null != t) {
           if (o) return {
-            type: O.J.PERKS_AVAILABLE,
+            type: y.J.PERKS_AVAILABLE,
             markAsDismissed: r
           };
           if (b) {
@@ -157,7 +157,7 @@ function I(e) {
             if (0 === n.length) return;
             return {
               powerups: n,
-              type: O.J.NEW_PERK_AVAILABLE,
+              type: y.J.NEW_PERK_AVAILABLE,
               markAsDismissed: m
             }
           }
@@ -198,27 +198,27 @@ function I(e) {
         }
       }, [t, o, r, _, x, C, b, m, c])
     }(e, n);
-  if (null !== n && (null != m || P || null != I)) return {
+  if (null !== n && (null != m || I || null != P)) return {
     trailing: m,
-    showUnread: P,
-    popout: I
+    showUnread: I,
+    popout: P
   }
 }
 
 function N(e) {
   let t = (0, o.e7)([_.Z], () => _.Z.getStateForGuild(e)),
-    n = I(e);
+    n = P(e);
   i.useEffect(() => {
     (0, m.jd)(e)
   }, [e]), i.useEffect(() => {
     var e;
-    null == n || null == (e = n.popout) || e.markAsDismissed(P.L.AUTO_DISMISS)
+    null == n || null == (e = n.popout) || e.markAsDismissed(I.L.AUTO_DISMISS)
   }, [n]), i.useEffect(() => {
     null != t && g.Oe.forEach(n => {
       let r = E.Cp[n];
       if (null == r || null == t.unlockedPowerups[r]) return;
       let i = E.Q1[n];
-      null != i && (0, p.Qd)(i, e, false, P.L.AUTO_DISMISS)
+      null != i && (0, p.Qd)(i, e, false, I.L.AUTO_DISMISS)
     })
   }, [e, t])
 }

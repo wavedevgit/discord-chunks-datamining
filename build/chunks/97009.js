@@ -30,7 +30,6 @@ module.exports = {
   linkedLobbyTooltip: "linkedLobbyTooltip_f75fb0",
   linkedLobby: "linkedLobby_f75fb0",
   linkedLobbyApplicationIcon: "linkedLobbyApplicationIcon_f75fb0",
-  linkedLobbyEducationTooltipWrapper: "linkedLobbyEducationTooltipWrapper_f75fb0",
   linkedLobbyEducationTooltip: "linkedLobbyEducationTooltip_f75fb0",
   linkedLobbyEducationTooltipCloseClickContainer: "linkedLobbyEducationTooltipCloseClickContainer_f75fb0",
   linkedLobbyEducationTooltipCloseIcon: "linkedLobbyEducationTooltipCloseIcon_f75fb0",

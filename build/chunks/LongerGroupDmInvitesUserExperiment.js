@@ -1,9 +1,9 @@
-/** Chunk was on 9665 **/
+/** Chunk was on 50118 **/
 /** chunk id: 73752, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => r
+  Z: () => i
 });
-let r = (0, require("./818083.js").B)({
+let i = (0, require("./818083.js").B)({
   kind: "user",
   id: "2021-04_longer_group_dm_invites",
   label: "Longer Group DM Invites",

@@ -2,7 +2,7 @@
 /** chunk id: 976983, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  B: () => v,
+  B: () => _,
   Z: () => j
 }), require("./953529.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js");
@@ -21,7 +21,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk900492 = require("./900492.js");
 
-function b(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -40,7 +40,7 @@ function b(e) {
   return e
 }
 
-function x(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -57,54 +57,54 @@ function j(e) {
   var t, i, s, c;
   let {
     guild: j,
-    prompt: v,
-    singleColumn: _,
-    promptIndex: O,
-    option: y,
-    hasError: C,
+    prompt: _,
+    singleColumn: v,
+    promptIndex: C,
+    option: O,
+    hasError: y,
     onDragStart: N,
     onDragComplete: E,
     onDragReset: I
-  } = e, S = null, T = a().findIndex(v.options, e => e.id === y.id), {
+  } = e, S = null, T = a().findIndex(_.options, e => e.id === O.id), {
     drag: P,
     dragSourcePosition: w,
     drop: R,
     setIsDraggable: Z
   } = (0, d.Z)({
-    type: "ONBOARDING_PROMPT_OPTION_CARD-".concat(v.id),
+    type: "ONBOARDING_PROMPT_OPTION_CARD-".concat(_.id),
     index: T,
-    optionId: y.id,
+    optionId: O.id,
     onDragStart: N,
     onDragComplete: E,
     onDragReset: I
   }), {
     customEmoji: D,
     unicodeEmoji: A
-  } = (0, u.Z)(null == (t = y.emoji) ? true : t.id, null == (i = y.emoji) ? true : i.name);
-  return (0, p.Oq)(y.emoji) || null != D || null != A || (S = f.intl.string(f.t["61wfmp"])), (0, r.jsxs)(o.P3F, {
+  } = (0, u.Z)(null == (t = O.emoji) ? true : t.id, null == (i = O.emoji) ? true : i.name);
+  return (0, p.Oq)(O.emoji) || null != D || null != A || (S = f.intl.string(f.t["61wfmp"])), (0, r.jsxs)(o.P3F, {
     className: l()(h.optionCard, {
-      [h.hasError]: C || null != S,
+      [h.hasError]: y || null != S,
       [h.dropIndicatorBefore]: null != w && T < w,
       [h.dropIndicatorAfter]: null != w && T > w,
-      [h.singleColumn]: _
+      [h.singleColumn]: v
     }),
     onClick: () => (0, o.ZDy)(async () => {
       let {
         default: e
       } = await n.e("1862").then(n.bind(n, 801001));
-      return t => (0, r.jsx)(e, x(b({}, t), {
+      return t => (0, r.jsx)(e, b(x({}, t), {
         guild: j,
-        prompt: v,
-        option: y,
-        index: O,
+        prompt: _,
+        option: O,
+        index: C,
         onSave: e => {
-          (0, g.Kk)(j, v.id, {
-            options: v.options.map(t => t.id === y.id ? e : t)
+          (0, g.Kk)(j, _.id, {
+            options: _.options.map(t => t.id === O.id ? e : t)
           })
         },
         onDelete: () => {
-          (0, g.Kk)(j, v.id, {
-            options: v.options.filter(e => e.id !== y.id)
+          (0, g.Kk)(j, _.id, {
+            options: _.options.filter(e => e.id !== O.id)
           })
         }
       }))
@@ -126,8 +126,8 @@ function j(e) {
       children: [(0, r.jsx)("div", {
         className: h.emoji,
         children: (0, r.jsx)(m.Z, {
-          emojiId: null == (s = y.emoji) ? true : s.id,
-          emojiName: null == (c = y.emoji) ? true : c.name,
+          emojiId: null == (s = O.emoji) ? true : s.id,
+          emojiName: null == (c = O.emoji) ? true : c.name,
           defaultComponent: null
         })
       }), (0, r.jsxs)("div", {
@@ -136,12 +136,12 @@ function j(e) {
           variant: "text-md/medium",
           color: "header-primary",
           lineClamp: 1,
-          children: y.title
-        }), "" !== y.description && (0, r.jsx)(o.Text, {
+          children: O.title
+        }), "" !== O.description && (0, r.jsx)(o.Text, {
           className: h.description,
           variant: "text-xs/normal",
           color: "header-secondary",
-          children: y.description
+          children: O.description
         })]
       })]
     }), null != S && (0, r.jsx)(o.Text, {
@@ -152,7 +152,7 @@ function j(e) {
   })
 }
 
-function v(e) {
+function _(e) {
   let {
     guild: t,
     prompt: i,
@@ -163,7 +163,7 @@ function v(e) {
       let {
         default: e
       } = await n.e("1862").then(n.bind(n, 801001));
-      return n => (0, r.jsx)(e, x(b({}, n), {
+      return n => (0, r.jsx)(e, b(x({}, n), {
         guild: t,
         prompt: i,
         onSave: e => (0, g.Kk)(t, i.id, {

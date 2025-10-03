@@ -24,10 +24,10 @@ function y(e, t, n) {
   if (null == O) return null;
   let E = c.Z.getCurrentlySelectedChannelId(),
     v = u.Z.getChannel(E),
-    b = o.Z.getApplication(t),
-    S = a.ZP.getRunningGames().find(e => e.id === t),
-    x = null != (y = null == S ? true : S.name) ? y : null == b ? true : b.name,
-    j = (0, p.oY)(null == v ? true : v.guild_id, null == v ? true : v.id, O),
+    S = o.Z.getApplication(t),
+    b = a.ZP.getRunningGames().find(e => e.id === t),
+    x = null != (y = null == b ? true : b.name) ? y : null == S ? true : S.name,
+    j = (0, h.oY)(null == v ? true : v.guild_id, null == v ? true : v.id, O),
     I = (0, i.jsxs)("div", {
       className: g.nowPlayingNotification,
       children: [(0, i.jsx)("div", {
@@ -46,9 +46,9 @@ function y(e, t, n) {
           children: m.intl.format(m.t["q7/rgo"], {
             username: null != j ? j : O.username,
             gameName: x,
-            gameIcon: () => null != b || null != S ? (0, i.jsx)(s.Z, {
-              game: b,
-              pid: null == S ? true : S.pid,
+            gameIcon: () => null != S || null != b ? (0, i.jsx)(s.Z, {
+              game: S,
+              pid: null == b ? true : b.pid,
               size: s.A.XSMALL,
               className: g.gameIcon
             }) : null
@@ -59,7 +59,7 @@ function y(e, t, n) {
     {
       trackView: C,
       trackClick: Z
-    } = (0, h.R)(f.n0.NowPlayingNotification, {
+    } = (0, p.R)(f.n0.NowPlayingNotification, {
       notif_type: f.n0.NowPlayingNotification,
       notif_user_id: O.id,
       activity_type: n.type,

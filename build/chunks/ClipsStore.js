@@ -100,7 +100,7 @@ async function x() {
   L.clipsSettings.storageLocation = module, ei.emitChange()
 }
 
-function j(e) {
+function M(e) {
   let {
     classification: t
   } = e, n = L.hardwareClassification;
@@ -109,7 +109,7 @@ function j(e) {
   L.hardwareClassificationForDecoupled = t, L.hardwareClassificationForDecoupled === _.x.MEETS_AUTO_ENABLE && r !== _.x.MEETS_AUTO_ENABLE && L.clipsSettings.clipsEnabled && (L.clipsSettings.decoupledClipsEnabled = true)
 }
 
-function M(e) {
+function j(e) {
   let {
     clip: t
   } = e;
@@ -463,11 +463,11 @@ let ei = new er(Chunk570140.Z, {
     CLIPS_CLEAR_NEW_CLIP_IDS: $,
     CLIPS_LOAD_DIRECTORY_SUCCESS: X,
     CLIPS_DELETE_CLIP: Q,
-    CLIPS_UPDATE_METADATA: M,
+    CLIPS_UPDATE_METADATA: j,
     RTC_CONNECTION_FLAGS: ee,
     CLIPS_SHOW_CALL_WARNING: H,
     VOICE_CHANNEL_SELECT: Y,
-    CLIPS_CLASSIFY_HARDWARE: j,
+    CLIPS_CLASSIFY_HARDWARE: M,
     CLIPS_INIT: W,
     CLIPS_INIT_FAILURE: K,
     CLIPS_DISMISS_EDUCATION: en,

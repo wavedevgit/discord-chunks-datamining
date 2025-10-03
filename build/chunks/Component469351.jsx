@@ -39,7 +39,7 @@ function w(e) {
     hasValidApplication: n
   } = e, {
     listingsLoaded: w
-  } = (0, y.eD)(t), R = (0, s.e7)([v.Z], () => v.Z.getGuild(t)), Z = (0, s.e7)([_.default], () => _.default.getCurrentUser()), D = null != R && (0, x.eM)(R, Z), {
+  } = (0, O.eD)(t), R = (0, s.e7)([_.Z], () => _.Z.getGuild(t)), Z = (0, s.e7)([v.default], () => v.default.getCurrentUser()), D = null != R && (0, b.eM)(R, Z), {
     loading: A
   } = (0, c.H)(t), [L, k] = i.useState(n ? "manage_listings" : "payment");
   (0, m.P)(R);
@@ -55,7 +55,7 @@ function w(e) {
       roles: t,
       initialTab: "guild_products",
       returnToSection: I.pNK.GUILD_PRODUCTS
-    }), (0, b.uL)(I.Z5c.CHANNEL(R.id, S.oC.GUILD_SHOP))
+    }), (0, x.uL)(I.Z5c.CHANNEL(R.id, S.oC.GUILD_SHOP))
   }, [R]);
   if (!w || A) return (0, r.jsx)(o.$jN, {});
   if (null == R) return null;
@@ -66,8 +66,8 @@ function w(e) {
       }), (0, r.jsx)(o.R94, {
         type: o.R94.Types.DESCRIPTION,
         children: T.intl.format(T.t.xiYuDg, {
-          monetizationPolicyLink: O.Z.getArticleURL(I.BhN.CREATOR_POLICY),
-          serverProductsSupportLink: O.Z.getCreatorSupportArticleURL(I.BhN.SERVER_PRODUCTS)
+          monetizationPolicyLink: C.Z.getArticleURL(I.BhN.CREATOR_POLICY),
+          serverProductsSupportLink: C.Z.getCreatorSupportArticleURL(I.BhN.SERVER_PRODUCTS)
         })
       })]
     }),
@@ -102,7 +102,7 @@ function w(e) {
         })
       }) : null]
     }),
-    B = (0, l.EQ)(L).with("basic_info", () => (0, r.jsx)(C.Z, {
+    B = (0, l.EQ)(L).with("basic_info", () => (0, r.jsx)(y.Z, {
       guildId: t
     })).with("manage_listings", () => (0, r.jsx)(N.Z, {
       guildId: t

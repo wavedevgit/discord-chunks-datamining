@@ -1,4 +1,4 @@
-/** Chunk was on 9665 **/
+/** Chunk was on 50118 **/
 /** chunk id: 561472, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => v
@@ -27,22 +27,22 @@ let v = function(e) {
     style: n,
     channel: v,
     draftType: x
-  } = e, [O, j] = i.useState(true), E = (0, l.e7)([d.Z], () => d.Z.hasLayers()), S = (0, l.e7)([p.Z], () => null != v && p.Z.can(C.Plq.ATTACH_FILES, v), [v]), P = null != (0, l.e7)([o.Z], () => o.Z.getActiveCommand(v.id)), I = v.getGuildId(), Z = x === c.d.FirstThreadMessage, N = (0, a.$5)(v), T = i.useMemo(() => !E && (v.isPrivate() && !v.isManaged() || null != I && !N && S && u.Z.canChatInGuild(I)), [S, N, v, I, E]), A = Z ? C.TPd.GUILD_THREADS_ONLY.has(v.type) ? _.intl.string(_.t.RBBLhI) : _.intl.string(_.t.gUx4en) : O ? _.intl.format(_.t.dYP2FR, {
+  } = e, [O, j] = r.useState(true), E = (0, l.e7)([d.Z], () => d.Z.hasLayers()), S = (0, l.e7)([p.Z], () => null != v && p.Z.can(y.Plq.ATTACH_FILES, v), [v]), P = null != (0, l.e7)([o.Z], () => o.Z.getActiveCommand(v.id)), I = v.getGuildId(), Z = x === c.d.FirstThreadMessage, N = (0, a.$5)(v), T = r.useMemo(() => !E && (v.isPrivate() && !v.isManaged() || null != I && !N && S && u.Z.canChatInGuild(I)), [S, N, v, I, E]), A = Z ? y.TPd.GUILD_THREADS_ONLY.has(v.type) ? _.intl.string(_.t.RBBLhI) : _.intl.string(_.t.gUx4en) : O ? _.intl.format(_.t.dYP2FR, {
     destination: (0, s.F6)(v, f.default, h.Z, true)
   }) : _.intl.string(_.t.h76ulJ);
-  return P || !T ? null : (0, r.jsx)(b.Z, {
+  return P || !T ? null : (0, i.jsx)(b.Z, {
     className: t,
     style: n,
     title: A,
     description: Z ? _.intl.string(_.t.lpgkzs) : _.intl.string(_.t.usQh4O),
-    icons: y.J6,
+    icons: C.J6,
     onDrop: e => {
       if (P) returnfalse;
       T && null != v && ((0, g.d)(e, v, x, {
         requireConfirm: O,
         showLargeMessageDialog: false,
         origin: "drag_drop"
-      }), m.S.dispatchToLastSubscribed(C.CkL.TEXTAREA_FOCUS))
+      }), m.S.dispatchToLastSubscribed(y.CkL.TEXTAREA_FOCUS))
     },
     onDragClear: () => j(true),
     onDragOver: e => {

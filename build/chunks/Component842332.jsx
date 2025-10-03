@@ -1,21 +1,22 @@
 /** Chunk was on 91053 **/
 /** chunk id: 842332, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  U: () => p
+  U: () => h
 }), require("./388685.js"), require("./781311.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk544891 = require("./544891.js"),
+  Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk466721 = require("./466721.js"),
   Chunk375954 = require("./375954.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-async function u(e) {
+async function p(e) {
   try {
     var t, n;
     let r = await l.tn.post({
-      url: c.ANM.AI_TITLE,
+      url: d.ANM.AI_TITLE,
       body: {
         content: e
       },
@@ -28,106 +29,77 @@ async function u(e) {
   }
 }
 
-function p(e) {
+function h(e) {
   let {
     parentChannel: t,
     parentMessageId: n,
     updateThreadSettings: l,
-    threadSettings: c,
-    textAreaState: p
-  } = e, [h, f] = i.useState(false), [g, m] = i.useState(false), {
-    enableAIFeatures: b
-  } = s.C.useExperiment({
+    threadSettings: d,
+    textAreaState: h
+  } = e, [f, g] = i.useState(false), [m, b] = i.useState(false), {
+    enableAIFeatures: y
+  } = o.C.useExperiment({
     location: "CreateThreadSidebar"
-  }), y = i.useCallback(async () => {
-    if (b) {
-      f(true);
+  }), _ = i.useCallback(async () => {
+    if (y) {
+      g(true);
       try {
         let r = null;
         if (null != n) {
           var e;
-          let i = o.Z.getMessage(t.id, n);
+          let i = c.Z.getMessage(t.id, n);
           r = null != (e = null == i ? true : i.content) ? e : null
-        } else p.textValue.trim().length >= 10 && (r = p.textValue);
+        } else h.textValue.trim().length >= 10 && (r = h.textValue);
         if (null != r) {
-          let e = await u(r);
+          let e = await p(r);
           null != e && "" !== e.trim() && l({
             name: e
           })
         }
       } finally {
-        f(false)
+        g(false)
       }
     }
-  }, [t.id, n, l, b, p.textValue]);
+  }, [t.id, n, l, y, h.textValue]);
   i.useEffect(() => {
-    m(false), f(false), t.id === c.parentChannelId && n !== c.parentMessageId && l({
+    b(false), g(false), t.id === d.parentChannelId && n !== d.parentMessageId && l({
       name: ""
     })
-  }, [n, l, t.id, c.parentChannelId, c.parentMessageId]), i.useEffect(() => {
-    (null == c.name || "" === c.name.trim()) && !g && b && null != n && (m(true), y())
-  }, [t.id, n, l, c.name, g, b, y]);
-  let _ = i.useCallback(function() {
+  }, [n, l, t.id, d.parentChannelId, d.parentMessageId]), i.useEffect(() => {
+    (null == d.name || "" === d.name.trim()) && !m && y && null != n && (b(true), _())
+  }, [t.id, n, l, d.name, m, y, _]);
+  let j = i.useCallback(function() {
       let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-      if (b) return {
-        icon: a.$2U,
-        onClick: y,
-        "aria-label": d.intl.string(d.t.ZF2oBg),
-        disabled: e || h || null == n && p.textValue.trim().length < 10,
-        tooltip: d.intl.string(d.t.ZF2oBg),
-        loading: h
+      if (y) return {
+        icon: s.$2U,
+        onClick: _,
+        "aria-label": u.intl.string(u.t.ZF2oBg),
+        disabled: e || f || null == n && h.textValue.trim().length < 10,
+        tooltip: u.intl.string(u.t.ZF2oBg),
+        loading: f
       }
-    }, [b, y, h, n, p.textValue]),
-    O = i.useCallback(function() {
+    }, [y, _, f, n, h.textValue]),
+    x = i.useCallback(function() {
       let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-      return b ? (0, r.jsx)(a.ua7, {
-        text: d.intl.string(d.t.ZF2oBg),
-        children: t => {
-          var i, l;
-          return (0, r.jsx)(a.hU, (i = function(e) {
-            for (var t = 1; t < arguments.length; t++) {
-              var n = null != arguments[t] ? arguments[t] : {},
-                r = Object.keys(n);
-              "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                return Object.getOwnPropertyDescriptor(n, e).enumerable
-              }))), r.forEach(function(t) {
-                var r;
-                r = n[t], t in e ? Object.defineProperty(e, t, {
-                  value: r,
-                  enumerable: true,
-                  configurable: true,
-                  writable: true
-                }) : e[t] = r
-              })
-            }
-            return e
-          }({}, t), l = l = {
-            icon: a.$2U,
-            variant: "secondary",
-            size: "sm",
-            "aria-label": d.intl.string(d.t.ZF2oBg),
-            onClick: y,
-            disabled: e || h || null == n && p.textValue.trim().length < 10,
-            loading: h,
-            type: "button"
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
-            var n = Object.keys(e);
-            if (Object.getOwnPropertySymbols) {
-              var r = Object.getOwnPropertySymbols(e);
-              n.push.apply(n, r)
-            }
-            return n
-          })(Object(l)).forEach(function(e) {
-            Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
-          }), i))
-        }
+      return y ? (0, r.jsx)(a.u, {
+        text: u.intl.string(u.t.ZF2oBg),
+        children: (0, r.jsx)(s.hU, {
+          icon: s.$2U,
+          variant: "secondary",
+          size: "sm",
+          "aria-label": u.intl.string(u.t.ZF2oBg),
+          onClick: _,
+          disabled: e || f || null == n && h.textValue.trim().length < 10,
+          loading: f,
+          type: "button"
+        })
       }) : null
-    }, [b, h, n, p.textValue, y]);
+    }, [y, f, n, h.textValue, _]);
   return {
-    isGeneratingAI: h,
-    generateAIName: y,
-    enableAIFeatures: b,
-    renderAiGenerateButton: O,
-    getThreadNameInputAccessory: _
+    isGeneratingAI: f,
+    generateAIName: _,
+    enableAIFeatures: y,
+    renderAiGenerateButton: x,
+    getThreadNameInputAccessory: j
   }
 }

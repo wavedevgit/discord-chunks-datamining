@@ -95,8 +95,8 @@ let R = e => {
     handleSubscribeModalClose: D,
     withHighlight: L = false,
     icon: x,
-    intent: j
-  } = e, M = C(e, ["analyticsLocation", "analyticsSourceLocation", "guild", "buttonText", "targetBoostedGuildTier", "onClose", "closeLayer", "pauseAnimation", "applicationId", "handleSubscribeModalClose", "withHighlight", "icon", "intent"]), {
+    intent: M
+  } = e, j = C(e, ["analyticsLocation", "analyticsSourceLocation", "guild", "buttonText", "targetBoostedGuildTier", "onClose", "closeLayer", "pauseAnimation", "applicationId", "handleSubscribeModalClose", "withHighlight", "icon", "intent"]), {
     analyticsLocations: k
   } = (0, d.ZP)(), U = (0, p.bp)() === b.IlC.POPOUT, [G, B] = i.useState(false), {
     fractionalState: Z
@@ -121,7 +121,7 @@ let R = e => {
         inPopout: U,
         applicationId: w,
         handleSubscribeModalClose: D,
-        intent: j
+        intent: M
       }), B(false)
     }, K = m.Z.getPremiumTypeSubscription(), z = (0, r.jsxs)("div", {
       className: v.button,
@@ -133,7 +133,7 @@ let R = e => {
       size: "xs",
       className: v.buttonIcon
     }), " ", z]
-  }), M.disabled = true), null != Y) ? (0, r.jsx)(_.Z, {
+  }), j.disabled = true), null != Y) ? (0, r.jsx)(_.Z, {
     text: Y,
     "aria-label": false,
     children: e => (0, r.jsx)(c.gtL, A(T(A(T({
@@ -142,14 +142,14 @@ let R = e => {
       disabled: true,
       size: l.zx.Sizes.SMALL,
       pauseAnimation: P
-    }), M), {
+    }), j), {
       children: z
     }))
   }) : (0, r.jsx)(c.gtL, A(T({
     "data-migration-pending": true,
     size: l.zx.Sizes.SMALL
-  }, M), {
-    className: o()(M.className, {
+  }, j), {
+    className: o()(j.className, {
       [v.buttonHighlighted]: L
     }),
     submitting: G,

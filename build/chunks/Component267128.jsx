@@ -94,7 +94,7 @@ function x(e, t, n, i, a, s) {
   })
 }
 
-function j(e, t, n) {
+function M(e, t, n) {
   let {
     referencedMessage: a,
     channel: o,
@@ -150,7 +150,7 @@ function j(e, t, n) {
   })
 }
 
-function M(e, t) {
+function j(e, t) {
   let {
     baseMessage: n,
     channel: i,
@@ -260,10 +260,10 @@ function U(e, t, n, i, a, s) {
   });
   else if (I)
     if (D) {
-      var x, j;
+      var x, M;
       u = (0, r.jsx)("div", {
         className: o()(P.repliedTextContent, w.markup),
-        children: null == E || null == (j = E.poll) || null == (x = j.question) ? true : x.text
+        children: null == E || null == (M = E.poll) || null == (x = M.question) ? true : x.text
       })
     } else L ? l = (0, m.N4)(E) : S ? l = R.intl.string(R.t.kHdYCQ) : A ? l = R.intl.string(R.t["E+6SSU"]) : C ? l = R.intl.string(R.t["XC3A5+"]) : E.hasFlag(N.iLy.IS_COMPONENTS_V2) ? l = R.intl.string(R.t.Xxat6e) : (l = R.intl.string(R.t["6hGo0d"]), d = (0, r.jsx)(c.XBm, {
       size: "custom",
@@ -323,8 +323,8 @@ function G(e) {
     [p, h] = i.useState(false),
     m = i.useMemo(() => null != d && u.state === g.Y.LOADED ? e => d(e, u.message) : true, [u, d]),
     E = i.useCallback(() => h(e => !e), []),
-    b = j(e, m, s.type),
-    y = M(e, m),
+    b = M(e, m, s.type),
+    y = j(e, m),
     v = k(e, p, E),
     T = i.useMemo(() => e.compact ? (0, A.Z)((0, O.vc)(l()(), "LT")) : null, [e.compact]);
   null != n && null != a && (t = R.intl.formatToPlainString(R.t.RhbQ2N, {

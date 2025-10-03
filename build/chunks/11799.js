@@ -18,17 +18,17 @@ let p = () => {
     loading: t,
     items: n,
     hasMore: p,
-    loadMore: f
+    loadMore: h
   } = (e => {
     let {
       isFocused: t,
       navigatedAway: n,
       isDesktop: p,
-      withMentions: f = false,
-      initialPageSize: h
+      withMentions: h = false,
+      initialPageSize: f
     } = e, g = (0, i.e7)([u.Z], () => u.Z.shouldReload()), m = r.useRef(false), [b, _] = r.useState(false), {
-      initialized: O,
-      loading: y,
+      initialized: y,
+      loading: O,
       items: v,
       hasMore: j,
       cursor: x,
@@ -48,37 +48,37 @@ let p = () => {
       roleFilter: a.ZP.roleFilter
     }));
     r.useEffect(() => ((0, s.Vk)(true), () => (0, s.Vk)(false)), []), r.useEffect(() => {
-      O && t && (0, l.FT)(d.W.NOTIFICATION_CENTER)
-    }, [t, O]);
-    let P = (0, o.Z)();
+      y && t && (0, l.FT)(d.W.NOTIFICATION_CENTER)
+    }, [t, y]);
+    let I = (0, o.Z)();
     r.useEffect(() => () => {
-      p ? !P() && (C || v.length > 100) && (0, s.jF)() : n && v.length > 100 && (0, s.jF)()
-    }, [n, v, p, P, C]), r.useEffect(() => {
+      p ? !I() && (C || v.length > 100) && (0, s.jF)() : n && v.length > 100 && (0, s.jF)()
+    }, [n, v, p, I, C]), r.useEffect(() => {
       let e = g && t;
-      (!O || e) && (0, s.jk)({
-        limit: null != h ? h : f ? 8 : 20,
-        with_mentions: f,
+      (!y || e) && (0, s.jk)({
+        limit: null != f ? f : h ? 8 : 20,
+        with_mentions: h,
         roles_filter: E,
         everyone_filter: S
       })
-    }, [O, g, t, f, E, S, h]);
-    let I = r.useCallback(async e => {
-      !m.current && O && j && null != x && (e || !C) && (m.current = true, _(true), await (0, s.jk)({
+    }, [y, g, t, h, E, S, f]);
+    let P = r.useCallback(async e => {
+      !m.current && y && j && null != x && (e || !C) && (m.current = true, _(true), await (0, s.jk)({
         after: x,
-        with_mentions: f,
+        with_mentions: h,
         roles_filter: E,
         everyone_filter: S,
-        limit: f ? 8 : 20
+        limit: h ? 8 : 20
       }, () => {
         m.current = false
       }), _(false))
-    }, [O, j, x, C, f, E, S]);
+    }, [y, j, x, C, h, E, S]);
     return {
-      initialized: O,
-      loading: y,
+      initialized: y,
+      loading: O,
       items: v,
       hasMore: j,
-      loadMore: I,
+      loadMore: P,
       loadingMore: b,
       setReadNotifItemToAcked: e => {
         e.acked || (e.acked = true)
@@ -94,6 +94,6 @@ let p = () => {
     loading: exports,
     items: require.filter(e => "notification-center-item" === e.kind),
     hasMore: p,
-    loadMore: f
+    loadMore: h
   }
 }

@@ -238,8 +238,8 @@ let T = f(b(function(e) {
   D = e => b(t => O(t) && t >= e),
   L = () => b(e => O(e) && Number.isInteger(e)),
   x = () => b(e => O(e) && Number.isFinite(e)),
-  j = () => b(e => O(e) && e > 0),
-  M = () => b(e => O(e) && e < 0),
+  M = () => b(e => O(e) && e > 0),
+  j = () => b(e => O(e) && e < 0),
   k = e => Object.assign(f(e), {
     between: (t, n) => k(g(e, N(t, n))),
     lt: t => k(g(e, R(t))),
@@ -248,8 +248,8 @@ let T = f(b(function(e) {
     gte: t => k(g(e, D(t))),
     int: () => k(g(e, L())),
     finite: () => k(g(e, x())),
-    positive: () => k(g(e, j())),
-    negative: () => k(g(e, M()))
+    positive: () => k(g(e, M())),
+    negative: () => k(g(e, j()))
   }),
   U = k(b(O)),
   G = (e, t) => b(n => I(n) && e <= n && t >= n),
@@ -399,8 +399,8 @@ var Q = {
   gte: D,
   int: L,
   finite: x,
-  positive: j,
-  negative: M,
+  positive: M,
+  negative: j,
   number: U,
   betweenBigInt: G,
   ltBigInt: B,

@@ -90,7 +90,7 @@ function K(e) {
     withTitleBar: t,
     isFullScreen: n
   } = e;
-  return t && j.isPlatformEmbedded && !n
+  return t && M.isPlatformEmbedded && !n
 }
 class z extends(r = Chunk647438.Component) {
   componentDidMount() {
@@ -207,7 +207,7 @@ class z extends(r = Chunk647438.Component) {
       let {
         onBeforeUnload: t
       } = this.props, n = () => {
-        G.Z.unmountWindow(this.props.windowKey), j.isPlatformEmbedded && k.ZP.close(this.props.windowKey)
+        G.Z.unmountWindow(this.props.windowKey), M.isPlatformEmbedded && k.ZP.close(this.props.windowKey)
       };
       null != t ? t({
         e,

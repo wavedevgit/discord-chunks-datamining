@@ -47,7 +47,7 @@ function x(e, t, n) {
   }) : e[t] = n, e
 }
 
-function j(e) {
+function M(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -60,7 +60,7 @@ function j(e) {
   return e
 }
 
-function M(e, t) {
+function j(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -72,7 +72,7 @@ function M(e, t) {
 }
 
 function k(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -173,11 +173,11 @@ let K = Chunk647438.memo(function(e) {
       width: b
     } = (0, p.ZP)(), y = (0, l.e7)([g.Z], () => g.Z.useReducedMotion), O = _ ? "entering" : "exiting", {
       width: v
-    } = (0, s.useSpring)(k(j({}, H[O]), {
+    } = (0, s.useSpring)(k(M({}, H[O]), {
       width: f ? b : u
     })), {
       opacity: I
-    } = (0, s.useSpring)(k(j({}, Y[O]), {
+    } = (0, s.useSpring)(k(M({}, Y[O]), {
       opacity: +!!f,
       onRest: () => {
         f || m(true)
@@ -265,8 +265,8 @@ let K = Chunk647438.memo(function(e) {
       isSettingsPreview: R = false,
       voiceState: D,
       showStreamPreview: x,
-      onShowStreamPreview: j,
-      onWatchStream: M,
+      onShowStreamPreview: M,
+      onWatchStream: j,
       connectedOn: k,
       ref: B
     } = e, Z = (0, l.e7)([T.default], () => T.default.getId() === s.id, [s.id]), {
@@ -284,25 +284,25 @@ let K = Chunk647438.memo(function(e) {
       userId: s.id,
       context: O
     }) || ei, eo = (0, l.e7)([I.Z], () => I.Z.getStreamForUser(s.id, S)), es = null != eo, el = i.useCallback(() => {
-      (x || null != es) && j(null)
-    }, [j, x, es]), ec = i.useCallback(() => (0, r.jsx)(b.Z, {
+      (x || null != es) && M(null)
+    }, [M, x, es]), ec = i.useCallback(() => (0, r.jsx)(b.Z, {
       user: s,
       channel: t,
       onWatch: () => {
         null != eo && ((0, _.rn)(eo, {
           forceMultiple: true,
           noFocus: true
-        }), el(), M(null != eo ? eo : null))
+        }), el(), j(null != eo ? eo : null))
       },
-      onAction: () => M,
+      onAction: () => j,
       previewIsOpen: x,
       location: w.Sbl.UNLOCKED_OVERLAY,
       hideTip: true
-    }), [s, t, eo, x, el, M]), eu = i.useCallback(e => {
+    }), [s, t, eo, x, el, j]), eu = i.useCallback(e => {
       a || null == E || E(e, s)
     }, [a, E, s]), ed = i.useCallback(() => {
-      a || null != es && j(s.id)
-    }, [a, j, es, s]), ef = a || R, e_ = i.useMemo(() => U(m), [m]), ep = i.useMemo(() => G(e_), [e_]), eh = i.useMemo(() => s.getAvatarURL(S, ep), [s, S, ep]);
+      a || null != es && M(s.id)
+    }, [a, M, es, s]), ef = a || R, e_ = i.useMemo(() => U(m), [m]), ep = i.useMemo(() => G(e_), [e_]), eh = i.useMemo(() => s.getAvatarURL(S, ep), [s, S, ep]);
     return f === w.OYC.ONLY_WHILE_SPEAKING && ef && !ea || null == $ ? null : n ? (0, r.jsxs)(c.P3F, {
       innerRef: B,
       className: o()(L.voiceUser, {
@@ -486,7 +486,7 @@ let K = Chunk647438.memo(function(e) {
             type: P.Qu.VOICE,
             value: P.bk.SETTINGS_OPENED,
             userId: t.id
-          }), n => (0, r.jsx)(e, k(j({}, n), {
+          }), n => (0, r.jsx)(e, k(M({}, n), {
             user: t,
             channelId: null == a ? true : a.id,
             guildId: null == a ? true : a.guild_id,
@@ -520,7 +520,7 @@ let K = Chunk647438.memo(function(e) {
         })
       }, [a, t]);
     if (null == b || null == a || null == v) return null;
-    let M = c || h;
+    let j = c || h;
     return (0, r.jsx)(O.Z, {
       targetElementRef: E,
       user: b,
@@ -543,7 +543,7 @@ let K = Chunk647438.memo(function(e) {
           displayNameMode: s,
           displayUserMode: l,
           size: p,
-          locked: M,
+          locked: j,
           onContextMenu: L,
           onClick: L,
           context: g,

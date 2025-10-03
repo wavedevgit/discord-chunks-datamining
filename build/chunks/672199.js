@@ -1,7 +1,7 @@
 /** Chunk was on 50751 **/
 /** chunk id: 672199, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => p
 });
 var Chunk13245 = require("./13245.js"),
   Chunk45114 = require("./45114.js"),
@@ -14,9 +14,9 @@ var Chunk13245 = require("./13245.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk658805 = require("./658805.js");
 
-function h(e, t, n, h) {
+function p(e, t, n, p) {
   let f = t.username,
-    m = d.intl.format(p.default.jTbTAA, {
+    m = d.intl.format(h.default.jTbTAA, {
       username: "",
       game: n.name
     }),
@@ -28,13 +28,13 @@ function h(e, t, n, h) {
       notif_type: s.n0.RequestToStream,
       notif_user_id: t.id,
       activity_type: u.mFx.STREAM_REQUEST,
-      activity_name: h.name
+      activity_name: p.name
     });
   return {
     icon: g,
     title: f,
     body: m,
-    confirmText: d.intl.string(p.default.UGbmBg),
+    confirmText: d.intl.string(h.default.UGbmBg),
     cancelText: d.intl.string(d.t.tpXzJy),
     onNotificationShow: () => {
       y()

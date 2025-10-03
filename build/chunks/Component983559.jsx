@@ -90,7 +90,7 @@ function L(e) {
       isLoaded: null == k ? true : k.isLoaded,
       children: (0, r.jsx)(b.NJ, {
         value: V,
-        children: (0, r.jsxs)(x.Z, {
+        children: (0, r.jsxs)(O.Z, {
           ref: B,
           user: n,
           displayProfile: k,
@@ -113,13 +113,13 @@ function L(e) {
               })]
             }), (0, r.jsxs)("div", {
               className: A.header,
-              children: [(0, r.jsx)(O.Z, {
+              children: [(0, r.jsx)(j.Z, {
                 user: n,
                 displayProfile: k,
                 themeType: R.l.SIDEBAR,
                 animateOnHover: !z,
                 className: A.banner
-              }), (0, r.jsx)(j.Z, {
+              }), (0, r.jsx)(x.Z, {
                 userId: n.id,
                 className: A.toast
               }), (0, r.jsx)(_.Z, {
@@ -134,7 +134,7 @@ function L(e) {
                 themeType: R.l.SIDEBAR,
                 disableToolbar: n.bot
               })]
-            }), (0, r.jsx)(P.Z, {
+            }), (0, r.jsx)(T.Z, {
               user: n,
               currentUser: f,
               displayProfile: k,
@@ -151,7 +151,7 @@ function L(e) {
                   })
                 }
               })
-            }), (0, r.jsx)(T.Z, {
+            }), (0, r.jsx)(P.Z, {
               user: n,
               channelId: w.id
             })]

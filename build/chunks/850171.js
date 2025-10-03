@@ -231,14 +231,14 @@ let C = async (e, t, r) => {
     name: s.S.SurveyWillPresent,
     "survey.id": O
   });
-  let w, j, k, U, G = document.createElement("div"),
+  let w, M, k, U, G = document.createElement("div"),
     B = e => {
       let {
         "view.version": t
       } = e;
       t !== A["x-ul-sdk-version"] && L(), s.e.removeListener("verify.view.version", B)
     };
-  s.e.on("verify.view.version", B), window.UserLeap.useMobileStyling = P, (0, s.h)(A) ? (w = "ul-direct-embeded-frame", j = document.head, k = window, U = false, (() => {
+  s.e.on("verify.view.version", B), window.UserLeap.useMobileStyling = P, (0, s.h)(A) ? (w = "ul-direct-embeded-frame", M = document.head, k = window, U = false, (() => {
     let e = (0, s.g)(window.UserLeap),
       t = R(e),
       n = window.UserLeap.forceDirectEmbed,
@@ -251,11 +251,11 @@ let C = async (e, t, r) => {
     "survey.id": O
   }))) : {
     frameId: w,
-    contentWinDocHead: j,
+    contentWinDocHead: M,
     contentWindow: k,
     hasOverlay: U,
     iframe: G
-  } = M({
+  } = j({
     productConfig: m,
     useMobileStyling: P,
     surveyId: O,
@@ -333,7 +333,7 @@ let C = async (e, t, r) => {
     capture: true,
     once: true
   }));
-  null == j || j.appendChild(H);
+  null == M || M.appendChild(H);
   let W = {
     success: true,
     surveyState: "ready",
@@ -388,7 +388,7 @@ let w = "0px",
       s.e.removeAllListeners(s.S.CloseSurveyOnOverlayClick), L(e, t)
     })
   },
-  j = (e, t, n, r) => {
+  M = (e, t, n, r) => {
     var i, a;
     let o, s = {
         position: "fixed",
@@ -457,7 +457,7 @@ let w = "0px",
       n["background-color"] = "light" === r ? "rgba(255,255,255, 0.95)" : "rgba(0,0,0,0.9)", t || (n.margin = "auto"), window.UserLeap.container && Object.assign(window.UserLeap.container.style, n)
     })(l, n), Object.assign(e.style, s, o), d
   },
-  M = ({
+  j = ({
     productConfig: e,
     useMobileStyling: t,
     surveyId: n,
@@ -469,7 +469,7 @@ let w = "0px",
     D(n, r, l), U();
     let c = document.createElement("iframe");
     c.id = o, c.setAttribute("title", "Sprig User Feedback Dialog");
-    let u = j(c, e, t, r);
+    let u = M(c, e, t, r);
     x();
     let d = false;
     c.setHeight = e => {
@@ -949,8 +949,8 @@ let eg = e => {
   },
   eL = "test",
   ex = ["popState", "pushState", "replaceState"],
-  ej = {},
-  eM = "!email",
+  eM = {},
+  ej = "!email",
   ek = "pageUrl",
   eU = window.location.href;
 
@@ -1313,7 +1313,7 @@ let eq = function(e) {
         }
       }
       if (a)
-        for (let e of (a.email && !a[eM] && (a[eM] = a.email, delete a.email), Object.keys(a))) a[e] === ej[e] && delete a[e];
+        for (let e of (a.email && !a[ej] && (a[ej] = a.email, delete a.email), Object.keys(a))) a[e] === eM[e] && delete a[e];
       if (!(a && 0 !== Object.keys(a).length || r && window.UserLeap.userId !== r || i && window.UserLeap.partnerAnonymousId !== i)) return {
         success: true
       };
@@ -1321,10 +1321,10 @@ let eq = function(e) {
       return r && (o.userId = window.UserLeap.userId = r), i && (o.partnerAnonymousId = window.UserLeap.partnerAnonymousId = i), a && Object.keys(a).length > 0 ? (n = await I(A("1", [v, O], "attributes"), {
         body: JSON.stringify(a),
         method: "PUT"
-      })).ok ? Object.assign(ej, a) : n.reportError && (console.warn("[Sprig] (ERR-432) identifyAndSetAttributes failed", n.error), n.error && window.UserLeap.reportError("identifyAndSetAttributes", n.error)) : n = await I(A("1", [v, O]), {
+      })).ok ? Object.assign(eM, a) : n.reportError && (console.warn("[Sprig] (ERR-432) identifyAndSetAttributes failed", n.error), n.error && window.UserLeap.reportError("identifyAndSetAttributes", n.error)) : n = await I(A("1", [v, O]), {
         body: JSON.stringify(o),
         method: "PUT"
-      }), a && a[eM] && (window.UserLeap.email = a[eM]), n.ok && (r && T("uid", r), i && T("aid", i)), {
+      }), a && a[ej] && (window.UserLeap.email = a[ej]), n.ok && (r && T("uid", r), i && T("aid", i)), {
         success: !!n.ok
       }
     },
@@ -1488,7 +1488,7 @@ let eq = function(e) {
       null != (n = null == (t = window.UserLeap) ? true : t._config) && n.launchDarklyEnabled ? ep.setLDFlagsVariations(e) : console.warn("[SPRIG] LaunchDarkly integration is currently not enabled for your product.")
     },
     setVisitorAttribute: (e, t) => (console.warn("[Sprig] setVisitorAttribute is deprecated. Please use setAttribute"), r.setAttribute(e, t)),
-    setEmail: async e => r.setAttribute(eM, e),
+    setEmail: async e => r.setAttribute(ej, e),
     setVisitorEmail: async e => (console.warn("[Sprig] setVisitorEmail is deprecated. Please use setEmail"), r.setEmail(e)),
     _generateVideoUploadUrl: async e => (async function(e) {
       var t;
@@ -1655,7 +1655,7 @@ function eQ(e = {}) {
     }), s.e.emit(s.S.VisitorIDUpdated, {
       visitorId: window.UserLeap.visitorId
     }), s.e.on(s.S.VisitorIDUpdated, () => {
-      for (let e in ej) delete ej[e]
+      for (let e in eM) delete eM[e]
     })
   }
   window.UserLeap.UPDATES = s.E, window.UserLeap("setPreviewKey", n), "complete" === document.readyState ? r() : window.attachEvent ? window.attachEvent("onload", r) : window.addEventListener("load", () => {

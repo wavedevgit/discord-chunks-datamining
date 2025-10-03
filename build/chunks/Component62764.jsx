@@ -1,7 +1,7 @@
-/** Chunk was on 9665 **/
+/** Chunk was on 50118 **/
 /** chunk id: 62764, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => G
+  Z: () => z
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -9,6 +9,7 @@ var Chunk951288 = require("./951288.js"),
   a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk433517 = require("./433517.js"),
+  Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk904245 = require("./904245.js"),
   Chunk593472 = require("./593472.js"),
@@ -42,31 +43,31 @@ var Chunk951288 = require("./951288.js"),
   Chunk127947 = require("./127947.js"),
   Chunk577650 = require("./577650.js");
 
-function H(e) {
+function V(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      i = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
+    }))), i.forEach(function(t) {
+      var i;
+      i = n[t], t in e ? Object.defineProperty(e, t, {
+        value: i,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = r
+      }) : e[t] = i
     })
   }
   return e
 }
 
-function V(e, t) {
+function F(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
+      var i = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, i)
     }
     return n
   })(Object(t)).forEach(function(n) {
@@ -74,129 +75,118 @@ function V(e, t) {
   }), e
 }
 
-function F(e) {
+function G(e) {
   let {
     channel: t
-  } = e, l = t.isArchivedThread(), a = (0, O.P0)(t), [o, u] = i.useState(false), d = () => {
-    u(true), x.Z.resolveFlag(t.id).then(() => {
-      u(false)
+  } = e, l = t.isArchivedThread(), a = (0, j.P0)(t), [o, c] = r.useState(false), d = () => {
+    c(true), O.Z.resolveFlag(t.id).then(() => {
+      c(false)
     })
   };
-  return a ? (0, r.jsx)(c.zxk, {
+  return a ? (0, i.jsx)(u.zxk, {
     size: "sm",
     variant: "secondary",
-    text: l ? k.intl.string(D.default["2Y4vkp"]) : k.intl.string(D.default.YIbR4u),
+    text: l ? L.intl.string(D.default["2Y4vkp"]) : L.intl.string(D.default.YIbR4u),
     onClick: () => {
-      true === s.K.get(E.F) ? d() : (0, c.ZDy)(async () => {
+      true === s.K.get(S.F) ? d() : (0, u.ZDy)(async () => {
         let {
           default: e
         } = await Promise.resolve().then(n.bind(n, 5101));
         return t => {
           let {
             transitionState: n,
-            onClose: i
+            onClose: r
           } = t;
-          return (0, r.jsx)(e, {
+          return (0, i.jsx)(e, {
             transitionState: n,
-            onClose: i,
+            onClose: r,
             handleResolveFlag: d
           })
         }
       })
     },
     loading: o,
-    icon: c.dz2,
+    icon: u.dz2,
     disabled: l
   }) : null
 }
 
-function G(e) {
+function z(e) {
   let {
     postId: t,
     isFirstMessage: n,
     isLastItem: l = false,
     parentChannelId: s
   } = e, {
-    ref: x,
-    width: O
-  } = (0, p.ZP)(), [E, D] = i.useState(3), [G, z] = i.useState(!n), [W, q] = (0, h.Z)(false, 2e3), Y = (0, o.e7)([Z.Z], () => Z.Z.getChannel(t), [t]), {
-    firstMessage: K
-  } = (0, w.cl)(Y), X = (0, o.e7)([P.Z], () => P.Z.hasJoined(t)), {
-    disableReactionUpdates: J,
-    disableReactionCreates: Q,
-    isLurking: $,
-    isGuest: ee,
-    isPendingMember: et
-  } = (0, b.Z)(Y), en = (0, j.nw)(Y), er = (0, o.e7)([Z.Z], () => Z.Z.getChannel(s)), ei = (0, A.Bs)(er), el = (0, o.e7)([f.Z], () => f.Z.shouldDisplayPrompt(t) && true === n, [t, n]), ea = i.useCallback(e => {
+    ref: O,
+    width: j
+  } = (0, h.ZP)(), [S, D] = r.useState(3), [z, W] = r.useState(!n), [q, K] = (0, f.Z)(false, 2e3), Y = (0, o.e7)([N.Z], () => N.Z.getChannel(t), [t]), {
+    firstMessage: X
+  } = (0, M.cl)(Y), J = (0, o.e7)([I.Z], () => I.Z.hasJoined(t)), {
+    disableReactionUpdates: Q,
+    disableReactionCreates: $,
+    isLurking: ee,
+    isGuest: et,
+    isPendingMember: en
+  } = (0, C.Z)(Y), ei = (0, E.nw)(Y), er = (0, o.e7)([N.Z], () => N.Z.getChannel(s)), el = (0, w.Bs)(er), ea = (0, o.e7)([m.Z], () => m.Z.shouldDisplayPrompt(t) && true === n, [t, n]), eo = r.useCallback(e => {
     let t = e[0];
     if (null != t && n) {
       let e = t.intersectionRect,
         n = t.boundingClientRect;
-      z((e.bottom - e.top) / (n.bottom - n.top) < 1)
+      W((e.bottom - e.top) / (n.bottom - n.top) < 1)
     }
   }, [n]);
-  i.useLayoutEffect(() => {
-    let e = x.current;
+  r.useLayoutEffect(() => {
+    let e = O.current;
     if (null == e || !n) return;
-    let t = new IntersectionObserver(ea, {
+    let t = new IntersectionObserver(eo, {
       threshold: 1
     });
     return t.observe(e), () => {
       t.disconnect()
     }
   });
-  let [eo, es] = i.useState(true);
-  if (i.useEffect(() => {
-      null != O && (D(Math.floor((O - 280) / 58)), es(false))
-    }, [O]), null == Y || null == K) return null;
-  let ec = K.reactions.length > 0,
-    eu = () => {
-      X ? I.Z.leaveThread(Y, "Forum Toolbar") : I.Z.joinThread(Y, "Forum Toolbar")
-    },
+  let [es, ec] = r.useState(true);
+  if (r.useEffect(() => {
+      null != j && (D(Math.floor((j - 280) / 58)), ec(false))
+    }, [j]), null == Y || null == X) return null;
+  let eu = X.reactions.length > 0,
     ed = () => {
-      (0, M.B)({
+      (0, R.B)({
         postId: Y.id,
         location: {
-          section: R.jXE.CHANNEL_HEADER
+          section: k.jXE.CHANNEL_HEADER
         }
-      }), (0, T.JG)((0, N.EO)(Y, er), () => q(true))
+      }), (0, A.JG)((0, T.EO)(Y, er), () => K(true))
     },
-    ep = () => {
-      u.Z.jumpToMessage({
-        channelId: Y.id,
-        messageId: Y.id,
-        flash: true,
-        jumpType: d.SR.INSTANT
-      })
-    },
-    eh = X ? c.dz2 : c.Dkj;
-  return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)("div", {
-      className: a()(L.container, {
-        [L.header]: G
+    ep = J ? u.dz2 : u.Dkj;
+  return (0, i.jsxs)(i.Fragment, {
+    children: [(0, i.jsxs)("div", {
+      className: a()(U.container, {
+        [U.header]: z
       }),
-      ref: x,
-      children: [en ? (0, r.jsx)("div", {
-        className: L.reportedMessageActions,
-        children: (0, r.jsx)(S.Z, {
-          message: K,
+      ref: O,
+      children: [ei ? (0, i.jsx)("div", {
+        className: U.reportedMessageActions,
+        children: (0, i.jsx)(P.Z, {
+          message: X,
           channel: Y
         })
-      }) : (0, r.jsxs)("div", {
-        className: a()(L.reactButtons, {
-          [L.loading]: eo
+      }) : (0, i.jsxs)("div", {
+        className: a()(U.reactButtons, {
+          [U.loading]: es
         }),
-        children: [!ec && !Q && null != ei && (0, r.jsx)("div", {
-          className: U.reactions,
-          children: (0, r.jsx)(v.le, {
-            message: K,
+        children: [!eu && !$ && null != el && (0, i.jsx)("div", {
+          className: B.reactions,
+          children: (0, i.jsx)(x.le, {
+            message: X,
             readOnly: false,
             useChatFontScaling: false,
-            isLurking: $,
-            isGuest: ee,
-            isPendingMember: et,
-            emoji: ei,
-            type: g.O.NORMAL,
+            isLurking: ee,
+            isGuest: et,
+            isPendingMember: en,
+            emoji: el,
+            type: b.O.NORMAL,
             hideCount: true,
             count: 0,
             me: false,
@@ -204,72 +194,81 @@ function G(e) {
             me_burst: false,
             emojiSize: "reaction"
           })
-        }), (0, r.jsx)(_.Z, {
-          message: K,
+        }), (0, i.jsx)(v.Z, {
+          message: X,
           channel: Y,
           disableReactionCreates: true,
-          disableReactionUpdates: J,
-          isLurking: $,
-          isGuest: ee,
-          isPendingMember: et,
-          maxReactions: E,
-          className: L.reactions,
+          disableReactionUpdates: Q,
+          isLurking: ee,
+          isGuest: et,
+          isPendingMember: en,
+          maxReactions: S,
+          className: U.reactions,
           useChatFontScaling: false,
           isForumToolbar: true,
           forceHideReactionCreates: true
-        }), !Q && (0, r.jsx)(y.X, {
-          type: g.O.NORMAL,
-          message: K,
+        }), !$ && (0, i.jsx)(y.X, {
+          type: b.O.NORMAL,
+          message: X,
           channel: Y,
           useChatFontScaling: false,
-          className: a()(B.secondary, L.addReactButton, {
-            [L.hasNoReactions]: !ec
+          className: a()(H.secondary, U.addReactButton, {
+            [U.hasNoReactions]: !eu
           }),
           isForumToolbar: true,
-          children: !ec && k.intl.string(k.t.xpOyTE)
+          children: !eu && L.intl.string(L.t.xpOyTE)
         })]
-      }), (0, r.jsxs)("div", {
-        className: L.buttons,
-        children: [en ? (0, r.jsx)(F, {
+      }), (0, i.jsxs)("div", {
+        className: U.buttons,
+        children: [ei ? (0, i.jsx)(G, {
           channel: Y
-        }) : (0, r.jsx)(c.ua7, {
-          text: k.intl.string(k.t.F7oeDg),
-          children: e => (0, r.jsx)(c.zxk, V(H({}, e), {
-            icon: eh,
+        }) : (0, i.jsx)(c.u, {
+          text: L.intl.string(L.t.F7oeDg),
+          children: (0, i.jsx)(u.zxk, {
+            icon: ep,
             size: "sm",
             variant: "secondary",
-            text: X ? k.intl.string(k.t["7OkUzs"]) : k.intl.string(k.t["3aOv+v"]),
-            onClick: eu
-          }))
-        }), (0, r.jsx)(c.ua7, {
-          text: k.intl.string(k.t.WqhZsr),
-          children: e => W ? (0, r.jsx)(c.zxk, V(H({}, e), {
-            icon: c.dz2,
-            size: "sm",
-            variant: "secondary",
-            onClick: ed,
-            text: k.intl.string(k.t["t5VZ8/"])
-          })) : (0, r.jsx)(c.hU, V(H({}, e), {
-            icon: c.xPt,
+            text: J ? L.intl.string(L.t["7OkUzs"]) : L.intl.string(L.t["3aOv+v"]),
+            onClick: () => {
+              J ? Z.Z.leaveThread(Y, "Forum Toolbar") : Z.Z.joinThread(Y, "Forum Toolbar")
+            }
+          })
+        }), (0, i.jsx)(u.ua7, {
+          text: L.intl.string(L.t.WqhZsr),
+          children: e => q ? (0, i.jsx)(u.zxk, F(V({}, e), {
+            icon: u.dz2,
             size: "sm",
             variant: "secondary",
             onClick: ed,
-            "aria-label": k.intl.string(k.t.WqhZsr)
-          }))
-        }), !n && (0, r.jsx)(c.ua7, {
-          text: k.intl.string(k.t.nFP4oa),
-          children: e => (0, r.jsx)(c.hU, V(H({}, e), {
-            icon: c.Za2,
+            text: L.intl.string(L.t["t5VZ8/"])
+          })) : (0, i.jsx)(u.hU, F(V({}, e), {
+            icon: u.xPt,
             size: "sm",
             variant: "secondary",
-            onClick: ep,
-            "aria-label": k.intl.string(k.t.nFP4oa)
+            onClick: ed,
+            "aria-label": L.intl.string(L.t.WqhZsr)
           }))
+        }), !n && (0, i.jsx)(c.u, {
+          text: L.intl.string(L.t.nFP4oa),
+          children: (0, i.jsx)(u.hU, {
+            icon: u.Za2,
+            size: "sm",
+            variant: "secondary",
+            onClick: () => {
+              d.Z.jumpToMessage({
+                channelId: Y.id,
+                messageId: Y.id,
+                flash: true,
+                jumpType: p.SR.INSTANT
+              })
+            },
+            "aria-label": L.intl.string(L.t.nFP4oa)
+          })
         })]
       })]
-    }), el && (0, r.jsx)(m.Z, {
+    }), ea && (0, i.jsx)(g.Z, {
       threadId: t
-    }), (0, r.jsx)(C.Z, {
+    }), (0, i.jsx)(_.Z, {
       channel: Y,
       isLastItem: l
     })]

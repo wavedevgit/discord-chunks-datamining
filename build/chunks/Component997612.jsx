@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   $: () => D,
-  X: () => j
+  X: () => M
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk327496 = require("./327496.jsx"),
   Chunk235874 = require("./235874.jsx"),
   Chunk417153 = require("./417153.js"),
-  Chunk981729 = require("./981729.jsx"),
+  Chunk28664 = require("./28664.jsx"),
   Chunk159691 = require("./159691.js"),
   Chunk972959 = require("./972959.js"),
   Chunk665149 = require("./665149.jsx"),
@@ -119,7 +119,7 @@ function x() {
   })
 }
 
-function j(e) {
+function M(e) {
   var t;
   let {
     config: n
@@ -163,20 +163,20 @@ function j(e) {
     className: C.root,
     children: [(0, r.jsx)("div", {
       className: C.group,
-      children: n.collections.map(e => (0, r.jsx)(l.a, {
-        children: (0, r.jsx)(p.u, {
-          position: "right",
-          text: "".concat(e.name, " Design System"),
-          children: t => {
-            var i;
-            return (0, r.jsx)(d.L, w(R({}, t), {
+      children: n.collections.map(e => {
+        var t;
+        return (0, r.jsx)(l.a, {
+          children: (0, r.jsx)(p.u, {
+            position: "right",
+            text: "".concat(e.name, " Design System"),
+            children: (0, r.jsx)(d.L, {
               name: e.name,
-              selected: (null != c ? c : null == (i = n.collections[0]) ? true : i.id) === e.id,
+              selected: (null != c ? c : null == (t = n.collections[0]) ? true : t.id) === e.id,
               onClick: () => b(e.id)
-            }))
-          }
-        })
-      }, e.id))
+            })
+          })
+        }, e.id)
+      })
     }), (0, r.jsxs)("div", {
       className: C.content,
       children: [(0, r.jsxs)(g.ZP, {

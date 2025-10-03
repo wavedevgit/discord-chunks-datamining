@@ -106,7 +106,7 @@ function I(e) {
     x = (e, t) => {
       !A && T && t.phase === d.UkZ.LEAVE && S(false)
     },
-    j = () => {
+    M = () => {
       null == f || f(), (0, c.JG)(n), l.default.track(d.rMx.TEXT_COPIED), A || I(E + 1), C(true), S(true), N.start(b, () => C(false)), R.start(y, () => I(0))
     };
   return (0, r.jsx)(s.ua7, {
@@ -123,7 +123,7 @@ function I(e) {
       } = e;
       return u(m(p({}, g(e, ["onClick", "onMouseEnter"])), {
         onClick: () => {
-          null == t || t(), j()
+          null == t || t(), M()
         },
         onMouseEnter: () => {
           if (!T) {

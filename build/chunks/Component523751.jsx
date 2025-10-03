@@ -2,7 +2,7 @@
 /** chunk id: 523751, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => M
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -197,7 +197,7 @@ function x(e) {
   })
 }
 
-function j(e) {
+function M(e) {
   let t, n;
   var a, {
     guild: o,
@@ -216,10 +216,10 @@ function j(e) {
       let e = m.default.getCurrentUser();
       return h.ZP.isMember(null == o ? true : o.id, null == e ? true : e.id)
     }),
-    j = (0, s.e7)([p.Z], () => p.Z.theme),
-    M = (0, O.XX)(o),
-    k = (0, y.i)(M),
-    U = i.useMemo(() => M.premium && L && !A, [A, M.premium, L]),
+    M = (0, s.e7)([p.Z], () => p.Z.theme),
+    j = (0, O.XX)(o),
+    k = (0, y.i)(j),
+    U = i.useMemo(() => j.premium && L && !A, [A, j.premium, L]),
     G = i.useCallback(e => {
       U && (e.stopPropagation(), e.preventDefault(), (0, f.f)({
         guildId: o.id,
@@ -241,9 +241,9 @@ function j(e) {
     sizeAdjustment: K
   } = D[k];
   if (null == B) return null;
-  M.premium && (t = W, n = Y);
-  let z = (0, c.wj)(j) ? V : H,
-    q = (0, c.wj)(j) ? Z : F;
+  j.premium && (t = W, n = Y);
+  let z = (0, c.wj)(M) ? V : H,
+    q = (0, c.wj)(M) ? Z : F;
   t = null != t ? t : z, n = null != n ? n : q;
   let X = Math.floor(.75 * w) - (null != K ? K : 0);
   return (0, r.jsx)(u.ua7, {
@@ -252,7 +252,7 @@ function j(e) {
     "aria-label": N,
     text: (0, r.jsx)(x, {
       badgeType: k,
-      guildTraits: M
+      guildTraits: j
     }),
     tooltipContentClassName: S.tooltipRemovePadding,
     children: e => (0, r.jsx)(u.P3F, {

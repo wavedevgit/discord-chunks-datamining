@@ -142,8 +142,8 @@ let y = 24,
       "aria-hidden": D,
       "aria-checked": L,
       "aria-expanded": x,
-      "aria-haspopup": j,
-      "data-jump-section": M
+      "aria-haspopup": M,
+      "data-jump-section": j
     } = e, k = null != g ? {
       secondaryColorClass: g
     } : {}, U = (0, r.jsx)(E, h({
@@ -210,10 +210,10 @@ let y = 24,
           "aria-label": G,
           "aria-hidden": D,
           "aria-checked": L,
-          "aria-haspopup": j,
+          "aria-haspopup": M,
           "aria-expanded": x,
           tabIndex: l || null == O ? false : 0,
-          "data-jump-section": M,
+          "data-jump-section": j,
           children: [u ? (0, r.jsx)(d.ZP, {
             mask: "top" === f ? d.ZP.Masks.HEADER_BAR_BADGE_TOP : d.ZP.Masks.HEADER_BAR_BADGE_BOTTOM,
             height: b,
