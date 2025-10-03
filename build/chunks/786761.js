@@ -88,7 +88,7 @@ function N(e) {
     attachments: D(e),
     embeds: x(e),
     components: (0, o.uZ)(null != (t = e.components) ? t : []),
-    codedLinks: e.type === y.uaV.THREAD_CREATED ? [] : (0, a.ZP)(e.content)
+    codedLinks: y.V$x.NON_PARSED.has(e.type) ? [] : (0, a.ZP)(e.content)
   }))
 }
 
