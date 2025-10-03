@@ -112,7 +112,7 @@ function A(e) {
   } = (0, l.q)({
     config: {
       mass: 1,
-      tension: 400,
+      tension: 600,
       friction: 26
     },
     opacity: n ? .5 : 1,
