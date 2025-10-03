@@ -2,7 +2,7 @@
 /** chunk id: 15980, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => f
+  Z: () => h
 }), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -17,12 +17,21 @@ function s(e, t, n) {
   }) : e[t] = n, e
 }
 let l = false,
-  c = [];
+  c = [],
+  u = false;
 
-function u() {
-  c = [], l = false
+function d() {
+  c = [], l = false, u = false
 }
-class d extends(r = Chunk442837.ZP.Store) {
+
+function f() {
+  u = true
+}
+
+function _() {
+  u = false
+}
+class p extends(r = Chunk442837.ZP.Store) {
   hasFetchedCredentials() {
     return l
   }
@@ -32,10 +41,13 @@ class d extends(r = Chunk442837.ZP.Store) {
   getCredentials() {
     return c
   }
+  hasPendingRegisterTrigger() {
+    return u
+  }
 }
-s(d, "displayName", "WebAuthnStore");
-let f = new d(Chunk570140.Z, {
-  LOGOUT: u,
+s(p, "displayName", "WebAuthnStore");
+let h = new p(Chunk570140.Z, {
+  LOGOUT: d,
   MFA_WEBAUTHN_CREDENTIALS_LOADED(e) {
     c = e.credentials, l = true
   },
@@ -56,5 +68,7 @@ let f = new d(Chunk570140.Z, {
       credential: t
     } = e;
     t.type === o.Pi.WEBAUTHN && (c = c.filter(e => e.id !== t.id))
-  }
+  },
+  WEBAUTHN_TRIGGER_REGISTER: f,
+  WEBAUTHN_CLEAR_REGISTER_TRIGGER: _
 })

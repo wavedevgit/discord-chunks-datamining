@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => N
-}), require("./388685.js"), require("./49124.js"), require("./953529.js"), require("./457542.js");
+}), require("./388685.js"), require("./49124.js"), require("./457542.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk849055 = require("./849055.js"),
@@ -155,7 +155,7 @@ function A(e) {
         id: E.x.NAME,
         children: (0, r.jsxs)("form", {
           onSubmit: e => {
-            e.preventDefault(), (0, m.Sr)(g, s, C).then(async () => {
+            e.preventDefault(), m.Sr(g, s, C).then(async () => {
               await (0, d.Yn)(false)
             }).then(() => o()).catch(() => {
               P(y.intl.string(y.t.fEptJC)), A(E.x.INIT)
@@ -235,7 +235,7 @@ function C(e) {
       label: y.intl.string(y.t["+xgS+P"]),
       color: "danger",
       action: () => {
-        (0, m.cT)(i)
+        m.cT(i)
       }
     })]
   })
@@ -244,16 +244,37 @@ function C(e) {
 function N() {
   let {
     credentials: e,
-    hasFetchedCredentials: t
+    hasFetchedCredentials: t,
+    hasPendingRegisterTrigger: n
   } = (0, Chunk442837.cj)([Chunk15980.Z], () => ({
     hasFetchedCredentials: Chunk15980.Z.hasFetchedCredentials(),
-    credentials: Chunk15980.Z.getCredentials()
+    credentials: Chunk15980.Z.getCredentials(),
+    hasPendingRegisterTrigger: Chunk15980.Z.hasPendingRegisterTrigger()
   }));
   Chunk647438.useEffect(() => {
-    exports || (0, Chunk365007.hL)()
-  }, [exports]);
-  let [n, a] = Chunk647438.useState(false);
-  return (0, Chunk951288.jsxs)(Chunk481060.hjN, {
+    exports || Chunk365007.hL()
+  }, [exports]), Chunk647438.useEffect(() => () => {
+    Chunk15980.Z.hasPendingRegisterTrigger() && Chunk365007.vg()
+  }, []);
+  let [a, u] = Chunk647438.useState(false), d = Chunk647438.useCallback(() => {
+    Chunk313201(true), Chunk365007.L$().then(e => {
+      let {
+        ticket: t,
+        challenge: n
+      } = e;
+      (0, l.h7j)(e => (0, r.jsx)(A, S(I({}, e), {
+        ticket: t,
+        challenge: n
+      })))
+    }).catch(e => {
+      e.message !== y.intl.string(y.t.N2yb9f) && p.Z.captureException(e)
+    }).finally(() => {
+      Chunk313201(false)
+    })
+  }, []);
+  return Chunk647438.useEffect(() => {
+    require && !Chunk849055 && (Chunk365007.vg(), Chunk202858())
+  }, [require, Chunk849055, Chunk202858]), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
     title: Chunk388032.intl.string(Chunk388032.t.y7SXYW),
     className: Chunk421156.settings,
     children: [(0, Chunk951288.jsx)(Chunk481060.R94, {
@@ -291,23 +312,8 @@ function N() {
         variant: "primary",
         size: "sm",
         text: Chunk388032.intl.string(Chunk388032.t.vrOCCg),
-        onClick: () => {
-          Chunk849055(true), (0, Chunk365007.L$)().then(e => {
-            let {
-              ticket: t,
-              challenge: n
-            } = e;
-            (0, l.h7j)(e => (0, r.jsx)(A, S(I({}, e), {
-              ticket: t,
-              challenge: n
-            })))
-          }).catch(e => {
-            e.message !== y.intl.string(y.t.N2yb9f) && p.Z.captureException(e)
-          }).finally(() => {
-            Chunk849055(false)
-          })
-        },
-        loading: require,
+        onClick: Chunk202858,
+        loading: Chunk849055,
         disabled: !Chunk287880.Ae
       })
     })]

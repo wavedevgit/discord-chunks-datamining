@@ -7,8 +7,10 @@ require.d(exports, {
   WQ: () => f,
   cT: () => d,
   d$: () => c,
+  ef: () => h,
   hL: () => u,
-  us: () => l
+  us: () => l,
+  vg: () => m
 });
 var Chunk525769 = require("./525769.js"),
   Chunk544891 = require("./544891.js"),
@@ -109,5 +111,17 @@ async function p(e, t, n) {
   }), a.Z.dispatch({
     type: "MFA_ENABLE_SUCCESS",
     codes: i.body.backup_codes
+  })
+}
+
+function h() {
+  Chunk570140.Z.dispatch({
+    type: "WEBAUTHN_TRIGGER_REGISTER"
+  })
+}
+
+function m() {
+  Chunk570140.Z.dispatch({
+    type: "WEBAUTHN_CLEAR_REGISTER_TRIGGER"
   })
 }
