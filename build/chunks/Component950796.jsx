@@ -25,18 +25,16 @@ let g = 1e3;
 
 function E(e) {
   let {
-    isPopoutWindow: t,
-    isSearchDesktopTopLevelEnabled: n
+    isPopoutWindow: t
   } = e;
-  return t ? "refresh-title-bar-small" : n ? "refresh-title-bar-large" : true
+  return t ? "refresh-title-bar-small" : true
 }
 
 function b(e) {
   let {
-    isPopoutWindow: t,
-    isSearchDesktopTopLevelEnabled: n
+    isPopoutWindow: t
   } = e;
-  return t ? 16 : n ? 32 : 24
+  return t ? 16 : 24
 }
 let y = e => p.ZP.close(e),
   O = e => p.ZP.minimize(e),

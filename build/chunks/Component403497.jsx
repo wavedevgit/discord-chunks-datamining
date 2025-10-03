@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 403497, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  d: () => T
+  d: () => N
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,6 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk51596 = require("./51596.js"),
   Chunk592125 = require("./592125.js"),
   Chunk430824 = require("./430824.js"),
+  Chunk944486 = require("./944486.js"),
   Chunk914010 = require("./914010.js"),
   Chunk768581 = require("./768581.js"),
   Chunk981631 = require("./981631.js"),
@@ -27,86 +28,86 @@ var Chunk951288 = require("./951288.js"),
   Chunk345909 = require("./345909.js"),
   Chunk832818 = require("./832818.js");
 
-function T(e) {
+function N(e) {
   let t, {
-      selectedChannelId: n,
-      withFastTravel: l,
-      focusSectionProps: T
+      withFastTravel: n,
+      focusSectionProps: l
     } = e,
     N = (0, o.TH)(),
-    j = (0, s.e7)([O.Z], () => O.Z.getGuildId()),
-    P = (0, s.e7)([b.Z], () => b.Z.getChannel(n), [n]),
-    x = null != j ? j : null == P ? true : P.guild_id,
-    A = (0, s.e7)([_.Z], () => _.Z.getGuild(x), [x]),
-    Z = (0, p.Z)(),
-    w = (0, g.D)(),
+    j = (0, s.e7)([E.Z], () => E.Z.getGuildId()),
+    P = (0, s.e7)([O.Z], () => O.Z.getChannelId()),
+    x = (0, s.e7)([b.Z], () => b.Z.getChannel(P), [P]),
+    A = null != j ? j : null == x ? true : x.guild_id,
+    Z = (0, s.e7)([_.Z], () => _.Z.getGuild(A), [A]),
+    w = (0, p.Z)(),
+    L = (0, g.D)(),
     {
-      guildTitleIconSize: L,
-      guildIconSize: R
+      guildTitleIconSize: R,
+      guildIconSize: D
     } = (0, d.T)({
       location: "GuildTitle"
     }),
     {
-      application: D,
-      isFrameInFocusedMode: k
+      application: k,
+      isFrameInFocusedMode: M
     } = (0, s.cj)([u.Z, f.Z], () => {
       let e = f.Z.getConnectedFrame();
       return {
         application: u.Z.getApplication(null == e ? true : e.applicationId),
-        isFrameInFocusedMode: f.Z.getFrameLayoutMode() === v.U.FOCUSED
+        isFrameInFocusedMode: f.Z.getFrameLayoutMode() === I.U.FOCUSED
       }
     }),
-    M = null != D ? E.ZP.getApplicationIconURL({
-      id: D.id,
-      icon: D.icon,
-      bot: D.bot
+    U = null != k ? y.ZP.getApplicationIconURL({
+      id: k.id,
+      icon: k.icon,
+      bot: k.bot
     }) : true,
-    U = null;
-  null != D && k ? (t = D.name, U = (0, r.jsx)("img", {
-    className: C.appIcon,
-    alt: I.intl.string(I.t.X4IxWF),
-    src: M,
+    G = null;
+  null != k && M ? (t = k.name, G = (0, r.jsx)("img", {
+    className: T.appIcon,
+    alt: S.intl.string(S.t.X4IxWF),
+    src: U,
     "aria-hidden": true,
     draggable: false
-  })) : w ? (t = I.intl.string(I.t.HcoRu7), U = (0, r.jsx)(c.Dkj, {
-    size: L
-  })) : null != A ? (U = Z ? (0, r.jsx)(c.r7p, {
-    size: L
+  })) : L ? (t = S.intl.string(S.t.HcoRu7), G = (0, r.jsx)(c.Dkj, {
+    size: R
+  })) : null != Z ? (G = w ? (0, r.jsx)(c.r7p, {
+    size: R
   }) : (0, r.jsx)(h.Z, {
-    guild: A,
-    size: R,
+    guild: Z,
+    size: D,
     active: true,
-    className: C.guildIcon
-  }), t = A.name) : null != P && (P.isDM() || P.isGroupDM()) ? (t = I.intl.string(I.t.YUU0RE), U = (0, r.jsx)(c.gw7, {
-    size: L
-  })) : N.pathname.startsWith(y.Z5c.GLOBAL_DISCOVERY) ? (t = I.intl.string(I.t["4nEZLi"]), U = (0, r.jsx)(c.Jmo, {
-    size: L
-  })) : N.pathname.startsWith(y.Z5c.NITRO_HOME) ? (t = I.intl.string(I.t.Ipxkoq), U = (0, r.jsx)(c.SrA, {
-    size: L
-  })) : N.pathname.startsWith(y.Z5c.COLLECTIBLES_SHOP) ? (t = I.intl.string(I.t.pWG4zc), U = (0, r.jsx)(c.EOn, {
-    size: L
-  })) : N.pathname.startsWith(y.Z5c.FRIENDS) ? (t = I.intl.string(I.t.TdEu5e), U = (0, r.jsx)(c.iFz, {
-    size: L
-  })) : N.pathname.startsWith(y.Z5c.FAMILY_CENTER) ? (t = I.intl.string(S.default.RZqaJi), U = (0, r.jsx)(c.BFJ, {
-    size: L
-  })) : N.pathname.startsWith(y.Z5c.QUEST_HOME_V2) && (t = I.intl.string(I.t.JALI2N), U = (0, r.jsx)(c.qDn, {
-    size: L
+    className: T.guildIcon
+  }), t = Z.name) : null != x && (x.isDM() || x.isGroupDM()) ? (t = S.intl.string(S.t.YUU0RE), G = (0, r.jsx)(c.gw7, {
+    size: R
+  })) : N.pathname.startsWith(v.Z5c.GLOBAL_DISCOVERY) ? (t = S.intl.string(S.t["4nEZLi"]), G = (0, r.jsx)(c.Jmo, {
+    size: R
+  })) : N.pathname.startsWith(v.Z5c.NITRO_HOME) ? (t = S.intl.string(S.t.Ipxkoq), G = (0, r.jsx)(c.SrA, {
+    size: R
+  })) : N.pathname.startsWith(v.Z5c.COLLECTIBLES_SHOP) ? (t = S.intl.string(S.t.pWG4zc), G = (0, r.jsx)(c.EOn, {
+    size: R
+  })) : N.pathname.startsWith(v.Z5c.FRIENDS) ? (t = S.intl.string(S.t.TdEu5e), G = (0, r.jsx)(c.iFz, {
+    size: R
+  })) : N.pathname.startsWith(v.Z5c.FAMILY_CENTER) ? (t = S.intl.string(C.default.RZqaJi), G = (0, r.jsx)(c.BFJ, {
+    size: R
+  })) : N.pathname.startsWith(v.Z5c.QUEST_HOME_V2) && (t = S.intl.string(S.t.JALI2N), G = (0, r.jsx)(c.qDn, {
+    size: R
   }));
-  let G = i.useCallback(e => {
+  let B = i.useCallback(e => {
       (0, m.ZN)("fast-travel")
     }, []),
-    B = (null == t || "" === t) && l ? I.intl.string(I.t.ZvKwYW) : t;
-  return null == B || "" === B ? null : (0, r.jsx)(c.ua7, {
-    shouldShow: l,
-    "aria-label": I.intl.string(I.t["7P/+q6"]),
-    tooltipContentClassName: C.navigationTooltip,
+    H = (null == t || "" === t) && n ? S.intl.string(S.t.ZvKwYW) : t;
+  return null == H || "" === H ? null : (0, r.jsx)(c.ua7, {
+    shouldShow: n,
+    "aria-label": S.intl.string(S.t["7P/+q6"]),
+    tooltipContentClassName: T.navigationTooltip,
     text: (0, r.jsxs)(r.Fragment, {
-      children: [I.intl.string(I.t["7P/+q6"]), (0, r.jsx)(c.M2$, {
+      children: [S.intl.string(S.t["7P/+q6"]), (0, r.jsx)(c.M2$, {
         shortcut: ["mod", "k"]
       })]
     }),
     children: e => {
-      var t, n;
+      var t, i;
       return (0, r.jsxs)(c.P3F, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -125,28 +126,28 @@ function T(e) {
         }
         return e
       }({
-        className: a()(C.title, {
-          [C.fastTravel]: l
+        className: a()(T.title, {
+          [T.fastTravel]: n
         })
-      }, e, T), n = n = {
-        onClick: l ? G : true,
-        children: [U, (0, r.jsx)(c.Text, {
+      }, e, l), i = i = {
+        onClick: n ? B : true,
+        children: [G, (0, r.jsx)(c.Text, {
           variant: "text-sm/medium",
           lineClamp: 1,
-          children: B
-        }), l && (0, r.jsx)(c.Fbu, {
-          className: C.fastTravelChevron,
+          children: H
+        }), n && (0, r.jsx)(c.Fbu, {
+          className: T.fastTravelChevron,
           size: "xs"
         })]
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
           n.push.apply(n, r)
         }
         return n
-      })(Object(n)).forEach(function(e) {
-        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+      })(Object(i)).forEach(function(e) {
+        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(i, e))
       }), t))
     }
   })

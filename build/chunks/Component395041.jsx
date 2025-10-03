@@ -2,40 +2,23 @@
 /** chunk id: 395041, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  O: () => d,
-  w: () => u
+  O: () => l,
+  w: () => s
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
-  Chunk481060 = require("./481060.js"),
-  Chunk819439 = require("./819439.js"),
+var Chunk481060 = require("./481060.js"),
   Chunk624595 = require("./624595.js");
 
-function c(e, t) {
+function o(e, t) {
   let {
     children: n
   } = e;
-  return (0, r.jsx)(o.Text, {
+  return (0, r.jsx)(i.Text, {
     variant: "text-sm/medium",
     className: t,
     children: n
   })
 }
-let u = e => {
-    let t = (0, s.$)({
-      location: "SearchTokens"
-    });
-    return c(e, a()(l.searchFilter, {
-      [l.searchTokenTopLevel]: t
-    }))
-  },
-  d = e => {
-    let t = (0, s.$)({
-      location: "SearchTokens"
-    });
-    return c(e, a()(l.searchAnswer, {
-      [l.searchTokenTopLevel]: t
-    }))
-  }
+let s = e => o(e, a.searchFilter),
+  l = e => o(e, a.searchAnswer)
