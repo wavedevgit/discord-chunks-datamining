@@ -5,7 +5,7 @@ require.d(exports, {
   Ct: () => w,
   px: () => L,
   uz: () => P
-}), require("./388685.js"), require("./953529.js");
+}), require("./388685.js"), require("./539854.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
@@ -110,16 +110,16 @@ function P(e) {
     activeDescendantIndex: null,
     listItems: [],
     filteredItems: [],
-    selectedItems: new Set,
+    selectedItems: [],
     longestLabelCharCount: 5,
     width: "200px"
-  }), N = I.selectedItems.size > 0, R = I.filteredItems.length > a, P = !I.isInitialized || true === c || true === u || true === d, w = i.useCallback(e => null != p ? p(e) : e, [p]);
+  }), N = I.selectedItems.length > 0, R = I.filteredItems.length > a, P = !I.isInitialized || true === c || true === u || true === d, w = i.useCallback(e => null != p ? p(e) : e, [p]);
   i.useLayoutEffect(() => {
-    let e = new Set,
+    let e = [],
       t = 6,
       n = _.map(n => {
         let r = w(n);
-        return t = Math.max(t, r.label.length), !I.isInitialized && (null != g || null != b) && (0, E.tw)(r.value, null != g ? g : b) && e.add(r), r
+        return t = Math.max(t, r.label.length), !I.isInitialized && (null != g || null != b) && (0, E._s)(r.value, null != g ? g : b) && e.push(r), r
       });
     S(r => A(T({}, r), {
       listItems: n,
@@ -130,9 +130,9 @@ function P(e) {
     }))
   }, [_, w]), i.useEffect(() => {
     !P && y && (null == g ? S(e => A(T({}, e), {
-      selectedItems: new Set
+      selectedItems: []
     })) : S(e => A(T({}, e), {
-      selectedItems: new Set(e.listItems.filter(e => (0, E.tw)(e.value, g)))
+      selectedItems: e.listItems.filter(e => (0, E._s)(e.value, g))
     })))
   }, [g, P, y]), i.useLayoutEffect(() => {
     if (null == v.current) return;
@@ -152,7 +152,7 @@ function P(e) {
     var t, n, r;
     if (P) return;
     let i = Array.from(e);
-    "multiple" === l && i.length < 1 ? h(null) : "multiple" === l ? h(new Set(i.map(e => e.value))) : h(null != (r = null == (n = i[0]) ? true : n.value) ? r : null);
+    "multiple" === l && i.length < 1 ? h(null) : "multiple" === l ? h(i.map(e => e.value)) : h(null != (r = null == (n = i[0]) ? true : n.value) ? r : null);
     let a = "single" === l && i.length > 0 ? null == (t = i[0]) ? true : t.label : "";
     S(t => A(T({}, t), {
       selectedItems: e,
@@ -237,7 +237,7 @@ function D(e) {
     hasValue: J,
     handleSelectionChange: $,
     onSelectionChange: ee
-  } = (0, m.T)(), et = "multiple" === G && k.selectedItems.size > 0, en = null != k.activeDescendantIndex ? (0, E.cA)(Y, k.activeDescendantIndex) : true;
+  } = (0, m.T)(), et = "multiple" === G && k.selectedItems.length > 0, en = null != k.activeDescendantIndex ? (0, E.cA)(Y, k.activeDescendantIndex) : true;
   i.useEffect(() => {
     var e;
     null != en && (null == (e = document.getElementById(en)) || e.scrollIntoView({
@@ -254,7 +254,7 @@ function D(e) {
       var e;
       U(e => A(T({}, e), {
         query: "",
-        selectedItems: new Set,
+        selectedItems: [],
         filteredItems: e.listItems
       })), ee(null), null == (e = L.current) || e.focus()
     }, [ee, U]),
@@ -293,7 +293,7 @@ function D(e) {
     ec = i.useCallback(e => {
       if (X) return;
       let t = Array.from(e)[0];
-      $(new Set([...k.selectedItems].filter(e => e.id !== t)))
+      $(k.selectedItems.filter(e => e.id !== t))
     }, [$, k.selectedItems, X]),
     eu = i.useCallback(e => {
       let t = k.filteredItems.length;
@@ -321,11 +321,11 @@ function D(e) {
         case "Enter":
           if (e.preventDefault(), e.stopPropagation(), null === k.activeDescendantIndex || 0 === t) return;
           let n = k.filteredItems[k.activeDescendantIndex];
-          if (true === n.disabled || true === H && 1 === k.selectedItems.size && k.selectedItems.has(n)) return;
-          $((0, E.xj)(G, k.selectedItems, n));
+          if (true === n.disabled || true === H && 1 === k.selectedItems.length && k.selectedItems.includes(n)) return;
+          $((0, E.cq)(G, k.selectedItems, n));
           break;
         case "Backspace":
-          if ("multiple" === G && "" === k.query && k.selectedItems.size > 0 && null != D.current) {
+          if ("multiple" === G && "" === k.query && k.selectedItems.length > 0 && null != D.current) {
             var r;
             e.preventDefault(), e.stopPropagation(), null == (r = D.current.lastChild) || r.focus()
           }
@@ -349,7 +349,7 @@ function D(e) {
       }), null == S || S(e)
     }, [S, U, q, z]),
     ef = i.useMemo(() => {
-      if (0 === k.selectedItems.size) return null;
+      if (0 === k.selectedItems.length) return null;
       if ("single" === G) {
         if (k.isEditing) return null;
         let e = Array.from(k.selectedItems)[0];

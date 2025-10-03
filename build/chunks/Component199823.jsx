@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   M: () => a
-}), require("./388685.js"), require("./49124.js");
+}), require("./49124.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk635041 = require("./635041.jsx");
@@ -23,7 +23,7 @@ function a(e) {
 
   function d(e) {
     let t = Array.from(e.target.selectedOptions).map(e => e.dataset.id);
-    c(new Set(u.filter(e => t.includes(e.id))))
+    c(u.filter(e => t.includes(e.id)))
   }
   return (0, r.jsx)(i.n, {
     children: (0, r.jsx)("select", {
@@ -40,7 +40,7 @@ function a(e) {
         return (0, r.jsx)("option", {
           "data-id": e.id,
           value: t,
-          selected: l.has(e),
+          selected: l.includes(e),
           children: e.label
         }, e.id)
       })

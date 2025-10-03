@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   P: () => S
-}), require("./953529.js"), require("./388685.js");
+}), require("./953529.js"), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
@@ -134,11 +134,11 @@ function A(e) {
     activeDescendantIndex: null,
     listItems: [],
     filteredItems: [],
-    selectedItems: new Set,
+    selectedItems: [],
     longestLabelCharCount: 5,
     width: "200px",
     dropDownHeight: "auto"
-  }), Y = i.useContext(s.U), W = i.useRef(null), K = i.useRef(null), z = null != N ? N : "multiple" !== t, q = V.selectedItems.size > 0, X = V.listItems.length > j, Q = !V.isInitialized || b || O || I, J = i.useCallback(() => {
+  }), Y = i.useContext(s.U), W = i.useRef(null), K = i.useRef(null), z = null != N ? N : "multiple" !== t, q = V.selectedItems.length > 0, X = V.listItems.length > j, Q = !V.isInitialized || b || O || I, J = i.useCallback(() => {
     Q || H(e => v(y({}, e), {
       isOpen: !e.isOpen
     }))
@@ -150,7 +150,7 @@ function A(e) {
   }, []), ee = i.useCallback(() => {
     var e;
     H(e => v(y({}, e), {
-      selectedItems: new Set
+      selectedItems: []
     })), U(null), null == (e = W.current) || e.focus()
   }, [U]), et = i.useCallback(e => {
     switch (e.key) {
@@ -164,11 +164,11 @@ function A(e) {
     }
   }, [ee, q, S]), en = i.useCallback(e => null != k ? k(e) : e, [k]);
   i.useLayoutEffect(() => {
-    let e = new Set,
+    let e = [],
       t = 6,
       n = M.map(n => {
         let r = en(n);
-        return t = Math.max(t, r.label.length), !V.isInitialized && (null != G || null != B) && (0, h.tw)(r.value, null != G ? G : B) && e.add(r), r
+        return t = Math.max(t, r.label.length), !V.isInitialized && (null != G || null != B) && (0, h._s)(r.value, null != G ? G : B) && e.push(r), r
       });
     H(r => v(y({}, r), {
       listItems: n,
@@ -178,9 +178,9 @@ function A(e) {
     }))
   }, [M, en]), i.useEffect(() => {
     !Q && Z && (null == G ? H(e => v(y({}, e), {
-      selectedItems: new Set
+      selectedItems: []
     })) : H(e => v(y({}, e), {
-      selectedItems: new Set(e.listItems.filter(e => (0, h.tw)(e.value, G)))
+      selectedItems: e.listItems.filter(e => (0, h._s)(e.value, G))
     })))
   }, [G, Q, Z]), i.useLayoutEffect(() => {
     if (null == K.current) return;
@@ -204,7 +204,7 @@ function A(e) {
     if (Q) return;
     let n = Array.from(e);
     if ("multiple" === t && n.length < 1) U(null);
-    else if ("multiple" === t) U(new Set(n.map(e => e.value)));
+    else if ("multiple" === t) U(n.map(e => e.value));
     else {
       var r, i;
       U(null != (i = null == (r = n[0]) ? true : r.value) ? i : null)
@@ -286,7 +286,7 @@ function C(e) {
     placeholder: t,
     selectedItems: n
   } = e;
-  if (null == n || 0 === n.size) return (0, r.jsx)("div", {
+  return null == n || 0 === n.length ? (0, r.jsx)("div", {
     className: E.placeholder,
     children: (0, r.jsx)(c.xvT, {
       variant: "text-md/normal",
@@ -294,15 +294,13 @@ function C(e) {
       lineClamp: 1,
       children: t
     })
-  });
-  let i = Array.from(n);
-  return i.length > 1 ? (0, r.jsx)("div", {
+  }) : n.length > 1 ? (0, r.jsx)("div", {
     className: E.multipleValues,
     children: (0, r.jsx)(c.xvT, {
       variant: "text-md/normal",
       color: "currentColor",
       lineClamp: 1,
-      children: i.map(e => e.label).join(", ")
+      children: n.map(e => e.label).join(", ")
     })
-  }) : (0, r.jsx)(_.W, y({}, i[0]))
+  }) : (0, r.jsx)(_.W, y({}, n[0]))
 }

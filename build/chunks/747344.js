@@ -4,7 +4,7 @@
 require.d(exports, {
   T: () => a,
   Z: () => o
-}), require("./388685.js");
+});
 var Chunk647438 = require("./647438.js"),
   Chunk981631 = require("./981631.js");
 
@@ -18,7 +18,7 @@ let o = Chunk647438.createContext({
     activeDescendantIndex: null,
     listItems: [],
     filteredItems: [],
-    selectedItems: new Set,
+    selectedItems: [],
     longestLabelCharCount: 5,
     width: "0px",
     dropDownHeight: "auto"

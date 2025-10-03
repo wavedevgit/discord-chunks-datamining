@@ -83,7 +83,7 @@ function m(e) {
     shouldFocusWrap: O = false,
     renderListItem: v,
     renderEmptyState: I
-  } = e, T = i.useId(), S = null != t ? t : T, [A, C] = i.useState(null != m ? m : new Set), N = null != E, R = N ? E : A, P = (0, a.ZP)({
+  } = e, T = i.useId(), S = null != t ? t : T, [A, C] = i.useState(null != m ? m : []), N = null != E, R = N ? E : A, P = (0, a.ZP)({
     id: S,
     async scrollToEnd() {},
     async scrollToStart() {},
@@ -91,8 +91,8 @@ function m(e) {
     wrap: O,
     preserveFocusPosition: true
   }), w = i.useCallback(e => {
-    if (true === n && 1 === R.size && R.has(e)) return;
-    let t = (0, l.xj)(f, R, e);
+    if (true === n && 1 === R.length && R.includes(e)) return;
+    let t = (0, l.cq)(f, R, e);
     N || C(t), null == b || b(t)
   }, [n, R, b, N, f]), D = i.useCallback(e => (0, r.jsx)("div", {
     className: c.listBoxItemContent,
@@ -108,7 +108,7 @@ function m(e) {
     return (0, r.jsx)(g, _(d({}, e), {
       id: a,
       selectionMode: f,
-      selected: null != (n = null == R ? true : R.has(e)) && n,
+      selected: null != (n = null == R ? true : R.includes(e)) && n,
       disabled: u || e.disabled,
       focused: t === y,
       onClick: () => {
