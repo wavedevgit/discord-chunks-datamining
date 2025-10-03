@@ -2,8 +2,8 @@
 /** chunk id: 606669, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => g
-}), require("./290780.js");
+  Z: () => E
+}), require("./290780.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk442837 = require("./442837.js"),
@@ -11,12 +11,13 @@ var Chunk442837 = require("./442837.js"),
   Chunk857595 = require("./857595.js"),
   Chunk607070 = require("./607070.js"),
   Chunk299363 = require("./299363.js"),
+  Chunk877371 = require("./877371.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk693450 = require("./693450.js");
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,20 +26,20 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
 }
 
-function h(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -49,28 +50,30 @@ function h(e, t) {
   return n
 }
 
-function m(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
+function g(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function g() {
+function E() {
   let {
     saturation: e,
     useReducedMotion: t,
     roleStyle: n,
-    highContrastMode: _
+    highContrastMode: p,
+    switchIconsEnabled: m
   } = (0, Chunk442837.cj)([Chunk607070.Z], () => ({
     saturation: Chunk607070.Z.saturation,
     useReducedMotion: Chunk607070.Z.useReducedMotion,
     roleStyle: Chunk607070.Z.roleStyle,
-    highContrastMode: Chunk607070.Z.isHighContrastModeEnabled
-  })), h = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.displayNameStylesEnabled), g = Chunk299363.U.useExperiment({
+    highContrastMode: Chunk607070.Z.isHighContrastModeEnabled,
+    switchIconsEnabled: Chunk607070.Z.isSwitchIconsEnabled
+  })), E = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.displayNameStylesEnabled), b = Chunk299363.U.useExperiment({
     location: "useAccessibilityItems"
   }, {
     autoTrackExposure: true
-  }).enabled, E = [{
+  }).enabled, y = (0, Chunk877371.A)("useAccessibilityItems"), O = [{
     name: Chunk388032.intl.string(Chunk388032.t.YEOEi4),
     value: "username"
   }, {
@@ -81,12 +84,12 @@ function g() {
     value: "hidden"
   }];
 
-  function b() {
+  function v() {
     Chunk626135.default.track(Chunk981631.rMx.DISPLAY_NAME_STYLES_ACCESSIBILITY_TOGGLE, {
-      enabled: !h
-    }), (0, Chunk857595.X2)(!h)
+      enabled: !E
+    }), (0, Chunk857595.X2)(!E)
   }
-  let y = [(0, Chunk951288.jsx)(Chunk481060.kSQ, {
+  let I = [(0, Chunk951288.jsx)(Chunk481060.kSQ, {
     children: (0, Chunk951288.jsx)(Chunk481060.S89, {
       id: "reduced-motion",
       label: Chunk388032.intl.string(Chunk388032.t.b3XBzs),
@@ -97,18 +100,18 @@ function g() {
     children: (0, Chunk951288.jsx)(Chunk481060.II_, {
       id: "input",
       label: Chunk388032.intl.string(Chunk388032.t["5PWWCQ"]),
-      control: (t, n) => (0, r.jsx)(a._wy, m(p({}, t), {
+      control: (t, n) => (0, r.jsx)(a._wy, g(h({}, t), {
         ref: n,
         value: 100 * e,
         onChange: e => (0, o.o2)(e / 100),
-        "aria-label": d.intl.string(d.t["5PWWCQ"])
+        "aria-label": f.intl.string(f.t["5PWWCQ"])
       }))
     })
   }, "input"), (0, Chunk951288.jsx)(Chunk481060.kSQ, {
     children: (0, Chunk951288.jsx)(Chunk481060.sNh, {
       id: "role-colors",
       label: Chunk388032.intl.string(Chunk388032.t.uSOPWl),
-      children: E.map(e => {
+      children: O.map(e => {
         let {
           name: t,
           value: i
@@ -126,16 +129,23 @@ function g() {
     children: (0, Chunk951288.jsx)(Chunk481060.S89, {
       id: "display-name-styles",
       label: Chunk388032.intl.string(Chunk693450.default["2gFUEx"]),
-      checked: h,
-      action: b
+      checked: E,
+      action: v
     })
   }, "display-name-styles")];
-  return g && y.unshift((0, Chunk951288.jsx)(Chunk481060.kSQ, {
+  return b && I.unshift((0, Chunk951288.jsx)(Chunk481060.kSQ, {
     children: (0, Chunk951288.jsx)(Chunk481060.S89, {
       id: "high-contrast",
       label: Chunk388032.intl.string(Chunk388032.t.aZlePj),
-      checked: _,
-      action: () => (0, Chunk857595.vW)(_ ? Chunk607070.X.DEFAULT : Chunk607070.X.HIGH)
+      checked: p,
+      action: () => (0, Chunk857595.vW)(p ? Chunk607070.X.DEFAULT : Chunk607070.X.HIGH)
     })
-  }, "high-contrast")), y
+  }, "high-contrast")), y && I.push((0, Chunk951288.jsx)(Chunk481060.kSQ, {
+    children: (0, Chunk951288.jsx)(Chunk481060.S89, {
+      id: "switch-icons",
+      label: Chunk388032.intl.string(Chunk388032.t["S3z+pa"]),
+      checked: m,
+      action: () => (0, Chunk857595.ky)(!m)
+    })
+  }, "switch-icons")), I
 }

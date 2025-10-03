@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   X: () => b,
-  Z: () => Q
+  Z: () => J
 });
 var r, Chunk442837 = require("./442837.js"),
   Chunk433517 = require("./433517.js"),
@@ -98,7 +98,8 @@ let y = {
     displayNameStylesEnabled: true,
     submitButtonEnabled: false,
     syncProfileThemeWithUserTheme: false,
-    enableCustomCursor: true
+    enableCustomCursor: true,
+    switchIconsEnabled: false
   },
   O = y,
   v = {
@@ -262,7 +263,13 @@ function q(e) {
     contrastMode: t
   })
 }
-class X extends(r = Chunk442837.ZP.DeviceSettingsStore) {
+
+function X(e) {
+  O = m(p({}, O), {
+    switchIconsEnabled: e.switchIconsEnabled
+  })
+}
+class Q extends(r = Chunk442837.ZP.DeviceSettingsStore) {
   initialize(e) {
     this.waitFor(c.Z), isNaN((O = p({}, y, null != e ? e : null)).fontSize) && (O.fontSize = d.yqN.FONT_SIZE_DEFAULT), 0 > f.fP.indexOf(null != O.messageGroupSpacing ? O.messageGroupSpacing : false) && (O.messageGroupSpacing = null)
   }
@@ -379,11 +386,14 @@ class X extends(r = Chunk442837.ZP.DeviceSettingsStore) {
   get isHighContrastModeEnabled() {
     return "high" === O.contrastMode
   }
+  get isSwitchIconsEnabled() {
+    return O.switchIconsEnabled
+  }
   getUserAgnosticState() {
     return O
   }
 }
-_(X, "displayName", "AccessibilityStore"), _(X, "persistKey", "AccessibilityStore"), _(X, "migrations", [() => {
+_(Q, "displayName", "AccessibilityStore"), _(Q, "persistKey", "AccessibilityStore"), _(Q, "migrations", [() => {
   let e = "a11yFontScale",
     t = "a11yZoom",
     n = "a11yColorblindMode",
@@ -446,7 +456,7 @@ _(X, "displayName", "AccessibilityStore"), _(X, "persistKey", "AccessibilityStor
 }, e => m(p({}, e), {
   enableCustomCursor: true
 })]);
-let Q = new X(Chunk570140.Z, {
+let J = new Q(Chunk570140.Z, {
   ACCESSIBILITY_SET_FONT_SIZE: T,
   ACCESSIBILITY_SET_ZOOM: S,
   ACCESSIBILITY_RESET_TO_DEFAULT: A,
@@ -472,5 +482,6 @@ let Q = new X(Chunk570140.Z, {
   ACCESSIBILITY_SUBMIT_BUTTON_TOGGLE: M,
   ACCESSIBILITY_SYNC_PROFILE_THEME_WITH_USER_THEME_TOGGLE: k,
   ACCESSIBILITY_SET_CONTRAST: z,
-  ACCESSIBILITY_SET_CONTRAST_MODE: q
+  ACCESSIBILITY_SET_CONTRAST_MODE: q,
+  ACCESSIBILITY_SET_SWITCH_ICONS_ENABLED: X
 })

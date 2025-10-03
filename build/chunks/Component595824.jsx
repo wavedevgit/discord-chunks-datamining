@@ -62,7 +62,7 @@ function _(e) {
     onChange: i,
     labelType: o = "primary"
   } = e, l = null != t && "" !== t ? (0, r.jsx)(a.x, {
-    variant: "text-md/medium",
+    variant: "text-md/normal",
     color: "primary" === o ? "text-primary" : "text-secondary",
     children: t
   }) : null;

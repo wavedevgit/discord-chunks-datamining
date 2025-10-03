@@ -15,6 +15,7 @@ require.d(exports, {
   eN: () => N,
   f1: () => h,
   gs: () => T,
+  ky: () => w,
   lq: () => m,
   o2: () => b,
   oL: () => u,
@@ -192,5 +193,12 @@ function P(e) {
   r.Z.dispatch({
     type: "ACCESSIBILITY_SET_CONTRAST_MODE",
     contrastMode: e
+  })
+}
+
+function w(e) {
+  r.Z.dispatch({
+    type: "ACCESSIBILITY_SET_SWITCH_ICONS_ENABLED",
+    switchIconsEnabled: e
   })
 }

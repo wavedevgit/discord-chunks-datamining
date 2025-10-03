@@ -73,7 +73,6 @@ function f(e) {
       children: n.map(e => (0, r.jsx)(o.Cnq, d(c({
         disabled: u || e.disabled
       }, e), {
-        groupVariant: "group",
         labelType: "primary"
       }), String(e.value)))
     })
