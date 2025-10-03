@@ -1,7 +1,7 @@
 /** Chunk was on 85683 **/
 /** chunk id: 331500, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => O
 });
 var r, a, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,7 +20,7 @@ var r, a, Chunk951288 = require("./951288.js"),
   Chunk401561 = require("./401561.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk134977 = require("./134977.js");
-let O = (r = function(e) {
+let y = (r = function(e) {
   for (var n = 1; n < arguments.length; n++) {
     var t = null != arguments[n] ? arguments[n] : {},
       r = Object.keys(t);
@@ -50,7 +50,7 @@ let O = (r = function(e) {
   Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(a, e))
 }), r);
 
-function y(e) {
+function O(e) {
   let {
     guildId: n
   } = e;
@@ -94,7 +94,7 @@ function y(e) {
           game: e,
           onClick: () => (0, p.Z)({
             guildId: n,
-            stepConfig: O,
+            stepConfig: y,
             initialPortkeyGame: e,
             analyticsLocation: b.Z.PORTKEY_OVERVIEW
           }),

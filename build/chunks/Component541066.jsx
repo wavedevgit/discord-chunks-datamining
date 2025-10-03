@@ -1,20 +1,22 @@
 /** Chunk was on 46638 **/
 /** chunk id: 541066, original params: t,e,r (module,exports,require) **/
 require.d(exports, {
-  default: () => c
+  default: () => p
 });
 var Chunk951288 = require("./951288.js"),
+  Chunk763600 = require("./763600.js"),
+  Chunk468194 = require("./468194.js"),
   Chunk793030 = require("./793030.js"),
   Chunk49012 = require("./49012.js"),
   Chunk744993 = require("./744993.js"),
   Chunk401561 = require("./401561.js"),
   Chunk388032 = require("./388032.jsx");
 
-function c(t) {
+function p(t) {
   var {
     provider: e,
     onAccept: r
-  } = t, c = function(t, e) {
+  } = t, p = function(t, e) {
     if (null == t) return {};
     var r, n, o = function(t, e) {
       if (null == t) return {};
@@ -29,28 +31,28 @@ function c(t) {
     }
     return o
   }(t, ["provider", "onAccept"]);
-  return (0, n.jsx)(o.Modal, {
-    title: a.intl.string(s.default.bnsSPj),
-    subtitle: a.intl.format(s.default.MaWfLi, {
-      provider: e,
-      providerUrl: () => (0, i.q)({
-        href: "https://google.com/terms-of-service"
+  return (0, n.jsx)(l.Modal, {
+    title: u.intl.string(c.default.bnsSPj),
+    subtitle: u.intl.format(c.default.MaWfLi, {
+      provider: (0, i.De)(e),
+      providerUrl: () => (0, s.q)({
+        href: e === o.Z.SHOCKBYTE ? "https://shockbyte.com/legal/acceptable-use-policy" : ""
       }),
-      helpCenterUrl: "https://google.com/help-center"
+      helpCenterUrl: "https://support.discord.com/hc/en-us/articles/35370817986839/"
     }),
     size: "md",
     actions: [{
-      text: a.intl.string(a.t["/g10LC"]),
-      onClick: c.onClose,
+      text: u.intl.string(u.t["/g10LC"]),
+      onClick: p.onClose,
       variant: "secondary"
     }, {
-      text: a.intl.string(s.default.IfMFoK),
+      text: u.intl.string(c.default.IfMFoK),
       onClick: () => {
-        (0, l.g$)(true, e), null == r || r(), c.onClose()
+        (0, a.g$)(true, e), null == r || r(), p.onClose()
       },
       variant: "primary"
     }],
-    transitionState: c.transitionState,
-    onClose: c.onClose
+    transitionState: p.transitionState,
+    onClose: p.onClose
   })
 }

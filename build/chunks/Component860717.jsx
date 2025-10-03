@@ -239,13 +239,13 @@ function G(e) {
 
 function M() {
   let e = function() {
-      let e = Chunk647438.useContext(F);
+      let e = Chunk647438.useContext(W);
       if (null == module) throw Error("ApplicationWidgetContext provider not found");
       return module
     }(),
     {
       game: t
-    } = W(module.widget);
+    } = F(module.widget);
   return null == exports ? null : (0, Chunk951288.jsx)(Chunk919498.Z, {
     className: Chunk18827.socialProof,
     applicationId: exports.id,
@@ -253,9 +253,9 @@ function M() {
     channelId: module.channelId
   })
 }
-let F = Chunk647438.createContext(null);
+let W = Chunk647438.createContext(null);
 
-function W(e) {
+function F(e) {
   return (0, s.cj)([d.Z, P.Z, x.Z], () => {
     let t = d.Z.getApplication(e.applicationId);
     return {
@@ -298,7 +298,7 @@ function z(e) {
     application: p,
     game: h,
     config: m
-  } = W(s), v = null == p ? true : p.getIconURL(16), y = (0, O.O)(l.id).data, b = null == y ? true : y.find(e => e.application_id === s.applicationId), x = null == b || null == (n = b.profile) || null == (t = n.data) ? true : t.primary, P = (0, g.Z)({
+  } = F(s), v = null == p ? true : p.getIconURL(16), y = (0, O.O)(l.id).data, b = null == y ? true : y.find(e => e.application_id === s.applicationId), x = null == b || null == (n = b.profile) || null == (t = n.data) ? true : t.primary, P = (0, g.Z)({
     location: "UserProfileApplicationWidget",
     applicationId: null == h ? true : h.id,
     source: f.m1.UserProfile,
@@ -437,7 +437,7 @@ function z(e) {
       icon: c.iWm,
       action: P
     }) : null,
-    children: [(0, r.jsx)(F.Provider, {
+    children: [(0, r.jsx)(W.Provider, {
       value: e,
       children: (0, r.jsx)(B, {
         widget: s,

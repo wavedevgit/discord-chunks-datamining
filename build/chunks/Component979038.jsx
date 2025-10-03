@@ -31,58 +31,59 @@ var Chunk620662 = require("./620662.js"),
   Chunk671955 = require("./671955.js");
 
 function C(e) {
+  var t;
   let {
-    user: t,
-    activity: n,
-    onAction: C,
-    onClose: N,
-    application: R
+    user: n,
+    activity: C,
+    onAction: N,
+    onClose: R,
+    application: P
   } = e, {
-    themeType: P
-  } = (0, m.z)(), w = (0, c.q)(R, "UserProfileActivityButtons"), D = (0, f.L)(null != n ? n : true, true), {
-    analyticsLocations: L
+    themeType: w
+  } = (0, m.z)(), D = (0, c.q)(P, "UserProfileActivityButtons"), L = (0, f.L)(null != (t = null == C ? true : C.application_id) ? t : null == P ? true : P.id), {
+    analyticsLocations: x
   } = (0, d.ZP)(u.Z.USER_PROFILE_ACTIVITY_BUTTONS);
-  if ((0, s.Z)(n)) return (0, r.jsx)(O.Z, {
+  if ((0, s.Z)(C)) return (0, r.jsx)(O.Z, {
     platformType: S.ABu.XBOX,
     icon: () => (0, r.jsx)(h.Z, {}),
-    onAction: C
+    onAction: N
   });
-  if ((0, o.Z)(n)) return (0, r.jsx)(O.Z, {
+  if ((0, o.Z)(C)) return (0, r.jsx)(O.Z, {
     platformType: S.ABu.PLAYSTATION,
     icon: () => (0, r.jsx)(p.Z, {}),
-    onAction: C
+    onAction: N
   });
-  if ((0, l.Z)(n)) return (0, r.jsx)(I.Z, {
-    activity: n,
-    onAction: C
+  if ((0, l.Z)(C)) return (0, r.jsx)(I.Z, {
+    activity: C,
+    onAction: N
   });
-  let x = P === A.l.MODAL || P === A.l.MODAL_V2;
-  return D || !w || null == R || x ? (0, i.Z)(n, S.xjy.JOIN) || (0, a.Z)(n) ? (0, r.jsx)(b.Z, {
-    user: t,
-    activity: n,
-    onAction: C,
-    onClose: N
-  }) : (null == n ? true : n.type) === S.IIU.HANG_STATUS ? (0, r.jsx)(E.Z, {
-    user: t,
-    activity: n,
-    onAction: C,
-    onClose: N
-  }) : (null == n ? true : n.buttons) != null && (null == n ? true : n.buttons.length) >= 1 ? (0, r.jsx)(g.Z, {
-    user: t,
-    activity: n,
-    onAction: C
-  }) : (0, i.Z)(n, S.xjy.INSTANCE) ? (0, r.jsx)(y.Z, {
-    user: t,
-    activity: n,
-    onAction: C
-  }) : (0, _.dS)(n) ? (0, r.jsx)(v.Z, {
-    activity: n,
-    onAction: C,
-    onClose: N
+  let j = w === A.l.MODAL || w === A.l.MODAL_V2;
+  return L || !D || null == P || j ? (0, i.Z)(C, S.xjy.JOIN) || (0, a.Z)(C) ? (0, r.jsx)(b.Z, {
+    user: n,
+    activity: C,
+    onAction: N,
+    onClose: R
+  }) : (null == C ? true : C.type) === S.IIU.HANG_STATUS ? (0, r.jsx)(E.Z, {
+    user: n,
+    activity: C,
+    onAction: N,
+    onClose: R
+  }) : (null == C ? true : C.buttons) != null && (null == C ? true : C.buttons.length) >= 1 ? (0, r.jsx)(g.Z, {
+    user: n,
+    activity: C,
+    onAction: N
+  }) : (0, i.Z)(C, S.xjy.INSTANCE) ? (0, r.jsx)(y.Z, {
+    user: n,
+    activity: C,
+    onAction: N
+  }) : (0, _.dS)(C) ? (0, r.jsx)(v.Z, {
+    activity: C,
+    onAction: N,
+    onClose: R
   }) : null : (0, r.jsx)(T.Z, {
-    application: R,
-    onAction: C,
-    onClose: N,
-    analyticsLocations: L
+    application: P,
+    onAction: N,
+    onClose: R,
+    analyticsLocations: x
   })
 }
