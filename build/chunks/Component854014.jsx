@@ -39,25 +39,31 @@ function m(e) {
   } = (0, s.t)(), {
     useTitle: b,
     stronglyDiscouragedCustomComponent: j,
-    icon: p,
-    trailing: x
+    icon: x,
+    trailing: p
   } = t, v = l.useMemo(() => t.layout[0], [t]), y = null != o && o.key === (null == v ? true : v.key), h = b(), g = null != v ? () => {
     i(v.key), m(false)
   } : t.onClick, O = l.useMemo(() => {
     var e;
     return null != (e = null == v ? true : v.layout.flatMap(e => e.layout)) ? e : []
   }, [v]);
-  return null != j ? (0, r.jsx)(f, {
+  return null != j ? (0, r.jsxs)(f, {
     onClick: g,
     active: y,
-    children: (0, r.jsx)(j, {})
+    children: [(0, r.jsx)(j, {}), null != p && (0, r.jsx)("div", {
+      className: d.itemContent,
+      children: (0, r.jsx)(c.W, {
+        trailing: p,
+        visibleContent: n
+      })
+    })]
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(f, {
       onClick: g,
       active: y,
       children: [(0, r.jsxs)("div", {
         className: d.itemContent,
-        children: [(0, r.jsx)(p, {
+        children: [(0, r.jsx)(x, {
           color: "currentColor",
           size: "refresh_sm",
           className: d.icon
@@ -66,10 +72,10 @@ function m(e) {
           color: "currentColor",
           children: h
         })]
-      }), null != x && (0, r.jsx)("div", {
+      }), null != p && (0, r.jsx)("div", {
         className: d.itemContent,
         children: (0, r.jsx)(c.W, {
-          trailing: x,
+          trailing: p,
           visibleContent: n
         })
       })]

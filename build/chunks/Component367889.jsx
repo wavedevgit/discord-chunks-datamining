@@ -23,7 +23,7 @@ let I = (0, Chunk509613.x1)(Chunk313789.n.SUBSCRIPTIONS_PANE, {
     buildLayout: () => [I]
   }),
   A = (0, Chunk509613.m7)(Chunk313789.n.SUBSCRIPTIONS_SIDEBAR_ITEM, {
-    icon: Chunk657707.SrA,
+    icon: Chunk657707.XOf,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.trSpHR),
     legacySearchKey: Chunk726985.s6.SUBSCRIPTIONS,
     buildLayout: () => [O],

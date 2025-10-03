@@ -1,7 +1,7 @@
 /** Chunk was on 75685 **/
 /** chunk id: 404975, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  P: () => p
+  P: () => x
 }), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,14 +17,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk845435 = require("./845435.js");
 
-function p(e) {
+function x(e) {
   let {
     root: t,
     header: n,
     footer: o,
     onClose: m
   } = e, {
-    showNavigationMobile: p
+    showNavigationMobile: x
   } = (0, d.t)(), v = l.useMemo(() => {
     let e = [];
     return t.layout.forEach(t => {
@@ -60,7 +60,7 @@ function p(e) {
         return (0, r.jsxs)("div", {
           className: i()(j.sidebar, e, {
             [j.mobile]: a.tq,
-            [j.mobileNavigationOpen]: p
+            [j.mobileNavigationOpen]: x
           }),
           children: [(0, r.jsxs)("div", {
             className: j.fixedContent,
@@ -74,7 +74,7 @@ function p(e) {
                 "aria-label": b.intl.string(b.t.cpT0Cg)
               })
             }), (0, r.jsx)("div", {
-              children: y.map(e => (0, r.jsx)(x, {
+              children: y.map(e => (0, r.jsx)(p, {
                 section: e,
                 visibleContent: l
               }, e.key))
@@ -84,7 +84,7 @@ function p(e) {
             fade: true,
             children: [(0, r.jsx)("nav", {
               className: j.nav,
-              children: h.map(e => (0, r.jsx)(x, {
+              children: h.map(e => (0, r.jsx)(p, {
                 section: e,
                 visibleContent: l
               }, e.key))
@@ -96,7 +96,7 @@ function p(e) {
   })
 }
 
-function x(e) {
+function p(e) {
   var t;
   let {
     section: n,

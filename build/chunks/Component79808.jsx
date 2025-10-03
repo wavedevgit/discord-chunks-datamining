@@ -49,8 +49,8 @@ function f(e) {
     root: m,
     directory: b,
     target: j,
-    onClose: p,
-    sidebarHeader: x,
+    onClose: x,
+    sidebarHeader: p,
     sidebarFooter: v,
     onPanelChange: y
   } = e, [h, g] = l.useState(true), [O, C] = l.useState(null == (t = b.entry(j)) ? true : t.targetPanel), [_, P] = l.useState(() => b.typedGet(O)), S = l.useCallback(() => E(true), []), [N, E] = l.useState({
@@ -84,14 +84,14 @@ function f(e) {
     navTransition: N,
     showNavigationMobile: h,
     setShowNavigationMobile: g
-  }), [b, O, N, h, S, k, y]), w = () => k(p);
+  }), [b, O, N, h, S, k, y]), w = () => k(x);
   return (0, r.jsx)(s.j.Provider, {
     value: T,
     children: (0, r.jsxs)("div", {
       className: c.container,
       children: [(0, r.jsx)(i.P, {
         root: m,
-        header: x,
+        header: p,
         footer: v,
         onClose: w
       }), (0, r.jsx)(o.Z, {

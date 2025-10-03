@@ -31,15 +31,15 @@ function v(e) {
     children: (0, r.jsxs)(a.kSQ, {
       children: [(0, r.jsx)(a.sNh, {
         id: "changelog",
-        label: p.intl.string(p.t.LRmNAg),
+        label: x.intl.string(x.t.LRmNAg),
         action: () => (0, c.Z)(true)
       }), (0, r.jsx)(a.sNh, {
         id: "acknowledgements",
-        label: p.intl.string(p.t["0nUKy8"]),
+        label: x.intl.string(x.t["0nUKy8"]),
         action: () => (0, s.Z)(j.EYA.ACKNOWLEDGEMENTS)
       }), (0, r.jsx)(a.sNh, {
         id: "support",
-        label: p.intl.string(p.t["Yl/Rio"]),
+        label: x.intl.string(x.t["Yl/Rio"]),
         action: () => (0, s.Z)(f.w)
       })]
     })
@@ -120,14 +120,14 @@ function y() {
           }({}, t), o = o = {
             ref: e,
             useDefaultUnderlineStyles: false,
-            className: i()(x.moreButton, {
-              [x.active]: n.isShown
+            className: i()(p.moreButton, {
+              [p.active]: n.isShown
             }),
             children: (0, r.jsx)(a.Text, {
               tag: "span",
               variant: "text-xxs/normal",
               color: "currentColor",
-              children: p.intl.string(p.t.UKOtz8)
+              children: x.intl.string(x.t.UKOtz8)
             })
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
             var n = Object.keys(e);

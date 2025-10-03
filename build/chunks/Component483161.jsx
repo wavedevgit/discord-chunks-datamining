@@ -66,6 +66,7 @@ let g = (0, Chunk509613.x1)(Chunk313789.n.PROFILE_PANE, {
             children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
               variant: "text-sm/normal",
               color: "currentColor",
+              lineClamp: 1,
               children: Chunk388032.intl.string(Chunk388032.t.Ip9nBQ)
             }), (0, Chunk951288.jsx)(Chunk657707.vdY, {
               size: "xxs",

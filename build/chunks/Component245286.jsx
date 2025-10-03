@@ -60,7 +60,7 @@ function C(e) {
     {
       node: s,
       directory: u
-    } = (0, d.Z)(x.Z, i),
+    } = (0, d.Z)(p.Z, i),
     m = (t = j.n.ACCOUNT_PANEL, null == u.entry(n) ? t : n),
     v = l.useRef(null);
   return (0, a.ZP)(() => {
@@ -90,7 +90,7 @@ function C(e) {
     root: s,
     directory: u,
     sidebarHeader: _,
-    sidebarFooter: p.Z,
+    sidebarFooter: x.Z,
     onPanelChange: e => {
       let t = (0, y.getUserSettingsSectionsByWebUserSettings)().get(e);
       null != t && (O({
