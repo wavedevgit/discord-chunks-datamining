@@ -276,14 +276,13 @@ function L(e) {
     let t = O[S];
     if ((null == t ? true : t.type) === h.h8.VOICE_CHANNEL) return t.record.id
   })();
-  return (0, r.jsx)("div", {
-    className: g.voiceModalContainer,
-    onMouseMove: p,
-    children: (0, r.jsxs)(o.Y0X, {
-      transitionState: t,
-      size: o.CgR.MEDIUM,
-      className: g.voiceModalRootContainer,
-      parentComponent: "SwitchChannelKeybindSettings",
+  return (0, r.jsx)(o.IX, {
+    transitionState: t,
+    size: "lg",
+    onClose: n,
+    children: (0, r.jsxs)("div", {
+      className: g.container,
+      onMouseMove: p,
       children: [(0, r.jsx)("div", {
         className: g.inputWrapper,
         children: (0, r.jsx)(o.oil, {

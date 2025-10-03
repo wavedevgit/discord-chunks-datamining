@@ -49,7 +49,7 @@ function A(e) {
   }
 
   function x(e, t) {
-    if ((0, _.S)()) return void o.Z.showAgeVerificationGetStartedModal({
+    if (!e && (0, _.S)()) return void o.Z.showAgeVerificationGetStartedModal({
       entryPoint: s.cU.MESSAGE_REQUESTS_SETTINGS
     });
     t ? D(e) : M(!e)

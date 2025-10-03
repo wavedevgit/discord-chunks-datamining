@@ -2,8 +2,7 @@
 /** chunk id: 704563, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 module.exports = {
-  voiceModalContainer: "voiceModalContainer__25eff",
-  voiceModalRootContainer: "voiceModalRootContainer__25eff",
+  container: "container__25eff",
   channelIdSection: "channelIdSection__25eff",
   inputWrapper: "inputWrapper__25eff",
   voiceChannelList: "voiceChannelList__25eff",
