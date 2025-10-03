@@ -45,26 +45,26 @@ function f(e) {
       return (0, r.jsx)(i.v2r, {
         navId: "portkey-popout-context-menu",
         onClose: () => {
-          (0, s.Zy)(), a()
+          (0, o.Zy)(), a()
         },
-        "aria-label": b.intl.string(u.default.xCq1DA),
+        "aria-label": m.intl.string(u.default.xCq1DA),
         onSelect: true,
         children: (0, r.jsxs)(i.kSQ, {
           children: [(0, r.jsx)(i.sNh, {
             id: "get-support",
             icon: i.kBi,
-            label: b.intl.string(u.default["TciV8/"]),
+            label: m.intl.string(u.default["TciV8/"]),
             action: () => {}
           }), f && (0, r.jsx)(i.sNh, {
             id: "settings",
             icon: i.ewm,
-            label: b.intl.string(u.default.NUTl4u),
+            label: m.intl.string(u.default.NUTl4u),
             action: () => {
               (0, c.Z)({
                 guildId: n,
                 stepConfig: g,
                 initialPortkeyInstance: t,
-                analyticsLocation: o.Z.PORTKEY_OVERVIEW
+                analyticsLocation: s.Z.PORTKEY_OVERVIEW
               })
             }
           })]
@@ -91,8 +91,8 @@ function f(e) {
         }
         return e
       }({
-        "aria-label": b.intl.string(b.t.UKOtz8),
-        className: m.clickable
+        "aria-label": m.intl.string(m.t.UKOtz8),
+        className: b.clickable
       }, e), t = t = {
         innerRef: d,
         children: (0, r.jsx)(i.xhG, {

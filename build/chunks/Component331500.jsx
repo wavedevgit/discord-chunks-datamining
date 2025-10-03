@@ -54,21 +54,21 @@ function h(e) {
   let {
     guildId: n
   } = e;
-  s.useEffect(() => {
-    (0, m.po)(n)
+  o.useEffect(() => {
+    (0, b.po)(n)
   }, [n]);
   let t = (0, d.e7)([g.Z], () => g.Z.getStateForGuild(n)),
     {
       catalog: r,
       instances: a
-    } = s.useMemo(() => {
+    } = o.useMemo(() => {
       var e, n;
       return {
         catalog: Object.values(null != (e = null == t ? true : t.catalog) ? e : {}),
         instances: Object.values(null != (n = null == t ? true : t.instances) ? n : {})
       }
     }, [null == t ? true : t.catalog, null == t ? true : t.instances]),
-    o = a.length >= v.zI;
+    s = a.length >= v.zI;
   return 0 === r.length ? (0, i.jsx)("div", {
     className: y.container,
     children: (0, i.jsx)(u.$jN, {
@@ -81,12 +81,12 @@ function h(e) {
       className: y.heading,
       variant: "heading-md/semibold",
       children: _.intl.string(j.default.DG1SHB)
-    }), o && (0, i.jsx)("div", {
+    }), s && (0, i.jsx)("div", {
       className: y.maxInstancesWarning,
       children: (0, i.jsx)(x.Y, {})
     }), (0, i.jsx)(c.zJl, {
       className: l()(y.gameContainerWrapper, {
-        [y.disabled]: o
+        [y.disabled]: s
       }),
       children: (0, i.jsx)("div", {
         className: y.gameContainer,
@@ -96,10 +96,10 @@ function h(e) {
             guildId: n,
             stepConfig: O,
             initialPortkeyGame: e,
-            analyticsLocation: b.Z.PORTKEY_OVERVIEW
+            analyticsLocation: m.Z.PORTKEY_OVERVIEW
           }),
           imageClassName: y.image,
-          disabled: o
+          disabled: s
         }, "sidebar-game-".concat(t, "-").concat(e.id)))
       })
     })]

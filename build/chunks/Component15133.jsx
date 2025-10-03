@@ -28,7 +28,7 @@ function v(e) {
     (0, u.EC)(t), l.Z.getDetectableGames()
   }, [t]);
   let v = (0, d.Z)(t),
-    j = (0, s.e7)([b.Z], () => b.Z.getStateForGuild(t)),
+    j = (0, o.e7)([m.Z], () => m.Z.getStateForGuild(t)),
     _ = Object.values(null != (n = null == j ? true : j.instances) ? n : {});
   return (0, r.jsxs)("div", {
     className: p.container,
@@ -40,26 +40,26 @@ function v(e) {
         "aria-label": ""
       }), (0, r.jsx)(c.ZP.Title, {
         children: x.intl.string(f.default.lH9Dio)
-      }), (0, r.jsx)(o.IGR, {
+      }), (0, r.jsx)(s.IGR, {
         disableColor: true,
         text: x.intl.string(x.t.oW0eUV),
         className: p.badge
       })]
     }), (0, r.jsxs)("div", {
       className: p.contentContainer,
-      children: [(null == j ? true : j.instances) != null ? (0, r.jsx)(o.zJl, {
+      children: [(null == j ? true : j.instances) != null ? (0, r.jsx)(s.zJl, {
         className: p.gameContainerWrapper,
         children: (0, r.jsx)("div", {
           className: p.gameContainer,
-          children: _.map((e, n) => (0, r.jsx)(m.ZP, {
+          children: _.map((e, n) => (0, r.jsx)(b.ZP, {
             guildId: t,
             instance: e
           }, "".concat(e.gameId, "-").concat(n)))
         })
       }) : (0, r.jsx)("div", {
         className: p.spinnerContainer,
-        children: (0, r.jsx)(o.$jN, {
-          type: o.RAz.SPINNING_CIRCLE
+        children: (0, r.jsx)(s.$jN, {
+          type: s.RAz.SPINNING_CIRCLE
         })
       }), v && (0, r.jsx)(g.Z, {
         guildId: t

@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk660815 = require("./660815.js"),
   Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
@@ -88,7 +88,7 @@ function Z(e) {
   let {
     guildId: n,
     instance: t
-  } = e, i = (0, y.Z)(t), S = null != t.serverIP && null != t.port, [Z, D] = (0, u.US)([c.z.GAME_SERVER_HOSTING_PORTKEY_TOS]), G = Z !== c.z.GAME_SERVER_HOSTING_PORTKEY_TOS, R = (0, l.e7)([m.Z], () => m.Z.getDetectableGame(t.gameId)), A = a.useCallback(() => {
+  } = e, i = (0, y.Z)(t), S = null != t.serverIP && null != t.port, [Z, D] = (0, u.US)([c.z.GAME_SERVER_HOSTING_PORTKEY_TOS]), G = Z !== c.z.GAME_SERVER_HOSTING_PORTKEY_TOS, R = (0, l.e7)([b.Z], () => b.Z.getDetectableGame(t.gameId)), A = a.useCallback(() => {
     G || null == t.providerType ? (0, O.Z)(n, t) : (0, h.Z)({
       provider: t.providerType,
       onAccept: () => {
@@ -106,7 +106,7 @@ function Z(e) {
     (0, p.WX)(n, t.id)
   }, [n, t.id]), U = a.useMemo(() => {
     switch (t.status) {
-      case o.V.SLEEPING:
+      case s.V.SLEEPING:
         return (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(T, {
             onClick: M
@@ -115,9 +115,9 @@ function Z(e) {
             disabled: null == t.gameServerPanelUrl
           })]
         });
-      case o.V.OFFLINE:
-      case o.V.ONLINE:
-      case o.V.STARTING:
+      case s.V.OFFLINE:
+      case s.V.ONLINE:
+      case s.V.STARTING:
         return (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(k, {
             onClick: A,
@@ -127,15 +127,15 @@ function Z(e) {
             disabled: null == t.gameServerPanelUrl
           })]
         });
-      case o.V.MISSING_STOCK:
+      case s.V.MISSING_STOCK:
         return B ? (0, r.jsx)(E, {
           onClick: L
         }) : (0, r.jsx)(k, {
           onClick: A,
           disabled: true
         });
-      case o.V.DELETED:
-      case o.V.STARTUP_FAILED:
+      case s.V.DELETED:
+      case s.V.STARTUP_FAILED:
         return B ? (0, r.jsx)(w, {
           onClick: L,
           disabled: null == t.gameServerPanelUrl
@@ -177,6 +177,7 @@ function Z(e) {
               className: P.detailItem,
               children: [(0, r.jsx)(d.Text, {
                 variant: "text-xs/semibold",
+                color: "text-muted",
                 children: N.intl.string(I.default.X0IaiI)
               }), (0, r.jsx)(d.Text, {
                 variant: "text-sm/medium",
@@ -186,6 +187,7 @@ function Z(e) {
               className: P.detailItem,
               children: [(0, r.jsx)(d.Text, {
                 variant: "text-xs/semibold",
+                color: "text-muted",
                 children: N.intl.string(I.default["9pw/yM"])
               }), (0, r.jsx)("div", {
                 className: P.serverIpContainer,
@@ -201,7 +203,7 @@ function Z(e) {
                       size: "sm"
                     })
                   })]
-                }) : null != t.providerType && (0, r.jsx)(b.Z, {
+                }) : null != t.providerType && (0, r.jsx)(m.Z, {
                   onClick: () => {
                     (0, h.Z)({
                       provider: t.providerType,
@@ -220,28 +222,29 @@ function Z(e) {
               className: P.detailItem,
               children: [(0, r.jsx)(d.Text, {
                 variant: "text-xs/semibold",
+                color: "text-muted",
                 children: N.intl.string(I.default.MQQIu7)
               }), (0, r.jsxs)("div", {
                 className: P.statusContainer,
                 children: [(0, r.jsx)("span", {
-                  className: s()(P.statusIndicator, null != t.status && P[t.status])
+                  className: o()(P.statusIndicator, null != t.status && P[t.status])
                 }), (0, r.jsx)(d.Text, {
                   variant: "text-sm/medium",
                   children: function(e) {
                     switch (e) {
-                      case o.V.STARTING:
+                      case s.V.STARTING:
                         return N.intl.string(I.default["7XF8pK"]);
-                      case o.V.STARTUP_FAILED:
+                      case s.V.STARTUP_FAILED:
                         return N.intl.string(I.default["C/096+"]);
-                      case o.V.OFFLINE:
+                      case s.V.OFFLINE:
                         return N.intl.string(I.default.Bz9gcH);
-                      case o.V.ONLINE:
+                      case s.V.ONLINE:
                         return N.intl.string(I.default["7q4iGR"]);
-                      case o.V.DELETED:
+                      case s.V.DELETED:
                         return N.intl.string(I.default["UvP/1N"]);
-                      case o.V.MISSING_STOCK:
+                      case s.V.MISSING_STOCK:
                         return N.intl.string(I.default.ssC3cX);
-                      case o.V.SLEEPING:
+                      case s.V.SLEEPING:
                         return N.intl.string(I.default.PS8AMT);
                       default:
                         return "—"
@@ -253,6 +256,7 @@ function Z(e) {
               className: P.detailItem,
               children: [(0, r.jsx)(d.Text, {
                 variant: "text-xs/semibold",
+                color: "text-muted",
                 children: N.intl.string(I.default.fqrxlJ)
               }), (0, r.jsx)(d.Text, {
                 variant: "text-sm/medium",

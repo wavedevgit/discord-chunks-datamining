@@ -12,7 +12,7 @@ function i(e, n) {
       default: a
     } = await t.e("28934").then(t.bind(t, 826011));
     return t => {
-      var i, s;
+      var i, o;
       return (0, r.jsx)(a, (i = function(e) {
         for (var n = 1; n < arguments.length; n++) {
           var t = null != arguments[n] ? arguments[n] : {},
@@ -30,18 +30,18 @@ function i(e, n) {
           })
         }
         return e
-      }({}, t), s = s = {
+      }({}, t), o = o = {
         guildId: e,
         instance: n
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(s)) : (function(e, n) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(o)) : (function(e, n) {
         var t = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
           t.push.apply(t, r)
         }
         return t
-      })(Object(s)).forEach(function(e) {
-        Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(s, e))
+      })(Object(o)).forEach(function(e) {
+        Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(o, e))
       }), i))
     }
   })
