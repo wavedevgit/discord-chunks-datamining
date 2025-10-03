@@ -10,5 +10,6 @@ module.exports = {
   settingsTabBarItem: "settingsTabBarItem_dc2e0e",
   contentPanel: "contentPanel_dc2e0e",
   item: "item_dc2e0e",
-  badge: "badge_dc2e0e"
+  badge: "badge_dc2e0e",
+  loadingContainer: "loadingContainer_dc2e0e"
 }

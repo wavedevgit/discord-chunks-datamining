@@ -32,7 +32,7 @@ function s() {
     isSubmitting: c,
     responseMessage: module,
     redeemVirtualCurrency: function(e, t, n) {
-      return (0, a.df)({
+      return (0, r.df)({
         skuId: e,
         loadId: t,
         onRedeemStart: () => {

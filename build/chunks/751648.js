@@ -45,14 +45,14 @@ async function u(e) {
     onRedeemFail: m,
     shouldRefetchBalance: p = true
   } = e;
-  a.Z.wait(() => {
-    a.Z.dispatch({
+  r.Z.wait(() => {
+    r.Z.dispatch({
       type: "VIRTUAL_CURRENCY_REDEEM_START",
       skuId: t
     })
   }), null == s || s();
   try {
-    let e = (await r.tn.post({
+    let e = (await a.tn.post({
       url: l.ANM.VIRTUAL_CURRENCY_SKU_REDEEM(t),
       body: {
         checkout_session_id: n
@@ -68,14 +68,14 @@ async function u(e) {
         }
       }), n
     }
-    return a.Z.dispatch({
+    return r.Z.dispatch({
       type: "VIRTUAL_CURRENCY_REDEEM_SUCCESS",
       skuId: t,
       entitlements: e
     }), p && d(), null == u || u(e), e
   } catch (n) {
     let e = n instanceof i.HF ? n : new i.HF(n);
-    a.Z.dispatch({
+    r.Z.dispatch({
       type: "VIRTUAL_CURRENCY_REDEEM_FAIL",
       skuId: t,
       error: e
@@ -84,7 +84,7 @@ async function u(e) {
 }
 
 function m(e) {
-  return a.Z.dispatch({
+  return r.Z.dispatch({
     type: "VIRTUAL_CURRENCY_SET_BALANCE_PILL_OVERLAY",
     balancePillOverlay: e
   })
