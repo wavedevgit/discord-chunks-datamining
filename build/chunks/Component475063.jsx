@@ -148,7 +148,8 @@ function T(e) {
           minLength: m,
           maxLength: E,
           rows: P,
-          disabled: w
+          disabled: w,
+          "data-mana-component": "text-area"
         }, U), {
           onChange: F,
           ref: k

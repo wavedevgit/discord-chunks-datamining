@@ -32,6 +32,7 @@ function d(e) {
         width: l,
         height: n
       },
+      "data-mana-component": "dropdown",
       children: (0, r.jsx)("div", {
         className: c.dropdown,
         children: (0, r.jsx)(a.w0Z, {

@@ -32,8 +32,11 @@ let g = e => {
     }),
     children: [(0, r.jsx)("div", {
       className: v.previewBox,
+      role: "img",
+      "aria-label": h.intl.string(h.t.SZeUdX),
       children: (0, r.jsxs)("div", {
         className: v.previewContents,
+        "aria-hidden": true,
         children: [(0, r.jsx)(d.d, {
           width: 124,
           opacity: .9

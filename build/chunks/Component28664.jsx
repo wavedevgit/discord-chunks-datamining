@@ -158,8 +158,7 @@ function y(e) {
     caretConfig: C,
     layerContext: null != S ? S : M,
     animationStyle: e,
-    positionKey: k,
-    "data-mana-component": "tooltip"
+    positionKey: k
   }) : null);
   return (0, r.jsxs)(r.Fragment, {
     children: [t, null != j && "" !== j ? (0, r.jsx)(a.n, {

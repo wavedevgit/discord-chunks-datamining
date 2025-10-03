@@ -58,10 +58,12 @@ let C = {
       guildMember: W
     }) : true, z = C[k], q = (0, f.Y)({
       location: "NameplatePreview"
-    }), X = true !== M ? M : null == t ? true : t.displayNameStyles;
+    }), X = true !== M ? M : null == t ? true : t.displayNameStyles, Q = null != a ? I.intl.formatToPlainString(I.t.YJig7O, {
+      a11y_text: a.label
+    }) : I.intl.string(I.t.SZeUdX);
     return (0, r.jsx)("div", {
       role: "img",
-      "aria-label": I.intl.string(I.t.SZeUdX),
+      "aria-label": Q,
       style: {
         color: Z ? "white" : "black",
         width: null != B ? "".concat(B, "px") : "100%"

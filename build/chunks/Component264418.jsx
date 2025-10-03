@@ -113,6 +113,7 @@ function O(e) {
     scrollBehavior: R,
     children: (0, r.jsxs)("div", {
       ref: A,
+      "data-mana-component": "popover",
       children: [(0, r.jsx)(d.u, {
         onClick: j,
         variant: null != T ? "color-mix" : true

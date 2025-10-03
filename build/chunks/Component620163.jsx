@@ -1771,9 +1771,15 @@ let eB = () => {
         parent: eN.s6.DEVELOPER_OPTIONS_DESIGN_TOOLS_TAB,
         predicate: () => eY && j.Z.isDeveloper
       },
+      [eN.s6.DEVELOPER_OPTIONS_HIGHLIGHT_MANA_COMPONENTS]: {
+        section: eP.oAB.DEVELOPER_OPTIONS,
+        searchableTitles: ["Highlight Mana Components"],
+        parent: eN.s6.DEVELOPER_OPTIONS_DESIGN_TOOLS_TAB,
+        predicate: () => eY && j.Z.isDeveloper
+      },
       [eN.s6.DEVELOPER_OPTIONS_HIGHLIGHT_VOID_TOGGLEABLES]: {
         section: eP.oAB.DEVELOPER_OPTIONS,
-        searchableTitles: ["Highlight Toggleable Components"],
+        searchableTitles: ["Highlight Void Toggleable Components"],
         parent: eN.s6.DEVELOPER_OPTIONS_DESIGN_TOOLS_TAB,
         predicate: () => eY && j.Z.isDeveloper
       },

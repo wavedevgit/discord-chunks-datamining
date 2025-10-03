@@ -369,8 +369,8 @@ class er extends(r = Chunk442837.ZP.DeviceSettingsStore) {
     return null != (n = null == (t = N[e]) ? true : t.allowAnyViewerClips) && n
   }
   isDecoupledGameClippingEnabled() {
-    var e, t;
-    return null != (t = null == (e = Chunk594174.default.getCurrentUser()) ? true : module.isStaff()) && exports && (0, Chunk358085.isWindows)()
+    let e = Chunk594174.default.getCurrentUser();
+    return ((null == module ? true : module.isStaff()) || (null == module ? true : module.isStaffPersonal()) || false) && (0, Chunk358085.isWindows)()
   }
   hasClips() {
     return L.hasClips

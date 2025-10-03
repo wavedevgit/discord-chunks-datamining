@@ -270,7 +270,8 @@ function A(e) {
           maxLength: g,
           minLength: A,
           value: b,
-          defaultValue: v
+          defaultValue: v,
+          "data-mana-component": "text-input"
         }, H), {
           onChange: q,
           onBlur: Q,

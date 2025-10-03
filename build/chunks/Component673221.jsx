@@ -100,6 +100,7 @@ function S(e) {
     helperText: i,
     errorMessage: a,
     successMessage: s,
+    "data-mana-component": "select",
     children: (0, r.jsx)(A, y({}, l))
   })
 }

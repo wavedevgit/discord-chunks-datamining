@@ -200,6 +200,7 @@ function w(e) {
     helperText: i,
     errorMessage: a,
     successMessage: o,
+    "data-mana-component": "combobox",
     children: (0, r.jsx)(D, T({}, s))
   })
 }

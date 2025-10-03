@@ -141,7 +141,7 @@ function A(e) {
         ref: V,
         className: f.switchIndicator,
         "data-size": "md",
-        "data-toggleable-component": "switch",
+        "data-mana-component": "switch",
         style: {
           opacity: W,
           backgroundColor: Y.to({

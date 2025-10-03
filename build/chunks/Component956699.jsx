@@ -649,7 +649,7 @@ function ed() {
   } = (0, Chunk442837.cj)([Chunk857192.default], () => ({
     cssDebuggingEnabled: Chunk857192.default.cssDebuggingEnabled,
     layoutDebuggingEnabled: Chunk857192.default.layoutDebuggingEnabled
-  })), u = (0, Chunk580747.Z)("highlight_void_toggleables");
+  })), u = (0, Chunk580747.Z)("highlight_void_toggleables"), f = (0, Chunk580747.Z)("highlight_mana_components");
   return (0, Chunk951288.jsxs)(Chunk481060.C3N, {
     label: "Design Tools",
     children: [(0, Chunk951288.jsx)(Chunk921801.F, {
@@ -716,10 +716,18 @@ function ed() {
         })]
       })]
     }), (0, Chunk951288.jsx)(Chunk921801.F, {
+      setting: Chunk726985.s6.DEVELOPER_OPTIONS_HIGHLIGHT_MANA_COMPONENTS,
+      children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
+        label: "Highlight Mana Components",
+        description: "Highlights all Mana design system components for easier debugging",
+        checked: Chunk433517,
+        onChange: e => (0, C.Z)("highlight_mana_components", e)
+      })
+    }), (0, Chunk951288.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.DEVELOPER_OPTIONS_HIGHLIGHT_VOID_TOGGLEABLES,
       children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
-        label: "Highlight Toggleable Components",
-        description: "Highlights toggleable components: Checkbox (green), RadioGroup (yellow), Switch (blue)",
+        label: "Highlight Void Toggleable Components",
+        description: "Highlights deprecated toggleable components: VoidCheckbox (green), VoidRadioGroup (yellow), VoidSwitch (blue)",
         checked: Chunk268146,
         onChange: e => (0, C.Z)("highlight_void_toggleables", e)
       })

@@ -67,6 +67,7 @@ function f(e) {
       className: s.group,
       value: f,
       onChange: p,
+      "data-mana-component": "checkbox-group",
       isDisabled: u,
       children: n.map(e => (0, r.jsx)(o.Cnq, d(c({
         disabled: u || e.disabled

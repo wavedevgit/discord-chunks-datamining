@@ -62,6 +62,7 @@ function g(e) {
         }),
         role: "tooltip",
         "data-position": p,
+        "data-mana-component": "tooltip",
         children: [(0, r.jsx)(u._, {
           caretConfig: y
         }), (0, r.jsx)("div", {

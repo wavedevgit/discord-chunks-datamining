@@ -43,6 +43,7 @@ function d(e) {
     style: c ? true : {
       width: "min(".concat(E, ", 100%)")
     },
+    "data-mana-component": "select-input-field",
     disabled: n,
     readOnly: i,
     fullWidth: c,
