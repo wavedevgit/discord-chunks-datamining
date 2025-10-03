@@ -270,13 +270,11 @@ let E = {
   }).then(t => {
     let {
       body: n
-    } = t, {
-      consents: r
-    } = n;
+    } = t;
     a.Z.dispatch({
       type: "FAMILY_CENTER_TEEN_CONSENTS_UPDATE_SUCCESS",
       userId: e,
-      consents: r
+      consents: n
     })
   })
 }

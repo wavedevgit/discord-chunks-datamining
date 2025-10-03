@@ -66,6 +66,11 @@ class g extends(r = Chunk442837.ZP.Store) {
   getConsents(e) {
     return d[e]
   }
+  hasConsented(e, t) {
+    if (null == e) returnfalse;
+    let n = d[e];
+    return null != n && null != n[t] && n[t].consented
+  }
   get isLoading() {
     return c
   }

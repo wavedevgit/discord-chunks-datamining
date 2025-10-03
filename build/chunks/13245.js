@@ -443,6 +443,12 @@ let O = new Chunk710845.Z("OverlayActionCreators"),
         oldState: t,
         newState: n
       })
+    },
+    overlayUIFocusedPid(e) {
+      i.Z.dispatch({
+        type: "OVERLAY_UI_FOCUSED_PID",
+        pid: e
+      })
     }
   },
   I = v

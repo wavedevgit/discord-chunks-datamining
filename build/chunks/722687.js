@@ -3,6 +3,8 @@
 "use strict";
 require.d(exports, {
   IU: () => f,
+  J7: () => g,
+  O8: () => m,
   Ov: () => _,
   eD: () => u,
   sx: () => c,
@@ -39,5 +41,17 @@ let c = (0, Chunk592792.c)("textAndImages", "explicitContentSettings", Chunk6953
     var t;
     return null != (t = null == e ? true : e.value) ? t : l.HGf
   }, e => r.yC.create({
+    value: e
+  })),
+  m = (0, Chunk592792.c)("privacy", "dropsOptedOut", e => {
+    var t;
+    return null != (t = null == e ? true : e.value) && t
+  }, e => r.D5.create({
+    value: e
+  })),
+  g = (0, Chunk592792.c)("privacy", "quests3PDataOptedOut", e => {
+    var t;
+    return null != (t = null == e ? true : e.value) && t
+  }, e => r.D5.create({
     value: e
   }))
