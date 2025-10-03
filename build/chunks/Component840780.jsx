@@ -258,7 +258,8 @@ class eN extends Chunk647438.PureComponent {
       onClickNotSharing: () => Chunk120356(true),
       isForceShowSharingPopout: Chunk647438,
       setIsForceShowSharingPopout: Chunk120356,
-      ref: this.accountLinkUpsellTargetRef
+      ref: this.accountLinkUpsellTargetRef,
+      popoutTargetRef: this.activityPopoutTargetRef
     })
   }
   renderScreenshare() {
@@ -337,6 +338,7 @@ class eN extends Chunk647438.PureComponent {
           size: Chunk925329.A.SMALL,
           ref: this.accountLinkUpsellTargetRef
         }), (0, Chunk951288.jsx)(Chunk736409.j, {
+          popoutTargetRef: this.activityPopoutTargetRef,
           isForceShowSharingPopout: Chunk512722,
           setIsForceShowSharingPopout: s,
           children: (0, Chunk951288.jsxs)("div", {
@@ -415,6 +417,7 @@ class eN extends Chunk647438.PureComponent {
     let d = () => null == Chunk647438 || Chunk120356 && (null == Chunk512722 ? true : Chunk512722.pid) == null ? null != exports ? this.renderEmbeddedActivity() : null != require ? this.renderFrame() : this.renderScreenshare() : this.renderGame();
     return (0, Chunk951288.jsx)("div", {
       className: o()(Chunk800339.panel, Chunk704215),
+      ref: this.activityPopoutTargetRef,
       children: (0, Chunk951288.jsxs)("div", {
         className: Chunk800339.body,
         children: [Chunk198168(), this.renderActions(), this.renderAccountLinkPopover()]

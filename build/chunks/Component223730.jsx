@@ -1,8 +1,8 @@
 /** Chunk was on 51727 **/
 /** chunk id: 223730, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  K: () => O,
-  y: () => _
+  S$: () => m,
+  yj: () => _
 });
 var Chunk951288 = require("./951288.js"),
   Chunk442837 = require("./442837.js"),
@@ -55,22 +55,5 @@ function _(e) {
     }), (0, r.jsx)(d.c, {
       guildIds: p
     })]
-  })
-}
-
-function O(e) {
-  let {
-    onClosePopout: t
-  } = e;
-  return (0, r.jsx)(l.P3F, {
-    className: g.customizeLink,
-    onClick: () => {
-      t(), m()
-    },
-    children: (0, r.jsx)(l.Text, {
-      variant: "text-xs/medium",
-      color: "text-link",
-      children: h.intl.string(h.t["ZrN+DQ"])
-    })
   })
 }

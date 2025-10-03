@@ -46,8 +46,9 @@ function b(e) {
     onClickNotSharing: l,
     isForceShowSharingPopout: d,
     setIsForceShowSharingPopout: p,
-    ref: f
-  } = e, b = null != n ? n.name : null != i ? i.name : h.intl.string(h.t["UQMV/P"]);
+    ref: f,
+    popoutTargetRef: b
+  } = e, _ = null != n ? n.name : null != i ? i.name : h.intl.string(h.t["UQMV/P"]);
   return (0, c.V)(), (0, r.jsxs)("div", {
     className: g.gameWrapper,
     children: [(0, r.jsxs)("div", {
@@ -63,12 +64,13 @@ function b(e) {
         className: g.liveBadge
       }) : null]
     }), (0, r.jsx)(s.j, {
+      popoutTargetRef: b,
       isForceShowSharingPopout: d,
       setIsForceShowSharingPopout: p,
       children: (0, r.jsxs)("div", {
         className: g.info,
-        children: [null != b ? (0, r.jsx)(m, {
-          name: b,
+        children: [null != _ ? (0, r.jsx)(m, {
+          name: _,
           applicationId: null == n ? true : n.id
         }) : null, (0, r.jsx)(a.V, {
           onClick: l
