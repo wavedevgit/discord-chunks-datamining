@@ -30,8 +30,8 @@ let v = (0, Chunk137317.animated)(Chunk685613.ZP),
       onCtxMenuOpen: g,
       onCtxMenuClose: C,
       useReducedMotion: y,
-      isExpanded: O,
-      isExpansionAnimationComplete: E
+      isExpanded: E,
+      isExpansionAnimationComplete: O
     } = e, S = (0, d.aM)(), {
       status: T
     } = (0, m.n)({
@@ -50,10 +50,10 @@ let v = (0, Chunk137317.animated)(Chunk685613.ZP),
         impressionId: S,
         sourceQuestContent: p.jn.QUEST_BAR_V2
       })
-    }, [S, t]), A = O && E, R = (0, r.jsx)(l.P3F, {
+    }, [S, t]), R = E && O, A = (0, r.jsx)(l.P3F, {
       onClick: N,
       className: a()(j.clickable, {
-        [j.logo]: A
+        [j.logo]: R
       }),
       children: (0, r.jsx)(v, {
         quest: t,
@@ -71,7 +71,7 @@ let v = (0, Chunk137317.animated)(Chunk685613.ZP),
     });
     return (0, r.jsxs)(i.animated.div, {
       className: a()(j.wrapper, j.rewardHighlightWrapper, {
-        [j.interactable]: A
+        [j.interactable]: R
       }),
       style: {
         transform: (0, i.to)([n.to({
@@ -90,8 +90,8 @@ let v = (0, Chunk137317.animated)(Chunk685613.ZP),
       }), (0, r.jsx)(x.Z, {
         quest: t,
         expansionSpring: n,
-        isFullyExpanded: A,
-        partnerBranding: R,
+        isFullyExpanded: R,
+        partnerBranding: A,
         useReducedMotion: y
       }), (0, r.jsxs)(i.animated.div, {
         className: j.promotedBadgeWrapper,

@@ -1,7 +1,7 @@
 /** Chunk was on 17013 **/
 /** chunk id: 623249, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => E,
+  default: () => O,
   y: () => T
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk301889 = require("./301889.js");
 
-function O(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -45,15 +45,15 @@ function O(e) {
   return e
 }
 
-function E(e) {
+function O(e) {
   var t;
   let {
     quest: n,
     errorHints: o,
     transitionState: b,
-    onClose: E,
+    onClose: O,
     sourceQuestContent: T
-  } = e, [w, P] = (0, s.useState)(o), N = (0, h.KX)(), A = (0, m.O5)(), R = null == (t = (0, g.WD)()) ? true : t.getId(), B = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), k = (0, j.g2)({
+  } = e, [w, P] = (0, s.useState)(o), N = (0, h.KX)(), R = (0, m.O5)(), A = null == (t = (0, g.WD)()) ? true : t.getId(), B = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), k = (0, j.g2)({
     useReducedMotion: B,
     className: y.colorTransition
   }), I = w.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), q = (0, f.Bz)(n), D = (0, l.e7)([p.Z], () => p.Z.getState().theme), L = (0, c.wj)(D) ? v.BRd.DARK : v.BRd.LIGHT, {
@@ -62,7 +62,7 @@ function E(e) {
   } = (0, h.GI)({
     questId: n.id,
     beforeRequest: () => {
-      k.startAnimation(), A({
+      k.startAnimation(), R({
         questId: n.id,
         questContent: x.jn.CONNECTIONS_MODAL,
         questContentCTA: m.jZ.DEFIBRILLATOR,
@@ -75,23 +75,23 @@ function E(e) {
   });
   return (0, r.jsx)(i.Modal, {
     transitionState: b,
-    onClose: E,
+    onClose: O,
     title: C.intl.string(C.t.W5lmKi),
     subtitle: N.message,
     actions: [{
       variant: "secondary",
-      onClick: () => void(E(), (0, f.V$)({
+      onClick: () => void(O(), (0, f.V$)({
         quest: n
       }, {
         content: x.jn.CONNECTIONS_MODAL,
         ctaContent: m.jZ.VIEW_CONSOLE_CONNECTIONS_LINK,
-        impressionId: R,
+        impressionId: A,
         sourceQuestContent: T
       })),
       text: C.intl.string(C.t["qiS+xs"])
     }, {
       variant: "primary",
-      onClick: () => E(),
+      onClick: () => O(),
       text: C.intl.string(C.t.cpT0Cg)
     }],
     children: (0, r.jsxs)(r.Fragment, {
@@ -141,7 +141,7 @@ function E(e) {
             }),
             children: e => {
               var t, s;
-              return (0, r.jsx)("img", (t = O({}, e), s = s = {
+              return (0, r.jsx)("img", (t = E({}, e), s = s = {
                 className: y.gameTile,
                 alt: n.config.messages.gameTitle,
                 src: (0, _.fh)(n, _.eC.GAME_TILE, L).url
@@ -223,7 +223,7 @@ function T(e) {
         questOrQuests: e.quest,
         questContent: x.jn.CONNECTIONS_MODAL,
         sourceQuestContent: e.sourceQuestContent,
-        children: () => (0, r.jsx)(t, O({}, n, e))
+        children: () => (0, r.jsx)(t, E({}, n, e))
       })
     }
   })

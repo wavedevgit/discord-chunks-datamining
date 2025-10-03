@@ -161,8 +161,7 @@ function I(e) {
         title: t,
         body: n,
         badge: T,
-        textLink: S,
-        hasBottomMargin: null != v
+        textLink: S
       }), null != v ? (0, r.jsx)(u.k, {
         actions: [v]
       }) : null]

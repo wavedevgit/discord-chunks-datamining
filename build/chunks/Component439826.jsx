@@ -32,7 +32,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk518388 = require("./518388.js");
 
-function A(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -51,7 +51,7 @@ function A(e) {
   return e
 }
 
-function R(e, t) {
+function A(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -94,7 +94,7 @@ function B(e) {
     opacity: +!!v,
     height: v ? g : 0,
     config: T.Y
-  }), y = 0 === _ ? c.Mgn : c.d3s, O = (0, p.Lq)(w.Ilk.RED_345), E = 0 === _ ? O : l ? c.TVs.colors.TEXT_DEFAULT : c.TVs.colors.WHITE;
+  }), y = 0 === _ ? c.Mgn : c.d3s, E = (0, p.Lq)(w.Ilk.RED_345), O = 0 === _ ? E : l ? c.TVs.colors.TEXT_DEFAULT : c.TVs.colors.WHITE;
   return (0, r.jsx)(i.animated.div, {
     style: C,
     children: (0, r.jsxs)("div", {
@@ -104,7 +104,7 @@ function B(e) {
         className: N.hintsContainer,
         children: [(0, r.jsx)(y, {
           size: "xs",
-          color: E
+          color: O
         }), (0, r.jsx)(c.Text, {
           variant: "text-xs/medium",
           color: l ? "text-muted" : "always-white",
@@ -141,7 +141,7 @@ function k(e) {
     day: "numeric"
   }), F = (null == (n = p.userStatus) ? true : n.enrolledAt) != null, X = (null == (o = p.userStatus) ? true : o.completedAt) != null, {
     onAssetLoadComplete: z
-  } = s.useContext(O.k), G = s.useCallback(async () => {
+  } = s.useContext(E.k), G = s.useCallback(async () => {
     Q && ((0, g.zi)(p) || F ? (0, C.openVideoQuestModal)({
       quest: p,
       questContent: x.jn.QUEST_HOME_DESKTOP,
@@ -198,7 +198,7 @@ function k(e) {
             })
           }), Q && (0, r.jsx)(c.ua7, {
             text: X ? P.intl.string(P.t.YsCuyM) : F ? P.intl.string(P.t["74Kqra"]) : (0, g.zi)(p) ? P.intl.string(P.t["I6JG4+"]) : P.intl.string(P.t.umdNio),
-            children: e => (0, r.jsx)(c.P3F, R(A({}, e), {
+            children: e => (0, r.jsx)(c.P3F, A(R({}, e), {
               className: N.utilButtonWrapper,
               "aria-label": P.intl.string(P.t.RscU7O),
               onClick: G,
@@ -217,7 +217,7 @@ function k(e) {
             shouldShowDisclosure: true,
             showShareLink: true,
             sourceQuestContent: V,
-            children: e => (0, r.jsx)(c.P3F, R(A({}, e), {
+            children: e => (0, r.jsx)(c.P3F, A(R({}, e), {
               className: N.utilButtonWrapper,
               "aria-label": P.intl.string(P.t.DEoVWV),
               children: (0, r.jsx)(c.xhG, {
@@ -227,7 +227,7 @@ function k(e) {
               })
             }))
           })]
-        }), (0, r.jsx)(E.E, {
+        }), (0, r.jsx)(O.E, {
           showPlaceholder: !I,
           width: 100,
           height: 30,

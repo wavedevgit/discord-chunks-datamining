@@ -250,7 +250,7 @@ function G(e) {
               }), (0, S.openPushToPhoneModal)(n);
               return
             }
-            b || (0, g.AH)(n.id, {
+            b || B || (0, g.AH)(n.id, {
               questContent: o,
               questContentCTA: t,
               questContentPosition: s,
@@ -274,7 +274,19 @@ function G(e) {
               questContent: o,
               sourceQuestContent: v,
               sourceQuestContentCTA: p.jZ.ACCEPT_QUEST
-            })) : B && G()
+            })) : B && ((0, T.R)(C.dr.QUEST_HOME_DESKTOP) ? await (0, g.AH)(n.id, {
+              questContent: o,
+              questContentCTA: t,
+              questContentPosition: s,
+              questContentRowIndex: f,
+              sourceQuestContent: v
+            }) : (0, g.AH)(n.id, {
+              questContent: o,
+              questContentCTA: t,
+              questContentPosition: s,
+              questContentRowIndex: f,
+              sourceQuestContent: v
+            }), G())
           }
         };
       case E.OH.ACCEPTED:

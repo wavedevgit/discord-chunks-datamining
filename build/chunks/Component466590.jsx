@@ -132,8 +132,7 @@ function O(e) {
         title: P.title,
         body: P.body,
         badge: P.badge,
-        textLink: P.textLink,
-        hasBottomMargin: true
+        textLink: P.textLink
       }), (0, r.jsx)("div", {
         className: p.actionBar,
         children: (0, r.jsxs)("div", {

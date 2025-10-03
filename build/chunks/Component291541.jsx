@@ -208,29 +208,38 @@ let m = {
     id: "video-popover",
     docs: "https://design.discord.tools/components/web/popover",
     component: function(e) {
-      let [t, n] = i.useState(false), s = i.useRef(null);
+      var {
+        showActions: t
+      } = e, n = p(e, ["showActions"]);
+      let [s, l] = i.useState(false), c = i.useRef(null);
       return (0, r.jsxs)("div", {
-        children: [(0, r.jsx)(o.Mb, _(d({}, e), {
-          targetElementRef: s,
-          shouldShow: t,
-          onRequestClose: () => n(false),
+        children: [(0, r.jsx)(o.Mb, _(d({}, n), {
+          targetElementRef: c,
+          shouldShow: s,
+          onRequestClose: () => l(false),
           title: "Video Popover Demo",
           body: "Click the video to view it in the media viewer!",
           assetUrl: "https://cdn.discordapp.com/assets/server-subscription-tier-template/upsell.mov",
           badge: "new",
-          action: {
+          action: t ? {
             text: "Learn More",
-            onClick: () => n(false)
-          }
+            onClick: () => l(false)
+          } : true
         })), (0, r.jsx)(a.zxk, {
           variant: "primary",
           text: "Show Video Popover",
-          buttonRef: s,
-          onClick: () => n(!t)
+          buttonRef: c,
+          onClick: () => l(!s)
         })]
       })
     },
-    controls: {}
+    controls: {
+      showActions: {
+        label: "Show Actions",
+        type: "boolean",
+        defaultValue: true
+      }
+    }
   }, {
     name: "MultiStepPopover",
     id: "multi-step-popover",

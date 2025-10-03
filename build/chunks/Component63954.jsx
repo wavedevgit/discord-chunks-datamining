@@ -343,13 +343,13 @@ function Z() {
       children: (0, Chunk951288.jsx)(Chunk916028.Z, {
         onSelect: function(e) {
           $(e), null != e && (X(function(e) {
-            if (null == e.userStatus) return E.a.UNENROLLED;
-            if (null != e.userStatus.claimedAt) return E.a.CLAIMED;
-            if (null != e.userStatus.completedAt) return E.a.COMPLETED_100;
+            if (null == e.userStatus) return O.a.UNENROLLED;
+            if (null != e.userStatus.claimedAt) return O.a.CLAIMED;
+            if (null != e.userStatus.completedAt) return O.a.COMPLETED_100;
             let t = (0, m.il)(e),
               n = t.progressSeconds,
               r = t.targetSeconds;
-            return n / r >= 1 ? E.a.COMPLETED_100 : n / r >= .75 ? E.a.COMPLETED_75 : n / r >= .5 ? E.a.COMPLETED_50 : n / r >= .25 ? E.a.COMPLETED_25 : E.a.ENROLLED
+            return n / r >= 1 ? O.a.COMPLETED_100 : n / r >= .75 ? O.a.COMPLETED_75 : n / r >= .5 ? O.a.COMPLETED_50 : n / r >= .25 ? O.a.COMPLETED_25 : O.a.ENROLLED
           }(e)), H(e))
         },
         quest: J
@@ -488,10 +488,10 @@ function Z() {
     }), ee.map((e, t) => (0, r.jsxs)("div", {
       children: [(0, r.jsxs)(p.X6q, {
         variant: "heading-md/semibold",
-        className: R.subheading,
+        className: A.subheading,
         children: ["Reward #", t + 1]
       }), (0, r.jsxs)("div", {
-        className: R.fields,
+        className: A.fields,
         children: [(0, r.jsx)(v.Z, {
           title: "Name",
           assetKey: "name",
@@ -562,19 +562,19 @@ function Z() {
       }), (0, Chunk951288.jsx)(Chunk899457.Z, {
         onChange: function(e) {
           switch (X(e), e) {
-            case E.a.UNENROLLED:
+            case O.a.UNENROLLED:
               H(I(k({}, Z), {
                 userStatus: null
               }));
               break;
-            case E.a.ENROLLED:
+            case O.a.ENROLLED:
               H(I(k({}, Z), {
                 userStatus: Q({
                   enrolledAt: new Date().toISOString()
                 })
               }));
               break;
-            case E.a.COMPLETED_25:
+            case O.a.COMPLETED_25:
               H(I(k({}, Z), {
                 userStatus: Q({
                   enrolledAt: new Date().toISOString(),
@@ -582,7 +582,7 @@ function Z() {
                 })
               }));
               break;
-            case E.a.COMPLETED_50:
+            case O.a.COMPLETED_50:
               H(I(k({}, Z), {
                 userStatus: Q({
                   enrolledAt: new Date().toISOString(),
@@ -590,7 +590,7 @@ function Z() {
                 })
               }));
               break;
-            case E.a.COMPLETED_75:
+            case O.a.COMPLETED_75:
               H(I(k({}, Z), {
                 userStatus: Q({
                   enrolledAt: new Date().toISOString(),
@@ -598,7 +598,7 @@ function Z() {
                 })
               }));
               break;
-            case E.a.COMPLETED_100:
+            case O.a.COMPLETED_100:
               H(I(k({}, Z), {
                 userStatus: Q({
                   completedAt: new Date().toISOString(),
@@ -607,7 +607,7 @@ function Z() {
                 })
               }));
               break;
-            case E.a.CLAIMED:
+            case O.a.CLAIMED:
               H(I(k({}, Z), {
                 userStatus: Q({
                   claimedAt: new Date().toISOString(),

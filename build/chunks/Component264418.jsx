@@ -127,8 +127,7 @@ function O(e) {
         title: a,
         body: h,
         badge: g,
-        textLink: I,
-        hasBottomMargin: null != v
+        textLink: I
       }), null != v && v.length > 0 ? (0, r.jsx)(c.k, {
         actions: v
       }) : null, (0, r.jsx)(u.$, {

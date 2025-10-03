@@ -44,7 +44,7 @@ function q(e) {
     questId: n
   } = e;
   return (0, b.qI)({
-    mode: t ? R.NH.EXPANDED : R.NH.COLLAPSED,
+    mode: t ? A.NH.EXPANDED : A.NH.COLLAPSED,
     questContent: v.jn.QUEST_BAR_V2,
     questId: n,
     sourceQuestContent: v.jn.QUEST_BAR_V2
@@ -61,17 +61,17 @@ function L(e) {
   var t, n;
   let {
     quest: o
-  } = e, m = (0, O.T)({
+  } = e, m = (0, E.T)({
     quest: o,
-    location: R.dr.QUESTS_BAR
+    location: A.dr.QUESTS_BAR
   }), b = (0, y.Z)({
-    location: R.dr.QUESTS_BAR
+    location: A.dr.QUESTS_BAR
   }), L = (0, c.e7)([j.Z], () => null != j.Z.questEnrollmentBlockedUntil), {
     isQuestBarVisible: V,
     reason: Q
   } = (0, w.qN)({
     quest: o,
-    location: R.dr.QUESTS_BAR
+    location: A.dr.QUESTS_BAR
   }), M = (0, c.e7)([p.Z], () => p.Z.useReducedMotion), W = (0, c.e7)([f.Z], () => f.Z.hasLayers()), Z = s.useRef(null), U = s.useMemo(() => (0, _.q8)(o), [o]), H = (null == (t = o.userStatus) ? true : t.enrolledAt) != null, F = (0, u.Z)(H), X = (null == (n = o.userStatus) ? true : n.completedAt) != null, {
     hasError: z,
     isLoading: G
@@ -137,10 +137,10 @@ function L(e) {
   }, [H, X, F, eu]), s.useLayoutEffect(() => {
     K !== Y.current && ec(false), Y.current = K
   }, [K]);
-  let ey = H ? R.XZ : R.R4,
+  let ey = H ? A.XZ : A.R4,
     [{
-      expansionSpring: eO
-    }, eE] = (0, d.q_F)(() => ({
+      expansionSpring: eE
+    }, eO] = (0, d.q_F)(() => ({
       from: {
         expansionSpring: 0
       },
@@ -153,11 +153,11 @@ function L(e) {
       }
     }));
   s.useEffect(() => {
-    eE({
+    eO({
       expansionSpring: +!!es,
       immediate: M
     })
-  }, [es, eE, M]);
+  }, [es, eO, M]);
   let {
     visibilitySpring: eS
   } = (0, d.q_F)({
@@ -236,12 +236,12 @@ function L(e) {
     enabled: eT,
     status: ew
   } = (0, C.n)({
-    location: R.dr.QUESTS_BAR,
+    location: A.dr.QUESTS_BAR,
     questConfig: o.config
   }), eP = (null == ew ? true : ew.progressBlur) && !H ? 88 : 70;
   if (!b || !K && el && !G || z) return z ? m.log("Not rendered due to asset error") : b || m.log("Not rendered due to ineligibility"), null;
   let eN = eP + 78 * !!X;
-  return (0, r.jsx)(E.A, {
+  return (0, r.jsx)(O.A, {
     questOrQuests: o,
     questContent: v.jn.QUEST_BAR_V2,
     overrideVisibility: !W && K,
@@ -283,9 +283,9 @@ function L(e) {
           children: (0, r.jsx)(P.t, {
             springConfig: ey,
             isExpanded: es,
-            children: (0, r.jsx)(A.Z, {
+            children: (0, r.jsx)(R.Z, {
               expandedContentRef: ed,
-              expansionSpring: eO,
+              expansionSpring: eE,
               isExpanded: es,
               isExpansionAnimationComplete: ea,
               onCtxMenuClosed: eg,

@@ -30,11 +30,11 @@ let _ = ["#51BC9D"],
       isHovered: C
     } = e, {
       completionSpring: y,
-      startCompletionAnimation: O
-    } = (0, g.G)(), E = (null == (t = b.userStatus) ? true : t.completedAt) != null, S = s.useRef(false), T = (0, d.e7)([p.Z], () => p.Z.useReducedMotion), w = s.useRef(null), P = (0, d.e7)([m.Z], () => m.Z.hasLayers()), N = (0, u.Z)(P), [A, R] = s.useState(null), [B, k] = s.useState(null), I = s.useRef(new i.qA({
+      startCompletionAnimation: E
+    } = (0, g.G)(), O = (null == (t = b.userStatus) ? true : t.completedAt) != null, S = s.useRef(false), T = (0, d.e7)([p.Z], () => p.Z.useReducedMotion), w = s.useRef(null), P = (0, d.e7)([m.Z], () => m.Z.hasLayers()), N = (0, u.Z)(P), [R, A] = s.useState(null), [B, k] = s.useState(null), I = s.useRef(new i.qA({
       gravity: 0,
       wind: 0
-    })), q = (0, i.uR)(A, B), D = s.useCallback(() => {
+    })), q = (0, i.uR)(R, B), D = s.useCallback(() => {
       if (T) return;
       let e = j.current,
         t = w.current;
@@ -114,16 +114,16 @@ let _ = ["#51BC9D"],
       }
     }, [j, w, q, T]), L = (0, u.Z)(v);
     return (s.useEffect(() => {
-      E && v && !L && (O(), D())
-    }, [v, E, O, D, L]), s.useEffect(() => {
-      E && !P && N && setTimeout(() => {
-        O(), D()
+      O && v && !L && (E(), D())
+    }, [v, O, E, D, L]), s.useEffect(() => {
+      O && !P && N && setTimeout(() => {
+        E(), D()
       }, 200)
-    }, [E, N, P, O, D]), s.useEffect(() => {
-      q.isReady && (!S.current && E && (O(), D()), S.current = E)
-    }, [E, S, D, O, q]), s.useEffect(() => {
-      C && E && (O(), D())
-    }, [C, E, O, D]), T) ? null : (0, r.jsxs)("div", {
+    }, [O, N, P, E, D]), s.useEffect(() => {
+      q.isReady && (!S.current && O && (E(), D()), S.current = O)
+    }, [O, S, D, E, q]), s.useEffect(() => {
+      C && O && (E(), D())
+    }, [C, O, E, D]), T) ? null : (0, r.jsxs)("div", {
       className: h.wrapper,
       "aria-hidden": "true",
       ref: w,
@@ -146,7 +146,7 @@ let _ = ["#51BC9D"],
           }).to(e => "translateY(".concat(e, "px)"))
         },
         children: [(0, r.jsx)(i.O_, {
-          ref: R,
+          ref: A,
           className: h.confetti,
           environment: I.current
         }), (0, r.jsx)(i.Ji, {

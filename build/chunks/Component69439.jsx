@@ -1,7 +1,7 @@
 /** Chunk was on 17013 **/
 /** chunk id: 69439, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => O
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -54,7 +54,7 @@ function y(e) {
   })
 }
 
-function O(e) {
+function E(e) {
   if (0 === e.length) return null;
   switch (e[0].value) {
     case b.cd.DESKTOP:
@@ -72,15 +72,15 @@ function O(e) {
   }
 }
 
-function E(e) {
-  var t, n, E, S;
+function O(e) {
+  var t, n, O, S;
   let {
     quest: T,
     questContent: w,
     onReceiveErrorHints: P,
     contentPosition: N,
-    rowIndex: A,
-    sourceQuestContent: R
+    rowIndex: R,
+    sourceQuestContent: A
   } = e, B = (0, o.e7)([c.Z], () => c.Z.useReducedMotion), k = (0, _.g2)({
     useReducedMotion: B
   }), I = (0, u.O5)(), q = (0, m._s)({
@@ -96,7 +96,7 @@ function E(e) {
     isClaiming: g.Z.isClaimingReward(T.id) || g.Z.isFetchingRewardCode(T.id),
     isEnrolling: g.Z.isEnrolling(T.id),
     isQuestEnrollmentBlocked: null != g.Z.questEnrollmentBlockedUntil
-  })), W = (null == (t = T.userStatus) ? true : t.enrolledAt) != null, Z = (null == (n = T.userStatus) ? true : n.completedAt) != null, U = Z && (null == (E = T.userStatus) ? true : E.claimedAt) == null, H = (0, p.iQ)(T), F = !(0, p.zi)(T), X = (0, m._Q)(T), z = (0, p.Xv)(T.config), G = (0, p.PB)(T), K = (0, p.HJ)(T), Y = (0, p.Vl)(T), J = (0, m.Rf)(T), [$, ee, et] = (0, m.me)(T, J), en = F && X === m.OH.ACCEPTED, er = en && $ === f.LI.SELECT, es = en && !er && ee.length > 1, eo = s.useCallback(e => {
+  })), W = (null == (t = T.userStatus) ? true : t.enrolledAt) != null, Z = (null == (n = T.userStatus) ? true : n.completedAt) != null, U = Z && (null == (O = T.userStatus) ? true : O.claimedAt) == null, H = (0, p.iQ)(T), F = !(0, p.zi)(T), X = (0, m._Q)(T), z = (0, p.Xv)(T.config), G = (0, p.PB)(T), K = (0, p.HJ)(T), Y = (0, p.Vl)(T), J = (0, m.Rf)(T), [$, ee, et] = (0, m.me)(T, J), en = F && X === m.OH.ACCEPTED, er = en && $ === f.LI.SELECT, es = en && !er && ee.length > 1, eo = s.useCallback(e => {
     et(e), e === b.cd.DESKTOP && P([])
   }, [et, P]), {
     text: ea,
@@ -107,11 +107,11 @@ function E(e) {
     questContent: w,
     isCollectibleQuest: z,
     questContentPosition: N,
-    questContentRowIndex: A,
+    questContentRowIndex: R,
     inGiftInventory: true,
     isVideoQuest: G,
     inGameQuest: Y,
-    sourceQuestContent: R
+    sourceQuestContent: A
   }), {
     startingConsoleQuest: el,
     startConsoleQuest: ec
@@ -123,8 +123,8 @@ function E(e) {
         questContent: w,
         questContentCTA: u.jZ.DEFIBRILLATOR,
         questContentPosition: N,
-        questContentRowIndex: A,
-        sourceQuestContent: R
+        questContentRowIndex: R,
+        sourceQuestContent: A
       })
     },
     afterRequest: e => {
@@ -154,7 +154,7 @@ function E(e) {
         (0, x.openVideoQuestModal)({
           quest: T,
           questContent: w,
-          sourceQuestContent: R,
+          sourceQuestContent: A,
           sourceQuestContentCTA: u.jZ.WATCH_VIDEO,
           skipEnrollmentCheck: true
         })
@@ -204,7 +204,7 @@ function E(e) {
     options: C,
     placeholder: j.intl.string(j.t.drVw4e),
     renderOptionLabel: y,
-    renderOptionValue: O,
+    renderOptionValue: E,
     select: eo,
     serialize: e => {
       switch (e) {
@@ -269,7 +269,7 @@ function E(e) {
       text: j.intl.string(j.t.V293qq)
     }), (0, r.jsx)(a.zxk, {
       variant: "primary",
-      onClick: () => (0, x.openQuestMinorEnrollmentBlockModal)(T, w, R),
+      onClick: () => (0, x.openQuestMinorEnrollmentBlockModal)(T, w, A),
       text: j.intl.string(j.t.vY9GgI)
     })]
   }) : (0, r.jsx)("div", {
@@ -314,7 +314,7 @@ function E(e) {
         options: C,
         placeholder: j.intl.string(j.t.drVw4e),
         renderOptionLabel: y,
-        renderOptionValue: O,
+        renderOptionValue: E,
         select: eo,
         serialize: e => {
           switch (e) {

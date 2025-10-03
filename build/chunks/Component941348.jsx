@@ -27,13 +27,13 @@ let p = function(e) {
     collapsedHeight: v,
     onGameSheetOpened: C,
     onGameSheetClosed: y
-  } = e, O = (null == (t = b.userStatus) ? true : t.completedAt) != null, E = s.useRef(null), S = s.useRef(null), T = (null == (n = b.userStatus) ? true : n.enrolledAt) != null, w = (0, o.Rf)(b);
+  } = e, E = (null == (t = b.userStatus) ? true : t.completedAt) != null, O = s.useRef(null), S = s.useRef(null), T = (null == (n = b.userStatus) ? true : n.enrolledAt) != null, w = (0, o.Rf)(b);
   return (0, r.jsxs)(i.p, {
     expandedContentRef: p,
-    collapsedContentRef: E,
+    collapsedContentRef: O,
     expansionSpring: m,
     children: [(0, r.jsx)(l.Z, {
-      ref: E,
+      ref: O,
       className: u.content,
       expansionSpring: m,
       isExpanded: g,
@@ -45,7 +45,7 @@ let p = function(e) {
       onCtxMenuClose: x,
       onCtxMenuSelect: _,
       overlayRef: S
-    }, O ? "collapsed-with-rewards" : "collapsed-without-rewards"), (0, r.jsx)(c.Z, {
+    }, E ? "collapsed-with-rewards" : "collapsed-without-rewards"), (0, r.jsx)(c.Z, {
       expansionSpring: m,
       className: u.content,
       collapsedHeight: v,

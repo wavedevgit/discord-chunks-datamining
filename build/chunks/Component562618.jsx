@@ -41,13 +41,10 @@ function f(e) {
     body: i,
     badge: o,
     className: u,
-    textLink: d,
-    hasBottomMargin: f = false
-  } = e, h = null == (t = null == d ? true : d.external) || t;
+    textLink: d
+  } = e, f = null == (t = null == d ? true : d.external) || t;
   return (0, r.jsxs)("div", {
-    className: a()(c.header, u, {
-      [c.hasActions]: f
-    }),
+    className: a()(c.header, u),
     children: [(0, r.jsxs)("div", {
       children: [(0, r.jsx)(_, {
         badge: o
@@ -61,8 +58,8 @@ function f(e) {
     }), null != d && (0, r.jsx)(s.Anchor, {
       onClick: d.onClick,
       href: d.link,
-      target: h && null != d.link ? "_blank" : true,
-      rel: h && null != d.link ? "noopener noreferrer" : true,
+      target: f && null != d.link ? "_blank" : true,
+      rel: f && null != d.link ? "noopener noreferrer" : true,
       children: (0, r.jsx)(l.Text, {
         variant: "text-sm/normal",
         className: c.footerLink,
