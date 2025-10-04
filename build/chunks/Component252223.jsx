@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk392711 = require("./392711.js"),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk28664 = require("./28664.jsx"),
+  Chunk481060 = require("./481060.js"),
   Chunk835834 = require("./835834.js"),
   Chunk833664 = require("./833664.js"),
   Chunk545957 = require("./545957.js"),
@@ -253,14 +253,16 @@ function B(e) {
     en = () => 0 === q ? null : X && !H ? w ? (0, r.jsxs)("div", {
       className: o()(P.activityContainer, Q && P.iconOnly),
       children: [$(), et()]
-    }) : (0, r.jsx)(u.u, {
+    }) : (0, r.jsx)(u.ua7, {
+      tooltipContentClassName: o()(P.container, P.activitiesTooltip, P.hasMultipleActivities),
       delay: C.X,
-      __unsupportedReactNodeAsText: ee(),
+      text: ee(),
       "aria-label": J,
-      children: (0, r.jsxs)("div", {
-        className: o()(P.activityContainer, Q && P.iconOnly),
+      children: e => (0, r.jsxs)("div", x(D({
+        className: o()(P.activityContainer, Q && P.iconOnly)
+      }, e), {
         children: [$(true), et()]
-      })
+      }))
     }) : $(),
     er = o()(P.container, {
       [P.textXs]: "xs" === h,
