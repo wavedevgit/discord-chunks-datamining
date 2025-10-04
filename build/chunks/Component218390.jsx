@@ -263,7 +263,7 @@ function e_(e) {
         variant: "text-xxs/normal",
         children: s.additionalTerm()
       }), (0, r.jsx)(W.Z, {
-        variant: "overlay-secondary",
+        variant: "primary",
         size: "md",
         fullWidth: true,
         onClick: () => {
