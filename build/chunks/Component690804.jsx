@@ -67,7 +67,7 @@ function d(n) {
           }), (0, e.jsx)(s.zxk, {
             icon: () => (0, e.jsx)(s.Gr1, {}),
             iconPosition: "end",
-            onClick: () => location.href = "https://www.fortnite.com/download",
+            onClick: () => location.href = "https://fortnitetrial.fortnite.com/",
             text: r.intl.string(r.t.ZDtJ19),
             variant: "secondary"
           })]
@@ -97,7 +97,7 @@ function d(n) {
           }), (0, e.jsx)(s.zxk, {
             icon: () => (0, e.jsx)(s.Gr1, {}),
             iconPosition: "end",
-            onClick: () => location.href = "https://www.nvidia.com/en-us/geforce-now/#product-matrix",
+            onClick: () => location.href = "https://www.nvidia.com/en-us/geforce-now/discord?ncid=partn-874834",
             text: r.intl.string(r.t.ycbXPz),
             variant: "secondary"
           })]

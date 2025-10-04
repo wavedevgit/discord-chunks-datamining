@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 853678, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => N
+  Z: () => j
 }), require("./388685.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./997841.js");
 var Chunk45792 = require("./45792.js"),
   Chunk782568 = require("./782568.js"),
@@ -26,7 +26,8 @@ var Chunk45792 = require("./45792.js"),
   Chunk674563 = require("./674563.js");
 let S = new Set([Chunk701488.Fu, Chunk701488.JT]),
   C = new Set(["www.nytimes.com", "apps.apple.com", "play.google.com"]),
-  T = new Map([
+  T = new Set(["p-ty8do4dje6.exmggames.com", "fortnitetrial.fortnite.com", "www.nvidia.com"]),
+  N = new Map([
     [Chunk674563.Vt, {
       trustedHosts: C,
       trustedUntilEpochMs: new Date("2027-01-15T00:00:00").valueOf()
@@ -38,9 +39,13 @@ let S = new Set([Chunk701488.Fu, Chunk701488.JT]),
     [Chunk674563.He, {
       trustedHosts: C,
       trustedUntilEpochMs: new Date("2027-01-15T00:00:00").valueOf()
+    }],
+    [Chunk674563.Zs, {
+      trustedHosts: T,
+      trustedUntilEpochMs: new Date("2026-01-01T00:00:00").valueOf()
     }]
   ]),
-  N = {
+  j = {
     [Chunk981631.Etm.OPEN_EXTERNAL_LINK]: {
       scope: {
         [Chunk186901.Gp.ANY]: [Chunk186901.wE, Chunk186901.b_]
@@ -67,7 +72,7 @@ let S = new Set([Chunk701488.Fu, Chunk701488.JT]),
           }
           let h = u.Z.getApplication(null == (s = t.application) ? true : s.id),
             b = (0, c.p)(null == r ? true : r.location),
-            _ = (null == h ? true : h.id) !== true ? T.get(h.id) : true;
+            _ = (null == h ? true : h.id) !== true ? N.get(h.id) : true;
           if (true !== _ && _.trustedUntilEpochMs >= Date.now() && _.trustedHosts.has(e.host)) return (0, i.Z)(a), p.default.track(v.rMx.RPC_OPEN_EXTERNAL_LINK_CALLED, {
             application_id: null == (d = t.application) ? true : d.id,
             url: a,
