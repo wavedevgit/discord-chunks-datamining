@@ -1,58 +1,49 @@
 /** Chunk was on 22482 **/
-/** chunk id: 157743, original params: e,a,n (module,exports,require) **/
+/** chunk id: 157743, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
   default: () => d
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
-var Chunk481060 = require("./481060.js"),
-  Chunk918125 = require("./918125.jsx"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
+  Chunk159691 = require("./159691.js"),
+  Chunk235449 = require("./235449.js"),
+  Chunk300234 = require("./300234.jsx"),
   Chunk488131 = require("./488131.js"),
   Chunk124368 = require("./124368.js"),
-  Chunk388032 = require("./388032.jsx"),
-  Chunk814987 = require("./814987.js");
+  Chunk388032 = require("./388032.jsx");
 
-function d(e) {
+function d(t) {
   let {
-    guildId: a,
-    onClose: n,
+    guildId: n,
+    onClose: e,
     transitionState: d
-  } = e;
-  return (0, s.jsx)(r.Y0X, {
-    className: l.modal,
+  } = t, h = (0, a.nA)(n), p = o.useCallback((t, n) => {
+    e(), (0, c.ok)(t, !n, l.on.GUILD_ACTIVE_THREADS_MODAL)
+  }, [e]), k = o.useCallback(t => {
+    let n = h[t.row];
+    return (0, i.jsx)(s.Z, {
+      threadId: n,
+      goToThread: p,
+      showChannelName: true
+    }, "".concat(t.section, "-").concat(t.row))
+  }, [h, p]);
+  return (0, i.jsx)(r.u_l, {
+    title: u.intl.string(u.t["dOWb+f"]),
+    actions: [{
+      text: u.intl.string(u.t.cpT0Cg),
+      onClick: e,
+      variant: "primary"
+    }],
+    onClose: e,
     transitionState: d,
-    "aria-label": i.intl.string(i.t.B2panJ),
-    size: r.CgR.DYNAMIC,
-    parentComponent: "GuildActiveThreadsModal",
-    children: (0, s.jsxs)("div", {
-      className: l.container,
-      children: [(0, s.jsxs)("div", {
-        className: l.header,
-        children: [(0, s.jsx)(r.or_, {
-          size: "md",
-          color: "currentColor",
-          className: l.threadIcon
-        }), (0, s.jsx)(r.X6q, {
-          variant: "heading-md/semibold",
-          className: l.__invalid_title,
-          children: i.intl.string(i.t["dOWb+f"])
-        }), (0, s.jsx)("div", {
-          className: l.spacer
-        }), (0, s.jsx)(r.P3F, {
-          className: l.closeIcon,
-          onClick: n,
-          "aria-label": i.intl.string(i.t.cpT0Cg),
-          children: (0, s.jsx)(r.Dio, {
-            size: "md",
-            color: "currentColor"
-          })
-        })]
-      }), (0, s.jsx)(o.Z, {
-        guildId: a,
-        goToThread: (e, a) => {
-          n(), (0, t.ok)(e, !a, c.on.GUILD_ACTIVE_THREADS_MODAL)
-        }
-      })]
-    })
+    listProps: {
+      fade: true,
+      sections: [h.length],
+      renderSection: () => null,
+      sectionHeight: 0,
+      rowHeight: 80,
+      renderRow: k,
+      chunkSize: 20
+    }
   })
 }
