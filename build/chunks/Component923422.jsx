@@ -2,7 +2,7 @@
 /** chunk id: 923422, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => D
-}), require("./388685.js"), require("./704826.js"), require("./35282.js");
+}), require("./388685.js"), require("./290780.js"), require("./539854.js"), require("./704826.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk481060 = require("./481060.js"),
@@ -33,10 +33,10 @@ let D = (0, Chunk108843.Z)(function(e) {
     webBuildOverride: t,
     onSelect: n,
     onInteraction: s
-  } = e, [c, D] = i.useState(false), x = (0, v.Z)(), I = (0, h.Z)(), T = (0, f.Z)(), C = (0, y.Z)(), L = (0, A.Z)(), R = (0, j.Z)(), m = (0, S.Z)(), k = (0, N.Z)(), Z = (0, P.Z)(), {
+  } = e, [c, D] = i.useState(false), x = (0, v.Z)(), I = (0, P.Z)(), T = (0, f.Z)(), C = (0, y.Z)(), L = (0, A.Z)(), R = (0, j.Z)(), m = (0, S.Z)(), k = (0, N.Z)(), Z = (0, h.Z)(), {
     analyticsLocations: V
-  } = (0, u.ZP)(), B = i.useMemo(() => (0, g.j)(), []);
-  async function M() {
+  } = (0, u.ZP)(), M = i.useMemo(() => (0, g.j)(), []);
+  async function B() {
     try {
       D(true), await (0, d.bF)(), window.location.reload(true)
     } catch (e) {
@@ -45,28 +45,33 @@ let D = (0, Chunk108843.Z)(function(e) {
   }
   let U = (0, p.wy)("UserSettingsCogContextMenu"),
     G = (0, E.getWebUserSettingsByUserSettingsSections)(),
-    z = (0, O.VO)().filter(e => {
-      let {
-        section: t
-      } = e;
-      return t !== o.ID.HEADER && t !== o.ID.CUSTOM && t !== o.ID.DIVIDER && "logout" !== t
-    }).filter(e => (null == e.predicate || e.predicate()) && (!U || null != G.get(e.section)));
+    z = (0, O.VO)(),
+    F = i.useMemo(() => {
+      let e = [];
+      return z.forEach(t => {
+        let {
+          section: n,
+          predicate: a
+        } = t;
+        n !== o.ID.HEADER && n !== o.ID.CUSTOM && n !== o.ID.DIVIDER && "logout" !== n && (null == a || a()) && (U && null == G.get(n) || (U && n === w.oAB.PROFILE_CUSTOMIZATION ? e.unshift(t) : e.push(t)))
+      }), e
+    }, [z, U, G]);
   return (0, a.jsx)(u.Gt, {
     value: V,
-    children: (0, a.jsxs)(r.v2r, {
+    children: (0, a.jsxs)(l.v2r, {
       navId: "user-settings-cog",
-      onClose: l.Zy,
+      onClose: r.Zy,
       "aria-label": _.intl.string(_.t.opYYHh),
       onSelect: n,
       onInteraction: s,
-      children: [z.map(e => {
+      children: [F.map(e => {
         var t, n;
         let {
           section: i,
-          label: l,
+          label: r,
           onClick: o
         } = e, s = i.replace(/\W/gi, "_");
-        return (0, a.jsx)(r.sNh, (t = function(e) {
+        return (0, a.jsx)(l.sNh, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               a = Object.keys(n);
@@ -86,7 +91,7 @@ let D = (0, Chunk108843.Z)(function(e) {
         }({
           id: s
         }, {
-          label: l,
+          label: r,
           action: () => {
             var e;
             return null != o ? o() : function(e, t, n) {
@@ -130,11 +135,11 @@ let D = (0, Chunk108843.Z)(function(e) {
         })(Object(n)).forEach(function(e) {
           Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
         }), t), s)
-      }), e.user.isStaff() && Z, e.user.isStaff() && B.length > 0 ? (0, a.jsx)(r.sNh, {
+      }), e.user.isStaff() && Z, e.user.isStaff() && M.length > 0 ? (0, a.jsx)(l.sNh, {
         label: "Build Overrides",
         id: "build_overrides",
-        children: (0, a.jsx)(r.kSQ, {
-          children: B.map(e => (0, a.jsx)(r.k5B, {
+        children: (0, a.jsx)(l.kSQ, {
+          children: M.map(e => (0, a.jsx)(l.k5B, {
             id: "input-".concat(e.payload),
             group: "build_overrides",
             label: e.id,
@@ -144,12 +149,12 @@ let D = (0, Chunk108843.Z)(function(e) {
             }
           }, "input-".concat(e.payload)))
         })
-      }) : null, null != t ? (0, a.jsx)(r.kSQ, {
-        children: (0, a.jsx)(r.sNh, {
+      }) : null, null != t ? (0, a.jsx)(l.kSQ, {
+        children: (0, a.jsx)(l.sNh, {
           id: "clear-build-override",
           disabled: c,
           label: _.intl.string(_.t["/Nz9ra"]),
-          action: M,
+          action: B,
           color: "danger"
         })
       }) : null]

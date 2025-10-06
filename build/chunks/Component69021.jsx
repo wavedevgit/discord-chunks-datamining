@@ -58,8 +58,8 @@ function f() {
     isLoggingGatewayEvents: f,
     isLoggingOverlayEvents: S,
     isLoggingAnalyticsEvents: v,
-    isAnalyticsDebuggerEnabled: P,
-    isTracingRequests: h,
+    isAnalyticsDebuggerEnabled: h,
+    isTracingRequests: P,
     isForcedCanary: j,
     isSourceMapsEnabled: A,
     isIdleStatusIndicatorEnabled: N,
@@ -125,10 +125,10 @@ function f() {
     children: [(0, Chunk951288.jsx)(Chunk481060.S89, {
       id: "tracing-requests",
       label: "Tracing Requests",
-      checked: h,
+      checked: P,
       action: () => {
         (0, Chunk179658.y)({
-          trace: !h
+          trace: !P
         })
       }
     }, "tracing-requests"), (0, Chunk951288.jsx)(Chunk481060.S89, {
@@ -241,10 +241,10 @@ function f() {
     }, "analytics-events"), (0, Chunk951288.jsx)(Chunk481060.S89, {
       id: "analytics-debugger",
       label: "Analytics Debugger",
-      checked: P,
+      checked: h,
       action: () => {
         (0, Chunk179658.y)({
-          analyticsDebuggerEnabled: !P
+          analyticsDebuggerEnabled: !h
         })
       }
     }, "analytics-debugger")]
@@ -270,7 +270,7 @@ function f() {
   }, "design-tools")), module && (Z.push((0, Chunk951288.jsx)(Chunk481060.II_, {
     id: "horizontal-spacing",
     label: "Horizontal Spacing",
-    control: (e, t) => (0, a.jsx)(r._wy, y(E({}, e), {
+    control: (e, t) => (0, a.jsx)(l._wy, y(E({}, e), {
       ref: t,
       value: I,
       minValue: 0,
@@ -282,7 +282,7 @@ function f() {
   }, "horizontal-spacing")), Z.push((0, Chunk951288.jsx)(Chunk481060.II_, {
     id: "vertical-spacing",
     label: "Vertical Spacing",
-    control: (e, t) => (0, a.jsx)(r._wy, y(E({}, e), {
+    control: (e, t) => (0, a.jsx)(l._wy, y(E({}, e), {
       ref: t,
       value: T,
       minValue: 0,
