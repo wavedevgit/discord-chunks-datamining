@@ -2,7 +2,7 @@
 /** chunk id: 914788, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => en
+  Z: () => er
 }), require("./388685.js"), require("./539854.js"), require("./35282.js");
 var Chunk133080 = require("./133080.js"),
   Chunk750041 = require("./750041.js"),
@@ -236,6 +236,14 @@ function q(e) {
 }
 
 function X(e) {
+  let {
+    linkedUsers: t
+  } = e;
+  if (null == t) returnfalse;
+  M(t)
+}
+
+function Q(e) {
   var t;
   let {
     countryCode: n
@@ -243,7 +251,7 @@ function X(e) {
   null != n && (A = null != (t = (0, r.Zz)(n)) ? t : null)
 }
 
-function Q() {
+function J() {
   let e = [];
   return Object.entries(b).forEach(t => {
     let [n, r] = t;
@@ -251,14 +259,14 @@ function Q() {
   }), module
 }
 
-function J() {
+function $() {
   return Object.entries(y).map(e => {
     let [t, n] = e;
     return "".concat(t, ":").concat(n)
   })
 }
 
-function $(e) {
+function ee(e) {
   y = e.reduce((e, t) => {
     let [n, r] = t.split(":"), i = (0, c.jV)(n);
     return true === i ? e : p(f({}, e), {
@@ -267,24 +275,24 @@ function $(e) {
   }, x())
 }
 
-function ee() {
+function et() {
   h = null, m = null, g = {}, b = L(), y = x(), w = {}, T = false, S = null, v = D(), E = false, C = [], N = [], R = null, P = null
 }
-class et extends Chunk750041.Z {
+class en extends Chunk750041.Z {
   initialize() {
     this.waitFor(Chunk594174.default)
   }
   loadCache() {
-    let e = this.readSnapshot(et.LATEST_SNAPSHOT_VERSION);
-    null != module && (M(module.linkedUsers), U(module.guilds), k(module.teenActivity), $(module.teenActivityTotals))
+    let e = this.readSnapshot(en.LATEST_SNAPSHOT_VERSION);
+    null != module && (M(module.linkedUsers), U(module.guilds), k(module.teenActivity), ee(module.teenActivityTotals))
   }
   takeSnapshot() {
     return {
-      version: et.LATEST_SNAPSHOT_VERSION,
+      version: en.LATEST_SNAPSHOT_VERSION,
       data: {
         linkedUsers: Object.values(g),
-        teenActivityTotals: J(),
-        teenActivity: Q(),
+        teenActivityTotals: $(),
+        teenActivity: J(),
         guilds: Object.values(w)
       }
     }
@@ -350,6 +358,7 @@ class et extends Chunk750041.Z {
   }
   constructor() {
     super({
+      CONNECTION_OPEN: X,
       CURRENT_USER_UPDATE: q,
       CACHE_LOADED_LAZY: () => this.loadCache(),
       FAMILY_CENTER_INITIAL_LOAD: B,
@@ -362,10 +371,10 @@ class et extends Chunk750041.Z {
       FAMILY_CENTER_REQUEST_LINK_REMOVE_SUCCESS: W,
       FAMILY_CENTER_LINK_CODE_FETCH_SUCCESS: K,
       FAMILY_CENTER_HANDLE_TAB_SELECT: z,
-      SET_LOCATION_METADATA: X,
-      LOGOUT: ee
+      SET_LOCATION_METADATA: Q,
+      LOGOUT: et
     })
   }
 }
-d(et, "displayName", "FamilyCenterStore"), d(et, "LATEST_SNAPSHOT_VERSION", 3);
-let en = new et
+d(en, "displayName", "FamilyCenterStore"), d(en, "LATEST_SNAPSHOT_VERSION", 3);
+let er = new en
