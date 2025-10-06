@@ -233,12 +233,13 @@ function er(e, t, n) {
   let i = r.useRef([]),
     a = r.useRef(t.sortMethod),
     o = r.useRef(t.filters),
-    s = r.useRef(n);
+    s = r.useRef(n),
+    l = r.useRef(0);
   return r.useMemo(() => {
     if (0 === e.length) return [];
-    if (i.current.length > 0 && i.current.length === e.length && a.current === t.sortMethod && o.current === t.filters && s.current === n) return i.current;
+    if (i.current.length > 0 && l.current === e.length && a.current === t.sortMethod && o.current === t.filters && s.current === n) return i.current;
     let r = et(e, t).map(e => e.id);
-    return i.current = r, a.current = t.sortMethod, o.current = t.filters, s.current = n, r
+    return i.current = r, a.current = t.sortMethod, o.current = t.filters, s.current = n, l.current = e.length, r
   }, [e, t, n])
 }
 
