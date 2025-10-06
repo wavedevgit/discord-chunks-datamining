@@ -1,7 +1,7 @@
 /** Chunk was on 77033 **/
-/** chunk id: 636409, original params: e,n,t (module,exports,require) **/
+/** chunk id: 636409, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => p
+  default: () => m
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,35 +16,36 @@ var Chunk951288 = require("./951288.js"),
   Chunk171524 = require("./171524.jsx"),
   Chunk596446 = require("./596446.js");
 
-function p(e) {
-  var n, t, r;
+function m(e) {
+  var t, n, l;
   let {
-    guildId: p,
-    initialPageIndex: _ = 0
-  } = e, v = (0, d.e7)([s.Z], () => s.Z.getStorefrontData(p)), I = (0, d.e7)([s.Z], () => s.Z.getStorefrontState(p)), x = ((null == v ? true : v.storefront) != null || (null == v ? true : v.error)) && !(null == v ? true : v.loading);
-  if (l.useEffect(() => {
-      null == v && (0, c.Y)(p)
-    }, [p, v]), l.useEffect(() => {
-      (0, c.K)(p, _)
-    }, [p, _]), !x || (null == v ? true : v.storefront) == null) return (0, a.jsx)("div", {
-    className: i()(m.spinner, m.container),
+    guildId: m,
+    initialPageIndex: I = 0
+  } = e, b = (0, d.e7)([s.Z], () => s.Z.getStorefrontData(m)), v = (0, d.e7)([s.Z], () => s.Z.getStorefrontState(m)), _ = ((null == b ? true : b.storefront) != null || (null == b ? true : b.error)) && !(null == b ? true : b.loading);
+  if (r.useEffect(() => {
+      null == b && (0, c.Y)(m)
+    }, [m, b]), r.useEffect(() => {
+      (0, c.K)(m, I)
+    }, [m, I]), !_ || (null == b ? true : b.storefront) == null) return (0, a.jsx)("div", {
+    className: i()(p.spinner, p.container),
     children: (0, a.jsx)(o.$jN, {})
   });
-  let h = null != (r = null == I ? true : I.activePage) ? r : _;
+  let h = null != (l = null == v ? true : v.activePage) ? l : I;
   return (0, a.jsxs)(a.Fragment, {
     children: [(0, a.jsxs)("div", {
-      className: m.container,
+      className: p.container,
       children: [(0, a.jsx)(u.Z, {
-        guildId: p,
-        storefront: v.storefront,
+        guildId: m,
+        storefront: b.storefront,
         selectedPageIndex: h
       }), (0, a.jsx)(g.$, {
-        applicationId: v.storefront.applicationId,
-        page: v.storefront.pages[h]
+        applicationId: b.storefront.applicationId,
+        guildId: m,
+        page: b.storefront.pages[h]
       })]
     }), (0, a.jsx)(f.n, {
-      applicationId: v.storefront.applicationId,
-      backgroundImageAssetId: null == (t = v.storefront.pages[h]) || null == (n = t.leaderboard) ? true : n.backgroundImageAssetId
+      applicationId: b.storefront.applicationId,
+      backgroundImageAssetId: null == (n = b.storefront.pages[h]) || null == (t = n.leaderboard) ? true : t.backgroundImageAssetId
     })]
   })
 }

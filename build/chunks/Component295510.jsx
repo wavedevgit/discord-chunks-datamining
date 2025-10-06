@@ -1,5 +1,5 @@
-/** Chunk was on 36084 **/
-/** chunk id: 295510, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 26775 **/
+/** chunk id: 295510, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => a
 });
@@ -13,52 +13,52 @@ var Chunk153867 = require("./153867.js"),
 function a(e) {
   var {
     type: t,
-    onConfirm: n
+    onConfirm: r
   } = e, a = function(e, t) {
     if (null == e) return {};
-    var n, r, i = function(e, t) {
+    var r, n, o = function(e, t) {
       if (null == e) return {};
-      var n, r, i = {},
-        l = Object.keys(e);
-      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-      return i
+      var r, n, o = {},
+        i = Object.keys(e);
+      for (n = 0; n < i.length; n++) r = i[n], t.indexOf(r) >= 0 || (o[r] = e[r]);
+      return o
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var l = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+      var i = Object.getOwnPropertySymbols(e);
+      for (n = 0; n < i.length; n++) r = i[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r])
     }
-    return i
+    return o
   }(e, ["type", "onConfirm"]);
-  let c = t === o.K.STREAM ? u.intl.string(u.t["/lFMWl"]) : u.intl.string(u.t.xzxhZW),
-    s = t === o.K.STREAM ? u.intl.string(u.t.xaOX7e) : u.intl.string(u.t.oU1p9P);
-  return (0, r.jsx)(l.default, function(e) {
+  let u = t === l.K.STREAM ? c.intl.string(c.t["/lFMWl"]) : c.intl.string(c.t.xzxhZW),
+    f = t === l.K.STREAM ? c.intl.string(c.t.xaOX7e) : c.intl.string(c.t.oU1p9P);
+  return (0, n.jsx)(i.default, function(e) {
     for (var t = 1; t < arguments.length; t++) {
-      var n = null != arguments[t] ? arguments[t] : {},
-        r = Object.keys(n);
-      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-        return Object.getOwnPropertyDescriptor(n, e).enumerable
-      }))), r.forEach(function(t) {
-        var r;
-        r = n[t], t in e ? Object.defineProperty(e, t, {
-          value: r,
+      var r = null != arguments[t] ? arguments[t] : {},
+        n = Object.keys(r);
+      "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+        return Object.getOwnPropertyDescriptor(r, e).enumerable
+      }))), n.forEach(function(t) {
+        var n;
+        n = r[t], t in e ? Object.defineProperty(e, t, {
+          value: n,
           enumerable: true,
           configurable: true,
           writable: true
-        }) : e[t] = r
+        }) : e[t] = n
       })
     }
     return e
   }({
-    confirmText: u.intl.string(u.t["cY+Ooa"]),
-    secondaryConfirmText: u.intl.string(u.t["JdIQ/f"]),
-    title: c,
-    cancelText: u.intl.string(u.t["ETE/oK"]),
-    onConfirm: n,
+    confirmText: c.intl.string(c.t["cY+Ooa"]),
+    secondaryConfirmText: c.intl.string(c.t["JdIQ/f"]),
+    title: u,
+    cancelText: c.intl.string(c.t["ETE/oK"]),
+    onConfirm: r,
     onConfirmSecondary: () => {
-      i.ZP.updatedUnsyncedSettings({
+      o.ZP.updatedUnsyncedSettings({
         disableHideSelfStreamAndVideoConfirmationAlert: true
       })
     },
-    body: s
+    body: f
   }, a))
 }

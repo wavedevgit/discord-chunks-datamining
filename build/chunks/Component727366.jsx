@@ -1,29 +1,31 @@
 /** Chunk was on 77033 **/
-/** chunk id: 727366, original params: e,n,t (module,exports,require) **/
+/** chunk id: 727366, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   t: () => o
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  r = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk840724 = require("./840724.jsx"),
   Chunk301790 = require("./301790.js");
 
 function o(e) {
   let {
-    applicationId: n,
-    skuIds: t,
-    isWide: l
+    applicationId: t,
+    skuIds: n,
+    isWide: r,
+    guildId: o
   } = e;
-  return null == t || 0 === t.length ? null : (0, a.jsx)("div", {
-    className: r()(d.container, d.cardGrid, {
-      [d.wideCardGrid]: l
+  return null == n || 0 === n.length ? null : (0, a.jsx)("div", {
+    className: l()(d.container, d.cardGrid, {
+      [d.wideCardGrid]: r
     }),
-    children: t.map((e, t) => (0, a.jsx)(i.Z, {
-      applicationId: n,
+    children: n.map((e, n) => (0, a.jsx)(i.Z, {
+      applicationId: t,
       skuId: e,
-      isWide: l
-    }, "".concat(e, "-").concat(t)))
+      isWide: r,
+      guildId: o
+    }, "".concat(e, "-").concat(n)))
   })
 }

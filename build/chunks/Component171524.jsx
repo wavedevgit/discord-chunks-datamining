@@ -1,5 +1,5 @@
 /** Chunk was on 77033 **/
-/** chunk id: 171524, original params: e,n,t (module,exports,require) **/
+/** chunk id: 171524, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   n: () => i
 });
@@ -9,13 +9,13 @@ var Chunk951288 = require("./951288.js"),
 
 function i(e) {
   let {
-    applicationId: n,
-    backgroundImageAssetId: t
-  } = e, i = null != t ? (0, l._W)(n, t, 1024) : null;
+    applicationId: t,
+    backgroundImageAssetId: n
+  } = e, i = null != n ? (0, r._W)(t, n, 1024) : null;
   return null == i ? null : (0, a.jsx)("div", {
-    className: r.backgroundContainer,
+    className: l.backgroundContainer,
     children: (0, a.jsx)("div", {
-      className: r.backgroundImage,
+      className: l.backgroundImage,
       style: {
         backgroundImage: "url(".concat(i, ")")
       }

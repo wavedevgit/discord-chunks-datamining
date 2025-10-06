@@ -1,5 +1,5 @@
 /** Chunk was on 77033 **/
-/** chunk id: 323540, original params: e,n,t (module,exports,require) **/
+/** chunk id: 323540, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   $: () => s
 }), require("./388685.js");
@@ -12,39 +12,43 @@ var Chunk951288 = require("./951288.js"),
   Chunk371160 = require("./371160.js");
 
 function s(e) {
-  var n;
+  var t;
   let {
-    applicationId: t,
-    page: s
+    applicationId: n,
+    guildId: s,
+    page: u
   } = e, {
-    ref: u,
-    width: g
-  } = (0, i.ZP)(), [f, m] = l.useMemo(() => (null == s ? true : s.skuIds) == null || (null == s ? true : s.skuIds.length) === 0 ? [
+    ref: g,
+    width: f
+  } = (0, i.ZP)(), [p, m] = r.useMemo(() => (null == u ? true : u.skuIds) == null || (null == u ? true : u.skuIds.length) === 0 ? [
     [],
     []
-  ] : (null == s ? true : s.leaderboard) == null || null == g || g <= 516 ? [
-    [], null == s ? true : s.skuIds
-  ] : [null == s ? true : s.skuIds.slice(0, 2), null == s ? true : s.skuIds.slice(2)], [s, g]);
-  return null == s ? null : (0, a.jsx)(r.zJl, {
+  ] : (null == u ? true : u.leaderboard) == null || null == f || f <= 516 ? [
+    [], null == u ? true : u.skuIds
+  ] : [null == u ? true : u.skuIds.slice(0, 2), null == u ? true : u.skuIds.slice(2)], [u, f]);
+  return null == u ? null : (0, a.jsx)(l.zJl, {
     children: (0, a.jsxs)("section", {
-      ref: u,
+      ref: g,
       className: c.container,
       children: [(0, a.jsx)(d.t, {
-        leaderboard: s.leaderboard
+        leaderboard: u.leaderboard
       }), (0, a.jsx)(o.Z, {
-        applicationId: t,
-        skuIds: f,
+        applicationId: n,
+        guildId: s,
+        skuIds: p,
         isWide: true
       }), (0, a.jsx)(o.Z, {
-        applicationId: t,
+        applicationId: n,
+        guildId: s,
         skuIds: m
-      }), null == (n = s.sections) ? true : n.map((e, n) => {
-        var l;
+      }), null == (t = u.sections) ? true : t.map((e, t) => {
+        var r;
         return (0, a.jsx)(o.Z, {
-          applicationId: t,
-          sectionTitle: null != (l = e.title) ? l : true,
+          guildId: s,
+          applicationId: n,
+          sectionTitle: null != (r = e.title) ? r : true,
           skuIds: e.skuIds
-        }, "".concat(e.title, "-").concat(n))
+        }, "".concat(e.title, "-").concat(t))
       })]
     })
   })

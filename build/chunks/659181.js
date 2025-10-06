@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => _
-}), require("./388685.js"), require("./997841.js");
+}), require("./388685.js"), require("./997841.js"), require("./953529.js");
 var Chunk913527 = require("./913527.js"),
   i = require.n(Chunk913527),
   Chunk81825 = require("./81825.js"),
@@ -72,7 +72,9 @@ class _ extends Chunk81825.Z {
       externalPurchaseUrl: e.external_purchase_url,
       deleted: null != (s = e.deleted) && s,
       bundledSkuIds: null != (c = e.bundled_sku_ids) ? c : [],
-      tenantMetadata: f(e.tenant_metadata)
+      tenantMetadata: f(e.tenant_metadata),
+      thumbnailAssetId: e.thumbnail_asset_id,
+      description: e.description
     })
   }
   get supportedOperatingSystems() {
@@ -138,6 +140,6 @@ class _ extends Chunk81825.Z {
     return null != this.preorderReleaseAt || null != this.preorderApproximateReleaseDate
   }
   constructor(e) {
-    super(), u(this, "id", true), u(this, "type", true), u(this, "applicationId", true), u(this, "application", true), u(this, "eligiblePaymentGateways", true), u(this, "productLine", true), u(this, "name", true), u(this, "releaseDate", true), u(this, "preorderReleaseAt", true), u(this, "preorderApproximateReleaseDate", true), u(this, "summary", true), u(this, "features", true), u(this, "genres", true), u(this, "dependentSkuId", true), u(this, "manifests", true), u(this, "availableRegions", true), u(this, "accessType", true), u(this, "systemRequirements", true), u(this, "contentRating", true), u(this, "contentRatingAgency", true), u(this, "legalNotice", true), u(this, "price", true), u(this, "premium", true), u(this, "showAgeGate", true), u(this, "restricted", true), u(this, "slug", true), u(this, "exclusive", true), u(this, "locales", true), u(this, "flags", true), u(this, "externalPurchaseUrl", true), u(this, "deleted", true), u(this, "bundledSkuIds", true), u(this, "tenantMetadata", true), this.id = e.id, this.type = e.type, this.applicationId = e.applicationId, this.application = e.application, this.eligiblePaymentGateways = e.eligiblePaymentGateways, this.productLine = e.productLine, this.name = e.name, this.preorderReleaseAt = e.preorderReleaseAt, this.preorderApproximateReleaseDate = e.preorderApproximateReleaseDate, this.releaseDate = e.releaseDate, this.summary = e.summary, this.features = e.features, this.genres = e.genres, this.dependentSkuId = e.dependentSkuId, this.manifests = e.manifests, this.availableRegions = e.availableRegions, this.accessType = e.accessType, this.systemRequirements = e.systemRequirements, this.contentRating = e.contentRating, this.contentRatingAgency = e.contentRatingAgency, this.legalNotice = e.legalNotice, this.price = e.price, this.premium = e.premium, this.showAgeGate = e.showAgeGate, this.restricted = e.restricted, this.slug = e.slug, this.exclusive = e.exclusive, this.locales = e.locales, this.flags = e.flags, this.externalPurchaseUrl = e.externalPurchaseUrl || null, this.deleted = e.deleted, this.bundledSkuIds = e.bundledSkuIds, this.tenantMetadata = e.tenantMetadata
+    super(), u(this, "id", true), u(this, "type", true), u(this, "applicationId", true), u(this, "application", true), u(this, "eligiblePaymentGateways", true), u(this, "productLine", true), u(this, "name", true), u(this, "releaseDate", true), u(this, "preorderReleaseAt", true), u(this, "preorderApproximateReleaseDate", true), u(this, "summary", true), u(this, "features", true), u(this, "genres", true), u(this, "dependentSkuId", true), u(this, "manifests", true), u(this, "availableRegions", true), u(this, "accessType", true), u(this, "systemRequirements", true), u(this, "contentRating", true), u(this, "contentRatingAgency", true), u(this, "legalNotice", true), u(this, "price", true), u(this, "premium", true), u(this, "showAgeGate", true), u(this, "restricted", true), u(this, "slug", true), u(this, "exclusive", true), u(this, "locales", true), u(this, "flags", true), u(this, "externalPurchaseUrl", true), u(this, "deleted", true), u(this, "bundledSkuIds", true), u(this, "tenantMetadata", true), u(this, "thumbnailAssetId", true), u(this, "description", true), this.id = e.id, this.type = e.type, this.applicationId = e.applicationId, this.application = e.application, this.eligiblePaymentGateways = e.eligiblePaymentGateways, this.productLine = e.productLine, this.name = e.name, this.preorderReleaseAt = e.preorderReleaseAt, this.preorderApproximateReleaseDate = e.preorderApproximateReleaseDate, this.releaseDate = e.releaseDate, this.summary = e.summary, this.features = e.features, this.genres = e.genres, this.dependentSkuId = e.dependentSkuId, this.manifests = e.manifests, this.availableRegions = e.availableRegions, this.accessType = e.accessType, this.systemRequirements = e.systemRequirements, this.contentRating = e.contentRating, this.contentRatingAgency = e.contentRatingAgency, this.legalNotice = e.legalNotice, this.price = e.price, this.premium = e.premium, this.showAgeGate = e.showAgeGate, this.restricted = e.restricted, this.slug = e.slug, this.exclusive = e.exclusive, this.locales = e.locales, this.flags = e.flags, this.externalPurchaseUrl = e.externalPurchaseUrl || null, this.deleted = e.deleted, this.bundledSkuIds = e.bundledSkuIds, this.tenantMetadata = e.tenantMetadata, this.thumbnailAssetId = e.thumbnailAssetId, this.description = e.description
   }
 }

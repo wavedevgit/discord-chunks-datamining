@@ -882,8 +882,8 @@ function eM(e, t, n, r, i) {
 
 function ej(e, t, n, r) {
   var i;
-  let a = e.untranslatedName,
-    o = e.displayName;
+  let a = e.untranslatedName.toLocaleLowerCase(),
+    o = e.displayName.toLocaleLowerCase();
   if (a.startsWith(t) || o.startsWith(t)) return 0;
   if (a.startsWith(n) && a.split(" ").slice(1).join(" ").startsWith(r) || o.startsWith(n) && o.split(" ").slice(1).join(" ").startsWith(r)) return 1;
   if (a.includes(t) || (null == o ? true : o.includes(t))) return 2;

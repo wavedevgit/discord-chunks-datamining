@@ -1,7 +1,7 @@
-/** Chunk was on 36084 **/
+/** Chunk was on 99474 **/
 /** chunk id: 13279, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  z: () => a
+  z: () => u
 });
 var Chunk359119 = require("./359119.js"),
   Chunk897769 = require("./897769.js"),
@@ -9,12 +9,12 @@ var Chunk359119 = require("./359119.js"),
   Chunk403485 = require("./403485.js"),
   Chunk604849 = require("./604849.js");
 
-function a(e, t) {
+function u(e, t) {
   let n = (0, l.y0)({
       location: t
     }),
-    a = (0, u.c)(),
-    c = (0, o.h)(e),
-    s = (0, i.S)(e, r.pj.INAPPROPRIATE_CONVERSATION_TIER_2);
-  if (n && a && 0 !== c.length && !c.some(e => e.type === r.pj.INAPPROPRIATE_CONVERSATION_TIER_1 || e.type === r.pj.INAPPROPRIATE_CONVERSATION_TIER_2 && null != e.dismiss_timestamp)) return s
+    u = (0, o.c)(),
+    d = (0, r.h)(e),
+    s = (0, a.S)(e, i.pj.INAPPROPRIATE_CONVERSATION_TIER_2);
+  if (n && u && 0 !== d.length && !d.some(e => e.type === i.pj.INAPPROPRIATE_CONVERSATION_TIER_1 || e.type === i.pj.INAPPROPRIATE_CONVERSATION_TIER_2 && null != e.dismiss_timestamp)) return s
 }
