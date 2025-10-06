@@ -1,7 +1,7 @@
 /** Chunk was on 2262 **/
 /** chunk id: 375727, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  I: () => R
+  I: () => A
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -9,7 +9,6 @@ var Chunk951288 = require("./951288.js"),
   a = require.n(Chunk120356),
   Chunk33309 = require("./33309.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk668781 = require("./668781.js"),
   Chunk80932 = require("./80932.js"),
@@ -41,62 +40,62 @@ function P(e) {
   let r = null != (n = null == e || null == (t = e.file) ? true : t.name) ? n : "",
     i = r.lastIndexOf("."),
     l = false === i ? r : r.substring(0, i);
-  return _.ZP.sanitizeEmojiName(l)
+  return j.ZP.sanitizeEmojiName(l)
 }
-let R = e => {
+let A = e => {
     var t;
     let {
       guildId: n
-    } = e, l = "userImage" in e ? e.userImage : true, g = "emoji" in e ? e.emoji : true, R = !!g, [L, z] = i.useState(null != l ? l : null), [G, U] = i.useState(false), F = (0, o.e7)([v.Z, b.Z, x.Z], () => {
-      let e = b.Z.getGuildId(),
-        t = v.Z.getGuild(e);
-      return x.Z.can(S.Plq.CREATE_GUILD_EXPRESSIONS, t) && null != t ? t.id : null
-    }), [W, B] = i.useState(null != n ? n : F), [H, V] = i.useState(null), [J, Y] = i.useState(null), [K, X] = i.useState(P(L)), [q, $] = i.useState(null), [Q, ee] = i.useState(() => Date.now()), et = i.useRef(0), en = i.useRef(0), er = i.useRef(false);
+    } = e, l = "userImage" in e ? e.userImage : true, m = "emoji" in e ? e.emoji : true, A = !!m, [Z, L] = i.useState(null != l ? l : null), [G, z] = i.useState(false), U = (0, o.e7)([f.Z, x.Z, v.Z], () => {
+      let e = x.Z.getGuildId(),
+        t = f.Z.getGuild(e);
+      return v.Z.can(I.Plq.CREATE_GUILD_EXPRESSIONS, t) && null != t ? t.id : null
+    }), [F, W] = i.useState(null != n ? n : U), [H, B] = i.useState(null), [V, J] = i.useState(null), [Y, K] = i.useState(P(Z)), [X, q] = i.useState(null), [$, Q] = i.useState(() => Date.now()), ee = i.useRef(0), et = i.useRef(0), en = i.useRef(false);
     i.useEffect(() => {
-      if (null == g) return;
-      let e = p.Z.getEmojiRawAsset(g.id);
+      if (null == m) return;
+      let e = g.Z.getEmojiRawAsset(m.id);
       if (null != e) {
-        z(e), $(e.data), X(g.name), U(false);
+        L(e), q(e.data), K(m.name), z(false);
         return
       }
-      U(true), (0, N.Q)(g).then(e => {
-        z(e), $(e.data), X(g.name), U(false)
+      z(true), (0, E.Q)(m).then(e => {
+        L(e), q(e.data), K(m.name), z(false)
       }).catch(e => {
-        M.error("Failed to fetch emoji image", e), V(O.ze.MISSING_IMAGE_DATA), U(false)
+        M.error("Failed to fetch emoji image", e), B(_.ze.MISSING_IMAGE_DATA), z(false)
       })
-    }, [g]);
-    let ei = i.useCallback(e => {
+    }, [m]);
+    let er = i.useCallback(e => {
       let {
         reason: t
-      } = e, n = null != H ? H : J;
-      j.default.track(S.rMx.EMOJI_STUDIO_ENDED, {
+      } = e, n = null != H ? H : V;
+      b.default.track(I.rMx.EMOJI_STUDIO_ENDED, {
         reason: t,
-        is_initial: 0 === et.current,
-        has_image: null != L,
+        is_initial: 0 === ee.current,
+        has_image: null != Z,
         error: null == n ? null : String(n),
-        throttled_edit_count: en.current,
-        session_duration_ms: Date.now() - Q,
-        has_guild_selected: null != W
+        throttled_edit_count: et.current,
+        session_duration_ms: Date.now() - $,
+        has_guild_selected: null != F
       })
-    }, [H, J, Q, L, W]);
-    (0, m.zq)(() => {
-      er.current || ei({
+    }, [H, V, $, Z, F]);
+    (0, h.zq)(() => {
+      en.current || er({
         reason: "closed"
       })
     });
-    let el = i.useCallback(async () => {
-        if (V(null), null == W) return void V(O.ze.MISSING_GUILD);
-        if (null == L || (null == L ? true : L.file) == null || null == q) return void V(O.ze.MISSING_IMAGE_DATA);
+    let ei = i.useCallback(async () => {
+        if (B(null), null == F) return void B(_.ze.MISSING_GUILD);
+        if (null == Z || (null == Z ? true : Z.file) == null || null == X) return void B(_.ze.MISSING_IMAGE_DATA);
         let e = null;
         try {
-          e = await (0, h.rS)({
-            image: q,
-            guildId: W,
-            name: K,
+          e = await (0, d.rS)({
+            image: X,
+            guildId: F,
+            name: Y,
             analyticsLocation: {
-              page: S.ZY5.EMOJI_STUDIO
+              page: I.ZY5.EMOJI_STUDIO
             }
-          }), f.MK({
+          }), p.MK({
             emojiId: e.id,
             userImage: function(e) {
               for (var t = 1; t < arguments.length; t++) {
@@ -115,181 +114,179 @@ let R = e => {
                 })
               }
               return e
-            }({}, L)
+            }({}, Z)
           })
         } catch (e) {
-          V((0, D.zg)(e)), M.error("Failed to upload emoji.", e);
+          B((0, w.zg)(e)), M.error("Failed to upload emoji.", e);
           return
         }
-        if (null != g) try {
-          await (0, h.RE)(W, g.id, e.id)
+        if (null != m) try {
+          await (0, d.RE)(F, m.id, e.id)
         } catch (e) {
-          if (429 === e.status) d.Z.show({
-            title: T.intl.string(T.t.iufib2),
-            body: T.intl.string(T.t["Whhv4+"])
+          if (429 === e.status) c.Z.show({
+            title: S.intl.string(S.t.iufib2),
+            body: S.intl.string(S.t["Whhv4+"])
           });
           else {
-            V((0, D.zg)(e)), M.error("Failed to delete emoji.", e);
+            B((0, w.zg)(e)), M.error("Failed to delete emoji.", e);
             return
           }
         }
-        ei({
+        er({
           reason: "uploaded"
-        }), er.current = true, (0, c.Mr3)(O.Hj), (0, y.y)({
+        }), en.current = true, (0, u.Mr3)(_.Hj), (0, O.y)({
           emoji: e,
-          guildId: W
+          guildId: F
         })
-      }, [W, L, g, q, ei, K]),
-      ea = i.useCallback(() => {
-        ei({
+      }, [F, Z, m, X, er, Y]),
+      el = i.useCallback(() => {
+        er({
           reason: "back_button"
-        }), V(null), z(null), $(null), X(""), ee(Date.now()), en.current = 0
-      }, [ei]),
-      es = i.useCallback(e => {
+        }), B(null), L(null), q(null), K(""), Q(Date.now()), et.current = 0
+      }, [er]),
+      ea = i.useCallback(e => {
         let {
           imageData: t,
           imageDataTimestamp: n = 0,
           error: r
         } = e, i = null;
-        null != t && _.ZP.isDataTooBig(t) && (i = O.ze.TOO_BIG), V(null != r ? r : i), n < et.current || null != t && ($(t), et.current = n)
+        null != t && j.ZP.isDataTooBig(t) && (i = _.ze.TOO_BIG), B(null != r ? r : i), n < ee.current || null != t && (q(t), ee.current = n)
       }, []),
-      eo = i.useCallback(() => {
-        en.current++
+      es = i.useCallback(() => {
+        et.current++
       }, []),
-      eu = i.useCallback(e => {
+      eo = i.useCallback(e => {
         var t;
-        z(e), X(t => "" !== t ? t : P(e)), $(null != (t = null == e ? true : e.data) ? t : null)
+        L(e), K(t => "" !== t ? t : P(e)), q(null != (t = null == e ? true : e.data) ? t : null)
       }, []),
-      ec = R ? T.intl.string(T.t.FOYn8f) : T.intl.string(T.t.iMJO39),
-      ed = R ? T.intl.string(T.t.FOYn8f) : T.intl.string(T.t.DU0dy8);
+      eu = A ? S.intl.string(S.t.FOYn8f) : S.intl.string(S.t.iMJO39),
+      ec = A ? S.intl.string(S.t.FOYn8f) : S.intl.string(S.t.DU0dy8);
     return G ? (0, r.jsxs)("main", {
-      className: A.main,
-      children: [(0, r.jsx)(c.X6q, {
+      className: T.main,
+      children: [(0, r.jsx)(u.X6q, {
         variant: "heading-lg/medium",
         color: "header-primary",
-        className: A.heading,
-        children: ec
+        className: T.heading,
+        children: eu
       }), (0, r.jsx)("div", {
-        className: A.editor
+        className: T.editor
       }), (0, r.jsx)("div", {
-        className: A.closeButton,
-        children: (0, r.jsx)(c.PZ7, {
-          size: "sm",
-          onClick: () => (0, c.Mr3)(O.Hj)
+        className: T.closeButton,
+        children: (0, r.jsx)(u.PZ7, {
+          size: "md",
+          onClick: () => (0, u.Mr3)(_.Hj)
         })
       })]
     }) : (0, r.jsxs)("main", {
-      className: a()(A.main, {
-        [A.checkerboard]: null != L
+      className: a()(T.main, {
+        [T.checkerboard]: null != Z
       }),
-      children: [(0, r.jsx)(c.X6q, {
+      children: [(0, r.jsx)(u.X6q, {
         variant: "heading-lg/medium",
         color: "header-primary",
-        className: A.heading,
-        children: ec
-      }), null == L ? (0, r.jsx)(w.u, {
-        setImage: eu
+        className: T.heading,
+        children: eu
+      }), null == Z ? (0, r.jsx)(D.u, {
+        setImage: eo
       }) : (0, r.jsx)("div", {
-        className: A.editor,
-        children: (0, r.jsx)(I.v, {
-          file: L.file,
-          imageUri: L.data,
-          onUpdate: es,
-          onThrottledEdit: eo
+        className: T.editor,
+        children: (0, r.jsx)(C.v, {
+          file: Z.file,
+          imageUri: Z.data,
+          onUpdate: ea,
+          onThrottledEdit: es
         })
       }), (0, r.jsxs)("aside", {
-        className: A.aside,
+        className: T.aside,
         children: [(0, r.jsxs)("div", {
-          className: A.preview,
+          className: T.preview,
           children: [(0, r.jsx)("label", {
-            children: T.intl.string(T.t.JmuIb2)
+            children: S.intl.string(S.t.JmuIb2)
           }), (0, r.jsxs)("ul", {
             children: [(0, r.jsx)("li", {
               children: (0, r.jsxs)("div", {
-                className: A.reactions,
-                children: [(0, r.jsx)(Z, {
-                  src: q,
-                  alt: T.intl.string(T.t["zS0K+v"])
+                className: T.reactions,
+                children: [(0, r.jsx)(k, {
+                  src: X,
+                  alt: S.intl.string(S.t["zS0K+v"])
                 }), (0, r.jsx)("span", {
                   children: "8"
                 })]
               })
             }), (0, r.jsx)("li", {
               children: (0, r.jsx)("div", {
-                className: A.jumbo,
-                children: (0, r.jsx)(Z, {
-                  src: q,
-                  alt: T.intl.string(T.t["tE41+f"])
+                className: T.jumbo,
+                children: (0, r.jsx)(k, {
+                  src: X,
+                  alt: S.intl.string(S.t["tE41+f"])
                 })
               })
             })]
           })]
         }), (0, r.jsx)("div", {
-          children: (0, r.jsx)(E.y, {
-            label: T.intl.string(T.t.m0YV7O),
-            name: K,
-            onNameChange: X
+          children: (0, r.jsx)(y.y, {
+            label: S.intl.string(S.t.m0YV7O),
+            name: Y,
+            onNameChange: K
           })
-        }), R ? null : (0, r.jsx)("div", {
-          children: (0, r.jsx)(C.q, {
-            label: T.intl.string(T.t["9uKafX"]),
+        }), A ? null : (0, r.jsx)("div", {
+          children: (0, r.jsx)(N.q, {
+            label: S.intl.string(S.t["9uKafX"]),
             required: true,
-            helperText: null == W ? T.intl.string(T.t["1pdw0N"]) : true,
-            onChange: B,
-            selected: W,
-            onError: e => Y(e),
+            helperText: null == F ? S.intl.string(S.t["1pdw0N"]) : true,
+            onChange: W,
+            selected: F,
+            onError: e => J(e),
             labelledBy: "guild-selector-label",
-            isEmojiAnimated: (0, s.v)(null == L || null == (t = L.file) ? true : t.type),
-            errorMessage: null != J ? (0, D.e$)(J) : true
+            isEmojiAnimated: (0, s.v)(null == Z || null == (t = Z.file) ? true : t.type),
+            errorMessage: null != V ? (0, w.e$)(V) : true
           })
         }), (0, r.jsxs)("div", {
-          className: A.foot,
-          children: [null != H && (0, r.jsx)(D.H4, {
+          className: T.foot,
+          children: [null != H && (0, r.jsx)(w.H4, {
             error: H,
             variant: "text-sm/normal",
             color: "text-danger"
-          }), (0, r.jsx)(u.zx, {
-            className: A.submit,
-            onClick: el,
-            fullWidth: true,
-            disabled: null == L || null == W || K.length < 2 || null != J,
-            children: ed
+          }), (0, r.jsx)(u.zxk, {
+            text: ec,
+            onClick: ei,
+            disabled: null == Z || null == F || Y.length < 2 || null != V,
+            fullWidth: true
           })]
         })]
-      }), null != L ? (0, r.jsx)(k, {
-        back: ea
+      }), null != Z ? (0, r.jsx)(R, {
+        back: el
       }) : (0, r.jsx)("div", {
-        className: A.closeButton,
-        children: (0, r.jsx)(c.PZ7, {
-          size: "sm",
-          onClick: () => (0, c.Mr3)(O.Hj)
+        className: T.closeButton,
+        children: (0, r.jsx)(u.PZ7, {
+          size: "md",
+          onClick: () => (0, u.Mr3)(_.Hj)
         })
       })]
     })
   },
-  k = e => {
+  R = e => {
     let {
       back: t
     } = e;
-    return (0, r.jsx)(u.zx, {
-      "aria-label": T.intl.string(T.t["13/7kZ"]),
-      onClick: t,
-      look: u.zx.Looks.BLANK,
-      innerClassName: A.backButtonInnner,
-      className: A.backButton,
-      children: (0, r.jsx)(c.j9r, {
-        color: "currentColor",
+    return (0, r.jsx)("div", {
+      className: T.backButton,
+      children: (0, r.jsx)(u.hU, {
+        variant: "icon-only",
+        icon: u.j9r,
+        onClick: t,
+        "aria-label": S.intl.string(S.t["13/7kZ"]),
         size: "md"
       })
     })
   },
-  Z = e => {
+  k = e => {
     let {
       src: t,
       alt: n
     } = e;
     return null == t || "" === t ? (0, r.jsx)("div", {
-      className: A.previewPlaceholder
+      className: T.previewPlaceholder
     }) : (0, r.jsx)("img", {
       src: t,
       alt: n

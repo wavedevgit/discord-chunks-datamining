@@ -33,8 +33,8 @@ let b = e => ({
       isEmojiAnimated: O,
       label: y,
       required: E,
-      errorMessage: N
-    } = e, w = (0, l.cj)([c.Z, h.ZP], () => Object.fromEntries(h.ZP.getFlattenedGuildIds().map(e => c.Z.getGuild(e)).filter(m.lm).map(e => [e.id, e]))), D = (0, l.cj)([s.ZP], () => Object.fromEntries(Object.entries(w).map(e => {
+      errorMessage: D
+    } = e, w = (0, l.cj)([c.Z, h.ZP], () => Object.fromEntries(h.ZP.getFlattenedGuildIds().map(e => c.Z.getGuild(e)).filter(m.lm).map(e => [e.id, e]))), N = (0, l.cj)([s.ZP], () => Object.fromEntries(Object.entries(w).map(e => {
       let [t, n] = e;
       return [t, function(e) {
         var t;
@@ -87,19 +87,19 @@ let b = e => ({
             color: "text-tertiary",
             className: x.text,
             children: v.intl.format(v.t.WkK72t, {
-              count: D[e.value]
+              count: N[e.value]
             })
           })]
         })]
       })
-    }, [D, w]);
+    }, [N, w]);
     return i.useEffect(() => {
       var e;
-      C.length < 1 ? d(p.ze.NO_PERMISSIONS) : null != n && (null != (e = null == D ? true : D[n]) ? e : 0) < 1 ? d(f.evJ.TOO_MANY_EMOJI) : d(null)
-    }, [C, t, d, n, D]), (0, r.jsx)(a.q4e, {
+      C.length < 1 ? d(p.ze.NO_PERMISSIONS) : null != n && (null != (e = null == N ? true : N[n]) ? e : 0) < 1 ? d(f.evJ.TOO_MANY_EMOJI) : d(null)
+    }, [C, t, d, n, N]), (0, r.jsx)(a.q4e, {
       label: y,
       required: E,
-      errorMessage: N,
+      errorMessage: D,
       onChange: t,
       options: C,
       popoutPosition: "top",
