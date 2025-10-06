@@ -2,37 +2,26 @@
 /** chunk id: 106939, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  M: () => X,
-  Z: () => Q
+  M: () => U,
+  Z: () => G
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk873546 = require("./873546.js"),
-  Chunk286379 = require("./286379.js"),
   Chunk399606 = require("./399606.js"),
-  Chunk704215 = require("./704215.js"),
   Chunk481060 = require("./481060.js"),
   Chunk150063 = require("./150063.js"),
-  Chunk493773 = require("./493773.js"),
-  Chunk758119 = require("./758119.js"),
   Chunk100527 = require("./100527.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk252618 = require("./252618.js"),
   Chunk313201 = require("./313201.js"),
-  Chunk266454 = require("./266454.js"),
   Chunk984370 = require("./984370.jsx"),
-  Chunk797614 = require("./797614.js"),
-  Chunk108427 = require("./108427.js"),
   Chunk210887 = require("./210887.js"),
   Chunk695346 = require("./695346.js"),
-  Chunk594174 = require("./594174.js"),
-  Chunk626135 = require("./626135.js"),
   Chunk260722 = require("./260722.js"),
   Chunk914788 = require("./914788.js"),
-  Chunk841409 = require("./841409.js"),
-  Chunk652262 = require("./652262.js"),
   Chunk880257 = require("./880257.js"),
   Chunk631885 = require("./631885.js"),
   Chunk615160 = require("./615160.jsx"),
@@ -40,28 +29,27 @@ var Chunk951288 = require("./951288.js"),
   Chunk830746 = require("./830746.jsx"),
   Chunk731934 = require("./731934.jsx"),
   Chunk521450 = require("./521450.jsx"),
+  Chunk539086 = require("./539086.js"),
   Chunk292352 = require("./292352.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk723359 = require("./723359.js"),
-  Chunk921944 = require("./921944.js"),
   Chunk412297 = require("./412297.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk799114 = require("./799114.js");
-let Y = {
-    [Chunk292352.dG.REQUESTS]: () => (0, Chunk951288.jsx)(Chunk731934.Z, {}),
-    [Chunk292352.dG.ACTIVITY]: () => (0, Chunk951288.jsx)(Chunk830746.Z, {}),
-    [Chunk292352.dG.SETTINGS]: () => (0, Chunk951288.jsx)(Chunk521450.Z, {}),
-    [Chunk292352.dG.CONTENT_AND_SOCIAL]: () => (0, Chunk951288.jsx)(Chunk615160.Z, {}),
-    [Chunk292352.dG.DATA_AND_PRIVACY]: () => (0, Chunk951288.jsx)(Chunk273879.Z, {})
+let L = {
+    [Chunk292352.dG.REQUESTS]: Chunk731934.Z,
+    [Chunk292352.dG.ACTIVITY]: Chunk830746.Z,
+    [Chunk292352.dG.SETTINGS]: Chunk521450.Z,
+    [Chunk292352.dG.CONTENT_AND_SOCIAL]: Chunk615160.Z,
+    [Chunk292352.dG.DATA_AND_PRIVACY]: Chunk273879.Z
   },
-  W = {
-    [Chunk292352.dG.REQUESTS]: () => (0, Chunk951288.jsx)(Chunk731934.Z, {}),
-    [Chunk292352.dG.ACTIVITY]: () => (0, Chunk951288.jsx)(Chunk830746.Z, {}),
-    [Chunk292352.dG.CONTENT_AND_SOCIAL]: () => (0, Chunk951288.jsx)(Chunk615160.Z, {}),
-    [Chunk292352.dG.DATA_AND_PRIVACY]: () => (0, Chunk951288.jsx)(Chunk273879.Z, {})
+  x = {
+    [Chunk292352.dG.REQUESTS]: Chunk731934.Z,
+    [Chunk292352.dG.ACTIVITY]: Chunk830746.Z,
+    [Chunk292352.dG.CONTENT_AND_SOCIAL]: Chunk615160.Z,
+    [Chunk292352.dG.DATA_AND_PRIVACY]: Chunk273879.Z
   };
 
-function K() {
+function M() {
   return (0, Chunk951288.jsx)(Chunk481060.Kqy, {
     justify: "center",
     align: "center",
@@ -70,74 +58,74 @@ function K() {
   })
 }
 
-function z(e) {
+function j(e) {
   let {
     section: t,
     handleItemSelect: n
-  } = e, i = (0, D.gU)(), a = (0, w.Z)();
-  return t === U.dG.CONTENT_AND_SOCIAL || t === U.dG.DATA_AND_PRIVACY ? null : (0, r.jsxs)(d.njP, {
-    className: H.settingsTabBar,
-    "aria-label": V.intl.string(F.default.RZqaJi),
+  } = e, i = (0, O.gU)(), a = (0, y.Z)();
+  return t === N.dG.CONTENT_AND_SOCIAL || t === N.dG.DATA_AND_PRIVACY ? null : (0, r.jsxs)(c.njP, {
+    className: D.settingsTabBar,
+    "aria-label": w.intl.string(P.default.RZqaJi),
     selectedItem: t,
     type: "top",
     look: "brand",
     onItemSelect: n,
-    children: [(0, r.jsx)(d.njP.Item, {
-      className: H.settingsTabBarItem,
-      id: U.dG.ACTIVITY,
-      children: V.intl.string(F.default.bdBmq6)
-    }), (0, r.jsxs)(d.njP.Item, {
-      className: H.settingsTabBarItem,
-      id: U.dG.REQUESTS,
-      "aria-label": V.intl.string(F.default["gVWG+/"]),
-      children: [V.intl.string(F.default["gVWG+/"]), i > 0 ? (0, r.jsx)(d.mAB, {
-        className: H.badge,
+    children: [(0, r.jsx)(c.njP.Item, {
+      className: D.settingsTabBarItem,
+      id: N.dG.ACTIVITY,
+      children: w.intl.string(P.default.bdBmq6)
+    }), (0, r.jsxs)(c.njP.Item, {
+      className: D.settingsTabBarItem,
+      id: N.dG.REQUESTS,
+      "aria-label": w.intl.string(P.default["gVWG+/"]),
+      children: [w.intl.string(P.default["gVWG+/"]), i > 0 ? (0, r.jsx)(c.mAB, {
+        className: D.badge,
         count: i
       }) : null]
-    }), a ? (0, r.jsx)(d.njP.Item, {
-      className: H.settingsTabBarItem,
-      id: U.dG.SETTINGS,
-      children: V.intl.string(V.t["3D5yo6"])
+    }), a ? (0, r.jsx)(c.njP.Item, {
+      className: D.settingsTabBarItem,
+      id: N.dG.SETTINGS,
+      children: w.intl.string(w.t["3D5yo6"])
     }) : null]
   })
 }
 
-function q(e) {
+function k(e) {
   let {
     theme: t,
     section: n,
     handleItemSelect: i
-  } = e, a = (0, E.Dt)(), l = (0, D.gU)();
-  return (0, r.jsx)(d.f6W, {
+  } = e, a = (0, p.Dt)(), l = (0, O.gU)();
+  return (0, r.jsx)(c.f6W, {
     theme: t,
-    children: e => (0, r.jsxs)(y.Z, {
-      className: o()(e, H.sidebarTabBar),
+    children: e => (0, r.jsxs)(h.Z, {
+      className: o()(e, D.sidebarTabBar),
       scrollable: s.tq,
       role: "navigation",
       "aria-labelledby": a,
       toolbar: true,
-      children: [(0, r.jsx)(y.Z.Icon, {
-        icon: d.BFJ,
+      children: [(0, r.jsx)(h.Z.Icon, {
+        icon: c.BFJ,
         "aria-hidden": true
-      }), (0, r.jsx)(y.Z.Title, {
+      }), (0, r.jsx)(h.Z.Title, {
         id: a,
-        children: V.intl.string(F.default.RZqaJi)
-      }), (0, r.jsx)(y.Z.Divider, {}), (0, r.jsxs)(d.njP, {
-        "aria-label": V.intl.string(F.default.RZqaJi),
+        children: w.intl.string(P.default.RZqaJi)
+      }), (0, r.jsx)(h.Z.Divider, {}), (0, r.jsxs)(c.njP, {
+        "aria-label": w.intl.string(P.default.RZqaJi),
         selectedItem: n,
         type: "top-pill",
         onItemSelect: i,
-        className: H.__invalid_tabBar,
-        children: [(0, r.jsx)(d.njP.Item, {
-          id: U.dG.ACTIVITY,
-          className: H.item,
-          children: V.intl.string(F.default.bdBmq6)
-        }), (0, r.jsxs)(d.njP.Item, {
-          id: U.dG.REQUESTS,
-          className: H.item,
-          "aria-label": V.intl.string(F.default["gVWG+/"]),
-          children: [V.intl.string(F.default["gVWG+/"]), l > 0 ? (0, r.jsx)(d.mAB, {
-            className: H.badge,
+        className: D.__invalid_tabBar,
+        children: [(0, r.jsx)(c.njP.Item, {
+          id: N.dG.ACTIVITY,
+          className: D.item,
+          children: w.intl.string(P.default.bdBmq6)
+        }), (0, r.jsxs)(c.njP.Item, {
+          id: N.dG.REQUESTS,
+          className: D.item,
+          "aria-label": w.intl.string(P.default["gVWG+/"]),
+          children: [w.intl.string(P.default["gVWG+/"]), l > 0 ? (0, r.jsx)(c.mAB, {
+            className: D.badge,
             count: l
           }) : null]
         })]
@@ -146,142 +134,67 @@ function q(e) {
   })
 }
 
-function X() {
-  let e = (0, Chunk880257.Z)(),
-    t = (0, Chunk631885.M8)(),
-    n = (0, Chunk266454.Nj)(Chunk704215.z.FAMILY_CENTER_NEW_BADGE),
+function U() {
+  let e = (0, Chunk313201.Dt)(),
     {
-      familyCenterInitialized: a,
-      isLoading: o
-    } = (0, Chunk399606.cj)([Chunk914788.Z], () => ({
-      familyCenterInitialized: Chunk914788.Z.getIsInitialized(),
-      isLoading: Chunk914788.Z.isLoading()
-    })),
-    s = (0, Chunk652262.M)(),
-    {
-      selectedTab: f,
-      handleTabChange: h
-    } = (0, Chunk841409.Z)(),
-    m = (0, Chunk313201.Dt)(),
-    y = Chunk594174.default.getCurrentUser(),
-    I = null != module,
-    T = Chunk120356 && null != Chunk984370 && !Chunk210887;
-  (0, Chunk493773.ZP)(() => {
-    (0, Chunk108427.e)("family-center"), Chunk260722.ZP.initialPageLoad(), require || (0, Chunk266454.Q3)(Chunk704215.z.FAMILY_CENTER_NEW_BADGE, {
-      dismissAction: Chunk921944.L.AUTO,
-      forceTrack: true
-    })
-  });
-  let L = {
-      isConsideredAdult: module,
-      numOfAcceptedRequests: exports,
-      selectedTab: Chunk150063,
-      selectedTeenId: Chunk873546
-    },
-    x = Chunk647438.useRef(Chunk615160);
-  Chunk647438.useEffect(() => {
-    Chunk273879.current = Chunk615160
-  }), Chunk647438.useEffect(() => {
-    if (Chunk120356 && Chunk210887) {
-      let {
-        isConsideredAdult: e,
-        numOfAcceptedRequests: t,
-        selectedTab: n,
-        selectedTeenId: r
-      } = Chunk273879.current;
-      Chunk626135.default.track(Chunk981631.rMx.FAMILY_CENTER_VIEWED, {
-        is_considered_adult: module,
-        num_of_accepted_links: exports,
-        selected_teen_id: Chunk951288,
-        initial_page: Chunk292352.QH[require],
-        source: Chunk292352._6[Chunk292352.Mu.SIDENAV]
-      }), Chunk797614.Z.increment({
-        name: Chunk286379.V.FAMILY_CENTER_VIEW
-      })
-    }
-  }, [Chunk120356, Chunk210887]), Chunk647438.useEffect(() => {
-    Chunk695346 && (0, Chunk758119.mN)(Chunk723359.L0.FAMILY_CENTER)
-  }, [Chunk695346]);
-  let M = e => {
-    h(e)
-  };
-  return Chunk695346 ? null : (0, Chunk951288.jsxs)("main", {
+      isLoading: t,
+      selectedTab: n,
+      handleTabChange: i,
+      showAgeGateModal: a
+    } = (0, Chunk539086.M)({
+      location: Chunk292352.Mu.SETTINGS,
+      onMountEffect: () => {
+        Chunk260722.ZP.initialPageLoad()
+      }
+    }),
+    o = e => {
+      i(e)
+    };
+  if (Chunk120356) return null;
+  let s = L[require];
+  return (0, Chunk951288.jsxs)("main", {
     className: Chunk799114.container,
     "aria-label": Chunk388032.intl.string(Chunk412297.default.RZqaJi),
     children: [(0, Chunk951288.jsx)(Chunk252618.yY, {
       location: Chunk388032.intl.string(Chunk412297.default.RZqaJi)
-    }), (0, Chunk951288.jsx)(z, {
-      section: Chunk150063,
-      handleItemSelect: Chunk830746
+    }), (0, Chunk951288.jsx)(j, {
+      section: require,
+      handleItemSelect: o
     }), (0, Chunk951288.jsx)(Chunk481060.njP.Panel, {
-      id: Chunk150063,
-      "aria-labelledby": Chunk906732,
+      id: require,
+      "aria-labelledby": module,
       className: Chunk799114.contentPanel,
       children: (0, Chunk951288.jsx)("div", {
-        children: o ? (0, Chunk951288.jsx)(K, {}) : Y[Chunk150063]()
+        children: exports ? (0, Chunk951288.jsx)(M, {}) : (0, Chunk951288.jsx)(Chunk873546, {})
       })
     })]
   })
 }
 
-function Q() {
+function G() {
   let {
     analyticsLocations: e
-  } = (0, Chunk906732.ZP)(Chunk100527.Z.FAMILY_CENTER), t = (0, Chunk880257.Z)(), n = (0, Chunk631885.M8)(), a = (0, Chunk266454.Nj)(Chunk704215.z.FAMILY_CENTER_NEW_BADGE), {
-    familyCenterInitialized: s,
-    isLoading: y
-  } = (0, Chunk399606.cj)([Chunk914788.Z], () => ({
-    familyCenterInitialized: Chunk914788.Z.getIsInitialized(),
-    isLoading: Chunk914788.Z.isLoading()
-  })), L = (0, Chunk652262.M)(), x = (0, Chunk399606.e7)([Chunk210887.Z], () => Chunk210887.Z.theme), {
-    selectedTab: M,
-    handleTabChange: j
-  } = (0, Chunk841409.Z)(), k = (0, Chunk313201.Dt)(), Y = Chunk594174.default.getCurrentUser(), z = null != exports, X = Chunk873546 && null != Y && !z;
-  (0, Chunk493773.ZP)(() => {
-    Chunk150063.Y(Chunk981631.Z5c.FAMILY_CENTER), (0, Chunk108427.e)("family-center"), !Chunk984370 && Chunk914788.Z.canRefetch() && Chunk260722.ZP.initialPageLoad(), Chunk120356 || (0, Chunk266454.Q3)(Chunk704215.z.FAMILY_CENTER_NEW_BADGE, {
-      dismissAction: Chunk921944.L.AUTO,
-      forceTrack: true
-    })
-  });
-  let Q = {
-      isConsideredAdult: exports,
-      numOfAcceptedRequests: require,
-      selectedTab: Chunk830746,
-      selectedTeenId: Chunk615160
-    },
-    J = Chunk647438.useRef(Q);
-  Chunk647438.useEffect(() => {
-    J.current = Q
-  }), Chunk647438.useEffect(() => {
-    if (Chunk873546 && z) {
-      let {
-        isConsideredAdult: e,
-        numOfAcceptedRequests: t,
-        selectedTab: n,
-        selectedTeenId: r
-      } = J.current;
-      Chunk626135.default.track(Chunk981631.rMx.FAMILY_CENTER_VIEWED, {
-        is_considered_adult: module,
-        num_of_accepted_links: exports,
-        selected_teen_id: Chunk951288,
-        initial_page: Chunk292352.QH[require],
-        source: Chunk292352._6[Chunk292352.Mu.SIDENAV]
-      }), Chunk797614.Z.increment({
-        name: Chunk286379.V.FAMILY_CENTER_VIEW
-      })
+  } = (0, Chunk906732.ZP)(Chunk100527.Z.FAMILY_CENTER), t = (0, Chunk880257.Z)(), n = (0, Chunk399606.e7)([Chunk914788.Z], () => Chunk914788.Z.getIsInitialized()), a = (0, Chunk399606.e7)([Chunk210887.Z], () => Chunk210887.Z.theme), s = (0, Chunk313201.Dt)(), {
+    isLoading: h,
+    selectedTab: O,
+    handleTabChange: v,
+    showAgeGateModal: I
+  } = (0, Chunk539086.M)({
+    location: Chunk292352.Mu.SIDENAV,
+    onMountEffect: () => {
+      Chunk150063.Y(Chunk981631.Z5c.FAMILY_CENTER), !Chunk914788.Z.isLoading() && Chunk914788.Z.canRefetch() && Chunk260722.ZP.initialPageLoad()
     }
-  }, [Chunk873546, z]), Chunk647438.useEffect(() => {
+  });
+  Chunk647438.useEffect(() => {
     let e = Chunk695346.Ex.getSetting();
-    Chunk873546 && exports && true === module && Chunk695346.Ex.updateSetting(true)
-  }, [Chunk873546, exports]), Chunk647438.useEffect(() => {
-    X && (0, Chunk758119.mN)(Chunk723359.L0.FAMILY_CENTER)
-  }, [X]);
-  let $ = e => {
-    j(e)
+    require && exports && true === module && Chunk695346.Ex.updateSetting(true)
+  }, [require, exports]);
+  let T = e => {
+    v(e)
   };
-  if (X) return null;
-  let ee = Chunk830746 !== Chunk292352.dG.SETTINGS ? Chunk830746 : Chunk292352.dG.ACTIVITY,
-    et = W[ee];
+  if (Chunk273879) return null;
+  let S = Chunk631885 !== Chunk292352.dG.SETTINGS ? Chunk631885 : Chunk292352.dG.ACTIVITY,
+    A = x[Chunk731934];
   return (0, Chunk951288.jsx)(Chunk906732.Gt, {
     value: module,
     children: (0, Chunk951288.jsxs)("main", {
@@ -289,18 +202,18 @@ function Q() {
       "aria-label": Chunk388032.intl.string(Chunk412297.default.RZqaJi),
       children: [(0, Chunk951288.jsx)(Chunk252618.yY, {
         location: Chunk388032.intl.string(Chunk412297.default.RZqaJi)
-      }), (0, Chunk951288.jsx)(q, {
-        theme: Chunk273879,
-        section: ee,
-        handleItemSelect: $
+      }), (0, Chunk951288.jsx)(k, {
+        theme: Chunk120356,
+        section: Chunk731934,
+        handleItemSelect: Chunk830746
       }), (0, Chunk951288.jsx)(Chunk481060.njP.Panel, {
-        id: ee,
-        "aria-labelledby": Chunk521450,
+        id: Chunk731934,
+        "aria-labelledby": Chunk873546,
         className: Chunk799114.contentPanel,
         children: (0, Chunk951288.jsx)(Chunk481060.Ttm, {
           children: (0, Chunk951288.jsx)("div", {
             className: Chunk799114.sideNavContent,
-            children: Chunk984370 ? (0, Chunk951288.jsx)(K, {}) : et()
+            children: Chunk984370 ? (0, Chunk951288.jsx)(M, {}) : (0, Chunk951288.jsx)(Chunk521450, {})
           })
         })
       })]
