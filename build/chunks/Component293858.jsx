@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  o = require.n(Chunk512722),
+  l = require.n(Chunk512722),
   Chunk704215 = require("./704215.js"),
   Chunk605236 = require("./605236.js"),
   Chunk347896 = require("./347896.js"),
@@ -28,15 +28,15 @@ function y(e) {
       handleClose: n,
       planGroup: a,
       onSubscriptionConfirmation: y,
-      renderPurchaseConfirmation: L,
-      postSuccessGuild: v,
+      renderPurchaseConfirmation: v,
+      postSuccessGuild: L,
       followupSKUInfo: S,
       continueSessionToInitialStep: O
     } = e,
     {
       activeSubscription: P,
-      paymentSources: w,
-      paymentSourceId: E,
+      paymentSources: E,
+      paymentSourceId: w,
       selectedPlan: I,
       selectedSkuId: k,
       step: T,
@@ -58,12 +58,12 @@ function y(e) {
       confirmationFooter: z
     } = (0, h.zb)(),
     K = (0, C.id)(I, N, H),
-    Y = (0, d.Z)(),
-    W = (0, C.a5)(I),
+    W = (0, d.Z)(),
+    Y = (0, C.a5)(I),
     V = (0, C.tK)(null == D ? true : D.skuId),
-    q = (0, g.$)(w, E),
-    J = N && null != D && W;
-  o()(null != I, "Expected plan to selected"), o()(null != k, "Expected selectedSkuId"), o()(null != T, "Step should be set");
+    q = (0, j.$)(E, w),
+    J = N && null != D && Y;
+  l()(null != I, "Expected plan to selected"), l()(null != k, "Expected selectedSkuId"), l()(null != T, "Step should be set");
   let X = i.useCallback(() => {
     n(), null == y || y()
   }, [n, y]);
@@ -72,19 +72,19 @@ function y(e) {
       onSubscriptionConfirmation: y
     })
   }, [G, N, R, B, F, U, y]), i.useEffect(() => {
-    null != Y && null != Y.reminderNotice && K && (0, s.wH)(l.z.GIFTING_PROMOTION_REMINDER, Y.dismissibleContentVersion, {
+    null != W && null != W.reminderNotice && K && (0, s.wH)(o.z.GIFTING_PROMOTION_REMINDER, W.dismissibleContentVersion, {
       dismissAction: b.L.INDIRECT_ACTION
     })
-  }, [Y, K]);
+  }, [W, K]);
   let Q = null != O ? c.PI.DEEPLINK_TO_DESKTOP_APP : true;
-  if (null != L) t = L(I, X, A);
+  if (null != v) t = v(I, X, A);
   else if (N) t = (0, r.jsx)(c.TB, {
     planId: I.id,
     onClose: X
   });
   else {
     let e = M.current === I.id ? {
-      postSuccessGuild: v
+      postSuccessGuild: L
     } : {
       followupSKUInfo: S,
       startingPremiumSubscriptionPlanId: M.current,
@@ -118,7 +118,7 @@ function y(e) {
   }
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(m.C3, {
-      children: [(0, r.jsx)(j.Z, {}), t]
+      children: [(0, r.jsx)(g.Z, {}), t]
     }), null != z && z, J && null != V && (0, r.jsx)(x.Z, {
       onClose: X,
       selectedPromotionalDecoPurchaseRecord: V,

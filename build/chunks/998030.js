@@ -1,12 +1,12 @@
 /** Chunk was on 84071 **/
 /** chunk id: 998030, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  y: () => l
+  y: () => o
 });
 var Chunk427164 = require("./427164.js"),
   Chunk46841 = require("./46841.js"),
   Chunk47280 = require("./47280.js");
-let o = (0, Chunk427164.le)({
+let l = (0, Chunk427164.le)({
   name: "2025-09-wishlist-in-dm-gifting-flow",
   kind: "user",
   defaultConfig: {
@@ -22,15 +22,15 @@ let o = (0, Chunk427164.le)({
   }
 });
 
-function l(e) {
+function o(e) {
   let {
     location: t
-  } = e, n = o.useConfig({
+  } = e, n = l.useConfig({
     location: t
   }).enabled, r = (0, a.ZP)({
     location: t
-  }), l = (0, i.S)({
+  }), o = (0, i.S)({
     location: t
   });
-  return n && r && l
+  return n && r && o
 }

@@ -1,5 +1,5 @@
 /** Chunk was on 17938 **/
-/** chunk id: 789155, original params: e,s,t (module,exports,require) **/
+/** chunk id: 789155, original params: e,t,s (module,exports,require) **/
 require.d(exports, {
   Z: () => d
 });
@@ -15,11 +15,11 @@ var Chunk780384 = require("./780384.js"),
   Chunk299156 = require("./299156.js");
 let d = function(e) {
   let {
-    churnUserDiscountOffer: s,
-    onDiscountClaim: t,
+    churnUserDiscountOffer: t,
+    onDiscountClaim: s,
     onContinue: d
   } = e, p = (0, o.ZP)(), f = (0, n.wj)(p) ? u : m;
-  return null == s ? null : (0, r.jsxs)("div", {
+  return null == t ? null : (0, r.jsxs)("div", {
     className: c.churnFooterContainer,
     children: [(0, r.jsx)("div", {
       className: c.churnFooterGlow
@@ -39,8 +39,8 @@ let d = function(e) {
             variant: "text-md/medium",
             className: c.churnFooterCopy,
             children: l.intl.format(l.t["2gem09"], {
-              percent: s.discount.amount,
-              numMonths: s.discount.user_usage_limit
+              percent: t.discount.amount,
+              numMonths: t.discount.user_usage_limit
             })
           }), (0, r.jsxs)("div", {
             className: c.churnFooterCTAs,
@@ -50,7 +50,7 @@ let d = function(e) {
               innerClassName: c.churnFooterClaimCTAInner,
               look: a.iL.OUTLINED,
               color: a.Tt.CUSTOM,
-              onClick: () => null == t ? true : t(),
+              onClick: () => null == s ? true : s(),
               children: [(0, r.jsx)(i.SrA, {
                 size: "xs",
                 color: "currentColor",

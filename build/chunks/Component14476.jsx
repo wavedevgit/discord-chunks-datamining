@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk979554 = require("./979554.js"),
   Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
@@ -24,35 +24,35 @@ let m = e => {
     user: a,
     claimed: m,
     onSelect: x,
-    productName: g,
-    a11yLabel: j,
+    productName: j,
+    a11yLabel: g,
     selectedSkuId: b,
     category: y
-  } = e, L = i.useRef(null), v = (0, C.Z)(L), S = (0, _.m)(L), O = !m && (v || S), P = (0, c.ZP)(), w = (0, s.wj)(P), E = {
-    type: l.Z.AVATAR_DECORATION,
-    label: j,
+  } = e, v = i.useRef(null), L = (0, C.Z)(v), S = (0, _.m)(v), O = !m && (L || S), P = (0, c.ZP)(), E = (0, s.wj)(P), w = {
+    type: o.Z.AVATAR_DECORATION,
+    label: g,
     asset: n
   };
   return (0, r.jsx)(d.tEY, {
     children: (0, r.jsxs)(d.kL8, {
-      ref: L,
-      "aria-label": null != g ? g : "",
+      ref: v,
+      "aria-label": null != j ? j : "",
       onClick: () => {
         null == t || null == x || m || x(t)
       },
-      className: o()(w ? h.shopCardDark : h.shopCard, {
+      className: l()(E ? h.shopCardDark : h.shopCard, {
         [h.shopCardAnimation]: !m,
-        [w ? h.shopCardDarkHighlighted : h.shopCardHighlighted]: O,
+        [E ? h.shopCardDarkHighlighted : h.shopCardHighlighted]: O,
         [h.shopCardSelected]: b === t
       }),
       children: [(0, r.jsx)("div", {
-        className: o()(h.preview, {
+        className: l()(h.preview, {
           [h.previewTrick]: y === u.KN.Trick,
           [h.previewTreat]: y === u.KN.Treat,
           [h.shopCardClaimed]: m
         }),
         children: (0, r.jsx)(p.R, {
-          item: E,
+          item: w,
           user: a,
           isHighlighted: O,
           avatarSize: d.EFr.SIZE_120,
@@ -68,7 +68,7 @@ let m = e => {
         className: h.productName,
         children: [(0, r.jsx)(d.X6q, {
           variant: "text-md/bold",
-          children: g
+          children: j
         }), (0, r.jsx)(d.Text, {
           variant: "text-md/normal",
           children: m ? f.intl.string(f.t["6cfuDg"]) : f.intl.string(f.t.QQsaCQ)

@@ -9,7 +9,7 @@ var Chunk973007 = require("./973007.jsx"),
   Chunk474936 = require("./474936.js"),
   Chunk391763 = require("./391763.js");
 
-function l() {
+function o() {
   return (0, Chunk951288.jsx)("div", {
     className: Chunk391763.wishlistBanner
   })
@@ -22,9 +22,9 @@ let s = function(e) {
     showPromotionalGiftBanner: d
   } = e;
   return (0, r.jsxs)("div", {
-    className: o.giftOptionContainer,
+    className: l.giftOptionContainer,
     children: [(0, r.jsxs)("div", {
-      className: o.cardsRow,
+      className: l.cardsRow,
       children: [(0, r.jsx)(i.jB, {
         onClick: () => t(a.Si.TIER_2),
         isGift: n,
@@ -37,6 +37,6 @@ let s = function(e) {
         priceOptions: s,
         enablePremiumBrandRefresh: true
       })]
-    }), (0, r.jsx)(l, {})]
+    }), (0, r.jsx)(o, {})]
   })
 }
