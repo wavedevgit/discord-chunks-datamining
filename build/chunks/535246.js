@@ -2,11 +2,9 @@
 /** chunk id: 535246, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  v: () => o
+  v: () => i
 });
-var Chunk427164 = require("./427164.js"),
-  Chunk380249 = require("./380249.js");
-let a = (0, Chunk427164.le)({
+let r = (0, require("./427164.js").le)({
   name: "2025-08-remote-join-game-invite",
   kind: "user",
   defaultConfig: {
@@ -22,12 +20,8 @@ let a = (0, Chunk427164.le)({
   }
 });
 
-function o() {
-  let e = a.getConfig({
-      location: "useIsRemoteJoinGameInviteEnabled"
-    }).enableRemoteJoin,
-    t = Chunk380249.m.getCurrentConfig({
-      location: "useIsRemoteJoinGameInviteEnabled"
-    }).enabled;
-  return module && exports
+function i() {
+  return r.getConfig({
+    location: "useIsRemoteJoinGameInviteEnabled"
+  }).enableRemoteJoin
 }
