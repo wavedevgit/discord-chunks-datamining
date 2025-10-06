@@ -49,54 +49,56 @@ function f(e) {
     root: m,
     directory: b,
     target: j,
-    onClose: x,
-    sidebarHeader: p,
+    onClose: p,
+    sidebarHeader: x,
     sidebarFooter: v,
-    onPanelChange: y
-  } = e, [h, g] = l.useState(true), [O, C] = l.useState(null == (t = b.entry(j)) ? true : t.targetPanel), [_, P] = l.useState(() => b.typedGet(O)), S = l.useCallback(() => E(true), []), [N, E] = l.useState({
+    onPanelChange: y,
+    emptyState: h
+  } = e, [g, O] = l.useState(true), [C, _] = l.useState(null == (t = b.entry(j)) ? true : t.targetPanel), [P, S] = l.useState(() => b.typedGet(C)), N = l.useCallback(() => k(true), []), [E, k] = l.useState({
     target: j,
     targetAccordion: null == (n = b.entry(j)) ? true : n.parentAccordion,
     animateScroll: false,
-    complete: S
+    complete: N
   }), {
-    navigateWithValidation: k
-  } = (0, a.Cu)(), T = l.useMemo(() => ({
-    currentPanel: b.typedGet(O),
+    navigateWithValidation: T
+  } = (0, a.Cu)(), w = l.useMemo(() => ({
+    currentPanel: b.typedGet(C),
     navigateTo: e => {
       let t = b.entry(e);
       if ((null == t ? true : t.targetPanel) == null) return;
       let n = {
         target: e,
         targetAccordion: t.parentAccordion,
-        complete: S
+        complete: N
       };
-      if (t.targetPanel.key !== (null == O ? true : O.key)) {
+      if (t.targetPanel.key !== (null == C ? true : C.key)) {
         let e = t.targetPanel;
-        k(() => {
-          E(d(u({}, n), {
+        T(() => {
+          k(d(u({}, n), {
             animateScroll: false
-          })), P(e), C(e), null == y || y(e.key)
+          })), S(e), _(e), null == y || y(e.key)
         })
-      } else E(d(u({}, n), {
+      } else k(d(u({}, n), {
         animateScroll: true
       }))
     },
-    navTransition: N,
-    showNavigationMobile: h,
-    setShowNavigationMobile: g
-  }), [b, O, N, h, S, k, y]), w = () => k(x);
+    navTransition: E,
+    showNavigationMobile: g,
+    setShowNavigationMobile: O
+  }), [b, C, E, g, N, T, y]), I = () => T(p);
   return (0, r.jsx)(s.j.Provider, {
-    value: T,
+    value: w,
     children: (0, r.jsxs)("div", {
       className: c.container,
       children: [(0, r.jsx)(i.P, {
         root: m,
-        header: p,
+        header: x,
         footer: v,
-        onClose: w
+        onClose: I,
+        emptyState: h
       }), (0, r.jsx)(o.Z, {
-        onClose: w,
-        setting: null != (f = T.currentPanel) ? f : _
+        onClose: I,
+        setting: null != (f = w.currentPanel) ? f : P
       })]
     })
   })

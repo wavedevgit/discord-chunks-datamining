@@ -22,12 +22,12 @@ function c(e) {
       ContextProvider: b,
       useCollapsibleTitle: j
     } = c,
-    x = f.filter(e => {
+    p = f.filter(e => {
       var t, n;
       return null == (n = null == (t = e.usePredicate) ? true : t.call(e)) || n
     }),
-    p = null != m ? x.slice(0, m) : x,
-    v = null != m ? x.slice(m) : [],
+    x = null != m ? p.slice(0, m) : p,
+    v = null != m ? p.slice(m) : [],
     y = null != b ? b : l.Fragment,
     h = null != (t = null == j ? true : j(u, v.length)) ? t : (n = v.length, u ? s.intl.formatToPlainString(s.t["3SHL+f"], {
       count: n
@@ -35,10 +35,10 @@ function c(e) {
       count: n
     }));
   return (0, r.jsxs)(y, {
-    children: [p.map((e, t) => (0, r.jsxs)(l.Fragment, {
+    children: [x.map((e, t) => (0, r.jsxs)(l.Fragment, {
       children: [(0, r.jsx)(i.Z, {
         node: e
-      }), (t !== p.length - 1 || v.length > 0) && (0, r.jsx)(o.izJ, {})]
+      }), (t !== x.length - 1 || v.length > 0) && (0, r.jsx)(o.izJ, {})]
     }, e.key)), v.length > 0 && (0, r.jsx)(a.I, {
       title: h,
       isOpen: u,
