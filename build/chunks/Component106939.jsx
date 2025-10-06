@@ -115,7 +115,6 @@ function k(e) {
         selectedItem: n,
         type: "top-pill",
         onItemSelect: i,
-        className: D.__invalid_tabBar,
         children: [(0, r.jsx)(c.njP.Item, {
           id: N.dG.ACTIVITY,
           className: D.item,

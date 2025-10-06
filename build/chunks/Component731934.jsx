@@ -290,7 +290,7 @@ let k = () => {
         helpLink: Chunk134612.$l
       })).otherwise(() => null);
     return null == require ? null : (0, Chunk951288.jsxs)("div", {
-      className: o()(Chunk790680.__invalid_helpLineInfo, Chunk197571.marginTop20),
+      className: Chunk197571.marginTop20,
       children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
         className: Chunk790680.supportHeader,
         variant: "heading-sm/semibold",

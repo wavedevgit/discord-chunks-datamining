@@ -22,5 +22,6 @@ module.exports = {
   sectionDescription: "sectionDescription__38524",
   sectionHeader: "sectionHeader__38524",
   accountRow: "accountRow__38524",
-  select: "select__38524"
+  select: "select__38524",
+  disabled: "disabled__38524"
 }

@@ -105,18 +105,15 @@ function v(e) {
       className: g.actions,
       children: a ? (0, r.jsx)(f.Z, {
         icon: l.Dio,
-        className: g.__invalid_actionDeny,
         tooltip: m.intl.string(h.default.e5iHmZ),
         onClick: T
       }) : (0, r.jsxs)(r.Fragment, {
         children: [E ? null : (0, r.jsx)(f.Z, {
           icon: l.dz2,
-          className: g.__invalid_actionAccept,
           tooltip: m.intl.string(h.default.krWQZG),
           onClick: v
         }), (0, r.jsx)(f.Z, {
           icon: l.Dio,
-          className: g.__invalid_actionDeny,
           tooltip: m.intl.string(h.default.bBDeND),
           onClick: I
         })]

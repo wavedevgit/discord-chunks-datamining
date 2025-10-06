@@ -2,13 +2,15 @@
 /** chunk id: 87792, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  I: () => F,
-  Z: () => Y
+  I: () => H,
+  Z: () => K
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk120356 = require("./120356.js"),
+  o = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
-  o = require.n(Chunk512722),
+  l = require.n(Chunk512722),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
   Chunk626135 = require("./626135.js"),
@@ -39,7 +41,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk37742 = require("./37742.js"),
   Chunk519279 = require("./519279.js");
 
-function j(e, t, n) {
+function U(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -48,27 +50,27 @@ function j(e, t, n) {
   }) : e[t] = n, e
 }
 
-function k(e) {
+function G(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      j(e, t, n[t])
+      U(e, t, n[t])
     })
   }
   return e
 }
-let U = 65;
+let B = 65;
 
-function G() {
+function Z() {
   let e = Chunk647438.useCallback(() => {
     (0, Chunk481060.ZDy)(async () => {
       let {
         default: e
       } = await require.e("66462").then(require.bind(require, 756226));
-      return t => (0, r.jsx)(e, k({}, t))
+      return t => (0, r.jsx)(e, G({}, t))
     })
   }, []);
   return (0, Chunk951288.jsx)(Chunk481060.P3F, {
@@ -84,41 +86,41 @@ function G() {
   })
 }
 
-function B(e) {
+function F(e) {
   let {
     displayType: t
-  } = e, n = (0, _.PO)("family_center_activity_card"), a = i.useCallback(() => {
-    (0, l.showToast)((0, l.createToast)(L.intl.string(D.default.Wu8BKy), l.ToastType.FAILURE))
-  }, []), s = (0, y.Z)(), c = (0, g.ws)(t), h = (0, g.C7)(t), E = (0, g.A)(t), {
-    loadMore: b,
+  } = e, n = (0, h.PO)("family_center_activity_card"), a = i.useCallback(() => {
+    (0, u.showToast)((0, u.createToast)(M.intl.string(x.default.Wu8BKy), u.ToastType.FAILURE))
+  }, []), s = (0, v.Z)(), c = (0, b.ws)(t), d = (0, b.C7)(t), g = (0, b.A)(t), {
+    loadMore: y,
     isMoreLoading: O
-  } = (0, m.G)({
+  } = (0, E.G)({
     onError: a
-  }), v = (0, f.E2)(n).get(t), [A, C] = i.useState(P.iB), N = (0, p.Xi)({
+  }), I = (0, p.E2)(n).get(t), [T, N] = i.useState(D.iB), R = (0, m.Xi)({
     location: "family_center_activity_section_web"
-  }), R = i.useCallback(() => {
-    C(e => e + P.iB), b(t)
-  }, [t, b]);
-  o()(v, "No text for action type: ".concat(t));
-  let w = t === P.MY.PURCHASES && null != E ? v.sectionHeader(E) : v.sectionHeader(h),
-    M = i.useCallback(e => {
+  }), P = i.useCallback(() => {
+    N(e => e + D.iB), y(t)
+  }, [t, y]);
+  l()(I, "No text for action type: ".concat(t));
+  let w = t === D.MY.PURCHASES && null != g ? I.sectionHeader(g) : I.sectionHeader(d),
+    L = i.useCallback(e => {
       let {
         row: t
       } = e, n = c[t];
-      if ((0, f.iB)(n)) {
-        let e = u.default.extractTimestamp(n.event_id),
-          t = (0, f.LI)(e, v.timestampFormatter);
-        return (0, r.jsx)(S.Z, {
+      if ((0, p.iB)(n)) {
+        let e = f.default.extractTimestamp(n.event_id),
+          t = (0, p.LI)(e, I.timestampFormatter);
+        return (0, r.jsx)(C.Z, {
           userId: n.entity_id,
           subText: t
         }, n.event_id)
       }
-      if ((0, f.f0)(n)) return (0, r.jsx)(I.Z, {
+      if ((0, p.f0)(n)) return (0, r.jsx)(S.Z, {
         guildId: n.entity_id
       }, n.event_id);
-      if ((0, f.m4)(n)) {
-        let e = d.Z.getPurchaseInfo(n.entity_id);
-        return null == e ? null : (0, r.jsx)(T.Z, {
+      if ((0, p.m4)(n)) {
+        let e = _.Z.getPurchaseInfo(n.entity_id);
+        return null == e ? null : (0, r.jsx)(A.Z, {
           skuId: e.sku_id,
           subscriptionPlanId: e.subscription_plan_id,
           total: e.total,
@@ -126,50 +128,53 @@ function B(e) {
         }, n.event_id)
       }
       return null
-    }, [c, v.timestampFormatter]),
-    j = i.useCallback(() => (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(l.Text, {
-        className: x.sectionHeader,
+    }, [c, I.timestampFormatter]),
+    k = i.useCallback(() => (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(u.Text, {
+        className: j.sectionHeader,
         variant: "eyebrow",
         color: "header-secondary",
         children: w
-      }), true !== v.sectionDescription ? (0, r.jsx)(l.Text, {
-        className: x.sectionDescription,
+      }), true !== I.sectionDescription ? (0, r.jsx)(u.Text, {
+        className: j.sectionDescription,
         variant: "text-md/medium",
         color: "text-muted",
-        children: v.sectionDescription(null != s && s, N)
+        children: I.sectionDescription(null != s && s, R)
       }) : null]
-    }), [w, v, s, N]);
+    }), [w, I, s, R]);
   if (0 === c.length) return null;
-  let k = c.slice(0, A);
+  let U = c.slice(0, T);
   return (0, r.jsxs)("div", {
-    className: x.actionSection,
-    children: [j(), (0, r.jsx)("div", {
-      className: x.actions,
+    className: j.actionSection,
+    children: [k(), (0, r.jsx)("div", {
+      className: j.actions,
       style: {
-        maxHeight: k.length * U
+        maxHeight: U.length * B
       },
-      children: k.map((e, t) => M({
+      children: U.map((e, t) => L({
         row: t
       }))
-    }), k.length !== h ? (0, r.jsx)(l.P3F, {
-      className: x.loadMoreBar,
-      onClick: R,
+    }), U.length < d ? (0, r.jsx)(u.P3F, {
+      className: o()(j.loadMoreBar, {
+        [j.disabled]: O
+      }),
+      onClick: P,
       role: "button",
-      children: O ? (0, r.jsx)(l.$jN, {
-        type: l.$jN.Type.PULSING_ELLIPSIS,
-        className: x.spinner
-      }) : (0, r.jsx)(l.Text, {
-        className: x.loadMore,
+      "aria-disabled": O,
+      children: O ? (0, r.jsx)(u.$jN, {
+        type: u.$jN.Type.PULSING_ELLIPSIS,
+        className: j.spinner
+      }) : (0, r.jsx)(u.Text, {
+        className: j.loadMore,
         variant: "text-sm/bold",
-        children: L.intl.format(D.default["7dMmJS"], {
-          pageSize: Math.min(h - k.length, P.iB)
+        children: M.intl.format(x.default["7dMmJS"], {
+          pageSize: Math.max(1, Math.min(d - U.length, D.iB))
         })
       })
     }) : null]
   })
 }
-let Z = () => {
+let V = () => {
     let e = (0, Chunk880257.Z)(),
       t = (0, Chunk631885.ZM)(),
       n = (0, Chunk785681.o)(Chunk388032.intl.formatToPlainString(Chunk345909.default["7hqFl5"], {
@@ -179,7 +184,7 @@ let Z = () => {
       a = (0, Chunk631885.Rd)(Chunk647438);
     return module && exports.length > 1 ? (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "eyebrow",
-      children: Chunk512722
+      children: Chunk120356
     }) : (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [module ? null : (0, Chunk951288.jsx)(Chunk481060.tEF, {
         size: "xs",
@@ -191,24 +196,24 @@ let Z = () => {
       })]
     })
   },
-  F = e => {
+  H = e => {
     let {
       userId: t,
       subText: n,
-      avatarSize: i = l.EFr.SIZE_40,
+      avatarSize: i = u.EFr.SIZE_40,
       hideUserTag: a = false
-    } = e, o = (0, b.In)(t);
+    } = e, o = (0, O.In)(t);
     return true === o ? null : (0, r.jsxs)("div", {
-      className: x.accountRow,
-      children: [(0, r.jsx)(A.r, {
+      className: j.accountRow,
+      children: [(0, r.jsx)(N.r, {
         user: o,
         avatarSize: i
       }), (0, r.jsxs)("div", {
-        className: x.headerText,
-        children: [(0, r.jsx)(C.Z, {
+        className: j.headerText,
+        children: [(0, r.jsx)(R.Z, {
           user: o,
           hideUserTag: a
-        }), true !== n ? (0, r.jsx)(l.Text, {
+        }), true !== n ? (0, r.jsx)(u.Text, {
           variant: "text-sm/medium",
           color: "text-muted",
           children: n
@@ -216,50 +221,50 @@ let Z = () => {
       })]
     })
   },
-  V = () => {
+  Y = () => {
     let e = (0, Chunk631885.zu)(),
       t = (0, Chunk399606.e7)([Chunk914788.Z], () => Chunk914788.Z.getSelectedTeenId()),
       {
         selectTeenUser: n
       } = (0, Chunk985002.G)({}),
       a = e => {
-        n(e), c.default.track(w.rMx.FAMILY_CENTER_ACTION, {
-          action: P.YC.SelectTeen
+        n(e), d.default.track(L.rMx.FAMILY_CENTER_ACTION, {
+          action: D.YC.SelectTeen
         })
       },
       o = module.map(e => ({
         label: e.id,
         value: e.id
       })),
-      u = Chunk647438.useCallback(e => (0, r.jsx)(F, {
+      s = Chunk647438.useCallback(e => (0, r.jsx)(H, {
         userId: e.value,
-        avatarSize: l.EFr.SIZE_24
+        avatarSize: u.EFr.SIZE_24
       }), []);
     return (0, Chunk951288.jsx)(Chunk481060.PhF, {
       className: Chunk37742.select,
-      renderOptionLabel: Chunk709054,
+      renderOptionLabel: Chunk512722,
       renderOptionValue: e => {
         let [t] = e;
-        return u(t)
+        return s(t)
       },
       serialize: e => e,
-      select: Chunk512722,
+      select: Chunk120356,
       isSelected: e => e === t,
       options: o
     })
   },
-  H = () => {
+  W = () => {
     let e = (0, Chunk652262.M)(),
       t = (0, Chunk880257.Z)(),
       n = (0, Chunk631885.ZM)(),
       i = (0, Chunk546791.Qr)(!!exports),
       a = (0, Chunk631885.Rd)(Chunk647438);
-    return null === module ? null : exports && 1 !== require.length ? (0, Chunk951288.jsx)(V, {}) : (0, Chunk951288.jsx)(F, {
+    return null === module ? null : exports && 1 !== require.length ? (0, Chunk951288.jsx)(Y, {}) : (0, Chunk951288.jsx)(H, {
       userId: module,
-      subText: Chunk512722
+      subText: Chunk120356
     })
   },
-  Y = () => {
+  K = () => {
     let e = (0, Chunk277537.PO)("family_center_activity_card"),
       t = (0, Chunk546791._p)(module),
       n = (0, Chunk858719.kE)(),
@@ -269,19 +274,19 @@ let Z = () => {
       className: module ? Chunk37742.containerV2 : Chunk37742.container,
       children: [(0, Chunk951288.jsxs)("div", {
         className: Chunk37742.connectedCounter,
-        children: [(0, Chunk951288.jsx)(Z, {}), (0, Chunk951288.jsx)(G, {})]
+        children: [(0, Chunk951288.jsx)(V, {}), (0, Chunk951288.jsx)(Z, {})]
       }), (0, Chunk951288.jsxs)("div", {
         className: Chunk519279.box,
         children: [(0, Chunk951288.jsx)("div", {
           className: Chunk37742.header,
-          children: (0, Chunk951288.jsx)(H, {})
+          children: (0, Chunk951288.jsx)(W, {})
         }), (0, Chunk951288.jsxs)("div", {
           className: Chunk37742.content,
           children: [(0, Chunk951288.jsx)("div", {
             className: module ? Chunk37742.activityCounterRowV2 : Chunk37742.activityCounterRow,
             children: exports.map(e => {
               let [t, n] = e;
-              return (0, r.jsx)(v.Z, {
+              return (0, r.jsx)(T.Z, {
                 displayType: t,
                 header: n.tooltipHeader()
               }, "counter-".concat(t))
@@ -290,12 +295,12 @@ let Z = () => {
             className: Chunk37742.activityOverview,
             children: require ? exports.map(e => {
               let [t] = e;
-              return (0, r.jsx)(B, {
+              return (0, r.jsx)(F, {
                 displayType: t
               }, "".concat(t, "-list"))
             }) : (0, Chunk951288.jsx)(Chunk895328.Z, {
               className: Chunk37742.emptyActivity,
-              text: null != Chunk512722 ? Chunk512722 : ""
+              text: null != Chunk120356 ? Chunk120356 : ""
             })
           })]
         })]

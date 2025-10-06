@@ -16,16 +16,17 @@ var Chunk722687 = require("./722687.js"),
   Chunk388032 = require("./388032.jsx");
 
 function f() {
-  let e = (0, Chunk652262.F)(),
-    t = Chunk722687.O8.useControlledSetting(null == module ? true : module.id);
+  var e;
+  let t = null != (e = (0, Chunk652262.M)()) ? module : true,
+    n = Chunk722687.O8.useControlledSetting(exports);
   return (0, Chunk951288.jsx)(Chunk838436.U, {
     children: (0, Chunk951288.jsx)(Chunk51331.Z, {
       title: Chunk388032.intl.string(Chunk345909.default.ZhaNu7),
       note: Chunk388032.intl.format(Chunk345909.default.cnCK6e, {
         helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.QUESTS_PRIVACY_CONTROLS)
       }),
-      value: !exports,
-      onChange: t => i.O8.updateControlledSetting(null == e ? true : e.id, !t)
+      value: !require,
+      onChange: e => i.O8.updateControlledSetting(t, !e)
     })
   })
 }

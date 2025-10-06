@@ -16,19 +16,20 @@ var Chunk722687 = require("./722687.js"),
   Chunk388032 = require("./388032.jsx");
 
 function f() {
-  let e = (0, Chunk652262.F)(),
-    t = (0, Chunk915009.q1)(),
-    n = Chunk722687.IU.useControlledSetting(null == module ? true : module.id);
+  var e;
+  let t = null != (e = (0, Chunk652262.M)()) ? module : true,
+    n = (0, Chunk915009.q1)(),
+    f = Chunk722687.IU.useControlledSetting(exports);
 
-  function f(t) {
-    i.IU.updateControlledSetting(null == e ? true : e.id, !t)
+  function _(e) {
+    i.IU.updateControlledSetting(t, !e)
   }
   return (0, Chunk951288.jsx)(Chunk838436.U, {
     children: (0, Chunk951288.jsx)(Chunk51331.Z, {
       title: Chunk388032.intl.string(Chunk388032.t["3o2ojo"]),
-      value: !exports && !require,
-      onChange: e => f(e),
-      disabled: exports,
+      value: !require && !f,
+      onChange: e => _(e),
+      disabled: require,
       note: Chunk388032.intl.format(Chunk388032.t.IoztJy, {
         helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.MESSAGE_REQUESTS)
       })
