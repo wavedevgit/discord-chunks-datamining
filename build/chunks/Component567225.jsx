@@ -19,29 +19,32 @@ function d(e) {
     game: n,
     onClick: a,
     imageClassName: d,
-    disabled: m = false
-  } = e, v = (0, s.Z)(n.gameId, "cover");
+    titleClassName: m,
+    disabled: v = false
+  } = e, g = (0, s.Z)(n.gameId, "cover");
   return (0, l.jsxs)(r.P3F, {
-    "aria-disabled": m,
+    "aria-disabled": v,
     className: i()(u.game, {
-      [u.disabled]: m
+      [u.disabled]: v
     }, t),
-    onClick: m ? true : () => a(n),
+    onClick: v ? true : () => a(n),
     children: [(0, l.jsxs)("div", {
       className: i()(u.gameImageContainer, d),
       children: [(0, l.jsx)("img", {
         className: u.image,
         alt: "",
-        src: null != v ? v : ""
+        src: null != g ? g : ""
       }), (0, l.jsx)("div", {
         className: u.gameImageBorder
       }), (0, l.jsx)("div", {
         className: u.gameImageOverlay
       })]
     }), (0, l.jsxs)("div", {
-      className: u.textContainer,
+      className: i()(u.textContainer, m),
       children: [(0, l.jsx)(r.X6q, {
         variant: "heading-sm/semibold",
+        lineClamp: 1,
+        title: n.name,
         children: n.name
       }), (0, l.jsxs)("div", {
         className: u.boostContainer,

@@ -1,19 +1,22 @@
 /** Chunk was on 5938 **/
 /** chunk id: 473682, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  IU: () => p,
-  M4: () => o,
-  Ne: () => c,
-  T9: () => l,
-  Vb: () => i,
-  cF: () => m,
-  gM: () => u,
-  hK: () => s,
-  mg: () => h,
-  zI: () => d
+  BH: () => b,
+  IU: () => x,
+  M4: () => d,
+  Ne: () => u,
+  T9: () => o,
+  Vb: () => s,
+  cF: () => h,
+  gM: () => p,
+  hK: () => c,
+  mg: () => f,
+  zI: () => m
 });
-var a, r, i = 12633 == require.j ? ((a = {}).SELECT_GAME = "select-game", a.SERVER_SETTINGS = "server-settings", a) : null;
-let l = {
+var a, r, Chunk763600 = require("./763600.js"),
+  Chunk48541 = require("./48541.js"),
+  s = 12633 == require.j ? ((a = {}).SELECT_GAME = "select-game", a.SERVER_SETTINGS = "server-settings", a) : null;
+let o = {
     steps: {
       "select-game": {
         onBack: {
@@ -35,11 +38,14 @@ let l = {
       }
     }
   },
-  s = 24,
-  o = 680,
-  c = 12633 == require.j ? o - 2 * s : null,
-  d = 10,
-  u = 32,
-  m = 1e3,
-  p = "staging" === window.GLOBAL_ENV.PROJECT_ENV ? "1415044199572832256" : "1415025086791942144";
-var h = 12633 == require.j ? ((r = {})[r.SHOCKBYTE = 0] = "SHOCKBYTE", r) : null
+  c = 24,
+  d = 680,
+  u = 12633 == require.j ? d - 2 * c : null,
+  m = 10,
+  p = 32,
+  h = 1e3,
+  x = "staging" === window.GLOBAL_ENV.PROJECT_ENV ? "1415044199572832256" : "1415025086791942144";
+var f = 12633 == require.j ? ((r = {})[r.SHOCKBYTE = 0] = "SHOCKBYTE", r) : null;
+let b = {
+  [Chunk763600.Z.SHOCKBYTE]: window.GLOBAL_ENV.RELEASE_CHANNEL === Chunk48541.C.STAGING ? "https://purple-prod.shockbyte.dev/support" : "https://discord.shockbyte.com/support"
+}

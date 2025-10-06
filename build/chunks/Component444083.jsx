@@ -1,20 +1,21 @@
 /** Chunk was on 85683 **/
 /** chunk id: 444083, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => x
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk481060 = require("./481060.js"),
   Chunk239091 = require("./239091.js"),
   Chunk100527 = require("./100527.js"),
+  Chunk49012 = require("./49012.js"),
   Chunk639777 = require("./639777.js"),
   Chunk809741 = require("./809741.jsx"),
   Chunk473682 = require("./473682.js"),
   Chunk440589 = require("./440589.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk412247 = require("./412247.js");
-let g = {
+let f = {
   steps: {
     [Chunk473682.Vb.SERVER_SETTINGS]: {
       onBack: {
@@ -27,13 +28,13 @@ let g = {
   }
 };
 
-function f(e) {
+function x(e) {
   let {
     guildId: n,
     instance: t
-  } = e, d = a.useRef(null);
-  return (0, l.Z)(n) ? (0, r.jsx)(i.yRy, {
-    targetElementRef: d,
+  } = e, x = a.useRef(null);
+  return (0, c.Z)(n) ? (0, r.jsx)(i.yRy, {
+    targetElementRef: x,
     align: "top",
     position: "right",
     animationPosition: "bottom",
@@ -47,22 +48,26 @@ function f(e) {
         onClose: () => {
           (0, o.Zy)(), a()
         },
-        "aria-label": m.intl.string(u.default.xCq1DA),
+        "aria-label": b.intl.string(m.default.xCq1DA),
         onSelect: true,
         children: (0, r.jsxs)(i.kSQ, {
-          children: [(0, r.jsx)(i.sNh, {
+          children: [null != t.providerType && (0, r.jsx)(i.sNh, {
             id: "get-support",
             icon: i.kBi,
-            label: m.intl.string(u.default["TciV8/"]),
-            action: () => {}
+            label: b.intl.string(m.default["TciV8/"]),
+            action: () => {
+              (0, l.q)({
+                href: u.BH[t.providerType]
+              })
+            }
           }), (0, r.jsx)(i.sNh, {
             id: "settings",
             icon: i.ewm,
-            label: m.intl.string(u.default.NUTl4u),
+            label: b.intl.string(m.default.NUTl4u),
             action: () => {
-              (0, c.Z)({
+              (0, d.Z)({
                 guildId: n,
-                stepConfig: g,
+                stepConfig: f,
                 initialPortkeyInstance: t,
                 analyticsLocation: s.Z.PORTKEY_OVERVIEW
               })
@@ -91,10 +96,10 @@ function f(e) {
         }
         return e
       }({
-        "aria-label": m.intl.string(m.t.UKOtz8),
-        className: b.clickable
+        "aria-label": b.intl.string(b.t.UKOtz8),
+        className: g.clickable
       }, e), t = t = {
-        innerRef: d,
+        innerRef: x,
         children: (0, r.jsx)(i.xhG, {
           color: "currentColor",
           size: "sm"

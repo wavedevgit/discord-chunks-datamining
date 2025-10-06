@@ -1,7 +1,7 @@
 /** Chunk was on 46638 **/
 /** chunk id: 541066, original params: t,e,r (module,exports,require) **/
 require.d(exports, {
-  default: () => p
+  default: () => u
 });
 var Chunk951288 = require("./951288.js"),
   Chunk763600 = require("./763600.js"),
@@ -12,11 +12,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk440589 = require("./440589.js"),
   Chunk388032 = require("./388032.jsx");
 
-function p(t) {
+function u(t) {
   var {
     provider: e,
     onAccept: r
-  } = t, p = function(t, e) {
+  } = t, u = function(t, e) {
     if (null == t) return {};
     var r, n, o = function(t, e) {
       if (null == t) return {};
@@ -32,8 +32,8 @@ function p(t) {
     return o
   }(t, ["provider", "onAccept"]);
   return (0, n.jsx)(l.Modal, {
-    title: u.intl.string(c.default.bnsSPj),
-    subtitle: u.intl.format(c.default.MaWfLi, {
+    title: p.intl.string(c.default.bnsSPj),
+    subtitle: p.intl.format(c.default.MaWfLi, {
       provider: (0, i.De)(e),
       providerUrl: () => (0, s.q)({
         href: e === o.Z.SHOCKBYTE ? "https://shockbyte.com/legal/acceptable-use-policy" : ""
@@ -42,17 +42,17 @@ function p(t) {
     }),
     size: "md",
     actions: [{
-      text: u.intl.string(u.t["/g10LC"]),
-      onClick: p.onClose,
+      text: p.intl.string(p.t["/g10LC"]),
+      onClick: u.onClose,
       variant: "secondary"
     }, {
-      text: u.intl.string(c.default.IfMFoK),
+      text: p.intl.string(c.default.IfMFoK),
       onClick: () => {
-        (0, a.g$)(true, e), null == r || r(), p.onClose()
+        (0, a.g$)(true, e), null == r || r(), u.onClose()
       },
       variant: "primary"
     }],
-    transitionState: p.transitionState,
-    onClose: p.onClose
+    transitionState: u.transitionState,
+    onClose: u.onClose
   })
 }

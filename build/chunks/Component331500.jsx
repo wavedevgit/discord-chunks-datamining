@@ -99,6 +99,7 @@ function h(e) {
             analyticsLocation: m.Z.PORTKEY_OVERVIEW
           }),
           imageClassName: y.image,
+          titleClassName: y.title,
           disabled: s
         }, "sidebar-game-".concat(t, "-").concat(e.id)))
       })

@@ -97,7 +97,7 @@ function Z(e) {
     })
   }, [t, G, D, n]), V = a.useCallback(() => {
     (0, g.JG)(i), (0, d.showToast)((0, d.createToast)(N.intl.string(N.t["+5kSoa"]), d.ToastType.SUCCESS))
-  }, [i]), W = (0, _.Z)(t.gameId, "cover"), B = (0, x.Z)(n), L = a.useCallback(() => {
+  }, [i]), B = (0, _.Z)(t.gameId, "cover"), W = (0, x.Z)(n), L = a.useCallback(() => {
     var e;
     (0, f.q)({
       href: null != (e = t.gameServerPanelUrl) ? e : ""
@@ -110,7 +110,7 @@ function Z(e) {
         return (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(T, {
             onClick: M
-          }), B && (0, r.jsx)(w, {
+          }), W && (0, r.jsx)(w, {
             onClick: L,
             disabled: null == t.gameServerPanelUrl
           })]
@@ -122,13 +122,13 @@ function Z(e) {
           children: [(0, r.jsx)(k, {
             onClick: A,
             disabled: !S
-          }), B && (0, r.jsx)(w, {
+          }), W && (0, r.jsx)(w, {
             onClick: L,
             disabled: null == t.gameServerPanelUrl
           })]
         });
       case s.V.MISSING_STOCK:
-        return B ? (0, r.jsx)(E, {
+        return W ? (0, r.jsx)(E, {
           onClick: L
         }) : (0, r.jsx)(k, {
           onClick: A,
@@ -136,7 +136,7 @@ function Z(e) {
         });
       case s.V.DELETED:
       case s.V.STARTUP_FAILED:
-        return B ? (0, r.jsx)(w, {
+        return W ? (0, r.jsx)(w, {
           onClick: L,
           disabled: null == t.gameServerPanelUrl
         }) : (0, r.jsx)(k, {
@@ -146,7 +146,7 @@ function Z(e) {
       default:
         return null
     }
-  }, [t, A, B, L, S, M]);
+  }, [t, A, W, L, S, M]);
   return (0, r.jsxs)("div", {
     className: P.card,
     children: [(0, r.jsxs)("div", {
@@ -156,7 +156,7 @@ function Z(e) {
         children: [(0, r.jsxs)("div", {
           className: P.serverHeader,
           children: [(0, r.jsx)("img", {
-            src: null != W ? W : "",
+            src: null != B ? B : "",
             alt: "",
             className: P.gameImage
           }), (0, r.jsxs)("div", {
@@ -272,7 +272,7 @@ function Z(e) {
           className: P.serverActions,
           children: U
         })]
-      }), B && (0, r.jsx)("div", {
+      }), W && (0, r.jsx)("div", {
         className: P.overflowMenu,
         children: (0, r.jsx)(j.Z, {
           guildId: n,
@@ -282,7 +282,7 @@ function Z(e) {
     }), (0, r.jsx)("div", {
       className: P.imageBackground,
       children: (0, r.jsx)(v.M, {
-        imageUrl: null != W ? W : ""
+        imageUrl: null != B ? B : ""
       })
     })]
   })
