@@ -51,18 +51,17 @@ function d(e) {
 function f(e) {
   let {
     node: t
-  } = e, n = t.render, o = l.useRef(null);
-  if (null != n) return (0, r.jsx)(n, {});
-  if (1 !== t.layout.length) throw Error("Panels with multiple panes must define a render prop to handle the multiple panes");
+  } = e, n = l.useRef(null);
+  if (1 !== t.layout.length) throw Error("Panels do not currently support multiple panes");
   return (0, r.jsx)(d, {
     notice: t.notice,
     children: (0, r.jsx)(a.w0Z, {
       className: u.scroller,
       children: (0, r.jsx)("div", {
         className: u.panel,
-        ref: o,
+        ref: n,
         children: (0, r.jsx)(a.JcV, {
-          containerRef: o,
+          containerRef: n,
           children: (0, r.jsx)(c.Z, {
             node: t.layout[0]
           })

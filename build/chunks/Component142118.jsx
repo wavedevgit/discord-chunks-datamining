@@ -14,15 +14,14 @@ let s = Chunk647438.memo(function(e) {
   } = e, {
     useTitle: n,
     layout: s,
-    render: c,
-    init: u
-  } = t, d = null == n ? true : n();
-  return (l.useEffect(() => {
-    null == u || u()
-  }, [u]), null != c) ? (0, r.jsx)(c, {}) : (0, r.jsx)(o.hjN, {
+    init: c
+  } = t, u = null == n ? true : n();
+  return l.useEffect(() => {
+    null == c || c()
+  }, [c]), (0, r.jsx)(o.hjN, {
     tag: o.RB0.H1,
     className: a.category,
-    title: d,
+    title: u,
     titleClassName: a.categoryTitle,
     children: s.map(e => (0, r.jsx)(i.Z, {
       node: e
