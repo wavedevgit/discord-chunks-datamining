@@ -66,7 +66,7 @@ let h = e => {
       "data-migration-pending": true,
       children: (0, n.jsx)("form", {
         onSubmit: e => {
-          e.preventDefault(), v(t)
+          e.preventDefault(), v(t.id)
         },
         children: (0, n.jsx)(u.Z.ButtonFooter, {
           children: (0, n.jsxs)(s.hE2, {

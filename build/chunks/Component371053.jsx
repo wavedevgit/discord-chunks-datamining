@@ -1,8 +1,8 @@
 /** Chunk was on 50751 **/
 /** chunk id: 371053, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  N: () => E,
-  P: () => v
+  N: () => S,
+  P: () => E
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,9 +19,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk594174 = require("./594174.js"),
   Chunk145597 = require("./145597.js"),
   Chunk981631 = require("./981631.js"),
+  Chunk37113 = require("./37113.js"),
   Chunk388032 = require("./388032.jsx");
 
-function v(e) {
+function E(e) {
   let {
     pid: t,
     analyticsLocation: n,
@@ -29,14 +30,14 @@ function v(e) {
     onBeforeShowModal: o,
     onOneClickGoLive: u,
     appContext: g
-  } = e, y = (0, l.e7)([f.Z], () => f.Z.getVoiceChannelId()), O = (0, l.e7)([c.Z], () => c.Z.getChannel(y), [y]), v = (0, l.e7)([m.default], () => m.default.getCurrentUser()), E = null == O ? true : O.getGuildId(), b = (0, l.e7)([h.Z], () => (0, s.Z)(h.Z)), x = (0, l.e7)([d.Z, p.Z], () => null != O && (0, a.JL)(O, d.Z, p.Z));
+  } = e, y = (0, l.e7)([f.Z], () => f.Z.getVoiceChannelId()), O = (0, l.e7)([c.Z], () => c.Z.getChannel(y), [y]), v = (0, l.e7)([m.default], () => m.default.getCurrentUser()), E = null == O ? true : O.getGuildId(), S = (0, l.e7)([h.Z], () => (0, s.Z)(h.Z)), x = (0, l.e7)([d.Z, p.Z], () => null != O && (0, a.JL)(O, d.Z, p.Z));
   return r.useCallback(async () => {
-    await S({
+    await b({
       pid: t,
       voiceChannelId: y,
       user: v,
       targetGuildId: E,
-      canGoLive: b,
+      canGoLive: S,
       canStream: x,
       analyticsLocation: n,
       allowOneClickGoLive: i,
@@ -44,9 +45,9 @@ function v(e) {
       onOneClickGoLive: u,
       appContext: g
     })
-  }, [t, y, v, E, b, x, n, i, o, u, g])
+  }, [t, y, v, E, S, x, n, i, o, u, g])
 }
-async function E(e) {
+async function S(e) {
   let {
     pid: t,
     analyticsLocation: n,
@@ -55,7 +56,7 @@ async function E(e) {
     onOneClickGoLive: l,
     appContext: o
   } = e, u = f.Z.getVoiceChannelId(), g = c.Z.getChannel(u), y = m.default.getCurrentUser(), O = null == g ? true : g.getGuildId(), v = null != g && (0, a.JL)(g, d.Z, p.Z), E = (0, s.Z)(h.Z);
-  await S({
+  await b({
     pid: t,
     voiceChannelId: u,
     user: y,
@@ -69,7 +70,7 @@ async function E(e) {
     appContext: o
   })
 }
-async function S(e) {
+async function b(e) {
   let {
     pid: t,
     voiceChannelId: r,
@@ -85,13 +86,15 @@ async function S(e) {
   } = e;
   if (s && c) {
     if (h && null !== r) {
-      let [e] = await (0, u.Z)(t);
+      let [e] = await (0, u.Z)(t, {
+        preset: O.tI.PRESET_VIDEO
+      });
       if (e) {
         null == f || f();
         return
       }
     }
-    if (null == l) return void(0, o.showToast)((0, o.createToast)(O.intl.string(O.t.OKnWyc), o.ToastType.FAILURE, {
+    if (null == l) return void(0, o.showToast)((0, o.createToast)(v.intl.string(v.t.OKnWyc), o.ToastType.FAILURE, {
       appContext: y.IlC.OVERLAY
     }));
     null == p || p(), (0, o.ZDy)(async () => {

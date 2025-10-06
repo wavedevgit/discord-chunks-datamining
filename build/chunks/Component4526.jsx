@@ -37,7 +37,7 @@ let h = e => {
     transitionState: i,
     children: (0, n.jsxs)("form", {
       onSubmit: e => {
-        e.preventDefault(), O(t)
+        e.preventDefault(), O(t.id)
       },
       children: [(0, n.jsx)(d.Z.Error, {
         error: p ? b.intl.string(u.default.tJAUys) : true,
