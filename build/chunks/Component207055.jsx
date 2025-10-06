@@ -46,7 +46,7 @@ let L = Chunk647438.memo(e => {
     channel: P,
     sessionId: I,
     nick: k
-  } = e, L = x.id, D = (0, o.e7)([j.default], () => j.default.getId() === L, [L]), [U, B, H] = (0, o.Wu)([S.Z], () => D ? [!S.Z.isSupported() || S.Z.isSelfMute() || S.Z.isSelfMutedTemporarily(), S.Z.isSelfDeaf(), false] : [!S.Z.isSupported() || S.Z.isLocalMute(L), false, S.Z.isLocalVideoDisabled(L)], [D, L]), V = (0, o.e7)([N.Z], () => N.Z.isPrioritySpeaker(L)), F = (0, c.Z)({
+  } = e, L = x.id, D = (0, o.e7)([j.default], () => j.default.getId() === L, [L]), [U, B, H] = (0, o.Wu)([S.Z], () => D ? [!S.Z.isSupported() || S.Z.isSelfMute() || S.Z.isSelfMutedTemporarily(), S.Z.isSelfDeaf(), false] : [!S.Z.isSupported() || S.Z.isLocalMute(L), false, S.Z.isLocalVideoDisabled(L)], [D, L]), V = (0, o.e7)([T.Z], () => T.Z.isPrioritySpeaker(L)), F = (0, c.Z)({
     userId: L,
     checkSoundSharing: true
   }), G = (0, o.e7)([E.ZP], () => E.ZP.isGuestOrLurker(P.guild_id, L)), z = (0, o.e7)([h.Z], () => h.Z.getGuildRingingUsers(P.id).has(L)), W = (0, o.e7)([u.ZP], () => u.ZP.getEmbeddedActivitiesForChannel(P.id).find(e => {
@@ -54,7 +54,7 @@ let L = Chunk647438.memo(e => {
       userIds: t
     } = e;
     return t.has(L)
-  }), [L, P.id]), q = (0, p.Z)(null != W ? [W.applicationId] : []), K = (0, _.Z)(L, P.guild_id)[0], Y = null != (n = (0, d.IX)(null == K ? true : K.application_id).data) ? n : true, [X, J] = (0, o.Wu)([O.Z], () => [O.Z.getStreamForUser(L, P.getGuildId()), O.Z.getActiveStreamForUser(L, P.getGuildId())], [P, L]), Q = (0, o.e7)([Z.Z], () => Z.Z.getSessionById(I)), $ = A.ZP.useName(x), ee = (0, o.e7)([T.Z], () => T.Z.getVoicePlatformForChannel(P.id, L), [P.id, L]), {
+  }), [L, P.id]), q = (0, p.Z)(null != W ? [W.applicationId] : []), Y = (0, _.Z)(L, P.guild_id)[0], K = null != (n = (0, d.IX)(null == Y ? true : Y.application_id).data) ? n : true, [X, J] = (0, o.Wu)([O.Z], () => [O.Z.getStreamForUser(L, P.getGuildId()), O.Z.getActiveStreamForUser(L, P.getGuildId())], [P, L]), Q = (0, o.e7)([Z.Z], () => Z.Z.getSessionById(I)), $ = A.ZP.useName(x), ee = (0, o.e7)([N.Z], () => N.Z.getVoicePlatformForChannel(P.id, L), [P.id, L]), {
     enableHangStatus: et
   } = (0, m.bN)({
     guildId: P.guild_id,
@@ -66,7 +66,7 @@ let L = Chunk647438.memo(e => {
     guildId: P.guild_id,
     location: "VoiceUsers"
   }, {
-    autoTrackExposure: (null == K ? true : K.session_id) != null
+    autoTrackExposure: (null == Y ? true : Y.session_id) != null
   });
   return (0, i.jsx)(C.Z, {
     shakeLocation: R.oZ.VOICE_USER,
@@ -106,8 +106,8 @@ let L = Chunk647438.memo(e => {
       isWatching: null != J && J.state !== M.jm8.ENDED,
       isGuest: G,
       isSelf: D,
-      requestToStreamActivity: eo ? K : true,
-      application: (ea || et) && (null == K ? true : K.session_id) != null ? Y : true,
+      requestToStreamActivity: eo ? Y : true,
+      application: (ea || et) && (null == Y ? true : Y.session_id) != null ? K : true,
       showHangStatus: en && et && (D || null != er),
       hangStatusActivity: D ? ei : er
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
@@ -138,18 +138,18 @@ let D = [],
       withGuildIcon: b = false,
       className: C,
       children: y
-    } = e, [_, O] = r.useState(null), [E, S] = r.useState(false), Z = r.useRef(null), N = (0, v.Es)(l.id, null != c ? c : D), T = r.useRef(new s.sW(50, () => {
+    } = e, [_, O] = r.useState(null), [E, S] = r.useState(false), Z = r.useRef(null), T = (0, v.Es)(l.id, null != c ? c : D), N = r.useRef(new s.sW(50, () => {
       O(Z.current), Z.current = null
     })), A = r.useRef(new s.sW(175, () => {
       O(null)
     })), R = r.useCallback(e => {
-      t && (S(true), A.current.cancel(), Z.current = e, T.current.delay())
+      t && (S(true), A.current.cancel(), Z.current = e, N.current.delay())
     }, [t]), U = r.useCallback(e => {
-      t && (T.current.cancel(), _ === e && (S(false), A.current.delay()))
+      t && (N.current.cancel(), _ === e && (S(false), A.current.delay()))
     }, [t, _]), B = (0, o.Wu)([I.Z], () => {
       if (u) return [];
       let e = new Set;
-      return null == N || N.forEach(t => {
+      return null == T || T.forEach(t => {
         let {
           user: n
         } = t;
@@ -160,8 +160,8 @@ let D = [],
     });
     (0, p.Z)(B);
     let H = (() => {
-      if (null == N || 0 === N.length) return null;
-      let e = u && N.length > d + 1 ? N.slice(0, d) : N,
+      if (null == T || 0 === T.length) return null;
+      let e = u && T.length > d + 1 ? T.slice(0, d) : T,
         t = h.Z.getGuildRingingUsers(l.id),
         r = e.map(e => {
           var r;
@@ -194,8 +194,8 @@ let D = [],
       return null != g && g > 0 ? r.push((0, i.jsx)(w.ul, {
         collapsed: u,
         numAudience: g
-      })) : u && N.length > d + 1 && r.push((0, i.jsx)(w.XX, {
-        numUsers: N.length - d
+      })) : u && T.length > d + 1 && r.push((0, i.jsx)(w.XX, {
+        numUsers: T.length - d
       })), r
     })();
     return null == H && null == y ? null : (0, i.jsxs)(x.eJ, {

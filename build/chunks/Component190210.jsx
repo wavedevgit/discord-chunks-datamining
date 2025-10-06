@@ -121,7 +121,7 @@ let ei = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
     channel: k,
     type: D,
     focused: G,
-    onChange: Y,
+    onChange: K,
     onResize: ei,
     onBlur: es,
     onFocus: ec,
@@ -143,8 +143,8 @@ let ei = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
   } = e, eE = O.Z.useField("channelDrafts")[k.id], eS = null != (l = null == eE ? true : eE.title) ? l : "", eP = null == eE ? true : eE.heroFile, eI = null == (o = null == eE ? true : eE.publish) || o, eZ = null == (u = null == eE ? true : eE.createThread) || u;
   s()(null != D, "chat input type must be set");
   let {
-    analyticsLocations: eN
-  } = (0, _.ZP)(y.Z.CHANNEL_TEXT_AREA), eT = (0, F.qz)(t), eA = r.useRef(null), ew = r.useRef(null), eM = r.useRef(null), eR = r.useRef(null);
+    analyticsLocations: eT
+  } = (0, _.ZP)(y.Z.CHANNEL_TEXT_AREA), eN = (0, F.qz)(t), eA = r.useRef(null), ew = r.useRef(null), eM = r.useRef(null), eR = r.useRef(null);
   null == ey || ey(ew.current);
   let {
     activeCommand: ek
@@ -160,16 +160,16 @@ let ei = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
     disabled: eU,
     canAttachFiles: eB,
     canEveryoneSendMessages: eH
-  } = (0, F.TE)(k, D, ek, I), eV = !A.dN.useSetting() && !(0, L.isAndroidWeb)() && null != window.ResizeObserver, eF = !eV || !(null == (n = D.commands) ? true : n.enabled) || !G || p !== q.GI, eG = (0, N.Z)(), {
+  } = (0, F.TE)(k, D, ek, I), eV = !A.dN.useSetting() && !(0, L.isAndroidWeb)() && null != window.ResizeObserver, eF = !eV || !(null == (n = D.commands) ? true : n.enabled) || !G || p !== q.GI, eG = (0, T.Z)(), {
     fontSize: ez
   } = (0, d.cj)([C.Z], () => ({
     fontSize: C.Z.fontSize,
     isSubmitButtonEnabled: C.Z.isSubmitButtonEnabled
-  })), eW = (0, d.e7)([M.Z], () => M.Z.isEnabled()), eq = (0, T.NE)(k);
+  })), eW = (0, d.e7)([M.Z], () => M.Z.isEnabled()), eq = (0, N.NE)(k);
   (0, F.hJ)(D, eU);
   let {
-    eventEmitter: eK,
-    handleEditorSelectionChanged: eY
+    eventEmitter: eY,
+    handleEditorSelectionChanged: eK
   } = (0, F.x2)(ew, p, h), eX = r.useCallback(e => {
     let t = e => {
         if (e.shouldClear) {
@@ -193,11 +193,11 @@ let ei = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
     n.push({
       type: g.re.MEDIA_GALLERY,
       items: [et("attachment://".concat(en(eP.name)), false)],
-      id: "".concat(K.Vm)
+      id: "".concat(Y.Vm)
     }), e.value.length > 0 && n.push({
       type: g.re.TEXT_DISPLAY,
       content: e.value,
-      id: "".concat(K.Kb)
+      id: "".concat(Y.Kb)
     });
     let r = R.Z.getUploads(k.id, w.d.ChannelMessage),
       l = r.filter(e => (e.isImage || e.isVideo) && e.filename !== (null == eP ? true : eP.name)),
@@ -206,12 +206,12 @@ let ei = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
     return o.length > 0 && n.push({
       type: g.re.MEDIA_GALLERY,
       items: o,
-      id: "".concat(K.m2)
+      id: "".concat(Y.m2)
     }), a.forEach((e, t) => {
       n.push({
         type: g.re.FILE,
         file: et("attachment://".concat(en(e.filename)), false).media,
-        id: "".concat(K.kn + t),
+        id: "".concat(Y.kn + t),
         name: en(e.filename),
         size: null
       })
@@ -271,7 +271,7 @@ let ei = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
     chatInputType: D,
     submit: eX
   });
-  (0, U.S)(eK, k.guild_id, k.id);
+  (0, U.S)(eY, k.guild_id, k.id);
   let [to, ts] = r.useState(false), tc = G || to || p.length > 0 || null != eP || eS.length > 0, {
     editorHeaderHeight: tu,
     paddingTop: td
@@ -304,11 +304,11 @@ let ei = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
     })
   }, [k.id, eP, D.drafts.type]);
   return (0, i.jsx)(j.f6, {
-    value: eK,
+    value: eY,
     children: (0, i.jsxs)(_.Gt, {
-      value: eN,
+      value: eT,
       children: [(0, i.jsxs)("div", {
-        ref: eT,
+        ref: eN,
         className: a()(b, Q.channelTextArea),
         onMouseDown: te,
         children: [(0, i.jsx)("div", {
@@ -350,7 +350,7 @@ let ei = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
               }), (0, i.jsx)("div", {
                 className: J.inputWrapper,
                 children: (0, i.jsx)(f.tEY, {
-                  ringTarget: eT,
+                  ringTarget: eN,
                   ringClassName: Q.focusRing,
                   children: (0, i.jsx)(H.Z, {
                     ref: ew,
@@ -371,7 +371,7 @@ let ei = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
                     maxCharacterCount: null != em ? em : eG,
                     allowNewLines: true,
                     "aria-describedby": eb,
-                    onChange: Y,
+                    onChange: K,
                     onResize: e8,
                     onBlur: es,
                     onFocus: ec,
@@ -380,7 +380,7 @@ let ei = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
                     onTab: e4,
                     onEnter: e7,
                     onMoveSelection: e6,
-                    onSelectionChanged: eY,
+                    onSelectionChanged: eK,
                     onMaybeShowAutocomplete: e0,
                     onHideAutocomplete: e1,
                     promptToUpload: ep,
@@ -469,7 +469,7 @@ let ei = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
             })
           })]
         }), (0, i.jsx)(x.Z, {
-          targetRef: eT,
+          targetRef: eN,
           ref: e$,
           channel: k,
           canMentionRoles: eh,
@@ -487,11 +487,11 @@ let ei = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
           onSendSticker: () => {},
           onVisibilityChange: ti,
           editorHeight: e3,
-          setValue: (e, t) => null == Y ? true : Y(null, e, t),
+          setValue: (e, t) => null == K ? true : K(null, e, t),
           position: e_
         }), ev]
       }), e9 ? null : (0, i.jsx)(S.Z, {
-        positionTargetRef: eT,
+        positionTargetRef: eN,
         type: D,
         onSelectGIF: tl,
         onSelectEmoji: tr,
@@ -644,8 +644,8 @@ function eo(e) {
           onChange: o,
           "aria-hidden": true,
           tabIndex: false,
-          maxFileSizeBytes: Y.B,
-          onFileSizeError: () => (0, I.Z)(Y.B)
+          maxFileSizeBytes: K.B,
+          onFileSizeError: () => (0, I.Z)(K.B)
         }), (0, i.jsx)(f.FmF, {
           size: "md",
           color: s ? p.Z.colors.INTERACTIVE_ACTIVE : p.Z.colors.INTERACTIVE_NORMAL

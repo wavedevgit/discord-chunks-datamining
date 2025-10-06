@@ -24,7 +24,7 @@ function b(e) {
     onAcceptSuccess: n,
     onRejectSuccess: r,
     onError: b
-  } = e, C = (0, f.Z)(), [y, _] = i.useState(false), [v, x] = i.useState(false), [O, j] = i.useState(false), [E, S] = i.useState(false), [P, I] = i.useState(false), Z = y || v || O, N = i.useCallback(async e => {
+  } = e, C = (0, f.Z)(), [y, _] = i.useState(false), [v, x] = i.useState(false), [O, j] = i.useState(false), [E, S] = i.useState(false), [P, I] = i.useState(false), Z = y || v || O, T = i.useCallback(async e => {
     if (!Z) {
       _(true);
       try {
@@ -36,7 +36,7 @@ function b(e) {
         _(false)
       }
     }
-  }, [Z, n, b]), T = i.useCallback(async e => {
+  }, [Z, n, b]), N = i.useCallback(async e => {
     if (!Z) {
       x(true);
       try {
@@ -82,7 +82,7 @@ function b(e) {
         channel_id: e,
         mutual_guild_ids: null != i ? i : [],
         other_user_id: null == t ? true : t.id
-      }), await N(e)
+      }), await T(e)
     };
     (0, h.H)({
       channelId: e,
@@ -98,9 +98,9 @@ function b(e) {
         })
       }
     })
-  }, [N, Z, t]), M = i.useCallback((e, t, n) => {
+  }, [T, Z, t]), M = i.useCallback((e, t, n) => {
     let i = (i, r) => {
-        r && u.kJ.updateSetting(i), i && null != t && (0, o.zd)(t), N(e.id), d.default.track(g.rMx.MESSAGE_REQUEST_ACTION, {
+        r && u.kJ.updateSetting(i), i && null != t && (0, o.zd)(t), T(e.id), d.default.track(g.rMx.MESSAGE_REQUEST_ACTION, {
           action: m.cl.ACCEPT_HAM_CONFIRMATION_PROMPT,
           channel_id: e.id,
           is_dont_show_again_checked: r,
@@ -118,10 +118,10 @@ function b(e) {
         })
       }
     }) : i(r)
-  }, [N]);
+  }, [T]);
   return {
-    acceptMessageRequest: C ? w : N,
-    rejectMessageRequest: T,
+    acceptMessageRequest: C ? w : T,
+    rejectMessageRequest: N,
     rejectAll: A,
     markAsNotSpam: M,
     isAcceptLoading: y,

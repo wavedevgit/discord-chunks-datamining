@@ -86,7 +86,7 @@ function V(e) {
       focusedParticipant: r,
       channel: l
     } = e,
-    a = (0, N.Z)(l, true),
+    a = (0, T.Z)(l, true),
     o = (0, g.qY)(l.id),
     c = null != o ? (0, b.DK)(o) : null,
     d = null != o;
@@ -147,8 +147,8 @@ function F(e) {
     participantsOpen: I.Z.getParticipantsOpen(t.id)
   }), [t.id]), C = (0, h.ZP)(t), x = (0, f.KS)(t), [S] = (0, d.Z)((null == b ? true : b.type) === M.fO.ACTIVITY ? [b.applicationId] : []), P = L.intl.string(L.t.BVZqJi);
   t.isDM() ? P = L.intl.string(L.t.jN2DfX) : t.isGroupDM() && (P = L.intl.string(L.t["e5y+go"]));
-  let N = (0, a.e7)([p.Z], () => p.Z.getChannelStatus(t)),
-    A = t.isGuildVoice() && u && null != N && N.length > 0,
+  let T = (0, a.e7)([p.Z], () => p.Z.getChannelStatus(t)),
+    A = t.isGuildVoice() && u && null != T && T.length > 0,
     R = (0, Z.ZP)(t),
     B = A ? (0, i.jsx)(o.u, {
       asContainer: true,
@@ -194,7 +194,7 @@ function F(e) {
           className: l()(D.channelStatus, U.markup, {
             [D.hoverable]: R
           }),
-          children: O.Z.parseVoiceChannelStatus(N, true, {
+          children: O.Z.parseVoiceChannelStatus(T, true, {
             channelId: t.id
           })
         }), R && (0, i.jsx)(s.vdY, {
@@ -220,7 +220,7 @@ function F(e) {
         innerClassName: D.headerBarChildren,
         toolbarClassName: D.toolbar,
         childrenBottom: B,
-        toolbar: (0, i.jsx)(T.Z, {
+        toolbar: (0, i.jsx)(N.Z, {
           channel: t,
           appContext: c,
           inCall: u,

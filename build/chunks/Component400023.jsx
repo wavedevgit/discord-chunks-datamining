@@ -1,7 +1,7 @@
 /** Chunk was on 50118 **/
 /** chunk id: 400023, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => Y
+  Z: () => K
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -93,7 +93,7 @@ function W(e, t) {
   return r
 }
 let q = (0, Chunk137317.animated)(Chunk481060.eTT),
-  K = Chunk647438.memo(function(e) {
+  Y = Chunk647438.memo(function(e) {
     var t, n;
     let {
       className: l,
@@ -110,12 +110,12 @@ let q = (0, Chunk137317.animated)(Chunk481060.eTT),
       editingMessageId: S,
       fontSize: P,
       keyboardModeEnabled: I,
-      filterAfterTimestamp: N,
-      showingQuarantineBanner: T,
+      filterAfterTimestamp: T,
+      showingQuarantineBanner: N,
       hideSummaries: A = false,
       jumpBarClassName: M,
       typingGradient: R
-    } = e, [L, K] = r.useState(null != (n = E.Z.isAtBottom(m.id)) && n), Y = r.useMemo(() => y ? (0, k.aJ)({
+    } = e, [L, Y] = r.useState(null != (n = E.Z.isAtBottom(m.id)) && n), K = r.useMemo(() => y ? (0, k.aJ)({
       compact: true,
       messageGroups: 30,
       groupRange: 4,
@@ -135,10 +135,10 @@ let q = (0, Chunk137317.animated)(Chunk481060.eTT),
       compact: y,
       hasUnreads: j,
       focusId: S,
-      placeholderHeight: Y.totalHeight,
-      canLoadMore: null == N,
-      handleScrollToBottom: r.useCallback(() => K(true), [K]),
-      handleScrollFromBottom: r.useCallback(() => K(false), [K]),
+      placeholderHeight: K.totalHeight,
+      canLoadMore: null == T,
+      handleScrollToBottom: r.useCallback(() => Y(true), [Y]),
+      handleScrollFromBottom: r.useCallback(() => Y(false), [Y]),
       additionalMessagePadding: 48
     }), J = (0, D.Z)({
       scrollerRef: X.ref,
@@ -161,9 +161,9 @@ let q = (0, Chunk137317.animated)(Chunk481060.eTT),
       uploads: x,
       loadMore: X.loadMore,
       scrollManager: X,
-      specs: Y,
-      filterAfterTimestamp: null != N ? N : Q,
-      showingQuarantineBanner: T,
+      specs: K,
+      filterAfterTimestamp: null != T ? T : Q,
+      showingQuarantineBanner: N,
       hideSummaries: A,
       jumpToPresent: () => {
         if (g.hasPresent()) {
@@ -251,7 +251,7 @@ let q = (0, Chunk137317.animated)(Chunk481060.eTT),
               children: V.intl.string(V.t.Spb3s7)
             }), $, (0, i.jsx)("div", {
               className: a()({
-                [F.scrollerSpacer]: !T,
+                [F.scrollerSpacer]: !N,
                 [F.empty]: 0 === g.length && !g.loadingMore,
                 [F.emptyForum]: 1 === g.length && !g.loadingMore && m.isForumPost() && (null == (t = g.first()) ? true : t.isFirstMessageInForumPost(m))
               })
@@ -263,7 +263,7 @@ let q = (0, Chunk137317.animated)(Chunk481060.eTT),
       })]
     })
   }, (e, t) => null != e.isHidden && null != t.isHidden && e.isHidden && t.isHidden),
-  Y = Chunk647438.memo(function(e) {
+  K = Chunk647438.memo(function(e) {
     var {
       channel: t,
       showingQuarantineBanner: n,
@@ -331,9 +331,9 @@ let q = (0, Chunk137317.animated)(Chunk481060.eTT),
     } = function(e) {
       var t, n;
       let i = (0, c.e7)([I.Z], () => I.Z.getMessages(e.id), [e.id]),
-        l = (0, c.e7)([N.ZP], () => {
+        l = (0, c.e7)([T.ZP], () => {
           var t;
-          return null != (t = N.ZP.getOldestUnreadMessageId(e.id)) ? t : null
+          return null != (t = T.ZP.getOldestUnreadMessageId(e.id)) ? t : null
         }, [e.id]),
         {
           enabled: a
@@ -381,7 +381,7 @@ let q = (0, Chunk137317.animated)(Chunk481060.eTT),
     return (0, i.jsx)(b.aQ.Provider, {
       value: (0, M.Z)(k, d),
       children: (0, i.jsx)(L.v, {
-        children: (0, i.jsx)(K, z(G({}, u), {
+        children: (0, i.jsx)(Y, z(G({}, u), {
           messageGroupSpacing: O,
           showNewMessagesBar: true,
           channel: t,
@@ -389,8 +389,8 @@ let q = (0, Chunk137317.animated)(Chunk481060.eTT),
           messages: U,
           channelStream: B,
           permissionVersion: h,
-          uploads: (0, c.e7)([T.Z], () => T.Z.getFiles(t.id), [t]),
-          unreadCount: (0, c.e7)([N.ZP], () => N.ZP.getUnreadCount(t.id), [t]),
+          uploads: (0, c.e7)([N.Z], () => N.Z.getFiles(t.id), [t]),
+          unreadCount: (0, c.e7)([T.ZP], () => T.ZP.getUnreadCount(t.id), [t]),
           hasUnreads: null != V,
           canChat: _,
           editingMessageId: F,

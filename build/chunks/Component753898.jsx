@@ -37,14 +37,14 @@ function x(e) {
     userId: null == O ? true : O.id,
     size: o.EFr.SIZE_80,
     animateOnHover: true
-  }), [Z, N] = r.useState(false), T = r.useCallback(() => {
-    P.onMouseEnter(), N(true)
+  }), [Z, T] = r.useState(false), N = r.useCallback(() => {
+    P.onMouseEnter(), T(true)
   }, [P]), A = r.useCallback(() => {
-    P.onMouseLeave(), N(false)
+    P.onMouseLeave(), T(false)
   }, [P]), w = !n.isMultiUserDM() && (null == O ? true : O.displayNameStyles) != null;
   return (0, i.jsxs)(y.ZP, {
     channelId: n.id,
-    onMouseEnter: T,
+    onMouseEnter: N,
     onMouseLeave: A,
     children: [(() => {
       let e = !j && I;

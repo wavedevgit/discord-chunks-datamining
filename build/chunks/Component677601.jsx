@@ -322,7 +322,7 @@ class ez extends Chunk647438.PureComponent {
           ref: e => {
             this._callContainerRef.current = e, this.props.callContainerRef.current = e
           },
-          children: (0, i.jsx)(Y.ZP, {
+          children: (0, i.jsx)(K.ZP, {
             timeout: 2e3,
             children: e => this.renderContent(e)
           })
@@ -386,7 +386,7 @@ class ez extends Chunk647438.PureComponent {
       })
     }), eB(this, "getCallTileMenuActionHandler", function(e, t, n) {
       let i = arguments.length > 3 && true !== arguments[3] ? arguments[3] : ek.A5.CONTEXT_MENU;
-      return (0, eM.u)(e, N.Z.CHANNEL_CALL, {
+      return (0, eM.u)(e, T.Z.CHANNEL_CALL, {
         entrypoint: i,
         tileType: n,
         targetUserId: t.type !== ek.fO.ACTIVITY ? t.user.id : true
@@ -430,7 +430,7 @@ class ez extends Chunk647438.PureComponent {
               entrypoint: ek.A5.THREE_DOT,
               tileType: ek.TH.USER,
               targetUserId: h.id,
-              location: N.Z.CHANNEL_CALL
+              location: T.Z.CHANNEL_CALL
             }));
             switch (c.type) {
               case eL.d4z.DM:
@@ -512,7 +512,7 @@ class ez extends Chunk647438.PureComponent {
         onConfirm: n
       })
     }), eB(this, "handleStayOnTop", e => {
-      (0, ew.v)(N.Z.VOICE_CONTROL_TRAY, ew.d.STAY_ON_TOP, e), H.hY(eL.KJ3.CHANNEL_CALL_POPOUT, e)
+      (0, ew.v)(T.Z.VOICE_CONTROL_TRAY, ew.d.STAY_ON_TOP, e), H.hY(eL.KJ3.CHANNEL_CALL_POPOUT, e)
     }), eB(this, "handleClosePopout", () => {
       H.xv(eL.KJ3.CHANNEL_CALL_POPOUT)
     }), eB(this, "handleFullscreenParticipant", (e, t) => {
@@ -568,7 +568,7 @@ class ez extends Chunk647438.PureComponent {
           canChangeLayout: g,
           canInvite: b
         } = this.viewProperties,
-        C = l ? (0, i.jsx)(K.Z, {
+        C = l ? (0, i.jsx)(Y.Z, {
           channel: n,
           stream: (null == o ? true : o.type) === ek.fO.STREAM ? (0, D.my)(o.id) : true,
           applicationId: (null == o ? true : o.type) === ek.fO.ACTIVITY ? o.applicationId : true,
@@ -593,7 +593,7 @@ class ez extends Chunk647438.PureComponent {
             direction: d,
             className: eU.leftTrayIcon,
             onClick: () => {
-              (0, ew.v)(N.Z.VOICE_CONTROL_TRAY, ew.d.CHAT, p), m()
+              (0, ew.v)(T.Z.VOICE_CONTROL_TRAY, ew.d.CHAT, p), m()
             }
           }), p && t > 0 ? (0, i.jsx)(h.mAB, {
             className: eU.badge,
@@ -632,7 +632,7 @@ class ez extends Chunk647438.PureComponent {
           currentWindow: this.inPopout ? null != e ? e : true : window,
           sliderClassName: eU.volumeSlider,
           className: eU.rightTrayIcon,
-          location: N.Z.VOICE_CONTROL_TRAY
+          location: T.Z.VOICE_CONTROL_TRAY
         }) : null, a ? (0, i.jsx)(ei.Z, {
           className: eU.rightTrayIcon,
           popoutWindowAlwaysOnTop: t,
@@ -642,10 +642,10 @@ class ez extends Chunk647438.PureComponent {
           popoutOpen: this.popoutOpen,
           className: eU.rightTrayIcon,
           onOpenPopout: () => {
-            (0, ew.v)(N.Z.VOICE_CONTROL_TRAY, ew.d.POPOUT, true), this.handleOpenPopout()
+            (0, ew.v)(T.Z.VOICE_CONTROL_TRAY, ew.d.POPOUT, true), this.handleOpenPopout()
           },
           onClosePopout: () => {
-            (0, ew.v)(N.Z.VOICE_CONTROL_TRAY, ew.d.POPOUT, false), this.handleClosePopout()
+            (0, ew.v)(T.Z.VOICE_CONTROL_TRAY, ew.d.POPOUT, false), this.handleClosePopout()
           }
         }) : null, l ? (0, i.jsx)(ee.Z, {
           themeable: s,
@@ -653,7 +653,7 @@ class ez extends Chunk647438.PureComponent {
           guestWindow: e,
           className: eU.rightTrayIcon,
           onClick: () => {
-            (0, ew.v)(N.Z.VOICE_CONTROL_TRAY, ew.d.FULL_SCREEN, this.props.layout !== eL.AEg.FULL_SCREEN), this.handleFullScreen()
+            (0, ew.v)(T.Z.VOICE_CONTROL_TRAY, ew.d.FULL_SCREEN, this.props.layout !== eL.AEg.FULL_SCREEN), this.handleFullScreen()
           }
         }) : null]
       })
@@ -733,7 +733,7 @@ let eW = function(e) {
     participants: j,
     filteredParticipants: S,
     participantsVersion: Z,
-    mode: T,
+    mode: N,
     layout: w,
     participantsOpen: M,
     participantsListOpen: D,
@@ -759,7 +759,7 @@ let eW = function(e) {
     selectedStream: G
   } = (0, u.cj)([ea.Z], () => ({
     selectedStream: null != H ? ea.Z.getActiveStreamForStreamKey(H.id) : null
-  }), [H]), W = (0, u.e7)([eu.Z], () => eu.Z.getGuild(n.getGuildId())), q = (0, u.e7)([ec.Z], () => ec.Z.getCall(n.id), [n.id]), K = (0, u.e7)([ep.ZP], () => ep.ZP.getMentionCount(n.id), [n.id]), Y = (0, u.e7)([eo.default], () => eo.default.getId()), {
+  }), [H]), W = (0, u.e7)([eu.Z], () => eu.Z.getGuild(n.getGuildId())), q = (0, u.e7)([ec.Z], () => ec.Z.getCall(n.id), [n.id]), Y = (0, u.e7)([ep.ZP], () => ep.ZP.getMentionCount(n.id), [n.id]), K = (0, u.e7)([eo.default], () => eo.default.getId()), {
     popoutWindow: X,
     popoutWindowAlwaysOnTop: J
   } = (0, u.cj)([V.Z], () => ({
@@ -778,21 +778,21 @@ let eW = function(e) {
     let e = false,
       t = null;
     return (async () => {
-      _ && T === eL.WtW.VIDEO && (t = await e_.ZP.blockDisplaySleep(), e && null != t && e_.ZP.unblockDisplaySleep(t))
+      _ && N === eL.WtW.VIDEO && (t = await e_.ZP.blockDisplaySleep(), e && null != t && e_.ZP.unblockDisplaySleep(t))
     })(), () => {
       null != t ? e_.ZP.unblockDisplaySleep(t) : e = true
     }
-  }, [_, T]);
+  }, [_, N]);
   let eg = (0, ej.Z)(n, true),
     {
       hasParticipantsPanel: eb
-    } = (0, eN.Z)({
+    } = (0, eT.Z)({
       location: "ChannelCall"
     }),
     eC = (0, R.bn)(d.z.CALL_CHAT_BUTTON_TEXT_IN_VOICE_COACH_MARK),
     {
       analyticsLocations: ey
-    } = (0, A.ZP)(N.Z.CHANNEL_CALL),
+    } = (0, A.ZP)(T.Z.CHANNEL_CALL),
     ev = s - ek.oo,
     eO = P.ZP.getEmbeddedActivitiesForChannel(n.id),
     {
@@ -815,9 +815,9 @@ let eW = function(e) {
             call: q,
             popoutWindow: X,
             popoutWindowAlwaysOnTop: J,
-            mentionCount: K,
+            mentionCount: Y,
             selectedStream: G,
-            mode: T,
+            mode: N,
             inCall: _,
             participants: j,
             filteredParticipants: S,
@@ -826,7 +826,7 @@ let eW = function(e) {
             chatOpen: U,
             maxSidebarWidth: ev,
             shouldUseVoiceEffectsActionBar: eg,
-            currentUserId: Y,
+            currentUserId: K,
             selectedParticipant: H,
             allActiveStreams: F,
             useNewInviteButton: er,

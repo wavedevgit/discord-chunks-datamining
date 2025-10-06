@@ -45,14 +45,14 @@ function I(e) {
     inPopout: l,
     handleClose: a,
     userParticipantCount: o
-  }) : o > 1 ? (0, i.jsx)(T, {
+  }) : o > 1 ? (0, i.jsx)(N, {
     channel: t,
     guild: n,
     width: r,
     inPopout: l,
     handleClose: a,
     userParticipantCount: o
-  }) : (0, i.jsx)(N, {
+  }) : (0, i.jsx)(T, {
     channel: t,
     guild: n,
     width: r,
@@ -123,7 +123,7 @@ function Z(e) {
   })
 }
 
-function N(e) {
+function T(e) {
   let {
     channel: t,
     guild: l,
@@ -237,7 +237,7 @@ function N(e) {
   })
 }
 
-function T(e) {
+function N(e) {
   let {
     channel: t,
     guild: n,

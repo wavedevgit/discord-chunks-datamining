@@ -31,7 +31,7 @@ let h = Chunk647438.memo(function(e) {
   } = (0, l.cj)([c.Z], () => ({
     isInteractionUserBlocked: c.Z.isBlockedForMessage(h),
     isInteractionUserIgnored: c.Z.isIgnoredForMessage(h)
-  }), [h]), j = (0, l.e7)([s.Z], () => s.Z.getMessageByReference(null == h ? true : h.messageReference)), E = (0, d.wq)(null == (t = h.interaction) ? true : t.user.id, f.id), S = (0, d.Nk)(h.interaction, f, g, v), P = (0, d.NU)(b, v), I = (0, o.t0)(h), Z = (null == I ? true : I.type) === a.B8.APPLICATION_COMMAND ? null == (n = I.target_user) ? true : n.id : true, N = (0, d.wq)(Z, f.id), T = (0, d.JC)(Z, f, y, v), A = (0, d.rY)(_, v), w = (0, d.Xn)(C, v), M = r.useCallback(() => {
+  }), [h]), j = (0, l.e7)([s.Z], () => s.Z.getMessageByReference(null == h ? true : h.messageReference)), E = (0, d.wq)(null == (t = h.interaction) ? true : t.user.id, f.id), S = (0, d.Nk)(h.interaction, f, g, v), P = (0, d.NU)(b, v), I = (0, o.t0)(h), Z = (null == I ? true : I.type) === a.B8.APPLICATION_COMMAND ? null == (n = I.target_user) ? true : n.id : true, T = (0, d.wq)(Z, f.id), N = (0, d.JC)(Z, f, y, v), A = (0, d.rY)(_, v), w = (0, d.Xn)(C, v), M = r.useCallback(() => {
     v({
       interactionUsernameProfile: false,
       interactionAvatarProfile: false,
@@ -67,8 +67,8 @@ let h = Chunk647438.memo(function(e) {
     onClickCommand: w,
     onUserContextMenu: E,
     onClickTargetAvatar: A,
-    onClickTargetUsername: T,
-    onTargetUserContextMenu: N,
+    onClickTargetUsername: N,
+    onTargetUserContextMenu: T,
     onPopoutRequestClose: M,
     renderTargetMessage: R
   })

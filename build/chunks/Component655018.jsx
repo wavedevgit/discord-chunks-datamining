@@ -79,11 +79,11 @@ function B(e) {
     setPopoutRef: V
   } = e, F = r.useRef(null), G = (0, u.e7)([_.Z], () => _.Z.getCustomHangStatus()), z = (0, E.Z)(), W = (0, u.e7)([_.Z], () => _.Z.getFavoritedStatuses()), {
     defaultStatusVariant: q,
-    allowPermanentClear: K
+    allowPermanentClear: Y
   } = (0, y.bN)({
     guildId: B.guild_id,
     location: "HangStatusPicker"
-  }), Y = (0, v.V)(q), X = r.useRef(null), [J, Q] = r.useState(null != (n = null == G ? true : G.status) ? n : ""), [$, ee] = r.useState(null != (l = null == G ? true : G.emoji) ? l : null), [et, en] = r.useState(false), ei = (0, u.e7)([_.Z], () => _.Z.getCurrentHangStatus()), er = Y[ei], el = W.length > 0, ea = null == J || "" === J.trim(), eo = (0, j.Z)(B), es = J.trim().length > 0 && J.trim() !== (null == G || null == (t = G.status) ? true : t.trim()) || null != $ && !s()($, null == G ? true : G.emoji), [ec, eu] = r.useState(false), ed = (0, u.e7)([_.Z], () => _.Z.getFavoritedStatuses().length >= _.o), ep = J.length > 0 || null != $, [eh, ef] = (0, m.US)([d.z.HANG_STATUS_POPOVER_NUX]);
+  }), K = (0, v.V)(q), X = r.useRef(null), [J, Q] = r.useState(null != (n = null == G ? true : G.status) ? n : ""), [$, ee] = r.useState(null != (l = null == G ? true : G.emoji) ? l : null), [et, en] = r.useState(false), ei = (0, u.e7)([_.Z], () => _.Z.getCurrentHangStatus()), er = K[ei], el = W.length > 0, ea = null == J || "" === J.trim(), eo = (0, j.Z)(B), es = J.trim().length > 0 && J.trim() !== (null == G || null == (t = G.status) ? true : t.trim()) || null != $ && !s()($, null == G ? true : G.emoji), [ec, eu] = r.useState(false), ed = (0, u.e7)([_.Z], () => _.Z.getFavoritedStatuses().length >= _.o), ep = J.length > 0 || null != $, [eh, ef] = (0, m.US)([d.z.HANG_STATUS_POPOVER_NUX]);
   r.useEffect(() => {
     b.default.track(A.rMx.HANG_STATUS_PICKER_OPENED, U(D({}, (0, x.Z)(B.id)), {
       num_favorites: W.length,
@@ -150,7 +150,7 @@ function B(e) {
     ex = r.useCallback((e, t, n) => {
       var r;
       let l = (0, O.Z)(e),
-        a = l ? Y[e] : null,
+        a = l ? K[e] : null,
         o = _.Z.isFavorited(e),
         s = l ? (0, i.jsx)(I.Z, {
           userId: g.default.getId(),
@@ -166,7 +166,7 @@ function B(e) {
           hideTooltip: true,
           className: R.icon
         });
-      return (0, i.jsx)(N.L, {
+      return (0, i.jsx)(T.L, {
         label: l ? null != (r = null == a ? true : a.title) ? r : "" : e.status,
         icon: s,
         setStatus: () => {
@@ -175,12 +175,12 @@ function B(e) {
         isFavorited: o,
         onFavoriteClick: () => ey(o, e)
       }, "".concat(n, "-").concat(t))
-    }, [q, eg, em, Y, ey]),
+    }, [q, eg, em, K, ey]),
     eO = r.useCallback(() => {
-      (0, C.Sc)(true, K), ee(null), Q(""), en(false)
-    }, [K]),
+      (0, C.Sc)(true, Y), ee(null), Q(""), en(false)
+    }, [Y]),
     ej = r.useCallback(e => {
-      en(true), Q(e.substring(0, T.s0))
+      en(true), Q(e.substring(0, N.s0))
     }, []);
   return (0, i.jsxs)("div", {
     ref: X,

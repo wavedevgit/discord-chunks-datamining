@@ -34,7 +34,7 @@ function P(e) {
     idle: n,
     whichPopoutIsOpen: P,
     setWhichPopoutIsOpen: I
-  } = e, Z = (0, l.e7)([u.ZP], () => u.ZP.isLaunchingActivity()), N = (0, p.KF)(t.id), T = (0, p.g5)(N), A = N !== p.jy.CAN_LAUNCH || Z, {
+  } = e, Z = (0, l.e7)([u.ZP], () => u.ZP.isLaunchingActivity()), T = (0, p.KF)(t.id), N = (0, p.g5)(T), A = T !== p.jy.CAN_LAUNCH || Z, {
     isHovered: w,
     setIsHovered: M,
     onMouseEnter: R,
@@ -114,8 +114,8 @@ function P(e) {
                   ref: q,
                   children: (0, i.jsx)(x.Z, {
                     disabled: A,
-                    "aria-label": T,
-                    label: U ? true : T,
+                    "aria-label": N,
+                    label: U ? true : N,
                     isActivityActive: D,
                     onClick: () => {
                       G(), (r === a.z.ACTIVITIES_MINI_SHELF_SPARKLES || r === a.z.ACTIVITY_GDM_ROCKET_SPARKLE || r === a.z.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_1_SPARKLES || r === a.z.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_2_SPARKLES || r === a.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP) && l(E.L.TAKE_ACTION), t === a.z.ACTIVITIES_VOICE_LAUNCHER_BADGE && n(E.L.TAKE_ACTION)

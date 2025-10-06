@@ -35,8 +35,8 @@ let C = (0, Chunk112724.Z)(e => {
     showParticipants: P = true,
     width: I,
     height: Z,
-    idle: N,
-    mode: T,
+    idle: T,
+    mode: N,
     popoutWindow: A,
     awaitingRemoteSessionInfo: w,
     callContainerDimensions: M
@@ -51,7 +51,7 @@ let C = (0, Chunk112724.Z)(e => {
     channel: O,
     participants: t,
     hasConnectPermission: j
-  }) : T === m.WtW.VOICE ? (0, i.jsx)(o.Z, {
+  }) : N === m.WtW.VOICE ? (0, i.jsx)(o.Z, {
     guildId: O.guild_id,
     width: I,
     className: b.voiceCallWrapper,
@@ -82,7 +82,7 @@ let C = (0, Chunk112724.Z)(e => {
     participants: t,
     popoutWindow: A,
     className: E,
-    idle: N,
+    idle: T,
     height: Z,
     width: I,
     layout: y,

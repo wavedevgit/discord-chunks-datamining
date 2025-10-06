@@ -112,7 +112,7 @@ function eo(e) {
   }), O = (0, a.e7)([B.default], () => B.default.showKeybindIndicators), b = (0, a.e7)([A.default], () => A.default.getId()), v = (0, a.e7)([z.Z], () => z.Z.isLocalMute(i.id)), E = (0, a.e7)([R.Z], () => R.Z.getCurrentUserActiveStream()), x = (0, a.Wu)([R.Z], () => null != E ? R.Z.getViewerIds(E) : []), S = (0, _.Z)({
     userId: i.id,
     context: f
-  }), Z = (0, a.e7)([W.Z], () => W.Z.isPrioritySpeaker(i.id, f)), C = (0, a.e7)([R.Z], () => null != R.Z.getStreamForUser(i.id, g)), j = s.useMemo(() => null != E && E.ownerId !== i.id && x.includes(i.id), [E, i.id, x]);
+  }), Z = (0, a.e7)([V.Z], () => V.Z.isPrioritySpeaker(i.id, f)), C = (0, a.e7)([R.Z], () => null != R.Z.getStreamForUser(i.id, g)), j = s.useMemo(() => null != E && E.ownerId !== i.id && x.includes(i.id), [E, i.id, x]);
   if (d === $.OYC.ONLY_WHILE_SPEAKING && n && !S) return null;
   let I = i.id === b,
     {
@@ -439,11 +439,11 @@ class el extends(i = Chunk647438.PureComponent) {
 
 function ea(e) {
   var t;
-  let n = (0, a.e7)([V.Z, L.Z], () => L.Z.getChannel(V.Z.getVoiceChannelId())),
+  let n = (0, a.e7)([W.Z, L.Z], () => L.Z.getChannel(W.Z.getVoiceChannelId())),
     i = (0, b.ZP)(n),
     o = function() {
-      let [e] = (0, a.e7)([G.ZP, w.Z, V.Z, L.Z], () => {
-        let e = L.Z.getChannel(V.Z.getVoiceChannelId());
+      let [e] = (0, a.e7)([G.ZP, w.Z, W.Z, L.Z], () => {
+        let e = L.Z.getChannel(W.Z.getVoiceChannelId());
         return null == e ? [
           [], false
         ] : e.isGuildStageVoice() ? [w.Z.getMutableParticipants(e.id, N.pV.SPEAKER), w.Z.getParticipantsVersion(e.id)] : [G.ZP.getVoiceStatesForChannel(e), G.ZP.getVoiceStateVersion(e.getGuildId())]

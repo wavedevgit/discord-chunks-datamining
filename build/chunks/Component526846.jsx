@@ -221,7 +221,7 @@ let D = Chunk647438.forwardRef(function(e, t) {
             }
           }), (0, i.jsxs)("div", {
             className: M.activityContainer,
-            children: [B.map(e => (0, i.jsx)(N.Y, {
+            children: [B.map(e => (0, i.jsx)(T.Y, {
               context: {
                 channel: l,
                 type: "channel"
@@ -230,7 +230,7 @@ let D = Chunk647438.forwardRef(function(e, t) {
               onClick: () => {
                 s(), g()
               },
-              aspectRatio: N.Y.AspectRatio.THIRTEEN_BY_ELEVEN,
+              aspectRatio: T.Y.AspectRatio.THIRTEEN_BY_ELEVEN,
               animatedDivClass: M.activitySuggestion,
               commandOrigin: y.bB.MINI_SHELF
             }, e.application.id)), (0, i.jsx)("div", {
@@ -239,7 +239,7 @@ let D = Chunk647438.forwardRef(function(e, t) {
               }),
               children: (0, i.jsx)("div", {
                 className: M.wumpusRocketInnerContainer,
-                children: (0, i.jsx)(T.Z, {
+                children: (0, i.jsx)(N.Z, {
                   className: M.wumpusRocket
                 })
               })

@@ -46,7 +46,7 @@ function Z() {
         user: n,
         comparator: h.ZP.getName(n)
       }), e
-    }, []).sort(T)
+    }, []).sort(N)
   }(module), true;
   let t = null != module ? module.recipients : [];
   if (null != i) {
@@ -83,13 +83,13 @@ function Z() {
   returnfalse
 }
 
-function N() {
+function T() {
   if (!_) returnfalse;
   let e = j;
   return (j = Chunk699516.Z.getFriendCount() > 0) !== module
 }
 
-function T(e, t) {
+function N(e, t) {
   if (m.Z.hasConsented(y.pjP.PERSONALIZATION)) {
     var n, i, r, l;
     let a = null != (r = null == (n = u.Z.getUserAffinity(e.user.id)) ? true : n.communicationProbability) ? r : 0,
@@ -125,7 +125,7 @@ function w() {
 
 function M(e) {
   if (e.key !== y.vTt) returnfalse;
-  _ = true, N(), i = w(), S = null, I("")
+  _ = true, T(), i = w(), S = null, I("")
 }
 
 function R(e) {
@@ -138,7 +138,7 @@ function k() {
 }
 class L extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk594174.default, Chunk592125.Z, Chunk699516.Z, Chunk353926.Z, Chunk480294.Z), this.syncWith([Chunk594174.default, Chunk592125.Z], Z), this.syncWith([Chunk699516.Z], N)
+    this.waitFor(Chunk594174.default, Chunk592125.Z, Chunk699516.Z, Chunk353926.Z, Chunk480294.Z), this.syncWith([Chunk594174.default, Chunk592125.Z], Z), this.syncWith([Chunk699516.Z], T)
   }
   getResults() {
     return O
@@ -183,7 +183,7 @@ let D = new L(Chunk570140.Z, {
     MODAL_PUSH: M,
     SHOW_ACTION_SHEET: M,
     PRIVATE_CHANNEL_RECIPIENTS_INVITE_OPEN: function(e) {
-      _ = true, N(), i = w(), S = e.channelId, I("")
+      _ = true, T(), i = w(), S = e.channelId, I("")
     },
     MODAL_POP: R,
     HIDE_ACTION_SHEET: R,

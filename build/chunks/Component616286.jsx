@@ -91,8 +91,8 @@ function j(e) {
     disabled: S
   } = j, P = r.useRef(null), I = (0, s.e7)([d.Z], () => d.Z.getChatOpen(n), [n]), {
     isShowing: Z,
-    unreadCount: N,
-    mentionCount: T
+    unreadCount: T,
+    mentionCount: N
   } = function(e) {
     let {
       unreadCount: t,
@@ -145,9 +145,9 @@ function j(e) {
     }
   }, [R]);
   let D = [t = f && S ? v.intl.string(v.t.DPgc5u) : I ? v.intl.string(v.t.nthdxM) : v.intl.string(v.t["5KxXrK"])];
-  return T > 0 && D.push(v.intl.formatToPlainString(v.t["3l1GOz"], {
-    mentionCount: T
-  })), N > 0 && D.push(v.intl.string(v.t.x5zAGR)), (0, i.jsx)(y.Z, function(e) {
+  return N > 0 && D.push(v.intl.formatToPlainString(v.t["3l1GOz"], {
+    mentionCount: N
+  })), T > 0 && D.push(v.intl.string(v.t.x5zAGR)), (0, i.jsx)(y.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         i = Object.keys(n);

@@ -50,7 +50,7 @@ function _(e) {
     P(true)
   }, [P]), Z = l.useCallback(() => {
     P(false)
-  }, [P]), N = l.useMemo(() => (0, r.jsx)("div", {
+  }, [P]), T = l.useMemo(() => (0, r.jsx)("div", {
     className: g.overlayBadge,
     children: (0, r.jsx)("div", {
       className: g.badgeContainer,
@@ -58,7 +58,7 @@ function _(e) {
         labelType: E
       })
     })
-  }), [E]), T = l.useMemo(() => {
+  }), [E]), N = l.useMemo(() => {
     switch (j) {
       case u.JS.JOIN:
         return (0, r.jsx)("div", {
@@ -123,7 +123,7 @@ function _(e) {
               applicationName: i.application.name,
               imageClassName: g.activitySuggestionImage,
               imageNotFoundClassName: g.brokenImageIconWrapper
-            }), N, T]
+            }), T, N]
           })
         })
       }

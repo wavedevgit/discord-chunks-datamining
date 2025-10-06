@@ -33,7 +33,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk183334 = require("./183334.js");
 
-function T(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -77,27 +77,27 @@ function w(e) {
   return r.useEffect(() => {
     null != f && s !== f && (h(true), setTimeout(() => h(false), 1e3))
   }, [s, f]), (0, i.jsxs)(u.P3F, {
-    className: a()(t, N.card, {
-      [N.completed]: s
+    className: a()(t, T.card, {
+      [T.completed]: s
     }),
     onClick: c,
     children: [null != l ? l : (0, i.jsx)("img", {
-      className: N.icon,
+      className: T.icon,
       src: n,
       alt: ""
     }), (0, i.jsx)(u.Text, {
       color: "header-primary",
-      className: a()(N.cardTextContainer, N.cardHeader),
+      className: a()(T.cardTextContainer, T.cardHeader),
       variant: "text-sm/normal",
       children: o
     }), s ? (0, i.jsx)(u.dz2, {
       size: "md",
       color: "currentColor",
-      className: a()(N.checkmark, {
-        [N.animate]: d
+      className: a()(T.checkmark, {
+        [T.animate]: d
       })
     }) : (0, i.jsx)(v.Z, {
-      className: N.arrow,
+      className: T.arrow,
       direction: v.Z.Directions.RIGHT
     })]
   })
@@ -132,7 +132,7 @@ function M(e) {
           let {
             default: t
           } = await Promise.all([n.e("7654"), n.e("49049"), n.e("98953")]).then(n.bind(n, 560114));
-          return n => (0, i.jsx)(t, A(T({}, n), {
+          return n => (0, i.jsx)(t, A(N({}, n), {
             guild: e,
             source: P.t4x.CHANNEL_WELCOME,
             analyticsLocation: {
@@ -170,7 +170,7 @@ function M(e) {
           let {
             default: e
           } = await Promise.all([n.e("32996"), n.e("74023")]).then(n.bind(n, 431583));
-          return t => (0, i.jsx)(e, T({
+          return t => (0, i.jsx)(e, N({
             source: P.jXE.CHANNEL_WELCOME_CTA
           }, t))
         })
@@ -185,7 +185,7 @@ function M(e) {
           } = await n.e("77046").then(n.bind(n, 272509));
           return n => {
             var r;
-            return (0, i.jsx)(t, A(T({
+            return (0, i.jsx)(t, A(N({
               guildId: null != (r = e.id) ? r : ""
             }, n), {
               analyticsType: c.z.APP_DIRECTORY_SERVER_SETUP_UPSELL_MODAL
@@ -196,7 +196,7 @@ function M(e) {
     }
   }(l), W = !(L || D || U || B), {
     titleAnimatedStyle: q,
-    opacities: K
+    opacities: Y
   } = function(e) {
     let t = (0, d.Z)(() => new o.Z.Value(0)),
       n = (0, d.Z)(() => new o.Z.Value(0)),
@@ -233,7 +233,7 @@ function M(e) {
       } : {},
       opacities: i
     }
-  }(W), [Y, X] = r.useState([]), J = Y.length > 0;
+  }(W), [K, X] = r.useState([]), J = K.length > 0;
   if (r.useEffect(() => {
       (async () => {
         try {
@@ -245,9 +245,9 @@ function M(e) {
     }, [null == l ? true : l.id]), null == l) return null;
   let Q = [];
   p || (M && Q.push((0, i.jsx)(o.Z.div, {
-    className: N.cardWrapper,
+    className: T.cardWrapper,
     style: W ? {
-      opacity: K[Q.length]
+      opacity: Y[Q.length]
     } : {},
     children: (0, i.jsx)(w, {
       iconUrl: u.YvY,
@@ -256,9 +256,9 @@ function M(e) {
       onClick: H
     })
   }, "invite")), R && Q.push((0, i.jsx)(o.Z.div, {
-    className: N.cardWrapper,
+    className: T.cardWrapper,
     style: W ? {
-      opacity: K[Q.length]
+      opacity: Y[Q.length]
     } : {},
     children: (0, i.jsx)(w, {
       iconUrl: u.$_T,
@@ -267,9 +267,9 @@ function M(e) {
       onClick: F
     })
   }, "customize")), k && Q.push((0, i.jsx)(o.Z.div, {
-    className: N.cardWrapper,
+    className: T.cardWrapper,
     style: W ? {
-      opacity: K[Q.length]
+      opacity: Y[Q.length]
     } : {},
     children: (0, i.jsx)(w, {
       iconUrl: u.qMX,
@@ -278,9 +278,9 @@ function M(e) {
       onClick: V
     })
   }, "message")), (0, j.isWeb)() && Q.push((0, i.jsx)(o.Z.div, {
-    className: N.cardWrapper,
+    className: T.cardWrapper,
     style: W ? {
-      opacity: K[Q.length]
+      opacity: Y[Q.length]
     } : {},
     children: (0, i.jsx)(w, {
       iconUrl: u.yIb,
@@ -289,9 +289,9 @@ function M(e) {
       onClick: G
     })
   }, "download")), Q.push((0, i.jsx)(o.Z.div, {
-    className: N.cardWrapper,
+    className: T.cardWrapper,
     style: W ? {
-      opacity: K[Q.length]
+      opacity: Y[Q.length]
     } : {},
     children: (0, i.jsx)(w, {
       iconUrl: u.Tg$,
@@ -306,13 +306,13 @@ function M(e) {
   return (0, i.jsx)(S.ZP, {
     channelId: t.id,
     children: (0, i.jsx)("div", {
-      className: N.container,
+      className: T.container,
       children: (0, i.jsxs)("div", {
-        className: N.inner,
+        className: T.inner,
         children: [(0, i.jsxs)(o.Z.div, {
           style: q,
           children: [(0, i.jsx)(u.X6q, {
-            className: N.titleName,
+            className: T.titleName,
             variant: "heading-xxl/medium",
             children: Z.intl.format(Z.t.rkHVKS, {
               guildName: l.name
@@ -320,8 +320,8 @@ function M(e) {
           }), (0, i.jsxs)(u.Text, {
             color: "header-secondary",
             className: a()({
-              [N.subtitle]: true,
-              [N.noChildren]: 0 === Q.length
+              [T.subtitle]: true,
+              [T.noChildren]: 0 === Q.length
             }),
             variant: "text-sm/normal",
             children: [$, " ", Q.length > 0 ? Z.intl.format(Z.t.UOtD39, {

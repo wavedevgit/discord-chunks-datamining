@@ -30,9 +30,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk489887 = require("./489887.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk749723 = require("./749723.js");
-let N = RegExp("(.*)```(\\w+)\\n(.*)```(.*)", "s");
+let T = RegExp("(.*)```(\\w+)\\n(.*)```(.*)", "s");
 
-function T() {
+function N() {
   let e = (0, Chunk442837.e7)([Chunk375954.Z], () => Chunk375954.Z.hasCurrentUserSentMessageSinceAppStart()),
     t = [];
   module && exports.push(Chunk704215.z.ACTIVITIES_CHAT_MENU_NEW_BADGE);
@@ -152,7 +152,7 @@ function A(e) {
     let e = w,
       n = "txt",
       i = "",
-      r = w.match(N);
+      r = w.match(T);
     null != r && (i = r[1], n = r[2], e = r[3], i += r[4]), (0, x.d)([(0, v.dp)(new Blob([e], {
       type: "text/plain"
     }), "message.".concat(n), "text/plain")], t, A), _.S.dispatchToLastSubscribed(E.CkL.CLEAR_TEXT), "" !== i && _.S.dispatchToLastSubscribed(E.CkL.INSERT_TEXT, {
@@ -272,7 +272,7 @@ function A(e) {
             id: "activity",
             label: r,
             action: F,
-            hint: (0, i.jsx)(T, {})
+            hint: (0, i.jsx)(N, {})
           }, "activity");
         case j.r.SCHEDULED_MESSAGE:
           return (0, i.jsx)(s.sNh, {

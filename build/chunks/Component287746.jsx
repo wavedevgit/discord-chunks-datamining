@@ -230,12 +230,12 @@ class e9 extends Chunk647438.PureComponent {
         name: null != (o = null == l || null == (a = l.bot) ? true : a.username) ? o : l.name,
         application: l
       } : null;
-      N.Po({
+      T.Po({
         channelId: t.id,
         command: r,
         section: e,
         location: M.Vh.RECALL,
-        initialValues: (0, T.Dw)(r, null != i ? i : []),
+        initialValues: (0, N.Dw)(r, null != i ? i : []),
         commandOrigin: M.bB.CHAT
       })
     }
@@ -367,7 +367,7 @@ class e9 extends Chunk647438.PureComponent {
           return void this.handleIncrementCombo("", 1);
         case eJ.yXg.ARROW_UP:
           if (r || l) return;
-          if (e.preventDefault(), t) eN.Z.getUploadCount(i.id, ej.d.ChannelMessage) > 0 ? eR.S.dispatchToLastSubscribed(eJ.CkL.FOCUS_ATTACHMENT_AREA) : eR.S.dispatchToLastSubscribed(eJ.CkL.FOCUS_MESSAGES, {
+          if (e.preventDefault(), t) eT.Z.getUploadCount(i.id, ej.d.ChannelMessage) > 0 ? eR.S.dispatchToLastSubscribed(eJ.CkL.FOCUS_ATTACHMENT_AREA) : eR.S.dispatchToLastSubscribed(eJ.CkL.FOCUS_MESSAGES, {
             atEnd: true
           });
           else {
@@ -380,7 +380,7 @@ class e9 extends Chunk647438.PureComponent {
         case eJ.yXg.ESCAPE:
           if (r || e.target !== e.currentTarget) return;
           if (e.preventDefault(), t) return void(0, _.rf)();
-          if (eN.Z.getUploadCount(i.id, ej.d.ChannelMessage) > 0) return void g.Z.clearAll(i.id, ej.d.ChannelMessage)
+          if (eT.Z.getUploadCount(i.id, ej.d.ChannelMessage) > 0) return void g.Z.clearAll(i.id, ej.d.ChannelMessage)
       }
       null == n || n(e, l)
     }), e2(this, "handleIncrementCombo", (e, t) => {
@@ -554,7 +554,7 @@ class e9 extends Chunk647438.PureComponent {
               analyticsLocations: [],
               code: i,
               reason: r
-            }) && ("" !== t && "" === ej.Z.getDraft(d.id, ej.d.ChannelMessage) && h.Z.saveDraft(d.id, t, ej.d.ChannelMessage), 0 === eN.Z.getUploadCount(d.id, ej.d.ChannelMessage) && g.Z.setUploads({
+            }) && ("" !== t && "" === ej.Z.getDraft(d.id, ej.d.ChannelMessage) && h.Z.saveDraft(d.id, t, ej.d.ChannelMessage), 0 === eT.Z.getUploadCount(d.id, ej.d.ChannelMessage) && g.Z.setUploads({
               channelId: d.id,
               uploads: n,
               draftType: ej.d.ChannelMessage
@@ -652,8 +652,8 @@ class te extends Chunk647438.PureComponent {
         recipientUser: P,
         voiceChannel: I,
         messagesTypingGradient: Z,
-        showLinkedLobbyApplicationLoadingIndicator: N,
-        announcementComposerEnabled: T
+        showLinkedLobbyApplicationLoadingIndicator: T,
+        announcementComposerEnabled: N
       } = this.props,
       {
         textAreaFocused: A,
@@ -870,10 +870,10 @@ class te extends Chunk647438.PureComponent {
       } = e;
       return t.type === eJ.d4z.DM && n ? (0, i.jsx)(ed.Z, {}) : t.isModeratorReportChannel() && t.isArchivedThread() ? (0, i.jsx)(ef.Z, {
         channelId: t.id
-      }) : null != l && (0, Y.J)(l) && null != r && !eI.Z.can(eJ.Plq.ADMINISTRATOR, r) ? (0, i.jsx)(J.T, {
+      }) : null != l && (0, K.J)(l) && null != r && !eI.Z.can(eJ.Plq.ADMINISTRATOR, r) ? (0, i.jsx)(J.T, {
         guild: r,
         disabledUntil: l
-      }) : a ? (0, i.jsx)(K.h, {
+      }) : a ? (0, i.jsx)(Y.h, {
         guild: r
       }) : null
     }), e2(this, "renderAppLauncherButton", () => {
@@ -921,7 +921,7 @@ let tt = Chunk647438.memo(function(e) {
     accessibilityLabel: s
   } = (0, eV.Z)({
     channel: t
-  }), c = (0, ed.S)(eT.default.getCurrentUser(), t), [u] = (0, X.AB)(null == n ? true : n.id), h = (0, q.Ux)(null == n ? true : n.id), f = (0, d.e7)([eT.default], () => eT.default.getCurrentUser()), m = (0, d.e7)([eS.ZP], () => {
+  }), c = (0, ed.S)(eN.default.getCurrentUser(), t), [u] = (0, X.AB)(null == n ? true : n.id), h = (0, q.Ux)(null == n ? true : n.id), f = (0, d.e7)([eN.default], () => eN.default.getCurrentUser()), m = (0, d.e7)([eS.ZP], () => {
     var e, t, i;
     return null != f && null != (i = null == (e = eS.ZP.getMember(null != (t = null == n ? true : n.id) ? t : eJ.lds, null == f ? true : f.id)) ? true : e.isPending) && i
   }), g = (0, d.e7)([eo.Z], () => eo.Z.isEnabled()), C = (0, eu.Z)(t.id), y = (0, Q.Z)(t.id), _ = (0, Z.R)({
@@ -929,8 +929,8 @@ let tt = Chunk647438.memo(function(e) {
     chatInputType: l
   }), x = (0, E.Z)(t), S = (0, eg.k)(t.id), {
     isInitialLoading: I,
-    primaryEntryPointCommand: N,
-    isProfileFetching: T,
+    primaryEntryPointCommand: T,
+    isProfileFetching: N,
     wasProfileFetching: A,
     applicationId: w,
     channelId: M,
@@ -942,7 +942,7 @@ let tt = Chunk647438.memo(function(e) {
     }
   });
   (0, j.Z)({
-    isProfileFetching: T,
+    isProfileFetching: N,
     wasProfileFetching: A,
     applicationId: w,
     channelId: M,
@@ -952,7 +952,7 @@ let tt = Chunk647438.memo(function(e) {
     L = (0, d.e7)([P.Z], () => P.Z.appDMChannelsWithFailedLoads().has(t.id)),
     D = (0, d.e7)([eZ.Z], () => eZ.Z.getVoiceChannelId()),
     U = (0, d.e7)([eO.Z], () => eO.Z.getChannel(D)),
-    B = (0, d.e7)([eT.default], () => t.type !== eJ.d4z.DM ? null : eT.default.getUser(t.getRecipientId())),
+    B = (0, d.e7)([eN.default], () => t.type !== eJ.d4z.DM ? null : eN.default.getUser(t.getRecipientId())),
     H = (0, d.e7)([es.ZP, ev.default], () => es.ZP.getUserCombo(ev.default.getId(), t.id)),
     V = (0, b.iD)(t),
     F = (0, b.d7)(t),
@@ -960,7 +960,7 @@ let tt = Chunk647438.memo(function(e) {
     {
       showLinkedLobbyApplicationLoadingIndicator: W
     } = (0, eH.Z)(t.linkedLobby),
-    K = (0, z.Z)("ChannelChat");
+    Y = (0, z.Z)("ChannelChat");
   return (0, i.jsx)(te, {
     channel: t,
     isEditing: null != (0, d.e7)([eE.Z], () => eE.Z.getEditingMessageId(t.id)),
@@ -981,7 +981,7 @@ let tt = Chunk647438.memo(function(e) {
     showAppLauncherButton: _,
     showAppDMsUI: x,
     isInitialLoading: I,
-    showEntryPointAppCommandButton: null != N,
+    showEntryPointAppCommandButton: null != T,
     entryPointCommandButtonRef: k,
     isFailedAppDMLoad: L,
     pendingScheduledMessage: S,
@@ -989,6 +989,6 @@ let tt = Chunk647438.memo(function(e) {
     voiceChannel: U,
     messagesTypingGradient: G,
     showLinkedLobbyApplicationLoadingIndicator: W,
-    announcementComposerEnabled: K
+    announcementComposerEnabled: Y
   })
 })

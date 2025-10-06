@@ -55,15 +55,15 @@ function d(e) {
       I = null,
       Z = (0, s.DQ)(e);
     y = y || Z;
-    let N = function(e, t, n) {
+    let T = function(e, t, n) {
       if (i.V.NON_COLLAPSIBLE.has(t.type));
       else if (t.blocked) return u.ys_.MESSAGE_GROUP_BLOCKED;
       else if (t.ignored) return u.ys_.MESSAGE_GROUP_IGNORED;
       else if ((0, s.P1)(e) && n) return u.ys_.MESSAGE_GROUP_SPAMMER;
       return null
     }(p, e, Z && m);
-    (null !== N && ([I, P] = (E = x = P, null == x || x.type !== N ? (j = {
-      type: N,
+    (null !== T && ([I, P] = (E = x = P, null == x || x.type !== T ? (j = {
+      type: T,
       content: [],
       key: e.id
     }, C.push(j)) : E = (j = x).content[j.content.length - 1], [j, E])), f === e.id && null != _) ? (null != P && P.type === u.ys_.DIVIDER ? P.unreadId = e.id : null !== I ? (O = I, e.isFirstMessageInForumPost(p) || O.content.push({
@@ -76,11 +76,11 @@ function d(e) {
       type: u.ys_.DIVIDER,
       unreadId: e.id
     }), _ = null);
-    let T = (0, c.f)(e, p);
-    null != T && C.push({
+    let N = (0, c.f)(e, p);
+    null != N && C.push({
       type: u.ys_.MESSAGE,
-      content: T,
-      groupId: T.id
+      content: N,
+      groupId: N.id
     });
     let A = (null == P ? true : P.type) === u.ys_.MESSAGE ? d : P;
     (0, o.J)(p, A, e) && (n = e.id);

@@ -41,7 +41,7 @@ function M(e) {
     guildId: n
   } = e, r = (0, c.Wu)([P.Z, I.Z], () => {
     let e = Date.now();
-    return s()(P.Z.getSpeakers()).map(e => I.Z.getParticipant(t, e)).filter(e => null != e && e.type === T.fO.USER && e.speaking && !(0, _.ZP)(e)).sortBy(t => -P.Z.getSpeakingDuration(t.user.id, e)).slice(0, 3).value()
+    return s()(P.Z.getSpeakers()).map(e => I.Z.getParticipant(t, e)).filter(e => null != e && e.type === N.fO.USER && e.speaking && !(0, _.ZP)(e)).sortBy(t => -P.Z.getSpeakingDuration(t.user.id, e)).slice(0, 3).value()
   });
   return 0 === r.length ? null : (0, i.jsx)(i.Fragment, {
     children: r.map((e, t) => (0, i.jsx)(u.u, {
@@ -80,7 +80,7 @@ function R(e) {
     participantsListOpen: I.Z.getParticipantsListOpen(s)
   }), [s]), A = t.isGuildVoice() && !n, {
     hasParticipantsPanel: R
-  } = (0, N.Z)({
+  } = (0, T.Z)({
     location: "ChannelCallHeaderToolbar"
   }), k = !P && R && (t.isGuildVoice() || t.isGroupDM()), {
     enabled: L,
@@ -94,7 +94,7 @@ function R(e) {
   }, "current-speaker")), U.push((0, i.jsx)(g.Z, {
     className: w.button,
     channelId: s
-  }, "clips-enabled-indicator")), (null == _ ? true : _.type) === T.fO.STREAM && (U.push((0, i.jsx)(v.Z, {
+  }, "clips-enabled-indicator")), (null == _ ? true : _.type) === N.fO.STREAM && (U.push((0, i.jsx)(v.Z, {
     className: w.button,
     participant: _
   }, "warning")), U.push((0, i.jsx)(b.Z, {
@@ -103,7 +103,7 @@ function R(e) {
     participant: _,
     showQuality: true,
     premiumIndicator: false
-  }, "live-indicator"))), (null == _ ? true : _.type) === T.fO.USER && U.push((0, i.jsx)(x.Z, {
+  }, "live-indicator"))), (null == _ ? true : _.type) === N.fO.USER && U.push((0, i.jsx)(x.Z, {
     className: w.button,
     userId: _.id
   }, "video-warning")), u && !R && U.push((0, i.jsx)(d.yRy, {

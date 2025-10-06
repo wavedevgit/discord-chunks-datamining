@@ -2,6 +2,5 @@
 /** chunk id: 653773, original params: e,t,n (module,exports,require) **/
 "use strict";
 module.exports = {
-  footer: "footer__8e8b5",
-  ctaButton: "ctaButton__8e8b5"
+  footer: "footer__8e8b5"
 }

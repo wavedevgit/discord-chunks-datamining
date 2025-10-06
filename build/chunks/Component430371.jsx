@@ -65,8 +65,8 @@ function I(e) {
       onSelectParticipant: l,
       onContextMenuParticipant: I,
       onFullscreenParticipant: Z,
-      participants: N,
-      filteredParticipants: T,
+      participants: T,
+      filteredParticipants: N,
       popoutWindow: A,
       inCall: w,
       channel: M,
@@ -83,7 +83,7 @@ function I(e) {
     G = p.default.getId(),
     [z, W] = r.useState(null),
     q = (0, c.Z)(z),
-    [K, Y] = r.useState(true),
+    [Y, K] = r.useState(true),
     [X, J] = r.useState(false),
     Q = R.type === v.fO.ACTIVITY,
     $ = (0, u.Z)(Q ? R.applicationId : true),
@@ -104,13 +104,13 @@ function I(e) {
     eh = U > D / ec + 72 + P + 8;
   n = en || Q ? en ? false : false : 40 + Math.max(0, 72 - (U - ep) / 2), r.useEffect(() => {
     let e = setTimeout(() => {
-      Y(false)
+      K(false)
     }, 250);
     return () => {
       clearTimeout(e)
     }
   }, []);
-  let ef = K || null == q,
+  let ef = Y || null == q,
     em = ef ? "animate-never" : "animate-always",
     eg = (0, s.q_F)({
       value: +!!en,
@@ -159,19 +159,19 @@ function I(e) {
       }
     }, em),
     ev = r.useCallback(e => {
-      W(e), Y(false)
+      W(e), K(false)
     }, []),
-    ex = en ? [] : (0, C.n3)(N, R, G),
+    ex = en ? [] : (0, C.n3)(T, R, G),
     {
       visibleParticipants: eO,
       participantTileWidth: ej
-    } = (0, y.ZB)(D, T);
+    } = (0, y.ZB)(D, N);
   return (0, i.jsxs)("div", {
     className: a()(O.root, x.flexCenter, L),
     children: [(0, i.jsxs)("div", {
       className: O.tileWrapper,
       style: {
-        opacity: ee && K ? 0 : 1
+        opacity: ee && Y ? 0 : 1
       },
       children: [(0, i.jsxs)(o.animated.div, {
         className: O.videoFrame,

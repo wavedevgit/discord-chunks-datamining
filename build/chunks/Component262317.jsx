@@ -125,8 +125,8 @@ let B = (0, Chunk888651.$)(function(e) {
     serverMute: z,
     serverDeaf: W,
     nick: q,
-    ringing: K,
-    speaking: Y,
+    ringing: Y,
+    speaking: K,
     disconnected: X,
     connectUserDragSource: J,
     canDrag: Q,
@@ -150,17 +150,17 @@ let B = (0, Chunk888651.$)(function(e) {
     showHangStatus: eg
   } = e, eb = r.useRef(null), [eC, ey] = r.useState(false), [e_, ev] = r.useState(false), [ex, eO] = r.useState(false), [ej, eE] = r.useState(false), eS = ex || ej, eP = e_ || eS, eI = (null == em ? true : em.session_id) != null, eZ = () => {
     ey(!eC)
-  }, eN = (e, t) => {
+  }, eT = (e, t) => {
     let n = new Set(["system:click_outside", "user:escape", "user:explicit"]);
-    ej && null != t && n.has(t) && eE(false), eT()
-  }, eT = () => {
+    ej && null != t && n.has(t) && eE(false), eN()
+  }, eN = () => {
     ($ || eg || eI) && (null == er || er(p.id))
   }, eA = e => {
     e && ea && ev(true)
   }, ew = e => {
     e && ev(false)
   }, eM = () => {
-    if (!($ && (0, y.p9)(D, T.Z, I.Z, Z.Z, g.Z)[0])) return;
+    if (!($ && (0, y.p9)(D, N.Z, I.Z, Z.Z, g.Z)[0])) return;
     let e = {
       streamType: w.lo.GUILD,
       ownerId: p.id,
@@ -206,9 +206,9 @@ let B = (0, Chunk888651.$)(function(e) {
     onMouseEnter: ec ? true : () => {
       ($ || eg || eI) && !eC && (null == ei || ei(p.id))
     },
-    onMouseLeave: ec ? true : eT,
+    onMouseLeave: ec ? true : eN,
     children: (0, i.jsx)(E.Z, {
-      clickTrap: (null == p ? true : p.id) === (null == (t = N.default.getCurrentUser()) ? true : t.id) && eC,
+      clickTrap: (null == p ? true : p.id) === (null == (t = T.default.getCurrentUser()) ? true : t.id) && eC,
       targetElementRef: eb,
       user: p,
       guildId: D.guild_id,
@@ -220,7 +220,7 @@ let B = (0, Chunk888651.$)(function(e) {
         let t = A.al.has(null != eo ? eo : ""),
           n = {
             user: p,
-            speaking: Y,
+            speaking: K,
             disconnected: X,
             mute: U,
             localMute: B,
@@ -229,7 +229,7 @@ let B = (0, Chunk888651.$)(function(e) {
             isGuest: et,
             video: F,
             priority: en,
-            ringing: K,
+            ringing: Y,
             deaf: V,
             nick: q,
             collapsed: l,
@@ -290,7 +290,7 @@ let B = (0, Chunk888651.$)(function(e) {
           position: "right",
           renderPopout: s,
           shouldShow: (el || eg && eS) && !eC,
-          onRequestClose: eN,
+          onRequestClose: eT,
           align: eg && eP && !ep ? "center" : true,
           spacing: eg && eP ? 8 : 0,
           children: () => (0, i.jsx)(S.ZP, L(k({}, n), {

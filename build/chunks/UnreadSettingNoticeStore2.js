@@ -54,7 +54,7 @@ let y = [{
   S = 0;
 
 function P() {
-  if (null == j || !N(j)) returnfalse;
+  if (null == j || !T(j)) returnfalse;
   let e = Z(j);
   if (module.lastActionTime > Date.now() - Chunk70956.Z.Millis.DAY && module.viewDuration > _) returnfalse;
   let t = Date.now();
@@ -75,15 +75,15 @@ function Z(e) {
   }), x.channels[e]
 }
 
-function N(e) {
+function T(e) {
   if (!u.ZP.useNewNotifications || O.has(e)) returnfalse;
   let t = o.Z.getBasicChannel(e);
-  if (null == t || null == t.guild_id || u.ZP.isGuildOrCategoryOrChannelMuted(t.guild_id, t.id) || T(t.guild_id, t.id) || T(t.guild_id, t.parent_id)) returnfalse;
+  if (null == t || null == t.guild_id || u.ZP.isGuildOrCategoryOrChannelMuted(t.guild_id, t.id) || N(t.guild_id, t.id) || N(t.guild_id, t.parent_id)) returnfalse;
   let n = u.ZP.resolveUnreadSetting(t);
   return u.ZP.getChannelUnreadSetting(t.guild_id, t.id) === g.i.UNSET && n !== g.i.ALL_MESSAGES
 }
 
-function T(e, t) {
+function N(e, t) {
   if (null == t) returnfalse;
   let n = u.ZP.getChannelOverrides(e)[t];
   return null != n && !!(null != n.message_notifications && n.message_notifications !== m.bL.NULL || null != n.flags && (0, p.EB)(n.flags, b.ic.UNREADS_ALL_MESSAGES | b.ic.UNREADS_ONLY_MENTIONS))
@@ -100,7 +100,7 @@ class A extends(i = Chunk442837.ZP.PersistedStore) {
     return null != (n = null == (t = x.channels[e]) ? true : t.lastActionTime) ? n : 0
   }
   maybeAutoUpgradeChannel(e) {
-    if (!N(e)) returnfalse;
+    if (!T(e)) returnfalse;
     let t = o.Z.getBasicChannel(e);
     return null != t && null != t.guild_id && !! function(e) {
       var t;
@@ -133,7 +133,7 @@ let w = new A(Chunk570140.Z, {
     },
     MESSAGE_CREATE: function(e) {
       var t;
-      if (e.optimistic || e.isPushNotification || (null == (t = e.message.author) ? true : t.id) !== a.default.getId() || !N(e.channelId)) returnfalse;
+      if (e.optimistic || e.isPushNotification || (null == (t = e.message.author) ? true : t.id) !== a.default.getId() || !T(e.channelId)) returnfalse;
       let n = Z(e.channelId);
       n.lastActionTime = Date.now(), n.numSends++
     }

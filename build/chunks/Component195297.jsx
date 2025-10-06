@@ -32,9 +32,9 @@ function P(e) {
     analyticsPage: R
   } = e, [j, v] = a.useState(false), y = (0, l.vRw)(), C = (0, d.Dt)(), {
     analyticsLocations: I,
-    newestAnalyticsLocation: L
+    newestAnalyticsLocation: Z
   } = (0, s.ZP)(c.Z.GIF_PICKER);
-  async function Z(e) {
+  async function B(e) {
     let {
       gifSrc: t
     } = e;
@@ -86,8 +86,8 @@ function P(e) {
       }
     })
   }, [I, R]);
-  let B = b === x.pC.AVATAR || b === x.pC.BANNER,
-    w = (0, f.M)(!B);
+  let w = b === x.pC.AVATAR || b === x.pC.BANNER,
+    L = (0, f.M)(!w);
   return (0, i.jsx)(s.Gt, {
     value: I,
     children: (0, i.jsxs)(l.Y0X, {
@@ -95,7 +95,7 @@ function P(e) {
       transitionState: t,
       size: l.CgR.SMALL,
       parentComponent: "GIFPickerCroppingModal",
-      children: [E && !w && (0, i.jsx)(p.Z, {
+      children: [E && !L && (0, i.jsx)(p.Z, {
         type: b,
         analyticsPage: R,
         analyticsSection: N.jXE.GIF_PICKER_AVATAR_OR_BANNER_MODAL,
@@ -114,19 +114,19 @@ function P(e) {
       }), (0, i.jsxs)("div", {
         children: [(0, i.jsx)(u.Z, {
           contentClassName: r()({
-            [A.gifPickerContent]: E && w
+            [A.gifPickerContent]: E && L
           }),
           className: r()(A.gifPicker, {
             [A.loadingOverlay]: j
           }),
-          onSelectGIF: Z,
+          onSelectGIF: B,
           hideFavorites: true
         }), j && (0, i.jsx)(l.$jN, {
           className: A.spinner
         })]
-      }), E && w && (0, i.jsx)(_.Z, {
+      }), E && L && (0, i.jsx)(_.Z, {
         uploadType: b,
-        analyticsSource: L,
+        analyticsSource: Z,
         showUpsell: true,
         className: A.nitroUpsell
       })]

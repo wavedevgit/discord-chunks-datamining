@@ -102,7 +102,7 @@ function F(e) {
       (null == P ? true : P.bot) && W === _.M.NOT_FETCHED && s.Z.fetch()
     }, [null == P ? true : P.bot, W]), p.isSystemDM()) return F ? (0, i.jsx)(w.Z, {
     channel: p
-  }) : (0, i.jsx)(T.Z, {
+  }) : (0, i.jsx)(N.Z, {
     channel: p,
     children: U.intl.string(U.t.Rzvnio)
   });
@@ -110,7 +110,7 @@ function F(e) {
     let e;
     return null != P && null != G ? null != z && (e = (0, i.jsxs)("div", {
       className: B.buttonContainer,
-      children: [(0, i.jsx)(N.W, {
+      children: [(0, i.jsx)(T.W, {
         className: B.button,
         channel: p,
         user: P
@@ -127,7 +127,7 @@ function F(e) {
       userId: p.getRecipientId(),
       channel: p,
       showingBanner: h
-    }), (0, i.jsxs)(T.Z, {
+    }), (0, i.jsxs)(N.Z, {
       channel: p,
       user: P,
       children: [null != P && !P.isProvisional && (0, i.jsx)(a.X6q, {
@@ -155,7 +155,7 @@ function F(e) {
     else if (p.hasFlag(D.zZ.IS_JOIN_REQUEST_INTERVIEW_CHANNEL)) return (0, i.jsx)(I.Z, {
     channel: p
   });
-  else return (0, i.jsx)(T.Z, {
+  else return (0, i.jsx)(N.Z, {
     channel: p,
     children: U.intl.format(U.t.MFwcqK, {
       name: y

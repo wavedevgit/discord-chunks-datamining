@@ -54,8 +54,8 @@ function y(e) {
     look: P,
     size: I,
     buttonText: Z,
-    color: N
-  } = e, T = function(e, t) {
+    color: T
+  } = e, N = function(e, t) {
     if (null == e) return {};
     var n, i, r = function(e, t) {
       if (null == e) return {};
@@ -89,7 +89,7 @@ function y(e) {
     look: P,
     size: I,
     buttonText: Z,
-    color: null != N ? N : true
+    color: null != T ? T : true
   }) : null != R && null != y && f.Z.can(g.Plq.CREATE_INSTANT_INVITE, y) ? (0, i.jsx)(m.Z, C({
     onClick: () => {
       l()(null != R, "guild cannot be null"), l()(null != y, "channel cannot be null"), null != w && (0, u.v)(w, u.d.INVITE),
@@ -149,7 +149,7 @@ function y(e) {
     iconClassName: S,
     look: P,
     size: I,
-    color: N,
+    color: T,
     buttonText: Z
-  }, T)) : null
+  }, N)) : null
 }

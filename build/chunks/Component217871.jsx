@@ -146,7 +146,7 @@ let O = Chunk647438.memo(function(e) {
     }, [P]);
     let {
       multiplier: Z,
-      value: N
+      value: T
     } = r.useMemo(() => ({
       value: E ? P.value : I.current.value,
       multiplier: E ? P.multiplier : I.current.multiplier
@@ -160,7 +160,7 @@ let O = Chunk647438.memo(function(e) {
         className: x.combo,
         style: S,
         children: (0, i.jsx)(j, {
-          value: N,
+          value: T,
           multiplier: Z
         })
       })]

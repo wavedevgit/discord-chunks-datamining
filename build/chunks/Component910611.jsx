@@ -151,7 +151,7 @@ function L(e) {
   });
   switch (t.type) {
     case A.d4z.DM:
-      return (0, i.jsx)(T.Z, {
+      return (0, i.jsx)(N.Z, {
         level: y,
         channel: t,
         handleClick: c,
@@ -172,14 +172,14 @@ function L(e) {
     case A.d4z.GUILD_MEDIA:
       return null != t.linkedLobby ? (0, i.jsxs)(k, {
         channel: t,
-        children: [B(b, t.type === A.d4z.GUILD_ANNOUNCEMENT ? M.intl.string(M.t.l1dkSE) : M.intl.string(M.t.Pnajj4)), (0, i.jsx)(N.Z.Title, {
+        children: [B(b, t.type === A.d4z.GUILD_ANNOUNCEMENT ? M.intl.string(M.t.l1dkSE) : M.intl.string(M.t.Pnajj4)), (0, i.jsx)(T.Z.Title, {
           level: y,
           onContextMenu: d,
           onClick: c,
           children: _
         })]
       }) : (0, i.jsxs)(r.Fragment, {
-        children: [B(b, t.type === A.d4z.GUILD_ANNOUNCEMENT ? M.intl.string(M.t.l1dkSE) : M.intl.string(M.t.Pnajj4)), (0, i.jsx)(N.Z.Title, {
+        children: [B(b, t.type === A.d4z.GUILD_ANNOUNCEMENT ? M.intl.string(M.t.l1dkSE) : M.intl.string(M.t.Pnajj4)), (0, i.jsx)(T.Z.Title, {
           level: y,
           onContextMenu: d,
           onClick: c,
@@ -188,7 +188,7 @@ function L(e) {
       });
     case A.d4z.GUILD_VOICE:
       return (0, i.jsxs)(r.Fragment, {
-        children: [B(b, M.intl.string(M.t.BVZqJi)), (0, i.jsx)(N.Z.Title, {
+        children: [B(b, M.intl.string(M.t.BVZqJi)), (0, i.jsx)(T.Z.Title, {
           level: y,
           onContextMenu: d,
           onClick: c,
@@ -197,7 +197,7 @@ function L(e) {
       });
     case A.d4z.GUILD_STAGE_VOICE:
       return (0, i.jsxs)(r.Fragment, {
-        children: [B(b, M.intl.string(M.t.EErMzM)), (0, i.jsx)(N.Z.Title, {
+        children: [B(b, M.intl.string(M.t.EErMzM)), (0, i.jsx)(T.Z.Title, {
           level: y,
           onContextMenu: d,
           onClick: c,
@@ -211,18 +211,18 @@ function L(e) {
       if (!s && null != l) {
         let e = (0, f.KS)(l, o);
         x = (0, i.jsxs)(r.Fragment, {
-          children: [B(e, M.intl.string(M.t.Pnajj4)), (0, i.jsx)(N.Z.Title, {
+          children: [B(e, M.intl.string(M.t.Pnajj4)), (0, i.jsx)(T.Z.Title, {
             level: y,
             onContextMenu: m,
             onClick: p,
             className: a()(R.parentChannelName, R.cursorPointer),
             children: (0, h.F6)(l, O.default, v.Z)
-          }), (0, i.jsx)(N.Z.Caret, {})]
+          }), (0, i.jsx)(T.Z.Caret, {})]
         })
       }
       let j = (null == l ? true : l.type) != null && A.TPd.GUILD_THREADS_ONLY.has(l.type);
       return (0, i.jsxs)(r.Fragment, {
-        children: [x, B(j ? null : b, M.intl.string(M.t["7Xm5QE"])), (0, i.jsx)(N.Z.Title, {
+        children: [x, B(j ? null : b, M.intl.string(M.t["7Xm5QE"])), (0, i.jsx)(T.Z.Title, {
           level: y,
           onContextMenu: d,
           onClick: c,
@@ -239,10 +239,10 @@ function L(e) {
         guildName: n
       }) : n;
       return (0, i.jsxs)(r.Fragment, {
-        children: [null !== b ? (0, i.jsx)(N.Z.ChannelIcon, {
+        children: [null !== b ? (0, i.jsx)(T.Z.ChannelIcon, {
           icon: b,
           "aria-hidden": true
-        }) : null, (0, i.jsxs)(N.Z.Title, {
+        }) : null, (0, i.jsxs)(T.Z.Title, {
           level: y,
           onContextMenu: d,
           onClick: c,
@@ -299,7 +299,7 @@ function U(e, t) {
 
 function B(e, t) {
   return (0, i.jsxs)(i.Fragment, {
-    children: [null !== e && (0, i.jsx)(N.Z.ChannelIcon, {
+    children: [null !== e && (0, i.jsx)(T.Z.ChannelIcon, {
       icon: e,
       "aria-hidden": true
     }), (0, i.jsx)(u.nn4, {
@@ -324,7 +324,7 @@ function H(e) {
         (0, C.XU)(t.id, n.id)
       },
       className: R.guildBreadcrumbContainer,
-      children: ["left" === l && (0, i.jsx)(N.Z.Caret, {
+      children: ["left" === l && (0, i.jsx)(T.Z.Caret, {
         direction: "left"
       }), (0, i.jsx)("div", {
         ref: d,
@@ -334,7 +334,7 @@ function H(e) {
           className: R.guildBreadcrumbIcon,
           active: true
         })
-      }), "right" === l && (0, i.jsx)(N.Z.Caret, {
+      }), "right" === l && (0, i.jsx)(T.Z.Caret, {
         direction: "right"
       })]
     })

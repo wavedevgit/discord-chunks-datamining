@@ -263,7 +263,7 @@ class eZ extends Chunk647438.Component {
         })
       }
       Chunk998502.ZP.on("REQUEST_OPEN_EXTERNAL_URL", (e, t) => {
-        Y.default.getDisableExternalLinkAlert() || t === W.Z.getLastURL() ? q.ZP.send("OPEN_EXTERNAL_URL", t) : y.Z.show({
+        Y.default.getDisableExternalLinkAlert() || t === V.Z.getLastURL() ? q.ZP.send("OPEN_EXTERNAL_URL", t) : y.Z.show({
           title: ey.intl.string(ey.t.WLx4Fx),
           body: ey.intl.string(ey.t.H8O1TE),
           secondaryConfirmText: ey.intl.string(ey.t.IwqGhY),

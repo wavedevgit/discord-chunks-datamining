@@ -116,7 +116,7 @@ let E = function(e) {
     setHasPendingChanges: a,
     closeOrShowDiscardChangesAlert: f,
     location: E
-  } = e, S = (0, s.e7)([g.Z], () => g.Z.getChannel(t)), P = null == S ? true : S.name, I = (0, m.cO)(S), [Z, N] = r.useState(null != P ? P : ""), [T, A] = r.useState(true), w = true !== T, {
+  } = e, S = (0, s.e7)([g.Z], () => g.Z.getChannel(t)), P = null == S ? true : S.name, I = (0, m.cO)(S), [Z, T] = r.useState(null != P ? P : ""), [N, A] = r.useState(true), w = true !== N, {
     analyticsLocations: M
   } = (0, h.ZP)(E, p.Z.GROUP_DM_EDIT_MODAL), R = {
     channel_id: t,
@@ -140,16 +140,16 @@ let E = function(e) {
       onSubmit: e => {
         e.preventDefault();
         let i = Z !== P,
-          r = true !== T;
+          r = true !== N;
         if (b.default.track(y.rMx.GDM_EDIT_INTERACTED, O(x({}, R), {
             action: "saved",
             new_name_set: "" !== Z,
-            new_icon_set: (r ? T : null == S ? true : S.icon) != null,
+            new_icon_set: (r ? N : null == S ? true : S.icon) != null,
             name_changed: i,
             icon_changed: r
           })), i || r) {
           let e = {};
-          i && (e.name = Z), r && (e.icon = T), u.Z.updateChannel(t, e, E).catch(C.g6)
+          i && (e.name = Z), r && (e.icon = N), u.Z.updateChannel(t, e, E).catch(C.g6)
         }
         n()
       },
@@ -171,7 +171,7 @@ let E = function(e) {
           className: v.modalContent,
           children: [(0, i.jsx)(j, {
             channel: S,
-            previewIcon: T,
+            previewIcon: N,
             onIconChange: e => A(e.imageUri),
             onIconRemove: () => A(null),
             analyticsLocations: M
@@ -179,7 +179,7 @@ let E = function(e) {
             "aria-label": _.intl.string(_.t.GEGW3N),
             placeholder: null != I ? I : "",
             value: Z,
-            onChange: N,
+            onChange: T,
             autoFocus: true
           })]
         })

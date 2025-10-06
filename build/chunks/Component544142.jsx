@@ -78,7 +78,7 @@ function j(e) {
     })
   }
   let Z = null != (p = null != (l = null == S ? true : S.nick) ? l : b.ZP.getName(E)) ? p : "???",
-    N = null == S ? true : S.colorString;
+    T = null == S ? true : S.colorString;
   return null == E ? (0, i.jsx)("span", {
     className: a()(v.threadCreatorName, v.unknownCreatorName),
     children: Z
@@ -98,7 +98,7 @@ function j(e) {
         onContextMenu: I,
         children: (0, i.jsx)(s.PUh, {
           name: Z,
-          colorString: null != N ? N : null,
+          colorString: null != T ? T : null,
           colorStrings: P
         })
       }))

@@ -2,7 +2,7 @@
 /** chunk id: 793319, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   NZ: () => eE,
-  ZP: () => eN,
+  ZP: () => eT,
   r: () => ej
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -294,7 +294,7 @@ let eP = Chunk647438.memo(function(e) {
   r.useEffect(() => {
     E() !== S && f(true)
   }, [S, E]);
-  let N = r.useCallback(() => {
+  let T = r.useCallback(() => {
     if (null != C)(0, g.g)((0, A.V9)(C));
     else
       for (let e of _)(0, g.g)((0, A.V9)(e))
@@ -348,13 +348,13 @@ let eP = Chunk647438.memo(function(e) {
                 streamActive: true,
                 color: "disconnect",
                 onClick: () => {
-                  (0, P.v)(o, P.d.STOP_WATCHING), N()
+                  (0, P.v)(o, P.d.STOP_WATCHING), T()
                 },
                 onPopoutClick: _.length > 1 ? r : null,
                 isSelfStream: false
               }));
             case "CALL":
-              return (0, i.jsx)(K.Z, eO(ex({}, c), {
+              return (0, i.jsx)(Y.Z, eO(ex({}, c), {
                 color: "disconnect",
                 onClick: () => {
                   (0, P.v)(o, P.d.DISCONNECT), null == n || n()
@@ -428,7 +428,7 @@ function eZ(e) {
     entrypoint: eC.A5.CARET
   })
 }
-let eN = function(e) {
+let eT = function(e) {
   var t;
   let {
     channel: n,
@@ -450,7 +450,7 @@ let eN = function(e) {
     canGoLive: R
   } = (0, u.cj)([ei.Z], () => ({
     canGoLive: (0, w.Z)(ei.Z)
-  })), k = (0, T.Z)(), D = (0, u.e7)([N.Z], () => null != N.Z.getAwaitingRemoteSessionInfo()), B = null != k, H = (0, u.e7)([er.Z], () => {
+  })), k = (0, N.Z)(), D = (0, u.e7)([T.Z], () => null != T.Z.getAwaitingRemoteSessionInfo()), B = null != k, H = (0, u.e7)([er.Z], () => {
     var e;
     return (null != (e = null == k ? true : k.channelId) ? e : er.Z.getVoiceChannelId()) === n.id
   }), F = (0, u.e7)([C.ZP], () => C.ZP.getCurrentEmbeddedActivity()), {
@@ -458,14 +458,14 @@ let eN = function(e) {
     limit: W
   } = (0, eo.Z)(n), {
     analyticsLocations: q
-  } = (0, v.ZP)(_.Z.VOICE_CONTROL_TRAY), K = (0, $.Hu)({
+  } = (0, v.ZP)(_.Z.VOICE_CONTROL_TRAY), Y = (0, $.Hu)({
     location: _.Z.VOICE_CONTROL_TRAY,
     autoTrackExposure: true
   }), {
     showRefreshedAudioContextMenu: J
   } = (0, U.e)({
     location: _.Z.VOICE_CONTROL_TRAY
-  }), et = (0, V.Z)(n), en = r.useRef(null), eu = r.useRef(null), ep = K ? e => {
+  }), et = (0, V.Z)(n), en = r.useRef(null), eu = r.useRef(null), ep = Y ? e => {
     (0, f.jW)(e, () => Promise.resolve(() => (0, i.jsx)(O.default, {
       onClose: f.Zy,
       renderInputDevices: true,
@@ -498,7 +498,7 @@ let eN = function(e) {
               let t, {
                 closePopout: n
               } = e;
-              return t = K ? (0, i.jsx)(ee.l, {
+              return t = Y ? (0, i.jsx)(ee.l, {
                 wide: true,
                 showOutputDevices: true,
                 onSettingsButtonClick: n
@@ -538,7 +538,7 @@ let eN = function(e) {
               } = e, {
                 isShown: r
               } = t;
-              return (0, i.jsx)(Y.Z, {
+              return (0, i.jsx)(K.Z, {
                 ref: en,
                 centerButton: true,
                 onPopoutClick: B ? null : n,

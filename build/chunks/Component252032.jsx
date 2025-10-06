@@ -54,10 +54,10 @@ function j(e) {
     editingMessage: p.Z.getEditingMessage(c),
     editingTextValue: p.Z.getEditingTextValue(c),
     editingRichValue: p.Z.getEditingRichValue(c)
-  }), [c]), N = (0, l.e7)([d.default], () => d.default.getId()), T = r.useCallback((e, i, r) => {
+  }), [c]), T = (0, l.e7)([d.default], () => d.default.getId()), N = r.useCallback((e, i, r) => {
     let {
       content: l
-    } = r, c = f.Z.can(_.Plq.MANAGE_MESSAGES, t), u = null != P && null != P.author ? P.author.id : null, d = S && (u === N || c), p = {
+    } = r, c = f.Z.can(_.Plq.MANAGE_MESSAGES, t), u = null != P && null != P.author ? P.author.id : null, d = S && (u === T || c), p = {
       content: l,
       components: true
     };
@@ -72,7 +72,7 @@ function j(e) {
       }), p.content = "", p.components = t
     }
     return d && null != P && (0, g.yE)(P.flags, _.iLy.CROSSPOSTED) ? o.Z.confirmEdit(e, i, p) : a.Z.editMessage(e, i, p), Promise.resolve()
-  }, [P, S, N, t, n]), A = r.useCallback(e => {
+  }, [P, S, T, t, n]), A = r.useCallback(e => {
     var t, n;
     return (0, r.createElement)(E, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -114,7 +114,7 @@ function j(e) {
     onCancel: a.Z.endEditMessage,
     onChange: a.Z.updateEditMessage,
     onConfirmDelete: o.Z.confirmDelete,
-    saveMessage: T,
+    saveMessage: N,
     validateEdit: O,
     children: A
   }) : null

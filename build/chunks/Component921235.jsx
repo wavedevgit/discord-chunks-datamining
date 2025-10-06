@@ -51,7 +51,7 @@ function O(e) {
     Z = _.intl.formatToPlainString(_.t.m0zYbW, {
       username: S
     }),
-    N = null != l && "" !== l ? (0, i.jsx)(s.Text, {
+    T = null != l && "" !== l ? (0, i.jsx)(s.Text, {
       className: v.error,
       color: "text-danger",
       variant: "text-sm/normal",
@@ -71,7 +71,7 @@ function O(e) {
         variant: "text-md/medium",
         children: Z
       })]
-    }), N]
+    }), T]
   }) : (0, i.jsxs)("div", {
     className: v.containerExpanded,
     children: [(0, i.jsx)(p.Z, {
@@ -85,6 +85,6 @@ function O(e) {
       onClick: I,
       disabled: !!l,
       text: Z
-    }), N]
+    }), T]
   })
 }

@@ -30,7 +30,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk291738 = require("./291738.js");
-let N = e => {
+let T = e => {
     let {
       userId: t,
       channelId: n
@@ -84,7 +84,7 @@ let N = e => {
       })]
     })
   },
-  T = e => {
+  N = e => {
     var t;
     let {
       relationshipType: n,
@@ -232,7 +232,7 @@ let N = e => {
       })]
     }) : (0, i.jsxs)("div", {
       className: Z.inline,
-      children: [(0, i.jsx)(T, {
+      children: [(0, i.jsx)(N, {
         relationshipType: d,
         userId: t,
         showingBanner: r
@@ -250,7 +250,7 @@ let N = e => {
       className: m ? Z.mobileContainer : Z.container,
       children: [(0, i.jsx)("div", {
         className: Z.inline,
-        children: (0, i.jsx)(N, {
+        children: (0, i.jsx)(T, {
           userId: t,
           channelId: n.id
         })

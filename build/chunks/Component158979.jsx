@@ -2,12 +2,11 @@
 /** chunk id: 158979, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => y
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk755721 = require("./755721.js"),
-  Chunk481060 = require("./481060.js"),
+var Chunk481060 = require("./481060.js"),
   Chunk13245 = require("./13245.js"),
   Chunk371651 = require("./371651.js"),
   Chunk594174 = require("./594174.js"),
@@ -18,7 +17,7 @@ var Chunk755721 = require("./755721.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk653773 = require("./653773.js");
 
-function g(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -37,7 +36,7 @@ function g(e) {
   return e
 }
 
-function m(e, t) {
+function g(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -50,107 +49,107 @@ function m(e, t) {
   }), e
 }
 
-function y() {
+function m() {
   return (0, Chunk951288.jsx)("div", {
     className: Chunk653773.footer,
-    children: (0, Chunk951288.jsx)(Chunk755721.zx, {
-      color: Chunk755721.zx.Colors.GREEN,
-      size: Chunk755721.zx.Sizes.SMALL,
-      className: Chunk653773.ctaButton,
-      children: Chunk388032.intl.string(Chunk388032.t.U76Ft7)
+    children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
+      variant: "active",
+      size: "sm",
+      text: Chunk388032.intl.string(Chunk388032.t.U76Ft7),
+      fullWidth: true
     })
   })
 }
 
-function _(e) {
+function y(e) {
   switch (e.type) {
-    case p.nc.GO_LIVE_VOICE: {
+    case u.nc.GO_LIVE_VOICE: {
       let {
         game: t,
-        voiceGuild: r
+        voiceGuild: h
       } = e, {
-        trackView: f,
+        trackView: y,
         trackClick: _
-      } = (0, d.R)(p.n0.GoLiveNudge, {
-        notif_type: p.n0.GoLiveNudge
+      } = (0, c.R)(u.n0.GoLiveNudge, {
+        notif_type: u.n0.GoLiveNudge
       });
       return {
         icon: n(847881),
         title: null,
-        body: h.intl.formatToPlainString(h.t.z9znpa, {
+        body: p.intl.formatToPlainString(p.t.z9znpa, {
           game: t.name,
-          server: r.name
+          server: h.name
         }),
-        hint: () => (0, i.jsx)(y, {}),
-        renderFooter: () => (0, i.jsx)(y, {}),
+        hint: () => (0, i.jsx)(m, {}),
+        renderFooter: () => (0, i.jsx)(m, {}),
         onNotificationShow: () => {
-          f()
+          y()
         },
         onNotificationClick: (e, t) => {
-          _("unlock"), o.Z.updateNotificationStatus(t);
-          let d = l.default.isOverlayOOPEnabledForPid((0, c.getPID)());
-          if (d ? o.Z.setInputLocked(false, (0, c.getPID)()) : o.Z.setInstanceLocked(false), null == a.default.getCurrentUser()) return;
-          let p = d ? {
-            contextKey: s.u1M
+          _("unlock"), s.Z.updateNotificationStatus(t);
+          let c = o.default.isOverlayOOPEnabledForPid((0, a.getPID)());
+          if (c ? s.Z.setInputLocked(false, (0, a.getPID)()) : s.Z.setInstanceLocked(false), null == l.default.getCurrentUser()) return;
+          let u = c ? {
+            contextKey: r.u1M
           } : true;
-          (0, s.ZDy)(async () => {
+          (0, r.ZDy)(async () => {
             let {
               default: e
             } = await Promise.all([n.e("46746"), n.e("33641")]).then(n.bind(n, 60594));
-            return t => (0, i.jsx)(e, m(g({}, t), {
-              sourcePID: (0, c.getPID)(),
+            return t => (0, i.jsx)(e, g(f({}, t), {
+              sourcePID: (0, a.getPID)(),
               selectSource: false,
-              guildId: r.id,
-              analyticsLocation: u.Sbl.OVERLAY_NUDGE
+              guildId: h.id,
+              analyticsLocation: d.Sbl.OVERLAY_NUDGE
             }))
-          }, p)
+          }, u)
         },
         onDismissClick: () => {
           _("dismiss")
         }
       }
     }
-    case p.nc.GO_LIVE_NON_VOICE: {
+    case u.nc.GO_LIVE_NON_VOICE: {
       let {
         game: t
       } = e, {
-        trackView: r,
-        trackClick: a
-      } = (0, d.R)(p.n0.GoLiveNonVoiceNudge, {
-        notif_type: p.n0.GoLiveNonVoiceNudge
+        trackView: l,
+        trackClick: h
+      } = (0, c.R)(u.n0.GoLiveNonVoiceNudge, {
+        notif_type: u.n0.GoLiveNonVoiceNudge
       });
       return {
         icon: n(847881),
         title: null,
-        body: h.intl.formatToPlainString(h.t["0SVWgI"], {
+        body: p.intl.formatToPlainString(p.t["0SVWgI"], {
           game: t.name
         }),
-        hint: () => (0, i.jsx)(y, {}),
-        renderFooter: () => (0, i.jsx)(y, {}),
+        hint: () => (0, i.jsx)(m, {}),
+        renderFooter: () => (0, i.jsx)(m, {}),
         onNotificationShow: () => {
-          r()
+          l()
         },
         onNotificationClick: (e, t) => {
-          a("unlock"), o.Z.updateNotificationStatus(t);
-          let r = l.default.isOverlayOOPEnabledForPid((0, c.getPID)());
-          r ? o.Z.setInputLocked(false, (0, c.getPID)()) : o.Z.setInstanceLocked(false);
-          let d = r ? {
-            contextKey: s.u1M
+          h("unlock"), s.Z.updateNotificationStatus(t);
+          let l = o.default.isOverlayOOPEnabledForPid((0, a.getPID)());
+          l ? s.Z.setInputLocked(false, (0, a.getPID)()) : s.Z.setInstanceLocked(false);
+          let c = l ? {
+            contextKey: r.u1M
           } : true;
-          (0, s.ZDy)(async () => {
+          (0, r.ZDy)(async () => {
             let {
               default: e
             } = await Promise.all([n.e("46746"), n.e("33641")]).then(n.bind(n, 60594));
-            return t => (0, i.jsx)(e, m(g({}, t), {
-              sourcePID: (0, c.getPID)(),
+            return t => (0, i.jsx)(e, g(f({}, t), {
+              sourcePID: (0, a.getPID)(),
               selectSource: false,
               selectGuild: true,
-              analyticsLocation: u.Sbl.OVERLAY_NUDGE
+              analyticsLocation: d.Sbl.OVERLAY_NUDGE
             }))
-          }, d)
+          }, c)
         },
         onDismissClick: () => {
-          a("dismiss")
+          h("dismiss")
         }
       }
     }

@@ -488,7 +488,7 @@ function ec(e) {
   var {
     contained: t = false
   } = e, n = es(e, ["contained"]);
-  let r = (0, c.e7)([V.Z], () => V.Z.getGuildId()),
+  let r = (0, c.e7)([W.Z], () => W.Z.getGuildId()),
     s = (0, c.e7)([z.Z], () => z.Z.getChannelId(r)),
     o = (0, c.e7)([k.Z], () => k.Z.getChannel(s)),
     l = (0, c.e7)([U.ZP], () => U.ZP.getOverlayChatKeybind()),
@@ -498,7 +498,7 @@ function ec(e) {
     f = (0, c.e7)([A.Z], () => null != r && A.Z.didAgree(r)),
     g = null != o && o.isPrivate() ? o.getRecipientId() : null,
     m = (0, c.e7)([D.Z], () => null != s ? D.Z.getPendingReply(s) : true),
-    y = (0, c.e7)([W.default], () => null != g ? W.default.getUser(g) : null),
+    y = (0, c.e7)([V.default], () => null != g ? V.default.getUser(g) : null),
     {
       placeholder: _
     } = (0, O.Z)({

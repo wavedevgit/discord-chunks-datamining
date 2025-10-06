@@ -120,15 +120,15 @@ function z(e) {
   } = e, {
     ref: O,
     width: j
-  } = (0, h.ZP)(), [S, D] = r.useState(3), [z, W] = r.useState(!n), [q, K] = (0, f.Z)(false, 2e3), Y = (0, o.e7)([N.Z], () => N.Z.getChannel(t), [t]), {
+  } = (0, h.ZP)(), [S, D] = r.useState(3), [z, W] = r.useState(!n), [q, Y] = (0, f.Z)(false, 2e3), K = (0, o.e7)([T.Z], () => T.Z.getChannel(t), [t]), {
     firstMessage: X
-  } = (0, M.cl)(Y), J = (0, o.e7)([I.Z], () => I.Z.hasJoined(t)), {
+  } = (0, M.cl)(K), J = (0, o.e7)([I.Z], () => I.Z.hasJoined(t)), {
     disableReactionUpdates: Q,
     disableReactionCreates: $,
     isLurking: ee,
     isGuest: et,
     isPendingMember: en
-  } = (0, C.Z)(Y), ei = (0, E.nw)(Y), er = (0, o.e7)([N.Z], () => N.Z.getChannel(s)), el = (0, w.Bs)(er), ea = (0, o.e7)([m.Z], () => m.Z.shouldDisplayPrompt(t) && true === n, [t, n]), eo = r.useCallback(e => {
+  } = (0, C.Z)(K), ei = (0, E.nw)(K), er = (0, o.e7)([T.Z], () => T.Z.getChannel(s)), el = (0, w.Bs)(er), ea = (0, o.e7)([m.Z], () => m.Z.shouldDisplayPrompt(t) && true === n, [t, n]), eo = r.useCallback(e => {
     let t = e[0];
     if (null != t && n) {
       let e = t.intersectionRect,
@@ -149,15 +149,15 @@ function z(e) {
   let [es, ec] = r.useState(true);
   if (r.useEffect(() => {
       null != j && (D(Math.floor((j - 280) / 58)), ec(false))
-    }, [j]), null == Y || null == X) return null;
+    }, [j]), null == K || null == X) return null;
   let eu = X.reactions.length > 0,
     ed = () => {
       (0, R.B)({
-        postId: Y.id,
+        postId: K.id,
         location: {
           section: k.jXE.CHANNEL_HEADER
         }
-      }), (0, A.JG)((0, T.EO)(Y, er), () => K(true))
+      }), (0, A.JG)((0, N.EO)(K, er), () => Y(true))
     },
     ep = J ? u.dz2 : u.Dkj;
   return (0, i.jsxs)(i.Fragment, {
@@ -170,7 +170,7 @@ function z(e) {
         className: U.reportedMessageActions,
         children: (0, i.jsx)(P.Z, {
           message: X,
-          channel: Y
+          channel: K
         })
       }) : (0, i.jsxs)("div", {
         className: a()(U.reactButtons, {
@@ -196,7 +196,7 @@ function z(e) {
           })
         }), (0, i.jsx)(v.Z, {
           message: X,
-          channel: Y,
+          channel: K,
           disableReactionCreates: true,
           disableReactionUpdates: Q,
           isLurking: ee,
@@ -210,7 +210,7 @@ function z(e) {
         }), !$ && (0, i.jsx)(y.X, {
           type: b.O.NORMAL,
           message: X,
-          channel: Y,
+          channel: K,
           useChatFontScaling: false,
           className: a()(H.secondary, U.addReactButton, {
             [U.hasNoReactions]: !eu
@@ -221,7 +221,7 @@ function z(e) {
       }), (0, i.jsxs)("div", {
         className: U.buttons,
         children: [ei ? (0, i.jsx)(G, {
-          channel: Y
+          channel: K
         }) : (0, i.jsx)(c.u, {
           text: L.intl.string(L.t.F7oeDg),
           children: (0, i.jsx)(u.zxk, {
@@ -230,7 +230,7 @@ function z(e) {
             variant: "secondary",
             text: J ? L.intl.string(L.t["7OkUzs"]) : L.intl.string(L.t["3aOv+v"]),
             onClick: () => {
-              J ? Z.Z.leaveThread(Y, "Forum Toolbar") : Z.Z.joinThread(Y, "Forum Toolbar")
+              J ? Z.Z.leaveThread(K, "Forum Toolbar") : Z.Z.joinThread(K, "Forum Toolbar")
             }
           })
         }), (0, i.jsx)(u.ua7, {
@@ -256,8 +256,8 @@ function z(e) {
             variant: "secondary",
             onClick: () => {
               d.Z.jumpToMessage({
-                channelId: Y.id,
-                messageId: Y.id,
+                channelId: K.id,
+                messageId: K.id,
                 flash: true,
                 jumpType: p.SR.INSTANT
               })
@@ -269,7 +269,7 @@ function z(e) {
     }), ea && (0, i.jsx)(g.Z, {
       threadId: t
     }), (0, i.jsx)(_.Z, {
-      channel: Y,
+      channel: K,
       isLastItem: l
     })]
   })

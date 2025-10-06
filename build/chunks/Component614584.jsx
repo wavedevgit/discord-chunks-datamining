@@ -64,8 +64,8 @@ let S = Chunk647438.memo(function(e) {
     channel: P,
     compact: I = false,
     referencedUsernameProfile: Z,
-    referencedAvatarProfile: N,
-    setPopout: T,
+    referencedAvatarProfile: T,
+    setPopout: N,
     isReplySpineClickable: A,
     showReplySpine: w
   } = e, M = S.state === f.Y.LOADED ? S.message : true, R = (0, C.Uj)(M), k = (0, u.p)(), L = s.d.useExperiment({
@@ -121,12 +121,12 @@ let S = Chunk647438.memo(function(e) {
   } = (0, l.cj)([m.Z], () => ({
     isReplyAuthorBlocked: null != M && m.Z.isBlockedForMessage(M),
     isReplyAuthorIgnored: null != M && m.Z.isIgnoredForMessage(M)
-  }), [M]), V = (0, v.wq)(null == M ? true : M.author.id, P.id), F = (0, v.$3)(n, M), G = (0, v.Wl)(M, P, Z, T), z = (0, v.rY)(N, T), W = r.useCallback(() => {
-    T({
+  }), [M]), V = (0, v.wq)(null == M ? true : M.author.id, P.id), F = (0, v.$3)(n, M), G = (0, v.Wl)(M, P, Z, N), z = (0, v.rY)(T, N), W = r.useCallback(() => {
+    N({
       referencedUsernameProfile: false,
       referencedAvatarProfile: false
     })
-  }, [T]), q = (0, C.Uj)(n);
+  }, [N]), q = (0, C.Uj)(n);
   return (0, i.jsx)(y.Z, {
     repliedAuthor: R,
     baseMessage: n,
@@ -137,7 +137,7 @@ let S = Chunk647438.memo(function(e) {
     compact: I,
     isReplyAuthorBlocked: B,
     isReplyAuthorIgnored: H,
-    showAvatarPopout: N,
+    showAvatarPopout: T,
     showUsernamePopout: Z,
     renderPopout: _.Z,
     onClickAvatar: z,

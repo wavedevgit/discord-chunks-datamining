@@ -82,7 +82,7 @@ function j(e) {
       inSettings: C
     } = e,
     O = x(e, ["guild", "channel", "onClose", "newChannel", "inSettings"]);
-  let [j, E] = r.useState(""), [S, P] = r.useState({}), [I, Z] = r.useState(false), [N, T] = r.useState(null), A = r.useRef(null), {
+  let [j, E] = r.useState(""), [S, P] = r.useState({}), [I, Z] = r.useState(false), [T, N] = r.useState(null), A = r.useRef(null), {
     roles: w,
     members: M,
     getRichTag: R
@@ -106,7 +106,7 @@ function j(e) {
       }(d, S, C), p(), Z(false)
     } catch (t) {
       let e = new c.Hx(t);
-      Z(false), T(e)
+      Z(false), N(e)
     }
   }
   let U = (0, u.zi)(d.type) ? o.W4G : o.gjC;
@@ -143,11 +143,11 @@ function j(e) {
           className: _.subtext,
           variant: "text-xs/normal",
           children: y.intl.string(y.t["rwFx8/"])
-        }), null != N ? (0, i.jsx)(o.Text, {
+        }), null != T ? (0, i.jsx)(o.Text, {
           className: _.subtext,
           variant: "text-xs/normal",
           color: "text-danger",
-          children: N.getAnyErrorMessage()
+          children: T.getAnyErrorMessage()
         }) : null]
       }),
       listProps: {
