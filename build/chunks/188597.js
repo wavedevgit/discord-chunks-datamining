@@ -118,8 +118,7 @@ let T = (e, t, n) => {
     if (!t.ok) {
       if (!t.hasErr)
         if (t.status >= 400 && t.status < 500 && t.body)
-          if (t.body.code !== m.evJ.INVALID_FORM_BODY || !t.body.errors) return void(0, f.yr)(e, t.body.code, t.body.message, t.status);
-          else {
+          if (t.body.code === m.evJ.INVALID_FORM_BODY && t.body.errors) {
             let o = (0, h.e)(t.body.errors);
             null != o && ("INTERACTION_APPLICATION_COMMAND_INVALID_VERSION" === o.code || "INTERACTION_APPLICATION_COMMAND_INVALID" === o.code) && i.Z.dispatch({
               type: "APPLICATION_COMMAND_EXECUTE_BAD_VERSION",
@@ -128,7 +127,12 @@ let T = (e, t, n) => {
               guildId: null != a ? a : null
             }), (0, f.yr)(e, true, null == o ? true : o.message);
             return
-          }
+          } else return t.body.code !== m.evJ.UNKNOWN_INTEGRATION ? void(0, f.yr)(e, t.body.code, t.body.message, t.status) : (i.Z.dispatch({
+            type: "APPLICATION_COMMAND_EXECUTE_BAD_VERSION",
+            applicationId: n,
+            channelId: r,
+            guildId: null != a ? a : null
+          }), (0, f.yr)(e, true, t.body.message), true);
       else {
         var o;
         (0, f.yr)(e, null == (o = t.body) ? true : o.code);
