@@ -2,7 +2,7 @@
 /** chunk id: 914788, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => ee
+  Z: () => en
 }), require("./388685.js"), require("./539854.js"), require("./35282.js");
 var Chunk133080 = require("./133080.js"),
   Chunk750041 = require("./750041.js"),
@@ -55,24 +55,26 @@ let h = null,
   m = null,
   g = {},
   E = false,
-  b = w(),
-  y = D(),
+  b = L(),
+  y = x(),
   O = null,
-  v = P(),
+  v = D(),
   I = false,
   T = false,
   S = null,
   A = null,
   C = [],
   N = [],
-  R = {};
+  R = null,
+  P = null,
+  w = {};
 
-function P() {
+function D() {
   var e, t, n, r;
   return (null == (t = window) || null == (e = exports.location) ? true : module.pathname) === Chunk292352.ix.FAMILY_CENTER_MY_FAMILY ? Chunk292352.dG.REQUESTS : (null == (r = window) || null == (n = Chunk133080.location) ? true : require.pathname) === Chunk292352.ix.FAMILY_CENTER_SETTINGS ? Chunk292352.dG.SETTINGS : Chunk292352.dG.ACTIVITY
 }
 
-function w() {
+function L() {
   return {
     [Chunk292352.MY.USER_ADD]: {},
     [Chunk292352.MY.GUILD_ADD]: {},
@@ -84,7 +86,7 @@ function w() {
   }
 }
 
-function D() {
+function x() {
   return {
     [Chunk292352.MY.USER_ADD]: 0,
     [Chunk292352.MY.GUILD_ADD]: 0,
@@ -96,41 +98,41 @@ function D() {
   }
 }
 
-function L() {
+function M() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : [];
   return arguments.length > 1 && arguments[1], g = module.length > 0 ? module.reduce((e, t) => p(f({}, e), {
     [t.user_id]: t
   }), {}) : {}, E = true, g
 }
 
-function x(e) {
+function j(e) {
   true !== e && (y = e)
 }
 
-function M(e, t) {
-  let n = t ? b : w();
+function k(e, t) {
+  let n = t ? b : L();
   return b = e.reduce((e, t) => {
     let r = t.display_type;
     return true !== n[r] && true === n[r][t.event_id] && (e[r][t.event_id] = t), e
   }, n)
 }
 
-function j(e) {
-  R = e.reduce((e, t) => {
+function U(e) {
+  w = e.reduce((e, t) => {
     var n;
     return p(f({}, e), {
       [t.id]: p(f({}, (0, o.Jh)(t)), {
         approximateMemberCount: null != (n = t.approximate_member_count) ? n : 0
       })
     })
-  }, R)
+  }, w)
 }
 
-function k() {
+function G() {
   T = true
 }
 
-function U(e) {
+function B(e) {
   let {
     linkedUsers: t,
     familyCenterTeenActivity: n
@@ -141,26 +143,28 @@ function U(e) {
     teenId: o,
     rangeStartId: l,
     topUserActivities: c,
-    topGuildActivities: u
+    topGuildActivities: u,
+    totalSpendAmount: d,
+    totalSpendCurrency: f
   } = n;
-  h = o, m = l, M(r), x(a), j(i), L(t), C = c, N = u, T = false, S = s.default.fromTimestamp(Date.now()), I = true
-}
-
-function G(e) {
-  let {
-    linkedUsers: t
-  } = e;
-  L(t)
-}
-
-function B(e) {
-  let {
-    linkedUsers: t
-  } = e;
-  L(t)
+  h = o, m = l, k(r), j(a), U(i), M(t), C = c, N = u, R = d, P = f, T = false, S = s.default.fromTimestamp(Date.now()), I = true
 }
 
 function Z(e) {
+  let {
+    linkedUsers: t
+  } = e;
+  M(t)
+}
+
+function F(e) {
+  let {
+    linkedUsers: t
+  } = e;
+  M(t)
+}
+
+function V(e) {
   let {
     familyCenterTeenActivity: t
   } = e;
@@ -172,50 +176,52 @@ function Z(e) {
     teenId: a,
     rangeStartId: o,
     topUserActivities: l,
-    topGuildActivities: c
+    topGuildActivities: c,
+    totalSpendAmount: u,
+    totalSpendCurrency: d
   } = t;
-  h = a, m = o, M(n), x(r), j(i), C = l, N = c, T = false, S = s.default.fromTimestamp(Date.now())
+  h = a, m = o, k(n), j(r), U(i), C = l, N = c, T = false, S = s.default.fromTimestamp(Date.now()), R = u, P = d
 }
 
-function F(e) {
+function H(e) {
   let {
     familyCenterTeenActivity: t
   } = e, {
     actions: n,
     guilds: r
   } = t;
-  M(n, true), j(r)
-}
-
-function V(e) {
-  let {
-    linkedUsers: t
-  } = e;
-  L(t)
-}
-
-function H(e) {
-  let {
-    linkedUsers: t
-  } = e;
-  L(t, true)
+  k(n, true), U(r)
 }
 
 function Y(e) {
+  let {
+    linkedUsers: t
+  } = e;
+  M(t)
+}
+
+function W(e) {
+  let {
+    linkedUsers: t
+  } = e;
+  M(t, true)
+}
+
+function K(e) {
   let {
     linkCode: t
   } = e;
   O = t
 }
 
-function W(e) {
+function z(e) {
   let {
     tab: t
   } = e;
   v = t
 }
 
-function K(e) {
+function q(e) {
   let {
     user: t
   } = e;
@@ -226,10 +232,10 @@ function K(e) {
       user_id: t
     } = e;
     return true === n[t]
-  }) && t.linked_users.length > Object.keys(g).length ? l.ZP.fetchLinkedUsers() : L(t.linked_users)
+  }) && t.linked_users.length > Object.keys(g).length ? l.ZP.fetchLinkedUsers() : M(t.linked_users)
 }
 
-function z(e) {
+function X(e) {
   var t;
   let {
     countryCode: n
@@ -237,7 +243,7 @@ function z(e) {
   null != n && (A = null != (t = (0, r.Zz)(n)) ? t : null)
 }
 
-function q() {
+function Q() {
   let e = [];
   return Object.entries(b).forEach(t => {
     let [n, r] = t;
@@ -245,41 +251,41 @@ function q() {
   }), module
 }
 
-function X() {
+function J() {
   return Object.entries(y).map(e => {
     let [t, n] = e;
     return "".concat(t, ":").concat(n)
   })
 }
 
-function Q(e) {
+function $(e) {
   y = e.reduce((e, t) => {
     let [n, r] = t.split(":"), i = (0, c.jV)(n);
     return true === i ? e : p(f({}, e), {
       [i]: parseInt(r, 10)
     })
-  }, D())
+  }, x())
 }
 
-function J() {
-  h = null, m = null, g = {}, b = w(), y = D(), R = {}, T = false, S = null, v = P(), E = false, C = [], N = []
+function ee() {
+  h = null, m = null, g = {}, b = L(), y = x(), w = {}, T = false, S = null, v = D(), E = false, C = [], N = [], R = null, P = null
 }
-class $ extends Chunk750041.Z {
+class et extends Chunk750041.Z {
   initialize() {
     this.waitFor(Chunk594174.default)
   }
   loadCache() {
-    let e = this.readSnapshot($.LATEST_SNAPSHOT_VERSION);
-    null != module && (L(module.linkedUsers), j(module.guilds), M(module.teenActivity), Q(module.teenActivityTotals))
+    let e = this.readSnapshot(et.LATEST_SNAPSHOT_VERSION);
+    null != module && (M(module.linkedUsers), U(module.guilds), k(module.teenActivity), $(module.teenActivityTotals))
   }
   takeSnapshot() {
     return {
-      version: $.LATEST_SNAPSHOT_VERSION,
+      version: et.LATEST_SNAPSHOT_VERSION,
       data: {
         linkedUsers: Object.values(g),
-        teenActivityTotals: X(),
-        teenActivity: q(),
-        guilds: Object.values(R)
+        teenActivityTotals: J(),
+        teenActivity: Q(),
+        guilds: Object.values(w)
       }
     }
   }
@@ -307,7 +313,7 @@ class $ extends Chunk750041.Z {
     return O
   }
   getGuild(e) {
-    return R[e]
+    return w[e]
   }
   getSelectedTab() {
     return v
@@ -333,27 +339,33 @@ class $ extends Chunk750041.Z {
   getTopGuildActivities() {
     return N
   }
+  getTotalSpendAmount() {
+    return R
+  }
+  getTotalSpendCurrency() {
+    return P
+  }
   canRefetch() {
     return null === S || Chunk709054.default.age(S) > Chunk292352.Of
   }
   constructor() {
     super({
-      CURRENT_USER_UPDATE: K,
+      CURRENT_USER_UPDATE: q,
       CACHE_LOADED_LAZY: () => this.loadCache(),
-      FAMILY_CENTER_INITIAL_LOAD: U,
-      FAMILY_CENTER_FETCH_START: k,
-      FAMILY_CENTER_LINKED_USERS_FETCH_SUCCESS: G,
-      FAMILY_CENTER_TEEN_ACTIVITY_FETCH_SUCCESS: Z,
-      FAMILY_CENTER_TEEN_ACTIVITY_MORE_FETCH_SUCCESS: F,
-      FAMILY_CENTER_REQUEST_LINK_SUCCESS: B,
-      FAMILY_CENTER_REQUEST_LINK_UPDATE_SUCCESS: V,
-      FAMILY_CENTER_REQUEST_LINK_REMOVE_SUCCESS: H,
-      FAMILY_CENTER_LINK_CODE_FETCH_SUCCESS: Y,
-      FAMILY_CENTER_HANDLE_TAB_SELECT: W,
-      SET_LOCATION_METADATA: z,
-      LOGOUT: J
+      FAMILY_CENTER_INITIAL_LOAD: B,
+      FAMILY_CENTER_FETCH_START: G,
+      FAMILY_CENTER_LINKED_USERS_FETCH_SUCCESS: Z,
+      FAMILY_CENTER_TEEN_ACTIVITY_FETCH_SUCCESS: V,
+      FAMILY_CENTER_TEEN_ACTIVITY_MORE_FETCH_SUCCESS: H,
+      FAMILY_CENTER_REQUEST_LINK_SUCCESS: F,
+      FAMILY_CENTER_REQUEST_LINK_UPDATE_SUCCESS: Y,
+      FAMILY_CENTER_REQUEST_LINK_REMOVE_SUCCESS: W,
+      FAMILY_CENTER_LINK_CODE_FETCH_SUCCESS: K,
+      FAMILY_CENTER_HANDLE_TAB_SELECT: z,
+      SET_LOCATION_METADATA: X,
+      LOGOUT: ee
     })
   }
 }
-d($, "displayName", "FamilyCenterStore"), d($, "LATEST_SNAPSHOT_VERSION", 3);
-let ee = new $
+d(et, "displayName", "FamilyCenterStore"), d(et, "LATEST_SNAPSHOT_VERSION", 3);
+let en = new et

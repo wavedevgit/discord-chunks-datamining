@@ -102,7 +102,8 @@ let L = 16,
       onClick: c,
       className: A.icons,
       children: (0, r.jsx)(l.EO4, {
-        className: o()(A.icon, n)
+        color: "currentColor",
+        className: o()(A.icon, A.hoverableIcon, n)
       })
     }) : (0, r.jsx)(l.P3F, {
       onClick: c,
