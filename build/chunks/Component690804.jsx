@@ -1,7 +1,7 @@
 /** Chunk was on 64152 **/
-/** chunk id: 690804, original params: t,n,i (module,exports,require) **/
+/** chunk id: 690804, original params: n,t,i (module,exports,require) **/
 require.d(exports, {
-  FortniteUpsellModal: () => j
+  FortniteUpsellModal: () => g
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -17,28 +17,28 @@ var Chunk990547 = require("./990547.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk625771 = require("./625771.js");
 
-function j(t) {
+function g(n) {
   let {
-    onClose: n,
+    onClose: t,
     transitionState: i
-  } = t, {
-    data: j
+  } = n, {
+    data: g
   } = (0, l.IX)("1402418703554842694"), {
-    data: u
-  } = (0, l.IX)("1417968406048673952"), b = null != j ? x.ZP.getApplicationIconURL({
+    data: j
+  } = (0, l.IX)("1417968406048673952"), u = null != g ? x.ZP.getApplicationIconURL({
+    id: g.id,
+    icon: g.icon
+  }) : null, b = null != j ? x.ZP.getApplicationIconURL({
     id: j.id,
     icon: j.icon
-  }) : null, v = null != u ? x.ZP.getApplicationIconURL({
-    id: u.id,
-    icon: u.icon
   }) : null;
-  return (0, c.Z)({
+  return (0, o.Z)({
     name: s.ImpressionNames.FORTNITE_GET_GAME_MODAL,
     type: s.ImpressionTypes.MODAL
   }), (0, e.jsxs)(a.IX, {
     size: "lg",
     transitionState: i,
-    onClose: n,
+    onClose: t,
     children: [(0, e.jsx)(a.xBx, {
       graphic: true,
       gradientColor: "purple",
@@ -55,10 +55,10 @@ function j(t) {
             className: h.text,
             children: [(0, e.jsx)("div", {
               className: h.iconContainer,
-              children: null != b && (0, e.jsx)("div", {
+              children: null != u && (0, e.jsx)("div", {
                 className: h.icon,
                 style: {
-                  backgroundImage: "url(".concat(b, ")")
+                  backgroundImage: "url(".concat(u, ")")
                 }
               })
             }), (0, e.jsxs)("div", {
@@ -76,7 +76,7 @@ function j(t) {
             icon: () => (0, e.jsx)(r.Gr1, {}),
             iconPosition: "end",
             onClick: () => {
-              d.default.track(m.rMx.FORTNITE_DOWNLOAD_CLICKED), (0, o.Z)("https://fortnitetrial.fortnite.com/")
+              d.default.track(m.rMx.FORTNITE_DOWNLOAD_CLICKED), (0, c.Z)("https://fn.gg/GetGame")
             },
             text: p.intl.string(p.t.ZDtJ19),
             variant: "secondary"
@@ -87,10 +87,10 @@ function j(t) {
             className: h.text,
             children: [(0, e.jsx)("div", {
               className: h.iconContainer,
-              children: null != v && (0, e.jsx)("div", {
+              children: null != b && (0, e.jsx)("div", {
                 className: h.icon,
                 style: {
-                  backgroundImage: "url(".concat(v, ")")
+                  backgroundImage: "url(".concat(b, ")")
                 }
               })
             }), (0, e.jsxs)("div", {
@@ -108,7 +108,7 @@ function j(t) {
             icon: () => (0, e.jsx)(r.Gr1, {}),
             iconPosition: "end",
             onClick: () => {
-              d.default.track(m.rMx.FORTNITE_GFNJOIN_CLICKED), (0, o.Z)("https://www.nvidia.com/en-us/geforce-now/discord?ncid=partn-874834")
+              d.default.track(m.rMx.FORTNITE_GFNJOIN_CLICKED), (0, c.Z)("https://www.nvidia.com/en-us/geforce-now/discord?ncid=partn-874834")
             },
             text: p.intl.string(p.t.ycbXPz),
             variant: "secondary"
