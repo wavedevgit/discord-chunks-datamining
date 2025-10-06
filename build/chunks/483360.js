@@ -349,7 +349,7 @@ function e8(e, t) {
   return n
 }
 
-function e5(e, t) {
+function e6(e, t) {
   if (null == e.parent_id) return;
   let n = t[e.parent_id];
   if (null == n) {
@@ -359,7 +359,7 @@ function e5(e, t) {
   return n
 }
 
-function e6(e, t) {
+function e5(e, t) {
   let n = k.Z.getChannel(e);
   return null == e || null == n ? [] : s()(H.Z.getMessages(e).toArray()).reverse().uniqBy(e => e.author.id).map(e => X.default.getUser(e.author.id)).filter(e => {
     if (null == e || e.isNonUserBot()) returnfalse;
@@ -453,7 +453,7 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
         })
       } else {
         if (0 === r.length && o) {
-          let e = e6(l.id, i);
+          let e = e5(l.id, i);
           if (e.length > 0) return e
         }
         t = Z.ZP.getMembers(u.guild_id).filter(eX), a && en.Z.requestMembers(u.guild_id, r, i)
@@ -482,7 +482,7 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
       } = e;
       if (null == V.Z.getGuild(t)) return [];
       if (0 === n.length && a) {
-        let e = e6(z.Z.getChannelId(t), r);
+        let e = e5(z.Z.getChannelId(t), r);
         if (e.length > 0) return e
       }
       let l = Z.ZP.getMembers(t).filter(eX);
@@ -558,7 +558,7 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
           c = s ? ey : e4(i, t, a);
         if (0 !== c) {
           if (t.length > 0) {
-            for (let n of [e8(e, E), e5(e, E)]) {
+            for (let n of [e8(e, E), e6(e, E)]) {
               if (null == n || "" === n) continue;
               let e = e4(n, t, false);
               0 !== e && (c += .5 * e)
@@ -756,7 +756,7 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
           })
         } return c.sort(f.Z), c.length > n && (c.length = n), c
     },
-    getRecentlyTalked: e6,
+    getRecentlyTalked: e5,
     queryMentionResults(e) {
       let {
         query: t,

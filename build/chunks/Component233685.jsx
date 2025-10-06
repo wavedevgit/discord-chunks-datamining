@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk435064 = require("./435064.js"),
   Chunk39604 = require("./39604.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk441849 = require("./441849.js");
+  Chunk54182 = require("./54182.js");
 
 function d() {
   let e = (0, Chunk442837.e7)([Chunk435064.Z], () => Chunk435064.Z.getSettings().storageLocation),
@@ -26,7 +26,7 @@ function d() {
     description: Chunk388032.intl.string(Chunk388032.t.svjwGh),
     layout: "horizontal",
     children: (0, Chunk951288.jsx)(Chunk481060.P3F, {
-      className: Chunk441849.selectControl,
+      className: Chunk54182.selectControl,
       "aria-label": Chunk388032.intl.formatToPlainString(Chunk388032.t.iMONTk, {
         storageLocation: module
       }),

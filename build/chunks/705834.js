@@ -1,3 +1,0 @@
-/** Chunk was on 43179 **/
-/** chunk id: 705834, original params: n (module,exports,require) **/
-module.exports = JSON.parse('{"klSpfn":"Chỉnh Sửa C\xe0i Đặt","NzUuLC":["+",[1,"count"]," ",[6,"count",{"one":["tin nhắn"],"other":["tin nhắn"]},0,"cardinal"]],"O+racX":"Kh\xf4ng c\xf3 th\xf4ng b\xe1o n\xe0o.","5H2Jd3":"Hiển thị tất cả","Ko8NGh":"Hiện Dấu Trang","dcpdhI":"Chọn một tin nhắn để chuyển đến đ\xf3.","VAK+h4":"Ch\xe0o mừng đến với Trung T\xe2m Th\xf4ng B\xe1o của bạn!"}')

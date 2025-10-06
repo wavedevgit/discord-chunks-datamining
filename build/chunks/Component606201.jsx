@@ -1,4 +1,4 @@
-/** Chunk was on 5588 **/
+/** Chunk was on 5938 **/
 /** chunk id: 606201, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   $0: () => d,
@@ -11,9 +11,9 @@ require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
-  Chunk295136 = require("./295136.js");
+  Chunk88510 = require("./88510.js");
 let o = () => (0, Chunk951288.jsx)("hr", {
-    className: Chunk295136.sectionDivider
+    className: Chunk88510.sectionDivider
   }),
   c = e => {
     let {

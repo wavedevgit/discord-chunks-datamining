@@ -2,7 +2,7 @@
 /** chunk id: 830746, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => E
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -17,37 +17,36 @@ var Chunk399606 = require("./399606.js"),
   Chunk302289 = require("./302289.jsx"),
   Chunk946690 = require("./946690.jsx"),
   Chunk369954 = require("./369954.jsx"),
-  Chunk292352 = require("./292352.js"),
-  Chunk345909 = require("./345909.js"),
+  Chunk412297 = require("./412297.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk862964 = require("./862964.js");
-let b = () => {
-  let e = (0, Chunk631885.mq)(Chunk292352.ne.ACTIVE).length > 0,
+  Chunk251214 = require("./251214.js");
+let E = () => {
+  let e = (0, Chunk631885.ZM)().length > 0,
     t = (0, Chunk277537.PO)("family_center_activity_page"),
     n = (0, Chunk399606.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
-    b = (0, Chunk785681.o)(Chunk388032.intl.string(Chunk345909.default["5RZ8Tk"]), Chunk388032.intl.string(Chunk345909.default.bmhCnJ)),
-    y = (0, Chunk785681.o)(Chunk388032.intl.string(Chunk345909.default.XKnFFh), Chunk388032.intl.string(Chunk345909.default["68zfxM"])),
-    O = (0, Chunk785681.o)(Chunk388032.intl.string(Chunk345909.default["Rm/6a2"]), Chunk388032.intl.string(Chunk345909.default["1xPTwM"]));
+    E = (0, Chunk785681.o)(Chunk388032.intl.string(Chunk412297.default["5RZ8Tk"]), Chunk388032.intl.string(Chunk412297.default.bmhCnJ)),
+    b = (0, Chunk785681.o)(Chunk388032.intl.string(Chunk412297.default.XKnFFh), Chunk388032.intl.string(Chunk412297.default["68zfxM"])),
+    y = (0, Chunk785681.o)(Chunk388032.intl.string(Chunk412297.default["Rm/6a2"]), Chunk388032.intl.string(Chunk412297.default["1xPTwM"]));
   return true === require ? null : (0, Chunk951288.jsxs)("div", {
-    className: Chunk862964.container,
+    className: Chunk251214.container,
     children: [exports && module ? null : (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsx)("div", {
-        className: Chunk862964.banner,
+        className: Chunk251214.banner,
         children: (0, Chunk951288.jsx)(Chunk552045.Z, {})
       }), (0, Chunk951288.jsxs)("div", {
-        className: Chunk862964.featureCards,
+        className: Chunk251214.featureCards,
         children: [(0, Chunk951288.jsx)(Chunk946690.Z, {
           icon: Chunk481060.eQA,
-          header: Chunk388032.intl.string(Chunk345909.default["001l3t"]),
-          description: b
+          header: Chunk388032.intl.string(Chunk412297.default["001l3t"]),
+          description: E
         }), (0, Chunk951288.jsx)(Chunk946690.Z, {
           icon: Chunk481060.tEF,
-          header: Chunk388032.intl.string(Chunk345909.default.yipAeH),
-          description: y
+          header: Chunk388032.intl.string(Chunk412297.default.yipAeH),
+          description: b
         }), (0, Chunk951288.jsx)(Chunk946690.Z, {
           icon: Chunk481060.IkH,
-          header: Chunk388032.intl.string(Chunk345909.default.hhOuMT),
-          description: O
+          header: Chunk388032.intl.string(Chunk412297.default.hhOuMT),
+          description: y
         })]
       })]
     }), module ? (0, Chunk951288.jsx)(Chunk87792.Z, {}) : (0, Chunk951288.jsx)(Chunk302289.Z, {}), (0, Chunk951288.jsx)(Chunk369954.J, {})]

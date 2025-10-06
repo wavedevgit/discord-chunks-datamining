@@ -60,9 +60,9 @@ var l, Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk176505 = require("./176505.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk451964 = require("./451964.js"),
-  Chunk197571 = require("./197571.js"),
-  Chunk103126 = require("./103126.js"),
+  Chunk869306 = require("./869306.js"),
+  Chunk10198 = require("./10198.js"),
+  Chunk492297 = require("./492297.js"),
   Chunk622577 = require("./622577.js");
 
 function ec(e, t, n) {
@@ -198,10 +198,10 @@ class eI extends(l = Chunk647438.PureComponent) {
       inviteChannel: e
     } = this.props;
     return (0, Chunk447003.Z)(module) ? (0, Chunk951288.jsxs)("div", {
-      className: Chunk451964.warningContainer,
+      className: Chunk869306.warningContainer,
       children: [(0, Chunk951288.jsx)(Chunk481060.Mgn, {
         size: "custom",
-        className: Chunk451964.warningIcon,
+        className: Chunk869306.warningIcon,
         color: Chunk692547.Z.unsafe_rawColors.YELLOW_300.css,
         width: 12
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
@@ -235,9 +235,9 @@ class eI extends(l = Chunk647438.PureComponent) {
       }), null != u) {
       let e = (0, Chunk471445.KS)(u, exports);
       null != module && (m = (0, Chunk951288.jsxs)("div", {
-        className: Chunk451964.headerChannelContainer,
+        className: Chunk869306.headerChannelContainer,
         children: [(0, Chunk951288.jsx)(module, {
-          className: Chunk451964.channelIcon
+          className: Chunk869306.channelIcon
         }), (0, Chunk951288.jsx)(Chunk481060.Text, {
           color: "interactive-normal",
           variant: "text-md/normal",
@@ -246,9 +246,9 @@ class eI extends(l = Chunk647438.PureComponent) {
       }))
     }
     return h = exports.features.has(Chunk981631.oNc.HUB) ? (0, Chunk951288.jsxs)("div", {
-      className: Chunk451964.hubHeader,
+      className: Chunk869306.hubHeader,
       children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
-        className: Chunk451964.headerCloseButtonSpacing,
+        className: Chunk869306.headerCloseButtonSpacing,
         id: this._headerId,
         variant: "heading-xl/semibold",
         color: "header-primary",
@@ -273,7 +273,7 @@ class eI extends(l = Chunk647438.PureComponent) {
         children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
           id: this._headerId,
           tag: "h2",
-          className: Chunk451964.headerCloseButtonSpacing,
+          className: Chunk869306.headerCloseButtonSpacing,
           children: module
         }), Chunk442837]
       }), (0, Chunk951288.jsx)(Chunk481060.E1j, {
@@ -284,38 +284,38 @@ class eI extends(l = Chunk647438.PureComponent) {
         autoFocus: true,
         onClear: this.handleClearSearch
       }), (0, Chunk951288.jsx)("div", {
-        className: Chunk197571.marginTop8,
+        className: Chunk10198.marginTop8,
         children: this.renderChannelWarning()
       })]
     }) : (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
         id: this._headerId,
         tag: "h2",
-        className: a()(Chunk197571.marginReset, Chunk451964.headerCloseButtonSpacing, Chunk451964.headerText),
+        className: a()(Chunk10198.marginReset, Chunk869306.headerCloseButtonSpacing, Chunk869306.headerText),
         children: module
       }), Chunk442837, this.renderChannelWarning()]
     }), (0, Chunk951288.jsxs)(Chunk481060.xBx, {
       separator: require,
       children: [(0, Chunk951288.jsx)("div", {
-        className: Chunk451964.closeButton,
+        className: Chunk869306.closeButton,
         children: (0, Chunk951288.jsx)(Chunk481060.olH, {
           onClick: c
         })
       }), (0, Chunk951288.jsxs)("div", {
-        className: Chunk451964.headerContainer,
+        className: Chunk869306.headerContainer,
         children: [Chunk512722 && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
           children: [(0, Chunk951288.jsx)("img", {
-            className: Chunk451964.welcomeImage,
+            className: Chunk869306.welcomeImage,
             src: Chunk622577,
             alt: ""
           }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
             variant: "heading-lg/semibold",
-            className: Chunk451964.welcomeHeading,
+            className: Chunk869306.welcomeHeading,
             children: Chunk388032.intl.string(Chunk388032.t.DpoBNz)
           }), (0, Chunk951288.jsx)(Chunk481060.Text, {
             variant: "text-md/normal",
             color: "text-secondary",
-            className: Chunk451964.welcomeSubheading,
+            className: Chunk869306.welcomeSubheading,
             children: Chunk388032.intl.string(Chunk388032.t["wJ/ouL"])
           })]
         }), null != Chunk647438 ? (0, Chunk951288.jsx)(Chunk648159.Z, {}) : null, Chunk533800]
@@ -329,12 +329,12 @@ class eI extends(l = Chunk647438.PureComponent) {
       isFriendsInVCInvitesEnabled: n
     } = this.props, l = this.getInviteKey();
     return 0 === module.length ? (0, Chunk951288.jsx)(Chunk481060.hzk, {
-      className: Chunk451964.inviteRowEmptyState,
+      className: Chunk869306.inviteRowEmptyState,
       children: (0, Chunk951288.jsx)(Chunk481060.OZU, {
         children: Chunk388032.intl.string(Chunk388032.t.ojoWgY)
       })
     }) : null == l ? (0, Chunk951288.jsx)(Chunk481060.hzk, {
-      className: Chunk451964.inviteRowEmptyState,
+      className: Chunk869306.inviteRowEmptyState,
       children: (0, Chunk951288.jsx)(Chunk481060.OZU, {
         children: Chunk388032.intl.string(Chunk388032.t.hzPwGB)
       })
@@ -342,7 +342,7 @@ class eI extends(l = Chunk647438.PureComponent) {
       style: {
         "--custom-invite-section-header-height": 24
       },
-      className: Chunk451964.scroller,
+      className: Chunk869306.scroller,
       sections: exports.map(e => e.length),
       renderSection: this.renderSection,
       sectionHeight: 24,
@@ -350,7 +350,7 @@ class eI extends(l = Chunk647438.PureComponent) {
       rowHeight: this.getRowHeight,
       paddingBottom: 16
     }) : (0, Chunk951288.jsx)(Chunk481060.YAO, {
-      className: Chunk451964.scroller,
+      className: Chunk869306.scroller,
       sections: [module.length],
       renderSection: this.renderSection,
       sectionHeight: 0,
@@ -373,12 +373,12 @@ class eI extends(l = Chunk647438.PureComponent) {
     u()(null != a, "InstantInviteModal: user cannot be undefined");
     let o = (0, Chunk601964.eM)(exports, a) ? Chunk388032.intl.string(Chunk388032.t.HFbByM) : Chunk388032.intl.string(Chunk388032.t.ueBhAw);
     return null != l ? o = Chunk388032.intl.string(Chunk388032.t.CXpS1N) : null != Chunk647438 && (o = Chunk388032.intl.string(Chunk388032.t.ueCrHB)), (0, Chunk951288.jsx)(Chunk481060.hzk, {
-      className: Chunk451964.noScroll,
+      className: Chunk869306.noScroll,
       children: (0, Chunk951288.jsxs)(Chunk600164.Z, {
         direction: Chunk600164.Z.Direction.VERTICAL,
-        className: Chunk197571.marginBottom20,
+        className: Chunk10198.marginBottom20,
         children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
-          className: Chunk451964.subText,
+          className: Chunk869306.subText,
           variant: "text-sm/normal",
           children: Chunk512722
         }), (0, Chunk951288.jsx)(Chunk603236.I, eh(eg({}, this.props), {
@@ -405,10 +405,10 @@ class eI extends(l = Chunk647438.PureComponent) {
       let e = Chunk388032.intl.string(Chunk388032.t.MLkj7O);
       null != Chunk647438 ? e = Chunk388032.intl.string(Chunk388032.t["1b9nen"]) : null != Chunk120356 ? e = Chunk388032.intl.string(Chunk388032.t.iI1gMj) : null != l ? e = Chunk388032.intl.string(Chunk388032.t.KaWCyM) : (null == Chunk512722 ? true : Chunk512722.isGuildStageVoice()) && (e = Chunk388032.intl.string(Chunk388032.t["2frWa2"])), c = (0, Chunk951288.jsxs)(Chunk600164.Z, {
         direction: Chunk600164.Z.Direction.VERTICAL,
-        className: Chunk451964.content,
+        className: Chunk869306.content,
         children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
           tag: "h5",
-          className: Chunk197571.marginBottom8,
+          className: Chunk10198.marginBottom8,
           children: module
         }), (0, Chunk951288.jsx)(Chunk603236.I, eh(eg({}, this.props), {
           setInviteFlags: this.handleSetInviteFlags,
@@ -417,7 +417,7 @@ class eI extends(l = Chunk647438.PureComponent) {
       })
     } else exports || (c = (0, Chunk951288.jsxs)(Chunk600164.Z, {
       justify: Chunk600164.Z.Justify.BETWEEN,
-      className: Chunk197571.marginTop20,
+      className: Chunk10198.marginTop20,
       children: [(0, Chunk951288.jsx)(Chunk755721.$q, {
         size: 18,
         type: Chunk755721.M0.INVERTED,
@@ -449,8 +449,8 @@ class eI extends(l = Chunk647438.PureComponent) {
     }));
     return null != c ? (0, Chunk951288.jsx)(Chunk481060.mzw, {
       className: a()({
-        [Chunk451964.noPadding]: !require,
-        [Chunk451964.footer]: require
+        [Chunk869306.noPadding]: !require,
+        [Chunk869306.footer]: require
       }),
       children: c
     }) : null
@@ -491,8 +491,8 @@ class eI extends(l = Chunk647438.PureComponent) {
     } = this.props;
     return (0, Chunk951288.jsx)("div", {
       className: a()({
-        [Chunk451964.isFriendsInVCInvitesExperiment]: Chunk647438 && null != Chunk120356,
-        [Chunk451964.wrapper]: l
+        [Chunk869306.isFriendsInVCInvitesExperiment]: Chunk647438 && null != Chunk120356,
+        [Chunk869306.wrapper]: l
       }),
       children: (0, Chunk951288.jsx)(Chunk481060.Y0X, {
         impression: {
@@ -504,7 +504,7 @@ class eI extends(l = Chunk647438.PureComponent) {
         },
         "aria-labelledby": this._headerId,
         transitionState: module,
-        className: Chunk451964.modal,
+        className: Chunk869306.modal,
         parentComponent: "InstantInvite",
         children: this.getModalContent()
       })

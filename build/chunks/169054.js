@@ -1,3 +1,0 @@
-/** Chunk was on 95748 **/
-/** chunk id: 169054, original params: a (module,exports,require) **/
-module.exports = JSON.parse('{"zyFyf3":"Trenutačno si u načinu „Ne smetaj”. Idi online da se pridružiš razgovoru.","7cuAe3":"Način „Ne smetaj” je uključen već neko vrijeme. Daj prijateljima do znanja da si dostupan/na.","3nnb4u":"Prijatelji možda misle da si zauzet/a. Idi online da se pridružiš razgovoru.","3t3FR0":"Daj drugima do znanja da si dostupan/na","Onha6O":"Jesi li još uvijek zauzeta/a?","NtY0dX":"U načinu „Ne smetaj” si već više od jednog dana"}')

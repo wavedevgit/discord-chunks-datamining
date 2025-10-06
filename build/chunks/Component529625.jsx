@@ -1,4 +1,4 @@
-/** Chunk was on 5588 **/
+/** Chunk was on 5938 **/
 /** chunk id: 529625, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk620481 = require("./620481.js"),
   Chunk608934 = require("./608934.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk530146 = require("./530146.js");
+  Chunk575043 = require("./575043.js");
 let h = (0, Chunk972959.H)(() => ({
   isRecording: false,
   isUploading: false,
@@ -66,14 +66,14 @@ function x() {
   return (0, Chunk951288.jsxs)(Chunk481060.hjN, {
     title: "Debug Logs Session",
     tag: Chunk481060.RB0.H3,
-    className: Chunk530146.panelGroup,
+    className: Chunk575043.panelGroup,
     children: [(0, Chunk951288.jsx)(Chunk481060.R94, {
       type: Chunk481060.geA.DESCRIPTION,
-      className: Chunk530146.subtitle,
+      className: Chunk575043.subtitle,
       children: "Click to emit debug logs as you search in the Quick Switcher. Includes your search term and all results. For each result, includes the record id, associated names, and frecency scores."
     }), (0, Chunk951288.jsx)(Chunk481060.R94, {
       type: Chunk481060.geA.DESCRIPTION,
-      className: Chunk530146.subtitle,
+      className: Chunk575043.subtitle,
       children: "When you are done, please remember to upload the logs."
     }), (0, Chunk951288.jsxs)(Chunk481060.hE2, {
       children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {

@@ -10,7 +10,7 @@ var a, Chunk951288 = require("./951288.js"),
   Chunk748780 = require("./748780.js"),
   Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk788524 = require("./788524.js");
+  Chunk816716 = require("./816716.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -50,7 +50,7 @@ class h extends(a = Chunk647438.Component) {
       href: Chunk981631.Z5c.INDEX,
       target: "_blank",
       rel: "noopener",
-      className: l()(Chunk788524.logo, this.props.className),
+      className: l()(Chunk816716.logo, this.props.className),
       style: this.getAnimatedStyle()
     })
   }

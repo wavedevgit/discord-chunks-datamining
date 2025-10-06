@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk358085 = require("./358085.js"),
   Chunk998502 = require("./998502.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk761588 = require("./761588.js");
+  Chunk680465 = require("./680465.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -30,9 +30,9 @@ function f() {
       require(true), Chunk358085 ? await (0, Chunk865066.OK)("windows-settings") : await (0, Chunk865066.sU)("windows-settings"), require(false), Chunk998502((0, Chunk865066.aL)())
     }, [Chunk358085]);
   return module ? (0, Chunk951288.jsxs)("div", {
-    className: Chunk761588.systemServiceContainer,
+    className: Chunk680465.systemServiceContainer,
     children: [(0, Chunk951288.jsxs)("div", {
-      className: Chunk761588.systemServiceTextContainer,
+      className: Chunk680465.systemServiceTextContainer,
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/medium",
         color: "header-primary",

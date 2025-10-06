@@ -1,7 +1,7 @@
-/** Chunk was on 91053 **/
-/** chunk id: 900927, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 68545 **/
+/** chunk id: 900927, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => p
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -15,54 +15,54 @@ var Chunk399606 = require("./399606.js"),
   Chunk430824 = require("./430824.js"),
   Chunk709054 = require("./709054.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk131806 = require("./131806.js");
+  Chunk143144 = require("./143144.js");
 
-function g(e) {
+function p(e) {
   let {
-    userId: t,
-    guildId: n,
-    textClassName: g,
-    tooltipDelay: m
-  } = e, b = (0, i.e7)([c.default], () => c.default.locale), y = (0, i.e7)([u.Z], () => null != n ? u.Z.getGuild(n) : null), _ = (0, i.e7)([d.ZP], () => null != n ? d.ZP.getMember(n, t) : null), j = (0, s.FI)(p.default.extractTimestamp(t), b), x = (0, s.FI)(null == _ ? true : _.joinedAt, b);
-  return null == y || null == _ ? (0, r.jsx)(a.Text, {
+    userId: n,
+    guildId: t,
+    textClassName: p,
+    tooltipDelay: b
+  } = e, x = (0, c.e7)([l.default], () => l.default.locale), g = (0, c.e7)([s.Z], () => null != t ? s.Z.getGuild(t) : null), v = (0, c.e7)([d.ZP], () => null != t ? d.ZP.getMember(t, n) : null), I = (0, i.FI)(f.default.extractTimestamp(n), x), C = (0, i.FI)(null == v ? true : v.joinedAt, x);
+  return null == g || null == v ? (0, o.jsx)(r.Text, {
     variant: "text-sm/normal",
-    className: g,
-    children: j
-  }) : (0, r.jsxs)("div", {
-    className: f.memberSinceWrapper,
-    children: [(0, r.jsxs)("div", {
-      className: f.memberSince,
-      children: [(0, r.jsx)(l.u, {
-        text: h.intl.string(h.t.uvGmCw),
-        delay: m,
-        children: (0, r.jsx)(a.gw7, {
+    className: p,
+    children: I
+  }) : (0, o.jsxs)("div", {
+    className: m.memberSinceWrapper,
+    children: [(0, o.jsxs)("div", {
+      className: m.memberSince,
+      children: [(0, o.jsx)(a.u, {
+        text: u.intl.string(u.t.uvGmCw),
+        delay: b,
+        children: (0, o.jsx)(r.gw7, {
           size: "custom",
           width: 28,
           height: 28,
           color: "currentColor",
-          className: f.discordIcon
+          className: m.discordIcon
         })
-      }), (0, r.jsx)(a.Text, {
+      }), (0, o.jsx)(r.Text, {
         variant: "text-sm/normal",
-        className: g,
-        children: j
+        className: p,
+        children: I
       })]
-    }), (0, r.jsx)("div", {
-      className: f.divider
-    }), (0, r.jsxs)("div", {
-      className: f.memberSince,
-      children: [(0, r.jsx)(l.u, {
-        text: y.name,
-        delay: m,
-        children: (0, r.jsx)(o.Z, {
-          guild: y,
-          size: o.Z.Sizes.SMOL,
-          className: f.guildIcon
+    }), (0, o.jsx)("div", {
+      className: m.divider
+    }), (0, o.jsxs)("div", {
+      className: m.memberSince,
+      children: [(0, o.jsx)(a.u, {
+        text: g.name,
+        delay: b,
+        children: (0, o.jsx)(_.Z, {
+          guild: g,
+          size: _.Z.Sizes.SMOL,
+          className: m.guildIcon
         })
-      }), (0, r.jsx)(a.Text, {
+      }), (0, o.jsx)(r.Text, {
         variant: "text-sm/normal",
-        className: g,
-        children: x
+        className: p,
+        children: C
       })]
     })]
   })

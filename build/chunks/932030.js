@@ -1,3 +1,0 @@
-/** Chunk was on 47555 **/
-/** chunk id: 932030, original params: p (module,exports,require) **/
-module.exports = JSON.parse('{"b7Oqdn":"選擇其他方法","ar3a3t":"您所提供的資訊僅會用於確認年齡組，確認完便會刪除。","0vTx7u":"重新載入","XYYm+/":"請選擇其他方式來進行年齡認證","rVLCwM":"選擇其他方法","RpMIT0":["我們會用年齡組來判定使用者是否能體驗特定功能。",[8,"$link",["瞭解更多"],[[1,"handleOnHelpUrlHook"]]]],"eJmat7":"此方法速度通常最快，且無須手動操作，只需要一台視訊攝影機即可完成。","2yLvkZ":"拍攝自拍影片","ZdmRwc":"您必須提供駕照、護照或其他證件，然後再拍一張自拍照，證明這是您本人。","dwkwo6":"掃描您的證件","cR6339":"沒有可用的年齡認證方式，系統可能發生錯誤。","hDvmYG":"重新載入"}')

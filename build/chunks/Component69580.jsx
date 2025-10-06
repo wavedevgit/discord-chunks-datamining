@@ -61,7 +61,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk186901 = require("./186901.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk565870 = require("./565870.js");
+  Chunk847446 = require("./847446.js");
 
 function en(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -172,7 +172,7 @@ function eo() {
     }), (0, Chunk951288.jsx)(Chunk787025.G, {
       removeChildWrapper: true,
       children: (0, Chunk951288.jsx)("div", {
-        className: Chunk565870.deepLinkContainer,
+        className: Chunk847446.deepLinkContainer,
         children: module
       })
     })
@@ -233,9 +233,9 @@ function es(e) {
 
 function el() {
   return (0, Chunk951288.jsx)("div", {
-    className: Chunk565870.loadingContainer,
+    className: Chunk847446.loadingContainer,
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {
-      className: Chunk565870.spinner
+      className: Chunk847446.spinner
     })
   })
 }
@@ -291,7 +291,7 @@ function ec(e) {
     }),
     {
       requestedScopes: e8,
-      accountScopes: e5
+      accountScopes: e6
     } = i.useMemo(() => {
       let e = e0 ? null == e3 ? true : e3.scopes : ed,
         t = (0, j.K)(null != e ? e : []),
@@ -301,7 +301,7 @@ function ec(e) {
         accountScopes: n
       }
     }, [null == e3 ? true : e3.scopes, ed, e0]),
-    e6 = i.useMemo(() => {
+    e5 = i.useMemo(() => {
       var e;
       let t = e0 ? d.vB(null != (e = null == e3 ? true : e3.permissions) ? e : 0) : ef;
       return null != t ? t : x.Hn
@@ -361,7 +361,7 @@ function ec(e) {
           state: eo,
           nonce: es,
           integrationType: eJ,
-          permissions: d.Od(e6, eY),
+          permissions: d.Od(e5, eY),
           guildId: eJ === c.Y.GUILD_INSTALL && null != eZ ? eZ : true,
           channelId: eJ === c.Y.GUILD_INSTALL && null != eV ? eV : true,
           dmSettings: {
@@ -387,7 +387,7 @@ function ec(e) {
         let e = t.body;
         (null == e ? true : e.message) != null && "" !== e.message ? eM(Error(e.message)) : eM(e), eL("AUTHORIZE_SCOPES"), ek(false)
       }
-    }, [ev, eE, eO, null == eP ? true : eP.application, eQ, eI, $, e8, en, er, ei, ea, eo, es, e6, eY, eZ, eJ, eV, e9, eK]),
+    }, [ev, eE, eO, null == eP ? true : eP.application, eQ, eI, $, e8, en, er, ei, ea, eo, es, e5, eY, eZ, eJ, eV, e9, eK]),
     ti = i.useRef(false),
     ta = i.useCallback(async () => {
       if (!D.default.isAuthenticated()) return void(0, k.c$)(eN, "oauth2_error_not_authenticated");
@@ -438,10 +438,10 @@ function ec(e) {
       application_id: $,
       integration_type: eJ,
       scopes: e8,
-      permissions: e6.toString(),
+      permissions: e5.toString(),
       mobile_push_notification_default_setting: false
     }))
-  }, [$, eJ, e6, e8, eD]), i.useEffect(() => {
+  }, [$, eJ, e5, e8, eD]), i.useEffect(() => {
     if (null == eD && (!e0 || null != e1) && eR)
       if (null != eC) {
         var e;
@@ -451,8 +451,8 @@ function ec(e) {
     if (null == eJ || null != eP || null != ex) return;
     eJ === c.Y.USER_INSTALL && (eF(null), eH(null));
     let e = e8.filter(e => !B.ak.includes(e));
-    0 === e8.length ? eM(Error("No scopes were provided.")) : e.length > 0 ? eM(Error("Invalid scope: ".concat(e[0]))) : (0, G._$)(e6) ? eM(Error("Invalid permission(s) provided.")) : ta()
-  }, [tt, ta, e8, e6, eJ, eP, ex]);
+    0 === e8.length ? eM(Error("No scopes were provided.")) : e.length > 0 ? eM(Error("Invalid scope: ".concat(e[0]))) : (0, G._$)(e5) ? eM(Error("Invalid permission(s) provided.")) : ta()
+  }, [tt, ta, e8, e5, eJ, eP, ex]);
   let tl = i.useCallback(e => {
       e && eG(true)
     }, []),
@@ -526,10 +526,10 @@ function ec(e) {
       y = (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(V.Z, {
           application: eP.application,
-          accountScopes: e5
+          accountScopes: e6
         }), (0, r.jsx)(H.Z, {
           application: eP.application,
-          accountScopes: e5,
+          accountScopes: e6,
           requestedScopes: e8,
           integrationType: eJ,
           errors: tE,
@@ -558,7 +558,7 @@ function ec(e) {
           selectedGuildId: eZ,
           onChannelChange: eH
         }) : null]
-      }), e8.includes(u.x.BOT) && !d.fS(e6, x.Hn) && (A = "AUTHORIZE_BOT_PERMISSIONS"), to.length > 1 && (S = "SELECT_INSTALL_TYPE"), t_ = tO && null == eQ || ty && null == eV, tf = true;
+      }), e8.includes(u.x.BOT) && !d.fS(e5, x.Hn) && (A = "AUTHORIZE_BOT_PERMISSIONS"), to.length > 1 && (S = "SELECT_INSTALL_TYPE"), t_ = tO && null == eQ || ty && null == eV, tf = true;
       break;
     case "AUTHORIZE_BOT_PERMISSIONS":
       if (null == eP) return {
@@ -567,7 +567,7 @@ function ec(e) {
       };
       y = (0, r.jsx)(Y.Z, {
         application: eP.application,
-        permissions: e6,
+        permissions: e5,
         deniedPermissions: eY,
         onPermissionsChange: td,
         guild: eQ
@@ -594,7 +594,7 @@ function ec(e) {
     user: eq,
     application: eP.application,
     bot: eP.bot,
-    accountScopes: e5,
+    accountScopes: e6,
     showLogout: eg || false,
     location: eN,
     scopes: e8

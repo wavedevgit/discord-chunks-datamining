@@ -1,3 +1,0 @@
-/** Chunk was on 87177 **/
-/** chunk id: 849073, original params: n (module,exports,require) **/
-module.exports = JSON.parse('{"Xypb39":"Hang Động","qRFFLC":"Chi\xean Gi\xf2n","lFIyMz":"Hồn Ma","fPU01d":"Loa Ph\xf3ng Thanh","KN+v7+":"Thỏ Kh\xf4ng Gian","kHmvdn":"Cyber Boss"}')

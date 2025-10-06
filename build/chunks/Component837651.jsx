@@ -12,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk594174 = require("./594174.js"),
   Chunk287880 = require("./287880.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk186603 = require("./186603.js");
+  Chunk378149 = require("./378149.js");
 
 function g(e, t, r) {
   return t in e ? Object.defineProperty(e, t, {
@@ -67,7 +67,7 @@ class f extends Chunk647438.PureComponent {
     } = this.state, x = null == (e = Chunk594174.default.getCurrentUser()) ? true : module.email, b = (0, Chunk287880.U0)(null != x ? x : "", Chunk816814), m = (0, Chunk951288.jsx)("form", {
       onSubmit: this.handleActivate,
       children: (0, Chunk951288.jsxs)(Chunk600164.Z, {
-        className: Chunk186603.inputContainer,
+        className: Chunk378149.inputContainer,
         align: Chunk600164.Z.Align.START,
         children: [(0, Chunk951288.jsx)(Chunk481060.oil, {
           value: g,
@@ -93,7 +93,7 @@ class f extends Chunk647438.PureComponent {
     return (0, Chunk951288.jsxs)(Chunk481060.Y0X, {
       transitionState: exports,
       size: Chunk481060.CgR.DYNAMIC,
-      className: Chunk186603.customWidth,
+      className: Chunk378149.customWidth,
       parentComponent: "MFAEnable",
       children: [(0, Chunk951288.jsxs)(Chunk481060.xBx, {
         separator: false,
@@ -105,7 +105,7 @@ class f extends Chunk647438.PureComponent {
             children: Chunk388032.intl.string(Chunk388032.t.cDgKtb)
           }), (0, Chunk951288.jsx)(Chunk481060.Text, {
             variant: "text-xs/normal",
-            className: Chunk186603.subHeader,
+            className: Chunk378149.subHeader,
             children: Chunk388032.intl.string(Chunk388032.t["7NGwtL"])
           })]
         }), (0, Chunk951288.jsx)(Chunk600164.Z.Child, {
@@ -128,7 +128,7 @@ class f extends Chunk647438.PureComponent {
             authyURL: "https://www.authy.com/"
           })
         }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
-          className: Chunk186603.divider
+          className: Chunk378149.divider
         }), (0, Chunk951288.jsx)(p, {
           image: (0, Chunk951288.jsx)(Chunk198993.ZP, {
             text: b
@@ -136,20 +136,20 @@ class f extends Chunk647438.PureComponent {
           label: Chunk388032.intl.string(Chunk388032.t["91InFx"]),
           text: Chunk388032.intl.string(Chunk388032.t.hFeBkp),
           children: (0, Chunk951288.jsxs)("div", {
-            className: Chunk186603.topSpacing,
+            className: Chunk378149.topSpacing,
             children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
               tag: "h5",
-              className: Chunk186603.headerSpacing,
+              className: Chunk378149.headerSpacing,
               children: Chunk388032.intl.string(Chunk388032.t["76IPws"])
             }), (0, Chunk951288.jsx)(Chunk481060.Text, {
               variant: "text-md/normal",
-              className: Chunk186603.secret,
+              className: Chunk378149.secret,
               selectable: true,
               children: Chunk816814
             })]
           })
         }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
-          className: Chunk186603.divider
+          className: Chunk378149.divider
         }), (0, Chunk951288.jsx)(p, {
           image: (0, Chunk951288.jsx)("img", {
             alt: "",
