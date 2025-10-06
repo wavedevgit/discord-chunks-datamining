@@ -65,7 +65,7 @@ function b(e, t) {
   return i
 }
 let y = () => 80,
-  P = e => {
+  j = e => {
     var {
       children: t,
       className: n,
@@ -80,7 +80,7 @@ let y = () => 80,
       children: t
     }))
   },
-  j = e => {
+  P = e => {
     var t, {
         profileEffect: n,
         innerRef: l,
@@ -92,17 +92,17 @@ let y = () => 80,
     let p = (0, d.V)(n.skuId),
       y = i.useRef(null),
       {
-        accessibilityLabel: j,
+        accessibilityLabel: P,
         thumbnailPreviewSrc: v,
         title: O
       } = null != (t = null == p ? true : p.config) ? t : {};
-    return (0, r.jsxs)(P, x(h({
+    return (0, r.jsxs)(j, x(h({
       innerRef: null != l ? l : y,
       isSelected: s
     }, u), {
       children: [(0, r.jsx)("img", {
         src: g,
-        alt: j,
+        alt: P,
         className: m.presetEffectBackground
       }), (0, r.jsx)("img", {
         className: m.presetEffectImg,
@@ -146,7 +146,7 @@ let y = () => 80,
             section: y,
             items: v
           } = d[e];
-          return (0, s.EQ)(v[t]).with(f.Tm, () => (0, r.jsxs)(P, {
+          return (0, s.EQ)(v[t]).with(f.Tm, () => (0, r.jsxs)(j, {
             style: h({}, u),
             isSelected: !g,
             onSelect: () => o(null),
@@ -159,7 +159,7 @@ let y = () => 80,
               color: "header-primary",
               children: null != n ? p.intl.string(p.t.CHf9iI) : p.intl.string(p.t.PoWNfX)
             })]
-          }, x)).with(f.oT, () => (0, r.jsxs)(P, {
+          }, x)).with(f.oT, () => (0, r.jsxs)(j, {
             style: u,
             onSelect: a,
             children: [(0, r.jsx)(c.EOn, {
@@ -175,7 +175,7 @@ let y = () => 80,
             })]
           }, x)).otherwise(e => {
             let t = (null == i ? true : i.skuId) === e.skuId;
-            return (0, r.jsx)(j, {
+            return (0, r.jsx)(P, {
               style: h({}, u),
               section: y,
               profileEffect: e,

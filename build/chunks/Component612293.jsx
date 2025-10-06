@@ -40,10 +40,10 @@ function k(e) {
     guildId: k,
     initialSelectedNameplate: S
   } = e, A = (0, a.e7)([b.ZP], () => null != k && null != c ? b.ZP.getMember(k, c.id) : null), T = null != A ? null == A || null == (t = A.collectibles) ? true : t.nameplate : null == c || null == (n = c.collectibles) ? true : n.nameplate, {
-    pendingNameplate: Z
-  } = (0, g.Zx)(c, k), [B, N] = (0, i.useState)(() => {
+    pendingNameplate: B
+  } = (0, g.Zx)(c, k), [N, Z] = (0, i.useState)(() => {
     var e;
-    return null != S ? S : true !== Z ? Z : null == T ? null : null != (e = (0, u.Y)(x, _).find(e => {
+    return null != S ? S : true !== B ? B : null == T ? null : null != (e = (0, u.Y)(x, _).find(e => {
       let {
         skuId: t
       } = e;
@@ -52,7 +52,7 @@ function k(e) {
   }), {
     product: O,
     purchase: L
-  } = (0, p.Z)(null == B ? true : B.skuId), D = f.ZP.canUseCollectibles(c), M = true === Z ? (null == B ? true : B.skuId) === (null == T ? true : T.skuId) : (null == B ? true : B.skuId) === (null == Z ? true : Z.skuId), U = (0, i.useCallback)(e => {
+  } = (0, p.Z)(null == N ? true : N.skuId), D = f.ZP.canUseCollectibles(c), M = true === B ? (null == N ? true : N.skuId) === (null == T ? true : T.skuId) : (null == N ? true : N.skuId) === (null == B ? true : B.skuId), U = (0, i.useCallback)(e => {
     P(), (0, d.mK)({
       analyticsLocations: C,
       analyticsSource: s.Z.EDIT_NAMEPLATE_MODAL,
@@ -78,23 +78,23 @@ function k(e) {
       scrollbarType: "none",
       children: [(0, r.jsx)(I.Z, {
         currentUser: c,
-        selectedNameplate: B,
+        selectedNameplate: N,
         guildId: k,
-        onSelect: N,
+        onSelect: Z,
         onOpenShop: U
       }), (0, r.jsx)(w.Z, {
         user: c,
         guildId: k,
-        selectedNameplate: B
+        selectedNameplate: N
       })]
     }), (0, r.jsxs)(l.mzw, {
       "data-migration-pending": true,
       className: j.modalFooter,
-      children: [null != L && (!(0, u.qS)(L) || D) || null === B ? (0, r.jsx)(l.zxk, {
+      children: [null != L && (!(0, u.qS)(L) || D) || null === N ? (0, r.jsx)(l.zxk, {
         variant: "primary",
         text: E.intl.string(E.t.Jh8fJy),
         onClick: () => {
-          null != k ? (0, m.RH)(B) : (0, o.Rx)(B), P()
+          null != k ? (0, m.RH)(N) : (0, o.Rx)(N), P()
         },
         disabled: M
       }) : null == L && (D || !(0, u.G1)(O)) ? (0, r.jsx)(l.zxk, {

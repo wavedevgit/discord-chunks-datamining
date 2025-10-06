@@ -52,7 +52,7 @@ let S = e => {
       pendingProfileEffectRecord: n,
       product: u,
       purchase: d
-    } = e, p = (0, l.e7)([j.default], () => j.default.getCurrentUser()), m = (0, l.e7)([s.Z], () => s.Z.getProduct(null == n ? true : n.skuId)), g = (0, l.e7)([x.default], () => x.default.locale), h = O.ZP.canUseCollectibles(p), b = (0, c.qS)(d), y = (0, c.G1)(u), P = !h && b, C = (null == d ? true : d.expiresAt) != null ? (0, v.TD)(Date.now(), d.expiresAt) : null, S = (0, a.ag)(d), w = (0, a.kd)(m), A = (0, f.M)(!y || h), Z = I(P, y, h, A);
+    } = e, p = (0, l.e7)([P.default], () => P.default.getCurrentUser()), m = (0, l.e7)([s.Z], () => s.Z.getProduct(null == n ? true : n.skuId)), g = (0, l.e7)([x.default], () => x.default.locale), h = O.ZP.canUseCollectibles(p), b = (0, c.qS)(d), y = (0, c.G1)(u), j = !h && b, C = (null == d ? true : d.expiresAt) != null ? (0, v.TD)(Date.now(), d.expiresAt) : null, S = (0, a.ag)(d), w = (0, a.kd)(m), A = (0, f.M)(!y || h), N = I(j, y, h, A);
     return null != n ? (0, r.jsx)("div", {
       className: t ? E.effectDescriptionNoGradient : E.effectDescriptionBorderWithGradient,
       children: (0, r.jsxs)("div", {
@@ -66,7 +66,7 @@ let S = e => {
           color: "text-default",
           variant: "text-sm/normal",
           className: E.effectDescription,
-          children: Z
+          children: N
         }), null != C && (0, r.jsx)(o.Text, {
           variant: "text-xxs/normal",
           color: "text-muted",
@@ -115,23 +115,23 @@ let S = e => {
       guild: f
     } = e, {
       pendingGlobalName: x,
-      pendingNickname: j,
+      pendingNickname: P,
       pendingPronouns: v,
       pendingBio: _,
       pendingBanner: I,
       pendingAvatar: w,
       pendingAvatarDecoration: A,
-      pendingThemeColors: Z,
-      pendingAccentColor: N
-    } = (0, l.cj)([u.Z, P.Z], () => C({
+      pendingThemeColors: N,
+      pendingAccentColor: Z
+    } = (0, l.cj)([u.Z, j.Z], () => C({
       pendingNickname: true,
       pendingGlobalName: true,
       pendingAccentColor: true
-    }, null != f ? u.Z.getAllPending() : P.Z.getAllPending())), k = O.ZP.isPremium(i), D = O.ZP.canUsePremiumProfileCustomization(i), T = (0, h.ZP)(i.id), U = !!(null == T ? true : T.getPreviewBio(_).value), L = {
+    }, null != f ? u.Z.getAllPending() : j.Z.getAllPending())), k = O.ZP.isPremium(i), D = O.ZP.canUsePremiumProfileCustomization(i), T = (0, h.ZP)(i.id), U = !!(null == T ? true : T.getPreviewBio(_).value), L = {
       user: i,
       guild: f,
       pendingGlobalName: x,
-      pendingNickname: j,
+      pendingNickname: P,
       pendingPronouns: v,
       pendingBio: b.dN.useSetting() && null != _ ? d.ZP.parse(true, _).content : _,
       pendingBanner: I,
@@ -141,8 +141,8 @@ let S = e => {
         image: w
       }),
       pendingAvatarDecoration: A,
-      pendingThemeColors: Z,
-      pendingAccentColor: N,
+      pendingThemeColors: N,
+      pendingAccentColor: Z,
       pendingProfileEffect: null != o ? o : null,
       hideFakeActivity: U,
       canUsePremiumCustomization: D,

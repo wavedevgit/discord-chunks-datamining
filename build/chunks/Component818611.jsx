@@ -1,7 +1,7 @@
 /** Chunk was on 79589 **/
 /** chunk id: 818611, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => P
 }), require("./314940.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -80,7 +80,7 @@ let f = () => 80,
       children: t
     }))
   },
-  P = e => {
+  S = e => {
     var {
       user: t,
       avatarDecoration: r,
@@ -115,7 +115,7 @@ let f = () => 80,
       })]
     }))
   },
-  S = e => {
+  P = e => {
     let {
       user: t,
       guild: r,
@@ -142,9 +142,9 @@ let f = () => 80,
       renderItem: (e, d, j, y) => {
         let {
           section: f,
-          items: S
+          items: P
         } = u[e];
-        return (0, a.EQ)(S[d]).with(p.Tm, () => (0, n.jsxs)(O, {
+        return (0, a.EQ)(P[d]).with(p.Tm, () => (0, n.jsxs)(O, {
           style: v({}, j),
           isSelected: null === i,
           onSelect: () => s(null),
@@ -173,7 +173,7 @@ let f = () => 80,
           })]
         }, y)).otherwise(e => {
           let r = (null == i ? true : i.id) === e.id;
-          return (0, n.jsx)(P, {
+          return (0, n.jsx)(S, {
             style: v({}, j),
             user: t,
             avatarDecoration: e,

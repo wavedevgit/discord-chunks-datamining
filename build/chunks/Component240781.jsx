@@ -1,7 +1,7 @@
 /** Chunk was on 79589 **/
 /** chunk id: 240781, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => P
 }), require("./314940.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -34,7 +34,7 @@ let O = [{
     avatarSize: Chunk481060.EFr.SIZE_32,
     showStatus: true
   }],
-  P = e => {
+  S = e => {
     let {
       purchase: t
     } = e, r = (0, o.e7)([h.default], () => h.default.locale), i = (0, u.qS)(t), l = null != t.expiresAt ? (0, g.TD)(Date.now(), t.expiresAt) : null, s = (0, m.ag)(t), a = t.purchasedAt.toLocaleDateString(r, {
@@ -78,17 +78,17 @@ let O = [{
       })]
     })
   },
-  S = e => {
+  P = e => {
     let {
       user: t,
       guildId: r,
       avatarDecorationOverride: l,
       className: h
     } = e, g = (0, o.e7)([x.Z], () => x.Z.getStatus(t.id)), {
-      product: S,
+      product: P,
       purchase: b
-    } = (0, d.Z)(null == l ? true : l.skuId), E = v.ZP.canUseCollectibles(t), C = (0, u.qS)(b), A = (0, u.G1)(S), I = !E && C, w = (0, p.M)(!A || E), Z = (0, m.kd)(S), T = i.useMemo(() => I ? y.intl.string(y.t["7vkeu7"]) : (0, a.EQ)([A, E, w]).with([true, true, false], () => y.intl.string(y.t.hmyYKy)).with([true, false, true], () => y.intl.string(y.t.q0PlFh)).with([true, false, false], () => y.intl.string(y.t["0xs2sL"])).otherwise(() => y.intl.string(y.t.fEGjVV)), [I, A, E, w]);
-    return null != S && (null == b || I) ? (0, n.jsxs)("div", {
+    } = (0, d.Z)(null == l ? true : l.skuId), E = v.ZP.canUseCollectibles(t), C = (0, u.qS)(b), A = (0, u.G1)(P), I = !E && C, w = (0, p.M)(!A || E), T = (0, m.kd)(P), N = i.useMemo(() => I ? y.intl.string(y.t["7vkeu7"]) : (0, a.EQ)([A, E, w]).with([true, true, false], () => y.intl.string(y.t.hmyYKy)).with([true, false, true], () => y.intl.string(y.t.q0PlFh)).with([true, false, false], () => y.intl.string(y.t["0xs2sL"])).otherwise(() => y.intl.string(y.t.fEGjVV)), [I, A, E, w]);
+    return null != P && (null == b || I) ? (0, n.jsxs)("div", {
       className: s()(f.modalPreview, f.shopPreviewContainer, h),
       children: [(0, n.jsx)("div", {
         className: f.shopPreviewBanner,
@@ -101,10 +101,10 @@ let O = [{
         className: f.shopPreviewTextContainer,
         children: [(0, n.jsx)(c.Text, {
           variant: "text-sm/semibold",
-          children: Z
+          children: T
         }), (0, n.jsx)(c.Text, {
           variant: "text-sm/normal",
-          children: T
+          children: N
         })]
       })]
     }) : (0, n.jsxs)("div", {
@@ -138,7 +138,7 @@ let O = [{
             }, "".concat(i).concat(s))
           })
         })]
-      }), null != b && (0, n.jsx)(P, {
+      }), null != b && (0, n.jsx)(S, {
         purchase: b
       })]
     })
