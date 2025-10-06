@@ -28,7 +28,7 @@ let m = e => {
     a11yLabel: j,
     selectedSkuId: b,
     category: y
-  } = e, L = i.useRef(null), v = (0, C.Z)(L), S = (0, _.m)(L), O = !m && (v || S), E = (0, c.ZP)(), P = (0, s.wj)(E), I = {
+  } = e, L = i.useRef(null), v = (0, C.Z)(L), S = (0, _.m)(L), O = !m && (v || S), P = (0, c.ZP)(), w = (0, s.wj)(P), E = {
     type: l.Z.AVATAR_DECORATION,
     label: j,
     asset: n
@@ -40,9 +40,9 @@ let m = e => {
       onClick: () => {
         null == t || null == x || m || x(t)
       },
-      className: o()(P ? h.shopCardDark : h.shopCard, {
+      className: o()(w ? h.shopCardDark : h.shopCard, {
         [h.shopCardAnimation]: !m,
-        [P ? h.shopCardDarkHighlighted : h.shopCardHighlighted]: O,
+        [w ? h.shopCardDarkHighlighted : h.shopCardHighlighted]: O,
         [h.shopCardSelected]: b === t
       }),
       children: [(0, r.jsx)("div", {
@@ -52,7 +52,7 @@ let m = e => {
           [h.shopCardClaimed]: m
         }),
         children: (0, r.jsx)(p.R, {
-          item: I,
+          item: E,
           user: a,
           isHighlighted: O,
           avatarSize: d.EFr.SIZE_120,

@@ -8,5 +8,6 @@ module.exports = {
   close: "close_e50a4d",
   closeInner: "closeInner_e50a4d",
   premiumBrandRefreshHeader: "premiumBrandRefreshHeader_e50a4d",
-  premiumBrandRefreshContent: "premiumBrandRefreshContent_e50a4d"
+  premiumBrandRefreshContent: "premiumBrandRefreshContent_e50a4d",
+  wishlistModalSize: "wishlistModalSize_e50a4d"
 }
