@@ -181,7 +181,7 @@ function Z(e) {
                 children: N.intl.string(I.default.X0IaiI)
               }), (0, r.jsx)(d.Text, {
                 variant: "text-sm/medium",
-                children: "".concat(null != t.onlineConnectionsCount ? t.onlineConnectionsCount : "———", " / ").concat(null != t.maxConnectionsCount ? t.maxConnectionsCount : "———")
+                children: "".concat(null != t.onlineConnectionsCount ? t.onlineConnectionsCount : "—", " / ").concat(null != t.maxConnectionsCount ? t.maxConnectionsCount : "—")
               })]
             }), (0, r.jsxs)("div", {
               className: P.detailItem,
@@ -215,7 +215,7 @@ function Z(e) {
                   children: N.intl.string(I.default.UwXK29)
                 }) : (0, r.jsx)(d.Text, {
                   variant: "text-sm/medium",
-                  children: "———"
+                  children: "—"
                 })
               })]
             }), (0, r.jsxs)("div", {
@@ -260,7 +260,7 @@ function Z(e) {
                 children: N.intl.string(I.default.fqrxlJ)
               }), (0, r.jsx)(d.Text, {
                 variant: "text-sm/medium",
-                children: null != t.regionName ? t.regionName : "———"
+                children: null != t.regionName ? t.regionName : "—"
               })]
             })]
           })
