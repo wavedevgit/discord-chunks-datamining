@@ -500,7 +500,7 @@ class eh extends(r = Chunk647438.PureComponent) {
         }
         u.id === this.props.rtcConnectedChannelId && (s += 32 * this.props.rtcDesyncedVoiceStatesCount)
       }
-      if (null != u.subtitle && (s += ei.NY), u.record.isGuildStageVoice()) {
+      if ((null != u.subtitle || l === u.id) && (s += ei.NY), u.record.isGuildStageVoice()) {
         var f, g;
         let e = null != (f = r[u.id]) ? f : [],
           t = null != (g = i[u.id]) ? g : [];
