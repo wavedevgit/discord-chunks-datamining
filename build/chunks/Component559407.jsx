@@ -6,7 +6,7 @@ require.d(exports, {
   Z: () => o
 });
 var Chunk951288 = require("./951288.js");
-require("./647438.js"), require("./706394.js");
+require("./647438.js"), require("./40747.js");
 let i = "cash-app-pay-container";
 
 function a() {

@@ -1,3 +1,0 @@
-/** Chunk was on 9553 **/
-/** chunk id: 278511, original params: a (module,exports,require) **/
-module.exports = JSON.parse('{"zyFyf3":"Rahatsız Etmeyin modundasın. Konuşmaya katılmak i\xe7in \xc7evrim İ\xe7i Ol.","7cuAe3":"Bir s\xfcredir Rahatsız Etmeyin modu aktif. Arkadaşlarına m\xfcsait olduğunu bildir.","3nnb4u":"Arkadaşların senin meşgul olduğunu d\xfcş\xfcnebilir. Konuşmaya katılmak i\xe7in \xc7evrim İ\xe7i Ol.","3t3FR0":"Başkalarına m\xfcsait olduğunu s\xf6yle","Onha6O":"H\xe2l\xe2 meşgul m\xfcs\xfcn?","NtY0dX":"Bir g\xfcnden fazla s\xfcredir Rahatsız Etmeyin modundasın"}')

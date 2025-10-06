@@ -23,7 +23,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk726985 = require("./726985.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk10198 = require("./10198.js");
+  Chunk197571 = require("./197571.js");
 let Chunk775322 = require("./775322.js"),
   Chunk853453 = require("./853453.js"),
   T = (0, Chunk313201.hQ)(),
@@ -74,11 +74,11 @@ function C() {
     children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
       id: T,
       tag: Chunk481060.RB0.H3,
-      className: Chunk10198.marginBottom8,
+      className: Chunk197571.marginBottom8,
       children: Chunk388032.intl.string(Chunk388032.t.t8QhiY)
     }), (0, Chunk951288.jsx)(Chunk481060.R94, {
       type: Chunk481060.R94.Types.DESCRIPTION,
-      className: Chunk10198.marginBottom8,
+      className: Chunk197571.marginBottom8,
       children: Chunk388032.intl.string(Chunk388032.t.najZCQ)
     }), (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
       gap: 8,
@@ -133,7 +133,7 @@ function N() {
     hasAutomaticGainControl: Chunk463395.Z.hasAutomaticGainControl(exports)
   }), [exports]), O = Chunk626135 || Chunk63063 || Chunk210887, v = module === Chunk981631.pM4.VOICE_ACTIVITY && Chunk780384;
   return (0, Chunk951288.jsxs)(Chunk738486.Z, {
-    children: [Chunk10198 && (0, Chunk951288.jsx)(Chunk481060.R94, {
+    children: [Chunk197571 && (0, Chunk951288.jsx)(Chunk481060.R94, {
       type: Chunk481060.R94.Types.DESCRIPTION,
       children: Chunk388032.intl.string(Chunk388032.t["/Whuzs"])
     }), (0, Chunk951288.jsx)(Chunk921801.F, {

@@ -47,7 +47,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk695694 = require("./695694.js");
+  Chunk876414 = require("./876414.js");
 
 function W(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -272,7 +272,7 @@ function J(e) {
       skipConfirm: em,
       continueSessionToInitialStep: eg
     },
-    e6 = (0, G.U)({
+    e5 = (0, G.U)({
       renderHeader: ea,
       referralTrialOfferId: el,
       handleClose: e2
@@ -284,7 +284,7 @@ function J(e) {
     children: (0, r.jsx)(c.Y0X, {
       "data-migration-pending": true,
       className: o()(Y.root, eG, {
-        [Y.withHeader]: null != e6
+        [Y.withHeader]: null != e5
       }),
       transitionState: C,
       hideShadow: ep,
@@ -292,7 +292,7 @@ function J(e) {
       size: ez,
       parentComponent: "PaymentModal",
       children: (0, r.jsx)(Z.ZP, K({
-        header: e6,
+        header: e5,
         isLargeModal: ef || (null == eF ? true : eF.isLargeModal),
         isDynamicModal: e_ || (null == eF ? true : eF.isDynamicModal)
       }, e8))

@@ -451,7 +451,7 @@ function eG(e) {
       if (e.hidden) return;
       eo.gamesSeen.unshift(ey(e))
     }
-  }), eo.gamesSeen.sort((e, t) => t.lastFocused - e.lastFocused), eL(), R.Z.setRecentGames(eB().map(e => ex(e, e5, T.Z, S.Z))))
+  }), eo.gamesSeen.sort((e, t) => t.lastFocused - e.lastFocused), eL(), R.Z.setRecentGames(eB().map(e => ex(e, e6, T.Z, S.Z))))
 }
 
 function eB() {
@@ -715,7 +715,7 @@ function e8(e) {
     })
   })
 });
-class e6 extends(i = Chunk442837.ZP.Store) {
+class e5 extends(i = Chunk442837.ZP.Store) {
   initialize() {
     var e, t, n, r, i;
     let a = null != (e = Chunk433517.K.get(H)) ? module : {
@@ -831,8 +831,8 @@ class e6 extends(i = Chunk442837.ZP.Store) {
     return Q
   }
 }
-G(e6, "displayName", "RunningGameStore");
-let e5 = new e6(Chunk570140.Z, {
+G(e5, "displayName", "RunningGameStore");
+let e6 = new e5(Chunk570140.Z, {
     RUNNING_GAMES_CHANGE: eF,
     CANDIDATE_GAMES_CHANGE: eV,
     PERMISSION_CLEAR_PTT_ADMIN_WARNING: eH,
@@ -852,4 +852,4 @@ let e5 = new e6(Chunk570140.Z, {
     GAME_DETECTION_DEBUGGING_TICK: eJ,
     SYSTEM_SERVICE_INITIALIZE: e8
   }),
-  e7 = e5
+  e7 = e6

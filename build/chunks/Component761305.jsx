@@ -15,7 +15,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk388905 = require("./388905.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk10198 = require("./10198.js");
+  Chunk197571 = require("./197571.js");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -69,18 +69,18 @@ class x extends(r = Chunk647438.PureComponent) {
     } = this.state;
     return (0, Chunk951288.jsxs)(Chunk388905.ZP, {
       children: [(0, Chunk951288.jsx)(Chunk388905.Dx, {
-        className: Chunk10198.marginBottom8,
+        className: Chunk197571.marginBottom8,
         children: Chunk388032.intl.string(Chunk388032.t.Z33eiI)
       }), (0, Chunk951288.jsx)(Chunk388905.DK, {
         children: Chunk388032.intl.format(Chunk388032.t.NRWtfH, {
           guildName: require.name
         })
       }), (0, Chunk951288.jsx)(Chunk388905.zx, {
-        className: Chunk10198.marginTop40,
+        className: Chunk197571.marginTop40,
         onClick: () => exports(module),
         children: Chunk388032.intl.string(Chunk388032.t.fIv16O)
       }), (0, Chunk951288.jsx)(Chunk388905.zx, {
-        className: Chunk10198.marginTop8,
+        className: Chunk197571.marginTop8,
         color: Chunk388905.zx.Colors.LINK,
         look: Chunk388905.zx.Looks.LINK,
         onClick: () => {
@@ -98,14 +98,14 @@ class x extends(r = Chunk647438.PureComponent) {
     return (0, Chunk951288.jsxs)(Chunk388905.ZP, {
       children: [(0, Chunk951288.jsx)(Chunk388905.Ee, {
         src: require("./105020.js"),
-        className: Chunk10198.marginBottom20
+        className: Chunk197571.marginBottom20
       }), (0, Chunk951288.jsx)(Chunk388905.Dx, {
-        className: Chunk10198.marginBottom8,
+        className: Chunk197571.marginBottom8,
         children: Chunk388032.intl.string(Chunk388032.t.ox9hIS)
       }), (0, Chunk951288.jsx)(Chunk388905.DK, {
         children: Chunk388032.intl.string(Chunk388032.t["/dcuR0"])
       }), (0, Chunk951288.jsx)(Chunk388905.zx, {
-        className: Chunk10198.marginTop40,
+        className: Chunk197571.marginTop40,
         onClick: () => exports(module),
         children: Chunk388032.intl.string(Chunk388032.t.fIv16O)
       })]

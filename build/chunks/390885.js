@@ -60,24 +60,24 @@ function f(e, t) {
   return l
 }
 
-function h(e) {
+function p(e) {
   var t = function(e, t) {
-    if ("object" !== g(e) || null === e) return e;
+    if ("object" !== h(e) || null === e) return e;
     var n = e[Symbol.toPrimitive];
     if (true !== n) {
       var r = n.call(e, t || "default");
-      if ("object" !== g(r)) return r;
+      if ("object" !== h(r)) return r;
       throw TypeError("@@toPrimitive must return a primitive value.")
     }
     return ("string" === t ? String : Number)(e)
   }(e, "string");
-  return "symbol" === g(t) ? t : String(t)
+  return "symbol" === h(t) ? t : String(t)
 }
 
-function g(e) {
+function h(e) {
   return e && "undefined" != typeof Symbol && e.constructor === Symbol ? "symbol" : typeof e
 }
-let p = "UserFlowAnalyticsStore_current",
+let g = "UserFlowAnalyticsStore_current",
   v = "UserFlowAnalyticsStore";
 
 function _(e) {
@@ -95,7 +95,7 @@ let x = (0, Chunk191336.U)()((0, Chunk180059.XR)((e, t) => ({
   currentFlow: null,
   activeFlow: () => {
     var e;
-    let n = null != (e = t().currentFlow) ? e : a.K.get(p);
+    let n = null != (e = t().currentFlow) ? e : a.K.get(g);
     if (null == n) return null;
     let {
       [n]: r
@@ -109,7 +109,7 @@ function N(e, t) {
     {
       [e]: r
     } = n,
-    l = f(n, [e].map(h)),
+    l = f(n, [e].map(p)),
     a = null != r ? r : _(e);
   ((null == a ? true : a.currentStep) == null || a.currentStep !== t) && (0, i.j)(() => {
     x.setState({
@@ -128,7 +128,7 @@ function N(e, t) {
   })
 }
 
-function y(e, t) {
+function E(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
     r = e;
   if (e === c.MK.ANY) {
@@ -139,7 +139,7 @@ function y(e, t) {
     {
       [r]: s
     } = a,
-    o = f(a, [r].map(h)),
+    o = f(a, [r].map(p)),
     d = null != s ? s : _(r);
   null != d && null != d.currentStep && d.currentStep !== t && (0, i.j)(() => {
     x.setState({
@@ -157,7 +157,7 @@ function y(e, t) {
   })
 }
 
-function E() {
+function y() {
   return null != x.getState().activeFlow()
 }
 x.subscribe(e => null != e.currentFlow ? e.flows[e.currentFlow] : true, e => {
@@ -165,9 +165,9 @@ x.subscribe(e => null != e.currentFlow ? e.flows[e.currentFlow] : true, e => {
   if (null != e && (! function(e) {
       if (e.type === c.MK.UNKNOWN) return;
       let t = "".concat(v, "-").concat(e.type);
-      e.ended ? (a.K.remove(t), a.K.remove(p)) : (a.K.set("".concat(v, "-").concat(e.type), m(u({}, e), {
+      e.ended ? (a.K.remove(t), a.K.remove(g)) : (a.K.set("".concat(v, "-").concat(e.type), m(u({}, e), {
         version: 1
-      })), a.K.set(p, e.type))
+      })), a.K.set(g, e.type))
     }(e), o.default.track(d.rMx.NUO_TRANSITION, {
       flow_type: e.type,
       from_step: e.lastStep,
@@ -188,8 +188,8 @@ x.subscribe(e => null != e.currentFlow ? e.flows[e.currentFlow] : true, e => {
 let S = {
   flowStart: N,
   flowStepOrStart: function(e, t) {
-    E() ? y(e, t) : N(e, t)
+    y() ? E(e, t) : N(e, t)
   },
-  flowStep: y,
-  hasActiveFlow: E
+  flowStep: E,
+  hasActiveFlow: y
 }

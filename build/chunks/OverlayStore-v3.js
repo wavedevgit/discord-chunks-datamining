@@ -681,11 +681,11 @@ function e8() {
   Chunk353926.Z.hasLoadedExperiments && !et && (et = true, eQ())
 }
 
-function e6() {
+function e5() {
   et = false
 }
 
-function e5(e) {
+function e6(e) {
   let {
     mode: t
   } = e;
@@ -813,11 +813,11 @@ class tn extends(i = Chunk442837.ZP.Store) {
 }
 D(tn, "displayName", "OverlayStore-v3");
 let tr = new tn(Chunk570140.Z, __OVERLAY__ ? {} : {
-    LOGIN: e6,
-    LOGOUT: e6,
+    LOGIN: e5,
+    LOGOUT: e5,
     EXPERIMENT_OVERRIDE_BUCKET: eQ,
     OVERLAY_SET_ENABLED: eJ,
-    OVERLAY_FORCE_RENDER_MODE: e5,
+    OVERLAY_FORCE_RENDER_MODE: e6,
     OVERLAY_SET_CLICK_ZONES: e$,
     OVERLAY_SET_INPUT_LOCKED: e1,
     OVERLAY_ACTIVATE_REGION: e2,

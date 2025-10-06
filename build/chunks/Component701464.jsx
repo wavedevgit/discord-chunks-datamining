@@ -1,4 +1,4 @@
-/** Chunk was on 37786 **/
+/** Chunk was on 84071 **/
 /** chunk id: 701464, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => s
@@ -7,11 +7,11 @@ var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk973007 = require("./973007.jsx"),
   Chunk474936 = require("./474936.js"),
-  Chunk414548 = require("./414548.js");
+  Chunk391763 = require("./391763.js");
 
 function l() {
   return (0, Chunk951288.jsx)("div", {
-    className: Chunk414548.wishlistBanner
+    className: Chunk391763.wishlistBanner
   })
 }
 let s = function(e) {

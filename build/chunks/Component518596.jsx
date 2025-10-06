@@ -89,7 +89,7 @@ let E = "USER_SETTINGS_MODAL_MODAL_KEY",
     }, Chunk626135)), (0, Chunk526665.yP)("openUserSettings") ? (0, Chunk481060.ZDy)(async () => {
       let {
         default: t
-      } = await Promise.all([require.e("9452"), require.e("13608")]).then(require.bind(require, 245286));
+      } = await Promise.all([require.e("9452"), require.e("75685")]).then(require.bind(require, 245286));
       return n => (0, r.jsx)(t, h(_({}, n), {
         target: e
       }))

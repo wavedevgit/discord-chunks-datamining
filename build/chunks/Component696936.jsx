@@ -10,7 +10,7 @@ require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
-  Chunk208360 = require("./208360.js");
+  Chunk762641 = require("./762641.js");
 
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -34,9 +34,9 @@ function c(e) {
   return e
 }
 let u = {
-  RED: Chunk208360.redMessageBlock,
-  YELLOW: Chunk208360.yellowMessageBlock,
-  BROWN: Chunk208360.brownMessageBlock
+  RED: Chunk762641.redMessageBlock,
+  YELLOW: Chunk762641.yellowMessageBlock,
+  BROWN: Chunk762641.brownMessageBlock
 };
 
 function d(e) {

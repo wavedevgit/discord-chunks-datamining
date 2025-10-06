@@ -1,7 +1,7 @@
 /** Chunk was on 95468 **/
 /** chunk id: 247007, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => E
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk411198 = require("./411198.js"),
   Chunk888592 = require("./888592.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk198991 = require("./198991.js"),
+  Chunk642480 = require("./642480.js"),
   Chunk216019 = require("./216019.js");
 
 function N(e) {
@@ -27,7 +27,7 @@ function N(e) {
     guildInfo: i,
     onClick: a,
     submitting: s
-  } = e, o = null != (t = h.ZP.getGuildIconURL({
+  } = e, o = null != (t = p.ZP.getGuildIconURL({
     id: i.id,
     icon: i.icon,
     size: 40
@@ -42,7 +42,7 @@ function N(e) {
       children: (0, r.jsx)(f.Z, {
         className: _.guildIcon,
         iconSrc: o,
-        guild: (0, g.yS)((n = function(e) {
+        guild: (0, h.yS)((n = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -86,15 +86,15 @@ function N(e) {
     })]
   })
 }
-let y = e => {
+let E = e => {
   let {
     setStep: t,
     email: n,
     guildsInfo: i,
     setGuildId: s,
     forceGuildScrollHeight: m
-  } = e, [f, h] = l.useState(null), [g, x] = l.useState(true), [y, E] = l.useState(null), S = () => t(p.tF.SUBMIT_SCHOOL), j = i;
-  return null != g && "" !== g && (j = i.filter(e => o()(g.toLowerCase(), e.name.toLowerCase()))), (0, r.jsxs)("div", {
+  } = e, [f, p] = l.useState(null), [h, x] = l.useState(true), [E, y] = l.useState(null), S = () => t(g.tF.SUBMIT_SCHOOL), j = i;
+  return null != h && "" !== h && (j = i.filter(e => o()(h.toLowerCase(), e.name.toLowerCase()))), (0, r.jsxs)("div", {
     className: _.container,
     children: [(0, r.jsx)(c.X6q, {
       className: a()(_.centerText, _.header),
@@ -122,7 +122,7 @@ let y = e => {
             x(e)
           },
           "aria-label": v.intl.string(v.t["5h0QOD"]),
-          query: null != g ? g : "",
+          query: null != h ? h : "",
           onClear: () => {
             x(true)
           }
@@ -138,16 +138,16 @@ let y = e => {
           return true === e ? null : (0, r.jsx)(N, {
             guildInfo: e,
             onClick: (l = e.id, async () => {
-              h(null), s(l), E(l);
+              p(null), s(l), y(l);
               try {
-                await d.Z.sendVerificationEmail(n, true, l), t(p.tF.VERIFY_PIN)
+                await d.Z.sendVerificationEmail(n, true, l), t(g.tF.VERIFY_PIN)
               } catch (e) {
-                h(new u.Hx(e))
+                p(new u.Hx(e))
               } finally {
-                E(null)
+                y(null)
               }
             }),
-            submitting: y === e.id
+            submitting: E === e.id
           }, e.id)
         })
       }) : (0, r.jsx)("div", {

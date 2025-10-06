@@ -1,3 +1,0 @@
-/** Chunk was on 49207 **/
-/** chunk id: 891076, original params: p (module,exports,require) **/
-module.exports = JSON.parse('{"UvP/1N":"Διαγράφηκε","Bz9gcH":"Αποσυνδεδεμένος","7q4iGR":"Συνδεδεμένος","1eK9GR":"Μη διαθέσιμος","op6/kZ":"Τοποθεσία","iccpNT":"Τοποθεσία","78avu7":"Όνομα","3QONen":"Πρόγραμμα","D0Mb4O":"Προσκάλεσε φίλους","3NtB39":"Διαχείριση συνδρομής","NUTl4u":"Ρυθμίσεις","MQQIu7":"Κατάσταση διακομιστή"}')

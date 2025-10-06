@@ -26,10 +26,9 @@ function _(e) {
   let {
     settings: t
   } = e;
-  if ((null == t ? true : t.context) === s.Yn.STREAM) {
-    if ((null == t ? true : t.qualityOptions) == null || (null == t ? true : t.qualityOptions.resolution) == null || (null == t ? true : t.qualityOptions.frameRate) == null) returnfalse;
-    u = t.qualityOptions.resolution, d = t.qualityOptions.frameRate
-  }
+  if ((null == t ? true : t.context) !== s.Yn.STREAM || (null == t ? true : t.qualityOptions) == null) returnfalse;
+  let n = false;
+  return c !== t.qualityOptions.preset && (c = t.qualityOptions.preset, n = true), u !== t.qualityOptions.resolution && (u = t.qualityOptions.resolution, n = true), d !== t.qualityOptions.frameRate && (d = t.qualityOptions.frameRate, n = true), n
 }
 
 function p(e) {
@@ -39,7 +38,7 @@ function p(e) {
     frameRate: r,
     soundshareEnabled: i
   } = e, a = false;
-  return null != t && (c = t, a = true), null != n && (u = n, a = true), null != r && (d = r, a = true), null != i && (f = i, a = true), a
+  return null != t && t !== c && (c = t, a = true), null != n && n !== u && (u = n, a = true), null != r && r !== d && (d = r, a = true), null != i && i !== f && (f = i, a = true), a
 }
 class h extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {

@@ -58,7 +58,7 @@ require.d(exports, {
   Z1: () => v,
   Zh: () => u,
   _k: () => eM,
-  a$: () => e5,
+  a$: () => e6,
   a1: () => eW,
   a7: () => $,
   b6: () => d,
@@ -98,7 +98,7 @@ require.d(exports, {
   tL: () => H,
   u6: () => eE,
   uM: () => E,
-  vK: () => e6,
+  vK: () => e5,
   vL: () => eA,
   w1: () => ev,
   wh: () => q,
@@ -569,7 +569,7 @@ var e4 = function(e) {
   return e.PREMIUM_TENURE_1_MONTH = "premium_tenure_1_month_v2", e.PREMIUM_TENURE_3_MONTH = "premium_tenure_3_month_v2", e.PREMIUM_TENURE_6_MONTH = "premium_tenure_6_month_v2", e.PREMIUM_TENURE_12_MONTH = "premium_tenure_12_month_v2", e.PREMIUM_TENURE_24_MONTH = "premium_tenure_24_month_v2", e.PREMIUM_TENURE_36_MONTH = "premium_tenure_36_month_v2", e.PREMIUM_TENURE_60_MONTH = "premium_tenure_60_month_v2", e.PREMIUM_TENURE_72_MONTH = "premium_tenure_72_month_v2", e
 }({});
 let e8 = ["premium_tenure_1_month_v2", "premium_tenure_3_month_v2", "premium_tenure_6_month_v2", "premium_tenure_12_month_v2", "premium_tenure_24_month_v2", "premium_tenure_36_month_v2", "premium_tenure_60_month_v2", "premium_tenure_72_month_v2"],
-  e6 = {
+  e5 = {
     premium_tenure_1_month_v2: {
       id: "premium_tenure_1_month_v2",
       nameUnformatted: Chunk388032.t.LR1C0d,
@@ -627,7 +627,7 @@ let e8 = ["premium_tenure_1_month_v2", "premium_tenure_3_month_v2", "premium_ten
       glowColor: "#078292"
     }
   };
-var e5 = function(e) {
+var e6 = function(e) {
     return e[e.NONE = 0] = "NONE", e[e.FP_ONLY = 1] = "FP_ONLY", e[e.FP_SUB_PAUSED = 2] = "FP_SUB_PAUSED", e
   }({}),
   e7 = function(e) {
