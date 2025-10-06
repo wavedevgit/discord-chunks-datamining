@@ -14,7 +14,6 @@ function a() {
 let o = Chunk647438.createContext({
   state: {
     isInitialized: false,
-    isOpen: false,
     activeDescendantIndex: null,
     listItems: [],
     filteredItems: [],
@@ -26,5 +25,7 @@ let o = Chunk647438.createContext({
   setState: Chunk981631.dG4,
   selectionMode: "single",
   handleSelectionChange: Chunk981631.dG4,
-  onSelectionChange: Chunk981631.dG4
+  onSelectionChange: Chunk981631.dG4,
+  isOpen: false,
+  setIsOpen: Chunk981631.dG4
 })

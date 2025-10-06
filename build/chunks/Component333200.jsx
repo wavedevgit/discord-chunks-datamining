@@ -6,10 +6,10 @@ require.d(exports, {
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk816529 = require("./816529.jsx"),
+var Chunk793030 = require("./793030.js"),
   Chunk496600 = require("./496600.jsx"),
   Chunk713072 = require("./713072.jsx"),
-  Chunk747344 = require("./747344.js");
+  Chunk680765 = require("./680765.js");
 
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -72,54 +72,52 @@ function p(e) {
   var {
     label: t,
     hideLabel: n,
-    required: i,
-    description: o,
-    helperText: s,
-    errorMessage: l,
-    successMessage: u,
-    wrapTags: _
-  } = e, p = f(e, ["label", "hideLabel", "required", "description", "helperText", "errorMessage", "successMessage", "wrapTags"]);
+    required: l,
+    description: u,
+    helperText: _,
+    errorMessage: p,
+    successMessage: h,
+    wrapTags: m,
+    maxOptionsVisible: g = 5
+  } = e, E = f(e, ["label", "hideLabel", "required", "description", "helperText", "errorMessage", "successMessage", "wrapTags", "maxOptionsVisible"]);
   let {
-    disabled: m
-  } = p;
-  return (0, r.jsxs)(a.uz, d(c({}, p), {
+    disabled: b
+  } = E, {
+    isOpen: y,
+    setIsOpen: O,
+    refs: v,
+    floatingStyles: I,
+    getFloatingProps: T,
+    getReferenceProps: S
+  } = (0, i.ON0)({
+    placement: "bottom",
+    matchReferenceWidth: true,
+    setHeight: () => 40 * g
+  });
+  return (0, r.jsxs)(a.uz, d(c({}, E), {
     isCollapsible: true,
-    children: [(0, r.jsx)(a.Ct, {
+    isOpen: y,
+    setIsOpen: O,
+    children: [(0, r.jsx)(a.Ct, c({
       label: t,
       hideLabel: n,
-      required: i,
-      disabled: m,
-      description: o,
-      helperText: s,
-      errorMessage: l,
-      successMessage: u,
-      wrapTags: _,
-      showChevronButton: true
-    }), (0, r.jsx)(h, {})]
+      required: l,
+      disabled: b,
+      description: u,
+      helperText: _,
+      errorMessage: p,
+      successMessage: h,
+      wrapTags: m,
+      showChevronButton: true,
+      ref: v.setReference
+    }, S())), y && (0, r.jsx)(i.w0Z, d(c({
+      ref: v.setFloating,
+      className: s.selectDropdown,
+      style: I
+    }, T()), {
+      children: (0, r.jsx)(a.px, {
+        renderListItem: e => (0, r.jsx)(o.W, c({}, e))
+      })
+    }))]
   }))
-}
-
-function h() {
-  let {
-    state: e,
-    setState: t,
-    inputFieldRef: n
-  } = (0, Chunk747344.T)();
-
-  function l() {
-    exports(e => d(c({}, e), {
-      isOpen: false
-    }))
-  }
-  return (0, Chunk951288.jsx)(Chunk816529.L, {
-    targetElementRef: require,
-    dialog: false,
-    isOpen: module.isOpen,
-    width: module.width,
-    height: module.dropDownHeight,
-    onRequestClose: l,
-    children: (0, Chunk951288.jsx)(Chunk496600.px, {
-      renderListItem: e => (0, r.jsx)(o.W, c({}, e))
-    })
-  })
 }
