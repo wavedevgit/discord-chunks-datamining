@@ -165,7 +165,9 @@ let V = new Chunk710845.Z("RunningGameStore"),
   }],
   q = [],
   X = true,
-  Q = false,
+  Q = {
+    state: "unknown"
+  },
   J = new Set,
   $ = [],
   ee = [],
@@ -603,7 +605,7 @@ function e4() {
 
 function e8(e) {
   let {
-    initialized: t,
+    inputServiceStatus: t,
     modules: n
   } = e;
   if (!n.includes("input-service")) returnfalse;
@@ -818,7 +820,7 @@ class e5 extends(i = Chunk442837.ZP.Store) {
     return null != (n = null == (t = er.find(t => (0, g.Z)(e, t.windowHandle))) ? true : t.name) ? n : null
   }
   get canShowAdminWarning() {
-    return X && !Q
+    return X && !this.isInputServiceInitialized()
   }
   isDetectionEnabled(e) {
     return ew(e)
@@ -827,8 +829,11 @@ class e5 extends(i = Chunk442837.ZP.Store) {
     var t;
     ep.add(null != (t = (0, p.F)(e)) ? t : e)
   }
-  isInputServiceInitialized() {
+  getInputServiceStatus() {
     return Q
+  }
+  isInputServiceInitialized() {
+    return "running" === Q.state
   }
 }
 G(e5, "displayName", "RunningGameStore");

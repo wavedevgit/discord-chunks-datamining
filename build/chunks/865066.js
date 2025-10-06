@@ -65,11 +65,11 @@ function v(e) {
 
 function I(e) {
   c.isPlatformEmbedded && (d.ZP.InputEventServiceSetStatusCallback(t => {
-    "running" === t.state ? (0, _.y)(true) : (0, _.y)(false), "running" === t.state ? (m.info("System service initialized."), l.default.track(p.rMx.SYSTEM_SERVICE_INITIALIZE_ATTEMPTED, {
+    (0, _.z)(t), "running" === t.state ? (m.info("System service initialized."), l.default.track(p.rMx.SYSTEM_SERVICE_INITIALIZE_ATTEMPTED, {
       success: true,
       source: e,
       modules: ["input-service"]
-    })) : "failure" === t.state && (m.info("System service failed to initialize."), l.default.track(p.rMx.SYSTEM_SERVICE_INITIALIZE_ATTEMPTED, {
+    })) : "failure" === t.state && (m.info("System service failed to initialize.", t), l.default.track(p.rMx.SYSTEM_SERVICE_INITIALIZE_ATTEMPTED, {
       success: false,
       source: e,
       modules: ["input-service"]
@@ -87,11 +87,12 @@ async function T(e) {
     }), m.error("System service initialization failed", e), e
   }
 }
-
-function S() {
-  Chunk358085.isPlatformEmbedded && (Chunk998502.ZP.InputEventServiceSetAllowed(false), Chunk570140.Z.dispatch({
+async function S() {
+  Chunk358085.isPlatformEmbedded && (Chunk998502.ZP.InputEventServiceSetAllowed(false), await Chunk570140.Z.dispatch({
     type: "SYSTEM_SERVICE_INITIALIZE",
-    initialized: false,
+    inputServiceStatus: {
+      state: "unknown"
+    },
     modules: ["input-service"]
   }), m.info("System service terminated."))
 }
