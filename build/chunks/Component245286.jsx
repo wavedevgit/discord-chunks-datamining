@@ -1,10 +1,11 @@
 /** Chunk was on 75685 **/
 /** chunk id: 245286, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => O
+  default: () => _
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
   Chunk481060 = require("./481060.js"),
   Chunk493773 = require("./493773.js"),
@@ -13,6 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk218353 = require("./218353.jsx"),
   Chunk131051 = require("./131051.js"),
   Chunk663389 = require("./663389.js"),
+  Chunk594174 = require("./594174.js"),
   Chunk88658 = require("./88658.js"),
   Chunk996733 = require("./996733.js"),
   Chunk313789 = require("./313789.js"),
@@ -22,25 +24,25 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk942408 = require("./942408.js");
 
-function g(e) {
+function C(e) {
   let {
     destinationPanel: t,
     originPanel: n
   } = e;
-  (0, m.QB)({
+  (0, j.QB)({
     destinationPane: t,
     originPane: n,
-    subsection: f.Z.getSubsection(),
-    source: f.Z.getAnalyticsLocation(),
-    locationStack: f.Z.getAnalyticsLocations()
+    subsection: m.Z.getSubsection(),
+    source: m.Z.getAnalyticsLocation(),
+    locationStack: m.Z.getAnalyticsLocations()
   })
 }
 
-function O(e) {
+function _(e) {
   var t, {
       target: n
     } = e,
-    o = function(e, t) {
+    i = function(e, t) {
       if (null == e) return {};
       var n, r, l = function(e, t) {
         if (null == e) return {};
@@ -55,20 +57,20 @@ function O(e) {
       }
       return l
     }(e, ["target"]);
-  let i = b.Z.useField("query"),
+  let a = p.Z.useField("query"),
     {
-      node: s,
-      directory: u
-    } = (0, d.Z)(x.Z, i),
-    m = (t = j.n.ACCOUNT_PANEL, null == u.entry(n) ? t : n),
-    y = l.useRef(null);
-  return (0, a.ZP)(() => {
-    let e = f.Z.getSection();
-    null != e && (g({
+      node: c,
+      directory: d
+    } = (0, f.Z)(y.Z, a),
+    j = (t = x.n.ACCOUNT_PANEL, null == d.entry(n) ? t : n),
+    g = l.useRef(null);
+  return ((0, s.ZP)(() => {
+    let e = m.Z.getSection();
+    null != e && (C({
       destinationPanel: e,
       originPanel: null
-    }), y.current = e)
-  }), (0, r.jsx)(c.Z, function(e) {
+    }), g.current = e)
+  }), (0, o.e7)([b.default], () => null != b.default.getCurrentUser())) ? (0, r.jsx)(u.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -86,27 +88,27 @@ function O(e) {
     }
     return e
   }({
-    root: s,
-    directory: u,
-    sidebarHeader: C,
-    emptyState: _,
-    sidebarFooter: p.Z,
+    root: c,
+    directory: d,
+    sidebarHeader: S,
+    emptyState: P,
+    sidebarFooter: v.Z,
     onPanelChange: e => {
-      let t = (0, v.getUserSettingsSectionsByWebUserSettings)().get(e);
-      null != t && (g({
+      let t = (0, h.getUserSettingsSectionsByWebUserSettings)().get(e);
+      null != t && (C({
         destinationPanel: t,
-        originPanel: y.current
-      }), y.current = t)
+        originPanel: g.current
+      }), g.current = t)
     },
-    target: m
-  }, o))
+    target: j
+  }, i)) : null
 }
 
-function C() {
+function S() {
   let e = Chunk996733.Z.useField("query"),
     t = Chunk647438.useRef(null),
-    [n, a] = (0, Chunk243778.US)([Chunk704215.z.USER_SETTINGS_REDESIGN_EDUCATION_POPOVER]),
-    c = Chunk647438.useMemo(() => ({
+    [n, o] = (0, Chunk243778.US)([Chunk704215.z.USER_SETTINGS_REDESIGN_EDUCATION_POPOVER]),
+    s = Chunk647438.useMemo(() => ({
       title: Chunk388032.intl.string(Chunk388032.t.Kv519f),
       body: Chunk388032.intl.string(Chunk388032.t.cTGJBQ),
       badge: "new",
@@ -114,8 +116,8 @@ function C() {
       align: "center",
       scrollBehavior: "sticky"
     }), []),
-    d = Chunk647438.useCallback(e => {
-      b.Z.setState({
+    u = Chunk647438.useCallback(e => {
+      p.Z.setState({
         query: e
       })
     }, []),
@@ -130,8 +132,8 @@ function C() {
       children: [(0, Chunk951288.jsx)(Chunk481060.E1j, {
         size: "md",
         query: module,
-        onChange: Chunk131051,
-        onClear: Chunk663389
+        onChange: Chunk82084,
+        onClear: Chunk131051
       }), (0, Chunk951288.jsx)("div", {
         className: Chunk942408.popoverAnchor,
         ref: exports
@@ -139,14 +141,14 @@ function C() {
         dismissibleContentType: Chunk704215.z.USER_SETTINGS_REDESIGN_EDUCATION_POPOVER,
         targetElementRef: exports,
         visibleContent: require,
-        markAsDismissed: Chunk493773,
-        props: Chunk82084
+        markAsDismissed: Chunk442837,
+        props: Chunk493773
       })]
     })
   })
 }
 
-function _() {
+function P() {
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk942408.emptySearchResultsContainer,
     children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
