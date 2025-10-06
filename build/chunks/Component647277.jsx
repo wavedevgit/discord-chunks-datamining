@@ -140,7 +140,8 @@ let T = e => {
       children: (0, r.jsx)(s.Eep, {
         src: b.Z,
         height: 93,
-        width: 93
+        width: 93,
+        zoomable: false
       })
     })
   },

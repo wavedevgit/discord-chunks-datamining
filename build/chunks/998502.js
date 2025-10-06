@@ -392,14 +392,13 @@ let q = {
     checkVoiceFilterFilesExist: async e => await I.fileManager.checkVoiceFilterFilesExist(e),
     cleanupUnusedVoiceFilterFiles: async e => await I.fileManager.cleanupUnusedVoiceFilterFiles(e),
     canCopyImage() {
-      let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : true,
-        t = arguments.length > 1 ? arguments[1] : true;
-      if (!Chunk358085.isPlatformEmbedded) returnfalse;
+      let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : true;
+      if (!Chunk358085.isPlatformEmbedded || "function" != typeof I.clipboard.copyImage) returnfalse;
       if (null != module) {
-        let n = K(module, exports);
-        if (null != require && !T.has(require)) returnfalse
+        let t = K(module, true);
+        if (null != exports && !T.has(exports)) returnfalse
       }
-      return "function" == typeof I.clipboard.copyImage
+      returntrue
     },
     cut() {
       Chunk358085.isPlatformEmbedded && I.clipboard.cut()

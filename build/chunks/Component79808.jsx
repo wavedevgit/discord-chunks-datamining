@@ -54,7 +54,7 @@ function f(e) {
     sidebarFooter: v,
     onPanelChange: y,
     emptyState: h
-  } = e, [g, O] = l.useState(true), [C, _] = l.useState(null == (t = b.entry(j)) ? true : t.targetPanel), [P, S] = l.useState(() => b.typedGet(C)), N = l.useCallback(() => k(true), []), [E, k] = l.useState({
+  } = e, [g, O] = l.useState(true), [C, _] = l.useState(null == (t = b.entry(j)) ? true : t.targetPanel), [S, P] = l.useState(() => b.typedGet(C)), N = l.useCallback(() => k(true), []), [E, k] = l.useState({
     target: j,
     targetAccordion: null == (n = b.entry(j)) ? true : n.parentAccordion,
     animateScroll: false,
@@ -76,7 +76,7 @@ function f(e) {
         T(() => {
           k(d(u({}, n), {
             animateScroll: false
-          })), S(e), _(e), null == y || y(e.key)
+          })), P(e), _(e), null == y || y(e.key)
         })
       } else k(d(u({}, n), {
         animateScroll: true
@@ -98,7 +98,7 @@ function f(e) {
         emptyState: h
       }), (0, r.jsx)(o.Z, {
         onClose: I,
-        setting: null != (f = w.currentPanel) ? f : P
+        setting: null != (f = w.currentPanel) ? f : S
       })]
     })
   })

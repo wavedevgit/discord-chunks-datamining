@@ -2,11 +2,11 @@
 /** chunk id: 991346, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Gj: () => Y,
-  Pt: () => H,
-  VO: () => q,
-  ji: () => J,
-  q8: () => X
+  Gj: () => W,
+  Pt: () => Y,
+  VO: () => X,
+  ji: () => $,
+  q8: () => Q
 }), require("./836215.js"), require("./472816.js"), require("./794429.js"), require("./388685.js"), require("./467055.js"), require("./539854.js");
 var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
@@ -16,6 +16,7 @@ var Chunk647438 = require("./647438.js"),
   Chunk924557 = require("./924557.js"),
   Chunk706140 = require("./706140.js"),
   Chunk592204 = require("./592204.js"),
+  Chunk657871 = require("./657871.js"),
   Chunk610697 = require("./610697.js"),
   Chunk880257 = require("./880257.js"),
   Chunk631885 = require("./631885.js"),
@@ -44,7 +45,7 @@ var Chunk647438 = require("./647438.js"),
   Chunk46140 = require("./46140.js"),
   Chunk388032 = require("./388032.jsx");
 
-function U(e, t, n) {
+function G(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -53,20 +54,20 @@ function U(e, t, n) {
   }) : e[t] = n, e
 }
 
-function G(e) {
+function B(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      U(e, t, n[t])
+      G(e, t, n[t])
     })
   }
   return e
 }
 
-function B(e, t) {
+function Z(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -77,49 +78,49 @@ function B(e, t) {
   return n
 }
 
-function Z(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : B(Object(t)).forEach(function(n) {
+function F(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Z(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function F(e) {
+function V(e) {
   let {
     shouldMergeGameSettings: t,
     showRedesignedThirdPartyAccessSettings: n
-  } = e, r = O.Z.isDeveloper, i = [{
-    header: k.intl.string(k.t.cduTBA),
-    settings: n ? [M.s6.ACCOUNT, M.s6.GAMES, M.s6.PROFILE_CUSTOMIZATION, M.s6.CONTENT_SOCIAL, M.s6.DATA_PRIVACY, M.s6.PRIVACY_FAMILY_CENTER, M.s6.THIRD_PARTY_ACCESS, M.s6.SESSIONS, M.s6.CLIPS] : [M.s6.ACCOUNT, M.s6.GAMES, M.s6.PROFILE_CUSTOMIZATION, M.s6.CONTENT_SOCIAL, M.s6.DATA_PRIVACY, M.s6.PRIVACY_FAMILY_CENTER, M.s6.AUTHORIZED_APPS, M.s6.SESSIONS, M.s6.CONNECTIONS, M.s6.CLIPS]
+  } = e, r = v.Z.isDeveloper, i = [{
+    header: U.intl.string(U.t.cduTBA),
+    settings: n ? [j.s6.ACCOUNT, j.s6.GAMES, j.s6.PROFILE_CUSTOMIZATION, j.s6.CONTENT_SOCIAL, j.s6.DATA_PRIVACY, j.s6.PRIVACY_FAMILY_CENTER, j.s6.THIRD_PARTY_ACCESS, j.s6.SESSIONS, j.s6.CLIPS] : [j.s6.ACCOUNT, j.s6.GAMES, j.s6.PROFILE_CUSTOMIZATION, j.s6.CONTENT_SOCIAL, j.s6.DATA_PRIVACY, j.s6.PRIVACY_FAMILY_CENTER, j.s6.AUTHORIZED_APPS, j.s6.SESSIONS, j.s6.CONNECTIONS, j.s6.CLIPS]
   }, {
-    header: k.intl.string(k.t["4uOdGh"]),
+    header: U.intl.string(U.t["4uOdGh"]),
     divider: true,
-    settings: [M.s6.PREMIUM, M.s6.GUILD_BOOSTING, M.s6.SUBSCRIPTIONS, M.s6.GIFT_INVENTORY, M.s6.BILLING]
+    settings: [j.s6.PREMIUM, j.s6.GUILD_BOOSTING, j.s6.SUBSCRIPTIONS, j.s6.GIFT_INVENTORY, j.s6.BILLING]
   }, {
-    header: k.intl.string(k.t.f2n1TE),
+    header: U.intl.string(U.t.f2n1TE),
     divider: true,
-    settings: [M.s6.APPEARANCE, M.s6.ACCESSIBILITY, M.s6.VOICE_AND_VIDEO, M.s6.POGGERMODE, M.s6.CHAT, M.s6.NOTIFICATIONS, M.s6.KEYBINDS, M.s6.LANGUAGE, M.s6.WINDOW_SETTINGS, M.s6.LINUX_SETTINGS, M.s6.STREAMER_MODE, M.s6.SETTINGS_ADVANCED]
+    settings: [j.s6.APPEARANCE, j.s6.ACCESSIBILITY, j.s6.VOICE_AND_VIDEO, j.s6.POGGERMODE, j.s6.CHAT, j.s6.NOTIFICATIONS, j.s6.KEYBINDS, j.s6.LANGUAGE, j.s6.WINDOW_SETTINGS, j.s6.LINUX_SETTINGS, j.s6.STREAMER_MODE, j.s6.SETTINGS_ADVANCED]
   }, {
     divider: true,
-    settings: [M.s6.CHANGELOG, M.s6.MERCHANDISE]
+    settings: [j.s6.CHANGELOG, j.s6.MERCHANDISE]
   }, {
     header: "Developer Only",
     divider: true,
-    settings: r ? [M.s6.EXPERIMENTS, M.s6.DEVELOPER_OPTIONS] : []
+    settings: r ? [j.s6.EXPERIMENTS, j.s6.DEVELOPER_OPTIONS] : []
   }, {
     divider: true,
-    settings: [M.s6.LOGOUT]
+    settings: [j.s6.LOGOUT]
   }, {
     divider: true,
-    settings: [M.s6.SOCIAL_LINKS, M.s6.TEMP_DEVELOPER_EDUCATION_SIDEBAR_ITEM, M.s6.CLIENT_DEBUG_INFO]
+    settings: [j.s6.SOCIAL_LINKS, j.s6.TEMP_DEVELOPER_EDUCATION_SIDEBAR_ITEM, j.s6.CLIENT_DEBUG_INFO]
   }], a = {
-    header: k.intl.string(k.t.SmHCFR),
+    header: U.intl.string(U.t.SmHCFR),
     divider: true,
-    settings: [M.s6.ACTIVITY_PRIVACY, M.s6.REGISTERED_GAMES, M.s6.OVERLAY]
+    settings: [j.s6.ACTIVITY_PRIVACY, j.s6.REGISTERED_GAMES, j.s6.OVERLAY]
   };
   return t ? i : i.toSpliced(3, 0, a)
 }
 
-function V() {
+function H() {
   let {
     shouldMergeGameSettings: e
   } = Chunk202527.b.useExperiment({
@@ -128,7 +129,7 @@ function V() {
     showRedesign: t
   } = Chunk413182.b.useExperiment({
     location: "settings"
-  }), n = F({
+  }), n = V({
     shouldMergeGameSettings: module,
     showRedesignedThirdPartyAccessSettings: exports
   });
@@ -143,91 +144,97 @@ function V() {
   }], [require])
 }
 
-function H() {
+function Y() {
   var e, t, n, o;
-  let O = (0, Chunk725727.YO)().length,
-    R = (0, Chunk160913.U)(),
-    x = (0, Chunk442837.e7)([Chunk663389.Z], () => Chunk663389.Z.getSearchParams()),
-    M = (0, Chunk631885.gU)(),
-    k = (0, Chunk168308.bC)(),
-    U = (0, Chunk924557.Go)(),
-    [G] = (0, Chunk706140.cv)(U ? [Chunk704215.z.CLIPS_SETTINGS_BETA_TAG] : []),
+  let v = (0, Chunk725727.YO)().length,
+    P = (0, Chunk160913.U)(),
+    M = (0, Chunk442837.e7)([Chunk663389.Z], () => Chunk663389.Z.getSearchParams()),
+    j = (0, Chunk631885.gU)(),
+    U = (0, Chunk168308.bC)(),
+    G = (0, Chunk924557.Go)(),
+    [B] = (0, Chunk706140.cv)(G ? [Chunk704215.z.CLIPS_SETTINGS_BETA_TAG] : []),
     {
-      shouldMergeGameSettings: B
+      shouldMergeGameSettings: Z
     } = Chunk202527.b.useExperiment({
       location: "settings"
     }),
-    Z = (0, Chunk592204.Xo)({
+    F = (0, Chunk592204.Xo)({
       location: "settings"
     }),
-    F = null != (n = null == (e = Chunk594174.default.getCurrentUser()) ? true : module.isStaff()) && require,
-    V = (0, Chunk237292.y0)({
+    V = null != (n = null == (e = Chunk594174.default.getCurrentUser()) ? true : module.isStaff()) && require,
+    H = (0, Chunk237292.y0)({
       location: "settings"
     }),
-    H = (0, Chunk667172.v4)({
+    Y = (0, Chunk667172.v4)({
       location: "settings"
     }),
-    Y = (0, Chunk211242.Q)(),
-    W = (0, Chunk977156.Z)({
+    W = (0, Chunk211242.Q)(),
+    K = (0, Chunk977156.Z)({
       location: Chunk46140.dr.USER_SETTINGS_SEARCH_GIFT_INVENTORY
     }),
-    K = (0, Chunk442837.e7)([Chunk283595.Z], () => Chunk283595.Z.hasLibraryApplication()),
-    z = (0, Chunk442837.e7)([Chunk314897.default], () => Chunk314897.default.hasTOTPEnabled()),
-    q = Chunk695346.Sb.useSetting(),
-    X = (0, Chunk610697.Z)(),
-    Q = null == (o = (0, Chunk880257.Z)()) || Chunk493544,
-    J = (null == (t = (0, Chunk921157.s)()) ? true : exports.length) > 0,
+    z = (0, Chunk442837.e7)([Chunk283595.Z], () => Chunk283595.Z.hasLibraryApplication()),
+    q = (0, Chunk442837.e7)([Chunk314897.default], () => Chunk314897.default.hasTOTPEnabled()),
+    X = Chunk695346.Sb.useSetting(),
+    Q = (0, Chunk610697.Z)(),
+    J = null == (o = (0, Chunk880257.Z)()) || Chunk493544,
+    $ = (null == (t = (0, Chunk921157.s)()) ? true : exports.length) > 0,
     {
-      hasBlockedUsers: $,
-      hasIgnoredUsers: ee
+      hasBlockedUsers: ee,
+      hasIgnoredUsers: et
     } = (0, Chunk442837.cj)([Chunk699516.Z], () => ({
       hasBlockedUsers: Chunk699516.Z.getBlockedIDs().length > 0,
       hasIgnoredUsers: Chunk699516.Z.getIgnoredIDs().length > 0
     })),
-    et = (0, Chunk128064.pY)("SettingRendererUtils"),
+    en = (0, Chunk128064.pY)("SettingRendererUtils"),
     {
-      inputMode: en,
-      activeInputProfile: er,
-      isInputProfileCustom: ei
+      inputMode: er,
+      activeInputProfile: ei,
+      isInputProfileCustom: ea
     } = (0, Chunk442837.cj)([Chunk131951.Z], () => ({
       activeInputProfile: Chunk131951.Z.getActiveInputProfile(),
       inputMode: Chunk131951.Z.getMode(),
       isInputProfileCustom: Chunk131951.Z.isInputProfileCustom()
     })),
-    ea = (0, Chunk695463.W)("useGenerateUserSettingsSections");
+    eo = (0, Chunk695463.W)("useGenerateUserSettingsSections"),
+    {
+      enabled: es
+    } = (0, Chunk657871.zM)("useGenerateUserSettingsSections", {
+      autoTrackExposure: false
+    });
   return Chunk647438.useMemo(() => (0, Chunk620163.iE)({
     unseenGiftCount: Chunk906467,
     showPrepaidPaymentPastDueWarning: Chunk413182,
     searchParams: Chunk839469,
     numOfPendingFamilyRequests: Chunk726985,
     isOverlaySupported: Chunk388032,
-    isClipsBetaTagShowing: G === Chunk704215.z.CLIPS_SETTINGS_BETA_TAG,
-    shouldMergeGameSettings: B,
-    isKeywordFilteringEnabled: Z,
-    isStaff: F,
-    isInappropriateConversationWarningEnabled: V,
-    isInapproprateConversationsDefaultOn: H,
-    paymentsBlocked: Y,
-    isEligibleForQuests: W,
-    isStricterMessageRequestsEnabled: X,
-    hasLibraryApplication: K,
-    hasTOTPEnabled: z,
-    developerMode: q,
-    isAdultUser: Q,
-    hasSecureFramesVerifiedUserIds: J,
-    hasIgnoredUsers: ee,
-    hasBlockedUsers: $,
-    isEligibleForSensitiveContentDefaults: et,
-    inputMode: en,
-    activeInputProfile: er,
-    isInputProfileCustom: ei,
-    isDataUsage3PToggleEnabled: ea
-  }), [q, G, $, ee, K, J, z, Chunk839469, Q, W, H, V, Z, Chunk388032, F, X, Chunk726985, Y, B, Chunk413182, Chunk906467, et, en, er, ei, ea])
+    isClipsBetaTagShowing: B === Chunk704215.z.CLIPS_SETTINGS_BETA_TAG,
+    shouldMergeGameSettings: Z,
+    isKeywordFilteringEnabled: F,
+    isStaff: V,
+    isInappropriateConversationWarningEnabled: H,
+    isInapproprateConversationsDefaultOn: Y,
+    paymentsBlocked: W,
+    isEligibleForQuests: K,
+    isStricterMessageRequestsEnabled: Q,
+    hasLibraryApplication: z,
+    hasTOTPEnabled: q,
+    developerMode: X,
+    isAdultUser: J,
+    hasSecureFramesVerifiedUserIds: $,
+    hasIgnoredUsers: et,
+    hasBlockedUsers: ee,
+    isEligibleForSensitiveContentDefaults: en,
+    inputMode: er,
+    activeInputProfile: ei,
+    isInputProfileCustom: ea,
+    isDataUsage3PToggleEnabled: eo,
+    isChatMentionSuggestionsSettingEnabled: es
+  }), [X, B, ee, et, z, $, q, Chunk839469, J, K, Y, H, F, Chunk388032, V, Q, Chunk726985, W, Z, Chunk413182, Chunk906467, en, er, ei, ea, eo, es])
 }
 
-function Y(e) {
-  let t = x.R.useField("searchResults"),
-    n = H(),
+function W(e) {
+  let t = M.R.useField("searchResults"),
+    n = Y(),
     r = n[e],
     i = Object.fromEntries(Object.entries(n).filter(e => {
       let [t, n] = e;
@@ -272,14 +279,14 @@ function Y(e) {
     } return o
 }
 
-function W(e, t, n) {
-  return e === M.s6.SEARCH_NO_RESULTS && 0 === t.size || n.has(e) || t.has(e)
+function K(e, t, n) {
+  return e === j.s6.SEARCH_NO_RESULTS && 0 === t.size || n.has(e) || t.has(e)
 }
 
-function K(e, t, n) {
+function z(e, t, n) {
   let r = [],
-    i = Q(t),
-    a = z(t, new Set(Array.from(null != n ? n : []).filter(e => i.has(e))));
+    i = J(t),
+    a = q(t, new Set(Array.from(null != n ? n : []).filter(e => i.has(e))));
   return e.forEach(e => {
     0 !== e.settings.length && (true === e.divider && r.push({
       section: o.ID.DIVIDER
@@ -287,14 +294,14 @@ function K(e, t, n) {
       section: o.ID.HEADER,
       label: e.header
     }), e.settings.forEach(e => {
-      r.push(Z(G({}, t[e]), {
-        tabPredicate: () => null == n || W(e, n, a)
+      r.push(F(B({}, t[e]), {
+        tabPredicate: () => null == n || K(e, n, a)
       }))
     }))
   }), r
 }
 
-function z(e, t) {
+function q(e, t) {
   let n = new Map;
   return null != t && t.forEach(t => {
     let r = e[t].parent;
@@ -307,8 +314,8 @@ function z(e, t) {
   }), n
 }
 
-function q() {
-  let e = H(),
+function X() {
+  let e = Y(),
     {
       shouldMergeGameSettings: t
     } = Chunk202527.b.useExperiment({
@@ -319,28 +326,28 @@ function q() {
     } = Chunk413182.b.useExperiment({
       location: "settings"
     }),
-    i = Chunk647438.useMemo(() => F({
+    i = Chunk647438.useMemo(() => V({
       shouldMergeGameSettings: exports,
       showRedesignedThirdPartyAccessSettings: require
     }), [exports, require]);
-  return Chunk647438.useMemo(() => K(Chunk442837, module), [Chunk442837, module])
-}
-
-function X(e) {
-  let t = H(),
-    n = V();
-  return r.useMemo(() => K(n, t, new Set(e)), [n, t, e])
+  return Chunk647438.useMemo(() => z(Chunk442837, module), [Chunk442837, module])
 }
 
 function Q(e) {
-  return new Map(Object.entries(e).filter(e => {
-    let [t, n] = e;
-    return (n.section !== o.ID.CUSTOM || t === M.s6.TEMP_DEVELOPER_EDUCATION_SIDEBAR_ITEM) && null != n.searchableTitles && (null == n.predicate || n.predicate())
-  }))
+  let t = Y(),
+    n = H();
+  return r.useMemo(() => z(n, t, new Set(e)), [n, t, e])
 }
 
 function J(e) {
-  return Array.from(Q(e).entries()).map(e => {
+  return new Map(Object.entries(e).filter(e => {
+    let [t, n] = e;
+    return (n.section !== o.ID.CUSTOM || t === j.s6.TEMP_DEVELOPER_EDUCATION_SIDEBAR_ITEM) && null != n.searchableTitles && (null == n.predicate || n.predicate())
+  }))
+}
+
+function $(e) {
+  return Array.from(J(e).entries()).map(e => {
     let [t, n] = e;
     return [t, n.searchableTitles]
   })

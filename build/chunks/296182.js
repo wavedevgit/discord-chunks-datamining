@@ -33,7 +33,7 @@ function h(e, t, n) {
 }
 
 function m(e, t, n) {
-  let r = s.ZP.canCopyImage(e, null != n ? n : t),
+  let r = s.ZP.canCopyImage(e),
     i = o.Z.isDiscordAssetUrl(e, t, n),
     a = p(e);
   return r && i && a

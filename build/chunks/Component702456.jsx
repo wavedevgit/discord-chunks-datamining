@@ -20,34 +20,43 @@ var Chunk442837 = require("./442837.js"),
   Chunk944658 = require("./944658.js");
 
 function b(e) {
+  var t, n;
   let {
-    user: t
-  } = e, n = (0, i.e7)([u.Z], () => u.Z.getStatus(t.id)), {
-    avatarSrc: o,
-    eventHandlers: s
+    user: o,
+    isLast: s,
+    isFirst: d
+  } = e, p = (0, i.e7)([u.Z], () => u.Z.getStatus(o.id)), {
+    avatarSrc: f,
+    eventHandlers: h
   } = (0, c.Z)({
-    userId: t.id,
+    userId: o.id,
     size: l.EFr.SIZE_32,
     animateOnHover: true
-  }), d = async () => {
+  }), b = async () => {
     await a.Z.openPrivateChannel({
-      recipientIds: [t.id],
+      recipientIds: [o.id],
       location: "frequent_friends_row"
     })
-  };
+  }, _ = d ? l.YqE : s ? l.ANZ : true, O = d ? g.intl.string(g.t.aI4VOD) : s ? g.intl.string(g.t.kABl29) : true;
   return (0, r.jsx)(l.P3F, {
     className: m.frequentFriendAvatarButton,
-    onClick: d,
-    onMouseEnter: s.onMouseEnter,
-    onMouseLeave: s.onMouseLeave,
+    onClick: b,
+    onMouseEnter: h.onMouseEnter,
+    onMouseLeave: h.onMouseLeave,
     "aria-label": g.intl.formatToPlainString(g.t.M5FjCg, {
-      username: t.username
+      username: o.username
     }),
     children: (0, r.jsx)(l.qEK, {
-      src: o,
+      src: f,
+      "aria-label": null != (t = o.globalName) ? t : o.username,
+      status: p,
       size: l.EFr.SIZE_32,
-      "aria-label": t.username,
-      status: n
+      CutoutIcon: _,
+      cutoutIconName: d ? "FireIcon" : s ? "TimerIcon" : true,
+      avatarTooltipText: O,
+      statusTooltip: true,
+      statusTooltipDelay: 50,
+      avatarTooltipTitle: null != (n = o.globalName) ? n : o.username
     })
   })
 }
@@ -115,8 +124,10 @@ function _() {
       }), (0, Chunk951288.jsx)(Chunk481060.u2D, {
         className: Chunk944658.frequentFriendsAvatars,
         orientation: "horizontal",
-        children: exports.map(e => (0, r.jsx)(b, {
-          user: e
+        children: exports.map((e, n) => (0, r.jsx)(b, {
+          user: e,
+          isLast: n === t.length - 1,
+          isFirst: 0 === n
         }, e.id))
       })]
     }), (0, Chunk951288.jsx)(Chunk663701.d, {})]
