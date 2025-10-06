@@ -8,8 +8,8 @@ require.d(exports, {
   c: () => o,
   kJ: () => c
 });
-var Chunk8058 = require("./8058.js"),
-  Chunk131193 = require("./131193.js"),
+var Chunk180059 = require("./180059.js"),
+  Chunk51835 = require("./51835.js"),
   Chunk731965 = require("./731965.js");
 let o = false,
   s = Object.freeze({
@@ -23,7 +23,7 @@ let o = false,
   });
 
 function l() {
-  let e = (0, Chunk131193.F)()((0, Chunk8058.XR)(e => s)),
+  let e = (0, Chunk51835.F)()((0, Chunk180059.XR)(e => s)),
     t = () => module.getState(),
     n = (t, n, r) => {
       (0, a.j)(() => e.setState({

@@ -3,11 +3,11 @@
 require.d(exports, {
   p: () => s
 });
-var Chunk524825 = require("./524825.js"),
-  Chunk131193 = require("./131193.js"),
+var Chunk574583 = require("./574583.js"),
+  Chunk51835 = require("./51835.js"),
   Chunk731965 = require("./731965.js"),
   Chunk174727 = require("./174727.js");
-let o = (0, Chunk131193.F)(e => ({
+let o = (0, Chunk51835.F)(e => ({
   audio: null,
   file: null,
   loading: false,
@@ -39,5 +39,5 @@ function s() {
     loadAudioFromFile: e.loadAudioFromFile,
     maxVolume: e.maxVolume,
     setMaxVolume: e.setMaxVolume
-  }), Chunk524825.X)
+  }), Chunk574583.X)
 }

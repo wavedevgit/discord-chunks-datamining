@@ -9,8 +9,8 @@ require.d(exports, {
   yY: () => I
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
-  Chunk524825 = require("./524825.js"),
-  Chunk131193 = require("./131193.js"),
+  Chunk574583 = require("./574583.js"),
+  Chunk51835 = require("./51835.js"),
   Chunk731965 = require("./731965.js");
 
 function s(e, t, n) {
@@ -60,7 +60,7 @@ let d = {
     onlyWhenBlurred: false,
     interval: 1e3
   },
-  p = (0, Chunk131193.F)(() => ({
+  p = (0, Chunk51835.F)(() => ({
     titles: [d],
     notificationCount: true,
     flashQueue: []
@@ -133,22 +133,22 @@ function T() {
       flashQueue: t
     } = e, n = h(e).filter(e => null != e).join(" | "), r = m(e);
     return ["".concat(r).concat(n), t[0]]
-  }, Chunk524825.X), [n, a] = Chunk647438.useState(false), o = Chunk647438.useRef(0), s = null == exports ? true : exports.messages[Chunk731965.current % exports.messages.length];
+  }, Chunk574583.X), [n, a] = Chunk647438.useState(false), o = Chunk647438.useRef(0), s = null == exports ? true : exports.messages[Chunk731965.current % exports.messages.length];
   return Chunk647438.useEffect(() => {
     if (null == exports) {
-      Chunk731965.current = 0, Chunk131193(false);
+      Chunk731965.current = 0, Chunk51835(false);
       return
     }
     if (document.hasFocus() && exports.onlyWhenBlurred) {
-      y(exports.id), Chunk131193(false);
+      y(exports.id), Chunk51835(false);
       return
     }
     let e = setInterval(() => {
       if (Chunk731965.current >= exports.count) {
-        y(exports.id), Chunk131193(false);
+        y(exports.id), Chunk51835(false);
         return
       }
-      Chunk131193(e => !e || (o.current += 1, false))
+      Chunk51835(e => !e || (o.current += 1, false))
     }, exports.interval);
     return () => clearInterval(module)
   }, [exports]), require ? s : module

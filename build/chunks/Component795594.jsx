@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   l = require.n(Chunk658722),
   Chunk512722 = require("./512722.js"),
   u = require.n(Chunk512722),
-  Chunk879690 = require("./879690.js"),
+  Chunk191336 = require("./191336.js"),
   Chunk243814 = require("./243814.js"),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
@@ -488,7 +488,7 @@ let ed = e => {
       })
     })
   },
-  eh = (0, Chunk879690.U)(() => ({
+  eh = (0, Chunk191336.U)(() => ({
     searchQuery: ""
   })),
   em = () => {
@@ -537,7 +537,7 @@ let ed = e => {
       m = () => (0, Chunk951288.jsx)("div", {
         className: Chunk392082.searchContainer,
         children: (0, Chunk951288.jsx)(Chunk481060.E1j, {
-          query: Chunk879690,
+          query: Chunk191336,
           onChange: Chunk793030,
           onClear: Chunk921072,
           placeholder: Chunk388032.intl.string(Chunk388032.t["5prvKS"]),
@@ -552,9 +552,9 @@ let ed = e => {
         })
       }),
       y = Chunk647438.useMemo(() => {
-        let e = Chunk879690.trim().toLowerCase();
+        let e = Chunk191336.trim().toLowerCase();
         return "" === module || null == require ? require : require.length < 100 ? require.filter(t => l()(e, t.application.name.toLowerCase())) : require.filter(t => t.application.name.toLowerCase().includes(e))
-      }, [require, Chunk879690]),
+      }, [require, Chunk191336]),
       T = () => null == require || null == Chunk87051 || exports !== Chunk881998.M.FETCHED ? (0, Chunk951288.jsx)(Chunk481060.$jN, {
         className: Chunk197571.marginTop20,
         type: Chunk481060.$jN.Type.SPINNING_CIRCLE

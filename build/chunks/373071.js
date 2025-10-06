@@ -7,8 +7,8 @@ require.d(exports, {
   n6: () => E
 }), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js"), require("./539854.js");
 var r, Chunk647438 = require("./647438.js"),
-  Chunk524825 = require("./524825.js"),
-  Chunk131193 = require("./131193.js"),
+  Chunk574583 = require("./574583.js"),
+  Chunk51835 = require("./51835.js"),
   Chunk731965 = require("./731965.js"),
   Chunk433517 = require("./433517.js"),
   Chunk481060 = require("./481060.js"),
@@ -63,7 +63,7 @@ let h = "__DEBUG_PROFILE_EFFECTS_STORE",
       console.error(e), (0, c.showToast)((0, c.createToast)("Failed to save changes. This can happen when you run out of memory in localStorage. Please try deleting some configs and try again.", c.ToastType.FAILURE))
     }
   },
-  E = (0, Chunk131193.F)(e => p(f({}, m), {
+  E = (0, Chunk51835.F)(e => p(f({}, m), {
     upsertConfig: t => (0, s.j)(() => {
       e(e => {
         let n = f({}, e);
@@ -82,7 +82,7 @@ let h = "__DEBUG_PROFILE_EFFECTS_STORE",
       profileEffects: t
     } = e;
     return Object.values(t)
-  }, Chunk524825.X),
+  }, Chunk574583.X),
   y = e => {
     let t = E(t => null != e ? t.profileEffects[e] : null),
       n = i.useRef([]);

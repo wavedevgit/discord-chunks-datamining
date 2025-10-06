@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
-  Chunk879690 = require("./879690.js"),
+  Chunk191336 = require("./191336.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk174556 = require("./174556.js"),
@@ -33,7 +33,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk950796 = require("./950796.jsx"),
   Chunk741764 = require("./741764.js"),
   Chunk82504 = require("./82504.js");
-let Z = (0, Chunk879690.U)(() => ({
+let Z = (0, Chunk191336.U)(() => ({
   isOpen: true
 }));
 
@@ -90,7 +90,7 @@ let L = Chunk647438.memo(function() {
       } = e;
       return i.useMemo(() => t ? "BACK_FORWARD_NAVIGATION" : n ? "NOTIFICATIONS_INBOX" : r ? "TITLEBAR_FAST_TRAVEL" : l ? "RECENTS" : "HELP", [t, n, r, l])
     }({
-      showBackForwardButtons: Chunk879690,
+      showBackForwardButtons: Chunk191336,
       showNotificationsInbox: Z,
       titlebarFastTravel: require,
       showRecentsButton: L

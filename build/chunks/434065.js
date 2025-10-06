@@ -3,9 +3,9 @@
 require.d(exports, {
   r: () => l
 });
-var Chunk879690 = require("./879690.js"),
+var Chunk191336 = require("./191336.js"),
   Chunk731965 = require("./731965.js");
-let l = (0, Chunk879690.U)(e => ({
+let l = (0, Chunk191336.U)(e => ({
   favoriteAdded: false,
   notifyFavoriteAdded: () => (0, i.j)(() => e({
     favoriteAdded: true

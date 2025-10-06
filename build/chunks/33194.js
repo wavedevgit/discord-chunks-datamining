@@ -11,8 +11,8 @@ require.d(exports, {
   nC: () => m,
   v3: () => p
 });
-var Chunk879690 = require("./879690.js"),
-  Chunk8058 = require("./8058.js");
+var Chunk191336 = require("./191336.js"),
+  Chunk180059 = require("./180059.js");
 
 function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -52,14 +52,14 @@ function l(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let c = (0, Chunk879690.U)((0, Chunk8058.tJ)(e => ({
+let c = (0, Chunk191336.U)((0, Chunk180059.tJ)(e => ({
   channelDismissTimestamps: {},
   userDismissTimestamps: {},
   globalDismissTimestamp: null,
   queuedWarning: false
 }), {
   name: "shared-spaces-warning-storage",
-  storage: (0, Chunk8058.FL)(() => localStorage)
+  storage: (0, Chunk180059.FL)(() => localStorage)
 }));
 
 function u(e) {

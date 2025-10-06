@@ -12,7 +12,7 @@ require.d(exports, {
 }), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js"), require("./642613.js"), require("./704826.js"), require("./35282.js");
 var Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
-  Chunk879690 = require("./879690.js"),
+  Chunk191336 = require("./191336.js"),
   Chunk979554 = require("./979554.js"),
   Chunk731965 = require("./731965.js"),
   Chunk373071 = require("./373071.js"),
@@ -95,7 +95,7 @@ function E(e) {
 function b(e) {
   return e && "undefined" != typeof Symbol && e.constructor === Symbol ? "symbol" : typeof e
 }
-let y = (0, Chunk879690.U)(e => ({
+let y = (0, Chunk191336.U)(e => ({
     previewEnabled: false,
     collectionAssets: {},
     avatarDecorationAssets: {},

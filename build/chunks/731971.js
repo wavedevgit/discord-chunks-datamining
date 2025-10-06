@@ -13,7 +13,7 @@ require.d(exports, {
   y: () => y,
   yr: () => v
 }), require("./781311.js");
-var Chunk879690 = require("./879690.js"),
+var Chunk191336 = require("./191336.js"),
   Chunk524437 = require("./524437.js"),
   Chunk695346 = require("./695346.js"),
   Chunk594174 = require("./594174.js");
@@ -58,7 +58,7 @@ function u(e) {
   let t = l.no.getSetting();
   return t !== i.GI.ACTIVITY_STATUS_ON && (t !== i.GI.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS || null == e || !(e > 200))
 }
-let d = (0, Chunk879690.U)(e => ({
+let d = (0, Chunk191336.U)(e => ({
     nickname: c.nickname,
     dmsAllowed: c.dmsAllowed,
     showActivity: true,
@@ -126,5 +126,5 @@ let d = (0, Chunk879690.U)(e => ({
     } = d();
     if (null != require && "" !== require.trim()) return require;
     let r = Chunk594174.default.getCurrentUser();
-    return null != (t = null != (e = null == Chunk879690 ? true : Chunk879690.globalName) ? module : null == Chunk879690 ? true : Chunk879690.username) ? exports : ""
+    return null != (t = null != (e = null == Chunk191336 ? true : Chunk191336.globalName) ? module : null == Chunk191336 ? true : Chunk191336.username) ? exports : ""
   }

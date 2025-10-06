@@ -7,13 +7,13 @@ require.d(exports, {
   sJ: () => c
 });
 var Chunk647438 = require("./647438.js"),
-  Chunk879690 = require("./879690.js"),
+  Chunk191336 = require("./191336.js"),
   Chunk731965 = require("./731965.js");
 let o = Object.freeze({
     id: null,
     activeDescendant: null
   }),
-  s = (0, Chunk879690.U)(() => o);
+  s = (0, Chunk191336.U)(() => o);
 
 function l(e, t, n) {
   (0, r.useEffect)(() => {

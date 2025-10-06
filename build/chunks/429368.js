@@ -5,8 +5,8 @@ require.d(exports, {
   $: () => _,
   o: () => f
 }), require("./388685.js");
-var Chunk524825 = require("./524825.js"),
-  Chunk131193 = require("./131193.js"),
+var Chunk574583 = require("./574583.js"),
+  Chunk51835 = require("./51835.js"),
   Chunk979554 = require("./979554.js");
 
 function o(e, t, n) {
@@ -47,9 +47,9 @@ function c(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let u = (0, Chunk131193.F)(() => ({
+let u = (0, Chunk51835.F)(() => ({
     selectionStates: new Map
-  }), Chunk524825.X),
+  }), Chunk574583.X),
   d = () => ({
     selectedVariantIndex: 0
   }),

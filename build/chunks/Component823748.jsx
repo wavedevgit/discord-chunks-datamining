@@ -586,7 +586,7 @@ class ti extends Chunk647438.PureComponent {
             channel: e
           }, "pins")), s.push((0, r.jsx)(es.Z, {
             channel: e,
-            tooltip: e9.intl.string(e9.t.Xjlbvr),
+            tooltip: e5.intl.string(e5.t.Xjlbvr),
             location: "ChannelHeaderToolbar-DM-AddFriendsButton"
           }, "invite")), s.push((0, r.jsx)(ed.Z, {
             channel: e,
@@ -601,7 +601,7 @@ class ti extends Chunk647438.PureComponent {
             }, "calls")), s.push((0, r.jsx)(et.Z, {
               channel: e
             }, "pins")), !e.isManaged()) {
-            let t = e9.intl.string(e9.t.Xjlbvr);
+            let t = e5.intl.string(e5.t.Xjlbvr);
             s.push((0, r.jsx)(es.Z, {
               channel: e,
               tooltip: t,
@@ -705,11 +705,11 @@ class ti extends Chunk647438.PureComponent {
         channel: t
       } = this.props;
       return e ? (0, r.jsx)("div", {
-        className: e5.followButton,
+        className: e9.followButton,
         children: (0, r.jsx)(g.zxk, {
           variant: "secondary",
           size: "sm",
-          text: e9.intl.string(e9.t["3aOv+v"]),
+          text: e5.intl.string(e5.t["3aOv+v"]),
           onClick: () => (0, g.ZDy)(async () => {
             let {
               default: e
@@ -740,7 +740,7 @@ class ti extends Chunk647438.PureComponent {
         b = c || d,
         y = s || b;
       return (0, r.jsxs)("div", {
-        className: e5.subtitleContainer,
+        className: e9.subtitleContainer,
         children: [(0, r.jsx)(g.f6W, {
           theme: u && s ? e1.BRd.DARK : true,
           children: s => (0, r.jsxs)(ei.Z, {
@@ -751,12 +751,12 @@ class ti extends Chunk647438.PureComponent {
             showDivider: h && !(0, ey.X$)(),
             toolbar: this.renderHeaderToolbar(),
             mobileToolbar: this.renderMobileToolbar(),
-            className: a()(e5.title, s, {
-              [e5.gdm]: e.type === e1.d4z.GROUP_DM
+            className: a()(e9.title, s, {
+              [e9.gdm]: e.type === e1.d4z.GROUP_DM
             }),
             transparent: y,
             hidden: d,
-            "aria-label": e9.intl.string(e9.t.BIYAqa),
+            "aria-label": e5.intl.string(e5.t.BIYAqa),
             children: [p && (0, r.jsx)(el.TS, {
               channel: e,
               guild: i,
@@ -773,12 +773,12 @@ class ti extends Chunk647438.PureComponent {
               handleParentClick: m,
               renderFollowButton: this.renderFollowButton
             }), p ? (0, r.jsx)("div", {
-              className: e5.followButton,
+              className: e9.followButton,
               children: (0, r.jsx)(g.zxk, {
                 onClick: () => (0, em.XU)(e.guild_id, e.id),
                 variant: "secondary",
                 size: "sm",
-                text: e9.intl.string(e9.t.k5WiPT)
+                text: e5.intl.string(e5.t.k5WiPT)
               })
             }) : (0, el.v0)(e, i)]
           }, "header-".concat(e.id))

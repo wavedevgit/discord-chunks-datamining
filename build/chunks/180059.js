@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-/** chunk id: 8058, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 180059, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
   FL: () => a,
@@ -91,12 +91,8 @@ let o = e => t => {
         })
       },
       p = i.setState;
-    i.setState = (e, t) => {
-      p(e, t), _()
-    };
-    let h = e((...e) => {
-      n(...e), _()
-    }, r, i);
+    i.setState = (e, t) => (p(e, t), _());
+    let h = e((...e) => (n(...e), _()), r, i);
     i.getInitialState = () => h;
     let m = () => {
       var e, t;
@@ -110,7 +106,10 @@ let o = e => t => {
         if (e)
           if ("number" != typeof e.version || e.version === l.version) return [false, e.state];
           else {
-            if (l.migrate) return [true, l.migrate(e.state, e.version)];
+            if (l.migrate) {
+              let t = l.migrate(e.state, e.version);
+              return t instanceof Promise ? t.then(e => [true, e]) : [true, t]
+            }
             console.error("State loaded from storage couldn't be migrated since no migrate function was provided")
           } return [false, true]
       }).then(e => {
