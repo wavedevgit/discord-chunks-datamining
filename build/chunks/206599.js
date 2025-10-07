@@ -45,13 +45,13 @@ function u(e) {
     }, [s, e]);
   (0, c.qU)(f);
   let p = (0, c.kN)(f),
-    [h, m] = r.useState([]),
+    [m, h] = r.useState([]),
     v = (t = f.map(e => l.Z.isFetching(e)), r.useMemo(() => t.join("\x1f"), [t]));
   return r.useEffect(() => {
     let t = f.filter(e => l.Z.noDataAvailable(e));
     t.length > 0 && u(t, e)
   }, [v, f, e, u, p]), r.useEffect(() => {
-    m(f.map(e => {
+    h(f.map(e => {
       let t = p[e];
       return {
         applicationId: e,
@@ -60,7 +60,7 @@ function u(e) {
       }
     }))
   }, [f, p, e, n, a]), {
-    games: h,
+    games: m,
     onAddGame: g
   }
 }

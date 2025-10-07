@@ -48,7 +48,7 @@ function N(e) {
     popoutProps: s,
     ref: g,
     focusSectionProps: b
-  } = e, [E, v] = i.useState(false), N = (0, _.D)(), j = o || N, P = o || j, {
+  } = e, [E, y] = i.useState(false), N = (0, _.D)(), j = o || N, P = o || j, {
     backForwardButtons: x,
     titlebarIconSize: A,
     titlebarHoverHighlight: Z
@@ -73,7 +73,7 @@ function N(e) {
     }), (0, r.jsx)(u.u, {
       asContainer: true,
       shouldShow: !P,
-      text: y.intl.string(y.t.HcoRu7),
+      text: v.intl.string(v.t.HcoRu7),
       children: (0, r.jsxs)(d.P3F, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -98,10 +98,10 @@ function N(e) {
         })
       }, b, s), n = n = {
         onMouseEnter: () => {
-          v(true)
+          y(true)
         },
         onMouseLeave: () => {
-          v(false)
+          y(false)
         },
         onClick: () => {
           var e;

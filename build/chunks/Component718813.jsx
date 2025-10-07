@@ -210,15 +210,15 @@ class M extends(r = Chunk647438.PureComponent) {
       "aria-label": Chunk134616 ? function(e) {
         switch (e) {
           case E.S9g.USER_SETTINGS:
-            return v.intl.string(v.t.cduTBA);
+            return y.intl.string(y.t.cduTBA);
           case E.S9g.CHANNEL_SETTINGS:
-            return v.intl.string(v.t.XPDhcX);
+            return y.intl.string(y.t.XPDhcX);
           case E.S9g.COLLECTIBLES_SHOP:
-            return v.intl.string(v.t.pWG4zc);
+            return y.intl.string(y.t.pWG4zc);
           case E.S9g.MANA_PLAYGROUND:
             return "Component Playground";
           case E.S9g.CHECKPOINT:
-            return v.intl.string(y.default["CdU/PD"]);
+            return y.intl.string(v.default["CdU/PD"]);
           default:
             return ""
         }

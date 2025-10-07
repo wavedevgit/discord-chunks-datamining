@@ -27,9 +27,9 @@ let h = e => {
     isGuestInviteCreationToggleEnabled: x,
     onSetInviteFlags: f
   } = e, N = (0, a.ZP)(), {
-    maxAgeOptions: _,
-    maxAge: j,
-    maxUses: S,
+    maxAgeOptions: S,
+    maxAge: _,
+    maxUses: j,
     temporary: b,
     flags: E
   } = i;
@@ -51,9 +51,9 @@ let h = e => {
       })]
     }), (0, l.jsx)(o.Z, {
       shouldHideTemporaryInviteToggle: h,
-      maxAgeOptions: _,
-      maxAge: j,
-      maxUses: S,
+      maxAgeOptions: S,
+      maxAge: _,
+      maxUses: j,
       temporary: b,
       onToggleTemporary: p,
       onSelectMaxAge: v,

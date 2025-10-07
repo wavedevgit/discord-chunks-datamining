@@ -39,7 +39,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk830202 = require("./830202.js");
 
-function R(e) {
+function L(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -78,9 +78,9 @@ function U(e) {
   var {
     widget: t
   } = e, n = G(e, ["widget"]);
-  return t instanceof v.q ? (0, r.jsx)(w.Z, R({
+  return t instanceof v.q ? (0, r.jsx)(w.Z, L({
     widget: t
-  }, n)) : t instanceof y.zy ? (0, r.jsx)(N.Z, R({
+  }, n)) : t instanceof y.zy ? (0, r.jsx)(N.Z, L({
     widget: t
   }, n)) : null
 }
@@ -106,7 +106,7 @@ function W(e) {
     application: n
   } = (0, O.G)(), {
     token: i
-  } = (0, d.o)(null == n ? true : n.id), l = (0, S.Z)(t.id), a = (0, j.k)({
+  } = (0, d.o)(null == n ? true : n.id), l = (0, S.Z)(t.id), a = (0, b.k)({
     location: "ApplicationWidgetUpsell"
   }), s = l.some(e => e instanceof v.q && e.applicationId === (null == n ? true : n.id));
   return null == n || !a || null == i || s ? null : (0, r.jsx)(f.ZP, {
@@ -130,15 +130,15 @@ function F(e) {
     user: t,
     guildId: n,
     channelId: l
-  } = e, a = (0, S.Z)(t.id), o = (0, s.e7)([h.default], () => h.default.getId() === t.id), c = (() => {
-    let [e, t] = (0, s.Wu)([m.Z], () => [m.Z.ipCountryCode, m.Z.ipCountryCodeRequest]), n = (0, g.U)();
+  } = e, a = (0, S.Z)(t.id), o = (0, s.e7)([m.default], () => m.default.getId() === t.id), c = (() => {
+    let [e, t] = (0, s.Wu)([h.Z], () => [h.Z.ipCountryCode, h.Z.ipCountryCodeRequest]), n = (0, g.U)();
     return i.useEffect(() => {
       null == e && null == t && n && (0, u.GE)()
     }, [e, t, n]), "GB" === e && n
-  })(), d = (0, j.k)({
+  })(), d = (0, b.k)({
     location: "UserProfileModalV2Widgets"
   }), f = 0 === a.length && o, O = i.useMemo(() => a.filter(y.Wc), [a]), x = i.useMemo(() => a.filter(e => e instanceof v.q), [a]);
-  (0, I.ZP)(O), (0, b.J)(o, O);
+  (0, I.ZP)(O), (0, j.J)(o, O);
   var w = t.id;
   (0, P.s)(x);
   let {
@@ -175,13 +175,13 @@ function B(e) {
   return (0, r.jsxs)(D.F, {
     "data-scroller": true,
     scrollerRef: l,
-    className: a()(L.scroller, {
-      [L.hasToolbar]: s
+    className: a()(R.scroller, {
+      [R.hasToolbar]: s
     }),
     fade: true,
     children: [(0, r.jsx)(A.Z, {
       scrollerRef: l
-    }), (0, r.jsx)(F, R({
+    }), (0, r.jsx)(F, L({
       user: t
     }, n))]
   })

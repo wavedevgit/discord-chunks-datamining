@@ -4,6 +4,7 @@
 require.d(exports, {
   Hc: () => a,
   Hi: () => c,
+  V5: () => u,
   ii: () => o,
   lm: () => l,
   vE: () => s
@@ -29,4 +30,8 @@ function l(e) {
 
 function c(e, t) {
   return t.includes(e)
+}
+
+function u(e) {
+  return null != e[1]
 }

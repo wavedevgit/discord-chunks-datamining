@@ -46,20 +46,20 @@ function A(e) {
     location: "UserProfileModalV2Activity"
   }), _ = (0, p.b)({
     location: "UserProfileModalV2Activity"
-  }), L = (0, c.P6)("UserProfileModalV2Activity"), {
-    live: R,
+  }), R = (0, c.P6)("UserProfileModalV2Activity"), {
+    live: L,
     recent: G,
     stream: U
-  } = (0, h.Z)(t.id), {
+  } = (0, m.Z)(t.id), {
     voiceChannel: M,
     voiceActivity: W
-  } = (0, m.Z)({
+  } = (0, h.Z)({
     userId: t.id,
     guildId: N
   }), F = (0, i.e7)([o.Z], () => o.Z.isFetchingUserOutbox(t.id)), B = t.id === n.id, z = (0, i.e7)([f.Z, d.Z], () => {
     let e = B ? f.Z.getStatus() : d.Z.getStatus(t.id);
     return e === l.Skl.OFFLINE || e === l.Skl.INVISIBLE
-  }), H = R.length > 0 || null != U, V = Z && null == U && null == W && null != M, Y = !z && (H || V), q = G.length > 0, K = R.some(e => (0, a.Z)(e));
+  }), H = L.length > 0 || null != U, V = Z && null == U && null == W && null != M, Y = !z && (H || V), q = G.length > 0, X = L.some(e => (0, a.Z)(e));
   if (!Y && !q && F) return (0, r.jsx)("div", {
     className: T.cards,
     children: Array.from({
@@ -76,12 +76,12 @@ function A(e) {
     }, t))
   });
   if (!Y && !q && !F) {
-    var X;
+    var K;
     return B ? (0, r.jsx)(x.Uf, {
       onClose: D
     }) : (0, r.jsx)(x.P9, {
       user: t,
-      guildId: null != (X = null == A ? true : A.guildId) ? X : N,
+      guildId: null != (K = null == A ? true : A.guildId) ? K : N,
       channelId: C,
       onClose: D
     })
@@ -90,7 +90,7 @@ function A(e) {
     className: T.scroller,
     fade: true,
     children: [(() => {
-      let e = B && L && !K;
+      let e = B && R && !X;
       return Y ? (0, r.jsx)(P.Z, {
         heading: E.intl.string(E.t.J6STd3),
         children: (0, r.jsxs)("ul", {
@@ -107,13 +107,13 @@ function A(e) {
               onClose: D
             })
           }), null != U && (0, r.jsx)("li", {
-            children: (0, r.jsx)(b.Z, {
+            children: (0, r.jsx)(j.Z, {
               user: t,
               currentUser: n,
               stream: U,
               onClose: D
             })
-          }), R.map((e, i) => (0, r.jsx)("li", {
+          }), L.map((e, i) => (0, r.jsx)("li", {
             children: (0, r.jsx)(y.Z, {
               user: t,
               currentUser: n,
@@ -147,7 +147,7 @@ function A(e) {
       children: (0, r.jsx)("ul", {
         className: T.cards,
         children: G.map(e => (0, r.jsx)("li", {
-          children: (0, r.jsx)(j.Z, {
+          children: (0, r.jsx)(b.Z, {
             user: t,
             entry: e,
             onClose: D

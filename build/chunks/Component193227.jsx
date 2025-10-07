@@ -8,9 +8,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
+  Chunk907331 = require("./907331.js"),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk434650 = require("./434650.js"),
   Chunk594174 = require("./594174.js"),
   Chunk381585 = require("./381585.jsx"),
   Chunk128922 = require("./128922.js"),
@@ -33,16 +33,16 @@ function T(e) {
     products: t,
     header: n,
     category: l
-  } = e, s = (0, i.e7)([u.default], () => u.default.getCurrentUser()), a = (0, x.St)(t), c = g.Z.useConfig({
+  } = e, s = (0, o.e7)([u.default], () => u.default.getCurrentUser()), a = (0, x.St)(t), i = g.Z.useConfig({
     location: "Products"
   }).showCardsV2;
   return null == s || 0 === t.length ? null : (0, r.jsxs)("div", {
-    children: [null != n ? (0, r.jsx)(o.Text, {
+    children: [null != n ? (0, r.jsx)(c.Text, {
       className: y.itemTypeTitle,
       color: "header-secondary",
       variant: "text-sm/bold",
       children: n
-    }) : (0, r.jsx)(o.LZC, {
+    }) : (0, r.jsx)(c.LZC, {
       size: 24
     }), (0, r.jsx)("div", {
       className: y.cardsContainer,
@@ -50,7 +50,7 @@ function T(e) {
         newValue: {
           tilePosition: t
         },
-        children: c ? (0, r.jsx)(E.Z, {
+        children: i ? (0, r.jsx)(E.Z, {
           skuId: e.skuId
         }, e.skuId) : (0, r.jsx)(b.Z, {
           category: l,
@@ -77,12 +77,12 @@ function j(e) {
   let {
     category: t,
     isFullScreen: n
-  } = e, [s, a] = l.useState(false), i = (0, c.O)(e => {
+  } = e, [s, a] = l.useState(false), o = (0, i.O)(e => {
     a(e)
   }, n ? .13 : .15);
   return (0, r.jsxs)("div", {
     className: y.categoryWrapper,
-    ref: i,
+    ref: o,
     children: [(0, r.jsx)(_.Z, {
       category: t
     }), (0, r.jsx)(L, {
@@ -97,7 +97,7 @@ function k(e) {
     sortedCategories: n,
     setCategoryRef: s,
     isFullScreen: i,
-    currentPage: c,
+    currentPage: o,
     handlePageChange: u
   } = e, g = (0, d.sp)(), f = (0, S.R)(), C = null != (t = null == g ? true : g.sessionId) ? t : "", {
     noCache: _,
@@ -108,9 +108,9 @@ function k(e) {
     } = e;
     return t.length > 0
   }), [n]), x = l.useMemo(() => {
-    let e = (c - 1) * O.kN;
+    let e = (o - 1) * O.kN;
     return E.slice(e, e + O.kN)
-  }, [E, c]);
+  }, [E, o]);
   l.useEffect(() => {
     (0, h.n)({
       sessionId: C,
@@ -148,8 +148,8 @@ function k(e) {
       })
     }, e.skuId)), (0, r.jsx)("div", {
       className: y.paginationContainer,
-      children: (0, r.jsx)(o.DsT, {
-        currentPage: c,
+      children: (0, r.jsx)(c.DsT, {
+        currentPage: o,
         totalCount: E.length,
         pageSize: O.kN,
         onPageChange: u,

@@ -63,12 +63,12 @@ function S(e) {
     wishlistId: n,
     currentUser: S,
     wishlistSettings: w
-  } = (0, a.cj)([m.Z, p.default], () => {
-    let e = m.Z.getFirstWishlistId(t.id);
+  } = (0, a.cj)([h.Z, p.default], () => {
+    let e = h.Z.getFirstWishlistId(t.id);
     return {
       wishlistId: e,
       currentUser: p.default.getCurrentUser(),
-      wishlistSettings: null != e ? m.Z.getWishlistSettings(t.id, e) : null
+      wishlistSettings: null != e ? h.Z.getWishlistSettings(t.id, e) : null
     }
   }), {
     analyticsLocations: E
@@ -82,9 +82,9 @@ function S(e) {
   } = (0, g.k)(n), Z = i.useCallback(() => {
     if (null == n) return;
     let e = N ? l.f.PRIVATE : l.f.PUBLIC;
-    C(!N), f.Z.updateWishlistVisibility(n, e), (0, h.Er)({
+    C(!N), f.Z.updateWishlistVisibility(n, e), (0, m.Er)({
       wishlistId: n,
-      action: N ? b.NW.WISHLIST_TOGGLE_PRIVATE : b.NW.WISHLIST_TOGGLE_PUBLIC,
+      action: N ? j.NW.WISHLIST_TOGGLE_PRIVATE : j.NW.WISHLIST_TOGGLE_PUBLIC,
       analyticsLocations: E
     })
   }, [n, N, E]), _ = i.useCallback(() => {
@@ -167,7 +167,7 @@ function S(e) {
           icon: o.qJs,
           text: O.intl.string(O.t.SDUwMz),
           onClick: _
-        }), (0, r.jsx)(j.Z, {
+        }), (0, r.jsx)(b.Z, {
           isOwner: T,
           isWishlistPublic: N,
           onToggleVisibility: Z

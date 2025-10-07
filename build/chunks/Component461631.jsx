@@ -23,7 +23,7 @@ function g(e) {
     className: g
   } = e, {
     analyticsLocations: p
-  } = (0, s.ZP)(), h = async () => {
+  } = (0, s.ZP)(), m = async () => {
     try {
       await o.Z.removeSkuFromWishlist(n, t.skuId, p)
     } catch (e) {
@@ -52,7 +52,7 @@ function g(e) {
         }
         return e
       }({}, e), n = n = {
-        onClick: h,
+        onClick: m,
         "aria-label": d.intl.string(d.t.jTW019),
         className: l()(g, f.clickable),
         children: (0, r.jsx)(a.XHJ, {

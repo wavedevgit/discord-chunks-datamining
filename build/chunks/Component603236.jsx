@@ -1,7 +1,7 @@
 /** Chunk was on 7654 **/
 /** chunk id: 603236, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  I: () => _,
+  I: () => S,
   S: () => N
 }), require("./997841.js");
 var Chunk951288 = require("./951288.js"),
@@ -40,7 +40,7 @@ let N = Chunk442837.ZP.connectStores([Chunk246946.Z], () => ({
       disabled: r
     })
   }),
-  _ = e => {
+  S = e => {
     let {
       guild: t,
       noInvitesAvailable: n,
@@ -48,9 +48,9 @@ let N = Chunk442837.ZP.connectStores([Chunk246946.Z], () => ({
       onClose: a,
       modalState: u,
       isApplicationBypassToggleEnabled: c,
-      setInviteFlags: _,
-      copyValue: j,
-      changePage: S,
+      setInviteFlags: S,
+      copyValue: _,
+      changePage: j,
       inviteChannel: b,
       source: E,
       code: y,
@@ -77,13 +77,13 @@ let N = Chunk442837.ZP.connectStores([Chunk246946.Z], () => ({
     return (0, l.jsxs)(o.Kqy, {
       gap: 16,
       children: [(0, l.jsx)(N, {
-        value: j,
+        value: _,
         autoFocus: r,
         onCopy: R,
         disabled: O
       }), c && (0, l.jsx)(o.rsf, {
         checked: (0, h.yE)(w, s.$.IS_APPLICATION_BYPASS),
-        onChange: e => _((0, h.mB)(w, s.$.IS_APPLICATION_BYPASS, e)),
+        onChange: e => S((0, h.mB)(w, s.$.IS_APPLICATION_BYPASS, e)),
         disabled: O,
         label: x.intl.string(x.t["1i1bUl"]),
         description: x.intl.string(x.t["jvd/LC"])
@@ -91,7 +91,7 @@ let N = Chunk442837.ZP.connectStores([Chunk246946.Z], () => ({
         variant: "text-xs/normal",
         className: f.footerText,
         children: [(0, m.Vg)(P, Z), " ", r ? (0, l.jsx)(o.eee, {
-          onClick: () => S(v.RV.SETTINGS),
+          onClick: () => j(v.RV.SETTINGS),
           children: x.intl.string(x.t.VNe8Pz)
         }) : null]
       }), !n && r && M ? (0, l.jsxs)(o.Text, {

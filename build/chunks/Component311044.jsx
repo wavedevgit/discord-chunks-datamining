@@ -1,7 +1,7 @@
 /** Chunk was on 56848 **/
 /** chunk id: 311044, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,17 +17,17 @@ var Chunk951288 = require("./951288.js"),
   Chunk661462 = require("./661462.jsx"),
   Chunk443680 = require("./443680.js");
 
-function m(e) {
+function h(e) {
   let {
     user: t,
     guildId: n,
-    channelId: m,
+    channelId: h,
     onClose: v
   } = e, {
     analyticsLocations: y
   } = (0, a.ZP)(), {
-    context: j,
-    trackUserProfileAction: b
+    context: b,
+    trackUserProfileAction: j
   } = (0, o.KZ)(), {
     mutualFriends: O,
     mutualFriendsCount: x
@@ -35,11 +35,11 @@ function m(e) {
   return i.useEffect(() => {
     (0, u.Z)(t.id, P)
   }, [t.id, P]), (0, r.jsx)(p.F, {
-    className: h.scroller,
+    className: m.scroller,
     children: null == O ? Array.from({
       length: null != x ? x : 10
     }).map((e, t) => (0, r.jsxs)("div", {
-      className: h.friendsLoadingItem,
+      className: m.friendsLoadingItem,
       children: [(0, r.jsx)(s.ZT, {
         width: 40,
         opacity: .08
@@ -57,10 +57,10 @@ function m(e) {
         user: i,
         status: l,
         guildId: n,
-        channelId: m,
+        channelId: h,
         onSelect: () => {
           var e, t;
-          null == v || v(), b({
+          null == v || v(), j({
             action: "PRESS_MUTUAL_FRIEND"
           }), (0, d.openUserProfileModal)((e = function(e) {
             for (var t = 1; t < arguments.length; t++) {
@@ -79,7 +79,7 @@ function m(e) {
               })
             }
             return e
-          }({}, j), t = t = {
+          }({}, b), t = t = {
             userId: i.id,
             sourceAnalyticsLocations: y
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {

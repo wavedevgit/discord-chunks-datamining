@@ -5,8 +5,8 @@ require.d(exports, {
 }), require("./953529.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk907331 = require("./907331.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk434650 = require("./434650.js"),
   Chunk768581 = require("./768581.js"),
   Chunk255333 = require("./255333.js"),
   Chunk881294 = require("./881294.js"),
@@ -21,14 +21,14 @@ function _(e) {
   let {
     applicationId: t,
     similarApplications: n,
-    onSelectApplication: i,
+    onSelectApplication: l,
     similarLoadId: s
   } = e, o = function(e) {
     let {
       applicationId: t,
       similarAppIds: n
-    } = e, [r, i] = a.useState(), s = (0, l.O)(e => {
-      e && i(t)
+    } = e, [r, l] = a.useState(), s = (0, i.O)(e => {
+      e && l(t)
     });
     return a.useEffect(() => {
       r === t && (0, c.zZ)(m.rMx.APP_DIRECTORY_RECOMMENDATIONS_VIEWED, {
@@ -46,7 +46,7 @@ function _(e) {
     children: n.map((e, n) => (0, r.jsx)(f, {
       applicationId: t,
       similarApplication: e,
-      onSelectApplication: i,
+      onSelectApplication: l,
       similarLoadId: s,
       position: n
     }, e.id))
@@ -54,7 +54,7 @@ function _(e) {
 }
 
 function f(e) {
-  var t, n, l;
+  var t, n, i;
   let {
     applicationId: o,
     similarApplication: u,
@@ -77,7 +77,7 @@ function f(e) {
       shown_mutual_guilds_count: b.length
     }), h(u.id)
   }, [h, u.id, o, b.length, f, _]);
-  return (0, r.jsxs)(i.P3F, {
+  return (0, r.jsxs)(l.P3F, {
     onClick: C,
     className: g.appContainer,
     children: [(0, r.jsxs)("div", {
@@ -96,25 +96,25 @@ function f(e) {
             minWidth: 0,
             overflow: "hidden"
           },
-          children: (0, r.jsx)(i.X6q, {
+          children: (0, r.jsx)(l.X6q, {
             variant: "heading-md/semibold",
             color: "header-primary",
             className: g.appName,
             children: u.name
           })
-        }), null != x ? (0, r.jsx)(i.Text, {
+        }), null != x ? (0, r.jsx)(l.Text, {
           className: g.appCategory,
           variant: "text-xs/medium",
           color: "text-muted",
           children: x.name
         }) : null]
       })]
-    }), (0, r.jsx)(i.Text, {
+    }), (0, r.jsx)(l.Text, {
       className: g.appDescription,
       variant: "text-sm/medium",
       color: "header-secondary",
       lineClamp: 2,
-      children: null != (l = null == (n = u.directory_entry) ? true : n.short_description) ? l : u.description
+      children: null != (i = null == (n = u.directory_entry) ? true : n.short_description) ? i : u.description
     }), (0, r.jsx)(d.Z, {
       application: u,
       textVariant: "text-xs/medium",
@@ -130,14 +130,14 @@ let b = function(e) {
     applicationId: t,
     fetchState: n,
     similarApplications: a,
-    onSelectApplication: l,
+    onSelectApplication: i,
     similarLoadId: s
   } = e;
   return n !== o.M.FETCHING && (null == a || 0 === a.length) ? null : (0, r.jsxs)("div", {
     className: g.sectionContainer,
     children: [(0, r.jsx)("div", {
       className: g.divider
-    }), (0, r.jsx)(i.X6q, {
+    }), (0, r.jsx)(l.X6q, {
       variant: "heading-sm/semibold",
       color: "header-primary",
       className: g.sectionHeader,
@@ -147,7 +147,7 @@ let b = function(e) {
       children: null != a ? (0, r.jsx)(_, {
         applicationId: t,
         similarApplications: a,
-        onSelectApplication: l,
+        onSelectApplication: i,
         similarLoadId: s
       }) : null
     })]

@@ -42,9 +42,9 @@ function _(e) {
     profileOwner: n,
     wishlistId: l,
     isOwner: _
-  } = e, L = i.useRef(null), R = i.useRef(null), G = t.collectiblesItem, {
+  } = e, R = i.useRef(null), L = i.useRef(null), G = t.collectiblesItem, {
     analyticsLocations: U
-  } = (0, h.ZP)(), M = (0, s.TH)(), [W] = (0, u.Wu)([I.Z], () => [I.Z.hasSentGift(t.skuId, n.id)], [t.skuId, n.id]), F = (0, g.Z)(L) && !W, B = W ? true : t.skuName, z = _ ? D.t.FdGl5O : D.t.ilhtIS, H = _ ? true : f.OgN, V = (0, r.jsx)("div", {
+  } = (0, m.ZP)(), M = (0, s.TH)(), [W] = (0, u.Wu)([I.Z], () => [I.Z.hasSentGift(t.skuId, n.id)], [t.skuId, n.id]), F = (0, g.Z)(R) && !W, B = W ? true : t.skuName, z = _ ? D.t.FdGl5O : D.t.ilhtIS, H = _ ? true : f.OgN, V = (0, r.jsx)("div", {
     className: Z.cardStateIconWrapper,
     children: (0, r.jsx)(f.sV5, {
       size: "custom",
@@ -57,26 +57,26 @@ function _(e) {
     className: Z.overlay,
     children: (0, r.jsx)(f.zxk, {
       focusProps: {
-        ringTarget: R
+        ringTarget: L
       },
       variant: "primary",
       size: "sm",
       text: D.intl.string(z),
       icon: H,
       onClick: e => {
-        e.stopPropagation(), K()
+        e.stopPropagation(), X()
       },
       fullWidth: true
     })
   }), q = i.useCallback(() => {
     if (M.pathname.startsWith(N.Z5c.COLLECTIBLES_SHOP)) {
-      let e = m.Z.getProduct(t.skuId),
-        n = m.Z.getCategoryForProduct(t.skuId);
+      let e = h.Z.getProduct(t.skuId),
+        n = h.Z.getCategoryForProduct(t.skuId);
       if (null != e && null != n) {
         (0, E.closeUserProfileModal)(), (0, v.T)({
           product: e,
           category: n,
-          shouldCheckoutWithOrbs: (0, b.oQ)({
+          shouldCheckoutWithOrbs: (0, j.oQ)({
             product: e
           }),
           analyticsLocations: U,
@@ -88,7 +88,7 @@ function _(e) {
         return
       }
     }(0, E.closeUserProfileModal)(), (0, P.uL)("".concat(N.Z5c.COLLECTIBLES_SHOP, "#itemSkuId=").concat(t.skuId))
-  }, [M.pathname, t.skuId, U]), K = () => {
+  }, [M.pathname, t.skuId, U]), X = () => {
     if ((0, w.Er)({
         wishlistId: l,
         action: A.NW.WISHLIST_ITEM_CLICKED,
@@ -108,17 +108,17 @@ function _(e) {
     }
   };
   return (0, r.jsxs)("div", {
-    ref: L,
+    ref: R,
     className: Z.container,
     children: [(0, r.jsx)(d.u, {
       asContainer: true,
       text: B,
       children: (0, r.jsxs)("div", {
-        ref: R,
+        ref: L,
         className: a()(Z.card, {
           [Z.giftSent]: W
         }),
-        onClick: K,
+        onClick: X,
         children: [(0, r.jsx)(f.nn4, {
           children: (0, r.jsx)(f.H, {
             children: (() => {
@@ -171,7 +171,7 @@ function _(e) {
                   className: Z.nameplatePreview,
                   children: [(0, r.jsx)("div", {
                     className: Z.nameplateTopLeft,
-                    children: (0, r.jsx)(j.Z, {
+                    children: (0, r.jsx)(b.Z, {
                       user: n,
                       nameplate: G,
                       isHighlighted: F,
@@ -184,7 +184,7 @@ function _(e) {
                   }), (0, r.jsx)("div", {
                     className: Z.nameplateBottomRight,
                     "aria-hidden": true,
-                    children: (0, r.jsx)(j.Z, {
+                    children: (0, r.jsx)(b.Z, {
                       user: n,
                       nameplate: G,
                       isHighlighted: F,

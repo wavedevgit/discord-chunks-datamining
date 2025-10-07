@@ -60,7 +60,7 @@ function T(e, t) {
 }
 
 function N(e) {
-  let t = v.default.getUser(e);
+  let t = y.default.getUser(e);
   return {
     user: t,
     usernameLower: null != t ? t.username.toLowerCase() : null
@@ -100,7 +100,7 @@ class A {
     let e = new Set,
       t = Array.from(Chunk699516.Z.getMutableRelationships().entries()).map(t => {
         let [n, r] = t;
-        return r === y.OGo.FRIEND && e.add(n), new x(T(C({
+        return r === v.OGo.FRIEND && e.add(n), new x(T(C({
           key: n,
           type: r,
           userId: n,
@@ -108,7 +108,7 @@ class A {
         }, N(n), j(n), P(n)), {
           spam: E.Z.isSpam(n),
           ignoredUser: E.Z.isIgnored(n),
-          giftIntentType: r === y.OGo.FRIEND && g.Z.isTopAffinityFriendAnniversary({
+          giftIntentType: r === v.OGo.FRIEND && g.Z.isTopAffinityFriendAnniversary({
             userId: n
           }) ? I.hX.FRIEND_ANNIVERSARY : true,
           applicationId: E.Z.getOriginApplicationId(n)
@@ -123,7 +123,7 @@ class A {
         applicationId: l,
         type: a
       } = t;
-      !(a === y.OGo.FRIEND && e.has(r)) && (a === y.OGo.FRIEND && i.has(r) || (a === y.OGo.FRIEND && i.add(r), n.push(new x(T(C({
+      !(a === v.OGo.FRIEND && e.has(r)) && (a === v.OGo.FRIEND && i.has(r) || (a === v.OGo.FRIEND && i.add(r), n.push(new x(T(C({
         key: "".concat(r, "-").concat(l),
         type: a,
         userId: r,
@@ -165,19 +165,19 @@ class A {
       returntrue
     }).filter(t => {
       switch (e) {
-        case y.pJs.ONLINE:
-          return t.type === y.OGo.FRIEND && t.status !== y.Skl.OFFLINE;
-        case y.pJs.PENDING:
-          return t.type === y.OGo.PENDING_INCOMING && !t.spam && !t.ignoredUser || t.type === y.OGo.PENDING_OUTGOING;
-        case y.pJs.SPAM:
-          return t.type === y.OGo.PENDING_INCOMING && t.spam;
-        case y.pJs.PENDING_IGNORED:
-          return t.type === y.OGo.PENDING_INCOMING && t.ignoredUser;
-        case y.pJs.SUGGESTIONS:
+        case v.pJs.ONLINE:
+          return t.type === v.OGo.FRIEND && t.status !== v.Skl.OFFLINE;
+        case v.pJs.PENDING:
+          return t.type === v.OGo.PENDING_INCOMING && !t.spam && !t.ignoredUser || t.type === v.OGo.PENDING_OUTGOING;
+        case v.pJs.SPAM:
+          return t.type === v.OGo.PENDING_INCOMING && t.spam;
+        case v.pJs.PENDING_IGNORED:
+          return t.type === v.OGo.PENDING_INCOMING && t.ignoredUser;
+        case v.pJs.SUGGESTIONS:
           return 99 === t.type;
-        case y.pJs.ALL:
+        case v.pJs.ALL:
         default:
-          return t.type === y.OGo.FRIEND
+          return t.type === v.OGo.FRIEND
       }
     }).sortBy(e => e.comparator).value()
   }

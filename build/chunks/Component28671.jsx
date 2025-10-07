@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx");
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,7 +35,7 @@ function h(e) {
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -55,18 +55,18 @@ function v(e) {
     onDismiss: v
   } = e, {
     trackUserProfileEditAction: y
-  } = (0, s.KZ)(), j = i.useMemo(() => new o.q({
+  } = (0, s.KZ)(), b = i.useMemo(() => new o.q({
     type: l.l.APPLICATION,
     applicationId: n.id
-  }), [n.id]), b = i.useCallback(() => {
-    null != j && ((0, c.qH)(j.type, j, true), y({
+  }), [n.id]), j = i.useCallback(() => {
+    null != b && ((0, c.qH)(b.type, b, true), y({
       action: "WIDGET_ADDED",
-      widgetEdited: j.type
+      widgetEdited: b.type
     }), (0, u.L$)(f.qb.WIDGET_ADDED))
-  }, [j, y]);
+  }, [b, y]);
   return (0, r.jsx)(d.Z, {
     user: t,
-    widget: j,
+    widget: b,
     cta: (0, r.jsx)(d.Z.Cta, {
       heading: p.intl.format(p.t.OIzLCw, {
         applicationName: n.name
@@ -77,7 +77,7 @@ function v(e) {
       buttons: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(a.ua7, {
           text: p.intl.string(p.t.WAI6xs),
-          children: e => (0, r.jsx)(a.Yd2, m(h({}, e), {
+          children: e => (0, r.jsx)(a.Yd2, h(m({}, e), {
             variant: "secondary",
             size: "sm",
             icon: a.Dio,
@@ -88,7 +88,7 @@ function v(e) {
           }))
         }), (0, r.jsx)(a.ua7, {
           text: p.intl.string(p.t.lBG2s7),
-          children: e => (0, r.jsx)(a.Yd2, m(h({}, e), {
+          children: e => (0, r.jsx)(a.Yd2, h(m({}, e), {
             variant: "primary",
             size: "sm",
             icon: a.kmB,
@@ -96,7 +96,7 @@ function v(e) {
               applicationName: n.name
             }),
             onClick: () => {
-              v(g.L.TAKE_ACTION), b()
+              v(g.L.TAKE_ACTION), j()
             }
           }))
         })]

@@ -54,12 +54,12 @@ function I(e) {
         inSidebar: true
       })
     }), N && (0, r.jsxs)("div", {
-      className: y.hamBanner,
+      className: v.hamBanner,
       children: [(0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
         children: E.intl.string(E.t.XVOKgo)
       }), (0, r.jsx)("div", {
-        className: y.hamBannerButton,
+        className: v.hamBannerButton,
         children: (0, r.jsx)(a.zxk, {
           size: "sm",
           onClick: () => A(t, j),
@@ -67,7 +67,7 @@ function I(e) {
         })
       })]
     }), (0, r.jsx)("div", {
-      className: v.chat,
+      className: y.chat,
       children: (0, r.jsx)(O.Z, {
         channel: t,
         guild: null,

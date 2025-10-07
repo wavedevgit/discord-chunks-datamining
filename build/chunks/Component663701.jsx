@@ -296,15 +296,15 @@ let eh = e => {
           } = e;
           return t === p.z.FAMILY_CENTER_NEW_BADGE ? (0, r.jsx)(g.IGR, {
             text: es.intl.string(es.t.y2b7CA),
-            color: y.Z.BG_BRAND
+            color: v.Z.BG_BRAND
           }) : null
         }
       })
     })
   },
-  ev = () => (0, Chunk51596.$Z)("DM_SEARCH");
+  ey = () => (0, Chunk51596.$Z)("DM_SEARCH");
 
-function ey(e) {
+function ev(e) {
   switch (e) {
     case ei.Z5c.APPLICATION_LIBRARY:
       return ei.ZY5.LIBRARY;
@@ -329,7 +329,7 @@ let eI = Chunk647438.memo(function(e) {
     createDMButtonVariant: g,
     selectedChannelId: m,
     path: b
-  } = e, _ = i.useRef(null), O = i.useRef(null), E = i.useRef(null), y = i.useRef(null);
+  } = e, _ = i.useRef(null), O = i.useRef(null), E = i.useRef(null), v = i.useRef(null);
   return (0, r.jsxs)("nav", {
     className: eu.privateChannels,
     "aria-label": es.intl.string(es.t.ZH9aPz),
@@ -348,7 +348,7 @@ let eI = Chunk647438.memo(function(e) {
           color: h.zx.Colors.PRIMARY,
           size: h.zx.Sizes.SMALL,
           fullWidth: true,
-          onClick: ev,
+          onClick: ey,
           children: (0, r.jsx)(I.Z, {
             children: es.intl.string(es.t.LzcpeX)
           })
@@ -369,25 +369,25 @@ let eI = Chunk647438.memo(function(e) {
         selected: null == b ? null != l && l.startsWith(ei.Z5c.MESSAGE_REQUESTS) : b === ei.Z5c.MESSAGE_REQUESTS
       }, "message-requests") : null, s ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(U.g, {
-          nitroTabButtonRef: y,
+          nitroTabButtonRef: v,
           selected: null == b ? o : b.startsWith(ei.Z5c.APPLICATION_STORE),
           route: ei.Z5c.APPLICATION_STORE,
           locationState: {
             analyticsSource: {
-              page: ey(l),
+              page: ev(l),
               section: ei.jXE.NAVIGATION,
               object: ei.qAy.NAVIGATION_LINK
             }
           }
         }, "premium"), c && (0, r.jsx)(M.F, {
-          targetElementRef: y
+          targetElementRef: v
         })]
-      }) : null, (0, r.jsx)(v.i, {
+      }) : null, (0, r.jsx)(y.i, {
         selected: b === ei.Z5c.COLLECTIBLES_SHOP || (null == l ? true : l.startsWith(ei.Z5c.COLLECTIBLES_SHOP)),
         listItemRef: O,
         locationState: {
           analyticsSource: {
-            page: ey(l),
+            page: ev(l),
             section: ei.jXE.NAVIGATION,
             object: ei.qAy.NAVIGATION_LINK
           }

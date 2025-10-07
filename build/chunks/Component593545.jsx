@@ -192,11 +192,13 @@ function A(e) {
 function C(e) {
   let {
     language: t,
-    setLanguage: n
-  } = e, a = i.useRef(null);
+    setLanguage: n,
+    align: a
+  } = e, o = i.useRef(null);
   return (0, r.jsx)(c.yRy, {
-    targetElementRef: a,
+    targetElementRef: o,
     position: "left",
+    align: a,
     renderPopout: e => {
       let {
         closePopout: i
@@ -227,7 +229,7 @@ function C(e) {
         size: "md",
         color: "currentColor",
         className: m.codeIcon,
-        ref: a
+        ref: o
       }))
     })
   })
@@ -310,7 +312,8 @@ function R(e) {
         fileSize: a
       }), (0, r.jsx)(C, {
         language: f,
-        setLanguage: _
+        setLanguage: _,
+        align: "top"
       })]
     })]
   })
@@ -324,16 +327,16 @@ function P(e) {
     transitionState: o,
     language: s,
     fileContents: l,
-    bytesLeft: u
-  } = e, [d, f] = i.useState(s), _ = null != l ? l : "";
-  return 0 !== u && (_ += "... ".concat(h.intl.formatToPlainString(h.t["1+gGcH"], {
+    bytesLeft: u,
+    onClose: d
+  } = e, [f, _] = i.useState(s), g = null != l ? l : "";
+  return 0 !== u && (g += "... ".concat(h.intl.formatToPlainString(h.t["1+gGcH"], {
     formattedBytes: (0, p.IC)(u)
-  }))), (0, r.jsx)(c.Y0X, {
+  }))), (0, r.jsx)(c.IX, {
     transitionState: o,
     "aria-label": h.intl.string(h.t.qxQjc3),
-    size: c.CgR.LARGE,
-    className: m.modalRoot,
-    parentComponent: "PlaintextFilePreview",
+    size: "xl",
+    onClose: d,
     children: (0, r.jsxs)("div", {
       className: m.modalContent,
       children: [(0, r.jsx)(c.zJl, {
@@ -341,12 +344,12 @@ function P(e) {
         children: null == l ? (0, r.jsx)(c.$jN, {
           className: m.spinner
         }) : (0, r.jsx)(T, {
-          text: _,
-          language: d
+          text: g,
+          language: f
         })
       }), (0, r.jsxs)(c.Text, {
         color: "header-secondary",
-        className: m.footer,
+        className: m.modalFooter,
         variant: "text-sm/normal",
         children: [(0, r.jsx)("div", {
           className: m.footerGap
@@ -355,8 +358,9 @@ function P(e) {
           fileName: n,
           fileSize: a
         }), (0, r.jsx)(C, {
-          language: d,
-          setLanguage: f
+          language: f,
+          setLanguage: _,
+          align: "bottom"
         })]
       })]
     })

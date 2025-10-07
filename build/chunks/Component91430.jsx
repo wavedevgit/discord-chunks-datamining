@@ -276,7 +276,7 @@ function $(e) {
     [O] = (0, w.ED)(y);
   O = null != d ? d : O;
   let v = (0, b.Z)(),
-    I = (0, x.$)("subscription_details"),
+    I = (0, x.$)(),
     T = (0, D.lr)(),
     S = R.ZP.isBaseSubscriptionCanceled(t),
     A = (0, M.P)(t, i);
@@ -385,7 +385,7 @@ function en(e) {
   null != o && null != o[0] && (a = o[0]);
   let {
     analyticsLocations: E
-  } = (0, g.ZP)(m.Z.SUBSCRIPTION_DETAILS), b = (0, x.$)("subscription_details"), y = null != o ? o.slice(1) : [], [O, v] = i.useState(0);
+  } = (0, g.ZP)(m.Z.SUBSCRIPTION_DETAILS), b = (0, x.$)(), y = null != o ? o.slice(1) : [], [O, v] = i.useState(0);
   i.useEffect(() => {
     if (!_) return;
     let e = e => {

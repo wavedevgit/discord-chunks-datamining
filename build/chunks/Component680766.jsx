@@ -6,8 +6,8 @@ require.d(exports, {
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk793030 = require("./793030.js"),
-  Chunk35916 = require("./35916.jsx"),
+var Chunk448814 = require("./448814.jsx"),
+  Chunk793030 = require("./793030.js"),
   Chunk496600 = require("./496600.jsx"),
   Chunk333200 = require("./333200.jsx"),
   Chunk673221 = require("./673221.jsx"),
@@ -480,13 +480,13 @@ let g = [{
         let {
           selectionMode: t,
           required: n,
-          shouldFocusWrap: i,
+          shouldFocusWrap: a,
           withLeadingAndTrailing: o
         } = e;
-        return (0, r.jsx)(a.w, {
+        return (0, r.jsx)(i.w, {
           selectionMode: t,
           required: n,
-          shouldFocusWrap: i,
+          shouldFocusWrap: a,
           items: o ? E : g,
           onSelectionChange: c.dG
         })

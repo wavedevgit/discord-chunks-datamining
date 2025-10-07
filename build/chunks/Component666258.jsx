@@ -100,7 +100,7 @@ let w = e => {
       color: "header-muted",
       lineClamp: 1,
       children: [i, t.name].join("\xa0\xa0•\xa0\xa0")
-    }), r = (0, I.KS)(n, t), a = (0, l.jsx)(_.Ft, {
+    }), r = (0, I.KS)(n, t), a = (0, l.jsx)(S.Ft, {
       guildId: t.id,
       guildName: t.name,
       guildIcon: t.icon,
@@ -152,7 +152,7 @@ let w = e => {
         })]
       })]
     });
-    let a = (0, l.jsx)(_.Ft, {
+    let a = (0, l.jsx)(S.Ft, {
       guildId: n.id,
       guildName: n.name,
       guildIcon: n.icon,
@@ -248,7 +248,7 @@ function F(e) {
     sendInvite: I,
     canUseVanityURL: f,
     disabled: N,
-    hasSelection: _,
+    hasSelection: S,
     options: b,
     setOptions: w,
     isApplicationBypassAllowed: R,
@@ -256,7 +256,7 @@ function F(e) {
     isTemporaryInviteAllowed: k,
     setError: F,
     analyticsLocation: B
-  } = e, [z, G] = i.useState(false), [H, q] = i.useState(false), W = i.useRef(null), [Y] = (0, d.Wu)([j.Z], () => [j.Z.hideInstantInvites]), K = (0, x.Dt)(), X = (0, x.Dt)(), Q = (0, x.Dt)(), $ = i.useMemo(() => f && null != s.vanityURLCode ? (0, T.Z)(s.vanityURLCode, false) : null, [s, f]), J = i.useCallback(async () => {
+  } = e, [z, G] = i.useState(false), [H, q] = i.useState(false), W = i.useRef(null), [Y] = (0, d.Wu)([_.Z], () => [_.Z.hideInstantInvites]), K = (0, x.Dt)(), X = (0, x.Dt)(), Q = (0, x.Dt)(), $ = i.useMemo(() => f && null != s.vanityURLCode ? (0, T.Z)(s.vanityURLCode, false) : null, [s, f]), J = i.useCallback(async () => {
     var e, t;
     if (N) return;
     null !== W.current && clearTimeout(W.current);
@@ -269,7 +269,7 @@ function F(e) {
       }, 1e3)
     }, e => {
       F(e)
-    }), S.default.track(C.rMx.COPY_INSTANT_INVITE, {
+    }), j.default.track(C.rMx.COPY_INSTANT_INVITE, {
       server: s.id,
       channel: null != (e = null == a ? true : a.id) ? e : null,
       channel_type: null != (t = null == a ? true : a.type) ? t : null,
@@ -482,7 +482,7 @@ function F(e) {
         className: Z.button,
         innerClassName: Z.buttonInner,
         onClick: () => I(),
-        disabled: !_ || N,
+        disabled: !S || N,
         children: [(0, l.jsx)("span", {
           children: P.intl.string(P.t.BcAABg)
         }), (0, l.jsx)(h.Uuj, {

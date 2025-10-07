@@ -26,16 +26,16 @@ let h = () => {
     renewalInvoiceDetails: x,
     fullPrice: C,
     premiumSubscription: P
-  } = (0, Chunk594135.a)(), [v, y] = Chunk647438.useState(false), [S, E] = Chunk647438.useState(false);
+  } = (0, Chunk594135.a)(), [v, y] = Chunk647438.useState(false), [E, S] = Chunk647438.useState(false);
   if (null == require) return null;
   let _ = async () => {
-    y(true), E(false);
+    y(true), S(false);
     try {
       await h(), Chunk120356()
     } catch (t) {
-      E(true), y(false)
+      S(true), y(false)
     }
-  }, D = [{
+  }, N = [{
     text: Chunk388032.intl.string(Chunk388032.t.h9tkAA),
     onClick: () => Chunk120356(),
     variant: "secondary"
@@ -50,9 +50,9 @@ let h = () => {
   }];
   if (null == x) return null;
   let {
-    intervalType: N,
-    intervalCount: j
-  } = x, T = (0, Chunk937615.og)("".concat(C), N, j);
+    intervalType: j,
+    intervalCount: D
+  } = x, T = (0, Chunk937615.og)("".concat(C), j, D);
   return (0, Chunk951288.jsxs)(Chunk793030.Modal, {
     size: "md",
     transitionState: module,
@@ -61,16 +61,16 @@ let h = () => {
     })),
     subtitle: 0 !== require.total ? Chunk388032.intl.format(Chunk388032.t.ycyeBw, {
       renewalDate: require.subscriptionPeriodStart,
-      rate: (0, Chunk937615.og)((0, Chunk937615.T4)(require.total, require.currency), N, j)
+      rate: (0, Chunk937615.og)((0, Chunk937615.T4)(require.total, require.currency), j, D)
     }) : Chunk388032.intl.format(Chunk388032.t["+y0Tj4"], {
       renewalDate: require.subscriptionPeriodStart
     }),
-    actions: D,
+    actions: N,
     onClose: async () => Chunk120356(),
     children: [(0, Chunk951288.jsxs)(Chunk811334.aO, {
       isPremiumRebrand: true,
       className: l()({
-        [Chunk704442.hasError]: S
+        [Chunk704442.hasError]: E
       }),
       children: [(0, Chunk951288.jsx)(Chunk811334.Z9, {
         children: Chunk388032.intl.string(Chunk388032.t.iqhIp6)
@@ -85,7 +85,7 @@ let h = () => {
         renewalInvoice: require,
         isUpdate: true
       })]
-    }), S ? (0, Chunk951288.jsx)(Chunk434333.k, {
+    }), E ? (0, Chunk951288.jsx)(Chunk434333.k, {
       children: Chunk388032.intl.string(Chunk388032.t["5mlOCQ"])
     }) : null]
   })

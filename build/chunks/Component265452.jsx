@@ -152,7 +152,7 @@ function er(e) {
     onToggle: r,
     isSelected: a,
     disabled: o
-  } = e, u = i.useCallback(() => r(s.id), [r, s.id]), d = null != (t = (0, S.ZP)(s)) ? t : "", c = null != (n = (0, C._)(s)) ? n : "";
+  } = e, u = i.useCallback(() => r(s.id), [r, s.id]), d = null != (t = (0, j.ZP)(s)) ? t : "", c = null != (n = (0, C._)(s)) ? n : "";
   return (0, l.jsx)(ei, {
     icon: (0, l.jsx)(y.Z, {
       "aria-hidden": true,
@@ -175,7 +175,7 @@ function ea(e) {
     onToggle: r,
     isSelected: a,
     disabled: o
-  } = e, u = (0, c.e7)([w.Z], () => w.Z.getGuild(null == s ? true : s.guild_id)), d = i.useCallback(() => r(s.id), [r, s.id]), g = null != (t = (0, S.ZP)(s)) ? t : "", h = null != (n = null == u ? true : u.name) ? n : "";
+  } = e, u = (0, c.e7)([w.Z], () => w.Z.getGuild(null == s ? true : s.guild_id)), d = i.useCallback(() => r(s.id), [r, s.id]), g = null != (t = (0, j.ZP)(s)) ? t : "", h = null != (n = null == u ? true : u.name) ? n : "";
   return (0, l.jsx)(ei, {
     icon: (0, l.jsx)(O.Z, {
       size: O.E.SMALL_32,
@@ -299,7 +299,7 @@ function eu(e) {
     source: g,
     streamUserId: v,
     applicationId: f,
-    analyticsLocation: S
+    analyticsLocation: j
   } = e, y = null;
   null != f ? y = X.Iq.EMBEDDED_APPLICATION : null != v && (y = X.Iq.STREAM);
   let O = (0, z.xU)({
@@ -327,7 +327,7 @@ function eu(e) {
     eg = i.useRef(null),
     {
       analyticsLocations: eh
-    } = (0, _.ZP)(N.Z.INSTANT_INVITE_MODAL),
+    } = (0, S.ZP)(N.Z.INSTANT_INVITE_MODAL),
     em = i.useCallback(e => {
       var t;
       null == (t = eg.current) || t.scrollTo({
@@ -354,21 +354,21 @@ function eu(e) {
       return null != a ? a : null != (e = A.ZP.getDefaultChannel(s.id, true, Q.Plq.CREATE_INSTANT_INVITE)) ? e : null
     }, [s.id, a]),
     eN = !(0, c.e7)([k.Z], () => null != ef && k.Z.can(Q.Plq.CREATE_INSTANT_INVITE, ef), [ef]) && !(null == ef ? true : ef.isGuildVocal()),
-    e_ = (0, j.Z)(ef),
-    ej = (null == ef ? true : ef.type) === Q.d4z.GUILD_VOICE && !eN && !e_,
+    eS = (0, _.Z)(ef),
+    e_ = (null == ef ? true : ef.type) === Q.d4z.GUILD_VOICE && !eN && !eS,
     {
-      enabled: eS
+      enabled: ej
     } = T.o.useExperiment({
       guildId: s.id,
       location: "instant_invite_modal"
     }, {
-      autoTrackExposure: ej
+      autoTrackExposure: e_
     }),
     {
       canCreateApplicationBypassInvites: eb,
       isManualApprovalGuild: eE
     } = (0, q.R)(s),
-    ey = eS && ej,
+    ey = ej && e_,
     {
       rows: eT,
       showFriends: eO,
@@ -393,7 +393,7 @@ function eu(e) {
         U.default.track(Q.rMx.OPEN_MODAL, {
           type: "Instant Invite Modal",
           source: g,
-          location: S,
+          location: j,
           application_id: f
         });
         break;
@@ -404,7 +404,7 @@ function eu(e) {
         U.default.track(Q.rMx.OPEN_MODAL, {
           type: "Send Stream Invite",
           source: g,
-          location: S,
+          location: j,
           other_user_id: v,
           application_id: null != t ? t.id : null,
           application_name: null != t ? t.name : null,
@@ -415,7 +415,7 @@ function eu(e) {
         U.default.track(Q.rMx.OPEN_MODAL, {
           type: "Instant Invite Modal",
           source: g,
-          location: S
+          location: j
         })
     }
   });
@@ -513,7 +513,7 @@ function eu(e) {
       e && eP()
     }, [er, ei, ea, C, eT, eZ, eh, g, eP]),
     eM = er || ei;
-  return (0, l.jsx)(_.Gt, {
+  return (0, l.jsx)(S.Gt, {
     value: eh,
     children: (0, l.jsxs)(h.Y0X, {
       className: r()(J.modal, {

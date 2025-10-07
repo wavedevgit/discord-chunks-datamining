@@ -48,7 +48,7 @@ function D(e, t, n, r) {
       return null != n && null != n.name ? n.name : x.intl.string(x.t.dRcLAw)
     }).replace(/<#(\d+)>/g, (e, t) => {
       let n = g.Z.getChannel(t);
-      return null == n ? e : (0, s.F6)(n, S.default, v.Z)
+      return null == n ? e : (0, s.F6)(n, S.default, y.Z)
     }).replace(/<a?:(\w+):(\d+)>/g, (e, t) => "".concat(x.intl.string(x.t.sMOuub), " ").concat(t)).replace(/<\/([^\s]+?):(\d+)>/g, (e, t) => "/".concat(t)).replace(/<t:(\d+):([A-Z]|[a-z])>/g, (e, t, n) => {
       let r = c.Qh[n],
         l = 1e3 * parseInt(t, 10),
@@ -120,13 +120,13 @@ function V(e) {
   if (c || O.Z.isSelfDeaf()) returnfalse;
   let u = g.Z.getChannel(o);
   if (null == u) returnfalse;
-  let d = y.Z.getChannelId(),
+  let d = v.Z.getChannelId(),
     b = h.ZP.getCurrentSidebarChannelId(d),
     _ = o === d || o === b,
     S = p.OW.getSetting() && s.tts && _,
     T = E.Z.getTTSType(),
     N = (null == (t = s.author) ? true : t.id) !== f.default.getId() && (T === P.PrB.ALL_CHANNELS || T === P.PrB.SELECTED_CHANNEL && _);
-  if ((S || N) && !v.Z.isBlockedOrIgnoredForMessage(s)) {
+  if ((S || N) && !y.Z.isBlockedOrIgnoredForMessage(s)) {
     if (A.indexOf(s.id) >= 0) returnfalse;
     A.unshift(s.id) > 10 && A.pop();
     let e = u.getGuildId();

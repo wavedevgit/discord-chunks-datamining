@@ -83,10 +83,10 @@ function N(e) {
         giftMessage: D()
       })
     },
-    D = () => n === y.hX.FRIEND_ANNIVERSARY ? S.intl.formatToPlainString(S.t["L2s/Nz"], {
+    D = () => n === v.hX.FRIEND_ANNIVERSARY ? S.intl.formatToPlainString(S.t["L2s/Nz"], {
       numberOfYears: O.Z.getFriendAnniversaryYears(t.id)
     }) : (0, b.Ou)(n),
-    k = () => n === y.hX.FRIEND_ANNIVERSARY ? S.intl.string(S.t["4LohBA"]) : (0, b.Ou)(n),
+    k = () => n === v.hX.FRIEND_ANNIVERSARY ? S.intl.string(S.t["4LohBA"]) : (0, b.Ou)(n),
     M = i.useRef(null);
   return (0, r.jsx)(u.yRy, {
     targetElementRef: M,
@@ -100,16 +100,16 @@ function N(e) {
     onRequestClose: () => {
       x(false)
     },
-    renderPopout: e => (0, r.jsx)(v.Z, {
+    renderPopout: e => (0, r.jsx)(y.Z, {
       giftIntentType: n,
-      premiumGiftIntentCardType: v.U.COACHMARK,
+      premiumGiftIntentCardType: y.U.COACHMARK,
       recipientUser: t,
       onMouseEnter: A,
       onMouseLeave: Z,
       popoutPosition: e.position,
       analyticsPage: l,
       analyticsSection: I.jXE.FRIENDS_LIST_FRIEND_ROW_GIFT_POPOUT,
-      giftIntentSecondaryAction: y.X2.SEND_MESSAGE,
+      giftIntentSecondaryAction: v.X2.SEND_MESSAGE,
       glow: true
     }),
     children: () => w ? (0, r.jsx)(u.P3F, {

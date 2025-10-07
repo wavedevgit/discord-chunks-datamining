@@ -2,7 +2,7 @@
 /** chunk id: 661462, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   F: () => y,
-  Z: () => b
+  Z: () => j
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk228168 = require("./228168.js"),
   Chunk883101 = require("./883101.js");
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -70,16 +70,16 @@ function y(e) {
     }
     return i
   }(e, ["children", "className", "scrollerRef"]);
-  return (0, r.jsx)(s.Ttm, v(m({
+  return (0, r.jsx)(s.Ttm, v(h({
     ref: i,
-    className: a()(h.tabPanelScroller, n),
+    className: a()(m.tabPanelScroller, n),
     fade: true
   }, l), {
     children: t
   }))
 }
 
-function j(e) {
+function b(e) {
   let {
     user: t,
     currentUser: n,
@@ -88,7 +88,7 @@ function j(e) {
     displayProfile: a,
     guildId: s,
     channelId: o,
-    onClose: h
+    onClose: m
   } = e;
   return i === p.oh.ACTIVITY ? (0, r.jsx)(c.Z, {
     user: t,
@@ -97,15 +97,15 @@ function j(e) {
     guildId: s,
     channelId: o,
     subsection: l,
-    onClose: h
+    onClose: m
   }) : i === p.oh.MUTUAL_FRIENDS ? (0, r.jsx)(u.Z, {
     user: t,
     guildId: s,
     channelId: o,
-    onClose: h
+    onClose: m
   }) : i === p.oh.MUTUAL_GUILDS ? (0, r.jsx)(d.Z, {
     user: t,
-    onClose: h
+    onClose: m
   }) : i === p.oh.WIDGETS ? (0, r.jsx)(f.C, {
     user: t,
     guildId: s,
@@ -115,7 +115,7 @@ function j(e) {
   }) : null
 }
 
-function b(e) {
+function j(e) {
   var t;
   let {
     user: n,
@@ -130,10 +130,10 @@ function b(e) {
   } = e, {
     trackUserProfileAction: y
   } = (0, o.KZ)(), [{
-    section: b,
+    section: j,
     subsection: O,
     text: x
-  }, P] = i.useState(v(m({}, null != (t = d.find(e => {
+  }, P] = i.useState(v(h({}, null != (t = d.find(e => {
     let {
       section: t
     } = e;
@@ -142,16 +142,16 @@ function b(e) {
     subsection: g
   }));
   return (0, r.jsxs)("div", {
-    className: h.container,
+    className: m.container,
     children: [(0, r.jsx)(s.Ttm, {
       orientation: "horizontal",
-      className: h.tabListScroller,
+      className: m.tabListScroller,
       fade: true,
       paddingFix: false,
       children: (0, r.jsx)(s.njP, {
         type: "top",
         look: "custom",
-        selectedItem: b,
+        selectedItem: j,
         onItemSelect: e => {
           y({
             action: "PRESS_SECTION",
@@ -162,29 +162,29 @@ function b(e) {
           })
         },
         children: d.map(e => (0, r.jsx)(s.njP.Item, {
-          className: h.tabBarItem,
+          className: m.tabBarItem,
           id: e.section,
           "aria-label": e.text,
           children: e.text
         }, e.section))
       })
     }), (0, r.jsx)(s.njP.Panel, {
-      id: b,
+      id: j,
       "aria-label": x,
-      className: h.tabBarPanel,
+      className: m.tabBarPanel,
       children: (0, r.jsx)(s.y5t, {
         component: (0, r.jsx)(s.nn4, {
           children: (0, r.jsx)(s.H, {
             children: x
           })
         }),
-        children: (0, r.jsx)(j, {
+        children: (0, r.jsx)(b, {
           user: n,
           currentUser: l,
           displayProfile: a,
           guildId: c,
           channelId: u,
-          section: b,
+          section: j,
           subsection: O,
           onClose: p
         })

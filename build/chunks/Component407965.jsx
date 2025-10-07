@@ -46,7 +46,7 @@ let P = t => {
       (0, Chunk484459.Z)(v.id, v.getAvatarURL(null, 80))
     }, [v]);
     let y = (0, Chunk847903.Z)(),
-      S = "US" === y.ipCountryCode && "CA" === y.ipSubdivisionCode;
+      E = "US" === y.ipCountryCode && "CA" === y.ipSubdivisionCode;
     if (Chunk181679) return (0, Chunk951288.jsx)(Chunk793030.Modal, {
       transitionState: module,
       title: "",
@@ -55,25 +55,25 @@ let P = t => {
         exports()
       }
     });
-    let E = [];
-    return null != Chunk10508 ? E.push({
+    let S = [];
+    return null != Chunk10508 ? S.push({
       text: Chunk388032.intl.string(Chunk388032.t.zrCzVF),
       onClick: () => Chunk512722(Chunk45474.R.CONFIRM_DISCOUNT),
       variant: "secondary",
       icon: Chunk481060.SrA
-    }) : E.push({
+    }) : S.push({
       text: Chunk388032.intl.string(Chunk388032.t.h9tkAA),
       onClick: () => exports(),
       variant: "secondary"
-    }), E.push({
-      text: S ? Chunk388032.intl.string(Chunk388032.t.PfnxqK) : Chunk388032.intl.string(Chunk388032.t["3PatS0"]),
+    }), S.push({
+      text: E ? Chunk388032.intl.string(Chunk388032.t.PfnxqK) : Chunk388032.intl.string(Chunk388032.t["3PatS0"]),
       onClick: () => Chunk512722(Chunk45474.R.CONFIRM),
       variant: "primary"
     }), (0, Chunk951288.jsx)(Chunk793030.Modal, {
       transitionState: module,
       title: Chunk388032.intl.string(Chunk388032.t.PWq8TE),
       subtitle: Chunk388032.intl.formatToPlainString(Chunk388032.t.nsGVzs, {}),
-      actions: E,
+      actions: S,
       preview: null !== Chunk10508 && (0, Chunk951288.jsx)(P, {
         churnUserDiscountOffer: Chunk10508
       }),

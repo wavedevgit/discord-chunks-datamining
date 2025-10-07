@@ -42,7 +42,7 @@ var Chunk243814 = require("./243814.js"),
   Chunk701488 = require("./701488.js");
 async function U(e, t, n, r) {
   let i = arguments.length > 4 && true !== arguments[4] ? arguments[4] : "",
-    l = y.Z.getApplicationActivity(t);
+    l = v.Z.getApplicationActivity(t);
   if (null == l || null == l.secrets || !(0, A.t9)(r, l.party, l.secrets)) throw new x.Z({
     errorCode: k.lTL.NO_ELIGIBLE_ACTIVITY
   }, "No eligible activity for application. Ensure an activity includes a party and appropriate secret.");
@@ -93,7 +93,7 @@ let G = {
         args: {
           user_id: t
         }
-      } = e, n = v.Z.getDMFromUserId(t);
+      } = e, n = y.Z.getDMFromUserId(t);
       null != n && (0, u.In)(n, {
         section: k.jXE.CLOSE_ACTIVITY_JOIN_REQUEST_RPC_COMMAND,
         object: k.qAy.ACK_DECLINE_REQUEST_TO_JOIN,
@@ -193,7 +193,7 @@ let G = {
         if (c.applicationId !== i.id) throw new x.Z({
           errorCode: k.lTL.INVALID_COMMAND
         }, "Application is not currently mounted.");
-        let e = y.Z.getApplicationActivity(i.id);
+        let e = v.Z.getApplicationActivity(i.id);
         if (null != e)(0, s.h7)(e, false, p);
         else throw new x.Z({
           errorCode: k.lTL.NO_ELIGIBLE_ACTIVITY

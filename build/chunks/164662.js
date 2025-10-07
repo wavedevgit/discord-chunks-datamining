@@ -5,7 +5,7 @@ require.d(exports, {
   E: () => o
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
-  Chunk434650 = require("./434650.js");
+  Chunk907331 = require("./907331.js");
 let a = 100,
   o = function() {
     let e = !(arguments.length > 0) || true === arguments[0] || arguments[0],
@@ -16,7 +16,7 @@ let a = 100,
         }, (e, t) => t / a)
       }), []);
     return {
-      visibilityPercentageRef: (0, Chunk434650.S)(e => {
+      visibilityPercentageRef: (0, Chunk907331.S)(e => {
         n(e.intersectionRatio)
       }, o, module),
       visibilityPercentage: exports

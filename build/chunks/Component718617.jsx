@@ -6,11 +6,11 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk137317 = require("./137317.js"),
+  Chunk872175 = require("./872175.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk110924 = require("./110924.js"),
   Chunk714338 = require("./714338.js"),
-  Chunk237617 = require("./237617.js"),
   Chunk433355 = require("./433355.js"),
   Chunk189432 = require("./189432.js"),
   Chunk727381 = require("./727381.jsx"),
@@ -37,9 +37,9 @@ function N(e) {
     onClose: h,
     analyticsLocation: O,
     className: f
-  } = e, R = (0, s.e7)([E.ZP], () => E.ZP.getGuildSidebarState(N), [N]), S = null != (t = null == R ? true : R.details.modViewPanel) ? t : I.k.INFO, C = (0, o.Z)(n), p = null == S ? null : S === I.k.INFO ? "backwards" : "forwards", D = (0, c.Z)(p), {
+  } = e, R = (0, a.e7)([E.ZP], () => E.ZP.getGuildSidebarState(N), [N]), S = null != (t = null == R ? true : R.details.modViewPanel) ? t : I.k.INFO, C = (0, u.Z)(n), p = null == S ? null : S === I.k.INFO ? "backwards" : "forwards", D = (0, s.Z)(p), {
     reducedMotion: L
-  } = l.useContext(a.Sfi), U = l.useCallback(e => {
+  } = l.useContext(o.Sfi), U = l.useCallback(e => {
     null != R && (0, d.r)(N, n, R.baseChannelId, {
       modViewPanel: e
     })
@@ -50,8 +50,8 @@ function N(e) {
       action: () => S === I.k.INFO ? h() : U(I.k.INFO)
     }
   }), [h, S, U]);
-  l.useEffect(() => (u.Z.enable(), u.Z.enableTemp(M), () => u.Z.disableTemp()), [M]);
-  let x = (0, a.Yzy)(S, {
+  l.useEffect(() => (c.Z.enable(), c.Z.enableTemp(M), () => c.Z.disableTemp()), [M]);
+  let x = (0, o.Yzy)(S, {
     value: 0,
     from: {
       value: 1

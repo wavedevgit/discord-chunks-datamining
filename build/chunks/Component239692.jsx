@@ -114,8 +114,8 @@ function y(e) {
   if (true === s && null != o && f.push((0, r.jsx)(i.Fragment, {
       children: o()
     }, "---sticky-header")), u.forEach(e => {
-      var r;
-      switch (e.section !== p && _.length > 0 && (f.push(null != c ? c(p, _) : _), _ = []), p = null != (r = e.section) ? r : 0, e.type) {
+      var r, i;
+      switch (e.section !== p && _.length > 0 && (f.push(null != (r = null == c ? true : c(p, _)) ? r : _), _ = []), p = null != (i = e.section) ? i : 0, e.type) {
         case "section":
           null != t && _.push(t(e));
           break;

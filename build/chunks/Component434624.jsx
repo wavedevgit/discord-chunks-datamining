@@ -8,9 +8,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
+  Chunk907331 = require("./907331.js"),
   Chunk866442 = require("./866442.js"),
   Chunk596454 = require("./596454.jsx"),
-  Chunk434650 = require("./434650.js"),
   Chunk446489 = require("./446489.jsx"),
   Chunk56314 = require("./56314.js"),
   Chunk566006 = require("./566006.js"),
@@ -78,7 +78,7 @@ let v = Chunk647438.memo(function(e) {
   let t, n, {
       useChatFontScaling: i,
       hideEmoji: a,
-      emoji: c,
+      emoji: s,
       className: m,
       count: g,
       me: E,
@@ -105,7 +105,7 @@ let v = Chunk647438.memo(function(e) {
       accentColor: e,
       backgroundColor: r,
       opacity: i
-    } = P, a = null != (M = (0, s.wK)(null != r ? r : "", i)) ? M : "";
+    } = P, a = null != (M = (0, l.wK)(null != r ? r : "", i)) ? M : "";
     R && (x.borderColor = r), x.background = a, t = e, n = e
   }
   let j = {
@@ -119,14 +119,14 @@ let v = Chunk647438.memo(function(e) {
       [w.reactionReadOnly]: v && !I && !S && !T
     }),
     style: x,
-    children: [(0, r.jsx)(l.Z, {
+    children: [(0, r.jsx)(c.Z, {
       className: o()({
         [w.hideEmoji]: a
       }),
-      emojiId: c.id,
-      emojiName: c.name,
+      emojiId: s.id,
+      emojiName: s.name,
       size: C,
-      animated: N && c.animated
+      animated: N && s.animated
     }), (0, r.jsx)("div", {
       className: w.reactionCount,
       style: j,
@@ -144,11 +144,11 @@ let T = Chunk647438.memo(function(e) {
     showImmediate: t,
     reactions: n
   } = e, a = y(e, ["showImmediate", "reactions"]);
-  let [o, s] = i.useState(false), [l, u] = i.useTransition(), d = i.useCallback(e => {
-    !e || o || l || u(() => {
-      s(true)
+  let [o, l] = i.useState(false), [c, u] = i.useTransition(), d = i.useCallback(e => {
+    !e || o || c || u(() => {
+      l(true)
     })
-  }, [o, l]), f = (0, c.O)(d), p = o && !l || t ? _.le : v;
+  }, [o, c]), f = (0, s.O)(d), p = o && !c || t ? _.le : v;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       ref: f

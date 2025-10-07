@@ -109,7 +109,7 @@ let L = Chunk647438.memo(function() {
           leading: (0, r.jsxs)(r.Fragment, {
             children: [o && (0, r.jsx)(h.Z, {
               firstElementFocusJumpSectionProps: "BACK_FORWARD_NAVIGATION" === k ? e : true
-            }), Z && (0, r.jsx)(v.Z, {
+            }), Z && (0, r.jsx)(y.Z, {
               focusSectionProps: "NOTIFICATIONS_INBOX" === k ? e : true
             })]
           }),

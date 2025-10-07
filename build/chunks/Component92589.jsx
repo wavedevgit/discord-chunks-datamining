@@ -6,8 +6,8 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk481060 = require("./481060.js"),
-  Chunk434650 = require("./434650.js"),
+var Chunk907331 = require("./907331.js"),
+  Chunk481060 = require("./481060.js"),
   Chunk168020 = require("./168020.jsx"),
   Chunk794324 = require("./794324.js"),
   Chunk859788 = require("./859788.jsx"),
@@ -36,7 +36,7 @@ let g = e => {
   let {
     immersiveBannerBlock: t,
     onVisibilityChange: n
-  } = e, g = (0, s.O)(e => {
+  } = e, g = (0, l.O)(e => {
     null == n || n(e)
   }, .33, null != n), {
     bannerUrl: p,
@@ -60,16 +60,16 @@ let g = e => {
         children: [null != t.endTime ? (0, r.jsx)(a.R, {
           endDate: t.endTime,
           size: "lg"
-        }) : null, (0, r.jsx)(l.X6q, {
+        }) : null, (0, r.jsx)(s.X6q, {
           variant: "heading-xxl/bold",
           className: u.title,
           color: "header-primary",
           style: d({}, C),
           children: t.title
-        }), h || _ ? (0, r.jsxs)(l.Text, {
+        }), h || _ ? (0, r.jsxs)(s.Text, {
           variant: "text-md/medium",
           style: d({}, C),
-          children: [h && t.body, h && _ && " ", _ && (0, r.jsx)(l.eee, {
+          children: [h && t.body, h && _ && " ", _ && (0, r.jsx)(s.eee, {
             href: t.helpCenterUrl,
             className: u.learnMoreLink,
             style: d({}, C),

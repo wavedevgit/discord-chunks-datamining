@@ -25,12 +25,12 @@ let p = () => {
       paymentsBlocked: h,
       planId: x,
       handleCancellation: C
-    } = (0, Chunk594135.a)(), [P, v] = (0, Chunk647438.useState)(false), [y, S] = (0, Chunk647438.useState)(false), E = async () => {
-      v(true), S(false);
+    } = (0, Chunk594135.a)(), [P, v] = (0, Chunk647438.useState)(false), [y, E] = (0, Chunk647438.useState)(false), S = async () => {
+      v(true), E(false);
       try {
         await C(), require()
       } catch (t) {
-        S(true), v(false)
+        E(true), v(false)
       }
     }, _ = p.items.some(t => {
       let {
@@ -42,20 +42,20 @@ let p = () => {
         planId: e
       } = t;
       return !d.dJ.has(e)
-    })) != null, D = [];
-    return D.push({
+    })) != null, N = [];
+    return N.push({
       text: Chunk388032.intl.string(Chunk388032.t.h9tkAA),
       onClick: () => require(),
       variant: "secondary"
-    }), _ ? D.push({
+    }), _ ? N.push({
       text: Chunk388032.intl.string(Chunk388032.t.PDTjLC),
       onClick: () => Chunk981631(Chunk45474.R.PREVIEW),
       disabled: P,
       variant: "critical-primary",
       loading: P
-    }) : D.push({
+    }) : N.push({
       text: Chunk388032.intl.string(Chunk388032.t["cY+Ooa"]),
-      onClick: () => E(),
+      onClick: () => S(),
       disabled: P,
       variant: "critical-primary",
       loading: P
@@ -66,7 +66,7 @@ let p = () => {
         planPremiumType: Chunk74538.ZP.getDisplayPremiumType("".concat(x))
       })),
       subtitle: g(h, Chunk63063, p),
-      actions: D,
+      actions: N,
       onClose: async () => require(),
       children: y ? (0, Chunk951288.jsx)(Chunk434333.k, {
         children: Chunk388032.intl.string(Chunk388032.t["5mlOCQ"])

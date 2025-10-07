@@ -26,8 +26,8 @@ function _() {
     location: Chunk46140.dr.QUEST_HOME_DESKTOP
   }), [t, n] = Chunk647438.useState(Chunk46140.yq.SUGGESTED), [_, O] = Chunk647438.useState(b), {
     quests: E,
-    isFetchingCurrentQuests: v,
-    hasFetched: y
+    isFetchingCurrentQuests: y,
+    hasFetched: v
   } = (0, Chunk113434.bA)(Chunk113434.e5.ALL, Chunk647438.useMemo(() => ({
     sortMethod: exports,
     filters: _
@@ -99,8 +99,8 @@ function _() {
       })]
     }), (0, Chunk951288.jsx)(Chunk710914.Z, {
       quests: E,
-      isFetching: v,
-      hasFetched: y,
+      isFetching: y,
+      hasFetched: v,
       hasFiltersApplied: _.length > 0,
       onClearFilters: I
     })]

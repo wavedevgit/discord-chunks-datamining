@@ -30,7 +30,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -43,7 +43,7 @@ function v(e) {
   return e
 }
 
-function y(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -128,7 +128,7 @@ class I extends Chunk647438.PureComponent {
         clickTrap: true,
         children: l => (0, r.jsx)(o.u, {
           text: n,
-          children: (0, i.createElement)(s.qEK, y(v({}, l), {
+          children: (0, i.createElement)(s.qEK, v(y({}, l), {
             key: e.id,
             src: e.getAvatarURL(true, 24),
             size: s.EFr.SIZE_24,
@@ -148,7 +148,7 @@ class I extends Chunk647438.PureComponent {
         targetElementRef: this.partyMemberOverflowRef,
         children: n => (0, r.jsx)(o.u, {
           text: _.intl.string(_.t.Zf4NPT),
-          children: (0, r.jsx)("div", y(v({}, n), {
+          children: (0, r.jsx)("div", v(y({}, n), {
             ref: this.partyMemberOverflowRef,
             className: a()(O.overflow, t),
             children: e

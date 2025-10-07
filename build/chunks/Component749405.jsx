@@ -29,8 +29,8 @@ function h(e) {
   }, [h.id, g]), {
     acceptMessageRequest: O,
     rejectMessageRequest: E,
-    isAcceptLoading: v,
-    isRejectLoading: y,
+    isAcceptLoading: y,
+    isRejectLoading: v,
     isUserProfileLoading: I,
     isOptimisticAccepted: S,
     isOptimisticRejected: C
@@ -39,7 +39,7 @@ function h(e) {
     onAcceptSuccess: _,
     onRejectSuccess: b,
     onError: m
-  }), T = v || y || I || S || C;
+  }), T = y || v || I || S || C;
   return (0, r.jsxs)("div", {
     className: f.container,
     children: [(0, r.jsx)(d.Z, {
@@ -59,7 +59,7 @@ function h(e) {
             e.stopPropagation(), E(h.id)
           },
           disabled: T,
-          loading: y || C
+          loading: v || C
         })
       }), (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
@@ -72,7 +72,7 @@ function h(e) {
             e.stopPropagation(), O(h.id)
           },
           disabled: T,
-          loading: v || I || S
+          loading: y || I || S
         })
       })]
     })]
