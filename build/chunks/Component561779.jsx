@@ -197,7 +197,7 @@ class I extends(r = Chunk647438.PureComponent) {
       }) : null,
       X = null != P ? P(exports) : "".concat(K.toFixed(0), "%"),
       Q = null != (e = null == D ? true : D(exports)) ? module : true;
-    return (0, Chunk951288.jsx)(Chunk793030.NIc, {
+    return (0, Chunk951288.jsx)(Chunk793030.gNt, {
       label: Z,
       hideLabel: F,
       description: V,

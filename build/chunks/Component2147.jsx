@@ -289,7 +289,7 @@ class eO extends Chunk647438.PureComponent {
       R = e.isForumLikeChannel(),
       I = R && (null == (n = e.availableTags) ? true : n.every(e => e.moderated)),
       D = (null == (l = X.default.getCurrentUser()) ? true : l.isStaff()) === true,
-      k = V.TK.has(e.type) ? (0, i.jsx)(p.NIc, {
+      k = V.TK.has(e.type) ? (0, i.jsx)(p.gNt, {
         label: R ? ec.intl.string(ec.t.yR6Hwc) : ec.intl.string(ec.t.X8jMDg),
         children: (0, i.jsx)(O.ZP, {
           className: s()(ed.topicContainer, {
@@ -336,7 +336,7 @@ class eO extends Chunk647438.PureComponent {
         showCharacterCount: true
       }) : null,
       G = e.isForumLikeChannel() ? (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(p.izJ, {}), (0, i.jsx)(p.NIc, {
+        children: [(0, i.jsx)(p.izJ, {}), (0, i.jsx)(p.gNt, {
           label: ec.intl.string(ec.t["P/y+sr"]),
           description: ec.intl.string(ec.t["/oQQ39"]),
           errorMessage: this.getError("available_tags"),
@@ -352,7 +352,7 @@ class eO extends Chunk647438.PureComponent {
         })]
       }) : null,
       W = e.isForumLikeChannel() ? (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(p.izJ, {}), (0, i.jsx)(p.NIc, {
+        children: [(0, i.jsx)(p.izJ, {}), (0, i.jsx)(p.gNt, {
           label: ec.intl.string(ec.t["8ao1+P"]),
           description: ec.intl.string(ec.t.SdbF0t),
           children: (0, i.jsxs)("div", {

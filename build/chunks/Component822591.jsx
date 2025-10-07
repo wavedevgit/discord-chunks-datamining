@@ -317,7 +317,7 @@ let R = "dismissedCommunityFeaturesUpsell",
         })
       })(), (0, Chunk951288.jsx)(Chunk481060.izJ, {
         className: Chunk560818.divider
-      }), (0, Chunk951288.jsx)(Chunk481060.NIc, {
+      }), (0, Chunk951288.jsx)(Chunk481060.gNt, {
         label: Chunk388032.intl.string(Chunk388032.t.c1BmbG),
         description: Chunk388032.intl.string(Chunk388032.t.aQzVFx),
         layout: "horizontal",

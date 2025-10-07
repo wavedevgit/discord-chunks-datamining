@@ -77,7 +77,7 @@ function v(e) {
         className: _.twoColumns,
         children: [(0, r.jsx)("div", {
           className: _.column,
-          children: (0, r.jsx)(s.NIc, {
+          children: (0, r.jsx)(s.gNt, {
             label: j.intl.string(j.t.TRyLUl),
             children: (0, r.jsx)(d.Z, {
               value: t
@@ -85,7 +85,7 @@ function v(e) {
           })
         }), (0, r.jsx)("div", {
           className: _.column,
-          children: (0, r.jsx)(s.NIc, {
+          children: (0, r.jsx)(s.gNt, {
             label: j.intl.string(j.t.VECJcH),
             children: (0, r.jsx)(d.Z, {
               value: E
@@ -98,7 +98,7 @@ function v(e) {
         className: _.twoColumns,
         children: [(0, r.jsx)("div", {
           className: _.column,
-          children: (0, r.jsx)(s.NIc, {
+          children: (0, r.jsx)(s.gNt, {
             label: j.intl.string(j.t.XVGbn5),
             description: j.intl.string(j.t["+baN19"]),
             children: (0, r.jsx)(d.Z, {

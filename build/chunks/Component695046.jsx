@@ -331,7 +331,7 @@ function C(e) {
     "aria-labelledby": I,
     orientation: A,
     withTransparentBackground: C
-  } = e, N = (0, u.Gc)(), R = i.useContext(l.UgQ), P = S({
+  } = e, N = (0, u.Gc)(), R = i.useContext(l.zbb), P = S({
     labelledBy: null != I ? I : N.titleId,
     orientation: A,
     isDisabled: y
@@ -370,7 +370,7 @@ function N(e) {
     description: n,
     required: i
   } = e, a = b(e, ["label", "description", "required"]);
-  return (0, r.jsx)(l.NIc, {
+  return (0, r.jsx)(l.gNt, {
     label: t,
     description: n,
     required: i,

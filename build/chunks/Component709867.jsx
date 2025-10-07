@@ -58,7 +58,7 @@ function f(e) {
     let n = e.filter(e => p.has(e));
     null == t || t(n)
   }, [p, t]);
-  return (0, r.jsx)(o.NIc, {
+  return (0, r.jsx)(o.gNt, {
     label: l,
     role: "group",
     children: (0, r.jsx)(a.cO, {

@@ -109,7 +109,7 @@ function b(e) {
       var {
         onClick: n
       } = e, i = m(e, ["onClick"]);
-      return (0, r.jsx)(a.NIc, h(_({}, y), {
+      return (0, r.jsx)(a.gNt, h(_({}, y), {
         children: e => (0, r.jsxs)(c.U, h(_({
           as: u.P3F,
           tag: "div",

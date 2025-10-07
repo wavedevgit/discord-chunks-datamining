@@ -274,7 +274,7 @@ function N() {
   }, []);
   return Chunk647438.useEffect(() => {
     require && !Chunk849055 && (Chunk365007.vg(), Chunk202858())
-  }, [require, Chunk849055, Chunk202858]), (0, Chunk951288.jsxs)(Chunk481060.NIc, {
+  }, [require, Chunk849055, Chunk202858]), (0, Chunk951288.jsxs)(Chunk481060.gNt, {
     label: Chunk388032.intl.string(Chunk388032.t.y7SXYW),
     description: Chunk388032.intl.string(Chunk388032.t.TMukAA),
     children: [module.length > 0 && (0, Chunk951288.jsx)("div", {

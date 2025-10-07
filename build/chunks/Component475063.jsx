@@ -124,7 +124,7 @@ function T(e) {
       value: n,
       maxLength: R && null != E ? E : true
     }) : null;
-  return (0, r.jsx)(s.NIc, {
+  return (0, r.jsx)(s.gNt, {
     label: D,
     hideLabel: L,
     description: x,
@@ -174,7 +174,7 @@ function S(e) {
     autosize: n
   } = e, a = y(e, ["aria-labelledby", "autosize"]);
   let o = (0, l.Gc)(),
-    c = i.useContext(s.UgQ),
+    c = i.useContext(s.zbb),
     u = n ? _.l : "textarea";
   return (0, r.jsx)(u, b(g({}, a), {
     id: null == c ? true : c.controlId,

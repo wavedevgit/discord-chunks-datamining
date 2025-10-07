@@ -240,7 +240,7 @@ function x(e) {
         inputRef: E
       }), (0, r.jsx)(s.LZC, {
         size: 26
-      }), (0, r.jsxs)(s.NIc, {
+      }), (0, r.jsxs)(s.gNt, {
         role: "group",
         label: h.intl.string(h.t.oMBfeX),
         children: [A.map((e, n) => (0, r.jsx)(j.Z, {

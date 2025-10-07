@@ -93,35 +93,37 @@ function O(e) {
   } = e, P = b(e, ["children", "title", "body", "asset", "asContainer", "element", "position", "align", "spacing", "caretConfig", "layerContext", "targetElementRef", "positionKey"]);
   let w = (0, _.c)(N),
     D = i.useId(),
-    L = i.useMemo(() => (0, r.jsxs)("div", {
+    L = null != h && ("string" != typeof h || "" !== h),
+    x = i.useMemo(() => (0, r.jsxs)("div", {
       className: p.richTooltipContent,
       children: [null != y && (0, r.jsx)("div", {
         className: p.assetContainer,
         children: y
       }), (0, r.jsxs)("div", {
         className: p.textContent,
-        children: [(0, r.jsx)(o.Text, {
+        children: [L && (0, r.jsx)(o.Text, {
           variant: "text-sm/bold",
           children: h
         }), (0, r.jsx)(o.Text, {
           variant: "text-sm/medium",
+          color: L ? "text-secondary" : "text-primary",
           children: g
         })]
       })]
-    }), [y, h, g]),
+    }), [y, h, g, L]),
     {
-      isVisible: x,
-      triggerProps: M
+      isVisible: M,
+      triggerProps: j
     } = (0, d.l)(m({
       targetElementRef: w.targetElementRef
     }, P)),
-    j = null != R ? R : "".concat((0, u.Sw)(h), "|").concat((0, u.Sw)(g)),
-    k = (0, f.Q)({
-      shouldShow: x
+    k = null != R ? R : "".concat((0, u.Sw)(null != h ? h : ""), "|").concat((0, u.Sw)(g)),
+    U = (0, f.Q)({
+      shouldShow: M
     });
   if (O) {
-    let e = E(m({}, M), {
-      onFocus: (0, u.tS)(M.onFocus, e => {
+    let e = E(m({}, j), {
+      onFocus: (0, u.tS)(j.onFocus, e => {
         let t = e.target;
         if (null != t) {
           var n;
@@ -129,7 +131,7 @@ function O(e) {
           t.setAttribute("aria-describedby", e)
         }
       }),
-      onBlur: (0, u.tS)(M.onBlur, e => {
+      onBlur: (0, u.tS)(j.onBlur, e => {
         let t = e.target;
         if (null != t) {
           let e = t.getAttribute("aria-describedby");
@@ -148,30 +150,30 @@ function O(e) {
     })
   } else {
     if (!i.isValidElement(n)) return null;
-    t = (0, u.C9)(n, M, D, w.triggerRef)
+    t = (0, u.C9)(n, j, D, w.triggerRef)
   }
-  let U = k((e, t) => t ? (0, r.jsx)(c.pn, {
+  let G = U((e, t) => t ? (0, r.jsx)(c.pn, {
     isRichTooltip: true,
     children: (0, r.jsx)(l.N, {
-      isVisible: x,
+      isVisible: M,
       isRendered: true,
       targetElementRef: w.targetElementRef,
       id: D,
-      content: L,
+      content: x,
       position: I,
       align: T,
       spacing: S,
       caretConfig: A,
       layerContext: null != C ? C : s.nz,
       animationStyle: e,
-      positionKey: j,
+      positionKey: k,
       "data-mana-component": "rich-tooltip"
     })
   }) : null);
   return (0, r.jsxs)(r.Fragment, {
-    children: [t, null != L ? (0, r.jsx)(a.n, {
+    children: [t, null != x ? (0, r.jsx)(a.n, {
       id: D,
-      children: L
-    }) : null, U]
+      children: x
+    }) : null, G]
   })
 }

@@ -62,7 +62,7 @@ class Z extends Chunk647438.PureComponent {
   render() {
     return (0, Chunk951288.jsx)("div", {
       className: Chunk197571.marginBottom20,
-      children: (0, Chunk951288.jsxs)(Chunk481060.NIc, {
+      children: (0, Chunk951288.jsxs)(Chunk481060.gNt, {
         label: Chunk388032.intl.string(Chunk388032.t["sqUm+v"]),
         role: "group",
         children: [this.renderAutomaticVADToggle(), this.renderSlider()]
@@ -117,7 +117,7 @@ function b(e) {
     }];
   return t = m === x.pM4.PUSH_TO_TALK ? (0, l.jsxs)(o.Kqy, {
     gap: 20,
-    children: [(0, l.jsx)(o.NIc, {
+    children: [(0, l.jsx)(o.gNt, {
       label: j.intl.string(j.t.YkDjVF),
       children: (0, l.jsx)(d.Z, {
         defaultValue: C,

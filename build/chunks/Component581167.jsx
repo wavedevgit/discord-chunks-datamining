@@ -70,9 +70,12 @@ let f = {
     name: "FieldSet",
     id: "fieldset",
     component: function(e) {
+      let {
+        label: t
+      } = e;
       return (0, r.jsx)("div", {
         children: (0, r.jsxs)(i.C3N, {
-          label: "Billing Address",
+          label: "" === t ? true : t,
           children: [(0, r.jsx)(i.oil, {
             label: "First Name"
           }), (0, r.jsx)(i.oil, {
@@ -82,16 +85,23 @@ let f = {
           })]
         })
       })
+    },
+    controls: {
+      label: {
+        type: "text",
+        label: "Label",
+        defaultValue: "Billing Address"
+      }
     }
   }, {
-    name: "FormControl",
+    name: "Field",
     id: "formcontrol",
     component: function(e) {
       var {
         description: t
       } = e, n = u(e, ["description"]);
       return (0, r.jsx)("div", {
-        children: (0, r.jsx)(i.NIc, c(s({}, n), {
+        children: (0, r.jsx)(i.gNt, c(s({}, n), {
           description: "" === t ? true : t,
           icon: n.showIcon ? i.mBM : true,
           children: (0, r.jsx)("div", {
@@ -99,7 +109,7 @@ let f = {
             children: (0, r.jsx)(i.Text, {
               color: "text-secondary",
               variant: "text-md/medium",
-              children: "Form control"
+              children: "Field"
             })
           })
         }))

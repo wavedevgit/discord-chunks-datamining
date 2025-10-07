@@ -138,7 +138,7 @@ class N extends Chunk647438.PureComponent {
     let T = Chunk392711.length >= Chunk120356.length ? Chunk392711 : Chunk120356;
     return (0, Chunk951288.jsx)("div", {
       className: o()(Chunk81272.container, Chunk131951),
-      children: (0, Chunk951288.jsx)(Chunk481060.NIc, {
+      children: (0, Chunk951288.jsx)(Chunk481060.gNt, {
         label: null != exports ? exports : true,
         hideLabel: Chunk393238,
         description: Chunk393238 ? null : require,

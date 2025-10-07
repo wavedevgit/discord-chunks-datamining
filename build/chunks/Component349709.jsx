@@ -85,7 +85,7 @@ function b(e) {
   }, [y, E, C]), T = !R.isDeletedCustomEmoji && R.hasEmojiDisplayName;
   return (0, n.jsx)("div", {
     className: t,
-    children: (0, n.jsx)(a.NIc, {
+    children: (0, n.jsx)(a.gNt, {
       required: I,
       label: j.intl.string(j.t["3BQmiI"]),
       errorMessage: null != b ? b : true,

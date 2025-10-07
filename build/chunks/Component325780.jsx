@@ -5,7 +5,7 @@ require.d(exports, {
   k: () => f
 });
 var Chunk951288 = require("./951288.js"),
-  Chunk753187 = require("./753187.jsx"),
+  Chunk483566 = require("./483566.jsx"),
   Chunk573830 = require("./573830.jsx");
 
 function o(e, t, n) {
@@ -74,7 +74,7 @@ function f(e) {
     focusProps: d,
     hasIcon: f = false
   } = e, _ = u(e, ["checked", "disabled", "id", "onChange", "focusProps", "hasIcon"]);
-  return (0, r.jsx)(i.N, c(s({}, _), {
+  return (0, r.jsx)(i.g, c(s({}, _), {
     id: o,
     disabled: n,
     layout: "horizontal",

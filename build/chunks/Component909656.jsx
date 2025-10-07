@@ -154,7 +154,7 @@ function T(e) {
       disabled: q
     }), (0, r.jsx)(g.izJ, {
       className: I.divider
-    }), (0, r.jsxs)(g.NIc, {
+    }), (0, r.jsxs)(g.gNt, {
       label: E.intl.string(E.t["0kpTpK"]),
       description: E.intl.string(E.t.i2rCwc),
       children: [(0, r.jsx)(h.Z, {

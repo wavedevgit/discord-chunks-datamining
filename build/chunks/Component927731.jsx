@@ -159,7 +159,7 @@ function I(e) {
   })(t), l = (0, f.GG)(t), {
     maxTiers: s
   } = (0, p.s1)(t), a = l.map(e => e.id);
-  return (0, r.jsx)(d.NIc, {
+  return (0, r.jsx)(d.gNt, {
     label: v.intl.string(v.t["72+Soq"]),
     description: v.intl.format(v.t.nHRSvL, {
       maxTiers: s

@@ -74,7 +74,7 @@ let U = e => {
         })]
       }), (0, n.jsx)("div", {
         className: A.form,
-        children: (0, n.jsx)(x.NIc, {
+        children: (0, n.jsx)(x.gNt, {
           label: R.intl.string(R.t.x4hbeX),
           description: p ? R.intl.string(R.t.k5crqq) : R.intl.string(R.t.fHiGAw),
           children: (0, n.jsx)(m.$q, {
@@ -90,7 +90,7 @@ let U = e => {
         })
       }), (0, n.jsx)("div", {
         className: A.form,
-        children: (0, n.jsx)(x.NIc, {
+        children: (0, n.jsx)(x.gNt, {
           label: R.intl.string(R.t.COu4bm),
           description: h ? R.intl.string(R.t.qgQLpq) : R.intl.string(R.t.b0MaDQ),
           children: (0, n.jsx)(m.$q, {
@@ -181,7 +181,7 @@ let U = e => {
       disableEveryoneRolePermissions: h,
       headerId: f,
       theme: b
-    } = e, v = (0, u.wj)(b) ? G : Z;
+    } = e, g = (0, u.wj)(b) ? G : Z;
     return l.useEffect(() => {
       (0, L.BF)({
         fromStep: T.IO.BASICS,
@@ -194,7 +194,7 @@ let U = e => {
         className: A.content,
         children: [(0, n.jsx)("img", {
           alt: "",
-          src: v,
+          src: g,
           width: 80
         }), (0, n.jsx)(x.X6q, {
           variant: "heading-xl/semibold",
@@ -269,7 +269,7 @@ let U = e => {
         })
       }), (0, n.jsx)("div", {
         className: A.form,
-        children: (0, n.jsx)(x.NIc, {
+        children: (0, n.jsx)(x.gNt, {
           label: R.intl.string(R.t["k+b2CQ"]),
           description: R.intl.format(R.t["BwbW/f"], {
             communityGuidelines: w.Z.getArticleURL(P.BhN.PUBLIC_GUILD_GUILDLINES),
@@ -441,7 +441,7 @@ let $ = e => {
         })]
       }), (0, n.jsx)("div", {
         className: A.updatedForm,
-        children: (0, n.jsxs)(x.NIc, {
+        children: (0, n.jsxs)(x.gNt, {
           label: R.intl.string(R.t["0q344e"]),
           children: [(0, n.jsxs)("div", {
             className: A.checklistRow,
@@ -483,7 +483,7 @@ let $ = e => {
         })
       }), (0, n.jsx)("div", {
         className: A.updatedForm,
-        children: (0, n.jsx)(x.NIc, {
+        children: (0, n.jsx)(x.gNt, {
           label: R.intl.string(R.t["k+b2CQ"]),
           description: R.intl.format(R.t["BwbW/f"], {
             communityGuidelines: w.Z.getArticleURL(P.BhN.PUBLIC_GUILD_GUILDLINES),
@@ -517,7 +517,7 @@ let $ = e => {
     }, []);
     let {
       guild: a
-    } = (0, o.cj)([v.Z], () => v.Z.getProps()), c = (0, o.e7)([j.Z], () => j.Z.theme), [d, u] = l.useState(false), [m, x] = l.useState(!T.$X.some(e => M.oz(e, a))), [N, S] = l.useState(T.b4), [w, L] = l.useState(T.b4), [k] = l.useState(null == a ? true : a.defaultMessageNotifications), [D] = l.useState(null == a ? true : a.verificationLevel), [G] = l.useState(null == a ? true : a.explicitContentFilter), [Z] = l.useState(m), q = (0, o.e7)([C.Z], () => null != a ? C.Z.getEveryoneRole(a) : true), F = (0, o.e7)([_.ZP], () => null != a ? _.ZP.getChannels(a.id) : null), Y = (0, f.Dt)(), {
+    } = (0, o.cj)([g.Z], () => g.Z.getProps()), c = (0, o.e7)([j.Z], () => j.Z.theme), [d, u] = l.useState(false), [m, x] = l.useState(!T.$X.some(e => M.oz(e, a))), [N, S] = l.useState(T.b4), [w, L] = l.useState(T.b4), [k] = l.useState(null == a ? true : a.defaultMessageNotifications), [D] = l.useState(null == a ? true : a.verificationLevel), [G] = l.useState(null == a ? true : a.explicitContentFilter), [Z] = l.useState(m), q = (0, o.e7)([C.Z], () => null != a ? C.Z.getEveryoneRole(a) : true), F = (0, o.e7)([_.ZP], () => null != a ? _.ZP.getChannels(a.id) : null), Y = (0, f.Dt)(), {
       enabled: z
     } = (0, p.D2)(null != (t = null == a ? true : a.id) ? t : P.lds);
     if (null == a) return null;
@@ -572,7 +572,7 @@ let $ = e => {
           })(Object(t)).forEach(function(i) {
             Object.defineProperty(e, i, Object.getOwnPropertyDescriptor(t, i))
           }), e);
-        n !== q.permissions && await (0, g.Gf)(a.id, [l]), b.Z.updateGuild({
+        n !== q.permissions && await (0, v.Gf)(a.id, [l]), b.Z.updateGuild({
           features: i,
           rulesChannelId: N,
           publicUpdatesChannelId: w

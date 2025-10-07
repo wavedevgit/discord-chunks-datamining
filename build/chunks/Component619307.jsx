@@ -265,7 +265,7 @@ function w(e) {
         isShown: d
       } = t;
       let p = d ? _.u04 : _.CJ0;
-      return (0, r.jsx)(u.NIc, {
+      return (0, r.jsx)(u.gNt, {
         label: Y,
         description: W,
         helperText: K,

@@ -329,7 +329,7 @@ function q(e) {
       children: F.intl.format(F.t["6C4lgI"], {
         onReconnect: ea
       })
-    }) : n.integrations.length > 0 ? (0, r.jsx)(_.NIc, {
+    }) : n.integrations.length > 0 ? (0, r.jsx)(_.gNt, {
       label: F.intl.string(F.t.fOe3fX),
       children: n.integrations.map(e => (0, r.jsx)(z, {
         integration: e
@@ -438,7 +438,7 @@ function X() {
     (0, Chunk266454.Q3)(Chunk704215.z.NEW_CRUNCHYROLL_CONNECTION, {
       dismissAction: Chunk921944.L.AUTO
     })
-  }, []), (0, Chunk951288.jsx)(Chunk481060.NIc, {
+  }, []), (0, Chunk951288.jsx)(Chunk481060.gNt, {
     label: Chunk388032.intl.string(Chunk388032.t.ZeDrUV),
     description: Chunk388032.intl.format(Chunk388032.t["oYc+Gx"], {
       privacyPolicyUrl: Chunk981631.EYA.PRIVACY

@@ -230,7 +230,7 @@ function D() {
           description: Chunk388032.intl.string(Chunk388032.t["Rf9+f3"]),
           value: P.frameRate,
           options: B
-        }), (0, Chunk951288.jsx)(Chunk481060.NIc, {
+        }), (0, Chunk951288.jsx)(Chunk481060.gNt, {
           label: Chunk388032.intl.string(Chunk388032.t.pf54ER),
           description: Chunk388032.intl.string(Chunk388032.t["QyB/jI"]),
           layout: "horizontal",

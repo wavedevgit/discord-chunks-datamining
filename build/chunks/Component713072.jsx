@@ -18,30 +18,33 @@ function c(e) {
     onClick: n,
     "aria-hidden": i,
     leading: c,
-    trailing: d
-  } = e, f = (0, r.jsx)("div", {});
-  null != c && (f = (0, r.jsx)("div", {
+    trailing: d,
+    inInput: f = false
+  } = e, _ = (0, r.jsx)("div", {});
+  null != c && (_ = (0, r.jsx)("div", {
     className: s.leading,
     children: (0, r.jsx)(u, {
       accessory: c
     })
   }));
-  let _ = (0, r.jsx)("div", {});
-  return null != d && (_ = (0, r.jsx)("div", {
+  let p = (0, r.jsx)("div", {});
+  return null != d && (p = (0, r.jsx)("div", {
     className: s.trailing,
     children: (0, r.jsx)(u, {
       accessory: d
     })
   })), (0, r.jsxs)("div", {
-    className: a()(l.listBoxItemContent, s.option),
+    className: a()(l.listBoxItemContent, s.option, {
+      [l.inInput]: f
+    }),
     onClick: n,
     "aria-hidden": i,
-    children: [f, (0, r.jsx)(o.xvT, {
+    children: [_, (0, r.jsx)(o.xvT, {
       variant: "text-md/normal",
       color: "currentColor",
       lineClamp: 1,
       children: t
-    }), _]
+    }), p]
   })
 }
 

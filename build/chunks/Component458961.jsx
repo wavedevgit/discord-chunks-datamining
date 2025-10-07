@@ -318,7 +318,7 @@ function J(e) {
             guildId: eA,
             selectedPriceTier: eC,
             setPriceTier: ej
-          }), (0, r.jsx)(u.NIc, {
+          }), (0, r.jsx)(u.gNt, {
             label: R.intl.string(R.t["sqXj6+"]),
             errorMessage: null != ($ = null == ew ? true : ew.getFirstFieldErrorMessage("image")) ? $ : true,
             description: R.intl.string(R.t.yOU4Vl),
@@ -335,7 +335,7 @@ function J(e) {
                 }
               }
             })
-          }), eT ? (0, r.jsx)(u.NIc, {
+          }), eT ? (0, r.jsx)(u.gNt, {
             label: R.intl.string(R.t.zLrtkJ),
             errorMessage: null != (ee = null == ew ? true : ew.getFirstFieldErrorMessage("attachments")) ? ee : true,
             children: (0, r.jsx)(N.s, {

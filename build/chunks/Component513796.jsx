@@ -43,8 +43,8 @@ let m = e => {
       completeButtonText: h,
       overviewFooter: f,
       onNextPressed: b,
-      onPrevPressed: v,
-      onComplete: g,
+      onPrevPressed: g,
+      onComplete: v,
       sequencerClassName: N,
       initialStep: j = 0,
       forceStep: _,
@@ -60,8 +60,8 @@ let m = e => {
       P = L === s.length - 1,
       R = null != h ? h : d.intl.string(d.t.i4jeWV),
       A = l.useCallback(() => {
-        null == v || v(), w(L - 1)
-      }, [v, L, w]);
+        null == g || g(), w(L - 1)
+      }, [g, L, w]);
     return (0, n.jsxs)(o.Y0X, {
       size: o.CgR.MEDIUM,
       className: a()(u.container, t),
@@ -113,7 +113,7 @@ let m = e => {
             type: "submit",
             loading: C,
             onClick: () => {
-              P ? (g(), S && p()) : (null == b || b(), w(L + 1))
+              P ? (v(), S && p()) : (null == b || b(), w(L + 1))
             },
             disabled: y.disableNextStep
           }), T ? null : (0, n.jsx)(r.zx, {

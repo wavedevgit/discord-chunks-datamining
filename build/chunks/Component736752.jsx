@@ -290,8 +290,7 @@ class z extends Chunk647438.PureComponent {
     })
   }
   renderSecuritySettingsRedesign() {
-    return (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
-      gap: 40,
+    return (0, Chunk951288.jsxs)(Chunk481060.l09, {
       children: [this.renderConfirmModals(), (0, Chunk951288.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.ACCOUNT_PROFILE,
         children: this.renderAccountSettings()

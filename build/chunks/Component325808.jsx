@@ -80,7 +80,7 @@ function I(e) {
     children: [(0, r.jsxs)(s.Kqy, {
       gap: 16,
       direction: "horizontal",
-      children: [(0, r.jsx)(s.NIc, {
+      children: [(0, r.jsx)(s.gNt, {
         label: E.intl.string(E.t.YkDjVF),
         children: (0, r.jsx)(c.Z, {
           defaultValue: i,

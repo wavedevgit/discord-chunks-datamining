@@ -1,7 +1,7 @@
 /** Chunk was on 66915 **/
 /** chunk id: 662708, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  default: () => f
+  default: () => g
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -59,7 +59,7 @@ class b extends Chunk647438.PureComponent {
               onChange: this.handleNameChange,
               placeholder: Chunk388032.intl.string(Chunk388032.t.xV9hVl),
               autoFocus: true
-            }), (0, Chunk951288.jsx)(Chunk481060.NIc, {
+            }), (0, Chunk951288.jsx)(Chunk481060.gNt, {
               label: Chunk388032.intl.string(Chunk388032.t.xpurRE),
               children: (0, Chunk951288.jsx)(d, {
                 defaultColor: Chunk981631.Wyy,
@@ -132,4 +132,4 @@ class b extends Chunk647438.PureComponent {
     })
   }
 }
-let f = b
+let g = b

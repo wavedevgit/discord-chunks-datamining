@@ -44,7 +44,7 @@ let o = {
   m = 10,
   p = 32,
   h = 1e3,
-  x = "staging" === window.GLOBAL_ENV.PROJECT_ENV ? "1415044199572832256" : "1415025086791942144";
+  x = "production" === window.GLOBAL_ENV.PROJECT_ENV ? "1425215263548117002" : "staging" === window.GLOBAL_ENV.PROJECT_ENV ? "1415044199572832256" : "1415025086791942144";
 var f = 12633 == require.j ? ((r = {})[r.SHOCKBYTE = 0] = "SHOCKBYTE", r) : null;
 let b = {
   [Chunk763600.Z.SHOCKBYTE]: window.GLOBAL_ENV.RELEASE_CHANNEL === Chunk48541.C.STAGING ? "https://purple-prod.shockbyte.dev/support" : "https://discord.shockbyte.com/support"

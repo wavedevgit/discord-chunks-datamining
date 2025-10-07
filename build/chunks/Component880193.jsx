@@ -89,7 +89,7 @@ function _(e) {
         disabled: D
       }), (0, r.jsxs)("div", {
         className: j.iconSection,
-        children: [(0, r.jsx)(s.NIc, {
+        children: [(0, r.jsx)(s.gNt, {
           label: b.intl.string(b.t.RUBM2t),
           description: b.intl.string(b.t["0iUofH"]),
           children: (0, r.jsx)(o.Z, {

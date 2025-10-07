@@ -82,7 +82,7 @@ let P = e => {
     G = (0, O.x6)(R),
     H = (0, O.G1)(R),
     K = l.useCallback(async e => {
-      if (e.stopPropagation(), e.currentTarget.blur(), Z && null != L) {
+      if (e.stopPropagation(), Z && null != L) {
         U(false);
         try {
           await b.Z.removeSkuFromWishlist(L, k, I), U(null)
@@ -113,8 +113,8 @@ let P = e => {
       children: e => (0, r.jsx)(c.P3F, E(x({}, e), {
         className: a()(h.wishlistButton, h.disabledButton, P),
         innerRef: M,
-        "aria-disabled": true,
         onClick: e => e.stopPropagation(),
+        "aria-disabled": true,
         children: (0, r.jsx)(Y, {
           colorClass: h.disabledIconColor,
           size: "custom",

@@ -212,7 +212,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                       let e = T + A;
                       return (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
                         gap: 16,
-                        children: [(0, Chunk951288.jsx)(Chunk481060.NIc, {
+                        children: [(0, Chunk951288.jsx)(Chunk481060.gNt, {
                           label: Chunk388032.intl.string(Chunk388032.t.safBZ2),
                           children: (0, Chunk951288.jsx)(Chunk484614.Z, {
                             value: module
@@ -245,7 +245,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                         }) : null]
                       })
                     })(), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), (() => {
-                      if (null != Chunk852860) return (0, Chunk951288.jsx)(Chunk481060.NIc, {
+                      if (null != Chunk852860) return (0, Chunk951288.jsx)(Chunk481060.gNt, {
                         label: Chunk388032.intl.string(Chunk388032.t["8bT/Cg"]),
                         description: Chunk388032.intl.string(Chunk388032.t.WCWT7O),
                         errorMessage: (null == z ? true : z.discovery_splash) != null ? z.discovery_splash : true,
@@ -293,7 +293,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                         reason: "",
                         emoji_name: null
                       }) : D.reasonsToJoin;
-                      return (0, Chunk951288.jsx)(Chunk481060.NIc, {
+                      return (0, Chunk951288.jsx)(Chunk481060.gNt, {
                         label: Chunk388032.intl.string(Chunk388032.t.vUmXsb),
                         description: Chunk388032.intl.string(Chunk388032.t.esnBnZ),
                         errorMessage: (null == z ? true : z.reasons_to_join) != null ? z.reasons_to_join : true,
@@ -319,7 +319,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                       maxLength: 2400,
                       disabled: !R,
                       defaultDirty: (null == (e = D.about) ? true : module.length) > 0
-                    }, "text-area-".concat(Z)), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsxs)(Chunk481060.NIc, {
+                    }, "text-area-".concat(Z)), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsxs)(Chunk481060.gNt, {
                       label: Chunk388032.intl.string(Chunk388032.t.V5mNyc),
                       description: Chunk388032.intl.string(Chunk388032.t.d3kA9f),
                       errorMessage: (null == z ? true : z.social_links) != null ? z.social_links : true,
@@ -400,7 +400,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                         disabled: !R || D.socialLinks.length >= 9
                       })]
                     }), D.isPublished && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-                      children: [(0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsx)(Chunk481060.NIc, {
+                      children: [(0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsx)(Chunk481060.gNt, {
                         label: Chunk388032.intl.string(Chunk388032.t["5yF7e3"]),
                         description: Chunk388032.intl.string(Chunk388032.t.eOFvqa),
                         children: (0, Chunk951288.jsx)(Chunk481060.zxk, {

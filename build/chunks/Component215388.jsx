@@ -92,7 +92,7 @@ function C(e) {
       disableEnterToSubmit: true
     }
   }), [c]);
-  return (0, r.jsx)(o.NIc, {
+  return (0, r.jsx)(o.gNt, {
     label: F,
     errorMessage: y,
     id: i,

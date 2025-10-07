@@ -97,7 +97,7 @@ let y = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
             disabled: B
           })
         })]
-      }), (0, r.jsx)(u.izJ, {}), (0, r.jsx)(u.NIc, {
+      }), (0, r.jsx)(u.izJ, {}), (0, r.jsx)(u.gNt, {
         label: C.intl.string(C.t.W39uIC),
         description: C.intl.string(C.t.B6XtEx),
         children: (0, r.jsxs)("div", {

@@ -1104,7 +1104,7 @@ function eg() {
           onClick: o,
           disabled: exports === require
         })]
-      }), (0, Chunk951288.jsx)(Chunk793030.NIc, {
+      }), (0, Chunk951288.jsx)(Chunk793030.gNt, {
         label: "Reset Changelog",
         description: "This will reset the changelog, so it will show again on the next startup.",
         children: (0, Chunk951288.jsx)(Chunk481060.zxk, {

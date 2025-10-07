@@ -155,7 +155,7 @@ function b(e) {
     "aria-labelledby": o
   } = e, l = h(e, ["onChange", "options", "value", "disabled", "aria-labelledby"]);
   let d = null != t ? e => t(e) : true;
-  return (0, r.jsx)(c.NIc, p(f({}, l), {
+  return (0, r.jsx)(c.gNt, p(f({}, l), {
     children: e => (0, r.jsx)(s.Ee, {
       id: e.controlId,
       className: u.group,

@@ -38,7 +38,7 @@ class _ extends Chunk647438.PureComponent {
     return h ? e = Chunk388032.intl.string(Chunk388032.t["4qMI6O"]) : (e = Chunk388032.intl.string(Chunk388032.t.Vp9je3), t = (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
       children: Chunk388032.intl.format(Chunk388032.t["3BTmqa"], {})
-    })), h ? (n = (0, Chunk951288.jsx)(Chunk481060.NIc, {
+    })), h ? (n = (0, Chunk951288.jsx)(Chunk481060.gNt, {
       label: Chunk388032.intl.string(Chunk388032.t.Xclkxs),
       hideLabel: true,
       errorMessage: null != f ? f : true,

@@ -157,7 +157,6 @@ function S() {
             value: Chunk39793,
             onChange: S,
             placeholder: Chunk388032.intl.string(Chunk401561.default.Kg0Zio),
-            showCharacterCount: true,
             maxLength: Chunk473682.gM,
             disabled: w
           })]

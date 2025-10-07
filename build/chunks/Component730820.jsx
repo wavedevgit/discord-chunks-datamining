@@ -162,7 +162,7 @@ class U extends Chunk647438.PureComponent {
       }
       return (0, Chunk951288.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.ACCOUNT_SMS_BACKUP,
-        children: (0, Chunk951288.jsxs)(Chunk481060.NIc, {
+        children: (0, Chunk951288.jsxs)(Chunk481060.gNt, {
           label: Chunk388032.intl.string(Chunk388032.t.uHAJ5u),
           description: Chunk388032.intl.string(Chunk388032.t.fspJ4O),
           children: [exports, module]
@@ -199,7 +199,7 @@ class U extends Chunk647438.PureComponent {
       }, e.code));
       e = (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
         gap: 16,
-        children: [(0, Chunk951288.jsxs)(Chunk481060.NIc, {
+        children: [(0, Chunk951288.jsxs)(Chunk481060.gNt, {
           label: Chunk388032.intl.string(Chunk388032.t.GfqHPj),
           description: Chunk388032.intl.format(Chunk388032.t.OhmvYm, {}),
           children: [(0, Chunk951288.jsxs)(Chunk600164.Z, {
@@ -223,7 +223,7 @@ class U extends Chunk647438.PureComponent {
       })
     }
     return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-      children: [(0, Chunk951288.jsx)(Chunk481060.NIc, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.gNt, {
         label: Chunk388032.intl.string(Chunk388032.t.EPVq09),
         description: Chunk388032.intl.string(Chunk388032.t.bQwxiY),
         children: (0, Chunk951288.jsxs)(Chunk481060.hE2, {
@@ -254,7 +254,7 @@ class U extends Chunk647438.PureComponent {
   }
   renderDisabled() {
     return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-      children: [(0, Chunk951288.jsx)(Chunk481060.NIc, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.gNt, {
         label: Chunk388032.intl.string(Chunk388032.t.EPVq09),
         description: Chunk388032.intl.string(Chunk388032.t["8aDa1t"]),
         children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
@@ -270,13 +270,13 @@ class U extends Chunk647438.PureComponent {
     let {
       currentUser: e
     } = this.props;
-    return Chunk287880.uZ ? module.verified ? module.mfaEnabled ? this.renderEnabled() : this.renderDisabled() : (0, Chunk951288.jsx)(Chunk481060.NIc, {
+    return Chunk287880.uZ ? module.verified ? module.mfaEnabled ? this.renderEnabled() : this.renderDisabled() : (0, Chunk951288.jsx)(Chunk481060.gNt, {
       label: Chunk388032.intl.string(Chunk388032.t.EPVq09),
       children: (0, Chunk951288.jsx)(Chunk481060.Wn, {
         messageType: Chunk481060.QYI.WARNING,
         children: Chunk388032.intl.string(Chunk388032.t.uggF7u)
       })
-    }) : (0, Chunk951288.jsx)(Chunk481060.NIc, {
+    }) : (0, Chunk951288.jsx)(Chunk481060.gNt, {
       label: Chunk388032.intl.string(Chunk388032.t.EPVq09),
       children: (0, Chunk951288.jsx)(Chunk481060.Wn, {
         messageType: Chunk481060.QYI.INFO,

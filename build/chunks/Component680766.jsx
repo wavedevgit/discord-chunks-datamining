@@ -213,6 +213,11 @@ let g = [{
           label: "Should listbox focus wrap",
           defaultValue: false
         },
+        wrapTags: {
+          type: "boolean",
+          label: "Wrap tags",
+          defaultValue: false
+        },
         maxOptionsVisible: {
           type: "number",
           label: "Max options visible",

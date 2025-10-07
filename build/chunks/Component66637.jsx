@@ -9,24 +9,25 @@ var Chunk951288 = require("./951288.js"),
   l = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk514482 = require("./514482.js");
-let c = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
+let c = Chunk647438.memo(function(e) {
   let {
-    onClick: n,
-    onContextMenu: a,
-    className: i,
-    disabled: c,
-    children: d,
-    "aria-label": u
+    onClick: t,
+    onContextMenu: n,
+    className: a,
+    disabled: i,
+    children: c,
+    "aria-label": d,
+    ref: u
   } = e;
   return (0, r.jsx)(s.kL8, {
-    ref: t,
-    className: l()(o.card, i, {
-      [o.clickable]: null != n,
-      [o.disabled]: c
+    ref: u,
+    className: l()(o.card, a, {
+      [o.clickable]: null != t,
+      [o.disabled]: i
     }),
-    onContextMenu: a,
-    onClick: c ? true : n,
-    "aria-label": u,
-    children: d
+    onContextMenu: n,
+    onClick: i ? true : t,
+    "aria-label": d,
+    children: c
   })
-}))
+})
