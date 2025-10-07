@@ -15,7 +15,7 @@ var Chunk647438 = require("./647438.js"),
 function d() {
   let e = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
     t = (0, Chunk517157.Z)(null == module ? true : module.id),
-    n = (0, Chunk172416.U)({
+    n = (0, Chunk172416.Un)({
       location: "useAvailableWidgetTypes"
     }),
     d = (0, Chunk880421.k)({

@@ -13,7 +13,7 @@ var Chunk296009 = require("./296009.js"),
   Chunk667108 = require("./667108.js");
 
 function d() {
-  let e = (0, Chunk172416.U)({
+  let e = (0, Chunk172416.Un)({
       location: "DevToolsWidgetsPanel",
       autoTrackExposure: false
     }),
