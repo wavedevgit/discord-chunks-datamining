@@ -2,8 +2,8 @@
 /** chunk id: 624864, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => I
-}), require("./388685.js"), require("./467055.js");
+  Z: () => v
+}), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk237997 = require("./237997.js"),
@@ -116,43 +116,13 @@ function y(e) {
       (0, s.vE)(e)
   }
 }
-
-function O(e) {
-  let {
-    overlayNotificationSettings: t
-  } = e;
-  m.notificationSettings = new Set(t.notificationSettings);
-  let n = Object.fromEntries(Object.entries(t.gameSettings).filter(e => {
-    let [t, n] = e;
-    return null != n.limitedInteractionOverride
-  }).map(e => {
-    var t;
-    let [n, r] = e;
-    return [n, {
-      limitedInteractionOverride: null != (t = r.limitedInteractionOverride) ? t : true
-    }]
-  }));
-  m.gameSettings = d({}, m.gameSettings, n)
-}
-class v extends(r = Chunk442837.ZP.PersistedStore) {
+class O extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     var t;
     let n = h();
     m = _(d({}, n, null != e ? e : {}), {
       notificationSettings: new Set(null != (t = null == e ? true : e.notificationSettings) ? t : n.notificationSettings)
     }), this.waitFor(o.default)
-  }
-  getInitialOverlayState() {
-    return {
-      gameSettings: Object.fromEntries(Object.entries(m.gameSettings).map(e => {
-        var t;
-        let [n, r] = e;
-        return [n, {
-          limitedInteractionOverride: null != (t = r.limitedInteractionOverride) ? t : null
-        }]
-      })),
-      notificationSettings: Array.from(m.notificationSettings)
-    }
   }
   getState() {
     return m
@@ -175,10 +145,9 @@ class v extends(r = Chunk442837.ZP.PersistedStore) {
     return y(e)
   }
 }
-u(v, "displayName", "OverlaySettingsStore"), u(v, "persistKey", "OverlaySettingsStore");
-let I = new v(Chunk570140.Z, {
+u(O, "displayName", "OverlaySettingsStore"), u(O, "persistKey", "OverlaySettingsStore");
+let v = new O(Chunk570140.Z, {
   LOGOUT: p,
   OVERLAY_SET_LIMITED_INTERACTION_OVERRIDE: E,
-  OVERLAY_SET_NOTIFICATION_DISABLED_SETTING: b,
-  OVERLAY_INITIALIZE: O
+  OVERLAY_SET_NOTIFICATION_DISABLED_SETTING: b
 })

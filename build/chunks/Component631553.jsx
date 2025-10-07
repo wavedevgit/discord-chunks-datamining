@@ -340,7 +340,7 @@ class eZ extends Chunk647438.Component {
   }
   constructor(e) {
     super(e), eO(this, "handleWindowResize", () => {
-      F.default.isFocusedPidOutOfProcess() ? this.forceUpdate() : u()(() => {
+      H.default.isFocusedPidOutOfProcess() ? this.forceUpdate() : u()(() => {
         this.forceUpdate()
       }, 500)
     }), eO(this, "activeKeyEventShapes", []), eO(this, "lockEventShape", (0, $.d2)(this.props.keybindKeyCodes)), eO(this, "getActiveKeyEventIndex", e => this.activeKeyEventShapes.findIndex(t => h()(t, e))), eO(this, "onKeyDownGlobal", e => {
@@ -368,10 +368,10 @@ function eC() {
   let {
     locked: n,
     initialized: i,
-    incompatibleApp: o,
-    activeRegions: l,
-    isPreviewingInGame: a,
-    trackedGame: c
+    incompatibleApp: s,
+    activeRegions: o,
+    isPreviewingInGame: l,
+    trackedGame: a
   } = (0, Chunk442837.cj)([Chunk237997.default], () => ({
     locked: Chunk237997.default.isLocked((0, Chunk145597.getPID)()),
     initialized: Chunk237997.default.initialized,
@@ -379,37 +379,35 @@ function eC() {
     activeRegions: Chunk237997.default.getActiveRegions(),
     isPreviewingInGame: Chunk237997.default.isPreviewingInGame(),
     trackedGame: Chunk237997.default.getTrackedGame((0, Chunk145597.getPID)())
-  })), d = (0, Chunk442837.e7)([Chunk451478.Z], () => Chunk451478.Z.windowSize()), u = (0, Chunk442837.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getOverlayKeybind()), p = (0, Chunk442837.e7)([Chunk944486.Z], () => Chunk944486.Z.getVoiceChannelId()), h = (0, Chunk442837.e7)([Chunk592125.Z], () => Chunk592125.Z.getChannel(Chunk498607)), g = (0, Chunk442837.e7)([Chunk430824.Z], () => null != h ? Chunk430824.Z.getGuild(h.guild_id) : null), m = (0, Chunk442837.e7)([Chunk594190.ZP, Chunk449224.Z], () => (0, Chunk989941.Z)(Chunk594190.ZP, Chunk449224.Z)), y = (0, Chunk442837.e7)([Chunk131951.Z], () => (0, Chunk74299.Z)(Chunk131951.Z)), _ = (0, Chunk442837.e7)([Chunk199902.Z], () => null != Chunk199902.Z.getCurrentUserActiveStream()), {
-    analyticsLocations: O
+  })), c = (0, Chunk442837.e7)([Chunk451478.Z], () => Chunk451478.Z.windowSize()), d = (0, Chunk442837.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getOverlayKeybind()), u = (0, Chunk442837.e7)([Chunk944486.Z], () => Chunk944486.Z.getVoiceChannelId()), p = (0, Chunk442837.e7)([Chunk592125.Z], () => Chunk592125.Z.getChannel(u)), h = (0, Chunk442837.e7)([Chunk430824.Z], () => null != Chunk498607 ? Chunk430824.Z.getGuild(Chunk498607.guild_id) : null), g = (0, Chunk442837.e7)([Chunk594190.ZP, Chunk449224.Z], () => (0, Chunk989941.Z)(Chunk594190.ZP, Chunk449224.Z)), m = (0, Chunk442837.e7)([Chunk131951.Z], () => (0, Chunk74299.Z)(Chunk131951.Z)), y = (0, Chunk442837.e7)([Chunk199902.Z], () => null != Chunk199902.Z.getCurrentUserActiveStream()), {
+    analyticsLocations: _
   } = (0, Chunk906732.ZP)(Chunk100527.Z.OVERLAY), {
-    showKeybindIndicators: b,
-    dismissKeybindNotification: E
-  } = (0, Chunk358446.K)(), x = (null == c ? true : c.fullscreenType) === Chunk593472.Jx.FULLSCREEN, S = null != (e = null == c ? true : c.oopEnabled) && module, j = Chunk454991.v.oopEnabled, I = null != (t = null == c ? true : c.hasChangedRenderMode) && exports, {
-    useContextualNudge: T,
-    disableNudge: D
+    showKeybindIndicators: O,
+    dismissKeybindNotification: b
+  } = (0, Chunk358446.K)(), E = (null == Chunk921738 ? true : Chunk921738.fullscreenType) === Chunk593472.Jx.FULLSCREEN, x = null != (e = null == Chunk921738 ? true : Chunk921738.oopEnabled) && module, S = Chunk454991.v.oopEnabled, j = null != (t = null == Chunk921738 ? true : Chunk921738.hasChangedRenderMode) && exports, {
+    useContextualNudge: I,
+    disableNudge: T
   } = (0, Chunk32300.J0)("OverlaySetup");
-  return Chunk647438.useEffect(() => {
-    i && (0, Chunk32300.F3)()
-  }, [i]), (0, Chunk951288.jsx)(Chunk906732.Gt, {
-    value: Chunk13245,
+  return (0, Chunk951288.jsx)(Chunk906732.Gt, {
+    value: Chunk239091,
     children: (0, Chunk951288.jsx)(eZ, {
       locked: require,
       initialized: i,
-      incompatibleApp: Chunk120356,
-      activeRegions: l,
-      isPreviewingInGame: Chunk921738,
-      windowSize: Chunk954955,
-      keybind: null != u ? (0, Chunk13140.BB)(u.shortcut, true) : "???",
-      keybindKeyCodes: null != u ? u.shortcut : [],
-      connectedToVoice: null != Chunk498607,
-      voiceChannelId: null != h ? h.id : null,
-      voiceGuild: Chunk704215,
-      game: Chunk481060,
-      canGoLive: Chunk668781,
-      isStreaming: Chunk239091,
-      showKeybindNotification: Chunk425493,
-      dismissKeybindNotification: Chunk951483,
-      isOOPOverlayAvailable: (!Chunk377400 || Chunk600164 && Chunk185666 && Chunk714338 && !Chunk266454) && !Chunk329557
+      incompatibleApp: Chunk647438,
+      activeRegions: Chunk120356,
+      isPreviewingInGame: l,
+      windowSize: c,
+      keybind: null != Chunk954955 ? (0, Chunk13140.BB)(Chunk954955.shortcut, true) : "???",
+      keybindKeyCodes: null != Chunk954955 ? Chunk954955.shortcut : [],
+      connectedToVoice: null != u,
+      voiceChannelId: null != Chunk498607 ? Chunk498607.id : null,
+      voiceGuild: h,
+      game: Chunk704215,
+      canGoLive: Chunk481060,
+      isStreaming: Chunk668781,
+      showKeybindNotification: Chunk13245,
+      dismissKeybindNotification: Chunk425493,
+      isOOPOverlayAvailable: (!Chunk266454 || Chunk185666 && Chunk714338 && Chunk951483 && !Chunk600164) && !Chunk377400
     })
   })
 }
