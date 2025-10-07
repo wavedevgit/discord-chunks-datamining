@@ -454,25 +454,27 @@ function x(e) {
   var t;
   let {
     renderListItem: n,
-    renderEmptyState: i
+    renderEmptyState: i,
+    maxVisibleItems: a = 5
   } = e, {
-    state: a,
-    selectionMode: o,
-    listBoxId: s,
-    required: l,
-    disabled: c,
-    handleSelectionChange: u
+    state: o,
+    selectionMode: s,
+    listBoxId: l,
+    required: c,
+    disabled: u,
+    handleSelectionChange: d
   } = (0, g.T)();
   return (0, r.jsx)(p.w, {
-    id: s,
-    required: l,
-    disabled: c,
-    items: null != (t = a.filteredItems) ? t : a.listItems,
-    selectionMode: o,
-    selectedItems: a.selectedItems,
-    onSelectionChange: u,
-    activeDescendantIndex: a.activeDescendantIndex,
+    id: l,
+    required: c,
+    disabled: u,
+    items: null != (t = o.filteredItems) ? t : o.listItems,
+    selectionMode: s,
+    selectedItems: o.selectedItems,
+    onSelectionChange: d,
+    activeDescendantIndex: o.activeDescendantIndex,
     renderListItem: n,
-    renderEmptyState: i
+    renderEmptyState: i,
+    maxVisibleItems: a
   })
 }

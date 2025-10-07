@@ -91,8 +91,7 @@ function p(e) {
     getReferenceProps: S
   } = (0, i.ON0)({
     placement: "bottom",
-    matchReferenceWidth: true,
-    setHeight: () => 40 * g
+    matchReferenceWidth: true
   });
   return (0, r.jsxs)(a.uz, d(c({}, E), {
     isCollapsible: true,
@@ -110,13 +109,14 @@ function p(e) {
       wrapTags: m,
       showChevronButton: true,
       ref: v.setReference
-    }, S())), y && (0, r.jsx)(i.w0Z, d(c({
+    }, S())), y && (0, r.jsx)("div", d(c({
       ref: v.setFloating,
       className: s.selectDropdown,
       style: I
     }, T()), {
       children: (0, r.jsx)(a.px, {
-        renderListItem: e => (0, r.jsx)(o.W, c({}, e))
+        renderListItem: e => (0, r.jsx)(o.W, c({}, e)),
+        maxVisibleItems: g
       })
     }))]
   }))

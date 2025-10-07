@@ -2,7 +2,7 @@
 /** chunk id: 35916, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  w: () => m
+  w: () => g
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -68,33 +68,35 @@ function h(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
+let m = 40;
 
-function m(e) {
+function g(e) {
   let {
     id: t,
     required: n = false,
     disabled: u = false,
     selectionMode: f = "single",
     items: h,
-    defaultSelectedItems: m,
-    selectedItems: E,
-    onSelectionChange: b,
-    activeDescendantIndex: y,
-    shouldFocusWrap: O = false,
-    renderListItem: v,
-    renderEmptyState: I
-  } = e, T = i.useId(), S = null != t ? t : T, [A, C] = i.useState(null != m ? m : []), N = null != E, R = N ? E : A, P = (0, a.ZP)({
-    id: S,
+    defaultSelectedItems: g,
+    selectedItems: b,
+    onSelectionChange: y,
+    activeDescendantIndex: O,
+    shouldFocusWrap: v = false,
+    renderListItem: I,
+    renderEmptyState: T,
+    maxVisibleItems: S = 5
+  } = e, A = i.useId(), C = null != t ? t : A, [N, R] = i.useState(null != g ? g : []), P = null != b, w = P ? b : N, D = (0, a.ZP)({
+    id: C,
     async scrollToEnd() {},
     async scrollToStart() {},
     isEnabled: !u,
-    wrap: O,
+    wrap: v,
     preserveFocusPosition: true
-  }), w = i.useCallback(e => {
-    if (true === n && 1 === R.length && R.includes(e)) return;
-    let t = (0, l.cq)(f, R, e);
-    N || C(t), null == b || b(t)
-  }, [n, R, b, N, f]), D = i.useCallback(e => (0, r.jsx)("div", {
+  }), L = i.useCallback(e => {
+    if (true === n && 1 === w.length && w.includes(e)) return;
+    let t = (0, l.cq)(f, w, e);
+    P || R(t), null == y || y(t)
+  }, [n, w, y, P, f]), x = i.useCallback(e => (0, r.jsx)("div", {
     className: c.listBoxItemContent,
     children: (0, r.jsx)(s.xvT, {
       variant: "text-md/medium",
@@ -102,23 +104,9 @@ function m(e) {
       className: c.listBoxItemLabel,
       children: e.label
     })
-  }), []), L = i.useMemo(() => h.map((e, t) => {
-    var n, i;
-    let a = (0, l.cA)(S, t);
-    return (0, r.jsx)(g, _(d({}, e), {
-      id: a,
-      selectionMode: f,
-      selected: null != (n = null == R ? true : R.includes(e)) && n,
-      disabled: u || e.disabled,
-      focused: t === y,
-      onClick: () => {
-        u || e.disabled || w(e)
-      },
-      children: null != (i = null == v ? true : v(e)) ? i : D(e)
-    }), e.id)
-  }), [S, h, f, R, v, D, u, w, y]);
+  }), []);
   return (0, r.jsx)(o.bG, {
-    navigator: P,
+    navigator: D,
     children: (0, r.jsx)(o.SJ, {
       children: e => {
         var {
@@ -131,9 +119,32 @@ function m(e) {
           "aria-multiselectable": "multiple" === f,
           className: c.listBox,
           "data-mana-component": "listbox",
-          children: (0, r.jsxs)("div", {
-            className: c.listBoxInner,
-            children: [L, 0 === L.length && (null == I ? true : I())]
+          children: 0 === h.length ? null == T ? true : T() : (0, r.jsx)(s._2F, {
+            style: {
+              height: null != S ? "".concat(S * m, "px") : "100%"
+            },
+            role: true,
+            rowHeight: m,
+            sections: [h.length],
+            sectionHeight: 0,
+            renderSection: () => null,
+            renderRow: e => {
+              var t;
+              let {
+                row: n
+              } = e, i = h[n], a = (0, l.cA)(C, n), o = 0 !== w.length && null != w.find(e => e.id === i.id);
+              return (0, r.jsx)(E, _(d({}, i), {
+                id: a,
+                selectionMode: f,
+                selected: o,
+                disabled: u || i.disabled,
+                focused: n === O,
+                onClick: () => {
+                  u || i.disabled || L(i)
+                },
+                children: null != (t = null == I ? true : I(i)) ? t : x(i)
+              }), i.id)
+            }
           })
         }))
       }
@@ -141,7 +152,7 @@ function m(e) {
   })
 }
 
-function g(e) {
+function E(e) {
   let {
     children: t,
     id: n,
