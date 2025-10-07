@@ -2,13 +2,13 @@
 /** chunk id: 792258, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => g,
-  o: () => m
+  Z: () => b,
+  o: () => g
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
-var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
+  Chunk120356 = require("./120356.js"),
+  o = require.n(Chunk120356),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
   Chunk372769 = require("./372769.jsx"),
@@ -18,47 +18,49 @@ var Chunk120356 = require("./120356.js"),
   Chunk345909 = require("./345909.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk987588 = require("./987588.js");
-let h = [18, 18, 16, 16, 14, 12, 10];
+let m = [18, 18, 16, 16, 14, 12, 10];
 
-function m(e) {
+function g(e) {
   var t;
-  return null != (t = h[e.length - 1]) ? t : h[h.length - 1]
+  return null != (t = m[e.length - 1]) ? t : m[m.length - 1]
 }
-let g = e => {
+let E = Chunk647438.memo(e => {
   let {
     guildId: t,
     className: n,
     customSubtext: i
-  } = e, h = (0, o.e7)([c.Z], () => c.Z.getGuild(t));
-  if (true === h) return null;
-  let m = h.features.has(d.oNc.VERIFIED) || h.features.has(d.oNc.PARTNERED),
+  } = e, a = (0, s.e7)([u.Z], () => u.Z.getGuild(t));
+  if (true === a) return null;
+  let m = a.features.has(f.oNc.VERIFIED) || a.features.has(f.oNc.PARTNERED),
     {
       name: g
-    } = h;
+    } = a;
   return (0, r.jsxs)("div", {
-    className: a()(p.container, n),
-    children: [(0, r.jsx)(u.Z, {
+    className: o()(h.container, n),
+    children: [(0, r.jsx)(d.Z, {
       guildId: t
     }), (0, r.jsxs)("div", {
-      className: p.descriptors,
+      className: h.descriptors,
       children: [(0, r.jsxs)("div", {
-        className: p.header,
-        children: [m ? (0, r.jsx)(l.Z, {
-          guild: h,
+        className: h.header,
+        children: [m ? (0, r.jsx)(c.Z, {
+          guild: a,
           tooltipPosition: "bottom",
-          tooltipColor: s.ua7.Colors.PRIMARY,
-          className: p.guildBadge
-        }) : null, (0, r.jsx)(s.Text, {
+          tooltipColor: l.ua7.Colors.PRIMARY,
+          className: h.guildBadge
+        }) : null, (0, r.jsx)(l.Text, {
           variant: "text-md/semibold",
           children: g
         })]
-      }), (0, r.jsx)(s.Text, {
+      }), (0, r.jsx)(l.Text, {
         variant: "text-sm/medium",
         color: "text-secondary",
-        children: null != i ? i : true !== h.approximateMemberCount ? _.intl.format(f.default["5JmNgo"], {
-          members: h.approximateMemberCount
+        children: null != i ? i : true !== a.approximateMemberCount ? p.intl.format(_.default["5JmNgo"], {
+          members: a.approximateMemberCount
         }) : null
       })]
     })]
   })
-}
+});
+E.displayName = "FamilyCenterActivityGuildRow";
+let b = E

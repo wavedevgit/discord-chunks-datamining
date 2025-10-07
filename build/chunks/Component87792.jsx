@@ -195,7 +195,7 @@ let V = () => {
       })]
     })
   },
-  H = e => {
+  H = Chunk647438.memo(e => {
     let {
       userId: t,
       subText: n,
@@ -219,8 +219,9 @@ let V = () => {
         }) : null]
       })]
     })
-  },
-  Y = () => {
+  });
+H.displayName = "FamilyCenterActivityCardAccountRow";
+let Y = () => {
     let e = (0, Chunk631885.zu)(),
       t = (0, Chunk399606.e7)([Chunk914788.Z], () => Chunk914788.Z.getSelectedTeenId()),
       {

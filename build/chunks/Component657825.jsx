@@ -2,37 +2,37 @@
 /** chunk id: 657825, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => f
+  Z: () => p
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
-var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
+  Chunk120356 = require("./120356.js"),
+  o = require.n(Chunk120356),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
   Chunk594174 = require("./594174.js"),
   Chunk51144 = require("./51144.js"),
   Chunk198952 = require("./198952.jsx"),
   Chunk905599 = require("./905599.js");
-let f = e => {
+let _ = Chunk647438.memo(e => {
   let {
     userId: t,
     subText: n,
     className: i
-  } = e, f = (0, o.e7)([l.default], () => l.default.getUser(t));
-  return true === f ? null : (0, r.jsxs)("div", {
-    className: a()(d.container, i),
-    children: [(0, r.jsx)(u.r, {
-      user: f,
-      avatarSize: s.EFr.SIZE_40
+  } = e, a = (0, s.e7)([c.default], () => c.default.getUser(t));
+  return true === a ? null : (0, r.jsxs)("div", {
+    className: o()(f.container, i),
+    children: [(0, r.jsx)(d.r, {
+      user: a,
+      avatarSize: l.EFr.SIZE_40
     }), (0, r.jsx)("div", {
       children: (0, r.jsxs)("div", {
-        className: d.descriptors,
-        children: [(0, r.jsx)(s.Text, {
+        className: f.descriptors,
+        children: [(0, r.jsx)(l.Text, {
           variant: "text-md/semibold",
           color: "interactive-active",
-          children: c.ZP.getName(f)
-        }), (0, r.jsx)(s.Text, {
+          children: u.ZP.getName(a)
+        }), (0, r.jsx)(l.Text, {
           variant: "text-sm/medium",
           color: "text-secondary",
           children: n
@@ -40,4 +40,6 @@ let f = e => {
       })
     })]
   })
-}
+});
+_.displayName = "FamilyCenterActivityUserRow";
+let p = _
