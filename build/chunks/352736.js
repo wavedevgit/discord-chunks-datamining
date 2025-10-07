@@ -2,7 +2,7 @@
 /** chunk id: 352736, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w
+  Z: () => D
 }), require("./388685.js");
 var Chunk721355 = require("./721355.js"),
   Chunk320285 = require("./320285.js"),
@@ -37,21 +37,31 @@ function T(e) {
 }
 
 function S(e) {
+  var t;
+  let n = p.Z.getChannel(e.channel_id),
+    r = null == n ? null : h.Z.getGuild(n.getGuildId());
+  return (0, a.Rp)(y.intl.formatToParts(y.t.PJsjbG, {
+    emoji: e.content,
+    guildName: null != (t = null == r ? true : r.name) ? t : y.intl.string(y.t.dtwqPT)
+  }))
+}
+
+function A(e) {
   return (0, a.Rp)(y.intl.formatToParts(y.t["ihxM9/"], {
     username: e,
     usernameOnClick: b.dG4
   }))
 }
 
-function A(e, t) {
+function C(e, t) {
   let n = p.Z.getChannel(t);
-  return null == n || null == h.Z.getGuild(n.getGuildId()) ? S(e) : (0, a.Rp)(y.intl.formatToParts(y.t["ihxM9/"], {
+  return null == n || null == h.Z.getGuild(n.getGuildId()) ? A(e) : (0, a.Rp)(y.intl.formatToParts(y.t["ihxM9/"], {
     username: e,
     usernameOnClick: b.dG4
   }))
 }
 
-function C(e, t, n) {
+function N(e, t, n) {
   let r = p.Z.getChannel(t);
   if (null == r) return null;
   let i = h.Z.getGuild(r.getGuildId());
@@ -65,7 +75,7 @@ function C(e, t, n) {
   }))
 }
 
-function N(e, t) {
+function R(e, t) {
   let n = p.Z.getChannel(t);
   if (null == n) return null;
   let r = h.Z.getGuild(n.getGuildId());
@@ -75,7 +85,7 @@ function N(e, t) {
   }))
 }
 
-function R(e, t) {
+function P(e, t) {
   let n = p.Z.getChannel(e);
   if (null == n) return null;
   let r = h.Z.getGuild(n.getGuildId());
@@ -96,15 +106,15 @@ function R(e, t) {
   }
 }
 
-function P(e) {
+function w(e) {
   var t, n, r;
   let [i] = null != (t = e.mentions) ? t : [];
   return null == i ? null : "object" == typeof i ? null != (n = m.default.getUser(i.id)) ? n : null : "string" == typeof i && null != (r = m.default.getUser(i)) ? r : null
 }
-let w = {
+let D = {
   stringify: function(e, t) {
     var n, i, p, h;
-    let m = P(e),
+    let m = w(e),
       E = e.channel_id,
       O = g.ZP.getName(null, E, e.author);
     switch (e.type) {
@@ -159,12 +169,14 @@ let w = {
           username: O,
           usernameOnClick: b.dG4
         }));
+      case b.uaV.EMOJI_ADDED:
+        return S(e);
       case b.uaV.GUILD_BOOST:
-        return S(O);
+        return A(O);
       case b.uaV.GUILD_BOOST_TIER_1:
       case b.uaV.GUILD_BOOST_TIER_2:
       case b.uaV.GUILD_BOOST_TIER_3:
-        return A(O, E);
+        return C(O, E);
       case b.uaV.GUILD_INVITE_REMINDER:
         return y.intl.string(y.t.gxyKvr);
       case b.uaV.THREAD_STARTER_MESSAGE:
@@ -187,10 +199,10 @@ let w = {
         }));
       case b.uaV.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION:
         if (e instanceof f.ZP) return null;
-        let w = (0, c.ZH)((0, l.e5)(e));
+        let D = (0, c.ZH)((0, l.e5)(e));
         return (0, a.Rp)((0, u.Y)({
           application: e.application,
-          username: w.nick
+          username: D.nick
         }));
       case b.uaV.PRIVATE_CHANNEL_INTEGRATION_ADDED:
         if (e instanceof f.ZP) return null;
@@ -218,13 +230,13 @@ let w = {
               return t === b.hBH.AUTO_MODERATION_NOTIFICATION
             }),
             n = null == t || null == (h = t.fields) ? true : h.find(e => "name" in e && e.name === r.D.NOTIFICATION_TYPE);
-          return R(E, null != n && "value" in n ? n.value : true)
+          return P(E, null != n && "value" in n ? n.value : true)
         }
         return e.content;
       case b.uaV.GUILD_INCIDENT_ALERT_MODE_ENABLED:
-        return C(O, E, e.content);
+        return N(O, E, e.content);
       case b.uaV.GUILD_INCIDENT_ALERT_MODE_DISABLED:
-        return N(O, E);
+        return R(O, E);
       default:
         return e.content
     }
