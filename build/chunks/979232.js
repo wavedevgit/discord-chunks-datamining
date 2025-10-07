@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => r
 });
 let r = (0, require("./427164.js").le)({
-  name: "2025-08-remove-quest-shiny-button",
+  name: "2025-09-remove-quest-shiny-button",
   kind: "user",
   defaultConfig: {
     shouldUseShinyButton: true
