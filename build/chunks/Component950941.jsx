@@ -63,15 +63,17 @@ function u(e) {
 function d(e) {
   let {
     useDecoration: t,
-    visibleContent: n
+    visibleContent: n,
+    isSelected: r
   } = e;
-  return t(n)
+  return t(n, r)
 }
 
 function f(e) {
   let {
     trailing: t,
-    visibleContent: n
+    visibleContent: n,
+    isSelected: l
   } = e;
   if (null == t) return null;
   switch (t.type) {
@@ -83,7 +85,8 @@ function f(e) {
       }));
     case o.PU.STRONGLY_DISCOURAGED_CUSTOM:
       return (0, r.jsx)(d, s(a({}, t), {
-        visibleContent: n
+        visibleContent: n,
+        isSelected: l
       }))
   }
 }

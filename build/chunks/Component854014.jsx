@@ -54,7 +54,8 @@ function m(e) {
       className: d.itemContent,
       children: (0, r.jsx)(c.W, {
         trailing: x,
-        visibleContent: n
+        visibleContent: n,
+        isSelected: y
       })
     })]
   }) : (0, r.jsxs)(r.Fragment, {
@@ -76,7 +77,8 @@ function m(e) {
         className: d.itemContent,
         children: (0, r.jsx)(c.W, {
           trailing: x,
-          visibleContent: n
+          visibleContent: n,
+          isSelected: y
         })
       })]
     }), y && O.length > 1 && (0, r.jsx)(u.Z, {

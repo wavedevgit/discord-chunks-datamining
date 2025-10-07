@@ -92,8 +92,8 @@ function S(e) {
     onPositionChange: C,
     scrollBehavior: N = "sticky"
   } = e, [R, P] = i.useState(p), [w, D] = i.useState(E), L = i.useRef(E), x = (0, c.e7)([d.Z], () => d.Z.getLayers()), M = null != (t = x[x.length - 1]) ? t : "base", j = i.useMemo(() => {
-    var e;
-    return null == a.current || (null == (e = a.current.closest("[data-layer]")) ? true : e.getAttribute("data-layer")) === M
+    var e, t;
+    return null == a.current || (null != (t = null == (e = a.current.closest("[data-layer]")) ? true : e.getAttribute("data-layer")) ? t : "base") === M
   }, [a, M]);
   i.useEffect(() => {
     j && p ? P(true) : j || P(false)
