@@ -29,7 +29,7 @@ let _ = {
         required: m,
         withDescriptions: g,
         withIcons: E
-      } = e, [b, y] = i.useState(), O = i.useMemo(() => {
+      } = e, [b, y] = i.useState("option1"), O = i.useMemo(() => {
         let e = [s.x, o.A, a.d, l.e, c.U];
         return [{
           name: "Option 1",

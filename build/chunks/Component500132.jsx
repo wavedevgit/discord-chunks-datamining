@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   C: () => b
-});
+}), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
@@ -75,31 +75,24 @@ function g() {
     className: Chunk841321.radioIndicator,
     width: 20,
     height: 20,
-    viewBox: "0 0 20 20",
+    viewBox: "0 0 40 40",
+    fill: "none",
     shapeRendering: "geometricPrecision",
     children: [(0, Chunk951288.jsx)("circle", {
-      cx: 10,
-      cy: 10,
-      r: 10,
+      cx: 20,
+      cy: 20,
+      r: 20,
       className: Chunk841321.outerRadioBase
     }), (0, Chunk951288.jsx)("circle", {
-      cx: 10,
-      cy: 10,
-      r: 9.5,
+      cx: 20,
+      cy: 20,
+      r: 20,
       className: Chunk841321.outerRadioFill
     }), (0, Chunk951288.jsx)("circle", {
-      cx: 10,
-      cy: 10,
-      r: 4,
+      cx: 20,
+      cy: 20,
+      r: 8,
       className: Chunk841321.innerDotRadio
-    }), (0, Chunk951288.jsx)("circle", {
-      cx: 10,
-      cy: 10,
-      r: 10,
-      fill: "none",
-      strokeWidth: 1,
-      vectorEffect: "non-scaling-stroke",
-      className: Chunk841321.outerRadioBorderStroke
     })]
   })
 }
@@ -111,35 +104,38 @@ function E(e) {
     leadingIcon: a,
     name: d,
     value: f,
-    shouldAnimateOut: _
-  } = e, p = (0, i.useRef)(null), h = (0, i.useRef)(null);
-  return (0, r.jsx)(c.tEY, {
+    isSelected: _
+  } = e, p = (0, i.useRef)(null), h = (0, i.useRef)(null), [m, E] = (0, i.useState)(true), b = (0, i.useRef)(false);
+  return (0, i.useEffect)(() => {
+    if (!b.current) {
+      b.current = true;
+      return
+    }
+    E(_ ? "animateIn" : "animateOut")
+  }, [_]), (0, r.jsx)(c.tEY, {
     focusTarget: p,
     ringTarget: p,
     within: true,
     children: (0, r.jsxs)(s.Y8, {
-      className: o()([u.item, _ && u.animateOut]),
+      className: o()([u.radioGroupOption, "string" == typeof m && u[m]]),
       value: f,
       isDisabled: n,
       inputRef: h,
       ref: p,
       children: [(0, r.jsx)(g, {}), (0, r.jsxs)(c.Kqy, {
         gap: 4,
-        children: [(0, r.jsx)(l._, {
+        children: [(0, r.jsxs)(l._, {
           className: u.label,
-          children: (0, r.jsxs)("div", {
-            className: u.labelContent,
-            children: [null != a && (0, r.jsx)(a, {
-              className: u.radioItemIcon,
-              size: "sm",
-              color: "currentColor",
-              "aria-hidden": true,
-              focusable: false
-            }), (0, r.jsx)(c.xvT, {
-              variant: "text-md/normal",
-              children: d
-            })]
-          })
+          children: [null != a && (0, r.jsx)(a, {
+            className: u.radioItemIcon,
+            size: "sm",
+            color: "currentColor",
+            "aria-hidden": true,
+            focusable: false
+          }), (0, r.jsx)(c.xvT, {
+            variant: "text-md/normal",
+            children: d
+          })]
         }), null != t && "" !== t ? (0, r.jsx)(c.xvT, {
           variant: "text-sm/normal",
           color: "text-secondary",
@@ -154,31 +150,26 @@ function b(e) {
   var {
     onChange: t,
     options: n,
-    value: a,
-    disabled: o = false,
-    "aria-labelledby": l
-  } = e, d = h(e, ["onChange", "options", "value", "disabled", "aria-labelledby"]);
-  let _ = (0, i.useRef)(true),
-    m = _.current;
-  (0, i.useEffect)(() => {
-    _.current = a
-  }, [a]);
-  let g = null != t ? e => t(e) : true;
-  return (0, r.jsx)(c.NIc, p(f({}, d), {
+    value: i,
+    disabled: a = false,
+    "aria-labelledby": o
+  } = e, l = h(e, ["onChange", "options", "value", "disabled", "aria-labelledby"]);
+  let d = null != t ? e => t(e) : true;
+  return (0, r.jsx)(c.NIc, p(f({}, l), {
     children: e => (0, r.jsx)(s.Ee, {
       id: e.controlId,
       className: u.group,
-      isDisabled: o,
-      onChange: g,
-      "aria-labelledby": null != l ? l : e.labelId,
+      isDisabled: a,
+      onChange: d,
+      "aria-labelledby": null != o ? o : e.labelId,
       "aria-describedby": e.describedById,
       "aria-errormessage": e.errorMessageId,
       "data-mana-component": "BaseRadioGroup",
-      value: a,
+      value: i,
       children: n.map((e, t) => (0, r.jsx)(E, p(f({
         index: t
       }, e), {
-        shouldAnimateOut: m === e.value
+        isSelected: i === e.value
       }), e.value))
     })
   }))

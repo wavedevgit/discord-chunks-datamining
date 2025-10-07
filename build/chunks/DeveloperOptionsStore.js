@@ -87,7 +87,8 @@ let m = (() => {
     disableAppCollectionsCache: false,
     isStreamInfoOverlayEnabled: false,
     preventPopoutClose: false,
-    logKeyboardMismatches: false
+    logKeyboardMismatches: false,
+    alertStartupMetrics: false
   },
   b = h({}, E);
 
@@ -169,6 +170,9 @@ class T extends(r = Chunk442837.ZP.Store) {
   }
   get logKeyboardMismatches() {
     return b.logKeyboardMismatches
+  }
+  get alertStartupMetrics() {
+    return b.alertStartupMetrics
   }
   getDebugOptionsHeaderValue() {
     return Object.keys(b).map(e => b[e]), Object.keys(b).filter(e => b[e]).join(",")

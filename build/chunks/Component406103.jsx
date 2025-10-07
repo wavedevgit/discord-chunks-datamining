@@ -23,7 +23,7 @@ let c = {
         description: u,
         iconPosition: d,
         withMixedDisabledOptions: f
-      } = e, [_, p] = i.useState([]), h = i.useMemo(() => [{
+      } = e, [_, p] = i.useState(["option1"]), h = i.useMemo(() => [{
         label: "Option 1",
         value: "option1",
         description: null != u || "" === u ? u : true,
