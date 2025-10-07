@@ -319,7 +319,7 @@ let z = [],
       [et, en] = (0, p.US)(ee),
       er = et === o.z.SEARCH_AUTHOR_TYPE_SEARCH_RESULTS_HINT,
       ei = i.useCallback(() => {
-        let e = "".concat(v.ZP[L.dCx.FILTER_AUTHOR_TYPE].key, " user") + " ";
+        let e = "".concat(v.ZP[L.dCx.FILTER_AUTHOR_TYPE].key, " ").concat(k.intl.string(k.t.tPZo4u)) + " ";
         S.Z.appendTextToSearchInput(t, e)
       }, [t]);
     return (0, r.jsxs)("section", {
