@@ -895,7 +895,9 @@ function tE(e) {
   }) : G.intl.formatToPlainString(G.t.DV47Gx, {
     gamePublisher: n,
     cosponsorName: i
-  }) : G.intl.formatToPlainString(G.t.tOWwxM, {
+  }) : G.intl.formatToPlainString(L.m8.getConfig({
+    location: j.dr.QUEST_DISCLOSURE_MODAL
+  }).enabled ? G.t.euizJS : G.t.tOWwxM, {
     gamePublisher: n,
     gameTitle: r
   })

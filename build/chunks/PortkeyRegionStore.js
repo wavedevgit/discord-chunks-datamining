@@ -6,7 +6,7 @@ require.d(exports, {
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function l(e, n, t) {
+function a(e, n, t) {
   return n in e ? Object.defineProperty(e, n, {
     value: t,
     enumerable: true,
@@ -17,20 +17,23 @@ function l(e, n, t) {
 let o = {},
   s = [];
 
-function c() {
+function d() {
   o = {}
 }
-class d extends(r = Chunk442837.ZP.Store) {
+class c extends(r = Chunk442837.ZP.Store) {
   getRegionStateForPingUrl(e) {
     if (null != e) return o[e]
+  }
+  getRegionState() {
+    return o
   }
   getRegions() {
     return s
   }
 }
-l(d, "displayName", "PortkeyRegionStore");
-let u = new d(Chunk570140.Z, {
-  LOGOUT: c,
+a(c, "displayName", "PortkeyRegionStore");
+let u = new c(Chunk570140.Z, {
+  LOGOUT: d,
   PORTKEY_REGION_PING_STATE_UPDATE: function(e) {
     var n, t;
     let {
@@ -44,7 +47,7 @@ let u = new d(Chunk570140.Z, {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
           return Object.getOwnPropertyDescriptor(t, e).enumerable
         }))), r.forEach(function(n) {
-          l(e, n, t[n])
+          a(e, n, t[n])
         })
       }
       return e
@@ -61,7 +64,7 @@ let u = new d(Chunk570140.Z, {
       Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(t, e))
     }), o = n
   },
-  PORTKEY_REGION_PING_STATE_RESET: c,
+  PORTKEY_REGION_PING_STATE_RESET: d,
   PORTKEY_FETCH_REGIONS_SUCCESS: function(e) {
     let {
       regions: n

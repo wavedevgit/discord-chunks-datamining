@@ -51,45 +51,45 @@ function f(e) {
   let {
     step: n,
     setFooterNode: t
-  } = (0, c.aj)(), {
-    title: l,
+  } = (0, d.aj)(), {
+    title: a,
     subtitle: f
   } = function(e) {
     switch (e) {
-      case d.Vb.SELECT_GAME:
+      case c.Vb.SELECT_GAME:
         return {
-          title: m.intl.string(u.default.DG1SHB), subtitle: m.intl.string(u.default.hkWuWF)
+          title: g.intl.string(u.default.DG1SHB), subtitle: g.intl.string(u.default.hkWuWF)
         };
-      case d.Vb.SERVER_SETTINGS:
+      case c.Vb.SERVER_SETTINGS:
         return {
-          title: m.intl.string(u.default.Eonh9P)
+          title: g.intl.string(u.default.Eonh9P)
         }
     }
   }(n);
   return (0, r.jsxs)(i.IX, x(p({}, e), {
     size: "lg",
     children: [(0, r.jsx)(i.xBx, {
-      title: l,
+      title: a,
       subtitle: f
-    }), (0, r.jsx)(a.zJl, {
-      className: g.modalContent,
+    }), (0, r.jsx)(l.zJl, {
+      className: m.modalContent,
       style: {
-        width: d.M4
+        width: c.M4
       },
       children: (0, r.jsx)("div", {
         style: {
-          padding: d.hK
+          padding: c.hK
         },
-        children: (0, r.jsxs)(a.MyZ, {
-          width: d.Ne,
+        children: (0, r.jsxs)(l.MyZ, {
+          width: c.Ne,
           activeSlide: n,
-          children: [(0, r.jsx)(a.Mi4, {
-            id: d.Vb.SELECT_GAME,
+          children: [(0, r.jsx)(l.Mi4, {
+            id: c.Vb.SELECT_GAME,
             children: (0, r.jsx)(o.Z, {})
-          }, d.Vb.SELECT_GAME), (0, r.jsx)(a.Mi4, {
-            id: d.Vb.SERVER_SETTINGS,
+          }, c.Vb.SELECT_GAME), (0, r.jsx)(l.Mi4, {
+            id: c.Vb.SERVER_SETTINGS,
             children: (0, r.jsx)(s.Z, {})
-          }, d.Vb.SERVER_SETTINGS)]
+          }, c.Vb.SERVER_SETTINGS)]
         })
       })
     }), (0, r.jsx)("div", {
@@ -101,10 +101,10 @@ function f(e) {
 function _(e) {
   let {
     analyticsLocations: n
-  } = (0, l.ZP)();
-  return (0, r.jsx)(l.Gt, {
+  } = (0, a.ZP)();
+  return (0, r.jsx)(a.Gt, {
     value: n,
-    children: (0, r.jsx)(c.KO, x(p({}, e), {
+    children: (0, r.jsx)(d.KO, x(p({}, e), {
       children: (0, r.jsx)(f, p({}, e))
     }))
   })
