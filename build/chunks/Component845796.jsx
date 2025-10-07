@@ -78,7 +78,7 @@ let b = () => {
       cta_name: "sort by ".concat(n.label.toLowerCase()),
       page_type: "catalog"
     }), t(x(e))
-  }, [Chunk120356, v, x, exports]), T = v(module);
+  }, [Chunk120356, v, x, exports]), y = v(module);
   return (0, Chunk951288.jsx)("div", {
     className: a()(Chunk182668.container, {
       [Chunk345213.shopTakeOver]: b
@@ -86,7 +86,7 @@ let b = () => {
     children: (0, Chunk951288.jsx)(Chunk481060.PhF, {
       options: S.map(v),
       select: O,
-      isSelected: e => e === T.value,
+      isSelected: e => e === y.value,
       serialize: e => e,
       popoutWidth: 224,
       popoutClassName: a()({

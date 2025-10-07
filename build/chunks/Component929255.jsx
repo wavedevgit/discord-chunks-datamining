@@ -2,7 +2,7 @@
 /** chunk id: 929255, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => y
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk452785 = require("./452785.js");
 
-function T(e) {
+function y(e) {
   let {
     isFullScreen: t,
     tab: n,
@@ -70,7 +70,7 @@ function T(e) {
         className: O.shopScroll,
         ref: f,
         onScroll: h,
-        children: (0, r.jsx)(y, {
+        children: (0, r.jsx)(T, {
           isFullScreen: t,
           isSmallScreen: v,
           filterBarOpen: E,
@@ -89,22 +89,22 @@ function T(e) {
     })
   })
 }
-let y = e => {
+let T = e => {
   let {
     isFullScreen: t,
     isSmallScreen: n,
     filterBarOpen: s,
     setFilterBarOpen: o,
     tab: C,
-    scrollerRef: T,
-    sortedCategories: y,
+    scrollerRef: y,
+    sortedCategories: T,
     setCategoryRef: L
   } = e, j = (0, d.FF)("CollectiblesBrowse"), k = l.useRef(null), I = (0, g.S)(e => e.hasDefaultFilters()), P = (0, u.sp)(), {
     handlePageChange: N,
     currentPage: B
   } = (0, m.h)({
-    scrollerRef: T,
-    sortedCategories: y
+    scrollerRef: y,
+    sortedCategories: T
   }), A = l.useCallback(e => {
     c.default.track(v.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
       collectibles_shop_session_id: null == P ? true : P.sessionId,
@@ -184,11 +184,11 @@ let y = e => {
         })]
       }), j && !I ? (0, r.jsx)(b.Z, {
         isFullScreen: t,
-        scrollerRef: T,
+        scrollerRef: y,
         tab: C
       }, C) : (0, S.RE)(C) ? (0, r.jsx)(E.Z, {
         isFullScreen: t,
-        scrollerRef: T,
+        scrollerRef: y,
         tab: C
       }, C) : (0, r.jsx)(u.k0, {
         newValue: {
@@ -196,7 +196,7 @@ let y = e => {
         },
         children: (0, r.jsx)(f.Z, {
           isFullScreen: t,
-          sortedCategories: y,
+          sortedCategories: T,
           setCategoryRef: L,
           currentPage: B,
           handlePageChange: A

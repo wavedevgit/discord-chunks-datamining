@@ -23,7 +23,7 @@ var r = function(e) {
     return e[e.ALL_GOOD = 100] = "ALL_GOOD", e[e.LIMITED = 200] = "LIMITED", e[e.VERY_LIMITED = 300] = "VERY_LIMITED", e[e.AT_RISK = 400] = "AT_RISK", e[e.SUSPENDED = 500] = "SUSPENDED", e
   }({}),
   s = function(e) {
-    return e[e.DSA_ELIGIBLE = 1] = "DSA_ELIGIBLE", e[e.IN_APP_ELIGIBLE = 2] = "IN_APP_ELIGIBLE", e[e.AGE_VERIFY_ELIGIBLE = 3] = "AGE_VERIFY_ELIGIBLE", e
+    return e[e.DSA_ELIGIBLE = 1] = "DSA_ELIGIBLE", e[e.IN_APP_ELIGIBLE = 2] = "IN_APP_ELIGIBLE", e[e.AGE_VERIFY_ELIGIBLE = 3] = "AGE_VERIFY_ELIGIBLE", e[e.AGE_VERIFY_GLOBAL_ELIGIBLE = 4] = "AGE_VERIFY_GLOBAL_ELIGIBLE", e
   }({}),
   l = function(e) {
     return e[e.WEBFORM = 0] = "WEBFORM", e[e.AGE_VERIFY = 1] = "AGE_VERIFY", e[e.IN_APP = 2] = "IN_APP", e

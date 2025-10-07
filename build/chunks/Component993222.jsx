@@ -33,12 +33,12 @@ let m = e => {
       isPremiumUser: v,
       tab: g,
       hasDiscountOffer: null != x
-    }), T = (0, u.Yq)(t.skuId), y = (null == E ? true : E.skuId) === C.bu && (0, u.WW)(t.skuId);
-    return b || m || !T ? O ? (0, r.jsx)(s.IGR, {
+    }), y = (0, u.Yq)(t.skuId), T = (null == E ? true : E.skuId) === C.bu && (0, u.WW)(t.skuId);
+    return b || m || !y ? O ? (0, r.jsx)(s.IGR, {
       text: h.intl.string(h.t["0TmQRE"]),
       disableColor: true,
       className: _.productCardBadge
-    }) : y ? (0, r.jsx)(s.IGR, {
+    }) : T ? (0, r.jsx)(s.IGR, {
       text: h.intl.string(h.t.S6kE9v),
       disableColor: true,
       className: _.productCardBadge

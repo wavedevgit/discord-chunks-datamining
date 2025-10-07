@@ -19,6 +19,6 @@ class a {
     return new a(e)
   }
   constructor(e) {
-    i(this, "bannerUrl", true), i(this, "title", true), i(this, "body", true), i(this, "categoryStoreListingId", true), i(this, "bannerTextColor", true), i(this, "disableCta", true), this.type = r.z.WIDE_BANNER, this.bannerUrl = e.banner_url, this.title = e.title, this.body = e.body, this.categoryStoreListingId = e.category_store_listing_id, this.bannerTextColor = e.banner_text_color, this.disableCta = e.disable_cta
+    i(this, "title", true), i(this, "body", true), i(this, "categoryStoreListingId", true), i(this, "bannerTextColor", true), i(this, "disableCta", true), i(this, "oldBannerURL", true), i(this, "bannerURL", true), i(this, "bannerAnimatedURL", true), this.type = r.z.WIDE_BANNER, this.title = e.title, this.body = e.body, this.categoryStoreListingId = e.category_store_listing_id, this.bannerTextColor = e.banner_text_color, this.disableCta = e.disable_cta, this.oldBannerURL = e.banner_url, this.bannerURL = e.wide_banner_url, this.bannerAnimatedURL = e.wide_banner_animated_url
   }
 }

@@ -35,12 +35,12 @@ function S(e) {
   } = e, S = v();
   x(S);
   let O = (0, s.e7)([a.Z], () => a.Z.useReducedMotion),
-    [T, y] = l.useState(true),
+    [y, T] = l.useState(true),
     L = l.useCallback(async (e, t, r) => {
       u(e, t);
       let l = r && !n && !O,
         s = (0, d.$2)(t) ? b.AW.ORBS : b.AW.CATALOG;
-      y(t), await o(s, l)
+      T(t), await o(s, l)
     }, [n, O, o, u]),
     j = (0, g.FF)("CollectiblesContent"),
     {
@@ -59,8 +59,8 @@ function S(e) {
     isFullScreen: n,
     tab: t,
     sortedCategories: i,
-    initialCategoryId: T,
-    onUnmount: () => y(true)
+    initialCategoryId: y,
+    onUnmount: () => T(true)
   })
 }
 let v = () => (0, Chunk442837.e7)([Chunk597688.Z, Chunk1870.Z], () => null != Chunk597688.Z.error ? "shop load fetch categories error: ".concat(Chunk597688.Z.error.message) : null != Chunk1870.Z.claimError ? "shop load claim error: ".concat(Chunk1870.Z.claimError.message) : null != Chunk1870.Z.fetchError ? "shop load fetch purchase error: ".concat(Chunk1870.Z.fetchError.message) : true),

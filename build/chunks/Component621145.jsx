@@ -33,7 +33,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk217702 = require("./217702.js"),
   Chunk20316 = require("./20316.js");
 
-function L(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -52,7 +52,7 @@ function L(e) {
   return e
 }
 
-function k(e, t) {
+function I(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -64,7 +64,7 @@ function k(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let I = e => {
+let k = e => {
   let {
     message: t
   } = e, {
@@ -77,7 +77,7 @@ let I = e => {
     return (0, d.dn)(e.originalItem, t)
   }
   return (0, i.jsx)("div", {
-    className: N.classificationEvidenceMessageAttachment,
+    className: L.classificationEvidenceMessageAttachment,
     children: (0, i.jsx)(b.Z, {
       items: n.map(e => {
         var n;
@@ -116,7 +116,7 @@ let I = e => {
                 width: n ? a : "100%",
                 height: n ? o : "100%"
               },
-              children: (0, i.jsx)(s.ZP, {
+              children: (0, i.jsx)(r.ZP, {
                 className: e.className,
                 forceExternal: false,
                 src: t.url,
@@ -126,7 +126,7 @@ let I = e => {
                 volume: e.volume,
                 autoPlay: false,
                 autoMute: false,
-                type: s.ZP.Types.VIDEO,
+                type: r.ZP.Types.VIDEO,
                 mediaLayoutType: e.mediaLayoutType,
                 fileName: t.filename,
                 fileSize: null == t.size ? true : t.size.toString(),
@@ -141,7 +141,7 @@ let I = e => {
               })
             })
           })(t, e, a),
-          renderImageComponent: e => (0, i.jsx)(g.dS, k(L({}, e), {
+          renderImageComponent: e => (0, i.jsx)(g.dS, I(N({}, e), {
             hiddenSpoilers: true,
             shouldHideMediaOptions: true,
             shouldLink: false
@@ -162,20 +162,20 @@ function U(e) {
   var t;
   let {
     flaggedContent: n
-  } = e, l = (0, o.e7)([j.default], () => j.default.getCurrentUser()), [s, d] = a.useState({}), [m, g] = a.useState(true), y = (0, o.e7)([A.Z], () => A.Z.getUsername()), b = n[0], E = ((e, t, n, i) => {
+  } = e, l = (0, o.e7)([j.default], () => j.default.getCurrentUser()), [r, d] = a.useState({}), [m, g] = a.useState(true), y = (0, o.e7)([P.Z], () => P.Z.getUsername()), b = n[0], E = ((e, t, n, i) => {
     let a = e.attachments.map(e => {
       var n, i, a, l;
-      let o = k(L({}, e), {
+      let o = I(N({}, e), {
         filename: (0, C.eS)(e),
         size: 0,
         proxy_url: e.url
       });
-      return (0, c.CO)(e.filename) || (0, c.NU)(e.filename) ? k(L({}, o), {
+      return (0, c.CO)(e.filename) || (0, c.NU)(e.filename) ? I(N({}, o), {
         width: null != (a = null == (n = t[e.id]) ? true : n.width) ? a : w.Sv,
         height: null != (l = null == (i = t[e.id]) ? true : i.height) ? l : w.EY
       }) : o
     });
-    return (0, u.e5)(k(L({}, (0, p.ZP)({
+    return (0, u.e5)(I(N({}, (0, p.ZP)({
       author: null != n ? n : {
         id: "",
         avatar: true,
@@ -187,11 +187,11 @@ function U(e) {
       type: T.uaV.DEFAULT,
       channelId: T.lds
     })), {
-      timestamp: new Date(P.default.extractTimestamp(e.id)).toISOString(),
+      timestamp: new Date(A.default.extractTimestamp(e.id)).toISOString(),
       attachments: a,
       state: T.yb.SENT
     }))
-  })(b, s, l, y), O = (0, f.ZP)(E), S = (0, v.Z)(E, {
+  })(b, r, l, y), O = (0, f.ZP)(E), S = (0, v.Z)(E, {
     hideSimpleEmbedContent: false,
     allowList: false,
     allowHeading: false,
@@ -226,15 +226,15 @@ function U(e) {
         width: 0,
         height: 0
       })
-    }).then(t => d(n => k(L({}, n), {
+    }).then(t => d(n => I(N({}, n), {
       [e.id]: t
     }))))).finally(() => g(false))
   }, [b.attachments]), "" === E.content && 0 === E.attachments.length) ? null : (0, i.jsx)("div", {
-    className: N.classificationEvidenceCard,
-    children: m ? (0, i.jsx)(r.$jN, {}) : (0, i.jsx)(h.Z, {
+    className: L.classificationEvidenceCard,
+    children: m ? (0, i.jsx)(s.$jN, {}) : (0, i.jsx)(h.Z, {
       compact: false,
-      childrenHeader: (0, _.Z)({
-        author: k(L({}, l), {
+      childrenHeader: (0, x.Z)({
+        author: I(N({}, l), {
           colorString: "",
           colorStrings: null,
           nick: null != (t = null == l ? true : l.username) ? t : y
@@ -248,10 +248,10 @@ function U(e) {
         roleIcon: true,
         hideTimestamp: false
       }),
-      childrenAccessories: (0, i.jsx)(I, {
+      childrenAccessories: (0, i.jsx)(k, {
         message: E
       }),
-      childrenMessageContent: (0, x.Z)({
+      childrenMessageContent: (0, _.Z)({
         message: E
       }, S.content),
       hasThread: false,

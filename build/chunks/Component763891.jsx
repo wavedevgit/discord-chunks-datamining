@@ -55,7 +55,7 @@ function A(e) {
       case v.AW.NAMEPLATES:
         return [O.intl.string(O.t.V68Fq6), G ? P.Z : I.Z, s.Z.NAMEPLATE];
       case v.AW.BUNDLES:
-        return [O.intl.string(O.t.FYFppq), G ? L.Z : y.Z, s.Z.BUNDLE]
+        return [O.intl.string(O.t.FYFppq), G ? L.Z : T.Z, s.Z.BUNDLE]
     }
   }, [Z, G]), X = (0, C.a)(), Q = l.useMemo(() => X(W.filter(e => {
     var t;
@@ -88,13 +88,13 @@ function A(e) {
       style: {
         backgroundImage: "url(".concat(q, ")")
       },
-      className: T.bannerContainer,
+      className: y.bannerContainer,
       children: (0, r.jsx)(o.X6q, {
         variant: "heading-xxl/extrabold",
         children: K
       })
     }), (0, r.jsx)("div", {
-      className: T.products,
+      className: y.products,
       children: J.slice(40 * (U - 1), 40 * U).map((e, t) => {
         let n = p.Z.getCategory(e.categorySkuId);
         return null == n ? null : (0, r.jsx)(g.k0, {
@@ -112,7 +112,7 @@ function A(e) {
         }, e.skuId)
       })
     }), J.length > 40 && (0, r.jsx)("div", {
-      className: T.paginationContainer,
+      className: y.paginationContainer,
       children: (0, r.jsx)("div", {
         children: (0, r.jsx)(o.DsT, {
           currentPage: U,

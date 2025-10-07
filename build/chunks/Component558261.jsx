@@ -204,13 +204,13 @@ let B = e => {
     } = e, a = (0, m.Nd)(), c = null == a ? true : a.tab, u = (0, s.e7)([p.default], () => p.default.getCurrentUser()), d = f.ZP.canUseCollectibles(u), {
       isPurchased: g,
       isPartiallyOwnedBundle: C
-    } = (0, v.L)(t), O = (0, b.G1)(t), T = (0, b.rN)(t), {
+    } = (0, v.L)(t), O = (0, b.G1)(t), y = (0, b.rN)(t), {
       isDisabled: j
     } = (0, S.G)(t.skuId), I = (0, b.ne)({
       product: t,
       isPartiallyOwnedBundle: C,
       isPurchased: g
-    }), P = (0, y.Iw)(t), N = null != P, {
+    }), P = (0, T.Iw)(t), N = null != P, {
       shouldCheckoutWithOrbs: D,
       hasSufficientOrbs: M,
       checkoutEligiblePrices: W
@@ -227,7 +227,7 @@ let B = e => {
     } = (0, E.W)({
       product: t
     });
-    return !O || d || T ? !I || j ? (0, r.jsx)(R, {
+    return !O || d || y ? !I || j ? (0, r.jsx)(R, {
       handlePreviewButtonClick: z
     }) : g ? (0, r.jsx)(Z, {
       handleUseNow: q,
@@ -268,7 +268,7 @@ let B = e => {
       selectedVariantIndex: l
     } = e, s = (0, x.LJ)(t);
     if (null == s) return null;
-    let a = (0, T.W)(s, l);
+    let a = (0, y.W)(s, l);
     return (0, r.jsx)(D, {
       product: a,
       cardRef: n,

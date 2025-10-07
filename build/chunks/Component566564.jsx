@@ -95,9 +95,9 @@ let I = e => {
         categories: []
       }), (0, r.jsx)(E.Z, {
         isLoading: B,
-        title: c === y.AW.ORBS ? j.intl.string(j.t.dFgeub) : j.intl.string(j.t.NSv5KS),
+        title: c === T.AW.ORBS ? j.intl.string(j.t.dFgeub) : j.intl.string(j.t.NSv5KS),
         numVisibleItems: s,
-        hasSorting: c === y.AW.HOME,
+        hasSorting: c === T.AW.HOME,
         tab: c
       })]
     }) : (0, r.jsx)(r.Fragment, {
@@ -124,18 +124,18 @@ let I = e => {
           case i.z.FEED:
             let f = e.sortedSkuIds;
             d = (0, r.jsx)(E.Z, {
-              title: c === y.AW.ORBS ? j.intl.string(j.t.dFgeub) : j.intl.string(j.t.NSv5KS),
+              title: c === T.AW.ORBS ? j.intl.string(j.t.dFgeub) : j.intl.string(j.t.NSv5KS),
               isLoading: B || o,
               numVisibleItems: s,
               sortedSkuIds: f,
               buttonContainerClassName: (null == t ? true : t.type) === i.z.IMMERSIVE_BANNER ? k.feedblockInteractiveBackground : true,
-              hasSorting: c === y.AW.HOME,
-              prioritizeUserDiscounts: c === y.AW.HOME,
+              hasSorting: c === T.AW.HOME,
+              prioritizeUserDiscounts: c === T.AW.HOME,
               tab: c
             }, l);
             break;
           case i.z.WIDE_BANNER:
-            d = (0, r.jsx)(T.Z, {
+            d = (0, r.jsx)(y.Z, {
               handleTransition: n,
               wideBannerBlock: e,
               tab: c
@@ -184,13 +184,13 @@ let I = e => {
       transitionState: a
     } = e, i = l.useRef(null), {
       handleScroll: g
-    } = (0, c.z)(i, s), p = (0, h.R)(), f = (0, d.sp)(), [C, _] = l.useState(y.IV), [m, b] = l.useState(false);
+    } = (0, c.z)(i, s), p = (0, h.R)(), f = (0, d.sp)(), [C, _] = l.useState(T.IV), [m, b] = l.useState(false);
     return l.useEffect(() => {
       if (null != i.current) {
         let e = () => {
             if (null == i.current) return;
             let e = i.current.getDistanceFromBottom();
-            C >= 36 ? b(e < 20) : e <= 200 && _(e => e + y.IV)
+            C >= 36 ? b(e < 20) : e <= 200 && _(e => e + T.IV)
           },
           t = i.current.getScrollerNode();
         return null == t || t.addEventListener("scroll", e), () => {
@@ -211,7 +211,7 @@ let I = e => {
             isFetchingCategories: p,
             tab: s,
             isFullScreen: t
-          }), s !== y.AW.CATALOG && C >= 36 && (0, r.jsxs)("div", {
+          }), s !== T.AW.CATALOG && C >= 36 && (0, r.jsxs)("div", {
             className: k.endOfFeed,
             children: [(0, r.jsx)(o.X6q, {
               variant: "heading-md/semibold",
@@ -223,7 +223,7 @@ let I = e => {
                 n("shop all button", true, true), u.default.track(L.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                   collectibles_shop_session_id: null == f ? true : f.sessionId,
                   page_type: s,
-                  page_category: s === y.AW.HOME || null == f ? true : f.pageCategory,
+                  page_category: s === T.AW.HOME || null == f ? true : f.pageCategory,
                   cta_name: "browse the shop button"
                 })
               },
@@ -233,13 +233,13 @@ let I = e => {
         }), !t && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(O.Z, {
             peaking: m,
-            transitioning: a === y.f7.OUT
+            transitioning: a === T.f7.OUT
           }), (0, r.jsx)(O.Z, {
             style: {
               left: 1850
             },
             peaking: m,
-            transitioning: a === y.f7.OUT
+            transitioning: a === T.f7.OUT
           })]
         })]
       })

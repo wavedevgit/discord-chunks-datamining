@@ -35,8 +35,8 @@ function _(e, t) {
     v = (0, f.Z)(),
     x = (0, i.e7)([c.Z], () => c.Z.productsWithVariantsAsGroup),
     O = (0, i.e7)([u.Z], () => u.Z.getUserDiscounts()),
-    T = (0, g.a)(),
-    [y, L] = r.useState([]),
+    y = (0, g.a)(),
+    [T, L] = r.useState([]),
     j = r.useCallback(() => {
       S(a.m.RANDOM), L(s().shuffle(x))
     }, [x]);
@@ -45,8 +45,8 @@ function _(e, t) {
   }, [x]);
   let k = r.useMemo(() => {
     let e = [];
-    return E === a.m.RECENT ? e = x : E === a.m.PRICE_LOW_TO_HIGH ? e = (0, d.hC)([...x], t) : E === a.m.RECOMMENDED ? e = n ? (0, d.Qf)(v(_), O) : v(_) : E === a.m.POPULAR ? e = n ? (0, d.Qf)(v(m), O) : v(m) : E === a.m.RANDOM && (e = y), T(e)
-  }, [E, T, x, y, t, v, _, m, O, n]);
+    return E === a.m.RECENT ? e = x : E === a.m.PRICE_LOW_TO_HIGH ? e = (0, d.hC)([...x], t) : E === a.m.RECOMMENDED ? e = n ? (0, d.Qf)(v(_), O) : v(_) : E === a.m.POPULAR ? e = n ? (0, d.Qf)(v(m), O) : v(m) : E === a.m.RANDOM && (e = T), y(e)
+  }, [E, y, x, T, t, v, _, m, O, n]);
   return {
     sortType: E,
     setSortType: S,

@@ -86,14 +86,14 @@ let M = e => {
       {
         categories: q,
         refreshCategories: Y
-      } = (0, T.ZP)({
+      } = (0, y.ZP)({
         logPerf: true
       }, {
         sessionId: s,
         tab: K,
         isFullScreen: t
       }),
-      X = (0, y.O)(q),
+      X = (0, T.O)(q),
       [Q, J] = l.useState(),
       $ = (0, o.e7)([v.Z], () => {
         var e;

@@ -31,8 +31,8 @@ let C = e => {
     } = (0, u.E)(S, "home", "marketing featured block"),
     x = (0, d.YG)(_, m),
     O = l.useRef(null),
-    T = null == m ? true : m.bodyText,
-    y = (0, o.sp)();
+    y = null == m ? true : m.bodyText,
+    T = (0, o.sp)();
   return (0, r.jsx)(s.$, {
     innerRef: O,
     onChange: v,
@@ -40,18 +40,35 @@ let C = e => {
     children: (0, r.jsxs)(a.P3F, {
       className: f.featuredBlock,
       innerRef: O,
-      style: {
+      style: function(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var n = null != arguments[t] ? arguments[t] : {},
+            r = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(n, e).enumerable
+          }))), r.forEach(function(t) {
+            var r;
+            r = n[t], t in e ? Object.defineProperty(e, t, {
+              value: r,
+              enumerable: true,
+              configurable: true,
+              writable: true
+            }) : e[t] = r
+          })
+        }
+        return e
+      }({}, null != x && {
         backgroundImage: "url(".concat(x, ")")
-      },
+      }),
       onClick: () => {
         E("shop marketing tile", S), i.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-          collectibles_shop_session_id: null == y ? true : y.sessionId,
+          collectibles_shop_session_id: null == T ? true : T.sessionId,
           sku_id: S,
           page_type: "home",
-          page_section: null == y ? true : y.pageSection,
-          page_category: null == y ? true : y.pageCategory,
+          page_section: null == T ? true : T.pageSection,
+          page_category: null == T ? true : T.pageCategory,
           tile_type: "FEATURED_BLOCK",
-          tile_position: String(null == y ? true : y.tilePosition),
+          tile_position: String(null == T ? true : T.tilePosition),
           cta_name: null
         })
       },
@@ -61,14 +78,14 @@ let C = e => {
         className: f.featuredBlockBadge
       }), (0, r.jsx)("div", {
         className: f.featuredBlockTextContainer,
-        children: null != T && (0, r.jsx)(a.X6q, {
+        children: null != y && (0, r.jsx)(a.X6q, {
           lineClamp: 4,
           className: f.featuredBlockBodyText,
           style: {
             color: null != (C = null == m ? true : m.bannerTextColor) ? C : "white"
           },
           variant: "heading-md/medium",
-          children: T
+          children: y
         })
       }), (0, r.jsx)("div", {
         className: f.featuredBlockButtonContainer,
@@ -77,13 +94,13 @@ let C = e => {
           text: p.intl.string(p.t.jVcuVV),
           onClick: e => {
             E("shop marketing take me there button", S), e.stopPropagation(), i.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-              collectibles_shop_session_id: null == y ? true : y.sessionId,
+              collectibles_shop_session_id: null == T ? true : T.sessionId,
               sku_id: S,
               page_type: "home",
-              page_section: null == y ? true : y.pageSection,
-              page_category: null == y ? true : y.pageCategory,
+              page_section: null == T ? true : T.pageSection,
+              page_category: null == T ? true : T.pageCategory,
               tile_type: "FEATURED_BLOCK",
-              tile_position: String(null == y ? true : y.tilePosition),
+              tile_position: String(null == T ? true : T.tilePosition),
               cta_name: "Take me there button"
             })
           }

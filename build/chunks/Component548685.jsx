@@ -43,14 +43,14 @@ let P = e => {
     prioritizeUserDiscounts: A,
     tab: R,
     buttonContainerClassName: Z
-  } = e, w = (0, i.e7)([d.default], () => d.default.getCurrentUser()), H = C.ZP.canUseCollectibles(w), F = (0, y.G)("FeedBlock"), {
+  } = e, w = (0, i.e7)([d.default], () => d.default.getCurrentUser()), H = C.ZP.canUseCollectibles(w), F = (0, T.G)("FeedBlock"), {
     sortType: D,
     setSortType: M,
     sortedItems: W,
     sortOptions: U,
     shuffleProducts: V,
     showRecommendationOption: z
-  } = (0, O.Z)(P, H, A), G = (0, T.St)(W), K = (0, i.e7)([u.Z], () => u.Z.useReducedMotion), q = (0, i.e7)([g.Z], () => g.Z.isFocused()), Y = !K && q, {
+  } = (0, O.Z)(P, H, A), G = (0, y.St)(W), K = (0, i.e7)([u.Z], () => u.Z.useReducedMotion), q = (0, i.e7)([g.Z], () => g.Z.isFocused()), Y = !K && q, {
     animationPhase: X,
     startAnimation: Q
   } = (0, x.y)(), J = (0, h.sp)(), $ = null != (t = null == J ? true : J.sessionId) ? t : "", ee = l.useRef(null), et = l.useCallback(e => {

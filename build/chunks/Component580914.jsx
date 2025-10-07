@@ -50,7 +50,6 @@ let M = (0, Chunk884697.IC)(90),
     logoUrl: "",
     categorySkuId: true,
     bannerAsset: true,
-    fallbackBannerUrl: "",
     summary: "",
     type: Chunk685816.z.HERO,
     categoryStoreListingId: ""
@@ -79,15 +78,14 @@ let M = (0, Chunk884697.IC)(90),
         }),
         categorySkuId: U.skuId,
         bannerAsset: U.heroBannerAsset,
-        fallbackBannerUrl: (0, E.uV)(U.heroBanner, {
-          size: w.pv,
-          format: "jpg"
-        }),
         summary: U.summary,
         type: o.z.HERO,
         categoryStoreListingId: U.storeListingId,
-        bannerConfig: U.heroBannerConfig,
-        logoConfig: U.heroLogoDisplayConfig
+        bannerDisplayConfig: U.heroBannerDisplayConfig,
+        logoDisplayConfig: U.heroLogoDisplayConfig,
+        heroLogoUrl: U.heroLogoUrl,
+        heroBannerUrl: U.heroBannerUrl,
+        heroBannerAnimatedUrl: U.heroBannerAnimatedUrl
       }
     }, [V, U]), {
       bannerStyleOverrides: en,
@@ -115,7 +113,7 @@ let M = (0, Chunk884697.IC)(90),
         }, [s, a, e]),
         totalCards: e ? t : 4
       }
-    })(z !== w.AW.ORBS), eC = (0, T.a)()(ed), eh = (0, y.l)(eC).slice(0, ef), e_ = (0, B.St)(eh), em = z === w.AW.ORBS ? F.intl.string(F.t["1CdL8f"]) : Y ? F.intl.string(F.t.guWAg4) : ee ? F.intl.string(F.t["/QvRam"]) : F.intl.string(F.t.xYKa1d), eb = (0, v.FF)("CollectiblesContent"), eE = (0, E.$2)(et.categorySkuId), eS = S.Z.useConfig({
+    })(z !== w.AW.ORBS), eC = (0, y.a)()(ed), eh = (0, T.l)(eC).slice(0, ef), e_ = (0, B.St)(eh), em = z === w.AW.ORBS ? F.intl.string(F.t["1CdL8f"]) : Y ? F.intl.string(F.t.guWAg4) : ee ? F.intl.string(F.t["/QvRam"]) : F.intl.string(F.t.xYKa1d), eb = (0, v.FF)("CollectiblesContent"), eE = (0, E.$2)(et.categorySkuId), eS = S.Z.useConfig({
       location: "HeroBlock"
     }).showCardsV2, ev = () => {
       z === w.AW.ORBS ? ((0, C.Y)({
@@ -147,7 +145,7 @@ let M = (0, Chunk884697.IC)(90),
         style: null != eo ? {
           background: eo
         } : true,
-        children: (0, r.jsx)(Z.Z, {
+        children: null != es && (0, r.jsx)(Z.Z, {
           bannerStatic: es,
           bannerAnimated: ea,
           isResponsive: ei,
@@ -178,7 +176,7 @@ let M = (0, Chunk884697.IC)(90),
               className: a()(D.heroLogoNameContainer, {
                 [D.heroLogoNameContainerStacked]: $
               }),
-              children: [null != et.logoUrl && (0, r.jsx)("img", {
+              children: [null != el && (0, r.jsx)("img", {
                 className: D.heroHeaderLogo,
                 src: el,
                 alt: et.name,

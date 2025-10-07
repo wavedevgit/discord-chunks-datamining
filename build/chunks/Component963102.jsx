@@ -83,7 +83,7 @@ function A(e) {
         let {
           closePopout: t
         } = e;
-        return (0, r.jsx)(y.Z, {
+        return (0, r.jsx)(T.Z, {
           handleTransition: i,
           onClose: t
         })
@@ -150,7 +150,7 @@ function R(e) {
     onClose: s,
     selectedTab: p,
     handleTransition: f
-  } = e, y = (0, g.ZP)(), R = (0, o.e7)([v.default], () => v.default.getCurrentUser()), Z = (null == R ? true : R.isStaff()) || (null == R ? true : R.isStaffPersonal()) || false, {
+  } = e, T = (0, g.ZP)(), R = (0, o.e7)([v.default], () => v.default.getCurrentUser()), Z = (null == R ? true : R.isStaff()) || (null == R ? true : R.isStaffPersonal()) || false, {
     enabled: w
   } = (0, E.WX)({
     location: "collectibles_shop_header_bar"
@@ -178,7 +178,7 @@ function R(e) {
         fromContent: i.j.ORBS_BALANCE_MENU
       })
     }, [D, t, M]),
-    U = (0, T.eN)("collectibles_shop_header_bar"),
+    U = (0, y.eN)("collectibles_shop_header_bar"),
     V = l.useCallback(() => {
       (null == R ? true : R.id) != null && (0, m.openUserProfileModal)({
         userId: R.id,
@@ -187,7 +187,7 @@ function R(e) {
       })
     }, [null == R ? true : R.id]);
   return (0, r.jsx)(c.f6W, {
-    theme: y,
+    theme: T,
     children: e => (0, r.jsxs)(C.Z, {
       disableDoubleClick: true,
       className: a()(e, N.headerBar, {

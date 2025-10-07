@@ -151,16 +151,16 @@ let x = e => {
         variant: "text-md/semibold",
         className: S.filterTitle,
         children: E.intl.string(E.t.K1xGoK)
-      }), (0, r.jsx)(T, {
+      }), (0, r.jsx)(y, {
         colors: n,
         trackFilterAction: t
-      }), (0, r.jsx)(T, {
+      }), (0, r.jsx)(y, {
         colors: s,
         trackFilterAction: t
       })]
     })
   },
-  T = e => {
+  y = e => {
     let {
       colors: t,
       trackFilterAction: n
@@ -176,7 +176,7 @@ let x = e => {
           label: a,
           enum: i
         } = e;
-        return (0, r.jsx)(y, {
+        return (0, r.jsx)(T, {
           color: t,
           label: a,
           enum: i,
@@ -187,7 +187,7 @@ let x = e => {
       })
     })
   },
-  y = e => {
+  T = e => {
     let {
       color: t,
       label: n,

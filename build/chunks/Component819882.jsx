@@ -28,13 +28,13 @@ let S = e => {
       product: t,
       selectedVariantIndex: n,
       cardRef: h
-    } = e, S = (0, d.Nd)(), v = null == S ? true : S.tab, x = (0, s.e7)([o.default], () => o.default.getCurrentUser()), O = c.ZP.canUseCollectibles(x), T = (0, u.sp)(), {
-      isPurchased: y,
+    } = e, S = (0, d.Nd)(), v = null == S ? true : S.tab, x = (0, s.e7)([o.default], () => o.default.getCurrentUser()), O = c.ZP.canUseCollectibles(x), y = (0, u.sp)(), {
+      isPurchased: T,
       isPartiallyOwnedBundle: L
     } = (0, p.L)(t), j = (0, g.rN)(t), k = (0, g.G1)(t), I = (0, g.ne)({
       product: t,
       isPartiallyOwnedBundle: L,
-      isPurchased: y
+      isPurchased: T
     }), P = (0, _.Iw)(t), {
       isOrbExclusive: N
     } = (0, m.Ip)({
@@ -52,7 +52,7 @@ let S = e => {
       }
     }) : (0, r.jsx)(u.k0, {
       newValue: {
-        pageCategory: v === b.AW.HOME || null == T ? true : T.pageCategory
+        pageCategory: v === b.AW.HOME || null == y ? true : y.pageCategory
       },
       children: (0, r.jsx)(f.Z, {
         primary: true,

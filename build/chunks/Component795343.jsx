@@ -2,7 +2,7 @@
 /** chunk id: 795343, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => y
+  Z: () => T
 }), require("./388685.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -28,12 +28,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk891131 = require("./891131.js");
 
-function y(e) {
+function T(e) {
   var t;
   let {
     isFetchingCategories: n,
     isFullScreen: s,
-    scrollerRef: y,
+    scrollerRef: T,
     tab: L
   } = e, j = (0, d.sp)(), k = null != (t = null == j ? true : j.sessionId) ? t : "", {
     noCache: I,
@@ -45,10 +45,10 @@ function y(e) {
     isFetchingResults: Z
   } = (0, h.a)(), w = (0, i.Wu)([g.Z], () => g.Z.getProductsBySkus(B)), H = l.useCallback(() => {
     var e;
-    null == y || null == (e = y.current) || e.scrollToTop({
+    null == T || null == (e = T.current) || e.scrollToTop({
       animate: true
     })
-  }, [y]), F = null == B ? true : B.join("");
+  }, [T]), F = null == B ? true : B.join("");
   l.useEffect(() => {
     H()
   }, [F, H]);
@@ -100,11 +100,11 @@ function y(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: a()({
-        [T.productsEmpty]: Y
+        [y.productsEmpty]: Y
       }),
       children: [Y && (0, r.jsx)(x.Z, {}), (0, r.jsxs)("div", {
-        className: a()(T.products, {
-          [T.loadIn]: G
+        className: a()(y.products, {
+          [y.loadIn]: G
         }),
         ref: W,
         children: [q && [...Array(z)].map((e, t) => Q ? (0, r.jsx)(S.Z, {}, t) : (0, r.jsx)(m.K, {}, t)), !q && M.map((e, t) => {
@@ -125,7 +125,7 @@ function y(e) {
         })]
       })]
     }), R > z && (0, r.jsx)("div", {
-      className: T.paginationContainer,
+      className: y.paginationContainer,
       children: (0, r.jsx)("div", {
         children: (0, r.jsx)(o.DsT, {
           currentPage: A,

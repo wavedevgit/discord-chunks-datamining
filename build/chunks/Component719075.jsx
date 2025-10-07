@@ -29,8 +29,8 @@ let v = e => {
     } = e, n = (0, u.Nd)(), h = null == n ? true : n.tab, v = (0, s.e7)([o.default], () => o.default.getCurrentUser()), x = c.ZP.canUseCollectibles(v), {
       isDisabled: O
     } = (0, g.G)(t.skuId), {
-      isPurchased: T,
-      isPartiallyOwnedBundle: y
+      isPurchased: y,
+      isPartiallyOwnedBundle: T
     } = (0, p.L)(t), L = (0, d.G1)(t), {
       enabled: j
     } = (0, i.WX)({
@@ -50,9 +50,9 @@ let v = e => {
       color: "header-muted",
       className: S.priceTag,
       children: E.intl.string(E.t.wu4gyc)
-    }) : T || y ? (0, r.jsx)(f.U, {
+    }) : y || T ? (0, r.jsx)(f.U, {
       className: S.priceTag,
-      isPartiallyPurchased: y
+      isPartiallyPurchased: T
     }) : L ? (0, r.jsx)(a.Text, {
       variant: "text-md/semibold",
       className: S.priceTag,

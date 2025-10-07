@@ -18,16 +18,14 @@ class i {
     return new i(e)
   }
   toDesktopStyles() {
-    if (null != this.desktopMaxHeight) return {
-      maxHeight: this.desktopMaxHeight
-    }
+    let e = {};
+    return null != this.desktopMaxHeight && (module.maxHeight = this.desktopMaxHeight), null != this.backgroundStyle && (module.background = this.backgroundStyle), Object.keys(module).length > 0 ? module : true
   }
   toMobileStyles() {
-    if (null != this.mobileMaxHeight) return {
-      maxHeight: this.mobileMaxHeight
-    }
+    let e = {};
+    return null != this.mobileMaxHeight && (module.maxHeight = this.mobileMaxHeight), null != this.backgroundStyle && (module.background = this.backgroundStyle), Object.keys(module).length > 0 ? module : true
   }
   constructor(e) {
-    r(this, "desktopMaxHeight", true), r(this, "mobileMaxHeight", true), this.desktopMaxHeight = e.desktop_max_height, this.mobileMaxHeight = e.mobile_max_height
+    r(this, "desktopMaxHeight", true), r(this, "mobileMaxHeight", true), r(this, "responsive", true), r(this, "backgroundStyle", true), this.desktopMaxHeight = e.desktop_max_height, this.mobileMaxHeight = e.mobile_max_height, this.responsive = e.responsive, this.backgroundStyle = e.background_style
   }
 }
