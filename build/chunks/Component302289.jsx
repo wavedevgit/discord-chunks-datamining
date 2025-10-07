@@ -3,42 +3,38 @@
 "use strict";
 require.d(exports, {
   Z: () => p
-}), require("./953529.js");
+});
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
+  Chunk546791 = require("./546791.js"),
   Chunk785681 = require("./785681.js"),
   Chunk130310 = require("./130310.jsx"),
   Chunk345909 = require("./345909.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk398739 = require("./398739.js"),
-  Chunk519279 = require("./519279.js"),
-  Chunk128216 = require("./128216.js");
+  Chunk519279 = require("./519279.js");
 let p = () => {
-  let e = (0, Chunk785681.o)(Chunk388032.intl.string(Chunk345909.default.i4XFEB), Chunk388032.intl.string(Chunk345909.default.eHQZuL));
-  return (0, Chunk951288.jsxs)("div", {
-    className: a()(Chunk398739.container, Chunk519279.box, Chunk519279),
-    children: [(0, Chunk951288.jsxs)("div", {
+  let e = (0, Chunk546791.nE)(Chunk388032.intl.string(Chunk345909.default.XJabSE), Chunk388032.intl.string(Chunk345909.default.tr8Gnp)),
+    t = (0, Chunk785681.o)((0, Chunk546791.nE)(Chunk388032.intl.string(Chunk345909.default.i4XFEB), Chunk388032.intl.string(Chunk345909.default["3xKGSE"])), (0, Chunk546791.nE)(Chunk388032.intl.string(Chunk345909.default.eHQZuL), Chunk388032.intl.string(Chunk345909.default.XbgrGx)));
+  return (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+    className: a()(Chunk398739.container, Chunk519279.box),
+    gap: 24,
+    padding: 24,
+    children: [(0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+      gap: 8,
       children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
-        className: Chunk398739.header,
         variant: "heading-md/bold",
         children: (0, Chunk951288.jsx)(Chunk481060.y5t, {
-          children: Chunk388032.intl.string(Chunk345909.default.XJabSE)
+          children: module
         })
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
-        className: Chunk398739.description,
         variant: "text-sm/medium",
         color: "text-muted",
-        children: module
-      }), (0, Chunk951288.jsx)(Chunk130310.Z, {})]
-    }), (0, Chunk951288.jsx)("div", {
-      className: Chunk398739.artContainer,
-      children: (0, Chunk951288.jsx)("img", {
-        src: Chunk128216,
-        alt: Chunk388032.intl.string(Chunk345909.default.o4pfFB)
-      })
-    })]
+        children: exports
+      })]
+    }), (0, Chunk951288.jsx)(Chunk130310.Z, {})]
   })
 }

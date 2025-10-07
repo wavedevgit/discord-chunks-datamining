@@ -2,40 +2,42 @@
 /** chunk id: 130310, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => m
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
+  Chunk657707 = require("./657707.js"),
   Chunk481060 = require("./481060.js"),
+  Chunk546791 = require("./546791.js"),
+  Chunk277537 = require("./277537.js"),
   Chunk785681 = require("./785681.js"),
-  Chunk231994 = require("./231994.jsx"),
   Chunk345909 = require("./345909.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk31704 = require("./31704.js"),
   Chunk197571 = require("./197571.js");
-let _ = e => {
+let h = e => {
     let {
       header: t,
       description: n,
       icon: i,
-      inModal: s
+      inModal: o
     } = e;
     return (0, r.jsxs)("div", {
-      className: a()(d.row, f.marginBottom8, {
-        [d.inModal]: s
+      className: a()(_.row, p.marginBottom8, {
+        [_.inModal]: o
       }),
       children: [(0, r.jsx)("div", {
-        className: d.iconContainer,
+        className: _.iconContainer,
         children: i
       }), (0, r.jsxs)("div", {
-        children: [(0, r.jsx)(o.Text, {
-          className: d.header,
+        children: [(0, r.jsx)(s.Text, {
+          className: _.header,
           variant: "text-sm/bold",
           color: "header-primary",
           children: t
-        }), (0, r.jsx)(o.Text, {
+        }), (0, r.jsx)(s.Text, {
           variant: "text-xs/medium",
           color: "header-secondary",
           children: n
@@ -43,58 +45,86 @@ let _ = e => {
       })]
     })
   },
-  p = e => {
+  m = e => {
     let {
       inModal: t
-    } = e, n = (0, s.o)(u.intl.string(c.default.Sm8Gq6), u.intl.string(c.default.YU7aaW)), i = (0, s.o)(u.intl.string(c.default["TCzk/f"]), u.intl.string(c.default["2OqtJC"])), a = (0, s.o)(u.intl.string(c.default.ASf7XF), u.intl.string(c.default["82y87e"])), f = (0, s.o)(u.intl.string(c.default["0QDVFB"]), u.intl.string(c.default["1xBHHR"]));
+    } = e, n = (0, c.PO)("family_center_activity_card"), i = (0, l.nE)(f.intl.string(d.default["f28y/v"]), f.intl.string(d.default["+yrQhY"])), a = (0, l.nE)(f.intl.string(d.default["3Orpws"]), f.intl.string(d.default.WGz9DQ)), p = (0, u.o)(i, a), m = (0, u.o)(f.intl.string(d.default["TCzk/f"]), f.intl.string(d.default["2OqtJC"])), g = (0, u.o)(f.intl.string(d.default.ASf7XF), f.intl.string(d.default["82y87e"])), E = (0, u.o)(f.intl.string(d.default["0QDVFB"]), f.intl.string(d.default["1xBHHR"])), b = (0, l.nE)(f.intl.string(d.default["/zMYZW"]), f.intl.string(d.default.JvJ3Pz)), y = (0, u.o)((0, l.nE)(f.intl.string(d.default.DxFKkZ), f.intl.string(d.default.l0ChgI)), (0, l.nE)(f.intl.string(d.default.DxFKkZ), f.intl.string(d.default.S2ss5e))), O = (0, u.o)((0, l.nE)(f.intl.string(d.default.WrY56O), f.intl.string(d.default.LDu4Ul)), (0, l.nE)(f.intl.string(d.default.WrY56O), f.intl.string(d.default.fEgtLS))), v = (0, l.nE)(f.intl.string(d.default["Z3G+8v"]), f.intl.string(d.default["4SCALi"])), I = (0, l.nE)(f.intl.string(d.default.KBgAra), f.intl.string(d.default.oYf9Pz)), T = (0, u.o)(f.intl.string(d.default["dES/2t"]), f.intl.string(d.default.ep6mdH)), S = (0, u.o)(f.intl.string(d.default["30+sio"]), f.intl.string(d.default["0cuLn5"])), A = (0, u.o)(f.intl.string(d.default.tHTyRk), f.intl.string(d.default.TeNlMT)), C = (0, u.o)(f.intl.string(d.default.wZejZm), f.intl.string(d.default.tdgcf3));
     return (0, r.jsxs)("div", {
-      children: [(0, r.jsx)(o.Text, {
-        className: d.groupHeader,
+      children: [!n && (0, r.jsx)(s.Text, {
+        className: _.groupHeader,
         variant: "text-xxs/bold",
         color: "header-secondary",
-        children: n
-      }), (0, r.jsx)(_, {
-        header: u.intl.string(c.default["/zMYZW"]),
-        description: u.intl.string(c.default.DxFKkZ),
-        icon: (0, r.jsx)(o.iFz, {
+        children: p
+      }), (0, r.jsx)(h, {
+        header: b,
+        description: y,
+        icon: (0, r.jsx)(s.iFz, {
           size: "custom",
           width: 20,
           height: 20,
-          color: o.TVs.colors.TEXT_PRIMARY.css
+          color: s.TVs.colors.TEXT_PRIMARY.css
         }),
         inModal: t
-      }), (0, r.jsx)(_, {
-        header: u.intl.string(c.default["44NEx8"]),
-        description: u.intl.string(c.default.WrY56O),
-        icon: (0, r.jsx)(o.dRF, {
+      }), (0, r.jsx)(h, {
+        header: f.intl.string(d.default["44NEx8"]),
+        description: O,
+        icon: (0, r.jsx)(s.dRF, {
           size: "custom",
           width: 20,
           height: 20,
-          color: o.TVs.colors.TEXT_PRIMARY.css
+          color: s.TVs.colors.TEXT_PRIMARY.css
         }),
         inModal: t
-      }), (0, r.jsx)(_, {
-        header: u.intl.string(c.default["Z3G+8v"]),
-        description: u.intl.string(c.default.KBgAra),
-        icon: (0, r.jsx)(l.Z, {
-          width: 20,
-          height: 20,
-          color: o.TVs.colors.TEXT_PRIMARY.css
+      }), (0, r.jsx)(h, {
+        header: v,
+        description: I,
+        icon: (0, r.jsx)(o.kBi, {
+          size: "md"
         }),
         inModal: t
-      }), (0, r.jsx)(o.Text, {
-        className: d.groupHeader,
+      }), n && (0, r.jsxs)(r.Fragment, {
+        children: [(0, r.jsx)(h, {
+          header: f.intl.string(d.default.GNs2ZG),
+          description: f.intl.string(d.default.Ief2xc),
+          icon: (0, r.jsx)(s.Csw, {
+            size: "md"
+          }),
+          inModal: t
+        }), (0, r.jsx)(h, {
+          header: f.intl.string(d.default.PjM3r6),
+          description: T,
+          icon: (0, r.jsx)(s.ciH, {
+            size: "md"
+          }),
+          inModal: t
+        }), (0, r.jsx)(h, {
+          header: S,
+          description: A,
+          icon: (0, r.jsx)(o.U65, {
+            size: "md"
+          }),
+          inModal: t
+        }), (0, r.jsx)(h, {
+          header: f.intl.string(d.default.UCuHMz),
+          description: C,
+          icon: (0, r.jsx)(o.ewm, {
+            size: "md"
+          }),
+          inModal: t
+        })]
+      }), (0, r.jsx)(s.Text, {
+        className: _.groupHeader,
         variant: "text-xxs/bold",
         color: "header-secondary",
-        children: i
-      }), (0, r.jsx)(_, {
-        header: a,
-        description: f,
-        icon: (0, r.jsx)(o.Dio, {
+        children: m
+      }), (0, r.jsx)(h, {
+        header: g,
+        description: E,
+        icon: (0, r.jsx)(s.Dio, {
           size: "custom",
           width: 20,
           height: 20,
-          color: o.TVs.colors.TEXT_PRIMARY.css
+          color: s.TVs.colors.TEXT_PRIMARY.css
         }),
         inModal: t
       })]

@@ -2,18 +2,19 @@
 /** chunk id: 568671, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => f
+  Z: () => _
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk481060 = require("./481060.js"),
   Chunk626135 = require("./626135.js"),
+  Chunk546791 = require("./546791.js"),
   Chunk292352 = require("./292352.js"),
   Chunk981631 = require("./981631.js"),
   Chunk345909 = require("./345909.js"),
   Chunk388032 = require("./388032.jsx");
 
-function u(e, t, n) {
+function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -22,34 +23,35 @@ function u(e, t, n) {
   }) : e[t] = n, e
 }
 
-function d(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      u(e, t, n[t])
+      d(e, t, n[t])
     })
   }
   return e
 }
 
-function f() {
-  let e = () => {
-    (0, Chunk481060.ZDy)(async () => {
-      let {
-        default: e
-      } = await Promise.all([require.e("20680"), require.e("90688")]).then(require.bind(require, 978305));
-      return t => (0, r.jsx)(e, d({}, t))
-    }), Chunk626135.default.track(Chunk981631.rMx.FAMILY_CENTER_ACTION, {
-      action: Chunk292352.YC.ShowQRCodeModal
-    })
-  };
+function _() {
+  let e = (0, Chunk546791.nE)(Chunk388032.intl.string(Chunk345909.default.Ta9byc), Chunk388032.intl.string(Chunk345909.default["8SLtqa"])),
+    t = () => {
+      (0, Chunk481060.ZDy)(async () => {
+        let {
+          default: e
+        } = await Promise.all([require.e("20680"), require.e("90688")]).then(require.bind(require, 978305));
+        return t => (0, r.jsx)(e, f({}, t))
+      }), Chunk626135.default.track(Chunk981631.rMx.FAMILY_CENTER_ACTION, {
+        action: Chunk292352.YC.ShowQRCodeModal
+      })
+    };
   return (0, Chunk951288.jsx)(Chunk481060.zxk, {
     icon: Chunk481060.IkH,
     variant: "primary",
-    text: Chunk388032.intl.string(Chunk345909.default.Ta9byc),
-    onClick: module
+    text: module,
+    onClick: exports
   })
 }
