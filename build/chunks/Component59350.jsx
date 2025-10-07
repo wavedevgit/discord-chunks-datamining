@@ -90,7 +90,7 @@ function $(e) {
   } = (0, f.Z)({
     user: s,
     size: (0, p.y9)(K),
-    onlyAnimateOnHover: !h
+    onlyAnimateOnHoverOrFocus: !h
   }), x = (0, o.e7)([O.ZP], () => O.ZP.getSelfMember(i.id)), b = (0, o.Wu)([O.ZP], () => O.ZP.getMemberRoleWithPendingUpdates(i.id, s.id)), Z = (0, o.e7)([N.Z], () => N.Z.getSortedRoles(i.id)), I = (0, C.ZP)(i.id, s.id), w = Z.filter(e => b.includes(e.id)), P = (0, j.ZP)(s.id, i.id);
   (0, m.ZP)(() => {
     (0, y.Z)(s.id, s.getAvatarURL(i.id, (0, c.pxk)(K)), {

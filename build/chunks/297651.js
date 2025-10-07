@@ -17,13 +17,13 @@ function p(e, t) {
   let i = arguments.length > 2 && true !== arguments[2] ? arguments[2] : "product",
     p = (0, s.sp)(),
     g = (0, r.e7)([o.Z], () => o.Z.getProduct(e)),
-    h = (0, u.x)(),
+    h = (0, c.x)(),
     m = a.ZP.canUseCollectibles(h),
     v = l.useRef(null),
-    f = l.useCallback(() => {
+    x = l.useCallback(() => {
       let l = null != g ? (0, d.Vw)(g, m, false) : null,
         r = null != g ? (0, d.eu)(g, m, false) : true;
-      n.default.track(c.rMx.COLLECTIBLES_TILE_IMPRESSION, {
+      n.default.track(u.rMx.COLLECTIBLES_TILE_IMPRESSION, {
         collectibles_shop_session_id: null == p ? true : p.sessionId,
         sku_id: e,
         display_price: null == l ? true : l.amount,
@@ -37,14 +37,14 @@ function p(e, t) {
         category_position: null == p ? true : p.categoryPosition
       })
     }, [null == p ? true : p.sessionId, null == p ? true : p.categoryPosition, null == p ? true : p.pageCategory, null == p ? true : p.pageSection, null == p ? true : p.tilePosition, m, t, g, e, i]),
-    x = l.useCallback(e => {
+    f = l.useCallback(e => {
       e ? null === v.current && (v.current = setTimeout(() => {
-        f(), v.current = null
+        x(), v.current = null
       }, 1e3)) : null !== v.current && (clearTimeout(v.current), v.current = null)
-    }, [f]);
+    }, [x]);
   return l.useEffect(() => () => {
     null !== v.current && (clearTimeout(v.current), v.current = null)
   }, []), {
-    handleCardVisibilityChange: x
+    handleCardVisibilityChange: f
   }
 }

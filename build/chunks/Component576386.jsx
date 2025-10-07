@@ -8,10 +8,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
-  Chunk727637 = require("./727637.js"),
   Chunk135483 = require("./135483.js"),
   Chunk171019 = require("./171019.jsx"),
   Chunk22267 = require("./22267.jsx"),
+  Chunk104505 = require("./104505.js"),
   Chunk74538 = require("./74538.js"),
   Chunk539530 = require("./539530.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -21,17 +21,19 @@ let v = e => {
     let {
       currentUser: n,
       nameplate: a,
-      section: c,
+      section: s,
       canUsePremiumCollectibles: p,
       isSelected: v,
       onClick: g
-    } = e, b = (0, i.useRef)(null), x = (0, s.Z)(b);
+    } = e, b = (0, i.useRef)(null), {
+      isHoveringOrFocusing: x
+    } = (0, u.Z)(b);
     return (0, r.jsxs)(o.P3F, {
       innerRef: b,
       "aria-label": null != (t = a.label) ? t : m.intl.string(m.t.x5CoXV),
       className: h.nameplateItem,
       onClick: g,
-      children: [(0, r.jsx)(u.Z, {
+      children: [(0, r.jsx)(d.Z, {
         nameplate: a,
         user: n,
         showPlaceholderUser: true,
@@ -40,9 +42,9 @@ let v = e => {
         className: l()(h.nameplateItemOverlay, {
           [h.selected]: v
         })
-      }), (0, r.jsx)(d.Z, {
-        isPurchaseSection: c === _.$0.PURCHASE,
-        isPremiumSection: c === _.$0.PREMIUM_PURCHASE,
+      }), (0, r.jsx)(c.Z, {
+        isPurchaseSection: s === _.$0.PURCHASE,
+        isPremiumSection: s === _.$0.PREMIUM_PURCHASE,
         canUsePremiumCollectibles: p,
         skuId: a.skuId
       })]
@@ -54,7 +56,7 @@ let v = e => {
       selectedNameplate: n,
       guildId: i,
       onSelect: a,
-      onOpenShop: s
+      onOpenShop: c
     } = e, d = p.ZP.canUseCollectibles(t), u = (0, _.ZP)();
     return (0, r.jsx)(o.u2D, {
       className: h.inventory,
@@ -77,7 +79,7 @@ let v = e => {
             })]
           }), (0, r.jsxs)(o.P3F, {
             className: h.inventoryControlsButton,
-            onClick: s,
+            onClick: c,
             children: [(0, r.jsx)(o.EOn, {
               size: "md",
               color: "currentColor"
@@ -88,7 +90,7 @@ let v = e => {
           })]
         }), (0, r.jsx)("div", {
           className: h.list,
-          children: e.items.filter(c.k).map(i => (0, r.jsx)(v, {
+          children: e.items.filter(s.k).map(i => (0, r.jsx)(v, {
             currentUser: t,
             nameplate: i,
             section: e.section,

@@ -58,7 +58,7 @@ let f = {
           wishlistData: s
         }), null != t) try {
         let r = s.getSkuIds();
-        c.default.track(S.rMx.WISHLIST_UPDATED, {
+        a.default.track(S.rMx.WISHLIST_UPDATED, {
           wishlist_id: s.id,
           action_type: "ADD",
           sku_id: e,
@@ -74,7 +74,7 @@ let f = {
       }), t
     }
     if (null == r) return;
-    let l = a.default.getCurrentUser();
+    let l = c.default.getCurrentUser();
     if (null != l && null == u.Z.getFirstWishlistId(l.id)) try {
       await (0, s.In)(l.id)
     } catch (e) {}
@@ -93,7 +93,7 @@ let f = {
           wishlistData: o
         }), null != r) try {
         let e = o.getSkuIds();
-        c.default.track(S.rMx.WISHLIST_UPDATED, {
+        a.default.track(S.rMx.WISHLIST_UPDATED, {
           wishlist_id: o.id,
           action_type: "REMOVE",
           sku_id: t,
@@ -111,7 +111,7 @@ let f = {
     }
   },
   async updateWishlistVisibility(e, t) {
-    let r = a.default.getCurrentUser();
+    let r = c.default.getCurrentUser();
     if (null != r) try {
       await n.tn.patch({
         url: S.ANM.USER_WISHLIST_PATCH(e),

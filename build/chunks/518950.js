@@ -42,7 +42,7 @@ function u(e) {
     guildId: null != n ? n : true,
     size: (0, o.y9)(u),
     showPending: d,
-    onlyAnimateOnHover: _,
+    onlyAnimateOnHoverOrFocus: _,
     avatarDecorationOverride: p,
     showTryItOut: f
   });

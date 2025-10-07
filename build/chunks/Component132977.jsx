@@ -12,8 +12,8 @@ var r, Chunk951288 = require("./951288.js"),
   s = require.n(Chunk120356),
   Chunk748780 = require("./748780.js"),
   Chunk755721 = require("./755721.js"),
-  Chunk727637 = require("./727637.js"),
   Chunk600164 = require("./600164.jsx"),
+  Chunk104505 = require("./104505.js"),
   Chunk929370 = require("./929370.js");
 
 function _(e, t, n) {
@@ -117,13 +117,13 @@ let I = e => {
     disabled: r,
     submitting: o,
     pauseAnimation: l,
-    shineSize: d = "default",
+    shineSize: u = "default",
     shinePaused: _,
     buttonShineClassName: h,
     onlyShineOnHover: E
   } = e, b = g(e, ["children", "className", "disabled", "submitting", "pauseAnimation", "shineSize", "shinePaused", "buttonShineClassName", "onlyShineOnHover"]);
   let y = a.useRef(null),
-    O = (0, u.Z)(y),
+    O = (0, d.X)(y),
     I = !r && !o && true !== l && (!E || O);
   return (0, i.jsxs)(c.zx, m(p({
     "data-migration-pending": true,
@@ -136,7 +136,7 @@ let I = e => {
       "data-migration-pending": true,
       shinePaused: _,
       className: s()(f.buttonShine, E ? f.onlyShineOnHover : true, h),
-      shineSize: d
+      shineSize: u
     }) : null]
   }))
 };

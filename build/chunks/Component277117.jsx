@@ -41,7 +41,7 @@ function w(e) {
     currentUser: n,
     displayProfile: w,
     channel: A,
-    isHovering: D,
+    isHoveringOrFocusing: D,
     onOpenProfile: L
   } = e, {
     relationshipType: M,
@@ -78,13 +78,13 @@ function w(e) {
         })]
       })
     }), M === T.OGo.PENDING_INCOMING && (0, r.jsx)(E.Z.Overlay, {
-      children: (0, r.jsx)(x.Z, {
+      children: (0, r.jsx)(O.Z, {
         user: t,
         channelId: A.id,
         applicationId: k
       })
     }), U.map(e => (0, r.jsx)(E.Z.Overlay, {
-      children: (0, r.jsx)(x.Z, {
+      children: (0, r.jsx)(O.Z, {
         user: t,
         isGameRelationship: true,
         applicationId: e.applicationId,
@@ -120,10 +120,10 @@ function w(e) {
         heading: N.intl.string(N.t["61W33d"]),
         headingColor: "header-primary",
         children: (0, r.jsx)(b.Z, {
+          userId: t.id,
           userBio: w.bio,
-          animateOnHover: true,
-          isHovering: D,
-          userId: t.id
+          isHoveringOrFocusing: D,
+          animateOnHoverOrFocusOnly: true
         })
       }), (null == F ? true : F.popularApplicationCommandIds) != null && (0, r.jsx)(g.Z, {
         applicationId: F.id,
@@ -138,7 +138,7 @@ function w(e) {
       }), (0, r.jsx)(C.Z, {
         heading: t.bot ? N.intl.string(N.t["A//N4u"]) : N.intl.string(N.t.a6XYDw),
         headingColor: "header-primary",
-        children: (0, r.jsx)(O.Z, {
+        children: (0, r.jsx)(x.Z, {
           userId: t.id
         })
       })]

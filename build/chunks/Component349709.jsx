@@ -10,7 +10,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk596454 = require("./596454.jsx"),
   Chunk225433 = require("./225433.jsx"),
-  Chunk727637 = require("./727637.js"),
+  Chunk104505 = require("./104505.js"),
   Chunk318766 = require("./318766.jsx"),
   Chunk907040 = require("./907040.jsx"),
   Chunk984933 = require("./984933.js"),
@@ -65,7 +65,9 @@ function b(e) {
   } = e, C = (0, g.Z)({
     emojiId: y,
     emojiName: E
-  }), O = (0, s.e7)([f.ZP], () => null != l ? f.ZP.getDefaultChannel(l) : null), k = i.useRef(null), D = (0, c.Z)(k), P = () => {
+  }), O = (0, s.e7)([f.ZP], () => null != l ? f.ZP.getDefaultChannel(l) : null), k = i.useRef(null), {
+    isHoveringOrFocusing: D
+  } = (0, c.Z)(k), P = () => {
     w(true), S(true)
   }, Z = e => {
     e.stopPropagation(), P()

@@ -1,7 +1,7 @@
 /** Chunk was on 92446 **/
 /** chunk id: 551425, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => P
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -75,7 +75,7 @@ let g = Chunk481060.EFr.SIZE_152,
     return (0, i.jsx)("div", {
       className: h.profileEffectPreview,
       children: (0, i.jsx)(d.Z, {
-        isHovering: true,
+        isHighlighted: true,
         skuId: null == e ? true : e.skuId
       })
     })
@@ -95,7 +95,7 @@ let g = Chunk481060.EFr.SIZE_152,
       })
     })
   },
-  v = t => {
+  P = t => {
     let {
       giftCode: e
     } = t, n = (0, l.e7)([f.Z], () => f.Z.getProduct(e.skuId)), s = null == n ? true : n.items[0];

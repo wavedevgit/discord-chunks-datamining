@@ -57,7 +57,7 @@ let x = e => {
       location: "CollectiblesProductPreview"
     });
     return (0, s.EQ)(t.type).with(c.Z.PROFILE_EFFECT, () => (0, a.jsx)("div", {
-      className: _.profileEffectShopPreview,
+      className: O.profileEffectShopPreview,
       children: (0, a.jsx)(v.Z, {
         forCollectedModal: true,
         skuId: i.skuId
@@ -69,7 +69,7 @@ let x = e => {
       isPurchased: false,
       isHighlighted: true
     })).with(c.Z.NAMEPLATE, () => (0, a.jsx)("div", {
-      className: _.nameplate,
+      className: O.nameplate,
       children: (0, a.jsx)(w.Z, {
         nameplate: i,
         user: o,
@@ -77,9 +77,9 @@ let x = e => {
         isHighlighted: true
       })
     })).with(c.Z.BUNDLE, () => (0, a.jsx)("div", {
-      className: _.bundlePreview,
+      className: O.bundlePreview,
       children: (0, a.jsx)(P.d, {
-        containerClassName: _.bundlePreviewContainer,
+        containerClassName: O.bundlePreviewContainer,
         product: t,
         user: o,
         isPurchased: false,
@@ -89,14 +89,14 @@ let x = e => {
     })).with(c.Z.EXTERNAL_SKU, () => {
       if (y)
         if (r) return (0, a.jsx)("img", {
-          src: C ? E : O,
+          src: C ? E : j,
           alt: b.intl.string(b.t.t0xkSE),
           style: {
             width: "100%"
           }
         });
         else return (0, a.jsx)("img", {
-          src: j,
+          src: _,
           alt: b.intl.string(b.t.g5W1g4)
         });
       return (0, a.jsx)(m.b, {
@@ -152,11 +152,11 @@ let x = e => {
     }, "animate-always");
     return (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsx)(o.animated.div, {
-        className: _.easterEggContainer,
+        className: O.easterEggContainer,
         style: s,
         children: (0, a.jsx)(x, C({}, e))
       }), (0, a.jsx)(o.animated.div, {
-        className: _.easterEggContainer,
+        className: O.easterEggContainer,
         style: t ? d : c,
         children: (0, a.jsx)("img", {
           src: r.getSrc(),

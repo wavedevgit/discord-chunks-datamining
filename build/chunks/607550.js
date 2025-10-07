@@ -12,11 +12,11 @@ let o = {},
     status: "not_loaded"
   });
 
-function a(e) {
+function c(e) {
   var t;
   return null != (t = o[e]) ? t : o[e] = u()
 }
-class c extends Chunk442837.ZP.Store {
+class a extends Chunk442837.ZP.Store {
   get(e) {
     var t;
     return null != (t = o[e]) ? t : u()
@@ -45,32 +45,32 @@ class c extends Chunk442837.ZP.Store {
     return this.get(e).error
   }
 }
-let l = new c(Chunk570140.Z, {
+let l = new a(Chunk570140.Z, {
   WISHLIST_FETCH_START: function(e) {
     let {
       wishlistId: t
-    } = e, r = a(t);
+    } = e, r = c(t);
     r.status = "fetching", r.error = true
   },
   WISHLIST_FETCH_SUCCESS: function(e) {
     let {
       wishlistId: t,
       wishlistData: r
-    } = e, n = a(t);
+    } = e, n = c(t);
     n.data = r, n.status = "success", n.error = true
   },
   WISHLIST_FETCH_FAILURE: function(e) {
     let {
       wishlistId: t,
       error: r
-    } = e, n = a(t);
+    } = e, n = c(t);
     n.status = "error", n.error = r
   },
   WISHLIST_ADD_SKU_SUCCESS: function(e) {
     let {
       wishlistId: t,
       wishlistData: r
-    } = e, n = a(t);
+    } = e, n = c(t);
     n.data = r, n.status = "success", n.error = true
   },
   WISHLIST_ADD_SKU_FAILURE: function(e) {
@@ -83,7 +83,7 @@ let l = new c(Chunk570140.Z, {
     let {
       wishlistId: t,
       wishlistData: r
-    } = e, n = a(t);
+    } = e, n = c(t);
     n.data = r, n.status = "success", n.error = true
   },
   WISHLIST_REMOVE_SKU_FAILURE: function(e) {
@@ -95,7 +95,7 @@ let l = new c(Chunk570140.Z, {
   WISHLIST_UPDATE_VISIBILITY_SUCCESS: function(e) {
     let {
       wishlistId: t
-    } = e, r = a(t);
+    } = e, r = c(t);
     r.status = "success", r.error = true
   },
   WISHLIST_UPDATE_VISIBILITY_FAILURE: function(e) {

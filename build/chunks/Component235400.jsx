@@ -83,7 +83,7 @@ function C(e) {
       "data-migration-pending": true,
       className: E.modalContent,
       scrollbarType: "none",
-      children: [(0, n.jsx)(O.Z, {
+      children: [(0, n.jsx)(f.Z, {
         user: t,
         guild: C,
         pendingAvatarDecoration: T,
@@ -92,7 +92,7 @@ function C(e) {
           N(e), null != e && R(e)
         },
         onOpenShop: M
-      }), (0, n.jsx)(f.Z, {
+      }), (0, n.jsx)(O.Z, {
         className: E.modalPreview,
         user: t,
         guildId: null == C ? true : C.id,
@@ -143,11 +143,11 @@ function A(e) {
   } = e, g = (0, l.e7)([v.default], () => v.default.getCurrentUser()), {
     analyticsLocations: y
   } = (0, o.ZP)(r, a.Z.EDIT_AVATAR_DECORATION_MODAL), {
-    categories: f,
-    purchases: O,
+    categories: O,
+    purchases: f,
     isFetchingCategories: P,
     isFetchingPurchases: b
-  } = (0, m.ZP)(), A = P || b && 0 === O.size;
+  } = (0, m.ZP)(), A = P || b && 0 === f.size;
   return i.useEffect(() => {
     j.default.track(S.rMx.OPEN_MODAL, {
       type: S.jXE.AVATAR_DECORATION_CUSTOMIZATION,
@@ -167,8 +167,8 @@ function A(e) {
       }) : (0, n.jsx)(C, {
         user: g,
         guild: x,
-        categories: f,
-        purchases: O,
+        categories: O,
+        purchases: f,
         analyticsLocations: y,
         initialSelectedDecoration: d,
         initialSelectedDecorationId: p,

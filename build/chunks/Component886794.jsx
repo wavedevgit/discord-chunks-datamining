@@ -6,10 +6,10 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk727637 = require("./727637.js"),
   Chunk100527 = require("./100527.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk313201 = require("./313201.js"),
+  Chunk104505 = require("./104505.js"),
   Chunk680295 = require("./680295.jsx"),
   Chunk5192 = require("./5192.js"),
   Chunk785717 = require("./785717.jsx"),
@@ -45,9 +45,9 @@ function C(e) {
     openedAt: M,
     onClose: U,
     sourceAnalyticsLocations: k = []
-  } = e, B = C === N.ME ? true : C, F = (0, p.ZP)(t.id, B), V = u.ZP.getName(B, _, t), G = (0, c.Dt)(), {
+  } = e, B = C === N.ME ? true : C, F = (0, p.ZP)(t.id, B), V = u.ZP.getName(B, _, t), G = (0, a.Dt)(), {
     analyticsLocations: z
-  } = (0, a.ZP)([...k, s.Z.USER_PROFILE_MODAL]), K = (0, m.ZB)({
+  } = (0, s.ZP)([...k, o.Z.USER_PROFILE_MODAL]), K = (0, m.ZB)({
     layout: "MODAL",
     userId: t.id,
     sourceSessionId: R,
@@ -55,8 +55,8 @@ function C(e) {
     channelId: _,
     messageId: w,
     roleId: D
-  }), W = i.useRef(null), Y = (0, o.Z)(W);
-  return (0, l.jsx)(a.Gt, {
+  }), W = i.useRef(null), Y = (0, c.X)(W);
+  return (0, l.jsx)(s.Gt, {
     value: z,
     children: (0, l.jsx)(m.Mt, {
       value: K,

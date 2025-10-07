@@ -29,15 +29,15 @@ let P = e => {
     containerClassName: y
   } = e, {
     firstProfileEffect: b,
-    firstAvatarDecoration: _,
-    firstNameplate: j
-  } = (0, d.Rj)(t), O = (0, f.O1)(_), E = (0, s.ZP)(), C = (0, l.ap)(E), x = (0, u.L)(t);
+    firstAvatarDecoration: O,
+    firstNameplate: _
+  } = (0, d.Rj)(t), j = (0, f.O1)(O), E = (0, s.ZP)(), C = (0, l.ap)(E), x = (0, u.L)(t);
   return (0, a.jsxs)("div", {
     className: i()(h.container, x ? h.threeItemBundle : null, y),
     children: [(0, a.jsx)("div", {
       className: i()(h.profileEffectShopPreview, w ? h.profileEffectShopPreviewCollectedModal : null),
       children: null != b && (0, a.jsx)(c.Z, {
-        isHovering: n,
+        isHighlighted: n,
         skuId: b.skuId,
         isPurchased: r,
         forCollectedModal: w,
@@ -46,9 +46,9 @@ let P = e => {
     }), (0, a.jsx)("div", {
       className: i()(h.avatarDecorationPreview, w ? h.avatarDecorationPreviewCollectedModal : null, x ? h.avatarDecorationDropShadow : null),
       children: (0, a.jsx)(p.R, {
-        item: O,
+        item: j,
         user: P,
-        avatarSize: null != j ? o.EFr.SIZE_96 : o.EFr.SIZE_120,
+        avatarSize: null != _ ? o.EFr.SIZE_96 : o.EFr.SIZE_120,
         isPurchased: r,
         isHighlighted: n,
         avatarPlaceholderSrc: C ? g : m
@@ -57,12 +57,12 @@ let P = e => {
       className: i()(h.nameplatePreview, w ? h.nameplatePreviewCollectedModal : null),
       children: (0, a.jsx)(v.Z, {
         user: P,
-        nameplate: j,
+        nameplate: _,
         isHighlighted: n,
         isPurchased: r,
         nameplatePreviewSize: "default",
         showPlaceholderUser: !n,
-        avatarDecorationOverride: null != O ? O : true
+        avatarDecorationOverride: null != j ? j : true
       })
     })]
   })

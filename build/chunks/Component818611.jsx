@@ -9,8 +9,8 @@ var Chunk951288 = require("./951288.js"),
   s = require.n(Chunk120356),
   Chunk278074 = require("./278074.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk727637 = require("./727637.js"),
   Chunk171019 = require("./171019.jsx"),
+  Chunk104505 = require("./104505.js"),
   Chunk74538 = require("./74538.js"),
   Chunk864106 = require("./864106.js"),
   Chunk439959 = require("./439959.js"),
@@ -65,8 +65,8 @@ function y(e, t) {
   }
   return i
 }
-let f = () => 80,
-  O = e => {
+let O = () => 80,
+  f = e => {
     var {
       children: t,
       className: r,
@@ -90,24 +90,26 @@ let f = () => 80,
       canUsePremiumCollectibles: o
     } = e, d = y(e, ["user", "avatarDecoration", "innerRef", "section", "isSelected", "canUsePremiumCollectibles"]);
     let m = i.useRef(null),
-      x = (0, c.Z)(null != l ? l : m),
       {
-        avatarDecorationSrc: f
+        isHoveringOrFocusing: x
+      } = (0, u.Z)(null != l ? l : m),
+      {
+        avatarDecorationSrc: O
       } = (0, h.Z)({
         user: t,
         avatarDecorationOverride: r,
         size: 80,
-        onlyAnimateOnHover: !x
+        onlyAnimateOnHoverOrFocus: !x
       });
-    return (0, n.jsxs)(O, j(v({
+    return (0, n.jsxs)(f, j(v({
       innerRef: null != l ? l : m,
       isSelected: a
     }, d), {
       children: [(0, n.jsx)("img", {
         className: g.presetDecorationImg,
-        src: f,
+        src: O,
         alt: r.label
-      }), (0, n.jsx)(u.Z, {
+      }), (0, n.jsx)(c.Z, {
         isPurchaseSection: s === p.$0.PURCHASE,
         isPremiumSection: s === p.$0.PREMIUM_PURCHASE,
         canUsePremiumCollectibles: o,
@@ -141,10 +143,10 @@ let f = () => 80,
       removeEdgeItemGutters: true,
       renderItem: (e, d, j, y) => {
         let {
-          section: f,
+          section: O,
           items: P
         } = u[e];
-        return (0, a.EQ)(P[d]).with(p.Tm, () => (0, n.jsxs)(O, {
+        return (0, a.EQ)(P[d]).with(p.Tm, () => (0, n.jsxs)(f, {
           style: v({}, j),
           isSelected: null === i,
           onSelect: () => s(null),
@@ -157,7 +159,7 @@ let f = () => 80,
             color: "header-primary",
             children: (0, m.ad)(t, r) ? x.intl.string(x.t.CHf9iI) : x.intl.string(x.t.PoWNfX)
           })]
-        }, y)).with(p.oT, () => (0, n.jsxs)(O, {
+        }, y)).with(p.oT, () => (0, n.jsxs)(f, {
           style: j,
           onSelect: c,
           children: [(0, n.jsx)(o.EOn, {
@@ -177,7 +179,7 @@ let f = () => 80,
             style: v({}, j),
             user: t,
             avatarDecoration: e,
-            section: f,
+            section: O,
             innerRef: r ? l : true,
             isSelected: r,
             onSelect: () => s(e),
@@ -201,6 +203,6 @@ let f = () => 80,
       },
       getSectionHeight: e => u[e].height,
       getItemKey: (e, t) => u[e].items[t].id,
-      getItemHeight: f
+      getItemHeight: O
     })
   }

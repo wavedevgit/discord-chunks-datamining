@@ -32,8 +32,8 @@ let p = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk
       user: d,
       avatarDecorationOverride: (null == n ? true : n.type) === l.Z.AVATAR_DECORATION ? n : true,
       size: P,
-      onlyAnimateOnHover: !v
-    }), _ = u.intl.formatToPlainString(u.t.Do2lxM, {
+      onlyAnimateOnHoverOrFocus: !v
+    }), O = u.intl.formatToPlainString(u.t.Do2lxM, {
       a11y_text: n.label
     });
     return (0, a.jsx)(p, (t = function(e) {
@@ -61,7 +61,7 @@ let p = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk
         [f.avatarPurchased]: h && !v
       }),
       size: m,
-      "aria-label": _
+      "aria-label": O
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
       var r = Object.keys(e);
       if (Object.getOwnPropertySymbols) {

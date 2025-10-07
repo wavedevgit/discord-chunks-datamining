@@ -64,7 +64,7 @@ let J = t => {
       openedGift: e
     } = t, {
       createMultipleConfettiAt: n
-    } = r.useContext(P.h);
+    } = r.useContext(v.h);
     return r.useEffect(() => {
       e && n(window.innerWidth / 2, window.innerHeight / 4)
     }, [n, e]), null
@@ -300,8 +300,8 @@ class $ extends Chunk647438.Component {
       isCustomGift: y,
       isCollectiblesGift: O,
       accepted: b,
-      opened: v,
-      emojiURL: P,
+      opened: P,
+      emojiURL: v,
       isPremiumAppGift: S
     } = this.state, Z = Chunk594174.default.getCurrentUser(), A = this.step === Chunk981631.wZ8.ERROR, C = (null == Chunk120356 ? true : Chunk120356.userId) != null && null != Chunk703656 && (null == Chunk703656 ? true : Chunk703656.id) != null && Chunk120356.userId === Chunk703656.id;
     switch (this.step) {
@@ -503,7 +503,7 @@ let tt = Chunk442837.ZP.connectStores([Chunk283595.Z, Chunk55563.Z, Chunk812206.
       O = (0, o.e7)([T.Z], () => T.Z.get(s)),
       j = (0, p.ZP)(),
       {
-        analyticsLocations: P
+        analyticsLocations: v
       } = (0, h.ZP)(m.Z.GIFT_CODE_MODAL),
       {
         product: x
@@ -526,14 +526,14 @@ let tt = Chunk442837.ZP.connectStores([Chunk283595.Z, Chunk55563.Z, Chunk812206.
       headerId: y,
       emojiName: c,
       soundId: d,
-      analyticsLocations: P,
+      analyticsLocations: v,
       isThemeDark: (0, u.wj)(j),
       onClose: f,
       collectiblesItemType: null == x || null == (r = x.items[0]) ? true : r.type,
       onAccept: null != x ? () => {
-        f(), (0, v.Z)({
+        f(), (0, P.Z)({
           product: x,
-          analyticsLocations: P,
+          analyticsLocations: v,
           purchaseType: V.o8.GIFT
         })
       } : true

@@ -1,7 +1,7 @@
 /** Chunk was on 18539 **/
 /** chunk id: 22494, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => a
+  Z: () => c
 });
 var Chunk81825 = require("./81825.js"),
   Chunk523080 = require("./523080.js"),
@@ -16,11 +16,11 @@ function u(e, t, r) {
     writable: true
   }) : e[t] = r, e
 }
-class a extends Chunk81825.Z {
+class c extends Chunk81825.Z {
   static fromServer(e) {
     var t, r, {
         user_id: n,
-        wishlist_items: c
+        wishlist_items: a
       } = e,
       l = function(e, t) {
         if (null == e) return {};
@@ -37,8 +37,8 @@ class a extends Chunk81825.Z {
         }
         return i
       }(e, ["user_id", "wishlist_items"]);
-    let d = c.map(e => e.sku_product_line === o.POd.COLLECTIBLES ? s.Z.fromServer(e) : i.Z.fromServer(e));
-    return new a((t = function(e) {
+    let d = a.map(e => e.sku_product_line === o.POd.COLLECTIBLES ? s.Z.fromServer(e) : i.Z.fromServer(e));
+    return new c((t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var r = null != arguments[t] ? arguments[t] : {},
           n = Object.keys(r);

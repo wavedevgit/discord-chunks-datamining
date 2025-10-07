@@ -129,7 +129,7 @@ let k = 16 / 9,
     } = i.useContext(c.Sfi), {
       id: g,
       blocked: b,
-      ignored: x
+      ignored: O
     } = t, v = (0, o.Wu)([I.Z], () => I.Z.getAllActiveStreams(), []), {
       selectedParticipant: C,
       largeStream: E
@@ -147,9 +147,9 @@ let k = 16 / 9,
     return (0, r.jsx)(N.Z, {
       participant: n,
       aspectRatio: k,
-      fit: n.type === A.fO.USER ? O.L.COVER : true,
+      fit: n.type === A.fO.USER ? x.L.COVER : true,
       blocked: b,
-      ignored: x,
+      ignored: O,
       channel: l,
       className: D.tile,
       inCall: true,
@@ -169,12 +169,12 @@ let k = 16 / 9,
       width: c
     } = e, {
       newestAnalyticsLocation: d
-    } = (0, f.ZP)(h.Z.STAGE_TILE), p = (0, x.bp)(), y = l.getGuildId(), _ = E.default.getId();
+    } = (0, f.ZP)(h.Z.STAGE_TILE), p = (0, O.bp)(), y = l.getGuildId(), _ = E.default.getId();
     a()(null != y, "Channel cannot be guildless");
     let {
       user: j
-    } = i, O = (0, o.e7)([m.Z], () => m.Z.getParticipant(l.id, i.id), [l.id, i.id]), C = (0, o.e7)([P.ZP], () => P.ZP.isModerator(j.id, l.id), [l.id, j.id]);
-    if (null == O || O.type === A.fO.ACTIVITY) return null;
+    } = i, x = (0, o.e7)([m.Z], () => m.Z.getParticipant(l.id, i.id), [l.id, i.id]), C = (0, o.e7)([P.ZP], () => P.ZP.isModerator(j.id, l.id), [l.id, j.id]);
+    if (null == x || x.type === A.fO.ACTIVITY) return null;
     let I = e => {
         (0, g.h)({
           type: s.ImpressionTypes.MENU,
@@ -241,9 +241,9 @@ let k = 16 / 9,
             })
         }
       };
-    return O.type !== A.fO.USER || (null == (t = O.voiceState) ? true : t.selfVideo) ? (0, r.jsx)(G, {
+    return x.type !== A.fO.USER || (null == (t = x.voiceState) ? true : t.selfVideo) ? (0, r.jsx)(G, {
       stageParticipant: i,
-      rtcParticipant: O,
+      rtcParticipant: x,
       channel: l,
       guildId: y,
       user: j,
@@ -253,7 +253,7 @@ let k = 16 / 9,
       inPopout: p === w.IlC.POPOUT
     }) : (0, r.jsx)(U, {
       stageParticipant: i,
-      rtcParticipant: O,
+      rtcParticipant: x,
       channel: l,
       guildId: y,
       user: j,

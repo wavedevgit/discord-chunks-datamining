@@ -19,12 +19,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
   Chunk809206 = require("./809206.js"),
-  Chunk727637 = require("./727637.js"),
   Chunk410030 = require("./410030.js"),
   Chunk607070 = require("./607070.js"),
   Chunk100527 = require("./100527.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk570908 = require("./570908.jsx"),
+  Chunk104505 = require("./104505.js"),
   Chunk786761 = require("./786761.js"),
   Chunk3148 = require("./3148.js"),
   Chunk739566 = require("./739566.js"),
@@ -126,7 +126,7 @@ let eZ = e => {
       item: t,
       user: n,
       isBundleItem: a = false
-    } = e, l = i.useRef(null), o = (0, b.Z)(l);
+    } = e, l = i.useRef(null), o = (0, j.X)(l);
     return (0, c.EQ)(t.type).with(d.Z.AVATAR_DECORATION, () => (0, r.jsx)("div", {
       className: a ? eR.bundleAvatarPreviewContainer : eR.avatarPreviewContainer,
       children: (0, r.jsx)(eb.R, {
@@ -138,7 +138,7 @@ let eZ = e => {
       ref: l,
       children: (0, r.jsx)(k.Z, {
         skuId: t.skuId,
-        isHovering: o,
+        isHighlighted: o,
         removeSetHeight: true
       })
     })).with(d.Z.NAMEPLATE, () => (0, r.jsx)("div", {
@@ -225,16 +225,16 @@ let eZ = e => {
       shouldCheckoutWithOrbs: o,
       onClose: c,
       returnRef: m,
-      previewingVariantIndexProps: b,
+      previewingVariantIndexProps: x,
       selectedVariantIndex: P,
-      tab: C,
+      tab: I,
       activeBundleSlide: j,
       variantType: w
     } = e, {
       analyticsLocations: T
-    } = (0, I.ZP)(), O = G.ZP.canUseCollectibles(n), {
+    } = (0, C.ZP)(), O = G.ZP.canUseCollectibles(n), {
       previewingVariantIndex: E
-    } = b, S = (0, eP.N)(t, E), y = (0, eC.W)(t, P);
+    } = x, S = (0, eP.N)(t, E), y = (0, eC.W)(t, P);
     s()(null != y, "Selected product should not be null");
     let k = (0, Q.L)(t),
       {
@@ -251,7 +251,7 @@ let eZ = e => {
         isPurchased: R
       }),
       M = (0, v.e7)([W.Z], () => W.Z.isClaiming === (null == y ? true : y.skuId)),
-      H = (0, x.ZP)(),
+      H = (0, b.ZP)(),
       Y = (0, h.wj)(H),
       ee = (0, q.G1)(y),
       et = (0, q.ql)(y, eA.tuJ.DEFAULT),
@@ -282,7 +282,7 @@ let eZ = e => {
       } = (0, eO.Ip)({
         product: y,
         isPremiumUser: O,
-        tab: C,
+        tab: I,
         hasDiscountOffer: ex
       }),
       eB = i.useCallback(() => (0, A.Z)({
@@ -356,11 +356,11 @@ let eZ = e => {
           children: w === eS.Ch.DEFAULT ? (0, r.jsx)(eh.P, {
             selectedVariantIndex: P,
             variantGroupProduct: t,
-            previewingVariantIndexProps: b,
+            previewingVariantIndexProps: x,
             className: eR.variantsSwitch
           }) : (0, r.jsx)(e_.r, {
             variantGroupProduct: t,
-            previewingVariantIndexProps: b,
+            previewingVariantIndexProps: x,
             className: eR.variantsThumbnail,
             selectedVariantIndex: P
           })
@@ -501,7 +501,7 @@ let eZ = e => {
     } = e;
     return (0, r.jsx)("div", {
       className: eR.nameplateRightPanePreviewAvatarContainer,
-      children: (0, r.jsx)(j.Z, {
+      children: (0, r.jsx)(I.Z, {
         avatar: (0, r.jsx)(_.qEK, {
           src: t.avatarSrc,
           size: _.EFr.SIZE_32,
@@ -567,7 +567,7 @@ let eZ = e => {
       user: n,
       activeBundleSlide: i,
       isTransitioning: a
-    } = e, o = (0, v.e7)([P.Z], () => P.Z.useReducedMotion), s = G.ZP.canUsePremiumProfileCustomization(n), c = (0, v.cj)([D.Z], () => D.Z.getAllPending()), {
+    } = e, o = (0, v.e7)([x.Z], () => x.Z.useReducedMotion), s = G.ZP.canUsePremiumProfileCustomization(n), c = (0, v.cj)([D.Z], () => D.Z.getAllPending()), {
       pendingAvatar: u
     } = c, m = function(e, t) {
       if (null == e) return {};
@@ -590,7 +590,7 @@ let eZ = e => {
       firstAvatarDecoration: _,
       firstProfileEffect: g,
       firstNameplate: b
-    } = (0, $.Rj)(t), x = null != g, C = () => (0, r.jsxs)(r.Fragment, {
+    } = (0, $.Rj)(t), P = null != g, C = () => (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(y.Z, eB(eL({}, m), {
         pendingAvatar: p,
         user: n,
@@ -598,7 +598,7 @@ let eZ = e => {
         pendingAvatarDecoration: _,
         pendingProfileEffect: g,
         disabledInputs: true,
-        hideMessageInput: !x,
+        hideMessageInput: !P,
         hideCustomStatus: true,
         hideBioSection: f,
         hideExampleButton: true,
@@ -699,12 +699,12 @@ let eZ = e => {
       tab: h,
       variantType: g = eS.Ch.DEFAULT
     } = e, b = (0, v.e7)([F.default], () => F.default.getCurrentUser()), x = (0, ew.f)(a), {
-      previewingVariantIndex: P
-    } = x, j = (0, v.e7)([W.Z], () => W.Z.purchases), w = (0, Y.o)(a, j), T = (0, eP.N)(a, P), O = (0, eC.W)(a, w);
+      previewingVariantIndex: I
+    } = x, j = (0, v.e7)([W.Z], () => W.Z.purchases), w = (0, Y.o)(a, j), T = (0, eP.N)(a, I), O = (0, eC.W)(a, w);
     s()(null != O, "Selected product should not be null");
     let {
       analyticsLocations: E
-    } = (0, I.ZP)([...p, C.Z.COLLECTIBLES_SHOP_DETAILS_MODAL]);
+    } = (0, C.ZP)([...p, P.Z.COLLECTIBLES_SHOP_DETAILS_MODAL]);
     (0, ea.u9)(O.skuId);
     let S = (0, ej.kc)(o),
       A = (0, L.Y)({
@@ -735,7 +735,7 @@ let eZ = e => {
         slideCount: D,
         intervalMs: 5e3
       });
-    return null == b ? null : (0, r.jsx)(I.Gt, {
+    return null == b ? null : (0, r.jsx)(C.Gt, {
       value: E,
       children: (0, r.jsxs)(_.Y0X, {
         "data-migration-pending": true,

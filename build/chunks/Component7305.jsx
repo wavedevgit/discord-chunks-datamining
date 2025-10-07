@@ -76,8 +76,8 @@ function F(e) {
     onSubscriptionConfirmation: L,
     renderPurchaseConfirmation: O,
     postSuccessGuild: P,
-    followupSKUInfo: E,
-    renderHeader: w,
+    followupSKUInfo: w,
+    renderHeader: E,
     applicationId: I,
     guildId: k,
     referralTrialOfferId: T,
@@ -121,8 +121,8 @@ function F(e) {
       onSubscriptionConfirmation: L,
       renderPurchaseConfirmation: O,
       postSuccessGuild: P,
-      followupSKUInfo: E,
-      renderHeader: w,
+      followupSKUInfo: w,
+      renderHeader: E,
       applicationId: I,
       guildId: k,
       referralTrialOfferId: T,
@@ -153,7 +153,7 @@ function U(e) {
     isGift: C,
     skuId: s,
     referralTrialOfferId: l
-  }), _ = (0, E.Fv)(p), f = (0, u.id)(d, C, c);
+  }), _ = (0, w.Fv)(p), f = (0, u.id)(d, C, c);
   return (0, r.jsx)(b.J, (t = R({}, e), n = n = {
     breadcrumbSteps: B,
     onReturn: () => {
@@ -197,10 +197,10 @@ let G = function() {
       }
     }, {
       key: Chunk409813.h8.PLAN_SELECT,
-      renderStep: e => (0, r.jsx)(w.x, R({}, e)),
+      renderStep: e => (0, r.jsx)(E.x, R({}, e)),
       options: {
         renderHeader: true,
-        useBreadcrumbLabel: e => (0, E.Fv)(e) ? null : Z.intl.string(Z.t["r+SebW"]),
+        useBreadcrumbLabel: e => (0, w.Fv)(e) ? null : Z.intl.string(Z.t["r+SebW"]),
         sectionHeaderText: () => Chunk388032.intl.string(Chunk388032.t.UKbp1N)
       }
     }, {
@@ -208,7 +208,7 @@ let G = function() {
       renderStep: e => (0, r.jsx)(U, R({}, e)),
       options: {
         renderHeader: true,
-        useBreadcrumbLabel: e => (0, E.Fv)(e) ? null : Z.intl.string(Z.t.Sb6wIy)
+        useBreadcrumbLabel: e => (0, w.Fv)(e) ? null : Z.intl.string(Z.t.Sb6wIy)
       }
     }, {
       key: Chunk409813.h8.AWAITING_PURCHASE_TOKEN_AUTH,
@@ -221,7 +221,7 @@ let G = function() {
       renderStep: e => (0, r.jsx)(L.l, R({}, e)),
       options: {
         renderHeader: true,
-        useBreadcrumbLabel: e => (0, E.Fv)(e) ? Z.intl.string(Z.t.UKbp1N) : Z.intl.string(Z.t.QBnNHh)
+        useBreadcrumbLabel: e => (0, w.Fv)(e) ? Z.intl.string(Z.t.UKbp1N) : Z.intl.string(Z.t.QBnNHh)
       }
     }, {
       key: Chunk409813.h8.CONFIRM,

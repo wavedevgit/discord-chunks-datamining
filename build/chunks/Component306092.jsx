@@ -15,7 +15,7 @@ function o(e) {
     isPremiumUser: i,
     discount: o,
     hasSufficientOrbs: d,
-    discountOfferAmount: u
+    discountOfferAmount: c
   } = e;
   return t.currency === a.pK.DISCORD_ORB ? (0, l.jsx)(n.Z, {
     orbAmount: t.amount,
@@ -25,7 +25,7 @@ function o(e) {
     discount: o,
     nitroIconType: i ? "default" : true,
     nitroIconSize: "md",
-    discountOfferAmount: u
+    discountOfferAmount: c
   })
 }
 

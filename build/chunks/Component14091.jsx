@@ -144,9 +144,9 @@ function B(e) {
     totalResults: y,
     isSearching: _,
     isIndexing: j,
-    hasError: x
+    hasError: O
   } = l;
-  if (x) return (0, r.jsxs)(H, {
+  if (O) return (0, r.jsxs)(H, {
     children: [(0, r.jsx)("div", {
       className: U.errorImage
     }), (0, r.jsx)("div", {
@@ -181,16 +181,16 @@ function B(e) {
     isFavoritesSearch: b
   });
   let {
-    showNoResultsAlt: O
-  } = l, v = O ? k.intl.string(k.t["VrK/2d"]) : k.intl.string(k.t.V6nAfH);
+    showNoResultsAlt: x
+  } = l, v = x ? k.intl.string(k.t["VrK/2d"]) : k.intl.string(k.t.V6nAfH);
   return (0, r.jsxs)(H, {
     children: [(0, r.jsx)("div", {
       className: a()(U.noResultsImage, {
-        [U.alt]: O
+        [U.alt]: x
       })
     }), (0, r.jsx)("div", {
       className: a()(U.emptyResultsText, U.noResults, {
-        [U.alt]: O
+        [U.alt]: x
       }),
       children: v
     })]
@@ -208,8 +208,8 @@ let z = [],
       ignoreCount: f,
       isFeedbackVisible: b,
       dismissFeedbackEntrypoint: j,
-      onSearchModeChange: x,
-      onPageChange: O,
+      onSearchModeChange: O,
+      onPageChange: x,
       searchMode: I,
       onBlockedResultsClick: E,
       searchResultsQuery: Z,
@@ -265,8 +265,8 @@ let z = [],
           searchContext: t,
           searchRequestAnalyticsId: a,
           mode: e
-        }), x(e))
-      }, [x, n.isSearching, t, I, a]),
+        }), O(e))
+      }, [O, n.isSearching, t, I, a]),
       q = i.useCallback((e, r) => {
         let i = g.Z.getChannel(e.channel_id),
           l = null != i ? i.getGuildId() : null,
@@ -296,8 +296,8 @@ let z = [],
           searchContext: t,
           searchRequestAnalyticsId: a,
           newPageIndex: e
-        }), O(e)
-      }, [O, t, a]),
+        }), x(e)
+      }, [x, t, a]),
       Q = Math.floor(n.offset / L.vpv),
       X = V && Q >= H,
       J = H + 1,
@@ -382,12 +382,12 @@ function W(e) {
     isFeedbackVisible: l,
     dismissFeedbackEntrypoint: a
   } = function(e) {
-    let [t, n] = i.useState(false), r = (0, x.M)({
+    let [t, n] = i.useState(false), r = (0, O.M)({
       location: "SearchResults"
     }), {
       enabled: l,
       force: a
-    } = (0, O.f)({
+    } = (0, x.f)({
       location: "SearchResults"
     }), s = e.type === L.aib.DMS || e.type === L.aib.CHANNEL, o = r && s || l;
     return i.useEffect(() => {

@@ -104,7 +104,7 @@ function N(e) {
     bannerHeight: R,
     themePadding: P,
     pendingAccentColor: w,
-    animateOnHover: D = false
+    animateOnHoverOrFocusOnly: D = false
   } = e, L = (0, _.Dt)(), [x, M] = i.useState(false), j = (0, l.e7)([m.Z], () => m.Z.isFocused()), k = h.QK.getSetting(), {
     bannerSrc: U,
     status: G

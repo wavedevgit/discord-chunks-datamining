@@ -9,11 +9,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk137317 = require("./137317.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk727637 = require("./727637.js"),
   Chunk616780 = require("./616780.js"),
   Chunk100527 = require("./100527.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk313201 = require("./313201.js"),
+  Chunk104505 = require("./104505.js"),
   Chunk368326 = require("./368326.js"),
   Chunk429467 = require("./429467.js"),
   Chunk680295 = require("./680295.jsx"),
@@ -96,7 +96,7 @@ function Z(e) {
     disableAutoFocus: X = false
   } = e, {
     analyticsLocations: Q
-  } = (0, d.ZP)([...z, u.Z.USER_PROFILE_POPOUT]), J = (0, E.ZB)({
+  } = (0, u.ZP)([...z, c.Z.USER_PROFILE_POPOUT]), J = (0, E.ZB)({
     layout: "POPOUT",
     userId: n.id,
     guildId: G,
@@ -106,13 +106,16 @@ function Z(e) {
   }), $ = (0, o.e7)([m.Z], () => null != G ? m.Z.getGuild(G) : null), ee = i.useMemo(() => null != G ? {
     [G]: [n.id]
   } : {}, [G, n.id]);
-  (0, c.$)(ee, "UserProfilePopout");
+  (0, l.$)(ee, "UserProfilePopout");
   let et = i.useRef(null),
     en = (0, y.ZP)(n.id, G),
-    er = (0, l.Z)(et),
-    ei = (0, O.$m)(),
-    ea = (0, s.q_F)({
-      opacity: +(null != ei.interactionType),
+    {
+      isHoveringOrFocusing: er,
+      isHovering: ei
+    } = (0, f.Z)(et),
+    ea = (0, O.$m)(),
+    eo = (0, s.q_F)({
+      opacity: +(null != ea.interactionType),
       config: {
         duration: 150
       }
@@ -120,35 +123,35 @@ function Z(e) {
   i.useEffect(() => {
     null == W || W(null == et ? true : et.current)
   }, [et, W]);
-  let eo = i.useRef(null),
-    es = n.id === k.id,
-    el = (0, _.p)({
+  let es = i.useRef(null),
+    el = n.id === k.id,
+    ec = (0, _.p)({
       location: "UserProfilePopout"
     }),
-    ec = i.useMemo(() => (0, p.Z)(), []),
-    eu = e => {
+    eu = i.useMemo(() => (0, p.Z)(), []),
+    ed = e => {
       null == Y || Y(), (0, v.openUserProfileModal)(B(U({
         sourceAnalyticsLocations: Q,
         hideRestrictedProfile: true,
-        customStatusPrompt: ec
+        customStatusPrompt: eu
       }, J, e), {
         appContext: q
       }))
     },
-    ed = () => K ? null : (0, r.jsx)(s.sNh, {
+    ef = () => K ? null : (0, r.jsx)(s.sNh, {
       id: "view-profile",
       label: M.intl.string(M.t["+Xp3ho"]),
       action: () => {
-        eu(), (0, b.pQ)(U({
+        ed(), (0, b.pQ)(U({
           action: "PRESS_VIEW_PROFILE",
           analyticsLocations: Q
         }, J))
       }
     }),
-    ef = X ? "div" : s.VqE,
-    e_ = (0, f.Dt)(),
-    ep = g.ZP.useName(null == $ ? true : $.id, Z, n);
-  return (0, r.jsx)(d.Gt, {
+    e_ = X ? "div" : s.VqE,
+    ep = (0, d.Dt)(),
+    eh = g.ZP.useName(null == $ ? true : $.id, Z, n);
+  return (0, r.jsx)(u.Gt, {
     value: Q,
     children: (0, r.jsx)(E.Mt, {
       value: J,
@@ -157,41 +160,41 @@ function Z(e) {
       fetchEndedAt: null == en ? true : en.fetchEndedAt,
       isLoaded: null == en ? true : en.isLoaded,
       children: (0, r.jsx)(O.NJ, {
-        value: ei,
-        children: (0, r.jsxs)(ef, {
+        value: ea,
+        children: (0, r.jsxs)(e_, {
           ref: et,
-          "aria-labelledby": e_,
+          "aria-labelledby": ep,
           children: [(0, r.jsx)(s.nn4, {
             children: (0, r.jsx)(s.H, {
-              id: e_,
+              id: ep,
               children: M.intl.format(M.t.KRe1Fh, {
-                name: ep
+                name: eh
               })
             })
           }), (0, r.jsxs)(A.Z, {
             user: n,
             displayProfile: en,
             themeType: x.l.POPOUT,
-            children: [null != ei.interactionType && (0, r.jsx)(a.animated.div, {
-              style: ea,
+            children: [null != ea.interactionType && (0, r.jsx)(a.animated.div, {
+              style: eo,
               className: j.backdrop
             }), (0, r.jsxs)(C.Z, {
               children: [(0, r.jsx)(R.Z, {
-                shouldShowTooltip: null === ei.interactionType,
+                shouldShowTooltip: null === ea.interactionType,
                 user: n,
                 guildId: G,
                 channelId: Z,
                 onClose: Y,
                 appContext: q
               }), (0, r.jsx)(N.Z, {
-                shouldShowTooltip: null === ei.interactionType,
+                shouldShowTooltip: null === ea.interactionType,
                 themeType: x.l.POPOUT,
                 user: n
-              }), !es && (0, r.jsx)(P.Z, {
+              }), !el && (0, r.jsx)(P.Z, {
                 type: "banner",
                 user: n,
                 guildId: G,
-                viewProfileItem: ed(),
+                viewProfileItem: ef(),
                 appContext: q
               })]
             }), (0, r.jsxs)("div", {
@@ -211,23 +214,23 @@ function Z(e) {
                 guildId: G,
                 channelId: Z,
                 themeType: x.l.POPOUT,
-                onOpenProfile: K ? true : eu
+                onOpenProfile: K ? true : ed
               }), (0, r.jsx)(w.Z, {
-                ref: eo,
+                ref: es,
                 user: n,
                 guildId: G,
                 channelId: Z,
                 themeType: x.l.POPOUT,
                 onCloseProfile: Y,
-                prompt: el ? ec : null
+                prompt: ec ? eu : null
               })]
             }), (0, r.jsx)(D.Z, {
               user: n,
               currentUser: k,
               displayProfile: en,
               guild: $,
-              isHovering: null == ei.interactionType && er,
-              onOpenProfile: K ? true : eu,
+              isHoveringOrFocusing: null == ea.interactionType && er,
+              onOpenProfile: K ? true : ed,
               channelId: Z,
               onClose: Y
             }), (0, r.jsx)(L.Z, {
@@ -239,7 +242,7 @@ function Z(e) {
               disableAutoFocus: X
             }), (null == en ? true : en.profileEffect) != null && (0, r.jsx)(h.Z, {
               skuId: null == en || null == (t = en.profileEffect) ? true : t.skuId,
-              isHovering: er
+              isHovering: ei
             })]
           })]
         })

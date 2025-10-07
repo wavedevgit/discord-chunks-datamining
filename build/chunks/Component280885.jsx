@@ -21,8 +21,8 @@ function h(e) {
   let {
     userBio: t,
     className: n,
-    animateOnHover: a = false,
-    isHovering: h = false,
+    animateOnHoverOrFocusOnly: a = false,
+    isHoveringOrFocusing: h = false,
     lineClamp: m = 6,
     setLineClamp: g = true,
     textColor: E,

@@ -11,8 +11,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk596454 = require("./596454.jsx"),
-  Chunk727637 = require("./727637.js"),
   Chunk607070 = require("./607070.js"),
+  Chunk104505 = require("./104505.js"),
   Chunk176354 = require("./176354.js"),
   Chunk300849 = require("./300849.js");
 
@@ -36,7 +36,7 @@ function h(e) {
   let {
     trait: t,
     ellipsize: n
-  } = e, a = i.useRef(null), c = (0, u.Z)(a), f = !(0, s.e7)([d.Z], () => d.Z.useReducedMotion) && c;
+  } = e, a = i.useRef(null), c = (0, d.X)(a), f = !(0, s.e7)([u.Z], () => u.Z.useReducedMotion) && c;
   return null == t.label || t.label.length <= 0 ? null : (0, r.jsxs)("div", {
     ref: a,
     className: o()(_.trait, {

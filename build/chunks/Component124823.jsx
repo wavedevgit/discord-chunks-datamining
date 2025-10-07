@@ -7,11 +7,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk793030 = require("./793030.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk727637 = require("./727637.js"),
   Chunk410030 = require("./410030.js"),
   Chunk100527 = require("./100527.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk580552 = require("./580552.js"),
+  Chunk104505 = require("./104505.js"),
   Chunk680295 = require("./680295.jsx"),
   Chunk5192 = require("./5192.js"),
   Chunk785717 = require("./785717.jsx"),
@@ -57,19 +57,22 @@ function w(e) {
   let {
     user: n,
     channel: w
-  } = e, A = __OVERLAY__ || !(0, u.Z)(n.id), D = (0, m.ZP)(n.id), L = (0, o.ZP)(), M = i.useRef(Date.now()), {
+  } = e, A = __OVERLAY__ || !(0, d.Z)(n.id), D = (0, m.ZP)(n.id), L = (0, s.ZP)(), M = i.useRef(Date.now()), {
     analyticsLocations: k
-  } = (0, d.ZP)(c.Z.USER_PROFILE_SIDEBAR), U = (0, f.ZB)({
+  } = (0, c.ZP)(o.Z.USER_PROFILE_SIDEBAR), U = (0, f.ZB)({
     layout: "SIDEBAR",
     userId: n.id,
     channelId: w.id
-  }), G = i.useRef(null), H = (0, s.Z)(G), F = e => {
+  }), G = i.useRef(null), {
+    isHoveringOrFocusing: H,
+    isHovering: F
+  } = (0, u.Z)(G), B = e => {
     (0, b.openUserProfileModal)(R({
       sourceAnalyticsLocations: k,
       hideRestrictedProfile: true
     }, U, e))
   };
-  return (0, r.jsx)(d.Gt, {
+  return (0, r.jsx)(c.Gt, {
     value: k,
     children: (0, r.jsx)(f.Mt, {
       value: U,
@@ -94,13 +97,13 @@ function w(e) {
               user: n,
               displayProfile: D,
               themeType: Z.l.SIDEBAR,
-              animateOnHover: !H
+              animateOnHoverOrFocusOnly: !H
             }), (0, r.jsx)(y.Z, {
               user: n,
               displayProfile: D,
               channelId: w.id,
               themeType: Z.l.SIDEBAR,
-              onOpenProfile: A ? true : F
+              onOpenProfile: A ? true : B
             })]
           }), (0, r.jsxs)("div", {
             className: N.body,
@@ -108,7 +111,7 @@ function w(e) {
               user: n,
               nickname: h.ZP.getName(null, w.id, n),
               pronouns: null == D ? true : D.pronouns,
-              onOpenProfile: A ? true : F,
+              onOpenProfile: A ? true : B,
               tags: (0, r.jsx)(_.Z, {
                 displayProfile: D,
                 themeType: Z.l.SIDEBAR
@@ -118,16 +121,16 @@ function w(e) {
               children: [(0, r.jsx)(v.Z, {
                 heading: T.intl.string(T.t["61W33d"]),
                 headingColor: "header-primary",
-                children: (0, r.jsx)(x.Z, {
+                children: (0, r.jsx)(O.Z, {
                   userBio: null == D ? true : D.bio,
                   userId: n.id,
-                  animateOnHover: true,
-                  isHovering: H
+                  animateOnHoverOrFocusOnly: true,
+                  isHoveringOrFocusing: H
                 })
               }), (0, r.jsx)(v.Z, {
                 heading: T.intl.string(T.t["A//N4u"]),
                 headingColor: "header-primary",
-                children: (0, r.jsx)(O.Z, {
+                children: (0, r.jsx)(x.Z, {
                   userId: n.id
                 })
               })]
@@ -137,7 +140,7 @@ function w(e) {
           className: P.footer,
           children: (0, r.jsx)(a.P3F, {
             onClick: () => {
-              F(), (0, g.pQ)(R({
+              B(), (0, g.pQ)(R({
                 action: "PRESS_VIEW_PROFILE",
                 analyticsLocations: k
               }, U))
@@ -147,7 +150,7 @@ function w(e) {
           })
         }), (null == D ? true : D.profileEffect) != null && (0, r.jsx)(p.Z, {
           skuId: null == D || null == (t = D.profileEffect) ? true : t.skuId,
-          isHovering: H
+          isHovering: F
         })]
       })
     })

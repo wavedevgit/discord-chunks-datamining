@@ -71,24 +71,24 @@ function I(e) {
         themeOverride: S,
         children: (0, r.jsx)(l.u2D, {
           children: (0, r.jsxs)("div", {
-            className: O.container,
+            className: x.container,
             children: [(0, r.jsx)("img", {
               alt: "",
               src: v,
-              className: O.preview,
+              className: x.preview,
               "aria-hidden": true
             }), (0, r.jsxs)("div", {
-              className: O.body,
+              className: x.body,
               children: [(0, r.jsxs)("div", {
-                className: O.headerContainer,
+                className: x.headerContainer,
                 children: [(0, r.jsx)(m.Z, {
                   user: t
                 }), (0, r.jsx)(s.X6q, {
                   variant: "heading-lg/bold",
-                  children: x.intl.string(x.t.b33pLC)
+                  children: O.intl.string(O.t.b33pLC)
                 }), (0, r.jsx)(s.Text, {
                   variant: "text-sm/medium",
-                  children: x.intl.format(Z ? x.t["8F+WNz"] : x.t["/cZp5u"], {
+                  children: O.intl.format(Z ? O.t["8F+WNz"] : O.t["/cZp5u"], {
                     username: p.ZP.getName(n.guild_id, n.id, t)
                   })
                 })]

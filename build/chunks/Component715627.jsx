@@ -30,9 +30,9 @@ let o = {
       speedValues: O = o,
       dragCoefficientValue: b = 1.66,
       onAnimationEnd: j
-    } = t, [v, P] = r.useState(null), {
+    } = t, [P, v] = r.useState(null), {
       confettiCanvas: S
-    } = r.useContext(s.h), x = (0, l.uR)(null != y ? y : S, v), [Z, w] = r.useState(false);
+    } = r.useContext(s.h), x = (0, l.uR)(null != y ? y : S, P), [Z, w] = r.useState(false);
     r.useEffect(() => {
       Z && (null == j || j())
     });
@@ -124,7 +124,7 @@ let o = {
         for (let e of t) clearTimeout(e)
       }
     }, [x, e, d, p, f, m, h, g, O, b, j]), (0, i.jsx)(l.Ji, {
-      ref: P,
+      ref: v,
       sprites: null != I ? I : a.CA,
       colors: null != n ? n : a.Br,
       spriteWidth: a.Ko,

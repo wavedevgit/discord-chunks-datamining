@@ -54,7 +54,7 @@ let T = e => {
       eventHandlers: o
     } = (0, f.Z)({
       user: i,
-      onlyAnimateOnHover: true,
+      onlyAnimateOnHoverOrFocus: true,
       avatarDecorationOverride: t,
       size: (0, d.y9)(u.EFr.SIZE_40)
     });

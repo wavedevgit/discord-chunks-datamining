@@ -71,7 +71,7 @@ function G(e) {
     claimableRewards: ed
   } = (0, O.wD)(), {
     paymentModalBanner: eC
-  } = (0, w.zb)(), ec = (0, _.a5)(ee), eu = (null == (t = (0, p.Z)()) ? true : t.planSelectionBanner) != null, ep = el && ec && null != ed && ed.length > 0 && eu, e_ = (0, A.m)(Q, X), {
+  } = (0, E.zb)(), ec = (0, _.a5)(ee), eu = (null == (t = (0, p.Z)()) ? true : t.planSelectionBanner) != null, ep = el && ec && null != ed && ed.length > 0 && eu, e_ = (0, A.m)(Q, X), {
     newPlans: ef
   } = c.ZP.useExperiment({
     location: "d17fd6_3"
@@ -86,7 +86,7 @@ function G(e) {
   }), [$, ei, ef, q, em, en]), eS = ey && eL.includes(B.Xh.PREMIUM_MONTH_TIER_2) ? B.Xh.PREMIUM_MONTH_TIER_2 : eL[0], eO = (0, o.e7)([y.Z], () => y.Z.get(eS)), eP = [{
     planId: null == eO ? true : eO.id,
     quantity: 1
-  }], [eE, ew] = i.useState(ev), [eI, ek] = (0, u.ED)({
+  }], [ew, eE] = i.useState(ev), [eI, ek] = (0, u.ED)({
     items: eP,
     renewal: false,
     preventFetch: !ev,
@@ -96,8 +96,8 @@ function G(e) {
     currency: er.currency
   });
   i.useEffect(() => {
-    ev && ew((null == eI ? true : eI.subscriptionPeriodEnd) == null)
-  }, [eI, ev]), (0, d.Z)("Payment Modal Plan Select Step", eE, 5, {
+    ev && eE((null == eI ? true : eI.subscriptionPeriodEnd) == null)
+  }, [eI, ev]), (0, d.Z)("Payment Modal Plan Select Step", ew, 5, {
     proratedInvoicePreview: eI,
     proratedInvoiceError: ek,
     isEligibleForOffer: ev
@@ -150,7 +150,7 @@ function G(e) {
         className: ea,
         children: (0, r.jsx)(g.y, {
           onStepChange: H,
-          onBackClick: () => H(E.h8.SKU_SELECT),
+          onBackClick: () => H(w.h8.SKU_SELECT),
           showBackButton: null == D && null == K,
           planOptions: eL,
           shouldRenderUpdatedPaymentModal: eA,

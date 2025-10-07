@@ -11,8 +11,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk727637 = require("./727637.js"),
   Chunk782568 = require("./782568.js"),
+  Chunk104505 = require("./104505.js"),
   Chunk317632 = require("./317632.js"),
   Chunk174767 = require("./174767.js"),
   Chunk594174 = require("./594174.js"),
@@ -27,7 +27,9 @@ function y(e) {
   } = e, l = (0, a.e7)([g.default], () => {
     var e, n;
     return null != (n = null == (e = g.default.getUser(t.inviter_id)) ? true : e.username) ? n : ""
-  }), s = (0, m.vc)(o()(t.created_at), "LT"), c = i.useRef(null), p = (0, d.Z)(c);
+  }), s = (0, m.vc)(o()(t.created_at), "LT"), c = i.useRef(null), {
+    isHoveringOrFocusing: d
+  } = (0, p.Z)(c);
   return i.useEffect(() => {
     n || (0, f.Br)(t)
   }, [t, n]), (0, r.jsxs)("div", {
@@ -51,7 +53,7 @@ function y(e) {
         children: [(0, r.jsx)(O, {
           expired: n,
           invite: t,
-          isHoveringInvite: p
+          isHoveringInvite: d
         }), (0, r.jsx)(u.M0o, {
           className: _.deleteButton,
           tooltip: b.intl.string(b.t.oyYWHB),
@@ -91,7 +93,7 @@ function O(e) {
     expired: t,
     invite: n,
     isHoveringInvite: l
-  } = e, o = (0, a.e7)([h.Z], () => h.Z.isInviteGameInstalled(n)), d = (0, a.e7)([h.Z], () => h.Z.isInviteJoinable(n)), [g, m] = i.useState(false), y = i.useCallback(async () => {
+  } = e, o = (0, a.e7)([h.Z], () => h.Z.isInviteGameInstalled(n)), p = (0, a.e7)([h.Z], () => h.Z.isInviteJoinable(n)), [g, m] = i.useState(false), y = i.useCallback(async () => {
     m(true);
     try {
       await (0, f.MH)(n)
@@ -114,7 +116,7 @@ function O(e) {
       children: b.intl.string(b.t["s+J8Dg"])
     });
     else return null;
-  return o && d ? (0, r.jsx)(c.zx, {
+  return o && p ? (0, r.jsx)(c.zx, {
     className: _.primaryButton,
     color: c.Tt.GREEN,
     disabled: g,
@@ -126,7 +128,7 @@ function O(e) {
     disabled: g,
     size: c.Ph.SMALL,
     color: c.Tt.TRANSPARENT,
-    onClick: () => (0, p.Z)(n.fallback_url),
+    onClick: () => (0, d.Z)(n.fallback_url),
     children: b.intl.string(b.t["27y8KC"])
   }) : (0, r.jsx)(s.u, {
     text: b.intl.formatToPlainString(b.t.issFLC, {
@@ -137,7 +139,7 @@ function O(e) {
       disabled: true,
       size: c.Ph.SMALL,
       color: c.Tt.TRANSPARENT,
-      onClick: () => (0, p.Z)(n.fallback_url),
+      onClick: () => (0, d.Z)(n.fallback_url),
       children: (0, r.jsxs)("div", {
         className: _.launchToJoinContainer,
         children: [(0, r.jsx)(u.Text, {

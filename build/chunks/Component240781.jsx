@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk204418 = require("./204418.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk843347 = require("./843347.js");
-let O = [{
+let f = [{
     avatarSize: Chunk481060.EFr.SIZE_40,
     showStatus: false
   }, {
@@ -42,7 +42,7 @@ let O = [{
       year: "numeric"
     });
     return (0, n.jsxs)("div", {
-      className: f.purchaseInfo,
+      className: O.purchaseInfo,
       children: [(0, n.jsx)(c.Text, {
         variant: "text-sm/semibold",
         color: "header-primary",
@@ -89,16 +89,16 @@ let O = [{
       purchase: b
     } = (0, d.Z)(null == l ? true : l.skuId), E = v.ZP.canUseCollectibles(t), C = (0, u.qS)(b), A = (0, u.G1)(P), I = !E && C, w = (0, p.M)(!A || E), T = (0, m.kd)(P), N = i.useMemo(() => I ? y.intl.string(y.t["7vkeu7"]) : (0, a.EQ)([A, E, w]).with([true, true, false], () => y.intl.string(y.t.hmyYKy)).with([true, false, true], () => y.intl.string(y.t.q0PlFh)).with([true, false, false], () => y.intl.string(y.t["0xs2sL"])).otherwise(() => y.intl.string(y.t.fEGjVV)), [I, A, E, w]);
     return null != P && (null == b || I) ? (0, n.jsxs)("div", {
-      className: s()(f.modalPreview, f.shopPreviewContainer, h),
+      className: s()(O.modalPreview, O.shopPreviewContainer, h),
       children: [(0, n.jsx)("div", {
-        className: f.shopPreviewBanner,
+        className: O.shopPreviewBanner,
         children: (0, n.jsx)(j.Z, {
           user: t,
           guildId: r,
           avatarDecorationOverride: l
         })
       }), (0, n.jsxs)("div", {
-        className: f.shopPreviewTextContainer,
+        className: O.shopPreviewTextContainer,
         children: [(0, n.jsx)(c.Text, {
           variant: "text-sm/semibold",
           children: T
@@ -108,25 +108,25 @@ let O = [{
         })]
       })]
     }) : (0, n.jsxs)("div", {
-      className: s()(f.modalPreview, h),
+      className: s()(O.modalPreview, h),
       children: [(0, n.jsxs)("div", {
-        className: f.previewSections,
+        className: O.previewSections,
         children: [(0, n.jsx)("div", {
-          className: f.decorationPreview,
+          className: O.decorationPreview,
           children: (0, n.jsx)(j.Z, {
             user: t,
             guildId: r,
             avatarDecorationOverride: l
           })
         }), (0, n.jsx)("div", {
-          className: f.smallDecorationPreviewsContainer,
-          children: O.map(e => {
+          className: O.smallDecorationPreviewsContainer,
+          children: f.map(e => {
             let {
               avatarSize: i,
               showStatus: s
             } = e;
             return (0, n.jsx)("div", {
-              className: f.smallDecorationPreview,
+              className: O.smallDecorationPreview,
               children: (0, n.jsx)(j.Z, {
                 user: t,
                 guildId: r,

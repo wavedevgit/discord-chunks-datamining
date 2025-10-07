@@ -104,7 +104,7 @@ function Z(e) {
   } = e, l = (0, c.Z)(t), j = (0, f.Z)(t), I = (0, b.Z)(t.id), E = (0, m.Z)(t), S = (0, _.Z)({
     id: t.id,
     label: C.intl.string(C.t.DQ797u)
-  }), Z = (0, d.Z)(t), T = (0, u.Z)(t), P = (0, p.Z)(t, "Toolbar Overflow"), N = (0, g.Z)(t), R = (0, h.Z)(t), w = (0, y.Z)(t), A = x.vF.useSetting(), D = (0, s.e7)([O.Z], () => !a().isEmpty(O.Z.getVoiceStatesForChannel(t.id)));
+  }), Z = (0, d.Z)(t), T = (0, u.Z)(t), P = (0, p.Z)(t, "Toolbar Overflow"), N = (0, g.Z)(t), R = (0, h.Z)(t), w = (0, y.Z)(t), A = O.vF.useSetting(), D = (0, s.e7)([x.Z], () => !a().isEmpty(x.Z.getVoiceStatesForChannel(t.id)));
   return (0, r.jsxs)(o.v2r, {
     navId: "thread-context",
     onClose: n,

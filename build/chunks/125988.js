@@ -19,7 +19,7 @@ let f = e => {
     user: n,
     guildId: f,
     size: _,
-    onlyAnimateOnHover: p = false,
+    onlyAnimateOnHoverOrFocus: p = false,
     showPending: h = false,
     showTryItOut: m = false,
     avatarDecorationOverride: g

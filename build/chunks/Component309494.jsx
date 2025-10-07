@@ -18,7 +18,7 @@ var Chunk120356 = require("./120356.js"),
 function p(e) {
   let {
     user: t,
-    isHovering: n
+    isVisible: n
   } = e, {
     trackUserProfileAction: r
   } = (0, d.KZ)();

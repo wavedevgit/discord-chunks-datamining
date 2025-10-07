@@ -62,7 +62,7 @@ function S(e) {
   } = (0, d.Z)({
     user: c,
     size: (0, u.y9)(l.EFr.SIZE_40),
-    onlyAnimateOnHover: true
+    onlyAnimateOnHoverOrFocus: true
   });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(I, {

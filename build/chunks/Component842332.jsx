@@ -79,7 +79,7 @@ function h(e) {
         loading: f
       }
     }, [y, _, f, n, h.textValue]),
-    x = i.useCallback(function() {
+    O = i.useCallback(function() {
       let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
       return y ? (0, r.jsx)(a.u, {
         text: u.intl.string(u.t.ZF2oBg),
@@ -99,7 +99,7 @@ function h(e) {
     isGeneratingAI: f,
     generateAIName: _,
     enableAIFeatures: y,
-    renderAiGenerateButton: x,
+    renderAiGenerateButton: O,
     getThreadNameInputAccessory: j
   }
 }

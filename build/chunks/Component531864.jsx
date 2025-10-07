@@ -137,7 +137,7 @@ let p = {
           }), null != m && b === i.Z.PROFILE_EFFECT && (0, r.jsx)(o.Z, {
             skuId: m.skuId,
             isPurchased: false,
-            isHovering: true
+            isHighlighted: true
           })]
         }, h + t)
       })

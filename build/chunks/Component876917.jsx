@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
 let u = e => {
   let {
     skuId: t,
-    isHovering: r,
+    isHighlighted: r,
     forCollectedModal: i = false,
     isPurchased: u,
     removeSetHeight: f = false

@@ -55,12 +55,13 @@ function C(e) {
         transition: w ? true : "height 0.2s ease"
       } : {}
     }, [p, C, w]);
-  return null == D ? (0, r.jsx)(y.Z, {}) : (0, r.jsxs)(l.P3F, {
+  return null == D ? (0, r.jsx)(y.Z, {}) : (0, r.jsxs)(l.kL8, {
     className: o()(I.guildInviteContainer, {
       [I.clickable]: C && p
     }),
     onClick: L,
     style: M,
+    "aria-label": v.intl.string(v.t.dcl9MT),
     children: [(0, r.jsxs)("div", {
       className: I.cardHeightMeasure,
       ref: f,

@@ -8,10 +8,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk727637 = require("./727637.js"),
   Chunk100527 = require("./100527.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk313201 = require("./313201.js"),
+  Chunk104505 = require("./104505.js"),
   Chunk430824 = require("./430824.js"),
   Chunk5192 = require("./5192.js"),
   Chunk785717 = require("./785717.jsx"),
@@ -68,14 +68,16 @@ function P(e) {
     disableAutoFocus: U = false
   } = e, {
     analyticsLocations: G
-  } = (0, c.ZP)([...k, l.Z.USER_PROFILE_POPOUT]), B = (0, _.ZB)({
+  } = (0, l.ZP)([...k, s.Z.USER_PROFILE_POPOUT]), B = (0, _.ZB)({
     layout: "POPOUT",
     userId: t.id,
     guildId: N,
     channelId: P,
     messageId: w,
     roleId: D
-  }), Z = (0, h.ZP)(t.id, N), F = (0, a.e7)([d.Z], () => null != N ? d.Z.getGuild(N) : null), V = i.useRef(null), H = (0, s.Z)(V);
+  }), Z = (0, h.ZP)(t.id, N), F = (0, a.e7)([d.Z], () => null != N ? d.Z.getGuild(N) : null), V = i.useRef(null), {
+    isHoveringOrFocusing: H
+  } = (0, u.Z)(V);
   i.useEffect(() => {
     null == M || M(null == V ? true : V.current)
   }, [V, M]);
@@ -96,9 +98,9 @@ function P(e) {
       }
     }),
     K = U ? "div" : o.VqE,
-    z = (0, u.Dt)(),
+    z = (0, c.Dt)(),
     q = f.ZP.useName(N, P, t);
-  return (0, r.jsx)(c.Gt, {
+  return (0, r.jsx)(l.Gt, {
     value: G,
     children: (0, r.jsx)(_.Mt, {
       value: B,
@@ -152,7 +154,7 @@ function P(e) {
             currentUser: n,
             displayProfile: Z,
             guild: F,
-            isHovering: H,
+            isHoveringOrFocusing: H,
             onOpenProfile: j ? true : Y,
             channelId: P,
             onClose: x

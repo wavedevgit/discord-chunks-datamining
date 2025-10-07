@@ -13,8 +13,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk137317 = require("./137317.js"),
   Chunk481060 = require("./481060.js"),
   Chunk596454 = require("./596454.jsx"),
-  Chunk727637 = require("./727637.js"),
   Chunk313201 = require("./313201.js"),
+  Chunk104505 = require("./104505.js"),
   Chunk543241 = require("./543241.js"),
   Chunk318766 = require("./318766.jsx"),
   Chunk907040 = require("./907040.jsx"),
@@ -74,9 +74,9 @@ function P(e) {
     isDisabled: n = false,
     onClick: a,
     className: s
-  } = e, f = i.useRef(null), _ = (0, d.Z)(f);
+  } = e, d = i.useRef(null), _ = (0, f.X)(d);
   return (0, r.jsx)("span", {
-    ref: f,
+    ref: d,
     children: (0, r.jsx)(c.P3F, {
       onClick: a,
       focusProps: {
@@ -144,13 +144,13 @@ function D(e) {
     closePopout: a,
     onFocus: l,
     onSelectEmoji: u,
-    onSelectDisabledEmoji: d,
+    onSelectDisabledEmoji: f,
     onExpandedToggle: p,
     emojiSearchProps: m,
     recentlyUsedEmojis: b,
     analyticsOverride: T,
     ref: A
-  } = e, D = (0, f.Dt)(), [L, x] = i.useState(false), M = (0, _.wC)(t.guild_id), j = (0, s.uniqBy)([...M, ...R], "name").filter(e => !E.ZP.isEmojiFilteredOrLocked({
+  } = e, D = (0, d.Dt)(), [L, x] = i.useState(false), M = (0, _.wC)(t.guild_id), j = (0, s.uniqBy)([...M, ...R], "name").filter(e => !E.ZP.isEmojiFilteredOrLocked({
     emoji: e,
     channel: t,
     intention: N
@@ -228,7 +228,7 @@ function D(e) {
                   emoji: e,
                   isDisabled: n,
                   onClick: () => {
-                    n ? null == d || d(e) : U({
+                    n ? null == f || f(e) : U({
                       emoji: e,
                       willClose: true
                     })
