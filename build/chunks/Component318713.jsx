@@ -82,6 +82,7 @@ let E = Chunk647438.memo(function(e) {
         [f.alt]: m
       }),
       children: null == v ? (0, r.jsx)(s.u, {
+        asContainer: true,
         __unsupportedReactNodeAsText: (0, l.vc)(T, "LLLL"),
         "aria-label": N,
         position: I,
