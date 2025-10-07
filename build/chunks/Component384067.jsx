@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk622535 = require("./622535.js"),
   Chunk481060 = require("./481060.js"),
   Chunk63063 = require("./63063.js"),
@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk310582 = require("./310582.js");
 let h = e => {
-  var t, n, a;
+  var t, n, s;
   let {
     wideBannerBlock: h,
     handleTransition: _,
@@ -40,26 +40,26 @@ let h = e => {
     } = (0, d.E)(O, "home", "marketing wide banner"),
     y = h.bannerUrl;
   if (null == y) return null;
-  let j = m === g.AW.ORBS;
+  let L = m === g.AW.ORBS;
   return (0, r.jsx)(i.$, {
     innerRef: E,
     onChange: T,
     threshold: 0,
     children: (0, r.jsxs)("div", {
       ref: E,
-      className: s()(C.row, C.between, C.bannerBlockContainer, C.centeredSection, {
-        [C.extraRounded]: j
+      className: a()(C.row, C.between, C.bannerBlockContainer, C.centeredSection, {
+        [C.extraRounded]: L
       }),
       children: [(0, r.jsx)("div", {
-        className: s()(C.wideBannerBackgroundImg, {
-          [C.extraRounded]: j
+        className: a()(C.wideBannerBackgroundImg, {
+          [C.extraRounded]: L
         }),
         children: (0, r.jsx)("img", {
           ref: S,
           src: y,
           alt: h.title,
-          className: s()(C.wideBannerArt, {
-            [C.wideBannerArtOrbs]: j
+          className: a()(C.wideBannerArt, {
+            [C.wideBannerArtOrbs]: L
           }),
           style: {
             height: null != v ? "".concat(v, "px") : "auto"
@@ -76,16 +76,16 @@ let h = e => {
             style: {
               color: null != (n = h.bannerTextColor) ? n : "var(--header-primary)"
             },
-            className: j ? C.wideBannerOrbsHeading : true,
-            variant: j ? "heading-xl/bold" : "heading-lg/semibold",
+            className: L ? C.wideBannerOrbsHeading : true,
+            variant: L ? "heading-xl/bold" : "heading-lg/semibold",
             children: h.title
           }), (0, r.jsx)(o.Text, {
             style: {
-              color: null != (a = h.bannerTextColor) ? a : "var(--text-muted)"
+              color: null != (s = h.bannerTextColor) ? s : "var(--text-muted)"
             },
             lineClamp: 2,
-            variant: j ? "text-md/medium" : "text-sm/medium",
-            children: j ? f.intl.format(f.t.SFFP7O, {
+            variant: L ? "text-md/medium" : "text-sm/medium",
+            children: L ? f.intl.format(f.t.SFFP7O, {
               helpdeskArticle: c.Z.getArticleURL(p.BhN.VIRTUAL_CURRENCY_LEARN_MORE)
             }) : h.body
           })]

@@ -115,7 +115,7 @@ function v(e) {
         channel: t,
         guildId: t.guild_id
       }, "embedded-activity-".concat(A.application_id)))
-    } else if ((null != A.assets || (0, a.Z)(A)) && A.type === E.IIU.PLAYING) x((0, r.jsx)(b.Z.RichPresenceSection, {
+    } else if (A.type === E.IIU.PLAYING) x((0, r.jsx)(b.Z.RichPresenceSection, {
       activity: A,
       getAssetImage: g.xF,
       user: L

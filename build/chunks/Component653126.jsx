@@ -2,82 +2,94 @@
 /** chunk id: 653126, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => x
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk979554 = require("./979554.js"),
-  Chunk399606 = require("./399606.js"),
-  Chunk597688 = require("./597688.js"),
-  Chunk844035 = require("./844035.jsx"),
+  Chunk120356 = require("./120356.js"),
+  a = require.n(Chunk120356),
+  Chunk622535 = require("./622535.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk100527 = require("./100527.js"),
+  Chunk994587 = require("./994587.jsx"),
+  Chunk297651 = require("./297651.js"),
+  Chunk993222 = require("./993222.jsx"),
+  Chunk932083 = require("./932083.jsx"),
+  Chunk719075 = require("./719075.jsx"),
+  Chunk558261 = require("./558261.jsx"),
+  Chunk819882 = require("./819882.jsx"),
   Chunk786040 = require("./786040.jsx"),
-  Chunk58201 = require("./58201.js"),
-  Chunk619899 = require("./619899.js");
-let g = e => {
+  Chunk659755 = require("./659755.js"),
+  Chunk29121 = require("./29121.js"),
+  Chunk215023 = require("./215023.js"),
+  Chunk213301 = require("./213301.js");
+let v = Chunk647438.memo(function(e) {
     let {
       product: t
-    } = e, [n, l] = (0, c.SS)(t), a = (0, u.W)(t, n);
-    return (0, r.jsx)(o.Z, {
-      product: a,
-      variantSwitcher: l,
-      selectedVariantIndex: n
+    } = e, n = (0, u.Nd)(), s = null == n ? true : n.tab, v = (0, b.zQ)(t), x = l.useRef(null), {
+      handleCardVisibilityChange: O
+    } = (0, d.E)(t.skuId, s === E.AW.CATALOG ? "full" : s), T = (0, _.J7)(t, c.Z.COLLECTIBLES_SHOP_CARD), [y, L] = (0, _.SS)(t);
+    return (0, r.jsx)(i.$, {
+      innerRef: x,
+      onChange: O,
+      threshold: 0,
+      children: (0, r.jsx)("div", {
+        className: S.baseProductCardHoverContainer,
+        children: (0, r.jsx)(o.kL8, {
+          ref: x,
+          onClick: T,
+          "aria-label": v,
+          className: S.baseProductCardContainer,
+          children: (0, r.jsxs)("div", {
+            className: S.baseProductCardContentContainer,
+            children: [(0, r.jsx)(g.Z, {
+              skuId: t.skuId
+            }), (0, r.jsxs)("div", {
+              className: S.innerContainer,
+              children: [(0, r.jsxs)("div", {
+                className: a()(S.baseProductCardDetailsContainer, {
+                  [S.hasVariantSwitcher]: null != L
+                }),
+                children: [(0, r.jsx)(p.Z, {
+                  skuId: t.skuId
+                }), null != L && (0, r.jsx)("div", {
+                  className: S.hoveredVariantSwitcher,
+                  children: L
+                })]
+              }), (0, r.jsxs)("div", {
+                className: S.baseProductCardFooter,
+                children: [(0, r.jsx)(f.Z, {
+                  skuId: t.skuId
+                }), L]
+              })]
+            }), (0, r.jsx)("div", {
+              className: S.innerHover,
+              children: (0, r.jsxs)(o.hE2, {
+                wrap: false,
+                fullWidth: true,
+                children: [(0, r.jsx)(C.Z, {
+                  skuId: t.skuId,
+                  cardRef: x,
+                  selectedVariantIndex: y
+                }), (0, r.jsx)(h.Z, {
+                  skuId: t.skuId,
+                  cardRef: x,
+                  selectedVariantIndex: y
+                })]
+              })
+            }), (0, r.jsx)(m.Z, {
+              skuId: t.skuId
+            })]
+          })
+        })
+      })
     })
-  },
-  p = e => {
-    let {
-      product: t
-    } = e, [n, l] = (0, c.SS)(t), a = (0, u.W)(t, n);
-    return (0, r.jsx)(o.Z, {
-      product: a,
-      variantSwitcher: l,
-      selectedVariantIndex: n
-    })
-  },
-  f = e => {
-    let {
-      product: t
-    } = e, [n, l] = (0, c.SS)(t), a = (0, u.W)(t, n);
-    return (0, r.jsx)(o.Z, {
-      product: a,
-      variantSwitcher: l,
-      selectedVariantIndex: n
-    })
-  },
-  C = e => {
-    let {
-      product: t
-    } = e, [n, l] = (0, c.SS)(t), a = (0, u.W)(t, n);
-    return (0, r.jsx)(o.Z, {
-      product: a,
-      variantSwitcher: l,
-      selectedVariantIndex: n
-    })
-  },
-  h = e => {
-    let {
-      product: t
-    } = e, [n, l] = (0, c.SS)(t), a = (0, u.W)(t, n);
-    return (0, r.jsx)(o.Z, {
-      product: a,
-      variantSwitcher: l,
-      selectedVariantIndex: n
-    })
-  },
-  _ = Chunk647438.memo(function(e) {
+  }),
+  x = e => {
     let {
       skuId: t
-    } = e, n = (0, s.e7)([i.Z], () => i.Z.getCategoryForProduct(t)), l = null == n ? true : n.products.find(e => e.skuId === t), o = (0, d.Cr)(l);
-    if (null == o) return null;
-    let u = (0, c.rC)(l);
-    return u === a.Z.PROFILE_EFFECT ? (0, r.jsx)(g, {
-      product: o
-    }) : u === a.Z.AVATAR_DECORATION ? (0, r.jsx)(p, {
-      product: o
-    }) : u === a.Z.NAMEPLATE ? (0, r.jsx)(f, {
-      product: o
-    }) : u === a.Z.BUNDLE ? (0, r.jsx)(C, {
-      product: o
-    }) : u === a.Z.EXTERNAL_SKU ? (0, r.jsx)(h, {
-      product: o
-    }) : null
-  })
+    } = e, n = (0, _.LJ)(t);
+    return null == n ? null : (0, r.jsx)(v, {
+      product: n
+    })
+  }

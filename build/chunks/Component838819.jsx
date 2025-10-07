@@ -7,7 +7,7 @@ require.r(exports), require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk772848 = require("./772848.js"),
   Chunk399606 = require("./399606.js"),
   Chunk952265 = require("./952265.js"),
@@ -47,22 +47,22 @@ let M = e => {
       children: t,
       shouldAddEventListener: n,
       onClose: r
-    } = e, a = (0, c.f9)();
+    } = e, s = (0, c.f9)();
     return l.useEffect(() => {
-      if (!n || a) return;
+      if (!n || s) return;
       let e = e => {
         e.key === H.mR.Escape && r()
       };
       return window.addEventListener("keydown", e), () => window.removeEventListener("keydown", e)
-    }, [n, a, r]), t
+    }, [n, s, r]), t
   },
   W = function(e) {
     let {
       isFullScreen: t = true,
       tab: n = Z.AW.HOME
     } = e;
-    (0, C.z)(f.f), (0, j.f)();
-    let a = (0, g.Z)((0, i.Z)()),
+    (0, C.z)(f.f), (0, L.f)();
+    let s = (0, g.Z)((0, i.Z)()),
       c = (0, o.e7)([E.default], () => E.default.getCurrentUser()),
       {
         userProfile: H,
@@ -89,7 +89,7 @@ let M = e => {
       } = (0, T.ZP)({
         logPerf: true
       }, {
-        sessionId: a,
+        sessionId: s,
         tab: K,
         isFullScreen: t
       }),
@@ -107,15 +107,15 @@ let M = e => {
       {
         selectedTab: er,
         transitionState: el,
-        transitionToTab: ea
-      } = (0, L.B)(K, t);
-    (0, O.q3)(a, er, $, el, ee), (0, O.EB)(er, c);
+        transitionToTab: es
+      } = (0, j.B)(K, t);
+    (0, O.q3)(s, er, $, el, ee), (0, O.EB)(er, c);
     let {
-      dismissShopButtonDC: es
+      dismissShopButtonDC: ea
     } = (0, A.Z)();
     l.useEffect(() => {
-      es()
-    }, [es]), l.useEffect(() => {
+      ea()
+    }, [ea]), l.useEffect(() => {
       t || (0, d.Y)(w.Z5c.COLLECTIBLES_SHOP)
     }, [t]);
     let ei = (0, o.e7)([b.Z], () => b.Z.getLayers().includes(w.S9g.COLLECTIBLES_SHOP)),
@@ -140,7 +140,7 @@ let M = e => {
       value: eg,
       children: (0, r.jsx)(S.k0, {
         newValue: {
-          sessionId: a,
+          sessionId: s,
           pageCategory: $,
           pageSize: Z.kN
         },
@@ -150,7 +150,7 @@ let M = e => {
             onClose: V,
             shouldAddEventListener: t && !ei,
             children: (0, r.jsxs)("div", {
-              className: s()(F.shop, {
+              className: a()(F.shop, {
                 [D.shopTakeOver]: U
               }),
               ref: t ? eo : ec,
@@ -159,10 +159,10 @@ let M = e => {
                 isFullScreen: t,
                 isLayer: ei,
                 onClose: V,
-                handleTransition: ea,
+                handleTransition: es,
                 selectedTab: er
               }), (0, r.jsx)("div", {
-                className: s()(F.shopViewWrapper, {
+                className: a()(F.shopViewWrapper, {
                   [F.visible]: el === Z.f7.VISIBLE,
                   [F.in]: el === Z.f7.IN,
                   [F.out]: el === Z.f7.OUT
@@ -171,7 +171,7 @@ let M = e => {
                   tab: er,
                   isFullScreen: t,
                   refreshCategories: Y,
-                  transitionToTab: ea,
+                  transitionToTab: es,
                   transitionState: el,
                   sortedCategories: X,
                   updateAnalyticsState: en

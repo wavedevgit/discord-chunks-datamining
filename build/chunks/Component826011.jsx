@@ -34,7 +34,7 @@ function I(e) {
   }, [t, n.planId, N]);
   let T = (0, m.Z)(n),
     j = r.useCallback(() => {
-      (0, d.JG)(T), (0, o.showToast)((0, o.createToast)(h.intl.string(h.t["+5kSoa"]), o.ToastType.SUCCESS))
+      (0, d.JG)(null != T ? T : ""), (0, o.showToast)((0, o.createToast)(h.intl.string(h.t["+5kSoa"]), o.ToastType.SUCCESS))
     }, [T]),
     S = r.useMemo(() => {
       switch (n.status) {
@@ -83,7 +83,7 @@ function I(e) {
             children: e
           })]
         }, t))
-      }), (0, s.jsxs)("div", {
+      }), null != T && (0, s.jsxs)("div", {
         className: v.serverIpContainer,
         children: [(0, s.jsx)("div", {
           className: v.serverIpInput,

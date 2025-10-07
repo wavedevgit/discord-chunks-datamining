@@ -88,30 +88,30 @@ function Z(e) {
   let {
     guildId: n,
     instance: t
-  } = e, i = (0, y.Z)(t), S = null != t.serverIP && null != t.port, [Z, D] = (0, u.US)([c.z.GAME_SERVER_HOSTING_PORTKEY_TOS]), G = Z !== c.z.GAME_SERVER_HOSTING_PORTKEY_TOS, R = (0, l.e7)([b.Z], () => b.Z.getDetectableGame(t.gameId)), A = a.useCallback(() => {
-    G || null == t.providerType ? (0, O.Z)(n, t) : (0, h.Z)({
+  } = e, i = (0, y.Z)(t), [S, Z] = (0, u.US)([c.z.GAME_SERVER_HOSTING_PORTKEY_TOS]), D = S !== c.z.GAME_SERVER_HOSTING_PORTKEY_TOS, G = (0, l.e7)([b.Z], () => b.Z.getDetectableGame(t.gameId)), R = a.useCallback(() => {
+    D || null == t.providerType ? (0, O.Z)(n, t) : (0, h.Z)({
       provider: t.providerType,
       onAccept: () => {
-        D(C.L.TAKE_ACTION), (0, O.Z)(n, t)
+        Z(C.L.TAKE_ACTION), (0, O.Z)(n, t)
       }
     })
-  }, [t, G, D, n]), V = a.useCallback(() => {
-    (0, g.JG)(i), (0, d.showToast)((0, d.createToast)(N.intl.string(N.t["+5kSoa"]), d.ToastType.SUCCESS))
-  }, [i]), B = (0, _.Z)(t.gameId, "cover"), W = (0, x.Z)(n), L = a.useCallback(() => {
+  }, [t, D, Z, n]), A = a.useCallback(() => {
+    (0, g.JG)(null != i ? i : ""), (0, d.showToast)((0, d.createToast)(N.intl.string(N.t["+5kSoa"]), d.ToastType.SUCCESS))
+  }, [i]), V = (0, _.Z)(t.gameId, "cover"), B = (0, x.Z)(n), W = a.useCallback(() => {
     var e;
     (0, f.q)({
       href: null != (e = t.gameServerPanelUrl) ? e : ""
     })
-  }, [t.gameServerPanelUrl]), M = a.useCallback(() => {
+  }, [t.gameServerPanelUrl]), L = a.useCallback(() => {
     (0, p.WX)(n, t.id)
-  }, [n, t.id]), U = a.useMemo(() => {
+  }, [n, t.id]), M = a.useMemo(() => {
     switch (t.status) {
       case s.V.SLEEPING:
         return (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(T, {
-            onClick: M
-          }), W && (0, r.jsx)(w, {
-            onClick: L,
+            onClick: L
+          }), B && (0, r.jsx)(w, {
+            onClick: W,
             disabled: null == t.gameServerPanelUrl
           })]
         });
@@ -120,33 +120,32 @@ function Z(e) {
       case s.V.STARTING:
         return (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(k, {
-            onClick: A,
-            disabled: !S
-          }), W && (0, r.jsx)(w, {
-            onClick: L,
+            onClick: R
+          }), B && (0, r.jsx)(w, {
+            onClick: W,
             disabled: null == t.gameServerPanelUrl
           })]
         });
       case s.V.MISSING_STOCK:
-        return W ? (0, r.jsx)(E, {
-          onClick: L
+        return B ? (0, r.jsx)(E, {
+          onClick: W
         }) : (0, r.jsx)(k, {
-          onClick: A,
+          onClick: R,
           disabled: true
         });
       case s.V.DELETED:
       case s.V.STARTUP_FAILED:
-        return W ? (0, r.jsx)(w, {
-          onClick: L,
+        return B ? (0, r.jsx)(w, {
+          onClick: W,
           disabled: null == t.gameServerPanelUrl
         }) : (0, r.jsx)(k, {
-          onClick: A,
+          onClick: R,
           disabled: true
         });
       default:
         return null
     }
-  }, [t, A, W, L, S, M]);
+  }, [t, R, B, W, L]);
   return (0, r.jsxs)("div", {
     className: P.card,
     children: [(0, r.jsxs)("div", {
@@ -156,7 +155,7 @@ function Z(e) {
         children: [(0, r.jsxs)("div", {
           className: P.serverHeader,
           children: [(0, r.jsx)("img", {
-            src: null != B ? B : "",
+            src: null != V ? V : "",
             alt: "",
             className: P.gameImage
           }), (0, r.jsxs)("div", {
@@ -167,7 +166,7 @@ function Z(e) {
             }), (0, r.jsxs)(d.Text, {
               variant: "text-sm/medium",
               color: "text-tertiary",
-              children: [null != R ? "".concat(R.name, " • ") : "", t.planName]
+              children: [null != G ? "".concat(G.name, " • ") : "", t.planName]
             })]
           })]
         }), (0, r.jsx)("div", {
@@ -191,14 +190,17 @@ function Z(e) {
                 children: N.intl.string(I.default["9pw/yM"])
               }), (0, r.jsx)("div", {
                 className: P.serverIpContainer,
-                children: S ? G ? (0, r.jsxs)(r.Fragment, {
+                children: null == i ? (0, r.jsx)(d.Text, {
+                  variant: "text-sm/medium",
+                  children: "—"
+                }) : D ? (0, r.jsxs)(r.Fragment, {
                   children: [(0, r.jsx)(d.Text, {
                     variant: "text-sm/medium",
                     children: i
                   }), (0, r.jsx)(d.P3F, {
                     className: P.copyButton,
                     "aria-label": N.intl.string(N.t.OpuAlJ),
-                    onClick: V,
+                    onClick: A,
                     children: (0, r.jsx)(d.TIy, {
                       size: "sm"
                     })
@@ -208,14 +210,11 @@ function Z(e) {
                     (0, h.Z)({
                       provider: t.providerType,
                       onAccept: () => {
-                        D(C.L.TAKE_ACTION), (0, O.Z)(n, t)
+                        Z(C.L.TAKE_ACTION), (0, O.Z)(n, t)
                       }
                     })
                   },
                   children: N.intl.string(I.default.UwXK29)
-                }) : (0, r.jsx)(d.Text, {
-                  variant: "text-sm/medium",
-                  children: "—"
                 })
               })]
             }), (0, r.jsxs)("div", {
@@ -265,14 +264,14 @@ function Z(e) {
             })]
           })
         })]
-      }), null != U && (0, r.jsxs)(r.Fragment, {
+      }), null != M && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
           className: P.divider
         }), (0, r.jsx)("div", {
           className: P.serverActions,
-          children: U
+          children: M
         })]
-      }), W && (0, r.jsx)("div", {
+      }), B && (0, r.jsx)("div", {
         className: P.overflowMenu,
         children: (0, r.jsx)(j.Z, {
           guildId: n,
@@ -282,7 +281,7 @@ function Z(e) {
     }), (0, r.jsx)("div", {
       className: P.imageBackground,
       children: (0, r.jsx)(v.M, {
-        imageUrl: null != B ? B : ""
+        imageUrl: null != V ? V : ""
       })
     })]
   })

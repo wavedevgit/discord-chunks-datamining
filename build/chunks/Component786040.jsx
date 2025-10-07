@@ -2,10 +2,11 @@
 /** chunk id: 786040, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  J7: () => A,
-  SS: () => C,
-  oc: () => S,
-  rC: () => N
+  J7: () => C,
+  LJ: () => P,
+  SS: () => N,
+  oc: () => A,
+  rC: () => R
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -26,24 +27,25 @@ var Chunk951288 = require("./951288.js"),
   Chunk201964 = require("./201964.js"),
   Chunk361110 = require("./361110.js"),
   Chunk956472 = require("./956472.js"),
+  Chunk619899 = require("./619899.js"),
   Chunk642909 = require("./642909.js"),
   Chunk215023 = require("./215023.js"),
   Chunk981631 = require("./981631.js");
-let S = (e, t, n, r) => {
-    u.default.track(T.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+let A = (e, t, n, r) => {
+    u.default.track(S.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
       collectibles_shop_session_id: null == n ? true : n.sessionId,
       sku_id: e.skuId,
       page_type: t,
       page_section: null == n ? true : n.pageSection,
-      page_category: t === I.AW.HOME || null == n ? true : n.pageCategory,
-      page_index: t === I.AW.CATALOG ? null == n ? true : n.pageIndex : true,
-      page_size: t === I.AW.CATALOG ? null == n ? true : n.pageSize : true,
+      page_category: t === T.AW.HOME || null == n ? true : n.pageCategory,
+      page_index: t === T.AW.CATALOG ? null == n ? true : n.pageIndex : true,
+      page_size: t === T.AW.CATALOG ? null == n ? true : n.pageSize : true,
       tile_type: a.Z[e.type],
       tile_position: String(null == n ? true : n.tilePosition),
       cta_name: r
     })
   },
-  A = (e, t) => {
+  C = (e, t) => {
     let n = (0, h.Nd)(),
       r = null == n ? true : n.tab,
       a = (0, p.Vc)(),
@@ -54,14 +56,14 @@ let S = (e, t, n, r) => {
       } = (0, c.ZP)(l.Z.COLLECTIBLES_SHOP_CARD),
       E = (0, s.e7)([f.Z], () => f.Z.getCategoryForProduct(e.skuId)),
       b = i.useRef(null),
-      y = (0, v.G)("useHandlePreviewClick"),
-      T = null != u && u === o.z.HERO && y ? I.Ch.THUMBNAIL : I.Ch.DEFAULT;
+      y = (0, I.G)("useHandlePreviewClick"),
+      v = null != u && u === o.z.HERO && y ? T.Ch.THUMBNAIL : T.Ch.DEFAULT;
     return i.useCallback(t => n => {
       if (null == E) return;
       let i = (0, O.oQ)({
         product: e
       });
-      b.current = n.currentTarget, S(e, r, _, null), (0, g.T)({
+      b.current = n.currentTarget, A(e, r, _, null), (0, g.T)({
         product: e,
         category: E,
         shouldCheckoutWithOrbs: i,
@@ -69,11 +71,11 @@ let S = (e, t, n, r) => {
         analyticsSource: t,
         returnRef: b,
         tab: r,
-        variantType: T
+        variantType: v
       })
-    }, [e, r, E, m, _, T])(t)
+    }, [e, r, E, m, _, v])(t)
   },
-  C = e => {
+  N = e => {
     let {
       previewingVariantIndex: t,
       handleEntering: n,
@@ -96,7 +98,7 @@ let S = (e, t, n, r) => {
     }
     return [c, null]
   },
-  N = e => {
+  R = e => {
     if (null == e) return null;
     if (e.type === a.Z.VARIANTS_GROUP) {
       if (null == e.variants || 0 === e.variants.length) return null;
@@ -106,4 +108,9 @@ let S = (e, t, n, r) => {
       return n.type
     }
     return e.type
+  },
+  P = e => {
+    let t = (0, s.e7)([f.Z], () => f.Z.getCategoryForProduct(e)),
+      n = null == t ? true : t.products.find(t => t.skuId === e);
+    return (0, v.Cr)(n)
   }

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk702486 = require("./702486.js"),
   Chunk626135 = require("./626135.js"),
@@ -31,7 +31,7 @@ function T(e) {
   let {
     isFullScreen: t,
     tab: n,
-    sortedCategories: a,
+    sortedCategories: s,
     initialCategoryId: c,
     onUnmount: u
   } = e;
@@ -59,11 +59,11 @@ function T(e) {
   }, []), l.useEffect(() => {
     p || S(false)
   }, [p, S]), (0, r.jsx)("div", {
-    className: s()(O.pageWrapper, {
+    className: a()(O.pageWrapper, {
       [O.pageWrapperFilter]: p
     }),
     children: (0, r.jsxs)("main", {
-      className: s()(O.page, {
+      className: a()(O.page, {
         [O.pageFilter]: p
       }),
       children: [(0, r.jsx)(i.yWw, {
@@ -77,7 +77,7 @@ function T(e) {
           setFilterBarOpen: S,
           tab: n,
           scrollerRef: f,
-          sortedCategories: a,
+          sortedCategories: s,
           setCategoryRef: m
         })
       }), E && !v && (0, r.jsx)("div", {
@@ -93,13 +93,13 @@ let y = e => {
   let {
     isFullScreen: t,
     isSmallScreen: n,
-    filterBarOpen: a,
+    filterBarOpen: s,
     setFilterBarOpen: o,
     tab: C,
     scrollerRef: T,
     sortedCategories: y,
-    setCategoryRef: j
-  } = e, L = (0, d.FF)("CollectiblesBrowse"), k = l.useRef(null), I = (0, g.S)(e => e.hasDefaultFilters()), P = (0, u.sp)(), {
+    setCategoryRef: L
+  } = e, j = (0, d.FF)("CollectiblesBrowse"), k = l.useRef(null), I = (0, g.S)(e => e.hasDefaultFilters()), P = (0, u.sp)(), {
     handlePageChange: N,
     currentPage: B
   } = (0, m.h)({
@@ -117,7 +117,7 @@ let y = e => {
     }), N(e)
   }, [P, N]), R = l.useRef(null);
   return l.useEffect(() => {
-    if (!n || !a) return;
+    if (!n || !s) return;
     let e = e => {
       let t = e.target;
       null === k.current || null === R.current || k.current.contains(t) || R.current.contains(t) || (c.default.track(v.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
@@ -131,20 +131,20 @@ let y = e => {
       }), o(false))
     };
     return document.addEventListener("mousedown", e), () => document.removeEventListener("mousedown", e)
-  }, [n, a, o, P]), (0, r.jsx)("div", {
+  }, [n, s, o, P]), (0, r.jsx)("div", {
     className: O.inventoryWrapper,
     children: (0, r.jsxs)("div", {
-      className: s()(O.inventory, {
-        [O.inventoryFilter]: L,
+      className: a()(O.inventory, {
+        [O.inventoryFilter]: j,
         [O.pageFullscreen]: t
       }),
-      children: [L && (0, r.jsxs)("div", {
+      children: [j && (0, r.jsxs)("div", {
         className: O.controls,
         children: [(0, r.jsx)("div", {
           className: O.controlsLeftSide,
           children: (0, r.jsx)(p.Z, {})
         }), (0, r.jsxs)("div", {
-          className: s()(O.controlsRightSide, {
+          className: a()(O.controlsRightSide, {
             [O.controlsRightSideResponsive]: n
           }),
           children: [(0, r.jsxs)("div", {
@@ -157,7 +157,7 @@ let y = e => {
             ref: R,
             children: (0, r.jsx)(i.zxk, {
               onClick: () => {
-                let e = !a;
+                let e = !s;
                 c.default.track(v.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                   collectibles_shop_session_id: null == P ? true : P.sessionId,
                   page_section: null == P ? true : P.pageSection,
@@ -169,12 +169,12 @@ let y = e => {
                 }), o(e)
               },
               variant: "secondary",
-              text: x.intl.string(a ? x.t.fYtm6e : x.t.TeTYEx),
+              text: x.intl.string(s ? x.t.fYtm6e : x.t.TeTYEx),
               icon: i.gXV,
               iconPosition: "end"
             })
           })]
-        }), a && n && (0, r.jsx)("div", {
+        }), s && n && (0, r.jsx)("div", {
           className: O.filterOverlay,
           ref: k,
           children: (0, r.jsx)(i.Den, {
@@ -182,7 +182,7 @@ let y = e => {
             children: (0, r.jsx)(_.Z, {})
           })
         })]
-      }), L && !I ? (0, r.jsx)(b.Z, {
+      }), j && !I ? (0, r.jsx)(b.Z, {
         isFullScreen: t,
         scrollerRef: T,
         tab: C
@@ -197,7 +197,7 @@ let y = e => {
         children: (0, r.jsx)(f.Z, {
           isFullScreen: t,
           sortedCategories: y,
-          setCategoryRef: j,
+          setCategoryRef: L,
           currentPage: B,
           handlePageChange: A
         })

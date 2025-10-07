@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
   Chunk594174 = require("./594174.js"),
@@ -32,10 +32,10 @@ function y(e) {
   var t;
   let {
     isFetchingCategories: n,
-    isFullScreen: a,
+    isFullScreen: s,
     scrollerRef: y,
-    tab: j
-  } = e, L = (0, d.sp)(), k = null != (t = null == L ? true : L.sessionId) ? t : "", {
+    tab: L
+  } = e, j = (0, d.sp)(), k = null != (t = null == j ? true : j.sessionId) ? t : "", {
     noCache: I,
     includeUnpublished: P
   } = (0, v.Z)(), N = (0, i.e7)([c.default], () => c.default.getCurrentUser()), {
@@ -58,12 +58,12 @@ function y(e) {
     n || (0, _.n)({
       sessionId: k,
       checkpoint: _.a.SHOP_RENDERED,
-      tab: j,
-      isFullScreen: a,
+      tab: L,
+      isFullScreen: s,
       unpublishedCategoriesShown: P,
       cacheDisabled: I
     })
-  }, [k, a, P, I, n, j]);
+  }, [k, s, P, I, n, L]);
   let W = l.useRef(null),
     {
       setQueryPageSize: U,
@@ -85,25 +85,25 @@ function y(e) {
   }, [U]);
   let X = l.useCallback(e => {
       u.default.track(O.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-        collectibles_shop_session_id: null == L ? true : L.sessionId,
-        page_section: null == L ? true : L.pageSection,
-        page_category: null == L ? true : L.pageCategory,
+        collectibles_shop_session_id: null == j ? true : j.sessionId,
+        page_section: null == j ? true : j.pageSection,
+        page_category: null == j ? true : j.pageCategory,
         page_index: e,
         page_size: z,
         cta_name: "filter results page ".concat(e),
         page_type: "catalog"
       }), V((e - 1) * z)
-    }, [L, z, V]),
+    }, [j, z, V]),
     Q = p.Z.useConfig({
       location: "CollectiblesFilterableShop"
     }).showCardsV2;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: s()({
+      className: a()({
         [T.productsEmpty]: Y
       }),
       children: [Y && (0, r.jsx)(x.Z, {}), (0, r.jsxs)("div", {
-        className: s()(T.products, {
+        className: a()(T.products, {
           [T.loadIn]: G
         }),
         ref: W,
@@ -119,7 +119,7 @@ function y(e) {
               product: e,
               user: N,
               category: n,
-              tab: j
+              tab: L
             }, e.skuId)
           }, e.skuId)
         })]

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk137317 = require("./137317.js"),
   Chunk873546 = require("./873546.js"),
   Chunk435935 = require("./435935.jsx"),
@@ -19,7 +19,7 @@ let p = Chunk647438.memo(function(e) {
     countdownTimerBlock: t,
     isVisible: n,
     isFullScreen: l
-  } = e, a = (0, u.q_F)({
+  } = e, s = (0, u.q_F)({
     transform: "translateX(-50%) ".concat(n ? "translateY(-75%)" : "translateY(0%)"),
     opacity: +!!n,
     config: {
@@ -28,7 +28,7 @@ let p = Chunk647438.memo(function(e) {
     }
   });
   return (0, r.jsxs)(i.animated.div, {
-    className: s()([g.countDownWrapper, l && g.fullScreenWrapper, o.tq && g.mobileWrapper]),
+    className: a()([g.countDownWrapper, l && g.fullScreenWrapper, o.tq && g.mobileWrapper]),
     role: "status",
     style: function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -47,7 +47,7 @@ let p = Chunk647438.memo(function(e) {
         })
       }
       return e
-    }({}, a, null != t.bannerUrl && "" !== t.bannerUrl && {
+    }({}, s, null != t.bannerUrl && "" !== t.bannerUrl && {
       backgroundImage: "url(".concat(t.bannerUrl, ")"),
       backgroundSize: "cover",
       backgroundPosition: "top"

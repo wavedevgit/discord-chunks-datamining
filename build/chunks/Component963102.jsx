@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk636977 = require("./636977.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -40,12 +40,12 @@ function B(e) {
     tab: t,
     displayText: n,
     selected: l,
-    handleTransition: a
+    handleTransition: s
   } = e;
   return (0, r.jsx)(C.Z.Title, {
-    onClick: () => a(t),
+    onClick: () => s(t),
     wrapperClassName: N.tabWrapper,
-    className: s()(N.tab, {
+    className: a()(N.tab, {
       [N.selected]: l
     }),
     children: n
@@ -56,7 +56,7 @@ function A(e) {
   let {
     tab: t,
     selected: n,
-    displayText: a,
+    displayText: s,
     handleTransition: i
   } = e, [o, u] = l.useState(false), d = l.useRef(null), [g, h] = l.useState(0), _ = l.useRef(false), m = e => {
     clearTimeout(g), h(setTimeout(() => {
@@ -115,12 +115,12 @@ function A(e) {
           onClick: () => i(t),
           onKeyDown: b,
           wrapperClassName: N.tabWrapper,
-          className: s()(N.tab, {
+          className: a()(N.tab, {
             [N.selected]: n
           }),
           children: (0, r.jsxs)("span", {
             className: N.tabWithChevron,
-            children: [a, g ? (0, r.jsx)(c.u04, {
+            children: [s, g ? (0, r.jsx)(c.u04, {
               size: "sm",
               color: "currentColor"
             }) : (0, r.jsx)(c.CJ0, {
@@ -147,7 +147,7 @@ function R(e) {
   let {
     isFullScreen: t,
     isLayer: n,
-    onClose: a,
+    onClose: s,
     selectedTab: p,
     handleTransition: f
   } = e, y = (0, g.ZP)(), R = (0, o.e7)([v.default], () => v.default.getCurrentUser()), Z = (null == R ? true : R.isStaff()) || (null == R ? true : R.isStaffPersonal()) || false, {
@@ -157,18 +157,18 @@ function R(e) {
   }), H = (0, _.Y)({
     location: "CollectiblesShopHeaderBar"
   }), F = [{
-    tab: L.AW.HOME,
+    tab: j.AW.HOME,
     displayText: P.intl.string(P.t.ijDDw8)
   }, {
-    tab: L.AW.CATALOG,
+    tab: j.AW.CATALOG,
     displayText: P.intl.string(P.t.Ah5sJi)
   }];
   w && F.push({
-    tab: L.AW.ORBS,
+    tab: j.AW.ORBS,
     displayText: P.intl.string(P.t.EBYkzs)
   });
-  let D = n ? O.DR : a,
-    M = p === L.AW.ORBS ? k.ZY5.SHOP_ORBS_TAB : k.ZY5.COLLECTIBLES_SHOP,
+  let D = n ? O.DR : s,
+    M = p === j.AW.ORBS ? k.ZY5.SHOP_ORBS_TAB : k.ZY5.COLLECTIBLES_SHOP,
     W = l.useCallback(() => {
       t && (D(), (0, u.Ou)()), (0, b.Y)({
         pageType: M,
@@ -190,14 +190,14 @@ function R(e) {
     theme: y,
     children: e => (0, r.jsxs)(C.Z, {
       disableDoubleClick: true,
-      className: s()(e, N.headerBar, {
+      className: a()(e, N.headerBar, {
         [N.fullscreenHeaderBar]: t
       }),
       innerClassname: w ? N.headerBarInner : true,
       toolbar: t || !Z ? null : (0, r.jsx)(l.Fragment, {}),
       children: [(0, r.jsxs)(c.P3F, {
         className: N.shopHomeLink,
-        onClick: () => f(L.AW.HOME),
+        onClick: () => f(j.AW.HOME),
         "aria-label": P.intl.string(P.t.pWG4zc) + " home",
         children: [(0, r.jsx)(x.Z, {
           className: N.discordLogo
@@ -211,9 +211,9 @@ function R(e) {
             tab: t,
             displayText: n
           } = e;
-          return t === L.AW.CATALOG ? (0, r.jsx)(A, {
+          return t === j.AW.CATALOG ? (0, r.jsx)(A, {
             tab: t,
-            selected: (0, L.RE)(p) || p === t,
+            selected: (0, j.RE)(p) || p === t,
             displayText: n,
             handleTransition: f
           }, t) : (0, r.jsx)(B, {
@@ -225,7 +225,7 @@ function R(e) {
         })
       }), (w || t || U || H) && (0, r.jsxs)("div", {
         className: N.alignedRightContent,
-        children: [U && (0, r.jsx)(j.Z, {
+        children: [U && (0, r.jsx)(L.Z, {
           handleTransition: f,
           selectedTab: p
         }), H && (0, r.jsx)(c.P3F, {

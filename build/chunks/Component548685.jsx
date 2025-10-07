@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk782568 = require("./782568.js"),
@@ -36,7 +36,7 @@ let P = e => {
   var t;
   let {
     isLoading: n,
-    title: a,
+    title: s,
     sortedSkuIds: P,
     numVisibleItems: N,
     hasSorting: B,
@@ -57,7 +57,7 @@ let P = e => {
     Q({
       isShuffling: false,
       onOutroComplete: () => M(e)
-    }), p.default.track(j.rMx.COLLECTIBLES_SHOP_FEED_SORT_CHANGED, {
+    }), p.default.track(L.rMx.COLLECTIBLES_SHOP_FEED_SORT_CHANGED, {
       page_session_id: $,
       sort_type: e
     })
@@ -65,18 +65,18 @@ let P = e => {
     location: "FeedBlock"
   }).showCardsV2;
   return null == w ? null : (0, r.jsxs)("div", {
-    className: s()(I.popularPicksSection, I.centeredSection),
+    className: a()(I.popularPicksSection, I.centeredSection),
     children: [(0, r.jsxs)("div", {
       className: I.blockHeader,
       children: [(0, r.jsxs)("div", {
         className: I.headerLeft,
         children: [(0, r.jsx)(o.X6q, {
           variant: "heading-lg/semibold",
-          children: a
+          children: s
         }), z && (0, r.jsx)(o.ua7, {
-          text: L.intl.string(L.t["3taPdn"]),
+          text: j.intl.string(j.t["3taPdn"]),
           position: "top",
-          "aria-label": L.intl.string(L.t["3taPdn"]),
+          "aria-label": j.intl.string(j.t["3taPdn"]),
           children: e => {
             var t, n;
             return (0, r.jsx)(o.P3F, (t = function(e) {
@@ -97,7 +97,7 @@ let P = e => {
               }
               return e
             }({}, e), n = n = {
-              onClick: () => (0, c.Z)(f.Z.getArticleURL(j.BhN.DATA_USED_FOR_RECOMMENDED)),
+              onClick: () => (0, c.Z)(f.Z.getArticleURL(L.BhN.DATA_USED_FOR_RECOMMENDED)),
               className: I.informationIcon,
               children: (0, r.jsx)(o.d3s, {
                 size: "sm"
@@ -115,19 +115,19 @@ let P = e => {
           }
         })]
       }), B ? (0, r.jsxs)("div", {
-        className: s()(I.headerRight, {
+        className: a()(I.headerRight, {
           [k.shopTakeOver]: F
         }),
         children: [(0, r.jsx)(o.Text, {
           variant: "text-md/medium",
-          children: L.intl.string(L.t.uaX709)
+          children: j.intl.string(j.t.uaX709)
         }), (0, r.jsx)("div", {
           className: Z,
           children: (0, r.jsx)(o.PhF, {
             options: U,
             select: et,
             className: I.sortSelect,
-            popoutClassName: s()({
+            popoutClassName: a()({
               [k.shopTakeOver]: F
             }),
             isSelected: e => e === D,
@@ -137,14 +137,14 @@ let P = e => {
           className: Z,
           children: (0, r.jsx)(o.zxk, {
             variant: "secondary",
-            text: L.intl.string(L.t.X3tnc3),
+            text: j.intl.string(j.t.X3tnc3),
             buttonRef: ee,
             onClick: () => {
               Q({
                 isShuffling: true,
                 onOutroComplete: V,
                 returnRef: ee
-              }), p.default.track(j.rMx.COLLECTIBLES_SHOP_FEED_SHUFFLE_CLICKED, {
+              }), p.default.track(L.rMx.COLLECTIBLES_SHOP_FEED_SHUFFLE_CLICKED, {
                 page_session_id: $
               })
             },
@@ -178,7 +178,7 @@ let P = e => {
             pageSection: "popular picks",
             categoryPosition: 2
           },
-          children: en ? (0, r.jsx)("div", {
+          children: en && (null == e ? true : e.skuId) != null ? (0, r.jsx)("div", {
             className: n,
             children: (0, r.jsx)(S.Z, {
               skuId: null == e ? true : e.skuId
