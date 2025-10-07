@@ -2,17 +2,19 @@
 /** chunk id: 35916, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  w: () => g
+  w: () => b
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk120356 = require("./120356.js"),
+  o = require.n(Chunk120356),
   Chunk924826 = require("./924826.js"),
   Chunk91192 = require("./91192.jsx"),
   Chunk793030 = require("./793030.js"),
   Chunk483753 = require("./483753.js"),
   Chunk987150 = require("./987150.js");
 
-function u(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -21,20 +23,20 @@ function u(e, t, n) {
   }) : e[t] = n, e
 }
 
-function d(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      u(e, t, n[t])
+      f(e, t, n[t])
     })
   }
   return e
 }
 
-function f(e, t) {
+function p(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -45,15 +47,15 @@ function f(e, t) {
   return n
 }
 
-function _(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
+function h(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function p(e, t) {
+function m(e, t) {
   if (null == e) return {};
-  var n, r, i = h(e, t);
+  var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -61,88 +63,90 @@ function p(e, t) {
   return i
 }
 
-function h(e, t) {
+function g(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let m = 40;
+let E = 40;
 
-function g(e) {
+function b(e) {
   let {
     id: t,
     required: n = false,
-    disabled: u = false,
+    disabled: a = false,
     selectionMode: f = "single",
-    items: h,
+    items: p,
     defaultSelectedItems: g,
     selectedItems: b,
-    onSelectionChange: y,
-    activeDescendantIndex: O,
-    shouldFocusWrap: v = false,
-    renderListItem: I,
-    renderEmptyState: T,
-    maxVisibleItems: S = 5
-  } = e, A = i.useId(), C = null != t ? t : A, [N, R] = i.useState(null != g ? g : []), P = null != b, w = P ? b : N, D = (0, a.ZP)({
-    id: C,
+    onSelectionChange: O,
+    activeDescendantIndex: v,
+    shouldFocusWrap: I = false,
+    renderListItem: T,
+    renderEmptyState: S,
+    maxVisibleItems: A = 5
+  } = e, C = i.useId(), N = null != t ? t : C, [R, P] = i.useState(null != g ? g : []), w = null != b, D = w ? b : R, L = (0, s.ZP)({
+    id: N,
     async scrollToEnd() {},
     async scrollToStart() {},
-    isEnabled: !u,
-    wrap: v,
+    isEnabled: !a,
+    wrap: I,
     preserveFocusPosition: true
-  }), L = i.useCallback(e => {
-    if (true === n && 1 === w.length && w.includes(e)) return;
-    let t = (0, l.cq)(f, w, e);
-    P || R(t), null == y || y(t)
-  }, [n, w, y, P, f]), x = i.useCallback(e => (0, r.jsx)("div", {
-    className: c.listBoxItemContent,
-    children: (0, r.jsx)(s.xvT, {
+  }), x = i.useCallback(e => {
+    if (true === n && 1 === D.length && D.includes(e)) return;
+    let t = (0, u.cq)(f, D, e);
+    w || P(t), null == O || O(t)
+  }, [n, D, O, w, f]), M = i.useCallback(e => (0, r.jsx)("div", {
+    className: d.listBoxItemContent,
+    children: (0, r.jsx)(c.xvT, {
       variant: "text-md/medium",
       color: "currentColor",
-      className: c.listBoxItemLabel,
+      className: d.listBoxItemLabel,
       children: e.label
     })
   }), []);
-  return (0, r.jsx)(o.bG, {
-    navigator: D,
-    children: (0, r.jsx)(o.SJ, {
+  return (0, r.jsx)(l.bG, {
+    navigator: L,
+    children: (0, r.jsx)(l.SJ, {
       children: e => {
         var {
           ref: t
-        } = e, n = p(e, ["ref"]);
-        return (0, r.jsx)("div", _(d({
+        } = e, n = m(e, ["ref"]);
+        return (0, r.jsx)("div", h(_({
           ref: t
         }, n), {
           role: "listbox",
           "aria-multiselectable": "multiple" === f,
-          className: c.listBox,
+          className: o()(d.listBox, {
+            [d.scrollable]: p.length > A
+          }),
           "data-mana-component": "listbox",
-          children: 0 === h.length ? null == T ? true : T() : (0, r.jsx)(s._2F, {
+          children: 0 === p.length ? null == S ? true : S() : (0, r.jsx)(c._2F, {
             style: {
-              height: null != S ? "".concat(S * m, "px") : "100%"
+              height: null != A ? "".concat(Math.min(p.length, A) * E, "px") : "100%"
             },
             role: true,
-            rowHeight: m,
-            sections: [h.length],
+            rowHeight: E,
+            sections: [p.length],
             sectionHeight: 0,
             renderSection: () => null,
             renderRow: e => {
               var t;
               let {
                 row: n
-              } = e, i = h[n], a = (0, l.cA)(C, n), o = 0 !== w.length && null != w.find(e => e.id === i.id);
-              return (0, r.jsx)(E, _(d({}, i), {
-                id: a,
+              } = e, i = p[n], o = (0, u.cA)(N, n), s = 0 !== D.length && null != D.find(e => e.id === i.id);
+              return (0, r.jsx)(y, h(_({}, i), {
+                id: o,
                 selectionMode: f,
-                selected: o,
-                disabled: u || i.disabled,
-                focused: n === O,
+                selected: s,
+                disabled: a || i.disabled,
+                focused: n === v,
                 onClick: () => {
-                  u || i.disabled || L(i)
+                  a || i.disabled || x(i)
                 },
-                children: null != (t = null == I ? true : I(i)) ? t : x(i)
+                children: null != (t = null == T ? true : T(i)) ? t : M(i)
               }), i.id)
             }
           })
@@ -152,39 +156,39 @@ function g(e) {
   })
 }
 
-function E(e) {
+function y(e) {
   let {
     children: t,
     id: n,
     selected: i,
     disabled: a,
-    focused: l,
-    selectionMode: u,
-    onClick: f
-  } = e, p = (0, o.JA)(n);
+    focused: o,
+    selectionMode: s,
+    onClick: u
+  } = e, f = (0, l.JA)(n);
 
-  function h() {
-    return "multiple" === u ? (0, r.jsx)(s.XZJ, {
+  function p() {
+    return "multiple" === s ? (0, r.jsx)(c.XZJ, {
       checked: i,
       displayOnly: true
-    }) : i ? (0, r.jsx)(s.kSu, {
+    }) : i ? (0, r.jsx)(c.kSu, {
       color: "currentColor",
       size: "refresh_sm"
     }) : null
   }
-  return (0, r.jsxs)("div", _(d({}, p), {
+  return (0, r.jsxs)("div", h(_({}, f), {
     id: n,
-    className: c.listBoxItem,
+    className: d.listBoxItem,
     role: "option",
-    tabIndex: p.tabIndex,
-    onClick: f,
+    tabIndex: f.tabIndex,
+    onClick: u,
     "aria-disabled": a,
     "aria-selected": i,
-    "data-focus-visible": l,
+    "data-focus-visible": o,
     children: [t, (0, r.jsx)("div", {
-      className: c.selectedIcon,
+      className: d.selectedIcon,
       "aria-hidden": true,
-      children: h()
+      children: p()
     })]
   }))
 }
