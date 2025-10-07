@@ -76,15 +76,8 @@ function L() {
 }
 
 function x() {
-  return {
-    [Chunk292352.MY.USER_ADD]: {},
-    [Chunk292352.MY.GUILD_ADD]: {},
-    [Chunk292352.MY.USER_INTERACTION]: {},
-    [Chunk292352.MY.GUILD_INTERACTION]: {},
-    [Chunk292352.MY.USER_CALLED]: {},
-    [Chunk292352.MY.TOTAL_VOICE_MINUTES]: {},
-    [Chunk292352.MY.PURCHASES]: {}
-  }
+  let e = new Map;
+  return module.set(Chunk292352.MY.USER_ADD, new Map), module.set(Chunk292352.MY.GUILD_ADD, new Map), module.set(Chunk292352.MY.USER_INTERACTION, new Map), module.set(Chunk292352.MY.GUILD_INTERACTION, new Map), module.set(Chunk292352.MY.USER_CALLED, new Map), module.set(Chunk292352.MY.TOTAL_VOICE_MINUTES, new Map), module.set(Chunk292352.MY.PURCHASES, new Map), module
 }
 
 function M() {
@@ -112,10 +105,11 @@ function k(e) {
 
 function U(e, t) {
   let n = t ? b : x();
-  return b = e.reduce((e, t) => {
-    let r = t.display_type;
-    return true !== n[r] && true === n[r][t.event_id] && (e[r][t.event_id] = t), e
-  }, n)
+  return e.forEach(e => {
+    let t = e.display_type,
+      r = n.get(t);
+    true === r || r.has(e.event_id) || r.set(e.event_id, e)
+  }), b = n
 }
 
 function G(e) {
@@ -187,7 +181,7 @@ function Y(e) {
   let {
     familyCenterTeenActivity: t
   } = e;
-  if (true === t) return;
+  if (true === t) returnfalse;
   let {
     actions: n,
     totals: r,
@@ -245,7 +239,7 @@ function Q(e) {
   let {
     user: t
   } = e;
-  if (true === t.linked_users) return;
+  if (true === t.linked_users) returnfalse;
   let n = a.default.getUsers();
   t.linked_users.some(e => {
     let {
@@ -273,9 +267,8 @@ function $(e) {
 
 function ee() {
   let e = [];
-  return Object.entries(b).forEach(t => {
-    let [n, r] = t;
-    e.push(...Object.values(r))
+  return b.forEach(t => {
+    e.push(...Array.from(t.values()))
   }), module
 }
 
@@ -332,7 +325,8 @@ class ei extends Chunk750041.Z {
     return null == m ? null : Chunk709054.default.extractTimestamp(m)
   }
   getActionsForDisplayType(e) {
-    return Object.values(b[e])
+    let t = b.get(e);
+    return null != t ? Array.from(t.values()) : []
   }
   getTotalForDisplayType(e) {
     return y[e]

@@ -135,7 +135,7 @@ class W extends Chunk647438.PureComponent {
       size: "sm",
       text: G.intl.string(G.t.bUvv1d),
       disabled: true
-    })), Z(this, "renderTagline", () => this.props.isSelfGift ? G.intl.string(G.t.aUqE6e) : G.intl.string(G.t["2mWvHB"]))
+    })), Z(this, "renderTagline", () => this.props.isSelfGift ? G.intl.string(G.t.eEM3dn) : G.intl.string(G.t.tB8S6u))
   }
 }
 class K extends Chunk647438.Component {
