@@ -42,7 +42,7 @@ class m {
     this.mode = "application", this.streamKey = e, this.director.onStreamBegin(this.applications, t, n)
   }
   _onStreamDirectSource(e, t, n, r) {
-    this.mode = "verbatim-source", this.streamKey = e, this.director.sound = null == r || r, this._onDirectorAction({
+    this.mode = "verbatim-source", this.streamKey = e, this.director.sound = null == r || r, this.director.application = null, this._onDirectorAction({
       type: s.A.STREAM,
       sourceId: t,
       audioSourceId: n,
